@@ -62,7 +62,6 @@ public static class GroupQueryResults
         foreach (var studentGroup in groupByFirstLetterQuery)
         {
             Console.WriteLine($"Key: {studentGroup.Key}");
-            // Nested foreach is required to access group items.
             foreach (var student in studentGroup)
             {
                 Console.WriteLine($"\t{student.LastName}, {student.FirstName}");
@@ -114,7 +113,6 @@ public static class GroupQueryResults
             orderby percentGroup.Key
             select percentGroup;
 
-        // Nested foreach required to iterate over groups and group items.
         foreach (var studentGroup in groupByPercentileQuery)
         {
             Console.WriteLine($"Key: {studentGroup.Key * 10}");
@@ -205,7 +203,7 @@ public static class GroupQueryResults
 
         foreach (var scoreGroup in groupByCompoundKey)
         {
-            string s = scoreGroup.Key.IsScoreOver85 == true ? "more than 85" : "less than 85";
+            var s = scoreGroup.Key.IsScoreOver85 ? "more than 85" : "less than 85";
             Console.WriteLine($"Name starts with {scoreGroup.Key.FirstLetterOfLastName} who scored {s}");
             foreach (var item in scoreGroup)
             {

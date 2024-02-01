@@ -5,7 +5,7 @@ author: camsoper
 ms.author: casoper
 ms.date: 10/07/2022
 ms.topic: how-to
-ms.prod: dotnet
+ms.service: dotnet
 ---
 
 # Deploy .NET apps on ARM single-board computers

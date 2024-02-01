@@ -24,11 +24,11 @@ A *converter* is a class that converts an object or a value to and from JSON. Th
 
 You can also write custom converters to customize or extend `System.Text.Json` with new functionality. The following scenarios are covered later in this article:
 
-::: zone pivot="dotnet-7-0"
+::: zone pivot="dotnet-8-0,dotnet-7-0"
 
 * [Deserialize inferred types to object properties](#deserialize-inferred-types-to-object-properties).
 * [Support polymorphic deserialization](#support-polymorphic-deserialization).
-* [Support round-trip for Stack\<T>](#support-round-trip-for-stackt).
+* [Support round trip for `Stack` types](#support-round-trip-for-stack-types).
 * [Use default system converter](#use-default-system-converter).
 
 ::: zone-end
@@ -37,7 +37,7 @@ You can also write custom converters to customize or extend `System.Text.Json` w
 
 * [Deserialize inferred types to object properties](#deserialize-inferred-types-to-object-properties).
 * [Support polymorphic deserialization](#support-polymorphic-deserialization).
-* [Support round-trip for Stack\<T>](#support-round-trip-for-stackt).
+* [Support round trip for `Stack` types](#support-round-trip-for-stack-types).
 * [Naming policies for enum string deserialization](#naming-policies-for-enum-string-deserialization).
 
 ::: zone-end
@@ -104,7 +104,7 @@ If your converter is converting a JSON object, the `Utf8JsonReader` will be posi
 
 > The converter 'ConverterName' read too much or not enough.
 
-For an example, see the preceding factory pattern sample converter. The `Read` method starts by verifying that the reader is positioned on a start object token. It reads until it finds that it is positioned on the next end object token. It stops on the next end object token because there are no intervening start object tokens that would indicate an object within the object. The same rule about begin token and end token applies if you are converting an array. For an example, see the [`Stack<T>`](#support-round-trip-for-stackt) sample converter later in this article.
+For an example, see the preceding factory pattern sample converter. The `Read` method starts by verifying that the reader is positioned on a start object token. It reads until it finds that it is positioned on the next end object token. It stops on the next end object token because there are no intervening start object tokens that would indicate an object within the object. The same rule about begin token and end token applies if you are converting an array. For an example, see the [`Stack<T>`](#support-round-trip-for-stack-types) sample converter later in this article.
 
 ## Error handling
 
@@ -216,10 +216,10 @@ A built-in converter is chosen only if no applicable custom converter is registe
 
 The following sections provide converter samples that address some common scenarios that built-in functionality doesn't handle.
 
-::: zone pivot="dotnet-7-0"
+::: zone pivot="dotnet-8-0,dotnet-7-0"
 
 * [Deserialize inferred types to object properties](#deserialize-inferred-types-to-object-properties).
-* [Support round-trip for Stack\<T>](#support-round-trip-for-stackt).
+* [Support round trip for `Stack` types](#support-round-trip-for-stack-types).
 * [Use default system converter](#use-default-system-converter).
 
 ::: zone-end
@@ -228,7 +228,7 @@ The following sections provide converter samples that address some common scenar
 
 * [Deserialize inferred types to object properties](#deserialize-inferred-types-to-object-properties).
 * [Support polymorphic deserialization](#support-polymorphic-deserialization).
-* [Support round-trip for Stack\<T>](#support-round-trip-for-stackt).
+* [Support round trip for `Stack` types](#support-round-trip-for-stack-types).
 * [Naming policies for enum string deserialization](#naming-policies-for-enum-string-deserialization).
 
 ::: zone-end
@@ -306,9 +306,9 @@ A disadvantage of this method is you can't pass in the original options instance
 
 :::code language="csharp" source="snippets/how-to/csharp/PersonConverterWithTypeDiscriminatorAlt.cs" id="ReadMethod":::
 
-### Support round trip for Stack\<T>
+### Support round trip for `Stack` types
 
-If you deserialize a JSON string into a <xref:System.Collections.Generic.Stack%601> object and then serialize that object, the contents of the stack are in reverse order. This behavior applies to the following types and interface, and user-defined types that derive from them:
+If you deserialize a JSON string into a `Stack` object and then serialize that object, the contents of the stack are in reverse order. This behavior applies to the following types and interfaces, and user-defined types that derive from them:
 
 * <xref:System.Collections.Stack>
 * <xref:System.Collections.Generic.Stack%601>
@@ -334,7 +334,7 @@ By default, the built-in <xref:System.Text.Json.Serialization.JsonStringEnumConv
 
 ::: zone-end
 
-::: zone pivot="dotnet-7-0"
+::: zone pivot="dotnet-8-0,dotnet-7-0"
 
 ### Use default system converter
 

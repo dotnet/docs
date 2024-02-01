@@ -3,7 +3,7 @@ title: Install .NET on Windows
 description: Learn about the different ways you can install .NET and which versions of Windows support .NET.
 author: adegeo
 ms.author: adegeo
-ms.date: 12/21/2022
+ms.date: 12/13/2023
 ---
 
 # Install .NET on Windows
@@ -14,22 +14,22 @@ ms.date: 12/21/2022
 > - [Install on macOS](macos.md)
 > - [Install on Linux](linux.md)
 
-In this article, you'll learn how to install .NET on Windows. .NET is made up of the runtime and the SDK. The runtime is used to run a .NET app and may or may not be included with the app. The SDK is used to create .NET apps and libraries. The .NET runtime is always installed with the SDK.
+In this article, you learn how to install .NET on Windows. .NET is made up of the runtime and the SDK. The runtime is used to run a .NET app and might be included with the app. The SDK is used to create .NET apps and libraries. The .NET runtime is always installed with the SDK.
 
-The latest version of .NET is 7.
+The latest version of .NET is 8.0.
 
 > [!div class="button"]
 > [Download .NET](https://dotnet.microsoft.com/download/dotnet)
 
-There are two types of supported releases, Long Term Support (LTS) releases or Standard Term Support (STS). The quality of all releases is the same. The only difference is the length of support. LTS releases get free support and patches for 3 years. STS releases get free support and patches for 18 months. For more information, see [.NET Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
+There are two types of supported releases: Long Term Support (LTS) releases and Standard Term Support (STS) releases. The quality of all releases is the same. The only difference is the length of support. LTS releases get free support and patches for three years. STS releases get free support and patches for 18 months. For more information, see [.NET Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
 
 The following table lists the support status of each version of .NET (and .NET Core):
 
 | ✔️ Supported | ❌ Unsupported |
 |-------------|---------------|
-| 7 (STS)     | 5             |
-| 6 (LTS)     | 3.1           |
-|             | 3.0           |
+| 8 (LTS)     | 5             |
+| 7 (STS)     | 3.1           |
+| 6 (LTS)     | 3.0           |
 |             | 2.1           |
 |             | 2.0           |
 |             | 1.1           |
@@ -46,35 +46,37 @@ If you're installing .NET system-wide, install with administrative privileges.
 The .NET SDK allows you to develop apps with .NET. If you install the .NET SDK, you don't need to install the corresponding runtimes. To install the .NET SDK, run the following command:
 
 ```cmd
-winget install Microsoft.DotNet.SDK.7
+winget install Microsoft.DotNet.SDK.8
 ```
 
 ### Install the runtime
 
-For Windows, there are three .NET runtimes you can install. You should install both the .NET Desktop Runtime and the ASP.NET Core Runtime to ensure that you're compatible with all types of .NET apps.
+[!INCLUDE [windows-runtime-table](includes/windows-runtime-table.md)]
+
+The following list provides details about each runtime along with the **winget** commands to install them:
 
 - .NET Desktop Runtime
 
-  This runtime includes the base .NET runtime, and supports Windows Presentation Foundation (WPF) and Windows Forms apps that are built with .NET. This isn't the same as .NET Framework, which comes with Windows.
+  This runtime supports Windows Presentation Foundation (WPF) and Windows Forms apps that are built with .NET. This isn't the same as .NET Framework, which comes with Windows. This runtime includes .NET Runtime, but doesn't include ASP.NET Core Runtime, which must be installed separately.
 
   ```cmd
-  winget install Microsoft.DotNet.DesktopRuntime.7
-  ```
-
-- ASP.NET Core Runtime
-
-  This runtime includes the base .NET runtime, and runs web server apps. The ASP.NET Core Runtime allows you to run apps that were made with .NET that didn't provide the runtime. The following commands install the ASP.NET Core Runtime, which is the most compatible runtime for .NET. In your terminal, run the following commands:
-
-  ```cmd
-  winget install Microsoft.DotNet.AspNetCore.7
+  winget install Microsoft.DotNet.DesktopRuntime.8
   ```
 
 - .NET Runtime
 
-  This is the base runtime, and contains just the components needed to run a console app. Typically, you'd install the other runtimes.
+  This is the base runtime, and contains just the components needed to run a console app. Typically, you'd install both .NET Desktop Runtime and ASP.NET Core Runtime instead of this one.
 
   ```cmd
-  winget install Microsoft.DotNet.Runtime.7
+  winget install Microsoft.DotNet.Runtime.8
+  ```
+
+- ASP.NET Core Runtime
+
+  This runtime runs web server apps and provides many web-related APIs. ASP.NET Core Runtime allows you to run apps that were made with .NET that didn't provide the runtime. You must install .NET Runtime in addition to this runtime. The following commands install ASP.NET Core Runtime,  In your terminal, run the following commands:
+
+  ```cmd
+  winget install Microsoft.DotNet.AspNetCore.8
   ```
 
 You can install preview versions of the runtimes by substituting the version number, such as `6`, with the word `Preview`. The following example installs the preview release of the .NET Desktop Runtime:
@@ -93,12 +95,15 @@ While Visual Studio Code doesn't come with an automated .NET Core installer like
 01. [Download and install the .NET SDK](https://dotnet.microsoft.com/download/dotnet).
 01. [Install the C# extension from the Visual Studio Code marketplace](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp).
 
+The **C# For Visual Studio Code** extension includes the latest .NET SDK, and you don't need to install any .NET runtime separately.
+
 ## Install with Windows Installer
 
-The [download page](https://dotnet.microsoft.com/download/dotnet) for .NET provides Windows Installer executables.
+[!INCLUDE [windows-runtime-table](includes/windows-runtime-table.md)]
 
-> [IMPORTANT]
-> Starting in November 2021, you can't change the installation path of .NET with the Windows Installer package. To install .NET to a different path, use the [dotnet-install scripts](../tools/dotnet-install-script.md).
+.NET SDK allows you to create .NET apps, and includes all of the runtimes.
+
+The [download page](https://dotnet.microsoft.com/download/dotnet) for .NET provides Windows Installer executables.
 
 If you want to install .NET silently, such as in a production environment or to support continuous integration, use the following switches:
 
@@ -112,27 +117,28 @@ Prevents any UI and prompts from displaying.
 Suppresses any attempts to restart.
 
 ```console
-dotnet-sdk-7.0.100-win-x64.exe /install /quiet /norestart
+dotnet-sdk-8.0.100-win-x64.exe /install /quiet /norestart
 ```
 
 For more information, see [Standard Installer Command-Line Options](/windows/win32/msi/standard-installer-command-line-options).
 
 > [!TIP]
-> The installer returns an exit code of 0 for success and an exit code of 3010 to indicate that a restart is required. Any other value is generally an error code.
+> The installer returns an exit code of **0** for success and an exit code of **3010** to indicate that a restart is required. Any other value is generally an error code.
 
 ## Install with PowerShell automation
 
 The [dotnet-install scripts](../tools/dotnet-install-script.md) are used for CI automation and non-admin installs of the runtime. You can download the script from the [dotnet-install script reference page](../tools/dotnet-install-script.md).
 
-The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is .NET 6. You can choose a specific release by specifying the `Channel` switch. Include the `Runtime` switch to install a runtime. Otherwise, the script installs the SDK.
+The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is .NET 8. You can choose a specific release by specifying the `Channel` switch. Include the `Runtime` switch to install a runtime. Otherwise, the script installs the SDK.
 
-The following command installs the ASP.NET Core runtime for maximum compatibility. The ASP.NET Core runtime also includes the standard .NET runtime.
+The following command installs both the Desktop and ASP.NET Core runtimes for maximum compatibility.
 
 ```powershell
-dotnet-install.ps1 -Channel 7.0 -Runtime aspnetcore
+dotnet-install.ps1 -Channel 8.0 -Runtime windowsdesktop
+dotnet-install.ps1 -Channel 8.0 -Runtime aspnetcore
 ```
 
-Install the SDK by omitting the `-Runtime` switch. The `-Channel` switch is set in this example to `STS`, which installs the latest Standard Term Support version (.NET 7).
+Install the SDK by omitting the `-Runtime` switch. The `-Channel` switch is set in this example to `STS`, which installs the latest Standard Term Support version, which is .NET 7.
 
 ```powershell
 dotnet-install.ps1 -Channel STS
@@ -144,6 +150,7 @@ If you're using Visual Studio to develop .NET apps, the following table describe
 
 | .NET SDK version      | Visual Studio version                      |
 | --------------------- | ------------------------------------------ |
+| 8                     | Visual Studio 2022 version 17.8 or higher. |
 | 7                     | Visual Studio 2022 version 17.4 or higher. |
 | 6                     | Visual Studio 2022 version 17.0 or higher. |
 | 5                     | Visual Studio 2019 version 16.8 or higher. |
@@ -162,6 +169,8 @@ Visual Studio can install the latest .NET SDK and runtime.
 
 > [!div class="button"]
 > [Download Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019).
+
+For more information, see [.NET SDK, MSBuild, and Visual Studio versioning](../porting/versioning-sdk-msbuild-vs.md).
 
 ### Select a workload
 
@@ -183,21 +192,21 @@ Windows 10 versions end-of-service dates are segmented by edition. Only **Home**
 > [!TIP]
 > A `+` symbol represents the minimum version.
 
-| Operating System                             | .NET 7 | .NET 6 |
-|----------------------------------------------|--------|--------|
-| Windows 11                                   | ✔️      | ✔️      |
-| Windows Server 2022                          | ✔️      | ✔️      |
-| Windows Server, Version 1903 or later        | ✔️      | ✔️      |
-| Windows 10, Version 1607 or later            | ✔️      | ✔️      |
-| Windows 8.1                                  | ❌      | ✔️      |
-| Windows 7 SP1 [ESU][esu]                     | ❌      | ✔️      |
-| Windows Server 2019<br>Windows Server 2016<br>Windows Server 2012 R2<br>Windows Server 2012| ✔️            |
-| Windows Server Core 2012 R2                  | ✔️      | ✔️      |
-| Windows Server Core 2012                     | ✔️      | ✔️      |
-| Nano Server, Version 1809+                   | ✔️      | ✔️      |
-| Nano Server, Version 1803                    | ❌      | ❌      |
+| Operating System                      | .NET 8 | .NET 7 | .NET 6 |
+|---------------------------------------|--------|--------|--------|
+| Windows 11                            | ✔️     | ✔️     | ✔️    |
+| Windows Server 2022                   | ✔️     | ✔️     | ✔️    |
+| Windows Server, Version 1903 or later | ✔️     | ✔️     | ✔️    |
+| Windows 10, Version 1607 or later     | ✔️     | ✔️     | ✔️    |
+| Windows 8.1                           | ❌     | ❌     | ✔️    |
+| Windows 7 SP1 [ESU][esu]              | ❌     | ❌     | ✔️    |
+| Windows Server 2019<br>Windows Server 2016<br>Windows Server 2012 R2<br>Windows Server 2012| ✔️ | ✔️     | ✔️    |
+| Windows Server Core 2012 R2           | ✔️     | ✔️     | ✔️    |
+| Windows Server Core 2012              | ✔️     | ✔️     | ✔️    |
+| Nano Server, Version 1809+            | ✔️     | ✔️     | ✔️    |
+| Nano Server, Version 1803             | ❌     | ❌     | ❌    |
 
-For more information about .NET 7 supported operating systems, distributions, and lifecycle policy, see [.NET 7 Supported OS Versions](https://github.com/dotnet/core/blob/main/release-notes/7.0/supported-os.md).
+For more information about .NET 8 supported operating systems, distributions, and lifecycle policy, see [.NET 8 Supported OS Versions](https://github.com/dotnet/core/blob/main/release-notes/8.0/supported-os.md).
 
 ## Unsupported releases
 
@@ -213,16 +222,18 @@ For more information about .NET 7 supported operating systems, distributions, an
 
 The runtime is used to run apps created with .NET. When an app author publishes an app, they can include the runtime with their app. If they don't include the runtime, it's up to the user to install the runtime.
 
-There are three different runtimes you can install on Windows:
+[!INCLUDE [windows-runtime-table](includes/windows-runtime-table.md)]
 
-- *ASP.NET Core runtime*\
-  Runs ASP.NET Core apps. Includes the .NET runtime.
+The following list provides details about each runtime:
 
-- *Desktop runtime*\
+- *Desktop Runtime*\
   Runs .NET WPF and Windows Forms desktop apps for Windows. Includes the .NET runtime.
 
-- *.NET runtime*\
-  This runtime is the simplest runtime and doesn't include any other runtime. It's highly recommended that you install both *ASP.NET Core runtime* and *Desktop runtime* for the best compatibility with .NET apps.
+- *ASP.NET Core Runtime*\
+  Runs ASP.NET Core apps.
+
+- *.NET Runtime*\
+  This runtime is the simplest runtime and doesn't include any other runtime. Install both *ASP.NET Core Runtime* and *Desktop Runtime* for the best compatibility with .NET apps.
 
 > [!div class="button"]
 > [Download .NET Runtime](https://dotnet.microsoft.com/download/dotnet)
@@ -240,12 +251,14 @@ The following sections describe things you should consider when installing .NET 
 
 <!-- This section is mirrored in the macos.md file. Changes here should be applied there -->
 
-### What's supported
+### What is supported
 
 The following table describes which versions of .NET are supported on an Arm-based Windows PC:
 
 | .NET Version | Architecture | SDK | Runtime | [Path conflict](#path-conflicts) |
 |--------------|--------------|-----|---------|----------------------------------|
+| 8            | Arm64        | Yes | Yes     | No                               |
+| 8            | x64          | Yes | Yes     | No                               |
 | 7            | Arm64        | Yes | Yes     | No                               |
 | 7            | x64          | Yes | Yes     | No                               |
 | 6            | Arm64        | Yes | Yes     | No                               |
@@ -253,21 +266,38 @@ The following table describes which versions of .NET are supported on an Arm-bas
 | 5            | Arm64        | Yes | Yes     | [Yes](#path-conflicts)           |
 | 5            | x64          | No  | Yes     | [Yes](#path-conflicts)           |
 
-Starting with .NET 6, the x64 and Arm64 versions of the .NET SDK exist independently from each other. If a new version is released, each architecture install needs to be upgraded.
+The x64 and Arm64 versions of the .NET SDK exist independently from each other. If a new version is released, each architecture install needs to be upgraded.
 
 ### Path differences
 
-On an Arm-based Windows PC, all Arm64 versions of .NET are installed to the normal _C:\\Program Files\\dotnet\\_ folder. However, when you install the **x64** version of .NET 6 SDK or .NET 7 SDK, it's installed to the _C:\\Program Files\\dotnet\\x64\\_ folder.
+On an Arm-based Windows PC, all Arm64 versions of .NET are installed to the normal _C:\\Program Files\\dotnet\\_ folder. However, the **x64** version of the .NET SDK is installed to the _C:\\Program Files\\dotnet\\x64\\_ folder.
 
 ### Path conflicts
 
-Starting with .NET 6, the **x64** .NET SDK installs to its own directory, as described in the previous section. This allows the Arm64 and x64 versions of the .NET SDK to exist on the same machine. However, any **x64** SDK prior to 6 isn't supported and installs to the same location as the Arm64 version, the _C:\\Program Files\\dotnet\\_ folder. If you want to install an unsupported x64 SDK, you'll need to first uninstall the Arm64 version. The opposite is also true, you'll need to uninstall the unsupported x64 SDK to install the Arm64 version.
+The **x64** .NET SDK installs to its own directory, as described in the previous section. This allows the Arm64 and x64 versions of the .NET SDK to exist on the same machine. However, any **x64** SDK prior to 6 isn't supported and installs to the same location as the Arm64 version, the _C:\\Program Files\\dotnet\\_ folder. If you want to install an unsupported x64 SDK, you must uninstall the Arm64 version first. The opposite is also true, you must uninstall the unsupported x64 SDK to install the Arm64 version.
 
 ### Path variables
 
 Environment variables that add .NET to system path, such as the `PATH` variable, may need to be changed if you have both the x64 and Arm64 versions of the .NET SDK installed. Additionally, some tools rely on the `DOTNET_ROOT` environment variable, which would also need to be updated to point to the appropriate .NET SDK installation folder.
 
 ## Dependencies
+
+# [.NET 8](#tab/net80)
+
+The following Windows versions are supported with .NET 8:
+
+> [!NOTE]
+> A `+` symbol represents the minimum version.
+
+| OS                  | Version       | Architectures   |
+|---------------------|---------------|-----------------|
+| Windows 11          | 22000+        | x64, x86, Arm64 |
+| Windows 10 Client   | 1607+         | x64, x86, Arm64 |
+| Windows Server      | 2012+         | x64, x86        |
+| Windows Server Core | 2012+         | x64, x86        |
+| Nano Server         | 1809+         | x64             |
+
+For more information about .NET 8 supported operating systems, distributions, and lifecycle policy, see [.NET 8 Supported OS Versions](https://github.com/dotnet/core/blob/main/release-notes/8.0/supported-os.md).
 
 # [.NET 7](#tab/net70)
 
@@ -309,7 +339,7 @@ For more information about .NET 6 supported operating systems, distributions, an
 > [!IMPORTANT]
 > This section only applies to .NET Core 2.1.
 
-When doing an offline install for .NET Core 2.1 on Windows 7, you'll first need to make sure that the latest [Microsoft Root Certificate Authority 2011](https://www.microsoft.com/pkiops/Docs/Repository.htm) has been installed on the target machine.
+When doing an offline install for .NET Core 2.1 on Windows 7, make sure that the latest [Microsoft Root Certificate Authority 2011](https://www.microsoft.com/pkiops/Docs/Repository.htm) is installed on the target machine.
 
 The _certmgr.exe_ tool can automate installing a certificate and is obtained from Visual Studio or the Windows SDK. The following command is used to install the certificate before running the .NET Core 2.1 installer:
 
@@ -352,17 +382,17 @@ For more information about using .NET in a Docker container, see [Introduction t
 
 After installing the .NET SDK, you may run into problems trying to run .NET CLI commands. This section collects those common problems and provides solutions.
 
-- [It was not possible to find any installed .NET Core SDKs](#it-was-not-possible-to-find-any-installed-net-core-sdks)
+- [No .NET SDK was found](#no-net-sdk-was-found)
 
-### It was not possible to find any installed .NET Core SDKs
+### No .NET SDK was found
 
-Most likely you've installed both the x86 (32-bit) and x64 (64-bit) versions of the .NET SDK. This is causing a conflict because when you run the `dotnet` command it's resolving to the x86 version when it should resolve to the x64 version. This is usually fixed by adjusting the `%PATH%` variable to resolve the x64 version first.
+Most likely you installed both the x86 (32-bit) and x64 (64-bit) versions of the .NET SDK. This is causing a conflict because when you run the `dotnet` command it's resolving to the x86 version when it should resolve to the x64 version. This is usually fixed by adjusting the `%PATH%` variable to resolve the x64 version first.
 
-01. Verify that you have both versions installed by running the `where.exe dotnet` command. If you do, you should see an entry for both the _Program Files\\_ and _Program Files (x86)\\_ folders. If the _Program Files (x86)\\_ folder is first as indicated by the following example, it's incorrect and you should continue on to the next step.
+01. Verify that you have both versions installed by running the `where.exe dotnet` command. If you do, you should see an entry for both the _Program Files\\_ and _Program Files (x86)\\_ folders. If the _Program Files (x86)\\_ folder is first, as demonstrated by the following example, it's incorrect and you should continue on to the next step.
 
     ```cmd
     > where.exe dotnet
-    C:\Program Files (x86)\dotnet\dotnet.exe  
+    C:\Program Files (x86)\dotnet\dotnet.exe
     C:\Program Files\dotnet\dotnet.exe
     ```
 

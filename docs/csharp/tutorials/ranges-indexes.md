@@ -1,8 +1,8 @@
 ---
 title: Explore ranges of data using indices and ranges
 description: This advanced tutorial teaches you to explore data using indices and ranges to examine a continuous range of a sequential data set.
-ms.date: 11/01/2022
-ms.technology: csharp-fundamentals
+ms.date: 11/14/2023
+ms.subservice: fundamentals
 ms.custom: mvc
 ---
 # Indices and ranges
@@ -32,8 +32,7 @@ This language support relies on two new types and two new operators:
 Let's start with the rules for indices. Consider an array `sequence`. The `0` index is the same as `sequence[0]`. The `^0` index is the same as `sequence[sequence.Length]`. The expression `sequence[^0]` does throw an exception, just as `sequence[sequence.Length]` does. For any number `n`, the index `^n` is the same as `sequence.Length - n`.
 
 ```csharp
-string[] words = new string[]
-{
+string[] words = [
                 // index from start    index from end
     "The",      // 0                   ^9
     "quick",    // 1                   ^8
@@ -44,7 +43,7 @@ string[] words = new string[]
     "the",      // 6                   ^3
     "lazy",     // 7                   ^2
     "dog"       // 8                   ^1
-};              // 9 (or words.Length) ^0
+];              // 9 (or words.Length) ^0
 ```
 
 You can retrieve the last word with the `^1` index. Add the following code below the initialization:

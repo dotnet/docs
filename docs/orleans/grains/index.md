@@ -1,12 +1,12 @@
 ---
 title: Develop a grain
 description: Learn how to develop a grain in .NET Orleans.
-ms.date: 10/16/2023
+ms.date: 12/10/2023
 ---
 
 # Develop a grain
 
-Before you write code to implement a grain class, create a new Class Library project targeting .NET Standard or .Net Core (preferred) or .NET Framework 4.6.1 or higher (if you cannot use .NET Standard or .NET Core due to dependencies). Grain interfaces and grain classes can be defined in the same Class Library project, or in two different projects for better separation of interfaces from implementation. In either case, the projects need to reference [Microsoft.Orleans.Core.Abstractions](https://www.nuget.org/packages/Microsoft.Orleans.Core.Abstractions) and [Microsoft.Orleans.CodeGenerator.MSBuild](https://www.nuget.org/packages/Microsoft.Orleans.CodeGenerator.MSBuild) NuGet packages.
+Before you write code to implement a grain class, create a new Class Library project targeting .NET Standard or .NET Core (preferred) or .NET Framework 4.6.1 or higher (if you cannot use .NET Standard or .NET Core due to dependencies). Grain interfaces and grain classes can be defined in the same Class Library project, or in two different projects for better separation of interfaces from implementation. In either case, the projects need to reference [Microsoft.Orleans.Core.Abstractions](https://www.nuget.org/packages/Microsoft.Orleans.Core.Abstractions) and [Microsoft.Orleans.CodeGenerator.MSBuild](https://www.nuget.org/packages/Microsoft.Orleans.CodeGenerator.MSBuild) NuGet packages.
 
 For more thorough instructions, see the [Project Setup](../tutorials-and-samples/tutorial-1.md#project-setup) section of [Tutorial One – Orleans Basics](../tutorials-and-samples/tutorial-1.md).
 
@@ -14,7 +14,7 @@ For more thorough instructions, see the [Project Setup](../tutorials-and-samples
 
 Grains interact with each other and get called from outside by invoking methods declared as part of the respective grain interfaces. A grain class implements one or more previously declared grain interfaces. All methods of a grain interface must return a <xref:System.Threading.Tasks.Task> (for `void` methods), a <xref:System.Threading.Tasks.Task%601> or a <xref:System.Threading.Tasks.ValueTask%601> (for methods returning values of type `T`).
 
-The following is an excerpt from the Orleans version 1.5 Presence Service sample:
+The following is an excerpt from the Orleans Presence Service sample:
 
 ```csharp
 public interface IPlayerGrain : IGrainWithGuidKey
@@ -151,9 +151,9 @@ public Task GrainMethod6()
 
 `ValueTask<T>` can be used instead of `Task<T>`.
 
-## Grain reference
+## Grain references
 
-A Grain Reference is a proxy object that implements the same grain interface as the corresponding grain class. It encapsulates the logical identity (type and unique key) of the target grain. A grain reference is used for making calls to the target grain. Each grain reference is to a single grain (a single instance of the grain class), but one can create multiple independent references to the same grain.
+A Grain reference is a proxy object that implements the same grain interface as the corresponding grain class. It encapsulates the logical identity (type and unique key) of the target grain. Grain references are used for making calls to the target grain. Each grain reference is to a single grain (a single instance of the grain class), but one can create multiple independent references to the same grain.
 
 Since a grain reference represents the logical identity of the target grain, it is independent of the physical location of the grain, and stays valid even after a complete restart of the system. Developers can use grain references like any other .NET object. It can be passed to a method, used as a method return value, etc., and even saved to persistent storage.
 
@@ -172,6 +172,8 @@ From Orleans client code.
 ```csharp
 IPlayerGrain player = client.GetGrain<IPlayerGrain>(playerId);
 ```
+
+For more information about grain references, see the [grain reference article](grain-references.md).
 
 ### Grain method invocation
 
@@ -213,6 +215,12 @@ await joinedTask;
 // asynchronously after joinedTask is resolve.
 ```
 
+### Error propagation
+
+When a grain method throws an exception, Orleans propagates that exception up the calling stack, across hosts as necessary. For this to work as intended, exceptions must be serializable by Orleans and hosts which are handling the exception must have the exception type available. If an exception type isn't available, the exception will be thrown as an instance of <xref:Orleans.Serialization.UnavailableExceptionFallbackException?displayProperty=nameWithType>, preserving the message, type, and stack trace of the original exception.
+
+Exeptions thrown from grain methods don't cause the grain to be deactivated unless the exception inherits from <xref:Orleans.Storage.InconsistentStateException?displayProperty=nameWithType>. `InconsistentStateException` is thrown by storage operations which discover that the grain's in-memory state is inconsistent with the state in the database. Aside from the special-casing of `InconsistentStateException, this behavior is similar to throwing an exception from any .NET object: exceptions don't cause an object to be destroyed.
+
 ### Virtual methods
 
 A grain class can optionally override <xref:Orleans.Grain.OnActivateAsync%2A> and <xref:Orleans.Grain.OnDeactivateAsync%2A> virtual methods; are invoked by the Orleans runtime upon activation and deactivation of each grain of the class. This gives the grain code a chance to perform additional initialization and cleanup operations. An exception thrown by `OnActivateAsync` fails the activation process.
@@ -223,6 +231,7 @@ While `OnActivateAsync`, if overridden, is always called as part of the grain ac
 
 - [Grain extensions](grain-extensions.md)
 - [Grain identity](grain-identity.md)
+- [Grain references](grain-references.md)
 - [Grain persistence](grain-persistence/index.md)
 - [Grain lifecycle overview](grain-lifecycle.md)
 - [Grain placement](grain-placement.md)

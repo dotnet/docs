@@ -37,7 +37,7 @@ The size of the metadata cache in a `JsonSerializerOptions` instance depends on 
 
 ::: zone-end
 
-::: zone pivot="dotnet-7-0"
+::: zone pivot="dotnet-8-0,dotnet-7-0"
 
 ## The `JsonSerializerOptions.Default` property
 

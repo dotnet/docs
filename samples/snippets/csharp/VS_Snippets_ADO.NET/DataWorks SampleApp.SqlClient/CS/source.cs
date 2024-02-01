@@ -1,34 +1,33 @@
 ﻿
 // <Snippet1>
 using System;
-using System.Data;
 using System.Data.SqlClient;
 
-class Program
+static class Program
 {
     static void Main()
     {
-        string connectionString =
+        const string connectionString =
             "Data Source=(local);Initial Catalog=Northwind;"
             + "Integrated Security=true";
 
         // Provide the query string with a parameter placeholder.
-        string queryString =
+        const string queryString =
             "SELECT ProductID, UnitPrice, ProductName from dbo.products "
                 + "WHERE UnitPrice > @pricePoint "
                 + "ORDER BY UnitPrice DESC;";
 
         // Specify the parameter value.
-        int paramValue = 5;
+        const int paramValue = 5;
 
         // Create and open the connection in a using block. This
         // ensures that all resources will be closed and disposed
         // when the code exits.
         using (SqlConnection connection =
-            new SqlConnection(connectionString))
+            new(connectionString))
         {
             // Create the Command and Parameter objects.
-            SqlCommand command = new SqlCommand(queryString, connection);
+            SqlCommand command = new(queryString, connection);
             command.Parameters.AddWithValue("@pricePoint", paramValue);
 
             // Open the connection in a try/catch block.

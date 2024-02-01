@@ -3,7 +3,6 @@ title: How to preserve references in System.Text.Json
 description: "Learn how to preserve references and handle or ignore circular references while using System.Text.Json to serialize and deserialize JSON in .NET."
 ms.date: 01/12/2021
 no-loc: [System.Text.Json, Newtonsoft.Json]
-zone_pivot_groups: dotnet-version
 dev_langs:
   - "csharp"
   - "vb"
@@ -71,8 +70,6 @@ When the sample code calls the serializer, it uses a <xref:System.Text.Json.Json
 
 ## Ignore circular references
 
-::: zone pivot="dotnet-7-0,dotnet-6-0"
-
 Instead of handling circular references, you can ignore them. To ignore circular references, set <xref:System.Text.Json.JsonSerializerOptions.ReferenceHandler%2A> to <xref:System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles%2A>. The serializer sets circular reference properties to `null`, as shown in the following example:
 
 :::code language="csharp" source="snippets/how-to-6-0/csharp/SerializeIgnoreCycles.cs" highlight="32,59":::
@@ -86,8 +83,6 @@ This behavior has the following disadvantages:
 
 * Silent loss of data.
 * Data can't make a round trip from JSON back to the source object.
-
-::: zone-end
 
 ## See also
 

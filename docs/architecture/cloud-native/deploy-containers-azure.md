@@ -1,7 +1,7 @@
 ---
 title: Deploying containers in Azure
 description: Deploying Containers in Azure with Azure Container Registry, Azure Kubernetes Service, and Azure Dev Spaces.
-ms.date: 04/06/2022
+ms.date: 12/14/2023
 ---
 
 # Deploying containers in Azure
@@ -54,7 +54,7 @@ As a best practice, you shouldn't manually push images to a container registry. 
 
 ## ACR Tasks
 
-[ACR Tasks](/azure/container-registry/container-registry-tasks-overview) is a set of features available from the Azure Container Registry. It extends your [inner-loop development cycle](../containerized-lifecycle/design-develop-containerized-apps/docker-apps-inner-loop-workflow.md) by building and managing container images in the Azure cloud. Instead of invoking a `docker build` and `docker push` locally on your development machine, they're automatically handled by ACR Tasks in the cloud.
+[ACR Tasks](/azure/container-registry/container-registry-tasks-overview) is a set of features available from the Azure Container Registry. It extends your inner-loop development cycle by building and managing container images in the Azure cloud. Instead of invoking a `docker build` and `docker push` locally on your development machine, they're automatically handled by ACR Tasks in the cloud.
 
 The following AZ CLI command both builds a container image and pushes it to ACR:
 

@@ -3,7 +3,7 @@ title: Dependency injection
 description: Learn how to use dependency injection within your .NET apps. Discover how to registration services, define service lifetimes, and express dependencies in C#.
 author: IEvangelist
 ms.author: dapine
-ms.date: 10/13/2023
+ms.date: 01/25/2024
 ms.topic: overview
 ---
 
@@ -382,7 +382,7 @@ When services are resolved by `ActivatorUtilities`, constructor injection requir
 
 ## Scope validation
 
-When the app runs in the `Development` environment and calls [CreateApplicationBuilder](generic-host.md#default-builder-settings) to build the host, the default service provider performs checks to verify that:
+When the app runs in the `Development` environment and calls [CreateApplicationBuilder](generic-host.md#host-builder-settings) to build the host, the default service provider performs checks to verify that:
 
 - Scoped services aren't resolved from the root service provider.
 - Scoped services aren't injected into singletons.
@@ -397,7 +397,7 @@ The <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory> is alwa
 
 To achieve scoping services within implementations of <xref:Microsoft.Extensions.Hosting.IHostedService>, such as the <xref:Microsoft.Extensions.Hosting.BackgroundService>, do *not* inject the service dependencies via constructor injection. Instead, inject <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory>, create a scope, then resolve dependencies from the scope to use the appropriate service lifetime.
 
-:::code language="csharp" source="snippets/configuration/worker-scope/Worker.cs" highlight="6,8-9,15":::
+:::code language="csharp" source="snippets/configuration/worker-scope/Worker.cs":::
 
 In the preceding code, while the app is running, the background service:
 
@@ -407,6 +407,34 @@ In the preceding code, while the app is running, the background service:
 - Works on processing objects and then relaying them, and finally marks them as processed.
 
 From the sample source code, you can see how implementations of <xref:Microsoft.Extensions.Hosting.IHostedService> can benefit from scoped service lifetimes.
+
+## Keyed services
+
+Starting with .NET 8, there is support for service registrations and lookups based on a key, meaning it's possible to register multiple services with a different key, and use this key for the lookup.
+
+For example, consider the case where you have different implementations of the interface `IMessageWriter`: `MemoryMessageWriter` and `QueueMessageWriter`.
+
+You can register these services using the overload of the service registration methods (seen earlier) that supports a key as a parameter:
+
+```csharp
+services.AddKeyedSingleton<IMessageWriter, MemoryMessageWriter>("memory");
+services.AddKeyedSingleton<IMessageWriter, QueueMessageWriter>("queue");
+```
+
+The `key` isn't limited to `string`, it can be any `object` you want, as long as the type correctly implements `Equals`.
+
+In the constructor of the class that uses `IMessageWriter`, you add the <xref:Microsoft.Extensions.DependencyInjection.FromKeyedServicesAttribute> to specify the key of the service to resolve:
+
+```csharp
+public class ExampleService
+{
+    public ExampleService(
+        [FromKeyedServices("queue")] IMessageWriter writer)
+    {
+        // Omitted for brevity...
+    }
+}
+```
 
 ## See also
 

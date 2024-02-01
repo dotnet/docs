@@ -8,7 +8,7 @@ public class GroupQueryResultsTest
     [Fact]
     public void GroupQueryResults1Test()
     {
-        var sw = InitTest();
+        StringWriter sw = InitTest();
 
         GroupQueryResults.GroupQueryResults1();
         Assert.Equal(
@@ -33,13 +33,13 @@ Key: Tucker
     Tucker, Michael
 Key: Zabokritski
     Zabokritski, Eugene
-", sw.ToString().Replace("\t","    "));
+", sw.ToString().Replace("\t", "    "));
     }
 
     [Fact]
     public void GroupQueryResults2Test()
     {
-        var sw = InitTest();
+        StringWriter sw = InitTest();
 
         GroupQueryResults.GroupQueryResults2();
         Assert.Equal(
@@ -68,7 +68,7 @@ Key: Z
     [Fact]
     public void GroupQueryResults3Test()
     {
-        var sw= InitTest();
+        StringWriter sw = InitTest();
 
         GroupQueryResults.GroupQueryResults3();
         Assert.Equal(
@@ -94,7 +94,7 @@ Key: 90
     [Fact]
     public void GroupQueryResults4Test()
     {
-        var sw = InitTest();
+        StringWriter sw = InitTest();
 
         GroupQueryResults.GroupQueryResults4();
         Assert.Equal(
@@ -118,7 +118,7 @@ Key: False
     [Fact]
     public void GroupQueryResults5Test()
     {
-        var sw = InitTest();
+        StringWriter sw = InitTest();
 
         GroupQueryResults.GroupQueryResults5();
         Assert.Equal(

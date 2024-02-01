@@ -8,7 +8,7 @@ To implement `DefaultAzureCredential`, first add the [`Azure.Identity`](/dotnet/
 
 Open a terminal environment of your choice in the application project directory and enter the command below.
 
-```terminal
+```dotnetcli
 dotnet add package Azure.Identity
 dotnet add package Microsoft.Extensions.Azure
 ```

@@ -1,6 +1,6 @@
 ---
 title: "Top-level statements - programs without Main methods"
-description: Learn about top-level statements in C# 9 and later. You can create programs without the ceremony of a Program class and a Main method.
+description: Learn about top-level statements. You can create programs without the ceremony of a Program class and a Main method.
 ms.date: 08/19/2021
 helpviewer_keywords:
   - "C# language, top-level statements"
@@ -8,7 +8,7 @@ helpviewer_keywords:
 ---
 # Top-level statements - programs without `Main` methods
 
-Starting in C# 9, you don't have to explicitly include a `Main` method in a console application project. Instead, you can use the *top-level statements* feature to minimize the code you have to write. In this case, the compiler generates a class and `Main` method entry point for the application.
+You don't have to explicitly include a `Main` method in a console application project. Instead, you can use the *top-level statements* feature to minimize the code you have to write. In this case, the compiler generates a `Program` class with an entry point method for the application. The name of the generated method isn't `Main`, it's an implementation detail that your code can't reference directly.
 
 Here's a *Program.cs* file that is a complete C# program in C# 10:
 
@@ -72,7 +72,7 @@ To return an `int` value when the application ends, use the `return` statement a
 
 ## Implicit entry point method
 
-The compiler generates a method to serve as the program entry point for a project with top-level statements. The name of this method isn't actually `Main`, it's an implementation detail that your code can't reference directly. The signature of the method depends on whether the top-level statements contain the `await` keyword or the `return` statement. The following table shows what the method signature would look like, using the method name `Main` in the table for convenience.
+The compiler generates a method to serve as the program entry point for a project with top-level statements. The signature of the method depends on whether the top-level statements contain the `await` keyword or the `return` statement. The following table shows what the method signature would look like, using the method name `Main` in the table for convenience.
 
 | Top-level code contains | Implicit `Main` signature                    |
 |-------------------------|----------------------------------------------|

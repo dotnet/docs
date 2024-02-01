@@ -19,7 +19,10 @@ ms.assetid: 4e4d7e64-9f1b-4026-98f7-20488ac7b42b
 # How to: Use Named Pipes for Network Interprocess Communication
 
 Named pipes provide interprocess communication between a pipe server and one or more pipe clients. They offer more functionality than anonymous pipes, which provide interprocess communication on a local computer. Named pipes support full duplex communication over a network and multiple server instances, message-based communication, and client impersonation, which enables connecting processes to use their own set of permissions on remote servers.  
-  
+
+> [!IMPORTANT]
+> .NET on Linux uses Unix Domain Sockets (UDS) for the implementation of these APIs.
+
  To implement name pipes, use the <xref:System.IO.Pipes.NamedPipeServerStream> and <xref:System.IO.Pipes.NamedPipeClientStream> classes.  
   
 ## Example 1

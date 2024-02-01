@@ -7,7 +7,6 @@ public class MyClass
     {
         Console.WriteLine("Hello World!");
     }
-
 }
 
 namespace MyNamespace

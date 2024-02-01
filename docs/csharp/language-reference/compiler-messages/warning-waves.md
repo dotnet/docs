@@ -39,7 +39,16 @@ helpviewer_keywords:
 ---
 # C# Warning waves
 
-New warnings and errors may be introduced in each release of the C# compiler. When new warnings could be reported on existing code, those warnings are introduced under an opt-in system referred to as a *warning wave*. The opt-in system means that you shouldn't see new warnings on existing code without taking action to enable them. Warning waves are enabled using the [**AnalysisLevel**](../compiler-options/errors-warnings.md#analysis-level) element in your project file. When `<TreatWarningsAsErrors>true</TreatWarningsAsErrors>` is specified, enabled warning wave warnings generate errors. Warning wave 5 diagnostics were added in C# 9. Warning wave 6 diagnostics were added in C# 10. Warning wave 7 diagnostics were added in C# 11.
+New warnings and errors may be introduced in each release of the C# compiler. When new warnings could be reported on existing code, those warnings are introduced under an opt-in system referred to as a *warning wave*. The opt-in system means that you shouldn't see new warnings on existing code without taking action to enable them. Warning waves are enabled using the [**AnalysisLevel**](../compiler-options/errors-warnings.md#analysis-level) element in your project file. When `<TreatWarningsAsErrors>true</TreatWarningsAsErrors>` is specified, enabled warning wave warnings generate errors. Warning wave 5 diagnostics were added in C# 9. Warning wave 6 diagnostics were added in C# 10. Warning wave 7 diagnostics were added in C# 11. Warning wave 8 diagnostics were added in C# 12.
+
+## CS9123 - Taking address of local or parameter in async method can create a GC hole.
+
+*Warning wave 8*
+
+The `&` operator should not be used on parameters or local variables in async methods.
+The following code produces CS9123:
+
+:::code language="csharp" source="./snippets/WarningWaves/WaveEight.cs" id="NoAmpersand":::
 
 ## CS8981 - The type name only contains lower-cased ascii characters.
 

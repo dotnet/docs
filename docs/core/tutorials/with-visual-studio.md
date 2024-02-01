@@ -2,7 +2,7 @@
 title: Create a .NET console application using Visual Studio
 description: Learn how to create a .NET console application with C# or Visual Basic using Visual Studio.
 ms.date: 08/22/2023
-zone_pivot_groups: dotnet-version-6-8
+zone_pivot_groups: dotnet-version
 dev_langs:
   - "csharp"
   - "vb"

@@ -24,7 +24,7 @@ public static class QueryCollectionOfObjects
             }
         }
 
-        QueryHighScores(1, 90);
+        QueryHighScores(0, 90);
         // </query_a_collection_of_objects_2>
     }
 }

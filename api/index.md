@@ -3,12 +3,12 @@ description: Explore Microsoft's comprehensive .NET API browser. Your ultimate r
 layout: ApiBrowserPage
 hide_bc: true
 title: .NET API browser
-quickFilterColumn1: net-7.0,netframework-4.8,netstandard-2.1
-quickFilterColumn2: aspnetcore-7.0,efcore-7.0,net-maui-7.0
+quickFilterColumn1: net-8.0,netframework-4.8,netstandard-2.1
+quickFilterColumn2: aspnetcore-8.0,efcore-8.0,net-maui-8.0
 quickFilterColumn3: azure-dotnet,ml-dotnet,spark-dotnet
 ms.topic: landing-page
 ms.custom: "updateeachrelease"
-ms.date: 11/18/2022
+ms.date: 11/14/2023
 ---
 # .NET API browser
 

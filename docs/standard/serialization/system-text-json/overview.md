@@ -3,6 +3,9 @@ title: "Serialize and deserialize JSON using C# - .NET"
 description: This overview describes the System.Text.Json namespace functionality for serializing to and deserializing from JSON in .NET.
 ms.date: 10/18/2021
 no-loc: [System.Text.Json, Newtonsoft.Json]
+dev_langs:
+  - CSharp
+  - VB
 helpviewer_keywords:
   - "JSON serialization"
   - "serializing objects"
@@ -22,7 +25,7 @@ For Visual Basic, there are some limitations on what parts of the library you ca
 
 ## How to get the library
 
-The library is built-in as part of the shared framework for .NET Core 3.0 and later versions. The [source generation feature](source-generation-modes.md#source-generation---metadata-collection-mode) is built-in as part of the shared framework for .NET 6 and later versions. Use of source generation requires .NET 5 SDK or later.
+The library is built-in as part of the shared framework for .NET Core 3.0 and later versions. The [source generation feature](source-generation-modes.md#metadata-based-mode) is built-in as part of the shared framework for .NET 6 and later versions.
 
 For framework versions earlier than .NET Core 3.0, install the [System.Text.Json](https://www.nuget.org/packages/System.Text.Json) NuGet package. The package supports:
 
@@ -58,7 +61,9 @@ There are also extension methods for System.Text.Json on [HttpContent](xref:Syst
 
 ## Reflection vs. source generation
 
-By default, `System.Text.Json` uses [reflection](/dotnet/csharp/advanced-topics/reflection-and-attributes/) to gather the metadata it needs to access properties of objects for serialization and deserialization *at run time*. As an alternative, `System.Text.Json` can use the C# [source generation](../../../csharp/roslyn-sdk/source-generators-overview.md) feature to improve performance, reduce private memory usage, and facilitate [assembly trimming](../../../core/deploying/trimming/trim-self-contained.md), which reduces app size. For more information, see [How to choose reflection or source generation in System.Text.Json](source-generation-modes.md).
+By default, `System.Text.Json` gathers the metadata it needs to access properties of objects for serialization and deserialization *at run time* using [reflection](/dotnet/csharp/advanced-topics/reflection-and-attributes/). As an alternative, `System.Text.Json` can use the C# [source generation](../../../csharp/roslyn-sdk/source-generators-overview.md) feature to improve performance, reduce private memory usage, and facilitate [assembly trimming](../../../core/deploying/trimming/trim-self-contained.md), which reduces app size.
+
+For more information, see [Reflection versus source generation](reflection-vs-source-generation.md).
 
 ## Security information
 

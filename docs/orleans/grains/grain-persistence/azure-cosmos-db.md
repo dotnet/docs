@@ -19,16 +19,17 @@ Install the [Microsoft.Orleans.Persistence.Cosmos](https://www.nuget.org/package
 
 ## Configure clustering provider
 
-To configure the clustering provider use the `HostingExtensions.UseCosmosClustering` extension method.
+To configure the clustering provider, use the `HostingExtensions.UseCosmosClustering` extension method. You can customize the name and throughput of the database or container, enable resource creation, or configure the client's credentials in this method.
 
 ```csharp
 siloBuilder.UseCosmosClustering(
     configureOptions: static options =>
     {
-        options.DatabaseName = "Orleans";
-        options.DatabaseThroughput = 400;
-        options.ContainerName = "OrleansCluster";
-        options.ConfigureCosmosClient("AccountName=example;Key=example;");
+        options.IsResourceCreationEnabled = true;
+        options.DatabaseName = "OrleansAlternativeDatabase";
+        options.ContainerName = "OrleansClusterAlternativeContainer";
+        options.ContainerThroughputProperties = ThroughputProperties.CreateAutoscaleThroughput(1000);
+        options.ConfigureCosmosClient("<azure-cosmos-db-nosql-connection-string>");
     });
 ```
 
@@ -41,9 +42,10 @@ siloBuilder.AddCosmosGrainStorage(
     name: "profileStore",
     configureOptions: static options =>
     {
-        options.DatabaseName = "Orleans";
-        options.DatabaseThroughput = 400;
-        options.ContainerName = "OrleansStorage";
-        options.ConfigureCosmosClient("AccountName=example;Key=example;");
+        options.IsResourceCreationEnabled = true;
+        options.DatabaseName = "OrleansAlternativeDatabase";
+        options.ContainerName = "OrleansStorageAlternativeContainer";
+        options.ContainerThroughputProperties = ThroughputProperties.CreateAutoscaleThroughput(1000);
+        options.ConfigureCosmosClient("<azure-cosmos-db-nosql-connection-string>");
     });
 ```

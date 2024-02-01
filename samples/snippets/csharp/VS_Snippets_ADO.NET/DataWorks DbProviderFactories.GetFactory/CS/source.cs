@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Data;
-using System.Data.SqlClient;
-using System.Configuration;
 using System.Data.Common;
 
-class Program
+static class Program
 {
     static void Main()
     {

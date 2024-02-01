@@ -38,6 +38,16 @@ This article details the settings you can use to configure .NET compilation.
 }
 ```
 
+*runtimeconfig.template.json* file:
+
+```json
+{
+   "configProperties": {
+      "System.Runtime.TieredCompilation": false
+   }
+}
+```
+
 Project file:
 
 ```xml
@@ -78,6 +88,16 @@ Project file:
 }
 ```
 
+*runtimeconfig.template.json* file:
+
+```json
+{
+   "configProperties": {
+      "System.Runtime.TieredCompilation.QuickJit": false
+   }
+}
+```
+
 Project file:
 
 ```xml
@@ -113,6 +133,16 @@ Project file:
       "configProperties": {
          "System.Runtime.TieredCompilation.QuickJitForLoops": false
       }
+   }
+}
+```
+
+*runtimeconfig.template.json* file:
+
+```json
+{
+   "configProperties": {
+      "System.Runtime.TieredCompilation.QuickJitForLoops": false
    }
 }
 ```

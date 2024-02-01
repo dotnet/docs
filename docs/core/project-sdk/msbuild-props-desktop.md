@@ -35,7 +35,7 @@ Specify the following settings in the project file of your WinForms or WPF proje
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows</TargetFramework>
+    <TargetFramework>net8.0-windows</TargetFramework>
 
     <UseWPF>true</UseWPF>
     <!-- and/or -->

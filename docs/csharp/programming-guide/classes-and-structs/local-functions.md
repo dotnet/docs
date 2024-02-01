@@ -52,7 +52,7 @@ The following example defines a local function named `AppendPathSeparator` that 
 
 :::code language="csharp" source="snippets/local-functions/Program.cs" id="Basic" :::
 
-Beginning with C# 9.0, you can apply attributes to a local function, its parameters and type parameters, as the following example shows:
+You can apply attributes to a local function, its parameters and type parameters, as the following example shows:
 
 :::code language="csharp" source="snippets/local-functions/Program.cs" id="WithAttributes" :::
 

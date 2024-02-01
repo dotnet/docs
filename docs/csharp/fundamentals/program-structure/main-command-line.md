@@ -20,11 +20,9 @@ There can only be one entry point in a C# program. If you have more than one cla
 
 :::code language="csharp" source="snippets/main-command-line/TestClass.cs":::
 
-Starting in C# 9, you can omit the `Main` method, and write C# statements as if they were in the `Main` method, as in the following example:
+You can also use [Top-level statements](top-level-statements.md) in one file as the entry point for your application:
 
 :::code language="csharp" source="snippets/top-level-statements-1/Program.cs":::
-
-For information about how to write application code with an implicit entry point method, see [Top-level statements](top-level-statements.md).
 
 ## Overview
 

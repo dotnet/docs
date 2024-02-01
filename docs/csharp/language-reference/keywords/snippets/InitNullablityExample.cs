@@ -13,3 +13,15 @@ class Person_InitExampleNullability
 }
 // </Snippet4>
 
+// <SnippetNonNullable>
+class Person_InitExampleNonNull
+{
+    private int _yearOfBirth;
+
+    public required int YearOfBirth
+    {
+        get => _yearOfBirth;
+        init => _yearOfBirth = value;
+    }
+}
+// </SnippetNonNullable>

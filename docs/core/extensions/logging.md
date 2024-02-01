@@ -3,7 +3,7 @@ title: Logging in C#
 author: IEvangelist
 description: Learn about app logging provided by the Microsoft.Extensions.Logging NuGet package in C#.
 ms.author: dapine
-ms.date: 10/15/2023
+ms.date: 12/11/2023
 ---
 
 # Logging in C# and .NET
@@ -56,13 +56,13 @@ This example gets an ILogger object in a hosted app using [ASP.NET Minimal APIs]
 The preceding example:
 
 - Created a singleton service called `ExampleHandler` and mapped incoming web requests to run the `ExampleHandler.HandleRequest` function.
-- Line 8 defines a [primary constructor](/dotnet/csharp/whats-new/tutorials/primary-constructors) for the ExampleHandler, a feature added in C# 12. Using the older style C# constructor would work equally well but is a little more verbose.
+- Line 8 defines a [primary constructor](../../csharp/whats-new/tutorials/primary-constructors.md) for the ExampleHandler, a feature added in C# 12. Using the older style C# constructor would work equally well but is a little more verbose.
 - The constructor defines a parameter of type `ILogger<ExampleHandler>`. <xref:Microsoft.Extensions.Logging.ILogger%601> derives from <xref:Microsoft.Extensions.Logging.ILogger> and indicates which category the `ILogger` object has. The DI container locates an `ILogger` with the correct category and supplies it as the constructor argument. If no `ILogger` with that category exists yet, the DI container automatically creates it from the `ILoggerFactory` in the service provider.
 - The `logger` parameter received in the constructor was used for logging in the `HandleRequest` function.
 
 ### Host-provided ILoggerFactory
 
-Host builders initialize [default configuration](generic-host.md#default-builder-settings),
+Host builders initialize [default configuration](generic-host.md#host-builder-settings),
 then add a configured `ILoggerFactory` object to the host's DI container when the host is built. Before the host is built you can adjust the logging configuration via <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder.Logging?displayProperty=nameWithType>, <xref:Microsoft.AspNetCore.Builder.WebApplicationBuilder.Logging?displayProperty=nameWithType>, or similar APIs on other hosts. Hosts also apply logging configuration from default configuration sources as _appsettings.json_ and environment variables. For more information, see [Configuration in .NET](configuration.md).
 
 This example expands on the previous one to customize the `ILoggerFactory` provided by `WebApplicationBuilder`. It adds [OpenTelemetry](https://github.com/open-telemetry/opentelemetry-dotnet#getting-started) as a logging provider transmitting the logs over [OTLP (OpenTelemetry protocol)](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Exporter.OpenTelemetryProtocol/README.md#enable-log-exporter):
@@ -381,18 +381,18 @@ using Microsoft.Extensions.Logging;
 
 internal static class AppLogEvents
 {
-    internal EventId Create = new(1000, "Created");
-    internal EventId Read = new(1001, "Read");
-    internal EventId Update = new(1002, "Updated");
-    internal EventId Delete = new(1003, "Deleted");
+    internal static EventId Create = new(1000, "Created");
+    internal static EventId Read = new(1001, "Read");
+    internal static EventId Update = new(1002, "Updated");
+    internal static EventId Delete = new(1003, "Deleted");
 
     // These are also valid EventId instances, as there's
     // an implicit conversion from int to an EventId
     internal const int Details = 3000;
     internal const int Error = 3001;
 
-    internal EventId ReadNotFound = 4000;
-    internal EventId UpdateNotFound = 4001;
+    internal static EventId ReadNotFound = 4000;
+    internal static EventId UpdateNotFound = 4001;
 
     // ...
 }

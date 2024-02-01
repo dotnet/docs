@@ -41,7 +41,7 @@ All other marks and logos are property of their respective owners.
 
 Authors:
 
-> **Rob Vettor**, Principal MTC (Microsoft Technology Center) Architect for Cloud App Innovation - [thinkingincloudnative.com](https://thinkingincloudnative.com/about/), Microsoft
+> **Rob Vettor**, Principal MTC (Microsoft Technology Center) Architect for Cloud App Innovation, Microsoft
 >
 > **Steve "ardalis" Smith**, Software Architect and Trainer - [Ardalis.com](https://ardalis.com)
 

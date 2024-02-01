@@ -3,108 +3,24 @@ using System.Linq;
 using System.Collections.Generic;
 using System.Text;
 using System.Xml.Linq;
-using System.Data.Linq;
 
 namespace LINQGettingStarted_1
 {
     class Customer { } //so that Table<Customer> compiles below
 
-    // <snippet1>
     class IntroToLINQ
     {
         static void Main()
         {
-            // The Three Parts of a LINQ Query:
-            // 1. Data source.
-            int[] numbers = new int[7] { 0, 1, 2, 3, 4, 5, 6 };
-
-            // 2. Query creation.
-            // numQuery is an IEnumerable<int>
-            var numQuery =
-                from num in numbers
-                where (num % 2) == 0
-                select num;
-
-            // 3. Query execution.
-            foreach (int num in numQuery)
-            {
-                Console.Write("{0,1} ", num);
-            }
         }
     }
-    // </snippet1>
 
     class DummyClass
     {
         //The Three Parts of a LINQ Query
         static void CreateDataSources()
         {
-            // <snippet2>
-            // Create a data source from an XML document.
-            // using System.Xml.Linq;
-            XElement contacts = XElement.Load(@"c:\myContactList.xml");
-            // </snippet2>
 
-            // <snippet3>
-            // Create a data source from a SQL Server database.
-            // using System.Data.Linq;
-            DataContext db = new DataContext(@"c:\northwind\northwnd.mdf");
-            // </snippet3>
-
-            //// <snippet37>
-            //Northwnd db = new Northwnd(@"c:\northwnd.mdf");
-
-            //// Query for customers in London.
-            //IQueryable<Customer> custQuery =
-            //    from cust in db.Customers
-            //    where cust.City == "London"
-            //    select cust;
-            //// </snippet37>
-        }
-        //The Three Parts of a LINQ Query
-        static void DeferredExecution()
-        {
-
-            //  Data source.
-            int[] numbers = new int[7] { 0, 1, 2, 3, 4, 5, 6 };
-
-            //  Query creation.
-            IEnumerable<int> numQuery =
-                from num in numbers
-                where (num % 2) == 0
-                select num;
-
-            // <snippet4>
-            //  Query execution.
-            foreach (int num in numQuery)
-            {
-                Console.Write("{0,1} ", num);
-            }
-            // </snippet4>
-
-            // <snippet5>
-            var evenNumQuery =
-                from num in numbers
-                where (num % 2) == 0
-                select num;
-
-            int evenNumCount = evenNumQuery.Count();
-            //</snippet5>
-
-            //<snippet6>
-            List<int> numQuery2 =
-                (from num in numbers
-                 where (num % 2) == 0
-                 select num).ToList();
-
-            // or like this:
-            // numQuery3 is still an int[]
-
-            var numQuery3 =
-                (from num in numbers
-                 where (num % 2) == 0
-                 select num).ToArray();
-            //</snippet6>
         }
     }
 
@@ -134,8 +50,8 @@ namespace LINQGettingStarted_1
         static void Main()
         {
             // Create the first data source.
-            List<Student> students = new List<Student>()
-            {
+            List<Student> students = 
+            [
                 new Student { First="Svetlana",
                     Last="Omelchenko",
                     ID=111,
@@ -154,15 +70,15 @@ namespace LINQGettingStarted_1
                     Street="125 Main Street",
                     City="Lake City",
                     Scores= new List<int> { 88, 94, 65, 91 } },
-            };
+            ];
 
             // Create the second data source.
-            List<Teacher> teachers = new List<Teacher>()
-            {
+            List<Teacher> teachers =
+            [
                 new Teacher { First="Ann", Last="Beebe", ID=945, City="Seattle" },
                 new Teacher { First="Alex", Last="Robinson", ID=956, City="Redmond" },
                 new Teacher { First="Michiyo", Last="Sato", ID=972, City="Tacoma" }
-            };
+            ];
 
             // Create the query.
             var peopleInSeattle = (from student in students
@@ -179,8 +95,6 @@ namespace LINQGettingStarted_1
                 Console.WriteLine(person);
             }
 
-            Console.WriteLine("Press any key to exit.");
-            Console.ReadKey();
         }
     }
     /* Output:
@@ -197,12 +111,12 @@ namespace LINQGettingStarted_1
         {
             // Create the data source by using a collection initializer.
             // The Student class was defined previously in this topic.
-            List<Student> students = new List<Student>()
-            {
+            List<Student> students =
+            [
                 new Student {First="Svetlana", Last="Omelchenko", ID=111, Scores = new List<int>{97, 92, 81, 60}},
                 new Student {First="Claire", Last="O’Donnell", ID=112, Scores = new List<int>{75, 84, 91, 39}},
                 new Student {First="Sven", Last="Mortensen", ID=113, Scores = new List<int>{88, 94, 65, 91}},
-            };
+            ];
 
             // Create the query.
             var studentsToXML = new XElement("Root",
@@ -218,9 +132,6 @@ namespace LINQGettingStarted_1
             // Execute the query.
             Console.WriteLine(studentsToXML);
 
-            // Keep the console open in debug mode.
-            Console.WriteLine("Press any key to exit.");
-            Console.ReadKey();
         }
     }
     // </snippet9>
@@ -250,7 +161,7 @@ namespace LINQGettingStarted_1
         static void Main()
         {
             // Data source.
-            double[] radii = { 1, 2, 3 };
+            double[] radii = [ 1, 2, 3 ];
 
             // LINQ query using method syntax.
             IEnumerable<string> output = 
@@ -268,9 +179,6 @@ namespace LINQGettingStarted_1
                 Console.WriteLine(s);
             }
                 
-            // Keep the console open in debug mode.
-            Console.WriteLine("Press any key to exit.");
-            Console.ReadKey();
         }
     }
     /* Output:
@@ -292,8 +200,8 @@ namespace LINQGettingStarted_1
         }
 
         // Create a data source by using a collection initializer.
-        static List<Student> students = new List<Student>
-        {
+        static List<Student> students = 
+        [
             new Student {First="Svetlana", Last="Omelchenko", ID=111, Scores= new List<int> {97, 92, 81, 60}},
             new Student {First="Claire", Last="O'Donnell", ID=112, Scores= new List<int> {75, 84, 91, 39}},
             new Student {First="Sven", Last="Mortensen", ID=113, Scores= new List<int> {88, 94, 65, 91}},
@@ -306,7 +214,7 @@ namespace LINQGettingStarted_1
             new Student {First="Terry", Last="Adams", ID=120, Scores= new List<int> {99, 82, 81, 79}},
             new Student {First="Eugene", Last="Zabokritski", ID=121, Scores= new List<int> {96, 85, 91, 60}},
             new Student {First="Michael", Last="Tucker", ID=122, Scores= new List<int> {94, 92, 91, 91}}
-        };
+        ];
         //</snippet11>
 
         static void Main()
@@ -549,46 +457,6 @@ namespace LINQGettingStarted_1
             //</snippet21>
         }
 
-        //<snippet22>
-        class QueryVMethodSyntax
-        {
-            static void Main()
-            {
-                int[] numbers = { 5, 10, 8, 3, 6, 12};
-
-                //Query syntax:
-                IEnumerable<int> numQuery1 =
-                    from num in numbers
-                    where num % 2 == 0
-                    orderby num
-                    select num;
-
-                //Method syntax:
-                IEnumerable<int> numQuery2 = numbers.Where(num => num % 2 == 0).OrderBy(n => n);
-
-                foreach (int i in numQuery1)
-                {
-                    Console.Write(i + " ");
-                }
-                Console.WriteLine(System.Environment.NewLine);
-                foreach (int i in numQuery2)
-                {
-                    Console.Write(i + " ");
-                }
-
-                // Keep the console open in debug mode.
-                Console.WriteLine(System.Environment.NewLine);
-                Console.WriteLine("Press any key to exit");
-                Console.ReadKey();
-            }
-        }
-        /*
-            Output:
-            6 8 10 12
-            6 8 10 12
-         */
-        //</snippet22>
-
         //<snippet31>
         // Lightweight class with auto-implemented properties
         class NamePhone
@@ -720,41 +588,7 @@ namespace LINQGettingStarted_1
 
         class LINQAndGenericTypes
         {
-            class Customer
-            {
-                public string City { get; set; }
-                public string LastName { get; set; }
-                public string FirstName { get; set; }
-                public string Phone {get; set;}
-            }
-            static List<Customer> customers = new List<Customer>();
 
-            static void Main()
-            {
-                //<snippet34>
-                IEnumerable<Customer> customerQuery =
-                    from cust in customers
-                    where cust.City == "London"
-                    select cust;
-
-                foreach (Customer customer in customerQuery)
-                {
-                    Console.WriteLine(customer.LastName + ", " + customer.FirstName);
-                }
-                //</snippet34>
-
-                //<snippet35>
-                var customerQuery2 =
-                    from cust in customers
-                    where cust.City == "London"
-                    select cust;
-
-                foreach(var customer in customerQuery2)
-                {
-                    Console.WriteLine(customer.LastName + ", " + customer.FirstName);
-                }
-                //</snippet35>
-            }
         }
     }
 }

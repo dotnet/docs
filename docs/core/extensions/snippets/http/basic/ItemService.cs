@@ -5,11 +5,8 @@ using Shared;
 
 namespace BasicHttp.Example;
 
-public sealed class ItemService : IDisposable
+public sealed class ItemService(HttpClient httpClient) : IDisposable
 {
-    private readonly HttpClient _httpClient = null!;
-
-    public ItemService(HttpClient httpClient) => _httpClient = httpClient;
 
     // <Create>
     public async Task CreateItemAsync(Item item)
@@ -20,7 +17,7 @@ public sealed class ItemService : IDisposable
             MediaTypeNames.Application.Json);
 
         using HttpResponseMessage httpResponse =
-            await _httpClient.PostAsync("/api/items", json);
+            await httpClient.PostAsync("/api/items", json);
 
         httpResponse.EnsureSuccessStatusCode();
     }
@@ -34,7 +31,7 @@ public sealed class ItemService : IDisposable
             MediaTypeNames.Application.Json);
 
         using HttpResponseMessage httpResponse =
-            await _httpClient.PutAsync($"/api/items/{item.Id}", json);
+            await httpClient.PutAsync($"/api/items/{item.Id}", json);
 
         httpResponse.EnsureSuccessStatusCode();
     }
@@ -43,11 +40,11 @@ public sealed class ItemService : IDisposable
     public async Task DeleteItemAsync(Guid id)
     {
         using HttpResponseMessage httpResponse =
-            await _httpClient.DeleteAsync($"/api/items/{id}");
+            await httpClient.DeleteAsync($"/api/items/{id}");
 
         httpResponse.EnsureSuccessStatusCode();
     }
     // </Delete>
 
-    void IDisposable.Dispose() => _httpClient?.Dispose();
+    void IDisposable.Dispose() => httpClient?.Dispose();
 }

@@ -27,7 +27,7 @@ This topic describes the public views supported by the SQL Workflow Instance Sto
 |ExecutionStatus|Nvarchar(450)|Indicates the current execution state of the Workflow. Possible states include **Executing**, **Idle**, **Closed**.|  
 |IsInitialized|Bit|Indicates whether the workflow instance has been initialized. An initialized workflow instance is a workflow instance that has been persisted at least once.|  
 |IsSuspended|Bit|Indicates whether the workflow instance has been suspended.|  
-|IsCompleted|Bit|Indicates whether the Workflow Instance has finished executing. **Note:**  Iif the **InstanceCompletionAction** property is set to **DeleteAll**, the instances are removed from the view upon completion.|  
+|IsCompleted|Bit|Indicates whether the Workflow Instance has finished executing. **Note:**  If and only if the **InstanceCompletionAction** property is set to **DeleteAll**, the instances are removed from the view upon completion.|  
 |EncodingOption|TinyInt|Describes the encoding used to serialize the data properties.<br /><br /> -   0 – No encoding<br />-   1 – GzipStream|  
 |ReadWritePrimitiveDataProperties|Varbinary(max)|Contains serialized instance data properties that will be provided back to the workflow Runtime when the instance is loaded.<br /><br /> Each primitive property is a native CLR type, which means that no special assemblies are needed to deserialize the blob.|  
 |WriteOnlyPrimitiveDataProperties|Varbinary(max)|Contains serialized instance data properties that are not provided back to the workflow runtime when the instance is loaded.<br /><br /> Each primitive property is a native CLR type, which means that no special assemblies are needed to deserialize the blob.|  

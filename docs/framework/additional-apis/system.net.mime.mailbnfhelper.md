@@ -2,10 +2,10 @@
 description: "Learn more about: MailBnfHelper class"
 title: MailBnfHelper class (System.Net)
 ms.date: 06/12/2020
-ms.technology: dotnet-networking
-topic_type: 
+ms.subservice: networking
+topic_type:
   - apiref
-api_name: 
+api_name:
   - System.Net.Mime.MailBnfHelper
   - System.Net.Mime.MailBnfHelper.Ascii7bitMaxValue
   - System.Net.Mime.MailBnfHelper.Atext
@@ -17,9 +17,9 @@ api_name:
   - System.Net.Mime.MailBnfHelper.Space
   - System.Net.Mime.MailBnfHelper.StartComment
   - System.Net.Mime.MailBnfHelper.Tab
-api_location: 
+api_location:
   - System.dll
-api_type: 
+api_type:
   - Assembly
 ---
 # MailBnfHelper class

@@ -61,7 +61,7 @@ Without using `IHostedService`, you could always start a background thread to ru
 
 ## The IHostedService interface
 
-When you register an `IHostedService`, .NET will call the `StartAsync()` and `StopAsync()` methods of your `IHostedService` type during application start and stop respectively. For more details, refer [IHostedService interface](/aspnet/core/fundamentals/host/hosted-services?tabs=visual-studio&view=aspnetcore-3.1&preserve-view=false#ihostedservice-interface)
+When you register an `IHostedService`, .NET calls the `StartAsync()` and `StopAsync()` methods of your `IHostedService` type during application start and stop respectively. For more details, see [IHostedService interface](/aspnet/core/fundamentals/host/hosted-services#ihostedservice-interface).
 
 As you can imagine, you can create multiple implementations of IHostedService and register each of them in _Program.cs_, as shown previously. All those hosted services will be started and stopped along with the application/microservice.
 

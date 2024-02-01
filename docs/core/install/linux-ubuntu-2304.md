@@ -3,16 +3,16 @@ title: Install .NET on Ubuntu 23.04
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Ubuntu 23.04.
 author: adegeo
 ms.author: adegeo
-ms.date: 05/24/2023
+ms.date: 11/14/2023
 ---
 
 # Install .NET SDK or .NET Runtime on Ubuntu 23.04
 
-This article discusses how to install .NET on Ubuntu 23.04; .NET 6 and .NET 7 are supported.
+This article discusses how to install .NET on Ubuntu 23.04; .NET 8, .NET 7, and .NET 6, are supported.
 
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 
-[!INCLUDE [linux-install-package-manager-x64-vs-arm](includes/linux-install-package-manager-x64-vs-arm.md)]
+[!INCLUDE [linux-install-package-manager-x64-vs-arm-ubuntu](includes/linux-install-package-manager-x64-vs-arm-ubuntu.md)]
 
 .NET is available in the Ubuntu package manager feeds, as well as the Microsoft package repository. However, you should only use one or the other to install .NET. If you want to use the Microsoft package repository, see [How to register the Microsoft package repository](linux-ubuntu.md#register-the-microsoft-package-repository).
 
@@ -22,7 +22,7 @@ The following versions of .NET are supported or available for Ubuntu 23.04:
 
 | Supported .NET versions | Available in Ubuntu feed | [Available in Microsoft feed](linux-ubuntu.md#register-the-microsoft-package-repository) |
 |-------------------------|--------------------------|-----------------------------------|
-| 7.0, 6.0                | 7.0, 6.0                 | 7.0, 6.0                          |
+| 8.0, 7.0, 6.0           | 7.0, 6.0                 | 8.0, 7.0, 6.0                     |
 
 [!INCLUDE [linux-ubuntu-feed-sdk-note](includes/linux-ubuntu-feed-sdk-note.md)]
 
@@ -32,7 +32,7 @@ When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support,
 
 ## Install .NET
 
-[!INCLUDE [linux-apt-install-70](includes/linux-install-70-apt.md)]
+[!INCLUDE [linux-apt-install-80](includes/linux-install-80-apt.md)]
 
 ## How to install other versions
 
@@ -49,7 +49,6 @@ If you run into issues installing or even running .NET, see [Troubleshooting](li
 When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you'll need to make sure these libraries are installed:
 
 - libc6
-- libgcc1
 - libgcc-s1
 - libgssapi-krb5-2
 - libicu72

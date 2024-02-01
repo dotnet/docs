@@ -2,7 +2,7 @@
 title: What's new in .NET 8
 description: Learn about the new .NET features introduced in .NET 8.
 titleSuffix: ""
-ms.date: 10/05/2023
+ms.date: 11/14/2023
 ms.topic: overview
 ms.author: gewarren
 author: gewarren
@@ -11,12 +11,9 @@ author: gewarren
 
 .NET 8 is the successor to [.NET 7](dotnet-7.md). It will be [supported for three years](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) as a long-term support (LTS) release. You can [download .NET 8 here](https://dotnet.microsoft.com/download/dotnet).
 
-This article has been updated for .NET 8 release candidate (RC) 2.
+## .NET Aspire
 
-> [!IMPORTANT]
->
-> - This information relates to a pre-release product that may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-> - Much of the other .NET documentation on [https://learn.microsoft.com/dotnet](/dotnet) has not yet been updated for .NET 8.
+.NET Aspire is an opinionated, cloud ready stack for building observable, production ready, distributed applications.​ .NET Aspire is delivered through a collection of NuGet packages that handle specific cloud-native concerns, and is available in preview for .NET 8. For more information, see [.NET Aspire (Preview)](/dotnet/aspire).
 
 ## ASP.NET Core
 
@@ -66,7 +63,9 @@ The serializer has built-in support for the following additional types.
 - <xref:System.Half>, <xref:System.Int128>, and <xref:System.UInt128> numeric types.
 
   ```csharp
-  Console.WriteLine(JsonSerializer.Serialize(new object[] { Half.MaxValue, Int128.MaxValue, UInt128.MaxValue }));
+  Console.WriteLine(JsonSerializer.Serialize(
+      [ Half.MaxValue, Int128.MaxValue, UInt128.MaxValue ]
+  ));
   // [65500,170141183460469231731687303715884105727,340282366920938463463374607431768211455]
   ```
 
@@ -79,12 +78,12 @@ The serializer has built-in support for the following additional types.
 
 #### Source generator
 
-.NET 8 includes enhancements of the System.Text.Json [source generator](../../standard/serialization/system-text-json/source-generation.md) that are aimed at making the [Native AOT](../../standard/glossary.md#native-aot) experience on par with the [reflection-based serializer](../../standard/serialization/system-text-json/source-generation-modes.md#overview). For example:
+.NET 8 includes enhancements of the System.Text.Json [source generator](../../standard/serialization/system-text-json/source-generation.md) that are aimed at making the [Native AOT](../../standard/glossary.md#native-aot) experience on par with the [reflection-based serializer](../../standard/serialization/system-text-json/reflection-vs-source-generation.md#reflection). For example:
 
 - The source generator now supports serializing types with [`required`](../../standard/serialization/system-text-json/required-properties.md) and [`init`](../../csharp/language-reference/keywords/init.md) properties. These were both already supported in reflection-based serialization.
 - Improved formatting of source-generated code.
-- <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute> feature parity with <xref:System.Text.Json.JsonSerializerOptions>. This parity lets you specify serialization configuration at compile time, which ensures that the generated `MyContext.Default` property is preconfigured with all the relevant options set.
-- Additional diagnostics (such as `SYSLIB1034` and `SYSLIB1039`).
+- <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute> feature parity with <xref:System.Text.Json.JsonSerializerOptions>. For more information, see [Specify options (source generation)](../../standard/serialization/system-text-json/source-generation.md#specify-options).
+- Additional diagnostics (such as [SYSLIB1034](../../fundamentals/syslib-diagnostics/syslib1034.md) and [SYSLIB1039](../../fundamentals/syslib-diagnostics/syslib1039.md)).
 - Don't include types of ignored or inaccessible properties.
 - Support for nesting `JsonSerializerContext` declarations within arbitrary type kinds.
 - Support for compiler-generated or *unspeakable* types in weakly typed source generation scenarios. Since compiler-generated types can't be explicitly specified by the source generator, <xref:System.Text.Json?displayProperty=fullName> now performs nearest-ancestor resolution at run time. This resolution determines the most appropriate supertype with which to serialize the value.
@@ -98,34 +97,21 @@ The serializer has built-in support for the following additional types.
   public partial class MyContext : JsonSerializerContext { }
   ```
 
-  For more information, see [Serialize enum fields as strings](../../standard/serialization/system-text-json/source-generation-modes.md#serialize-enum-fields-as-strings).
+  For more information, see [Serialize enum fields as strings](../../standard/serialization/system-text-json/source-generation.md#serialize-enum-fields-as-strings).
 
 - New `JsonConverter.Type` property lets you look up the type of a non-generic `JsonConverter` instance:
 
   ```csharp
   Dictionary<Type, JsonConverter> CreateDictionary(IEnumerable<JsonConverter> converters)
-    => converters.Where(converter => converter.Type != null).ToDictionary(converter => converter.Type!);
+      => converters.Where(converter => converter.Type != null)
+                   .ToDictionary(converter => converter.Type!);
   ```
 
   The property is nullable since it returns `null` for `JsonConverterFactory` instances and `typeof(T)` for `JsonConverter<T>` instances.
 
 ##### Chain source generators
 
-The <xref:System.Text.Json.JsonSerializerOptions> class includes a new <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> property that complements the existing <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver> property. These properties are used in contract customization for chaining source generators. The addition of the new property means that you don't have to specify all chained components at one call site&mdash;they can be added after the fact.
-
-<xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> also lets you introspect the chain or remove components from it. The following code snippet shows an example.
-
-```csharp
-var options = new JsonSerializerOptions
-{
-    TypeInfoResolver = JsonTypeInfoResolver.Combine(
-        ContextA.Default, ContextB.Default, ContextC.Default);
-};
-
-options.TypeInfoResolverChain.Count; // 3
-options.TypeInfoResolverChain.RemoveAt(0);
-options.TypeInfoResolverChain.Count; // 2
-```
+The <xref:System.Text.Json.JsonSerializerOptions> class includes a new <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> property that complements the existing <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver> property. These properties are used in contract customization for chaining source generators. The addition of the new property means that you don't have to specify all chained components at one call site&mdash;they can be added after the fact. <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> also lets you introspect the chain or remove components from it. For more information, see [Combine source generators](../../standard/serialization/system-text-json/source-generation.md#combine-source-generators).
 
 In addition, <xref:System.Text.Json.JsonSerializerOptions.AddContext%60%601?displayProperty=nameWithType> is now obsolete. It's been superseded by the <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver> and <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> properties. For more information, see [SYSLIB0049](../../fundamentals/syslib-diagnostics/syslib0049.md).
 
@@ -137,7 +123,8 @@ The following code shows an example where the properties from both the immediate
 
 ```csharp
 IDerived value = new DerivedImplement { Base = 0, Derived = 1 };
-JsonSerializer.Serialize(value); // {"Base":0,"Derived":1}
+JsonSerializer.Serialize(value);
+// {"Base":0,"Derived":1}
 
 public interface IBase
 {
@@ -158,12 +145,18 @@ public class DerivedImplement : IDerived
 
 #### Naming policies
 
-[`JsonNamingPolicy`](/dotnet/api/system.text.json.jsonnamingpolicy?view=net-8.0&preserve-view=true#properties) includes new naming policies for `snake_case` (with an underscore) and `kebab-case` (with a hyphen) property name conversions. Use these policies similarly to the existing <xref:System.Text.Json.JsonNamingPolicy.CamelCase?displayProperty=nameWithType> policy:
+[`JsonNamingPolicy`](xref:System.Text.Json.JsonNamingPolicy#properties) includes new naming policies for `snake_case` (with an underscore) and `kebab-case` (with a hyphen) property name conversions. Use these policies similarly to the existing <xref:System.Text.Json.JsonNamingPolicy.CamelCase?displayProperty=nameWithType> policy:
 
 ```csharp
-var options = new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.SnakeCaseLower };
-JsonSerializer.Serialize(new { PropertyName = "value" }, options); // { "property_name" : "value" }
+var options = new JsonSerializerOptions
+{
+    PropertyNamingPolicy = JsonNamingPolicy.SnakeCaseLower
+};
+JsonSerializer.Serialize(new { PropertyName = "value" }, options);
+// { "property_name" : "value" }
 ```
+
+For more information, see [Use a built-in naming policy](../../standard/serialization/system-text-json/customize-properties.md#use-a-built-in-naming-policy).
 
 #### Read-only properties
 
@@ -177,7 +170,9 @@ For example, consider the following code that deserializes into a `CustomerInfo`
 using System.Text.Json;
 
 CustomerInfo customer =
-    JsonSerializer.Deserialize<CustomerInfo>("""{"Names":["John Doe"],"Company":{"Name":"Contoso"}}""")!;
+    JsonSerializer.Deserialize<CustomerInfo>("""
+        {"Names":["John Doe"],"Company":{"Name":"Contoso"}}
+        """)!;
 
 Console.WriteLine(JsonSerializer.Serialize(customer));
 
@@ -192,7 +187,10 @@ class CustomerInfo
 {
     // Both of these properties are read-only.
     public List<string> Names { get; } = new();
-    public CompanyInfo Company { get; } = new() { Name = "N/A", PhoneNumber = "N/A" };
+    public CompanyInfo Company { get; } = new()
+    {
+        Name = "N/A", PhoneNumber = "N/A"
+    };
 }
 ```
 
@@ -214,31 +212,9 @@ For more information about the *populate* deserialization behavior, see [Populat
 
 You can now disable using the reflection-based serializer by default. This disablement is useful to avoid accidental rooting of reflection components that aren't even in use, especially in trimmed and Native AOT apps. To disable default reflection-based serialization by requiring that a <xref:System.Text.Json.JsonSerializerOptions> argument be passed to the <xref:System.Text.Json.JsonSerializer> serialization and deserialization methods, set the `JsonSerializerIsReflectionEnabledByDefault` MSBuild property to `false` in your project file.
 
-```xml
-<JsonSerializerIsReflectionEnabledByDefault>false</JsonSerializerIsReflectionEnabledByDefault>
-```
-
-(If the property is set to `false` and you don't pass a configured <xref:System.Text.Json.JsonSerializerOptions> argument, the `Serialize` and `Deserialize` methods throw a <xref:System.NotSupportedException> at run time.)
-
 Use the new <xref:System.Text.Json.JsonSerializer.IsReflectionEnabledByDefault> API to check the value of the feature switch. If you're a library author building on top of <xref:System.Text.Json?displayProperty=fullName>, you can rely on the property to configure your defaults without accidentally rooting reflection components.
 
-```csharp
-static JsonSerializerOptions GetDefaultOptions()
-{
-    if (JsonSerializer.IsReflectionEnabledByDefault)
-    {
-        // This branch has a dependency on DefaultJsonTypeInfo,
-        // but it will get trimmed away if the feature switch is disabled.
-        return new()
-        {
-            TypeInfoResolver = new DefaultJsonTypeInfoResolver(),
-            PropertyNamingPolicy = JsonNamingPolicy.KebabCaseLower,
-        }
-    }
-
-    return new() { PropertyNamingPolicy = JsonNamingPolicy.KebabCaseLower };
-}
-```
+For more information, see [Disable reflection defaults](../../standard/serialization/system-text-json/source-generation.md#disable-reflection-defaults).
 
 #### New JsonNode API methods
 
@@ -291,7 +267,9 @@ public partial class JsonArray
 You can opt non-public members into the serialization contract for a given type using <xref:System.Text.Json.Serialization.JsonIncludeAttribute> and <xref:System.Text.Json.Serialization.JsonConstructorAttribute> attribute annotations.
 
 ```csharp
-string json = JsonSerializer.Serialize(new MyPoco(42)); // {"X":42}
+string json = JsonSerializer.Serialize(new MyPoco(42));
+// {"X":42}
+
 JsonSerializer.Deserialize<MyPoco>(json);
 
 public class MyPoco
@@ -336,7 +314,9 @@ var options = new JsonSerializerOptions
         .WithAddedModifier(static typeInfo =>
         {
             foreach (JsonPropertyInfo prop in typeInfo.Properties)
+            {
                 prop.Name = prop.Name.ToUpperInvariant();
+            }
         })
 };
 ```
@@ -356,7 +336,8 @@ public record Book(int id, string title, string author, int publishedYear);
 
 [JsonSerializable(typeof(Book))]
 public partial class MyContext : JsonSerializerContext
-{ }
+{
+}
 ```
 
 #### Freeze a JsonSerializerOptions instance
@@ -406,7 +387,8 @@ private class ZonedTimeProvider : TimeProvider
 }
 
 // Create a timer using a time provider.
-ITimer timer = timeProvider.CreateTimer(callBack, state, delay, Timeout.InfiniteTimeSpan);
+ITimer timer = timeProvider.CreateTimer(
+    callBack, state, delay, Timeout.InfiniteTimeSpan);
 
 // Measure a period using the system time provider.
 long providerTimestamp1 = TimeProvider.System.GetTimestamp();
@@ -499,7 +481,7 @@ IDataView predictions = model.Transform(split.TestSet);
   }
   ```
 
-- The new <xref:System.Buffers.SearchValues%601?displayProperty=fullName> type is designed to be passed to methods that look for the first occurrence of any value in the passed collection. For example, <xref:System.String.IndexOfAny(System.Char[])?displayProperty=nameWithType> looks for the first occurrence of any character in the specified array in the `string` it's called on. NET 8 adds new overloads of methods like <xref:System.String.IndexOfAny%2A?displayProperty=nameWithType> and <xref:System.MemoryExtensions.IndexOfAny%2A?displayProperty=nameWithType> that accept an instance of the new type. When you create an instance of <xref:System.Buffers.SearchValues%601?displayProperty=fullName>, all the data that's necessary to optimize subsequent searches is derived *at that time*, meaning the work is done up front.
+- Methods like <xref:System.MemoryExtensions.IndexOfAny%2A?displayProperty=nameWithType> look for the first occurrence of *any value in the passed collection*. The new <xref:System.Buffers.SearchValues%601?displayProperty=fullName> type is designed to be passed to such methods. Correspondingly, .NET 8 adds new overloads of methods like <xref:System.MemoryExtensions.IndexOfAny%2A?displayProperty=nameWithType> that accept an instance of the new type. When you create an instance of <xref:System.Buffers.SearchValues%601>, all the data that's necessary to optimize subsequent searches is derived *at that time*, meaning the work is done up front.
 - The new <xref:System.Text.CompositeFormat?displayProperty=fullName> type is useful for optimizing format strings that aren't known at compile time (for example, if the format string is loaded from a resource file). A little extra time is spent up front to do work such as parsing the string, but it saves the work from being done on each use.
 
   ```csharp
@@ -561,16 +543,22 @@ The <xref:System.ComponentModel.DataAnnotations?displayProperty=fullName> namesp
 New APIs let you attach key-value pair tags to <xref:System.Diagnostics.Metrics.Meter> and <xref:System.Diagnostics.Metrics.Instrument> objects when you create them. Aggregators of published metric measurements can use the tags to differentiate the aggregated values.
 
 ```csharp
-MeterOptions options = new MeterOptions("name")
+var options = new MeterOptions("name")
 {
     Version = "version",
     // Attach these tags to the created meter
-    Tags = new TagList() { { "MeterKey1", "MeterValue1" }, { "MeterKey2", "MeterValue2" } }
+    Tags = new TagList()
+    {
+        { "MeterKey1", "MeterValue1" },
+        { "MeterKey2", "MeterValue2" }
+    }
 };
 
 Meter meter = meterFactory.Create(options);
 
-Instrument instrument = meter.CreateCounter<int>("counter", null, null, new TagList() { { "counterKey1", "counterValue1" } });
+Instrument instrument = meter.CreateCounter<int>(
+    "counter", null, null, new TagList() { { "counterKey1", "counterValue1" } }
+);
 instrument.Add(1);
 ```
 
@@ -633,14 +621,33 @@ namespace System.IO.Compression;
 
 public static partial class ZipFile
 {
-    public static void CreateFromDirectory(string sourceDirectoryName, Stream destination);
-    public static void CreateFromDirectory(string sourceDirectoryName, Stream destination, CompressionLevel compressionLevel, bool includeBaseDirectory);
-    public static void CreateFromDirectory(string sourceDirectoryName, Stream destination, CompressionLevel compressionLevel, bool includeBaseDirectory, Encoding? entryNameEncoding);
+    public static void CreateFromDirectory(
+        string sourceDirectoryName, Stream destination);
 
-    public static void ExtractToDirectory(Stream source, string destinationDirectoryName) { }
-    public static void ExtractToDirectory(Stream source, string destinationDirectoryName, bool overwriteFiles) { }
-    public static void ExtractToDirectory(Stream source, string destinationDirectoryName, Encoding? entryNameEncoding) { }
-    public static void ExtractToDirectory(Stream source, string destinationDirectoryName, Encoding? entryNameEncoding, bool overwriteFiles) { }
+    public static void CreateFromDirectory(
+        string sourceDirectoryName,
+        Stream destination,
+        CompressionLevel compressionLevel,
+        bool includeBaseDirectory);
+
+    public static void CreateFromDirectory(
+        string sourceDirectoryName,
+        Stream destination,
+        CompressionLevel compressionLevel,
+        bool includeBaseDirectory,
+    Encoding? entryNameEncoding);
+
+    public static void ExtractToDirectory(
+        Stream source, string destinationDirectoryName) { }
+
+    public static void ExtractToDirectory(
+        Stream source, string destinationDirectoryName, bool overwriteFiles) { }
+
+    public static void ExtractToDirectory(
+        Stream source, string destinationDirectoryName, Encoding? entryNameEncoding) { }
+
+    public static void ExtractToDirectory(
+        Stream source, string destinationDirectoryName, Encoding? entryNameEncoding, bool overwriteFiles) { }
 }
 ```
 
@@ -659,7 +666,7 @@ This section contains the following subtopics:
 
 ### Keyed DI services
 
-Keyed dependency injection (DI) services provides a means for registering and retrieving DI services using keys. By using keys, you can scope how your register and consume services. These are some of the new APIs:
+Keyed dependency injection (DI) services provide a means for registering and retrieving DI services using keys. By using keys, you can scope how you register and consume services. These are some of the new APIs:
 
 - The <xref:Microsoft.Extensions.DependencyInjection.IKeyedServiceProvider> interface.
 - The <xref:Microsoft.Extensions.DependencyInjection.ServiceKeyAttribute> attribute, which can be used to inject the key that was used for registration/resolution in the constructor.
@@ -667,35 +674,44 @@ Keyed dependency injection (DI) services provides a means for registering and re
 - Various new extension methods for <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection> to support keyed services, for example, <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddKeyedScoped%2A?displayProperty=nameWithType>.
 - The <xref:Microsoft.Extensions.DependencyInjection.ServiceProvider> implementation of <xref:Microsoft.Extensions.DependencyInjection.IKeyedServiceProvider>.
 
-The following example shows you to use keyed DI services.
+The following example shows you how to use keyed DI services.
 
 ```csharp
-using Microsoft.Extensions.Caching.Memory;
-using Microsoft.Extensions.Options;
-
 var builder = WebApplication.CreateBuilder(args);
-
 builder.Services.AddSingleton<BigCacheConsumer>();
 builder.Services.AddSingleton<SmallCacheConsumer>();
-
-builder.Services.AddKeyedSingleton<IMemoryCache, BigCache>("big");
-builder.Services.AddKeyedSingleton<IMemoryCache, SmallCache>("small");
-
+builder.Services.AddKeyedSingleton<ICache, BigCache>("big");
+builder.Services.AddKeyedSingleton<ICache, SmallCache>("small");
 var app = builder.Build();
-
 app.MapGet("/big", (BigCacheConsumer data) => data.GetData());
 app.MapGet("/small", (SmallCacheConsumer data) => data.GetData());
-
+app.MapGet("/big-cache", ([FromKeyedServices("big")] ICache cache) => cache.Get("data"));
+app.MapGet("/small-cache", (HttpContext httpContext) => httpContext.RequestServices.GetRequiredKeyedService<ICache>("small").Get("data"));
 app.Run();
 
-class BigCacheConsumer([FromKeyedServices("big")] IMemoryCache cache)
+class BigCacheConsumer([FromKeyedServices("big")] ICache cache)
 {
     public object? GetData() => cache.Get("data");
 }
 
-class SmallCacheConsumer(IKeyedServiceProvider keyedServiceProvider)
+class SmallCacheConsumer(IServiceProvider serviceProvider)
 {
-    public object? GetData() => keyedServiceProvider.GetRequiredKeyedService<IMemoryCache>("small");
+    public object? GetData() => serviceProvider.GetRequiredKeyedService<ICache>("small").Get("data");
+}
+
+public interface ICache
+{
+    object Get(string key);
+}
+
+public class BigCache : ICache
+{
+    public object Get(string key) => $"Resolving {key} from big cache.";
+}
+
+public class SmallCache : ICache
+{
+    public object Get(string key) => $"Resolving {key} from small cache.";
 }
 ```
 
@@ -754,7 +770,8 @@ public class FirstModelNoNamespace
     [MinLength(5)]
     public string P1 { get; set; } = string.Empty;
 
-    [Microsoft.Extensions.Options.ValidateObjectMembers(typeof(SecondValidatorNoNamespace))]
+    [Microsoft.Extensions.Options.ValidateObjectMembers(
+        typeof(SecondValidatorNoNamespace))]
     public SecondModelNoNamespace? P2 { get; set; }
 }
 
@@ -766,12 +783,14 @@ public class SecondModelNoNamespace
 }
 
 [OptionsValidator]
-public partial class FirstValidatorNoNamespace : IValidateOptions<FirstModelNoNamespace>
+public partial class FirstValidatorNoNamespace
+    : IValidateOptions<FirstModelNoNamespace>
 {
 }
 
 [OptionsValidator]
-public partial class SecondValidatorNoNamespace : IValidateOptions<SecondModelNoNamespace>
+public partial class SecondValidatorNoNamespace
+    : IValidateOptions<SecondModelNoNamespace>
 {
 }
 ```
@@ -781,10 +800,13 @@ If your app uses dependency injection, you can inject the validation as shown in
 ```csharp
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
-builder.Services.Configure<FirstModelNoNamespace>(builder.Configuration.GetSection(...));
+builder.Services.Configure<FirstModelNoNamespace>(
+    builder.Configuration.GetSection(...));
 
-builder.Services.AddSingleton<IValidateOptions<FirstModelNoNamespace>, FirstValidatorNoNamespace>();
-builder.Services.AddSingleton<IValidateOptions<SecondModelNoNamespace>, SecondValidatorNoNamespace>();
+builder.Services.AddSingleton<
+    IValidateOptions<FirstModelNoNamespace>, FirstValidatorNoNamespace>();
+builder.Services.AddSingleton<
+    IValidateOptions<SecondModelNoNamespace>, SecondValidatorNoNamespace>();
 ```
 
 #### ValidateOptionsResultBuilder type
@@ -901,7 +923,7 @@ GC.RefreshMemoryLimit();
 You can also refresh some of the GC configuration settings related to the memory limit. The following code snippet sets the heap hard limit to 100 mebibytes (MiB):
 
 ```csharp
-AppContext.SetData("GCHeapHardLimit", (ulong)100 * 1024 * 1024);
+AppContext.SetData("GCHeapHardLimit", (ulong)100 * 1_024 * 1_024);
 GC.RefreshMemoryLimit();
 ```
 
@@ -986,8 +1008,10 @@ FieldInfo fieldInfo = typeof(UClass).GetField(nameof(UClass._fp));
 Type fpType = fieldInfo.FieldType;
 
 // New methods to determine if a type is a function pointer.
-Console.WriteLine($"IsFunctionPointer: {fpType.IsFunctionPointer}");
-Console.WriteLine($"IsUnmanagedFunctionPointer: {fpType.IsUnmanagedFunctionPointer}");
+Console.WriteLine(
+    $"IsFunctionPointer: {fpType.IsFunctionPointer}");
+Console.WriteLine(
+    $"IsUnmanagedFunctionPointer: {fpType.IsUnmanagedFunctionPointer}");
 
 // New methods to obtain the return and parameter types.
 Console.WriteLine($"Return type: {fpType.GetFunctionPointerReturnType()}");
@@ -1010,7 +1034,10 @@ foreach (Type callConv in modifiedType.GetFunctionPointerCallingConventions())
 }
 
 // New method to obtain the custom modifiers.
-foreach (Type modreq in modifiedType.GetFunctionPointerParameterTypes()[0].GetRequiredCustomModifiers())
+var modifiers =
+    modifiedType.GetFunctionPointerParameterTypes()[0].GetRequiredCustomModifiers();
+
+foreach (Type modreq in modifiers)
 {
     Console.WriteLine($"Required modifier for first parameter: {modreq}");
 }
@@ -1060,18 +1087,17 @@ The default console app template now includes support for AOT out-of-the-box. To
 - `tvos`
 - `tvossimulator`
 
-Preliminary testing shows that app size on disk decreases by about 40% for .NET iOS apps that use Native AOT instead of Mono. App size on disk for .NET MAUI iOS apps *increases* by about 25%. However, since the .NET 8 support is only the first step for the feature as a whole, we urge you not to draw conclusions about performance at this point.
+Preliminary testing shows that app size on disk decreases by about 35% for .NET iOS apps that use Native AOT instead of Mono. App size on disk for .NET MAUI iOS apps decreases up to 50%. Additionally, the startup time is also faster. .NET iOS apps have about 28% faster startup time, while .NET MAUI iOS apps have about 50% better startup performance compared to Mono. The .NET 8 support is experimental and only the first step for the feature as a whole. For more information, see the [.NET 8 Performance Improvements in .NET MAUI blog post](https://devblogs.microsoft.com/dotnet/dotnet-8-performance-improvements-in-dotnet-maui/).
 
-Native AOT support is available as an opt-in feature intended for app deployment; Mono is still the default runtime for app development and deployment. To build and run a .NET MAUI application with Native AOT on an iOS device, use `dotnet workload install maui` to install the .NET MAUI workload and `dotnet new maui -n HelloMaui` to create the app. Then, set the MSBuild properties `PublishAot` and `PublishAotUsingRuntimePack` to `true` in the project file.
+Native AOT support is available as an opt-in feature intended for app deployment; Mono is still the default runtime for app development and deployment. To build and run a .NET MAUI application with Native AOT on an iOS device, use `dotnet workload install maui` to install the .NET MAUI workload and `dotnet new maui -n HelloMaui` to create the app. Then, set the MSBuild property `PublishAot` to `true` in the project file.
 
 ```xml
 <PropertyGroup>
   <PublishAot>true</PublishAot>
-  <PublishAotUsingRuntimePack>true</PublishAotUsingRuntimePack>
 </PropertyGroup>
 ```
 
-When you set these properties and run `dotnet publish` as shown in the following example, the app will be deployed by using Native AOT.
+When you set the required property and run `dotnet publish` as shown in the following example, the app will be deployed by using Native AOT.
 
 ```dotnetcli
 dotnet publish -f net8.0-ios -c Release -r ios-arm64  /t:Run
@@ -1081,10 +1107,9 @@ dotnet publish -f net8.0-ios -c Release -r ios-arm64  /t:Run
 
 Not all iOS features are compatible with Native AOT. Similarly, not all libraries commonly used in iOS are compatible with NativeAOT. And in addition to the existing [limitations of Native AOT deployment](../deploying/native-aot/index.md#limitations-of-native-aot-deployment), the following list shows some of the other limitations when targeting iOS-like platforms:
 
-- Installation and app deployment using Visual Studio is untested.
 - Using Native AOT is only enabled during app deployment (`dotnet publish`).
-- <xref:System.Linq.Expressions> library functionality isn't fully supported.
 - Managed code debugging is only supported with Mono.
+- Compatibility with the .NET MAUI framework is limited.
 
 ## Performance improvements
 
@@ -1115,6 +1140,10 @@ The JIT already supported this optimization but with several large limitations i
 
 Physical promotion removes these limitations, which fixes a number of long-standing JIT issues.
 
+## .NET MAUI
+
+For information about what's new in .NET MAUI in .NET 8, see [What's new in .NET MAUI for .NET 8](/dotnet/maui/whats-new/dotnet-8).
+
 ## .NET SDK
 
 This section contains the following subtopics:
@@ -1132,10 +1161,10 @@ This section contains the following subtopics:
 
 MSBuild includes a new feature that makes it easier to incorporate data from MSBuild into your scripts or tools. The following new flags are available for CLI commands such as [dotnet publish](../tools/dotnet-publish.md) to obtain data for use in CI pipelines and elsewhere.
 
-| Flag  | Description  |
-|---------|---------|
-| `--getProperty:<PROPERTYNAME>` | Retrieves the MSBuild property with the specified name. |
-| `--getItem:<ITEMTYPE>` | Retrieves MSBuild items of the specified type. |
+| Flag                              | Description                                              |
+|-----------------------------------|----------------------------------------------------------|
+| `--getProperty:<PROPERTYNAME>`    | Retrieves the MSBuild property with the specified name.  |
+| `--getItem:<ITEMTYPE>`            | Retrieves MSBuild items of the specified type.           |
 | `--getTargetResults:<TARGETNAME>` | Retrieves the outputs from running the specified target. |
 
 Values are written to the standard output. Multiple or complex values are output as JSON, as shown in the following examples.
@@ -1146,7 +1175,7 @@ bin\Release\net8.0\
 ```
 
 ```dotnetcli
-> dotnet publish -p PublishProfile=DefaultContainer --getProperty:GeneratedContainerDigest --getProperty:GeneratedContainerConfiguration
+>dotnet publish -p PublishProfile=DefaultContainer --getProperty:GeneratedContainerDigest --getProperty:GeneratedContainerConfiguration
 {
   "Properties": {
     "GeneratedContainerDigest": "sha256:ef880a503bbabcb84bbb6a1aa9b41b36dc1ba08352e7cd91c0993646675174c4",
@@ -1176,37 +1205,7 @@ bin\Release\net8.0\
 
 .NET 8 introduces an option to simplify the output path and folder structure for build outputs. Previously, .NET apps produced a deep and complex set of output paths for different build artifacts. The new, simplified output path structure gathers all build outputs into a common location, which makes it easier for tooling to anticipate.
 
-To opt into the new output path format, use one of the following properties in your *Directory.Build.props* file:
-
-- Add an `ArtifactsPath` property with a value of `$(MSBuildThisFileDirectory)artifacts` (or whatever you want the folder location to be), OR
-- To use the default location, simply set the `UseArtifactsOutput` property to `true`.
-
-Alternatively, run `dotnet new buildprops --use-artifacts` and the template will generate the *Directory.Build.props* file for you:
-
-```xml
-<Project>
-  <PropertyGroup>
-    <ArtifactsPath>$(MSBuildThisFileDirectory)artifacts</ArtifactsPath>
-  </PropertyGroup>
-</Project>
-```
-
-By default, the common location is a folder named *artifacts* in the root of your repository rather than in each project folder. The folder structure under the root *artifacts* folder is as follows:
-
-```Directory
-📁 artifacts
-    └──📂 <Type of output>
-        └──📂 <Project name>
-            └──📂 <Pivot>
-```
-
-The following table shows the default values for each level in the folder structure. The values, as well as the default location, can be overridden using properties in the *Directory.build.props* file.
-
-| Folder level | Description |
-|--|--|
-| Type of output | Examples: `bin`, `obj`, `publish`, or `package` |
-| Project name | Separates output by each project. |
-| Pivot | Distinguishes between builds of a project for different configurations, target frameworks, and runtime identifiers. If multiple elements are needed, they're joined by an underscore (`_`). |
+For more information, see [Artifacts output layout](../sdk/artifacts-output.md).
 
 ### `dotnet workload clean` command
 
@@ -1266,6 +1265,9 @@ The [template engine](https://github.com/dotnet/templating) provides a more secu
 
 [Source Link](../../standard/library-guidance/sourcelink.md) is now included in the .NET SDK. The goal is that by bundling Source Link into the SDK, instead of requiring a separate `<PackageReference>` for the package, more packages will include this information by default. That information will improve the IDE experience for developers.
 
+> [!NOTE]
+> As a side effect of this change, commit information is included in the `InformationalVersion` value of built libraries and applications, even those that target .NET 7 or an earlier version. For more information, see [Source Link included in the .NET SDK](../compatibility/sdk/8.0/source-link.md).
+
 ### Source-build SDK
 
 The Linux distribution-built (source-build) SDK now has the capability to build self-contained applications using the source-build runtime packages. The distribution-specific runtime package is bundled with the source-build SDK. During self-contained deployment, this bundled runtime package will be referenced, thereby enabling the feature for users.
@@ -1305,7 +1307,6 @@ The following changes have been made to .NET container images for .NET 8:
 - [Generated-image defaults](#generated-image-defaults)
 - [Debian 12](#debian-12)
 - [Non-root user](#non-root-user)
-- [Preview image tags](#preview-image-tags)
 - [Chiseled Ubuntu images](#chiseled-ubuntu-images)
 - [Build multi-platform container images](#build-multi-platform-container-images)
 - [ASP.NET composite images](#aspnet-composite-images)
@@ -1331,10 +1332,6 @@ USER app
 .NET 8 adds an environment variable for the UID for the `non-root` user, which is 64198. This environment variable is useful for the Kubernetes `runAsNonRoot` test, which requires that the container user be set via UID and not by name. This [dockerfile](https://github.com/dotnet/dotnet-docker/blob/e5bc76bca49a1bbf9c11e74a590cf6a9fe9dbf2a/samples/aspnetapp/Dockerfile.alpine-non-root#L27) shows an example usage.
 
 The default port also changed from port `80` to `8080`. To support this change, a new environment variable `ASPNETCORE_HTTP_PORTS` is available to make it easier to change ports. The variable accepts a list of ports, which is simpler than the format required by `ASPNETCORE_URLS`. If you change the port back to port `80` using one of these variables, you can't run as `non-root`.
-
-#### Preview image tags
-
-Container image tags for .NET 8 Previews 1 through 7 had a `-preview` suffix, for example, `8.0-preview` and `8.0-preview-<OS>`. Starting in RC 1, `preview` is removed from the tag name, and those tags are no longer maintained. The new tags, `8.0` and `8.0-<OS>`, are permanent, and will be maintained throughout the lifetime of .NET 8.
 
 #### Chiseled Ubuntu images
 
@@ -1486,10 +1483,10 @@ By default, setting `AndroidStripILAfterAOT` to `true` overrides the default `An
 
 .NET 8 includes several new code analyzers and fixers to help verify that you're using .NET library APIs correctly and efficiently. The following table summarizes the new analyzers.
 
-| Rule ID | Category    | Description  |
-|---------|-------------|--------------|
-|CA1856   | Performance | Fires when the <xref:System.Diagnostics.CodeAnalysis.ConstantExpectedAttribute> attribute is not applied correctly on a parameter. |
-|CA1857   | Performance | Fires when a parameter is annotated with <xref:System.Diagnostics.CodeAnalysis.ConstantExpectedAttribute> but the provided argument isn't a constant. |
+| Rule ID | Category | Description |
+|--|--|--|
+| CA1856 | Performance | Fires when the <xref:System.Diagnostics.CodeAnalysis.ConstantExpectedAttribute> attribute is not applied correctly on a parameter. |
+| CA1857 | Performance | Fires when a parameter is annotated with <xref:System.Diagnostics.CodeAnalysis.ConstantExpectedAttribute> but the provided argument isn't a constant. |
 | [CA1858](../../fundamentals/code-analysis/quality-rules/ca1858.md) | Performance | To determine whether a string starts with a given prefix, it's better to call <xref:System.String.StartsWith%2A?displayProperty=nameWithType> than to call <xref:System.String.IndexOf%2A?displayProperty=nameWithType> and then compare the result with zero. |
 | [CA1859](../../fundamentals/code-analysis/quality-rules/ca1859.md) | Performance | This rule recommends upgrading the type of specific local variables, fields, properties, method parameters, and method return types from interface or abstract types to concrete types when possible. Using concrete types leads to higher quality generated code. |
 | [CA1860](../../fundamentals/code-analysis/quality-rules/ca1860.md) | Performance | To determine whether a collection type has any elements, it's better to use `Length`, `Count`, or `IsEmpty` than to call <xref:System.Linq.Enumerable.Any%2A?displayProperty=nameWithType>. |
@@ -1519,7 +1516,8 @@ WPF includes a new dialog box control called `OpenFolderDialog`. This control le
 var openFolderDialog = new OpenFolderDialog()
 {
     Title = "Select folder to open ...",
-    InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles),
+    InitialDirectory = Environment.GetFolderPath(
+        Environment.SpecialFolder.ProgramFiles)
 };
 
 string folderName = "";
@@ -1552,6 +1550,7 @@ Starting in .NET 8, C# Hot Reload [supports modifying generic types and generic 
 
 ### .NET blog
 
+- [Announcing .NET 8](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8/)
 - [Announcing .NET 8 RC 2](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-rc2/)
 - [Announcing .NET 8 RC 1](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-rc1/)
 - [Announcing .NET 8 Preview 7](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-7/)
@@ -1561,6 +1560,7 @@ Starting in .NET 8, C# Hot Reload [supports modifying generic types and generic 
 - [Announcing .NET 8 Preview 3](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-3/)
 - [Announcing .NET 8 Preview 2](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-2/)
 - [Announcing .NET 8 Preview 1](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-1/)
+- [ASP.NET Core in .NET 8](https://devblogs.microsoft.com/dotnet/announcing-asp-net-core-in-dotnet-8)
 - [ASP.NET Core updates in .NET 8 RC 2](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-rc-2/)
 - [ASP.NET Core updates in .NET 8 RC 1](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-rc-1/)
 - [ASP.NET Core updates in .NET 8 Preview 7](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-preview-7/)

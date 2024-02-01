@@ -1,7 +1,7 @@
 ---
 title: Unit testing and mocking with the Azure SDK for .NET
 description: Learn techniques and tools for unit testing and mocking the Azure SDK for .NET
-ms.custom: devx-track-dotnet, engagement-fy23
+ms.custom: devx-track-dotnet, engagement-fy23, devx-track-arm-template
 ms.date: 07/05/2023
 ---
 
@@ -230,6 +230,36 @@ var finder = new AboutToExpireSecretFinder(TimeSpan.FromDays(2), secretClient);
 ```
 
 This approach is useful when you would like to consolidate the dependency creation and share the client between multiple consuming classes.
+
+## Understand Azure Resource Manager (ARM) clients
+
+In ARM libraries, the clients were designed to emphasize their relationship to one another, mirroring the service hierarchy. To achieve that goal, extension methods are widely used to add additional features to clients.
+
+For example, an Azure virtual machine exists in an Azure resource group. The `Azure.ResourceManager.Compute` namespace models the Azure virtual machine as `VirtualMachineResource`. The `Azure.ResourceManager` namespace models the Azure resource group as `ResourceGroupResource`. To query the virtual machines for a resource group, you would write:
+
+:::code language="csharp" source="snippets/unit-testing/ResourceManager/ResourceManagerCodeStructure.cs" id="ParentOfVMIsRG" :::
+
+Because the virtual machine-related functionality such as `GetVirtualMachines` on `ResourceGroupResource`, is implemented as extension methods, it's impossible to just create a mock of the type and override the method. Instead, you'll also have to create a mock class for the "mockable resource" and wire them together.
+
+The mockable resource type is always in the `Mocking` sub-namespace of the extension method. In the preceding example, the mockable resource type is in the `Azure.ResourceManager.Compute.Mocking` namespace. The mockable resource type is always named after the resource type with "Mockable" and the library name as prefixes. In the preceding example, the mockable resource type is named `MockableComputeResourceGroupResource`, where `ResourceGroupResource` is the resource type of the extension method, and `Compute` is the library name.
+
+One more requirement before you get the unit test running is to mock the `GetCachedClient` method on the resource type of the extension method. Completing this step hooks up the extension method and the method on the mockable resource type.
+
+Here's how it works:
+
+## [Non-library](#tab/csharp)
+
+:::code language="csharp" source="snippets/unit-testing/ResourceManager/NonLibrary/MockMockableComputeResourceGroupResource.cs" :::
+
+## [Moq](#tab/moq)
+
+:::code language="csharp" source="snippets/unit-testing/ResourceManager/Moq/MockComputeResourceGroupMockingExtension_TestSnippets_Moq.cs" :::
+
+# [NSubstitute](#tab/nsubstitute)
+
+:::code language="csharp" source="snippets/unit-testing/ResourceManager/NSubstitute/MockComputeResourceGroupMockingExtension_TestSnippets_NSubstitute.cs" :::
+
+---
 
 ## See also
 

@@ -4,6 +4,7 @@ ms.custom: "updateeachrelease"
 
 | Target           | Version | C# language version default |
 |------------------|---------|-----------------------------|
+| .NET             | 8.x     | C# 12                       |
 | .NET             | 7.x     | C# 11                       |
 | .NET             | 6.x     | C# 10                       |
 | .NET             | 5.x     | C#  9.0                     |

@@ -80,6 +80,14 @@
             "redirect_document_id": true
         },
         {
+            "source_path_from_root": "/docs/core/compatibility/core-libraries/6.0/nullable-ref-type-annotations-added.md",
+            "redirect_url": "/dotnet/core/compatibility/core-libraries/6.0/nullable-ref-type-annotation-changes"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/core-libraries/6.0/xmlresolver-nullable.md",
+            "redirect_url": "/dotnet/core/compatibility/core-libraries/6.0/nullable-ref-type-annotation-changes"
+        },
+        {
             "source_path_from_root": "/docs/core/compatibility/core-libraries/7.0/binaryformatter-apis-produce-errors.md",
             "redirect_url": "/dotnet/core/compatibility/serialization/7.0/binaryformatter-apis-produce-errors",
             "redirect_document_id": true
@@ -88,6 +96,14 @@
             "source_path_from_root": "/docs/core/compatibility/core-libraries/7.0/serializationformat-binary.md",
             "redirect_url": "/dotnet/core/compatibility/serialization/7.0/serializationformat-binary",
             "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/core-libraries/8.0/indexofanyvalues-renamed.md",
+            "redirect_url": "/dotnet/core/compatibility/serialization/8.0"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/core-libraries/8.0/optimizeforreading-arg.md",
+            "redirect_url": "/dotnet/core/compatibility/serialization/8.0"
         },
         {
             "source_path_from_root": "/docs/core/compatibility/extensions/6.0/bind-single-elements-to-array.md",
@@ -827,11 +843,11 @@
         },
         {
             "source_path_from_root": "/docs/core/porting/upgrade-assistant-winforms-framework.md",
-            "redirect_url": "/dotnet/desktop/winforms/migration/?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/migration/"
         },
         {
             "source_path_from_root": "/docs/core/porting/upgrade-assistant-wpf-framework.md",
-            "redirect_url": "/dotnet/desktop/wpf/migration/?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/wpf/migration/"
         },
         {
             "source_path_from_root": "/docs/core/porting/winforms-breaking-changes.md",
@@ -839,11 +855,11 @@
         },
         {
             "source_path_from_root": "/docs/core/porting/winforms.md",
-            "redirect_url": "/dotnet/desktop/winforms/migration/?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/winforms/migration/"
         },
         {
             "source_path_from_root": "/docs/core/porting/wpf.md",
-            "redirect_url": "/dotnet/desktop/wpf/migration/convert-project-from-net-framework?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/wpf/migration/convert-project-from-net-framework"
         },
         {
             "source_path_from_root": "/docs/core/preview3/deploying/index.md",
@@ -1041,6 +1057,56 @@
         {
             "source_path_from_root": "/docs/core/testing/using-mstest-on-windows.md",
             "redirect_url": "/dotnet/core/testing/unit-testing-with-mstest",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-mstest-analyzers-design.md",
+            "redirect_url": "/dotnet/core/testing/mstest-analyzers/design-rules",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-mstest-analyzers.md",
+            "redirect_url": "/dotnet/core/testing/mstest-analyzers/overview",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-mstest-analyzers-performance.md",
+            "redirect_url": "/dotnet/core/testing/mstest-analyzers/performance-rules",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-mstest-analyzers-usage.md",
+            "redirect_url": "/dotnet/core/testing/mstest-analyzers/usage-rules",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-mstest-analyzers-MSTEST0001.md",
+            "redirect_url": "/dotnet/core/testing/mstest-analyzers/mstest0001",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-mstest-analyzers-MSTEST0002.md",
+            "redirect_url": "/dotnet/core/testing/mstest-analyzers/mstest0002",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-mstest-analyzers-MSTEST0003.md",
+            "redirect_url": "/dotnet/core/testing/mstest-analyzers/mstest0003",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-mstest-analyzers-MSTEST0004.md",
+            "redirect_url": "/dotnet/core/testing/mstest-analyzers/mstest0004",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-mstest-analyzers-MSTEST0005.md",
+            "redirect_url": "/dotnet/core/testing/mstest-analyzers/mstest0005",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-mstest-analyzers-MSTEST0006.md",
+            "redirect_url": "/dotnet/core/testing/mstest-analyzers/mstest0006",
             "redirect_document_id": true
         },
         {

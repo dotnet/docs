@@ -1,11 +1,8 @@
 ﻿using System;
 using System.Data;
-using System.Data.SqlClient;
-using System.Data.OleDb;
-using System.Configuration;
 using System.Data.Common;
 
-class Program
+static class Program
 {
     static void Main()
     {
@@ -30,7 +27,7 @@ class Program
             using (connection)
             {
                 // Define the query.
-                string queryString =
+                const string queryString =
                     "SELECT CategoryName FROM Categories";
 
                 // Create the DbCommand.
@@ -43,7 +40,7 @@ class Program
                 adapter.SelectCommand = command;
 
                 // Fill the DataTable.
-                DataTable table = new DataTable();
+                DataTable table = new();
                 adapter.Fill(table);
 
                 //  Display each row and column value.

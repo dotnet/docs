@@ -25,7 +25,7 @@ Trimming with `PublishTrimmed` was introduced in .NET Core 3.0. The other option
 
 Place this setting in the project file to ensure that the setting applies during `dotnet build`, not just `dotnet publish`.
 
-:::zone pivot="dotnet-7-0"
+:::zone pivot="dotnet-8-0,dotnet-7-0"
 
 This setting enables trimming and will trim all assemblies by default. In .NET 6, only assemblies that opted-in
 to trimming via `[AssemblyMetadata("IsTrimmable", "True")]` would be trimmed by default. You can return to the
@@ -43,7 +43,7 @@ This setting also enables the trim-compatibility [Roslyn analyzer](#roslyn-analy
 
 ## Trimming granularity
 
-:::zone pivot="dotnet-7-0"
+:::zone pivot="dotnet-8-0,dotnet-7-0"
 
 Use the `TrimMode` property to set the trimming granularity to either `partial` or `full`. The default setting for console apps (and, starting in .NET 8, Web SDK apps) is `full`:
 

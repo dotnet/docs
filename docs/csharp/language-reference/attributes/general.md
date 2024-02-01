@@ -49,10 +49,12 @@ In C# 10, you can use constant string interpolation and the `nameof` operator to
 
 ## `Experimental` attribute
 
-Types, methods, and assemblies can be marked with the <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute?displayProperty=nameWithType> to indicate an experimental feature. The compiler issues a warning if you access a method or type annotated with the <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute>. You can disable these warnings to pilot an experimental feature.
+Beginning in C# 12, types, methods, and assemblies can be marked with the <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute?displayProperty=nameWithType> to indicate an experimental feature. The compiler issues a warning if you access a method or type annotated with the <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute>. All types declared in an assembly or module marked with the `Experimental` attribute are experimental. The compiler issues a warning if you access any of them. You can disable these warnings to pilot an experimental feature.
 
 > [!WARNING]
 > Experimental features are subject to changes. The APIs may change, or they may be removed in future updates. Including experimental features is a way for library authors to get feedback on ideas and concepts for future development. Use extreme caution when using any feature marked as experimental.
+
+You can read more details about the `Experimental` attribute in the [feature specification](~/_csharplang/proposals/csharp-12.0/experimental-attribute.md).
 
 ## `SetsRequiredMembers` attribute
 
@@ -160,7 +162,7 @@ You can learn more about building an interpolated string handler in the C# 10 fe
 
 ## `ModuleInitializer` attribute
 
-Beginning with C# 9, the `ModuleInitializer` attribute marks a method that the runtime calls when the assembly loads. `ModuleInitializer` is an alias for <xref:System.Runtime.CompilerServices.ModuleInitializerAttribute>.
+The `ModuleInitializer` attribute marks a method that the runtime calls when the assembly loads. `ModuleInitializer` is an alias for <xref:System.Runtime.CompilerServices.ModuleInitializerAttribute>.
 
 The `ModuleInitializer` attribute can only be applied to a method that:
 
@@ -184,7 +186,7 @@ Source code generators sometimes need to generate initialization code. Module in
 
 ## `SkipLocalsInit` attribute
 
-Beginning in C# 9, the `SkipLocalsInit` attribute prevents the compiler from setting the `.locals init` flag when emitting to metadata. The `SkipLocalsInit` attribute is a single-use attribute and can be applied to a method, a property, a class, a struct, an interface, or a module, but not to an assembly. `SkipLocalsInit` is an alias for <xref:System.Runtime.CompilerServices.SkipLocalsInitAttribute>.
+The `SkipLocalsInit` attribute prevents the compiler from setting the `.locals init` flag when emitting to metadata. The `SkipLocalsInit` attribute is a single-use attribute and can be applied to a method, a property, a class, a struct, an interface, or a module, but not to an assembly. `SkipLocalsInit` is an alias for <xref:System.Runtime.CompilerServices.SkipLocalsInitAttribute>.
 
 The `.locals init` flag causes the CLR to initialize all of the local variables declared in a method to their default values. Since the compiler also makes sure that you never use a variable before assigning some value to it, `.locals init` is typically not necessary. However, the extra zero-initialization might have measurable performance impact in some scenarios, such as when you use [stackalloc](../operators/stackalloc.md) to allocate an array on the stack. In those cases, you can add the `SkipLocalsInit` attribute. If applied to a method directly, the attribute affects that method and all its nested functions, including lambdas and local functions. If applied to a type or module, it affects all methods nested inside. This attribute doesn't affect abstract methods, but it does affect code generated for the implementation.
 

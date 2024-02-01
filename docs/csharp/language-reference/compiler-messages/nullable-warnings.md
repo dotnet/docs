@@ -193,9 +193,13 @@ In the example above, the warning is because the `Container`, `c`, may have a nu
 
 To remove these warnings, you need to add code to change that variable's *null-state* to *not-null* before dereferencing it. The collection initializer warning may be harder to spot. The compiler detects that the collection *maybe-null* when the initializer adds elements to it.
 
-In many instances, you can fix these warnings by checking that a variable isn't null before dereferencing it. For example, the above example could be rewritten as:
+In many instances, you can fix these warnings by checking that a variable isn't null before dereferencing it. Consider the following that adds a null check before dereferencing the `message` parameter:
 
 :::code language="csharp" source="snippets/null-warnings/Program.cs" id="ProvideNullCheck":::
+
+The following example initializes the backing storage for the `States` and removes the `set` accessor. Consumers of the class can modify the contents of the collection, and the storage for the collection is never `null`:
+
+:::code language="csharp" source="snippets/null-warnings/NullWarnings.cs" id="SnippetUpdatedDefinition":::
 
 Other instances when you get these warnings may be false positive. You may have a private utility method that tests for null. The compiler doesn't know that the method provides a null check. Consider the following example that uses a private utility method, `IsNotNull`:
 

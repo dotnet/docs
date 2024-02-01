@@ -1,7 +1,7 @@
 ---
 title: Orleans clients
 description: Learn how to write .NET Orleans clients.
-ms.date: 10/30/2023
+ms.date: 01/09/2024
 zone_pivot_groups: orleans-version
 ---
 
@@ -124,7 +124,7 @@ await client.Connect();
 
 ### Make calls to grains
 
-Making calls to grain from a client is no different from [making such calls from within grain code](../grains/index.md). The same <xref:Orleans.IGrainFactory.GetGrain%60%601(System.Type,System.Guid)?displayProperty=nameWithType> method, where `T` is the target grain interface, is used in both cases [to obtain grain references](../grains/index.md#grain-reference). The difference is in what factory object is invoked <xref:Orleans.IGrainFactory.GetGrain%2A?displayProperty=nameWithType>. In client code, you do that through the connected client object as the following example shows:
+Making calls to grain from a client is no different from [making such calls from within grain code](../grains/index.md). The same <xref:Orleans.IGrainFactory.GetGrain%60%601(System.Type,System.Guid)?displayProperty=nameWithType> method, where `T` is the target grain interface, is used in both cases [to obtain grain references](../grains/grain-references.md). The difference is in what factory object is invoked <xref:Orleans.IGrainFactory.GetGrain%2A?displayProperty=nameWithType>. In client code, you do that through the connected client object as the following example shows:
 
 ```csharp
 IPlayerGrain player = client.GetGrain<IPlayerGrain>(playerId);
@@ -201,6 +201,18 @@ The recommended way to create an external client in a program that uses the .NET
 
 When connecting to a cluster in a different process (on a different machine), a common pattern is to create a hosted service like this:
 
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-7-0"
+<!-- markdownlint-enable MD044 -->
+
+:::code source="snippets/ClusterClientHostedService.cs":::
+
+:::zone-end
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-3-x"
+<!-- markdownlint-enable MD044 -->
+
 ```csharp
 public class ClusterClientHostedService : IHostedService
 {
@@ -226,6 +238,8 @@ public class ClusterClientHostedService : IHostedService
 }
 ```
 
+:::zone-end
+
 The service is then registered like this:
 
 ```csharp
@@ -237,8 +251,7 @@ await Host.CreateDefaultBuilder(args)
     .ConfigureServices(services => 
     {
         services.AddHostedService<ClusterClientHostedService>();
-    }
-    )
+    })
     .RunConsoleAsync();
 ```
 

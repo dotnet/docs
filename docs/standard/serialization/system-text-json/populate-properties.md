@@ -42,6 +42,9 @@ Starting in .NET 8, you can change the deserialization behavior to modify (*popu
 
   A struct property must have a setter; otherwise, an <xref:System.InvalidOperationException> is thrown at run time.
 
+> [!NOTE]
+> The populate behavior currently doesn't work for types that have a parameterized constructor. For more information, see [dotnet/runtime issue 92877](https://github.com/dotnet/runtime/issues/92877).
+
 ### Read-only properties
 
 For populating reference properties that are mutable, since the instance that the property references isn't *replaced*, the property doesn't need to have a setter. This behavior means that deserialization can also populate *read-only* properties.

@@ -1,12 +1,8 @@
 ﻿namespace DependencyInjection.Example;
 
-public class LoggingMessageWriter : IMessageWriter
+public class LoggingMessageWriter(
+    ILogger<LoggingMessageWriter> logger) : IMessageWriter
 {
-    private readonly ILogger<LoggingMessageWriter> _logger;
-
-    public LoggingMessageWriter(ILogger<LoggingMessageWriter> logger) =>
-        _logger = logger;
-
     public void Write(string message) =>
-        _logger.LogInformation("Info: {Msg}", message);
+        logger.LogInformation("Info: {Msg}", message);
 }

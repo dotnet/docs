@@ -20,6 +20,8 @@ items:
     items:
       - name: Develop grains
         href: grains/index.md
+      - name: Grain references
+        href: grains/grain-references.md
       - name: Grain identity
         href: grains/grain-identity.md
       - name: Grain placement
@@ -162,7 +164,7 @@ items:
         items:
           - name: Overview
             href: host/monitoring/index.md
-            displayName: zipkin,jaeger,open telemetry,opentelemetry,meter,counter,activity source,observability,monitoring,logging,metrics,telemetry,distributed tracing
+            displayName: zipkin,jaeger,OpenTelemetry,opentelemetry,meter,counter,activity source,observability,monitoring,logging,metrics,telemetry,distributed tracing
           - name: Silo error code monitoring
             href: host/monitoring/silo-error-code-monitoring.md
           - name: Client error code monitoring
@@ -212,7 +214,7 @@ items:
       - name: Adventure game
         href: tutorials-and-samples/adventure.md
       - name: Unit testing
-        href: tutorials-and-samples/testing.md
+        href: /dotnet/orleans/implementation/testing
       - name: Custom grain storage
         href: tutorials-and-samples/custom-grain-storage.md
   - name: Implementation details

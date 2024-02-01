@@ -162,8 +162,6 @@ items:
       href: ../../_roslyn/docs/compilers/CSharp/Compiler%20Breaking%20Changes%20-%20DotNet%207.md
   - name: C# 10
     href: whats-new/csharp-10.md
-  - name: C# 9.0
-    href: whats-new/csharp-9.md
   - name: Breaking changes in earlier versions
     href: whats-new/breaking-changes.md
   - name: C# Version History
@@ -178,16 +176,16 @@ items:
       href: whats-new/tutorials/primary-constructors.md
     - name: Explore static interface members
       href: whats-new/tutorials/static-virtual-interface-members.md
-    - name: Explore record types
-      href: whats-new/tutorials/records.md
-    - name: Explore top-level statements
-      href: whats-new/tutorials/top-level-statements.md
     - name: Explore patterns in objects
       href: whats-new/tutorials/patterns-objects.md
     - name: Write a custom string interpolation handler
       href: whats-new/tutorials/interpolated-string-handler.md
 - name: Tutorials
   items:
+  - name: Explore record types
+    href: tutorials/records.md
+  - name: Explore top-level statements
+    href: tutorials/top-level-statements.md
   - name: Explore indexes and ranges
     href: tutorials/ranges-indexes.md
   - name: Work with nullable reference types
@@ -211,15 +209,15 @@ items:
   - name: Getting Started with LINQ in C#
     items:
     - name: Introduction to LINQ queries
-      href: programming-guide/concepts/linq/introduction-to-linq-queries.md
+      href: linq/get-started/introduction-to-linq-queries.md
     - name: Query expression basics
-      href: linq/query-expression-basics.md
-    - name: Write LINQ queries in C#
-      href: linq/write-linq-queries.md
+      href: linq/get-started/query-expression-basics.md
+    - name: Write LINQ queries
+      href: linq/get-started/write-linq-queries.md
     - name: Type relationships in LINQ query operations
-      href: programming-guide/concepts/linq/type-relationships-in-linq-query-operations.md
+      href: linq/get-started/type-relationships-in-linq-query-operations.md
     - name: C# features that support LINQ
-      href: programming-guide/concepts/linq/features-that-support-linq.md
+      href: linq/get-started/features-that-support-linq.md
   - name: Standard query operators
     items:
     - name: Overview
@@ -284,7 +282,7 @@ items:
     href: linq/query-a-collection-of-objects.md
   - name: "Walkthrough: Writing Queries in C# (LINQ)"
     href: programming-guide/concepts/linq/walkthrough-writing-queries-linq.md
-  - name: LINQ and File Directories
+  - name: LINQ and file directories
     items:
     - name: Overview
       href: programming-guide/concepts/linq/linq-and-file-directories.md
@@ -342,6 +340,14 @@ items:
       href: programming-guide/concepts/linq/how-to-query-an-arraylist-with-linq.md
     - name: "How to add custom methods for LINQ queries"
       href: programming-guide/concepts/linq/how-to-add-custom-methods-for-linq-queries.md
+  - name: Supplemental API remarks
+    items:
+    - name: The BinaryExpression class
+      href: ../fundamentals/runtime-libraries/system-linq-expressions-binaryexpression.md
+    - name: The Expression class
+      items:
+      - name: Add method
+        href: ../fundamentals/runtime-libraries/system-linq-expressions-expression-add.md
 - name: Asynchronous programming
   items:
   - name: Overview
@@ -467,21 +473,21 @@ items:
     items:
     - name: Overview
       href: advanced-topics/interop/index.md
-    - name: Example COM Class
+    - name: Example COM class
       href: advanced-topics/interop/example-com-class.md
-    - name: "Walkthrough: Office Programming"
+    - name: "Walkthrough: Office programming"
       href: advanced-topics/interop/walkthrough-office-programming.md
-    - name: "How to use platform invoke to play a WAV file"
+    - name: "Use platform invoke to play a WAV file"
       href: advanced-topics/interop/how-to-use-platform-invoke-to-play-a-wave-file.md
-    - name: "How to use indexed properties in COM interop programming"
+    - name: "Use indexed properties in COM interop programming"
       href: advanced-topics/interop/how-to-use-indexed-properties-in-com-interop-programming.md
-    - name: "How to access Office interop objects"
+    - name: "Access Office interop objects"
       href: advanced-topics/interop/how-to-access-office-interop-objects.md
-    - name: "How to use named and optional arguments in Office programming"
+    - name: "Use named and optional arguments in Office programming"
       href: advanced-topics/interop/how-to-use-named-and-optional-arguments-in-office-programming.md
-    - name: Using Type dynamic
+    - name: Using type 'dynamic'
       href: advanced-topics/interop/using-type-dynamic.md
-    - name: "Walkthrough: Creating and Using Dynamic Objects"
+    - name: "Walkthrough: Creating and using dynamic objects"
       href: advanced-topics/interop/walkthrough-creating-and-using-dynamic-objects.md
   - name: Performance engineering
     items:
@@ -505,6 +511,8 @@ items:
     href: roslyn-sdk/syntax-visualizer.md
   - name: Source Generators
     href: roslyn-sdk/source-generators-overview.md
+  - name: Choose diagnostic IDs
+    href: roslyn-sdk/choosing-diagnostic-ids.md
   - name: Quick starts
     items:
     - name: Syntax analysis
@@ -892,14 +900,10 @@ items:
       - name: volatile
         href: language-reference/keywords/volatile.md
     - name: Statement Keywords
-      items:
-      - name: Statement categories
-        href: language-reference/keywords/statement-keywords.md
+      href: language-reference/keywords/statement-keywords.md
     - name: Method Parameters
-      items:
-      - name: Passing parameters
-        displayName: ref, in, out, params, reference parameter, value parameter, ref readonly
-        href: language-reference/keywords/method-parameters.md
+      displayName: ref, in, out, params, reference parameter, value parameter, ref readonly
+      href: language-reference/keywords/method-parameters.md
     - name: Namespace Keywords
       items:
       - name: namespace
@@ -999,7 +1003,7 @@ items:
       displayName: "~, &, |, ^, <<, >>, &=, |=, ^=, <<=, >>=, AND, XOR, OR"
     - name: Collection expressions
       displayName: Collection literal, ".. token", ".. symbol", "[] token", "[] symbol"
-      href: language-reference/operators/collection-expressions.md 
+      href: language-reference/operators/collection-expressions.md
     - name: Equality operators
       href: language-reference/operators/equality-operators.md
       displayName: ==, !=
@@ -1139,7 +1143,7 @@ items:
       displayName: AllowNull, DisallowNull, MaybeNull, NotNull, MaybeNullWhen, NotNullWhen, NotNullIfNotNull, DoesNotReturn, DoesNotReturnIf
       href: language-reference/attributes/nullable-analysis.md
     - name: Miscellaneous
-      displayName: Conditional, Obsolete, SetsRequiredMembers, AttributeUsage, ModuleInitializer, SkipLocalsInit, module initializer
+      displayName: Conditional, Obsolete, Experimental, SetsRequiredMembers, AttributeUsage, ModuleInitializer, SkipLocalsInit, module initializer
       href: language-reference/attributes/general.md
   - name: Unsafe code and pointers
     displayName: unsafe code, pointers, fixed size buffer, function pointer
@@ -1192,7 +1196,7 @@ items:
   items:
   - name: Overview
     href: language-reference/specifications.md
-  - name: C# 7 draft specification
+  - name: C# 8 draft specification
     items:
     - name: Detailed table of contents
       href: ../../_csharpstandard/standard/README.md
@@ -1392,3 +1396,5 @@ items:
         href: ../../_csharplang/proposals/csharp-12.0/inline-arrays.md
       - name: Ref readonly parameters
         href: ../../_csharplang/proposals/csharp-12.0/ref-readonly-parameters.md
+      - name: Experimental attribute
+        href: ../../_csharplang/proposals/csharp-12.0/experimental-attribute.md

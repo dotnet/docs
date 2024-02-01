@@ -38,7 +38,7 @@ When a project is [built](../tools/dotnet-build.md), an *[appname].runtimeconfig
 > - The *[appname].runtimeconfig.json* file will get overwritten on subsequent builds.
 > - If your app's `OutputType` is not `Exe` and you want configuration options to be copied from *runtimeconfig.template.json* to *[appname].runtimeconfig.json*, you must explicitly set `GenerateRuntimeConfigurationFiles` to `true` in your project file. For apps that require a *runtimeconfig.json* file, this property defaults to `true`.
 
-Specify runtime configuration options in the **configProperties** section of the *runtimeconfig.json* files. This section has the form:
+Specify runtime configuration options in the **configProperties** section of the *runtimeconfig.json* or *runtimeconfig.template.json* file. This section has the form:
 
 ```json
 "configProperties": {
@@ -90,7 +90,7 @@ If you're placing the options in the template JSON file, omit the `runtimeOption
 
 Some runtime configuration options can be set using MSBuild properties in the *.csproj* or *.vbproj* file of SDK-style .NET projects. MSBuild properties take precedence over options set in the *runtimeconfig.template.json* file.
 
-For runtime configuration settings that don't have a specific MSBuild property, you can use the `RuntimeHostConfigurationOption` MSBuild item instead.
+For runtime configuration settings that don't have a specific MSBuild property, you can use the `RuntimeHostConfigurationOption` MSBuild item instead. Use the *runtimeconfig.json* setting name as the value of the `Include` attribute.
 
 Here is an example SDK-style project file with MSBuild properties for configuring the behavior of the .NET runtime:
 

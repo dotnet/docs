@@ -27,6 +27,8 @@ The following example performs a group join of objects of type `Person` and `Pet
 
 :::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/GroupJoins.cs" id="grouped_joins_1":::
 
+In the above example, `query` variable contains the query that creates a list where each element is an anonymous type that contains the person's first name and a collection of pets that are owned by them.
+
 ## Example - Group join to create XML
 
 Group joins are ideal for creating XML by using LINQ to XML. The following example is similar to the previous example except that instead of creating anonymous types, the result selector function creates XML elements that represent the joined objects.

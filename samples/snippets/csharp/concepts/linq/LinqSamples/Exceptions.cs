@@ -9,8 +9,7 @@ public static class Exceptions
         IEnumerable<int> GetData() => throw new InvalidOperationException();
 
         // DO THIS with a datasource that might
-        // throw an exception. It is easier to deal with
-        // outside of the query expression.
+        // throw an exception.
         IEnumerable<int>? dataSource = null;
         try
         {
@@ -18,8 +17,6 @@ public static class Exceptions
         }
         catch (InvalidOperationException)
         {
-            // Handle (or don't handle) the exception
-            // in the way that is appropriate for your application.
             Console.WriteLine("Invalid operation");
         }
 
@@ -48,7 +45,7 @@ public static class Exceptions
                 @"C:\newFolder\" + s;
 
         // Data source.
-        string[] files = { "fileA.txt", "fileB.txt", "fileC.txt" };
+        string[] files = ["fileA.txt", "fileB.txt", "fileC.txt"];
 
         // Demonstration query that throws.
         var exceptionDemoQuery =
@@ -56,8 +53,6 @@ public static class Exceptions
             let n = SomeMethodThatMightThrow(file)
             select n;
 
-        // The runtime exception will only be thrown when the query is executed.
-        // Therefore they must be handled in the foreach loop.
         try
         {
             foreach (var item in exceptionDemoQuery)
@@ -65,9 +60,6 @@ public static class Exceptions
                 Console.WriteLine($"Processing {item}");
             }
         }
-
-        // Catch whatever exception you expect to raise
-        // and/or do any necessary cleanup in a finally block
         catch (InvalidOperationException e)
         {
             Console.WriteLine(e.Message);

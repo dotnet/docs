@@ -2,14 +2,14 @@
 title: "stackalloc expression - Allocate variable storage on the stack instead of the heap"
 description: "The C# stackalloc expression allocates a block of memory on the stack. Stackalloc memory is automatically discarded when that method returns."
 ms.date: 11/28/2022
-f1_keywords: 
+f1_keywords:
   - "stackalloc_CSharpKeyword"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "stackalloc expression [C#]"
 ---
 # stackalloc expression (C# reference)
 
-A `stackalloc` expression allocates a block of memory on the stack. A stack allocated memory block created during the method execution is automatically discarded when that method returns. You can't explicitly free the memory allocated with `stackalloc`. A stack allocated memory block isn't subject to [garbage collection](../../../standard/garbage-collection/index.md) and doesn't have to be pinned with a [`fixed` statement](../statements/fixed.md).
+A `stackalloc` expression allocates a block of memory on the stack. A stack-allocated memory block created during the method execution is automatically discarded when that method returns. You can't explicitly free the memory allocated with `stackalloc`. A stack allocated memory block isn't subject to [garbage collection](../../../standard/garbage-collection/index.md) and doesn't have to be pinned with a [`fixed` statement](../statements/fixed.md).
 
 You can assign the result of a `stackalloc` expression to a variable of one of the following types:
 
@@ -23,7 +23,7 @@ You can assign the result of a `stackalloc` expression to a variable of one of t
 
   [!code-csharp[stackalloc expression](snippets/shared/StackallocOperator.cs#AsExpression)]
 
-  You can use a `stackalloc` expression inside other expressions whenever a <xref:System.Span%601> or <xref:System.ReadOnlySpan%601> variable is allowed, as the following example shows:
+  You can use a `stackalloc` expression or a collection expression inside other expressions whenever a <xref:System.Span%601> or <xref:System.ReadOnlySpan%601> variable is allowed, as the following example shows:
 
   [!code-csharp[stackalloc in nested expressions](snippets/shared/StackallocOperator.cs#Nested)]
 
@@ -55,7 +55,7 @@ You can use array initializer syntax to define the content of the newly allocate
 
 [!code-csharp[stackalloc initialization](snippets/shared/StackallocOperator.cs#StackallocInit)]
 
-In expression `stackalloc T[E]`, `T` must be an [unmanaged type](../builtin-types/unmanaged-types.md) and `E` must evaluate to a non-negative [int](../builtin-types/integral-numeric-types.md) value.
+In expression `stackalloc T[E]`, `T` must be an [unmanaged type](../builtin-types/unmanaged-types.md) and `E` must evaluate to a non-negative [int](../builtin-types/integral-numeric-types.md) value. When you use the [collection expression](./collection-expressions.md) syntax to initialize the span, the compiler may use stack allocated storage for a span if it won't violate ref safety.
 
 ## Security
 

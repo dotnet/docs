@@ -78,9 +78,10 @@ Delegates behave like classes and structs. By default, they have `internal` acce
 | `record`                                          |    internal    |
 | `enum`                                            |    internal    |
 | `interface` members                               |     public     |
+| Anonymous types                                   |    internal    |
 | [class, record, and struct members](./members.md) |    private     |
 
-Reach out to [Accessibility Levels](../../language-reference/keywords/accessibility-levels.md) page for more details.
+For more details see the [Accessibility Levels](../../language-reference/keywords/accessibility-levels.md) page.
 
 ## C# language specification
 
@@ -99,6 +100,8 @@ Reach out to [Accessibility Levels](../../language-reference/keywords/accessibil
 - [protected](../../language-reference/keywords/protected.md)
 - [protected internal](../../language-reference/keywords/protected-internal.md)
 - [private protected](../../language-reference/keywords/private-protected.md)
+- [sealed](../../programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md#sealed-classes-and-class-members)
 - [class](../../language-reference/keywords/class.md)
 - [struct](../../language-reference/builtin-types/struct.md)
 - [interface](../../language-reference/keywords/interface.md)
+- [Anonymous types](../../fundamentals/types/anonymous-types.md)

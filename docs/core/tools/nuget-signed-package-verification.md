@@ -31,9 +31,9 @@ NuGet uses the default root store on Windows, which already supports general-pur
 > [!IMPORTANT]
 > Although signed-package verification functionality was added in .NET 5 SDK's, the functionality isn't supported on Linux until .NET 6.0.400 SDK. Don't use signed-package verification with .NET SDK versions earlier than 6.0.400.
 
-Prior to .NET 8 Preview 4 SDK, verification is disabled by default during package restore operations. To opt in, set the environment variable `DOTNET_NUGET_SIGNATURE_VERIFICATION` to `true`.
+Prior to .NET 8 SDK, verification is disabled by default during package restore operations. To opt in, set the environment variable `DOTNET_NUGET_SIGNATURE_VERIFICATION` to `true`.
 
-Starting with .NET 8 Preview 4 SDK, verification is enabled by default. To opt out, set the environment variable `DOTNET_NUGET_SIGNATURE_VERIFICATION` to `false`.
+Starting with .NET 8 SDK, verification is enabled by default. To opt out, set the environment variable `DOTNET_NUGET_SIGNATURE_VERIFICATION` to `false`.
 
 For code signing certificate verification, NuGet will first probe for a certificate bundle at the following location:
 

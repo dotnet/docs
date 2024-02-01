@@ -2,7 +2,7 @@
 title: Debug a memory leak tutorial
 description: Learn how to debug a memory leak in .NET.
 ms.topic: tutorial
-ms.date: 09/11/2023
+ms.date: 11/13/2023
 ---
 
 # Debug a memory leak in .NET
@@ -190,10 +190,10 @@ Statistics:
 Total 206770 objects
 ```
 
-You can now use the `gcroot` command on a `System.String` instance to see how and why the object is rooted. Be patient because this command takes several minutes with a 30-MB heap:
+You can now use the `gcroot` command on a `System.String` instance to see how and why the object is rooted:
 
 ```console
-> gcroot -all 00007f6ad09421f8
+> gcroot 00007f6ad09421f8
 
 Thread 3f68:
     00007F6795BB58A0 00007F6C1D7D0745 System.Diagnostics.Tracing.CounterGroup.PollForValues() [/_/src/System.Private.CoreLib/shared/System/Diagnostics/Tracing/CounterGroup.cs @ 260]

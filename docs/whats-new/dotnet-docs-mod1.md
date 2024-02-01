@@ -36,7 +36,6 @@ Welcome to what's new in the .NET docs for January 2024. This article lists some
 - [System.Data.CommandBehavior enum](../fundamentals/runtime-libraries/system-data-commandbehavior.md)
 - [System.Data.DataSet class](../fundamentals/runtime-libraries/system-data-dataset.md)
 - [System.Data.DataTable class](../fundamentals/runtime-libraries/system-data-datatable.md)
-- [Title not found in: #38990](../fundamentals/runtime-libraries/system-data-linq-dataloadoptions.md)
 - [Title not found in: #38990](../fundamentals/runtime-libraries/system-data-linq-mapping-tableattribute.md)
 - [System.Diagnostics.PerformanceCounterType enumeration](../fundamentals/runtime-libraries/system-diagnostics-performancecountertype.md)
 - [System.Diagnostics.Tracing.EventSource class](../fundamentals/runtime-libraries/system-diagnostics-tracing-eventsource.md)
@@ -63,7 +62,7 @@ Welcome to what's new in the .NET docs for January 2024. This article lists some
 - [Build apps with .NET](../core/apps.md)
 - [Use runsettings with MSTest runner](../core/testing/unit-testing-mstest-runner-runsettings.md)
 - [Use MSTest runner with `dotnet test`](../core/testing/unit-testing-mstest-runner-integrations.md)
-- [MSTest code analysis](..//core/testing/unit-testing-mstest-analyzers.md)
+- [MSTest code analysis](../core/testing/unit-testing-mstest-analyzers.md)
 
 ### Updated articles
 

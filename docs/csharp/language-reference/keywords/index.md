@@ -63,7 +63,7 @@ The first table in this article lists keywords that are reserved identifiers in 
     :::column-end:::
     :::column:::
         [`namespace`](namespace.md)  
-        [`new`](../operators/new-operator.md)  
+        [`new`](new.md)  
         [`null`](null.md)  
         [`object`](../builtin-types/reference-types.md)  
         [`operator`](../operators/operator-overloading.md)  

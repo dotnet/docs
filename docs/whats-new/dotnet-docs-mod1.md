@@ -1,150 +1,139 @@
 ---
-title: ".NET docs: What's new for October 2023"
-description: "What's new in the .NET docs for October 2023."
-ms.custom: October-2023
-ms.date: 11/01/2023
+title: ".NET docs: What's new for January 2024"
+description: "What's new in the .NET docs for January 2024."
+ms.custom: January-2024
+ms.date: 02/01/2024
 ---
 
-# .NET docs: What's new for October 2023
+# .NET docs: What's new for January 2024
 
-Welcome to what's new in the .NET docs for October 2023. This article lists some of the major changes to docs during this period.
+Welcome to what's new in the .NET docs for January 2024. This article lists some of the major changes to docs during this period.
 
 ## .NET breaking changes
 
 ### New articles
 
-- [ManagementDateTimeConverter.ToDateTime returns a local time](../core/compatibility/extensions/8.0/dmtf-todatetime.md)
-- [--arch option doesn't imply self-contained](../core/compatibility/sdk/8.0/arch-option.md)
-
-## .NET Framework
-
-### Updated articles
-
-- [WCF Web HTTP Programming Model Overview](../framework/wcf/feature-details/wcf-web-http-programming-model-overview.md) - Fix broken links
+- [RuntimeHelpers.GetSubArray returns different type](../core/compatibility/core-libraries/9.0/getsubarray-return.md)
+- [Creating type of array of System.Void not allowed](../core/compatibility/core-libraries/9.0/type-instance.md)
+- [HttpListenerRequest.UserAgent is nullable](../core/compatibility/networking/9.0/useragent-nullable.md)
+- [ComponentDesigner.Initialize throws ArgumentNullException](../core/compatibility/windows-forms/9.0/componentdesigner-initialize.md)
+- [No exception if DataGridView is null](../core/compatibility/windows-forms/9.0/datagridviewheadercell-nre.md)
+- [DataGridViewRowAccessibleObject.Name starting row index](../core/compatibility/windows-forms/9.0/datagridviewrowaccessibleobject-name-row.md)
+- [Changes to nullability annotations (Windows Forms)](../core/compatibility/windows-forms/9.0/nullability-changes.md)
+- [BindingSource.SortDescriptions doesn't return null](../core/compatibility/windows-forms/9.0/sortdescriptions-return-value.md)
+- [Breaking changes in .NET 9](../core/compatibility/9.0.md)
+- [`dotnet workload` commands output change](../core/compatibility/sdk/9.0/dotnet-workload-output.md)
+- [Terminal logger is default](../core/compatibility/sdk/9.0/terminal-logger.md)
 
 ## .NET fundamentals
 
 ### New articles
 
-- [Reflection versus source generation in System.Text.Json](../standard/serialization/system-text-json/reflection-vs-source-generation.md)
-- [Compile-time options validation source generation](../core/extensions/options-validation-generator.md)
-- [How to read JSON as .NET objects (deserialize)](../standard/serialization/system-text-json/deserialization.md)
-- [Include fields](../standard/serialization/system-text-json/fields.md)
-- [Populate initialized properties](../standard/serialization/system-text-json/populate-properties.md)
-- [Build resilient HTTP apps: Key development patterns](../core/resilience/http-resilience.md)
-- [Introduction to resilient app development](../core/resilience/index.md)
+- [MSTest design rules](../core/testing/mstest-analyzers/design-rules.md)
+- [MSTest performance rules](../core/testing/mstest-analyzers/performance-rules.md)
+- [MSTest usage rules](../core/testing/mstest-analyzers/usage-rules.md)
+- [Set assembly attributes in a project file](../standard/assembly/set-attributes-project-file.md)
+- [System.Data.CommandBehavior enum](../fundamentals/runtime-libraries/system-data-commandbehavior.md)
+- [System.Data.DataSet class](../fundamentals/runtime-libraries/system-data-dataset.md)
+- [System.Data.DataTable class](../fundamentals/runtime-libraries/system-data-datatable.md)
+- [Title not found in: #38990](../fundamentals/runtime-libraries/system-data-linq-dataloadoptions.md)
+- [Title not found in: #38990](../fundamentals/runtime-libraries/system-data-linq-mapping-tableattribute.md)
+- [System.Diagnostics.PerformanceCounterType enumeration](../fundamentals/runtime-libraries/system-diagnostics-performancecountertype.md)
+- [System.Diagnostics.Tracing.EventSource class](../fundamentals/runtime-libraries/system-diagnostics-tracing-eventsource.md)
+- [System.Diagnostics.Tracing.EventWrittenEventArgs class](../fundamentals/runtime-libraries/system-diagnostics-tracing-eventwritteneventargs.md)
+- [System.Dynamic.ExpandoObject class](../fundamentals/runtime-libraries/system-dynamic-expandoobject.md)
+- [System.GC class](../fundamentals/runtime-libraries/system-gc.md)
+- [System.IAsyncDisposable interface](../fundamentals/runtime-libraries/system-iasyncdisposable.md)
+- [System.IDisposable interface](../fundamentals/runtime-libraries/system-idisposable.md)
+- [System.Linq.Expressions.BinaryExpression class](../fundamentals/runtime-libraries/system-linq-expressions-binaryexpression.md)
+- [System.Reflection.Emit.AssemblyBuilder class](../fundamentals/runtime-libraries/system-reflection-emit-assemblybuilder.md)
+- [System.Reflection.Emit.DynamicMethod class](../fundamentals/runtime-libraries/system-reflection-emit-dynamicmethod.md)
+- [System.Reflection.Emit.MethodBuilder class](../fundamentals/runtime-libraries/system-reflection-emit-methodbuilder.md)
+- [System.Reflection.Emit.TypeBuilder class](../fundamentals/runtime-libraries/system-reflection-emit-typebuilder.md)
+- [System.Reflection.PortableExecutable.DebugDirectoryEntryType enum](../fundamentals/runtime-libraries/system-reflection-portableexecutable-debugdirectoryentrytype.md)
+- [System.Security.Cryptography.RSACryptoServiceProvider class](../fundamentals/runtime-libraries/system-security-cryptography-rsacryptoserviceprovider.md)
+- [System.Security.Cryptography.RSAParameters structure](../fundamentals/runtime-libraries/system-security-cryptography-rsaparameters.md)
+- [System.Security.Cryptography.Xml.SignedXml class](../fundamentals/runtime-libraries/system-security-cryptography-xml-signedxml.md)
+- [System.Security.SecureString class](../fundamentals/runtime-libraries/system-security-securestring.md)
+- [System.Threading.Monitor class](../fundamentals/runtime-libraries/system-threading-monitor.md)
+- [System.Threading.ReaderWriterLockSlim class](../fundamentals/runtime-libraries/system-threading-readerwriterlockslim.md)
+- [System.Threading.Tasks.Task class](../fundamentals/runtime-libraries/system-threading-tasks-task.md)
+- [System.Threading.Tasks.TaskScheduler class](../fundamentals/runtime-libraries/system-threading-tasks-taskscheduler.md)
+- [System.Threading.Thread class](../fundamentals/runtime-libraries/system-threading-thread.md)
+- [Build apps with .NET](../core/apps.md)
+- [Use runsettings with MSTest runner](../core/testing/unit-testing-mstest-runner-runsettings.md)
+- [Use MSTest runner with `dotnet test`](../core/testing/unit-testing-mstest-runner-integrations.md)
+- [Title not found in: #38845](../core/testing/unit-testing-mstest-analyzers-mstest0001.md)
+- [Title not found in: #38845](../core/testing/unit-testing-mstest-analyzers-mstest0002.md)
+- [Title not found in: #38845](../core/testing/unit-testing-mstest-analyzers-mstest0003.md)
+- [Title not found in: #38845](../core/testing/unit-testing-mstest-analyzers-mstest0004.md)
+- [Title not found in: #38845](../core/testing/unit-testing-mstest-analyzers-mstest0005.md)
+- [Title not found in: #38845](../core/testing/unit-testing-mstest-analyzers-mstest0006.md)
+- [Title not found in: #38845](../core/testing/unit-testing-mstest-analyzers-design.md)
+- [Title not found in: #38845](../core/testing/unit-testing-mstest-analyzers-performance.md)
+- [Title not found in: #38845](../core/testing/unit-testing-mstest-analyzers-usage.md)
+- [Title not found in: #38845](../core/testing/unit-testing-mstest-analyzers.md)
 
 ### Updated articles
 
-- [How to use source generation in System.Text.Json](../standard/serialization/system-text-json/source-generation.md) - Remaining STJ work for .NET 8
-- [Logging in C# and .NET](../core/extensions/logging.md) - Update logging docs
-- [Dispose Pattern](../standard/design-guidelines/dispose-pattern.md) - Add note that material may be out of date
-- [Tutorial: Create an item template](../core/tutorials/cli-templates-create-item-template.md) - Update template articles
-- [Tutorial: Create a template package](../core/tutorials/cli-templates-create-template-package.md) - Update template articles
-
-## .NET security
-
-### Updated articles
-
-- [Cross-Platform Cryptography in .NET](../standard/security/cross-platform-cryptography.md) - Overhaul cross platform cryptography guide
-
-## .NET tools and diagnostics
-
-### New articles
-
-- [SYSLIB1034: JsonSourceGenerator encountered a [JsonStringEnumConverter] annotation](../fundamentals/syslib-diagnostics/syslib1034.md)
-- [SYSLIB1039: JsonSourceGenerator encountered a `JsonDerivedTypeAttribute` annotation with `JsonSourceGenerationMode.Serialization` enabled](../fundamentals/syslib-diagnostics/syslib1039.md)
-- [SYSLIB diagnostics for System.Text.Json source generation](../fundamentals/syslib-diagnostics/syslib1220-1229.md)
-- [SYSLIB diagnostics for options validation source generation](../fundamentals/syslib-diagnostics/syslib1201-1219.md)
-- [Exception summarization](../core/diagnostics/diagnostic-exception-summary.md)
-- [.NET app health checks in C\#](../core/diagnostics/diagnostic-health-checks.md)
-- [Resource monitoring](../core/diagnostics/diagnostic-resource-monitoring.md)
-- [NETSDK1202: workload is out of support and will not receive security updates in the future](../core/tools/sdk-errors/netsdk1202.md)
-- [SYSLIB0049](../fundamentals/syslib-diagnostics/syslib0049.md)
-- [CA1514: Avoid redundant length argument](../fundamentals/code-analysis/quality-rules/ca1514.md)
-- [ASP.NET Core Metrics](../core/diagnostics/built-in-metrics-aspnetcore.md)
-- [System.Net Metrics](../core/diagnostics/built-in-metrics-system-net.md)
-- [Built-in Metrics in .NET](../core/diagnostics/built-in-metrics.md)
-
-## Advanced .NET programming
-
-### Updated articles
-
-- [Best Practices for Implementing the Event-based Asynchronous Pattern](../standard/asynchronous-programming-patterns/best-practices-for-implementing-the-event-based-asynchronous-pattern.md) - Replace `<em>` with `*`
+- [MSTest runner extensions](../core/testing/unit-testing-mstest-runner-extensions.md) - Update MSTest runner extensions info
+- [ASP.NET Core metrics](../core/diagnostics/built-in-metrics-aspnetcore.md) - Built-in metrics refactor
 
 ## C# language
 
 ### New articles
 
-- [Errors and warnings associated with reference parameters, variables, and returns](../csharp/language-reference/compiler-messages/ref-modifiers-errors.md)
-- [Compiler Error CS8795](../csharp/language-reference/compiler-messages/cs8795.md)
-- [Compiler Error CS8817](../csharp/language-reference/compiler-messages/cs8817.md)
+- [Compiler Error CS1067](../csharp/language-reference/compiler-messages/cs1067.md)
 
-### Updated articles
-
-- [Method Parameters](../csharp/language-reference/keywords/method-parameters.md) - Add coverage of the `ref readonly` modifier to the C# language reference.
-
-## DevOps and testing in .NET
+## Azure SDK for .NET
 
 ### New articles
 
-- [Cross-compilation](../core/deploying/native-aot/cross-compile.md)
+- [Create Microsoft Entra credential types using configuration files](../azure/sdk/authentication/create-token-credentials-from-configuration.md)
 
-## F# language
+## .NET IoT libraries
 
-### Updated articles
+### New articles
 
-- [Query expressions](../fsharp/language-reference/query-expressions.md) - Bulk update html codeblock to markdown format
+- [Use .NET IoT Libraries on Windows, Linux, and macOS computers](../iot/usb.md)
 
 ## Microsoft Orleans
 
-### New articles
-
-- [Azure Cosmos DB for NoSQL grain persistence](../orleans/grains/grain-persistence/azure-cosmos-db.md)
-
 ### Updated articles
 
-- [Deploy and scale an Orleans app on Azure](../orleans/quickstarts/deploy-scale-orleans-on-azure.md) - Orleans | Add Azure Cosmos DB to Orleans quickstart
+- [Deploy and scale an Orleans app on Azure](../orleans/quickstarts/deploy-scale-orleans-on-azure.md) - Update Orleans quickstart with AZD template
 
 ## Community contributors
 
 The following people contributed to the .NET docs during this period. Thank you! Learn how to contribute by following the links under "Get involved" in the [what's new landing page](index.yml).
 
-- [Rageking8](https://github.com/Rageking8) -  ![16 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-16-green)
-- [BartoszKlonowski](https://github.com/BartoszKlonowski) - Bartosz Klonowski ![8 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-8-green)
-- [JiuLing-zhang](https://github.com/JiuLing-zhang) - 九零 ![2 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-2-green)
-- [alexravenna](https://github.com/alexravenna) - Alex Ravenna ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [AptiviCEO](https://github.com/AptiviCEO) - Aptivi CEO ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [BartoszKlonowski](https://github.com/BartoszKlonowski) - Bartosz Klonowski ![7 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-7-green)
+- [zipperer](https://github.com/zipperer) - Andrew Zipperer ![3 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-3-green)
+- [jufa2401](https://github.com/jufa2401) - Justin Fabricius ![2 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-2-green)
+- [mateusrodrigues](https://github.com/mateusrodrigues) - Mateus Rodrigues de Morais ![2 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-2-green)
+- [Rageking8](https://github.com/Rageking8) -  ![2 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-2-green)
+- [0liver](https://github.com/0liver) -  ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [ar1k](https://github.com/ar1k) - Aleksandr Ananin ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [Arclight3](https://github.com/Arclight3) - Iustin ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [BruceTheBrick](https://github.com/BruceTheBrick) -  ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [david-acker](https://github.com/david-acker) - David Acker ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [dawedawe](https://github.com/dawedawe) - dawe ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [DreadedTuba](https://github.com/DreadedTuba) -  ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [fincentxyz](https://github.com/fincentxyz) - fincent ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [gfoidl](https://github.com/gfoidl) - Günther Foidl ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [Happypig375](https://github.com/Happypig375) - Hadrian Tang ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [jgscherber](https://github.com/jgscherber) - Jacob Scherber ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [jjolidon](https://github.com/jjolidon) -  ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [jmangel](https://github.com/jmangel) -  ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [KUTlime](https://github.com/KUTlime) - Radek Zahradník ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [kyanha](https://github.com/kyanha) - Kyle H ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [mavaddat](https://github.com/mavaddat) - Mavaddat Javid ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [mpidash](https://github.com/mpidash) - Mario Pistrich ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [nnpcYvIVl](https://github.com/nnpcYvIVl) -  ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [owre](https://github.com/owre) - Pontus Öwre ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [postmeback](https://github.com/postmeback) - Arka Poddar ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [Raienryuu](https://github.com/Raienryuu) - Piotr ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [roboz0r](https://github.com/roboz0r) -  ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [sa-es-ir](https://github.com/sa-es-ir) - Saeed Esmaeelinejad ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [Sergey-Vlasov](https://github.com/Sergey-Vlasov) - Sergey Vlasov ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [sliekens](https://github.com/sliekens) - Steven ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [smoothdeveloper](https://github.com/smoothdeveloper) - Gauthier Segay ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [stesmi](https://github.com/stesmi) - Stefan Smietanowski ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [sungam3r](https://github.com/sungam3r) - Ivan Maximov ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [SusheelThapa](https://github.com/SusheelThapa) - Susheel Thapa ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [Tchial0](https://github.com/Tchial0) - Chialo Armando ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [chaojian-zhang](https://github.com/chaojian-zhang) - Charles Zhang ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [dotnet-policy-service](https://github.com/dotnet-policy-service) -  ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [dragica](https://github.com/dragica) -  ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [fnicollier](https://github.com/fnicollier) - Fabian Nicollier ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [gurustron](https://github.com/gurustron) -  ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [hassanyahya400](https://github.com/hassanyahya400) - Hassan Yahya ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [jivanf](https://github.com/jivanf) -  ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [joaoportela](https://github.com/joaoportela) - João Paulo dos Santos Portela ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [JohnVeness](https://github.com/JohnVeness) - John Veness ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [MangelMaxime](https://github.com/MangelMaxime) - Maxime Mangel ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [marius-haugan](https://github.com/marius-haugan) - Marius Riis Haugan ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [mdenhoedt](https://github.com/mdenhoedt) - Martijn den Hoedt ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [monty241](https://github.com/monty241) - Guido Leenders ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [Nikanoras](https://github.com/Nikanoras) - Nikanoras Zavadskij ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [Ninja4Code](https://github.com/Ninja4Code) - Charles Owen ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [petterh](https://github.com/petterh) - Petter Hesselberg ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [PowerfulBacon](https://github.com/PowerfulBacon) -  ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [reflectronic](https://github.com/reflectronic) - John Tur ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [Smaug123](https://github.com/Smaug123) - Patrick Stevens ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [surgicalcoder](https://github.com/surgicalcoder) -  ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [timdeschryver](https://github.com/timdeschryver) - Tim Deschryver ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [tmds](https://github.com/tmds) - Tom Deseyn ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [tokayy](https://github.com/tokayy) -  ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [tsemer](https://github.com/tsemer) -  ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [udidahan](https://github.com/udidahan) - Udi Dahan ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [WeihanLi](https://github.com/WeihanLi) - Weihan Li ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)

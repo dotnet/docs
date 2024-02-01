@@ -1,6 +1,7 @@
 name: "New article request"
 description: Request a new article on a topic or concept that you can't find in our current docs.
 title: "[New article]: "
+labels: ["doc-idea"]
 body:
   - type: markdown
     attributes:

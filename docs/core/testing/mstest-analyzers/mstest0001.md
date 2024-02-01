@@ -23,7 +23,8 @@ dev_langs:
 | **Category**                        | Performance                                        |
 | **Fix is breaking or non-breaking** | Non-breaking                                       |
 | **Enabled by default**              | Yes                                                |
-| **Default severity**                | Info                                            |
+| **Default severity**                | Info                                               |
+| **Introduced in version**           | 3.2.0                                              |
 
 ## Cause
 
@@ -31,7 +32,7 @@ The assembly is not marked with `[assembly: Parallelize]` or `[assembly: DoNotPa
 
 ## Rule description
 
-By default, MSTest runs tests within the same assembly sequentially, which can lead to severe performance limitations. It is recommended to enable assembly attribute [`[assembly: Parallelize]`](https://learn.microsoft.com/dotnet/api/microsoft.visualstudio.testtools.unittesting.parallelizeattribute) to run tests in parallel, or if the assembly is known to not be parallelizable, to use explicitly the assembly level attribute [`[assembly: DoNotParallelize]`](https://learn.microsoft.com/dotnet/api/microsoft.visualstudio.testtools.unittesting.donotparallelizeattribute).
+By default, MSTest runs tests within the same assembly sequentially, which can lead to severe performance limitations. It is recommended to enable assembly attribute [`[assembly: Parallelize]`](/dotnet/api/microsoft.visualstudio.testtools.unittesting.parallelizeattribute) to run tests in parallel, or if the assembly is known to not be parallelizable, to use explicitly the assembly level attribute [`[assembly: DoNotParallelize]`](/dotnet/api/microsoft.visualstudio.testtools.unittesting.donotparallelizeattribute).
 
 The default configuration of `[assembly: Parallelize]` is equivalent to `[assembly: Parallelize(Scope = ExecutionScope.ClassLevel)]`, meaning that the parallelization will be set at class level (not method level) and will use as many threads as possible (depending on internal implementation).
 

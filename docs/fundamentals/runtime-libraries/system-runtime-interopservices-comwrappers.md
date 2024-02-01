@@ -7,9 +7,9 @@ ms.date: 12/31/2023
 
 [!INCLUDE [context](includes/context.md)]
 
-The <xref:System.Runtime.InteropServices.ComWrappers> API provides support for the `IUnknown` ABI, independent of the built-in COM interoperability support. The `ComWrappers` API exposes the minimal runtime support that's needed for developers to replace the built-in version in an efficient manner.
+The <xref:System.Runtime.InteropServices.ComWrappers> API provides support for the `IUnknown` API independent of the built-in COM interoperability support. The `ComWrappers` API exposes the minimal runtime support that's needed for developers to replace the built-in version in an efficient manner.
 
-Traditionally in the runtime, a native proxy to managed object is called a COM Callable Wrapper (CCW), and a managed proxy to a native object is called a Runtime Callable Wrapper (RCW). However, when used here, those terms should not be confused with the built-in features of the same name (that is, [CCW](https://docs.microsoft.com/dotnet/standard/native-interop/com-callable-wrapper) and [RCW](https://docs.microsoft.com/dotnet/standard/native-interop/runtime-callable-wrapper)). Unlike the built-in features, a majority of the responsibility for accurate lifetime management, dispatching methods, and marshalling of arguments and return values is left to the `ComWrappers` implementer.
+Traditionally in the runtime, a native proxy to managed object is called a COM Callable Wrapper (CCW), and a managed proxy to a native object is called a Runtime Callable Wrapper (RCW). However, when used here, those terms should not be confused with the built-in features of the same name (that is, [CCW](../../standard/native-interop/com-callable-wrapper.md) and [RCW](../../standard/native-interop/runtime-callable-wrapper.md)). Unlike the built-in features, a majority of the responsibility for accurate lifetime management, dispatching methods, and marshalling of arguments and return values is left to the `ComWrappers` implementer.
 
 "Minimal support" is defined by the following features:
 
@@ -38,7 +38,7 @@ The following illustration shows the state of the managed object and native prox
  --------------------                  ----------------------
 ```
 
-The next illustration shows the state of the native object and managed proxy after a call to <xref:System.Runtime.InteropServices.ComWrappers.GetOrCreateObjectForComInstance(System.IntPtr,System.Runtime.InteropServices.CreateObjectFlags)?displayProperty=nameWithType>. The concept of "identity" follows the [rules for `IUnknown`](https://docs.microsoft.com/windows/win32/com/rules-for-implementing-queryinterface#objects-must-have-identity).
+The next illustration shows the state of the native object and managed proxy after a call to <xref:System.Runtime.InteropServices.ComWrappers.GetOrCreateObjectForComInstance(System.IntPtr,System.Runtime.InteropServices.CreateObjectFlags)?displayProperty=nameWithType>. The concept of "identity" follows the [rules for `IUnknown`](/windows/win32/com/rules-for-implementing-queryinterface#objects-must-have-identity).
 
 ```
  ------------------               ------------------

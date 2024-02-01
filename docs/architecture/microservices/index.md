@@ -7,7 +7,7 @@ ms.date: 01/10/2022
 
 ![Book cover](./media/cover-large.png)
 
-**EDITION v8.0** - Updated to ASP.NET Core 8.0
+**EDITION v7.0** - Updated to ASP.NET Core 7.0
 
 Refer [changelog](https://aka.ms/MicroservicesEbookChangelog) for the book updates and community contributions.
 
@@ -43,7 +43,9 @@ After you have studied this guide, your next step would be to learn about produc
 
 ## Version
 
-This guide has been revised to cover **.NET 8** version along with many additional updates related to the same "wave" of technologies (that is, Azure and additional third-party technologies) coinciding in time with the .NET 8 release. That’s why the book version has also been updated to version **8.0**.
+This guide has been revised to cover **.NET 7** version along with many additional updates related to the same "wave" of technologies (that is, Azure and additional third-party technologies) coinciding in time with the .NET 7 release. 
+
+> Note: A new version of this eBook is being created for .NET 8 and the new [eShop](https://github.com/dotnet/eshop) sample.
 
 ## What this guide does not cover
 
@@ -62,7 +64,7 @@ You will also find this guide useful if you are a technical decision maker, such
 
 ### How to use this guide
 
-The first part of this guide introduces Docker containers, discusses how to choose between .NET 8 and the .NET Framework as a development framework, and provides an overview of microservices. This content is for architects and technical decision makers who want an overview but don't need to focus on code implementation details.
+The first part of this guide introduces Docker containers, discusses how to choose between .NET 7 and the .NET Framework as a development framework, and provides an overview of microservices. This content is for architects and technical decision makers who want an overview but don't need to focus on code implementation details.
 
 The second part of the guide starts with the [Development process for Docker based applications](./docker-application-development-process/index.md) section. It focuses on the development and microservice patterns for implementing applications using .NET and Docker. This section will be of most interest to developers and architects who want to focus on code and on patterns and implementation details.
 

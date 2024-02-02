@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 - VB
 ---
-# MSTEST0007: [<TestAttribute>] can only be set on methods marked with [TestMethod]
+# MSTEST0007: `[<TestAttribute>]` can only be set on methods marked with `[TestMethod]`
 
 | Property                            | Value                                                                              |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | **Rule ID**                         | MSTEST0007                                                                         |
-| **Title**                           | [<TestAttribute>] can only be set on methods marked with [TestMethod] |
+| **Title**                           | `[<TestAttribute>]` can only be set on methods marked with `[TestMethod]`          |
 | **Category**                        | Usage                                                                              |
 | **Fix is breaking or non-breaking** | Non-breaking                                                                       |
 | **Enabled by default**              | Yes                                                                                |
@@ -33,8 +33,9 @@ A method not marked with `[TestMethod]` attribute has one or more test attribute
 ## Rule description
 
 Test attributes:
+
 - `[CssIteration]`
-- `[CssProjectStructure]` 
+- `[CssProjectStructure]`
 - `[Description]`
 - `[ExpectedException]`
 - `[Owner]`

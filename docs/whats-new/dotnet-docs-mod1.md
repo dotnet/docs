@@ -29,7 +29,7 @@ Welcome to what's new in the .NET docs for January 2024. This article lists some
 
 ### New articles
 
-- [MSTest design rules](../core/testing/mstest-analyzers/design-rules.md)
+- [MSTest design rules](../core/testing/mstest-analyzers/overview.md)
 - [MSTest performance rules](../core/testing/mstest-analyzers/performance-rules.md)
 - [MSTest usage rules](../core/testing/mstest-analyzers/usage-rules.md)
 - [Set assembly attributes in a project file](../standard/assembly/set-attributes-project-file.md)

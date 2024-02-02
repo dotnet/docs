@@ -105,10 +105,10 @@ Available starting in: .NET 8
 
 | Attribute  | Type | Description  | Examples  | Presence |
 |---|---|---|---|---|
-| `error.type` | string | Request failure reason: one of [HTTP Request errors](https://github.com/dotnet/runtime/blob/c430570a01c103bc7f117be573f37d8ce8a129b8/src/libraries/System.Net.Http/src/System/Net/Http/HttpRequestError.cs), or a full exception type, or an HTTP 4xx/5xx status code. | `System.Threading.Tasks.TaskCanceledException`; `name_resolution_error`; `secure_connection_error` ; `404` | If request has failed. |
+| `error.type` | string | Request failure reason: one of [HTTP Request errors](https://learn.microsoft.com/dotnet/api/system.net.http.httprequesterror?view=net-8.0), or a full exception type, or an HTTP 4xx/5xx status code. | `System.Threading.Tasks.TaskCanceledException`; `name_resolution_error`; `secure_connection_error` ; `404` | If request has failed. |
 | `http.request.method` | string | HTTP request method. | `GET`; `POST`; `HEAD` | Always |
 | `http.response.status_code` | int | [HTTP response status code](https://tools.ietf.org/html/rfc7231#section-6). | `200` | If one was received. |
-| `network.protocol.version` | string | Version of the application layer protocol used. | `1.1`; `2` | Always |
+| `network.protocol.version` | string | Version of the application layer protocol used. | `1.1`; `2` | If response was received. |
 | `server.address` | string | Host identifier of the ["URI origin"](https://www.rfc-editor.org/rfc/rfc9110.html#name-uri-origin) HTTP request is sent to. | `example.com` | Always |
 | `server.port` | int | Port identifier of the ["URI origin"](https://www.rfc-editor.org/rfc/rfc9110.html#name-uri-origin) HTTP request is sent to. | `80`; `8080`; `443` | If not default (`80` for `http` scheme, `443` for `https`) |
 | `url.scheme` | string | The [URI scheme](https://www.rfc-editor.org/rfc/rfc3986#section-3.1) component identifying the used protocol. | `http`; `https`; `ftp` | Always |

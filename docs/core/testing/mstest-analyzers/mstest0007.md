@@ -14,7 +14,7 @@ dev_langs:
 - CSharp
 - VB
 ---
-# MSTEST0007: Ensure test attributes can only be set on methods marked with TestMethod attribute
+# MSTEST0007: [<TestAttribute>] can only be set on methods marked with [TestMethod]
 
 | Property                            | Value                                                                              |
 |-------------------------------------|------------------------------------------------------------------------------------|

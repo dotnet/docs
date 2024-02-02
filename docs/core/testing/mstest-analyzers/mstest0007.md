@@ -1,5 +1,5 @@
 ---
-title: "MSTEST0007: Ensure test attributes can only be set on methods marked with TestMethod attribute"
+title: "MSTEST0007: [<TestAttribute>] can only be set on methods marked with [TestMethod]"
 description: "Learn about code analysis rule MSTEST0007: Ensure test attributes can only be set on methods marked with TestMethod attribute"
 ms.date: 02/01/2024
 f1_keywords:

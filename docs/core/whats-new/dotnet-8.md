@@ -121,27 +121,7 @@ In addition, <xref:System.Text.Json.JsonSerializerOptions.AddContext%60%601?disp
 
 The following code shows an example where the properties from both the immediately implemented interface and its base interface are serialized.
 
-```csharp
-IDerived value = new DerivedImplement { Base = 0, Derived = 1 };
-JsonSerializer.Serialize(value);
-// {"Base":0,"Derived":1}
-
-public interface IBase
-{
-    public int Base { get; set; }
-}
-
-public interface IDerived : IBase
-{
-    public int Derived { get; set; }
-}
-
-public class DerivedImplement : IDerived
-{
-    public int Base { get; set; }
-    public int Derived { get; set; }
-}
-```
+:::code language="csharp" source="./snippets/dotnet-8/csharp/ConsoleApp/Serialization.cs" id="InterfaceHierarchies":::
 
 #### Naming policies
 
@@ -166,33 +146,7 @@ To opt into this support globally, set a new option, <xref:System.Text.Json.Json
 
 For example, consider the following code that deserializes into a `CustomerInfo` type that has two read-only properties.
 
-```csharp
-using System.Text.Json;
-
-CustomerInfo customer =
-    JsonSerializer.Deserialize<CustomerInfo>("""
-        {"Names":["John Doe"],"Company":{"Name":"Contoso"}}
-        """)!;
-
-Console.WriteLine(JsonSerializer.Serialize(customer));
-
-class CompanyInfo
-{
-    public required string Name { get; set; }
-    public string? PhoneNumber { get; set; }
-}
-
-[JsonObjectCreationHandling(JsonObjectCreationHandling.Populate)]
-class CustomerInfo
-{
-    // Both of these properties are read-only.
-    public List<string> Names { get; } = new();
-    public CompanyInfo Company { get; } = new()
-    {
-        Name = "N/A", PhoneNumber = "N/A"
-    };
-}
-```
+:::code language="csharp" source="./snippets/dotnet-8/csharp/ConsoleApp/Serialization.cs" id="ReadOnlyProperties":::
 
 Prior to .NET 8, the input values were ignored and the `Names` and `Company` properties retained their default values.
 
@@ -203,7 +157,7 @@ Prior to .NET 8, the input values were ignored and the `Names` and `Company` pro
 Now, the input values are used to populate the read-only properties during deserialization.
 
 ```output
-{"Names":["John Doe"],"Company":{"Name":"Contoso","PhoneNumber":null}}
+{"Names":["John Doe"],"Company":{"Name":"Contoso","PhoneNumber":"N/A"}}
 ```
 
 For more information about the *populate* deserialization behavior, see [Populate initialized properties](../../standard/serialization/system-text-json/populate-properties.md).
@@ -266,21 +220,7 @@ public partial class JsonArray
 
 You can opt non-public members into the serialization contract for a given type using <xref:System.Text.Json.Serialization.JsonIncludeAttribute> and <xref:System.Text.Json.Serialization.JsonConstructorAttribute> attribute annotations.
 
-```csharp
-string json = JsonSerializer.Serialize(new MyPoco(42));
-// {"X":42}
-
-JsonSerializer.Deserialize<MyPoco>(json);
-
-public class MyPoco
-{
-    [JsonConstructor]
-    internal MyPoco(int x) => X = x;
-
-    [JsonInclude]
-    internal int X { get; }
-}
-```
+:::code language="csharp" source="./snippets/dotnet-8/csharp/ConsoleApp/Serialization.cs" id="NonPublicMembers":::
 
 For more information, see [Use immutable types and non-public members and accessors](../../standard/serialization/system-text-json/immutability.md).
 
@@ -290,18 +230,7 @@ For more information, see [Use immutable types and non-public members and access
 
 The following code shows how you might use the new extension methods.
 
-```csharp
-const string RequestUri = "https://api.contoso.com/books";
-using var client = new HttpClient();
-IAsyncEnumerable<Book> books = client.GetFromJsonAsAsyncEnumerable<Book>(RequestUri);
-
-await foreach (Book book in books)
-{
-    Console.WriteLine($"Read book '{book.title}'");
-}
-
-public record Book(int id, string title, string author, int publishedYear);
-```
+:::code language="csharp" source="./snippets/dotnet-8/csharp/ConsoleApp/Serialization.cs" id="StreamingDeserialization":::
 
 #### WithAddedModifier extension method
 
@@ -364,38 +293,8 @@ The new <xref:System.TimeProvider> class and <xref:System.Threading.ITimer> inte
 
 The following code snippet shows some usage examples.
 
-```csharp
-// Get system time.
-DateTimeOffset utcNow = TimeProvider.System.GetUtcNow();
-DateTimeOffset localNow = TimeProvider.System.GetLocalNow();
-
-// Create a time provider that works with a
-// time zone that's different than the local time zone.
-private class ZonedTimeProvider : TimeProvider
-{
-    private TimeZoneInfo _zoneInfo;
-
-    public ZonedTimeProvider(TimeZoneInfo zoneInfo) : base()
-    {
-        _zoneInfo = zoneInfo ?? TimeZoneInfo.Local;
-    }
-
-    public override TimeZoneInfo LocalTimeZone => _zoneInfo;
-
-    public static TimeProvider FromLocalTimeZone(TimeZoneInfo zoneInfo) =>
-        new ZonedTimeProvider(zoneInfo);
-}
-
-// Create a timer using a time provider.
-ITimer timer = timeProvider.CreateTimer(
-    callBack, state, delay, Timeout.InfiniteTimeSpan);
-
-// Measure a period using the system time provider.
-long providerTimestamp1 = TimeProvider.System.GetTimestamp();
-long providerTimestamp2 = TimeProvider.System.GetTimestamp();
-
-var period = GetElapsedTime(providerTimestamp1, providerTimestamp2);
-```
+:::code language="csharp" source="./snippets/dotnet-8/csharp/ConsoleApp/TimeProvider.cs" id="GetElapsedTime":::
+:::code language="csharp" source="./snippets/dotnet-8/csharp/ConsoleApp/TimeProvider.cs" id="TimeProvider":::
 
 ### UTF8 improvements
 
@@ -542,25 +441,7 @@ The <xref:System.ComponentModel.DataAnnotations?displayProperty=fullName> namesp
 
 New APIs let you attach key-value pair tags to <xref:System.Diagnostics.Metrics.Meter> and <xref:System.Diagnostics.Metrics.Instrument> objects when you create them. Aggregators of published metric measurements can use the tags to differentiate the aggregated values.
 
-```csharp
-var options = new MeterOptions("name")
-{
-    Version = "version",
-    // Attach these tags to the created meter
-    Tags = new TagList()
-    {
-        { "MeterKey1", "MeterValue1" },
-        { "MeterKey2", "MeterValue2" }
-    }
-};
-
-Meter meter = meterFactory.Create(options);
-
-Instrument instrument = meter.CreateCounter<int>(
-    "counter", null, null, new TagList() { { "counterKey1", "counterValue1" } }
-);
-instrument.Add(1);
-```
+:::code language="csharp" source="./snippets/dotnet-8/csharp/WebSDK/Metrics.cs" id="MetricsTags":::
 
 The new APIs include:
 
@@ -676,44 +557,7 @@ Keyed dependency injection (DI) services provide a means for registering and ret
 
 The following example shows you how to use keyed DI services.
 
-```csharp
-var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddSingleton<BigCacheConsumer>();
-builder.Services.AddSingleton<SmallCacheConsumer>();
-builder.Services.AddKeyedSingleton<ICache, BigCache>("big");
-builder.Services.AddKeyedSingleton<ICache, SmallCache>("small");
-var app = builder.Build();
-app.MapGet("/big", (BigCacheConsumer data) => data.GetData());
-app.MapGet("/small", (SmallCacheConsumer data) => data.GetData());
-app.MapGet("/big-cache", ([FromKeyedServices("big")] ICache cache) => cache.Get("data"));
-app.MapGet("/small-cache", (HttpContext httpContext) => httpContext.RequestServices.GetRequiredKeyedService<ICache>("small").Get("data"));
-app.Run();
-
-class BigCacheConsumer([FromKeyedServices("big")] ICache cache)
-{
-    public object? GetData() => cache.Get("data");
-}
-
-class SmallCacheConsumer(IServiceProvider serviceProvider)
-{
-    public object? GetData() => serviceProvider.GetRequiredKeyedService<ICache>("small").Get("data");
-}
-
-public interface ICache
-{
-    object Get(string key);
-}
-
-public class BigCache : ICache
-{
-    public object Get(string key) => $"Resolving {key} from big cache.";
-}
-
-public class SmallCache : ICache
-{
-    public object Get(string key) => $"Resolving {key} from small cache.";
-}
-```
+:::code language="csharp" source="./snippets/dotnet-8/csharp/WebSDK/KeyedDIServices.cs":::
 
 For more information, see [dotnet/runtime#64427](https://github.com/dotnet/runtime/issues/64427).
 
@@ -730,30 +574,7 @@ These methods run before and after the existing points respectively.
 
 The following example shows how to use the new APIs.
 
-```csharp
-using Microsoft.Extensions.Hosting;
-
-IHostBuilder hostBuilder = new HostBuilder();
-hostBuilder.ConfigureServices(services =>
-{
-    services.AddHostedService<MyService>();
-});
-
-using (IHost host = hostBuilder.Build())
-{
-    await host.StartAsync();
-}
-
-public class MyService : IHostedLifecycleService
-{
-    public Task StartingAsync(CancellationToken cancellationToken) => /* add logic here */ Task.CompletedTask;
-    public Task StartAsync(CancellationToken cancellationToken) => /* add logic here */ Task.CompletedTask;
-    public Task StartedAsync(CancellationToken cancellationToken) => /* add logic here */ Task.CompletedTask;
-    public Task StopAsync(CancellationToken cancellationToken) => /* add logic here */ Task.CompletedTask;
-    public Task StoppedAsync(CancellationToken cancellationToken) => /* add logic here */ Task.CompletedTask;
-    public Task StoppingAsync(CancellationToken cancellationToken) => /* add logic here */ Task.CompletedTask;
-}
-```
+:::code language="csharp" source="./snippets/dotnet-8/csharp/ConsoleApp/HostedLifecycleServices.cs":::
 
 For more information, see [dotnet/runtime#86511](https://github.com/dotnet/runtime/issues/86511).
 
@@ -761,53 +582,13 @@ For more information, see [dotnet/runtime#86511](https://github.com/dotnet/runti
 
 #### Source generator
 
-To reduce startup overhead and improve validation feature set, we've introduced a source code generator that implements the validation logic. The following code shows example models and validator classes.
+To reduce startup overhead and improve the validation feature set, we've introduced a source-code generator that implements the validation logic. The following code shows example models and validator classes.
 
-```csharp
-public class FirstModelNoNamespace
-{
-    [Required]
-    [MinLength(5)]
-    public string P1 { get; set; } = string.Empty;
-
-    [Microsoft.Extensions.Options.ValidateObjectMembers(
-        typeof(SecondValidatorNoNamespace))]
-    public SecondModelNoNamespace? P2 { get; set; }
-}
-
-public class SecondModelNoNamespace
-{
-    [Required]
-    [MinLength(5)]
-    public string P4 { get; set; } = string. Empty;
-}
-
-[OptionsValidator]
-public partial class FirstValidatorNoNamespace
-    : IValidateOptions<FirstModelNoNamespace>
-{
-}
-
-[OptionsValidator]
-public partial class SecondValidatorNoNamespace
-    : IValidateOptions<SecondModelNoNamespace>
-{
-}
-```
+:::code language="csharp" source="./snippets/dotnet-8/csharp/WebSDK/Validation.cs" id="ValidatorClasses":::
 
 If your app uses dependency injection, you can inject the validation as shown in the following example code.
 
-```csharp
-var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddControllersWithViews();
-builder.Services.Configure<FirstModelNoNamespace>(
-    builder.Configuration.GetSection(...));
-
-builder.Services.AddSingleton<
-    IValidateOptions<FirstModelNoNamespace>, FirstValidatorNoNamespace>();
-builder.Services.AddSingleton<
-    IValidateOptions<SecondModelNoNamespace>, SecondValidatorNoNamespace>();
-```
+:::code language="csharp" source="./snippets/dotnet-8/csharp/WebSDK/Validation.cs" id="InjectValidation":::
 
 #### ValidateOptionsResultBuilder type
 
@@ -815,18 +596,7 @@ builder.Services.AddSingleton<
 
 The following code snippet shows an example usage of <xref:Microsoft.Extensions.Options.ValidateOptionsResultBuilder>.
 
-```csharp
-ValidateOptionsResultBuilder builder = new();
-builder.AddError("Error: invalid operation code");
-builder.AddResult(ValidateOptionsResult.Fail("Invalid request parameters"));
-builder.AddError("Malformed link", "Url");
-
-// Build ValidateOptionsResult object has accumulating multiple errors.
-ValidateOptionsResult result = builder.Build();
-
-// Reset the builder to allow using it in new validation operation.
-builder.Clear();
-```
+:::code language="csharp" source="./snippets/dotnet-8/csharp/WebSDK/ResultBuilder.cs" id="BuildResults":::
 
 ### LoggerMessageAttribute constructors
 
@@ -868,31 +638,7 @@ Meter meter = meterFactory.Create(options);
 
 The new <xref:Microsoft.Extensions.Diagnostics.Metrics.Testing.MetricCollector%601> class lets you record metric measurements along with timestamps. Additionally, the class offers the flexibility to use a time provider of your choice for accurate timestamp generation.
 
-```csharp
-const string CounterName = "MyCounter";
-
-var now = DateTimeOffset.Now;
-
-var timeProvider = new FakeTimeProvider(now);
-using var meter = new Meter(Guid.NewGuid().ToString());
-var counter = meter.CreateCounter<long>(CounterName);
-using var collector = new MetricCollector<long>(counter, timeProvider);
-
-Assert.Empty(collector.GetMeasurementSnapshot());
-Assert.Null(collector.LastMeasurement);
-
-counter. Add(3);
-
-// Verify the update was recorded.
-Assert.Equal(counter, collector.Instrument);
-Assert.NotNull(collector.LastMeasurement);
-
-Assert.Single(collector.GetMeasurementSnapshot());
-Assert.Same(collector.GetMeasurementSnapshot().Last(), collector.LastMeasurement);
-Assert.Equal(3, collector.LastMeasurement.Value);
-Assert.Empty(collector.LastMeasurement.Tags);
-Assert.Equal(now, collector.LastMeasurement.Timestamp);
-```
+:::code language="csharp" source="./snippets/dotnet-8/csharp/ConsoleApp/MetricCollector.cs" id="MetricCollector":::
 
 ### System.Numerics.Tensors.TensorPrimitives
 
@@ -945,42 +691,7 @@ No source code changes are needed to use the generator. It's enabled by default 
 
 The following code shows an example of invoking the binder.
 
-```csharp
-using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-
-WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
-IConfigurationSection section = builder.Configuration.GetSection("MyOptions");
-
-// !! Configure call - to be replaced with source-gen'd implementation
-builder.Services.Configure<MyOptions>(section);
-
-// !! Get call - to be replaced with source-gen'd implementation
-MyOptions options0 = section.Get<MyOptions>();
-
-// !! Bind call - to be replaced with source-gen'd implementation
-MyOptions options1 = new MyOptions();
-section.Bind(options1);
-
-WebApplication app = builder.Build();
-app.MapGet("/", () => "Hello World!");
-app.Run();
-
-public class MyOptions
-{
-    public int A { get; set; }
-    public string S { get; set; }
-    public byte[] Data { get; set; }
-    public Dictionary<string, string> Values { get; set; }
-    public List<MyClass> Values2 { get; set; }
-}
-
-public class MyClass
-{
-    public int SomethingElse { get; set; }
-}
-```
+:::code language="csharp" source="./snippets/dotnet-8/csharp/WebSDK/ConfigBindingSG.cs":::
 
 ## Reflection improvements
 
@@ -993,55 +704,7 @@ The new functionality is currently implemented only in the CoreCLR runtime and <
 
 New APIs have been added to <xref:System.Type?displayProperty=fullName>, such as <xref:System.Type.IsFunctionPointer>, and to <xref:System.Reflection.PropertyInfo?displayProperty=fullName>, <xref:System.Reflection.FieldInfo?displayProperty=fullName>, and <xref:System.Reflection.ParameterInfo?displayProperty=fullName>. The following code shows how to use some of the new APIs for reflection.
 
-```csharp
-// Sample class that contains a function pointer field.
-public unsafe class UClass
-{
-    public delegate* unmanaged[Cdecl, SuppressGCTransition]<in int, void> _fp;
-}
-
-// ...
-
-FieldInfo fieldInfo = typeof(UClass).GetField(nameof(UClass._fp));
-
-// Obtain the function pointer type from a field.
-Type fpType = fieldInfo.FieldType;
-
-// New methods to determine if a type is a function pointer.
-Console.WriteLine(
-    $"IsFunctionPointer: {fpType.IsFunctionPointer}");
-Console.WriteLine(
-    $"IsUnmanagedFunctionPointer: {fpType.IsUnmanagedFunctionPointer}");
-
-// New methods to obtain the return and parameter types.
-Console.WriteLine($"Return type: {fpType.GetFunctionPointerReturnType()}");
-
-foreach (Type parameterType in fpType.GetFunctionPointerParameterTypes())
-{
-    Console.WriteLine($"Parameter type: {parameterType}");
-}
-
-// Access to custom modifiers and calling conventions requires a "modified type".
-Type modifiedType = fieldInfo.GetModifiedFieldType();
-
-// A modified type forwards most members to its underlying type.
-Type normalType = modifiedType.UnderlyingSystemType;
-
-// New method to obtain the calling conventions.
-foreach (Type callConv in modifiedType.GetFunctionPointerCallingConventions())
-{
-    Console.WriteLine($"Calling convention: {callConv}");
-}
-
-// New method to obtain the custom modifiers.
-var modifiers =
-    modifiedType.GetFunctionPointerParameterTypes()[0].GetRequiredCustomModifiers();
-
-foreach (Type modreq in modifiers)
-{
-    Console.WriteLine($"Required modifier for first parameter: {modreq}");
-}
-```
+:::code language="csharp" source="./snippets/dotnet-8/csharp/ConsoleApp/FunctionPointerReflection.cs":::
 
 The previous example produces the following output:
 
@@ -1253,7 +916,7 @@ The [template engine](https://github.com/dotnet/templating) provides a more secu
 
   `dotnet new install console --add-source "http://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-public/nuget/v3/index.json"`
 
-   You can override this limitation by using the `--force` flag.
+  You can override this limitation by using the `--force` flag.
 
 - For `dotnet new`, `dotnet new install`, and `dotnet new update`, check for known vulnerabilities in the template package. If vulnerabilities are found and you wish to proceed, you must use the `--force` flag.
 
@@ -1404,23 +1067,7 @@ You can specify either a folder name or a path with a specific file name.
 
 .NET 8 includes a new source generator that supports interoperating with COM interfaces. You can use the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute> to mark an interface as a COM interface for the source generator. The source generator will then generate code to enable calling from C# code to unmanaged code. It also generates code to enable calling from unmanaged code into C#. This source generator integrates with <xref:System.Runtime.InteropServices.LibraryImportAttribute>, and you can use types with the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute> as parameters and return types in `LibraryImport`-attributed methods.
 
-```csharp
-using System.Runtime.InteropServices;
-using System.Runtime.InteropServices.Marshalling;
-
-[GeneratedComInterface]
-[Guid("5401c312-ab23-4dd3-aa40-3cb4b3a4683e")]
-interface IComInterface
-{
-    void DoWork();
-}
-
-internal class MyNativeLib
-{
-    [LibraryImport(nameof(MyNativeLib))]
-    public static partial void GetComInterface(out IComInterface comInterface);
-}
-```
+:::code language="csharp" source="./snippets/dotnet-8/csharp/ConsoleApp/Interop.cs":::
 
 The source generator also supports the new <xref:System.Runtime.InteropServices.Marshalling.GeneratedComClassAttribute> attribute to enable you to pass types that implement interfaces with the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute> attribute to unmanaged code. The source generator will generate the code necessary to expose a COM object that implements the interfaces and forwards calls to the managed implementation.
 

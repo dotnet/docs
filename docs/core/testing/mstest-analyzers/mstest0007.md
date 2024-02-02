@@ -19,7 +19,7 @@ dev_langs:
 | Property                            | Value                                                                              |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | **Rule ID**                         | MSTEST0007                                                                         |
-| **Title**                           | Ensure test attributes can only be set on methods marked with TestMethod attribute |
+| **Title**                           | [<TestAttribute>] can only be set on methods marked with [TestMethod] |
 | **Category**                        | Usage                                                                              |
 | **Fix is breaking or non-breaking** | Non-breaking                                                                       |
 | **Enabled by default**              | Yes                                                                                |

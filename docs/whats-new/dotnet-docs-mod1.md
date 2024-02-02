@@ -29,7 +29,7 @@ Welcome to what's new in the .NET docs for January 2024. This article lists some
 
 ### New articles
 
-- [MSTest design rules](../core/testing/mstest-analyzers/overview.md)
+- [MSTest design rules](../core/testing/mstest-analyzers/design-rules/overview.md)
 - [MSTest performance rules](../core/testing/mstest-analyzers/performance-rules.md)
 - [MSTest usage rules](../core/testing/mstest-analyzers/usage-rules.md)
 - [Set assembly attributes in a project file](../standard/assembly/set-attributes-project-file.md)
@@ -61,7 +61,7 @@ Welcome to what's new in the .NET docs for January 2024. This article lists some
 - [Build apps with .NET](../core/apps.md)
 - [Use runsettings with MSTest runner](../core/testing/unit-testing-mstest-runner-runsettings.md)
 - [Use MSTest runner with `dotnet test`](../core/testing/unit-testing-mstest-runner-integrations.md)
-- [MSTest code analysis](../core/testing/unit-testing-mstest-analyzers.md)
+- [MSTest code analysis](../core/testing/testing-mstest-analyzers/overview.md)
 
 ### Updated articles
 

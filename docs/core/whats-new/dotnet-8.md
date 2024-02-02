@@ -441,7 +441,7 @@ The <xref:System.ComponentModel.DataAnnotations?displayProperty=fullName> namesp
 
 New APIs let you attach key-value pair tags to <xref:System.Diagnostics.Metrics.Meter> and <xref:System.Diagnostics.Metrics.Instrument> objects when you create them. Aggregators of published metric measurements can use the tags to differentiate the aggregated values.
 
-:::code language="csharp" source="./snippets/dotnet-8/csharp/WebSDK/Metrics.cs" id="MetricsTags":::
+:::code language="csharp" source="./snippets/dotnet-8/csharp/ConsoleApp/Metrics.cs" id="MetricsTags":::
 
 The new APIs include:
 

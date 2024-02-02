@@ -32,7 +32,17 @@ A method not marked with `[TestMethod]` attribute has one or more test attribute
 
 ## Rule description
 
-Test attributes such as `[Owner]`, `[Priority]`, `[TestProperty]`, `[WorkItem]`, `[Description]`, `[ExpectedException]`, `[CssIteration]` and `[CssProjectStructure]` should only be applied on methods marked with `[TestMethod]` attribute.
+Test attributes:
+- `[CssIteration]`
+- `[CssProjectStructure]` 
+- `[Description]`
+- `[ExpectedException]`
+- `[Owner]`
+- `[Priority]`
+- `[TestProperty]`
+- `[WorkItem]`
+
+should only be applied on methods marked with `[TestMethod]` attribute.
 
 ## How to fix violations
 

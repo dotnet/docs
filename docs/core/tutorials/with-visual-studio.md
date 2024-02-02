@@ -6,7 +6,7 @@ zone_pivot_groups: dotnet-version
 dev_langs:
   - "csharp"
   - "vb"
-ms.custom: "vs-dotnet,contperf-fy21q3"
+ms.custom: vs-dotnet
 ---
 # Tutorial: Create a .NET console application using Visual Studio
 

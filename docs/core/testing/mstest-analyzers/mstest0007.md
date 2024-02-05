@@ -31,14 +31,14 @@ A method that's not marked with <xref:Microsoft.VisualStudio.TestTools.UnitTesti
 
 The following test attributes should only be applied on methods marked with the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> attribute:
 
-- `[CssIteration]`
-- `[CssProjectStructure]`
-- `[Description]`
-- `[ExpectedException]`
-- `[Owner]`
-- `[Priority]`
-- `[TestProperty]`
-- `[WorkItem]`
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.CssIterationAttribute>
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.CssProjectStructureAttribute>
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute>
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute>
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.WorkItemAttribute>
 
 ## How to fix violations
 

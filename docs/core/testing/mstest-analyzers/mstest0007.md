@@ -43,7 +43,6 @@ The following test attributes should only be applied on methods marked with the 
 - `[TestProperty]`
 - `[WorkItem]`
 
-should only be applied on methods marked with `[TestMethod]` attribute.
 
 ## How to fix violations
 

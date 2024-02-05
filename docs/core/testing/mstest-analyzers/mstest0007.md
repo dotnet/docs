@@ -28,7 +28,7 @@ dev_langs:
 
 ## Cause
 
-A method not marked with `[TestMethod]` attribute has one or more test attributes applied to it.
+A method that's not marked with <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> has one or more test attributes applied to it.
 
 ## Rule description
 

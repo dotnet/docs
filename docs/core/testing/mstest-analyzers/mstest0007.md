@@ -13,15 +13,15 @@ ms.author: codrinpoienaru
 ---
 # MSTEST0007: Use test attributes only on test methods
 
-| Property                            | Value                                                                              |
-|-------------------------------------|------------------------------------------------------------------------------------|
-| **Rule ID**                         | MSTEST0007                                                                         |
-| **Title**                           | Use test attributes only on test methods                                           |
-| **Category**                        | Usage                                                                              |
-| **Fix is breaking or non-breaking** | Non-breaking                                                                       |
-| **Enabled by default**              | Yes                                                                                |
-| **Default severity**                | Info                                                                               |
-| **Introduced in version**           | 3.3.0                                                                              |
+| Property                            | Value                                    |
+|-------------------------------------|------------------------------------------|
+| **Rule ID**                         | MSTEST0007                               |
+| **Title**                           | Use test attributes only on test methods |
+| **Category**                        | Usage                                    |
+| **Fix is breaking or non-breaking** | Non-breaking                             |
+| **Enabled by default**              | Yes                                      |
+| **Default severity**                | Info                                     |
+| **Introduced in version**           | 3.3.0                                    |
 
 ## Cause
 

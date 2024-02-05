@@ -49,4 +49,4 @@ To fix a violation of this rule, either convert the method on which you applied 
 
 ## When to suppress warnings
 
-Do not suppress a warning from this rule. Ignoring this rule will result in your attributes being ignored since they were designed only for use in a test context.
+Do not suppress a warning from this rule. If you ignore this rule, your attributes will be ignored since they are designed for use only in a test context.

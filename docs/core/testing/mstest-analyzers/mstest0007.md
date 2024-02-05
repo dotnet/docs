@@ -1,5 +1,5 @@
 ---
-title: "MSTEST0007: [<TestAttribute>] can only be set on methods marked with [TestMethod]"
+title: "MSTEST0007: Use test attributes only on test methods"
 description: "Learn about code analysis rule MSTEST0007: Ensure test attributes are set only on methods marked with the `TestMethod` attribute"
 ms.date: 02/01/2024
 f1_keywords:
@@ -11,12 +11,12 @@ helpviewer_keywords:
 author: cvpoienaru
 ms.author: codrinpoienaru
 ---
-# MSTEST0007: `[<TestAttribute>]` can only be set on methods marked with `[TestMethod]`
+# MSTEST0007: Use test attributes only on test methods
 
 | Property                            | Value                                                                              |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | **Rule ID**                         | MSTEST0007                                                                         |
-| **Title**                           | `[<TestAttribute>]` can only be set on methods marked with `[TestMethod]`          |
+| **Title**                           | Use test attributes only on test methods                                           |
 | **Category**                        | Usage                                                                              |
 | **Fix is breaking or non-breaking** | Non-breaking                                                                       |
 | **Enabled by default**              | Yes                                                                                |

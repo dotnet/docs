@@ -1,6 +1,7 @@
 name: "New article request"
 description: Request a new article on a topic or concept that you can't find in our current docs.
 title: "[New article]: "
+labels: ["doc-idea"]
 body:
   - type: markdown
     attributes:
@@ -18,16 +19,16 @@ body:
   - type: markdown
     attributes:
       value: >
-        "Propose a location for the article. Use the `/` character to 
+        "Propose a location for the article. Use the `/` character to
         define 'sub-folders' in the table of contents. Start with a top-level
         guide, and follow through to the parent folder for the new article."
   - type: input
     id: toc-item
     attributes:
-      label: Location in table of Contents.
+      label: Location in table of contents.
       description: Give some indication for the location in the table of contents.
     validations:
-      required: true
+      required: false
   - type: markdown
     attributes:
       value: >
@@ -49,13 +50,13 @@ body:
     id: abstract
     attributes:
       label: Article abstract
-      description: Write a *brief* abstract for the article. 
+      description: Write a *brief* abstract for the article.
     validations:
       required: true
   - type: markdown
     attributes:
       value: >
-        "Tell us about searches you did looking for this inforamtion. This helps us
+        "Tell us about searches you did looking for this information. This helps us
         in two important ways. First, if the information exists, we can improve
         the findability of the article for those search ideas. If the article
         doesn't exist, this will help us make sure readers find it once it's written."
@@ -64,6 +65,6 @@ body:
     attributes:
       label: Relevant searches
       description: >
-        What search terms did you use to look for this information? 
+        What search terms did you use to look for this information?
     validations:
-      required: true
+      required: false

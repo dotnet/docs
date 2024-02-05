@@ -2,7 +2,7 @@
 title: ASP.NET Core metrics
 description: Review the metrics available for ASP.NET Core
 ms.topic: reference
-ms.date: 11/02/2023
+ms.date: 2/01/2024
 ---
 
 # ASP.NET Core metrics
@@ -48,6 +48,9 @@ The time ends when:
 - All response data has been sent.
 - The context data structures for the request are being disposed.
 
+When using OpenTelemetry, the default buckets for this metric are set to [ 0.005, 0.01, 0.025, 0.05, 0.075, 0.1, 0.25, 0.5, 0.75, 1, 2.5, 5, 7.5, 10 ].
+
+<!-- Once we migrate this doc to https://github.com/dotnet/AspNetCore.Docs we can remove the following version info -->
 Available starting in: .NET 8.0.
 
 ##### Metric: `http.server.active_requests`
@@ -255,6 +258,8 @@ Available starting in: .NET 8.0.
 | `server.port` | int | Server port number | `80`; `8080`; `443` | If the transport is `tcp` or `udp`. |
 | `tls.protocol.version` | string | TLS protocol version. | `1.2`; `1.3` | If the connection is secured with TLS. |
 
+As this metric is tracking the connection duration, and ideally http connections are used for multiple requests, the buckets should be longer than those used for request durations. For example, using [ 0.01, 0.02, 0.05, 0.1, 0.2, 0.5, 1, 2, 5, 10, 30, 60, 120, 300] provides an upper bucket of 5 mins.
+
 Available starting in: .NET 8.0.
 
 ##### Metric: `kestrel.rejected_connections`
@@ -338,6 +343,8 @@ Available starting in: .NET 8.0.
 | `server.port` | int | Server port number | `80`; `8080`; `443` | If the transport is `tcp` or `udp`. |
 | `tls.protocol.version` | string | TLS protocol version. | `1.2`; `1.3` | If the connection is secured with TLS. |
 
+When using OpenTelemetry, the default buckets for this metic are set to [ 0.005, 0.01, 0.025, 0.05, 0.075, 0.1, 0.25, 0.5, 0.75, 1, 2.5, 5, 7.5, 10 ].
+
 Available starting in: .NET 8.0.
 
 ##### Metric: `kestrel.active_tls_handshakes`
@@ -372,6 +379,24 @@ The `Microsoft.AspNetCore.Http.Connections` metrics report connection informatio
 |---|---|---|---|---|
 | `signalr.connection.status` | string | SignalR HTTP connection closure status. | `app_shutdown`; `timeout` | Always |
 | `signalr.transport` | string | [SignalR transport type](https://github.com/dotnet/aspnetcore/blob/main/src/SignalR/docs/specs/TransportProtocols.md) | `web_sockets`; `long_polling` | Always |
+
+Available starting in: .NET 8.0.
+
+| Value  | Description |
+|---|---|
+| `normal_closure` | The connection was closed normally. |
+| `timeout` | The connection was closed due to a timeout. |
+| `app_shutdown` | The connection was closed because the app is shutting down. |
+
+`signalr.transport` is one of the following:
+
+| Value  | Protocol |
+|---|---|
+| `server_sent_events` | [server-sent events](https://developer.mozilla.org/docs/Web/API/Server-sent_events/Using_server-sent_events)  |
+| `long_polling` | [Long Polling](/archive/msdn-magazine/2012/april/cutting-edge-long-polling-and-signalr) |
+| `web_sockets` | [WebSocket](https://datatracker.ietf.org/doc/html/rfc6455) |
+
+As this metric is tracking the connection duration, and ideally SignalR connections are durable, the buckets should be longer than those used for request durations. For example, using [0, 0.01, 0.02, 0.05, 0.1, 0.2, 0.5, 1, 2, 5, 10, 30, 60, 120, 300] provides an upper bucket of 5 mins.
 
 Available starting in: .NET 8.0.
 

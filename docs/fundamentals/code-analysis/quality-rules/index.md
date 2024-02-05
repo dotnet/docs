@@ -1,9 +1,7 @@
 ---
 title: Code quality rules overview
 description: Learn about all of the available code quality rules for code analysis.
-ms.date: 11/16/2023
-author: mikadumont
-ms.author: midumont
+ms.date: 01/31/2024
 ---
 # Code quality rules
 
@@ -234,6 +232,7 @@ The following table lists code quality analysis rules.
 > | [CA2259: Ensure `ThreadStatic` is only used with static fields](ca2259.md) | <xref:System.ThreadStaticAttribute> only affects `static` (`Shared` in Visual Basic) fields. When applied to instance fields, the attribute has no impact on behavior. |
 > | [CA2260: Implement generic math interfaces correctly](ca2260.md) | Generic math interfaces require the derived type itself to be used for the self-recurring type parameter. |
 > | [CA2261: Do not use `ConfigureAwaitOptions.SuppressThrowing` with `Task<TResult>`](ca2261.md) | The `ConfigureAwaitOptions.SuppressThrowing` option isn't supported by the generic `Task<TResult>`, since that might lead to returning an invalid `TResult`. |
+> | [CA2262: Set `MaxResponseHeadersLength` properly](ca2262.md) | Make sure the `MaxResponseHeadersLength` value is provided correctly. This value is measured in kilobytes. |
 > | [CA2300: Do not use insecure deserializer BinaryFormatter](ca2300.md) | Insecure deserializers are vulnerable when deserializing untrusted data. An attacker could modify the serialized data to include unexpected types to inject objects with malicious side effects. |
 > | [CA2301: Do not call BinaryFormatter.Deserialize without first setting BinaryFormatter.Binder](ca2301.md) | Insecure deserializers are vulnerable when deserializing untrusted data. An attacker could modify the serialized data to include unexpected types to inject objects with malicious side effects. |
 > | [CA2302: Ensure BinaryFormatter.Binder is set before calling BinaryFormatter.Deserialize](ca2302.md) | Insecure deserializers are vulnerable when deserializing untrusted data. An attacker could modify the serialized data to include unexpected types to inject objects with malicious side effects. |

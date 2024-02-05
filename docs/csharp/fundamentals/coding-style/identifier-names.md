@@ -55,7 +55,7 @@ In the following examples, guidance pertaining to elements marked `public` is al
 
 ### Pascal case
 
-Use pascal casing ("PascalCasing") when naming a `class`, `Interface`, `struct`, or `delegate` type.
+Use pascal casing ("PascalCasing") when naming a `class`, `interface`, `struct`, or `delegate` type.
 
 ```csharp
 public class DataService

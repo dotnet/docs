@@ -10,9 +10,6 @@ helpviewer_keywords:
 - MSTEST0007
 author: cvpoienaru
 ms.author: codrinpoienaru
-dev_langs:
-- CSharp
-- VB
 ---
 # MSTEST0007: `[<TestAttribute>]` can only be set on methods marked with `[TestMethod]`
 

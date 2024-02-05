@@ -43,7 +43,6 @@ The following test attributes should only be applied on methods marked with the 
 - `[TestProperty]`
 - `[WorkItem]`
 
-
 ## How to fix violations
 
 To fix a violation of this rule, either convert the method on which you applied one or more test attributes to a test method by setting the `[TestMethod]` attribute, or remove the test attribute(s) altogether.

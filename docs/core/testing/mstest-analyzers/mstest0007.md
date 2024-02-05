@@ -32,7 +32,7 @@ A method not marked with `[TestMethod]` attribute has one or more test attribute
 
 ## Rule description
 
-Test attributes:
+The following test attributes should only be applied on methods marked with the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> attribute:
 
 - `[CssIteration]`
 - `[CssProjectStructure]`

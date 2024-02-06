@@ -166,7 +166,14 @@ items:
   - name: .NET 8
     items:
     - name: What's new
-      href: ../core/whats-new/dotnet-8.md
+      items:
+      - name: Overview
+        href: ../core/whats-new/dotnet-8.md
+        displayName: whats new, what's new
+      - name: Runtime
+        href: ../core/whats-new/dotnet-8/runtime.md
+      - name: SDK and containers
+        href: ../core/whats-new/dotnet-8/sdk-containers.md
     - name: Breaking changes
       href: ../core/compatibility/8.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
   - name: .NET 7

@@ -9,6 +9,8 @@ author: gewarren
 ---
 # What's new in the .NET 8 runtime
 
+This article describes new features in the .NET runtime for .NET 8.
+
 ## Globalization
 
 ### HybridGlobalization mode on iOS/tvOS/MacCatalyst
@@ -36,7 +38,7 @@ To make sure your application isn't affected, see [Behavioral differences](https
 
 .NET 8 includes a new source generator that supports interoperating with COM interfaces. You can use the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute> to mark an interface as a COM interface for the source generator. The source generator will then generate code to enable calling from C# code to unmanaged code. It also generates code to enable calling from unmanaged code into C#. This source generator integrates with <xref:System.Runtime.InteropServices.LibraryImportAttribute>, and you can use types with the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute> as parameters and return types in `LibraryImport`-attributed methods.
 
-:::code language="csharp" source="./snippets/dotnet-8/csharp/ConsoleApp/Interop.cs":::
+:::code language="csharp" source="../snippets/dotnet-8/csharp/ConsoleApp/Interop.cs":::
 
 The source generator also supports the new <xref:System.Runtime.InteropServices.Marshalling.GeneratedComClassAttribute> attribute to enable you to pass types that implement interfaces with the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute> attribute to unmanaged code. The source generator will generate the code necessary to expose a COM object that implements the interfaces and forwards calls to the managed implementation.
 
@@ -126,7 +128,7 @@ No source code changes are needed to use the generator. It's enabled by default 
 
 The following code shows an example of invoking the binder.
 
-:::code language="csharp" source="./snippets/dotnet-8/csharp/WebSDK/ConfigBindingSG.cs":::
+:::code language="csharp" source="../snippets/dotnet-8/csharp/WebSDK/ConfigBindingSG.cs":::
 
 ## Reflection improvements
 
@@ -139,7 +141,7 @@ The new functionality is currently implemented only in the CoreCLR runtime and <
 
 New APIs have been added to <xref:System.Type?displayProperty=fullName>, such as <xref:System.Type.IsFunctionPointer>, and to <xref:System.Reflection.PropertyInfo?displayProperty=fullName>, <xref:System.Reflection.FieldInfo?displayProperty=fullName>, and <xref:System.Reflection.ParameterInfo?displayProperty=fullName>. The following code shows how to use some of the new APIs for reflection.
 
-:::code language="csharp" source="./snippets/dotnet-8/csharp/ConsoleApp/FunctionPointerReflection.cs":::
+:::code language="csharp" source="../snippets/dotnet-8/csharp/ConsoleApp/FunctionPointerReflection.cs":::
 
 The previous example produces the following output:
 
@@ -255,7 +257,7 @@ In addition, <xref:System.Text.Json.JsonSerializerOptions.AddContext%60%601?disp
 
 The following code shows an example where the properties from both the immediately implemented interface and its base interface are serialized.
 
-:::code language="csharp" source="./snippets/dotnet-8/csharp/ConsoleApp/Serialization.cs" id="InterfaceHierarchies":::
+:::code language="csharp" source="../snippets/dotnet-8/csharp/ConsoleApp/Serialization.cs" id="InterfaceHierarchies":::
 
 #### Naming policies
 
@@ -280,7 +282,7 @@ To opt into this support globally, set a new option, <xref:System.Text.Json.Json
 
 For example, consider the following code that deserializes into a `CustomerInfo` type that has two read-only properties.
 
-:::code language="csharp" source="./snippets/dotnet-8/csharp/ConsoleApp/Serialization.cs" id="ReadOnlyProperties":::
+:::code language="csharp" source="../snippets/dotnet-8/csharp/ConsoleApp/Serialization.cs" id="ReadOnlyProperties":::
 
 Prior to .NET 8, the input values were ignored and the `Names` and `Company` properties retained their default values.
 
@@ -354,7 +356,7 @@ public partial class JsonArray
 
 You can opt non-public members into the serialization contract for a given type using <xref:System.Text.Json.Serialization.JsonIncludeAttribute> and <xref:System.Text.Json.Serialization.JsonConstructorAttribute> attribute annotations.
 
-:::code language="csharp" source="./snippets/dotnet-8/csharp/ConsoleApp/Serialization.cs" id="NonPublicMembers":::
+:::code language="csharp" source="../snippets/dotnet-8/csharp/ConsoleApp/Serialization.cs" id="NonPublicMembers":::
 
 For more information, see [Use immutable types and non-public members and accessors](../../../standard/serialization/system-text-json/immutability.md).
 
@@ -364,7 +366,7 @@ For more information, see [Use immutable types and non-public members and access
 
 The following code shows how you might use the new extension methods.
 
-:::code language="csharp" source="./snippets/dotnet-8/csharp/ConsoleApp/Serialization.cs" id="StreamingDeserialization":::
+:::code language="csharp" source="../snippets/dotnet-8/csharp/ConsoleApp/Serialization.cs" id="StreamingDeserialization":::
 
 #### WithAddedModifier extension method
 
@@ -427,8 +429,8 @@ The new <xref:System.TimeProvider> class and <xref:System.Threading.ITimer> inte
 
 The following code snippet shows some usage examples.
 
-:::code language="csharp" source="./snippets/dotnet-8/csharp/ConsoleApp/TimeProvider.cs" id="GetElapsedTime":::
-:::code language="csharp" source="./snippets/dotnet-8/csharp/ConsoleApp/TimeProvider.cs" id="TimeProvider":::
+:::code language="csharp" source="../snippets/dotnet-8/csharp/ConsoleApp/TimeProvider.cs" id="GetElapsedTime":::
+:::code language="csharp" source="../snippets/dotnet-8/csharp/ConsoleApp/TimeProvider.cs" id="TimeProvider":::
 
 ### UTF8 improvements
 
@@ -575,7 +577,7 @@ The <xref:System.ComponentModel.DataAnnotations?displayProperty=fullName> namesp
 
 New APIs let you attach key-value pair tags to <xref:System.Diagnostics.Metrics.Meter> and <xref:System.Diagnostics.Metrics.Instrument> objects when you create them. Aggregators of published metric measurements can use the tags to differentiate the aggregated values.
 
-:::code language="csharp" source="./snippets/dotnet-8/csharp/ConsoleApp/Metrics.cs" id="MetricsTags":::
+:::code language="csharp" source="../snippets/dotnet-8/csharp/ConsoleApp/Metrics.cs" id="MetricsTags":::
 
 The new APIs include:
 
@@ -691,7 +693,7 @@ Keyed dependency injection (DI) services provide a means for registering and ret
 
 The following example shows you how to use keyed DI services.
 
-:::code language="csharp" source="./snippets/dotnet-8/csharp/WebSDK/KeyedDIServices.cs":::
+:::code language="csharp" source="../snippets/dotnet-8/csharp/WebSDK/KeyedDIServices.cs":::
 
 For more information, see [dotnet/runtime#64427](https://github.com/dotnet/runtime/issues/64427).
 
@@ -708,7 +710,7 @@ These methods run before and after the existing points respectively.
 
 The following example shows how to use the new APIs.
 
-:::code language="csharp" source="./snippets/dotnet-8/csharp/ConsoleApp/HostedLifecycleServices.cs":::
+:::code language="csharp" source="../snippets/dotnet-8/csharp/ConsoleApp/HostedLifecycleServices.cs":::
 
 For more information, see [dotnet/runtime#86511](https://github.com/dotnet/runtime/issues/86511).
 
@@ -718,11 +720,11 @@ For more information, see [dotnet/runtime#86511](https://github.com/dotnet/runti
 
 To reduce startup overhead and improve the validation feature set, we've introduced a source-code generator that implements the validation logic. The following code shows example models and validator classes.
 
-:::code language="csharp" source="./snippets/dotnet-8/csharp/WebSDK/Validation.cs" id="ValidatorClasses":::
+:::code language="csharp" source="../snippets/dotnet-8/csharp/WebSDK/Validation.cs" id="ValidatorClasses":::
 
 If your app uses dependency injection, you can inject the validation as shown in the following example code.
 
-:::code language="csharp" source="./snippets/dotnet-8/csharp/WebSDK/Validation.cs" id="InjectValidation":::
+:::code language="csharp" source="../snippets/dotnet-8/csharp/WebSDK/Validation.cs" id="InjectValidation":::
 
 #### ValidateOptionsResultBuilder type
 
@@ -730,7 +732,7 @@ If your app uses dependency injection, you can inject the validation as shown in
 
 The following code snippet shows an example usage of <xref:Microsoft.Extensions.Options.ValidateOptionsResultBuilder>.
 
-:::code language="csharp" source="./snippets/dotnet-8/csharp/WebSDK/ResultBuilder.cs" id="BuildResults":::
+:::code language="csharp" source="../snippets/dotnet-8/csharp/WebSDK/ResultBuilder.cs" id="BuildResults":::
 
 ### LoggerMessageAttribute constructors
 
@@ -772,7 +774,7 @@ Meter meter = meterFactory.Create(options);
 
 The new <xref:Microsoft.Extensions.Diagnostics.Metrics.Testing.MetricCollector%601> class lets you record metric measurements along with timestamps. Additionally, the class offers the flexibility to use a time provider of your choice for accurate timestamp generation.
 
-:::code language="csharp" source="./snippets/dotnet-8/csharp/ConsoleApp/MetricCollector.cs" id="MetricCollector":::
+:::code language="csharp" source="../snippets/dotnet-8/csharp/ConsoleApp/MetricCollector.cs" id="MetricCollector":::
 
 ### System.Numerics.Tensors.TensorPrimitives
 

@@ -31,6 +31,10 @@ For information about what's new in ASP.NET Core, see [What's new in ASP.NET Cor
 
 For information about what's new in .NET MAUI in .NET 8, see [What's new in .NET MAUI for .NET 8](/dotnet/maui/whats-new/dotnet-8).
 
+## EF Core
+
+For information about what's new in Entity Framework Core, see [What's New in EF Core 8](/ef/core/what-is-new/ef-core-8.0/whatsnew).
+
 ## Windows Forms
 
 For information about what's new in Windows Forms for .NET 8, see [What's new for .NET 8 (Windows Forms)](/dotnet/desktop/winforms/whats-new/net80).

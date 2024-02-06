@@ -40,7 +40,7 @@ Generic interfaces provide type-safe counterparts to nongeneric interfaces for o
 
 ## Mathematical functionality
 
-.NET 7 introduces generic interfaces in the <xref:System.Numerics?displayProperty=fullName> namespace that describes number-like types and the functionality available to them. The 20 numeric types that the .NET base class library provides, for example, <xref:System.Int32> and <xref:System.Double>, has been updated to implement these interfaces. The most prominent of these interfaces is <xref:System.Numerics.INumber%601>, which roughly corresponds to a "real" number.
+.NET 7 introduces generic interfaces in the <xref:System.Numerics?displayProperty=fullName> namespace that describe number-like types and the functionality available to them. The 20 numeric types that the .NET base class library provides, for example, <xref:System.Int32> and <xref:System.Double>, have been updated to implement these interfaces. The most prominent of these interfaces is <xref:System.Numerics.INumber%601>, which roughly corresponds to a "real" number.
 
 For more information about these interfaces, see [Generic math](math.md).
   

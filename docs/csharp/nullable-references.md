@@ -336,7 +336,7 @@ public static class Program
 {
     public static void Main()
     {
-        string s = default(s<string>).Prop;
+        string s = default(S<string>).Prop;
     }
 }
 ```

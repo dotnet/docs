@@ -52,6 +52,33 @@ This method unblocks users who want to implement graph algorithms in contexts wh
 
 ### Cryptography
 
+#### CryptographicOperations.HashData() method
+
+Since .NET 5, some static ["one-shot"](../../standard/security/cryptography-model.md#one-shot-apis) implementations of hash functions and related functions have been implemented. These APIs include <xref:System.Security.Cryptography.SHA256.HashData%2A?displayProperty=nameWithType> and <xref:System.Security.Cryptography.HMACSHA256.HashData%2A?displayProperty=nameWithType>. One-shot APIs are preferable to use because they can provide the best possible performance and reduce or eliminate allocations.
+
+If a developer wants to provide an API that supports hashing where the caller defines which hash algorithm to use, it's typically done by accepting a <xref:System.Security.Cryptography.HashAlgorithmName> argument. However, using that pattern with one-shot APIs would require switching over every possible <xref:System.Security.Cryptography.HashAlgorithmName> and then using the appropriate method. To solve that problem, .NET 9 introduces the `CryptographicOperations.HashData` API. This API lets you produce a hash or HMAC over an input as a one-shot where the algorithm used is determined by a <xref:System.Security.Cryptography.HashAlgorithmName>.
+
+:::code language="csharp" source="snippets/dotnet-9/csharp/Cryptography.cs" id="HashData":::
+
+#### KMAC algorithm
+
+.NET 9 provides the KMAC algorithm as specified by [NIST SP-800-185](https://csrc.nist.gov/pubs/sp/800/185/final). KECCAK Message Authentication Code (KMAC) is a pseudorandom function and keyed hash function based on KECCAK.
+
+The following new classes use the KMAC algorithm. Use instances to accumulate data to produce a MAC, or use the static `HashData` method for a [one-shot](../../standard/security/cryptography-model.md#one-shot-apis) over a single input.
+
+- `Kmac128` <!-- <xref:System.Security.Cryptography.Kmac128>
+- `Kmac256` <!-- <xref:System.Security.Cryptography.Kmac256>
+- `KmacXof128` <!-- <xref:System.Security.Cryptography.KmacXof128>
+- `KmacXof256` <!-- <xref:System.Security.Cryptography.KmacXof256> -->
+
+KMAC is available on Linux with OpenSSL 3.0 or later, and on Windows 11 Build 26016 or later. You can use the static `IsSupported` property to determine if the platform supports the desired algorithm.
+
+:::code language="csharp" source="snippets/dotnet-9/csharp/Cryptography.cs" id="Kmac":::
+
+### Reflection
+
+
+
 ## See also
 
 - [Announcing .NET 9 Preview 1](https://devblogs.microsoft.com/dotnet/announcing-dotnet-9-preview-1) (blog post)

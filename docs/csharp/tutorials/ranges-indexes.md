@@ -22,7 +22,7 @@ In this tutorial, you'll learn how to:
 
 Indices and ranges provide a succinct syntax for accessing single elements or ranges in a sequence.
 
-This language support relies on two new types and two new operators:
+This language support relies on two types and two operators:
 
 - <xref:System.Index?displayProperty=nameWithType> represents an index into a sequence.
 - The [index from end operator `^`](../language-reference/operators/member-access-operators.md#index-from-end-operator-), which specifies that an index is relative to the end of a sequence.

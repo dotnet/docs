@@ -163,6 +163,12 @@ items:
       href: ../core/tutorials/index.md
 - name: What's new in .NET
   items:
+  - name: .NET 9
+    items:
+    - name: What's new
+      href: ../core/whats-new/dotnet-9.md
+    - name: Breaking changes
+      href: ../core/compatibility/9.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
   - name: .NET 8
     items:
     - name: What's new

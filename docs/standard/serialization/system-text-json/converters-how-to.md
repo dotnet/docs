@@ -66,12 +66,14 @@ The basic pattern creates a class that can handle one type. The factory pattern 
 
 The following sample is a converter that overrides default serialization for an existing data type. The converter uses mm/dd/yyyy format for `DateTimeOffset` properties.
 
+<!-- replaycheck-task id="a953957f" -->
 :::code language="csharp" source="snippets/how-to/csharp/DateTimeOffsetConverter.cs":::
 
 ## Sample factory pattern converter
 
 The following code shows a custom converter that works with `Dictionary<Enum,TValue>`. The code follows the factory pattern because the first generic type parameter is `Enum` and the second is open. The `CanConvert` method returns `true` only for a `Dictionary` with two generic parameters, the first of which is an `Enum` type. The inner converter gets an existing converter to handle whichever type is provided at run time for `TValue`.
 
+<!-- replaycheck-task id="644ea72" -->
 :::code language="csharp" source="snippets/how-to/csharp/DictionaryTKeyEnumTValueConverter.cs":::
 
 ## Steps to follow the basic pattern

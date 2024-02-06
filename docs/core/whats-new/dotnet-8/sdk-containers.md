@@ -13,7 +13,7 @@ This article describes new features in the .NET SDK, containers, and tooling for
 
 ## Native AOT support
 
-The option to [publish as Native AOT](../deploying/native-aot/index.md) was first introduced in .NET 7. Publishing an app with Native AOT creates a fully self-contained version of your app that doesn't need a runtime&mdash;everything is included in a single file. .NET 8 brings the following improvements to Native AOT publishing:
+The option to [publish as Native AOT](../../deploying/native-aot/index.md) was first introduced in .NET 7. Publishing an app with Native AOT creates a fully self-contained version of your app that doesn't need a runtime&mdash;everything is included in a single file. .NET 8 brings the following improvements to Native AOT publishing:
 
 - Adds support for the x64 and Arm64 architectures on *macOS*.
 - Reduces the sizes of Native AOT apps on Linux by up to 50%. The following table shows the size of a "Hello World" app published with Native AOT that includes the entire .NET runtime on .NET 7 vs. .NET 8:
@@ -23,7 +23,7 @@ The option to [publish as Native AOT](../deploying/native-aot/index.md) was firs
   | Linux x64 (with `-p:StripSymbols=true`) | 3.76 MB | 1.84 MB |
   | Windows x64                             | 2.85 MB | 1.77 MB |
 
-- Lets you specify an optimization preference: size or speed. By default, the compiler chooses to generate fast code while being mindful of the size of the application. However, you can use the `<OptimizationPreference>` MSBuild property to optimize specifically for one or the other. For more information, see [Optimize AOT deployments](../deploying/native-aot/optimizing.md).
+- Lets you specify an optimization preference: size or speed. By default, the compiler chooses to generate fast code while being mindful of the size of the application. However, you can use the `<OptimizationPreference>` MSBuild property to optimize specifically for one or the other. For more information, see [Optimize AOT deployments](../../deploying/native-aot/optimizing.md).
 
 ### Console app template
 
@@ -61,7 +61,7 @@ dotnet publish -f net8.0-ios -c Release -r ios-arm64  /t:Run
 
 #### Limitations
 
-Not all iOS features are compatible with Native AOT. Similarly, not all libraries commonly used in iOS are compatible with NativeAOT. And in addition to the existing [limitations of Native AOT deployment](../deploying/native-aot/index.md#limitations-of-native-aot-deployment), the following list shows some of the other limitations when targeting iOS-like platforms:
+Not all iOS features are compatible with Native AOT. Similarly, not all libraries commonly used in iOS are compatible with NativeAOT. And in addition to the existing [limitations of Native AOT deployment](../../deploying/native-aot/index.md#limitations-of-native-aot-deployment), the following list shows some of the other limitations when targeting iOS-like platforms:
 
 - Using Native AOT is only enabled during app deployment (`dotnet publish`).
 - Managed code debugging is only supported with Mono.
@@ -82,7 +82,7 @@ This section contains the following subtopics:
 
 ### CLI-based project evaluation
 
-MSBuild includes a new feature that makes it easier to incorporate data from MSBuild into your scripts or tools. The following new flags are available for CLI commands such as [dotnet publish](../tools/dotnet-publish.md) to obtain data for use in CI pipelines and elsewhere.
+MSBuild includes a new feature that makes it easier to incorporate data from MSBuild into your scripts or tools. The following new flags are available for CLI commands such as [dotnet publish](../../tools/dotnet-publish.md) to obtain data for use in CI pipelines and elsewhere.
 
 | Flag                              | Description                                              |
 |-----------------------------------|----------------------------------------------------------|
@@ -122,13 +122,13 @@ bin\Release\net8.0\
 
 ### Terminal build output
 
-`dotnet build` has a new option to produce more modernized build output. This *terminal logger* output groups errors with the project they came from, better differentiates the different target frameworks for multi-targeted projects, and provides real-time information about what the build is doing. To opt into the new output, use the `--tl` option. For more information about this option, see [dotnet build options](../tools/dotnet-build.md#options).
+`dotnet build` has a new option to produce more modernized build output. This *terminal logger* output groups errors with the project they came from, better differentiates the different target frameworks for multi-targeted projects, and provides real-time information about what the build is doing. To opt into the new output, use the `--tl` option. For more information about this option, see [dotnet build options](../../tools/dotnet-build.md#options).
 
 ### Simplified output paths
 
 .NET 8 introduces an option to simplify the output path and folder structure for build outputs. Previously, .NET apps produced a deep and complex set of output paths for different build artifacts. The new, simplified output path structure gathers all build outputs into a common location, which makes it easier for tooling to anticipate.
 
-For more information, see [Artifacts output layout](../sdk/artifacts-output.md).
+For more information, see [Artifacts output layout](../../sdk/artifacts-output.md).
 
 ### `dotnet workload clean` command
 
@@ -146,7 +146,7 @@ For more information, see [Artifacts output layout](../sdk/artifacts-output.md).
 
 ### `dotnet publish` and `dotnet pack` assets
 
-Since the [`dotnet publish`](../tools/dotnet-publish.md) and [`dotnet pack`](../tools/dotnet-pack.md) commands are intended to produce production assets, they now produce `Release` assets by default.
+Since the [`dotnet publish`](../../tools/dotnet-publish.md) and [`dotnet pack`](../../tools/dotnet-pack.md) commands are intended to produce production assets, they now produce `Release` assets by default.
 
 The following output shows the different behavior between `dotnet build` and `dotnet publish`, and how you can revert to publishing `Debug` assets by setting the `PublishRelease` property to `false`.
 
@@ -162,11 +162,11 @@ The following output shows the different behavior between `dotnet build` and `do
   app -> /app/bin/Debug/net8.0/publish/
 ```
 
-For more information, see ['dotnet pack' uses Release config](../compatibility/sdk/8.0/dotnet-pack-config.md) and ['dotnet publish' uses Release config](../compatibility/sdk/8.0/dotnet-publish-config.md).
+For more information, see ['dotnet pack' uses Release config](../../compatibility/sdk/8.0/dotnet-pack-config.md) and ['dotnet publish' uses Release config](../../compatibility/sdk/8.0/dotnet-publish-config.md).
 
 ### `dotnet restore` security auditing
 
-Starting in .NET 8, you can opt into security checks for known vulnerabilities when dependency packages are restored. This auditing produces a report of security vulnerabilities with the affected package name, the severity of the vulnerability, and a link to the advisory for more details. When you run `dotnet add` or `dotnet restore`, warnings NU1901-NU1904 will appear for any vulnerabilities that are found. For more information, see [Audit for security vulnerabilities](../tools/dotnet-restore.md#audit-for-security-vulnerabilities).
+Starting in .NET 8, you can opt into security checks for known vulnerabilities when dependency packages are restored. This auditing produces a report of security vulnerabilities with the affected package name, the severity of the vulnerability, and a link to the advisory for more details. When you run `dotnet add` or `dotnet restore`, warnings NU1901-NU1904 will appear for any vulnerabilities that are found. For more information, see [Audit for security vulnerabilities](../../tools/dotnet-restore.md#audit-for-security-vulnerabilities).
 
 ### Template engine
 
@@ -186,10 +186,10 @@ The [template engine](https://github.com/dotnet/templating) provides a more secu
 
 ### Source Link
 
-[Source Link](../../standard/library-guidance/sourcelink.md) is now included in the .NET SDK. The goal is that by bundling Source Link into the SDK, instead of requiring a separate `<PackageReference>` for the package, more packages will include this information by default. That information will improve the IDE experience for developers.
+[Source Link](../../../standard/library-guidance/sourcelink.md) is now included in the .NET SDK. The goal is that by bundling Source Link into the SDK, instead of requiring a separate `<PackageReference>` for the package, more packages will include this information by default. That information will improve the IDE experience for developers.
 
 > [!NOTE]
-> As a side effect of this change, commit information is included in the `InformationalVersion` value of built libraries and applications, even those that target .NET 7 or an earlier version. For more information, see [Source Link included in the .NET SDK](../compatibility/sdk/8.0/source-link.md).
+> As a side effect of this change, commit information is included in the `InformationalVersion` value of built libraries and applications, even those that target .NET 7 or an earlier version. For more information, see [Source Link included in the .NET SDK](../../compatibility/sdk/8.0/source-link.md).
 
 ### Source-build SDK
 
@@ -284,7 +284,7 @@ These improvements also mean that more registries are supported: Harbor, Artifac
 > dotnet publish -r linux-x64 -p PublishProfile=DefaultContainer
 ```
 
-For more information containerizing .NET apps, see [Containerize a .NET app with dotnet publish](../docker/publish-as-container.md).
+For more information containerizing .NET apps, see [Containerize a .NET app with dotnet publish](../../docker/publish-as-container.md).
 
 #### Publish to tar.gz archive
 
@@ -355,11 +355,11 @@ You can opt out of verification by setting the environment variable `DOTNET_NUGE
 |--|--|--|
 | CA1856 | Performance | Fires when the <xref:System.Diagnostics.CodeAnalysis.ConstantExpectedAttribute> attribute is not applied correctly on a parameter. |
 | CA1857 | Performance | Fires when a parameter is annotated with <xref:System.Diagnostics.CodeAnalysis.ConstantExpectedAttribute> but the provided argument isn't a constant. |
-| [CA1858](../../fundamentals/code-analysis/quality-rules/ca1858.md) | Performance | To determine whether a string starts with a given prefix, it's better to call <xref:System.String.StartsWith%2A?displayProperty=nameWithType> than to call <xref:System.String.IndexOf%2A?displayProperty=nameWithType> and then compare the result with zero. |
-| [CA1859](../../fundamentals/code-analysis/quality-rules/ca1859.md) | Performance | This rule recommends upgrading the type of specific local variables, fields, properties, method parameters, and method return types from interface or abstract types to concrete types when possible. Using concrete types leads to higher quality generated code. |
-| [CA1860](../../fundamentals/code-analysis/quality-rules/ca1860.md) | Performance | To determine whether a collection type has any elements, it's better to use `Length`, `Count`, or `IsEmpty` than to call <xref:System.Linq.Enumerable.Any%2A?displayProperty=nameWithType>. |
-| [CA1861](../../fundamentals/code-analysis/quality-rules/ca1861.md) | Performance | Constant arrays passed as arguments aren't reused when called repeatedly, which implies a new array is created each time. To improve performance, consider extracting the array to a static readonly field. |
-| [CA1865-CA1867](../../fundamentals/code-analysis/quality-rules/ca1865-ca1867.md) | Performance | The char overload is a better-performing overload for a string with a single char. |
+| [CA1858](../../../fundamentals/code-analysis/quality-rules/ca1858.md) | Performance | To determine whether a string starts with a given prefix, it's better to call <xref:System.String.StartsWith%2A?displayProperty=nameWithType> than to call <xref:System.String.IndexOf%2A?displayProperty=nameWithType> and then compare the result with zero. |
+| [CA1859](../../../fundamentals/code-analysis/quality-rules/ca1859.md) | Performance | This rule recommends upgrading the type of specific local variables, fields, properties, method parameters, and method return types from interface or abstract types to concrete types when possible. Using concrete types leads to higher quality generated code. |
+| [CA1860](../../../fundamentals/code-analysis/quality-rules/ca1860.md) | Performance | To determine whether a collection type has any elements, it's better to use `Length`, `Count`, or `IsEmpty` than to call <xref:System.Linq.Enumerable.Any%2A?displayProperty=nameWithType>. |
+| [CA1861](../../../fundamentals/code-analysis/quality-rules/ca1861.md) | Performance | Constant arrays passed as arguments aren't reused when called repeatedly, which implies a new array is created each time. To improve performance, consider extracting the array to a static readonly field. |
+| [CA1865-CA1867](../../../fundamentals/code-analysis/quality-rules/ca1865-ca1867.md) | Performance | The char overload is a better-performing overload for a string with a single char. |
 | CA2021 | Reliability | <xref:System.Linq.Enumerable.Cast%60%601(System.Collections.IEnumerable)?displayProperty=nameWithType> and <xref:System.Linq.Enumerable.OfType%60%601(System.Collections.IEnumerable)?displayProperty=nameWithType> require compatible types to function correctly. Widening and user-defined conversions aren't supported with generic types. |
 | CA1510-CA1513 | Maintainability | Throw helpers are simpler and more efficient than an `if` block constructing a new exception instance. These four analyzers were created for the following exceptions: <xref:System.ArgumentNullException>, <xref:System.ArgumentException>, <xref:System.ArgumentOutOfRangeException> and <xref:System.ObjectDisposedException>. |
 
@@ -371,4 +371,4 @@ Starting in .NET 8, C# Hot Reload [supports modifying generic types and generic 
 
 ### See also
 
-- [What's new in .NET 8](dotnet-8.md)
+- [What's new in .NET 8](overview.md)

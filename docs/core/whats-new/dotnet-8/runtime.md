@@ -70,7 +70,7 @@ The COM source generator doesn't support apartment affinity, using the `new` key
 - Consecutive register allocation. Arm64 has two instructions for table vector lookup, which require that all entities in their tuple operands are present in consecutive registers.
 - JIT/NativeAOT can now unroll and auto-vectorize some memory operations with SIMD, such as comparison, copying, and zeroing, if it can determine their sizes at compile time.
 
-In addition, dynamic profile-guided optimization (PGO) has been improved and is now enabled by default. You no longer need to use a [runtime configuration option](../runtime-config/compilation.md#profile-guided-optimization) to enable it. Dynamic PGO works hand-in-hand with tiered compilation to further optimize code based on additional instrumentation that's put in place during tier 0.
+In addition, dynamic profile-guided optimization (PGO) has been improved and is now enabled by default. You no longer need to use a [runtime configuration option](../../runtime-config/compilation.md#profile-guided-optimization) to enable it. Dynamic PGO works hand-in-hand with tiered compilation to further optimize code based on additional instrumentation that's put in place during tier 0.
 
 On average, dynamic PGO increases performance by about 15%. In a benchmark suite of ~4600 tests, 23% saw performance improvements of 20% or more.
 
@@ -130,7 +130,7 @@ The following code shows an example of invoking the binder.
 
 ## Reflection improvements
 
-[Function pointers](../../csharp/language-reference/unsafe-code.md#function-pointers) were introduced in .NET 5, however, the corresponding support for reflection wasn't added at that time. When using `typeof` or reflection on a function pointer, for example, `typeof(delegate*<void>())` or `FieldInfo.FieldType` respectively, an <xref:System.IntPtr> was returned. Starting in .NET 8, a <xref:System.Type?displayProperty=nameWithType> object is returned instead. This type provides access to function pointer metadata, including the calling conventions, return type, and parameters.
+[Function pointers](../../../csharp/language-reference/unsafe-code.md#function-pointers) were introduced in .NET 5, however, the corresponding support for reflection wasn't added at that time. When using `typeof` or reflection on a function pointer, for example, `typeof(delegate*<void>())` or `FieldInfo.FieldType` respectively, an <xref:System.IntPtr> was returned. Starting in .NET 8, a <xref:System.Type?displayProperty=nameWithType> object is returned instead. This type provides access to function pointer metadata, including the calling conventions, return type, and parameters.
 
 > [!NOTE]
 > A function pointer instance, which is a physical address to a function, continues to be represented as an <xref:System.IntPtr>. Only the reflection type has changed.
@@ -171,7 +171,7 @@ This section contains the following subtopics:
 
 ### Serialization
 
-Many improvements have been made to <xref:System.Text.Json?displayProperty=fullName> serialization and deserialization functionality in .NET 8. For example, you can [customize handling of members that aren't in the JSON payload](../../standard/serialization/system-text-json/missing-members.md).
+Many improvements have been made to <xref:System.Text.Json?displayProperty=fullName> serialization and deserialization functionality in .NET 8. For example, you can [customize handling of members that aren't in the JSON payload](../../../standard/serialization/system-text-json/missing-members.md).
 
 The following sections describe other serialization improvements:
 
@@ -188,7 +188,7 @@ The following sections describe other serialization improvements:
 - [New JsonContent.Create overloads](#new-jsoncontentcreate-overloads)
 - [Freeze a JsonSerializerOptions instance](#freeze-a-jsonserializeroptions-instance)
 
-For more information about JSON serialization in general, see [JSON serialization and deserialization in .NET](../../standard/serialization/system-text-json/overview.md).
+For more information about JSON serialization in general, see [JSON serialization and deserialization in .NET](../../../standard/serialization/system-text-json/overview.md).
 
 #### Built-in support for additional types
 
@@ -212,12 +212,12 @@ The serializer has built-in support for the following additional types.
 
 #### Source generator
 
-.NET 8 includes enhancements of the System.Text.Json [source generator](../../standard/serialization/system-text-json/source-generation.md) that are aimed at making the [Native AOT](../../standard/glossary.md#native-aot) experience on par with the [reflection-based serializer](../../standard/serialization/system-text-json/reflection-vs-source-generation.md#reflection). For example:
+.NET 8 includes enhancements of the System.Text.Json [source generator](../../../standard/serialization/system-text-json/source-generation.md) that are aimed at making the [Native AOT](../../../standard/glossary.md#native-aot) experience on par with the [reflection-based serializer](../../../standard/serialization/system-text-json/reflection-vs-source-generation.md#reflection). For example:
 
-- The source generator now supports serializing types with [`required`](../../standard/serialization/system-text-json/required-properties.md) and [`init`](../../csharp/language-reference/keywords/init.md) properties. These were both already supported in reflection-based serialization.
+- The source generator now supports serializing types with [`required`](../../../standard/serialization/system-text-json/required-properties.md) and [`init`](../../../csharp/language-reference/keywords/init.md) properties. These were both already supported in reflection-based serialization.
 - Improved formatting of source-generated code.
-- <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute> feature parity with <xref:System.Text.Json.JsonSerializerOptions>. For more information, see [Specify options (source generation)](../../standard/serialization/system-text-json/source-generation.md#specify-options).
-- Additional diagnostics (such as [SYSLIB1034](../../fundamentals/syslib-diagnostics/syslib1034.md) and [SYSLIB1039](../../fundamentals/syslib-diagnostics/syslib1039.md)).
+- <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute> feature parity with <xref:System.Text.Json.JsonSerializerOptions>. For more information, see [Specify options (source generation)](../../../standard/serialization/system-text-json/source-generation.md#specify-options).
+- Additional diagnostics (such as [SYSLIB1034](../../../fundamentals/syslib-diagnostics/syslib1034.md) and [SYSLIB1039](../../../fundamentals/syslib-diagnostics/syslib1039.md)).
 - Don't include types of ignored or inaccessible properties.
 - Support for nesting `JsonSerializerContext` declarations within arbitrary type kinds.
 - Support for compiler-generated or *unspeakable* types in weakly typed source generation scenarios. Since compiler-generated types can't be explicitly specified by the source generator, <xref:System.Text.Json?displayProperty=fullName> now performs nearest-ancestor resolution at run time. This resolution determines the most appropriate supertype with which to serialize the value.
@@ -231,7 +231,7 @@ The serializer has built-in support for the following additional types.
   public partial class MyContext : JsonSerializerContext { }
   ```
 
-  For more information, see [Serialize enum fields as strings](../../standard/serialization/system-text-json/source-generation.md#serialize-enum-fields-as-strings).
+  For more information, see [Serialize enum fields as strings](../../../standard/serialization/system-text-json/source-generation.md#serialize-enum-fields-as-strings).
 
 - New `JsonConverter.Type` property lets you look up the type of a non-generic `JsonConverter` instance:
 
@@ -245,9 +245,9 @@ The serializer has built-in support for the following additional types.
 
 ##### Chain source generators
 
-The <xref:System.Text.Json.JsonSerializerOptions> class includes a new <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> property that complements the existing <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver> property. These properties are used in contract customization for chaining source generators. The addition of the new property means that you don't have to specify all chained components at one call site&mdash;they can be added after the fact. <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> also lets you introspect the chain or remove components from it. For more information, see [Combine source generators](../../standard/serialization/system-text-json/source-generation.md#combine-source-generators).
+The <xref:System.Text.Json.JsonSerializerOptions> class includes a new <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> property that complements the existing <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver> property. These properties are used in contract customization for chaining source generators. The addition of the new property means that you don't have to specify all chained components at one call site&mdash;they can be added after the fact. <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> also lets you introspect the chain or remove components from it. For more information, see [Combine source generators](../../../standard/serialization/system-text-json/source-generation.md#combine-source-generators).
 
-In addition, <xref:System.Text.Json.JsonSerializerOptions.AddContext%60%601?displayProperty=nameWithType> is now obsolete. It's been superseded by the <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver> and <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> properties. For more information, see [SYSLIB0049](../../fundamentals/syslib-diagnostics/syslib0049.md).
+In addition, <xref:System.Text.Json.JsonSerializerOptions.AddContext%60%601?displayProperty=nameWithType> is now obsolete. It's been superseded by the <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver> and <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> properties. For more information, see [SYSLIB0049](../../../fundamentals/syslib-diagnostics/syslib0049.md).
 
 #### Interface hierarchies
 
@@ -270,7 +270,7 @@ JsonSerializer.Serialize(new { PropertyName = "value" }, options);
 // { "property_name" : "value" }
 ```
 
-For more information, see [Use a built-in naming policy](../../standard/serialization/system-text-json/customize-properties.md#use-a-built-in-naming-policy).
+For more information, see [Use a built-in naming policy](../../../standard/serialization/system-text-json/customize-properties.md#use-a-built-in-naming-policy).
 
 #### Read-only properties
 
@@ -294,7 +294,7 @@ Now, the input values are used to populate the read-only properties during deser
 {"Names":["John Doe"],"Company":{"Name":"Contoso","PhoneNumber":"N/A"}}
 ```
 
-For more information about the *populate* deserialization behavior, see [Populate initialized properties](../../standard/serialization/system-text-json/populate-properties.md).
+For more information about the *populate* deserialization behavior, see [Populate initialized properties](../../../standard/serialization/system-text-json/populate-properties.md).
 
 #### Disable reflection-based default
 
@@ -302,7 +302,7 @@ You can now disable using the reflection-based serializer by default. This disab
 
 Use the new <xref:System.Text.Json.JsonSerializer.IsReflectionEnabledByDefault> API to check the value of the feature switch. If you're a library author building on top of <xref:System.Text.Json?displayProperty=fullName>, you can rely on the property to configure your defaults without accidentally rooting reflection components.
 
-For more information, see [Disable reflection defaults](../../standard/serialization/system-text-json/source-generation.md#disable-reflection-defaults).
+For more information, see [Disable reflection defaults](../../../standard/serialization/system-text-json/source-generation.md#disable-reflection-defaults).
 
 #### New JsonNode API methods
 
@@ -356,7 +356,7 @@ You can opt non-public members into the serialization contract for a given type 
 
 :::code language="csharp" source="./snippets/dotnet-8/csharp/ConsoleApp/Serialization.cs" id="NonPublicMembers":::
 
-For more information, see [Use immutable types and non-public members and accessors](../../standard/serialization/system-text-json/immutability.md).
+For more information, see [Use immutable types and non-public members and accessors](../../../standard/serialization/system-text-json/immutability.md).
 
 #### Streaming deserialization APIs
 
@@ -434,7 +434,7 @@ The following code snippet shows some usage examples.
 
 If you want to enable writing out a string-like representation of your type to a destination span, implement the new <xref:System.IUtf8SpanFormattable> interface on your type. This new interface is closely related to <xref:System.ISpanFormattable>, but targets UTF8 and `Span<byte>` instead of UTF16 and `Span<char>`.
 
-<xref:System.IUtf8SpanFormattable> has been implemented on all of the primitive types (plus others), with the exact same shared logic whether targeting `string`, `Span<char>`, or `Span<byte>`. It has full support for all formats (including the new ["B" binary specifier](../../standard/base-types/standard-numeric-format-strings.md#binary-format-specifier-b)) and all cultures. This means you can now format directly to UTF8 from `Byte`, `Complex`, `Char`, `DateOnly`, `DateTime`, `DateTimeOffset`, `Decimal`, `Double`, `Guid`, `Half`, `IPAddress`, `IPNetwork`, `Int16`, `Int32`, `Int64`, `Int128`, `IntPtr`, `NFloat`, `SByte`, `Single`, `Rune`, `TimeOnly`, `TimeSpan`, `UInt16`, `UInt32`, `UInt64`, `UInt128`, `UIntPtr`, and `Version`.
+<xref:System.IUtf8SpanFormattable> has been implemented on all of the primitive types (plus others), with the exact same shared logic whether targeting `string`, `Span<char>`, or `Span<byte>`. It has full support for all formats (including the new ["B" binary specifier](../../../standard/base-types/standard-numeric-format-strings.md#binary-format-specifier-b)) and all cultures. This means you can now format directly to UTF8 from `Byte`, `Complex`, `Char`, `DateOnly`, `DateTime`, `DateTimeOffset`, `Decimal`, `Double`, `Guid`, `Half`, `IPAddress`, `IPNetwork`, `Int16`, `Int32`, `Int64`, `Int128`, `IntPtr`, `NFloat`, `SByte`, `Single`, `Rune`, `TimeOnly`, `TimeSpan`, `UInt16`, `UInt32`, `UInt64`, `UInt128`, `UIntPtr`, and `Version`.
 
 New <xref:System.Text.Unicode.Utf8.TryWrite%2A?displayProperty=nameWithType> methods provide a UTF8-based counterpart to the existing <xref:System.MemoryExtensions.TryWrite%2A?displayProperty=nameWithType> methods, which are UTF16-based. You can use interpolated string syntax to format a complex expression directly into a span of UTF8 bytes, for example:
 
@@ -562,7 +562,7 @@ Even if you don't explicitly use `Vector512`-specific or `Avx512F`-specific inst
 
 ### Data validation
 
-The <xref:System.ComponentModel.DataAnnotations?displayProperty=fullName> namespace includes new data validation attributes intended for validation scenarios in cloud-native services. While the pre-existing `DataAnnotations` validators are geared towards typical UI data-entry validation, such as fields on a form, the new attributes are designed to validate non-user-entry data, such as [configuration options](../extensions/options.md#options-validation). In addition to the new attributes, new properties were added to the <xref:System.ComponentModel.DataAnnotations.RangeAttribute> and <xref:System.ComponentModel.DataAnnotations.RequiredAttribute> types.
+The <xref:System.ComponentModel.DataAnnotations?displayProperty=fullName> namespace includes new data validation attributes intended for validation scenarios in cloud-native services. While the pre-existing `DataAnnotations` validators are geared towards typical UI data-entry validation, such as fields on a form, the new attributes are designed to validate non-user-entry data, such as [configuration options](../../extensions/options.md#options-validation). In addition to the new attributes, new properties were added to the <xref:System.ComponentModel.DataAnnotations.RangeAttribute> and <xref:System.ComponentModel.DataAnnotations.RequiredAttribute> types.
 
 | New API | Description |
 |--|--|
@@ -786,4 +786,4 @@ For more information, see the [Announcing .NET 8 RC 2 blog post](https://devblog
 
 ## See also
 
-- [What's new in .NET 8](dotnet-8.md)
+- [What's new in .NET 8](overview.md)

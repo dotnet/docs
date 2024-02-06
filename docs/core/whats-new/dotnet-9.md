@@ -40,6 +40,16 @@ New methods `CountBy` and `AggregateBy` have been introduced. These methods make
 
 ### Collections
 
+#### PriorityQueue.Remove() method
+
+.NET 6 introduced the <xref:System.Collections.Generic.PriorityQueue%602> collection, which provides a simple and fast array-heap implementation. One issue with array heaps in general is that they [don't support priority updates](https://github.com/dotnet/runtime/issues/44871), which makes them prohibitive for use in algorithms such as variations of [Dijkstra's algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm#Using_a_priority_queue).
+
+While it's not possible to implement efficient `O(log n)` priority updates in the existing collection, the new `PriorityQueue.Remove` method makes it possible to emulate priority updates (albeit at `O(n)` time):
+
+:::code language="csharp" source="snippets/dotnet-9/csharp/Collections.cs" id="UpdatePriority":::
+
+This method unblocks users who want to implement graph algorithms in contexts where asymptotic performance isn't a blocker. (Such contexts include education and prototyping.) For example, here's a [toy implementation of Dijkstra's algorithm](https://github.com/dotnet/runtime/blob/16cb41496d595e2568574cfe11c763d5e05136c9/src/libraries/System.Collections/tests/Generic/PriorityQueue/PriorityQueue.Tests.Dijkstra.cs#L46-L76) that uses the new API.
+
 ### Cryptography
 
 ## See also

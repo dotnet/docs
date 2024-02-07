@@ -8,10 +8,10 @@ ms.custom: mvc
 
 Welcome to the introduction to C# tutorials. These lessons start with interactive code
 that you can run in your browser. You can learn the basics of C# from the
-[C# 101 video series](https://aka.ms/dotnet3-csharp) before starting these interactive lessons.
+[C# for Beginners video series](https://aka.ms/dotnet/beginnervideos/youtube/csharp) before starting these interactive lessons.
 
 <!--markdownlint-disable-next-line MD034 -->
-> [!VIDEO https://learn-video.azurefd.net/vod/player?show=csharp-101&ep=what-is-c]
+> [!VIDEO https://www.youtube.com/embed/videoseries?si=c1YCsy097ilTxmp3&amp;list=PLdo4fOcmZ0oULFjxrOagaERVAMbmG20Xe]
 
 The first lessons explain C# concepts using small snippets of code. You'll
 learn the basics of C# syntax and how to work with data types like strings,

@@ -13,11 +13,11 @@ author: gewarren
 
 ## .NET runtime
 
-For information about what's new in the .NET runtime, see [What's new in the .NET 8 runtime](runtime.md).
+The .NET 8 runtime includes improvements to performance, garbage collection, and the core and extension libraries. It also includes a new globalization mode for mobile apps and new source generators for COM interop and configuration binding. For more information, see [What's new in the .NET 8 runtime](runtime.md).
 
 ## .NET SDK
 
-For information about what's new in the .NET SDK, containers, and tooling, see [What's new in the SDK and containers for .NET 8](sdk-containers.md).
+For information about what's new in the .NET SDK, containers, Native AOT, code analysis, and diagnostics, see [What's new in the SDK and containers for .NET 8](sdk-containers.md).
 
 ## .NET Aspire
 
@@ -25,24 +25,23 @@ For information about what's new in the .NET SDK, containers, and tooling, see [
 
 ## ASP.NET Core
 
-For information about what's new in ASP.NET Core, see [What's new in ASP.NET Core 8.0](/aspnet/core/release-notes/aspnetcore-8.0).
+ASP.NET Core includes improvements to Blazor, SignalR, minimal APIs, Native AOT, Kestrel and HTTP.sys servers, and authentication and authorization. For more information, see [What's new in ASP.NET Core 8.0](/aspnet/core/release-notes/aspnetcore-8.0).
 
 ## .NET MAUI
 
-For information about what's new in .NET MAUI in .NET 8, see [What's new in .NET MAUI for .NET 8](/dotnet/maui/whats-new/dotnet-8).
+.NET MAUI includes new functionality for controls, gesture recognizers, Windows apps, navigation, and platform integration. It also includes some behavior changes and many performance enhancements. For more information, see [What's new in .NET MAUI for .NET 8](/dotnet/maui/whats-new/dotnet-8).
 
 ## EF Core
 
-For information about what's new in Entity Framework Core, see [What's New in EF Core 8](/ef/core/what-is-new/ef-core-8.0/whatsnew).
+Entity Framework Core includes improvements to complex type objects, collections of primitive types, JSON column mapping, raw SQL queries, lazy loading, tracked-entity access, model building, math translations, and other features. It also includes a new `HierarchyId` type. For more information, see [What's New in EF Core 8](/ef/core/what-is-new/ef-core-8.0/whatsnew).
 
 ## Windows Forms
 
-For information about what's new in Windows Forms for .NET 8, see [What's new for .NET 8 (Windows Forms)](/dotnet/desktop/winforms/whats-new/net80).
+Windows Forms includes improvements to data binding, Visual Studio DPI, and high DPI. Button commands are also fully enabled now. For more information, see [What's new for .NET 8 (Windows Forms)](/dotnet/desktop/winforms/whats-new/net80).
 
 ## Windows Presentation Foundation
 
-- [Hardware acceleration](#hardware-acceleration)
-- [OpenFolderDialog](#openfolderdialog)
+Windows Presentation Foundation (WPF) adds the ability to use [hardware acceleration](#hardware-acceleration) and a new [OpenFolderDialog](#openfolderdialog) control.
 
 ### Hardware acceleration
 

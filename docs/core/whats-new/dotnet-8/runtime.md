@@ -11,53 +11,6 @@ author: gewarren
 
 This article describes new features in the .NET runtime for .NET 8.
 
-## Globalization
-
-### HybridGlobalization mode on iOS/tvOS/MacCatalyst
-
-Mobile apps can now use a new *hybrid* globalization mode that uses a lighter ICU bundle. In hybrid mode, globalization data is partially pulled from the ICU bundle and partially from calls into Native API. It serves all the [locales supported by mobile](https://github.com/dotnet/icu/blob/dotnet/main/icu-filters/icudt_mobile.json).
-
-`HybridGlobalization` is most suitable for apps that can't work in `InvariantGlobalization` mode and that use cultures that were trimmed from ICU data on mobile. You can also use it when you want to load a smaller ICU data file. (The *icudt_hybrid.dat* file is 34.5 % smaller than the default ICU data file *icudt.dat*.)
-
-To use `HybridGlobalization` mode, set the MSBuild property to true:
-
-```xml
-<PropertyGroup>
-  <HybridGlobalization>true</HybridGlobalization>
-</PropertyGroup>
-```
-
-There are some limitations to be aware of:
-
-- Due to limitations of Native API, not all globalization APIs are supported in hybrid mode.
-- Some of the supported APIs have different behavior.
-
-To make sure your application isn't affected, see [Behavioral differences](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-hybrid-mode.md#behavioral-differences).
-
-## Source-generated COM interop
-
-.NET 8 includes a new source generator that supports interoperating with COM interfaces. You can use the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute> to mark an interface as a COM interface for the source generator. The source generator will then generate code to enable calling from C# code to unmanaged code. It also generates code to enable calling from unmanaged code into C#. This source generator integrates with <xref:System.Runtime.InteropServices.LibraryImportAttribute>, and you can use types with the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute> as parameters and return types in `LibraryImport`-attributed methods.
-
-:::code language="csharp" source="../snippets/dotnet-8/csharp/ConsoleApp/Interop.cs":::
-
-The source generator also supports the new <xref:System.Runtime.InteropServices.Marshalling.GeneratedComClassAttribute> attribute to enable you to pass types that implement interfaces with the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute> attribute to unmanaged code. The source generator will generate the code necessary to expose a COM object that implements the interfaces and forwards calls to the managed implementation.
-
-Methods on interfaces with the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute> attribute support all the same types as `LibraryImportAttribute`, and `LibraryImportAttribute` now supports `GeneratedComInterface`-attributed types and `GeneratedComClass`-attributed types.
-
-If your C# code only uses a `GeneratedComInterface`-attributed interface to either wrap a COM object from unmanaged code or wrap a managed object from C# to expose to unmanaged code, you can use the options in the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute.Options> property to customize which code will be generated. These options mean you don't need to write marshallers for scenarios that you know won't be used.
-
-The source generator uses the new <xref:System.Runtime.InteropServices.Marshalling.StrategyBasedComWrappers> type to create and manage the COM object wrappers and the managed object wrappers. This new type handles providing the expected .NET user experience for COM interop, while providing customization points for advanced users. If your application has its own mechanism for defining types from COM or if you need to support scenarios that source-generated COM doesn't currently support, consider using the new <xref:System.Runtime.InteropServices.Marshalling.StrategyBasedComWrappers> type to add the missing features for your scenario and get the same .NET user experience for your COM types.
-
-If you're using Visual Studio, new analyzers and code fixes make it easy to convert your existing COM interop code to use source-generated interop. Next to each interface that has the <xref:System.Runtime.InteropServices.ComImportAttribute>, a lightbulb offers an option to convert to source-generated interop. The fix changes the interface to use the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute> attribute. And next to every class that implements an interface with `GeneratedComInterfaceAttribute`, a lightbulb offers an option to add the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComClassAttribute> attribute to the type. Once your types are converted, you can move your `DllImport` methods to use `LibraryImportAttribute`.
-
-### Limitations
-
-The COM source generator doesn't support apartment affinity, using the `new` keyword to activate a COM CoClass, and the following APIs:
-
-- <xref:System.Runtime.InteropServices.UnmanagedType.IDispatch>-based interfaces.
-- <xref:System.Runtime.InteropServices.UnmanagedType.IInspectable>-based interfaces.
-- COM properties and events.
-
 ## Performance improvements
 
 .NET 8 includes improvements to code generation and just-in time (JIT) compilation:
@@ -112,6 +65,51 @@ GC.RefreshMemoryLimit();
 
 The API can throw an <xref:System.InvalidOperationException> if the hard limit is invalid, for example, in the case of negative heap hard limit percentages and if the hard limit is too low. This can happen if the heap hard limit that the refresh will set, either because of new AppData settings or implied by the container memory limit changes, is lower than what's already committed.
 
+## Globalization for mobile apps
+
+Mobile apps on iOS, tvOS, and MacCatalyst can opt into a new *hybrid* globalization mode that uses a lighter ICU bundle. In hybrid mode, globalization data is partially pulled from the ICU bundle and partially from calls into Native APIs. Hybrid mode serves all the [locales supported by mobile](https://github.com/dotnet/icu/blob/dotnet/main/icu-filters/icudt_mobile.json).
+
+Hybrid mode is most suitable for apps that can't work in invariant globalization mode and that use cultures that were trimmed from ICU data on mobile. You can also use it when you want to load a smaller ICU data file. (The *icudt_hybrid.dat* file is 34.5 % smaller than the default ICU data file *icudt.dat*.)
+
+To use hybrid globalization mode, set the `HybridGlobalization` MSBuild property to true:
+
+```xml
+<PropertyGroup>
+  <HybridGlobalization>true</HybridGlobalization>
+</PropertyGroup>
+```
+
+There are some limitations to be aware of:
+
+- Due to limitations of Native API, not all globalization APIs are supported in hybrid mode.
+- Some of the supported APIs have different behavior.
+
+To check if your application is affected, see [Behavioral differences](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-hybrid-mode.md#behavioral-differences).
+
+## Source-generated COM interop
+
+.NET 8 includes a new source generator that supports interoperating with COM interfaces. You can use the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute> to mark an interface as a COM interface for the source generator. The source generator will then generate code to enable calling from C# code to unmanaged code. It also generates code to enable calling from unmanaged code into C#. This source generator integrates with <xref:System.Runtime.InteropServices.LibraryImportAttribute>, and you can use types with the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute> as parameters and return types in `LibraryImport`-attributed methods.
+
+:::code language="csharp" source="../snippets/dotnet-8/csharp/ConsoleApp/Interop.cs":::
+
+The source generator also supports the new <xref:System.Runtime.InteropServices.Marshalling.GeneratedComClassAttribute> attribute to enable you to pass types that implement interfaces with the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute> attribute to unmanaged code. The source generator will generate the code necessary to expose a COM object that implements the interfaces and forwards calls to the managed implementation.
+
+Methods on interfaces with the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute> attribute support all the same types as `LibraryImportAttribute`, and `LibraryImportAttribute` now supports `GeneratedComInterface`-attributed types and `GeneratedComClass`-attributed types.
+
+If your C# code only uses a `GeneratedComInterface`-attributed interface to either wrap a COM object from unmanaged code or wrap a managed object from C# to expose to unmanaged code, you can use the options in the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute.Options> property to customize which code will be generated. These options mean you don't need to write marshallers for scenarios that you know won't be used.
+
+The source generator uses the new <xref:System.Runtime.InteropServices.Marshalling.StrategyBasedComWrappers> type to create and manage the COM object wrappers and the managed object wrappers. This new type handles providing the expected .NET user experience for COM interop, while providing customization points for advanced users. If your application has its own mechanism for defining types from COM or if you need to support scenarios that source-generated COM doesn't currently support, consider using the new <xref:System.Runtime.InteropServices.Marshalling.StrategyBasedComWrappers> type to add the missing features for your scenario and get the same .NET user experience for your COM types.
+
+If you're using Visual Studio, new analyzers and code fixes make it easy to convert your existing COM interop code to use source-generated interop. Next to each interface that has the <xref:System.Runtime.InteropServices.ComImportAttribute>, a lightbulb offers an option to convert to source-generated interop. The fix changes the interface to use the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute> attribute. And next to every class that implements an interface with `GeneratedComInterfaceAttribute`, a lightbulb offers an option to add the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComClassAttribute> attribute to the type. Once your types are converted, you can move your `DllImport` methods to use `LibraryImportAttribute`.
+
+### Limitations
+
+The COM source generator doesn't support apartment affinity, using the `new` keyword to activate a COM CoClass, and the following APIs:
+
+- <xref:System.Runtime.InteropServices.UnmanagedType.IDispatch>-based interfaces.
+- <xref:System.Runtime.InteropServices.UnmanagedType.IInspectable>-based interfaces.
+- COM properties and events.
+
 ## Configuration-binding source generator
 
 .NET 8 introduces a source generator to provide AOT and trim-friendly [configuration](/aspnet/core/fundamentals/configuration/) in ASP.NET Core. The generator is an alternative to the pre-existing reflection-based implementation.
@@ -130,7 +128,24 @@ The following code shows an example of invoking the binder.
 
 :::code language="csharp" source="../snippets/dotnet-8/csharp/WebSDK/ConfigBindingSG.cs":::
 
-## Reflection improvements
+## Core .NET libraries
+
+This section contains the following subtopics:
+
+- [Reflection](#reflection)
+- [Serialization](#serialization)
+- [Time abstraction](#time-abstraction)
+- [UTF8 improvements](#utf8-improvements)
+- [Methods for working with randomness](#methods-for-working-with-randomness)
+- [Performance-focused types](#performance-focused-types)
+- [System.Numerics and System.Runtime.Intrinsics](#systemnumerics-and-systemruntimeintrinsics)
+- [Data validation](#data-validation)
+- [Metrics](#metrics)
+- [Cryptography](#cryptography)
+- [Networking](#networking)
+- [Stream-based ZipFile methods](#stream-based-zipfile-methods)
+
+### Reflection
 
 [Function pointers](../../../csharp/language-reference/unsafe-code.md#function-pointers) were introduced in .NET 5, however, the corresponding support for reflection wasn't added at that time. When using `typeof` or reflection on a function pointer, for example, `typeof(delegate*<void>())` or `FieldInfo.FieldType` respectively, an <xref:System.IntPtr> was returned. Starting in .NET 8, a <xref:System.Type?displayProperty=nameWithType> object is returned instead. This type provides access to function pointer metadata, including the calling conventions, return type, and parameters.
 
@@ -154,22 +169,6 @@ Calling convention: System.Runtime.CompilerServices.CallConvSuppressGCTransition
 Calling convention: System.Runtime.CompilerServices.CallConvCdecl
 Required modifier for first parameter: System.Runtime.InteropServices.InAttribute
 ```
-
-## Core .NET libraries
-
-This section contains the following subtopics:
-
-- [Serialization](#serialization)
-- [Time abstraction](#time-abstraction)
-- [UTF8 improvements](#utf8-improvements)
-- [Methods for working with randomness](#methods-for-working-with-randomness)
-- [Performance-focused types](#performance-focused-types)
-- [System.Numerics and System.Runtime.Intrinsics](#systemnumerics-and-systemruntimeintrinsics)
-- [Data validation](#data-validation)
-- [Metrics](#metrics)
-- [Cryptography](#cryptography)
-- [Networking](#networking)
-- [Stream-based ZipFile methods](#stream-based-zipfile-methods)
 
 ### Serialization
 

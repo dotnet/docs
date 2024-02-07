@@ -17,7 +17,7 @@ The .NET 8 runtime includes improvements to performance, garbage collection, and
 
 ## .NET SDK
 
-For information about what's new in the .NET SDK, containers, Native AOT, code analysis, and diagnostics, see [What's new in the SDK and containers for .NET 8](sdk-containers.md).
+For information about what's new in the .NET SDK, Native AOT, code analysis, and diagnostics, see [What's new in the SDK and tooling for .NET 8](sdk.md).
 
 ## C# 12
 
@@ -45,7 +45,7 @@ Windows Forms includes improvements to data binding, Visual Studio DPI, and high
 
 ## Windows Presentation Foundation
 
-Windows Presentation Foundation (WPF) adds the ability to use hardware acceleration and a new <xref:Microsoft.Win32.OpenFolderDialog> control. For more information, see [What's new in WPF for .NET 8](/dotnet/desktop/wpf/whats-new/net80?view=netdesktop-8.0).
+Windows Presentation Foundation (WPF) adds the ability to use hardware acceleration and a new <xref:Microsoft.Win32.OpenFolderDialog> control. For more information, see [What's new in WPF for .NET 8](/dotnet/desktop/wpf/whats-new/net80).
 
 ## See also
 

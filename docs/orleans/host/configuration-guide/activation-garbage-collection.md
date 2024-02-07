@@ -7,7 +7,16 @@ zone_pivot_groups: orleans-version
 
 # Activation collection
 
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-7-0"
+<!-- markdownlint-enable MD044 -->
+This article applies to: ✔️ Orleans 7.x and later versions
+:::zone-end
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-3-x"
+<!-- markdownlint-enable MD044 -->
 This article applies to: ✔️ Orleans 3.x and earlier versions
+:::zone-end
 
 A *grain activation* is an in-memory instance of a grain class that gets automatically created by the Orleans runtime on an as-needed basis as a temporary physical embodiment of a grain.
 

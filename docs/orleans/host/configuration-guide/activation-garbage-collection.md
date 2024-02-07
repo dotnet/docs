@@ -33,10 +33,14 @@ As a result, with no burden put on the application code, only recently used grai
 
 **Collection Age Limit**
 
+<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0"
+<!-- markdownlint-enable MD044 -->
 This time after which an idle grain activation becomes subject to collection is called Collection Age Limit. The default Collection Age Limit is 15 minutes, but it can be changed globally or for individual grain classes.
 :::zone-end
+<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
+<!-- markdownlint-enable MD044 -->
 This time after which an idle grain activation becomes subject to collection is called Collection Age Limit. The default Collection Age Limit is 2 hours, but it can be changed globally or for individual grain classes.
 :::zone-end
 

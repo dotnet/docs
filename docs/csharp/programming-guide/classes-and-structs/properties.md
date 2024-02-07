@@ -79,5 +79,6 @@ For more information, see [Properties](~/_csharpstandard/standard/classes.md#157
 ## See also
 
 - [Indexers](../indexers/index.md)
+- [init keyword](../../language-reference/keywords/init.md)
 - [get keyword](../../language-reference/keywords/get.md)
 - [set keyword](../../language-reference/keywords/set.md)

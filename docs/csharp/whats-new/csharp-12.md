@@ -31,9 +31,9 @@ Collection expressions introduce a new terse syntax to create common collection 
 
 Several collection-like types can be created without requiring external BCL support.  These types are:
 
-* Array types, such as `int[]`.
-* <xref:System.Span%601?displayProperty=nameWithType> and <xref:System.ReadOnlySpan%601?displayProperty=nameWithType>.
-* Types that support collection initializers, such as <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>.
+- Array types, such as `int[]`.
+- <xref:System.Span%601?displayProperty=nameWithType> and <xref:System.ReadOnlySpan%601?displayProperty=nameWithType>.
+- Types that support collection initializers, such as <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>.
 
 The following examples show uses of collection expressions:
 
@@ -150,4 +150,4 @@ If you're interested in experimenting with interceptors, you can learn more by r
 
 ## See also
 
-- [What's new in .NET 8](../../core/whats-new/dotnet-8.md)
+- [What's new in .NET 8](../../core/whats-new/dotnet-8/overview.md)

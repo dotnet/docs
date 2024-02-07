@@ -1218,6 +1218,11 @@
             "redirect_url": "/dotnet/core/versions/selection"
         },
         {
+            "source_path_from_root": "/docs/core/whats-new/dotnet-8.md",
+            "redirect_url": "/dotnet/core/whats-new/dotnet-8/overview",
+            "redirect_document_id": true
+        },
+        {
             "source_path_from_root": "/docs/core/whats-new/index.md",
             "redirect_url": "/dotnet/core/whats-new/dotnet-8",
             "ms.custom": "updateeachrelease"

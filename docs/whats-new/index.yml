@@ -25,15 +25,17 @@ landingContent:
   - linkListType: whats-new
     links:
     - text: .NET 8
-      url: ../core/whats-new/dotnet-8.md
+      url: ../core/whats-new/overview/dotnet-8.md
     - text: ASP.NET Core 8.0
       url: /aspnet/core/release-notes/aspnetcore-8.0
     - text: .NET MAUI 8
       url: /dotnet/maui/whats-new/dotnet-8
-    - text: Windows Forms (.NET 8)
-      url: /dotnet/desktop/winforms/whats-new/net80
     - text: EF Core 8
       url: /ef/core/what-is-new/ef-core-8.0/whatsnew
+    - text: Windows Forms (.NET 8)
+      url: /dotnet/desktop/winforms/whats-new/net80
+    - text: WPF (.NET 8)
+      url: /dotnet/desktop/wpf/whats-new/net80
 - title: Latest documentation updates
   linkLists:
   - linkListType: whats-new

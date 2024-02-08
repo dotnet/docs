@@ -158,6 +158,9 @@ To configure the crash dump file generation, use the following options:
 | `⁠-⁠-⁠crashdump-⁠filename` | Specifies the file name of the dump. |
 | `--crashdump-type` | Specifies the type of the dump. Valid values are `Mini`, `Heap`, `Triage`, `Full`. Defaults as `Full`. For more information, see [Types of mini dumps](../diagnostics/collect-dumps-crash.md#types-of-mini-dumps). |
 
+> [!CAUTION]
+> The extension is not compatible with .NET Framework. For .NET Framework you can enable the postmortem debugging with Sysinternals ProdDump as explained in the [documentation](https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/enabling-postmortem-debugging#window-sysinternals-procdump).
+
 ### Hang dump
 
 This extension allows you to create a dump file after a given timeout. This extension is shipped as part of [Microsoft.Testing.Extensions.HangDump](https://nuget.org/packages/Microsoft.Testing.Extensions.HangDump) package.

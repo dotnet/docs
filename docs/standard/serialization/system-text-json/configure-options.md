@@ -1,7 +1,7 @@
 ---
 title: How to instantiate JsonSerializerOptions with System.Text.Json
 description: "Learn about constructors for JsonSerializerOptions instances and how to reuse JsonSerializerOptions instances."
-ms.date: 05/18/2023
+ms.date: 02/07/2024
 no-loc: [System.Text.Json]
 zone_pivot_groups: dotnet-version
 dev_langs:
@@ -62,7 +62,7 @@ The following options have different defaults for web apps:
 * <xref:System.Text.Json.JsonNamingPolicy> = <xref:System.Text.Json.JsonNamingPolicy.CamelCase>
 * <xref:System.Text.Json.JsonSerializerOptions.NumberHandling%2A> = <xref:System.Text.Json.Serialization.JsonNumberHandling.AllowReadingFromString>
 
-The [JsonSerializerOptions constructor](xref:System.Text.Json.JsonSerializerOptions.%23ctor(System.Text.Json.JsonSerializerDefaults)) lets you create a new instance with the default options that ASP.NET Core uses for web apps, as shown in the following example:
+In .NET 9 and later versions, you can use the <xref:System.Text.Json.JsonSerializerOptions.Web?displayProperty=nameWithType> singleton to serialize with the default options that ASP.NET Core uses for web apps. In earlier versions, call the [JsonSerializerOptions constructor](xref:System.Text.Json.JsonSerializerOptions.%23ctor(System.Text.Json.JsonSerializerDefaults)) to create a new instance with the web defaults, as shown in the following example:
 
 :::code language="csharp" source="snippets/how-to-5-0/csharp/OptionsDefaults.cs" highlight="23":::
 :::code language="vb" source="snippets/how-to-5-0/vb/OptionsDefaults.vb" :::

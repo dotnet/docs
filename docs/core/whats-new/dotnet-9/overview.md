@@ -11,7 +11,7 @@ author: gewarren
 
 Learn about the new features in .NET 9 and find links to further documentation.
 
-.NET 9, the successor to [.NET 8](dotnet-8.md), has a special focus on cloud-native apps and performance. It will be [supported for 18 months](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) as a short-term support (STS) release. You can [download .NET 9 here](https://dotnet.microsoft.com/download/dotnet/9.0).
+.NET 9, the successor to [.NET 8](dotnet-8.md), has a special focus on cloud-native apps and performance. It will be [supported for 18 months](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) as a standard-term support (STS) release. You can [download .NET 9 here](https://dotnet.microsoft.com/download/dotnet/9.0).
 
 New for .NET 9, the engineering team posts .NET 9 preview updates on [GitHub Discussions](https://github.com/dotnet/core/discussions). That's a great place to ask questions and provide feedback about the release.
 
@@ -25,6 +25,20 @@ This article has been updated for .NET 9 Preview 1.
 - [Cryptography](#cryptography)
 
 ### Serialization
+
+In <xref:System.Text.Json>, .NET 9 has new options for serializing JSON and a new singleton that makes it easier to serialize using web defaults.
+
+#### Indentation options
+
+<xref:System.Text.Json.JsonSerializerOptions> includes new properties that let you customize the indentation character and indentation size of written JSON.
+
+:::code language="csharp" source="snippets/dotnet-9/csharp/Serialization.cs" id="Indentation":::
+
+#### Default web options
+
+If you want to serialize with the [default options that ASP.NET Core uses](../../../standard/serialization/system-text-json/configure-options.md#web-defaults-for-jsonserializeroptions) for web apps, use the new <xref:System.Text.Json.JsonSerializerOptions.Web?displayProperty=nameWithType> singleton.
+
+:::code language="csharp" source="snippets/dotnet-9/csharp/Serialization.cs" id="Web":::
 
 ### LINQ
 
@@ -40,11 +54,13 @@ New methods `CountBy` and `AggregateBy` have been introduced. These methods make
 
 ### Collections
 
+The <xref:System.Collections.Generic.PriorityQueue%602> collection type in the <xref:System.Collections.Generic> namespace includes a new `Remove()` method that you can use the update the priority of an item in the queue.
+
 #### PriorityQueue.Remove() method
 
 .NET 6 introduced the <xref:System.Collections.Generic.PriorityQueue%602> collection, which provides a simple and fast array-heap implementation. One issue with array heaps in general is that they [don't support priority updates](https://github.com/dotnet/runtime/issues/44871), which makes them prohibitive for use in algorithms such as variations of [Dijkstra's algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm#Using_a_priority_queue).
 
-While it's not possible to implement efficient `O(log n)` priority updates in the existing collection, the new `PriorityQueue.Remove` method makes it possible to emulate priority updates (albeit at `O(n)` time):
+While it's not possible to implement efficient $O(\log n)$ priority updates in the existing collection, the new `PriorityQueue.Remove` method makes it possible to emulate priority updates (albeit at $O(n)$ time):
 
 :::code language="csharp" source="snippets/dotnet-9/csharp/Collections.cs" id="UpdatePriority":::
 
@@ -52,9 +68,11 @@ This method unblocks users who want to implement graph algorithms in contexts wh
 
 ### Cryptography
 
+For cryptography, .NET 9 adds a new one-shot hash method on the <xref:System.Security.Cryptography.CryptographicOperations> type. It also adds new classes that use the KMAC algorithm.
+
 #### CryptographicOperations.HashData() method
 
-Since .NET 5, some static ["one-shot"](../../standard/security/cryptography-model.md#one-shot-apis) implementations of hash functions and related functions have been implemented. These APIs include <xref:System.Security.Cryptography.SHA256.HashData%2A?displayProperty=nameWithType> and <xref:System.Security.Cryptography.HMACSHA256.HashData%2A?displayProperty=nameWithType>. One-shot APIs are preferable to use because they can provide the best possible performance and reduce or eliminate allocations.
+.NET includes several static ["one-shot"](../../standard/security/cryptography-model.md#one-shot-apis) implementations of hash functions and related functions. These APIs include <xref:System.Security.Cryptography.SHA256.HashData%2A?displayProperty=nameWithType> and <xref:System.Security.Cryptography.HMACSHA256.HashData%2A?displayProperty=nameWithType>. One-shot APIs are preferable to use because they can provide the best possible performance and reduce or eliminate allocations.
 
 If a developer wants to provide an API that supports hashing where the caller defines which hash algorithm to use, it's typically done by accepting a <xref:System.Security.Cryptography.HashAlgorithmName> argument. However, using that pattern with one-shot APIs would require switching over every possible <xref:System.Security.Cryptography.HashAlgorithmName> and then using the appropriate method. To solve that problem, .NET 9 introduces the `CryptographicOperations.HashData` API. This API lets you produce a hash or HMAC over an input as a one-shot where the algorithm used is determined by a <xref:System.Security.Cryptography.HashAlgorithmName>.
 

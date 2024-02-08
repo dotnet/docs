@@ -159,7 +159,7 @@ To configure the crash dump file generation, use the following options:
 | `--crashdump-type` | Specifies the type of the dump. Valid values are `Mini`, `Heap`, `Triage`, `Full`. Defaults as `Full`. For more information, see [Types of mini dumps](../diagnostics/collect-dumps-crash.md#types-of-mini-dumps). |
 
 > [!CAUTION]
-> The extension is not compatible with .NET Framework. For .NET Framework you can enable the postmortem debugging with Sysinternals ProdDump. Follow [this](https://learn.microsoft.com/windows-hardware/drivers/debugger/enabling-postmortem-debugging#window-sysinternals-procdump) for full guidance. In this case the dump will be collected also in case of process crash for .NET and you can avoid to use the extension if you've mixed .NET/.NET Framework test applications. The usage of the extension with .NET Framework applications will be silently ignored.
+> The extension is not compatible with .NET Framework and will be silently ignored. For .NET Framework you can enable the postmortem debugging with Sysinternals ProdDump (follow [this article](https://learn.microsoft.com/windows-hardware/drivers/debugger/enabling-postmortem-debugging#window-sysinternals-procdump) for full guidance). The postmortem debugging solution will also collect process crash for .NET so you can avoid the use of the extension if you've mixed .NET/.NET Framework test applications.
 
 ### Hang dump
 

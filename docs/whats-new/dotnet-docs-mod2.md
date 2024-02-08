@@ -60,7 +60,7 @@ Welcome to what's new in the .NET docs for November 2023. This article lists som
 
 ### Updated articles
 
-- [What's new in .NET 8](../core/whats-new/dotnet-8.md) - Add .NET Aspire
+- [What's new in .NET 8](../core/whats-new/dotnet-8/overview.md) - Add .NET Aspire
 - [Runtime configuration options for garbage collection](../core/runtime-config/garbage-collector.md) - Runtimeconfig template
 - [Introduction to trim warnings](../core/deploying/trimming/fixing-warnings.md) - Improvements to trim warnings description and fixes
 

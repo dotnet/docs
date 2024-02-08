@@ -257,7 +257,7 @@ The ability to create a project for an earlier TFM depends on having that versio
   - `None` - No authentication (Default).
   - `Individual` - Individual authentication.
   - `IndividualB2C` - Individual authentication with Azure AD B2C.
-  - `SingleOrg` - Organizational authentication for a single tenant. Entra External ID tenants also use SingleOrg.
+  - `SingleOrg` - Organizational authentication for a single tenant. [Entra External ID](/entra/external-id/) tenants also use `SingleOrg`.
   - `MultiOrg` - Organizational authentication for multiple tenants.
   - `Windows` - Windows authentication.
 

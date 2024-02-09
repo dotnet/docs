@@ -163,69 +163,69 @@ items:
             href: ../core/tutorials/index.md
   - name: What's new in .NET
     items:
-    - name: .NET 9
-      items:
-      - name: What's new
-        href: ../core/whats-new/dotnet-9.md
-      - name: Breaking changes
-        href: ../core/compatibility/9.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
-    - name: .NET 8
-      items:
-      - name: What's new
+      - name: .NET 9
         items:
-        - name: Overview
-          href: ../core/whats-new/dotnet-8/overview.md
-          displayName: whats new, what's new
-        - name: Runtime
-          href: ../core/whats-new/dotnet-8/runtime.md
-        - name: SDK and tooling
-          href: ../core/whats-new/dotnet-8/sdk.md
-        - name: Containers
-          href: ../core/whats-new/dotnet-8/containers.md
-      - name: Breaking changes
-        href: ../core/compatibility/8.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
-    - name: .NET 7
-      items:
-      - name: What's new
-        href: ../core/whats-new/dotnet-7.md
-      - name: Breaking changes
-        href: ../core/compatibility/7.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
-    - name: .NET 6
-      items:
-      - name: What's new
-        href: ../core/whats-new/dotnet-6.md
-      - name: Breaking changes
-        href: ../core/compatibility/6.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
-    - name: .NET 5
-      items:
-      - name: What's new
-        href: ../core/whats-new/dotnet-5.md
-      - name: Breaking changes
-        href: ../core/compatibility/5.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
-    - name: .NET Core 3.1
-      items:
-      - name: What's new
-        href: ../core/whats-new/dotnet-core-3-1.md
-      - name: Breaking changes
-        href: ../core/compatibility/3.1.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
-    - name: .NET Core 3.0
-      items:
-      - name: What's new
-        href: ../core/whats-new/dotnet-core-3-0.md
-      - name: Breaking changes
-        href: ../core/compatibility/3.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
-    - name: .NET Core 2.2
-      href: ../core/whats-new/dotnet-core-2-2.md
-    - name: .NET Core 2.1
-      items:
-      - name: What's new
-        href: ../core/whats-new/dotnet-core-2-1.md
-      - name: Breaking changes
-        href: ../core/compatibility/2.1.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
-    - name: .NET Core 2.0
-      href: ../core/whats-new/dotnet-core-2-0.md
-    - name: .NET Standard
-      href: ../standard/whats-new/whats-new-in-dotnet-standard.md
+          - name: What's new
+            href: ../core/whats-new/dotnet-9/overview.md
+          - name: Breaking changes
+            href: ../core/compatibility/9.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+      - name: .NET 8
+        items:
+          - name: What's new
+            items:
+              - name: Overview
+                href: ../core/whats-new/dotnet-8/overview.md
+                displayName: whats new, what's new
+              - name: Runtime
+                href: ../core/whats-new/dotnet-8/runtime.md
+              - name: SDK and tooling
+                href: ../core/whats-new/dotnet-8/sdk.md
+              - name: Containers
+                href: ../core/whats-new/dotnet-8/containers.md
+          - name: Breaking changes
+            href: ../core/compatibility/8.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+      - name: .NET 7
+        items:
+          - name: What's new
+            href: ../core/whats-new/dotnet-7.md
+          - name: Breaking changes
+            href: ../core/compatibility/7.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+      - name: .NET 6
+        items:
+          - name: What's new
+            href: ../core/whats-new/dotnet-6.md
+          - name: Breaking changes
+            href: ../core/compatibility/6.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+      - name: .NET 5
+        items:
+          - name: What's new
+            href: ../core/whats-new/dotnet-5.md
+          - name: Breaking changes
+            href: ../core/compatibility/5.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+      - name: .NET Core 3.1
+        items:
+          - name: What's new
+            href: ../core/whats-new/dotnet-core-3-1.md
+          - name: Breaking changes
+            href: ../core/compatibility/3.1.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+      - name: .NET Core 3.0
+        items:
+          - name: What's new
+            href: ../core/whats-new/dotnet-core-3-0.md
+          - name: Breaking changes
+            href: ../core/compatibility/3.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+      - name: .NET Core 2.2
+        href: ../core/whats-new/dotnet-core-2-2.md
+      - name: .NET Core 2.1
+        items:
+          - name: What's new
+            href: ../core/whats-new/dotnet-core-2-1.md
+          - name: Breaking changes
+            href: ../core/compatibility/2.1.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+      - name: .NET Core 2.0
+        href: ../core/whats-new/dotnet-core-2-0.md
+      - name: .NET Standard
+        href: ../standard/whats-new/whats-new-in-dotnet-standard.md
   - name: Fundamental coding components
     items:
       - name: Base types overview

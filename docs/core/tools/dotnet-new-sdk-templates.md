@@ -257,7 +257,7 @@ The ability to create a project for an earlier TFM depends on having that versio
   - `None` - No authentication (Default).
   - `Individual` - Individual authentication.
   - `IndividualB2C` - Individual authentication with Azure AD B2C.
-  - `SingleOrg` - Organizational authentication for a single tenant.
+  - `SingleOrg` - Organizational authentication for a single tenant. [Entra External ID](/entra/external-id/) tenants also use `SingleOrg`.
   - `MultiOrg` - Organizational authentication for multiple tenants.
   - `Windows` - Windows authentication.
 
@@ -418,7 +418,7 @@ The ability to create a project for an earlier TFM depends on having that versio
   - `None` - No authentication (Default).
   - `Individual` - Individual authentication.
   - `IndividualB2C` - Individual authentication with Azure AD B2C.
-  - `SingleOrg` - Organizational authentication for a single tenant.
+  - `SingleOrg` - Organizational authentication for a single tenant. Entra External ID tenants also use SingleOrg.
 
 - **`--authority <AUTHORITY>`**
 
@@ -561,7 +561,7 @@ The ability to create a project for an earlier TFM depends on having that versio
   - `None` - No authentication (Default).
   - `Individual` - Individual authentication.
   - `IndividualB2C` - Individual authentication with Azure AD B2C.
-  - `SingleOrg` - Organizational authentication for a single tenant.
+  - `SingleOrg` - Organizational authentication for a single tenant. Entra External ID tenants also use SingleOrg.
   - `MultiOrg` - Organizational authentication for multiple tenants.
   - `Windows` - Windows authentication.
 
@@ -769,7 +769,7 @@ Creates a web API project with AOT publish enabled. For more information, see [N
 
   - `None` - No authentication (Default).
   - `IndividualB2C` - Individual authentication with Azure AD B2C.
-  - `SingleOrg` - Organizational authentication for a single tenant.
+  - `SingleOrg` - Organizational authentication for a single tenant. Entra External ID tenants also use SingleOrg.
   - `Windows` - Windows authentication.
 
 - **`--aad-b2c-instance <INSTANCE>`**

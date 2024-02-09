@@ -4,6 +4,7 @@ using System;
 
 internal class Reflection
 {
+    // <SaveAssembly>
     public void CreateAndSaveAssembly(string assemblyPath)
     {
         AssemblyBuilder ab = AssemblyBuilder.DefinePersistedAssembly(
@@ -35,4 +36,5 @@ internal class Reflection
         MethodInfo method = type.GetMethod("SumMethod");
         Console.WriteLine(method.Invoke(null, [5, 10]));
     }
+    // </SaveAssembly>
 }

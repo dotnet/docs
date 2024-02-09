@@ -1,7 +1,7 @@
 ---
 title: Create a .NET console application using Visual Studio Code
 description: Learn how to create a .NET console application using Visual Studio Code and the .NET CLI.
-ms.date: 01/29/2024
+ms.date: 02/08/2024
 zone_pivot_groups: dotnet-version
 ---
 # Tutorial: Create a .NET console application using Visual Studio Code
@@ -29,6 +29,8 @@ Create a .NET console app project named "HelloWorld".
 1. In **Explorer**, expand **No Folder Opened**, and then select **Create .NET Project**.
 
    :::image type="content" source="media/with-visual-studio-code/create-dotnet-project.png" alt-text="Explorer with Create .NET Project button highlighted.":::
+
+   If you get an error message that says "The .NET SDK cannot be located," you might need to install the .NET SDK. See [the Prerequisites section](#prerequisites). If .NET is installed, you might need to restart Visual Studio Code to pick up the .NET SDK installation.
 
 1. At the prompt **Select a template to create a new .NET project**, select **Console App** and then Press Enter.
 
@@ -81,15 +83,15 @@ The code defines a class, `Program`, with a single method, `Main`, that takes a 
 
    :::image type="content" source="media/with-visual-studio-code/select-debugger.png" alt-text="Select debugger prompt with C# selected.":::
 
-1. At the **Select launch configuration** prompt, select **C#: HelloWorld**.
+1. At the **Select launch configuration** prompt, select **C#: HelloWorld HellopWorld**.
 
    :::image type="content" source="media/with-visual-studio-code/select-launch-configuration.png" alt-text="Select launch configuration prompt with C# HelloWorld selected.":::
 
-   The program runs, displays "Hello, World!" and ends.
+   The program runs, displays "Hello, World!" in the **Debug Console**, and ends.
 
    :::image type="content" source="media/with-visual-studio-code/debug-console-output.png" alt-text="Debug Console window with 'Hello, World!' output.":::
 
-   By default, console output is routed to the **Debug console** the first time you run the app. After that first time, the console output destination depends on whether you're running in debug mode. In debug mode, console output is routed to the **Debug console**. In run mode, console output is routed to the **Terminal** window. For more information, see <https://aka.ms/VSCode-CS-LaunchJson-Console>.
+   By default, console output is routed to the **Debug console** the first time you run the app. After that first time, the default console output destination depends on whether you're running in debug mode. In debug mode, console output is routed to the **Debug console**. In run mode, console output is routed to the **Terminal** window. For more information, see <https://aka.ms/VSCode-CS-LaunchJson-Console>.
 
 ## Enhance the app
 

@@ -95,6 +95,12 @@ KMAC is available on Linux with OpenSSL 3.0 or later, and on Windows 11 Build 26
 
 ### Reflection
 
+In .NET Core versions and .NET 5-8, support for building an assembly and emitting reflection metadata for dynamically created types was limited to a runnable <xref:System.Reflection.Emit.AssemblyBuilder>. The lack of support for *saving* an assembly was often a blocker for customers migrating from .NET Framework to .NET. .NET 9 adds public APIs to <xref:System.Reflection.Emit.AssemblyBuilder> to save an emitted assembly.
+
+The new, persisted <xref:System.Reflection.Emit.AssemblyBuilder> implementation is runtime and platform independent. To create a persisted `AssemblyBuilder` instance, use the new `AssemblyBuilder.DefinePersistedAssembly` API. The existing <xref:System.Reflection.Emit.AssemblyBuilder.DefineDynamicAssembly%2A?displayProperty=nameWithType> API accepts the assembly name and optional custom attributes. To use the new API, pass the core assembly, `System.Private.CoreLib`, which is used for referencing base runtime types. There's no option for <xref:System.Reflection.Emit.AssemblyBuilderAccess>. And for now, the persisted `AssemblyBuilder` implementation only supports saving, not running. After you create an instance of the persisted `AssemblyBuilder`, the subsequent steps for defining a module, type, method, or enum, writing IL, and all other usages remain unchanged. That means you can use existing <xref:System.Reflection.Emit> code as-is for saving the assembly. The following code shows an example.
+
+:::code language="csharp" source="snippets/dotnet-9/csharp/Reflection.cs" id="SaveAssembly":::
+
 ## See also
 
 - [Announcing .NET 9 Preview 1](https://devblogs.microsoft.com/dotnet/announcing-dotnet-9-preview-1) (blog post)

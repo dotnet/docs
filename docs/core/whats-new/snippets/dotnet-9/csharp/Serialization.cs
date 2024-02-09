@@ -24,11 +24,11 @@ internal class Serialization
         // </Indentation>
 
         // <Web>
-        string webjson = JsonSerializer.Serialize(
+        string webJson = JsonSerializer.Serialize(
             new { SomeValue = 42 },
-            JsonSerializerOptions.Web
+            JsonSerializerOptions.Web // Defaults to camelCase naming policy.
             );
-        Console.WriteLine(webjson);
+        Console.WriteLine(webJson);
         // {"someValue":42}
         // </Web>
     }

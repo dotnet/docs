@@ -2,8 +2,8 @@
 title: "Migrate from Newtonsoft.Json to System.Text.Json - .NET"
 description: "Learn about the differences between Newtonsoft.Json and System.Text.Json and how to migrate to System.Text.Json."
 no-loc: [System.Text.Json, Newtonsoft.Json]
-ms.date: 10/20/2023
-zone_pivot_groups: dotnet-version
+ms.date: 02/08/2024
+zone_pivot_groups: dotnet-preview-version
 helpviewer_keywords:
   - "JSON serialization"
   - "serializing objects"
@@ -739,7 +739,7 @@ Starting in .NET 6, you can use <xref:System.Text.Json.Nodes.JsonNode> type and 
 
 Searches for JSON tokens using `JObject` or `JArray` from `Newtonsoft.Json` tend to be relatively fast because they're lookups in some dictionary. By comparison, searches on `JsonElement` require a sequential search of the properties and hence are relatively slow (for example when using `TryGetProperty`). <xref:System.Text.Json?displayProperty=fullName> is designed to minimize initial parse time rather than lookup time. For more information, see [How to search a JsonDocument and JsonElement for sub-elements](use-dom.md#how-to-search-a-jsondocument-and-jsonelement-for-sub-elements).
 
-## Utf8JsonReader compared to JsonTextReader
+## Utf8JsonReader vs. JsonTextReader
 
 <xref:System.Text.Json.Utf8JsonReader?displayProperty=fullName> is a high-performance, low allocation, forward-only reader for UTF-8 encoded JSON text, read from a [ReadOnlySpan\<byte>](xref:System.ReadOnlySpan%601) or [ReadOnlySequence\<byte>](xref:System.Buffers.ReadOnlySequence%601). The `Utf8JsonReader` is a low-level type that can be used to build custom parsers and deserializers.
 
@@ -753,12 +753,12 @@ The `JsonTextReader` in `Newtonsoft.Json` is a class. The `Utf8JsonReader` type 
 
 ### Multi-targeting
 
-If you need to continue to use `Newtonsoft.Json` for certain target frameworks, you can multi-target and have two implementations. However, this is not trivial and would require some `#ifdefs` and source duplication. One way to share as much code as possible is to create a `ref struct` wrapper around `Utf8JsonReader` and `Newtonsoft.Json` `JsonTextReader`. This wrapper would unify the public surface area while isolating the behavioral differences. This lets you isolate the changes mainly to the construction of the type, along with passing the new type around by reference. This is the pattern that the [Microsoft.Extensions.DependencyModel](https://www.nuget.org/packages/Microsoft.Extensions.DependencyModel) library follows:
+If you need to continue to use `Newtonsoft.Json` for certain target frameworks, you can multi-target and have two implementations. However, this is not trivial and would require some `#ifdefs` and source duplication. One way to share as much code as possible is to create a `ref struct` wrapper around `Utf8JsonReader` and `Newtonsoft.Json.JsonTextReader`. This wrapper would unify the public surface area while isolating the behavioral differences. This lets you isolate the changes mainly to the construction of the type, along with passing the new type around by reference. This is the pattern that the [Microsoft.Extensions.DependencyModel](https://www.nuget.org/packages/Microsoft.Extensions.DependencyModel) library follows:
 
 * [UnifiedJsonReader.JsonTextReader.cs](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/installer/managed/Microsoft.Extensions.DependencyModel/UnifiedJsonReader.JsonTextReader.cs)
 * [UnifiedJsonReader.Utf8JsonReader.cs](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/installer/managed/Microsoft.Extensions.DependencyModel/UnifiedJsonReader.Utf8JsonReader.cs)
 
-## Utf8JsonWriter compared to JsonTextWriter
+## Utf8JsonWriter vs. JsonTextWriter
 
 <xref:System.Text.Json.Utf8JsonWriter?displayProperty=fullName> is a high-performance way to write UTF-8 encoded JSON text from common .NET types like `String`, `Int32`, and `DateTime`. The writer is a low-level type that can be used to build custom serializers.
 
@@ -768,6 +768,19 @@ If you need to continue to use `Newtonsoft.Json` for certain target frameworks, 
 
 ### Customize JSON format
 
+::: zone pivot="dotnet-9-0"
+
+`JsonTextWriter` includes the following settings, for which <xref:System.Text.Json.Utf8JsonWriter> has no equivalent:
+
+* [QuoteChar](https://www.newtonsoft.com/json/help/html/P_Newtonsoft_Json_JsonTextWriter_QuoteChar.htm) - Specifies the character to use to surround string values. `Utf8JsonWriter` always uses double quotes.
+* [QuoteName](https://www.newtonsoft.com/json/help/html/P_Newtonsoft_Json_JsonTextWriter_QuoteName.htm) - Specifies whether or not to surround property names with quotes. `Utf8JsonWriter` always surrounds them with quotes.
+
+Starting in .NET 9, you can customize the indentation character and size for <xref:System.Text.Json.Utf8JsonWriter> using options exposed by the <xref:System.Text.Json.JsonWriterOptions> struct.
+
+::: zone-end
+
+::: zone pivot="dotnet-8-0, dotnet-7-0, dotnet-6-0"
+
 `JsonTextWriter` includes the following settings, for which `Utf8JsonWriter` has no equivalent:
 
 * [Indentation](https://www.newtonsoft.com/json/help/html/P_Newtonsoft_Json_JsonTextWriter_Indentation.htm) - Specifies how many characters to indent. `Utf8JsonWriter` always indents by 2 characters.
@@ -775,18 +788,13 @@ If you need to continue to use `Newtonsoft.Json` for certain target frameworks, 
 * [QuoteChar](https://www.newtonsoft.com/json/help/html/P_Newtonsoft_Json_JsonTextWriter_QuoteChar.htm) - Specifies the character to use to surround string values. `Utf8JsonWriter` always uses double quotes.
 * [QuoteName](https://www.newtonsoft.com/json/help/html/P_Newtonsoft_Json_JsonTextWriter_QuoteName.htm) - Specifies whether or not to surround property names with quotes. `Utf8JsonWriter` always surrounds them with quotes.
 
+::: zone-end
+
 There are no workarounds that would let you customize the JSON produced by `Utf8JsonWriter` in these ways.
 
 ### Write Timespan, Uri, or char values
 
 `JsonTextWriter` provides `WriteValue` methods for [TimeSpan](https://www.newtonsoft.com/json/help/html/M_Newtonsoft_Json_JsonTextWriter_WriteValue_18.htm), [Uri](https://www.newtonsoft.com/json/help/html/M_Newtonsoft_Json_JsonTextWriter_WriteValue_22.htm), and [char](https://www.newtonsoft.com/json/help/html/M_Newtonsoft_Json_JsonTextWriter_WriteValue_3.htm) values. `Utf8JsonWriter` doesn't have equivalent methods. Instead, format these values as strings (by calling `ToString()`, for example) and call <xref:System.Text.Json.Utf8JsonWriter.WriteStringValue%2A>.
-
-### Multi-targeting
-
-If you need to continue to use `Newtonsoft.Json` for certain target frameworks, you can multi-target and have two implementations. However, this is not trivial and would require some `#ifdefs` and source duplication. One way to share as much code as possible is to create a wrapper around `Utf8JsonWriter` and `Newtonsoft` `JsonTextWriter`. This wrapper would unify the public surface area while isolating the behavioral differences. This lets you isolate the changes mainly to the construction of the type. [Microsoft.Extensions.DependencyModel](https://www.nuget.org/packages/Microsoft.Extensions.DependencyModel) library follows:
-
-* [UnifiedJsonWriter.JsonTextWriter.cs](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/installer/managed/Microsoft.Extensions.DependencyModel/UnifiedJsonWriter.JsonTextWriter.cs)
-* [UnifiedJsonWriter.Utf8JsonWriter.cs](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/installer/managed/Microsoft.Extensions.DependencyModel/UnifiedJsonWriter.Utf8JsonWriter.cs)
 
 ## TypeNameHandling.All not supported
 

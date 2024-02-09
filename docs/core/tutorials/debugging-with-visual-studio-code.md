@@ -1,7 +1,7 @@
 ---
 title: Debug a .NET console application using Visual Studio Code
 description: Learn how to debug a .NET console app using Visual Studio Code.
-ms.date: 01/29/2024
+ms.date: 02/09/2024
 zone_pivot_groups: dotnet-version
 ---
 # Tutorial: Debug a .NET console application using Visual Studio Code
@@ -106,7 +106,7 @@ The program displays the string that the user enters. What happens if the user d
    String.IsNullOrEmpty(name)
    ```
 
-   :::image type="content" source="media/debugging-with-visual-studio-code/conditional-expression-net6.png" alt-text="Enter a conditional expression":::
+   :::image type="content" source="media/debugging-with-visual-studio-code/conditional-expression-net8.png" alt-text="Enter a conditional expression":::
 
    Each time the breakpoint is hit, the debugger calls the `String.IsNullOrEmpty(name)` method, and it breaks on this line only if the method call returns `true`.
 

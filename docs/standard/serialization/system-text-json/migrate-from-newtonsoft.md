@@ -38,7 +38,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 * ⚠️ Not supported, but workaround is possible. The workarounds are [custom converters](converters-how-to.md), which may not provide complete parity with `Newtonsoft.Json` functionality. For some of these, sample code is provided as examples. If you rely on these `Newtonsoft.Json` features, migration will require modifications to your .NET object models or other code changes.
 * ❌ Not supported, and workaround is not practical or possible. If you rely on these `Newtonsoft.Json` features, migration will not be possible without significant changes.
 
-::: zone pivot="dotnet-8-0"
+::: zone pivot="dotnet-9-0, dotnet-8-0"
 
 | Newtonsoft.Json feature                               | System.Text.Json equivalent |
 |-------------------------------------------------------|-----------------------------|
@@ -477,7 +477,7 @@ In <xref:System.Text.Json?displayProperty=fullName>, use the [[JsonConstructor]]
 
 In `Newtonsoft.Json`, you specify that a property is required by setting `Required` on the `[JsonProperty]` attribute. `Newtonsoft.Json` throws an exception if no value is received in the JSON for a property marked as required.
 
-::: zone pivot="dotnet-7-0"
+::: zone pivot="dotnet-9-0, dotnet-8-0, dotnet-7-0"
 
 Starting in .NET 7, you can use the C# `required` modifier or the <xref:System.Text.Json.Serialization.JsonRequiredAttribute> attribute on a required property. System.Text.Json throws an exception if the JSON payload doesn't contain a value for the marked property. For more information, see [Required properties](required-properties.md).
 
@@ -588,7 +588,7 @@ The `JsonConvert.PopulateObject` method in `Newtonsoft.Json` deserializes a JSON
 
 ### Reuse rather than replace properties
 
-:::zone pivot="dotnet-8-0"
+:::zone pivot="dotnet-9-0, dotnet-8-0"
 
 Starting in .NET 8, System.Text.Json supports reusing initialized properties rather than replacing them. There are some differences in behavior, which you can read about in the [API proposal](https://github.com/dotnet/runtime/issues/78556).
 
@@ -604,7 +604,7 @@ The `ObjectCreationHandling` setting in `Newtonsoft.Json` lets you specify that 
 
 ### Populate properties without setters
 
-:::zone pivot="dotnet-8-0"
+:::zone pivot="dotnet-9-0, dotnet-8-0"
 
 Starting in .NET 8, System.Text.Json supports populating properties, including those that don't have a setter. For more information, see [Populate initialized properties](populate-properties.md).
 
@@ -618,7 +618,7 @@ During deserialization, `Newtonsoft.Json` adds objects to a collection even if t
 
 ### Snake case naming policy
 
-:::zone pivot="dotnet-8-0"
+:::zone pivot="dotnet-9-0, dotnet-8-0"
 
 System.Text.Json includes a built-in naming policy for snake case. However, there are some behavior differences with `Newtonsoft.Json` for some inputs. The following table shows some of these differences when converting input using the <xref:System.Text.Json.JsonNamingPolicy.SnakeCaseLower?displayProperty=nameWithType> policy.
 
@@ -775,7 +775,10 @@ If you need to continue to use `Newtonsoft.Json` for certain target frameworks, 
 * [QuoteChar](https://www.newtonsoft.com/json/help/html/P_Newtonsoft_Json_JsonTextWriter_QuoteChar.htm) - Specifies the character to use to surround string values. `Utf8JsonWriter` always uses double quotes.
 * [QuoteName](https://www.newtonsoft.com/json/help/html/P_Newtonsoft_Json_JsonTextWriter_QuoteName.htm) - Specifies whether or not to surround property names with quotes. `Utf8JsonWriter` always surrounds them with quotes.
 
-Starting in .NET 9, you can customize the indentation character and size for <xref:System.Text.Json.Utf8JsonWriter> using options exposed by the <xref:System.Text.Json.JsonWriterOptions> struct.
+Starting in .NET 9, you can customize the indentation character and size for <xref:System.Text.Json.Utf8JsonWriter> using options exposed by the <xref:System.Text.Json.JsonWriterOptions> struct:
+
+* `JsonWriterOptions.IndentCharacter` <!-- <xref:System.Text.Json.JsonWriterOptions.IndentCharacter> -->
+* `JsonWriterOptions.IndentSize` <!-- <xref:System.Text.Json.JsonWriterOptions.IndentSize> -->
 
 ::: zone-end
 

@@ -112,3 +112,15 @@ groups:
       title: C# and Visual Basic
     - id: lang-fsharp
       title: F#
+- id: ubuntu-set-one
+  title: Ubuntu Version
+  prompt: Choose the Ubuntu Distribution Version
+  pivots:
+    - id: os-linux-ubuntu-2310
+      title: "23.10"
+    - id: os-linux-ubuntu-2304
+      title: "23.04"
+    - id: os-linux-ubuntu-2210
+      title: "22.10"
+    - id: os-linux-ubuntu-2204
+      title: "22.04"

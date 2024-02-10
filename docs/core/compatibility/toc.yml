@@ -84,6 +84,8 @@ items:
         href: core-libraries/8.0/decodefromutf8-whitespace.md
       - name: Boolean-backed enum type support removed
         href: core-libraries/8.0/bool-backed-enum.md
+      - name: Drive's current directory path enumeration
+        href: core-libraries/8.0/drive-current-dir-paths.md
       - name: Enumerable.Sum throws new OverflowException for some inputs
         href: core-libraries/8.0/enumerable-sum.md
       - name: FileStream writes when pipe is closed
@@ -198,6 +200,8 @@ items:
         href: sdk/8.0/trimming-unsupported-targetframework.md
       - name: Unlisted packages not installed by default
         href: sdk/8.0/unlisted-versions.md
+      - name: .user file imported in outer builds
+        href: sdk/8.0/user-file.md
       - name: Version requirements for .NET 8 SDK
         href: sdk/8.0/version-requirements.md
     - name: Serialization
@@ -1154,6 +1158,8 @@ items:
         href: core-libraries/8.0/decodefromutf8-whitespace.md
       - name: Boolean-backed enum type support removed
         href: core-libraries/8.0/bool-backed-enum.md
+      - name: Drive's current directory path enumeration
+        href: core-libraries/8.0/drive-current-dir-paths.md
       - name: Enumerable.Sum throws new OverflowException for some inputs
         href: core-libraries/8.0/enumerable-sum.md
       - name: FileStream writes when pipe is closed
@@ -1598,6 +1604,8 @@ items:
         href: sdk/8.0/trimming-unsupported-targetframework.md
       - name: Unlisted packages not installed by default
         href: sdk/8.0/unlisted-versions.md
+      - name: .user file imported in outer builds
+        href: sdk/8.0/user-file.md
       - name: Version requirements for .NET 8 SDK
         href: sdk/8.0/version-requirements.md
     - name: .NET 7

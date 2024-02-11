@@ -88,6 +88,16 @@ The following code is compiled when `MYTEST` is **not** defined:
 
 You can use the operators [`==` (equality)](operators/equality-operators.md#equality-operator-) and [`!=` (inequality)](operators/equality-operators.md#inequality-operator-) to test for the [`bool`](builtin-types/bool.md) values `true` or `false`. `true` means the symbol is defined. The statement `#if DEBUG` has the same meaning as `#if (DEBUG == true)`. You can use the [`&&` (and)](operators/boolean-logical-operators.md#conditional-logical-and-operator-), [`||` (or)](operators/boolean-logical-operators.md#conditional-logical-or-operator-), and [`!` (not)](operators/boolean-logical-operators.md#logical-negation-operator-) operators to evaluate whether multiple symbols have been defined. You can also group symbols and operators with parentheses.
 
+The following is a complex directive that allows your code to take advantage of newer .NET features while remaining backward compatible.  For example, let's say we're using a NuGet package in our code, but the package only supports .NET 6 and up as well as .NET Standard 2.0 and up:
+
+```csharp
+#if (NET6_0_OR_GREATER || NETSTANDARD2_0_OR_GREATER)
+    Console.WriteLine("Using .NET 6+ or .NET Standard 2+ code.");
+#elif (!NET6_0_OR_GREATER && !NETSTANDARD2_0_OR_GREATER)
+    Console.WriteLine("Using older code that doesn't support the above .NET versions.");
+#endif
+```
+
 `#if`, along with the `#else`, `#elif`, `#endif`, `#define`, and `#undef` directives, lets you include or exclude code based on the existence of one or more symbols. Conditional compilation can be useful when compiling code for a debug build or when compiling for a specific configuration.
 
 A conditional directive beginning with an `#if` directive must explicitly be terminated with an `#endif` directive. `#define` lets you define a symbol. By using the symbol as the expression passed to the `#if` directive, the expression evaluates to `true`. You can also define a symbol with the [**DefineConstants**](compiler-options/language.md#defineconstants) compiler option. You can undefine a symbol with `#undef`. The scope of a symbol created with `#define` is the file in which it was defined. A symbol that you define with **DefineConstants** or with `#define` doesn't conflict with a variable of the same name. That is, a variable name shouldn't be passed to a preprocessor directive, and a symbol can only be evaluated by a preprocessor directive.

@@ -43,9 +43,10 @@ After you have studied this guide, your next step would be to learn about produc
 
 ## Version
 
-This guide has been revised to cover **.NET 7** version along with many additional updates related to the same "wave" of technologies (that is, Azure and additional third-party technologies) coinciding in time with the .NET 7 release. 
+This guide has been revised to cover **.NET 7** version along with many additional updates related to the same "wave" of technologies (that is, Azure and additional third-party technologies) coinciding in time with the .NET 7 release.
 
-> Note: A new version of this eBook is being created for .NET 8 and the new [eShop](https://github.com/dotnet/eshop) sample.
+> [!NOTE]
+> A new version of this eBook is being created for .NET 8 and the new [eShop](https://github.com/dotnet/eshop) sample.
 
 ## What this guide does not cover
 

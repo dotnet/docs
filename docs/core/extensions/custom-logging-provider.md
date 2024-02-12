@@ -37,7 +37,7 @@ It's a good practice to call <xref:Microsoft.Extensions.Logging.ILogger.IsEnable
 
 :::code language="csharp" source="snippets/configuration/console-custom-logging/ColorConsoleLogger.cs" range="15-16":::
 
-The logger is instantiated with the `name` and a `Func<ColorConsoleLoggerConfiguration>`, which returns the current config &mdash; this handles updates to the config values as monitored through the <xref:Microsoft.Extensions.Options.IOptionsMonitor%601.OnChange%2A?displayProperty=nameWithType> callback.
+The logger is instantiated with the `name` and a `Func<ColorConsoleLoggerConfiguration>`, which returns the current config&mdash;this handles updates to the config values as monitored through the <xref:Microsoft.Extensions.Options.IOptionsMonitor%601.OnChange%2A?displayProperty=nameWithType> callback.
 
 > [!IMPORTANT]
 > The <xref:Microsoft.Extensions.Logging.ILogger.Log%2A?displayProperty=nameWithType> implementation checks if the `config.EventId` value is set. When `config.EventId` is not set or when it matches the exact `logEntry.EventId`, the logger logs in color.

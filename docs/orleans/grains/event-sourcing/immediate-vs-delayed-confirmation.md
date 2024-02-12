@@ -49,11 +49,11 @@ Which returns a "tentative" state, obtained from "State" by applying all the unc
 
 ## Concurrency guarantees
 
-Note that Orleans turn-based scheduling (cooperative concurrency) guarantees always apply, even when using reentrancy or delayed confirmation. This means that even though several methods may be in progress, only one can be actively executing &mdash; all others are stuck at an await, so there are never any true races caused by parallel threads.
+Note that Orleans turn-based scheduling (cooperative concurrency) guarantees always apply, even when using reentrancy or delayed confirmation. This means that even though several methods may be in progress, only one can be actively executing&mdash;all others are stuck at an await, so there are never any true races caused by parallel threads.
 
 In particular, note that:
 
-- The properties <xref:Orleans.EventSourcing.JournaledGrain%602.State%2A>, <xref:Orleans.EventSourcing.JournaledGrain%602.TentativeState>, <xref:Orleans.EventSourcing.JournaledGrain%602.Version%2A>, and <xref:Orleans.EventSourcing.JournaledGrain%602.UnconfirmedEvents%2A> can change during the execution of a method.
-- But such changes can only happen while stuck at an await.
+* The properties <xref:Orleans.EventSourcing.JournaledGrain%602.State%2A>, <xref:Orleans.EventSourcing.JournaledGrain%602.TentativeState>, <xref:Orleans.EventSourcing.JournaledGrain%602.Version%2A>, and <xref:Orleans.EventSourcing.JournaledGrain%602.UnconfirmedEvents%2A> can change during the execution of a method.
+* But such changes can only happen while stuck at an await.
 
-These guarantees assume that the user code stays within the [recommended practice](../external-tasks-and-grains.md) concerning tasks and async/await (in particular, does not use thread pool tasks, or only uses them for code that does not call grain functionality and that are properly awaited).  
+These guarantees assume that the user code stays within the [recommended practice](../external-tasks-and-grains.md) concerning tasks and async/await (in particular, does not use thread pool tasks, or only uses them for code that does not call grain functionality and that are properly awaited).

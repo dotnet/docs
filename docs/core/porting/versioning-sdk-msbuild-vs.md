@@ -78,7 +78,7 @@ Starting with .NET SDK 7.0.100 and .NET SDK 6.0.300, a policy has been put into 
 | 8.0.200 | 17.9 | 17.8 | Net8.0 | Net8.0 |
 
 > [!NOTE]
-> The table depicts how these versioning rules will be applied going forward, starting with .NET SDK 7.0.100 and .NET SDK 6.0.300. It also depicts how the policy would have applied to previously shipped versions of the .NET SDK, had it been in place then. However, the requirements for previous versions of the SDK don't change &mdash; that is, the minimum required version of Visual Studio for .NET SDK 6.0.100 or 6.0.200 remains 16.10.
+> The table depicts how these versioning rules will be applied going forward, starting with .NET SDK 7.0.100 and .NET SDK 6.0.300. It also depicts how the policy would have applied to previously shipped versions of the .NET SDK, had it been in place then. However, the requirements for previous versions of the SDK don't change&mdash;that is, the minimum required version of Visual Studio for .NET SDK 6.0.100 or 6.0.200 remains 16.10.
 
 > <sup>1</sup> A breaking change in 7.0.300 for Blazor and Razor development requires Visual Studio version 17.6 or newer. For more information, see [dotnet/razor issue 8718](https://github.com/dotnet/razor/issues/8718).
 

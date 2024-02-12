@@ -383,6 +383,7 @@ For more information about using .NET in a Docker container, see [Introduction t
 After installing the .NET SDK, you may run into problems trying to run .NET CLI commands. This section collects those common problems and provides solutions.
 
 - [No .NET SDK was found](#no-net-sdk-was-found)
+- [Building apps is slower than expected](#building-apps-is-slower-than-expected)
 
 ### No .NET SDK was found
 
@@ -413,6 +414,10 @@ Most likely you installed both the x86 (32-bit) and x64 (64-bit) versions of the
 01. Use the **Move Up** and **Move Down** buttons to move the **C:\\Program Files\\dotnet\\** entry above **C:\\Program Files (x86)\\dotnet\\**.
 
     :::image type="content" source="media/windows/edit-vars.png" alt-text="The environment variables list for the system.":::
+
+### Building apps is slower than expected
+
+Check if the Smart App Control Windows feature is off. Smart App Control is not recommended to be enabled on machines used for development. It should be off as any other setting may negatively impact SDK performance.
 
 ## Next steps
 

@@ -12,7 +12,7 @@ The protocol relies on an external service to provide an abstraction of <xref:Or
 
 In addition to the <xref:Orleans.IMembershipTable> each silo participates in a fully distributed peer-to-peer membership protocol that detects failed silos and reaches an agreement on a set of alive silos. We start by describing the internal implementation of Orleans's membership protocol below and later on describe the implementation of the `IMembershipTable`.
 
-### The Basic Membership Protocol:
+### The Basic Membership Protocol
 
 1. Upon startup every silo adds an entry for itself into a well-known, shared table, using an implementation of <xref:Orleans.IMembershipTable>. A combination of silo identity (`ip:port:epoch`) and service deployment id is used as unique keys in the table. Epoch is just time in ticks when this silo started, and as such `ip:port:epoch` is guaranteed to be unique in a given Orleans deployment.
 
@@ -74,13 +74,13 @@ In addition to the <xref:Orleans.IMembershipTable> each silo participates in a f
 
 1. **What happens if the table is not accessible for some time**:
 
-    When the storage service is down, unavailable, or there are communication problems with it &mdash; our protocol will NOT declare silos as dead by mistake in such a case. Currently, operational silos will keep working without any problems. However, we won't be able to declare a silo dead (if we detected some silo is dead via missed pings we won't be able to write this fact to the table) and also won't be able to allow new silos to join. So completeness will suffer, but accuracy will not &mdash; partitioning from the table will never cause us to declare silo as dead by mistake. Also, in case of a partial network partition (if some silos can access the table and some not), it could happen that we will declare a dead silo as dead, but it will take some time until all other silos learn about it. So detection could be delayed, but we will never wrongly kill someone due to table unavailability.
+    When the storage service is down, unavailable, or there are communication problems with it, the Orleans protocol does NOT declare silos as dead by mistake. Operational silos will keep working without any problems. However, Orleans won't be able to declare a silo dead (if it detects some silo is dead via missed pings, it won't be able to write this fact to the table) and also won't be able to allow new silos to join. So completeness will suffer, but accuracy will not&mdash;partitioning from the table will never cause Orleans to declare silo as dead by mistake. Also, in case of a partial network partition (if some silos can access the table and some not), it could happen that Orleans will declare a dead silo as dead, but it will take some time until all other silos learn about it. So detection could be delayed, but Orleans will never wrongly kill a silo due to table unavailability.
 
 1. **Direct IAmAlive writes into the table for diagnostics only**:
 
     In addition to heartbeats that are sent between the silos, each silo also periodically updates an "I Am Alive" column in his row in the table. This "I Am Alive" column is only used **for manual troubleshooting and diagnostics** and is not used by the membership protocol itself. It is usually written at a much lower frequency (once every 5 minutes) and serves as a very useful tool for system administrators to check the liveness of the cluster or easily find out when the silo was last alive.
 
-### Extension to order membership views:
+### Extension to order membership views
 
 The basic membership protocol described above was later extended to support ordered membership views. We will briefly describe the reasons for this extension and how it is implemented. The extension does not change anything in the above design, just adds property that all membership configurations are globally totally ordered.
 

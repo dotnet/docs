@@ -5,7 +5,7 @@ ms.date: 02/09/2024
 ---
 # Inline array struct size limit is enforced
 
-The <xref:System.Runtime.CompilerServices.InlineArrayAttribute> attribute was introduced in .NET 8 to annotate struct types that have a single field. Inline array structs were intended to have a size limit of 1 MiB. However, due to a bug, the limit wasn't enforced for inline array structs that have a sequential layout, which is also the default layout as emitted by C#. This change enforces the size limit.
+The <xref:System.Runtime.CompilerServices.InlineArrayAttribute> attribute was introduced in .NET 8 to annotate struct types that have a single field. Inline array structs were intended to have a size limit of 1 mebibyte (MiB). However, due to a bug, the limit wasn't enforced for inline array structs that have a sequential layout, which is also the default layout as emitted by C#. This change enforces the size limit.
 
 ## Previous behavior
 

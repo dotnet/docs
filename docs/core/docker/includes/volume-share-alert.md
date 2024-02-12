@@ -6,7 +6,7 @@ ms.topic: include
 ---
 
 > [!IMPORTANT]
-> When using Docker Desktop and Visual Studio, to avoid errors related to _volume sharing_, ensure that _volume sharing_ is enabled.
+> When using Docker Desktop and Visual Studio, to avoid errors related to _volume sharing_, ensure that volume sharing is enabled.
 >
 > 1. On the **Settings** screen in Docker Desktop, select **Shared Drives**.
 > 2. Select the drives containing your project files.

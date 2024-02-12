@@ -417,7 +417,7 @@ Most likely you installed both the x86 (32-bit) and x64 (64-bit) versions of the
 
 ### Building apps is slower than expected
 
-Check if the Smart App Control Windows feature is off. Smart App Control is not recommended to be enabled on machines used for development. It should be off as any other setting may negatively impact SDK performance.
+Ensure that the Smart App Control Windows feature is off. Smart App Control isn't recommended to be enabled on machines used for development. It should be off as any other setting may negatively impact SDK performance.
 
 ## Next steps
 

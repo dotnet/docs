@@ -37,7 +37,7 @@ static class Linq
             data.AggregateBy(
                 keySelector: entry => entry.id,
                 seed: 0,
-                (totalScore, curr) => totalScore += curr.score
+                (totalScore, curr) => totalScore + curr.score
                 );
 
         foreach (var item in aggregatedData)

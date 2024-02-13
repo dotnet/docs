@@ -1,2 +1,2 @@
-﻿//Linq.RunIt();
-Serialization.RunIt();
+﻿Linq.RunIt();
+//Serialization.RunIt();

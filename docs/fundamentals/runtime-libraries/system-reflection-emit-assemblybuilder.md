@@ -64,9 +64,9 @@ public static DefinePersistedAssembly(AssemblyName name, Assembly coreAssembly,
 
 The `coreAssembly` parameter is used to resolve base runtime types and can be used for resolving reference assembly versioning.
 
-- if `Reflection.Emit` is used to generate assembly that targets specific TFM, the reference assemblies for the given TFM should be opened using `MetadataLoadContext` and the value of [MetadataLoadContext.CoreAssembly](https://learn.microsoft.com/dotnet/api/system.reflection.metadataloadcontext.coreassembly) property should be used as the coreAssembly. It allows the generator to run on one .NET runtime version and target a different .NET runtime version.
+- If `Reflection.Emit` is used to generate an assembly that targets a specific TFM, open the reference assemblies for the given TFM using `MetadataLoadContext` and use the value of the [MetadataLoadContext.CoreAssembly](xref:System.Reflection.MetadataLoadContext.CoreAssembly) property for `coreAssembly`. This value allows the generator to run on one .NET runtime version and target a different .NET runtime version.
 
-- If `Reflection.Emit` is used to generate an assembly that is only going to be executed on the same runtime version as the runtime version that the compiler is running on (typically in-proc), the core assembly can be `typeof(object).Assembly`. The reference assemblies are not necessary in this case.
+- If `Reflection.Emit` is used to generate an assembly that's only going to be executed on the same runtime version as the runtime version that the compiler is running on (typically in-proc), the core assembly can be `typeof(object).Assembly`. The reference assemblies aren't necessary in this case.
 
 The following example demonstrates how to create and save an assembly to a stream and run it:
 
@@ -96,9 +96,9 @@ public void CreateSaveAndRunAssembly(string assemblyPath)
 ```
 
 > [!NOTE]
-> The metadata tokens for all members are populated on `Save(...)` operation, do not use the tokens of generated type and its members before saving as they will have default values or throw. It is safe to use tokens for types that are referenced, not generated.
+> The metadata tokens for all members are populated on the `Save(...)` operation. Don't use the tokens of a generated type and its members before saving, as they'll have default values or throw exceptions. It's safe to use tokens for types that are referenced, not generated.
 >
-> Some APIs that are not improtant for emitting assembly are not implemented, for example `GetCustomAttributes()` is not implemented, with the runtime implementation you were able to use those APIs after creating the type, for persisted `AssemblyBuilder` they would throw `NotSupportedException` or `NotImplementedException`. If you have a scenario that needs those APIs implemented file an issue in the [repo](https://github.com/dotnet/runtime).
+> Some APIs that aren't important for emitting an assembly aren't implemented; for example, `GetCustomAttributes()` is not implemented. With the runtime implementation, you were able to use those APIs after creating the type. For the persisted `AssemblyBuilder`, they throw `NotSupportedException` or `NotImplementedException`. If you have a scenario that requires those APIs, file an issue in the [dotnet/runtime repo](https://github.com/dotnet/runtime).
 
 For an alternative way to generate assembly files, see <xref:System.Reflection.Metadata.Ecma335.MetadataBuilder>.
 
@@ -108,7 +108,7 @@ In .NET Framework, dynamic assemblies and modules can be saved to files. To supp
 
 The dynamic modules in the persistable dynamic assembly are saved when the dynamic assembly is saved using the <xref:System.Reflection.Emit.AssemblyBuilder.Save%2A> method. To generate an executable, the <xref:System.Reflection.Emit.AssemblyBuilder.SetEntryPoint%2A> method must be called to identify the method that is the entry point to the assembly. Assemblies are saved as DLLs by default, unless the <xref:System.Reflection.Emit.AssemblyBuilder.SetEntryPoint%2A> method requests the generation of a console application or a Windows-based application.
 
-The following example demonstrates how to create and save and run assembly using .NET Framework:
+The following example demonstrates how to create, save, and run an assembly using .NET Framework.
 
 ```csharp
 public void CreateRunAndSaveAssembly(string assemblyPath)
@@ -132,7 +132,7 @@ public void CreateRunAndSaveAssembly(string assemblyPath)
 }
 ```
 
-Some methods on the base <xref:System.Reflection.Assembly> class, such as `GetModules` and `GetLoadedModules`, will not work correctly when called from <xref:System.Reflection.Emit.AssemblyBuilder> objects. You can load the defined dynamic assembly and call the methods on the loaded assembly. For example, to ensure that resource modules are included in the returned module list, call `GetModules` on the loaded <xref:System.Reflection.Assembly> object. If a dynamic assembly contains more than one dynamic module, the assembly's manifest file name should match the module's name that is specified as the first argument to the <xref:System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule%2A> method.
+Some methods on the base <xref:System.Reflection.Assembly> class, such as `GetModules` and `GetLoadedModules`, won't work correctly when called from <xref:System.Reflection.Emit.AssemblyBuilder> objects. You can load the defined dynamic assembly and call the methods on the loaded assembly. For example, to ensure that resource modules are included in the returned module list, call `GetModules` on the loaded <xref:System.Reflection.Assembly> object. If a dynamic assembly contains more than one dynamic module, the assembly's manifest file name should match the module's name that's specified as the first argument to the <xref:System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule%2A> method.
 
 The signing of a dynamic assembly using <xref:System.Reflection.AssemblyName.KeyPair%2A> is not effective until the assembly is saved to disk. So, strong names will not work with transient dynamic assemblies.
 

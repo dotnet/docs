@@ -78,8 +78,8 @@ If you're a Windows user who relies on enumeration of paths like `C:`, you shoul
 - <xref:System.IO.Directory.GetFileSystemEntries%2A?displayProperty=fullName>
 - <xref:System.IO.DirectoryInfo.EnumerateFiles%2A?displayProperty=fullName>
 - <xref:System.IO.DirectoryInfo.EnumerateDirectories%2A?displayProperty=fullName>
-- <xref:System.IO.DirectoryInfo.EnumerateFileSystemEntries%2A?displayProperty=fullName>
+- <xref:System.IO.DirectoryInfo.EnumerateFileSystemInfos%2A?displayProperty=fullName>
 - <xref:System.IO.DirectoryInfo.GetFiles%2A?displayProperty=fullName>
 - <xref:System.IO.DirectoryInfo.GetDirectories%2A?displayProperty=fullName>
-- <xref:System.IO.DirectoryInfo.GetFileSystemEntries%2A?displayProperty=fullName>
+- <xref:System.IO.DirectoryInfo.GetFileSystemInfos%2A?displayProperty=fullName>
 - <xref:System.IO.Enumeration.FileSystemEnumerable%601.%23ctor(System.String,System.IO.Enumeration.FileSystemEnumerable{%600}.FindTransform,System.IO.EnumerationOptions)>

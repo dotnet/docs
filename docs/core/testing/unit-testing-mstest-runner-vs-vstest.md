@@ -16,7 +16,7 @@ Tests are executed in different ways depending on the runner.
 
 ### Execute VSTest tests
 
-VSTest ships with Visual Studio, the .NET SDK, and as a standalone tool in the [Microsoft.Testing.Platform](https://www.nuget.org/packages/Microsoft.Testing.Platform) NuGet package. VSTest uses a runner executable to run tests, called `vstest.console.exe`, which can be used directly or through `dotnet test`.
+VSTest ships with Visual Studio, the .NET SDK, and as a standalone tool in the [Microsoft.TestPlatform](https://www.nuget.org/packages/Microsoft.TestPlatform) NuGet package. VSTest uses a runner executable to run tests, called `vstest.console.exe`, which can be used directly or through `dotnet test`.
 
 ### Execute MSTest runner tests
 

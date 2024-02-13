@@ -5,7 +5,7 @@ ms.date: 02/12/2024
 ---
 # Certificates checked before loading remote images in PictureBox
 
-A switch that's on by default was added in .NET 8. The switch changes how <xref:System.Windows.Forms.PictureBox> loads a remote image. Now, before an image is loaded via <xref:System.Net.WebClient>, <xref:System.Net.ServicePointManager.CheckCertificateRevocationList?displayProperty=nameWithType> is set to `true`, meaning that `WebClient` will now check certificates against the certificate revocation list (CRL) as part of the validation process.
+The behavior of how <xref:System.Windows.Forms.PictureBox> loads a remote image changed in .NET 8. Now, before an image is loaded via <xref:System.Net.WebClient>, <xref:System.Net.ServicePointManager.CheckCertificateRevocationList?displayProperty=nameWithType> is set to `true`, so `WebClient` checks certificates against the certificate revocation list (CRL) as part of the validation process.
 
 ## Previous behavior
 
@@ -29,7 +29,7 @@ It's considered best practice to set <xref:System.Net.ServicePointManager.CheckC
 
 ## Recommended action
 
-The effects of this change are outlined at [Load behavior changes](/dotnet/api/system.windows.forms.picturebox.load#load-behavior-changes). If you want to revert to the previous behavior, that article also describes how to do so.
+The effects of this change are outlined at [Load behavior changes](/dotnet/api/system.windows.forms.picturebox.load#load-behavior-changes). If you want to revert to the previous behavior, that article also describes how to do so via a switch.
 
 ## Affected APIs
 

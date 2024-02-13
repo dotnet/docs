@@ -11,7 +11,7 @@ ms.date: 02/12/2024
 
 ## Previous behavior
 
-Previously, relative paths in the `files` argument of the [constructor](xref:Microsoft.Extensions.FileSystemGlobbing.InMemoryDirectoryInfo.#ctor(System.String,System.Collections.Generic.IEnumerable{System.String})) were prepended with the current working directory (CWD). This caused an unnecessary dependency on the CWD for a type that's supposed to work in-memory.
+Previously, relative paths in the `files` argument of the [constructor](xref:Microsoft.Extensions.FileSystemGlobbing.InMemoryDirectoryInfo.%23ctor(System.String,System.Collections.Generic.IEnumerable{System.String})) were prepended with the current working directory (CWD). This caused an unnecessary dependency on the CWD for a type that's supposed to work in-memory.
 
 ## New behavior
 

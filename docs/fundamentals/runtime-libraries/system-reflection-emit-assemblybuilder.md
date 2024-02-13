@@ -28,7 +28,7 @@ The access mode must be specified by providing the appropriate <xref:System.Refl
 
 The following example demonstrates how to create and run an assembly:
 
-```cs
+```csharp
 public void CreateAndRunAssembly(string assemblyPath)
 {
     AssemblyBuilder ab = AssemblyBuilder.DefineDynamicAssembly(new AssemblyName("MyAssembly"), AssemblyBuilderAccess.Run);
@@ -57,7 +57,7 @@ The `AssemblyBuilder.Save` API was not ported to .NET (Core) because the impleme
 
 To create a new persistable `AssemblyBuilder` instance, use the static factory method `AssemblyBuilder.DefinePersistedAssembly`:
 
-```cs
+```csharp
 public static DefinePersistedAssembly(AssemblyName name, Assembly coreAssembly,
                                              IEnumerable<CustomAttributeBuilder>? assemblyAttributes = null);
 ```
@@ -70,7 +70,7 @@ The `coreAssembly` parameter is used to resolve base runtime types and can be us
 
 The following example demonstrates how to create and save an assembly to a stream and run it:
 
-```cs
+```csharp
 public void CreateSaveAndRunAssembly(string assemblyPath)
 {
     AssemblyBuilder ab = AssemblyBuilder.DefinePersistedAssembly(new AssemblyName("MyAssembly"), typeof(object).Assembly);
@@ -96,9 +96,9 @@ public void CreateSaveAndRunAssembly(string assemblyPath)
 ```
 
 > [!NOTE]
-> * The metadata tokens for all members are populated on `Save(...)` operation, do not use the tokens of generated type and its members before saving as they will have default values or throw. It is safe to use tokens for types that are referenced, not generated.
+> The metadata tokens for all members are populated on `Save(...)` operation, do not use the tokens of generated type and its members before saving as they will have default values or throw. It is safe to use tokens for types that are referenced, not generated.
 >
-> * Some APIs that are not improtant for emitting assembly are not implemented, for example `GetCustomAttributes()` is not implemented, with the runtime implementation you were able to use those APIs after creating the type, for persisted `AssemblyBuilder` they would throw `NotSupportedException` or `NotImplementedException`. If you have a scenario that needs those APIs implemented file an issue in the [repo](https://github.com/dotnet/runtime).
+> Some APIs that are not improtant for emitting assembly are not implemented, for example `GetCustomAttributes()` is not implemented, with the runtime implementation you were able to use those APIs after creating the type, for persisted `AssemblyBuilder` they would throw `NotSupportedException` or `NotImplementedException`. If you have a scenario that needs those APIs implemented file an issue in the [repo](https://github.com/dotnet/runtime).
 
 For an alternative way to generate assembly files, see <xref:System.Reflection.Metadata.Ecma335.MetadataBuilder>.
 
@@ -110,7 +110,7 @@ The dynamic modules in the persistable dynamic assembly are saved when the dynam
 
 The following example demonstrates how to create and save and run assembly using .NET Framework:
 
-```cs
+```csharp
 public void CreateRunAndSaveAssembly(string assemblyPath)
 {
     AssemblyBuilder ab = Thread.GetDomain().DefineDynamicAssembly(new AssemblyName("MyAssembly"), AssemblyBuilderAccess.RunAndSave);

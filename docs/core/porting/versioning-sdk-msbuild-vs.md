@@ -96,7 +96,6 @@ Major versions of the .NET SDK are typically released within a few days of a Vis
 | 8.0.100 Preview 2 | 17.10 Preview 2 |
 | 8.0.100 Preview 3 | 17.10 Preview 3 |
 
-
 ## Reference
 
 - [Overview of how .NET is versioned](../versions/index.md)

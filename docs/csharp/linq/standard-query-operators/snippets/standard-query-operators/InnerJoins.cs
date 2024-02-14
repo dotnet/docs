@@ -1,9 +1,9 @@
 ﻿namespace StandardQueryOperators;
 public class InnerJoins
 {
-    private static readonly IEnumerable<Department> departments = Department.Departments;
-    private static readonly IEnumerable<Teacher> teachers = Teacher.Teachers;
-    private static readonly IEnumerable<Student> students = Student.Students;
+    private static readonly IEnumerable<Department> departments = Sources.Departments;
+    private static readonly IEnumerable<Teacher> teachers = Sources.Teachers;
+    private static readonly IEnumerable<Student> students = Sources.Students;
     public static void RunAllSnippets()
     {
         SimpleInnerJoinQuerySyntax();

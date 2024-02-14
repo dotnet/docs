@@ -23,13 +23,15 @@ The standard query operator methods that sort data are listed in the following s
 |ThenByDescending|Performs a secondary sort in descending order.|`orderby …, … descending`|<xref:System.Linq.Enumerable.ThenByDescending%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.ThenByDescending%2A?displayProperty=nameWithType>|
 |Reverse|Reverses the order of the elements in a collection.|Not applicable.|<xref:System.Linq.Enumerable.Reverse%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Reverse%2A?displayProperty=nameWithType>|
 
-## Query Expression Syntax Examples
+The following examples in this article use the common data sources for this area:
 
-### Primary Sort Examples
+:::code language="csharp" source="./snippets/standard-query-operators/DataSources.cs" id="QueryDataSource":::
 
-#### Primary Ascending Sort
+Each `Student` has a grade level, a primary department, and a series of scores. A `Teacher` also has a `City` property that identifies the campus where the teacher holds classes. A `Department` has a name, and a reference to a `Teacher` who serves as the department head.
 
-The following example demonstrates how to use the `orderby` clause in a LINQ query to sort the strings in an array by string length, in ascending order.
+## Primary Ascending Sort
+
+The following example demonstrates how to use the `orderby` clause in a LINQ query to sort the array of teachers by family name, in ascending order.
 
 :::code language="csharp" source="./snippets/standard-query-operators/SortExamples.cs" id="PrimaryAscendingSortQuery":::
 
@@ -37,9 +39,9 @@ The equivalent query written using method syntax is shown in the following code:
 
 :::code language="csharp" source="./snippets/standard-query-operators/SortExamples.cs" id="PrimaryAscendingSortMethod":::
 
-#### Primary Descending Sort
+## Primary Descending Sort
 
-The next example demonstrates how to use the `orderby descending` clause in a LINQ query to sort the strings by their first letter, in descending order.
+The next example demonstrates how to use the `orderby descending` clause in a LINQ query to sort the teachers by family name, in descending order.
 
 :::code language="csharp" source="./snippets/standard-query-operators/SortExamples.cs" id="PrimaryDescendingSortQuery":::
 
@@ -47,11 +49,9 @@ The equivalent query written using method syntax is shown in the following code:
 
 :::code language="csharp" source="./snippets/standard-query-operators/SortExamples.cs" id="PrimaryDescendingSortMethod":::
 
-### Secondary Sort Examples
+## Secondary Ascending Sort
 
-#### Secondary Ascending Sort
-
-The following example demonstrates how to use the `orderby` clause in a LINQ query to perform a primary and secondary sort of the strings in an array. The strings are sorted primarily by length and secondarily by the first letter of the string, both in ascending order.
+The following example demonstrates how to use the `orderby` clause in a LINQ query to perform a primary and secondary sort. The teachers are sorted primarily by city and secondarily by their family name, both in ascending order.
 
 :::code language="csharp" source="./snippets/standard-query-operators/SortExamples.cs" id="SecondaryAscendingSortQuery":::
 
@@ -59,9 +59,9 @@ The equivalent query written using method syntax is shown in the following code:
 
 :::code language="csharp" source="./snippets/standard-query-operators/SortExamples.cs" id="SecondaryAscendingSortMethod":::
 
-#### Secondary Descending Sort
+## Secondary Descending Sort
 
-The next example demonstrates how to use the `orderby descending` clause in a LINQ query to perform a primary sort, in ascending order, and a secondary sort, in descending order. The strings are sorted primarily by length and secondarily by the first letter of the string.
+The next example demonstrates how to use the `orderby descending` clause in a LINQ query to perform a primary sort, in ascending order, and a secondary sort, in descending order. The teachers are sorted primarily by city and secondarily by their family name.
 
 :::code language="csharp" source="./snippets/standard-query-operators/SortExamples.cs" id="SecondaryDescendingSortQuery":::
 

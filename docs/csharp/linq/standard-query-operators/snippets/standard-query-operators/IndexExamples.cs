@@ -4,14 +4,15 @@ namespace StandardQueryOperators;
 
 internal class IndexExamples
 {
-    private static readonly IEnumerable<Teacher> teachers = Teacher.Teachers;
-    private static readonly IEnumerable<Student> students = Student.Students;
+    private static readonly IEnumerable<Teacher> teachers = Sources.Teachers;
+    private static readonly IEnumerable<Student> students = Sources.Students;
 
     public static void RunAllSnippets()
     {
         Sentences();
         PartsOfAQuery();
         Transformations();
+        XmlTransformation();
         Properties();
         QueryMethod();
     }
@@ -147,7 +148,10 @@ internal class IndexExamples
         /* Output:
             The following students and teachers live in Seattle:
             Omelchenko
-            Beebe
+            O'Donnell
+            ...
+            Feng
+            Svensson
             */
         // </Transformations>
     }
@@ -173,22 +177,28 @@ internal class IndexExamples
         /* Output:
           // <XmlTransformationOutput>
           <Root>
-              <student>
-                <First>Svetlana</First>
-                <Last>Omelchenko</Last>
-                <Scores>97,92,81,60</Scores>
-              </student>
-              <student>
-                <First>Claire</First>
-                <Last>O'Donnell</Last>
-                <Scores>75,84,91,39</Scores>
-              </student>
-              <student>
-                <First>Sven</First>
-                <Last>Mortensen</Last>
-                <Scores>88,94,65,91</Scores>
-              </student>
-           </Root>
+            <student>
+              <First>Svetlana</First>
+              <Last>Omelchenko</Last>
+              <Scores>97,90,73,54</Scores>
+            </student>
+            <student>
+              <First>Claire</First>
+              <Last>O'Donnell</Last>
+              <Scores>56,78,95,95</Scores>
+            </student>
+            ...
+            <student>
+              <First>Max</First>
+              <Last>Lindgren</Last>
+              <Scores>86,88,96,63</Scores>
+            </student>
+            <student>
+              <First>Arina</First>
+              <Last>Ivanova</Last>
+              <Scores>93,63,70,80</Scores>
+            </student>
+          </Root>
           // </XmlTransformationOutput>
         */
     }

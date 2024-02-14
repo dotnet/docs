@@ -4,7 +4,7 @@ namespace StandardQueryOperators;
 
 public class ConversionExamples
 {
-    private static readonly IEnumerable<Student> students = Student.Students;
+    private static readonly IEnumerable<Student> students = Sources.Students;
     public static void RunAllSnippets()
     {
         Console.WriteLine("ConversionExamples:");
@@ -23,12 +23,6 @@ public class ConversionExamples
 
         foreach (Student student in query)
             Console.WriteLine(student.FirstName);
-
-        /* This code produces the following output:
-
-            Venus Fly Trap
-            Waterwheel Plant
-        */
         // </CastOperatorQuerySyntax>
     }
 
@@ -43,12 +37,6 @@ public class ConversionExamples
 
         foreach (Student student in query)
             Console.WriteLine(student.FirstName);
-
-        /* This code produces the following output:
-
-            Venus Fly Trap
-            Waterwheel Plant
-        */
         // </CastOperatorMethodSyntax>
     }
 }

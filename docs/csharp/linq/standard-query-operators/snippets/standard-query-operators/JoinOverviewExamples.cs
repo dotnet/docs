@@ -1,8 +1,8 @@
 ﻿namespace StandardQueryOperators;
 public class JoinOverviewExamples
 {
-    private static readonly IEnumerable<Student> students = Student.Students;
-    private static readonly IEnumerable<Department> departments = Department.Departments;
+    private static readonly IEnumerable<Student> students = Sources.Students;
+    private static readonly IEnumerable<Department> departments = Sources.Departments;
 
     public static void RunAllSnippets()
     {

@@ -1,16 +1,25 @@
 ﻿namespace StandardQueryOperators;
 internal class SetOperations
 {
-    private static readonly IEnumerable<Teacher> teachers = Teacher.Teachers;
-    private static readonly IEnumerable<Student> students = Student.Students;
+    private static readonly IEnumerable<Teacher> teachers = Sources.Teachers;
+    private static readonly IEnumerable<Student> students = Sources.Students;
     public static void RunAllSnippets()
     {
+        Console.WriteLine("Distinct");
         Distinct();
+        Console.WriteLine("DistinctBy");
         DistinctByExample();
+        Console.WriteLine("Except");
         Except();
+        Console.WriteLine("ExceptBy");
         ExceptByExample();
+        Console.WriteLine("Intersect");
         IntersectInteractive();
+        Console.WriteLine("IntersectBy");
+        IntersectByExample();
+        Console.WriteLine("Union");
         UnionInteractive();
+        Console.WriteLine("UnionBy");
         UnionByExample();
     }
 
@@ -29,10 +38,14 @@ internal class SetOperations
 
         /* This code produces the following output:
          *
-         * Mercury
-         * Venus
-         * Earth
-         * Mars
+         * the
+         * quick
+         * brown
+         * fox
+         * jumped
+         * over
+         * lazy
+         * dog
          */
         // </Distinct>
     }
@@ -53,7 +66,9 @@ internal class SetOperations
 
         /* This code produces the following output:
          *
-         * Venus
+         * quick
+         * brown
+         * fox
          */
         // </Except>
     }
@@ -72,10 +87,10 @@ internal class SetOperations
         }
 
         // This code produces the following output:
-        //     Planet { Name = Mercury, Type = Rock, OrderFromSun = 1 }
-        //     Planet { Name = Jupiter, Type = Gas, OrderFromSun = 5 }
-        //     Planet { Name = Uranus, Type = Liquid, OrderFromSun = 7 }
-        //     Planet { Name = Pluto, Type = Ice, OrderFromSun = 9 }
+        //     the
+        //     quick
+        //     jumped
+        //     over
         // </DistinctBy>
 
         Console.WriteLine();
@@ -106,7 +121,11 @@ internal class SetOperations
         }
 
         // This code produces the following output:
-        //     Planet { Name = Venus, Type = Rock, OrderFromSun = 2 }
+        // Alex Robinson
+        // Michiyo Sato
+        // ...
+        // Carmen Vella
+        // Noel Svensson
         // </ExceptBy>
 
         Console.WriteLine();
@@ -128,9 +147,7 @@ internal class SetOperations
 
         /* This code produces the following output:
          *
-         * Mercury
-         * Earth
-         * Jupiter
+         * the
          */
         // </Intersect>
     }
@@ -150,8 +167,12 @@ internal class SetOperations
         }
 
         // This code produces the following output:
-        //     Planet { Name = Mars, Type = Rock, OrderFromSun = 4 }
-        //     Planet { Name = Jupiter, Type = Gas, OrderFromSun = 5 }
+        // Hanying Feng
+        // Hugo Garcia
+        // Michael Tucker
+        // Ifeanacho Jamuike
+        // Carmen Vella
+        // Noel Svensson
         // </IntersectBy>
 
         Console.WriteLine();
@@ -173,12 +194,15 @@ internal class SetOperations
 
         /* This code produces the following output:
          *
-         * Mercury
-         * Venus
-         * Earth
-         * Jupiter
-         * Mars
-         */
+         * the
+         * quick
+         * brown
+         * fox
+         * jumped
+         * over
+         * lazy
+         * dog
+        */
         // </Union>
     }
 
@@ -196,14 +220,11 @@ internal class SetOperations
         }
 
         // This code produces the following output:
-        //     Planet { Name = Mercury, Type = Rock, OrderFromSun = 1 }
-        //     Planet { Name = Venus, Type = Rock, OrderFromSun = 2 }
-        //     Planet { Name = Earth, Type = Rock, OrderFromSun = 3 }
-        //     Planet { Name = Mars, Type = Rock, OrderFromSun = 4 }
-        //     Planet { Name = Jupiter, Type = Gas, OrderFromSun = 5 }
-        //     Planet { Name = Saturn, Type = Gas, OrderFromSun = 6 }
-        //     Planet { Name = Uranus, Type = Liquid, OrderFromSun = 7 }
-        //     Planet { Name = Neptune, Type = Liquid, OrderFromSun = 8 }
+        // Svetlana Omelchenko
+        // Claire O'Donnell
+        // ...
+        // Andrey Glazkov
+        // Kettil Berggren
         // </UnionBy>
 
         Console.WriteLine();

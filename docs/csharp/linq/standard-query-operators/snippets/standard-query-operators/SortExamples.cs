@@ -1,17 +1,27 @@
-﻿namespace StandardQueryOperators;
+﻿using System.Collections.Generic;
+
+namespace StandardQueryOperators;
 
 internal class SortExamples
 {
-    private static readonly IEnumerable<Teacher> teachers = Teacher.Teachers;
+    private static readonly IEnumerable<Teacher> teachers = Sources.Teachers;
     public static void RunAllSnippets()
     {
+        Console.WriteLine("Ascending Query");
         AscendingSortQuerySyntax();
+        Console.WriteLine("Ascending Method");
         AscendingSortMethodSyntax();
+        Console.WriteLine("Descending Query");
         DescendingSortQuerySyntax();
+        Console.WriteLine("Descending Method");
         DescendingSortMethodSyntax();
+        Console.WriteLine("Ascending Secondary Query");
         SecondaryAscendingSortQuerySyntax();
+        Console.WriteLine("Ascending Secondary Method");
         SecondaryAscendingSortMethodSyntax();
+        Console.WriteLine("Descending Secondary Query");
         SecondaryDescendingSortQuerySyntax();
+        Console.WriteLine("Descending Secondary Method");
         SecondaryDescendingSortMethodSyntax();
     }
 
@@ -27,11 +37,11 @@ internal class SortExamples
 
         /* This code produces the following output:
 
-            the
-            fox
-            quick
-            brown
-            jumps
+            Åstrom
+            Beebe
+            ...
+            Vella
+            Voronova
         */
         // </PrimaryAscendingSortQuery>
     }
@@ -48,11 +58,11 @@ internal class SortExamples
 
         /* This code produces the following output:
 
-            the
-            fox
-            quick
-            brown
-            jumps
+            Åstrom
+            Beebe
+            ...
+            Vella
+            Voronova
         */
         // </PrimaryAscendingSortMethod>
     }
@@ -69,11 +79,11 @@ internal class SortExamples
 
         /* This code produces the following output:
 
-            the
-            quick
-            jumps
-            fox
-            brown
+            Voronova
+            Vella
+            ...
+            Beebe
+            Åstrom
         */
         // </PrimaryDescendingSortQuery>
     }
@@ -90,11 +100,11 @@ internal class SortExamples
 
         /* This code produces the following output:
 
-            the
-            fox
-            quick
-            brown
-            jumps
+            Voronova
+            Vella
+            ...
+            Beebe
+            Åstrom
         */
         // </PrimaryDescendingSortMethod>
     }
@@ -102,20 +112,20 @@ internal class SortExamples
     private static void SecondaryAscendingSortQuerySyntax()
     {
         // <SecondaryAscendingSortQuery>
-        IEnumerable<string> query = from teacher in teachers
+        IEnumerable<(string, string)> query = from teacher in teachers
                                     orderby teacher.City, teacher.Last
-                                    select teacher.Last;
+                                    select (teacher.Last, teacher.City);
 
-        foreach (string str in query)
-            Console.WriteLine(str);
+        foreach ((string last, string city) in query)
+            Console.WriteLine($"City: {city}, Last Name: {last}");
 
         /* This code produces the following output:
 
-            fox
-            the
-            brown
-            jumps
-            quick
+          City: Redmond, Last Name: Åstrom
+          City: Redmond, Last Name: Degtyarev
+          ...
+          City: Tacoma, Last Name: Vella
+          City: Tacoma, Last Name: Voronova
         */
         // </SecondaryAscendingSortQuery>
     }
@@ -123,21 +133,21 @@ internal class SortExamples
     private static void SecondaryAscendingSortMethodSyntax()
     {
         // <SecondaryAscendingSortMethod>
-        IEnumerable<string> query = teachers
+        IEnumerable<(string, string)> query = teachers
             .OrderBy(teacher => teacher.City)
             .ThenBy(teacher => teacher.Last)
-            .Select(teacher => teacher.Last);
+            .Select(teacher => (teacher.Last, teacher.City));
 
-        foreach (string str in query)
-            Console.WriteLine(str);
+        foreach ((string last, string city) in query)
+            Console.WriteLine($"City: {city}, Last Name: {last}");
 
         /* This code produces the following output:
 
-            fox
-            the
-            brown
-            jumps
-            quick
+          City: Redmond, Last Name: Åstrom
+          City: Redmond, Last Name: Degtyarev
+          ...
+          City: Tacoma, Last Name: Vella
+          City: Tacoma, Last Name: Voronova
         */
         // </SecondaryAscendingSortMethod>
     }
@@ -145,41 +155,41 @@ internal class SortExamples
     private static void SecondaryDescendingSortQuerySyntax()
     {
         // <SecondaryDescendingSortQuery>
-        IEnumerable<string> query = from teacher in teachers
+        IEnumerable<(string, string)> query = from teacher in teachers
                                     orderby teacher.City, teacher.Last descending
-                                    select teacher.Last;
+                                    select (teacher.Last, teacher.City);
 
-        foreach (string str in query)
-            Console.WriteLine(str);
+        foreach ((string last, string city) in query)
+            Console.WriteLine($"City: {city}, Last Name: {last}");
 
         /* This code produces the following output:
 
-            the
-            fox
-            quick
-            jumps
-            brown
+          City: Redmond, Last Name: Seleznyov
+          City: Redmond, Last Name: Robinson
+          ...
+          City: Tacoma, Last Name: Berggren
+          City: Tacoma, Last Name: Bengtsson
         */
         // </SecondaryDescendingSortQuery>
     }
     private static void SecondaryDescendingSortMethodSyntax()
     {
         // <SecondaryDescendingSortMethod>
-        IEnumerable<string> query = teachers
+        IEnumerable<(string, string)> query = teachers
             .OrderBy(teacher => teacher.City)
             .ThenByDescending(teacher => teacher.Last)
-            .Select(teacher => teacher.Last);
+            .Select(teacher => (teacher.Last, teacher.City));
 
-        foreach (string str in query)
-            Console.WriteLine(str);
+        foreach ((string last, string city) in query)
+            Console.WriteLine($"City: {city}, Last Name: {last}");
 
         /* This code produces the following output:
 
-            fox
-            the
-            brown
-            jumps
-            quick
+          City: Redmond, Last Name: Seleznyov
+          City: Redmond, Last Name: Robinson
+          ...
+          City: Tacoma, Last Name: Berggren
+          City: Tacoma, Last Name: Bengtsson
         */
         // </SecondaryDescendingSortMethod>
     }

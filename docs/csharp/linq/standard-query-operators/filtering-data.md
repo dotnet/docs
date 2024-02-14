@@ -1,26 +1,22 @@
 ---
 title: "Filtering Data with LINQ"
 description: Filtering, also known as selection, restricts results based on a condition. Learn about the standard query operator methods in LINQ in C# that perform filtering.
-ms.date: 01/22/2024
+ms.date: 02/14/2024
 ---
-# Filtering Data (C#)
+# Filtering Data in C# with LINQ
 
-Filtering refers to the operation of restricting the result set to contain only those elements that satisfy a specified condition. It is also known as selection.
+Filtering refers to the operation of restricting the result set to contain only those elements that satisfy a specified condition. It's also referred to as *selecting* elements that match the specified condition.
 
 The following illustration shows the results of filtering a sequence of characters. The predicate for the filtering operation specifies that the character must be 'A'.
 
 :::image type="content" source="./media/filtering-data/linq-filter-operation.png" alt-text="Diagram that shows a LINQ filtering operation":::
 
-The standard query operator methods that perform selection are listed in the following section.
-
-## Methods
+The standard query operator methods that perform selection are listed in the following table:
 
 |Method Name|Description|C# Query Expression Syntax|More Information|
 |-----------------|-----------------|---------------------------------|----------------------|
 |OfType|Selects values, depending on their ability to be cast to a specified type.|Not applicable.|<xref:System.Linq.Enumerable.OfType%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.OfType%2A?displayProperty=nameWithType>|
 |Where|Selects values that are based on a predicate function.|`where`|<xref:System.Linq.Enumerable.Where%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Where%2A?displayProperty=nameWithType>|
-
-## Query Expression Syntax Example
 
 The following example uses the `where` clause to filter from an array those strings that have a specific length.
 

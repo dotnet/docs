@@ -1,13 +1,13 @@
 ---
 title: "Converting Data Types (C#)"
 description: Conversion methods change the type of input objects. See conversion operations in LINQ queries in C#, such as Enumerable.AsEnumerable and Enumerable.OfType.
-ms.date: 01/22/2024
+ms.date: 02/14/2024
 ---
 # Converting Data Types (C#)
 
 Conversion methods change the type of input objects.
 
-Conversion operations in LINQ queries are useful in a variety of applications. Following are some examples:
+Conversion operations in LINQ queries are useful in various applications. Following are some examples:
 
 - The <xref:System.Linq.Enumerable.AsEnumerable%2A?displayProperty=nameWithType> method can be used to hide a type's custom implementation of a standard query operator.
 - The <xref:System.Linq.Enumerable.OfType%2A?displayProperty=nameWithType> method can be used to enable non-parameterized collections for LINQ querying.
@@ -17,7 +17,7 @@ Conversion operations in LINQ queries are useful in a variety of applications. F
 
 The following table lists the standard query operator methods that perform data-type conversions.
 
-The conversion methods in this table whose names start with "As" change the static type of the source collection but do not enumerate it. The methods whose names start with "To" enumerate the source collection and put the items into the corresponding collection type.
+The conversion methods in this table whose names start with "As" change the static type of the source collection but don't enumerate it. The methods whose names start with "To" enumerate the source collection and put the items into the corresponding collection type.
 
 |Method Name|Description|C# Query Expression Syntax|More Information|
 |-----------------|-----------------|---------------------------------|----------------------|

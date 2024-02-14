@@ -2,7 +2,7 @@
 
 public static class NestedGroups
 {
-    private static readonly IEnumerable<Student> students = Student.Students;
+    private static readonly IEnumerable<Student> students = Sources.Students;
 
     public static void RunAllSnippets()
     {

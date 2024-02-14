@@ -3,8 +3,8 @@
 namespace StandardQueryOperators;
 public static class GroupJoins
 {
-    private static readonly IEnumerable<Department> departments = Department.Departments;
-    private static readonly IEnumerable<Student> students = Student.Students;
+    private static readonly IEnumerable<Department> departments = Sources.Departments;
+    private static readonly IEnumerable<Student> students = Sources.Students;
 
     public static void RunAllSnippets()
     {

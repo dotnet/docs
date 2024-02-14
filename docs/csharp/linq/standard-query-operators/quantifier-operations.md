@@ -1,8 +1,8 @@
 ---
 title: "Quantifier Operations (C#)"
 titleSuffix: LINQ
-description: Learn about quantifier operations in LINQ. These methods, 'All', 'Any', and 'Contains', return a Boolean value indicating whether some or all elements in a sequence satisfy a condition.
-ms.date: 01/22/2024
+description: Learn about quantifier operations in LINQ. These methods, `All`, `Any`, and `Contains`, return a Boolean value indicating whether some or all elements in a sequence satisfy a condition.
+ms.date: 02/14/2024
 ---
 # Quantifier operations in LINQ (C#)
 
@@ -12,9 +12,11 @@ The following illustration depicts two different quantifier operations on two di
 
 :::image type="content" source="./media/quantifier-operations/linq-quantifier-operations.png" alt-text="LINQ Quantifier Operations":::
 
-The standard query operator methods that perform quantifier operations are listed in the following section.
+The following examples in this article use the common data sources for this area:
 
-## Methods
+:::code language="csharp" source="./snippets/standard-query-operators/DataSources.cs" id="QueryDataSource":::
+
+Each `Student` has a grade level, a primary department, and a series of scores. A `Teacher` also has a `City` property that identifies the campus where the teacher holds classes. A `Department` has a name, and a reference to a `Teacher` who serves as the department head.
 
 |Method Name|Description|C# Query Expression Syntax|More Information|
 |-----------------|-----------------|---------------------------------|----------------------|
@@ -24,19 +26,19 @@ The standard query operator methods that perform quantifier operations are liste
 
 ## All
 
-The following example uses the `All` to check that all strings are of a specific length.
+The following example uses the `All` to find students that scored above 70 on all exams.
 
 :::code language="csharp" source="./snippets/standard-query-operators/QuantifierExamples.cs" id="AllQuantifier":::
   
 ## Any
 
-The following example uses the `Any` to check that any strings are start with 'o'.
+The following example uses the `Any` to find students that scored greater than 96 on an exam.
 
 :::code language="csharp" source="./snippets/standard-query-operators/QuantifierExamples.cs" id="AnyQuantifier":::
 
 ## Contains
 
-The following example uses the `Contains` to check an array have a specific element.
+The following example uses the `Contains` to find students that scored exactly 95 on an exam.
 
 :::code language="csharp" source="./snippets/standard-query-operators/QuantifierExamples.cs" id="ContainsQuantifier":::
 

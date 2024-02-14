@@ -9,29 +9,6 @@ public enum GradeLevel
     FourthYear
 };
 
-public class Department
-{
-    public required string Name { get; init; }
-    public int ID { get; init; }
-
-    // TODO: Set department head by ID key rather than object.
-    public Teacher DepartmentHead => Teacher.Teachers.Single(teacher => teacher.ID == TeacherID);
-
-    public required int TeacherID { get; init; }
-
-    private static readonly List<Department> s_departments =
-    [
-        new() { Name = "English",     ID = 1, TeacherID = 901 },
-        new() { Name = "Mathematics", ID = 2, TeacherID = 965 },
-        new() { Name = "Engineering", ID = 3, TeacherID = 932 },
-        new() { Name = "Economics",   ID = 4, TeacherID = 945 },
-        new() { Name = "Physics",     ID = 5, TeacherID = 987 },
-        new() { Name = "Chemistry",   ID = 6, TeacherID = 901 }
-    ];
-
-    public static IEnumerable<Department> Departments => s_departments;
-}
-
 public class Student
 {
     public required string FirstName { get; init; }
@@ -42,9 +19,40 @@ public class Student
     public required List<int> Scores { get; init; }
 
     public required int DepartmentID { get; init; }
+}
+
+public class Teacher
+{
+    public required string First { get; init; }
+    public required string Last { get; init; }
+    public required int ID { get; init; }
+    public required string City { get; init; }
+}
+public class Department
+{
+    public required string Name { get; init; }
+    public int ID { get; init; }
+
+    public Teacher DepartmentHead => Sources.Teachers.Single(teacher => teacher.ID == TeacherID);
+
+    public required int TeacherID { get; init; }
+}
+// </QueryDataSource>
+
+public static class Sources
+{
+    public static IEnumerable<Department> Departments =>
+    [
+        new() { Name = "English",     ID = 1, TeacherID = 901 },
+        new() { Name = "Mathematics", ID = 2, TeacherID = 965 },
+        new() { Name = "Engineering", ID = 3, TeacherID = 932 },
+        new() { Name = "Economics",   ID = 4, TeacherID = 945 },
+        new() { Name = "Physics",     ID = 5, TeacherID = 987 },
+        new() { Name = "Chemistry",   ID = 6, TeacherID = 901 }
+    ];
 
     // Create a data source by using a collection initializer.
-    static readonly List<Student> s_students =
+    public static IEnumerable<Student> Students =>
     [
         new() { FirstName = "Svetlana",   LastName = "Omelchenko",  DepartmentID =  1, Year = GradeLevel.FirstYear,  ID = 111, Scores = [97, 90, 73, 54] },
         new() { FirstName = "Claire",     LastName = "O'Donnell",   DepartmentID = -1, Year = GradeLevel.FirstYear,  ID = 112, Scores = [56, 78, 95, 95] },
@@ -100,19 +108,8 @@ public class Student
         new() { FirstName = "Max",        LastName = "Lindgren",    DepartmentID =  1, Year = GradeLevel.FirstYear,  ID = 162, Scores = [86, 88, 96, 63] },
         new() { FirstName = "Arina",      LastName = "Ivanova",     DepartmentID =  1, Year = GradeLevel.FirstYear,  ID = 163, Scores = [93, 63, 70, 80] }
     ];
-        public static IEnumerable<Student> Students => s_students;
-}
 
-public class Teacher
-{
-    public required string First { get; init; }
-    public required string Last { get; init; }
-    public required int ID { get; init; }
-    public required string City { get; init; }
-
-    // Switch this around so some teachers are department chairs:
-    // Add add more teachers to the list.
-    private static readonly List<Teacher> s_teachers =
+    public static IEnumerable<Teacher> Teachers =>
     [
         new() { First = "Ann",       Last = "Beebe",     ID = 901, City = "Seattle" },
         new() { First = "Alex",      Last = "Robinson",  ID = 910, City = "Redmond" },
@@ -134,10 +131,6 @@ public class Teacher
         new() { First = "Michael",   Last = "Tucker",    ID = 989, City = "Tacoma" },
         new() { First = "Ifeanacho", Last = "Jamuike",   ID = 991, City = "Redmond" },
         new() { First = "Carmen",    Last = "Vella",     ID = 982, City = "Tacoma" },
-        new() { First = "Noel",      Last = "Svensson",  ID = 973, City = "Seattle" },
-
+        new() { First = "Noel",      Last = "Svensson",  ID = 973, City = "Seattle" }
    ];
-
-    public static IEnumerable<Teacher> Teachers => s_teachers;
 }
-// </QueryDataSource>

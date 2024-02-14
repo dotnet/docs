@@ -93,7 +93,7 @@ The following is a complex directive that allows your code to take advantage of 
 ```csharp
 #if (NET6_0_OR_GREATER || NETSTANDARD2_0_OR_GREATER)
     Console.WriteLine("Using .NET 6+ or .NET Standard 2+ code.");
-#elif (!NET6_0_OR_GREATER && !NETSTANDARD2_0_OR_GREATER)
+#elif
     Console.WriteLine("Using older code that doesn't support the above .NET versions.");
 #endif
 ```

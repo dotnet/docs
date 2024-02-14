@@ -14,8 +14,8 @@ ms.date: 02/13/2024
 It's possible to build an MSTest app without this SDK, however, the MSTest SDK is:
 
 * Tailored towards providing a first-class experience for testing with MSTest
-* Simple to configure.
 * The recommended target for most users.
+* Yet easy to configure for others.
 
 How to use the `MSTest.Sdk` in a project:
 

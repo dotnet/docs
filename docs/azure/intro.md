@@ -28,4 +28,4 @@ Whether your app is hosted in Azure or on-premises, access to most Azure service
 
 ## Next steps
 
-Next, learn about the most [commonly used Azure services](./key-azure-services.md) for .NET development.
+Next, learn about the most [commonly used Azure services](/azure/developer/intro/azure-developer-key-services?toc=/dotnet/azure/toc.json?bc=/dotnet/breadcrumb/toc.json) for .NET development.

@@ -36,7 +36,7 @@ How to use the `MSTest.Sdk` in a project:
 
 When you `build` the project all the needed components will be restored and installed using the standard NuGet workflow set by your project. Usually the components are downloaded from the official NuGet feed unless set differently.
 
-You don't need anything else to build and run your tests and you can use the same tooling (i.e. `dotnet test`, Visual Studio etc...) used by a ["classic"](./index.md/#mstest) MSTest project.
+You don't need anything else to build and run your tests and you can use the same tooling (i.e. `dotnet test`, Visual Studio etc...) used by a ["classic" MSTest project](./index.md/#mstest).
 
 ## `MSTest.Sdk` with the `MSTest runner`
 

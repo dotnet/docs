@@ -17,7 +17,7 @@ The new output uses recent C# features that simplify the code you need to write 
 ```csharp
 using System;
 
-namespace MyApp // Note: actual namespace depends on the project name.
+namespace MyApp
 {
     internal class Program
     {
@@ -28,6 +28,8 @@ namespace MyApp // Note: actual namespace depends on the project name.
     }
 }
 ```
+
+In the preceding code, the actual namespace depends on the project name.
 
 These two forms represent the same program. Both are valid with C# 10.0. When you use the newer version, you only need to write the body of the `Main` method. The compiler generates a `Program` class with an entry point method and places all your top level statements in that method. The name of the generated method isn't `Main`, it's an implementation detail that your code can't reference directly. You don't need to include the other program elements, the compiler generates them for you. You can learn more about the code the compiler generates when you use top level statements in the article on [top level statements](../../csharp/fundamentals/program-structure/top-level-statements.md) in the C# Guide's fundamentals section.
 

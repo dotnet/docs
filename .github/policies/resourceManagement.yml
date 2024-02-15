@@ -32,6 +32,7 @@ configuration:
           base: live
           title: Merge main into live
           body: Please don't squash-merge this PR.
+          label: :octocat: auto-merge
     - description: Label doc-bug issues with okr-health (scheduled search)
       frequencies:
       - hourly:
@@ -93,23 +94,23 @@ configuration:
       - approvePullRequest:
           comment: "Approved, we'll :shipit: when all status checks pass."
       - addLabel:
-          label: azure-sdk-shipit
+          label: :octocat: auto-merge
       description: Label PRs from the Azure SDK bot
     - if:
       - payloadType: Pull_Request
       - hasLabel:
-          label: azure-sdk-shipit
+          label: :octocat: auto-merge
       then:
       - enableAutoMerge:
           mergeMethod: Squash
-      description: Auto-merge Azure SDK PRs with green builds
+      description: Auto-merge PRs labeled with auto-merge
     - if:
       - payloadType: Pull_Request
       - labelRemoved:
-          label: azure-sdk-shipit
+          label: :octocat: auto-merge
       then:
       - disableAutoMerge
-      description: Auto-merge Azure SDK PRs with green builds
+      description: Don't auto-merge PRs with auto-merge label removed
     - if:
       - payloadType: Pull_Request
       then:

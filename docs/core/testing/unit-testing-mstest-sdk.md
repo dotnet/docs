@@ -36,7 +36,7 @@ How to use the `MSTest.Sdk` in a project:
 
 When you `build` the project all the needed components will be restored and installed using the standard NuGet workflow set by your project.
 
-You don't need anything else to build and run your tests and you can use the same tooling (i.e. `dotnet test`, Visual Studio etc...) used by a ["classic" MSTest project](./index.md/#mstest).
+You don't need anything else to build and run your tests and you can use the same tooling (i.e. `dotnet test`, Visual Studio etc...) used by a ["classic" MSTest project](./unit-testing-with-mstest.md)
 
 ## Register extensions
 
@@ -101,3 +101,5 @@ You can enable all the available extensions in "bulk" using the `<EnableAllTesti
     <!-- references to the code to test -->
 </Project>
 ```
+> [!WARNING]
+> Different extensions come with differente licensing model, we invite you to check the rights.

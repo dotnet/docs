@@ -101,5 +101,6 @@ You can enable all the available extensions in "bulk" using the `<EnableAllTesti
     <!-- references to the code to test -->
 </Project>
 ```
+
 > [!WARNING]
 > Different extensions come with different licensing model, we invite you to check the rights.

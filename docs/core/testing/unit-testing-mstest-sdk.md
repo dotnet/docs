@@ -56,7 +56,7 @@ You don't need anything else to build and run your tests and you can use the sam
 
 ### Available extensions
 
-| Extension package | MSBuild property | Registered by default |
+| Extension package | MSBuild property | Enabled by default |
 | -------- | ----------- | ----------- |
 | `Microsoft.Testing.Extensions.CodeCoverage` | `<EnableMicrosoftTestingExtensionsCodeCoverage>true</EnableMicrosoftTestingExtensionsCodeCoverage>` | ✔️ |
 | `Microsoft.Testing.Extensions.TrxReport` | `<EnableMicrosoftTestingExtensionsTrxReport>true</EnableMicrosoftTestingExtensionsTrxReport>` | ✔️ |

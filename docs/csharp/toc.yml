@@ -237,29 +237,9 @@ items:
     - name: Converting Data Types
       href: linq/standard-query-operators/converting-data-types.md
     - name: Join Operations
-      items:
-      - name: Overview
-        href: linq/standard-query-operators/joins/index.md
-      - name: Perform inner joins
-        href: linq/standard-query-operators/joins/perform-inner-joins.md
-      - name: Perform grouped joins
-        href: linq/standard-query-operators/joins/perform-grouped-joins.md
-      - name: Perform left outer joins
-        href: linq/standard-query-operators/joins/perform-left-outer-joins.md
-      - name: Order the results of a join clause
-        href: linq/standard-query-operators/joins/order-the-results-of-a-join-clause.md
-      - name: Join by using composite keys
-        href: linq/standard-query-operators/joins/join-by-using-composite-keys.md
+      href: linq/standard-query-operators/join-operations.md
     - name: Grouping Data
-      items:
-      - name: Overview
-        href: linq/standard-query-operators/grouping/index.md
-      - name: Group query results
-        href: linq/standard-query-operators/grouping/group-query-results.md
-      - name: Create a nested group
-        href: linq/standard-query-operators/grouping/create-a-nested-group.md
-      - name: Perform a subquery on a grouping operation
-        href: linq/standard-query-operators/grouping/perform-a-subquery-on-a-grouping-operation.md
+      href: linq/standard-query-operators/grouping-data.md
   - name: LINQ to objects
     href: linq/query-a-collection-of-objects.md
   - name: "Walkthrough: Writing Queries in C# (LINQ)"

@@ -92,7 +92,15 @@ In LINQ, you don't have to use `join` as often as you do in SQL, because foreign
 from order in Customer.Orders
 ```
 
-For more information, see [join clause](../../language-reference/keywords/join-clause.md).
+You can use the results of one query as the data source for a subsequent query. This example shows how to order the results of a join operation. This query creates a group join, and then sorts the groups based on the category element, which is still in scope. Inside the anonymous type initializer, a sub-query orders all the matching elements from the products sequence.
+
+:::code language="csharp" source="./snippets/standard-query-operators/OrderResultsOfJoin.cs" id="OrderResultsOfJoinQuery":::
+
+The equivalent query using method syntax is shown in the following code:
+
+:::code language="csharp" source="./snippets/standard-query-operators/OrderResultsOfJoin.cs" id="OrderResultsOfJoinMethod":::
+
+Although you can use an `orderby` clause with one or more of the source sequences before the join, generally we do not recommend it. Some LINQ providers might not preserve that ordering after the join. For more information, see [join clause](../../language-reference/keywords/join-clause.md).
 
 ## Selecting (Projections)
 

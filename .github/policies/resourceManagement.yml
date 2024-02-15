@@ -11,20 +11,20 @@ configuration:
     - description: Push to live branch (scheduled publish)
       frequencies:
       - weekday:
-          day: Monday
-          time: 22:0
-      - weekday:
           day: Tuesday
-          time: 22:0
+          time: 08:0
       - weekday:
           day: Wednesday
-          time: 22:0
+          time: 08:0
       - weekday:
           day: Thursday
-          time: 22:0
+          time: 08:0
       - weekday:
           day: Friday
-          time: 22:0
+          time: 08:0
+      - weekday:
+          day: Saturday
+          time: 08:0
       filters: []
       actions:
       - createPullRequest:

@@ -107,6 +107,8 @@ Starting with .NET SDK 6.0.300, the `console` template has a `--use-program-main
 <!-- replaycheck-task id="7428562a" -->
 <!-- replaycheck-task id="52e0335c" -->
 <!-- replaycheck-task id="834a9e04" -->
+<!-- replaycheck-task id="d206d530" -->
+<!-- replaycheck-task id="eedff294" -->
 ```dotnetcli
 dotnet new console --use-program-main
 ```

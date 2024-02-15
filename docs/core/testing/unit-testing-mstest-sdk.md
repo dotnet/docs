@@ -77,7 +77,7 @@ If you want to disable the default extensions registration you can set the MSBui
 </Project>
 ```
 
-You can also opt-out specific extension setting to false the respective MSBuild property.  
+You can also opt-out specific extension setting to false its respective MSBuild property.  
 For instance you can opt-out the default `MS Code Coverage`
 
 ```xml

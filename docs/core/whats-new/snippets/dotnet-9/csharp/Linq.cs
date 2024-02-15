@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 
 static class Linq
@@ -48,5 +49,21 @@ static class Linq
         //(1, 15)
         //(2, 4)
         // </AggregateBy>
+
+        // <OldIndex>
+        IEnumerable<string> lines1 = File.ReadAllLines("output.txt");
+        foreach ((int index, string line) in lines1.Select((line, index) => (index, line)))
+        {
+            Console.WriteLine($"Line number: {index + 1}, Line: {line}");
+        }
+        // </OldIndex>
+
+        // <NewIndex>
+        IEnumerable<string> lines2 = File.ReadAllLines("output.txt");
+        foreach ((int index, string line) in lines2.Index())
+        {
+            Console.WriteLine($"Line number: {index + 1}, Line: {line}");
+        }
+        // </NewIndex>
     }
 }

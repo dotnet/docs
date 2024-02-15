@@ -5,4 +5,10 @@
     <TargetFramework>net9</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Update="output.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

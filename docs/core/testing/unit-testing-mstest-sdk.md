@@ -65,7 +65,7 @@ You don't need anything else to build and run your tests and you can use the sam
 | `Microsoft.Testing.Extensions.Retry` | `<EnableMicrosoftTestingExtensionsRetry>true</EnableMicrosoftTestingExtensionsRetry>` | ❌ |
 | `Microsoft.Testing.Extensions.HotReload` | `<EnableMicrosoftTestingExtensionsHotReload>true</EnableMicrosoftTestingExtensionsHotReload>` | ❌ |
 
-If you want to disable the default extensions registration you can set to false the MSBuild property `EnableDefaultMicrosoftTestingExtensions`
+If you want to disable the default extensions registration you can set the MSBuild property `EnableDefaultMicrosoftTestingExtensions` to `false` (e.g. `<EnableDefaultMicrosoftTestingExtensions>false</EnableDefaultMicrosoftTestingExtensions>`).
 
 ```xml
 <Project Sdk="MSTest.Sdk/3.3.0">

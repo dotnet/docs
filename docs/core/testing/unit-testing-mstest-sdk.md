@@ -78,7 +78,7 @@ If you want to disable the default extensions registration you can set the MSBui
 ```
 
 You can also opt-out specific extension setting to false its respective MSBuild property.  
-For instance you can opt-out the default `MS Code Coverage`
+For instance you can opt-out the default `MS Code Coverage` by setting `<EnableMicrosoftTestingExtensionsCodeCoverage>false</EnableMicrosoftTestingExtensionsCodeCoverage>`. Full-example below:
 
 ```xml
 <Project Sdk="MSTest.Sdk/3.3.0">

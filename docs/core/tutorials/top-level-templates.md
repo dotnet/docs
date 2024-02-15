@@ -109,6 +109,7 @@ The generated `Program.cs` is as follows:
 
 ```csharp
 namespace MyProject;
+
 class Program
 {
     static void Main(string[] args)

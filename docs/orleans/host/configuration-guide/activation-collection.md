@@ -20,11 +20,11 @@ This article applies to: ✔️ Orleans 3.x and earlier versions
 
 A *grain activation* is an in-memory instance of a grain class that gets automatically created by the Orleans runtime on an as-needed basis as a temporary physical embodiment of a grain.
 
-Activation Collection is the process of removal from memory of unused grain activations. It's conceptually similar to how garbage collection of memory works in .NET. However, Activation Collection only takes into consideration how long a particular grain activation has been idle. Memory usage isn't used as a factor.
+Activation collection is the process of removal from memory of unused grain activations. It's conceptually similar to how garbage collection of memory works in .NET. However, activation collection only takes into consideration how long a particular grain activation has been idle. Memory usage isn't used as a factor.
 
 ## How activation collection works
 
-The general process of Activation Collection involves Orleans runtime in a silo periodically scanning for grain activations that haven't been used at all for the configured period (Collection Age Limit). Once a grain activation has been idle for that long, it gets deactivated. The deactivation process begins by the runtime calling the grain's <xref:Orleans.Grain.OnDeactivateAsync> method, and completes by removing references to the grain activation object from all data structures of the silo, so that the memory is reclaimed by the .NET GC.
+The general process of activation collection involves Orleans runtime in a silo periodically scanning for grain activations that haven't been used at all for the configured period (Collection Age Limit). Once a grain activation has been idle for that long, it gets deactivated. The deactivation process begins by the runtime calling the grain's <xref:Orleans.Grain.OnDeactivateAsync> method, and completes by removing references to the grain activation object from all data structures of the silo, so that the memory is reclaimed by the .NET GC.
 
 As a result, with no burden put on the application code, only recently used grain activations stay in memory while activations that aren't used anymore get automatically removed, and system resources used by them get reclaimed by the runtime.
 
@@ -63,21 +63,21 @@ A grain activation can delay its own collection, by calling <xref:Orleans.Grain.
 protected void DelayDeactivation(TimeSpan timeSpan)
 ```
 
-This call ensures that this activation isn't deactivated for at least the specified time duration. It takes priority over Activation Collection settings specified in the config, but doesn't cancel them. Therefore, this call provides another hook to **delay the deactivation beyond what is specified in the Activation Collection settings**. This call can't be used to expedite Activation Collection.
+This call ensures that this activation isn't deactivated for at least the specified time duration. It takes priority over activation collection settings specified in the config, but doesn't cancel them. Therefore, this call provides another hook to **delay the deactivation beyond what is specified in the activation collection settings**. This call can't be used to expedite activation collection.
 
 A positive `timeSpan` value means "prevent collection of this activation for that time."
 
-A negative `timeSpan` value means "cancel the previous setting of the `DelayDeactivation` call and make this activation behave based on the regular Activation Collection settings."
+A negative `timeSpan` value means "cancel the previous setting of the `DelayDeactivation` call and make this activation behave based on the regular activation collection settings."
 
 **Scenarios:**
 
-1. Activation Collection settings specify an age limit of 10 minutes and the grain is making a call to `DelayDeactivation(TimeSpan.FromMinutes(20))`, which causes this activation to not be collected for at least 20 min.
+1. Activation collection settings specify an age limit of 10 minutes and the grain is making a call to `DelayDeactivation(TimeSpan.FromMinutes(20))`, which causes this activation to not be collected for at least 20 min.
 
-1. Activation Collection settings specify an age limit of 10 minutes and the grain is making a call to `DelayDeactivation(TimeSpan.FromMinutes(5))`, the activation will be collected after 10 min, if no extra calls were made.
+1. Activation collection settings specify an age limit of 10 minutes and the grain is making a call to `DelayDeactivation(TimeSpan.FromMinutes(5))`, the activation will be collected after 10 min, if no extra calls were made.
 
-1. Activation Collection settings specify an age limit of 10 minutes and the grain is making a call to `DelayDeactivation(TimeSpan.FromMinutes(5))`, and after 7 minutes there's another call on this grain, the activation will be collected after 17 min from time zero if no extra calls were made.
+1. Activation collection settings specify an age limit of 10 minutes and the grain is making a call to `DelayDeactivation(TimeSpan.FromMinutes(5))`, and after 7 minutes there's another call on this grain, the activation will be collected after 17 min from time zero if no extra calls were made.
 
-1. Activation Collection settings specify an age limit of 10 minutes and the grain is making a call to `DelayDeactivation(TimeSpan.FromMinutes(20))`, and after 7 minutes there's another call on this grain, the activation will be collected after 20 min from time zero if no extra calls were made.
+1. Activation collection settings specify an age limit of 10 minutes and the grain is making a call to `DelayDeactivation(TimeSpan.FromMinutes(20))`, and after 7 minutes there's another call on this grain, the activation will be collected after 20 min from time zero if no extra calls were made.
 
 The `DelayDeactivation` doesn't 100% guarantee that the grain activation won't be deactivated before the specified time expires. Certain failure cases may cause 'premature' deactivation of grains. That means that `DelayDeactivation` **can not be used as a means to 'pin' a grain activation in memory forever or to a specific silo**. `DelayDeactivation` is merely an optimization mechanism that can help reduce the aggregate cost of a grain getting deactivated and reactivated over time. In most cases, there should be no need to use `DelayDeactivation` at all.
 
@@ -91,7 +91,7 @@ protected void DeactivateOnIdle()
 
 A grain activation is considered idle if it isn't processing any message at the moment. If you call `DeactivateOnIdle` while a grain is processing a message, it gets deactivated as soon as the processing of the current message is finished. If there are any requests queued for the grain, they'll be forwarded to the next activation.
 
-`DeactivateOnIdle` takes priority over any Activation Collection settings specified in the config or `DelayDeactivation`.
+`DeactivateOnIdle` takes priority over any activation collection settings specified in the config or `DelayDeactivation`.
 
 > [!NOTE]
 > Setting only applies to the grain activation from which it has been called and it does not apply to other grain activation of this type.

@@ -108,10 +108,22 @@ configuration:
       - payloadType: Pull_Request
       - hasLabel:
           label: ':octocat: auto-merge'
+      - targetsBranch:
+          branch: main
       then:
       - enableAutoMerge:
           mergeMethod: Squash
-      description: Auto-merge PRs labeled with auto-merge
+      description: Auto-squash-merge PRs to main labeled with auto-merge
+    - if:
+      - payloadType: Pull_Request
+      - hasLabel:
+          label: ':octocat: auto-merge'
+      - targetsBranch:
+          branch: live
+      then:
+      - enableAutoMerge:
+          mergeMethod: Merge
+      description: Auto-merge PRs to live labeled with auto-merge
     - if:
       - payloadType: Pull_Request
       - labelRemoved:

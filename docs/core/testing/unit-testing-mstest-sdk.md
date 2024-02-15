@@ -102,4 +102,4 @@ You can enable all the available extensions in "bulk" using the `<EnableAllTesti
 </Project>
 ```
 > [!WARNING]
-> Different extensions come with differente licensing model, we invite you to check the rights.
+> Different extensions come with different licensing model, we invite you to check the rights.

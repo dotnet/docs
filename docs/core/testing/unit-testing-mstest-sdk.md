@@ -32,7 +32,7 @@ How to use the `MSTest.Sdk` in a project:
 
 > [!NOTE]
 > You can set a different sdk version, 3.3.0 is an example.  
-> You can set the SDK version at solution level using the global.json too, [follow this guide](https://learn.microsoft.com/visualstudio/msbuild/how-to-use-project-sdk?#how-project-sdks-are-resolved).
+> Alternatively, you can set the SDK version at solution level using the global.json, [follow this guide](https://learn.microsoft.com/visualstudio/msbuild/how-to-use-project-sdk?#how-project-sdks-are-resolved).
 
 When you `build` the project all the needed components will be restored and installed using the standard NuGet workflow set by your project.
 

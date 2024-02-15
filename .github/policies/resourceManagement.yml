@@ -32,7 +32,7 @@ configuration:
           base: live
           title: Merge main into live
           body: Please don't squash-merge this PR.
-          label: ":octocat: auto-merge"
+          label: ':octocat: auto-merge'
     - description: Label doc-bug issues with okr-health (scheduled search)
       frequencies:
       - hourly:
@@ -94,12 +94,12 @@ configuration:
       - approvePullRequest:
           comment: "Approved, we'll :shipit: when all status checks pass."
       - addLabel:
-          label: :octocat: auto-merge
+          label: ':octocat: auto-merge'
       description: Label PRs from the Azure SDK bot
     - if:
       - payloadType: Pull_Request
       - hasLabel:
-          label: :octocat: auto-merge
+          label: ':octocat: auto-merge'
       then:
       - enableAutoMerge:
           mergeMethod: Squash
@@ -107,7 +107,7 @@ configuration:
     - if:
       - payloadType: Pull_Request
       - labelRemoved:
-          label: :octocat: auto-merge
+          label: ':octocat: auto-merge'
       then:
       - disableAutoMerge
       description: Don't auto-merge PRs with auto-merge label removed

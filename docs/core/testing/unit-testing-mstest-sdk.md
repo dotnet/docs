@@ -17,15 +17,11 @@ It's possible to build an MSTest app without this SDK, however, the MSTest SDK i
 * The recommended target for most users.
 * Yet easy to configure for others.
 
+The MSTest SDK will discover and run your tests using the [`MSTest runner`](./unit-testing-mstest-runner-intro.md)
+
 How to use the `MSTest.Sdk` in a project:
 
   ```xml
-  <!-- 
-       You can set a different sdk version, 3.3.0 is an example
-       You can set the SDK version at solution level using the global.json
-       Follow this guide:
-       https://learn.microsoft.com/visualstudio/msbuild/how-to-use-project-sdk?#how-project-sdks-are-resolved
-  -->
   <Project Sdk="MSTest.Sdk/3.3.0">
     <PropertyGroup> 
         <TargetFramework>net8.0</TargetFramework>
@@ -34,58 +30,65 @@ How to use the `MSTest.Sdk` in a project:
   </Project>
   ```
 
+> [!NOTE]
+> You can set a different sdk version, 3.3.0 is an example.  
+> You can set the SDK version at solution level using the global.json too, [follow this guide](https://learn.microsoft.com/visualstudio/msbuild/how-to-use-project-sdk?#how-project-sdks-are-resolved).
+
 When you `build` the project all the needed components will be restored and installed using the standard NuGet workflow set by your project.
 
 You don't need anything else to build and run your tests and you can use the same tooling (i.e. `dotnet test`, Visual Studio etc...) used by a ["classic" MSTest project](./index.md/#mstest).
 
-## `MSTest.Sdk` with the `MSTest runner`
-
-The `MSTest.Sdk` supports the [`MSTest runner`](./unit-testing-mstest-runner-intro.md) and simplify the configuration of extensions to make the experience easy and smooth.
-
-How to use the `MSTest.Sdk` with the `MSTest runner` in a project:
-
-  ```xml
-  <Project Sdk="MSTest.Sdk/3.3.0">
-    <PropertyGroup> 
-        <TargetFramework>net8.0</TargetFramework>
-        <EnableMSTestRunner>true</EnableMSTestRunner> 
-        <OutputType>Exe</OutputType> 
-    </PropertyGroup>
-    <!-- references to the code to test -->
-  </Project>
-  ```
+## Register extensions
 
  The `MSTest runner` comes with a set of built-in [extensions](./unit-testing-mstest-runner-extensions.md) that you can enable using an MSBuild property with the pattern `Enable[NugetPackageNameWithoutDots]`.  
 
- For instance to enable the `MS Code Coverage` shipped as `Microsoft.Testing.Extensions.CodeCoverage` NuGet package you can use the property `<EnableMicrosoftTestingExtensionsCodeCoverage>true</EnableMicrosoftTestingExtensionsCodeCoverage>`:  
+ For instance to enable the crash dump shipped as `Microsoft.Testing.Extensions.CrashDump` NuGet package you can use the property `<EnableMicrosoftTestingExtensionsCrashDump>true</EnableMicrosoftTestingExtensionsCrashDump>`:  
 
   ```xml
   <Project Sdk="MSTest.Sdk/3.3.0">
     <PropertyGroup> 
         <TargetFramework>net8.0</TargetFramework>
-        <EnableMSTestRunner>true</EnableMSTestRunner> 
-        <OutputType>Exe</OutputType> 
+        <EnableMicrosoftTestingExtensionsCrashDump>true</EnableMicrosoftTestingExtensionsCrashDump>
     </PropertyGroup>
-
-    <!-- Extensions -->
-    <PropertyGroup>
-        <EnableMicrosoftTestingExtensionsCodeCoverage>true</EnableMicrosoftTestingExtensionsCodeCoverage>
-    </PropertyGroup>
-
     <!-- references to the code to test -->
   </Project>
   ```
 
 ### Available extensions
 
-| Extension package | MSBuild property |
-| -------- | ----------- |
-| `Microsoft.Testing.Extensions.CodeCoverage` | `<EnableMicrosoftTestingExtensionsCodeCoverage>true</EnableMicrosoftTestingExtensionsCodeCoverage>` |
-| `Microsoft.Testing.Extensions.TrxReport` | `<EnableMicrosoftTestingExtensionsTrxReport>true</EnableMicrosoftTestingExtensionsTrxReport>` |
-| `Microsoft.Testing.Extensions.CrashDump` | `<EnableMicrosoftTestingExtensionsCrashDump>true</EnableMicrosoftTestingExtensionsCrashDump>` |
-| `Microsoft.Testing.Extensions.HangDump` | `<EnableMicrosoftTestingExtensionsHangDump>true</EnableMicrosoftTestingExtensionsHangDump>` |
-| `Microsoft.Testing.Extensions.Retry` | `<EnableMicrosoftTestingExtensionsRetry>true</EnableMicrosoftTestingExtensionsRetry>` |
-| `Microsoft.Testing.Extensions.HotReload` | `<EnableMicrosoftTestingExtensionsHotReload>true</EnableMicrosoftTestingExtensionsHotReload>` |
+| Extension package | MSBuild property | Registered by default |
+| -------- | ----------- | ----------- |
+| `Microsoft.Testing.Extensions.CodeCoverage` | `<EnableMicrosoftTestingExtensionsCodeCoverage>true</EnableMicrosoftTestingExtensionsCodeCoverage>` | ✔️ |
+| `Microsoft.Testing.Extensions.TrxReport` | `<EnableMicrosoftTestingExtensionsTrxReport>true</EnableMicrosoftTestingExtensionsTrxReport>` | ✔️ |
+| `Microsoft.Testing.Extensions.CrashDump` | `<EnableMicrosoftTestingExtensionsCrashDump>true</EnableMicrosoftTestingExtensionsCrashDump>` | ❌ |
+| `Microsoft.Testing.Extensions.HangDump` | `<EnableMicrosoftTestingExtensionsHangDump>true</EnableMicrosoftTestingExtensionsHangDump>` | ❌ |
+| `Microsoft.Testing.Extensions.Retry` | `<EnableMicrosoftTestingExtensionsRetry>true</EnableMicrosoftTestingExtensionsRetry>` | ❌ |
+| `Microsoft.Testing.Extensions.HotReload` | `<EnableMicrosoftTestingExtensionsHotReload>true</EnableMicrosoftTestingExtensionsHotReload>` | ❌ |
+
+If you want to disable the default extensions registration you can set to false the MSBuild property `EnableDefaultMicrosoftTestingExtensions`
+
+```xml
+<Project Sdk="MSTest.Sdk/3.3.0">
+    <PropertyGroup> 
+        <TargetFramework>net8.0</TargetFramework>
+        <EnableDefaultMicrosoftTestingExtensions>false</EnableDefaultMicrosoftTestingExtensions>
+    </PropertyGroup>    
+    <!-- references to the code to test -->
+</Project>
+```
+
+You can also opt-out specific extension setting to false the respective MSBuild property.  
+For instance you can opt-out the default `MS Code Coverage`
+
+```xml
+<Project Sdk="MSTest.Sdk/3.3.0">
+    <PropertyGroup> 
+        <TargetFramework>net8.0</TargetFramework>
+        <EnableMicrosoftTestingExtensionsCodeCoverage>false</EnableMicrosoftTestingExtensionsCodeCoverage>
+    </PropertyGroup>    
+    <!-- references to the code to test -->
+</Project>
+```
 
 You can enable all the available extensions in "bulk" using the `<EnableAllTestingExtensions>true</EnableAllTestingExtensions>`
 
@@ -93,11 +96,8 @@ You can enable all the available extensions in "bulk" using the `<EnableAllTesti
 <Project Sdk="MSTest.Sdk/3.3.0">
     <PropertyGroup> 
         <TargetFramework>net8.0</TargetFramework>
-        <EnableMSTestRunner>true</EnableMSTestRunner> 
-        <OutputType>Exe</OutputType> 
-        <EnableAllTestingExtensions>true</EnableAllTestingExtensions>
-    </PropertyGroup>
-    
+        <EnableAllMicrosoftTestingExtensions>true</EnableAllMicrosoftTestingExtensions>
+    </PropertyGroup>    
     <!-- references to the code to test -->
 </Project>
 ```

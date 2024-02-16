@@ -45,19 +45,19 @@ New methods <xref:System.Linq.Enumerable.CountBy%2A> and <xref:System.Linq.Enume
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Linq.cs" id="AggregateBy":::
 
-<xref:System.Linq.Enumerable.Index> makes it possible to quickly extract the implicit index of an enumerable. You can now write code such as the following snippet to automatically index items in a collection.
+<xref:System.Linq.Enumerable.Index%60%601(System.Collections.Generic.IEnumerable{%60%600})> makes it possible to quickly extract the implicit index of an enumerable. You can now write code such as the following snippet to automatically index items in a collection.
 
-:::code language="csharp" source="../snippets/dotnet-9/csharp/Linq.cs" id="IndexNew":::
+:::code language="csharp" source="../snippets/dotnet-9/csharp/Linq.cs" id="NewIndex":::
 
 ## Collections
 
-The <xref:System.Collections.Generic.PriorityQueue%602> collection type in the <xref:System.Collections.Generic> namespace includes a new <xref:System.Collections.Generic.PriorityQueue%602.Remove> method that you can use the update the priority of an item in the queue.
+The <xref:System.Collections.Generic.PriorityQueue%602> collection type in the <xref:System.Collections.Generic> namespace includes a new <xref:System.Collections.Generic.PriorityQueue%602.Remove(%600,%600@,%601@,System.Collections.Generic.IEqualityComparer{%600})> method that you can use the update the priority of an item in the queue.
 
 ### PriorityQueue.Remove() method
 
 .NET 6 introduced the <xref:System.Collections.Generic.PriorityQueue%602> collection, which provides a simple and fast array-heap implementation. One issue with array heaps in general is that they [don't support priority updates](https://github.com/dotnet/runtime/issues/44871), which makes them prohibitive for use in algorithms such as variations of [Dijkstra's algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm#Using_a_priority_queue).
 
-While it's not possible to implement efficient $O(\log n)$ priority updates in the existing collection, the new <xref:System.Collections.Generic.PriorityQueue%602.Remove?displayProperty=nameWithType> method makes it possible to emulate priority updates (albeit at $O(n)$ time):
+While it's not possible to implement efficient $O(\log n)$ priority updates in the existing collection, the new <xref:System.Collections.Generic.PriorityQueue%602.Remove(%600,%600@,%601@,System.Collections.Generic.IEqualityComparer{%600})?displayProperty=nameWithType> method makes it possible to emulate priority updates (albeit at $O(n)$ time):
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Collections.cs" id="UpdatePriority":::
 
@@ -100,4 +100,4 @@ The new, persisted <xref:System.Reflection.Emit.AssemblyBuilder> implementation 
 
 ## See also
 
-- [Announcing .NET 9 Preview 1](https://devblogs.microsoft.com/dotnet/announcing-dotnet-9-preview-1) (blog post)
+- [Our vision for .NET 9](https://devblogs.microsoft.com/dotnet/our-vision-for-dotnet-9/) blog post

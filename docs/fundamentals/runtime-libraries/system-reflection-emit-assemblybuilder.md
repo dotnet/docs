@@ -43,7 +43,7 @@ public void CreateAndRunAssembly(string assemblyPath)
     il.Emit(OpCodes.Ret);
 
     Type type = tb.CreateType();
-    
+
     MethodInfo method = type.GetMethod("SumMethod");
     Console.WriteLine(method.Invoke(null, new object[] { 5, 10 }));
 }
@@ -51,18 +51,14 @@ public void CreateAndRunAssembly(string assemblyPath)
 
 ## Persistable dynamic assemblies in .NET Core
 
-The `AssemblyBuilder.Save` API was not ported to .NET (Core) because the implementation depended heavily on Windows-specific native code that also wasn't ported. Because you could only *run* a generated assembly and not *save* it, it was difficult to debug these in-memory assemblies. Saving the assembly to a file lets you verify the generated assembly with tools such as ILVerify, or decompile and manually examine it with tools such as ILSpy. Furthermore, the saved assembly can be shared or loaded directly, which can decrease application startup time.
+The <xref:System.Reflection.Emit.AssemblyBuilder.Save%2A?displayProperty=nameWithType> API wasn't originally ported to .NET (Core) because the implementation depended heavily on Windows-specific native code that also wasn't ported. However, because you could only *run* a generated assembly and not *save* it, it was difficult to debug these in-memory assemblies. Other advantages of saving a dynamic assembly to a file are:
 
-.NET 9 adds a fully managed `Reflection.Emit` implementation that supports saving. This implementation has no dependency on the pre-existing, runtime-specific `Reflection.Emit` implementation. That is, now there are two different implementations in .NET (Core). The assemblies generated with the new managed implementation can be saved. To run the assembly, first save it into a memory stream or a file, then load it back.  
+- You can verify the generated assembly with tools such as ILVerify, or decompile and manually examine it with tools such as ILSpy.
+- The saved assembly can be shared or loaded directly, which can decrease application startup time.
 
-To create a new persistable `AssemblyBuilder` instance, use the static factory method `AssemblyBuilder.DefinePersistedAssembly`:
+.NET 9 adds a fully managed `Reflection.Emit` implementation that supports saving. This implementation has no dependency on the pre-existing, runtime-specific `Reflection.Emit` implementation. That is, now there are two different implementations. The assemblies generated with the new managed implementation can be saved. To run the assembly, first save it into a memory stream or a file, then load it back.
 
-```csharp
-public static DefinePersistedAssembly(AssemblyName name, Assembly coreAssembly,
-                                             IEnumerable<CustomAttributeBuilder>? assemblyAttributes = null);
-```
-
-The `coreAssembly` parameter is used to resolve base runtime types and can be used for resolving reference assembly versioning.
+To create a persistable `AssemblyBuilder` instance, use the static factory method <xref:System.Reflection.Emit.AssemblyBuilder.DefinePersistedAssembly(System.Reflection.AssemblyName,System.Reflection.Assembly,System.Collections.Generic.IEnumerable{System.Reflection.Emit.CustomAttributeBuilder})?displayProperty=nameWithType>. The `coreAssembly` parameter is used to resolve base runtime types and can be used for resolving reference assembly versioning.
 
 - If `Reflection.Emit` is used to generate an assembly that targets a specific TFM, open the reference assemblies for the given TFM using `MetadataLoadContext` and use the value of the [MetadataLoadContext.CoreAssembly](xref:System.Reflection.MetadataLoadContext.CoreAssembly) property for `coreAssembly`. This value allows the generator to run on one .NET runtime version and target a different .NET runtime version.
 
@@ -96,7 +92,7 @@ public void CreateSaveAndRunAssembly(string assemblyPath)
 ```
 
 > [!NOTE]
-> The metadata tokens for all members are populated on the `Save(...)` operation. Don't use the tokens of a generated type and its members before saving, as they'll have default values or throw exceptions. It's safe to use tokens for types that are referenced, not generated.
+> The metadata tokens for all members are populated on the <xref:System.Reflection.Emit.AssemblyBuilder.Save%2A> operation. Don't use the tokens of a generated type and its members before saving, as they'll have default values or throw exceptions. It's safe to use tokens for types that are referenced, not generated.
 >
 > Some APIs that aren't important for emitting an assembly aren't implemented; for example, `GetCustomAttributes()` is not implemented. With the runtime implementation, you were able to use those APIs after creating the type. For the persisted `AssemblyBuilder`, they throw `NotSupportedException` or `NotImplementedException`. If you have a scenario that requires those APIs, file an issue in the [dotnet/runtime repo](https://github.com/dotnet/runtime).
 
@@ -138,6 +134,6 @@ The signing of a dynamic assembly using <xref:System.Reflection.AssemblyName.Key
 
 Dynamic assemblies can reference types defined in another assembly. A transient dynamic assembly can safely reference types defined in another transient dynamic assembly, a persistable dynamic assembly, or a static assembly. However, the common language runtime does not allow a persistable dynamic module to reference a type defined in a transient dynamic module. This is because when the persisted dynamic module is loaded after being saved to disk, the runtime cannot resolve the references to types defined in the transient dynamic module.
 
-### Restrictions on emitting to remote application domains in .NET Framework
+### Restrictions on emitting to remote application domains
 
 Some scenarios require a dynamic assembly to be created and executed in a remote application domain. Reflection emit does not allow a dynamic assembly to be emitted directly to a remote application domain. The solution is to emit the dynamic assembly in the current application domain, save the emitted dynamic assembly to disk, and then load the dynamic assembly into the remote application domain. The remoting and application domains are supported only in .NET Framework.

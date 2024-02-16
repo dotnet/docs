@@ -8,9 +8,13 @@ public static class GroupJoins
 
     public static void RunAllSnippets()
     {
+        Console.WriteLine("Group Join Query Syntax");
         GroupJoinQuerySyntax();
+        Console.WriteLine("Group Join Method Syntax");
         GroupJoinMethodSyntax();
+        Console.WriteLine("Group Join to XML Query Syntax");
         GroupJoinToXmlQuerySyntax();
+        Console.WriteLine("Group Join to XML Method Syntax");
         GroupJoinToXmlMethodSyntax();
     }
 
@@ -30,24 +34,12 @@ public static class GroupJoins
             // Output the department's name.
             Console.WriteLine($"{v.DepartmentName}:");
 
-            // Output each of the owner's pet's names.
+            // Output each of the students in that department.
             foreach (Student? student in v.Students)
             {
                 Console.WriteLine($"  {student.FirstName} {student.LastName}");
             }
         }
-
-        /* Output:
-             Magnus:
-               Daisy
-             Terry:
-               Barley
-               Boots
-               Blue Moon
-             Charlotte:
-               Whiskers
-             Arlene:
-         */
         // </GroupJoinQuery>
     }
 
@@ -62,24 +54,12 @@ public static class GroupJoins
             // Output the department's name.
             Console.WriteLine($"{v.DepartmentName}:");
 
-            // Output each of the owner's pet's names.
+            // Output each of the students in that department.
             foreach (Student? student in v.Students)
             {
                 Console.WriteLine($"  {student.FirstName} {student.LastName}");
             }
         }
-
-        /* Output:
-             Magnus:
-               Daisy
-             Terry:
-               Barley
-               Boots
-               Blue Moon
-             Charlotte:
-               Whiskers
-             Arlene:
-         */
         // </GroupJoinMethod>
     }
     private static void GroupJoinToXmlQuerySyntax()
@@ -99,23 +79,6 @@ public static class GroupJoins
         );
 
         Console.WriteLine(departmentsAndStudents);
-
-        /* Output:
-             <PetOwners>
-               <Person FirstName="Magnus" LastName="Hedlund">
-                 <Pet>Daisy</Pet>
-               </Person>
-               <Person FirstName="Terry" LastName="Adams">
-                 <Pet>Barley</Pet>
-                 <Pet>Boots</Pet>
-                 <Pet>Blue Moon</Pet>
-               </Person>
-               <Person FirstName="Charlotte" LastName="Weiss">
-                 <Pet>Whiskers</Pet>
-               </Person>
-               <Person FirstName="Arlene" LastName="Huff" />
-             </PetOwners>
-        */
         // </GroupJoinToXmlQuery>
     }
 
@@ -136,23 +99,6 @@ public static class GroupJoins
         );
 
         Console.WriteLine(departmentsAndStudents);
-
-        /* Output:
-             <PetOwners>
-               <Person FirstName="Magnus" LastName="Hedlund">
-                 <Pet>Daisy</Pet>
-               </Person>
-               <Person FirstName="Terry" LastName="Adams">
-                 <Pet>Barley</Pet>
-                 <Pet>Boots</Pet>
-                 <Pet>Blue Moon</Pet>
-               </Person>
-               <Person FirstName="Charlotte" LastName="Weiss">
-                 <Pet>Whiskers</Pet>
-               </Person>
-               <Person FirstName="Arlene" LastName="Huff" />
-             </PetOwners>
-        */
         // </GroupJoinToXmlMethod>
     }
 }

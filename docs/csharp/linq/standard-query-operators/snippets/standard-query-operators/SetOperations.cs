@@ -119,13 +119,6 @@ internal class SetOperations
         {
             Console.WriteLine($"{teacher.First} {teacher.Last}");
         }
-
-        // This code produces the following output:
-        // Alex Robinson
-        // Michiyo Sato
-        // ...
-        // Carmen Vella
-        // Noel Svensson
         // </ExceptBy>
 
         Console.WriteLine();
@@ -165,14 +158,6 @@ internal class SetOperations
         {
             Console.WriteLine($"{person.FirstName} {person.LastName}");
         }
-
-        // This code produces the following output:
-        // Hanying Feng
-        // Hugo Garcia
-        // Michael Tucker
-        // Ifeanacho Jamuike
-        // Carmen Vella
-        // Noel Svensson
         // </IntersectBy>
 
         Console.WriteLine();
@@ -218,13 +203,6 @@ internal class SetOperations
         {
             Console.WriteLine($"{person.FirstName} {person.LastName}");
         }
-
-        // This code produces the following output:
-        // Svetlana Omelchenko
-        // Claire O'Donnell
-        // ...
-        // Andrey Glazkov
-        // Kettil Berggren
         // </UnionBy>
 
         Console.WriteLine();

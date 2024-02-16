@@ -6,23 +6,33 @@ public class InnerJoins
     private static readonly IEnumerable<Student> students = Sources.Students;
     public static void RunAllSnippets()
     {
+        Console.WriteLine("Simple Inner Join Query Syntax");
         SimpleInnerJoinQuerySyntax();
+        Console.WriteLine("Simple Inner Join Method Syntax");
         SimpleInnerJoinMethodSyntax();
+        Console.WriteLine("Composite Key Query Syntax");
         CompositeKeyQuerySyntax();
+        Console.WriteLine("Composite Key Method Syntax");
         CompositeKeyMethodSyntax();
+        Console.WriteLine("Multiple Join Query Syntax");
         MultipleJoinQuerySyntax();
+        Console.WriteLine("Multiple Join Method Syntax");
         MultipleJoinMethodSyntax();
+        Console.WriteLine("Inner Group Join Query Syntax");
         InnerGroupJoinQuerySyntax();
+        Console.WriteLine("Inner Join Query Syntax");
         InnerJoinQuerySyntax();
+        Console.WriteLine("Inner Group Join Method Syntax");
         InnerGroupJoinMethodSyntax();
+        Console.WriteLine("Inner Join Method Syntax");
         InnerJoinMethodSyntax();
     }
 
     private static void SimpleInnerJoinQuerySyntax()
     {
         // <SimpleInnerJoinQuery>
-        var query = from teacher in teachers
-                    join department in departments on teacher equals department.DepartmentHead
+        var query = from department in departments
+                    join teacher in teachers on department.TeacherID equals teacher.ID
                     select new
                     {
                         DepartmentName = department.Name,
@@ -33,13 +43,6 @@ public class InnerJoins
         {
             Console.WriteLine($"{departmentAndTeacher.DepartmentName} is managed by {departmentAndTeacher.TeacherName}");
         }
-        /* Output:
-             "Daisy" is owned by Magnus
-             "Barley" is owned by Terry
-             "Boots" is owned by Terry
-             "Whiskers" is owned by Charlotte
-             "Blue Moon" is owned by Rui
-        */
         // </SimpleInnerJoinQuery>
     }
 
@@ -47,7 +50,7 @@ public class InnerJoins
     {
         // <SimpleInnerJoinMethod>
         var query = teachers
-            .Join(departments, teacher => teacher, department => department.DepartmentHead,
+            .Join(departments, teacher => teacher.ID, department => department.TeacherID,
                 (teacher, department) =>
                 new { DepartmentName = department.Name, TeacherName = $"{teacher.First} {teacher.Last}" });
 
@@ -76,18 +79,12 @@ public class InnerJoins
             }
             select teacher.First + " " + teacher.Last;
 
-        string result = "The following people are both employees and students:\r\n";
+        string result = "The following people are both teachers and students:\r\n";
         foreach (string name in query)
         {
             result += $"{name}\r\n";
         }
         Console.Write(result);
-
-        /* Output:
-            The following people are both employees and students:
-            Terry Adams
-            Vernette Price
-         */
         // </CompositeKeyQuery>
 
     }
@@ -113,12 +110,12 @@ public class InnerJoins
     private static void MultipleJoinQuerySyntax()
     {
         // <MultipleJoinQuery>
-        // The first join matches Person and Cat.Owner from the list of people and
-        // cats, based on a common Person. The second join matches dogs whose names start
-        // with the same letter as the cats that have the same owner.
+        // The first join matches Department.ID and Student.DepartmentID from the list of students and
+        // departments, based on a common ID. The second join matches teachers who lead departments
+        // with the students studying in that department.
         var query = from student in students
             join department in departments on student.DepartmentID equals department.ID
-            join teacher in teachers on department.DepartmentHead equals teacher
+            join teacher in teachers on department.TeacherID equals teacher.ID
             select new {
                 StudentName = $"{student.FirstName} {student.LastName}",
                 DepartmentName = department.Name,
@@ -129,11 +126,6 @@ public class InnerJoins
         {
             Console.WriteLine($"""The student "{obj.StudentName}" studies in the department run by "{obj.TeacherName}".""");
         }
-
-        /* Output:
-             The cat "Daisy" shares a house, and the first letter of their name, with "Duke".
-             The cat "Whiskers" shares a house, and the first letter of their name, with "Wiley".
-         */
         // </MultipleJoinQuery>
     }
 
@@ -143,7 +135,7 @@ public class InnerJoins
         var query = students
             .Join(departments, student => student.DepartmentID, department => department.ID,
                 (student, department) => new { student, department })
-            .Join(teachers, commonDepartment => commonDepartment.department.DepartmentHead, teacher => teacher,
+            .Join(teachers, commonDepartment => commonDepartment.department.TeacherID, teacher => teacher.ID,
                 (commonDepartment, teacher) => new
                 {
                     StudentName = $"{commonDepartment.student.FirstName} {commonDepartment.student.LastName}",
@@ -181,7 +173,7 @@ public class InnerJoins
     private static void InnerJoinQuerySyntax()
     {
         // <InnerJoinQuery>
-        var query2 =from department in departments
+        var query2 = from department in departments
             join student in students on department.ID equals student.DepartmentID
             select new
             {
@@ -194,22 +186,6 @@ public class InnerJoins
         {
             Console.WriteLine($"{v.DepartmentName} - {v.StudentName}");
         }
-
-        /* Output:
-            Inner join using GroupJoin():
-            Magnus - Daisy
-            Terry - Barley
-            Terry - Boots
-            Terry - Blue Moon
-            Charlotte - Whiskers
-        
-            The equivalent operation using Join():
-            Magnus - Daisy
-            Terry - Barley
-            Terry - Boots
-            Terry - Blue Moon
-            Charlotte - Whiskers
-        */
         // </InnerJoinQuery>
     }
 

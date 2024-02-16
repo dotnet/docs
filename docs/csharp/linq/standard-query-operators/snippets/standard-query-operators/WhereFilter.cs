@@ -17,7 +17,9 @@ public class WhereFilter
                                     select word;
 
         foreach (string str in query)
+        {
             Console.WriteLine(str);
+        }
 
         /* This code produces the following output:
 
@@ -36,7 +38,9 @@ public class WhereFilter
             words.Where(word => word.Length == 3);
 
         foreach (string str in query)
+        {
             Console.WriteLine(str);
+        }
 
         /* This code produces the following output:
 

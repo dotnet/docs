@@ -22,7 +22,9 @@ public class ConversionExamples
                     select student;
 
         foreach (Student student in query)
+        {
             Console.WriteLine(student.FirstName);
+        }
         // </CastOperatorQuerySyntax>
     }
 
@@ -36,7 +38,9 @@ public class ConversionExamples
             .Where(student => student.Year == GradeLevel.ThirdYear);
 
         foreach (Student student in query)
+        {
             Console.WriteLine(student.FirstName);
+        }
         // </CastOperatorMethodSyntax>
     }
 }

@@ -6,9 +6,13 @@ public class JoinOverviewExamples
 
     public static void RunAllSnippets()
     {
+        Console.WriteLine("Join Example");
         JoinExampleQuery();
+        Console.WriteLine("Join Example Method");
         JoinExampleMethod();
+        Console.WriteLine("Group Join Example");
         GroupJoinExampleQuery();
+        Console.WriteLine("Group Join Example Method");
         GroupJoinExampleMethod();
     }
 
@@ -23,16 +27,6 @@ public class JoinOverviewExamples
         {
             Console.WriteLine($"{item.Name} - {item.DepartmentName}");
         }
-
-        // NEW: Make sure all students are included in the result
-
-        // This code produces the following output:
-        //
-        // Cola - Beverage
-        // Tea - Beverage
-        // Apple - Fruit
-        // Kiwi - Fruit
-        // Carrot - Vegetable
         // </JoinQuerySyntax>
     }
 
@@ -47,14 +41,6 @@ public class JoinOverviewExamples
         {
             Console.WriteLine($"{item.Name} - {item.DepartmentName}");
         }
-
-        // This code produces the following output:
-        //
-        // Cola - Beverage
-        // Tea - Beverage
-        // Apple - Fruit
-        // Kiwi - Fruit
-        // Carrot - Vegetable
         // </JoinMethodSyntax>
     }
     private static void GroupJoinExampleQuery()
@@ -72,17 +58,6 @@ public class JoinOverviewExamples
                 Console.WriteLine($"  - {student.FirstName}, {student.LastName}");
             }
         }
-
-        // This code produces the following output:
-        //
-        // Group
-        //     Cola
-        //      Tea
-        // Group
-        //    Apple
-        //     Kiwi
-        // Group
-        //   Carrot
         // </GroupJoinQuerySyntax>
     }
 
@@ -102,17 +77,6 @@ public class JoinOverviewExamples
                 Console.WriteLine($"  - {student.FirstName}, {student.LastName}");
             }
         }
-
-        // This code produces the following output:
-        //
-        // Group
-        //     Cola
-        //      Tea
-        // Group
-        //    Apple
-        //     Kiwi
-        // Group
-        //   Carrot
         // </GroupJoinMethodSyntax>
     }
 }

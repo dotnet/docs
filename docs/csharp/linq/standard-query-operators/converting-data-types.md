@@ -30,6 +30,12 @@ The conversion methods in this table whose names start with "As" change the stat
 |ToList|Converts a collection to a <xref:System.Collections.Generic.List%601>. This method forces query execution.|Not applicable.|<xref:System.Linq.Enumerable.ToList%2A?displayProperty=nameWithType>|
 |ToLookup|Puts elements into a <xref:System.Linq.Lookup%602> (a one-to-many dictionary) based on a key selector function. This method forces query execution.|Not applicable.|<xref:System.Linq.Enumerable.ToLookup%2A?displayProperty=nameWithType>|
 
+The following examples in this article use the common data sources for this area:
+
+:::code language="csharp" source="./snippets/standard-query-operators/DataSources.cs" id="QueryDataSource":::
+
+Each `Student` has a grade level, a primary department, and a series of scores. A `Teacher` also has a `City` property that identifies the campus where the teacher holds classes. A `Department` has a name, and a reference to a `Teacher` who serves as the department head.
+
 ## Query Expression Syntax Example
 
 The following code example uses an explicitly typed range variable to cast a type to a subtype before accessing a member that is available only on the subtype.

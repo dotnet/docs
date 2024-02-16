@@ -3,7 +3,9 @@ internal class GroupOverview
 {
     public static void RunAllSnippets()
     {
+        Console.WriteLine("Group Overview");
         OverviewSampleQuery();
+        Console.WriteLine("Group Overview Method");
         OverviewSampleMethod();
     }
 
@@ -19,25 +21,10 @@ internal class GroupOverview
         {
             Console.WriteLine(group.Key == 0 ? "\nEven numbers:" : "\nOdd numbers:");
             foreach (int i in group)
+            {
                 Console.WriteLine(i);
+            }
         }
-
-        /* This code produces the following output:
-
-            Odd numbers:
-            35
-            3987
-            199
-            320
-
-            Even numbers:
-            44
-            200
-            84
-            4
-            446
-            208
-        */
         // </OverviewSampleQuerySyntax>
     }
 
@@ -53,25 +40,10 @@ internal class GroupOverview
         {
             Console.WriteLine(group.Key == 0 ? "\nEven numbers:" : "\nOdd numbers:");
             foreach (int i in group)
+            {
                 Console.WriteLine(i);
+            }
         }
-
-        /* This code produces the following output:
-
-            Odd numbers:
-            35
-            3987
-            199
-            320
-
-            Even numbers:
-            44
-            200
-            84
-            4
-            446
-            208
-        */
         // </OverviewSampleMethodSyntax>
     }
 }

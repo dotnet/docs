@@ -33,16 +33,9 @@ internal class SortExamples
                                     select teacher.Last;
 
         foreach (string str in query)
+        {
             Console.WriteLine(str);
-
-        /* This code produces the following output:
-
-            Åstrom
-            Beebe
-            ...
-            Vella
-            Voronova
-        */
+        }
         // </PrimaryAscendingSortQuery>
     }
 
@@ -54,16 +47,9 @@ internal class SortExamples
             .Select(teacher => teacher.Last);
 
         foreach (string str in query)
+        {
             Console.WriteLine(str);
-
-        /* This code produces the following output:
-
-            Åstrom
-            Beebe
-            ...
-            Vella
-            Voronova
-        */
+        }
         // </PrimaryAscendingSortMethod>
     }
 
@@ -75,16 +61,9 @@ internal class SortExamples
                                     select teacher.Last;
 
         foreach (string str in query)
+        {
             Console.WriteLine(str);
-
-        /* This code produces the following output:
-
-            Voronova
-            Vella
-            ...
-            Beebe
-            Åstrom
-        */
+        }
         // </PrimaryDescendingSortQuery>
     }
 
@@ -96,16 +75,9 @@ internal class SortExamples
             .Select(teacher => teacher.Last);
 
         foreach (string str in query)
+        {
             Console.WriteLine(str);
-
-        /* This code produces the following output:
-
-            Voronova
-            Vella
-            ...
-            Beebe
-            Åstrom
-        */
+        }
         // </PrimaryDescendingSortMethod>
     }
 
@@ -117,16 +89,9 @@ internal class SortExamples
                                     select (teacher.Last, teacher.City);
 
         foreach ((string last, string city) in query)
+        {
             Console.WriteLine($"City: {city}, Last Name: {last}");
-
-        /* This code produces the following output:
-
-          City: Redmond, Last Name: Åstrom
-          City: Redmond, Last Name: Degtyarev
-          ...
-          City: Tacoma, Last Name: Vella
-          City: Tacoma, Last Name: Voronova
-        */
+        }
         // </SecondaryAscendingSortQuery>
     }
 
@@ -139,16 +104,9 @@ internal class SortExamples
             .Select(teacher => (teacher.Last, teacher.City));
 
         foreach ((string last, string city) in query)
+        {
             Console.WriteLine($"City: {city}, Last Name: {last}");
-
-        /* This code produces the following output:
-
-          City: Redmond, Last Name: Åstrom
-          City: Redmond, Last Name: Degtyarev
-          ...
-          City: Tacoma, Last Name: Vella
-          City: Tacoma, Last Name: Voronova
-        */
+        }
         // </SecondaryAscendingSortMethod>
     }
 
@@ -160,16 +118,9 @@ internal class SortExamples
                                     select (teacher.Last, teacher.City);
 
         foreach ((string last, string city) in query)
+        {
             Console.WriteLine($"City: {city}, Last Name: {last}");
-
-        /* This code produces the following output:
-
-          City: Redmond, Last Name: Seleznyov
-          City: Redmond, Last Name: Robinson
-          ...
-          City: Tacoma, Last Name: Berggren
-          City: Tacoma, Last Name: Bengtsson
-        */
+        }
         // </SecondaryDescendingSortQuery>
     }
     private static void SecondaryDescendingSortMethodSyntax()
@@ -181,16 +132,9 @@ internal class SortExamples
             .Select(teacher => (teacher.Last, teacher.City));
 
         foreach ((string last, string city) in query)
+        {
             Console.WriteLine($"City: {city}, Last Name: {last}");
-
-        /* This code produces the following output:
-
-          City: Redmond, Last Name: Seleznyov
-          City: Redmond, Last Name: Robinson
-          ...
-          City: Tacoma, Last Name: Berggren
-          City: Tacoma, Last Name: Bengtsson
-        */
+        }
         // </SecondaryDescendingSortMethod>
     }
 }

@@ -22,7 +22,9 @@ internal class SelectProjectionExamples
                     select word.Substring(0, 1);
 
         foreach (string s in query)
+        {
             Console.WriteLine(s);
+        }
 
         /* This code produces the following output:
 
@@ -42,7 +44,9 @@ internal class SelectProjectionExamples
         var query = words.Select(word => word.Substring(0, 1));
 
         foreach (string s in query)
+        {
             Console.WriteLine(s);
+        }
 
         /* This code produces the following output:
 
@@ -63,7 +67,9 @@ internal class SelectProjectionExamples
                     select word;
 
         foreach (string s in query)
+        {
             Console.WriteLine(s);
+        }
 
         /* This code produces the following output:
 
@@ -87,7 +93,9 @@ internal class SelectProjectionExamples
         var query = phrases.SelectMany(phrases => phrases.Split(' '));
 
         foreach (string s in query)
+        {
             Console.WriteLine(s);
+        }
 
         /* This code produces the following output:
 
@@ -124,7 +132,9 @@ internal class SelectProjectionExamples
                     select (number, letter);
 
         foreach (var item in query)
+        {
             Console.WriteLine(item);
+        }
         // </SelectManyQuery2>
 
         // <SelectManyMethod2>
@@ -133,7 +143,9 @@ internal class SelectProjectionExamples
             (number, letter) => (number, letter));
 
         foreach (var item in method)
+        {
             Console.WriteLine(item);
+        }
         // </SelectManyMethod2>
 
         ZipTupleExample(numbers, letters);
@@ -216,7 +228,7 @@ internal class SelectProjectionExamples
     // <SelectVsSelectMany>
     class Bouquet
     {
-        public List<string> Flowers { get; init; }
+        public required List<string> Flowers { get; init; }
     }
 
     static void SelectVsSelectMany()
@@ -236,51 +248,18 @@ internal class SelectProjectionExamples
         Console.WriteLine("Results by using Select():");
         // Note the extra foreach loop here.
         foreach (IEnumerable<string> collection in query1)
+        {
             foreach (string item in collection)
+            {
                 Console.WriteLine(item);
+            }
+        }
 
         Console.WriteLine("\nResults by using SelectMany():");
         foreach (string item in query2)
+        {
             Console.WriteLine(item);
-
-        /* This code produces the following output:
-
-           Results by using Select():
-            sunflower
-            daisy
-            daffodil
-            larkspur
-            tulip
-            rose
-            orchid
-            gladiolis
-            lily
-            snapdragon
-            aster
-            protea
-            larkspur
-            lilac
-            iris
-            dahlia
-
-           Results by using SelectMany():
-            sunflower
-            daisy
-            daffodil
-            larkspur
-            tulip
-            rose
-            orchid
-            gladiolis
-            lily
-            snapdragon
-            aster
-            protea
-            larkspur
-            lilac
-            iris
-            dahlia
-        */
+        }
     }
     // </SelectVsSelectMany>
 }

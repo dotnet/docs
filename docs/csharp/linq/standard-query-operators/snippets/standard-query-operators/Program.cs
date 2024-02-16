@@ -4,9 +4,9 @@
 using StandardQueryOperators;
 
 Console.WriteLine("==========          Index snippets          ==========");
-// IndexExamples.RunAllSnippets();
+IndexExamples.RunAllSnippets();
 Console.WriteLine("==========          Order Join results      ==========");
-// OrderResultsOfJoin.RunAllSnippets();
+OrderResultsOfJoin.RunAllSnippets();
 
 Console.WriteLine("==========          Where filter            ==========");
 WhereFilter.RunAllSnippets();
@@ -29,19 +29,19 @@ Console.WriteLine("==========          Conversions             ==========");
 ConversionExamples.RunAllSnippets();
 
 Console.WriteLine("==========          Join Overview           ==========");
-//JoinOverviewExamples.RunAllSnippets();
+JoinOverviewExamples.RunAllSnippets();
 Console.WriteLine("==========          Inner Join              ==========");
-//InnerJoins.RunAllSnippets();
+InnerJoins.RunAllSnippets();
 Console.WriteLine("==========          Group Join              ==========");
-//GroupJoins.RunAllSnippets();
+GroupJoins.RunAllSnippets();
 Console.WriteLine("==========          Left Outer Joins        ==========");
-//LeftOuterJoins.RunAllSnippets();
+LeftOuterJoins.RunAllSnippets();
 
 Console.WriteLine("==========          Grouping overview       ==========");
-//GroupOverview.RunAllSnippets();
+GroupOverview.RunAllSnippets();
 Console.WriteLine("==========          Group Query             ==========");
-//GroupQueryResults.RunAllSnippets();
+GroupQueryResults.RunAllSnippets();
 Console.WriteLine("==========          Nested Groups           ==========");
-//NestedGroups.RunAllSnippets();
+NestedGroups.RunAllSnippets();
 Console.WriteLine("==========          Subquery on Group       ==========");
-//SubqueryOnGroup.RunAllSnippets();
+SubqueryOnGroup.RunAllSnippets();

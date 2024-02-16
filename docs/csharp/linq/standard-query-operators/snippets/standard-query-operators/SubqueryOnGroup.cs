@@ -6,7 +6,9 @@ public class SubqueryOnGroup
 
     public static void RunAllSnippets()
     {
+        Console.WriteLine("Subquery on Group");
         SubqueryOnGroupQuery();
+        Console.WriteLine("Subquery on Group Method");
         SubqueryOnGroupMethod();
     }
 

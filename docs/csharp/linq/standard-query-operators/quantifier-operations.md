@@ -12,12 +12,6 @@ The following illustration depicts two different quantifier operations on two di
 
 :::image type="content" source="./media/quantifier-operations/linq-quantifier-operations.png" alt-text="LINQ Quantifier Operations":::
 
-The following examples in this article use the common data sources for this area:
-
-:::code language="csharp" source="./snippets/standard-query-operators/DataSources.cs" id="QueryDataSource":::
-
-Each `Student` has a grade level, a primary department, and a series of scores. A `Teacher` also has a `City` property that identifies the campus where the teacher holds classes. A `Department` has a name, and a reference to a `Teacher` who serves as the department head.
-
 |Method Name|Description|C# Query Expression Syntax|More Information|
 |-----------------|-----------------|---------------------------------|----------------------|
 |All|Determines whether all the elements in a sequence satisfy a condition.|Not applicable.|<xref:System.Linq.Enumerable.All%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.All%2A?displayProperty=nameWithType>|

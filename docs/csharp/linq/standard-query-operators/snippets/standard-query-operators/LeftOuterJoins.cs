@@ -6,7 +6,9 @@ public class LeftOuterJoins
 
     public static void RunAllSnippets()
     {
+        Console.WriteLine("Left Outer Join Query Syntax");
         LeftOuterJoinQuerySyntax();
+        Console.WriteLine("Left Outer Join Method Syntax");
         LeftOuterJoinMethodSyntax();
     }
 

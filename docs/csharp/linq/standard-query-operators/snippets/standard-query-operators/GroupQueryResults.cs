@@ -6,61 +6,45 @@ public class GroupQueryResults
 
     public static void RunAllSnippets()
     {
+        Console.WriteLine("Group ByProperty Results");
         GroupByPropertyQuery();
+        Console.WriteLine("Group ByProperty Results Method");
         GroupByPropertyMethod();
+        Console.WriteLine("Group ByValue Results");
         GroupByValueQuery();
+        Console.WriteLine("Group ByValue Results Method");
         GroupByValueMethod();
+        Console.WriteLine("Group ByRange Results");
         GroupByRangeQuery();
+        Console.WriteLine("Group ByRange Results Method");
         GroupByRangeMethod ();
+        Console.WriteLine("Group ByBoolean Results");
         GroupByBooleanQuery();
+        Console.WriteLine("Group ByBoolean Results Method");
         GroupByBooleanMethod();
+        Console.WriteLine("Group ByCompoundKey Results");
         GroupByCompoundKeyQuery();
+        Console.WriteLine("Group ByCompoundKey Results Method");
         GroupByCompoundKeyMethod();
     }
 
     public static void GroupByPropertyQuery()
     {
         // <GroupByPropertyQuery>
-        // Variable groupByLastNamesQuery is an IEnumerable<IGrouping<string,
-        // DataClass.Student>>.
-        var groupByLastNamesQuery =
+        var groupByYearQuery =
             from student in students
-            group student by student.LastName into newGroup
+            group student by student.Year into newGroup
             orderby newGroup.Key
             select newGroup;
 
-        foreach (var nameGroup in groupByLastNamesQuery)
+        foreach (var yearGroup in groupByYearQuery)
         {
-            Console.WriteLine($"Key: {nameGroup.Key}");
-            foreach (var student in nameGroup)
+            Console.WriteLine($"Key: {yearGroup.Key}");
+            foreach (var student in yearGroup)
             {
                 Console.WriteLine($"\t{student.LastName}, {student.FirstName}");
             }
         }
-
-        /* Output:
-            Key: Adams
-                    Adams, Terry
-            Key: Fakhouri
-                    Fakhouri, Fadi
-            Key: Feng
-                    Feng, Hanying
-            Key: Garcia
-                    Garcia, Cesar
-                    Garcia, Debra
-                    Garcia, Hugo
-            Key: Mortensen
-                    Mortensen, Sven
-            Key: O'Donnell
-                    O'Donnell, Claire
-            Key: Omelchenko
-                    Omelchenko, Svetlana
-            Key: Tucker
-                    Tucker, Lance
-                    Tucker, Michael
-            Key: Zabokritski
-                    Zabokritski, Eugene
-        */
         // </GroupByPropertyQuery>
     }
 
@@ -69,42 +53,18 @@ public class GroupQueryResults
         // <GroupByPropertyMethod>
         // Variable groupByLastNamesQuery is an IEnumerable<IGrouping<string,
         // DataClass.Student>>.
-        var groupByLastNamesQuery = students
-            .GroupBy(student => student.LastName)
+        var groupByYearQuery = students
+            .GroupBy(student => student.Year)
             .OrderBy(newGroup => newGroup.Key);
 
-        foreach (var nameGroup in groupByLastNamesQuery)
+        foreach (var yearGroup in groupByYearQuery)
         {
-            Console.WriteLine($"Key: {nameGroup.Key}");
-            foreach (var student in nameGroup)
+            Console.WriteLine($"Key: {yearGroup.Key}");
+            foreach (var student in yearGroup)
             {
                 Console.WriteLine($"\t{student.LastName}, {student.FirstName}");
             }
         }
-
-        /* Output:
-            Key: Adams
-                    Adams, Terry
-            Key: Fakhouri
-                    Fakhouri, Fadi
-            Key: Feng
-                    Feng, Hanying
-            Key: Garcia
-                    Garcia, Cesar
-                    Garcia, Debra
-                    Garcia, Hugo
-            Key: Mortensen
-                    Mortensen, Sven
-            Key: O'Donnell
-                    O'Donnell, Claire
-            Key: Omelchenko
-                    Omelchenko, Svetlana
-            Key: Tucker
-                    Tucker, Lance
-                    Tucker, Michael
-            Key: Zabokritski
-                    Zabokritski, Eugene
-        */
         // </GroupByPropertyMethod>
     }
 
@@ -125,27 +85,6 @@ public class GroupQueryResults
             }
         }
 
-        /* Output:
-            Key: A
-                    Adams, Terry
-            Key: F
-                    Fakhouri, Fadi
-                    Feng, Hanying
-            Key: G
-                    Garcia, Cesar
-                    Garcia, Debra
-                    Garcia, Hugo
-            Key: M
-                    Mortensen, Sven
-            Key: O
-                    O'Donnell, Claire
-                    Omelchenko, Svetlana
-            Key: T
-                    Tucker, Lance
-                    Tucker, Michael
-            Key: Z
-                    Zabokritski, Eugene
-        */
         // </GroupByValueQuery>
     }
 
@@ -163,28 +102,6 @@ public class GroupQueryResults
                 Console.WriteLine($"\t{student.LastName}, {student.FirstName}");
             }
         }
-
-        /* Output:
-            Key: A
-                    Adams, Terry
-            Key: F
-                    Fakhouri, Fadi
-                    Feng, Hanying
-            Key: G
-                    Garcia, Cesar
-                    Garcia, Debra
-                    Garcia, Hugo
-            Key: M
-                    Mortensen, Sven
-            Key: O
-                    O'Donnell, Claire
-                    Omelchenko, Svetlana
-            Key: T
-                    Tucker, Lance
-                    Tucker, Michael
-            Key: Z
-                    Zabokritski, Eugene
-        */
         // </GroupByValueMethod>
     }
 
@@ -217,24 +134,6 @@ public class GroupQueryResults
             }
         }
 
-        /* Output:
-            Key: 60
-                    Garcia, Debra
-            Key: 70
-                    O'Donnell, Claire
-            Key: 80
-                    Adams, Terry
-                    Feng, Hanying
-                    Garcia, Cesar
-                    Garcia, Hugo
-                    Mortensen, Sven
-                    Omelchenko, Svetlana
-                    Tucker, Lance
-                    Zabokritski, Eugene
-            Key: 90
-                    Fakhouri, Fadi
-                    Tucker, Michael
-        */
         // </GroupByRangeQuery>
     }
 
@@ -265,25 +164,6 @@ public class GroupQueryResults
                 Console.WriteLine($"\t{item.LastName}, {item.FirstName}");
             }
         }
-
-        /* Output:
-            Key: 60
-                    Garcia, Debra
-            Key: 70
-                    O'Donnell, Claire
-            Key: 80
-                    Adams, Terry
-                    Feng, Hanying
-                    Garcia, Cesar
-                    Garcia, Hugo
-                    Mortensen, Sven
-                    Omelchenko, Svetlana
-                    Tucker, Lance
-                    Zabokritski, Eugene
-            Key: 90
-                    Fakhouri, Fadi
-                    Tucker, Michael
-        */
         // </GroupByRangeMethod>
     }
 
@@ -307,23 +187,6 @@ public class GroupQueryResults
                 Console.WriteLine($"\t{student.FirstName} {student.LastName}");
             }
         }
-
-        /* Output:
-            Key: True
-                    Terry Adams
-                    Fadi Fakhouri
-                    Hanying Feng
-                    Cesar Garcia
-                    Hugo Garcia
-                    Sven Mortensen
-                    Svetlana Omelchenko
-                    Lance Tucker
-                    Michael Tucker
-                    Eugene Zabokritski
-            Key: False
-                    Debra Garcia
-                    Claire O'Donnell
-        */
         // </GroupByBooleanQuerySyntax>
     }
 
@@ -346,23 +209,6 @@ public class GroupQueryResults
                 Console.WriteLine($"\t{student.FirstName} {student.LastName}");
             }
         }
-
-        /* Output:
-            Key: True
-                    Terry Adams
-                    Fadi Fakhouri
-                    Hanying Feng
-                    Cesar Garcia
-                    Hugo Garcia
-                    Sven Mortensen
-                    Svetlana Omelchenko
-                    Lance Tucker
-                    Michael Tucker
-                    Eugene Zabokritski
-            Key: False
-                    Debra Garcia
-                    Claire O'Donnell
-        */
         // </GroupByBooleanMethodSyntax>
     }
 
@@ -388,31 +234,6 @@ public class GroupQueryResults
                 Console.WriteLine($"\t{item.FirstName} {item.LastName}");
             }
         }
-
-        /* Output:
-            Name starts with A who scored more than 85
-                    Terry Adams
-            Name starts with F who scored more than 85
-                    Fadi Fakhouri
-                    Hanying Feng
-            Name starts with G who scored more than 85
-                    Cesar Garcia
-                    Hugo Garcia
-            Name starts with G who scored less than 85
-                    Debra Garcia
-            Name starts with M who scored more than 85
-                    Sven Mortensen
-            Name starts with O who scored less than 85
-                    Claire O'Donnell
-            Name starts with O who scored more than 85
-                    Svetlana Omelchenko
-            Name starts with T who scored less than 85
-                    Lance Tucker
-            Name starts with T who scored more than 85
-                    Michael Tucker
-            Name starts with Z who scored more than 85
-                    Eugene Zabokritski
-        */
         // </GroupByCompundKeyQuerySyntax>
     }
 
@@ -436,31 +257,6 @@ public class GroupQueryResults
                 Console.WriteLine($"\t{item.FirstName} {item.LastName}");
             }
         }
-
-        /* Output:
-            Name starts with A who scored more than 85
-                    Terry Adams
-            Name starts with F who scored more than 85
-                    Fadi Fakhouri
-                    Hanying Feng
-            Name starts with G who scored more than 85
-                    Cesar Garcia
-                    Hugo Garcia
-            Name starts with G who scored less than 85
-                    Debra Garcia
-            Name starts with M who scored more than 85
-                    Sven Mortensen
-            Name starts with O who scored less than 85
-                    Claire O'Donnell
-            Name starts with O who scored more than 85
-                    Svetlana Omelchenko
-            Name starts with T who scored less than 85
-                    Lance Tucker
-            Name starts with T who scored more than 85
-                    Michael Tucker
-            Name starts with Z who scored more than 85
-                    Eugene Zabokritski
-        */
         // </GroupByCompundKeyMethodSyntax>
     }
 }

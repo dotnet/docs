@@ -7,7 +7,9 @@ public class OrderResultsOfJoin
 
     public static void RunAllSnippets()
     {
+        Console.WriteLine("Order Results of Join");
         OrderResultsOfJoinQuerySyntax();
+        Console.WriteLine("Order Results of Join Method");
         OrderResultsOfJoinMethodSyntax();
     }
 
@@ -33,22 +35,64 @@ public class OrderResultsOfJoin
                 Console.WriteLine($"  {student.LastName,-10} {student.FirstName,-10}");
             }
         }
-
         /* Output:
-            Beverages
-              Cola       1
-              Tea        1
-            Condiments
-              Mustard    2
-              Pickles    2
-            Fruit
-              Melons     5
-              Peaches    5
-            Grains
-            Vegetables
-              Bok Choy   3
-              Carrots    3
-         */
+        Chemistry
+          Balzan     Josephine
+          Fakhouri   Fadi
+          Popov      Innocenty
+          Seleznyova Sofiya
+          Vella      Carmen
+        Economics
+          Adams      Terry
+          Adaobi     Izuchukwu
+          Berggren   Jeanette
+          Garcia     Cesar
+          Ifeoma     Nwanneka
+          Jamuike    Ifeanacho
+          Larsson    Naima
+          Svensson   Noel
+          Ugomma     Ifunanya
+        Engineering
+          Axelsson   Erik
+          Berg       Veronika
+          Engström   Nancy
+          Hicks      Cassie
+          Keever     Bruce
+          Micallef   Nicholas
+          Mortensen  Sven
+          Nilsson    Erna
+          Tucker     Michael
+          Yermolayeva Anna
+        English
+          Andersson  Sarah
+          Feng       Hanying
+          Ivanova    Arina
+          Jakobsson  Jesper
+          Jensen     Christiane
+          Johansson  Mark
+          Kolpakova  Nadezhda
+          Omelchenko Svetlana
+          Urquhart   Donald
+        Mathematics
+          Frost      Gaby
+          Garcia     Hugo
+          Hedlund    Anna
+          Kovaleva   Katerina
+          Lindgren   Max
+          Maslova    Evgeniya
+          Olsson     Ruth
+          Sammut     Maria
+          Sazonova   Anastasiya
+        Physics
+          Åkesson    Sami
+          Edwards    Amy E.
+          Falzon     John
+          Garcia     Debra
+          Hansson    Sanna
+          Mattsson   Martina
+          Richardson Don
+          Zabokritski Eugene
+        */
         // </OrderResultsOfJoinQuery>
     }
 
@@ -73,22 +117,6 @@ public class OrderResultsOfJoin
                 Console.WriteLine($"  {student.LastName,-10} {student.FirstName,-10}");
             }
         }
-
-        /* Output:
-            Beverages
-              Cola       1
-              Tea        1
-            Condiments
-              Mustard    2
-              Pickles    2
-            Fruit
-              Melons     5
-              Peaches    5
-            Grains
-            Vegetables
-              Bok Choy   3
-              Carrots    3
-         */
         // </OrderResultsOfJoinMethod>
     }
 }

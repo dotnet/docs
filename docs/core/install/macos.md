@@ -201,7 +201,7 @@ Visual Studio for Mac installs the .NET SDK when the **.NET** workload is select
 
 | .NET SDK version      | Visual Studio version                                |
 | --------------------- | ---------------------------------------------------- |
-| 8.0                   | Visual Studio 2022 for Mac 17.8 or higher.           |
+| 8.0                   | Visual Studio 2022 for Mac 17.6 or higher.           |
 | 7.0                   | Visual Studio 2022 for Mac 17.4 or higher.           |
 | 6.0                   | Visual Studio 2022 for Mac Preview 3 17.0 or higher. |
 

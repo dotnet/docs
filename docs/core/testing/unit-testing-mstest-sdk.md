@@ -56,28 +56,47 @@ You don't need anything else to build and run your tests and you can use the sam
 
 ### Available extensions
 
-| Extension package | MSBuild property | Enabled by default |
-| -------- | ----------- | ----------- |
-| `Microsoft.Testing.Extensions.CodeCoverage` | `<EnableMicrosoftTestingExtensionsCodeCoverage>true</EnableMicrosoftTestingExtensionsCodeCoverage>` | ✔️ |
-| `Microsoft.Testing.Extensions.TrxReport` | `<EnableMicrosoftTestingExtensionsTrxReport>true</EnableMicrosoftTestingExtensionsTrxReport>` | ✔️ |
-| `Microsoft.Testing.Extensions.CrashDump` | `<EnableMicrosoftTestingExtensionsCrashDump>true</EnableMicrosoftTestingExtensionsCrashDump>` | ❌ |
-| `Microsoft.Testing.Extensions.HangDump` | `<EnableMicrosoftTestingExtensionsHangDump>true</EnableMicrosoftTestingExtensionsHangDump>` | ❌ |
-| `Microsoft.Testing.Extensions.Retry` | `<EnableMicrosoftTestingExtensionsRetry>true</EnableMicrosoftTestingExtensionsRetry>` | ❌ |
-| `Microsoft.Testing.Extensions.HotReload` | `<EnableMicrosoftTestingExtensionsHotReload>true</EnableMicrosoftTestingExtensionsHotReload>` | ❌ |
+| Extension package | MSBuild property | 'Default' profile | 'AllMicrosoft' profile |
+| -------- | ----------- | ----------- | ----------- |
+| `Microsoft.Testing.Extensions.CodeCoverage` | `<EnableMicrosoftTestingExtensionsCodeCoverage>true</EnableMicrosoftTestingExtensionsCodeCoverage>` | ✔️ | ✔️ |
+| `Microsoft.Testing.Extensions.TrxReport` | `<EnableMicrosoftTestingExtensionsTrxReport>true</EnableMicrosoftTestingExtensionsTrxReport>` | ✔️ | ✔️ |
+| `Microsoft.Testing.Extensions.CrashDump` | `<EnableMicrosoftTestingExtensionsCrashDump>true</EnableMicrosoftTestingExtensionsCrashDump>` | ❌ | ✔️ |
+| `Microsoft.Testing.Extensions.HangDump` | `<EnableMicrosoftTestingExtensionsHangDump>true</EnableMicrosoftTestingExtensionsHangDump>` | ❌ | ✔️ |
+| `Microsoft.Testing.Extensions.Retry` | `<EnableMicrosoftTestingExtensionsRetry>true</EnableMicrosoftTestingExtensionsRetry>` | ❌ | ✔️ |
+| `Microsoft.Testing.Extensions.HotReload` | `<EnableMicrosoftTestingExtensionsHotReload>true</EnableMicrosoftTestingExtensionsHotReload>` | ❌ | ✔️ |
 
-If you want to disable the default extensions registration you can set the MSBuild property `EnableDefaultMicrosoftTestingExtensions` to `false` (e.g. `<EnableDefaultMicrosoftTestingExtensions>false</EnableDefaultMicrosoftTestingExtensions>`).
+To simplify the extensions registration the `MSTest.Sdk` pre-package a set of these under profiles as you can read from the above table.
+
+You can decide which profile to opt-in using the `TestingExtensionsProfile` MSBuild property.  
+For instance if you want to opt-in all the Microsoft testing extensions you can set the `TestingExtensionsProfile` below:
 
 ```xml
 <Project Sdk="MSTest.Sdk/3.3.0">
     <PropertyGroup> 
         <TargetFramework>net8.0</TargetFramework>
-        <EnableDefaultMicrosoftTestingExtensions>false</EnableDefaultMicrosoftTestingExtensions>
+        <TestingExtensionsProfile>AllMicrosoft</TestingExtensionsProfile>
     </PropertyGroup>    
     <!-- references to the code to test -->
 </Project>
 ```
 
-You can also opt-out specific extension setting to false its respective MSBuild property.  
+> [!NOTE]
+> If you don't specify a custom `TestingExtensionsProfile` the implicit one is `Default`.
+
+If you don't want the default profile you can set it to `None`:
+
+```xml
+<Project Sdk="MSTest.Sdk/3.3.0">
+    <PropertyGroup> 
+        <TargetFramework>net8.0</TargetFramework>
+        <TestingExtensionsProfile>None</TestingExtensionsProfile>
+    </PropertyGroup>    
+    <!-- references to the code to test -->
+</Project>
+```
+
+
+You can always opt-out specific extension setting to false its respective MSBuild property.  
 For instance you can opt-out the default `MS Code Coverage` by setting `<EnableMicrosoftTestingExtensionsCodeCoverage>false</EnableMicrosoftTestingExtensionsCodeCoverage>`. Full-example below:
 
 ```xml
@@ -85,18 +104,6 @@ For instance you can opt-out the default `MS Code Coverage` by setting `<EnableM
     <PropertyGroup> 
         <TargetFramework>net8.0</TargetFramework>
         <EnableMicrosoftTestingExtensionsCodeCoverage>false</EnableMicrosoftTestingExtensionsCodeCoverage>
-    </PropertyGroup>    
-    <!-- references to the code to test -->
-</Project>
-```
-
-You can enable all the available extensions in "bulk" using the `<EnableAllTestingExtensions>true</EnableAllTestingExtensions>`
-
-```xml
-<Project Sdk="MSTest.Sdk/3.3.0">
-    <PropertyGroup> 
-        <TargetFramework>net8.0</TargetFramework>
-        <EnableAllMicrosoftTestingExtensions>true</EnableAllMicrosoftTestingExtensions>
     </PropertyGroup>    
     <!-- references to the code to test -->
 </Project>

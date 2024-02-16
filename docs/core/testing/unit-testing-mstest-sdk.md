@@ -65,10 +65,10 @@ You don't need anything else to build and run your tests and you can use the sam
 | `Microsoft.Testing.Extensions.Retry` | `<EnableMicrosoftTestingExtensionsRetry>true</EnableMicrosoftTestingExtensionsRetry>` | ❌ | ✔️ |
 | `Microsoft.Testing.Extensions.HotReload` | `<EnableMicrosoftTestingExtensionsHotReload>true</EnableMicrosoftTestingExtensionsHotReload>` | ❌ | ✔️ |
 
-To simplify the extensions registration the `MSTest.Sdk` pre-package a set of these under profiles as you can read from the above table.
+The `MSTest.Sdk` simplifies the registration of extensions by including a pre-packaged set of them under different profiles, as shown in the table above.
 
-You can decide which profile to opt-in using the `TestingExtensionsProfile` MSBuild property.  
-For instance if you want to opt-in all the Microsoft testing extensions you can set the `TestingExtensionsProfile` below:
+To choose a specific profile to enable, you can use the `TestingExtensionsProfile` MSBuild property.  
+For example, if you wish to enable all Microsoft testing extensions, you can configure the `TestingExtensionsProfile` as shown below:
 
 ```xml
 <Project Sdk="MSTest.Sdk/3.3.0">
@@ -81,9 +81,9 @@ For instance if you want to opt-in all the Microsoft testing extensions you can 
 ```
 
 > [!NOTE]
-> If you don't specify a custom `TestingExtensionsProfile` the implicit one is `Default`.
+> If you don't specify a custom `TestingExtensionsProfile`, the default profile will be applied.
 
-If you don't want the default profile you can set it to `None`:
+If you prefer not to use the default profile, you can set it to `None`:
 
 ```xml
 <Project Sdk="MSTest.Sdk/3.3.0">

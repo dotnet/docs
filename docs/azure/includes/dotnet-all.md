@@ -287,7 +287,7 @@
 | Azure.Communication.Administration | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Communication.Administration/1.0.0-beta.3) |  |  |
 | Azure.Communication.CallingServer | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Communication.CallingServer/1.0.0-beta.3) |  |  |
 | Azure.Core.Expressions.DataFactory | NuGet [1.0.0-beta.6](https://www.nuget.org/packages/Azure.Core.Expressions.DataFactory/1.0.0-beta.6) |  | GitHub [1.0.0-beta.6](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Core.Expressions.DataFactory_1.0.0-beta.6/sdk/core/Azure.Core.Expressions.DataFactory/) |
-| Communication Calling Windows Client | NuGet [1.4.0](https://www.nuget.org/packages/Azure.Communication.Calling.WindowsClient/1.4.0)<br>NuGet [1.5.0-beta.1](https://www.nuget.org/packages/Azure.Communication.Calling.WindowsClient/1.5.0-beta.1) |  |  |
+| Communication Calling Windows Client | NuGet [1.4.0](https://www.nuget.org/packages/Azure.Communication.Calling.WindowsClient/1.4.0)<br>NuGet [1.5.0-beta.2](https://www.nuget.org/packages/Azure.Communication.Calling.WindowsClient/1.5.0-beta.2) |  |  |
 | Unknown Display Name | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.AI.DocumentIntelligence/1.0.0-beta.1) |  |  |
 | Unknown Display Name | NuGet [12.0.0-beta.1](https://www.nuget.org/packages/Azure.Storage.DataMovement.Files.Shares/12.0.0-beta.1) |  |  |
 | Unknown Display Name | NuGet [1.0.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore.Analyzers/1.0.2) |  |  |
@@ -372,7 +372,7 @@
 | Mobile Server - Cross Domain | NuGet [2.0.3](https://www.nuget.org/packages/Microsoft.Azure.Mobile.Server.CrossDomain/2.0.3) |  |  |
 | News Search | NuGet [2.1.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.BingNewsSearch/2.1.0-preview.1) |  | GitHub [2.1.0-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Search.BingNewsSearch_2.1.0-preview.1/sdk/cognitiveservices/Search.BingNewsSearch) |
 | News Search | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.NewsSearch/2.0.0) |  |  |
-| Notification Hubs | NuGet [4.1.0](https://www.nuget.org/packages/Microsoft.Azure.NotificationHubs/4.1.0) |  | GitHub [4.1.0](https://github.com/Azure/azure-notificationhubs-dotnet) |
+| Notification Hubs | NuGet [4.1.0](https://www.nuget.org/packages/Microsoft.Azure.NotificationHubs/4.1.0)<br>NuGet [4.2.0-beta1](https://www.nuget.org/packages/Microsoft.Azure.NotificationHubs/4.2.0-beta1) |  | GitHub [4.1.0](https://github.com/Azure/azure-notificationhubs-dotnet) |
 | Personalizer | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Personalizer/1.0.0) |  | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Personalizer_1.0.0/sdk/cognitiveservices/Personalizer) |
 | Quantum Jobs | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Quantum.Jobs/1.0.0-beta.3) |  |  |
 | Relay | NuGet [3.0.1](https://www.nuget.org/packages/Microsoft.Azure.Relay/3.0.1) | [docs](https://learn.microsoft.com/dotnet/api/overview/azure/service-bus-relay) | GitHub [3.0.1](https://github.com/Azure/azure-relay-dotnet/tree/2.0.1) |
@@ -491,7 +491,7 @@
 | SignalR - Protocols | NuGet [1.24.0](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Protocols/1.24.0) |  | GitHub [1.24.0](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR.Protocols) |
 | SignalR - Serverless Protocols | NuGet [1.10.0](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Serverless.Protocols/1.10.0) |  | GitHub [1.10.0](https://github.com/Azure/azure-functions-signalrservice-extension/tree/v1.2.0/src/Microsoft.Azure.SignalR.Serverless.Protocols) |
 | SignalR Management | NuGet [1.24.0](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Management/1.24.0) |  | GitHub [1.24.0](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR.Management) |
-| SQL Database Elastic Scale Client | NuGet [2.4.0](https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.ElasticScale.Client/2.4.0)<br>NuGet [2.4.1-preview1](https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.ElasticScale.Client/2.4.1-preview1) |  | GitHub [2.4.0](https://github.com/Azure/elastic-db-tools/tree/v2.3.0/Src/ElasticScale.Client) |
+| SQL Database Elastic Scale Client | NuGet [2.4.1](https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.ElasticScale.Client/2.4.1) |  | GitHub [2.4.1](https://github.com/Azure/elastic-db-tools/tree/v2.3.0/Src/ElasticScale.Client) |
 | SQL Database Elastic Scale Service SplitMerge | NuGet [1.2.0](https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.ElasticScale.Service.SplitMerge/1.2.0) |  |  |
 | SQL Database Jobs | NuGet [0.8.3362.1](https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.Jobs/0.8.3362.1) |  |  |
 | Storage APIs for Microsoft.Azure.WebJobs.Host | NuGet [5.0.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Host.Storage/5.0.0) |  | GitHub [5.0.0](https://github.com/Azure/azure-webjobs-sdk/tree/storage-v4.0.1/src/Microsoft.Azure.WebJobs.Host.Storage) |

@@ -30,7 +30,7 @@ The **RunConfiguration** element can include the following elements. None of the
 |**TestAdaptersPaths**| One or more paths to the directory where the TestAdapters are located| MSTest runner does not use the concept of test adapters and does not allow dynamic loading of extensions unless they are part of the build, and are registered in `Program.cs`, either automatically via build targets or manually. |
 |**TestCaseFilter**| A filter to limit tests which will run. | To filter tests use `--filter` command line option. |
 |**TestSessionTimeout**|Allows users to terminate a test session when it exceeds a given timeout.| There is no alternative option. |
-|**DotnetHostPath**|Specify a custom path to dotnet host that is used to run the test host. | MSTest runner is not doing any additional resolving of dotnet. It depends fully on how dotnet resolves itself, which can be controlled by environment variables such as [`DOTNET_HOST_PATH`](/dotnet/core/tools/dotnet-environment-variables#dotnet_host_path). |
+|**DotnetHostPath**|Specify a custom path to dotnet host that is used to run the test host. | MSTest runner is not doing any additional resolving of dotnet. It depends fully on how dotnet resolves itself, which can be controlled by environment variables such as [`DOTNET_HOST_PATH`](../tools/dotnet-environment-variables.md#dotnet_host_path). |
 |**TreatNoTestsAsError**| Exit with non-zero exit code when no tests are discovered. | MSTest runner will error by default when no tests are discovered or run in a test application. You can set how many tests you expect to find in the assembly by using `--minimum-expected-tests` command line parameter, which defaults to 1. |
 
 ### DataCollectionRunSettings

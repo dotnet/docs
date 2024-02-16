@@ -32,6 +32,6 @@ See [Deferred execution example](deferred-execution-example.md) for an example o
 
 - [Tutorial: Chain Queries Together in C#](chain-queries-example.md)
 - [Concepts and terminology (functional transformation)](concepts-terminology-functional-transformation.md)
-- [Aggregation Operations (C#)](../../csharp/programming-guide/concepts/linq/aggregation-operations.md)
+- [Aggregation Operations (C#)](../../csharp/linq/standard-query-operators/index.md)
 - [Aggregation Operations (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/aggregation-operations.md)
 - [yield (C# Reference)](../../csharp/language-reference/statements/yield.md)

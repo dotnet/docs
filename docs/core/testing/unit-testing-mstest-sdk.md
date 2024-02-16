@@ -1,7 +1,7 @@
 ---
 title: MSTest SDK
 author: MarcoRossignoli
-description: Overview of MSTest.Sdk.
+description: Learn about the MSTest.Sdk and how to configure profiles and extensions with MSBuild properties.
 ms.author: mrossignoli
 ms.date: 02/13/2024
 ---

@@ -69,4 +69,3 @@ Finally, you must add the <xref:System.Runtime.CompilerServices.CollectionBuilde
 :::code language="csharp" source="./snippets/shared/CollectionExpressionExamples.cs" id="BuilderAttribute":::
 
 The first parameter provides the name of the *Builder* class. The second attribute provides the name of the builder method.
-

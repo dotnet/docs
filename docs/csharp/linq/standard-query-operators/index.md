@@ -1,11 +1,11 @@
 ---
 title: "Standard Query Operators Overview (C#)"
 description: The LINQ standard query operators provide query capabilities including filtering, projection, aggregation, and sorting in C#.
-ms.date: 02/13/2024
+ms.date: 02/16/2024
 ---
 # Standard Query Operators Overview
 
-The *standard query operators* are the keywords and methods that form the LINQ pattern. The C# language defines [LINQ query keywords](../../language-reference/keywords/query-keywords.md) that you use for the most common query expression. The compiler translates expressions using these keywords to the equivalent method calls. The two forms are synonymous. Other methods that are part of the <xref:System.Linq?displayProperty=fullName> namespace don't have equivalent query keywords. In those cases, you must use the method syntax.
+The *standard query operators* are the keywords and methods that form the LINQ pattern. The C# language defines [LINQ query keywords](../../language-reference/keywords/query-keywords.md) that you use for the most common query expression. The compiler translates expressions using these keywords to the equivalent method calls. The two forms are synonymous. Other methods that are part of the <xref:System.Linq?displayProperty=fullName> namespace don't have equivalent query keywords. In those cases, you must use the method syntax. This section covers all the query operator keywords. The runtime and other NuGet packages add more methods designed to work with LINQ queries each release. The most common methods, including those that have query keyword equivalents are covered in this section. For the full list of query methods supported by the .NET Runtime, see the <xref:System.Linq.Enumerable?displayProperty=fullName> API documentation.
 
 Most of these methods operate on sequences, where a sequence is an object whose type implements the <xref:System.Collections.Generic.IEnumerable%601> interface or the <xref:System.Linq.IQueryable%601> interface. The standard query operators provide query capabilities including filtering, projection, aggregation, sorting and more. The methods that make up each set are static members of the <xref:System.Linq.Enumerable> and <xref:System.Linq.Queryable> classes, respectively. They're defined as [*extension methods*](../../programming-guide/classes-and-structs/extension-methods.md) of the type that they operate on.
 
@@ -29,7 +29,7 @@ Each `Student` has a grade level, a primary department, and a series of scores. 
 
 The standard query operators differ in the timing of their execution, depending on whether they return a singleton value or a sequence of values. Those methods that return a singleton value (such as <xref:System.Linq.Enumerable.Average%2A> and <xref:System.Linq.Enumerable.Sum%2A>) execute immediately. Methods that return a sequence defer the query execution and return an enumerable object. You can use the output sequence of one query as the input sequence to another query. Calls to query methods can be chained together in one query, which enables queries to become arbitrarily complex.
 
-## Obtain a data source
+## Query operators
 
 In a LINQ query, the first step is to specify the data source. In a LINQ query, the `from` clause comes first in order to introduce the data source (`customers`) and the *range variable* (`cust`).
 
@@ -40,71 +40,13 @@ The range variable is like the iteration variable in a `foreach` loop except tha
 > [!NOTE]
 > For non-generic data sources such as <xref:System.Collections.ArrayList>, the range variable must be explicitly typed. For more information, see [How to query an ArrayList with LINQ (C#)](../../programming-guide/concepts/linq/how-to-query-an-arraylist-with-linq.md) and [from clause](../../language-reference/keywords/from-clause.md).
 
-## Filtering
+Once you obtain a data source, you can perform any number of operations on that data source:
 
-Probably the most common query operation is to apply a filter in the form of a Boolean expression. The filter causes the query to return only those elements for which the expression is true. The result is produced by using the `where` clause. The filter in effect specifies which elements to exclude from the source sequence. In the following example, only those `customers` who have an address in London are returned.
-
-:::code language="csharp" source="./snippets/standard-query-operators/IndexExamples.cs" id="CityFilter":::
-
-You can use the familiar C# logical `AND` and `OR` operators to apply as many filter expressions as necessary in the `where` clause. To return only customers from "London" `AND` whose name is "Devon" you would write the following code:
-
-:::code language="csharp" source="./snippets/standard-query-operators/IndexExamples.cs" id="AndFilter":::
-
-To return customers from London or Paris, you would write the following code:
-
-:::code language="csharp" source="./snippets/standard-query-operators/IndexExamples.cs" id="OrFilter":::
-
-For more information, see [where clause](../../language-reference/keywords/where-clause.md).
-
-## Ordering
-
-Often it's convenient to sort the returned data. The `orderby` clause causes the elements in the returned sequence to be sorted according to the default comparer for the type being sorted. The following query can be extended to sort the results based on the `Name` property. Because `Name` is a string, the default comparer performs an alphabetical sort from A to Z.
-
-:::code language="csharp" source="./snippets/standard-query-operators/IndexExamples.cs" id="Ordering":::
-
-To order the results in reverse order, from Z to A, use the `orderby…descending` clause.
-
-For more information, see [orderby clause](../../language-reference/keywords/orderby-clause.md).
-
-## Grouping
-
-The `group` clause enables you to group your results based on a key that you specify. You could specify that the results are grouped by the `City` so that all customers from London or Paris are in individual groups. In this case, `cust.City` is the key.
-
-:::code language="csharp" source="./snippets/standard-query-operators/IndexExamples.cs" id="Grouping":::
-
-When you end a query with a `group` clause, your results take the form of a list of lists. Each element in the list is an object that has a `Key` member and a list of elements that are grouped under that key. When you iterate over a query that produces a sequence of groups, you must use a nested `foreach` loop. The outer loop iterates over each group, and the inner loop iterates over each group's members.
-
-If you must refer to the results of a group operation, you can use the `into` keyword to create an identifier that can be queried further. The following query returns only those groups that contain more than two customers:
-
-:::code language="csharp" source="./snippets/standard-query-operators/IndexExamples.cs" id="GroupInto":::
-
-For more information, see [group clause](../../language-reference/keywords/group-clause.md).
-
-## Joining
-
-Join operations create associations between sequences that aren't explicitly modeled in the data sources. You can perform a join to find all the customers and distributors who have the same location. In LINQ the `join` clause always works against object collections instead of database tables directly.
-
-:::code language="csharp" source="./snippets/standard-query-operators/IndexExamples.cs" id="Join":::
-
-In LINQ, you don't have to use `join` as often as you do in SQL, because foreign keys in LINQ are represented in the object model as properties that hold a collection of items. A `Customer` object contains a collection of `Order` objects. Rather than performing a join, you access the orders by using dot notation:
-
-```csharp
-from order in Customer.Orders
-```
-
-You can use the results of one query as the data source for a subsequent query. This example shows how to order the results of a join operation. This query creates a group join, and then sorts the groups based on the category element, which is still in scope. Inside the anonymous type initializer, a sub-query orders all the matching elements from the products sequence.
-
-:::code language="csharp" source="./snippets/standard-query-operators/OrderResultsOfJoin.cs" id="OrderResultsOfJoinQuery":::
-
-The equivalent query using method syntax is shown in the following code:
-
-:::code language="csharp" source="./snippets/standard-query-operators/OrderResultsOfJoin.cs" id="OrderResultsOfJoinMethod":::
-
-Although you can use an `orderby` clause with one or more of the source sequences before the join, generally we do not recommend it. Some LINQ providers might not preserve that ordering after the join. For more information, see [join clause](../../language-reference/keywords/join-clause.md).
-
-## Selecting (Projections)
-
-The `select` clause produces the results of the query and specifies the "shape" or type of each returned element. You can specify whether your results consist of complete `Customer` objects, just one member, a subset of members, or some different result type based on a computation or new object creation. When the `select` clause produces something other than a copy of the source element, the operation is called a *projection*. The use of projections to transform data is a powerful capability of LINQ query expressions. For more information, see [Data Transformations with LINQ (C#)](../../programming-guide/concepts/linq/data-transformations-with-linq.md) and [select clause](../../language-reference/keywords/select-clause.md).
+- [Filter data](filtering-data.md) using the `where` keyword.
+- [Order data](sorting-data.md) using the `orderby` and optionally `descending` keywords.
+- [Group data](grouping-data.md) using the `group` and optionally `into` keywords.
+- [Join data](join-operations.md) using the `join` keyword.
+- [Project data](projection-operations.md) using the `select` keyword.
 
 ## Query Expression Syntax Table
 
@@ -133,30 +75,7 @@ Language-Integrated Query (LINQ) isn't only about retrieving data. It's also a p
 - Create output sequences whose elements consist of the results of operations performed on the source data.
 - Create output sequences in a different format. For example, you can transform data from SQL rows or text files into XML.
 
-These transformations can be combined in various ways in the same query. Furthermore, the output sequence of one query can be used as the input sequence for a new query.
-
-### Joining Multiple Inputs into One Output Sequence
-
-You can use a LINQ query to create an output sequence that contains elements from more than one input sequence. The following example shows how to combine two in-memory data structures, but the same principles can be applied to combine data from XML or SQL or DataSet sources. The following example shows the query:
-
-:::code language="csharp" source="./snippets/standard-query-operators/IndexExamples.cs" id="Transformations":::
-
-For more information, see [join clause](../../language-reference/keywords/join-clause.md) and [select clause](../../language-reference/keywords/select-clause.md).
-
-### Selecting a Subset of each Source Element
-
-There are two primary ways to select a subset of each element in the source sequence:
-
-1. To select just one member of the source element, use the dot operation. In the following example, assume that a `Customer` object contains several public properties including a string named `City`. When executed, this query produces an output sequence of strings.
-   :::code language="csharp" source="./snippets/standard-query-operators/IndexExamples.cs" id="Properties":::
-1. To create elements that contain more than one property from the source element, you can use an object initializer with either a named object or an anonymous type. The following example shows the use of an anonymous type to encapsulate two properties from each `Customer` element:
-   :::code language="csharp" source="./snippets/standard-query-operators/IndexExamples.cs" id="AnonymousTypes":::
-
-For more information, see [Object and Collection Initializers](../../programming-guide/classes-and-structs/object-and-collection-initializers.md) and [Anonymous Types](../../fundamentals/types/anonymous-types.md).
-
-### Transforming in-Memory Objects into XML
-
-LINQ queries make it easy to transform data between in-memory data structures, SQL databases, ADO.NET Datasets, and XML streams or documents. The following example transforms objects in an in-memory data structure into XML elements.
+These transformations can be combined in various ways in the same query. Furthermore, the output sequence of one query can be used as the input sequence for a new query. The following example transforms objects in an in-memory data structure into XML elements.
 
 :::code language="csharp" source="./snippets/standard-query-operators/IndexExamples.cs" id="XmlTransformation":::
 
@@ -166,18 +85,15 @@ The code produces the following XML output:
 
 For more information, see [Creating XML Trees in C# (LINQ to XML)](../../../standard/linq/create-xml-trees.md).
 
-### Performing Operations on Source Elements
+You can use the results of one query as the data source for a subsequent query. This example shows how to order the results of a join operation. This query creates a group join, and then sorts the groups based on the category element, which is still in scope. Inside the anonymous type initializer, a subquery orders all the matching elements from the products sequence.
 
-An output sequence might not contain any elements or element properties from the source sequence. The output might instead be a sequence of values that is computed by using the source elements as input arguments.
+:::code language="csharp" source="./snippets/standard-query-operators/OrderResultsOfJoin.cs" id="OrderResultsOfJoinQuery":::
 
-The following query takes a sequence of numbers that represent radii of circles, calculate the area for each radius, and return an output sequence containing strings formatted with the calculated area.
+The equivalent query using method syntax is shown in the following code:
 
-Each string for the output sequence is formatted using [string interpolation](../../language-reference/tokens/interpolated.md). An interpolated string has a `$` in front of the string's opening quotation mark, and operations can be performed within curly braces placed inside the interpolated string. Once those operations are performed, the results are concatenated.
+:::code language="csharp" source="./snippets/standard-query-operators/OrderResultsOfJoin.cs" id="OrderResultsOfJoinMethod":::
 
-> [!NOTE]
-> Calling methods in query expressions is not supported if the query will be translated into some other domain. You cannot call an ordinary C# method in [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] because SQL Server has no context for it. However, you can map stored procedures to methods and call those. For more information, see [Stored Procedures](../../../framework/data/adonet/sql/linq/stored-procedures.md).
-
-:::code language="csharp" source="./snippets/standard-query-operators/IndexExamples.cs" id="MethodQuery":::
+Although you can use an `orderby` clause with one or more of the source sequences before the join, generally we don't recommend it. Some LINQ providers might not preserve that ordering after the join. For more information, see [join clause](../../language-reference/keywords/join-clause.md).
 
 ## See also
 

@@ -4,17 +4,13 @@ namespace StandardQueryOperators;
 
 internal class IndexExamples
 {
-    private static readonly IEnumerable<Teacher> teachers = Sources.Teachers;
     private static readonly IEnumerable<Student> students = Sources.Students;
 
     public static void RunAllSnippets()
     {
         Sentences();
         PartsOfAQuery();
-        Transformations();
         XmlTransformation();
-        Properties();
-        QueryMethod();
     }
 
     private static void Sentences()
@@ -67,93 +63,6 @@ internal class IndexExamples
         var queryAllStudents = from student in students
                                 select student;
         //</ObtainDataSource>
-
-        //<CityFilter>
-        var queryStudentSeniors = from student in students
-                                  where student.Year == GradeLevel.FourthYear
-                                   select student;
-        //</CityFilter>
-
-        /* Thinking these are two complicated for the index file. Next commit
-         * may remove them.
-        IEnumerable<Customer> queryLondonCustomers2 =
-                                  from cust in customers
-                                  //<AndFilter>
-                                  where cust.City == "London" && cust.Name == "Devon"
-                                  //</AndFilter>
-                                  //<OrFilter>
-                                  where cust.City == "London" || cust.City == "Paris"
-                                  //</OrFilter>
-                                  select cust;
-        //<Ordering>
-        var queryLondonCustomers3 =
-            from cust in customers
-            where cust.City == "London"
-            orderby cust.Name ascending
-            select cust;
-        //</Ordering>
-
-        //<Grouping>
-        // queryCustomersByCity is an IEnumerable<IGrouping<string, Customer>>
-        var queryCustomersByCity =
-            from cust in customers
-            group cust by cust.City;
-
-        // customerGroup is an IGrouping<string, Customer>
-        foreach (var customerGroup in queryCustomersByCity)
-        {
-            Console.WriteLine(customerGroup.Key);
-            foreach (Customer customer in customerGroup)
-            {
-                Console.WriteLine("    {0}", customer.Name);
-            }
-        }
-        //</Grouping>
-
-        //<GroupInto>
-        // custQuery is an IEnumerable<IGrouping<string, Customer>>
-        var custQuery =
-            from cust in customers
-            group cust by cust.City into custGroup
-            where custGroup.Count() > 2
-            orderby custGroup.Key
-            select custGroup;
-        //</GroupInto>
-
-        //<Join>
-        var innerJoinQuery =
-            from cust in customers
-            join dist in distributors on cust.City equals dist.City
-            select new { CustomerName = cust.Name, DistributorName = dist.Name };
-        //</Join>
-        */
-    }
-
-    private static void Transformations()
-    {
-        // <Transformations>
-        // Create the query.
-        var peopleInSeattle = (from student in students
-                               select student.LastName)
-                               .Concat(from teacher in teachers
-                                       where teacher.City == "Seattle"
-                                       select teacher.Last);
-
-        Console.WriteLine("The following students and teachers live in Seattle:");
-        // Execute the query.
-        foreach (var person in peopleInSeattle)
-        {
-            Console.WriteLine(person);
-        }
-        /* Output:
-            The following students and teachers live in Seattle:
-            Omelchenko
-            O'Donnell
-            ...
-            Feng
-            Svensson
-            */
-        // </Transformations>
     }
 
     private static void XmlTransformation()
@@ -201,48 +110,5 @@ internal class IndexExamples
           </Root>
           // </XmlTransformationOutput>
         */
-    }
-
-    private static void Properties()
-    {
-        // <Properties>
-        var query = from teacher in teachers
-                    select teacher.City;
-        // </Properties>
-
-        // <AnonymousTypes>
-        var query2 = from teacher in teachers
-                    select new { Name = teacher.Last, City = teacher.City };
-        // </AnonymousTypes>
-    }
-
-    //<MethodQuery>
-    private static void QueryMethod()
-    {
-        // Data source.
-        double[] radii = [1, 2, 3];
-
-        // LINQ query using method syntax.
-        IEnumerable<string> output =
-            radii.Select(r => $"Area for a circle with a radius of '{r}' = {r * r * Math.PI:F2}");
-
-        /*
-        // LINQ query using query syntax.
-        IEnumerable<string> output =
-            from rad in radii
-            select $"Area for a circle with a radius of '{rad}' = {rad * rad * Math.PI:F2}";
-        */
-
-        foreach (string s in output)
-        {
-            Console.WriteLine(s);
-        }
-
-        /* Output:
-            Area for a circle with a radius of '1' = 3.14
-            Area for a circle with a radius of '2' = 12.57
-            Area for a circle with a radius of '3' = 28.27
-        */
-        // </MethodQuery>
     }
 }

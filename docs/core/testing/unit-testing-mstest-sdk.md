@@ -109,4 +109,4 @@ For instance you can opt-out the default `MS Code Coverage` by setting `<EnableM
 ```
 
 > [!WARNING]
-> Different extensions come with different licensing model, we invite you to check the rights.
+> Please review the licensing terms for each extension as they may vary.

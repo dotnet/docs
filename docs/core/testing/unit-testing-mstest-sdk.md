@@ -8,8 +8,6 @@ ms.date: 02/13/2024
 
 # MSTest SDK overview
 
-## Overview
-
 `MSTest.Sdk` is an [MSBuild project SDK](/visualstudio/msbuild/how-to-use-project-sdk) for building MSTest apps.  
 It's possible to build an MSTest app without this SDK, however, the MSTest SDK is:
 

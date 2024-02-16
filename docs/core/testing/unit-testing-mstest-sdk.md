@@ -81,7 +81,7 @@ For example, if you wish to enable all Microsoft testing extensions, you can con
 ```
 
 > [!NOTE]
-> If you don't specify a custom `TestingExtensionsProfile`, the default profile will be applied.
+> If you don't specify a custom `TestingExtensionsProfile`, the `Default` profile will be applied.
 
 If you prefer not to use the default profile, you can set it to `None`:
 

@@ -46,7 +46,7 @@ or
 
   If you're using the .NET 8 SDK or an earlier version and you want to enforce code style rules at build time, you can do so in one of two ways:
 
-  - Set the [<AnalysisLevel>](../../../core/project-sdk/msbuild-props.md#analysislevel) or `<AnalysisLevelStyle>` property to `9.0` or higher, or to `preview`.
+  - Set the [\<AnalysisLevel>](../../../core/project-sdk/msbuild-props.md#analysislevel) or `<AnalysisLevelStyle>` property to `9.0` or higher, or to `preview`.
   - Set the severity by using the rule ID-based severity configuration syntax for analyzers instead. The syntax takes the form `dotnet_diagnostic.<rule ID>.severity = <severity>`, for example, `dotnet_diagnostic.IDE0040.severity = none`. For more information, see [severity level](../configuration-options.md#severity-level).
 
 > [!TIP]

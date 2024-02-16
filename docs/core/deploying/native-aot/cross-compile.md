@@ -43,7 +43,7 @@ The following commands may suffice for compiling for `linux-arm64` on Ubuntu 22.
 ```bash
 sudo dpkg --add-architecture arm64
 sudo bash -c 'cat > /etc/apt/sources.list.d/arm64.list <<EOF
-deb [arch=arm64] http://ports.ubuntu.com/ubuntu-ports/ jammy main restricted
+deb [arch=arm64] http://ports.ubuntu.com/ubuntu-ports/ jammy main restricted ports
 deb [arch=arm64] http://ports.ubuntu.com/ubuntu-ports/ jammy-updates main restricted
 deb [arch=arm64] http://ports.ubuntu.com/ubuntu-ports/ jammy-backports main restricted universe multiverse
 EOF'

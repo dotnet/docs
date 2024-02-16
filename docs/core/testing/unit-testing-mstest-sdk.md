@@ -95,7 +95,6 @@ If you don't want the default profile you can set it to `None`:
 </Project>
 ```
 
-
 You can always opt-out specific extension setting to false its respective MSBuild property.  
 For instance you can opt-out the default `MS Code Coverage` by setting `<EnableMicrosoftTestingExtensionsCodeCoverage>false</EnableMicrosoftTestingExtensionsCodeCoverage>`. Full-example below:
 

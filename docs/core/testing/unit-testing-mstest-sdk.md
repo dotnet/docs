@@ -65,7 +65,7 @@ For example, to enable the crash dump extension in the [Microsoft.Testing.Extens
 | `Microsoft.Testing.Extensions.Retry` | `<EnableMicrosoftTestingExtensionsRetry>true</EnableMicrosoftTestingExtensionsRetry>` | ❌ | ✔️ |
 | `Microsoft.Testing.Extensions.HotReload` | `<EnableMicrosoftTestingExtensionsHotReload>true</EnableMicrosoftTestingExtensionsHotReload>` | ❌ | ✔️ |
 
-The `MSTest.Sdk` simplifies the registration of extensions by including a pre-packaged set of them under different profiles, as shown in the table above.
+The `MSTest.Sdk` simplifies the registration of extensions by including a pre-packaged set of them under different profiles, as shown in the preceding table.
 
 To choose a specific profile to enable, you can use the `TestingExtensionsProfile` MSBuild property.  
 For example, if you wish to enable all Microsoft testing extensions, you can configure the `TestingExtensionsProfile` as shown below:

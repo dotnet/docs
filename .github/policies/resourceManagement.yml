@@ -93,23 +93,44 @@ configuration:
       - approvePullRequest:
           comment: "Approved, we'll :shipit: when all status checks pass."
       - addLabel:
-          label: azure-sdk-shipit
+          label: ':octocat: auto-merge'
       description: Label PRs from the Azure SDK bot
     - if:
       - payloadType: Pull_Request
+      - isActivitySender:
+          user: dotnet-policy-service
+          issueAuthor: False
+      then:
+      - addLabel:
+          label: ':octocat: auto-merge'
+      description: Label PRs from Dotnet Policy Service 
+    - if:
+      - payloadType: Pull_Request
       - hasLabel:
-          label: azure-sdk-shipit
+          label: ':octocat: auto-merge'
+      - targetsBranch:
+          branch: main
       then:
       - enableAutoMerge:
           mergeMethod: Squash
-      description: Auto-merge Azure SDK PRs with green builds
+      description: Auto-squash-merge PRs to main labeled with auto-merge
+    - if:
+      - payloadType: Pull_Request
+      - hasLabel:
+          label: ':octocat: auto-merge'
+      - targetsBranch:
+          branch: live
+      then:
+      - enableAutoMerge:
+          mergeMethod: Merge
+      description: Auto-merge PRs to live labeled with auto-merge
     - if:
       - payloadType: Pull_Request
       - labelRemoved:
-          label: azure-sdk-shipit
+          label: ':octocat: auto-merge'
       then:
       - disableAutoMerge
-      description: Auto-merge Azure SDK PRs with green builds
+      description: Don't auto-merge PRs with auto-merge label removed
     - if:
       - payloadType: Pull_Request
       then:

@@ -1,7 +1,7 @@
 ---
 title: Code-style language and unnecessary code rules
 description: Learn about the different code-style rules for using C# and Visual Basic language constructs and for finding unnecessary code.
-ms.date: 11/10/2023
+ms.date: 02/15/2024
 helpviewer_keywords:
 - language code style rules [EditorConfig]
 - language rules
@@ -42,9 +42,12 @@ or
 
 - **Severity** (optional in Visual Studio 2019 and later versions)
 
-  The second part of the rule specifies the [severity level](../configuration-options.md#severity-level) for the rule. When specified in this way, *the severity setting is only respected inside development IDEs, such as Visual Studio*. It is *not* respected during build.
+  The second part of the rule specifies the [severity level](../configuration-options.md#severity-level) for the rule. In .NET 9 and later versions, the severity is always respected&mdash;that is, inside development IDEs *and* during command-line builds. In .NET 8 and earlier versions, this severity setting is only respected inside development IDEs, such as Visual Studio, and *not* during build.
 
-  To enforce code style rules at build time, set the severity by using the rule ID-based severity configuration syntax for analyzers instead. The syntax takes the form `dotnet_diagnostic.<rule ID>.severity = <severity>`, for example, `dotnet_diagnostic.IDE0040.severity = none`. For more information, see [severity level](../configuration-options.md#severity-level).
+  If you're using the .NET 8 SDK or an earlier version and you want to enforce code style rules at build time, you can do so in one of two ways:
+
+  - Set the [\<AnalysisLevel>](../../../core/project-sdk/msbuild-props.md#analysislevel) or `<AnalysisLevelStyle>` property to `9.0` or higher, or to `preview`.
+  - Set the severity by using the rule ID-based severity configuration syntax for analyzers instead. The syntax takes the form `dotnet_diagnostic.<rule ID>.severity = <severity>`, for example, `dotnet_diagnostic.IDE0040.severity = none`. For more information, see [severity level](../configuration-options.md#severity-level).
 
 > [!TIP]
 >

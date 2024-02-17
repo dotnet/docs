@@ -82,6 +82,7 @@ The following table shows the compatibility of the .NET 5+ TFMs.
 | net8.0-ios         | (Subsequent version of `net7.0-ios`)                                                                                    |
 | net8.0-maccatalyst | (Subsequent version of `net7.0-maccatalyst`)                                                                            |
 | net8.0-macos       | (Subsequent version of `net7.0-macos`)                                                                                  |
+| net8.0-tizen       | (Subsequent version of `net7.0-tizen`)                              |
 | net8.0-tvos        | (Subsequent version of `net7.0-tvos`)                                                                                   |
 | net8.0-windows     | (Subsequent version of `net7.0-windows`)                                                                                |
 

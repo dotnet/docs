@@ -119,9 +119,9 @@ The following table shows the default target platform values (TPV) for each .NET
 | .NET 6       | macOS        | 12.0        |
 | .NET 7       | macOS        | 13.0        |
 | .NET 8       | macOS        | 14.2        |
-| .NET 6       | tvOS         |             |
-| .NET 7       | tvOS         |             |
-| .NET 8       | tvOS         |             |
+| .NET 6       | tvOS         | 15.1        |
+| .NET 7       | tvOS         | 16.1        |
+| .NET 8       | tvOS         | 17.1        |
 | .NET 7       | Tizen        | 7.0         |
 | .NET 8       | Tizen        | 8.0         |
 | .NET 6       | Windows      |             |

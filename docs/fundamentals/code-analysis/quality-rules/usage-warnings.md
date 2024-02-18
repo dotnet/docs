@@ -62,3 +62,4 @@ Usage rules support proper usage of .NET.
 | [CA2260: Implement generic math interfaces correctly](ca2260.md) | Generic math interfaces require the derived type itself to be used for the self-recurring type parameter. |
 | [CA2261: Do not use `ConfigureAwaitOptions.SuppressThrowing` with `Task<TResult>`](ca2261.md) | The `ConfigureAwaitOptions.SuppressThrowing` option isn't supported by the generic `Task<TResult>`, since that might lead to returning an invalid `TResult`. |
 | [CA2262: Set `MaxResponseHeadersLength` properly](ca2262.md) | Make sure the `MaxResponseHeadersLength` value is provided correctly. This value is measured in kilobytes. |
+| [CA2263: Prefer generic overload when type is known](ca2263.md) | Using a generic overload is preferable to the <xref:System.Type?displayProperty=fullName> overload when the type is known, promoting cleaner and more type-safe code with improved compile-time checks. |

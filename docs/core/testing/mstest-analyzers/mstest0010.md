@@ -30,13 +30,14 @@ A method marked with <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ClassIni
 ## Rule description
 
 Methods marked with `[ClassInitialize]` should follow the following layout to be valid:
-  - it should be `public` 
-  - it should be `static`
-  - it should not be generic
-  - it should take one parameter of type `TestContext`
-  - return type should be `void`, `Task` or `ValueTask`
-  - it should not be `async void`
-  - it should not be a special method (finalizer, operator...).
+  
+- it should be `public`
+- it should be `static`
+- it should not be `async void`
+- it should not be a special method (finalizer, operator...).
+- it should not be generic
+- it should take one parameter of type `TestContext`
+- return type should be `void`, `Task` or `ValueTask`
 
 ## How to fix violations
 

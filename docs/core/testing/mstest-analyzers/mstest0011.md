@@ -30,12 +30,12 @@ A method marked with <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ClassCle
 ## Rule description
 
 Methods marked with `[ClassCleanup]` should follow the following layout to be valid:
-    - it should be `public` 
-    - it should be `static`
-    - it should not be generic
-    - it should not take any parameter
-    - return type should be `void`, `Task` or `ValueTask`
-    - it should not be `async void`
+ - it should be `public` 
+ - it should be `static`
+ - it should not be generic
+ - it should not take any parameter
+ - return type should be `void`, `Task` or `ValueTask`
+ - it should not be `async void`
     - it should not be a special method (finalizer, operator...).
 
 ## How to fix violations

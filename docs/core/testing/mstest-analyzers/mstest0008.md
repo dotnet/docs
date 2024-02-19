@@ -9,7 +9,7 @@ helpviewer_keywords:
 - TestInitializeShouldBeValidAnalyzer
 - MSTEST0008
 author: engyebrahim
-ms.author: engyebrahim
+ms.author: enjieid
 ---
 # MSTEST0008: `TestInitialize` should be valid
 
@@ -25,7 +25,7 @@ ms.author: engyebrahim
 
 ## Cause
 
-A method marked with <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize> should have valid layout.
+A method marked with `TestInitialize` should have valid layout.
 
 ## Rule description
 

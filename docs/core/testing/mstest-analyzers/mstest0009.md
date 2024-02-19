@@ -39,7 +39,7 @@ Methods marked with `[TestCleanup]` should follow the following layout to be val
 - it should not be generic
 - it should not take any parameter
 - return type should be `void`, `Task` or `ValueTask`
-- 
+ 
 ## How to fix violations
 
 To fix a violation of this rule, you should fix the layout.

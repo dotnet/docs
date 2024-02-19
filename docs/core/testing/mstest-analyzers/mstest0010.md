@@ -9,7 +9,7 @@ helpviewer_keywords:
 - ClassInitializeShouldBeValidAnalyzer
 - MSTEST0009
 author: engyebrahim
-ms.author: engyebrahim
+ms.author: enjieid
 ---
 # MSTEST0009: `ClassInitialize` should be valid
 
@@ -25,7 +25,7 @@ ms.author: engyebrahim
 
 ## Cause
 
-A method marked with <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ClassInitialize> should have valid layout.
+A method marked with `ClassInitialize` should have valid layout.
 
 ## Rule description
 

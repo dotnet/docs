@@ -29,7 +29,15 @@ A method marked with <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestInit
 
 ## Rule description
 
-Methods marked with `[TestInitialize]` should follow the following layout to be valid:<br/>- it should be `public` <br/>- it should not be `static`<br/>- it should not be generic<br/>- it should not be `abstract`<br/>- it should not take any parameter<br/>- return type should be `void`, `Task` or `ValueTask`<br/>- it should not be `async void`<br/>- it should not be a special method (finalizer, operator...).
+Methods marked with `[TestInitialize]` should follow the following layout to be valid:
+  - it should be `public`
+  - it should not be `static`
+  - it should not be generic
+  - it should not be `abstract`
+  - it should not take any parameter
+  - return type should be `void`, `Task` or `ValueTask`
+  - it should not be `async void`
+  - it should not be a special method (finalizer, operator...).
 
 ## How to fix violations
 

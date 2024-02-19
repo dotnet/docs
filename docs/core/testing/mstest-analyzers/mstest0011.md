@@ -36,7 +36,7 @@ Methods marked with `[ClassCleanup]` should follow the following layout to be va
  - it should not take any parameter
  - return type should be `void`, `Task` or `ValueTask`
  - it should not be `async void`
-    - it should not be a special method (finalizer, operator...).
+ - it should not be a special method (finalizer, operator...).
 
 ## How to fix violations
 

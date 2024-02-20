@@ -1,21 +1,21 @@
 ---
-title: "MSTEST0009: `ClassInitialize` should be valid"
-description: "Learn about code analysis rule MSTEST0009: Ensure `ClassInitialize` has a valid layout"
+title: "MSTEST0010: `ClassInitialize` should be valid"
+description: "Learn about code analysis rule MSTEST0010: Ensure `ClassInitialize` has a valid layout"
 ms.date: 02/19/2024
 f1_keywords:
-- MSTEST0009
+- MSTEST0010
 - ClassInitializeShouldBeValidAnalyzer
 helpviewer_keywords:
 - ClassInitializeShouldBeValidAnalyzer
-- MSTEST0009
+- MSTEST0010
 author: engyebrahim
 ms.author: enjieid
 ---
-# MSTEST0009: `ClassInitialize` should be valid
+# MSTEST0010: `ClassInitialize` should be valid
 
 | Property                            | Value                                    |
 |-------------------------------------|------------------------------------------|
-| **Rule ID**                         | MSTEST0009                               |
+| **Rule ID**                         | MSTEST0010                               |
 | **Title**                           | `ClassInitialize` should be valid         |
 | **Category**                        | Usage                                    |
 | **Fix is breaking or non-breaking** | Non-breaking                             |

@@ -48,14 +48,13 @@ Create the custom configuration provider by inheriting from <xref:Microsoft.Exte
 
 :::code language="csharp" source="snippets/configuration/custom-provider/Providers/EntityConfigurationProvider.cs":::
 
-An `AddEntityConfiguration` extension method permits adding the configuration source to a <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder> instance.
+An `AddEntityConfiguration` extension method permits adding the configuration source to the underlying `ConfigurationManager` instance.
 
-*Extensions/ConfigurationBuilderExtensions.cs*:
+*Extensions/ConfigurationManagerExtensions.cs*:
 
-:::code language="csharp" source="snippets/configuration/custom-provider/Extensions/ConfigurationBuilderExtensions.cs":::
+:::code language="csharp" source="snippets/configuration/custom-provider/Extensions/ConfigurationManagerExtensions.cs":::
 
-> [!IMPORTANT]
-> The use of a temporary configuration source to acquire the connection string is important. The current `builder` has its configuration constructed temporarily by calling <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder.Build?displayProperty=nameWithType>, and <xref:Microsoft.Extensions.Configuration.ConfigurationExtensions.GetConnectionString%2A>. After obtaining the connection string, the `builder` adds the `EntityConfigurationSource` given the `connectionString`.
+Since the <xref:Microsoft.Extensions.Configuration.ConfigurationManager> is both an implementation of <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder> and <xref:Microsoft.Extensions.Configuration.IConfigurationRoot>, the extension method can access the connection strings configuration and add the `EntityConfigurationSource`.
 
 The following code shows how to use the custom `EntityConfigurationProvider` in *Program.cs*:
 

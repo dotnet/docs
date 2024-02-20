@@ -1,21 +1,21 @@
 ---
-title: "MSTEST0009: `AssemblyInitialize` should be valid"
-description: "Learn about code analysis rule MSTEST0009: Ensure `AssemblyInitialize` has a valid layout"
+title: "MSTEST0012: `AssemblyInitialize` should be valid"
+description: "Learn about code analysis rule MSTEST0012: Ensure `AssemblyInitialize` has a valid layout"
 ms.date: 02/19/2024
 f1_keywords:
-- MSTEST0009
+- MSTEST0012
 - AssemblyInitializeShouldBeValidAnalyzer
 helpviewer_keywords:
 - AssemblyInitializeShouldBeValidAnalyzer
-- MSTEST0009
+- MSTEST0012
 author: engyebrahim
 ms.author: enjieid
 ---
-# MSTEST0009: `AssemblyInitialize` should be valid
+# MSTEST0012: `AssemblyInitialize` should be valid
 
 | Property                            | Value                                    |
 |-------------------------------------|------------------------------------------|
-| **Rule ID**                         | MSTEST0009                               |
+| **Rule ID**                         | MSTEST0012                               |
 | **Title**                           | `AssemblyInitialize` should be valid         |
 | **Category**                        | Usage                                    |
 | **Fix is breaking or non-breaking** | Non-breaking                             |

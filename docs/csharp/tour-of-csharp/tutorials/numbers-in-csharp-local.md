@@ -29,6 +29,7 @@ dotnet new console -n NumbersInCSharp -o .
 
 Open *Program.cs* in your favorite editor, and replace the contents of the file with the following code:
 
+<!-- replaycheck-task id="9f91e205" -->
 ```csharp
 int a = 18;
 int b = 6;

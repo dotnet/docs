@@ -1,21 +1,21 @@
 ---
-title: "MSTEST0009: `AssemblyCleanup` should be valid"
-description: "Learn about code analysis rule MSTEST0009: Ensure `AssemblyCleanup` has a valid layout"
+title: "MSTEST0013: `AssemblyCleanup` should be valid"
+description: "Learn about code analysis rule MSTEST0013: Ensure `AssemblyCleanup` has a valid layout"
 ms.date: 02/19/2024
 f1_keywords:
-- MSTEST0009
+- MSTEST0013
 - AssemblyCleanupShouldBeValidAnalyzer
 helpviewer_keywords:
 - AssemblyCleanupShouldBeValidAnalyzer
-- MSTEST0009
+- MSTEST0013
 author: engyebrahim
 ms.author: enjieid
 ---
-# MSTEST0009: `AssemblyCleanup` should be valid
+# MSTEST0013: `AssemblyCleanup` should be valid
 
 | Property                            | Value                                    |
 |-------------------------------------|------------------------------------------|
-| **Rule ID**                         | MSTEST0009                               |
+| **Rule ID**                         | MSTEST0013                               |
 | **Title**                           | `AssemblyCleanup` should be valid         |
 | **Category**                        | Usage                                    |
 | **Fix is breaking or non-breaking** | Non-breaking                             |

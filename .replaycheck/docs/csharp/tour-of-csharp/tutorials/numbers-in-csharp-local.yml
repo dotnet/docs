@@ -1,0 +1,10 @@
+# %version 1
+contentPath: docs\csharp\tour-of-csharp\tutorials\numbers-in-csharp-local.md
+
+steps:
+- task: RunCodeSnippet@1
+  environment:
+    type: dotnet-sdk
+  outputValidationRules:
+  - value: "24"
+  uid: 9f91e205

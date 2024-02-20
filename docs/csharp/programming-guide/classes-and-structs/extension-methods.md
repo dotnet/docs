@@ -135,7 +135,7 @@ For a class library that you implemented, you shouldn't use extension methods to
 - [C# Programming Guide](../index.md)
 - [Parallel Programming Samples (these include many example extension methods)](/samples/browse/?products=dotnet&term=parallel)
 - [Lambda Expressions](../../language-reference/operators/lambda-expressions.md)
-- [Standard Query Operators Overview](../concepts/linq/standard-query-operators-overview.md)
+- [Standard Query Operators Overview](../../linq/standard-query-operators/index.md)
 - [Conversion rules for Instance parameters and their impact](/archive/blogs/sreekarc/conversion-rules-for-instance-parameters-and-their-impact)
 - [Extension methods Interoperability between languages](/archive/blogs/sreekarc/extension-methods-interoperability-between-languages)
 - [Extension methods and Curried Delegates](/archive/blogs/sreekarc/extension-methods-and-curried-delegates)

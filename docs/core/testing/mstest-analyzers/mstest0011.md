@@ -1,21 +1,21 @@
 ---
-title: "MSTEST0009: `ClassCleanup` should be valid"
-description: "Learn about code analysis rule MSTEST0009: Ensure `ClassCleanup` has a valid layout"
+title: "MSTEST0011: `ClassCleanup` should be valid"
+description: "Learn about code analysis rule MSTEST0011: Ensure `ClassCleanup` has a valid layout"
 ms.date: 02/19/2024
 f1_keywords:
-- MSTEST0009
+- MSTEST0011
 - ClassCleanupShouldBeValidAnalyzer
 helpviewer_keywords:
 - ClassCleanupShouldBeValidAnalyzer
-- MSTEST0009
+- MSTEST0011
 author: engyebrahim
 ms.author: enjieid
 ---
-# MSTEST0009: `ClassCleanup` should be valid
+# MSTEST0011: `ClassCleanup` should be valid
 
 | Property                            | Value                                    |
 |-------------------------------------|------------------------------------------|
-| **Rule ID**                         | MSTEST0009                               |
+| **Rule ID**                         | MSTEST0011                               |
 | **Title**                           | `ClassCleanup` should be valid         |
 | **Category**                        | Usage                                    |
 | **Fix is breaking or non-breaking** | Non-breaking                             |

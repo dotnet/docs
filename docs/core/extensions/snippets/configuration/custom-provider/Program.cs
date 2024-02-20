@@ -3,11 +3,16 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Options;
 using CustomProvider.Example;
+using CustomProvider.Example.Providers;
 
 HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
 
 builder.Configuration.Sources.Clear();
 builder.Configuration.AddEntityConfiguration();
+var connectionString = builder.Configuration.GetConnectionString("WidgetConnectionString");
+IConfigurationBuilder configBuilder = builder.Configuration;
+configBuilder.Add(new EntityConfigurationSource(connectionString));
+
 builder.Services.Configure<WidgetOptions>(
     builder.Configuration.GetSection("WidgetOptions"));
 

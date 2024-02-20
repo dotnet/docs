@@ -7,6 +7,7 @@ using CustomProvider.Example;
 HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
 
 builder.Configuration.AddEntityConfiguration();
+
 builder.Services.Configure<WidgetOptions>(
     builder.Configuration.GetSection("WidgetOptions"));
 

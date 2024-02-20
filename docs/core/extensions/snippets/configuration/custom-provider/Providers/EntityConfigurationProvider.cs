@@ -3,7 +3,7 @@ using Microsoft.Extensions.Configuration;
 
 namespace CustomProvider.Example.Providers;
 
-public class EntityConfigurationProvider(
+public sealed class EntityConfigurationProvider(
     string? connectionString)
     : ConfigurationProvider
 {

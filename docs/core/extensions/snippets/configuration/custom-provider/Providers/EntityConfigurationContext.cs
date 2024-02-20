@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CustomProvider.Example.Providers;
 
-public class EntityConfigurationContext(string? connectionString) : DbContext
+public sealed class EntityConfigurationContext(string? connectionString) : DbContext
 {
     public DbSet<Settings> Settings => Set<Settings>();
 

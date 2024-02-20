@@ -4,81 +4,67 @@ description: Demonstrates the various ways to install .NET SDK and .NET Runtime 
 author: adegeo
 ms.author: adegeo
 ms.date: 02/09/2024
-zone_pivot_groups: ubuntu-set-one,dotnet-version
+zone_pivot_groups: ubuntu-set-one
 ---
 
 # Install .NET SDK or .NET Runtime on Ubuntu
 
-This is a test of zones
+This article discusses how to install .NET on Ubuntu.
 
-::: zone pivot="os-linux-ubuntu-2310,dotnet-8-0"
+[!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 
-Stuff about 23.10 and .NET 8
+[!INCLUDE [linux-install-package-manager-x64-vs-arm-ubuntu](includes/linux-install-package-manager-x64-vs-arm-ubuntu.md)]
 
-::: zone-end
+::: zone pivot="os-linux-ubuntu-2310"
 
-::: zone pivot="os-linux-ubuntu-2310,dotnet-7-0"
+# [.NET 8](#tab/dotnet8)
 
-Stuff about 23.10 and .NET 7
+Some tabbed content
 
-::: zone-end
+# [.NET 7](#tab/dotnet8)
 
-::: zone pivot="os-linux-ubuntu-2310,dotnet-6-0"
+Some tabbed content
 
-Stuff about 23.10 and .NET 6
+# [.NET 6](#tab/dotnet8)
 
-::: zone-end
+Some tabbed content
 
-::: zone pivot="os-linux-ubuntu-2304,dotnet-8-0"
-
-Stuff about 23.04 and .NET 8
+---
 
 ::: zone-end
 
-::: zone pivot="os-linux-ubuntu-2304,dotnet-7-0"
+::: zone pivot="os-linux-ubuntu-2304"
 
-Stuff about 23.04 and .NET 7
+# [.NET 8](#tab/dotnet8)
 
-::: zone-end
+Some tabbed content
 
-::: zone pivot="os-linux-ubuntu-2304,dotnet-6-0"
+# [.NET 7](#tab/dotnet8)
 
-Stuff about 23.04 and .NET 6
+Some tabbed content
 
-::: zone-end
+# [.NET 6](#tab/dotnet8)
 
-::: zone pivot="os-linux-ubuntu-2210,dotnet-8-0"
+Some tabbed content
 
-Stuff about 22.10 and .NET 8
-
-::: zone-end
-
-::: zone pivot="os-linux-ubuntu-2210,dotnet-7-0"
-
-Stuff about 22.10 and .NET 7
+---
 
 ::: zone-end
 
-::: zone pivot="os-linux-ubuntu-2210,dotnet-6-0"
+::: zone pivot="os-linux-ubuntu-2210"
 
-Stuff about 22.10 and .NET 6
-
-::: zone-end
-
-::: zone pivot="os-linux-ubuntu-2204,dotnet-8-0"
-
-Stuff about 22.04 and .NET 8
+Stuff about
 
 ::: zone-end
 
-::: zone pivot="os-linux-ubuntu-2204,dotnet-7-0"
+::: zone pivot="os-linux-ubuntu-2204"
 
-Stuff about 22.04 and .NET 7
+Stuff about
 
 ::: zone-end
 
-::: zone pivot="os-linux-ubuntu-2204,dotnet-6-0"
+::: zone pivot="os-linux-ubuntu-other"
 
-Stuff about 22.04 and .NET 6
+Stuff about
 
 ::: zone-end

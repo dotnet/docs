@@ -114,7 +114,7 @@ groups:
       title: F#
 - id: ubuntu-set-one
   title: Ubuntu Version
-  prompt: Choose the Ubuntu Distribution Version
+  prompt: Choose the Ubuntu distribution version
   pivots:
     - id: os-linux-ubuntu-2310
       title: "23.10"
@@ -124,3 +124,5 @@ groups:
       title: "22.10"
     - id: os-linux-ubuntu-2204
       title: "22.04"
+    - id: os-linux-ubuntu-other
+      title: "Other"

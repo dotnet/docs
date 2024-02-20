@@ -58,7 +58,7 @@ Since the <xref:Microsoft.Extensions.Configuration.ConfigurationManager> is both
 
 The following code shows how to use the custom `EntityConfigurationProvider` in *Program.cs*:
 
-:::code language="csharp" source="snippets/configuration/custom-provider/Program.cs" highlight="10":::
+:::code language="csharp" source="snippets/configuration/custom-provider/Program.cs" highlight="9":::
 
 ## Consume provider
 

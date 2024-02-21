@@ -11,7 +11,7 @@ helpviewer_keywords:
 author: engyebrahim
 ms.author: enjieid
 ---
-# MSTEST0010: `ClassInitialize` should be valid
+# MSTEST0010: ClassInitialize method should have valid layout
 
 | Property                            | Value                                            |
 |-------------------------------------|--------------------------------------------------|

@@ -11,7 +11,7 @@ helpviewer_keywords:
 author: engyebrahim
 ms.author: enjieid
 ---
-# MSTEST0009: `TestCleanup` should be valid
+# MSTEST0009: TestCleanup method should have valid layout
 
 | Property                            | Value                                       |
 |-------------------------------------|---------------------------------------------|

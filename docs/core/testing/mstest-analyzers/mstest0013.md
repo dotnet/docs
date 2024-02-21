@@ -11,7 +11,7 @@ helpviewer_keywords:
 author: engyebrahim
 ms.author: enjieid
 ---
-# MSTEST0013: `AssemblyCleanup` should be valid
+# MSTEST0013: AssemblyCleanup method should have valid layout
 
 | Property                            | Value                                           |
 |-------------------------------------|-------------------------------------------------|

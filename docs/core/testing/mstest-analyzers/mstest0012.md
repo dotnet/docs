@@ -11,7 +11,7 @@ helpviewer_keywords:
 author: engyebrahim
 ms.author: enjieid
 ---
-# MSTEST0012: `AssemblyInitialize` should be valid
+# MSTEST0012: AssemblyInitialize method should have valid layout
 
 | Property                            | Value                                              |
 |-------------------------------------|----------------------------------------------------|

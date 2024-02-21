@@ -11,7 +11,7 @@ helpviewer_keywords:
 author: engyebrahim
 ms.author: enjieid
 ---
-# MSTEST0008: `TestInitialize` should be valid
+# MSTEST0008: TestInitialize method should have valid layout
 
 | Property                            | Value                                          |
 |-------------------------------------|------------------------------------------------|

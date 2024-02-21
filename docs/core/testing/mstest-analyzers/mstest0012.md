@@ -25,7 +25,7 @@ ms.author: enjieid
 
 ## Cause
 
-A method marked with `AssemblyInitialize` should have valid layout.
+A method marked with `[AssemblyInitialize]` should have valid layout.
 
 ## Rule description
 

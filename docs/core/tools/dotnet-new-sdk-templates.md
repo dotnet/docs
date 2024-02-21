@@ -3,7 +3,7 @@ title: .NET default templates for dotnet new
 description: The information about dotnet new templates shipped with dotnet SDK.
 ms.custom: updateeachrelease
 no-loc: [Blazor, WebAssembly]
-ms.date: 12/07/2023
+ms.date: 02/21/2024
 ---
 # .NET default templates for dotnet new
 
@@ -807,6 +807,20 @@ Creates a web API project with AOT publish enabled. For more information, see [N
 - **`--use-program-main`**
 
   If specified, an explicit `Program` class and `Main` method will be used instead of top-level statements. Available since .NET SDK 6.0.300. Default value: `false`.
+
+***
+
+## `apicontroller`
+
+API Controller with or without read/write actions.
+
+- **`-p:n|--name <NAME>`**
+
+  The namespace for the generated code. Default is `MyApp.Namespace`.
+
+- **`-ac|--actions`**
+
+  Create a controller with read/write actions. Default is `false`.
 
 ***
 

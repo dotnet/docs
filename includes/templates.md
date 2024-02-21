@@ -27,7 +27,7 @@ The following table shows the templates that come pre-installed with the .NET SD
 | Razor Class Library                          | [`razorclasslib`](../docs/core/tools/dotnet-new-sdk-templates.md#razorclasslib)     | [C#]         | Web/Razor/Library/Razor Class Library | 2.1              |
 | ASP.NET Core Web API                         | [`webapi`](../docs/core/tools/dotnet-new-sdk-templates.md#webapi)                   | [C#], F#     | Web/Web API/API/Service/WebAPI        | 1.0              |
 | ASP.NET Core API                             | [`webapiaot`](../docs/core/tools/dotnet-new-sdk-templates.md#webapiaot)             | [C#]         | Web/Web API/API/Service               | 8.0              |
-| ASP.NET Core API controller                   | [`apicontroller`](../docs/core/tools/dotnet-new-sdk-templates.md#webapiaot)        | [C#]         | Web/ASP.NET               | 8.0              |
+| ASP.NET Core API controller                   | [`apicontroller`](../docs/core/tools/dotnet-new-sdk-templates.md#apicontroller)    | [C#]         | Web/ASP.NET               | 8.0              |
 | ASP.NET Core gRPC Service                    | [`grpc`](../docs/core/tools/dotnet-new-sdk-templates.md#web-others)                 | [C#]         | Web/gRPC                              | 3.0              |
 | dotnet gitignore file                        | `gitignore`                                                                         |              | Config                                | 3.0              |
 | global.json file                             | [`globaljson`](../docs/core/tools/dotnet-new-sdk-templates.md#globaljson)           |              | Config                                | 2.0              |

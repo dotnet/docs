@@ -11,7 +11,7 @@ helpviewer_keywords:
 author: engyebrahim
 ms.author: enjieid
 ---
-# MSTEST0011: `ClassCleanup` should be valid
+# MSTEST0011: ClassCleanup method should have valid layout
 
 | Property                            | Value                                        |
 |-------------------------------------|----------------------------------------------|

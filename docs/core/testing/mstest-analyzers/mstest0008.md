@@ -1,6 +1,6 @@
 ---
-title: "MSTEST0008: `TestInitialize` should be valid"
-description: "Learn about code analysis rule MSTEST0008: Ensure `TestInitialize` has a valid layout"
+title: "MSTEST0008: TestInitialize method should have valid layout"
+description: "Learn about code analysis rule MSTEST0008: TestInitialize method should have valid layout"
 ms.date: 02/19/2024
 f1_keywords:
 - MSTEST0008
@@ -13,15 +13,15 @@ ms.author: enjieid
 ---
 # MSTEST0008: `TestInitialize` should be valid
 
-| Property                            | Value                                    |
-|-------------------------------------|------------------------------------------|
-| **Rule ID**                         | MSTEST0008                               |
-| **Title**                           | `TestInitialize` should be valid         |
-| **Category**                        | Usage                                    |
-| **Fix is breaking or non-breaking** | Non-breaking                             |
-| **Enabled by default**              | Yes                                      |
-| **Default severity**                | Warning                                  |
-| **Introduced in version**           | 3.3.0                                    |
+| Property                            | Value                                          |
+|-------------------------------------|------------------------------------------------|
+| **Rule ID**                         | MSTEST0008                                     |
+| **Title**                           | TestInitialize method should have valid layout |
+| **Category**                        | Usage                                          |
+| **Fix is breaking or non-breaking** | Non-breaking                                   |
+| **Enabled by default**              | Yes                                            |
+| **Default severity**                | Warning                                        |
+| **Introduced in version**           | 3.3.0                                          |
 
 ## Cause
 
@@ -42,8 +42,8 @@ Methods marked with `[TestInitialize]` should follow the following layout to be 
 
 ## How to fix violations
 
-To fix a violation of this rule, you should fix the layout.
+Ensure that the method matches the layout described above.
 
 ## When to suppress warnings
 
-Do not suppress a warning from this rule. If you ignore this rule, your tests woun't run.
+Do not suppress a warning from this rule. If you ignore this rule, flagged instances will be either skipped or result in runtime error.

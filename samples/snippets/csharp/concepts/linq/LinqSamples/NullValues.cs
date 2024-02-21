@@ -1,6 +1,7 @@
-﻿using LinqSamples.Joins;
+﻿namespace LinqSamples;
 
-namespace LinqSamples;
+record Product(string Name, int CategoryID);
+record Category(string Name, int ID);
 
 public static class NullValues
 {

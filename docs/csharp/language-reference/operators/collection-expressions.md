@@ -34,10 +34,11 @@ The spread element `..vowels`, when evaluated, produces five elements: `"a"`, `"
 A *collection expression* can be converted to different collection types, including:
 
 - <xref:System.Span%601?displayProperty=nameWithType> and <xref:System.ReadOnlySpan%601?displayProperty=nameWithType>
-- [Inline arrays](../builtin-types/struct.md#inline-arrays)
 - [Arrays](../builtin-types/arrays.md)
 - Any type with a *create* method whose parameter type is `ReadOnlySpan<T>` where there's an implicit conversion from the collection expression type to `T`.
 - Any type that supports a [collection initializer](../../programming-guide/classes-and-structs/object-and-collection-initializers.md#collection-initializers), such as <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>. Usually, this requirement means the type supports <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> and there's an accessible `Add` method to add items to the collection. There must be an implicit conversion from the collection expression elements' type to the collection's element type. For spread elements, there must be an implicit conversion from the spread element's type to the collection's element type.
+
+The compiler uses static analysis to determine the most performant way to create the collection declared with a collection expression. For example, the empty collection expression, `[]`, can be realized as <xref:System.Array.Empty%60%601?displayProperty=nameWithType> if the target won't be modified after initialization. When the target is a <xref:System.Span%601?displayProperty=nameWithType> or <xref:System.ReadOnlySpan%601?displayProperty=nameWithType>, the storage may be stack allocated. The [collection expressions feature specification](~/_csharplang/proposals/csharp-12.0/collection-expressions.md) specifies the rules the compiler must follow.
 
 Many APIs are overloaded with multiple collection types as parameters. Because a collection expression can be converted to many different expression types, these APIs may require casts on the collection expression to specify the correct conversion. The following conversion rules resolve some of the ambiguities:
 

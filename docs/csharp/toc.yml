@@ -221,63 +221,25 @@ items:
   - name: Standard query operators
     items:
     - name: Overview
-      href: programming-guide/concepts/linq/standard-query-operators-overview.md
-    - name: Data Transformations with LINQ
-      href: programming-guide/concepts/linq/data-transformations-with-linq.md
-    - name: Store the results of a query in memory
-      href: linq/store-the-results-of-a-query-in-memory.md
+      href: linq/standard-query-operators/index.md
     - name: Filtering Data
-      href: programming-guide/concepts/linq/filtering-data.md
+      href: linq/standard-query-operators/filtering-data.md
     - name: Projection Operations
-      href: programming-guide/concepts/linq/projection-operations.md
+      href: linq/standard-query-operators/projection-operations.md
     - name: Set Operations
-      href: programming-guide/concepts/linq/set-operations.md
+      href: linq/standard-query-operators/set-operations.md
     - name: Sorting Data
-      href: programming-guide/concepts/linq/sorting-data.md
+      href: linq/standard-query-operators/sorting-data.md
     - name: Quantifier Operations
-      href: programming-guide/concepts/linq/quantifier-operations.md
+      href: linq/standard-query-operators/quantifier-operations.md
     - name: Partitioning Data
-      href: programming-guide/concepts/linq/partitioning-data.md
-    - name: Generation Operations
-      href: programming-guide/concepts/linq/generation-operations.md
-    - name: Equality Operations
-      href: programming-guide/concepts/linq/equality-operations.md
-    - name: Element Operations
-      href: programming-guide/concepts/linq/element-operations.md
+      href: linq/standard-query-operators/partitioning-data.md
     - name: Converting Data Types
-      href: programming-guide/concepts/linq/converting-data-types.md
-    - name: Concatenation Operations
-      href: programming-guide/concepts/linq/concatenation-operations.md
-    - name: Aggregation Operations
-      href: programming-guide/concepts/linq/aggregation-operations.md
+      href: linq/standard-query-operators/converting-data-types.md
     - name: Join Operations
-      items:
-      - name: Overview
-        href: programming-guide/concepts/linq/join-operations.md
-      - name: Perform inner joins
-        href: linq/perform-inner-joins.md
-      - name: Perform grouped joins
-        href: linq/perform-grouped-joins.md
-      - name: Perform left outer joins
-        href: linq/perform-left-outer-joins.md
-      - name: Order the results of a join clause
-        href: linq/order-the-results-of-a-join-clause.md
-      - name: Join by using composite keys
-        href: linq/join-by-using-composite-keys.md
-      - name: Perform custom join operations
-        href: linq/perform-custom-join-operations.md
+      href: linq/standard-query-operators/join-operations.md
     - name: Grouping Data
-      items:
-      - name: Overview
-        href: programming-guide/concepts/linq/grouping-data.md
-      - name: Group query results
-        href: linq/group-query-results.md
-      - name: Create a nested group
-        href: linq/create-a-nested-group.md
-      - name: Perform a subquery on a grouping operation
-        href: linq/perform-a-subquery-on-a-grouping-operation.md
-      - name: Group results by contiguous keys
-        href: linq/group-results-by-contiguous-keys.md
+      href: linq/standard-query-operators/grouping-data.md
   - name: LINQ to objects
     href: linq/query-a-collection-of-objects.md
   - name: "Walkthrough: Writing Queries in C# (LINQ)"
@@ -340,14 +302,8 @@ items:
       href: programming-guide/concepts/linq/how-to-query-an-arraylist-with-linq.md
     - name: "How to add custom methods for LINQ queries"
       href: programming-guide/concepts/linq/how-to-add-custom-methods-for-linq-queries.md
-  - name: Supplemental API remarks
-    items:
-    - name: The BinaryExpression class
-      href: ../fundamentals/runtime-libraries/system-linq-expressions-binaryexpression.md
-    - name: The Expression class
-      items:
-      - name: Add method
-        href: ../fundamentals/runtime-libraries/system-linq-expressions-expression-add.md
+    - name: How to group results by contiguous keys
+      href: linq/group-results-by-contiguous-keys.md
 - name: Asynchronous programming
   items:
   - name: Overview
@@ -469,6 +425,10 @@ items:
       href: advanced-topics/expression-trees/debugging-expression-trees-in-visual-studio.md
     - name: DebugView Syntax
       href: advanced-topics/expression-trees/debugview-syntax.md
+    - name: Supplemental API - Expression class add method
+      href: ../fundamentals/runtime-libraries/system-linq-expressions-expression-add.md
+    - name: Supplemental API - BinaryExpression class
+      href: ../fundamentals/runtime-libraries/system-linq-expressions-binaryexpression.md
   - name: Native interoperability
     items:
     - name: Overview

@@ -165,9 +165,9 @@ A query clause might itself contain a query expression, which is sometimes refer
 
 :::code language="csharp" source="./snippets/SnippetApp/Basics.cs" id="basics19":::
 
-For more information, see [Perform a subquery on a grouping operation](../perform-a-subquery-on-a-grouping-operation.md).
+For more information, see [Perform a subquery on a grouping operation](../standard-query-operators/grouping-data.md).
 
 ## See also
 
 - [Query keywords (LINQ)](../../language-reference/keywords/query-keywords.md)
-- [Standard query operators overview](../../programming-guide/concepts/linq/standard-query-operators-overview.md)
+- [Standard query operators overview](../standard-query-operators/index.md)

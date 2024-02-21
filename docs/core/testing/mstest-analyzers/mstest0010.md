@@ -25,7 +25,7 @@ ms.author: enjieid
 
 ## Cause
 
-A method marked with `ClassInitialize` should have valid layout.
+A method marked with `[ClassInitialize]` should have valid layout.
 
 ## Rule description
 

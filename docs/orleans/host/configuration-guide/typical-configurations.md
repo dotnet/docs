@@ -14,7 +14,7 @@ For more information, see [Local development configuration](local-development-co
 
 ## Reliable production deployment using Azure
 
-For a reliable production deployment using Azure, you need to use the Azure Table option for cluster membership. This configuration is typical of deployments to either on-premise servers, containers, or Azure virtual machine instances.
+For a reliable production deployment using Azure, you need to use the Azure Table option for cluster membership. This configuration is typical of deployments to either on-premises servers, containers, or Azure virtual machine instances.
 
  The format of the `DataConnection` string is a `;` separated list of `Key=Value` pairs. The following options are supported:
 

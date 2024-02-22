@@ -42,8 +42,8 @@ The following table is a list of currently supported .NET releases and the versi
 
 | Alpine | Supported Version  | Available in Package Manager |
 |--------|--------------------| -----------------------------|
-| 3.18   | .NET 7.0, .NET 6.0 | .NET 8.0, .NET 7.0, .NET 6.0 |
-| 3.17   | .NET 7.0, .NET 6.0 | .NET 8.0, .NET 7.0, .NET 6.0 |
+| 3.18   | .NET 8.0, .NET 7.0, .NET 6.0 | .NET 7.0, .NET 6.0 |
+| 3.17   | .NET 8.0, .NET 7.0, .NET 6.0 | .NET 7.0, .NET 6.0 |
 | 3.16   | .NET 7.0, .NET 6.0 | .NET 6.0 |
 | 3.15   | .NET 7.0, .NET 6.0 | None |
 

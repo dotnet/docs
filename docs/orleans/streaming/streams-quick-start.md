@@ -117,7 +117,7 @@ TimeSpan.FromMilliseconds(1_000));
 
 ## Subscribe to and receive streaming data
 
-For receiving data, you can use implicit/explicit subscriptions, which are fully described in other pages of the docs. This example uses implicit subscriptions, which are easier. When a grain type wants to implicitly subscribe to a stream, it uses the attribute [[ImplicitStreamSubscription(namespace)]](xref:Orleans.ImplicitStreamSubscriptionAttribute).
+For receiving data, you can use implicit/explicit subscriptions, which are described in more detail [here](https://learn.microsoft.com/en-us/dotnet/orleans/streaming/streams-programming-apis?pivots=orleans-7-0#explicit-and-implicit-subscriptions). This example uses implicit subscriptions, which are easier. When a grain type wants to implicitly subscribe to a stream, it uses the attribute [[ImplicitStreamSubscription(namespace)]](xref:Orleans.ImplicitStreamSubscriptionAttribute).
 
 For your case, define a `ReceiverGrain` like this:
 

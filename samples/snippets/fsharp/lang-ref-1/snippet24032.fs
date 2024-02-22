@@ -1,2 +1,2 @@
 type ISprintable =
-    abstract member Print : format:string -> unit
+    abstract member Print: format: string -> unit

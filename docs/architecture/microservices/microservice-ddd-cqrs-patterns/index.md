@@ -36,6 +36,9 @@ DDD is a large topic with a rich set of resources for learning. You can start wi
 - **Jimmy Bogard. Strengthening your domain: a primer** \
   <https://lostechies.com/jimmybogard/2010/02/04/strengthening-your-domain-a-primer/>
 
+- **Distributed Domain-Driven Design webinar** \
+  <https://particular.net/webinars/ddd-design-no-nonsense-implementation-guide>
+
 ##### DDD books
 
 - **Eric Evans. Domain-Driven Design: Tackling Complexity in the Heart of Software** \
@@ -65,7 +68,7 @@ DDD is a large topic with a rich set of resources for learning. You can start wi
 ##### DDD training
 
 - **Julie Lerman and Steve Smith. Domain-Driven Design Fundamentals** \
-  <https://bit.ly/PS-DDD>
+  <https://www.pluralsight.com/courses/fundamentals-domain-driven-design>
 
 >[!div class="step-by-step"]
 >[Previous](../multi-container-microservice-net-applications/implement-api-gateways-with-ocelot.md)

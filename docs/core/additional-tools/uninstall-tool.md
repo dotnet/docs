@@ -72,7 +72,7 @@ For more information, see [remove command](#remove-command) later in this articl
 
 ### Step 4 - Delete the NuGet fallback folder (optional)
 
-In some cases, you no longer need the `NuGetFallbackFolder` and may wish to delete it. For more information, see [Remove the NuGetFallbackFolder](../install/remove-runtime-sdk-versions.md#remove-the-nuget-fallback-folder).
+In some cases, you no longer need the `NuGetFallbackFolder` and may wish to delete it. For more information, see [Remove the NuGetFallbackFolder](../install/remove-runtime-sdk-versions.md#remove-the-nuget-fallback-directory).
 
 ## Uninstall the tool
 

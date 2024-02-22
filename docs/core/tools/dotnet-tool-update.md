@@ -17,19 +17,22 @@ ms.date: 07/08/2020
 dotnet tool update <PACKAGE_ID> -g|--global
     [--add-source <SOURCE>] [--configfile <FILE>]
     [--disable-parallel] [--framework <FRAMEWORK>]
-    [--ignore-failed-sources] [--interactive] [--no-cache]
+    [--ignore-failed-sources] [--interactive]
+    [--no-cache] [--prerelease]
     [-v|--verbosity <LEVEL>] [--version <VERSION>]
 
 dotnet tool update <PACKAGE_ID> --tool-path <PATH>
     [--add-source <SOURCE>] [--configfile <FILE>]
     [--disable-parallel] [--framework <FRAMEWORK>]
-    [--ignore-failed-sources] [--interactive] [--no-cache]
+    [--ignore-failed-sources] [--interactive] 
+    [--no-cache] [--prerelease]
     [-v|--verbosity <LEVEL>] [--version <VERSION>]
 
 dotnet tool update <PACKAGE_ID> --local
     [--add-source <SOURCE>] [--configfile <FILE>]
     [--disable-parallel] [--framework <FRAMEWORK>]
-    [--ignore-failed-sources] [--interactive] [--no-cache]
+    [--ignore-failed-sources] [--interactive]
+    [--no-cache] [--prerelease]
     [--tool-manifest <PATH>]
     [-v|--verbosity <LEVEL>] [--version <VERSION>]
 
@@ -84,6 +87,10 @@ The `dotnet tool update` command provides a way for you to update .NET tools on 
 
   Do not cache packages and HTTP requests.
 
+- **`--prerelease`**
+
+  Include prerelease versions.
+
 - **`--tool-manifest <PATH>`**
 
   Path to the manifest file.
@@ -97,6 +104,8 @@ The `dotnet tool update` command provides a way for you to update .NET tools on 
 - **`--version <VERSION>`**
 
   The version range of the tool package to update to. This cannot be used to downgrade versions, you must `uninstall` newer versions first.
+
+  Starting in .NET 8.0, `--version Major.Minor.Patch` refers to a specific major.minor.patch version, including unlisted versions. To get the latest version of a certain major.minor version instead, use `--version Major.Minor.*`.
 
 ## Examples
 

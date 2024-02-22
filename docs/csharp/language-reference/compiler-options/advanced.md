@@ -2,9 +2,9 @@
 description: "Advanced C# Compiler Options. These options are used in advanced scenarios."
 title: "C# Compiler Options - advanced scenarios"
 ms.date: 03/12/2021
-f1_keywords: 
+f1_keywords:
   - "cs.build.options"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "BaseAddress compiler option [C#]"
   - "ChecksumAlgorithm compiler option [C#]"
   - "CodePage compiler option [C#]"
@@ -21,7 +21,7 @@ helpviewer_keywords:
   - "AdditionalLibPaths compiler option [C#]"
   - "ApplicationConfiguration compiler option [C#]"
   - "ModuleAssemblyName compiler option [C#]"
-
+  - "ReportIVTs compiler option [C#]"
 ---
 # Advanced C# compiler options
 
@@ -43,6 +43,16 @@ The following options support advanced scenarios. The new MSBuild syntax is show
 - **NoStandardLib** / `-nostdlib`: Don't reference standard library *mscorlib.dll*.
 - **SubsystemVersion** / `-subsystemversion`: Specify subsystem version of this assembly.
 - **ModuleAssemblyName** / `-moduleassemblyname`: Name of the assembly that this module will be a part of.
+- **ReportIVTs** / `-reportivts`: Produce additional information on <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=nameWithType> information.
+
+You add any of these options in a `<PropertyGroup>` element in your `*.csproj` file:
+
+```xml
+<PropertyGroup>
+    <StartupObject>...</StartupObject>
+    ...
+</PropertyGroup>
+``````
 
 ## MainEntryPoint or StartupObject
 
@@ -65,13 +75,13 @@ Where `Program` is the type that contains the `Main` method. The provided class 
 
 ## PdbFile
 
-The **PdbFile** compiler option specifies the name and location of the debug symbols file.  The `filename` value specifies the name and location of the debug symbols file.  
+The **PdbFile** compiler option specifies the name and location of the debug symbols file.  The `filename` value specifies the name and location of the debug symbols file.
 
 ```xml
 <PdbFile>filename</PdbFile>
 ```
 
-When you specify [**DebugType**](code-generation.md#debugtype), the compiler will create a *.pdb* file in the same directory where the compiler will create the output file (.exe or .dll). The *.pdb* file has the same base file name as the name of the output file. **PdbFile** allows you to specify a non-default file name and location for the .pdb file. This compiler option cannot be set in the Visual Studio development environment, nor can it be changed programmatically.  
+When you specify [**DebugType**](code-generation.md#debugtype), the compiler creates a *.pdb* file in the same directory where the compiler creates the output file (.exe or .dll). The *.pdb* file has the same base file name as the name of the output file. **PdbFile** allows you to specify a nondefault file name and location for the .pdb file. This compiler option can't be set in the Visual Studio development environment, nor can it be changed programmatically.
 
 ## PathMap
 
@@ -127,24 +137,24 @@ The **AdditionalLibPaths** option specifies the location of assemblies reference
 <AdditionalLibPaths>dir1[,dir2]</AdditionalLibPaths>
 ```
 
-Where `dir1` is a directory for the compiler to look in if a referenced assembly isn't found in the current working directory (the directory from which you're invoking the compiler) or in the common language runtime's system directory. `dir2` is one or more additional directories to search in for assembly references. Separate directory names with a comma, and without white space between them. The compiler searches for assembly references that aren't fully qualified in the following order:  
+Where `dir1` is a directory for the compiler to look in if a referenced assembly isn't found in the current working directory (the directory from which you're invoking the compiler) or in the common language runtime's system directory. `dir2` is one or more additional directories to search in for assembly references. Separate directory names with a comma, and without white space between them. The compiler searches for assembly references that aren't fully qualified in the following order:
 
 1. Current working directory.
 1. The common language runtime system directory.
 1. Directories specified by **AdditionalLibPaths**.
 1. Directories specified by the LIB environment variable.
 
-Use **Reference** to specify an assembly reference. **AdditionalLibPaths** is additive. Specifying it more than once appends to any prior values. Since the path to the dependent assembly isn't specified in the assembly manifest, the application will find and use the assembly in the global assembly cache. The compiler referencing the assembly doesn't imply the common language runtime can find and load the assembly at run time. See [How the Runtime Locates Assemblies](../../../framework/deployment/how-the-runtime-locates-assemblies.md) for details on how the runtime searches for referenced assemblies.  
+Use **Reference** to specify an assembly reference. **AdditionalLibPaths** is additive. Specifying it more than once appends to any prior values. Since the path to the dependent assembly isn't specified in the assembly manifest, the application will find and use the assembly in the global assembly cache. The compiler referencing the assembly doesn't imply the common language runtime can find and load the assembly at run time. See [How the Runtime Locates Assemblies](../../../framework/deployment/how-the-runtime-locates-assemblies.md) for details on how the runtime searches for referenced assemblies.
 
 ## GenerateFullPaths
 
 The **GenerateFullPaths** option causes the compiler to specify the full path to the file when listing compilation errors and warnings.
-  
+
 ```Xml
 <GenerateFullPaths>true</GenerateFullPaths>
 ```
 
-By default, errors and warnings that result from compilation specify the name of the file in which an error was found. The **GenerateFullPaths** option causes the compiler to specify the full path to the file. This compiler option is unavailable in Visual Studio and cannot be changed programmatically.
+By default, errors and warnings that result from compilation specify the name of the file in which an error was found. The **GenerateFullPaths** option causes the compiler to specify the full path to the file. This compiler option is unavailable in Visual Studio and can't be changed programmatically.
 
 ## PreferredUILang
 
@@ -164,7 +174,7 @@ The **BaseAddress** option lets you specify the preferred base address at which 
 <BaseAddress>address</BaseAddress>
 ```
 
-Where `address` is the base address for the DLL. This address can be specified as a decimal, hexadecimal, or octal number. The default base address for a DLL is set by the .NET common language runtime. The lower-order word in this address will be rounded. For example, if you specify `0x11110001`, it will be rounded to `0x11110000`. To complete the signing process for a DLL, use SN.EXE with the -R option.
+Where `address` is the base address for the DLL. This address can be specified as a decimal, hexadecimal, or octal number. The default base address for a DLL is set by the .NET common language runtime. The lower-order word in this address will be rounded. For example, if you specify `0x11110001`, it is rounded to `0x11110000`. To complete the signing process for a DLL, use SN.EXE with the -R option.
 
 ## ChecksumAlgorithm
 
@@ -179,12 +189,12 @@ The `algorithm` must be either `SHA1` (default) or `SHA256`.
 ## CodePage
 
 This option specifies which codepage to use during compilation if the required page isn't the current default codepage for the system.
-  
+
 ```xml
 <CodePage>id</CodePage>
 ```
 
-Where `id` is the id of the code page to use for all source code files in the compilation. The compiler will first attempt to interpret all source files as UTF-8. If your source code files are in an encoding other than UTF-8 and use characters other than 7-bit ASCII characters, use the **CodePage** option to specify which code page should be used. **CodePage** applies to all source code files in your compilation. See [GetCPInfo](/windows/desktop/api/winnls/nf-winnls-getcpinfo) for information on how to find which code pages are supported on your system.
+Where `id` is the ID of the code page to use for all source code files in the compilation. The compiler first attempts to interpret all source files as UTF-8. If your source code files are in an encoding other than UTF-8 and use characters other than 7-bit ASCII characters, use the **CodePage** option to specify which code page should be used. **CodePage** applies to all source code files in your compilation. See [GetCPInfo](/windows/desktop/api/winnls/nf-winnls-getcpinfo) for information on how to find which code pages are supported on your system.
 
 ## Utf8Output
 
@@ -194,7 +204,7 @@ The **Utf8Output** option displays compiler output using UTF-8 encoding.
 <Utf8Output>true</Utf8Output>
 ```
 
-In some international configurations, compiler output cannot correctly be displayed in the console. Use **Utf8Output** and redirect compiler output to a file.
+In some international configurations, compiler output can't correctly be displayed in the console. Use **Utf8Output** and redirect compiler output to a file.
 
 ## FileAlignment
 
@@ -204,7 +214,7 @@ The **FileAlignment** option lets you specify the size of sections in your outpu
 <FileAlignment>number</FileAlignment>
 ```
 
-You set the **FileAlignment** option from the **Advanced** page of the **Build** properties for your project in Visual Studio. Each section will be aligned on a boundary that is a multiple of the **FileAlignment** value. There's no fixed default. If **FileAlignment** isn't specified, the common language runtime picks a default at compile time. By specifying the section size, you affect the size of the output file. Modifying section size may be useful for programs that will run on smaller devices. Use [DUMPBIN](/cpp/build/reference/dumpbin-options) to see information about sections in your output file.
+You set the **FileAlignment** option from the **Advanced** page of the **Build** properties for your project in Visual Studio. Each section is aligned on a boundary that is a multiple of the **FileAlignment** value. There's no fixed default. If **FileAlignment** isn't specified, the common language runtime picks a default at compile time. By specifying the section size, you affect the size of the output file. Modifying section size may be useful for programs that run on smaller devices. Use [DUMPBIN](/cpp/build/reference/dumpbin-options) to see information about sections in your output file.
 
 ## ErrorEndLocation
 
@@ -260,7 +270,7 @@ The default value of the **SubsystemVersion** compiler option depends on the con
 
 ## ModuleAssemblyName
 
-Specifies the name of an assembly whose non-public types a *.netmodule* can access.
+Specifies the name of an assembly whose nonpublic types a *.netmodule* can access.
 
 ```xml
 <ModuleAssemblyName>assembly_name</ModuleAssemblyName>
@@ -268,8 +278,27 @@ Specifies the name of an assembly whose non-public types a *.netmodule* can acce
 
 **ModuleAssemblyName** should be used when building a *.netmodule*, and where the following conditions are true:
 
-- The *.netmodule* needs access to non-public types in an existing assembly.
+- The *.netmodule* needs access to nonpublic types in an existing assembly.
 - You know the name of the assembly into which the .netmodule will be built.
 - The existing assembly has granted friend assembly access to the assembly into which the .*netmodule* will be built.
 
 For more information on building a .netmodule, see [**TargetType**](output.md#targettype) option of **module**. For more information on friend assemblies, see [Friend Assemblies](../../../standard/assembly/friend.md).
+
+## ReportIVTs
+
+Enable or disable additional diagnostic information about <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=nameWithType> found during the compilation:
+
+```xml
+<ReportIVTs>true</ReportIVTs>
+```
+
+The diagnostics are enabled if the element content is `true`, disabled if `false`, or not present.
+
+**ReportIVTs** reports the following information when enabled:
+
+1. Any inaccessible member diagnostics include their source assembly, if different than the current assembly.
+1. The compiler prints the assembly identity of the project being compiled, its assembly name and public key.
+1. For every reference passed to the compiler, it prints;
+   1. The assembly identity of the reference
+   1. Whether the reference grants the current project `InternalsVisibleTo`
+   1. The name and all public keys of any assemblies granted `InternalsVisibleTo` from this assembly

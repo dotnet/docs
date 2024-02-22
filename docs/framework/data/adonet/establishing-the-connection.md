@@ -13,7 +13,7 @@ To connect to Microsoft SQL Server, use the <xref:System.Data.SqlClient.SqlConne
   
 ## Closing Connections  
 
- We recommend that you always close the connection when you are finished using it, so that the connection can be returned to the pool. The `Using` block in Visual Basic or C# automatically disposes of the connection when the code exits the block, even in the case of an unhandled exception. See [using Statement](../../../csharp/language-reference/keywords/using-statement.md) and [Using Statement](../../../visual-basic/language-reference/statements/using-statement.md) for more information.  
+ We recommend that you always close the connection when you are finished using it, so that the connection can be returned to the pool. The `Using` block in Visual Basic or C# automatically disposes of the connection when the code exits the block, even in the case of an unhandled exception. See [using statement](../../../csharp/language-reference/statements/using.md) and [Using Statement](../../../visual-basic/language-reference/statements/using-statement.md) for more information.  
   
  You can also use the `Close` or `Dispose` methods of the connection object for the provider that you are using. Connections that are not explicitly closed might not be added or returned to the pool. For example, a connection that has gone out of scope but that has not been explicitly closed will only be returned to the connection pool if the maximum pool size has been reached and the connection is still valid. For more information, see [OLE DB, ODBC, and Oracle Connection Pooling](ole-db-odbc-and-oracle-connection-pooling.md).  
   

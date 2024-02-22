@@ -13,6 +13,8 @@ ms.assetid: d3646e6d-5c1f-4922-8fb0-ec5effb30d60
 ---
 # Abstract Class Design
 
+[!INCLUDE [not-current](includes/not-current.md)]
+
 ❌ DO NOT define public or protected internal constructors in abstract types.
 
  Constructors should be public only if users will need to create instances of the type. Because you cannot create instances of an abstract type, an abstract type with a public constructor is incorrectly designed and misleading to the users.

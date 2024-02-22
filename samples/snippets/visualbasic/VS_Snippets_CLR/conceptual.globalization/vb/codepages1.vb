@@ -6,7 +6,7 @@ Imports System.IO
 Imports System.Text
 
 Module Example
-    Public Sub Main()
+    Public Sub CodePages()
         ' Represent Greek uppercase characters in code page 737.
         Dim greekChars() As Char = {"Α"c, "Β"c, "Γ"c, "Δ"c, "Ε"c, "Ζ"c, "Η"c, "Θ"c,
                                      "Ι"c, "Κ"c, "Λ"c, "Μ"c, "Ν"c, "Ξ"c, "Ο"c, "Π"c,

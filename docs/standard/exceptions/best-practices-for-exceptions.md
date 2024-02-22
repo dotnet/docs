@@ -1,7 +1,7 @@
 ---
 title: "Best Practices for exceptions - .NET"
 description: Learn best practices for exceptions, such as using try/catch/finally, handling common conditions without exceptions, and using predefined .NET exception types.
-ms.date: "07/26/2022"
+ms.date: 02/15/2023
 ms.custom: devdivchpfy22
 dev_langs:
   - "csharp"
@@ -9,12 +9,11 @@ dev_langs:
   - "cpp"
 helpviewer_keywords:
   - "exceptions, best practices"
-ms.assetid: f06da765-235b-427a-bfb6-47cd219af539
 ---
 
 # Best practices for exceptions
 
-A well-designed app handles exceptions and errors to prevent app crashes. This section describes best practices for handling and creating exceptions.
+A well-designed app handles exceptions and errors to prevent app crashes. This article describes best practices for handling and creating exceptions.
 
 ## Use try/catch/finally blocks to recover from errors or release resources
 
@@ -62,9 +61,8 @@ Exceptions ensure that failures don't go unnoticed because the calling code didn
 
 Introduce a new exception class only when a predefined one doesn't apply. For example:
 
-- Throw an <xref:System.InvalidOperationException> exception if a property set or method call isn't appropriate given the object's current state.
-
-- Throw an <xref:System.ArgumentException> exception or one of the predefined classes that derive from <xref:System.ArgumentException> if invalid parameters are passed.
+- If a property set or method call isn't appropriate given the object's current state, throw an <xref:System.InvalidOperationException> exception.
+- If invalid parameters are passed, throw an <xref:System.ArgumentException> exception or one of the predefined classes that derive from <xref:System.ArgumentException>.
 
 ## End exception class names with the word `Exception`
 
@@ -79,9 +77,7 @@ When a custom exception is necessary, name it appropriately and derive it from t
 Use at least the three common constructors when creating your own exception classes: the parameterless constructor, a constructor that takes a string message, and a constructor that takes a string message and an inner exception.
 
 - <xref:System.Exception.%23ctor>, which uses default values.
-
 - <xref:System.Exception.%23ctor%28System.String%29>, which accepts a string message.
-
 - <xref:System.Exception.%23ctor%28System.String%2CSystem.Exception%29>, which accepts a string message and an inner exception.
 
 For an example, see [How to: Create User-Defined Exceptions](how-to-create-user-defined-exceptions.md).
@@ -90,10 +86,9 @@ For an example, see [How to: Create User-Defined Exceptions](how-to-create-user-
 
 When you create user-defined exceptions, ensure that the metadata for the exceptions is available to code that's executing remotely.
 
-For example, on .NET implementations that support App Domains, exceptions might occur across App domains. Suppose App Domain A creates App Domain B, which executes code that throws an exception. For App Domain A to properly catch and handle the exception, it must be able to find the assembly that contains the exception thrown by App Domain B. If App Domain B throws an exception that is contained in an assembly under its application base, but not under App Domain A's application base, App Domain A won't be able to find the exception, and the common language runtime will throw a <xref:System.IO.FileNotFoundException> exception. To avoid this situation, you can deploy the assembly that contains the exception information in either of two ways:
+For example, on .NET implementations that support app domains, exceptions might occur across app domains. Suppose app domain A creates app domain B, which executes code that throws an exception. For app domain A to properly catch and handle the exception, it must be able to find the assembly that contains the exception thrown by app domain B. If app domain B throws an exception that is contained in an assembly under its application base, but not under app domain A's application base, app domain A won't be able to find the exception, and the common language runtime will throw a <xref:System.IO.FileNotFoundException> exception. To avoid this situation, you can deploy the assembly that contains the exception information in either of two ways:
 
 - Put the assembly into a common application base shared by both app domains.
-
 - If the domains don't share a common application base, sign the assembly that contains the exception information with a strong name and deploy the assembly into the global assembly cache.
 
 ## Use grammatically correct error messages
@@ -106,8 +101,8 @@ The error message the user sees is derived from the <xref:System.Exception.Messa
 
 For localized applications, you should provide a localized message string for every exception that your application can throw. You use resource files to provide localized error messages. For information on localizing applications and retrieving localized strings, see the following articles:
 
-- [How to: create user-defined exceptions with localized exception messages](how-to-create-localized-exception-messages.md)
-- [Resources in .NET Apps](../../core/extensions/resources.md)
+- [How to: Create user-defined exceptions with localized exception messages](how-to-create-localized-exception-messages.md)
+- [Resources in .NET apps](../../core/extensions/resources.md)
 - <xref:System.Resources.ResourceManager?displayProperty=nameWithType>
 
 ## In custom exceptions, provide additional properties as needed
@@ -181,7 +176,7 @@ Private Shared Sub TransferFunds(from As Account, [to] As Account, amount As Dec
 End Sub
 ```
 
-This example illustrates the use of `throw` to re-throw the original exception, making it easier for callers to see the real cause of the problem without having to examine the <xref:System.Exception.InnerException> property. An alternative is to throw a new exception and include the original exception as the inner exception.
+This example illustrates the use of `throw` to rethrow the original exception, making it easier for callers to see the real cause of the problem without having to examine the <xref:System.Exception.InnerException> property. An alternative is to throw a new exception and include the original exception as the inner exception.
 
 ```csharp
 catch (Exception ex)
@@ -206,6 +201,52 @@ Catch ex As Exception
         .Amount = amount
     }
 End Try
+```
+
+## Capture exceptions to rethrow later
+
+To capture an exception and preserve its callstack to be able to rethrow it later, use the <xref:System.Runtime.ExceptionServices.ExceptionDispatchInfo?displayProperty=fullName> class. This class provides the following methods and properties (among others):
+
+- Use <xref:System.Runtime.ExceptionServices.ExceptionDispatchInfo.Capture(System.Exception)?displayProperty=nameWithType> to capture an exception and call stack.
+- Use <xref:System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw?displayProperty=nameWithType> to restore the state that was saved when the exception was captured and rethrow the captured exception.
+- Use the <xref:System.Runtime.ExceptionServices.ExceptionDispatchInfo.SourceException?displayProperty=nameWithType> property to inspect the captured exception.
+
+The following example shows how the <xref:System.Runtime.ExceptionServices.ExceptionDispatchInfo> class can be used, and what the output might look like.
+
+```csharp
+ExceptionDispatchInfo? edi = null;
+try
+{
+    var txt = File.ReadAllText(@"C:\temp\file.txt");
+}
+catch (FileNotFoundException e)
+{
+    edi = ExceptionDispatchInfo.Capture(e);
+}
+
+// ...
+
+Console.WriteLine("I was here.");
+
+if (edi is not null)
+    edi.Throw();
+```
+
+If the file in the example code doesn't exist, the following output is produced:
+
+```output
+I was here.
+Unhandled exception. System.IO.FileNotFoundException: Could not find file 'C:\temp\file.txt'.
+File name: 'C:\temp\file.txt'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.File.ReadAllText(String path, Encoding encoding)
+   at Example.ProcessFile.Main() in C:\repos\ConsoleApp1\Program.cs:line 12
+--- End of stack trace from previous location ---
+   at Example.ProcessFile.Main() in C:\repos\ConsoleApp1\Program.cs:line 24
 ```
 
 ## See also

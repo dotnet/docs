@@ -6,7 +6,7 @@ no-loc: ["EditorConfig"]
 ---
 # Configuration options for code analysis
 
-Code analysis rules have various configuration options. Some of these options are specified as key-value pairs in an [analyzer configuration file](configuration-files.md) using the syntax `<option key> = <option value>`. Other options, which configure code analysis as a whole, are available as properties in your project file.
+Code analysis rules have various configuration options. Some of these options are specified as key-value pairs in an [analyzer configuration file](configuration-files.md) using the syntax `<option key> = <option value>`. Other options, which configure code analysis as a whole, are available as MSBuild properties in your project file.
 
 The most common option you'll configure is a [rule's severity](#severity-level). You can configure the severity level for any rule, including [code quality rules](quality-rules/index.md) and [code style rules](style-rules/index.md). For example, to enable a rule as a warning, add the following key-value pair to an [analyzer configuration file](configuration-files.md):
 
@@ -14,8 +14,8 @@ The most common option you'll configure is a [rule's severity](#severity-level).
 
 You can also configure additional options to customize rule behavior:
 
-- Code quality rules have [options](code-quality-rule-options.md) to configure behavior, such as which method names a rule should apply to.
-- Code style rules have [options](code-style-rule-options.md) to define style preferences, such as where new lines are desirable.
+- Code quality rules have [behavior options](code-quality-rule-options.md), such as which method names a rule should apply to.
+- Code style rules have [style-preference options](code-style-rule-options.md), such as where new lines are desirable.
 - Third-party analyzer rules can define their own configuration options, with custom key names and value formats.
 
 ## General options
@@ -28,6 +28,21 @@ These options apply to code analysis as a whole. They cannot be applied only to 
 
 For additional options, see [Code analysis properties](../../core/project-sdk/msbuild-props.md#code-analysis-properties).
 
+### Analysis mode
+
+While the .NET SDK includes all code analysis rules, only some of them are [enabled by default](https://github.com/dotnet/roslyn-analyzers/blob/main/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md). The *analysis mode* determines which, if any, set of rules to enable. You can choose a more aggressive analysis mode where most or all rules are enabled. Or you can choose a more conservative analysis mode where most or all rules are disabled, and you can then opt-in to specific rules as needed. Set your analysis mode by adding the [\<AnalysisMode>](../../core/project-sdk/msbuild-props.md#analysismode) MSBuild property to your project file.
+
+```xml
+<PropertyGroup>
+  <AnalysisMode>Recommended</AnalysisMode>
+</PropertyGroup>
+```
+
+Starting in .NET 6, you can also bulk enable a category of rules using the [\<AnalysisMode\<Category>>](../../core/project-sdk/msbuild-props.md#analysismodecategory) MSBuild property.
+
+> [!NOTE]
+> If you configure code analysis using MSBuild properties like `AnalysisMode`, any *bulk* configuration options you set in your [configuration file](configuration-files.md) are ignored. For example, if you've bulk-enabled [all rules or a category of rules](#scope) in an *.editorconfig* file, that configuration is ignored.
+
 ### Enable code analysis
 
 Code analysis is enabled by default for projects that target .NET 5 and later versions. If you have the .NET 5+ SDK but your project targets a different .NET implementation, you can manually enable code analysis by setting the [EnableNETAnalyzers](../../core/project-sdk/msbuild-props.md#enablenetanalyzers) property in your project file to `true`.
@@ -35,16 +50,6 @@ Code analysis is enabled by default for projects that target .NET 5 and later ve
 ```xml
 <PropertyGroup>
   <EnableNETAnalyzers>true</EnableNETAnalyzers>
-</PropertyGroup>
-```
-
-### Analysis mode
-
-While the .NET SDK includes all code analysis rules, only some of them are enabled by default. The *analysis mode* determines which, if any, set of rules is enabled. You can choose a more aggressive analysis mode where most or all rules are enabled, or a more conservative analysis mode where most or all rules are disabled and, you can then opt in to specific rules as needed. Set your analysis mode by adding the [AnalysisMode](../../core/project-sdk/msbuild-props.md#analysismode) property to your project file.
-
-```xml
-<PropertyGroup>
-  <AnalysisMode>Recommended</AnalysisMode>
 </PropertyGroup>
 ```
 
@@ -111,11 +116,7 @@ The following table shows the different rule severities that you can configure f
   ```
 
 > [!IMPORTANT]
-> When you configure the severity level for multiple rules with a single entry, either for a *category* of rules or for *all* rules, the severity only applies to rules that are [enabled by default](https://github.com/dotnet/roslyn-analyzers/blob/main/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md). To enable rules that are disabled by default, you must either:
->
-> - Add an explicit `dotnet_diagnostic.<rule ID>.severity = <severity>` configuration entry for each rule.
-> - In .NET 6+, enable a category of rules by setting [\<AnalysisMode\<Category>>](../../core/project-sdk/msbuild-props.md#analysismodecategory) to `All`.
-> - Enable *all* rules by setting [\<AnalysisMode>](../../core/project-sdk/msbuild-props.md#analysismode) to `All` or by setting [\<AnalysisLevel>](../../core/project-sdk/msbuild-props.md#analysislevel) to `latest-All`.
+> When you configure the severity level for multiple rules with a single entry, either for a *category* of rules or for *all* rules, the severity only applies to rules that are [enabled by default](https://github.com/dotnet/roslyn-analyzers/blob/main/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md). And if you enable all rules by using the MSBuild properties [\<AnalysisMode>](../../core/project-sdk/msbuild-props.md#analysismode) or [\<AnalysisLevel>](../../core/project-sdk/msbuild-props.md#analysislevel), any bulk `dotnet_analyzer_diagnostic` options are ignored. For this reason, it's better to enable a category of rules by setting [\<AnalysisMode\<Category>>](../../core/project-sdk/msbuild-props.md#analysismodecategory) to `All`.
 
 > [!NOTE]
 > The prefix for setting severity for a single rule, `dotnet_diagnostic`, is slightly different than the prefix for configuring severity via category or for all rules, `dotnet_analyzer_diagnostic`.
@@ -124,8 +125,8 @@ The following table shows the different rule severities that you can configure f
 
 If you have multiple severity configuration entries that can be applied to the same rule ID, precedence is chosen in the following order:
 
-- An entry for an individual rule by ID takes precedence over an entry for a category.
 - An entry for a category takes precedence over an entry for all analyzer rules.
+- An entry for an individual rule by ID takes precedence over an entry for a category.
 
 Consider the following example, where [CA1822](/visualstudio/code-quality/ca1822) has the category "Performance":
 

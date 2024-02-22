@@ -24,6 +24,4 @@ Some exceptions are thrown automatically by the .NET runtime when basic operatio
 
 ## See also
 
-- [try-catch](../../language-reference/keywords/try-catch.md)
-- [try-finally](../../language-reference/keywords/try-finally.md)
-- [try-catch-finally](../../language-reference/keywords/try-catch-finally.md)
+- [Exception-handling statements](../../language-reference/statements/exception-handling-statements.md)

@@ -8,7 +8,7 @@ metadata:
   title: Azure for .NET developers
   description: Samples, tutorials, and education for .NET on Azure
   ms.topic: hub-page
-  ms.prod: azure-dotnet
+  ms.service: azure-dotnet
   ms.date: 05/13/2021
 
 highlightedContent:
@@ -25,7 +25,7 @@ highlightedContent:
       url: /azure/azure-functions/functions-create-your-first-function-visual-studio
     - itemType: tutorial
       title: ASP.NET Core and Docker
-      url: /visualstudio/containers/container-tools?view=vs-2019
+      url: /visualstudio/containers/container-tools
     - itemType: deploy
       title: Deploy a .NET app with Azure DevOps
       url: /azure/devops/pipelines/ecosystems/dotnet-core?view=azure-devops
@@ -86,7 +86,7 @@ conceptualContent:
           url: /azure/azure-app-configuration/use-feature-flags-dotnet-core
         - itemType: how-to-guide
           text: Deploy a .NET Core app to Azure Container Registry
-          url: /visualstudio/containers/hosting-web-apps-in-docker?view=vs-2019
+          url: /visualstudio/containers/hosting-web-apps-in-docker
     - title: Create mobile apps
       links:
         - itemType: learn
@@ -175,7 +175,7 @@ conceptualContent:
           url: /azure/event-grid/overview
         - itemType: quickstart
           text: Use Azure Queue Storage
-          url: /azure/storage/queues/storage-dotnet-how-to-use-queues?tabs=dotnet
+          url: /azure/storage/queues/storage-quickstart-queues-dotnet?tabs=dotnet
         - itemType: quickstart
           text: Use Azure Service Bus queues
           url: /azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues

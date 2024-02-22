@@ -10,7 +10,7 @@ helpviewer_keywords:
 ---
 # Auto-Implemented Properties (C# Programming Guide)
 
-Auto-implemented properties make property-declaration more concise when no additional logic is required in the property accessors. They also enable client code to create objects. When you declare a property as shown in the following example, the compiler creates a private, anonymous backing field that can only be accessed through the property's `get` and `set` accessors. In C# 9 and later, `init` accessors can also be declared as auto-implemented properties.
+Auto-implemented properties make property-declaration more concise when no additional logic is required in the property accessors. They also enable client code to create objects. When you declare a property as shown in the following example, the compiler creates a private, anonymous backing field that can only be accessed through the property's `get` and `set` accessors. `init` accessors can also be declared as auto-implemented properties.
 
 ## Example
 

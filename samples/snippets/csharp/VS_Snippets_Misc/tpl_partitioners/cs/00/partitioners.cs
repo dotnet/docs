@@ -254,7 +254,7 @@ namespace PartitionerTests
 
                 _list.Add(GetItemsForPartition(start, end));
 
-                // For demonstratation.
+                // For demonstration.
                 Console.WriteLine("start = {0} b (end) = {1}", start, end);
             }
             return (IList<IEnumerator<int>>)_list;
@@ -302,7 +302,7 @@ namespace PartitionerTests
 
         IEnumerator<int> GetItemsForPartition(int start, int end)
         {
-            // For demonstration purpsoes. Each thread receives its own enumerator.
+            // For demonstration purposes. Each thread receives its own enumerator.
             Console.WriteLine("called on thread {0}", Thread.CurrentThread.ManagedThreadId);
             for (int i = start; i < end; i++)
                 yield return source[i];

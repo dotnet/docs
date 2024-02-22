@@ -1,7 +1,7 @@
 ---
 title: ML.NET metrics
 description: Understand the metrics that are used to evaluate the performance of an ML.NET model
-ms.date: 11/10/2022
+ms.date: 02/28/2023
 ---
 # Evaluate your ML.NET model with metrics
 
@@ -73,20 +73,26 @@ For further details on regression metrics, read the following articles:
 
 | Metric   |      Description      |  Look for |
 |----------|-----------------------|-----------|
-|**Average Distance**|Average of the distance between data points and the center of their assigned cluster. The average distance is a measure of proximity of the data points to cluster centroids. It's a measure of how 'tight' the cluster is.|Values closer to **0** are better. The closer to zero the average distance is, the more clustered the data is. Note though, that this metric will decrease if the number of clusters is increased, and in the extreme case (where each distinct data point is its own cluster) it will be equal to zero.
+|**Average Distance**|Average of the distance between data points and the center of their assigned cluster. The average distance is a measure of proximity of the data points to cluster centroids. It's a measure of how 'tight' the cluster is.|Values closer to **0** are better. The closer to zero the average distance is, the more clustered the data is. Note though, that this metric will decrease if the number of clusters is increased, and in the extreme case (where each distinct data point is its own cluster) it will be equal to zero.|
 |**Davies Bouldin Index**|The average ratio of within-cluster distances to between-cluster distances. The tighter the cluster, and the further apart the clusters are, the lower this value is.|Values closer to **0** are better. Clusters that are farther apart and less dispersed will result in a better score.|
-|**Normalized Mutual Information**|Can be used when the training data used to train the clustering model also comes with ground truth labels (that is, supervised clustering). The Normalized Mutual Information metric measures whether similar data points get assigned to the same cluster and disparate data points get assigned to different clusters. Normalized mutual information is a value between 0 and 1|Values closer to **1** are better|
+|**Normalized Mutual Information**|Can be used when the training data used to train the clustering model also comes with ground truth labels (that is, supervised clustering). The Normalized Mutual Information metric measures whether similar data points get assigned to the same cluster and disparate data points get assigned to different clusters. Normalized mutual information is a value between 0 and 1.|Values closer to **1** are better.|
 
 ## Evaluation metrics for Ranking
 
 | Metric   |      Description      |  Look for |
 |----------|-----------------------|-----------|
-|**Discounted Cumulative Gains**|Discounted cumulative gain (DCG) is a measure of ranking quality. It is derived from two assumptions. One: Highly relevant items are more useful when appearing higher in ranking order. Two: Usefulness tracks relevance that is, the higher the relevance, the more useful an item. Discounted cumulative gain is calculated for a particular position in the ranking order. It sums the relevance grading divided by the logarithm of the ranking index up to the position of interest. It is calculated using $\sum_{i=0}^{p} \frac {rel_i} {\log_{e}{i+1}}$ Relevance gradings are provided to a ranking training algorithm as ground truth labels. One DCG value is provided for each position in the ranking table, hence the name Discounted Cumulative **Gains**. |**Higher values are better**|
-|**Normalized Discounted Cumulative Gains**|Normalizing DCG allows the metric to be compared for ranking lists of different lengths|**Values closer to 1 are better**|
+|**Discounted Cumulative Gains**|Discounted cumulative gain (DCG) is a measure of ranking quality. It is derived from two assumptions. One: Highly relevant items are more useful when appearing higher in ranking order. Two: Usefulness tracks relevance that is, the higher the relevance, the more useful an item. Discounted cumulative gain is calculated for a particular position in the ranking order. It sums the relevance grading divided by the logarithm of the ranking index up to the position of interest. It is calculated using $\sum_{i=0}^{p} \frac {rel_i} {\log_{e}{i+1}}$ Relevance gradings are provided to a ranking training algorithm as ground truth labels. One DCG value is provided for each position in the ranking table, hence the name Discounted Cumulative **Gains**. |**Higher values are better.**|
+|**Normalized Discounted Cumulative Gains**|Normalizing DCG allows the metric to be compared for ranking lists of different lengths.|**Values closer to 1 are better.**|
 
 ## Evaluation metrics for Anomaly Detection
 
 | Metric   |      Description      |  Look for |
 |----------|-----------------------|-----------|
-|**Area Under ROC Curve**|Area under the receiver operator curve measures how well the model separates anomalous and usual data points.|**Values closer to 1 are better**. Only values greater than 0.5 demonstrate effectiveness of the model. Values of 0.5 or below indicate that the model is no better than randomly allocating the inputs to anomalous and usual categories|
-|**Detection Rate At False Positive Count**|Detection rate at false positive count is the ratio of the number of correctly identified anomalies to the total number of anomalies in a test set, indexed by each false positive. That is, there is a value for detection rate at false positive count for each false positive item.|**Values closer to 1 are better**. If there are no false positives, then this value is 1|
+|**Area Under ROC Curve**|Area under the receiver operator curve measures how well the model separates anomalous and usual data points.|**Values closer to 1 are better**. Only values greater than 0.5 demonstrate effectiveness of the model. Values of 0.5 or below indicate that the model is no better than randomly allocating the inputs to anomalous and usual categories.|
+|**Detection Rate At False Positive Count**|Detection rate at false positive count is the ratio of the number of correctly identified anomalies to the total number of anomalies in a test set, indexed by each false positive. That is, there is a value for detection rate at false positive count for each false positive item.|**Values closer to 1 are better**. If there are no false positives, then this value is 1.|
+
+## Evaluation metrics for sentence similarity
+
+| Metric   |      Description      |  Look for |
+|----------|-----------------------|-----------|
+| **Pearson Correlation** | [Pearson correlation](https://en.wikipedia.org/wiki/Pearson_correlation_coefficient), also known as correlation coefficient, measures the dependence or relationship between two sets of data. | **Absolute values closer to 1 are most similar**. This metric ranges from -1 to 1. An absolute value of 1 implies that the datasets are identical. A value of 0 implies there is no relationship between the two sets of data.  |

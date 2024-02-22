@@ -1,15 +1,14 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 
-using IHost host = Host.CreateDefaultBuilder(args)
-    .ConfigureHostConfiguration(configHost =>
-    {
-        configHost.SetBasePath(Directory.GetCurrentDirectory());
-        configHost.AddJsonFile("hostsettings.json", optional: true);
-        configHost.AddEnvironmentVariables(prefix: "PREFIX_");
-        configHost.AddCommandLine(args);
-    })
-    .Build();
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+
+builder.Environment.ContentRootPath = Directory.GetCurrentDirectory();
+builder.Configuration.AddJsonFile("hostsettings.json", optional: true);
+builder.Configuration.AddEnvironmentVariables(prefix: "PREFIX_");
+builder.Configuration.AddCommandLine(args);
+
+using IHost host = builder.Build();
 
 // Application code should start here.
 

@@ -8,9 +8,10 @@ helpviewer_keywords:
   - "Pascal-case names [.NET Framework]"
   - "case sensitivity, capitalization conventions"
   - "names [.NET Framework], capitalization"
-ms.topic: reference
 ---
 # Capitalization Conventions
+
+[!INCLUDE [not-current](includes/not-current.md)]
 
 The guidelines in this chapter lay out a simple method for using case that, when applied consistently, make identifiers for types, members, and parameters easy to read.
 

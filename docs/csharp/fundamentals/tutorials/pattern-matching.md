@@ -2,7 +2,6 @@
 title: "Tutorial: Build algorithms with pattern matching"
 description: This advanced tutorial demonstrates how to use pattern matching techniques to create functionality using data and algorithms that are created separately.
 ms.date: 02/25/2022
-ms.custom: contperf-fy21q1
 ---
 # Tutorial: Use pattern matching to build type-driven and data-driven algorithms
 
@@ -271,7 +270,7 @@ In the preceding sample, using a recursive expression means you don't repeat the
 
 ## Add peak pricing
 
-For the final feature, the toll authority wants to add time sensitive peak pricing. During the morning and evening rush hours, the tolls are doubled. That rule only affects traffic in one direction: inbound to the city in the morning, and outbound in the evening rush hour. During other times during the workday, tolls increase by 50%. Late night and early morning, tolls are reduced by 25%. During the weekend, it's the normal rate, regardless of the time. You could use a series if `if` and `else` statements to express this using the following code:
+For the final feature, the toll authority wants to add time sensitive peak pricing. During the morning and evening rush hours, the tolls are doubled. That rule only affects traffic in one direction: inbound to the city in the morning, and outbound in the evening rush hour. During other times during the workday, tolls increase by 50%. Late night and early morning, tolls are reduced by 25%. During the weekend, it's the normal rate, regardless of the time. You could use a series of `if` and `else` statements to express this using the following code:
 
 [!code-csharp[FullTuplePattern](./snippets/patterns/finished/toll-calculator/TollCalculator.cs#SnippetPremiumWithoutPattern)]
 
@@ -328,7 +327,7 @@ Next, add a similar function to categorize the time into the blocks:
 
 :::code language="csharp" source="./snippets/patterns/finished/toll-calculator/TollCalculator.cs" ID="GetTimeBand":::
 
-You add a private `enum` to convert each range of time to a discrete value. Then, the `GetTimeBand` method uses [relational patterns](../../language-reference/operators/patterns.md#relational-patterns), and [conjunctive `or` patterns](../../language-reference/operators/patterns.md#logical-patterns), both added in C# 9.0. A relational pattern lets you test a numeric value using `<`, `>`, `<=`, or `>=`. The `or` pattern tests if an expression matches one or more patterns. You can also use an `and` pattern to ensure that an expression matches two distinct patterns, and a `not` pattern to test that an expression doesn't match a pattern.
+You add a private `enum` to convert each range of time to a discrete value. Then, the `GetTimeBand` method uses [relational patterns](../../language-reference/operators/patterns.md#relational-patterns), and [conjunctive `or` patterns](../../language-reference/operators/patterns.md#logical-patterns). A relational pattern lets you test a numeric value using `<`, `>`, `<=`, or `>=`. The `or` pattern tests if an expression matches one or more patterns. You can also use an `and` pattern to ensure that an expression matches two distinct patterns, and a `not` pattern to test that an expression doesn't match a pattern.
 
 After you create those methods, you can use another `switch` expression with the **tuple pattern** to calculate the pricing premium. You could build a `switch` expression with all 16 arms:
 

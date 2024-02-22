@@ -1,21 +1,21 @@
 ---
-title: "Migration Guide to .NET Framework 4.8, 4.7, 4.6, and 4.5"
+title: "Migration Guide to .NET Framework 4.8, 4.7, and 4.6.2"
 description: A guide for migrating to newer .NET Framework versions that includes resources for new features and application compatibility.
-ms.date: "04/18/2019"
+ms.date: "12/30/2022"
 helpviewer_keywords: 
   - ".NET Framework, migrating applications to"
   - "migration, .NET Framework"
 ms.assetid: 02d55147-9b3a-4557-a45f-fa936fadae3b
 ---
-# Migrate to .NET Framework 4.8, 4.7, 4.6, and 4.5
+# Migrate to .NET Framework 4.8, 4.7, and 4.6.2
 
-If you created your app using an earlier version of .NET Framework, you can generally upgrade it to .NET Framework 4.5 and its point releases (4.5.1 and 4.5.2), .NET Framework 4.6 and its point releases (4.6.1 and 4.6.2), .NET Framework 4.7 and its point releases (4.7.1 and 4.7.2), or .NET Framework 4.8 easily. Open your project in Visual Studio. If your project was created in an earlier version of Visual Studio, the **Project Compatibility** dialog box automatically opens. For more information about upgrading a project in Visual Studio, see [Port, Migrate, and Upgrade Visual Studio Projects](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects) and [Visual Studio 2019 Platform Targeting and Compatibility](/visualstudio/releases/2019/compatibility).
+If you created your app using an earlier version of .NET Framework, you can generally upgrade it to .NET Framework 4.6.2, .NET Framework 4.7 and its point releases (4.7.1 and 4.7.2), or .NET Framework 4.8 easily. Open your project in Visual Studio. If your project was created in an earlier version of Visual Studio, the **Project Compatibility** dialog box automatically opens. For more information about upgrading a project in Visual Studio, see [Port, Migrate, and Upgrade Visual Studio Projects](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects) and [Visual Studio 2022 Platform Targeting and Compatibility](/visualstudio/releases/2022/compatibility).
 
- However, some changes in .NET Framework require changes to your code. You may also want to take advantage of functionality that is new in .NET Framework 4.5 and its point releases, in .NET Framework 4.6 and its point releases, in .NET Framework 4.7 and its point releases, or in .NET Framework 4.8. Making these types of changes to your app for a new version of .NET Framework is typically referred to as *migration*. If your app doesn't have to be migrated, you can run it in .NET Framework 4.5 or a later version without recompiling it.
+However, some changes in .NET Framework require changes to your code. You may also want to take advantage of functionality that is new in .NET Framework 4.6.2, in .NET Framework 4.7 and its point releases, or in .NET Framework 4.8. Making these types of changes to your app for a new version of .NET Framework is typically referred to as *migration*. If your app doesn't have to be migrated, you can run it in .NET Framework 4.6.2 or a later version without recompiling it.
 
 ## Migration resources
 
-Review the following documents before you migrate your app from earlier versions of .NET Framework to version 4.5, 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, 4.7, 4.7.1, 4.7.2, 4.8, or 4.8.1:
+Review the following documents before you migrate your app from earlier versions of .NET Framework to version 4.6.2, 4.7, 4.7.1, 4.7.2, 4.8, or 4.8.1:
 
 - See [Versions and Dependencies](versions-and-dependencies.md) to understand the CLR version underlying each version of the .NET Framework and to review guidelines for targeting your apps successfully.
 

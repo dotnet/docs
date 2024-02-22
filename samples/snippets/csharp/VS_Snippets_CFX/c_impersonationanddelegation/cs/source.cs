@@ -82,9 +82,9 @@ namespace SnippetsPart2
 
             //<snippet3>
             // Code to create a ServiceHost not shown.
-            ServiceAuthorizationBehavior MyServiceAuthoriationBehavior =
+            ServiceAuthorizationBehavior MyServiceAuthorizationBehavior =
                 serviceHost.Description.Behaviors.Find<ServiceAuthorizationBehavior>();
-            MyServiceAuthoriationBehavior.ImpersonateCallerForAllOperations = true;
+            MyServiceAuthorizationBehavior.ImpersonateCallerForAllOperations = true;
             //</snippet3>
 
             //<snippet4>

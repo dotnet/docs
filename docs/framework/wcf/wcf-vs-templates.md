@@ -4,7 +4,7 @@ title: "WCF Visual Studio Templates"
 ms.date: "03/30/2017"
 ms.assetid: 6a608575-3535-4190-89da-911e24c8374f
 ---
-# WCF Visual Studio Templates
+# WCF Visual Studio templates
 
 Windows Communication Foundation (WCF) Visual Studio templates are predefined project and item templates you can use in Visual Studio to quickly build WCF services and surrounding applications.  
   
@@ -71,9 +71,9 @@ Windows Communication Foundation (WCF) Visual Studio templates are predefined pr
   
 #### Changing the Address of the Feed  
 
- The syndication template uses Internet Explorer during execution. When you right-click your project in **Solutions Explorer** in Visual Studio, select **Properties**, then select the **Debug** tab and you can see the default address of the template. Internet Explorer attempts to open the feed at this address.  
+ The syndication template uses a web browser during execution. When you right-click your project in **Solution Explorer** in Visual Studio, select **Properties**, then select the **Debug** tab and you can see the default address of the template. The browser attempts to open the feed at this address.  
   
- If you change the address of your feed, you must also change the address in the **Debug** tab. If you do not do this, Internet Explorer attempts to open the feed at the default address and fail.  
+ If you change the address of your feed, you must also change the address in the **Debug** tab. If you do not do this, the browser attempts to open the feed at the default address and fails.  
   
 ### AJAX enabled WCF Service Item Template  
 

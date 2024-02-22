@@ -2,7 +2,7 @@
 Option Strict On
 
 <Assembly: CLSCompliant(True)>
-Module Example
+Module Example1
     Public Sub Main()
         ' <Snippet10>
         Dim number1 As Double = 1234567890

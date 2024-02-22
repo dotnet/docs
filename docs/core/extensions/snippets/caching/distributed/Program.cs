@@ -4,18 +4,17 @@ using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-using IHost host = Host.CreateDefaultBuilder(args)
-    .ConfigureServices(services =>
-    {
-        // The distributed memory cache is for dev / testing scenarios only!
-        // Use an actual implementation of IDistributedCache such as:
-        //
-        // - https://www.nuget.org/packages/Microsoft.Extensions.Caching.StackExchangeRedis
-        // - https://www.nuget.org/packages/Microsoft.Extensions.Caching.SqlServer
-        //
-        services.AddDistributedMemoryCache();
-    })
-    .Build();
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+
+// The distributed memory cache is for dev / testing scenarios only!
+// Use an actual implementation of IDistributedCache such as:
+//
+// - https://www.nuget.org/packages/Microsoft.Extensions.Caching.StackExchangeRedis
+// - https://www.nuget.org/packages/Microsoft.Extensions.Caching.SqlServer
+//
+builder.Services.AddDistributedMemoryCache();
+
+using IHost host = builder.Build();
 
 IDistributedCache cache =
     host.Services.GetRequiredService<IDistributedCache>();

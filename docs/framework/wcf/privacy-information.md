@@ -134,238 +134,142 @@ Microsoft is committed to protecting end user privacy. When you build an applica
   
 #### Information Removed from Message Headers When Logging Decrypted/Unencrypted Messages  
 
- When messages are logged in decrypted/unencrypted form, security keys and potentially personal information are removed by default from message headers and message bodies before they are logged. The following list shows what WCF considers keys and potentially personal information.  
+ When messages are logged in decrypted or unencrypted form, security keys and potentially personal information are removed by default from message headers and message bodies before they are logged. The following list shows what WCF considers keys and potentially personal information.  
   
  Keys that are removed:  
   
- \- For xmlns:wst="http://schemas.xmlsoap.org/ws/2004/04/trust" and xmlns:wst="http://schemas.xmlsoap.org/ws/2005/02/trust"  
+- For `xmlns:wst="http://schemas.xmlsoap.org/ws/2004/04/trust"` and `xmlns:wst="http://schemas.xmlsoap.org/ws/2005/02/trust"`  
   
- wst:BinarySecret  
+  `wst:BinarySecret`
+  `wst:Entropy`  
   
- wst:Entropy  
+- For `xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.1.xsd"` and `xmlns:wsse="http://docs.oasis-open.org/wss/2005/xx/oasis-2005xx-wss-wssecurity-secext-1.1.xsd"`  
   
- \- For xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.1.xsd" and xmlns:wsse="http://docs.oasis-open.org/wss/2005/xx/oasis-2005xx-wss-wssecurity-secext-1.1.xsd"  
-  
- wsse:Password  
-  
- wsse:Nonce  
+  `wsse:Password`  
+  `wsse:Nonce`  
   
  Potentially personal information that is removed:  
   
- \- For xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.1.xsd" and xmlns:wsse="http://docs.oasis-open.org/wss/2005/xx/oasis-2005xx-wss-wssecurity-secext-1.1.xsd"  
+- For `xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.1.xsd"` and `xmlns:wsse="http://docs.oasis-open.org/wss/2005/xx/oasis-2005xx-wss-wssecurity-secext-1.1.xsd"`  
   
- wsse:Username  
+  `wsse:Username`  
+  `wsse:BinarySecurityToken`  
   
- wsse:BinarySecurityToken  
-  
- \- For xmlns:saml="urn:oasis:names:tc:SAML:1.0:assertion" the items in bold (below) are removed:  
+- For `xmlns:saml="urn:oasis:names:tc:SAML:1.0:assertion"` the following items in `bold` are removed:  
   
  \<Assertion  
-  
  MajorVersion="1"  
-  
  MinorVersion="1"  
-  
  AssertionId="[ID]"  
-  
  Issuer="[string]"  
-  
  IssueInstant="[dateTime]"  
-  
  >  
-  
  \<Conditions NotBefore="[dateTime]" NotOnOrAfter="[dateTime]">  
-  
  \<AudienceRestrictionCondition>  
-  
  \<Audience>[uri]\</Audience>+  
-  
  \</AudienceRestrictionCondition>*  
-  
  \<DoNotCacheCondition />*  
-  
  <\!-- abstract base type  
-  
  \<Condition />*  
-  
  -->  
-  
  \</Conditions>?  
-  
  \<Advice>  
-  
  \<AssertionIDReference>[ID]\</AssertionIDReference>*  
-  
  \<Assertion>[assertion]\</Assertion>*  
-  
  [any]*  
-  
  \</Advice>?  
-  
  <\!-- Abstract base types  
-  
  \<Statement />*  
-  
  \<SubjectStatement>  
-  
  \<Subject>  
-  
  `<NameIdentifier`  
-  
  `NameQualifier="[string]"?`  
-  
  `Format="[uri]"?`  
-  
  `>`  
-  
  `[string]`  
-  
  `</NameIdentifier>?`  
-  
  \<SubjectConfirmation>  
-  
  \<ConfirmationMethod>[anyUri]\</ConfirmationMethod>+  
-  
  \<SubjectConfirmationData>[any]\</SubjectConfirmationData>?  
-  
  \<ds:KeyInfo>...\</ds:KeyInfo>?  
-  
  \</SubjectConfirmation>?  
-  
  \</Subject>  
-  
  \</SubjectStatement>*  
-  
  -->  
-  
  \<AuthenticationStatement  
-  
  AuthenticationMethod="[uri]"  
-  
  AuthenticationInstant="[dateTime]"  
-  
  >  
-  
  [Subject]  
-  
  `<SubjectLocality`  
-  
  `IPAddress="[string]"?`  
-  
  `DNSAddress="[string]"?`  
-  
  `/>?`  
-  
- <AuthorityBinding  
-  
+ \<AuthorityBinding  
  AuthorityKind="[QName]"  
-  
  Location="[uri]"  
-  
  Binding="[uri]"  
-  
  />*  
-  
  \</AuthenticationStatement>*  
-  
  \<AttributeStatement>  
-  
  [Subject]  
-  
  \<Attribute  
-  
  AttributeName="[string]"  
-  
  AttributeNamespace="[uri]"  
-  
  >  
-  
  `<AttributeValue>[any]</AttributeValue>+`  
-  
  \</Attribute>+  
-  
  \</AttributeStatement>*  
-  
  \<AuthorizationDecisionStatement  
-  
  Resource="[uri]"  
-  
  Decision="[Permit&#124;Deny&#124;Indeterminate]"  
-  
  >  
-  
  [Subject]  
-  
  \<Action Namespace="[uri]">[string]\</Action>+  
-  
  \<Evidence>  
-  
  \<AssertionIDReference>[ID]\</AssertionIDReference>+  
-  
  \<Assertion>[assertion]\</Assertion>+  
-  
  \</Evidence>?  
-  
  \</AuthorizationDecisionStatement>*  
-  
  \</Assertion>  
   
 #### Information Removed from Message Bodies When Logging Decrypted/Unencrypted Messages  
 
- As previously described, WCF removes keys and known potentially personal information from message headers for logged decrypted/unencrypted messages. In addition, WCF removes keys and known potentially personal information from message bodies for the body elements and actions in the following list, which describe security messages involved in key exchange.  
+ As previously described, WCF removes keys and known potentially personal information from message headers for logged decrypted and unencrypted messages. In addition, WCF removes keys and known potentially personal information from message bodies for the body elements and actions in the following list, which describe security messages involved in key exchange.  
   
  For the following namespaces:  
   
- xmlns:wst="http://schemas.xmlsoap.org/ws/2004/04/trust" and xmlns:wst="http://schemas.xmlsoap.org/ws/2005/02/trust" (for example, if no action available)  
+ `xmlns:wst="http://schemas.xmlsoap.org/ws/2004/04/trust"` and `xmlns:wst="http://schemas.xmlsoap.org/ws/2005/02/trust"` (for example, if no action available)  
   
  Information is removed for these body elements, which involve key exchange:  
   
- wst:RequestSecurityToken  
+ `wst:RequestSecurityToken`  
   
- wst:RequestSecurityTokenResponse  
+ `wst:RequestSecurityTokenResponse`  
   
- wst:RequestSecurityTokenResponseCollection  
+ `wst:RequestSecurityTokenResponseCollection`  
   
  Information is also removed for each of the following Actions:  
   
 - `http://schemas.xmlsoap.org/ws/2005/02/trust/RST/Issue`
-  
 - `http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Issue`
-  
 - `http://schemas.xmlsoap.org/ws/2005/02/trust/RST/Renew`
-  
 - `http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Renew`
-  
 - `http://schemas.xmlsoap.org/ws/2005/02/trust/RST/Cancel`
-  
 - `http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Cancel`
-  
 - `http://schemas.xmlsoap.org/ws/2005/02/trust/RST/Validate`
-  
 - `http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Validate`
-  
 - `http://schemas.xmlsoap.org/ws/2005/02/trust/RST/SCT`
-  
 - `http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/SCT`
-  
 - `http://schemas.xmlsoap.org/ws/2005/02/trust/RST/SCT/Amend`
-  
 - `http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/SCT/Amend`
-  
 - `http://schemas.xmlsoap.org/ws/2005/02/trust/RST/SCT/Renew`
-  
 - `http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/SCT/Renew`
-  
 - `http://schemas.xmlsoap.org/ws/2005/02/trust/RST/SCT/Cancel`
-  
 - `http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/SCT/Cancel`
-  
 - `http://schemas.xmlsoap.org/ws/2004/04/security/trust/RST/SCT`
-  
 - `http://schemas.xmlsoap.org/ws/2004/04/security/trust/RSTR/SCT`
-  
 - `http://schemas.xmlsoap.org/ws/2004/04/security/trust/RST/SCT-Amend`
-  
 - `http://schemas.xmlsoap.org/ws/2004/04/security/trust/RSTR/SCT-Amend`
   
 #### No Information Is Removed from Application-specific Headers and Body Data  

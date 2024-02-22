@@ -40,7 +40,7 @@ The following operators perform arithmetic operations with operands of numeric t
 
 Those operators are supported by all [integral](../builtin-types/integral-numeric-types.md) and [floating-point](../builtin-types/floating-point-numeric-types.md) numeric types.
 
-In the case of integral types, those operators (except the `++` and `--` operators) are defined for the `int`, `uint`, `long`, and `ulong` types. When operands are of other integral types (`sbyte`, `byte`, `short`, `ushort`, or `char`), their values are converted to the `int` type, which is also the result type of an operation. When operands are of different integral or floating-point types, their values are converted to the closest containing type, if such a type exists. For more information, see the [Numeric promotions](~/_csharpstandard/standard/expressions.md#1147-numeric-promotions) section of the [C# language specification](~/_csharpstandard/standard/README.md). The `++` and `--` operators are defined for all integral and floating-point numeric types and the [char](../builtin-types/char.md) type. The result type of a [compound assignment expression](#compound-assignment) is the type of the left-hand operand.
+In the case of integral types, those operators (except the `++` and `--` operators) are defined for the `int`, `uint`, `long`, and `ulong` types. When operands are of other integral types (`sbyte`, `byte`, `short`, `ushort`, or `char`), their values are converted to the `int` type, which is also the result type of an operation. When operands are of different integral or floating-point types, their values are converted to the closest containing type, if such a type exists. For more information, see the [Numeric promotions](~/_csharpstandard/standard/expressions.md#1247-numeric-promotions) section of the [C# language specification](~/_csharpstandard/standard/README.md). The `++` and `--` operators are defined for all integral and floating-point numeric types and the [char](../builtin-types/char.md) type. The result type of a [compound assignment expression](#compound-assignment) is the type of the left-hand operand.
 
 ## Increment operator ++
 
@@ -138,7 +138,7 @@ For the `float` and `double` operands, the result of `x % y` for the finite `x` 
 > [!NOTE]
 > This method of computing the remainder is analogous to that used for integer operands, but different from the IEEE 754 specification. If you need the remainder operation that complies with the IEEE 754 specification, use the <xref:System.Math.IEEERemainder%2A?displayProperty=nameWithType> method.
 
-For information about the behavior of the `%` operator with non-finite operands, see the [Remainder operator](~/_csharpstandard/standard/expressions.md#1194-remainder-operator) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For information about the behavior of the `%` operator with non-finite operands, see the [Remainder operator](~/_csharpstandard/standard/expressions.md#12104-remainder-operator) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 For the `decimal` operands, the remainder operator `%` is equivalent to the [remainder operator](<xref:System.Decimal.op_Modulus(System.Decimal,System.Decimal)>) of the <xref:System.Decimal?displayProperty=nameWithType> type.
 
@@ -182,9 +182,14 @@ The following example demonstrates the usage of compound assignment with arithme
 
 :::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ArithmeticOperators.cs" id="CompoundAssignment":::
 
-Because of [numeric promotions](~/_csharpstandard/standard/expressions.md#1147-numeric-promotions), the result of the `op` operation might be not implicitly convertible to the type `T` of `x`. In such a case, if `op` is a predefined operator and the result of the operation is explicitly convertible to the type `T` of `x`, a compound assignment expression of the form `x op= y` is equivalent to `x = (T)(x op y)`, except that `x` is only evaluated once. The following example demonstrates that behavior:
+Because of [numeric promotions](~/_csharpstandard/standard/expressions.md#1247-numeric-promotions), the result of the `op` operation might be not implicitly convertible to the type `T` of `x`. In such a case, if `op` is a predefined operator and the result of the operation is explicitly convertible to the type `T` of `x`, a compound assignment expression of the form `x op= y` is equivalent to `x = (T)(x op y)`, except that `x` is only evaluated once. The following example demonstrates that behavior:
 
 :::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ArithmeticOperators.cs" id="CompoundAssignmentWithCast":::
+
+In the preceding example, value `44` is the result of converting value `300` to the `byte` type.
+
+> [!NOTE]
+> In the [checked overflow-checking context](../statements/checked-and-unchecked.md), the preceding example throws an <xref:System.OverflowException>. For more information, see the [Integer arithmetic overflow](#integer-arithmetic-overflow) section.
 
 You also use the `+=` and `-=` operators to subscribe to and unsubscribe from an [event](../keywords/event.md), respectively. For more information, see [How to subscribe to and unsubscribe from events](../../programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md).
 
@@ -272,18 +277,18 @@ You can use the `checked` modifier only when you overload any of the following o
 
 For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
-- [Postfix increment and decrement operators](~/_csharpstandard/standard/expressions.md#11714-postfix-increment-and-decrement-operators)
-- [Prefix increment and decrement operators](~/_csharpstandard/standard/expressions.md#1186-prefix-increment-and-decrement-operators)
-- [Unary plus operator](~/_csharpstandard/standard/expressions.md#1182-unary-plus-operator)
-- [Unary minus operator](~/_csharpstandard/standard/expressions.md#1183-unary-minus-operator)
-- [Multiplication operator](~/_csharpstandard/standard/expressions.md#1192-multiplication-operator)
-- [Division operator](~/_csharpstandard/standard/expressions.md#1193-division-operator)
-- [Remainder operator](~/_csharpstandard/standard/expressions.md#1194-remainder-operator)
-- [Addition operator](~/_csharpstandard/standard/expressions.md#1195-addition-operator)
-- [Subtraction operator](~/_csharpstandard/standard/expressions.md#1196-subtraction-operator)
-- [Compound assignment](~/_csharpstandard/standard/expressions.md#11193-compound-assignment)
-- [The checked and unchecked operators](~/_csharpstandard/standard/expressions.md#11718-the-checked-and-unchecked-operators)
-- [Numeric promotions](~/_csharpstandard/standard/expressions.md#1147-numeric-promotions)
+- [Postfix increment and decrement operators](~/_csharpstandard/standard/expressions.md#12815-postfix-increment-and-decrement-operators)
+- [Prefix increment and decrement operators](~/_csharpstandard/standard/expressions.md#1296-prefix-increment-and-decrement-operators)
+- [Unary plus operator](~/_csharpstandard/standard/expressions.md#1292-unary-plus-operator)
+- [Unary minus operator](~/_csharpstandard/standard/expressions.md#1293-unary-minus-operator)
+- [Multiplication operator](~/_csharpstandard/standard/expressions.md#12102-multiplication-operator)
+- [Division operator](~/_csharpstandard/standard/expressions.md#12103-division-operator)
+- [Remainder operator](~/_csharpstandard/standard/expressions.md#12104-remainder-operator)
+- [Addition operator](~/_csharpstandard/standard/expressions.md#12105-addition-operator)
+- [Subtraction operator](~/_csharpstandard/standard/expressions.md#12106-subtraction-operator)
+- [Compound assignment](~/_csharpstandard/standard/expressions.md#12214-compound-assignment)
+- [The checked and unchecked operators](~/_csharpstandard/standard/expressions.md#12819-the-checked-and-unchecked-operators)
+- [Numeric promotions](~/_csharpstandard/standard/expressions.md#1247-numeric-promotions)
 
 ## See also
 

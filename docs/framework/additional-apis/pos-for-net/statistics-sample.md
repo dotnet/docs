@@ -3,7 +3,7 @@ title: Statistics Sample
 description: Statistics Sample (POS for .NET v1.14 SDK Documentation)
 ms.date: 03/03/2014
 ms.topic: how-to
-ms.custom: pos-restored-from-archive
+ms.custom: "pos-restored-from-archive,UpdateFrequency5"
 ---
 
 # Statistics Sample (POS for .NET v1.14 SDK Documentation)
@@ -582,7 +582,7 @@ namespace SOSamples.Statistics
             SetStatisticValue(StatisticInterface,
                             "USB");
 
-            // 2a. Create a new new statistic to test Increment
+            // 2a. Create a new statistic to test Increment
             // method. No custom handler needed.
             CreateStatistic(TestIncrement, false, "blobs");
 

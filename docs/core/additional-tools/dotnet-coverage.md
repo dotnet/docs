@@ -62,7 +62,7 @@ The `merge` command is used to merge several code coverage reports into one. Thi
 
 ```console
 dotnet-coverage merge
-    [--remove-input-files] [-r|--recursive]
+    [--remove-input-files]
     [-o|--output <output>] [-f|--output-format <output-format>]
     [-l|--log-file <log-file>] [-ll|--log-level <log-level>] [-?|-h|--help]
     <files>
@@ -82,7 +82,7 @@ dotnet-coverage merge
 
 * **`-r, --recursive`**
 
-  Search for coverage reports in subdirectories.
+  .NET 7 SDK and earlier versions only Search for coverage reports in subdirectories.
 
 * **`-o|--output <output>`**
 
@@ -243,7 +243,10 @@ Creates a coverage file for existing code coverage collection.
 
 ```console
 dotnet-coverage snapshot
-    [-r|--reset] [-o|--output <output>]  [-t|--timeout]
+    [-r|--reset]
+    [-o|--output <output>]
+    [-tn|--tag-name <tag-name>] [-tid|--tag-identifier <tag-identifier>]
+    [-t|--timeout]
     [-l|--log-file <log-file>] [-ll|--log-level <log-level>] [-?|-h|--help]
     <session>
 ```
@@ -263,6 +266,14 @@ dotnet-coverage snapshot
 * **`-o|--output <output>`**
 
   Sets the code coverage report output file. If not provided, it's generated automatically with a timestamp.
+
+* **`-tn|--tag-name <tag-name>`**
+
+  Creates a snapshot tag name in the coverage file with current coverage information. Tag-name and tag-identifier are mutually inclusive.
+
+* **`-tid|--tag-identifier <tag-identifier>`**
+
+  Creates a snapshot tag identifier in the coverage file with current coverage information. Tag-name and tag-identifier are mutually inclusive.
 
 * **`-t|--timeout`**
 
@@ -383,6 +394,12 @@ A code coverage file for session `serverdemo` can be generated with current cove
 
 ```console
 dotnet-coverage snapshot --output after_first_test.coverage serverdemo
+```
+
+Also, a snapshot tag can be added to the coverage file using tag options as follows:
+
+```console
+dotnet-coverage snapshot --tag-name after_first_test --tag-identifier after_first_test serverdemo
 ```
 
 Finally, session `serverdemo` and the server can be closed as follows:
@@ -668,10 +685,10 @@ You can merge `a.coverage` and `b.coverage` and store the data in `merged.covera
 dotnet-coverage merge -o merged.coverage a.coverage b.coverage
 ```
 
-For example, if you run a command like `dotnet test --collect "Code Coverage"`, the coverage report is stored into a folder that is named a random GUID. Such folders are hard to find and merge. Using this tool, you can merge all code coverage reports for all your projects as follows:
+For example, if you run a command like `dotnet test --collect "Code Coverage"`, the coverage report is stored into a folder that is named a random GUID. Such folders are hard to find and merge. Using this tool, you can merge all code coverage reports for all your projects using globbing patterns as follows:
 
 ```console
-dotnet-coverage merge -o merged.cobertura.xml -f cobertura -r *.coverage
+dotnet-coverage merge -o merged.cobertura.xml -f cobertura **\*.coverage
 ```
 
 The preceding command merges all coverage reports from the current directory and all subdirectories and stores the result into a cobertura file. In Azure Pipelines, you can use [Publish Code Coverage Results task](/azure/devops/pipelines/tasks/test/publish-code-coverage-results) to publish a merged cobertura report.

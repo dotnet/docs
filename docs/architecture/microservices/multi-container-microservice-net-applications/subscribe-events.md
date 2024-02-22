@@ -22,7 +22,6 @@ eventBus.Subscribe<ProductPriceChangedIntegrationEvent,
 
 eventBus.Subscribe<OrderStartedIntegrationEvent,
                    OrderStartedIntegrationEventHandler>();
-
 ```
 
 After this code runs, the subscriber microservice will be listening through RabbitMQ channels. When any message of type ProductPriceChangedIntegrationEvent arrives, the code invokes the event handler that is passed to it and processes the event.
@@ -212,7 +211,6 @@ public async Task<IActionResult> UpdateProduct([FromBody]CatalogItem productToUp
 
   return Ok();
 }
-
 ```
 
 After the ProductPriceChangedIntegrationEvent integration event is created, the transaction that stores the original domain operation (update the catalog item) also includes the persistence of the event in the EventLog table. This makes it a single transaction, and you will always be able to check whether event messages were sent.
@@ -367,6 +365,9 @@ If the "redelivered" flag is set, the receiver must take that into account, beca
 
 - **Eric Brewer. CAP Twelve Years Later: How the "Rules" Have Changed** \
     <https://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed>
+
+- **CAP, PACELC, and Microservices** \
+    <https://ardalis.com/cap-pacelc-and-microservices/>
 
 - **Azure Service Bus. Brokered Messaging: Duplicate Detection**\
   <https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Windows%20Azure%20Product%20Team/Brokered%20Messaging%20Duplicate%20Detection>

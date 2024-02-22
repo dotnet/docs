@@ -276,36 +276,36 @@ Many of the methods in a builder class use and return an `M<'T>` construct, whic
 
 Many functions use the result of `Delay` as an argument: `Run`, `While`, `TryWith`, `TryFinally`, and `Combine`. The `Delayed<'T>` type is the return type of `Delay` and consequently the parameter to these functions. `Delayed<'T>` can be an arbitrary type that does not need to be related to `M<'T>`; commonly `M<'T>` or `(unit -> M<'T>)` are used. The default implementation is `M<'T>`. See [here](https://fsharpforfunandprofit.com/posts/computation-expressions-builder-part3/#understanding-the-type-constraints) for a more in-depth look.
 
-The compiler, when it parses a computation expression, converts the expression into a series of nested function calls by using the methods in the preceding table and the code in the computation expression. The nested expression is of the following form:
+The compiler, when it parses a computation expression, translates the expression into a series of nested function calls by using the methods in the preceding table and the code in the computation expression. The nested expression is of the following form:
 
 ```fsharp
-builder.Run(builder.Delay(fun () -> {| cexpr |}))
+builder.Run(builder.Delay(fun () -> {{ cexpr }}))
 ```
 
-In the above code, the calls to `Run` and `Delay` are omitted if they are not defined in the computation expression builder class. The body of the computation expression, here denoted as `{| cexpr |}`, is translated into calls involving the methods of the builder class by the translations described in the following table. The computation expression `{| cexpr |}` is defined recursively according to these translations where `expr` is an F# expression and `cexpr` is a computation expression.
+In the above code, the calls to `Run` and `Delay` are omitted if they are not defined in the computation expression builder class. The body of the computation expression, here denoted as `{{ cexpr }}`, is translated into further calls to the methods of the builder class. This process is defined recursively according to the translations in the following table. Code within double brackets `{{ ... }}` remains to be translated, `expr` represents an F# expression and `cexpr` represents a computation expression.
 
 |Expression|Translation|
 |----------|-----------|
-|<code>{ let binding in cexpr }</code>|<code>let binding in {&#124; cexpr &#124;}</code>|
-|<code>{ let! pattern = expr in cexpr }</code>|<code>builder.Bind(expr, (fun pattern -> {&#124; cexpr &#124;}))</code>|
-|<code>{ do! expr in cexpr }</code>|<code>builder.Bind(expr, (fun () -> {&#124; cexpr &#124;}))</code>|
-|<code>{ yield expr }</code>|`builder.Yield(expr)`|
-|<code>{ yield! expr }</code>|`builder.YieldFrom(expr)`|
-|<code>{ return expr }</code>|`builder.Return(expr)`|
-|<code>{ return! expr }</code>|`builder.ReturnFrom(expr)`|
-|<code>{ use pattern = expr in cexpr }</code>|<code>builder.Using(expr, (fun pattern -> {&#124; cexpr &#124;}))</code>|
-|<code>{ use! value = expr in cexpr }</code>|<code>builder.Bind(expr, (fun value -> builder.Using(value, (fun value -> { cexpr }))))</code>|
-|<code>{ if expr then cexpr0 &#124;}</code>|<code>if expr then { cexpr0 } else builder.Zero()</code>|
-|<code>{ if expr then cexpr0 else cexpr1 &#124;}</code>|<code>if expr then { cexpr0 } else { cexpr1 }</code>|
-|<code>{ match expr with &#124; pattern_i -> cexpr_i }</code>|<code>match expr with &#124; pattern_i -> { cexpr_i }</code>|
-|<code>{ for pattern in expr do cexpr }</code>|<code>builder.For(enumeration, (fun pattern -> { cexpr }))</code>|
-|<code>{ for identifier = expr1 to expr2 do cexpr }</code>|<code>builder.For(enumeration, (fun identifier -> { cexpr }))</code>|
-|<code>{ while expr do cexpr }</code>|<code>builder.While(fun () -> expr, builder.Delay({ cexpr }))</code>|
-|<code>{ try cexpr with &#124; pattern_i -> expr_i }</code>|<code>builder.TryWith(builder.Delay({ cexpr }), (fun value -> match value with &#124; pattern_i -> expr_i &#124; exn -> System.Runtime.ExceptionServices.ExceptionDispatchInfo.Capture(exn).Throw())))</code>|
-|<code>{ try cexpr finally expr }</code>|<code>builder.TryFinally(builder.Delay( { cexpr }), (fun () -> expr))</code>|
-|<code>{ cexpr1; cexpr2 }</code>|<code>builder.Combine({ cexpr1 }, { cexpr2 })</code>|
-|<code>{ other-expr; cexpr }</code>|<code>expr; { cexpr }</code>|
-|<code>{ other-expr }</code>|`expr; builder.Zero()`|
+|<code>{{ let binding in cexpr }}</code>|<code>let binding in {{ cexpr }}</code>|
+|<code>{{ let! pattern = expr in cexpr }}</code>|<code>builder.Bind(expr, (fun pattern -> {{ cexpr }}))</code>|
+|<code>{{ do! expr in cexpr }}</code>|<code>builder.Bind(expr, (fun () -> {{ cexpr }}))</code>|
+|<code>{{ yield expr }}</code>|`builder.Yield(expr)`|
+|<code>{{ yield! expr }}</code>|`builder.YieldFrom(expr)`|
+|<code>{{ return expr }}</code>|`builder.Return(expr)`|
+|<code>{{ return! expr }}</code>|`builder.ReturnFrom(expr)`|
+|<code>{{ use pattern = expr in cexpr }}</code>|<code>builder.Using(expr, (fun pattern -> {{ cexpr }}))</code>|
+|<code>{{ use! value = expr in cexpr }}</code>|<code>builder.Bind(expr, (fun value -> builder.Using(value, (fun value -> {{ cexpr }}))))</code>|
+|<code>{{ if expr then cexpr0 }}</code>|<code>if expr then {{ cexpr0 }} else builder.Zero()</code>|
+|<code>{{ if expr then cexpr0 else cexpr1 }}</code>|<code>if expr then {{ cexpr0 }} else {{ cexpr1 }}</code>|
+|<code>{{ match expr with &#124; pattern_i -> cexpr_i }}</code>|<code>match expr with &#124; pattern_i -> {{ cexpr_i }}</code>|
+|<code>{{ for pattern in enumerable-expr do cexpr }}</code>|<code>builder.For(enumerable-expr, (fun pattern -> {{ cexpr }}))</code>|
+|<code>{{ for identifier = expr1 to expr2 do cexpr }}</code>|<code>builder.For([expr1..expr2], (fun identifier -> {{ cexpr }}))</code>|
+|<code>{{ while expr do cexpr }}</code>|<code>builder.While(fun () -> expr, builder.Delay({{ cexpr }}))</code>|
+|<code>{{ try cexpr with &#124; pattern_i -> expr_i }}</code>|<code>builder.TryWith(builder.Delay({{ cexpr }}), (fun value -> match value with &#124; pattern_i -> expr_i &#124; exn -> System.Runtime.ExceptionServices.ExceptionDispatchInfo.Capture(exn).Throw()))</code>|
+|<code>{{ try cexpr finally expr }}</code>|<code>builder.TryFinally(builder.Delay({{ cexpr }}), (fun () -> expr))</code>|
+|<code>{{ cexpr1; cexpr2 }}</code>|<code>builder.Combine({{ cexpr1 }}, {{ cexpr2 }})</code>|
+|<code>{{ other-expr; cexpr }}</code>|<code>expr; {{ cexpr }}</code>|
+|<code>{{ other-expr }}</code>|`expr; builder.Zero()`|
 
 In the previous table, `other-expr` describes an expression that is not otherwise listed in the table. A builder class does not need to implement all of the methods and support all of the translations listed in the previous table. Those constructs that are not implemented are not available in computation expressions of that type. For example, if you do not want to support the `use` keyword in your computation expressions, you can omit the definition of `Use` in your builder class.
 

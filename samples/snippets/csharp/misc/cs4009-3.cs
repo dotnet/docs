@@ -7,7 +7,7 @@ public class Example
    {
        Console.WriteLine("About to wait two seconds");
        int value = WaitTwoSeconds().Result;
-       Console.WriteLine($"Value returned from the aynnc operation: {value}");
+       Console.WriteLine($"Value returned from the async operation: {value}");
        Console.WriteLine("About to exit the program");
    }
 
@@ -21,5 +21,5 @@ public class Example
 // The example displays the following output:
 //       About to wait two seconds
 //       Returning from an asynchronous method
-//       Value returned from the aynnc operation: 100
+//       Value returned from the async operation: 100
 //       About to exit the program

@@ -26,7 +26,6 @@ There are two ways to download and install `dotnet-stack`:
   | OS  | Platform |
   | --- | -------- |
   | Windows | [x86](https://aka.ms/dotnet-stack/win-x86) \| [x64](https://aka.ms/dotnet-stack/win-x64) \| [Arm](https://aka.ms/dotnet-stack/win-arm) \| [Arm-x64](https://aka.ms/dotnet-stack/win-arm64) |
-  | macOS   | [x64](https://aka.ms/dotnet-stack/osx-x64) |
   | Linux   | [x64](https://aka.ms/dotnet-stack/linux-x64) \| [Arm](https://aka.ms/dotnet-stack/linux-arm) \| [Arm64](https://aka.ms/dotnet-stack/linux-arm64) \| [musl-x64](https://aka.ms/dotnet-stack/linux-musl-x64) \| [musl-Arm64](https://aka.ms/dotnet-stack/linux-musl-arm64) |
 
 ## Synopsis

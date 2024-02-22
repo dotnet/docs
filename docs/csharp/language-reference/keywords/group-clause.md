@@ -88,6 +88,6 @@ At compile time, `group` clauses are translated into calls to the <xref:System.L
 - <xref:System.Linq.Enumerable.ThenByDescending%2A>
 - [Query Keywords](query-keywords.md)
 - [Language Integrated Query (LINQ)](../../linq/index.md)
-- [Create a nested group](../../linq/create-a-nested-group.md)
-- [Group query results](../../linq/group-query-results.md)
-- [Perform a subquery on a grouping operation](../../linq/perform-a-subquery-on-a-grouping-operation.md)
+- [Create a nested group](../../linq/standard-query-operators/grouping-data.md)
+- [Group query results](../../linq/standard-query-operators/grouping-data.md)
+- [Perform a subquery on a grouping operation](../../linq/standard-query-operators/grouping-data.md)

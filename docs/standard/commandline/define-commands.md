@@ -37,7 +37,7 @@ myapp sub1 sub1a
 
 ## Define options
 
-A command handler method typically has parameters, and the values can come from command-line [options](syntax.md#options). The following example creates two options and adds them to the root command. The option names include double-hyphen prefixes, in accordance with [POSIX conventions](syntax.md#options). The command handler code displays the values of those options:
+A command handler method typically has parameters, and the values can come from command-line [options](syntax.md#options). The following example creates two options and adds them to the root command. The option names include double-hyphen prefixes, which is [typical for POSIX CLIs](syntax.md#options). The command handler code displays the values of those options:
 
 :::code language="csharp" source="snippets/define-commands/csharp/Program2.cs" id="defineoptions" :::
 
@@ -203,7 +203,7 @@ The options section of command help shows the valid values:
 
 ```output
 Options:
-  --language <csharp|fsharp|vb|pwsh|sql>  An option that that must be one of the values of a static list.
+  --language <csharp|fsharp|vb|pwsh|sql>  An option that must be one of the values of a static list.
   --version                               Show version information
   -?, -h, --help                          Show help and usage information
 ```

@@ -201,7 +201,7 @@ items:
     `for` loop. Try this code in the interactive window:
 
     ```csharp
-    for(int counter = 0; counter < 10; counter++)
+    for (int counter = 0; counter < 10; counter++)
     {
       Console.WriteLine($"Hello World! The counter is {counter}");
     }

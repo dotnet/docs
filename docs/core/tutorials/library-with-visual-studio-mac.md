@@ -2,9 +2,10 @@
 title: Create a .NET class library using Visual Studio for Mac
 description: Learn how to create a .NET class library using Visual Studio for Mac.
 ms.date: 11/30/2020
-recommendations: false
 ---
 # Tutorial: Create a .NET class library using Visual Studio for Mac
+
+[!INCLUDE [](~/includes/vs-mac-eol.md)]
 
 In this tutorial, you create a class library that contains a single string-handling method.
 

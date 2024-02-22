@@ -1,7 +1,7 @@
 ﻿'<snippet1>
 Namespace GenericsExample1
     '<snippet2>
-    Public Class Generic(Of T)
+    Public Class SimpleGenericClass(Of T)
         Public Field As T
 
     End Class
@@ -10,16 +10,16 @@ Namespace GenericsExample1
     Public Class GenTest
         '<snippet3>
         Public Shared Sub Main()
-            Dim g As New Generic(Of String)
+            Dim g As New SimpleGenericClass(Of String)
             g.Field = "A string"
             '...
-            Console.WriteLine("Generic.Field           = ""{0}""", g.Field)
-            Console.WriteLine("Generic.Field.GetType() = {0}", g.Field.GetType().FullName)
+            Console.WriteLine("SimpleGenericClass.Field           = ""{0}""", g.Field)
+            Console.WriteLine("SimpleGenericClass.Field.GetType() = {0}", g.Field.GetType().FullName)
         End Sub
         '</snippet3>
 
         '<snippet4>
-        Function Generic(Of T)(ByVal arg As T) As T
+        Function MyGenericMethod(Of T)(ByVal arg As T) As T
             Dim temp As T = arg
             '...
             Return temp
@@ -38,7 +38,7 @@ Namespace GenericsExample2
             Return temp
         End Function
     End Class
-    Class Generic(Of T)
+    Class MyGenericClass(Of T)
         Function M(ByVal arg As T) As T
             Dim temp As T = arg
             '...

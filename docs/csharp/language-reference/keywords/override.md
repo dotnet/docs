@@ -25,7 +25,7 @@ An `override` declaration cannot change the accessibility of the `virtual` metho
 
 You cannot use the `new`, `static`, or `virtual` modifiers to modify an `override` method.
 
-An overriding property declaration must specify exactly the same access modifier, type, and name as the inherited property. Beginning with C# 9.0, read-only overriding properties support covariant return types. The overridden property must be `virtual`, `abstract`, or `override`.
+An overriding property declaration must specify exactly the same access modifier, type, and name as the inherited property. Read-only overriding properties support covariant return types. The overridden property must be `virtual`, `abstract`, or `override`.
 
 For more information about how to use the `override` keyword, see [Versioning with the Override and New Keywords](../../programming-guide/classes-and-structs/versioning-with-the-override-and-new-keywords.md) and [Knowing when to use Override and New Keywords](../../programming-guide/classes-and-structs/knowing-when-to-use-override-and-new-keywords.md). For information about inheritance, see [Inheritance](../../fundamentals/object-oriented/inheritance.md).
 
@@ -37,7 +37,7 @@ This example defines a base class named `Employee`, and a derived class named `S
 
 ## C# language specification
 
-For more information, see the [Override methods](~/_csharpstandard/standard/classes.md#1465-override-methods) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For more information, see the [Override methods](~/_csharpstandard/standard/classes.md#1565-override-methods) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 For more information about covariant return types, see the [feature proposal note](~/_csharplang/proposals/csharp-9.0/covariant-returns.md).
 

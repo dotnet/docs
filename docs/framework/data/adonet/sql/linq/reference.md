@@ -38,7 +38,7 @@ This section provides reference information for [!INCLUDE[vbtecdlinq](../../../.
  [LINQ to SQL](index.md)  
  Provides a portal for [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] topics.  
   
- [Language-Integrated Query (LINQ) - C#](../../../../../csharp/programming-guide/concepts/linq/index.md)  
+ [Language-Integrated Query (LINQ) - C#](/dotnet/csharp/linq/)  
  [Language-Integrated Query (LINQ) - Visual Basic](../../../../../visual-basic/programming-guide/concepts/linq/index.md)  
  Provides portals for LINQ topics.  
   

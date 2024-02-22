@@ -4,5 +4,5 @@ interface IObjectStore
 {
     Task<ObjectGraph> GetNextAsync();
 
-    Task<ObjectGraph> MarkAsync(ObjectGraph graph);
+    Task<ObjectGraph?> MarkAsync(ObjectGraph graph);
 }

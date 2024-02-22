@@ -35,8 +35,6 @@ The following example shows how to use the <xref:System.IO.StreamWriter> class t
 [!code-csharp[Conceptual.BasicIO.TextFiles#WriteLine](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.basicio.textfiles/cs/write.cs)]
 [!code-vb[Conceptual.BasicIO.TextFiles#WriteLine](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.basicio.textfiles/vb/write.vb)]  
 
-[!INCLUDE [localized code comments](../../../includes/code-comments-loc.md)]
-
 ## Example: Synchronously append text with StreamWriter
 
 The following example shows how to use the <xref:System.IO.StreamWriter> class to synchronously append text to the text file created in the first example:

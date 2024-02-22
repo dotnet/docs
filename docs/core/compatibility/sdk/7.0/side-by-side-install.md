@@ -10,7 +10,7 @@ If a preview .NET 7 SDK is installed alongside the general availability (GA) ver
 > The SDK resolver "Microsoft.DotNet.MSBuildSdkResolver" failed while attempting to resolve the SDK "Microsoft.NET.Sdk". Exception: "Microsoft.NET.Sdk.WorkloadManifestReader.WorkloadManifestCompositionException: Workload definition 'wasm-tools' in manifest 'microsoft.net.workload.mono.toolchain'.
 
 > [!NOTE]
-> This behavior will be fixed in .NET SDK 7.2.00.
+> This behavior was fixed in .NET SDK 7.0.101.
 
 ## Version introduced
 

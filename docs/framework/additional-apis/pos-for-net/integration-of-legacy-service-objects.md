@@ -3,7 +3,7 @@ title: Integration of Legacy Service Objects
 description: Integration of Legacy Service Objects (POS for .NET v1.14 SDK Documentation)
 ms.date: 03/03/2014
 ms.topic: how-to
-ms.custom: pos-restored-from-archive
+ms.custom: "pos-restored-from-archive,UpdateFrequency5"
 ---
 
 # Integration of Legacy Service Objects (POS for .NET v1.14 SDK Documentation)

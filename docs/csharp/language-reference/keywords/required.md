@@ -1,7 +1,7 @@
 ---
 description: "required modifier - C# Reference"
 title: "required modifier - C# Reference"
-ms.date: 07/20/2022
+ms.date: 01/30/2023
 f1_keywords: 
   - "required_CSharpKeyword"
 helpviewer_keywords: 
@@ -9,7 +9,7 @@ helpviewer_keywords:
 ---
 # required modifier (C# Reference)
 
-The `required` modifier indicates that the *field* or *property* it's applied to must be initialized by all constructors or by using an [object initializer](../../programming-guide/classes-and-structs/object-and-collection-initializers.md). Any expression that initializes a new instance of the type must initialize all *required members*. The `required` modifier is available beginning with C# 11. The `required` modifier enables developers to create types where properties or fields must be properly initialized, yet still allow initialization using object initializers. Several rules ensure this behavior:
+The `required` modifier indicates that the *field* or *property* it's applied to must be initialized by an [object initializer](../../programming-guide/classes-and-structs/object-and-collection-initializers.md). Any expression that initializes a new instance of the type must initialize all *required members*. The `required` modifier is available beginning with C# 11. The `required` modifier enables developers to create types where properties or fields must be properly initialized, yet still allow initialization using object initializers. Several rules ensure this behavior:
 
 - The `required` modifier can be applied to *fields* and *properties* declared in `struct`, and `class` types, including `record` and `record struct` types. The `required` modifier can't be applied to members of an `interface`.
 - Explicit interface implementations can't be marked as `required`. They can't be set in object initializers.

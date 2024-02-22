@@ -74,7 +74,7 @@ These files follow the same syntax and provide information such as binding redir
 
 ### Application Configuration File
 
-First, the common language runtime checks the application configuration file for information that overrides the version information stored in the calling assembly's manifest. The application configuration file can be deployed with an application, but is not required for application execution. Usually the retrieval of this file is almost instantaneous, but in situations where the application base is on a remote computer, such as in an Internet Explorer Web-based scenario, the configuration file must be downloaded.
+First, the common language runtime checks the application configuration file for information that overrides the version information stored in the calling assembly's manifest. The application configuration file can be deployed with an application, but is not required for application execution. Usually the retrieval of this file is almost instantaneous, but in situations where the application base is on a remote computer, such as in a Web-based scenario, the configuration file must be downloaded.
 
 For client executables, the application configuration file resides in the same directory as the application's executable and has the same base name as the executable with a .config extension. For example, the configuration file for C:\Program Files\Myapp\Myapp.exe is C:\Program Files\Myapp\Myapp.exe.config. In a browser-based scenario, the HTML file must use the **\<link>** element to explicitly point to the configuration file.
 

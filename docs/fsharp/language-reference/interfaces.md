@@ -48,7 +48,7 @@ You can optionally give each method parameter a name using normal F# syntax:
 
 In the above `ISprintable` example, the `Print` method has a single parameter of the type `string` with the name `format`.
 
-There are two ways to implement interfaces: by using object expressions, and by using class types. In either case, the class type or object expression provides method bodies for abstract methods of the interface. Implementations are specific to each type that implements the interface. Therefore, interface methods on different types might be different from each other.
+There are two ways to implement interfaces: by using object expressions, and by using types. In either case, the type or object expression provides method bodies for abstract methods of the interface. Implementations are specific to each type that implements the interface. Therefore, interface methods on different types might be different from each other.
 
 The keywords `interface` and `end`, which mark the start and end of the definition, are optional when you use lightweight syntax. If you do not use these keywords, the compiler attempts to infer whether the type is a class or an interface by analyzing the constructs that you use. If you define a member or use other class syntax, the type is interpreted as a class.
 

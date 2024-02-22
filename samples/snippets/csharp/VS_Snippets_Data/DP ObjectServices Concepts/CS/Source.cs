@@ -1,26 +1,22 @@
 ﻿//<snippetUsingSerialization>
 //<snippetUsing>
 using System;
-using System.Linq;
 using System.Collections.Generic;
-using System.Text;
-using System.Data;
-using System.Data.Common;
-using System.Data.Objects;
-using System.Data.Objects.DataClasses;
-//</snippetUsing>
-using System.Runtime.Serialization;
-using System.Runtime.Serialization.Formatters.Binary;
-using System.IO;
-//</snippetUsingSerialization>
-using System.Xml.Serialization;
-using System.Data.Common.CommandTrees;
-using System.Data.Metadata.Edm;
-using System.Data.EntityClient;
 //<snippetUsingEvents>
 using System.ComponentModel;
+using System.Data;
+using System.Data.Common;
+using System.Data.EntityClient;
+using System.Data.Metadata.Edm;
+using System.Data.Objects;
+using System.Data.Objects.DataClasses;
 //</snippetUsingEvents>
 using System.Data.SqlClient;
+//</snippetUsing>
+using System.IO;
+using System.Linq;
+//</snippetUsingSerialization>
+using System.Xml.Serialization;
 
 namespace ObjectServicesConceptsCS
 {
@@ -303,8 +299,8 @@ namespace ObjectServicesConceptsCS
                         s, oldPurchaseOrderNumber, newPurchaseOrderNumber);
 
                 // Get the Entity that is associated with this ObjectStateEntry.
-                SalesOrderHeader associatedEnity = (SalesOrderHeader)stateEntry.Entity;
-                Console.WriteLine("Associated Enity's ID: {0}", associatedEnity.SalesOrderID);
+                SalesOrderHeader associatedEntity = (SalesOrderHeader)stateEntry.Entity;
+                Console.WriteLine("Associated Entity's ID: {0}", associatedEntity.SalesOrderID);
             }
             //</snippetObjectStateEntry_GetModifiedProperties>
         }
@@ -1244,7 +1240,7 @@ namespace ObjectServicesConceptsCS
                 ObjectParameter param = new ObjectParameter("fn", typeof(System.String));
                 param.Value = "Frances";
 
-                Console.WriteLine("Parame Name: {0}, Param Value: {1} Param Type: {2}",
+                Console.WriteLine("Param Name: {0}, Param Value: {1} Param Type: {2}",
                                     param.Name, param.Value, param.ParameterType);
             }
             //</snippetObjectParameter_Value_Name_Type>
@@ -1581,102 +1577,6 @@ namespace ObjectServicesConceptsCS
                 Console.WriteLine(writer.ToString());
             }
         }
-        #region StreamToBinary
-        //<snippetStreamToBinary>
-        public static void ReadFromBinaryStream()
-        {
-            BinaryFormatter formatter = new BinaryFormatter();
-            using (AdventureWorksEntities context = new AdventureWorksEntities())
-            {
-                try
-                {
-                    // Get the object graph for the selected customer
-                    // as a binary stream.
-                    MemoryStream stream = SerializeToBinaryStream(@"Adams");
-
-                    // Read from the begining of the stream.
-                    stream.Seek(0, SeekOrigin.Begin);
-
-                    // Deserialize the customer graph from the binary stream
-                    // and attach to an ObjectContext.
-                    Contact contact = (Contact)formatter.Deserialize(stream);
-                    context.Attach(contact);
-
-                    // Display information for each item
-                    // in the orders that belong to the first contact.
-                    foreach (SalesOrderHeader order in contact.SalesOrderHeaders)
-                    {
-                        Console.WriteLine(String.Format("PO Number: {0}",
-                            order.PurchaseOrderNumber));
-                        Console.WriteLine(String.Format("Order Date: {0}",
-                            order.OrderDate.ToString()));
-                        Console.WriteLine("Order items:");
-                        foreach (SalesOrderDetail item in order.SalesOrderDetails)
-                        {
-                            Console.WriteLine(String.Format("Product: {0} "
-                                + "Quantity: {1}", item.ProductID.ToString(),
-                                item.OrderQty.ToString()));
-                        }
-                    }
-                }
-
-                catch (SerializationException ex)
-                {
-                    Console.WriteLine("The object graph could not be deserialized from "
-                                  + "the binary stream because of the following error:");
-                    Console.WriteLine(ex.ToString());
-                }
-            }
-        }
-        private static MemoryStream SerializeToBinaryStream(string lastName)
-        {
-            BinaryFormatter formatter = new BinaryFormatter();
-            MemoryStream stream = new MemoryStream();
-
-            using (AdventureWorksEntities context = new AdventureWorksEntities())
-            {
-                //<snippetQueryTimeout>
-                // Specify a timeout for queries in this context, in seconds.
-                context.CommandTimeout = 120;
-                //</snippetQueryTimeout>
-
-                // Define a customer contact.
-                Contact customer;
-
-                // Create a Contact query with a path that returns
-                // orders and items for a contact.
-                ObjectQuery<Contact> query =
-                    context.Contacts.Include("SalesOrderHeaders.SalesOrderDetails");
-
-                try
-                {
-                    // Return the first contact with the specified last name
-                    // along with its related orders and items.
-                    customer = query.Where("it.LastName = @lastname",
-                        new ObjectParameter("lastname", lastName)).First();
-
-                    // Serialize the customer object graph.
-                    formatter.Serialize(stream, customer);
-                }
-                catch (EntitySqlException ex)
-                {
-                    throw new InvalidOperationException("The object query failed", ex);
-                }
-                catch (EntityCommandExecutionException ex)
-                {
-                    throw new InvalidOperationException("The object query failed", ex);
-                }
-                catch (SerializationException ex)
-                {
-                    throw new InvalidOperationException("The object graph could not be serialized", ex);
-                }
-
-                // Return the streamed object graph.
-                return stream;
-            }
-        }
-        //</snippetStreamToBinary>
-        #endregion
 
         public static Boolean CleanupOrders()
         {
@@ -2423,7 +2323,7 @@ namespace ObjectServicesConceptsCS
             {
                 context.SalesOrderDetails.Attach(updatedItem);
                 // Check if the ID is 0, if it is the item is new.
-                // In this case we need to chage the state to Added.
+                // In this case we need to change the state to Added.
                 if (updatedItem.SalesOrderDetailID == 0)
                 {
                     // Because the ID is generated by the database we do not need to
@@ -2563,7 +2463,7 @@ namespace ObjectServicesConceptsCS
                 // Get the order being changed.
                 SalesOrderHeader order = context.SalesOrderHeaders.First(o => o.SalesOrderID == orderId);
 
-                // Chage the billing address.
+                // Change the billing address.
                 order.BillToAddressID = addressId;
 
                 // Write the current billing street address.
@@ -2633,7 +2533,7 @@ namespace ObjectServicesConceptsCS
                     SalesOrderHeader order = new SalesOrderHeader();
                     order.EntityKey = orderKey;
 
-                    // Assign the ID to the SalesOrderID property to matche the key.
+                    // Assign the ID to the SalesOrderID property to match the key.
                     order.SalesOrderID = (int)orderKey.EntityKeyValues[0].Value;
 
                     // Attach the stand-in SalesOrderHeader object.
@@ -3157,7 +3057,7 @@ namespace ObjectServicesConceptsCS
                     // Add the new object to the context.
                     context.Products.AddObject(newProduct);
 
-                    // Persist the new produc to the data source.
+                    // Persist the new product to the data source.
                     context.SaveChanges();
 
                     // Return the identity of the new product.
@@ -3167,7 +3067,7 @@ namespace ObjectServicesConceptsCS
                 {
                     throw new InvalidOperationException(string.Format(
                         "The object could not be added. Make sure that a "
-                        + "product with a product number '{0}' does not aleady exist.\n",
+                        + "product with a product number '{0}' does not already exist.\n",
                         newProduct.ProductNumber), ex);
                 }
             }
@@ -3536,7 +3436,7 @@ namespace ObjectServicesConceptsCS
         static public void CreateNewObjectSetFKAndRef()
         {
             //<snippetFKvsRef>
-            //<snippetExistingPrincipaltoNewDependentFK>
+            //<snippetExistingPrincipalToNewDependentFK>
 
             // The following example creates a new StudentGrade object and associates
             // the StudentGrade with the Course and Person by
@@ -3568,9 +3468,9 @@ namespace ObjectServicesConceptsCS
 
                 context.SaveChanges();
             }
-            //</snippetExistingPrincipaltoNewDependentFK>
+            //</snippetExistingPrincipalToNewDependentFK>
 
-            //<snippetExistingPrincipaltoNewDependentRef>
+            //<snippetExistingPrincipalToNewDependentRef>
             // The following example creates a new StudentGrade and associates
             // the StudentGrade with the Course and Person by
             // setting the navigation properties to the Course and Person objects that were returned
@@ -3578,7 +3478,7 @@ namespace ObjectServicesConceptsCS
             // You do not need to call AddObject() in order to add the grade object
             // to the context, because when you assign the reference
             // to the navigation property the objects on both ends get synchronized by the Entity Framework.
-            // Note, that the Entity Framework will not synchronize the ends untill the SaveChanges method
+            // Note, that the Entity Framework will not synchronize the ends until the SaveChanges method
             // is called if your objects do not meet the change tracking requirements.
             using (var context = new SchoolEntities())
             {
@@ -3602,7 +3502,7 @@ namespace ObjectServicesConceptsCS
                 };
                 context.SaveChanges();
             }
-            //</snippetExistingPrincipaltoNewDependentRef>
+            //</snippetExistingPrincipalToNewDependentRef>
             //</snippetFKvsRef>
         }
 
@@ -3704,67 +3604,6 @@ namespace ObjectServicesConceptsCS
 		     }
             //</snippetDDL>
          }
-
-        public static void DDLTest2()
-        {
-            //<snippetDDL2>
-            String connectionString = "metadata=res://*/School.csdl|res://*/School.ssdl|res://*/School.msl;provider=System.Data.SqlClient;" +
-            "provider connection string=\"Data Source=.;Initial Catalog=SchoolTest;Integrated Security=True;MultipleActiveResultSets=True\"";
-
-            ObjectContext context = new ObjectContext(connectionString);
-            if (context.DatabaseExists())
-            {
-                // Make sure the database instance is closed.
-                context.DeleteDatabase();
-            }
-            // View the database creation script.
-            Console.WriteLine(context.CreateDatabaseScript());
-
-            // Create the new database instance based on the storage (SSDL) section
-            // of the .edmx file.
-            context.CreateDatabase();
-
-            //</snippetDDL2>
-        }
-        /*
-        public static void ObjectQueryTablePerHierarchy()
-        {
-            Console.WriteLine("Starting method 'ObjectQueryTablePerHierarchy'");
-            //<snippetObjectQueryTablePerHierarchy>
-            try
-            {
-                using (SchoolEntities context =
-                                      new SchoolEntities())
-                {
-                    int courseId = 1045;
-                    // Get all people for the supplied CourseID
-                    Course instructorQuery = context.Courses.Where(
-                        "it.CourseID = @courseID", new ObjectParameter
-                            ("courseID", courseId)).Include("People").
-                            FirstOrDefault();
-
-
-                    // Display instructors for the specified course.
-                    foreach (Instructor instructor in instructorQuery.People.
-                        OfType<Instructor>())
-                    {
-                        Console.WriteLine("Instructor: " + instructor.
-                            LastName + ", " + instructor.FirstName);
-                    }
-                }
-
-            }
-            catch (System.Data.MappingException e)
-            {
-                Console.WriteLine(e.ToString());
-            }
-            catch (System.Data.EntityException e)
-            {
-                Console.WriteLine(e.ToString());
-            }
-            //</snippetObjectQueryTablePerHierarchy>
-        }
-         */
     }
 
     #region partial methods
@@ -4066,7 +3905,7 @@ namespace ObjectServicesConceptsCS
     #endregion
     public class UpdateScenario
     {
-        //<snippetFKUpateService>
+        //<snippetFKUpdateService>
         static private StudentGrade GetOriginalValue(int ID)
         {
             StudentGrade originalItem;
@@ -4098,11 +3937,11 @@ namespace ObjectServicesConceptsCS
                 context.SaveChanges();
             }
         }
-        //</snippetFKUpateService>
+        //</snippetFKUpdateService>
 
         static public void ManipulateObjects()
         {
-            //<snippetFKUpateClient>
+            //<snippetFKUpdateClient>
             // A client calls a service to get the original object.
             StudentGrade studentGrade = GetOriginalValue(3);
             // Change the relationships.
@@ -4110,7 +3949,7 @@ namespace ObjectServicesConceptsCS
             studentGrade.StudentID = 10;
             // The client calls a method on a service to save the updates.
             SaveUpdates(studentGrade);
-            //</snippetFKUpateClient>
+            //</snippetFKUpdateClient>
         }
     }
 

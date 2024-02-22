@@ -3,14 +3,13 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-using IHost host = Host.CreateDefaultBuilder(args)
-    .ConfigureLogging(builder =>
-    {
-        builder.AddConsole()
-            .AddConsoleFormatter
-                <CustomTimePrefixingFormatter, CustomWrappingConsoleFormatterOptions>();
-    })
-    .Build();
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+
+builder.Logging.AddConsole()
+    .AddConsoleFormatter<
+        CustomTimePrefixingFormatter, CustomWrappingConsoleFormatterOptions>();
+
+using IHost host = builder.Build();
 
 ILoggerFactory loggerFactory = host.Services.GetRequiredService<ILoggerFactory>();
 ILogger<Program> logger = loggerFactory.CreateLogger<Program>();

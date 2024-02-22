@@ -13,9 +13,10 @@ helpviewer_keywords:
   - "Hungarian notation"
   - "names [.NET Framework], type names"
   - "names [.NET Framework], acronyms"
-ms.topic: reference
 ---
 # General Naming Conventions
+
+[!INCLUDE [not-current](includes/not-current.md)]
 
 This section describes general naming conventions that relate to word choice, guidelines on using abbreviations and acronyms, and recommendations on how to avoid using language-specific names.
 

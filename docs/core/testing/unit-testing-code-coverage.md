@@ -4,7 +4,6 @@ description: Learn how to use the code coverage capabilities for .NET unit tests
 author: IEvangelist
 ms.author: dapine
 ms.date: 11/11/2021
-recommendations: false
 ---
 
 # Use code coverage for unit testing
@@ -106,24 +105,18 @@ namespace XUnit.Coverlet
 
         public PrimeServiceTests() => _primeService = new PrimeService();
 
-        [
-            Theory,
-            InlineData(-1), InlineData(0), InlineData(1)
-        ]
+        [Theory]
+        [InlineData(-1), InlineData(0), InlineData(1)]
         public void IsPrime_ValuesLessThan2_ReturnFalse(int value) =>
             Assert.False(_primeService.IsPrime(value), $"{value} should not be prime");
 
-        [
-            Theory,
-            InlineData(2), InlineData(3), InlineData(5), InlineData(7)
-        ]
+        [Theory]
+        [InlineData(2), InlineData(3), InlineData(5), InlineData(7)]
         public void IsPrime_PrimesLessThan10_ReturnTrue(int value) =>
             Assert.True(_primeService.IsPrime(value), $"{value} should be prime");
 
-        [
-            Theory,
-            InlineData(4), InlineData(6), InlineData(8), InlineData(9)
-        ]
+        [Theory]
+        [InlineData(4), InlineData(6), InlineData(8), InlineData(9)]
         public void IsPrime_NonPrimesLessThan10_ReturnFalse(int value) =>
             Assert.False(_primeService.IsPrime(value), $"{value} should not be prime");
     }
@@ -169,7 +162,14 @@ There are two types of code coverage tools:
 - **DataCollectors:** DataCollectors monitor test execution and collect information about test runs. They report the collected information in various output formats, such as XML and JSON. For more information, see [your first DataCollector](https://github.com/Microsoft/vstest-docs/blob/main/docs/extensions/datacollector.md).
 - **Report generators:** Use data collected from test runs to generate reports, often as styled HTML.
 
-In this section, the focus is on data collector tools. To use Coverlet for code coverage, an existing unit test project must have the appropriate package dependencies, or alternatively rely on [.NET global tooling](../tools/global-tools.md) and the corresponding [coverlet.console](https://www.nuget.org/packages/coverlet.console) NuGet package.
+In this section, the focus is on data collector tools.
+
+.NET includes a built-in code coverage data collector, which is also available in Visual Studio. This data collector generates a binary *.coverage* file that can be used to generate reports in Visual Studio. The binary file is not human-readable, and it must be converted to a human-readable format before it can be used to generate reports outside of Visual Studio.
+
+> [!TIP]
+> The `dotnet-coverage` tool is a cross-platform tool that can be used to convert the binary coverage test results file to a human-readable format. For more information, see [dotnet-coverage](../additional-tools/dotnet-coverage.md).
+
+[Coverlet](https://github.com/coverlet-coverage/coverlet) is an open-source alternative to the built-in collector. It generates test results as human-readable Cobertura XML files, which can then be used to generate HTML reports. To use Coverlet for code coverage, an existing unit test project must have the appropriate package dependencies, or alternatively rely on [.NET global tooling](../tools/global-tools.md) and the corresponding [coverlet.console](https://www.nuget.org/packages/coverlet.console) NuGet package.
 
 ## Integrate with .NET test
 
@@ -181,7 +181,7 @@ cd XUnit.Coverlet.Collector && dotnet test --collect:"XPlat Code Coverage"
 ```
 
 > [!NOTE]
-> The `"XPlat Code Coverage"` argument is a friendly name that corresponds to the data collectors from Coverlet. This name is required but is case insensitive.
+> The `"XPlat Code Coverage"` argument is a friendly name that corresponds to the data collectors from Coverlet. This name is required but is case insensitive. To use .NET's built-in Code Coverage data collector, use `"Code Coverage"`.
 
 As part of the `dotnet test` run, a resulting *coverage.cobertura.xml* file is output to the *TestResults* directory. The XML file contains the results. This is a cross-platform option that relies on the .NET CLI, and it is great for build systems where MSBuild is not available.
 

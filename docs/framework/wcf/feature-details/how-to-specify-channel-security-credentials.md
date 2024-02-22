@@ -23,7 +23,7 @@ The Windows Communication Foundation (WCF) Service Moniker allows COM applicatio
   
 4. Add `bindingNamespace="http://Microsoft.ServiceModel.Samples"` to the endpoint tag in the App.config for the service.  
   
-5. Build the Message Security Sample and run Service.exe. Use Internet Explorer and browse to the service's URI (`http://localhost:8000/ServiceModelSamples/Service`) to ensure that the service is working.  
+5. Build the Message Security Sample and run Service.exe. Browse to the service's URI (`http://localhost:8000/ServiceModelSamples/Service`) to ensure that the service is working.  
   
 6. Open Visual Basic 6.0 and create a new Standard .exe file. Add a button to the form and double-click the button to add the following code to the Click handler:  
   

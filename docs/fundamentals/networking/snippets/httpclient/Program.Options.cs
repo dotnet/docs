@@ -14,9 +14,9 @@
 
         foreach (var header in response.Content.Headers)
         {
-            WriteLine($"{header.Key}: {string.Join(", ", header.Value)}");
+            Console.WriteLine($"{header.Key}: {string.Join(", ", header.Value)}");
         }
-        WriteLine();
+        Console.WriteLine();
 
         // Expected output
         //   OPTIONS https://www.example.com/ HTTP/1.1

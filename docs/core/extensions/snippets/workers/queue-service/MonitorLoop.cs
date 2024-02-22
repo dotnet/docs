@@ -1,24 +1,15 @@
 ﻿namespace App.QueueService;
 
-public sealed class MonitorLoop
+public sealed class MonitorLoop(
+    IBackgroundTaskQueue taskQueue,
+    ILogger<MonitorLoop> logger,
+    IHostApplicationLifetime applicationLifetime)
 {
-    private readonly IBackgroundTaskQueue _taskQueue;
-    private readonly ILogger<MonitorLoop> _logger;
-    private readonly CancellationToken _cancellationToken;
-
-    public MonitorLoop(
-        IBackgroundTaskQueue taskQueue,
-        ILogger<MonitorLoop> logger,
-        IHostApplicationLifetime applicationLifetime)
-    {
-        _taskQueue = taskQueue;
-        _logger = logger;
-        _cancellationToken = applicationLifetime.ApplicationStopping;
-    }
+    private readonly CancellationToken _cancellationToken = applicationLifetime.ApplicationStopping;
 
     public void StartMonitorLoop()
     {
-        _logger.LogInformation($"{nameof(MonitorAsync)} loop is starting.");
+        logger.LogInformation($"{nameof(MonitorAsync)} loop is starting.");
 
         // Run a console user input loop in a background thread
         Task.Run(async () => await MonitorAsync());
@@ -32,7 +23,7 @@ public sealed class MonitorLoop
             if (keyStroke.Key == ConsoleKey.W)
             {
                 // Enqueue a background work item
-                await _taskQueue.QueueBackgroundWorkItemAsync(BuildWorkItemAsync);
+                await taskQueue.QueueBackgroundWorkItemAsync(BuildWorkItemAsync);
             }
         }
     }
@@ -45,7 +36,7 @@ public sealed class MonitorLoop
         int delayLoop = 0;
         var guid = Guid.NewGuid();
 
-        _logger.LogInformation("Queued work item {Guid} is starting.", guid);
+        logger.LogInformation("Queued work item {Guid} is starting.", guid);
 
         while (!token.IsCancellationRequested && delayLoop < 3)
         {
@@ -60,15 +51,16 @@ public sealed class MonitorLoop
 
             ++ delayLoop;
 
-            _logger.LogInformation("Queued work item {Guid} is running. {DelayLoop}/3", guid, delayLoop);
+            logger.LogInformation("Queued work item {Guid} is running. {DelayLoop}/3", guid, delayLoop);
         }
 
-        string format = delayLoop switch
+        if (delayLoop is 3)
         {
-            3 => "Queued Background Task {Guid} is complete.",
-            _ => "Queued Background Task {Guid} was cancelled."
-        };
-
-        _logger.LogInformation(format, guid);
+            logger.LogInformation("Queued Background Task {Guid} is complete.", guid);
+        }
+        else
+        {
+            logger.LogInformation("Queued Background Task {Guid} was cancelled.", guid);
+        }
     }
 }

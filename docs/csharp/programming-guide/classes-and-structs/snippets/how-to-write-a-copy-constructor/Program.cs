@@ -1,4 +1,4 @@
-﻿class Person
+﻿public sealed class Person
 {
     // Copy constructor.
     public Person(Person previousPerson)

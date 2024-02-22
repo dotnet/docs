@@ -8,11 +8,11 @@ When enabling <xref:System.Web.SessionState.SessionStateMode.StateServer?display
 
 Be sure to upgrade .NET Framework versions on web servers that share state at the same time.
 
-| Name    | Value       |
-|:--------|:------------|
-| Scope   |Edge|
-|Version|4.5|
-|Type|Runtime
+|             | Value   |
+|:------------|:--------|
+| **Scope**   | Edge    |
+| **Version** | 4.5     |
+| **Type**    | Runtime |
 
 #### Affected APIs
 

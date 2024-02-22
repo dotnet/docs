@@ -12,6 +12,8 @@ ms.assetid: 7e93fe73-af93-46b5-9f63-32f761ee40cf
 
 This topic discusses features new to Windows Communication Foundation (WCF) version 4.5.
 
+[!INCLUDE[](~/includes/wcf_grpc_heading.md)]
+
 ## WCF Simplification Features
 
 Much work has been done to make WCF 4.5 applications easier to develop and maintain. For more information, see [WCF Simplification Features](wcf-simplification-features.md).

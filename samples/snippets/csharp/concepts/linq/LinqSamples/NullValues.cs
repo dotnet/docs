@@ -1,11 +1,12 @@
-﻿using LinqSamples.Joins;
+﻿namespace LinqSamples;
 
-namespace LinqSamples;
+record Product(string Name, int CategoryID);
+record Category(string Name, int ID);
 
 public static class NullValues
 {
-    static readonly Category[] categories = { };
-    static readonly Product[] products = { };
+    static readonly Category[] categories = [];
+    static readonly Product[] products = [];
 
     public static void NullValues1()
     {

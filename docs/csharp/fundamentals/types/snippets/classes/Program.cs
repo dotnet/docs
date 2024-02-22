@@ -1,44 +1,45 @@
-using System;
+﻿
+// <InstantiateClass>
+Customer object1 = new Customer();
+// </InstantiateClass>
 
+// <DeclareVariable>
+Customer object2;
+// </DeclareVariable>
+
+
+// <AssignReference>
+Customer object3 = new Customer();
+Customer object4 = object3;
+// </AssignReference>
+
+/* 
+var p1 = new Person(); // Error! Required properties not set
+*/
+var p2 = new Person() {FirstName = "Grace", LastName = "Hopper" };
+
+// <ClassDeclaration>
+//[access modifier] - [class] - [identifier]
+public class Customer
+{
+   // Fields, properties, methods and events go here...
+}
+// </ClassDeclaration>
+
+// <RequiredProperties>
 public class Person
 {
-    // Constructor that takes no arguments:
-    public Person()
-    {
-        Name = "unknown";
-    }
-
-    // Constructor that takes one argument:
-    public Person(string name)
-    {
-        Name = name;
-    }
-
-    // Auto-implemented readonly property:
-    public string Name { get; }
-
-    // Method that overrides the base class (System.Object) implementation.
-    public override string ToString()
-    {
-        return Name;
-    }
+    public required string LastName { get; set; }
+    public required string FirstName { get; set; }
 }
-class TestPerson
+// </RequiredProperties>
+
+public class Employee {}
+
+// <DerivedClass>
+public class Manager : Employee
 {
-    static void Main()
-    {
-        // Call the constructor that has no parameters.
-        var person1 = new Person();
-        Console.WriteLine(person1.Name);
-
-        // Call the constructor that has one parameter.
-        var person2 = new Person("Sarah Jones");
-        Console.WriteLine(person2.Name);
-        // Get the string representation of the person2 instance.
-        Console.WriteLine(person2);
-    }
+    // Employee fields, properties, methods and events are inherited
+    // New Manager fields, properties, methods and events go here...
 }
-// Output:
-// unknown
-// Sarah Jones
-// Sarah Jones
+// </DerivedClass>

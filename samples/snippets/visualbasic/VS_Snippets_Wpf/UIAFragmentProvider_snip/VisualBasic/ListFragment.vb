@@ -4,30 +4,30 @@
 ' * File: ListFragment.cs
 ' *
 ' * Description: Implements a custom control that supports UI Automation.
-' * 
-' * The control is a simple list box that manages its own items. Its primary purpose is to demonstrate how to 
-' * implement a root fragment (the list box itself) and child fragments (the list items) for UI Automation. 
-' * The functionality of the control itself is very limited: it will display a small number of text items 
-' * and manage the selection by processing mouse clicks and arrow keys. The only control patterns it supports 
+' *
+' * The control is a simple list box that manages its own items. Its primary purpose is to demonstrate how to
+' * implement a root fragment (the list box itself) and child fragments (the list items) for UI Automation.
+' * The functionality of the control itself is very limited: it will display a small number of text items
+' * and manage the selection by processing mouse clicks and arrow keys. The only control patterns it supports
 ' * are SelectionPattern and SelectionItemPattern. A list box in a real application would support more patterns
 ' * such as ValuePattern and ScrollPattern.
-' * 
+' *
 ' * See ProviderForm.cs for a full description of this sample.
-' *   
-' * 
+' *
+' *
 ' *  This file is part of the Microsoft WinfFX SDK Code Samples.
-' * 
+' *
 ' *  Copyright (C) Microsoft Corporation.  All rights reserved.
-' * 
+' *
 ' * This source code is intended only as a supplement to Microsoft
 ' * Development Tools and/or on-line documentation.  See these other
 ' * materials for detailed information regarding Microsoft code samples.
-' * 
+' *
 ' * THIS CODE AND INFORMATION ARE PROVIDED AS IS WITHOUT WARRANTY OF ANY
 ' * KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
 ' * IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
 ' * PARTICULAR PURPOSE.
-' * 
+' *
 ' ************************************************************************************************
 
 Imports System.Collections.Generic
@@ -139,7 +139,7 @@ Class ParentList
 
 
     ' DON'T USE THIS SNIPPET -- PROBABLY NOT RAISING CORRECT EVENTS
-    ' <Snippet118>  
+    ' <Snippet118>
     ''' <summary>
     ''' Selects an item in the myItems collection.
     ''' </summary>
@@ -156,7 +156,7 @@ Class ParentList
         ElseIf index < 0 Then
             mySelection = -1
             Return
-            ' If within range, clear the Selected property on the current item 
+            ' If within range, clear the Selected property on the current item
             ' and set it on the new item.
         Else
             Dim newItem As MyListItem
@@ -190,7 +190,7 @@ Class ParentList
         End If
 
     End Sub
-    ' </Snippet118>      
+    ' </Snippet118>
 #End Region
 
 
@@ -332,7 +332,7 @@ Class ParentList
             Return MyBase.ProcessCmdKey(msg, keyData)
         End If
 
-    End Function 'ProcessCmdKey 
+    End Function 'ProcessCmdKey
 
 #End Region
 
@@ -361,8 +361,8 @@ Class ParentList
     ''' <param name="patternId">ID of the pattern.</param>
     ''' <returns>Object that implements IInvokeProvider.</returns>
     ''' <remarks>
-    ''' In this case, the ISelectionProvider interface is implemented in another provider-defined class, 
-    ''' ListPattern. However, it could be implemented in the base provider class, in which case the 
+    ''' In this case, the ISelectionProvider interface is implemented in another provider-defined class,
+    ''' ListPattern. However, it could be implemented in the base provider class, in which case the
     ''' method would simply return "this".
     ''' </remarks>
     Function GetPatternProvider(ByVal patternId As Integer) As Object _
@@ -471,7 +471,7 @@ Class ParentList
     ''' <summary>
     ''' Gets the runtime identifier of the UI Automation element.
     ''' </summary>
-    ''' <returns>Fragement roots return null.</returns>
+    ''' <returns>Fragment roots return null.</returns>
     Function GetRuntimeId() As Integer() _
         Implements IRawElementProviderFragment.GetRuntimeId
         Return Nothing
@@ -528,7 +528,7 @@ Class ParentList
         Dim pointX As Integer = CInt(x)
         Dim pointY As Integer = CInt(y)
 
-        ' The RectangleToScreen method on the control can't be called directly from 
+        ' The RectangleToScreen method on the control can't be called directly from
         ' this thread, so use delegation.
         Dim converterDelegate As MyDelegate = New MyDelegate(AddressOf Me.RectangleToScreen)
         Dim screenRectangle As Rectangle = DirectCast(Me.Invoke(converterDelegate, _
@@ -562,7 +562,7 @@ Class ParentList
         Else
             Return Nothing
         End If
-    End Function 'IRawElementProviderFragmentRoot.GetFocus 
+    End Function 'IRawElementProviderFragmentRoot.GetFocus
     ' </Snippet107>
 
 #End Region
@@ -571,7 +571,7 @@ Class ParentList
 
     Dim subscribedProperties As ArrayList = New ArrayList()
 
-    ' <Snippet124> 
+    ' <Snippet124>
     Sub AdviseEventAdded(ByVal eventId As Integer, ByVal properties() As Integer) _
         Implements IRawElementProviderAdviseEvents.AdviseEventAdded
 

@@ -29,14 +29,14 @@ Objects that implement <xref:System.IDisposable?displayProperty=fullName> or <xr
 
 ## The using statement
 
-The [`using` statement](../../csharp/language-reference/keywords/using-statement.md) in C# and the [`Using` statement](../../visual-basic/language-reference/statements/using-statement.md) in Visual Basic simplify the code that you must write to cleanup an object. The `using` statement obtains one or more resources, executes the statements that you specify, and automatically disposes of the object. However, the `using` statement is useful only for objects that are used within the scope of the method in which they are constructed.
+The [`using` statement](../../csharp/language-reference/statements/using.md) in C# and the [`Using` statement](../../visual-basic/language-reference/statements/using-statement.md) in Visual Basic simplify the code that you must write to cleanup an object. The `using` statement obtains one or more resources, executes the statements that you specify, and automatically disposes of the object. However, the `using` statement is useful only for objects that are used within the scope of the method in which they are constructed.
 
 The following example uses the `using` statement to create and release a <xref:System.IO.StreamReader?displayProperty=nameWithType> object.
 
 :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.disposable/cs/UsingStatement.cs":::
 :::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.disposable/vb/UsingStatement.vb":::
 
-A [`using` declaration](../../csharp/language-reference/keywords/using-statement.md) is an alternative syntax available where the braces are removed, and scoping is implicit.
+A [`using` declaration](../../csharp/language-reference/statements/using.md) is an alternative syntax available where the braces are removed, and scoping is implicit.
 
 :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.disposable/cs/UsingDeclaration.cs":::
 
@@ -65,10 +65,10 @@ You can follow this basic pattern if you choose to implement or must implement a
 
 ## IDisposable instance members
 
-If a class holds an <xref:System.IDisposable> implementation as an instance member, either a field or a property, the class should also implement <xref:System.IDisposable>. For more information, see [implement a cascade dispose](implementing-dispose.md#cascade-dispose-calls).
+If a class owns an instance field or property and its type implements <xref:System.IDisposable>, the class should also implement <xref:System.IDisposable>. For more information, see [Implement a cascade dispose](implementing-dispose.md#cascade-dispose-calls).
 
 ## See also
 
 - [Cleaning up unmanaged resources](unmanaged.md)
-- [using Statement (C# Reference)](../../csharp/language-reference/keywords/using-statement.md)
+- [using Statement (C# Reference)](../../csharp/language-reference/statements/using.md)
 - [Using Statement (Visual Basic)](../../visual-basic/language-reference/statements/using-statement.md)

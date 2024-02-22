@@ -4,23 +4,24 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-using IHost host = Host.CreateDefaultBuilder(args)
-    .ConfigureServices((context, services) =>
-    {
-        string? httpClientName = context.Configuration["TodoHttpClientName"];
-        services.AddHttpClient(
-            httpClientName ?? "",
-            client =>
-            {
-                // Set the base address of the named client.
-                client.BaseAddress = new Uri("https://jsonplaceholder.typicode.com/");
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
 
-                // Add a user-agent default request header.
-                client.DefaultRequestHeaders.UserAgent.ParseAdd("dotnet-docs");
-            });
-        services.AddTransient<TodoService>();
-    })
-    .Build();
+string? httpClientName = builder.Configuration["TodoHttpClientName"];
+ArgumentException.ThrowIfNullOrEmpty(httpClientName);
+
+builder.Services.AddHttpClient(
+    httpClientName,
+    client =>
+    {
+        // Set the base address of the named client.
+        client.BaseAddress = new Uri("https://jsonplaceholder.typicode.com/");
+
+        // Add a user-agent default request header.
+        client.DefaultRequestHeaders.UserAgent.ParseAdd("dotnet-docs");
+    });
+builder.Services.AddTransient<TodoService>();
+
+using IHost host = builder.Build();
 
 TodoService todoService =
     host.Services.GetRequiredService<TodoService>();

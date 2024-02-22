@@ -88,7 +88,7 @@ The highlights of Windows Forms improvements in .NET Framework 4.8.1 are:
 - [Text pattern support](/windows/win32/winauto/uiauto-implementingtextandtextrange)– Windows Forms added support for the UIA Text Pattern. This pattern enables assistive technology to traverse the content of a TextBox or similar text-based control letter by letter. It enables text to be selected within the control and changed, and new text to be inserted at the cursor. Windows Forms added this support for TextBox, DataGridView cells, ComboBox controls, and more.
 - Address contrast issues– In several controls, Windows Forms has changed the contrast ratio of selection rectangles to be darker and more visible.
 - Fixed several DataGridView issues:
-  
+
   - The scrollbar names have been updated to be consistent.
   - Narrator is now able to focus on empty DataGridView cells.
   - Developers are able to set the localized control type property for Custom DataGridView cells.
@@ -138,7 +138,7 @@ By default in applications that target .NET Framework 4.8, the following managed
 - <xref:System.Security.Cryptography.RIPEMD160Managed>
 - <xref:System.Security.Cryptography.SHA256Managed>
 
-Instead, these classes redirect cryptographic operations to a system cryptography library. This change effectively removes a potentially confusing difference between developer environments and production environments and makes native components and managed components operate under the same cryptographic policy. Applications that depend on these exceptions can restore the previous behavior by setting the AppContext switch `Switch.System.Security.Cryptography.UseLegacyFipsThrow` to `true`. For more information, see [Managed cryptography classes do not throw a CryptographyException in FIPS mode](../migration-guide/retargeting/4.7.2-4.8.md#managed-cryptography-classes-do-not-throw-a-cryptographyexception-in-fips-mode).
+Instead, these classes redirect cryptographic operations to a system cryptography library. This change effectively removes a potentially confusing difference between developer environments and production environments and makes native components and managed components operate under the same cryptographic policy. Applications that depend on these exceptions can restore the previous behavior by setting the AppContext switch `Switch.System.Security.Cryptography.UseLegacyFipsThrow` to `true`. For more information, see [Managed cryptography classes do not throw a CryptographyException in FIPS mode](../migration-guide/retargeting/4.8.x.md#managed-cryptography-classes-do-not-throw-a-cryptographyexception-in-fips-mode).
 
 **Use of updated version of ZLib**
 
@@ -677,7 +677,7 @@ Starting with .NET Framework 4.7.1, <xref:System.ValueTuple?displayProperty=name
 
 **Support for read-only references**
 
-.NET Framework 4.7.1 adds the <xref:System.Runtime.CompilerServices.IsReadOnlyAttribute?displayProperty=nameWithType>. This attribute is used by language compilers to mark members that have read-only ref return types or parameters. For more information, see "Compiler -- Support for ReadOnlyReferences" in the [.NET Framework 4.7.1 Runtime and Compiler Features](https://devblogs.microsoft.com/dotnet/net-framework-4-7-1-runtime-and-compiler-features/) blog post. For information on ref return values, see [Ref return values](../../csharp/language-reference/statements/jump-statements.md#ref-returns) and [ref locals](../../csharp/language-reference/statements/declarations.md#ref-locals) and [Ref return values (Visual Basic)](../../visual-basic/programming-guide/language-features/procedures/ref-return-values.md).
+.NET Framework 4.7.1 adds the <xref:System.Runtime.CompilerServices.IsReadOnlyAttribute?displayProperty=nameWithType>. This attribute is used by language compilers to mark members that have read-only ref return types or parameters. For more information, see "Compiler -- Support for ReadOnlyReferences" in the [.NET Framework 4.7.1 Runtime and Compiler Features](https://devblogs.microsoft.com/dotnet/net-framework-4-7-1-runtime-and-compiler-features/) blog post. For information on ref return values, see [Ref return values](../../csharp/language-reference/statements/jump-statements.md#ref-returns) and [ref locals](../../csharp/language-reference/statements/declarations.md#reference-variables) and [Ref return values (Visual Basic)](../../visual-basic/programming-guide/language-features/procedures/ref-return-values.md).
 
 <a name="clr"></a>
 
@@ -1065,18 +1065,18 @@ End Function
 
 **SignedXml support for SHA-2 hashing**
 
-.NET Framework 4.6.2 adds support to  the <xref:System.Security.Cryptography.Xml.SignedXml> class for RSA-SHA256, RSA-SHA384, and RSA-SHA512 PKCS#1 signature methods, and SHA256, SHA384, and SHA512 reference digest algorithms.
+.NET Framework 4.6.2 adds support to the <xref:System.Security.Cryptography.Xml.SignedXml> class for RSA-SHA256, RSA-SHA384, and RSA-SHA512 PKCS#1 signature methods, and SHA256, SHA384, and SHA512 reference digest algorithms.
 
 The URI constants are all exposed on <xref:System.Security.Cryptography.Xml.SignedXml>:
 
 |SignedXml field|Constant|
 |---------------------|--------------|
-|<xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigSHA256Url>|"http://www.w3.org/2001/04/xmlenc#sha256"|
-|<xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigRSASHA256Url>|"http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"|
-|<xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigSHA384Url>|"http://www.w3.org/2001/04/xmldsig-more#sha384"|
-|<xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigRSASHA384Url>|"http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"|
-|<xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigSHA512Url>|"http://www.w3.org/2001/04/xmlenc#sha512"|
-|<xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigRSASHA512Url>|"http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"|
+|<xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigSHA256Url>|`"http://www.w3.org/2001/04/xmlenc#sha256"`|
+|<xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigRSASHA256Url>|`"http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"`|
+|<xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigSHA384Url>|`"http://www.w3.org/2001/04/xmldsig-more#sha384"`|
+|<xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigRSASHA384Url>|`"http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"`|
+|<xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigSHA512Url>|`"http://www.w3.org/2001/04/xmlenc#sha512"`|
+|<xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigRSASHA512Url>|`"http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"`|
 
  Any programs that have registered a custom <xref:System.Security.Cryptography.SignatureDescription> handler into <xref:System.Security.Cryptography.CryptoConfig> to add support for these algorithms will continue to function as they did in the past, but since there are now platform defaults, the <xref:System.Security.Cryptography.CryptoConfig> registration is no longer necessary.
 

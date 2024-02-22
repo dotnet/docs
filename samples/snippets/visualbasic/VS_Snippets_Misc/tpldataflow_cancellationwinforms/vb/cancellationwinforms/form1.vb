@@ -43,7 +43,7 @@ Namespace CancellationWinForms
         Public Sub New()
             InitializeComponent()
 
-            ' Create the UI task scheduler from the current sychronization
+            ' Create the UI task scheduler from the current synchronization
             ' context.
             uiTaskScheduler = TaskScheduler.FromCurrentSynchronizationContext()
         End Sub
@@ -54,12 +54,12 @@ Namespace CancellationWinForms
             ' Create the cancellation source.
             cancellationSource = New CancellationTokenSource()
 
-            ' Create the first node in the pipeline. 
+            ' Create the first node in the pipeline.
             startWork = New TransformBlock(Of WorkItem, WorkItem)(Function(workItem)
                                                                       ' Perform some work.
-                                                                      ' Decrement the progress bar that tracks the count of 
+                                                                      ' Decrement the progress bar that tracks the count of
                                                                       ' active work items in this stage of the pipeline.
-                                                                      ' Increment the progress bar that tracks the count of 
+                                                                      ' Increment the progress bar that tracks the count of
                                                                       ' active work items in the next stage of the pipeline.
                                                                       ' Send the work item to the next stage of the pipeline.
                                                                       workItem.DoWork(250)
@@ -69,12 +69,12 @@ Namespace CancellationWinForms
                                                                   End Function,
             New ExecutionDataflowBlockOptions With {.CancellationToken = cancellationSource.Token})
 
-            ' Create the second, and final, node in the pipeline. 
+            ' Create the second, and final, node in the pipeline.
             completeWork = New ActionBlock(Of WorkItem)(Sub(workItem)
                                                             ' Perform some work.
-                                                            ' Decrement the progress bar that tracks the count of 
+                                                            ' Decrement the progress bar that tracks the count of
                                                             ' active work items in this stage of the pipeline.
-                                                            ' Increment the progress bar that tracks the overall 
+                                                            ' Increment the progress bar that tracks the overall
                                                             ' count of completed work items.
                                                             workItem.DoWork(1000)
                                                             decrementProgress.Post(toolStripProgressBar2)
@@ -144,7 +144,7 @@ Namespace CancellationWinForms
             Catch e1 As OperationCanceledException
             End Try
 
-            ' Increment the progress bar that tracks the number of cancelled 
+            ' Increment the progress bar that tracks the number of cancelled
             ' work items by the number of active work items.
             toolStripProgressBar4.Value += toolStripProgressBar1.Value
             toolStripProgressBar4.Value += toolStripProgressBar2.Value
@@ -153,7 +153,7 @@ Namespace CancellationWinForms
             toolStripProgressBar1.Value = 0
             toolStripProgressBar2.Value = 0
 
-            ' Enable the Add Work Items button.      
+            ' Enable the Add Work Items button.
             toolStripButton1.Enabled = True
         End Sub
         ' </snippet6>

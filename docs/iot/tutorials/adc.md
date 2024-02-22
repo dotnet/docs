@@ -5,8 +5,6 @@ author: camsoper
 ms.author: casoper
 ms.date: 12/05/2022
 ms.topic: tutorial
-ms.prod: dotnet
-recommendations: false
 ---
 <!--markdownlint-disable DOCSMD011 -->
 # Read values from an analog-to-digital converter
@@ -15,15 +13,19 @@ An analog-to-digital converter (ADC) is a device that can read an analog input v
 
 In this topic, you will use .NET to read values from an ADC as you modulate the input voltage with a potentiometer.
 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?show=dotnet-iot-for-beginners&ep=convert-analog-signals-to-digital-data-with-dotnet-dotnet-iot-for-beginners]
+
 ## Prerequisites
 
-- [!INCLUDE [prereq-rpi](../includes/prereq-rpi.md)]
+- [!INCLUDE [prereq-sbc](../includes/prereq-sbc.md)]
 - [MCP3008](https://www.microchip.com/wwwproducts/MCP3008) analog-to-digital converter
 - Three-pin potentiometer
 - Breadboard
 - Jumper wires
 - Raspberry Pi GPIO breakout board (optional/recommended)
 - [!INCLUDE [tutorial-prereq-dotnet](../includes/tutorial-prereq-dotnet.md)]
+
+[!INCLUDE [rpi-note](../includes/rpi-note.md)]
 
 [!INCLUDE [prepare-pi-spi](../includes/prepare-pi-spi.md)]
 
@@ -51,8 +53,7 @@ Refer to the following pinout diagrams as needed:
 
 | MCP3008  | Raspberry Pi GPIO |
 |----------|-------------------|
-| :::image type="content" source="../media/mcp3008-diagram-thumb.png" alt-text="A diagram showing the pinout of the MCP3008" lightbox="../media/mcp3008-diagram.png"::: | :::image type="content" source="../media/gpio-pinout-diagram-thumb.png" alt-text="A diagram showing the pinout of the Raspberry Pi GPIO header. Image courtesy Raspberry Pi Foundation." lightbox="../media/gpio-pinout-diagram.png":::<br />[Image courtesy Raspberry Pi Foundation](https://www.raspberrypi.com/documentation/computers/os.html#gpio-and-the-40-pin-header).
- |
+| :::image type="content" source="../media/mcp3008-diagram-thumb.png" alt-text="A diagram showing the pinout of the MCP3008" lightbox="../media/mcp3008-diagram.png"::: | :::image type="content" source="../media/gpio-pinout-diagram-thumb.png" alt-text="A diagram showing the pinout of the Raspberry Pi GPIO header. Image courtesy Raspberry Pi Foundation." lightbox="../media/gpio-pinout-diagram.png":::<br />[Image courtesy Raspberry Pi Foundation](https://www.raspberrypi.com/documentation/computers/os.html#gpio-and-the-40-pin-header). |
 
 [!INCLUDE [gpio-breakout](../includes/gpio-breakout.md)]
 
@@ -75,13 +76,15 @@ Complete the following steps in your preferred development environment:
     In the preceding code:
 
     - `hardwareSpiSettings` is set to a new instance of `SpiConnectionSettings`. The constructor sets the `busId` parameter to 0 and the `chipSelectLine` parameter to 0.
-    - A [using declaration](../../csharp/language-reference/keywords/using-statement.md) creates an instance of `SpiDevice` by calling `SpiDevice.Create` and passing in `hardwareSpiSettings`. This `SpiDevice` represents the SPI bus. The `using` declaration ensures the object is disposed and hardware resources are released properly.
+    - A [using declaration](../../csharp/language-reference/statements/using.md) creates an instance of `SpiDevice` by calling `SpiDevice.Create` and passing in `hardwareSpiSettings`. This `SpiDevice` represents the SPI bus. The `using` declaration ensures the object is disposed and hardware resources are released properly.
     - Another `using` declaration creates an instance of `Mcp3008` and passes the `SpiDevice` into the constructor.
     - A `while` loop runs indefinitely. Each iteration:
+        1. Clears the console.
         1. Reads the value of CH0 on the ADC by calling `mcp.Read(0)`.
-        1. Divides the value by 10.24. The MCP3008 is a 10-bit ADC, which means it returns 1024 possible values ranging 0-1023. Dividing the value by 10.24 represents the value as a percentage.
-        1. Rounds the value to the nearest integer.
+        1. Writes the raw value to the console.
         1. Writes the value to the console formatted as a percentage.
+            - To calculate the percentage, the value is divided by 10.23. The MCP3008 is a 10-bit ADC, which means it returns 1024 possible values ranging 0-1023. Dividing the value by 10.23 represents the value as a percentage.
+            - The percentage is rounded to the nearest 0.1.
         1. Sleeps 500 ms.
 
 1. [!INCLUDE [tutorial-build](../includes/tutorial-build.md)]

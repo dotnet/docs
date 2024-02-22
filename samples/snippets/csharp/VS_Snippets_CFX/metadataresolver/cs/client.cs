@@ -66,7 +66,7 @@ public class Client
 
             // <snippet3>
             // Get metadata documents.
-            Console.WriteLine("URI of the metadata documents retreived:");
+            Console.WriteLine("URI of the metadata documents retrieved:");
             MetadataExchangeClient metaTransfer
               = new MetadataExchangeClient(httpGetMetaAddress.Uri, MetadataExchangeClientMode.HttpGet);
             metaTransfer.ResolveMetadataReferences = true;
@@ -137,7 +137,7 @@ SampleMethodResponse
 SampleMethodResponse
 SampleMethodResponse
 
-URI of the metadata documents retreived:
+URI of the metadata documents retrieved:
 http://schemas.xmlsoap.org/wsdl/ : http://tempuri.org/
 http://schemas.xmlsoap.org/wsdl/ : http://Microsoft.WCF.Documentation
 http://www.w3.org/2001/XMLSchema : http://schemas.microsoft.com/2003/10/Serialization/

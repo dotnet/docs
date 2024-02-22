@@ -14,24 +14,24 @@ Polly is a .NET library that provides resilience and transient-fault handling ca
 
 The following steps show how you can use Http retries with Polly integrated into `IHttpClientFactory`, which is explained in the previous section.
 
-**Reference the .NET 6 packages**
+**Install .NET packages**
 
-`IHttpClientFactory` is available since .NET Core 2.1, however, we recommend you use the latest .NET 6 packages from NuGet in your project. You typically also need to reference the extension package `Microsoft.Extensions.Http.Polly`.
+First, you will need to install the `Microsoft.Extensions.Http.Polly` package.
 
-**Configure a client with Polly's Retry policy, in Startup**
+- [Install with Visual Studio](/nuget/consume-packages/install-use-packages-visual-studio)
+- [Install with dotnet CLI](/nuget/consume-packages/install-use-packages-dotnet-cli)
+- [Install with nuget.exe CLI](/nuget/consume-packages/install-use-packages-nuget-cli)
+- [Install with Package Manager Console (PowerShell)](/nuget/consume-packages/install-use-packages-powershell)
 
-As shown in previous sections, you need to define a named or typed client HttpClient configuration in your standard `Startup.ConfigureServices(...)` method, but now, you add incremental code specifying the policy for the Http retries with exponential backoff, as below:
+**Reference the .NET 8 packages**
 
-```csharp
-//ConfigureServices()  - Startup.cs
-services.AddHttpClient<IBasketService, BasketService>()
-        .SetHandlerLifetime(TimeSpan.FromMinutes(5))  //Set lifetime to five minutes
-        .AddPolicyHandler(GetRetryPolicy());
-```
+`IHttpClientFactory` is available since .NET Core 2.1, however, we recommend you use the latest .NET 8 packages from NuGet in your project. You typically also need to reference the extension package `Microsoft.Extensions.Http.Polly`.
+
+**Configure a client with Polly's Retry policy, in app startup**
 
 The **AddPolicyHandler()** method is what adds policies to the `HttpClient` objects you'll use. In this case, it's adding a Polly's policy for Http Retries with exponential backoff.
 
-To have a more modular approach, the Http Retry Policy can be defined in a separate method within the `Startup.cs` file, as shown in the following code:
+To have a more modular approach, the Http Retry Policy can be defined in a separate method within the _Program.cs_ file, as shown in the following code:
 
 ```csharp
 static IAsyncPolicy<HttpResponseMessage> GetRetryPolicy()
@@ -42,6 +42,15 @@ static IAsyncPolicy<HttpResponseMessage> GetRetryPolicy()
         .WaitAndRetryAsync(6, retryAttempt => TimeSpan.FromSeconds(Math.Pow(2,
                                                                     retryAttempt)));
 }
+```
+
+As shown in previous sections, you need to define a named or typed client HttpClient configuration in your standard _Program.cs_ app configuration. Now you add incremental code specifying the policy for the Http retries with exponential backoff, as follows:
+
+```csharp
+// Program.cs
+builder.Services.AddHttpClient<IBasketService, BasketService>()
+        .SetHandlerLifetime(TimeSpan.FromMinutes(5))  //Set lifetime to five minutes
+        .AddPolicyHandler(GetRetryPolicy());
 ```
 
 With Polly, you can define a Retry policy with the number of retries, the exponential backoff configuration, and the actions to take when there's an HTTP exception, such as logging the error. In this case, the policy is configured to try six times with an exponential retry, starting at two seconds.
@@ -61,19 +70,19 @@ var retryPolicy = Policy
 
 ## Additional resources
 
-- **Retry pattern**  
+- **Retry pattern**
   [https://learn.microsoft.com/azure/architecture/patterns/retry](/azure/architecture/patterns/retry)
 
-- **Polly and IHttpClientFactory**  
+- **Polly and IHttpClientFactory**
   <https://github.com/App-vNext/Polly/wiki/Polly-and-HttpClientFactory>
 
-- **Polly (.NET resilience and transient-fault-handling library)**  
+- **Polly (.NET resilience and transient-fault-handling library)**
   <https://github.com/App-vNext/Polly>
 
-- **Polly: Retry with Jitter**  
+- **Polly: Retry with Jitter**
   <https://github.com/App-vNext/Polly/wiki/Retry-with-jitter>
 
-- **Marc Brooker. Jitter: Making Things Better With Randomness**  
+- **Marc Brooker. Jitter: Making Things Better With Randomness**
   <https://brooker.co.za/blog/2015/03/21/backoff.html>
 
 >[!div class="step-by-step"]

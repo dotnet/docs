@@ -4,7 +4,7 @@ using GitHubIssueClassification;
 // </SnippetAddUsings>
 
 // <SnippetDeclareGlobalVariables>
-string _appPath = Path.GetDirectoryName(Environment.GetCommandLineArgs()[0]);
+string _appPath = Path.GetDirectoryName(Environment.GetCommandLineArgs()[0]) ?? ".";
 string _trainDataPath = Path.Combine(_appPath, "..", "..", "..", "Data", "issues_train.tsv");
 string _testDataPath = Path.Combine(_appPath, "..", "..", "..", "Data", "issues_test.tsv");
 string _modelPath = Path.Combine(_appPath, "..", "..", "..", "Models", "model.zip");

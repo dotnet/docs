@@ -3,9 +3,8 @@ title: "Tutorial: Create a GitHub Action with .NET"
 description: Learn how to create a GitHub Action with a containerized .NET app.
 author: IEvangelist
 ms.author: dapine
-ms.date: 11/16/2022
+ms.date: 12/14/2023
 ms.topic: tutorial
-recommendations: false
 ---
 
 # Tutorial: Create a GitHub Action with .NET
@@ -61,7 +60,7 @@ With the defined action inputs class, focus on the *Program.cs* file.
 
 The `Program` file is simplified for brevity, to explore the full sample source, see [*Program.cs*](https://github.com/dotnet/samples/blob/main/github-actions/DotNet.GitHubAction/DotNet.GitHubAction/Program.cs). The mechanics in place demonstrate the boilerplate code required to use:
 
-- [Top-level statements](../csharp/whats-new/tutorials/top-level-statements.md)
+- [Top-level statements](../csharp/tutorials/top-level-statements.md)
 - [Generic Host](../core/extensions/generic-host.md)
 - [Dependency injection](../core/extensions/dependency-injection.md)
 
@@ -219,7 +218,6 @@ For more information, see [GitHub Docs: Working with the Container registry](htt
 
 - [.NET Generic Host](../core/extensions/generic-host.md)
 - [Dependency injection in .NET](../core/extensions/dependency-injection.md)
-- [DevOps for ASP.NET Core Developers](../architecture/devops-for-aspnet-developers/index.md)
 - [Code metrics values](/visualstudio/code-quality/code-metrics-values)
 - [Open-source GitHub Action build in .NET](https://github.com/svrooij/dotnet-feeder/) with a [workflow](https://github.com/svrooij/dotnet-feeder/blob/main/.github/workflows/build.yml) for building and pushing the docker image automatically.
 

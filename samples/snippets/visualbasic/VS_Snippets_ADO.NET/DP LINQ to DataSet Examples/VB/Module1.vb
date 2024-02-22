@@ -63,7 +63,7 @@ Module Module1
         'GroupByNested()
 
         '*** Set Operators ***
-        'DistinctRows() 
+        'DistinctRows()
         'Distinct2()
         'Union2()
         'Intersect2()
@@ -116,7 +116,7 @@ Module Module1
         'GroupJoin2()
 
         '*** DataSet Loading examples***
-        'LoadingQueryResultsIntoDataTable() 
+        'LoadingQueryResultsIntoDataTable()
         'LoadDataTableWithQueryResults()
 
         '*** DataRowComparer examples ***
@@ -135,7 +135,7 @@ Module Module1
         'OrderBy() ' Not in docs
         'OrderByDescending() ' Not in docs
         'Sum();
-        'GroupBy();                               
+        'GroupBy();
 
 
         Console.WriteLine("Hit enter...")
@@ -151,8 +151,8 @@ Module Module1
             connectionString = "Data Source=localhost;Initial Catalog=AdventureWorks;" & _
             "Integrated Security=true;"
 
-            ' Create a new adapter and give it a query to fetch sales order, contact, 
-            ' address, and product information for sales in the year 2002. Point connection 
+            ' Create a new adapter and give it a query to fetch sales order, contact,
+            ' address, and product information for sales in the year 2002. Point connection
             ' information to the configuration setting "AdventureWorks".
             Dim da = New SqlDataAdapter( _
             "SELECT SalesOrderID, ContactID, OrderDate, OnlineOrderFlag, " & _
@@ -414,8 +414,8 @@ Module Module1
 
     '/*[Category("Projection Operators")]
     '[Title("Select - Anonymous Types ")]
-    '[Description("This example uses Select to project the Name, ProductNumber, and" & 
-    '  "ListPrice properties to a sequence of anonymous types.  The ListPrice" &  
+    '[Description("This example uses Select to project the Name, ProductNumber, and" &
+    '  "ListPrice properties to a sequence of anonymous types.  The ListPrice" &
     '  "property is also renamed to Price in the resulting type.")]*/
     Sub SelectAnonymousTypes_MQ()
         ' <SnippetSelectAnonymousTypes_MQ>
@@ -612,7 +612,7 @@ Module Module1
 
     '/*[Category("Restriction Operators")]
     '[Title("Where Is Null")]
-    '[Description("This example returns all red colored products.  This query does not used the generic Field" 
+    '[Description("This example returns all red colored products.  This query does not used the generic Field"
     ' "method, but explicitly checks column values for null.")]*/
     Sub WhereIsNull()
         ' <SnippetWhereIsNull>
@@ -1321,7 +1321,7 @@ Module Module1
         Dim contacts1 = query1.CopyToDataTable()
         Dim contacts2 = query2.CopyToDataTable()
 
-        ' Find the contacts that are in the first 
+        ' Find the contacts that are in the first
         ' table but not the second.
         Dim contacts = contacts1.AsEnumerable().Except(contacts2.AsEnumerable(), _
                                                       DataRowComparer.Default)
@@ -1335,7 +1335,7 @@ Module Module1
         ' </SnippetExcept2>
     End Sub
 
-#End Region 'Set Operators 
+#End Region 'Set Operators
 
 #Region "Conversion Operators"
 
@@ -1894,7 +1894,7 @@ Module Module1
         For Each orderGroup In query
             Console.WriteLine("ContactID: " & orderGroup.Category)
             For Each order In orderGroup.smallestTotalDue
-                Console.WriteLine("Mininum TotalDue {0} for SalesOrderID {1} ", _
+                Console.WriteLine("Minimum TotalDue {0} for SalesOrderID {1} ", _
                     order.Field(Of Decimal)("TotalDue"), _
                     order.Field(Of Int32)("SalesOrderID"))
             Next
@@ -2279,7 +2279,7 @@ Module Module1
         '</SnippetGroupJoin2>
     End Sub
 
-#End Region 'Join Operators 
+#End Region 'Join Operators
 
 
 #Region "DataSet Loading examples"
@@ -2474,7 +2474,7 @@ Module Module1
 
         Dim orders As DataTable = ds.Tables("SalesOrderHeader")
 
-        ' Query the SalesOrderHeader table for orders placed 
+        ' Query the SalesOrderHeader table for orders placed
         '  after August 8, 2001.
         Dim query = _
             From order In orders.AsEnumerable() _
@@ -2484,7 +2484,7 @@ Module Module1
         ' Create a table from the query.
         Dim boundTable As DataTable = query.CopyToDataTable()
 
-        ' Bind the table to a System.Windows.Forms.BindingSource object, 
+        ' Bind the table to a System.Windows.Forms.BindingSource object,
         ' which acts as a proxy for a System.Windows.Forms.DataGridView object.
         bindingSource.DataSource = boundTable
         ' </SnippetCopyToDataTable1>
@@ -2591,7 +2591,7 @@ Module Module1
 
     '[MDL - Told not to worry about these.]
     '//Sum();
-    '//GroupBy();                               
+    '//GroupBy();
 
 
 #End Region 'Other stuff

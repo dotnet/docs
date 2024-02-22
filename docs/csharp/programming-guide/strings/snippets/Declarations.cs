@@ -1,4 +1,4 @@
-namespace StringExamples;
+﻿namespace StringExamples;
 
 using System;
 
@@ -11,7 +11,7 @@ public class Declarations
         string message1;
 
         // Initialize to null.
-        string message2 = null;
+        string? message2 = null;
 
         // Initialize as an empty string.
         // Use the Empty constant instead of the literal "".

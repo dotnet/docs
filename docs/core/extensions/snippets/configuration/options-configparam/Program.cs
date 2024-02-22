@@ -1,13 +1,12 @@
 ﻿using ExampleLibrary.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-using IHost host = Host.CreateDefaultBuilder(args)
-    .ConfigureServices((context, services) =>
-    {
-        services.AddMyLibraryService(
-            context.Configuration.GetSection("LibraryOptions"));
-    })
-    .Build();
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+
+builder.Services.AddMyLibraryService(
+    builder.Configuration.GetSection("LibraryOptions"));
+
+using IHost host = builder.Build();
 
 // Application code should start here.
 

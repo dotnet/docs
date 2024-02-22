@@ -50,7 +50,7 @@ public:
         Console::WriteLine("// Instance Fields");
         PrintMembers(fi);
 
-        // Instance properites.
+        // Instance properties.
         pi = t->GetProperties(BindingFlags::Instance | BindingFlags::NonPublic |
             BindingFlags::Public);
         Console::WriteLine ("// Instance Properties");

@@ -1,10 +1,7 @@
 ﻿using App.WorkerService;
 
-IHost host = Host.CreateDefaultBuilder(args)
-    .ConfigureServices(services =>
-    {
-        services.AddHostedService<Worker>();
-    })
-    .Build();
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+builder.Services.AddHostedService<Worker>();
 
-await host.RunAsync();
+IHost host = builder.Build();
+host.Run();

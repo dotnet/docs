@@ -58,5 +58,4 @@ class QueryAString
   
 ## See also
 
-- [LINQ and Strings (C#)](./linq-and-strings.md)
 - [How to combine LINQ queries with regular expressions (C#)](./how-to-combine-linq-queries-with-regular-expressions.md)

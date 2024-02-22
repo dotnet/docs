@@ -2,7 +2,7 @@
 title: "What's new in .NET Standard"
 description: This article summarizes new features and enhancements found in each new version of .NET Standard.
 ms.date: 12/09/2021
-ms.prod: dotnet-whatsnew
+ms.service: dotnet-whatsnew
 ---
 # What's new in .NET Standard
 

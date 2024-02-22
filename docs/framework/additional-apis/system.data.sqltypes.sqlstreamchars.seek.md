@@ -3,7 +3,7 @@ description: "Learn more about: SqlStreamChars.Seek(Int64, SeekOrigin) Method"
 title: SqlStreamChars.Seek(Int64, SeekOrigin) Method (System.Data.SqlTypes)
 author: stevestein
 ms.date: 12/20/2018
-ms.technology: "dotnet-data"
+ms.subservice: "data-access"
 topic_type:
   - "apiref"
 api_name:

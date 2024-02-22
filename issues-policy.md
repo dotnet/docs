@@ -49,8 +49,8 @@ Evaluating the correct course of action is subjective. The team members use thei
 For other issues, the team:
 
 - Assigns a priority
-- Assigns a milestone, usually "Backlog"
-- Assesses if an issue is a good "up for grabs" issue, or the [Projects for .NET Community Contributors](https://github.com/dotnet/docs/projects/35)
+- If high enough priority, assigns to an upcoming monthly sprint.
+- If the fix is clear, adds the "help-wanted" label.
 
 Priority levels are based on the following guidelines but are subjective. The milestones are also subjective and are based on other priorities such as current product release schedules and upcoming launches.
 
@@ -65,9 +65,7 @@ Priority levels are based on the following guidelines but are subjective. The mi
 
 Team members spend a limited amount of time on diagnosis and triage so they can make progress on scheduled tasks. Each team member spends at most 30 minutes per day in diagnosis and triage.
 
-The **up-for-grabs** label is applied when an issue is a good candidate for a community member (possibly the author) to submit a fix. The team member that applies the **up-for-grabs** label will help or find someone to help community members work through the PR creation process. Issues that are "up for grabs" are often added to the [Community Contribution projects](https://github.com/dotnet/docs/projects/35)
-
-> NOTE: We've only recently adopted the preceding convention. The person that added the label may refer you to another team member who will help.
+The **help-wanted** label is applied when an issue is a good candidate for a community member (possibly the author) to submit a fix. The team member that applies the **help-wanted** label will help or find someone to help community members work through the PR creation process.
 
 ## Resolution phase
 

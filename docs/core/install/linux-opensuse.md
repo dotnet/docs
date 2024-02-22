@@ -3,7 +3,7 @@ title: Install .NET on openSUSE
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on openSUSE.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/15/2022
+ms.date: 11/14/2023
 ---
 
 # Install the .NET SDK or the .NET Runtime on openSUSE
@@ -20,7 +20,7 @@ The following table is a list of currently supported .NET releases on openSUSE 1
 
 | openSUSE   | .NET      |
 |------------|-----------|
-| 15         | 7, 6, 3.1 |
+| 15.4+      | 8, 7, 6      |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
@@ -44,7 +44,7 @@ sudo mv prod.repo /etc/zypp/repos.d/microsoft-prod.repo
 sudo chown root:root /etc/zypp/repos.d/microsoft-prod.repo
 ```
 
-[!INCLUDE [linux-zyp-install-70](includes/linux-install-70-zyp.md)]
+[!INCLUDE [linux-zyp-install-80](includes/linux-install-80-zyp.md)]
 
 ## How to install other versions
 
@@ -70,16 +70,17 @@ When you install with a package manager, these libraries are installed for you. 
 - libicu
 - libopenssl1_0_0
 
-If the target runtime environment's OpenSSL version is 1.1 or newer, you'll need to install **compat-openssl10**.
+If the target runtime environment's OpenSSL version is 1.1 or newer, you'll need to install `compat-openssl10`.
+
+Dependencies can be installed with the `zypper install` command. The following snippet demonstrates installing the `krb5` library:
+
+```bash
+sudo zypper install krb5
+```
 
 For more information about the dependencies, see [Self-contained Linux apps](https://github.com/dotnet/core/blob/main/Documentation/self-contained-linux-apps.md).
 
-For .NET apps that use the *System.Drawing.Common* assembly, you'll also need the following dependency:
-
-- [libgdiplus (version 6.0.1 or later)](https://www.mono-project.com/docs/gui/libgdiplus/)
-
-  > [!WARNING]
-  > You can install a recent version of *libgdiplus* by adding the Mono repository to your system. For more information, see <https://www.mono-project.com/download/stable/>.
+[!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
 
 ## Next steps
 

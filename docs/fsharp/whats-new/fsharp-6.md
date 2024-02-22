@@ -41,7 +41,7 @@ Task support was available for F# 5 through the excellent TaskBuilder.fs and Ply
 
 Using `task {…}` is very similar to using `async {…}`. Using `task {…}` has several advantages over `async {…}`:
 
-* The performance of `task {…}` is much better.
+* The overhead of `task {...}` is lower, possibly improving performance in hot code paths where the asynchronous work executes quickly.
 * Debugging stepping and stack traces for `task {…}` is better.
 * Interoperating with .NET packages that expect or produce tasks is easier.
 
@@ -86,7 +86,7 @@ This feature implements [F# RFC FS-1039](https://github.com/fsharp/fslang-design
 
 ## Overloaded custom operations in computation expressions
 
-F# 6 lets you consume [interfaces with default implementations](../../csharp/tutorials/default-interface-methods-versions.md).
+F# 6 lets you use [CustomOperationAttribute](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-customoperationattribute.html) on the overloaded methods.
 
 Consider the following use of a computation expression builder `content`:
 
@@ -354,10 +354,10 @@ Then after inlining and other optimizations, the code becomes:
 ```fsharp
 let arr = [| 1.. 100 |]
 let mutable sum = 0
-for j = 0 to array.Length-1 do
-    sum <- array[i] + x
-for j = 0 to array.Length-1 do
-    sum <- array[i] + x
+for j = 0 to arr.Length-1 do
+    sum <- sum + arr[j]
+for j = 0 to arr.Length-1 do
+    sum <- sum + arr[j]
 ```
 
 Unlike previous versions of F#, this optimization is applied regardless of the size of the lambda expression involved. This feature can also be used to implement loop unrolling and similar transformations more reliably.

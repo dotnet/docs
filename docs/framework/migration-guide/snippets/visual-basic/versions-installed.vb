@@ -51,11 +51,11 @@ Module Program
                         install = subKey.GetValue("Install", "").ToString()
                         If String.IsNullOrEmpty(install) Then
                             ' No install info; it must be later.
-                            Console.WriteLine($"{versionKeyName}  {name}")
+                            Console.WriteLine($"  {versionKeyName}  {name}")
                         ElseIf install = "1" Then
 
                             If Not String.IsNullOrEmpty(sp) Then
-                                Console.WriteLine($"{subKeyName}  {name}  SP{sp}")
+                                Console.WriteLine($"  {subKeyName}  {name}  SP{sp}")
                             Else
                                 Console.WriteLine($"  {subKeyName}  {name}")
                             End If
@@ -83,8 +83,10 @@ Module Program
 
     ' Checking the version using >= enables forward compatibility.
     Private Function CheckFor45PlusVersion(releaseKey As Integer) As String
-        If releaseKey >= 528040 Then
-            Return "4.8 or later"
+        If releaseKey >= 533320 Then
+            Return "4.8.1 or later"
+        ElseIf releaseKey >= 528040 Then
+            Return "4.8"
         ElseIf releaseKey >= 461808 Then
             Return "4.7.2"
         ElseIf releaseKey >= 461308 Then

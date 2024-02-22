@@ -61,7 +61,7 @@ public class Example
             // Optional: Observe the change in the Status property on the task.
             // It is not necessary to wait on tasks that have canceled. However,
             // if you do wait, you must enclose the call in a try-catch block to
-            // catch the TaskCanceledExceptions that are thrown. If you do
+            // catch the OperationCanceledExceptions that are thrown. If you do
             // not wait, no exception is thrown if the token that was passed to the
             // Task.Run method is the same token that requested the cancellation.
         }

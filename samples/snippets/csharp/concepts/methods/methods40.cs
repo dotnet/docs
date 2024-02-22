@@ -1,8 +1,6 @@
-﻿namespace MotorCycleExample
+﻿//<Snippet40>
+namespace MotorCycleExample
 {
-    //<Snippet40>
-    using System;
-
     abstract class Motorcycle
     {
         // Anyone can call this.
@@ -27,19 +25,15 @@
         //<Snippet41>
         class TestMotorcycle : Motorcycle
         {
-            public override double GetTopSpeed()
-            {
-                return 108.4;
-            }
+            public override double GetTopSpeed() => 108.4;
 
             static void Main()
             {
-
-                TestMotorcycle moto = new TestMotorcycle();
+                var moto = new TestMotorcycle();
 
                 moto.StartEngine();
                 moto.AddGas(15);
-                moto.Drive(5, 20);
+                _ = moto.Drive(5, 20);
                 double speed = moto.GetTopSpeed();
                 Console.WriteLine("My top speed is {0}", speed);
             }

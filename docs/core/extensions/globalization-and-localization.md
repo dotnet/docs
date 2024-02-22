@@ -1,7 +1,7 @@
 ---
 title: "Globalize and localize .NET applications"
 description: Learn how to develop a world-ready application. Read about globalization, localizability review, and localization in .NET.
-ms.date: 08/11/2021
+ms.date: 03/13/2023
 helpviewer_keywords:
   - "international applications [.NET]"
   - "globalization [.NET], encoding"
@@ -45,7 +45,7 @@ Discusses the first stage of creating a world-ready application, which involves 
 
 [.NET globalization and ICU](globalization-icu.md)
 
-Describes how .NET globalization uses [International Components for Unicode (ICU)](http://site.icu-project.org/home).
+Describes how .NET globalization uses [International Components for Unicode (ICU)](https://icu.unicode.org/).
 
 [Localizability review](localizability-review.md)
 

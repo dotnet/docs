@@ -28,7 +28,7 @@ The following example shows a simple inner equijoin. This query produces a flat 
 
 [!code-csharp[cscsrefQueryKeywords#24](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsCsrefQueryKeywords/CS/Join.cs#24)]
 
-For more information, see [Perform inner joins](../../linq/perform-inner-joins.md).
+For more information, see [Perform inner joins](../../linq/standard-query-operators/join-operations.md).
 
 ## Group join
 
@@ -46,7 +46,7 @@ You can also, of course, use the result of a group join as the generator of anot
 
 [!code-csharp[cscsrefQueryKeywords#26](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsCsrefQueryKeywords/CS/Join.cs#26)]
 
-For more information, see [Perform grouped joins](../../linq/perform-grouped-joins.md).
+For more information, see [Perform grouped joins](../../linq/standard-query-operators/join-operations.md).
 
 ## Left outer join
 
@@ -54,15 +54,15 @@ In a left outer join, all the elements in the left source sequence are returned,
 
 [!code-csharp[cscsrefQueryKeywords#27](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsCsrefQueryKeywords/CS/Join.cs#27)]
 
-For more information, see [Perform left outer joins](../../linq/perform-left-outer-joins.md).
+For more information, see [Perform left outer joins](../../linq/standard-query-operators/join-operations.md).
 
 ## The equals operator
 
-A `join` clause performs an equijoin. In other words, you can only base matches on the equality of two keys. Other types of comparisons such as "greater than" or "not equals" are not supported. To make clear that all joins are equijoins, the `join` clause uses the `equals` keyword instead of the `==` operator. The `equals` keyword can only be used in a `join` clause and it differs from the `==` operator in some important ways. When comparing strings, `equals` has an overload to compare by value and the operator `==` uses reference equality. When both sides of comparison have identical string variables, `equals` and `==` will reach the same result: true. That's because, when a program declares two or more equivalent string variables, the compiler stores all of them in the same location, see [Reference equality and string interning](../../how-to/compare-strings.md#reference-equality-and-string-interning) for more information. Another important difference is the null comparison: `null equals null` is evaluated as false with `equals` operator, instead of `==` operator that evaluates it as true. Lastly, the scoping behavior is different: with `equals`, the left key consumes the outer source sequence, and the right key consumes the inner source. The outer source is only in scope on the left side of `equals` and the inner source sequence is only in scope on the right side.
+A `join` clause performs an equijoin. In other words, you can only base matches on the equality of two keys. Other types of comparisons such as "greater than" or "not equals" are not supported. To make clear that all joins are equijoins, the `join` clause uses the `equals` keyword instead of the `==` operator. The `equals` keyword can only be used in a `join` clause and it differs from the `==` operator in some important ways. When comparing strings, `equals` has an overload to compare by value and the operator `==` uses reference equality. When both sides of comparison have identical string variables, `equals` and `==` reach the same result: true. That's because, when a program declares two or more equivalent string variables, the compiler stores all of them in the same location. This is known as *interning*. Another important difference is the null comparison: `null equals null` is evaluated as false with `equals` operator, instead of `==` operator that evaluates it as true. Lastly, the scoping behavior is different: with `equals`, the left key consumes the outer source sequence, and the right key consumes the inner source. The outer source is only in scope on the left side of `equals` and the inner source sequence is only in scope on the right side.
 
 ## Non-equijoins
 
-You can perform non-equijoins, cross joins, and other custom join operations by using multiple `from` clauses to introduce new sequences independently into a query. For more information, see [Perform custom join operations](../../linq/perform-custom-join-operations.md).
+You can perform non-equijoins, cross joins, and other custom join operations by using multiple `from` clauses to introduce new sequences independently into a query. For more information, see [Perform custom join operations](/dotnet/csharp/linq/).
 
 ## Joins on object collections vs. relational tables
 
@@ -72,7 +72,7 @@ For more information about querying across related tables in the context of [!IN
 
 ## Composite keys
 
-You can test for equality of multiple values by using a composite key. For more information, see [Join by using composite keys](../../linq/join-by-using-composite-keys.md). Composite keys can be also used in a `group` clause.
+You can test for equality of multiple values by using a composite key. For more information, see [Join by using composite keys](../../linq/standard-query-operators/join-operations.md). Composite keys can be also used in a `group` clause.
 
 ## Example
 
@@ -88,11 +88,11 @@ A `join` clause that is not followed by `into` is translated into a <xref:System
 
 - [Query Keywords (LINQ)](query-keywords.md)
 - [Language Integrated Query (LINQ)](../../linq/index.md)
-- [Join Operations](../../programming-guide/concepts/linq/join-operations.md)
+- [Join Operations](../../linq/standard-query-operators/join-operations.md)
 - [group clause](group-clause.md)
-- [Perform left outer joins](../../linq/perform-left-outer-joins.md)
-- [Perform inner joins](../../linq/perform-inner-joins.md)
-- [Perform grouped joins](../../linq/perform-grouped-joins.md)
-- [Order the results of a join clause](../../linq/order-the-results-of-a-join-clause.md)
-- [Join by using composite keys](../../linq/join-by-using-composite-keys.md)
+- [Perform left outer joins](../../linq/standard-query-operators/join-operations.md)
+- [Perform inner joins](../../linq/standard-query-operators/join-operations.md)
+- [Perform grouped joins](../../linq/standard-query-operators/join-operations.md)
+- [Order the results of a join clause](../../linq/standard-query-operators/index.md)
+- [Join by using composite keys](../../linq/standard-query-operators/join-operations.md)
 - [Compatible database systems for Visual Studio](/visualstudio/data-tools/installing-database-systems-tools-and-samples)

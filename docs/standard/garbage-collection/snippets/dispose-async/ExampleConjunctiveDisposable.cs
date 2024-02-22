@@ -14,9 +14,7 @@
         await DisposeAsyncCore().ConfigureAwait(false);
 
         Dispose(disposing: false);
-#pragma warning disable CA1816 // Dispose methods should call SuppressFinalize
         GC.SuppressFinalize(this);
-#pragma warning restore CA1816 // Dispose methods should call SuppressFinalize
     }
 
     protected virtual void Dispose(bool disposing)
@@ -24,9 +22,13 @@
         if (disposing)
         {
             _disposableResource?.Dispose();
-            (_asyncDisposableResource as IDisposable)?.Dispose();
             _disposableResource = null;
-            _asyncDisposableResource = null;
+
+            if (_asyncDisposableResource is IDisposable disposable)
+            {
+                disposable.Dispose();
+                _asyncDisposableResource = null;
+            }
         }
     }
 

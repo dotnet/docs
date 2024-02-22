@@ -257,7 +257,6 @@ services:
 
   rabbitmq:
     image: rabbitmq:3-management
-
 ```
 
 The values in the base docker-compose.yml file should not change because of different target deployment environments.
@@ -380,7 +379,6 @@ services:
     ports:
       - "15672:15672"
       - "5672:5672"
-
 ```
 
 In this example, the development override configuration exposes some ports to the host, defines environment variables with redirect URLs, and specifies connection strings for the development environment. These settings are all just for the development environment.
@@ -427,14 +425,14 @@ The values set in the run-time environment always override the values defined in
     <https://docs.docker.com/compose/overview/>
 
 - **Multiple Compose files** \
-    [https://docs.docker.com/compose/extends/\#multiple-compose-files](https://docs.docker.com/compose/extends/#multiple-compose-files)
+    [https://docs.docker.com/compose/multiple-compose-files/](https://docs.docker.com/compose/multiple-compose-files/)
 
 ### Building optimized ASP.NET Core Docker images
 
 If you are exploring Docker and .NET on sources on the Internet, you will find Dockerfiles that demonstrate the simplicity of building a Docker image by copying your source into a container. These examples suggest that by using a simple configuration, you can have a Docker image with the environment packaged with your application. The following example shows a simple Dockerfile in this vein.
 
 ```dockerfile
-FROM mcr.microsoft.com/dotnet/sdk:6.0
+FROM mcr.microsoft.com/dotnet/sdk:8.0
 WORKDIR /app
 ENV ASPNETCORE_URLS http://+:80
 EXPOSE 80

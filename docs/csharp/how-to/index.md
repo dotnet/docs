@@ -121,8 +121,8 @@ and work with different data sources.
 Modern programs often use asynchronous operations. These articles will help you learn
 to use these techniques.
 
-- [Improve async performance using `System.Threading.Tasks.Task.WhenAll`](../programming-guide/concepts/async/index.md).
-- [Make multiple web requests in parallel using `async` and `await`](../programming-guide/concepts/async/index.md).
+- [Improve async performance using `System.Threading.Tasks.Task.WhenAll`](../asynchronous-programming/async-scenarios.md).
+- [Make multiple web requests in parallel using `async` and `await`](../asynchronous-programming/async-scenarios.md).
 - [Use a thread pool](../../standard/threading/the-managed-thread-pool.md#using-the-thread-pool).
 
 ## Command line args to your program

@@ -25,10 +25,7 @@ There are several reasons you might want to create a multifile assembly:
 
 - To combine modules written in different languages. This is the most common reason for creating a multifile assembly.
 
-- To optimize downloading an application by putting seldom-used types in a module that is downloaded only when needed.
-
-    > [!NOTE]
-    > If you are creating applications that will be downloaded using the `<object>` tag with Microsoft Internet Explorer, it is important that you create multifile assemblies. In this scenario, you create a file separate from your code modules that contains only the assembly manifest. Internet Explorer downloads the assembly manifest first, and then creates worker threads to download any additional modules or assemblies required. While the file containing the assembly manifest is being downloaded, Internet Explorer will be unresponsive to user input. The smaller the file containing the assembly manifest, the less time Internet Explorer will be unresponsive.
+- To optimize downloading an application by putting seldom-used types in a module that's downloaded only when needed.
 
 - To combine code modules written by several developers. Although each developer can compile each code module into an assembly, this can force some types to be exposed publicly that are not exposed if all modules are put into a multifile assembly.
 

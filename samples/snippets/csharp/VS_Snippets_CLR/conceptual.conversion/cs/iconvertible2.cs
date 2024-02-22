@@ -231,7 +231,7 @@ public class TemperatureFahrenheit : Temperature, IConvertible
 
     public override object ToType(Type conversionType, IFormatProvider provider)
     {
-        // For non-objects, call base methood.
+        // For non-objects, call base method.
         if (Type.GetTypeCode(conversionType) != TypeCode.Object)
         {
             return base.ToType(conversionType, provider);

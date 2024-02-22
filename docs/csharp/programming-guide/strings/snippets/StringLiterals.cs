@@ -17,15 +17,11 @@ public class Literals
             Row 3
         */
 
+        //<VerbatimLiterals>
         string title = "\"The \u00C6olean Harp\", by Samuel Taylor Coleridge";
         //Output: "The Æolean Harp", by Samuel Taylor Coleridge
         //</EscapeSequences>
 
-        System.Console.WriteLine(columns);
-        System.Console.WriteLine(rows);
-        System.Console.WriteLine(title);
-
-        //<VerbatimLiterals>
         string filePath = @"C:\Users\scoleridge\Documents\";
         //Output: C:\Users\scoleridge\Documents\
 
@@ -41,6 +37,10 @@ public class Literals
         string quote = @"Her name was ""Sara.""";
         //Output: Her name was "Sara."
         //</VerbatimLiterals>
+        System.Console.WriteLine(columns);
+        System.Console.WriteLine(rows);
+        System.Console.WriteLine(title);
+
         System.Console.WriteLine(filePath);
         System.Console.WriteLine(text);
         System.Console.WriteLine(quote);

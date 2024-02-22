@@ -19,7 +19,7 @@ For example, if you're just using Entity Framework and there has to be a reactio
 
 On the other hand, using domain events makes the concept explicit, because there's a `DomainEvent` and at least one `DomainEventHandler` involved.
 
-For example, in the eShopOnContainers application, when an order is created, the user becomes a buyer, so an `OrderStartedDomainEvent` is raised and handled in the `ValidateOrAddBuyerAggregateWhenOrderStartedDomainEventHandler`, so the underlying concept is evident.
+For example, in the eShop application, when an order is created, the user becomes a buyer, so an `OrderStartedDomainEvent` is raised and handled in the `ValidateOrAddBuyerAggregateWhenOrderStartedDomainEventHandler`, so the underlying concept is evident.
 
 In short, domain events help you to express, explicitly, the domain rules, based in the ubiquitous language provided by the domain experts. Domain events also enable a better separation of concerns among classes within the same domain.
 
@@ -119,7 +119,7 @@ public class OrderStartedDomainEvent : INotification
 
 This is essentially a class that holds all the data related to the OrderStarted event.
 
-In terms of the ubiquitous language of the domain, since an event is something that happened in the past, the class name of the event should be represented as a past-tense verb, like OrderStartedDomainEvent or OrderShippedDomainEvent. That's how the domain event is implemented in the ordering microservice in eShopOnContainers.
+In terms of the ubiquitous language of the domain, since an event is something that happened in the past, the class name of the event should be represented as a past-tense verb, like OrderStartedDomainEvent or OrderShippedDomainEvent. That's how the domain event is implemented in the ordering microservice in eShop.
 
 As noted earlier, an important characteristic of events is that since an event is something that happened in the past, it shouldn't change. Therefore, it must be an immutable class. You can see in the previous code that the properties are read-only. There's no way to update the object, you can only set values when you create it.
 
@@ -139,7 +139,7 @@ Instead of dispatching to a domain event handler immediately, a better approach 
 
 Deciding if you send the domain events right before or right after committing the transaction is important, since it determines whether you will include the side effects as part of the same transaction or in different transactions. In the latter case, you need to deal with eventual consistency across multiple aggregates. This topic is discussed in the next section.
 
-The deferred approach is what eShopOnContainers uses. First, you add the events happening in your entities into a collection or list of events per entity. That list should be part of the entity object, or even better, part of your base entity class, as shown in the following example of the Entity base class:
+The deferred approach is what eShop uses. First, you add the events happening in your entities into a collection or list of events per entity. That list should be part of the entity object, or even better, part of your base entity class, as shown in the following example of the Entity base class:
 
 ```csharp
 public abstract class Entity
@@ -164,7 +164,7 @@ public abstract class Entity
 
 When you want to raise an event, you just add it to the event collection from code at any method of the aggregate-root entity.
 
-The following code, part of the [Order aggregate-root at eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/Order.cs), shows an example:
+The following code, part of the [Order aggregate-root at eShop](https://github.com/dotnet/eShop/blob/main/src/Ordering.Domain/AggregatesModel/OrderAggregate/Order.cs), shows an example:
 
 ```csharp
 var orderStartedDomainEvent = new OrderStartedDomainEvent(this, //Order object
@@ -231,7 +231,7 @@ Actually, both approaches (single atomic transaction and eventual consistency) c
 
 A way to allow compensatory actions would be to store the domain events in additional database tables so they can be part of the original transaction. Afterwards, you could have a batch process that detects inconsistencies and runs compensatory actions by comparing the list of events with the current state of the aggregates. The compensatory actions are part of a complex topic that will require deep analysis from your side, which includes discussing it with the business user and domain experts.
 
-In any case, you can choose the approach you need. But the initial deferred approach—raising the events before committing, so you use a single transaction—is the simplest approach when using EF Core and a relational database. It's easier to implement and valid in many business cases. It's also the approach used in the ordering microservice in eShopOnContainers.
+In any case, you can choose the approach you need. But the initial deferred approach—raising the events before committing, so you use a single transaction—is the simplest approach when using EF Core and a relational database. It's easier to implement and valid in many business cases. It's also the approach used in the ordering microservice in eShop.
 
 But how do you actually dispatch those events to their respective event handlers? What's the `_mediator` object you see in the previous example? It has to do with the techniques and artifacts you use to map between events and their event handlers.
 
@@ -241,92 +241,73 @@ Once you're able to dispatch or publish the events, you need some kind of artifa
 
 One approach is a real messaging system or even an event bus, possibly based on a service bus as opposed to in-memory events. However, for the first case, real messaging would be overkill for processing domain events, since you just need to process those events within the same process (that is, within the same domain and application layer).
 
-Another way to map events to multiple event handlers is by using types registration in an IoC container so you can dynamically infer where to dispatch the events. In other words, you need to know what event handlers need to get a specific event. Figure 7-16 shows a simplified approach for this approach.
-
-![Diagram showing a domain event dispatcher sending events to the appropriate handlers.](./media/domain-events-design-implementation/domain-event-dispatcher.png)
-
-**Figure 7-16**. Domain event dispatcher using IoC
-
-You can build all the plumbing and artifacts to implement that approach by yourself. However, you can also use available libraries like [MediatR](https://github.com/jbogard/MediatR) that uses your IoC container under the covers. You can therefore directly use the predefined interfaces and the mediator object's publish/dispatch methods.
-
-In code, you first need to register the event handler types in your IoC container, as shown in the following example at [eShopOnContainers Ordering microservice](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.API/Infrastructure/AutofacModules/MediatorModule.cs):
-
-```csharp
-public class MediatorModule : Autofac.Module
-{
-    protected override void Load(ContainerBuilder builder)
-    {
-        // Other registrations ...
-        // Register the DomainEventHandler classes (they implement IAsyncNotificationHandler<>)
-        // in assembly holding the Domain Events
-        builder.RegisterAssemblyTypes(typeof(ValidateOrAddBuyerAggregateWhenOrderStartedDomainEventHandler)
-                                       .GetTypeInfo().Assembly)
-                                         .AsClosedTypesOf(typeof(IAsyncNotificationHandler<>));
-        // Other registrations ...
-    }
-}
-```
-
-The code first identifies the assembly that contains the domain event handlers by locating the assembly that holds any of the handlers (using typeof(ValidateOrAddBuyerAggregateWhenXxxx), but you could have chosen any other event handler to locate the assembly). Since all the event handlers implement the IAsyncNotificationHandler interface, the code then just searches for those types and registers all the event handlers.
-
 ### How to subscribe to domain events
 
-When you use MediatR, each event handler must use an event type that is provided on the generic parameter of the INotificationHandler interface, as you can see in the following code:
+When you use MediatR, each event handler must use an event type that is provided on the generic parameter of the `INotificationHandler` interface, as you can see in the following code:
 
 ```csharp
 public class ValidateOrAddBuyerAggregateWhenOrderStartedDomainEventHandler
-  : IAsyncNotificationHandler<OrderStartedDomainEvent>
+  : INotificationHandler<OrderStartedDomainEvent>
 ```
 
 Based on the relationship between event and event handler, which can be considered the subscription, the MediatR artifact can discover all the event handlers for each event and trigger each one of those event handlers.
 
 ### How to handle domain events
 
-Finally, the event handler usually implements application layer code that uses infrastructure repositories to obtain the required additional aggregates and to execute side-effect domain logic. The following [domain event handler code at eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.API/Application/DomainEventHandlers/OrderStartedEvent/ValidateOrAddBuyerAggregateWhenOrderStartedDomainEventHandler.cs), shows an implementation example.
+Finally, the event handler usually implements application layer code that uses infrastructure repositories to obtain the required additional aggregates and to execute side-effect domain logic. The following [domain event handler code at eShop](https://github.com/dotnet/eShop/blob/main/src/Ordering.API/Application/DomainEventHandlers/ValidateOrAddBuyerAggregateWhenOrderStartedDomainEventHandler.cs), shows an implementation example.
 
 ```csharp
 public class ValidateOrAddBuyerAggregateWhenOrderStartedDomainEventHandler
-                   : INotificationHandler<OrderStartedDomainEvent>
+    : INotificationHandler<OrderStartedDomainEvent>
 {
-    private readonly ILoggerFactory _logger;
-    private readonly IBuyerRepository<Buyer> _buyerRepository;
-    private readonly IIdentityService _identityService;
+    private readonly ILogger _logger;
+    private readonly IBuyerRepository _buyerRepository;
+    private readonly IOrderingIntegrationEventService _orderingIntegrationEventService;
 
     public ValidateOrAddBuyerAggregateWhenOrderStartedDomainEventHandler(
-        ILoggerFactory logger,
-        IBuyerRepository<Buyer> buyerRepository,
-        IIdentityService identityService)
+        ILogger<ValidateOrAddBuyerAggregateWhenOrderStartedDomainEventHandler> logger,
+        IBuyerRepository buyerRepository,
+        IOrderingIntegrationEventService orderingIntegrationEventService)
     {
-        // ...Parameter validations...
+        _buyerRepository = buyerRepository ?? throw new ArgumentNullException(nameof(buyerRepository));
+        _orderingIntegrationEventService = orderingIntegrationEventService ?? throw new ArgumentNullException(nameof(orderingIntegrationEventService));
+        _logger = logger ?? throw new ArgumentNullException(nameof(logger));
     }
 
-    public async Task HandleAsync(OrderStartedDomainEvent orderStartedEvent)
+    public async Task Handle(
+        OrderStartedDomainEvent domainEvent, CancellationToken cancellationToken)
     {
-        var cardTypeId = (orderStartedEvent.CardTypeId != 0) ? orderStartedEvent.CardTypeId : 1;
-        var userGuid = _identityService.GetUserIdentity();
-        var buyer = await _buyerRepository.FindAsync(userGuid);
-        bool buyerOriginallyExisted = (buyer == null) ? false : true;
+        var cardTypeId = domainEvent.CardTypeId != 0 ? domainEvent.CardTypeId : 1;
+        var buyer = await _buyerRepository.FindAsync(domainEvent.UserId);
+        var buyerExisted = buyer is not null;
 
-        if (!buyerOriginallyExisted)
+        if (!buyerExisted)
         {
-            buyer = new Buyer(userGuid);
+            buyer = new Buyer(domainEvent.UserId, domainEvent.UserName);
         }
 
-        buyer.VerifyOrAddPaymentMethod(cardTypeId,
-                                       $"Payment Method on {DateTime.UtcNow}",
-                                       orderStartedEvent.CardNumber,
-                                       orderStartedEvent.CardSecurityNumber,
-                                       orderStartedEvent.CardHolderName,
-                                       orderStartedEvent.CardExpiration,
-                                       orderStartedEvent.Order.Id);
+        buyer.VerifyOrAddPaymentMethod(
+            cardTypeId,
+            $"Payment Method on {DateTime.UtcNow}",
+            domainEvent.CardNumber,
+            domainEvent.CardSecurityNumber,
+            domainEvent.CardHolderName,
+            domainEvent.CardExpiration,
+            domainEvent.Order.Id);
 
-        var buyerUpdated = buyerOriginallyExisted ? _buyerRepository.Update(buyer)
-                                                                      : _buyerRepository.Add(buyer);
+        var buyerUpdated = buyerExisted ?
+            _buyerRepository.Update(buyer) :
+            _buyerRepository.Add(buyer);
 
         await _buyerRepository.UnitOfWork
-                .SaveEntitiesAsync();
+            .SaveEntitiesAsync(cancellationToken);
 
-        // Logging code using buyerUpdated info, etc.
+        var integrationEvent = new OrderStatusChangedToSubmittedIntegrationEvent(
+            domainEvent.Order.Id, domainEvent.Order.OrderStatus.Name, buyer.Name);
+        await _orderingIntegrationEventService.AddAndSaveEventAsync(integrationEvent);
+
+        OrderingApiTrace.LogOrderBuyerAndPaymentValidatedOrUpdated(
+            _logger, buyerUpdated.Id, domainEvent.Order.Id);
     }
 }
 ```
@@ -360,9 +341,6 @@ The reference app uses [MediatR](https://github.com/jbogard/MediatR) to propagat
 - **Jimmy Bogard. Strengthening your domain: Domain Events** \
   <https://lostechies.com/jimmybogard/2010/04/08/strengthening-your-domain-domain-events/>
 
-- **Tony Truong. Domain Events Pattern Example** \
-  <https://www.tonytruong.net/domain-events-pattern-example/>
-
 - **Udi Dahan. How to create fully encapsulated Domain Models** \
   <https://udidahan.com/2008/02/29/how-to-create-fully-encapsulated-domain-models/>
 
@@ -371,9 +349,6 @@ The reference app uses [MediatR](https://github.com/jbogard/MediatR) to propagat
 
 - **Udi Dahan. Domain Events – Salvation** \
   <https://udidahan.com/2009/06/14/domain-events-salvation/>
-
-- **Jan Kronquist. Don't publish Domain Events, return them!** \
-  <https://blog.jayway.com/2013/06/20/dont-publish-domain-events-return-them/>
 
 - **Cesar de la Torre. Domain Events vs. Integration Events in DDD and microservices architectures** \
   <https://devblogs.microsoft.com/cesardelatorre/domain-events-vs-integration-events-in-domain-driven-design-and-microservices-architectures/>

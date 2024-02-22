@@ -1,0 +1,56 @@
+name: 'Snippets 5000'
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events on the main branch only.
+on:
+  pull_request:
+    branches: [ main ]
+    types: [opened, synchronize, reopened]
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'The reason for running the workflow'
+        required: true
+        default: 'Manual run'
+
+env:
+  DOTNET_VERSION: '9.0.*'
+  DOTNET_QUALITY: 'preview'
+  DOTNET_DO_INSTALL: 'true' # To install a version of .NET not provided by the runner, set to true
+  EnableNuGetPackageRestore: 'True'
+
+jobs:
+  snippets-build:
+    runs-on: windows-2022
+    permissions:
+        statuses: write
+
+    steps:
+    # Checkout the repository for the PR
+    - name: Checkout repository
+      uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 #@v4.1.1
+
+    # Get the latest preview SDK (or sdk not installed by the runner)
+    - name: Setup .NET
+      if: ${{ env.DOTNET_DO_INSTALL == 'true' }}
+      uses: actions/setup-dotnet@4d6c8fcf3c8f7a60068d26b594648e99df24cee3 #@4.0.0
+      with:
+        dotnet-version: ${{ env.DOTNET_VERSION }}
+        dotnet-quality: ${{ env.DOTNET_QUALITY }}
+
+    # Print dotnet info
+    - name: Display .NET info
+      run: |
+        dotnet --info
+
+    # Clone docs tools repo
+    - name: Clone docs-tools repository
+      run: |
+        git clone --depth 1 https://github.com/dotnet/docs-tools
+
+    # Run snippets 5000
+    - name: Run snippets 5000 for PR
+      env:
+        GitHubKey: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        dotnet run --project docs-tools/snippets5000/Snippets5000/Snippets5000.csproj -- --sourcepath "${{ github.workspace }}" --pullrequest ${{ github.event.number }} --owner ${{ github.repository_owner }} --repo ${{ github.event.repository.name }}

@@ -3,7 +3,7 @@ title: Attributes for Identifying Service Objects and Assigning Hardware
 description: Attributes for Identifying Service Objects and Assigning Hardware (POS for .NET v1.14 SDK Documentation)
 ms.date: 02/27/2008
 ms.topic: how-to
-ms.custom: pos-restored-from-archive
+ms.custom: "pos-restored-from-archive,UpdateFrequency5"
 ---
 
 # Attributes for Identifying Service Objects and Assigning Hardware (POS for .NET v1.14 SDK Documentation)

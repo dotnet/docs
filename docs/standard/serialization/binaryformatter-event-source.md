@@ -14,7 +14,7 @@ This functionality is not a substitute for a <xref:System.Runtime.Serialization.
 
 ## Description of events
 
-The `BinaryFormatter` event source has the well-known name `System.Runtime.Serialization.Formatters.Binary.BinaryFormatterEventSource`. Listeners may subscribe to 6 events.
+The `BinaryFormatter` event source has the well-known name `System.Runtime.Serialization.Formatters.Binary.BinaryFormatterEventSource`. Listeners can subscribe to six events.
 
 ### SerializationStart event (id = `10`)
 
@@ -75,10 +75,10 @@ For more information, see <xref:System.Diagnostics.Tracing.EventKeywords?display
 
 The following code:
 
-- creates an `EventListener`-derived type that writes to `System.Console`,
-- subscribes that listener to `BinaryFormatter`-produced notifications,
-- serializes and deserializes a simple object graph using `BinaryFormatter`, and
-- analyzes the events that have been raised.
+* creates an `EventListener`-derived type that writes to `System.Console`,
+* subscribes that listener to `BinaryFormatter`-produced notifications,
+* serializes and deserializes a simple object graph using `BinaryFormatter`, and
+* analyzes the events that have been raised.
 
 :::code language="csharp" source="snippets/binaryformatter-event-source/csharp/Program.cs":::
 

@@ -32,5 +32,6 @@ The topics in the section describe service hosting. A service can be hosted by I
 
 ## See also
 
+- [!INCLUDE[](~/includes/wcf_grpc.md)]
 - [Hosting Services](../hosting-services.md)
 - [Windows Server App Fabric Hosting Features](/previous-versions/appfabric/ee677189(v=azure.10))

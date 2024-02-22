@@ -1,7 +1,7 @@
 ---
 title: dotnet run command
 description: The dotnet run command provides a convenient option to run your application from the source code.
-ms.date: 08/18/2021
+ms.date: 11/27/2023
 ---
 # dotnet run
 
@@ -19,7 +19,8 @@ dotnet run [-a|--arch <ARCHITECTURE>] [-c|--configuration <CONFIGURATION>]
     [--launch-profile <NAME>] [--no-build]
     [--no-dependencies] [--no-launch-profile] [--no-restore]
     [--os <OS>] [--project <PATH>] [-r|--runtime <RUNTIME_IDENTIFIER>]
-    [-v|--verbosity <LEVEL>] [[--] [application arguments]]
+    [--tl:[auto|on|off]] [-v|--verbosity <LEVEL>]
+    [[--] [application arguments]]
 
 dotnet run -h|--help
 ```
@@ -121,6 +122,8 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 - **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 
   Specifies the target runtime to restore packages for. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md).
+
+[!INCLUDE [tl](../../../includes/cli-tl.md)]
 
 [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 

@@ -75,11 +75,11 @@ Behaviors and their extensions that are added to the Web.config file apply behav
 > [!NOTE]
 > When adding behavior to all services, it is suggested to backup the Machine.config file before making any change.
 
-Now run the client provided in the client\bin directory of this sample. An exception is thrown with the following message: "The requested service, 'http://localhost/servicemodelsamples/service.svc' could not be activated." This is expected because an endpoint is considered insecure by the endpoint validating behavior and prevents the service from being started. The behavior also throws an internal exception that describes which endpoint is insecure and writes a message to the system Event Viewer under the "System.ServiceModel 4.0.0.0" source and the "WebHost" category. It is also possible to turn on tracing on the service in this sample. This allows the user to view the exceptions thrown by endpoint validating behavior by opening the resulting service traces using the Service Trace Viewer tool.
+Now run the client provided in the client\bin directory of this sample. An exception is thrown with the following message: "The requested service `http://localhost/servicemodelsamples/service.svc` could not be activated." This is expected because an endpoint is considered insecure by the endpoint validating behavior and prevents the service from being started. The behavior also throws an internal exception that describes which endpoint is insecure and writes a message to the system Event Viewer under the "System.ServiceModel 4.0.0.0" source and the "WebHost" category. It is also possible to turn on tracing on the service in this sample. This allows the user to view the exceptions thrown by endpoint validating behavior by opening the resulting service traces using the Service Trace Viewer tool.
 
 ### View failed endpoint validation exception messages in the Event Viewer
 
-1. Click the **Start** menu and select **Run…**.
+1. Click the **Start** menu and select **Run**.
 
 2. Type `eventvwr` and click **OK**.
 

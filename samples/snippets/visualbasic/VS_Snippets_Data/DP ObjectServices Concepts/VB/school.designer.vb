@@ -8,14 +8,17 @@
 ' </auto-generated>
 '------------------------------------------------------------------------------
 
+Imports System
+Imports System.ComponentModel
+Imports System.Data.EntityClient
 Imports System.Data.Objects
 Imports System.Data.Objects.DataClasses
-Imports System.Data.EntityClient
-Imports System.ComponentModel
-Imports System.Xml.Serialization
+Imports System.Linq
 Imports System.Runtime.Serialization
+Imports System.Xml.Serialization
 
-<Assembly: EdmSchemaAttribute("7d0cb770-5e74-4397-a4a5-29fec148c801")>
+
+<Assembly: EdmSchemaAttribute("ae35fcfc-fb4b-48cf-a3ad-973bdf10a8f7")>
 #Region "EDM Relationship Metadata"
 <Assembly: EdmRelationshipAttribute("SchoolModel", "FK_Course_Department", "Department", System.Data.Metadata.Edm.RelationshipMultiplicity.One, GetType(Department), "Course", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, GetType(Course), True)>
 <Assembly: EdmRelationshipAttribute("SchoolModel", "FK_StudentGrade_Course", "Course", System.Data.Metadata.Edm.RelationshipMultiplicity.One, GetType(Course), "StudentGrade", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, GetType(StudentGrade), True)>
@@ -40,7 +43,6 @@ Public Partial Class SchoolEntities
     ''' </summary>
     Public Sub New()
         MyBase.New("name=SchoolEntities", "SchoolEntities")
-        MyBase.ContextOptions.LazyLoadingEnabled = True
         OnContextCreated()
     End Sub
 
@@ -49,7 +51,6 @@ Public Partial Class SchoolEntities
     ''' </summary>
     Public Sub New(ByVal connectionString As String)
         MyBase.New(connectionString, "SchoolEntities")
-        MyBase.ContextOptions.LazyLoadingEnabled = True
         OnContextCreated()
     End Sub
 
@@ -58,7 +59,6 @@ Public Partial Class SchoolEntities
     ''' </summary>
     Public Sub New(ByVal connection As EntityConnection)
         MyBase.New(connection, "SchoolEntities")
-        MyBase.ContextOptions.LazyLoadingEnabled = True
         OnContextCreated()
     End Sub
 
@@ -144,6 +144,7 @@ Public Partial Class SchoolEntities
     Private _StudentGrades As ObjectSet(Of StudentGrade)
 
     #End Region
+
     #Region "AddTo Methods"
 
     ''' <summary>
@@ -182,6 +183,7 @@ Public Partial Class SchoolEntities
     End Sub
 
     #End Region
+
     #Region "Function Imports"
 
     ''' <summary>
@@ -234,9 +236,11 @@ Public Partial Class SchoolEntities
     End Function
 
     #End Region
+
 End Class
 
 #End Region
+
 #Region "Entities"
 
 ''' <summary>
@@ -354,6 +358,7 @@ Public MustInherit Partial Class Course
     End Sub
 
     #End Region
+
     #Region "Navigation Properties"
 
     ''' <summary>
@@ -424,6 +429,7 @@ Public MustInherit Partial Class Course
     End Property
 
     #End Region
+
 End Class
 
 ''' <summary>
@@ -453,6 +459,7 @@ Public Partial Class Department
     End Function
 
     #End Region
+
     #Region "Primitive Properties"
 
     ''' <summary>
@@ -583,6 +590,7 @@ Public Partial Class Department
     End Sub
 
     #End Region
+
     #Region "Navigation Properties"
 
     ''' <summary>
@@ -604,6 +612,7 @@ Public Partial Class Department
     End Property
 
     #End Region
+
 End Class
 
 ''' <summary>
@@ -631,6 +640,7 @@ Public Partial Class OfficeAssignment
     End Function
 
     #End Region
+
     #Region "Primitive Properties"
 
     ''' <summary>
@@ -697,7 +707,7 @@ Public Partial Class OfficeAssignment
         Set
             OnTimestampChanging(value)
             ReportPropertyChanging("Timestamp")
-            _Timestamp = StructuralObject.SetValidValue(value, false)
+            _Timestamp = StructuralObject.SetValidValue(value, true)
             ReportPropertyChanged("Timestamp")
             OnTimestampChanged()
         End Set
@@ -711,6 +721,7 @@ Public Partial Class OfficeAssignment
     End Sub
 
     #End Region
+
     #Region "Navigation Properties"
 
     ''' <summary>
@@ -745,6 +756,7 @@ Public Partial Class OfficeAssignment
     End Property
 
     #End Region
+
 End Class
 
 ''' <summary>
@@ -776,6 +788,7 @@ Public Partial Class OnlineCourse
     End Function
 
     #End Region
+
     #Region "Primitive Properties"
 
     ''' <summary>
@@ -804,6 +817,7 @@ Public Partial Class OnlineCourse
     End Sub
 
     #End Region
+
 End Class
 
 ''' <summary>
@@ -839,6 +853,7 @@ Public Partial Class OnsiteCourse
     End Function
 
     #End Region
+
     #Region "Primitive Properties"
 
     ''' <summary>
@@ -917,6 +932,7 @@ Public Partial Class OnsiteCourse
     End Sub
 
     #End Region
+
 End Class
 
 ''' <summary>
@@ -944,6 +960,7 @@ Public Partial Class Person
     End Function
 
     #End Region
+
     #Region "Primitive Properties"
 
     ''' <summary>
@@ -1074,6 +1091,7 @@ Public Partial Class Person
     End Sub
 
     #End Region
+
     #Region "Navigation Properties"
 
     ''' <summary>
@@ -1144,6 +1162,7 @@ Public Partial Class Person
     End Property
 
     #End Region
+
 End Class
 
 ''' <summary>
@@ -1171,6 +1190,7 @@ Public Partial Class StudentGrade
     End Function
 
     #End Region
+
     #Region "Primitive Properties"
 
     ''' <summary>
@@ -1276,6 +1296,7 @@ Public Partial Class StudentGrade
     End Sub
 
     #End Region
+
     #Region "Navigation Properties"
 
     ''' <summary>
@@ -1341,7 +1362,9 @@ Public Partial Class StudentGrade
     End Property
 
     #End Region
+
 End Class
 
 #End Region
+
 

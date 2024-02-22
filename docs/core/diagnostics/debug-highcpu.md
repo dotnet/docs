@@ -3,7 +3,6 @@ title: Debug high CPU usage - .NET Core
 description: A tutorial that walks you through debugging high CPU usage in .NET Core.
 ms.topic: tutorial
 ms.date: 07/20/2020
-recommendations: false
 ---
 
 # Debug high CPU usage in .NET Core
@@ -132,7 +131,7 @@ When analyzing an app with high CPU usage, you need a diagnostics tool that can 
 
 The `perf` tool can be used to generate .NET Core app profiles. We will demonstrate this tool, although dotnet-trace could be used as well. Exit the previous instance of the [sample debug target](/samples/dotnet/samples/diagnostic-scenarios).
 
-Set the `DOTNET_PerfMapEnabled` environment variable to cause the .NET app to create a `map` file in the `/tmp` directory. This `map` file is used by `perf` to map CPU addresses to JIT-generated functions by name. For more information, see [Export perf maps](../runtime-config/debugging-profiling.md#export-perf-maps).
+Set the `DOTNET_PerfMapEnabled` environment variable to cause the .NET app to create a `map` file in the `/tmp` directory. This `map` file is used by `perf` to map CPU addresses to JIT-generated functions by name. For more information, see [Export perf maps and jit dumps](../runtime-config/debugging-profiling.md#export-perf-maps-and-jit-dumps).
 
 [!INCLUDE [complus-prefix](../../../includes/complus-prefix.md)]
 

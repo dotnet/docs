@@ -42,7 +42,7 @@ The following table shows the operators that can't be overloaded:
 
 | Operators | Alternatives |
 | :---------: | --------------- |
-|[`x && y`](boolean-logical-operators.md#conditional-logical-and-operator-), [<code>x &#124;&#124; y</code>](boolean-logical-operators.md#conditional-logical-or-operator-)| Overload both the [`true`](true-false-operators.md) and [`false`](true-false-operators.md) operators and the [`&`](boolean-logical-operators.md#logical-and-operator-) or [<code>&#124;</code>](boolean-logical-operators.md#logical-or-operator-) operators. For more information, see [User-defined conditional logical operators](~/_csharpstandard/standard/expressions.md#11133-user-defined-conditional-logical-operators).|
+|[`x && y`](boolean-logical-operators.md#conditional-logical-and-operator-), [<code>x &#124;&#124; y</code>](boolean-logical-operators.md#conditional-logical-or-operator-)| Overload both the [`true`](true-false-operators.md) and [`false`](true-false-operators.md) operators and the [`&`](boolean-logical-operators.md#logical-and-operator-) or [<code>&#124;</code>](boolean-logical-operators.md#logical-or-operator-) operators. For more information, see [User-defined conditional logical operators](~/_csharpstandard/standard/expressions.md#12143-user-defined-conditional-logical-operators).|
 |[<code>a&#91;i&#93;</code>](member-access-operators.md#indexer-operator-), [`a?[i]`](member-access-operators.md#null-conditional-operators--and-)|Define an [indexer](../../programming-guide/indexers/index.md).|
 |[`(T)x`](type-testing-and-cast.md#cast-expression)|Define custom type conversions that can be performed by a cast expression. For more information, see [User-defined conversion operators](user-defined-conversion-operators.md).|
 |[`+=`](arithmetic-operators.md#compound-assignment), [`-=`](arithmetic-operators.md#compound-assignment), [`*=`](arithmetic-operators.md#compound-assignment), [`/=`](arithmetic-operators.md#compound-assignment), [`%=`](arithmetic-operators.md#compound-assignment), [`&=`](boolean-logical-operators.md#compound-assignment), [<code>&#124;=</code>](boolean-logical-operators.md#compound-assignment), [`^=`](boolean-logical-operators.md#compound-assignment), [`<<=`](bitwise-and-shift-operators.md#compound-assignment), [`>>=`](bitwise-and-shift-operators.md#compound-assignment), [`>>>=`](bitwise-and-shift-operators.md#compound-assignment)|Overload the corresponding binary operator. For example, when you overload the binary `+` operator, `+=` is implicitly overloaded.|
@@ -52,8 +52,8 @@ The following table shows the operators that can't be overloaded:
 
 For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
-- [Operator overloading](~/_csharpstandard/standard/expressions.md#1143-operator-overloading)
-- [Operators](~/_csharpstandard/standard/classes.md#1410-operators)
+- [Operator overloading](~/_csharpstandard/standard/expressions.md#1243-operator-overloading)
+- [Operators](~/_csharpstandard/standard/classes.md#1510-operators)
 
 ## See also
 

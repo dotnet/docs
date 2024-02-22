@@ -3,7 +3,7 @@ title: Install .NET on Fedora
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Fedora.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/15/2022
+ms.date: 11/14/2023
 ---
 
 # Install the .NET SDK or the .NET Runtime on Fedora
@@ -14,7 +14,6 @@ ms.date: 11/15/2022
 
 For more information on installing .NET without a package manager, see one of the following articles:
 
-- [Install the .NET SDK or the .NET Runtime with Snap.](linux-snap.md)
 - [Install the .NET SDK or the .NET Runtime with a script.](linux-scripted-manual.md#scripted-install)
 - [Install the .NET SDK or the .NET Runtime manually.](linux-scripted-manual.md#manual-install)
 
@@ -24,22 +23,25 @@ The following table is a list of currently supported .NET releases and the versi
 
 | Fedora | .NET      |
 |--------|-----------|
-| 37     | 6         |
-| 36     | 6, 3.1    |
-| 35     | 6, 3.1    |
-
-> [!IMPORTANT]
-> .NET 7 isn't yet ready for Fedora. This article will be updated when it's available.
+| 39     | 8, 7, 6   |
+| 38     | 8, 7, 6   |
+| 37     | 8, 7, 6   |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
+
+## Install .NET 8
+
+[!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
+
+[!INCLUDE [linux-dnf-install-80](includes/linux-install-80-dnf.md)]
+
+## Install .NET 7
+
+[!INCLUDE [linux-dnf-install-70](includes/linux-install-70-dnf.md)]
 
 ## Install .NET 6
 
 [!INCLUDE [linux-dnf-install-60](includes/linux-install-60-dnf.md)]
-
-## Install .NET Core 3.1
-
-[!INCLUDE [linux-dnf-install-31](includes/linux-install-31-dnf.md)]
 
 ## Install preview versions
 
@@ -55,7 +57,7 @@ The following table is a list of currently supported .NET releases and the versi
 
 ## Install on older distributions
 
-Older versions of Fedora don't contain .NET Core in the default package repositories. You can install .NET with [snap](linux-snap.md), through the [_dotnet-install.sh_ script](linux-scripted-manual.md#scripted-install), or use Microsoft's repository to install .NET:
+Older versions of Fedora don't contain .NET Core in the default package repositories. You can install .NET with the [_dotnet-install.sh_ script](linux-scripted-manual.md#scripted-install), or use Microsoft's repository to install .NET:
 
 01. First, add the Microsoft signing key to your list of trusted keys.
 
@@ -67,6 +69,9 @@ Older versions of Fedora don't contain .NET Core in the default package reposito
 
     | Fedora Version | Package repository |
     | -------------- | ------- |
+    | 36             | `https://packages.microsoft.com/config/fedora/36/prod.repo` |
+    | 35             | `https://packages.microsoft.com/config/fedora/35/prod.repo` |
+    | 34             | `https://packages.microsoft.com/config/fedora/34/prod.repo` |
     | 33             | `https://packages.microsoft.com/config/fedora/33/prod.repo` |
     | 32             | `https://packages.microsoft.com/config/fedora/32/prod.repo` |
     | 31             | `https://packages.microsoft.com/config/fedora/31/prod.repo` |
@@ -79,7 +84,7 @@ Older versions of Fedora don't contain .NET Core in the default package reposito
     sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/fedora/31/prod.repo
     ```
 
-[!INCLUDE [linux-dnf-install-31](./includes/linux-install-31-dnf.md)]
+[!INCLUDE [linux-dnf-install-70](./includes/linux-install-70-dnf.md)]
 
 ## How to install other versions
 
@@ -93,7 +98,6 @@ This section provides information on common errors you may get while using the p
 
 For more information on installing .NET without a package manager, see one of the following articles:
 
-- [Install the .NET SDK or the .NET Runtime with Snap.](linux-snap.md)
 - [Install the .NET SDK or the .NET Runtime with a script.](linux-scripted-manual.md#scripted-install)
 - [Install the .NET SDK or the .NET Runtime manually.](linux-scripted-manual.md#manual-install)
 
@@ -101,7 +105,7 @@ For more information on installing .NET without a package manager, see one of th
 
 [!INCLUDE [package-manager-failed-to-fetch-rpm](includes/package-manager-failed-to-fetch-rpm.md)]
 
-### Errors related to missing `fxr`, `libhostfxr.so`, or `FrameworkList.xml`
+### Errors related to missing `fxr`, `libhostfxr.so`, `FrameworkList.xml`, or `/usr/share/dotnet`
 
 For more information about solving these problems, see [Troubleshoot `fxr`, `libhostfxr.so`, and `FrameworkList.xml` errors](linux-package-mixup.md).
 

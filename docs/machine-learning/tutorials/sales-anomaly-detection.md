@@ -4,7 +4,6 @@ description: Learn how to build an anomaly detection application for product sal
 ms.date: 11/11/2021
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0612
-recommendations: false
 #Customer intent: As a developer, I want to use ML.NET in a product sales anomaly detection scenario so that I can analyze the data for anomaly spikes and change points to take the appropriate action.
 ---
 # Tutorial: Detect anomalies in product sales with ML.NET

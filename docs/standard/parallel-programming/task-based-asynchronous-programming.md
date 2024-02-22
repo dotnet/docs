@@ -1,7 +1,7 @@
 ---
 title: "Task-based asynchronous programming - .NET"
 description: In this article, learn about task-based asynchronous programming through the Task Parallel Library (TPL) in .NET.
-ms.date: "07/27/2022"
+ms.date: 01/11/2023
 ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"

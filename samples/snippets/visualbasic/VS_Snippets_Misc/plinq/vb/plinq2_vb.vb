@@ -142,7 +142,7 @@ Module Module1
         '</snippet26>
     End Sub
 
-    Sub OverParallelisation()
+    Sub OverParallelization()
         Dim customers() = {New Customer}
         Dim aDate = DateTime.Now
         '<snippet20>
@@ -160,7 +160,7 @@ Module Module1
 
             Dim nums = Enumerable.Range(1, 10000)
 
-            ' Replace NotBuffered with AutoBuffered 
+            ' Replace NotBuffered with AutoBuffered
             ' or FullyBuffered to compare behavior.
             Dim scanLines = From n In nums.AsParallel().WithMergeOptions(ParallelMergeOptions.NotBuffered)
                             Where n Mod 2 = 0

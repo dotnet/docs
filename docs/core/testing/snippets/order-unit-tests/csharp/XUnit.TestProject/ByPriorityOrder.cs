@@ -3,7 +3,9 @@ using XUnit.Project.Attributes;
 
 namespace XUnit.Project;
 
-[TestCaseOrderer("XUnit.Project.Orderers.PriorityOrderer", "XUnit.Project")]
+[TestCaseOrderer(
+    ordererTypeName: "XUnit.Project.Orderers.PriorityOrderer",
+    ordererAssemblyName: "XUnit.Project")]
 public class ByPriorityOrder
 {
     public static bool Test1Called;

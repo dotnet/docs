@@ -11,13 +11,18 @@ ms.topic: how-to
 
 Sometimes the default marshalling rules for structures aren't exactly what you need. The .NET runtimes provide a few extension points for you to customize your structure's layout and how fields are marshalled. Customizing structure layout is supported for all scenarios, but customizing field marshalling is only supported for scenarios where runtime marshalling is enabled. If [runtime marshalling is disabled](disabled-marshalling.md), then any field marshalling must be done manually.
 
-## Customizing structure layout
+> [!NOTE]
+> This article doesn't cover customizing marshalling for source-generated interop. If you're using [source-generated interop for P/Invokes](./pinvoke-source-generation.md) or [COM](./comwrappers-source-generation.md), see [customizing marshalling](./custom-marshalling-source-generation.md).
+
+## Customize structure layout
 
 .NET provides the <xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=nameWithType> attribute and the <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=nameWithType> enumeration to allow you to customize how fields are placed in memory. The following guidance will help you avoid common issues.
 
 ✔️ CONSIDER using `LayoutKind.Sequential` whenever possible.
 
 ✔️ DO only use `LayoutKind.Explicit` in marshalling when your native struct also has an explicit layout, such as a union.
+
+❌ AVOID using classes to express complex native types through inheritance.
 
 ❌ AVOID using `LayoutKind.Explicit` when marshalling structures on non-Windows platforms if you need to target runtimes before .NET Core 3.0. The .NET Core runtime before 3.0 doesn't support passing explicit structures by value to native functions on Intel or AMD 64-bit non-Windows systems. However, the runtime supports passing explicit structures by reference on all platforms.
 
@@ -111,7 +116,7 @@ public struct DefaultArray
 ```cpp
 struct DefaultArray
 {
-    int* values;
+    int32_t* values;
 };
 ```
 
@@ -327,6 +332,66 @@ struct Currency
 {
     CY dec;
 };
+```
+
+### Unions
+
+A union is a data type that can contain different types of data atop the same memory. It's a common form of data in the C language. A union can be expressed in .NET using `LayoutKind.Explicit`. It's recommended to use structs when defining a union in .NET. Using classes can cause layout issues and produce unpredictable behavior.
+
+```cpp
+struct device1_config
+{
+    void* a;
+    void* b;
+    void* c;
+};
+struct device2_config
+{
+    int32_t a;
+    int32_t b;
+};
+struct config
+{
+    int32_t type;
+
+    union
+    {
+        device1_config dev1;
+        device2_config dev2;
+    };
+};
+```
+
+```csharp
+public unsafe struct Device1Config
+{
+    void* a;
+    void* b;
+    void* c;
+}
+
+public struct Device2Config
+{
+    int a;
+    int b;
+}
+
+public struct Config
+{
+    public int Type;
+
+    public _Union Anonymous;
+
+    [StructLayout(LayoutKind.Explicit)]
+    public struct _Union
+    {
+        [FieldOffset(0)]
+        public Device1Config Dev1;
+
+        [FieldOffset(0)]
+        public Device2Config Dev2;
+    }
+}
 ```
 
 ## Marshal `System.Object`

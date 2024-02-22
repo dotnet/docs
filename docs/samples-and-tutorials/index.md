@@ -50,7 +50,7 @@ This sample demonstrates the syntax and features for C# indexers. The [completed
 
 This sample demonstrates the syntax and features for C# delegates and events. The [completed sample](https://github.com/dotnet/samples/tree/main/csharp/delegates-and-events) is available in the dotnet/samples repository on GitHub. A [second sample](https://github.com/dotnet/samples/tree/main/csharp/events) focused on events is also in the same repository.
 
-**[Expression Trees](../csharp/expression-trees.md)**
+**[Expression Trees](/dotnet/csharp/advanced-topics/expression-trees)**
 
 This sample demonstrates many of the problems that can be solved by using Expression Trees. The [completed sample](https://github.com/dotnet/samples/tree/main/csharp/expression-trees) is available in the dotnet/samples repository on GitHub.
 
@@ -79,14 +79,6 @@ This tutorial demonstrates web communications, JSON serialization, and object-or
 **[Working with LINQ](../csharp/tutorials/working-with-linq.md)**
 
 This tutorial demonstrates many of the features of LINQ and the language elements that support it. The [completed sample](https://github.com/dotnet/samples/tree/main/csharp/getting-started/console-linq) is available in the dotnet/samples repository on GitHub.
-
-**[Tutorial: Create a .NET console application using Visual Studio for Mac](../core/tutorials/with-visual-studio-mac.md)**
-
-This tutorial shows you how to build a simple .NET console app using Visual Studio for Mac.
-
-**[Create a .NET class library on macOS using Visual Studio for Mac](../core/tutorials/library-with-visual-studio-mac.md)**
-
-This tutorial shows you how to build a .NET class library using Visual Studio for Mac.
 
 **[Creating a .NET Core application that supports plugins](../core/tutorials/creating-app-with-plugin-support.md)**
 

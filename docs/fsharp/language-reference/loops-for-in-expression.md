@@ -18,7 +18,7 @@ for pattern in enumerable-expression do
 
 The `for...in` expression can be compared to the `for each` statement in other .NET languages because it is used to loop over the values in an enumerable collection. However, `for...in` also supports pattern matching over the collection instead of just iteration over the whole collection.
 
-The enumerable expression can be specified as an enumerable collection or, by using the `..` operator, as a range on an integral type. Enumerable collections include lists, sequences, arrays, sets, maps, and so on. Any type that implements `System.Collections.IEnumerable` can be used.
+The enumerable expression can be specified as an enumerable collection or, by using the `..` operator. Enumerable collections include lists, sequences, arrays, sets, maps, and so on. Any type that implements `System.Collections.IEnumerable` can be used.
 
 When you express a range by using the `..` operator, you can use the following syntax.
 
@@ -28,7 +28,7 @@ You can also use a version that includes an increment called the *skip*, as in t
 
 *start* .. *skip* .. *finish*
 
-When you use integral ranges and a simple counter variable as a pattern, the typical behavior is to increment the counter variable by 1 on each iteration, but if the range includes a skip value, the counter is incremented by the skip value instead.
+If the skip value is unspecified, then the next value generated in the collection is incremented by 1. When skip is specified, it is incremented by that value.
 
 Values matched in the pattern can also be used in the body expression.
 

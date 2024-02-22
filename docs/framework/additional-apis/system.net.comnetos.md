@@ -2,22 +2,22 @@
 description: "Learn more about: ComNetOS class"
 title: ComNetOS class (System.Net)
 ms.date: 06/12/2020
-ms.technology: dotnet-networking
-topic_type: 
+ms.subservice: networking
+topic_type:
   - apiref
-api_name: 
+api_name:
   - System.Net.ComNetOS
   - System.Net.ComNetOS.IsWin7orLater
-api_location: 
+api_location:
   - System.dll
-api_type: 
+api_type:
   - Assembly
 ---
 # ComNetOS class
 
 Provides information about the current operating system, such as its version and installation type (client or server). This class cannot be inherited.
-  
-```csharp  
+
+```csharp
 internal static class ComNetOS
 ```
 

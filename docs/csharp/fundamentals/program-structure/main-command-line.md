@@ -20,11 +20,9 @@ There can only be one entry point in a C# program. If you have more than one cla
 
 :::code language="csharp" source="snippets/main-command-line/TestClass.cs":::
 
-Starting in C# 9, you can omit the `Main` method, and write C# statements as if they were in the `Main` method, as in the following example:
+You can also use [Top-level statements](top-level-statements.md) in one file as the entry point for your application:
 
 :::code language="csharp" source="snippets/top-level-statements-1/Program.cs":::
-
-For information about how to write application code with an implicit entry point method, see [Top-level statements](top-level-statements.md).
 
 ## Overview
 
@@ -110,15 +108,18 @@ Return value = 0
 When you declare an `async` return value for `Main`, the compiler generates the boilerplate code for calling asynchronous methods in `Main`.  If you don't specify the `async` keyword, you need to write that code yourself, as shown in the following example. The code in the example ensures that your program runs until the asynchronous operation is completed:
 
 ```csharp
-public static void Main()
+class AsyncMainReturnValTest
 {
-    AsyncConsoleWork().GetAwaiter().GetResult();
-}
+    public static void Main()
+    {
+        AsyncConsoleWork().GetAwaiter().GetResult();
+    }
 
-private static async Task<int> AsyncConsoleWork()
-{
-    // Main body here
-    return 0;
+    private static async Task<int> AsyncConsoleWork()
+    {
+        // Main body here
+        return 0;
+    }
 }
 ```
 

@@ -10,9 +10,9 @@ let (|Float|_|) (str: string) =
 
 let parseNumeric str =
    match str with
-     | Integer i -> printfn "%d : Integer" i
-     | Float f -> printfn "%f : Floating point" f
-     | _ -> printfn "%s : Not matched." str
+   | Integer i -> printfn "%d : Integer" i
+   | Float f -> printfn "%f : Floating point" f
+   | _ -> printfn "%s : Not matched." str
 
 parseNumeric "1.1"
 parseNumeric "0"

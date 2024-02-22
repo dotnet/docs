@@ -10,6 +10,8 @@ ms.assetid: 5388e02b-52f5-460e-a2b5-eeafe60eeebe
 ---
 # Exception Throwing
 
+[!INCLUDE [not-current](includes/not-current.md)]
+
 Exception-throwing guidelines described in this section require a good definition of the meaning of execution failure. Execution failure occurs whenever a member cannot do what it was designed to do (what the member name implies). For example, if the `OpenFile` method cannot return an opened file handle to the caller, it would be considered an execution failure.
 
  Most developers have become comfortable with using exceptions for usage errors such as division by zero or null references. In the Framework, exceptions are used for all error conditions, including execution errors.

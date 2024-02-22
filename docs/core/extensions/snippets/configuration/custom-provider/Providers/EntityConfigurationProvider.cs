@@ -3,25 +3,24 @@ using Microsoft.Extensions.Configuration;
 
 namespace CustomProvider.Example.Providers;
 
-public class EntityConfigurationProvider : ConfigurationProvider
+public sealed class EntityConfigurationProvider(
+    string? connectionString)
+    : ConfigurationProvider
 {
-    private readonly string? _connectionString;
-
-    public EntityConfigurationProvider(string? connectionString) =>
-        _connectionString = connectionString;
-
     public override void Load()
     {
-        using var dbContext = new EntityConfigurationContext(_connectionString);
+        using var dbContext = new EntityConfigurationContext(connectionString);
 
         dbContext.Database.EnsureCreated();
 
         Data = dbContext.Settings.Any()
-            ? dbContext.Settings.ToDictionary<Settings, string, string?>(c => c.Id, c => c.Value, StringComparer.OrdinalIgnoreCase)
+            ? dbContext.Settings.ToDictionary(
+                static c => c.Id,
+                static c => c.Value, StringComparer.OrdinalIgnoreCase)
             : CreateAndSaveDefaultValues(dbContext);
     }
 
-    static IDictionary<string, string?> CreateAndSaveDefaultValues(
+    static Dictionary<string, string?> CreateAndSaveDefaultValues(
         EntityConfigurationContext context)
     {
         var settings = new Dictionary<string, string?>(
@@ -33,8 +32,7 @@ public class EntityConfigurationProvider : ConfigurationProvider
         };
 
         context.Settings.AddRange(
-            settings.Select(kvp => new Settings(kvp.Key, kvp.Value))
-                    .ToArray());
+            [.. settings.Select(static kvp => new Settings(kvp.Key, kvp.Value))]);
 
         context.SaveChanges();
 

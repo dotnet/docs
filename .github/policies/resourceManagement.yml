@@ -1,0 +1,174 @@
+id: 
+name: GitOps.PullRequestIssueManagement
+description: GitOps.PullRequestIssueManagement primitive
+owner: 
+resource: repository
+disabled: false
+where: 
+configuration:
+  resourceManagementConfiguration:
+    scheduledSearches:
+    - description: Push to live branch (scheduled publish)
+      frequencies:
+      - weekday:
+          day: Tuesday
+          time: 08:0
+      - weekday:
+          day: Wednesday
+          time: 08:0
+      - weekday:
+          day: Thursday
+          time: 08:0
+      - weekday:
+          day: Friday
+          time: 08:0
+      - weekday:
+          day: Saturday
+          time: 08:0
+      filters: []
+      actions:
+      - createPullRequest:
+          head: main
+          base: live
+          title: Merge main into live
+          body: Please don't squash-merge this PR.
+    - description: Label doc-bug issues with okr-health (scheduled search)
+      frequencies:
+      - hourly:
+          hour: 3
+      filters:
+      - isIssue
+      - isOpen
+      - hasLabel:
+          label: doc-bug
+      - isNotLabeledWith:
+          label: okr-health
+      actions:
+      - addLabel:
+          label: okr-health
+    eventResponderTasks:
+    - if:
+      - payloadType: Pull_Request
+      then:
+      - inPrLabel:
+          label: in-pr
+      description: Add in-pr label to issues
+    - if:
+      - payloadType: Pull_Request
+      - isAction:
+          action: Opened
+      - and:
+        - not:
+            activitySenderHasPermission:
+              permission: Admin
+        - not:
+            activitySenderHasPermission:
+              permission: Write
+        - not:
+            isActivitySender:
+              user: github-actions[bot]
+              issueAuthor: False
+        - not:
+            isActivitySender:
+              user: github-actions
+              issueAuthor: False
+        - not:
+            isActivitySender:
+              user: azure-sdk
+              issueAuthor: False
+        - not:
+            isActivitySender:
+              user: dependabot
+              issueAuthor: False
+      then:
+      - addLabel:
+          label: community-contribution
+      description: Label community PRs
+    - if:
+      - payloadType: Pull_Request
+      - isActivitySender:
+          user: azure-sdk
+          issueAuthor: False
+      then:
+      - approvePullRequest:
+          comment: "Approved, we'll :shipit: when all status checks pass."
+      - addLabel:
+          label: ':octocat: auto-merge'
+      description: Label PRs from the Azure SDK bot
+    - if:
+      - payloadType: Pull_Request
+      - isActivitySender:
+          user: dotnet-policy-service
+          issueAuthor: False
+      then:
+      - addLabel:
+          label: ':octocat: auto-merge'
+      description: Label PRs from Dotnet Policy Service 
+    - if:
+      - payloadType: Pull_Request
+      - hasLabel:
+          label: ':octocat: auto-merge'
+      - targetsBranch:
+          branch: main
+      then:
+      - enableAutoMerge:
+          mergeMethod: Squash
+      description: Auto-squash-merge PRs to main labeled with auto-merge
+    - if:
+      - payloadType: Pull_Request
+      - hasLabel:
+          label: ':octocat: auto-merge'
+      - targetsBranch:
+          branch: live
+      then:
+      - enableAutoMerge:
+          mergeMethod: Merge
+      description: Auto-merge PRs to live labeled with auto-merge
+    - if:
+      - payloadType: Pull_Request
+      - labelRemoved:
+          label: ':octocat: auto-merge'
+      then:
+      - disableAutoMerge
+      description: Don't auto-merge PRs with auto-merge label removed
+    - if:
+      - payloadType: Pull_Request
+      then:
+      - labelSync:
+          pattern: okr-
+      - labelSync:
+          pattern: ':checkered_flag: Release'
+      description: Synchronize OKR and release labels between issues/PRs
+    - if:
+      - payloadType: Issues
+      - or:
+        - hasLabel:
+            label: doc-bug
+        - titleContains:
+            pattern: freshness
+            isRegex: False
+        - titleContains:
+            pattern: out( |-)of( |-)date
+            isRegex: True
+      then:
+      - addLabel:
+          label: okr-health
+      description: Label issues with okr-health (event-based)
+    - if:
+      - payloadType: Pull_Request
+      - or:
+        - titleContains:
+            pattern: build warning
+            isRegex: False
+        - bodyContains:
+            pattern: build warning
+            isRegex: False
+        - titleContains:
+            pattern: freshness
+            isRegex: False
+      then:
+      - addLabel:
+          label: okr-health
+      description: Label PRs with okr-health
+onFailure: 
+onSuccess:

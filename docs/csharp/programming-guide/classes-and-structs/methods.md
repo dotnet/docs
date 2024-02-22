@@ -82,7 +82,7 @@ To use a value returned from a method, the calling method can use the method cal
 
 Using a local variable, in this case, `result`, to store a value is optional. It may help the readability of the code, or it may be necessary if you need to store the original value of the argument for the entire scope of the method.
 
-To use a value returned by reference from a method, you must declare a [ref local](../../language-reference/statements/declarations.md#ref-locals) variable if you intend to modify its value. For example, if the `Planet.GetEstimatedDistance` method returns a <xref:System.Double> value by reference, you can define it as a ref local variable with code like the following:
+To use a value returned by reference from a method, you must declare a [ref local](../../language-reference/statements/declarations.md#reference-variables) variable if you intend to modify its value. For example, if the `Planet.GetEstimatedDistance` method returns a <xref:System.Double> value by reference, you can define it as a ref local variable with code like the following:
 
 ```csharp
 ref double distance = ref Planet.GetEstimatedDistance();
@@ -127,9 +127,9 @@ The `Main` method is an example of an async method that has a return type of <xr
 
 :::code language="csharp" source="snippets/classes-and-structs/methods/Program.cs":::
 
-An async method can't declare any [ref](../../language-reference/keywords/ref.md) or [out](../../language-reference/keywords/out-parameter-modifier.md) parameters, but it can call methods that have such parameters.
+An async method can't declare any [ref](../../language-reference/keywords/ref.md) or [out](../../language-reference/keywords/method-parameters.md#out-parameter-modifier) parameters, but it can call methods that have such parameters.
 
-For more information about async methods, see [Asynchronous programming with async and await](../concepts/async/index.md) and [Async return types](../concepts/async/async-return-types.md).
+For more information about async methods, see [Asynchronous programming with async and await](../../asynchronous-programming/index.md) and [Async return types](../../asynchronous-programming/async-return-types.md).
 
 ## Expression body definitions
 
@@ -168,7 +168,7 @@ For more information, see [Iterators](../concepts/iterators.md).
 - [Static Classes and Static Class Members](static-classes-and-static-class-members.md)
 - [Inheritance](../../fundamentals/object-oriented/inheritance.md)
 - [Abstract and Sealed Classes and Class Members](abstract-and-sealed-classes-and-class-members.md)
-- [params](../../language-reference/keywords/params.md)
+- [params](../../language-reference/keywords/method-parameters.md#params-modifier)
 - [out](../../language-reference/keywords/out.md)
 - [ref](../../language-reference/keywords/ref.md)
 - [Method Parameters](../../language-reference/keywords/method-parameters.md)

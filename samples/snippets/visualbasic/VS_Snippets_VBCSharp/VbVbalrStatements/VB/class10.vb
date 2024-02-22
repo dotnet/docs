@@ -1,6 +1,4 @@
-﻿Imports System.Diagnostics
-
-Public Class Class10
+﻿Public Class Class10
     ' 892f9096-b3e2-4aee-834d-83bc4e2c379d
     ' Do...Loop Statement (Visual Basic)
 
@@ -9,7 +7,6 @@ Public Class Class10
         Example2()
         Example3()
     End Sub
-
 
     Private Sub Example1()
         '<Snippet131>
@@ -55,7 +52,6 @@ Public Class Class10
         '</Snippet133>
     End Sub
 
-
     '<Snippet134>
     Private Sub ShowText(ByVal textFilePath As String)
         If System.IO.File.Exists(textFilePath) = False Then
@@ -71,7 +67,5 @@ Public Class Class10
         End If
     End Sub
     '</Snippet134>
-
-
 
 End Class

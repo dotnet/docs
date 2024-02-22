@@ -4,14 +4,14 @@
     {
         // <canonicaluri>
         const string uriString =
-            "https://docs.microsoft.com/en-us/dotnet/path?key=value#bookmark";
+            "https://learn.microsoft.com/en-us/dotnet/path?key=value#bookmark";
 
         Uri canonicalUri = new(uriString);
         Console.WriteLine(canonicalUri.Host);
         Console.WriteLine(canonicalUri.PathAndQuery);
         Console.WriteLine(canonicalUri.Fragment);
         // Sample output:
-        //     docs.microsoft.com
+        //     learn.microsoft.com
         //     /en-us/dotnet/path?key=value
         //     #bookmark
         // </canonicaluri>

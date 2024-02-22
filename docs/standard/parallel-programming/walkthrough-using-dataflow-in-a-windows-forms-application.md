@@ -10,7 +10,7 @@ ms.topic: tutorial
 ---
 # Walkthrough: Using Dataflow in a Windows Forms Application
 
-This document demonstrates how to create a network of dataflow blocks that perform image processing in a Windows Forms application.  
+This article demonstrates how to create a network of dataflow blocks that perform image processing in a Windows Forms application.  
   
  This example loads image files from the specified folder, creates a composite image, and displays the result. The example uses the dataflow model to route images through the network. In the dataflow model, independent components of a program communicate with one another by sending messages. When a component receives a message, it performs some action and then passes the result to another component. Compare this with the control flow model, in which an application uses control structures, for example, conditional statements, loops, and so on, to control the order of operations in a program.  
   

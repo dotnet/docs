@@ -11,7 +11,10 @@ ms.assetid: 9ac1b522-77ab-4cdc-852a-20fcdc9ae498
 
 # SOS.dll (SOS debugging extension)
 
-The SOS Debugging Extension (SOS.dll) helps you debug managed programs in Visual Studio and in the Windows debugger (WinDbg.exe) by providing information about the internal Common Language Runtime (CLR) environment. This tool requires your project to have unmanaged debugging enabled. SOS.dll is automatically installed with .NET Framework. To use SOS.dll in Visual Studio, install the [Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk).
+> [!IMPORTANT]
+> This article concerns the .NET Framework version of the SOS debugging extension. For information about the newer .NET (Core) version of the tool, see [SOS debugging extension](../../core/diagnostics/sos-debugging-extension.md).
+
+The SOS debugging extension (SOS.dll) helps you debug managed programs in Visual Studio and in the Windows debugger (WinDbg.exe) by providing information about the internal Common Language Runtime (CLR) environment. This tool requires your project to have unmanaged debugging enabled. SOS.dll is automatically installed with .NET Framework. To use SOS.dll in Visual Studio, install the [Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk).
 
 ## Syntax
 

@@ -8,6 +8,9 @@ rebuild.cmd
 *.bim.layout
 *.bim_*.settings
 
+*.exe
+*.msi
+
 _site/
 api/
 _themes/
@@ -54,3 +57,9 @@ docs/core/extensions/snippets/workers/cloud-service/Properties/PublishProfiles/c
 docs/csharp/language-reference/xmldoc/snippets/xmldoc/xmldoc.xml
 
 BenchmarkDotNet.Artifacts
+*.pfx
+/samples/snippets/csharp/concepts/.editorconfig
+/.gitignore
+
+# ReplayCheck (temporary)
+.replaycheck/

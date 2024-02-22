@@ -1,8 +1,8 @@
 ﻿namespace Exceptions;
 
+    // <ShowExceptionFilter>
 public class ExceptionFilter
 {
-    // <ShowExceptionFilter>
     public static void Main()
     {
         try
@@ -22,8 +22,11 @@ public class ExceptionFilter
         Console.WriteLine($"\tMessage: {e.Message}");
         return false;
     }
-    // </ShowExceptionFilter>
+}
+// </ShowExceptionFilter>
 
+public class ExceptionFilter2
+{
     // <DemonstrateExceptionFilter>
     int GetInt(int[] array, int index)
     {

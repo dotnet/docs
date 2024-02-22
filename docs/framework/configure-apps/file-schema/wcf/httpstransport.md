@@ -6,7 +6,7 @@ ms.assetid: f6ed4bc0-7e38-4348-9259-30bf61eb9435
 ---
 # \<httpsTransport>
 
-Specifies an HTTP transport for transmitting SOAP messages for a custom binding.  
+Specifies an HTTPS transport for transmitting SOAP messages for a custom binding.  
   
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\

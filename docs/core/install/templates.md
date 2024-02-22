@@ -182,12 +182,14 @@ The .NET templates are available on NuGet, and you can install them like any oth
 | .NET Core 3.1    | [`Microsoft.DotNet.Common.ProjectTemplates.3.1`](https://www.nuget.org/packages/Microsoft.DotNet.Common.ProjectTemplates.3.1) |
 | .NET 5.0         | [`Microsoft.DotNet.Common.ProjectTemplates.5.0`](https://www.nuget.org/packages/Microsoft.DotNet.Common.ProjectTemplates.5.0) |
 | .NET 6.0         | [`Microsoft.DotNet.Common.ProjectTemplates.6.0`](https://www.nuget.org/packages/Microsoft.DotNet.Common.ProjectTemplates.6.0) |
+| .NET 7.0         | [`Microsoft.DotNet.Common.ProjectTemplates.7.0`](https://www.nuget.org/packages/Microsoft.DotNet.Common.ProjectTemplates.7.0) |
 | ASP.NET Core 2.1 | [`Microsoft.DotNet.Web.ProjectTemplates.2.1`](https://www.nuget.org/packages/Microsoft.DotNet.Web.ProjectTemplates.2.1)       |
 | ASP.NET Core 2.2 | [`Microsoft.DotNet.Web.ProjectTemplates.2.2`](https://www.nuget.org/packages/Microsoft.DotNet.Web.ProjectTemplates.2.2)       |
 | ASP.NET Core 3.0 | [`Microsoft.DotNet.Web.ProjectTemplates.3.0`](https://www.nuget.org/packages/Microsoft.DotNet.Web.ProjectTemplates.3.0)       |
 | ASP.NET Core 3.1 | [`Microsoft.DotNet.Web.ProjectTemplates.3.1`](https://www.nuget.org/packages/Microsoft.DotNet.Web.ProjectTemplates.3.1)       |
 | ASP.NET Core 5.0 | [`Microsoft.DotNet.Web.ProjectTemplates.5.0`](https://www.nuget.org/packages/Microsoft.DotNet.Web.ProjectTemplates.5.0)       |
 | ASP.NET Core 6.0 | [`Microsoft.DotNet.Web.ProjectTemplates.6.0`](https://www.nuget.org/packages/Microsoft.DotNet.Web.ProjectTemplates.6.0)       |
+| ASP.NET Core 7.0 | [`Microsoft.DotNet.Web.ProjectTemplates.7.0`](https://www.nuget.org/packages/Microsoft.DotNet.Web.ProjectTemplates.7.0)       |
 
 For example, the .NET 7 SDK includes templates for a console app targeting .NET 7. If you wanted to target .NET Core 3.1, you would need to install the 3.1 template package.
 
@@ -199,7 +201,7 @@ For example, the .NET 7 SDK includes templates for a console app targeting .NET 
 
     If you see an error message, you need to install the templates.
 
-01. Install the .NET Core 3.0 project templates.
+01. Install the .NET Core 3.1 project templates.
 
     ```dotnetcli
     dotnet new install Microsoft.DotNet.Common.ProjectTemplates.3.1

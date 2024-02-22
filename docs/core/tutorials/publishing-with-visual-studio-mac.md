@@ -1,10 +1,11 @@
 ---
 title: Publish a .NET console application using Visual Studio for Mac
 description: Learn how to use Visual Studio for Mac to create the set of files that are needed to run a .NET application.
-ms.date: 11/30/2020
-recommendations: false
+ms.date: 12/19/2022
 ---
 # Tutorial: Publish a .NET console application using Visual Studio for Mac
+
+[!INCLUDE [](~/includes/vs-mac-eol.md)]
 
 This tutorial shows how to publish a console app so that other users can run it. Publishing creates the set of files that are needed to run your application. To deploy the files, copy them to the target machine.
 
@@ -77,6 +78,10 @@ As the preceding image shows, the published output includes the following files:
 ## Additional resources
 
 - [.NET application deployment](../deploying/index.md)
+- [Publish .NET apps with the .NET CLI](../deploying/deploy-with-cli.md)
+- [`dotnet publish`](../tools/dotnet-publish.md)
+- [Tutorial: Publish a .NET console application using Visual Studio Code](publishing-with-visual-studio-code.md)
+- [Use the .NET SDK in continuous integration (CI) environments](../../devops/dotnet-cli-and-continuous-integration.md)
 
 ## Next steps
 

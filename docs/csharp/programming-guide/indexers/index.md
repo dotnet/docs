@@ -60,7 +60,7 @@ Both the get and set accessor can be implemented as expression-bodied members. I
   
 ## C# Language Specification  
 
-For more information, see [Indexers](~/_csharpstandard/standard/classes.md#149-indexers) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.
+For more information, see [Indexers](~/_csharpstandard/standard/classes.md#159-indexers) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.
   
 ## See also
 

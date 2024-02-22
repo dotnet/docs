@@ -29,7 +29,7 @@ The [\<system.Net> Element (Network Settings)](../configure-apps/file-schema/net
   
  The [\<defaultProxy> Element (Network Settings)](../configure-apps/file-schema/network/defaultproxy-element-network-settings.md) element defines the proxy server returned by the `GlobalProxySelection` class. Any <xref:System.Net.HttpWebRequest> that does not have its own <xref:System.Net.HttpWebRequest.Proxy%2A> property set to a specific value uses the default proxy. In addition to setting the proxy address, you can create a list of server addresses that will not use the proxy, and you can indicate that the proxy should not be used for local addresses.  
   
- It is important to note that the Microsoft Internet Explorer settings are combined with the configuration settings, with the latter taking precedence.  
+ It is important to note that system's Internet settings are combined with the configuration settings, with the latter taking precedence.  
   
  The following example sets the default proxy server address to `http://proxyserver`, indicates that the proxy should not be used for local addresses, and specifies that all requests to servers located in the contoso.com domain should bypass the proxy.  
   

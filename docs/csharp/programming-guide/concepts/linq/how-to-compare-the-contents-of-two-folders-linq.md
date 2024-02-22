@@ -88,10 +88,6 @@ namespace QueryCompareTwoDirs
             {  
                 Console.WriteLine(v.FullName);  
             }  
-  
-            // Keep the console window open in debug mode.  
-            Console.WriteLine("Press any key to exit.");  
-            Console.ReadKey();  
         }  
     }  
   
@@ -126,7 +122,3 @@ namespace QueryCompareTwoDirs
 
  Create a C# console application project, with `using` directives for the System.Linq and System.IO namespaces.  
   
-## See also
-
-- [LINQ to Objects (C#)](./linq-to-objects.md)
-- [LINQ and File Directories (C#)](./linq-and-file-directories.md)

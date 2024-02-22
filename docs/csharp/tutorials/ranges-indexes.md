@@ -1,8 +1,8 @@
 ---
 title: Explore ranges of data using indices and ranges
 description: This advanced tutorial teaches you to explore data using indices and ranges to examine a continuous range of a sequential data set.
-ms.date: 11/01/2022
-ms.technology: csharp-fundamentals
+ms.date: 11/14/2023
+ms.subservice: fundamentals
 ms.custom: mvc
 ---
 # Indices and ranges
@@ -25,15 +25,14 @@ Indices and ranges provide a succinct syntax for accessing single elements or ra
 This language support relies on two new types and two new operators:
 
 - <xref:System.Index?displayProperty=nameWithType> represents an index into a sequence.
-- The index from end operator `^`, which specifies that an index is relative to the end of a sequence.
+- The [index from end operator `^`](../language-reference/operators/member-access-operators.md#index-from-end-operator-), which specifies that an index is relative to the end of a sequence.
 - <xref:System.Range?displayProperty=nameWithType> represents a sub range of a sequence.
-- The range operator `..`, which specifies the start and end of a range as its operands.
+- The [range operator `..`](../language-reference/operators/member-access-operators.md#range-operator-), which specifies the start and end of a range as its operands.
 
 Let's start with the rules for indices. Consider an array `sequence`. The `0` index is the same as `sequence[0]`. The `^0` index is the same as `sequence[sequence.Length]`. The expression `sequence[^0]` does throw an exception, just as `sequence[sequence.Length]` does. For any number `n`, the index `^n` is the same as `sequence.Length - n`.
 
 ```csharp
-string[] words = new string[]
-{
+string[] words = [
                 // index from start    index from end
     "The",      // 0                   ^9
     "quick",    // 1                   ^8
@@ -44,7 +43,7 @@ string[] words = new string[]
     "the",      // 6                   ^3
     "lazy",     // 7                   ^2
     "dog"       // 8                   ^1
-};              // 9 (or words.Length) ^0
+];              // 9 (or words.Length) ^0
 ```
 
 You can retrieve the last word with the `^1` index. Add the following code below the initialization:
@@ -132,3 +131,7 @@ Console.WriteLine(string.Join(",", arrayOfFiveItems));
 // 11,2,3
 // 1,2,3,4,5
 ```
+
+## See also
+
+* [Member access operators and expressions](../language-reference/operators/member-access-operators.md)

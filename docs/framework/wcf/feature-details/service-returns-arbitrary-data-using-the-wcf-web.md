@@ -9,7 +9,7 @@ ms.assetid: 0283955a-b4ae-458d-ad9e-6fbb6f529e3d
 
 Sometimes developers must have full control of how data is returned from a service operation. This is the case when a service operation must return data in a format not supported by WCF. This topic discusses using the WCF WEB HTTP Programming Model to create such a service. This service has one operation that returns a stream.  
   
-### To implement the service contract  
+## To implement the service contract  
   
 1. Define the service contract. The contract is called `IImageServer` and has one method called `GetImage` that returns a <xref:System.IO.Stream>.  
   
@@ -52,7 +52,7 @@ Sometimes developers must have full control of how data is returned from a servi
   
      This sets the content type header to `"image/jpeg"`. Although this sample shows how to return a .jpg file, it can be modified to return any type of data that is required, in any format. The operation must retrieve or generate the data and then write it to a stream.  
   
-### To host the service  
+## To host the service  
   
 1. Create a console application to host the service.  
   
@@ -89,7 +89,7 @@ Sometimes developers must have full control of how data is returned from a servi
     host.Open();  
     ```  
   
-6. Wait until the user presses ENTER to terminate the service.  
+6. Wait until the user presses <kbd>Enter</kbd> to terminate the service.  
   
     ```csharp
     Console.WriteLine("Service is running");  
@@ -98,11 +98,11 @@ Sometimes developers must have full control of how data is returned from a servi
     host.Close();  
     ```  
   
-### To call the raw service using Internet Explorer  
+## To call the raw service using a browser
   
-1. Run the service, you should see the following output from the service. `Service is running Press ENTER to close the host`  
+1. Run the service, you should see the following output from the service: `Service is running Press ENTER to close the host`  
   
-2. Open Internet Explorer and type in `http://localhost:8000/Service/GetImage?width=50&height=40` you should see a yellow rectangle with a blue diagonal line through the center.  
+2. Open a web browser and enter `http://localhost:8000/Service/GetImage?width=50&height=40`. You should see a yellow rectangle with a blue diagonal line through the center.  
   
 ## Example  
 
@@ -171,7 +171,7 @@ namespace RawImageService
   
 ## Compiling the Code  
   
-- When compiling the sample code reference System.ServiceModel.dll and System.ServiceModel.Web.dll.  
+When compiling the sample code, reference System.ServiceModel.dll and System.ServiceModel.Web.dll.  
   
 ## See also
 

@@ -14,6 +14,7 @@ public class Example12
       return date.DayOfWeek.ToString("G");
    }
 }
+
 // The example displays the following output:
 //        7/1/2013 is a Monday.
 // </Snippet19>

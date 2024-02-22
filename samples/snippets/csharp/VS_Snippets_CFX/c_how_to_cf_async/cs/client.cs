@@ -28,7 +28,7 @@ namespace Microsoft.ServiceModel.Samples
           IAsyncResult arAdd = channelClient.BeginAdd(value1, value2, AddCallback, channelClient);
           Console.WriteLine("Add({0},{1})", value1, value2);
           //</snippet3>
-          // BeginSubstract
+          // BeginSubtract
           value1 = 145.00D;
           value2 = 76.54D;
           IAsyncResult arSubtract = channelClient.BeginSubtract(value1, value2, SubtractCallback, channelClient);

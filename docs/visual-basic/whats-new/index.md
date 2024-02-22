@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "new features, Visual Basic"
   - "what's new [Visual Basic]"
   - "Visual Basic, what's new"
+ms.custom: UpdateFrequency1
 ms.assetid: d7e97396-7f42-4873-a81c-4ebcc4b6ca02
 ---
 # What's new for Visual Basic

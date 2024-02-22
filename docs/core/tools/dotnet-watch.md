@@ -146,6 +146,10 @@ As an alternative to disabling response compression, manually add the browser re
 - **`DOTNET_WATCH_SUPPRESS_STATIC_FILE_HANDLING`**
 
   When set to `1` or `true`, `dotnet watch` won't do special handling for static content files. `dotnet watch` sets MSBuild property `DotNetWatchContentFiles` to `false`.
+  
+- **`DOTNET_WATCH_RESTART_ON_RUDE_EDIT`**
+
+  When set to `1` or `true`, `dotnet watch` will always restart on rude edits instead of asking.
 
 ## Files watched by default
 

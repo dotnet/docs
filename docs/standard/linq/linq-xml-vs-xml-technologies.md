@@ -41,7 +41,7 @@ XSLT is XML, and that's why it can be programmatically manipulated.
 
 MSXML is the COM-based technology for processing XML that's included with Microsoft Windows. MSXML provides a native implementation of the DOM with support for XPath and XSLT. It also contains the SAX2 non-caching, event-based parser.
 
-MSXML performs well, is secure by default in most scenarios, and can be accessed in Internet Explorer for doing client-side XML processing in AJAX-style applications. MSXML can be used from any programming language that supports COM, including C++, JavaScript, and Visual Basic 6.0.
+MSXML performs well, is secure by default in most scenarios, and can be accessed in a browser for doing client-side XML processing in AJAX-style applications. MSXML can be used from any programming language that supports COM, including C++, JavaScript, and Visual Basic 6.0.
 
 MSXML isn't recommended for use in managed code based on the CLR.
 

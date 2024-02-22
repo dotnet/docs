@@ -5,41 +5,42 @@ using System.Threading;
 
 public class Example14
 {
-   public static void Main14()
-   {
-      DateTime dateForMonth = new DateTime(2013, 1, 1);
-      double[] temperatures = {  3.4, 3.5, 7.6, 10.4, 14.5, 17.2,
+    public static void Main14()
+    {
+        DateTime dateForMonth = new DateTime(2013, 1, 1);
+        double[] temperatures = {  3.4, 3.5, 7.6, 10.4, 14.5, 17.2,
                                 19.9, 18.2, 15.9, 11.3, 6.9, 5.3 };
 
-      Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("fr-FR");
-      Console.WriteLine("Current Culture: {0}", CultureInfo.CurrentCulture.DisplayName);
-      // Build the format string dynamically so we allocate enough space for the month name.
-      string fmtString = "{0,-" + GetLongestMonthNameLength().ToString() + ":MMMM}     {1,4}";
-      for (int ctr = 0; ctr < temperatures.Length; ctr++)
-         Console.WriteLine(fmtString,
-                           dateForMonth.AddMonths(ctr),
-                           temperatures[ctr]);
+        Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("fr-FR");
+        Console.WriteLine("Current Culture: {0}", CultureInfo.CurrentCulture.DisplayName);
+        // Build the format string dynamically so we allocate enough space for the month name.
+        string fmtString = "{0,-" + GetLongestMonthNameLength().ToString() + ":MMMM}     {1,4}";
+        for (int ctr = 0; ctr < temperatures.Length; ctr++)
+            Console.WriteLine(fmtString,
+                              dateForMonth.AddMonths(ctr),
+                              temperatures[ctr]);
 
-      Console.WriteLine();
+        Console.WriteLine();
 
-      Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-US");
-      Console.WriteLine("Current Culture: {0}", CultureInfo.CurrentCulture.DisplayName);
-      fmtString = "{0,-" + GetLongestMonthNameLength().ToString() + ":MMMM}     {1,4}";
-      for (int ctr = 0; ctr < temperatures.Length; ctr++)
-         Console.WriteLine(fmtString,
-                           dateForMonth.AddMonths(ctr),
-                           temperatures[ctr]);
-   }
+        Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-US");
+        Console.WriteLine("Current Culture: {0}", CultureInfo.CurrentCulture.DisplayName);
+        fmtString = "{0,-" + GetLongestMonthNameLength().ToString() + ":MMMM}     {1,4}";
+        for (int ctr = 0; ctr < temperatures.Length; ctr++)
+            Console.WriteLine(fmtString,
+                              dateForMonth.AddMonths(ctr),
+                              temperatures[ctr]);
+    }
 
-   private static int GetLongestMonthNameLength()
-   {
-      int length = 0;
-      foreach (var nameOfMonth in DateTimeFormatInfo.CurrentInfo.MonthNames)
-         if (nameOfMonth.Length > length) length = nameOfMonth.Length;
+    private static int GetLongestMonthNameLength()
+    {
+        int length = 0;
+        foreach (var nameOfMonth in DateTimeFormatInfo.CurrentInfo.MonthNames)
+            if (nameOfMonth.Length > length) length = nameOfMonth.Length;
 
-      return length;
-   }
+        return length;
+    }
 }
+
 // The example displays the following output:
 //    Current Culture: French (France)
 //       janvier        3,4

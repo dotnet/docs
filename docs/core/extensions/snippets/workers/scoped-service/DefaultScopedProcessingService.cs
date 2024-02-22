@@ -1,13 +1,9 @@
 ﻿namespace App.ScopedService;
 
-public sealed class DefaultScopedProcessingService : IScopedProcessingService
+public sealed class DefaultScopedProcessingService(
+    ILogger<DefaultScopedProcessingService> logger) : IScopedProcessingService
 {
     private int _executionCount;
-    private readonly ILogger<DefaultScopedProcessingService> _logger;
-
-    public DefaultScopedProcessingService(
-        ILogger<DefaultScopedProcessingService> logger) =>
-        _logger = logger;
 
     public async Task DoWorkAsync(CancellationToken stoppingToken)
     {
@@ -15,7 +11,7 @@ public sealed class DefaultScopedProcessingService : IScopedProcessingService
         {
             ++ _executionCount;
 
-            _logger.LogInformation(
+            logger.LogInformation(
                 "{ServiceName} working, execution count: {Count}",
                 nameof(DefaultScopedProcessingService),
                 _executionCount);

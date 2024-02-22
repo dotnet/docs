@@ -5,8 +5,6 @@ author: camsoper
 ms.author: casoper
 ms.date: 12/05/2022
 ms.topic: tutorial
-ms.prod: dotnet
-recommendations: false
 ---
 <!--markdownlint-disable DOCSMD011 -->
 # Display text on an LCD
@@ -17,17 +15,21 @@ Many manufacturers sell 20x4 LCD character displays with an integrated GPIO expa
 
 In this topic, you will use .NET to display text on an LCD character display using an I<sup>2</sup>C GPIO expander.
 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?show=dotnet-iot-for-beginners&ep=iot-sensors-and-displays-with-i²c-and-dotnet-dotnet-iot-for-beginners#time=5m6s]
+
 ## Prerequisites
 
-- [!INCLUDE [prereq-rpi](../includes/prereq-rpi.md)]
+- [!INCLUDE [prereq-sbc](../includes/prereq-sbc.md)]
 - [20x4 LCD Character Display with I<sup>2</sup>C interface](https://www.bing.com/images/search?q=20x4+lcd+display+with+i2c)
 - Jumper wires
 - Breadboard (optional/recommended)
 - Raspberry Pi GPIO breakout board (optional/recommended)
 - [!INCLUDE [tutorial-prereq-dotnet](../includes/tutorial-prereq-dotnet.md)]
 
+[!INCLUDE [rpi-note](../includes/rpi-note.md)]
+
 > [!NOTE]
-> There are many manufacturers of LCD character displays. Most designs are identical, and the manufacturer shouldn't make any difference to the functionality. For reference, this tutorial was developed with the [SunFounder LCD2004](https://www.sunfounder.com/lcd2004-module.html).
+> There are many manufacturers of LCD character displays. Most designs are identical, and the manufacturer shouldn't make any difference to the functionality. For reference, this tutorial was developed with the [SunFounder LCD2004](https://www.sunfounder.com/products/i2c-lcd2004-module).
 
 [!INCLUDE [prepare-pi-i2c](../includes/prepare-pi-i2c.md)]
 
@@ -44,8 +46,7 @@ Refer to the following figures as needed:
 
 | I<sup>2</sup>C interface (back of display) | Raspberry Pi GPIO |
 |---------------------------------|-------------------|
-| :::image type="content" source="../media/character-display-i2c-thumb.png" alt-text="An image of the back of the character display showing the I2C GPIO expander." lightbox="../media/character-display-i2c.png"::: | :::image type="content" source="../media/gpio-pinout-diagram-thumb.png" alt-text="A diagram showing the pinout of the Raspberry Pi GPIO header. Image courtesy Raspberry Pi Foundation." lightbox="../media/gpio-pinout-diagram.png":::<br />[Image courtesy Raspberry Pi Foundation](https://www.raspberrypi.com/documentation/computers/os.html#gpio-and-the-40-pin-header).
- |
+| :::image type="content" source="../media/character-display-i2c-thumb.png" alt-text="An image of the back of the character display showing the I2C GPIO expander." lightbox="../media/character-display-i2c.png"::: | :::image type="content" source="../media/gpio-pinout-diagram-thumb.png" alt-text="A diagram showing the pinout of the Raspberry Pi GPIO header. Image courtesy Raspberry Pi Foundation." lightbox="../media/gpio-pinout-diagram.png":::<br />[Image courtesy Raspberry Pi Foundation](https://www.raspberrypi.com/documentation/computers/os.html#gpio-and-the-40-pin-header). |
 
 [!INCLUDE [gpio-breakout](../includes/gpio-breakout.md)]
 
@@ -67,7 +68,7 @@ Complete the following steps in your preferred development environment:
 
     In the preceding code:
 
-    - A [using declaration](../../csharp/language-reference/keywords/using-statement.md) creates an instance of `I2cDevice` by calling `I2cDevice.Create` and passing in a new `I2cConnectionSettings` with the `busId` and `deviceAddress` parameters. This `I2cDevice` represents the I<sup>2</sup>C bus. The `using` declaration ensures the object is disposed and hardware resources are released properly.
+    - A [using declaration](../../csharp/language-reference/statements/using.md) creates an instance of `I2cDevice` by calling `I2cDevice.Create` and passing in a new `I2cConnectionSettings` with the `busId` and `deviceAddress` parameters. This `I2cDevice` represents the I<sup>2</sup>C bus. The `using` declaration ensures the object is disposed and hardware resources are released properly.
 
         > [!WARNING]
         > The device address for the GPIO expander depends on the chip used by the manufacturer. GPIO expanders equipped with a PCF8574 use the address `0x27`, while those using PCF8574A chips use `0x3F`. Consult your LCD's documentation.

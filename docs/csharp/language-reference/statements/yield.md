@@ -10,7 +10,7 @@ helpviewer_keywords:
 ---
 # yield statement - provide the next element
 
-You use the `yield` statement in an [iterator](../../iterators.md) to provide the next value from a sequence when iterating the sequence. The `yield` statement has the two following forms:
+You use the `yield` statement in an [iterator](../../iterators.md) to provide the next value or signal the end of an iteration. The `yield` statement has the two following forms:
 
 - `yield return`: to provide the next value in iteration, as the following example shows:
 
@@ -35,7 +35,7 @@ In the preceding examples, the return type of iterators is <xref:System.Collecti
 
 You can't use the `yield` statements in:
 
-- methods with [in](../keywords/in-parameter-modifier.md), [ref](../keywords/ref.md), or [out](../keywords/out-parameter-modifier.md) parameters
+- methods with [in](../keywords/method-parameters.md#in-parameter-modifier), [ref](../keywords/ref.md), or [out](../keywords/method-parameters.md#out-parameter-modifier) parameters
 - [lambda expressions](../operators/lambda-expressions.md) and [anonymous methods](../operators/delegate-operator.md)
 - methods that contain [unsafe blocks](../keywords/unsafe.md)
 
@@ -49,7 +49,7 @@ As the preceding example shows, when you start to iterate over an iterator's res
 
 ## C# language specification
 
-For more information, see [The yield statement](~/_csharpstandard/standard/statements.md#1215-the-yield-statement) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For more information, see [The yield statement](~/_csharpstandard/standard/statements.md#1315-the-yield-statement) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 

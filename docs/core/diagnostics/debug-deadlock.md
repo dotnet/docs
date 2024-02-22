@@ -3,7 +3,6 @@ title: Debugging deadlock - .NET Core
 description: A tutorial that walks you through debugging a locking issue in .NET Core.
 ms.topic: tutorial
 ms.date: 07/20/2020
-recommendations: false
 ---
 
 # Debug a deadlock in .NET Core

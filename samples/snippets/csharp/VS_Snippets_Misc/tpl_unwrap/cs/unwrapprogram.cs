@@ -96,15 +96,15 @@ namespace Unwrap
             // and the following method will not compile.
             // With Unwrap: antecedent.Result = byte and
             // we can work directly with the result of the Compute method.
-            var lastStep = stepTwo.ContinueWith( (antecedant) =>
+            var lastStep = stepTwo.ContinueWith( (antecedent) =>
                 {
-                    if (antecedant.Result >= threshold)
+                    if (antecedent.Result >= threshold)
                     {
                       return Task.Factory.StartNew( () =>  Console.WriteLine("Program complete. Final = 0x{0:x} threshold = 0x{1:x}", stepTwo.Result, threshold));
                     }
                     else
                     {
-                        return DoSomeOtherAsyncronousWork(stepTwo.Result, threshold);
+                        return DoSomeOtherAsynchronousWork(stepTwo.Result, threshold);
                     }
                 });
 
@@ -122,7 +122,7 @@ namespace Unwrap
             return bytes;
         }
 
-        static Task DoSomeOtherAsyncronousWork(int i, byte b2)
+        static Task DoSomeOtherAsynchronousWork(int i, byte b2)
         {
             return Task.Factory.StartNew(() =>
                 {

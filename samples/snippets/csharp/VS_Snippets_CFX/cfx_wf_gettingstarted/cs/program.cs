@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Linq;
 using System.Activities;
-using System.Activities.Statements;
-//<snippet3>
-using System.Threading;
 //</snippet3>
 //<snippet5>
 using System.Collections.Generic;
+//<snippet3>
+using System.Threading;
 //</snippet5>
 
 namespace WorkflowConsoleApplication1
@@ -29,7 +27,7 @@ namespace WorkflowConsoleApplication1
             //</snippet6>
 
             //<snippet7>
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 int Turns = Convert.ToInt32(e.Outputs["Turns"]);
                 Console.WriteLine("Congratulations, you guessed the number in {0} turns.", Turns);
@@ -38,20 +36,20 @@ namespace WorkflowConsoleApplication1
             };
             //</snippet7>
 
-            wfApp.Aborted = delegate(WorkflowApplicationAbortedEventArgs e)
+            wfApp.Aborted = delegate (WorkflowApplicationAbortedEventArgs e)
             {
                 Console.WriteLine(e.Reason);
                 syncEvent.Set();
             };
 
-            wfApp.OnUnhandledException = delegate(WorkflowApplicationUnhandledExceptionEventArgs e)
+            wfApp.OnUnhandledException = delegate (WorkflowApplicationUnhandledExceptionEventArgs e)
             {
                 Console.WriteLine(e.UnhandledException.ToString());
                 return UnhandledExceptionAction.Terminate;
             };
 
             //<snippet9>
-            wfApp.Idle = delegate(WorkflowApplicationIdleEventArgs e)
+            wfApp.Idle = delegate (WorkflowApplicationIdleEventArgs e)
             {
                 idleEvent.Set();
             };

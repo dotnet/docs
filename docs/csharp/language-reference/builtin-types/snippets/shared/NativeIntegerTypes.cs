@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Text;
-
-namespace builtin_types
+﻿namespace builtin_types
 {
     public static class NativeIntegerTypes
     {

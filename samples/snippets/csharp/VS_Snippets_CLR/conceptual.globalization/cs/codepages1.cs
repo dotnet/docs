@@ -5,7 +5,7 @@ using System.Text;
 
 public class Example
 {
-    public static void Main()
+    public static void CodePages()
     {
         // Represent Greek uppercase characters in code page 737.
         char[] greekChars =
@@ -43,6 +43,7 @@ public class Example
         Console.WriteLine(data);
     }
 }
+
 // The example displays the following output:
 //       ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ
 //       €‚ƒ„…†‡ˆ‰Š‹ŒŽ‘’""•–—

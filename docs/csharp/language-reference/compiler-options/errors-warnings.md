@@ -1,7 +1,7 @@
 ---
 description: "C# Compiler Options for errors and warnings. These options suppress or enable warnings, and control warnings as errors."
 title: "C# Compiler Options - errors and warnings"
-ms.date: 05/11/2022
+ms.date: 10/30/2023
 f1_keywords: 
   - "cs.build.options"
 helpviewer_keywords: 
@@ -44,7 +44,7 @@ The element value is the warning level you want displayed for the compilation: L
 | 1 | Displays severe warning messages. |
 | 2 | Displays level 1 warnings plus certain, less-severe warnings, such as warnings about hiding class members. |
 | 3 | Displays level 2 warnings plus certain, less-severe warnings, such as warnings about expressions that always evaluate to `true` or `false`. |
-| 4   (the default)|Displays all level 3 warnings plus informational warnings. |
+| 4 (default) | Displays all level 3 warnings plus informational warnings. |
 
 > [!WARNING]
 > The compiler command line accepts values greater than 4 to enable [warning wave warnings](../compiler-messages/warning-waves.md). However, the .NET SDK sets the *WarningLevel* to match the *AnalysisLevel* in your project file.
@@ -52,6 +52,12 @@ The element value is the warning level you want displayed for the compilation: L
 To get information about an error or warning, you can look up the error code in the [Help Index](/visualstudio/help-viewer/install-manage-local-content). For other ways to get information about an error or warning, see [C# Compiler Errors](../compiler-messages/index.md). Use [**TreatWarningsAsErrors**](#treatwarningsaserrors) to treat all warnings as errors. Use [**DisabledWarnings**](#nowarn) to disable certain warnings.  
 
 ## Analysis level
+
+The **AnalysisLevel** option specifies additional [warning waves](../compiler-messages/warning-waves.md) and analyzers to enable. Warning wave warnings are additional checks that improve your code, or ensure it will be compatible with upcoming releases. Analyzers provide lint-like capability to improve your code.
+
+```xml
+<AnalysisLevel>preview</AnalysisLevel>
+```
 
 | Analysis level   | Meaning |
 |------------------|---------|
@@ -68,7 +74,7 @@ To get information about an error or warning, you can look up the error code in 
 
 ## TreatWarningsAsErrors
 
-The **TreatWarningsAsErrors** option treats all warnings as errors. You can also use the **TreatWarningsAsErrors** to set only some warnings as errors. If you turn on **TreatWarningsAsErrors**, you can use **WarningsNotAsErrors** to list warnings that shouldn't be treated as errors.
+The **TreatWarningsAsErrors** option treats all warnings as errors. You can also use the **WarningsAsErrors** to set only some warnings as errors. If you turn on **TreatWarningsAsErrors**, you can use **WarningsNotAsErrors** to list warnings that shouldn't be treated as errors.
 
 ```xml
 <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
@@ -99,19 +105,33 @@ You use **WarningsAsErrors** to configure a set of warnings as errors. Use **War
 
 ## NoWarn
 
-The **NoWarn** option lets you suppress the compiler from displaying one or more warnings. Separate multiple warning numbers with a comma.
+The **NoWarn** option lets you suppress the compiler from displaying one or more warnings, where `warningnumber1`, `warningnumber2` are warning numbers that you want the compiler to suppress. Separate multiple warning numbers with a comma.
 
 ```xml
-<NoWarn>number1, number2</NoWarn>
+<NoWarn>warningnumber1,warningnumber2</NoWarn>
 ```
 
-`number1`, `number2` Warning number(s) that you want the compiler to suppress. You specify the numeric part of the warning identifier. For example, if you want to suppress *CS0028*, you could specify `<NoWarn>28</NoWarn>`. The compiler silently ignores warning numbers passed to **NoWarn** that were valid in previous releases, but that have been removed. For example, *CS0679* was valid in the compiler in Visual Studio .NET 2002 but was removed later.
+You need to specify only the numeric part of the warning identifier. For example, if you want to suppress *CS0028*, you could specify `<NoWarn>28</NoWarn>`. The compiler silently ignores warning numbers passed to **NoWarn** that were valid in previous releases, but that have been removed. For example, *CS0679* was valid in the compiler in Visual Studio .NET 2002 but was removed later.
 
- The following warnings cannot be suppressed by the **NoWarn** option:
+The following warnings can't be suppressed by the **NoWarn** option:
 
 - Compiler Warning (level 1) CS2002  
 - Compiler Warning (level 1) CS2023
 - Compiler Warning (level 1) CS2029
+
+Note that warnings are intended to be an indication of a potential problem with your code, so you should understand the risks of disabling any particular warning. Use **NoWarn** only when you're certain that a warning is a false positive and can't possibly be a runtime bug.
+
+You might want to use a more targeted approach to disabling warnings:
+
+- Most compilers provide ways to disable warnings just for certain lines of code, so that you can still review the warnings if they occur elsewhere in the same project. To suppress a warning only in a specific part of the code in C#, use [#pragma warning](../preprocessor-directives.md#pragma-warning).
+
+- If your goal is to see more concise and focused output in your build log, you might want to change the build log verbosity. For more information, see [How to: View, save, and configure build log files](/visualstudio/ide/how-to-view-save-and-configure-build-log-files).
+
+To add warning numbers to any previously set value for **NoWarn** without overwriting it, reference `$(NoWarn)` as shown in the following example:
+
+```xml
+   <NoWarn>$(NoWarn);newwarningnumber3;newwarningnumber4</NoWarn>
+```
 
 ## CodeAnalysisRuleSet
 

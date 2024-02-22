@@ -12,7 +12,7 @@ jobs:
       issues: write
 
     steps:
-    - uses: actions/stale@5ebf00ea0e4c1561e9b43a292ed34424fb1d4578
+    - uses: actions/stale@28ca1036281a5e5922ead5184a1bbf96e5fc984e
       with:
         start-date: '2022-03-01T00:00:00Z' # ISO 8601 or RFC 2822
         repo-token: ${{ secrets.GITHUB_TOKEN }}

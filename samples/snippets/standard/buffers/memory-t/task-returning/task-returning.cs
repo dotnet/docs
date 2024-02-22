@@ -11,7 +11,8 @@ public class Example
     {
         string defensiveCopy = message.ToString();
         // Run in the background so that we don't block the main thread while performing IO.
-        Task.Run(() => {
+        Task.Run(() =>
+        {
             StreamWriter sw = File.AppendText(@".\input-numbers.dat");
             sw.WriteLine(defensiveCopy);
             sw.Flush();
@@ -28,7 +29,12 @@ public class Example
             var span = memory.Span;
             while (true)
             {
-                int value = Int32.Parse(Console.ReadLine());
+                string? s = Console.ReadLine();
+
+                if (s is null)
+                    return;
+
+                int value = Int32.Parse(s);
                 if (value < 0)
                     return;
 

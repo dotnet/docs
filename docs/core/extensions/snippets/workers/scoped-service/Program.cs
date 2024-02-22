@@ -1,11 +1,8 @@
 ﻿using App.ScopedService;
 
-using IHost host = Host.CreateDefaultBuilder(args)
-    .ConfigureServices(services =>
-    {
-        services.AddHostedService<ScopedBackgroundService>();
-        services.AddScoped<IScopedProcessingService, DefaultScopedProcessingService>();
-    })
-    .Build();
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+builder.Services.AddHostedService<ScopedBackgroundService>();
+builder.Services.AddScoped<IScopedProcessingService, DefaultScopedProcessingService>();
 
-await host.RunAsync();
+IHost host = builder.Build();
+host.Run();

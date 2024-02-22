@@ -14,7 +14,7 @@ Module ForWithThreadLocal
         Parallel.For(Of Long)(0, nums.Length, Function() 0, Function(j, [loop], subtotal)
                                                                 subtotal += nums(j)
                                                                 Return subtotal
-                                                            End Function, Function(x) Interlocked.Add(total, x))
+                                                            End Function, Function(subtotal) Interlocked.Add(total, subtotal))
 
         Console.WriteLine("The total is {0:N0}", total)
         Console.WriteLine("Press any key to exit")

@@ -1,9 +1,9 @@
 ---
 title: Implement the IHostedService interface
-description: Learn how to implement a custom IHostedService interface with .NET.
+description: Learn how to implement a custom IHostedService interface in C#, much like the inbuilt .NET BackgroundService.
 author: IEvangelist
 ms.author: dapine
-ms.date: 04/20/2022
+ms.date: 12/13/2023
 ms.topic: tutorial
 ---
 
@@ -23,7 +23,7 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-- The [.NET 5.0 SDK or later](https://dotnet.microsoft.com/download/dotnet)
+- The [.NET 8.0 SDK or later](https://dotnet.microsoft.com/download/dotnet/8.0)
 - A .NET integrated development environment (IDE)
   - Feel free to use [Visual Studio](https://visualstudio.microsoft.com)
 
@@ -36,7 +36,7 @@ The timer-based background service makes use of the <xref:System.Threading.Timer
 
 Replace the contents of the `Worker` from the template with the following C# code, and rename the file to *TimerService.cs*:
 
-:::code source="snippets/workers/timer-service/TimerService.cs" highlight="35,42-45":::
+:::code source="snippets/workers/timer-service/TimerService.cs" highlight="32,39-42":::
 
 > [!IMPORTANT]
 > The `Worker` was a subclass of <xref:Microsoft.Extensions.Hosting.BackgroundService>. Now, the `TimerService` implements both the <xref:Microsoft.Extensions.Hosting.IHostedService>, and <xref:System.IAsyncDisposable> interfaces.
@@ -50,9 +50,9 @@ When <xref:Microsoft.Extensions.Hosting.IHostedService.StartAsync%2A> is called,
 
 Replace the existing `Program` contents with the following C# code:
 
-:::code source="snippets/workers/timer-service/Program.cs" highlight="6":::
+:::code source="snippets/workers/timer-service/Program.cs" highlight="4":::
 
-The service is registered in `IHostBuilder.ConfigureServices` (*Program.cs*) with the `AddHostedService` extension method. This is the same extension method you use when registering <xref:Microsoft.Extensions.Hosting.BackgroundService> subclasses, as they both implement the <xref:Microsoft.Extensions.Hosting.IHostedService> interface.
+The service is registered in (*Program.cs*) with the `AddHostedService` extension method. This is the same extension method you use when registering <xref:Microsoft.Extensions.Hosting.BackgroundService> subclasses, as they both implement the <xref:Microsoft.Extensions.Hosting.IHostedService> interface.
 
 For more information on registering services, see [Dependency injection in .NET](dependency-injection.md).
 

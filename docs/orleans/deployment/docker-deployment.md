@@ -29,14 +29,14 @@ This article assumes that you have the following prerequisites installed:
 
 * [Docker](https://www.docker.com/community-edition#/download) - Docker4X has an easy-to-use installer for the major supported platforms. It contains Docker engine and also Docker Swarm.
 * [Kubernetes (K8s)](https://kubernetes.io/docs/tutorials/stateless-application/hello-minikube/) - Google's offer for Container Orchestration. It contains guidance to install _Minikube_ (a local deployment of K8s) and _kubectl_ along with all its dependencies.
-* [.NET Core](https://dot.net) - Cross-platform flavor of .NET
+* [.NET](https://dotnet.microsoft.com/download) - Cross-platform flavor of .NET
 * [Visual Studio Code (VSCode)](https://code.visualstudio.com/) - You can use whatever IDE you want. VSCode is cross-platform so we are using it to ensure it works on all platforms. Once you installed VSCode, install the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp).
 
 > [!IMPORTANT]
 > You are not required to have Kubernetes installed if you are not going to use it. Docker4X installer already includes Swarm so no extra installation is required to use it.
 
 > [!NOTE]
-> On Windows, Docker installer will enable Hyper-V at the installation process. As this article and its examples are using .NET Core, the container images used are based on **Windows Server NanoServer**. If you don't plan to use .NET Core and will target .NET 4.6.1 full framework, the image used should be **Windows Server Core** and the 1.4+ version of Orleans (which supports only .net full framework).
+> On Windows, Docker installer will enable Hyper-V at the installation process. As this article and its examples are using .NET Core, the container images used are based on **Windows Server NanoServer**. If you don't plan to use .NET Core and will target .NET 4.6.1 full framework, the image used should be **Windows Server Core** and the 1.4+ version of Orleans (which supports only .NET full framework).
 
 ## Create Orleans solution
 

@@ -56,7 +56,7 @@ The Azure grain directory is configured like this:
 ```csharp
 siloBuilder.AddAzureTableGrainDirectory(
     "my-grain-directory",
-    options => options.ConnectionString =  = azureConnectionString);
+    options => options.ConnectionString = azureConnectionString);
 ```
 
 You can configure multiple directories with different names to use for different grain classes:
@@ -71,5 +71,5 @@ siloBuilder
         options => options.ConfigurationOptions = redisConfiguration2)
     .AddAzureTableGrainDirectory(
         "azure-directory",
-        options => options.ConnectionString =  = azureConnectionString);
+        options => options.ConnectionString = azureConnectionString);
 ```

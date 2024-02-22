@@ -2,7 +2,7 @@
 title: Code analysis in .NET
 titleSuffix: ""
 description: Learn about source code analysis in the .NET SDK.
-ms.date: 12/07/2022
+ms.date: 12/14/2023
 ms.topic: overview
 ms.custom: updateeachrelease
 helpviewer_keywords:
@@ -29,9 +29,40 @@ If rule violations are found by an analyzer, they're reported as a suggestion, w
 
 ### Enabled rules
 
+# [.NET 8](#tab/net-8)
+
+The following rules are enabled, by default, as errors or warnings in .NET 8. Additional rules are enabled as suggestions.
+
+| Diagnostic ID | Category | Severity | Version added | Description |
+| - | - | - | - | - |
+| [CA1416](quality-rules/ca1416.md) | Interoperability | Warning | .NET 5 | Validate platform compatibility |
+| [CA1417](quality-rules/ca1417.md) | Interoperability | Warning | .NET 5 | Do not use `OutAttribute` on string parameters for P/Invokes |
+| [CA1418](quality-rules/ca1418.md) | Interoperability | Warning | .NET 6 | Use valid platform string |
+| [CA1420](quality-rules/ca1420.md) | Interoperability | Warning | .NET 7 | Using features that require runtime marshalling when it's disabled will result in run-time exceptions |
+| [CA1422](quality-rules/ca1422.md) | Interoperability | Warning | .NET 7 | Validate platform compatibility |
+| [CA1831](quality-rules/ca1831.md) | Performance | Warning | .NET 5 | Use `AsSpan` instead of range-based indexers for string when appropriate |
+| [CA1856](quality-rules/ca1856.md) | Performance | Error | .NET 8 | Incorrect usage of `ConstantExpected` attribute |
+| [CA1857](quality-rules/ca1857.md) | Performance | Warning | .NET 8 | A constant is expected for the parameter |
+| [CA2013](quality-rules/ca2013.md) | Reliability | Warning | .NET 5 | Do not use `ReferenceEquals` with value types |
+| [CA2014](quality-rules/ca2014.md) | Reliability | Warning | .NET 5 | Do not use `stackalloc` in loops |
+| [CA2015](quality-rules/ca2015.md) | Reliability | Warning | .NET 5 | Do not define finalizers for types derived from <xref:System.Buffers.MemoryManager%601> |
+| [CA2017](quality-rules/ca2017.md) | Reliability | Warning | .NET 6 | Parameter count mismatch |
+| [CA2018](quality-rules/ca2018.md) | Reliability | Warning | .NET 6 | The `count` argument to `Buffer.BlockCopy` should specify the number of bytes to copy |
+| [CA2021](quality-rules/ca2021.md) | Reliability | Warning | .NET 8 | Do not call `Enumerable.Cast<T>` or `Enumerable.OfType<T>` with incompatible types |
+| [CA2200](quality-rules/ca2200.md) | Usage | Warning | .NET 5 | Rethrow to preserve stack details |
+| [CA2247](quality-rules/ca2247.md) | Usage | Warning | .NET 5 | Argument passed to `TaskCompletionSource` constructor should be <xref:System.Threading.Tasks.TaskCreationOptions> enum instead of <xref:System.Threading.Tasks.TaskContinuationOptions> |
+| [CA2252](quality-rules/ca2252.md) | Usage | Error | .NET 6 | Opt in to preview features |
+| [CA2255](quality-rules/ca2255.md) | Usage | Warning | .NET 6 | The `ModuleInitializer` attribute should not be used in libraries |
+| [CA2256](quality-rules/ca2256.md) | Usage | Warning | .NET 6 | All members declared in parent interfaces must have an implementation in a `DynamicInterfaceCastableImplementation`-attributed interface |
+| [CA2257](quality-rules/ca2257.md) | Usage | Warning | .NET 6 | Members defined on an interface with the `DynamicInterfaceCastableImplementationAttribute` should be `static` |
+| [CA2258](quality-rules/ca2258.md) | Usage | Warning | .NET 6 | Providing a `DynamicInterfaceCastableImplementation` interface in Visual Basic is unsupported |
+| [CA2259](quality-rules/ca2259.md) | Usage | Warning | .NET 7 | `ThreadStatic` only affects static fields |
+| [CA2260](quality-rules/ca2260.md) | Usage | Warning | .NET 7 | Use correct type parameter |
+| [CA2261](quality-rules/ca2261.md) | Usage | Warning | .NET 8 | Do not use `ConfigureAwaitOptions.SuppressThrowing` with `Task<TResult>` |
+
 # [.NET 7](#tab/net-7)
 
-The following rules are enabled, by default, in .NET 7.
+The following rules are enabled, by default, as errors or warnings in .NET 7. Additional rules are enabled as suggestions.
 
 | Diagnostic ID | Category | Severity | Description |
 | - | - | - | - |
@@ -47,8 +78,8 @@ The following rules are enabled, by default, in .NET 7.
 | [CA2017](quality-rules/ca2017.md) | Reliability | Warning | Parameter count mismatch |
 | [CA2018](quality-rules/ca2018.md) | Reliability | Warning | The `count` argument to `Buffer.BlockCopy` should specify the number of bytes to copy |
 | [CA2200](quality-rules/ca2200.md) | Usage | Warning | Rethrow to preserve stack details |
-| [CA2252](quality-rules/ca2252.md) | Usage | Error | Opt in to preview features |
 | [CA2247](quality-rules/ca2247.md) | Usage | Warning | Argument passed to `TaskCompletionSource` constructor should be <xref:System.Threading.Tasks.TaskCreationOptions> enum instead of <xref:System.Threading.Tasks.TaskContinuationOptions> |
+| [CA2252](quality-rules/ca2252.md) | Usage | Error | Opt in to preview features |
 | [CA2255](quality-rules/ca2255.md) | Usage | Warning | The `ModuleInitializer` attribute should not be used in libraries |
 | [CA2256](quality-rules/ca2256.md) | Usage | Warning | All members declared in parent interfaces must have an implementation in a `DynamicInterfaceCastableImplementation`-attributed interface |
 | [CA2257](quality-rules/ca2257.md) | Usage | Warning | Members defined on an interface with the `DynamicInterfaceCastableImplementationAttribute` should be `static` |
@@ -58,7 +89,7 @@ The following rules are enabled, by default, in .NET 7.
 
 # [.NET 6](#tab/net-6)
 
-The following rules are enabled, by default, in .NET 6.
+The following rules are enabled, by default, as errors or warnings in .NET 6. Additional rules are enabled as suggestions.
 
 | Diagnostic ID | Category | Severity | Description |
 | - | - | - | - |
@@ -90,13 +121,7 @@ You can change the severity of these rules to disable them or elevate them to er
 
 *Analysis mode* refers to a predefined code analysis configuration where none, some, or all rules are enabled. In the default analysis mode (`Default`), only a small number of rules are [enabled as build warnings](#enabled-rules). You can change the analysis mode for your project by setting the [`<AnalysisMode>`](../../core/project-sdk/msbuild-props.md#analysismode) property in the project file. The allowable values are:
 
-| Value | Description |
-| - | - |
-| `None` | No rules are enabled. |
-| `Default` | The default set of rules are enabled. These rules are listed at [Enabled rules](#enabled-rules). |
-| `Minimum` | More aggressive mode than `Default` mode. Certain suggestions that are highly recommended for build enforcement are enabled as build warnings. To see which rules this includes, inspect the *analysislevel_\[level]_minimum.editorconfig* file in the *%ProgramFiles%/dotnet/sdk/\[version]/Sdks/Microsoft.NET.Sdk/analyzers/build/config* directory. |
-| `Recommended` | More aggressive mode than the `Minimum` mode, where more rules are enabled as build warnings. To see which rules this includes, inspect the *analysislevel_\[level]_recommended.editorconfig* file in the *%ProgramFiles%/dotnet/sdk/\[version]/Sdks/Microsoft.NET.Sdk/analyzers/build/config* directory. |
-| `All` | All rules are enabled. |
+[!INCLUDE [analysis-model-levels](includes/analysis-model-levels.md)]
 
 Starting in .NET 6, you can omit [`<AnalysisMode>`](../../core/project-sdk/msbuild-props.md#analysismode) in favor of a compound value for the `<AnalysisLevel>` property. For example, the following value enables the recommended set of rules for the latest release: `<AnalysisLevel>latest-Recommended</AnalysisLevel>`. For more information, see [`AnalysisLevel`](../../core/project-sdk/msbuild-props.md#analysislevel).
 
@@ -175,9 +200,6 @@ Follow these steps to enable code-style analysis on build:
    # IDE0040: Accessibility modifiers required (disabled on build)
    dotnet_diagnostic.IDE0040.severity = silent
    ```
-
-> [!NOTE]
-> The code-style analysis feature is experimental and may change between the .NET 5 and .NET 6 releases.
 
 ## Suppress a warning
 

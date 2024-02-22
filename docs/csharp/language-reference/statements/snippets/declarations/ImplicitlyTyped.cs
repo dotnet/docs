@@ -12,33 +12,26 @@ public static class VarExample
 {
     public static void ImplicitlyTyped()
     {
+        // <ImplicitlyTyped>
+        var greeting = "Hello";
+        Console.WriteLine(greeting.GetType());  // output: System.String
+
+        var a = 32;
+        Console.WriteLine(a.GetType());  // output: System.Int32
+
+        var xs = new List<double>();
+        Console.WriteLine(xs.GetType());  // output: System.Collections.Generic.List`1[System.Double]
+        // </ImplicitlyTyped>
+
         List<Customer> customers = new List<Customer>();
         //<VarExample>
-        // Example #1: var is optional when
-        // the select clause specifies a string
-        string[] words = { "apple", "strawberry", "grape", "peach", "banana" };
-        var wordQuery = from word in words
-                        where word[0] == 'g'
-                        select word;
+        var fromPhoenix = from cust in customers
+                          where cust.City == "Phoenix"
+                          select new { cust.Name, cust.Phone };
 
-        // Because each element in the sequence is a string,
-        // not an anonymous type, var is optional here also.
-        foreach (string s in wordQuery)
+        foreach (var customer in fromPhoenix)
         {
-            Console.WriteLine(s);
-        }
-
-        // Example #2: var is required because
-        // the select clause specifies an anonymous type
-        var custQuery = from cust in customers
-                        where cust.City == "Phoenix"
-                        select new { cust.Name, cust.Phone };
-
-        // var must be used because each item
-        // in the sequence is an anonymous type
-        foreach (var item in custQuery)
-        {
-            Console.WriteLine("Name={0}, Phone={1}", item.Name, item.Phone);
+            Console.WriteLine($"Name={customer.Name}, Phone={customer.Phone}");
         }
         //</VarExample>
     }

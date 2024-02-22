@@ -11,6 +11,8 @@ ms.assetid: cc42267f-bb7a-427a-845e-df97408528d4
 ---
 # Sealing
 
+[!INCLUDE [not-current](includes/not-current.md)]
+
 One of the features of object-oriented frameworks is that developers can extend and customize them in ways unanticipated by the framework designers. This is both the power and danger of extensible design. When you design your framework, it is, therefore, very important to carefully design for extensibility when it is desired, and to limit extensibility when it is dangerous.
 
  A powerful mechanism that prevents extensibility is sealing. You can seal either the class or individual members. Sealing a class prevents users from inheriting from the class. Sealing a member prevents users from overriding a particular member.

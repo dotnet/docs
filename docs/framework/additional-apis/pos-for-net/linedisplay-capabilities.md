@@ -3,7 +3,7 @@ title: LineDisplay Capabilities
 description: LineDisplay Capabilities (POS for .NET v1.14 SDK Documentation)
 ms.date: 03/03/2014
 ms.topic: how-to
-ms.custom: pos-restored-from-archive
+ms.custom: "pos-restored-from-archive,UpdateFrequency5"
 ---
 
 # LineDisplay Capabilities (POS for .NET v1.14 SDK Documentation)
@@ -28,7 +28,7 @@ The Service Object may support either horizontal or vertical marquees. If horizo
 
 Thereafter, applications and Service Objects may use the following to set or get the marquee type:
 
-`DisplayMarqueeType MaqueeType {get, set; }`
+`DisplayMarqueeType MarqueeType {get, set; }`
 
 ## Inter-Character Wait
 

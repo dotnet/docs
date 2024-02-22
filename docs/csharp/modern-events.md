@@ -2,7 +2,7 @@
 title: The Updated .NET Core Event Pattern
 description: Learn how the .NET Core event pattern enables flexibility with backwards compatibility and how to implement safe event processing with async subscribers.
 ms.date: 06/20/2016
-ms.technology: csharp-fundamentals
+ms.subservice: fundamentals
 ms.assetid: 9aa627c3-3222-4094-9ca8-7e88e1071e06
 ---
 
@@ -74,7 +74,7 @@ codebases.
 
 You have one final pattern to learn: How to correctly write event
 subscribers that call async code. The challenge is described in
-the article on [async and await](async.md). Async methods can
+the article on [async and await](asynchronous-programming/index.md). Async methods can
 have a void return type, but that is strongly discouraged. When your
 event subscriber code calls an async method, you have no choice but
 to create an `async void` method. The event handler signature requires

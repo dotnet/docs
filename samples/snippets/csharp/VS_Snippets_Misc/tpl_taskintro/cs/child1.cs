@@ -3,7 +3,7 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-public class Example
+public class Child
 {
    public static void Main()
    {

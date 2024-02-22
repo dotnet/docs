@@ -119,5 +119,4 @@ An assembly manifest can contain a number of different directives, depending on 
 ## See also
 
 - [Application domains and assemblies](../../framework/app-domains/application-domains.md#application-domains-and-assemblies)
-- [Application domains and assemblies how-to topics](../../framework/app-domains/application-domains-and-assemblies-how-to-topics.md)
 - [Ildasm.exe (IL Disassembler)](../../framework/tools/ildasm-exe-il-disassembler.md)

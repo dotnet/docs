@@ -61,7 +61,13 @@ Methods may have a list of *parameters*, which represent values or variable refe
 
 Like types, methods may also have a set of type parameters, for which type arguments must be specified when the method is called. Unlike types, the type arguments can often be inferred from the arguments of a method call and need not be explicitly given.
 
-The *signature* of a method must be unique in the class in which the method is declared. The signature of a method consists of the name of the method, the number of type parameters, and the number, modifiers, and types of its parameters. The signature of a method doesn't include the return type.
+The *signature* of a method must be unique in the class in which the method is declared. The signature of a method consists of the following:
+
+- The name of the method
+- The number, modifiers, and types of its parameters
+- The number of type parameters in generic methods.
+
+The signature of a method doesn't include the return type.
 
 When a method body is a single expression, the method can be defined using a compact expression format, as shown in the following example:
 
@@ -217,7 +223,7 @@ An *event* is a member that enables a class or object to provide notifications. 
 
 Within a class that declares an event member, the event behaves just like a field of a delegate type (provided the event isn't abstract and doesn't declare accessors). The field stores a reference to a delegate that represents the event handlers that have been added to the event. If no event handlers are present, the field is `null`.
 
-The `MyList<T>` class declares a single event member called `Changed`, which indicates that a new item has been added to the list. The Changed event is raised by the `OnChanged` virtual method, which first checks whether the event is `null` (meaning that no handlers are present). The notion of raising an event is precisely equivalent to invoking the delegate represented by the event. There are no special language constructs for raising events.
+The `MyList<T>` class declares a single event member called `Changed`, which indicates that a new item has been added to the list or a list item has been changed using the indexer set accessor. The Changed event is raised by the `OnChanged` virtual method, which first checks whether the event is `null` (meaning that no handlers are present). The notion of raising an event is precisely equivalent to invoking the delegate represented by the event. There are no special language constructs for raising events.
 
 Clients react to events through *event handlers*. Event handlers are attached using the `+=` operator and removed using the `-=` operator. The following example attaches an event handler to the `Changed` event of a `MyList<string>`.
 

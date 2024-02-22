@@ -55,25 +55,28 @@ namespace HelloWorld
             // </Snippet5>
 
             // <Snippet6>
-            var systemSymbol = (INamespaceSymbol)nameInfo.Symbol;
-            foreach (INamespaceSymbol ns in systemSymbol.GetNamespaceMembers())
+            var systemSymbol = (INamespaceSymbol?)nameInfo.Symbol;
+            if (systemSymbol?.GetNamespaceMembers() is not null)
             {
-                Console.WriteLine(ns);
+                foreach (INamespaceSymbol ns in systemSymbol?.GetNamespaceMembers()!)
+                {
+                    Console.WriteLine(ns);
+                }
             }
             // </Snippet6>
 
             // <Snippet7>
             // Use the syntax model to find the literal string:
             LiteralExpressionSyntax helloWorldString = root.DescendantNodes()
-                .OfType<LiteralExpressionSyntax>()
-                .Single();
+            .OfType<LiteralExpressionSyntax>()
+            .Single();
 
             // Use the semantic model for type information:
             TypeInfo literalInfo = model.GetTypeInfo(helloWorldString);
             // </Snippet7>
 
             // <Snippet8>
-            var stringTypeSymbol = (INamedTypeSymbol)literalInfo.Type;
+            var stringTypeSymbol = (INamedTypeSymbol?)literalInfo.Type;
             // </Snippet8>
 
             Console.Clear();
@@ -84,24 +87,24 @@ namespace HelloWorld
             // of the logic to find the correct method names.
 
             // <Snippet9>
-            var allMembers = stringTypeSymbol.GetMembers();
+            var allMembers = stringTypeSymbol?.GetMembers();
             // </Snippet9>
             // <Snippet10>
-            var methods = allMembers.OfType<IMethodSymbol>();
+            var methods = allMembers?.OfType<IMethodSymbol>();
             // </Snippet10>
             // <Snippet11>
-            var publicStringReturningMethods = methods
-                .Where(m => m.ReturnType.Equals(stringTypeSymbol) &&
+            var publicStringReturningMethods = methods?
+                .Where(m => SymbolEqualityComparer.Default.Equals(m.ReturnType, stringTypeSymbol) &&
                 m.DeclaredAccessibility == Accessibility.Public);
             // </Snippet11>
             // <Snippet12>
-            var distinctMethods = publicStringReturningMethods.Select(m => m.Name).Distinct();
+            var distinctMethods = publicStringReturningMethods?.Select(m => m.Name).Distinct();
             // </Snippet12>
 
             // <Snippet13>
-            foreach (string name in (from method in stringTypeSymbol
+            foreach (string name in (from method in stringTypeSymbol?
                                      .GetMembers().OfType<IMethodSymbol>()
-                                     where method.ReturnType.Equals(stringTypeSymbol) &&
+                                     where SymbolEqualityComparer.Default.Equals(method.ReturnType, stringTypeSymbol) &&
                                      method.DeclaredAccessibility == Accessibility.Public
                                      select method.Name).Distinct())
             {

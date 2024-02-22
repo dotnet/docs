@@ -7,6 +7,10 @@ ms.date: 06/10/2021
 ---
 # Create a porting plan
 
+We recommend using the Visual Studio [.NET Upgrade Assistant](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.upgradeassistant) to update .NET Framework code to the latest .NET versions. For more information see the blog [Upgrading your .NET projects with Visual Studio](https://devblogs.microsoft.com/dotnet/upgrade-assistant-now-in-visual-studio/).
+
+[!INCLUDE[](~/includes/deprecating-api-port.md)]
+
 Before you jump straight into the code, take the time to go through the recommended pre-migration steps. This article gives you insight into the kinds of issues you may come across, and helps you decide on an approach that makes the most sense.
 
 ## Port your code

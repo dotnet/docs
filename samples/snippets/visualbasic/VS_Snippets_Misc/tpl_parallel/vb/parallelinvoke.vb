@@ -84,7 +84,7 @@ Module ParallelTasks
     End Function
 #End Region
 End Module
-' The exmaple displays output like the following:
+' The example displays output like the following:
 '       Retrieving from http://www.gutenberg.org/files/54700/54700-0.txt
 '       Begin first task...
 '       Begin second task...

@@ -31,14 +31,14 @@ public static class DownloadCache
     {
         string[] urls = new[]
         {
-            "https://docs.microsoft.com/aspnet/core",
-            "https://docs.microsoft.com/dotnet",
-            "https://docs.microsoft.com/dotnet/architecture/dapr-for-net-developers",
-            "https://docs.microsoft.com/dotnet/azure",
-            "https://docs.microsoft.com/dotnet/desktop/wpf",
-            "https://docs.microsoft.com/dotnet/devops/create-dotnet-github-action",
-            "https://docs.microsoft.com/dotnet/machine-learning",
-            "https://docs.microsoft.com/xamarin",
+            "https://learn.microsoft.com/aspnet/core",
+            "https://learn.microsoft.com/dotnet",
+            "https://learn.microsoft.com/dotnet/architecture/dapr-for-net-developers",
+            "https://learn.microsoft.com/dotnet/azure",
+            "https://learn.microsoft.com/dotnet/desktop/wpf",
+            "https://learn.microsoft.com/dotnet/devops/create-dotnet-github-action",
+            "https://learn.microsoft.com/dotnet/machine-learning",
+            "https://learn.microsoft.com/xamarin",
             "https://dotnet.microsoft.com/",
             "https://www.microsoft.com"
         };

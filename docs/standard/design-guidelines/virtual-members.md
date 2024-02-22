@@ -10,6 +10,8 @@ ms.assetid: 8ff4eb97-0364-43ec-8a02-934b5cd94d19
 ---
 # Virtual Members
 
+[!INCLUDE [not-current](includes/not-current.md)]
+
 Virtual members can be overridden, thus changing the behavior of the subclass. They are quite similar to callbacks in terms of the extensibility they provide, but they are better in terms of execution performance and memory consumption. Also, virtual members feel more natural in scenarios that require creating a special kind of an existing type (specialization).
 
  Virtual members perform better than callbacks and events, but do not perform better than non-virtual methods.

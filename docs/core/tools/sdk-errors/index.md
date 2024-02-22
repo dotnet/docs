@@ -2,7 +2,7 @@
 title: ".NET SDK error list"
 description: A complete list of NETSDKxxxx errors, with links to more info where more info is available.
 ms.topic: error-reference
-ms.date: 06/23/2022
+ms.date: 12/11/2023
 f1_keywords:
 - NETSDK1001
 - NETSDK1002
@@ -60,7 +60,6 @@ f1_keywords:
 - NETSDK1077
 - NETSDK1078
 - NETSDK1081
-- NETSDK1083
 - NETSDK1084
 - NETSDK1085
 - NETSDK1086
@@ -154,12 +153,29 @@ f1_keywords:
 - NETSDK1190
 - NETSDK1191
 - NETSDK1192
+- NETSDK1193
+- NETSDK1194
+- NETSDK1196
+- NETSDK1197
+- NETSDK1198
+- NETSDK1200
+- NETSDK1201
+- NETSDK1203
+- NETSDK1204
+- NETSDK1205
+- NETSDK1207
+- NETSDK1208
+- NETSDK1209
+- NETSDK1210
+- NETSDK1211
+- NETSDK1212
+- NETSDK1213
 ---
 # .NET SDK error list
 
 **This article applies to:** ✔️ .NET 6 SDK and later versions
 
-This is a complete list of the errors that you might get from the .NET SDK while developing .NET apps. If more info is available for a particular error, the error number is a link.
+This list is a complete list of the errors that you might get from the .NET SDK while developing .NET apps. If more info is available for a particular error, the error number is a link.
 
 | SDK Message Number | Message            |
 |--------------------|--------------------|
@@ -232,7 +248,7 @@ This is a complete list of the errors that you might get from the .NET SDK while
 |[NETSDK1080](netsdk1080.md)|A PackageReference to Microsoft.AspNetCore.App is not necessary when targeting .NET Core 3.0 or higher. If Microsoft.NET.Sdk.Web is used, the shared framework will be referenced automatically. Otherwise, the PackageReference should be replaced with a FrameworkReference.|
 |NETSDK1081|The targeting pack for {0} was not found. You may be able to resolve this by running a NuGet restore on the project.|
 |[NETSDK1082](netsdk1082.md)|There was no runtime pack for {0} available for the specified RuntimeIdentifier '{1}'.|
-|NETSDK1083|The specified RuntimeIdentifier '{0}' is not recognized.|
+|[NETSDK1083](netsdk1083.md)|The specified RuntimeIdentifier '{0}' is not recognized.|
 |NETSDK1084|There is no application host available for the specified RuntimeIdentifier '{0}'.|
 |NETSDK1085|The 'NoBuild' property was set to true but the 'Build' target was invoked.|
 |NETSDK1086|A FrameworkReference for '{0}' was included in the project. This is implicitly referenced by the .NET SDK and you do not typically need to reference it from your project. For more information, see {1}.|
@@ -339,3 +355,24 @@ This is a complete list of the errors that you might get from the .NET SDK while
 |NETSDK1190|To use '{0}' in solution projects, you must set the environment variable '{1}' (to true). This will increase the time to complete the operation.|
 |NETSDK1191|A runtime identifier for the property '{0}' couldn't be inferred. Specify a rid explicitly.|
 |NETSDK1192|Targeting .NET 7.0 or higher in Visual Studio 2022 17.3 is not supported.|
+|NETSDK1193|If PublishSelfContained is set, it must be either true or false. The value given was '{0}'.|
+|NETSDK1194|The "--output" option isn't supported when building a solution. Specifying a solution-level output path results in all projects copying outputs to the same directory, which can lead to inconsistent builds.|
+|[NETSDK1195](netsdk1195.md)|Trimming, or code compatibility analysis for trimming, single-file deployment, or ahead-of-time compilation is not supported for the target framework. For more information, see <https://aka.ms/netsdk1195>|
+|NETSDK1196|The SDK does not support ahead-of-time compilation. Set the PublishAot property to false.|
+|NETSDK1197|Multiple solution project(s) contain conflicting '{0}' values; ensure the values match. Consider using a Directory.build.props file to set the property for all projects. Conflicting projects: {1}.|
+|NETSDK1198|A publish profile with the name '{0}' was not found in the project. Set the PublishProfile property to a valid file name.|
+|NETSDK1199|The ArtifactsPath and UseArtifactsOutput properties cannot be set in a project file, due to MSBuild ordering constraints. They must be set in a Directory.Build.props file or from the command line. See <https://aka.ms/netsdk1199> for more information.|
+|NETSDK1200|If UseArtifactsPath is set to true and ArtifactsPath is not set, there must be a Directory.Build.props file in order to determine where the artifacts folder should be located.|
+|NETSDK1201|For projects targeting .NET 8.0 and higher, specifying a RuntimeIdentifier will no longer produce a self contained app by default. To continue building self-contained apps, set the SelfContained property to true or use the --self-contained argument.|
+|[NETSDK1202](netsdk1202.md)|The workload '{0}' is out of support and will not receive security updates in the future. Please refer to {1} for more information about the support policy.|
+|NETSDK1203|Ahead-of-time compilation is not supported for the target runtime identifier '{0}'.|
+|NETSDK1204|Ahead-of-time compilation is not supported on the current platform '{0}'.|
+|NETSDK1205|The Microsoft.Net.Compilers.Toolset.Framework package should not be set directly. Set the property 'BuildWithNetFrameworkHostedCompiler' to 'true' instead if you need it.|
+|[NETSDK1206](netsdk1206.md)|Found version-specific or distribution-specific runtime identifier(s): {0}. Affected libraries: {1}. In .NET 8.0 and higher, assets for version-specific and distribution-specific runtime identifiers will not be found by default. See <https://aka.ms/dotnet/rid-usage> for details.|
+|NETSDK1207|Ahead-of-time compilation is not supported for the target framework.|
+|NETSDK1208|The target platform identifier {0} was not recognized. This is because MSBuildEnableWorkloadResolver is set to false which disables .NET SDK Workloads which is required for this identifier. Unset this environment variable or MSBuild property to enable workloads.|
+|NETSDK1209|The current Visual Studio version does not support targeting {0} {1}.  Either target {0} {2} or lower, or use Visual Studio version {3} or higher.|
+|NETSDK1210|IsAotCompatible and EnableAotAnalyzer are not supported for the target framework. Consider multi-targeting to a supported framework to enable ahead-of-time compilation analysis, and set IsAotCompatible only for the supported frameworks. For example:<br>`<IsAotCompatible Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', '{0}'))>true</IsAotCompatible>`|
+|NETSDK1211|EnableSingleFileAnalyzer is not supported for the target framework. Consider multi-targeting to a supported framework to enable single-file analysis, and set EnableSingleFileAnalyzer only for the supported frameworks. For example:<br>`<EnableSingleFileAnalyzer Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', '{0}'))">true</EnableSingleFileAnalyzer>`|
+|NETSDK1212|IsTrimmable and EnableTrimAnalyzer are not supported for the target framework. Consider multi-targeting to a supported framework to enable trimming, and set IsTrimmable only for the supported frameworks. For example:<br>`<IsTrimmable Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', '{0}'))">true</IsTrimmable>`|
+|NETSDK1213|Targeting .NET 8.0 or higher in Visual Studio 2022 17.7 is not supported.|

@@ -1,8 +1,5 @@
 name: "quest import"
 on:
-  issues:
-    types:
-      [ labeled, closed, reopened, assigned, unassigned ]
   workflow_dispatch:
     inputs:
       reason:
@@ -23,7 +20,6 @@ jobs:
       contains(github.event.issue.labels.*.name, ':pushpin: seQUESTered')
     runs-on: ubuntu-latest
     permissions:
-      contents: write
       issues: write
 
     steps:
@@ -42,6 +38,8 @@ jobs:
           ImportOptions__ApiKeys__GitHubToken: ${{ secrets.GITHUB_TOKEN }}
           ImportOptions__ApiKeys__OSPOKey: ${{ secrets.OSPO_KEY }}
           ImportOptions__ApiKeys__QuestKey: ${{ secrets.QUEST_KEY }}
+          ImportOptions__ApiKeys__SequesterPrivateKey: ${{ secrets.SEQUESTER_PRIVATEKEY }}
+          ImportOptions__ApiKeys__SequesterAppID: ${{ secrets.SEQUESTER_APPID }}
         with:
           org: ${{ github.repository_owner }}
           repo: ${{ github.repository }}
@@ -56,6 +54,8 @@ jobs:
           ImportOptions__ApiKeys__GitHubToken: ${{ secrets.GITHUB_TOKEN }}
           ImportOptions__ApiKeys__OSPOKey: ${{ secrets.OSPO_KEY }}
           ImportOptions__ApiKeys__QuestKey: ${{ secrets.QUEST_KEY }}
+          ImportOptions__ApiKeys__SequesterPrivateKey: ${{ secrets.SEQUESTER_PRIVATEKEY }}
+          ImportOptions__ApiKeys__SequesterAppID: ${{ secrets.SEQUESTER_APPID }}
         with:
           org: ${{ github.repository_owner }}
           repo: ${{ github.repository }}

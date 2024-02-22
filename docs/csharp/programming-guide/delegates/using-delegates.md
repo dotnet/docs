@@ -1,18 +1,18 @@
 ---
 title: "Using Delegates - C# Programming Guide"
 description: Learn how to use delegates. Delegates are an object-oriented, type safe, and secure type that safely encapsulates a method.
-ms.date: 07/20/2015
+ms.date: 07/31/2023
 helpviewer_keywords:
   - "delegates [C#], how to use"
 ms.assetid: 99a2fc27-a32e-4a34-921c-e65497520eec
 ---
 # Using Delegates (C# Programming Guide)
 
-A [delegate](../../language-reference/builtin-types/reference-types.md) is a type that safely encapsulates a method, similar to a function pointer in C and C++. Unlike C function pointers, delegates are object-oriented, type safe, and secure. The type of a delegate is defined by the name of the delegate. The following example declares a delegate named `Del` that can encapsulate a method that takes a [string](../../language-reference/builtin-types/reference-types.md) as an argument and returns [void](../../language-reference/builtin-types/void.md):
+A [delegate](../../language-reference/builtin-types/reference-types.md) is a type that safely encapsulates a method, similar to a function pointer in C and C++. Unlike C function pointers, delegates are object-oriented, type safe, and secure. The type of a delegate is defined by the name of the delegate. The following example declares a delegate named `Callback` that can encapsulate a method that takes a [string](../../language-reference/builtin-types/reference-types.md) as an argument and returns [void](../../language-reference/builtin-types/void.md):
 
 [!code-csharp[csProgGuideDelegates#21](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDelegates/CS/Delegates.cs#21)]
 
-A delegate object is normally constructed by providing the name of the method the delegate will wrap, or with a [lambda expression](../../language-reference/operators/lambda-expressions.md). Once a delegate is instantiated, a method call made to the delegate will be passed by the delegate to that method. The parameters passed to the delegate by the caller are passed to the method, and the return value, if any, from the method is returned to the caller by the delegate. This is known as invoking the delegate. An instantiated delegate can be invoked as if it were the wrapped method itself. For example:
+A delegate object is normally constructed by providing the name of the method the delegate will wrap, or with a [lambda expression](../../language-reference/operators/lambda-expressions.md). Once a delegate is instantiated in this manner it can be invoked. Invoking a delegate calls the method attached to the delegate instance. The parameters passed to the delegate by the caller are passed to the method, and the return value, if any, from the method is returned to the caller by the delegate. For example:
 
 [!code-csharp[csProgGuideDelegates#22](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDelegates/CS/Delegates.cs#22)]  
 

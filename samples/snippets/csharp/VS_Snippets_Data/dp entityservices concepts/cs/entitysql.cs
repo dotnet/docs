@@ -845,7 +845,7 @@ namespace Microsoft.Samples.Entity
             pc.Clear();
         }
 
-        static void TestProduct(string esqlQuery, Dictionary<string, object> parametes)
+        static void TestProduct(string esqlQuery, Dictionary<string, object> parameters)
         {
             using (EntityConnection conn =
                 new EntityConnection("name=AdventureWorksEntities"))
@@ -858,7 +858,7 @@ namespace Microsoft.Samples.Entity
                     using (EntityCommand cmd = conn.CreateCommand())
                     {
                         cmd.CommandText = esqlQuery;
-                        foreach (KeyValuePair<string, object> kvp in parametes)
+                        foreach (KeyValuePair<string, object> kvp in parameters)
                         {
                             cmd.Parameters.AddWithValue(kvp.Key, kvp.Value);
                         }

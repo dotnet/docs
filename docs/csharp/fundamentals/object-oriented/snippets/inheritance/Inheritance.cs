@@ -82,7 +82,7 @@
             this.Description = desc;
             this.jobLength = jobLen;
 
-            // Property originalItemId is a member of ChangeRequest, but not
+            // Property originalItemID is a member of ChangeRequest, but not
             // of WorkItem.
             this.originalItemID = originalID;
         }

@@ -8,67 +8,45 @@ helpviewer_keywords:
   - "obsolete types [.NET Framework]"
 ms.assetid: e636d024-0fac-45eb-b721-25a8c0ceca8f
 ---
-# Obsolete Types in the .NET Framework
+# Obsolete types in .NET Framework
 
 <a name="introduction"></a> The tables in this article list the types that are obsolete in the .NET Framework 4.5 and .NET Framework 4.6, organized by assembly. Use the following links to see a list of the obsolete types and the recommended alternatives in each assembly. Because these types are obsolete, all their members are also obsolete. For a list of additional obsolete members in the .NET Framework class library, see [Obsolete Members](obsolete-members.md).
 
 - [Obsolete types in system assemblies](#obsolete_types_in_system_assemblies)
 
   - [mscorlib.dll](#mscorlib)
-
   - [System.Core.dll](#Core)
-
   - [System.Data.dll](#data)
-
   - [System.Data.OracleClient.dll](#oracleclient)
-
   - [System.Design.dll](#design)
-
   - [System.dll](#system)
-
   - [System.EnterpriseServices.dll](#enterpriseservices)
-
   - [System.Net.dll](#net)
-
   - [System.ServiceModel.dll](#servicemodel)
-
   - [System.Web.dll](#web)
-
   - [System.Web.Mobile.dll](#mobile)
-
   - [System.Workflow.Activities.dll](#workflow_activities)
-
   - [System.Workflow.ComponentModel.dll](#workflow_componentmodel)
-
   - [System.Workflow.Runtime.dll](#workflow_runtime)
-
   - [System.WorkflowServices.dll](#workflowservices)
-
   - [System.Xaml.dll](#xaml)
-
   - [System.Xml.dll](#xml)
-
   - [WindowsBase.dll](#WindowsBase)
 
 - [Obsolete types in Microsoft assemblies](#obsolete_types_in_microsoft_assemblies)
 
   - [IEHost.dll and IEExec.exe](#IEHost)
-
   - [Microsoft.Build.Engine.dll](#Engine)
-
   - [Microsoft.JScript.dll](#jscript)
-
   - [Microsoft.VisualBasic.Compatibility.dll](#VBCompat)
-
   - [Microsoft.VisualBasic.Compatibility.Data.dll](#VBCompatData)
-
   - [Microsoft.VisualC.dll](#visualc)
 
 <a name="obsolete_types_in_system_assemblies"></a>
 
-## Obsolete Types in System Assemblies
+## Obsolete types in system assemblies
 
-The following tables list the types that have been declared obsolete in system assemblies. These assemblies are used for general\-purpose application development that targets the .NET Framework.
+The following tables list the types that have been declared obsolete in system assemblies. These assemblies are used for general-purpose application development that targets .NET Framework.
 
 <a name="mscorlib"></a>
 
@@ -598,15 +576,15 @@ The following tables list the types that have been declared obsolete in system a
 
 <a name="obsolete_types_in_microsoft_assemblies"></a>
 
-## Obsolete Types in Microsoft Assemblies
+## Obsolete types in Microsoft assemblies
 
-The following sections list the obsolete types in Microsoft assemblies. These assemblies are special-purpose assemblies such as assemblies that target an individual language (for example, Microsoft.JScript.dll or Microsoft.VisualC.dll).
+The following sections list the obsolete types in Microsoft assemblies. These assemblies are special-purpose assemblies, such as assemblies that target an individual language (for example, Microsoft.JScript.dll or Microsoft.VisualC.dll).
 
 <a name="IEHost"></a>
 
 ### Assembly: IEHost.dll and IEExec.exe
 
-The IEHost.dll and IEExec.exe assemblies have been removed from the .NET Framework. All of their types and their members are obsolete and are not supported as of the .NET Framework 4. These assemblies were used to host Windows Forms controls and to run executables in Internet Explorer. Recommended alternatives include ClickOnce, XAML browser applications (XBAP), and Microsoft Silverlight.
+The IEHost.dll and IEExec.exe assemblies have been removed from .NET Framework. All of their types and their members are obsolete and are not supported as of .NET Framework 4. These assemblies were used to host Windows Forms controls and to run executables in Internet Explorer. Recommended alternatives include ClickOnce, XAML browser applications (XBAP), and Microsoft Silverlight.
 
 [Back to top](#introduction)
 

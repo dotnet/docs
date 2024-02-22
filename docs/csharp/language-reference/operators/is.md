@@ -14,7 +14,7 @@ The `is` operator checks if the result of an expression is compatible with a giv
 
 :::code language="csharp" source="snippets/shared/IsOperator.cs" id="IntroExample":::
 
-In the preceding example, the `is` operator matches an expression against a [property pattern](patterns.md#property-pattern) with nested [constant](patterns.md#constant-pattern) and [relational](patterns.md#relational-patterns) (available in C# 9.0 and later) patterns.
+In the preceding example, the `is` operator matches an expression against a [property pattern](patterns.md#property-pattern) with nested [constant](patterns.md#constant-pattern) and [relational](patterns.md#relational-patterns) patterns.
 
 The `is` operator can be useful in the following scenarios:
 
@@ -30,7 +30,7 @@ The `is` operator can be useful in the following scenarios:
 
   When you match an expression against `null`, the compiler guarantees that no user-overloaded `==` or `!=` operator is invoked.
 
-- Beginning with C# 9.0, you can use a [negation pattern](patterns.md#logical-patterns) to do a non-null check, as the following example shows:
+- You can use a [negation pattern](patterns.md#logical-patterns) to do a non-null check, as the following example shows:
 
   :::code language="csharp" source="snippets/shared/IsOperator.cs" id="NonNullCheck":::
 
@@ -43,10 +43,7 @@ The `is` operator can be useful in the following scenarios:
 
 ## C# language specification
 
-For more information, see [The is operator](~/_csharpstandard/standard/expressions.md#111111-the-is-operator) section of the [C# language specification](~/_csharpstandard/standard/README.md) and the following C# language proposals:
-
-- [Pattern matching](~/_csharplang/proposals/csharp-7.0/pattern-matching.md)
-- [Pattern matching with generics](~/_csharplang/proposals/csharp-7.1/generics-pattern-match.md)
+For more information, see [The is operator](~/_csharpstandard/standard/expressions.md#121212-the-is-operator) section of the [C# language specification](~/_csharpstandard/standard/README.md) and [Pattern matching](/dotnet/csharp/language-reference/language-specification/patterns).
 
 ## See also
 

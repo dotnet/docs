@@ -250,10 +250,10 @@ if(activity != null)
 ```
 
 - OpenTelemetry provides a set of recommended
-[conventions](https://github.com/open-telemetry/opentelemetry-specification/tree/main/specification/trace/semantic_conventions)
+[conventions](https://github.com/open-telemetry/semantic-conventions/blob/main/docs/general/trace.md)
 for setting Tags on Activities that represent common types of application work.
 
-- If you are instrumenting functions with high-performance requirements,
+- If you're instrumenting functions with high-performance requirements,
 <xref:System.Diagnostics.Activity.IsAllDataRequested?displayProperty=nameWithType> is a hint that indicates whether any
 of the code listening to Activities intends to read auxiliary information such as Tags. If no listener will read it, then there
 is no need for the instrumented code to spend CPU cycles populating it. For simplicity, this sample doesn't apply that
@@ -445,7 +445,7 @@ void DoBatchWork(ActivityContext[] requestContexts)
     // Assume each context in requestContexts encodes the trace-id that was sent with a request
     using(Activity activity = s_source.StartActivity(name: "BigBatchOfWork",
                                                      kind: ActivityKind.Internal,
-                                                     parentContext: null,
+                                                     parentContext: default,
                                                      links: requestContexts.Select(ctx => new ActivityLink(ctx))
     {
         // do the batch of work here
@@ -453,5 +453,7 @@ void DoBatchWork(ActivityContext[] requestContexts)
 }
 ```
 
-Unlike events and Tags that can be added on-demand, links must be added during StartActivity() and
-are immutable afterwards.
+Unlike events and Tags that can be added on-demand, links must be added during `StartActivity()` and are immutable afterwards.
+
+> [!IMPORTANT]
+> As per the [OpenTelemetry specification](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/trace/sdk.md#span-limits), the suggested limit for the number of links is 128. However, it's important to note that this limit is not enforced.

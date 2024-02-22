@@ -25,6 +25,7 @@ Imports System.Diagnostics
 Imports System.Drawing.Font
 Imports System.Drawing.FontStyle
 Imports System.Windows.Forms
+Imports System.IO
 
 
 '********************************************************************
@@ -55,7 +56,6 @@ End Namespace
 '<Snippet62>
 Class BankAccount
     Shared interestRate As Decimal
-    Private accountNumber As String
     Private accountBalance As Decimal
     Public holdOnAccount As Boolean = False
 
@@ -204,8 +204,8 @@ Public Class Class1
         Catch ex As System.IO.IOException
             ' Code that reacts to IOException.
         Catch ex As NullReferenceException
-            MessageBox.Show("NullReferenceException: " & ex.Message)
-            MessageBox.Show("Stack Trace: " & vbCrLf & ex.StackTrace)
+            Console.WriteLine("NullReferenceException: " & ex.Message)
+            Console.WriteLine("Stack Trace: " & vbCrLf & ex.StackTrace)
         Catch ex As Exception
             ' Code that reacts to any other exception.
         End Try
@@ -247,37 +247,32 @@ Public Class Class1
             ' This statement does not execute because program
             ' control passes to the Catch block when the
             ' exception occurs.
-            MessageBox.Show("end of Try block")
+            Console.WriteLine("end of Try block")
         Catch ex As Exception
             ' Show the exception's message.
-            MessageBox.Show(ex.Message)
+            Console.WriteLine(ex.Message)
 
             ' Show the stack trace, which is a list of methods
             ' that are currently executing.
-            MessageBox.Show("Stack Trace: " & vbCrLf & ex.StackTrace)
+            Console.WriteLine("Stack Trace: " & vbCrLf & ex.StackTrace)
         Finally
             ' This line executes whether or not the exception occurs.
-            MessageBox.Show("in Finally block")
+            Console.WriteLine("in Finally block")
         End Try
     End Sub
     '</Snippet86>
 
-
-    Private WithEvents Button1 As New System.Windows.Forms.Button
-
     '********************************************************************
-    Private Sub Button1_Click(ByVal sender As System.Object,
-        ByVal e As System.EventArgs) Handles Button1.Click
+    Private Sub StartProcess()
 
         '<Snippet85>
         Try
             Process.Start("http://www.microsoft.com")
         Catch ex As Exception
-            MsgBox("Can't load Web page" & vbCrLf & ex.Message)
+            Console.WriteLine("Can't load Web page" & vbCrLf & ex.Message)
         End Try
         '</Snippet85>
     End Sub
-
 
     '********************************************************************
     Sub TestThrow()
@@ -286,7 +281,6 @@ Public Class Class1
         Throw New System.Exception("An exception has occurred.")
         '</Snippet84>
     End Sub
-
 
     '********************************************************************
     '<Snippet83>
@@ -305,25 +299,21 @@ Public Class Class1
     End Sub
     '</Snippet83>
 
-
     '********************************************************************
     Function FindResult(ByVal i As Integer) As Integer
         Return i
     End Function
 
-
     '********************************************************************
     '<Snippet82>
-    Dim f As New System.Windows.Forms.Form()
+    Dim f As New FileInfo("filename")
     '</Snippet82>
-
 
     '********************************************************************
     '<Snippet81>
     Dim m As Integer = 45
     ' The preceding declaration creates m and assigns the value 45 to it.
     '</Snippet81>
-
 
     '********************************************************************
     '<Snippet80>
@@ -333,7 +323,6 @@ Public Class Class1
         ' Insert code to implement the procedure.
     End Sub
     '</Snippet80>
-
 
     '********************************************************************
     Sub TestAssignments()
@@ -378,7 +367,6 @@ Public Class Class1
         '</Snippet73>
     End Sub
 
-
     '********************************************************************
     '<Snippet71>
     Public Sub DemoBox()
@@ -389,7 +377,6 @@ Public Class Class1
     End Sub
     '</Snippet71>
 
-
     '********************************************************************
     Sub TestStatOver()
         '<Snippet70>
@@ -397,29 +384,18 @@ Public Class Class1
         '</Snippet70>
     End Sub
 
-
     '********************************************************************
     '<Snippet63>
     ' The following statement declares and initializes a Long variable.
     Dim startingAmount As Long = 500
     '</Snippet63>
 
-
-    '********************************************************************
-    '<Snippet64>
-    ' The following statement declares a variable that refers to a Button 
-    ' object, creates a new Button object, and assigns it to the variable.
-    Dim switchButton As New System.Windows.Forms.Button
-    '</Snippet64>
-
-
     '********************************************************************
     '<Snippet65>
-    ' The following statement declares a variable that can only be 
+    ' The following statement declares a variable that can only be
     ' accessed by code in the same class, structure, or module.
     Private homeTelephone As String = ""
     '</Snippet65>
-
 
     '********************************************************************
     Sub TestDim()
@@ -437,27 +413,11 @@ Public Class Class1
         '</Snippet67>
 
         '<Snippet68>
-        ' The following statement declares and initializes an array variable 
+        ' The following statement declares and initializes an array variable
         ' that holds 4 Boolean check values.
         Dim checkValues() As Boolean = {False, False, True, False}
         '</Snippet68>
     End Sub
-
-
-    '********************************************************************
-    Public Sub TestWith()
-        Dim testObject As New System.Windows.Forms.TextBox
-        '<Snippet61>
-        With testObject
-            .Height = 100
-            .Text = "Hello, World"
-            .ForeColor = System.Drawing.Color.Green
-            .Font = New System.Drawing.Font(.Font,
-                System.Drawing.FontStyle.Bold)
-        End With
-        '</Snippet61>
-    End Sub
-
 
     '********************************************************************
     Public Sub TestWhile()
@@ -470,8 +430,6 @@ Public Class Class1
         MsgBox("While loop ran " & CStr(counter) & " times")
         '</Snippet60>
     End Sub
-
-
 
     ' Using Statement (Visual Basic)
     ' 665d1580-dd54-4e96-a9a9-6be2a68948f1
@@ -497,18 +455,6 @@ Public Class Class1
     End Sub
     '</Snippet50>
 
-    '<Snippet59>
-    Public Sub SetBigBold(ByVal c As Control)
-        Using nf As New System.Drawing.Font("Arial", 12.0F,
-            System.Drawing.FontStyle.Bold)
-
-            c.Font = nf
-            c.Text = "This is 12-point Arial bold"
-        End Using
-    End Sub
-    '</Snippet59>
-
-
     '********************************************************************
     '<Snippet58>
     Sub ComputeArea(ByVal length As Double, ByVal width As Double)
@@ -524,7 +470,6 @@ Public Class Class1
         Debug.WriteLine(area)
     End Sub
     '</Snippet58>
-
 
     '********************************************************************
     '<Snippet57>
@@ -556,7 +501,6 @@ Public Class Class1
     End Structure
     '</Snippet57>
 
-
     '********************************************************************
     Sub TestStop()
         '<Snippet56>
@@ -568,7 +512,6 @@ Public Class Class1
         Next i
         '</Snippet56>
     End Sub
-
 
     '********************************************************************
     Class Wrap
@@ -645,7 +588,7 @@ Public Class Class1
                 Return propertyValue
             End Get
             Set(ByVal value As String)
-                ' The Set property procedure is called when the value 
+                ' The Set property procedure is called when the value
                 ' of a property is modified.  The value to be assigned
                 ' is passed in the argument to Set.
                 propertyValue = value
@@ -733,7 +676,7 @@ Public Class Class1
     '<Snippet37>
     Public Class thisClass
         Inherits anotherClass
-        ' Add code to override, overload, or extend members 
+        ' Add code to override, overload, or extend members
         ' inherited from the base class.
         ' Add new variable, property, procedure, and event declarations.
     End Class
@@ -886,7 +829,7 @@ LastLine:
 
 
     '********************************************************************
-    Class WrapquoteForTheDay
+    Class WrapQuoteForTheDay
         Private quoteValue As String = "No quote assigned yet."
 
         '<Snippet29>
@@ -1077,7 +1020,7 @@ LastLine:
 
     '********************************************************************
     '<Snippet13>
-    ' The following statements declare constants. 
+    ' The following statements declare constants.
     Const maximum As Long = 459
     Public Const helpString As String = "HELP"
     Private Const startValue As Integer = 5
@@ -1241,12 +1184,12 @@ End Class
 Module Module1
 
     Sub Main()
-        ' In the following function call, CalcSum's local variables 
-        ' are assigned the following values: args(0) = 4, args(1) = 3, 
+        ' In the following function call, CalcSum's local variables
+        ' are assigned the following values: args(0) = 4, args(1) = 3,
         ' and so on. The displayed sum is 10.
         Dim returnedValue As Double = CalcSum(4, 3, 2, 1)
         Console.WriteLine("Sum: " & returnedValue)
-        ' Parameter args accepts zero or more arguments. The sum 
+        ' Parameter args accepts zero or more arguments. The sum
         ' displayed by the following statements is 0.
         returnedValue = CalcSum()
         Console.WriteLine("Sum: " & returnedValue)

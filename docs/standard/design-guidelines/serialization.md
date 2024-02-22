@@ -6,6 +6,8 @@ ms.assetid: bebb27ac-9712-4196-9931-de19fc04dbac
 ---
 # Serialization
 
+[!INCLUDE [not-current](includes/not-current.md)]
+
 Serialization is the process of converting an object into a format that can be readily persisted or transported. For example, you can serialize an object, transport it over the internet using HTTP, and deserialize it at the destination machine.
 
  The .NET Framework offers three main serialization technologies optimized for various serialization scenarios. The following table lists these technologies and the main framework types related to these technologies.

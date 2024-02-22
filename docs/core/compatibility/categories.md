@@ -6,7 +6,7 @@ ms.topic: conceptual
 ---
 # How code changes can affect compatibility
 
-*Compatibility* refers to the ability to compile or execute code on a version of a .NET implementation other than the one with which the code was originally developed. A [particular change](index.md) can affect compatibility in six different ways:
+*Compatibility* refers to the ability to compile or execute code on a version of a .NET implementation other than the one with which the code was originally developed. A particular change can affect compatibility in six different ways:
 
 - [Behavioral change](#behavioral-change)
 - [Binary compatibility](#binary-compatibility)
@@ -46,7 +46,3 @@ Forward compatibility refers to the ability of an existing consumer of an API to
 Maintaining forward compatibility virtually precludes any changes or additions from version to version, since those changes prevent a consumer that targets a later version from running under an earlier version. Developers expect that a consumer that relies on a newer API may not function correctly against the older API.
 
 Maintaining forward compatibility is not a goal of .NET Core.
-
-## See also
-
-- [Evaluate breaking changes in .NET Core](index.md)

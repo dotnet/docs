@@ -24,7 +24,7 @@ A partial method isn't required to have an implementation in the following cases
 
 - It returns [void](../../language-reference/builtin-types/void.md).
 
-- It doesn't have any [out](../../language-reference/keywords/out-parameter-modifier.md) parameters.
+- It doesn't have any [out](method-parameters.md#out-parameter-modifier) parameters.
 
 - It doesn't have any of the following modifiers [virtual](../../language-reference/keywords/virtual.md), [override](../../language-reference/keywords/override.md), [sealed](../../language-reference/keywords/sealed.md), [new](../../language-reference/keywords/new-modifier.md), or [extern](../../language-reference/keywords/extern.md).
 
@@ -37,7 +37,7 @@ The following example shows a partial method defined in two parts of a partial c
 Partial methods can also be useful in combination with source generators. For example a regex could be defined using the following pattern:
 
 ```csharp
-[RegexGenerated("(dog|cat|fish)")]
+[GeneratedRegex("(dog|cat|fish)")]
 partial bool IsPetMatch(string input);
 ```
 

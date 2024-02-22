@@ -1,0 +1,70 @@
+### YamlMime:Landing
+
+title: .NET data access documentation
+summary: Learn about data access in .NET, including XML data, Entity Framework, LINQ, and SQLite.
+
+metadata:
+  title: .NET data access documentation
+  description: Learn about data access in .NET, including XML data, Entity Framework, LINQ, and SQLite.
+  ms.topic: landing-page
+  ms.date: 01/17/2023
+
+landingContent:
+
+  # Card
+  - title: LINQ
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: LINQ overview
+            url: ../../standard/linq/index.md
+          - text: LINQ to XML
+            url: ../../standard/linq/index.md
+
+  # Card
+  - title: Entity Framework
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Entity Framework Core
+            url: /ef/core/
+
+  # Card
+  - title: XML documents and data
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview
+            url: ../../standard/data/xml/index.md
+      - linkListType: concept
+        links:
+          - text: Document object model (DOM)
+            url: ../../standard/data/xml/xml-document-object-model-dom.md
+          - text: XPath
+            url: ../../standard/data/xml/process-xml-data-using-the-xpath-data-model.md
+          - text: XSLT transformations
+            url: ../../standard/data/xml/xslt-transformations.md
+          - text: XML schemas
+            url: ../../standard/data/xml/working-with-xml-schemas.md
+
+  # Card
+  - title: Microsoft.Data.Sqlite
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview
+            url: ../../standard/data/sqlite/index.md
+      - linkListType: reference
+        links:
+          - text: API reference
+            url: ../../../api/index.md?view=msdata-sqlite-3.1.0&preserve-view=false
+          - text: SQL syntax
+            url: https://www.sqlite.org/lang.html
+
+  # Card
+  - title: Azure Storage
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Azure Storage client libraries for .NET
+            url: /dotnet/api/overview/azure/storage/

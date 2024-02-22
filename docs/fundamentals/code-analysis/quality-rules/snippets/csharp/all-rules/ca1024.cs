@@ -9,7 +9,7 @@ namespace ca1024
     {
         static long nextAppointmentID;
         static double[] discountScale = { 5.0, 10.0, 33.0 };
-        string customerName;
+        string? customerName;
         long customerID;
         DateTime when;
 
@@ -64,7 +64,7 @@ namespace ca1024
             this.customerName = customerName;
         }
 
-        public string GetCustomerName()
+        public string? GetCustomerName()
         {
             return customerName;
         }

@@ -54,7 +54,7 @@ At run time, if the <xref:System.Type?displayProperty=nameWithType> instance rep
 For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
 - [Default values](~/_csharpstandard/standard/variables.md#93-default-values)
-- [Default constructors](~/_csharpstandard/standard/types.md#833-default-constructors)\
+- [Default constructors](~/_csharpstandard/standard/types.md#833-default-constructors)
 - [C# 10 - Parameterless struct constructors](~/_csharplang/proposals/csharp-10.0/parameterless-struct-constructors.md)
 - [C# 11 - Auto default structs](~/_csharplang/proposals/csharp-11.0/auto-default-structs.md)
 

@@ -33,7 +33,15 @@ In order for the application to benefit from these changes, it must run on the .
 </configuration>
 ```
 
-Applications that target the .NET Framework 4.7.1 or later and want to preserve the legacy accessibility behavior can opt in to the use of legacy accessibility features by explicitly setting this AppContext switch to `true`.<p/>For an overview of UI automation, see the [UI Automation Overview](~/docs/framework/ui-automation/ui-automation-overview.md).<p/>**Added support for UI Automation patterns and properties**<br/>Accessibility clients can take advantage of new WinForms accessibility functionality by using common, publicly described invocation patterns. These patterns are not WinForms-specific. For instance, accessibility clients can call the QueryInterface method on the IAccessible interface (MAAS) to obtain an IServiceProvider interface. If this interface is available, clients can use its QueryService method to request an IAccessibleEx interface. For more information, see [Using IAccessibleEx from a Client](/windows/desktop/WinAuto/using-iaccessibleex-from-a-client). Starting with the .NET Framework 4.7.1, IServiceProvider and [IAccessibleEx](/windows/desktop/WinAuto/iaccessibleex) (where applicable) are available for WinForms accessibility objects.<p/>The .NET Framework 4.7.1 adds support for the following UI automation patterns and properties:
+Applications that target the .NET Framework 4.7.1 or later and want to preserve the legacy accessibility behavior can opt in to the use of legacy accessibility features by explicitly setting this AppContext switch to `true`.
+
+For an overview of UI automation, see the [UI Automation Overview](~/docs/framework/ui-automation/ui-automation-overview.md).
+
+**Added support for UI Automation patterns and properties**
+
+Accessibility clients can take advantage of new WinForms accessibility functionality by using common, publicly described invocation patterns. These patterns are not WinForms-specific. For instance, accessibility clients can call the QueryInterface method on the IAccessible interface (MAAS) to obtain an IServiceProvider interface. If this interface is available, clients can use its QueryService method to request an IAccessibleEx interface. For more information, see [Using IAccessibleEx from a Client](/windows/desktop/WinAuto/using-iaccessibleex-from-a-client). Starting with the .NET Framework 4.7.1, IServiceProvider and [IAccessibleEx](/windows/desktop/WinAuto/iaccessibleex) (where applicable) are available for WinForms accessibility objects.
+
+.NET Framework 4.7.1 adds support for the following UI automation patterns and properties:
 
 - The <xref:System.Windows.Forms.ToolStripSplitButton> and <xref:System.Windows.Forms.ComboBox> controls support the [Expand/Collapse pattern](~/docs/framework/ui-automation/implementing-the-ui-automation-expandcollapse-control-pattern.md).
 - The <xref:System.Windows.Forms.ToolStripMenuItem> control has a [ControlType](~/docs/framework/ui-automation/ui-automation-support-for-the-menubar-control-type.md) property value <xref:System.Windows.Automation.ControlType.MenuItem?displayProperty=nameWithType>.

@@ -54,232 +54,24 @@ items:
         href: migration-guide/application-compatibility.md
       - name: Runtime changes
         items:
-        - name: 4.0 to 4.5
-          href: migration-guide/runtime/4.0-4.5.md
-        - name: 4.0 to 4.5.1
-          href: migration-guide/runtime/4.0-4.5.1.md
-        - name: 4.0 to 4.5.2
-          href: migration-guide/runtime/4.0-4.5.2.md
-        - name: 4.0 to 4.6
-          href: migration-guide/runtime/4.0-4.6.md
-        - name: 4.0 to 4.6.1
-          href: migration-guide/runtime/4.0-4.6.1.md
-        - name: 4.0 to 4.6.2
-          href: migration-guide/runtime/4.0-4.6.2.md
-        - name: 4.0 to 4.7
-          href: migration-guide/runtime/4.0-4.7.md
-        - name: 4.0 to 4.7.1
-          href: migration-guide/runtime/4.0-4.7.1.md
-        - name: 4.0 to 4.7.2
-          href: migration-guide/runtime/4.0-4.7.2.md
-        - name: 4.0 to 4.8
-          href: migration-guide/runtime/4.0-4.8.md
-        - name: 4.5 to 4.5.1
-          href: migration-guide/runtime/4.5-4.5.1.md
-        - name: 4.5 to 4.5.2
-          href: migration-guide/runtime/4.5-4.5.2.md
-        - name: 4.5 to 4.6
-          href: migration-guide/runtime/4.5-4.6.md
-        - name: 4.5 to 4.6.1
-          href: migration-guide/runtime/4.5-4.6.1.md
-        - name: 4.5 to 4.6.2
-          href: migration-guide/runtime/4.5-4.6.2.md
-        - name: 4.5 to 4.7
-          href: migration-guide/runtime/4.5-4.7.md
-        - name: 4.5 to 4.7.1
-          href: migration-guide/runtime/4.5-4.7.1.md
-        - name: 4.5 to 4.7.2
-          href: migration-guide/runtime/4.5-4.7.2.md
-        - name: 4.5 to 4.8
-          href: migration-guide/runtime/4.5-4.8.md
-        - name: 4.5.1 to 4.5.2
-          href: migration-guide/runtime/4.5.1-4.5.2.md
-        - name: 4.5.1 to 4.6
-          href: migration-guide/runtime/4.5.1-4.6.md
-        - name: 4.5.1 to 4.6.1
-          href: migration-guide/runtime/4.5.1-4.6.1.md
-        - name: 4.5.1 to 4.6.2
-          href: migration-guide/runtime/4.5.1-4.6.2.md
-        - name: 4.5.1 to 4.7
-          href: migration-guide/runtime/4.5.1-4.7.md
-        - name: 4.5.1 to 4.7.1
-          href: migration-guide/runtime/4.5.1-4.7.1.md
-        - name: 4.5.1 to 4.7.2
-          href: migration-guide/runtime/4.5.1-4.7.2.md
-        - name: 4.5.1 to 4.8
-          href: migration-guide/runtime/4.5.1-4.8.md
-        - name: 4.5.2 to 4.6
-          href: migration-guide/runtime/4.5.2-4.6.md
-        - name: 4.5.2 to 4.6.1
-          href: migration-guide/runtime/4.5.2-4.6.1.md
-        - name: 4.5.2 to 4.6.2
-          href: migration-guide/runtime/4.5.2-4.6.2.md
-        - name: 4.5.2 to 4.7
-          href: migration-guide/runtime/4.5.2-4.7.md
-        - name: 4.5.2 to 4.7.1
-          href: migration-guide/runtime/4.5.2-4.7.1.md
-        - name: 4.5.2 to 4.7.2
-          href: migration-guide/runtime/4.5.2-4.7.2.md
-        - name: 4.5.2 to 4.8
-          href: migration-guide/runtime/4.5.2-4.8.md
-        - name: 4.6 to 4.6.1
-          href: migration-guide/runtime/4.6-4.6.1.md
-        - name: 4.6 to 4.6.2
-          href: migration-guide/runtime/4.6-4.6.2.md
-        - name: 4.6 to 4.7
-          href: migration-guide/runtime/4.6-4.7.md
-        - name: 4.6 to 4.7.1
-          href: migration-guide/runtime/4.6-4.7.1.md
-        - name: 4.6 to 4.7.2
-          href: migration-guide/runtime/4.6-4.7.2.md
-        - name: 4.6 to 4.8
-          href: migration-guide/runtime/4.6-4.8.md
-        - name: 4.6.1 to 4.6.2
-          href: migration-guide/runtime/4.6.1-4.6.2.md
-        - name: 4.6.1 to 4.7
-          href: migration-guide/runtime/4.6.1-4.7.md
-        - name: 4.6.1 to 4.7.1
-          href: migration-guide/runtime/4.6.1-4.7.1.md
-        - name: 4.6.1 to 4.7.2
-          href: migration-guide/runtime/4.6.1-4.7.2.md
-        - name: 4.6.1 to 4.8
-          href: migration-guide/runtime/4.6.1-4.8.md
-        - name: 4.6.2 to 4.7
-          href: migration-guide/runtime/4.6.2-4.7.md
-        - name: 4.6.2 to 4.7.1
-          href: migration-guide/runtime/4.6.2-4.7.1.md
-        - name: 4.6.2 to 4.7.2
-          href: migration-guide/runtime/4.6.2-4.7.2.md
-        - name: 4.6.2 to 4.8
-          href: migration-guide/runtime/4.6.2-4.8.md
-        - name: 4.7 to 4.7.1
-          href: migration-guide/runtime/4.7-4.7.1.md
-        - name: 4.7 to 4.7.2
-          href: migration-guide/runtime/4.7-4.7.2.md
-        - name: 4.7 to 4.8
-          href: migration-guide/runtime/4.7-4.8.md
-        - name: 4.7.1 to 4.7.2
-          href: migration-guide/runtime/4.7.1-4.7.2.md
-        - name: 4.7.1 to 4.8
-          href: migration-guide/runtime/4.7.1-4.8.md
-        - name: 4.7.2 to 4.8
-          href: migration-guide/runtime/4.7.2-4.8.md
-        - name: 4.8 to 4.8.1
-          href: migration-guide/runtime/4.8-4.8.1.md
+        - name: .NET Framework 4.5
+          href: migration-guide/runtime/4.5.x.md
+        - name: .NET Framework 4.6
+          href: migration-guide/runtime/4.6.x.md
+        - name: .NET Framework 4.7
+          href: migration-guide/runtime/4.7.x.md
+        - name: .NET Framework 4.8
+          href: migration-guide/runtime/4.8.x.md
       - name: Retargeting changes
         items:
-        - name: 4.0 to 4.5
-          href: migration-guide/retargeting/4.0-4.5.md
-        - name: 4.0 to 4.5.1
-          href: migration-guide/retargeting/4.0-4.5.1.md
-        - name: 4.0 to 4.5.2
-          href: migration-guide/retargeting/4.0-4.5.2.md
-        - name: 4.0 to 4.6
-          href: migration-guide/retargeting/4.0-4.6.md
-        - name: 4.0 to 4.6.1
-          href: migration-guide/retargeting/4.0-4.6.1.md
-        - name: 4.0 to 4.6.2
-          href: migration-guide/retargeting/4.0-4.6.2.md
-        - name: 4.0 to 4.7
-          href: migration-guide/retargeting/4.0-4.7.md
-        - name: 4.0 to 4.7.1
-          href: migration-guide/retargeting/4.0-4.7.1.md
-        - name: 4.0 to 4.7.2
-          href: migration-guide/retargeting/4.0-4.7.2.md
-        - name: 4.0 to 4.8
-          href: migration-guide/retargeting/4.0-4.8.md
-        - name: 4.5 to 4.5.1
-          href: migration-guide/retargeting/4.5-4.5.1.md
-        - name: 4.5 to 4.5.2
-          href: migration-guide/retargeting/4.5-4.5.2.md
-        - name: 4.5 to 4.6
-          href: migration-guide/retargeting/4.5-4.6.md
-        - name: 4.5 to 4.6.1
-          href: migration-guide/retargeting/4.5-4.6.1.md
-        - name: 4.5 to 4.6.2
-          href: migration-guide/retargeting/4.5-4.6.2.md
-        - name: 4.5 to 4.7
-          href: migration-guide/retargeting/4.5-4.7.md
-        - name: 4.5 to 4.7.1
-          href: migration-guide/retargeting/4.5-4.7.1.md
-        - name: 4.5 to 4.7.2
-          href: migration-guide/retargeting/4.5-4.7.2.md
-        - name: 4.5 to 4.8
-          href: migration-guide/retargeting/4.5-4.8.md
-        - name: 4.5.1 to 4.5.2
-          href: migration-guide/retargeting/4.5.1-4.5.2.md
-        - name: 4.5.1 to 4.6
-          href: migration-guide/retargeting/4.5.1-4.6.md
-        - name: 4.5.1 to 4.6.1
-          href: migration-guide/retargeting/4.5.1-4.6.1.md
-        - name: 4.5.1 to 4.6.2
-          href: migration-guide/retargeting/4.5.1-4.6.2.md
-        - name: 4.5.1 to 4.7
-          href: migration-guide/retargeting/4.5.1-4.7.md
-        - name: 4.5.1 to 4.7.1
-          href: migration-guide/retargeting/4.5.1-4.7.1.md
-        - name: 4.5.1 to 4.7.2
-          href: migration-guide/retargeting/4.5.1-4.7.2.md
-        - name: 4.5.1 to 4.8
-          href: migration-guide/retargeting/4.5.1-4.8.md
-        - name: 4.5.2 to 4.6
-          href: migration-guide/retargeting/4.5.2-4.6.md
-        - name: 4.5.2 to 4.6.1
-          href: migration-guide/retargeting/4.5.2-4.6.1.md
-        - name: 4.5.2 to 4.6.2
-          href: migration-guide/retargeting/4.5.2-4.6.2.md
-        - name: 4.5.2 to 4.7
-          href: migration-guide/retargeting/4.5.2-4.7.md
-        - name: 4.5.2 to 4.7.1
-          href: migration-guide/retargeting/4.5.2-4.7.1.md
-        - name: 4.5.2 to 4.7.2
-          href: migration-guide/retargeting/4.5.2-4.7.2.md
-        - name: 4.5.2 to 4.8
-          href: migration-guide/retargeting/4.5.2-4.8.md
-        - name: 4.6 to 4.6.1
-          href: migration-guide/retargeting/4.6-4.6.1.md
-        - name: 4.6 to 4.6.2
-          href: migration-guide/retargeting/4.6-4.6.2.md
-        - name: 4.6 to 4.7
-          href: migration-guide/retargeting/4.6-4.7.md
-        - name: 4.6 to 4.7.1
-          href: migration-guide/retargeting/4.6-4.7.1.md
-        - name: 4.6 to 4.7.2
-          href: migration-guide/retargeting/4.6-4.7.2.md
-        - name: 4.6 to 4.8
-          href: migration-guide/retargeting/4.6-4.8.md
-        - name: 4.6.1 to 4.6.2
-          href: migration-guide/retargeting/4.6.1-4.6.2.md
-        - name: 4.6.1 to 4.7
-          href: migration-guide/retargeting/4.6.1-4.7.md
-        - name: 4.6.1 to 4.7.1
-          href: migration-guide/retargeting/4.6.1-4.7.1.md
-        - name: 4.6.1 to 4.7.2
-          href: migration-guide/retargeting/4.6.1-4.7.2.md
-        - name: 4.6.1 to 4.8
-          href: migration-guide/retargeting/4.6.1-4.8.md
-        - name: 4.6.2 to 4.7
-          href: migration-guide/retargeting/4.6.2-4.7.md
-        - name: 4.6.2 to 4.7.1
-          href: migration-guide/retargeting/4.6.2-4.7.1.md
-        - name: 4.6.2 to 4.7.2
-          href: migration-guide/retargeting/4.6.2-4.7.2.md
-        - name: 4.6.2 to 4.8
-          href: migration-guide/retargeting/4.6.2-4.8.md
-        - name: 4.7 to 4.7.1
-          href: migration-guide/retargeting/4.7-4.7.1.md
-        - name: 4.7 to 4.7.2
-          href: migration-guide/retargeting/4.7-4.7.2.md
-        - name: 4.7 to 4.8
-          href: migration-guide/retargeting/4.7-4.8.md
-        - name: 4.7.1 to 4.7.2
-          href: migration-guide/retargeting/4.7.1-4.7.2.md
-        - name: 4.7.1 to 4.8
-          href: migration-guide/retargeting/4.7.1-4.8.md
-        - name: 4.7.2 to 4.8
-          href: migration-guide/retargeting/4.7.2-4.8.md
-        - name: 4.8 to 4.8.1
-          href: migration-guide/retargeting/4.8-4.8.1.md
+        - name: .NET Framework 4.5
+          href: migration-guide/retargeting/4.5.x.md
+        - name: .NET Framework 4.6
+          href: migration-guide/retargeting/4.6.x.md
+        - name: .NET Framework 4.7
+          href: migration-guide/retargeting/4.7.x.md
+        - name: .NET Framework 4.8
+          href: migration-guide/retargeting/4.8.x.md
     - name: Behavior mitigations
       items:
       - name: Overview
@@ -334,6 +126,8 @@ items:
     href: migration-guide/migrating-from-the-net-framework-1-1.md
   - name: .NET Framework 4 migration issues
     href: migration-guide/net-framework-4-migration-issues.md
+  - name: Build apps against reference assemblies
+    href: migration-guide/reference-assemblies.md
 - name: Development guide
   href: development-guide.md
   items:
@@ -642,6 +436,8 @@ items:
       href: additional-apis/datamemberfieldeditor-class.md
     - name: DataMemberListEditor class
       href: additional-apis/datamemberlisteditor-class.md
+    - name: StringCollectionEditor class
+      href: additional-apis/system-windows-forms/stringcollectioneditor-class.md
   - name: System.Windows.Xps
     items:
     - name: XpsDocumentWriter class
@@ -875,9 +671,11 @@ items:
     href: whats-new/index.md
   - name: What's new in accessibility
     href: whats-new/whats-new-in-accessibility.md
-  - name: What's obsolete in API ref
-    href: whats-new/whats-obsolete.md
+  - name: Obsolete APIs
     items:
+    - name: Overview
+      href: whats-new/whats-obsolete.md
+      displayName: obsoletions
     - name: Obsolete types
       href: whats-new/obsolete-types.md
     - name: Obsolete members

@@ -55,7 +55,7 @@ You can also use the [`.` token](member-access-operators.md#member-access-expres
 
 ## C# language specification
 
-For more information, see the [Namespace alias qualifiers](~/_csharpstandard/standard/namespaces.md#138-qualified-alias-member) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For more information, see the [Namespace alias qualifiers](~/_csharpstandard/standard/namespaces.md#148-qualified-alias-member) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 

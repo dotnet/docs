@@ -4,33 +4,14 @@ using System.IO;
 using System.Security.Cryptography;
 using System.Text;
 
-class Class1
-{
-    static void Main(string[] args)
-    {
-        byte[] hashValue;
+string messageString = "This is the original message!";
 
-        string messageString = "This is the original message!";
+//Convert the string into an array of bytes.
+byte[] messageBytes = Encoding.UTF8.GetBytes(messageString);
 
-        //Create a new instance of the UnicodeEncoding class to
-        //convert the string into an array of Unicode bytes.
-        UnicodeEncoding ue = new UnicodeEncoding();
+//Create the hash value from the array of bytes.
+byte[] hashValue = SHA256.HashData(messageBytes);
 
-        //Convert the string into an array of bytes.
-        byte[] messageBytes = ue.GetBytes(messageString);
-
-        //Create a new instance of the SHA256 class to create
-        //the hash value.
-        SHA256 shHash = SHA256.Create();
-
-        //Create the hash value from the array of bytes.
-        hashValue = shHash.ComputeHash(messageBytes);
-
-        //Display the hash value to the console.
-        foreach (byte b in hashValue)
-        {
-            Console.Write("{0} ", b);
-        }
-    }
-}
+//Display the hash value to the console.
+Console.WriteLine(Convert.ToHexString(hashValue));
 //</Snippet1>

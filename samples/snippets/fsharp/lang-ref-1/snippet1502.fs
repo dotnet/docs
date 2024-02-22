@@ -1,2 +1,2 @@
 // Sequence that has an increment.
-seq { 0 .. 10 .. 100 }
+seq { 0..10..100 }

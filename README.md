@@ -10,14 +10,18 @@
 
 This repository contains the conceptual documentation for .NET. The [.NET documentation site](https://learn.microsoft.com/dotnet) is built from multiple repositories in addition to this one:
 
+- [.NET Desktop workloads](https://github.com/dotnet/docs-desktop)
+- [.NET Aspire](https://github.com/dotnet/docs-aspire)
 - [API reference](https://github.com/dotnet/dotnet-api-docs)
 - [.NET Compiler Platform SDK reference](https://github.com/dotnet/roslyn-api-docs)
+- [C# specification - draft](https://github.com/dotnet/csharpstandard)
+- [C# Language design](https://github.com/dotnet/csharplang)
 
-Issues and tasks for all but the API reference repository are tracked here. We have a large community using these resources. We make our best effort to respond to issues in a timely fashion. You can read more about our procedures for classifying and resolving issues in our [Issues policy](issues-policy.md) topic. To create a new issue, [choose from any of the available templates](https://github.com/dotnet/docs/issues/new/choose).
+Our team's tasks are tracked in our [project boards](https://github.com/dotnet/docs/projects?query=is%3Aopen). You'll see monthly sprint projects, along with long-running projects for major documentation updates. The projects contain documentation issues across the repositories that build .NET docs. Issues are tracked in the relevant repositories. We have a large community using these resources. We make our best effort to respond to issues in a timely fashion. You can read more about our procedures for classifying and resolving issues in our [Issues policy](issues-policy.md) topic. To create a new issue, click the "Open a documentation issue" button at the bottom of any of our published docs, or [choose one of the available templates](https://github.com/dotnet/docs/issues/new/choose). The control at the bottom of each article automatically routes you to the correct repo and fills in some relevant information based on the article.
 
 ## :purple_heart: Contribute
 
-We welcome contributions to help us improve and complete the .NET docs. This is a very large repo, covering a large area. If this is your first visit, see our [labels and projects roadmap](styleguide/labels-projects.md) for help navigating the issues and projects in this repository.
+We welcome contributions to help us improve and complete the .NET docs. This is a very large repo, covering a large area. If this is your first visit, see our [labels and projects roadmap](styleguide/labels-projects.md) for help navigating the issues and projects in this repository. If your contribution includes third-party dependencies, see our guidance on using [third-party dependencies](styleguide/3rdPartyDependencies.md).
 
 To contribute, see:
 
@@ -40,7 +44,7 @@ to clarify expected behavior in our community. For more information, see the [.N
 - [![MSDocs build verifier](https://github.com/dotnet/docs/actions/workflows/docs-verifier.yml/badge.svg)](https://github.com/dotnet/docs/actions/workflows/docs-verifier.yml):  Runs various Markdown verifications, beyond the linter, such as ensuring links and redirects are valid.
 - [![No response](https://github.com/dotnet/docs/actions/workflows/no-response.yml/badge.svg)](https://github.com/dotnet/docs/actions/workflows/no-response.yml):  If an issue is labeled with `needs-more-info` and the op doesn't respond within 14 days, the issue is closed.
 - [![OPS status checker](https://github.com/dotnet/docs/actions/workflows/check-for-build-warnings.yml/badge.svg)](https://github.com/dotnet/docs/actions/workflows/check-for-build-warnings.yml):  Builds the site for the PR in context, and verifies the build reporting either, `success,` `warnings`, or `error`.
-- [![Snippets 5000](https://github.com/dotnet/docs/actions/workflows/build-validation.yml/badge.svg)](https://github.com/dotnet/docs/actions/workflows/build-validation.yml):  Custom .NET build validation, locates code impacted by a PR, and builds.
+- [![Snippets 5000](https://github.com/dotnet/docs/actions/workflows/snippets5000.yml/badge.svg)](https://github.com/dotnet/docs/actions/workflows/snippets5000.yml):  Custom .NET build validation, locates code impacted by a PR, and builds.
 - [![Target supported version](https://github.com/dotnet/docs/actions/workflows/version-sweep.yml/badge.svg)](https://github.com/dotnet/docs/actions/workflows/version-sweep.yml):  Runs monthly, creating issues on projects that target .NET versions that are out of support.
 - [![Update dependabot.yml](https://github.com/dotnet/docs/actions/workflows/dependabot-bot.yml/badge.svg)](https://github.com/dotnet/docs/actions/workflows/dependabot-bot.yml):  Automatically updates the `dependabot` configuration weekly, but only if required.
 - [![quest import](https://github.com/dotnet/docs/actions/workflows/quest.yml/badge.svg)](https://github.com/dotnet/docs/actions/workflows/quest.yml): Automatically synchronizes issues with Quest (Azure DevOps).

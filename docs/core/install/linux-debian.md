@@ -3,7 +3,7 @@ title: Install .NET on Debian
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Debian.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/15/2022
+ms.date: 11/14/2023
 ---
 
 # Install the .NET SDK or the .NET Runtime on Debian
@@ -20,8 +20,9 @@ The following table is a list of currently supported .NET releases and the versi
 
 | Debian  | .NET      |
 |---------|-----------|
-| 11      | 7, 6, 3.1 |
-| 10      | 7, 6, 3.1 |
+| 12      | 8, 7, 6   |
+| 11      | 8, 7, 6   |
+| 10      | 7, 6      |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
@@ -33,6 +34,18 @@ The following table is a list of currently supported .NET releases and the versi
 
 [!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
 
+## Debian 12
+
+[!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
+
+```bash
+wget https://packages.microsoft.com/config/debian/12/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
+```
+
+[!INCLUDE [linux-apt-install-80](includes/linux-install-80-apt.md)]
+
 ## Debian 11
 
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
@@ -43,7 +56,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 rm packages-microsoft-prod.deb
 ```
 
-[!INCLUDE [linux-apt-install-70](includes/linux-install-70-apt.md)]
+[!INCLUDE [linux-apt-install-80](includes/linux-install-80-apt.md)]
 
 ## Debian 10
 
@@ -102,26 +115,28 @@ sudo apt-get update && \
 
 ## Dependencies
 
-When you install with a package manager, these libraries are installed for you. But, if you manually install .NET Core or you publish a self-contained app, you'll need to make sure these libraries are installed:
+When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you'll need to make sure these libraries are installed:
 
 - libc6
-- libgcc-s1
+- libgcc1 (for 10.x)
+- libgcc-s1 (for 11.x and 12.x)
 - libgssapi-krb5-2
-- libicu52 (for 8.x)
-- libicu57 (for 9.x)
 - libicu63 (for 10.x)
 - libicu67 (for 11.x)
-- libssl1.0.0 (for 8.x)
-- libssl1.1 (for 9.x-11.x)
+- libicu72 (for 12.x)
+- libssl1.1
 - libstdc++6
 - zlib1g
 
-For .NET Core apps that use the *System.Drawing.Common* assembly, you also need the following dependency:
+Dependencies can be installed with the `apt install` command. The following snippet demonstrates installing the `libc6` library:
 
-- libgdiplus (version 6.0.1 or later)
+```bash
+sudo apt install libc6
+```
 
-  > [!WARNING]
-  > You can install a recent version of *libgdiplus* by adding the Mono repository to your system. For more information, see <https://www.mono-project.com/download/stable/>.
+[!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
+
+You can install a recent version of *libgdiplus* by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin-debian).
 
 ## Next steps
 

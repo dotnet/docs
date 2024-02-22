@@ -1,7 +1,7 @@
 ---
 title: Properties in C#
 description: Learn about C# properties, which include features for validation, computed values, lazy evaluation, and property changed notifications.
-ms.technology: csharp-fundamentals
+ms.subservice: fundamentals
 ms.date: 07/20/2022
 ---
 # Properties
@@ -92,7 +92,7 @@ The preceding example allows a caller to create a `Person` using the default con
 
 :::code language="csharp" source="./snippets/properties/Person.cs" id="Snippet9.2":::
 
-The preceding code makes two addition to the `Person` class. First, the `FirstName` property declaration includes the `required` modifier. That means any code that creates a new `Person` must set this property. Second, the constructor that takes a `firstName` parameter has the <xref:System.Diagnostics.CodeAnalysis.SetsRequiredMembersAttribute?displayProperty=fullName> attribute. This attribute informs the compiler that this constructor sets *all* `required` members.
+The preceding code makes two additions to the `Person` class. First, the `FirstName` property declaration includes the `required` modifier. That means any code that creates a new `Person` must set this property. Second, the constructor that takes a `firstName` parameter has the <xref:System.Diagnostics.CodeAnalysis.SetsRequiredMembersAttribute?displayProperty=fullName> attribute. This attribute informs the compiler that this constructor sets *all* `required` members.
 
 > [!IMPORTANT]
 > Don't confuse `required` with *non-nullable*. It's valid to set a `required` property to `null` or `default`. If the type is non-nullable, such as `string` in these examples, the compiler issues a warning.

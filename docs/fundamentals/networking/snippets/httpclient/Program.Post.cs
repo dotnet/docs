@@ -22,7 +22,7 @@
             .WriteRequestToConsole();
         
         var jsonResponse = await response.Content.ReadAsStringAsync();
-        WriteLine($"{jsonResponse}\n");
+        Console.WriteLine($"{jsonResponse}\n");
 
         // Expected output:
         //   POST https://jsonplaceholder.typicode.com/todos HTTP/1.1

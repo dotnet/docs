@@ -100,6 +100,8 @@ It's possible that 5.0.3 and 5.1.0 behave differently, particularly for scenario
 
 ### Control roll-forward behavior
 
+> Before overriding default roll-forward behavior, familiarize yourself with the level of [.NET runtime compatibility](index.md#net-runtime-compatibility).
+
 The roll-forward behavior for an application can be configured in four different ways:
 
 01. Project-level setting by setting the `<RollForward>` property:

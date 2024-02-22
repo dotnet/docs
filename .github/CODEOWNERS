@@ -38,7 +38,7 @@
 /docs/csharp/ @BillWagner
 
 # The F# Guide:
-/docs/fsharp/ @dotnet/docs @kathleendollard
+/docs/fsharp/ @BillWagner @kathleendollard @dotnet/fsharp-team-msft
 
 # The Visual Basic Guide:
 /docs/visual-basic/ @KathleenDollard @BillWagner
@@ -55,11 +55,30 @@
 # .NET Orleans
 /docs/orleans/ @IEvangelist
 
+############### Azure ################
+
 # Azure Guide
 /docs/azure/ @alexwolfmsft @CamSoper
 
 # Azure SDK package list
 /docs/azure/includes/ @dotnet/docs
+
+# Azure SDK catch-all entry
+/docs/azure/sdk/ @jsquire @pallavit
+
+# Azure SDK authentication topics
+/docs/azure/sdk/authentication/ @christothes @schaabs
+
+# Azure SDK miscellaneous topics
+/docs/azure/sdk/azure-sdk-configure-proxy.md @annelo-msft @christothes @JoshLove-msft @KrzysztofCwalina @jsquire
+/docs/azure/sdk/azure-sdk-for-net.md @jsquire @pallavit
+/docs/azure/sdk/dependency-injection.md @JoshLove-msft @jsquire
+/docs/azure/sdk/logging.md @annelo-msft @christothes @JoshLove-msft @KrzysztofCwalina @jsquire
+/docs/azure/sdk/packages.md @jsquire @pallavit
+/docs/azure/sdk/pagination.md @annelo-msft @christothes @JoshLove-msft @KrzysztofCwalina @jsquire
+/docs/azure/sdk/resource-management.md @ArthurMa1978 @m-nash
+/docs/azure/sdk/thread-safety.md @annelo-msft @christothes @JoshLove-msft @KrzysztofCwalina @jsquire
+/docs/azure/sdk/unit-testing-mocking.md @annelo-msft @christothes @JoshLove-msft @KrzysztofCwalina @jsquire
 
 # IoT Guide
 /docs/iot/ @CamSoper
@@ -74,7 +93,7 @@
 
 ############### .NET Core ########################
 # What's New
-/docs/core/whats-new/ @adegeo
+/docs/core/whats-new/ @gewarren
 # Deployment
 /docs/core/deploying/ @adegeo
 # Diagnostics
@@ -155,7 +174,7 @@
 # Data
 /docs/standard/data/ @gewarren
 # Data - SQLite
-/docs/standard/data/sqlite/ @bricelam
+/docs/standard/data/sqlite/ @ajcvickers
 # Datetime
 /docs/standard/datetime/ @adegeo
 # Design guidelines

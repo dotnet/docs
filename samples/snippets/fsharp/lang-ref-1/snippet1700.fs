@@ -1,2 +1,1 @@
-let makeList a b =
-    [a; b]
+let makeList a b = [ a; b ]

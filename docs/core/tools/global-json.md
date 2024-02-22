@@ -80,11 +80,11 @@ The following table shows the possible values for the `rollForward` key:
 | `feature`     | Uses the latest patch level for the specified major, minor, and feature band. <br> If not found, rolls forward to the next higher feature band within the same major/minor and uses the latest patch level for that feature band. <br> If not found, fails. |
 | `minor`       | Uses the latest patch level for the specified major, minor, and feature band. <br> If not found, rolls forward to the next higher feature band within the same major/minor version and uses the latest patch level for that feature band. <br> If not found, rolls forward to the next higher minor and feature band within the same major and uses the latest patch level for that feature band. <br> If not found, fails. |
 | `major`       | Uses the latest patch level for the specified major, minor, and feature band. <br> If not found, rolls forward to the next higher feature band within the same major/minor version and uses the latest patch level for that feature band. <br> If not found, rolls forward to the next higher minor and feature band within the same major and uses the latest patch level for that feature band. <br> If not found, rolls forward to the next higher major, minor, and feature band and uses the latest patch level for that feature band. <br> If not found, fails. |
-| `latestPatch` | Uses the latest installed patch level that matches the requested major, minor, and feature band with a patch level and that is greater or equal than the specified value. <br> If not found, fails. |
-| `latestFeature` | Uses the highest installed feature band and patch level that matches the requested major and minor with a feature band and patch level that is greater or equal than the specified value. <br> If not found, fails. |
-| `latestMinor` | Uses the highest installed minor, feature band, and patch level that matches the requested major with a minor, feature band, and patch level that is greater or equal than the specified value. <br> If not found, fails. |
-| `latestMajor` | Uses the highest installed .NET SDK with a version that is greater or equal than the specified value. <br> If not found, fail. |
-| `disable`     | Doesn't roll forward. Exact match required. |
+| `latestPatch` | Uses the latest installed patch level that matches the requested major, minor, and feature band with a patch level that's greater than or equal to the specified value. <br> If not found, fails. |
+| `latestFeature` | Uses the highest installed feature band and patch level that matches the requested major and minor with a feature band and patch level that's greater than or equal to the specified value. <br> If not found, fails. |
+| `latestMinor` | Uses the highest installed minor, feature band, and patch level that matches the requested major with a minor, feature band, and patch level that's greater than or equal to the specified value. <br> If not found, fails. |
+| `latestMajor` | Uses the highest installed .NET SDK with a version that's greater than or equal to the specified value. <br> If not found, fail. |
+| `disable`     | Doesn't roll forward. An exact match is required. |
 
 ### msbuild-sdks
 
@@ -92,7 +92,7 @@ Type: `object`
 
 Lets you control the project SDK version in one place rather than in each individual project. For more information, see [How project SDKs are resolved](/visualstudio/msbuild/how-to-use-project-sdk#how-project-sdks-are-resolved).
 
-### Comments in appsettings.json
+### Comments in global.json
 
 Comments in *global.json* files are supported using JavaScript or C# style comments. For example:
 
@@ -182,7 +182,7 @@ dotnet new globaljson --sdk-version 6.0.100
 
 The following rules apply when determining which version of the SDK to use:
 
-- If no *global.json* file is found, or *global.json* doesn't specify an SDK version nor an `allowPrerelease` value, the highest installed SDK version is used (equivalent to setting `rollForward` to `latestMajor`). Whether prerelease SDK versions are considered depends on how `dotnet` is being invoked.
+- If no *global.json* file is found, or *global.json* doesn't specify an SDK version nor an `allowPrerelease` value, the highest installed SDK version is used (equivalent to setting `rollForward` to `latestMajor`). Whether prerelease SDK versions are considered depends on how `dotnet` is being invoked:
   - If you're **not** in Visual Studio, prerelease versions are considered.
   - If you are in Visual Studio, it uses the prerelease status requested. That is, if you're using a Preview version of Visual Studio or you set the **Use previews of the .NET SDK** option (under **Tools** > **Options** > **Environment** > **Preview Features**), prerelease versions are considered; otherwise, only release versions are considered.
 - If a *global.json* file is found that doesn't specify an SDK version but it specifies an `allowPrerelease` value, the highest installed SDK version is used (equivalent to setting `rollForward` to `latestMajor`). Whether the latest SDK version can be release or prerelease depends on the value of `allowPrerelease`. `true` indicates prerelease versions are considered; `false` indicates that only release versions are considered.
@@ -193,7 +193,7 @@ The following rules apply when determining which version of the SDK to use:
 
 ## Troubleshoot build warnings
 
-* The following warnings indicate that your project was compiled using a prerelease version of the .NET SDK:
+- The following warnings indicate that your project was compiled using a prerelease version of the .NET SDK:
 
   > You are working with a preview version of the .NET Core SDK. You can define the SDK version via a global.json file in the current project. More at <https://go.microsoft.com/fwlink/?linkid=869452>.
 
@@ -201,11 +201,15 @@ The following rules apply when determining which version of the SDK to use:
 
   .NET SDK versions have a history and commitment of being high quality. However, if you don't want to use a prerelease version, check the different strategies you can use in the [allowPrerelease](#allowprerelease) section. For machines that have never had a .NET Core 3.0 or higher runtime or SDK installed, you need to create a *global.json* file and specify the exact version you want to use.
 
-* The following warning indicates that your project targets EF Core 1.0 or 1.1, which isn't compatible with .NET Core 2.1 SDK and later versions:
+- The following warning indicates that your project targets EF Core 1.0 or 1.1, which isn't compatible with .NET Core 2.1 SDK and later versions:
 
   > Startup project '{startupProject}' targets framework '.NETCoreApp' version '{targetFrameworkVersion}'. This version of the Entity Framework Core .NET Command-line Tools only supports version 2.0 or higher. For information on using older versions of the tools, see <https://go.microsoft.com/fwlink/?linkid=871254>.
 
   Starting with .NET Core 2.1 SDK (version 2.1.300), the `dotnet ef` command comes included in the SDK. To compile your project, install .NET Core 2.0 SDK (version 2.1.201) or earlier on your machine and define the desired SDK version using the *global.json* file. For more information about the `dotnet ef` command, see [EF Core .NET Command-line Tools](/ef/core/miscellaneous/cli/dotnet).
+
+- If you're using *global.json* to stay on a specific version of the .NET SDK, note that Visual Studio only ever installs a single copy of the .NET SDK. So if you upgrade your Visual Studio version, it removes the previous version of the .NET SDK it had used to install the new version. It removes the old version even if it's a different major .NET version.
+
+To avoid Visual Studio removing versions of the .NET SDK, you will need to install the stand-alone .NET SDK from the [download page](https://dotnet.microsoft.com/download/dotnet). Note that if you do, you will not get automatic updates to that version of the .NET SDK anymore through Visual Studio and may be at risk for security issues.
 
 ## See also
 

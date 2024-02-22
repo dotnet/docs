@@ -99,7 +99,7 @@ What follows are some recommendations, general use case scenarios, and things th
 
 - For the sake of consistency, all publicly visible types and their public members should be documented.
 - Private members can also be documented using XML comments. However, it exposes the inner (potentially confidential) workings of your library.
-- At a bare minimum, types and their members should have a `<summary>` tag because its content is needed for IntelliSense.
+- At a bare minimum, types and their members should have a `<summary>` tag.
 - Documentation text should be written using complete sentences ending with full stops.
 - Partial classes are fully supported, and documentation information will be concatenated into a single entry for each type.
 
@@ -164,7 +164,7 @@ If you want angle brackets to appear in the text of a documentation comment, use
 <summary>description</summary>
 ```
 
-The `<summary>` tag should be used to describe a type or a type member. Use [\<remarks>](#remarks) to add supplemental information to a type description. Use the [cref attribute](#cref-attribute) to enable documentation tools such as [DocFX](https://dotnet.github.io/docfx/) and [Sandcastle](https://github.com/EWSoftware/SHFB) to create internal hyperlinks to documentation pages for code elements. The text for the `<summary>` tag is the only source of information about the type in IntelliSense, and is also displayed in the Object Browser window.
+The `<summary>` tag should be used to describe a type or a type member. Use [\<remarks>](#remarks) to add supplemental information to a type description. Use the [cref attribute](#cref-attribute) to enable documentation tools such as [DocFX](https://dotnet.github.io/docfx/) and [Sandcastle](https://github.com/EWSoftware/SHFB) to create internal hyperlinks to documentation pages for code elements. The text for the `<summary>` tag is displayed in IntelliSense and in the Object Browser window.
 
 ### \<remarks>
 

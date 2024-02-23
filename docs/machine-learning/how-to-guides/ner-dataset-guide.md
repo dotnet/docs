@@ -8,7 +8,8 @@ ms.custom: mvc,how-to
 ms.topic: how-to
 #Customer intent: As a non-developer, I want to be able to format training data for Model Builder to use for training NER scenarios
 ---
-
+# How to format data for Named Entity Recognition (NER)
+ 
 # NER dataset shapes
 
 - Key information file:    Containing a list of entities, which serves as key information for the training data.

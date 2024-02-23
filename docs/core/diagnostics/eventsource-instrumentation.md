@@ -6,7 +6,7 @@ ms.date: 03/03/2022
 
 # Instrument Code to Create EventSource Events
 
-**This article applies to: ✔️** .NET Core 3.1 and later versions **✔️** .NET Framework 4.5 and later versions
+**This article applies to: ✔️** .NET 6 and later versions **✔️** .NET Framework 4.5 and later versions
 
 The [Getting Started guide](./eventsource-getting-started.md) showed you how to create a minimal EventSource and collect events in a trace file.
 This tutorial goes into more detail about creating events using <xref:System.Diagnostics.Tracing.EventSource?displayProperty=nameWithType>.

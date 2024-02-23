@@ -7,7 +7,7 @@ ms.topic: overview
 
 # Diagnostic ports
 
-**This article applies to: ✔️** .NET Core 3.1 and later versions
+**This article applies to: ✔️** .NET 6 and later versions
 
 The .NET runtime exposes a service endpoint that allows other processes to send diagnostic commands and receive responses over an [IPC channel](https://en.wikipedia.org/wiki/Inter-process_communication). This endpoint is called a *diagnostic port*. Commands can be sent to the diagnostic port to:
 

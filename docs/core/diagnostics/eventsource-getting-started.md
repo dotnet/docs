@@ -5,7 +5,7 @@ ms.date: 02/17/2022
 ---
 # Getting Started with EventSource
 
-**This article applies to: ✔️** .NET Core 3.1 and later versions **✔️** .NET Framework 4.5 and later versions
+**This article applies to: ✔️** .NET 6 and later versions **✔️** .NET Framework 4.5 and later versions
 
 This walkthrough shows how to log a new event with <xref:System.Diagnostics.Tracing.EventSource?displayProperty=nameWithType>,
 collect events in a trace file, view the trace, and understand basic EventSource concepts.

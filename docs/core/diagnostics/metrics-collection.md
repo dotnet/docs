@@ -7,7 +7,7 @@ ms.date: 10/27/2021
 
 # Collect metrics
 
-**This article applies to: ✔️** .NET Core 3.1 and later **✔️** .NET Framework 4.6.1 and later
+**This article applies to: ✔️** .NET 6 and later **✔️** .NET Framework 4.6.2 and later
 
 Instrumented code can record numeric measurements, but the measurements usually need to be aggregated, transmitted, and stored to create useful metrics for monitoring. The process of aggregating, transmitting, and storing data is called collection. This tutorial shows several examples of collecting metrics:
 
@@ -19,7 +19,7 @@ For more information on custom metric instrumentation and options, see [Compare 
 
 ## Prerequisites
 
-- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet) or a later
+- [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet) or a later
 
 ## Create an example app
 

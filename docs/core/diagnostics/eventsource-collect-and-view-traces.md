@@ -7,7 +7,7 @@ ms.date: 03/03/2022
 
 # Collect and View EventSource Traces
 
-**This article applies to: ✔️** .NET Core 3.1 and later versions **✔️** .NET Framework 4.5 and later versions
+**This article applies to: ✔️** .NET 6 and later versions **✔️** .NET Framework 4.5 and later versions
 
 The [Getting started guide](./eventsource-getting-started.md) showed you how to create a minimal EventSource and collect events in a trace file.
 This tutorial shows how different tools can configure which events are collected in a trace and then view the traces.

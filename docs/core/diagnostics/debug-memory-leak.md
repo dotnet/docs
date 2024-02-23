@@ -7,7 +7,7 @@ ms.date: 11/13/2023
 
 # Debug a memory leak in .NET
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 Memory can leak when your app references objects that it no longer needs to perform the desired task. Referencing these objects prevents the garbage collector from reclaiming the memory used. That can result in performance degradation and an <xref:System.OutOfMemoryException> exception being thrown.
 
@@ -27,7 +27,7 @@ In this tutorial, you will:
 
 The tutorial uses:
 
-- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet) or a later version.
+- [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet) or a later version.
 - [dotnet-counters](dotnet-counters.md) to check managed memory usage.
 - [dotnet-dump](dotnet-dump.md) to collect and analyze a dump file (includes the [SOS debugging extension](sos-debugging-extension.md)).
 - A [sample debug target](/samples/dotnet/samples/diagnostic-scenarios/) app to diagnose.

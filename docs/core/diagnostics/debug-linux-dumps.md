@@ -49,7 +49,7 @@ Once LLDB starts, it may be necessary to use the `setsymbolserver` command to po
 Dumps collected from a Linux machine can also be analyzed on a Windows machine using [Visual Studio](/visualstudio/debugger/using-dump-files), [Windbg](/windows-hardware/drivers/debugger/analyzing-a-user-mode-dump-file), or the [dotnet-dump](dotnet-dump.md) tool. Both Visual Studio and Windbg can analyze native and managed code, while dotnet-dump only analyzes managed code.
 
 > [!NOTE]
-> Visual Studio version 16.8 and later allows you to [open and analyze Linux dumps](https://devblogs.microsoft.com/visualstudio/linux-managed-memory-dump-debugging/) generated on .NET Core 3.1.7 or later.
+> Visual Studio version 16.8 and later allows you to [open and analyze Linux dumps](https://devblogs.microsoft.com/visualstudio/linux-managed-memory-dump-debugging/) generated on .NET 6 or later.
 
 - **Visual Studio** - See the [Visual Studio dump debugging guide](/visualstudio/debugger/using-dump-files).
 - **Windbg** - You can debug Linux dumps on windbg using the [same instructions](/windows-hardware/drivers/debugger/analyzing-a-user-mode-dump-file) you would use to debug a Windows user-mode dump. Use the x64 version of windbg for dumps collected from a Linux x64 or Arm64 environment and the

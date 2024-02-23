@@ -6,7 +6,7 @@ ms.date: 03/24/2022
 
 # EventSource Activity IDs
 
-**This article applies to: ✔️** .NET Core 3.1 and later versions **✔️** .NET Framework 4.5 and later versions
+**This article applies to: ✔️** .NET 6 and later versions **✔️** .NET Framework 4.5 and later versions
 
 This guide explains Activity IDs, an optional identifier that can be logged with each event generated using
 <xref:System.Diagnostics.Tracing.EventSource?displayProperty=nameWithType>. For an introduction, see

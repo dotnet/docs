@@ -7,6 +7,9 @@ ms.date: 11/08/2022
 
 Starting with .NET 6, the project template for new C# console apps generates the following code in the *Program.cs* file:
 
+<!-- replaycheck-task id="59806399" -->
+<!-- replaycheck-task id="fb69a9" -->
+<!-- replaycheck-task id="4ba1bc63" -->
 ```csharp
 // See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
@@ -101,12 +104,17 @@ You can also add a [`<Using>`](../project-sdk/msbuild-props.md#using) item with 
 
 Starting with .NET SDK 6.0.300, the `console` template has a `--use-program-main` option. Use it to create a console project that doesn't use top-level statements and has a `Main` method.
 
+<!-- replaycheck-task id="7428562a" -->
+<!-- replaycheck-task id="52e0335c" -->
+<!-- replaycheck-task id="834a9e04" -->
+<!-- replaycheck-task id="d206d530" -->
 ```dotnetcli
 dotnet new console --use-program-main
 ```
 
 The generated `Program.cs` is as follows:
 
+<!-- replaycheck-task id="eedff294" -->
 ```csharp
 namespace MyProject;
 

@@ -208,6 +208,8 @@ The ability to create a project for an earlier TFM depends on having that versio
 
 ## `blazorserver`
 
+**Discontinued since .NET 8 SDK.**
+
 - **`-au|--auth <AUTHENTICATION_TYPE>`**
 
   The type of authentication to use. The possible values are:
@@ -619,6 +621,8 @@ The ability to create a project for an earlier TFM depends on having that versio
 ***
 
 ## <a name="spa"></a> `angular`, `react`
+
+**Discontinued since .NET 8 SDK.**
 
 - **`-au|--auth <AUTHENTICATION_TYPE>`**
 

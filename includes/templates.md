@@ -40,7 +40,7 @@ The following table shows the templates that come pre-installed with the .NET SD
 
 The following table shows templates that have been discontinued and no longer come pre-installed with the .NET SDK. Click on the short name link to see the specific template options.
 
-| Templates                                    | Short name                                                                          | Language     | Tags                                  | Discontinued       |
+| Templates                                    | Short name                                                                          | Language     | Tags                                  | Discontinued since |
 |----------------------------------------------|-------------------------------------------------------------------------------------|--------------|---------------------------------------|------------------|
 | ASP.NET Core with Angular                    | [`angular`](../docs/core/tools/dotnet-new-sdk-templates.md#spa)                     | [C#]         | Web/MVC/SPA                           | 8.0              |
 | ASP.NET Core with React.js                   | [`react`](../docs/core/tools/dotnet-new-sdk-templates.md#spa)                       | [C#]         | Web/MVC/SPA                           | 8.0              |

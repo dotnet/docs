@@ -47,7 +47,7 @@ The `dotnet nuget add source` command adds a new package source to your NuGet co
   Password to be used when connecting to an authenticated source.
 
 > [!NOTE]
-> Be aware that encrypted passwords are only supported on Windows. 
+> Be aware that encrypted passwords are only supported on Windows.
 > Moreover, they can only be decrypted on the same machine and by the same user who originally encrypted them.
 
 - **`--store-password-in-clear-text`**
@@ -93,6 +93,8 @@ The `dotnet nuget add source` command adds a new package source to your NuGet co
   ```
 
 ## See also
+
+- [Security best practices for managing package source credentials](/nuget/consume-packages/consuming-packages-authenticated-feeds#security-best-practices-for-managing-credentials)
 
 - [Package source sections in NuGet.config files](/nuget/reference/nuget-config-file#package-source-sections)
 

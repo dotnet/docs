@@ -24,6 +24,8 @@ The output of the following example illustrates the difference. The method `Clas
 
 :::code language="csharp" source="./snippets/PassParameters.cs" id="PassByValueOrReference":::
 
+### Combinations of how argument is passed and argument type
+
 How an argument is passed, and whether it's a reference type or value type controls what modifications made to the argument are visible from the caller:
 
 - When you pass a *value* type *by value*:

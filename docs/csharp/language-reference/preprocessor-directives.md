@@ -88,7 +88,7 @@ The following code is compiled when `MYTEST` is **not** defined:
 
 You can use the operators [`==` (equality)](operators/equality-operators.md#equality-operator-) and [`!=` (inequality)](operators/equality-operators.md#inequality-operator-) to test for the [`bool`](builtin-types/bool.md) values `true` or `false`. `true` means the symbol is defined. The statement `#if DEBUG` has the same meaning as `#if (DEBUG == true)`. You can use the [`&&` (and)](operators/boolean-logical-operators.md#conditional-logical-and-operator-), [`||` (or)](operators/boolean-logical-operators.md#conditional-logical-or-operator-), and [`!` (not)](operators/boolean-logical-operators.md#logical-negation-operator-) operators to evaluate whether multiple symbols have been defined. You can also group symbols and operators with parentheses.
 
-The following is a complex directive that allows your code to take advantage of newer .NET features while remaining backward compatible.  For example, let's say we're using a NuGet package in our code, but the package only supports .NET 6 and up as well as .NET Standard 2.0 and up:
+The following is a complex directive that allows your code to take advantage of newer .NET features while remaining backward compatible.  For example, imagine that you're using a NuGet package in your code, but the package only supports .NET 6 and up, as well as .NET Standard 2.0 and up:
 
 ```csharp
 #if (NET6_0_OR_GREATER || NETSTANDARD2_0_OR_GREATER)

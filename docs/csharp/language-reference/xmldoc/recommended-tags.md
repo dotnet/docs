@@ -331,13 +331,15 @@ The XML output for this method is shown in the following example:
 
 ```xml
 <member name="M:MyNamespace.MyType.MyMethod(System.Int32)">
+    <summary>This is the summary of MyMethod. It comes from the included file.</summary>
     <returns>This is the returns text of MyMethod. It comes from triple slash comments.</returns>
     <remarks>This is the remarks text of MyMethod. It comes from triple slash comments.</remarks>
-    <param name="p">This is the description of the parameter p of MyMethod. It comes from the included file.</param><summary>This is the summary of MyMethod. It comes from the included file.</summary>
+    <param name="p">This is the description of the parameter p of MyMethod. It comes from the included file.</param>
 </member>
 ```
 
-The .NET Runtime team uses the `<include>` tag extensively in its documentation. You can see many examples by [searching the `dotnet/runtime` repository](https://github.com/search?q=repo%3Adotnet%2Fruntime+language%3Acsharp+%3Cinclude+file+&type=code).
+> [!TIP]
+> The .NET Runtime team uses the `<include>` tag extensively in its documentation. You can see many examples by [searching the `dotnet/runtime` repository](https://github.com/search?q=repo%3Adotnet%2Fruntime+language%3Acsharp+%3Cinclude+file+&type=code).
 
 ## Generate links and references
 

@@ -6,7 +6,7 @@ namespace Tests;
 public sealed class ClusterFixtureWithConfig : IDisposable
 {
     public TestCluster Cluster { get; } = new TestClusterBuilder()
-        .AddClientBuilderConfigurator<TestSiloConfigurations>()
+        .AddSiloBuilderConfigurator<TestSiloConfigurations>()
         .Build();
 
     public ClusterFixtureWithConfig() => Cluster.Deploy();

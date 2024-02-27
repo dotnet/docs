@@ -6,6 +6,7 @@ ms.date: 12/05/2023
 # Duplicate output for -getItem, -getProperty, and -getTargetResult
 
 .NET SDK 8.0.200 introduced a regression in the new `-getItem`, `-getProperty`, and `-getTargetResult` MSBuild CLI options. When the SDK is used to perform an MSBuild operation for a specific TargetFramework, the output is duplicated, like so:
+
 ```terminal
 > dotnet build -r:android-arm64 --getProperty:OutputPath -f:net8.0-android
 bin\Debug/net8.0-android/android-arm64/
@@ -41,6 +42,7 @@ These options are intended to return values computed from a single user-requeste
 ## Recommended action
 
 Choose one of the following actions:
+
 - Use an older version of the .NET SDK (before the regression was introduced).
 - Use a version of the .NET 8 SDK that contains the fix, which should be any version after 8.0.202.
 - Remove any usage of `-f` from calls that also use `-getItem`, `-getProperty`, or `-getTargetResults`.

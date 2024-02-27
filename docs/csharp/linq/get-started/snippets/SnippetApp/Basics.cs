@@ -4,7 +4,7 @@ public static class Basics
 {
     // We're not displaying the output, so these could be filled with dummy data
     static readonly int[] scores = [0]; // Max is called on this, so one value is needed
-    static readonly City[] cities = [];
+    static readonly City[] cities = [new City(200000), new City(120000), new City(112000), new City(150340), new City(23000)];
     static readonly Country[] countries = [];
 
     public static void Basics1()
@@ -78,11 +78,24 @@ public static class Basics
     public static void Basics6()
     {
         // <basics6>
+        City[] cities = [new City(20000), new City(120000), new City(112000), new City(150340), new City(23000)];
+
         //Query syntax
         IEnumerable<City> queryMajorCities =
             from city in cities
             where city.Population > 100000
             select city;
+
+        // Execute the query to produce the results
+        foreach (City city in queryMajorCities)
+        {
+            Console.WriteLine(city);
+        }
+
+        // Output:
+        // City { Population = 120000 }
+        // City { Population = 112000 }
+        // City { Population = 150340 }
 
         // Method-based syntax
         IEnumerable<City> queryMajorCities2 = cities.Where(c => c.Population > 100000);

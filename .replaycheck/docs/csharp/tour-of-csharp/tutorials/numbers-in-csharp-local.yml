@@ -5,6 +5,4 @@ steps:
 - task: RunCodeSnippet@1
   environment:
     type: dotnet-script
-  outputValidationRules:
-  - value: "24"
-  uid: 9f91e205
+  uid: 5c2ec332

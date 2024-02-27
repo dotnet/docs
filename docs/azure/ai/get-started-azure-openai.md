@@ -15,14 +15,14 @@ This sample demonstrates how to use the Azure OpenAI with a `gpt-35-turbo` model
 
 - .NET 8.0 SDK - [Install the .NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
 - An Azure subscription - [Create one for free](https://azure.microsoft.com/free/)
-- Azure Developer CLI - [Install or update the Azure Developer CLI](https://learn.microsoft.com/en-us/azure/developer/azure-developer-cli/install-azd)
+- Azure Developer CLI - [Install or update the Azure Developer CLI](https://learn.microsoft.com/azure/developer/azure-developer-cli/install-azd)
 
 ## Getting Started
 
 Ensure that you follow the prerequisites to have access to Azure OpenAI Service as well as the Azure Developer CLI, and then follow the following guide to set started with the sample application.
 
 1. Clone/ Download the repository: [dotnet/ai-samples](https://github.com/dotnet/ai-samples)
-1. From a terminal or command prompt, navigate to the `HikerAI` directory.
+1. From a terminal or command prompt, navigate to the `01-HikerAI` directory.
 1. Create the Azure resources using the Azure Developer CLI:
 	```bash
 	azd up
@@ -95,4 +95,4 @@ On Windows, you may get an error message: "*postprovision.ps1 is not digitally s
 
 ### Learn Module
 
-- [Generate text and conversations with .NET and Azure OpenAI Completions](https://learn.microsoft.com/en-us/training/modules/open-ai-dotnet-text-completions/)
+- [Generate text and conversations with .NET and Azure OpenAI Completions](https://learn.microsoft.com/training/modules/open-ai-dotnet-text-completions/)

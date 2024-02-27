@@ -131,7 +131,7 @@ If you use the [example app](#sample-app), run `dotnet publish -f net6.0 -r win1
 
 ## Self-contained deployment
 
-When you publish a self-contained deployment (SCD), the .NET SDK creates a platform-specific executable. Publishing an SCD includes all required .NET files to run your app but it doesn't include the native dependencies of .NET (for example, for installing [.NET 6 on Linux](https://github.com/dotnet/core/blob/main/release-notes/6.0/linux-packages.md) or [.NET 8 on Linux](https://github.com/dotnet/core/blob/main/release-notes/8.0/linux-packages.md)). These dependencies must be present on the system before the app runs.
+When you publish a self-contained deployment (SCD), the .NET SDK creates a platform-specific executable. Publishing an SCD includes all required .NET files to run your app but it doesn't include the native dependencies of .NET (for example, for [.NET 6 on Linux](https://github.com/dotnet/core/blob/main/release-notes/6.0/linux-packages.md) or [.NET 8 on Linux](https://github.com/dotnet/core/blob/main/release-notes/8.0/linux-packages.md)). These dependencies must be present on the system before the app runs.
 
 Publishing an SCD creates an app that doesn't roll forward to the latest available .NET security patch. For more information on version binding at compile time, see [Select the .NET version to use](../versions/selection.md#self-contained-deployments-include-the-selected-runtime).
 

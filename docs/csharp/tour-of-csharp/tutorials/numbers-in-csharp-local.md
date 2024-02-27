@@ -19,8 +19,10 @@ If you don't want to set up a local environment, see the [interactive-in-browser
 
 ## Explore integer math
 
+<!-- replaycheck-task id="e54aec91" -->
 Create a directory named *numbers-quickstart*. Make it the current directory and run the following command:
 
+<!-- replaycheck-task id="f2773fa3" -->
 ```dotnetcli
 dotnet new console -n NumbersInCSharp -o .
 ```
@@ -29,6 +31,7 @@ dotnet new console -n NumbersInCSharp -o .
 
 Open *Program.cs* in your favorite editor, and replace the contents of the file with the following code:
 
+<!-- replaycheck-task id="b54ee61" -->
 ```csharp
 int a = 18;
 int b = 6;
@@ -36,6 +39,7 @@ int c = a + b;
 Console.WriteLine(c);
 ```
 
+<!-- replaycheck-task id="2e159b1d" -->
 Run this code by typing `dotnet run` in your command window.
 
 You've seen one of the fundamental math operations with integers. The `int` type represents an **integer**, a zero, positive, or negative whole number. You use the `+` symbol for addition. Other common mathematical operations for integers include:

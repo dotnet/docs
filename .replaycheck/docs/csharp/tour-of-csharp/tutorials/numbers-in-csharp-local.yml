@@ -1,0 +1,23 @@
+# %version 1
+contentPath: docs\csharp\tour-of-csharp\tutorials\numbers-in-csharp-local.md
+
+steps:
+- task: RunCustomCommand@1
+  command: mkdir numbers-quickstart && cd numbers-quickstart
+  environment:
+    type: dotnet-sdk
+  uid: e54aec91
+- task: RunCommand@1
+  environment:
+    type: dotnet-sdk
+  uid: f2773fa3
+- task: CopyCodeSnippetToWorkspace@1
+  destinationPath: ./numbers-quickstart/Program.cs
+  uid: b54ee61
+- task: RunCustomCommand@1
+  command: dotnet run
+  environment:
+    type: dotnet-sdk
+  outputValidationRules:
+  - value: "24"
+  uid: 2e159b1d

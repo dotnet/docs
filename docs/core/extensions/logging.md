@@ -657,7 +657,7 @@ The <xref:Microsoft.Extensions.Logging.ILogger%601> and <xref:Microsoft.Extensio
 - The interfaces are in [Microsoft.Extensions.Logging.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.Logging.Abstractions).
 - The default implementations are in [Microsoft.Extensions.Logging](https://www.nuget.org/packages/microsoft.extensions.logging).
 
-For more information about which .NET SDK includes implicit package references, see [.NET SDK: table to implicit namespace](../extensions/logging.md#implicit-using-directives).
+For more information about which .NET SDK includes implicit package references, see [.NET SDK: table to implicit namespace](../project-sdk/overview.md#implicit-using-directives).
 
 ## See also
 

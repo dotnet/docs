@@ -24,9 +24,12 @@ Ensure that you follow the prerequisites to have access to Azure OpenAI Service 
 1. Clone/ Download the repository: [dotnet/ai-samples](https://github.com/dotnet/ai-samples)
 1. From a terminal or command prompt, navigate to the `01-HikerAI` directory.
 1. Create the Azure resources using the Azure Developer CLI:
+
 	```bash
 	azd up
 	```
+
+    This will provision the Azure OpenAI resources. It may take several minutes to create the Azure OpenAI service and deploy the model.
 1. It's now time to try the console application. Depending on your Azure subscription it's possible that a few (~5) minutes more minute are required before the model deployed in Azure OpenAI get available. If you get an error message about this, wait a few minutes and try again.
 	```bash
 	dotnet run

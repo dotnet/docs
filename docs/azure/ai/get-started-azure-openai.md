@@ -105,9 +105,9 @@ Customize the system prompt and user message to see how the model responds to he
 ## Clean up resources
 
 When you no longer need the sample application or resources, remove the corresponding deployment and all resources.
+
 ```bash
 azd down
-```
 
 ## Troubleshooting
 

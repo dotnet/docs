@@ -30,10 +30,13 @@ Ensure that you follow the prerequisites to have access to Azure OpenAI Service 
 	```
 
     This will provision the Azure OpenAI resources. It may take several minutes to create the Azure OpenAI service and deploy the model.
-1. It's now time to try the console application. Depending on your Azure subscription it's possible that a few (~5) minutes more minute are required before the model deployed in Azure OpenAI get available. If you get an error message about this, wait a few minutes and try again.
+1. It's now time to try the console application. Type in the following to run the app:
+
 	```bash
 	dotnet run
 	```
+
+    If you get an error message the Azure OpenAI resources may not have finished deploying. Wait a couple of minutes and try again.
 
 ## How it works
 

@@ -23,7 +23,7 @@ public sealed class TodoService
     {
         // Create the client
         string? httpClientName = _configuration["TodoHttpClientName"];
-        using HttpClient client = _httpClientFactory.CreateClient(httpClientName ?? "");
+        HttpClient client = _httpClientFactory.CreateClient(httpClientName ?? "");
 
         try
         {

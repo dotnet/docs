@@ -39,7 +39,7 @@ Ensure that you follow the prerequisites to have access to Azure OpenAI Service 
 
     If you get an error message the Azure OpenAI resources may not have finished deploying. Wait a couple of minutes and try again.
 
-## How it works
+## Understanding the code
 
 Our application uses the `Azure.AI.OpenAI` client SDK, which is available on [NuGet](https://www.nuget.org/packages/Azure.AI.OpenAI), to send and receive requests to an Azure OpenAI service deployed in Azure.
 

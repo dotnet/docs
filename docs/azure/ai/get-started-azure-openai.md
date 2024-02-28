@@ -9,7 +9,7 @@ ms.author: frbouche
 # CustomerIntent: As a .NET developer new to Azure OpenAI, I want deploy and use sample code to interact to learn from the sample code.
 ---
 
-This sample demonstrates how to use the Azure OpenAI with a `gpt-35-turbo` model, from a simple .NET 8.0 console application. It consists of a simple console application, running locally, that will send request to an Azure OpenAI service deployed in your Azure subscription. Everything will be deployed automatically using the Azure Developer CLI.
+Get started with the .NET Azure OpenAI SDK by creating a simple .NET 8 console chat application. The application will run locally and use the OpenAI `gpt-35-turbo` model deployed into an Azure OpenAI account. Follow these steps to provision Azure OpenAI and learn how to use the .NET Azure OpenAI SDK.
 
 ## Prerequisites
 

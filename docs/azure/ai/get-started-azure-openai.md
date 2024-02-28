@@ -97,11 +97,5 @@ Then re-run the `azd up` command.
 
 ## Next steps
 
-### More sample code
+- [Generate text and conversations with .NET and Azure OpenAI Completions](/training/modules/open-ai-dotnet-text-completions/)
 
-- more example coming up soon...
-
-
-### Learn Module
-
-- [Generate text and conversations with .NET and Azure OpenAI Completions](https://learn.microsoft.com/training/modules/open-ai-dotnet-text-completions/)

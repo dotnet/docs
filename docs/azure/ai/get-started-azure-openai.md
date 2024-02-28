@@ -97,7 +97,9 @@ Console.WriteLine($"\n\nAI >>> {assistantResponse.Content}");
 completionOptions.Messages.Add(new ChatRequestSystemMessage(assistantResponse.Content)); 
 ```
 
-Try it out customize the prompt and message and see how the AI model can help you find a hike that you will like.
+To maintain the chat history or context, make sure you add the response from the model as a `ChatRequestAssistantMessage`.
+
+Customize the system prompt and user message to see how the model responds to help you find a hike that you will like.
 
 
 ## Clean up resources

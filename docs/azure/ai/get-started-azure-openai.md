@@ -94,7 +94,7 @@ Console.WriteLine($"\n\nUser >>> {userGreeting}");
 ChatCompletions response = await openAIClient.GetChatCompletionsAsync(completionOptions);
 ChatResponseMessage assistantResponse = response.Choices[0].Message;
 Console.WriteLine($"\n\nAI >>> {assistantResponse.Content}");
-completionOptions.Messages.Add(new ChatRequestSystemMessage(assistantResponse.Content)); 
+completionOptions.Messages.Add(new ChatRequestAssisstantMessage(assistantResponse.Content)); 
 ```
 
 To maintain the chat history or context, make sure you add the response from the model as a `ChatRequestAssistantMessage`.

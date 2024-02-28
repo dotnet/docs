@@ -183,7 +183,7 @@ The term "DI factories" refers to the overload methods that exist when calling `
 
 In the preceding code, the `implementationFactory` is given a lambda expression where the body calls <xref:System.Threading.Tasks.Task%601.Result?displayProperty=nameWithType> on a `Task<Bar>` returning method. This ***causes a deadlock***. The `GetBarAsync` method simply emulates an asynchronous work operation with <xref:System.Threading.Tasks.Task.Delay%2A?displayProperty=nameWithType>, and then calls <xref:Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService%60%601(System.IServiceProvider)>.
 
-:::image type="content" source="media/deadlock-with-async-factory-01.png" lightbox="media/deadlock-with-async-factory-01.png" alt-text="Anti-pattern: Deadlock with async factory. Do not copy!":::
+:::image type="content" source="media/deadlock-with-async-factory-01.png" lightbox="media/deadlock-with-async-factory-01.png" alt-text="Anti-pattern: Deadlock with async factory inner issue. Do not copy!":::
 
 For more information on asynchronous guidance, see [Asynchronous programming: Important info and advice](../../csharp/asynchronous-programming/async-scenarios.md#important-info-and-advice). For more information debugging deadlocks, see [Debug a deadlock in .NET](../diagnostics/debug-deadlock.md).
 

@@ -1,6 +1,6 @@
 ---
 title: Quickstart - Build an Azure AI chat app with .NET
-description: Get started on how to use the Azure OpenAI with a gpt-35-turbo model, from a simple .NET console application. Get a hiking recommendation from the AI model. It consists of a simple console application, running locally, that will send request to an Azure OpenAI service deployed in your Azure subscription.
+description: Create a simple chat app using the .NET Azure OpenAI SDK.
 ms.date: 02/28/2024
 ms.topic: get-started
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai

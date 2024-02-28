@@ -84,7 +84,16 @@ azd down
 
 ## Troubleshooting
 
-On Windows, you may get an error message: "*postprovision.ps1 is not digitally signed. The script will not execute on the system*" after the deployment. This is cause by the script "postprovision" being executed locally after the deployment to create .NET secret that will be used in the application. To avoid this error, execute the command `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass`. And re-run the `azd up` command.
+On Windows, after running `azd up` you may get the following error message:
+> *postprovision.ps1 is not digitally signed. The script will not execute on the system* 
+
+The script **postprovision.ps1** is executed to set the .NET user secrets used in the application. To avoid this error, run the following Powershell command:
+
+    ```powershell
+    Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+    ```
+
+Then re-run the `azd up` command.
 
 ## Next steps
 

@@ -78,7 +78,9 @@ You will also share an interesting fact about the local nature on the hikes when
 completionOptions.Messages.Add(new ChatRequestSystemMessage(systemPrompt));
 ```
 
-Then we can add a user message to the model, and get the response from the model.
+Then we can add a user message to the model by using the `ChatRequestUserMessage` class. 
+
+To have the model generate a response based off the system prompt and the user request, use the `GetChatCompletionsAsync` function.
 
 ```csharp
 string userGreeting = """

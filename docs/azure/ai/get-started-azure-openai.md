@@ -58,6 +58,19 @@ The `OpenAIClient` class facilitates the requests and responses. `ChatCompletion
         DeploymentName = openAIDeploymentName
     };
     ```
+The entire application is contained within the **Program.cs** file. The first several lines of code loads up secrets and configuration values that were set in the `dotnet user-secrets` for you during the application provisioning.
+
+    ```csharp
+    // == Retrieve the local secrets saved during the Azure deployment ==========
+    var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
+    string openAIEndpoint = config["AZURE_OPENAI_ENDPOINT"];
+    string openAIDeploymentName = config["AZURE_OPENAI_GPT_NAME"];
+    string openAiKey = config["AZURE_OPENAI_KEY"];
+    
+    // == Creating the AIClient ==========
+    var endpoint = new Uri(openAIEndpoint);
+    var credentials = new AzureKeyCredential(openAiKey);
+    ```
 
 
 Once the `OpenAIClient` client is created, we provide more context to the model by adding a system prompt. This instructs the model how you'd like it to act during the conversation.

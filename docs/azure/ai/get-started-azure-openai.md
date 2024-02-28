@@ -11,7 +11,7 @@ ms.author: frbouche
 
 This sample demonstrates how to use the Azure OpenAI with a `gpt-35-turbo` model, from a simple .NET 8.0 console application. It consists of a simple console application, running locally, that will send request to an Azure OpenAI service deployed in your Azure subscription. Everything will be deployed automatically using the Azure Developer CLI.
 
-## Requirements
+## Prerequisites
 
 - .NET 8.0 SDK - [Install the .NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
 - An Azure subscription - [Create one for free](https://azure.microsoft.com/free/)

@@ -73,7 +73,7 @@ The following table shows the compatibility of the .NET 5+ TFMs.
 | net7.0-ios         | (Subsequent version of `net6.0-ios`)                                                                                    |
 | net7.0-maccatalyst | (Subsequent version of `net6.0-maccatalyst`)                                                                            |
 | net7.0-macos       | (Subsequent version of `net6.0-macos`)                                                                                  |
-| net7.0-tizen       | TBD (plus everything else inherited from `net7.0`) |
+| net7.0-tizen       | `tizen40` (plus everything else inherited from `net7.0`)            |
 | net7.0-tvos        | (Subsequent version of `net6.0-tvos`)                                                                                   |
 | net7.0-windows     | (Subsequent version of `net6.0-windows`)                                                                                |
 | net8.0             | (Subsequent version of `net7.0`)                                                                                        |
@@ -125,9 +125,9 @@ The following table shows the default target platform values (TPV) for each .NET
 | .NET 8       | tvOS         | 17.1        |
 | .NET 7       | Tizen        | 7.0         |
 | .NET 8       | Tizen        | 8.0         |
-| .NET 6       | Windows      |             |
-| .NET 7       | Windows      |             |
-| .NET 8       | Windows      |             |
+| .NET 6       | Windows      | 7.0         |
+| .NET 7       | Windows      | 7.0         |
+| .NET 8       | Windows      | 7.0         |
 
 The .NET SDK is designed to be able to support newly released APIs for an individual platform without a new version of the base TFM. This enables you to access platform-specific functionality without waiting for a major release of .NET. You can gain access to these newly released APIs by incrementing the platform version in the TFM. For example, if the iOS platform added iOS 15.1 APIs in a .NET 6.0.x SDK update, you could access them by using the TFM `net6.0-ios15.1`.
 

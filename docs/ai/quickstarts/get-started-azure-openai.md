@@ -92,7 +92,7 @@ You will also share an interesting fact about the local nature on the hikes when
 completionOptions.Messages.Add(new ChatRequestSystemMessage(systemPrompt));
 ```
 
-Then we can add a user message to the model by using the `ChatRequestUserMessage` class. 
+Then we can add a user message to the model by using the `ChatRequestUserMessage` class.
 
 To have the model generate a response based off the system prompt and the user request, use the `GetChatCompletionsAsync` function.
 
@@ -126,7 +126,7 @@ azd down
 ## Troubleshooting
 
 On Windows, after running `azd up` you may get the following error message:
-> *postprovision.ps1 is not digitally signed. The script will not execute on the system* 
+> *postprovision.ps1 is not digitally signed. The script will not execute on the system*
 
 The script **postprovision.ps1** is executed to set the .NET user secrets used in the application. To avoid this error, run the following PowerShell command:
 

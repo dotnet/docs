@@ -5,6 +5,8 @@ ms.date: 12/12/2023
 ms.service: dotnet
 ms.custom: updateeachrelease
 ms.subservice: standard-library
+f1_keywords:
+- http://schemas.microsoft.com/developer/msbuild/2003#TargetFramework
 ---
 # Target frameworks in SDK-style projects
 

@@ -372,7 +372,7 @@
 | Mobile Server - Cross Domain | NuGet [2.0.3](https://www.nuget.org/packages/Microsoft.Azure.Mobile.Server.CrossDomain/2.0.3) |  |  |
 | News Search | NuGet [2.1.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.BingNewsSearch/2.1.0-preview.1) |  | GitHub [2.1.0-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Search.BingNewsSearch_2.1.0-preview.1/sdk/cognitiveservices/Search.BingNewsSearch) |
 | News Search | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.NewsSearch/2.0.0) |  |  |
-| Notification Hubs | NuGet [4.1.0](https://www.nuget.org/packages/Microsoft.Azure.NotificationHubs/4.1.0)<br>NuGet [4.2.0-beta1](https://www.nuget.org/packages/Microsoft.Azure.NotificationHubs/4.2.0-beta1) |  | GitHub [4.1.0](https://github.com/Azure/azure-notificationhubs-dotnet) |
+| Notification Hubs | NuGet [4.2.0](https://www.nuget.org/packages/Microsoft.Azure.NotificationHubs/4.2.0) |  | GitHub [4.2.0](https://github.com/Azure/azure-notificationhubs-dotnet) |
 | Personalizer | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Personalizer/1.0.0) |  | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Personalizer_1.0.0/sdk/cognitiveservices/Personalizer) |
 | Quantum Jobs | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Quantum.Jobs/1.0.0-beta.3) |  |  |
 | Relay | NuGet [3.0.1](https://www.nuget.org/packages/Microsoft.Azure.Relay/3.0.1) | [docs](https://learn.microsoft.com/dotnet/api/overview/azure/service-bus-relay) | GitHub [3.0.1](https://github.com/Azure/azure-relay-dotnet/tree/2.0.1) |

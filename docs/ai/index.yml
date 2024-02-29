@@ -1,0 +1,89 @@
+### YamlMime:Hub
+
+title: AI for .NET developers
+summary: Learn to develop intelligent apps with generative AI for .NET. Browse API reference, sample code, tutorials, quickstarts, conceptual articles and more. Know that .NET 💜 AI.
+brand: dotnet
+
+metadata:
+  title: AI for .NET developers
+  description: Samples, tutorials, and education for AI for .NET
+  ms.topic: hub-page
+  ms.service: azure-dotnet
+  ms.date: 02/29/2024
+
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
+  items:
+    - itemType: overview
+      title: Introduction to AI for .NET developers
+      url: azure-ai-for-dotnet-developers.md
+    - itemType: quickstart
+      title: Build an Azure AI chat app with .NET
+      url: ./quickstarts/get-started-azure-openai.md
+    - itemType: learn
+      title: Generate text and conversations with .NET and Azure OpenAI Completions
+      url: /training/modules/open-ai-dotnet-text-completions
+    - itemType: learn
+      title: Give your AI agent skills
+      url: /training/modules/give-your-ai-agent-skills/
+    - itemType: learn
+      title: Build a chat bot using Azure OpenAI, Azure Cosmos DB for NoSQL, and Blazor
+      url: /training/modules/build-chat-bot-azure-cosmos-db-openai-blazor/
+    - itemType: reference
+      title: Get started with the .NET enterprise chat app sample using RAG
+      url: https://github.com/Azure-Samples/azure-search-openai-demo-csharp
+
+conceptualContent:
+  title: Featured content
+  summary: Learn to develop intelligent apps with generative AI
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+  items:
+    - title: Working with AI
+      links:
+        - itemType: overview
+          text: Understanding strengths and weaknesses of Large Language Models
+          url: /ai/playbook/technology-guidance/generative-ai/working-with-llms/use-case-recommend
+        - itemType: get-started
+          text: Getting started with LLM prompt engineering
+          url: /ai/playbook/technology-guidance/generative-ai/working-with-llms/prompt-engineering
+        - itemType: get-started
+          text: Tips for creating effective LLM Prompts
+          url: /ai/playbook/technology-guidance/generative-ai/working-with-llms/prompt-engineer-recommend
+        - itemType: learn
+          text: Fundamentals of Responsible Generative AI
+          url: /training/modules/responsible-generative-ai/
+        - itemType: learn
+          text: Apply prompt engineering with Azure OpenAI Service
+          url: /training/modules/generate-images-azure-openai/
+
+additionalContent:
+  sections:
+    - title: .NET and Azure community resources
+      items:
+        - title: .NET
+          links:
+            - text: .NET documentation
+              url: /dotnet
+            - text: ML.NET documentation
+              url: /machine-learning
+        - title: Webcasts and shows
+          links:
+            - text: Azure Friday
+              url: https://azure.microsoft.com/resources/videos/azure-friday/
+            - text: ML.NET Community Standup
+              url: https://dotnet.microsoft.com/en-us/live/community-standup
+        - title: Community
+          links:
+            - text: ML.NET Community Discord
+              url: https://aka.ms/virtual-mlnet-community-discord
+        - title: Open Source
+          links:
+            - text: Azure OpenAI SDK for .NET
+              url: https://github.com/Azure/azure-sdk-for-net
+            - text: Semantic Kernel
+              url: https://github.com/microsoft/semantic-kernel
+            - text: .NET Platform
+              url: https://github.com/dotnet/
+
+  # footer (optional)
+  footer: "Are you interested in contributing to the .NET docs? For more information, see our [contributor guide](/contribute/dotnet/dotnet-contribute)."

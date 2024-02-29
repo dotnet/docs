@@ -209,11 +209,11 @@ The following functions are also supported.
 
 This function converts an expression to a specified .NET type.
 
-|             | **Value**                                                 |
-|-------------|-----------------------------------------------------------|
-| Syntax      | `Convert(expression, type)`                              |
-| Arguments   | `expression` -- The expression to convert.                |
-|             | `type` -- .NET type to which the value will be converted. |
+|               | **Value**                                                 |
+|---------------|-----------------------------------------------------------|
+| **Syntax**    | `Convert(expression, type)`                               |
+| **Arguments** | `expression` -- The expression to convert.                |
+|               | `type` -- .NET type to which the value will be converted. |
 
 Example: `myDataColumn.Expression="Convert(total, 'System.Int32')"`
 
@@ -223,10 +223,10 @@ All conversions are valid with the following exceptions: `Boolean` can be coerce
 
 This function gets the length of a string.
 
-|             | **Value**                                   |
-|-------------|---------------------------------------------|
-| Syntax      | `LEN(expression)`                           |
-| Arguments   | `expression` -- The string to be evaluated. |
+|               | **Value**                                   |
+|---------------|---------------------------------------------|
+| **Syntax**    | `LEN(expression)`                           |
+| **Arguments** | `expression` -- The string to be evaluated. |
 
 Example: `myDataColumn.Expression="Len(ItemName)"`
 
@@ -234,11 +234,11 @@ Example: `myDataColumn.Expression="Len(ItemName)"`
 
 This function checks an expression and either returns the checked expression or a replacement value.
 
-|           | **Value**                                                                      |
-|-----------|--------------------------------------------------------------------------------|
-| Syntax    | `ISNULL(expression, replacementvalue)`                                         |
-| Arguments | `expression` -- The expression to check.                                       |
-|           | `replacementvalue` -- If expression is `null`, `replacementvalue` is returned. |
+|               | **Value**                                                                      |
+|---------------|--------------------------------------------------------------------------------|
+| **Syntax**    | `ISNULL(expression, replacementvalue)`                                         |
+| **Arguments** | `expression` -- The expression to check.                                       |
+|               | `replacementvalue` -- If expression is `null`, `replacementvalue` is returned. |
 
 Example: `myDataColumn.Expression="IsNull(price, -1)"`
 
@@ -246,12 +246,12 @@ Example: `myDataColumn.Expression="IsNull(price, -1)"`
 
 This function gets one of two values depending on the result of a logical expression.
 
-|           | **Value**                                                      |
-|-----------|----------------------------------------------------------------|
-| Syntax    | `IIF(expr, truepart, falsepart)`                               |
-| Arguments | `expr` -- The expression to evaluate.                          |
-|           | `truepart` -- The value to return if the expression is true.   |
-|           | `falsepart` -- The value to return if the expression is false. |
+|               | **Value**                                                      |
+|---------------|----------------------------------------------------------------|
+| **Syntax**    | `IIF(expr, truepart, falsepart)`                               |
+| **Arguments** | `expr` -- The expression to evaluate.                          |
+|               | `truepart` -- The value to return if the expression is true.   |
+|               | `falsepart` -- The value to return if the expression is false. |
 
 Example: `myDataColumn.Expression = "IIF(total>1000, 'expensive', 'dear')`
 
@@ -259,21 +259,21 @@ Example: `myDataColumn.Expression = "IIF(total>1000, 'expensive', 'dear')`
 
 This function removes all leading and trailing blank characters like \r, \n, \t, and ' '.
 
-|           | **Value**                               |
-|-----------|-----------------------------------------|
-| Syntax    | `TRIM(expression)`                      |
-| Arguments | `expression` -- The expression to trim. |
+|               | **Value**                               |
+|---------------|-----------------------------------------|
+| **Syntax**    | `TRIM(expression)`                      |
+| **Arguments** | `expression` -- The expression to trim. |
 
 ### `SUBSTRING`
 
 This function gets a substring of a specified length, starting at a specified point in the string.
 
-|           | **Value**                                                     |
-|-----------|---------------------------------------------------------------|
-| Syntax    | `SUBSTRING(expression, start, length)`                        |
-| Arguments | `expression`: The source string for the substring.            |
-|           | `start`: Integer that specifies where the substring starts.   |
-|           | `length`: Integer that specifies the length of the substring. |
+|               | **Value**                                                     |
+|---------------|---------------------------------------------------------------|
+| **Syntax**    | `SUBSTRING(expression, start, length)`                        |
+| **Arguments** | `expression`: The source string for the substring.            |
+|               | `start`: Integer that specifies where the substring starts.   |
+|               | `length`: Integer that specifies the length of the substring. |
 
 Example: `myDataColumn.Expression = "SUBSTRING(phone, 7, 8)"`
 

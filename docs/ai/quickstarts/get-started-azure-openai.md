@@ -121,7 +121,7 @@ Customize the system prompt and user message to see how the model responds to he
 
 When you no longer need the sample application or resources, remove the corresponding deployment and all resources.
 
-```bash
+```azdeveloper
 azd down
 ```
 

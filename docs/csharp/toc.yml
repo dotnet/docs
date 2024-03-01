@@ -222,23 +222,25 @@ items:
     items:
     - name: Overview
       href: linq/standard-query-operators/index.md
-    - name: Filtering Data
+    - name: Store the results of a query in memory
+      href: linq/store-the-results-of-a-query-in-memory.md
+    - name: Filter data
       href: linq/standard-query-operators/filtering-data.md
-    - name: Projection Operations
+    - name: Projection operations
       href: linq/standard-query-operators/projection-operations.md
-    - name: Set Operations
+    - name: Set operations
       href: linq/standard-query-operators/set-operations.md
-    - name: Sorting Data
+    - name: Sort data
       href: linq/standard-query-operators/sorting-data.md
-    - name: Quantifier Operations
+    - name: Quantifier operations
       href: linq/standard-query-operators/quantifier-operations.md
-    - name: Partitioning Data
+    - name: Partition data
       href: linq/standard-query-operators/partitioning-data.md
-    - name: Converting Data Types
+    - name: Convert data types
       href: linq/standard-query-operators/converting-data-types.md
-    - name: Join Operations
+    - name: Join operations
       href: linq/standard-query-operators/join-operations.md
-    - name: Grouping Data
+    - name: Group data
       href: linq/standard-query-operators/grouping-data.md
   - name: LINQ to objects
     href: linq/query-a-collection-of-objects.md

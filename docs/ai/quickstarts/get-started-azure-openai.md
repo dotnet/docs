@@ -127,7 +127,7 @@ azd down
 
 ## Troubleshoot
 
-On Windows, after running `azd up` you may get the following error message:
+On Windows, you might get the following error message after running `azd up`:
 > *postprovision.ps1 is not digitally signed. The script will not execute on the system*
 
 The script **postprovision.ps1** is executed to set the .NET user secrets used in the application. To avoid this error, run the following PowerShell command:

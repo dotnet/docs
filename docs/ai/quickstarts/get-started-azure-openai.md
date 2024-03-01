@@ -125,7 +125,7 @@ When you no longer need the sample application or resources, remove the correspo
 azd down
 ```
 
-## Troubleshooting
+## Troubleshoot
 
 On Windows, after running `azd up` you may get the following error message:
 > *postprovision.ps1 is not digitally signed. The script will not execute on the system*

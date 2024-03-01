@@ -28,7 +28,7 @@ Ensure that you follow the prerequisites to have access to Azure OpenAI Service 
 1. From a terminal or command prompt, navigate to the `01-HikerAI` directory.
 1. Create the Azure resources using the Azure Developer CLI:
 
-    ```bash
+    ```azdeveloper
     azd up
     ```
 

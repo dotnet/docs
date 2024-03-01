@@ -115,7 +115,7 @@ completionOptions.Messages.Add(new ChatRequestAssisstantMessage(assistantRespons
 
 To maintain the chat history or context, make sure you add the response from the model as a `ChatRequestAssistantMessage`.
 
-Customize the system prompt and user message to see how the model responds to help you find a hike that you will like.
+Customize the system prompt and user message to see how the model responds to help you find a hike that you'll like.
 
 ## Clean up resources
 

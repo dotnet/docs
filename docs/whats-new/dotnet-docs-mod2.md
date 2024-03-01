@@ -88,8 +88,8 @@ Welcome to what's new in the .NET docs for November 2023. This article lists som
 
 ### New articles
 
-- [Develop .NET apps that use Azure AI services](../azure/ai/azure-ai-for-dotnet-developers.md)
-- [Get started with the .NET enterprise chat sample using RAG](../azure/ai/get-started-app-chat-template.md)
+- [Develop .NET apps that use Azure AI services](../ai/azure-ai-for-dotnet-developers.md)
+- [Get started with the .NET enterprise chat sample using RAG](../ai/get-started-app-chat-template.md)
 - [Assess your .NET applications for migration to Azure](../azure/migration/appcat/app-code-assessment-toolkit.md)
 - [Analyze applications with the .NET CLI](../azure/migration/appcat/dotnet-cli.md)
 - [Install Azure Migrate application and code assessment for .NET](../azure/migration/appcat/install.md)

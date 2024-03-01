@@ -222,8 +222,6 @@ items:
     items:
     - name: Overview
       href: linq/standard-query-operators/index.md
-    - name: Store the results of a query in memory
-      href: linq/store-the-results-of-a-query-in-memory.md
     - name: Filter data
       href: linq/standard-query-operators/filtering-data.md
     - name: Projection operations
@@ -244,7 +242,9 @@ items:
       href: linq/standard-query-operators/grouping-data.md
   - name: LINQ to objects
     href: linq/query-a-collection-of-objects.md
-  - name: "Walkthrough: Writing Queries in C# (LINQ)"
+  - name: Store the results of a query in memory
+    href: linq/store-the-results-of-a-query-in-memory.md
+  - name: "Walkthrough: Writing queries in C#"
     href: programming-guide/concepts/linq/walkthrough-writing-queries-linq.md
   - name: LINQ and file directories
     items:
@@ -252,19 +252,19 @@ items:
       href: programming-guide/concepts/linq/linq-and-file-directories.md
     - name: "How to query for files with a specified attribute or name"
       href: programming-guide/concepts/linq/how-to-query-for-files-with-a-specified-attribute-or-name.md
-    - name: "How to group files by extension (LINQ)"
+    - name: "How to group files by extension"
       href: programming-guide/concepts/linq/how-to-group-files-by-extension-linq.md
-    - name: "How to query for the total number of bytes in a set of folders (LINQ)"
+    - name: "How to query for the total number of bytes in a set of folders"
       href: programming-guide/concepts/linq/how-to-query-for-the-total-number-of-bytes-in-a-set-of-folders-linq.md
-    - name: "How to compare the contents of two folders (LINQ)"
+    - name: "How to compare the contents of two folders"
       href: programming-guide/concepts/linq/how-to-compare-the-contents-of-two-folders-linq.md
-    - name: "How to query for the largest file or files in a directory tree (LINQ)"
+    - name: "How to query for the largest file or files in a directory tree"
       href: programming-guide/concepts/linq/how-to-query-for-the-largest-file-or-files-in-a-directory-tree-linq.md
-    - name: "How to query for duplicate files in a directory tree (LINQ)"
+    - name: "How to query for duplicate files in a directory tree"
       href: programming-guide/concepts/linq/how-to-query-for-duplicate-files-in-a-directory-tree-linq.md
-    - name: "How to query the contents of files in a folder (LINQ)"
+    - name: "How to query the contents of files in a folder"
       href: programming-guide/concepts/linq/how-to-query-the-contents-of-files-in-a-folder-lin.md
-  - name: How to articles
+  - name: How-to articles
     items:
     - name: How to return a query from a method
       href: linq/return-a-query-from-a-method.md
@@ -274,29 +274,29 @@ items:
       href: linq/handle-null-values-in-query-expressions.md
     - name: Handle exceptions in query expressions
       href: linq/handle-exceptions-in-query-expressions.md
-    - name: "How to count occurrences of a word in a string (LINQ)"
+    - name: "How to count occurrences of a word in a string"
       href: programming-guide/concepts/linq/how-to-count-occurrences-of-a-word-in-a-string-linq.md
-    - name: "How to query for sentences that contain a specified set of words (LINQ)"
+    - name: "How to query for sentences that contain a specified set of words"
       href: programming-guide/concepts/linq/how-to-query-for-sentences-that-contain-a-specified-set-of-words-linq.md
-    - name: "How to query for characters in a string (LINQ)"
+    - name: "How to query for characters in a string"
       href: programming-guide/concepts/linq/how-to-query-for-characters-in-a-string-linq.md
     - name: "How to combine LINQ queries with regular expressions"
       href: programming-guide/concepts/linq/how-to-combine-linq-queries-with-regular-expressions.md
-    - name: "How to find the set difference between two lists (LINQ)"
+    - name: "How to find the set difference between two lists"
       href: programming-guide/concepts/linq/how-to-find-the-set-difference-between-two-lists-linq.md
-    - name: "How to sort or filter text data by any word or field (LINQ)"
+    - name: "How to sort or filter text data by any word or field"
       href: programming-guide/concepts/linq/how-to-sort-or-filter-text-data-by-any-word-or-field-linq.md
-    - name: "How to reorder the fields of a delimited file (LINQ)"
+    - name: "How to reorder the fields of a delimited file"
       href: programming-guide/concepts/linq/how-to-reorder-the-fields-of-a-delimited-file-linq.md
-    - name: "How to combine and compare string collections (LINQ)"
+    - name: "How to combine and compare string collections"
       href: programming-guide/concepts/linq/how-to-combine-and-compare-string-collections-linq.md
-    - name: "How to populate object collections from multiple sources (LINQ)"
+    - name: "How to populate object collections from multiple sources"
       href: programming-guide/concepts/linq/how-to-populate-object-collections-from-multiple-sources-linq.md
-    - name: "How to split a file into many files by using groups (LINQ)"
+    - name: "How to split a file into many files by using groups"
       href: programming-guide/concepts/linq/how-to-split-a-file-into-many-files-by-using-groups-linq.md
-    - name: "How to join content from dissimilar files (LINQ)"
+    - name: "How to join content from dissimilar files"
       href: programming-guide/concepts/linq/how-to-join-content-from-dissimilar-files-linq.md
-    - name: "How to compute column values in a CSV text file (LINQ)"
+    - name: "How to compute column values in a CSV text file"
       href: programming-guide/concepts/linq/how-to-compute-column-values-in-a-csv-text-file-linq.md
     - name: "How to use expression trees to build dynamic queries"
       href: programming-guide/concepts/linq/how-to-use-expression-trees-to-build-dynamic-queries.md
@@ -344,21 +344,21 @@ items:
     href: iterators.md
   - name: Delegates & events
     items:
-    - name: Introduction to Delegates
+    - name: Introduction to delegates
       href: delegates-overview.md
     - name: System.Delegate and the delegate keyword
       href: delegate-class.md
-    - name: Strongly Typed Delegates
+    - name: Strongly typed delegates
       href: delegates-strongly-typed.md
-    - name: Common Patterns for Delegates
+    - name: Common patterns for delegates
       href: delegates-patterns.md
     - name: Introduction to events
       href: events-overview.md
     - name: Standard .NET event patterns
       href: event-pattern.md
-    - name: The Updated .NET Event Pattern
+    - name: The updated .NET event pattern
       href: modern-events.md
-    - name: Distinguishing Delegates and Events
+    - name: Distinguish delegates and events
       href: distinguish-delegates-events.md
   - name: Versioning
     href: versioning.md
@@ -381,7 +381,7 @@ items:
     href: how-to/how-to-catch-a-non-cls-exception.md
 - name: Advanced topics
   items:
-  - name: Reflection and Attributes
+  - name: Reflection and attributes
     items:
     - name: Overview
       displayName: attributes, reflection

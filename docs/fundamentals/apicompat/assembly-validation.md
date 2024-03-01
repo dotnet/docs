@@ -19,7 +19,7 @@ You can run assembly validation either as an [MSBuild task](#enable-msbuild-task
 
 ## Enable MSBuild task
 
-You enable assembly validation in your .NET project by setting the [`ApiCompatValidateAssemblies`](../../core/project-sdk/msbuild-props.md#apicompatvalidateassemblies) property to `true`. You must also add a package reference to [Microsoft.DotNet.ApiCompat.Task](https://www.nuget.org/packages/Microsoft.DotNet.ApiCompat.Task). (The `targets` files in that package aren't part of the .NET SDK.)
+You enable assembly validation in your .NET project by setting the [`ApiCompatValidateAssemblies`](../../core/project-sdk/msbuild-props.md#apicompatvalidateassemblies) property to `true` and specifying the path to the *contract* (baseline) assembly. You must also add a package reference to [Microsoft.DotNet.ApiCompat.Task](https://www.nuget.org/packages/Microsoft.DotNet.ApiCompat.Task). (The `targets` files in that package aren't part of the .NET SDK.)
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

@@ -45,13 +45,12 @@ Assembly validation runs either in the outer build for multi-targeting projects 
 1. Create and build a C# class library named "ValidateMe" that contains the following simple interface:
 
    ```csharp
-   namespace ValidateMe
+   namespace ValidateMe;
+   
+   public interface IAnimal
    {
-       public interface IAnimal
-       {
-           string Name { get; }
-           //string Sound { get; }
-       }
+       string Name { get; }
+       //string Sound { get; }
    }
    ```
 

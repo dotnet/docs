@@ -20,7 +20,7 @@ Get started with the .NET Azure OpenAI SDK by creating a simple .NET 8 console c
 - Azure Developer CLI - [Install or update the Azure Developer CLI](/azure/developer/azure-developer-cli/install-azd)
 - Access to [Azure OpenAI service](/azure/ai-services/openai/overview#how-do-i-get-access-to-azure-openai).
 
-## Getting Started
+## Get started
 
 Ensure that you follow the prerequisites to have access to Azure OpenAI Service as well as the Azure Developer CLI, and then follow the following guide to set started with the sample application.
 

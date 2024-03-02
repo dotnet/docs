@@ -270,7 +270,7 @@ The following algorithm is used for each provider when an `ILogger` is created f
 
 ## Log category
 
-When an `ILogger` object is created, a *category* is specified. That category is included with each log message created by that instance of `ILogger`. The category string is arbitrary, but the convention is to use the class name. For example, in an application with a service defined like the following object, the category might be `"Example.DefaultService"`:
+When an `ILogger` object is created, a *category* is specified. That category is included with each log message created by that instance of `ILogger`. The category string is arbitrary, but the convention is to use the fully qualified class name. For example, in an application with a service defined like the following object, the category might be `"Example.DefaultService"`:
 
 ```csharp
 namespace Example
@@ -287,7 +287,7 @@ namespace Example
 }
 ```
 
-To explicitly specify the category, call <xref:Microsoft.Extensions.Logging.LoggerFactory.CreateLogger%2A?displayProperty=nameWithType>:
+If further categorization is desired, the contention is to use a hierarchical name by appending a subcategory to the fully qualified class name, and explicitly specify the category using <xref:Microsoft.Extensions.Logging.LoggerFactory.CreateLogger%2A?displayProperty=nameWithType>:
 
 ```csharp
 namespace Example
@@ -297,7 +297,7 @@ namespace Example
         private readonly ILogger _logger;
 
         public DefaultService(ILoggerFactory loggerFactory) =>
-            _logger = loggerFactory.CreateLogger("CustomCategory");
+            _logger = loggerFactory.CreateLogger("Example.DefaultService.CustomCategory");
 
         // ...
     }

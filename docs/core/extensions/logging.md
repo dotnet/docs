@@ -287,7 +287,7 @@ namespace Example
 }
 ```
 
-If further categorization is desired, the contention is to use a hierarchical name by appending a subcategory to the fully qualified class name, and explicitly specify the category using <xref:Microsoft.Extensions.Logging.LoggerFactory.CreateLogger%2A?displayProperty=nameWithType>:
+If further categorization is desired, the convention is to use a hierarchical name by appending a subcategory to the fully qualified class name, and explicitly specify the category using <xref:Microsoft.Extensions.Logging.LoggerFactory.CreateLogger%2A?displayProperty=nameWithType>:
 
 ```csharp
 namespace Example

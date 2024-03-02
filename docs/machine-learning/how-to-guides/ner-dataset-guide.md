@@ -1,6 +1,6 @@
 ---
 title: How to format data for Named Entity Recognition (NER)
-description: Learn how to format data for Named Entity Recognition (NER) scenario in Model Builder
+description: Learn how to format data for the Named Entity Recognition (NER) scenario in Model Builder
 ms.date: 02/23/2024
 author: zewditu
 ms.author: zehailem
@@ -13,5 +13,5 @@ ms.topic: how-to
 
 NER dataset shapes:
 
-- **Key information file:** Containing a list of entities, which serves as key information for the training data.
-- **Training data:** Training data consists of a file (.txt, .tsv) containing columns separated by TAB. One of these columns is a sentence column, while the others represent labels for tokens within that sentence column.
+- **Key information file:** The key information file contains a list of entities, which serves as key information for the training data.
+- **Training data:** Training data consists of a file (.txt, .tsv) containing columns separated by a Tab character. One of the columns is a sentence column, while the others represent labels for tokens within the sentence column.

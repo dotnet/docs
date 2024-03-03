@@ -31,6 +31,7 @@ A method marked with `[AssemblyCleanup]` should have valid layout.
 
 Methods marked with `[AssemblyCleanup]` should follow the following layout to be valid:
 
+- it can't be declared on a generic class
 - it should be `public`
 - it should be `static`
 - it should not be `async void`
@@ -38,7 +39,6 @@ Methods marked with `[AssemblyCleanup]` should follow the following layout to be
 - it should not be generic
 - it should not take any parameter
 - return type should be `void`, `Task` or `ValueTask`
-- can't be declared on a generic class
 
 ## How to fix violations
 

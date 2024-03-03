@@ -38,4 +38,3 @@ Ensure that the test method isn't ignored.
 ## When to suppress warnings
 
 Do not suppress a warning from this rule. If you ignore this rule, test method will be ignored.
-

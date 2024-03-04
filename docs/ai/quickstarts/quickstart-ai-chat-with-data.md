@@ -116,5 +116,5 @@ azd down
 
 ## Next steps
 
-- [Quickstart - Generate images using Azure AI with .NET](/docs/ai/quickstarts/quickstart-openai-generate-images.md)
+- [Quickstart - Generate images using Azure AI with .NET](quickstart-openai-generate-images.md)
 - [Generate text and conversations with .NET and Azure OpenAI Completions](/training/modules/open-ai-dotnet-text-completions/)

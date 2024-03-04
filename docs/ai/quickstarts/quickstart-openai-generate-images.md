@@ -102,4 +102,5 @@ azd down
 
 ## Next steps
 
+- [Quickstart - Summarize text using Azure AI chat app with .NET](quickstart-openai-summarize-text.md)
 - [Generate text and conversations with .NET and Azure OpenAI Completions](/training/modules/open-ai-dotnet-text-completions/)

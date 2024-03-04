@@ -112,5 +112,5 @@ azd down
 
 ## Next steps
 
-- [Quickstart - Build an Azure AI chat app with .NET about your data](/docs/ai/quickstarts/quickstart-ai-chat-with-data.md)
+- [Quickstart - Build an Azure AI chat app with .NET about your data](quickstart-ai-chat-with-data.md)
 - [Generate text and conversations with .NET and Azure OpenAI Completions](/training/modules/open-ai-dotnet-text-completions/)

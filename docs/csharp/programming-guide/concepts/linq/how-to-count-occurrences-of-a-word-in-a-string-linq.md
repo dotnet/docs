@@ -31,7 +31,7 @@ class CountWords
   
         //Convert the string into an array of words  
         string[] source = text.Split(
-            ['.', '?', '!', ' ', ';', ':', ','],
+            new [] {'.', '?', '!', ' ', ';', ':', ','},
             StringSplitOptions.RemoveEmptyEntries);  
   
         // Create the query.  Use the InvariantCultureIgnoreCase comparison to match "data" and "Data"

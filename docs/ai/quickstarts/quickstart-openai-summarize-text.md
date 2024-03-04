@@ -15,7 +15,7 @@ Get started with the .NET Azure OpenAI SDK by creating a simple .NET 8 console c
 
 [!INCLUDE [download-alert](includes/prerequisites-and-azure-deploy.md)]
 
-## Trying Hiking Benefits Summary
+## Trying Hiking Benefits Summary sample
 
 1. From a terminal or command prompt, navigate to the `01-HikeBenefitsSummary` directory.
 4. It's now time to try the console application. Type in the following to run the app:

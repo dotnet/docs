@@ -96,6 +96,7 @@ Notice the following:
         "program": "~/dotnet/dotnet",
         "args": ["~/sample/sample.dll"],
         "cwd": "~/sample",
+        "justMyCode": false,
         "stopAtEntry": false,
         "console": "internalConsole",
         "pipeTransport": {
@@ -114,6 +115,7 @@ Notice the following:
 - `program` is the path to the .NET runtime on the device.
 - `args` is the path to the assembly to debug on the device.
 - `cwd` is the working directory to use when launching the app on the device.
+- `justMyCode` is set to `false` to ensure that the debugger breaks on breakpoints in the app's code.
 - `pipeProgram` is the path to an SSH client on the local machine.
 - `pipeArgs` are the parameters to be passed to the SSH client. Be sure to specify the password parameter, as well as the `pi` user in the format `<user>@<hostname>`.
 

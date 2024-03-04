@@ -31,6 +31,7 @@ A method marked with `[ClassCleanup]` should have valid layout.
 
 Methods marked with `[ClassCleanup]` should follow the following layout to be valid:
 
+- it can't be declared on a generic class without the `InheritanceBehavior` mode is set
 - it should be `public`
 - it should be `static`
 - it should not be `async void`

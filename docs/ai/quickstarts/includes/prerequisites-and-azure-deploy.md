@@ -16,12 +16,12 @@ ms.topic: include
 
 Ensure that you follow the [Prerequisites](#prerequisites) to have access to Azure OpenAI Service as well as the Azure Developer CLI, and then follow the following guide to set started with the sample application.
 
-1. Clone/ Download the repository: [dotnet/ai-samples](https://github.com/dotnet/ai-samples) 
+1. Clone/ Download the repository: [dotnet/ai-samples](https://github.com/dotnet/ai-samples)
 2. From a terminal or command prompt, navigate to the `Getting-Started` directory.
-3. This will provision the Azure OpenAI resources. It may take several minutes to create the Azure OpenAI service and deploy the model. 
-	```bash
-	azd up
-	```
+3. This will provision the Azure OpenAI resources. It may take several minutes to create the Azure OpenAI service and deploy the model.
+    ```bash
+    azd up
+    ```
 
 > [!NOTE]
 > If you already have an Azure OpenAI service available, you can skip the deployment and use hardcoded value in the `program.cs`.

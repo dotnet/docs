@@ -18,7 +18,7 @@ Get started with the .NET Azure OpenAI SDK by creating a simple .NET 8 console c
 ## Trying Generate Hiking Images sample
 
 1. From a terminal or command prompt, navigate to the `05-HikeImages` directory.
-4. It's now time to try the console application. Type in the following to run the app:
+2. It's now time to try the console application. Type in the following to run the app:
 
     ```dotnetcli
     dotnet run

@@ -19,7 +19,7 @@ Ensure that you follow the [Prerequisites](#prerequisites) to have access to Azu
 1. Clone/ Download the repository: [dotnet/ai-samples](https://github.com/dotnet/ai-samples)
 2. From a terminal or command prompt, navigate to the `Getting-Started` directory.
 3. This will provision the Azure OpenAI resources. It may take several minutes to create the Azure OpenAI service and deploy the model.
-   
+
    ```bash
    azd up
    ```

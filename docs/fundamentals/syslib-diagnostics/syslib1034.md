@@ -2,6 +2,8 @@
 title: SYSLIB1034 error
 description: Learn about the diagnostic that generates compile-time error SYSLIB1034.
 ms.date: 10/26/2023
+f1_keywords:
+  - syslib1034
 ---
 
 # SYSLIB1034: JsonSourceGenerator encountered a [JsonStringEnumConverter] annotation

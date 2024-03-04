@@ -2,6 +2,8 @@
 title: SYSLIB0016 warning
 description: Learn about the GetContextInfo obsoletion that generates compile-time warning SYSLIB0016.
 ms.date: 04/24/2021
+f1_keywords:
+  - syslib0016
 ---
 # SYSLIB0016: GetContextInfo() is obsolete
 

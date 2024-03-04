@@ -2,6 +2,8 @@
 title: SYSLIB0032 warning - Recovery from corrupted process state exceptions is not supported
 description: Learn about the obsoletion of HandleProcessCorruptedStateExceptionsAttribute that generates compile-time warning SYSLIB0032.
 ms.date: 09/07/2021
+f1_keywords:
+  - syslib0032
 ---
 # SYSLIB0032: Recovery from corrupted process state exceptions is not supported
 

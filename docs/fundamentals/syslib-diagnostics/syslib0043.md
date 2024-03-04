@@ -2,6 +2,8 @@
 title: SYSLIB0043 warning - ECDiffieHellmanPublicKey.ToByteArray is obsolete
 description: Learn about the obsoletion of ECDiffieHellmanPublicKey.ToByteArray() and the associated constructor that generates compile-time warning SYSLIB0043.
 ms.date: 04/08/2022
+f1_keywords:
+  - syslib0043
 ---
 # SYSLIB0043: ECDiffieHellmanPublicKey.ToByteArray is obsolete
 

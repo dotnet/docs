@@ -2,6 +2,8 @@
 title: SYSLIB0049 warning - JsonSerializerOptions.AddContext is obsolete
 description: Learn about the obsoletion of the JsonSerializerOptions.AddContext method that generates compile-time warning SYSLIB0049.
 ms.date: 10/09/2023
+f1_keywords:
+  - syslib0049
 ---
 # SYSLIB0049: JsonSerializerOptions.AddContext is obsolete
 

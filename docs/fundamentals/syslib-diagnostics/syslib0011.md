@@ -2,6 +2,8 @@
 title: SYSLIB0011 warning
 description: Learn about the obsoletions that generate compile-time warning SYSLIB0011.
 ms.date: 09/08/2023
+f1_keywords:
+  - syslib0011
 ---
 # SYSLIB0011: BinaryFormatter serialization is obsolete
 

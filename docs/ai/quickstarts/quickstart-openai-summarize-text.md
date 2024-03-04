@@ -1,6 +1,6 @@
 ---
-title: Quickstart - Build an Azure AI chat app with .NET
-description: Create a simple chat app using the .NET Azure OpenAI SDK.
+title: Quickstart - Summarize text using Azure AI chat app with .NET
+description: Create a simple chat app using the .NET Azure OpenAI SDK to summarize a text.
 ms.date: 03/04/2024
 ms.topic: quickstart
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
@@ -15,10 +15,10 @@ Get started with the .NET Azure OpenAI SDK by creating a simple .NET 8 console c
 
 [!INCLUDE [download-alert](includes/prerequisites-and-azure-deploy.md)]
 
-## Trying HikerAI
+## Trying Hiking Benefits Summary
 
-1. From a terminal or command prompt, navigate to the `02-HikerAI` directory.
-2. It's now time to try the console application. Type in the following to run the app:
+1. From a terminal or command prompt, navigate to the `01-HikeBenefitsSummary` directory.
+4. It's now time to try the console application. Type in the following to run the app:
 
     ```dotnetcli
     dotnet run
@@ -60,47 +60,26 @@ var endpoint = new Uri(openAIEndpoint);
 var credentials = new AzureKeyCredential(openAiKey);
 ```
 
-Once the `OpenAIClient` client is created, we provide more context to the model by adding a system prompt. This instructs the model how you'd like it to act during the conversation.
+Once the `OpenAIClient` client is created, we read the content of the file `benefits.md`. Then using the `ChatRequestUserMessage` class we can add to the model the request to summarize that text.
 
 ```csharp
-var systemPrompt = 
-"""
-You are a hiking enthusiast who helps people discover fun hikes in their area. You are upbeat and friendly. 
-You introduce yourself when first saying hello. When helping people out, you always ask them 
-for this information to inform the hiking recommendation you provide:
+string userRequest = """
+Please summarize the the following text in 20 words or less:
+""" + markdown;
 
-1. Where they are located
-2. What hiking intensity they are looking for
-
-You will then provide three suggestions for nearby hikes that vary in length after you get that information. 
-You will also share an interesting fact about the local nature on the hikes when making a recommendation.
-""";
-
-completionOptions.Messages.Add(new ChatRequestSystemMessage(systemPrompt));
+completionOptions.Messages.Add(new ChatRequestUserMessage(userRequest));
+Console.WriteLine($"\n\nUser >>> {userRequest}");
 ```
 
-Then you can add a user message to the model by using the `ChatRequestUserMessage` class.
-
-To have the model generate a response based off the system prompt and the user request, use the `GetChatCompletionsAsync` function.
+To have the model generate a response based off the user request, use the `GetChatCompletionsAsync` function.
 
 ```csharp
-string userGreeting = """
-Hi! 
-Apparently you can help me find a hike that I will like?
-""";
-
-completionOptions.Messages.Add(new ChatRequestUserMessage(userGreeting));
-Console.WriteLine($"\n\nUser >>> {userGreeting}");
-
 ChatCompletions response = await openAIClient.GetChatCompletionsAsync(completionOptions);
 ChatResponseMessage assistantResponse = response.Choices[0].Message;
-Console.WriteLine($"\n\nAI >>> {assistantResponse.Content}");
-completionOptions.Messages.Add(new ChatRequestAssisstantMessage(assistantResponse.Content)); 
+Console.WriteLine($"\n\nAssistant >>> {assistantResponse.Content}");
 ```
 
-To maintain the chat history or context, make sure you add the response from the model as a `ChatRequestAssistantMessage`.
-
-Customize the system prompt and user message to see how the model responds to help you find a hike that you'll like.
+Customize the text content of the file or the length of the summary to see the differences in the responses.
 
 ## Clean up resources
 
@@ -112,4 +91,5 @@ azd down
 
 ## Next steps
 
+- [Quickstart - Build an Azure AI chat app with .NET](/docs/ai/quickstarts/get-started-azure-openai.md)
 - [Generate text and conversations with .NET and Azure OpenAI Completions](/training/modules/open-ai-dotnet-text-completions/)

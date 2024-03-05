@@ -2,6 +2,8 @@
 title: SYSLIB0035 warning - ComputeCounterSignature without specifying a CmsSigner is obsolete
 description: Learn about the obsoletion of the parameterless ComputeCounterSignature method that generates compile-time warning SYSLIB0035.
 ms.date: 09/07/2021
+f1_keywords:
+  - syslib0035
 ---
 # SYSLIB0035: ComputeCounterSignature without specifying a CmsSigner is obsolete
 

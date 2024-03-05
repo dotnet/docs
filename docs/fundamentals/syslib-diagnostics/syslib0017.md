@@ -2,6 +2,8 @@
 title: SYSLIB0017 warning
 description: Learn about the obsoletion of strong-name signing-related APIS that generates compile-time warning SYSLIB0017.
 ms.date: 04/24/2021
+f1_keywords:
+  - syslib0017
 ---
 # SYSLIB0017: Strong-name signing is not supported and throws PlatformNotSupportedException
 

@@ -3,6 +3,37 @@ title: Package Validation Diagnostics IDs
 description: A reference for assembly and package validation diagnostic IDs, and how to suppress them.
 ms.date: 11/30/2023
 ms.topic: error-reference
+f1_keywords:
+  - pkv001
+  - pkv002
+  - pkv003
+  - pkv004
+  - pkv005
+  - pkv006
+  - pkv007
+  - cp0001
+  - cp0002
+  - cp0003
+  - cp0004
+  - cp0005
+  - cp0006
+  - cp0007
+  - cp0008
+  - cp0009
+  - cp0010
+  - cp0011
+  - cp0012
+  - cp0013
+  - cp0014
+  - cp0015
+  - cp0016
+  - cp0017
+  - cp0018
+  - cp0019
+  - cp0020
+  - cp1001
+  - cp1002
+  - cp1003
 ---
 # Package/assembly validation error codes
 

@@ -2,6 +2,8 @@
 title: SYSLIB0047 warning - XmlSecureResolver is obsolete
 description: Learn about the obsoletion of XmlSecureResolver that generates compile-time warning SYSLIB0047.
 ms.date: 04/08/2022
+f1_keywords:
+  - syslib0047
 ---
 # SYSLIB0047: XmlSecureResolver is obsolete
 

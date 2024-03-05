@@ -2,6 +2,8 @@
 title: SYSLIB0005 warning
 description: Learn about the obsoletion that generates compile-time warning SYSLIB0005.
 ms.date: 10/20/2020
+f1_keywords:
+  - syslib0005
 ---
 # SYSLIB0005: The global assembly cache (GAC) is not supported
 

@@ -2,6 +2,8 @@
 title: SYSLIB0048 warning - RSA.EncryptValue and DecryptValue are obsolete
 description: Learn about the obsoletion of the RSA.EncryptValue and RSA.DecryptValue methods that generates compile-time warning SYSLIB0048.
 ms.date: 04/08/2022
+f1_keywords:
+  - syslib0048
 ---
 # SYSLIB0048: RSA.EncryptValue and DecryptValue are obsolete
 

@@ -15,7 +15,7 @@ Get started with the .NET Azure OpenAI with a `gpt-35-turbo` model, from a simpl
 
 [!INCLUDE [download-alert](includes/prerequisites-and-azure-deploy.md)]
 
-## Trying Chatting About My Previous Hikes sample
+## Try "Chatting About My Previous Hikes" sample
 
 1. From a terminal or command prompt, navigate to the `03-ChattingAboutMyHikes` directory.
 2. It's now time to try the console application. Type in the following to run the app:
@@ -26,7 +26,7 @@ Get started with the .NET Azure OpenAI with a `gpt-35-turbo` model, from a simpl
 
     If you get an error message the Azure OpenAI resources may not have finished deploying. Wait a couple of minutes and try again.
 
-## Understanding the code
+## Explore the code
 
 Our application uses the `Azure.AI.OpenAI` client SDK, which is available on [NuGet](https://www.nuget.org/packages/Azure.AI.OpenAI), to send and receive requests to an Azure OpenAI service deployed in Azure.
 
@@ -50,7 +50,10 @@ The entire application is contained within the **Program.cs** file. The first se
 
 ```csharp
 // == Retrieve the local secrets saved during the Azure deployment ==========
-var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
+var config = new ConfigurationBuilder()
+    .AddUserSecrets<Program>()
+    .Build();
+
 string openAIEndpoint = config["AZURE_OPENAI_ENDPOINT"];
 string openAIDeploymentName = config["AZURE_OPENAI_GPT_NAME"];
 string openAiKey = config["AZURE_OPENAI_KEY"];

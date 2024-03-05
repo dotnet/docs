@@ -46,11 +46,14 @@ var completionOptions = new ChatCompletionsOptions
 };
 ```
 
-The entire application is contained within the **Program.cs** file. The first several lines of code loads up secrets and configuration values that were set in the `dotnet user-secrets` for you during the application provisioning.
+The entire application is contained within the _Program.cs_ file. The first several lines of code load secrets and configuration values that were set in the `dotnet user-secrets` for you during the application provisioning.
 
 ```csharp
 // == Retrieve the local secrets saved during the Azure deployment ==========
-var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
+var config = new ConfigurationBuilder()
+    .AddUserSecrets<Program>()
+    .Build();
+
 string openAIEndpoint = config["AZURE_OPENAI_ENDPOINT"];
 string openAIDeploymentName = config["AZURE_OPENAI_GPT_NAME"];
 string openAiKey = config["AZURE_OPENAI_KEY"];

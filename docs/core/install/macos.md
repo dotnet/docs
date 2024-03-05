@@ -199,11 +199,11 @@ Environment variables that add .NET to system path, such as the `PATH` variable,
 
 Visual Studio for Mac installs the .NET SDK when the **.NET** workload is selected. To get started with .NET development on macOS, see [Install Visual Studio 2019 for Mac](/visualstudio/mac/installation).
 
-| .NET SDK version      | Visual Studio version                                |
-| --------------------- | ---------------------------------------------------- |
-| 8.0                   | Visual Studio 2022 for Mac 17.8 or higher.           |
-| 7.0                   | Visual Studio 2022 for Mac 17.4 or higher.           |
-| 6.0                   | Visual Studio 2022 for Mac Preview 3 17.0 or higher. |
+| .NET SDK version      | Visual Studio version                                                        |
+| --------------------- | ---------------------------------------------------------------------------- |
+| 8.0                   | Visual Studio 2022 for Mac 17.6 or higher. (Available as a preview feature.) |
+| 7.0                   | Visual Studio 2022 for Mac 17.4 or higher.                                   |
+| 6.0                   | Visual Studio 2022 for Mac Preview 3 17.0 or higher.                         |
 
 :::image type="content" source="media/install-sdk/mac-install-selection.png" alt-text="macOS Visual Studio 2019 for Mac with the .NET workload selected." lightbox="media/install-sdk/mac-install-selection.png":::
 

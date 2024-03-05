@@ -102,8 +102,7 @@ C# style rules:
 
 - [Use expression body for constructors (IDE0021)](ide0021.md)
 - [Use expression body for methods (IDE0022)](ide0022.md)
-- [Use expression body for operators (IDE0023)](ide0023-ide0024.md)
-- [Use expression body for operators (IDE0024)](ide0023-ide0024.md)
+- [Use expression body for operators (IDE0023, IDE0024)](ide0023-ide0024.md)
 - [Use expression body for properties (IDE0025)](ide0025.md)
 - [Use expression body for indexers (IDE0026)](ide0026.md)
 - [Use expression body for accessors (IDE0027)](ide0027.md)

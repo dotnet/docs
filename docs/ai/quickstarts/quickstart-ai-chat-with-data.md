@@ -1,5 +1,5 @@
 ---
-title: Quickstart - Build an Azure AI chat app with .NET about your data
+title: Quickstart - Get insight about your data from an .NET Azure AI chat app
 description: Create a simple chat app using your data and the .NET Azure OpenAI SDK.
 ms.date: 03/04/2024
 ms.topic: quickstart
@@ -9,7 +9,7 @@ ms.author: frbouche
 # CustomerIntent: As a .NET developer new to Azure OpenAI, I want deploy and use sample code to interact to learn from the sample code.
 ---
 
-# Build an Azure AI chat app with .NET about your data
+# Get insight about your data from an .NET Azure AI chat app
 
 Get started with the .NET Azure OpenAI with a `gpt-35-turbo` model, from a simple .NET 8.0 console application. Use the AI model to get analytics and information about your previous hikes. It consists of a simple console application, running locally, that will read the file `hikes.md` and send request to an Azure OpenAI service deployed in your Azure subscription and provide the result in the console. Follow these steps to provision Azure OpenAI and learn how to use the .NET Azure OpenAI SDK.
 

@@ -26,7 +26,7 @@ ms.custom: devx-track-java, devx-track-java-ai
 
 #### [Visual Studio Code](#tab/visual-studio-code)
 
-* [Azure Developer CLI](~/azure-dev-docs-pr/articles/azure-developer-cli/install-azd.md)
+* [Azure Developer CLI](/azure/developer/azure-developer-cli/install-azd)
 * [Docker Desktop](https://www.docker.com/products/docker-desktop/) - start Docker Desktop if it's not already running
 * [Visual Studio Code](https://code.visualstudio.com/) with [Dev Container Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 

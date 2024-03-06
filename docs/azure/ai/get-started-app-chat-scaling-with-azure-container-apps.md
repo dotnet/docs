@@ -1,6 +1,6 @@
 ---
 title: Scale Azure OpenAI for .NET chat sample using RAG
-description: Learn how to add load balancing to your application to extend the chat app beyond the Azure OpenAI token and model quota limits. 
+description: Learn how to add load balancing to your application to extend the chat app beyond the Azure OpenAI token and model quota limits.
 ms.date: 02/01/2024
 ms.topic: get-started
 ms.custom: devx-track-java, devx-track-java-ai
@@ -15,7 +15,7 @@ ms.custom: devx-track-java, devx-track-java-ai
 
 ## Prerequisites
 
-* Azure subscription.  [Create one for free](https://azure.microsoft.com/free/ai-services?azure-portal=true) 
+* Azure subscription.  [Create one for free](https://azure.microsoft.com/free/ai-services?azure-portal=true)
 * Access granted to Azure OpenAI in the desired Azure subscription.
 
     Currently, access to this service is granted only by application. You can apply for access to Azure OpenAI by completing the form at https://aka.ms/oai/access.
@@ -23,14 +23,14 @@ ms.custom: devx-track-java, devx-track-java-ai
 * [Dev containers](https://containers.dev/) are available for both samples, with all dependencies required to complete this article. You can run the dev containers in GitHub Codespaces (in a browser) or locally using Visual Studio Code.
 
     #### [Codespaces (recommended)](#tab/github-codespaces)
-    
+
     * GitHub account
-    
+
     #### [Visual Studio Code](#tab/visual-studio-code)
     * [Azure Developer CLI](~/azure-dev-docs-pr/articles/azure-developer-cli/install-azd.md?tabs=winget-windows%2Cbrew-mac%2Cscript-linux&pivots=os-windows)
     * [Docker Desktop](https://www.docker.com/products/docker-desktop/) - start Docker Desktop if it's not already running
     * [Visual Studio Code](https://code.visualstudio.com/) with [Dev Container Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
-    
+
     ---
 
 [!INCLUDE [scaling-load-balancer-aca-procedure.md](~/azure-dev-docs-pr/articles/intro/includes//scaling-load-balancer-procedure-azure-container-apps.md)]
@@ -45,11 +45,11 @@ ms.custom: devx-track-java, devx-track-java-ai
 
 ## Sample code
 
-Samples used in this article include: 
+Samples used in this article include:
 
 * [.NET chat app with RAG](https://github.com/Azure-Samples/azure-search-openai-demo-csharp)
 * [Load Balancer with Azure Container Apps](https://github.com/Azure-Samples/openai-aca-lb)
 
 ## Next step
 
-* Use [Azure Load Testing](/azure/load-testing/) to load test your chat app with 
+* Use [Azure Load Testing](/azure/load-testing/) to load test your chat app

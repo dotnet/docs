@@ -41,6 +41,19 @@ namespace HowToStrings
             // </Snippet1>
         }
 
+        private static void EnumerateWords()
+        {
+            // <Snippet1.5>
+            string phrase = "The quick brown fox jumps over the lazy dog.";
+            string[] words = phrase.Split(' ');
+
+            for (int i = 0; i < words.Length; i++)
+            {
+                System.Console.WriteLine($"Index {i}: <{words[i]}>");
+            }
+            // </Snippet1.5>
+        }
+
         private static void SplitWordsWithRepeatedSeparators()
         {
             // <Snippet2>

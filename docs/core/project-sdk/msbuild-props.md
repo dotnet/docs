@@ -397,7 +397,7 @@ For example, for a .NET 5 app, the output path changes from `bin\Debug\net5.0` t
 
 The `AppendRuntimeIdentifierToOutputPath` property controls whether the [runtime identifier (RID)](../rid-catalog.md) is appended to the output path. The .NET SDK automatically appends the target framework and, if present, the runtime identifier to the output path. Setting `AppendRuntimeIdentifierToOutputPath` to `false` prevents the RID from being appended to the output path.
 
-For example, for a .NET 5 app and an RID of `win10-x64`, the output path changes from `bin\Debug\net5.0\win10-x64` to `bin\Debug\net5.0` with the following setting:
+For example, for a .NET 5 app and an RID of `win-x64`, the following setting changes the output path from `bin\Debug\net5.0\win-x64` to `bin\Debug\net5.0`:
 
 ```xml
 <PropertyGroup>
@@ -588,7 +588,7 @@ The `RuntimeIdentifier` property lets you specify a single [runtime identifier (
 
 ```xml
 <PropertyGroup>
-  <RuntimeIdentifier>ubuntu.16.04-x64</RuntimeIdentifier>
+  <RuntimeIdentifier>linux-x64</RuntimeIdentifier>
 </PropertyGroup>
 ```
 
@@ -601,7 +601,7 @@ The `RuntimeIdentifiers` property lets you specify a semicolon-delimited list of
 
 ```xml
 <PropertyGroup>
-  <RuntimeIdentifiers>win10-x64;osx.10.11-x64;ubuntu.16.04-x64</RuntimeIdentifiers>
+  <RuntimeIdentifiers>win-x64;osx-x64;linux-x64</RuntimeIdentifiers>
 </PropertyGroup>
 ```
 

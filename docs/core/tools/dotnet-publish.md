@@ -234,7 +234,7 @@ For more information, see the following resources:
 - Create a [self-contained executable](../deploying/index.md#publish-self-contained) for the project in the current directory, for a specific runtime:
 
   ```dotnetcli
-  dotnet publish --runtime osx.10.11-x64
+  dotnet publish --runtime osx-x64
   ```
 
   The RID must be in the project file.
@@ -242,7 +242,7 @@ For more information, see the following resources:
 - Create a [framework-dependent executable](../deploying/index.md#publish-framework-dependent) for the project in the current directory, for a specific platform:
 
   ```dotnetcli
-  dotnet publish --runtime osx.10.11-x64 --self-contained false
+  dotnet publish --runtime osx-x64 --self-contained false
   ```
 
   The RID must be in the project file. This example applies to .NET Core 3.0 SDK and later versions.
@@ -250,7 +250,7 @@ For more information, see the following resources:
 - Publish the project in the current directory, for a specific runtime and target framework:
 
   ```dotnetcli
-  dotnet publish --framework netcoreapp3.1 --runtime osx.10.11-x64
+  dotnet publish --framework netcoreapp3.1 --runtime osx-x64
   ```
 
 - Publish the specified project file:

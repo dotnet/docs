@@ -33,7 +33,7 @@ namespace HowToStrings
 
             Console.WriteLine("Split into no more than four substrings");
             Console.WriteLine();
-            SplitFirstFourWords();
+            SplitFourTimes();
         }
 
         private static void SplitWords()

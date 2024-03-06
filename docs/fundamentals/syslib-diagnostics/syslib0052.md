@@ -2,6 +2,8 @@
 title: SYSLIB0052 warning - APIs that support obsolete mechanisms for Regex extensibility are obsolete
 description: Learn about the obsoletion of APIs that support obsolete mechanisms for Regex extensibility that generates compile-time warning SYSLIB0052.
 ms.date: 09/08/2023
+f1_keywords:
+  - syslib0052
 ---
 # SYSLIB0052: APIs that support obsolete mechanisms for Regex extensibility are obsolete
 

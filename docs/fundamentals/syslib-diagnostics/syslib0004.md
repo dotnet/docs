@@ -2,6 +2,8 @@
 title: SYSLIB0004 warning
 description: Learn about the obsoletions that generate compile-time warning SYSLIB0004.
 ms.date: 10/20/2020
+f1_keywords:
+  - syslib0004
 ---
 # SYSLIB0004: The constrained execution region (CER) feature is not supported
 

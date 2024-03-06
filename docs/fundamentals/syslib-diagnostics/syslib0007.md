@@ -2,6 +2,8 @@
 title: SYSLIB0007 warning
 description: Learn about the obsoletions that generate compile-time warning SYSLIB0007.
 ms.date: 10/20/2020
+f1_keywords:
+  - syslib0007
 ---
 # SYSLIB0007: Default implementations of cryptography algorithms not supported
 

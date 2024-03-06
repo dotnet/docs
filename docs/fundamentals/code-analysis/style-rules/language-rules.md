@@ -51,7 +51,7 @@ or
 
 > [!TIP]
 >
-> Starting in Visual Studio 2019, you can configure code style rules from the [Quick Actions](/visualstudio/ide/quick-actions) light bulb menu after a style violation occurs. For more information, see [Automatically configure code styles in Visual Studio](/visualstudio/ide/editorconfig-language-conventions#automatically-configure-code-styles-in-visual-studio).
+> Starting in Visual Studio 2019, you can configure code style rules from the [Quick Actions](/visualstudio/ide/quick-actions) light bulb menu after a style violation occurs.
 
 ## Rule index
 

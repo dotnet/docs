@@ -2,6 +2,8 @@
 title: SYSLIB0041 warning - Rfc2898DeriveBytes constructors with default hash algorithm and iteration counts are obsolete
 description: Learn about the obsoletion of some Rfc2898DeriveBytes constructors that generates compile-time warning SYSLIB0041.
 ms.date: 04/08/2022
+f1_keywords:
+  - syslib0041
 ---
 # SYSLIB0041: Some Rfc2898DeriveBytes constructors are obsolete
 

@@ -193,7 +193,7 @@ You can control logging using any of the [Logging in .NET Core and ASP.NET Core 
 
 Using the Azure Service Bus library as an example, complete the following steps:
 
-1. Install the [/Azure.Monitor.OpenTelemetry.AspNetCore](https://www.nuget.org/packages/Azure.Monitor.OpenTelemetry.AspNetCore) NuGet package:
+1. Install the [Azure.Monitor.OpenTelemetry.AspNetCore](https://www.nuget.org/packages/Azure.Monitor.OpenTelemetry.AspNetCore) NuGet package:
 
     ```dotnetcli
     dotnet add package Azure.Monitor.OpenTelemetry.AspNetCore

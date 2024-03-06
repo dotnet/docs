@@ -58,9 +58,9 @@ The optional `PRERELEASE` and `BUILDNUMBER` parts are never part of supported re
   - Significant changes in the product, or a new product direction.
   - API introduced breaking changes. There's a high bar to accepting breaking changes.
   - A newer `MAJOR` version of an existing dependency is adopted.
-  
+
   Major releases happen once a year, even-numbered versions are long-term supported (LTS) releases. The first LTS release using this versioning scheme is .NET 6. The latest non-LTS version is .NET 5.
-  
+
 - `MINOR` is incremented when:
 
   - Public API surface area is added.
@@ -79,7 +79,7 @@ When there are multiple changes, the highest element affected by individual chan
 
 ## Version numbers in file names
 
-The files downloaded for .NET carry the version, for example, `dotnet-sdk-5.0.301-win10-x64.exe`.
+The files downloaded for .NET carry the version, for example, `dotnet-sdk-5.0.301-win-x64.exe`.
 
 ### Preview versions
 

@@ -7,25 +7,34 @@ namespace HowToStrings
     {
         public static void Examples()
         {
-            Console.WriteLine("Example one");
+            Console.WriteLine("Split words");
             Console.WriteLine();
             SplitWords();
 
-            Console.WriteLine("Example two");
+            Console.WriteLine("Enumerate words");
+            Console.WriteLine();
+            EnumerateWords();
+
+            Console.WriteLine("Split words with repeated separators");
             Console.WriteLine();
             SplitWordsWithRepeatedSeparators();
 
-            Console.WriteLine("Example three");
+            Console.WriteLine("Split on multiple chars");
             Console.WriteLine();
             SplitOnMultipleChars();
 
-            Console.WriteLine("Example four");
+            Console.WriteLine("Split on multiple chars with gaps");
             Console.WriteLine();
             SplitOnMultipleCharsWithGaps();
 
-            Console.WriteLine("Example five");
+            Console.WriteLine("Split using strings");
             Console.WriteLine();
             SplitUsingStrings();
+
+            Console.WriteLine("Split first four words");
+            Console.WriteLine();
+            SplitFirstFourWords();
+
         }
 
         private static void SplitWords()
@@ -125,7 +134,7 @@ namespace HowToStrings
         {
             // <Snippet6>
             string phrase = "The quick brown fox jumps over the lazy dog.";
-            string[] words = phrase.Split(' ', 4, System.StringSplitOptions.RemoveEmptyEntries);
+            string[] words = phrase.Split(' ', 4, StringSplitOptions.None);
 
             foreach (var word in words)
             {

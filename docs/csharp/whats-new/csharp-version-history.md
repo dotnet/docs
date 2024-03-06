@@ -1,6 +1,6 @@
 ---
 title: The history of C# - C# Guide
-description: Learn how has the C# language changed over its many releases. Learn when different features were introduced in the language,
+description: Learn how the C# language has changed over its many releases. Learn when different features were introduced in the language.
 author: erikdietrich
 ms.date: 03/06/2024
 ms.custom: "updateeachrelease, UpdateFrequency1"
@@ -20,8 +20,8 @@ This article provides a history of each major release of the C# language. The C#
 The following features were added in C# 12:
 
 - [Primary constructors](./csharp-12.md#primary-constructors) - You can create primary constructors in any `class` or `struct` type.
-- [Collection expressions](./csharp-12.md#collection-expressions) - A new syntax to specify collection expressions, including the spread operator, (`..`) to expand any collection.
-- [Inline arrays](./csharp-12.md#inline-arrays) - Inline arrays enable a developer to create an array of fixed size in a `struct` type.
+- [Collection expressions](./csharp-12.md#collection-expressions) - A new syntax to specify collection expressions, including the spread operator, (`..`), to expand any collection.
+- [Inline arrays](./csharp-12.md#inline-arrays) - Inline arrays enable you to create an array of fixed size in a `struct` type.
 - [Optional parameters in lambda expressions](./csharp-12.md#default-lambda-parameters) - You can define default values for parameters on lambda expressions.
 - [`ref readonly` parameters](./csharp-12.md#ref-readonly-parameters) - `ref readonly` parameters enables more clarity for APIs that might be using `ref` parameters or `in` parameters.
 - [Alias any type](./csharp-12.md#alias-any-type) - You can use the `using` alias directive to alias any type, not just named types.
@@ -243,7 +243,7 @@ C# 7.2 added several small language features:
 - Add the `in` modifier on parameters, to specify that an argument is passed by reference but not modified by the called method.
 - Use the `ref readonly` modifier on method returns, to indicate that a method returns its value by reference but doesn't allow writes to that object.
 - Declare `ref struct` types, to indicate that a struct type accesses managed memory directly and must always be stack allocated.
-- Use more generic constraints.
+- Use additional generic constraints.
 - [Non-trailing named arguments](../programming-guide/classes-and-structs/named-and-optional-arguments.md):
   - Positional arguments can follow named arguments.
 - Leading underscores in numeric literals:
@@ -337,7 +337,7 @@ But `async` and `await` are the real stars of this release. When these features 
 
 *Released April 2010*
 
-C# version 4.0, released with Visual Studio 2010 introduced some interesting new features:
+C# version 4.0, released with Visual Studio 2010, introduced some interesting new features:
 
 - [Dynamic binding](../language-reference/builtin-types/reference-types.md)
 - [Named/optional arguments](../programming-guide/classes-and-structs/named-and-optional-arguments.md)
@@ -366,7 +366,7 @@ C# version 3.0 came in late 2007, along with Visual Studio 2008, though the full
 - [Partial methods](../language-reference/keywords/partial-method.md)
 - [Object and collection initializers](../programming-guide/classes-and-structs/object-and-collection-initializers.md)
 
-In retrospect, many of these features seem both inevitable and inseparable. They all fit together strategically. That C# version's killer feature was the query expression, also known as Language-Integrated Query (LINQ).
+In retrospect, many of these features seem both inevitable and inseparable. They all fit together strategically. This C# version's killer feature was the query expression, also known as Language-Integrated Query (LINQ).
 
 A more nuanced view examines expression trees, lambda expressions, and anonymous types as the foundation upon which LINQ is constructed. But, in either case, C# 3.0 presented a revolutionary concept. C# 3.0 began to lay the groundwork for turning C# into a hybrid Object-Oriented / Functional language.
 

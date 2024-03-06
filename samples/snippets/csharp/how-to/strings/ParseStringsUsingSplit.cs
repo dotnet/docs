@@ -31,10 +31,9 @@ namespace HowToStrings
             Console.WriteLine();
             SplitUsingStrings();
 
-            Console.WriteLine("Split first four words");
+            Console.WriteLine("Split into no more than four substrings");
             Console.WriteLine();
             SplitFirstFourWords();
-
         }
 
         private static void SplitWords()
@@ -130,7 +129,7 @@ namespace HowToStrings
             // </Snippet5>
         }
 
-        private static void SplitFirstFourWords()
+        private static void SplitFourTimes()
         {
             // <Snippet6>
             string phrase = "The quick brown fox jumps over the lazy dog.";

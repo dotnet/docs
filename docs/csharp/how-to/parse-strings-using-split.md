@@ -44,10 +44,6 @@ Consecutive instances of any separator produce the empty string in the output ar
 
 :::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/ParseStringsUsingSplit.cs" id="Snippet5":::
 
-Some overloads of the <xref:System.String.Split%2A?displayProperty=nameWithType> method allow you to limit the number of substrings returned in the array. This example limits the number of substrings to four, so it returns the first three words as the first three elements of the array, and the rest of the string as the fourth element.
-
-:::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/ParseStringsUsingSplit.cs" id="Snippet6":::
-
 ## See also
 
 - [Extract elements from a string](../../standard/base-types/divide-up-strings.md)

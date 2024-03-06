@@ -18,18 +18,19 @@ ms.custom: devx-track-java, devx-track-java-ai
 * Azure subscription.  [Create one for free](https://azure.microsoft.com/free/ai-services?azure-portal=true)
 * Access granted to Azure OpenAI in the desired Azure subscription.
 
-    Currently, access to this service is granted only by application. You can apply for access to Azure OpenAI by completing the form at https://aka.ms/oai/access.
+    Currently, access to this service is granted only by application. You should [apply for access](https://aka.ms/oai/access) to Azure OpenAI.
 
 * [Dev containers](https://containers.dev/) are available for both samples, with all dependencies required to complete this article. You can run the dev containers in GitHub Codespaces (in a browser) or locally using Visual Studio Code.
 
-    #### [Codespaces (recommended)](#tab/github-codespaces)
+#### [Codespaces (recommended)](#tab/github-codespaces)
 
-    * GitHub account
+  * GitHub account
 
-    #### [Visual Studio Code](#tab/visual-studio-code)
-    * [Azure Developer CLI](~/azure-dev-docs-pr/articles/azure-developer-cli/install-azd.md?tabs=winget-windows%2Cbrew-mac%2Cscript-linux&pivots=os-windows)
-    * [Docker Desktop](https://www.docker.com/products/docker-desktop/) - start Docker Desktop if it's not already running
-    * [Visual Studio Code](https://code.visualstudio.com/) with [Dev Container Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+#### [Visual Studio Code](#tab/visual-studio-code)
+
+  * [Azure Developer CLI](~/azure-dev-docs-pr/articles/azure-developer-cli/install-azd.md?tabs=winget-windows%2Cbrew-mac%2Cscript-linux&pivots=os-windows)
+  * [Docker Desktop](https://www.docker.com/products/docker-desktop/) - start Docker Desktop if it's not already running
+  * [Visual Studio Code](https://code.visualstudio.com/) with [Dev Container Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
     ---
 

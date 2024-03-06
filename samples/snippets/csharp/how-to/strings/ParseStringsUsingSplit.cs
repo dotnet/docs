@@ -120,5 +120,18 @@ namespace HowToStrings
             }
             // </Snippet5>
         }
+
+        private static void SplitFirstThreeWords()
+        {
+            // <Snippet6>
+            string phrase = "The quick brown fox jumps over the lazy dog.";
+            string[] words = phrase.Split(' ', 3);
+
+            foreach (var word in words)
+            {
+                System.Console.WriteLine($"<{word}>");
+            }
+            // </Snippet6>
+        }
     }
 }

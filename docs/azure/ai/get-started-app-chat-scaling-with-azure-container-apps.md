@@ -7,8 +7,6 @@ ms.custom: devx-track-java, devx-track-java-ai
 # CustomerIntent: As a .NET developer new to Azure OpenAI, I want to scale my OpenAI capacity to avoid rate limit errors.
 ---
 
-[!INCLUDE [include-file-from-azure-dev-docs-pr](~/azure-dev-docs-pr/articles/intro/includes/azure-ai-for-developers-dotnet.md)]
-
 # Scale Azure OpenAI for .NET chat using RAG with Azure Container Apps
 
 [!INCLUDE [aca-load-balancer-intro](~/azure-dev-docs-pr/articles/intro/includes//scaling-load-balancer-introduction-azure-container-apps.md)]
@@ -28,7 +26,7 @@ ms.custom: devx-track-java, devx-track-java-ai
 
 #### [Visual Studio Code](#tab/visual-studio-code)
 
-* [Azure Developer CLI](~/azure-dev-docs-pr/articles/azure-developer-cli/install-azd.md?tabs=winget-windows%2Cbrew-mac%2Cscript-linux&pivots=os-windows)
+* [Azure Developer CLI](~/azure-dev-docs-pr/articles/azure-developer-cli/install-azd.md)
 * [Docker Desktop](https://www.docker.com/products/docker-desktop/) - start Docker Desktop if it's not already running
 * [Visual Studio Code](https://code.visualstudio.com/) with [Dev Container Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 

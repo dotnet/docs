@@ -134,7 +134,7 @@ namespace HowToStrings
         {
             // <Snippet6>
             string phrase = "The quick brown fox jumps over the lazy dog.";
-            string[] words = phrase.Split(' ', 4, StringSplitOptions.None);
+            string[] words = phrase.Split(' ', 4, System.StringSplitOptions.None);
 
             foreach (var word in words)
             {

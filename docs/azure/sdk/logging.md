@@ -188,7 +188,7 @@ For more information, see [Logging in .NET Core and ASP.NET Core](/aspnet/core/f
 
 ## Logging using Azure.Monitor.OpenTelemetry.AspNetCore
 
-[Azure Monitor OpenTelemetry Distro](https://www.nuget.org/packages/Azure.Monitor.OpenTelemetry.AspNetCore),starting with version `1.2.0`, supports capturing logs coming from Azure client libraries. 
+[Azure Monitor OpenTelemetry Distro](https://www.nuget.org/packages/Azure.Monitor.OpenTelemetry.AspNetCore),starting with version `1.2.0`, supports capturing logs coming from Azure client libraries.
 You can control logging using any of the configuration options discussed in [Logging in .NET Core and ASP.NET Core](/aspnet/core/fundamentals/logging/).
 
 Using the Azure Service Bus library as an example, complete the following steps:
@@ -204,12 +204,13 @@ Using the Azure Service Bus library as an example, complete the following steps:
    ```csharp
    await using var client = new ServiceBusClient("<connection_string>");
    ```
+
 1. In *appsettings.json*, change the Service Bus library's default log level. For example, toggle it to `Debug` by setting the `Logging:LogLevel:Azure.Messaging.ServiceBus` key as follows:
 
     :::code language="json" source="snippets/logging/appsettings.Development.json" highlight="9":::
 
     Since the `Logging:LogLevel:Azure.Messaging.ServiceBus` key is set to `Debug`, Service Bus client events up to `EventLevel.Verbose` will be logged.
-   
+
 ## Log HTTP request and response bodies
 
 When troubleshooting unexpected behavior with a client library, it's helpful to inspect the following items:

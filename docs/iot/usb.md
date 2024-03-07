@@ -5,6 +5,7 @@ author: camsoper
 ms.author: casoper
 ms.date: 01/19/2024
 ms.topic: how-to
+ms.custom: linux-related-content
 ---
 
 # Use .NET IoT Libraries on Windows, Linux, and macOS computers

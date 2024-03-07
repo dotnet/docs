@@ -4,6 +4,7 @@ description: Learn about what versions of macOS you can install .NET on.
 author: adegeo
 ms.author: adegeo
 ms.date: 11/13/2023
+ms.custom: linux-related-content
 ---
 
 # Install .NET on macOS

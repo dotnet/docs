@@ -4,6 +4,7 @@ description: Learn about the new containers features introduced in .NET 8.
 titleSuffix: ""
 ms.date: 11/14/2023
 ms.topic: overview
+ms.custom: linux-related-content
 ms.author: gewarren
 author: gewarren
 ---

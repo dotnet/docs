@@ -4,6 +4,7 @@ description: This article describes how to uninstall .NET. You'll need to determ
 author: adegeo
 ms.author: adegeo
 ms.date: 11/21/2023
+ms.custom: linux-related-content
 zone_pivot_groups: operating-systems-set-one
 ---
 

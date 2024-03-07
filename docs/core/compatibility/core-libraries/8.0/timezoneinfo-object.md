@@ -5,7 +5,7 @@ ms.date: 03/06/2024
 ---
 # FindSystemTimeZoneById doesn't return new object
 
-The <xref:System.TimeZoneInfo> object returned by <xref:System.TimeZoneInfo.FindSystemTimeZoneById(System.String)> is now a cached version of the `TimeZoneInfo` instead of a new object.
+The <xref:System.TimeZoneInfo> object returned by <xref:System.TimeZoneInfo.FindSystemTimeZoneById(System.String)> is now a cached `TimeZoneInfo` instance instead of a new object.
 
 ## Previous behavior
 
@@ -13,7 +13,7 @@ The <xref:System.TimeZoneInfo> object returned by <xref:System.TimeZoneInfo.Find
 
 ## New behavior
 
-Starting in .NET 8, <xref:System.TimeZoneInfo.FindSystemTimeZoneById(System.String)?displayProperty=nameWithType> returns a cached `TimeZoneInfo` object.
+Starting in .NET 8, <xref:System.TimeZoneInfo.FindSystemTimeZoneById(System.String)?displayProperty=nameWithType> returns a cached `TimeZoneInfo` instance.
 
 ## Version introduced
 

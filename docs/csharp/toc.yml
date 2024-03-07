@@ -1158,7 +1158,7 @@ items:
   items:
   - name: Overview
     href: language-reference/specifications.md
-  - name: C# 8 draft specification
+  - name: Draft specification (ECMA C# 8)
     items:
     - name: Detailed table of contents
       href: ../../_csharpstandard/standard/README.md
@@ -1222,141 +1222,131 @@ items:
       href: ../../_csharpstandard/standard/documentation-comments.md
     - name: Bibliography
       href: ../../_csharpstandard/standard/bibliography.md
-  - name: C# 8.0 - 12 features
+  - name: C# 8.0 - 12 Microsoft specifications
     items:
-    - name: C# 8.0 features
-      items:
-      - name: Nullable reference types - proposal
-        href: ../../_csharplang/proposals/csharp-8.0/nullable-reference-types.md
-      - name: Recursive pattern matching
-        href: ../../_csharplang/proposals/csharp-8.0/patterns.md
-      - name: Default interface methods
-        href: ../../_csharplang/proposals/csharp-8.0/default-interface-methods.md
-      - name: Async streams
-        href: ../../_csharplang/proposals/csharp-8.0/async-streams.md
-      - name: Ranges
-        href: ../../_csharplang/proposals/csharp-8.0/ranges.md
-      - name: Pattern based using and using declarations
-        href: ../../_csharplang/proposals/csharp-8.0/using.md
-      - name: Static local functions
-        href: ../../_csharplang/proposals/csharp-8.0/static-local-functions.md
-      - name: Null coalescing assignment
-        href: ../../_csharplang/proposals/csharp-8.0/null-coalescing-assignment.md
-      - name: Readonly instance members
-        href: ../../_csharplang/proposals/csharp-8.0/readonly-instance-members.md
-      - name: Nested stackalloc
-        href: ../../_csharplang/proposals/csharp-8.0/nested-stackalloc.md
-    - name: C# 9.0 features
-      items:
-      - name: Records
-        href: ../../_csharplang/proposals/csharp-9.0/records.md
-      - name: Top-level statements
-        href: ../../_csharplang/proposals/csharp-9.0/top-level-statements.md
-      - name: Nullable reference types - specification
-        href: ../../_csharplang/proposals/csharp-9.0/nullable-reference-types-specification.md
-      - name: Pattern matching enhancements
-        href: ../../_csharplang/proposals/csharp-9.0/patterns3.md
-      - name: Init only setters
-        href: ../../_csharplang/proposals/csharp-9.0/init.md
-      - name: Target-typed new expressions
-        href: ../../_csharplang/proposals/csharp-9.0/target-typed-new.md
-      - name: Module initializers
-        href: ../../_csharplang/proposals/csharp-9.0/module-initializers.md
-      - name: Extending partial methods
-        href: ../../_csharplang/proposals/csharp-9.0/extending-partial-methods.md
-      - name: Static anonymous functions
-        href: ../../_csharplang/proposals/csharp-9.0/static-anonymous-functions.md
-      - name: Target-typed conditional expression
-        href: ../../_csharplang/proposals/csharp-9.0/target-typed-conditional-expression.md
-      - name: Covariant return types
-        href: ../../_csharplang/proposals/csharp-9.0/covariant-returns.md
-      - name: Extension GetEnumerator in foreach loops
-        href: ../../_csharplang/proposals/csharp-9.0/extension-getenumerator.md
-      - name: Lambda discard parameters
-        href: ../../_csharplang/proposals/csharp-9.0/lambda-discard-parameters.md
-      - name: Attributes on local functions
-        href: ../../_csharplang/proposals/csharp-9.0/local-function-attributes.md
-      - name: Native sized integers
-        href: ../../_csharplang/proposals/csharp-9.0/native-integers.md
-      - name: Function pointers
-        href: ../../_csharplang/proposals/csharp-9.0/function-pointers.md
-      - name: Suppress emitting localsinit flag
-        href: ../../_csharplang/proposals/csharp-9.0/skip-localsinit.md
-      - name: Unconstrained type parameter annotations
-        href: ../../_csharplang/proposals/csharp-9.0/unconstrained-type-parameter-annotations.md
-    - name: C# 10 features
-      items:
-      - name: Record structs
-        href: ../../_csharplang/proposals/csharp-10.0/record-structs.md
-      - name: Parameterless struct constructors
-        href: ../../_csharplang/proposals/csharp-10.0/parameterless-struct-constructors.md
-      - name: Global using directive
-        href: ../../_csharplang/proposals/csharp-10.0/GlobalUsingDirective.md
-      - name: File scoped namespaces
-        href: ../../_csharplang/proposals/csharp-10.0/file-scoped-namespaces.md
-      - name: Extended property patterns
-        href: ../../_csharplang/proposals/csharp-10.0/extended-property-patterns.md
-      - name: Improved interpolated strings
-        href: ../../_csharplang/proposals/csharp-10.0/improved-interpolated-strings.md
-      - name: Constant interpolated strings
-        href: ../../_csharplang/proposals/csharp-10.0/constant_interpolated_strings.md
-      - name: Lambda improvements
-        href: ../../_csharplang/proposals/csharp-10.0/lambda-improvements.md
-      - name: Caller argument expression
-        href: ../../_csharplang/proposals/csharp-10.0/caller-argument-expression.md
-      - name: "Enhanced #line directives"
-        href: ../../_csharplang/proposals/csharp-10.0/enhanced-line-directives.md
-      - name: Improved definite assignment analysis
-        href: ../../_csharplang/proposals/csharp-10.0/improved-definite-assignment.md
-      - name: AsyncMethodBuilder override
-        href: ../../_csharplang/proposals/csharp-10.0/async-method-builders.md
-    - name: C# 11 features
-      items:
-      - name: Static abstracts in interfaces
-        href: ../../_csharplang/proposals/csharp-11.0/static-abstracts-in-interfaces.md
-      - name: Checked user-defined operators
-        href: ../../_csharplang/proposals/csharp-11.0/checked-user-defined-operators.md
-      - name: Unsigned right-shift operator
-        href: ../../_csharplang/proposals/csharp-11.0/unsigned-right-shift-operator.md
-      - name: Relaxing shift operator
-        href: ../../_csharplang/proposals/csharp-11.0/relaxing_shift_operator_requirements.md
-      - name: Numeric IntPtr
-        href: ../../_csharplang/proposals/csharp-11.0/numeric-intptr.md
-      - name: Raw string literals
-        href: ../../_csharplang/proposals/csharp-11.0/raw-string-literal.md
-      - name: Interpolated string newline
-        href: ../../_csharplang/proposals/csharp-11.0/new-line-in-interpolation.md
-      - name: UTF-8 string literals
-        href: ../../_csharplang/proposals/csharp-11.0/utf8-string-literals.md
-      - name: Pattern match span
-        href: ../../_csharplang/proposals/csharp-11.0/pattern-match-span-of-char-on-string.md
-      - name: List patterns
-        href: ../../_csharplang/proposals/csharp-11.0/list-patterns.md
-      - name: Required members
-        href: ../../_csharplang/proposals/csharp-11.0/required-members.md
-      - name: Auto-default struct
-        href: ../../_csharplang/proposals/csharp-11.0/auto-default-structs.md
-      - name: Low-level struct improvements
-        href: ../../_csharplang/proposals/csharp-11.0/low-level-struct-improvements.md
-      - name: Extended nameof scope
-        href: ../../_csharplang/proposals/csharp-11.0/extended-nameof-scope.md
-      - name: File local types
-        href: ../../_csharplang/proposals/csharp-11.0/file-local-types.md
-      - name: Generic attributes
-        href: ../../_csharplang/proposals/csharp-11.0/generic-attributes.md
-    - name: C# 12 features
-      items:
-      - name: Primary constructors
-        href: ../../_csharplang/proposals/csharp-12.0/primary-constructors.md
-      - name: Collection expressions
-        href: ../../_csharplang/proposals/csharp-12.0/collection-expressions.md
-      - name: Alias any type
-        href: ../../_csharplang/proposals/csharp-12.0/using-alias-types.md
-      - name: Optional Lambda expression parameters
-        href: ../../_csharplang/proposals/csharp-12.0/lambda-method-group-defaults.md
-      - name: Inline arrays
-        href: ../../_csharplang/proposals/csharp-12.0/inline-arrays.md
-      - name: Ref readonly parameters
-        href: ../../_csharplang/proposals/csharp-12.0/ref-readonly-parameters.md
-      - name: Experimental attribute
-        href: ../../_csharplang/proposals/csharp-12.0/experimental-attribute.md
+    - name: Nullable reference types - proposal
+      href: ../../_csharplang/proposals/csharp-8.0/nullable-reference-types.md
+    - name: Null coalescing assignment
+      href: ../../_csharplang/proposals/csharp-8.0/null-coalescing-assignment.md
+    - name: Nullable reference types - specification
+      href: ../../_csharplang/proposals/csharp-9.0/nullable-reference-types-specification.md
+    - name: Unconstrained type parameter annotations
+      href: ../../_csharplang/proposals/csharp-9.0/unconstrained-type-parameter-annotations.md
+    - name: Improved definite assignment analysis
+      href: ../../_csharplang/proposals/csharp-10.0/improved-definite-assignment.md
+    - name: Recursive pattern matching
+      href: ../../_csharplang/proposals/csharp-8.0/patterns.md
+    - name: Pattern matching enhancements
+      href: ../../_csharplang/proposals/csharp-9.0/patterns3.md
+    - name: Extended property patterns
+      href: ../../_csharplang/proposals/csharp-10.0/extended-property-patterns.md
+    - name: Pattern match span
+      href: ../../_csharplang/proposals/csharp-11.0/pattern-match-span-of-char-on-string.md
+    - name: List patterns
+      href: ../../_csharplang/proposals/csharp-11.0/list-patterns.md
+    - name: Improved interpolated strings
+      href: ../../_csharplang/proposals/csharp-10.0/improved-interpolated-strings.md
+    - name: Constant interpolated strings
+      href: ../../_csharplang/proposals/csharp-10.0/constant_interpolated_strings.md
+    - name: Raw string literals
+      href: ../../_csharplang/proposals/csharp-11.0/raw-string-literal.md
+    - name: Interpolated string newline
+      href: ../../_csharplang/proposals/csharp-11.0/new-line-in-interpolation.md
+    - name: UTF-8 string literals
+      href: ../../_csharplang/proposals/csharp-11.0/utf8-string-literals.md
+    - name: Top-level statements
+      href: ../../_csharplang/proposals/csharp-9.0/top-level-statements.md
+    - name: Extending partial methods
+      href: ../../_csharplang/proposals/csharp-9.0/extending-partial-methods.md
+    - name: Target-typed new expressions
+      href: ../../_csharplang/proposals/csharp-9.0/target-typed-new.md
+    - name: Covariant return types
+      href: ../../_csharplang/proposals/csharp-9.0/covariant-returns.md
+    - name: Global using directive
+      href: ../../_csharplang/proposals/csharp-10.0/GlobalUsingDirective.md
+    - name: File scoped namespaces
+      href: ../../_csharplang/proposals/csharp-10.0/file-scoped-namespaces.md
+    - name: File local types
+      href: ../../_csharplang/proposals/csharp-11.0/file-local-types.md
+    - name: Primary constructors
+      href: ../../_csharplang/proposals/csharp-12.0/primary-constructors.md
+    - name: Alias any type
+      href: ../../_csharplang/proposals/csharp-12.0/using-alias-types.md
+    - name: Readonly instance members
+      href: ../../_csharplang/proposals/csharp-8.0/readonly-instance-members.md
+    - name: Init only setters
+      href: ../../_csharplang/proposals/csharp-9.0/init.md
+    - name: Required members
+      href: ../../_csharplang/proposals/csharp-11.0/required-members.md
+    - name: Records
+      href: ../../_csharplang/proposals/csharp-9.0/records.md
+    - name: Record structs
+      href: ../../_csharplang/proposals/csharp-10.0/record-structs.md
+    - name: Parameterless struct constructors
+      href: ../../_csharplang/proposals/csharp-10.0/parameterless-struct-constructors.md
+    - name: Auto-default struct
+      href: ../../_csharplang/proposals/csharp-11.0/auto-default-structs.md
+    - name: Low-level struct improvements
+      href: ../../_csharplang/proposals/csharp-11.0/low-level-struct-improvements.md
+    - name: Ranges
+      href: ../../_csharplang/proposals/csharp-8.0/ranges.md
+    - name: Extension GetEnumerator in foreach loops
+      href: ../../_csharplang/proposals/csharp-9.0/extension-getenumerator.md
+    - name: Collection expressions
+      href: ../../_csharplang/proposals/csharp-12.0/collection-expressions.md
+    - name: Async streams
+      href: ../../_csharplang/proposals/csharp-8.0/async-streams.md
+    - name: AsyncMethodBuilder override
+      href: ../../_csharplang/proposals/csharp-10.0/async-method-builders.md
+    - name: Static local functions
+      href: ../../_csharplang/proposals/csharp-8.0/static-local-functions.md
+    - name: Attributes on local functions
+      href: ../../_csharplang/proposals/csharp-9.0/local-function-attributes.md
+    - name: Static anonymous functions
+      href: ../../_csharplang/proposals/csharp-9.0/static-anonymous-functions.md
+    - name: Lambda discard parameters
+      href: ../../_csharplang/proposals/csharp-9.0/lambda-discard-parameters.md
+    - name: Function pointers
+      href: ../../_csharplang/proposals/csharp-9.0/function-pointers.md
+    - name: Lambda improvements
+      href: ../../_csharplang/proposals/csharp-10.0/lambda-improvements.md
+    - name: Optional Lambda expression parameters
+      href: ../../_csharplang/proposals/csharp-12.0/lambda-method-group-defaults.md
+    - name: Pattern based using and using declarations
+      href: ../../_csharplang/proposals/csharp-8.0/using.md
+    - name: Nested stackalloc
+      href: ../../_csharplang/proposals/csharp-8.0/nested-stackalloc.md
+    - name: Ref readonly parameters
+      href: ../../_csharplang/proposals/csharp-12.0/ref-readonly-parameters.md
+    - name: Inline arrays
+      href: ../../_csharplang/proposals/csharp-12.0/inline-arrays.md
+    - name: Default interface methods
+      href: ../../_csharplang/proposals/csharp-8.0/default-interface-methods.md
+    - name: Static abstracts in interfaces
+      href: ../../_csharplang/proposals/csharp-11.0/static-abstracts-in-interfaces.md
+    - name: Native sized integers
+      href: ../../_csharplang/proposals/csharp-9.0/native-integers.md
+    - name: Numeric IntPtr
+      href: ../../_csharplang/proposals/csharp-11.0/numeric-intptr.md
+    - name: Checked user-defined operators
+      href: ../../_csharplang/proposals/csharp-11.0/checked-user-defined-operators.md
+    - name: Unsigned right-shift operator
+      href: ../../_csharplang/proposals/csharp-11.0/unsigned-right-shift-operator.md
+    - name: Relaxing shift operator
+      href: ../../_csharplang/proposals/csharp-11.0/relaxing_shift_operator_requirements.md
+    - name: Module initializers
+      href: ../../_csharplang/proposals/csharp-9.0/module-initializers.md
+    - name: Suppress emitting localsinit flag
+      href: ../../_csharplang/proposals/csharp-9.0/skip-localsinit.md
+    - name: Caller argument expression
+      href: ../../_csharplang/proposals/csharp-10.0/caller-argument-expression.md
+    - name: "Enhanced #line directives"
+      href: ../../_csharplang/proposals/csharp-10.0/enhanced-line-directives.md
+    - name: Extended nameof scope
+      href: ../../_csharplang/proposals/csharp-11.0/extended-nameof-scope.md
+    - name: Target-typed conditional expression
+      href: ../../_csharplang/proposals/csharp-9.0/target-typed-conditional-expression.md
+    - name: Generic attributes
+      href: ../../_csharplang/proposals/csharp-11.0/generic-attributes.md
+    - name: Experimental attribute
+      href: ../../_csharplang/proposals/csharp-12.0/experimental-attribute.md

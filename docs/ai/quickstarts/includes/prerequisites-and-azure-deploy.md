@@ -20,7 +20,7 @@ Ensure that you follow the [Prerequisites](#prerequisites) to have access to Azu
 1. From a terminal or command prompt, navigate to the _Getting-Started_ directory.
 1. This provisions the Azure OpenAI resources. It may take several minutes to create the Azure OpenAI service and deploy the model.
 
-   ```azuredeveloper
+   ```azdeveloper
    azd up
    ```
 

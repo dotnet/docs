@@ -6,7 +6,7 @@ ms.topic: quickstart
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 author: fboucher
 ms.author: frbouche
-# CustomerIntent: As a .NET developer new to Azure OpenAI, I want deploy and use sample code to interact to learn from the sample code.
+# CustomerIntent: As a .NET developer new to Azure OpenAI, I want deploy and use sample code and data to interact to learn from the sample code.
 ---
 
 # Get insight about your data from an .NET Azure AI chat app

@@ -9,8 +9,8 @@ ms.topic: include
 
 - .NET 8.0 SDK - [Install the .NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
 - An Azure subscription - [Create one for free](https://azure.microsoft.com/free)
-- Azure Developer CLI - [Install or update the Azure Developer CLI](https://learn.microsoft.com/azure/developer/azure-developer-cli/install-azd)
-- Access to [Azure OpenAI service](https://learn.microsoft.com/azure/ai-services/openai/overview#how-do-i-get-access-to-azure-openai).
+- Azure Developer CLI - [Install or update the Azure Developer CLI](/azure/developer/azure-developer-cli/install-azd)
+- Access to [Azure OpenAI service](/azure/ai-services/openai/overview#how-do-i-get-access-to-azure-openai).
 
 ## Deploy the Azure resources
 

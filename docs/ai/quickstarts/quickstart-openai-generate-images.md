@@ -9,7 +9,7 @@ ms.author: frbouche
 # CustomerIntent: As a .NET developer new to Azure OpenAI, I want deploy and use sample code to interact to learn how to generate images from the sample code.
 ---
 
-# Build an Azure AI chat app with .NET
+# Generate images using Azure AI with .NET
 
 Get started with the .NET Azure OpenAI SDK by creating a simple .NET 8 console chat application. The application will run locally and use the OpenAI `dell-e-3` model to generate postal card and invite your friends for a hike! Follow these steps to provision Azure OpenAI and learn how to use the .NET Azure OpenAI SDK.
 

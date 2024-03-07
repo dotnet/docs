@@ -1,0 +1,54 @@
+id:
+name: GitOps.PullRequestIssueManagement
+description: GitOps.PullRequestIssueManagement primitive
+owner:
+resource: repository
+disabled: false
+where:
+configuration:
+  resourceManagementConfiguration:
+    scheduledSearches:
+    - description: Label doc-bug issues with okr-health (scheduled search)
+      frequencies:
+      - hourly:
+          hour: 3
+      filters:
+      - isIssue
+      - isOpen
+      - hasLabel:
+          label: doc-bug
+      - isNotLabeledWith:
+          label: okr-health
+      actions:
+      - addLabel:
+          label: okr-health
+    eventResponderTasks:
+    - if:
+      - payloadType: Pull_Request
+      then:
+      - inPrLabel:
+          label: in-pr
+      description: Add in-pr label to issues
+    - if:
+      - payloadType: Pull_Request
+      then:
+      - labelSync:
+          pattern: okr-
+      - labelSync:
+          pattern: ':checkered_flag: Release'
+      description: Synchronize OKR and release labels from PRs to closing issues
+    - if:
+      - payloadType: Issues
+      - or:
+        - hasLabel:
+            label: doc-bug
+        - titleContains:
+            pattern: freshness
+            isRegex: False
+        - titleContains:
+            pattern: out( |-)of( |-)date
+            isRegex: True
+      then:
+      - addLabel:
+          label: okr-health
+      description: Label issues with okr-health (event-based)

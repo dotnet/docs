@@ -173,10 +173,10 @@ You can provide MSBuild properties to the `dotnet pack` command for the packing 
   dotnet pack -p:TargetFrameworks=net45
   ```
 
-- Pack the project and use a specific runtime (Windows 10) for the restore operation:
+- Pack the project and use a specific runtime (Windows) for the restore operation:
 
   ```dotnetcli
-  dotnet pack --runtime win10-x64
+  dotnet pack --runtime win-x64
   ```
 
 - Pack the project using a *.nuspec* file:

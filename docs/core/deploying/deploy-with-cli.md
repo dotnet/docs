@@ -124,7 +124,7 @@ Publishing an FDE creates an app that automatically rolls-forward to the latest 
 
 Whenever you use the `-r` switch, the output folder path changes to: `./bin/<BUILD-CONFIGURATION>/<TFM>/<RID>/publish/`
 
-If you use the [example app](#sample-app), run `dotnet publish -f net6.0 -r win10-x64 --self-contained false`. This command creates the following executable: `./bin/Debug/net6.0/win10-x64/publish/apptest1.exe`
+If you use the [example app](#sample-app), run `dotnet publish -f net6.0 -r win-x64 --self-contained false`. This command creates the following executable: `./bin/Debug/net6.0/win-x64/publish/apptest1.exe`
 
 > [!NOTE]
 > You can reduce the total size of your deployment by enabling **globalization invariant mode**. This mode is useful for applications that are not globally aware and that can use the formatting conventions, casing conventions, and string comparison and sort order of the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture). For more information about **globalization invariant mode** and how to enable it, see [.NET Globalization Invariant Mode](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md).

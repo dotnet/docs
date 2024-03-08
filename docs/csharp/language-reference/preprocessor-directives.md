@@ -47,7 +47,7 @@ Although the compiler doesn't have a separate preprocessor, the directives descr
 
 The `#nullable` preprocessor directive sets the *nullable annotation context* and *nullable warning context*. This directive controls whether nullable annotations have effect, and whether nullability warnings are given. Each context is either *disabled* or *enabled*.
 
-Both contexts can be specified at the project level (outside of C# source code) adding the [`Nullable `](../compiler-options/language.md#nullable) element to the `PropertyGroup` element. The `#nullable` directive controls the annotation and warning contexts and takes precedence over the project-level settings. A directive sets the context(s) it controls until another directive overrides it, or until the end of the source file.
+Both contexts can be specified at the project level (outside of C# source code) adding the [`Nullable`](./compiler-options/language.md#nullable) element to the `PropertyGroup` element. The `#nullable` directive controls the annotation and warning contexts and takes precedence over the project-level settings. A directive sets the context(s) it controls until another directive overrides it, or until the end of the source file.
 
 The effect of the directives is as follows:
 

@@ -3,7 +3,7 @@ title: HttpClient guidelines for .NET
 description: Learn about using HttpClient instances to send HTTP requests and how you can manage clients using IHttpClientFactory in your .NET apps.
 author: gewarren
 ms.author: gewarren
-ms.date: 08/14/2023
+ms.date: 03/08/2024
 ---
 
 # Guidelines for using HttpClient
@@ -71,7 +71,10 @@ var retryPipeline = new ResiliencePipelineBuilder<HttpResponseMessage>()
     })
     .Build();
 
-var socketHandler = new SocketsHttpHandler { PooledConnectionLifetime = TimeSpan.FromMinutes(15) };
+var socketHandler = new SocketsHttpHandler
+{
+    PooledConnectionLifetime = TimeSpan.FromMinutes(15)
+};
 var resilienceHandler = new ResilienceHandler(retryPipeline)
 {
     InnerHandler = socketHandler,
@@ -87,6 +90,9 @@ The preceding code:
 - Defines a pooled connection lifetime of fifteen minutes for the `socketHandler`.
 - Passes the `socketHandler` to the `resilienceHandler` with the retry logic.
 - Instantiates an `HttpClient` given the `resilienceHandler`.
+
+> [!IMPORTANT]
+> The `Microsoft.Extensions.Http.Resilience` library is currently marked as [experimental](../../../csharp/language-reference/attributes/general.md#experimental-attribute) and it may change in the future.
 
 ## See also
 

@@ -53,17 +53,6 @@ Interfaces declared directly within a namespace can be `public` or `internal` an
 
 A [`delegate`](../delegates/index.md) type declare directly in a namespace has `internal` access by default.
 
-The following table shows the default access for different types when declared directly in a `namespace`:
-
-|  Type                                             | Default access |
-| ------------------------------------------------- | :------------: |
-| `class`                                           |    internal    |
-| `struct`                                          |    internal    |
-| `interface`                                       |    internal    |
-| `enum`                                            |    internal    |
-| `interface` members                               |     public     |
-| Anonymous types                                   |    internal    |
-
 For more information about access modifiers, see the [Accessibility Levels](../../language-reference/keywords/accessibility-levels.md) page.
 
 ## Member accessibility

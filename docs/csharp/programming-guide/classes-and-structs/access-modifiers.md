@@ -90,7 +90,6 @@ For more details see the [Accessibility Levels](../../language-reference/keyword
 ## See also
 
 - [Specify modifier order (style rule IDE0036)](../../../fundamentals/code-analysis/style-rules/ide0036.md)
-- [C# Programming Guide](../index.md)
 - [The C# type system](../../fundamentals/types/index.md)
 - [Interfaces](../../fundamentals/types/interfaces.md)
 - [Accessibility Levels](../../language-reference/keywords/accessibility-levels.md)

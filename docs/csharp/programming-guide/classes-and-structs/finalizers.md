@@ -86,6 +86,5 @@ For more information, see the [Finalizers](~/_csharpstandard/standard/classes.md
 ## See also
 
 - <xref:System.IDisposable>
-- [C# Programming Guide](../index.md)
 - [Constructors](./constructors.md)
 - [Garbage Collection](../../../standard/garbage-collection/index.md)

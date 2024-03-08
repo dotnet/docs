@@ -132,7 +132,6 @@ For a class library that you implemented, you shouldn't use extension methods to
 
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Parallel Programming Samples (these include many example extension methods)](/samples/browse/?products=dotnet&term=parallel)
 - [Lambda Expressions](../../language-reference/operators/lambda-expressions.md)
 - [Standard Query Operators Overview](../../linq/standard-query-operators/index.md)

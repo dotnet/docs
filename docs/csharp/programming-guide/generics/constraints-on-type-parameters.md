@@ -155,7 +155,6 @@ The preceding syntax would require implementers to use [explicit interface imple
 ## See also
 
 - <xref:System.Collections.Generic>
-- [C# Programming Guide](../index.md)
 - [Introduction to Generics](../../fundamentals/types/generics.md)
 - [Generic Classes](./generic-classes.md)
 - [new Constraint](../../language-reference/keywords/new-constraint.md)

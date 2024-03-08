@@ -22,6 +22,5 @@ Indexers are like properties. Except for the differences shown in the following 
   
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Indexers](./index.md)
 - [Properties](../classes-and-structs/properties.md)

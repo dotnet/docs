@@ -48,7 +48,6 @@ Employee name: Hazem Abolrous
 
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Properties](./properties.md)
 - [Using Properties](./using-properties.md)
 - [Comparison Between Properties and Indexers](../indexers/comparison-between-properties-and-indexers.md)

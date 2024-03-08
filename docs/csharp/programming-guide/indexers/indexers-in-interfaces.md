@@ -58,7 +58,6 @@ implements the indexer on the `ICitizen` interface.
 
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Indexers](./index.md)
 - [Properties](../classes-and-structs/properties.md)
 - [Interfaces](../../fundamentals/types/interfaces.md)

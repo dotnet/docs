@@ -52,6 +52,5 @@ The latest C# standard draft, as created by the ECMA committee. The feature spec
 
  [Using the Visual Studio development environment for C#](/visualstudio/get-started/csharp)  
  Provides links to conceptual and task topics that describe the IDE and editor.  
-  
- [C# programming guide](../programming-guide/index.md)  
+ 
  Includes information about how to use the C# programming language.

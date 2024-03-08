@@ -32,5 +32,4 @@ Note the two pairs of braces in each element of the collection in the first decl
 
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Object and Collection Initializers](./object-and-collection-initializers.md)

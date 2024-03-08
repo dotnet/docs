@@ -134,7 +134,6 @@ For more information, see [Partial types](~/_csharpstandard/standard/classes.md#
 
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Classes](../../fundamentals/types/classes.md)
 - [Structure types](../../language-reference/builtin-types/struct.md)
 - [Interfaces](../../fundamentals/types/interfaces.md)

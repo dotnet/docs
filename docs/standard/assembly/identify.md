@@ -60,6 +60,6 @@ This example shows how to determine if a file is an assembly using the <xref:Sys
 ## See also
 
 - <xref:System.Reflection.AssemblyName>
-- [C# programming guide](../../csharp/programming-guide/index.md)
+- [C# programming guide](../../csharp/programming-guide/concepts/index.md)
 - [Programming concepts (Visual Basic)](../../visual-basic/programming-guide/concepts/index.md)
 - [Assemblies in .NET](index.md)

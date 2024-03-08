@@ -1,23 +1,23 @@
 ---
-title: Quickstart - Build an Azure AI chat app with .NET
-description: Create a simple chat app using the .NET Azure OpenAI SDK.
+title: Quickstart - Get insight about your data from an .NET Azure AI chat app
+description: Create a simple chat app using your data and the .NET Azure OpenAI SDK.
 ms.date: 03/04/2024
 ms.topic: quickstart
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 author: fboucher
 ms.author: frbouche
-# CustomerIntent: As a .NET developer new to Azure OpenAI, I want deploy and use sample code to interact to learn from the sample code.
+# CustomerIntent: As a .NET developer new to Azure OpenAI, I want deploy and use sample code and data to interact to learn from the sample code.
 ---
 
-# Build an Azure AI chat app with .NET
+# Get insight about your data from an .NET Azure AI chat app
 
-Get started with the .NET Azure OpenAI SDK by creating a simple .NET 8 console chat application. The application will run locally and use the OpenAI `gpt-35-turbo` model deployed into an Azure OpenAI account. Follow these steps to provision Azure OpenAI and learn how to use the .NET Azure OpenAI SDK.
+Get started with the .NET Azure OpenAI with a `gpt-35-turbo` model, from a simple .NET 8.0 console application. Use the AI model to get analytics and information about your previous hikes. It consists of a simple console application, running locally, that will read the file `hikes.md` and send request to an Azure OpenAI service deployed in your Azure subscription and provide the result in the console. Follow these steps to provision Azure OpenAI and learn how to use the .NET Azure OpenAI SDK.
 
 [!INCLUDE [download-alert](includes/prerequisites-and-azure-deploy.md)]
 
-## Trying HikerAI sample
+## Try "Chatting About My Previous Hikes" sample
 
-1. From a terminal or command prompt, navigate to the `02-HikerAI` directory.
+1. From a terminal or command prompt, navigate to the `03-ChattingAboutMyHikes` directory.
 2. It's now time to try the console application. Type in the following to run the app:
 
     ```dotnetcli
@@ -26,7 +26,7 @@ Get started with the .NET Azure OpenAI SDK by creating a simple .NET 8 console c
 
     If you get an error message the Azure OpenAI resources may not have finished deploying. Wait a couple of minutes and try again.
 
-## Understanding the code
+## Explore the code
 
 Our application uses the `Azure.AI.OpenAI` client SDK, which is available on [NuGet](https://www.nuget.org/packages/Azure.AI.OpenAI), to send and receive requests to an Azure OpenAI service deployed in Azure.
 
@@ -50,7 +50,10 @@ The entire application is contained within the **Program.cs** file. The first se
 
 ```csharp
 // == Retrieve the local secrets saved during the Azure deployment ==========
-var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
+var config = new ConfigurationBuilder()
+    .AddUserSecrets<Program>()
+    .Build();
+
 string openAIEndpoint = config["AZURE_OPENAI_ENDPOINT"];
 string openAIDeploymentName = config["AZURE_OPENAI_GPT_NAME"];
 string openAiKey = config["AZURE_OPENAI_KEY"];
@@ -60,21 +63,15 @@ var endpoint = new Uri(openAIEndpoint);
 var credentials = new AzureKeyCredential(openAiKey);
 ```
 
-Once the `OpenAIClient` client is created, we provide more context to the model by adding a system prompt. This instructs the model how you'd like it to act during the conversation.
+Once the `OpenAIClient` client is created, we read the content of the file `hikes.md` and use it to provide more context to the model by adding a system prompt. This instructs the model how you'd like it to act during the conversation.
 
 ```csharp
 var systemPrompt = 
 """
-You are a hiking enthusiast who helps people discover fun hikes in their area. You are upbeat and friendly. 
-You introduce yourself when first saying hello. When helping people out, you always ask them 
-for this information to inform the hiking recommendation you provide:
+You are upbeat and friendly. You introduce yourself when first saying hello. 
+Provide a short answer only based on the user hiking records below:  
 
-1. Where they are located
-2. What hiking intensity they are looking for
-
-You will then provide three suggestions for nearby hikes that vary in length after you get that information. 
-You will also share an interesting fact about the local nature on the hikes when making a recommendation.
-""";
+""" + markdown;
 
 completionOptions.Messages.Add(new ChatRequestSystemMessage(systemPrompt));
 ```
@@ -86,7 +83,6 @@ To have the model generate a response based off the system prompt and the user r
 ```csharp
 string userGreeting = """
 Hi! 
-Apparently you can help me find a hike that I will like?
 """;
 
 completionOptions.Messages.Add(new ChatRequestUserMessage(userGreeting));
@@ -98,9 +94,20 @@ Console.WriteLine($"\n\nAI >>> {assistantResponse.Content}");
 completionOptions.Messages.Add(new ChatRequestAssisstantMessage(assistantResponse.Content)); 
 ```
 
-To maintain the chat history or context, make sure you add the response from the model as a `ChatRequestAssistantMessage`.
+To maintain the chat history or context, make sure you add the response from the model as a `ChatRequestAssistantMessage`. It's time to make our user request about our data again using the `ChatRequestUserMessage` and `GetChatCompletionsAsync` function.
 
-Customize the system prompt and user message to see how the model responds to help you find a hike that you'll like.
+```csharp
+var hikeRequest = 
+"""
+I would like to know the ration of hike I did in Canada compare to hikes done in other countries.
+""";
+
+Console.WriteLine($"\n\nUser >>> {hikeRequest}");
+completionOptions.Messages.Add(new ChatRequestUserMessage(hikeRequest));
+response = await openAIClient.GetChatCompletionsAsync(completionOptions);
+```
+
+Customize the system prompt and change the request, asking for different questions (ex: How many times did you hiked when it was raining? How many times did you hiked in 2021? etc.) to see how the model responds.
 
 ## Clean up resources
 
@@ -112,5 +119,5 @@ azd down
 
 ## Next steps
 
-- [Quickstart - Get insight about your data from an .NET Azure AI chat app](quickstart-ai-chat-with-data.md)
+- [Quickstart - Generate images using Azure AI with .NET](quickstart-openai-generate-images.md)
 - [Generate text and conversations with .NET and Azure OpenAI Completions](/training/modules/open-ai-dotnet-text-completions/)

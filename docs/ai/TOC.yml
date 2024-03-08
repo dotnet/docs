@@ -2,8 +2,14 @@
   href: index.yml
 - name: Quickstarts
   items:
+  - name: Summarize text using Azure AI chat app with .NET
+    href: ./quickstarts/quickstart-openai-summarize-text.md
   - name: Build an Azure AI chat app with .NET
     href: ./quickstarts/get-started-azure-openai.md
+  - name: Build an Azure AI chat app with .NET about your data
+    href: ./quickstarts/quickstart-ai-chat-with-data.md
+  - name: Generate images using Azure AI with .NET
+    href: ./quickstarts/quickstart-openai-generate-images.md
 - name: Concepts
   items:
   - name: Develop with Azure AI services

@@ -22,7 +22,7 @@ ms.custom: devx-track-java, devx-track-java-ai
 
 #### [Codespaces (recommended)](#tab/github-codespaces)
 
-* GitHub account
+* Only a [GitHub account](https://www.github.com/login) is required to use CodeSpaces
 
 #### [Visual Studio Code](#tab/visual-studio-code)
 

@@ -8,13 +8,14 @@ on:
   pull_request:
     types: [opened, edited, reopened]
 
+permissions:
+  issues: write
+  pull-requests: write
+
 jobs:
   apply-filter:
     name: Apply profanity filter
     runs-on: ubuntu-latest
-    permissions:
-      issues: write
-      pull-requests: write
 
     steps:
     - name: Profanity filter

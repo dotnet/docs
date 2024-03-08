@@ -188,7 +188,7 @@ For more information, see [Logging in .NET Core and ASP.NET Core](/aspnet/core/f
 
 ## Logging using Azure.Monitor.OpenTelemetry.AspNetCore
 
-[Azure Monitor OpenTelemetry Distro](https://www.nuget.org/packages/Azure.Monitor.OpenTelemetry.AspNetCore),starting with version `1.2.0`, supports capturing logs coming from Azure client libraries.
+[Azure Monitor OpenTelemetry Distro](https://www.nuget.org/packages/Azure.Monitor.OpenTelemetry.AspNetCore), starting with version `1.2.0`, supports capturing logs coming from Azure client libraries.
 You can control logging using any of the configuration options discussed in [Logging in .NET Core and ASP.NET Core](/aspnet/core/fundamentals/logging/).
 
 Using the Azure Service Bus library as an example, complete the following steps:

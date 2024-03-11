@@ -133,7 +133,7 @@ namespace Generics
     }
 
     // <Snippet10>
-    class EmployeeList<T> where T : Employee, System.Collections.Generics.IList<T>, IDisposable, new()
+    class EmployeeList<T> where T : Employee, System.Collections.Generic.IList<T>, IDisposable, new()
     {
         // ...
     }

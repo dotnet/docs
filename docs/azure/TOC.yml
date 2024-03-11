@@ -47,6 +47,18 @@
   items: 
   - name: Develop with Azure AI services
     href: ./ai/azure-ai-for-dotnet-developers.md
+  - name: Quickstarts
+    items:
+      - name: Summarize text using Azure AI chat app with .NET
+        href: ./ai/quickstarts/quickstart-openai-summarize-text.md
+      - name: Build an Azure AI chat app with .NET
+        href: ./ai/quickstarts/get-started-azure-openai.md
+      - name: Build an Azure AI chat app with .NET about your data
+        href: ./ai/quickstarts/quickstart-ai-chat-with-data.md
+      - name: Extend Azure AI using Tools and execute a local Function with .NET
+        href: ./ai/quickstarts/quickstart-azure-openai-tool.md
+      - name: Generate images using Azure AI with .NET
+        href: ./ai/quickstarts/quickstart-openai-generate-images.md
   - name: Get started with the .NET enterprise chat sample
     href: ./ai/get-started-app-chat-template.md
 - name: Azure SDK for .NET

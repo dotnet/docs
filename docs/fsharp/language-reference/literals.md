@@ -37,13 +37,26 @@ The following table shows the literal types in F#. Characters that represent dig
 
 ## Named literals
 
-Values that are intended to be constants can be marked with the [Literal](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-literalattribute.html) attribute. This attribute has the effect of causing a value to be compiled as a constant.
+Values that are intended to be constants can be marked with the [Literal](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-literalattribute.html) attribute.
 
-Named literals are useful for:
+This attribute has the effect of causing a value to be compiled as a constant: Both `x` and `y` below are immutable values, but `x` is assigned during run-time (but **not** evaluated lazily), whereas `y` is assigned during compile-time.
 
-- Pattern matching without a `when` clause.
-- Attribute arguments.
-- Static type provider arguments.
+```fsharp
+let x = "a" + "b" // assigned at run-time
+
+[<Literal>]
+let y = "a" + "b" // assigned at compile-time
+```
+
+For example, this distinction matters when calling an [external function](functions/external-functions.md), because `DllImport` is an attribute that needs to know the value of `myDLL` during compilation. Without the `[<Literal>]` declaration, this code would fail to compile:
+
+```fsharp
+[<Literal>]
+let myDLL = "foo.dll"
+
+[<DllImport(myDLL, CallingConvention = CallingConvention.Cdecl)>]
+extern void HelloWorld()
+```
 
 In pattern matching expressions, identifiers that begin with lowercase characters are always treated as variables to be bound, rather than as literals, so you should generally use initial capitals when you define literals.
 
@@ -63,6 +76,12 @@ let Literal2 = 1 ||| 64
 [<Literal>]
 let Literal3 = System.IO.FileAccess.Read ||| System.IO.FileAccess.Write
 ```
+
+Named literals are useful for:
+
+- Pattern matching without a `when` clause.
+- Attribute arguments.
+- Static type provider arguments.
 
 ## Remarks
 

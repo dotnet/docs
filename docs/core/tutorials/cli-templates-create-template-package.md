@@ -68,7 +68,7 @@ Template packages are represented by a NuGet package (_.nupkg_) file. And, like 
 
 Normally you use a C# project file to compile code and produce a binary. However, the project can also be used to generate a template package. By changing the settings of the _.csproj_, you can prevent it from compiling any code and instead include all the assets of your templates as resources. When this project is built, it produces a template package NuGet package.
 
-The package you're going to generate will include the [item] and(cli-templates-create-item-template.md) and [project](cli-templates-create-project-template.md) templates previously created.
+The package you're going to generate will include the [item](cli-templates-create-item-template.md) and [project](cli-templates-create-project-template.md) templates previously created.
 
 ::: zone pivot="dotnet-8-0"
 

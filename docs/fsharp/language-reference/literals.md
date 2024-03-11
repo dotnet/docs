@@ -39,13 +39,13 @@ The following table shows the literal types in F#. Characters that represent dig
 
 Values that are intended to be constants can be marked with the [Literal](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-literalattribute.html) attribute.
 
-This attribute has the effect of causing a value to be compiled as a constant: Both `x` and `y` below are immutable values, but `x` is assigned during run-time (but **not** evaluated lazily), whereas `y` is assigned during compile-time.
+This attribute has the effect of causing a value to be compiled as a constant. In the following example, both `x` and `y` below are immutable values, but `x` is evaluated at run-time, whereas `y` is a compile-time constant.
 
 ```fsharp
-let x = "a" + "b" // assigned at run-time
+let x = "a" + "b" // evaluated at run-time
 
 [<Literal>]
-let y = "a" + "b" // assigned at compile-time
+let y = "a" + "b" // evaluated at compile-time
 ```
 
 For example, this distinction matters when calling an [external function](functions/external-functions.md), because `DllImport` is an attribute that needs to know the value of `myDLL` during compilation. Without the `[<Literal>]` declaration, this code would fail to compile:
@@ -77,13 +77,13 @@ let Literal2 = 1 ||| 64
 let Literal3 = System.IO.FileAccess.Read ||| System.IO.FileAccess.Write
 ```
 
+## Remarks
+
 Named literals are useful for:
 
 - Pattern matching without a `when` clause.
 - Attribute arguments.
 - Static type provider arguments.
-
-## Remarks
 
 Unicode strings can contain explicit encodings that you can specify by using `\u` followed by a 16-bit hexadecimal code (0000 - FFFF), or UTF-32 encodings that you can specify by using `\U` followed by a 32-bit hexadecimal code that represents any Unicode code point (00000000 - 0010FFFF).
 

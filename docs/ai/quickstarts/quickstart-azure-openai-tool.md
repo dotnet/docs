@@ -15,7 +15,7 @@ Get started with the .NET Azure OpenAI SDK by creating a simple .NET 8 console c
 
 [!INCLUDE [download-alert](includes/prerequisites-and-azure-deploy.md)]
 
-## Trying HikerAI Pro sample
+## Try HikerAI Pro sample
 
 1. From a terminal or command prompt, navigate to the `04-HikerAIPro` directory.
 2. It's now time to try the console application. Type in the following to run the app:
@@ -26,7 +26,7 @@ Get started with the .NET Azure OpenAI SDK by creating a simple .NET 8 console c
 
     If you get an error message the Azure OpenAI resources may not have finished deploying. Wait a couple of minutes and try again.
 
-## Understanding the code
+## Understand the code
 
 Our application uses the `Azure.AI.OpenAI` client SDK, which is available on [NuGet](https://www.nuget.org/packages/Azure.AI.OpenAI), to send and receive requests to an Azure OpenAI service deployed in Azure.
 

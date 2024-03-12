@@ -25,7 +25,6 @@ You can use implicitly typed local variables whenever you want the compiler to d
   
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Extension Methods](./extension-methods.md)
 - [LINQ (Language-Integrated Query)](../../linq/index.md)
 - [LINQ in C#](../../linq/index.md)

@@ -88,7 +88,6 @@ For more information, see [Instance constructors](~/_csharpstandard/standard/cla
 
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [The C# type system](../../fundamentals/types/index.md)
 - [Constructors](./constructors.md)
 - [Finalizers](./finalizers.md)

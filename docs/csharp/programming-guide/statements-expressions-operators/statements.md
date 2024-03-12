@@ -85,6 +85,5 @@ For more information, see the [Statements](~/_csharpstandard/standard/statements
 
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Statement keywords](../../language-reference/keywords/statement-keywords.md)
 - [C# operators and expressions](../../language-reference/operators/index.md)

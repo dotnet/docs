@@ -57,6 +57,5 @@ class GenericList2<T>
 ## See also
 
 - <xref:System.Collections.Generic>
-- [C# Programming Guide](../index.md)
 - [Introduction to Generics](../../fundamentals/types/generics.md)
 - [Methods](../classes-and-structs/methods.md)

@@ -30,6 +30,5 @@ C# Generics and C++ templates are both language features that provide support fo
 
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Introduction to Generics](../../fundamentals/types/generics.md)
 - [Templates](/cpp/cpp/templates-cpp)

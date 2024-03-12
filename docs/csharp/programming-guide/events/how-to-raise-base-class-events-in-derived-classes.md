@@ -22,7 +22,6 @@ The following simple example shows the standard way to declare events in a base 
   
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Events](./index.md)
 - [Delegates](../delegates/index.md)
 - [Access Modifiers](../classes-and-structs/access-modifiers.md)

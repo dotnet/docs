@@ -73,6 +73,5 @@ You can declare delegates using any of the following methods:
   
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Events](../events/index.md)
 - [Delegates](./index.md)

@@ -23,5 +23,4 @@ You can use extension methods to add functionality specific to a particular enum
   
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Extension Methods](./extension-methods.md)

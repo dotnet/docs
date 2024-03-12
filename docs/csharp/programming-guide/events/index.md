@@ -51,6 +51,5 @@ For more information, see [Events](~/_csharpstandard/standard/classes.md#158-eve
 ## See also
 
 - <xref:System.EventHandler>
-- [C# Programming Guide](../index.md)
 - [Delegates](../delegates/index.md)
 - [Creating Event Handlers in Windows Forms](/dotnet/desktop/winforms/creating-event-handlers-in-windows-forms)

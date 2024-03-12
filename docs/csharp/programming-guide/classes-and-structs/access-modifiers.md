@@ -33,9 +33,9 @@ The following examples demonstrate how to specify access modifiers on a type and
 
 [!code-csharp[PublicAccess](~/samples/snippets/csharp/objectoriented/accessmodifiers.cs#PublicAccess)]
 
-Not all access modifiers are valid for all types or members in all contexts. In some cases, the accessibility the containing type constrains by the accessibility of its members.
+Not all access modifiers are valid for all types or members in all contexts. In some cases, the accessibility of the containing type constrains the accessibility of its members.
 
-When one declaration of a [partial class or partial method](./partial-classes-and-methods.md) doesn't declare its accessibility, it has the accessibility of the other declaration. The compiler generates an error if multiple declarations for the partial class or method declare different accessibility.
+When one declaration of a [partial class or partial method](./partial-classes-and-methods.md) doesn't declare its accessibility, it has the accessibility of the other declaration. The compiler generates an error if multiple declarations for the partial class or method declare different accessibilities.
 
 ## Class and struct accessibility
 
@@ -51,21 +51,21 @@ You can enable specific other assemblies to access your internal types by using 
 
 Interfaces declared directly within a namespace can be `public` or `internal` and, just like classes and structs, interfaces default to `internal` access. Interface members are `public` by default because the purpose of an interface is to enable other types to access a class or struct. Interface member declarations might include any access modifier. You use access modifiers on `interface` members to provide a common implementation needed by all implementors of an interface.
 
-A [`delegate`](../delegates/index.md) type declare directly in a namespace has `internal` access by default.
+A [`delegate`](../delegates/index.md) type declared directly in a namespace has `internal` access by default.
 
 For more information about access modifiers, see the [Accessibility Levels](../../language-reference/keywords/accessibility-levels.md) page.
 
 ## Member accessibility
 
-Members of a `class` or `struct` (including nested classes, and structs) can be declared with any of the six types of access. Struct members can't be declared as `protected`, `protected internal`, or `private protected` because structs don't support inheritance.
+Members of a `class` or `struct` (including nested classes and structs) can be declared with any of the six types of access. Struct members can't be declared as `protected`, `protected internal`, or `private protected` because structs don't support inheritance.
 
-Normally, the accessibility of a member isn't greater than the accessibility of the type that contains it. However, a `public` member of an internal class might be accessible from outside the assembly if the member implements interface methods or overrides virtual methods that are defined in a public base class.
+Normally, the accessibility of a member isn't greater than the accessibility of the type that contains it. However, a `public` member of an `internal` class might be accessible from outside the assembly if the member implements interface methods or overrides virtual methods that are defined in a public base class.
 
 The type of any member field, property, or event must be at least as accessible as the member itself. Similarly, the return type and the parameter types of any method, indexer, or delegate must be at least as accessible as the member itself. For example, you can't have a `public` method `M` that returns a class `C` unless `C` is also `public`. Likewise, you can't have a `protected` property of type `A` if `A` is declared as `private`.
 
 User-defined operators must always be declared as `public` and `static`. For more information, see [Operator overloading](../../language-reference/operators/operator-overloading.md).
 
-To set the access level for a `class`, or `struct` member, add the appropriate keyword to the member declaration, as shown in the following example.
+To set the access level for a `class` or `struct` member, add the appropriate keyword to the member declaration, as shown in the following example.
 
 [!code-csharp[MethodAccess](~/samples/snippets/csharp/objectoriented/accessmodifiers.cs#MethodAccess)]
 

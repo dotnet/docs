@@ -33,7 +33,7 @@ Test class should have at least one test method or be `static` with method(s) ma
 
 ## How to fix violations
 
-Ensure that the test class has test method or be `static` with method(s) marked by `[AssemblyInitialization]` and/or `[AssemblyCleanup].
+Ensure that the test class has test method or be `static` with method(s) marked by `[AssemblyInitialization]` and/or `[AssemblyCleanup]`.
 
 ## When to suppress warnings
 

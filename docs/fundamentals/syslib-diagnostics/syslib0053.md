@@ -2,6 +2,8 @@
 title: SYSLIB0053 warning - AesGcm should indicate the required tag size
 description: Learn about the obsoletion of AesGcm constructors that generates compile-time warning SYSLIB0053.
 ms.date: 06/08/2023
+f1_keywords:
+  - syslib0053
 ---
 # SYSLIB0053: AesGcm should indicate the required tag size
 

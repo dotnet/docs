@@ -2,6 +2,8 @@
 title: SYSLIB1037 warning
 description: Learn about the diagnostic that generates compile-time warning SYSLIB1037.
 ms.date: 05/07/2021
+f1_keywords:
+  - syslib1037
 ---
 
 # SYSLIB1037: `System.Text.Json` source generator encountered a type with init-only properties which are not supported for deserialization

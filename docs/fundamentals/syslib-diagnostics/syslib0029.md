@@ -2,6 +2,8 @@
 title: SYSLIB0029 warning
 description: Learn about the obsoletion of ProduceLegacyHmacValues that generates compile-time warning SYSLIB0029.
 ms.date: 07/16/2021
+f1_keywords:
+  - syslib0029
 ---
 # SYSLIB0029: ProduceLegacyHmacValues is obsolete
 

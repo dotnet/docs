@@ -2,6 +2,8 @@
 title: SYSLIB0036 warning - Regex.CompileToAssembly is obsolete
 description: Learn about the obsoletion of the Regex.CompileToAssembly method that generates compile-time warning SYSLIB0036.
 ms.date: 01/13/2022
+f1_keywords:
+  - syslib0036
 ---
 # SYSLIB0036: Regex.CompileToAssembly is obsolete
 
@@ -18,10 +20,10 @@ Use the <xref:System.Text.RegularExpressions.GeneratedRegexAttribute> attribute,
   // which enables it to start up and run more quickly.
   [GeneratedRegex("abc|def", RegexOptions.IgnoreCase)]
   private static partial Regex MyRegex();
-  
+
   // ...
-  
-  // Use the regular expression 
+
+  // Use the regular expression
   if (MyRegex().IsMatch(text) { ... }
   ```
 

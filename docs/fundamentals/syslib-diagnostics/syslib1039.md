@@ -2,6 +2,8 @@
 title: SYSLIB1039 error
 description: Learn about the diagnostic that generates compile-time error SYSLIB1039.
 ms.date: 10/26/2023
+f1_keywords:
+  - syslib1039
 ---
 
 # SYSLIB1039: JsonSourceGenerator encountered a `JsonDerivedTypeAttribute` annotation with `JsonSourceGenerationMode.Serialization` enabled

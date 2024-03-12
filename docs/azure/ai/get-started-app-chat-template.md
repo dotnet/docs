@@ -34,7 +34,7 @@ Other articles in the collection include:
 
 ## Architectural overview
 
-In this sample application, we use a fictitious company called Contoso Electronics, and the experience allows its employees to ask questions about the benefits, internal policies, as well as job descriptions and roles.
+In this sample application, a fictitious company called Contoso Electronics provides the chat app experience to its employees to ask questions about the benefits, internal policies, as well as job descriptions and roles.
 
 The architecture of the chat app is shown in the following diagram:
 

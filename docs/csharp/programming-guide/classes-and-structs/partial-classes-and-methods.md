@@ -9,15 +9,15 @@ helpviewer_keywords:
 ---
 # Partial Classes and Methods (C# Programming Guide)
 
-It is possible to split the definition of a [class](../../language-reference/keywords/class.md), a [struct](../../language-reference/builtin-types/struct.md), an [interface](../../language-reference/keywords/interface.md) or a method over two or more source files. Each source file contains a section of the type or method definition, and all parts are combined when the application is compiled.
+It's possible to split the definition of a [class](../../language-reference/keywords/class.md), a [struct](../../language-reference/builtin-types/struct.md), an [interface](../../language-reference/keywords/interface.md) or a method over two or more source files. Each source file contains a section of the type or method definition, and all parts are combined when the application is compiled.
 
 ## Partial Classes
 
 There are several situations when splitting a class definition is desirable:
 
-- When working on large projects, spreading a class over separate files enables multiple programmers to work on it at the same time.
-- When working with automatically generated source, code can be added to the class without having to recreate the source file. Visual Studio uses this approach when it creates Windows Forms, Web service wrapper code, and so on. You can create code that uses these classes without having to modify the file created by Visual Studio.
-- When using [source generators](../../roslyn-sdk/source-generators-overview.md) to generate additional functionality in a class.
+- Declaring a class over separate files enables multiple programmers to work on it at the same time.
+- Code can be added to the class without having to recreate the source file that includes automatically generated source. Visual Studio uses this approach when it creates Windows Forms, Web service wrapper code, and so on. You can create code that uses these classes without having to modify the file created by Visual Studio.
+- [Source generators](../../roslyn-sdk/source-generators-overview.md) can generate extra functionality in a class.
 
 To split a class definition, use the [partial](../../language-reference/keywords/partial-type.md) keyword modifier, as shown here:
 
@@ -32,7 +32,7 @@ All the parts that specify a base class must agree, but parts that omit a base c
 > [!NOTE]
 > The `partial` modifier is not available on delegate or enumeration declarations.
 
-The following example shows that nested types can be partial, even if the type they are nested within is not partial itself.
+The following example shows that nested types can be partial, even if the type they're nested within isn't partial itself.
 
 :::code language="csharp" source="snippets/partial-classes-and-methods/Program.cs" id="Snippet2":::
 
@@ -40,7 +40,7 @@ At compile time, attributes of partial-type definitions are merged. For example,
 
 :::code language="csharp" source="snippets/partial-classes-and-methods/Program.cs" id="Snippet3":::
 
-They are equivalent to the following declarations:
+They're equivalent to the following declarations:
 
 :::code language="csharp" source="snippets/partial-classes-and-methods/Program.cs" id="Snippet4":::
 
@@ -56,22 +56,22 @@ For example, consider the following declarations:
 
 :::code language="csharp" source="snippets/partial-classes-and-methods/Program.cs" id="Snippet5":::
 
-They are equivalent to the following declarations:
+They're equivalent to the following declarations:
 
 :::code language="csharp" source="snippets/partial-classes-and-methods/Program.cs" id="Snippet6":::
 
 ### Restrictions
 
-There are several rules to follow when you are working with partial class definitions:
+There are several rules to follow when you're working with partial class definitions:
 
 - All partial-type definitions meant to be parts of the same type must be modified with `partial`. For example, the following class declarations generate an error:
   :::code language="csharp" source="snippets/partial-classes-and-methods/Program.cs" id="Snippet7":::
 - The `partial` modifier can only appear immediately before the keywords `class`, `struct`, or `interface`.
 - Nested partial types are allowed in partial-type definitions as illustrated in the following example:
   :::code language="csharp" source="snippets/partial-classes-and-methods/Program.cs" id="Snippet8":::
-- All partial-type definitions meant to be parts of the same type must be defined in the same assembly and the same module (.exe or .dll file). Partial definitions cannot span multiple modules.
+- All partial-type definitions meant to be parts of the same type must be defined in the same assembly and the same module (.exe or .dll file). Partial definitions can't span multiple modules.
 - The class name and generic-type parameters must match on all partial-type definitions. Generic types can be partial. Each partial declaration must use the same parameter names in the same order.
-- The following keywords on a partial-type definition are optional, but if present on one partial-type definition, cannot conflict with the keywords specified on another partial definition for the same type:
+- The following keywords on a partial-type definition are optional, but if present on one partial-type definition, can't conflict with the keywords specified on another partial definition for the same type:
   - [public](../../language-reference/keywords/public.md)
   - [private](../../language-reference/keywords/private.md)
   - [protected](../../language-reference/keywords/protected.md)
@@ -96,28 +96,28 @@ The following example shows that you can also develop partial structs and interf
 
 ## Partial Methods
 
-A partial class or struct may contain a partial method. One part of the class contains the signature of the method. An implementation can be defined in the same part or another part.
+A partial class or struct can contain a partial method. One part of the class contains the signature of the method. An implementation can be defined in the same part or another part.
 
 An implementation isn't required for a partial method when the signature obeys the following rules:
 
 - The declaration doesn't include any access modifiers. The method has [`private`](../../language-reference/keywords/private.md) access by default.
-- The return type is [`void`](../../language-reference/builtin-types/void.md)
+- The return type is [`void`](../../language-reference/builtin-types/void.md).
 - None of the parameters have the [`out`](../../language-reference/keywords/method-parameters.md#out-parameter-modifier) modifier.
 - The method declaration can't include any of the following modifiers:
   - [virtual](../../language-reference/keywords/virtual.md),
   - [override](../../language-reference/keywords/override.md),
   - [sealed](../../language-reference/keywords/sealed.md),
-  - [new](../../language-reference/keywords/new-modifier.md), or
+  - [new](../../language-reference/keywords/new-modifier.md),
   - [extern](../../language-reference/keywords/extern.md).
 
-The method and all calls to the method are removed at compile time when there is no implementation.
+The method and all calls to the method are removed at compile time when there's no implementation.
 
-Any method that doesn't conform to all those restrictions (for example, `public virtual partial void` method), must provide an implementation. That implementation may be supplied by a *source generator*.
+Any method that doesn't conform to all those restrictions (for example, `public virtual partial void` method), must provide an implementation. That implementation might be supplied by a *source generator*.
 
-Partial methods enable the implementer of one part of a class to declare a method. The implementer of another part of the class can define that method. There are two scenarios where this is useful: templates that generate boilerplate code, and source generators.
+Partial methods enable the implementer of one part of a class to declare a method. The implementer of another part of the class can define that method. There are two scenarios where this separation is useful: templates that generate boilerplate code, and source generators.
 
-- **Template code**: The template reserves a method name and signature so that generated code can call the method. These methods follow the restrictions that enable a developer to decide whether to implement the method. If the method is not implemented, then the compiler removes the method signature and all calls to the method. The calls to the method, including any results that would occur from evaluation of arguments in the calls, have no effect at run time. Therefore, any code in the partial class can freely use a partial method, even if the implementation is not supplied. No compile-time or run-time errors will result if the method is called but not implemented.
-- **Source generators**: Source generators provide an implementation for methods. The human developer can add the method declaration (often with attributes read by the source generator). The developer can write code that calls these methods. The source generator runs during compilation and provides the implementation. In this scenario, the restrictions for partial methods that may not be implemented often aren't followed.
+- **Template code**: The template reserves a method name and signature so that generated code can call the method. These methods follow the restrictions that enable a developer to decide whether to implement the method. If the method isn't implemented, then the compiler removes the method signature and all calls to the method. The calls to the method, including any results that would occur from evaluation of arguments in the calls, have no effect at run time. Therefore, any code in the partial class can freely use a partial method, even if the implementation isn't supplied. No compile-time or run-time errors result if the method is called but not implemented.
+- **Source generators**: Source generators provide an implementation for methods. The human developer can add the method declaration (often with attributes read by the source generator). The developer can write code that calls these methods. The source generator runs during compilation and provides the implementation. In this scenario, the restrictions for partial methods that might not be implemented often aren't followed.
 
 ```csharp
 // Definition in file1.cs
@@ -133,12 +133,12 @@ partial void OnNameChanged()
 - Partial method declarations must begin with the contextual keyword [partial](../../language-reference/keywords/partial-type.md).
 - Partial method signatures in both parts of the partial type must match.
 - Partial methods can have [static](../../language-reference/keywords/static.md) and [unsafe](../../language-reference/keywords/unsafe.md) modifiers.
-- Partial methods can be generic. Constraints must be the same on the defining and implementing method declaration. Parameter and type parameter names do not have to be the same in the implementing declaration as in the defining one.
-- You can make a [delegate](../../language-reference/builtin-types/reference-types.md) to a partial method that has been defined and implemented, but not to a partial method that has only been defined.
+- Partial methods can be generic. Constraints must be the same on the defining and implementing method declaration. Parameter and type parameter names don't have to be the same in the implementing declaration as in the defining one.
+- You can make a [delegate](../../language-reference/builtin-types/reference-types.md) to a partial method defined and implemented, but not to a partial method that doesn't have an implementation.
 
 ## C# Language Specification
 
-For more information, see [Partial types](~/_csharpstandard/standard/classes.md#1527-partial-declarations) and [Partial methods](~/_csharpstandard/standard/classes#1569-partial-methods) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage. The additional features for partial methods are defined in the [feature specification](~/_csharplang/proposals/csharp-9.0/extending-partial-methods)
+For more information, see [Partial types](~/_csharpstandard/standard/classes.md#1527-partial-declarations) and [Partial methods](~/_csharpstandard/standard/classes#1569-partial-methods) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage. The additional features for partial methods are defined in the [feature specification](~/_csharplang/proposals/csharp-9.0/extending-partial-methods).
 
 ## See also
 

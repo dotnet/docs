@@ -1,10 +1,10 @@
 ---
 title: Scale Azure OpenAI for .NET chat sample using RAG
 description: Learn how to add load balancing to your application to extend the chat app beyond the Azure OpenAI token and model quota limits.
-ms.date: 03/08/2024
+ms.date: 03/11/2024
 ms.topic: get-started
 ms.custom: devx-track-java, devx-track-java-ai
-# CustomerIntent: As a .NET developer new to Azure OpenAI, I want to scale my OpenAI capacity to avoid rate limit errors.
+# CustomerIntent: As a .NET developer new to Azure OpenAI, I want to scale my Azure OpenAI capacity to avoid rate limit errors with Azure Container Apps.
 ---
 
 # Scale Azure OpenAI for .NET chat using RAG with Azure Container Apps

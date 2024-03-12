@@ -162,7 +162,6 @@ For more information, see [Iterators](../concepts/iterators.md).
 
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [The C# type system](../../fundamentals/types/index.md)
 - [Access Modifiers](access-modifiers.md)
 - [Static Classes and Static Class Members](static-classes-and-static-class-members.md)

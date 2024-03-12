@@ -42,7 +42,6 @@ Beginning with C# 11, interfaces may declare `static abstract` or `static virtua
 
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Introduction to Generics](../../fundamentals/types/generics.md)
 - [interface](../../language-reference/keywords/interface.md)
 - [Generics](../../../standard/generics/index.md)

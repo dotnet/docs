@@ -26,4 +26,3 @@ This section only includes those tokens that are not operators. See the [operato
 ## See also
 
 - [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)

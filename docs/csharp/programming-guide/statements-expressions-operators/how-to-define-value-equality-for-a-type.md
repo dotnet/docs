@@ -86,4 +86,3 @@ The [==](../../language-reference/operators/equality-operators.md#equality-opera
 ## See also
 
 - [Equality comparisons](equality-comparisons.md)
-- [C# programming guide](../index.md)

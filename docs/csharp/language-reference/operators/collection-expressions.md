@@ -60,16 +60,16 @@ When a collection expression is converted to a `Span` or `ReadOnlySpan`, the spa
 
 ## Collection builder
 
-Collection expressions work with any collection type that is *well-behaved*. A well-behaved collection has the following properties:
+Collection expressions work with any collection type that's *well-behaved*. A well-behaved collection has the following characteristics:
 
-- The value of a `Count` or `Length` on a [countable](./member-access-operators.md#index-from-end-operator-) collection produces that same value as the number of elements when enumerated.
-- The types in the <xref:System.Collections.Generic?displayProperty=fullName> namespace are presumed to be side-effect free. As such, the compiler can optimize scenarios where such types might be used as intermediary values, but otherwise not be exposed. The collections in the .NET Runtime satisfy this constraint.
+- The value of `Count` or `Length` on a [countable](./member-access-operators.md#index-from-end-operator-) collection produces the same value as the number of elements when enumerated.
+- The types in the <xref:System.Collections.Generic?displayProperty=fullName> namespace are presumed to be side-effect free. As such, the compiler can optimize scenarios where such types might be used as intermediary values, but otherwise not be exposed.
 - A call to some applicable `.AddRange(x)` member on a collection will result in the same final value as iterating over `x` and adding all of its enumerated values individually to the collection with `.Add`.
 
 All the collection types in the .NET runtime are well-behaved.
 
 > [!WARNING]
-> If a custom collection type isn't well-behaved, the behavior using that collection type with collection expressions is undefined.
+> If a custom collection type isn't well-behaved, the behavior when you use that collection type with collection expressions is undefined.
 
 Your types opt in to collection expression support by writing a `Create()` method and applying the <xref:System.Runtime.CompilerServices.CollectionBuilderAttribute?displayProperty=fullName> on the collection type to indicate the builder method. For example, consider an application that uses fixed length buffers of 80 characters. That class might look something like the following code:
 

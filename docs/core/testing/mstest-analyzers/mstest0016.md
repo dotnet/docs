@@ -16,7 +16,7 @@ ms.author: enjieid
 | Property                            | Value                                        |
 |-------------------------------------|----------------------------------------------|
 | **Rule ID**                         | MSTEST0016                                   |
-| **Title**                           | Test class should have test method            |
+| **Title**                           | Test class should have test method           |
 | **Category**                        | Design                                       |
 | **Fix is breaking or non-breaking** | Non-breaking                                 |
 | **Enabled by default**              | Yes                                          |

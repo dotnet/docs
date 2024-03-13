@@ -40,7 +40,7 @@ The previous examples have all shown instance constructors, which create a new o
 
 The following example uses a static constructor to initialize a static field.
 
-:::code source="./snippets/constructors/Program.cs" id="StaticExpression":::
+:::code source="./snippets/constructors/Program.cs" id="StaticCtor":::
 
 You can also define a static constructor with an expression body definition, as the following example shows.
 
@@ -58,7 +58,6 @@ For more information and examples, see [Static Constructors](./static-constructo
 
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [The C# type system](../../fundamentals/types/index.md)
 - [Finalizers](./finalizers.md)
 - [static](../../language-reference/keywords/static.md)

@@ -1,0 +1,37 @@
+id:
+name: GitOps.PullRequestIssueManagement
+description: GitOps.PullRequestIssueManagement primitive
+owner:
+resource: repository
+disabled: false
+where:
+configuration:
+  resourceManagementConfiguration:
+    eventResponderTasks:
+    - if:
+      - payloadType: Pull_Request
+      - labelAdded:
+          label: ':octocat: auto-merge'
+      - targetsBranch:
+          branch: main
+      then:
+      - enableAutoMerge:
+          mergeMethod: Squash
+      description: Auto-squash-merge PRs to main labeled with auto-merge
+    - if:
+      - payloadType: Pull_Request
+      - labelAdded:
+          label: ':octocat: auto-merge'
+      - targetsBranch:
+          branch: live
+      then:
+      - enableAutoMerge:
+          mergeMethod: Merge
+      description: Auto-merge PRs to live labeled with auto-merge
+    - if:
+      - payloadType: Pull_Request
+      - labelRemoved:
+          label: ':octocat: auto-merge'
+      then:
+      - disableAutoMerge
+      description: Don't auto-merge PRs with auto-merge label removed

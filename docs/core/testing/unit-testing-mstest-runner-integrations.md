@@ -122,7 +122,7 @@ This option doesn't impact how the testing framework captures user output writte
 On command line:
 
 ```dotnetcli
-dotnet test -p:TestingPlatformCaptureOutput=true
+dotnet test -p:TestingPlatformCaptureOutput=false
 ```
 
 Or in project file:

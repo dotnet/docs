@@ -2,6 +2,8 @@
 title: SYSLIB0051 warning - Legacy serialization support APIs are obsolete
 description: Learn about the obsoletion of APIs that support formatter-based serialization that generates compile-time warning SYSLIB0051.
 ms.date: 05/11/2023
+f1_keywords:
+  - syslib0051
 ---
 # SYSLIB0051: Legacy serialization support APIs are obsolete
 

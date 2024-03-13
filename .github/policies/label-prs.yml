@@ -1,0 +1,77 @@
+id:
+name: GitOps.PullRequestIssueManagement
+description: GitOps.PullRequestIssueManagement primitive
+owner:
+resource: repository
+disabled: false
+where:
+configuration:
+  resourceManagementConfiguration:
+    eventResponderTasks:
+    - if:
+      - payloadType: Pull_Request
+      - isAction:
+          action: Opened
+      - and:
+        - not:
+            activitySenderHasPermission:
+              permission: Admin
+        - not:
+            activitySenderHasPermission:
+              permission: Write
+        - not:
+            isActivitySender:
+              user: github-actions[bot]
+              issueAuthor: False
+        - not:
+            isActivitySender:
+              user: github-actions
+              issueAuthor: False
+        - not:
+            isActivitySender:
+              user: azure-sdk
+              issueAuthor: False
+        - not:
+            isActivitySender:
+              user: dependabot
+              issueAuthor: False
+      then:
+      - addLabel:
+          label: community-contribution
+      description: Label community PRs
+    - if:
+      - payloadType: Pull_Request
+      - isActivitySender:
+          user: azure-sdk
+          issueAuthor: False
+      then:
+      - approvePullRequest:
+          comment: "Approved, we'll :shipit: when all status checks pass."
+      - addLabel:
+          label: ':octocat: auto-merge'
+      description: Label PRs from the Azure SDK bot
+    - if:
+      - payloadType: Pull_Request
+      - isActivitySender:
+          user: dotnet-policy-service
+          issueAuthor: False
+      then:
+      - addLabel:
+          label: ':octocat: auto-merge'
+      description: Label PRs from Dotnet Policy Service
+    - if:
+      - payloadType: Pull_Request
+      - or:
+        - titleContains:
+            pattern: build warning
+            isRegex: False
+        - bodyContains:
+            pattern: build warning
+            isRegex: False
+        - titleContains:
+            pattern: freshness
+            isRegex: False
+      then:
+      - addLabel:
+          label: okr-health
+      description: Label PRs with okr-health

@@ -87,7 +87,6 @@ For more information, see [Static classes](~/_csharpstandard/standard/classes.md
   
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [static](../../language-reference/keywords/static.md)
 - [Classes](../../fundamentals/types/classes.md)
 - [class](../../language-reference/keywords/class.md)

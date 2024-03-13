@@ -25,7 +25,6 @@ In the following example, the `Person` [class](../../language-reference/keywords
 
 - <xref:System.ICloneable>
 - [Records](../../fundamentals/types/records.md)
-- [C# Programming Guide](../index.md)
 - [The C# type system](../../fundamentals/types/index.md)
 - [Constructors](./constructors.md)
 - [Finalizers](./finalizers.md)

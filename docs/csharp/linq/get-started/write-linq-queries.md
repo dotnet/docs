@@ -25,7 +25,7 @@ Although it looks as if <xref:System.Collections.Generic.IEnumerable%601> includ
 
 To use extension methods, you bring them into scope with `using` directives. From your application's point of view, an extension method and a regular instance method are the same.
 
-For more information about extension methods, see [Extension Methods](../../programming-guide/classes-and-structs/extension-methods.md). For more information about standard query operators, see [Standard Query Operators Overview (C#)](../../programming-guide/concepts/linq/standard-query-operators-overview.md). Some LINQ providers, such as [Entity Framework](/ef/core/) and LINQ to XML, implement their own standard query operators and extension methods for other types besides <xref:System.Collections.Generic.IEnumerable%601>.
+For more information about extension methods, see [Extension Methods](../../programming-guide/classes-and-structs/extension-methods.md). For more information about standard query operators, see [Standard Query Operators Overview (C#)](../standard-query-operators/index.md). Some LINQ providers, such as [Entity Framework](/ef/core/) and LINQ to XML, implement their own standard query operators and extension methods for other types besides <xref:System.Collections.Generic.IEnumerable%601>.
 
 ## Lambda expressions
 

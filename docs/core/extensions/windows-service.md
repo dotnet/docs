@@ -3,7 +3,7 @@ title: Create Windows Service using BackgroundService
 description: Learn how to create a Windows Service using the BackgroundService in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 12/13/2023
+ms.date: 02/28/2024
 ms.topic: tutorial
 ---
 
@@ -74,7 +74,7 @@ Replace the existing `Worker` from the template with the following C# code, and 
 
 :::code source="snippets/workers/windows-service/WindowsBackgroundService.cs":::
 
-In the preceding code, the `JokeService` is injected along with an `ILogger`. Both are made available to the class as `private readonly` fields. In the `ExecuteAsync` method, the joke service requests a joke and writes it to the logger. In this case, the logger is implemented by the Windows Event Log - <xref:Microsoft.Extensions.Logging.EventLog.EventLogLogger?displayProperty=nameWithType>. Logs are written to, and available for viewing in the **Event Viewer**.
+In the preceding code, the `JokeService` is injected along with an `ILogger`. Both are made available to the class as fields. In the `ExecuteAsync` method, the joke service requests a joke and writes it to the logger. In this case, the logger is implemented by the Windows Event Log - <xref:Microsoft.Extensions.Logging.EventLog.EventLogLogger?displayProperty=nameWithType>. Logs are written to, and available for viewing in the **Event Viewer**.
 
 > [!NOTE]
 > By default, the *Event Log* severity is <xref:Microsoft.Extensions.Logging.LogLevel.Warning>. This can be configured, but for demonstration purposes the `WindowsBackgroundService` logs with the <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogWarning%2A> extension method. To specifically target the `EventLog` level, add an entry in the **appsettings.{Environment}.json**, or provide an <xref:Microsoft.Extensions.Logging.EventLog.EventLogSettings.Filter?displayProperty=nameWithType> value.

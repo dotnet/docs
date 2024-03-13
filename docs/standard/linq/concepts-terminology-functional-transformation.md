@@ -44,7 +44,7 @@ The following list defines some terms related to functional transformations.
 higher-order (first-class) function \
 A function that can be treated as a programmatic object. For example, a higher-order function can be passed to or returned from other functions. In C# and Visual Basic, delegates and lambda expressions are language features that support higher-order functions. To write a higher-order function, you declare one or more arguments to take delegates, and you often use lambda expressions when calling it. Many of the standard query operators are higher-order functions.
 
-For more information, see [Standard Query Operators Overview (C#)](../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md) and [Standard Query Operators Overview (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md).
+For more information, see [Standard Query Operators Overview (C#)](../../csharp/linq/standard-query-operators/index.md) and [Standard Query Operators Overview (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md).
 
 lambda expression \
 Essentially, an inline anonymous function that can be used wherever a delegate type is expected. This is a simplified definition of lambda expressions, but it's adequate for the purposes of this tutorial.

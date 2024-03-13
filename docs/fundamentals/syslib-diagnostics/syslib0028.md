@@ -2,6 +2,8 @@
 title: SYSLIB0028 warning
 description: Learn about the obsoletion of X509Certificate2.PrivateKey that generates compile-time warning SYSLIB0028.
 ms.date: 07/16/2021
+f1_keywords:
+  - syslib0028
 ---
 # SYSLIB0028: X509Certificate2.PrivateKey is obsolete
 

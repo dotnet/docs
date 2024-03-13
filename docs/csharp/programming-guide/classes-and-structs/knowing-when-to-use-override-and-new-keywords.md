@@ -539,7 +539,6 @@ namespace OverrideAndNew2
   
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [The C# type system](../../fundamentals/types/index.md)
 - [Versioning with the Override and New Keywords](./versioning-with-the-override-and-new-keywords.md)
 - [base](../../language-reference/keywords/base.md)

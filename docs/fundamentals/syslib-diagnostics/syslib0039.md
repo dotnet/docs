@@ -2,6 +2,8 @@
 title: SYSLIB0039 warning - SslProtocols.Tls and SslProtocols.Tls11 are obsolete
 description: Learn about the obsoletion of the SslProtocols.Tls and SslProtocols.Tls11 enumeration fields that generates compile-time warning SYSLIB0039.
 ms.date: 03/17/2022
+f1_keywords:
+  - syslib0039
 ---
 # SYSLIB0039: SslProtocols.Tls and SslProtocols.Tls11 are obsolete
 

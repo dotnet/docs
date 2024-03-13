@@ -2,7 +2,7 @@
 
 namespace CustomProvider.Example.Providers;
 
-public class EntityConfigurationSource(
+public sealed class EntityConfigurationSource(
     string? connectionString) : IConfigurationSource
 {
     public IConfigurationProvider Build(IConfigurationBuilder builder) =>

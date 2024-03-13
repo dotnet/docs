@@ -50,7 +50,6 @@ The following example shows how to define [abstract](../../language-reference/ke
   
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [The C# type system](../../fundamentals/types/index.md)
 - [Abstract and Sealed Classes and Class Members](./abstract-and-sealed-classes-and-class-members.md)
 - [Properties](./properties.md)

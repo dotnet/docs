@@ -71,5 +71,4 @@ This option can cause more allocations than other methods for concatenating coll
 
 - <xref:System.String>
 - <xref:System.Text.StringBuilder>
-- [C# programming guide](../programming-guide/index.md)
 - [Strings](../programming-guide/strings/index.md)

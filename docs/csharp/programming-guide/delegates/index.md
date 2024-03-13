@@ -51,5 +51,4 @@ For more information, see [Delegates](~/_csharpstandard/standard/delegates.md) i
 ## See also
 
 - <xref:System.Delegate>
-- [C# Programming Guide](../index.md)
 - [Events](../events/index.md)

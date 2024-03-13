@@ -1,8 +1,10 @@
 ﻿namespace Linq.GetStarted;
 
-record City(long Population);
-record Country(string Name, List<City> Cities, long Area, long Population);
+// <basics_datasource>
+record City(string Name, long Population);
+record Country(string Name, double Area, long Population, List<City> Cities);
 record Product(string Name, string Category);
+// </basics_datasource>
 
 class Student
 {

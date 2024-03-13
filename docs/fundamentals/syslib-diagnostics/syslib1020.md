@@ -2,6 +2,8 @@
 title: SYSLIB1020 error
 description: Learn about the diagnostic that generates compile-time error SYSLIB1020.
 ms.date: 05/07/2021
+f1_keywords:
+  - syslib1020
 ---
 
 # SYSLIB1020: Found multiple fields of type `ILogger`

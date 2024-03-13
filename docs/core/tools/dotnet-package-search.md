@@ -71,7 +71,7 @@ The `dotnet package search` command searches for a NuGet package.
 
 - **`--verbosity`**
 
-    Display this amount of details in the output: `normal`, `minimal`,`detailed`. The default is`normal`.
+    Display this amount of details in the output: `normal`, `minimal`, or `detailed`. The default is `normal`.
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 

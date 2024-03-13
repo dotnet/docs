@@ -137,30 +137,6 @@ The `dotnet package search` command searches for a NuGet package.
                 "owners": "aspnet, dotnetframework, Microsoft"
                 },
                 {
-                "id": "Swashbuckle.AspNetCore.Newtonsoft",
-                "latestVersion": "6.5.0",
-                "totalDownloads": 81345453,
-                "owners": "domaindrivendev"
-                },
-                {
-                "id": "GraphQL.NewtonsoftJson",
-                "latestVersion": "7.8.0",
-                "totalDownloads": 11244179,
-                "owners": "joemcbride"
-                },
-                {
-                "id": "Refit.Newtonsoft.Json",
-                "latestVersion": "7.0.0",
-                "totalDownloads": 12583471,
-                "owners": "dotnetfoundation, reactiveui"
-                },
-                {
-                "id": "Microsoft.Azure.Core.NewtonsoftJson",
-                "latestVersion": "2.0.0",
-                "totalDownloads": 6593746,
-                "owners": "azure-sdk, Microsoft"
-                },
-                {
                 "id": "RestSharp.Serializers.NewtonsoftJson",
                 "latestVersion": "110.2.0",
                 "totalDownloads": 13462500,

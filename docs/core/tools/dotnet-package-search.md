@@ -38,7 +38,7 @@ The `dotnet package search` command searches for a NuGet package.
 
     The NuGet configuration file. If specified, only the settings from this file will be used. If not
     specified, the hierarchy of configuration files from the current directory will be used. For more
-    information, see <https://docs.microsoft.com/nuget/consume-packages/configuring-nuget-behavior>.
+    information, see [Common NuGet configurations](/nuget/consume-packages/configuring-nuget-behavior).
 
 - **`--exact-match`**
 

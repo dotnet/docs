@@ -162,7 +162,7 @@ The `dotnet package search` command searches for a NuGet package.
         | Newtonsoft.Json.Schema                      | 3.0.15         |        | 39,648,430      |
     ```
 
-- Search for packages that exactly match "Newtonsoft.Json" and list all available versions of it, ignoring any packages that contain "Newtonsoft.Json" as a part of their name or description but don't match it exactly.
+- Search for packages that exactly match "Newtonsoft.Json" and list all available versions of it, ignoring any packages that contain "Newtonsoft.Json" as a part of their name or description but don't match it exactly:
 
     ```dotnetcli
     dotnet package search Newtonsoft.Json --source https://api.nuget.org/v3/index.json --exact-match

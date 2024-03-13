@@ -137,36 +137,6 @@ The `dotnet package search` command searches for a NuGet package.
                 "owners": "aspnet, dotnetframework, Microsoft"
                 },
                 {
-                "id": "GraphQL.Client.Serializer.Newtonsoft",
-                "latestVersion": "6.0.2",
-                "totalDownloads": 13538118,
-                "owners": "rose-a"
-                },
-                {
-                "id": "StackExchange.Redis.Extensions.Newtonsoft",
-                "latestVersion": "10.2.0",
-                "totalDownloads": 11013705,
-                "owners": "imperugo"
-                },
-                {
-                "id": "CloudNative.CloudEvents.NewtonsoftJson",
-                "latestVersion": "2.7.1",
-                "totalDownloads": 2156165,
-                "owners": "CloudNative.CloudEvents"
-                },
-                {
-                "id": "h5.Newtonsoft.Json",
-                "latestVersion": "24.2.45748",
-                "totalDownloads": 3855727,
-                "owners": "Curiosity"
-                },
-                {
-                "id": "Newtonsoft.Json.FSharp",
-                "latestVersion": "3.2.2",
-                "totalDownloads": 245301,
-                "owners": "henrik feldt"
-                },
-                {
                 "id": "Newtonsoft.Json.Encryption",
                 "latestVersion": "2.2.0",
                 "totalDownloads": 113101,

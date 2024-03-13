@@ -34,7 +34,6 @@ At compile time, the `select` clause is translated to a method call to the <xref
 
 ## See also
 
-- [C# Reference](../index.md)
 - [Query Keywords (LINQ)](query-keywords.md)
 - [from clause](from-clause.md)
 - [partial (Method) (C# Reference)](partial-method.md)

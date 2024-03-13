@@ -178,7 +178,6 @@ For more information on the *global using* modifier, see the [global usings feat
 
 ## See also
 
-- [C# reference](../index.md)
 - [C# keywords](index.md)
 - [Namespaces](../../fundamentals/types/namespaces.md)
 - [Style rule IDE0005 - Remove unnecessary 'using' directives](../../../fundamentals/code-analysis/style-rules/ide0005.md)

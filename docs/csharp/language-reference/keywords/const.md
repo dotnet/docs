@@ -69,6 +69,5 @@ For more information, see the following sections of the [C# language specificati
 
 ## See also
 
-- [C# reference](../index.md)
 - [C# keywords](index.md)
 - [readonly](readonly.md)

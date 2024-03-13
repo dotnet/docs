@@ -54,7 +54,6 @@ For more information, see the following sections of the [C# language specificati
 
 ## See also
 
-- [C# reference](../index.md)
 - [Unsafe code, pointer types, and function pointers](../unsafe-code.md)
 - [Pointer-related operators](../operators/pointer-related-operators.md)
 - [unsafe](../keywords/unsafe.md)

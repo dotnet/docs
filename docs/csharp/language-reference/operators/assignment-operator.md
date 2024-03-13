@@ -76,7 +76,6 @@ For more information, see the [Assignment operators](~/_csharpstandard/standard/
 
 ## See also
 
-- [C# reference](../index.md)
 - [C# operators and expressions](index.md)
 - [ref keyword](../keywords/ref.md)
 - [Use compound assignment (style rules IDE0054 and IDE0074)](../../../fundamentals/code-analysis/style-rules/ide0054-ide0074.md)

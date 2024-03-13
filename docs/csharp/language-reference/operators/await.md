@@ -45,7 +45,6 @@ For more information, see the [Await expressions](~/_csharpstandard/standard/exp
 
 ## See also
 
-- [C# reference](../index.md)
 - [C# operators and expressions](index.md)
 - [async](../keywords/async.md)
 - [Task asynchronous programming model](../../asynchronous-programming/task-asynchronous-programming-model.md)

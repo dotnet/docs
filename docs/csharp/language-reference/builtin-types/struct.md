@@ -173,7 +173,6 @@ For more information about `struct` features, see the following feature proposal
 
 ## See also
 
-- [C# reference](../index.md)
 - [The C# type system](../../fundamentals/types/index.md)
 - [Design guidelines - Choosing between class and struct](../../../standard/design-guidelines/choosing-between-class-and-struct.md)
 - [Design guidelines - Struct design](../../../standard/design-guidelines/struct.md)

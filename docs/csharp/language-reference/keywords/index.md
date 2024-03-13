@@ -165,7 +165,3 @@ A contextual keyword is used to provide a specific meaning in the code, but it i
         [`yield`](../statements/yield.md)  
     :::column-end:::
 :::row-end:::
-
-## See also
-
-- [C# reference](../index.md)

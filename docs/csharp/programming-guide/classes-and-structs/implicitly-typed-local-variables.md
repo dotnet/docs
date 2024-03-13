@@ -87,7 +87,7 @@ The use of `var` helps simplify your code, but its use should be restricted to c
 
 ## See also
 
-- [C# Reference](../../language-reference/index.md)
+- [C# Reference](../../language-reference/index.yml)
 - [Implicitly Typed Arrays](../../language-reference/builtin-types/arrays.md#implicitly-typed-arrays)
 - [How to use implicitly typed local variables and arrays in a query expression](how-to-use-implicitly-typed-local-variables-and-arrays-in-a-query-expression.md)
 - [Anonymous Types](../../fundamentals/types/anonymous-types.md)

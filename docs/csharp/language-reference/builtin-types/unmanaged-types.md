@@ -30,7 +30,6 @@ For more information, see the [Pointer types](~/_csharpstandard/standard/unsafe-
 
 ## See also
 
-- [C# reference](../index.md)
 - [Pointer types](../unsafe-code.md#pointer-types)
 - [Memory and span-related types](../../../standard/memory-and-spans/index.md)
 - [sizeof operator](../operators/sizeof.md)

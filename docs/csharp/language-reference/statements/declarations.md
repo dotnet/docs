@@ -117,7 +117,6 @@ For more information about the `scoped` modifier, see the [Low-level struct impr
 
 ## See also
 
-- [C# reference](../index.md)
 - [Object and collection initializers](../../programming-guide/classes-and-structs/object-and-collection-initializers.md)
 - [ref keyword](../keywords/ref.md)
 - [Reduce memory allocations using new C# features](../../advanced-topics/performance/index.md)

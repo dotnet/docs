@@ -77,7 +77,7 @@ The `dotnet package search` command searches for a NuGet package.
 
 ## Examples
 
-- Search NuGet.org for packages using the search term "Newtonsoft.Json"
+- Search NuGet.org for packages that match the search term "Newtonsoft.Json," and render the output as a table with up to 20 packages:
 
     ```dotnetcli
     dotnet package search Newtonsoft.Json --source https://api.nuget.org/v3/index.json

@@ -47,7 +47,7 @@ The `dotnet package search` command searches for a NuGet package.
 
 - **`--format`**
 
-    Format the output accordingly. The format options are either `table` or `json`. The default is `table`.
+    The format options are `table` and `json`. The default is `table`.
 
 - **`--interactive`**
 

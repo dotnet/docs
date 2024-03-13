@@ -137,42 +137,6 @@ The `dotnet package search` command searches for a NuGet package.
                 "owners": "aspnet, dotnetframework, Microsoft"
                 },
                 {
-                "id": "RestSharp.Serializers.NewtonsoftJson",
-                "latestVersion": "110.2.0",
-                "totalDownloads": 13462500,
-                "owners": "alexey_zimarev, Ubiquitous"
-                },
-                {
-                "id": "App.Metrics.Formatters.Json",
-                "latestVersion": "4.3.0",
-                "totalDownloads": 30385383,
-                "owners": "al_hardy"
-                },
-                {
-                "id": "NServiceBus.Newtonsoft.Json",
-                "latestVersion": "3.0.0",
-                "totalDownloads": 9386309,
-                "owners": "ParticularSoftware"
-                },
-                {
-                "id": "RestSharp.Newtonsoft.Json",
-                "latestVersion": "1.5.1",
-                "totalDownloads": 4295800,
-                "owners": "adamfisher"
-                },
-                {
-                "id": "Microsoft.AspNetCore.SignalR.Protocols.NewtonsoftJson",
-                "latestVersion": "8.0.3",
-                "totalDownloads": 17044287,
-                "owners": "aspnet, dotnetframework, Microsoft"
-                },
-                {
-                "id": "MassTransit.Newtonsoft",
-                "latestVersion": "8.1.3",
-                "totalDownloads": 5185238,
-                "owners": "phatboyg"
-                },
-                {
                 "id": "GraphQL.Client.Serializer.Newtonsoft",
                 "latestVersion": "6.0.2",
                 "totalDownloads": 13538118,

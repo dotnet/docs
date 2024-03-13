@@ -15,9 +15,9 @@ ms.date: 10/26/2023
 ## Synopsis
 
 ```dotnetcli
-dotnet package search <SEARCH TERM> [--source <SOURCE>] [--exact-match]
-    [--prerelease][--interactive][--take <NUMBER>][--skip <NUMBER>]
-    [--format <FORMAT OPTION>]
+dotnet package search <SEARCH TERM> [--configfile <FILE>] [--exact-match] [--format <FORMAT OPTION>]
+    [--interactive] [--prerelease] [--skip <NUMBER>] [--source <SOURCE>] [--take <NUMBER>]
+    [--verbosity <VERBOSITY VALUE>]
 
 dotnet package search -h|--help
 ```

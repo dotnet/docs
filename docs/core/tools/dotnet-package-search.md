@@ -168,8 +168,6 @@ The `dotnet package search` command searches for a NuGet package.
     dotnet package search Newtonsoft.Json --source https://api.nuget.org/v3/index.json --exact-match
     ```
 
-    output only an exact match.
-
     ```output
         Source: https://api.nuget.org/v3/index.json
         | Package ID                                  | Version | Owners | Downloads       |

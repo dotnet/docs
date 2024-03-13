@@ -83,8 +83,6 @@ The `dotnet package search` command searches for a NuGet package.
     dotnet package search Newtonsoft.Json --source https://api.nuget.org/v3/index.json
     ```
 
-    output a list of 20 packages in the source matching the search term.
-
     ```output
         Source: https://api.nuget.org/v3/index.json
         | Package ID                                  | Latest Version | Owners | Downloads       |

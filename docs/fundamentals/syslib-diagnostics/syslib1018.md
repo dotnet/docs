@@ -2,6 +2,8 @@
 title: SYSLIB1018 warning
 description: Learn about the diagnostic that generates compile-time warning SYSLIB1018.
 ms.date: 05/07/2021
+f1_keywords:
+  - syslib1018
 ---
 
 # SYSLIB1018: Don't include logger parameters as templates in the logging message

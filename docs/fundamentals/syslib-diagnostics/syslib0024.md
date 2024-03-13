@@ -2,6 +2,8 @@
 title: SYSLIB0024 warning
 description: Learn about the AppDomain-related obsoletions that generate compile-time warning SYSLIB0024.
 ms.date: 05/18/2021
+f1_keywords:
+  - syslib0024
 ---
 # SYSLIB0024: Creating and unloading AppDomains is not supported and throws an exception
 

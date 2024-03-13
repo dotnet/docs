@@ -3,7 +3,7 @@ using Microsoft.Extensions.Configuration;
 
 namespace CustomProvider.Example.Providers;
 
-public class EntityConfigurationProvider(
+public sealed class EntityConfigurationProvider(
     string? connectionString)
     : ConfigurationProvider
 {
@@ -14,11 +14,13 @@ public class EntityConfigurationProvider(
         dbContext.Database.EnsureCreated();
 
         Data = dbContext.Settings.Any()
-            ? dbContext.Settings.ToDictionary<Settings, string, string?>(c => c.Id, c => c.Value, StringComparer.OrdinalIgnoreCase)
+            ? dbContext.Settings.ToDictionary(
+                static c => c.Id,
+                static c => c.Value, StringComparer.OrdinalIgnoreCase)
             : CreateAndSaveDefaultValues(dbContext);
     }
 
-    static IDictionary<string, string?> CreateAndSaveDefaultValues(
+    static Dictionary<string, string?> CreateAndSaveDefaultValues(
         EntityConfigurationContext context)
     {
         var settings = new Dictionary<string, string?>(
@@ -30,8 +32,7 @@ public class EntityConfigurationProvider(
         };
 
         context.Settings.AddRange(
-            settings.Select(kvp => new Settings(kvp.Key, kvp.Value))
-                    .ToArray());
+            [.. settings.Select(static kvp => new Settings(kvp.Key, kvp.Value))]);
 
         context.SaveChanges();
 

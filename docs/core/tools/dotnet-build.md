@@ -179,10 +179,10 @@ The project or solution file to build. If a project or solution file isn't speci
   dotnet build --configuration Release
   ```
 
-- Build a project and its dependencies for a specific runtime (in this example, Ubuntu 18.04):
+- Build a project and its dependencies for a specific runtime (in this example, Linux):
 
   ```dotnetcli
-  dotnet build --runtime ubuntu.18.04-x64
+  dotnet build --runtime linux-x64
   ```
 
 - Build the project and use the specified NuGet package source during the restore operation:

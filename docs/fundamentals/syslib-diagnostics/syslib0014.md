@@ -2,6 +2,8 @@
 title: SYSLIB0014 warning
 description: Learn about the System.Net obsoletions that generate compile-time warning SYSLIB0014.
 ms.date: 04/24/2021
+f1_keywords:
+  - syslib0014
 ---
 # SYSLIB0014: WebRequest, HttpWebRequest, ServicePoint, WebClient are obsolete
 

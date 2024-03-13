@@ -122,7 +122,6 @@ Out of the three factors, the first two are usually more significant than the th
 Before you collect performance data for a specific area, you should already have done the following:
 
 1. Found evidence that you should be looking at this area.
-
 2. Exhausted other areas that you know of without finding anything that could explain the performance problem you saw.
 
 For more information on the fundamentals of memory and the CPU, see the blog [Understand the problem before you try to find a solution](https://devblogs.microsoft.com/dotnet/understand-the-problem-before-you-try-to-find-a-solution/).
@@ -133,11 +132,13 @@ You can use the following tools to collect data on LOH performance:
 - [ETW events](#etw-events)
 - [A debugger](#a-debugger)
 
-### .NET CLR Memory Performance counters
+### .NET CLR Memory performance counters
 
-These performance counters are usually a good first step in investigating performance issues (although we recommend that you use [ETW events](#etw-events)). You configure Performance Monitor by adding the counters that you want, as Figure 4 shows. The ones that are relevant for the LOH are:
+.NET CLR Memory performance counters are usually a good first step in investigating performance issues (although we recommend that you use [ETW events](#etw-events)). A common way to look at performance counters is with Performance Monitor (perfmon.exe). Select **Add** (<kbd>Ctrl</kbd> + <kbd>A</kbd>) to add the interesting counters for processes that you care about. You can save the performance counter data to a log file.
 
-- **Gen 2 Collections**
+The following two counters in the **.NET CLR Memory** category are relevant for the LOH:
+
+- **# Gen 2 Collections**
 
    Displays the number of times generation 2 GCs have occurred since the process started. The counter is incremented at the end of a generation 2 collection (also called a full garbage collection). This counter displays the last observed value.
 
@@ -145,12 +146,22 @@ These performance counters are usually a good first step in investigating perfor
 
    Displays the current size, in bytes, including free space, of the LOH. This counter is updated at the end of a garbage collection, not at each allocation.
 
-A common way to look at performance counters is with Performance Monitor (perfmon.exe). Use "Add Counters" to add the interesting counter for processes that you care about. You can save the performance counter data to a log file, as Figure 4 shows:
+![Screenshot that shows adding counters in Performance Monitor.](media/large-object-heap/add-performance-counter.png)
 
-![Screenshot that shows adding performance counters.](media/large-object-heap/add-performance-counter.png)
-Figure 4: The LOH after a generation 2 GC
+You can also query performance counters programmatically using the <xref:System.Diagnostics.PerformanceCounter> class. For the LOH, specify ".NET CLR Memory" as the <xref:System.Diagnostics.PerformanceCounter.CategoryName> and "Large Object Heap size" as the <xref:System.Diagnostics.PerformanceCounter.CounterName>.
 
-Performance counters can also be queried programmatically. Many people collect them this way as part of their routine testing process. When they spot counters with values that are out of the ordinary, they use other means to get more detailed data to help with the investigation.
+```csharp
+PerformanceCounter performanceCounter = new()
+{
+    CategoryName = ".NET CLR Memory",
+    CounterName = "Large Object Heap size",
+    InstanceName = "<instance_name>"
+};
+
+Console.WriteLine(performanceCounter.NextValue());
+```
+
+It's common to collect counters programmatically as part of a routine testing process. When you spot counters with values that are out of the ordinary, use other means to get more detailed data to help with the investigation.
 
 > [!NOTE]
 > We recommend that you use ETW events instead of performance counters, because ETW provides much richer information.
@@ -172,8 +183,7 @@ perfview /GCCollectOnly /AcceptEULA /nogui collect
 
 The result is something like this:
 
-![Screenshot that shows ETW events in PerfView.](media/large-object-heap/event-tracing-windows-perfview.png)
-Figure 5: ETW events shown using PerfView
+:::image type="content" source="media/large-object-heap/event-tracing-windows-perfview.png" alt-text="Screenshot that shows ETW events in PerfView." lightbox="media/large-object-heap/event-tracing-windows-perfview.png":::
 
 As you can see, all GCs are generation 2 GCs, and they are all triggered by AllocLarge, which means that allocating a large object triggered this GC. We know that these allocations are temporary because the **LOH Survival Rate %** column says 1%.
 
@@ -185,8 +195,7 @@ perfview /GCOnly /AcceptEULA /nogui collect
 
 collects an AllocationTick event, which is fired approximately every 100k worth of allocations. In other words, an event is fired each time a large object is allocated. You can then look at one of the GC Heap Alloc views, which show you the callstacks that allocated large objects:
 
-![Screenshot that shows a garbage collector heap view.](media/large-object-heap/garbage-collector-heap.png)
-Figure 6: A GC Heap Alloc view
+:::image type="content" source="media/large-object-heap/garbage-collector-heap.png" alt-text="Screenshot that shows a garbage collector heap view." lightbox="media/large-object-heap/garbage-collector-heap.png":::
 
 As you can see, this is a very simple test that just allocates large objects from its `Main` method.
 

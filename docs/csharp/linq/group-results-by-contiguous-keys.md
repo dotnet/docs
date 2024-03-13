@@ -1,8 +1,7 @@
 ---
 title: Group results by contiguous keys (LINQ in C#)
 description: How to group results by contiguous keys using LINQ in C#.
-ms.date: 08/14/2018
-ms.assetid: cbda9c08-151b-4c9e-82f7-c3d7f3dac66b
+ms.date: 01/23/2024
 ---
 # Group results by contiguous keys
 
@@ -21,11 +20,11 @@ The following example shows how to group elements into chunks that represent sub
 
 The following groups will be created in this order:
 
-1. We, think, that  
-2. Linq  
-3. is  
-4. really  
-5. cool, !
+1. We, think, that
+1. Linq
+1. is
+1. really
+1. cool, !
 
 The solution is implemented as an extension method that is thread-safe and that returns its results in a streaming manner. In other words, it produces its groups as it moves through the source sequence. Unlike the `group` or `orderby` operators, it can begin returning groups to the caller before all of the sequence has been read.
 
@@ -35,9 +34,9 @@ Thread-safety is accomplished by making a copy of each group or chunk as the sou
 
 The following example shows both the extension method and the client code that uses it:
 
-:::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/GroupByContiguousKeys.cs" id="group_by_contiguous_keys_chunkextensions":::
+:::code language="csharp" source="./snippets/linq-index/GroupByContiguousKeys.cs" id="group_by_contiguous_keys_chunkextensions":::
 
-:::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/GroupByContiguousKeys.cs" id="group_by_contiguous_keys_client_code":::
+:::code language="csharp" source="./snippets/linq-index/GroupByContiguousKeys.cs" id="group_by_contiguous_keys_client_code":::
 
 ### `ChunkExtensions` class
 
@@ -47,9 +46,9 @@ In the presented code, of `ChunkExtensions` class implementation, the `while(tru
 What happens in that loop is:
 
 1. Get the key for the current Chunk, by assigning it to `key` variable: `var key = keySelector(enumerator.Current);`. The source iterator will churn through the source sequence until it finds an element with a key that doesn't match.
-2. Make a new Chunk (group) object, and store it in `current` variable, that initially has one GroupItem, which is a copy of the current source element.
-3. Return that Chunk. A Chunk is an `IGrouping<TKey,TSource>`, which is the return value of the [`ChunkBy`](#chunk-class) method. At this point the Chunk only has the first element in its source sequence. The remaining elements will be returned only when the client code foreach's over this chunk. See `Chunk.GetEnumerator` for more info.
-4. Check to see whether
+1. Make a new Chunk (group) object, and store it in `current` variable, that initially has one GroupItem, which is a copy of the current source element.
+1. Return that Chunk. A Chunk is an `IGrouping<TKey,TSource>`, which is the return value of the [`ChunkBy`](#chunk-class) method. At this point the Chunk only has the first element in its source sequence. The remaining elements will be returned only when the client code foreach's over this chunk. See `Chunk.GetEnumerator` for more info.
+1. Check to see whether
 <br/>(a) the chunk has made a copy of all its source elements or
 <br/>(b) the iterator has reached the end of the source sequence.
 <br/>If the caller uses an inner foreach loop to iterate the chunk items, and that loop ran to completion, then the `Chunk.GetEnumerator` method will already have made copies of all chunk items before we get here. If the `Chunk.GetEnumerator` loop did not enumerate all elements in the chunk, we need to do it here to avoid corrupting the iterator for clients that may be calling us on a separate thread.
@@ -58,7 +57,7 @@ What happens in that loop is:
 
 The `Chunk` class is a contiguous group of one or more source elements that have the same key. A Chunk has a key and a list of ChunkItem objects, which are copies of the elements in the source sequence:
 
-:::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/GroupByContiguousKeys.cs" id="group_by_contiguous_keys_chunk_class":::
+:::code language="csharp" source="./snippets/linq-index/GroupByContiguousKeys.cs" id="group_by_contiguous_keys_chunk_class":::
 
 A Chunk has a linked list of `ChunkItem`s, which represent the elements in the current chunk. Each `ChunkItem` (represented by `ChunkItem` class) has a reference to the next `ChunkItem` in the list.
 The list consists of it's `head` - which stores the contents of the first source element that belongs with this chunk, and it's `tail` - which is an end of the list. It is repositioned each time a new `ChunkItem` is added.
@@ -72,7 +71,3 @@ Then, if iteration is at the end of the source, or at the end of the current chu
 The `CopyAllChunkElements` method is called after the end of the last chunk was reached. It first checks whether there are more elements in the source sequence. If there are, it returns `true` if enumerator for this chunk was exhausted. In this method, when private `DoneCopyingChunk` field is checked for `true`, if isLastSourceElement is `false`, it signals to the outer iterator to continue iterating.
 
 The `GetEnumerator` method of the `Chunk` class is invoked by the inner foreach loop. This method stays just one step ahead of the client requests. It adds the next element of the chunk only after the clients requests the last element in the list so far.
-
-## See also
-
-- [Language Integrated Query (LINQ)](index.md)

@@ -1,7 +1,7 @@
 ---
 title: Creating a simple data-driven CRUD microservice
 description: .NET Microservices Architecture for Containerized .NET Applications | Understand the creation of a simple CRUD (data-driven) microservice within the context of a microservices application.
-ms.date: 06/23/2021
+ms.date: 03/04/2024
 ---
 
 # Creating a simple data-driven CRUD microservice
@@ -398,13 +398,7 @@ You previously saw the generated UI created by Swashbuckle for a URL like `http:
 
 **Figure 6-9**. Swashbuckle UI testing the Catalog/Items API method
 
-The Swagger UI API detail shows a sample of the response and can be used to execute the real API, which is great for developer discovery. Figure 6-10 shows the Swagger JSON metadata generated from the eShopOnContainers microservice (which is what the tools use underneath) when you request `http://<your-root-url>/swagger/v1/swagger.json` using [Postman](https://www.getpostman.com/).
-
-![Screenshot of a Sample Postman UI showing Swagger JSON metadata.](./media/data-driven-crud-microservice/swagger-json-metadata.png)
-
-**Figure 6-10**. Swagger JSON metadata
-
-It is that simple. And because it is automatically generated, the Swagger metadata will grow when you add more functionality to your API.
+The Swagger UI API detail shows a sample of the response and can be used to execute the real API, which is great for developer discovery. To see the Swagger JSON metadata generated from the eShopOnContainers microservice (which is what the tools use underneath), make a you request `http://<your-root-url>/swagger/v1/swagger.json` using the [Visual Studio Code: REST Client extension](https://marketplace.visualstudio.com/items?itemName=humao.rest-client).
 
 ### Additional resources
 

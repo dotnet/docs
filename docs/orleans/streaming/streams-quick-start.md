@@ -117,7 +117,7 @@ TimeSpan.FromMilliseconds(1_000));
 
 ## Subscribe to and receive streaming data
 
-For receiving data, you can use implicit/explicit subscriptions, which are fully described in other pages of the docs. This example uses implicit subscriptions, which are easier. When a grain type wants to implicitly subscribe to a stream, it uses the attribute [[ImplicitStreamSubscription(namespace)]](xref:Orleans.ImplicitStreamSubscriptionAttribute).
+For receiving data, you can use implicit and explicit subscriptions, which are described in more detail at [Explicit and implicit subscriptions](streams-programming-apis.md#explicit-and-implicit-subscriptions). This example uses implicit subscriptions, which are easier. When a grain type wants to implicitly subscribe to a stream, it uses the attribute [[ImplicitStreamSubscription(namespace)]](xref:Orleans.ImplicitStreamSubscriptionAttribute).
 
 For your case, define a `ReceiverGrain` like this:
 
@@ -146,7 +146,7 @@ var streamId = StreamId.Create("RANDOMDATA", guid);
 var stream = streamProvider.GetStream<int>(streamId);
 
 // Set our OnNext method to the lambda which simply prints the data.
-// This doesn't make new subscriptions, because we are using implicit 
+// This doesn't make new subscriptions, because we are using implicit
 // subscriptions via [ImplicitStreamSubscription].
 await stream.SubscribeAsync<int>(
     async (data, token) =>
@@ -173,7 +173,7 @@ var streamProvider = GetStreamProvider("SMSProvider");
 var stream = streamProvider.GetStream<int>(guid, "RANDOMDATA");
 
 // Set our OnNext method to the lambda which simply prints the data.
-// This doesn't make new subscriptions, because we are using implicit 
+// This doesn't make new subscriptions, because we are using implicit
 // subscriptions via [ImplicitStreamSubscription].
 await stream.SubscribeAsync<int>(
     async (data, token) =>

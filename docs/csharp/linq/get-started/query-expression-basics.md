@@ -1,7 +1,7 @@
 ---
 title: Query expression basics (LINQ in C#)
 description: Introduces concepts related to query expressions
-ms.date: 12/14/2023
+ms.date: 03/06/2024
 ---
 # Query expression basics
 
@@ -21,7 +21,7 @@ Given this source sequence, a query might do one of three things:
 
   :::code language="csharp" source="./snippets/SnippetApp/Basics.cs" id="basics1":::
 
-- Retrieve a sequence of elements as in the previous example but transform them to a new type of object. For example, a query might retrieve only the last names from certain customer records in a data source. Or it might retrieve the complete record and then use it to construct another in-memory object type or even XML data before generating the final result sequence. The following example shows a projection from an `int` to a `string`. Note the new type of `highScoresQuery`.
+- Retrieve a sequence of elements as in the previous example but transform them to a new type of object. For example, a query might retrieve only the family names from certain customer records in a data source. Or it might retrieve the complete record and then use it to construct another in-memory object type or even XML data before generating the final result sequence. The following example shows a projection from an `int` to a `string`. Note the new type of `highScoresQuery`.
 
   :::code language="csharp" source="./snippets/SnippetApp/Basics.cs" id="basics2":::
 
@@ -50,6 +50,13 @@ A query expression must begin with a [from](../../language-reference/keywords/fr
 ### Query variable
 
 In LINQ, a query variable is any variable that stores a *query* instead of the *results* of a query. More specifically, a query variable is always an enumerable type that produces a sequence of elements when iterated over in a `foreach` statement or a direct call to its <xref:System.Collections.IEnumerator.MoveNext?displayProperty=nameWithType> method.
+
+> [!NOTE]
+> Examples in this article uses the following data source and sample data.
+
+:::code language="csharp" source="./snippets/SnippetApp/DataSources.cs" id="basics_datasource":::
+
+:::code language="csharp" source="./snippets/SnippetApp/Basics.cs" id="SourceData":::
 
 The following code example shows a simple query expression with one data source, one filtering clause, one ordering clause, and no transformation of the source elements. The `select` clause ends the query.
 
@@ -165,9 +172,9 @@ A query clause might itself contain a query expression, which is sometimes refer
 
 :::code language="csharp" source="./snippets/SnippetApp/Basics.cs" id="basics19":::
 
-For more information, see [Perform a subquery on a grouping operation](../perform-a-subquery-on-a-grouping-operation.md).
+For more information, see [Perform a subquery on a grouping operation](../standard-query-operators/grouping-data.md).
 
 ## See also
 
 - [Query keywords (LINQ)](../../language-reference/keywords/query-keywords.md)
-- [Standard query operators overview](../../programming-guide/concepts/linq/standard-query-operators-overview.md)
+- [Standard query operators overview](../standard-query-operators/index.md)

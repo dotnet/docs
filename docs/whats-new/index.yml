@@ -5,7 +5,7 @@ summary: Welcome to what's new in .NET and .NET docs. Use this page to navigate 
 metadata:
   title: .NET what's new?
   description: Learn about new .NET features and new and updated content in .NET docs.
-  ms.date: 02/01/2024
+  ms.date: 03/01/2024
   ms.topic: landing-page
 landingContent:
 - title: .NET 9 release updates
@@ -16,8 +16,8 @@ landingContent:
       url: ../core/whats-new/dotnet-9/overview.md
     - text: ASP.NET Core 9.0
       url: /aspnet/core/release-notes/aspnetcore-9.0
-    #- text: .NET MAUI 9
-    #  url: /dotnet/maui/whats-new/dotnet-9
+    - text: .NET MAUI 9
+      url: /dotnet/maui/whats-new/dotnet-9      
     - text: EF Core 9
       url: /ef/core/what-is-new/ef-core-9.0/whatsnew
 - title: .NET 8 release updates
@@ -40,12 +40,12 @@ landingContent:
   linkLists:
   - linkListType: whats-new
     links:
+    - text: February 2024
+      url: dotnet-docs-mod2.md
     - text: January 2024 doc updates
       url: dotnet-docs-mod1.md
     - text: December 2023 doc updates
       url: dotnet-docs-mod0.md
-    - text: November 2023 doc updates
-      url: dotnet-docs-mod2.md
 - title: Language updates
   linkLists:
   - linkListType: whats-new

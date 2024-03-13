@@ -1,11 +1,11 @@
 ---
-title: Unit testing C# code in .NET Core using dotnet test and xUnit
-description: Learn unit test concepts in C# and .NET Core through an interactive experience building a sample solution step-by-step using dotnet test and xUnit.
+title: Unit testing C# code in .NET using dotnet test and xUnit
+description: Learn unit test concepts in C# and .NET through an interactive experience building a sample solution step-by-step using dotnet test and xUnit.
 author: ardalis
 ms.author: wiwagn
-ms.date: 08/02/2021
+ms.date: 03/07/2024
 ---
-# Unit testing C# in .NET Core using dotnet test and xUnit
+# Unit testing C# in .NET using dotnet test and xUnit
 
 This tutorial shows how to build a solution containing a unit test project and source code project. To follow the tutorial using a pre-built solution, [view or download the sample code](https://github.com/dotnet/samples/tree/main/core/getting-started/unit-testing-using-dotnet-test/). For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#view-and-download-samples).
 

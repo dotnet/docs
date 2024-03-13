@@ -20,6 +20,5 @@ You can learn the naming conventions for generic type parameters in the article 
 ## See also
 
 - <xref:System.Collections.Generic>
-- [C# Programming Guide](../index.md)
 - [Generics](../../fundamentals/types/generics.md)
 - [Differences Between C++ Templates and C# Generics](./differences-between-cpp-templates-and-csharp-generics.md)

@@ -7,6 +7,9 @@ ms.date: 11/08/2022
 
 Starting with .NET 6, the project template for new C# console apps generates the following code in the *Program.cs* file:
 
+<!-- replaycheck-task id="59806399" -->
+<!-- replaycheck-task id="fb69a9" -->
+<!-- replaycheck-task id="4ba1bc63" -->
 ```csharp
 // See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
@@ -17,7 +20,7 @@ The new output uses recent C# features that simplify the code you need to write 
 ```csharp
 using System;
 
-namespace MyApp // Note: actual namespace depends on the project name.
+namespace MyApp
 {
     internal class Program
     {
@@ -28,6 +31,8 @@ namespace MyApp // Note: actual namespace depends on the project name.
     }
 }
 ```
+
+In the preceding code, the actual namespace depends on the project name.
 
 These two forms represent the same program. Both are valid with C# 10.0. When you use the newer version, you only need to write the body of the `Main` method. The compiler generates a `Program` class with an entry point method and places all your top level statements in that method. The name of the generated method isn't `Main`, it's an implementation detail that your code can't reference directly. You don't need to include the other program elements, the compiler generates them for you. You can learn more about the code the compiler generates when you use top level statements in the article on [top level statements](../../csharp/fundamentals/program-structure/top-level-statements.md) in the C# Guide's fundamentals section.
 
@@ -99,14 +104,20 @@ You can also add a [`<Using>`](../project-sdk/msbuild-props.md#using) item with 
 
 Starting with .NET SDK 6.0.300, the `console` template has a `--use-program-main` option. Use it to create a console project that doesn't use top-level statements and has a `Main` method.
 
+<!-- replaycheck-task id="7428562a" -->
+<!-- replaycheck-task id="52e0335c" -->
+<!-- replaycheck-task id="834a9e04" -->
+<!-- replaycheck-task id="d206d530" -->
 ```dotnetcli
 dotnet new console --use-program-main
 ```
 
 The generated `Program.cs` is as follows:
 
+<!-- replaycheck-task id="eedff294" -->
 ```csharp
 namespace MyProject;
+
 class Program
 {
     static void Main(string[] args)

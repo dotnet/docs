@@ -82,7 +82,6 @@ You will get an error saying that the compiler cannot create an instance of the 
 ## See also
 
 - [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
 - [Modifiers](index.md)
 - [virtual](./virtual.md)
 - [override](./override.md)

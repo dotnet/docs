@@ -176,7 +176,7 @@ void New3(ref String ar);
 > [!NOTE]
 > The **MarshalAsAttribute** has no effect on marshalling managed arrays to unmanaged code. In that direction, the array size is determined by examination. There is no way to marshal a subset of a managed array.  
   
- The interop marshaller uses the **CoTaskMemAlloc** and **CoTaskMemFree** methods to allocate and retrieve memory. Memory allocation performed by unmanaged code must also use these methods.  
+ The interop marshaller uses the **CoTaskMemAlloc** and **CoTaskMemFree** methods on Windows or **malloc** and **free** methods on other operating systems to allocate and retrieve memory. Memory allocation performed by unmanaged code must also use these methods.  
   
 ## Passing Arrays to COM  
 

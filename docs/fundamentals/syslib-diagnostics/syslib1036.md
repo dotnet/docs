@@ -2,6 +2,8 @@
 title: SYSLIB1036 error
 description: Learn about the diagnostic that generates compile-time error SYSLIB1036.
 ms.date: 05/07/2021
+f1_keywords:
+  - syslib1036
 ---
 
 # SYSLIB1036: `System.Text.Json` source generator encountered an invalid `[JsonExtensionData]` annotation

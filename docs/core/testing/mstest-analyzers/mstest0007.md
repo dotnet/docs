@@ -9,7 +9,7 @@ helpviewer_keywords:
 - UseAttributeOnTestMethodAnalyzer
 - MSTEST0007
 author: cvpoienaru
-ms.author: codrinpoienaru
+ms.author: copoiena
 ---
 # MSTEST0007: Use test attributes only on test methods
 

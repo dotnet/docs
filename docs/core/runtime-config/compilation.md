@@ -171,12 +171,14 @@ Project file:
 
 ## Profile-guided optimization
 
-This setting enables dynamic or tiered profile-guided optimization (PGO) in .NET 6 and later versions.
+This setting enables dynamic (tiered) profile-guided optimization (PGO) in .NET 6 and later versions.
 
 | | Setting name | Values |
 | - | - | - |
 | **Environment variable** | `DOTNET_TieredPGO` | `1` - enabled<br/>`0` - disabled |
 | **MSBuild property** | `TieredPGO` | `true` - enabled<br/>`false` - disabled |
+
+Profile-guided optimization (PGO) is where the JIT compiler generates optimized code in terms of the types and code paths that are most frequently used. *Dynamic* PGO works hand-in-hand with tiered compilation to further optimize code based on additional instrumentation that's put in place during tier 0.
 
 ### Examples
 

@@ -2,6 +2,8 @@
 title: SYSLIB0008 warning
 description: Learn about the obsoletion that generates compile-time warning SYSLIB0008.
 ms.date: 10/20/2020
+f1_keywords:
+  - syslib0008
 ---
 # SYSLIB0008: CreatePdbGenerator is not supported
 

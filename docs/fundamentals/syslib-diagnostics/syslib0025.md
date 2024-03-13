@@ -2,6 +2,8 @@
 title: SYSLIB0025 warning
 description: Learn about the obsoletion of SuppressIldasmAttribute that generates compile-time warning SYSLIB0025.
 ms.date: 06/21/2021
+f1_keywords:
+  - syslib0025
 ---
 # SYSLIB0025: SuppressIldasmAttribute is obsolete
 

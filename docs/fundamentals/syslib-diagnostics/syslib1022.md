@@ -2,6 +2,8 @@
 title: SYSLIB1022 error
 description: Learn about the diagnostic that generates compile-time error SYSLIB1022.
 ms.date: 05/07/2021
+f1_keywords:
+  - syslib1022
 ---
 
 # SYSLIB1022: Can't have malformed format strings

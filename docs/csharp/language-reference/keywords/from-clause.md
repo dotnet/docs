@@ -46,7 +46,7 @@ The following example shows how two `from` clauses can be used to form a complet
 
 [!code-csharp[cscsrefQueryKeywords#3](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsCsrefQueryKeywords/CS/From.cs#3)]
 
-For more information about join operations that use multiple `from` clauses, see [Perform left outer joins](../../linq/perform-left-outer-joins.md).
+For more information about join operations that use multiple `from` clauses, see [Perform left outer joins](../../linq/standard-query-operators/join-operations.md).
 
 ## See also
 

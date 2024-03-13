@@ -104,11 +104,11 @@ An implementation isn't required for a partial method when the signature obeys t
 - The return type is [`void`](../../language-reference/builtin-types/void.md).
 - None of the parameters have the [`out`](../../language-reference/keywords/method-parameters.md#out-parameter-modifier) modifier.
 - The method declaration can't include any of the following modifiers:
-  - [virtual](../../language-reference/keywords/virtual.md),
-  - [override](../../language-reference/keywords/override.md),
-  - [sealed](../../language-reference/keywords/sealed.md),
-  - [new](../../language-reference/keywords/new-modifier.md),
-  - [extern](../../language-reference/keywords/extern.md).
+  - [virtual](../../language-reference/keywords/virtual.md)
+  - [override](../../language-reference/keywords/override.md)
+  - [sealed](../../language-reference/keywords/sealed.md)
+  - [new](../../language-reference/keywords/new-modifier.md)
+  - [extern](../../language-reference/keywords/extern.md)
 
 The method and all calls to the method are removed at compile time when there's no implementation.
 

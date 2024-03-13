@@ -1,6 +1,6 @@
 ---
 title: dotnet package search command
-description: Searches a given source using the query string provided. If no sources are specified, all sources defined in the NuGet.Config file are used
+description: Searches a given source using the query string provided. If no sources are specified, all sources defined in the NuGet.Config file are used.
 author: Nigusu-Allehu
 ms.date: 10/26/2023
 ---

@@ -9,14 +9,14 @@ helpviewer_keywords:
 ---
 # Partial Classes and Methods (C# Programming Guide)
 
-It's possible to split the definition of a [class](../../language-reference/keywords/class.md), a [struct](../../language-reference/builtin-types/struct.md), an [interface](../../language-reference/keywords/interface.md) or a method over two or more source files. Each source file contains a section of the type or method definition, and all parts are combined when the application is compiled.
+It's possible to split the definition of a [class](../../language-reference/keywords/class.md), a [struct](../../language-reference/builtin-types/struct.md), an [interface](../../language-reference/keywords/interface.md), or a method over two or more source files. Each source file contains a section of the type or method definition, and all parts are combined when the application is compiled.
 
 ## Partial Classes
 
 There are several situations when splitting a class definition is desirable:
 
 - Declaring a class over separate files enables multiple programmers to work on it at the same time.
-- Code can be added to the class without having to recreate the source file that includes automatically generated source. Visual Studio uses this approach when it creates Windows Forms, Web service wrapper code, and so on. You can create code that uses these classes without having to modify the file created by Visual Studio.
+- You can add code to the class without having to recreate the source file that includes automatically generated source. Visual Studio uses this approach when it creates Windows Forms, Web service wrapper code, and so on. You can create code that uses these classes without having to modify the file created by Visual Studio.
 - [Source generators](../../roslyn-sdk/source-generators-overview.md) can generate extra functionality in a class.
 
 To split a class definition, use the [partial](../../language-reference/keywords/partial-type.md) keyword modifier, as shown here:
@@ -66,7 +66,7 @@ There are several rules to follow when you're working with partial class definit
 
 - All partial-type definitions meant to be parts of the same type must be modified with `partial`. For example, the following class declarations generate an error:
   :::code language="csharp" source="snippets/partial-classes-and-methods/Program.cs" id="Snippet7":::
-- The `partial` modifier can only appear immediately before the keywords `class`, `struct`, or `interface`.
+- The `partial` modifier can only appear immediately before the keyword `class`, `struct`, or `interface`.
 - Nested partial types are allowed in partial-type definitions as illustrated in the following example:
   :::code language="csharp" source="snippets/partial-classes-and-methods/Program.cs" id="Snippet8":::
 - All partial-type definitions meant to be parts of the same type must be defined in the same assembly and the same module (.exe or .dll file). Partial definitions can't span multiple modules.

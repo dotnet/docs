@@ -148,7 +148,7 @@ The `dotnet package search` command searches for a NuGet package.
         }
     ```
 
-- Search NuGet.org for packages using the search term "Newtonsoft.Json", show only two results and skip the first packages in the search result
+- Search NuGet.org for packages using the search term "Newtonsoft.Json," show only two results, and skip the first packages in the search result:
 
     ```dotnetcli
     dotnet package search Newtonsoft.Json --source https://api.nuget.org/v3/index.json --skip 1 --take 2

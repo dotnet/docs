@@ -129,8 +129,7 @@ public class TZExamples
     {
         // <Snippet6>
         DateTime dateNow = DateTime.Now;
-        Console.WriteLine("The date and time are {0} UTC.",
-                           TimeZoneInfo.ConvertTimeToUtc(dateNow));
+        Console.WriteLine($"The date and time are {TimeZoneInfo.ConvertTimeToUtc(dateNow)} UTC.");
         // </Snippet6>
     }
 
@@ -142,8 +141,7 @@ public class TZExamples
         try
         {
             TimeZoneInfo easternZone = TimeZoneInfo.FindSystemTimeZoneById(easternZoneId);
-            Console.WriteLine("The date and time are {0} UTC.",
-                              TimeZoneInfo.ConvertTimeToUtc(easternTime, easternZone));
+            Console.WriteLine($"The date and time are {TimeZoneInfo.ConvertTimeToUtc(easternTime, easternZone)} UTC.");
         }
         catch (TimeZoneNotFoundException)
         {
@@ -242,7 +240,7 @@ public class TZExamples
             TimeSpan[] offsets = TimeZoneInfo.Local.GetAmbiguousTimeOffsets(inputDate);
             for (int ctr = 0; ctr < offsets.Length; ctr++)
             {
-                Console.WriteLine("{0}.) {1} hours, {2} minutes", ctr, offsets[ctr].Hours, offsets[ctr].Minutes);
+                Console.WriteLine($"{ctr}.) {offsets[ctr].Hours} hours, {offsets[ctr].Minutes} minutes");
             }
             Console.Write("> ");
             int selection = Convert.ToInt32(Console.ReadLine());
@@ -250,12 +248,12 @@ public class TZExamples
             // Convert local time to UTC, and set Kind property to DateTimeKind.Utc
             utcDate = DateTime.SpecifyKind(inputDate - offsets[selection], DateTimeKind.Utc);
 
-            Console.WriteLine("{0} local time corresponds to {1} {2}.", inputDate, utcDate, utcDate.Kind.ToString());
+            Console.WriteLine($"{inputDate} local time corresponds to {utcDate} {utcDate.Kind.ToString()}.");
         }
         else
         {
             utcDate = inputDate.ToUniversalTime();
-            Console.WriteLine("{0} local time corresponds to {1} {2}.", inputDate, utcDate, utcDate.Kind.ToString());
+            Console.WriteLine($"{inputDate} local time corresponds to {utcDate} {utcDate.Kind.ToString()}.");
         }
     }
 
@@ -371,13 +369,11 @@ public class TZListForm : Form
         }
         catch (TimeZoneNotFoundException)
         {
-            Console.WriteLine("The {0} zone cannot be found in the registry.",
-                              timeZoneName);
+            Console.WriteLine("The {timeZoneName} zone cannot be found in the registry.");
         }
         catch (InvalidTimeZoneException)
         {
-            Console.WriteLine("The registry contains invalid data for the {0} zone.",
-                              timeZoneName);
+            Console.WriteLine("The registry contains invalid data for the {timeZoneName} zone.");
         }
 
         // The example produces the following output to the console:

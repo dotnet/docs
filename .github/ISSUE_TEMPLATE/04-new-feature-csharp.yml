@@ -1,10 +1,10 @@
 name: "C# 13 - New feature"
-description: Create the task list of a new feature in C# 12. Intended mostly for docs / product-team use.
+description: Create the task list of a new feature in C# 13. Intended mostly for docs / product-team use.
 title: "[C# 13]: New Feature - "
 labels:
   - ":checkered_flag: Release: .NET 9" 
   - Pri1
-  - csharp-whats-new/tech
+  - dotnet-csharp/svc
   - whats-new/subsvc
 assignees:
  - billwagner
@@ -59,7 +59,7 @@ body:
       label: Areas affected
       description: Check all areas that must be updated. Some are always updated.
       options:
-        - label: "**Add to What's new in C# 13**: Add links to updated docs in the What's new in C# 12 article."
+        - label: "**Add to What's new in C# 13**: Add links to updated docs in the What's new in C# 13 article."
           required: true
         - label:  "**Update language reference**: Detail the areas in the language reference that will be updated for this feature."
           required: true

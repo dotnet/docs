@@ -1,7 +1,7 @@
 ---
 title: "Main() and command-line arguments"
 description: Learn about Main() and command-line arguments. The 'Main' method is the entry point of an executable program.
-ms.date: 05/14/2021
+ms.date: 03/14/2024
 f1_keywords:
   - "main_CSharpKeyword"
   - "Main"
@@ -188,6 +188,9 @@ long num = Convert.ToInt64(s);
 ```
 
 For more information, see <xref:System.Int64.Parse%2A> and <xref:System.Convert>.
+
+> [!TIP]
+> Parsing command-line arguments can be complex. Consider using the [System.CommandLine](/dotnet/standard/commandline/) library (currently in beta) library to simplify the process.
 
 The following example shows how to use command-line arguments in a console application. The application takes one argument at run time, converts the argument to an integer, and calculates the factorial of the number. If no arguments are supplied, the application issues a message that explains the correct usage of the program.
 

@@ -3,7 +3,7 @@ title: Logging in C#
 author: IEvangelist
 description: Learn about app logging provided by the Microsoft.Extensions.Logging NuGet package in C#.
 ms.author: dapine
-ms.date: 2/26/2024
+ms.date: 03/14/2024
 ---
 
 # Logging in C# and .NET
@@ -12,7 +12,7 @@ ms.date: 2/26/2024
 
 ## Get started
 
-This first example shows the basics, but it is only suitable for a trivial console app. In the next section you see how to improve the code considering scale, performance, configuration and typical programming patterns.
+This first example shows the basics, but it's only suitable for a trivial console app. In the next section you see how to improve the code considering scale, performance, configuration and typical programming patterns.
 
 :::code language="csharp" source="snippets/logging/getting-started/Program.cs":::
 
@@ -22,6 +22,10 @@ The preceding example:
 - Creates an <xref:Microsoft.Extensions.Logging.ILogger> with a category named "Program". The [category](#log-category) is a `string` that is associated with each message logged
 by the `ILogger` object. It's used to group log messages from the same class (or category) together when searching or filtering logs.
 - Calls <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogInformation%2A> to log a message at the `Information` level. The [log level](#log-level) indicates the severity of the logged event and is used to filter out less important log messages. The log entry also includes a [message template](#log-message-template) `"Hello World! Logging is {Description}."` and a key-value pair `Description = fun`. The key name (or placeholder) comes from the word inside the curly braces in the template and the value comes from the remaining method argument.
+
+This project file for this example includes two NuGet packages:
+
+:::code language="xml" source="snippets/logging/getting-started/getting-started.csproj":::
 
 [!INCLUDE [logging-samples-browser](includes/logging-samples-browser.md)]
 

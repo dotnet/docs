@@ -182,7 +182,7 @@ You also use parentheses to adjust the order in which to evaluate operations in 
 
 ## Index from end operator ^
 
-Index and range operators can be used with a type that is *Countable*. A *Countable* type is a type that has an `int` property named either `Count` or `Length` with an accessible `get` accessor. [Collection expressions](./collection-expressions.md) also rely on *Countable* types.
+Index and range operators can be used with a type that is *countable*. A *countable* type is a type that has an `int` property named either `Count` or `Length` with an accessible `get` accessor. [Collection expressions](./collection-expressions.md) also rely on *countable* types.
 
 The `^` operator indicates the element position from the end of a sequence. For a sequence of length `length`, `^n` points to the element with offset `length - n` from the start of a sequence. For example, `^1` points to the last element of a sequence and `^length` points to the first element of a sequence.
 

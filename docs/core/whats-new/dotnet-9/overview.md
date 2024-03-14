@@ -60,7 +60,7 @@ New methods <xref:System.Linq.Enumerable.CountBy%2A> and <xref:System.Linq.Enume
 
 ### Collections
 
-The <xref:System.Collections.Generic.PriorityQueue%602> collection type in the <xref:System.Collections.Generic> namespace includes a new <xref:System.Collections.Generic.PriorityQueue%602.Remove(%600,%600@,%601@,System.Collections.Generic.IEqualityComparer{%600})> method that you can use the update the priority of an item in the queue.
+The <xref:System.Collections.Generic.PriorityQueue%602> collection type in the <xref:System.Collections.Generic> namespace includes a new <xref:System.Collections.Generic.PriorityQueue%602.Remove(%600,%600@,%601@,System.Collections.Generic.IEqualityComparer{%600})> method that you can use to update the priority of an item in the queue.
 
 #### PriorityQueue.Remove() method
 

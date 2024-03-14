@@ -94,6 +94,8 @@ items:
         href: core-libraries/8.0/enumerable-sum.md
       - name: FileStream writes when pipe is closed
         href: core-libraries/8.0/filestream-disposed-pipe.md
+      - name: FindSystemTimeZoneById doesn't return new object
+        href: core-libraries/8.0/timezoneinfo-object.md
       - name: GC.GetGeneration might return Int32.MaxValue
         href: core-libraries/8.0/getgeneration-return-value.md
       - name: GetFolderPath behavior on Unix
@@ -1178,6 +1180,8 @@ items:
         href: core-libraries/8.0/enumerable-sum.md
       - name: FileStream writes when pipe is closed
         href: core-libraries/8.0/filestream-disposed-pipe.md
+      - name: FindSystemTimeZoneById doesn't return new object
+        href: core-libraries/8.0/timezoneinfo-object.md
       - name: GC.GetGeneration might return Int32.MaxValue
         href: core-libraries/8.0/getgeneration-return-value.md
       - name: GetFolderPath behavior on Unix

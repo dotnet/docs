@@ -13,7 +13,11 @@ Properties combine aspects of both fields and methods. To the user of an object,
 
 Unlike fields, properties aren't classified as variables. Therefore, you can't pass a property as a [`ref`](../../language-reference/keywords/ref.md) or [`out`](../../language-reference/keywords/method-parameters.md#out-parameter-modifier) parameter.
 
-Properties have many uses: they can validate data before allowing a change; they can transparently expose data on a class where that data is retrieved from some other source, such as a database; they can take an action when data is changed, such as raising an event, or changing the value of other fields.
+Properties have many uses:
+
+- They can validate data before allowing a change.
+- They can transparently expose data on a class where that data is retrieved from some other source, such as a database.
+- They can take an action when data is changed, such as raising an event, or changing the value of other fields.
 
 Properties are declared in the class block by specifying the access level of the field, followed by the type of the property, followed by the name of the property, and followed by a code block that declares a `get`-accessor and/or a `set` accessor. For example:
 
@@ -23,7 +27,7 @@ In this example, `Month` is declared as a property so that the `set` accessor ca
 
 ## The get accessor
 
-The body of the `get` accessor resembles that of a method. It must return a value of the property type. The C# compiler and Just-in-time (JIT) compiler detect common patterns for implementing the `get` accessor, and optimizes those patterns. For example, a `get` accessor that returns a field without performing any computation will likely be compiled and JITed to a memory read of that field. Auto-implemented properties follow this pattern and will benefit from these optimizations. However, a virtual `get` accessor method can't be inlined because the compiler doesn't know at compile-time which method may actually be called at run time. The following example shows a `get` accessor that returns the value of a private field `_name`:
+The body of the `get` accessor resembles that of a method. It must return a value of the property type. The C# compiler and Just-in-time (JIT) compiler detect common patterns for implementing the `get` accessor, and optimizes those patterns. For example, a `get` accessor that returns a field without performing any computation is likely optimized to a memory read of that field. Auto-implemented properties follow this pattern and benefit from these optimizations. However, a virtual `get` accessor method can't be inlined because the compiler doesn't know at compile-time which method might actually be called at run time. The following example shows a `get` accessor that returns the value of a private field `_name`:
 
 :::code language="csharp" source="./snippets/properties/Person.cs" id="UsingEmployeeExample":::
 
@@ -40,11 +44,11 @@ The `get` accessor can be used to return the field value or to compute it and re
 
 :::code language="csharp" source="./snippets/properties/Person.cs" id="ManageExample":::
 
-In the previous example, if you don't assign a value to the `Name` property, it will return the value `NA`.
+In the previous example, if you don't assign a value to the `Name` property, it returns the value `NA`.
 
 ## The set accessor
 
-The `set` accessor resembles a method whose return type is [void](../../language-reference/builtin-types/void.md). It uses an implicit parameter called `value`, whose type is the type of the property. The compiler and JIT compiler also recognize common patterns for a `set` or `init` accessor. Those may also be compiled and JITed to directly writing the memory for the backing field. In the following example, a `set` accessor is added to the `Name` property:
+The `set` accessor resembles a method whose return type is [void](../../language-reference/builtin-types/void.md). It uses an implicit parameter called `value`, whose type is the type of the property. The compiler and JIT compiler also recognize common patterns for a `set` or `init` accessor. Those common patterns are optimized, directly writing the memory for the backing field. In the following example, a `set` accessor is added to the `Name` property:
 
 :::code language="csharp" source="./snippets/properties/Person.cs" id="StudentExample":::
 
@@ -60,11 +64,11 @@ The code to create an `init` accessor is the same as the code to create a `set` 
 
 ## Remarks
 
-Properties can be marked as `public`, `private`, `protected`, `internal`, `protected internal`, or `private protected`. These access modifiers define how users of the class can access the property. The `get` and `set` accessors for the same property may have different access modifiers. For example, the `get` may be `public` to allow read-only access from outside the type, and the `set` may be `private` or `protected`. For more information, see [Access Modifiers](./access-modifiers.md).
+Properties can be marked as `public`, `private`, `protected`, `internal`, `protected internal`, or `private protected`. These access modifiers define how users of the class can access the property. The `get` and `set` accessors for the same property can have different access modifiers. For example, the `get` might be `public` to allow read-only access from outside the type, and the `set` can be `private` or `protected`. For more information, see [Access Modifiers](./access-modifiers.md).
 
-A property may be declared as a static property by using the `static` keyword. Static properties are available to callers at any time, even if no instance of the class exists. For more information, see [Static Classes and Static Class Members](./static-classes-and-static-class-members.md).
+A property can be declared as a static property by using the `static` keyword. Static properties are available to callers at any time, even if no instance of the class exists. For more information, see [Static Classes and Static Class Members](./static-classes-and-static-class-members.md).
 
-A property may be marked as a virtual property by using the [virtual](../../language-reference/keywords/virtual.md) keyword. Virtual properties enable derived classes to override the property behavior by using the [override](../../language-reference/keywords/override.md) keyword. For more information about these options, see [Inheritance](../../fundamentals/object-oriented/inheritance.md).
+A property can be marked as a virtual property by using the [virtual](../../language-reference/keywords/virtual.md) keyword. Virtual properties enable derived classes to override the property behavior by using the [override](../../language-reference/keywords/override.md) keyword. For more information about these options, see [Inheritance](../../fundamentals/object-oriented/inheritance.md).
 
 A property overriding a virtual property can also be [sealed](../../language-reference/keywords/sealed.md), specifying that for derived classes it's no longer virtual. Lastly, a property can be declared [abstract](../../language-reference/keywords/abstract.md). Abstract properties don't define an implementation in the class, and derived classes must write their own implementation. For more information about these options, see [Abstract and Sealed Classes and Class Members](abstract-and-sealed-classes-and-class-members.md).
 
@@ -96,7 +100,7 @@ For more information about hiding members, see the [new Modifier](../../language
 
 In this example, two classes, `Cube` and `Square`, implement an abstract class, `Shape`, and override its abstract `Area` property. Note the use of the [override](../../language-reference/keywords/override.md) modifier on the properties. The program accepts the side as an input and calculates the areas for the square and cube. It also accepts the area as an input and calculates the corresponding side for the square and cube.
 
-[!code-csharp[csProgGuideProperties#6](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideProperties/CS/Properties.cs#6)]
+:::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideProperties/CS/Properties.cs" id="Snippet6":::
 
 ## See also
 

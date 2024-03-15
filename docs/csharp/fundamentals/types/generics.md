@@ -14,7 +14,7 @@ Generics introduces the concept of type parameters to .NET. Generics make it pos
 
 :::code language="csharp" source="snippets/generics/Program.cs" ID="Snippet1":::
 
-Generic classes and methods combine reusability, type safety, and efficiency in a way that their nongeneric counterparts can't. Generic type parameters  are replaced with the type arguments during compilation. In the preceding example, the compiler replaces `T` with `int`. Generics are most frequently used with collections and the methods that operate on them. The <xref:System.Collections.Generic> namespace contains several generic-based collection classes. The nongeneric collections, such as <xref:System.Collections.ArrayList> aren't recommended and are maintained for compatibility purposes. For more information, see [Generics in .NET](../../../standard/generics/index.md).
+Generic classes and methods combine reusability, type safety, and efficiency in a way that their nongeneric counterparts can't. Generic type parameters are replaced with the type arguments during compilation. In the preceding example, the compiler replaces `T` with `int`. Generics are most frequently used with collections and the methods that operate on them. The <xref:System.Collections.Generic> namespace contains several generic-based collection classes. The nongeneric collections, such as <xref:System.Collections.ArrayList> aren't recommended and are maintained only for compatibility purposes. For more information, see [Generics in .NET](../../../standard/generics/index.md).
 
 You can also create custom generic types and methods to provide your own generalized solutions and design patterns that are type-safe and efficient. The following code example shows a simple generic linked-list class for demonstration purposes. (In most cases, you should use the <xref:System.Collections.Generic.List%601> class provided by .NET instead of creating your own.) The type parameter `T` is used in several locations where a concrete type would ordinarily be used to indicate the type of the item stored in the list:
 
@@ -40,7 +40,7 @@ The following code example shows how client code uses the generic `GenericList<T
 - The .NET class library contains several generic collection classes in the <xref:System.Collections.Generic> namespace. The generic collections should be used whenever possible instead of classes such as <xref:System.Collections.ArrayList> in the <xref:System.Collections> namespace.
 - You can create your own generic interfaces, classes, methods, events, and delegates.
 - Generic classes can be constrained to enable access to methods on particular data types.
-- Information on the types that are used in a generic data type can be obtained at run-time by using reflection.
+- You can obtain information at run time on the types that are used in a generic data type by using reflection.
 
 ## C# language specification
 

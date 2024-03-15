@@ -1,7 +1,7 @@
 ---
 title: Containerize an app with Docker tutorial
 description: In this tutorial, you'll learn how to containerize a .NET application with Docker.
-ms.date: 09/22/2023
+ms.date: 03/15/2024
 ms.topic: tutorial
 ms.custom: "mvc"
 zone_pivot_groups: dotnet-version-7-8
@@ -283,7 +283,18 @@ Save the *Dockerfile* file. The directory structure of the working folder should
 
 :::zone-end
 
-From your terminal, run the following command:
+The `ENTRYPOINT` instruction sets `dotnet` as the host for the `DotNet.Docker.dll`. However, it's possible to instead define the `ENTRYPOINT` as the app executable itself, relying on the OS as the app host:
+
+```dockerfile
+ENTRYPOINT ["./DotNet.Docker"]
+```
+
+This causes the app to be executed directly, without `dotnet`, and instead relies on the app host and the underlying OS. There should be no app behavior difference when launching from via app host versus the `dotnet` host for ordinary server apps. Launching via an app host gives you better integration with the underlying OS. For example:
+
+- You'll see the app host name in your process list and not `dotnet`, which could be confusing if there is more than one.
+- You can customize the app host with OS specific features. For more information, see [this discussion about configuring default stack size on Windows](https://github.com/dotnet/runtime/issues/96347#issuecomment-1981470713).
+
+To build the container, from your terminal, run the following command:
 
 ```console
 docker build -t counter-image -f Dockerfile .

@@ -29,6 +29,8 @@ This change is a [*behavioral change*](../../categories.md#behavioral-change) an
 
 ## Reason for change
 
+This change was made to prevent the <xref:System.InvalidCastException> from being thrown.
+
 ## Recommended action
 
 Pass `Hashtable` instead of a string to the <xref:System.Windows.Markup.XmlAttributeProperties.SetXmlNamespaceMaps%2A> API.

@@ -38,7 +38,7 @@ In this sample application, a fictitious company called Contoso Electronics prov
 
 The architecture of the chat app is shown in the following diagram:
 
-:::image type="content" source="../media/get-started-app-chat-template/simple-architecture-diagram.png" lightbox="../media/get-started-app-chat-template/simple-architecture-diagram.png" alt-text="Diagram showing architecture from client to backend app.":::
+:::image type="content" source="./media/get-started-app-chat-template/simple-architecture-diagram.png" lightbox="./media/get-started-app-chat-template/simple-architecture-diagram.png" alt-text="Diagram showing architecture from client to backend app.":::
 
 - **User interface** - The application's chat interface is a [Blazor WebAssembly](/aspnet/core/blazor/) application. This interface is what accepts user queries, routes request to the application backend, and displays generated responses.
 - **Backend** - The application backend is an [ASP.NET Core Minimal API](/aspnet/core/fundamentals/minimal-apis/overview). The backend hosts the Blazor static web application and is what orchestrates the interactions among the different services. Services used in this application include:

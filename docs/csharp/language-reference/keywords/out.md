@@ -20,7 +20,7 @@ You can use the `out` keyword in two contexts:
 
 The `out` keyword is especially useful when a method needs to return more than one value since more than one `out` parameter can be used e.g.
 
-```cs
+```csharp
     public void Main()
     {
         double radiusValue = 3.92781;
@@ -41,12 +41,9 @@ The `out` keyword is especially useful when a method needs to return more than o
 
 The following limitations apply to using the `out` keyword:
 
-- The `out` parameters are not allowed to be used in asynchronous methods.
-
-- The `out` parameters are not allowed to be used in iterator methods.
-
+- `out` parameters are not allowed in asynchronous methods.
+- `out` parameters are not allowed in iterator methods.
 - Properties cannot be passed as `out` parameters.
-
 
 ## See also
 

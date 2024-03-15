@@ -34,18 +34,16 @@ Other articles in the collection include:
 
 ## Architectural overview
 
-A simple architecture of the chat app is shown in the following diagram:
+In this sample application, a fictitious company called Contoso Electronics provides the chat app experience to its employees to ask questions about the benefits, internal policies, as well as job descriptions and roles.
 
-:::image type="content" source="./media/get-started-app-chat-template/simple-architecture-diagram.png" alt-text="Diagram showing architecture from client to backend app.":::
+The architecture of the chat app is shown in the following diagram:
 
-Key components of the architecture include:
+:::image type="content" source="./media/get-started-app-chat-template/simple-architecture-diagram.png" lightbox="./media/get-started-app-chat-template/simple-architecture-diagram.png" alt-text="Diagram showing architecture from client to backend app.":::
 
-- A web application to host the interactive chat experience.
-- An Azure AI Search resource to index your data for relevant queries.
-- An Azure OpenAI Service to provide:
-  - Keywords to enhance the search over your own data.
-  - Answers from the OpenAI model.
-  - Embeddings from the ada model
+- **User interface** - The application's chat interface is a [Blazor WebAssembly](/aspnet/core/blazor/) application. This interface is what accepts user queries, routes request to the application backend, and displays generated responses.
+- **Backend** - The application backend is an [ASP.NET Core Minimal API](/aspnet/core/fundamentals/minimal-apis/overview). The backend hosts the Blazor static web application and is what orchestrates the interactions among the different services. Services used in this application include:
+  - [**Azure Cognitive Search**](/azure/search/search-what-is-azure-search) – Indexes documents from the data stored in an Azure Storage Account. This makes the documents searchable using [vector search](/azure/search/search-get-started-vector) capabilities.
+  - [**Azure OpenAI Service**](/azure/ai-services/openai/overview) – Provides the Large Language Models (LLM) to generate responses. [Semantic Kernel](/semantic-kernel/whatissk) is used in conjunction with the Azure OpenAI Service to orchestrate the more complex AI workflows.
 
 ## Cost
 

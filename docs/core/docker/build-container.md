@@ -292,7 +292,7 @@ ENTRYPOINT ["./DotNet.Docker"]
 This causes the app to be executed directly, without `dotnet`, and instead relies on the app host and the underlying OS. There should be no app behavior difference when launching from via app host versus the `dotnet` host for ordinary server apps. Launching via an app host gives you better integration with the underlying OS. For example:
 
 - You'll see the app host name in your process list and not `dotnet`, which could be confusing if there is more than one.
-- You can customize the app host with OS specific features. For more information, see [this discussion about configuring default stack size on Windows](https://github.com/dotnet/runtime/issues/96347#issuecomment-1981470713).
+- You can customize the app host with OS specific features. For example, see [this discussion about configuring default stack size on Windows](https://github.com/dotnet/runtime/issues/96347#issuecomment-1981470713).
 
 To build the container, from your terminal, run the following command:
 

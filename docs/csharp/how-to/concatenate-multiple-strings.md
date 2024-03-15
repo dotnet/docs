@@ -1,7 +1,7 @@
 ---
 title: "How to concatenate multiple strings (C# Guide)"
 description: There are multiple ways to concatenate strings in C#. Learn the options and the reasons behind different choices.
-ms.date: 06/30/2021
+ms.date: 03/15/2024
 helpviewer_keywords: 
   - "joining strings [C#]"
   - "concatenating strings [C#]"
@@ -51,7 +51,7 @@ You can read more about the [reasons to choose string concatenation or the `Stri
 
 ## `String.Concat` or `String.Join`
 
-Another option to join strings from a collection is to use <xref:System.String.Concat%2A?displayProperty=nameWithType> method. Use <xref:System.String.Join%2A?displayProperty=nameWithType> method if source strings should be separated by a delimiter. The following code combines an array of words using both methods:
+Another option to join strings from a collection is to use <xref:System.String.Concat%2A?displayProperty=nameWithType> method. Use <xref:System.String.Join%2A?displayProperty=nameWithType> method if a delimiter should separate source strings. The following code combines an array of words using both methods:
 
 :::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/Concatenate.cs" id="Snippet5":::
 

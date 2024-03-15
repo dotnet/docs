@@ -294,6 +294,8 @@ This causes the app to be executed directly, without `dotnet`, and instead relie
 - You'll see the app host name in your process list and not `dotnet`, which could be confusing if there is more than one.
 - You can customize the app host with OS specific features. For example, see [this discussion about configuring default stack size on Windows](https://github.com/dotnet/runtime/issues/96347#issuecomment-1981470713).
 
+For more information on deploying cross-platform binaries, see [Produce a cross-platform binary](../deploying/#produce-a-cross-platform-binary).
+
 To build the container, from your terminal, run the following command:
 
 ```console

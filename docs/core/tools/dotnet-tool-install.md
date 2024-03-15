@@ -1,7 +1,7 @@
 ---
 title: dotnet tool install command
 description: The dotnet tool install command installs the specified .NET tool on your machine.
-ms.date: 02/26/2024
+ms.date: 03/15/2024
 ---
 # dotnet tool install
 
@@ -15,7 +15,7 @@ ms.date: 02/26/2024
 
 ```dotnetcli
 dotnet tool install <PACKAGE_NAME> -g|--global
-    [-a|--arch <ARCHITECTURE>]
+    [--allow-downgrade] [-a|--arch <ARCHITECTURE>]
     [--add-source <SOURCE>] [--configfile <FILE>] [--disable-parallel]
     [--framework <FRAMEWORK>] [--ignore-failed-sources] [--interactive]
     [--no-cache] [--prerelease]
@@ -23,7 +23,7 @@ dotnet tool install <PACKAGE_NAME> -g|--global
     [--version <VERSION_NUMBER>]
 
 dotnet tool install <PACKAGE_NAME> --tool-path <PATH>
-    [-a|--arch <ARCHITECTURE>]
+    [--allow-downgrade] [-a|--arch <ARCHITECTURE>]
     [--add-source <SOURCE>] [--configfile <FILE>] [--disable-parallel]
     [--framework <FRAMEWORK>] [--ignore-failed-sources] [--interactive]
     [--no-cache] [--prerelease]
@@ -31,7 +31,7 @@ dotnet tool install <PACKAGE_NAME> --tool-path <PATH>
     [--version <VERSION_NUMBER>]
 
 dotnet tool install <PACKAGE_NAME> [--local]
-    [-a|--arch <ARCHITECTURE>]
+    [--allow-downgrade] [-a|--arch <ARCHITECTURE>]
     [--add-source <SOURCE>] [--configfile <FILE>]
     [--create-manifest-if-needed] [--disable-parallel]
     [--framework <FRAMEWORK>] [--ignore-failed-sources] [--interactive]
@@ -87,6 +87,8 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
 ## Options
 
+[!INCLUDE [allow-downgrade](../../../includes/cli-allow-downgrade.md)]
+
 - **`-a|--arch <ARCHITECTURE>`**
 
   Specifies the target architecture. This is a shorthand syntax for setting the [Runtime Identifier (RID)](../../../docs/core/rid-catalog.md), where the provided value is combined with the default RID. For example, on a `win-x64` machine, specifying `--arch x86` sets the RID to `win-x86`.
@@ -106,6 +108,8 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
   * Walk up the directory tree searching for a directory that has a `.git` subfolder. If one is found, create the manifest in that directory.
   * If the previous step doesn't find a directory, walk up the directory tree searching for a directory that has a `.sln` or `.git` file. If one is found, create the manifest in that directory.
   * If neither of the previous two steps finds a directory, create the manifest in the current working directory.
+
+  For more information on how manifests are located, see [Install a local tool](global-tools.md#install-a-local-tool).
 
 - **`--disable-parallel`**
 

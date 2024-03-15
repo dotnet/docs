@@ -1,7 +1,7 @@
 ---
 title: "Using Properties - C# Programming Guide"
 description: These examples illustrate using properties in C#. See how the get and set accessors implement read and write access and find out about uses for properties.
-ms.date: 07/29/2022
+ms.date: 03/15/2024
 helpviewer_keywords: 
   - "set accessor [C#]"
   - "get accessor [C#]"
@@ -9,9 +9,9 @@ helpviewer_keywords:
 ---
 # Using Properties (C# Programming Guide)
 
-Properties combine aspects of both fields and methods. To the user of an object, a property appears to be a field; accessing the property requires the same syntax. To the implementer of a class, a property is one or two code blocks, representing a [get](../../language-reference/keywords/get.md) accessor and/or a [set](../../language-reference/keywords/set.md) accessor. The code block for the `get` accessor is executed when the property is read; the code block for the `set` accessor is executed when the property is assigned a value. A property without a `set` accessor is considered read-only. A property without a `get` accessor is considered write-only. A property that has both accessors is read-write. You can use an `init` accessor instead of a `set` accessor to make the property read-only.
+Properties combine aspects of both fields and methods. To the user of an object, a property appears to be a field; accessing the property requires the same syntax. To the implementer of a class, a property is one or two code blocks, representing a [`get`](../../language-reference/keywords/get.md) accessor and/or a [`set`](../../language-reference/keywords/set.md), or [`init`](../../language-reference/keywords/init.md) accessor. The code block for the `get` accessor is executed when the property is read; the code block for the `set` or `init` accessor is executed when the property is assigned a value. A property without a `set` accessor is considered read-only. A property without a `get` accessor is considered write-only. A property that has both accessors is read-write. You can use an `init` accessor instead of a `set` accessor to make the property read-only but enable the property to be set as part of object initialization.
 
-Unlike fields, properties aren't classified as variables. Therefore, you can't pass a property as a [ref](../../language-reference/keywords/ref.md) or [out](../../language-reference/keywords/method-parameters.md#out-parameter-modifier) parameter.
+Unlike fields, properties aren't classified as variables. Therefore, you can't pass a property as a [`ref`](../../language-reference/keywords/ref.md) or [`out`](../../language-reference/keywords/method-parameters.md#out-parameter-modifier) parameter.
 
 Properties have many uses: they can validate data before allowing a change; they can transparently expose data on a class where that data is retrieved from some other source, such as a database; they can take an action when data is changed, such as raising an event, or changing the value of other fields.
 
@@ -19,13 +19,11 @@ Properties are declared in the class block by specifying the access level of the
 
 :::code language="csharp" source="./snippets/properties/TimePeriod.cs" id="UsingExample":::
 
-In this example, `Month` is declared as a property so that the `set` accessor can make sure that the `Month` value is set between 1 and 12. The `Month` property uses a private field to track the actual value. The real location of a property's data is often referred to as the property's "backing store." It's common for properties to use private fields as a backing store. The field is marked private in order to make sure that it can only be changed by calling the property. For more information about public and private access restrictions, see [Access Modifiers](./access-modifiers.md).
-
-Auto-implemented properties provide simplified syntax for simple property declarations. For more information, see [Auto-Implemented Properties](auto-implemented-properties.md).
+In this example, `Month` is declared as a property so that the `set` accessor can make sure that the `Month` value is set between 1 and 12. The `Month` property uses a private field to track the actual value. The real location of a property's data is often referred to as the property's "backing store." It's common for properties to use private fields as a backing store. The field is marked private in order to make sure that it can only be changed by calling the property. For more information about public and private access restrictions, see [Access Modifiers](./access-modifiers.md). Auto-implemented properties provide simplified syntax for simple property declarations. For more information, see [Auto-Implemented Properties](auto-implemented-properties.md).
 
 ## The get accessor
 
-The body of the `get` accessor resembles that of a method. It must return a value of the property type. The execution of the `get` accessor is equivalent to reading the value of the field. For example, when you're returning the private variable from the `get` accessor and optimizations are enabled, the call to the `get` accessor method is inlined by the compiler so there's no method-call overhead. However, a virtual `get` accessor method can't be inlined because the compiler doesn't know at compile-time which method may actually be called at run time. The following example shows a `get` accessor that returns the value of a private field `_name`:
+The body of the `get` accessor resembles that of a method. It must return a value of the property type. The C# compiler and Just-in-time (JIT) compiler detect common patterns for implementing the `get` accessor, and optimizes those patterns. For example, a `get` accessor that returns a field without performing any computation will likely be compiled and JITed to a memory read of that field. Auto-implemented properties follow this pattern and will benefit from these optimizations. However, a virtual `get` accessor method can't be inlined because the compiler doesn't know at compile-time which method may actually be called at run time. The following example shows a `get` accessor that returns the value of a private field `_name`:
 
 :::code language="csharp" source="./snippets/properties/Person.cs" id="UsingEmployeeExample":::
 
@@ -33,7 +31,7 @@ When you reference the property, except as the target of an assignment, the `get
 
 :::code language="csharp" source="./snippets/properties/Program.cs" id="GetAccessor":::
 
-The `get` accessor must end in a [return](../../language-reference/statements/jump-statements.md#the-return-statement) or [throw](../../language-reference/statements/exception-handling-statements.md#the-throw-statement) statement, and control can't flow off the accessor body.
+The `get` accessor must be an expression bodied member, or end in a [return](../../language-reference/statements/jump-statements.md#the-return-statement) or [throw](../../language-reference/statements/exception-handling-statements.md#the-throw-statement) statement, and control can't flow off the accessor body.
 
 > [!WARNING]
 > It's a bad programming style to change the state of the object by using the `get` accessor.
@@ -42,11 +40,11 @@ The `get` accessor can be used to return the field value or to compute it and re
 
 :::code language="csharp" source="./snippets/properties/Person.cs" id="ManageExample":::
 
-In the previous code segment, if you don't assign a value to the `Name` property, it will return the value `NA`.
+In the previous example, if you don't assign a value to the `Name` property, it will return the value `NA`.
 
 ## The set accessor
 
-The `set` accessor resembles a method whose return type is [void](../../language-reference/builtin-types/void.md). It uses an implicit parameter called `value`, whose type is the type of the property. In the following example, a `set` accessor is added to the `Name` property:
+The `set` accessor resembles a method whose return type is [void](../../language-reference/builtin-types/void.md). It uses an implicit parameter called `value`, whose type is the type of the property. The compiler and JIT compiler also recognize common patterns for a `set` or `init` accessor. Those may also be compiled and JITed to directly writing the memory for the backing field. In the following example, a `set` accessor is added to the `Name` property:
 
 :::code language="csharp" source="./snippets/properties/Person.cs" id="StudentExample":::
 

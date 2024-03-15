@@ -11,7 +11,7 @@ helpviewer_keywords:
 
 You compare strings to answer one of two questions: "Are these two strings equal?" or "In what order should these strings be placed when sorting them?"
 
-Multiple factors that affect string comparisons complicate those two questions:
+Those two questions are complicated by factors that affect string comparisons:
 
 - You can choose an ordinal or linguistic comparison.
 - You can choose if case matters.

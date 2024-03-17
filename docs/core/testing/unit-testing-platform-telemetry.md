@@ -1,19 +1,19 @@
 ---
-title: MSTest runner telemetry
-description: Learn about the telemetry data collected by the MSTest runner and how to disable it.
+title: Microsoft.Testing.Platform telemetry
+description: Learn about the telemetry data collected by Microsoft.Testing.Platform and how to disable it.
 author: nohwnd
 ms.author: jajares
 ms.date: 12/15/2023
 ms.custom: 
 ---
 
-# MSTest runner telemetry
+# Microsoft.Testing.Platform telemetry
 
-The MSTest runner collects telemetry data, which is used to help understand how to improve the product. For example, this usage data helps to debug issues, such as slow start-up times, and to prioritize new features. While these insights are appreciated, you're free to [disable telemetry](#disable-telemetry-reporting). For more information on telemetry, see [privacy statement](https://go.microsoft.com/fwlink/?LinkID=528096&clcid=0x409).
+`Microsoft.Testing.Platform` collects telemetry data, which is used to help understand how to improve the product. For example, this usage data helps to debug issues, such as slow start-up times, and to prioritize new features. While these insights are appreciated, you're free to [disable telemetry](#disable-telemetry-reporting). For more information on telemetry, see [privacy statement](https://go.microsoft.com/fwlink/?LinkID=528096&clcid=0x409).
 
 ## Types of telemetry data
 
-The MSTest runner only collects telemetry of type **Usage Data**. The usage data is used to understand how features are consumed and where time is spent when executing the test app. This helps prioritize product improvements.
+`Microsoft.Testing.Platform` only collects telemetry of type **Usage Data**. The usage data is used to understand how features are consumed and where time is spent when executing the test app. This helps prioritize product improvements.
 
 ## Disable telemetry reporting
 
@@ -21,17 +21,17 @@ To disable telemetry, set either `TESTINGPLATFORM_TELEMETRY_OPTOUT` or `DOTNET_C
 
 ## Disclosure
 
-The MSTest runner displays text similar to the following when you first run your executable. The output text might vary slightly depending on the version MSTest runner you're running. This "first run" experience is how Microsoft notifies you about data collection.
+`Microsoft.Testing.Platform` displays text similar to the following when you first run your executable. The output text might vary slightly depending on the version `Microsoft.Testing.Platform` you're running. This "first run" experience is how Microsoft notifies you about data collection.
 
 ```console
 Telemetry
 ---------
-MSTest runner collects usage data in order to help us improve your experience.
+Microsoft.Testing.Platform collects usage data in order to help us improve your experience.
 The data is collected by Microsoft and are not shared.
 You can opt-out of telemetry by setting the TESTINGPLATFORM_TELEMETRY_OPTOUT
 or DOTNET_CLI_TELEMETRY_OPTOUT environment variable to '1' or 'true' using your favorite shell.
 
-Read more about MSTest runner telemetry: https://aka.ms/testingplatform-telemetry
+Read more about Microsoft.Testing.Platform telemetry: https://aka.ms/testingplatform-telemetry
 ```
 
 ## Data points

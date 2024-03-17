@@ -38,7 +38,7 @@ You don't need anything else to build and run your tests and you can use the sam
 
 ## Register extensions
 
-The `MSTest runner` comes with a set of [extensions](./unit-testing-mstest-runner-extensions.md) that you can enable using an MSBuild property with the pattern `Enable[NugetPackageNameWithoutDots]`.  
+The `MSTest runner` comes with a set of [extensions](./unit-testing-platform-extensions.md) that you can enable using an MSBuild property with the pattern `Enable[NugetPackageNameWithoutDots]`.  
 
 For example, to enable the crash dump extension in the [Microsoft.Testing.Extensions.CrashDump](https://www.nuget.org/packages/Microsoft.Testing.Extensions.CrashDump) NuGet package use the following property `EnableMicrosoftTestingExtensionsCrashDump`:  
 

@@ -12,7 +12,7 @@ MSTest, Microsoft Testing Framework, is a test framework for .NET applications. 
 
 This is a fully supported, open-source and cross-platform test framwork that works with all supported .NET Frameworks (.NET Framwork, .NET Core, .NET, UWP, WinUI...) hosted on [GitHub](https://github.com/microsoft/testfx).
 
-# MSTest support policy
+## MSTest support policy
 
 Since v3.0.0, MSTest is strictly following semantic versioning (see ../../csharp/versioning.md#semantic-versioning).
 

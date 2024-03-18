@@ -39,8 +39,7 @@ Microsoft.Testing.Platform is based on [Microsoft.Testing.Platform](https://www.
 ## Communication protocol
 
 > [!NOTE]
-> Test Explorer supports the Microsoft.Testing.Platform protocol from version 17.10. If you run/debug your tests using earlier versions of Visual Studio,
-> Test Explorer will use `vstest.console.exe` and the old protocol to run these tests.
+> The Visual Studio Test Explorer supports the Microsoft.Testing.Platform protocol from version 17.10 onward. If you run/debug your tests using earlier versions of Visual Studio, Test Explorer will use `vstest.console.exe` and the old protocol to run these tests.
 
 Microsoft.Testing.Platform uses a JSON-RPC based protocol to communicate between Visual Studio and the test runner process. The protocol is documented in the [MSTest GitHub repository](https://github.com/microsoft/testfx/tree/main/docs/mstest-runner-protocol).
 

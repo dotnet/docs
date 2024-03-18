@@ -1,8 +1,9 @@
 ---
 title: Application publishing
 description: Learn about the ways to publish a .NET application. .NET can publish platform-specific or cross-platform apps. You can publish an app as self-contained or as framework-dependent. Each mode affects how a user runs your app.
-ms.date: 12/23/2022
+ms.date: 03/18/2024
 ---
+
 # .NET application publishing overview
 
 Applications you create with .NET can be published in two different modes, and the mode affects how a user runs your app.
@@ -17,12 +18,12 @@ When an executable is produced, you can specify the target platform with a runti
 
 The following table outlines the commands used to publish an app as framework-dependent or self-contained:
 
-| Type                                                                                     | Command                                                                        |
-|------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| [framework-dependent executable](#publish-framework-dependent) for the current platform. | [`dotnet publish`](../tools/dotnet-publish.md)                                 |
-| [framework-dependent executable](#publish-framework-dependent) for a specific platform.  | [`dotnet publish -r <RID>`](../tools/dotnet-publish.md) |
-| [framework-dependent binary](#publish-framework-dependent).                              | [`dotnet publish`](../tools/dotnet-publish.md)                                 |
-| [self-contained executable](#publish-self-contained).                                    | [`dotnet publish -r <RID> --self-contained`](../tools/dotnet-publish.md)                        |
+| Type | Command |
+|--|--|
+| [framework-dependent executable](#publish-framework-dependent) for the current platform. | [`dotnet publish`](../tools/dotnet-publish.md) |
+| [framework-dependent executable](#publish-framework-dependent) for a specific platform. | [`dotnet publish -r <RID>`](../tools/dotnet-publish.md) |
+| [framework-dependent binary](#publish-framework-dependent). | [`dotnet publish`](../tools/dotnet-publish.md) |
+| [self-contained executable](#publish-self-contained). | [`dotnet publish -r <RID> --self-contained`](../tools/dotnet-publish.md) |
 
 For more information, see [.NET dotnet publish command](../tools/dotnet-publish.md).
 
@@ -32,11 +33,11 @@ Executables aren't cross-platform, they're specific to an operating system and C
 
 The following commands produce an executable:
 
-| Type                                                                                     | Command |
-| ---------------------------------------------------------------------------------------- | ------- |
-| [framework-dependent executable](#publish-framework-dependent) for the current platform. |  [`dotnet publish`](../tools/dotnet-publish.md) |
-| [framework-dependent executable](#publish-framework-dependent) for a specific platform.  |  [`dotnet publish -r <RID>`](../tools/dotnet-publish.md) |
-| [self-contained executable](#publish-self-contained).                                    |  [`dotnet publish -r <RID> --self-contained`](../tools/dotnet-publish.md) |
+| Type | Command |
+|--|--|
+| [framework-dependent executable](#publish-framework-dependent) for the current platform. | [`dotnet publish`](../tools/dotnet-publish.md) |
+| [framework-dependent executable](#publish-framework-dependent) for a specific platform. | [`dotnet publish -r <RID>`](../tools/dotnet-publish.md) |
+| [self-contained executable](#publish-self-contained). | [`dotnet publish -r <RID> --self-contained`](../tools/dotnet-publish.md) |
 
 ## Produce a cross-platform binary
 
@@ -44,11 +45,16 @@ Cross-platform binaries are created when you publish your app as [framework-depe
 
 Cross-platform binaries can be run on any operating system as long as the targeted .NET runtime is already installed. If the targeted .NET runtime isn't installed, the app may run using a newer runtime if the app is configured to roll-forward. For more information, see [framework-dependent apps roll forward](../versions/selection.md#framework-dependent-apps-roll-forward).
 
+If you're running the app in a container, you can choose to run the app directly with OS as the app host or with the `dotnet` as the host. There should be no app behavior difference when launching from via app host versus the `dotnet` host for ordinary server apps. Launching via an app host gives you better integration with the underlying OS. For example:
+
+- You see the app host name in your process list and not `dotnet`, which could be confusing if there's more than one.
+- You can customize the app host with OS specific features. For example, see [this discussion about configuring default stack size on Windows](https://github.com/dotnet/runtime/issues/96347#issuecomment-1981470713).
+
 The following command produces a cross-platform binary:
 
-| Type                                                                                | Command |
-| ----------------------------------------------------------------------------------- | ------- |
-| [framework-dependent cross-platform binary](#publish-framework-dependent).          | [`dotnet publish`](../tools/dotnet-publish.md) |
+| Type | Command |
+|--|--|
+| [framework-dependent cross-platform binary](#publish-framework-dependent). | [`dotnet publish`](../tools/dotnet-publish.md) |
 
 ## Publish framework-dependent
 
@@ -113,7 +119,7 @@ If the app has platform-specific dependencies, such as a NuGet package containin
 You control which version of .NET is deployed with your app.
 
 - **Platform-specific targeting**\
-Because you have to publish your app for each platform, you know where your app will run. If .NET introduces a new platform, users can't run your app on that platform until you release a version targeting that platform. You can test your app for compatibility problems before your users run your app on the new platform.
+Because you have to publish your app for each platform, you know where your app runs. If .NET introduces a new platform, users can't run your app on that platform until you release a version targeting that platform. You can test your app for compatibility problems before your users run your app on the new platform.
 
 ### Disadvantages
 
@@ -150,12 +156,12 @@ Publishing with ReadyToRun images improves the startup time of your application 
 ### Advantages
 
 - **Improved startup time**\
-The application will spend less time running the JIT.
+The application spends less time running the JIT.
 
 ### Disadvantages
 
 - **Larger size**\
-The application will be larger on disk.
+The application is larger on disk.
 
 ### Examples
 

@@ -120,9 +120,9 @@ namespace System.Net
 
 For more information, see [Support for TLS System Default Versions included in .NET Framework 3.5 on Windows 8.1 and Windows Server 2012 R2](https://support.microsoft.com/help/3154520/support-for-tls-system-default-versions-included-in-the--net-framework).
 
-### For System.Net APIs (HttpClient, SslStream)
+## For System.Net APIs (HttpClient, SslStream)
 
-#### If your app targets .NET Framework 4.7 or later versions
+### If your app targets .NET Framework 4.7 or later versions
 
 The following sections show how to verify you're not using a specific TLS or SSL version.
 

@@ -47,8 +47,8 @@ Cross-platform binaries can be run on any operating system as long as the target
 
 You can choose to run the app as a platform-specific executable or as a cross-platform binary via `dotnet` command. There should be no app behavior difference when launching the platform-specific executable versus the `dotnet` command for ordinary server apps Launching via a platform-specific executable gives you better integration with the underlying OS. For example:
 
-- You see the app host name in your process list and not `dotnet`, which could be confusing if there's more than one.
-- You can customize the app host with OS specific features. For example, see [this discussion about configuring default stack size on Windows](https://github.com/dotnet/runtime/issues/96347#issuecomment-1981470713).
+- You see the application executable name in your process list and not `dotnet`, which could be confusing if there's more than one.
+- You can customize the platform-specific executable with OS specific features. For example, see [this discussion about configuring default stack size on Windows](https://github.com/dotnet/runtime/issues/96347#issuecomment-1981470713).
 
 The following command produces a cross-platform binary:
 

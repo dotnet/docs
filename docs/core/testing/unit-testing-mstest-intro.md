@@ -14,6 +14,6 @@ This is a fully supported, open-source and cross-platform test framwork that wor
 
 ## MSTest support policy
 
-Since v3.0.0, MSTest is strictly following semantic versioning (see ../../csharp/versioning.md#semantic-versioning).
+Since v3.0.0, MSTest is strictly following [semantic versioning](../../csharp/versioning.md#semantic-versioning).
 
 MSTest team only supports the latest released version and strongly encourages its users and customers to always update to latest version to benefit from new improvements and security patches. Preview releases aren't supported by Microsoft but they are offered for public testing ahead of the final release.

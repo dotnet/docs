@@ -31,7 +31,7 @@ The Transport Layer Security (TLS) protocol is an industry standard designed to 
 
 ## TLS support in .NET Framework
 
-Since the .NET Framework is dependent on `Schannel` on Windows, in most cases the operating system decides which versions can be negotiated and which version will be used.
+Since the .NET Framework is dependent on `Schannel` on Windows, which versions can be negotiated and which version will be used depends on the operating system.
 
 Here is an updated example table showing the highest supported TLS version for different combinations of operating system versions and .NET Framework target versions:
 
@@ -45,13 +45,13 @@ Here is an updated example table showing the highest supported TLS version for d
 | 4.8                           | TLS 1.2    | TLS 1.3    |
 | 4.8.1                         | TLS 1.2    | TLS 1.3    |
 
-For more information take a look on [TLS protocol version support in Schannel](https://learn.microsoft.com/en-us/windows/win32/secauthn/protocols-in-tls-ssl--schannel-ssp-#tls-protocol-version-support).
+For more information see [TLS protocol version support in Schannel](https://learn.microsoft.com/en-us/windows/win32/secauthn/protocols-in-tls-ssl--schannel-ssp-#tls-protocol-version-support).
 
 ## Recommendations
 
 - For TLS 1.3, target .NET Framework 4.6.2 or later.
 - Do not specify the TLS version. Configure your code to let the OS decide on the TLS version.
-- Perform a thorough code audit to verify you're not specifying a TLS or SSL version.
+- Perform a thorough code audit to verify you're not specifying a TLS or SSL version explicitly.
 - Do not use `SslProtocols.Default`.
 
 When your app lets the OS choose the TLS version:

@@ -70,21 +70,7 @@ items:
           - name: MSTest SDK
             href: ../../core/testing/unit-testing-mstest-sdk.md
           - name: MSTest runner
-            items:
-              - name: Overview
-                href: ../../core/testing/unit-testing-mstest-runner-intro.md
-              - name: Comparison with VSTest
-                href: ../../core/testing/unit-testing-mstest-runner-vs-vstest.md
-              - name: Extensions
-                href: ../../core/testing/unit-testing-mstest-runner-extensions.md
-              - name: Optional telemetry
-                href: ../../core/testing/unit-testing-mstest-runner-telemetry.md
-              - name: Known exit codes
-                href: ../../core/testing/unit-testing-mstest-runner-exit-codes.md
-              - name: Usage with dotnet test
-                href: ../../core/testing/unit-testing-mstest-runner-integrations.md
-              - name: Runsettings
-                href: ../../core/testing/unit-testing-mstest-runner-runsettings.md
+            href: ../../core/testing/unit-testing-mstest-runner-intro.md
           - name: Code analysis
             items:
               - name: Overview
@@ -133,7 +119,22 @@ items:
                     href: ../../core/testing/mstest-analyzers/mstest0013.md
                   - name: MSTEST0014
                     href: ../../core/testing/mstest-analyzers/mstest0014.md
-
+      - name: Microsoft Testing Platform
+        items:
+          - name: Overview
+            href: ../../core/testing/unit-testing-platform-intro.md
+          - name: Comparison with VSTest
+            href: ../../core/testing/unit-testing-platform-vs-vstest.md
+          - name: Extensions
+            href: ../../core/testing/unit-testing-platform-extensions.md
+          - name: Optional telemetry
+            href: ../../core/testing/unit-testing-platform-telemetry.md
+          - name: Known exit codes
+            href: ../../core/testing/unit-testing-platform-exit-codes.md
+          - name: Integration with dotnet test
+            href: ../../core/testing/unit-testing-platform-integration-dotnet-test.md
+          - name: Runsettings
+            href: ../../core/testing/unit-testing-platform-runsettings.md
       - name: Run selective unit tests
         href: ../../core/testing/selective-unit-tests.md
       - name: Order unit tests

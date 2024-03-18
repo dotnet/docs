@@ -31,7 +31,7 @@ Welcome to what's new in the .NET docs for December 2023. This article lists som
 - [<xref:System.Globalization.RegionInfo> class](../fundamentals/runtime-libraries/system-globalization-regioninfo.md)
 - [<xref:System.Globalization.SortKey> class](../fundamentals/runtime-libraries/system-globalization-sortkey.md)
 - [<xref:System.Globalization.SortVersion> class](../fundamentals/runtime-libraries/system-globalization-sortversion.md)
-- [MSTest runner extensions](../core/testing/unit-testing-mstest-runner-extensions.md)
+- [Microsoft.Testing.Platform extensions](../core/testing/unit-testing-platform-extensions.md)
 - [Use collection expression for array (IDE0300)](../fundamentals/code-analysis/style-rules/ide0300.md)
 - [Use collection expression for empty (IDE0301)](../fundamentals/code-analysis/style-rules/ide0301.md)
 - [Use collection expression for stackalloc (IDE0302)](../fundamentals/code-analysis/style-rules/ide0302.md)
@@ -41,10 +41,10 @@ Welcome to what's new in the .NET docs for December 2023. This article lists som
 - [CA1515: Consider making public types internal](../fundamentals/code-analysis/quality-rules/ca1515.md)
 - [Assembly validation](../fundamentals/apicompat/assembly-validation.md)
 - [API compatibility tools](../fundamentals/apicompat/overview.md)
-- [MSTest runner exit codes](../core/testing/unit-testing-mstest-runner-exit-codes.md)
-- [MSTest runner overview](../core/testing/unit-testing-mstest-runner-intro.md)
-- [MSTest runner telemetry](../core/testing/unit-testing-mstest-runner-telemetry.md)
-- [MSTest runner and VSTest comparison](../core/testing/unit-testing-mstest-runner-vs-vstest.md)
+- [Microsoft.Testing.Platform exit codes](../core/testing/unit-testing-platform-exit-codes.md)
+- [Microsoft.Testing.Platform overview](../core/testing/unit-testing-platform-intro.md)
+- [Microsoft.Testing.Platform telemetry](../core/testing/unit-testing-platform-telemetry.md)
+- [Microsoft.Testing.Platform and VSTest comparison](../core/testing/unit-testing-platform-vs-vstest.md)
 
 ### Updated articles
 

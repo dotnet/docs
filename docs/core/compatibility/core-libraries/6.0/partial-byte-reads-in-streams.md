@@ -1,9 +1,11 @@
 ---
 title: "Breaking change: Partial and zero-byte reads in DeflateStream, GZipStream, and CryptoStream"
 description: Learn about the .NET 6 breaking change in core .NET libraries where DeflateStream, GZipStream, and CryptoStream handle partial and zero-byte reads differently.
-ms.date: 06/23/2021
+ms.date: 03/18/2024
 ---
 # Partial and zero-byte reads in DeflateStream, GZipStream, and CryptoStream
+
+The `Read()` and `ReadAsync()` methods on <xref:System.IO.Compression.DeflateStream>, <xref:System.IO.Compression.GZipStream>, and <xref:System.Security.Cryptography.CryptoStream> might no longer return all the requested bytes.
 
 <xref:System.IO.Compression.DeflateStream>, <xref:System.IO.Compression.GZipStream>, and <xref:System.Security.Cryptography.CryptoStream> diverged from typical <xref:System.IO.Stream.Read%2A?displayProperty=nameWithType> and <xref:System.IO.Stream.ReadAsync%2A?displayProperty=nameWithType> behavior in two ways:
 
@@ -29,6 +31,21 @@ Starting in .NET 6, when `Stream.Read` or `Stream.ReadAsync` is called on one of
 - The underlying stream they wrap returns 0 from a call to its read, indicating no more data is available.
 
 Also, when `Stream.Read` or `Stream.ReadAsync` is called with a buffer of length 0, the operation succeeds once a call with a non-zero buffer would succeed.
+
+For example, the following call to <xref:System.IO.Compression.GZipStream.Read%2A?displayProperty=nameWithType> does not read all of the compressed text for very long strings.
+
+```csharp
+var gZipBuffer = Convert.FromBase64String(compressedText);
+using var memoryStream = new MemoryStream();
+int dataLength = BitConverter.ToInt32(gZipBuffer, 0);
+memoryStream.Write(gZipBuffer, 4, gZipBuffer.Length - 4);
+var buffer = new byte[dataLength];
+memoryStream.Position = 0;
+using (var stream = new GZipStream(memoryStream, CompressionMode.Decompress))
+{
+    stream.Read(buffer, 0, buffer.Length);
+}
+```
 
 ## Version introduced
 
@@ -56,7 +73,7 @@ In general, code should:
   }
   ```
 
-- Expect that a stream `Read` or `ReadAsync` call may not complete until at least a byte of data is available for consumption (or the stream reaches its end), regardless of how many bytes were requested. If an application depends on a zero-byte read completing immediately without waiting, it can check the buffer length itself and skip the call entirely:
+- Expect that a stream `Read` or `ReadAsync` call might not complete until at least a byte of data is available for consumption (or the stream reaches its end), regardless of how many bytes were requested. If an application depends on a zero-byte read completing immediately without waiting, it can check the buffer length itself and skip the call entirely:
 
   ```csharp
   int bytesRead = 0;
@@ -77,11 +94,3 @@ In general, code should:
 - <xref:System.Security.Cryptography.CryptoStream.Read%2A?displayProperty=fullName>
 - <xref:System.Security.Cryptography.CryptoStream.ReadAsync%2A?displayProperty=fullName>
 - <xref:System.Security.Cryptography.CryptoStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)?displayProperty=fullName>
-
-<!--
-
-### Category
-
-Core .NET libraries
-
--->

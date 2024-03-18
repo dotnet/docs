@@ -16,7 +16,7 @@ This change addresses both of these issues.
 
 ## Old behavior
 
-When `Stream.Read` or `Stream.ReadAsync` was called on one of the affected stream types with a buffer of length `N`, the operation would not complete until:
+When `Stream.Read` or `Stream.ReadAsync` was called on one of the affected stream types with a buffer of length `N`, the operation wouldn't complete until:
 
 - `N` bytes had been read from the stream, or
 - The underlying stream they wrap returned 0 from a call to its read, indicating no more data is available.
@@ -27,12 +27,12 @@ Also, when `Stream.Read` or `Stream.ReadAsync` was called with a buffer of lengt
 
 Starting in .NET 6, when `Stream.Read` or `Stream.ReadAsync` is called on one of the affected stream types with a buffer of length `N`, the operation completes when:
 
-- At least one byte has been read from the stream, or
+- At least 1 byte has been read from the stream, or
 - The underlying stream they wrap returns 0 from a call to its read, indicating no more data is available.
 
-Also, when `Stream.Read` or `Stream.ReadAsync` is called with a buffer of length 0, the operation succeeds once a call with a non-zero buffer would succeed.
+Also, when `Stream.Read` or `Stream.ReadAsync` is called with a buffer of length 0, the operation succeeds once a call with a nonzero buffer would succeed.
 
-For example, the following call to <xref:System.IO.Compression.GZipStream.Read%2A?displayProperty=nameWithType> does not read all of the compressed text for very long strings.
+For example, the following call to <xref:System.IO.Compression.GZipStream.Read%2A?displayProperty=nameWithType> doesn't read all of the compressed text for very long strings.
 
 ```csharp
 var gZipBuffer = Convert.FromBase64String(compressedText);
@@ -53,7 +53,7 @@ using (var stream = new GZipStream(memoryStream, CompressionMode.Decompress))
 
 ## Reason for change
 
-The streams might not have returned from a read operation even if data had been successfully read. This meant they couldn't readily be used in any bidirectional communication situation where messages smaller than the buffer size were being used. This could lead to deadlocks: the application is unable to read the data from the stream that's necessary to continue the operation. It could also lead to arbitrary slowdowns, with the consumer unable to process available data while waiting for additional data to arrive.
+The streams might not have returned from a read operation even if data had been successfully read. This meant they couldn't readily be used in any bidirectional communication situation where messages smaller than the buffer size were being used. This could lead to deadlocks: the application is unable to read the data from the stream that's necessary to continue the operation. It could also lead to arbitrary slowdowns, with the consumer unable to process available data while waiting for more data to arrive.
 
 Also, in highly scalable applications, it's common to use zero-byte reads as a way of delaying buffer allocation until a buffer is needed. An application can issue a read with an empty buffer, and when that read completes, data should soon be available to consume. The application can then issue the read again, this time with a buffer to receive the data. By delegating to the wrapped stream if no already decompressed or transformed data is available, these streams now inherit any such behavior of the streams they wrap.
 
@@ -61,7 +61,7 @@ Also, in highly scalable applications, it's common to use zero-byte reads as a w
 
 In general, code should:
 
-- Not make any assumptions about a stream `Read` or `ReadAsync` operation reading as much as was requested. The call returns the number of bytes read, which may be less than what was requested. If an application depends on the buffer being completely filled before progressing, it can perform the read in a loop to regain the behavior.
+- Not make any assumptions about a stream `Read` or `ReadAsync` operation reading as much as was requested. The call returns the number of bytes read, which might be less than what was requested. If an application depends on the buffer being completely filled before progressing, it can perform the read in a loop to regain the behavior.
 
   ```csharp
   int totalRead = 0;

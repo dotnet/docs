@@ -8,7 +8,7 @@ ms.date: 03/17/2024
 
 # MSTest overview
 
-MSTest, Microsoft Testing Framework, is a test framework for .NET applications. It allows to write and execute tests, tests suites with integration to Visual Studio and Visual Studio Code Test Explorers, .NET CLI, and many CI.
+MSTest, Microsoft Testing Framework, is a test framework for .NET applications. It allows to write and execute tests, tests suites with integration to Visual Studio and Visual Studio Code Test Explorers, .NET CLI, and many CI pipelines.
 
 This is a fully supported, open-source and cross-platform test framwork that works with all supported .NET Frameworks (.NET Framwork, .NET Core, .NET, UWP, WinUI...) hosted on [GitHub](https://github.com/microsoft/testfx).
 

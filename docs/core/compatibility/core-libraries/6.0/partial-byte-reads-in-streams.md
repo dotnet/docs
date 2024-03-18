@@ -67,7 +67,7 @@ In general, code should:
   int totalRead = 0;
   while (totalRead < buffer.Length)
   {
-      int bytesRead = stream.Read(buffer.Slice(totalRead));
+      int bytesRead = stream.Read(buffer, totalRead, buffer.Length - totalRead);
       if (bytesRead == 0) break;
       totalRead += bytesRead;
   }

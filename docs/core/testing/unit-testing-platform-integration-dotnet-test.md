@@ -8,17 +8,17 @@ ms.date: 12/20/2023
 
 # Use Microsoft.Testing.Platform with `dotnet test`
 
-This article describes how to use `dotnet test` to run tests when using Microsoft.Testing.Platform, and the various options that are available to configure the MSBuild output produced when running tests through Microsoft.Testing.Platform.
+This article describes how to use `dotnet test` to run tests when using `Microsoft.Testing.Platform`, and the various options that are available to configure the MSBuild output produced when running tests through Microsoft.Testing.Platform.
 
-This article shows how to use `dotnet test` to run all tests in a solution (_*.sln_) that uses Microsoft.Testing.Platform.
+This article shows how to use `dotnet test` to run all tests in a solution (_*.sln_) that uses `Microsoft.Testing.Platform`.
 
 ## `dotnet test` integration
 
-The [dotnet test](../tools/dotnet-test.md) command is a way to run tests from solutions, projects, or already built assemblies. [Microsoft.Testing.Platform](unit-testing-platform-intro.md) hooks up into this infrastructure to provide a unified way to run tests, especially when migrating from VSTest to Microsoft.Testing.Platform.
+The [dotnet test](../tools/dotnet-test.md) command is a way to run tests from solutions, projects, or already built assemblies. [Microsoft.Testing.Platform](unit-testing-platform-intro.md) hooks up into this infrastructure to provide a unified way to run tests, especially when migrating from VSTest to `Microsoft.Testing.Platform`.
 
 ### `dotnet test` integration - VSTest mode
 
-Microsoft.Testing.Platform provides a compatibility layer to work with `dotnet test` seamlessly.
+`Microsoft.Testing.Platform` provides a compatibility layer to work with `dotnet test` seamlessly.
 
 Tests can be run by running:
 
@@ -30,7 +30,7 @@ This layer runs test through VSTest and integrates with it on VSTest Test Framew
 
 ### `dotnet test` - Microsoft.Testing.Platform mode
 
-By default, VSTest is used to run Microsoft.Testing.Platform tests. You can enable a full Microsoft.Testing.Platform by specifying the `<TestingPlatformDotnetTestSupport>true</TestingPlatformDotnetTestSupport>` setting in your project. This setting disables VSTest and thanks to the transitive dependency to the [Microsoft.Testing.Platform.MSBuild](https://nuget.org/packages/Microsoft.Testing.Platform.MSBuild) NuGet package it will directly run all `Microsoft.Testing.Platform` empowered tests project in your solution. It works seamlessly if you pass a direct `Microsoft.Testing.Platform` test project.
+By default, VSTest is used to run `Microsoft.Testing.Platform` tests. You can enable a full `Microsoft.Testing.Platform` by specifying the `<TestingPlatformDotnetTestSupport>true</TestingPlatformDotnetTestSupport>` setting in your project. This setting disables VSTest and thanks to the transitive dependency to the [Microsoft.Testing.Platform.MSBuild](https://nuget.org/packages/Microsoft.Testing.Platform.MSBuild) NuGet package it will directly run all `Microsoft.Testing.Platform` empowered tests project in your solution. It works seamlessly if you pass a direct `Microsoft.Testing.Platform` test project.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

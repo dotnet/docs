@@ -1,6 +1,6 @@
 ---
 title: Containerize an app with Docker tutorial
-description: In this tutorial, you'll learn how to containerize a .NET application with Docker.
+description: In this tutorial, you learn how to containerize a .NET application with Docker.
 ms.date: 03/15/2024
 ms.topic: tutorial
 ms.custom: "mvc"
@@ -10,7 +10,7 @@ zone_pivot_groups: dotnet-version-7-8
 
 # Tutorial: Containerize a .NET app
 
-In this tutorial, you'll learn how to containerize a .NET application with Docker. Containers have many features and benefits, such as being an immutable infrastructure, providing a portable architecture, and enabling scalability. The image can be used to create containers for your local development environment, private cloud, or public cloud.
+In this tutorial, you learn how to containerize a .NET application with Docker. Containers have many features and benefits, such as being an immutable infrastructure, providing a portable architecture, and enabling scalability. The image can be used to create containers for your local development environment, private cloud, or public cloud.
 
 In this tutorial, you:
 
@@ -21,7 +21,7 @@ In this tutorial, you:
 > - Build a Docker image
 > - Create and run a Docker container
 
-You'll understand the Docker container build and deploy tasks for a .NET application. The *Docker platform* uses the *Docker engine* to quickly build and package apps as *Docker images*. These images are written in the *Dockerfile* format to be deployed and run in a layered container.
+You explore the Docker container build and deploy tasks for a .NET application. The *Docker platform* uses the *Docker engine* to quickly build and package apps as *Docker images*. These images are written in the *Dockerfile* format to be deployed and run in a layered container.
 
 > [!NOTE]
 > This tutorial **is not** for ASP.NET Core apps. If you're using ASP.NET Core, see the [Learn how to containerize an ASP.NET Core application](/aspnet/core/host-and-deploy/docker/building-net-docker-images) tutorial.
@@ -32,17 +32,17 @@ Install the following prerequisites:
 
 :::zone pivot="dotnet-8-0"
 
-- [.NET 8+ SDK](https://dotnet.microsoft.com/download/dotnet/8.0)\
+- [.NET 8+ SDK](https://dotnet.microsoft.com/download/dotnet/8.0).\
 If you have .NET installed, use the `dotnet --info` command to determine which SDK you're using.
-- [Docker Community Edition](https://www.docker.com/products/docker-desktop)
+- [Docker Community Edition](https://www.docker.com/products/docker-desktop).
 - A temporary working folder for the *Dockerfile* and .NET example app. In this tutorial, the name *docker-working* is used as the working folder.
 
 :::zone-end
 :::zone pivot="dotnet-7-0"
 
-- [.NET 7+ SDK](https://dotnet.microsoft.com/download/dotnet/7.0)\
+- [.NET 7+ SDK](https://dotnet.microsoft.com/download/dotnet/7.0).\
 If you have .NET installed, use the `dotnet --info` command to determine which SDK you're using.
-- [Docker Community Edition](https://www.docker.com/products/docker-desktop)
+- [Docker Community Edition](https://www.docker.com/products/docker-desktop).
 - A temporary working folder for the *Dockerfile* and .NET example app. In this tutorial, the name *docker-working* is used as the working folder.
 
 :::zone-end
@@ -55,7 +55,7 @@ You need a .NET app that the Docker container runs. Open your terminal, create a
 dotnet new console -o App -n DotNet.Docker
 ```
 
-Your folder tree looks like the following:
+Your folder tree looks similar to the following directory structure:
 
 ```Directory
 📁 docker-working
@@ -70,7 +70,7 @@ Your folder tree looks like the following:
             └── project.nuget.cache
 ```
 
-The `dotnet new` command creates a new folder named *App* and generates a "Hello World" console application. Change directories and navigate into the *App* folder, from your terminal session. Use the `dotnet run` command to start the app. The application runs, and print `Hello World!` below the command:
+The `dotnet new` command creates a new folder named *App* and generates a "Hello World" console application. Now,, you change directories and navigate into the *App* folder from your terminal session. Use the `dotnet run` command to start the app. The application runs, and prints `Hello World!` below the command:
 
 ```dotnetcli
 cd App
@@ -108,7 +108,7 @@ Replace the file with the following code that counts numbers every second:
 
 :::zone-end
 
-Save the file and test the program again with `dotnet run`. Remember that this app runs indefinitely. Use the cancel command <kbd>Ctrl+C</kbd> to stop it. The following is an example output:
+Save the file and test the program again with `dotnet run`. Remember that this app runs indefinitely. Use the cancel command <kbd>Ctrl+C</kbd> to stop it. Consider the following example output:
 
 ```dotnetcli
 dotnet run
@@ -289,12 +289,7 @@ The `ENTRYPOINT` instruction sets `dotnet` as the host for the `DotNet.Docker.dl
 ENTRYPOINT ["./DotNet.Docker"]
 ```
 
-This causes the app to be executed directly, without `dotnet`, and instead relies on the app host and the underlying OS. There should be no app behavior difference when launching from via app host versus the `dotnet` host for ordinary server apps. Launching via an app host gives you better integration with the underlying OS. For example:
-
-- You'll see the app host name in your process list and not `dotnet`, which could be confusing if there is more than one.
-- You can customize the app host with OS specific features. For example, see [this discussion about configuring default stack size on Windows](https://github.com/dotnet/runtime/issues/96347#issuecomment-1981470713).
-
-For more information on deploying cross-platform binaries, see [Produce a cross-platform binary](../deploying/#produce-a-cross-platform-binary).
+This causes the app to be executed directly, without `dotnet`, and instead relies on the app host and the underlying OS. For more information on deploying cross-platform binaries, see [Produce a cross-platform binary](../deploying/#produce-a-cross-platform-binary).
 
 To build the container, from your terminal, run the following command:
 
@@ -382,7 +377,7 @@ d0be06126f7d   counter-image   "dotnet DotNet.Docke…"   12 seconds ago   Creat
 
 ### Manage the container
 
-The container was created with a specific name `core-counter`, this name is used to manage the container. The following example uses the `docker start` command to start the container, and then uses the `docker ps` command to only show containers that are running:
+The container was created with a specific name `core-counter`. This name is used to manage the container. The following example uses the `docker start` command to start the container, and then uses the `docker ps` command to only show containers that are running:
 
 ```console
 docker start core-counter

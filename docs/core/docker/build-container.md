@@ -70,7 +70,7 @@ Your folder tree looks similar to the following directory structure:
             └── project.nuget.cache
 ```
 
-The `dotnet new` command creates a new folder named *App* and generates a "Hello World" console application. Now,, you change directories and navigate into the *App* folder from your terminal session. Use the `dotnet run` command to start the app. The application runs, and prints `Hello World!` below the command:
+The `dotnet new` command creates a new folder named *App* and generates a "Hello World" console application. Now, you change directories and navigate into the *App* folder from your terminal session. Use the `dotnet run` command to start the app. The application runs, and prints `Hello World!` below the command:
 
 ```dotnetcli
 cd App

@@ -45,7 +45,7 @@ Cross-platform binaries are created when you publish your app as [framework-depe
 
 Cross-platform binaries can be run on any operating system as long as the targeted .NET runtime is already installed. If the targeted .NET runtime isn't installed, the app may run using a newer runtime if the app is configured to roll-forward. For more information, see [framework-dependent apps roll forward](../versions/selection.md#framework-dependent-apps-roll-forward).
 
-If you're running the app in a container, you can choose to run the app directly with OS as the app host or with the `dotnet` as the host. There should be no app behavior difference when launching from via app host versus the `dotnet` host for ordinary server apps. Launching via an app host gives you better integration with the underlying OS. For example:
+You can choose to run the app directly with a platform-specific binary as the app host or with the `dotnet` as the host. There should be no app behavior difference when launching from via app host versus the `dotnet` host for ordinary server apps. Launching via an app host gives you better integration with the underlying OS. For example:
 
 - You see the app host name in your process list and not `dotnet`, which could be confusing if there's more than one.
 - You can customize the app host with OS specific features. For example, see [this discussion about configuring default stack size on Windows](https://github.com/dotnet/runtime/issues/96347#issuecomment-1981470713).

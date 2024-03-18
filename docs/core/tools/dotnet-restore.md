@@ -92,6 +92,8 @@ There are three specific settings that `dotnet restore` ignores:
 
 ## Options
 
+[!INCLUDE [arch](../../../includes/cli-arch.md)]
+
 [!INCLUDE [configfile](../../../includes/cli-configfile.md)]
 
 [!INCLUDE [disable-build-servers](../../../includes/cli-disable-build-servers.md)]

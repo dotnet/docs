@@ -124,42 +124,9 @@ The `GenerateAssemblyInfo` property controls `AssemblyInfo` attribute generation
 
 The [GeneratedAssemblyInfoFile](#generatedassemblyinfofile) setting controls the name of the generated file.
 
-When the `GenerateAssemblyInfo` value is `true`, [package-related project properties](#package-properties) are transformed into assembly attributes. The following table lists the project properties that generate the attributes. It also lists the properties that you can use to disable that generation on a per-attribute basis, for example:
+When the `GenerateAssemblyInfo` value is `true`, [package-related project properties](#package-properties) are transformed into assembly attributes.
 
-```xml
-<PropertyGroup>
-  <GenerateNeutralResourcesLanguageAttribute>false</GenerateNeutralResourcesLanguageAttribute>
-</PropertyGroup>
-```
-
-| MSBuild property       | Assembly attribute                                             | Property to disable attribute generation        |
-| ---------------------- | -------------------------------------------------------------- | ----------------------------------------------- |
-| `Company`              | <xref:System.Reflection.AssemblyCompanyAttribute>              | `GenerateAssemblyCompanyAttribute`              |
-| `Configuration`        | <xref:System.Reflection.AssemblyConfigurationAttribute>        | `GenerateAssemblyConfigurationAttribute`        |
-| `Copyright`            | <xref:System.Reflection.AssemblyCopyrightAttribute>            | `GenerateAssemblyCopyrightAttribute`            |
-| `Description`          | <xref:System.Reflection.AssemblyDescriptionAttribute>          | `GenerateAssemblyDescriptionAttribute`          |
-| `FileVersion`          | <xref:System.Reflection.AssemblyFileVersionAttribute>          | `GenerateAssemblyFileVersionAttribute`          |
-| `InformationalVersion` | <xref:System.Reflection.AssemblyInformationalVersionAttribute> | `GenerateAssemblyInformationalVersionAttribute` |
-| `Product`              | <xref:System.Reflection.AssemblyProductAttribute>              | `GenerateAssemblyProductAttribute`              |
-| `AssemblyTitle`        | <xref:System.Reflection.AssemblyTitleAttribute>                | `GenerateAssemblyTitleAttribute`                |
-| `AssemblyVersion`      | <xref:System.Reflection.AssemblyVersionAttribute>              | `GenerateAssemblyVersionAttribute`              |
-| `NeutralLanguage`      | <xref:System.Resources.NeutralResourcesLanguageAttribute>      | `GenerateNeutralResourcesLanguageAttribute`     |
-
-Notes about these settings:
-
-- `AssemblyVersion` and `FileVersion` default to the value of `$(Version)` without the suffix. For example, if `$(Version)` is `1.2.3-beta.4`, then the value would be `1.2.3`.
-- `InformationalVersion` defaults to the value of `$(Version)`.
-- If the `$(SourceRevisionId)` property is present, it's appended to `InformationalVersion`. You can disable this behavior using `IncludeSourceRevisionInInformationalVersion`.
-- `Copyright` and `Description` properties are also used for NuGet metadata.
-- `Configuration`, which defaults to `Debug`, is shared with all MSBuild targets. You can set it via the `--configuration` option of `dotnet` commands, for example, [dotnet pack](../tools/dotnet-pack.md).
-- Some of the properties are used when creating a NuGet package. For more information, see [Package properties](#package-properties).
-
-#### Migrating from .NET Framework
-
-.NET Framework project templates create a code file with these assembly info attributes set. The file is typically located at *.\Properties\AssemblyInfo.cs* or *.\Properties\AssemblyInfo.vb*. SDK-style projects generate this file for you based on the project settings. **You can't have both.** When porting your code to .NET 6 or later, do one of the following:
-
-- Disable the generation of the temporary code file that contains the assembly info attributes by setting `GenerateAssemblyInfo` to `false` in your project file. This enables you to keep your *AssemblyInfo* file.
-- Migrate the settings in the `AssemblyInfo` file to the project file, and then delete the `AssemblyInfo` file.
+For more information about generating assembly attributes using a project file, see [Set assembly attributes in a project file](../../standard/assembly/set-attributes-project-file.md).
 
 ### GeneratedAssemblyInfoFile
 
@@ -430,7 +397,7 @@ For example, for a .NET 5 app, the output path changes from `bin\Debug\net5.0` t
 
 The `AppendRuntimeIdentifierToOutputPath` property controls whether the [runtime identifier (RID)](../rid-catalog.md) is appended to the output path. The .NET SDK automatically appends the target framework and, if present, the runtime identifier to the output path. Setting `AppendRuntimeIdentifierToOutputPath` to `false` prevents the RID from being appended to the output path.
 
-For example, for a .NET 5 app and an RID of `win10-x64`, the output path changes from `bin\Debug\net5.0\win10-x64` to `bin\Debug\net5.0` with the following setting:
+For example, for a .NET 5 app and an RID of `win-x64`, the following setting changes the output path from `bin\Debug\net5.0\win-x64` to `bin\Debug\net5.0`:
 
 ```xml
 <PropertyGroup>
@@ -621,7 +588,7 @@ The `RuntimeIdentifier` property lets you specify a single [runtime identifier (
 
 ```xml
 <PropertyGroup>
-  <RuntimeIdentifier>ubuntu.16.04-x64</RuntimeIdentifier>
+  <RuntimeIdentifier>linux-x64</RuntimeIdentifier>
 </PropertyGroup>
 ```
 
@@ -634,7 +601,7 @@ The `RuntimeIdentifiers` property lets you specify a semicolon-delimited list of
 
 ```xml
 <PropertyGroup>
-  <RuntimeIdentifiers>win10-x64;osx.10.11-x64;ubuntu.16.04-x64</RuntimeIdentifiers>
+  <RuntimeIdentifiers>win-x64;osx-x64;linux-x64</RuntimeIdentifiers>
 </PropertyGroup>
 ```
 
@@ -1060,13 +1027,7 @@ The .NET SDK ships with all of the ["CA" code quality rules](../../fundamentals/
 
 The following table shows the available option values. They're listed in increasing order of the number of rules they enable.
 
-| .NET 6+ value | Meaning |
-|-|-|
-| `None` | All rules are disabled. You can selectively [opt in to](../../fundamentals/code-analysis/configuration-options.md) individual rules to enable them. |
-| `Default` | Default mode, where certain rules are enabled as build warnings, certain rules are enabled as Visual Studio IDE suggestions, and the remainder are disabled. |
-| `Minimum` | More aggressive mode than `Default` mode. Certain suggestions that are highly recommended for build enforcement are enabled as build warnings. To see which rules this includes, inspect the *%ProgramFiles%/dotnet/sdk/\[version]/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_\[level]_minimum.editorconfig* file. |
-| `Recommended` | More aggressive mode than `Minimum` mode, where more rules are enabled as build warnings. To see which rules this includes, inspect the *%ProgramFiles%/dotnet/sdk/\[version]/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_\[level]_recommended.editorconfig* file. |
-| `All` | All rules are enabled as build warnings. You can selectively [opt out](../../fundamentals/code-analysis/configuration-options.md) of individual rules to disable them. |
+[!INCLUDE [analysis-model-levels](../../fundamentals/code-analysis/includes/analysis-model-levels.md)]
 
 > [!NOTE]
 >

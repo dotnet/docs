@@ -7,7 +7,6 @@ helpviewer_keywords:
   - "extension methods [C#], for enums"
   - "enum extensibility [C#]"
 ms.topic: how-to
-ms.custom: contperf-fy21q2
 ms.assetid: 100106f9-1e54-462c-8ebe-3892fe23b6eb
 ---
 # How to create a new method for an enumeration (C# Programming Guide)
@@ -24,5 +23,4 @@ You can use extension methods to add functionality specific to a particular enum
   
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Extension Methods](./extension-methods.md)

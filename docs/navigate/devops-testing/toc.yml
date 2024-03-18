@@ -65,6 +65,73 @@ items:
             href: ../../core/testing/unit-testing-fsharp-with-mstest.md
           - name: VB unit testing
             href: ../../core/testing/unit-testing-visual-basic-with-mstest.md
+          - name: MSTest SDK
+            href: ../../core/testing/unit-testing-mstest-sdk.md
+          - name: MSTest runner
+            items:
+              - name: Overview
+                href: ../../core/testing/unit-testing-mstest-runner-intro.md
+              - name: Comparison with VSTest
+                href: ../../core/testing/unit-testing-mstest-runner-vs-vstest.md
+              - name: Extensions
+                href: ../../core/testing/unit-testing-mstest-runner-extensions.md
+              - name: Optional telemetry
+                href: ../../core/testing/unit-testing-mstest-runner-telemetry.md
+              - name: Known exit codes
+                href: ../../core/testing/unit-testing-mstest-runner-exit-codes.md
+              - name: Usage with dotnet test
+                href: ../../core/testing/unit-testing-mstest-runner-integrations.md
+              - name: Runsettings
+                href: ../../core/testing/unit-testing-mstest-runner-runsettings.md
+          - name: Code analysis
+            items:
+              - name: Overview
+                href: ../../core/testing/mstest-analyzers/overview.md
+              - name: Design
+                items:
+                  - name: Overview
+                    href: ../../core/testing/mstest-analyzers/design-rules.md
+                  - name: MSTEST0004
+                    href: ../../core/testing/mstest-analyzers/mstest0004.md
+                  - name: MSTEST0006
+                    href: ../../core/testing/mstest-analyzers/mstest0006.md
+                  - name: MSTEST0015
+                    href: ../../core/testing/mstest-analyzers/mstest0015.md
+                  - name: MSTEST0016
+                    href: ../../core/testing/mstest-analyzers/mstest0016.md
+              - name: Performance
+                items:
+                  - name: Overview
+                    href: ../../core/testing/mstest-analyzers/performance-rules.md
+                  - name: MSTEST0001
+                    href: ../../core/testing/mstest-analyzers/mstest0001.md
+              - name: Usage
+                items:
+                  - name: Overview
+                    href: ../../core/testing/mstest-analyzers/usage-rules.md
+                  - name: MSTEST0002
+                    href: ../../core/testing/mstest-analyzers/mstest0002.md
+                  - name: MSTEST0003
+                    href: ../../core/testing/mstest-analyzers/mstest0003.md
+                  - name: MSTEST0005
+                    href: ../../core/testing/mstest-analyzers/mstest0005.md
+                  - name: MSTEST0007
+                    href: ../../core/testing/mstest-analyzers/mstest0007.md
+                  - name: MSTEST0008
+                    href: ../../core/testing/mstest-analyzers/mstest0008.md
+                  - name: MSTEST0009
+                    href: ../../core/testing/mstest-analyzers/mstest0009.md
+                  - name: MSTEST0010
+                    href: ../../core/testing/mstest-analyzers/mstest0010.md
+                  - name: MSTEST0011
+                    href: ../../core/testing/mstest-analyzers/mstest0011.md
+                  - name: MSTEST0012
+                    href: ../../core/testing/mstest-analyzers/mstest0012.md
+                  - name: MSTEST0013
+                    href: ../../core/testing/mstest-analyzers/mstest0013.md
+                  - name: MSTEST0014
+                    href: ../../core/testing/mstest-analyzers/mstest0014.md
+
       - name: Run selective unit tests
         href: ../../core/testing/selective-unit-tests.md
       - name: Order unit tests

@@ -1,7 +1,7 @@
 ---
 title: Containerize an app with dotnet publish
 description: In this tutorial, you'll learn how to containerize a .NET application with dotnet publish.
-ms.date: 09/22/2023
+ms.date: 01/16/2024
 ms.topic: tutorial
 zone_pivot_groups: dotnet-version-7-8
 ---
@@ -83,6 +83,8 @@ Attempting to cancel the build...
 
 The worker template loops indefinitely. Use the cancel command <kbd>Ctrl+C</kbd> to stop it.
 
+:::zone pivot="dotnet-7-0"
+
 ## Add NuGet package
 
 The [Microsoft.NET.Build.Containers](https://www.nuget.org/packages/Microsoft.NET.Build.Containers) NuGet package is currently required to publish non-web projects as a container. To add the `Microsoft.NET.Build.Containers` NuGet package to the worker template, run the following [dotnet add package](../tools/dotnet-add-package.md) command:
@@ -94,20 +96,28 @@ dotnet add package Microsoft.NET.Build.Containers
 > [!TIP]
 > If you're building a web app and using .NET SDK 7.0.300 or later, then the package isn't required&mdash;the SDK contains the same functionality out of the box.
 
+:::zone-end
+
 ## Set the container image name
 
-There are various configuration options available when publishing an app as a container. For more information, see [Configure container image](#configure-container-image).
-
-By default, the container image name is the `AssemblyName` of the project. If that name is invalid as a container image name, you can override it by specifying a `ContainerImageName` or `ContainerRepository` as shown in the following project file:
+There are various configuration options available when publishing an app as a container.
 
 :::zone pivot="dotnet-8-0"
 
+By default, the container image name is the `AssemblyName` of the project. If that name is invalid as a container image name, you can override it by specifying a `ContainerRepository` as shown in the following project file:
+
 :::code language="xml" source="snippets/8.0/Worker/DotNet.ContainerImage.csproj" highlight="8":::
+
+For more information, see [ContainerRepository](#containerrepository).
 
 :::zone-end
 :::zone pivot="dotnet-7-0"
 
+By default, the container image name is the `AssemblyName` of the project. If that name is invalid as a container image name, you can override it by specifying a (`ContainerImageName` obsolete) or the preferred `ContainerRepository` as shown in the following project file:
+
 :::code language="xml" source="snippets/7.0/Worker/DotNet.ContainerImage.csproj" highlight="8":::
+
+For more information, see [ContainerImageName](#containerimagename).
 
 :::zone-end
 
@@ -172,6 +182,64 @@ You can control many aspects of the generated container through MSBuild properti
 > [!NOTE]
 > The only exceptions to this are `RUN` commands. Due to the way containers are built, those cannot be emulated. If you need this functionality, you'll need to use a _Dockerfile_ to build your container images.
 
+:::zone pivot="dotnet-8-0"
+
+### `ContainerArchiveOutputPath`
+
+Starting in .NET 8, you can create a container directly as a _tar.gz_ archive. This feature is useful if your workflow isn't straightforward and requires that you, for example, run a scanning tool over your images before pushing them. Once the archive is created, you can move it, scan it, or load it into a local Docker toolchain.
+
+To publish to an archive, add the `ContainerArchiveOutputPath` property to your `dotnet publish` command, for example:
+
+```dotnetcli
+dotnet publish \
+  -p PublishProfile=DefaultContainer \
+  -p ContainerArchiveOutputPath=./images/sdk-container-demo.tar.gz
+```
+
+You can specify either a folder name or a path with a specific file name. If you specify the folder name, the filename generated for the image archive file will be `$(ContainerRepository).tar.gz`. These archives can contain multiple tags inside them, only as single file is created for all `ContainerImageTags`.
+
+:::zone-end
+
+### Container image naming configuration
+
+Container images follow a specific naming convention. The name of the image is composed of several parts, the registry, optional port, repository, and optional tag and family.
+
+```dockerfile
+REGISTRY[:PORT]/REPOSITORY[:TAG[-FAMILY]]
+```
+
+For example, consider the fully qualified `mcr.microsoft.com/dotnet/runtime:8.0-alpine` image name:
+
+- `mcr.microsoft.com` is the registry (and in this case represents the Microsoft container registry).
+- `dotnet/runtime` is the repository (but some consider this the `user/repository`).
+- `8.0-alpine` is the tag and family (the family is an optional specifier that helps disambiguate OS packaging).
+
+Some properties described in the following sections correspond to managing parts of the generated image name. Consider the following table that maps the relationship between the image name and the build properties:
+
+:::zone pivot="dotnet-8-0"
+
+| Image name part   | MSBuild property      | Example values          |
+|-------------------|-----------------------|-------------------------|
+| `REGISTRY[:PORT]` | `ContainerRegistry`   | `mcr.microsoft.com:443` |
+| `PORT`            | `ContainerPort`       | `:443`                  |
+| `REPOSITORY`      | `ContainerRepository` | `dotnet/runtime`        |
+| `TAG`             | `ContainerImageTag`   | `8.0`                   |
+| `FAMILY`          | `ContainerFamily`     | `-alpine`               |
+
+:::zone-end
+:::zone pivot="dotnet-7-0"
+
+| Image name part   | MSBuild property     | Example values          |
+|-------------------|----------------------|-------------------------|
+| `REGISTRY[:PORT]` | `ContainerRegistry`  | `mcr.microsoft.com:443` |
+| `PORT`            | `ContainerPort`      | `:443`                  |
+| `REPOSITORY`      | `ContainerImageName` | `dotnet/runtime`        |
+| `TAG`             | `ContainerImageTag`  | `8.0`                   |
+
+:::zone-end
+
+The following sections describe the various properties that can be used to control the generated container image.
+
 ### `ContainerBaseImage`
 
 The container base image property controls the image used as the basis for your image. By default, the following values are inferred based on the properties of your project:
@@ -205,7 +273,7 @@ If you set a value here, you should set the fully qualified name of the image to
 
 :::zone pivot="dotnet-8-0"
 
-### ContainerFamily
+### `ContainerFamily`
 
 Starting with .NET 8, you can use the `ContainerFamily` MSBuild property to choose a different family of Microsoft-provided container images as the base image for your app. When set, this value is appended to the end of the selected TFM-specific tag, changing the tag provided. For example, to use the Alpine Linux variants of the .NET base images, you can set `ContainerFamily` to `alpine`:
 
@@ -237,7 +305,7 @@ For more information regarding the runtime identifiers supported by .NET, see [R
 
 ### `ContainerRegistry`
 
-The container registry property controls the destination registry, the place that the newly created image will be pushed to. Be default it's pushed to the local Docker daemon, but you can also specify a remote registry.  When using a remote registry that requires authentication, you authenticate using the well-known `docker login` mechanisms. For more information, See [authenticating to container registries](https://aka.ms/dotnet/containers/auth) for more details. For a concrete example of using this property, consider the following XML example:
+The container registry property controls the destination registry, the place that the newly created image will be pushed to. By default it's pushed to the local Docker daemon, but you can also specify a remote registry. When using a remote registry that requires authentication, you authenticate using the well-known `docker login` mechanisms. For more information, See [authenticating to container registries](https://aka.ms/dotnet/containers/auth) for more details. For a concrete example of using this property, consider the following XML example:
 
 ```xml
 <PropertyGroup>
@@ -245,7 +313,7 @@ The container registry property controls the destination registry, the place tha
 </PropertyGroup>
 ```
 
-This tooling supports publishing to any registry that supports the [Docker Registry HTTP API V2](https://docs.docker.com/registry/spec/api/).  This includes the following registries explicitly (and likely many more implicitly):
+This tooling supports publishing to any registry that supports the [Docker Registry HTTP API V2](https://docs.docker.com/registry/spec/api/). This includes the following registries explicitly (and likely many more implicitly):
 
 * [Azure Container Registry](https://azure.microsoft.com/products/container-registry)
 * [Amazon Elastic Container Registry](https://aws.amazon.com/ecr/)
@@ -291,7 +359,12 @@ Image names consist of one or more slash-delimited segments, each of which can o
 
 ### `ContainerImageTag(s)`
 
-The container image tag property controls the tags that are generated for the image. To specify a single tag use `ContainerImageTag` and for multiple tags use `ContainerImageTags`. Tags are often used to refer to different versions of an app, but they can also refer to different operating system distributions, or even different configurations.
+The container image tag property controls the tags that are generated for the image. To specify a single tag use `ContainerImageTag` and for multiple tags use `ContainerImageTags`.
+
+> [!IMPORTANT]
+> When you use `ContainerImageTags`, you'll end up with multiple images, one per unique tag.
+
+Tags are often used to refer to different versions of an app, but they can also refer to different operating system distributions, or even different configurations.
 
 :::zone pivot="dotnet-8-0"
 
@@ -327,6 +400,15 @@ Tags can only contain up to 127 alphanumeric characters, periods, underscores, a
 >
 > ```dotnetcli
 > dotnet publish -p ContainerImageTags='"1.2.3-alpha2;latest"'
+> ```
+>
+> This results in two images being generated: `my-app:1.2.3-alpha2` and `my-app:latest`.
+
+> [!TIP]
+> If you experience issues with the `ContainerImageTags` property, consider scoping an environment variable `ContainerImageTags` instead:
+>
+> ```dotnetcli
+> ContainerImageTags='1.2.3;latest' dotnet publish
 > ```
 
 ### `ContainerLabel`

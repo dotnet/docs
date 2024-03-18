@@ -3,7 +3,7 @@ title: .NET default templates for dotnet new
 description: The information about dotnet new templates shipped with dotnet SDK.
 ms.custom: updateeachrelease
 no-loc: [Blazor, WebAssembly]
-ms.date: 12/07/2023
+ms.date: 02/21/2024
 ---
 # .NET default templates for dotnet new
 
@@ -13,49 +13,7 @@ When you install the [.NET SDK](https://dotnet.microsoft.com/download), you rece
 dotnet new list
 ```
 
-The following table shows the templates that come pre-installed with the .NET SDK. The default language for the template is shown inside the brackets. Click on the short name link to see the specific template options.
-
-| Templates                                    | Short name                            | Language     | Tags                                  | Introduced       |
-|----------------------------------------------|---------------------------------------|--------------|---------------------------------------|------------------|
-| Console Application                          | [`console`](#console)                 | [C#], F#, VB | Common/Console                        | 1.0              |
-| Class library                                | [`classlib`](#classlib)               | [C#], F#, VB | Common/Library                        | 1.0              |
-| WPF Application                              | [`wpf`](#wpf)                         | [C#], VB     | Common/WPF                            | 3.0 (5.0 for VB) |
-| WPF Class library                            | [`wpflib`](#wpf)                      | [C#], VB     | Common/WPF                            | 3.0 (5.0 for VB) |
-| WPF Custom Control Library                   | [`wpfcustomcontrollib`](#wpf)         | [C#], VB     | Common/WPF                            | 3.0 (5.0 for VB) |
-| WPF User Control Library                     | [`wpfusercontrollib`](#wpf)           | [C#], VB     | Common/WPF                            | 3.0 (5.0 for VB) |
-| Windows Forms (WinForms) Application         | [`winforms`](#winforms)               | [C#], VB     | Common/WinForms                       | 3.0 (5.0 for VB) |
-| Windows Forms (WinForms) Class library       | [`winformslib`](#winforms)            | [C#], VB     | Common/WinForms                       | 3.0 (5.0 for VB) |
-| Worker Service                               | [`worker`](#web-others)               | [C#]         | Common/Worker/Web                     | 3.0              |
-| Unit Test Project                            | [`mstest`](#test)                     | [C#], F#, VB | Test/MSTest                           | 1.0              |
-| NUnit 3 Test Project                         | [`nunit`](#nunit)                     | [C#], F#, VB | Test/NUnit                            | 2.1.400          |
-| NUnit 3 Test Item                            | `nunit-test`                          | [C#], F#, VB | Test/NUnit                            | 2.2              |
-| xUnit Test Project                           | [`xunit`](#test)                      | [C#], F#, VB | Test/xUnit                            | 1.0              |
-| Razor Component                              | `razorcomponent`                      | [C#]         | Web/ASP.NET                           | 3.0              |
-| Razor Page                                   | [`page`](#page)                       | [C#]         | Web/ASP.NET                           | 2.0              |
-| MVC ViewImports                              | [`viewimports`](#namespace)           | [C#]         | Web/ASP.NET                           | 2.0              |
-| MVC ViewStart                                | `viewstart`                           | [C#]         | Web/ASP.NET                           | 2.0              |
-| Blazor Server App                            | [`blazorserver`](#blazorserver)       | [C#]         | Web/Blazor                            | 3.0              |
-| Blazor Server App Empty                      | [`blazorserver-empty`](#blazorserver) | [C#]         | Web/Blazor                            | 7.0              |
-| Blazor Web App                               | [`blazor`](#blazor)                   | [C#]         | Web/Blazor                            | 8.0.100          |
-| Blazor WebAssembly App                       | [`blazorwasm`](#blazorwasm)           | [C#]         | Web/Blazor/WebAssembly                | 3.1.300          |
-| Blazor WebAssembly App Empty                 | [`blazorwasm-empty`](#blazorwasm)     | [C#]         | Web/Blazor/WebAssembly                | 7.0              |
-| ASP.NET Core Empty                           | [`web`](#web)                         | [C#], F#     | Web/Empty                             | 1.0              |
-| ASP.NET Core Web App (Model-View-Controller) | [`mvc`](#web-options)                 | [C#], F#     | Web/MVC                               | 1.0              |
-| ASP.NET Core Web App                         | [`webapp, razor`](#web-options)       | [C#]         | Web/MVC/Razor Pages                   | 2.2, 2.0         |
-| ASP.NET Core with Angular                    | [`angular`](#spa)                     | [C#]         | Web/MVC/SPA                           | 2.0              |
-| ASP.NET Core with React.js                   | [`react`](#spa)                       | [C#]         | Web/MVC/SPA                           | 2.0              |
-| Razor Class Library                          | [`razorclasslib`](#razorclasslib)     | [C#]         | Web/Razor/Library/Razor Class Library | 2.1              |
-| ASP.NET Core Web API                         | [`webapi`](#webapi)                   | [C#], F#     | Web/Web API/API/Service/WebAPI        | 1.0              |
-| ASP.NET Core API                             | [`webapiaot`](#webapiaot)             | [C#]         | Web/Web API/API/Service               | 8.0              |
-| ASP.NET Core gRPC Service                    | [`grpc`](#web-others)                 | [C#]         | Web/gRPC                              | 3.0              |
-| dotnet gitignore file                        | `gitignore`                           |              | Config                                | 3.0              |
-| global.json file                             | [`globaljson`](#globaljson)           |              | Config                                | 2.0              |
-| NuGet Config                                 | `nugetconfig`                         |              | Config                                | 1.0              |
-| Dotnet local tool manifest file              | `tool-manifest`                       |              | Config                                | 3.0              |
-| Web Config                                   | `webconfig`                           |              | Config                                | 1.0              |
-| Solution File                                | `sln`                                 |              | Solution                              | 1.0              |
-| Protocol Buffer File                         | [`proto`](#namespace)                 |              | Web/gRPC                              | 3.0              |
-| EditorConfig file                            | `editorconfig`(#editorconfig)         |              | Config                                | 6.0              |
+[!INCLUDE [](../../../includes/templates.md)]
 
 ## Template options
 
@@ -250,6 +208,8 @@ The ability to create a project for an earlier TFM depends on having that versio
 
 ## `blazorserver`
 
+**Discontinued since .NET 8 SDK.**
+
 - **`-au|--auth <AUTHENTICATION_TYPE>`**
 
   The type of authentication to use. The possible values are:
@@ -257,7 +217,7 @@ The ability to create a project for an earlier TFM depends on having that versio
   - `None` - No authentication (Default).
   - `Individual` - Individual authentication.
   - `IndividualB2C` - Individual authentication with Azure AD B2C.
-  - `SingleOrg` - Organizational authentication for a single tenant.
+  - `SingleOrg` - Organizational authentication for a single tenant. [Entra External ID](/entra/external-id/) tenants also use `SingleOrg`.
   - `MultiOrg` - Organizational authentication for multiple tenants.
   - `Windows` - Windows authentication.
 
@@ -418,7 +378,7 @@ The ability to create a project for an earlier TFM depends on having that versio
   - `None` - No authentication (Default).
   - `Individual` - Individual authentication.
   - `IndividualB2C` - Individual authentication with Azure AD B2C.
-  - `SingleOrg` - Organizational authentication for a single tenant.
+  - `SingleOrg` - Organizational authentication for a single tenant. Entra External ID tenants also use SingleOrg.
 
 - **`--authority <AUTHORITY>`**
 
@@ -561,7 +521,7 @@ The ability to create a project for an earlier TFM depends on having that versio
   - `None` - No authentication (Default).
   - `Individual` - Individual authentication.
   - `IndividualB2C` - Individual authentication with Azure AD B2C.
-  - `SingleOrg` - Organizational authentication for a single tenant.
+  - `SingleOrg` - Organizational authentication for a single tenant. Entra External ID tenants also use SingleOrg.
   - `MultiOrg` - Organizational authentication for multiple tenants.
   - `Windows` - Windows authentication.
 
@@ -662,6 +622,8 @@ The ability to create a project for an earlier TFM depends on having that versio
 
 ## <a name="spa"></a> `angular`, `react`
 
+**Discontinued since .NET 8 SDK.**
+
 - **`-au|--auth <AUTHENTICATION_TYPE>`**
 
   The type of authentication to use. Available since .NET Core 3.0 SDK.
@@ -693,9 +655,11 @@ The ability to create a project for an earlier TFM depends on having that versio
 
   The following table lists the default values according to the SDK version number you're using:
 
+  > [!NOTE]
+  > There isn't a React template for `net8.0`, however, if you're interested in developing React apps with ASP.NET Core, see [Overview of Single Page Apps (SPAs) in ASP.NET Core](/aspnet/core/client-side/spa/intro?view=aspnetcore-8.0&preserve-view=true).
+
   | SDK version | Default value   |
   |-------------|-----------------|
-  | 8.0         | `net8.0`        |
   | 7.0         | `net7.0`        |
   | 6.0         | `net6.0`        |
   | 5.0         | `net5.0`        |
@@ -767,7 +731,7 @@ Creates a web API project with AOT publish enabled. For more information, see [N
 
   - `None` - No authentication (Default).
   - `IndividualB2C` - Individual authentication with Azure AD B2C.
-  - `SingleOrg` - Organizational authentication for a single tenant.
+  - `SingleOrg` - Organizational authentication for a single tenant. Entra External ID tenants also use SingleOrg.
   - `Windows` - Windows authentication.
 
 - **`--aad-b2c-instance <INSTANCE>`**
@@ -776,7 +740,7 @@ Creates a web API project with AOT publish enabled. For more information, see [N
 
 - **`-minimal|--use-minimal-apis`**
 
-  Create a project that uses the [ASP.NET Core minimal API](/aspnet/core/fundamentals/minimal-apis). Default is `false`, but this option is overridden by `--controllers`. Since the default for `--controllers` is `false`, entering `dotnet new webapi` without specifying either option creates a minimal API project.
+  Create a project that uses the [ASP.NET Core minimal API](/aspnet/core/fundamentals/minimal-apis). Default is `false`, but this option is overridden by `-controllers`. Since the default for `-controllers` is `false`, entering `dotnet new webapi` without specifying either option creates a minimal API project.
 
 - **`-ssp|--susi-policy-id <ID>`**
 
@@ -790,7 +754,7 @@ Creates a web API project with AOT publish enabled. For more information, see [N
 
   The Client ID for this project. Use with `IndividualB2C` or `SingleOrg` authentication. The default value is `11111111-1111-1111-11111111111111111`.
 
-- **`--controllers`**, **`--use-controllers`**
+- **`-controllers|--use-controllers`**
 
   Whether to use controllers instead of minimal APIs. If both this option and `-minimal` are specified, this option overrides the value specified by `-minimal`. Default is `false`. Available since .NET 8 SDK.
 
@@ -847,6 +811,20 @@ Creates a web API project with AOT publish enabled. For more information, see [N
 - **`--use-program-main`**
 
   If specified, an explicit `Program` class and `Main` method will be used instead of top-level statements. Available since .NET SDK 6.0.300. Default value: `false`.
+
+***
+
+## `apicontroller`
+
+API Controller with or without read/write actions.
+
+- **`-p:n|--name <NAME>`**
+
+  The namespace for the generated code. Default is `MyApp.Namespace`.
+
+- **`-ac|--actions`**
+
+  Create a controller with read/write actions. Default is `false`.
 
 ***
 

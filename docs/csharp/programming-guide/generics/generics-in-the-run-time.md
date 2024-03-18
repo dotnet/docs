@@ -47,6 +47,5 @@ Stack<int>? stack;
 ## See also
 
 - <xref:System.Collections.Generic>
-- [C# Programming Guide](../index.md)
 - [Introduction to Generics](../../fundamentals/types/generics.md)
 - [Generics](../../../standard/generics/index.md)

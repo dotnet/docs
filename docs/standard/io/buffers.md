@@ -51,16 +51,16 @@ This method of writing uses the `Memory<T>`/`Span<T>` buffer provided by the `IB
 
 The third representation is the most interesting one as it has performance implications on various operations on the `ReadOnlySequence<T>`:
 
-|Representation|Operation|Complexity|
----|---|---|
-|`T[]`/`ReadOnlyMemory<T>`|`Length`|`O(1)`|
-|`T[]`/`ReadOnlyMemory<T>`|`GetPosition(long)`|`O(1)`|
-|`T[]`/`ReadOnlyMemory<T>`|`Slice(int, int)`|`O(1)`|
-|`T[]`/`ReadOnlyMemory<T>`|`Slice(SequencePosition,  SequencePosition)`|`O(1)`|
-|`ReadOnlySequenceSegment<T>`|`Length`|`O(1)`|
-|`ReadOnlySequenceSegment<T>`|`GetPosition(long)`|`O(number of segments)`|
-|`ReadOnlySequenceSegment<T>`|`Slice(int, int)`|`O(number of segments)`|
-|`ReadOnlySequenceSegment<T>`|`Slice(SequencePosition, SequencePosition)`|`O(1)`|
+| Representation               | Operation                                    | Complexity              |
+|------------------------------|----------------------------------------------|-------------------------|
+| `T[]`/`ReadOnlyMemory<T>`    | `Length`                                     | `O(1)`                  |
+| `T[]`/`ReadOnlyMemory<T>`    | `GetPosition(long)`                          | `O(1)`                  |
+| `T[]`/`ReadOnlyMemory<T>`    | `Slice(int, int)`                            | `O(1)`                  |
+| `T[]`/`ReadOnlyMemory<T>`    | `Slice(SequencePosition,  SequencePosition)` | `O(1)`                  |
+| `ReadOnlySequenceSegment<T>` | `Length`                                     | `O(1)`                  |
+| `ReadOnlySequenceSegment<T>` | `GetPosition(long)`                          | `O(number of segments)` |
+| `ReadOnlySequenceSegment<T>` | `Slice(int, int)`                            | `O(number of segments)` |
+| `ReadOnlySequenceSegment<T>` | `Slice(SequencePosition, SequencePosition)`  | `O(1)`                  |
 
 Because of this mixed representation, the `ReadOnlySequence<T>` exposes indexes as `SequencePosition` instead of an integer. A `SequencePosition`:
 

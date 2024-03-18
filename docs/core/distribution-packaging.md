@@ -170,7 +170,7 @@ The following lists the recommended packages:
 
 - `dotnet-templates-[major].[minor]`
   - **Version:** \<sdk version>
-  - **Contains:** (15)
+  - **Contains:** (17)
 
 The following two meta packages are optional. They bring value for end users in that they abstract the top-level package (dotnet-sdk), which simplifies the installation of the full set of .NET packages. These meta packages reference a specific .NET SDK version.
 
@@ -219,7 +219,7 @@ In the `{dotnet_root/shared/Microsoft.AspNetCore.App/<aspnetcore version>` direc
 - `Microsoft.AspNetCore.Routing.dll` - installed with `aspnetcore-runtime-[major].[minor]` packages
 - `Microsoft.AspNetCore.Routing.pdb` - installed with `aspnetcore-runtime-dbg-[major].[minor]` packages
 
-Starting with .NET 8.0, all .NET debug content (PDB files), produced by source-build, is available in a tarball named `dotnet-symbols-sdk-<version>-<rid>.tar.gz`. This archive contains PDBs in subdirectories that match the directory structure of the .NET SDK tarball - `dotnet-symbols-<version>-<rid>.tar.gz`.
+Starting with .NET 8.0, all .NET debug content (PDB files), produced by source-build, is available in a tarball named `dotnet-symbols-sdk-<version>-<rid>.tar.gz`. This archive contains PDBs in subdirectories that match the directory structure of the .NET SDK tarball - `dotnet-sdk-<version>-<rid>.tar.gz`.
 
 While all debug content is available in the debug tarball, not all debug content is equally important. End users are mostly interested in the content of the `shared/Microsoft.AspNetCore.App/<aspnetcore version>` and `shared/Microsoft.NETCore.App/<runtime version>` directories.
 

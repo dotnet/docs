@@ -3,7 +3,7 @@ title: .NET and Ubuntu overview
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Ubuntu.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/14/2023
+ms.date: 01/24/2024
 ms.custom: updateeachrelease
 ---
 
@@ -110,7 +110,7 @@ The following table is a list of currently supported .NET releases and the versi
 | [23.10](linux-ubuntu-2310.md)       | 8.0, 7.0, 6.0           | 8.0, 7.0, 6.0            | 8.0, 7.0, 6.0                     |
 | [23.04](linux-ubuntu-2304.md)       | 8.0, 7.0, 6.0           | 7.0, 6.0                 | 8.0, 7.0, 6.0                     |
 | [22.10](linux-ubuntu-2210.md)       | 7.0, 6.0                | 7.0, 6.0                 | 7.0, 6.0, 3.1                     |
-| [22.04 (LTS)](linux-ubuntu-2204.md) | 8.0, 7.0, 6.0           | 6.0                      | 8.0, 7.0, 6.0, 3.1                |
+| [22.04 (LTS)](linux-ubuntu-2204.md) | 8.0, 7.0, 6.0           | 7.0, 6.0                 | 8.0, 7.0, 6.0, 3.1                |
 | [20.04 (LTS)](linux-ubuntu-2004.md) | 8.0, 7.0, 6.0           | None                     | 8.0, 7.0. 6.0, 5.0, 3.1, 2.1      |
 | [18.04 (LTS)](linux-ubuntu-1804.md) | 7.0, 6.0                | None                     | 7.0. 6.0, 5.0, 3.1, 2.2, 2.1      |
 | [16.04 (LTS)](linux-ubuntu-1604.md) | 6.0                     | None                     | 6.0, 5.0, 3.1, 3.0, 2.2, 2.1, 2.0 |
@@ -248,8 +248,8 @@ sudo apt-get update && \
 When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you must install these dependencies to run your app:
 
 - libc6
-- libgcc1
-- libgcc-s1 (for 22.x)
+- libgcc1 (for 16.x and 18.x)
+- libgcc-s1 (for 20.x or later)
 - libgssapi-krb5-2
 - libicu55 (for 16.x)
 - libicu60 (for 18.x)

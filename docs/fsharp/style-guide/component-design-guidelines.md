@@ -66,9 +66,9 @@ The following table follows .NET naming and capitalization conventions. There ar
 
 | Construct | Case | Part | Examples | Notes |
 |-----------|------|------|----------|-------|
-| Concrete types | PascalCase | Noun/ adjective | List, Double, Complex | Concrete types are structs, classes, enumerations, delegates, records, and unions. Though type names are traditionally lowercase in OCaml, F# has adopted the .NET naming scheme for types.
+| Concrete types | PascalCase | Noun/ adjective | List, Double, Complex | Concrete types are structs, classes, enumerations, delegates, records, and unions. Though type names are traditionally lowercase in OCaml, F# has adopted the .NET naming scheme for types. |
 | DLLs           | PascalCase |                 | Fabrikam.Core.dll |  |
-| Union tags     | PascalCase | Noun | Some, Add, Success | Do not use a prefix in public APIs. Optionally use a prefix when internal, such as `type Teams = TAlpha | TBeta | TDelta.` |
+| Union tags     | PascalCase | Noun | Some, Add, Success | Do not use a prefix in public APIs. Optionally use a prefix when internal, such as "type Teams = TAlpha &#124; TBeta &#124; TDelta". |
 | Event          | PascalCase | Verb | ValueChanged / ValueChanging |  |
 | Exceptions     | PascalCase |      | WebException | Name should end with "Exception". |
 | Field          | PascalCase | Noun | CurrentName  | |
@@ -76,9 +76,9 @@ The following table follows .NET naming and capitalization conventions. There ar
 | Method |  PascalCase |  Verb | ToString | |
 | Namespace | PascalCase | | Microsoft.FSharp.Core | Generally use `<Organization>.<Technology>[.<Subnamespace>]`, though drop the organization if the technology is independent of organization. |
 | Parameters | camelCase | Noun |  typeName, transform, range | |
-| let values (internal) | camelCase or PascalCase | Noun/ verb |  getValue, myTable |
+| let values (internal) | camelCase or PascalCase | Noun/ verb |  getValue, myTable | |
 | let values (external) | camelCase or PascalCase | Noun/verb  | List.map, Dates.Today | let-bound values are often public when following traditional functional design patterns. However, generally use PascalCase when the identifier can be used from other .NET languages. |
-| Property  | PascalCase  | Noun/ adjective  | IsEndOfFile, BackColor  | Boolean properties generally use Is and Can and should be affirmative, as in IsEndOfFile, not IsNotEndOfFile.
+| Property  | PascalCase  | Noun/ adjective  | IsEndOfFile, BackColor  | Boolean properties generally use Is and Can and should be affirmative, as in IsEndOfFile, not IsNotEndOfFile. |
 
 #### Avoid abbreviations
 

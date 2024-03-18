@@ -3,13 +3,13 @@ title: GitHub Actions and .NET
 description: Learn what role GitHub Actions play in .NET application development.
 author: IEvangelist
 ms.author: dapine
-ms.date: 10/05/2021
+ms.date: 12/14/2023
 ms.topic: overview
 ---
 
 # GitHub Actions and .NET
 
-In this overview, you'll learn what role [GitHub Actions](https://docs.github.com/actions) play in .NET application development. GitHub Actions allow your source code repositories to automate continuous integration (CI) and continuous delivery (CD). Beyond that, GitHub Actions expose more advanced scenarios &mdash; providing hooks for automation with code reviews, branch management, and issue triaging. With your .NET source code in GitHub you can leverage GitHub Actions in many ways.
+In this overview, you'll learn what role [GitHub Actions](https://docs.github.com/actions) play in .NET application development. GitHub Actions allow your source code repositories to automate continuous integration (CI) and continuous delivery (CD). Beyond that, GitHub Actions expose more advanced scenarios&mdash;providing hooks for automation with code reviews, branch management, and issue triaging. With your .NET source code in GitHub you can leverage GitHub Actions in many ways.
 
 ## GitHub Actions
 
@@ -19,7 +19,7 @@ GitHub Actions represent standalone commands, such as:
 - [actions/setup-dotnet](https://github.com/actions/setup-dotnet) - This action sets up a .NET CLI environment for use in actions.
 - [dotnet/versionsweeper](https://github.com/dotnet/versionsweeper) - This action sweeps .NET repos for out-of-support target versions of .NET.
 
-While these commands are isolated to a single action, they're powerful through *workflow composition*. In workflow composition, you define the *events* that trigger the workflow. Once a workflow is running, there are various *jobs* it's instructed to perform &mdash; with each job defining any number of *steps*. The *steps* delegate out to GitHub Actions, or alternatively call command-line scripts.
+While these commands are isolated to a single action, they're powerful through *workflow composition*. In workflow composition, you define the *events* that trigger the workflow. Once a workflow is running, there are various *jobs* it's instructed to perform. Each job defines any number of *steps*. The *steps* delegate out to GitHub Actions, or alternatively call command-line scripts.
 
 For more information, see [Introduction to GitHub Actions](https://docs.github.com/actions/learn-github-actions/introduction-to-github-actions). Think of a workflow file as a composition that represents the various steps to build, test, and/or publish an application. Many [.NET CLI commands](../core/tools/index.md) are available, most of which could be used in the context of a GitHub Action.
 
@@ -56,7 +56,7 @@ There are many examples of .NET workflow files provided as [tutorials](create-do
         [*build-and-test.yml*](dotnet-test-github-action.md)
     :::column-end:::
     :::column span="3":::
-        Exercises the unit tests within the repository. In order to run tests, the source code must first be compiled &mdash; this is really both a build and test workflow (it would supersede the *build-validation.yml* workflow). Failing unit tests will cause workflow failure.
+        Exercises the unit tests within the repository. In order to run tests, the source code must first be compiled&mdash;this is really both a build and test workflow (it would supersede the *build-validation.yml* workflow). Failing unit tests will cause workflow failure.
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -195,10 +195,6 @@ For more information, see [.NET CLI overview](../core/tools/index.md)
 ## See also
 
 For a more in-depth look at GitHub Actions with .NET, consider the following resources:
-
-- ***eBook(s):***
-
-  - [DevOps for ASP.NET Core Developers](../architecture/devops-for-aspnet-developers/index.md)
 
 - ***Quickstart(s):***
 

@@ -3,7 +3,7 @@ title: Dependency injection
 description: Learn how to use dependency injection within your .NET apps. Discover how to registration services, define service lifetimes, and express dependencies in C#.
 author: IEvangelist
 ms.author: dapine
-ms.date: 12/11/2023
+ms.date: 03/15/2024
 ms.topic: overview
 ---
 
@@ -234,17 +234,17 @@ The following table lists a small sample of these framework-registered services:
 
 Services can be registered with one of the following lifetimes:
 
-- Transient
-- Scoped
-- Singleton
+- [Transient](#transient)
+- [Scoped](#scoped)
+- [Singleton](#singleton)
 
 The following sections describe each of the preceding lifetimes. Choose an appropriate lifetime for each registered service.
 
 ### Transient
 
-Transient lifetime services are created each time they're requested from the service container. This lifetime works best for lightweight, stateless services. Register transient services with <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddTransient%2A>.
+Transient lifetime services are created each time they're requested from the service container. To register a service as _transient_, call <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddTransient%2A>.
 
-In apps that process requests, transient services are disposed at the end of the request.
+In apps that process requests, transient services are disposed at the end of the request. This lifetime incurs per/request allocations, as services are resolved and constructed every time. For more information, see [Dependency Injection Guidelines: IDisposable guidance for transient and shared instances](dependency-injection-guidelines.md#idisposable-guidance-for-transient-and-shared-instances).
 
 ### Scoped
 
@@ -397,7 +397,7 @@ The <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory> is alwa
 
 To achieve scoping services within implementations of <xref:Microsoft.Extensions.Hosting.IHostedService>, such as the <xref:Microsoft.Extensions.Hosting.BackgroundService>, do *not* inject the service dependencies via constructor injection. Instead, inject <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory>, create a scope, then resolve dependencies from the scope to use the appropriate service lifetime.
 
-:::code language="csharp" source="snippets/configuration/worker-scope/Worker.cs" highlight="6,8-9,15":::
+:::code language="csharp" source="snippets/configuration/worker-scope/Worker.cs":::
 
 In the preceding code, while the app is running, the background service:
 
@@ -410,15 +410,15 @@ From the sample source code, you can see how implementations of <xref:Microsoft.
 
 ## Keyed services
 
-.NET also supports service registrations and lookups based on a key, meaning it's possible to register multiple services with a different key, and use this key for the lookup.
+Starting with .NET 8, there is support for service registrations and lookups based on a key, meaning it's possible to register multiple services with a different key, and use this key for the lookup.
 
 For example, consider the case where you have different implementations of the interface `IMessageWriter`: `MemoryMessageWriter` and `QueueMessageWriter`.
 
 You can register these services using the overload of the service registration methods (seen earlier) that supports a key as a parameter:
 
 ```csharp
-services.AddSingleton<IMessageWriter, MemoryMessageWriter>("memory");
-services.AddSingleton<IMessageWriter, QueueMessageWriter>("queue");
+services.AddKeyedSingleton<IMessageWriter, MemoryMessageWriter>("memory");
+services.AddKeyedSingleton<IMessageWriter, QueueMessageWriter>("queue");
 ```
 
 The `key` isn't limited to `string`, it can be any `object` you want, as long as the type correctly implements `Equals`.

@@ -6,7 +6,6 @@ helpviewer_keywords:
   - "object initializers [C#], how to use"
   - "objects [C#], initializing"
 ms.topic: how-to
-ms.custom: contperf-fy21q2
 ms.assetid: 4b75ebb2-2e29-43de-929c-d736a8f27ce6
 ---
 # How to initialize objects by using an object initializer (C# Programming Guide)
@@ -29,5 +28,4 @@ Object initializers can be used to set indexers in an object. The following exam
 
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Object and Collection Initializers](object-and-collection-initializers.md)

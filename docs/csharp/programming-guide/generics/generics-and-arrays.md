@@ -18,7 +18,6 @@ Single-dimensional arrays that have a lower bound of zero automatically implemen
 ## See also
 
 - <xref:System.Collections.Generic>
-- [C# Programming Guide](../index.md)
 - [Generics](../../fundamentals/types/generics.md)
 - [Arrays](../../language-reference/builtin-types/arrays.md)
 - [Generics](../../../standard/generics/index.md)

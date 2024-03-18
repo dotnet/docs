@@ -35,7 +35,6 @@ Access modifiers are keywords used to specify the declared accessibility of a me
 
 - [Add accessibility modifiers (style rule IDE0040)](../../../fundamentals/code-analysis/style-rules/ide0040.md)
 - [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](./index.md)
 - [Access Modifiers](../../programming-guide/classes-and-structs/access-modifiers.md)
 - [Access Keywords](base.md)

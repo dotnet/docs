@@ -4,6 +4,42 @@ items:
 - name: Breaking changes by version
   expanded: true
   items:
+  - name: .NET 9
+    items:
+    - name: Overview
+      href: 9.0.md
+    - name: Core .NET libraries
+      items:
+      - name: Creating type of array of System.Void not allowed
+        href: core-libraries/9.0/type-instance.md
+      - name: Inline array struct size limit is enforced
+        href: core-libraries/9.0/inlinearray-size.md
+      - name: InMemoryDirectoryInfo prepends rootDir to files
+        href: core-libraries/9.0/inmemorydirinfo-prepends-rootdir.md
+      - name: RuntimeHelpers.GetSubArray returns different type
+        href: core-libraries/9.0/getsubarray-return.md
+    - name: Networking
+      items:
+      - name: HttpListenerRequest.UserAgent is nullable
+        href: networking/9.0/useragent-nullable.md
+    - name: SDK and MSBuild
+      items:
+      - name: "'dotnet workload' commands output change"
+        href: sdk/9.0/dotnet-workload-output.md
+      - name: Terminal logger is default
+        href: sdk/9.0/terminal-logger.md
+    - name: Windows Forms
+      items:
+      - name: BindingSource.SortDescriptions doesn't return null
+        href: windows-forms/9.0/sortdescriptions-return-value.md
+      - name: Changes to nullability annotations
+        href: windows-forms/9.0/nullability-changes.md
+      - name: ComponentDesigner.Initialize throws ArgumentNullException
+        href: windows-forms/9.0/componentdesigner-initialize.md
+      - name: DataGridViewRowAccessibleObject.Name starting row index
+        href: windows-forms/9.0/datagridviewrowaccessibleobject-name-row.md
+      - name: No exception if DataGridView is null
+        href: windows-forms/9.0/datagridviewheadercell-nre.md
   - name: .NET 8
     items:
     - name: Overview
@@ -52,10 +88,14 @@ items:
         href: core-libraries/8.0/decodefromutf8-whitespace.md
       - name: Boolean-backed enum type support removed
         href: core-libraries/8.0/bool-backed-enum.md
+      - name: Drive's current directory path enumeration
+        href: core-libraries/8.0/drive-current-dir-paths.md
       - name: Enumerable.Sum throws new OverflowException for some inputs
         href: core-libraries/8.0/enumerable-sum.md
       - name: FileStream writes when pipe is closed
         href: core-libraries/8.0/filestream-disposed-pipe.md
+      - name: FindSystemTimeZoneById doesn't return new object
+        href: core-libraries/8.0/timezoneinfo-object.md
       - name: GC.GetGeneration might return Int32.MaxValue
         href: core-libraries/8.0/getgeneration-return-value.md
       - name: GetFolderPath behavior on Unix
@@ -68,10 +108,12 @@ items:
         href: core-libraries/8.0/console-readkey-legacy.md
       - name: Method builders generate parameters with HasDefaultValue=false
         href: core-libraries/8.0/parameterinfo-hasdefaultvalue.md
-      - name: ProcessStartInfo.WindowsStyle honored when UseShellExecute is false
+      - name: ProcessStartInfo.WindowStyle honored when UseShellExecute is false
         href: core-libraries/8.0/processstartinfo-windowstyle.md
       - name: RuntimeIdentifier returns platform for which runtime was built
         href: core-libraries/8.0/runtimeidentifier.md
+      - name: Type.GetType() throws exception for all invalid element types
+        href: core-libraries/8.0/type-gettype.md
     - name: Cryptography
       items:
       - name: AesGcm authentication tag size on macOS
@@ -148,6 +190,8 @@ items:
         href: sdk/8.0/dotnet-publish-config.md
       - name: "'dotnet restore' produces security vulnerability warnings"
         href: sdk/8.0/dotnet-restore-audit.md
+      - name: Duplicate output for -getItem, -getProperty, and -getTargetResult
+        href: sdk/8.0/getx-duplicate-output.md
       - name: Implicit `using` for System.Net.Http no longer added
         href: sdk/8.0/implicit-global-using-netfx.md
       - name: MSBuild custom derived build events deprecated
@@ -166,6 +210,8 @@ items:
         href: sdk/8.0/trimming-unsupported-targetframework.md
       - name: Unlisted packages not installed by default
         href: sdk/8.0/unlisted-versions.md
+      - name: .user file imported in outer builds
+        href: sdk/8.0/user-file.md
       - name: Version requirements for .NET 8 SDK
         href: sdk/8.0/version-requirements.md
     - name: Serialization
@@ -180,6 +226,8 @@ items:
       items:
       - name: Anchor layout changes
         href: windows-forms/8.0/anchor-layout.md
+      - name: Certs checked before loading remote images in PictureBox
+        href: windows-forms/8.0/picturebox-remote-image.md
       - name: DefaultValueAttribute removed from some properties
         href: windows-forms/8.0/defaultvalueattribute-removal.md
       - name: ExceptionCollection ctor throws ArgumentException
@@ -1102,6 +1150,16 @@ items:
         href: containers/8.0/app-user.md
   - name: Core .NET libraries
     items:
+    - name: .NET 9
+      items:
+      - name: Creating type of array of System.Void not allowed
+        href: core-libraries/9.0/type-instance.md
+      - name: Inline array struct size limit is enforced
+        href: core-libraries/9.0/inlinearray-size.md
+      - name: InMemoryDirectoryInfo prepends rootDir to files
+        href: core-libraries/9.0/inmemorydirinfo-prepends-rootdir.md
+      - name: RuntimeHelpers.GetSubArray returns different type
+        href: core-libraries/9.0/getsubarray-return.md
     - name: .NET 8
       items:
       - name: Activity operation name when null
@@ -1116,10 +1174,14 @@ items:
         href: core-libraries/8.0/decodefromutf8-whitespace.md
       - name: Boolean-backed enum type support removed
         href: core-libraries/8.0/bool-backed-enum.md
+      - name: Drive's current directory path enumeration
+        href: core-libraries/8.0/drive-current-dir-paths.md
       - name: Enumerable.Sum throws new OverflowException for some inputs
         href: core-libraries/8.0/enumerable-sum.md
       - name: FileStream writes when pipe is closed
         href: core-libraries/8.0/filestream-disposed-pipe.md
+      - name: FindSystemTimeZoneById doesn't return new object
+        href: core-libraries/8.0/timezoneinfo-object.md
       - name: GC.GetGeneration might return Int32.MaxValue
         href: core-libraries/8.0/getgeneration-return-value.md
       - name: GetFolderPath behavior on Unix
@@ -1132,10 +1194,12 @@ items:
         href: core-libraries/8.0/console-readkey-legacy.md
       - name: Method builders generate parameters with HasDefaultValue=false
         href: core-libraries/8.0/parameterinfo-hasdefaultvalue.md
-      - name: ProcessStartInfo.WindowsStyle honored when UseShellExecute is false
+      - name: ProcessStartInfo.WindowStyle honored when UseShellExecute is false
         href: core-libraries/8.0/processstartinfo-windowstyle.md
       - name: RuntimeIdentifier returns platform for which runtime was built
         href: core-libraries/8.0/runtimeidentifier.md
+      - name: Type.GetType() throws exception for all invalid element types
+        href: core-libraries/8.0/type-gettype.md
     - name: .NET 7
       items:
       - name: API obsoletions with default diagnostic ID
@@ -1478,6 +1542,10 @@ items:
         href: maui/7.0/iwindowstatemanager-apis-removed.md
   - name: Networking
     items:
+    - name: .NET 9
+      items:
+      - name: HttpListenerRequest.UserAgent is nullable
+        href: networking/9.0/useragent-nullable.md
     - name: .NET 8
       items:
       - name: SendFile throws NotSupportedException for connectionless sockets
@@ -1518,6 +1586,12 @@ items:
         href: reflection/8.0/function-pointer-reflection.md
   - name: SDK and MSBuild
     items:
+    - name: .NET 9
+      items:
+      - name: "'dotnet workload' commands output change"
+        href: sdk/9.0/dotnet-workload-output.md
+      - name: Terminal logger is default
+        href: sdk/9.0/terminal-logger.md
     - name: .NET 8
       items:
       - name: CLI console output uses UTF-8
@@ -1532,6 +1606,8 @@ items:
         href: sdk/8.0/dotnet-publish-config.md
       - name: "'dotnet restore' produces security vulnerability warnings"
         href: sdk/8.0/dotnet-restore-audit.md
+      - name: Duplicate output for -getItem, -getProperty, and -getTargetResult
+        href: sdk/8.0/getx-duplicate-output.md
       - name: Implicit `using` for System.Net.Http no longer added
         href: sdk/8.0/implicit-global-using-netfx.md
       - name: MSBuild custom derived build events deprecated
@@ -1550,6 +1626,8 @@ items:
         href: sdk/8.0/trimming-unsupported-targetframework.md
       - name: Unlisted packages not installed by default
         href: sdk/8.0/unlisted-versions.md
+      - name: .user file imported in outer builds
+        href: sdk/8.0/user-file.md
       - name: Version requirements for .NET 8 SDK
         href: sdk/8.0/version-requirements.md
     - name: .NET 7
@@ -1708,10 +1786,24 @@ items:
         href: wcf-client/6.0/duplex-synchronization-context.md
   - name: Windows Forms
     items:
+    - name: .NET 9
+      items:
+      - name: BindingSource.SortDescriptions doesn't return null
+        href: windows-forms/9.0/sortdescriptions-return-value.md
+      - name: Changes to nullability annotations
+        href: windows-forms/9.0/nullability-changes.md
+      - name: ComponentDesigner.Initialize throws ArgumentNullException
+        href: windows-forms/9.0/componentdesigner-initialize.md
+      - name: DataGridViewRowAccessibleObject.Name starting row index
+        href: windows-forms/9.0/datagridviewrowaccessibleobject-name-row.md
+      - name: No exception if DataGridView is null
+        href: windows-forms/9.0/datagridviewheadercell-nre.md
     - name: .NET 8
       items:
       - name: Anchor layout changes
         href: windows-forms/8.0/anchor-layout.md
+      - name: Certs checked before loading remote images in PictureBox
+        href: windows-forms/8.0/picturebox-remote-image.md
       - name: DefaultValueAttribute removed from some properties
         href: windows-forms/8.0/defaultvalueattribute-removal.md
       - name: ExceptionCollection ctor throws ArgumentException

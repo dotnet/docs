@@ -1,7 +1,7 @@
 ---
 title: "Member access and null-conditional operators and expressions:"
 description: "C# operators that you use to access type members or null-conditionally access type members. These operators include the dot operator - `.`, indexers - `[`, `]`, `^` and `..`, and invocation - `(`, `)`."
-ms.date: 11/28/2022
+ms.date: 03/07/2024
 author: pkulikov
 f1_keywords:
   - "._CSharpKeyword"
@@ -181,6 +181,8 @@ You also use parentheses to adjust the order in which to evaluate operations in 
 [Cast expressions](type-testing-and-cast.md#cast-expression), which perform explicit type conversions, also use parentheses.
 
 ## Index from end operator ^
+
+Index and range operators can be used with a type that is *countable*. A *countable* type is a type that has an `int` property named either `Count` or `Length` with an accessible `get` accessor. [Collection expressions](./collection-expressions.md) also rely on *countable* types.
 
 The `^` operator indicates the element position from the end of a sequence. For a sequence of length `length`, `^n` points to the element with offset `length - n` from the start of a sequence. For example, `^1` points to the last element of a sequence and `^length` points to the first element of a sequence.
 

@@ -42,7 +42,6 @@ Any class that implements the `IControl` interface can override the default `Pai
 
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Object oriented programming](../../fundamentals/object-oriented/index.md)
 - [Interfaces](../../fundamentals/types/interfaces.md)
 - [Inheritance](../../fundamentals/object-oriented/inheritance.md)

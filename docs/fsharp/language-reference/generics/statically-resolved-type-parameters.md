@@ -21,7 +21,7 @@ Up to version 7.0 of F#, one had to use the following syntax
 
 ## Remarks
 
-In F#, there are two distinct kinds of type parameters. The first kind is the standard generic type parameter. They are equivalent to generic type parameters in other .Net languages. The other kind is statically resolved and can only be used in inlined functions.
+In F#, there are two distinct kinds of type parameters. The first kind is the standard generic type parameter. They are equivalent to generic type parameters in other .NET languages. The other kind is statically resolved and can only be used in inlined functions.
 
 Statically resolved type parameters are primarily useful in conjunction with member constraints, which are constraints that allow you to specify that a type argument must have a particular member or members in order to be used. There is no way to create this kind of constraint by using a regular generic type parameter.
 

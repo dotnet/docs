@@ -30,27 +30,26 @@ The support timeframe for the SDK typically matches that of the Visual Studio ve
 | 5.0.2xx          | 16.9               | March '21    | May '22   |
 | 5.0.3xx          | 16.10              | May '21      | Aug '21   |
 | 5.0.4xx          | 16.11              | Aug '21      | May '22   |
-| 6.0.1xx          | 17.0<sup>2</sup>   | Nov '21      | Jul '23   |
+| 6.0.1xx          | 17.0               | Nov '21      | Nov '24<sup>1</sup>   |
 | 6.0.2xx          | 17.1               | Feb '22      | May '22   |
 | 6.0.3xx          | 17.2<sup>3</sup>   | May '22      | Oct '23   |
-| 6.0.4xx          | 17.3               | Aug '22      | Nov '24<sup>1</sup>   |
-| 7.0.1xx          | 17.4               | Nov '22      | Jul '23   |
+| 6.0.4xx          | 17.3               | Aug '22      | Nov '24<sup>2</sup>   |
+| 7.0.1xx          | 17.4               | Nov '22      | May '24<sup>1</sup>   |
 | 7.0.2xx          | 17.5<sup>3</sup>   | Feb '23      | May '23   |
-| 7.0.3xx          | 17.6               | May '23      | Jan '25   |
-| 7.0.4xx          | 17.7               | Aug '23      | Nov '23   |
+| 7.0.3xx          | 17.6               | May '23      | May '24   |
+| 7.0.4xx          | 17.7               | Aug '23      | May '24<sup>2</sup>   |
 | 8.0.1xx          | 17.8               | Nov '23      | TBD       |
 | 8.0.2xx          | 17.9<sup>3</sup>   | Feb '24      | TBD       |
+| 8.0.3xx          | 17.10              | May '24      | TBD       |
 
 > [!NOTE]
 > Targeting `net6.0` is officially supported in Visual Studio 17.0+ only.
 > Targeting `net7.0` is officially supported in Visual Studio 17.4+ only.
 > Targeting `net8.0` is officially supported in Visual Studio 17.8+ only.
 >
-> .1xx SDK feature band is supported throughout the lifecycle of major .NET versions. During the extended support period, support is limited to security fixes and minimal high-priority non-security fixes for Linux only. To learn more about the reasoning for this extended support, refer to this [document](https://github.com/dotnet/source-build#support).
+> <sup>1</sup> .1xx .NET SDK feature bands are supported throughout the lifecycle of major .NET versions. During the extended support period, support is limited to security fixes and minimal high-priority non-security fixes for Linux only. To learn more about the reasoning for this extended support, see [Source-build support](https://github.com/dotnet/source-build#support).
 >
-> <sup>1</sup> Visual Studio 2022 version 17.3 went out of support in Nov 2022. 6.0.4xx will be in support for the life of .NET 6 as a standalone release.
->
-> <sup>2</sup> With .NET 6, the.NET 6.0.100 SDK can be used in version 16.11 for **downlevel** targeting. This means that you're not forced to update your SDK and Visual Studio versions simultaneously. However, you won't be able to target .NET 6 because of limitations in 6.0 features and C# 10 features in version 16.11. This compatibility is specifically for targeting 5.0 and below.
+> <sup>2</sup> .4xx .NET SDK feature bands are supported for the life of the matching runtime as stand-alone installs.
 >
 > <sup>3</sup> 6.0.300, 7.0.200, and 8.0.200 require newer Visual Studio versions. For more information, see the [support rules](#targeting-and-support-rules).
 >
@@ -78,9 +77,10 @@ Starting with .NET SDK 7.0.100 and .NET SDK 6.0.300, a policy has been put into 
 | 7.0.400 | 17.7 | 17.4 | Net7.0 | Net7.0 |
 | 8.0.100 | 17.8 | 17.7 | Net7.0 | Net8.0 |
 | 8.0.200 | 17.9 | 17.8 | Net8.0 | Net8.0 |
+| 8.0.300 | 17.10 | 17.8 | Net8.0 | Net8.0 |
 
 > [!NOTE]
-> The table depicts how these versioning rules will be applied going forward, starting with .NET SDK 7.0.100 and .NET SDK 6.0.300. It also depicts how the policy would have applied to previously shipped versions of the .NET SDK, had it been in place then. However, the requirements for previous versions of the SDK don't change &mdash; that is, the minimum required version of Visual Studio for .NET SDK 6.0.100 or 6.0.200 remains 16.10.
+> The table depicts how these versioning rules will be applied going forward, starting with .NET SDK 7.0.100 and .NET SDK 6.0.300. It also depicts how the policy would have applied to previously shipped versions of the .NET SDK, had it been in place then. However, the requirements for previous versions of the SDK don't change&mdash;that is, the minimum required version of Visual Studio for .NET SDK 6.0.100 or 6.0.200 remains 16.10.
 
 > <sup>1</sup> A breaking change in 7.0.300 for Blazor and Razor development requires Visual Studio version 17.6 or newer. For more information, see [dotnet/razor issue 8718](https://github.com/dotnet/razor/issues/8718).
 
@@ -92,15 +92,9 @@ Major versions of the .NET SDK are typically released within a few days of a Vis
 
 | SDK preview version | Visual Studio version |
 |-|-|
-| 8.0.100 Preview 1 | 17.6 Preview 1 |
-| 8.0.100 Preview 2 | 17.6 Preview 2 |
-| 8.0.100 Preview 3 | 17.6 Preview 3 |
-| 8.0.100 Preview 4 | 17.7 Preview 1 |
-| 8.0.100 Preview 5 | 17.7 Preview 2 |
-| 8.0.100 Preview 6 | 17.7 Preview 3 |
-| 8.0.100 Preview 7 | 17.8 Preview 1 |
-| 8.0.100 Preview RC 1 | 17.8 Preview 2 |
-| 8.0.100 Preview RC 2 | 17.8 Preview 3 |
+| 9.0.100 Preview 1 | 17.10 Preview 1 |
+| 9.0.100 Preview 2 | 17.10 Preview 2 |
+| 9.0.100 Preview 3 | 17.10 Preview 3 |
 
 ## Reference
 

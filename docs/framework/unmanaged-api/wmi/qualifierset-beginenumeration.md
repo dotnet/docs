@@ -61,10 +61,10 @@ To enumerate all of the qualifiers on an object, this method must be called befo
 
 The flags that can be passed as the `lEnumFlags` argument are defined in the *WbemCli.h* header file, or you can define them as constants in your code.
 
-|Constant  |Value  |Description  |
-|---------|---------|---------|
-|  | 0 | Return the names of all qualifiers. |
-| `WBEM_FLAG_LOCAL_ONLY` | 0x10 | Return only the names of qualifiers specific to the current property or object. <br/> For a property: Return only the qualifiers specific to the property (including overrides), and not those qualifiers propagated from the class definition. <br/> For an instance: Return only instance-specific qualifier names. <br/> For a class: Return only qualifiers specific to the class being derived.
+| Constant | Value | Description                         |
+|----------|-------|-------------------------------------|
+|          | 0     | Return the names of all qualifiers. |
+| `WBEM_FLAG_LOCAL_ONLY` | 0x10 | Return only the names of qualifiers specific to the current property or object. <br/> For a property: Return only the qualifiers specific to the property (including overrides), and not those qualifiers propagated from the class definition. <br/> For an instance: Return only instance-specific qualifier names. <br/> For a class: Return only qualifiers specific to the class being derived. |
 |`WBEM_FLAG_PROPAGATED_ONLY` | 0x20 | Return only the names of qualifiers propagated from another object. <br/> For a property: Return only the qualifiers propagated to this property from the class definition, and not those from the property itself. <br/> For an instance: Return only those qualifiers propagated from the class definition. <br/> For a class: Return only those qualifier names inherited from the parent classes. |
 
 ## Requirements

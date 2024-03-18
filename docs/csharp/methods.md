@@ -1,7 +1,7 @@
 ---
 title: Methods - C# Guide
 description: Overview of methods, method parameters, and method return values
-ms.technology: csharp-fundamentals
+ms.subservice: fundamentals
 ms.date: 03/16/2021
 ms.assetid: 577a8527-1081-4b36-9b9e-0685b6553c6e
 ---

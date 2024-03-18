@@ -20,8 +20,6 @@ The following table shows the minimum version of Visual Studio and MSBuild you n
 | 7.0.100           | 17.4                                      |
 | 7.0.200           | 17.4                                      |
 
-<sup>1</sup>In addition, scenarios that use a source generator could fail when using a Visual Studio or MSBuild version earlier than version 17.2.
-
 For more information about minimum supported versions, see [Targeting and support rules](../../../porting/versioning-sdk-msbuild-vs.md#targeting-and-support-rules).
 
 ## Reason for change

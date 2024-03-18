@@ -5,7 +5,6 @@ ms.date: 12/20/2018
 helpviewer_keywords: 
   - "collection initializers [C#], with Dictionary"
 ms.topic: how-to
-ms.custom: contperf-fy21q2
 ms.assetid: 25283922-f8ee-40dc-a639-fac30804ec71
 ---
 # How to initialize a dictionary with a collection initializer (C# Programming Guide)
@@ -33,5 +32,4 @@ Note the two pairs of braces in each element of the collection in the first decl
 
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Object and Collection Initializers](./object-and-collection-initializers.md)

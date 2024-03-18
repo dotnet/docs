@@ -10,7 +10,7 @@ internal partial class Program
         // <options>
         var section = builder.Configuration.GetSection("RetryOptions");
 
-        builder.Services.Configure<HttpRetryStrategyOptions>(section);
+        builder.Services.Configure<HttpStandardResilienceOptions>(section);
         // </options>
     }
 }

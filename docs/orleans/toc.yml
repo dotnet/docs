@@ -138,8 +138,8 @@ items:
             href: host/configuration-guide/typical-configurations.md
           - name: Options classes
             href: host/configuration-guide/list-of-options-classes.md
-          - name: Activation garbage collection
-            href: host/configuration-guide/activation-garbage-collection.md
+          - name: Activation collection
+            href: host/configuration-guide/activation-collection.md
           - name: Configure .NET garbage collection
             href: host/configuration-guide/configuring-garbage-collection.md
           - name: Configure ADO.NET providers
@@ -214,7 +214,7 @@ items:
       - name: Adventure game
         href: tutorials-and-samples/adventure.md
       - name: Unit testing
-        href: tutorials-and-samples/testing.md
+        href: implementation/testing.md
       - name: Custom grain storage
         href: tutorials-and-samples/custom-grain-storage.md
   - name: Implementation details

@@ -5,7 +5,6 @@ ms.date: 07/20/2015
 helpviewer_keywords: 
   - "extension methods [C#], implementing and calling"
 ms.topic: how-to
-ms.custom: contperf-fy21q2
 ms.assetid: 7dab2a56-cf8e-4a47-a444-fe610a02772a
 ---
 # How to implement and call a custom extension method (C# Programming Guide)
@@ -40,7 +39,6 @@ This topic shows how to implement your own extension methods for any .NET type. 
   
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Extension Methods](./extension-methods.md)
 - [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/)
 - [Static Classes and Static Class Members](./static-classes-and-static-class-members.md)

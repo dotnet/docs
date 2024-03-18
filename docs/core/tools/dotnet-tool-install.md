@@ -1,7 +1,7 @@
 ---
 title: dotnet tool install command
 description: The dotnet tool install command installs the specified .NET tool on your machine.
-ms.date: 07/19/2023
+ms.date: 03/15/2024
 ---
 # dotnet tool install
 
@@ -15,7 +15,7 @@ ms.date: 07/19/2023
 
 ```dotnetcli
 dotnet tool install <PACKAGE_NAME> -g|--global
-    [-a|--arch <ARCHITECTURE>]
+    [--allow-downgrade] [-a|--arch <ARCHITECTURE>]
     [--add-source <SOURCE>] [--configfile <FILE>] [--disable-parallel]
     [--framework <FRAMEWORK>] [--ignore-failed-sources] [--interactive]
     [--no-cache] [--prerelease]
@@ -23,7 +23,7 @@ dotnet tool install <PACKAGE_NAME> -g|--global
     [--version <VERSION_NUMBER>]
 
 dotnet tool install <PACKAGE_NAME> --tool-path <PATH>
-    [-a|--arch <ARCHITECTURE>]
+    [--allow-downgrade] [-a|--arch <ARCHITECTURE>]
     [--add-source <SOURCE>] [--configfile <FILE>] [--disable-parallel]
     [--framework <FRAMEWORK>] [--ignore-failed-sources] [--interactive]
     [--no-cache] [--prerelease]
@@ -31,7 +31,7 @@ dotnet tool install <PACKAGE_NAME> --tool-path <PATH>
     [--version <VERSION_NUMBER>]
 
 dotnet tool install <PACKAGE_NAME> [--local]
-    [-a|--arch <ARCHITECTURE>]
+    [--allow-downgrade] [-a|--arch <ARCHITECTURE>]
     [--add-source <SOURCE>] [--configfile <FILE>]
     [--create-manifest-if-needed] [--disable-parallel]
     [--framework <FRAMEWORK>] [--ignore-failed-sources] [--interactive]
@@ -87,6 +87,8 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
 ## Options
 
+[!INCLUDE [allow-downgrade](../../../includes/cli-allow-downgrade.md)]
+
 - **`-a|--arch <ARCHITECTURE>`**
 
   Specifies the target architecture. This is a shorthand syntax for setting the [Runtime Identifier (RID)](../../../docs/core/rid-catalog.md), where the provided value is combined with the default RID. For example, on a `win-x64` machine, specifying `--arch x86` sets the RID to `win-x86`.
@@ -104,8 +106,10 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
   If a tool-manifest can't be found and the `--create-manifest-if-needed` option is set to true, the tool creates a manifest automatically. It chooses a folder for the manifest as follows:
 
   * Walk up the directory tree searching for a directory that has a `.git` subfolder. If one is found, create the manifest in that directory.
-  * If the previous step doesn't find a directory, walk up the directory tree searching for a directory that has a `.sln/git` file. If one is found, create the manifest in that directory.
+  * If the previous step doesn't find a directory, walk up the directory tree searching for a directory that has a `.sln` or `.git` file. If one is found, create the manifest in that directory.
   * If neither of the previous two steps finds a directory, create the manifest in the current working directory.
+
+  For more information on how manifests are located, see [Install a local tool](global-tools.md#install-a-local-tool).
 
 - **`--disable-parallel`**
 
@@ -153,6 +157,8 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
   The version of the tool to install. By default, the latest stable package version is installed. Use this option to install preview or older versions of the tool.
 
+  Starting with .NET 8.0, `--version Major.Minor.Patch` refers to a specific major/minor/patch version, including unlisted versions. To get the latest version of a certain major/minor version instead, use `--version Major.Minor.*`.
+
 ## Examples
 
 - **`dotnet tool install -g dotnetsay`**
@@ -174,6 +180,10 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 - **`dotnet tool install dotnetsay`**
 
   Installs [dotnetsay](https://www.nuget.org/packages/dotnetsay/) as a local tool for the current directory.
+
+- **`dotnet tool install -g --verbosity minimal`**
+
+  Installs [dotnetsay](https://www.nuget.org/packages/dotnetsay/) as a global tool with the verbosity of minimal. The default verbosity for global tool is quiet.
 
 ## See also
 

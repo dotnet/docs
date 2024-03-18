@@ -146,10 +146,6 @@ In Blazor apps, use overloads of <xref:System.Net.Http.Json.HttpClientJsonExtens
 
 Starting with .NET 8, you can also use overloads of <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsAsyncEnumerable%2A?displayProperty=nameWithType> extension methods that accept a source generation context or `TypeInfo<TValue>`.
 
-:::zone-end
-
-:::zone pivot="dotnet-8-0"
-
 In Razor Pages, MVC, SignalR, and Web API apps, use the <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver?displayProperty=nameWithType> property to specify the context.
 
 ```csharp
@@ -160,7 +156,7 @@ internal partial class MyJsonContext : JsonSerializerContext { }
 ```csharp
 var serializerOptions = new JsonSerializerOptions
 {
-    TypeInfoResolver = MyJsonContext.Default;
+    TypeInfoResolver = MyJsonContext.Default
 };
 
 services.AddControllers().AddJsonOptions(
@@ -182,7 +178,7 @@ internal partial class MyJsonContext : JsonSerializerContext { }
 ```csharp
 var serializerOptions = new JsonSerializerOptions
 {
-    TypeInfoResolver = MyJsonContext.Default;
+    TypeInfoResolver = MyJsonContext.Default
 };
 
 services.AddControllers().AddJsonOptions(
@@ -207,6 +203,11 @@ services.AddControllers().AddJsonOptions(options =>
 ```
 
 :::zone-end
+
+> [!NOTE]
+> <xref:System.Text.Json.Serialization.JsonSourceGenerationMode.Serialization?displayProperty=nameWithType>, or fast-path serialization, isn't supported for asynchronous serialization.
+>
+> In .NET 7 and earlier versions, this limitation also applies to synchronous overloads of <xref:System.Text.Json.JsonSerializer.Serialize%2A?displayProperty=nameWithType> that accept a <xref:System.IO.Stream>. Starting with .NET 8, even though streaming serialization requires metadata-based models, it will fall back to fast-path if the payloads are known to be small enough to fit in the predetermined buffer size. For more information, see <https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-8/#json>.
 
 :::zone pivot="dotnet-8-0"
 

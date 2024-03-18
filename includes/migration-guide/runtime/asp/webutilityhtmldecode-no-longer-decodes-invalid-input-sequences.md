@@ -8,11 +8,11 @@ By default, decoding methods no longer decode an invalid input sequence into an 
 
 The change in decoder output should matter only if you store binary data instead of UTF-16 data in strings. To explicitly control this behavior, set the `aspnet:AllowRelaxedUnicodeDecoding` attribute of the [appSettings](~/docs/framework/configure-apps/file-schema/appsettings/index.md) element to `true` to enable legacy behavior or to `false` to enable the current behavior.
 
-| Name    | Value       |
-|:--------|:------------|
-| Scope   |Minor|
-|Version|4.5|
-|Type|Runtime
+|             | Value   |
+|:------------|:--------|
+| **Scope**   | Minor   |
+| **Version** | 4.5     |
+| **Type**    | Runtime |
 
 #### Affected APIs
 

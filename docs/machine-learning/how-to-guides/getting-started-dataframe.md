@@ -2,7 +2,6 @@
 title: Getting started with DataFrames
 description: Learn how to use DataFrame to manipulate and prepare data.
 author: beccamc
-ms.author: beccam
 ms.date: 3/10/2023
 ms.custom: mvc, how-to, title-hack-0625
 ms.topic: how-to

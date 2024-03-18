@@ -107,6 +107,5 @@ the conversion will be performed, and you will get the output:
 
 ## See also
 
-- [C# programming guide](../index.md)
 - [Reference types](../../language-reference/keywords/reference-types.md)
 - [Value types](../../language-reference/builtin-types/value-types.md)

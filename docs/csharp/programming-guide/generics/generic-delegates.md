@@ -32,7 +32,6 @@ A [delegate](../../language-reference/builtin-types/reference-types.md) can defi
 ## See also
 
 - <xref:System.Collections.Generic>
-- [C# Programming Guide](../index.md)
 - [Introduction to Generics](../../fundamentals/types/generics.md)
 - [Generic Methods](./generic-methods.md)
 - [Generic Classes](./generic-classes.md)

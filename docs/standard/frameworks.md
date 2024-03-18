@@ -1,10 +1,12 @@
 ---
 title: Target frameworks in SDK-style projects - .NET
 description: Learn about target frameworks for .NET apps and libraries.
-ms.date: 11/14/2023
-ms.prod: "dotnet"
-ms.custom: "updateeachrelease"
-ms.technology: dotnet-standard
+ms.date: 12/12/2023
+ms.service: dotnet
+ms.custom: updateeachrelease
+ms.subservice: standard-library
+f1_keywords:
+- http://schemas.microsoft.com/developer/msbuild/2003#TargetFramework
 ---
 # Target frameworks in SDK-style projects
 
@@ -20,7 +22,7 @@ For package-based target frameworks (for example, .NET 5+, .NET Core, and .NET S
 
 ## Latest versions
 
-The following table defines the most common target frameworks, how they're referenced, and which version of [.NET Standard](net-standard.md) they implement. These target framework versions are the latest stable versions. Prerelease versions aren't shown. A target framework moniker (TFM) is a standardized token format for specifying the target framework of a .NET app or library.
+The following table defines the most common target frameworks, how they're referenced, and which version of [.NET Standard](net-standard.md) they implement. These target framework versions are the latest stable versions. Prerelease versions aren't shown. A *target framework moniker* (TFM) is a standardized token format for specifying the target framework of a .NET app or library.
 
 | Target framework | Latest <br/> stable version | Target framework moniker (TFM) | Implemented <br/> .NET Standard version |
 |:----------------:|:---------------------------:|:------------------------------:|:---------------------------------------:|
@@ -30,7 +32,7 @@ The following table defines the most common target frameworks, how they're refer
 | .NET 5           | 5                           | net5.0                         | 2.1                                     |
 | .NET Standard    | 2.1                         | netstandard2.1                 | N/A                                     |
 | .NET Core        | 3.1                         | netcoreapp3.1                  | 2.1                                     |
-| .NET Framework   | 4.8                         | net48                          | 2.0                                     |
+| .NET Framework   | 4.8.1                       | net481                         | 2.0                                     |
 
 ## Supported target frameworks
 
@@ -40,7 +42,7 @@ A target framework is typically referenced by a TFM. The following table shows t
 | -------------------------- | --- |
 | .NET 5+ (and .NET Core)    | netcoreapp1.0<br>netcoreapp1.1<br>netcoreapp2.0<br>netcoreapp2.1<br>netcoreapp2.2<br>netcoreapp3.0<br>netcoreapp3.1<br>net5.0*<br>net6.0*<br>net7.0*<br>net8.0* |
 | .NET Standard              | netstandard1.0<br>netstandard1.1<br>netstandard1.2<br>netstandard1.3<br>netstandard1.4<br>netstandard1.5<br>netstandard1.6<br>netstandard2.0<br>netstandard2.1 |
-| .NET Framework             | net11<br>net20<br>net35<br>net40<br>net403<br>net45<br>net451<br>net452<br>net46<br>net461<br>net462<br>net47<br>net471<br>net472<br>net48 |
+| .NET Framework             | net11<br>net20<br>net35<br>net40<br>net403<br>net45<br>net451<br>net452<br>net46<br>net461<br>net462<br>net47<br>net471<br>net472<br>net48<br>net481 |
 | Windows Store              | netcore [netcore45]<br>netcore45 [win] [win8]<br>netcore451 [win81] |
 | .NET Micro Framework       | netmf |
 | Silverlight                | sl4<br>sl5 |
@@ -73,6 +75,7 @@ The following table shows the compatibility of the .NET 5+ TFMs.
 | net7.0-ios         | (Subsequent version of `net6.0-ios`)                                                                                    |
 | net7.0-maccatalyst | (Subsequent version of `net6.0-maccatalyst`)                                                                            |
 | net7.0-macos       | (Subsequent version of `net6.0-macos`)                                                                                  |
+| net7.0-tizen       | `tizen40` (plus everything else inherited from `net7.0`)                                                                |
 | net7.0-tvos        | (Subsequent version of `net6.0-tvos`)                                                                                   |
 | net7.0-windows     | (Subsequent version of `net6.0-windows`)                                                                                |
 | net8.0             | (Subsequent version of `net7.0`)                                                                                        |
@@ -81,6 +84,7 @@ The following table shows the compatibility of the .NET 5+ TFMs.
 | net8.0-ios         | (Subsequent version of `net7.0-ios`)                                                                                    |
 | net8.0-maccatalyst | (Subsequent version of `net7.0-maccatalyst`)                                                                            |
 | net8.0-macos       | (Subsequent version of `net7.0-macos`)                                                                                  |
+| net8.0-tizen       | (Subsequent version of `net7.0-tizen`)                                                                                  |
 | net8.0-tvos        | (Subsequent version of `net7.0-tvos`)                                                                                   |
 | net8.0-windows     | (Subsequent version of `net7.0-windows`)                                                                                |
 
@@ -98,11 +102,40 @@ Use these guidelines to determine which TFM to use in your app:
 
 #### OS version in TFMs
 
-You can also specify an optional OS version at the end of an OS-specific TFM, for example, `net6.0-ios15.0`. The version indicates which APIs are available to your app or library. It does not control the OS version that your app or library supports at run time. It's used to select the reference assemblies that your project compiles against, and to select assets from NuGet packages. Think of this version as the "platform version" or "OS API version" to disambiguate it from the run-time OS version.
+You can also specify an optional OS version at the end of an OS-specific TFM, for example, `net6.0-ios15.0`. The version indicates which APIs are available to your app or library. It doesn't control the OS version that your app or library supports at run time. It's used to select the reference assemblies that your project compiles against, and to select assets from NuGet packages. Think of this version as the "platform version" or "OS API version" to disambiguate it from the run-time OS version.
 
 When an OS-specific TFM doesn't specify the platform version explicitly, it has an implied value that can be inferred from the base TFM and platform name. For example, the default platform value for iOS in .NET 6 is `15.0`, which means that `net6.0-ios` is shorthand for the canonical `net6.0-ios15.0` TFM. The implied platform version for a newer base TFM may be higher, for example, a future `net8.0-ios` TFM could map to `net8.0-ios16.0`. The shorthand form is intended for use in project files only, and is expanded to the canonical form by the .NET SDK's MSBuild targets before being passed to other tools, such as NuGet.
 
+The following table shows the default target platform values (TPV) for each .NET release.
+
+| .NET version | Platform     | Default TPV |
+|--------------|--------------|-------------|
+| .NET 6       | Android      | 31.0        |
+| .NET 7       | Android      | 33.0        |
+| .NET 8       | Android      | 34.0        |
+| .NET 6       | iOS          | 15.0        |
+| .NET 7       | iOS          | 16.1        |
+| .NET 8       | iOS          | 17.2        |
+| .NET 6       | Mac Catalyst | 15.0        |
+| .NET 7       | Mac Catalyst | 16.1        |
+| .NET 8       | Mac Catalyst | 17.2        |
+| .NET 6       | macOS        | 12.0        |
+| .NET 7       | macOS        | 13.0        |
+| .NET 8       | macOS        | 14.2        |
+| .NET 6       | tvOS         | 15.1        |
+| .NET 7       | tvOS         | 16.1        |
+| .NET 8       | tvOS         | 17.1        |
+| .NET 7       | Tizen        | 7.0         |
+| .NET 8       | Tizen        | 8.0         |
+| .NET 6       | Windows      | 7.0         |
+| .NET 7       | Windows      | 7.0         |
+| .NET 8       | Windows      | 7.0         |
+
 The .NET SDK is designed to be able to support newly released APIs for an individual platform without a new version of the base TFM. This enables you to access platform-specific functionality without waiting for a major release of .NET. You can gain access to these newly released APIs by incrementing the platform version in the TFM. For example, if the iOS platform added iOS 15.1 APIs in a .NET 6.0.x SDK update, you could access them by using the TFM `net6.0-ios15.1`.
+
+#### Precedence
+
+If your app references a package that has multiple assets for different TFMs, the assets that are closer in version number are preferred. For example, if your app targets `net6.0-ios` and the package offers assets for `net6.0` and `net5.0-ios`, the `net6.0` assets are used. For more information, see [Precedences](https://github.com/dotnet/designs/blob/main/accepted/2020/net5/net5.md#precedences).
 
 #### Support older OS versions
 

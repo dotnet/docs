@@ -133,5 +133,5 @@ This example shows how to use friend assemblies with assemblies that have strong
 - [-keyfile (Visual Basic)](../../visual-basic/reference/command-line-compiler/keyfile.md)
 - [Sn.exe (Strong Name tool)](../../framework/tools/sn-exe-strong-name-tool.md)
 - [Create and use strong-named assemblies](create-use-strong-named.md)
-- [C# programming guide](../../csharp/programming-guide/index.md)
+- [C# programming guide](../../csharp/programming-guide/concepts/index.md)
 - [Programming concepts (Visual Basic)](../../visual-basic/programming-guide/concepts/index.md)

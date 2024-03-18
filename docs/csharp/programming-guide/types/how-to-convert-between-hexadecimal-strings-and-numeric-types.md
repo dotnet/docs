@@ -8,7 +8,6 @@ helpviewer_keywords:
   - "strings [C#], converting hexadecimal strings"
   - "hexadecimal strings [C#]"
 ms.topic: how-to
-ms.custom: contperf-fy21q2
 ms.assetid: 7115c49f-7d1d-40c3-8bd9-aae0cc1d46b6
 ---
 # How to convert between hexadecimal strings and numeric types (C# Programming Guide)

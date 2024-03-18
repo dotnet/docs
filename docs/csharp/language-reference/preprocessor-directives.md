@@ -2,7 +2,7 @@
 description: "Learn the different C# preprocessor directives that control conditional compilation, warnings, nullable analysis, and more"
 title: "C# preprocessor directives"
 ms.date: 01/30/2023
-f1_keywords: 
+f1_keywords:
   - "cs.preprocessor"
   - "#nullable"
   - "#if"
@@ -20,7 +20,7 @@ f1_keywords:
   - "#pragma warning"
   - "#pragma checksum"
   - "defaultline_CSharpKeyword"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "preprocessor directives [C#]"
   - "keywords [C#], preprocessor directives"
   - "#nullable directive [C#]"
@@ -47,7 +47,7 @@ Although the compiler doesn't have a separate preprocessor, the directives descr
 
 The `#nullable` preprocessor directive sets the *nullable annotation context* and *nullable warning context*. This directive controls whether nullable annotations have effect, and whether nullability warnings are given. Each context is either *disabled* or *enabled*.
 
-Both contexts can be specified at the project level (outside of C# source code). The `#nullable` directive controls the annotation and warning contexts and takes precedence over the project-level settings. A directive sets the context(s) it controls until another directive overrides it, or until the end of the source file.
+Both contexts can be specified at the project level (outside of C# source code) adding the [`Nullable`](./compiler-options/language.md#nullable) element to the `PropertyGroup` element. The `#nullable` directive controls the annotation and warning contexts and takes precedence over the project-level settings. A directive sets the context(s) it controls until another directive overrides it, or until the end of the source file.
 
 The effect of the directives is as follows:
 
@@ -87,6 +87,16 @@ The following code is compiled when `MYTEST` is **not** defined:
 ```
 
 You can use the operators [`==` (equality)](operators/equality-operators.md#equality-operator-) and [`!=` (inequality)](operators/equality-operators.md#inequality-operator-) to test for the [`bool`](builtin-types/bool.md) values `true` or `false`. `true` means the symbol is defined. The statement `#if DEBUG` has the same meaning as `#if (DEBUG == true)`. You can use the [`&&` (and)](operators/boolean-logical-operators.md#conditional-logical-and-operator-), [`||` (or)](operators/boolean-logical-operators.md#conditional-logical-or-operator-), and [`!` (not)](operators/boolean-logical-operators.md#logical-negation-operator-) operators to evaluate whether multiple symbols have been defined. You can also group symbols and operators with parentheses.
+
+The following is a complex directive that allows your code to take advantage of newer .NET features while remaining backward compatible.  For example, imagine that you're using a NuGet package in your code, but the package only supports .NET 6 and up, as well as .NET Standard 2.0 and up:
+
+```csharp
+#if (NET6_0_OR_GREATER || NETSTANDARD2_0_OR_GREATER)
+    Console.WriteLine("Using .NET 6+ or .NET Standard 2+ code.");
+#elif
+    Console.WriteLine("Using older code that doesn't support the above .NET versions.");
+#endif
+```
 
 `#if`, along with the `#else`, `#elif`, `#endif`, `#define`, and `#undef` directives, lets you include or exclude code based on the existence of one or more symbols. Conditional compilation can be useful when compiling code for a debug build or when compiling for a specific configuration.
 
@@ -131,7 +141,7 @@ public class MyClass
 #elif (!DEBUG && MYTEST)
         Console.WriteLine("MYTEST is defined");
 #elif (DEBUG && MYTEST)
-        Console.WriteLine("DEBUG and MYTEST are defined");  
+        Console.WriteLine("DEBUG and MYTEST are defined");
 #else
         Console.WriteLine("DEBUG and MYTEST are not defined");
 #endif
@@ -171,7 +181,6 @@ You use `#define` to define a symbol. When you use the symbol as the expression 
 #if VERBOSE
     Console.WriteLine("Verbose output version");
 #endif
-
  ```
 
 > [!NOTE]
@@ -298,7 +307,7 @@ The property `DateTime.Now` was typed incorrectly as `DateTime.NowAndThen`.  The
 
 ```csharp
   _builder.Add("Time: ");
-#line (2, 6) (2, 27) 15 "page.razor"
+#line (2, 6) - (2, 27) 15 "page.razor"
   _builder.Add(DateTime.NowAndThen);
 ```
 
@@ -315,7 +324,7 @@ To see more examples of this format, see the [feature specification](~/_csharpla
 ## Pragmas
 
 `#pragma` gives the compiler special instructions for the compilation of the file in which it appears. The instructions must be supported by the compiler. In other words, you can't use `#pragma` to create custom preprocessing instructions.
-  
+
 - [`#pragma warning`](#pragma-warning): Enable or disable warnings.
 - [`#pragma checksum`](#pragma-checksum): Generate a checksum.
 

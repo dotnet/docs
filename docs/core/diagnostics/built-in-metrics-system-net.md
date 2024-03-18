@@ -13,22 +13,17 @@ This article describes the networking metrics built-in for <xref:System.Net> pro
 > [!TIP]
 > For more information about how to collect, report, enrich, and test System.Net metrics, see [Networking metrics in .NET](../../fundamentals/networking/telemetry/metrics.md).
 
-- [Meter: `System.Net.NameResolution`](#meter-systemnetnameresolution) - Metrics for DNS lookups
-  * [Instrument: `dns.lookup.duration`](#instrument-dnslookupduration)
-- [Meter: `System.Net.Http`](#meter-systemnethttp) - Metrics for outbound networking requests using HttpClient
-  * [Instrument: `http.client.open_connections`](#instrument-httpclientopen_connections)
-  * [Instrument: `http.client.connection.duration`](#instrument-httpclientconnectionduration)
-  * [Instrument: `http.client.request.duration`](#instrument-httpclientrequestduration)
-  * [Instrument: `http.client.request.time_in_queue`](#instrument-httpclientrequesttime_in_queue)
-  * [Instrument: `http.client.active_requests`](#instrument-httpclientactive_requests)
+## `System.Net.NameResolution`
 
-## Meter: `System.Net.NameResolution`
+The `System.Net.NameResolution` metrics report DNS name resolution from <xref:System.Net.Dns>:
 
-### Instrument: `dns.lookup.duration`
+- [`dns.lookup.duration`](#metric-dnslookupduration)
+
+##### Metric: `dns.lookup.duration`
 
 | Name     | Instrument Type | Unit | Description    |
 | -------- | --------------- | ----------- | -------------- |
-| `dns.lookup.duration` | Histogram | `s` | Measures the time taken to perform a DNS lookup. |
+| [`dns.lookup.duration`](https://opentelemetry.io/docs/specs/semconv/dotnet/dotnet-dns-metrics/#metric-dnslookupduration) | Histogram | `s` | Measures the time taken to perform a DNS lookup. |
 
 | Attribute  | Type | Description  | Examples  | Presence |
 |---|---|---|---|---|
@@ -49,15 +44,25 @@ Most errors when doing a DNS lookup throw a <xref:System.Net.Sockets.SocketExcep
 
 Socket exceptions with any other `SocketError` value are reported as `System.Net.Sockets.SocketException`.
 
+When using OpenTelemetry, the default buckets for this metric are set to [ 0.005, 0.01, 0.025, 0.05, 0.075, 0.1, 0.25, 0.5, 0.75, 1, 2.5, 5, 7.5, 10 ].
+
 Available starting in: .NET 8
 
-## Meter: `System.Net.Http`
+## `System.Net.Http`
 
-### Instrument: `http.client.open_connections`
+The `System.Net.Http` metrics report HTTP request and connection information from <xref:System.Net.Http>:
+
+- [`http.client.open_connections`](#metric-httpclientopen_connections)
+- [`http.client.connection.duration`](#metric-httpclientconnectionduration)
+- [`http.client.request.duration`](#metric-httpclientrequestduration)
+- [`http.client.request.time_in_queue`](#metric-httpclientrequesttime_in_queue)
+- [`http.client.active_requests`](#metric-httpclientactive_requests)
+
+##### Metric: `http.client.open_connections`
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
-| `http.client.open_connections` | UpDownCounter | `{connection}` | Number of outbound HTTP connections that are currently active or idle on the client |
+| [`http.client.open_connections`](https://opentelemetry.io/docs/specs/semconv/dotnet/dotnet-http-metrics/#metric-httpclientopen_connections) | UpDownCounter | `{connection}` | Number of outbound HTTP connections that are currently active or idle on the client |
 
 | Attribute  | Type | Description  | Examples  | Presence |
 |---|---|---|---|---|
@@ -72,11 +77,11 @@ Available starting in: .NET 8
 
 Available starting in: .NET 8
 
-### Instrument: `http.client.connection.duration`
+##### Metric: `http.client.connection.duration`
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
-| `http.client.connection.duration` | Histogram | `s` | The duration of successfully established outbound HTTP connections. |
+| [`http.client.connection.duration`](https://opentelemetry.io/docs/specs/semconv/dotnet/dotnet-http-metrics/#metric-httpclientconnectionduration) | Histogram | `s` | The duration of successfully established outbound HTTP connections. |
 
 | Attribute  | Type | Description  | Examples  | Presence |
 |---|---|---|---|---|
@@ -88,33 +93,40 @@ Available starting in: .NET 8
 
 This metric is only captured when <xref:System.Net.Http.HttpClient> is configured to use the default <xref:System.Net.Http.SocketsHttpHandler>.
 
+As this metric is tracking the connection duration, and ideally http connections are used for multiple requests, the buckets should be longer than those used for request durations. For example, using [ 0.01, 0.02, 0.05, 0.1, 0.2, 0.5, 1, 2, 5, 10, 30, 60, 120, 300 ] provides an upper bucket of 5 mins.
+
 Available starting in: .NET 8
 
-### Instrument: `http.client.request.duration`
+##### Metric: `http.client.request.duration`
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
-| `http.client.request.duration` | Histogram | `s` | The duration of outbound HTTP requests. |
+| [`http.client.request.duration`](https://opentelemetry.io/docs/specs/semconv/dotnet/dotnet-http-metrics/#metric-httpserverrequestduration) | Histogram | `s` | The duration of outbound HTTP requests. |
 
 | Attribute  | Type | Description  | Examples  | Presence |
 |---|---|---|---|---|
-| `http.error.reason` | string | Request failure reason: one of [HTTP Request errors](https://github.com/dotnet/runtime/blob/c430570a01c103bc7f117be573f37d8ce8a129b8/src/libraries/System.Net.Http/src/System/Net/Http/HttpRequestError.cs), or a full exception type, or an HTTP 4xx/5xx status code. | `System.Threading.Tasks.TaskCanceledException`; `name_resolution_error`; `secure_connection_error` ; `404` | If request has failed. |
+| `error.type` | string | Request failure reason: one of the [HTTP request errors](xref:System.Net.Http.HttpRequestError), or a full exception type, or an HTTP 4xx/5xx status code. | `System.Threading.Tasks.TaskCanceledException`; `name_resolution_error`; `secure_connection_error` ; `404` | If request has failed. |
 | `http.request.method` | string | HTTP request method. | `GET`; `POST`; `HEAD` | Always |
 | `http.response.status_code` | int | [HTTP response status code](https://tools.ietf.org/html/rfc7231#section-6). | `200` | If one was received. |
-| `network.protocol.version` | string | Version of the application layer protocol used. | `1.1`; `2` | Always |
+| `network.protocol.version` | string | Version of the application layer protocol used. | `1.1`; `2` | If response was received. |
 | `server.address` | string | Host identifier of the ["URI origin"](https://www.rfc-editor.org/rfc/rfc9110.html#name-uri-origin) HTTP request is sent to. | `example.com` | Always |
 | `server.port` | int | Port identifier of the ["URI origin"](https://www.rfc-editor.org/rfc/rfc9110.html#name-uri-origin) HTTP request is sent to. | `80`; `8080`; `443` | If not default (`80` for `http` scheme, `443` for `https`) |
 | `url.scheme` | string | The [URI scheme](https://www.rfc-editor.org/rfc/rfc3986#section-3.1) component identifying the used protocol. | `http`; `https`; `ftp` | Always |
 
 HTTP client request duration measures the time the underlying client handler takes to complete the request. Completing the request includes the time up to reading response headers from the network stream. It doesn't include the time spent reading the response body.
 
+When using OpenTelemetry, the default buckets for this metric are set to [ 0.005, 0.01, 0.025, 0.05, 0.075, 0.1, 0.25, 0.5, 0.75, 1, 2.5, 5, 7.5, 10 ].
+
 Available starting in: .NET 8
 
-### Instrument: `http.client.request.time_in_queue`
+> [!TIP]
+> [Enrichment](../../fundamentals/networking/telemetry/metrics.md#enrichment) is possible for this metric.
+
+##### Metric: `http.client.request.time_in_queue`
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
-| `http.client.request.time_in_queue` | Histogram | `s` | The amount of time requests spent on a queue waiting for an available connection. |
+| [`http.client.request.time_in_queue`](https://opentelemetry.io/docs/specs/semconv/dotnet/dotnet-http-metrics/#metric-httpclientrequesttime_in_queue) | Histogram | `s` | The amount of time requests spent on a queue waiting for an available connection. |
 
 | Attribute  | Type | Description  | Examples  | Presence |
 |---|---|---|---|---|
@@ -128,20 +140,19 @@ Available starting in: .NET 8
 
 Available starting in: .NET 8
 
-### Instrument: `http.client.active_requests`
+##### Metric: `http.client.active_requests`
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
-| `http.client.active_requests` | UpDownCounter | `{request}` | Number of active HTTP requests. |
+| [`http.client.active_requests`](https://opentelemetry.io/docs/specs/semconv/dotnet/dotnet-http-metrics/#metric-httpserveractive_requests) | UpDownCounter | `{request}` | Number of active HTTP requests. |
 
 | Attribute  | Type | Description  | Examples  | Presence |
 |---|---|---|---|---|
 | `http.request.method` | string | HTTP request method. | `GET`; `POST`; `HEAD` | Always |
-| `network.protocol.version` | string | Version of the application layer protocol used. | `1.1`; `2` | Always |
 | `server.address` | string | Host identifier of the ["URI origin"](https://www.rfc-editor.org/rfc/rfc9110.html#name-uri-origin) HTTP request is sent to. | `example.com` | Always |
 | `server.port` | int | Port identifier of the ["URI origin"](https://www.rfc-editor.org/rfc/rfc9110.html#name-uri-origin) HTTP request is sent to. | `80`; `8080`; `443` | If not default (`80` for `http` scheme, `443` for `https`) |
 | `url.scheme` | string | The [URI scheme](https://www.rfc-editor.org/rfc/rfc3986#section-3.1) component identifying the used protocol. | `http`; `https`; `ftp` | Always |
 
-This metric counts how many requests are considered active. Requests are active for the same time period that is measured by the [http.client.request.duration](#instrument-httpclientrequestduration) instrument.
+This metric counts how many requests are considered active. Requests are active for the same time period that is measured by the [http.client.request.duration](#metric-httpclientrequestduration) instrument.
 
 Available starting in: .NET 8

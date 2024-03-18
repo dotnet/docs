@@ -2,7 +2,7 @@
 description: Learn more about the StringCollectionEditor class
 title: StringCollectionEditor class
 ms.date: 06/09/2023
-ms.technology: dotnet-winforms
+ms.subservice: winforms
 api_name:
   - System.Windows.Forms.Design.StringCollectionEditor
 api_location:

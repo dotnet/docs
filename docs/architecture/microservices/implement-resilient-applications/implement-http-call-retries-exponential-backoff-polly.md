@@ -23,9 +23,9 @@ First, you will need to install the `Microsoft.Extensions.Http.Polly` package.
 - [Install with nuget.exe CLI](/nuget/consume-packages/install-use-packages-nuget-cli)
 - [Install with Package Manager Console (PowerShell)](/nuget/consume-packages/install-use-packages-powershell)
 
-**Reference the .NET 7 packages**
+**Reference the .NET 8 packages**
 
-`IHttpClientFactory` is available since .NET Core 2.1, however, we recommend you use the latest .NET 7 packages from NuGet in your project. You typically also need to reference the extension package `Microsoft.Extensions.Http.Polly`.
+`IHttpClientFactory` is available since .NET Core 2.1, however, we recommend you use the latest .NET 8 packages from NuGet in your project. You typically also need to reference the extension package `Microsoft.Extensions.Http.Polly`.
 
 **Configure a client with Polly's Retry policy, in app startup**
 

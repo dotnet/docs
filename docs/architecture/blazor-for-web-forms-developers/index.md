@@ -12,7 +12,7 @@ ms.date: 01/10/2022
 
 > DOWNLOAD available at: <https://aka.ms/blazor-ebook>
 
-**EDITION v7.0** - Updated to .NET 7
+**EDITION v8.0** - Updated to .NET 8
 
 Refer to [changelog](https://aka.ms/blazor-ebook-changelog) for the book updates and community contributions.
 

@@ -66,13 +66,13 @@ A value indicating whether to enable foreign key constraints.
 > [!NOTE]
 > The Foreign Keys keyword was added in version 3.0.
 
-| Value   | Description
-| ------- | --- |
-| True    | Sends `PRAGMA foreign_keys = 1` immediately after opening the connection.
-| False   | Sends `PRAGMA foreign_keys = 0` immediately after opening the connection.
-| (empty) | Doesn't send `PRAGMA foreign_keys`. This is the default. |
+| Value   | Description                                                               |
+|---------|---------------------------------------------------------------------------|
+| True    | Sends `PRAGMA foreign_keys = 1` immediately after opening the connection. |
+| False   | Sends `PRAGMA foreign_keys = 0` immediately after opening the connection. |
+| (empty) | Doesn't send `PRAGMA foreign_keys`. This is the default.                  |
 
-There's no need to enable foreign keys if, like in e_sqlite3, SQLITE_DEFAULT_FOREIGN_KEYS was used to compile the native
+There's no need to enable foreign keys if, like in e_sqlite3, `SQLITE_DEFAULT_FOREIGN_KEYS` was used to compile the native
 SQLite library.
 
 ### Recursive Triggers

@@ -9,7 +9,7 @@ helpviewer_keywords:
 ---
 # :::no-loc text="interface"::: (C# Reference)
 
-An interface defines a contract. Any [`class`](class.md) or [`struct`](../builtin-types/struct.md) that implements that contract must provide an implementation of the members defined in the interface. An interface may define a default implementation for members. It may also define [`static`](static.md) members in order to provide a single implementation for common functionality. Beginning with C# 11, an interface may define `static abstract` or `static virtual` members to declare that an implementing type must provide the declared members. Typically, `static virtual` methods declare that an implementation must define a set of [overloaded operators](../operators/operator-overloading.md).
+An interface defines a contract. Any [`class`](class.md), [`record`](../builtin-types/record.md) or [`struct`](../builtin-types/struct.md) that implements that contract must provide an implementation of the members defined in the interface. An interface may define a default implementation for members. It may also define [`static`](static.md) members in order to provide a single implementation for common functionality. Beginning with C# 11, an interface may define `static abstract` or `static virtual` members to declare that an implementing type must provide the declared members. Typically, `static virtual` methods declare that an implementation must define a set of [overloaded operators](../operators/operator-overloading.md).
 
 In the following example, class `ImplementationClass` must implement a method named `SampleMethod` that has no parameters and returns `void`.
 
@@ -79,7 +79,6 @@ For more information, see the [Interfaces](~/_csharpstandard/standard/interfaces
 ## See also
 
 - [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [Reference Types](reference-types.md)
 - [Interfaces](../../fundamentals/types/interfaces.md)

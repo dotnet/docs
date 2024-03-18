@@ -1,15 +1,13 @@
 ---
 title: Usage rules (code analysis)
 description: "Learn about code analysis usage rules."
-ms.date: 11/16/2023
+ms.date: 01/31/2024
 f1_keywords:
 - vs.codeanalysis.usagerules
 helpviewer_keywords:
 - rules, usage
 - managed code analysis rules, usage rules
 - usage rules
-author: gewarren
-ms.author: gewarren
 ---
 # Usage rules
 
@@ -63,3 +61,5 @@ Usage rules support proper usage of .NET.
 | [CA2259: Ensure `ThreadStatic` is only used with static fields](ca2259.md) | <xref:System.ThreadStaticAttribute> only affects `static` (`Shared` in Visual Basic) fields. When applied to instance fields, the attribute has no impact on behavior. |
 | [CA2260: Implement generic math interfaces correctly](ca2260.md) | Generic math interfaces require the derived type itself to be used for the self-recurring type parameter. |
 | [CA2261: Do not use `ConfigureAwaitOptions.SuppressThrowing` with `Task<TResult>`](ca2261.md) | The `ConfigureAwaitOptions.SuppressThrowing` option isn't supported by the generic `Task<TResult>`, since that might lead to returning an invalid `TResult`. |
+| [CA2262: Set `MaxResponseHeadersLength` properly](ca2262.md) | Make sure the `MaxResponseHeadersLength` value is provided correctly. This value is measured in kilobytes. |
+| [CA2263: Prefer generic overload when type is known](ca2263.md) | Using a generic overload is preferable to passing a <xref:System.Type?displayProperty=fullName> argument when the type is known, because they promote cleaner and more type-safe code with improved compile-time checks. |

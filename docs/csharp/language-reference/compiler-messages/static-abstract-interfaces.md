@@ -65,7 +65,7 @@ The following errors might occur when you declare an interface with `static abst
 
 All these rules are extensions of the rules for declaring overloaded operators. The distinction is that the parameter can be either the interface type, or the interface's type parameter if that type parameter is constrained to implement the interface for its type. For binary operators, only one parameter must satisfy this rule.
 
-For example, `Inumber<T>` can declare an `T operator++(T)` because `T` is constrained to implement `INumber<T>`.
+For example, `INumber<T>` can declare an `T operator++(T)` because `T` is constrained to implement `INumber<T>`.
 
 To fix these errors, ensure that the parameters of any operators defined in the interface obey these rules. You can learn more in the language reference article on [static abstract members in interfaces](../keywords/interface.md#static-abstract-and-virtual-members) or in the tutorial to [explore static abstract interface members](../../whats-new/tutorials/static-virtual-interface-members.md).
 

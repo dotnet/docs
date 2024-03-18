@@ -229,11 +229,11 @@ For more information about TLS protocols, see [Mitigation: TLS Protocols](../mig
 > [!WARNING]
 > Setting registry keys affects all applications on the system. Use this option only if you are in full control of the machine and can control changes to the registry.
 
-If setting one or both `AppContext` switches isn't an option, you can control the security protocols that your app uses with the Windows Registry keys described in this section. You might not be able to use one or both the `AppContext` switches if your app runs on .NET Framework 4.5.2 or earlier versions, or if you can't edit the configuration file. If you want to configure security with the registry, don't specify a security protocol value in your code; doing so overrides the registry setting.
+If setting one or both `AppContext` switches isn't an option, you can control the security protocols that your app uses with the Windows Registry keys described in this section. You might not be able to use one or both the `AppContext` switches if your app runs on .NET Framework 3.5, or if you can't edit the configuration file. If you want to configure security with the registry, don't specify a security protocol value in your code; doing so overrides the registry setting.
 
 The names of the registry keys are similar to the names of the corresponding `AppContext` switches but without a `DontEnable` prepended to the name. For example, the `AppContext` switch `DontEnableSchUseStrongCrypto` is the registry key called [SchUseStrongCrypto](#schusestrongcrypto).
 
-These keys are available in all .NET Framework versions for which there's a recent security patch. See [Security updates](#security-updates).
+These keys are available in all .NET Framework versions.
 
 All of the registry keys described below have the same effect whether you're doing HTTP networking (<xref:System.Net.ServicePointManager>) or TCP sockets networking (<xref:System.Net.Security.SslStream>).
 

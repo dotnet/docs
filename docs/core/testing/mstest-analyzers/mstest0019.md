@@ -29,8 +29,7 @@ This rule raises a diagnostic when there is a parameterless explicit constructor
 
 ## Rule description
 
-Use this rule to enforce using `[TestInitialize]` for both synchronous and asynchronous test initialization. Asynchronous 
- (async/await) test intialization requires the use of `[TestInitialize]` methods, because the resulting `Task` needs to be awaited.
+Use this rule to enforce using `[TestInitialize]` for both synchronous and asynchronous test initialization. Asynchronous (async/await) test intialization requires the use of `[TestInitialize]` methods, because the resulting `Task` needs to be awaited.
 
 ## How to fix violations
 

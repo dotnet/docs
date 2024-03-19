@@ -299,6 +299,16 @@ The following versions of .NET are supported or available for Ubuntu 18.04:
 
 When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support, .NET is no longer supported with that version.
 
+## Add the Microsoft package repository
+
+[!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
+
+```bash
+wget https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
+```
+
 # [.NET 8](#tab/dotnet8)
 
 .NET 8 isn't supported on Ubuntu 18.04.

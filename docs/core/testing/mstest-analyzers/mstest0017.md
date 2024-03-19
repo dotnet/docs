@@ -36,7 +36,7 @@ This rule raises an issue when calls to `Assert.AreEqual`, `Assert.AreNotEqual`,
 
 MSTest `Assert.AreEqual`, `Assert.AreNotEqual`, `Assert.AreSame` and `Assert.AreNotSame` expect the first argument to be the expected/unexpected value and the second argument to be the actual value.
 
-Having the expected value and the actual value in the wrong order will not alter the outcome of tests, (succeed/fail when it should) but the error messages will contain misleading information.
+Having the expected value and the actual value in the wrong order will not alter the outcome of the test (succeeds/fails when it should), but the assertion failure will contain misleading information.
 
 ## How to fix violations
 

@@ -29,7 +29,8 @@ This rule raises a diagnostic when there is a parameterless explicit constructor
 
 ## Rule description
 
-Some developers prefer to always use `[TestInitialize]` method instead of constructors for their test setup as it provides a symmetrical initialization to doing async/await initialization where you do require `[TestInitialize]` methods.
+Use this rule to enforce using `[TestInitialize]` for both synchronous and asynchronous test initialization. Asynchronous 
+ (async/await) test intialization requires the use of `[TestInitialize]` methods, because the resulting `Task` needs to be awaited.
 
 ## How to fix violations
 

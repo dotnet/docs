@@ -19,7 +19,7 @@ New features are added to the "What's new in C#" page when they are available in
 
 [!INCLUDE [released-version-feedback](./includes/released-feedback.md)]
 
-# New escape sequence
+## New escape sequence
 
 You can use `\e` as a [character literal](~/_csharpstandard/standard/lexical-structure.md#6455-character-literals) escape sequence for the `ESCAPE` character, Unicode `U+001B`. Previously, you used `\u001b` or `\x1b`. Using `\x1b` wasn't recommended because if the next characters following `1b` were valid hexadecimal digits, those characters became part of the escape sequence.
 

@@ -107,5 +107,5 @@ let value = 0xDEAD_BEEF
 
 let valueAsBits = 0b1101_1110_1010_1101_1011_1110_1110_1111
 
-let exampleSSN = 123_456_7890
+let exampleSSN = 123_45_6789
 ```

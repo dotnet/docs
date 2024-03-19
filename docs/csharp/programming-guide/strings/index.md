@@ -1,7 +1,7 @@
 ---
 title: "Strings - C# Programming Guide"
 description: Learn about strings in C# programming. See information on declaring and initializing strings, the immutability of string objects, and string escape sequences.
-ms.date: 04/15/2022
+ms.date: 03/15/2024
 helpviewer_keywords:
   - "C# language, strings"
   - "strings [C#]"
@@ -27,11 +27,11 @@ Initialize a string with the <xref:System.String.Empty> constant value to create
 
 ## Immutability of strings
 
-String objects are *immutable*: they can't be changed after they've been created. All of the <xref:System.String> methods and C# operators that appear to modify a string actually return the results in a new string object. In the following example, when the contents of `s1` and `s2` are concatenated to form a single string, the two original strings are unmodified. The `+=` operator creates a new string that contains the combined contents. That new object is assigned to the variable `s1`, and the original object that was assigned to `s1` is released for garbage collection because no other variable holds a reference to it.
+String objects are *immutable*: they can't be changed after they're created. All of the <xref:System.String> methods and C# operators that appear to modify a string actually return the results in a new string object. In the following example, when the contents of `s1` and `s2` are concatenated to form a single string, the two original strings are unmodified. The `+=` operator creates a new string that contains the combined contents. That new object is assigned to the variable `s1`, and the original object that was assigned to `s1` is released for garbage collection because no other variable holds a reference to it.
 
 :::code language="csharp" source="./snippets/Declarations.cs" id="StringImmutability":::
 
-Because a string "modification" is actually a new string creation, you must use caution when you create references to strings. If you create a reference to a string, and then "modify" the original string, the reference will continue to point to the original object instead of the new object that was created when the string was modified. The following code illustrates this behavior:
+Because a string "modification" is actually a new string creation, you must use caution when you create references to strings. If you create a reference to a string, and then "modify" the original string, the reference continues to point to the original object instead of the new object that was created when the string was modified. The following code illustrates this behavior:
 
 :::code language="csharp" source="./snippets/Declarations.cs" id="ModifyIsCopy":::
 
@@ -70,7 +70,7 @@ The following examples demonstrate the compiler errors reported based on these r
 
 The first two examples are invalid because multiline raw string literals require the opening and closing quote sequence on its own line. The third example is invalid because the text is outdented from the closing quote sequence.
 
-You should consider raw string literals when you're generating text that includes characters that require [escape sequences](#string-escape-sequences) when using quoted string literals or verbatim string literals. Raw string literals will be easier for you and others to read because it will more closely resemble the output text. For example, consider the following code that includes a string of formatted JSON:
+You should consider raw string literals when you're generating text that includes characters that require [escape sequences](#string-escape-sequences) when using quoted string literals or verbatim string literals. Raw string literals are easier for you and others to read because it will more closely resemble the output text. For example, consider the following code that includes a string of formatted JSON:
 
 :::code language="csharp" source="./snippets/StringLiterals.cs" id="JSONString":::
 
@@ -103,7 +103,7 @@ Compare that text with the equivalent text in the sample on [JSON deserializatio
 
 ## Format strings
 
-A format string is a string whose contents are determined dynamically at run time. Format strings are created by embedding *interpolated expressions* or placeholders inside of braces within a string. Everything inside the braces (`{...}`) will be resolved to a value and output as a formatted string at run time. There are two methods to create format strings: string interpolation and composite formatting.
+A format string is a string whose contents are determined dynamically at run time. Format strings are created by embedding *interpolated expressions* or placeholders inside of braces within a string. Everything inside the braces (`{...}`) is resolved to a value and output as a formatted string at run time. There are two methods to create format strings: string interpolation and composite formatting.
 
 ### String interpolation
 
@@ -115,7 +115,7 @@ Use string interpolation to improve the readability and maintainability of your 
 
 Beginning with C# 10, you can use string interpolation to initialize a constant string when all the expressions used for placeholders are also constant strings.
 
-Beginning with C# 11, you can combine *raw string literals* with string interpolations. You start and end the format string with three or more successive double quotes. If your output string should contain the `{` or `}` character, you can use extra `$` characters to specify how many `{` and `}` characters start and end an interpolation. Any sequence of fewer `{` or `}` characters is included in the output.  The following example shows how you can use that feature to display the distance of a point from the origin, and place the point inside braces:
+Beginning with C# 11, you can combine *raw string literals* with string interpolations. You start and end the format string with three or more successive double quotes. If your output string should contain the `{` or `}` character, you can use extra `$` characters to specify how many `{` and `}` characters start and end an interpolation. Any sequence of fewer `{` or `}` characters is included in the output. The following example shows how you can use that feature to display the distance of a point from the origin, and place the point inside braces:
 
 :::code language="csharp" source="./snippets/StringInterpolation.cs" id="InterpolationExample":::
 
@@ -147,7 +147,7 @@ You can use array notation with an index value to acquire read-only access to in
 
 :::code language="csharp" source="./snippets/StringCharacters.cs" id="ReverseChars":::
 
-If the <xref:System.String> methods don't provide the functionality that you must have to modify individual characters in a string, you can use a <xref:System.Text.StringBuilder> object to modify the individual chars "in-place", and then create a new string to store the results by using the <xref:System.Text.StringBuilder> methods. In the following example, assume that you must modify the original string in a particular way and then store the results for future use:
+If the <xref:System.String> methods don't provide the functionality that you must have to modify individual characters in a string, you can use a <xref:System.Text.StringBuilder> object to modify the individual chars "in-place," and then create a new string to store the results by using the <xref:System.Text.StringBuilder> methods. In the following example, assume that you must modify the original string in a particular way and then store the results for future use:
 
 :::code language="csharp" source="./snippets/StringCharacters.cs" id="AccessChars":::
 
@@ -173,7 +173,7 @@ In this example, a <xref:System.Text.StringBuilder> object is used to create a s
 
 :::code language="csharp" source="./snippets/StringCharacters.cs" id="TestStringBuilder":::
 
-## Strings, extension methods and LINQ
+## Strings, extension methods, and LINQ
 
 Because the <xref:System.String> type implements <xref:System.Collections.Generic.IEnumerable%601>, you can use the extension methods defined in the <xref:System.Linq.Enumerable> class on strings. To avoid visual clutter, these methods are excluded from IntelliSense for the <xref:System.String> type, but they're available nevertheless. You can also use LINQ query expressions on strings. For more information, see [LINQ and Strings](/dotnet/csharp/linq).
 

@@ -10,7 +10,7 @@ public static class NameOfOperator
         Console.WriteLine(nameof(List<int>.Count));  // output: Count
         Console.WriteLine(nameof(List<int>.Add));  // output: Add
 
-        List<int> numbers = [1, 2, 3];
+        List<int> numbers = new() { 1, 2, 3 };
         Console.WriteLine(nameof(numbers));  // output: numbers
         Console.WriteLine(nameof(numbers.Count));  // output: Count
         Console.WriteLine(nameof(numbers.Add));  // output: Add

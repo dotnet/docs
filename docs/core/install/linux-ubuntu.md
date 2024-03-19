@@ -124,7 +124,7 @@ When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support,
 The Microsoft package repository contains all versions of .NET that were previously, or are currently, [supported with your version of Ubuntu](#supported-distributions). If your version of Ubuntu provides .NET packages, you'll need to deprioritize the Ubuntu packages and use the Microsoft repository. For instructions on how to deprioritize the packages, see [I need a version of .NET that isn't provided by my Linux distribution](linux-package-mixup.md?pivots=os-linux-ubuntu#i-need-a-version-of-net-that-isnt-provided-by-my-linux-distribution).
 
 > [!IMPORTANT]
-> Package manager installs are only supported on the **x64** architecture. Other architectures, such as **Arm**, must install .NET by some other means, such as with the [installer script](linux-scripted-manual.md#scripted-install) or by [manual installation](linux-scripted-manual.md#manual-install).
+> The Microsoft package repository only supports .NET packages that target the **x64** architecture. Other architectures, such as **Arm**, must install .NET by some other means, such as with the [installer script](linux-scripted-manual.md#scripted-install) or by [manual installation](linux-scripted-manual.md#manual-install).
 
 Preview releases are **not** available in the Microsoft package repository. For more information, see [Install preview versions](#install-preview-versions).
 

@@ -33,6 +33,18 @@ highlightedContent:
     - title: What's new in C#
       itemType: whats-new
       url: ./whats-new/csharp-12.md
+    # Card
+    - title: Learn C# video series
+      itemType: video
+      url: https://aka.ms/dotnet/beginnervideos/learn/csharp
+    # Card
+    - title: C# Learning paths
+      itemType: training
+      url: https://learn.microsoft.com/en-us/collections/yz26f8y64n7k07
+    # Card
+    - title: C# Certification - Free code camp
+      itemType: training
+      url: https://www.freecodecamp.org/learn/foundational-c-sharp-with-microsoft/
 
 
 # productDirectory section (Optional; Remove if not applicable.)
@@ -41,10 +53,43 @@ productDirectory:
   summary: Major concepts and features of the C# language
   items:
     # Card
+    - title: Get started with C#
+      # imageSrc should be square in ratio with no white space
+      imageSrc: ../media/logo_csharp.png
+      links:
+        - url: tour-of-csharp/index.md
+          text: A tour of C#
+        - url: ./tour-of-csharp/tutorials/index.md
+          text: Beginner C# tutorials
+        - url: ./tour-of-csharp/tutorials/hello-world.yml
+          text: Try C# in your browser
+        - url: ./fundamentals/program-structure/index.md
+          text: "Inside a C# program"
+
+    - title: C# Fundamentals
+      # imageSrc should be square in ratio with no white space
+      imageSrc: ../media/logo_csharp.png
+      links:
+        - url: ./fundamentals/types/index.md
+          text: Type system
+        - url: ./fundamentals/object-oriented/index.md
+          text: "Object oriented programming"
+        - url: ./fundamentals/functional/pattern-matching.md
+          text: "Functional techniques"
+        - url: ./fundamentals/exceptions/index.md
+          text: "Exceptions"
+        - url: ./fundamentals/coding-style/identifier-names.md
+          text: "Coding style"
+        - url: ./tour-of-csharp/strategy.md
+          text: C# language strategy
+
+    # Card
     - title: Language concepts
       # imageSrc should be square in ratio with no white space
       imageSrc: ../media/logo_csharp.png
       links:
+        - url: ./programming-guide/concepts/index.md
+          text: "Programming concepts"
         - url: ./linq/index.md
           text: LINQ
         - url: ./asynchronous-programming/index.md

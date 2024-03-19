@@ -40,10 +40,10 @@ Use the following sections to determine how you should install .NET:
 
 Install .NET through the Ubuntu feed. For more information, see the following pages:
 
-- [Install .NET on Ubuntu 22.04](linux-ubuntu-2204.md).
-- [Install .NET on Ubuntu 22.10](linux-ubuntu-2210.md).
-- [Install .NET on Ubuntu 23.04](linux-ubuntu-2304.md).
-- [Install .NET on Ubuntu 23.10](linux-ubuntu-2310.md).
+- [Install .NET on Ubuntu 23.10](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2310).
+- [Install .NET on Ubuntu 23.04](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2304).
+- [Install .NET on Ubuntu 22.10](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2210).
+- [Install .NET on Ubuntu 22.04](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2204).
 
 [!INCLUDE [linux-ubuntu-feed-sdk-note](includes/linux-ubuntu-feed-sdk-note.md)]
 
@@ -53,9 +53,9 @@ If you're going to install the Microsoft repository to use other Microsoft packa
 
 Use the instructions on the version-specific Ubuntu page.
 
-- [20.04 (LTS)](linux-ubuntu-2004.md)
-- [18.04 (LTS)](linux-ubuntu-1804.md)
-- [16.04 (LTS)](linux-ubuntu-1604.md)
+- [20.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2004)
+- [18.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-1804)
+- [16.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-1604)
 
 Review the [Supported distributions](#supported-distributions) section for more information about what versions of .NET are supported for your version of Ubuntu. If you're installing a version that isn't supported, see [Register the Microsoft package repository](#register-the-microsoft-package-repository).
 
@@ -105,15 +105,15 @@ The following table is a list of currently supported .NET releases and the versi
 
 <!-- This table is replicated in each individual Ubuntu article, but with only that specific version row listed. Make sure to update those tables. -->
 
-| Ubuntu                              | Supported .NET versions | Available in Ubuntu feed | [Available in Microsoft feed](#register-the-microsoft-package-repository) |
-|-------------------------------------|-------------------------|--------------------------|-----------------------------------|
-| [23.10](linux-ubuntu-2310.md)       | 8.0, 7.0, 6.0           | 8.0, 7.0, 6.0            | 8.0, 7.0, 6.0                     |
-| [23.04](linux-ubuntu-2304.md)       | 8.0, 7.0, 6.0           | 7.0, 6.0                 | 8.0, 7.0, 6.0                     |
-| [22.10](linux-ubuntu-2210.md)       | 7.0, 6.0                | 7.0, 6.0                 | 7.0, 6.0, 3.1                     |
-| [22.04 (LTS)](linux-ubuntu-2204.md) | 8.0, 7.0, 6.0           | 7.0, 6.0                 | 8.0, 7.0, 6.0, 3.1                |
-| [20.04 (LTS)](linux-ubuntu-2004.md) | 8.0, 7.0, 6.0           | None                     | 8.0, 7.0. 6.0, 5.0, 3.1, 2.1      |
-| [18.04 (LTS)](linux-ubuntu-1804.md) | 7.0, 6.0                | None                     | 7.0. 6.0, 5.0, 3.1, 2.2, 2.1      |
-| [16.04 (LTS)](linux-ubuntu-1604.md) | 6.0                     | None                     | 6.0, 5.0, 3.1, 3.0, 2.2, 2.1, 2.0 |
+| Ubuntu                                                             | Supported .NET versions | Available in Ubuntu feed | [Available in Microsoft feed](#register-the-microsoft-package-repository) |
+|--------------------------------------------------------------------|-------------------------|--------------------------|-----------------------------------|
+| [23.10](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2310)       | 8.0, 7.0, 6.0           | 8.0, 7.0, 6.0            | 8.0, 7.0, 6.0                     |
+| [23.04](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2304)       | 8.0, 7.0, 6.0           | 7.0, 6.0                 | 8.0, 7.0, 6.0                     |
+| [22.10](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2210)       | 7.0, 6.0                | 7.0, 6.0                 | 7.0, 6.0, 3.1                     |
+| [22.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2204) | 8.0, 7.0, 6.0           | 7.0, 6.0                 | 8.0, 7.0, 6.0, 3.1                |
+| [20.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2004) | 8.0, 7.0, 6.0           | None                     | 8.0, 7.0. 6.0, 5.0, 3.1, 2.1      |
+| [18.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-1804) | 7.0, 6.0                | None                     | 7.0. 6.0, 5.0, 3.1, 2.2, 2.1      |
+| [16.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-1604) | 6.0                     | None                     | 6.0, 5.0, 3.1, 3.0, 2.2, 2.1, 2.0 |
 
 When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support, .NET is no longer supported with that version.
 

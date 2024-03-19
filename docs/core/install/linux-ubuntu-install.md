@@ -15,10 +15,6 @@ This article discusses how to install .NET on Ubuntu.
 
 [!INCLUDE [linux-install-package-manager-x64-vs-arm-ubuntu](includes/linux-install-package-manager-x64-vs-arm-ubuntu.md)]
 
-## Unsupported versions
-
-[!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
-
 ::: zone pivot="os-linux-ubuntu-2310"
 
 ## Ubuntu 23.10
@@ -209,6 +205,26 @@ When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support,
 
 ---
 
+## Dependencies
+
+When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you'll need to make sure these libraries are installed:
+
+- libc6
+- libgcc-s1
+- libgssapi-krb5-2
+- libicu70
+- liblttng-ust1
+- libssl3
+- libstdc++6
+- libunwind8
+- zlib1g
+
+[!INCLUDE [linux-ubuntu-deps-example](includes/linux-ubuntu-deps-example.md)]
+
+[!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
+
+You can install a recent version of *libgdiplus* by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin-ubuntu).
+
 ::: zone-end
 
 ::: zone pivot="os-linux-ubuntu-2004"
@@ -249,6 +265,24 @@ rm packages-microsoft-prod.deb
 
 ---
 
+## Dependencies
+
+When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you'll need to make sure these libraries are installed:
+
+- libc6
+- libgcc-s1
+- libgssapi-krb5-2
+- libicu66
+- libssl1.1
+- libstdc++6
+- zlib1g
+
+[!INCLUDE [linux-ubuntu-deps-example](includes/linux-ubuntu-deps-example.md)]
+
+[!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
+
+You can install a recent version of *libgdiplus* by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin-ubuntu).
+
 ::: zone-end
 
 ::: zone pivot="os-linux-ubuntu-1804"
@@ -278,6 +312,8 @@ When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support,
 [!INCLUDE [linux-apt-install-60](includes/linux-install-60-apt.md)]
 
 ---
+
+## Dependencies
 
 When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you'll need to make sure these libraries are installed:
 
@@ -321,7 +357,6 @@ sudo dpkg -i packages-microsoft-prod.deb
 rm packages-microsoft-prod.deb
 ```
 
-
 # [.NET 8](#tab/dotnet8)
 
 .NET 8 isn't supported on Ubuntu 16.04.
@@ -336,17 +371,29 @@ rm packages-microsoft-prod.deb
 
 ---
 
+## Dependencies
+
+When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you'll need to make sure these libraries are installed:
+
+- libc6
+- libgcc1
+- libgssapi-krb5-2
+- libicu55
+- libssl1.0.0
+- libstdc++6
+- zlib1g
+
+[!INCLUDE [linux-ubuntu-deps-example](includes/linux-ubuntu-deps-example.md)]
+
+[!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
+
+You can install a recent version of *libgdiplus* by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin-ubuntu).
+
 ::: zone-end
 
-::: zone pivot="os-linux-ubuntu-other"
+## Unsupported versions
 
-## Other Ubuntu versions
-
-STUFF!
-
----
-
-::: zone-end
+[!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
 ## How to install other versions
 

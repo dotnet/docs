@@ -51,7 +51,8 @@
                     "csharp-9.0/*.md",
                     "csharp-10.0/*.md",
                     "csharp-11.0/*.md",
-                    "csharp-12.0/*.md"
+                    "csharp-12.0/*.md",
+                    "method-group-natural-type-improvements.md"
                 ],
                 "src": "_csharplang/proposals",
                 "dest": "csharp/language-reference/proposals",
@@ -479,6 +480,7 @@
                 "_csharplang/proposals/csharp-10.0/*.md": "08/07/2021",
                 "_csharplang/proposals/csharp-11.0/*.md": "09/30/2022",
                 "_csharplang/proposals/csharp-12.0/*.md": "08/15/2023",
+                "_csharplang/proposals/*.md": "03/19/2024",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 7.md": "11/08/2022",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 8.md": "09/26/2023",
                 "_vblang/spec/*.md": "07/21/2017"
@@ -645,6 +647,7 @@
                 "_csharplang/proposals/csharp-12.0/collection-expressions.md": "Collection expressions",
                 "_csharplang/proposals/csharp-12.0/experimental-attribute.md": "Experimental attribute",
                 "_csharplang/proposals/csharp-12.0/ref-readonly-parameters.md": "Ref readonly parameters",
+                "_csharplang/proposals/method-group-natural-type-improvements.md": "Method group natural type improvements",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 7.md": "C# compiler breaking changes since C# 10",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 8.md": "C# compiler breaking changes since C# 11",
                 "_vblang/spec/introduction.md": "Introduction",
@@ -758,6 +761,7 @@
                 "_csharplang/proposals/csharp-12.0/collection-expressions.md": "Collection expressions provide a concise syntax to initialize collections by defining elements or embedded collections as the source of the new collection's elements.",
                 "_csharplang/proposals/csharp-12.0/experimental-attribute.md": "Use the ExperimentalAttribute attribute to indicate APIs that aren't stable.",
                 "_csharplang/proposals/csharp-12.0/ref-readonly-parameters.md": "Ref readonly parameters enforce that arguments are passed by references, where `in` parameters allow the compiler some flexibiility.",
+                "_csharplang/proposals/method-group-natural-type-improvements.md": "This proposal refines the determination of the natural type of a method group by considering candidates scope-by-scope and pruning at each scope.",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 7.md": "Learn about any breaking changes since the initial release of C# 10",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 8.md": "Learn about any breaking changes since the initial release of C# 11",
                 "_vblang/spec/introduction.md": "This chapter provides and introduction to the Visual Basic language.",

@@ -7,7 +7,7 @@ ms.date: 01/24/2024
 ms.custom: updateeachrelease
 ---
 
-# Install the .NET SDK or the .NET Runtime on Ubuntu
+# Overview of .NET on Ubuntu
 
 This article describes how to install .NET on Ubuntu. The Microsoft package repository contains every version of .NET that is currently, or was previously, supported on Ubuntu. Starting with Ubuntu 22.04, some versions of .NET are available in the Ubuntu package feed. For more information about available versions, see the [Supported distributions](#supported-distributions) section.
 

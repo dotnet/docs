@@ -61,7 +61,7 @@ Total received: 150 bytes
 When `Stream.Read` or `Stream.ReadAsync` was called on one of the affected stream types with a buffer of length `N`, the operation wouldn't complete until:
 
 - `N` bytes had been read from the stream, or
-- The underlying stream they wrap returned 0 from a call to its read, indicating no more data was available.
+- The underlying stream returned 0 from a call to its read, indicating no more data was available.
 
 Also, when `Stream.Read` or `Stream.ReadAsync` was called with a buffer of length 0, the operation would succeed immediately, sometimes without doing a zero-length read on the stream it wraps.
 
@@ -70,7 +70,7 @@ Also, when `Stream.Read` or `Stream.ReadAsync` was called with a buffer of lengt
 Starting in .NET 6, when `Stream.Read` or `Stream.ReadAsync` is called on one of the affected stream types with a buffer of length `N`, the operation completes when:
 
 - At least 1 byte has been read from the stream, or
-- The underlying stream they wrap returns 0 from a call to its read, indicating no more data is available.
+- The underlying stream returns 0 from a call to its read, indicating no more data is available.
 
 Also, when `Stream.Read` or `Stream.ReadAsync` is called with a buffer of length 0, the operation succeeds once a call with a nonzero buffer would succeed.
 

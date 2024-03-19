@@ -84,7 +84,7 @@ If you must explicitly set a security protocol instead of letting .NET or the OS
 - For .NET Framework 3.5: TLS 1.2
 - For .NET Framework 4.6.2 or later: TLS 1.3
 
-If you can't specified protocols in enum, you can add those as an extension file. See below:
+If you can't find specified protocols in enum, you can add those as an extension file. See below:
 
 `SslProtocolExtensions.cs`
 

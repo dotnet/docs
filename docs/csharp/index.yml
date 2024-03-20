@@ -49,7 +49,7 @@ highlightedContent:
 
 # productDirectory section (Optional; Remove if not applicable.)
 productDirectory:
-  title: C# programming
+  title: Learn to program with C#
   summary: Major concepts and features of the C# language
   items:
     # Card
@@ -116,7 +116,10 @@ conceptualContent:
   # Supports up to 3 subsections
   sections:
     - title: C# reference
-      summary: Read C# language reference material, and the C# language specifications
+      summary: >
+        Read C# language reference material, and the C# language specifications. The C# reference provides an informative reference for the C# language.
+        The C# language specification is the normative reference for the C# language. It's the official source for C# language syntax and semantics.
+        Feature specifications document features not yet incorporated in the standard.
       items:
         # Card
         - title: Language reference
@@ -159,12 +162,10 @@ conceptualContent:
             - url: ./language-reference/compiler-options/index.md
               itemType: reference
               text: Compiler options
-    - title: C# language specification
-      summary: The C# language specification is the normative reference for the C# language. It is the official source for C# language syntax and semantics. Feature specifications document features not yet incorporated in the standard.
-      items:
+
         # Card
         - title: C# specification
-          summary: The official specification for the C# lnguage
+          summary: The official specification for the C# language
           links:
             - url: ./specification/index.yml
               itemType: reference
@@ -182,7 +183,7 @@ conceptualContent:
 # tools section (Optional; Remove if not applicable.)
 tools:
   title: Build C# apps with the Visual Studio family
-  summary: Choose Visual Studio or VS Code to build your C# applications
+  summary: Choose Visual Studio or VS Code to build your C# applications.
   items:
     # Card
     - title: Visual Studio
@@ -283,7 +284,7 @@ additionalContent:
             - url: /azure/cognitive-services/
               text: Azure Cognitive Services
             - url: /azure/machine-learning
-              text: Azure machine learning
+              text: Azure Machine Learning
             - url: ../fsharp/scenarios/machine-learning.md
               text: F# for Machine Leaning
         # Card
@@ -332,14 +333,6 @@ additionalContent:
         - title: ".NET Platform Extensions API reference"
           summary: API reference documentation for .NET Platform Extensions
           url: ../../api/index.md?view=dotnet-plat-ext-8.0&preserve-view=true
-        # Card
-        - title: "F# language reference"
-          summary: F# language reference
-          url: ../fsharp/language-reference/index.md
-        # Card
-        - title: "Visual Basic language reference"
-          summary: Visual Basic language reference and specification
-          url: ../visual-basic/language-reference/index.md
 
   # footer (Optional; Remove if not applicable.)
   footer: "Are you interested in contributing to the .NET docs? For more information, see our [contributor guide](/contribute/dotnet/dotnet-contribute)."

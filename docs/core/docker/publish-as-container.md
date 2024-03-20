@@ -1,7 +1,7 @@
 ---
 title: Containerize an app with dotnet publish
 description: In this tutorial, you'll learn how to containerize a .NET application with dotnet publish.
-ms.date: 01/16/2024
+ms.date: 03/20/2024
 ms.topic: tutorial
 zone_pivot_groups: dotnet-version-7-8
 ---
@@ -580,7 +580,7 @@ The app command instruction configuration helps control the way the `ContainerEn
 
 ### `ContainerUser`
 
-The user configuration property controls the default user that the container runs as. This is often used to run the container as a nonroot user, which is a best practice for security. There are a few constraints for this configuration to be aware of:
+The user configuration property controls the default user that the container runs as. This is often used to run the container as a non-root user, which is a best practice for security. There are a few constraints for this configuration to be aware of:
 
 - It can take various forms—username, linux user ids, group name, linux group id, `username:groupname`, and other ID variants.
 - There's no verification that the user or group specified exists on the image.
@@ -601,6 +601,20 @@ The default value of this field varies by project TFM and target operating syste
 
 > [!TIP]
 > The `APP_UID` environment variable is used to set user information in your container. This value can come from environment variables defined in your base image (like that Microsoft .NET images do), or you can set it yourself via the `ContainerEnvironmentVariable` syntax.
+
+To configure your app to run as a root user, set the `ContainerUser` property to `root`. In your project file, add the following:
+
+```xml
+<PropertyGroup>
+  <ContainerUser>root</ContainerUser>
+</PropertyGroup>
+```
+
+Alternatively, you can set this value when calling `dotnet publish` from the command line:
+
+```dotnetcli
+dotnet publish -p ContainerUser=root
+```
 
 :::zone-end
 :::zone pivot="dotnet-7-0"
@@ -673,8 +687,8 @@ docker images
 Consider the following example output:
 
 ```console
-REPOSITORY            TAG       IMAGE ID       CREATED          SIZE
-dotnet-worker-image   1.0.0     25aeb97a2e21   12 seconds ago   191MB
+REPOSITORY             TAG       IMAGE ID       CREATED          SIZE
+dotnet-worker-image    1.0.0     25aeb97a2e21   12 seconds ago   191MB
 ```
 
 > [!TIP]

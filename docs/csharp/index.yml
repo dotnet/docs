@@ -68,7 +68,7 @@ productDirectory:
 
     - title: C# Fundamentals
       # imageSrc should be square in ratio with no white space
-      imageSrc: ../media/logo_csharp.png
+      imageSrc: ../media/dotnet-bot.svg
       links:
         - url: ./fundamentals/types/index.md
           text: Type system
@@ -86,7 +86,7 @@ productDirectory:
     # Card
     - title: Language concepts
       # imageSrc should be square in ratio with no white space
-      imageSrc: ../media/logo_csharp.png
+      imageSrc: ../media/dotnet-bot_presenting.svg
       links:
         - url: ./programming-guide/concepts/index.md
           text: "Programming concepts"
@@ -96,7 +96,7 @@ productDirectory:
           text: Asynchronous programming
     - title: Advanced language concepts
       # imageSrc should be square in ratio with no white space
-      imageSrc: ../media/logo_csharp.png
+      imageSrc: ../media/dotnet-bot_jetpack-faceing-right.svg
       links:
         - url: ./advanced-topics/reflection-and-attributes/index.md
           text: Reflection and attributes

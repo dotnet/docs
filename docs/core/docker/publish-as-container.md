@@ -1,6 +1,6 @@
 ---
 title: Containerize an app with dotnet publish
-description: In this tutorial, you'll learn how to containerize a .NET application with dotnet publish.
+description: In this tutorial, you'll learn how to containerize a .NET application with dotnet publish command and without the use of a Dockerfile.
 ms.date: 03/20/2024
 ms.topic: tutorial
 zone_pivot_groups: dotnet-version-7-8

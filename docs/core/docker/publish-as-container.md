@@ -8,7 +8,7 @@ zone_pivot_groups: dotnet-version-7-8
 
 # Containerize a .NET app with dotnet publish
 
-Containers have many features and benefits, such as being an immutable infrastructure, providing a portable architecture, and enabling scalability. The image can be used to create containers for your local development environment, private cloud, or public cloud. In this tutorial, you'll learn how to containerize a .NET application using the [dotnet publish](../tools/dotnet-publish.md) command without the use of a Dockerfile.
+Containers have many features and benefits, such as being an immutable infrastructure, providing a portable architecture, and enabling scalability. The image can be used to create containers for your local development environment, private cloud, or public cloud. In this tutorial, you learn how to containerize a .NET application using the [dotnet publish](../tools/dotnet-publish.md) command without the use of a Dockerfile. Additionally, you explore how to configure the container image and execution, and how to clean up resources.
 
 ## Prerequisites
 
@@ -87,7 +87,16 @@ The worker template loops indefinitely. Use the cancel command <kbd>Ctrl+C</kbd>
 
 ## Add NuGet package
 
-The [Microsoft.NET.Build.Containers](https://www.nuget.org/packages/Microsoft.NET.Build.Containers) NuGet package is currently required to publish non-web projects as a container. To add the `Microsoft.NET.Build.Containers` NuGet package to the worker template, run the following [dotnet add package](../tools/dotnet-add-package.md) command:
+Starting with .NET SDK version 8.0.200, the `PublishContainer` target is available for every project. To avoid depending on the `Microsoft.NET.Build.Containers` NuGet package, ensure that you're using the latest .NET SDK version. Additionally, your project file needs to have `IsPublishable` set to `true` and enable SDK container support. To enable SDK container support, set the `EnableSdkContainerBuildSupport` property to `true` in your project file.
+
+```xml
+<PropertyGroup>
+  <IsPublishable>true</IsPublishable>
+  <EnableSdkContainerBuildSupport>true</EnableSdkContainerBuildSupport>
+</PropertyGroup>
+```
+
+Otherwise, if you're not using .NET SDK version 8.0.200 or later, you need to add the required [Microsoft.NET.Build.Containers](https://www.nuget.org/packages/Microsoft.NET.Build.Containers) NuGet package to publish non-web projects as a container. To add the `Microsoft.NET.Build.Containers` NuGet package to the worker template, run the following [dotnet add package](../tools/dotnet-add-package.md) command:
 
 ```dotnetcli
 dotnet add package Microsoft.NET.Build.Containers
@@ -259,6 +268,14 @@ If you set a value here, you should set the fully qualified name of the image to
     <ContainerBaseImage>mcr.microsoft.com/dotnet/runtime:8.0</ContainerBaseImage>
 </PropertyGroup>
 ```
+
+Starting with .NET SDK version 8.0.200, the `ContainerBaseImage` inference has been improved to optimize the size and security:
+
+- Targeting the `linux-musl-x64` or `linux-musl-arm64` Runtime Identifiers, automatically chooses the `alpine` image variants to ensure your project runs:
+  - If the project uses `PublishAot=true` then the `nightly/runtime-deps` `jammy-chiseled-aot` variant of the base image for best size and security.
+  - If the project uses `InvariantGlobalization=false` then the `-extra` variants is used to ensure localization still works.
+
+For more information regarding the image variants sizes and characteristics, see [.NET 8.0 Container Image Size Report](https://github.com/dotnet/dotnet-docker/blob/main/documentation/sample-image-size-report.md).
 
 :::zone-end
 :::zone pivot="dotnet-7-0"

@@ -1,7 +1,7 @@
 ---
 title: Containerize an app with Docker tutorial
 description: In this tutorial, you learn how to containerize a .NET application with Docker.
-ms.date: 03/15/2024
+ms.date: 03/20/2024
 ms.topic: tutorial
 ms.custom: "mvc"
 zone_pivot_groups: dotnet-version-7-8
@@ -303,8 +303,8 @@ Docker will process each line in the *Dockerfile*. The `.` in the `docker build`
 
 ```console
 docker images
-REPOSITORY                         TAG       IMAGE ID       CREATED          SIZE
-counter-image                      latest    2f15637dc1f6   10 minutes ago   217MB
+REPOSITORY       TAG       IMAGE ID       CREATED          SIZE
+counter-image    latest    2f15637dc1f6   10 minutes ago   217MB
 ```
 
 The `counter-image` repository is the name of the image. The `latest` tag is the tag that is used to identify the image. The `2f15637dc1f6` is the image ID. The `10 minutes ago` is the time the image was created. The `217MB` is the size of the image. The final steps of the _Dockerfile_ are to create a container from the image and run the app, copy the published app to the container, and define the entry point.
@@ -321,8 +321,8 @@ ENTRYPOINT ["dotnet", "DotNet.Docker.dll"]
 
 ```console
 docker images
-REPOSITORY                         TAG       IMAGE ID       CREATED          SIZE
-counter-image                      latest    2f15637dc1f6   10 minutes ago   208MB
+REPOSITORY       TAG       IMAGE ID       CREATED          SIZE
+counter-image    latest    2f15637dc1f6   10 minutes ago   208MB
 ```
 
 The `counter-image` repository is the name of the image. The `latest` tag is the tag that is used to identify the image. The `2f15637dc1f6` is the image ID. The `10 minutes ago` is the time the image was created. The `208MB` is the size of the image. The final steps of the _Dockerfile_ are to create a container from the image and run the app, copy the published app to the container, and define the entry point.
@@ -336,9 +336,9 @@ ENTRYPOINT ["dotnet", "DotNet.Docker.dll"]
 
 :::zone-end
 
-The `COPY` command tells Docker to copy the specified folder on your computer to a folder in the container. In this example, the *publish* folder is copied to a folder named *App/out* in the container.
+The `FROM` command specifies the base image and tag to use. The `WORKDIR` command changes the **current directory** inside of the container to *App*.
 
-The `WORKDIR` command changes the **current directory** inside of the container to *App*.
+The `COPY` command tells Docker to copy the specified source directory to a destination folder. In this example, the *publish* contents in the `build-env` layer were output into the folder named *App/out*, so it's the source to copy from. All of the published contents in the *App/out* directory are copied into current working directory (*App*).
 
 The next command, `ENTRYPOINT`, tells Docker to configure the container to run as an executable. When the container starts, the `ENTRYPOINT` command runs. When this command ends, the container will automatically stop.
 

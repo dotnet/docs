@@ -32,8 +32,6 @@ items:
       - name: List collections
         href: tour-of-csharp/tutorials/arrays-and-collections.md
 - name: Fundamentals
-  # TODO: https://github.com/dotnet/docs/pull/23464#discussion_r633857533
-  # Use "title suffix" in docfx.json for "fundamentals", and edit H1s to be unique
   items:
   - name: Program structure
     items:

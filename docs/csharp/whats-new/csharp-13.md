@@ -58,4 +58,4 @@ In versions prior to C# 13, the `^` operator can't be used in an object initiali
 
 ## See also
 
-- [What's new in .NET 9](../../core/whats-new/dotnet-8/overview.md)
+- [What's new in .NET 9](../../core/whats-new/dotnet-9/overview.md)

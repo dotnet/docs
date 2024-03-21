@@ -52,13 +52,7 @@ To create the blank solution:
 
    1. On the **Additional information** page, select **.NET 8 (Preview)**, and then choose **Create**.
 
-1. Check to make sure that the library targets the correct version of .NET. Right-click on the library project in **Solution Explorer**, and then select **Properties**. The **Target Framework** text box shows that the project targets .NET 7.0.
-
-1. If you're using Visual Basic, clear the text in the **Root namespace** text box.
-
-   :::image type="content" source="./media/library-with-visual-studio/vb/library-project-properties-net8.png" alt-text="Project properties for the class library":::
-
-   For each project, Visual Basic automatically creates a namespace that corresponds to the project name. In this tutorial, you define a top-level namespace by using the [`namespace`](../../visual-basic/language-reference/statements/namespace-statement.md) keyword in the code file.
+1. Check to make sure that the library targets the correct version of .NET. Right-click on the library project in **Solution Explorer**, and then select **Properties**. The **Target Framework** text box shows that the project targets .NET 8.0.
 
 1. Replace the code in the code window for *Class1.cs*  or *Class1.vb* with the following code, and save the file. If the language you want to use isn't shown, change the language selector at the top of the page.
 

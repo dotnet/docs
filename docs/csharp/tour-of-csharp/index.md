@@ -31,7 +31,10 @@ The `Hello` class declared by the "Hello, World" program has a single member, th
 
 Both entry point forms produce equivalent code. When you use top-level statements, the compiler synthesizes the containing class and method for the program's entry point.
 
-## Learning C\#
+> [!TIP]
+> The examples in this article give you a first look at C# code. The later samples may show elements of C# that you're not familiar with. When you're ready to learn C#, start with our [beginner tutorials](./tutorials/index.md), or dive into the links in each section.
+
+## Familiar C# features
 
 C# is approachable for beginners, yet offers advanced features for experienced developers writing specialized applications. You can be productive quickly. You can learn more specialized techniques as you need them for your applications.
 
@@ -45,10 +48,32 @@ As you write code, you define functions, also called methods, as members of `str
 
 C# apps use *exceptions* to report and handle errors. You'll be familiar with this practice if you've used C++ or Java. Your code throws an exception when it can't do what was intended. Calling code, no matter how many levels up the call stack, can optionally recover by using a `try` - `catch` block.
 
-Some elements of C# will be less familiar. Language integrated query (LINQ) provides a common pattern-based syntax to query or transform any collection of data. It unifies the syntax for querying in-memory collections, structured data like XML or JSON, database storage, and even cloud based data APIs. You learn one set of syntax and you can search and manipulate data regardless of its storage.
+## Distinctive C# features
 
-The Task based asynchronous programming model (TAP) enables you to write code that reads as though it runs synchronously, even though it will run asynchronously. It utilizes the `async` and `await` keywords to describe methods that are asynchronous, and when an expression evaluates asynchronously. C# also supports an `await foreach` statement to iterate a collection that's backed by an asynchronous operation, like a REST API.
+Some elements of C# will be less familiar. Language integrated query (LINQ) provides a common pattern-based syntax to query or transform any collection of data. It unifies the syntax for querying in-memory collections, structured data like XML or JSON, database storage, and even cloud based data APIs. You learn one set of syntax and you can search and manipulate data regardless of its storage. The following query finds all students whose grade point average is greater than 3.5:
 
-C# provides pattern matching expressions. Those expressions enable you to inspect data and make decisions based on its characteristics. Pattern matching provides a great syntax for control flow based on data.
+:::code language="csharp" source="./snippets/shared/LinqExample.cs" id="LinqExampleQuery":::
+
+The preceding query works for many storage types represented by `Students`. It could be a collection of objects, a database table, a cloud storage blob, or an XML structure. The same query syntax works for all storage types.
+
+The Task based asynchronous programming model (TAP) enables you to write code that reads as though it runs synchronously, even though it will run asynchronously. It utilizes the `async` and `await` keywords to describe methods that are asynchronous, and when an expression evaluates asynchronously. The following sample awaits an asynchronous web request. When the asynchronous operation completes, the method returns the length of the response:
+
+:::code language="csharp" source="./snippets/shared/AsyncSamples.cs" id="GetPageLengthAsync":::
+
+C# also supports an `await foreach` statement to iterate a collection that's backed by an asynchronous operation, like a GraphQL paging API. The following sample reads data in chunks, returning an iterator that provides access to each element when it is available:
+
+:::code language="csharp" source="./snippets/shared/AsyncSamples.cs" id="ReadDataAsync":::
+
+Callers can iterate the collection using an `await foreach` statement:
+
+:::code language="csharp" source="./snippets/shared/AsyncSamples.cs" id="UseReadSequence":::
+
+C# provides pattern matching expressions. Those expressions enable you to inspect data and make decisions based on its characteristics. Pattern matching provides a great syntax for control flow based on data. The following code shows how methods for the boolean *and*, *or*, and *xor* operations could be expressed using pattern matching syntax:
+
+:::code language="csharp" source="./snippets/shared/PatternMatching.cs" id="PatternExamples":::
+
+Pattern expressions can be reduced using `_` as a catch all for any value. The following example shows how you can simplify the *and* method:
+
+:::code language="csharp" source="./snippets/shared/PatternMatching.cs" id="ReducedPattern":::
 
 Finally, as part of the .NET ecosystem, you can use Visual Studio, or VS Code with the C# DevKit. These tools provide rich understanding of C#, including the code you write. They also provide debugging capabilities.

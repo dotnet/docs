@@ -61,7 +61,7 @@ If you installed .NET using a package manager, use that same package manager to 
 
 In almost all cases, the command to remove a package is `remove`.
 
-The package name for the .NET SDK installation for most package managers is `dotnet-sdk`, followed by the version number. Starting with the version 2.1.300 of the .NET SDK and version `2.1` of the runtime, only the major and minor version numbers are necessary: for example, the .NET SDK version 2.1.300 can be referenced as the package `dotnet-sdk-2.1`. Prior versions require the entire version string: for example, `dotnet-sdk-2.1.200` would be required for version 2.1.200 of the .NET SDK.
+The package name for the .NET SDK installation for most package managers is `dotnet-sdk`, followed by the version number. Only the major and minor version numbers are necessary: for example, the .NET SDK version 8.0.200 can be referenced as the package `dotnet-sdk-8.0`.
 
 For machines that have installed only the runtime, and not the SDK, the package name is `dotnet-runtime-<version>` for the .NET runtime, and `aspnetcore-runtime-<version>` for the entire runtime stack.
 
@@ -143,6 +143,9 @@ sudo rm -rf /usr/local/share/dotnet/sdk/6.0.406
 ## .NET Uninstall Tool
 
 The [.NET Uninstall Tool](../additional-tools/uninstall-tool.md) (`dotnet-core-uninstall`) lets you remove .NET SDKs and runtimes from a system. A collection of options is available to specify which versions should be uninstalled.
+
+> [!NOTE]
+> Currently, the .NET Uninstall Tool doesn't support .NET 8+. For more information about the release schedule of the tool, see [GitHub - dotnet-uninstall-tool Roadmap](https://github.com/dotnet/cli-lab/issues/279).
 
 ::: zone pivot="os-windows"
 

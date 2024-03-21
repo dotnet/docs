@@ -2,6 +2,7 @@
 title: .NET container images
 description: Learn about the various .NET container images available on Docker Hub.
 ms.date: 09/22/2023
+ms.custom: linux-related-content
 ---
 
 # .NET container images

@@ -1110,6 +1110,36 @@
             "redirect_document_id": true
         },
         {
+            "source_path_from_root": "/docs/core/testing/unit-testing-mstest-runner-exit-codes.md",
+            "redirect_url": "/docs/core/testing/unit-testing-platform-exit-codes",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-mstest-runner-extensions.md",
+            "redirect_url": "/docs/core/testing/unit-testing-platform-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-mstest-runner-integrations.md",
+            "redirect_url": "/docs/core/testing/unit-testing-platform-integration-dotnet-test",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-mstest-runner-runsettings.md",
+            "redirect_url": "/docs/core/testing/unit-testing-platform-runsettings",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-mstest-runner-telemetry.md",
+            "redirect_url": "/docs/core/testing/unit-testing-platform-telemetry",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-mstest-runner-vs-vstest.md",
+            "redirect_url": "/docs/core/testing/unit-testing-platform-vs-vstest",
+            "redirect_document_id": true
+        },
+        {
             "source_path_from_root": "/docs/core/tools/cli-msbuild-architecture.md",
             "redirect_url": "/dotnet/core/tools/dotnet-migrate"
         },
@@ -1224,7 +1254,7 @@
         },
         {
             "source_path_from_root": "/docs/core/whats-new/index.md",
-            "redirect_url": "/dotnet/core/whats-new/dotnet-7",
+            "redirect_url": "/dotnet/core/whats-new/dotnet-8/overview",
             "ms.custom": "updateeachrelease"
         },
         {

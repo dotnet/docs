@@ -4,6 +4,7 @@ description: Demonstrates how to install the .NET SDK and the .NET Runtime on Li
 author: adegeo
 ms.author: adegeo
 ms.date: 11/14/2023
+ms.custom: linux-related-content
 ---
 
 # Install .NET on Linux by using an install script or by extracting binaries

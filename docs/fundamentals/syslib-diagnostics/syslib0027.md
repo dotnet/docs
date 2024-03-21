@@ -2,6 +2,8 @@
 title: SYSLIB0027 warning
 description: Learn about the obsoletion of PublicKey.Key that generates compile-time warning SYSLIB0027.
 ms.date: 07/16/2021
+f1_keywords:
+  - syslib0027
 ---
 # SYSLIB0027: PublicKey.Key is obsolete
 

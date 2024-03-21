@@ -29,7 +29,7 @@ In this article, you will learn how to use the <xref:Microsoft.Extensions.Locali
 
 ## Resource files
 
-The primary mechanism for isolating localizable strings is with **resource files**. A resource file is an XML file with the *.resx* file extension. Resource files are translated prior to the execution of the consuming application &mdash; in other words, they represent translated content at rest. A resource file name most commonly contains a locale identifier, and takes on the following form:
+The primary mechanism for isolating localizable strings is with **resource files**. A resource file is an XML file with the *.resx* file extension. Resource files are translated prior to the execution of the consuming application&mdash;in other words, they represent translated content at rest. A resource file name most commonly contains a locale identifier, and takes on the following form:
 
 **`<FullTypeName><.Locale>.resx`**
 
@@ -57,7 +57,7 @@ Imagine that your localized app supports various Serbian locales, and has the fo
 | *MessageService.sr.resx*         | <sup>†</sup> Latin            |              |
 | *MessageService.resx*            |                               |              |
 
-_<sup>†</sup>  The default regional language for the language._
+*<sup>†</sup>  The default regional language for the language.*
 
 When your app is running with the <xref:System.Globalization.CultureInfo.CurrentCulture?displayProperty=nameWithType> set to a culture of `"sr-Cyrl-RS"` localization attempts to resolve files in the following order:
 
@@ -79,7 +79,7 @@ The "culture fallback" rule will ignore locales when there are no corresponding 
 
 Resource files are automatically resolved as part of a lookup routine. If your project file name is different than the root namespace of your project, the assembly name might differ. This can prevent resource lookup from being otherwise successful. To address this mismatch, use the <xref:Microsoft.Extensions.Localization.RootNamespaceAttribute> to provide a hint to the localization services. When provided, it is used during resource lookup.
 
-The example project is named *example.csproj*, which creates an *example.dll* and *example.exe* &mdash; however, the `Localization.Example` namespace is used. Apply an `assembly` level attribute to correct this mismatch:
+The example project is named *example.csproj*, which creates an *example.dll* and *example.exe*&mdash;however, the `Localization.Example` namespace is used. Apply an `assembly` level attribute to correct this mismatch:
 
 :::code source="snippets/localization/example/Program.cs" range="10":::
 
@@ -203,7 +203,7 @@ warn: Localization.Example[0]
       U utorak, 03. avgust 2021. moja večera je koštala 37,63 ¤.
 ```
 
-When omitting an argument to the [.NET CLI to run](../tools/dotnet-run.md) the project, the default system culture is used &mdash; in this case `"en-US"`:
+When omitting an argument to the [.NET CLI to run](../tools/dotnet-run.md) the project, the default system culture is used&mdash;in this case `"en-US"`:
 
 ```dotnetcli
 dotnet run --project .\example\example.csproj

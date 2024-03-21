@@ -35,10 +35,10 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 
 Use one of the following newly introduced, built-in events for extensibility instead of your custom derived build event:
 
-- `Microsoft.Build.Framework.ExtendedCustomBuildEventArgs`
-- `Microsoft.Build.Framework.ExtendedBuildErrorEventArgs`
-- `Microsoft.Build.Framework.ExtendedBuildMessageEventArgs`
-- `Microsoft.Build.Framework.ExtendedBuildWarningEventArgs`
+- <xref:Microsoft.Build.Framework.ExtendedCustomBuildEventArgs>
+- <xref:Microsoft.Build.Framework.ExtendedBuildErrorEventArgs>
+- <xref:Microsoft.Build.Framework.ExtendedBuildMessageEventArgs>
+- <xref:Microsoft.Build.Framework.ExtendedBuildWarningEventArgs>
 
 Alternatively, you can temporarily disable the check by explicitly setting the environment variable `MSBUILDCUSTOMBUILDEVENTWARNING` to something other than `1`.
 

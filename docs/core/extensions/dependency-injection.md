@@ -3,7 +3,7 @@ title: Dependency injection
 description: Learn how to use dependency injection within your .NET apps. Discover how to registration services, define service lifetimes, and express dependencies in C#.
 author: IEvangelist
 ms.author: dapine
-ms.date: 01/25/2024
+ms.date: 03/15/2024
 ms.topic: overview
 ---
 
@@ -234,17 +234,17 @@ The following table lists a small sample of these framework-registered services:
 
 Services can be registered with one of the following lifetimes:
 
-- Transient
-- Scoped
-- Singleton
+- [Transient](#transient)
+- [Scoped](#scoped)
+- [Singleton](#singleton)
 
 The following sections describe each of the preceding lifetimes. Choose an appropriate lifetime for each registered service.
 
 ### Transient
 
-Transient lifetime services are created each time they're requested from the service container. This lifetime works best for lightweight, stateless services. Register transient services with <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddTransient%2A>.
+Transient lifetime services are created each time they're requested from the service container. To register a service as _transient_, call <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddTransient%2A>.
 
-In apps that process requests, transient services are disposed at the end of the request.
+In apps that process requests, transient services are disposed at the end of the request. This lifetime incurs per/request allocations, as services are resolved and constructed every time. For more information, see [Dependency Injection Guidelines: IDisposable guidance for transient and shared instances](dependency-injection-guidelines.md#idisposable-guidance-for-transient-and-shared-instances).
 
 ### Scoped
 

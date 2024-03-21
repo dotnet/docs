@@ -33,7 +33,7 @@ For more information, see [Install location](https://github.com/dotnet/designs/b
 
 ## Change category
 
-This change may affect [*source compatibility*](../../categories.md#source-compatibility).
+This change might affect [*source compatibility*](../../categories.md#source-compatibility).
 
 ## Reason for change
 

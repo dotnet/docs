@@ -54,7 +54,6 @@ If the type includes the `record` modifier, the compiler instead synthesizes a p
 
 ## See also
 
-- [C# programming guide](../index.md)
 - [Classes, structs, and records](../../fundamentals/object-oriented/index.md)
 - [Constructors](constructors.md)
 - [Finalizers](finalizers.md)

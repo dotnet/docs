@@ -4,6 +4,7 @@ description: Demonstrates the various ways to install .NET SDK and .NET Runtime 
 author: adegeo
 ms.author: adegeo
 ms.date: 01/09/2024
+ms.custom: linux-related-content
 ---
 
 # Install the .NET SDK or the .NET Runtime on Alpine
@@ -42,8 +43,8 @@ The following table is a list of currently supported .NET releases and the versi
 
 | Alpine | Supported Version  | Available in Package Manager |
 |--------|--------------------| -----------------------------|
-| 3.18   | .NET 7.0, .NET 6.0 | .NET 8.0, .NET 7.0, .NET 6.0 |
-| 3.17   | .NET 7.0, .NET 6.0 | .NET 8.0, .NET 7.0, .NET 6.0 |
+| 3.18   | .NET 8.0, .NET 7.0, .NET 6.0 | .NET 7.0, .NET 6.0 |
+| 3.17   | .NET 8.0, .NET 7.0, .NET 6.0 | .NET 7.0, .NET 6.0 |
 | 3.16   | .NET 7.0, .NET 6.0 | .NET 6.0 |
 | 3.15   | .NET 7.0, .NET 6.0 | None |
 

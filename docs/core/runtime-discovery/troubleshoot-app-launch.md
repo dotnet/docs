@@ -2,6 +2,7 @@
 title: Troubleshoot app launch failures
 description: Learn about common reasons for app launch failures and possible solutions.
 ms.topic: troubleshooting
+ms.custom: linux-related-content
 ms.date: 03/29/2023
 zone_pivot_groups: operating-systems-set-one
 ---

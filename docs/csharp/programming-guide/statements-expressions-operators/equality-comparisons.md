@@ -49,10 +49,5 @@ However, there is no requirement that equivalence be based on all the fields in 
 |-----------|-----------------|
 |[How to test for reference equality (Identity)](./how-to-test-for-reference-equality-identity.md)|Describes how to determine whether two variables have reference equality.|
 |[How to define value equality for a type](./how-to-define-value-equality-for-a-type.md)|Describes how to provide a custom definition of value equality for a type.|
-|[C# Programming Guide](../index.md)|Provides links to detailed information about important C# language features and features that are available to C# through .NET.|
 |[Types](../../fundamentals/types/index.md)|Provides information about the C# type system and links to additional information.|
 |[Records](../../fundamentals/types/records.md)|Provides information about record types, which test for value equality by default.|
-
-## See also
-
-- [C# Programming Guide](../index.md)

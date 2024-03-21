@@ -1,12 +1,15 @@
 ---
 title: "C# console app template changes in .NET 6+"
 description: The .NET 6+ project template for C# console apps uses top-level statements. Understand what changed and how to use existing learning materials with the new syntax.
-ms.date: 11/08/2022
+ms.date: 03/15/2024
 ---
 # C# console app template generates top-level statements
 
 Starting with .NET 6, the project template for new C# console apps generates the following code in the *Program.cs* file:
 
+<!-- replaycheck-task id="59806399" -->
+<!-- replaycheck-task id="fb69a9" -->
+<!-- replaycheck-task id="4ba1bc63" -->
 ```csharp
 // See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
@@ -17,7 +20,7 @@ The new output uses recent C# features that simplify the code you need to write 
 ```csharp
 using System;
 
-namespace MyApp // Note: actual namespace depends on the project name.
+namespace MyApp
 {
     internal class Program
     {
@@ -29,9 +32,11 @@ namespace MyApp // Note: actual namespace depends on the project name.
 }
 ```
 
+In the preceding code, the actual namespace depends on the project name.
+
 These two forms represent the same program. Both are valid with C# 10.0. When you use the newer version, you only need to write the body of the `Main` method. The compiler generates a `Program` class with an entry point method and places all your top level statements in that method. The name of the generated method isn't `Main`, it's an implementation detail that your code can't reference directly. You don't need to include the other program elements, the compiler generates them for you. You can learn more about the code the compiler generates when you use top level statements in the article on [top level statements](../../csharp/fundamentals/program-structure/top-level-statements.md) in the C# Guide's fundamentals section.
 
-You have two options to work with tutorials that haven't been updated to use .NET 6+ templates:
+You have two options to work with tutorials that aren't updated to use .NET 6+ templates:
 
 - Use the new program style, adding new top-level statements as you add features.
 - Convert the new program style to the older style, with a `Program` class and a `Main` method.
@@ -54,7 +59,7 @@ You can learn more about top-level statements in the tutorial exploration on [to
 
 ## Implicit `using` directives
 
-The term *implicit `using` directives* means the compiler automatically adds a set of [`using` directives](../../csharp/language-reference/keywords/using-directive.md) based on the project type.  For console applications, the following directives are implicitly included in the application:
+The term *implicit `using` directives* means the compiler automatically adds a set of [`using` directives](../../csharp/language-reference/keywords/using-directive.md) based on the project type. For console applications, the following directives are implicitly included in the application:
 
 - `using System;`
 - `using System.IO;`
@@ -99,14 +104,20 @@ You can also add a [`<Using>`](../project-sdk/msbuild-props.md#using) item with 
 
 Starting with .NET SDK 6.0.300, the `console` template has a `--use-program-main` option. Use it to create a console project that doesn't use top-level statements and has a `Main` method.
 
+<!-- replaycheck-task id="7428562a" -->
+<!-- replaycheck-task id="52e0335c" -->
+<!-- replaycheck-task id="834a9e04" -->
+<!-- replaycheck-task id="d206d530" -->
 ```dotnetcli
 dotnet new console --use-program-main
 ```
 
 The generated `Program.cs` is as follows:
 
+<!-- replaycheck-task id="eedff294" -->
 ```csharp
 namespace MyProject;
+
 class Program
 {
     static void Main(string[] args)
@@ -118,7 +129,7 @@ class Program
 
 ### Use the old program style in Visual Studio
 
-01. When you create a new project, the setup steps will navigate to the **Additional information** setup page. On this page, select the **Do not use top-level statements** check box.
+01. When you create a new project, the setup steps navigate to the **Additional information** setup page. On this page, select the **Do not use top-level statements** check box.
 
     :::image type="content" source="media/top-level-templates/vs-additional-information.png" alt-text="Visual Studio do not use top-level statements check box":::
 

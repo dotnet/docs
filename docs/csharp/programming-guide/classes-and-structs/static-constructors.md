@@ -59,7 +59,6 @@ For more information, see the [Static constructors](~/_csharpstandard/standard/c
 
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [The C# type system](../../fundamentals/types/index.md)
 - [Constructors](./constructors.md)
 - [Static Classes and Static Class Members](./static-classes-and-static-class-members.md)

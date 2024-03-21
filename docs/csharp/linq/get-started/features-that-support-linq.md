@@ -59,7 +59,7 @@ Beginning with C# 12, you can use a [collection expression](../../language-refer
 For more information, see:
 
 - [Object and Collection Initializers](../../programming-guide/classes-and-structs/object-and-collection-initializers.md)
-- [Query Expression Syntax for Standard Query Operators](../../programming-guide/concepts/linq/standard-query-operators-overview.md)
+- [Query Expression Syntax for Standard Query Operators](../standard-query-operators/index.md)
 
 ## Anonymous Types
 

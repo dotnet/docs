@@ -12,7 +12,7 @@ NETSDK1206 indicates your project has assets for version-specific or distributio
 
 First, check for a newer version of any affected packages to see if they have moved to portable RIDs. Many packages have already moved to portable RIDs in their latest versions. If no such version exists, we recommend contacting the package authors to request switching the package to use only portable RIDs.
 
-If you know your application does not actually need the specified RID &mdash; for example, it is not intended to run on the platform specified by the RID &mdash; you can suppress the warning using the [`NoWarn` MSBuild property](/visualstudio/msbuild/common-msbuild-project-properties). For example:
+If you know your application does not actually need the specified RID&mdash;for example, it is not intended to run on the platform specified by the RID&mdash;you can suppress the warning using the [`NoWarn` MSBuild property](/visualstudio/msbuild/common-msbuild-project-properties). For example:
 
 ```xml
 <PropertyGroup>

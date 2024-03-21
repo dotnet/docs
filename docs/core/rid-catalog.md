@@ -2,6 +2,7 @@
 title: .NET Runtime Identifier (RID) catalog
 description: Learn about the runtime identifier (RID) and how RIDs are used in .NET.
 ms.date: 10/27/2023
+ms.custom: linux-related-content
 ---
 # .NET RID Catalog
 
@@ -83,7 +84,7 @@ There are some considerations about RIDs that you have to keep in mind when work
 
 To be able to use RIDs, you have to know which RIDs exist. For the latest and complete version, see the [PortableRuntimeIdentifierGraph.json](https://github.com/dotnet/sdk/blob/main/src/Layout/redist/PortableRuntimeIdentifierGraph.json) in the [`dotnet/sdk`](https://github.com/dotnet/sdk) repository.
 
-RIDs that are considered 'portable' &mdash; that is, aren't tied to a specific version or OS distribution &mdash; are the recommended choice. This means that portable RIDs should be used for both [building a platform-specific application](./deploying/index.md#platform-specific-and-framework-dependent) and [creating a NuGet package with RID-specific assets](/nuget/create-packages/supporting-multiple-target-frameworks#architecture-specific-folders).
+RIDs that are considered 'portable'&mdash;that is, aren't tied to a specific version or OS distribution&mdash;are the recommended choice. This means that portable RIDs should be used for both [building a platform-specific application](./deploying/index.md#platform-specific-and-framework-dependent) and [creating a NuGet package with RID-specific assets](/nuget/create-packages/supporting-multiple-target-frameworks#architecture-specific-folders).
 
 Starting with .NET 8, the default behavior of the .NET SDK and runtime is to only consider non-version-specific and non-distro-specific RIDs. When restoring and building, the SDK [uses a smaller portable RID graph](./compatibility/sdk/8.0/rid-graph.md). The <xref:System.Runtime.InteropServices.RuntimeInformation.RuntimeIdentifier?displayProperty=nameWithType> [returns the platform for which the runtime was built](./compatibility/core-libraries/8.0/runtimeidentifier.md). At run time, .NET finds [RID-specific assets using a known set of portable RIDs](./compatibility/deployment/8.0/rid-asset-list.md). When building an application with RID-specific assets that may be ignored at runtime, the SDK will emit a warning: [NETSDK1206](./tools/sdk-errors/netsdk1206.md).
 
@@ -91,9 +92,9 @@ Starting with .NET 8, the default behavior of the .NET SDK and runtime is to onl
 
 .NET no longer attempts to provide first-class support for resolving dependencies that are specific to an OS version or distribution. If your application or package needs to load different assets based on OS version or distribution, it should implement the logic to conditionally load assets.
 
-To get information about the platform, use <xref:System.OperatingSystem?displayProperty=nameWithType> APIs. On Windows and macOS, <xref:System.Environment.OSVersion?displayProperty=nameWithType> will [return the operating system version](./compatibility/core-libraries/5.0/environment-osversion-returns-correct-version.md). On Linux, it may be the kernel version &mdash; to get the Linux distro name and version information, the recommended approach is to read the */etc/os-release* file.
+To get information about the platform, use <xref:System.OperatingSystem?displayProperty=nameWithType> APIs. On Windows and macOS, <xref:System.Environment.OSVersion?displayProperty=nameWithType> will [return the operating system version](./compatibility/core-libraries/5.0/environment-osversion-returns-correct-version.md). On Linux, it may be the kernel version&mdash;to get the Linux distro name and version information, the recommended approach is to read the */etc/os-release* file.
 
-.NET provides various extension points for customizing loading logic &mdash; for example, <xref:System.Runtime.InteropServices.NativeLibrary.SetDllImportResolver(System.Reflection.Assembly,System.Runtime.InteropServices.DllImportResolver)?displayProperty=nameWithType>, <xref:System.Runtime.Loader.AssemblyLoadContext.ResolvingUnmanagedDll?displayProperty=nameWithType>, <xref:System.Runtime.Loader.AssemblyLoadContext.Resolving?displayProperty=nameWithType>, and <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType>. These can be used to load the asset corresponding to the current platform.
+.NET provides various extension points for customizing loading logic&mdash;for example, <xref:System.Runtime.InteropServices.NativeLibrary.SetDllImportResolver(System.Reflection.Assembly,System.Runtime.InteropServices.DllImportResolver)?displayProperty=nameWithType>, <xref:System.Runtime.Loader.AssemblyLoadContext.ResolvingUnmanagedDll?displayProperty=nameWithType>, <xref:System.Runtime.Loader.AssemblyLoadContext.Resolving?displayProperty=nameWithType>, and <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType>. These can be used to load the asset corresponding to the current platform.
 
 ## Known RIDs
 

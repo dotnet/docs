@@ -12,7 +12,7 @@ The <xref:System.Environment.GetEnvironmentVariable%2A> method retrieves the val
 Environment variable names are case-sensitive on Unix-like systems but aren't case-sensitive on Windows.
 
 > [!NOTE]
-> In-process environment modifications made by native libraries aren't seen by managed callers.
+> In-process environment modifications made by native libraries aren't seen by managed callers. Conversely, such modifications made by managed callers aren't seen by native libraries.
 
 ## <xref:System.Environment.GetEnvironmentVariable(System.String)> method
 

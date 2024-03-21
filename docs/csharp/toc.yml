@@ -3,8 +3,14 @@ items:
   href: index.yml
 - name: Get started
   items:
-  - name: Introduction
+  - name: Tour of C#
     href: tour-of-csharp/index.md
+  - name: Learn C# for Java developers
+    href: tour-of-csharp/tips-for-java-developers.md
+  - name: Learn C# for JavaScript developers
+    href: tour-of-csharp/tips-for-javascript-developers.md
+  - name: Learn C# for Python developers
+    href: tour-of-csharp/tips-for-python-developers.md
   - name: C# language strategy
     href: tour-of-csharp/strategy.md
   - name: Tutorials

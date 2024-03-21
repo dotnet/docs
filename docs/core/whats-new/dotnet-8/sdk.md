@@ -4,6 +4,7 @@ description: Learn about the new .NET SDK and tooling features introduced in .NE
 titleSuffix: ""
 ms.date: 11/14/2023
 ms.topic: overview
+ms.custom: linux-related-content
 ms.author: gewarren
 author: gewarren
 ---

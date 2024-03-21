@@ -4,6 +4,7 @@ description: Demonstrates the various ways to install .NET SDK and .NET Runtime 
 author: adegeo
 ms.author: adegeo
 ms.date: 03/01/2023
+ms.custom: linux-related-content
 ---
 
 # Install .NET SDK or .NET Runtime on Ubuntu 18.04

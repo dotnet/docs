@@ -4,6 +4,7 @@ description: Demonstrates the various ways to install .NET SDK and .NET Runtime 
 author: adegeo
 ms.author: adegeo
 ms.date: 03/19/2024
+ms.custom: linux-related-content
 zone_pivot_groups: ubuntu-set-one
 ---
 

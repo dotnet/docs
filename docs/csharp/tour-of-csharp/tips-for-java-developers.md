@@ -20,7 +20,7 @@ You'll be productive in C# almost immediately because of the similarities. As yo
 1. [***Pattern matching***](../fundamentals/functional/pattern-matching.md): Pattern matching enables concise conditional statements and expressions based on the shape of complex data structures. The [`is` statement](../language-reference/operators/is.md) checks if a variable "is" some pattern. The pattern-based [`switch` expression](../language-reference/operators/switch-expression.md) provides a rich syntax to inspect a variable and make decisions based on its characteristics.
 1. [***String interpolation***](../language-reference/tokens/interpolated.md) and [***raw string literals***](../language-reference/builtin-types/reference-types.md#string-literals): String interpolation enables you to insert evaluated expressions in a string, rather than using positional identifiers. Raw string literals provide a way to minimize escape sequences in text.
 1. [***Nullable and non-nullable types***](../nullable-references.md): C# supports *nullable value types*, and *nullable reference types* by appending the `?` suffix to a type. For nullable types, the compiler warns you if you haven't checked for `null` before dereferencing the expression. For non-nullable types, the compiler warns you if you might be assigning a `null` value to that variable. These features can minimize your application throwing a <xref:System.NullReferenceException?displayProperty=nameWithType>.
-1. [***Properties***](../concepts/properties.md) and [***Indexers***](../concepts/indexers.md): Both properties and indexers (treating a class like an array or dictionary) have language support. In Java, they are naming conventions for methods starting with `get` and `set`.
+1. [***Properties***](../properties.md) and [***Indexers***](../indexers.md): Both properties and indexers (treating a class like an array or dictionary) have language support. In Java, they are naming conventions for methods starting with `get` and `set`.
 1. [***Extension methods***](../programming-guide/classes-and-structs/extension-methods.md):  In C#, you can create methods that *extend* a class or interface. These enable you to extend the behavior of a type from a library, or all types that implement a given interface.
 1. [***LINQ***](../linq/index.md): Language integrated query (LINQ) provides a common syntax to query and transform data, regardless of its storage.
 1. [***Local functions***](../programming-guide/classes-and-structs/local-functions.md): In C#, you can nest functions inside methods, or other local functions. This provides yet another layer of encapsulation.
@@ -30,7 +30,7 @@ There are other features in C# that aren't in Java. You'll see these features li
 There are also some similar features between C# and Java that have subtle differences:
 
 1. [***Records***](../fundamentals/types/records.md): In C#, records can be either `class` (reference) or `struct` (value) types. C# records can be immutable, but aren't required to be immutable.
-1. [***Tuples***](../language-reference/builtin-types/value-tuples) have different syntax in C# and Java. 
+1. [***Tuples***](../language-reference/builtin-types/value-tuples.md) have different syntax in C# and Java.
 
 Finally, there are Java language features that aren't available in C#:
 

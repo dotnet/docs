@@ -1,14 +1,14 @@
 ---
-title: MSTest runner extensions
-description: Learn about the various MSTest runner extensions and how to use them.
+title: Microsoft.Testing.Platform extensions
+description: Learn about the various Microsoft.Testing.Platform extensions and how to use them.
 author: nohwnd
 ms.author: jajares
 ms.date: 12/15/2023
 ---
 
-# MSTest runner extensions
+# Microsoft.Testing.Platform extensions
 
-The MSTest runner can be customized through extensions. These extension are either built-in or can be installed as NuGet packages. Extensions installed through NuGet packages will auto-register the extensions they are holding to become available in test execution.
+Microsoft.Testing.Platform can be customized through extensions. These extension are either built-in or can be installed as NuGet packages. Extensions installed through NuGet packages will auto-register the extensions they are holding to become available in test execution.
 
 Each and every extension is shipped with its own licensing model (some less permissive), be sure to refer to the license associated with the extensions you want to use.
 
@@ -121,7 +121,7 @@ The `Microsoft.Testing.Platform` offers some built-in functionalities and extens
 
 ### Built-in options
 
-The following [platform options](./unit-testing-mstest-runner-intro.md#options) provide useful information for troubleshooting your test apps:
+The following [platform options](./unit-testing-platform-intro.md#options) provide useful information for troubleshooting your test apps:
 
 - `--info`
 - `--diagnostic`

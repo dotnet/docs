@@ -4,6 +4,7 @@ description: Demonstrates the various ways to install .NET SDK and .NET Runtime 
 author: adegeo
 ms.author: adegeo
 ms.date: 01/09/2024
+ms.custom: linux-related-content
 ---
 
 # Install the .NET SDK or the .NET Runtime on Alpine

@@ -192,6 +192,8 @@ As the preceding example shows, expression `^e` is of the <xref:System.Index?dis
 
 You can also use the `^` operator with the [range operator](#range-operator-) to create a range of indices. For more information, see [Indices and ranges](../../tutorials/ranges-indexes.md).
 
+Beginning with C# 13, the Index from the end operator can be used in an object initializer.
+
 ## Range operator `..`
 
 The `..` operator specifies the start and end of a range of indices as its operands. The left-hand operand is an *inclusive* start of a range. The right-hand operand is an *exclusive* end of a range. Either of the operands can be an index from the start or from the end of a sequence, as the following example shows:

@@ -40,6 +40,10 @@ items:
         href: windows-forms/9.0/datagridviewrowaccessibleobject-name-row.md
       - name: No exception if DataGridView is null
         href: windows-forms/9.0/datagridviewheadercell-nre.md
+    - name: WPF
+      items:
+      - name: "'GetXmlNamespaceMaps' type change"
+        href: wpf/9.0/xml-namespace-maps.md
   - name: .NET 8
     items:
     - name: Overview
@@ -1870,6 +1874,10 @@ items:
         href: winforms.md
   - name: WPF
     items:
+    - name: .NET 9
+      items:
+      - name: "'GetXmlNamespaceMaps' type change"
+        href: wpf/9.0/xml-namespace-maps.md
     - name: .NET 5
       items:
       - name: OutputType set to WinExe

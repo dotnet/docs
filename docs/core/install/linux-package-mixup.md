@@ -4,6 +4,7 @@ description: Learn about how to troubleshoot strange .NET package errors on Linu
 author: omajid
 ms.author: adegeo
 ms.date: 03/01/2023
+ms.custom: linux-related-content
 no-loc: ['usr','lib64','share','dotnet','libhostfxr.so', 'fxr', 'FrameworkList.xml', 'System.IO.FileNotFoundException']
 zone_pivot_groups: operating-systems-set-two
 ---

@@ -14,11 +14,11 @@ This release contains the following quality and reliability improvements.
 
 ##### ASP.NET
 
-*   Addresses an issue with "System.ArgumentException: Illegal characters in path" in some ASP.Net MVC requests.
+* Addresses an issue with "System.ArgumentException: Illegal characters in path" in some ASP.NET MVC requests.
 
 ##### .NET Libraries
 
-*   Addresses an issue where version of the OSS zlib library is out of date.
+* Addresses an issue where version of the OSS zlib library is out of date.
 
 ### Known Issues in this Release
 

@@ -36,9 +36,9 @@ This release contains no known issues. The following table is for Windows 10 and
 
 | Product Version | Cumulative Update |
 | --- | --- |
-| **Microsoft server operating system, version 23H2** |
+| **Microsoft server operating system, version 23H2** | |
 | .NET Framework 3.5, 4.8.1 | [5033917](https://support.microsoft.com/kb/5033917) |
-| **Windows 11, version 22H2 and Windows 11, version 23H2** |
+| **Windows 11, version 22H2 and Windows 11, version 23H2** | |
 | .NET Framework 3.5, 4.8.1 | [5033920](https://support.microsoft.com/kb/5033920) |
 | **Windows 11, version 21H2** | **[5034276](https://support.microsoft.com/kb/5034276)** |
 | .NET Framework 3.5, 4.8 | [5033912](https://support.microsoft.com/kb/5033912) |
@@ -58,10 +58,10 @@ This release contains no known issues. The following table is for Windows 10 and
 | **Windows 10 1809 and Windows Server 2019** | **[5034273](https://support.microsoft.com/kb/5034273)** |
 | .NET Framework 3.5, 4.7.2 | [5033904](https://support.microsoft.com/kb/5033904) |
 | .NET Framework 3.5, 4.8 | [5033911](https://support.microsoft.com/kb/5033911) |
-| **Windows 10 1607 and Windows Server 2016** |
+| **Windows 10 1607 and Windows Server 2016** | |
 | .NET Framework 3.5, 4.6.2, 4.7, 4.7.1, 4.7.2 | [5034119](https://support.microsoft.com/kb/5034119) |
 | .NET Framework 4.8 | [5033910](https://support.microsoft.com/kb/5033910) |
-| **Windows 10 1507** |
+| **Windows 10 1507** | |
 | .NET Framework 3.5, 4.6, 4.6.2 | [5034134](https://support.microsoft.com/kb/5034134) |
 
 The following tables are for earlier Windows and Windows Server versions for Security and Quality Rollup updates.  
@@ -79,9 +79,9 @@ The following tables are for earlier Windows and Windows Server versions for Sec
 | **Windows Server 2008 R2** | **[5034277](https://support.microsoft.com/kb/5034277)** |
 | .NET Framework 3.5.1 | [5033899](https://support.microsoft.com/kb/5033899) |
 | .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2 | [5033907](https://support.microsoft.com/kb/5033907) |
-| .NET Framework 4.8 |
+| .NET Framework 4.8 | |
 | **Windows Server 2008** | **[5034280](https://support.microsoft.com/kb/5034280)** |
-| .NET Framework 2.0, 3.0 |
+| .NET Framework 2.0, 3.0 | |
 | .NET Framework 3.5 | [5034008](https://support.microsoft.com/kb/5034008) |
 | .NET Framework 4.6.2 | [5033907](https://support.microsoft.com/kb/5033907) |
 

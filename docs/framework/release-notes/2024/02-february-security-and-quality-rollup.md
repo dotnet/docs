@@ -12,11 +12,11 @@ This release contains the following quality and reliability improvements.
 
 ##### ASP.NET
 
-*   Addresses an issue with "System.ArgumentException: Illegal characters in path" in some ASP.Net MVC requests.
+* Addresses an issue with "System.ArgumentException: Illegal characters in path" in some ASP.NET MVC requests.
 
 ##### .NET Libraries
 
-*   Addresses an issue where version of the OSS zlib library is out of date.
+* Addresses an issue where version of the OSS zlib library is out of date.
 
 ### Known Issues in this Release
 
@@ -35,8 +35,8 @@ This release contains no known issues. The following table is for Windows 10 and
 | .NET Framework 3.5, 4.8 | [5034613](https://support.microsoft.com/kb/5034613) |
 | .NET Framework 3.5, 4.8.1 | [5034611](https://support.microsoft.com/kb/5034611) |
 | **Microsoft server operating system version 21H2** |  **[5034682](https://support.microsoft.com/kb/5034682)** |
-| .NET Framework 3.5, 4.8 |
-| .NET Framework 3.5, 4.8.1 |
+| .NET Framework 3.5, 4.8 | |
+| .NET Framework 3.5, 4.8.1 | |
 | **Windows 10, version 22H2** |  **[5034685](https://support.microsoft.com/kb/5034685)** |
 | .NET Framework 3.5, 4.8 | [5034468](https://support.microsoft.com/kb/5034468) |
 | .NET Framework 3.5, 4.8.1 | [5034466](https://support.microsoft.com/kb/5034466) |

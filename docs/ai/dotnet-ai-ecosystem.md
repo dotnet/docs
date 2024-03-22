@@ -15,7 +15,7 @@ ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 > [!IMPORTANT]
 > These SDKs and tools are built by a variety of sources. Not all SDKs are maintained by Microsoft. When considering an SDK, be sure to evaluate quality, licensing, support, etc. to ensure they meet your requirements. Also make sure you review each SDK's documentation for detailed version compatibility information.
 
-# Working with models
+## Working with models
 
 Today, you can use .NET to access models built by OpenAI, using either the Azure OpenAI SDK or the Semantic Kernel. These models may be hosted by OpenAI or in Azure using the Azure AI services. Preview support is coming soon in Semantic Kernel to work with other models and you can experiment today using open source SDKs created by the .NET developer community.
 
@@ -36,6 +36,10 @@ To increase relevancy and tailor AI applications for your own data, you'll likel
 | [Milvus.Client](https://www.nuget.org/packages/Milvus.Client)                          | Milvus Vector Database            | [Milvus](https://milvus.io/)                                                                                | [docs](https://milvus.io/docs/v2.2.x/install-csharp.md)                                                           |
 | [Qdrant.Client](https://www.nuget.org/packages/Qdrant.Client)                          | Qdrant Vector Database            | [Qdrant](https://qdrant.tech)                                                                               | [docs](https://github.com/qdrant/qdrant-dotnet)                                                                   |
 
-# Looking for other options? Check the .NET + AI open source community
+## Deploying to Azure
+
+## Azure AI Services
+
+## Looking for other options? Check the .NET + AI open source community
 
 In this article we've summarized tools and SDKs in the .NET ecosystem, focused on services that provide official support for .NET. Depending on your needs, and stage of application development, you may also want to take a look at the [open source options](https://github.com/jmatthiesen/dotnet-ai-resources?tab=readme-ov-file#models) for the ecosystem, in the unofficial list of .NET + AI resources. Note that Microsoft does not maintain many of these projects, so be sure to review their quality, licensing, support, etc.

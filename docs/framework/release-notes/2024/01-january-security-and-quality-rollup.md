@@ -34,7 +34,7 @@ There are no new Quality and Reliability Improvements in this update.
 
 This release contains no known issues. The following table is for Windows 10 and Windows Server 2016+ versions.
 
-| Product Version | Cumulative Update |     |
+| Product Version | Cumulative Update |
 | --- | --- |
 | **Microsoft server operating system, version 23H2** |
 | .NET Framework 3.5, 4.8.1 | [5033917](https://support.microsoft.com/kb/5033917) |
@@ -66,7 +66,7 @@ This release contains no known issues. The following table is for Windows 10 and
 
 The following tables are for earlier Windows and Windows Server versions for Security and Quality Rollup updates.  
 
-| Product Version | Security and Quality Rollup |     |
+| Product Version | Security and Quality Rollup |
 | --- | --- |
 | **Windows Server 2012 R2** | **[5034279](https://support.microsoft.com/kb/5034279)** |
 | .NET Framework 3.5 | [5033900](https://support.microsoft.com/kb/5033900) |
@@ -87,7 +87,7 @@ The following tables are for earlier Windows and Windows Server versions for Sec
 
 The following tables are for earlier Windows and Windows Server versions for Security Only updates which are not cumulative
 
-| Product Version | Security Only Update |     |
+| Product Version | Security Only Update |
 | --- | --- |
 | **Windows Server 2012 R2** | **[5034279](https://support.microsoft.com/kb/5034279)** |
 | .NET Framework 3.5 | [5033900](https://support.microsoft.com/kb/5033900) |

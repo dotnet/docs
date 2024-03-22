@@ -26,11 +26,11 @@ This release contains no known issues.
 
 ### Updates including improvements
 
-| Product Version | Cumulative Update |     |
+| Product Version | Cumulative Update |
 | --- | --- |
-| **Windows 11, version 23H2** |
+| **Windows 11, version 23H2** | |
 | .NET Framework 3.5 + 4.8.1 | [5034467](https://support.microsoft.com/kb/5034467) |
-| **Windows 11, version 22H2** |
+| **Windows 11, version 22H2** | |
 | .NET Framework 3.5 + 4.8.1 | [5034467](https://support.microsoft.com/kb/5034467) |
 | **Windows 10, version 22H2** | **[5034582](https://support.microsoft.com/kb/5034582)** |
 | .NET Framework 3.5 + 4.8 | [5034468](https://support.microsoft.com/kb/5034468) |

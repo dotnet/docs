@@ -1,30 +1,30 @@
-## January 2024 Preview of Quality Rollup
+# January 2024 Preview of Quality Rollup
 
 _Released January 24, 2024_
 
-### Summary of What's New in this Release
+## Summary of What's New in this Release
 
-#### Security improvements
+### Security improvements
 
 This release does not contain any new security improvements.
 
-#### Quality and Reliability improvements
+### Quality and Reliability improvements
 
 This release contains the following quality and reliability improvements.
 
-##### ASP.NET
+#### ASP.NET
 
 * Addresses an issue with "System.ArgumentException: Illegal characters in path" in some ASP.NET MVC requests.
 
-##### .NET Libraries
+#### .NET Libraries
 
 * Addresses an issue where version of the OSS zlib library is out of date.
 
-### Known Issues in this Release
+## Known Issues in this Release
 
 This release contains no known issues.
 
-### Updates including improvements
+## Updates including improvements
 
 | Product Version | Cumulative Update |
 | --- | --- |

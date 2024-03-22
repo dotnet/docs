@@ -1,6 +1,6 @@
-## February Security and Quality Rollup
+## February 2024 Security and Quality Rollup
 
-_released February 13, 2024_
+_Released February 13, 2024_
 
 ### Summary of What's New in this Release
 

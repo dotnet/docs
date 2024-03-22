@@ -1,6 +1,6 @@
-## January Preview of Quality Rollup
+## January 2024 Preview of Quality Rollup
 
-released January 24, 2024
+_Released January 24, 2024_
 
 ### Summary of What's New in this Release
 

@@ -72,4 +72,4 @@ HRESULT CreateDebuggingInterfaceFromVersion2 (
 
  **Library:** dbgshim.dll, libdbgshim.so, libdbgshim.dylib
 
- **.NET Versions:** Available since .NET Core 3.1
+ **.NET Versions:** Available since .NET 6

@@ -16,27 +16,27 @@ The following counters are published as part of .NET runtime (CoreCLR) and are m
 
 | Counter | Description | First available in |
 |--|--|--|
-| :::no-loc text="% Time in GC since last GC"::: (`time-in-gc`) | The percent of time in GC since the last GC | .NET Core 3.1 |
-| :::no-loc text="Allocation Rate"::: (`alloc-rate`) | The number of bytes allocated per update interval | .NET Core 3.1 |
-| :::no-loc text="CPU Usage"::: (`cpu-usage`) | The percent of the process's CPU usage relative to all of the system CPU resources | .NET Core 3.1 |
-| :::no-loc text="Exception Count"::: (`exception-count`) | The number of exceptions that have occurred | .NET Core 3.1 |
-| :::no-loc text="GC Heap Size"::: (`gc-heap-size`) | The number of megabytes thought to be allocated based on <xref:System.GC.GetTotalMemory(System.Boolean)?displayProperty=nameWithType> | .NET Core 3.1 |
-| :::no-loc text="Gen 0 GC Count"::: (`gen-0-gc-count`) | The number of times GC has occurred for Gen 0 per update interval | .NET Core 3.1 |
-| :::no-loc text="Gen 0 Size"::: (`gen-0-size`) | The number of bytes for Gen 0 GC | .NET Core 3.1 |
-| :::no-loc text="Gen 1 GC Count"::: (`gen-1-gc-count`) | The number of times GC has occurred for Gen 1 per update interval | .NET Core 3.1 |
-| :::no-loc text="Gen 1 Size"::: (`gen-1-size`) | The number of bytes for Gen 1 GC | .NET Core 3.1 |
-| :::no-loc text="Gen 2 GC Count"::: (`gen-2-gc-count`) | The number of times GC has occurred for Gen 2 per update interval | .NET Core 3.1 |
-| :::no-loc text="Gen 2 Size"::: (`gen-2-size`) | The number of bytes for Gen 2 GC | .NET Core 3.1 |
-| :::no-loc text="LOH Size"::: (`loh-size`) | The number of bytes for the large object heap | .NET Core 3.1 |
-| :::no-loc text="POH Size"::: (`poh-size`) | The number of bytes for the pinned object heap (available on .NET 5 and later versions) | .NET Core 3.1 |
-| :::no-loc text="GC Fragmentation"::: (`gc-fragmentation`) | The GC Heap Fragmentation (available on .NET 5 and later versions) | .NET Core 3.1 |
-| :::no-loc text="Monitor Lock Contention Count"::: (`monitor-lock-contention-count`) | The number of times there was contention when trying to take the monitor's lock, based on <xref:System.Threading.Monitor.LockContentionCount?displayProperty=nameWithType> | .NET Core 3.1 |
-| :::no-loc text="Number of Active Timers"::: (`active-timer-count`) | The number of <xref:System.Threading.Timer> instances that are currently active, based on <xref:System.Threading.Timer.ActiveCount?displayProperty=nameWithType> | .NET Core 3.1 |
-| :::no-loc text="Number of Assemblies Loaded"::: (`assembly-count`) | The number of <xref:System.Reflection.Assembly> instances loaded into a process at a point in time | .NET Core 3.1 |
-| :::no-loc text="ThreadPool Completed Work Item Count"::: (`threadpool-completed-items-count`) | The number of work items that have been processed so far in the <xref:System.Threading.ThreadPool> | .NET Core 3.1 |
-| :::no-loc text="ThreadPool Queue Length"::: (`threadpool-queue-length`) | The number of work items that are currently queued to be processed in the <xref:System.Threading.ThreadPool> | .NET Core 3.1 |
-| :::no-loc text="ThreadPool Thread Count"::: (`threadpool-thread-count`) | The number of thread pool threads that currently exist in the <xref:System.Threading.ThreadPool>, based on <xref:System.Threading.ThreadPool.ThreadCount?displayProperty=nameWithType> | .NET Core 3.1 |
-| :::no-loc text="Working Set"::: (`working-set`) | The number of megabytes of physical memory mapped to the process context at a point in time based on <xref:System.Environment.WorkingSet?displayProperty=nameWithType> | .NET Core 3.1 |
+| :::no-loc text="% Time in GC since last GC"::: (`time-in-gc`) | The percent of time in GC since the last GC | .NET 6 |
+| :::no-loc text="Allocation Rate"::: (`alloc-rate`) | The number of bytes allocated per update interval | .NET 6 |
+| :::no-loc text="CPU Usage"::: (`cpu-usage`) | The percent of the process's CPU usage relative to all of the system CPU resources | .NET 6 |
+| :::no-loc text="Exception Count"::: (`exception-count`) | The number of exceptions that have occurred | .NET 6 |
+| :::no-loc text="GC Heap Size"::: (`gc-heap-size`) | The number of megabytes thought to be allocated based on <xref:System.GC.GetTotalMemory(System.Boolean)?displayProperty=nameWithType> | .NET 6 |
+| :::no-loc text="Gen 0 GC Count"::: (`gen-0-gc-count`) | The number of times GC has occurred for Gen 0 per update interval | .NET 6 |
+| :::no-loc text="Gen 0 Size"::: (`gen-0-size`) | The number of bytes for Gen 0 GC | .NET 6 |
+| :::no-loc text="Gen 1 GC Count"::: (`gen-1-gc-count`) | The number of times GC has occurred for Gen 1 per update interval | .NET 6 |
+| :::no-loc text="Gen 1 Size"::: (`gen-1-size`) | The number of bytes for Gen 1 GC | .NET 6 |
+| :::no-loc text="Gen 2 GC Count"::: (`gen-2-gc-count`) | The number of times GC has occurred for Gen 2 per update interval | .NET 6 |
+| :::no-loc text="Gen 2 Size"::: (`gen-2-size`) | The number of bytes for Gen 2 GC | .NET 6 |
+| :::no-loc text="LOH Size"::: (`loh-size`) | The number of bytes for the large object heap | .NET 6 |
+| :::no-loc text="POH Size"::: (`poh-size`) | The number of bytes for the pinned object heap (available on .NET 5 and later versions) | .NET 6 |
+| :::no-loc text="GC Fragmentation"::: (`gc-fragmentation`) | The GC Heap Fragmentation (available on .NET 5 and later versions) | .NET 6 |
+| :::no-loc text="Monitor Lock Contention Count"::: (`monitor-lock-contention-count`) | The number of times there was contention when trying to take the monitor's lock, based on <xref:System.Threading.Monitor.LockContentionCount?displayProperty=nameWithType> | .NET 6 |
+| :::no-loc text="Number of Active Timers"::: (`active-timer-count`) | The number of <xref:System.Threading.Timer> instances that are currently active, based on <xref:System.Threading.Timer.ActiveCount?displayProperty=nameWithType> | .NET 6 |
+| :::no-loc text="Number of Assemblies Loaded"::: (`assembly-count`) | The number of <xref:System.Reflection.Assembly> instances loaded into a process at a point in time | .NET 6 |
+| :::no-loc text="ThreadPool Completed Work Item Count"::: (`threadpool-completed-items-count`) | The number of work items that have been processed so far in the <xref:System.Threading.ThreadPool> | .NET 6 |
+| :::no-loc text="ThreadPool Queue Length"::: (`threadpool-queue-length`) | The number of work items that are currently queued to be processed in the <xref:System.Threading.ThreadPool> | .NET 6 |
+| :::no-loc text="ThreadPool Thread Count"::: (`threadpool-thread-count`) | The number of thread pool threads that currently exist in the <xref:System.Threading.ThreadPool>, based on <xref:System.Threading.ThreadPool.ThreadCount?displayProperty=nameWithType> | .NET 6 |
+| :::no-loc text="Working Set"::: (`working-set`) | The number of megabytes of physical memory mapped to the process context at a point in time based on <xref:System.Environment.WorkingSet?displayProperty=nameWithType> | .NET 6 |
 | :::no-loc text="IL Bytes Jitted"::: (`il-bytes-jitted`) | The total size of ILs that are JIT-compiled, in bytes | .NET 5 |
 | :::no-loc text="Methods Jitted Count"::: (`methods-jitted-count`) | The number of methods that are JIT-compiled | .NET 5 |
 | :::no-loc text="GC Committed Bytes"::: (`gc-committed`) | The number of bytes committed by the GC | .NET 6 |
@@ -47,10 +47,10 @@ The following counters are published as part of [ASP.NET Core](/aspnet/core) and
 
 | Counter | Description | First available in |
 |--|--|--|
-| :::no-loc text="Current Requests"::: (`current-requests`) | The total number of requests that have started, but not yet stopped | .NET Core 3.1 |
-| :::no-loc text="Failed Requests"::: (`failed-requests`) | The total number of failed requests that have occurred for the life of the app | .NET Core 3.1 |
-| :::no-loc text="Request Rate"::: (`requests-per-second`) | The number of requests that occur per update interval | .NET Core 3.1 |
-| :::no-loc text="Total Requests"::: (`total-requests`) | The total number of requests that have occurred for the life of the app | .NET Core 3.1 |
+| :::no-loc text="Current Requests"::: (`current-requests`) | The total number of requests that have started, but not yet stopped | .NET 6 |
+| :::no-loc text="Failed Requests"::: (`failed-requests`) | The total number of failed requests that have occurred for the life of the app | .NET 6 |
+| :::no-loc text="Request Rate"::: (`requests-per-second`) | The number of requests that occur per update interval | .NET 6 |
+| :::no-loc text="Total Requests"::: (`total-requests`) | The total number of requests that have occurred for the life of the app | .NET 6 |
 
 ## Microsoft.AspNetCore.Http.Connections counters
 
@@ -58,11 +58,11 @@ The following counters are published as part of [ASP.NET Core SignalR](/aspnet/c
 
 | Counter | Description | First available in |
 |--|--|--|
-| :::no-loc text="Average Connection Duration"::: (`connections-duration`) | The average duration of a connection in milliseconds | .NET Core 3.1 |
-| :::no-loc text="Current Connections"::: (`current-connections`) | The number of active connections that have started, but not yet stopped | .NET Core 3.1 |
-| :::no-loc text="Total Connections Started"::: (`connections-started`) | The total number of connections that have started | .NET Core 3.1 |
-| :::no-loc text="Total Connections Stopped"::: (`connections-stopped`) | The total number of connections that have stopped | .NET Core 3.1 |
-| :::no-loc text="Total Connections Timed Out"::: (`connections-timed-out`) | The total number of connections that have timed out | .NET Core 3.1 |
+| :::no-loc text="Average Connection Duration"::: (`connections-duration`) | The average duration of a connection in milliseconds | .NET 6 |
+| :::no-loc text="Current Connections"::: (`current-connections`) | The number of active connections that have started, but not yet stopped | .NET 6 |
+| :::no-loc text="Total Connections Started"::: (`connections-started`) | The total number of connections that have started | .NET 6 |
+| :::no-loc text="Total Connections Stopped"::: (`connections-stopped`) | The total number of connections that have stopped | .NET 6 |
+| :::no-loc text="Total Connections Timed Out"::: (`connections-timed-out`) | The total number of connections that have timed out | .NET 6 |
 
 ## Microsoft-AspNetCore-Server-Kestrel counters
 

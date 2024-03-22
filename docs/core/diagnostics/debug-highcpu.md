@@ -7,7 +7,7 @@ ms.date: 07/20/2020
 
 # Debug high CPU usage in .NET Core
 
-**This article applies to: ✔️** .NET Core 3.1 SDK and later versions
+**This article applies to: ✔️** .NET 6 SDK and later versions
 
 In this tutorial, you'll learn how to debug an excessive CPU usage scenario. Using the provided example [ASP.NET Core web app](/samples/dotnet/samples/diagnostic-scenarios) source code repository, you can cause a deadlock intentionally. The endpoint will stop responding and experience thread accumulation. You'll learn how you can use various tools to diagnose this scenario with several key pieces of diagnostics data.
 
@@ -25,7 +25,7 @@ In this tutorial, you will:
 
 The tutorial uses:
 
-- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet) or a later version.
+- [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet) or a later version.
 - [Sample debug target](/samples/dotnet/samples/diagnostic-scenarios) to trigger the scenario.
 - [dotnet-trace](dotnet-trace.md) to list processes and generate a profile.
 - [dotnet-counters](dotnet-counters.md) to monitor cpu usage.

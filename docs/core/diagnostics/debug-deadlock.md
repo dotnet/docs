@@ -7,7 +7,7 @@ ms.date: 07/20/2020
 
 # Debug a deadlock in .NET Core
 
-**This article applies to: ✔️** .NET Core 3.1 SDK and later versions
+**This article applies to: ✔️** .NET 6 SDK and later versions
 
 In this tutorial, you'll learn how to debug a deadlock scenario. Using the provided example [ASP.NET Core web app](/samples/dotnet/samples/diagnostic-scenarios) source code repository, you can cause a deadlock intentionally. The endpoint will stop responding and experience thread accumulation. You'll learn how you can use various tools to analyze the problem, such as core dumps, core dump analysis, and process tracing.
 
@@ -25,7 +25,7 @@ In this tutorial, you will:
 
 The tutorial uses:
 
-- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet) or a later version
+- [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet) or a later version
 - [Sample debug target - web app](/samples/dotnet/samples/diagnostic-scenarios) to trigger the scenario
 - [dotnet-trace](dotnet-trace.md) to list processes
 - [dotnet-dump](dotnet-dump.md) to collect, and analyze a dump file

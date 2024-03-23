@@ -25,7 +25,7 @@ namespace SystemTextJsonSamples
             Type type,
             JsonSerializerOptions options)
         {
-            Type[] typeArguments = t.GetGenericArguments();
+            Type[] typeArguments = type.GetGenericArguments();
             Type keyType = typeArguments[0];
             Type valueType = typeArguments[1];
 

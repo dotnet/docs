@@ -97,8 +97,6 @@ Console.WriteLine($"{chatHistory.Last().Role} >>> {chatHistory.Last().Content}")
 
 Customize the system prompt and user message to see how the model responds to help you find a hike that you'll like.
 
-
-
 :::zone-end
 
 <!-- markdownlint-disable MD044 -->

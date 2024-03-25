@@ -5,7 +5,7 @@ author: adegeo
 ms.author: adegeo
 ms.date: 03/19/2024
 ms.custom: linux-related-content
-zone_pivot_groups: ubuntu-set-one
+zone_pivot_groups: ubuntu-install-set-one
 ---
 
 # Install .NET SDK or .NET Runtime on Ubuntu
@@ -15,6 +15,10 @@ This article discusses how to install .NET on Ubuntu.
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 
 [!INCLUDE [linux-install-package-manager-x64-vs-arm-ubuntu](includes/linux-install-package-manager-x64-vs-arm-ubuntu.md)]
+
+<!--
+===== Ubuntu 23.10
+-->
 
 ::: zone pivot="os-linux-ubuntu-2310"
 
@@ -67,6 +71,10 @@ When you install with a package manager, these libraries are installed for you. 
 You can install a recent version of *libgdiplus* by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin-ubuntu).
 
 ::: zone-end
+
+<!--
+===== Ubuntu 23.04
+-->
 
 ::: zone pivot="os-linux-ubuntu-2304"
 
@@ -122,59 +130,11 @@ You can install a recent version of *libgdiplus* by [adding the Mono repository 
 
 ::: zone-end
 
-::: zone pivot="os-linux-ubuntu-2210"
-
-## Ubuntu 22.10
-
-[!INCLUDE [linux-ubuntu-package-feed-both](includes/linux-ubuntu-package-feed-both.md)]
-
-The following versions of .NET are supported or available for Ubuntu 22.10:
-
-| Supported .NET versions | Available in Ubuntu feed | [Available in Microsoft feed](linux-ubuntu.md#register-the-microsoft-package-repository) |
-|-------------------------|--------------------------|-----------------------------------|
-| 7.0, 6.0                | 7.0, 6.0                 | 7.0, 6.0, 3.1                     |
-
-[!INCLUDE [linux-ubuntu-feed-sdk-note](includes/linux-ubuntu-feed-sdk-note.md)]
-
-When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support, .NET is no longer supported with that version.
-
-# [.NET 8](#tab/dotnet8)
-
-.NET 8 isn't supported on Ubuntu 22.10.
-
-# [.NET 7](#tab/dotnet7)
-
-[!INCLUDE [linux-apt-install-70](includes/linux-install-70-apt.md)]
-
-# [.NET 6](#tab/dotnet6)
-
-[!INCLUDE [linux-apt-install-60](includes/linux-install-60-apt.md)]
-
----
-
-## Dependencies
-
-When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you'll need to make sure these libraries are installed:
-
-- libc6
-- libgcc-s1
-- libgssapi-krb5-2
-- libicu71
-- liblttng-ust1
-- libssl3
-- libstdc++6
-- libunwind8
-- zlib1g
-
-[!INCLUDE [linux-ubuntu-deps-example](includes/linux-ubuntu-deps-example.md)]
-
-[!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
-
-You can install a recent version of *libgdiplus* by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin-ubuntu).
-
-::: zone-end
-
 ::: zone pivot="os-linux-ubuntu-2204"
+
+<!--
+===== Ubuntu 22.04
+-->
 
 ## Ubuntu 22.04
 
@@ -227,6 +187,10 @@ When you install with a package manager, these libraries are installed for you. 
 You can install a recent version of *libgdiplus* by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin-ubuntu).
 
 ::: zone-end
+
+<!--
+===== Ubuntu 20.04
+-->
 
 ::: zone pivot="os-linux-ubuntu-2004"
 
@@ -286,6 +250,10 @@ You can install a recent version of *libgdiplus* by [adding the Mono repository 
 
 ::: zone-end
 
+<!--
+===== Ubuntu 18.04
+-->
+
 ::: zone pivot="os-linux-ubuntu-1804"
 
 ## Ubuntu 18.04
@@ -343,6 +311,10 @@ When you install with a package manager, these libraries are installed for you. 
 You can install a recent version of *libgdiplus* by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin-ubuntu).
 
 ::: zone-end
+
+<!--
+===== Ubuntu 16.04
+-->
 
 ::: zone pivot="os-linux-ubuntu-1604"
 
@@ -402,6 +374,13 @@ You can install a recent version of *libgdiplus* by [adding the Mono repository 
 
 ::: zone-end
 
+
+<!--
+===== All versions
+-->
+
+::: zone pivot="os-linux-ubuntu-2310,os-linux-ubuntu-2304,os-linux-ubuntu-2204,os-linux-ubuntu-2004,os-linux-ubuntu-1804,os-linux-ubuntu-1604"
+
 ## Unsupported versions
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
@@ -414,5 +393,19 @@ You can install a recent version of *libgdiplus* by [adding the Mono repository 
 
 ## Next steps
 
-- [How to enable TAB completion for the .NET CLI](../tools/enable-tab-autocomplete.md)
-- [Tutorial: Create a console application with .NET SDK using Visual Studio Code](../tutorials/with-visual-studio-code.md)
+- [How to enable TAB completion for the .NET CLI.](../tools/enable-tab-autocomplete.md)
+- [Tutorial: Create a console application with .NET SDK using Visual Studio Code.](../tutorials/with-visual-studio-code.md)
+
+::: zone-end
+
+<!--
+===== Other Ubuntu versions
+-->
+
+::: zone pivot="os-linux-ubuntu-other"
+
+## Manual install
+
+If your Ubuntu version isn't supported, you must install .NET by manually extracting the binaries, use using the install script. For more information, see [Install .NET on Linux without using a package manager](linux-scripted-manual.md).
+
+::: zone-end

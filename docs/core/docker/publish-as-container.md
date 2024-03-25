@@ -97,7 +97,7 @@ To enable SDK container support, set the `EnableSdkContainerSupport` property to
 ```xml
 <PropertyGroup>
   <IsPublishable>true</IsPublishable>
-  <EnableSdkContainerBuildSupport>true</EnableSdkContainerBuildSupport>
+  <EnableSdkContainerSupport>true</EnableSdkContainerSupport>
 </PropertyGroup>
 ```
 

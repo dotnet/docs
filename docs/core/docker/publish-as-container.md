@@ -87,7 +87,12 @@ The worker template loops indefinitely. Use the cancel command <kbd>Ctrl+C</kbd>
 
 ## Add NuGet package
 
-Starting with .NET SDK version 8.0.200, the `PublishContainer` target is available for every project. To avoid depending on the `Microsoft.NET.Build.Containers` NuGet package, ensure that you're using the latest .NET SDK version. Additionally, your project file needs to have `IsPublishable` set to `true` and enable SDK container support. To enable SDK container support, set the `EnableSdkContainerBuildSupport` property to `true` in your project file.
+Starting with .NET SDK version 8.0.200, the `PublishContainer` target is available for every project. To avoid depending on the `Microsoft.NET.Build.Containers` NuGet package, ensure that you're using the latest .NET SDK version. Additionally, your project file needs to have `IsPublishable` set to `true` and enable SDK container support.
+
+> [!IMPORTANT]
+> By default, the `IsPublishable` property is set to `true` for `console`, `webapp`, and `worker` templates.
+
+To enable SDK container support, set the `EnableSdkContainerSupport` property to `true` in your project file.
 
 ```xml
 <PropertyGroup>

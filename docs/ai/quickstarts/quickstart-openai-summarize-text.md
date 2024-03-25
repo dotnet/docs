@@ -60,7 +60,7 @@ Kernel kernel = Kernel.CreateBuilder()
     .Build();
 ```
 
-Once the `OpenAIClient` client is created, we read the content of the file `benefits.md`. Then using the `ChatRequestUserMessage` class we can add to the model the request to summarize that text.
+Once the `Kernel` client is created, we read the contents of the file `benefits.md` and create a `prompt` to ask the the model to summarize that text.
 
 ```csharp
 // Create and print out the prompt
@@ -71,7 +71,7 @@ string prompt = $"""
 Console.WriteLine($"user >>> {prompt}");
 ```
 
-To have the model generate a response based off the user request, use the `GetChatCompletionsAsync` function.
+To have the model generate a response based off `prompt`, use the `InvokePromptAsync` function.
 
 ```csharp
 // Submit the prompt and print out the response

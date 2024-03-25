@@ -27,6 +27,84 @@ Get started with the .NET Azure OpenAI SDK by creating a simple .NET 8 console c
 
     If you get an error message the Azure OpenAI resources may not have finished deploying. Wait a couple of minutes and try again.
 
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="semantic-kernel"
+<!-- markdownlint-enable MD044 -->
+
+## Understanding the code
+
+Our application uses the `Microsoft.SemanticKernel` client SDK, which is available on [NuGet](https://www.nuget.org/packages/Microsoft.SemanticKernel), to send and receive requests to an Azure OpenAI service deployed in Azure.
+
+The `AzureOpenAIChatCompletionService` service facilitates the requests and responses.
+
+```csharp
+// == Create the Azure OpenAI Chat Completion Service  ==========
+AzureOpenAIChatCompletionService service = new(deployment, endpoint, key);
+```
+
+The entire application is contained within the **Program.cs** file. The first several lines of code loads up secrets and configuration values that were set in the `dotnet user-secrets` for you during the application provisioning.
+
+```csharp
+// == Retrieve the local secrets saved during the Azure deployment ==========
+var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
+string endpoint = config["AZURE_OPENAI_ENDPOINT"];
+string deployment = config["AZURE_OPENAI_GPT_NAME"];
+string key = config["AZURE_OPENAI_KEY"];
+```
+
+Once the `AzureOpenAIChatCompletionService` service is created, we provide more context to the model by adding a system prompt. This instructs the model how you'd like it to act during the conversation.
+
+```csharp
+// Start the conversation with context for the AI model
+ChatHistory chatHistory = new("""
+    You are a hiking enthusiast who helps people discover fun hikes in their area. You are upbeat and friendly. 
+    You introduce yourself when first saying hello. When helping people out, you always ask them 
+    for this information to inform the hiking recommendation you provide:
+
+    1. Where they are located
+    2. What hiking intensity they are looking for
+
+    You will then provide three suggestions for nearby hikes that vary in length after you get that information. 
+    You will also share an interesting fact about the local nature on the hikes when making a recommendation.
+    """);
+```
+
+Then you can add a user message to the model by using the `ChatRequestUserMessage` class.
+
+To have the model generate a response based off the system prompt and the user request, use the `GetChatMessageContentAsync` function.
+
+```csharp
+
+// Add user message to chat history
+chatHistory.AddUserMessage("Hi! Apparently you can help me find a hike that I will like?");
+
+// Print User Message to console
+Console.WriteLine($"{chatHistory.Last().Role} >>> {chatHistory.Last().Content}");
+
+// Get response
+var response = await service.GetChatMessageContentAsync(chatHistory, new OpenAIPromptExecutionSettings() { MaxTokens = 400 });
+```
+
+To maintain the chat history or context, make sure you add the response from the model as a `ChatRequestAssistantMessage`.
+
+```csharp
+// Add response to chat history
+chatHistory.Add(response);
+
+// Print Response to console
+Console.WriteLine($"{chatHistory.Last().Role} >>> {chatHistory.Last().Content}");
+```
+
+Customize the system prompt and user message to see how the model responds to help you find a hike that you'll like.
+
+
+
+:::zone-end
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="azure-openai-sdk"
+<!-- markdownlint-enable MD044 -->
+
 ## Understanding the code
 
 Our application uses the `Azure.AI.OpenAI` client SDK, which is available on [NuGet](https://www.nuget.org/packages/Azure.AI.OpenAI), to send and receive requests to an Azure OpenAI service deployed in Azure.
@@ -102,6 +180,8 @@ completionOptions.Messages.Add(new ChatRequestAssisstantMessage(assistantRespons
 To maintain the chat history or context, make sure you add the response from the model as a `ChatRequestAssistantMessage`.
 
 Customize the system prompt and user message to see how the model responds to help you find a hike that you'll like.
+
+:::zone-end
 
 ## Clean up resources
 

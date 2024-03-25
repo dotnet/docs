@@ -6,6 +6,7 @@ ms.topic: quickstart
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 author: fboucher
 ms.author: frbouche
+zone_pivot_groups: openai-library
 # CustomerIntent: As a .NET developer new to Azure OpenAI, I want deploy and use sample code to interact to learn from the sample code to summarize text.
 ---
 
@@ -25,6 +26,66 @@ Get started with the .NET Azure OpenAI SDK by creating a simple .NET 8 console c
     ```
 
     If you get an error message the Azure OpenAI resources may not have finished deploying. Wait a couple of minutes and try again.
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="semantic-kernel"
+<!-- markdownlint-enable MD044 -->
+
+## Understanding the code
+
+Our application uses the `Microsoft.SemanticKernel` client SDK, which is available on [NuGet](https://www.nuget.org/packages/Microsoft.SemanticKernel), to send and receive requests to an Azure OpenAI service deployed in Azure.
+
+The `OpenAIClient` class facilitates the requests and responses. `ChatCompletionOptions` specifies parameters of how the model will respond.
+
+```csharp
+Kernel kernel = Kernel.CreateBuilder()
+    .AddAzureOpenAIChatCompletion(deployment, endpoint, key)
+    .Build();
+```
+
+The entire application is contained within the **Program.cs** file. The first several lines of code loads up secrets and configuration values that were set in the `dotnet user-secrets` for you during the application provisioning.
+
+```csharp
+// == Retrieve the local secrets saved during the Azure deployment ==========
+var config = new ConfigurationBuilder()
+    .AddUserSecrets<Program>()
+    .Build();
+string endpoint = config["AZURE_OPENAI_ENDPOINT"];
+string deployment = config["AZURE_OPENAI_GPT_NAME"];
+string key = config["AZURE_OPENAI_KEY"];
+
+// Create a Kernel containing the Azure OpenAI Chat Completion Service
+Kernel kernel = Kernel.CreateBuilder()
+    .AddAzureOpenAIChatCompletion(deployment, endpoint, key)
+    .Build();
+```
+
+Once the `OpenAIClient` client is created, we read the content of the file `benefits.md`. Then using the `ChatRequestUserMessage` class we can add to the model the request to summarize that text.
+
+```csharp
+// Create and print out the prompt
+string prompt = $"""
+    Please summarize the the following text in 20 words or less:
+    {File.ReadAllText("benefits.md")}
+    """;
+Console.WriteLine($"user >>> {prompt}");
+```
+
+To have the model generate a response based off the user request, use the `GetChatCompletionsAsync` function.
+
+```csharp
+// Submit the prompt and print out the response
+string response = await kernel.InvokePromptAsync<string>(prompt, new(new OpenAIPromptExecutionSettings() { MaxTokens = 400 }));
+Console.WriteLine($"assistant >>> {response}");
+```
+
+Customize the text content of the file or the length of the summary to see the differences in the responses.
+
+:::zone-end
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="azure-openai-sdk"
+<!-- markdownlint-enable MD044 -->
 
 ## Understanding the code
 
@@ -83,6 +144,8 @@ Console.WriteLine($"\n\nAssistant >>> {assistantResponse.Content}");
 ```
 
 Customize the text content of the file or the length of the summary to see the differences in the responses.
+
+:::zone-end
 
 ## Clean up resources
 

@@ -9,6 +9,7 @@ items:
       href: automate-training-with-model-builder.md
     - name: The ML.NET command-line interface
       href: automate-training-with-cli.md
+      displayName: cli
   - name: API
     items:
     - name: The ML.NET API
@@ -96,6 +97,7 @@ items:
       href: how-to-guides/install-ml-net-cli.md
     - name: Format data for named entity recognition
       href: how-to-guides/ner-dataset-guide.md
+      displayName: ner
   - name: API
     items:
     - name: Install extra dependencies
@@ -136,7 +138,7 @@ items:
   items:
   - name: ML.NET API reference
     href: ../../api/index.md?view=ml-dotnet&preserve-view=true
-  - name: ML.NET API preview API reference
+  - name: ML.NET Preview API reference
     href: ../../api/index.md?view=ml-dotnet-preview&preserve-view=true
   - name: CLI reference
     href: reference/ml-net-cli-reference.md

@@ -49,7 +49,7 @@ You can specify conditional exclusion by setting the [[JsonIgnore]](xref:System.
 
 The following example illustrates the use of the [[JsonIgnore]](xref:System.Text.Json.Serialization.JsonIgnoreAttribute) attribute's `Condition` property:
 
-:::code language="csharp" source="snippets/how-to-5-0/csharp/JsonIgnoreAttributeExample.cs" highlight="8,11,14":::
+:::code language="csharp" source="snippets/how-to-contd/csharp/JsonIgnoreAttributeExample.cs" highlight="8,11,14":::
 :::code language="vb" source="snippets/how-to-5-0/vb/JsonIgnoreAttributeExample.vb" :::
 
 ## Ignore all read-only properties
@@ -81,14 +81,14 @@ This option applies only to properties. To ignore read-only fields when [seriali
 
 To ignore all null-value properties, set the <xref:System.Text.Json.JsonSerializerOptions.DefaultIgnoreCondition> property to <xref:System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull>, as shown in the following example:
 
-:::code language="csharp" source="snippets/how-to-5-0/csharp/IgnoreNullOnSerialize.cs" highlight="26":::
+:::code language="csharp" source="snippets/how-to-contd/csharp/IgnoreNullOnSerialize.cs" highlight="26":::
 :::code language="vb" source="snippets/how-to-5-0/vb/IgnoreNullOnSerialize.vb" :::
 
 ## Ignore all default-value properties
 
 To prevent serialization of default values in value type properties, set the <xref:System.Text.Json.JsonSerializerOptions.DefaultIgnoreCondition> property to <xref:System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingDefault>, as shown in the following example:
 
-:::code language="csharp" source="snippets/how-to-5-0/csharp/IgnoreValueDefaultOnSerialize.cs" highlight="26":::
+:::code language="csharp" source="snippets/how-to-contd/csharp/IgnoreValueDefaultOnSerialize.cs" highlight="26":::
 :::code language="vb" source="snippets/how-to-5-0/vb/IgnoreValueDefaultOnSerialize.vb":::
 
 The <xref:System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingDefault> setting also prevents serialization of null-value reference type and nullable value type properties.

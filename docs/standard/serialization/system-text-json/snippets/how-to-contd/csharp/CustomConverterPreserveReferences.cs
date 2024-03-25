@@ -96,7 +96,6 @@ namespace CustomConverterPreserveReferences
         private ReferenceResolver? _rootedResolver;
         public override ReferenceResolver CreateResolver() => _rootedResolver!;
         public void Reset() => _rootedResolver = new MyReferenceResolver();
-
     }
     // </MyReferenceHandler>
 
@@ -120,7 +119,7 @@ namespace CustomConverterPreserveReferences
                 Supervisor = tyler
             };
 
-            tyler.DirectReports = new List<Employee> { adrian };
+            tyler.DirectReports = [adrian];
             adrian.Manager = tyler;
 
             tyler.Company = contoso;

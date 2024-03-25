@@ -40,9 +40,9 @@ Use the following sections to determine how you should install .NET:
 
 Install .NET through the Ubuntu feed. For more information, see the following pages:
 
+- [Install .NET on Ubuntu 24.04](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2404).
 - [Install .NET on Ubuntu 23.10](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2310).
 - [Install .NET on Ubuntu 23.04](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2304).
-- [Install .NET on Ubuntu 22.10](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2210).
 - [Install .NET on Ubuntu 22.04](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2204).
 
 [!INCLUDE [linux-ubuntu-feed-sdk-note](includes/linux-ubuntu-feed-sdk-note.md)]
@@ -107,9 +107,9 @@ The following table is a list of currently supported .NET releases and the versi
 
 | Ubuntu                                                             | Supported .NET versions | Available in Ubuntu feed | [Available in Microsoft feed](#register-the-microsoft-package-repository) |
 |--------------------------------------------------------------------|-------------------------|--------------------------|-----------------------------------|
+| [24.04](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2310)       | 8.0                     | 8.0                      | None                              |
 | [23.10](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2310)       | 8.0, 7.0, 6.0           | 8.0, 7.0, 6.0            | 8.0, 7.0, 6.0                     |
 | [23.04](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2304)       | 8.0, 7.0, 6.0           | 7.0, 6.0                 | 8.0, 7.0, 6.0                     |
-| [22.10](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2210)       | 7.0, 6.0                | 7.0, 6.0                 | 7.0, 6.0, 3.1                     |
 | [22.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2204) | 8.0, 7.0, 6.0           | 7.0, 6.0                 | 8.0, 7.0, 6.0, 3.1                |
 | [20.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2004) | 8.0, 7.0, 6.0           | None                     | 8.0, 7.0. 6.0, 5.0, 3.1, 2.1      |
 | [18.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-1804) | 7.0, 6.0                | None                     | 7.0. 6.0, 5.0, 3.1, 2.2, 2.1      |
@@ -256,13 +256,13 @@ When you install with a package manager, these libraries are installed for you. 
 - libicu66 (for 20.x)
 - libicu70 (for 22.04)
 - libicu71 (for 22.10)
-- libicu72 (for 23.04)
-- liblttng-ust1 (for 22.x)
+- libicu72 (for 23.04 or later)
+- liblttng-ust1 (for 22.x or later)
 - libssl1.0.0 (for 16.x)
 - libssl1.1 (for 18.x, 20.x)
-- libssl3 (for 22.x)
+- libssl3 (for 22.x or later)
 - libstdc++6
-- libunwind8 (for 22.x)
+- libunwind8 (for 22.x or later)
 - zlib1g
 
 [!INCLUDE [linux-ubuntu-deps-example](includes/linux-ubuntu-deps-example.md)]

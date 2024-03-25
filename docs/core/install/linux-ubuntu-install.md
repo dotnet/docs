@@ -17,6 +17,61 @@ This article discusses how to install .NET on Ubuntu.
 [!INCLUDE [linux-install-package-manager-x64-vs-arm-ubuntu](includes/linux-install-package-manager-x64-vs-arm-ubuntu.md)]
 
 <!--
+===== Ubuntu 24.04
+-->
+
+::: zone pivot="os-linux-ubuntu-2310"
+
+## Ubuntu 24.04
+
+[!INCLUDE [linux-ubuntu-package-feed-both](includes/linux-ubuntu-package-feed-both.md)]
+
+The following versions of .NET are supported or available for Ubuntu 24.04:
+
+| Supported .NET versions | Available in Ubuntu feed | [Available in Microsoft feed](linux-ubuntu.md#register-the-microsoft-package-repository) |
+|-------------------------|--------------------------|-----------------------------------|
+| 8.0                     | 8.0                      | None                              |
+
+<!--CULLED until the packages are available in the MS feed [!INCLUDE [linux-ubuntu-feed-sdk-note](includes/linux-ubuntu-feed-sdk-note.md)]-->
+
+When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support, .NET is no longer supported with that version.
+
+# [.NET 8](#tab/dotnet8)
+
+[!INCLUDE [linux-apt-install-80](includes/linux-install-80-apt.md)]
+
+# [.NET 7](#tab/dotnet7)
+
+.NET 7 isn't supported on Ubuntu 24.04.
+
+# [.NET 6](#tab/dotnet6)
+
+.NET 6 isn't supported on Ubuntu 24.04.
+
+---
+
+## Dependencies
+
+When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you'll need to make sure these libraries are installed:
+
+- libc6
+- libgcc-s1
+- libicu72
+- liblttng-ust1
+- libssl3
+- libstdc++6
+- libunwind8
+- zlib1g
+
+[!INCLUDE [linux-ubuntu-deps-example](includes/linux-ubuntu-deps-example.md)]
+
+[!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
+
+You can install a recent version of _libgdiplus_ by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin-ubuntu).
+
+::: zone-end
+
+<!--
 ===== Ubuntu 23.10
 -->
 
@@ -68,7 +123,7 @@ When you install with a package manager, these libraries are installed for you. 
 
 [!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
 
-You can install a recent version of *libgdiplus* by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin-ubuntu).
+You can install a recent version of _libgdiplus_ by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin-ubuntu).
 
 ::: zone-end
 
@@ -126,7 +181,7 @@ When you install with a package manager, these libraries are installed for you. 
 
 [!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
 
-You can install a recent version of *libgdiplus* by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin-ubuntu).
+You can install a recent version of _libgdiplus_ by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin-ubuntu).
 
 ::: zone-end
 
@@ -184,7 +239,7 @@ When you install with a package manager, these libraries are installed for you. 
 
 [!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
 
-You can install a recent version of *libgdiplus* by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin-ubuntu).
+You can install a recent version of _libgdiplus_ by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin-ubuntu).
 
 ::: zone-end
 
@@ -246,7 +301,7 @@ When you install with a package manager, these libraries are installed for you. 
 
 [!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
 
-You can install a recent version of *libgdiplus* by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin-ubuntu).
+You can install a recent version of _libgdiplus_ by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin-ubuntu).
 
 ::: zone-end
 
@@ -308,7 +363,7 @@ When you install with a package manager, these libraries are installed for you. 
 
 [!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
 
-You can install a recent version of *libgdiplus* by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin-ubuntu).
+You can install a recent version of _libgdiplus_ by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin-ubuntu).
 
 ::: zone-end
 
@@ -370,10 +425,9 @@ When you install with a package manager, these libraries are installed for you. 
 
 [!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
 
-You can install a recent version of *libgdiplus* by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin-ubuntu).
+You can install a recent version of _libgdiplus_ by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin-ubuntu).
 
 ::: zone-end
-
 
 <!--
 ===== All versions

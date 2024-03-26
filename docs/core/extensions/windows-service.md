@@ -3,7 +3,7 @@ title: Create Windows Service using BackgroundService
 description: Learn how to create a Windows Service using the BackgroundService in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 02/28/2024
+ms.date: 03/25/2024
 ms.topic: tutorial
 ---
 
@@ -117,7 +117,7 @@ To create the .NET Worker Service app as a Windows Service, it's recommended tha
 > An alternative publishing approach is to build the *\*.dll* (instead of an *\*.exe*), and when you install the published app using the Windows Service Control Manager you delegate to the .NET CLI and pass the DLL. For more information, see [.NET CLI: dotnet command](../tools/dotnet.md).
 >
 > ```powershell
-> sc.exe create ".NET Joke Service" binpath="C:\Path\To\dotnet.exe C:\Path\To\App.WindowsService.dll"
+> sc.exe create ".NET Joke Service" binpath= "C:\Path\To\dotnet.exe C:\Path\To\App.WindowsService.dll"
 > ```
 
 :::code language="xml" source="snippets/workers/windows-service/App.WindowsService.csproj" highlight="8-11":::
@@ -163,14 +163,14 @@ For more information, see [`dotnet publish`](../tools/dotnet-publish.md).
 If you're unfamiliar with using PowerShell and you'd rather create an installer for your service, see [Create a Windows Service installer](windows-service-with-installer.md). Otherwise, to create the Windows Service, use the native Windows Service Control Manager's (*sc.exe*) create command. Run PowerShell as an Administrator.
 
 ```powershell
-sc.exe create ".NET Joke Service" binpath="C:\Path\To\App.WindowsService.exe"
+sc.exe create ".NET Joke Service" binpath= "C:\Path\To\App.WindowsService.exe"
 ```
 
 > [!TIP]
 > If you need to change the content root of the [host configuration](./generic-host.md#host-configuration), you can pass it as a command-line argument when specifying the `binpath`:
 >
 > ```powershell
-> sc.exe create "Svc Name" binpath="C:\Path\To\App.exe --contentRoot C:\Other\Path"
+> sc.exe create "Svc Name" binpath= "C:\Path\To\App.exe --contentRoot C:\Other\Path"
 > ```
 
 You'll see an output message:
@@ -204,7 +204,7 @@ The command will output the recovery configuration, which is the default values&
 To configure recovery, use the `sc.exe failure "<Service Name>"` where `<Service Name>` is the name of your service:
 
 ```powershell
-sc.exe failure ".NET Joke Service" reset=0 actions=restart/60000/restart/60000/run/1000
+sc.exe failure ".NET Joke Service" reset= 0 actions= restart/60000/restart/60000/run/1000
 [SC] ChangeServiceConfig2 SUCCESS
 ```
 

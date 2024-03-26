@@ -88,6 +88,7 @@ When you install with a package manager, these libraries are installed for you. 
 - libgdiplus (if the .NET app requires the *System.Drawing.Common* assembly)
 
 ### 3.15 - 3.17
+
 - icu-libs
 - krb5-libs
 - libgcc

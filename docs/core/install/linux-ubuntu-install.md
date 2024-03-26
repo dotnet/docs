@@ -20,7 +20,7 @@ This article discusses how to install .NET on Ubuntu.
 ===== Ubuntu 24.04
 -->
 
-::: zone pivot="os-linux-ubuntu-2310"
+::: zone pivot="os-linux-ubuntu-2404"
 
 ## Ubuntu 24.04
 

@@ -48,7 +48,7 @@ A deterministic placement strategy that places grains on silos with a specific r
 
 The resource-optimized placement strategy attempts to optimize cluster resources by balancing grain activations across silos based on available memory and CPU usage. It assigns weights to runtime statistics to prioritize different resources and calculates a normalized score for each silo. The silo with the lowest score is chosen for placing the upcoming activation. Normalization ensures that each property contributes proportionally to the overall score. Weights can be adjusted via the <xref:Orleans.Configuration.ResourceOptimizedPlacementOptions> based on user-specific requirements and priorities for different resources.
 
-In addition, this placement strategy exposes an option to build a stronger *preference* to the local silo (*the one which got the request for making a new placement*) to be picked as the target for the activation. This is controlled via the `LocalSiloPreferenceMargin` property which is part of the options.
+Additionally, this placement strategy exposes an option to build a stronger *preference* to the local silo (*the one which got the request for making a new placement*) to be picked as the target for the activation. This is controlled via the `LocalSiloPreferenceMargin` property which is part of the options.
 
 Also, an [*online*](https://en.wikipedia.org/wiki/Online_algorithm), [*adaptive*](https://en.wikipedia.org/wiki/Adaptive_algorithm) algorithm provides a smoothing effect which avoids rapid signal drops by transforming it into a polynomial-like decay process. This is especially important for CPU usage, and overall contributes to avoiding resource saturation on the silos, especially newly joined once.
 

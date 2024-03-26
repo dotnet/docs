@@ -50,6 +50,10 @@ class GenericList2<T>
   
  [!code-csharp[csProgGuideGenerics#28](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideGenerics/CS/Generics.cs#28)]  
   
+ You can also use the type parameter as the return type of a method. The following code example shows a method that returns an array of type `T`:  
+  
+ [!code-csharp[csProgGuideGenerics#29](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideGenerics/CS/Generics.cs#29)]
+
 ## C# Language Specification  
 
  For more information, see the [C# Language Specification](~/_csharpstandard/standard/classes.md#156-methods).  

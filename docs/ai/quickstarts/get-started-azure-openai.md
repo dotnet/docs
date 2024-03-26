@@ -33,7 +33,7 @@ Get started with the .NET Azure OpenAI SDK by creating a simple .NET 8 console c
 
 ## Understanding the code
 
-Our application uses the `Microsoft.SemanticKernel` client SDK, which is available on [NuGet](https://www.nuget.org/packages/Microsoft.SemanticKernel), to send and receive requests to an Azure OpenAI service deployed in Azure.
+Our application uses the `Microsoft.SemanticKernel` package, which is available on [NuGet](https://www.nuget.org/packages/Microsoft.SemanticKernel), to send and receive requests to an Azure OpenAI service deployed in Azure.
 
 The `AzureOpenAIChatCompletionService` service facilitates the requests and responses.
 
@@ -69,7 +69,7 @@ ChatHistory chatHistory = new("""
     """);
 ```
 
-Then you can add a user message to the model by using the `ChatRequestUserMessage` class.
+Then you can add a user message to the model by using the `AddUserMessage` function.
 
 To have the model generate a response based off the system prompt and the user request, use the `GetChatMessageContentAsync` function.
 
@@ -85,7 +85,7 @@ Console.WriteLine($"{chatHistory.Last().Role} >>> {chatHistory.Last().Content}")
 var response = await service.GetChatMessageContentAsync(chatHistory, new OpenAIPromptExecutionSettings() { MaxTokens = 400 });
 ```
 
-To maintain the chat history or context, make sure you add the response from the model as a `ChatRequestAssistantMessage`.
+To maintain the chat history, make sure you add the response from the model.
 
 ```csharp
 // Add response to chat history

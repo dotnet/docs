@@ -82,6 +82,8 @@ Kernel kernel = b
     .Build();
 ```
 
+The function's `ImportPluginFromFunctions` and `CreateFromMethod` are used to define the local function that will be called by the model.
+
 ```csharp
 // Add a new plugin with a local .NET function that should be available to the AI model
 // For convenience and clarity of into the code, this standalone local method handles tool call responses. It will fake a call to a weather API and return the current weather for the specified location.

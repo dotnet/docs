@@ -227,18 +227,6 @@ This section provides information on common errors you might get while using APT
 
 [!INCLUDE [package-manager-failed-to-find-deb](includes/package-manager-failed-to-find-deb.md)]
 
-```bash
-sudo apt-get install -y gpg
-wget -O - https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor -o microsoft.asc.gpg
-sudo mv microsoft.asc.gpg /etc/apt/trusted.gpg.d/
-wget https://packages.microsoft.com/config/ubuntu/{os-version}/prod.list
-sudo mv prod.list /etc/apt/sources.list.d/microsoft-prod.list
-sudo chown root:root /etc/apt/trusted.gpg.d/microsoft.asc.gpg
-sudo chown root:root /etc/apt/sources.list.d/microsoft-prod.list
-sudo apt-get update && \
-  sudo apt-get install -y {dotnet-package}
-```
-
 #### Failed to fetch
 
 [!INCLUDE [package-manager-failed-to-fetch-deb](includes/package-manager-failed-to-fetch-deb.md)]

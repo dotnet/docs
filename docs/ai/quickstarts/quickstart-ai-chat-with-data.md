@@ -33,7 +33,7 @@ Get started with the .NET Azure OpenAI with a `gpt-35-turbo` model, from a simpl
 
 ## Explore the code
 
-Our application uses the `Microsoft.SemanticKernel` client SDK, which is available on [NuGet](https://www.nuget.org/packages/Microsoft.SemanticKernel), to send and receive requests to an Azure OpenAI service deployed in Azure.
+Our application uses the `Microsoft.SemanticKernel` package, which is available on [NuGet](https://www.nuget.org/packages/Microsoft.SemanticKernel), to send and receive requests to an Azure OpenAI service deployed in Azure.
 
 The `AzureOpenAIChatCompletionService` service facilitates the requests and responses.
 

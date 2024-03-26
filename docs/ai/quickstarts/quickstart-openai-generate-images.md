@@ -33,7 +33,7 @@ Get started with the .NET Azure OpenAI SDK by creating a simple .NET 8 console c
 
 ## Understanding the code
 
-Our application uses the `Microsoft.SemanticKernel` client SDK, which is available on [NuGet](https://www.nuget.org/packages/Microsoft.SemanticKernel), to send and receive requests to an Azure OpenAI service deployed in Azure.
+Our application uses the `Microsoft.SemanticKernel` package, which is available on [NuGet](https://www.nuget.org/packages/Microsoft.SemanticKernel), to send and receive requests to an Azure OpenAI service deployed in Azure.
 
 The `AzureOpenAITextToImageService` service facilitates the requests and responses.
 
@@ -55,7 +55,7 @@ string deployment = config["AZURE_OPENAI_GPT_NAME"];
 string key = config["AZURE_OPENAI_KEY"];
 ```
 
-Once the `textToImageService` client is created, we we provide more context to the model by adding a system prompt. A good prompt to generate images requires a clear description: what is in the images, specific color to use, style (drawing, painting, realistic or cartoony). The model will use this prompt to generate the image. To have the model generate a response based off the user request, use the `GenerateImageAsync` function, and specify the size and quality.
+Once the `textToImageService` service is created, we we provide more context to the model by adding a system prompt. A good prompt to generate images requires a clear description: what is in the images, specific color to use, style (drawing, painting, realistic or cartoony). The model will use this prompt to generate the image. To have the model generate a response based off the user request, use the `GenerateImageAsync` function, and specify the size and quality.
 
 ```csharp
 // Generate the image

@@ -33,9 +33,9 @@ Get started with the .NET Azure OpenAI SDK by creating a simple .NET 8 console c
 
 ## Understanding the code
 
-Our application uses the `Microsoft.SemanticKernel` client SDK, which is available on [NuGet](https://www.nuget.org/packages/Microsoft.SemanticKernel), to send and receive requests to an Azure OpenAI service deployed in Azure.
+Our application uses the `Microsoft.SemanticKernel` package, which is available on [NuGet](https://www.nuget.org/packages/Microsoft.SemanticKernel), to send and receive requests to an Azure OpenAI service deployed in Azure.
 
-The `OpenAIClient` class facilitates the requests and responses. `ChatCompletionOptions` specifies parameters of how the model will respond.
+The `Kernel` class facilitates the requests and responses with the help of `AddAzureOpenAIChatCompletion` service.
 
 ```csharp
 Kernel kernel = Kernel.CreateBuilder()
@@ -60,7 +60,7 @@ Kernel kernel = Kernel.CreateBuilder()
     .Build();
 ```
 
-Once the `Kernel` client is created, we read the contents of the file `benefits.md` and create a `prompt` to ask the the model to summarize that text.
+Once the `Kernel` is created, we read the contents of the file `benefits.md` and create a `prompt` to ask the the model to summarize that text.
 
 ```csharp
 // Create and print out the prompt

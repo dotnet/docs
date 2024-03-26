@@ -33,7 +33,7 @@ Get started with the .NET Azure OpenAI SDK by creating a simple .NET 8 console c
 
 ## Understand the code
 
-Our application uses the `Microsoft.SemanticKernel` client SDK, which is available on [NuGet](https://www.nuget.org/packages/Microsoft.SemanticKernel), to send and receive requests to an Azure OpenAI service deployed in Azure.
+Our application uses the `Microsoft.SemanticKernel` package, which is available on [NuGet](https://www.nuget.org/packages/Microsoft.SemanticKernel), to send and receive requests to an Azure OpenAI service deployed in Azure.
 
 ```csharp
 // Add a new plugin with a local .NET function that should be available to the AI model
@@ -48,7 +48,7 @@ kernel.ImportPluginFromFunctions("WeatherPlugin",
 ]);
 ```
 
-The `OpenAIClient` class facilitates the requests and responses. `ChatCompletionOptions` specifies parameters of how the model will respond. Note how the **Tools** property is used to add the definition.
+The `Kernel` class facilitates the requests and responses with the help of `AddAzureOpenAIChatCompletion` service.
 
 ```csharp
 // Create a Kernel containing the Azure OpenAI Chat Completion Service
@@ -85,9 +85,9 @@ ChatHistory chatHistory = new("""
     """);
 ```
 
-Then you can add a user message to the model by using the `ChatRequestUserMessage` class.
+Then you can add a user message to the model by using the `AddUserMessage` functon.
 
-To have the model generate a response based off the system prompt and the user request, use the `GetChatCompletionsAsync` function.
+To have the model generate a response based off the system prompt and the user request, use the `GetChatMessageContentAsync` function.
 
 ```csharp
 chatHistory.AddUserMessage("""

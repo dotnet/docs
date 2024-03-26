@@ -36,7 +36,7 @@ Get started with the .NET Azure OpenAI SDK by creating a simple .NET 8 console c
 :::zone target="docs" pivot="semantic-kernel"
 <!-- markdownlint-enable MD044 -->
 
-1. From a terminal or command prompt, navigate to the `quickstarts\semantic-kernel\02-HikerAI` directory.
+1. From a terminal or command prompt, navigate to the `semantic-kernel\02-HikerAI` directory.
 
 :::zone-end
 
@@ -44,7 +44,7 @@ Get started with the .NET Azure OpenAI SDK by creating a simple .NET 8 console c
 :::zone target="docs" pivot="azure-openai-sdk"
 <!-- markdownlint-enable MD044 -->
 
-1. From a terminal or command prompt, navigate to the `quickstarts\azure-openai-sdk\02-HikerAI` directory.
+1. From a terminal or command prompt, navigate to the `azure-openai-sdk\02-HikerAI` directory.
 
 :::zone-end
 

@@ -35,7 +35,7 @@ Get started with the .NET Azure OpenAI with a `gpt-35-turbo` model, from a simpl
 :::zone target="docs" pivot="semantic-kernel"
 <!-- markdownlint-enable MD044 -->
 
-1. From a terminal or command prompt, navigate to the `quickstarts\semantic-kernel\03-ChattingAboutMyHikes` directory.
+1. From a terminal or command prompt, navigate to the `semantic-kernel\03-ChattingAboutMyHikes` directory.
 
 :::zone-end
 
@@ -43,7 +43,7 @@ Get started with the .NET Azure OpenAI with a `gpt-35-turbo` model, from a simpl
 :::zone target="docs" pivot="azure-openai-sdk"
 <!-- markdownlint-enable MD044 -->
 
-1. From a terminal or command prompt, navigate to the `quickstarts\azure-openai-sdk\03-ChattingAboutMyHikes` directory.
+1. From a terminal or command prompt, navigate to the `azure-openai-sdk\03-ChattingAboutMyHikes` directory.
 
 :::zone-end
 

@@ -12,7 +12,21 @@ zone_pivot_groups: openai-library
 
 # Generate images using Azure AI with .NET
 
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="semantic-kernel"
+<!-- markdownlint-enable MD044 -->
+
+Get started with Semantic Kernel by creating a simple .NET 8 console chat application. The application will run locally and use the OpenAI `dell-e-3` model to generate postal card and invite your friends for a hike! Follow these steps to provision Azure OpenAI and learn how to use Semantic Kernel.
+
+:::zone-end
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="azure-openai-sdk"
+<!-- markdownlint-enable MD044 -->
+
 Get started with the .NET Azure OpenAI SDK by creating a simple .NET 8 console chat application. The application will run locally and use the OpenAI `dell-e-3` model to generate postal card and invite your friends for a hike! Follow these steps to provision Azure OpenAI and learn how to use the .NET Azure OpenAI SDK.
+
+:::zone-end
 
 [!INCLUDE [download-alert](includes/prerequisites-and-azure-deploy.md)]
 

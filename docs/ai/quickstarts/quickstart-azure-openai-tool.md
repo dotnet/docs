@@ -12,7 +12,21 @@ zone_pivot_groups: openai-library
 
 # Extend Azure AI using Tools and execute a local Function with .NET
 
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="semantic-kernel"
+<!-- markdownlint-enable MD044 -->
+
+Get started with Semantic Kernel by creating a simple .NET 8 console chat application. The application will run locally and use the OpenAI `gpt-35-turbo` model deployed into an Azure OpenAI account, however using Tool to extend the model capabilities it will call a local function. Follow these steps to provision Azure OpenAI and learn how to use Semantic Kernel.
+
+:::zone-end
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="azure-openai-sdk"
+<!-- markdownlint-enable MD044 -->
+
 Get started with the .NET Azure OpenAI SDK by creating a simple .NET 8 console chat application. The application will run locally and use the OpenAI `gpt-35-turbo` model deployed into an Azure OpenAI account, however using Tool to extend the model capabilities it will call a local function. Follow these steps to provision Azure OpenAI and learn how to use the .NET Azure OpenAI SDK.
+
+:::zone-end
 
 [!INCLUDE [download-alert](includes/prerequisites-and-azure-deploy.md)]
 

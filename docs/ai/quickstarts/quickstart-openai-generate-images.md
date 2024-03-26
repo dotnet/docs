@@ -35,7 +35,7 @@ Get started with the .NET Azure OpenAI SDK by creating a simple .NET 8 console c
 
 Our application uses the `Microsoft.SemanticKernel` client SDK, which is available on [NuGet](https://www.nuget.org/packages/Microsoft.SemanticKernel), to send and receive requests to an Azure OpenAI service deployed in Azure.
 
-The `AzureOpenAITextToImageService` service facilitates the requests and responses. 
+The `AzureOpenAITextToImageService` service facilitates the requests and responses.
 
 ```csharp
 AzureOpenAITextToImageService textToImageService = new(deployment, endpoint, key, null);

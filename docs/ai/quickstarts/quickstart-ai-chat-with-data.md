@@ -34,13 +34,17 @@ Get started with the .NET Azure OpenAI with a `gpt-35-turbo` model, from a simpl
 <!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="semantic-kernel"
 <!-- markdownlint-enable MD044 -->
+
 1. From a terminal or command prompt, navigate to the `quickstarts\semantic-kernel\03-ChattingAboutMyHikes` directory.
+
 :::zone-end
 
 <!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="azure-openai-sdk"
 <!-- markdownlint-enable MD044 -->
+
 1. From a terminal or command prompt, navigate to the `quickstarts\azure-openai-sdk\03-ChattingAboutMyHikes` directory.
+
 :::zone-end
 
 2. It's now time to try the console application. Type in the following to run the app:

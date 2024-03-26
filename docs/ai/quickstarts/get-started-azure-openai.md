@@ -45,7 +45,6 @@ Get started with the .NET Azure OpenAI SDK by creating a simple .NET 8 console c
 
 :::zone-end
 
-
 2. It's now time to try the console application. Type in the following to run the app:
 
     ```dotnetcli

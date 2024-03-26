@@ -48,13 +48,6 @@ Get started with the .NET Azure OpenAI with a `gpt-35-turbo` model, from a simpl
 
 Our application uses the `Microsoft.SemanticKernel` package, which is available on [NuGet](https://www.nuget.org/packages/Microsoft.SemanticKernel), to send and receive requests to an Azure OpenAI service deployed in Azure.
 
-The `AzureOpenAIChatCompletionService` service facilitates the requests and responses.
-
-```csharp
-// == Create the Azure OpenAI Chat Completion Service  ==========
-AzureOpenAIChatCompletionService service = new(deployment, endpoint, key);
-```
-
 The entire application is contained within the **Program.cs** file. The first several lines of code loads up secrets and configuration values that were set in the `dotnet user-secrets` for you during the application provisioning.
 
 ```csharp
@@ -63,6 +56,13 @@ var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
 string endpoint = config["AZURE_OPENAI_ENDPOINT"];
 string deployment = config["AZURE_OPENAI_GPT_NAME"];
 string key = config["AZURE_OPENAI_KEY"];
+```
+
+The `AzureOpenAIChatCompletionService` service facilitates the requests and responses.
+
+```csharp
+// == Create the Azure OpenAI Chat Completion Service  ==========
+AzureOpenAIChatCompletionService service = new(deployment, endpoint, key);
 ```
 
 Once the `AzureOpenAIChatCompletionService` client is created, we read the content of the file `hikes.md` and use it to provide more context to the model by adding a system prompt. This instructs the model how you'd like it to act during the conversation.
@@ -114,22 +114,6 @@ Customize the system prompt and change the request, asking for different questio
 
 Our application uses the `Azure.AI.OpenAI` client SDK, which is available on [NuGet](https://www.nuget.org/packages/Azure.AI.OpenAI), to send and receive requests to an Azure OpenAI service deployed in Azure.
 
-The `OpenAIClient` class facilitates the requests and responses. `ChatCompletionOptions` specifies parameters of how the model will respond.
-
-```csharp
-var openAIClient = new OpenAIClient(endpoint, credentials);
-
-var completionOptions = new ChatCompletionsOptions
-{
-    MaxTokens = 400,
-    Temperature = 1f,
-    FrequencyPenalty = 0.0f,
-    PresencePenalty = 0.0f,
-    NucleusSamplingFactor = 0.95f, // Top P
-    DeploymentName = openAIDeploymentName
-};
-```
-
 The entire application is contained within the **Program.cs** file. The first several lines of code loads up secrets and configuration values that were set in the `dotnet user-secrets` for you during the application provisioning.
 
 ```csharp
@@ -145,6 +129,22 @@ string openAiKey = config["AZURE_OPENAI_KEY"];
 // == Creating the AIClient ==========
 var endpoint = new Uri(openAIEndpoint);
 var credentials = new AzureKeyCredential(openAiKey);
+```
+
+The `OpenAIClient` class facilitates the requests and responses. `ChatCompletionOptions` specifies parameters of how the model will respond.
+
+```csharp
+var openAIClient = new OpenAIClient(endpoint, credentials);
+
+var completionOptions = new ChatCompletionsOptions
+{
+    MaxTokens = 400,
+    Temperature = 1f,
+    FrequencyPenalty = 0.0f,
+    PresencePenalty = 0.0f,
+    NucleusSamplingFactor = 0.95f, // Top P
+    DeploymentName = openAIDeploymentName
+};
 ```
 
 Once the `OpenAIClient` client is created, we read the content of the file `hikes.md` and use it to provide more context to the model by adding a system prompt. This instructs the model how you'd like it to act during the conversation.

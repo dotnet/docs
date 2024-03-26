@@ -49,13 +49,6 @@ Get started with the .NET Azure OpenAI SDK by creating a simple .NET 8 console c
 
 Our application uses the `Microsoft.SemanticKernel` package, which is available on [NuGet](https://www.nuget.org/packages/Microsoft.SemanticKernel), to send and receive requests to an Azure OpenAI service deployed in Azure.
 
-The `AzureOpenAIChatCompletionService` service facilitates the requests and responses.
-
-```csharp
-// == Create the Azure OpenAI Chat Completion Service  ==========
-AzureOpenAIChatCompletionService service = new(deployment, endpoint, key);
-```
-
 The entire application is contained within the **Program.cs** file. The first several lines of code loads up secrets and configuration values that were set in the `dotnet user-secrets` for you during the application provisioning.
 
 ```csharp
@@ -64,6 +57,13 @@ var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
 string endpoint = config["AZURE_OPENAI_ENDPOINT"];
 string deployment = config["AZURE_OPENAI_GPT_NAME"];
 string key = config["AZURE_OPENAI_KEY"];
+```
+
+The `AzureOpenAIChatCompletionService` service facilitates the requests and responses.
+
+```csharp
+// == Create the Azure OpenAI Chat Completion Service  ==========
+AzureOpenAIChatCompletionService service = new(deployment, endpoint, key);
 ```
 
 Once the `AzureOpenAIChatCompletionService` service is created, we provide more context to the model by adding a system prompt. This instructs the model how you'd like it to act during the conversation.
@@ -121,6 +121,20 @@ Customize the system prompt and user message to see how the model responds to he
 
 Our application uses the `Azure.AI.OpenAI` client SDK, which is available on [NuGet](https://www.nuget.org/packages/Azure.AI.OpenAI), to send and receive requests to an Azure OpenAI service deployed in Azure.
 
+The entire application is contained within the **Program.cs** file. The first several lines of code loads up secrets and configuration values that were set in the `dotnet user-secrets` for you during the application provisioning.
+
+```csharp
+// == Retrieve the local secrets saved during the Azure deployment ==========
+var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
+string openAIEndpoint = config["AZURE_OPENAI_ENDPOINT"];
+string openAIDeploymentName = config["AZURE_OPENAI_GPT_NAME"];
+string openAiKey = config["AZURE_OPENAI_KEY"];
+
+// == Creating the AIClient ==========
+var endpoint = new Uri(openAIEndpoint);
+var credentials = new AzureKeyCredential(openAiKey);
+```
+
 The `OpenAIClient` class facilitates the requests and responses. `ChatCompletionOptions` specifies parameters of how the model will respond.
 
 ```csharp
@@ -135,20 +149,6 @@ var completionOptions = new ChatCompletionsOptions
     NucleusSamplingFactor = 0.95f, // Top P
     DeploymentName = openAIDeploymentName
 };
-```
-
-The entire application is contained within the **Program.cs** file. The first several lines of code loads up secrets and configuration values that were set in the `dotnet user-secrets` for you during the application provisioning.
-
-```csharp
-// == Retrieve the local secrets saved during the Azure deployment ==========
-var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
-string openAIEndpoint = config["AZURE_OPENAI_ENDPOINT"];
-string openAIDeploymentName = config["AZURE_OPENAI_GPT_NAME"];
-string openAiKey = config["AZURE_OPENAI_KEY"];
-
-// == Creating the AIClient ==========
-var endpoint = new Uri(openAIEndpoint);
-var credentials = new AzureKeyCredential(openAiKey);
 ```
 
 Once the `OpenAIClient` client is created, we provide more context to the model by adding a system prompt. This instructs the model how you'd like it to act during the conversation.

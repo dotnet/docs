@@ -54,7 +54,6 @@ More resources:
 
 CI pipelines follow a similar update process as project files and Dockerfiles. Typically, you can update [CI pipelines](https://github.com/actions/setup-dotnet) by changing only version values.
 
-
 ## Update hosting environment
 
 There are many patterns that are used for hosting applications. If the hosting environment includes the .NET runtime, then the new version of the .NET runtime needs to be installed. On Linux, [dependencies](https://github.com/dotnet/core/blob/main/release-notes/8.0/linux-packages.md) need to be installed, however, they typically don't change across .NET versions.

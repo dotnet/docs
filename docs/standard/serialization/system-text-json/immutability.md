@@ -23,7 +23,7 @@ By default, `System.Text.Json` uses the default public parameterless constructor
   The following example uses the `[JsonConstructor]` attribute:
 
   :::code language="csharp" source="snippets/how-to-contd/csharp/ImmutableTypes.cs" highlight="12":::
-  :::code language="vb" source="snippets/how-to-5-0/vb/ImmutableTypes.vb" :::
+  :::code language="vb" source="snippets/how-to-contd/vb/ImmutableTypes.vb" :::
 
   In .NET 7 and earlier versions, the `[JsonConstructor]` attribute can only be used with public constructors.
 
@@ -51,7 +51,7 @@ You can apply any of the attributes to the property names, using the `property:`
 You can enable use of a non-public *accessor* on a property by using the [[JsonInclude]](xref:System.Text.Json.Serialization.JsonIncludeAttribute) attribute, as shown in the following example:
 
 :::code language="csharp" source="snippets/how-to-contd/csharp/NonPublicAccessors.cs" highlight="10,13":::
-:::code language="vb" source="snippets/how-to-5-0/vb/NonPublicAccessors.vb" :::
+:::code language="vb" source="snippets/how-to-contd/vb/NonPublicAccessors.vb" :::
 
 By including a property with a private setter, you can still deserialize that property.
 

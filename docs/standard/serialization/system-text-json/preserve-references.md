@@ -33,7 +33,7 @@ To preserve references and handle circular references, set <xref:System.Text.Jso
 The following code illustrates use of the `Preserve` setting.
 
 :::code language="csharp" source="snippets/how-to-contd/csharp/PreserveReferences.cs" highlight="32":::
-:::code language="vb" source="snippets/how-to-5-0/vb/PreserveReferences.vb" :::
+:::code language="vb" source="snippets/how-to-contd/vb/PreserveReferences.vb" :::
 
 This feature can't be used to preserve value types or immutable types. On deserialization, the instance of an immutable type is created after the entire payload is read. So it would be impossible to deserialize the same instance if a reference to it appears within the JSON payload.
 

@@ -1,6 +1,6 @@
 ---
 title: Quickstart - Extend Azure AI using Tools and execute a local Function with .NET 
-description: Create a simple chat app using the .NET Azure OpenAI SDK and extend the model to execute a local function.
+description: Create a simple chat app using Semantic Kernel or the .NET Azure OpenAI SDK and extend the model to execute a local function.
 ms.date: 03/04/2024
 ms.topic: quickstart
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai

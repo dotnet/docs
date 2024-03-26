@@ -1,6 +1,6 @@
 ---
 title: Quickstart - Get insight about your data from an .NET Azure AI chat app
-description: Create a simple chat app using your data and the .NET Azure OpenAI SDK.
+description: Create a simple chat app using your data and Semantic Kernel or the .NET Azure OpenAI SDK.
 ms.date: 03/04/2024
 ms.topic: quickstart
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai

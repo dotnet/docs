@@ -1,6 +1,6 @@
 ---
 title: Quickstart - Generate images using Azure AI with .NET
-description: Create a simple app using the .NET Azure OpenAI SDK to generate postal card images.
+description: Create a simple app using Semantic Kernel or the .NET Azure OpenAI SDK to generate postal card images.
 ms.date: 03/04/2024
 ms.topic: quickstart
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai

@@ -3,7 +3,7 @@ title: .NET Generic Host
 author: IEvangelist
 description: Learn about the .NET Generic Host, which is responsible for app startup and lifetime management.
 ms.author: dapine
-ms.date: 12/11/2023
+ms.date: 03/26/2024
 ---
 
 # .NET Generic Host
@@ -127,11 +127,11 @@ When you call either <xref:Microsoft.Extensions.Hosting.IHostBuilder.Build?displ
 - [IHostLifetime](#ihostlifetime)
 - [IHostEnvironment](#ihostenvironment)
 
-## IHostApplicationLifetime
+## `IHostApplicationLifetime`
 
 Inject the <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime> service into any class to handle post-startup and graceful shutdown tasks. Three properties on the interface are cancellation tokens used to register app start and app stop event handler methods. The interface also includes a <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime.StopApplication> method.
 
-The following example is an `IHostedService` implementation that registers `IHostApplicationLifetime` events:
+The following example is an <xref:Microsoft.Extensions.Hosting.IHostedService> and <xref:Microsoft.Extensions.Hosting.IHostedLifecycleService> implementation that registers `IHostApplicationLifetime` events:
 
 :::code language="csharp" source="snippets/configuration/app-lifetime/ExampleHostedService.cs" highlight="16-18":::
 
@@ -143,11 +143,30 @@ The application would write the following sample output:
 
 :::code language="csharp" source="snippets/configuration/app-lifetime/Program.cs" id="Output":::
 
-## IHostLifetime
+The output shows the order of all of the various lifecycle events:
+
+1. `IHostedLifecycleService.StartingAsync`
+1. `IHostedService.StartAsync`
+1. `IHostedLifecycleService.StartedAsync`
+1. `IHostApplicationLifetime.ApplicationStarted`
+
+When the application is stopped, for example with <kbd>Ctrl</kbd>+<kbd>C</kbd>, the following events are raised:
+
+1. `IHostApplicationLifetime.ApplicationStopping`
+1. `IHostedLifecycleService.StoppingAsync`
+1. `IHostedService.StopAsync`
+1. `IHostedLifecycleService.StoppedAsync`
+1. `IHostApplicationLifetime.ApplicationStopped`
+
+## `IHostLifetime`
 
 The <xref:Microsoft.Extensions.Hosting.IHostLifetime> implementation controls when the host starts and when it stops. The last implementation registered is used. `Microsoft.Extensions.Hosting.Internal.ConsoleLifetime` is the default `IHostLifetime` implementation. For more information on the lifetime mechanics of shutdown, see [Host shutdown](#host-shutdown).
 
-## IHostEnvironment
+The `IHostLifetime` interface exposes a <xref:Microsoft.Extensions.Hosting.IHostLifetime.WaitForStartAsync%2A?displayProperty=nameWithType> method, which is called at the start of `IHost.StartAsync` which will wait until it's complete before continuing. This can be used to delay startup until signaled by an external event.
+
+Additionally, the `IHostLifetime` interface exposes a <xref:Microsoft.Extensions.Hosting.IHostLifetime.StopAsync%2A?displayProperty=nameWithType> method, which is called from `IHost.StopAsync` to indicate that the host is stopping and it's time to shut down.
+
+## `IHostEnvironment`
 
 Inject the <xref:Microsoft.Extensions.Hosting.IHostEnvironment> service into a class to get information about the following settings:
 

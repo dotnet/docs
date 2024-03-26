@@ -32,21 +32,19 @@ Get started with the .NET Azure OpenAI SDK by creating a simple .NET 8 console c
 
 ## Trying HikerAI sample
 
-<!-- markdownlint-disable MD044 -->
+<!-- markdownlint-disable MD029 MD044 -->
 :::zone target="docs" pivot="semantic-kernel"
-<!-- markdownlint-enable MD044 -->
 
 1. From a terminal or command prompt, navigate to the `semantic-kernel\02-HikerAI` directory.
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="azure-openai-sdk"
-<!-- markdownlint-enable MD044 -->
 
 1. From a terminal or command prompt, navigate to the `azure-openai-sdk\02-HikerAI` directory.
 
 :::zone-end
+
 
 2. It's now time to try the console application. Type in the following to run the app:
 
@@ -55,6 +53,7 @@ Get started with the .NET Azure OpenAI SDK by creating a simple .NET 8 console c
     ```
 
     If you get an error message the Azure OpenAI resources may not have finished deploying. Wait a couple of minutes and try again.
+<!-- markdownlint-enable MD029 MD044  -->
 
 <!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="semantic-kernel"

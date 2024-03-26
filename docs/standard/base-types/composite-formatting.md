@@ -57,8 +57,8 @@ The matching braces (`{` and `}`) are required.
 
 The mandatory *index* component, which is also called a parameter specifier, is a number starting from 0 that identifies a corresponding item in the list of objects. That is, the format item whose parameter specifier is `0` formats the first object in the list. The format item whose parameter specifier is `1` formats the second object in the list, and so on. The following example includes four parameter specifiers, numbered zero through three,  to represent prime numbers less than 10:
 
-:::code language="csharp" source="./snippets/composite-formatting/net/csharp/Program.cs" id="basic":::
-:::code language="vb" source="./snippets/composite-formatting/net/vb/Program.vb" id="basic":::
+:::code language="csharp" source="./snippets/composite-formatting/net/csharp/Program.cs" id="index":::
+:::code language="vb" source="./snippets/composite-formatting/net/vb/Program.vb" id="index":::
 
 Multiple format items can refer to the same element in the list of objects by specifying the same parameter specifier. For example, you can format the same numeric value in hexadecimal, scientific, and number format by specifying a composite format string such as `"0x{0:X} {0:E} {0:N}"`, as the following example shows:
 

@@ -1,3 +1,4 @@
+items:
 - name: ML.NET
   href: index.yml
 - name: Overview
@@ -6,7 +7,7 @@
     items:
     - name: The ML.NET Model Builder tool
       href: automate-training-with-model-builder.md
-    - name: The ML.NET Command-Line interface
+    - name: The ML.NET command-line interface
       href: automate-training-with-cli.md
   - name: API
     items:
@@ -47,7 +48,7 @@
       href: tutorials/iris-clustering.md
     - name: Recommend movies (matrix factorization)
       href: tutorials/movie-recommendation.md
-    - name: Image Classification (transfer learning)
+    - name: Image classification (transfer learning)
       href: tutorials/image-classification-api-transfer-learning.md
     - name: Classify images (model composition)
       href: tutorials/image-classification.md
@@ -55,7 +56,7 @@
       href: tutorials/time-series-demand-forecasting.md
     - name: Call-volume spikes (anomaly detection)
       href: tutorials/phone-calls-anomaly-detection.md
-    - name: Product Sales Analysis (anomaly detection)
+    - name: Product sales analysis (anomaly detection)
       href: tutorials/sales-anomaly-detection.md
     - name: Detect objects in images (object detection)
       href: tutorials/object-detection-onnx.md
@@ -93,6 +94,8 @@
       href: how-to-guides/install-gpu-model-builder.md
     - name: Install the CLI
       href: how-to-guides/install-ml-net-cli.md
+    - name: Format data for named entity recognition
+      href: how-to-guides/ner-dataset-guide.md
   - name: API
     items:
     - name: Install extra dependencies
@@ -121,7 +124,7 @@
         href: how-to-guides/save-load-machine-learning-models-ml-net.md
       - name: Use a model to make predictions
         href: how-to-guides/machine-learning-model-predictions-ml-net.md
-      - name: Re-train a model
+      - name: Retrain a model
         href: how-to-guides/retrain-model-ml-net.md
       - name: Deploy a model to Azure Functions
         href: how-to-guides/serve-model-serverless-azure-functions-ml-net.md
@@ -131,9 +134,9 @@
         href: /azure/machine-learning/how-to-use-automl-onnx-model-dotnet?toc=/dotnet/machine-learning/how-to-guides/toc.json&bc=/dotnet/machine-learning/how-to-guides/toc.json
 - name: Reference
   items:
-  - name: ML.NET API Reference
+  - name: ML.NET API reference
     href: ../../api/index.md?view=ml-dotnet&preserve-view=true
-  - name: ML.NET API Preview API Reference
+  - name: ML.NET API preview API reference
     href: ../../api/index.md?view=ml-dotnet-preview&preserve-view=true
   - name: CLI reference
     href: reference/ml-net-cli-reference.md

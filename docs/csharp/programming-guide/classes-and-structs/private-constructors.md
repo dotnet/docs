@@ -29,7 +29,6 @@ A private constructor is a special instance constructor. It is generally used in
   
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [The C# type system](../../fundamentals/types/index.md)
 - [Constructors](./constructors.md)
 - [Finalizers](./finalizers.md)

@@ -2,6 +2,7 @@
 title: "Breaking change: .NET Monitor only includes distroless images"
 description: Learn about the breaking change in deployment in .NET 8 where the .NET Monitor 8 image offering only includes distroless images.
 ms.date: 12/07/2023
+ms.custom: linux-related-content
 ---
 # .NET Monitor only includes distroless images
 

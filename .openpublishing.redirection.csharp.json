@@ -312,6 +312,18 @@
             "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/feature-version-errors"
         },
         {
+            "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs0234.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/assembly-references"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs0246.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/assembly-references"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs1683.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/assembly-references"
+        },
+        {
             "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs0270.md",
             "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/array-declaration-errors"
         },
@@ -346,6 +358,10 @@
         {
             "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs0854.md",
             "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/expression-tree-restrictions"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs1704.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/assembly-references"
         },
         {
             "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs1739.md",
@@ -1365,6 +1381,10 @@
             "redirect_url": "/dotnet/csharp/language-reference/operators/lambda-expressions"
         },
         {
+            "source_path_from_root": "/docs/csharp/misc/cs0012.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/assembly-references"
+        },
+        {
             "source_path_from_root": "/docs/csharp/misc/cs0022.md",
             "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/array-declaration-errors"
         },
@@ -1403,6 +1423,10 @@
         {
             "source_path_from_root": "/docs/csharp/misc/cs0251.md",
             "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/feature-version-errors"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/misc/cs0400.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/assembly-references"
         },
         {
             "source_path_from_root": "/docs/csharp/misc/cs0431.md",
@@ -1611,6 +1635,10 @@
         {
             "source_path_from_root": "/docs/csharp/misc/cs1706.md",
             "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/lambda-expression-errors#syntax-limitations-in-lambda-expressions"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/misc/cs1714.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/assembly-references"
         },
         {
             "source_path_from_root": "/docs/csharp/misc/cs1920.md",
@@ -3085,6 +3113,10 @@
             "redirect_url": "/dotnet/standard/generics/index"
         },
         {
+            "source_path_from_root": "/docs/csharp/programming-guide/index.md",
+            "redirect_url": "/dotnet/csharp/programming-guide/concepts"
+        },
+        {
             "source_path_from_root": "/docs/csharp/programming-guide/inside-a-program/coding-conventions.md",
             "redirect_url": "/dotnet/csharp/fundamentals/coding-style/coding-conventions"
         },
@@ -3138,7 +3170,7 @@
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/linq-query-expressions/how-to-create-a-nested-group.md",
-            "redirect_url": "/dotnet/csharp/linq/create-a-nested-group"
+            "redirect_url": "/dotnet/csharp/linq/standard-query-operators/grouping-data"
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/linq-query-expressions/how-to-dynamically-specify-predicate-filters-at-runtime.md",
@@ -3146,7 +3178,7 @@
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/linq-query-expressions/how-to-group-query-results.md",
-            "redirect_url": "/dotnet/csharp/linq/group-query-results"
+            "redirect_url": "/dotnet/csharp/linq/standard-query-operators/grouping-data"
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/linq-query-expressions/how-to-group-results-by-contiguous-keys.md",
@@ -3162,31 +3194,31 @@
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/linq-query-expressions/how-to-join-by-using-composite-keys.md",
-            "redirect_url": "/dotnet/csharp/linq/join-by-using-composite-keys"
+            "redirect_url": "/dotnet/csharp/linq/standard-query-operators/join-operations"
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/linq-query-expressions/how-to-order-the-results-of-a-join-clause.md",
-            "redirect_url": "/dotnet/csharp/linq/order-the-results-of-a-join-clause"
+            "redirect_url": "/dotnet/csharp/linq/standard-query-operators/"
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/linq-query-expressions/how-to-perform-a-subquery-on-a-grouping-operation.md",
-            "redirect_url": "/dotnet/csharp/linq/perform-a-subquery-on-a-grouping-operation"
+            "redirect_url": "/dotnet/csharp/linq/standard-query-operators/grouping-data"
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/linq-query-expressions/how-to-perform-custom-join-operations.md",
-            "redirect_url": "/dotnet/csharp/linq/perform-custom-join-operations"
+            "redirect_url": "/dotnet/csharp/linq/"
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/linq-query-expressions/how-to-perform-grouped-joins.md",
-            "redirect_url": "/dotnet/csharp/linq/perform-grouped-joins"
+            "redirect_url": "/dotnet/csharp/linq/standard-query-operators/join-operations"
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/linq-query-expressions/how-to-perform-inner-joins.md",
-            "redirect_url": "/dotnet/csharp/linq/perform-inner-joins"
+            "redirect_url": "/dotnet/csharp/linq/standard-query-operators/join-operations"
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/linq-query-expressions/how-to-perform-left-outer-joins.md",
-            "redirect_url": "/dotnet/csharp/linq/perform-left-outer-joins"
+            "redirect_url": "/dotnet/csharp/linq/standard-query-operators/join-operations"
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/linq-query-expressions/how-to-query-a-collection-of-objects.md",

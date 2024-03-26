@@ -2,6 +2,8 @@
 title: SYSLIB0020 warning
 description: Learn about the IgnoreNullValues obsoletion that generates compile-time warning SYSLIB0020.
 ms.date: 04/24/2021
+f1_keywords:
+  - syslib0020
 ---
 # SYSLIB0020: IgnoreNullValues is obsolete
 

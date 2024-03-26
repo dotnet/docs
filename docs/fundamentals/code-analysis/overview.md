@@ -189,6 +189,15 @@ Follow these steps to enable code-style analysis on build:
    dotnet_diagnostic.IDE0040.severity = warning
    ```
 
+   > [!TIP]
+   > Starting in .NET 9, you can also use the [option format](style-rules/language-rules.md#option-format) to specify a severity and have it be respected at build time. For example:
+   >
+   > ```ini
+   > [*.{cs,vb}]
+   > # IDE0040: Accessibility modifiers required (escalated to a build warning)
+   > dotnet_style_require_accessibility_modifiers = always:warning
+   > ```
+
    Alternatively, you can configure an entire category to be a warning or error, by default, and then selectively turn off rules in that category that you don't want to run on build. For example:
 
    ```ini

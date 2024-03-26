@@ -1037,6 +1037,8 @@ items:
                     href: ../../fundamentals/code-analysis/quality-rules/ca1869.md
                   - name: CA1870
                     href: ../../fundamentals/code-analysis/quality-rules/ca1870.md
+                  - name: CA1872
+                    href: ../../fundamentals/code-analysis/quality-rules/ca1872.md
               - name: SingleFile rules
                 items:
                   - name: Overview
@@ -1377,6 +1379,8 @@ items:
                     href: ../../fundamentals/code-analysis/quality-rules/ca2261.md
                   - name: CA2262
                     href: ../../fundamentals/code-analysis/quality-rules/ca2262.md
+                  - name: CA2263
+                    href: ../../fundamentals/code-analysis/quality-rules/ca2263.md
           - name: Code style rules
             items:
               - name: Overview
@@ -1613,6 +1617,14 @@ items:
                         href: ../../fundamentals/code-analysis/style-rules/csharp-formatting-options.md
               - name: Naming rules
                 href: ../../fundamentals/code-analysis/style-rules/naming-rules.md
+          - name: IDE-only rules
+            items:
+              - name: JSON001
+                href: /visualstudio/ide/reference/json001?toc=/dotnet/navigate/tools-diagnostics/toc.json&bc=/dotnet/breadcrumb/toc.json
+              - name: JSON002
+                href: /visualstudio/ide/reference/json002?toc=/dotnet/navigate/tools-diagnostics/toc.json&bc=/dotnet/breadcrumb/toc.json
+              - name: JRE0001
+                href: /visualstudio/ide/reference/re0001?toc=/dotnet/navigate/tools-diagnostics/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: Platform compatibility analyzer
         href: ../../standard/analyzers/platform-compat-analyzer.md
       - name: Portability analyzer

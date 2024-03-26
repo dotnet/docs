@@ -8,6 +8,11 @@ items:
     CS8303, CS8304, CS8305, CS8306, CS8314, CS8320, CS8370, CS8371, CS8400, CS8401, CS8511, CS8627, CS8630, CS8652, CS8703,
     CS8704, CS8706, CS8773, CS8912, CS8919, CS8929, CS8936, CS8957, CS8967, CS9014, CS9015, CS9016, CS9017, CS9058, CS9064,
     CS9103, CS9171, CS9194, CS9202, CS9204
+- name: Assembly references
+  href: assembly-references.md
+  displayName: >
+    CS0012, CS0234, CS0246, CS0400, CS1068, CS1069, CS1070, CS1704, CS1683, CS1714, CS1760, CS7008, CS7068, CS7069,
+    CS7071, CS7079, CS8090, CS8203
 - name: Constructor declarations
   href: constructor-errors.md
   displayName: > 
@@ -99,8 +104,6 @@ items:
     href: ../../misc/cs0010.md
   - name: CS0011
     href: ../../misc/cs0011.md
-  - name: CS0012
-    href: ../../misc/cs0012.md
   - name: CS0013
     href: ../../misc/cs0013.md
   - name: CS0014
@@ -395,8 +398,6 @@ items:
     href: ../../misc/cs0231.md
   - name: CS0233
     href: cs0233.md
-  - name: CS0234
-    href: cs0234.md
   - name: CS0236
     href: ../../misc/cs0236.md
   - name: CS0238
@@ -413,8 +414,6 @@ items:
     href: ../../misc/cs0244.md
   - name: CS0245
     href: ../../misc/cs0245.md
-  - name: CS0246
-    href: cs0246.md
   - name: CS0247
     href: ../../misc/cs0247.md
   - name: CS0249
@@ -487,8 +486,6 @@ items:
     href: ../../misc/cs0315.md
   - name: CS0316
     href: ../../misc/cs0316.md
-  - name: CS0400
-    href: ../../misc/cs0400.md
   - name: CS0401
     href: ../../misc/cs0401.md
   - name: CS0403
@@ -1319,16 +1316,12 @@ items:
     href: ../../misc/cs1689.md
   - name: CS1703
     href: cs1703.md
-  - name: CS1704
-    href: cs1704.md
   - name: CS1705
     href: cs1705.md
   - name: CS1708
     href: cs1708.md
   - name: CS1713
     href: ../../misc/cs1713.md
-  - name: CS1714
-    href: ../../misc/cs1714.md
   - name: CS1715
     href: ../../misc/cs1715.md
   - name: CS1716
@@ -1697,8 +1690,6 @@ items:
     href: cs1658.md
   - name: CS1682
     href: ../../misc/cs1682.md
-  - name: CS1683
-    href: cs1683.md
   - name: CS1684
     href: ../../misc/cs1684.md
   - name: CS1685

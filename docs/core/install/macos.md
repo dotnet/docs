@@ -4,6 +4,7 @@ description: Learn about what versions of macOS you can install .NET on.
 author: adegeo
 ms.author: adegeo
 ms.date: 11/13/2023
+ms.custom: linux-related-content
 ---
 
 # Install .NET on macOS
@@ -197,15 +198,18 @@ Environment variables that add .NET to system path, such as the `PATH` variable,
 
 ## Install with Visual Studio for Mac
 
-Visual Studio for Mac installs the .NET SDK when the **.NET** workload is selected. To get started with .NET development on macOS, see [Install Visual Studio 2019 for Mac](/visualstudio/mac/installation).
+Visual Studio for Mac installs the .NET SDK when the **.NET** workload is selected. To get started with .NET development on macOS, see [Install Visual Studio 2022 for Mac](/visualstudio/mac/installation).
 
-| .NET SDK version      | Visual Studio version                                |
-| --------------------- | ---------------------------------------------------- |
-| 8.0                   | Visual Studio 2022 for Mac 17.8 or higher.           |
-| 7.0                   | Visual Studio 2022 for Mac 17.4 or higher.           |
-| 6.0                   | Visual Studio 2022 for Mac Preview 3 17.0 or higher. |
+> [!IMPORTANT]
+> Visual Studio for Mac is being retired. For more information, see [What's happening to Visual Studio for Mac?](/visualstudio/mac/what-happened-to-vs-for-mac?view=vsmac-2022).
 
-:::image type="content" source="media/install-sdk/mac-install-selection.png" alt-text="macOS Visual Studio 2019 for Mac with the .NET workload selected." lightbox="media/install-sdk/mac-install-selection.png":::
+| .NET SDK version      | Visual Studio version                                                               |
+| --------------------- | ----------------------------------------------------------------------------------- |
+| 8.0                   | Visual Studio 2022 for Mac 17.6.1 or higher. (Available as a preview feature only.) |
+| 7.0                   | Visual Studio 2022 for Mac 17.4 or higher.                                          |
+| 6.0                   | Visual Studio 2022 for Mac 17.0 or higher.                                          |
+
+:::image type="content" source="media/install-sdk/mac-install-selection.png" alt-text="macOS Visual Studio 2022 for Mac with the .NET workload selected." lightbox="media/install-sdk/mac-install-selection.png":::
 
 [!INCLUDE [](~/includes/vs-mac-eol.md)]
 

@@ -39,7 +39,6 @@ In the following example, one delegate is mapped to both static and instance met
 
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Delegates](./index.md)
 - [How to combine delegates (Multicast Delegates)](./how-to-combine-delegates-multicast-delegates.md)
 - [Events](../events/index.md)

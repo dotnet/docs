@@ -37,11 +37,13 @@ namespace CustomConverterInferredTypesToObject
     {
         public static void Main()
         {
-            string jsonString = @"{
-  ""Date"": ""2019-08-01T00:00:00-07:00"",
-  ""TemperatureCelsius"": 25,
-  ""Summary"": ""Hot""
-}";
+            string jsonString = """
+                {
+                  "Date": "2019-08-01T00:00:00-07:00",
+                  "TemperatureCelsius": 25,
+                  "Summary": "Hot"
+                }
+                """;
 
             WeatherForecast weatherForecast = JsonSerializer.Deserialize<WeatherForecast>(jsonString)!;
             Console.WriteLine($"Type of Date property   no converter = {weatherForecast.Date!.GetType()}");

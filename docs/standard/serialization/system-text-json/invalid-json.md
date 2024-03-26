@@ -60,8 +60,8 @@ Instead of:
 
 To serialize numbers in quotes or accept numbers in quotes across the entire input object graph, set <xref:System.Text.Json.JsonSerializerOptions.NumberHandling%2A?displayProperty=nameWithType> as shown in the following example:
 
-:::code language="csharp" source="snippets/how-to-5-0/csharp/QuotedNumbers.cs" highlight="26-28":::
-:::code language="vb" source="snippets/how-to-5-0/vb/QuotedNumbers.vb" :::
+:::code language="csharp" source="snippets/how-to-contd/csharp/QuotedNumbers.cs" highlight="26-28":::
+:::code language="vb" source="snippets/how-to-contd/vb/QuotedNumbers.vb" :::
 
 When you use `System.Text.Json` indirectly through ASP.NET Core, quoted numbers are allowed when deserializing because ASP.NET Core specifies [web default options](xref:System.Text.Json.JsonSerializerDefaults.Web).
 

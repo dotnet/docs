@@ -22,14 +22,14 @@ By default, `System.Text.Json` uses the default public parameterless constructor
 
   The following example uses the `[JsonConstructor]` attribute:
 
-  :::code language="csharp" source="snippets/how-to-5-0/csharp/ImmutableTypes.cs" highlight="12":::
-  :::code language="vb" source="snippets/how-to-5-0/vb/ImmutableTypes.vb" :::
+  :::code language="csharp" source="snippets/how-to-contd/csharp/ImmutableTypes.cs" highlight="12":::
+  :::code language="vb" source="snippets/how-to-contd/vb/ImmutableTypes.vb" :::
 
   In .NET 7 and earlier versions, the `[JsonConstructor]` attribute can only be used with public constructors.
 
 The parameter names of a parameterized constructor must match the property names and types. Matching is case-insensitive, and the constructor parameter must match the actual property name even if you use [[JsonPropertyName]](xref:System.Text.Json.Serialization.JsonPropertyNameAttribute) to rename a property. In the following example, the name for the `TemperatureC` property is changed to `celsius` in the JSON, but the constructor parameter is still named `temperatureC`:
 
-:::code language="csharp" source="snippets/how-to-5-0/csharp/ImmutableTypesCtorParms.cs" highlight="9,13-15":::
+:::code language="csharp" source="snippets/how-to-contd/csharp/ImmutableTypesCtorParms.cs" highlight="9,13-15":::
 
 Besides `[JsonPropertyName]`, the following attributes support deserialization with parameterized constructors:
 
@@ -42,7 +42,7 @@ Besides `[JsonPropertyName]`, the following attributes support deserialization w
 
 Records are also supported for both serialization and deserialization, as shown in the following example:
 
-:::code language="csharp" source="snippets/how-to-5-0/csharp/Records.cs":::
+:::code language="csharp" source="snippets/how-to-contd/csharp/Records.cs":::
 
 You can apply any of the attributes to the property names, using the `property:` target on the attribute. For more information on positional records, see the article on [records](../../../csharp/language-reference/builtin-types/record.md#positional-syntax-for-property-definition) in the C# language reference.
 
@@ -50,8 +50,8 @@ You can apply any of the attributes to the property names, using the `property:`
 
 You can enable use of a non-public *accessor* on a property by using the [[JsonInclude]](xref:System.Text.Json.Serialization.JsonIncludeAttribute) attribute, as shown in the following example:
 
-:::code language="csharp" source="snippets/how-to-5-0/csharp/NonPublicAccessors.cs" highlight="10,13":::
-:::code language="vb" source="snippets/how-to-5-0/vb/NonPublicAccessors.vb" :::
+:::code language="csharp" source="snippets/how-to-contd/csharp/NonPublicAccessors.cs" highlight="10,13":::
+:::code language="vb" source="snippets/how-to-contd/vb/NonPublicAccessors.vb" :::
 
 By including a property with a private setter, you can still deserialize that property.
 

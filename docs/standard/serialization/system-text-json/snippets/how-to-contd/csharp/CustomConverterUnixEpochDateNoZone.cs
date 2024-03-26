@@ -9,7 +9,12 @@ namespace CustomConverterUnixEpochDateNoZone
     {
         public static void Main()
         {
-            var forecast = new Forecast() { Date = DateTime.Now, TemperatureCelsius = 19, Summary = "warm" };
+            var forecast = new Forecast()
+            {
+                Date = DateTime.Now,
+                TemperatureCelsius = 19,
+                Summary = "warm"
+            };
 
             var options = new JsonSerializerOptions();
             options.Converters.Add(new UnixEpochDateTimeConverter());
@@ -18,7 +23,7 @@ namespace CustomConverterUnixEpochDateNoZone
             string json = JsonSerializer.Serialize(forecast, options);
             Console.WriteLine(json);
 
-            var forecastDeserialized = JsonSerializer.Deserialize<Forecast>(json, options)!;
+            Forecast forecastDeserialized = JsonSerializer.Deserialize<Forecast>(json, options)!;
             Console.WriteLine($"Deserialized date = {forecastDeserialized.Date}");
         }
     }
@@ -33,8 +38,8 @@ namespace CustomConverterUnixEpochDateNoZone
     // <ConverterOnly>
     sealed class UnixEpochDateTimeConverter : JsonConverter<DateTime>
     {
-        static readonly DateTime s_epoch = new DateTime(1970, 1, 1, 0, 0, 0);
-        static readonly Regex s_regex = new Regex("^/Date\\(([+-]*\\d+)\\)/$", RegexOptions.CultureInvariant);
+        static readonly DateTime s_epoch = new(1970, 1, 1, 0, 0, 0);
+        static readonly Regex s_regex = new("^/Date\\(([+-]*\\d+)\\)/$", RegexOptions.CultureInvariant);
 
         public override DateTime Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
         {

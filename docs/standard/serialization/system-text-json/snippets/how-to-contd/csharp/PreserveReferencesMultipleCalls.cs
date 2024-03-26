@@ -16,7 +16,7 @@ namespace PreserveReferencesMultipleCalls
     class MyReferenceResolver : ReferenceResolver
     {
         private uint _referenceCount;
-        private readonly Dictionary<string, object> _referenceIdToObjectMap = new ();
+        private readonly Dictionary<string, object> _referenceIdToObjectMap = [];
         private readonly Dictionary<object, string> _objectToReferenceIdMap = new (ReferenceEqualityComparer.Instance);
 
         public override void AddReference(string referenceId, object value)
@@ -80,7 +80,7 @@ namespace PreserveReferencesMultipleCalls
                 Name = "Adrian King"
             };
 
-            tyler.DirectReports = new List<Employee> { adrian };
+            tyler.DirectReports = [adrian];
             adrian.Manager = tyler;
 
             var employees = new List<Employee> { tyler, adrian };
@@ -90,8 +90,10 @@ namespace PreserveReferencesMultipleCalls
         static void SerializeEmployees(List<Employee> employees)
         {
             // <CallSerializer>
-            var options = new JsonSerializerOptions();
-            options.WriteIndented = true;
+            var options = new JsonSerializerOptions
+            {
+                WriteIndented = true
+            };
             var myReferenceHandler = new MyReferenceHandler();
             options.ReferenceHandler = myReferenceHandler;
 

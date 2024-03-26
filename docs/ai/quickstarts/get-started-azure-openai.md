@@ -16,7 +16,7 @@ zone_pivot_groups: openai-library
 :::zone target="docs" pivot="semantic-kernel"
 <!-- markdownlint-enable MD044 -->
 
-Get started with the Semantic Kernel by creating a simple .NET 8 console chat application. The application will run locally and use the OpenAI `gpt-35-turbo` model deployed into an Azure OpenAI account. Follow these steps to provision Azure OpenAI and learn how to use Semantic Kernel.
+Get started with Semantic Kernel by creating a simple .NET 8 console chat application. The application will run locally and use the OpenAI `gpt-35-turbo` model deployed into an Azure OpenAI account. Follow these steps to provision Azure OpenAI and learn how to use Semantic Kernel.
 
 :::zone-end
 

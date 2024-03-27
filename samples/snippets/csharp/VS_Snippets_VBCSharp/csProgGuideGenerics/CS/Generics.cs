@@ -392,6 +392,16 @@ namespace CsCsrefProgrammingGenerics
             void DoWork<T, U>() { }
             //</Snippet28>
         }
+
+        class Test3
+        {
+            //<Snippet29>
+            T[] Swap<T>(T a, T b)
+            {
+                return [b, a];
+            }
+            //</Snippet29>
+        }
     }
 
     //---------------------------------------------------------------------------

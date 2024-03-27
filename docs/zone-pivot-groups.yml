@@ -112,3 +112,11 @@ groups:
       title: C# and Visual Basic
     - id: lang-fsharp
       title: F#
+- id: openai-library
+  title: OpenAI Library
+  prompt: Choose a library for OpenAI
+  pivots:
+    - id: semantic-kernel
+      title: Semantic Kernel
+    - id: azure-openai-sdk
+      title: Azure OpenAI SDK

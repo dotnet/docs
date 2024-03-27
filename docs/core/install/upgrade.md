@@ -23,10 +23,10 @@ The .NET website offers [installers and archives](https://dotnet.microsoft.com/d
 Some operating systems have a package manager that you can also use to install a new .NET version, which you might prefer.
 
 - [macOS](https://formulae.brew.sh/cask/dotnet-sdk)
-- [Linux](https://learn.microsoft.com/dotnet/core/install/linux)
+- [Linux](linux.md)
 - [Windows](https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/SDK)
 
-Visual Studio installs [new .NET SDK versions automatically](https://learn.microsoft.com/dotnet/core/porting/versioning-sdk-msbuild-vs). For Visual Studio users, it's sufficient to upgrade to a newer Visual Studio version.
+Visual Studio installs [new .NET SDK versions automatically](../porting/versioning-sdk-msbuild-vs.md). For Visual Studio users, it's sufficient to upgrade to a newer Visual Studio version.
 
 ## Upgrade source code
 
@@ -66,4 +66,4 @@ The following Dockerfile example demonstrates pulling an ASP.NET Core 8.0 image.
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
 ```
 
-In a cloud service like [Azure App Service](https://learn.microsoft.com/en-us/azure/app-service/quickstart-dotnetcore), a configuration change is needed.
+In a cloud service like [Azure App Service](/azure/app-service/quickstart-dotnetcore), a configuration change is needed.

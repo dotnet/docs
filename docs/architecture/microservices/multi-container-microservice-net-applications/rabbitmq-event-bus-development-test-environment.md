@@ -112,7 +112,7 @@ For production scenarios check the additional resources below, specific for Rabb
 
 A production-ready solution with support for RabbitMQ.
 
-- **Peregrine Connect** - Simplify Your Integration with Efficient Design, Deployment, and Management of Apps, APIs, and Workflows \
+- **Peregrine Connect** - Simplify your integration with efficient design, deployment, and management of apps, APIs, and workflows \
   <https://www.peregrineconnect.com/>
 
 - **NServiceBus** - Fully-supported commercial service bus with advanced management and monitoring tooling for .NET \

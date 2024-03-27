@@ -17,10 +17,7 @@ ms.topic: how-to
 
 This article shows how to create custom converters for the JSON serialization classes that are provided in the <xref:System.Text.Json?displayProperty=fullName> namespace. For an introduction to `System.Text.Json`, see [How to serialize and deserialize JSON in .NET](how-to.md).
 
-A *converter* is a class that converts an object or a value to and from JSON. The `System.Text.Json` namespace has built-in converters for most primitive types that map to JavaScript primitives. You can write custom converters:
-
-* To override the default behavior of a built-in converter. For example, you might want `DateTime` values to be represented by mm/dd/yyyy format. By default, ISO 8601-1:2019 is supported, including the RFC 3339 profile. For more information, see [DateTime and DateTimeOffset support in System.Text.Json](../../datetime/system-text-json-support.md).
-* To support a custom value type. For example, a `PhoneNumber` struct.
+A *converter* is a class that converts an object or a value to and from JSON. The `System.Text.Json` namespace has built-in converters for most primitive types that map to JavaScript primitives. You can write custom converters to override the default behavior of a built-in converter. For example, you might want `DateTime` values to be represented by mm/dd/yyyy format. By default, ISO 8601-1:2019 is supported, including the RFC 3339 profile. For more information, see [DateTime and DateTimeOffset support in System.Text.Json](../../datetime/system-text-json-support.md). Another example is to serialize a POCO as JSON string, for example with a `PhoneNumber` type.
 
 You can also write custom converters to customize or extend `System.Text.Json` with new functionality. The following scenarios are covered later in this article:
 

@@ -5,5 +5,16 @@
         "AreaPath": "Production\\Digital and App Innovation\\DotNet and more\\dotnet"
     },
     "ImportTriggerLabel": ":world_map: reQUEST",
-    "ImportedLabel": ":pushpin: seQUESTered"
+    "ImportedLabel": ":pushpin: seQUESTered",
+    "ParentNodes": [
+        {
+            "Label": "okr-health",
+            "ParentNodeId": 199082
+        },
+        {
+            "Label": "dotnet-csharp/svc",
+            "ParentNodeId": 227484
+        }
+    ],
+    "DefaultParentNode": 228485
 }

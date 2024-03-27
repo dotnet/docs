@@ -1410,22 +1410,75 @@ items:
             href: ../standard/assembly/embed-types-visual-studio.md
           - name: Inspect assembly contents using MetadataLoadContext
             href: ../standard/assembly/inspect-contents-using-metadataloadcontext.md
-      - name: Metadata and self-describing components
+      - name: Metadata and reflection
         items:
-          - name: Overview
+          - name: Metadata and self-describing components
             href: ../standard/metadata-and-self-describing-components.md
           - name: Supplemental API remarks
             items:
-              - name: The AssemblyBuilder class
-                href: runtime-libraries/system-reflection-emit-assemblybuilder.md
-              - name: The MethodBuilder class
-                href: runtime-libraries/system-reflection-emit-methodbuilder.md
-              - name: The TypeBuilder class
-                href: runtime-libraries/system-reflection-emit-typebuilder.md
-              - name: The DynamicMethod class
-                href: runtime-libraries/system-reflection-emit-dynamicmethod.md
               - name: The DebugDirectoryEntryType enum
                 href: runtime-libraries/system-reflection-portableexecutable-debugdirectoryentrytype.md
+          - name: Reflection
+            items:
+              - name: Overview
+                href: reflection.md
+              - name: View type information
+                href: viewing-type-information.md
+              - name: Reflection and generic types
+                href: reflection-and-generic-types.md
+              - name: "How to: Examine and instantiate generic types with reflection"
+                href: how-to-examine-and-instantiate-generic-types-with-reflection.md
+              - name: Security considerations
+                href: security-considerations-for-reflection.md
+              - name: Dynamically load and use types
+                href: dynamically-loading-and-using-types.md
+              - name: "How to: Load assemblies into the reflection-only context"
+                href: how-to-load-assemblies-into-the-reflection-only-context.md
+              - name: "How to: Get type and member information by using reflection"
+                href: get-type-member-information.md
+              - name: Access custom attributes
+                href: accessing-custom-attributes.md
+              - name: Specify fully qualified type names
+                href: specifying-fully-qualified-type-names.md
+              - name: "How to: Hook up a delegate using reflection"
+                href: how-to-hook-up-a-delegate-using-reflection.md
+          - name: Emit dynamic methods and assemblies
+            href: emitting-dynamic-methods-and-assemblies.md
+            items:
+            - name: Security issues
+              href: security-issues-in-reflection-emit.md
+            - name: "How to: Define and execute dynamic methods"
+              href: how-to-define-and-execute-dynamic-methods.md
+            - name: "How to: Define a generic type with reflection emit"
+              href: how-to-define-a-generic-type-with-reflection-emit.md
+            - name: "How to: Define a generic method with reflection emit"
+              href: how-to-define-a-generic-method-with-reflection-emit.md
+            - name: Collectible assemblies for dynamic type generation
+              href: collectible-assemblies.md
+            - name: Supplemental API remarks
+              items:
+                - name: The AssemblyBuilder class
+                  href: runtime-libraries/system-reflection-emit-assemblybuilder.md
+                - name: The MethodBuilder class
+                  href: runtime-libraries/system-reflection-emit-methodbuilder.md
+                - name: The TypeBuilder class
+                  href: runtime-libraries/system-reflection-emit-typebuilder.md
+                - name: The DynamicMethod class
+                  href: runtime-libraries/system-reflection-emit-dynamicmethod.md
+          - name: Dynamic language runtime
+            href: dynamic-language-runtime-overview.md
+          - name: Dynamic source code generation and compilation
+            items:
+            - name: Overview
+              href: dynamic-source-code-generation-and-compilation.md
+            - name: Use the CodeDOM
+              href: using-the-codedom.md
+            - name: Generate and compile source code from a CodeDOM graph
+              href: generating-and-compiling-source-code-from-a-codedom-graph.md
+            - name: Create an XML documentation file using CodeDOM
+              href: how-to-create-an-xml-documentation-file-using-codedom.md
+            - name: Create a class using CodeDOM
+              href: how-to-create-a-class-using-codedom.md
       - name: Dependency loading
         items:
           - name: Overview

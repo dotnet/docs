@@ -29,6 +29,7 @@ You can apply the attributes in the following table to classes and class members
 |<xref:System.Xml.Serialization.XmlElementAttribute>|Public field, property, parameter, or return value.|The field or property will be serialized as an XML element.|
 |<xref:System.Xml.Serialization.XmlEnumAttribute>|Public field that is an enumeration identifier.|The element name of an enumeration member.|
 |<xref:System.Xml.Serialization.XmlIgnoreAttribute>|Public properties and fields.|The property or field should be ignored when the containing class is serialized.|
+|<xref:System.ObsoleteAttribute>|Public properties and fields.|The property or field will be ignored when the containing class is serialized.|
 |<xref:System.Xml.Serialization.XmlIncludeAttribute>|Public derived class declarations, and return values of public methods for Web Services Description Language (WSDL) documents.|The class should be included when generating schemas (to be recognized when serialized).|
 |<xref:System.Xml.Serialization.XmlRootAttribute>|Public class declarations.|Controls XML serialization of the attribute target as an XML root element. Use the attribute to further specify the namespace and element name.|
 |<xref:System.Xml.Serialization.XmlTextAttribute>|Public properties and fields.|The property or field should be serialized as XML text.|

@@ -1,7 +1,7 @@
 ---
 title: Containerize an app with dotnet publish
 description: In this tutorial, you'll learn how to containerize a .NET application with dotnet publish command and without the use of a Dockerfile.
-ms.date: 03/20/2024
+ms.date: 03/27/2024
 ms.topic: tutorial
 zone_pivot_groups: dotnet-version-7-8
 ---
@@ -83,7 +83,7 @@ Attempting to cancel the build...
 
 The worker template loops indefinitely. Use the cancel command <kbd>Ctrl+C</kbd> to stop it.
 
-:::zone pivot="dotnet-7-0"
+:::zone pivot="dotnet-7-0,dotnet-8-0"
 
 ## Add NuGet package
 
@@ -101,7 +101,10 @@ To enable SDK container support, set the `EnableSdkContainerSupport` property to
 </PropertyGroup>
 ```
 
-Otherwise, if you're not using .NET SDK version 8.0.200 or later, you need to add the required [Microsoft.NET.Build.Containers](https://www.nuget.org/packages/Microsoft.NET.Build.Containers) NuGet package to publish non-web projects as a container. To add the `Microsoft.NET.Build.Containers` NuGet package to the worker template, run the following [dotnet add package](../tools/dotnet-add-package.md) command:
+:::zone-end
+:::zone pivot="dotnet-7-0"
+
+You need to reference the required [Microsoft.NET.Build.Containers](https://www.nuget.org/packages/Microsoft.NET.Build.Containers) NuGet package to publish non-web projects as a container. To add the `Microsoft.NET.Build.Containers` NuGet package to the worker template, run the following [dotnet add package](../tools/dotnet-add-package.md) command:
 
 ```dotnetcli
 dotnet add package Microsoft.NET.Build.Containers

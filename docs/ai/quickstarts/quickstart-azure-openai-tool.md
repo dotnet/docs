@@ -32,7 +32,19 @@ Get started with the .NET Azure OpenAI SDK by creating a simple .NET 8 console c
 
 ## Try HikerAI Pro sample
 
-1. From a terminal or command prompt, navigate to the `04-HikerAIPro` directory.
+<!-- markdownlint-disable MD029 MD044 -->
+:::zone target="docs" pivot="semantic-kernel"
+
+1. From a terminal or command prompt, navigate to the `semantic-kernel\04-HikerAIPro` directory.
+
+:::zone-end
+
+:::zone target="docs" pivot="azure-openai-sdk"
+
+1. From a terminal or command prompt, navigate to the `azure-openai-sdk\04-HikerAIPro` directory.
+
+:::zone-end
+
 2. It's now time to try the console application. Type in the following to run the app:
 
     ```dotnetcli
@@ -40,6 +52,7 @@ Get started with the .NET Azure OpenAI SDK by creating a simple .NET 8 console c
     ```
 
     If you get an error message the Azure OpenAI resources may not have finished deploying. Wait a couple of minutes and try again.
+<!-- markdownlint-enable MD029 MD044  -->
 
 <!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="semantic-kernel"
@@ -49,17 +62,13 @@ Get started with the .NET Azure OpenAI SDK by creating a simple .NET 8 console c
 
 Our application uses the `Microsoft.SemanticKernel` package, which is available on [NuGet](https://www.nuget.org/packages/Microsoft.SemanticKernel), to send and receive requests to an Azure OpenAI service deployed in Azure.
 
+The entire application is contained within the **Program.cs** file. The first several lines of code loads up secrets and configuration values that were set in the `dotnet user-secrets` for you during the application provisioning.
+
 ```csharp
-// Add a new plugin with a local .NET function that should be available to the AI model
-// For convenience and clarity of into the code, this standalone local method handles tool call responses. It will fake a call to a weather API and return the current weather for the specified location.
-kernel.ImportPluginFromFunctions("WeatherPlugin",
-[
-    KernelFunctionFactory.CreateFromMethod(([Description("The city, e.g. Montreal, Sidney")] string location, string unit = null) =>
-    {
-        // Here you would call a weather API to get the weather for the location
-        return "Periods of rain or drizzle, 15 C";
-    }, "get_current_weather", "Get the current weather in a given location")
-]);
+var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
+string endpoint = config["AZURE_OPENAI_ENDPOINT"];
+string deployment = config["AZURE_OPENAI_GPT_NAME"];
+string key = config["AZURE_OPENAI_KEY"];
 ```
 
 The `Kernel` class facilitates the requests and responses with the help of `AddAzureOpenAIChatCompletion` service.
@@ -73,13 +82,19 @@ Kernel kernel = b
     .Build();
 ```
 
-The entire application is contained within the **Program.cs** file. The first several lines of code loads up secrets and configuration values that were set in the `dotnet user-secrets` for you during the application provisioning.
+The function's `ImportPluginFromFunctions` and `CreateFromMethod` are used to define the local function that will be called by the model.
 
 ```csharp
-var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
-string endpoint = config["AZURE_OPENAI_ENDPOINT"];
-string deployment = config["AZURE_OPENAI_GPT_NAME"];
-string key = config["AZURE_OPENAI_KEY"];
+// Add a new plugin with a local .NET function that should be available to the AI model
+// For convenience and clarity of into the code, this standalone local method handles tool call responses. It will fake a call to a weather API and return the current weather for the specified location.
+kernel.ImportPluginFromFunctions("WeatherPlugin",
+[
+    KernelFunctionFactory.CreateFromMethod(([Description("The city, e.g. Montreal, Sidney")] string location, string unit = null) =>
+    {
+        // Here you would call a weather API to get the weather for the location
+        return "Periods of rain or drizzle, 15 C";
+    }, "get_current_weather", "Get the current weather in a given location")
+]);
 ```
 
 Once the `kernel` client is created, we provide more context to the model by adding a system prompt. This instructs the model how you'd like it to act during the conversation. Note how the weather is emphasized in the system prompt.
@@ -130,6 +145,37 @@ Customize the system prompt and user message to see how the model responds to he
 
 Our application uses the `Azure.AI.OpenAI` client SDK, which is available on [NuGet](https://www.nuget.org/packages/Azure.AI.OpenAI), to send and receive requests to an Azure OpenAI service deployed in Azure.
 
+The entire application is contained within the **Program.cs** file. The first several lines of code loads up secrets and configuration values that were set in the `dotnet user-secrets` for you during the application provisioning.
+
+```csharp
+// == Retrieve the local secrets saved during the Azure deployment ==========
+var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
+string openAIEndpoint = config["AZURE_OPENAI_ENDPOINT"];
+string openAIDeploymentName = config["AZURE_OPENAI_GPT_NAME"];
+string openAiKey = config["AZURE_OPENAI_KEY"];
+
+// == Creating the AIClient ==========
+var endpoint = new Uri(openAIEndpoint);
+var credentials = new AzureKeyCredential(openAiKey);
+```
+
+The `OpenAIClient` class facilitates the requests and responses. `ChatCompletionOptions` specifies parameters of how the model will respond. Note how the **Tools** property is used to add the definition.
+
+```csharp
+var openAIClient = new OpenAIClient(endpoint, credentials);
+
+var completionOptions = new ChatCompletionsOptions
+{
+    MaxTokens = 400,
+    Temperature = 1f,
+    FrequencyPenalty = 0.0f,
+    PresencePenalty = 0.0f,
+    NucleusSamplingFactor = 0.95f, // Top P
+    DeploymentName = openAIDeploymentName,
+    Tools = { getWeather }
+};
+```
+
 The class `ChatCompletionsFunctionToolDefinition` is used to define the local function that will be called by the model.
 
 ```csharp
@@ -158,37 +204,6 @@ var getWeather = new ChatCompletionsFunctionToolDefinition()
     },
     new JsonSerializerOptions() { PropertyNamingPolicy = JsonNamingPolicy.CamelCase }),
 };
-```
-
-The `OpenAIClient` class facilitates the requests and responses. `ChatCompletionOptions` specifies parameters of how the model will respond. Note how the **Tools** property is used to add the definition.
-
-```csharp
-var openAIClient = new OpenAIClient(endpoint, credentials);
-
-var completionOptions = new ChatCompletionsOptions
-{
-    MaxTokens = 400,
-    Temperature = 1f,
-    FrequencyPenalty = 0.0f,
-    PresencePenalty = 0.0f,
-    NucleusSamplingFactor = 0.95f, // Top P
-    DeploymentName = openAIDeploymentName,
-    Tools = { getWeather }
-};
-```
-
-The entire application is contained within the **Program.cs** file. The first several lines of code loads up secrets and configuration values that were set in the `dotnet user-secrets` for you during the application provisioning.
-
-```csharp
-// == Retrieve the local secrets saved during the Azure deployment ==========
-var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
-string openAIEndpoint = config["AZURE_OPENAI_ENDPOINT"];
-string openAIDeploymentName = config["AZURE_OPENAI_GPT_NAME"];
-string openAiKey = config["AZURE_OPENAI_KEY"];
-
-// == Creating the AIClient ==========
-var endpoint = new Uri(openAIEndpoint);
-var credentials = new AzureKeyCredential(openAiKey);
 ```
 
 Once the `OpenAIClient` client is created, we provide more context to the model by adding a system prompt. This instructs the model how you'd like it to act during the conversation. Note how the weather is emphasized in the system prompt.

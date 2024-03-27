@@ -32,7 +32,19 @@ Get started with the .NET Azure OpenAI SDK by creating a simple .NET 8 console c
 
 ## Trying Hiking Benefits Summary sample
 
-1. From a terminal or command prompt, navigate to the `01-HikeBenefitsSummary` directory.
+<!-- markdownlint-disable MD029 MD044 -->
+:::zone target="docs" pivot="semantic-kernel"
+
+1. From a terminal or command prompt, navigate to the `semantic-kernel\01-HikeBenefitsSummary` directory.
+
+:::zone-end
+
+:::zone target="docs" pivot="azure-openai-sdk"
+
+1. From a terminal or command prompt, navigate to the `azure-openai-sdk\01-HikeBenefitsSummary` directory.
+
+:::zone-end
+
 2. It's now time to try the console application. Type in the following to run the app:
 
     ```dotnetcli
@@ -40,6 +52,7 @@ Get started with the .NET Azure OpenAI SDK by creating a simple .NET 8 console c
     ```
 
     If you get an error message the Azure OpenAI resources may not have finished deploying. Wait a couple of minutes and try again.
+<!-- markdownlint-enable MD029 MD044  -->
 
 <!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="semantic-kernel"
@@ -48,14 +61,6 @@ Get started with the .NET Azure OpenAI SDK by creating a simple .NET 8 console c
 ## Understanding the code
 
 Our application uses the `Microsoft.SemanticKernel` package, which is available on [NuGet](https://www.nuget.org/packages/Microsoft.SemanticKernel), to send and receive requests to an Azure OpenAI service deployed in Azure.
-
-The `Kernel` class facilitates the requests and responses with the help of `AddAzureOpenAIChatCompletion` service.
-
-```csharp
-Kernel kernel = Kernel.CreateBuilder()
-    .AddAzureOpenAIChatCompletion(deployment, endpoint, key)
-    .Build();
-```
 
 The entire application is contained within the **Program.cs** file. The first several lines of code loads up secrets and configuration values that were set in the `dotnet user-secrets` for you during the application provisioning.
 
@@ -69,6 +74,14 @@ string deployment = config["AZURE_OPENAI_GPT_NAME"];
 string key = config["AZURE_OPENAI_KEY"];
 
 // Create a Kernel containing the Azure OpenAI Chat Completion Service
+Kernel kernel = Kernel.CreateBuilder()
+    .AddAzureOpenAIChatCompletion(deployment, endpoint, key)
+    .Build();
+```
+
+The `Kernel` class facilitates the requests and responses with the help of `AddAzureOpenAIChatCompletion` service.
+
+```csharp
 Kernel kernel = Kernel.CreateBuilder()
     .AddAzureOpenAIChatCompletion(deployment, endpoint, key)
     .Build();
@@ -105,22 +118,6 @@ Customize the text content of the file or the length of the summary to see the d
 
 Our application uses the `Azure.AI.OpenAI` client SDK, which is available on [NuGet](https://www.nuget.org/packages/Azure.AI.OpenAI), to send and receive requests to an Azure OpenAI service deployed in Azure.
 
-The `OpenAIClient` class facilitates the requests and responses. `ChatCompletionOptions` specifies parameters of how the model will respond.
-
-```csharp
-var openAIClient = new OpenAIClient(endpoint, credentials);
-
-var completionOptions = new ChatCompletionsOptions
-{
-    MaxTokens = 400,
-    Temperature = 1f,
-    FrequencyPenalty = 0.0f,
-    PresencePenalty = 0.0f,
-    NucleusSamplingFactor = 0.95f, // Top P
-    DeploymentName = openAIDeploymentName
-};
-```
-
 The entire application is contained within the **Program.cs** file. The first several lines of code loads up secrets and configuration values that were set in the `dotnet user-secrets` for you during the application provisioning.
 
 ```csharp
@@ -136,6 +133,22 @@ string openAiKey = config["AZURE_OPENAI_KEY"];
 // == Creating the AIClient ==========
 var endpoint = new Uri(openAIEndpoint);
 var credentials = new AzureKeyCredential(openAiKey);
+```
+
+The `OpenAIClient` class facilitates the requests and responses. `ChatCompletionOptions` specifies parameters of how the model will respond.
+
+```csharp
+var openAIClient = new OpenAIClient(endpoint, credentials);
+
+var completionOptions = new ChatCompletionsOptions
+{
+    MaxTokens = 400,
+    Temperature = 1f,
+    FrequencyPenalty = 0.0f,
+    PresencePenalty = 0.0f,
+    NucleusSamplingFactor = 0.95f, // Top P
+    DeploymentName = openAIDeploymentName
+};
 ```
 
 Once the `OpenAIClient` client is created, we read the content of the file `benefits.md`. Then using the `ChatRequestUserMessage` class we can add to the model the request to summarize that text.

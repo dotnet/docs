@@ -4,40 +4,36 @@ items:
 - name: Reflection
   href: reflection.md
   items:
-  - name: Viewing Type Information
+  - name: View type information
     href: viewing-type-information.md
-  - name: Reflection and Generic Types
+  - name: Reflection and generic types
     href: reflection-and-generic-types.md
-  - name: "How to: Examine and Instantiate Generic Types with Reflection"
+  - name: "How to: Examine and instantiate generic types with reflection"
     href: how-to-examine-and-instantiate-generic-types-with-reflection.md
-  - name: Security Considerations for Reflection
+  - name: Security considerations
     href: security-considerations-for-reflection.md
-  - name: Dynamically Loading and Using Types
+  - name: Dynamically load and use types
     href: dynamically-loading-and-using-types.md
-  - name: "How to: Load Assemblies into the Reflection-Only Context"
+  - name: "How to: Load assemblies into the reflection-only context"
     href: how-to-load-assemblies-into-the-reflection-only-context.md
   - name: "How to: Get type and member information by using reflection"
     href: get-type-member-information.md
-  - name: Accessing Custom Attributes
+  - name: Access custom attributes
     href: accessing-custom-attributes.md
-  - name: Specifying Fully Qualified Type Names
+  - name: Specify fully qualified type names
     href: specifying-fully-qualified-type-names.md
-  - name: "How to: Hook Up a Delegate Using Reflection"
+  - name: "How to: Hook up a delegate using reflection"
     href: how-to-hook-up-a-delegate-using-reflection.md
-  - name: Reflection in the .NET Framework for Windows Store Apps
-    href: reflection-for-windows-store-apps.md
 - name: Emit dynamic methods and assemblies
   href: emitting-dynamic-methods-and-assemblies.md
   items:
-  - name: Security Issues in Reflection Emit
+  - name: Security issues
     href: security-issues-in-reflection-emit.md
-  - name: "Walkthrough: Emitting Code in Partial Trust Scenarios"
-    href: walkthrough-emitting-code-in-partial-trust-scenarios.md
-  - name: "How to: Define and Execute Dynamic Methods"
+  - name: "How to: Define and execute dynamic methods"
     href: how-to-define-and-execute-dynamic-methods.md
-  - name: "How to: Define a Generic Type with Reflection Emit"
+  - name: "How to: Define a generic type with reflection emit"
     href: how-to-define-a-generic-type-with-reflection-emit.md
-  - name: "How to: Define a Generic Method with Reflection Emit"
+  - name: "How to: Define a generic method with reflection emit"
     href: how-to-define-a-generic-method-with-reflection-emit.md
   - name: Collectible assemblies for dynamic type generation
     href: collectible-assemblies.md

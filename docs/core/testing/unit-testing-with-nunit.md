@@ -2,7 +2,7 @@
 title: Unit testing C# with NUnit and .NET Core
 description: Learn unit test concepts in C# and .NET Core through an interactive experience building a sample solution step-by-step using dotnet test and NUnit.
 author: rprouse
-ms.date: 07/26/2022
+ms.date: 03/27/2024
 ms.custom: devdivchpfy22
 ---
 # Unit testing C# with NUnit and .NET Core
@@ -13,7 +13,7 @@ This tutorial takes you through an interactive experience building a sample solu
 
 ## Prerequisites
 
-- [.NET 6.0](https://dotnet.microsoft.com/download) or later versions.
+- [.NET 8.0](https://dotnet.microsoft.com/download) or later versions.
 - A text editor or code editor of your choice.
 
 ## Creating the source project
@@ -137,7 +137,7 @@ namespace Prime.UnitTests.Services
         {
             var result = _primeService.IsPrime(1);
 
-            Assert.IsFalse(result, "1 should not be prime");
+            Assert.That(result, Is.False, "1 should not be prime");
         }
     }
 }

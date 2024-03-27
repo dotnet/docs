@@ -2,7 +2,7 @@
 title: Unit testing Visual Basic in .NET Core with dotnet test and NUnit
 description: Learn unit test concepts in .NET Core through an interactive experience building a sample Visual Basic solution step-by-step using NUnit.
 author: rprouse
-ms.date: 10/04/2018
+ms.date: 03/27/2024
 ---
 # Unit testing Visual Basic .NET Core libraries using dotnet test and NUnit
 
@@ -12,7 +12,7 @@ This tutorial takes you through an interactive experience building a sample solu
 
 ## Prerequisites
 
-- [.NET Core 2.1 SDK](https://dotnet.microsoft.com/download) or later versions.
+- [.NET 8 SDK](https://dotnet.microsoft.com/download) or later versions.
 - A text editor or code editor of your choice.
 
 ## Creating the source project
@@ -121,7 +121,7 @@ Namespace PrimeService.Tests
         Sub IsPrime_InputIs1_ReturnFalse()
             Dim result As Boolean = _primeService.IsPrime(1)
 
-            Assert.False(result, "1 should not be prime")
+            Assert.That(result, [Is].False, $"1 should not be prime")
         End Sub
 
     End Class

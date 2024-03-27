@@ -19,27 +19,27 @@ public class Program
 
     public static void Main()
     {
-        string jsonString =
-@"{
-  ""Date"": ""2019-08-01T00:00:00"",
-  ""Temperature"": 25,
-  ""Summary"": ""Hot"",
-  ""DatesAvailable"": [
-    ""2019-08-01T00:00:00"",
-    ""2019-08-02T00:00:00""
-  ],
-  ""TemperatureRanges"": {
-      ""Cold"": {
-          ""High"": 20,
-          ""Low"": -10
-      },
-      ""Hot"": {
-          ""High"": 60,
-          ""Low"": 20
-      }
-  }
-}
-";
+        string jsonString = """
+            {
+              "Date": "2019-08-01T00:00:00",
+              "Temperature": 25,
+              "Summary": "Hot",
+              "DatesAvailable": [
+                "2019-08-01T00:00:00",
+                "2019-08-02T00:00:00"
+              ],
+              "TemperatureRanges": {
+                  "Cold": {
+                      "High": 20,
+                      "Low": -10
+                  },
+                  "Hot": {
+                      "High": 60,
+                      "Low": 20
+                  }
+              }
+            }
+            """;
         // Parse all of the JSON.
         JsonNode forecastNode = JsonNode.Parse(jsonString)!;
 

@@ -25,19 +25,19 @@ public class BaseClass
 }  
 ```  
 
- For a comparison of `internal` with the other access modifiers, see [Accessibility Levels](./accessibility-levels.md) and [Access Modifiers](../../programming-guide/classes-and-structs/access-modifiers.md).  
+For a comparison of `internal` with the other access modifiers, see [Accessibility Levels](./accessibility-levels.md) and [Access Modifiers](../../programming-guide/classes-and-structs/access-modifiers.md).  
 
- An `assembly` is an executable or dynamic link library (DLL) produced from compiling one or more source files.
- 
- For more information about assemblies, see [Assemblies in .NET](../../../standard/assembly/index.md).  
-  
- A common use of internal access is in component-based development because it enables a group of components to cooperate in a private manner without being exposed to the rest of the application code. For example, a framework for building graphical user interfaces could provide `Control` and `Form` classes that cooperate by using members with internal access. Since these members are internal, they are not exposed to code that is using the framework.  
-  
- It is an error to reference a type or a member with internal access outside the assembly within which it was defined.  
-  
+An `assembly` is an executable or dynamic link library (DLL) produced from compiling one or more source files.
+
+For more information about assemblies, see [Assemblies in .NET](../../../standard/assembly/index.md).
+
+A common use of internal access is in component-based development because it enables a group of components to cooperate in a private manner without being exposed to the rest of the application code. For example, a framework for building graphical user interfaces could provide `Control` and `Form` classes that cooperate by using members with internal access. Since these members are internal, they are not exposed to code that is using the framework.
+
+It is an error to reference a type or a member with internal access outside the assembly within which it was defined.
+
 ## Example 1
 
- This example contains two files, `Assembly1.cs` and `Assembly1_a.cs`. The first file contains an internal base class, `BaseClass`. In the second file, an attempt to instantiate `BaseClass` will produce an error.  
+ This example contains two files, `Assembly1.cs` and `Assembly1_a.cs`. The first file contains an internal base class, `BaseClass`. In the second file, an attempt to instantiate `BaseClass` will produce an error.
   
 ```csharp  
 // Assembly1.cs  

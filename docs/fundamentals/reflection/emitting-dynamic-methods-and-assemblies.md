@@ -7,7 +7,7 @@ helpviewer_keywords:
   - "dynamic assemblies"
   - "metadata, emit interfaces"
   - "reflection emit, overview"
-  - "assemblies [.NET Framework], emitting dynamic assemblies"
+  - "assemblies [.NET], emitting dynamic assemblies"
 ---
 # Emit dynamic methods and assemblies
 

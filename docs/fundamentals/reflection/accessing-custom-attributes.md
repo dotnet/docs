@@ -8,17 +8,17 @@ dev_langs:
   - "cpp"
 helpviewer_keywords:
   - "custom attributes, accessibility"
-  - "attributes [.NET Framework], accessing"
+  - "attributes [.NET], accessing"
   - "reflection, custom attributes"
 ms.assetid: 1d8e3398-00d8-47d5-a084-214f9859d3d7
 ---
 # Access custom attributes
 
-After attributes have been associated with program elements, reflection can be used to query their existence and values. .NET provides the reflection-only load context, which can be used to examine code that can't be loaded for execution.
+After attributes have been associated with program elements, reflection can be used to query their existence and values. .NET provides the <xref:System.Reflection.MetadataLoadContext>, which you can use to examine code that can't be loaded for execution.
 
-## The reflection-only context
+## <xref:System.Reflection.MetadataLoadContext>
 
-Code loaded into the reflection-only context cannot be executed. This means that instances of custom attributes cannot be created, because that would require executing their constructors. To load and examine custom attributes in the reflection-only context, use the <xref:System.Reflection.CustomAttributeData> class. You can obtain instances of this class by using the appropriate overload of the static <xref:System.Reflection.CustomAttributeData.GetCustomAttributes%2A?displayProperty=nameWithType> method. For more information, see [How to: Load Assemblies into the Reflection-Only Context](how-to-load-assemblies-into-the-reflection-only-context.md).
+Code loaded into the <xref:System.Reflection.MetadataLoadContext> context cannot be executed. This means that instances of custom attributes cannot be created, because that would require executing their constructors. To load and examine custom attributes in the <xref:System.Reflection.MetadataLoadContext> context, use the <xref:System.Reflection.CustomAttributeData> class. You can obtain instances of this class by using the appropriate overload of the static <xref:System.Reflection.CustomAttributeData.GetCustomAttributes%2A?displayProperty=nameWithType> method. For more information, see [How to: Inspect assembly contents using MetadataLoadContext](../../standard/assembly/inspect-contents-using-metadataloadcontext.md).
 
 ## The execution context
 

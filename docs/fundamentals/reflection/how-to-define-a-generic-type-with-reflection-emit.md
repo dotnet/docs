@@ -7,8 +7,8 @@ dev_langs:
   - "vb"
   - "cpp"
 helpviewer_keywords:
-  - "generics [.NET Framework], reflection emit"
-  - "generics [.NET Framework], dynamic types"
+  - "generics [.NET], reflection emit"
+  - "generics [.NET], dynamic types"
   - "reflection emit, generic types"
 ms.assetid: 07d5f01a-7b5b-40ea-9b15-f21561098fe4
 ---

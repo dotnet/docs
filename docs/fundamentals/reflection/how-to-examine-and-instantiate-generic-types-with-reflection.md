@@ -8,7 +8,7 @@ dev_langs:
   - "cpp"
 helpviewer_keywords:
   - "reflection, generic types"
-  - "generics [.NET Framework], reflection"
+  - "generics [.NET], reflection"
 ms.assetid: f93b03b0-1778-43fc-bc6d-35983d210e74
 ---
 # How to: Examine and instantiate generic types with reflection

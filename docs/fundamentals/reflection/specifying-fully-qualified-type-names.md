@@ -3,12 +3,12 @@ title: Specify fully qualified type name
 description: For valid input to reflection operations, use fully qualified type names, which have assembly name specifications, namespace specifications, and type names.
 ms.date: 02/21/2019
 helpviewer_keywords:
-  - "names [.NET Framework], fully qualified type names"
+  - "names [.NET], fully qualified type names"
   - "reflection, fully qualified type names"
-  - "names [.NET Framework], assemblies"
+  - "names [.NET], assemblies"
   - "tokens"
   - "BNF"
-  - "assemblies [.NET Framework], names"
+  - "assemblies [.NET], names"
   - "languages, grammar"
   - "fully qualified type names"
   - "type names"

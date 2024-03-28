@@ -6,9 +6,9 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords:
-  - "generics [.NET Framework], reflection emit"
+  - "generics [.NET], reflection emit"
   - "reflection emit, generic methods"
-  - "generics [.NET Framework], dynamic types"
+  - "generics [.NET], dynamic types"
 ms.assetid: 93892fa4-90b3-4ec4-b147-4bec9880de2b
 ---
 # How to: Define a generic method with reflection emit

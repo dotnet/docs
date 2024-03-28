@@ -7,9 +7,9 @@ dev_langs:
   - "vb"
   - "cpp"
 helpviewer_keywords:
-  - "events [.NET Framework], adding event handlers with reflection"
+  - "events [.NET], adding event handlers with reflection"
   - "reflection, adding event-handler delegates"
-  - "delegates [.NET Framework], adding event handlers with reflection"
+  - "delegates [.NET], adding event handlers with reflection"
 ms.assetid: 076ee62d-a964-449e-a447-c31b33518b81
 ---
 # How to: Hook up a delegate using reflection

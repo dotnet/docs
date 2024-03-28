@@ -7,11 +7,11 @@ dev_langs:
   - "vb"
   - "cpp"
 helpviewer_keywords:
-  - "generics [.NET Framework], reflection emit"
+  - "generics [.NET], reflection emit"
   - "reflection emit, generic types"
   - "reflection, generic types"
   - "type arguments"
-  - "generics [.NET Framework], reflection"
+  - "generics [.NET], reflection"
   - "viewing type information"
   - "type information, viewing"
   - "types, generic"
@@ -45,7 +45,7 @@ When you use reflection to examine an unknown type, represented by an instance o
 
 Use the <xref:System.Type.IsGenericTypeDefinition%2A> property to determine whether a <xref:System.Type> object represents a generic type definition, and use the <xref:System.Reflection.MethodBase.IsGenericMethodDefinition%2A> method to determine whether a <xref:System.Reflection.MethodInfo> represents a generic method definition.
 
-Generic type and method definitions are the templates from which instantiable types are created. Generic types in the .NET Framework class library, such as <xref:System.Collections.Generic.Dictionary%602>, are generic type definitions.
+Generic type and method definitions are the templates from which instantiable types are created. Generic types in the .NET libraries, such as <xref:System.Collections.Generic.Dictionary%602>, are generic type definitions.
 
 ## Is the type or method open or closed?
 

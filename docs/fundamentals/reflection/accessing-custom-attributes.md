@@ -70,4 +70,3 @@ The following example demonstrates the basic way of using reflection to get acce
 - <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A?displayProperty=nameWithType>
 - <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=nameWithType>
 - [View Type Information](viewing-type-information.md)
-- [Security Considerations for Reflection](security-considerations-for-reflection.md)

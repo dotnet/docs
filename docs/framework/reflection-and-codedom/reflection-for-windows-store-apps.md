@@ -41,4 +41,4 @@ Starting with .NET Framework 4.5, the .NET Framework includes a set of reflectio
 
 ## See also
 
-- [Reflection](../../fundamentals/reflection-and-codedom/reflection.md)
+- [Reflection](../../fundamentals/reflection/reflection.md)

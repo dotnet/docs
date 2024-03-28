@@ -116,7 +116,7 @@ After the `Sample` class has been created, the method is invoked.
 
 The program includes a method that lists information about a generic type, and a method that lists the special constraints on a type parameter. These methods are used to display information about the finished `Sample` class.
 
-The program saves the finished module to disk as `GenericEmitExample1.dll`, so you can open it with the [Ildasm.exe (IL Disassembler)](../tools/ildasm-exe-il-disassembler.md) and examine the MSIL for the `Sample` class.
+The program saves the finished module to disk as `GenericEmitExample1.dll`, so you can open it with the [Ildasm.exe (IL Disassembler)](../../framework/tools/ildasm-exe-il-disassembler.md) and examine the MSIL for the `Sample` class.
 
 [!code-cpp[EmitGenericType#1](../../../samples/snippets/cpp/VS_Snippets_CLR/EmitGenericType/CPP/source.cpp#1)]
 [!code-csharp[EmitGenericType#1](../../../samples/snippets/csharp/VS_Snippets_CLR/EmitGenericType/CS/source.cs#1)]

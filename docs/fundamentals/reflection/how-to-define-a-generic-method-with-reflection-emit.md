@@ -29,7 +29,7 @@ The third procedure shows how to invoke the generic method.
    [!code-csharp[GenericMethodHowTo#20](../../../samples/snippets/csharp/VS_Snippets_CLR/GenericMethodHowTo/CS/source.cs#20)]
    [!code-vb[GenericMethodHowTo#20](../../../samples/snippets/visualbasic/VS_Snippets_CLR/GenericMethodHowTo/VB/source.vb#20)]
 
-2. Define a dynamic assembly and a dynamic module to contain the type the generic method belongs to. In this case, the assembly has only one module, named `DemoMethodBuilder1`, and the module name is the same as the assembly name plus an extension. In this example, the assembly is saved to disk and also executed, so <xref:System.Reflection.Emit.AssemblyBuilderAccess.RunAndSave?displayProperty=nameWithType> is specified. You can use the [Ildasm.exe (IL Disassembler)](../tools/ildasm-exe-il-disassembler.md) to examine DemoMethodBuilder1.dll and to compare it to the common intermediate language (CIL) for the method shown in step 1.
+2. Define a dynamic assembly and a dynamic module to contain the type the generic method belongs to. In this case, the assembly has only one module, named `DemoMethodBuilder1`, and the module name is the same as the assembly name plus an extension. In this example, the assembly is saved to disk and also executed, so <xref:System.Reflection.Emit.AssemblyBuilderAccess.RunAndSave?displayProperty=nameWithType> is specified. You can use the [Ildasm.exe (IL Disassembler)](../../framework/tools/ildasm-exe-il-disassembler.md) to examine DemoMethodBuilder1.dll and to compare it to the common intermediate language (CIL) for the method shown in step 1.
 
    [!code-csharp[GenericMethodHowTo#2](../../../samples/snippets/csharp/VS_Snippets_CLR/GenericMethodHowTo/CS/source.cs#2)]
    [!code-vb[GenericMethodHowTo#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/GenericMethodHowTo/VB/source.vb#2)]
@@ -145,7 +145,7 @@ The following code example creates a nongeneric type, `DemoType`, with a generic
 
 The method has one formal parameter, which is an array of `TInput`. The method returns an instance of `TOutput` that contains all the elements of the input array. `TOutput` can be any generic collection type that implements the <xref:System.Collections.Generic.ICollection%601> generic interface.
 
-When the code is executed, the dynamic assembly is saved as DemoGenericMethod1.dll, and can be examined using the [Ildasm.exe (IL Disassembler)](../tools/ildasm-exe-il-disassembler.md).
+When the code is executed, the dynamic assembly is saved as DemoGenericMethod1.dll, and can be examined using the [Ildasm.exe (IL Disassembler)](../../framework/tools/ildasm-exe-il-disassembler.md).
 
 > [!NOTE]
 > A good way to learn how to emit code is to write a program that performs the task you're trying to emit, and use the disassembler to examine the CIL produced by the compiler.

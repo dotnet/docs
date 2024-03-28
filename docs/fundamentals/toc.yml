@@ -1421,42 +1421,42 @@ items:
           - name: Reflection
             items:
               - name: Overview
-                href: reflection.md
+                href: reflection/reflection.md
               - name: View type information
-                href: viewing-type-information.md
+                href: reflection/viewing-type-information.md
               - name: Reflection and generic types
-                href: reflection-and-generic-types.md
+                href: reflection/reflection-and-generic-types.md
               - name: Dynamically load and use types
-                href: dynamically-loading-and-using-types.md
+                href: reflection/dynamically-loading-and-using-types.md
               - name: Access custom attributes
-                href: accessing-custom-attributes.md
+                href: reflection/accessing-custom-attributes.md
               - name: Specify fully qualified type names
-                href: specifying-fully-qualified-type-names.md
+                href: reflection/specifying-fully-qualified-type-names.md
               - name: How-tos
                 items:
                   - name: Examine and instantiate generic types with reflection
-                    href: how-to-examine-and-instantiate-generic-types-with-reflection.md
+                    href: reflection/how-to-examine-and-instantiate-generic-types-with-reflection.md
                   - name: Load assemblies into the reflection-only context
-                    href: how-to-load-assemblies-into-the-reflection-only-context.md
+                    href: reflection/how-to-load-assemblies-into-the-reflection-only-context.md
                   - name: Get type and member information by using reflection
-                    href: get-type-member-information.md
+                    href: reflection/get-type-member-information.md
                   - name: Hook up a delegate using reflection
-                    href: how-to-hook-up-a-delegate-using-reflection.md
+                    href: reflection/how-to-hook-up-a-delegate-using-reflection.md
           - name: Emit dynamic methods and assemblies
-            href: emitting-dynamic-methods-and-assemblies.md
             items:
+              - name: Overview
+                href: reflection/emitting-dynamic-methods-and-assemblies.md
+                displayName: reflection emit
               - name: How-tos
                 items:
                   - name: Define and execute dynamic methods
-                    href: how-to-define-and-execute-dynamic-methods.md
+                    href: reflection/how-to-define-and-execute-dynamic-methods.md
                   - name: Define a generic type with reflection emit
-                    href: how-to-define-a-generic-type-with-reflection-emit.md
+                    href: reflection/how-to-define-a-generic-type-with-reflection-emit.md
                   - name: Define a generic method with reflection emit
-                    href: how-to-define-a-generic-method-with-reflection-emit.md
-              - name: Security issues
-                href: security-issues-in-reflection-emit.md
+                    href: reflection/how-to-define-a-generic-method-with-reflection-emit.md
               - name: Collectible assemblies for dynamic type generation
-                href: collectible-assemblies.md
+                href: reflection/collectible-assemblies.md
               - name: Supplemental API remarks
                 items:
                   - name: The AssemblyBuilder class

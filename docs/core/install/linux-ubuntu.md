@@ -134,11 +134,11 @@ Preview releases are **not** available in the Microsoft package repository. For 
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
 
 ```bash
-# Get Ubuntu version
-declare repo_version=$(if command -v lsb_release &> /dev/null; then lsb_release -r -s; else grep -oP '(?<=^VERSION_ID=).+' /etc/os-release | tr -d '"'; fi)
+# Get OS version info
+source /etc/os-release
 
 # Download Microsoft signing key and repository
-wget https://packages.microsoft.com/config/ubuntu/$repo_version/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+wget https://packages.microsoft.com/config/$ID/$VERSION_ID/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 
 # Install Microsoft signing key and repository
 sudo dpkg -i packages-microsoft-prod.deb

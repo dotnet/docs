@@ -3,6 +3,7 @@ author: adegeo
 ms.author: adegeo
 ms.date: 03/26/2024
 ms.topic: include
+ms.custom: linux-related-content
 ---
 
 If you receive an error message similar to **Unable to locate package {dotnet-package}** or **Some packages could not be installed**, run the following commands.
@@ -22,18 +23,22 @@ sudo apt-get update
 Then, try to install .NET again. If that doesn't work, you can run a manual install with the following commands:
 
 ```bash
-# Define the Debian version, distribution codename, and OS name (Debian, Ubuntu, etc)
-OS_VERSION=$(lsb_release -r | awk '{print $2}')
-OS_CODENAME=$(lsb_release -cs)
-OS_NAME=$(lsb_release -i | cut -f2 | tr '[:upper:]' '[:lower:]')
+# Define the OS version, name, and codename
+source /etc/os-release
 
-
-# Download the Microsoft GPG key 
-sudo apt-get install -y gpg
-sudo curl -fsSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor -o /etc/apt/keyrings/microsoft.gpg
+# Download the Microsoft keys
+sudo apt-get install -y gpg wget
+wget https://packages.microsoft.com/keys/microsoft.asc
+cat microsoft.asc | gpg --dearmor -o microsoft.asc.gpg
+sudo mv microsoft.asc.gpg /etc/apt/trusted.gpg.d/
 
 # Add the Microsoft repository to the system's sources list
-sudo echo "deb [signed-by=/etc/apt/keyrings/microsoft.gpg] https://packages.microsoft.com/$OS_NAME/$OS_VERSION/prod $OS_CODENAME main" | tee /etc/apt/sources.list.d/microsoft-prod.list
+wget https://packages.microsoft.com/config/$ID/$VERSION_ID/prod.list
+sudo mv prod.list /etc/apt/sources.list.d/microsoft-prod.list
+
+# Set ownership
+sudo chown root:root /etc/apt/trusted.gpg.d/microsoft.asc.gpg
+sudo chown root:root /etc/apt/sources.list.d/microsoft-prod.list
 
 # Update packages and install .NET
 sudo apt-get update && \

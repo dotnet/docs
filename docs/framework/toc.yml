@@ -165,12 +165,8 @@ items:
     href: deployment/
   - name: Performance
     href: performance/
-  - name: Reflection
-    items:
-    - name: Reflection in .NET Framework for Windows Store apps
-      href: reflection/reflection-for-windows-store-apps.md
-    - name: "Walkthrough: Emitting code in partial trust scenarios"
-      href: walkthrough-emitting-code-in-partial-trust-scenarios.md
+  - name: Dynamic programming
+    href: reflection-and-codedom/
   - name: Managed Extensibility Framework (MEF)
     href: mef/
   - name: Interoperate with unmanaged code

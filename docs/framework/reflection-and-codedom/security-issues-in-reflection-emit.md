@@ -17,18 +17,14 @@ ms.assetid: 0f8bf8fa-b993-478f-87ab-1a1a7976d298
 
 .NET Framework provides three ways to emit Microsoft intermediate language (MSIL), each with its own security issues:
 
-- [Dynamic assemblies](#Dynamic_Assemblies)
-
-- [Anonymously hosted dynamic methods](#Anonymously_Hosted_Dynamic_Methods)
-
-- [Dynamic methods associated with existing assemblies](#Dynamic_Methods_Associated_with_Existing_Assemblies)
+- [Dynamic Assemblies](#dynamic-assemblies)
+- [Anonymously Hosted Dynamic Methods](#anonymously-hosted-dynamic-methods)
+- [Dynamic Methods Associated with Existing Assemblies](#dynamic-methods-associated-with-existing-assemblies)
 
  Regardless of the way you generate dynamic code, executing the generated code requires all the permissions that are required by the types and methods the generated code uses.
 
 > [!NOTE]
-> The permissions that are required for reflecting on code and emitting code have changed with succeeding releases of .NET Framework. See [Version Information](#Version_Information), later in this article.
-
-<a name="Dynamic_Assemblies"></a>
+> The permissions that are required for reflecting on code and emitting code have changed with succeeding releases of .NET Framework. See [Version Information](#version-information), later in this article.
 
 ## Dynamic Assemblies
 
@@ -55,8 +51,6 @@ ms.assetid: 0f8bf8fa-b993-478f-87ab-1a1a7976d298
 - The assembly is not saved to disk.
 
 - Debug symbols are not generated. (`Internet` and `LocalIntranet` permission sets do not include the necessary permissions.)
-
-<a name="Anonymously_Hosted_Dynamic_Methods"></a>
 
 ## Anonymously Hosted Dynamic Methods
 
@@ -92,8 +86,6 @@ ms.assetid: 0f8bf8fa-b993-478f-87ab-1a1a7976d298
 > [!NOTE]
 > Dynamic methods do not support debug symbols.
 
-<a name="Dynamic_Methods_Associated_with_Existing_Assemblies"></a>
-
 ## Dynamic Methods Associated with Existing Assemblies
 
  To associate a dynamic method with a type or module in an existing assembly, use any of the <xref:System.Reflection.Emit.DynamicMethod> constructors that specify the associated type or module. The permissions that are required to call these constructors vary, because associating a dynamic method with an existing type or module gives the dynamic method access to nonpublic types and members:
@@ -124,7 +116,7 @@ ms.assetid: 0f8bf8fa-b993-478f-87ab-1a1a7976d298
 ### Generating Dynamic Methods from Partially Trusted Code
 
 > [!NOTE]
-> The recommended way to generate dynamic methods from partially trusted code is to use [anonymously hosted dynamic methods](#Anonymously_Hosted_Dynamic_Methods).
+> The recommended way to generate dynamic methods from partially trusted code is to use [Anonymously Hosted Dynamic Methods](#anonymously-hosted-dynamic-methods).
 
  Consider the conditions in which an assembly with Internet permissions can generate a dynamic method and execute it:
 
@@ -138,8 +130,6 @@ ms.assetid: 0f8bf8fa-b993-478f-87ab-1a1a7976d298
 
 > [!NOTE]
 > Dynamic methods do not support debug symbols.
-
-<a name="Version_Information"></a>
 
 ## Version Information
 

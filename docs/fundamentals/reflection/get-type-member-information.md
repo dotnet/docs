@@ -26,6 +26,4 @@ The following example obtains type and member information by using reflection:
 
 ## See also
 
-- [Program with application domains](../app-domains/application-domains.md#programming-with-application-domains)
 - [Reflection](reflection.md)
-- [Use application domains](../app-domains/use.md)

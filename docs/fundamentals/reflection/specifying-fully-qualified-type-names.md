@@ -23,7 +23,7 @@ You must specify type names to have valid input to various reflection operations
 
 ## Grammar for type names
 
- The grammar defines the syntax of formal languages. The following table lists lexical rules that describe how to recognize a valid input. Terminals (those elements that are not further reducible) are shown in all uppercase letters. Nonterminals (those elements that are further reducible) are shown in mixed-case or singly quoted strings, but the single quote (') is not a part of the syntax itself. The pipe character (&#124;) denotes rules that have subrules.
+The grammar defines the syntax of formal languages. The following table lists lexical rules that describe how to recognize a valid input. Terminals (those elements that are not further reducible) are shown in all uppercase letters. Nonterminals (those elements that are further reducible) are shown in mixed-case or singly quoted strings, but the single quote (') is not a part of the syntax itself. The pipe character (&#124;) denotes rules that have subrules.
 
 <!-- markdownlint-disable MD010 -->
 ```antlr
@@ -114,18 +114,18 @@ In a type name, IDENTIFIER is any valid name determined by the rules of a langua
 
 Use the backslash (\\) as an escape character to separate the following tokens when used as part of IDENTIFIER.
 
-|Token|Meaning|
-|-----------|-------------|
-|`\,`|Assembly separator.|
-|`\+`|Nested type separator.|
-|`\&`|Reference type.|
-|`\*`|Pointer type.|
-|`\[`|Array dimension delimiter.|
-|`\]`|Array dimension delimiter.|
-|`\.`|Use the backslash before a period only if the period is used in an array specification. Periods in NamespaceSpec do not take the backslash.|
-|`\\`|Backslash when needed as a string literal.|
+| Token | Meaning                    |
+|-------|----------------------------|
+| `\,`  | Assembly separator.        |
+| `\+`  | Nested type separator.     |
+| `\&`  | Reference type.            |
+| `\*`  | Pointer type.              |
+| `\[`  | Array dimension delimiter. |
+| `\]`  | Array dimension delimiter. |
+| `\.`  | Use the backslash before a period only if the period is used in an array specification. Periods in NamespaceSpec do not take the backslash. |
+| `\\`  | Backslash when needed as a string literal. |
 
-Note that in all TypeSpec components except AssemblyNameSpec, spaces are relevant. In the AssemblyNameSpec, spaces before the ',' separator are relevant, but spaces after the ',' separator are ignored.
+In all TypeSpec components except AssemblyNameSpec, spaces are relevant. In the AssemblyNameSpec, spaces before the ',' separator are relevant, but spaces after the ',' separator are ignored.
 
 Reflection classes, such as <xref:System.Type.FullName%2A?displayProperty=nameWithType>, return the mangled name so that the returned name can be used in a call to <xref:System.Type.GetType%2A>, as in `MyType.GetType(myType.FullName)`.
 
@@ -183,7 +183,7 @@ com.microsoft.crypto, Culture=en, PublicKeyToken=a5d015c7d5a0b012,
 
 ## Specify generic types
 
-SimpleTypeSpec\`NUMBER represents an open generic type with from 1 to *n* generic type parameters. For example, to get reference to the open generic type List\<T> or the closed generic type List\<String>, use ``Type.GetType("System.Collections.Generic.List`1")`` To get a reference to the generic type Dictionary\<TKey,TValue>, use ``Type.GetType("System.Collections.Generic.Dictionary`2")``.
+SimpleTypeSpec\`NUMBER represents an open generic type with from 1 to *n* generic type parameters. For example, to get reference to the open generic type `List<T>` or the closed generic type `List<String>`, use ``Type.GetType("System.Collections.Generic.List`1")`` To get a reference to the generic type `Dictionary<TKey,TValue>`, use ``Type.GetType("System.Collections.Generic.Dictionary`2")``.
 
 ## Specify pointers
 
@@ -191,7 +191,7 @@ SimpleTypeSpec* represents an unmanaged pointer. For example, to get a pointer t
 
 ## Specify references
 
-SimpleTypeSpec & represents a managed pointer or reference. For example, to get a reference to type MyType, use `Type.GetType("MyType &")`. Note that unlike pointers, references are limited to one level.
+SimpleTypeSpec & represents a managed pointer or reference. For example, to get a reference to type MyType, use `Type.GetType("MyType &")`. Unlike pointers, references are limited to one level.
 
 ## Specify arrays
 
@@ -200,15 +200,13 @@ In the BNF Grammar, ReflectionEmitDimension only applies to incomplete type defi
 Arrays are accessed in reflection by specifying the rank of the array:
 
 - `Type.GetType("MyArray[]")` gets a single-dimension array with 0 lower bound.
-
 - `Type.GetType("MyArray[*]")` gets a single-dimension array with unknown lower bound.
 - `Type.GetType("MyArray[][]")` gets a two-dimensional array's array.
-
 - `Type.GetType("MyArray[*,*]")` and `Type.GetType("MyArray[,]")` gets a rectangular two-dimensional array with unknown lower bounds.
 
-Note that from a runtime point of view, `MyArray[] != MyArray[*]`, but for multidimensional arrays, the two notations are equivalent. That is, `Type.GetType("MyArray [,]") == Type.GetType("MyArray[*,*]")` evaluates to **true**.
+From a runtime point of view, `MyArray[] != MyArray[*]`, but for multidimensional arrays, the two notations are equivalent. That is, `Type.GetType("MyArray [,]") == Type.GetType("MyArray[*,*]")` evaluates to **true**.
 
-For **ModuleBuilder.GetType**, `MyArray[0..5]` indicates a single-dimension array with size 6, lower bound 0. `MyArray[4…]` indicates a single-dimension array of unknown size and lower bound 4.
+For `ModuleBuilder.GetType`, `MyArray[0..5]` indicates a single-dimension array with size 6, lower bound 0. `MyArray[4…]` indicates a single-dimension array of unknown size and lower bound 4.
 
 ## See also
 
@@ -218,4 +216,4 @@ For **ModuleBuilder.GetType**, `MyArray[0..5]` indicates a single-dimension arra
 - <xref:System.Type.FullName%2A?displayProperty=nameWithType>
 - <xref:System.Type.GetType%2A?displayProperty=nameWithType>
 - <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=nameWithType>
-- [Viewing Type Information](viewing-type-information.md)
+- [View type information](viewing-type-information.md)

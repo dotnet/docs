@@ -1428,8 +1428,6 @@ items:
                 href: reflection-and-generic-types.md
               - name: "How to: Examine and instantiate generic types with reflection"
                 href: how-to-examine-and-instantiate-generic-types-with-reflection.md
-              - name: Security considerations
-                href: security-considerations-for-reflection.md
               - name: Dynamically load and use types
                 href: dynamically-loading-and-using-types.md
               - name: "How to: Load assemblies into the reflection-only context"
@@ -1465,20 +1463,6 @@ items:
                   href: runtime-libraries/system-reflection-emit-typebuilder.md
                 - name: The DynamicMethod class
                   href: runtime-libraries/system-reflection-emit-dynamicmethod.md
-          - name: Dynamic language runtime
-            href: dynamic-language-runtime-overview.md
-          - name: Dynamic source code generation and compilation
-            items:
-            - name: Overview
-              href: dynamic-source-code-generation-and-compilation.md
-            - name: Use the CodeDOM
-              href: using-the-codedom.md
-            - name: Generate and compile source code from a CodeDOM graph
-              href: generating-and-compiling-source-code-from-a-codedom-graph.md
-            - name: Create an XML documentation file using CodeDOM
-              href: how-to-create-an-xml-documentation-file-using-codedom.md
-            - name: Create a class using CodeDOM
-              href: how-to-create-a-class-using-codedom.md
       - name: Dependency loading
         items:
           - name: Overview

@@ -1,6 +1,6 @@
 ---
 title: "Security Considerations for Reflection"
-description: Learn about security considerations for reflection in .NET. Getting information about types and members is allowed, but accessing members has restrictions.
+description: Learn about security considerations for reflection in .NET Framework. Getting information about types and members is allowed, but accessing members has restrictions.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "permissions [.NET Framework], reflection"
@@ -17,7 +17,6 @@ ms.assetid: 42d9dc2a-8fcc-4ff3-b002-4ff260ef3dc5
 Reflection provides the ability to obtain information about types and members, and to access members (that is, to call methods and constructors, to get and set property values, to add and remove event handlers, and so on). The use of reflection to obtain information about types and members is not restricted. All code can use reflection to perform the following tasks:
 
 - Enumerate types and members, and examine their metadata.
-
 - Enumerate and examine assemblies and modules.
 
 Using reflection to access members, by contrast, is subject to restrictions. Beginning with the .NET Framework 4, only trusted code can use reflection to access security-critical members. Furthermore, only trusted code can use reflection to access nonpublic members that would not be directly accessible to compiled code. Finally, code that uses reflection to access a safe-critical member must have whatever permissions the safe-critical member demands, just as with compiled code.

@@ -51,4 +51,4 @@ Samples used in this article include:
 
 ## Next step
 
-* Use [Azure Load Testing](/azure/load-testing/) to load test your chat app
+* Use [Azure Load Testing](/azure/load-testing/) to load test your chat app.

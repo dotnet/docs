@@ -77,7 +77,7 @@ public static class TypeTestingAndConversionOperators
     private static void AsOperator()
     {
         // <SnippetAsOperator>
-        IEnumerable<int> numbers = [10, 20, 30];
+        IEnumerable<int> numbers = {10, 20, 30};
         IList<int> indexable = numbers as IList<int>;
         if (indexable != null)
         {

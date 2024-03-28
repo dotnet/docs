@@ -42,7 +42,7 @@ ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 
 ## Sample code
 
-Samples used in this article include: 
+Samples used in this article include:
 
 * [.NET chat app with RAG](https://github.com/Azure-Samples/azure-search-openai-demo-csharp)
 * [Load Balancer with Azure API Management](https://github.com/Azure-Samples/openai-apim-lb)

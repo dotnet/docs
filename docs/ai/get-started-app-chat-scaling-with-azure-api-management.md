@@ -49,5 +49,5 @@ Samples used in this article include:
 
 ## Next steps
 
-* [View Azure API Management diagnostic data in Azure Monitor](/azure/api-management/api-management-howto-use-azure-monitor#view-diagnostic-data-in-azure-monitor)
+* [View Azure API Management diagnostic data in Azure Monitor.](/azure/api-management/api-management-howto-use-azure-monitor#view-diagnostic-data-in-azure-monitor)
 * Use [Azure Load Testing](/azure/load-testing/) to load test your chat app

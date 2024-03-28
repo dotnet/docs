@@ -11,7 +11,7 @@ A dynamic assembly is an assembly that is created using the Reflection Emit APIs
 
 The way you create an <xref:System.Reflection.Emit.AssemblyBuilder> instance differs for each implementation, but further steps for defining a module, type, method, or enum, and for writing IL, are quite similar.
 
-## Runnable dynamic assemblies in .NET Core
+## Runnable dynamic assemblies in .NET
 
 To get a runnable <xref:System.Reflection.Emit.AssemblyBuilder> object, use the <xref:System.Reflection.Emit.AssemblyBuilder.DefineDynamicAssembly%2A?displayProperty=nameWithType> method.
 Dynamic assemblies can be created using one of the following access modes:

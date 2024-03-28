@@ -55,7 +55,7 @@ There are four ways a developer can create a cryptography object using the Windo
 </configuration>  
 ```  
   
- You can specify the name of the attribute in the [<cryptoClass\> element](./file-schema/cryptography/cryptoclass-element.md) (the previous example names the attribute `MySHA1Hash`). The value of the attribute in the **\<cryptoClass>** element is a string that the common language runtime uses to find the class. You can use any string that meets the requirements specified in [Specifying Fully Qualified Type Names](../reflection-and-codedom/specifying-fully-qualified-type-names.md).  
+ You can specify the name of the attribute in the [<cryptoClass\> element](./file-schema/cryptography/cryptoclass-element.md) (the previous example names the attribute `MySHA1Hash`). The value of the attribute in the **\<cryptoClass>** element is a string that the common language runtime uses to find the class. You can use any string that meets the requirements specified in [Specifying Fully Qualified Type Names](../../fundamentals/reflection/specifying-fully-qualified-type-names.md).  
   
  Many algorithm names can map to the same class. The [\<nameEntry> element](./file-schema/cryptography/nameentry-element.md) maps a class to one friendly algorithm name. The **name** attribute can be either a string that is used when calling the **System.Security.Cryptography.CryptoConfig.CreateFromName** method or the name of an abstract cryptography class in the <xref:System.Security.Cryptography> namespace. The value of the **class** attribute is the name of the attribute in the **\<cryptoClass>** element.  
   

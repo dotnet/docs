@@ -38,7 +38,7 @@ Adds a listener to the `sharedListeners` collection. `sharedListeners` is a coll
 |Attribute|Description|  
 |---------------|-----------------|  
 |`name`|Required attribute.<br /><br /> Specifies the name of the listener that is used to add the shared listener to a `Listeners` collection.|  
-|`type`|Required attribute.<br /><br /> Specifies the type of the listener. You must use a string that meets the requirements specified in [Specifying Fully Qualified Type Names](../../../reflection-and-codedom/specifying-fully-qualified-type-names.md).|  
+|`type`|Required attribute.<br /><br /> Specifies the type of the listener. You must use a string that meets the requirements specified in [Specifying Fully Qualified Type Names](../../../../fundamentals/reflection/specifying-fully-qualified-type-names.md).|  
 |`initializeData`|Optional attribute.<br /><br /> The string passed to the constructor for the specified class.|  
 |`traceOutputOptions`|Optional attribute.<br/><br/>The string representation of one or more <xref:System.Diagnostics.TraceOptions> enumeration members that indicates the data to be written to the trace output. Multiple items are separated by commas. The default value is "None".|
 

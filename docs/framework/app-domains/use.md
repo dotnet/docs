@@ -31,7 +31,7 @@ Describes how to retrieve setup information from an application domain.
 [How to: Load Assemblies into an Application Domain](how-to-load-assemblies-into-an-application-domain.md)  
 Describes how to load an assembly into an application domain.  
   
-[How to: Obtain Type and Member Information from an Assembly](../reflection-and-codedom/get-type-member-information.md)  
+[How to: Obtain Type and Member Information from an Assembly](../../fundamentals/reflection/get-type-member-information.md)  
 Describes how to retrieve information about an assembly.  
   
 [Shadow Copying Assemblies](shadow-copy-assemblies.md)  
@@ -56,11 +56,11 @@ Provides an overview of the functions performed by assemblies.
 [Programming with Assemblies](../../standard/assembly/index.md)  
 Describes how to create, sign, and set attributes on assemblies.  
   
-[Emitting Dynamic Methods and Assemblies](../reflection-and-codedom/emitting-dynamic-methods-and-assemblies.md)  
+[Emitting Dynamic Methods and Assemblies](../../fundamentals/reflection/emitting-dynamic-methods-and-assemblies.md)  
 Describes how to create dynamic assemblies.  
   
 [Application Domains](application-domains.md)  
 Provides a conceptual overview of application domains.  
   
-[Reflection Overview](../reflection-and-codedom/reflection.md)  
+[Reflection Overview](../../fundamentals/reflection/reflection.md)  
 Describes how to use the **Reflection** class to obtain information about an assembly.

@@ -40,4 +40,4 @@ The data type specified for this enumeration is not part of the [Language Indepe
 ## See also
 
 - [Reflection (Visual Basic)](../../programming-guide/concepts/reflection.md)
-- [Reflection](../../../framework/reflection-and-codedom/reflection.md)
+- [Reflection](../../../fundamentals/reflection/reflection.md)

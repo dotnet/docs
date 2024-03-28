@@ -39,4 +39,4 @@ The data type specified for this member is not part of the [Language Independenc
 
 ## See also
 
-- [Reflection](../../../framework/reflection-and-codedom/reflection.md)
+- [Reflection](../../../fundamentals/reflection/reflection.md)

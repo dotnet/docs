@@ -10,15 +10,15 @@
         },
         {
             "source_path_from_root": "/redirections/proposals/csharp-7.0/local-functions.md",
-            "redirect_url": "/dotnet/csharp/language-reference/language-specification/statements#1264-local-function-declarations"
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/statements#1364-local-function-declarations"
         },
         {
             "source_path_from_root": "/redirections/proposals/csharp-7.0/throw-expression.md",
-            "redirect_url": "/dotnet/csharp/language-reference/language-specification/expressions#1115-the-throw-expression-operator"
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/expressions#1215-the-throw-expression-operator"
         },
         {
             "source_path_from_root": "/redirections/proposals/csharp-7.0/out-var.md",
-            "redirect_url": "/dotnet/csharp/language-reference/language-specification/expressions#1117-declaration-expressions"
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/expressions#1217-declaration-expressions"
         },
         {
             "source_path_from_root": "/redirections/proposals/csharp-7.0/pattern-matching.md",
@@ -34,7 +34,7 @@
         },
         {
             "source_path_from_root": "/redirections/proposals/csharp-7.1/target-typed-default.md",
-            "redirect_url": "/dotnet/csharp/language-reference/language-specification/expressions#11719-default-value-expressions"
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/expressions#12719-default-value-expressions"
         },
         {
             "source_path_from_root": "/redirections/proposals/csharp-7.1/infer-tuple-names.md",
@@ -50,11 +50,11 @@
         },
         {
             "source_path_from_root": "/redirections/proposals/csharp-7.2/non-trailing-named-arguments.md",
-            "redirect_url": "/dotnet/csharp/language-reference/language-specification/expressions#11621-general"
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/expressions#12621-general"
         },
         {
             "source_path_from_root": "/redirections/proposals/csharp-7.2/private-protected.md",
-            "redirect_url": "/dotnet/csharp/language-reference/language-specification/classes#1436-access-modifiers"
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/classes#1536-access-modifiers"
         },
         {
             "source_path_from_root": "/redirections/proposals/csharp-7.2/readonly-ref.md",
@@ -62,7 +62,7 @@
         },
         {
             "source_path_from_root": "/redirections/proposals/csharp-7.2/readonly-struct.md",
-            "redirect_url": "/dotnet/csharp/language-reference/language-specification/structs#1524-struct-interfaces"
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/structs#1624-struct-interfaces"
         },
         {
             "source_path_from_root": "/redirections/proposals/csharp-7.2/span-safety.md",
@@ -70,23 +70,23 @@
         },
         {
             "source_path_from_root": "/redirections/proposals/csharp-7.3/auto-prop-field-attrs.md",
-            "redirect_url": "/dotnet/csharp/language-reference/language-specification/attributes#213-attribute-specification"
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/attributes#223-attribute-specification"
         },
         {
             "source_path_from_root": "/redirections/proposals/csharp-7.3/blittable.md",
-            "redirect_url": "/dotnet/csharp/language-reference/language-specification/classes#1425-type-parameter-constraints"
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/classes#1525-type-parameter-constraints"
         },
         {
             "source_path_from_root": "/redirections/proposals/csharp-7.3/expression-variables-in-initializers.md",
-            "redirect_url": "/dotnet/csharp/language-reference/language-specification/expressions#1117-declaration-expressions"
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/expressions#1217-declaration-expressions"
         },
         {
             "source_path_from_root": "/redirections/proposals/csharp-7.3/improved-overload-candidates.md",
-            "redirect_url": "/dotnet/csharp/language-reference/language-specification/expressions#11642-applicable-function-member"
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/expressions#12642-applicable-function-member"
         },
         {
             "source_path_from_root": "/redirections/proposals/csharp-7.3/indexing-movable-fixed-fields.md",
-            "redirect_url": "/dotnet/csharp/language-reference/language-specification/unsafe-code#2283-fixed-size-buffers-in-expressions"
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/unsafe-code#2383-fixed-size-buffers-in-expressions"
         },
         {
             "source_path_from_root": "/redirections/proposals/csharp-7.3/leading-digit-separator.md",
@@ -94,7 +94,7 @@
         },
         {
             "source_path_from_root": "/redirections/proposals/csharp-7.3/pattern-based-fixed.md",
-            "redirect_url": "/dotnet/csharp/language-reference/language-specification/unsafe-code#227-the-fixed-statement"
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/unsafe-code#237-the-fixed-statement"
         },
         {
             "source_path_from_root": "/redirections/proposals/csharp-7.3/ref-local-reassignment.md",
@@ -106,7 +106,11 @@
         },
         {
             "source_path_from_root": "/redirections/proposals/csharp-7.3/tuple-equality.md",
-            "redirect_url": "/dotnet/csharp/language-reference/language-specification/expressions#111211-tuple-equality-operators"
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/expressions#121211-tuple-equality-operators"
+        },
+        {
+            "source_path_from_root": "/redirections/proposals/csharp-8.0/static-local-functions.md",
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/statements.md#1364-local-function-declarations"
         },
         {
             "source_path_from_root": "/redirections/proposals/csharp-10.0/generic-attributes.md",

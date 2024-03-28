@@ -7,7 +7,7 @@
         int[] array1 = new int[5];
 
         // Declare and set array element values.
-        int[] array2 = [1, 2, 3, 4, 5, 6];
+        int[] array2 = {1, 2, 3, 4, 5, 6}; 
 
         // Declare a two dimensional array.
         int[,] multiDimensionalArray1 = new int[2, 3];
@@ -27,7 +27,7 @@
     {
         // <SingleDimensionalArrayDeclaration>
         int[] array = new int[5];
-        string[] weekDays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+        string[] weekDays = {"Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"};
 
         Console.WriteLine(weekDays[0]);
         Console.WriteLine(weekDays[1]);

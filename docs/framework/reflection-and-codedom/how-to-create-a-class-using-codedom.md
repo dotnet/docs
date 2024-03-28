@@ -109,6 +109,10 @@ The object:
  area = 36.57
 ```
 
+## Compiling the Code
+
+- This code example requires the `FullTrust` permission set to execute successfully.  
+
 ## See also
 
 - [Using the CodeDOM](using-the-codedom.md)

@@ -70,6 +70,10 @@ The code example creates the following XML documentation in the *HelloWorldDoc.x
 </doc>
 ```
 
+## Compile permissions
+
+This code example requires the `FullTrust` permission set to execute successfully.
+
 ## See also
 
 - [Document your code with XML (Visual Basic)](../../visual-basic/programming-guide/program-structure/documenting-your-code-with-xml.md)

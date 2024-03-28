@@ -373,7 +373,7 @@ You can install a recent version of _libgdiplus_ by [adding the Mono repository 
 ===== All versions
 -->
 
-::: zone pivot="os-linux-ubuntu-2310,os-linux-ubuntu-2304,os-linux-ubuntu-2204,os-linux-ubuntu-2004,os-linux-ubuntu-1804,os-linux-ubuntu-1604"
+::: zone pivot="os-linux-ubuntu-2310,os-linux-ubuntu-2204,os-linux-ubuntu-2004,os-linux-ubuntu-1804,os-linux-ubuntu-1604"
 
 ## Unsupported versions
 

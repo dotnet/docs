@@ -151,4 +151,4 @@ ms.assetid: 0f8bf8fa-b993-478f-87ab-1a1a7976d298
 ## See also
 
 - [Security Considerations for Reflection](security-considerations-for-reflection.md)
-- [Emitting Dynamic Methods and Assemblies](emitting-dynamic-methods-and-assemblies.md)
+- [Emitting Dynamic Methods and Assemblies](../../fundamentals/reflection/emitting-dynamic-methods-and-assemblies.md)

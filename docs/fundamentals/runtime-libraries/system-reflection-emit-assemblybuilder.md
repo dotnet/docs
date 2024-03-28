@@ -49,7 +49,7 @@ public void CreateAndRunAssembly(string assemblyPath)
 }
 ```
 
-## Persistable dynamic assemblies in .NET Core
+## Persistable dynamic assemblies in .NET
 
 The <xref:System.Reflection.Emit.AssemblyBuilder.Save%2A?displayProperty=nameWithType> API wasn't originally ported to .NET (Core) because the implementation depended heavily on Windows-specific native code that also wasn't ported. However, because you could only *run* a generated assembly and not *save* it, it was difficult to debug these in-memory assemblies. Other advantages of saving a dynamic assembly to a file are:
 

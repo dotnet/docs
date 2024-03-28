@@ -325,7 +325,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
   dotnet test ~/projects/test1/test1.csproj -p:DefineConstants="DEV"
   ```
 
-  <a id="testtfmsinparallel">
+  <a id="testtfmsinparallel"></>
 
 - Run the tests in the `test1` project, setting the MSBuild `TestTfmsInParallel` property to `false`:
 

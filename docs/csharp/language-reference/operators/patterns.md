@@ -295,7 +295,6 @@ For information about features added in C# 8 and later, see the following featur
 
 ## See also
 
-- [C# reference](../index.md)
 - [C# operators and expressions](index.md)
 - [Pattern matching overview](../../fundamentals/functional/pattern-matching.md)
 - [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](../../fundamentals/tutorials/pattern-matching.md)

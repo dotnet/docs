@@ -164,7 +164,6 @@ For more information, see:
 
 ## See also
 
-- [C# reference](../index.md)
 - [Value types](value-types.md)
 - [Choosing between anonymous and tuple types](../../../standard/base-types/choosing-between-anonymous-and-tuple.md)
 - <xref:System.ValueTuple?displayProperty=nameWithType>

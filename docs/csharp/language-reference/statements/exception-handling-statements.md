@@ -140,7 +140,6 @@ For more information, see the following sections of the [C# language specificati
 
 ## See also
 
-- [C# reference](../index.md)
 - [Exceptions and exception handling](../../fundamentals/exceptions/index.md)
 - [Handling and throwing exceptions in .NET](../../../standard/exceptions/index.md)
 - [throw preferences (style rule IDE0016)](../../../fundamentals/code-analysis/style-rules/ide0016.md)

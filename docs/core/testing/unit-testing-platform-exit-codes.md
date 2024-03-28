@@ -1,15 +1,15 @@
 ---
-title: MSTest runner exit codes
-description: Learn about the various MSTest runner exit codes and their meaning.
+title: Microsoft.Testing.Platform exit codes
+description: Learn about the various Microsoft.Testing.Platform exit codes and their meaning.
 author: nohwnd
 ms.author: jajares
 ms.date: 12/15/2023
 ms.topic: reference
 ---
 
-# MSTest runner exit codes
+# Microsoft.Testing.Platform exit codes
 
-The MSTest runner uses known exit codes to communicate test failure or app errors. Exit codes start at `0` and are non-negative. Consider the following table that details the various exit codes and their corresponding reasons:
+`Microsoft.Testing.Platform` uses known exit codes to communicate test failure or app errors. Exit codes start at `0` and are non-negative. Consider the following table that details the various exit codes and their corresponding reasons:
 
 | Exit code | Details |
 |-----|----------|
@@ -25,10 +25,10 @@ The MSTest runner uses known exit codes to communicate test failure or app error
 | `9` | The exit code `9` indicates that the minimum execution policy for the executed tests was violated. |
 | `10` | The exit code `10` indicates that the test adapter, Testing.Platform Test Framework, MSTest, NUnit, or xUnit, failed to run tests for an infrastructure reason unrelated to the test's self. An example is failing to create a fixture needed by tests. |
 
-To enable verbose logging and troubleshoot issues, see [MSTest runner extensions: Troubleshoot](unit-testing-mstest-runner-extensions.md#troubleshoot).
+To enable verbose logging and troubleshoot issues, see [Microsoft.Testing.Platform extensions: Troubleshoot](unit-testing-platform-extensions.md#troubleshoot).
 
 ## Ignore specific exit codes
 
-MSTest runner is designed to be strict by default but allows for configurability. As such, it's possible for users to decide which exit codes should be ignored (an exit code of `0` will be returned instead of the original exit code).
+`Microsoft.Testing.Platform` is designed to be strict by default but allows for configurability. As such, it's possible for users to decide which exit codes should be ignored (an exit code of `0` will be returned instead of the original exit code).
 
 To ignore specific exit codes, use the `--ignore-exit-code` command line option or the `TESTINGPLATFORM_EXITCODE_IGNORE` environment variable. The valid format accepted is a semi-colon separated list of exit codes to ignore (for example, `--ignore-exit-code 2;3;8`). A common scenario is to consider that test failures shouldn't result in a non-zero exit code (which corresponds to ignoring exit-code `2`).

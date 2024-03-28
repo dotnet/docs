@@ -21,7 +21,7 @@ ms.topic: tutorial
 ---
 # How to: Implement a Component That Supports the Event-based Asynchronous Pattern
 
-If you are writing a class with some operations that may incur noticeable delays, consider giving it asynchronous functionality by implementing the [Event-based Asynchronous Pattern Overview](event-based-asynchronous-pattern-overview.md).  
+If you are writing a class with some operations that may incur noticeable delays, consider giving it asynchronous functionality by implementing the [Event-based Asynchronous Pattern](event-based-asynchronous-pattern-overview.md).  
   
  This walkthrough illustrates how to create a component that implements the Event-based Asynchronous Pattern. It is implemented using helper classes from the <xref:System.ComponentModel?displayProperty=nameWithType> namespace, which ensures that the component works correctly under any application model, including ASP.NET, Console applications and Windows Forms applications. This component is also designable with a <xref:System.Windows.Forms.PropertyGrid> control and your own custom designers.  
   

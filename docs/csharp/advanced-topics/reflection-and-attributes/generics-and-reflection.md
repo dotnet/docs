@@ -10,7 +10,7 @@ helpviewer_keywords:
 
 Because the Common Language Runtime (CLR) has access to generic type information at run time, you can use reflection to obtain information about generic types in the same way as for nongeneric types. For more information, see [Generics in the Runtime](../../programming-guide/generics/generics-in-the-run-time.md).
 
-The <xref:System.Reflection.Emit> namespace also contains new members that support generics. See [How to: Define a Generic Type with Reflection Emit](../../../framework/reflection-and-codedom/how-to-define-a-generic-type-with-reflection-emit.md).
+The <xref:System.Reflection.Emit> namespace also contains new members that support generics. See [How to: Define a Generic Type with Reflection Emit](../../../fundamentals/reflection/how-to-define-a-generic-type-with-reflection-emit.md).
 
 For a list of the invariant conditions for terms used in generic reflection, see the <xref:System.Type.IsGenericType%2A> property remarks:
 
@@ -38,5 +38,5 @@ In addition, members of the <xref:System.Reflection.MethodInfo> class enable run
 ## See also
 
 - [Generics](../../fundamentals/types/generics.md)
-- [Reflection and Generic Types](../../../framework/reflection-and-codedom/reflection-and-generic-types.md)
+- [Reflection and Generic Types](../../../fundamentals/reflection/reflection-and-generic-types.md)
 - [Generics](../../../standard/generics/index.md)

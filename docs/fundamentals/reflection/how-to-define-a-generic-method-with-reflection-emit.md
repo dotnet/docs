@@ -29,52 +29,52 @@ The third procedure shows how to invoke the generic method.
    [!code-csharp[GenericMethodHowTo#20](../../../samples/snippets/csharp/VS_Snippets_CLR/GenericMethodHowTo/CS/source.cs#20)]
    [!code-vb[GenericMethodHowTo#20](../../../samples/snippets/visualbasic/VS_Snippets_CLR/GenericMethodHowTo/VB/source.vb#20)]
 
-2. Define a dynamic assembly and a dynamic module to contain the type the generic method belongs to. In this case, the assembly has only one module, named `DemoMethodBuilder1`, and the module name is the same as the assembly name plus an extension. In this example, the assembly is saved to disk and also executed, so <xref:System.Reflection.Emit.AssemblyBuilderAccess.RunAndSave?displayProperty=nameWithType> is specified. You can use the [Ildasm.exe (IL Disassembler)](../../framework/tools/ildasm-exe-il-disassembler.md) to examine DemoMethodBuilder1.dll and to compare it to the common intermediate language (CIL) for the method shown in step 1.
+1. Define a dynamic assembly and a dynamic module to contain the type the generic method belongs to. In this case, the assembly has only one module, named `DemoMethodBuilder1`, and the module name is the same as the assembly name plus an extension. In this example, the assembly is saved to disk and also executed, so <xref:System.Reflection.Emit.AssemblyBuilderAccess.RunAndSave?displayProperty=nameWithType> is specified. You can use the [Ildasm.exe (IL Disassembler)](../../framework/tools/ildasm-exe-il-disassembler.md) to examine DemoMethodBuilder1.dll and to compare it to the common intermediate language (CIL) for the method shown in step 1.
 
    [!code-csharp[GenericMethodHowTo#2](../../../samples/snippets/csharp/VS_Snippets_CLR/GenericMethodHowTo/CS/source.cs#2)]
    [!code-vb[GenericMethodHowTo#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/GenericMethodHowTo/VB/source.vb#2)]
 
-3. Define the type the generic method belongs to. The type does not have to be generic. A generic method can belong to either a generic or nongeneric type. In this example, the type is a class, is not generic, and is named `DemoType`.
+1. Define the type the generic method belongs to. The type does not have to be generic. A generic method can belong to either a generic or nongeneric type. In this example, the type is a class, is not generic, and is named `DemoType`.
 
    [!code-csharp[GenericMethodHowTo#3](../../../samples/snippets/csharp/VS_Snippets_CLR/GenericMethodHowTo/CS/source.cs#3)]
    [!code-vb[GenericMethodHowTo#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/GenericMethodHowTo/VB/source.vb#3)]
 
-4. Define the generic method. If the types of a generic method's formal parameters are specified by generic type parameters of the generic method, use the <xref:System.Reflection.Emit.TypeBuilder.DefineMethod%28System.String%2CSystem.Reflection.MethodAttributes%29> method overload to define the method. The generic type parameters of the method are not yet defined, so you cannot specify the types of the method's formal parameters in the call to <xref:System.Reflection.Emit.TypeBuilder.DefineMethod%2A>. In this example, the method is named `Factory`. The method is public and `static` (`Shared` in Visual Basic).
+1. Define the generic method. If the types of a generic method's formal parameters are specified by generic type parameters of the generic method, use the <xref:System.Reflection.Emit.TypeBuilder.DefineMethod%28System.String%2CSystem.Reflection.MethodAttributes%29> method overload to define the method. The generic type parameters of the method are not yet defined, so you cannot specify the types of the method's formal parameters in the call to <xref:System.Reflection.Emit.TypeBuilder.DefineMethod%2A>. In this example, the method is named `Factory`. The method is public and `static` (`Shared` in Visual Basic).
 
    [!code-csharp[GenericMethodHowTo#4](../../../samples/snippets/csharp/VS_Snippets_CLR/GenericMethodHowTo/CS/source.cs#4)]
    [!code-vb[GenericMethodHowTo#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/GenericMethodHowTo/VB/source.vb#4)]
 
-5. Define the generic type parameters of `DemoMethod` by passing an array of strings containing the names of the parameters to the <xref:System.Reflection.Emit.MethodBuilder.DefineGenericParameters%2A?displayProperty=nameWithType> method. This makes the method a generic method. The following code makes `Factory` a generic method with type parameters `TInput` and `TOutput`. To make the code easier to read, variables with these names are created to hold the <xref:System.Reflection.Emit.GenericTypeParameterBuilder> objects representing the two type parameters.
+1. Define the generic type parameters of `DemoMethod` by passing an array of strings containing the names of the parameters to the <xref:System.Reflection.Emit.MethodBuilder.DefineGenericParameters%2A?displayProperty=nameWithType> method. This makes the method a generic method. The following code makes `Factory` a generic method with type parameters `TInput` and `TOutput`. To make the code easier to read, variables with these names are created to hold the <xref:System.Reflection.Emit.GenericTypeParameterBuilder> objects representing the two type parameters.
 
    [!code-csharp[GenericMethodHowTo#5](../../../samples/snippets/csharp/VS_Snippets_CLR/GenericMethodHowTo/CS/source.cs#5)]
    [!code-vb[GenericMethodHowTo#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/GenericMethodHowTo/VB/source.vb#5)]
 
-6. Optionally add special constraints to the type parameters. Special constraints are added using the <xref:System.Reflection.Emit.GenericTypeParameterBuilder.SetGenericParameterAttributes%2A> method. In this example, `TOutput` is constrained to be a reference type and to have a parameterless constructor.
+1. Optionally add special constraints to the type parameters. Special constraints are added using the <xref:System.Reflection.Emit.GenericTypeParameterBuilder.SetGenericParameterAttributes%2A> method. In this example, `TOutput` is constrained to be a reference type and to have a parameterless constructor.
 
    [!code-csharp[GenericMethodHowTo#6](../../../samples/snippets/csharp/VS_Snippets_CLR/GenericMethodHowTo/CS/source.cs#6)]
    [!code-vb[GenericMethodHowTo#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/GenericMethodHowTo/VB/source.vb#6)]
 
-7. Optionally add class and interface constraints to the type parameters. In this example, type parameter `TOutput` is constrained to types that implement the `ICollection(Of TInput)` (`ICollection<TInput>` in C#) interface. This ensures that the <xref:System.Collections.Generic.ICollection%601.Add%2A> method can be used to add elements.
+1. Optionally add class and interface constraints to the type parameters. In this example, type parameter `TOutput` is constrained to types that implement the `ICollection(Of TInput)` (`ICollection<TInput>` in C#) interface. This ensures that the <xref:System.Collections.Generic.ICollection%601.Add%2A> method can be used to add elements.
 
    [!code-csharp[GenericMethodHowTo#7](../../../samples/snippets/csharp/VS_Snippets_CLR/GenericMethodHowTo/CS/source.cs#7)]
    [!code-vb[GenericMethodHowTo#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/GenericMethodHowTo/VB/source.vb#7)]
 
-8. Define the formal parameters of the method, using the <xref:System.Reflection.Emit.MethodBuilder.SetParameters%2A> method. In this example, the `Factory` method has one parameter, an array of `TInput`. This type is created by calling the <xref:System.Type.MakeArrayType%2A> method on the <xref:System.Reflection.Emit.GenericTypeParameterBuilder> that represents `TInput`. The argument of <xref:System.Reflection.Emit.MethodBuilder.SetParameters%2A> is an array of <xref:System.Type> objects.
+1. Define the formal parameters of the method, using the <xref:System.Reflection.Emit.MethodBuilder.SetParameters%2A> method. In this example, the `Factory` method has one parameter, an array of `TInput`. This type is created by calling the <xref:System.Type.MakeArrayType%2A> method on the <xref:System.Reflection.Emit.GenericTypeParameterBuilder> that represents `TInput`. The argument of <xref:System.Reflection.Emit.MethodBuilder.SetParameters%2A> is an array of <xref:System.Type> objects.
 
    [!code-csharp[GenericMethodHowTo#8](../../../samples/snippets/csharp/VS_Snippets_CLR/GenericMethodHowTo/CS/source.cs#8)]
    [!code-vb[GenericMethodHowTo#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR/GenericMethodHowTo/VB/source.vb#8)]
 
-9. Define the return type for the method, using the <xref:System.Reflection.Emit.MethodBuilder.SetReturnType%2A> method. In this example, an instance of `TOutput` is returned.
+1. Define the return type for the method, using the <xref:System.Reflection.Emit.MethodBuilder.SetReturnType%2A> method. In this example, an instance of `TOutput` is returned.
 
    [!code-csharp[GenericMethodHowTo#9](../../../samples/snippets/csharp/VS_Snippets_CLR/GenericMethodHowTo/CS/source.cs#9)]
    [!code-vb[GenericMethodHowTo#9](../../../samples/snippets/visualbasic/VS_Snippets_CLR/GenericMethodHowTo/VB/source.vb#9)]
 
-10. Emit the method body, using <xref:System.Reflection.Emit.ILGenerator>. For details, see the accompanying procedure for emitting the method body.
+1. Emit the method body, using <xref:System.Reflection.Emit.ILGenerator>. For details, see the accompanying procedure for emitting the method body.
 
    > [!IMPORTANT]
    > When you emit calls to methods of generic types, and the type arguments of those types are type parameters of the generic method, you must use the `static`<xref:System.Reflection.Emit.TypeBuilder.GetConstructor%28System.Type%2CSystem.Reflection.ConstructorInfo%29>, <xref:System.Reflection.Emit.TypeBuilder.GetMethod%28System.Type%2CSystem.Reflection.MethodInfo%29>, and <xref:System.Reflection.Emit.TypeBuilder.GetField%28System.Type%2CSystem.Reflection.FieldInfo%29> method overloads of the <xref:System.Reflection.Emit.TypeBuilder> class to obtain constructed forms of the methods. The accompanying procedure for emitting the method body demonstrates this.
 
-11. Complete the type that contains the method and save the assembly. The accompanying procedure for invoking the generic method shows two ways to invoke the completed method.
+1. Complete the type that contains the method and save the assembly. The accompanying procedure for invoking the generic method shows two ways to invoke the completed method.
 
    [!code-csharp[GenericMethodHowTo#14](../../../samples/snippets/csharp/VS_Snippets_CLR/GenericMethodHowTo/CS/source.cs#14)]
    [!code-vb[GenericMethodHowTo#14](../../../samples/snippets/visualbasic/VS_Snippets_CLR/GenericMethodHowTo/VB/source.vb#14)]

@@ -143,7 +143,7 @@ Visual C++, C#, and Visual Basic all provide full support for defining and using
 |[Covariance and Contravariance](covariance-and-contravariance.md)|Describes covariance and contravariance in generic type parameters.|
 |[Commonly Used Collection Types](../collections/commonly-used-collection-types.md)|Provides summary information about the characteristics and usage scenarios of the collection types in .NET, including generic types.|
 |[When to Use Generic Collections](../collections/when-to-use-generic-collections.md)|Describes general rules for determining when to use generic collection types.|
-|[How to: Define a Generic Type with Reflection Emit](../../framework/reflection-and-codedom/how-to-define-a-generic-type-with-reflection-emit.md)|Explains how to generate dynamic assemblies that include generic types and methods.|
+|[How to: Define a Generic Type with Reflection Emit](../../fundamentals/reflection/how-to-define-a-generic-type-with-reflection-emit.md)|Explains how to generate dynamic assemblies that include generic types and methods.|
 |[Generic Types in Visual Basic](../../visual-basic/programming-guide/language-features/data-types/generic-types.md)|Describes the generics feature for Visual Basic users, including how-to topics for using and defining generic types.|
 |[Introduction to Generics](../../csharp/fundamentals/types/generics.md)|Provides an overview of defining and using generic types for C# users.|
 |[Overview of Generics in Visual C++](/cpp/windows/overview-of-generics-in-visual-cpp)|Describes the generics feature for C++ users, including the differences between generics and templates.|

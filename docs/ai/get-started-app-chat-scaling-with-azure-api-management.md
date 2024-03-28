@@ -47,7 +47,7 @@ Samples used in this article include:
 * [.NET chat app with RAG](https://github.com/Azure-Samples/azure-search-openai-demo-csharp)
 * [Load Balancer with Azure API Management](https://github.com/Azure-Samples/openai-apim-lb)
 
-## Next step
+## Next steps
 
 * [View Azure API Management diagnostic data in Azure Monitor](/azure/api-management/api-management-howto-use-azure-monitor#view-diagnostic-data-in-azure-monitor)
 * Use [Azure Load Testing](/azure/load-testing/) to load test your chat app.

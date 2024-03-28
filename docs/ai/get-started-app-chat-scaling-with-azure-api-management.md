@@ -13,7 +13,7 @@ ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 
 ## Prerequisites
 
-* Azure subscription.  [Create one for free](https://azure.microsoft.com/free/ai-services?azure-portal=true)
+* An Azure subscription. [Create one for free.](https://azure.microsoft.com/free/ai-services?azure-portal=true)
 * Access granted to Azure OpenAI in the desired Azure subscription.
 
     Currently, access to this service is granted only by application. You can apply for access to Azure OpenAI by completing the [form](https://aka.ms/oai/access).
@@ -50,4 +50,4 @@ Samples used in this article include:
 ## Next step
 
 * [View Azure API Management diagnostic data in Azure Monitor](/azure/api-management/api-management-howto-use-azure-monitor#view-diagnostic-data-in-azure-monitor)
-* Use [Azure Load Testing](/azure/load-testing/) to load test your chat app
+* Use [Azure Load Testing](/azure/load-testing/) to load test your chat app.

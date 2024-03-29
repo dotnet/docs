@@ -234,8 +234,8 @@ The following table shows the event information:
 |`MethodNameSpace`|`win:UnicodeString`|Full namespace name associated with the method.|
 |`MethodName`|`win:UnicodeString`|Full class name associated with the method.|
 |`MethodSignature`|`win:UnicodeString`|Signature of the method (comma-separated list of type names).|
-|`ReJITID`|`win:UInt64`|ReJIT ID of the method.|
 |`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.|
+|`ReJITID`|`win:UInt64`|ReJIT ID of the method.|
 
 ## MethodJittingStarted_V1 event
 

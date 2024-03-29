@@ -24,8 +24,7 @@ Today, you can use .NET to access models built by OpenAI, using either the Azure
 | [Microsoft.SemanticKernel](https://www.nuget.org/packages/Microsoft.SemanticKernel/)   | [OpenAI models](https://platform.openai.com/docs/models/overview)<br/>[Azure OpenAI supported models](https://learn.microsoft.com/azure/ai-services/openai/concepts/models)                   | [Semantic Kernel](https://github.com/microsoft/semantic-kernel) (Microsoft)                                 | [docs](https://learn.microsoft.com/semantic-kernel/)     |
 | [Azure OpenAI SDK](https://www.nuget.org/packages/Azure.AI.OpenAI/)                    | [Azure OpenAI supported models](https://learn.microsoft.com/azure/ai-services/openai/concepts/models)                                     | [Azure SDK for .NET](https://github.com/Azure/azure-sdk-for-net) (Microsoft)                                | [docs](https://learn.microsoft.com/azure/ai-services/openai/)                                               |
 
-
-# Connect your data using vector stores
+## Connect your data using vector stores
 
 To increase relevancy and tailor AI applications for your own data, you'll likely need to work with a vector store. Many services provide a native SDK for .NET, which you can use directly. You can also use Semantic Kernel, which provides an extensible component model that allows you to try different vector stores without needing to learn each SDK.
 
@@ -35,10 +34,6 @@ To increase relevancy and tailor AI applications for your own data, you'll likel
 | [Azure.Search.Documents](https://www.nuget.org/packages/Azure.Search.Documents/)       | Azure AI Search                   | [Azure SDK for .NET](https://github.com/Azure/azure-sdk-for-net) (Microsoft)                                | [docs](https://learn.microsoft.com/dotnet/api/overview/azure/search.documents-readme?view=azure-dotnet)     |
 | [Milvus.Client](https://www.nuget.org/packages/Milvus.Client)                          | Milvus Vector Database            | [Milvus](https://milvus.io/)                                                                                | [docs](https://milvus.io/docs/v2.2.x/install-csharp.md)                                                           |
 | [Qdrant.Client](https://www.nuget.org/packages/Qdrant.Client)                          | Qdrant Vector Database            | [Qdrant](https://qdrant.tech)                                                                               | [docs](https://github.com/qdrant/qdrant-dotnet)                                                                   |
-
-## Deploying to Azure
-
-## Azure AI Services
 
 ## Looking for other options? Check the .NET + AI open source community
 

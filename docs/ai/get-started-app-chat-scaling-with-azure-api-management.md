@@ -1,7 +1,7 @@
 ---
 title: Scale Azure OpenAI for .NET with Azure API Management
 description: Learn how to add load balancing to your .NET application to extend the chat app beyond the Azure OpenAI token and model quota limits with Azure API Management.
-ms.date: 03/28/2024
+ms.date: 03/29/2024
 ms.topic: get-started
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 # CustomerIntent: As a .NET developer new to Azure OpenAI, I want to scale my Azure OpenAI capacity to avoid rate limit errors with Azure API Management.

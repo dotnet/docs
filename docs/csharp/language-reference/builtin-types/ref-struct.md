@@ -69,5 +69,4 @@ For more information about `ref` fields, see the [Low-level struct improvements]
 
 ## See also
 
-- [C# reference](../index.md)
 - [The C# type system](../../fundamentals/types/index.md)

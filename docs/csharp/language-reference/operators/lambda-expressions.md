@@ -334,7 +334,6 @@ For more information about these features, see the following feature proposal no
 ## See also
 
 - [Use local function instead of lambda (style rule IDE0039)](../../../fundamentals/code-analysis/style-rules/ide0039.md)
-- [C# reference](../index.md)
 - [C# operators and expressions](index.md)
 - [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/)
 - [Expression trees](../../advanced-topics/expression-trees/index.md)

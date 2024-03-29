@@ -78,7 +78,6 @@ For more information, see the [Interfaces](~/_csharpstandard/standard/interfaces
 
 ## See also
 
-- [C# Reference](../index.md)
 - [C# Keywords](index.md)
 - [Reference Types](reference-types.md)
 - [Interfaces](../../fundamentals/types/interfaces.md)

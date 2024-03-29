@@ -68,6 +68,5 @@ For more information about a target-typed `new` expression, see the [feature pro
 
 ## See also
 
-- [C# reference](../index.md)
 - [C# operators and expressions](index.md)
 - [Object and collection initializers](../../programming-guide/classes-and-structs/object-and-collection-initializers.md)

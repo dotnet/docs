@@ -234,8 +234,8 @@ The following table shows the event information:
 |`MethodNameSpace`|`win:UnicodeString`|Full namespace name associated with the method.|
 |`MethodName`|`win:UnicodeString`|Full class name associated with the method.|
 |`MethodSignature`|`win:UnicodeString`|Signature of the method (comma-separated list of type names).|
-|`ReJITID`|`win:UInt64`|ReJIT ID of the method.|
 |`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.|
+|`ReJITID`|`win:UInt64`|ReJIT ID of the method.|
 
 ## MethodJittingStarted_V1 event
 
@@ -374,7 +374,7 @@ The following table shows the keyword and level:
 |`MethodID`|`win:UInt64`|Unique identifier of a method.|
 |`ReJITID`|`win:UInt64`|The ReJIT ID of the method.|
 |`MethodExtent`|`win:UInt8`|The extent for the jitted method.|
-|`CountOfMapEntries`|`win:UInt8`|Number of map entries|
+|`CountOfMapEntries`|`win:UInt16`|Number of map entries|
 |`ILOffsets`|`win:UInt32`|The IL offset.|
 |`NativeOffsets`|`win:UInt32`|The native code offset.|
 |`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.|

@@ -374,7 +374,7 @@ The following table shows the keyword and level:
 |`MethodID`|`win:UInt64`|Unique identifier of a method.|
 |`ReJITID`|`win:UInt64`|The ReJIT ID of the method.|
 |`MethodExtent`|`win:UInt8`|The extent for the jitted method.|
-|`CountOfMapEntries`|`win:UInt8`|Number of map entries|
+|`CountOfMapEntries`|`win:UInt16`|Number of map entries|
 |`ILOffsets`|`win:UInt32`|The IL offset.|
 |`NativeOffsets`|`win:UInt32`|The native code offset.|
 |`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.|

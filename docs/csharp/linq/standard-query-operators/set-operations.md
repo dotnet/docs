@@ -20,7 +20,7 @@ The following example depicts the behavior of the <xref:System.Linq.Enumerable.D
 
 :::image type="content" source="./media/set-operations/distinct-method-behavior.png" alt-text="Graphic showing the behavior of Distinct()":::
 
-:::code language="csharp;" source="snippets/standard-query-operators/SetOperations.cs" id="Distinct":::
+:::code language="csharp" source="snippets/standard-query-operators/SetOperations.cs" id="Distinct":::
 
 The [`DistinctBy`](xref:System.Linq.Enumerable.DistinctBy%2A?displayProperty=nameWithType) is an alternative approach to `Distinct` that takes a `keySelector`. The `keySelector` is used as the comparative discriminator of the source type. In the following code, words are discriminated based on their `Length`, and the first word of each length is displayed:
 

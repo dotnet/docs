@@ -16,6 +16,16 @@ This error occurs when the build tools can't find the version of the .NET SDK th
 
 The following sections describe some of the possible reasons for this error. Check each one and see which one applies to you. Keep in mind that when making changes to the environment or the configuration files, you might have to restart command windows, restart Visual Studio, or reboot your machine, for your changes to take effect.
 
+### Solution
+
+If you encounter NETSDK1045 when using Visual Studio 22 Release 17.6.3, consider upgrading to version 17.9.3 or later. One user reported that upgrading to 17.9.3 resolved the issue for them. This may indicate that the problem is addressed or mitigated in later releases of Visual Studio. To ensure you have the latest updates and bug fixes, we recommend keeping your Visual Studio installation up to date. 
+
+For more information on updating Visual Studio, refer to the [Visual Studio documentation](https://docs.microsoft.com/en-us/visualstudio/install/update-visual-studio).
+
+If you continue to experience issues after updating Visual Studio, please follow the troubleshooting steps outlined in this document or reach out to our community for further assistance.
+
+
+
 ## .NET SDK version
 
 Open the project file (.csproj, .vbproj, or .fsproj) and check the target framework. This is the version of the framework that your app is trying to use.

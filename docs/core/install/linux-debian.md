@@ -96,7 +96,15 @@ This section provides information on common errors you may get while using APT t
 
 ### Unable to locate \\ Some packages could not be installed
 
-[!INCLUDE [package-manager-failed-to-find-deb](includes/package-manager-failed-to-find-deb.md)]
+[!INCLUDE [package-manager-failed-to-find-deb-intro](includes/package-manager-failed-to-find-deb-intro.md)]
+
+If you're using Debian 12 or later, try the following commands:
+
+[!INCLUDE [package-manager-failed-to-find-deb-new](includes/package-manager-failed-to-find-deb-new.md)]
+
+If you're using a Debian version prior to 12, try the following commands:
+
+[!INCLUDE [package-manager-failed-to-find-deb-classic](includes/package-manager-failed-to-find-deb-classic.md)]
 
 ### Failed to fetch
 

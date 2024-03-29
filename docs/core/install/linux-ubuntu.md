@@ -225,7 +225,15 @@ This section provides information on common errors you might get while using APT
 > [!NOTE]
 > This information only applies when .NET is installed from the Microsoft package feed.
 
-[!INCLUDE [package-manager-failed-to-find-deb](includes/package-manager-failed-to-find-deb.md)]
+[!INCLUDE [package-manager-failed-to-find-deb-intro](includes/package-manager-failed-to-find-deb-intro.md)]
+
+If you're using Ubuntu 23.10 or later, try the following commands:
+
+[!INCLUDE [package-manager-failed-to-find-deb-new](includes/package-manager-failed-to-find-deb-new.md)]
+
+If you're using an Ubuntu version prior to 23.10, try the following commands:
+
+[!INCLUDE [package-manager-failed-to-find-deb-classic](includes/package-manager-failed-to-find-deb-classic.md)]
 
 #### Failed to fetch
 

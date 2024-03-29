@@ -10,19 +10,19 @@ _Released January 9, 2024_
 
 This security update addresses a security feature bypass vulnerability detailed in [CVE 2023-36042](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2023-36042).
 
-#### CVE-2024-0056 – .NET Framework Security Feature Bypass Vulnerability
+#### CVE-2024-0056 – Security Feature Bypass Vulnerability
 
 Microsoft is releasing this security advisory to provide information about a vulnerability in .NET's System.Data.SqlClient and Microsoft.Data.SqlClient NuGet Packages. This advisory also provides guidance on what developers can do to update their applications to address this vulnerability. A vulnerability exists in the Microsoft.Data.SqlClient and System.Data.SqlClient SQL Data provider where an attacker can perform an AiTM (adversary-in-the-middle) attack between the SQL client and the SQL server. This may allow the attacker to steal authentication credentials intended for the database server, even if the connection is established over an encrypted channel like TLS. This security update addresses a security feature bypass vulnerability detailed in [CVE 2024-0056](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2024-0056).
 
-#### CVE-2024-0057 – .NET Framework Security Feature Vulnerability
+#### CVE-2024-0057 – Security Feature Vulnerability
 
 Microsoft is releasing this security advisory to provide information about a vulnerability in .NET 6.0, .NET 7.0 and .NET 8.0 . This advisory also provides guidance on what developers can do to update their applications to address this vulnerability. A security feature bypass vulnerability exists when Microsoft .NET Framework-based applications use X.509 chain building APIs but do not completely validate the X.509 certificate due to a logic flaw. An attacker could present an arbitrary untrusted certificate with malformed signatures, triggering a bug in the framework. The framework will correctly report that X.509 chain building failed, but it will return an incorrect reason code for the failure. Applications which utilize this reason code to make their own chain building trust decisions may inadvertently treat this scenario as a successful chain build. This could allow an adversary to subvert the app's typical authentication logic. This security update addresses an elevation of privilege vulnerability detailed in [CVE 2024-0057](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2024-0057).
 
-#### CVE-2024-21312 – .NET Framework Denial of Service Vulnerability
+#### CVE-2024-21312 – Denial of Service Vulnerability
 
 This security update addresses a denial of service vulnerability detailed in [CVE 2024-21312](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2024-21312).
 
-#### .NET Framework Remote Code Execution Vulnerability
+#### Remote Code Execution Vulnerability
 
 This security update addresses a remote code execution vulnerability to HTTP .NET remoting server channel chain.
 

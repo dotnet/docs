@@ -10,7 +10,7 @@ ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 
 .NET can be used with many different libraries and tools that support the development of generative AI applications. This page includes a summary of the services and tools you may need to use in your appliations, with links to learn more about each of them.
 
-**Note:** For .NET developers, we recommend using the [Semantic Kernel SDK]() to orchestrate your calls to large language models (LLMs) and manage interactions with the various services mentioned here. Semantic Kernel makes it easy to work with different services without having to learn a different API for each one.
+**Note:** For .NET developers, we recommend using the [Semantic Kernel SDK](https://learn.microsoft.com/en-us/semantic-kernel/overview/) to orchestrate your calls to large language models (LLMs) and manage interactions with the various services mentioned here. Semantic Kernel makes it easy to work with different services without having to learn a different API for each one.
 
 > [!IMPORTANT]
 > These SDKs and tools are built by a variety of sources. Not all SDKs are maintained by Microsoft. When considering an SDK, be sure to evaluate quality, licensing, support, etc. to ensure they meet your requirements. Also make sure you review each SDK's documentation for detailed version compatibility information.

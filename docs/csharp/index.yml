@@ -26,7 +26,7 @@ highlightedContent:
       itemType: get-started
       url: ./tour-of-csharp/index.md
     # Card
-    - title: C# Fundamentals
+    - title: C# fundamentals
       itemType: concept
       url: ./fundamentals/program-structure/index.md
     # Card
@@ -38,7 +38,7 @@ highlightedContent:
       itemType: video
       url: https://aka.ms/dotnet/beginnervideos/learn/csharp
     # Card
-    - title: C# Learning paths
+    - title: C# learning paths
       itemType: training
       url: https://learn.microsoft.com/collections/yz26f8y64n7k07
     # Card
@@ -70,7 +70,7 @@ productDirectory:
         - url: https://aka.ms/csharp-certification
           text: Foundational C# Certification
 
-    - title: C# Fundamentals
+    - title: C# fundamentals
       # imageSrc should be square in ratio with no white space
       imageSrc: ../media/dotnet-bot.svg
       links:
@@ -131,10 +131,10 @@ conceptualContent:
           links:
             - url: ./language-reference/index.yml
               itemType: reference
-              text: C# Language reference
+              text: C# language reference
             - url: ./language-reference/builtin-types/value-types.md
               itemType: reference
-              text: Builtin types
+              text: Built-in types
             - url: ./language-reference/keywords/index.md
               itemType: reference
               text: Keywords
@@ -176,7 +176,7 @@ conceptualContent:
               text: Standard and specifications
             - url: ./specification/overview.md
               itemType: reference
-              text: linktext1
+              text: The specification process
             - url: ../../_csharpstandard/standard/README.md
               itemType: reference
               text: C# draft standard
@@ -187,7 +187,7 @@ conceptualContent:
 # tools section (Optional; Remove if not applicable.)
 tools:
   title: Build C# apps with the Visual Studio family
-  summary: Choose Visual Studio or VS Code to build your C# applications.
+  summary: Choose Visual Studio or Visual Studio Code to build your C# applications.
   items:
     # Card
     - title: Visual Studio
@@ -279,7 +279,7 @@ additionalContent:
             - url: ../azure/sdk/azure-sdk-for-dotnet.md
               text: Azure SDK for .NET
             - url: ../fsharp/using-fsharp-on-azure/deploying-and-managing.md
-              text: Deploying Azure Resources with F#
+              text: Deploy Azure resources with F#
         # Card
         - title: Machine learning and AI
           links:
@@ -290,7 +290,7 @@ additionalContent:
             - url: /azure/machine-learning
               text: Azure Machine Learning
             - url: ../fsharp/scenarios/machine-learning.md
-              text: F# for Machine Leaning
+              text: F# for machine learning
         # Card
         - title: Game development
           links:
@@ -306,7 +306,7 @@ additionalContent:
         - title: Internet of things (IoT)
           links:
             - url: ../iot/index.yml
-              text: .NET IoT Libraries
+              text: .NET IoT libraries
             - url: ../iot/quickstarts/sensehat.md
               text: Get started in 5 minutes
             - url: ../iot/tutorials/blink-led.md

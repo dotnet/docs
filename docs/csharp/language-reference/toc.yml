@@ -1,5 +1,5 @@
 items:
-- name: C# Language reference
+- name: C# language reference
   items:
   - name: Overview
     displayName: language reference
@@ -79,15 +79,15 @@ items:
       href: ./keywords/index.md
     - name: Modifiers
       items:
-      - name: Access Modifiers
+      - name: Access modifiers
         items:
         - name: Quick reference
           href: ./keywords/access-modifiers.md
-        - name: Accessibility Levels
+        - name: Accessibility levels
           href: ./keywords/accessibility-levels.md
-        - name: Accessibility Domain
+        - name: Accessibility domain
           href: ./keywords/accessibility-domain.md
-        - name: Restrictions on Using Accessibility Levels
+        - name: Restrictions on using accessibility levels
           href: ./keywords/restrictions-on-using-accessibility-levels.md
         - name: internal
           href: ./keywords/internal.md
@@ -175,9 +175,9 @@ items:
         href: ./keywords/get.md
       - name: init
         href: ./keywords/init.md
-      - name: partial (Type)
+      - name: partial (type)
         href: ./keywords/partial-type.md
-      - name: partial (Method)
+      - name: partial (method)
         href: ./keywords/partial-method.md
       - name: remove
         href: ./keywords/remove.md
@@ -421,6 +421,7 @@ items:
     items:
     - name: Generate API documentation
       href: ./xmldoc/index.md
+      displayName: xml documentation comments
     - name: Recommended tags
       href: ./xmldoc/recommended-tags.md
     - name: Examples

@@ -75,7 +75,7 @@ As part of an effort to improve containerization performance, new ASP.NET Docker
 
 There is a caveat to be aware of. Since composites have multiple assemblies embedded into one, they have tighter version coupling. Apps can't use custom versions of framework or ASP.NET binaries.
 
-Composite images are available for the Alpine Linux, Ubuntu ("jammy") Chiseled, and Mariner Distroless platforms from the `mcr.microsoft.com/dotnet/nightly/aspnet` repo. The tags are listed with the `-composite` suffix on the [ASP.NET Docker page](https://hub.docker.com/_/microsoft-dotnet-nightly-aspnet).
+Composite images are available for the Alpine Linux, Ubuntu ("jammy") Chiseled, and Mariner Distroless platforms from the `mcr.microsoft.com/dotnet/aspnet` repo. The tags are listed with the `-composite` suffix on the [ASP.NET Docker page](https://hub.docker.com/_/microsoft-dotnet-aspnet).
 
 ## Container publishing
 

@@ -38,7 +38,7 @@ If the version you need isn't installed, find the one you need at the [.NET Down
 
 ### Visual Studio version
 
-The .NET SDK might have been installed with Visual Studio 2022, so upgrading to a later version of Visual Studio might install a later .NET SDK and resolve this error. For more information, see [Update Visual Studio](https://docs.microsoft.com/en-us/visualstudio/install/update-visual-studio).
+The .NET SDK might have been installed with Visual Studio 2022, so upgrading to a later version of Visual Studio might install a later .NET SDK and resolve this error. For more information, see [Update Visual Studio](/visualstudio/install/update-visual-studio).
 
 ## Preview not enabled
 

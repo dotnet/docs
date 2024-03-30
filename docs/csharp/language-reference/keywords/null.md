@@ -23,7 +23,6 @@ The following example demonstrates some behaviors of the `null` keyword:
 
 ## See also
 
-- [C# reference](../index.md)
 - [C# keywords](index.md)
 - [Default values of C# types](../builtin-types/default-values.md)
 - [Nothing (Visual Basic)](../../../visual-basic/language-reference/nothing.md)

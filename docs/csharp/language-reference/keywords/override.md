@@ -43,7 +43,6 @@ For more information about covariant return types, see the [feature proposal not
 
 ## See also
 
-- [C# reference](../index.md)
 - [Inheritance](../../fundamentals/object-oriented/inheritance.md)
 - [C# keywords](index.md)
 - [Modifiers](index.md)

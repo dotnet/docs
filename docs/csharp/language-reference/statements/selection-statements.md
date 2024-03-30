@@ -87,7 +87,6 @@ For more information about patterns, see the [Patterns and pattern matching](~/_
 
 ## See also
 
-- [C# reference](../index.md)
 - [Conditional operator `?:`](../operators/conditional-operator.md)
 - [Logical operators](../operators/boolean-logical-operators.md)
 - [Patterns](../operators/patterns.md)

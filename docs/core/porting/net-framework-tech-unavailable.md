@@ -59,7 +59,7 @@ Windows Workflow Foundation (WF) is not supported in .NET 6+. For an alternative
 - <xref:System.Reflection.Emit.AssemblyBuilderAccess.RunAndSave>
 - <xref:System.Reflection.Emit.AssemblyBuilderAccess.Save>
 
-In .NET 9, a persisted `AssemblyBuilder` was implemented and the <xref:System.Reflection.Emit.AssemblyBuilder.Save%2A?displayProperty=nameWithType> method was added back to the reflection emit library. To learn more about how to use this API, see [System.Reflection.Emit.AssemblyBuilder class](../../fundamentals/runtime-libraries/system-reflection-emit-assemblybuilder.md#persistable-dynamic-assemblies-in-net-core).
+In .NET 9, a persisted `AssemblyBuilder` was implemented and the <xref:System.Reflection.Emit.AssemblyBuilder.Save%2A?displayProperty=nameWithType> method was added back to the reflection emit library. To learn more about how to use this API, see [System.Reflection.Emit.AssemblyBuilder class](../../fundamentals/runtime-libraries/system-reflection-emit-assemblybuilder.md#persistable-dynamic-assemblies-in-net).
 
 For more information, see [dotnet/runtime issue 15704](https://github.com/dotnet/runtime/issues/15704).
 

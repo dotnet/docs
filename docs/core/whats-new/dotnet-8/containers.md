@@ -33,6 +33,8 @@ The default container tag is now `latest`. This default is in line with other to
 
 The container images now use [Debian 12 (Bookworm)](https://wiki.debian.org/DebianBookworm). Debian is the default Linux distro in the .NET container images.
 
+For more information, see [Debian container images upgraded to Debian 12](../../compatibility/containers/8.0/debian-version.md).
+
 ### Non-root user
 
 Images include a `non-root` user. This user makes the images `non-root` capable. To run as `non-root`, add the following line at the end of your Dockerfile (or a similar instruction in your Kubernetes manifests):
@@ -44,6 +46,8 @@ USER app
 .NET 8 adds an environment variable for the UID for the `non-root` user, which is 64198. This environment variable is useful for the Kubernetes `runAsNonRoot` test, which requires that the container user be set via UID and not by name. This [dockerfile](https://github.com/dotnet/dotnet-docker/blob/e5bc76bca49a1bbf9c11e74a590cf6a9fe9dbf2a/samples/aspnetapp/Dockerfile.alpine-non-root#L27) shows an example usage.
 
 The default port also changed from port `80` to `8080`. To support this change, a new environment variable `ASPNETCORE_HTTP_PORTS` is available to make it easier to change ports. The variable accepts a list of ports, which is simpler than the format required by `ASPNETCORE_URLS`. If you change the port back to port `80` using one of these variables, you can't run as `non-root`.
+
+For more information, see [Default ASP.NET Core port changed from 80 to 8080](../../compatibility/containers/8.0/aspnet-port.md) and [New non-root 'app' user in Linux images](../../compatibility/containers/8.0/app-user.md).
 
 ### Chiseled Ubuntu images
 

@@ -33,6 +33,7 @@ You can apply the attributes in the following table to classes and class members
 |<xref:System.Xml.Serialization.XmlRootAttribute>|Public class declarations.|Controls XML serialization of the attribute target as an XML root element. Use the attribute to further specify the namespace and element name.|
 |<xref:System.Xml.Serialization.XmlTextAttribute>|Public properties and fields.|The property or field should be serialized as XML text.|
 |<xref:System.Xml.Serialization.XmlTypeAttribute>|Public class declarations.|The name and namespace of the XML type.|
+|<xref:System.ObsoleteAttribute>|Public properties and fields.|The property or field will be ignored when the containing class is serialized.|
 
  In addition to these attributes, which are all found in the <xref:System.Xml.Serialization> namespace, you can also apply the <xref:System.ComponentModel.DefaultValueAttribute> attribute to a field. The **DefaultValueAttribute** sets the value that will be automatically assigned to the member if no value is specified.
 

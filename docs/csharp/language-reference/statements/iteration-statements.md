@@ -162,6 +162,5 @@ For more information about these features, see the following feature proposal no
 
 ## See also
 
-- [C# reference](../index.md)
 - [Declarations](./declarations.md)
 - [Iterators](../../iterators.md)

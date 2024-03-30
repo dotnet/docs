@@ -22,7 +22,6 @@ The following changes have been made to .NET container images for .NET 8:
 - [Build multi-platform container images](#build-multi-platform-container-images)
 - [ASP.NET composite images](#aspnet-composite-images)
 
-
 ### Non-root user
 
 Images include a `non-root` user. This user makes the images `non-root` capable. To run as `non-root`, add the following line at the end of your Dockerfile (or a similar instruction in your Kubernetes manifests):

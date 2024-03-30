@@ -16,16 +16,6 @@ This error occurs when the build tools can't find the version of the .NET SDK th
 
 The following sections describe some of the possible reasons for this error. Check each one and see which one applies to you. Keep in mind that when making changes to the environment or the configuration files, you might have to restart command windows, restart Visual Studio, or reboot your machine, for your changes to take effect.
 
-### Solution
-
-If you encounter NETSDK1045 when using Visual Studio 22 Release 17.6.3, consider upgrading to version 17.9.3 or later. One user reported that upgrading to 17.9.3 resolved the issue for them. This may indicate that the problem is addressed or mitigated in later releases of Visual Studio. To ensure you have the latest updates and bug fixes, we recommend keeping your Visual Studio installation up to date. 
-
-For more information on updating Visual Studio, refer to the [Visual Studio documentation](https://docs.microsoft.com/en-us/visualstudio/install/update-visual-studio).
-
-If you continue to experience issues after updating Visual Studio, please follow the troubleshooting steps outlined in this document or reach out to our community for further assistance.
-
-
-
 ## .NET SDK version
 
 Open the project file (.csproj, .vbproj, or .fsproj) and check the target framework. This is the version of the framework that your app is trying to use.
@@ -45,6 +35,9 @@ dotnet --list-sdks
 Each version of the .NET SDK is available in both x86 and x64 architecture. The project might be trying to find the .NET SDK for the wrong architecture, or the .NET SDK for the architecture your project needs might not be installed. Check the installation folders for the architecture you need. For example, on Windows, the x86 version of the .NET SDK is installed in *C:\Program Files (x86)\dotnet* and the x64 version is installed in *C:\Program Files\dotnet*. See [How to check that .NET is already installed](../../install/how-to-detect-installed-versions.md) and choose your operating system to find out how to detect what's installed on your machine.
 
 If the version you need isn't installed, find the one you need at the [.NET Downloads](https://dotnet.microsoft.com/download/dotnet) page.
+
+### Visual Studio version
+The .NET SDK might have been installed with Visual Studio 2022, so upgrading to a later version of Visual Studio might install a later .NET SDK and resolve this error. For more information, see [Update Visual Studio](https://docs.microsoft.com/en-us/visualstudio/install/update-visual-studio).
 
 ## Preview not enabled
 

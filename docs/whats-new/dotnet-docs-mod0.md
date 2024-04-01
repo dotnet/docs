@@ -60,12 +60,6 @@ Welcome to what's new in the .NET docs for March 2024. This article lists some o
 
 - [What's new in C# 13](../csharp/whats-new/csharp-13.md)
 
-## Azure SDK for .NET
-
-### New articles
-
-- [Title not found in: #39821](../azure/ai/get-started-app-chat-scaling-with-azure-container-apps.md)
-
 ## .NET Framework
 
 ### Updated articles

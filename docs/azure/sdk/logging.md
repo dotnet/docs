@@ -199,7 +199,7 @@ Using the Azure Service Bus library as an example, complete the following steps:
     dotnet add package Azure.Monitor.OpenTelemetry.AspNetCore
     ```
 
-1. Create or register the Azure SDK library's client - the distro supports both cases
+1. Create or register the Azure SDK library's client - the distro supports both cases.
 
    ```csharp
    await using var client = new ServiceBusClient("<connection_string>");

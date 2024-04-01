@@ -2,7 +2,7 @@
 title: What's new in .NET 9
 description: Learn about the new .NET features introduced in .NET 9.
 titleSuffix: ""
-ms.date: 03/11/2024
+ms.date: 04/09/2024
 ms.topic: overview
 ms.author: gewarren
 author: gewarren
@@ -15,7 +15,7 @@ Learn about the new features in .NET 9 and find links to further documentation.
 
 New for .NET 9, the engineering team posts .NET 9 preview updates on [GitHub Discussions](https://github.com/dotnet/core/discussions). That's a great place to ask questions and provide feedback about the release.
 
-This article has been updated for .NET 9 Preview 2. The following sections describe the updates to the core .NET libraries in .NET 9.
+This article has been updated for .NET 9 Preview 3.
 
 ## .NET runtime
 

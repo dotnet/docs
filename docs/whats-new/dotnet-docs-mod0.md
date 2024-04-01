@@ -71,10 +71,8 @@ Welcome to what's new in the .NET docs for March 2024. This article lists some o
 
 The following people contributed to the .NET docs during this period. Thank you! Learn how to contribute by following the links under "Get involved" in the [what's new landing page](index.yml).
 
-- [Evangelink](https://github.com/Evangelink) - Amaury Levé ![5 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-5-green)
 - [rextor92](https://github.com/rextor92) - Daniel Tsvetkov ![4 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-4-green)
 - [Rageking8](https://github.com/Rageking8) -  ![3 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-3-green)
-- [brianrob](https://github.com/brianrob) - Brian Robbins ![2 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-2-green)
 - [cjvandyk](https://github.com/cjvandyk) - Cornelius J. van Dyk ![2 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-2-green)
 - [engyebrahim](https://github.com/engyebrahim) - Enji Eid ![2 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-2-green)
 - [timdeschryver](https://github.com/timdeschryver) - Tim Deschryver ![2 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-2-green)
@@ -85,7 +83,6 @@ The following people contributed to the .NET docs during this period. Thank you!
 - [ChrisHowd](https://github.com/ChrisHowd) - Chris Howd ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [chuckries](https://github.com/chuckries) - Chuck Ries ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [davide-pi](https://github.com/davide-pi) - Davide Piccinini ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [dbradish-microsoft](https://github.com/dbradish-microsoft) - Delora Bradish ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [Fxplorer](https://github.com/Fxplorer) -  ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [mpidash](https://github.com/mpidash) - Mario Pistrich ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [mszczepaniuk](https://github.com/mszczepaniuk) - Maciej Szczepaniuk ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)

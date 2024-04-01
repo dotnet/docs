@@ -40,13 +40,13 @@ Welcome to what's new in the .NET docs for March 2024. This article lists some o
 - [MSTEST0022: Prefer TestCleanup over Dispose methods](../core/testing/mstest-analyzers/mstest0022.md)
 - [MSTEST0023: Do not negate boolean assertions](../core/testing/mstest-analyzers/mstest0023.md)
 - [MSTEST0024: Do not store TestContext in a static member](../core/testing/mstest-analyzers/mstest0024.md)
+- [MSTEST0016: Test class should have test method](../core/testing/mstest-analyzers/mstest0016.md)
+- [MSTEST0014: DataRow should be valid](../core/testing/mstest-analyzers/mstest0014.md)
+- [MSTEST0015: Test method should not be ignored](../core/testing/mstest-analyzers/mstest0015.md)
 - [MSTest overview](../core/testing/unit-testing-mstest-intro.md)
 - [Microsoft.Testing.Platform overview](../core/testing/unit-testing-platform-intro.md)
 - [Use runsettings with Microsoft.Testing.Platform](../core/testing/unit-testing-platform-runsettings.md)
 - [Microsoft.Testing.Platform and VSTest comparison](../core/testing/unit-testing-platform-vs-vstest.md)
-- [MSTEST0016: Test class should have test method](../core/testing/mstest-analyzers/mstest0016.md)
-- [MSTEST0014: DataRow should be valid](../core/testing/mstest-analyzers/mstest0014.md)
-- [MSTEST0015: Test method should not be ignored](../core/testing/mstest-analyzers/mstest0015.md)
 - [dotnet package search](../core/tools/dotnet-package-search.md)
 
 ### Updated articles

@@ -70,7 +70,6 @@ public class QuantifierExamples
     {
         // <ContainsQuantifier>
 
-        // Determine which market contains fruit names equal 'kiwi'
         IEnumerable<string> names = from student in students
                                     where student.Scores.Contains(95)
                                     select $"{student.FirstName} {student.LastName}: {string.Join(", ", student.Scores.Select(s => s.ToString()))}";

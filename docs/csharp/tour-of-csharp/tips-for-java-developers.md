@@ -1,13 +1,13 @@
 ---
 title: A tour of C# - Tips for Java Developers
 description: Are you new to C#, but experienced in Java? Here's a roadmap of what's familiar, and new features you'll learn in C#, and features in Java that aren't in C#.
-ms.date: 03/22/2024
+ms.date: 04/02/2024
 ---
 # Roadmap for Java developers learning C\#
 
 C# and Java have many similarities. As you learn C#, you can leverage much of the knowledge you already have from programming in Java:
 
-1. ***Similar syntax***:  Both Java and C# are in the C family of languages. That similarity means you can already read and understand C#. There are some differences, but most of the syntax is the same as Java, and C. The curly braces and semicolons are familiar. The control statements like `if`, `else`, `switch` are the same. The looping statements of `for`, `while` and `do`...`while` are same. The same keywords for `class`, `struct`, and `interface` are in both languages. The access modifiers from `public` to `private` are the same. Even many of the builtin types use the same keywords: `int`, `string`, and `double`.
+1. ***Similar syntax***: Both Java and C# are in the C family of languages. That similarity means you can already read and understand C#. There are some differences, but most of the syntax is the same as Java, and C. The curly braces and semicolons are familiar. The control statements like `if`, `else`, `switch` are the same. The looping statements of `for`, `while` and `do`...`while` are same. The same keywords for `class`, `struct`, and `interface` are in both languages. The access modifiers from `public` to `private` are the same. Even many of the builtin types use the same keywords: `int`, `string`, and `double`.
 1. ***Object-oriented paradigm***: Both Java and C# are object-oriented languages. The concepts of polymorphism, abstraction, and encapsulation apply in both languages. Both have added additional constructs, but the core features are still relevant.
 1. ***Strongly typed***: Both Java and C# are strongly typed languages. You declare the data type of variables, either explicitly or implicitly. The compiler enforces type safety. Type-related errors in your code are caught by the compiler, before you run the code.
 1. ***Cross-platform***: Both Java and C# are cross-platform. You can run your development tools on your favorite platform. Your application can run on multiple platforms. Your development platform isn't required to match your target platform.

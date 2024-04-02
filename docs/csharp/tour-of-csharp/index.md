@@ -1,7 +1,7 @@
 ---
 title: A tour of C# - Overview
 description: New to C#? Learn the basics of the language. Start with this overview.
-ms.date: 03/20/2024
+ms.date: 04/02/2024
 ---
 
 # A tour of the C# language

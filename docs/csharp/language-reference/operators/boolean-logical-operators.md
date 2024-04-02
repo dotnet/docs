@@ -197,6 +197,5 @@ For more information, see the following sections of the [C# language specificati
 
 ## See also
 
-- [C# reference](../index.md)
 - [C# operators and expressions](index.md)
 - [Bitwise and shift operators](bitwise-and-shift-operators.md)

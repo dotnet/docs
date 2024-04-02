@@ -56,6 +56,5 @@ The following example shows the distinction between a `private set`, read only, 
 
 ## See also
 
-- [C# Reference](../index.md)
 - [C# Keywords](index.md)
 - [Properties](../../programming-guide/classes-and-structs/properties.md)

@@ -111,7 +111,6 @@ For more information, see the [Interpolated string expressions](~/_csharpstandar
 
 ## See also
 
-- [C# reference](../index.md)
 - [C# special characters](index.md)
 - [Strings](../../programming-guide/strings/index.md)
 - [Standard numeric format strings](../../../standard/base-types/standard-numeric-format-strings.md)

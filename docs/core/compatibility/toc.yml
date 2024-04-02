@@ -8,6 +8,10 @@ items:
     items:
     - name: Overview
       href: 9.0.md
+    - name: ASP.NET Core
+      items:
+      - name: DefaultKeyResolution.ShouldGenerateNewKey has altered meaning
+        href: aspnet-core/9.0/key-resolution.md
     - name: Core .NET libraries
       items:
       - name: Creating type of array of System.Void not allowed
@@ -928,6 +932,10 @@ items:
   items:
   - name: ASP.NET Core
     items:
+    - name: .NET 9
+      items:
+      - name: DefaultKeyResolution.ShouldGenerateNewKey has altered meaning
+        href: aspnet-core/9.0/key-resolution.md
     - name: .NET 8
       items:
       - name: ConcurrencyLimiterMiddleware is obsolete

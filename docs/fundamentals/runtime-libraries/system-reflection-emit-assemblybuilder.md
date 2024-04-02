@@ -11,7 +11,7 @@ A dynamic assembly is an assembly that is created using the Reflection Emit APIs
 
 The way you create an <xref:System.Reflection.Emit.AssemblyBuilder> instance differs for each implementation, but further steps for defining a module, type, method, or enum, and for writing IL, are quite similar.
 
-## Runnable dynamic assemblies in .NET Core
+## Runnable dynamic assemblies in .NET
 
 To get a runnable <xref:System.Reflection.Emit.AssemblyBuilder> object, use the <xref:System.Reflection.Emit.AssemblyBuilder.DefineDynamicAssembly%2A?displayProperty=nameWithType> method.
 Dynamic assemblies can be created using one of the following access modes:
@@ -49,7 +49,7 @@ public void CreateAndRunAssembly(string assemblyPath)
 }
 ```
 
-## Persistable dynamic assemblies in .NET Core
+## Persistable dynamic assemblies in .NET
 
 The <xref:System.Reflection.Emit.AssemblyBuilder.Save%2A?displayProperty=nameWithType> API wasn't originally ported to .NET (Core) because the implementation depended heavily on Windows-specific native code that also wasn't ported. However, because you could only *run* a generated assembly and not *save* it, it was difficult to debug these in-memory assemblies. Other advantages of saving a dynamic assembly to a file are:
 

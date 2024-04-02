@@ -16,24 +16,11 @@ This article describes new features in containers for .NET 8.
 
 The following changes have been made to .NET container images for .NET 8:
 
-- [Generated-image defaults](#generated-image-defaults)
-- [Debian 12](#debian-12)
 - [Non-root user](#non-root-user)
+- [Debian 12](#debian-12)
 - [Chiseled Ubuntu images](#chiseled-ubuntu-images)
 - [Build multi-platform container images](#build-multi-platform-container-images)
 - [ASP.NET composite images](#aspnet-composite-images)
-
-### Generated-image defaults
-
-The new [`non-root` capability](#non-root-user) of the Microsoft .NET containers is now the default, which helps your apps stay secure-by-default. Change this default at any time by setting your own `ContainerUser`.
-
-The default container tag is now `latest`. This default is in line with other tooling in the containers space and makes containers easier to use in inner development loops.
-
-### Debian 12
-
-The container images now use [Debian 12 (Bookworm)](https://wiki.debian.org/DebianBookworm). Debian is the default Linux distro in the .NET container images.
-
-For more information, see [Debian container images upgraded to Debian 12](../../compatibility/containers/8.0/debian-version.md).
 
 ### Non-root user
 
@@ -49,9 +36,19 @@ The default port also changed from port `80` to `8080`. To support this change, 
 
 For more information, see [Default ASP.NET Core port changed from 80 to 8080](../../compatibility/containers/8.0/aspnet-port.md) and [New non-root 'app' user in Linux images](../../compatibility/containers/8.0/app-user.md).
 
+### Debian 12
+
+The container images now use [Debian 12 (Bookworm)](https://wiki.debian.org/DebianBookworm). Debian is the default Linux distro in the .NET container images.
+
+For more information, see [Debian container images upgraded to Debian 12](../../compatibility/containers/8.0/debian-version.md).
+
 ### Chiseled Ubuntu images
 
-[Chiseled Ubuntu images](https://hub.docker.com/r/ubuntu/dotnet-deps) are available for .NET 8. Chiseled images have a reduced attacked surface because they're ultra-small, have no package manager or shell, and are `non-root`. This type of image is for developers who want the benefit of appliance-style computing. Chiseled images are published to the [.NET nightly artifact registry](https://mcr.microsoft.com/product/dotnet/nightly/aspnet/tags).
+[Chiseled Ubuntu images](https://devblogs.microsoft.com/dotnet/announcing-dotnet-chiseled-containers/) are available for .NET 8. Chiseled images have a reduced attacked surface because they're ultra-small, have no package manager or shell, and are `non-root`. This type of image is for developers who want the benefit of appliance-style computing.
+
+Chiseled images do not support globalization, by default. [`extra`](https://github.com/dotnet/dotnet-docker/issues/5021) images are provided, which include `icu` and `tzdata` packages.
+
+For more information on globalization and containers, see [Globalization Test App](https://github.com/dotnet/dotnet-docker/blob/main/samples/globalapp/README.md).
 
 ### Build multi-platform container images
 
@@ -77,13 +74,20 @@ As part of an effort to improve containerization performance, new ASP.NET Docker
 
 There is a caveat to be aware of. Since composites have multiple assemblies embedded into one, they have tighter version coupling. Apps can't use custom versions of framework or ASP.NET binaries.
 
-Composite images are available for the Alpine Linux, Jammy Chiseled, and Mariner Distroless platforms from the `mcr.microsoft.com/dotnet/nightly/aspnet` repo. The tags are listed with the `-composite` suffix on the [ASP.NET Docker page](https://hub.docker.com/_/microsoft-dotnet-nightly-aspnet).
+[Composite images](https://github.com/dotnet/dotnet-docker/blob/main/documentation/image-variants.md#composite-net-80) are available for the Alpine Linux, Ubuntu ("jammy") Chiseled, and Mariner Distroless platforms from the `mcr.microsoft.com/dotnet/aspnet` repo. The tags are listed with the `-composite` suffix on the [ASP.NET Docker page](https://hub.docker.com/_/microsoft-dotnet-aspnet).
 
 ## Container publishing
 
+- [Generated-image defaults](#generated-image-defaults)
 - [Performance and compatibility](#performance-and-compatibility)
 - [Authentication](#authentication)
 - [Publish to tar.gz archive](#publish-to-targz-archive)
+
+### Generated-image defaults
+
+`dotnet publish` can produce container images. It defaults to producing [`non-root` images](#non-root-user), which helps your apps stay secure-by-default. Change this default at any time by setting the `ContainerUser` propery, for example with `root`.
+
+The default output container tag is now `latest`. This default is in line with other tooling in the containers space and makes containers easier to use in inner development loops.
 
 ### Performance and compatibility
 

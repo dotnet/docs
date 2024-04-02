@@ -40,7 +40,6 @@ public class QuantifierExamples
     private static void AnyExample()
     {
         // <AnyQuantifier>
-
         IEnumerable<string> names = from student in students
                                     where student.Scores.Any(score => score > 95)
                                     select $"{student.FirstName} {student.LastName}: {student.Scores.Max()}";
@@ -69,7 +68,6 @@ public class QuantifierExamples
     private static void ContainsExample()
     {
         // <ContainsQuantifier>
-
         IEnumerable<string> names = from student in students
                                     where student.Scores.Contains(95)
                                     select $"{student.FirstName} {student.LastName}: {string.Join(", ", student.Scores.Select(s => s.ToString()))}";

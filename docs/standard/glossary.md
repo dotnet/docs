@@ -48,7 +48,7 @@ See [ASP.NET Core documentation](/aspnet/core).
 
 A *.dll* or *.exe* file that can contain a collection of APIs that can be called by applications or other assemblies.
 
-An assembly might include types such as interfaces, classes, structures, enumerations, and delegates. Assemblies in a project's *bin* folder are sometimes referred to as *binaries*. See also [library](#library).
+An assembly contains types such as interfaces, classes, structures, enumerations, and delegates. Assemblies in a project's *bin* folder are sometimes referred to as *binaries*. See also [library](#library).
 
 ## BCL
 

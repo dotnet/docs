@@ -62,7 +62,7 @@ The following terms often refer to the same collection of APIs that BCL refers t
 
 - [core .NET libraries](../core/compatibility/corefx.md)
 - [framework libraries](#framework-libraries)
-- [runtime libraries](#runtime)s
+- [runtime libraries](#runtime)
 - [shared framework](#shared-framework)
 
 ## CLR

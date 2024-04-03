@@ -9,7 +9,12 @@ namespace CustomConverterUnixEpochDate
     {
         public static void Main()
         {
-            var forecast = new Forecast() { Date = DateTimeOffset.Now, TemperatureCelsius = 19, Summary = "warm" };
+            var forecast = new Forecast()
+            {
+                Date = DateTimeOffset.Now,
+                TemperatureCelsius = 19,
+                Summary = "warm"
+            };
 
             var options = new JsonSerializerOptions();
             options.Converters.Add(new UnixEpochDateTimeOffsetConverter());
@@ -18,7 +23,7 @@ namespace CustomConverterUnixEpochDate
             string json = JsonSerializer.Serialize(forecast, options);
             Console.WriteLine(json);
 
-            var forecastDeserialized = JsonSerializer.Deserialize<Forecast>(json, options)!;
+            Forecast forecastDeserialized = JsonSerializer.Deserialize<Forecast>(json, options)!;
             Console.WriteLine($"Deserialized date = {forecastDeserialized.Date}");
         }
     }
@@ -33,8 +38,8 @@ namespace CustomConverterUnixEpochDate
     // <ConverterOnly>
     sealed class UnixEpochDateTimeOffsetConverter : JsonConverter<DateTimeOffset>
     {
-        static readonly DateTimeOffset s_epoch = new DateTimeOffset(1970, 1, 1, 0, 0, 0, TimeSpan.Zero);
-        static readonly Regex s_regex = new Regex("^/Date\\(([+-]*\\d+)([+-])(\\d{2})(\\d{2})\\)/$", RegexOptions.CultureInvariant);
+        static readonly DateTimeOffset s_epoch = new(1970, 1, 1, 0, 0, 0, TimeSpan.Zero);
+        static readonly Regex s_regex = new("^/Date\\(([+-]*\\d+)([+-])(\\d{2})(\\d{2})\\)/$", RegexOptions.CultureInvariant);
 
         public override DateTimeOffset Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
         {
@@ -51,7 +56,7 @@ namespace CustomConverterUnixEpochDate
             }
 
             int sign = match.Groups[2].Value[0] == '+' ? 1 : -1;
-            TimeSpan utcOffset = new TimeSpan(hours * sign, minutes * sign, 0);
+            TimeSpan utcOffset = new(hours * sign, minutes * sign, 0);
 
             return s_epoch.AddMilliseconds(unixTime).ToOffset(utcOffset);
         }

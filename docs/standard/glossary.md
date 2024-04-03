@@ -195,7 +195,7 @@ For more information, see [Native AOT deployment](../core/deploying/native-aot/i
 
 For example, the first meaning is intended in phrases such as "implementations of .NET." The second meaning is intended in names such as [.NET SDK](#net-sdk) and [.NET CLI](#net-cli). In the absence of context that indicates the first meaning is intended, assume that the second meaning is intended.
 
-Earlier versions of .NET are known as .NET Core 1 through 3.1. The version numbers skip 4, and the version that followed 3.1 is known as. .NET 5, dropping "Core" from the name. Dropping "Core" was done to emphasize that this implementation of .NET is the one that is recommended for all new development. Skipping version 4 was done to help avoid confusing this newer implementation of .NET with the older implementation that is known as [.NET Framework](#net-framework). The current version of .NET Framework is 4.8.1.
+Earlier versions of .NET are known as .NET Core 1 through 3.1. The version numbers skip 4, and the version that followed 3.1 is known as .NET 5, dropping "Core" from the name. Dropping "Core" was done to emphasize that this implementation of .NET is the one that is recommended for all new development. Skipping version 4 was done to help avoid confusing this newer implementation of .NET with the older implementation that is known as [.NET Framework](#net-framework). The current version of .NET Framework is 4.8.1.
 
 .NET is always fully capitalized, never ".Net".
 

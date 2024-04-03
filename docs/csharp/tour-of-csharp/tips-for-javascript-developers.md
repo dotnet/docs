@@ -21,7 +21,6 @@ As you continue learning C#, you'll learn concepts that aren't part of JavaScrip
 1. [***Pattern matching***](../fundamentals/functional/pattern-matching.md): Pattern matching enables concise conditional statements and expressions based on the shape of complex data structures. The [`is` statement](../language-reference/operators/is.md) checks if a variable "is" some pattern. The pattern-based [`switch` expression](../language-reference/operators/switch-expression.md) provides a rich syntax to inspect a variable and make decisions based on its characteristics.
 1. [***String interpolation***](../language-reference/tokens/interpolated.md) and [***raw string literals***](../language-reference/builtin-types/reference-types.md#string-literals): String interpolation enables you to insert evaluated expressions in a string, rather than using positional identifiers. Raw string literals provide a way to minimize escape sequences in text.
 1. [***Nullable and non-nullable types***](../nullable-references.md): C# supports *nullable value types*, and *nullable reference types* by appending the `?` suffix to a type. For nullable types, the compiler warns you if you don't check for `null` before dereferencing the expression. For non-nullable types, the compiler warns you if you might be assigning a `null` value to that variable. These features can minimize your application throwing a <xref:System.NullReferenceException?displayProperty=nameWithType>. The syntax might be familiar from TypeScript's use of `?` for optional properties.
-1. [***Properties***](../properties.md) and [***Indexers***](../indexers.md): Both properties and indexers (treating a class like an array or dictionary) have language support. In Java, they're naming conventions for methods starting with `get` and `set`.
 1. [***LINQ***](../linq/index.md): Language integrated query (LINQ) provides a common syntax to query and transform data, regardless of its storage.
 
 As you learn more other differences become apparent, but many of those differences are smaller in scope.
@@ -30,12 +29,12 @@ Some familiar features and idioms from JavaScript and TypeScript aren't availabl
 
 1. ***dynamic types***: C# uses static typing. A variable declaration includes the type, and that type can't change.
 1. ***Prototypal inheritance***: C# inheritance is part of the type declaration. A C# `class` declaration states any base class. In JavaScript, you can set the `__proto__` property to set the base type on any instance.
-1. ***Interpreted language***: C# code must be compiled before you run it. JavaScript and TypeScript code can be run directly in the browser.
+1. ***Interpreted language***: C# code must be compiled before you run it. JavaScript code can be run directly in the browser.
 
 In addition, a few more TypeScript features aren't available in C#:
 
 1. ***Union types***: C# doesn't support union types. However, design proposals are in progress.
-1. ***Decorators***: C# doesn't have decorators. Some common decorators, such as `@sealed` are reserved keywords in C#. Others might be implemented using [Attributes](../language-reference/attributes/general.md).
+1. ***Decorators***: C# doesn't have decorators. Some common decorators, such as `@sealed` are reserved keywords in C#. Other common decorators might have corresponding [Attributes](../language-reference/attributes/general.md). For other decorators, you can create your own attributes.
 1. ***More forgiving syntax***: The C# compiler parses C# code more strictly than JavaScript requires.
 
 If you're building a web application, you should consider using [Blazor](/aspnet/core/blazor/index.md) to build your application. Blazor is a full-stack web framework built for .NET and C#. Blazor components can run on the server, as .NET assemblies, or on the client using WebAssembly. Blazor supports interop with your favorite JavaScript or TypeScript libraries.

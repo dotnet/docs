@@ -40,15 +40,16 @@ configuration:
     - if:
       - payloadType: Issues
       - or:
-        - hasLabel:
-            label: doc-bug
         - titleContains:
             pattern: freshness
             isRegex: False
         - titleContains:
             pattern: out( |-)of( |-)date
             isRegex: True
+        - titleContains:
+            pattern: stale
+            isRegex: False
       then:
       - addLabel:
-          label: okr-health
-      description: Label issues with okr-health (event-based)
+          label: okr-freshness
+      description: Label issues with okr-freshness (event-based)

@@ -212,11 +212,11 @@ Notice that the registry path to the .NET Framework 1.0 subkey is different from
 
    You must have administrative credentials to run regedit.
 
-1. Open the subkey that matches the version you want to check. Use the table in the [Detect .NET Framework 1.0 through 4.0](#detect-net-framework-10-through-40) section.
+1. Open the subkey that matches the version you want to check. Use the table in the [.NET Framework 1.0-4.0](#net-framework-10-40) section.
 
    The following figure shows the subkey and its **Version** value for .NET Framework 3.5.
 
-   ![The registry entry for .NET Framework 3.5.](./media/net-4-and-earlier.png ".NET Framework 3.5 and earlier versions")
+   ![The registry entry for .NET Framework 3.5.](./media/net-4-and-earlier.png)
 
 #### Query the registry using code (older framework versions)
 

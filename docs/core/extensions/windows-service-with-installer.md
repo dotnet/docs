@@ -187,7 +187,7 @@ After the project reference has been added, configure the _Package.wxs_ file. Op
 
         <!-- Define the directory structure -->
         <Directory Id="TARGETDIR" Name="SourceDir">
-            <Directory Id="ProgramFilesFolder">
+            <Directory Id="ProgramFiles64Folder">
 
                 <!-- Create a folder inside program files -->
                 <Directory Id="ROOTDIRECTORY" Name="$(var.Manufacturer)">

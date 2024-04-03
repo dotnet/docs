@@ -26,7 +26,7 @@ The following example uses the `All` to find students that scored above 70 on al
   
 ## Any
 
-The following example uses the `Any` to find students that scored greater than 96 on an exam.
+The following example uses the `Any` to find students that scored greater than 95 on any exam.
 
 :::code language="csharp" source="./snippets/standard-query-operators/QuantifierExamples.cs" id="AnyQuantifier":::
 

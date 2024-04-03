@@ -351,7 +351,7 @@ To preserve references and handle circular references in <xref:System.Text.Json?
 
 The `ReferenceHandler.IgnoreCycles` option has behavior similar to Newtonsoft.Json `ReferenceLoopHandling.Ignore`. One difference is that the System.Text.Json implementation replaces reference loops with the `null` JSON token instead of ignoring the object reference. For more information, see [Ignore circular references](preserve-references.md#ignore-circular-references).
 
-Like the Newtonsoft.Json [ReferenceResolver](https://www.newtonsoft.com/json/help/html/P_Newtonsoft_Json_JsonSerializer_ReferenceResolver.htm), the <xref:System.Text.Json.Serialization.ReferenceResolver?displayProperty=fullName> class defines the behavior of preserving references on serialization and deserialization. Create a derived class to specify custom behavior. For an example, see [GuidReferenceResolver](https://github.com/dotnet/docs/blob/main/docs/standard/serialization/system-text-json/snippets/how-to-5-0/csharp/GuidReferenceResolverExample.cs).
+Like the Newtonsoft.Json [ReferenceResolver](https://www.newtonsoft.com/json/help/html/P_Newtonsoft_Json_JsonSerializer_ReferenceResolver.htm), the <xref:System.Text.Json.Serialization.ReferenceResolver?displayProperty=fullName> class defines the behavior of preserving references on serialization and deserialization. Create a derived class to specify custom behavior. For an example, see [GuidReferenceResolver](https://github.com/dotnet/docs/blob/main/docs/standard/serialization/system-text-json/snippets/how-to-contd/csharp/GuidReferenceResolverExample.cs).
 
 Some related `Newtonsoft.Json` features aren't supported:
 
@@ -548,9 +548,9 @@ The required properties converter would require additional logic if you need to 
 
 <xref:System.Text.Json?displayProperty=fullName> supports ISO 8601-1:2019, including the RFC 3339 profile. This format is widely adopted, unambiguous, and makes round trips precisely. To use any other format, create a custom converter. For example, the following converters serialize and deserialize JSON that uses Unix epoch format with or without a time zone offset (values such as `/Date(1590863400000-0700)/` or `/Date(1590863400000)/`):
 
-:::code language="csharp" source="snippets/how-to-5-0/csharp/CustomConverterUnixEpochDate.cs" id="ConverterOnly":::
+:::code language="csharp" source="snippets/how-to-contd/csharp/CustomConverterUnixEpochDate.cs" id="ConverterOnly":::
 
-:::code language="csharp" source="snippets/how-to-5-0/csharp/CustomConverterUnixEpochDateNoZone.cs" id="ConverterOnly":::
+:::code language="csharp" source="snippets/how-to-contd/csharp/CustomConverterUnixEpochDateNoZone.cs" id="ConverterOnly":::
 
 For more information, see [DateTime and DateTimeOffset support in System.Text.Json](../../datetime/system-text-json-support.md).
 

@@ -24,7 +24,7 @@ namespace NonStringKeyDictionary
 
             Console.WriteLine($"Output JSON: {json}");
 
-            var dictionary =
+            Dictionary<int, string> dictionary =
                 JsonSerializer.Deserialize<Dictionary<int, string>>(json)!;
 
             Console.WriteLine($"dictionary[55]: {dictionary[55]}");

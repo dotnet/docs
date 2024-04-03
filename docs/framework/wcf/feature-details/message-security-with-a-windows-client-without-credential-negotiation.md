@@ -1,11 +1,10 @@
 ---
-description: "Learn more about: Message Security with a Windows Client without Credential Negotiation"
 title: "Message Security with a Windows Client without Credential Negotiation"
+description: "Learn more about: Message Security with a Windows Client without Credential Negotiation"
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: fc07a26c-cbee-41c5-8fb0-329085fef749
 ---
 # Message Security with a Windows Client without Credential Negotiation
 
@@ -107,7 +106,7 @@ The following code and configuration are meant to run independently. Do one of t
 The following code configures the client. The security mode is set to Message, and the client credential type is set to Windows. Note that the <xref:System.ServiceModel.MessageSecurityOverHttp.NegotiateServiceCredential%2A> and <xref:System.ServiceModel.NonDualMessageSecurityOverHttp.EstablishSecurityContext%2A> properties are set to `false`.
 
 > [!NOTE]
-> To use Windows credential type without negotiation, the client must be configured with the service's account SPN prior to commencing the communication with the service. The client uses the SPN to get the Kerberos token to authenticate and secure the communication with the service. The following sample shows how to configure the client with the service's SPN. If you are using the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) to generate the client, the service's SPN will be automatically propagated to the client from the service's metadata (WSDL), if the service's metadata contains that information. For more information about how to configure the service to include its SPN in the service's metadata, see the "Service" section later in this topic .
+> To use Windows credential type without negotiation, the client must be configured with the service's account SPN prior to commencing the communication with the service. The client uses the SPN to get the Kerberos token to authenticate and secure the communication with the service. The following sample shows how to configure the client with the service's SPN. If you are using the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) to generate the client, the service's SPN will be automatically propagated to the client from the service's metadata (WSDL), if the service's metadata contains that information. For more information about how to configure the service to include its SPN in the service's metadata, see the "Service" section later in this topic.
 >
 > For more information about SPNs, Kerberos, and Active Directory, see [Kerberos Technical Supplement for Windows](/previous-versions/msp-n-p/ff649429(v=pandp.10)). For more information about endpoint identities, see [SecurityBindingElement Authentication Modes](securitybindingelement-authentication-modes.md) topic.
 

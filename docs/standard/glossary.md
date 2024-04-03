@@ -1,7 +1,7 @@
 ---
 title: .NET glossary
 description: Find out the meaning of selected terms used in the .NET documentation.
-ms.date: 05/02/2023
+ms.date: 04/03/2024
 author: tdykstra
 ms.author: tdykstra
 ms.topic: reference
@@ -32,7 +32,7 @@ A [workload](#workload)-specific API. Here are some examples:
 
 ## ASP.NET
 
-The original ASP.NET implementation that ships with the .NET Framework, also known as ASP.NET 4.x.
+The original ASP.NET implementation that ships with the .NET Framework, also known as ASP.NET 4.x and ASP.NET Framework.
 
 Sometimes ASP.NET is an umbrella term that refers to both the original ASP.NET and ASP.NET Core. The meaning that the term carries in any given instance is determined by context. Refer to ASP.NET 4.x when you want to make it clear that you're not using ASP.NET to mean both implementations.
 
@@ -56,32 +56,32 @@ Base Class Library.
 
 A set of libraries that comprise the System.\* (and to a limited extent Microsoft.\*) namespaces. The BCL is a general purpose, lower-level framework that higher-level application frameworks, such as ASP.NET Core, build on.
 
-The source code of the BCL for [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions) is contained in the [.NET runtime repository](https://github.com/dotnet/runtime). Most of these BCL APIs are also available in .NET Framework, so you can think of this source code as a fork of the .NET Framework BCL source code.
+The source code of the BCL for [.NET](#net) is contained in the [.NET runtime repository](https://github.com/dotnet/runtime). Most of these BCL APIs are also available in .NET Framework, so you can think of this source code as a fork of the .NET Framework BCL source code.
 
 The following terms often refer to the same collection of APIs that BCL refers to:
 
 - [core .NET libraries](../core/compatibility/corefx.md)
 - [framework libraries](#framework-libraries)
-- [runtime libraries](#runtime)
+- [runtime libraries](#runtime)s
 - [shared framework](#shared-framework)
 
 ## CLR
 
 Common Language Runtime.
 
-The exact meaning depends on the context. Common Language Runtime usually refers to the runtime of [.NET Framework](#net-framework) or the runtime of [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions).
+The exact meaning depends on the context. Common Language Runtime usually refers to the runtime of [.NET Framework](#net-framework) or the runtime of [.NET](#net).
 
 A CLR handles memory allocation and management. A CLR is also a virtual machine that not only executes apps but also generates and compiles code on-the-fly using a [JIT](#jit) compiler.
 
 The CLR implementation for .NET Framework is Windows only.
 
-The CLR implementation for .NET 5 and later versions (also known as the Core CLR) is built from the same code base as the .NET Framework CLR. Originally, the Core CLR was the runtime of Silverlight and was designed to run on multiple platforms, specifically Windows and OS X. It's still a [cross-platform](#cross-platform) runtime, now including support for many Linux distributions.
+The CLR implementation for .NET (also known as the Core CLR) is built from the same code base as the .NET Framework CLR. Originally, the Core CLR was the runtime of Silverlight and was designed to run on multiple platforms, specifically Windows and OS X. It's still a [cross-platform](#cross-platform) runtime, now including support for many Linux distributions.
 
 See also [runtime](#runtime).
 
 ## Core CLR
 
-The Common Language Runtime for [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions).
+The Common Language Runtime for [.NET](#net).
 
 See [CLR](#clr).
 
@@ -118,11 +118,11 @@ The word "framework" has a different meaning in the following terms:
 - [TFM (target framework moniker)](#tfm)
 - [framework-dependent app](../core/deploying/index.md#publish-framework-dependent)
 
-Sometimes "framework" refers to an [implementation of .NET](#implementation-of-net). For example, an article may call .NET 5+ a framework.
+Sometimes "framework" refers to an [implementation of .NET](#implementation-of-net).
 
 ## framework libraries
 
-Meaning depends on context. May refer to the framework libraries for [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions), in which case it refers to the same libraries that [BCL](#bcl) refers to. It may also refer to the [ASP.NET Core](#aspnet-core) framework libraries, which build on the BCL and provide additional APIs for web apps.
+Meaning depends on context. May refer to the framework libraries for [.NET](#net), in which case it refers to the same libraries that [BCL](#bcl) refers to. It may also refer to the [ASP.NET Core](#aspnet-core) framework libraries, which build on the BCL and provide additional APIs for web apps.
 
 ## GC
 
@@ -149,14 +149,14 @@ Similar to [AOT](#aot), this compiler translates [IL](#il) to machine code that 
 An implementation of .NET includes:
 
 - One or more runtimes. Examples: [CLR](#clr), [CoreRT](#corert).
-- A class library that implements a version of .NET Standard and may include additional APIs. Examples: the [BCLs](#bcl) for [.NET Framework](#net-framework) and [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions).
+- A class library that implements a version of .NET Standard and may include additional APIs. Examples: the [BCLs](#bcl) for [.NET Framework](#net-framework) and [.NET](#net).
 - Optionally, one or more application frameworks. Examples: [ASP.NET](#aspnet), Windows Forms, and WPF are included in .NET Framework and .NET 5+.
 - Optionally, development tools. Some development tools are shared among multiple implementations.
 
 Examples of .NET implementations:
 
 - [.NET Framework](#net-framework)
-- [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions)
+- [.NET](#net)
 - [Universal Windows Platform (UWP)](#uwp)
 - [Mono](#mono)
 
@@ -188,36 +188,30 @@ For more information, see [Native AOT deployment](../core/deploying/native-aot/i
 
 ## .NET
 
-- In general, *.NET* is the umbrella term for [.NET Standard](#net-standard) and all [.NET implementations](#implementation-of-net) and workloads.
-- More specifically, .NET refers to the implementation of .NET that is recommended for all new development: [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions).
+*.NET* has two meanings, and the one that is intended depends on the context:
 
-For example, the first meaning is intended in phrases such as "implementations of .NET" or "the .NET development platform." The second meaning is intended in names such as [.NET SDK](#net-sdk) and [.NET CLI](#net-cli).
+* *.NET* can be used as the umbrella term for [.NET Standard](#net-standard) and all [.NET implementations](#implementation-of-net) and workloads.
+* *.NET* more frequently refers to the cross-platform, high-performance, open-source implementation of .NET that used to be called .NET Core.
+
+For example, the first meaning is intended in phrases such as "implementations of .NET" or "the .NET development platform." The second meaning is intended in names such as [.NET SDK](#net-sdk) and [.NET CLI](#net-cli). In the absence of context that indicates the first meaning is intended, assume that the second meaning is intended.
+
+.NET includes a Common Language Runtime ([CLR](#clr)), an [AOT](#aot) runtime, a Base Class Library ([BCL](#bcl)), and the [.NET SDK](#net-sdk).
+
+Earlier versions of .NET in this sense are known as [.NET Core](#net-core). .NET 5 is the next version following .NET Core 3.1. Version 4 of .NET Core was skipped to avoid confusing this newer implementation of .NET with the older implementation that is known as [.NET Framework](#net-framework). The current version of .NET Framework is 4.8.1. The current version of .NET is 8. .NET can also be referred to as *.NET 5 (and .NET Core) and later versions* or just *NET 5+*. This implementation of .NET is the one that is recommended for all new development.
 
 .NET is always fully capitalized, never ".Net".
 
 See [.NET documentation](../fundamentals/index.yml)
 
-## .NET 5+
-
-The plus sign after a version number means "and later versions." See [.NET 5 and later versions](#net-5-and-later-versions).
-
-## .NET 5 and later versions
-
-A cross-platform, high-performance, open-source implementation of .NET. Also referred to as .NET 5+. Includes a Common Language Runtime ([CLR](#clr)), an [AOT](#aot) runtime ([CoreRT](#corert), in development), a Base Class Library ([BCL](#bcl)), and the [.NET SDK](#net-sdk).
-
-Earlier versions of this .NET implementation are known as [.NET Core](#net-core). .NET 5 is the next version following .NET Core 3.1. Version 4 was skipped to avoid confusing this newer implementation of .NET with the older implementation that is known as [.NET Framework](#net-framework). The current version of .NET Framework is 4.8.
-
-See [.NET documentation](../fundamentals/index.yml).
-
 ## .NET CLI
 
-A cross-platform toolchain for developing applications and libraries for [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions). Also known as the .NET Core CLI.
+A cross-platform toolchain for developing applications and libraries for [.NET](#net). Also known as the *.NET Core CLI*.
 
 See [.NET CLI](../core/tools/index.md).
 
 ## .NET Core
 
-See [.NET 5 and later versions](#net-5-and-later-versions).
+See [.NET](#net).
 
 ## .NET Framework
 
@@ -237,7 +231,7 @@ See [.NET Native documentation](/windows/uwp/dotnet-native/).
 
 ## .NET SDK
 
-A set of libraries and tools that allow developers to create .NET applications and libraries for [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions). Also known as the .NET Core SDK.
+A set of libraries and tools that allow developers to create .NET applications and libraries for [.NET](#net). Also known as the *.NET Core SDK*.
 
 Includes the [.NET CLI](#net-cli) for building apps, .NET libraries and runtime for building and running apps, and the dotnet executable (*dotnet.exe*) that runs CLI commands and runs applications.
 
@@ -315,7 +309,7 @@ The word "runtime" has a different meaning in some contexts:
 
 ## shared framework
 
-Meaning depends on context. The *.NET shared framework* refers to the libraries included in the [.NET runtime](#runtime). In this case, the *shared framework* for [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions) refers to the same libraries that [BCL](#bcl) refers to.
+Meaning depends on context. The *.NET shared framework* refers to the libraries included in the [.NET runtime](#runtime). In this case, the *shared framework* for [.NET](#net) refers to the same libraries that [BCL](#bcl) refers to.
 
 There are other shared frameworks. The *ASP.NET Core shared framework* refers to the libraries included in the [ASP.NET Core runtime](#runtime), which includes the BCL plus additional APIs for use by web apps.
 

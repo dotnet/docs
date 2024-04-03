@@ -68,10 +68,20 @@ configuration:
         - bodyContains:
             pattern: build warning
             isRegex: False
-        - titleContains:
-            pattern: freshness
-            isRegex: False
       then:
       - addLabel:
           label: okr-health
       description: Label PRs with okr-health
+    - if:
+      - payloadType: Pull_Request
+      - or:
+        - titleContains:
+            pattern: freshness
+            isRegex: False
+        - bodyContains:
+            pattern: freshness
+            isRegex: False
+      then:
+      - addLabel:
+          label: okr-freshness
+      description: Label PRs with okr-freshness

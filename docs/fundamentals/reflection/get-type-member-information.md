@@ -5,7 +5,7 @@ ms.date: "09/03/2019"
 ms.topic: how-to
 helpviewer_keywords:
   - "reflection, obtaining member information"
-  - "types [.NET Framework], obtaining member information from"
+  - "types [.NET], obtaining member information from"
 ms.assetid: 348ae651-ccda-4f13-8eda-19e8337e9438
 dev_langs:
   - "cpp"
@@ -26,6 +26,4 @@ The following example obtains type and member information by using reflection:
 
 ## See also
 
-- [Program with application domains](../app-domains/application-domains.md#programming-with-application-domains)
 - [Reflection](reflection.md)
-- [Use application domains](../app-domains/use.md)

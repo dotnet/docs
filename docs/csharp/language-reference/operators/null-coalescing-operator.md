@@ -90,7 +90,6 @@ For more information about the `??=` operator, see the [feature proposal note](~
 ## See also
 
 - [Null check can be simplified (IDE0029, IDE0030, and IDE0270)](../../../fundamentals/code-analysis/style-rules/ide0029-ide0030-ide0270.md)
-- [C# reference](../index.md)
 - [C# operators and expressions](index.md)
 - [?. and ?[] operators](member-access-operators.md#null-conditional-operators--and-)
 - [?: operator](conditional-operator.md)

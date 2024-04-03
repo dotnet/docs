@@ -67,6 +67,7 @@
                     "csharp-8.0/notnull-constraint.md",
                     "csharp-8.0/obsolete-accessor.md",
                     "csharp-8.0/shadowing-in-nested-functions.md",
+                    "csharp-8.0/static-local-functions.md",
                     "csharp-8.0/unconstrained-null-coalescing.md",
                     "csharp-8.0/nullable-reference-types-specification.md"
                 ]
@@ -172,7 +173,7 @@
                 "docs/framework/wcf/**/**.md": "None"
             },
             "open_source_feedback_issueUrl": {
-                "_csharplang/**.*": "https://github.com/dotnet/charplang/issues/new?template=docs-feedback.yml",
+                "_csharplang/**.*": "https://github.com/dotnet/csharplang/issues/new?template=docs-feedback.yml",
                 "_csharpstandard/standard/*.md": "https://github.com/dotnet/csharpstandard/issues/new?template=docs-feedback.yml"
             },
             "open_source_feedback_productName": {
@@ -591,7 +592,6 @@
                 "_csharplang/proposals/csharp-8.0/using.md": "Pattern based using and using declarations",
                 "_csharplang/proposals/csharp-8.0/null-coalescing-assignment.md": "Null coalescing assignment",
                 "_csharplang/proposals/csharp-8.0/readonly-instance-members.md": "Readonly instance members",
-                "_csharplang/proposals/csharp-8.0/static-local-functions.md": "Static local functions",
                 "_csharplang/proposals/csharp-8.0/nested-stackalloc.md": "Nested stackalloc expressions",
                 "_csharplang/proposals/csharp-9.0/covariant-returns.md": "Covariant return types",
                 "_csharplang/proposals/csharp-9.0/extending-partial-methods.md": "Extending partial methods",
@@ -705,7 +705,6 @@
                 "_csharplang/proposals/csharp-8.0/using.md": "This feature specification supports pattern based using and using declarations to simplify resource cleanup.",
                 "_csharplang/proposals/csharp-8.0/null-coalescing-assignment.md": "This feature specification describes the syntax to support null coalescing assignment expressions using the '??=' operator.",
                 "_csharplang/proposals/csharp-8.0/readonly-instance-members.md": "This feature specification describes the syntax for declaring and using readonly instance members.",
-                "_csharplang/proposals/csharp-8.0/static-local-functions.md": "This feature specification describes static local functions, which are local functions that cannot access variables in the enclosing scope.",
                 "_csharplang/proposals/csharp-8.0/nested-stackalloc.md": "This feature specification describes nested stackalloc expressions, which provides nested arrays of stackalloc storage.",
                 "_csharplang/proposals/csharp-9.0/covariant-returns.md": "This feature specification describes covariant return types, where overriding member declarations can return a type derived from the overridden member declaration.",
                 "_csharplang/proposals/csharp-9.0/extending-partial-methods.md": "This feature specification describes extensions to partial methods. These extensions enable source generators to create or call partial methods.",

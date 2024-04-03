@@ -782,6 +782,34 @@
             "redirect_url": "/dotnet/core/install/linux"
         },
         {
+            "source_path_from_root": "/docs/core/install/linux-ubuntu-1604.md",
+            "redirect_url": "/dotnet/core/install/linux-ubuntu-install?pivots=os-linux-ubuntu-1604"
+        },
+        {
+            "source_path_from_root": "/docs/core/install/linux-ubuntu-1804.md",
+            "redirect_url": "/dotnet/core/install/linux-ubuntu-install?pivots=os-linux-ubuntu-1804"
+        },
+        {
+            "source_path_from_root": "/docs/core/install/linux-ubuntu-2004.md",
+            "redirect_url": "/dotnet/core/install/linux-ubuntu-install?pivots=os-linux-ubuntu-2004"
+        },
+        {
+            "source_path_from_root": "/docs/core/install/linux-ubuntu-2204.md",
+            "redirect_url": "/dotnet/core/install/linux-ubuntu-install?pivots=os-linux-ubuntu-2204"
+        },
+        {
+            "source_path_from_root": "/docs/core/install/linux-ubuntu-2210.md",
+            "redirect_url": "/dotnet/core/install/linux-ubuntu-install?pivots=os-linux-ubuntu-other"
+        },
+        {
+            "source_path_from_root": "/docs/core/install/linux-ubuntu-2304.md",
+            "redirect_url": "/dotnet/core/install/linux-ubuntu-install?pivots=os-linux-ubuntu-2304"
+        },
+        {
+            "source_path_from_root": "/docs/core/install/linux-ubuntu-2310.md",
+            "redirect_url": "/dotnet/core/install/linux-ubuntu-install?pivots=os-linux-ubuntu-2310"
+        },
+        {
             "source_path_from_root": "/docs/core/install/runtime.md",
             "redirect_url": "/dotnet/core/install/windows"
         },
@@ -1111,32 +1139,32 @@
         },
         {
             "source_path_from_root": "/docs/core/testing/unit-testing-mstest-runner-exit-codes.md",
-            "redirect_url": "/docs/core/testing/unit-testing-platform-exit-codes",
+            "redirect_url": "/dotnet/core/testing/unit-testing-platform-exit-codes",
             "redirect_document_id": true
         },
         {
             "source_path_from_root": "/docs/core/testing/unit-testing-mstest-runner-extensions.md",
-            "redirect_url": "/docs/core/testing/unit-testing-platform-extensions",
+            "redirect_url": "/dotnet/core/testing/unit-testing-platform-extensions",
             "redirect_document_id": true
         },
         {
             "source_path_from_root": "/docs/core/testing/unit-testing-mstest-runner-integrations.md",
-            "redirect_url": "/docs/core/testing/unit-testing-platform-integration-dotnet-test",
+            "redirect_url": "/dotnet/core/testing/unit-testing-platform-integration-dotnet-test",
             "redirect_document_id": true
         },
         {
             "source_path_from_root": "/docs/core/testing/unit-testing-mstest-runner-runsettings.md",
-            "redirect_url": "/docs/core/testing/unit-testing-platform-runsettings",
+            "redirect_url": "/dotnet/core/testing/unit-testing-platform-runsettings",
             "redirect_document_id": true
         },
         {
             "source_path_from_root": "/docs/core/testing/unit-testing-mstest-runner-telemetry.md",
-            "redirect_url": "/docs/core/testing/unit-testing-platform-telemetry",
+            "redirect_url": "/dotnet/core/testing/unit-testing-platform-telemetry",
             "redirect_document_id": true
         },
         {
             "source_path_from_root": "/docs/core/testing/unit-testing-mstest-runner-vs-vstest.md",
-            "redirect_url": "/docs/core/testing/unit-testing-platform-vs-vstest",
+            "redirect_url": "/dotnet/core/testing/unit-testing-platform-vs-vstest",
             "redirect_document_id": true
         },
         {

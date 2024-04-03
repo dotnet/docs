@@ -254,7 +254,6 @@ For more information about indices and ranges, see the [feature proposal note](~
 - [Use index operator (style rule IDE0056)](../../../fundamentals/code-analysis/style-rules/ide0056.md)
 - [Use range operator (style rule IDE0057)](../../../fundamentals/code-analysis/style-rules/ide0057.md)
 - [Use conditional delegate call (style rule IDE1005)](../../../fundamentals/code-analysis/style-rules/ide1005.md)
-- [C# reference](../index.md)
 - [C# operators and expressions](index.md)
 - [?? (null-coalescing operator)](null-coalescing-operator.md)
 - [:: operator](namespace-alias-qualifier.md)

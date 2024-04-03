@@ -191,13 +191,11 @@ For more information, see [Native AOT deployment](../core/deploying/native-aot/i
 *.NET* has two meanings, and the one that is intended depends on the context:
 
 * *.NET* can be used as the umbrella term for [.NET Standard](#net-standard) and all [.NET implementations](#implementation-of-net) and workloads.
-* *.NET* more frequently refers to the cross-platform, high-performance, open-source implementation of .NET that used to be called .NET Core.
+* *.NET* more frequently refers to the cross-platform, high-performance, open-source implementation of .NET that used to be called .NET Core. It can also be referred to as *.NET 5 (and .NET Core) and later versions* or just *.NET 5+*.
 
-For example, the first meaning is intended in phrases such as "implementations of .NET" or "the .NET development platform." The second meaning is intended in names such as [.NET SDK](#net-sdk) and [.NET CLI](#net-cli). In the absence of context that indicates the first meaning is intended, assume that the second meaning is intended.
+For example, the first meaning is intended in phrases such as "implementations of .NET." The second meaning is intended in names such as [.NET SDK](#net-sdk) and [.NET CLI](#net-cli). In the absence of context that indicates the first meaning is intended, assume that the second meaning is intended.
 
-.NET includes a Common Language Runtime ([CLR](#clr)), an [AOT](#aot) runtime, a Base Class Library ([BCL](#bcl)), and the [.NET SDK](#net-sdk).
-
-Earlier versions of .NET in this sense are known as .NET Core. .NET 5 is the next version following .NET Core 3.1. Version 4 of .NET Core was skipped to avoid confusing this newer implementation of .NET with the older implementation that is known as [.NET Framework](#net-framework). The current version of .NET Framework is 4.8.1. The current version of .NET is 8. .NET can also be referred to as *.NET 5 (and .NET Core) and later versions* or just *NET 5+*. This implementation of .NET is the one that is recommended for all new development.
+Earlier versions of .NET are known as .NET Core 1 through 3.1. The version numbers skip 4, and the version that followed 3.1 is known as. .NET 5, dropping "Core" from the name. Dropping "Core" was done to emphasize that this implementation of .NET is the one that is recommended for all new development. Skipping version 4 was done to help avoid confusing this newer implementation of .NET with the older implementation that is known as [.NET Framework](#net-framework). The current version of .NET Framework is 4.8.1.
 
 .NET is always fully capitalized, never ".Net".
 

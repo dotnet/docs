@@ -231,7 +231,7 @@ See [.NET Native documentation](/windows/uwp/dotnet-native/).
 
 ## .NET SDK
 
-A set of libraries and tools that allow developers to create .NET applications and libraries for [.NET](#net). Also known as the *.NET Core SDK*.
+A set of libraries and tools that allow developers to create applications and libraries for [.NET](#net). Also known as the *.NET Core SDK*.
 
 Includes the [.NET CLI](#net-cli) for building apps, .NET libraries and runtime for building and running apps, and the dotnet executable (*dotnet.exe*) that runs CLI commands and runs applications.
 

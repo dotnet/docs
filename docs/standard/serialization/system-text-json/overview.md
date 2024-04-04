@@ -36,8 +36,8 @@ For framework versions earlier than .NET Core 3.0, install the [System.Text.Json
 
 ## Namespaces and APIs
 
-- The <xref:System.Text.Json> namespace contains all the entry points and the main types.
-- The <xref:System.Text.Json.Serialization> namespace contains attributes and APIs for advanced scenarios and customization specific to serialization and deserialization.
+* The <xref:System.Text.Json> namespace contains all the entry points and the main types.
+* The <xref:System.Text.Json.Serialization> namespace contains attributes and APIs for advanced scenarios and customization specific to serialization and deserialization.
 
 The code examples shown in this article require `using` directives for one or both of these namespaces.
 
@@ -54,8 +54,8 @@ Serializing and deserializing JSON payloads from the network are common operatio
 
 The following example illustrates use of <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A?displayProperty=nameWithType> and <xref:System.Net.Http.Json.HttpClientJsonExtensions.PostAsJsonAsync%2A?displayProperty=nameWithType>:
 
-:::code language="csharp" source="snippets/how-to-5-0/csharp/HttpClientExtensionMethods.cs" highlight="23,30":::
-:::code language="vb" source="snippets/how-to-5-0/vb/HttpClientExtensionMethods.vb" :::
+:::code language="csharp" source="snippets/how-to-contd/csharp/HttpClientExtensionMethods.cs" highlight="23,30":::
+:::code language="vb" source="snippets/how-to-contd/vb/HttpClientExtensionMethods.vb" :::
 
 There are also extension methods for System.Text.Json on [HttpContent](xref:System.Net.Http.Json.HttpContentJsonExtensions).
 

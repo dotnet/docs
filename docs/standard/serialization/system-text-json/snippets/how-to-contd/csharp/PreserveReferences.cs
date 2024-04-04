@@ -24,7 +24,7 @@ namespace PreserveReferences
                 Name = "Adrian King"
             };
 
-            tyler.DirectReports = new List<Employee> { adrian };
+            tyler.DirectReports = [adrian];
             adrian.Manager = tyler;
 
             JsonSerializerOptions options = new()

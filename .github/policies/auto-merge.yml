@@ -17,6 +17,7 @@ configuration:
       then:
       - enableAutoMerge:
           mergeMethod: Squash
+      triggerOnOwnActions: true
       description: Auto-squash-merge PRs to main labeled with auto-merge
     - if:
       - payloadType: Pull_Request
@@ -27,6 +28,7 @@ configuration:
       then:
       - enableAutoMerge:
           mergeMethod: Merge
+      triggerOnOwnActions: true
       description: Auto-merge PRs to live labeled with auto-merge
     - if:
       - payloadType: Pull_Request

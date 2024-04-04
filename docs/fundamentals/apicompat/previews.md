@@ -40,7 +40,7 @@ you implicitly express consent to consume APIs that might change.
 
 NuGet packages can either be stable or marked as prerelease, that is the package
 has a prerelease suffix. For example, `System.Text.Json 9.0.0-preview.2.24128.5`
-has prerelease suffix of `preview.2.24128.5`.
+has a prerelease suffix of `preview.2.24128.5`.
 
 Package authors generally don't support prerelease packages and use as a means
 to collect feedback from early adopters.
@@ -71,7 +71,7 @@ stable yet.
 
 When building against an experimental API, the compiler will produce an error.
 Each feature that is marked as experimental will have its own separate
-diagnostic ID. In order to express consent to consuming, you suppress the
+diagnostic ID. In order to express consent to using them, you suppress the
 specific diagnostic. You can do that via any of the means for suppressing
 diagnostics, but the recommended way is to add the diagnostic to the project's
 `<NoWarn>` property.
@@ -99,7 +99,7 @@ language preview features. If it's just an API that is in preview, the .NET
 platform uses `[Experimental]` as well.
 
 The exceptions to this rule is if you're building a stable library and want to
-expose certain features that inturn depend on runtime or language preview
+expose certain features that in turn depend on runtime or language preview
 behaviors. In that case you should use `[RequiresPreviewFeatures]` for the entry
 points of that feature. However, you need to consider that users of such APIs
 have to turn on preview features too, which exposes them to all runtime,

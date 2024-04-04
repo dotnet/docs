@@ -57,11 +57,11 @@ Suppose you use an instruction to tell the model to produce a list of presidenti
 
 This section explains the use of examples in .NET prompt engineering.
 
-An example is text that shows the model how to respond. The model uses examples to infer what to include in completions. Like a normal GPT interaction, an example starts with a prompt and ends with a completion. However, an example doesn't have to include a full completion&mdash;sometimes you might just want to include a formatted word, the first bullet in an unordered list, or something similar to indicate how each completion should start.  
+An example is text that shows the model how to respond. The model uses examples to infer what to include in completions. Like a normal GPT interaction, an example starts with a prompt. The example can include a completion but it's not required. A completion in an example doesn't have to include the full reponse&mdash;it might just include a formatted word, the first bullet in an unordered list, or something similar to indicate how each completion should start.  
 
 Examples are often classified by the number of prompt/full completion pairs they contain.
 
-- **Zero-shot learning** examples include a prompt paired with a partial completion. 
+- **Zero-shot learning** examples include a prompt, either alone or paired with a partial completion. 
 - **One-shot learning** examples include a prompt paired with a full completion. 
 - **Few-shot learning** examples include several prompt/full completion pairs. 
 

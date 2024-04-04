@@ -152,7 +152,7 @@ Transformer model architecture consists of two components, or _blocks_:
 - An _encoder_ block that creates semantic representations of the training vocabulary
 - A _decoder_ block that generates new language sequences
 
-The specific implementations of this architecture may vary. Some models may only use the encoder block, such as the Bidirectional Encoder Representations from Transformers (BERT) model developed by Google to support their search engine. Other models may only use the decoder block, like the Generative Pretrained Transformer (GPT) model developed by OpenAI.
+The specific implementations of this architecture may vary. Some models may only use the encoder block, such as the Bidirectional Encoder Representations from Transformers (BERT) model developed by Google to support their search engine. Other models may only use the decoder block, like the Generative Pre-trained Transformer (GPT) model developed by OpenAI.
 
 When training a transformer model the training text is first broken down into tokens. These tokens each identify a unique text value. A token may be an distinct word, but can also be a partial word or combination of words and punctuation. Each token is then assigned an ID, which enables the text to be represented as a sequence of token IDs.
 

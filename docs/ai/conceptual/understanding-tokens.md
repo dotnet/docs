@@ -1,10 +1,10 @@
 ---
-title: "Concept - Understanding Tokens"
-description: "Understand how Generative AI and large language models (LLMs) work and how they may be useful in your .NET projects."
+title: "Concept - Understanding tokens"
+description: "Understand how large language models (LLMs) use tokens to analyze semantic relationships and generate natural language outputs"
 ms.topic: concept-article
-ms.date: 04/02/2024
+ms.date: 04/04/2024
 
-#customer intent: As a .NET developer, I want understand how Generative AI and large language models (LLMs) work and how they may be useful in my .NET projects.
+#customer intent: As a .NET developer, I want understand how large language models (LLMs) use tokens to analyze semantic relationships and generate natural language outputs so I may better use LLMs in my .NET projects.
 
 ---
 
@@ -24,7 +24,7 @@ https://aka.ms/patterns-feedback
 
 -->
 
-# [noun phrase] concept(s)
+# Understanding tokens
 
 <!-- Required: Article headline - H1
 
@@ -33,7 +33,7 @@ article covers.
 
 -->
 
-[Introduce and explain the purpose of the article.]
+Tokens are the unique words or sets of characters that large language models (LLMs) decompose text into. During training a LLM will analyze the semantic relationships between these tokens, such as how commonly they are used together or if they are used in similar contexts. Once trained a LLM will use those relationships and patterns to generate output text based on the sequence of tokens provided in the input text.
 
 <!-- Required: Introductory paragraphs (no heading)
 
@@ -46,19 +46,15 @@ sentence in the form, "X is a (type of) Y that does Z."
 
 -->
 
-## Prerequisites
+## What are tokens?
 
-<!--Optional: Prerequisites - H2
+[Describe a main idea.]
 
-If this section is needed, make "Prerequisites" your
-first H2 in the article.
+## How are tokens determined?
 
-Use clear and unambiguous language and use
-an unordered list format. 
+[Describe a main idea.]
 
--->
-
-## [Main idea]
+## How are tokens used?
 
 [Describe a main idea.]
 
@@ -75,9 +71,9 @@ the concept's critical features as you define what it is.
 
 ## Related content
 
-- [Related article title](link.md)
-- [Related article title](link.md)
-- [Related article title](link.md)
+- [How Generative AI and LLMs work](how-genai-and-llms-work.md)
+- [Understanding embeddings](understanding-embeddings.md)
+- [Working with vector databases](working-with-vector-dbs.md)
 
 <!-- Optional: Related content - H2
 

@@ -15,17 +15,23 @@ ms.date: [mm/dd/yyyy]
 
 This article explains how zero-shot learning and few-shot learning help you establish performance baselines and experiment with engineered prompts to improve the performance of a GPT-based app and experiment with different engineered prompts to improve that performace.
 
-GPT model performance benefits from [prompt engineering](prompt-engineering-in-dot-net.md), the practice of giving instructions and examples to a model to refine its output. Zero-shot learning and few-shot learning are techniques that you use with examples to iteratively develop engineered prompts.
+GPT model performance benefits from [prompt engineering](prompt-engineering-in-dot-net.md), the practice of giving instructions and examples to a model to refine its output. Zero-shot learning and few-shot learning are techniques that you use to iteratively develop engineered prompts.
 
 ## Zero-shot learning provides a performance baseline
 
-This section explains how to use zero-shot learning to establish baseline performance. 
+This section explains how zero-shot learning helps establish baseline performance for a GPT model. 
 
-Zero-shot learning is the practice of passing example zero-shot prompts (prompts that aren't paired with any completions) to simulate how your app would perform for actual users. Using zero-shot learning lets you evaluate various aspects of your model's performance, such as accuracy or precision. It's a good idea to plan a set of zero-shot prompts that cover the range of expected user inputs, and then use them one at a time to measure performace. 
+Zero-shot learning relies on the model's existing knowledge to generate responses. It involves passing zero-shot prompts (prompts that aren't paired with any completions) to simulate how your app would perform for actual users. Using zero-shot learning, you can evaluate various aspects of your model's performance, such as accuracy or precision. If feasible, you should plan a set of zero-shot prompts that cover the range of expected user inputs, and then use them one at a time to measure performance.
+
+--- Sloan, it's possible to have an LLM generate zero-shot prmopts, but I don't know how it would work in .NET. I'll have to dig around in the APIs and .NET classes to research the question If you have any ideas, this doc could be a lot better if it had info about LLM generation of example prompts in .NET. If not, delete this comment on review and let the MS folks tell us if something's missing. 
 
 After you have your baselines you can move on to few-shot learning, which lets you experiment with the effects of various paired completions on each prompt. 
 
 ## Few-shot learning supports experimentation and iteration
+
+This section explains how to use few-shot learning to experiment and iterate on prompt/completion pairings to improve performance in a GPT-based app.
+
+Few-shot learning is the practice of passing few-shot prompts (prompts paired with completions) to show your model how to respond.  
 
 ## Related content
 

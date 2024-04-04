@@ -30,6 +30,8 @@ An instruction is text that tells the model how to respond. An instruction can b
 The Completion API accepts any instructions that you include in an engineered prompt. The Chat Completion API only accepts instructions that you include in a [system message](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/advanced-prompt-engineering?pivots=programming-language-chat-completions#system-message).
 
 Sometimes GPT models don't follow an instruction the way you expect because it needs more context. You can add more context an instruction by including primary content, supporting content, and cues. You can include these clarifications when you add an instruction, and can add or adjust them after you test your instruction's effect. Note that in an engineered prompt, instructions must be clearly distinct from the clarifications you add to them.
+
+Instructions are typically more effective when used with examples. However, when you use both in a prompt you should make sure that the instructions are either above or below the examples to help the model distinguish between them. This is especially important in the Completion API because it accepts prompts in any format. In the Chat Completion API, instructions are confined to system messages, which cannot contain examples.
  
 ### Primary content
 
@@ -57,7 +59,9 @@ Suppose you use an instruction to tell the model to produce a list of presidenti
 
 This section explains the use of examples in .NET prompt engineering.
 
-An example is text that shows the model how to respond. The model uses examples to infer what to include in completions. Like a normal GPT interaction, an example starts with a prompt. The example can include a completion but it's not required. A completion in an example doesn't have to include the full reponse&mdash;it might just include a formatted word, the first bullet in an unordered list, or something similar to indicate how each completion should start.  
+An example is text that shows the model how to respond. The model uses examples to infer what to include in completions. Examples should either come before our after the instructions in an engineered prompt. 
+
+Like a normal GPT interaction, an example starts with a prompt. The example can include a completion but it's not required. A completion in an example doesn't have to include the full reponse&mdash;it might just include a formatted word, the first bullet in an unordered list, or something similar to indicate how each completion should start.  
 
 Examples are often classified by the number of prompt/full completion pairs they contain.
 

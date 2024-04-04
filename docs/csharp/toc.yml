@@ -241,28 +241,10 @@ items:
       href: linq/standard-query-operators/join-operations.md
     - name: Group data
       href: linq/standard-query-operators/grouping-data.md
-  - name: Store the results of a query in memory
-    href: linq/store-the-results-of-a-query-in-memory.md
-  - name: "Walkthrough: Writing queries in C#"
-    href: programming-guide/concepts/linq/walkthrough-writing-queries-linq.md
-  - name: LINQ and file directories
-    items:
-    - name: Overview
-      href: programming-guide/concepts/linq/linq-and-file-directories.md
-    - name: "How to query for files with a specified attribute or name"
-      href: programming-guide/concepts/linq/how-to-query-for-files-with-a-specified-attribute-or-name.md
-    - name: "How to group files by extension"
-      href: programming-guide/concepts/linq/how-to-group-files-by-extension-linq.md
-    - name: "How to query for the total number of bytes in a set of folders"
-      href: programming-guide/concepts/linq/how-to-query-for-the-total-number-of-bytes-in-a-set-of-folders-linq.md
-    - name: "How to compare the contents of two folders"
-      href: programming-guide/concepts/linq/how-to-compare-the-contents-of-two-folders-linq.md
-    - name: "How to query for the largest file or files in a directory tree"
-      href: programming-guide/concepts/linq/how-to-query-for-the-largest-file-or-files-in-a-directory-tree-linq.md
-    - name: "How to query for duplicate files in a directory tree"
-      href: programming-guide/concepts/linq/how-to-query-for-duplicate-files-in-a-directory-tree-linq.md
-    - name: "How to query the contents of files in a folder"
-      href: programming-guide/concepts/linq/how-to-query-the-contents-of-files-in-a-folder-lin.md
+  - name: "Tutorial: Writing queries in C#"
+    href: linq/walkthrough-writing-queries-linq.md
+  - name: "How to: LINQ and file directories"
+    href: linq/how-to-query-files-and-directories.md
   - name: How-to articles
     items:
     - name: How to return a query from a method

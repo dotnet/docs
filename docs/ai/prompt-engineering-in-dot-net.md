@@ -29,15 +29,11 @@ An instruction is text that tells the model how to respond. An instruction can b
 
 The Completion API accepts any instructions that you include in an engineered prompt. The Chat Completion API only accepts instructions that you include in a [system message](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/advanced-prompt-engineering?pivots=programming-language-chat-completions#system-message).
 
-Sometimes GPT models don't follow an instruction the way you expect because it needs more context. You can add more context an instruction by including primary content, supporting content, and cues. You can include these clarifications when you add an instruction, and can add or adjust them after you test your instruction's effect. Note that instructions and any clarifications you add must be clearly distinct from each other.
-
- 
+Sometimes GPT models don't follow an instruction the way you expect because it needs more context. You can add more context an instruction by including primary content, supporting content, and cues. You can include these clarifications when you add an instruction, and can add or adjust them after you test your instruction's effect. Note that in an engineered prompt, instructions must be clearly distinct from the clarifications you add to them.
  
 ### Primary content
 
 Primary content is text you prepend to an instruction to indicate that the model should use the text as input for the instruction. For example, if you add the instruction **Produce a list of US Presidents' executive accomplishments.**, you could prepend a wiki page as primary content and get a list of accomplishments that are present in that page.   
- 
---- Need more about how this works with the Chat Completion API
 
 ### Supporting content
 
@@ -61,18 +57,18 @@ Suppose you use an instruction to tell the model to produce a list of presidenti
 
 This section explains the use of examples in .NET prompt engineering.
 
-An example is text that shows the model how to respond. The model uses examples to infer what to include in completions. Like a normal GPT interaction, an example starts with a prompt and ends with a completion. However, an example doesn't have to include a full completion&mdash;sometimes you might just want to include a formatted word, the first bullet in an unordered list, or something similar to indicate how each completion should start.  Examples are often classified by the number of prompt/full completion pairs they contain.
+An example is text that shows the model how to respond. The model uses examples to infer what to include in completions. Like a normal GPT interaction, an example starts with a prompt and ends with a completion. However, an example doesn't have to include a full completion&mdash;sometimes you might just want to include a formatted word, the first bullet in an unordered list, or something similar to indicate how each completion should start.  
+
+Examples are often classified by the number of prompt/full completion pairs they contain.
 
 - **Zero-shot learning** examples include a prompt paired with a partial completion. 
 - **One-shot learning** examples include a prompt paired with a full completion. 
 - **Few-shot learning** examples include several prompt/full completion pairs. 
-
-## Chain-of-thought prompts
-
---- Add cumulative Zero-shot/one=shot/few-shot prompt example 
 
 ## Related content
 
 - [Prompt engineering techniques](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/advanced-prompt-engineering)
 - [Related article title](link.md)
 - [Related article title](link.md)
+
+--- Add more RLs after more docs are ready

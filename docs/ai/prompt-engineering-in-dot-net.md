@@ -25,7 +25,9 @@ The Completion API and the Chat Completion API target different GPT models with 
 
 This section explains the use of instructions in prompt engineering. 
 
-An instruction is text that tells the model how to respond. An instruction can be a directive (**You are helping students learn about US history, so talk about the US unless they specifically ask about other countries.**) or an imperative (**Translate to Tagalog:**). Note that directives are often more efficient and flexible than imperatives. A directive can provide more context, and you can combine several directives in one instruction. It's also easier to implement a series of steps using a sequence of directives. Although it's fine to spell out the steps you want the model to take, you can also just tell the model to break the overall task into steps and follow them, an approach called chain-of-thought prompting.
+An instruction is text that tells the model how to respond. An instruction can be a directive (**You are helping students learn about US history, so talk about the US unless they specifically ask about other countries.**) or an imperative (**Translate to Tagalog:**). 
+
+Directives are more flexible than imperatives. A directive can provide more context, and you can combine several directives in one instruction. It's also easier to implement a series of steps using a sequence of directives. You can spell out the steps that you want the model to take, but you can also just tell the model to break it into steps and then follow them, an approach called chain-of-thought prompting.
 
 The Completion API accepts any instructions that you include in an engineered prompt. The Chat Completion API only accepts instructions that you include in a [system message](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/advanced-prompt-engineering?pivots=programming-language-chat-completions#system-message).
 
@@ -65,17 +67,17 @@ This section explains the use of examples in .NET prompt engineering.
 
 An example is text that shows the model how to respond. The model uses examples to infer what to include in completions. Examples can come either before or after the instructions in an engineered prompt, but the two shouldn't be interspersed. 
 
-Like a normal GPT interaction, an example starts with a prompt. The example can include a completion but it's not required. A completion in an example doesn't have to include the full reponse&mdash;it might just include a formatted word, the first bullet in an unordered list, or something similar to indicate how each completion should start.  
+Like a normal GPT interaction, an example starts with a prompt. The example can include a completion but it's not required. A completion in an example doesn't have to include the full response&mdash;it might just include a formatted word, the first bullet in an unordered list, or something similar to indicate how each completion should start.  
 
 Examples are often classified by the number of prompt/full completion pairs they contain.
 
 - **Zero-shot learning** examples include a prompt, either alone or paired with a partial completion. Because they don't include full completions, zero-shot prompts test a model's responses without giving it any example output. A partial completion only conveys structure or formatting, such as indicating an ordered list structure by including **1.** as the completion. 
-- **Few-shot learning** examples include several prompt/full completion pairs. This  
+- **Few-shot learning** examples include several prompt/full completion pairs. These represent both the input to the model and its output, and so can change the model's behavior by adding to its existing knowledge.
 
 ## Related content
 
 - [Prompt engineering techniques](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/advanced-prompt-engineering)
-- [Related article title](link.md)
+- [Zero-shot and few-shot learning](zero-shot-learning.md)
 - [Related article title](link.md)
 
 --- Add more RC links after more docs are ready

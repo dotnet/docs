@@ -4,7 +4,7 @@ description: "Understand how Generative AI and large language models (LLMs) work
 ms.topic: concept-article
 ms.date: 04/04/2024
 
-#customer intent: As a .NET developer, I want understand how Generative AI and large language models (LLMs) work and how they may be useful in my .NET projects.
+#customer intent: As a .NET developer, I want to understand how Generative AI and large language models (LLMs) work and how they may be useful in my .NET projects.
 
 ---
 

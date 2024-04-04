@@ -43,4 +43,4 @@ This article summarized the tools and SDKs in the .NET ecosystem, with a focus o
 ## Next Steps
 
 - [What is Semantic Kernel?](/semantic-kernel/overview/)
-- [Quickstart - Summarize text using Azure AI chat app with .NET](quickstart-openai-summarize-text.md)
+- [Quickstart - Summarize text using Azure AI chat app with .NET](./quickstarts/quickstart-openai-summarize-text.md)

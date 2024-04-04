@@ -1,14 +1,36 @@
 ---
-title: "Zero-shot and Few-shot learning"
-description: "Learn use cases for zero-shot and few-shot learning in prompt engineering."
+title: "Zero-shot and few-shot learning"
+description: "Learn the use cases for zero-shot and few-shot learning in prompt engineering."
 author: catbutler
 ms.author: [your Microsoft alias or a team alias]
 ms.service: [the approved service name]
 ms.topic: concept-article #Don't change.
 ms.date: [mm/dd/yyyy]
 
-#customer intent: As a .NET developer, I want to understand when to use zero-shot learning and when to few-shot learning during prompt engineering.
+#customer intent: As a .NET developer, I want to understand how zero-shot and few-shot learning techniques can help me improve my prompt engineering.
 
 ---
 
-# Concept 
+# Concept - Develop engineered prompts with zero-shot and few-shot learning
+
+This article explains how zero-shot learning and few-shot learning help you establish performance baselines and experiment with engineered prompts to improve the performance of a GPT-based app and experiment with different engineered prompts to improve that performace.
+
+GPT model performance benefits from [prompt engineering](prompt-engineering-in-dot-net.md), the practice of giving instructions and examples to a model to refine its output. Zero-shot learning and few-shot learning are techniques that you use with examples to iteratively develop engineered prompts.
+
+## Zero-shot learning provides a performance baseline
+
+This section explains how to use zero-shot learning to establish baseline performance. 
+
+Zero-shot learning is the practice of passing example zero-shot prompts (prompts that aren't paired with any completions) to simulate how your app would perform for actual users. Using zero-shot learning lets you evaluate various aspects of your model's performance, such as accuracy or precision. It's a good idea to plan a set of zero-shot prompts that cover the range of expected user inputs, and then use them one at a time to measure performace. 
+
+After you have your baselines you can move on to few-shot learning, which lets you experiment with the effects of various paired completions on each prompt. 
+
+## Few-shot learning supports experimentation and iteration
+
+## Related content
+
+- [Prompt engineering techniques](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/advanced-prompt-engineering)
+- [Related article title](link.md)
+- [Related article title](link.md)
+
+--- Add more RLs after more docs are ready  

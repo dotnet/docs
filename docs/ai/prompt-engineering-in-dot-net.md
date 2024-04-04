@@ -11,68 +11,58 @@ ms.date: [mm/dd/yyyy]
 
 ---
 
-# Basic prompt engineering in .NET
+# Concept - Prompt engineering in .NET
 
 This article explains basic GPT prompt engineering for .NET, including the Completion API and the Chat Completion API. 
 
-GPT models from OpenAI are prompt-based: they respond to user input text (a prompt) with the most likely series of words to follow (a completion). For example, in response to the prompt "The president who served the shortest term was " these models might output the completion "Pedro Lascurain". 
+GPT models from OpenAI are prompt-based: they respond to user input text (a prompt) with the most likely series of words to follow (a completion). For example, in response to the prompt **"The president who served the shortest term was "** these models would probably output the completion _"Pedro Lascurain."_ 
 
-But what if your app is supposed to help US History students? Pedro Lascurain's 45-minute term is the shortest term for any president, but he served Mexico&mdash;the students are probably looking for "William Henry Harrsion". Clearly, the app could be more helpful if you gave it some context. That's the basic idea of prompt engineering: you provide context to your app to help it produce better completions. You can do this by giving the model instructions and examples.
+But what if your app is supposed to help US History students? Pedro Lascurain's 45-minute term is the shortest term for any president, but he served Mexico&mdash;the students are probably looking for _"William Henry Harrsion."_ Clearly, the app could be more helpful to its intended users if you gave it some context. That's the basic idea of prompt engineering: you provide context to your app to help it produce better completions. You can do this by giving the model instructions and examples.
 
-The Completion API and the Chat Completion API target different GPT models, which affects their support for prompt engineering. The Completion API targets the GPT-3 and GPT-35 models, which have no specific format rules for prompt engineering. The Chat Completion API targets the GPT-35-Turbo and GPT-4 models, which require that prompt engineering uses a specific chat-like format consisting of role-based messages. 
+The Completion API and the Chat Completion API target different GPT models with different implementations of prompt engineering. The Completion API targets the GPT-3 and GPT-35 models, which have no specific format rules for prompt engineering. The Chat Completion API targets the GPT-35-Turbo and GPT-4 models, which require that prompt engineering uses a specific chat-like format consisting of role-based messages. 
 
 ## Instructions
 
-An instruction is text that tells the model how to respond. You can use directives (such as **You are helping students learn about US history, so talk about the US unless they specifically ask about other countries.**) and imperatives (such as **Translate to Tagalog:**). 
+This section explains the use of instructions in prompt engineering. 
 
-The Completion API will follow any instructions that you include in an engineered prompt. The Chat Completion API only follows instructions that are part of a [system message](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/advanced-prompt-engineering?pivots=programming-language-chat-completions#system-message). Directives can be more efficient and flexible than imperatives, especially with the Chat Completion API, because a directive lets you provide more context in one instruction.
+An instruction is text that tells the model how to respond. An instruction can be a directive (**You are helping students learn about US history, so talk about the US unless they specifically ask about other countries.**) or an imperative (**Translate to Tagalog:**). Note that directives are often more efficient and flexible than imperatives, because a directive can provide more context in one instruction.
 
-Sometimes GPT models misunderstand an instruction that you thought was clear. You can clarify an instruction by including primary content (text to process using the instruction), supporting content (text referenced by the instruction), and cues (text to use to format completions). You can include these clarifications when you add an instruction, and can add or adjust them after you test your instruction's effect. 
+The Completion API accepts any instructions that you include in an engineered prompt. The Chat Completion API only accepts instructions that you include in a [system message](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/advanced-prompt-engineering?pivots=programming-language-chat-completions#system-message).
+
+Sometimes GPT models don't follow an instruction that you thought was clear. You can clarify an instruction by including primary content, supporting content, and cues. You can include these clarifications when you add an instruction, and can add or adjust them after you test your instruction's effect. 
  
 ### Primary content
 
-Primary content is text you include to process with an instruction. For example, you could add an English phrase with the instruction **Translate to Tagalog:** to have the model produce a Tagalog version of the phrase. 
+Primary content is text you include to process with an instruction. For example, you might use the instruction **Produce a list of US Presidents' executive accomplishments.**, you could use a wiki page as primary content and get a list of accomplishments that are present in that page.   
  
---- Need better understanding of how this works with the Chat Completion API
+--- Need more about how this works with the Chat Completion API
 
 ### Supporting content
 
-Supporting content is text that an instruction uses as input but isn't the subject of the instruction. For example, you might use the instruction "Summarize content about historical figures and list US Presidents in descending order of term length, you could use a wiki page as primary content
+Supporting content is text that an instruction uses as input but isn't the subject of the instruction. The instruction must refer to the supporting content. Suppose you use the instruction **Produce a list of US Presidents' executive accomplishments** to produce some kind of a list. But what if you want the list to group the accomplishments by a specific set of categories? You could adjust your instruction by appending **, grouped in categories** to the instruction, but it's unlikely that a model will correctly determine which specific categories you want. You could use supporting content to specify the categories and adjust your instruction accordingly. You could change your instruction to **Produce a list of US Presidents' executive accomplishments, grouped by my favorite category** and then add a line of supporting content: **My favorite categories: domestic policy, judicial appointments, trade agreements, space exploration**. 
+
+### Cues
+
+A cue is text you include after an instruction to convey the desired structure or format of output. Even though you use cues with instructions, like an example a cue shows the model what you want instead of telling it exactly what to do. Suppose you use an instruction to tell the model to produce a list of presidential accomplishments by category and add supporting content to tell the model what categories to use. You decide that you want the model to produce a nested list with all caps for categories, with each president's accomplishments in each category listed on one line that begins with their name. After your instruction and supporting content, you could add the following cue to show the model how to structure and format the list:
+
+**DOMESTIC POLICY**
+**- George Washington:** 
+**- Thomas Jefferson:**
 
 ## Examples 
 
-Use an example to show the model how to respond. An example includes a prompt paired with a partial completion (zero-shot) or a full completion (one-shot). You can improve several examples with full completions (few-shot). The model uses examples to generalize what to include in completions. 
+This section explains the use of examples in .NET prompt engineering.
 
-[Describe a main idea.]
+An example is text that shows the model how to respond. At a minimum, an example includes a prompt paired with a partial completion (known as a zero-shot prompt), but you can improve model performance more by using a prompt paired with a full completion (known as a one-shot prompt) or several prompt/completion pairs (known as a few-shot prompt). The model uses examples to infer what to include in completions. 
 
-<!-- Required: Main ideas - H2
+### Zero-shot prompts
 
-Use one or more H2 sections to describe the main ideas
-of the concept.
+A zero-shot prompt 
 
-Follow each H2 heading with a sentence about how
-the section contributes to the whole. Then, describe 
-the concept's critical features as you define what it is.
-
--->
+--- Add cumulative Zero-shot/one=shot/few-shot prompt example 
 
 ## Related content
 
 - [Prompt engineering techniques](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/advanced-prompt-engineering)
 - [Related article title](link.md)
 - [Related article title](link.md)
-
-<!-- Optional: Related content - H2
-
-Consider including a "Related content" H2 section that 
-lists links to 1 to 3 articles the user might find helpful.
-
--->
-
-<!--
-
-Remove all comments except the customer intent
-before you sign off or merge to the main branch.
-
--->
-

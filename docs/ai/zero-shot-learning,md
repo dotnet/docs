@@ -11,27 +11,31 @@ ms.date: [mm/dd/yyyy]
 
 ---
 
-# Concept - Develop engineered prompts with zero-shot and few-shot learning
+# Concept - Zero-shot and few-shot learning
 
-This article explains how zero-shot learning and few-shot learning help you establish performance baselines and experiment with engineered prompts to improve the performance of a GPT-based app and experiment with different engineered prompts to improve that performace.
+This article explains the use of zero-shot learning and few-shot learning in .NET prompt engineering.
 
 GPT model performance benefits from [prompt engineering](prompt-engineering-in-dot-net.md), the practice of giving instructions and examples to a model to refine its output. Zero-shot learning and few-shot learning are techniques that you use to iteratively develop engineered prompts.
 
-## Zero-shot learning provides a performance baseline
+Zero-shot learning relies on the model's existing knowledge to generate responses, making it the most cost-effective option for prompt engineering. However, it doesn't increase your model's knowledge. Few-shot learning is more resource-intensive, but it adds to the model's knowledge. 
 
-This section explains how zero-shot learning helps establish baseline performance for a GPT model. 
+## Zero-shot learning use cases
 
-Zero-shot learning relies on the model's existing knowledge to generate responses. It involves passing zero-shot prompts (prompts that aren't paired with any completions) to simulate how your app would perform for actual users. Using zero-shot learning, you can evaluate various aspects of your model's performance, such as accuracy or precision. If feasible, you should plan a set of zero-shot prompts that cover the range of expected user inputs, and then use them one at a time to measure performance.
+This section explains the use cases for zero-shot learning with a GPT model. 
+
+Zero-shot learning is the practice of passing prompts that aren't paired with verbatim completions, although they can be paired with a cue. There are two primary use cases for zero-shot learning:
+-  Because it relies on the model's existing knowledge, zero-shot learning is not as resource-intensive as few-shot learning, and it works well with LLMs that have already been fined-tuned on instruction datasets. You might be able to rely solely on zero-shot learning and keep costs relatively low. 
+- Zero-shot learning can help you simulate how your app would perform for actual users. This lets you evaluate various aspects of your model's current performance, such as accuracy or precision. In this case, you typically use zero-shot learning to establish a performance baseline and then experiment with few-shot learning to improve performance.
 
 --- Sloan, it's possible to have an LLM generate zero-shot prmopts, but I don't know how it would work in .NET. I'll have to dig around in the APIs and .NET classes to research the question If you have any ideas, this doc could be a lot better if it had info about LLM generation of example prompts in .NET. If not, delete this comment on review and let the MS folks tell us if something's missing. 
 
-After you have your baselines you can move on to few-shot learning, which lets you experiment with the effects of various paired completions on each prompt. 
+## Few-shot learning use cases
 
-## Few-shot learning supports experimentation and iteration
+This section explains the use cases for few-shot learning with a GPT-model.
 
-This section explains how to use few-shot learning to experiment and iterate on prompt/completion pairings to improve performance in a GPT-based app.
-
-Few-shot learning is the practice of passing few-shot prompts (prompts paired with completions) to show your model how to respond.  
+Few-shot learning is the practice of passing few-shot prompts (prompts paired with completions) to show your model how to respond. Unlike zero-shot learning, few-shot learning can add to the model's knowledge. It has two primary use cases:
+- Because it can add to the model's knowledge, few-shot learning can improve a model's performance. Although this can become expensive, if your LLM isn't fined-tuned yet you won't get good performance with zero-shot prompts. In this case, few-shot learning is necessary if you want to improve performance.
+- You can use few-shot learning as a follow-on to zero-shot learning. In this case, you use zero-shot learning to establish a performance baseline, and then experiment with few-shot learning based on the zero-shot prompts you used. This lets you add to the model's knowledge after seeing how it currently responds, so you can iterate and improve performance significantly.   
 
 ## Related content
 

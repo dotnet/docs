@@ -31,11 +31,13 @@ The Completion API accepts any instructions that you include in an engineered pr
 
 Sometimes GPT models don't follow an instruction the way you expect because it needs more context. You can add more context an instruction by including primary content, supporting content, and cues. You can include these clarifications when you add an instruction, and can add or adjust them after you test your instruction's effect. Note that in an engineered prompt, instructions must be clearly distinct from the clarifications you add to them.
 
-Instructions are typically more effective when used with examples. However, when you use both in a prompt you should make sure that the instructions are either above or below the examples to help the model distinguish between them. This is especially important in the Completion API because it accepts prompts in any format. In the Chat Completion API, instructions are confined to system messages, which cannot contain examples.
+Instructions are typically more effective when used with examples. However, when you use both in a prompt you should make sure that the instructions are either above or below the examples for best model performance.
  
 ### Primary content
 
-Primary content is text you prepend to an instruction to indicate that the model should use the text as input for the instruction. For example, if you add the instruction **Produce a list of US Presidents' executive accomplishments.**, you could prepend a wiki page as primary content and get a list of accomplishments that are present in that page.   
+Primary content is text you prepend to an instruction to indicate that the model should use the text as input for the instruction. For example, if you add the instruction **Produce a list of US Presidents' executive accomplishments.**, you could prepend a wiki page as primary content and get a list of accomplishments that are present in that page. 
+
+Make sure you clearly separate primary content from the instructions that apply to it, such as with an intervening line.   
 
 ### Supporting content
 
@@ -44,6 +46,8 @@ Supporting content is text that an instruction uses as input but isn't the subje
 Suppose you use the instruction **Produce a list of US Presidents' executive accomplishments** to produce a list. The model might organized and order it in any number of ways. But what if you want the list to group the accomplishments by a specific set of categories? You could adjust your instruction by appending **, grouped in categories** to it, but a model is unlikely to correctly determine which specific categories you want. 
 
 To make sure the model uses the categories you want, you could append supporting content to specify your categories and adjust your instruction accordingly. You could append this line of supporting content below the instruction: **My favorite categories: domestic policy, judicial appointments, trade agreements, space exploration**, and then change the instruction so it refers to the supporting content: **Produce a list of US Presidents' executive accomplishments, grouped by my favorite category**. 
+
+As with primary content, supporting content should be clearly distinct from the instruction it supports.
 
 ### Cues
 
@@ -59,15 +63,14 @@ Suppose you use an instruction to tell the model to produce a list of presidenti
 
 This section explains the use of examples in .NET prompt engineering.
 
-An example is text that shows the model how to respond. The model uses examples to infer what to include in completions. Examples should either come before our after the instructions in an engineered prompt. 
+An example is text that shows the model how to respond. The model uses examples to infer what to include in completions. Examples can come either before or after the instructions in an engineered prompt, but the two shouldn't be interspersed. 
 
 Like a normal GPT interaction, an example starts with a prompt. The example can include a completion but it's not required. A completion in an example doesn't have to include the full reponse&mdash;it might just include a formatted word, the first bullet in an unordered list, or something similar to indicate how each completion should start.  
 
 Examples are often classified by the number of prompt/full completion pairs they contain.
 
-- **Zero-shot learning** examples include a prompt, either alone or paired with a partial completion. 
-- **One-shot learning** examples include a prompt paired with a full completion. 
-- **Few-shot learning** examples include several prompt/full completion pairs. 
+- **Zero-shot learning** examples include a prompt, either alone or paired with a partial completion. Because they don't include full completions, zero-shot prompts test a model's responses without giving it any example output. A partial completion only conveys structure or formatting, such as indicating an ordered list structure by including **1.** as the completion. 
+- **Few-shot learning** examples include several prompt/full completion pairs. This  
 
 ## Related content
 
@@ -75,4 +78,4 @@ Examples are often classified by the number of prompt/full completion pairs they
 - [Related article title](link.md)
 - [Related article title](link.md)
 
---- Add more RLs after more docs are ready
+--- Add more RC links after more docs are ready

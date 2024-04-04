@@ -105,4 +105,4 @@ points of that feature. However, you need to consider that users of such APIs
 have to turn on preview features too, which exposes them to all runtime,
 library, and language preview behaviors.
 
-[choosing-diagnostic-ids]: diagnostic-ids.md
+[choosing-diagnostic-ids]: ../../csharp/roslyn-sdk/choosing-diagnostic-ids.md

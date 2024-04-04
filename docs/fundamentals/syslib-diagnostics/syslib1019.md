@@ -14,4 +14,15 @@ When a logging method definition doesn't explicitly include a parameter of type 
 
 Ensure the type containing the logging method includes a field of type `ILogger` or include a parameter of type `ILogger` in the logging method signature.
 
+### Primary Constructors
+
+Smallest possible edit to workaround [Dotnet Runtime Issue 91121 - LoggerMessage source generator does not work with logger from primary constructor](https://github.com/dotnet/runtime/issues/91121):
+
+```
+public partial class Foo(ILogger<Foo> logger) {
+    // workaround for https://github.com/dotnet/runtime/issues/91121
+    private readonly ILogger _logger = logger;
+}
+```
+
 [!INCLUDE [suppress-syslib-warning](includes/suppress-source-generator-diagnostics.md)]

@@ -1,7 +1,7 @@
 ---
 title: Logging with the Azure SDK for .NET
 description: Learn how to enable logging with the Azure SDK for .NET client libraries
-ms.date: 2/28/2023
+ms.date: 04/05/2024
 ms.custom: devx-track-dotnet, engagement-fy23
 ms.topic: how-to
 ---
@@ -84,6 +84,7 @@ The following example creates an event listener that logs to the console with a 
 
 ```csharp
 using Azure.Core.Diagnostics;
+using System.Diagnostics.Tracing;
 
 // code omitted for brevity
 
@@ -188,8 +189,7 @@ For more information, see [Logging in .NET Core and ASP.NET Core](/aspnet/core/f
 
 ## Logging using Azure.Monitor.OpenTelemetry.AspNetCore
 
-[Azure Monitor OpenTelemetry Distro](https://www.nuget.org/packages/Azure.Monitor.OpenTelemetry.AspNetCore), starting with version `1.2.0`, supports capturing logs coming from Azure client libraries.
-You can control logging using any of the configuration options discussed in [Logging in .NET Core and ASP.NET Core](/aspnet/core/fundamentals/logging/).
+The [Azure Monitor OpenTelemetry distro](https://www.nuget.org/packages/Azure.Monitor.OpenTelemetry.AspNetCore), starting with version `1.2.0`, supports capturing logs coming from Azure client libraries. You can control logging using any of the configuration options discussed in [Logging in .NET Core and ASP.NET Core](/aspnet/core/fundamentals/logging/).
 
 Using the Azure Service Bus library as an example, complete the following steps:
 
@@ -199,7 +199,7 @@ Using the Azure Service Bus library as an example, complete the following steps:
     dotnet add package Azure.Monitor.OpenTelemetry.AspNetCore
     ```
 
-1. Create or register the Azure SDK library's client - the distro supports both cases.
+1. Create or register the library's client. The distro supports both cases.
 
    ```csharp
    await using var client = new ServiceBusClient("<connection_string>");
@@ -218,18 +218,24 @@ When troubleshooting unexpected behavior with a client library, it's helpful to 
 - The HTTP request body sent to the underlying Azure service's REST API.
 - The HTTP response body received from the Azure service's REST API.
 
-By default, logging of the aforementioned content is disabled. To enable logging of the HTTP request and response bodies, complete the following steps:
+By default, logging of the aforementioned content is disabled. Libraries for Azure services like Event Hubs, Service Bus, and Web PubSub don't support this type of logging. Those libraries are based on alternative protocols, such as AMQP.
 
-1. Set the client options object's <xref:Azure.Core.DiagnosticsOptions.IsLoggingContentEnabled%2A> property to `true`. For example:
+To enable logging of the HTTP request and response bodies, complete the following steps:
+
+1. Set the client options object's <xref:Azure.Core.DiagnosticsOptions.IsLoggingContentEnabled%2A> property to `true`, and pass the options object to the client's constructor. For example:
 
     ```csharp
-    var options = new SecretClientOptions
+    var clientOptions = new SecretClientOptions
     {
         Diagnostics = 
         {
             IsLoggingContentEnabled = true,
         }
     };
+    var client = new SecretClient(
+        new Uri("https://<keyvaultname>.vault.azure.net/"),
+        new DefaultAzureCredential(),
+        clientOptions);
     ```
 
 1. Use your preferred logging approach with an event/log level of verbose/debug or higher. Find your approach in the following table for specific instructions.

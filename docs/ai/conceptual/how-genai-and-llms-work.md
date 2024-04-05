@@ -74,7 +74,7 @@ Some generative AI applications can produce code from natural language inputs. D
 
 Code generation can be used to provide quick implementations of common operations, such as sorting or filtering data, speed up translating code from one language to another, or answer questions about a technology based on specifed reference documentation. For example, a user may input the request, "Show me how to code a game of tic-tac-toe with Python". A generative AI application might produce the following output:
 
-_Sure, here's a simple implementation of a tic-tac-toe game in C#:_
+_Here's a simple example of how you can code a game of tic-tac-toe in C#:_
 
 ```csharp
 using System;
@@ -84,144 +84,135 @@ namespace TicTacToe
     class Program
     {
         static char[] board = { '1', '2', '3', '4', '5', '6', '7', '8', '9' };
-        static int player = 1; // Player 1 starts
-        static int choice;
-        static int flag = 0;
+        static int player = 1; // Player 1 will start
+        static int choice; // The number the player chooses
+        static int flag = 0; // Set the flag value to 0
 
+        // Check if the position is already marked or not
+        private static int CheckPosition(char mark)
+        {
+            for (int i = 0; i < 9; i++)
+            {
+                if (board[i] == mark)
+                {
+                    return 1;
+                }
+            }
+            return 0;
+        }
+
+        // Check if the player has won
+        private static int CheckWin()
+        {
+            // Check if any row has same value
+            for (int i = 0; i < 3; i++)
+            {
+                if (board[i * 3] == board[(i * 3) + 1] && board[(i * 3) + 1] == board[(i * 3) + 2])
+                {
+                    return 1;
+                }
+            }
+
+            // Check if any column has same value
+            for (int i = 0; i < 3; i++)
+            {
+                if (board[i] == board[i + 3] && board[i + 3] == board[i + 6])
+                {
+                    return 1;
+                }
+            }
+
+            // Check if any diagonal has same value
+            if (board[0] == board[4] && board[4] == board[8])
+            {
+                return 1;
+            }
+            if (board[2] == board[4] && board[4] == board[6])
+            {
+                return 1;
+            }
+
+            return 0;
+        }
+
+        // Main method to play the game
         static void Main(string[] args)
         {
             do
             {
-                Console.Clear(); // whenever loop starts, the screen will be cleared
+                Console.Clear(); // Whenever the loop runs, the screen will be cleared
                 Console.WriteLine("Player 1: X and Player 2: O");
                 Console.WriteLine("\n");
-                if (player % 2 == 0) // checking the chance of the player
+
+                if (player % 2 == 0) // If player is even, then it is player 2's turn
                 {
-                    Console.WriteLine("Turn Player 2");
+                    Console.WriteLine("Player 2's turn");
                 }
                 else
                 {
-                    Console.WriteLine("Turn Player 1");
+                    Console.WriteLine("Player 1's turn");
                 }
                 Console.WriteLine("\n");
-                Board(); // calling the board Function
-                choice = int.Parse(Console.ReadLine()); // taking users choice
-                if (board[choice - 1] != 'X' && board[choice - 1] != 'O')
+                DisplayBoard(); // Call the board to display
+                choice = int.Parse(Console.ReadLine()); // Taking users choice
+
+                // Checking if the position is available or not
+                if (CheckPosition(Convert.ToChar(choice.ToString())) != 0 && choice < 10)
                 {
-                    if (player % 2 == 0) // checking the chance of the player
+                    if (player % 2 == 0) // If player 2's turn then mark O
                     {
                         board[choice - 1] = 'O';
                         player++;
                     }
-                    else
+                    else // If player 1's turn then mark X
                     {
                         board[choice - 1] = 'X';
                         player++;
                     }
                 }
-                else // if there is already an X or O, the position is already filled
+                else
                 {
                     Console.WriteLine("Sorry the row {0} is already marked with an {1}", choice, board[choice - 1]);
                     Console.WriteLine("\n");
-                    Console.WriteLine("Please wait 2 second board is loading again.....");
-                    Console.WriteLine("\n");
+                    Console.WriteLine("Please wait 2 second board is loading again...");
                     System.Threading.Thread.Sleep(2000);
                 }
-                flag = CheckWin(); // calling of check win
-            } while (flag != 1 && flag != -1); // This is to check if the game is finished or not
-            Console.Clear(); // clearing the console
-            Board(); // getting the board again
-            if (flag == 1) // if flag value is 1 then some one has win or means who played marked last time which has win
+                flag = CheckWin(); // Calling the checkWin function
+
+            } while (flag != 1 && flag != -1); // Loop will run until the flag value becomes 1
+
+            Console.Clear(); // Clearing the console
+            DisplayBoard(); // Displaying the final board
+
+            if (flag == 1) // If flag value is 1, then some player has won
             {
                 Console.WriteLine("Player {0} has won", (player % 2) + 1);
             }
-            else // if the value is -1 the game will be draw and no one is winner
+            else // If flag value is -1, then the game is a draw
             {
                 Console.WriteLine("Draw");
             }
             Console.ReadLine();
         }
 
-        private static void Board() // Board method which creats board
+        // Method to display the board
+        private static void DisplayBoard()
         {
             Console.WriteLine("     |     |      ");
             Console.WriteLine("  {0}  |  {1}  |  {2}", board[0], board[1], board[2]);
-            Console.WriteLine("_____|_____|_____");
+            Console.WriteLine("_____|_____|_____ ");
             Console.WriteLine("     |     |      ");
             Console.WriteLine("  {0}  |  {1}  |  {2}", board[3], board[4], board[5]);
-            Console.WriteLine("_____|_____|_____");
+            Console.WriteLine("_____|_____|_____ ");
             Console.WriteLine("     |     |      ");
             Console.WriteLine("  {0}  |  {1}  |  {2}", board[6], board[7], board[8]);
             Console.WriteLine("     |     |      ");
-        }
-
-        private static int CheckWin() // checking of winner
-        {
-            #region Horzontal Winning Condtion
-            // Winning Condition For First Row
-            if (board[0] == board[1] && board[1] == board[2])
-            {
-                return 1;
-            }
-            // Winning Condition For Second Row
-            else if (board[3] == board[4] && board[4] == board[5])
-            {
-                return 1;
-            }
-            // Winning Condition For Third Row
-            else if (board[6] == board[7] && board[7] == board[8])
-            {
-                return 1;
-            }
-            #endregion
-
-            #region Vertical Winning Condtion
-            // Winning Condition For First Column
-            else if (board[0] == board[3] && board[3] == board[6])
-            {
-                return 1;
-            }
-            // Winning Condition For Second Column
-            else if (board[1] == board[4] && board[4] == board[7])
-            {
-                return 1;
-            }
-            // Winning Condition For Third Column
-            else if (board[2] == board[5] && board[5] == board[8])
-            {
-                return 1;
-            }
-            #endregion
-
-            #region Diagonal Winning Condition
-            else if (board[0] == board[4] && board[4] == board[8])
-            {
-                return 1;
-            }
-            else if (board[2] == board[4] && board[4] == board[6])
-            {
-                return 1;
-            }
-            #endregion
-
-            #region Checking For Draw
-            // If all the cells or values filled with X or O then any player has won the match
-            else if (board[0] != '1' && board[1] != '2' && board[2] != '3' && board[3] != '4' && board[4] != '5' && board[5] != '6' && board[6] != '7' && board[7] != '8' && board[8] != '9')
-            {
-                return -1;
-            }
-            #endregion
-
-            else
-            {
-                return 0;
-            }
         }
     }
 }
 ```
 
-_You can copy and paste this code into a new C# console application project in your preferred development environment to run and play the game._
+_This code creates a simple console-based tic-tac-toe game in C#. It uses a single-dimensional array to represent the board and checks for a win or draw after each move._
 
 ## How do LLMs work?
 

@@ -1,5 +1,5 @@
 ---
-title: "Package and deploy resources in .NET Apps"
+title: "Package and deploy resources in .NET apps"
 description: Package and deploy resources in .NET apps using a main assembly (hub) and satellite assemblies (spokes). A spoke contains localized resources but no code.
 ms.date: 03/13/2023
 dev_langs:
@@ -29,7 +29,7 @@ helpviewer_keywords:
 ms.assetid: b224d7c0-35f8-4e82-a705-dd76795e8d16
 ---
 
-# Package and deploy resources in .NET Apps
+# Package and deploy resources in .NET apps
 
 Applications rely on the .NET Framework Resource Manager, represented by the <xref:System.Resources.ResourceManager> class, to retrieve localized resources. The Resource Manager assumes that a hub and spoke model is used to package and deploy resources. The hub is the main assembly that contains the nonlocalizable executable code and the resources for a single culture, called the neutral or default culture. The default culture is the fallback culture for the application; it is the culture whose resources are used if localized resources cannot be found. Each spoke connects to a satellite assembly that contains the resources for a single culture, but does not contain any code.
 
@@ -39,7 +39,7 @@ There are several advantages to this model:
 - You can update and change an application's satellite assemblies without recompiling the application.
 - An application needs to load only those satellite assemblies that contain the resources needed for a particular culture. This can significantly reduce the use of system resources.
 
- However, there are also disadvantages to this model:
+However, there are also disadvantages to this model:
 
 - You must manage multiple sets of resources.
 - The initial cost of testing an application increases, because you must test several configurations. Note that in the long term it will be easier and less expensive to test one core application with several satellites, than to test and maintain several parallel international versions.
@@ -57,7 +57,7 @@ For more information, see [Create resource files](create-resource-files.md) and 
 
 ## The resource fallback process
 
-The hub and spoke model for packaging and deploying resources uses a fallback process to locate appropriate resources. If an application requests a localized resource  that is unavailable, the common language runtime searches the hierarchy of cultures for an appropriate fallback resource that most closely matches the user's application's request, and throws an exception only as a last resort. At each level of the hierarchy, if an appropriate resource is found, the runtime uses it. If the resource is not found, the search continues at the next level.
+The hub and spoke model for packaging and deploying resources uses a fallback process to locate appropriate resources. If an application requests a localized resource that's unavailable, the common language runtime searches the hierarchy of cultures for an appropriate fallback resource that most closely matches the user's application's request, and throws an exception only as a last resort. At each level of the hierarchy, if an appropriate resource is found, the runtime uses it. If the resource is not found, the search continues at the next level.
 
 To improve lookup performance, apply the <xref:System.Resources.NeutralResourcesLanguageAttribute> attribute to your main assembly, and pass it the name of the neutral language that will work with your main assembly.
 
@@ -103,7 +103,7 @@ For example, suppose the application requests a resource localized for Spanish (
 
 #### Optimize the .NET Framework resource fallback process
 
-Under the following conditions, you can optimize the process by which the runtime searches for resources in satellite assemblies
+Under the following conditions, you can optimize the process by which the runtime searches for resources in satellite assemblies:
 
 - Satellite assemblies are deployed in the same location as the code assembly. If the code assembly is installed in the [Global Assembly Cache](../../framework/app-domains/gac.md), satellite assemblies are also installed in the global assembly cache. If the code assembly is installed in a directory, satellite assemblies are installed in culture-specific folders of that directory.
 

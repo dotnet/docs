@@ -1,7 +1,7 @@
 ---
 title: Containerize an app with Docker tutorial
-description: In this tutorial, you'll learn how to containerize a .NET application with Docker.
-ms.date: 09/22/2023
+description: In this tutorial, you learn how to containerize a .NET application with Docker.
+ms.date: 03/20/2024
 ms.topic: tutorial
 ms.custom: "mvc"
 zone_pivot_groups: dotnet-version-7-8
@@ -10,7 +10,7 @@ zone_pivot_groups: dotnet-version-7-8
 
 # Tutorial: Containerize a .NET app
 
-In this tutorial, you'll learn how to containerize a .NET application with Docker. Containers have many features and benefits, such as being an immutable infrastructure, providing a portable architecture, and enabling scalability. The image can be used to create containers for your local development environment, private cloud, or public cloud.
+In this tutorial, you learn how to containerize a .NET application with Docker. Containers have many features and benefits, such as being an immutable infrastructure, providing a portable architecture, and enabling scalability. The image can be used to create containers for your local development environment, private cloud, or public cloud.
 
 In this tutorial, you:
 
@@ -21,7 +21,7 @@ In this tutorial, you:
 > - Build a Docker image
 > - Create and run a Docker container
 
-You'll understand the Docker container build and deploy tasks for a .NET application. The *Docker platform* uses the *Docker engine* to quickly build and package apps as *Docker images*. These images are written in the *Dockerfile* format to be deployed and run in a layered container.
+You explore the Docker container build and deploy tasks for a .NET application. The *Docker platform* uses the *Docker engine* to quickly build and package apps as *Docker images*. These images are written in the *Dockerfile* format to be deployed and run in a layered container.
 
 > [!NOTE]
 > This tutorial **is not** for ASP.NET Core apps. If you're using ASP.NET Core, see the [Learn how to containerize an ASP.NET Core application](/aspnet/core/host-and-deploy/docker/building-net-docker-images) tutorial.
@@ -32,17 +32,17 @@ Install the following prerequisites:
 
 :::zone pivot="dotnet-8-0"
 
-- [.NET 8+ SDK](https://dotnet.microsoft.com/download/dotnet/8.0)\
+- [.NET 8+ SDK](https://dotnet.microsoft.com/download/dotnet/8.0).\
 If you have .NET installed, use the `dotnet --info` command to determine which SDK you're using.
-- [Docker Community Edition](https://www.docker.com/products/docker-desktop)
+- [Docker Community Edition](https://www.docker.com/products/docker-desktop).
 - A temporary working folder for the *Dockerfile* and .NET example app. In this tutorial, the name *docker-working* is used as the working folder.
 
 :::zone-end
 :::zone pivot="dotnet-7-0"
 
-- [.NET 7+ SDK](https://dotnet.microsoft.com/download/dotnet/7.0)\
+- [.NET 7+ SDK](https://dotnet.microsoft.com/download/dotnet/7.0).\
 If you have .NET installed, use the `dotnet --info` command to determine which SDK you're using.
-- [Docker Community Edition](https://www.docker.com/products/docker-desktop)
+- [Docker Community Edition](https://www.docker.com/products/docker-desktop).
 - A temporary working folder for the *Dockerfile* and .NET example app. In this tutorial, the name *docker-working* is used as the working folder.
 
 :::zone-end
@@ -55,7 +55,7 @@ You need a .NET app that the Docker container runs. Open your terminal, create a
 dotnet new console -o App -n DotNet.Docker
 ```
 
-Your folder tree looks like the following:
+Your folder tree looks similar to the following directory structure:
 
 ```Directory
 📁 docker-working
@@ -70,7 +70,7 @@ Your folder tree looks like the following:
             └── project.nuget.cache
 ```
 
-The `dotnet new` command creates a new folder named *App* and generates a "Hello World" console application. Change directories and navigate into the *App* folder, from your terminal session. Use the `dotnet run` command to start the app. The application runs, and print `Hello World!` below the command:
+The `dotnet new` command creates a new folder named *App* and generates a "Hello World" console application. Now, you change directories and navigate into the *App* folder from your terminal session. Use the `dotnet run` command to start the app. The application runs, and prints `Hello World!` below the command:
 
 ```dotnetcli
 cd App
@@ -108,7 +108,7 @@ Replace the file with the following code that counts numbers every second:
 
 :::zone-end
 
-Save the file and test the program again with `dotnet run`. Remember that this app runs indefinitely. Use the cancel command <kbd>Ctrl+C</kbd> to stop it. The following is an example output:
+Save the file and test the program again with `dotnet run`. Remember that this app runs indefinitely. Use the cancel command <kbd>Ctrl+C</kbd> to stop it. Consider the following example output:
 
 ```dotnetcli
 dotnet run
@@ -223,6 +223,9 @@ Create a file named *Dockerfile* in the directory containing the *.csproj* and o
 
 The `FROM` keyword requires a fully qualified Docker container image name. The Microsoft Container Registry (MCR, mcr.microsoft.com) is a syndicate of Docker Hub, which hosts publicly accessible containers. The `dotnet` segment is the container repository, whereas the `sdk` or `aspnet` segment is the container image name. The image is tagged with `8.0`, which is used for versioning. Thus, `mcr.microsoft.com/dotnet/aspnet:8.0` is the .NET 8.0 runtime. Make sure that you pull the runtime version that matches the runtime targeted by your SDK. For example, the app created in the previous section used the .NET 8.0 SDK, and the base image referred to in the *Dockerfile* is tagged with **8.0**.
 
+> [!IMPORTANT]
+> When using Windows-based container images, you need to specify the image tag beyond simply `8.0`, for example, `mcr.microsoft.com/dotnet/aspnet:8.0-nanoserver-1809` instead of `mcr.microsoft.com/dotnet/aspnet:8.0`. Select an image name based on whether you're using Nano Server or Windows Server Core and which version of that OS. You can find a full list of all supported tags on .NET's [Docker Hub page](https://hub.docker.com/_/microsoft-dotnet).
+
 Save the *Dockerfile* file. The directory structure of the working folder should look like the following. Some of the deeper-level files and folders have been omitted to save space in the article:
 
 ```Directory
@@ -280,7 +283,15 @@ Save the *Dockerfile* file. The directory structure of the working folder should
 
 :::zone-end
 
-From your terminal, run the following command:
+The `ENTRYPOINT` instruction sets `dotnet` as the host for the `DotNet.Docker.dll`. However, it's possible to instead define the `ENTRYPOINT` as the app executable itself, relying on the OS as the app host:
+
+```dockerfile
+ENTRYPOINT ["./DotNet.Docker"]
+```
+
+This causes the app to be executed directly, without `dotnet`, and instead relies on the app host and the underlying OS. For more information on deploying cross-platform binaries, see [Produce a cross-platform binary](../deploying/index.md#produce-an-executable).
+
+To build the container, from your terminal, run the following command:
 
 ```console
 docker build -t counter-image -f Dockerfile .
@@ -292,8 +303,8 @@ Docker will process each line in the *Dockerfile*. The `.` in the `docker build`
 
 ```console
 docker images
-REPOSITORY                         TAG       IMAGE ID       CREATED          SIZE
-counter-image                      latest    2f15637dc1f6   10 minutes ago   217MB
+REPOSITORY       TAG       IMAGE ID       CREATED          SIZE
+counter-image    latest    2f15637dc1f6   10 minutes ago   217MB
 ```
 
 The `counter-image` repository is the name of the image. The `latest` tag is the tag that is used to identify the image. The `2f15637dc1f6` is the image ID. The `10 minutes ago` is the time the image was created. The `217MB` is the size of the image. The final steps of the _Dockerfile_ are to create a container from the image and run the app, copy the published app to the container, and define the entry point.
@@ -310,8 +321,8 @@ ENTRYPOINT ["dotnet", "DotNet.Docker.dll"]
 
 ```console
 docker images
-REPOSITORY                         TAG       IMAGE ID       CREATED          SIZE
-counter-image                      latest    2f15637dc1f6   10 minutes ago   208MB
+REPOSITORY       TAG       IMAGE ID       CREATED          SIZE
+counter-image    latest    2f15637dc1f6   10 minutes ago   208MB
 ```
 
 The `counter-image` repository is the name of the image. The `latest` tag is the tag that is used to identify the image. The `2f15637dc1f6` is the image ID. The `10 minutes ago` is the time the image was created. The `208MB` is the size of the image. The final steps of the _Dockerfile_ are to create a container from the image and run the app, copy the published app to the container, and define the entry point.
@@ -325,14 +336,14 @@ ENTRYPOINT ["dotnet", "DotNet.Docker.dll"]
 
 :::zone-end
 
-The `COPY` command tells Docker to copy the specified folder on your computer to a folder in the container. In this example, the *publish* folder is copied to a folder named *App/out* in the container.
+The `FROM` command specifies the base image and tag to use. The `WORKDIR` command changes the **current directory** inside of the container to *App*.
 
-The `WORKDIR` command changes the **current directory** inside of the container to *App*.
+The `COPY` command tells Docker to copy the specified source directory to a destination folder. In this example, the *publish* contents in the `build-env` layer were output into the folder named *App/out*, so it's the source to copy from. All of the published contents in the *App/out* directory are copied into current working directory (*App*).
 
 The next command, `ENTRYPOINT`, tells Docker to configure the container to run as an executable. When the container starts, the `ENTRYPOINT` command runs. When this command ends, the container will automatically stop.
 
 > [!TIP]
-> For added security, you can opt out of the diagnostic pipeline. When you opt-out this allows the container to run as read-only. To do this, specify a `DOTNET_EnableDiagnostics` environment variable as `0` (just before the `ENTRYPOINT` step):
+> Before .NET 8, containers configured to run as read-only may fail with `Failed to create CoreCLR, HRESULT: 0x8007000E`. To address this issue, specify a `DOTNET_EnableDiagnostics` environment variable as `0` (just before the `ENTRYPOINT` step):
 >
 > ```dockerfile
 > ENV DOTNET_EnableDiagnostics=0
@@ -366,7 +377,7 @@ d0be06126f7d   counter-image   "dotnet DotNet.Docke…"   12 seconds ago   Creat
 
 ### Manage the container
 
-The container was created with a specific name `core-counter`, this name is used to manage the container. The following example uses the `docker start` command to start the container, and then uses the `docker ps` command to only show containers that are running:
+The container was created with a specific name `core-counter`. This name is used to manage the container. The following example uses the `docker start` command to start the container, and then uses the `docker ps` command to only show containers that are running:
 
 ```console
 docker start core-counter

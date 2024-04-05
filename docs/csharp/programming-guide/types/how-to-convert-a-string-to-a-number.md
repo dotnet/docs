@@ -1,14 +1,13 @@
 ---
 title: "How to convert a string to a number - C# Programming Guide"
 description: Learn how to convert a string to a number in C# by calling the Parse, TryParse, or Convert class methods.
-ms.date: 02/16/2021
+ms.date: 03/15/2024
 helpviewer_keywords: 
   - "conversions [C#]"
   - "conversions [C#], string to int"
   - "converting strings to int [C#]"
   - "strings [C#], converting to int"
 ms.topic: how-to
-ms.custom: contperf-fy21q3
 ms.assetid: 467b9979-86ee-4afd-b734-30299cda91e3
 adobe-target: true
 ---
@@ -18,11 +17,11 @@ You convert a `string` to a number by calling the `Parse` or `TryParse` method f
   
 It's slightly more efficient and straightforward to call a `TryParse` method (for example, [`int.TryParse("11", out number)`](xref:System.Int32.TryParse%2A)) or `Parse` method (for example, [`var number = int.Parse("11")`](xref:System.Int32.Parse%2A)). Using a <xref:System.Convert> method is more useful for general objects that implement <xref:System.IConvertible>.
   
-You use `Parse` or `TryParse` methods on the numeric type you expect the string contains, such as the <xref:System.Int32?displayProperty=nameWithType> type.  The <xref:System.Convert.ToInt32%2A?displayProperty=nameWithType> method uses <xref:System.Int32.Parse%2A> internally.  The `Parse` method returns the converted number; the `TryParse` method returns a boolean value that indicates whether the conversion succeeded, and returns the converted number in an `out` parameter. If the string isn't in a valid format, `Parse` throws an exception, but `TryParse` returns `false`. When calling a `Parse` method, you should always use exception handling to catch a <xref:System.FormatException> when the parse operation fails.
+You use `Parse` or `TryParse` methods on the numeric type you expect the string contains, such as the <xref:System.Int32?displayProperty=nameWithType> type. The <xref:System.Convert.ToInt32%2A?displayProperty=nameWithType> method uses <xref:System.Int32.Parse%2A> internally. The `Parse` method returns the converted number; the `TryParse` method returns a boolean value that indicates whether the conversion succeeded, and returns the converted number in an `out` parameter. If the string isn't in a valid format, `Parse` throws an exception, but `TryParse` returns `false`. When calling a `Parse` method, you should always use exception handling to catch a <xref:System.FormatException> when the parse operation fails.
   
 ## Call Parse or TryParse methods
 
-The `Parse` and `TryParse` methods ignore white space at the beginning and at the end of the string, but all other characters must be characters that form the appropriate numeric type (`int`, `long`, `ulong`, `float`, `decimal`, and so on).  Any white space within the string that forms the number causes an error.  For example, you can use `decimal.TryParse` to parse "10", "10.3", or "  10  ", but you can't use this method to parse 10 from "10X", "1 0" (note the embedded space), "10 .3" (note the embedded space), "10e1" (`float.TryParse` works here), and so on. A string whose value is `null` or <xref:System.String.Empty?displayProperty=nameWithType> fails to parse successfully. You can check for a null or empty string before attempting to parse it by calling the <xref:System.String.IsNullOrEmpty%2A?displayProperty=nameWithType> method.
+The `Parse` and `TryParse` methods ignore white space at the beginning and at the end of the string, but all other characters must be characters that form the appropriate numeric type (`int`, `long`, `ulong`, `float`, `decimal`, and so on). Any white space within the string that forms the number causes an error. For example, you can use `decimal.TryParse` to parse "10", "10.3", or "  10  ", but you can't use this method to parse 10 from "10X", "1 0" (note the embedded space), "10 .3" (note the embedded space), "10e1" (`float.TryParse` works here), and so on. A string whose value is `null` or <xref:System.String.Empty?displayProperty=nameWithType> fails to parse successfully. You can check for a null or empty string before attempting to parse it by calling the <xref:System.String.IsNullOrEmpty%2A?displayProperty=nameWithType> method.
 
 The following example demonstrates both successful and unsuccessful calls to `Parse` and `TryParse`.
 
@@ -48,6 +47,6 @@ The following table lists some of the methods from the <xref:System.Convert> cla
 | `uint`       | <xref:System.Convert.ToUInt32%28System.String%29>  |
 | `ulong`      | <xref:System.Convert.ToUInt64%28System.String%29>  |
 
-The following example calls the <xref:System.Convert.ToInt32%28System.String%29?displayProperty=nameWithType> method to convert an input string to an [int](../../language-reference/builtin-types/integral-numeric-types.md). The example catches the two most common exceptions that can be thrown by this method, <xref:System.FormatException> and <xref:System.OverflowException>. If the resulting number can be incremented without exceeding <xref:System.Int32.MaxValue?displayProperty=nameWithType>, the example adds 1 to the result and displays the output.
+The following example calls the <xref:System.Convert.ToInt32%28System.String%29?displayProperty=nameWithType> method to convert an input string to an [int](../../language-reference/builtin-types/integral-numeric-types.md). The example catches the two most common exceptions thrown by this method: <xref:System.FormatException> and <xref:System.OverflowException>. If the resulting number can be incremented without exceeding <xref:System.Int32.MaxValue?displayProperty=nameWithType>, the example adds 1 to the result and displays the output.
 
 [!code-csharp[Parsing with Convert methods](~/samples/snippets/csharp/programming-guide/string-to-number/convert/program.cs)]

@@ -1,9 +1,9 @@
 ---
-title: "Breaking change: Security token events return a JSonWebToken"
-description: Learn about the breaking change in ASP.NET Core 8.0 where the JwtBearer, WsFederation, and OpenIdConnect events context properties of type 'SecurityToken' now return a 'JSonWebToken' by default.
+title: "Breaking change: Security token events return a JsonWebToken"
+description: Learn about the breaking change in ASP.NET Core 8.0 where the JwtBearer, WsFederation, and OpenIdConnect events context properties of type 'SecurityToken' now return a 'JsonWebToken' by default.
 ms.date: 07/31/2023
 ---
-# Security token events return a JSonWebToken
+# Security token events return a JsonWebToken
 
 The <xref:Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerEvents>, <xref:Microsoft.AspNetCore.Authentication.WsFederation.WsFederationEvents>, and <xref:Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectEvents> events are authentication events fired respectively by the [JwtBearer](xref:Microsoft.AspNetCore.Authentication.JwtBearer), [WsFederation](xref:Microsoft.AspNetCore.Authentication.WsFederation), and [OpenIdConnect](xref:Microsoft.AspNetCore.Authentication.OpenIdConnect) authentication handlers. For example, the <xref:Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerEvents.OnTokenValidated> event is fired when a security token is validated. These events are fired with a context (for example, <xref:Microsoft.AspNetCore.Authentication.JwtBearer.TokenValidatedContext>) that exposes a <xref:Microsoft.AspNetCore.Authentication.JwtBearer.TokenValidatedContext.SecurityToken?displayProperty=nameWithType> property of abstract type <xref:System.IdentityModel.Tokens.SecurityToken>. The default real implementation of <xref:Microsoft.AspNetCore.Authentication.JwtBearer.TokenValidatedContext.SecurityToken?displayProperty=nameWithType> changed from <xref:System.IdentityModel.Tokens.Jwt.JwtSecurityToken> to <xref:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken>.
 
@@ -13,11 +13,15 @@ ASP.NET Core 8.0 Preview 7
 
 ## Previous behavior
 
-Previously, the affected `SecurityToken` properties were implemented by <xref:System.IdentityModel.Tokens.Jwt.JwtSecurityToken>, which derives from <xref:System.IdentityModel.Tokens.SecurityToken>, <xref:System.IdentityModel.Tokens.Jwt.JwtSecurityToken> is the previous generation of JSON Web Token (JWT) implementation. The <xref:System.IdentityModel.Tokens.Jwt.JwtSecurityToken> tokens were produced by <xref:Microsoft.AspNetCore.Builder.JwtBearerOptions.SecurityTokenValidators>.
+Previously, the affected `SecurityToken` properties were implemented by <xref:System.IdentityModel.Tokens.Jwt.JwtSecurityToken>, which derives from <xref:System.IdentityModel.Tokens.SecurityToken>. <xref:System.IdentityModel.Tokens.Jwt.JwtSecurityToken> is the previous generation of JSON Web Token (JWT) implementation. The <xref:System.IdentityModel.Tokens.Jwt.JwtSecurityToken> tokens were produced by <xref:Microsoft.AspNetCore.Builder.JwtBearerOptions.SecurityTokenValidators>.
+
+In addition, the <xref:System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.DefaultInboundClaimTypeMap?displayProperty=nameWithType> field provided the default claim type mapping for inbound claims.
 
 ## New behavior
 
 Starting in ASP.NET Core 8.0, the <xref:Microsoft.IdentityModel.JsonWebTokens> class, which also derives from <xref:System.IdentityModel.Tokens.SecurityToken>, implements the `SecurityToken` properties, by default. <xref:Microsoft.IdentityModel.JsonWebTokens> tokens are produced by more optimized <xref:Microsoft.IdentityModel.Tokens.TokenHandler> handlers.
+
+In addition, the <xref:Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.DefaultInboundClaimTypeMap?displayProperty=nameWithType> field provides the default claim type mapping for inbound claims.
 
 ## Type of breaking change
 
@@ -37,13 +41,13 @@ For most users, this change shouldn't be a problem as the type of the properties
 
 However, if you were down-casting one of the affected `SecurityToken` properties to `JwtSecurityToken` (for example, to get the claims), you have two options:
 
-- Down-cast the property to `JSonWebToken`:
+- Down-cast the property to `JsonWebToken`:
 
   ```csharp
   service.Configure<JwtBearerOptions>(JwtBearerDefaults.AuthenticationScheme, options => {
-      options.Events.TokenValidated = (context) => {
+      options.Events.OnTokenValidated = (context) => {
           // Replace your cast to JwtSecurityToken.
-          JSonWebToken token = context.SecurityToken as JSonWebToken;
+          JsonWebToken token = context.SecurityToken as JsonWebToken;
           // Do something ...
       };
   });
@@ -54,7 +58,7 @@ However, if you were down-casting one of the affected `SecurityToken` properties
   ```csharp
   service.Configure<JwtBearerOptions>(JwtBearerDefaults.AuthenticationScheme,  options => {
       options.UseSecurityTokenValidators = true;
-      options.Events.TokenValidated = (context) => {
+      options.Events.OnTokenValidated = (context) => {
           // As you were doing before
           JwtSecurityToken token = context.SecurityToken as JwtSecurityToken;
           // Do something ...

@@ -8,7 +8,7 @@ ms.date: 05/02/2023
 Starting in .NET 8, <xref:System.GC.GetGeneration%2A?displayProperty=nameWithType> might return <xref:System.Int32.MaxValue?displayProperty=nameWithType> for objects allocated on non-GC heaps (also referred as "frozen" heaps), where previously it returned 2. When and how the runtime allocates objects on non-GC heaps is an internal implementation detail. String literals, for example, are allocated on a non-GC heap, and the following method call might return <xref:System.Int32.MaxValue?displayProperty=nameWithType>.
 
 ```csharp
-int gen = int GetGeneration("string");
+int gen = GC.GetGeneration("string");
 ```
 
 ## Previous behavior

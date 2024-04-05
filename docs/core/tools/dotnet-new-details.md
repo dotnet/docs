@@ -5,7 +5,7 @@ ms.date: 06/07/2023
 ---
 # dotnet new details
 
-**This article applies to:** ✔️ .NET 8 preview 6
+**This article applies to:** ✔️ .NET 8
 
 ## Name
 

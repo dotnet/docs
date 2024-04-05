@@ -28,7 +28,6 @@ Explicit [interface](../../language-reference/keywords/interface.md) implementat
   
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Object oriented programming](../../fundamentals/object-oriented/index.md)
 - [Interfaces](../../fundamentals/types/interfaces.md)
 - [How to explicitly implement interface members](./how-to-explicitly-implement-interface-members.md)

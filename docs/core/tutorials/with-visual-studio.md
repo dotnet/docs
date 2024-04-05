@@ -1,12 +1,12 @@
 ---
 title: Create a .NET console application using Visual Studio
 description: Learn how to create a .NET console application with C# or Visual Basic using Visual Studio.
-ms.date: 08/22/2023
-zone_pivot_groups: dotnet-version-6-8
+ms.date: 03/21/2024
+zone_pivot_groups: dotnet-version
 dev_langs:
   - "csharp"
   - "vb"
-ms.custom: "vs-dotnet,contperf-fy21q3"
+ms.custom: vs-dotnet
 ---
 # Tutorial: Create a .NET console application using Visual Studio
 
@@ -16,7 +16,7 @@ This tutorial shows how to create and run a .NET console application in Visual S
 
 ## Prerequisites
 
-- [Visual Studio 2022 Preview](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2022) with the **.NET desktop development** workload installed. The .NET 8 SDK is automatically installed when you select this workload.
+- [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2022) with the **.NET desktop development** workload installed. The .NET 8 SDK is automatically installed when you select this workload.
 
   For more information, see [Install the .NET SDK with Visual Studio](../install/windows.md#install-with-visual-studio).
 
@@ -42,7 +42,7 @@ Create a .NET console app project named "HelloWorld".
    :::image type="content" source="./media/with-visual-studio/configure-new-project.png" alt-text="Configure your new project window with Project name, location, and solution name fields":::
 
 1. In the **Additional information** dialog:
-   - Select **.NET 8 (Preview)**.
+   - Select **.NET 8**.
    - Select **Do not use top-level statements**.
    - Select **Create**.
 

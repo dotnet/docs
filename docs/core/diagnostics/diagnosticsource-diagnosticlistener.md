@@ -212,6 +212,22 @@ The `listener.Subscribe()` call in the previous example can be replaced with the
 This efficiently subscribes to only the 'RequestStart' events. All other events will cause the `DiagnosticSource.IsEnabled()`
 method to return `false` and thus be efficiently filtered out.
 
+> [!NOTE]
+> Filtering is only designed as a performance optimization. It is possible for a listener to receive events even when they
+> do not satisfy the filter. This could occur because some other listener has subscribed to the event or because the source
+> of the event didn't check IsEnabled() prior to sending it. If you want to be certain that a given event satisfies the filter
+> you will need to check it inside the callback. For example:
+
+```C#
+    Action<KeyValuePair<string, object>> callback = (KeyValuePair<string, object> evnt) =>
+        {
+            if(predicate(evnt.Key)) // only print out events that satisfy our filter
+            {
+                Console.WriteLine("From Listener {0} Received Event {1} with payload {2}", networkListener.Name, evnt.Key, evnt.Value.ToString());
+            }
+        };
+```
+
 ##### Context-based filtering
 
 Some scenarios require advanced filtering based on extended context.

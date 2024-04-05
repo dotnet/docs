@@ -42,8 +42,6 @@ If **CapStatusMultiDrawerDetect** is set to **false**, then a **DrawerOpened** v
 
 If **CapStatusMultiDrawerDetect** is set to **false**, the method **WaitForDrawerClose** waits for all open cash drawers to be closed before returning to the application.
 
-## See Also
-
-#### Other Resources
+## See also
 
 - [Developing Service Objects Using Base Classes](developing-service-objects-using-base-classes.md)

@@ -53,7 +53,7 @@ The following values returned by this function are defined in the *WbemCli.h* he
 |---------|---------|---------|
 | `WBEM_E_FAILED` | 0x80041001 | There has been a general failure. |
 | `WBEM_E_INVALID_OPERATION` | 0x80041016 | An invalid operation, such as spawning a class from an instance, was requested. |
-| `WBEM_E_INCOMPLETE_CLASS` | The source class was not completely defined or registered with Windows Management, so a new derived class is not permitted. |
+| `WBEM_E_INCOMPLETE_CLASS` | | The source class was not completely defined or registered with Windows Management, so a new derived class is not permitted. |
 | `WBEM_E_OUT_OF_MEMORY` | 0x80041006 | Not enough memory is available to complete the operation. |
 | `WBEM_E_INVALID_PARAMETER` | 0x80041008 | `ppNewClass` is `null`. |
 | `WBEM_S_NO_ERROR` | 0 | The function call was successful.  |

@@ -123,7 +123,6 @@ FROM mcr.microsoft.com/dotnet/aspnet:5.0-windowsservercore-ltsc2019 AS runtime
 WORKDIR /app
 COPY --from=build /app ./
 ENTRYPOINT ["aspnetapp"]
-
 ```
 
 If we're testing the certificates on Linux, you can use the existing Dockerfile.

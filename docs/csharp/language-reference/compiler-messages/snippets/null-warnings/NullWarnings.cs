@@ -35,4 +35,15 @@ internal class NullWarnings
 
 }
 
+internal class UpdatedDefinition
+{
+    // <SnippetUpdatedDefinition>
+    class Container
+    {
+        public List<string> States { get; } = new();
+    }
+    // </SnippetUpdatedDefinition>
+
+}
+
 

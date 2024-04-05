@@ -65,6 +65,8 @@ A character class defines a set of characters, any one of which can occur in an 
 > [!NOTE]
 > Because a positive character group can include both a set of characters and a character range, a hyphen character (`-`) is always interpreted as the range separator unless it is the first or last character of the group.
 
+To include a hyphen as a nonperipheral member of a character group, escape it. For instance, to create a character group for the character `a` and the characters from `-` to `/`, the correct syntax is `[a\--/]`.
+
 Some common regular expression patterns that contain positive character classes are listed in the following table.  
   
 |Pattern|Description|  

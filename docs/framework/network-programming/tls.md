@@ -118,7 +118,7 @@ The WCF framework automatically chooses the highest protocol available up to TLS
 
 We recommend you upgrade your app to .NET Framework 4.7 or a later version. If you cannot upgrade, take the following steps:
 
-- Set the [SchUseStrongCrypto](#schusestrongcrypto) and [SystemDefaultTlsVersions](#systemdefaulttlsversions) registry keys to 1. See [Configuring security via the Windows Registry](#configure-security-via-the-windows-registry). .NET Framework 3.5 supports the `SchUseStrongCrypto` flag only when an explicit TLS value is passed.
+- Set the values of [SchUseStrongCrypto](#schusestrongcrypto) and [SystemDefaultTlsVersions](#systemdefaulttlsversions) registry entries to 1. See [Configuring security via the Windows Registry](#configure-security-via-the-windows-registry). .NET Framework 3.5 supports the `SchUseStrongCrypto` flag only when an explicit TLS value is passed.
 
 - If you're running on .NET Framework 3.5, you need to install a hot patch so that TLS 1.2 can be specified by your program:
 
@@ -187,7 +187,7 @@ All of the registry keys described below have the same effect whether you're doi
 
 ### SchUseStrongCrypto
 
-The `HKEY_LOCAL_MACHINE\SOFTWARE\[Wow6432Node\]Microsoft\.NETFramework\<VERSION>: SchUseStrongCrypto` registry key has a value of type DWORD. A value of 1 causes your app to use strong cryptography. The strong cryptography uses more secure network protocols (TLS 1.2 and TLS 1.1) and blocks protocols that aren't secure. A value of 0 disables strong cryptography. For more information, see [The SCH_USE_STRONG_CRYPTO flag](#the-sch_use_strong_crypto-flag). This registry setting affects only client (outgoing) connections in your application.
+The `HKEY_LOCAL_MACHINE\SOFTWARE\[Wow6432Node\]Microsoft\.NETFramework\<VERSION>: SchUseStrongCrypto` registry entry has a value of type DWORD. A value of 1 causes your app to use strong cryptography. The strong cryptography uses more secure network protocols (TLS 1.2 and TLS 1.1) and blocks protocols that aren't secure. A value of 0 disables strong cryptography. For more information, see [The SCH_USE_STRONG_CRYPTO flag](#the-sch_use_strong_crypto-flag). This registry setting affects only client (outgoing) connections in your application.
 
 If your app targets .NET Framework 4.6 or later versions, this key defaults to a value of 1. That's a secure default that we recommend. If your app targets .NET Framework 4.5.2 or earlier versions, the key defaults to 0. In that case, you should explicitly set its value to 1.
 
@@ -195,7 +195,7 @@ This key should only have a value of 0 if you need to connect to legacy services
 
 ### SystemDefaultTlsVersions
 
-The `HKEY_LOCAL_MACHINE\SOFTWARE\[Wow6432Node\]Microsoft\.NETFramework\<VERSION>: SystemDefaultTlsVersions` registry key has a value of type DWORD. A value of 1 causes your app to allow the operating system to choose the protocol. A value of 0 causes your app to use protocols picked by the .NET Framework.
+The `HKEY_LOCAL_MACHINE\SOFTWARE\[Wow6432Node\]Microsoft\.NETFramework\<VERSION>: SystemDefaultTlsVersions` registry entry has a value of type DWORD. A value of 1 causes your app to allow the operating system to choose the protocol. A value of 0 causes your app to use protocols picked by the .NET Framework.
 
 `<VERSION>` must be v4.0.30319 (for .NET Framework 4 and above) or v2.0.50727 (for .NET Framework 3.5).
 
@@ -205,7 +205,7 @@ For more info, see [Cumulative Update for Windows 10 Version 1511 and Windows Se
 
 For more information with .NET Framework 3.5.1, see [Support for TLS System Default Versions included in .NET Framework 3.5.1 on Windows 7 SP1 and Server 2008 R2 SP1](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the--net-framework).
 
-The following _.REG_ file sets the registry keys and their variants to their most safe values:
+The following _.REG_ file sets the registry entries and their variants to their most safe values:
 
 ```text
 Windows Registry Editor Version 5.00

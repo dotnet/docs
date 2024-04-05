@@ -49,7 +49,7 @@ As the example shows, user-defined reference types support the `==` operator by 
 
 ### Record types equality
 
-Available in C# 9.0 and later, [record types](../builtin-types/record.md) support the `==` and `!=` operators that by default provide value equality semantics. That is, two record operands are equal when both of them are `null` or corresponding values of all fields and auto-implemented properties are equal.
+[Record types](../builtin-types/record.md) support the `==` and `!=` operators that by default provide value equality semantics. That is, two record operands are equal when both of them are `null` or corresponding values of all fields and auto-implemented properties are equal.
 
 :::code language="csharp" source="snippets/shared/EqualityOperators.cs" id="RecordTypesEquality":::
 
@@ -101,7 +101,6 @@ For more information about equality of record types, see the [Equality members](
 
 ## See also
 
-- [C# reference](../index.md)
 - [C# operators and expressions](index.md)
 - <xref:System.IEquatable%601?displayProperty=nameWithType>
 - <xref:System.Object.Equals%2A?displayProperty=nameWithType>

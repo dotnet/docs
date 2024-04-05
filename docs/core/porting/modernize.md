@@ -121,4 +121,4 @@ Perform the following steps to use the _appsettings.json_ file as your configura
 01. Delete the _App.config_ file from the project.
 
     > [!CAUTION]
-    > Make sure that your app runs correctly without the _App.config_ file. Back up the _App.config_ file through source control or by copying the file elsewhere. After you've thoroughly tested your app, delete the _App.config_file.
+    > Make sure that your app runs correctly without the _App.config_ file. Back up the _App.config_ file through source control or by copying the file elsewhere. After you've thoroughly tested your app, delete the _App.config_ file.

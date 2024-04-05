@@ -97,7 +97,7 @@ Beginning with C# 10 and .NET 6, the compiler checks if an interpolated string i
 > [!NOTE]
 > One side effect of interpolated string handlers is that a custom handler, including <xref:System.Runtime.CompilerServices.DefaultInterpolatedStringHandler?displayProperty=nameWithType>, may not evaluate all the interpolation expressions within the interpolated string under all conditions. That means side effects of those expressions may not occur.
 
-In C# 9 and earlier, if an interpolated string has the type `string`, it's typically transformed into a <xref:System.String.Format%2A?displayProperty=nameWithType> method call. The compiler may replace <xref:System.String.Format%2A?displayProperty=nameWithType> with <xref:System.String.Concat%2A?displayProperty=nameWithType> if the analyzed behavior would be equivalent to concatenation.
+Prior to C# 10, if an interpolated string has the type `string`, it's typically transformed into a <xref:System.String.Format%2A?displayProperty=nameWithType> method call. The compiler may replace <xref:System.String.Format%2A?displayProperty=nameWithType> with <xref:System.String.Concat%2A?displayProperty=nameWithType> if the analyzed behavior would be equivalent to concatenation.
 
 If an interpolated string has the type <xref:System.IFormattable> or <xref:System.FormattableString>, the compiler generates a call to the <xref:System.Runtime.CompilerServices.FormattableStringFactory.Create%2A?displayProperty=nameWithType> method.
 
@@ -111,7 +111,6 @@ For more information, see the [Interpolated string expressions](~/_csharpstandar
 
 ## See also
 
-- [C# reference](../index.md)
 - [C# special characters](index.md)
 - [Strings](../../programming-guide/strings/index.md)
 - [Standard numeric format strings](../../../standard/base-types/standard-numeric-format-strings.md)

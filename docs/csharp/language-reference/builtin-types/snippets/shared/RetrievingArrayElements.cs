@@ -10,7 +10,7 @@ public class RetrievingArrayElements
     private static void Retrieving()
     {
         //<RetrievingDataArray>
-        string[] weekDays2 = { "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" };
+        string[] weekDays2 = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
         Console.WriteLine(weekDays2[0]);
         Console.WriteLine(weekDays2[1]);

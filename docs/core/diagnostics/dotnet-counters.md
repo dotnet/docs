@@ -124,7 +124,7 @@ dotnet-counters collect [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
   ```dotnetcli
   > dotnet-counters collect --process-id 1902 --refresh-interval 3 --format csv
 
-  counter_list is unspecified. Monitoring all counters by default.
+  --counters is unspecified. Monitoring System.Runtime counters by default.
   Starting a counter session. Press Q to quit.
   ```
 

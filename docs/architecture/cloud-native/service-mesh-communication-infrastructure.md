@@ -2,7 +2,7 @@
 title: Service Mesh communication infrastructure
 description: Learn about how service mesh technologies streamline cloud-native microservice communication
 author: robvet
-ms.date: 04/06/2022
+ms.date: 12/14/2023
 ---
 
 # Service Mesh communication infrastructure
@@ -57,11 +57,7 @@ We next move to distributed data in cloud-native systems and the benefits and ch
 
 - [Azure API Gateway Ingress Controller](https://azure.github.io/application-gateway-kubernetes-ingress/)
 
-- [About Ingress in Azure Kubernetes Service (AKS)](https://vincentlauzon.com/2018/10/10/about-ingress-in-azure-kubernetes-service-aks/)
-
 - [gRPC Documentation](https://grpc.io/docs/guides/)
-
-- [gRPC for WCF Developers](../grpc-for-wcf-developers/index.md)
 
 - [Comparing gRPC Services with HTTP APIs](/aspnet/core/grpc/comparison?view=aspnetcore-3.0&preserve-view=false)
 

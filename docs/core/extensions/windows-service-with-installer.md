@@ -3,7 +3,7 @@ title: Create a Windows Service installer
 description: Learn how to create a Windows Service installer project.
 author: IEvangelist
 ms.author: dapine
-ms.date: 06/12/2023
+ms.date: 12/13/2023
 ms.topic: tutorial
 ---
 
@@ -23,7 +23,7 @@ In this tutorial, you'll learn how to:
 ## Prerequisites
 
 - You're expected to have completed the [Create a Windows Service](windows-service.md) tutorial, or be prepared to clone the sample repo.
-- The [.NET 6.0 SDK or later](https://dotnet.microsoft.com/download/dotnet)
+- The [.NET 8.0 SDK or later](https://dotnet.microsoft.com/download/dotnet)
 - A Windows OS
 - A .NET integrated development environment (IDE)
   - Feel free to use [Visual Studio](https://visualstudio.microsoft.com)
@@ -187,7 +187,7 @@ After the project reference has been added, configure the _Package.wxs_ file. Op
 
         <!-- Define the directory structure -->
         <Directory Id="TARGETDIR" Name="SourceDir">
-            <Directory Id="ProgramFilesFolder">
+            <Directory Id="ProgramFiles64Folder">
 
                 <!-- Create a folder inside program files -->
                 <Directory Id="ROOTDIRECTORY" Name="$(var.Manufacturer)">

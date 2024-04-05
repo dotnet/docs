@@ -64,7 +64,6 @@ Generic classes encapsulate operations that are not specific to a particular dat
 ## See also
 
 - <xref:System.Collections.Generic>
-- [C# Programming Guide](../index.md)
 - [Generics](../../fundamentals/types/generics.md)
 - [Saving the State of Enumerators](/archive/blogs/wesdyer/saving-the-state-of-enumerators)
 - [An Inheritance Puzzle, Part One](/archive/blogs/ericlippert/an-inheritance-puzzle-part-one)

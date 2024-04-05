@@ -1,7 +1,7 @@
 ---
 title: "Main() and command-line arguments"
 description: Learn about Main() and command-line arguments. The 'Main' method is the entry point of an executable program.
-ms.date: 05/14/2021
+ms.date: 03/14/2024
 f1_keywords:
   - "main_CSharpKeyword"
   - "Main"
@@ -20,16 +20,16 @@ There can only be one entry point in a C# program. If you have more than one cla
 
 :::code language="csharp" source="snippets/main-command-line/TestClass.cs":::
 
-Starting in C# 9, you can omit the `Main` method, and write C# statements as if they were in the `Main` method, as in the following example:
+You can also use Top-level statements in one file as the entry point for your application.
+Just as the `Main` method, top-level statements can also [return values](#main-return-values) and access [command-line arguments](#command-line-arguments).
+For more information, see [Top-level statements](top-level-statements.md).
 
 :::code language="csharp" source="snippets/top-level-statements-1/Program.cs":::
-
-For information about how to write application code with an implicit entry point method, see [Top-level statements](top-level-statements.md).
 
 ## Overview
 
 - The `Main` method is the entry point of an executable program; it is where the program control starts and ends.
-- `Main` is declared inside a class or struct. `Main` must be [`static`](../../language-reference/keywords/static.md) and it need not be [`public`](../../language-reference/keywords/public.md). (In the earlier example, it receives the default access of [`private`](../../language-reference/keywords/private.md).) The enclosing class or struct is not required to be static.
+- `Main` is declared inside a class or struct. `Main` must be [`static`](../../language-reference/keywords/static.md) and it need not be [`public`](../../language-reference/keywords/public.md). (In the earlier example, it receives the default access of [`private`](../../language-reference/keywords/private.md).) An enclosing `class` can be `static`.
 - `Main` can either have a `void`, `int`, `Task`, or `Task<int>` return type.
 - If and only if `Main` returns a `Task` or `Task<int>`, the declaration of `Main` may include the [`async`](../../language-reference/keywords/async.md) modifier. This specifically excludes an `async void Main` method.
 - The `Main` method can be declared with or without a `string[]` parameter that contains command-line arguments. When using Visual Studio to create Windows applications, you can add the parameter manually or else use the <xref:System.Environment.GetCommandLineArgs> method to obtain the command-line arguments. Parameters are read as zero-indexed command-line arguments. Unlike C and C++, the name of the program is not treated as the first command-line argument in the `args` array, but it is the first element of the <xref:System.Environment.GetCommandLineArgs> method.
@@ -110,15 +110,18 @@ Return value = 0
 When you declare an `async` return value for `Main`, the compiler generates the boilerplate code for calling asynchronous methods in `Main`.  If you don't specify the `async` keyword, you need to write that code yourself, as shown in the following example. The code in the example ensures that your program runs until the asynchronous operation is completed:
 
 ```csharp
-public static void Main()
+class AsyncMainReturnValTest
 {
-    AsyncConsoleWork().GetAwaiter().GetResult();
-}
+    public static void Main()
+    {
+        AsyncConsoleWork().GetAwaiter().GetResult();
+    }
 
-private static async Task<int> AsyncConsoleWork()
-{
-    // Main body here
-    return 0;
+    private static async Task<int> AsyncConsoleWork()
+    {
+        // Main body here
+        return 0;
+    }
 }
 ```
 
@@ -187,6 +190,9 @@ long num = Convert.ToInt64(s);
 ```
 
 For more information, see <xref:System.Int64.Parse%2A> and <xref:System.Convert>.
+
+> [!TIP]
+> Parsing command-line arguments can be complex. Consider using the [System.CommandLine](/dotnet/standard/commandline/) library (currently in beta) to simplify the process.
 
 The following example shows how to use command-line arguments in a console application. The application takes one argument at run time, converts the argument to an integer, and calculates the factorial of the number. If no arguments are supplied, the application issues a message that explains the correct usage of the program.
 

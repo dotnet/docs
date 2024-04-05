@@ -4,7 +4,7 @@ public static class NullConditionalShortCircuiting
 {
     public static void Main()
     {
-        Person person = null;
+        Person? person = null;
         person?.Name.Write(); // no output: Write() is not called due to short-circuit.
         try
         {
@@ -19,15 +19,12 @@ public static class NullConditionalShortCircuiting
 
 public class Person
 {
-    public FullName Name { get; set; }
+    public required FullName Name { get; set; }
 }
 
 public class FullName
 {
-    public string FirstName { get; set; }
-    public string LastName { get; set; }
-    public void Write()
-    {
-        Console.WriteLine($"{FirstName} {LastName}");
-    }
+    public required string FirstName { get; set; }
+    public required string LastName { get; set; }
+    public void Write() => Console.WriteLine($"{FirstName} {LastName}");
 }

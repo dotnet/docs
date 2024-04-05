@@ -7,6 +7,9 @@ ms.date: 08/15/2020
 
 Floating point and signed integer values in F# can have associated units of measure, which are typically used to indicate length, volume, mass, and so on. By using quantities with units, you enable the compiler to verify that arithmetic relationships have the correct units, which helps prevent programming errors.
 
+> [!NOTE]
+> These examples demonstrates correctness in arithmetic computations involving units of measure, the feature can also be leveraged for adding type safe annotation with zero representation costs to other types, with approach such as [FSharp.UMX](https://github.com/fsprojects/FSharp.UMX) project.
+
 ## Syntax
 
 ```fsharp

@@ -4,7 +4,7 @@ description: Learn how to prepare .NET libraries for trimming.
 author: sbomer
 ms.author: svbomer
 ms.date: 06/12/2023
-zone_pivot_groups: dotnet-preview-version
+zone_pivot_groups: dotnet-version
 ---
 
 # Prepare .NET libraries for trimming
@@ -59,10 +59,10 @@ Set `<IsTrimmable>true</IsTrimmable>` in the project file.
 
 :::code language="xml" source="~/docs/core/deploying/trimming/snippets/MyLibrary/MyLibrary.csproj.xml" id="snippet" highlight="2":::
 
-Setting `<IsTrimmable>true</IsTrimmable>` marks the assembly as "trimmable" and enables trim warnings. "trimmable" means the project:
+Setting the MSBuild property `IsTrimmable` to `true` marks the assembly as "trimmable" and enables trim warnings. "Trimmable" means the project:
 
 * Is considered compatible with trimming.
-* Shouldn't generate trim related warnings when building. When used in a trimmed app, the assembly has its unused members trimmed in the final output.
+* Shouldn't generate trim-related warnings when building. When used in a trimmed app, the assembly has its unused members trimmed in the final output.
 
 The `IsTrimmable` property defaults to `true` when configuring a project as AOT-compatible with `<IsAotCompatible>true</IsAotCompatible>`. For more information, see [AOT-compatibility analyzers](../native-aot/index.md#aot-compatibility-analyzers).
 
@@ -70,10 +70,7 @@ To generate trim warnings without marking the project as trim-compatible, use `<
 
 ### Show all warnings with test app
 
-To show all analysis warnings for a library, the trimmer must analyze the implementation:
-
-* Of the library.
-* All dependencies the library uses.
+To show all analysis warnings for a library, the trimmer must analyze the implementation of the library and of all dependencies the library uses.
 
 When building and publishing a library:
 
@@ -85,7 +82,8 @@ Because of the dependency limitations, a self-contained test app which uses the 
 * The library code.
 * The code that the library references from its dependencies.
 
-***Note:*** If the library has different behavior depending on the target framework, create a trimming test app for each of the target frameworks that support trimming. For example, if the library uses [conditional compilation](../../../csharp/language-reference/preprocessor-directives.md#conditional-compilation) such as `#if NET7_0` to change behavior.
+> [!NOTE]
+> If the library has different behavior depending on the target framework, create a trimming test app for each of the target frameworks that support trimming. For example, if the library uses [conditional compilation](../../../csharp/language-reference/preprocessor-directives.md#conditional-compilation) such as `#if NET7_0` to change behavior.
 
 To create the trimming test app:
 

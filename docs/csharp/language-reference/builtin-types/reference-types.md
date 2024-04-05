@@ -239,7 +239,7 @@ Action<string> wrappedObjectAction = new Action<string>(objectAction);
 Action<string> combination = stringAction + wrappedObjectAction;
 ```
 
-Beginning with C# 9, you can declare [*function pointers*](../unsafe-code.md#function-pointers), which use similar syntax. A function pointer uses the `calli` instruction instead of instantiating a delegate type and calling the virtual `Invoke` method.
+You can declare [*function pointers*](../unsafe-code.md#function-pointers), which use similar syntax. A function pointer uses the `calli` instruction instead of instantiating a delegate type and calling the virtual `Invoke` method.
 
 ## The dynamic type
 
@@ -284,7 +284,6 @@ For more information, see the following sections of the [C# language specificati
 
 ### See also
 
-- [C# Reference](../index.md)
 - [C# Keywords](../keywords/index.md)
 - [Events](../../programming-guide/events/index.md)
 - [Using Type dynamic](../../advanced-topics/interop/using-type-dynamic.md)

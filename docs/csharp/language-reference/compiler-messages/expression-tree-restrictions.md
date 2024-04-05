@@ -176,6 +176,7 @@ The following expressions are prohibited:
 - `ref` returns aren't allowed.
 - Calls to methods that return by `ref` aren't allowed.
 - [static abstract interface members](../keywords/interface.md#static-abstract-and-virtual-members) can't be accessed.
+- [Inline arrays](../builtin-types/struct.md#inline-arrays).
 
 Other restrictions are:
 

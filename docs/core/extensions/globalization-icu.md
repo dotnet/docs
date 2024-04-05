@@ -69,6 +69,56 @@ You can run code analysis rules [CA1307: Specify StringComparison for clarity](.
 
 For more information, see [Behavior changes when comparing strings on .NET 5+](../../standard/base-types/string-comparison-net-5-plus.md).
 
+#### String.EndsWith
+
+```csharp
+const string foo = "abc";
+
+Console.WriteLine(foo.EndsWith("\0"));
+Console.WriteLine(foo.EndsWith("c"));
+Console.WriteLine(foo.EndsWith("\0", StringComparison.CurrentCulture));
+Console.WriteLine(foo.EndsWith("\0", StringComparison.Ordinal));
+Console.WriteLine(foo.EndsWith('\0'));
+```
+
+> [!IMPORTANT]
+> In .NET 5+ running on Windows versions listed in the [ICU on Windows](#icu-on-windows) table, the preceding snippet prints:
+>
+> ```Output
+> True
+> True
+> True
+> False
+> False
+> ```
+
+To avoid this behavior, use the `char` parameter overload or `StringComparison.Oridinal`.
+
+#### String.StartsWith
+
+```csharp
+const string foo = "abc";
+
+Console.WriteLine(foo.StartsWith("\0"));
+Console.WriteLine(foo.StartsWith("a"));
+Console.WriteLine(foo.StartsWith("\0", StringComparison.CurrentCulture));
+Console.WriteLine(foo.StartsWith("\0", StringComparison.Ordinal));
+Console.WriteLine(foo.StartsWith('\0'));
+```
+
+> [!IMPORTANT]
+> In .NET 5+ running on Windows versions listed in the [ICU on Windows](#icu-on-windows) table, the preceding snippet prints:
+>
+> ```Output
+> True
+> True
+> True
+> False
+> False
+> ```
+
+To avoid this behavior, use the `char` parameter overload or `StringComparison.Oridinal`.
+
 #### TimeZoneInfo.FindSystemTimeZoneById
 
 ICU provides the flexibility to create <xref:System.TimeZoneInfo> instances using [IANA](https://www.iana.org/time-zones) time zone IDs, even when the application is running on Windows. Similarly, you can create <xref:System.TimeZoneInfo> instances with Windows time zone IDs, even when running on non-Windows platforms. However, it's important to note that this functionality isn't available when using [NLS mode](#use-nls-instead-of-icu) or [globalization invariant mode](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md).

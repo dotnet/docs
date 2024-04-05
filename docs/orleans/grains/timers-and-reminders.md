@@ -19,7 +19,7 @@ Each activation may have zero or more timers associated with it. The runtime exe
 To start a timer, use the <xref:Orleans.Grain.RegisterTimer%2A?displayProperty=nameWithType> method, which returns an <xref:System.IDisposable> reference:
 
 ```csharp
-public IDisposable RegisterTimer(
+protected IDisposable RegisterTimer(
     Func<object, Task> asyncCallback, // function invoked when the timer ticks
     object state,                     // object to pass to asyncCallback
     TimeSpan dueTime,                 // time to wait before the first timer tick

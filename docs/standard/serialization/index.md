@@ -1,7 +1,7 @@
 ---
 title: "Serialization - .NET"
 description: This article provides information about .NET serialization technologies, including binary serialization, XML and SOAP serialization, and JSON serialization.
-ms.date: "09/02/2019"
+ms.date: 10/19/2023
 helpviewer_keywords:
   - "JSON serialization"
   - "XML serialization, defined"
@@ -18,7 +18,7 @@ Serialization is the process of converting the state of an object into a form th
 
 .NET features the following serialization technologies:
 
-- [JSON serialization](system-text-json/overview.md) serializes only public properties and does not preserve type fidelity. JSON is an open standard that is an attractive choice for sharing data across the web.
+- [JSON serialization](system-text-json/overview.md) maps .NET objects to and from JavaScript Object Notation (JSON). JSON is an open standard that's commonly used to share data across the web. The JSON serializer serializes public properties by default, and can be configured to serialize private and internal members as well.
 
 - [XML and SOAP serialization](xml-and-soap-serialization.md) serializes only `public` properties and fields and does not preserve type fidelity. This is useful when you want to provide or consume data without restricting the application that uses the data. Because XML is an open standard, it is an attractive choice for sharing data across the Web. SOAP is likewise an open standard, which makes it an attractive choice.
 

@@ -96,10 +96,10 @@ public class Program
     static void Main()
     {
         // Some simple data sources.
-        string[] names = {"Terry Adams","Fadi Fakhouri", "Hanying Feng",
-                            "Cesar Garcia", "Debra Garcia"};
-        string[] addresses = {"123 Main St.", "345 Cypress Ave.", "678 1st Ave",
-                                "12 108th St.", "89 E. 42nd St."};
+        string[] names = ["Terry Adams","Fadi Fakhouri", "Hanying Feng",
+                            "Cesar Garcia", "Debra Garcia"];
+        string[] addresses = ["123 Main St.", "345 Cypress Ave.", "678 1st Ave",
+                                "12 108th St.", "89 E. 42nd St."];
 
         // Simple query to demonstrate object creation in select clause.
         // Create Contact objects by using a constructor.
@@ -123,10 +123,6 @@ public class Program
         // List elements cannot be modified by client code.
         // CS0272:
         // list2[0].Name = "Eugene Zabokritski";
-
-        // Keep the console open in debug mode.
-        Console.WriteLine("Press any key to exit.");
-        Console.ReadKey();
     }
 }
 

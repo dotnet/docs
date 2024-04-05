@@ -3,7 +3,7 @@ title: Testing in .NET
 description: This article gives a brief overview of testing concepts, terminology, and tools for testing in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 03/22/2023
+ms.date: 12/15/2023
 ms.custom: devdivchpfy22
 ---
 
@@ -64,6 +64,10 @@ For more information, see the following resources:
 - [Unit testing with C#](unit-testing-with-mstest.md)
 - [Unit testing with F#](unit-testing-fsharp-with-mstest.md)
 - [Unit testing with Visual Basic](unit-testing-visual-basic-with-mstest.md)
+
+#### MSTest runner
+
+The MSTest runner is a lightweight and portable alternative to [VSTest](https://github.com/microsoft/vstest) for running tests in continuous integration (CI) pipelines, and in Visual Studio Test Explorer. For more information, see [MSTest runner overview](unit-testing-mstest-runner-intro.md).
 
 ### .NET CLI
 

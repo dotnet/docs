@@ -1,7 +1,7 @@
 ---
 title: How to instantiate JsonSerializerOptions with System.Text.Json
 description: "Learn about constructors for JsonSerializerOptions instances and how to reuse JsonSerializerOptions instances."
-ms.date: 05/18/2023
+ms.date: 02/07/2024
 no-loc: [System.Text.Json]
 zone_pivot_groups: dotnet-version
 dev_langs:
@@ -37,7 +37,7 @@ The size of the metadata cache in a `JsonSerializerOptions` instance depends on 
 
 ::: zone-end
 
-::: zone pivot="dotnet-7-0"
+::: zone pivot="dotnet-8-0,dotnet-7-0"
 
 ## The `JsonSerializerOptions.Default` property
 
@@ -49,8 +49,8 @@ If the instance of `JsonSerializerOptions` that you need to use is the default i
 
 There is a [JsonSerializerOptions constructor](xref:System.Text.Json.JsonSerializerOptions.%23ctor(System.Text.Json.JsonSerializerOptions)) that lets you create a new instance with the same options as an existing instance, as shown in the following example:
 
-:::code language="csharp" source="snippets/how-to-5-0/csharp/CopyOptions.cs" highlight="28":::
-:::code language="vb" source="snippets/how-to-5-0/vb/CopyOptions.vb" :::
+:::code language="csharp" source="snippets/how-to-contd/csharp/CopyOptions.cs" highlight="28":::
+:::code language="vb" source="snippets/how-to-contd/vb/CopyOptions.vb" :::
 
 The metadata cache of the existing `JsonSerializerOptions` instance isn't copied to the new instance. So using this constructor is not the same as reusing an existing instance of `JsonSerializerOptions`.
 
@@ -62,7 +62,7 @@ The following options have different defaults for web apps:
 * <xref:System.Text.Json.JsonNamingPolicy> = <xref:System.Text.Json.JsonNamingPolicy.CamelCase>
 * <xref:System.Text.Json.JsonSerializerOptions.NumberHandling%2A> = <xref:System.Text.Json.Serialization.JsonNumberHandling.AllowReadingFromString>
 
-The [JsonSerializerOptions constructor](xref:System.Text.Json.JsonSerializerOptions.%23ctor(System.Text.Json.JsonSerializerDefaults)) lets you create a new instance with the default options that ASP.NET Core uses for web apps, as shown in the following example:
+In .NET 9 and later versions, you can use the `JsonSerializerOptions.Web` <!-- <xref:System.Text.Json.JsonSerializerOptions.Web?displayProperty=nameWithType> --> singleton to serialize with the default options that ASP.NET Core uses for web apps. In earlier versions, call the [JsonSerializerOptions constructor](xref:System.Text.Json.JsonSerializerOptions.%23ctor(System.Text.Json.JsonSerializerDefaults)) to create a new instance with the web defaults, as shown in the following example:
 
-:::code language="csharp" source="snippets/how-to-5-0/csharp/OptionsDefaults.cs" highlight="23":::
-:::code language="vb" source="snippets/how-to-5-0/vb/OptionsDefaults.vb" :::
+:::code language="csharp" source="snippets/how-to-contd/csharp/OptionsDefaults.cs" highlight="23":::
+:::code language="vb" source="snippets/how-to-contd/vb/OptionsDefaults.vb" :::

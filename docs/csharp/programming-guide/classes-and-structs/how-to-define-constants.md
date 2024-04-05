@@ -6,7 +6,6 @@ helpviewer_keywords:
   - "C# language, constants"
   - "constants [C#]"
 ms.topic: how-to
-ms.custom: contperf-fy21q2
 ms.assetid: 43f511be-346c-4b8a-995e-aded94542ece
 ---
 # How to define constants in C\#

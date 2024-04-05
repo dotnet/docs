@@ -1,7 +1,7 @@
 ---
 title: What's new in C# 11 - C# Guide
 description: Get an overview of the new features added in C# 11.
-ms.date: 11/21/2022
+ms.date: 03/15/2024
 ms.custom: UpdateFrequency1
 ---
 # What's new in C# 11
@@ -186,7 +186,7 @@ For more information on required members, See the [init-only](../properties.md#i
 
 You can declare `ref` fields inside a [`ref struct`](../language-reference/builtin-types/ref-struct.md). This supports types such as <xref:System.Span%601?displayProperty=nameWithType> without special attributes or hidden internal types.
 
-You can add the [`scoped`](../language-reference/statements/declarations.md#scoped-ref) modifier to any `ref` declaration. This limits the [scope](../language-reference/keywords/method-parameters.md#scope-of-references-and-values) where the reference can escape to.
+You can add the [`scoped`](../language-reference/statements/declarations.md#scoped-ref) modifier to any `ref` declaration. This limits the [scope](../language-reference/keywords/method-parameters.md#safe-context-of-references-and-values) where the reference can escape to.
 
 ## File local types
 

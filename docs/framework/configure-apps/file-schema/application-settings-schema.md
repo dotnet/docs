@@ -16,6 +16,11 @@ Application settings allow a Windows Forms or ASP.NET application to store and r
 
 By default, application settings in a Windows Forms application uses the <xref:System.Configuration.LocalFileSettingsProvider> class, which uses the .NET configuration system to store settings in an XML configuration file. For more information about the files used by application settings, see [Application Settings Architecture](/dotnet/desktop/winforms/advanced/application-settings-architecture).
 
+> [!IMPORTANT]
+> Most configuration sections defined by .NET Framework are no longer functional in .NET 6+ and .NET Core versions. <xref:System.Configuration.ConfigurationManager> is only provided for compatibility. Instead of *app.config*, modern .NET uses the *appsettings.json* file for app settings. See [Modernize after upgrading to .NET from .NET Framework](../../../core/porting/modernize.md).
+>
+> Consider removing the usage in *app.config* and calling the corresponding API, if available, to make the same setting. For more information, see [Configuration in .NET](../../../core/extensions/configuration.md).
+
 Application settings defines the following elements as part of the configuration files it uses.
 
 | Element                    | Description                                                                           |
@@ -41,6 +46,20 @@ This element defines a setting. It has the following attributes.
 | ---------------- | ----------- |
 | **name**         | Required. The unique ID of the setting. Settings created through Visual Studio are saved with the name `ProjectName.Properties.Settings`. |
 | **serializeAs** | Required. The format to use for serializing the value to text. Valid values are:<br><br>- `string`. The value is serialized as a string using a <xref:System.ComponentModel.TypeConverter>.<br>- `xml`. The value is serialized using XML serialization.<br>- `binary`. The value is serialized as text-encoded binary using binary serialization.<br />- `custom`. The settings provider has inherent knowledge of this setting and serializes and de-serializes it. |
+
+Add the names for settings that you create in **\<applicationSettings>** as entries under the **\<configSections>** element at the top of the file. For example:
+
+```xml
+<configuration>
+    <configSections>
+        <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" >
+            <section name="WindowsFormsApp1.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false" />
+            <section name="WindowsFormsApp1.Properties.MyCustomSettings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false" />
+        </sectionGroup>
+    </configSections>
+    ...
+</configuration>
+```
 
 ## \<value> element
 

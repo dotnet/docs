@@ -85,7 +85,7 @@ Sometimes the compiler can't infer the types of input parameters. You can specif
 
 Input parameter types must be all explicit or all implicit; otherwise, a [CS0748](../compiler-messages/lambda-expression-errors.md#lambda-expression-parameters-and-returns) compiler error occurs.
 
-Beginning with C# 9.0, you can use [discards](../../fundamentals/functional/discards.md) to specify two or more input parameters of a lambda expression that aren't used in the expression:
+You can use [discards](../../fundamentals/functional/discards.md) to specify two or more input parameters of a lambda expression that aren't used in the expression:
 
 :::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetDiscards":::
 
@@ -293,7 +293,7 @@ You can also add attributes to the input parameters or return value, as the foll
 
 ```csharp
 var concat = ([DisallowNull] string a, [DisallowNull] string b) => a + b;
-var inc = [return: NotNullifNotNull(nameof(s))] (int? s) => s.HasValue ? s++ : null;
+var inc = [return: NotNullIfNotNull(nameof(s))] (int? s) => s.HasValue ? s++ : null;
 ```
 
 As the preceding examples show, you must parenthesize the input parameters when you add attributes to a lambda expression or its parameters.
@@ -311,11 +311,11 @@ The following rules apply to variable scope in lambda expressions:
 
 - A variable that is captured won't be garbage-collected until the delegate that references it becomes eligible for garbage collection.
 - Variables introduced within a lambda expression aren't visible in the enclosing method.
-- A lambda expression can't directly capture an [in](../keywords/in-parameter-modifier.md), [ref](../keywords/ref.md), or [out](../keywords/out-parameter-modifier.md) parameter from the enclosing method.
+- A lambda expression can't directly capture an [in](../keywords/method-parameters.md#in-parameter-modifier), [ref](../keywords/ref.md), or [out](../keywords/method-parameters.md#out-parameter-modifier) parameter from the enclosing method.
 - A [return](../statements/jump-statements.md#the-return-statement) statement in a lambda expression doesn't cause the enclosing method to return.
 - A lambda expression can't contain a [goto](../statements/jump-statements.md#the-goto-statement), [break](../statements/jump-statements.md#the-break-statement), or [continue](../statements/jump-statements.md#the-continue-statement) statement if the target of that jump statement is outside the lambda expression block. It's also an error to have a jump statement outside the lambda expression block if the target is inside the block.
 
-Beginning with C# 9.0, you can apply the `static` modifier to a lambda expression to prevent unintentional capture of local variables or instance state by the lambda:
+You can apply the `static` modifier to a lambda expression to prevent unintentional capture of local variables or instance state by the lambda:
 
 :::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetStatic":::
 
@@ -325,16 +325,15 @@ A static lambda can't capture local variables or instance state from enclosing s
 
 For more information, see the [Anonymous function expressions](~/_csharpstandard/standard/expressions.md#1219-anonymous-function-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
-For more information about features added in C# 9.0 and later, see the following feature proposal notes:
+For more information about these features, see the following feature proposal notes:
 
-- [Lambda discard parameters (C# 9.0)](~/_csharplang/proposals/csharp-9.0/lambda-discard-parameters.md)
-- [Static anonymous functions (C# 9.0)](~/_csharplang/proposals/csharp-9.0/static-anonymous-functions.md)
+- [Lambda discard parameters](~/_csharplang/proposals/csharp-9.0/lambda-discard-parameters.md)
+- [Static anonymous functions](~/_csharplang/proposals/csharp-9.0/static-anonymous-functions.md)
 - [Lambda improvements (C# 10)](~/_csharplang/proposals/csharp-10.0/lambda-improvements.md)
 
 ## See also
 
 - [Use local function instead of lambda (style rule IDE0039)](../../../fundamentals/code-analysis/style-rules/ide0039.md)
-- [C# reference](../index.md)
 - [C# operators and expressions](index.md)
 - [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/)
 - [Expression trees](../../advanced-topics/expression-trees/index.md)

@@ -23,7 +23,7 @@ For more information on custom metric instrumentation and options, see [Compare 
 
 ## Create an example app
 
-Before metrics can be collected, measurements must be produced. This tutorial creates an app that has basic metric instrumentation. The .NET runtime also has [various metrics built-in](available-counters.md). For more information about creating new metrics using the <xref:System.Diagnostics.Metrics.Meter?displayProperty=nameWithType> API, see [the instrumentation tutorial](metrics-instrumentation.md).
+Before metrics can be collected, measurements must be produced. This tutorial creates an app that has basic metric instrumentation. The .NET runtime also has [various metrics built-in](built-in-metrics.md). For more information about creating new metrics using the <xref:System.Diagnostics.Metrics.Meter?displayProperty=nameWithType> API, see [the instrumentation tutorial](metrics-instrumentation.md).
 
 ```dotnetcli
 dotnet new console -o metric-instr
@@ -97,7 +97,7 @@ Press p to pause, r to resume, q to quit.
     Working Set (MB)                                              30
 ```
 
-For more information, see [dotnet-counters](dotnet-counters.md). To learn more about metrics in .NET, see [built-in metrics](available-counters.md).
+For more information, see [dotnet-counters](dotnet-counters.md). To learn more about metrics in .NET, see [built-in metrics](built-in-metrics.md).
 
 ## View metrics in Grafana with OpenTelemetry and Prometheus
 
@@ -192,9 +192,9 @@ If the Prometheus server hasn't been scraping the example app for long, you may 
 
    ![Hats sold Grafana dashboard](~/docs/core/diagnostics/media/grafana-hats-sold-dashboard.png)]
 
-## Create a custom collection tool using the .NET <xref:System.Diagnostics.Metrics.MeterListener> API
+## Create a custom collection tool using the .NET MeterListener API
 
-The .NET <xref:System.Diagnostics.Metrics.MeterListener> API allows creating custom in-process logic to observe the measurements being recorded by <xref:System.Diagnostics.Metrics.Meter?displayProperty=nameWithType>. For guidance creating custom logic compatible with the older EventCounters instrumentation, see [EventCounters](event-counters.md).
+The .NET <xref:System.Diagnostics.Metrics.MeterListener> API allows you to create custom in-process logic to observe the measurements being recorded by <xref:System.Diagnostics.Metrics.Meter?displayProperty=nameWithType>. For guidance on creating custom logic compatible with the older EventCounters instrumentation, see [EventCounters](event-counters.md).
 
 Modify the code of `Program.cs` to use <xref:System.Diagnostics.Metrics.MeterListener>:
 

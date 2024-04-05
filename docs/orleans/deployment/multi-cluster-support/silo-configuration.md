@@ -60,7 +60,7 @@ As usual, all configuration settings can also be read and written programmatical
 
 The <xref:Orleans.Runtime.Configuration.GlobalConfiguration.ServiceId?displayProperty=nameWithType> is an arbitrary ID for identifying this service. It must be the same for all clusters and all silos.
 
-The <xref:Orleans.Runtime.MultiClusterNetwork> section is optional &mdash; if not present, all multi-cluster support is disabled for this silo.
+The <xref:Orleans.Runtime.MultiClusterNetwork> section is optional&mdash;if not present, all multi-cluster support is disabled for this silo.
 
 The **required parameters** <xref:Orleans.MultiCluster.IMultiClusterGatewayInfo.ClusterId> and <xref:Orleans.Configuration.MultiClusterOptions.GossipChannels> are explained in the section on [Multi-Cluster Communication](gossip-channels.md).
 

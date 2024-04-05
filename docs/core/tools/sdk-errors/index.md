@@ -2,7 +2,7 @@
 title: ".NET SDK error list"
 description: A complete list of NETSDKxxxx errors, with links to more info where more info is available.
 ms.topic: error-reference
-ms.date: 06/23/2022
+ms.date: 12/11/2023
 f1_keywords:
 - NETSDK1001
 - NETSDK1002
@@ -164,12 +164,18 @@ f1_keywords:
 - NETSDK1204
 - NETSDK1205
 - NETSDK1207
+- NETSDK1208
+- NETSDK1209
+- NETSDK1210
+- NETSDK1211
+- NETSDK1212
+- NETSDK1213
 ---
 # .NET SDK error list
 
 **This article applies to:** ✔️ .NET 6 SDK and later versions
 
-This is a complete list of the errors that you might get from the .NET SDK while developing .NET apps. If more info is available for a particular error, the error number is a link.
+This list is a complete list of the errors that you might get from the .NET SDK while developing .NET apps. If more info is available for a particular error, the error number is a link.
 
 | SDK Message Number | Message            |
 |--------------------|--------------------|
@@ -364,3 +370,9 @@ This is a complete list of the errors that you might get from the .NET SDK while
 |NETSDK1205|The Microsoft.Net.Compilers.Toolset.Framework package should not be set directly. Set the property 'BuildWithNetFrameworkHostedCompiler' to 'true' instead if you need it.|
 |[NETSDK1206](netsdk1206.md)|Found version-specific or distribution-specific runtime identifier(s): {0}. Affected libraries: {1}. In .NET 8.0 and higher, assets for version-specific and distribution-specific runtime identifiers will not be found by default. See <https://aka.ms/dotnet/rid-usage> for details.|
 |NETSDK1207|Ahead-of-time compilation is not supported for the target framework.|
+|NETSDK1208|The target platform identifier {0} was not recognized. This is because MSBuildEnableWorkloadResolver is set to false which disables .NET SDK Workloads which is required for this identifier. Unset this environment variable or MSBuild property to enable workloads.|
+|NETSDK1209|The current Visual Studio version does not support targeting {0} {1}.  Either target {0} {2} or lower, or use Visual Studio version {3} or higher.|
+|NETSDK1210|IsAotCompatible and EnableAotAnalyzer are not supported for the target framework. Consider multi-targeting to a supported framework to enable ahead-of-time compilation analysis, and set IsAotCompatible only for the supported frameworks. For example:<br>`<IsAotCompatible Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', '{0}'))>true</IsAotCompatible>`|
+|NETSDK1211|EnableSingleFileAnalyzer is not supported for the target framework. Consider multi-targeting to a supported framework to enable single-file analysis, and set EnableSingleFileAnalyzer only for the supported frameworks. For example:<br>`<EnableSingleFileAnalyzer Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', '{0}'))">true</EnableSingleFileAnalyzer>`|
+|NETSDK1212|IsTrimmable and EnableTrimAnalyzer are not supported for the target framework. Consider multi-targeting to a supported framework to enable trimming, and set IsTrimmable only for the supported frameworks. For example:<br>`<IsTrimmable Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', '{0}'))">true</IsTrimmable>`|
+|NETSDK1213|Targeting .NET 8.0 or higher in Visual Studio 2022 17.7 is not supported.|

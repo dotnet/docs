@@ -23,11 +23,11 @@ jobs:
       statuses: write
 
     steps:
-      - uses: actions/checkout@v4.1.0
+      - uses: actions/checkout@v4.1.1
       - name: Use Node.js
-        uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d
+        uses: actions/setup-node@c2ac33f2c62f978d6c944d9648125a294e56dc0b
         with:
-          node-version: 16.x
+          node-version: 20.x
       - name: Run Markdownlint
         run: |
           echo "::add-matcher::.github/workflows/markdownlint-problem-matcher.json"

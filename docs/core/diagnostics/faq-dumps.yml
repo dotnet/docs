@@ -33,3 +33,7 @@ sections:
           * [Debug Linux dumps](debug-linux-dumps.md) 
           * [Debug a deadlock in a .NET app](debug-deadlock.md) 
        
+      - question: |
+           How can I solve "It was not possible to find any compatible framework version"
+        answer: |
+            On Linux, the `DOTNET_ROOT` environment variable must point to the correct folder when set. When it points to another .NET version, `dotnet-dump` always produces this error. When the `DOTNET_ROOT` environment variable isn't set, a different error is produced ("You must install .NET to run this application").

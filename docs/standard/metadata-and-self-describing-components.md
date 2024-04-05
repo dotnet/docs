@@ -162,9 +162,3 @@ Each column of the table contains important information about your code. The **R
 The runtime calculates the desired offset address from the **RVA** column in the third row and returns this address to the JIT compiler, which then proceeds to the new address. The JIT compiler continues to process MSIL at the new address until it encounters another metadata token and the process is repeated.
 
 Using metadata, the runtime has access to all the information it needs to load your code and process it into native machine instructions. In this manner, metadata enables self-describing files and, together with the common type system, cross-language inheritance.
-
-## Related Topics
-
-|Title|Description|
-|-----------|-----------------|
-|[Attributes](attributes/index.md)|Describes how to apply attributes, write custom attributes, and retrieve information that is stored in attributes.|

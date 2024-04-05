@@ -20,25 +20,25 @@ The events described in this article collect information about worker and I/O th
 
  The following table shows the event information.
 
-|Event|Event ID|Raised when|
-|-----------------------------------|-----------|-|
-|`IOThreadCreate_V1`|44|An I/O thread is created in the thread pool.|
+| Event               | Event ID | Raised when                                  |
+|---------------------|----------|----------------------------------------------|
+| `IOThreadCreate_V1` | 44       | An I/O thread is created in the thread pool. |
 
  The following table shows the event data.
 
-|Field name|Data type|Description|
-|----------------|---------------|-----------------|
-|`Count`|`win:UInt64`|Number of I/O threads, including the newly created thread.|
-|`NumRetired`|`win:UInt64`|Number of retired worker threads.|
-|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CLR or CoreCLR.|
+| Field name      | Data type    | Description                                                |
+|-----------------|--------------|------------------------------------------------------------|
+| `Count`         | `win:UInt64` | Number of I/O threads, including the newly created thread. |
+| `NumRetired`    | `win:UInt64` | Number of retired worker threads.                          |
+| `ClrInstanceID` | `win:UInt16` | Unique ID for the instance of CLR or CoreCLR.              |
 
 ## IOThreadTerminate_V1 event
 
  The following table shows the keyword and level
 
-|Keyword for raising the event|Level
-|-----------------------------------|-----------
-|`ThreadingKeyword` (0x10000)|Informational (4)
+| Keyword for raising the event | Level             |
+|-------------------------------|-------------------|
+| `ThreadingKeyword` (0x10000)  | Informational (4) |
 
  The following table shows the event information.
 
@@ -226,9 +226,9 @@ The events described in this article collect information about worker and I/O th
 
  The following table shows the keyword and level.
 
-|Keyword for raising the event|Level|
-|-----------------------------------|-----------|
-|`ThreadingKeyword` (0x10000)|Verbose (5)
+| Keyword for raising the event | Level       |
+|-------------------------------|-------------|
+| `ThreadingKeyword` (0x10000)  | Verbose (5) |
 
  The following table shows the event information.
 
@@ -256,51 +256,51 @@ The events described in this article collect information about worker and I/O th
 
  The following table shows the keyword and level.
 
-|Keyword for raising the event|Level|
-|-----------------------------------|-----------|
-|`ThreadingKeyword` (0x10000)|Verbose (5)
+| Keyword for raising the event | Level       |
+|-------------------------------|-------------|
+| `ThreadingKeyword` (0x10000)  | Verbose (5) |
 
  The following table shows the event information.
 
-|Event|Event ID|Description|
-|-----------|--------------|-----------------|
-|`ThreadPoolEnqueue`|61|A work item was enqueued in the thread pool queue.|
+| Event               | Event ID | Description                                        |
+|---------------------|----------|----------------------------------------------------|
+| `ThreadPoolEnqueue` | 61       | A work item was enqueued in the thread pool queue. |
 
  The following table shows the event data
 
-|Field name|Data type|Description|
-|----------------|---------------|-----------------|
-|`WorkID`|`win:Pointer`|Pointer to the work request.|
-|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.|
+| Field name      | Data type     | Description                            |
+|-----------------|---------------|----------------------------------------|
+| `WorkID`        | `win:Pointer` | Pointer to the work request.           |
+| `ClrInstanceID` | `win:UInt16`  | Unique ID for the instance of CoreCLR. |
 
 ## ThreadPoolDequeue event
 
  The following table shows the keyword and level.
 
-|Keyword for raising the event|Level|
-|-----------------------------------|-----------|
-|`ThreadingKeyword` (0x10000)|Verbose (5)
+| Keyword for raising the event | Level       |
+|-------------------------------|-------------|
+| `ThreadingKeyword` (0x10000)  | Verbose (5) |
 
  The following table shows the event information.
 
-|Event|Event ID|Description|
-|-----------|--------------|-----------------|
-|`ThreadPoolDequeue`|62|A work item was dequeued from the thread pool queue.|
+| Event               | Event ID | Description                                          |
+|---------------------|----------|------------------------------------------------------|
+| `ThreadPoolDequeue` | 62       | A work item was dequeued from the thread pool queue. |
 
  The following table shows the event data
 
-|Field name|Data type|Description|
-|----------------|---------------|-----------------|
-|`WorkID`|`win:Pointer`|Pointer to the work request.|
-|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.|
+| Field name      | Data type     | Description                            |
+|-----------------|---------------|----------------------------------------|
+| `WorkID`        | `win:Pointer` | Pointer to the work request.           |
+| `ClrInstanceID` | `win:UInt16`  | Unique ID for the instance of CoreCLR. |
 
 ## ThreadPoolIOEnqueue event
 
  The following table shows the keyword and level.
 
-|Keyword for raising the event|Level|
-|-----------------------------------|-----------|
-|`ThreadingKeyword` (0x10000)|Verbose (5)
+| Keyword for raising the event | Level       |
+|-------------------------------|-------------|
+| `ThreadingKeyword` (0x10000)  | Verbose (5) |
 
  The following table shows the event information.
 
@@ -321,9 +321,9 @@ The events described in this article collect information about worker and I/O th
 
  The following table shows the keyword and level.
 
-|Keyword for raising the event|Level|
-|-----------------------------------|-----------|
-|`ThreadingKeyword` (0x10000)|Verbose (5)
+| Keyword for raising the event | Level       |
+|-------------------------------|-------------|
+| `ThreadingKeyword` (0x10000)  | Verbose (5) |
 
  The following table shows the event information.
 
@@ -344,9 +344,9 @@ The events described in this article collect information about worker and I/O th
 
  The following table shows the keyword and level.
 
-|Keyword for raising the event|Level|
-|-----------------------------------|-----------|
-|`ThreadingKeyword` (0x10000)|Verbose (5)|
+| Keyword for raising the event | Level       |
+|-------------------------------|-------------|
+| `ThreadingKeyword` (0x10000)  | Verbose (5) |
 
  The following table shows the event information.
 
@@ -366,40 +366,40 @@ The events described in this article collect information about worker and I/O th
 
  The following table shows the keywords and level.
 
-|Keyword for raising the event|Level|
-|-----------------------------------|-----------|
-|`ThreadingKeyword` (0x10000)|Informational (4)|
+| Keyword for raising the event | Level             |
+|-------------------------------|-------------------|
+| `ThreadingKeyword` (0x10000)  | Informational (4) |
 
  The following table shows the event information.
 
-|Event|Event ID|Description|
-|----------------|---------------|-----------------|
-|`ThreadCreating`|70|Thread has been created.|
+| Event            | Event ID | Description              |
+|------------------|----------|--------------------------|
+| `ThreadCreating` | 70       | Thread has been created. |
 
  The following table shows the event data.
 
-|Field name|Data type|Description|
-|----------------|---------------|-----------------|
-|`ID`|`win:Pointer`|Thread ID|
-|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.|
+| Field name      | Data type     | Description                            |
+|-----------------|---------------|----------------------------------------|
+| `ID`            | `win:Pointer` | Thread ID                              |
+| `ClrInstanceID` | `win:UInt16`  | Unique ID for the instance of CoreCLR. |
 
 ## ThreadRunning event
 
- The following table shows the keywords and level.
+The following table shows the keywords and level.
 
-|Keyword for raising the event|Level|
-|-----------------------------------|-----------|
-|`ThreadingKeyword` (0x10000)|Informational (4)|
+| Keyword for raising the event | Level             |
+|-------------------------------|-------------------|
+| `ThreadingKeyword` (0x10000)  | Informational (4) |
 
- The following table shows the event information.
+The following table shows the event information.
 
-|Event|Event ID|Description|
-|----------------|---------------|-----------------|
-|`ThreadRunning`|71|Thread has started running.|
+| Event           | Event ID | Description                 |
+|-----------------|----------|-----------------------------|
+| `ThreadRunning` | 71       | Thread has started running. |
 
- The following table shows the event data.
+The following table shows the event data.
 
-|Field name|Data type|Description|
-|----------------|---------------|-----------------|
-|`ID`|`win:Pointer`|Thread ID|
-|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.|
+| Field name      | Data type     | Description                            |
+|-----------------|---------------|----------------------------------------|
+| `ID`            | `win:Pointer` | Thread ID                              |
+| `ClrInstanceID` | `win:UInt16`  | Unique ID for the instance of CoreCLR. |

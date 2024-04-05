@@ -68,7 +68,6 @@ This single search pattern matches many valid strings. Regular expressions are b
 
 ## See also
 
-- [C# programming guide](../programming-guide/index.md)
 - [Strings](../programming-guide/strings/index.md)
 - <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType>
 - [.NET regular expressions](../../standard/base-types/regular-expressions.md)

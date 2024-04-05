@@ -7,7 +7,7 @@ ms.date: 05/26/2023
 
 C# 12 introduces [*primary constructors*](../../programming-guide/classes-and-structs/instance-constructors.md#primary-constructors), a concise syntax to declare constructors whose parameters are available anywhere in the body of the type.
 
-In this tutorial, you learn how to:
+In this tutorial, you will learn:
 
 > [!div class="checklist"]
 >
@@ -59,11 +59,11 @@ The preceding examples use primary constructor parameters to initialize readonly
 
 In the preceding example, the `Translate` method changes the `dx` and `dy` components. That requires the `Magnitude` and `Direction` properties be computed when accessed. The `=>` operator designates an expression-bodied `get` accessor, whereas the `=` operator designates an initializer. This version adds a parameterless constructor to the struct. The parameterless constructor must invoke the primary constructor, so that all the primary constructor parameters are initialized.
 
-In the previous example, the primary constructor properties are accessed in a method. Therefore the compiler creates hidden fields to represent each parameter. The following code shows approximately what the compiler generates. The actual field names are valid MSIL identifiers, but not valid C# identifiers.
+In the previous example, the primary constructor properties are accessed in a method. Therefore the compiler creates hidden fields to represent each parameter. The following code shows approximately what the compiler generates. The actual field names are valid CIL identifiers, but not valid C# identifiers.
 
 :::code source="./snippets/primary-constructors/Distance.cs" id="StructTwoLowered":::
 
-It's important to understand that the first example didn't require the compiler to create a field to store the value of the primary constructor parameters. The second example used the primary constructor parameter inside a method, and therefore required the compiler create storage for them. The compiler creates storage for any primary constructors only when that parameter is accessed in the body of a member of your type. Otherwise, the primary constructor parameters aren't stored in the object.
+It's important to understand that the first example didn't require the compiler to create a field to store the value of the primary constructor parameters. The second example used the primary constructor parameter inside a method, and therefore required the compiler to create storage for them. The compiler creates storage for any primary constructors only when that parameter is accessed in the body of a member of your type. Otherwise, the primary constructor parameters aren't stored in the object.
 
 ## Dependency injection
 
@@ -101,7 +101,7 @@ There's one potential concern with class hierarchies and primary constructors: i
 
 :::code source="./snippets/primary-constructors/BankAccount.cs" id="DuplicatedPrimaryConstructorStorage" highlight="33":::
 
-The highlighted line shows that the `ToString` method uses the *primary constructor parameters* (`owner` and `accountID`) rather than the *base class properties* (`Owner` and `AccountID`). The result is that the derived class, `SavingsAccount` creates storage for those copies. The copy in the derived class is different than the property in the base class. If the base class property could be modified, the instance of the derived class won't see that modification. The compiler issues a warning for primary constructor parameters that are used in a derived class and passed to a base class constructor. In this instance, the fix is to use the properties in the base class interface.
+The highlighted line shows that the `ToString` method uses the *primary constructor parameters* (`owner` and `accountID`) rather than the *base class properties* (`Owner` and `AccountID`). The result is that the derived class, `SavingsAccount` creates storage for those copies. The copy in the derived class is different than the property in the base class. If the base class property could be modified, the instance of the derived class won't see that modification. The compiler issues a warning for primary constructor parameters that are used in a derived class and passed to a base class constructor. In this instance, the fix is to use the properties of the base class.
 
 ## Summary
 

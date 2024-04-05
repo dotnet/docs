@@ -2,7 +2,7 @@
 title: Unit testing C# with NUnit and .NET Core
 description: Learn unit test concepts in C# and .NET Core through an interactive experience building a sample solution step-by-step using dotnet test and NUnit.
 author: rprouse
-ms.date: 07/26/2022
+ms.date: 03/27/2024
 ms.custom: devdivchpfy22
 ---
 # Unit testing C# with NUnit and .NET Core
@@ -13,7 +13,7 @@ This tutorial takes you through an interactive experience building a sample solu
 
 ## Prerequisites
 
-- [.NET Core 2.1 SDK](https://dotnet.microsoft.com/download) or later versions.
+- [.NET 8.0](https://dotnet.microsoft.com/download) or later versions.
 - A text editor or code editor of your choice.
 
 ## Creating the source project
@@ -84,6 +84,9 @@ The [dotnet new](../tools/dotnet-new.md) command creates a test project that use
 
 [!code-xml[Packages](~/samples/snippets/core/testing/unit-testing-using-nunit/csharp/PrimeService.Tests/PrimeService.Tests.csproj#Packages)]
 
+> [!NOTE]
+> Prior to .NET 9, the generated code may reference older versions of the NUnit test framework. You may use [dotnet CLI](/nuget/consume-packages/install-use-packages-dotnet-cli) to update the packages. Alternatively, open the *PrimeService.Tests.csproj* file and replace the contents of the package references item group with the code above.
+
 The test project requires other packages to create and run unit tests. The `dotnet new` command in the previous step added the Microsoft test SDK, the NUnit test framework, and the NUnit test adapter. Now, add the `PrimeService` class library as another dependency to the project. Use the [`dotnet add reference`](../tools/dotnet-add-reference.md) command:
 
 ```dotnetcli
@@ -137,7 +140,7 @@ namespace Prime.UnitTests.Services
         {
             var result = _primeService.IsPrime(1);
 
-            Assert.IsFalse(result, "1 should not be prime");
+            Assert.That(result, Is.False, "1 should not be prime");
         }
     }
 }

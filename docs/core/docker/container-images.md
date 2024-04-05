@@ -2,6 +2,7 @@
 title: .NET container images
 description: Learn about the various .NET container images available on Docker Hub.
 ms.date: 09/22/2023
+ms.custom: linux-related-content
 ---
 
 # .NET container images
@@ -125,5 +126,5 @@ _.NET Framework image repositories:_
 
 ## See also
 
-- [What's new in .NET 8: Container images](../whats-new/dotnet-8.md#container-images)
+- [What's new in .NET 8: Container images](../whats-new/dotnet-8/containers.md#container-images)
 - [New approach for differentiating .NET 8+ images](https://github.com/dotnet/dotnet-docker/discussions/4821)

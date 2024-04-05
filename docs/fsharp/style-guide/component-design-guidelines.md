@@ -50,9 +50,9 @@ You can use either the short form XML comments (`/// comment`), or standard XML 
 
 Using explicit signatures files in an F# library provides a succinct summary of public API, which helps to ensure that you know the full public surface of your library, and provides a clean separation between public documentation and internal implementation details. Signature files add friction to changing the public API, by requiring changes to be made in both the implementation and signature files. As a result, signature files should typically only be introduced when an API has become solidified and is no longer expected to change significantly.
 
-### Always follow best practices for using strings in .NET
+### Follow best practices for using strings in .NET
 
-Follow [Best Practices for Using Strings in .NET](../../standard/base-types/best-practices-strings.md) guidance. In particular, always explicitly state *cultural intent* in the conversion and comparison of strings (where applicable).
+Follow [Best Practices for Using Strings in .NET](../../standard/base-types/best-practices-strings.md) guidance when the scope of the project warrants it. In particular, explicitly stating *cultural intent* in the conversion and comparison of strings (where applicable).
 
 ## Guidelines for F#-facing libraries
 
@@ -62,13 +62,13 @@ This section presents recommendations for developing public F#-facing libraries;
 
 #### Use .NET naming and capitalization conventions
 
-The following table follows .NET naming and capitalization conventions. There are small additions to also include F# constructs.
+The following table follows .NET naming and capitalization conventions. There are small additions to also include F# constructs. Those recommendations are especially meant for APIs that cross beyond F#-to-F# boundaries, fitting with idioms from .NET BCL and the majority of libraries.
 
 | Construct | Case | Part | Examples | Notes |
 |-----------|------|------|----------|-------|
-| Concrete types | PascalCase | Noun/ adjective | List, Double, Complex | Concrete types are structs, classes, enumerations, delegates, records, and unions. Though type names are traditionally lowercase in OCaml, F# has adopted the .NET naming scheme for types.
+| Concrete types | PascalCase | Noun/ adjective | List, Double, Complex | Concrete types are structs, classes, enumerations, delegates, records, and unions. Though type names are traditionally lowercase in OCaml, F# has adopted the .NET naming scheme for types. |
 | DLLs           | PascalCase |                 | Fabrikam.Core.dll |  |
-| Union tags     | PascalCase | Noun | Some, Add, Success | Do not use a prefix in public APIs. Optionally use a prefix when internal, such as `type Teams = TAlpha | TBeta | TDelta.` |
+| Union tags     | PascalCase | Noun | Some, Add, Success | Do not use a prefix in public APIs. Optionally use a prefix when internal, such as "type Teams = TAlpha &#124; TBeta &#124; TDelta". |
 | Event          | PascalCase | Verb | ValueChanged / ValueChanging |  |
 | Exceptions     | PascalCase |      | WebException | Name should end with "Exception". |
 | Field          | PascalCase | Noun | CurrentName  | |
@@ -76,9 +76,9 @@ The following table follows .NET naming and capitalization conventions. There ar
 | Method |  PascalCase |  Verb | ToString | |
 | Namespace | PascalCase | | Microsoft.FSharp.Core | Generally use `<Organization>.<Technology>[.<Subnamespace>]`, though drop the organization if the technology is independent of organization. |
 | Parameters | camelCase | Noun |  typeName, transform, range | |
-| let values (internal) | camelCase or PascalCase | Noun/ verb |  getValue, myTable |
+| let values (internal) | camelCase or PascalCase | Noun/ verb |  getValue, myTable | |
 | let values (external) | camelCase or PascalCase | Noun/verb  | List.map, Dates.Today | let-bound values are often public when following traditional functional design patterns. However, generally use PascalCase when the identifier can be used from other .NET languages. |
-| Property  | PascalCase  | Noun/ adjective  | IsEndOfFile, BackColor  | Boolean properties generally use Is and Can and should be affirmative, as in IsEndOfFile, not IsNotEndOfFile.
+| Property  | PascalCase  | Noun/ adjective  | IsEndOfFile, BackColor  | Boolean properties generally use Is and Can and should be affirmative, as in IsEndOfFile, not IsNotEndOfFile. |
 
 #### Avoid abbreviations
 
@@ -225,6 +225,8 @@ Likewise, a statistics library might include a module with functions `erf` and `
 Adding the `[<RequireQualifiedAccess>]` attribute to a module indicates that the module may not be opened and that references to the elements of the module require explicit qualified access. For example, the `Microsoft.FSharp.Collections.List` module has this attribute.
 
 This is useful when functions and values in the module have names that are likely to conflict with names in other modules. Requiring qualified access can greatly increase the long-term maintainability and evolvability of a library.
+
+It is strongly suggested to have the `[<RequireQualifiedAccess>]` attribute for custom modules that extend those provided by `FSharp.Core` (such as `Seq`, `List`, `Array`), as those modules are prevalently used in F# code and have `[<RequireQualifiedAccess>]` defined on them; more generally, it is discouraged to define custom modules lacking the attribute, when such module shadows or extend other modules that have the attribute.
 
 Adding the `[<AutoOpen>]` attribute to a module means the module will be opened when the containing namespace is opened. The `[<AutoOpen>]` attribute may also be applied to an assembly to indicate a module that is automatically opened when the assembly is referenced.
 

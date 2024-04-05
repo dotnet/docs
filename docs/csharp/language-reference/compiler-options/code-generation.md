@@ -44,7 +44,7 @@ The following values are valid:
 
 ## Optimize
 
-The **Optimize** option enables or disables optimizations performed by the compiler to make your output file smaller, faster, and more efficient. The *Optimize* option is enabled by default for a *Release* build configuration. It is off by default for a *Debug* build configuration.
+The **Optimize** option enables or disables optimizations performed by the compiler to make your output file smaller, faster, and more efficient. The *Optimize* option is enabled by default for a *Release* build configuration. It is off by default for a *Debug* and any other build configuration.
 
 ```xml
 <Optimize>true</Optimize>

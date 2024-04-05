@@ -3,7 +3,7 @@ title: HttpClient guidelines for .NET
 description: Learn about using HttpClient instances to send HTTP requests and how you can manage clients using IHttpClientFactory in your .NET apps.
 author: gewarren
 ms.author: gewarren
-ms.date: 08/14/2023
+ms.date: 03/08/2024
 ---
 
 # Guidelines for using HttpClient
@@ -52,41 +52,51 @@ To summarize recommended `HttpClient` use in terms of lifetime management, you s
 
 For more information about managing `HttpClient` lifetime with `IHttpClientFactory`, see [`IHttpClientFactory` guidelines](../../../core/extensions/httpclient-factory.md#httpclient-lifetime-management).
 
-## Resilience policies with static clients
+## Resilience with static clients
 
-It's possible to configure a `static` or *singleton* client to use any number of resilience policies using the following pattern:
+It's possible to configure a `static` or *singleton* client to use any number of resilience pipelines using the following pattern:
 
 ```csharp
 using System;
 using System.Net.Http;
 using Microsoft.Extensions.Http;
+using Microsoft.Extensions.Http.Resilience;
 using Polly;
-using Polly.Extensions.Http;
 
-var retryPolicy = HttpPolicyExtensions
-    .HandleTransientHttpError()
-    .WaitAndRetryAsync(3, retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)));
+var retryPipeline = new ResiliencePipelineBuilder<HttpResponseMessage>()
+    .AddRetry(new HttpRetryStrategyOptions
+    {
+        BackoffType = DelayBackoffType.Exponential,
+        MaxRetryAttempts = 3
+    })
+    .Build();
 
-var socketHandler = new SocketsHttpHandler { PooledConnectionLifetime = TimeSpan.FromMinutes(15) };
-var pollyHandler = new PolicyHttpMessageHandler(retryPolicy)
+var socketHandler = new SocketsHttpHandler
+{
+    PooledConnectionLifetime = TimeSpan.FromMinutes(15)
+};
+var resilienceHandler = new ResilienceHandler(retryPipeline)
 {
     InnerHandler = socketHandler,
 };
 
-var httpClient = new HttpClient(pollyHandler);
+var httpClient = new HttpClient(resilienceHandler);
 ```
 
 The preceding code:
 
-- Relies on [Microsoft.Extensions.Http.Polly](https://www.nuget.org/packages/Microsoft.Extensions.Http.Polly) NuGet package, transitively the [Polly.Extensions.Http](https://www.nuget.org/packages/Polly.Extensions.Http) NuGet package for the `HttpPolicyExtensions` type.
-- Specifies a transient HTTP error handler, configured with retry policy that with each attempt will exponentially backoff delay intervals.
+- Relies on [Microsoft.Extensions.Http.Resilience](https://www.nuget.org/packages/Microsoft.Extensions.Http.Resilience) NuGet package.
+- Specifies a transient HTTP error handler, configured with retry pipeline that with each attempt will exponentially backoff delay intervals.
 - Defines a pooled connection lifetime of fifteen minutes for the `socketHandler`.
-- Passes the `socketHandler` to the `policyHandler` with the retry logic.
-- Instantiates an `HttpClient` given the `policyHandler`.
+- Passes the `socketHandler` to the `resilienceHandler` with the retry logic.
+- Instantiates an `HttpClient` given the `resilienceHandler`.
+
+> [!IMPORTANT]
+> The `Microsoft.Extensions.Http.Resilience` library is currently marked as [experimental](../../../csharp/language-reference/attributes/general.md#experimental-attribute) and it may change in the future.
 
 ## See also
 
 - [HTTP support in .NET](http-overview.md)
-- [Create HttpClient instances using IHttpClientFactory](../../../core/extensions/httpclient-factory.md)
+- [HTTP client factory with .NET](../../../core/extensions/httpclient-factory.md)
 - [Make HTTP requests with the HttpClient](httpclient.md)
 - [Use IHttpClientFactory to implement resilient HTTP requests](../../../architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests.md)

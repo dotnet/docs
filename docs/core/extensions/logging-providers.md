@@ -143,7 +143,7 @@ builder.Services.Configure<AzureFileLoggerOptions>(options =>
     options.FileSizeLimit = 50 * 1024;
     options.RetainedFileCountLimit = 5;
 });
-builder.ServicesConfigure<AzureBlobLoggerOptions>(options =>
+builder.Services.Configure<AzureBlobLoggerOptions>(options =>
 {
     options.BlobName = "log.txt";
 });

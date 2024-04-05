@@ -1,7 +1,7 @@
 ---
 title: dotnet publish command
 description: The dotnet publish command publishes a .NET project or solution to a directory.
-ms.date: 07/19/2023
+ms.date: 04/04/2024
 ---
 # dotnet publish
 
@@ -21,7 +21,8 @@ dotnet publish [<PROJECT>|<SOLUTION>] [-a|--arch <ARCHITECTURE>]
     [--no-restore] [--nologo] [-o|--output <OUTPUT_DIRECTORY>]
     [--os <OS>] [-r|--runtime <RUNTIME_IDENTIFIER>]
     [--sc|--self-contained [true|false]] [--no-self-contained]
-    [-s|--source <SOURCE>] [--use-current-runtime, --ucr [true|false]]
+    [-s|--source <SOURCE>] [--tl:[auto|on|off]]
+    [--use-current-runtime, --ucr [true|false]]
     [-v|--verbosity <LEVEL>] [--version-suffix <VERSION_SUFFIX>]
 
 dotnet publish -h|--help
@@ -124,7 +125,7 @@ For more information, see the following resources:
 
 [!INCLUDE [arch](../../../includes/cli-arch.md)]
 
-[!INCLUDE [configuration](../../../includes/cli-configuration.md)]
+[!INCLUDE [configuration](../../../includes/cli-configuration-publish-pack.md)]
 
 [!INCLUDE [disable-build-servers](../../../includes/cli-disable-build-servers.md)]
 
@@ -208,11 +209,13 @@ For more information, see the following resources:
 
   Publishes the application for a given runtime. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). For more information, see [.NET application publishing](../deploying/index.md) and [Publish .NET apps with the .NET CLI](../deploying/deploy-with-cli.md). If you use this option, use `--self-contained` or `--no-self-contained` also.
 
-[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
+[!INCLUDE [tl](../../../includes/cli-tl.md)]
 
 - **`--use-current-runtime, --ucr [true|false]`**
 
   Sets the `RuntimeIdentifier` to a platform portable `RuntimeIdentifier` based on the one of your machine. This happens implicitly with properties that require a `RuntimeIdentifier`, such as `SelfContained`, `PublishAot`, `PublishSelfContained`, `PublishSingleFile`, and `PublishReadyToRun`. If the property is set to false, that implicit resolution will no longer occur.
+
+[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
 - **`--version-suffix <VERSION_SUFFIX>`**
 
@@ -231,7 +234,7 @@ For more information, see the following resources:
 - Create a [self-contained executable](../deploying/index.md#publish-self-contained) for the project in the current directory, for a specific runtime:
 
   ```dotnetcli
-  dotnet publish --runtime osx.10.11-x64
+  dotnet publish --runtime osx-x64
   ```
 
   The RID must be in the project file.
@@ -239,7 +242,7 @@ For more information, see the following resources:
 - Create a [framework-dependent executable](../deploying/index.md#publish-framework-dependent) for the project in the current directory, for a specific platform:
 
   ```dotnetcli
-  dotnet publish --runtime osx.10.11-x64 --self-contained false
+  dotnet publish --runtime osx-x64 --self-contained false
   ```
 
   The RID must be in the project file. This example applies to .NET Core 3.0 SDK and later versions.
@@ -247,7 +250,7 @@ For more information, see the following resources:
 - Publish the project in the current directory, for a specific runtime and target framework:
 
   ```dotnetcli
-  dotnet publish --framework netcoreapp3.1 --runtime osx.10.11-x64
+  dotnet publish --framework netcoreapp3.1 --runtime osx-x64
   ```
 
 - Publish the specified project file:

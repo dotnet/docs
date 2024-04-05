@@ -22,9 +22,7 @@ As the preceding example shows, the syntax for the conditional operator is as fo
 condition ? consequent : alternative
 ```
 
-The `condition` expression must evaluate to `true` or `false`. If `condition` evaluates to `true`, the `consequent` expression is evaluated, and its result becomes the result of the operation. If `condition` evaluates to `false`, the `alternative` expression is evaluated, and its result becomes the result of the operation. Only `consequent` or `alternative` is evaluated.
-
-Beginning with C# 9.0, conditional expressions are target-typed. That is, if a target type of a conditional expression is known, the types of `consequent` and `alternative` must be implicitly convertible to the target type, as the following example shows:
+The `condition` expression must evaluate to `true` or `false`. If `condition` evaluates to `true`, the `consequent` expression is evaluated, and its result becomes the result of the operation. If `condition` evaluates to `false`, the `alternative` expression is evaluated, and its result becomes the result of the operation. Only `consequent` or `alternative` is evaluated. Conditional expressions are target-typed. That is, if a target type of a conditional expression is known, the types of `consequent` and `alternative` must be implicitly convertible to the target type, as the following example shows:
 
 :::code language="csharp" source="snippets/shared/ConditionalOperator.cs" id="TargetTyped":::
 
@@ -57,7 +55,7 @@ A conditional ref expression conditionally returns a variable reference, as the 
 
 :::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ConditionalOperator.cs" id="ConditionalRef":::
 
-You can [`ref` assign](assignment-operator.md#ref-assignment) the result of a conditional ref expression, use it as a [reference return](../statements/jump-statements.md#ref-returns) or pass it as a [`ref`](../keywords/ref.md#passing-an-argument-by-reference), [`out`](../keywords/out-parameter-modifier.md), or [`in`](../keywords/in-parameter-modifier.md) method parameter. You can also assign to the result of a conditional ref expression, as the preceding example shows.
+You can [`ref` assign](assignment-operator.md#ref-assignment) the result of a conditional ref expression, use it as a [reference return](../statements/jump-statements.md#ref-returns) or pass it as a `ref`, `out`, `in`, or `ref readonly` [method parameter](../keywords/method-parameters.md#reference-parameters). You can also assign to the result of a conditional ref expression, as the preceding example shows.
 
 The syntax for a conditional ref expression is as follows:
 
@@ -85,12 +83,11 @@ For more information, see the [Conditional operator](~/_csharpstandard/standard/
 
 Specifications for newer features are:
 
-- [Target-typed conditional expression (C# 9.0)](~/_csharplang/proposals/csharp-9.0/target-typed-conditional-expression.md)
+- [Target-typed conditional expression](~/_csharplang/proposals/csharp-9.0/target-typed-conditional-expression.md)
 
 ## See also
 
 - [Simplify conditional expression (style rule IDE0075)](../../../fundamentals/code-analysis/style-rules/ide0075.md)
-- [C# reference](../index.md)
 - [C# operators and expressions](index.md)
 - [if statement](../statements/selection-statements.md#the-if-statement)
 - [?. and ?[] operators](member-access-operators.md#null-conditional-operators--and-)

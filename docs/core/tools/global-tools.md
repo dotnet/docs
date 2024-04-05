@@ -191,6 +191,20 @@ dotnetsay       2.1.3        dotnetsay      /home/name/repository/.config/dotnet
 
 As shown in the preceding example, the list shows local tools. To see global tools, use the `--global` option. To see tool-path tools, use the `--tool-path` option.
 
+To list a specific tool, use the [dotnet tool list <PACKAGE_ID>](dotnet-tool-list.md) command:
+
+```dotnetcli
+dotnet tool list dotnetsay
+```
+
+The output will only list that tool if it's installed, similar to the following example:
+
+```console
+Package Id      Version      Commands       Manifest
+-------------------------------------------------------------------------------------------
+dotnetsay       2.1.3        dotnetsay      /home/name/repository/.config/dotnet-tools.json
+```
+
 ### Invoke a global tool
 
 For global tools, use the tool command by itself. For example, if the command is `dotnetsay` or `dotnet-doc`, that's what you use to invoke the global tool:

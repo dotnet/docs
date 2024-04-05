@@ -2,6 +2,8 @@
 title: SYSLIB0009 warning
 description: Learn about the obsoletions that generate compile-time warning SYSLIB0009.
 ms.date: 10/20/2020
+f1_keywords:
+  - syslib0009
 ---
 
 # SYSLIB0009: AuthenticationManager is not supported

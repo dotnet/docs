@@ -51,7 +51,6 @@ namespace SOTemplate
         }
     }
 }
-
 ```
 
 ## See Also

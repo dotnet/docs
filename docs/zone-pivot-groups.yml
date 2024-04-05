@@ -47,13 +47,15 @@ groups:
     - id: vscode
       title: Visual Studio Code
     - id: cli
-      title: Command line interface
+      title: Command-line interface
 - id: dotnet-preview-version
-  title: .NET version
+  title: .NET preview version
   prompt: Choose a .NET version
   pivots:
+    - id: dotnet-9-0
+      title: .NET 9 Preview
     - id: dotnet-8-0
-      title: .NET 8 Preview
+      title: .NET 8
     - id: dotnet-7-0
       title: .NET 7
     - id: dotnet-6-0
@@ -62,28 +64,20 @@ groups:
   title: .NET version
   prompt: Choose a .NET version
   pivots:
-    - id: dotnet-7-0
-      title: .NET 7
-    - id: dotnet-6-0
-      title: .NET 6
-- id: dotnet-version-6-8
-  title: .NET version
-  prompt: Choose a .NET version
-  pivots:
-    - id: dotnet-7-0
-      title: .NET 7
-    - id: dotnet-6-0
-      title: .NET 6
     - id: dotnet-8-0
-      title: .NET 8 Preview
+      title: .NET 8
+    - id: dotnet-7-0
+      title: .NET 7
+    - id: dotnet-6-0
+      title: .NET 6
 - id: dotnet-version-7-8
   title: .NET version
   prompt: Choose a .NET version
   pivots:
+    - id: dotnet-8-0
+      title: .NET 8
     - id: dotnet-7-0
       title: .NET 7
-    - id: dotnet-8-0
-      title: .NET 8 Preview
 - id: orleans-version
   title: Orleans version
   prompt: Choose an Orleans version
@@ -100,3 +94,47 @@ groups:
       title: Azure Storage
     - id: azure-cosmos-db-nosql
       title: Azure Cosmos DB for NoSQL
+- id: azure-development-tool
+  title: Azure development tool
+  prompt: Choose an Azure development tool
+  pivots:
+    - id: azure-azd
+      title: Azure Developer CLI
+    - id: azure-cli
+      title: Azure CLI
+    - id: azure-bicep
+      title: Azure Bicep
+- id: code-language
+  title: Code language
+  prompt: Choose a code language
+  pivots:
+    - id: lang-csharp-vb
+      title: C# and Visual Basic
+    - id: lang-fsharp
+      title: F#
+- id: ubuntu-install-set-one
+  title: Ubuntu Version
+  prompt: Choose the Ubuntu distribution version
+  pivots:
+    - id: os-linux-ubuntu-2404
+      title: "24.04"
+    - id: os-linux-ubuntu-2310
+      title: "23.10"
+    - id: os-linux-ubuntu-2204
+      title: "22.04"
+    - id: os-linux-ubuntu-2004
+      title: "20.04"
+    - id: os-linux-ubuntu-1804
+      title: "18.04"
+    - id: os-linux-ubuntu-1604
+      title: "16.04"
+    - id: os-linux-ubuntu-other
+      title: "Other"
+- id: openai-library
+  title: OpenAI Library
+  prompt: Choose a library for OpenAI
+  pivots:
+    - id: semantic-kernel
+      title: Semantic Kernel
+    - id: azure-openai-sdk
+      title: Azure OpenAI SDK

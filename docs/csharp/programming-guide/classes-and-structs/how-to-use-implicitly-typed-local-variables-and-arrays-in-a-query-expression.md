@@ -5,7 +5,6 @@ ms.date: 07/20/2015
 helpviewer_keywords: 
   - "implicitly-typed local variables [C#], how to use"
 ms.topic: how-to
-ms.custom: contperf-fy21q2
 ms.assetid: 6b7354d2-af79-427a-b6a8-f74eb8fd0b91
 ---
 # How to use implicitly typed local variables and arrays in a query expression (C# Programming Guide)
@@ -26,7 +25,6 @@ You can use implicitly typed local variables whenever you want the compiler to d
   
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Extension Methods](./extension-methods.md)
 - [LINQ (Language-Integrated Query)](../../linq/index.md)
 - [LINQ in C#](../../linq/index.md)

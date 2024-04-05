@@ -29,7 +29,6 @@ public interface IChat : IGrainObserver
 {
     Task ReceiveMessage(string message);
 }
-
 ```
 
 The only special thing is that the interface should inherit from `IGrainObserver`.

@@ -2,7 +2,7 @@
 title: Working with LINQ
 description: This tutorial teaches you how to generate sequences with LINQ, write methods for use in LINQ queries, and distinguish between eager and lazy evaluation.
 ms.date: 10/29/2018
-ms.technology: csharp-linq
+ms.subservice: csharp-linq
 ms.assetid: 0db12548-82cb-4903-ac88-13103d70aa77
 ---
 
@@ -346,7 +346,7 @@ Aside from LINQ, you learned a bit about a technique magicians use for card tric
 For more information on LINQ, see:
 
 - [Introduction to LINQ](/dotnet/csharp/linq/)
-- [Basic LINQ Query Operations (C#)](../programming-guide/concepts/linq/standard-query-operators-overview.md)
-- [Data Transformations With LINQ (C#)](../programming-guide/concepts/linq/data-transformations-with-linq.md)
-- [Query Syntax and Method Syntax in LINQ (C#)](../linq/write-linq-queries.md)
-- [C# Features That Support LINQ](../programming-guide/concepts/linq/features-that-support-linq.md)
+- [Basic LINQ Query Operations (C#)](../linq/standard-query-operators/index.md)
+- [Data Transformations With LINQ (C#)](../linq/standard-query-operators/index.md)
+- [Query Syntax and Method Syntax in LINQ (C#)](../linq/get-started/write-linq-queries.md)
+- [C# Features That Support LINQ](../linq/get-started/features-that-support-linq.md)

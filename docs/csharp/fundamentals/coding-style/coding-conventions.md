@@ -33,6 +33,10 @@ These tools make it easier for your team to adopt your preferred guidelines. Vis
 
 Code analysis produces warnings and diagnostics when the enabled rules are violated. You configure the rules you want applied to your project. Then, each CI build notifies developers when they violate any of the rules.
 
+### Diagnostic IDs
+
+- [Choose appropriate diagnostic IDs](../../roslyn-sdk/choosing-diagnostic-ids.md) when building your own analyzers
+
 ## Language guidelines
 
 The following sections describe practices that the .NET docs team follows to prepare code examples and samples. In general, follow these practices:
@@ -124,7 +128,7 @@ If the divisor is 0, the second clause in the `if` statement would cause a run-t
 
 ### `new` operator
 
-- Use one of the concise forms of object instantiation, as shown in the following declarations. The second example shows syntax that is available starting in C# 9.
+- Use one of the concise forms of object instantiation, as shown in the following declarations.
 
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet19":::
 

@@ -63,13 +63,13 @@ The first table in this article lists keywords that are reserved identifiers in 
     :::column-end:::
     :::column:::
         [`namespace`](namespace.md)  
-        [`new`](../operators/new-operator.md)  
+        [`new`](new.md)  
         [`null`](null.md)  
         [`object`](../builtin-types/reference-types.md)  
         [`operator`](../operators/operator-overloading.md)  
         [`out`](out.md)  
         [`override`](override.md)  
-        [`params`](params.md)  
+        [`params`](method-parameters.md#params-modifier)  
         [`private`](private.md)  
         [`protected`](protected.md)  
         [`public`](public.md)  
@@ -165,7 +165,3 @@ A contextual keyword is used to provide a specific meaning in the code, but it i
         [`yield`](../statements/yield.md)  
     :::column-end:::
 :::row-end:::
-
-## See also
-
-- [C# reference](../index.md)

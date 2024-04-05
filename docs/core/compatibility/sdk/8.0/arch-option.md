@@ -25,7 +25,7 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
-This change was made to unify the behavior of `--arch` with that of `--runtime`, which it's an alias for. The [behavior for `--runtime` was changed](runtimespecific-app-default.md) in an earlier preview version of .NET 8.
+This change was made to unify the behavior of `--arch` with that of `--runtime`, which it's an alias for. The [behavior for `--runtime` was also changed](runtimespecific-app-default.md) in .NET 8.
 
 ## Recommended action
 

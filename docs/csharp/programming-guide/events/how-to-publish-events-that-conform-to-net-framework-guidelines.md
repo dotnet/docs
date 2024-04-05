@@ -74,6 +74,5 @@ The following example demonstrates the previous steps by using a custom EventArg
 ## See also
 
 - <xref:System.Delegate>
-- [C# Programming Guide](../index.md)
 - [Events](index.md)
 - [Delegates](../delegates/index.md)

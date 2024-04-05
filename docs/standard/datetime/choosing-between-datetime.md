@@ -23,7 +23,7 @@ ms.assetid: 07f17aad-3571-4014-9ef3-b695a86f3800
 - To reflect an abstract date and time that's not tied to a specific time and place (for example, most stores in an international chain open on weekdays at 9:00 A.M.).
 - To retrieve date and time information from sources outside of .NET, typically where date and time information is stored in a simple data type.
 - To uniquely and unambiguously identify a single point in time. Some applications require that a date and time be unambiguous only on the host system. Other apps require that it be unambiguous across systems (that is, a date serialized on one system can be meaningfully deserialized and used on another system anywhere in the world).
-- To preserve multiple related times (such as the requestor's local time and the server's time of receipt for a web request).
+- To preserve multiple related times (such as the requester's local time and the server's time of receipt for a web request).
 - To perform date and time arithmetic, possibly with a result that uniquely and unambiguously identifies a single point in time.
 
 .NET includes the <xref:System.DateTime>, <xref:System.DateOnly>, <xref:System.DateTimeOffset>, <xref:System.TimeSpan>, <xref:System.TimeOnly>, and <xref:System.TimeZoneInfo> types, all of which can be used to build applications that work with dates and times.

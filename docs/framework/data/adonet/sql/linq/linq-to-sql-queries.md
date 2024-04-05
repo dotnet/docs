@@ -6,7 +6,7 @@ ms.assetid: f4897aaa-7f44-4c20-a471-b948c2971aae
 ---
 # LINQ to SQL Queries
 
-You define [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] queries by using the same syntax as you would in LINQ. The only difference is that the objects referenced in your queries are mapped to elements in a database. For more information, see [Introduction to LINQ Queries (C#)](../../../../../csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md).  
+You define [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] queries by using the same syntax as you would in LINQ. The only difference is that the objects referenced in your queries are mapped to elements in a database. For more information, see [Introduction to LINQ Queries (C#)](../../../../../csharp/linq/get-started/introduction-to-linq-queries.md).  
   
  [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] translates the queries you write into equivalent SQL queries and sends them to the server for processing. More specifically, your application uses the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] API to request query execution. The [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] provider then transforms the query into SQL text and delegates execution to the ADO provider. The ADO provider returns query results as a `DataReader`. The [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] provider translates the ADO results to an <xref:System.Linq.IQueryable> collection of user objects.  
   
@@ -22,14 +22,14 @@ You define [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] q
 |Filtering|Uses the `Where`/`where` clause|Same|  
 |Grouping|Uses the `Group…By`/`groupby` clause|Same|  
 |Selecting (Projecting)|Uses the `Select`/`select` clause|Same|  
-|Deferred versus immediate execution|See [Introduction to LINQ Queries (C#)](../../../../../csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md)|Same|  
+|Deferred versus immediate execution|See [Introduction to LINQ Queries (C#)](../../../../../csharp/linq/get-started/introduction-to-linq-queries.md)|Same|  
 |Implementing joins|Uses the `Join`/`join` clause|Can use the `Join`/`join` clause, but more effectively uses the <xref:System.Data.Linq.Mapping.AssociationAttribute> attribute. For more information, see [Querying Across Relationships](querying-across-relationships.md).|  
 |Remote versus local execution||For more information, see [Remote vs. Local Execution](remote-vs-local-execution.md).|  
 |Streaming versus cached querying|Not applicable in a local memory scenario||  
   
 ## See also
 
-- [Introduction to LINQ Queries (C#)](../../../../../csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md)
-- [Basic LINQ Query Operations](../../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)
-- [Type Relationships in LINQ Query Operations](../../../../../csharp/programming-guide/concepts/linq/type-relationships-in-linq-query-operations.md)
+- [Introduction to LINQ Queries (C#)](../../../../../csharp/linq/get-started/introduction-to-linq-queries.md)
+- [Basic LINQ Query Operations](../../../../../csharp/linq/standard-query-operators/index.md)
+- [Type Relationships in LINQ Query Operations](../../../../../csharp/linq/get-started/type-relationships-in-linq-query-operations.md)
 - [Query Concepts](query-concepts.md)

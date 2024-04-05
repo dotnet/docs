@@ -2,6 +2,8 @@
 title: SYSLIB0040 warning - EncryptionPolicy.NoEncryption and EncryptionPolicy.AllowNoEncryption are obsolete
 description: Learn about the obsoletion of the NoEncryption and AllowNoEncryption enumeration fields that generates compile-time warning SYSLIB0040.
 ms.date: 03/21/2022
+f1_keywords:
+  - syslib0040
 ---
 # SYSLIB0040: EncryptionPolicy.NoEncryption and EncryptionPolicy.AllowNoEncryption are obsolete
 

@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: CLR Profilers and Windows Store Apps"
 title: "CLR Profilers and Windows Store Apps"
+description: "Learn more about: CLR Profilers and Windows Store Apps"
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"
@@ -12,7 +12,6 @@ helpviewer_keywords:
   - "profiling API [.NET Framework]"
   - "profiling managed code"
   - "profiling managed code [Windows Store Apps]"
-ms.assetid: 1c8eb2e7-f20a-42f9-a795-71503486a0f5
 ---
 
 # CLR Profilers and Windows Store Apps
@@ -131,7 +130,7 @@ IEnumerable<Package> packages = packageManager.FindPackagesForUser(currentUserSI
 
 **Specifying the custom environment block**
 
-A new COM interface, [IPackageDebugSettings](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ipackagedebugsettings), allows you to customize the execution behavior of a Windows Store app to make some forms of diagnostics easier. One of its methods, [EnableDebugging](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ipackagedebugsettings-enabledebugging), lets you pass an environment block to the Windows Store app when it’s launched, along with other useful effects like disabling automatic process suspension. The environment block is important because that’s where you need to specify the environment variables (`COR_PROFILER`, `COR_ENABLE_PROFILING`, and `COR_PROFILER_PATH)`) used by the CLR to load your Profiler DLL .
+A new COM interface, [IPackageDebugSettings](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ipackagedebugsettings), allows you to customize the execution behavior of a Windows Store app to make some forms of diagnostics easier. One of its methods, [EnableDebugging](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ipackagedebugsettings-enabledebugging), lets you pass an environment block to the Windows Store app when it’s launched, along with other useful effects like disabling automatic process suspension. The environment block is important because that’s where you need to specify the environment variables (`COR_PROFILER`, `COR_ENABLE_PROFILING`, and `COR_PROFILER_PATH)`) used by the CLR to load your Profiler DLL.
 
 Consider the following code snippet:
 

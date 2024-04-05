@@ -2,7 +2,7 @@
 title: Publish a .NET console application using Visual Studio
 description: Learn how to use Visual Studio to create the set of files that are needed to run a .NET application.
 ms.date: 08/22/2023
-zone_pivot_groups: dotnet-version-6-8
+zone_pivot_groups: dotnet-version
 dev_langs:
   - "csharp"
   - "vb"
@@ -52,7 +52,7 @@ This tutorial shows how to publish a console app so that other users can run it.
 
 ## Inspect the files
 
-By default, the publishing process creates a framework-dependent deployment, which is a type of deployment where the published application runs on machine that has the .NET runtime installed. Users can run the published app by double-clicking the executable or issuing the `dotnet HelloWorld.dll` command from a command prompt.
+By default, the publishing process creates a framework-dependent deployment, which is a type of deployment where the published application runs on a machine that has the .NET runtime installed. Users can run the published app by double-clicking the executable or issuing the `dotnet HelloWorld.dll` command from a command prompt.
 
 In the following steps, you'll look at the files created by the publish process.
 
@@ -165,7 +165,7 @@ This tutorial shows how to publish a console app so that other users can run it.
 
 ## Inspect the files
 
-By default, the publishing process creates a framework-dependent deployment, which is a type of deployment where the published application runs on machine that has the .NET runtime installed. Users can run the published app by double-clicking the executable or issuing the `dotnet HelloWorld.dll` command from a command prompt.
+By default, the publishing process creates a framework-dependent deployment, which is a type of deployment where the published application runs on a machine that has the .NET runtime installed. Users can run the published app by double-clicking the executable or issuing the `dotnet HelloWorld.dll` command from a command prompt.
 
 In the following steps, you'll look at the files created by the publish process.
 
@@ -276,7 +276,7 @@ This tutorial shows how to publish a console app so that other users can run it.
 
 ## Inspect the files
 
-By default, the publishing process creates a framework-dependent deployment, which is a type of deployment where the published application runs on machine that has the .NET runtime installed. Users can run the published app by double-clicking the executable or issuing the `dotnet HelloWorld.dll` command from a command prompt.
+By default, the publishing process creates a framework-dependent deployment, which is a type of deployment where the published application runs on a machine that has the .NET runtime installed. Users can run the published app by double-clicking the executable or issuing the `dotnet HelloWorld.dll` command from a command prompt.
 
 In the following steps, you'll look at the files created by the publish process.
 

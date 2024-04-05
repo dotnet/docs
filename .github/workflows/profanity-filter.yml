@@ -1,0 +1,27 @@
+name: Profanity filter
+
+on:
+  issue_comment:
+    types: [created, edited]
+  issues:
+    types: [opened, edited, reopened]
+  pull_request:
+    types: [opened, edited, reopened]
+
+permissions:
+  issues: write
+  pull-requests: write
+
+jobs:
+  apply-filter:
+    name: Apply profanity filter
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Profanity filter
+      if: ${{ github.actor != 'dependabot[bot]' && github.actor != 'github-actions[bot]'  }}
+      uses: IEvangelist/profanity-filter@main
+      id: profanity-filter
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        replacement-strategy: redacted-rectangle

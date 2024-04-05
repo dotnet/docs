@@ -1,20 +1,24 @@
 {
     "redirections": [
         {
+            "source_path_from_root": "/docs/fundamentals/apicompat/package-validation/diagnostic-ids.md",
+            "redirect_url": "/dotnet/fundamentals/apicompat/diagnostic-ids"
+        },
+        {
             "source_path_from_root": "/docs/fundamentals/code-analysis/quality-rules/ca1071.md",
             "redirect_url": "/dotnet/fundamentals/code-analysis/quality-rules/index"
         },
         {
             "source_path_from_root": "/docs/fundamentals/code-analysis/quality-rules/ca1865.md",
-            "redirect_url": "/docs/fundamentals/code-analysis/quality-rules/ca1865-ca1867"
+            "redirect_url": "/dotnet/fundamentals/code-analysis/quality-rules/ca1865-ca1867"
         },
         {
             "source_path_from_root": "/docs/fundamentals/code-analysis/quality-rules/ca1866.md",
-            "redirect_url": "/docs/fundamentals/code-analysis/quality-rules/ca1865-ca1867"
+            "redirect_url": "/dotnet/fundamentals/code-analysis/quality-rules/ca1865-ca1867"
         },
         {
             "source_path_from_root": "/docs/fundamentals/code-analysis/quality-rules/ca1867.md",
-            "redirect_url": "/docs/fundamentals/code-analysis/quality-rules/ca1865-ca1867"
+            "redirect_url": "/dotnet/fundamentals/code-analysis/quality-rules/ca1865-ca1867"
         },
         {
             "source_path_from_root": "/docs/fundamentals/code-analysis/quality-rules/singlefile-warnings.md",
@@ -165,12 +169,49 @@
             "redirect_url": "/dotnet/fundamentals/networking/http/httpclient-guidelines"
         },
         {
+            "source_path_from_root": "/docs/fundamentals/package-validation/baseline-version-validator.md",
+            "redirect_url": "/dotnet/fundamentals/apicompat/package-validation/baseline-version-validator",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/package-validation/compatible-framework-in-package-validator.md",
+            "redirect_url": "/dotnet/fundamentals/apicompat/package-validation/compatible-framework-in-package-validator",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/package-validation/compatible-framework-validator.md",
+            "redirect_url": "/dotnet/fundamentals/apicompat/package-validation/compatible-framework-validator",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/package-validation/diagnostic-ids.md",
+            "redirect_url": "/dotnet/fundamentals/apicompat/diagnostic-ids",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/package-validation/overview.md",
+            "redirect_url": "/dotnet/fundamentals/apicompat/package-validation/overview",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/networking/networking-telemetry.md",
+            "redirect_url": "/dotnet/fundamentals/networking/telemetry/overview"
+        },
+        {
             "source_path_from_root": "/docs/fundamentals/productivity/code-analysis.md",
             "redirect_url": "/dotnet/fundamentals/code-analysis/overview"
         },
         {
             "source_path_from_root": "/docs/fundamentals/productivity/configure-code-analysis-rules.md",
             "redirect_url": "/dotnet/fundamentals/code-analysis/configuration-options"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-data-linq-dataloadoptions.md",
+            "redirect_url": "/dotnet/framework/data/adonet/sql/linq/"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-data-linq-mapping-tableattribute.md",
+            "redirect_url": "/dotnet/framework/data/adonet/sql/linq/"
         },
         {
             "source_path_from_root": "/docs/fundamentals/syslib-diagnostics/syslib1004.md",
@@ -198,10 +239,6 @@
         },
         {
             "source_path_from_root": "/docs/fundamentals/syslib-diagnostics/syslib1029.md",
-            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/source-generator-overview"
-        },
-        {
-            "source_path_from_root": "/docs/fundamentals/syslib-diagnostics/syslib1039.md",
             "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/source-generator-overview"
         },
         {
@@ -523,6 +560,10 @@
         {
             "source_path_from_root": "/docs/fundamentals/tools-and-productivity.md",
             "redirect_url": "/dotnet/toc/tools-diagnostics/index"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/networking/http/http-autoclient.md",
+            "redirect_url": "/dotnet/fundamentals/networking/http/http-overview"
         }
     ]
 }

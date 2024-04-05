@@ -2,7 +2,7 @@
 title: Publish a .NET console application using Visual Studio Code
 description: Learn how to use Visual Studio Code and the .NET CLI to create the set of files that are needed to run a .NET application.
 ms.date: 08/30/2023
-zone_pivot_groups: dotnet-version-6-8
+zone_pivot_groups: dotnet-version
 ---
 # Tutorial: Publish a .NET console application using Visual Studio Code
 
@@ -67,7 +67,7 @@ In the following steps, you'll look at the files created by the publish process.
 
       This is the [framework-dependent deployment](../deploying/deploy-with-cli.md#framework-dependent-deployment) version of the application. To run this dynamic link library, enter `dotnet HelloWorld.dll` at a command prompt. This method of running the app works on any platform that has the .NET runtime installed.
 
-   - *HelloWorld.exe* (*HelloWorld* on Linux, not created on macOS.)
+   - *HelloWorld.exe* (*HelloWorld* on Linux or macOS.)
 
       This is the [framework-dependent executable](../deploying/deploy-with-cli.md#framework-dependent-executable) version of the application. The file is operating-system-specific.
 
@@ -196,7 +196,7 @@ In the following steps, you'll look at the files created by the publish process.
 
 1. On Windows or Linux, run the app by using the executable.
 
-   1. On Windows, enter `.\HelloWorld.exe` and press <kbd>Enter</kbd>.
+   1. On Windows, enter `.\HelloWorld.exe` and press <kbd>Enter</kbd>. On Windows with the Bash terminal, enter `./HelloWorld.exe`.
 
    1. On Linux, enter `./HelloWorld` and press <kbd>Enter</kbd>.
 
@@ -303,11 +303,11 @@ In the following steps, you'll look at the files created by the publish process.
 
    :::image type="content" source="media/publishing-with-visual-studio-code/open-in-terminal.png" alt-text="Context menu showing Open in Terminal":::
 
-1. On Windows or Linux, run the app by using the executable.
+1. Run the app by using the executable.
 
    1. On Windows, enter `.\HelloWorld.exe` and press <kbd>Enter</kbd>.
 
-   1. On Linux, enter `./HelloWorld` and press <kbd>Enter</kbd>.
+   1. On Linux or macOS, enter `./HelloWorld` and press <kbd>Enter</kbd>.
 
    1. Enter a name in response to the prompt, and press any key to exit.
 

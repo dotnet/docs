@@ -16,7 +16,7 @@ var query = from Student s in arrList
   
  By specifying the type of the range variable, you are casting each item in the <xref:System.Collections.ArrayList> to a `Student`.  
   
- The use of an explicitly typed range variable in a query expression is equivalent to calling the <xref:System.Linq.Enumerable.Cast%2A> method. <xref:System.Linq.Enumerable.Cast%2A> throws an exception if the specified cast cannot be performed. <xref:System.Linq.Enumerable.Cast%2A> and <xref:System.Linq.Enumerable.OfType%2A> are the two Standard Query Operator methods that operate on non-generic <xref:System.Collections.IEnumerable> types. For more information, see [Type Relationships in LINQ Query Operations](./type-relationships-in-linq-query-operations.md).  
+ The use of an explicitly typed range variable in a query expression is equivalent to calling the <xref:System.Linq.Enumerable.Cast%2A> method. <xref:System.Linq.Enumerable.Cast%2A> throws an exception if the specified cast cannot be performed. <xref:System.Linq.Enumerable.Cast%2A> and <xref:System.Linq.Enumerable.OfType%2A> are the two Standard Query Operator methods that operate on non-generic <xref:System.Collections.IEnumerable> types. For more information, see [Type Relationships in LINQ Query Operations](../../../linq/get-started/type-relationships-in-linq-query-operations.md).  
   
 ## Example  
 
@@ -68,10 +68,6 @@ namespace NonGenericLINQ
   
             foreach (Student s in query)  
                 Console.WriteLine(s.LastName + ": " + s.Scores[0]);  
-  
-            // Keep the console window open in debug mode.  
-            Console.WriteLine("Press any key to exit.");  
-            Console.ReadKey();  
         }  
     }  
 }  

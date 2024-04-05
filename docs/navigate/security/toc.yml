@@ -73,3 +73,14 @@ items:
     href: ../../standard/security/security-and-on-the-fly-code-generation.md
   - name: Timing vulnerabilities with CBC-mode symmetric decryption using padding
     href: ../../standard/security/vulnerabilities-cbc-mode.md
+- name: Supplemental API remarks
+  items:
+  - name: The RSACryptoServiceProvider class
+    href: ../../fundamentals/runtime-libraries/system-security-cryptography-rsacryptoserviceprovider.md
+  - name: The RSAParameters struct
+    href: ../../fundamentals/runtime-libraries/system-security-cryptography-rsaparameters.md
+  - name: The SecureString class
+    href: ../../fundamentals/runtime-libraries/system-security-securestring.md
+  - name: The SignedXml class
+    href: ../../fundamentals/runtime-libraries/system-security-cryptography-xml-signedxml.md
+

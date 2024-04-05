@@ -18,7 +18,10 @@ On Windows, the tool can only uninstall SDKs and runtimes that were installed us
 
 On macOS, the tool can only uninstall SDKs and runtimes located in the */usr/local/share/dotnet* folder.
 
-Because of these limitations, the tool might not be able to uninstall all of the .NET SDKs and runtimes on your machine. You can use the `dotnet --info` command to find all of the .NET SDKs and runtimes installed, including those SDKs and runtimes that the tool can't remove. The `dotnet-core-uninstall list` command displays which SDKs can be uninstalled with the tool. Versions 1.2 and later can uninstall SDKs and runtimes with version 5.0 or earlier, and previous versions of the tool can uninstall 3.1 and earlier.
+Because of these limitations, the tool might not be able to uninstall all of the .NET SDKs and runtimes on your machine. You can use the `dotnet --info` command to find all of the .NET SDKs and runtimes installed, including those SDKs and runtimes that the tool can't remove. The `dotnet-core-uninstall list` command displays which SDKs can be uninstalled with the tool.
+
+> [!NOTE]
+> Currently, the .NET Uninstall Tool doesn't support .NET 8+. For more information about the release schedule of the tool, see [GitHub - dotnet-uninstall-tool Roadmap](https://github.com/dotnet/cli-lab/issues/279).
 
 ## Install the tool
 
@@ -53,7 +56,7 @@ For more information, see [`dry-run` and `whatif` commands](#dry-run-and-whatif-
 
 ### Step 3 - Uninstall .NET SDKs and Runtimes
 
-`dotnet-core-uninstall remove` uninstalls .NET SDKs and Runtimes that are specified by a collection of options. Versions 1.2 and later can uninstall SDKs and runtimes with version 5.0 or earlier, and previous versions of the tool can uninstall 3.1 and earlier.
+`dotnet-core-uninstall remove` uninstalls .NET SDKs and Runtimes that are specified by a collection of options.
 
 Since this tool has a destructive behavior, it's **highly** recommended that you do a dry run before running the remove command. The dry run will show you what .NET SDKs and runtimes will be removed when you use the `remove` command. Refer to [Should I remove a version?](../install/remove-runtime-sdk-versions.md#should-i-remove-a-version) to learn which SDKs and runtimes are safe to remove.
 

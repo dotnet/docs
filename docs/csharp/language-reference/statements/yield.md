@@ -35,7 +35,7 @@ In the preceding examples, the return type of iterators is <xref:System.Collecti
 
 You can't use the `yield` statements in:
 
-- methods with [in](../keywords/in-parameter-modifier.md), [ref](../keywords/ref.md), or [out](../keywords/out-parameter-modifier.md) parameters
+- methods with [in](../keywords/method-parameters.md#in-parameter-modifier), [ref](../keywords/ref.md), or [out](../keywords/method-parameters.md#out-parameter-modifier) parameters
 - [lambda expressions](../operators/lambda-expressions.md) and [anonymous methods](../operators/delegate-operator.md)
 - methods that contain [unsafe blocks](../keywords/unsafe.md)
 
@@ -53,7 +53,6 @@ For more information, see [The yield statement](~/_csharpstandard/standard/state
 
 ## See also
 
-- [C# reference](../index.md)
 - [Iterators](../../iterators.md)
 - [Iterate through collections in C#](../../programming-guide/concepts/iterators.md)
 - [foreach](iteration-statements.md#the-foreach-statement)

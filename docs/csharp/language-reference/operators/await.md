@@ -16,6 +16,8 @@ In the following example, the <xref:System.Net.Http.HttpClient.GetByteArrayAsync
 
 [!code-csharp[await example](snippets/shared/AwaitOperator.cs)]
 
+The operand of an `await` expression must provide for notification when a task completes. In general, a delegate is invoked when the task completes, either successfully or unsuccessfully. The [`await`](~/_csharpstandard/standard/expressions.md#1298-await-expressions) section of the C# language spec provides the details on how these notifications are implemented.
+
 The preceding example uses the [async `Main` method](../../fundamentals/program-structure/main-command-line.md). For more information, see the [await operator in the Main method](#await-operator-in-the-main-method) section.
 
 > [!NOTE]
@@ -43,7 +45,6 @@ For more information, see the [Await expressions](~/_csharpstandard/standard/exp
 
 ## See also
 
-- [C# reference](../index.md)
 - [C# operators and expressions](index.md)
 - [async](../keywords/async.md)
 - [Task asynchronous programming model](../../asynchronous-programming/task-asynchronous-programming-model.md)

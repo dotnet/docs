@@ -3,28 +3,21 @@ using Microsoft.Extensions.Caching.Memory;
 
 namespace CachingExamples.Memory;
 
-public sealed class CacheWorker : BackgroundService
+public sealed class CacheWorker(
+    ILogger<CacheWorker> logger,
+    HttpClient httpClient,
+    CacheSignal<Photo> cacheSignal,
+    IMemoryCache cache) : BackgroundService
 {
-    private readonly ILogger<CacheWorker> _logger;
-    private readonly HttpClient _httpClient;
-    private readonly CacheSignal<Photo> _cacheSignal;
-    private readonly IMemoryCache _cache;
     private readonly TimeSpan _updateInterval = TimeSpan.FromHours(3);
 
     private bool _isCacheInitialized = false;
 
     private const string Url = "https://jsonplaceholder.typicode.com/photos";
 
-    public CacheWorker(
-        ILogger<CacheWorker> logger,
-        HttpClient httpClient,
-        CacheSignal<Photo> cacheSignal,
-        IMemoryCache cache) =>
-        (_logger, _httpClient, _cacheSignal, _cache) = (logger, httpClient, cacheSignal, cache);
-
     public override async Task StartAsync(CancellationToken cancellationToken)
     {
-        await _cacheSignal.WaitAsync();
+        await cacheSignal.WaitAsync();
         await base.StartAsync(cancellationToken);
     }
 
@@ -32,23 +25,23 @@ public sealed class CacheWorker : BackgroundService
     {
         while (!stoppingToken.IsCancellationRequested)
         {
-            _logger.LogInformation("Updating cache.");
+            logger.LogInformation("Updating cache.");
 
             try
             {
                 Photo[]? photos =
-                    await _httpClient.GetFromJsonAsync<Photo[]>(
+                    await httpClient.GetFromJsonAsync<Photo[]>(
                         Url, stoppingToken);
 
                 if (photos is { Length: > 0 })
                 {
-                    _cache.Set("Photos", photos);
-                    _logger.LogInformation(
+                    cache.Set("Photos", photos);
+                    logger.LogInformation(
                         "Cache updated with {Count:#,#} photos.", photos.Length);
                 }
                 else
                 {
-                    _logger.LogWarning(
+                    logger.LogWarning(
                         "Unable to fetch photos to update cache.");
                 }
             }
@@ -56,14 +49,14 @@ public sealed class CacheWorker : BackgroundService
             {
                 if (!_isCacheInitialized)
                 {
-                    _cacheSignal.Release();
+                    cacheSignal.Release();
                     _isCacheInitialized = true;
                 }
             }
 
             try
             {
-                _logger.LogInformation(
+                logger.LogInformation(
                     "Will attempt to update the cache in {Hours} hours from now.",
                     _updateInterval.Hours);
 
@@ -71,7 +64,7 @@ public sealed class CacheWorker : BackgroundService
             }
             catch (OperationCanceledException)
             {
-                _logger.LogWarning("Cancellation acknowledged: shutting down.");
+                logger.LogWarning("Cancellation acknowledged: shutting down.");
                 break;
             }
         }

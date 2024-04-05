@@ -29,7 +29,7 @@ jobs:
           ImportOptions__ApiKeys__OSPOKey: ${{ secrets.OSPO_KEY }}
           ImportOptions__ApiKeys__QuestKey: ${{ secrets.QUEST_KEY }}
           ImportOptions__ApiKeys__SequesterPrivateKey: ${{ secrets.SEQUESTER_PRIVATEKEY }}
-          ImportOptions__ApiKeys__SequesterAppID: ${{ secrets.SEQUESTER_SEQUESTER_APPID }}
+          ImportOptions__ApiKeys__SequesterAppID: ${{ secrets.SEQUESTER_APPID }}
           
         with:
           org: ${{ github.repository_owner }}

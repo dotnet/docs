@@ -2,16 +2,16 @@
 description: "Learn more about: UnsafeNclNativeMethods class"
 title: UnsafeNclNativeMethods class (System.Net)
 ms.date: 06/12/2020
-ms.technology: dotnet-networking
-topic_type: 
+ms.subservice: networking
+topic_type:
   - apiref
-api_name: 
+api_name:
   - System.Net.UnsafeNclNativeMethods
   - System.Net.UnsafeNclNativeMethods.NativePKI
   - System.Net.UnsafeNclNativeMethods.NativePKI.FindClientCertificates
-api_location: 
+api_location:
   - System.dll
-api_type: 
+api_type:
   - Assembly
 ---
 # UnsafeNclNativeMethods class

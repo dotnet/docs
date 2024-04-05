@@ -145,6 +145,6 @@ The server error status codes indicate that the server encountered an unexpected
 ## See also
 
 - [Make HTTP requests with the HttpClient class](httpclient.md)
-- [IHttpClientFactory with .NET](../../../core/extensions/httpclient-factory.md)
+- [HTTP client factory with .NET](../../../core/extensions/httpclient-factory.md)
 - [Guidelines for using HttpClient](httpclient-guidelines.md)
 - [.NET Networking improvements](https://devblogs.microsoft.com/dotnet/dotnet-6-networking-improvements)

@@ -2,7 +2,7 @@
 title: Test a .NET class library using Visual Studio
 description: Learn how to use Visual Studio to create and run a unit test project for a .NET class library.
 ms.date: 08/23/2023
-zone_pivot_groups: dotnet-version-6-8
+zone_pivot_groups: dotnet-version
 dev_langs:
   - "csharp"
   - "vb"
@@ -36,7 +36,7 @@ Unit tests provide automated software testing during your development and publis
 
    1. On the **Configure your new project** page, enter **StringLibraryTest** in the **Project name** box. Then choose **Next**.
 
-   1. On the **Additional information** page, select **.NET 8 (Preview)** in the **Framework** box. Then choose **Create**.
+   1. On the **Additional information** page, select **.NET 8** in the **Framework** box. Then choose **Create**.
 
 1. Visual Studio creates the project and opens the class file in the code window with the following code. If the language you want to use is not shown, change the language selector at the top of the page.
 

@@ -2,7 +2,9 @@
 title: Troubleshoot .NET package mix ups on Linux
 description: Learn about how to troubleshoot strange .NET package errors on Linux. These errors may occur when you run the dotnet command.
 author: omajid
+ms.author: adegeo
 ms.date: 03/01/2023
+ms.custom: linux-related-content
 no-loc: ['usr','lib64','share','dotnet','libhostfxr.so', 'fxr', 'FrameworkList.xml', 'System.IO.FileNotFoundException']
 zone_pivot_groups: operating-systems-set-two
 ---
@@ -202,7 +204,7 @@ Configure your package manager to ignore the .NET packages from the distribution
     > Use the `apt-cache policy` command to find the source:
     >
     > ```bash
-    > apt-cache policy '~ndotnet.*' | grep -v microsoft | grep '/ubuntu' | cut -d"/" -f3 | sort -u
+    > apt-cache policy '~ndotnet.*' | grep -v microsoft | grep '/ubuntu' | grep updates | cut -d"/" -f3 | sort -u
     > ```
 
 01. Reinstall .NET from the Microsoft package feed. For more information, see [Install .NET on Linux](linux.md). If using Ubuntu, see [My Ubuntu distribution doesn't include the .NET version I want, or I need an out-of-support .NET version](linux-ubuntu.md#my-ubuntu-distribution-doesnt-include-the-net-version-i-want-or-i-need-an-out-of-support-net-version).

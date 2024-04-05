@@ -2,6 +2,8 @@
 title: SYSLIB0022 warning
 description: Learn about the Rijndael and RijndaelManaged obsoletions that generate compile-time warning SYSLIB0022.
 ms.date: 05/18/2021
+f1_keywords:
+  - syslib0022
 ---
 # SYSLIB0022: The Rijndael and RijndaelManaged types are obsolete
 

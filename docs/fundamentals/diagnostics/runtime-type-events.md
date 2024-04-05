@@ -13,9 +13,9 @@ The events described in this article collect information relating to loading typ
 
 ## TypeLoadStart Event
 
-|Keyword for raising the event|Event|Level|
-|-----------------------------------|-----------|-----------|
-|`TypeDiagnosticKeyword` (0x8000000000)|Informational (4)|
+| Keyword for raising the event          | Event           | Level             |
+|----------------------------------------|-----------------|-------------------|
+| `TypeDiagnosticKeyword` (0x8000000000) | `TypeLoadStart` | Informational (4) |
 
 |Event|Event ID|Description|
 |-----------|--------------|-----------------|

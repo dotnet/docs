@@ -18,7 +18,7 @@ This is called using a named method. Delegates constructed with a named method c
 The method that you pass as a delegate parameter must have the same signature as the delegate declaration. A delegate instance may encapsulate either static or instance method.
 
 > [!NOTE]
-> Although the delegate can use an [out](../../language-reference/keywords/out-parameter-modifier.md) parameter, we do not recommend its use with multicast event delegates because you cannot know which delegate will be called.
+> Although the delegate can use an [out](../../language-reference/keywords/method-parameters.md#out-parameter-modifier) parameter, we do not recommend its use with multicast event delegates because you cannot know which delegate will be called.
 
 Beginning with C# 10, method groups with a single overload have a *natural type*. This means the compiler can infer the return type and parameter types for the delegate type:
 
@@ -39,7 +39,6 @@ In the following example, one delegate is mapped to both static and instance met
 
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Delegates](./index.md)
 - [How to combine delegates (Multicast Delegates)](./how-to-combine-delegates-multicast-delegates.md)
 - [Events](../events/index.md)

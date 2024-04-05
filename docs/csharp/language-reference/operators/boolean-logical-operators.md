@@ -58,7 +58,7 @@ The unary postfix `!` operator is the [null-forgiving operator](null-forgiving.m
 
 The `&` operator computes the logical AND of its operands. The result of `x & y` is `true` if both `x` and `y` evaluate to `true`. Otherwise, the result is `false`.
 
-The `&` operator evaluates both operands even if the left-hand operand evaluates to `false`, so that the operation result is `false` regardless of the value of the right-hand operand.
+The `&` operator always evaluates both operands. When the left-hand operand evaluates to `false`, the operation result is `false` regardless of the value of the right-hand operand. However, even then, the right-hand operand is evaluated.
 
 In the following example, the right-hand operand of the `&` operator is a method call, which is performed regardless of the value of the left-hand operand:
 
@@ -80,7 +80,7 @@ For operands of the [integral numeric types](../builtin-types/integral-numeric-t
 
 The `|` operator computes the logical OR of its operands. The result of `x | y` is `true` if either `x` or `y` evaluates to `true`. Otherwise, the result is `false`.
 
-The `|` operator evaluates both operands even if the left-hand operand evaluates to `true`, so that the operation result is `true` regardless of the value of the right-hand operand.
+The `|` operator always evaluates both operands. When the left-hand operand evaluates to `true`, the operation result is `true` regardless of the value of the right-hand operand. However, even then, the right-hand operand is evaluated.
 
 In the following example, the right-hand operand of the `|` operator is a method call, which is performed regardless of the value of the left-hand operand:
 
@@ -197,6 +197,5 @@ For more information, see the following sections of the [C# language specificati
 
 ## See also
 
-- [C# reference](../index.md)
 - [C# operators and expressions](index.md)
 - [Bitwise and shift operators](bitwise-and-shift-operators.md)

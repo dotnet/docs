@@ -13,11 +13,7 @@ namespace Keywords
             ReadonlyKeywordExamples.Examples();
             Console.WriteLine("=================    pass by value / reference Keyword Examples ======================");
             TestClassAndStruct.Main();
-            ParameterModifiers.PassValueByValue();
-            ParameterModifiers.PassingValueByReference();
-            ParameterModifiers.PassingReferenceByValue();
-            ParameterModifiers.PassingReferenceByReference();
-
+            ParameterModifiers.ParamPassingExamples();
         }
     }
 

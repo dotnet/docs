@@ -12,11 +12,17 @@ This change affects apps that are recompiled to target the .NET Framework 4.6 an
 
 If this behavior is undesirable, you can retain the previous behavior by adding the following element to the `<runtime>` section of your app.config file:
 
-<pre><code class="lang-xml">&lt;AppContextSwitchOverrides&#13;&#10;value=&quot;Switch.System.Drawing.DontSupportPngFramesInIcons=true&quot; /&gt;&#13;&#10;</code></pre>
+```xml
+<AppContextSwitchOverrides
+value="Switch.System.Drawing.DontSupportPngFramesInIcons=true" />
+```
 
 If the app.config file already contains the `AppContextSwitchOverrides` element, the new value should be merged with the value attribute like this:
 
-<pre><code class="lang-xml">&lt;AppContextSwitchOverrides&#13;&#10;value=&quot;Switch.System.Drawing.DontSupportPngFramesInIcons=true;&lt;previous key&gt;=&lt;previous value&gt;&quot; /&gt;&#13;&#10;</code></pre>
+```xml
+<AppContextSwitchOverrides
+value="Switch.System.Drawing.DontSupportPngFramesInIcons=true;<previous key>=<previous value>" />
+```
 
 | Name    | Value       |
 |:--------|:------------|

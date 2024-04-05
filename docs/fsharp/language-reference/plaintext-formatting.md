@@ -96,12 +96,12 @@ to fill at least six characters. If width is `*`, then an extra integer argument
 
 Valid flags are:
 
-| Flag   | Effect        | Remarks                      |
-|:-------------------|:---------------|:-----------------------------|
-| `0`  | Add zeros instead of spaces to make up the required width |    |
-| `-` |  Left justify the result within the specified width |   |
-| `+`  | Add a `+` character if the number is positive (to match a `-` sign for negatives) |   |
-| space character | Add an extra space if the number is positive (to match a '-' sign for negatives) |
+| Flag            | Effect                                                                            |
+|:----------------|:----------------------------------------------------------------------------------|
+| `0`             | Add zeros instead of spaces to make up the required width                         |
+| `-`             | Left justify the result within the specified width                                |
+| `+`             | Add a `+` character if the number is positive (to match a `-` sign for negatives) |
+| space character | Add an extra space if the number is positive (to match a '-' sign for negatives)  |
 
 The printf `#` flag is invalid and a compile-time error will be reported if it is used.
 
@@ -132,7 +132,6 @@ When using the `%A` specifier, strings are formatted using quotes. Escape codes 
 
 ```fsharp
 printfn "%A" ("abc", "a\tb\nc\"d")
-
 ```
 
 produces
@@ -360,7 +359,7 @@ Counts([0; 1; 2; 3;
 
 The default implementation of `ToString` is observable in F# programming. Often, the default results
 aren't suitable for use in either programmer-facing information display or user output, and as a result it
-is common to override the default implementation.  
+is common to override the default implementation.
 
 By default, F# record and union types override the implementation of `ToString` with an implementation that
 uses `sprintf "%+A"`.  For example,

@@ -22,6 +22,10 @@ This behavior is by design as `MsQuic` uses `SO_REUSEPORT` to achieve better per
 > [!NOTE]
 > This problem doesn't occur on Windows, where MsQuic will attempt to do a port reservation. This causes the application trying to open second listener on the same port fail to start.
 
+## QuicListener is always listening on ANY address
+
+Even if a specific address is supplied via the `ListenEndpoint` property, QuicListener will still open a dual-stack wildcard socket. This behavior is by design by `MsQuic`. The listening IP address is still being used to do filtering inside `MsQuic`. For more information, see [ListenerStart](https://github.com/microsoft/msquic/blob/main/docs/api/ListenerStart.md) documentation and the original issue [dotnet/runtime#92812].
+
 ## Client receives unexpected ALPN error
 
 Client attempts to connect, but receives `Application layer protocol negotiation error was encountered` despite using the same ALPN as the server.

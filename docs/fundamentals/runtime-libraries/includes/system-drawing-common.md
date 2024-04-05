@@ -1,0 +1,2 @@
+> [!NOTE]
+> In .NET 6 and later versions, the [System.Drawing.Common package](https://www.nuget.org/packages/System.Drawing.Common/), which includes this type, is only supported on Windows operating systems. Use of this type in cross-platform apps causes compile-time warnings and run-time exceptions. For more information, see [System.Drawing.Common only supported on Windows](../../../core/compatibility/core-libraries/6.0/system-drawing-common-windows-only.md).

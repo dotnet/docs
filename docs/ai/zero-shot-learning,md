@@ -13,11 +13,13 @@ ms.date: [mm/dd/yyyy]
 
 # Concept - Zero-shot and few-shot learning
 
-This article explains the use of zero-shot learning and few-shot learning in .NET prompt engineering.
+This article explains zero-shot learning and few-shot learning in .NET prompt engineering, including their primary use cases.
 
-GPT model performance benefits from [prompt engineering](prompt-engineering-in-dot-net.md), the practice of giving instructions and examples to a model to refine its output. Zero-shot learning and few-shot learning are techniques that you use to iteratively develop engineered prompts.
+GPT model performance benefits from [prompt engineering](prompt-engineering-in-dot-net.md), the practice of providing instructions and examples to a model to refine its output. Zero-shot learning and few-shot learning are techniques that you can use when providing examples.
 
-Zero-shot learning relies on the model's existing knowledge to generate responses, making it the most cost-effective option for prompt engineering. However, it doesn't increase your model's knowledge. Few-shot learning is more resource-intensive, but it adds to the model's knowledge. 
+With zero-shot learning, you include prompts but not verbatim completions (you can include completions that only consist of cues). This means zero-shot learning relies entirely on the model's existing knowledge to generate responses, making it the most cost-effective option for prompt engineering. However, it doesn't add to the model's knowledge. 
+
+With few-shot learning, you include prompts paired with verbatim completions. This makes few-shot learning more resource-intensive because it adds to the model's knowledge. 
 
 ## Zero-shot learning use cases
 
@@ -34,7 +36,7 @@ Zero-shot learning is the practice of passing prompts that aren't paired with ve
 This section explains the use cases for few-shot learning with a GPT-model.
 
 Few-shot learning is the practice of passing few-shot prompts (prompts paired with completions) to show your model how to respond. Unlike zero-shot learning, few-shot learning can add to the model's knowledge. It has two primary use cases:
-- Because it can add to the model's knowledge, few-shot learning can improve a model's performance. Although this can become expensive, if your LLM isn't fined-tuned yet you won't get good performance with zero-shot prompts. In this case, few-shot learning is necessary if you want to improve performance.
+- Because it can add to the model's knowledge, few-shot learning can improve a model's performance. It also causes more tokens to be created, whihc can eventually become prohibitively expensive or even infeasible. However, if your LLM isn't fined-tuned yet you won't get good performance with zero-shot prompts, and few-shot learning is warranted.
 - You can use few-shot learning as a follow-on to zero-shot learning. In this case, you use zero-shot learning to establish a performance baseline, and then experiment with few-shot learning based on the zero-shot prompts you used. This lets you add to the model's knowledge after seeing how it currently responds, so you can iterate and improve performance significantly.   
 
 ## Related content

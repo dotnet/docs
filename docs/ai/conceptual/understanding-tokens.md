@@ -10,11 +10,11 @@ ms.date: 04/04/2024
 
 # Understanding tokens
 
-Tokens are the words or sets of characters that large language models (LLMs) decompose text into. During training a LLM will analyze the semantic relationships between these tokens, such as how commonly they are used together or if they are used in similar contexts. Once trained a LLM will use those relationships and patterns to generate output text based on the sequence of tokens provided as the input.
+Tokens are the words or character sets that large language models (LLMs) decompose text into. During training a LLM will analyze the semantic relationships between these tokens, such as how commonly they are used together or if they are used in similar contexts. Once trained a LLM will use those relationships and patterns to generate a sequence of output tokens based on the input tokens.
 
 ## What are tokens?
 
-The first step when training an LLM or processing an input prompt is tokenization. The text is broken down into a set of strings, known as _tokens_. These tokens can be distinct words, character sets, or combinations of words and punctuation. The set of unique tokens a models has been trained on is refereed to as its _vocabulary_.
+The first step when training an LLM or processing a prompt is tokenization. The text is broken down into a set of strings, known as _tokens_. These tokens can be distinct words, character sets, or combinations of words and punctuation. The set of unique tokens a models knows is refereed to as its _vocabulary_.
 
 For example, consider the following sentence:
 
@@ -44,11 +44,11 @@ The exact tokenization method used varies by LLM. Some common tokenization metho
 - Character tokenization (text is split into individual characters)
 - Subword tokenization (text is split into partial words or character sets)
 
-For example, the GPT models, developed by OpenAI, use _Byte-Pair Encoding_ (BPE) which is a type of subword tokenization. OpenAI provides [a tool to visualize how a text will be tokenized](https://platform.openai.com/tokenizer).
+For example, the GPT models, developed by OpenAI, use _Byte-Pair Encoding_ (BPE) which is a type of subword tokenization. OpenAI provides [a tool to visualize how text will be tokenized](https://platform.openai.com/tokenizer).
 
 There are benefits and disadvantages to each tokenization method:
 
-**Smaller tokens**
+**Smaller tokens (character or subword tokenization)**
 
 - _Pros_:
   - Allows the model to handle a wider range of inputs, such as unknown words, typos, or complex syntax
@@ -57,7 +57,7 @@ There are benefits and disadvantages to each tokenization method:
   - A given text will be broken into more tokens requiring additional computational resources while processing
   - Given a fixed token limit the maximum size of the model's input or output will be smaller
 
-**Larger tokens**
+**Larger tokens (word tokenization)**
 
 - _Pros_:
   - A given text will be broken into fewer token requiring less computational resources while processing

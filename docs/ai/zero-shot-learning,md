@@ -29,8 +29,6 @@ Zero-shot learning is the practice of passing prompts that aren't paired with ve
 - **Working with fined-tuned LLMs** - Because it relies on the model's existing knowledge, zero-shot learning is not as resource-intensive as few-shot learning, and it works well with LLMs that have already been fined-tuned on instruction datasets. You might be able to rely solely on zero-shot learning and keep costs relatively low. 
 - **Establish performance baselines** - Zero-shot learning can help you simulate how your app would perform for actual users. This lets you evaluate various aspects of your model's current performance, such as accuracy or precision. In this case, you typically use zero-shot learning to establish a performance baseline and then experiment with few-shot learning to improve performance.
 
---- Sloan, it's possible to have an LLM generate zero-shot prmopts, but I don't know how it would work in .NET. I'll have to dig around in the APIs and .NET classes to research the question If you have any ideas, this doc could be a lot better if it had info about LLM generation of example prompts in .NET. If not, delete this comment on review and let the MS folks tell us if something's missing. 
-
 ## Few-shot learning use cases
 
 This section explains the use cases for few-shot learning with a GPT-model.

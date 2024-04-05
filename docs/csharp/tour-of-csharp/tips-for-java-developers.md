@@ -24,13 +24,14 @@ You'll be productive in C# almost immediately because of the similarities. As yo
 1. [***LINQ***](../linq/index.md): Language integrated query (LINQ) provides a common syntax to query and transform data, regardless of its storage.
 1. [***Local functions***](../programming-guide/classes-and-structs/local-functions.md): In C#, you can nest functions inside methods, or other local functions. Local functions provide yet another layer of encapsulation.
 
-There are other features in C# that aren't in Java. You'll see features like [attributes](../language-reference/attributes/general.md), [`async` and `await`](../asynchronous-programming/index.md), and [`using`](../language-reference/statements/using.md) statements to automatically free nonmemory resources.
+There are other features in C# that aren't in Java. You'll see features like [`async` and `await`](../asynchronous-programming/index.md), and [`using`](../language-reference/statements/using.md) statements to automatically free nonmemory resources.
 
 There are also some similar features between C# and Java that have subtle but important differences:
 
 1. [***Properties***](../properties.md) and [***Indexers***](../indexers.md): Both properties and indexers (treating a class like an array or dictionary) have language support. In Java, they're naming conventions for methods starting with `get` and `set`.
 1. [***Records***](../fundamentals/types/records.md): In C#, records can be either `class` (reference) or `struct` (value) types. C# records can be immutable, but aren't required to be immutable.
 1. [***Tuples***](../language-reference/builtin-types/value-tuples.md) have different syntax in C# and Java.
+1. [***Attributes***](../language-reference/attributes/general.md) are similar to Java annotations.
 
 Finally, there are Java language features that aren't available in C#:
 

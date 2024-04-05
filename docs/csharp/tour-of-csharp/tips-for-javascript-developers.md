@@ -27,7 +27,7 @@ As you learn more other differences become apparent, but many of those differenc
 
 Some familiar features and idioms from JavaScript and TypeScript aren't available in C#:
 
-1. ***dynamic types***: C# uses static typing. A variable declaration includes the type, and that type can't change.
+1. ***dynamic types***: C# uses static typing. A variable declaration includes the type, and that type can't change. There is a [`dynamic`](../language-reference/builtin-types/reference-types.md#the-dynamic-type) type in C# that provides runtime binding.
 1. ***Prototypal inheritance***: C# inheritance is part of the type declaration. A C# `class` declaration states any base class. In JavaScript, you can set the `__proto__` property to set the base type on any instance.
 1. ***Interpreted language***: C# code must be compiled before you run it. JavaScript code can be run directly in the browser.
 

@@ -225,9 +225,9 @@ Transformer model architecture consists of two components, or _blocks_:
 
 The specific implementations of this architecture may vary. Some models may only use the encoder block, such as the Bidirectional Encoder Representations from Transformers (BERT) model developed by Google to support their search engine. Other models may only use the decoder block, like the Generative Pre-trained Transformer (GPT) model developed by OpenAI.
 
-When training a transformer model the training text is first broken down into tokens. These tokens each identify a unique text value. A token may be an distinct word, but can also be a partial word or combination of words and punctuation. Each token is then assigned an ID, which enables the text to be represented as a sequence of token IDs.
+When training a transformer model the training text is first broken down into [tokens](understanding-tokens.md). These tokens each identify a unique text value. A token may be an distinct word, but can also be a partial word or combination of words and punctuation. Each token is then assigned an ID, which enables the text to be represented as a sequence of token IDs.
 
-After the text has been broken down into tokens, a contextual vector, known as an _embedding_, is assigned to each token. These embedding vectors are multi-valued numeric data where each element of a token's vector represents a semantic attribute of the token. The elements of a token's vector are determined based on how commonly words are used together or in similar contexts.
+After the text has been broken down into tokens, a contextual vector, known as an [_embedding_](understanding-embeddings.md), is assigned to each token. These embedding vectors are multi-valued numeric data where each element of a token's vector represents a semantic attribute of the token. The elements of a token's vector are determined based on how commonly words are used together or in similar contexts.
 
 The goal is to predict the vector for the next token in the sequence based on the preceding tokens. A weight is assigned to each token in the sequence so far that represents their relative influence on the next token. A calculation is then performed on these weighted vectors that produces an _attention score_ that can be used to calculate a possible vector for the next token.
 

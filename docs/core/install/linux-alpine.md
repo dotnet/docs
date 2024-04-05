@@ -3,7 +3,8 @@ title: Install .NET on Alpine
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Alpine.
 author: adegeo
 ms.author: adegeo
-ms.date: 01/09/2024
+ms.date: 03/26/2024
+ms.custom: linux-related-content
 ---
 
 # Install the .NET SDK or the .NET Runtime on Alpine
@@ -23,7 +24,7 @@ The Alpine package manager supports installing some versions of .NET. If the .NE
 
 ## Install .NET 8
 
-.NET 8 isn't yet available in the official Alpine package repository. Use one of the following ways to install .NET 8:
+.NET 8 isn't yet available in the default branch of the Alpine package repository. Use the `edge` branch to install .NET 8. Alternatively, use one of the following ways to install .NET 8:
 
 - [Use the .NET install script.](linux-scripted-manual.md#scripted-install)
 - [Download and install .NET manually.](linux-scripted-manual.md#manual-install)
@@ -42,6 +43,7 @@ The following table is a list of currently supported .NET releases and the versi
 
 | Alpine | Supported Version  | Available in Package Manager |
 |--------|--------------------| -----------------------------|
+| 3.19   | .NET 8.0, .NET 7.0, .NET 6.0 | .NET 7.0, .NET 6.0 |
 | 3.18   | .NET 8.0, .NET 7.0, .NET 6.0 | .NET 7.0, .NET 6.0 |
 | 3.17   | .NET 8.0, .NET 7.0, .NET 6.0 | .NET 7.0, .NET 6.0 |
 | 3.16   | .NET 7.0, .NET 6.0 | .NET 6.0 |
@@ -76,25 +78,31 @@ The following table is a list of currently supported .NET releases and the archi
 
 When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you'll need to make sure these libraries are installed:
 
+### 3.18+
+
+- ca-certificates-bundle
+- libgcc
+- libssl3
+- libstdc++
+- zlib
+- libgdiplus (if the .NET app requires the *System.Drawing.Common* assembly)
+
+### 3.15 - 3.17
+
 - icu-libs
 - krb5-libs
 - libgcc
-- libgdiplus (if the .NET app requires the *System.Drawing.Common* assembly)
 - libintl
-- libssl1.1 (for 3.14.x and older)
-- libssl3 (for 3.15.x and newer)
+- libssl3
 - libstdc++
 - zlib
+- libgdiplus (if the .NET app requires the *System.Drawing.Common* assembly)
 
-To install the needed requirements, run the following command:
-
-```bash
-apk add bash icu-libs krb5-libs libgcc libintl libssl1.1 libstdc++ zlib
-```
+Use the `apk add` command to install the dependencies.
 
 [!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
 
-To install libgdiplus on Alpine 3.16 or later, run:
+To install `libgdiplus`, run:
 
 ```bash
 apk add libgdiplus

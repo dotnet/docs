@@ -1,7 +1,7 @@
 ---
 title: What's new in C# 12 - C# Guide
 description: Get an overview of the new features in C# 12.
-ms.date: 10/26/2023
+ms.date: 03/19/2024
 ---
 # What's new in C# 12
 
@@ -16,6 +16,12 @@ C# 12 includes the following new features. You can try these features using the 
 - [Experimental attribute](#experimental-attribute) - Introduced in Visual Studio 2022 version 17.7 Preview 3.
 
 - [Interceptors](#interceptors) - *Preview feature* Introduced in Visual Studio 2022 version 17.7 Preview 3.
+
+C# 12 is supported on **.NET 8**. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
+
+You can download the latest .NET 8 SDK from the [.NET downloads page](https://dotnet.microsoft.com/download). You can also download [Visual Studio 2022](https://visualstudio.microsoft.com/vs/), which includes the .NET 8 SDK.
+
+[!INCLUDE [released-version-feedback](./includes/released-feedback.md)]
 
 ## Primary constructors
 

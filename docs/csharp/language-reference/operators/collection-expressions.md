@@ -1,7 +1,7 @@
 ---
 title: "Collection expressions (Collection literals)"
-description: Collection expressions are expressions that convert to many different collection types. They enable you to write literal values for collection elements, or import other collection elements into a new collection.
-ms.date: 08/25/2023
+description: Collection expressions convert to many collection types. You can write literal values, expressions, or other collections to create a new collection.
+ms.date: 03/07/2024
 helpviewer_keywords:
   - "Collection expressions"
 ---
@@ -33,14 +33,25 @@ The spread element `..vowels`, when evaluated, produces five elements: `"a"`, `"
 
 A *collection expression* can be converted to different collection types, including:
 
-- <xref:System.Span%601?displayProperty=nameWithType> and <xref:System.ReadOnlySpan%601?displayProperty=nameWithType>
-- [Arrays](../builtin-types/arrays.md)
+- <xref:System.Span%601?displayProperty=nameWithType> and <xref:System.ReadOnlySpan%601?displayProperty=nameWithType>.
+- [Arrays](../builtin-types/arrays.md).
 - Any type with a *create* method whose parameter type is `ReadOnlySpan<T>` where there's an implicit conversion from the collection expression type to `T`.
 - Any type that supports a [collection initializer](../../programming-guide/classes-and-structs/object-and-collection-initializers.md#collection-initializers), such as <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>. Usually, this requirement means the type supports <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> and there's an accessible `Add` method to add items to the collection. There must be an implicit conversion from the collection expression elements' type to the collection's element type. For spread elements, there must be an implicit conversion from the spread element's type to the collection's element type.
+- Any of the following interfaces:
+  - <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName>.
+  - <xref:System.Collections.Generic.IReadOnlyCollection%601?displayProperty=fullName>.
+  - <xref:System.Collections.Generic.IReadOnlyList%601?displayProperty=fullName>.
+  - <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>.
+  - <xref:System.Collections.Generic.IList%601?displayProperty=fullName>.
 
-The compiler uses static analysis to determine the most performant way to create the collection declared with a collection expression. For example, the empty collection expression, `[]`, can be realized as <xref:System.Array.Empty%60%601?displayProperty=nameWithType> if the target won't be modified after initialization. When the target is a <xref:System.Span%601?displayProperty=nameWithType> or <xref:System.ReadOnlySpan%601?displayProperty=nameWithType>, the storage may be stack allocated. The [collection expressions feature specification](~/_csharplang/proposals/csharp-12.0/collection-expressions.md) specifies the rules the compiler must follow.
+> [!IMPORTANT]
+> A collection expression always creates a collection that includes all elements in the collection expression, regardless of the target type of the conversion. For example, when the target of the conversion is <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType>, the generated code evaluates the collection expression and stores the results in an in-memory collection.
+>
+> This behavior is distinct from LINQ, where a sequence might not be instantiated until it is enumerated. You can't use collection expressions to generate an infinite sequence that won't be enumerated.
 
-Many APIs are overloaded with multiple collection types as parameters. Because a collection expression can be converted to many different expression types, these APIs may require casts on the collection expression to specify the correct conversion. The following conversion rules resolve some of the ambiguities:
+The compiler uses static analysis to determine the most performant way to create the collection declared with a collection expression. For example, the empty collection expression, `[]`, can be realized as <xref:System.Array.Empty%60%601?displayProperty=nameWithType> if the target won't be modified after initialization. When the target is a <xref:System.Span%601?displayProperty=nameWithType> or <xref:System.ReadOnlySpan%601?displayProperty=nameWithType>, the storage might be stack allocated. The [collection expressions feature specification](~/_csharplang/proposals/csharp-12.0/collection-expressions.md) specifies the rules the compiler must follow.
+
+Many APIs are overloaded with multiple collection types as parameters. Because a collection expression can be converted to many different expression types, these APIs might require casts on the collection expression to specify the correct conversion. The following conversion rules resolve some of the ambiguities:
 
 - Conversion to <xref:System.Span%601>, <xref:System.ReadOnlySpan%601>, or another [`ref struct`](../builtin-types/ref-struct.md) type is better than a conversion to a non-ref struct type.
 - Conversion to a noninterface type is better than a conversion to an interface type.
@@ -49,7 +60,18 @@ When a collection expression is converted to a `Span` or `ReadOnlySpan`, the spa
 
 ## Collection builder
 
-A type opts in to collection expression support by writing a `Create()` method and applying the <xref:System.Runtime.CompilerServices.CollectionBuilderAttribute?displayProperty=fullName> on the collection type to indicate the builder method. For example, consider an application that uses fixed length buffers of 80 characters. That class might look something like the following code:
+Collection expressions work with any collection type that's *well-behaved*. A well-behaved collection has the following characteristics:
+
+- The value of `Count` or `Length` on a [countable](./member-access-operators.md#index-from-end-operator-) collection produces the same value as the number of elements when enumerated.
+- The types in the <xref:System.Collections.Generic?displayProperty=fullName> namespace are presumed to be side-effect free. As such, the compiler can optimize scenarios where such types might be used as intermediary values, but otherwise not be exposed.
+- A call to some applicable `.AddRange(x)` member on a collection will result in the same final value as iterating over `x` and adding all of its enumerated values individually to the collection with `.Add`.
+
+All the collection types in the .NET runtime are well-behaved.
+
+> [!WARNING]
+> If a custom collection type isn't well-behaved, the behavior when you use that collection type with collection expressions is undefined.
+
+Your types opt in to collection expression support by writing a `Create()` method and applying the <xref:System.Runtime.CompilerServices.CollectionBuilderAttribute?displayProperty=fullName> on the collection type to indicate the builder method. For example, consider an application that uses fixed length buffers of 80 characters. That class might look something like the following code:
 
 :::code language="csharp" source="./snippets/shared/CollectionExpressionExamples.cs" id="BufferDeclaration":::
 

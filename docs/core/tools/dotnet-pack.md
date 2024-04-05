@@ -1,7 +1,7 @@
 ---
 title: dotnet pack command
 description: The dotnet pack command creates NuGet packages for your .NET project.
-ms.date: 11/27/2023
+ms.date: 04/04/2024
 ---
 # dotnet pack
 
@@ -59,7 +59,7 @@ You can provide MSBuild properties to the `dotnet pack` command for the packing 
 
 ## Options
 
-[!INCLUDE [configuration](../../../includes/cli-configuration.md)]
+[!INCLUDE [configuration](../../../includes/cli-configuration-publish-pack.md)]
 
 - **`--force`**
 
@@ -173,10 +173,10 @@ You can provide MSBuild properties to the `dotnet pack` command for the packing 
   dotnet pack -p:TargetFrameworks=net45
   ```
 
-- Pack the project and use a specific runtime (Windows 10) for the restore operation:
+- Pack the project and use a specific runtime (Windows) for the restore operation:
 
   ```dotnetcli
-  dotnet pack --runtime win10-x64
+  dotnet pack --runtime win-x64
   ```
 
 - Pack the project using a *.nuspec* file:

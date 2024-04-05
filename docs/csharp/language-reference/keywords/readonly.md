@@ -105,8 +105,6 @@ You can also see the language specification proposals:
 ## See also
 
 - [Add readonly modifier (style rule IDE0044)](../../../fundamentals/code-analysis/style-rules/ide0044.md)
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [Modifiers](index.md)
 - [const](const.md)

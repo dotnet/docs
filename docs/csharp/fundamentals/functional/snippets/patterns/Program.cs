@@ -38,13 +38,15 @@ class Program
     private static void NullReferenceCheck()
     {
         // <NullReferenceCheck>
-        string? message = "This is not the null string";
+        string? message = ReadMessageOrDefault();
 
         if (message is not null)
         {
             Console.WriteLine(message);
         }
         // </NullReferenceCheck>
+
+        static string? ReadMessageOrDefault() => "This is not the null string";
     }
 
 

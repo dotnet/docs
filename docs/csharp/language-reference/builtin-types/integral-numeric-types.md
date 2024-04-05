@@ -57,7 +57,7 @@ int a = 123;
 System.Int32 b = 123;
 ```
 
-The `nint` and `nuint` types in the last two rows of the table are native-sized integers. You can use the `nint` and `nuint` keywords to define *native-sized integers*. These are 32-bit integers when running in a 32-bit process, or 64-bit integers when running in a 64-bit process. They can be used for interop scenarios, low-level libraries, and to optimize performance in scenarios where integer math is used extensively.
+The `nint` and `nuint` types in the last two rows of the table are native-sized integers. You can use the `nint` and `nuint` contextual keywords to define *native-sized integers*. These are 32-bit integers when running in a 32-bit process, or 64-bit integers when running in a 64-bit process. They can be used for interop scenarios, low-level libraries, and to optimize performance in scenarios where integer math is used extensively.
 
 The native-sized integer types are represented internally as the .NET types <xref:System.IntPtr?displayProperty=nameWithType> and <xref:System.UIntPtr?displayProperty=nameWithType>. Starting in C# 11, the `nint` and `nuint` types are aliases for the underlying types.
 
@@ -157,7 +157,6 @@ For more information, see the following sections of the [C# language specificati
 
 ## See also
 
-- [C# reference](../index.md)
 - [Value types](value-types.md)
 - [Floating-point types](floating-point-numeric-types.md)
 - [Standard numeric format strings](../../../standard/base-types/standard-numeric-format-strings.md)

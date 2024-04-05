@@ -80,7 +80,7 @@ The `using static` directive names a type whose static members and nested types 
 using static <fully-qualified-type-name>;
 ```
 
-The `<fully-qualified-type-name>` is the name of the type whose static members and nested types can be referenced without specifying a type name. If you don't provide a fully qualified type name (the full namespace name along with the type name), C# generates compiler error [CS0246](../compiler-messages/cs0246.md): "The type or namespace name 'type/namespace' couldn't be found (are you missing a using directive or an assembly reference?)".
+The `<fully-qualified-type-name>` is the name of the type whose static members and nested types can be referenced without specifying a type name. If you don't provide a fully qualified type name (the full namespace name along with the type name), C# generates compiler error [CS0246](../compiler-messages/assembly-references.md): "The type or namespace name 'type/namespace' couldn't be found (are you missing a using directive or an assembly reference?)".
 
 The `using static` directive applies to any type that has static members (or nested types), even if it also has instance members. However, instance members can only be invoked through the type instance.
 
@@ -178,7 +178,6 @@ For more information on the *global using* modifier, see the [global usings feat
 
 ## See also
 
-- [C# reference](../index.md)
 - [C# keywords](index.md)
 - [Namespaces](../../fundamentals/types/namespaces.md)
 - [Style rule IDE0005 - Remove unnecessary 'using' directives](../../../fundamentals/code-analysis/style-rules/ide0005.md)

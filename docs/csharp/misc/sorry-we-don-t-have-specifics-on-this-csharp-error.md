@@ -14,9 +14,6 @@ f1_keywords:
   - "CS1062"
   - "CS1064"
   - "CS1066"
-  - "CS1068"
-  - "CS1069"
-  - "CS1070"
   - "CS1072"
   - "CS1073"
   - "CS1636"
@@ -33,7 +30,6 @@ f1_keywords:
   - "CS1757"
   - "CS1758"
   - "CS1759"
-  - "CS1760"
   - "CS1761"
   - "CS1764"
   - "CS1766"
@@ -112,7 +108,6 @@ f1_keywords:
   - "CS4036"
   - "CS7002"
   - "CS7006"
-  - "CS7008"
   - "CS7009"
   - "CS7010"
   - "CS7011"
@@ -161,11 +156,7 @@ f1_keywords:
   - "CS7065"
   - "CS7066"
   - "CS7067"
-  - "CS7068"
-  - "CS7069"
   - "CS7070"
-  - "CS7071"
-  - "CS7079"
   - "CS7080"
   - "CS7081"
   - "CS7082"
@@ -238,7 +229,6 @@ f1_keywords:
   - "CS8087"
   - "CS8088"
   - "CS8089"
-  - "CS8090"
   - "CS8092"
   - "CS8093"
   - "CS8094"
@@ -291,7 +281,6 @@ f1_keywords:
   - "CS8197"
   - "CS8199"
   - "CS8202"
-  - "CS8203"
   - "CS8204"
   - "CS8205"
   - "CS8206"
@@ -660,7 +649,6 @@ Provides a QA website for questions about and issues with Visual C#.
 
 ## See also
 
-- [C# Programming Guide](../programming-guide/index.md)
-- [C# Reference](../language-reference/index.md)
+- [C# Reference](../language-reference/index.yml)
 - [Visual Studio feedback options](/visualstudio/ide/feedback-options)
 - [Additional Resources for Visual C# Programmers](../tour-of-csharp/index.md)

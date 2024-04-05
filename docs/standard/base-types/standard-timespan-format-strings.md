@@ -3,10 +3,10 @@ title: "Standard TimeSpan format strings"
 description: Review standard TimeSpan format strings, which use a single format specifier to define the text representation of a TimeSpan value in .NET.
 ms.date: "03/30/2017"
 ms.topic: reference
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "format specifiers, standard time interval"
   - "format strings"
   - "standard time interval format strings"
@@ -17,11 +17,10 @@ helpviewer_keywords:
   - "formatting [.NET], time"
   - "standard TimeSpan format strings"
   - "formatting [.NET], time intervals"
-ms.assetid: 9f6c95eb-63ae-4dcc-9c32-f81985c75794
 ---
 # Standard TimeSpan format strings
 
-A standard <xref:System.TimeSpan> format string uses a single format specifier to define the text representation of a <xref:System.TimeSpan> value that results from a formatting operation. Any format string that contains more than one character, including white space, is interpreted as a custom <xref:System.TimeSpan> format string. For more information, see [Custom TimeSpan format strings](custom-timespan-format-strings.md) .  
+A standard <xref:System.TimeSpan> format string uses a single format specifier to define the text representation of a <xref:System.TimeSpan> value that results from a formatting operation. Any format string that contains more than one character, including white space, is interpreted as a custom <xref:System.TimeSpan> format string. For more information, see [Custom TimeSpan format strings](custom-timespan-format-strings.md).
   
  The string representations of <xref:System.TimeSpan> values are produced by calls to the overloads of the <xref:System.TimeSpan.ToString%2A?displayProperty=nameWithType> method, as well as by methods that support composite formatting, such as <xref:System.String.Format%2A?displayProperty=nameWithType>. For more information, see [Formatting Types](formatting-types.md) and [Composite Formatting](composite-formatting.md). The following example illustrates the use of standard format strings in formatting operations.  
   

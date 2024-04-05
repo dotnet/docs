@@ -73,7 +73,6 @@ For more information, see the [Unary minus operator](~/_csharpstandard/standard/
 
 ## See also
 
-- [C# reference](../index.md)
 - [C# operators and expressions](index.md)
 - [Events](../../programming-guide/events/index.md)
 - [Arithmetic operators](arithmetic-operators.md)

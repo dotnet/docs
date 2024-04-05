@@ -50,7 +50,6 @@ Beginning with C# 12, [Primary constructor](./instance-constructors.md#primary-c
 
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [The C# type system](../../fundamentals/types/index.md)
 - [Using Constructors](./using-constructors.md)
 - [Inheritance](../../fundamentals/object-oriented/inheritance.md)

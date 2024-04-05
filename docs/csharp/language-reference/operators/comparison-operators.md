@@ -69,7 +69,6 @@ For more information, see the [Relational and type-testing operators](~/_csharps
 
 ## See also
 
-- [C# reference](../index.md)
 - [C# operators and expressions](index.md)
 - <xref:System.IComparable%601?displayProperty=nameWithType>
 - [Equality operators](equality-operators.md)

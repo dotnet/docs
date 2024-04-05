@@ -44,14 +44,14 @@ or
 
   The second part of the rule specifies the [severity level](../configuration-options.md#severity-level) for the rule. In .NET 9 and later versions, the severity is always respected&mdash;that is, inside development IDEs *and* during command-line builds. In .NET 8 and earlier versions, this severity setting is only respected inside development IDEs, such as Visual Studio, and *not* during build.
 
-  If you're using the .NET 8 SDK or an earlier version and you want to enforce code style rules at build time, you can do so in one of two ways:
+  If you're using the .NET 8 SDK or an earlier version and you want the severity to be respected at build time, you can do so in one of two ways:
 
   - Set the [\<AnalysisLevel>](../../../core/project-sdk/msbuild-props.md#analysislevel) or `<AnalysisLevelStyle>` property to `9.0` or higher, or to `preview`.
-  - Set the severity by using the rule ID-based severity configuration syntax for analyzers instead. The syntax takes the form `dotnet_diagnostic.<rule ID>.severity = <severity>`, for example, `dotnet_diagnostic.IDE0040.severity = none`. For more information, see [severity level](../configuration-options.md#severity-level).
+  - Set the severity by using the rule ID-based severity configuration syntax for analyzers instead. The syntax takes the form `dotnet_diagnostic.<rule ID>.severity = <severity>`, for example, `dotnet_diagnostic.IDE0040.severity = warning`. For more information, see [severity level](../configuration-options.md#severity-level).
 
 > [!TIP]
 >
-> Starting in Visual Studio 2019, you can configure code style rules from the [Quick Actions](/visualstudio/ide/quick-actions) light bulb menu after a style violation occurs. For more information, see [Automatically configure code styles in Visual Studio](/visualstudio/ide/editorconfig-language-conventions#automatically-configure-code-styles-in-visual-studio).
+> Starting in Visual Studio 2019, you can configure code style rules from the [Quick Actions](/visualstudio/ide/quick-actions) light bulb menu after a style violation occurs.
 
 ## Rule index
 
@@ -102,8 +102,7 @@ C# style rules:
 
 - [Use expression body for constructors (IDE0021)](ide0021.md)
 - [Use expression body for methods (IDE0022)](ide0022.md)
-- [Use expression body for operators (IDE0023)](ide0023-ide0024.md)
-- [Use expression body for operators (IDE0024)](ide0023-ide0024.md)
+- [Use expression body for operators (IDE0023, IDE0024)](ide0023-ide0024.md)
 - [Use expression body for properties (IDE0025)](ide0025.md)
 - [Use expression body for indexers (IDE0026)](ide0026.md)
 - [Use expression body for accessors (IDE0027)](ide0027.md)

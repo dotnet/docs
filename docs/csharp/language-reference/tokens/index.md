@@ -22,8 +22,3 @@ Special characters are predefined, contextual characters that modify the program
 - [$](./interpolated.md), the interpolated string character.
 
 This section only includes those tokens that are not operators. See the [operators](../operators/index.md) section for all operators.
-
-## See also
-
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)

@@ -4,10 +4,10 @@ description: Demonstrates the various ways to install .NET SDK and .NET Runtime 
 author: adegeo
 ms.author: adegeo
 ms.date: 01/24/2024
-ms.custom: updateeachrelease
+ms.custom: updateeachrelease, linux-related-content
 ---
 
-# Install the .NET SDK or the .NET Runtime on Ubuntu
+# Overview of .NET on Ubuntu
 
 This article describes how to install .NET on Ubuntu. The Microsoft package repository contains every version of .NET that is currently, or was previously, supported on Ubuntu. Starting with Ubuntu 22.04, some versions of .NET are available in the Ubuntu package feed. For more information about available versions, see the [Supported distributions](#supported-distributions) section.
 
@@ -40,10 +40,10 @@ Use the following sections to determine how you should install .NET:
 
 Install .NET through the Ubuntu feed. For more information, see the following pages:
 
-- [Install .NET on Ubuntu 22.04](linux-ubuntu-2204.md).
-- [Install .NET on Ubuntu 22.10](linux-ubuntu-2210.md).
-- [Install .NET on Ubuntu 23.04](linux-ubuntu-2304.md).
-- [Install .NET on Ubuntu 23.10](linux-ubuntu-2310.md).
+- [Install .NET on Ubuntu 24.04](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2404).
+- [Install .NET on Ubuntu 23.10](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2310).
+- [Install .NET on Ubuntu 23.04](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2304).
+- [Install .NET on Ubuntu 22.04](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2204).
 
 [!INCLUDE [linux-ubuntu-feed-sdk-note](includes/linux-ubuntu-feed-sdk-note.md)]
 
@@ -53,9 +53,9 @@ If you're going to install the Microsoft repository to use other Microsoft packa
 
 Use the instructions on the version-specific Ubuntu page.
 
-- [20.04 (LTS)](linux-ubuntu-2004.md)
-- [18.04 (LTS)](linux-ubuntu-1804.md)
-- [16.04 (LTS)](linux-ubuntu-1604.md)
+- [20.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2004)
+- [18.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-1804)
+- [16.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-1604)
 
 Review the [Supported distributions](#supported-distributions) section for more information about what versions of .NET are supported for your version of Ubuntu. If you're installing a version that isn't supported, see [Register the Microsoft package repository](#register-the-microsoft-package-repository).
 
@@ -105,15 +105,15 @@ The following table is a list of currently supported .NET releases and the versi
 
 <!-- This table is replicated in each individual Ubuntu article, but with only that specific version row listed. Make sure to update those tables. -->
 
-| Ubuntu                              | Supported .NET versions | Available in Ubuntu feed | [Available in Microsoft feed](#register-the-microsoft-package-repository) |
-|-------------------------------------|-------------------------|--------------------------|-----------------------------------|
-| [23.10](linux-ubuntu-2310.md)       | 8.0, 7.0, 6.0           | 8.0, 7.0, 6.0            | 8.0, 7.0, 6.0                     |
-| [23.04](linux-ubuntu-2304.md)       | 8.0, 7.0, 6.0           | 7.0, 6.0                 | 8.0, 7.0, 6.0                     |
-| [22.10](linux-ubuntu-2210.md)       | 7.0, 6.0                | 7.0, 6.0                 | 7.0, 6.0, 3.1                     |
-| [22.04 (LTS)](linux-ubuntu-2204.md) | 8.0, 7.0, 6.0           | 7.0, 6.0                 | 8.0, 7.0, 6.0, 3.1                |
-| [20.04 (LTS)](linux-ubuntu-2004.md) | 8.0, 7.0, 6.0           | None                     | 8.0, 7.0. 6.0, 5.0, 3.1, 2.1      |
-| [18.04 (LTS)](linux-ubuntu-1804.md) | 7.0, 6.0                | None                     | 7.0. 6.0, 5.0, 3.1, 2.2, 2.1      |
-| [16.04 (LTS)](linux-ubuntu-1604.md) | 6.0                     | None                     | 6.0, 5.0, 3.1, 3.0, 2.2, 2.1, 2.0 |
+| Ubuntu                                                             | Supported .NET versions | Available in Ubuntu feed | [Available in Microsoft feed](#register-the-microsoft-package-repository) |
+|--------------------------------------------------------------------|-------------------------|--------------------------|-----------------------------------|
+| [24.04](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2310)       | 8.0                     | 8.0                      | None                              |
+| [23.10](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2310)       | 8.0, 7.0, 6.0           | 8.0, 7.0, 6.0            | 8.0, 7.0, 6.0                     |
+| [23.04](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2304)       | 8.0, 7.0, 6.0           | 7.0, 6.0                 | 8.0, 7.0, 6.0                     |
+| [22.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2204) | 8.0, 7.0, 6.0           | 7.0, 6.0                 | 8.0, 7.0, 6.0, 3.1                |
+| [20.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2004) | 8.0, 7.0, 6.0           | None                     | 8.0, 7.0. 6.0, 5.0, 3.1, 2.1      |
+| [18.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-1804) | 7.0, 6.0                | None                     | 7.0. 6.0, 5.0, 3.1, 2.2, 2.1      |
+| [16.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-1604) | 6.0                     | None                     | 6.0, 5.0, 3.1, 3.0, 2.2, 2.1, 2.0 |
 
 When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support, .NET is no longer supported with that version.
 
@@ -124,7 +124,7 @@ When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support,
 The Microsoft package repository contains all versions of .NET that were previously, or are currently, [supported with your version of Ubuntu](#supported-distributions). If your version of Ubuntu provides .NET packages, you'll need to deprioritize the Ubuntu packages and use the Microsoft repository. For instructions on how to deprioritize the packages, see [I need a version of .NET that isn't provided by my Linux distribution](linux-package-mixup.md?pivots=os-linux-ubuntu#i-need-a-version-of-net-that-isnt-provided-by-my-linux-distribution).
 
 > [!IMPORTANT]
-> Package manager installs are only supported on the **x64** architecture. Other architectures, such as **Arm**, must install .NET by some other means, such as with the [installer script](linux-scripted-manual.md#scripted-install) or by [manual installation](linux-scripted-manual.md#manual-install).
+> The Microsoft package repository only supports .NET packages that target the **x64** architecture. Other architectures, such as **Arm**, must install .NET by some other means, such as with the [installer script](linux-scripted-manual.md#scripted-install) or by [manual installation](linux-scripted-manual.md#manual-install).
 
 Preview releases are **not** available in the Microsoft package repository. For more information, see [Install preview versions](#install-preview-versions).
 
@@ -134,11 +134,11 @@ Preview releases are **not** available in the Microsoft package repository. For 
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
 
 ```bash
-# Get Ubuntu version
-declare repo_version=$(if command -v lsb_release &> /dev/null; then lsb_release -r -s; else grep -oP '(?<=^VERSION_ID=).+' /etc/os-release | tr -d '"'; fi)
+# Get OS version info
+source /etc/os-release
 
 # Download Microsoft signing key and repository
-wget https://packages.microsoft.com/config/ubuntu/$repo_version/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+wget https://packages.microsoft.com/config/$ID/$VERSION_ID/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 
 # Install Microsoft signing key and repository
 sudo dpkg -i packages-microsoft-prod.deb
@@ -225,19 +225,15 @@ This section provides information on common errors you might get while using APT
 > [!NOTE]
 > This information only applies when .NET is installed from the Microsoft package feed.
 
-[!INCLUDE [package-manager-failed-to-find-deb](includes/package-manager-failed-to-find-deb.md)]
+[!INCLUDE [package-manager-failed-to-find-deb-intro](includes/package-manager-failed-to-find-deb-intro.md)]
 
-```bash
-sudo apt-get install -y gpg
-wget -O - https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor -o microsoft.asc.gpg
-sudo mv microsoft.asc.gpg /etc/apt/trusted.gpg.d/
-wget https://packages.microsoft.com/config/ubuntu/{os-version}/prod.list
-sudo mv prod.list /etc/apt/sources.list.d/microsoft-prod.list
-sudo chown root:root /etc/apt/trusted.gpg.d/microsoft.asc.gpg
-sudo chown root:root /etc/apt/sources.list.d/microsoft-prod.list
-sudo apt-get update && \
-  sudo apt-get install -y {dotnet-package}
-```
+If you're using Ubuntu 23.10 or later, try the following commands:
+
+[!INCLUDE [package-manager-failed-to-find-deb-new](includes/package-manager-failed-to-find-deb-new.md)]
+
+If you're using an Ubuntu version prior to 23.10, try the following commands:
+
+[!INCLUDE [package-manager-failed-to-find-deb-classic](includes/package-manager-failed-to-find-deb-classic.md)]
 
 #### Failed to fetch
 
@@ -256,13 +252,13 @@ When you install with a package manager, these libraries are installed for you. 
 - libicu66 (for 20.x)
 - libicu70 (for 22.04)
 - libicu71 (for 22.10)
-- libicu72 (for 23.04)
-- liblttng-ust1 (for 22.x)
+- libicu72 (for 23.04 or later)
+- liblttng-ust1 (for 22.x or later)
 - libssl1.0.0 (for 16.x)
 - libssl1.1 (for 18.x, 20.x)
-- libssl3 (for 22.x)
+- libssl3 (for 22.x or later)
 - libstdc++6
-- libunwind8 (for 22.x)
+- libunwind8 (for 22.x or later)
 - zlib1g
 
 [!INCLUDE [linux-ubuntu-deps-example](includes/linux-ubuntu-deps-example.md)]

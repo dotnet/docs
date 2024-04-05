@@ -8,6 +8,10 @@ items:
     items:
     - name: Overview
       href: 9.0.md
+    - name: ASP.NET Core
+      items:
+      - name: DefaultKeyResolution.ShouldGenerateNewKey has altered meaning
+        href: aspnet-core/9.0/key-resolution.md
     - name: Core .NET libraries
       items:
       - name: Creating type of array of System.Void not allowed
@@ -40,6 +44,10 @@ items:
         href: windows-forms/9.0/datagridviewrowaccessibleobject-name-row.md
       - name: No exception if DataGridView is null
         href: windows-forms/9.0/datagridviewheadercell-nre.md
+    - name: WPF
+      items:
+      - name: "'GetXmlNamespaceMaps' type change"
+        href: wpf/9.0/xml-namespace-maps.md
   - name: .NET 8
     items:
     - name: Overview
@@ -94,6 +102,8 @@ items:
         href: core-libraries/8.0/enumerable-sum.md
       - name: FileStream writes when pipe is closed
         href: core-libraries/8.0/filestream-disposed-pipe.md
+      - name: FindSystemTimeZoneById doesn't return new object
+        href: core-libraries/8.0/timezoneinfo-object.md
       - name: GC.GetGeneration might return Int32.MaxValue
         href: core-libraries/8.0/getgeneration-return-value.md
       - name: GetFolderPath behavior on Unix
@@ -110,6 +120,8 @@ items:
         href: core-libraries/8.0/processstartinfo-windowstyle.md
       - name: RuntimeIdentifier returns platform for which runtime was built
         href: core-libraries/8.0/runtimeidentifier.md
+      - name: Type.GetType() throws exception for all invalid element types
+        href: core-libraries/8.0/type-gettype.md
     - name: Cryptography
       items:
       - name: AesGcm authentication tag size on macOS
@@ -186,6 +198,8 @@ items:
         href: sdk/8.0/dotnet-publish-config.md
       - name: "'dotnet restore' produces security vulnerability warnings"
         href: sdk/8.0/dotnet-restore-audit.md
+      - name: Duplicate output for -getItem, -getProperty, and -getTargetResult
+        href: sdk/8.0/getx-duplicate-output.md
       - name: Implicit `using` for System.Net.Http no longer added
         href: sdk/8.0/implicit-global-using-netfx.md
       - name: MSBuild custom derived build events deprecated
@@ -918,6 +932,10 @@ items:
   items:
   - name: ASP.NET Core
     items:
+    - name: .NET 9
+      items:
+      - name: DefaultKeyResolution.ShouldGenerateNewKey has altered meaning
+        href: aspnet-core/9.0/key-resolution.md
     - name: .NET 8
       items:
       - name: ConcurrencyLimiterMiddleware is obsolete
@@ -1174,6 +1192,8 @@ items:
         href: core-libraries/8.0/enumerable-sum.md
       - name: FileStream writes when pipe is closed
         href: core-libraries/8.0/filestream-disposed-pipe.md
+      - name: FindSystemTimeZoneById doesn't return new object
+        href: core-libraries/8.0/timezoneinfo-object.md
       - name: GC.GetGeneration might return Int32.MaxValue
         href: core-libraries/8.0/getgeneration-return-value.md
       - name: GetFolderPath behavior on Unix
@@ -1190,6 +1210,8 @@ items:
         href: core-libraries/8.0/processstartinfo-windowstyle.md
       - name: RuntimeIdentifier returns platform for which runtime was built
         href: core-libraries/8.0/runtimeidentifier.md
+      - name: Type.GetType() throws exception for all invalid element types
+        href: core-libraries/8.0/type-gettype.md
     - name: .NET 7
       items:
       - name: API obsoletions with default diagnostic ID
@@ -1596,6 +1618,8 @@ items:
         href: sdk/8.0/dotnet-publish-config.md
       - name: "'dotnet restore' produces security vulnerability warnings"
         href: sdk/8.0/dotnet-restore-audit.md
+      - name: Duplicate output for -getItem, -getProperty, and -getTargetResult
+        href: sdk/8.0/getx-duplicate-output.md
       - name: Implicit `using` for System.Net.Http no longer added
         href: sdk/8.0/implicit-global-using-netfx.md
       - name: MSBuild custom derived build events deprecated
@@ -1858,6 +1882,10 @@ items:
         href: winforms.md
   - name: WPF
     items:
+    - name: .NET 9
+      items:
+      - name: "'GetXmlNamespaceMaps' type change"
+        href: wpf/9.0/xml-namespace-maps.md
     - name: .NET 5
       items:
       - name: OutputType set to WinExe

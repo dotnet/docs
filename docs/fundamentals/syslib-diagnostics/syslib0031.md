@@ -2,6 +2,8 @@
 title: SYSLIB0031 warning
 description: Learn about the obsoletion of EncodeOID that generates compile-time warning SYSLIB0031.
 ms.date: 07/16/2021
+f1_keywords:
+  - syslib0031
 ---
 # SYSLIB0031: EncodeOID is obsolete
 

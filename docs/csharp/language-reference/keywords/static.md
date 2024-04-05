@@ -66,8 +66,6 @@ This example shows that you can initialize a `static` field by using another `st
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [Modifiers](index.md)
 - [using static directive](using-directive.md)

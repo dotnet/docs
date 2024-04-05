@@ -59,13 +59,13 @@ Welcome to what's new in the .NET docs for January 2024. This article lists some
 - [System.Threading.Tasks.TaskScheduler class](../fundamentals/runtime-libraries/system-threading-tasks-taskscheduler.md)
 - [System.Threading.Thread class](../fundamentals/runtime-libraries/system-threading-thread.md)
 - [Build apps with .NET](../core/apps.md)
-- [Use runsettings with MSTest runner](../core/testing/unit-testing-mstest-runner-runsettings.md)
-- [Use MSTest runner with `dotnet test`](../core/testing/unit-testing-mstest-runner-integrations.md)
+- [Use runsettings with Microsoft.Testing.Platform](../core/testing/unit-testing-platform-runsettings.md)
+- [Use Microsoft.Testing.Platform with `dotnet test`](../core/testing/unit-testing-platform-integration-dotnet-test.md)
 - [MSTest code analysis](../core/testing/mstest-analyzers/overview.md)
 
 ### Updated articles
 
-- [MSTest runner extensions](../core/testing/unit-testing-mstest-runner-extensions.md) - Update MSTest runner extensions info
+- [Microsoft.Testing.Platform extensions](../core/testing/unit-testing-platform-extensions.md) - Update Microsoft.Testing.Platform extensions info
 - [ASP.NET Core metrics](../core/diagnostics/built-in-metrics-aspnetcore.md) - Built-in metrics refactor
 
 ## C# language

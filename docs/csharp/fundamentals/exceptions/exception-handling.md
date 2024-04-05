@@ -61,6 +61,6 @@ For more information, see [Exceptions](~/_csharpstandard/standard/exceptions.md)
   
 ## See also
 
-- [C# reference](../../language-reference/index.md)
+- [C# reference](../../language-reference/index.yml)
 - [Exception-handling statements](../../language-reference/statements/exception-handling-statements.md)
 - [using statement](../../language-reference/statements/using.md)

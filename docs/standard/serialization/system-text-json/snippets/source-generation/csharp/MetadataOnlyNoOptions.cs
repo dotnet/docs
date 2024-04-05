@@ -30,13 +30,13 @@ namespace MetadataOnlyNoOptions
     {
         public static void Main()
         {
-            string jsonString =
- @"{
-  ""Date"": ""2019-08-01T00:00:00"",
-  ""TemperatureCelsius"": 25,
-  ""Summary"": ""Hot""
-}
-";
+            string jsonString = """
+                {
+                  "Date": "2019-08-01T00:00:00",
+                  "TemperatureCelsius": 25,
+                  "Summary": "Hot"
+                }
+                """;
             WeatherForecast? weatherForecast;
 
             // Deserialize with context that selects metadata mode only for WeatherForecast only.

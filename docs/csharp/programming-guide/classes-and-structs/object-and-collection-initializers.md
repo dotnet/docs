@@ -198,6 +198,5 @@ The following example shows an object that implements <xref:System.Collections.I
 
 - [Use object initializers (style rule IDE0017)](../../../fundamentals/code-analysis/style-rules/ide0017.md)
 - [Use collection initializers (style rule IDE0028)](../../../fundamentals/code-analysis/style-rules/ide0028.md)
-- [C# Programming Guide](../index.md)
 - [LINQ in C#](../../linq/index.md)
 - [Anonymous Types](../../fundamentals/types/anonymous-types.md)

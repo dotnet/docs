@@ -85,11 +85,11 @@ This section explains the use of examples in .NET prompt engineering.
 
 An example is text that shows the model how to respond. The model uses examples to infer what to include in completions. Examples can come either before or after the instructions in an engineered prompt, but the two shouldn't be interspersed. 
 
-Like a normal GPT interaction, an example starts with a prompt. The example can include a completion but it's not required. A completion in an example doesn't have to include the full response&mdash;it might just include a formatted word, the first bullet in an unordered list, or something similar to indicate how each completion should start.  
+Like a normal GPT interaction, an example starts with a prompt. The example can include a completion but it's not required. A completion in an example doesn't have to include the verbatim response&mdash;it might just include a formatted word, the first bullet in an unordered list, or something similar to indicate how each completion should start.  
 
-Examples are often classified by whether they contain verbatim completions.
+Examples are often classified as zero-shot or few-shot based on whether they contain verbatim completions.
 
-- [**Zero-shot learning**]() examples include a prompt with no verbatim completion. Because they don't include verbatim completions, zero-shot prompts test a model's responses without giving it any example output. Zero-shot prompts can have  completions that convey structure or formatting, such as indicating an ordered list structure by including **1.** as the completion. 
+- **Zero-shot learning** examples include a prompt with no verbatim completion. Because they don't include verbatim completions, zero-shot prompts test a model's responses without giving it any example output. Zero-shot prompts can have  completions that convey structure or formatting, such as indicating an ordered list structure by including **1.** as the completion. 
 - **Few-shot learning** examples include several pairs of prompts with verbatim completions.Few-shot learning can change the model's behavior by adding to its existing knowledge.
 
 ## .NET implementations

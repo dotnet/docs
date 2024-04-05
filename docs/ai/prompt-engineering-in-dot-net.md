@@ -43,7 +43,7 @@ Sometimes GPT models don't follow an instruction the way you expect because it n
 
 Instructions are typically more effective when used with examples. However, when you use both in a prompt you should make sure that the instructions are either above or below the examples for best model performance.
 
-The Completion API accepts any instructions that you include in an engineered prompt. The Chat Completion API only accepts instructions that you include in a [system message](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/advanced-prompt-engineering?pivots=programming-language-chat-completions#system-message).
+The Completion API accepts any instructions that you include in a prompt. The Chat Completion API only accepts instructions in a [system message](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/advanced-prompt-engineering?pivots=programming-language-chat-completions#system-message) or a user message.
  
 ### Primary content
 

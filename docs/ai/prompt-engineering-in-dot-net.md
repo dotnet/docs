@@ -89,7 +89,7 @@ Like a normal GPT interaction, an example starts with a prompt. The example can 
 
 Examples are often classified by whether they contain verbatim completions.
 
-- **Zero-shot learning** examples include a prompt with no verbatim completion. Because they don't include verbatim completions, zero-shot prompts test a model's responses without giving it any example output. Zero-shot prompts can have  completions that convey structure or formatting, such as indicating an ordered list structure by including **1.** as the completion. 
+- [**Zero-shot learning**]() examples include a prompt with no verbatim completion. Because they don't include verbatim completions, zero-shot prompts test a model's responses without giving it any example output. Zero-shot prompts can have  completions that convey structure or formatting, such as indicating an ordered list structure by including **1.** as the completion. 
 - **Few-shot learning** examples include several pairs of prompts with verbatim completions.Few-shot learning can change the model's behavior by adding to its existing knowledge.
 
 ## .NET implementations

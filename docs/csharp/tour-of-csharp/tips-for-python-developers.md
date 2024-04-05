@@ -23,7 +23,7 @@ As you start learning C#, you'll learn these important concepts where C# is diff
 1. [***LINQ***](../linq/index.md): The query expression keywords that make up Language Integrated Query (LINQ) aren't keywords in Python. However, Python libraries like `itertools`, `more-itertools`, and `py-linq` provide similar functionality.
 1. [***Generics***](../fundamentals/types/generics.md): C# generics use C# static typing to make assertions about the arguments supplied for type parameters. A generic algorithm might need to specify constraints that an argument type must satisfy.
 
-Finally, there are some features of Python aren't available in C#:
+Finally, there are some features of Python that aren't available in C#:
 
 1. ***Structural (duck) typing***: In C#, types have names and declarations. Except for [tuples](../language-reference/builtin-types/value-tuples.md), types with the same structure aren't interchangeable.
 1. ***REPL***: C# doesn't have a Read-Eval-Print Loop (REPL) to quickly prototype solutions.

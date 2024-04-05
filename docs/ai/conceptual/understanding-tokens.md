@@ -78,7 +78,7 @@ The exact tokenization method used varies by LLM. Some common tokenization metho
 - Character tokenization (text is split into individual characters)
 - Subword tokenization (text is split into partial words or character sets)
 
-For example, the GPT models, developed by OpenAI, use _Byte-Pair Encoding_ (BPE) which is a type of subword tokenization.
+For example, the GPT models, developed by OpenAI, use _Byte-Pair Encoding_ (BPE) which is a type of subword tokenization. OpenAI provides [a tool to visualize how a text will be tokenized](https://platform.openai.com/tokenizer).
 
 There are benefits and disadvantages to each tokenization method:
 

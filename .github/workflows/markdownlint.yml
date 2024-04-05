@@ -25,7 +25,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4.1.1
       - name: Use Node.js
-        uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8
+        uses: actions/setup-node@c2ac33f2c62f978d6c944d9648125a294e56dc0b
         with:
           node-version: 20.x
       - name: Run Markdownlint

@@ -14,7 +14,7 @@ This tutorial takes you through an interactive experience building a sample solu
 
 ## Prerequisites
 
-- [.NET Core 2.1 SDK](https://dotnet.microsoft.com/download) or later versions.
+- [.NET 8 SDK](https://dotnet.microsoft.com/download) or later versions.
 - A text editor or code editor of your choice.
 
 ## Creating the source project
@@ -76,9 +76,9 @@ This creates a test project that uses NUnit as the test framework. The generated
 
 ```xml
 <ItemGroup>
-  <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.5.0" />
-  <PackageReference Include="NUnit" Version="3.9.0" />
-  <PackageReference Include="NUnit3TestAdapter" Version="3.9.0" />
+  <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.9.0" />
+  <PackageReference Include="NUnit" Version="4.1.0" />
+  <PackageReference Include="NUnit3TestAdapter" Version="4.5.0" />
 </ItemGroup>
 ```
 
@@ -125,10 +125,10 @@ type TestClass () =
 
     [<Test>]
     member this.TestMethodPassing() =
-        Assert.True(true)
+        Assert.That(true, Is.True)
 
     [<Test>]
-     member this.FailEveryTime() = Assert.True(false)
+     member this.FailEveryTime() = Assert.That(false, Is.True)
 ```
 
 The `[<TestFixture>]` attribute denotes a class that contains tests. The `[<Test>]` attribute denotes a test method that is run by the test runner. From the *unit-testing-with-fsharp* directory, execute `dotnet test` to build the tests and the class library and then run the tests. The NUnit test runner contains the program entry point to run your tests. `dotnet test` starts the test runner using the unit test project you've created.

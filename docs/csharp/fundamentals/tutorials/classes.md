@@ -13,7 +13,7 @@ In this tutorial, you'll build a console application and see the basic object-or
 
 ## Create your application
 
-Using a terminal window, create a directory named *classes*. You'll build your application there. Change to that directory and type `dotnet new console` in the console window. This command creates your application. Open *Program.cs*. It should look like this:
+Using a terminal window, create a directory named *Classes*. You'll build your application there. Change to that directory and type `dotnet new console` in the console window. This command creates your application. Open *Program.cs*. It should look like this:
 
 ```csharp
 // See https://aka.ms/new-console-template for more information

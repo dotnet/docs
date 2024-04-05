@@ -6,7 +6,7 @@ ms.date: 04/03/2024
 
 # A tour of the C# language
 
-The C# language is the most popular language for the [.NET platform](../index.yml), a free, cross-platform, open source development environment. C# programs can run on many different devices, from IoT devices to the cloud and everywhere in between. You can write apps for phone, desktop, and laptop computers and servers.
+The C# language is the most popular language for the [.NET platform](../index.yml), a free, cross-platform, open source development environment. C# programs can run on many different devices, from Internet of Things (IoT) devices to the cloud and everywhere in between. You can write apps for phone, desktop, and laptop computers and servers.
 
 C# is a cross-platform general purpose language that makes developers productive while writing highly performant code. With millions of developers, C# is the most popular .NET language. C# has broad support in the ecosystem and all .NET [workloads](../../standard/glossary.md#workload). Based on object-oriented principles, it incorporates many features from other paradigms, not least functional programming. Low-level features support high-efficiency scenarios without writing unsafe code. Most of the .NET runtime and libraries are written in C#, and advances in C# often benefit all .NET developers.
 
@@ -21,11 +21,11 @@ Console.WriteLine("Hello, World");
 
 The line starting with `//` is a *single line comment*. C# single line comments start with  `//` and continue to the end of the current line. C# also supports *multi-line comments*. Multi-line comments start with `/*` and end with `*/`. The `WriteLine` method of the `Console` class, which is in the `System` namespace, produces the output of the program. This class is provided by the standard class libraries, which, by default, are automatically referenced in every C# program.
 
-The preceding example shows one form of a "Hello, World" program, using [top-level statements](../fundamentals/program-structure/top-level-statements.md). You can also create a "Hello, World" program where you define the program's entry point in a method, as shown in the following example:
+The preceding example shows one form of a "Hello, World" program, using [top-level statements](../fundamentals/program-structure/top-level-statements.md). Earlier versions of C# required you to define the program's entry point in a method. This format is still valid, and you'll see it in many existing C# samples. You should be familiar with this form as well, as shown in the following example:
 
 :::code language="csharp" interactive="try-dotnet" source="./snippets/shared/HelloWorld.cs":::
 
-This version shows the building blocks you use in your programs. The "Hello, World" program starts with a `using` directive that references the `System` namespace. Namespaces provide a hierarchical means of organizing C# programs and libraries. Namespaces contain types and other namespaces—for example, the `System` namespace contains many types, such as the `Console` class referenced in the program, and many other namespaces, such as `IO` and `Collections`. A `using` directive that references a given namespace enables unqualified use of the types that are members of that namespace. Because of the `using` directive, the program can use `Console.WriteLine` as shorthand for `System.Console.WriteLine`.
+This version shows the building blocks you use in your programs. The "Hello, World" program starts with a `using` directive that references the `System` namespace. Namespaces provide a hierarchical means of organizing C# programs and libraries. Namespaces contain types and other namespaces—for example, the `System` namespace contains many types, such as the `Console` class referenced in the program, and many other namespaces, such as `IO` and `Collections`. A `using` directive that references a given namespace enables unqualified use of the types that are members of that namespace. Because of the `using` directive, the program can use `Console.WriteLine` as shorthand for `System.Console.WriteLine`. In the earlier example, that namespace was [implicitly](../language-reference/keywords/using-directive.md#global-modifier) included.
 
 The `Hello` class declared by the "Hello, World" program has a single member, the method named `Main`. The `Main` method is declared with the `static` modifier. While instance methods can reference a particular enclosing object instance using the keyword `this`, static methods operate without reference to a particular object. By convention, a static method named `Main` serves as the [entry point](../fundamentals/program-structure/main-command-line.md) of a C# program.
 
@@ -56,7 +56,7 @@ Some elements of C# might be less familiar. [Language integrated query (LINQ)](.
 
 The preceding query works for many storage types represented by `Students`. It could be a collection of objects, a database table, a cloud storage blob, or an XML structure. The same query syntax works for all storage types.
 
-The [Task based asynchronous programming model (TAP)](../asynchronous-programming/index.md) enables you to write code that reads as though it runs synchronously, even though it runs asynchronously. It utilizes the `async` and `await` keywords to describe methods that are asynchronous, and when an expression evaluates asynchronously. The following sample awaits an asynchronous web request. When the asynchronous operation completes, the method returns the length of the response:
+The [Task based asynchronous programming model](../asynchronous-programming/index.md) enables you to write code that reads as though it runs synchronously, even though it runs asynchronously. It utilizes the `async` and `await` keywords to describe methods that are asynchronous, and when an expression evaluates asynchronously. The following sample awaits an asynchronous web request. When the asynchronous operation completes, the method returns the length of the response:
 
 :::code language="csharp" source="./snippets/shared/AsyncSamples.cs" id="GetPageLengthAsync":::
 
@@ -68,11 +68,11 @@ Callers can iterate the collection using an `await foreach` statement:
 
 :::code language="csharp" source="./snippets/shared/AsyncSamples.cs" id="UseReadSequence":::
 
-C# provides [pattern matching expressions](../fundamentals/functional/pattern-matching.md). Those expressions enable you to inspect data and make decisions based on its characteristics. Pattern matching provides a great syntax for control flow based on data. The following code shows how methods for the boolean *and*, *or*, and *xor* operations could be expressed using pattern matching syntax:
+C# provides [pattern matching](../fundamentals/functional/pattern-matching.md). Those expressions enable you to inspect data and make decisions based on its characteristics. Pattern matching provides a great syntax for control flow based on data. The following code shows how methods for the boolean *and*, *or*, and *xor* operations could be expressed using pattern matching syntax:
 
 :::code language="csharp" source="./snippets/shared/PatternMatching.cs" id="PatternExamples":::
 
-Pattern expressions can be reduced using `_` as a catch all for any value. The following example shows how you can simplify the *and* method:
+Pattern matching expressions can be simplified using `_` as a catch all for any value. The following example shows how you can simplify the *and* method:
 
 :::code language="csharp" source="./snippets/shared/PatternMatching.cs" id="ReducedPattern":::
 

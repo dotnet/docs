@@ -47,7 +47,7 @@ A *single-dimensional array* is a sequence of like elements. You access an eleme
 
 :::code language="csharp" source="snippets/shared/Arrays.cs" id="SingleDimensionalArrayDeclaration":::
 
-The first declaration declares an uninitialized array of five integers, from `array[0]` to `array[4]`. The elements of the array are initialized to the [default value](default-values.md) of the element type, `0` for integers. The second declaration declares an array of strings and initializes all seven values of that array. A [foreach statement](../statements/iteration-statements.md#the-foreach-statement) iterates the elements of the `weekday` array and prints all the values. For single-dimensional arrays, the `foreach` statement processes elements in increasing index order, starting with index 0 and ending with index `Length - 1`.
+The first declaration declares an uninitialized array of five integers, from `array[0]` to `array[4]`. The elements of the array are initialized to the [default value](default-values.md) of the element type, `0` for integers. The second declaration declares an array of strings and initializes all seven values of that array. A series of `Console.WriteLine` statements prints all the elements of the `weekDay` array. For single-dimensional arrays, the `foreach` statement processes elements in increasing index order, starting with index 0 and ending with index `Length - 1`.
 
 ### Pass single-dimensional arrays as arguments
 

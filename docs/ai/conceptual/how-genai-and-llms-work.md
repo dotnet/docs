@@ -74,74 +74,154 @@ Some generative AI applications can produce code from natural language inputs. D
 
 Code generation can be used to provide quick implementations of common operations, such as sorting or filtering data, speed up translating code from one language to another, or answer questions about a technology based on specifed reference documentation. For example, a user may input the request, "Show me how to code a game of tic-tac-toe with Python". A generative AI application might produce the following output:
 
-_Sure, here's some basic code for a Tic-Tac-Toe game in Python:_
+_Sure, here's a simple implementation of a tic-tac-toe game in C#:_
 
-```python
-board = [' ' for x in range(9)]  
-  
-def print_board():  
-    row1 = '| {} | {} | {} |'.format(board[0], board[1], board[2])  
-    row2 = '| {} | {} | {} |'.format(board[3], board[4], board[5])  
-    row3 = '| {} | {} | {} |'.format(board[6], board[7], board[8])  
-    print()  
-    print(row1)  
-    print(row2)  
-    print(row3)  
-    print()  
-  
-def player_move(icon):  
-    if icon == 'X':  
-        number = 1  
-    elif icon == 'O':  
-        number = 2  
-    print('Your turn player {}'.format(number))  
-    choice = int(input('Enter your move (1-9): ').strip())  
-    if board[choice - 1] == ' ':  
-        board[choice - 1] = icon  
-    else:  
-        print()  
-        print('That space is taken!')  
-  
-def is_victory(icon):  
-    if (board[0] == icon and board[1] == icon and board[2] == icon) or \  
-       (board[3] == icon and board[4] == icon and board[5] == icon) or \  
-       (board[6] == icon and board[7] == icon and board[8] == icon) or \  
-       (board[0] == icon and board[3] == icon and board[6] == icon) or \  
-       (board[1] == icon and board[4] == icon and board[7] == icon) or \  
-       (board[2] == icon and board[5] == icon and board[8] == icon) or \  
-       (board[0] == icon and board[4] == icon and board[8] == icon) or \  
-       (board[2] == icon and board[4] == icon and board[6] == icon):  
-        return True  
-    else:  
-        return False  
-  
-def is_draw():  
-    if ' ' not in board:  
-        return True  
-    else:  
-        return False  
-  
-while True:  
-    print_board()  
-    player_move('X')  
-    print_board()  
-    if is_victory('X'):  
-        print('X Wins! Congratulations!')  
-        break  
-    elif is_draw():  
-        print('The game is a draw!')  
-        break  
-    player_move('O')  
-    if is_victory('O'):  
-        print_board()  
-        print('O Wins! Congratulations!')  
-        break  
-    elif is_draw():  
-        print('The game is a draw!')  
-        break
+```csharp
+using System;
+
+namespace TicTacToe
+{
+    class Program
+    {
+        static char[] board = { '1', '2', '3', '4', '5', '6', '7', '8', '9' };
+        static int player = 1; // Player 1 starts
+        static int choice;
+        static int flag = 0;
+
+        static void Main(string[] args)
+        {
+            do
+            {
+                Console.Clear(); // whenever loop starts, the screen will be cleared
+                Console.WriteLine("Player 1: X and Player 2: O");
+                Console.WriteLine("\n");
+                if (player % 2 == 0) // checking the chance of the player
+                {
+                    Console.WriteLine("Turn Player 2");
+                }
+                else
+                {
+                    Console.WriteLine("Turn Player 1");
+                }
+                Console.WriteLine("\n");
+                Board(); // calling the board Function
+                choice = int.Parse(Console.ReadLine()); // taking users choice
+                if (board[choice - 1] != 'X' && board[choice - 1] != 'O')
+                {
+                    if (player % 2 == 0) // checking the chance of the player
+                    {
+                        board[choice - 1] = 'O';
+                        player++;
+                    }
+                    else
+                    {
+                        board[choice - 1] = 'X';
+                        player++;
+                    }
+                }
+                else // if there is already an X or O, the position is already filled
+                {
+                    Console.WriteLine("Sorry the row {0} is already marked with an {1}", choice, board[choice - 1]);
+                    Console.WriteLine("\n");
+                    Console.WriteLine("Please wait 2 second board is loading again.....");
+                    Console.WriteLine("\n");
+                    System.Threading.Thread.Sleep(2000);
+                }
+                flag = CheckWin(); // calling of check win
+            } while (flag != 1 && flag != -1); // This is to check if the game is finished or not
+            Console.Clear(); // clearing the console
+            Board(); // getting the board again
+            if (flag == 1) // if flag value is 1 then some one has win or means who played marked last time which has win
+            {
+                Console.WriteLine("Player {0} has won", (player % 2) + 1);
+            }
+            else // if the value is -1 the game will be draw and no one is winner
+            {
+                Console.WriteLine("Draw");
+            }
+            Console.ReadLine();
+        }
+
+        private static void Board() // Board method which creats board
+        {
+            Console.WriteLine("     |     |      ");
+            Console.WriteLine("  {0}  |  {1}  |  {2}", board[0], board[1], board[2]);
+            Console.WriteLine("_____|_____|_____");
+            Console.WriteLine("     |     |      ");
+            Console.WriteLine("  {0}  |  {1}  |  {2}", board[3], board[4], board[5]);
+            Console.WriteLine("_____|_____|_____");
+            Console.WriteLine("     |     |      ");
+            Console.WriteLine("  {0}  |  {1}  |  {2}", board[6], board[7], board[8]);
+            Console.WriteLine("     |     |      ");
+        }
+
+        private static int CheckWin() // checking of winner
+        {
+            #region Horzontal Winning Condtion
+            // Winning Condition For First Row
+            if (board[0] == board[1] && board[1] == board[2])
+            {
+                return 1;
+            }
+            // Winning Condition For Second Row
+            else if (board[3] == board[4] && board[4] == board[5])
+            {
+                return 1;
+            }
+            // Winning Condition For Third Row
+            else if (board[6] == board[7] && board[7] == board[8])
+            {
+                return 1;
+            }
+            #endregion
+
+            #region Vertical Winning Condtion
+            // Winning Condition For First Column
+            else if (board[0] == board[3] && board[3] == board[6])
+            {
+                return 1;
+            }
+            // Winning Condition For Second Column
+            else if (board[1] == board[4] && board[4] == board[7])
+            {
+                return 1;
+            }
+            // Winning Condition For Third Column
+            else if (board[2] == board[5] && board[5] == board[8])
+            {
+                return 1;
+            }
+            #endregion
+
+            #region Diagonal Winning Condition
+            else if (board[0] == board[4] && board[4] == board[8])
+            {
+                return 1;
+            }
+            else if (board[2] == board[4] && board[4] == board[6])
+            {
+                return 1;
+            }
+            #endregion
+
+            #region Checking For Draw
+            // If all the cells or values filled with X or O then any player has won the match
+            else if (board[0] != '1' && board[1] != '2' && board[2] != '3' && board[3] != '4' && board[4] != '5' && board[5] != '6' && board[6] != '7' && board[7] != '8' && board[8] != '9')
+            {
+                return -1;
+            }
+            #endregion
+
+            else
+            {
+                return 0;
+            }
+        }
+    }
+}
 ```
 
-_This is just a basic implementation of the game, and can be improved upon with additional features such as error handling and input validation._
+_You can copy and paste this code into a new C# console application project in your preferred development environment to run and play the game._
 
 ## How do LLMs work?
 

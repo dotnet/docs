@@ -41,7 +41,7 @@ Directives are more flexible than imperatives.
 - A directive can provide more context, and you can combine several directives in one instruction. 
 - It's easier to implement a series of steps using a sequence of directives. You can spell out the steps that you want the model to take, but you can also just tell the model to break it into steps and then follow them, an approach called [chain of thought prompting](chain-of-thought-prompting.md).
 
-Sometimes GPT models don't follow an instruction the way you expect because it doesn't provide enough context. You can add more context an instruction by including primary content, supporting content, and cues. You can include these when you add an instruction, and can add or adjust them after you test your instruction's effect.
+Sometimes GPT models don't follow an instruction the way you expect because it doesn't provide enough context. You can add more context to an instruction by including primary content, supporting content, and cues. You can include these when you add an instruction, and can add or adjust them after you test your instruction's effect.
 
 Instructions are typically more effective when used with examples. However, when you use both in a prompt you should make sure that the instructions are either above or below the examples for best model performance.
 
@@ -55,15 +55,14 @@ Make sure you clearly separate primary content from the instructions that apply 
 
 ```csharp
 prompt= @$"Instructions: Summarize US Presidential accomplishments.
-Accomplishments: George Washington
+Accomplishments: 'George Washington
 First president of the United States.
 First president to have been a military veteran.
 First president to be elected to a second term in office.
 First president to receive votes from every presidential elector in an election.
 First president to fill the entire body of the United States federal judges; including the Supreme Court.
 First president to be declared an honorary citizen of a foreign country, and an honorary citizen of France.
-
-John Adams ..." //Text truncated;
+John Adams ...'" //Text truncated;
 ```
 
 ### Supporting content
@@ -143,8 +142,8 @@ By deeply integrating with Visual Studio Code, Semantic Kernel also makes it eas
 Azure OpenAI is a managed service that allows developers to deploy, tune, and generate content from OpenAI models on Azure resources. Azure OpenAI's client library for .NET is an adaptation of OpenAI's REST APIs that provides an idiomatic interface and rich integration with the rest of the Azure SDK ecosystem. It can connect to Azure OpenAI resources or to the non-Azure OpenAI inference endpoint, making it suitable for non-Azure OpenAI development.
 
 Use the client library for Azure OpenAI to:
-- Create chat-style completions via the Chat Completion API.
-- Create simple text completions via the Completion API.
+- Provide simple text completions via the Completion API.
+- Provide chat-style completions via the Chat Completion API.
 
 The Completion API and the Chat Completion API target different GPT models with different implementations of prompt engineering. The following examples show the same engineered prompt in each API. 
 
@@ -153,8 +152,8 @@ The Completion API targets the GPT-3 and GPT-35 models, which have no specific f
 ```csharp
 Prompts = 
     { 
-        "Produce a list of US Presidents' executive accomplishments, grouped by my favorite categories.",
-        "My favorite categories: domestic policy, judicial appointments, trade agreements, space exploration", 
+        "Summarize US Presidential accomplishments, grouped by category.",
+        "Categories: domestic policy, judicial appointments, trade agreements, space exploration", 
     }
 ```
 
@@ -169,7 +168,7 @@ Messages =
         new ChatRequestUserMessage("I need help with my homework."),
         // Assistant messages represent historical responses from the assistant
         new ChatRequestAssistantMessage("Of course! That's what I'm here for. How can I help?"),
-        new ChatRequestUserMessage("Produce a list of US Presidents' executive accomplishments, grouped by my favorite category.\\n My favorite categories: domestic policy, judicial appointments, trade agreements, space exploration"),
+        new ChatRequestUserMessage("Summarize US Presidential accomplishments, grouped by category.\\n Categories: domestic policy, judicial appointments, trade agreements, space exploration"),
     }
 ```
 

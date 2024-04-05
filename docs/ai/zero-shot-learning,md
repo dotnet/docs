@@ -41,9 +41,9 @@ Few-shot learning is the practice of passing few-shot prompts (prompts paired wi
 
 ### Caveats
 
-- When you use several examples the model can learn false patterns, such as "Sentiments are twice as likely to be positive than negative." 
-- Example-based learning doesn’t work well for complex reasoning tasks
+- Example-based learning doesn’t work well for complex reasoning tasks. However, adding instructions can help address this.
 - Few-shot learning requires creating lengthy prompts. Prompts with large number of tokens can increase computation and latency. There’s also a limit to the length of the prompts.
+- When you use several examples the model can learn false patterns, such as "Sentiments are twice as likely to be positive than negative." 
 
 ## Related content
 

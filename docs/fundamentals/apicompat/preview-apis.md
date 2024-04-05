@@ -6,7 +6,7 @@ ms.date: 4/4/2024
 
 # Preview APIs
 
-The .NET platform prides itself with taking compatibility seriously. As such, the the library ecosystem tends to avoid making breaking changes, especially with respect to the API.
+The .NET platform prides itself with taking compatibility seriously. As such, the library ecosystem tends to avoid making breaking changes, especially with respect to the API.
 
 Nonetheless, when designing APIs, it's important to collect feedback from users and change the API based on that feedback if necessary. To avoid surprises, it's important that users understand which APIs are considered stable and which ones are still in active development and might change.
 

@@ -53,9 +53,9 @@ The concept of profile, allows you to select the default set of configurations a
 
 You can set the profile using the property `TestingExtensionsProfile` to one of the following 3 profiles:
 
-- `None` - no extension is added,
-- `Default` - the default profile when none is explicitly set. Depending on the version of the SDK, the recommended list of extensions.
-- `AllMicrosoft` - enable all extensions shipped by Microsoft (including extensions with a restrictive license).
+- `Default` - Enables the recommended extensions for this version of MSTest.SDK. This is the default when the property is not set explicitly.
+- `None` - No extensions are enabled.
+- `AllMicrosoft` - Enable all extensions shipped by Microsoft (including extensions with a restrictive license).
 
 Here is a full example, using the `None` profile:
 
@@ -74,7 +74,7 @@ Here is a full example, using the `None` profile:
 
 ### Enabling or disabling extensions
 
-On top of the extensions profile, we offer the ability to enable or disable extensions using a MSBuild property with the pattern `Enable[NugetPackageNameWithoutDots]`.  
+Extensions can be enabled and disabled by MSBuild properties with the pattern `Enable[NugetPackageNameWithoutDots]`.
 
 For example, to enable the crash dump extension (NuGet package [Microsoft.Testing.Extensions.CrashDump](https://www.nuget.org/packages/Microsoft.Testing.Extensions.CrashDump)), you can use the following property `EnableMicrosoftTestingExtensionsCrashDump` set to `true`:
 

@@ -29,25 +29,25 @@ But what if your app is supposed to help US History students? Pedro Lascurain's 
 
 That's the basic idea of prompt engineering: you provide context to your app to help it produce better completions. You can do this by giving the model instructions and examples.
 
-The Completion API and the Chat Completion API target different GPT models with different implementations of prompt engineering. The Completion API targets the GPT-3 and GPT-35 models, which have no specific format rules for prompt engineering. The Chat Completion API targets the GPT-35-Turbo and GPT-4 models, which require that prompt engineering uses a specific chat-like format consisting of role-based messages. 
-
 ## Instructions
 
 This section explains the use of instructions in prompt engineering. 
 
 An instruction is text that tells the model how to respond. An instruction can be a directive (**You are helping students learn about US history, so talk about the US unless they specifically ask about other countries.**) or an imperative (**Translate to Tagalog:**). 
 
-Directives are more flexible than imperatives. A directive can provide more context, and you can combine several directives in one instruction. It's also easier to implement a series of steps using a sequence of directives. You can spell out the steps that you want the model to take, but you can also just tell the model to break it into steps and then follow them, an approach called chain of thought prompting.
-
-The Completion API accepts any instructions that you include in an engineered prompt. The Chat Completion API only accepts instructions that you include in a [system message](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/advanced-prompt-engineering?pivots=programming-language-chat-completions#system-message).
+Directives are more flexible than imperatives. 
+- A directive can provide more context, and you can combine several directives in one instruction. 
+- It's easier to implement a series of steps using a sequence of directives. You can spell out the steps that you want the model to take, but you can also just tell the model to break it into steps and then follow them, an approach called chain of thought prompting.
 
 Sometimes GPT models don't follow an instruction the way you expect because it needs more context. You can add more context an instruction by including primary content, supporting content, and cues. You can include these clarifications when you add an instruction, and can add or adjust them after you test your instruction's effect. Note that in an engineered prompt, instructions must be clearly distinct from the clarifications you add to them.
 
 Instructions are typically more effective when used with examples. However, when you use both in a prompt you should make sure that the instructions are either above or below the examples for best model performance.
+
+The Completion API accepts any instructions that you include in an engineered prompt. The Chat Completion API only accepts instructions that you include in a [system message](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/advanced-prompt-engineering?pivots=programming-language-chat-completions#system-message).
  
 ### Primary content
 
-Primary content is text you prepend to an instruction to indicate that the model should use the text as input for the instruction. For example, if you add the instruction **Produce a list of US Presidents' executive accomplishments.**, you could prepend a wiki page as primary content and get a list of accomplishments that are present in that page. 
+Primary content is text you add to an instruction for the model to use as input for the instruction. For example, if you add the instruction **Produce a list of US Presidents' executive accomplishments.**, you could use a wiki page as primary content and get a list of accomplishments that are present in that page. 
 
 Make sure you clearly separate primary content from the instructions that apply to it, such as with an intervening line.   
 
@@ -57,7 +57,13 @@ Supporting content is text that an instruction uses as input but isn't the subje
 
 Suppose you use the instruction **Produce a list of US Presidents' executive accomplishments** to produce a list. The model might organized and order it in any number of ways. But what if you want the list to group the accomplishments by a specific set of categories? You could adjust your instruction by appending **, grouped in categories** to it, but a model is unlikely to correctly determine which specific categories you want. 
 
-To make sure the model uses the categories you want, you could append supporting content to specify your categories and adjust your instruction accordingly. You could append this line of supporting content below the instruction: **My favorite categories: domestic policy, judicial appointments, trade agreements, space exploration**, and then change the instruction so it refers to the supporting content: **Produce a list of US Presidents' executive accomplishments, grouped by my favorite category**. 
+To make sure the model uses the categories you want, you could append supporting content to specify your categories and adjust your instruction accordingly. You could add a line of supporting content below the instruction and then change the instruction so it refers to the supporting content: 
+
+```Prompt
+Produce a list of US Presidents' executive accomplishments, grouped by my favorite category.
+
+My favorite categories: domestic policy, judicial appointments, trade agreements, space exploration
+```
 
 As with primary content, supporting content should be clearly distinct from the instruction it supports.
 
@@ -67,9 +73,11 @@ A cue is a line of text you include after an instruction to convey the desired s
 
 Suppose you use an instruction to tell the model to produce a list of presidential accomplishments by category, along with supporting content that tells the model what categories to use. You decide that you want the model to produce a nested list with all caps for categories, with each president's accomplishments in each category listed on one line that begins with their name. After your instruction and supporting content, you could add the following cues to show the model how to structure and format the list:
 
-**DOMESTIC POLICY**
-**- George Washington:** 
-**- Thomas Jefferson:**
+```Prompt
+DOMESTIC POLICY
+- George Washington: 
+- Thomas Jefferson:
+```
 
 ## Examples 
 
@@ -104,6 +112,35 @@ Azure OpenAI's client library for .NET is an adaptation of OpenAI's REST APIs th
 Use the client library for Azure OpenAI to:
 - Create chat-style completions via the Chat Completion API.
 - Create simple text completions via the Completion API.
+
+The Completion API and the Chat Completion API target different GPT models with different implementations of prompt engineering. The following examples show the same engineered prompt in each API. 
+
+The Completion API targets the GPT-3 and GPT-35 models, which have no specific format rules for prompt engineering. 
+
+```csharp
+Prompts = 
+    { 
+        "Produce a list of US Presidents' executive accomplishments, grouped by my favorite category.",
+        "My favorite categories: domestic policy, judicial appointments, trade agreements, space exploration", 
+    }
+```
+
+
+The Chat Completion API targets the GPT-35-Turbo and GPT-4 models, which use a specific chat-like format consisting of role-based messages, as depicted below in C#. 
+
+```csharp
+Messages =
+    {
+        // The system message represents instructions or other guidance about how the assistant should behave
+        new ChatRequestSystemMessage("You are helping students of US History with their homework. Be cheerful about it."),
+        // User messages represent current or historical input from the end user
+        new ChatRequestUserMessage("I need help with my homework."),
+        // Assistant messages represent historical responses from the assistant
+        new ChatRequestAssistantMessage("Of course! That's what I'm here for. How can I help?"),
+        new ChatRequestUserMessage("Produce a list of US Presidents' executive accomplishments, grouped by my favorite category.\\n My favorite categories: domestic policy, judicial appointments, trade agreements, space exploration"),
+    }
+```
+
 
 Azure OpenAI is a managed service that allows developers to deploy, tune, and generate content from OpenAI models on Azure resources.
 

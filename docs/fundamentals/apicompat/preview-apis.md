@@ -14,13 +14,13 @@ There are multiple ways an API can express to be in preview form:
 
 * The entire component is considered preview:
 
-    - Exposed in a preview release of the .NET runtime
-    - Exposed in a prerelease NuGet package
+  * Exposed in a preview release of the .NET runtime
+  * Exposed in a prerelease NuGet package
 
 * An otherwise stable component specifically marks certain APIs as preview:
 
-    - Marked with <xref:System.Runtime.Versioning.RequiresPreviewFeaturesAttribute>
-    - Marked with <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute>
+  * Marked with <xref:System.Runtime.Versioning.RequiresPreviewFeaturesAttribute>
+  * Marked with <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute>
 
 This article explains how to choose between these options and how each of them works.
 

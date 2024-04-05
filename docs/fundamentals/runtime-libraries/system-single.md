@@ -99,8 +99,8 @@ In cases where a loss of precision is likely to affect the result of a compariso
 
 - Test for approximate equality instead of equality. This technique requires that you define either an absolute amount by which the two values can differ but still be equal, or that you define a relative amount by which the smaller value can diverge from the larger value.
 
-    > [!WARNING]
-    >  <xref:System.Single.Epsilon?displayProperty=nameWithType> is sometimes used as an absolute measure of the distance between two <xref:System.Single> values when testing for equality. However, <xref:System.Single.Epsilon?displayProperty=nameWithType> measures the smallest possible value that can be added to, or subtracted from, a <xref:System.Single> whose value is zero. For most positive and negative <xref:System.Single> values, the value of <xref:System.Single.Epsilon?displayProperty=nameWithType> is too small to be detected. Therefore, except for values that are zero, we do not recommend its use in tests for equality.
+  > [!WARNING]
+  > <xref:System.Single.Epsilon?displayProperty=nameWithType> is sometimes used as an absolute measure of the distance between two <xref:System.Single> values when testing for equality. However, <xref:System.Single.Epsilon?displayProperty=nameWithType> measures the smallest possible value that can be added to, or subtracted from, a <xref:System.Single> whose value is zero. For most positive and negative <xref:System.Single> values, the value of <xref:System.Single.Epsilon?displayProperty=nameWithType> is too small to be detected. Therefore, except for values that are zero, we do not recommend its use in tests for equality.
 
   The following example uses the latter approach to define an `IsApproximatelyEqual` method that tests the relative difference between two values. It also contrasts the result of calls to the `IsApproximatelyEqual` method and the <xref:System.Single.Equals%28System.Single%29> method.
 

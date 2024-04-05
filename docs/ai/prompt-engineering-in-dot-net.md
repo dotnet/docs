@@ -13,11 +13,21 @@ ms.date: [mm/dd/yyyy]
 
 # Concept - Prompt engineering in .NET
 
-This article explains basic GPT prompt engineering for .NET, including the Completion API and the Chat Completion API. 
+This article explains basic GPT prompt engineering for .NET. 
 
-GPT models from OpenAI are prompt-based: they respond to user input text (a prompt) with the most likely series of words to follow (a completion). For example, in response to the prompt **"The president who served the shortest term was "** these models would probably output the completion _"Pedro Lascurain."_ 
+GPT models from OpenAI are prompt-based: they respond to user input text (a prompt) with the most likely series of words to follow (a completion). For example:
+ 
+```Prompt
+"The president who served the shortest term was "
+```
 
-But what if your app is supposed to help US History students? Pedro Lascurain's 45-minute term is the shortest term for any president, but he served Mexico&mdash;the students are probably looking for _"William Henry Harrsion."_ Clearly, the app could be more helpful to its intended users if you gave it some context. That's the basic idea of prompt engineering: you provide context to your app to help it produce better completions. You can do this by giving the model instructions and examples.
+```Completion
+"Pedro Lascurain." 
+```
+
+But what if your app is supposed to help US History students? Pedro Lascurain's 45-minute term is the shortest term for any president, but he served Mexico&mdash;the students are probably looking for _"William Henry Harrsion."_ Clearly, the app could be more helpful to its intended users if you gave it some context. 
+
+That's the basic idea of prompt engineering: you provide context to your app to help it produce better completions. You can do this by giving the model instructions and examples.
 
 The Completion API and the Chat Completion API target different GPT models with different implementations of prompt engineering. The Completion API targets the GPT-3 and GPT-35 models, which have no specific format rules for prompt engineering. The Chat Completion API targets the GPT-35-Turbo and GPT-4 models, which require that prompt engineering uses a specific chat-like format consisting of role-based messages. 
 
@@ -27,7 +37,7 @@ This section explains the use of instructions in prompt engineering.
 
 An instruction is text that tells the model how to respond. An instruction can be a directive (**You are helping students learn about US history, so talk about the US unless they specifically ask about other countries.**) or an imperative (**Translate to Tagalog:**). 
 
-Directives are more flexible than imperatives. A directive can provide more context, and you can combine several directives in one instruction. It's also easier to implement a series of steps using a sequence of directives. You can spell out the steps that you want the model to take, but you can also just tell the model to break it into steps and then follow them, an approach called chain-of-thought prompting.
+Directives are more flexible than imperatives. A directive can provide more context, and you can combine several directives in one instruction. It's also easier to implement a series of steps using a sequence of directives. You can spell out the steps that you want the model to take, but you can also just tell the model to break it into steps and then follow them, an approach called chain of thought prompting.
 
 The Completion API accepts any instructions that you include in an engineered prompt. The Chat Completion API only accepts instructions that you include in a [system message](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/advanced-prompt-engineering?pivots=programming-language-chat-completions#system-message).
 
@@ -69,15 +79,36 @@ An example is text that shows the model how to respond. The model uses examples 
 
 Like a normal GPT interaction, an example starts with a prompt. The example can include a completion but it's not required. A completion in an example doesn't have to include the full response&mdash;it might just include a formatted word, the first bullet in an unordered list, or something similar to indicate how each completion should start.  
 
-Examples are often classified by the number of prompt/full completion pairs they contain.
+Examples are often classified by whether they contain verbatim completions.
 
-- **Zero-shot learning** examples include a prompt, either alone or paired with a partial completion. Because they don't include full completions, zero-shot prompts test a model's responses without giving it any example output. A partial completion only conveys structure or formatting, such as indicating an ordered list structure by including **1.** as the completion. 
-- **Few-shot learning** examples include several prompt/full completion pairs. These represent both the input to the model and its output, and so can change the model's behavior by adding to its existing knowledge.
+- **Zero-shot learning** examples include a prompt with no verbatim completion. Because they don't include verbatim completions, zero-shot prompts test a model's responses without giving it any example output. Zero-shot prompts can have  completions that convey structure or formatting, such as indicating an ordered list structure by including **1.** as the completion. 
+- **Few-shot learning** examples include several pairs of prompts with verbatim completions.Few-shot learning can change the model's behavior by adding to its existing knowledge.
+
+## .NET implementations
+
+This section compares two .NET options for prompt engineering: Semantic Kernel and Azure OpenAI. 
+
+### Semantic Kernel
+
+Semantic Kernel allows you to experiment with different prompts and parameters across multiple different models using a common interface. You can quickly compare the outputs of different models and parameters, and iterate on prompts to achieve the desired results.
+
+By deeply integrating with Visual Studio Code, Semantic Kernel also makes it easy for you to integrate prompt engineering into your existing development processes:
+- Create prompts directly in your preferred code editor.
+- Write tests for your prompts using your existing testing frameworks.
+- Deploy your prompts to production using your existing CI/CD pipelines. 
+
+### Azure OpenAI
+
+Azure OpenAI's client library for .NET is an adaptation of OpenAI's REST APIs that provides an idiomatic interface and rich integration with the rest of the Azure SDK ecosystem. It can connect to Azure OpenAI resources or to the non-Azure OpenAI inference endpoint, making it a great choice for even non-Azure OpenAI development.
+
+Use the client library for Azure OpenAI to:
+- Create chat-style completions via the Chat Completion API.
+- Create simple text completions via the Completion API.
+
+Azure OpenAI is a managed service that allows developers to deploy, tune, and generate content from OpenAI models on Azure resources.
 
 ## Related content
 
 - [Prompt engineering techniques](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/advanced-prompt-engineering)
 - [Zero-shot and few-shot learning](zero-shot-learning.md)
-- [Related article title](link.md)
-
---- Add more RC links after more docs are ready
+- [Chain of thought prompting](chain-of-thought-prompting.md)

@@ -37,7 +37,13 @@ This section explains the use cases for few-shot learning with a GPT-model.
 
 Few-shot learning is the practice of passing few-shot prompts (prompts paired with completions) to show your model how to respond. Unlike zero-shot learning, few-shot learning can add to the model's knowledge. It has two primary use cases:
 - Because it can add to the model's knowledge, few-shot learning can improve a model's performance. It also causes more tokens to be created, whihc can eventually become prohibitively expensive or even infeasible. However, if your LLM isn't fined-tuned yet you won't get good performance with zero-shot prompts, and few-shot learning is warranted.
-- You can use few-shot learning as a follow-on to zero-shot learning. In this case, you use zero-shot learning to establish a performance baseline, and then experiment with few-shot learning based on the zero-shot prompts you used. This lets you add to the model's knowledge after seeing how it currently responds, so you can iterate and improve performance significantly.   
+- You can use few-shot learning as a follow-on to zero-shot learning. In this case, you use zero-shot learning to establish a performance baseline, and then experiment with few-shot learning based on the zero-shot prompts you used. This lets you add to the model's knowledge after seeing how it currently responds, so you can iterate and improve performance significantly.  
+
+### Caveats
+
+- When you use several examples the model can learn false patterns, such as "Sentiments are twice as likely to be positive than negative." 
+- Example-based learning doesn’t work well for complex reasoning tasks
+- Few-shot learning requires creating lengthy prompts. Prompts with large number of tokens can increase computation and latency. There’s also a limit to the length of the prompts.
 
 ## Related content
 

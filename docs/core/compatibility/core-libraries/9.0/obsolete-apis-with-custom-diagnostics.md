@@ -2,7 +2,7 @@
 title: "Breaking change: .NET 9 obsoletions with custom IDs"
 titleSuffix: ""
 description: Learn about the .NET 9 breaking change in core .NET libraries where some APIs have been marked as obsolete with a custom diagnostic ID.
-ms.date: 10/15/2023
+ms.date: 04/05/2024
 ---
 # API obsoletions with non-default diagnostic IDs (.NET 9)
 

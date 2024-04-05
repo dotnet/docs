@@ -244,10 +244,10 @@ When adding a console app to your solution, you will be prompted to name the pro
 
 ### Web API
 
-When adding a web API to your solution, you will be prompted to name the project.
+When you add a web API to your solution, you're prompted to name the project.
 
 1. Name the Web API project **StopSignDetection_API**.
-1. Click **Add to solution** to add the project to your current solution.
+1. Select **Add to solution** to add the project to your current solution.
 1. Run the application.
 1. Open PowerShell and enter the following code where PORT is the port your application is listening on.
 
@@ -259,7 +259,7 @@ When adding a web API to your solution, you will be prompted to name the project
      Invoke-RestMethod "https://localhost:<PORT>/predict" -Method Post -Body ($body | ConvertTo-Json) -ContentType "application/json"
     ```
 
-1. If successful, the output should look similar to the text below.
+1. If successful, the output should look similar to the following text.
 
     ```powershell
     boxes                                      labels scores       boundingBoxes
@@ -271,11 +271,12 @@ When adding a web API to your solution, you will be prompted to name the project
     - The `labels` are the index of the predicted labels. In this case, the value 1 is a stop sign.
     - The `scores` defines how confident the model is that the bounding box belongs to that label.
 
+<!-- markdownlint-disable MD027 -->
     > [!NOTE]
     > **(Optional)** The bounding box coordinates are normalized for a width of 800 pixels and a height of 600 pixels. To scale the bounding box coordinates for your image in further post-processing, you need to:
     >
-    >    1. Multiply the top and bottom coordinates by the original image height, and multiply the left and right coordinates by the original image width.
-    >    1. Divide the top and bottom coordinates by 600, and divide the left and right coordinates by 800.
+    > 1. Multiply the top and bottom coordinates by the original image height, and multiply the left and right coordinates by the original image width.
+    > 1. Divide the top and bottom coordinates by 600, and divide the left and right coordinates by 800.
     >
     >    For example, given the original image dimensions,`actualImageHeight` and `actualImageWidth`, and a `ModelOutput` called `prediction`, the following code snippet shows how to scale the `BoundingBox` coordinates:
     >
@@ -286,7 +287,8 @@ When adding a web API to your solution, you will be prompted to name the project
     >    var right = originalImageWidth * prediction.Right / 800;
     >    ```
     >
-    > An image may have more than one bounding box, so the same process needs to be applied to each of the bounding boxes in the image.
+    > An image can have more than one bounding box, so the same process needs to be applied to each of the bounding boxes in the image.
+<!-- markdownlint-enable MD027 -->
 
 Congratulations! You've successfully built a machine learning model to detect stop signs in images using Model Builder. You can find the source code for this tutorial at the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/main/samples/modelbuilder/ObjectDetection_StopSigns) GitHub repository.
 

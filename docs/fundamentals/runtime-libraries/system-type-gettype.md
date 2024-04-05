@@ -34,8 +34,8 @@ General usage notes:
 
 - Do not pass methods to `assemblyResolver` or `typeResolver` if they come from unknown or untrusted callers. Use only methods that you provide or that you are familiar with.
 
-    > [!CAUTION]
-    >  Using methods from unknown or untrusted callers could result in elevation of privilege for malicious code.
+  > [!CAUTION]
+  > Using methods from unknown or untrusted callers could result in elevation of privilege for malicious code.
 
 - If you omit the `assemblyResolver` and/or `typeResolver` parameters, the value of the `throwOnError` parameter is passed to the methods that perform the default resolution.
 

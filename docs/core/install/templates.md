@@ -216,6 +216,7 @@ For example, the .NET 7 SDK includes templates for a console app targeting .NET 
 
     And you should see a message indicating the project was created.
 
+<!-- markdownlint-disable MD027 -->
     > The template "Console Application" was created successfully.
     >
     > Processing post-creation actions...
@@ -224,6 +225,7 @@ For example, the .NET 7 SDK includes templates for a console app targeting .NET 
     >   Restore completed in 1.05 sec for path-to-project-file.csproj.
     >
     > Restore succeeded.
+<!-- markdownlint-enable MD027 -->
 
 ## See also
 

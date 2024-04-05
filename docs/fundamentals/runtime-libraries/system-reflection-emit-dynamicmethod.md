@@ -15,8 +15,8 @@ A dynamic method can be anonymously hosted, or it can be logically associated wi
 
 - If the dynamic method is associated with a module that you specify, the dynamic method is effectively global to that module. It can access all types in the module and all `internal` (`Friend` in Visual Basic) members of the types. You can associate a dynamic method with any module, regardless of whether you created the module, provided that a demand for <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess> flag can be satisfied by the call stack that includes your code. If the <xref:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess?displayProperty=nameWithType> flag is included in the grant, the dynamic method can skip the JIT compiler's visibility checks and access the private data of all types declared in the module or in any other module in any assembly.
 
-    > [!NOTE]
-    >  When you specify the module with which a dynamic method is associated, that module must not be in the system-provided assembly that is used for anonymous hosting.
+  > [!NOTE]
+  > When you specify the module with which a dynamic method is associated, that module must not be in the system-provided assembly that is used for anonymous hosting.
 
 - If the dynamic method is associated with a type that you specify, it has access to all members of the type, regardless of access level. In addition, JIT visibility checks can be skipped. This gives the dynamic method access to the private data of other types declared in the same module or in any other module in any assembly. You can associate a dynamic method with any type, but your code must be granted <xref:System.Security.Permissions.ReflectionPermission> with both the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess> and <xref:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess> flags.
 

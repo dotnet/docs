@@ -4,6 +4,7 @@ description: Demonstrates the various ways to install .NET SDK and .NET Runtime 
 author: adegeo
 ms.author: adegeo
 ms.date: 11/14/2023
+ms.custom: linux-related-content
 ---
 
 # Install the .NET SDK or the .NET Runtime on RHEL and CentOS Stream

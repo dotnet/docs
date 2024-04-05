@@ -31,5 +31,4 @@ The `@` special character serves as a verbatim identifier. You use it in the fol
 
 ## See also
 
-- [C# Reference](../index.md)
 - [C# Special Characters](./index.md)

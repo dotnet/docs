@@ -20,7 +20,7 @@ The MSTest SDK will discover and run your tests using the [`MSTest runner`](./un
 How to use the `MSTest.Sdk` in a project:
 
   ```xml
-  <Project Sdk="MSTest.Sdk/3.3.0">
+  <Project Sdk="MSTest.Sdk/3.3.1">
     <PropertyGroup> 
         <TargetFramework>net8.0</TargetFramework>
     </PropertyGroup>
@@ -29,7 +29,7 @@ How to use the `MSTest.Sdk` in a project:
   ```
 
 > [!NOTE]
-> `/3.3.0` is given as example as it's the first version providing the SDK but it can be replaced with any newer version.
+> `/3.3.1` is given as example as it's the first version providing the SDK but it can be replaced with any newer version.
 > Alternatively, you can set the SDK version at solution level using the _global.json_. For more information, see [Use MSBuild project SDKs](/visualstudio/msbuild/how-to-use-project-sdk?#how-project-sdks-are-resolved).
 
 When you `build` the project all the needed components will be restored and installed using the standard NuGet workflow set by your project.
@@ -38,7 +38,7 @@ You don't need anything else to build and run your tests and you can use the sam
 
 ## Register extensions
 
-The `MSTest runner` comes with a set of [extensions](./unit-testing-mstest-runner-extensions.md) that you can enable using an MSBuild property with the pattern `Enable[NugetPackageNameWithoutDots]`.  
+The `MSTest runner` comes with a set of [extensions](./unit-testing-platform-extensions.md) that you can enable using an MSBuild property with the pattern `Enable[NugetPackageNameWithoutDots]`.  
 
 For example, to enable the crash dump extension in the [Microsoft.Testing.Extensions.CrashDump](https://www.nuget.org/packages/Microsoft.Testing.Extensions.CrashDump) NuGet package use the following property `EnableMicrosoftTestingExtensionsCrashDump`:  
 

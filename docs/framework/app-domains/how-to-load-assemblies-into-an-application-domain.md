@@ -35,7 +35,7 @@ There are several ways to load an assembly into an application domain. The recom
   
 ## Example  
 
- The following code loads an assembly named "example.exe" or "example.dll" into the current application domain, gets a type named `Example` from the assembly, gets a parameterless method named `MethodA` for that type, and executes the method. For a complete discussion on obtaining information from a loaded assembly, see [Dynamically Loading and Using Types](../reflection-and-codedom/dynamically-loading-and-using-types.md).  
+ The following code loads an assembly named "example.exe" or "example.dll" into the current application domain, gets a type named `Example` from the assembly, gets a parameterless method named `MethodA` for that type, and executes the method. For a complete discussion on obtaining information from a loaded assembly, see [Dynamically Loading and Using Types](../../fundamentals/reflection/dynamically-loading-and-using-types.md).  
   
  [!code-cpp[System.AppDomain.Load#2](../../../samples/snippets/cpp/VS_Snippets_CLR_System/system.appdomain.load/cpp/source2.cpp#2)]
  [!code-csharp[System.AppDomain.Load#2](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.appdomain.load/cs/source2.cs#2)]
@@ -45,7 +45,7 @@ There are several ways to load an assembly into an application domain. The recom
 
 - <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A>
 - [Programming with Application Domains](application-domains.md#programming-with-application-domains)
-- [Reflection](../reflection-and-codedom/reflection.md)
+- [Reflection](../../fundamentals/reflection/reflection.md)
 - [Using Application Domains](use.md)
 - [How to: Load Assemblies into the Reflection-Only Context](../reflection-and-codedom/how-to-load-assemblies-into-the-reflection-only-context.md)
 - [Application domains and assemblies](application-domains.md#application-domains-and-assemblies)

@@ -26,8 +26,8 @@ The `out` keyword is especially useful when a method needs to return more than o
         double radiusValue = 3.92781;
         //Calculate the circumference and area of a circle, returning the results to Main().
         CalculateCircumferenceAndArea(radiusValue, out double circumferenceResult, out areaResult);
-        System.Console.WriteLine($"Circumference of a circle with a radius of {radiusValue} is {circumferenceValue}.");
-        System.Console.WriteLine($"Are of a circle with a radius of {radiusValue} is {areaValue}.");
+        System.Console.WriteLine($"Circumference of a circle with a radius of {radiusValue} is {circumferenceResult}.");
+        System.Console.WriteLine($"Are of a circle with a radius of {radiusValue} is {areaResult}.");
         Console.ReadLine();
     }
 
@@ -44,7 +44,3 @@ The following limitations apply to using the `out` keyword:
 - `out` parameters are not allowed in asynchronous methods.
 - `out` parameters are not allowed in iterator methods.
 - Properties cannot be passed as `out` parameters.
-
-## See also
-
-- [C# Reference](../index.md)

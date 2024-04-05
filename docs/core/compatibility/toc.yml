@@ -8,6 +8,10 @@ items:
     items:
     - name: Overview
       href: 9.0.md
+    - name: ASP.NET Core
+      items:
+      - name: DefaultKeyResolution.ShouldGenerateNewKey has altered meaning
+        href: aspnet-core/9.0/key-resolution.md
     - name: Core .NET libraries
       items:
       - name: Creating type of array of System.Void not allowed
@@ -40,6 +44,10 @@ items:
         href: windows-forms/9.0/datagridviewrowaccessibleobject-name-row.md
       - name: No exception if DataGridView is null
         href: windows-forms/9.0/datagridviewheadercell-nre.md
+    - name: WPF
+      items:
+      - name: "'GetXmlNamespaceMaps' type change"
+        href: wpf/9.0/xml-namespace-maps.md
   - name: .NET 8
     items:
     - name: Overview
@@ -924,6 +932,10 @@ items:
   items:
   - name: ASP.NET Core
     items:
+    - name: .NET 9
+      items:
+      - name: DefaultKeyResolution.ShouldGenerateNewKey has altered meaning
+        href: aspnet-core/9.0/key-resolution.md
     - name: .NET 8
       items:
       - name: ConcurrencyLimiterMiddleware is obsolete
@@ -1870,6 +1882,10 @@ items:
         href: winforms.md
   - name: WPF
     items:
+    - name: .NET 9
+      items:
+      - name: "'GetXmlNamespaceMaps' type change"
+        href: wpf/9.0/xml-namespace-maps.md
     - name: .NET 5
       items:
       - name: OutputType set to WinExe

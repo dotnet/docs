@@ -3,6 +3,7 @@ author: adegeo
 ms.author: adegeo
 ms.date: 11/14/2023
 ms.topic: include
+ms.custom: linux-related-content
 ---
 
 Use the `sha512sum` command to print the checksum of the file you've downloaded. For example, the following command reports the checksum of the _dotnet-sdk-8.0.100-linux-x64.tar.gz_ file:

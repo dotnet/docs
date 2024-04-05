@@ -20,7 +20,7 @@ The following example depicts the behavior of the <xref:System.Linq.Enumerable.D
 
 :::image type="content" source="./media/set-operations/distinct-method-behavior.png" alt-text="Graphic showing the behavior of Distinct()":::
 
-:::code language="csharp;" source="snippets/standard-query-operators/SetOperations.cs" id="Distinct":::
+:::code language="csharp" source="snippets/standard-query-operators/SetOperations.cs" id="Distinct":::
 
 The [`DistinctBy`](xref:System.Linq.Enumerable.DistinctBy%2A?displayProperty=nameWithType) is an alternative approach to `Distinct` that takes a `keySelector`. The `keySelector` is used as the comparative discriminator of the source type. In the following code, words are discriminated based on their `Length`, and the first word of each length is displayed:
 
@@ -42,7 +42,7 @@ Each `Student` has a grade level, a primary department, and a series of scores. 
 
 The <xref:System.Linq.Enumerable.ExceptBy%2A> method is an alternative approach to `Except` that takes two sequences of possibly heterogenous types and a `keySelector`. The `keySelector` is the same type as the first collection's type. Consider the following `Teacher` array and teacher IDs to exclude. To find teachers in the first collection that aren't in the second collection, you can project the teacher's ID onto the second collection:
 
-:::code source="snippets/standard-query-operators/SetOperations.cs" id="ExceptBy":::
+:::code language="csharp" source="snippets/standard-query-operators/SetOperations.cs" id="ExceptBy":::
 
 In the preceding C# code:
 
@@ -58,11 +58,11 @@ The following example depicts the behavior of <xref:System.Linq.Enumerable.Inter
 
 :::image type="content" source="./media/set-operations/intersection-two-sequences.png" alt-text="Graphic showing the intersection of two sequences":::
 
-:::code language="csharp;" source="./snippets/standard-query-operators/SetOperations.cs" id="Intersect":::
+:::code language="csharp" source="./snippets/standard-query-operators/SetOperations.cs" id="Intersect":::
 
 The <xref:System.Linq.Enumerable.IntersectBy%2A> method is an alternative approach to `Intersect` that takes two sequences of possibly heterogenous types and a `keySelector`. The `keySelector` is used as the comparative discriminator of the second collection's type. Consider the following student and teacher arrays. The query matches items in each sequence by name to find those students who aren't also teachers:
 
-:::code source="./snippets/standard-query-operators/SetOperations.cs" id="IntersectBy":::
+:::code language="csharp" source="./snippets/standard-query-operators/SetOperations.cs" id="IntersectBy":::
 
 In the preceding C# code:
 
@@ -76,11 +76,11 @@ The following example depicts a union operation on two sequences of strings. The
 
 :::image type="content" source="./media/set-operations/union-operation-two-sequences.png" alt-text="Graphic showing the union of two sequences.":::
 
-:::code language="csharp;" source="./snippets/standard-query-operators/SetOperations.cs" id="Union":::
+:::code language="csharp" source="./snippets/standard-query-operators/SetOperations.cs" id="Union":::
 
 The <xref:System.Linq.Enumerable.UnionBy%2A> method is an alternative approach to `Union` that takes two sequences of the same type and a `keySelector`. The `keySelector` is used as the comparative discriminator of the source type. The following query produces the list of all people that are either students or teachers. Students who are also teachers are added to the union set only once:
 
-:::code source="./snippets/standard-query-operators/SetOperations.cs" id="UnionBy":::
+:::code language="csharp" source="./snippets/standard-query-operators/SetOperations.cs" id="UnionBy":::
 
 In the preceding C# code:
 

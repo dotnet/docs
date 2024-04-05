@@ -101,7 +101,6 @@ For more information about equality of record types, see the [Equality members](
 
 ## See also
 
-- [C# reference](../index.md)
 - [C# operators and expressions](index.md)
 - <xref:System.IEquatable%601?displayProperty=nameWithType>
 - <xref:System.Object.Equals%2A?displayProperty=nameWithType>

@@ -4,6 +4,7 @@ description: Learn how to install .NET templates on Windows, Linux, and macOS.
 author: adegeo
 ms.author: adegeo
 ms.date: 04/24/2020
+ms.custom: linux-related-content
 zone_pivot_groups: operating-systems-set-one
 no-loc: ['dotnet new', 'dotnet nuget add source']
 ---

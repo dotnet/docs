@@ -96,7 +96,11 @@ This page lists all [extensions](./unit-testing-platform-extensions.md) availabl
 > [!WARNING]
 > Please review the licensing terms for each extension as they may vary.
 
-You can combine the profiles with this feature. For example, you can opt-out from the `Default` profile the `MS Code Coverage` extension by setting `<EnableMicrosoftTestingExtensionsCodeCoverage>false</EnableMicrosoftTestingExtensionsCodeCoverage>`. Full-example below:
+Enabled and disabled extensions are combined with the extensions provided by your selected extension profile.
+
+This can be used to enable an additional extension on top of the implicit `Default` profile (as seen in the CrashDumpExtension example above). 
+
+Or to disable an extension that is coming from the selected profile. In this case disabling `MS Code Coverage` extension by setting `<EnableMicrosoftTestingExtensionsCodeCoverage>false</EnableMicrosoftTestingExtensionsCodeCoverage>`:
 
 ```xml
 <Project Sdk="MSTest.Sdk/3.3.1">

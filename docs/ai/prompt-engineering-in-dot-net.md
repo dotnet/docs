@@ -41,7 +41,7 @@ Directives are more flexible than imperatives.
 - A directive can provide more context, and you can combine several directives in one instruction. 
 - It's easier to implement a series of steps using a sequence of directives. You can spell out the steps that you want the model to take, but you can also just tell the model to break it into steps and then follow them, an approach called [chain of thought prompting](chain-of-thought-prompting.md).
 
-Sometimes GPT models don't follow an instruction the way you expect because it needs more context. You can add more context an instruction by including primary content, supporting content, and cues. You can include these clarifications when you add an instruction, and can add or adjust them after you test your instruction's effect. Note that in an engineered prompt, instructions must be clearly distinct from the clarifications you add to them.
+Sometimes GPT models don't follow an instruction the way you expect because it doesn't provide enough context. You can add more context an instruction by including primary content, supporting content, and cues. You can include these when you add an instruction, and can add or adjust them after you test your instruction's effect.
 
 Instructions are typically more effective when used with examples. However, when you use both in a prompt you should make sure that the instructions are either above or below the examples for best model performance.
 
@@ -49,23 +49,42 @@ The Completion API accepts any instructions that you include in a prompt. The Ch
  
 ### Primary content
 
-Primary content is text you add to an instruction for the model to use as input for the instruction. For example, if you add the instruction **Produce a list of US Presidents' executive accomplishments.**, you could use a wiki page as primary content and get a list of accomplishments that are present in that page. 
+Primary content is text you add to an instruction for the model to use as input for the instruction. For example, if you add the instruction **Summarize US Presidential accomplishments.**, you could add a list of accomplishments as primary content. 
 
-Make sure you clearly separate primary content from the instructions that apply to it, such as with an intervening line.   
+Make sure you clearly separate primary content from the instructions that apply to it, such as by labeling it.   
+
+```csharp
+prompt= @$"Instructions: Summarize US Presidential accomplishments.
+Accomplishments: George Washington
+First president of the United States.
+First president to have been a military veteran.
+First president to be elected to a second term in office.
+First president to receive votes from every presidential elector in an election.
+First president to fill the entire body of the United States federal judges; including the Supreme Court.
+First president to be declared an honorary citizen of a foreign country, and an honorary citizen of France.
+
+John Adams ..." //Text truncated;
+```
 
 ### Supporting content
 
 Supporting content is text that an instruction uses as input but isn't the subject of the instruction. The instruction must refer to the supporting content. 
 
-Suppose you use the instruction **Produce a list of US Presidents' executive accomplishments** to produce a list. The model might organized and order it in any number of ways. But what if you want the list to group the accomplishments by a specific set of categories? You could adjust your instruction by appending **, grouped in categories** to it, but a model is unlikely to correctly determine which specific categories you want. 
+Suppose you use the instruction **Summarize US Presidential accomplishments** to produce a list. The model might organized and order it in any number of ways. But what if you want the list to group the accomplishments by a specific set of categories? You could adjust your instruction by appending **&nbsp;grouped by category** to it, but a model is unlikely to correctly determine which specific categories you want. 
 
 To make sure the model uses the categories you want, you could append supporting content to specify your categories and adjust your instruction accordingly. You could add a line of supporting content below the instruction and then change the instruction so it refers to the supporting content: 
 
 ```csharp
-Prompts = 
-    { 
-        "Produce a list of US Presidents' executive accomplishments, grouped by my favorite categories. \\n My favorite categories: domestic policy, judicial appointments, trade agreements, space exploration",
-    }
+prompt = @$"Instructions: Summarize US Presidential accomplishments, grouped by category.
+Categories: Domestic Policy, US Economy, Foreign Affairs, Space Exploration.
+Accomplishments: George Washington
+First president of the United States.
+First president to have been a military veteran.
+First president to be elected to a second term in office.
+First president to receive votes from every presidential elector in an election.
+First president to fill the entire body of the United States federal judges; including the Supreme Court.
+First president to be declared an honorary citizen of a foreign country, and an honorary citizen of France.
+John Adams ..."; //Text truncated
 ```
 
 As with primary content, supporting content should be clearly distinct from the instruction it supports.
@@ -76,10 +95,21 @@ A cue is a line of text you include after an instruction to convey the desired s
 
 Suppose you use an instruction to tell the model to produce a list of presidential accomplishments by category, along with supporting content that tells the model what categories to use. You decide that you want the model to produce a nested list with all caps for categories, with each president's accomplishments in each category listed on one line that begins with their name. After your instruction and supporting content, you could add the following cues to show the model how to structure and format the list:
 
-```Prompt
+```csharp
+prompt = @$"Instructions: Summarize US Presidential accomplishments, grouped by category.
+Categories: Domestic Policy, US Economy, Foreign Affairs, Space Exploration.
+Accomplishments: George Washington
+First president of the United States.
+First president to have been a military veteran.
+First president to be elected to a second term in office.
+First president to receive votes from every presidential elector in an election.
+First president to fill the entire body of the United States federal judges; including the Supreme Court.
+First president to be declared an honorary citizen of a foreign country, and an honorary citizen of France.
+John Adams ... //Text truncated
+
 DOMESTIC POLICY
 - George Washington: 
-- Thomas Jefferson:
+- Thomas Jefferson:";
 ```
 
 ## Examples 
@@ -110,7 +140,7 @@ By deeply integrating with Visual Studio Code, Semantic Kernel also makes it eas
 
 ### Azure OpenAI
 
-Azure OpenAI's client library for .NET is an adaptation of OpenAI's REST APIs that provides an idiomatic interface and rich integration with the rest of the Azure SDK ecosystem. It can connect to Azure OpenAI resources or to the non-Azure OpenAI inference endpoint, making it a great choice for even non-Azure OpenAI development.
+Azure OpenAI is a managed service that allows developers to deploy, tune, and generate content from OpenAI models on Azure resources. Azure OpenAI's client library for .NET is an adaptation of OpenAI's REST APIs that provides an idiomatic interface and rich integration with the rest of the Azure SDK ecosystem. It can connect to Azure OpenAI resources or to the non-Azure OpenAI inference endpoint, making it suitable for non-Azure OpenAI development.
 
 Use the client library for Azure OpenAI to:
 - Create chat-style completions via the Chat Completion API.
@@ -128,7 +158,6 @@ Prompts =
     }
 ```
 
-
 The Chat Completion API targets the GPT-35-Turbo and GPT-4 models, which use a specific chat-like format consisting of role-based messages. 
 
 ```csharp
@@ -143,9 +172,6 @@ Messages =
         new ChatRequestUserMessage("Produce a list of US Presidents' executive accomplishments, grouped by my favorite category.\\n My favorite categories: domestic policy, judicial appointments, trade agreements, space exploration"),
     }
 ```
-
-
-Azure OpenAI is a managed service that allows developers to deploy, tune, and generate content from OpenAI models on Azure resources.
 
 ## Related content
 

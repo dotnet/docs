@@ -190,15 +190,29 @@ Configure your package manager to ignore the .NET packages from the distribution
     touch /etc/apt/preferences
     ```
 
-01. Open `/etc/apt/preferences` in an editor and add the following settings, which prevents packages that start with `dotnet`, `aspnetcore`, or `netstandard` from being sourced from the distribution's repository.
+01. Open `/etc/apt/preferences` in an editor and add an apt preferences fragement to prevent packages that start with `dotnet`, `aspnetcore`, or `netstandard` from being sourced from the distribution's repository.
 
-    ```bash
+    ```
     Package: dotnet* aspnet* netstandard*
     Pin: origin "<your-package-source>"
-    Pin-Priority: -10
+    Pin-Priority: -10    
     ```
 
-    Make sure to replace `<your-package-source>` with your distribution's package source, for example, on Ubuntu you may use `archive.ubuntu.com` in the US.
+    Make sure to replace `<your-package-source>` with your distribution's package source.
+
+    Your distribution may have more than one package source.
+
+    For example, on Ubuntu in the US, you may need to use one fragment for `archive.ubuntu.com` and another for `security.ubuntu.com`. Separate each fragment with a blank line like this:
+
+    ```
+    Package: dotnet* aspnet* netstandard*
+    Pin: origin "archive.ubuntu.com"
+    Pin-Priority: -10
+
+    Package: dotnet* aspnet* netstandard*
+    Pin: origin "security.ubuntu.com"
+    Pin-Priority: -10
+    ```
 
     > [!TIP]
     > Use the `apt-cache policy` command to find the source:
@@ -241,6 +255,7 @@ Many other users have reported these problems. The following is a list of those 
   - [Core #4605: cannot run "dotnet new console"](https://github.com/dotnet/core/issues/4605)
   - [Core #4644: Cannot install .NET Core SDK 2.1 on Fedora 32](https://github.com/dotnet/core/issues/4655)
   - [Runtime #49375: After updating to 5.0.200-1 using package manager, it appears that no sdks are installed](https://github.com/dotnet/runtime/issues/49375)
+  - [Installer #16438: The application '--version' does not exist](https://github.com/dotnet/installer/issues/16438)
 
 ## See also
 

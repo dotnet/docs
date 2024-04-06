@@ -16,7 +16,7 @@ ms.date: 04/13/2022
 ```dotnetcli
 dotnet list [<PROJECT>|<SOLUTION>] package [--config <SOURCE>]
     [--deprecated]
-    [--framework <FRAMEWORK>] [--highest-minor] [--highest-patch]
+    [-f|--framework <FRAMEWORK>] [--highest-minor] [--highest-patch]
     [--include-prerelease] [--include-transitive] [--interactive]
     [--outdated] [--source <SOURCE>] [-v|--verbosity <LEVEL>]
     [--vulnerable]
@@ -82,9 +82,9 @@ The project or solution file to operate on. If not specified, the command search
 
   Displays packages that have been deprecated.
   
-- **`--framework <FRAMEWORK>`**
+- **`-f|--framework <FRAMEWORK>`**
 
-  Displays only the packages applicable for the specified [target framework](../../standard/frameworks.md). To specify multiple frameworks, repeat the option multiple times. For example: `--framework net6.0 --framework netstandard2.0`.
+  Displays only the packages applicable for the specified [target framework](../../standard/frameworks.md). To specify multiple frameworks, repeat the option multiple times. For example: `--framework net6.0 --framework netstandard2.0`. The short form of the option (`-f`) is available starting in .NET 9 SDK.
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 

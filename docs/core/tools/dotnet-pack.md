@@ -1,7 +1,7 @@
 ---
 title: dotnet pack command
 description: The dotnet pack command creates NuGet packages for your .NET project.
-ms.date: 11/27/2023
+ms.date: 04/04/2024
 ---
 # dotnet pack
 
@@ -59,7 +59,7 @@ You can provide MSBuild properties to the `dotnet pack` command for the packing 
 
 ## Options
 
-[!INCLUDE [configuration](../../../includes/cli-configuration.md)]
+[!INCLUDE [configuration](../../../includes/cli-configuration-publish-pack.md)]
 
 - **`--force`**
 

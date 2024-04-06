@@ -14,6 +14,8 @@ items:
         href: aspnet-core/9.0/key-resolution.md
     - name: Core .NET libraries
       items:
+      - name: API obsoletions with custom diagnostic IDs
+        href: core-libraries/9.0/obsolete-apis-with-custom-diagnostics.md
       - name: Creating type of array of System.Void not allowed
         href: core-libraries/9.0/type-instance.md
       - name: Inline array struct size limit is enforced

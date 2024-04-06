@@ -12,9 +12,11 @@ Microsoft.Testing.Platform is a lightweight and portable alternative to [VSTest]
 
 `Microsoft.Testing.Platform` is open source. You can find `Microsoft.Testing.Platform` code in [microsoft/testfx](https://github.com/microsoft/testfx/tree/main/src/Platform/Microsoft.Testing.Platform) GitHub repository.
 
-# Supported test frameworks
+## Supported test frameworks
 
 * MSTest. In MSTest, the support of `Microsoft.Testing.Platform` is done via [MSTest runner](unit-testing-mstest-runner-intro.md).
+* NUnit: work in progress - refer to https://github.com/nunit/nunit3-vs-adapter/issues/1152
+* xUnit: work in progress - refer to https://github.com/xunit/visualstudio.xunit/issues/402
 
 ## Run and debug tests
 

@@ -12,6 +12,10 @@ Microsoft.Testing.Platform is a lightweight and portable alternative to [VSTest]
 
 `Microsoft.Testing.Platform` is open source. You can find `Microsoft.Testing.Platform` code in [microsoft/testfx](https://github.com/microsoft/testfx/tree/main/src/Platform/Microsoft.Testing.Platform) GitHub repository.
 
+# Supported test framework
+
+* MSTest a.k.a. [MSTest runner](unit-testing-mstest-runner-intro)
+
 ## Run and debug tests
 
 `Microsoft.Testing.Platform` test projects are built as executables that can be run (or debugged) directly. There's no extra test running console or command. The app exits with a nonzero exit code if there's an error, as typical with most executables. For more information on the known exit codes, see [Microsoft.Testing.Platform exit codes](unit-testing-platform-exit-codes.md).

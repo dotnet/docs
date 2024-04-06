@@ -14,7 +14,7 @@ Microsoft.Testing.Platform is a lightweight and portable alternative to [VSTest]
 
 # Supported test frameworks
 
-* MSTest a.k.a. [MSTest runner](unit-testing-mstest-runner-intro)
+* MSTest a.k.a. [MSTest runner](unit-testing-mstest-runner-intro.md)
 
 ## Run and debug tests
 

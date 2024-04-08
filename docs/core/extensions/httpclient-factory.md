@@ -130,15 +130,15 @@ The typed client is registered as transient with DI. In the preceding code, `Add
 
 ### Named and typed clients
 
-Named clients and typed clients have their own strengths and weaknesses. There is a way to combine these two client types to get the best both worlds.
+Named clients and typed clients have their own strengths and weaknesses. There is a way to combine these two client types to get the best of both worlds.
 
-The primary use case is the following: Use the same typed client but against different domains. For example you have a primary and a secondary service and they expose the exact same functionality. That means you can use the same typed client to wrap the `HttpClient` usage to issue requests, process responses, and handle errors. The exact same code will be used but with different configurations (different base address, timeout, credentials, etc.).
+The primary use case is the following: Use the same typed client but against different domains. For example you have a primary and a secondary service and they expose the exact same functionality. That means you can use the same typed client to wrap the `HttpClient` usage to issue requests, process responses, and handle errors. The exact same code will be used but with different configurations (different base address, timeout, and credentials for example).
 
 The following example uses the same `TodoService` typed client which was shown under the [typed clients](#typed-clients) section.
 
 First register the named and typed clients.
 
-:::code source="snippets/http/namedandtyped/Program.cs" range="1-25" highlight="9,14-15,19,23-24":::
+:::code source="snippets/http/namedandtyped/Program.cs" range="1-25" highlight="10,14-15,19,23-24":::
 
 In the preceding code:
 
@@ -158,9 +158,7 @@ In the preceding code:
 > The `IHttpClientFactory` type resides inside the `System.Net.Http` namespaces whereas the `ITypedHttpClientFactory` type inside the `Microsoft.Extensions.Http`.
 
 > [!IMPORTANT]
-> Use the implementation class (in the preceding example the `TodoService`) as the type parameter for the `ITypedHttpClientFactory`.
-> Even if you have an abstraction (like `ITodoService` interface) as well, you still have to use the implementation.
-> If you accidentally use the abstraction (`ITodoService`) then when you call its `CreateClient` it will throw an `InvalidOperationException`.
+> Use the implementation class (in the preceding example the `TodoService`) as the type parameter for the `ITypedHttpClientFactory`. Even if you have an abstraction (like `ITodoService` interface) as well, you still have to use the implementation. If you accidentally use the abstraction (`ITodoService`) then when you call its `CreateClient` it will throw an `InvalidOperationException`.
 
 :::code source="snippets/http/namedandtyped/Program.cs" range="41-55" highlight="45,50-51,54":::
 

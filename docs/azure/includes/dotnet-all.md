@@ -314,7 +314,7 @@
 | unknown | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.MigrationDiscoverySap/1.0.0-beta.1) |  | GitHub [1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.MigrationDiscoverySap_1.0.0-beta.1/sdk/migrationdiscoverysap/Azure.ResourceManager.MigrationDiscoverySap/) |
 | unknown | NuGet [1.0.0-beta.5](https://www.nuget.org/packages/Azure.ResourceManager.ScVmm/1.0.0-beta.5) | [docs](/dotnet/api/overview/azure/ResourceManager.ScVmm-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.5](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.ScVmm_1.0.0-beta.5/sdk/arc-scvmm/Azure.ResourceManager.ScVmm/) |
 | Azure.Communication.Administration | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Communication.Administration/1.0.0-beta.3) |  |  |
-| Communication Calling Windows Client | NuGet [1.5.0](https://www.nuget.org/packages/Azure.Communication.Calling.WindowsClient/1.5.0) |  |  |
+| Communication Calling Windows Client | NuGet [1.5.0](https://www.nuget.org/packages/Azure.Communication.Calling.WindowsClient/1.5.0)<br>NuGet [1.6.0-beta.1](https://www.nuget.org/packages/Azure.Communication.Calling.WindowsClient/1.6.0-beta.1) |  |  |
 | Unknown Display Name | NuGet [12.0.0-beta.1](https://www.nuget.org/packages/Azure.Storage.DataMovement.Files.Shares/12.0.0-beta.1) |  |  |
 | Unknown Display Name | NuGet [0.7.6](https://www.nuget.org/packages/DotNetty.Common/0.7.6) |  |  |
 | Unknown Display Name | NuGet [1.0.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore.Analyzers/1.0.2) |  |  |

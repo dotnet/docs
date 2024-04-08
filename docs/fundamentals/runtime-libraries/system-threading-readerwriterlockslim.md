@@ -32,8 +32,8 @@ If a <xref:System.Threading.ReaderWriterLockSlim> does not allow recursion, a th
 
 - A thread that tries to enter read mode blocks if there are threads waiting to enter write mode or if there is a single thread in write mode.
 
-    > [!NOTE]
-    >  Blocking new readers when writers are queued is a lock fairness policy that favors writers. The current fairness policy balances fairness to readers and writers, to promote throughput in the most common scenarios. Future versions of .NET may introduce new fairness policies.
+  > [!NOTE]
+  > Blocking new readers when writers are queued is a lock fairness policy that favors writers. The current fairness policy balances fairness to readers and writers, to promote throughput in the most common scenarios. Future versions of .NET may introduce new fairness policies.
 
 - A thread that tries to enter upgradeable mode blocks if there is already a thread in upgradeable mode, if there are threads waiting to enter write mode, or if there is a single thread in write mode.
 

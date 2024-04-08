@@ -38,6 +38,7 @@ There are several ways `IHttpClientFactory` can be used in an app:
 * [Basic usage](#basic-usage)
 * [Named clients](#named-clients)
 * [Typed clients](#typed-clients)
+* [Named and typed clients](#named-and-typed-clients)
 * [Generated clients](#generated-clients)
 
 The best approach depends upon the app's requirements.
@@ -126,6 +127,48 @@ The typed client is registered as transient with DI. In the preceding code, `Add
 
 > [!NOTE]
 > When registering a typed client with the `AddHttpClient<TClient>` method, the `TClient` type must have a constructor that accepts an `HttpClient` parameter. Additionally, the `TClient` type shouldn't be registered with the DI container separately.
+
+### Named and typed clients
+
+Named clients and typed clients have their own strengths and weaknesses. There is a way to combine these two client types to get the best both worlds.
+
+The primary use case is the following: Use the same typed client but against different domains. For example you have a primary and a secondary service and they expose the exact same functionality. That means you can use the same typed client to wrap the `HttpClient` usage to issue requests, process responses, and handle errors. The exact same code will be used but with different configurations (different base address, timeout, credentials, etc.).
+
+The following example uses the same `TodoService` typed client which was shown under the [typed clients](#typed-clients) section.
+
+First register the named and typed clients.
+
+:::code source="snippets/http/nameandtyped/Program.cs" range="1-25" highlight="9,14-15,19,23-24":::
+
+In the preceding code:
+
+- The first `AddHttpClient` call registers a `TodoService` typed client under the `primary` name. The underlying `HttpClient` points to the primary service and has a short timeout.
+- The second `AddHttpClient` call registers a `TodoService` typed client under the `secondary` name. The underlying `HttpClient` points to the secondary service and has a longer timeout.
+
+:::code source="snippets/http/nameandtyped/Program.cs" range="27-39" highlight="34-35,38-39":::
+
+In the preceding code:
+
+- An `IHttpClientFactory` instance is retrieved from the DI container to be able to create named clients via its `CreateClient` method.
+- An `ITypedHttpClientFactory<TodoService>` instance is retrieved from the DI container to be able to create typed clients via its `CreateClient` method.
+  - This `CreateClient` overload received a named `HttpClient` (with the proper configuration) as its parameter.
+  - The created `todoService` is configured to use the primary service.
+
+> [!NOTE]
+> The `IHttpClientFactory` type resides inside the `System.Net.Http` namespaces whereas the `ITypedHttpClientFactory` type inside the `Microsoft.Extensions.Http`.
+
+> [!IMPORTANT]
+> Use the implementation class (in the preceding example the `TodoService`) as the type parameter for the `ITypedHttpClientFactory`.
+> Even if you have an abstraction (like `ITodoService` interface) as well, you still have to use the implementation.
+> If you accidentally use the abstraction (`ITodoService`) then when you call its `CreateClient` it will throw an `InvalidOperationException`.
+
+:::code source="snippets/http/nameandtyped/Program.cs" range="41-55" highlight="45,50-51,54":::
+
+In the preceding code:
+
+- It tries to issue a request against the primary service.
+- If the request times out (takes longer than 3 seconds) then it throws a `TaskCanceledException` with a `TimeoutException` inner.
+- In case of timeout a new client is created and used which is now targeting the secondary service.
 
 ### Generated clients
 

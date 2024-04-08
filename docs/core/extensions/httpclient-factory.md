@@ -138,14 +138,14 @@ The following example uses the same `TodoService` typed client which was shown u
 
 First register the named and typed clients.
 
-:::code source="snippets/http/nameandtyped/Program.cs" range="1-25" highlight="9,14-15,19,23-24":::
+:::code source="snippets/http/namedandtyped/Program.cs" range="1-25" highlight="9,14-15,19,23-24":::
 
 In the preceding code:
 
 - The first `AddHttpClient` call registers a `TodoService` typed client under the `primary` name. The underlying `HttpClient` points to the primary service and has a short timeout.
 - The second `AddHttpClient` call registers a `TodoService` typed client under the `secondary` name. The underlying `HttpClient` points to the secondary service and has a longer timeout.
 
-:::code source="snippets/http/nameandtyped/Program.cs" range="27-39" highlight="34-35,38-39":::
+:::code source="snippets/http/namedandtyped/Program.cs" range="27-39" highlight="34-35,38-39":::
 
 In the preceding code:
 
@@ -162,7 +162,7 @@ In the preceding code:
 > Even if you have an abstraction (like `ITodoService` interface) as well, you still have to use the implementation.
 > If you accidentally use the abstraction (`ITodoService`) then when you call its `CreateClient` it will throw an `InvalidOperationException`.
 
-:::code source="snippets/http/nameandtyped/Program.cs" range="41-55" highlight="45,50-51,54":::
+:::code source="snippets/http/namedandtyped/Program.cs" range="41-55" highlight="45,50-51,54":::
 
 In the preceding code:
 

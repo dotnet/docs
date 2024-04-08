@@ -145,7 +145,7 @@ In the preceding code:
 - The first `AddHttpClient` call registers a `TodoService` typed client under the `primary` name. The underlying `HttpClient` points to the primary service and has a short timeout.
 - The second `AddHttpClient` call registers a `TodoService` typed client under the `secondary` name. The underlying `HttpClient` points to the secondary service and has a longer timeout.
 
-:::code source="snippets/http/namedandtyped/Program.cs" range="27-39" highlight="34-35,38-39":::
+:::code source="snippets/http/namedandtyped/Program.cs" range="27-39" highlight="8-9,12-13":::
 
 In the preceding code:
 
@@ -160,7 +160,7 @@ In the preceding code:
 > [!IMPORTANT]
 > Use the implementation class (in the preceding example the `TodoService`) as the type parameter for the `ITypedHttpClientFactory`. Even if you have an abstraction (like `ITodoService` interface) as well, you still have to use the implementation. If you accidentally use the abstraction (`ITodoService`) then when you call its `CreateClient` it will throw an `InvalidOperationException`.
 
-:::code source="snippets/http/namedandtyped/Program.cs" range="41-55" highlight="45,50-51,54":::
+:::code source="snippets/http/namedandtyped/Program.cs" range="41-55" highlight="5,10-11":::
 
 In the preceding code:
 

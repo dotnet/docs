@@ -76,7 +76,7 @@ Types can override inherited members by using the `override` keyword and providi
 
 ## Passing parameters
 
-Types in C# are either *value types* or *reference types*. For a list of built-in value types, see [Types](./tour-of-csharp/types.md). By default, both value types and reference types are passed to a method by value.
+Types in C# are either *value types* or *reference types*. For a list of built-in value types, see [Types](./language-reference/builtin-types/built-in-types.md). By default, both value types and reference types are passed to a method by value.
 
 <a name="byval"></a>
 

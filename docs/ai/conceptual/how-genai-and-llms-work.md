@@ -1,6 +1,7 @@
 ---
 title: "How Generative AI and LLMs work"
 description: "Understand how Generative AI and large language models (LLMs) work and how they may be useful in your .NET projects."
+author: haywoodsloan
 ms.topic: concept-article
 ms.date: 04/04/2024
 

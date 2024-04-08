@@ -4,8 +4,6 @@ description: Learn about the new .NET features introduced in .NET 8.
 titleSuffix: ""
 ms.date: 11/14/2023
 ms.topic: overview
-ms.author: gewarren
-author: gewarren
 ---
 # What's new in .NET 8
 

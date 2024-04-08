@@ -1,5 +1,5 @@
 ---
-title: "Concept - Understanding tokens"
+title: "Understanding tokens"
 description: "Understand how large language models (LLMs) use tokens to analyze semantic relationships and generate natural language outputs"
 ms.topic: concept-article
 ms.date: 04/05/2024

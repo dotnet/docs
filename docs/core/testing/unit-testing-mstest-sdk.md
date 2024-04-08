@@ -39,11 +39,11 @@ When you `build` the project all the needed components will be restored and inst
 
 You don't need anything else to build and run your tests and you can use the same tooling (for example, `dotnet test` or Visual Studio) used by a ["classic" MSTest project](./unit-testing-with-mstest.md).
 
-## Selecting the runner
+## Select the runner
 
 By default, MSTest SDK will rely on MSTest runner but you can easily switch to VSTest by adding the following property `<UseVSTest>true</UseVSTest>`.
 
-## Extending MSTest runner
+## Extend MSTest runner
 
 You can customize `MSTest runner` experience through a set of [NuGet package extensions](./unit-testing-platform-extensions.md). To simplify and improve this experience, MSTest SDK introduces two features.
 
@@ -72,7 +72,7 @@ Here is a full example, using the `None` profile:
 </Project>
 ```
 
-### Enabling or disabling extensions
+### Enable or disable extensions
 
 Extensions can be enabled and disabled by MSBuild properties with the pattern `Enable[NugetPackageNameWithoutDots]`.
 
@@ -98,7 +98,7 @@ This page lists all [extensions](./unit-testing-platform-extensions.md) availabl
 
 Enabled and disabled extensions are combined with the extensions provided by your selected extension profile.
 
-This can be used to enable an additional extension on top of the implicit `Default` profile (as seen in the CrashDumpExtension example above). 
+This can be used to enable an additional extension on top of the implicit `Default` profile (as seen in the CrashDumpExtension example above).
 
 Or to disable an extension that is coming from the selected profile. In this case disabling `MS Code Coverage` extension by setting `<EnableMicrosoftTestingExtensionsCodeCoverage>false</EnableMicrosoftTestingExtensionsCodeCoverage>`:
 

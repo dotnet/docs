@@ -298,7 +298,7 @@ The following table shows the event information:
 
 |Event|Event ID|Raised when|
 |-----------|--------------|-----------------|
-|`GCAllocationTick_V2`|10|Each time approximately 100 KB is allocated per object heap, ie, SOH, LOH and POH accumulate their allocated bytes separately. In Server GC case this is done per heap.|
+|`GCAllocationTick_V2`|10|Each time approximately 100 KB is allocated per object heap. That is, SOH, LOH, and POH accumulate their allocated bytes separately. In Server GC, this is done per heap.|
 
 The following table shows the event data:
 

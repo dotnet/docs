@@ -87,7 +87,7 @@ If the guidance to the developer becomes too long to be included in a warning me
 For example:
 
 ```csharp
-[RequiresUnreferencedCode("This functionality is not compatible with trimming. Use 'MethodFriendlyToTrimming' instead", Url = "https://site/trimming-and-method)]
+[RequiresUnreferencedCode("This functionality is not compatible with trimming. Use 'MethodFriendlyToTrimming' instead", Url = "https://site/trimming-and-method")]
 void MethodWithAssemblyLoad() { ... }
 ```
 

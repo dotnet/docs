@@ -11,7 +11,7 @@ ms.date: [mm/dd/yyyy]
 
 ---
 
-# Concept - Zero-shot and few-shot learning
+# Zero-shot and few-shot learning
 
 This article explains zero-shot learning and few-shot learning in .NET prompt engineering, including their primary use cases.
 

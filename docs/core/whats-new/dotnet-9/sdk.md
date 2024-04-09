@@ -21,7 +21,7 @@ In .NET 9, `dotnet test` is more fully integrated with MSBuild. Because MSBuild 
 
 Test result reporting for [`dotnet test`](../../tools/dotnet-test.md) is now supported directly in the MSBuild terminal logger. You get more fully featured test reporting both *while* tests are running (displays the running test name) and *after* tests are completed (any test errors are rendered in a better way).
 
-For more information about the terminal logger, see [dotnet build options](../tools/dotnet-build.md#options).
+For more information about the terminal logger, see [dotnet build options](../../tools/dotnet-build.md#options).
 
 ## .NET tool roll-forward
 
@@ -31,7 +31,7 @@ A new option for [`dotnet tool install`](../../tools/dotnet-tool-install.md) let
 
 ## Terminal logger usability
 
-The terminal logger now summarizes the total count of failures and warnings at the end of a build. It also shows errors that contain newlines. (For more information about the terminal logger, see ['dotnet build' options](../../../tools/dotnet-build.md#options), specifically the `--tl` option.)
+The terminal logger now summarizes the total count of failures and warnings at the end of a build. It also shows errors that contain newlines. (For more information about the terminal logger, see ['dotnet build' options](../../tools/dotnet-build.md#options), specifically the `--tl` option.)
 
 Consider the following project file that emits a warning when the project is built:
 

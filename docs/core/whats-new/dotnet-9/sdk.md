@@ -1,14 +1,13 @@
 ---
-title: What's new in the SDK and tooling for .NET 9
-description: Learn about the new .NET SDK and tooling features introduced in .NET 9.
+title: What's new in the SDK for .NET 9
+description: Learn about the new .NET SDK features introduced in .NET 9.
 titleSuffix: ""
 ms.date: 04/11/2024
 ms.topic: overview
-ms.custom: linux-related-content
 ---
-# What's new in the SDK and tooling for .NET 9
+# What's new in the SDK for .NET 9
 
-This article describes new features in the .NET SDK and tooling for .NET 9.
+This article describes new features in the .NET SDK for .NET 9. It's been updated for .NET 9 Preview 3.
 
 ## Unit testing
 

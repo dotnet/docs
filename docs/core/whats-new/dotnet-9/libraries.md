@@ -7,7 +7,7 @@ ms.topic: overview
 ---
 # What's new in .NET libraries for .NET 9
 
-This article describes new features in the .NET libraries for .NET 9.
+This article describes new features in the .NET libraries for .NET 9. It's been updated for .NET 9 Preview 3.
 
 ## Serialization
 

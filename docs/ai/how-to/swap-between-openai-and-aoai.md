@@ -11,7 +11,7 @@ ms.date: 04/09/2024
 
 # Swap between OpenAI and AOAI
 
-This article demonstrates how to swap between the OpenAI and [Azure OpenAI](https://learn.microsoft.com/azure/ai-services/openai/overview) (AOAI) services when using the [Semantic Kernel SDK](https://learn.microsoft.com/semantic-kernel/overview). Additionally, it shows how to switch your .NET project to the Semantic Kernel SDK from the [AOAI client library](https://learn.microsoft.com/dotnet/api/overview/azure/ai.openai-readme).
+This article demonstrates how to swap between the OpenAI and [Azure OpenAI](https://learn.microsoft.com/azure/ai-services/openai/overview) (AOAI) services using the [Semantic Kernel SDK](https://learn.microsoft.com/semantic-kernel/overview). Additionally, it shows how to switch your .NET projects to the Semantic Kernel SDK from the [AOAI client library](https://learn.microsoft.com/dotnet/api/overview/azure/ai.openai-readme).
 
 ## Prerequisites
 

@@ -26,7 +26,7 @@ There are two parts to using metrics in a .NET app:
 
 ## The `IMeterFactory` interface
 
-The `IMeterFactory` interface is the primary API for creating metrics in .NET. It's part of the `System.Diagnostics.Metrics` namespace. The `IMeterFactory` interface is used to create <xref:System.Diagnostics.Metrics.Meter> instances. This abstraction is a [dependency injection-friendly](../extensions/dependency-injection.md) way to create metrics in your code. For more information, see [Creating metrics tutorial](metrics-instrumentation.md).
+The <xref:System.Diagnostics.Metrics.IMeterFactory> interface is the primary API for creating metrics in .NET. It's part of the `System.Diagnostics.Metrics` namespace. The `IMeterFactory` interface is used to create <xref:System.Diagnostics.Metrics.Meter> instances. This abstraction is a [dependency injection-friendly](../extensions/dependency-injection.md) way to create metrics in your code. For more information, see [Creating metrics tutorial](metrics-instrumentation.md).
 
 ## Next steps
 

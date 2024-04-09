@@ -1,0 +1,52 @@
+---
+title: "Zero-shot and few-shot learning"
+description: "Learn the use cases for zero-shot and few-shot learning in prompt engineering."
+author: catbutler
+ms.author: [your Microsoft alias or a team alias]
+ms.service: [the approved service name]
+ms.topic: concept-article #Don't change.
+ms.date: [mm/dd/yyyy]
+
+#customer intent: As a .NET developer, I want to understand how zero-shot and few-shot learning techniques can help me improve my prompt engineering.
+
+---
+
+# Concept - Zero-shot and few-shot learning
+
+This article explains zero-shot learning and few-shot learning in .NET prompt engineering, including their primary use cases.
+
+GPT model performance benefits from [prompt engineering](prompt-engineering-in-dot-net.md), the practice of providing instructions and examples to a model to refine its output. Zero-shot learning and few-shot learning are techniques that you can use when providing examples.
+
+With zero-shot learning, you include prompts but not verbatim completions (you can include completions that only consist of cues). This means zero-shot learning relies entirely on the model's existing knowledge to generate responses, making it the most cost-effective option for prompt engineering. However, it doesn't add to the model's knowledge. 
+
+With few-shot learning, you include prompts paired with verbatim completions. This makes few-shot learning more resource-intensive because it adds to the model's knowledge. 
+
+## Zero-shot learning use cases
+
+This section explains the use cases for zero-shot learning with a GPT model. 
+
+Zero-shot learning is the practice of passing prompts that aren't paired with verbatim completions, although they can be paired with a cue. There are two primary use cases for zero-shot learning:
+- **Working with fined-tuned LLMs** - Because it relies on the model's existing knowledge, zero-shot learning is not as resource-intensive as few-shot learning, and it works well with LLMs that have already been fined-tuned on instruction datasets. You might be able to rely solely on zero-shot learning and keep costs relatively low. 
+- **Establish performance baselines** - Zero-shot learning can help you simulate how your app would perform for actual users. This lets you evaluate various aspects of your model's current performance, such as accuracy or precision. In this case, you typically use zero-shot learning to establish a performance baseline and then experiment with few-shot learning to improve performance.
+
+## Few-shot learning use cases
+
+This section explains the use cases for few-shot learning with a GPT-model.
+
+Few-shot learning is the practice of passing few-shot prompts (prompts paired with verbatim completions) to show your model how to respond. Unlike zero-shot learning, few-shot learning can add to the model's knowledge. It has two primary use cases:
+- **Tuning an LLM** - Because it can add to the model's knowledge, few-shot learning can improve a model's performance. It also causes more tokens to be created, which can eventually become prohibitively expensive or even infeasible. However, if your LLM isn't fined-tuned yet, you won't get good performance with zero-shot prompts, and few-shot learning is warranted.
+- **Fixing performance issues** - You can use few-shot learning as a follow-on to zero-shot learning. In this case, you use zero-shot learning to establish a performance baseline, and then experiment with few-shot learning based on the zero-shot prompts you used. This lets you add to the model's knowledge after seeing how it currently responds, so you can iterate and improve performance while minimizing the number of tokens you introduce.  
+
+### Caveats
+
+- Example-based learning doesn’t work well for complex reasoning tasks. However, adding instructions can help address this.
+- Few-shot learning requires creating lengthy prompts. Prompts with large number of tokens can increase computation and latency. There’s also a limit to the length of the prompts.
+- When you use several examples the model can learn false patterns, such as "Sentiments are twice as likely to be positive than negative." 
+
+## Related content
+
+- [Prompt engineering techniques](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/advanced-prompt-engineering)
+- [Related article title](link.md)
+- [Related article title](link.md)
+
+--- Add more RLs after more docs are ready  

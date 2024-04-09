@@ -186,3 +186,6 @@ A new option for [`dotnet tool install`](../../tools/dotnet-tool-install.md) let
 ## See also
 
 - [Our vision for .NET 9](https://devblogs.microsoft.com/dotnet/our-vision-for-dotnet-9/) blog post
+- [What's new in ASP.NET Core 9.0](/aspnet/core/release-notes/aspnetcore-9.0)
+- [What's new in .NET MAUI](/dotnet/maui/whats-new/dotnet-9)
+- [What's new in EF Core](/ef/core/what-is-new/ef-core-9.0/whatsnew)

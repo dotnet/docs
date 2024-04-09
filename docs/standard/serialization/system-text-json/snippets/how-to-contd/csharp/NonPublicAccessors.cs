@@ -18,7 +18,13 @@ namespace NonPublicAccessors
     {
         public static void Main()
         {
-            string json = @"{""Date"":""2020-10-23T09:51:03.8702889-07:00"",""TemperatureC"":40,""Summary"":""Hot""}";
+            string json = """
+                {
+                    "Date":"2020-10-23T09:51:03.8702889-07:00",
+                    "TemperatureC":40,
+                    "Summary":"Hot"
+                }
+                """;
             Console.WriteLine($"Input JSON: {json}");
 
             Forecast forecastDeserialized = JsonSerializer.Deserialize<Forecast>(json)!;

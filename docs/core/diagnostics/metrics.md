@@ -2,7 +2,7 @@
 title: Metrics Overview
 description: An overview on using metrics to monitor a .NET application
 ms.topic: overview
-ms.date: 6/26/2023
+ms.date: 04/09/2024
 ---
 
 # .NET metrics
@@ -23,6 +23,10 @@ There are two parts to using metrics in a .NET app:
 * **Collection:** A .NET app configures named metrics to be transmitted from the app for external storage and analysis. Some tools may perform configuration outside the app using configuration files or a UI tool.
 
 .NET library developers are primarily interested in the instrumentation step. App developers or operational engineers usually focus on the collection step, leveraging the pre-existing instrumentation within libraries they are using. However, if you're an app developer and none of the existing metrics meet your needs, you can create new metrics.
+
+## The `IMeterFactory` interface
+
+The `IMeterFactory` interface is the primary API for creating metrics in .NET. It's part of the `System.Diagnostics.Metrics` namespace. The `IMeterFactory` interface is used to create <xref:System.Diagnostics.Metrics.Meter> instances. This abstraction is a [dependency injection-friendly](../extensions/dependency-injection.md) way to create metrics in your code. For more information, see [Creating metrics tutorial](metrics-instrumentation.md).
 
 ## Next steps
 

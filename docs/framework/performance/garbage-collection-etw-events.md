@@ -279,7 +279,7 @@ The following table shows the event data:
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
 |AllocationAmount|win:UInt32|The allocation size, in bytes. This value is accurate for allocations that are less than the length of a ULONG (4,294,967,295 bytes). If the allocation is greater, this field contains a truncated value. Use `AllocationAmount64` for very large allocations.|
-|AllocationKind|win:UInt32|0x0 - Small object allocation (allocation is in small object heap).<br /><br /> 0x1 - Large object allocation (allocation is in large object heap).|
+|AllocationKind|win:UInt32|0x0 - Small object allocation (allocation is in small object heap).<br /><br /> 0x1 - Large object allocation (allocation is in large object heap).<br /> 0x2 - Pinned object allocation (allocation is in pinned object heap).|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
 |AllocationAmount64|win:UInt64|The allocation size, in bytes. This value is accurate for very large allocations.|
 |TypeId|win:Pointer|The address of the MethodTable. When there are several types of objects that were allocated during this event, this is the address of the MethodTable that corresponds to the last object allocated (the object that caused the 100 KB threshold to be exceeded).|
@@ -305,7 +305,7 @@ The following table shows the event data:
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
 |AllocationAmount|win:UInt32|The allocation size, in bytes. This value is accurate for allocations that are less than the length of a ULONG (4,294,967,295 bytes). If the allocation is greater, this field contains a truncated value. Use `AllocationAmount64` for very large allocations.|
-|AllocationKind|win:UInt32|0x0 - Small object allocation (allocation is in small object heap).<br /><br /> 0x1 - Large object allocation (allocation is in large object heap).|
+|AllocationKind|win:UInt32|0x0 - Small object allocation (allocation is in small object heap).<br /><br /> 0x1 - Large object allocation (allocation is in large object heap).<br /> 0x2 - Pinned object allocation (allocation is in pinned object heap).|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
 |AllocationAmount64|win:UInt64|The allocation size, in bytes. This value is accurate for very large allocations.|
 |TypeId|win:Pointer|The address of the MethodTable. When there are several types of objects that were allocated during this event, this is the address of the MethodTable that corresponds to the last object allocated (the object that caused the 100 KB threshold to be exceeded).|

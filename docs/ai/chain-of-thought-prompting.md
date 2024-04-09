@@ -11,7 +11,7 @@ ms.date: [mm/dd/yyyy]
 
 ---
 
-# Concept - Chain of thought prompting
+# Chain of thought prompting
 
 This article explains the use of chain of thought prompting for .NET prompt engineering.
 

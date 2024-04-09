@@ -21,7 +21,7 @@ In .NET 9, `dotnet test` is more fully integrated with MSBuild. Because MSBuild 
 
 Test result reporting for [`dotnet test`](../../tools/dotnet-test.md) is now supported directly in the MSBuild terminal logger. You get more fully featured test reporting both *while* tests are running (displays the running test name) and *after* tests are completed (any test errors are rendered in a better way).
 
-For more information about the terminal logger, see [dotnet build options](../../tools/dotnet-build.md#options).
+For more information about the terminal logger, see [dotnet build options](../tools/dotnet-build.md#options).
 
 ## .NET tool roll-forward
 

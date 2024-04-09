@@ -2,7 +2,7 @@
 title: What's new in .NET libraries for .NET 9
 description: Learn about the new .NET libraries features introduced in .NET 9.
 titleSuffix: ""
-ms.date: 04/08/2024
+ms.date: 04/11/2024
 ms.topic: overview
 ---
 # What's new in .NET libraries for .NET 9

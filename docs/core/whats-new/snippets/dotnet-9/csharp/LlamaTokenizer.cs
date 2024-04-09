@@ -9,6 +9,7 @@ internal class LlamaTokenizerExample
 {
     public static async Task RunItAsync()
     {
+        // <Llama>
         // Create the Tokenizer.
         HttpClient httpClient = new HttpClient();
         string modelUrl = @"https://huggingface.co/hf-internal-testing/llama-tokenizer/resolve/main/tokenizer.model";
@@ -67,5 +68,6 @@ internal class LlamaTokenizerExample
         // tokenCount2 = 1
         Console.WriteLine($"index2 = {index2}");
         // index2 = 13
+        // </Llama>
     }
 }

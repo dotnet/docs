@@ -15,6 +15,50 @@ New for .NET 9, the engineering team posts .NET 9 preview updates on [GitHub Dis
 
 This article has been updated for .NET 9 Preview 3.
 
+## .NET runtime
+
+The .NET 9 runtime includes performance improvements, including faster exception handling, inlining improvements for Native AOT, and loop and PGO improvements. For more information, see [What's new in the .NET 9 runtime](runtime.md).
+
+## .NET libraries
+
+The .NET 9 libraries include improvements to ... For more information, see [What's new in the .NET 9 libraries](libraries.md).
+
+## .NET SDK
+
+For information about what's new in the .NET SDK, see [What's new in the SDK and tooling for .NET 9](sdk.md).
+
+## .NET Aspire
+
+.NET Aspire is an opinionated, cloud-ready stack for building observable, production ready, distributed applications.​ .NET Aspire is delivered through a collection of NuGet packages that handle specific cloud-native concerns, and is available in preview for .NET 9. For more information, see [.NET Aspire (Preview)](/dotnet/aspire).
+
+## ASP.NET Core
+
+ASP.NET Core includes improvements to ... For more information, see [What's new in ASP.NET Core 9.0](/aspnet/core/release-notes/aspnetcore-9.0).
+
+## .NET MAUI
+
+.NET MAUI includes ... For more information, see [What's new in .NET MAUI for .NET 9](/dotnet/maui/whats-new/dotnet-9).
+
+## EF Core
+
+Entity Framework Core includes improvements to ... For more information, see [What's New in EF Core 9](/ef/core/what-is-new/ef-core-9.0/whatsnew).
+
+<!--
+
+## C# 12
+
+C# 12 shipped with the .NET 8 SDK. For more information, see [What's new in C# 12](../../../csharp/whats-new/csharp-12.md).
+
+## Windows Forms
+
+...
+
+## Windows Presentation Foundation
+
+...
+
+-->
+
 ## See also
 
 - [Our vision for .NET 9](https://devblogs.microsoft.com/dotnet/our-vision-for-dotnet-9/) blog post

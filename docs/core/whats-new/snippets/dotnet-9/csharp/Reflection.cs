@@ -1,35 +1,56 @@
 ﻿using System.Reflection.Emit;
 using System.Reflection;
 using System;
+using System.Reflection.Metadata.Ecma335;
+using System.Reflection.Metadata;
+using System.Reflection.PortableExecutable;
+using System.IO;
 
 internal class Reflection
 {
     // <SaveAssembly>
     public void CreateAndSaveAssembly(string assemblyPath)
     {
-        AssemblyBuilder ab = AssemblyBuilder.DefinePersistedAssembly(
+        PersistedAssemblyBuilder ab = new PersistedAssemblyBuilder(
             new AssemblyName("MyAssembly"),
             typeof(object).Assembly
             );
         TypeBuilder tb = ab.DefineDynamicModule("MyModule")
             .DefineType("MyType", TypeAttributes.Public | TypeAttributes.Class);
 
-        MethodBuilder mb = tb.DefineMethod(
-            "SumMethod",
-            MethodAttributes.Public | MethodAttributes.Static,
-            typeof(int), [typeof(int), typeof(int)]
+        MethodBuilder entryPoint = tb.DefineMethod(
+            "Main",
+            MethodAttributes.HideBySig | MethodAttributes.Public | MethodAttributes.Static
             );
-        ILGenerator il = mb.GetILGenerator();
-        il.Emit(OpCodes.Ldarg_0);
-        il.Emit(OpCodes.Ldarg_1);
-        il.Emit(OpCodes.Add);
+        ILGenerator il = entryPoint.GetILGenerator();
+        // ...
         il.Emit(OpCodes.Ret);
 
         tb.CreateType();
-        ab.Save(assemblyPath); // or could save to a Stream
+
+        MetadataBuilder metadataBuilder = ab.GenerateMetadata(
+            out BlobBuilder ilStream,
+            out BlobBuilder fieldData
+            );
+        PEHeaderBuilder peHeaderBuilder = new PEHeaderBuilder(
+                        imageCharacteristics: Characteristics.ExecutableImage);
+
+        ManagedPEBuilder peBuilder = new ManagedPEBuilder(
+                        header: peHeaderBuilder,
+                        metadataRootBuilder: new MetadataRootBuilder(metadataBuilder),
+                        ilStream: ilStream,
+                        mappedFieldData: fieldData,
+                        entryPoint: MetadataTokens.MethodDefinitionHandle(entryPoint.MetadataToken)
+                        );
+
+        BlobBuilder peBlob = new BlobBuilder();
+        peBuilder.Serialize(peBlob);
+
+        using var fileStream = new FileStream("MyAssembly.exe", FileMode.Create, FileAccess.Write);
+        peBlob.WriteContentTo(fileStream);
     }
 
-    public void UseAssembly(string assemblyPath)
+    public static void UseAssembly(string assemblyPath)
     {
         Assembly assembly = Assembly.LoadFrom(assemblyPath);
         Type type = assembly.GetType("MyType");

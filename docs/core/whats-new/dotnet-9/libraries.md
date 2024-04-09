@@ -84,8 +84,41 @@ KMAC is available on Linux with OpenSSL 3.0 or later, and on Windows 11 Build 26
 
 ## Reflection
 
-In .NET Core versions and .NET 5-8, support for building an assembly and emitting reflection metadata for dynamically created types was limited to a runnable <xref:System.Reflection.Emit.AssemblyBuilder>. The lack of support for *saving* an assembly was often a blocker for customers migrating from .NET Framework to .NET. .NET 9 adds public APIs to <xref:System.Reflection.Emit.AssemblyBuilder> to save an emitted assembly.
+In .NET Core versions and .NET 5-8, support for building an assembly and emitting reflection metadata for dynamically created types was limited to a runnable <xref:System.Reflection.Emit.AssemblyBuilder>. The lack of support for *saving* an assembly was often a blocker for customers migrating from .NET Framework to .NET. .NET 9 adds a new type, <xref:System.Reflection.Emit.AssemblyBuilder.PersistedAssemblyBuilder?displayProperty=nameWithType>, that you can use to save an emitted assembly.
 
-The new, persisted <xref:System.Reflection.Emit.AssemblyBuilder> implementation is runtime and platform independent. To create a persisted `AssemblyBuilder` instance, use the new <xref:System.Reflection.Emit.AssemblyBuilder.DefinePersistedAssembly%2A?displayProperty=nameWithType> API. The existing <xref:System.Reflection.Emit.AssemblyBuilder.DefineDynamicAssembly%2A?displayProperty=nameWithType> API accepts the assembly name and optional custom attributes. To use the new API, pass the core assembly, `System.Private.CoreLib`, which is used for referencing base runtime types. There's no option for <xref:System.Reflection.Emit.AssemblyBuilderAccess>. And for now, the persisted `AssemblyBuilder` implementation only supports saving, not running. After you create an instance of the persisted `AssemblyBuilder`, the subsequent steps for defining a module, type, method, or enum, writing IL, and all other usages remain unchanged. That means you can use existing <xref:System.Reflection.Emit> code as-is for saving the assembly. The following code shows an example.
+To create a `PersistedAssemblyBuilder` instance, call its constructor and pass the assembly name, the core assembly, `System.Private.CoreLib`, to reference base runtime types, and optional custom attributes. After you emit all members to the assembly, call the `PersistedAssemblyBuilder.Save(string assemblyFileName)` method to create an assembly with default settings. If you want to set the entry point or other options, you can call `PersistedAssemblyBuilder.GenerateMetadata(out BlobBuilder ilStream, out BlobBuilder mappedFieldData)` and use the metadata it returns to save the assembly. The following code shows an example of creating a persisted assembly and setting the entry point.
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Reflection.cs" id="SaveAssembly":::
+
+## Tokenizers
+
+Tokenization is a fundamental component in the preprocessing of natural language text for AI models. Tokenizers are responsible for breaking down a string of text into smaller, more manageable parts, often referred to as *tokens*. When using services like Azure OpenAI, you can use tokenizers to get a better understanding of cost and manage context. When working with self-hosted or local models, tokens are the inputs provided to those models.
+
+[Microsoft.ML.Tokenizers](https://devblogs.microsoft.com/dotnet/announcing-ml-net-2-0/#tokenizer-support) is an open-source, cross-platform tokenization library. When it was introduced, the library was scoped to the [Byte-Pair Encoding (BPE)](https://en.wikipedia.org/wiki/Byte_pair_encoding) tokenization strategy to satisfy the language set of scenarios in ML.NET. .NET 9 adds the following enhancements to the library:
+
+- Refines APIs and existing functionality.
+- Adds `Tiktoken` support.
+- Adds `LlamaTokenizer` support.
+- Adds support for scenarios covered by the `DeepDev` and `SharpToken` libraries. If you're using `DeepDev` or `SharpToken`, we recommend migrating to `Microsoft.ML.Tokenizers`. For more details, see the [migration guide](https://github.com/dotnet/machinelearning/blob/main/docs/code/microsoft-ml-tokenizers-migration-guide.md).
+
+The following examples show how to use the `Tiktoken` and `LlamaTokenizer` text tokenizers.
+
+Use `Tiktoken` tokenizer:
+
+:::code language="csharp" source="../snippets/dotnet-9/csharp/Tiktoken.cs" id="Tiktoken":::
+
+Use `LlamaTokenizer` tokenizer:
+
+:::code language="csharp" source="../snippets/dotnet-9/csharp/LlamaTokenizer.cs" id="Llama":::
+
+## New TimeSpan.From\* overloads
+
+The <xref:System.TimeSpan> class offers several `From*` methods that let you create a `TimeSpan` object using a `double`. However, since `double` is a binary-based floating-point format, [inherent imprecision can lead to errors](https://github.com/dotnet/runtime/issues/93890). For instance, `TimeSpan.FromSeconds(101.832)` might not precisely represent `101 seconds, 832 milliseconds`, but rather approximately `101 seconds, 831.9999999999936335370875895023345947265625 milliseconds`. This discrepancy has caused frequent confusion, and it's also not the most efficient way to represent such data. To address this, .NET 9 adds new overloads that let you create `TimeSpan` objects from integers. There are new overloads from `FromDays`, `FromHours`, `FromMinutes`, `FromSeconds`, `FromMilliseconds`, and `FromMicroseconds`.
+
+The following code shows an example of calling the `double` and one of the new integer overloads.
+
+:::code language="csharp" source="../snippets/dotnet-9/csharp/TimeSpan.cs" id="TimeSpan.From":::
+
+## `ActivatorUtilities.CreateInstance` constructor
+
+The constructor resolution for `ActivatorUtilities.CreateInstance()` has changed in .NET 9. Previously, a constructor that was explicitly marked using the `[ActivatorUtilitiesConstructor]` attribute might not be called, depending on the ordering of constructors and the number of constructor parameters. The logic has changed in .NET 9 such that a constructor that has the attribute is always called.

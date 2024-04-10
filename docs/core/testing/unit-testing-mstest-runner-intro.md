@@ -70,7 +70,7 @@ dotnet run --project Contoso.MyTests -- --settings config.runsettings
 
 using `dotnet exec`
 
-```bash
+```dotnetcli
 dotnet exec Contoso.MyTests.dll --settings config.runsettings
 ```
 

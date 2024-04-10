@@ -71,7 +71,7 @@ There are benefits and disadvantages to each tokenization method:
 
 While training, after a text has been tokenized, each unique token is assigned an ID.
 
-For example, in the sentence:
+Consider the following sentence:
 
 > I heard a dog bark loudly at a cat
 

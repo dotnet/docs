@@ -58,6 +58,8 @@ To enable the MSTest runner in a MSTest project, you need to add the `EnableMSTe
 
 ## Configurations and filters
 
+### .runsettings
+
 The MSTest runner supports the [runsettings](https://learn.microsoft.com/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file) through command line option `--settings`, for instance:
 
 using `dotnet run`
@@ -83,6 +85,10 @@ using the executable
 ```bash
 Contoso.MyTests.exe --settings config.runsettings
 ```
+
+**As detailed [here](unit-testing-platform-runsettings.md), certain settings are not compatible with runner mode.**
+
+### Tests filter
 
 Seamesly you can provite the tests [filters](https://learn.microsoft.com/dotnet/core/testing/selective-unit-tests?pivots=mstest#mstest-examples) using the command line option `--filter`, for instance:
 

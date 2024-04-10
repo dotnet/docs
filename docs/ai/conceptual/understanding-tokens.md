@@ -11,7 +11,7 @@ ms.date: 04/05/2024
 
 # Understanding tokens
 
-Tokens are the words or character sets that large language models (LLMs) decompose text into. During training a LLM will analyze the semantic relationships between these tokens, such as how commonly they are used together or if they're used in similar contexts. Once trained a LLM will use those patterns and relationships to generate a sequence of output tokens based on the input sequence.
+Tokens are the words or character sets that large language models (LLMs) decompose text into. During training, an LLM analyzes the semantic relationships between these tokens, such as how commonly they're used together or if they're used in similar contexts. Once trained, an LLM uses those patterns and relationships to generate a sequence of output tokens based on the input sequence.
 
 ## What are tokens?
 

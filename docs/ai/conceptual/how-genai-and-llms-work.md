@@ -102,113 +102,8 @@ namespace TicTacToe
             return 0;
         }
 
-        // Check if the player has won
-        private static int CheckWin()
-        {
-            // Check if any row has same value
-            for (int i = 0; i < 3; i++)
-            {
-                if (board[i * 3] == board[(i * 3) + 1] && board[(i * 3) + 1] == board[(i * 3) + 2])
-                {
-                    return 1;
-                }
-            }
-
-            // Check if any column has same value
-            for (int i = 0; i < 3; i++)
-            {
-                if (board[i] == board[i + 3] && board[i + 3] == board[i + 6])
-                {
-                    return 1;
-                }
-            }
-
-            // Check if any diagonal has same value
-            if (board[0] == board[4] && board[4] == board[8])
-            {
-                return 1;
-            }
-            if (board[2] == board[4] && board[4] == board[6])
-            {
-                return 1;
-            }
-
-            return 0;
-        }
-
-        // Main method to play the game
-        static void Main(string[] args)
-        {
-            do
-            {
-                Console.Clear(); // Whenever the loop runs, the screen will be cleared
-                Console.WriteLine("Player 1: X and Player 2: O");
-                Console.WriteLine("\n");
-
-                if (player % 2 == 0) // If player is even, then it is player 2's turn
-                {
-                    Console.WriteLine("Player 2's turn");
-                }
-                else
-                {
-                    Console.WriteLine("Player 1's turn");
-                }
-                Console.WriteLine("\n");
-                DisplayBoard(); // Call the board to display
-                choice = int.Parse(Console.ReadLine()); // Taking users choice
-
-                // Checking if the position is available or not
-                if (CheckPosition(Convert.ToChar(choice.ToString())) != 0 && choice < 10)
-                {
-                    if (player % 2 == 0) // If player 2's turn then mark O
-                    {
-                        board[choice - 1] = 'O';
-                        player++;
-                    }
-                    else // If player 1's turn then mark X
-                    {
-                        board[choice - 1] = 'X';
-                        player++;
-                    }
-                }
-                else
-                {
-                    Console.WriteLine("Sorry the row {0} is already marked with an {1}", choice, board[choice - 1]);
-                    Console.WriteLine("\n");
-                    Console.WriteLine("Please wait 2 second board is loading again...");
-                    System.Threading.Thread.Sleep(2000);
-                }
-                flag = CheckWin(); // Calling the checkWin function
-
-            } while (flag != 1 && flag != -1); // Loop will run until the flag value becomes 1
-
-            Console.Clear(); // Clearing the console
-            DisplayBoard(); // Displaying the final board
-
-            if (flag == 1) // If flag value is 1, then some player has won
-            {
-                Console.WriteLine("Player {0} has won", (player % 2) + 1);
-            }
-            else // If flag value is -1, then the game is a draw
-            {
-                Console.WriteLine("Draw");
-            }
-            Console.ReadLine();
-        }
-
-        // Method to display the board
-        private static void DisplayBoard()
-        {
-            Console.WriteLine("     |     |      ");
-            Console.WriteLine("  {0}  |  {1}  |  {2}", board[0], board[1], board[2]);
-            Console.WriteLine("_____|_____|_____ ");
-            Console.WriteLine("     |     |      ");
-            Console.WriteLine("  {0}  |  {1}  |  {2}", board[3], board[4], board[5]);
-            Console.WriteLine("_____|_____|_____ ");
-            Console.WriteLine("     |     |      ");
-            Console.WriteLine("  {0}  |  {1}  |  {2}", board[6], board[7], board[8]);
-            Console.WriteLine("     |     |      ");
-        }
+        // The rest of the generated code has been omitted for brevity
+        // ...
     }
 }
 ```
@@ -217,22 +112,13 @@ _This code creates a simple console-based tic-tac-toe game in C#. It uses a sing
 
 ## How do LLMs work?
 
-The latest LLMs are based on the _transformer_ architecture built on techniques that have proven successful in modeling _vocabularies_ to support NLP. Transformer models are trained with large data sets of text; this enables them to recognize semantic relationships between words and use those relationships to determine probable sequences of text that will make sense to a human reader. The larger a transformer model's vocabulary, the more difficult it is to distinguish its output from a human's.
-
-Transformer model architecture consists of two components, or _blocks_:
-
-- An _encoder_ block that creates semantic representations of the training vocabulary
-- A _decoder_ block that generates new language sequences
-
-The specific implementations of this architecture may vary. Some models may only use the encoder block, such as the Bidirectional Encoder Representations from Transformers (BERT) model developed by Google to support their search engine. Other models may only use the decoder block, like the Generative Pre-trained Transformer (GPT) model developed by OpenAI.
-
-When training a transformer model the training text is first broken down into [tokens](understanding-tokens.md). These tokens each identify a unique text value. A token may be an distinct word, but can also be a partial word or combination of words and punctuation. Each token is then assigned an ID, which enables the text to be represented as a sequence of token IDs.
+When training a LLM the training text is first broken down into [tokens](understanding-tokens.md). These tokens each identify a unique text value. A token may be an distinct word, but can also be a partial word or combination of words and punctuation. Each token is then assigned an ID, which enables the text to be represented as a sequence of token IDs.
 
 After the text has been broken down into tokens, a contextual vector, known as an [_embedding_](understanding-embeddings.md), is assigned to each token. These embedding vectors are multi-valued numeric data where each element of a token's vector represents a semantic attribute of the token. The elements of a token's vector are determined based on how commonly words are used together or in similar contexts.
 
-The goal is to predict the vector for the next token in the sequence based on the preceding tokens. A weight is assigned to each token in the sequence so far that represents their relative influence on the next token. A calculation is then performed on these weighted vectors that produces an _attention score_ that can be used to calculate a possible vector for the next token.
+The goal is to predict the next token in the sequence based on the preceding tokens. A weight is assigned to each token in the sequence so far that represents their relative influence on the next token. A calculation is then performed using the preceding tokens' weights and embeddings to predict the next vector value. The model then selects the most probable token to continue the sequence based on the predicted vector.
 
-In practice, a technique called multi-head attention uses different elements of the embedding vectors to calculate multiple attention scores. A neural network is then used to evaluate all possible tokens to determine the most probable token with which to continue the sequence. The process continues iteratively for each token in the sequence, with the output sequence so far being used regressively as the input for the next iteration, building the output one token at a time.
+This process continues iteratively for each token in the sequence, with the output sequence so far being used regressively as the input for the next iteration, building the output one token at a time. This is analogous to how auto-complete works, where the suggestions are based on what has been typed so far and update with each new input.
 
 During training the complete sequence of tokens is known, but all tokens that come after the one currently being considered are ignored. The predicted value for the next token's vector is compared to the actual value and the loss is calculated. The weights are then incrementally adjusted to reduce the loss and improve the model.
 
@@ -250,4 +136,5 @@ LLMs can be used to perform a variety of NLP tasks, including:
 <!-- TODO: Update these links once we have the file names -->
 
 - [Understanding Token](understanding-tokens.md)
-- [Prompt engineering](prompt-engineering.md)
+- [Prompt engineering](prompt-engineering-in-dot-net.md)
+- [Large language models](https://learn.microsoft.com/training/modules/fundamentals-generative-ai/3-language%20models)

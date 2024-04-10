@@ -43,11 +43,11 @@ ASP.NET Core includes improvements to ... For more information, see [What's new 
 
 Entity Framework Core includes improvements to ... For more information, see [What's New in EF Core 9](/ef/core/what-is-new/ef-core-9.0/whatsnew).
 
+## C# 13
+
+C# 13 ships with the .NET 9 SDK. For more information, see [What's new in C# 13](../../../csharp/whats-new/csharp-13.md).
+
 <!--
-
-## C# 12
-
-C# 12 shipped with the .NET 8 SDK. For more information, see [What's new in C# 12](../../../csharp/whats-new/csharp-12.md).
 
 ## Windows Forms
 

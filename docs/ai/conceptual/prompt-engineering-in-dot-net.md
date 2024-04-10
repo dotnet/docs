@@ -101,7 +101,7 @@ Examples are classified as zero-shot learning or few-shot learning based on whet
 
 A cue is a line of text that conveys the desired structure or format of output. Like an instruction, a cue isn't processed by the model as if it were user input. Like an example, a cue shows the model what you want instead of telling it what to do. You can add as many cues as you want, so you can iterate to get the result you want. Cues are used with an instruction or an example and should be at the end of the prompt.
 
-Suppose you use an instruction to tell the model to produce a list of presidential accomplishments by category, along with supporting content that tells the model what categories to use. You decide that you want the model to produce a nested list with all caps for categories, with each president's accomplishments in each category listed on one line that begins with their name. After your instruction and supporting content, you could add the three cues to show the model how to structure and format the list:
+Suppose you use an instruction to tell the model to produce a list of presidential accomplishments by category, along with supporting content that tells the model what categories to use. You decide that you want the model to produce a nested list with all caps for categories, with each president's accomplishments in each category listed on one line that begins with their name, with presidents listed chronologically. After your instruction and supporting content, you could add three cues to show the model how to structure and format the list:
 
 ```csharp
 prompt = @$"Instructions: Summarize US Presidential accomplishments, grouped by category.
@@ -130,7 +130,9 @@ This section compares two .NET options for prompt engineering: Semantic Kernel a
 
 ### Semantic Kernel
 
-Semantic Kernel allows you to experiment with different prompts and parameters across multiple different models using a common interface. You can quickly compare the outputs of different models and parameters, and iterate on prompts to achieve the desired results.
+Semantic Kernel is an SDK that integrates Large Language Models (LLMs) with conventional programming languages such as C#, Python, and Java. Semantic Kernel lets you define plugins and easily chain them together in just a few lines of code.
+
+Even better, Semantic Kernel can automatically orchestrate plugins with AI. With [Semantic Kernel planners](https://learn.microsoft.com/en-us/semantic-kernel/agents/planners/?tabs=Csharp), you can ask an LLM to generate a plan that achieves a user's unique goal. Semantic Kernel can then execute that plan for users.
 
 By deeply integrating with Visual Studio Code, Semantic Kernel also makes it easy for you to integrate prompt engineering into your existing development processes:
 

@@ -17,11 +17,15 @@ GPT model performance benefits from [prompt engineering](prompt-engineering-in-d
 
 Chain of thought prompting is the practice of prompting a GPT model to perform a task step-by-step and to present each step and its result in order in the output. This simplifies prompt engineering by offloading some execution planning to the model, and makes it easier to connect any problem to a specific step so you know where to focus further efforts.
 
-You can use instructions or examples for chain of thought prompting.
+It's generally much simpler to use instructions for chain of thought prompting, but you can use examples to show the model how to break down tasks.
 
 ## Use chain of thought prompting in instructions
 
-To use an instruction for chain of thought prompting, include a directive that tells the model to perform the task step-by-step and output the result of each step.
+To use an instruction for chain of thought prompting, include a directive that tells the model to perform the task step-by-step and to output the result of each step.
+
+```csharp
+prompt= @$"Instructions: Compare the pros and cons of EVs and petroleum-fueled vehicles. Break the task into steps, and output the result of each step as you perform it."; 
+```
 
 ## Use chain of thought prompting in examples
 

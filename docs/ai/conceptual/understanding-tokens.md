@@ -89,7 +89,7 @@ After tokenization the following IDs could be assigned:
 
 By assigning IDs, text can be represented as a sequence of token IDs. The previous sentence would be represented as [1, 2, 3, 4, 5, 6, 7, 3, 8]. The sentence "I heard a cat" would be represented as [1, 2, 3, 8].
 
-As training continues, any new tokens in the training text will be added to the vocabulary and assigned an ID. For example:
+As training continues, any new tokens in the training text are added to the vocabulary and assigned an ID. For example:
 
 - meow (9)
 - run (10)

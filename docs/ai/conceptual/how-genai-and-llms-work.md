@@ -1,6 +1,6 @@
 ---
 title: "How Generative AI and LLMs work"
-description: "Understand how Generative AI and large language models (LLMs) work and how they may be useful in your .NET projects."
+description: "Understand how Generative AI and large language models (LLMs) work and how they might be useful in your .NET projects."
 author: haywoodsloan
 ms.topic: concept-article
 ms.date: 04/04/2024
@@ -9,19 +9,19 @@ ms.date: 04/04/2024
 
 ---
 
-# How Generative AI and LLMs work
+# How generative AI and LLMs work
 
-Generative AI is a type of artificial intelligence capable of creating original content, such as natural language, images, audio, code, etc. The output of a generative AI is based on the inputs provided by the user. One common way for users to interact with generative AI is through chat applications which use natural language as their input. ChatGPT, developed by OpenAI, is a popular example of this. Generative AI applications which use natural language as an input are powered by large language models (LLMs) to perform natural language processing (NLP).
+Generative AI is a type of artificial intelligence capable of creating original content, such as natural language, images, audio, and code. The output of a generative AI is based on the inputs provided by the user. One common way for users to interact with generative AI is through chat applications that use natural language as their input. ChatGPT, developed by OpenAI, is a popular example of this. Generative AI applications that use natural language as an input are powered by large language models (LLMs) to perform natural language processing (NLP).
 
-## How does Generative AI work?
+## How generative AI works
 
-All generative AI is built on top of models. These models are trained with large sets of data in the form of content, such as natural language, images, audio, code, etc. Generative AI models use the patterns identified in the training data to produce new, statistically similar content.
+All generative AI is built on top of models. These models are trained with large sets of data in the form of content, such as natural language, images, audio, and code. Generative AI models use the patterns identified in the training data to produce new, statistically similar content.
 
-The input provided by the user is the seed that the generative AI model builds its output from. The input is first parsed into a form of data that the model can understand. The model then uses that data to identify matching patterns from its training that it will combine to build the final output. Generative AI models are designed to produce unique content, so they won't generate the same output for identical inputs.
+The input provided by the user is the seed that the generative AI model builds its output from. The input is first parsed into a form of data that the model can understand. The model then uses that data to identify matching patterns from its training that it combines to build the final output. Generative AI models are designed to produce unique content, so they won't generate the same output for identical inputs.
 
-Generative AI applications which support natural language as an input or output utilize LLMs to do so. The LLM is used to perform NLP, classifying the input text and determining its sentiment. That classification and sentiment analysis is used by the generative AI model to identify patterns and build the output. If the output is text, the LLM alone can be used to generate it. If the ouput is audio, images, etc., additional models are used to provide the data and patterns for generating outputs in that format.
+Generative AI applications that support natural language as an input or output utilize LLMs to do so. The LLM is used to perform NLP, which classifies the input text and determines its sentiment. That classification and sentiment analysis is used by the generative AI model to identify patterns and build the output. If the output is text, the LLM alone can be used to generate it. If the output is audio or images, additional models are used to provide the data and patterns for generating outputs in that format.
 
-## Potential uses of Generative AI
+## Potential uses of generative AI
 
 Because generative AI applications can support a variety of output formats, there are many potential use cases for them.
 
@@ -33,7 +33,7 @@ Some generative AI applications can produce natural language outputs, such as:
 - Professionally worded summaries for a LinkedIn profile
 - Rich descriptions of items in an online storefront
 
-For example, a user may input the request, "Give me three ideas for a healthy breakfast including peppers." A generative AI application might produce the following output:
+For example, given the user input "Give me three ideas for a healthy breakfast including peppers", a generative AI application might produce the following output:
 
 _OK, here are three healthy breakfasts that include peppers:_
 
@@ -45,7 +45,7 @@ _OK, here are three healthy breakfasts that include peppers:_
 
 ### Image generation
 
-Some generative AI applications can produce image outputs from natural language inputs. Depending on the application and its model(s), users may be able to specify:
+Some generative AI applications can produce image outputs from natural language inputs. Depending on the application and its models, users might be able to specify:
 
 - The people or things to appear the image
 - The artistic style to create the image in
@@ -57,7 +57,7 @@ Image generation can be used to create virtual avatars for online accounts, desi
 
 ### Audio generation
 
-Some generative AI applications can produce audio outputs from natural language inputs. Depending on the application and its model(s), users may be able to:
+Some generative AI applications can produce audio outputs from natural language inputs. Depending on the application and its models, users might be able to:
 
 - Synthesize natural sounding voices from input text
 - Create music in a specific style or featuring certain instruments
@@ -67,13 +67,13 @@ Audio generation can be used to provide spoken responses from digital voice assi
 
 ### Code generation
 
-Some generative AI applications can produce code from natural language inputs. Depending on the application and its model(s), users may be able to generate code:
+Some generative AI applications can produce code from natural language inputs. Depending on the application and its models, users might be able to generate code that:
 
-- In the language of their choice
-- That accepts a specific input and output structure
-- That uses specific technologies based on their reference documentation
+- Is in the language of their choice
+- Accepts a specific input and output structure
+- Uses specific technologies based on their reference documentation
 
-Code generation can be used to provide quick implementations of common operations, such as sorting or filtering data, speed up translating code from one language to another, or answer questions about a technology based on specifed reference documentation. For example, a user may input the request, "Show me how to code a game of tic-tac-toe with C#". A generative AI application might produce the following output:
+Code generation can be used to provide quick implementations of common operations, such as sort or filter data, speed up translating code from one language to another, or answer questions about a technology based on specified reference documentation. For example, given the input "Show me how to code a game of tic-tac-toe with C#", a generative AI application might produce the following output:
 
 _Here's a simple example of how you can code a game of tic-tac-toe in C#:_
 
@@ -110,23 +110,23 @@ namespace TicTacToe
 
 _This code creates a simple console-based tic-tac-toe game in C#. It uses a single-dimensional array to represent the board and checks for a win or draw after each move._
 
-## How do LLMs work?
+## How LLMs work
 
-When training a LLM the training text is first broken down into [tokens](understanding-tokens.md). These tokens each identify a unique text value. A token may be an distinct word, but can also be a partial word or combination of words and punctuation. Each token is then assigned an ID, which enables the text to be represented as a sequence of token IDs.
+When training an LLM, the training text is first broken down into [tokens](understanding-tokens.md). Each token identifies a unique text value. A token can be a distinct word, a partial word, or a combination of words and punctuation. Each token is assigned an ID, which enables the text to be represented as a sequence of token IDs.
 
-After the text has been broken down into tokens, a contextual vector, known as an [_embedding_](understanding-embeddings.md), is assigned to each token. These embedding vectors are multi-valued numeric data where each element of a token's vector represents a semantic attribute of the token. The elements of a token's vector are determined based on how commonly words are used together or in similar contexts.
+After the text has been broken down into tokens, a contextual vector, known as an [_embedding_](understanding-embeddings.md), is assigned to each token. These embedding vectors are multi-valued numeric data where each element of a token's vector represents a semantic attribute of the token. The elements of a token's vector are determined based on how commonly tokens are used together or in similar contexts.
 
-The goal is to predict the next token in the sequence based on the preceding tokens. A weight is assigned to each token in the sequence so far that represents their relative influence on the next token. A calculation is then performed using the preceding tokens' weights and embeddings to predict the next vector value. The model then selects the most probable token to continue the sequence based on the predicted vector.
+The goal is to predict the next token in the sequence based on the preceding tokens. A weight is assigned to each token in the existing sequence that represents its relative influence on the next token. A calculation is then performed that uses the preceding tokens' weights and embeddings to predict the next vector value. The model then selects the most probable token to continue the sequence based on the predicted vector.
 
-This process continues iteratively for each token in the sequence, with the output sequence so far being used regressively as the input for the next iteration, building the output one token at a time. This is analogous to how auto-complete works, where the suggestions are based on what has been typed so far and update with each new input.
+This process continues iteratively for each token in the sequence, with the output sequence being used regressively as the input for the next iteration. The output is built one token at a time. This strategy is analogous to how auto-complete works, where suggestions are based on what's been typed so far and updated with each new input.
 
-During training the complete sequence of tokens is known, but all tokens that come after the one currently being considered are ignored. The predicted value for the next token's vector is compared to the actual value and the loss is calculated. The weights are then incrementally adjusted to reduce the loss and improve the model.
+During training, the complete sequence of tokens is known, but all tokens that come after the one currently being considered are ignored. The predicted value for the next token's vector is compared to the actual value and the loss is calculated. The weights are then incrementally adjusted to reduce the loss and improve the model.
 
 ## Potential uses of LLMs
 
 LLMs can be used to perform a variety of NLP tasks, including:
 
-- Determining the sentiment and classifying text
+- Determining sentiment and classifying text
 - Summarizing large blocks of text into the most important details
 - Comparing multiple texts to detect potential plagiarism
 - Rephrasing text meant for one audience to better suit another
@@ -137,4 +137,4 @@ LLMs can be used to perform a variety of NLP tasks, including:
 
 - [Understanding Token](understanding-tokens.md)
 - [Prompt engineering](prompt-engineering-in-dot-net.md)
-- [Large language models](https://learn.microsoft.com/training/modules/fundamentals-generative-ai/3-language%20models)
+- [Large language models](/training/modules/fundamentals-generative-ai/3-language%20models)

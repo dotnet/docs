@@ -200,7 +200,7 @@ This feature is used to understand extensions that would be registering the same
 List available tests. Tests will not be executed.
 
 - **`--minimum-expected-tests`**
- 
+
 Specifies the minimum number of tests that are expected to run.
 
 - **`--results-directory`**

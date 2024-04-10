@@ -199,9 +199,16 @@ This feature is used to understand extensions that would be registering the same
 
 List available tests. Tests will not be executed.
 
+- **`--minimum-expected-tests`**
+ 
+Specifies the minimum number of tests that are expected to run.
+
 - **`--results-directory`**
 
 The directory where the test results are going to be placed. If the specified directory doesn't exist, it's created. The default is `TestResults` in the directory that contains the test application.
+
+> [!NOTE]
+> The above list does not include potential extension options. To see all available options, execute the `--help` command.
 
 ## See also
 

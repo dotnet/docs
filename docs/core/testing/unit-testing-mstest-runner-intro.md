@@ -55,3 +55,44 @@ To enable the MSTest runner in a MSTest project, you need to add the `EnableMSTe
 
 </Project>
 ```
+
+## Configurations and filters
+
+The MSTest runner supports the [runsettings](https://learn.microsoft.com/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file) through command line option `--settings`, for instance:
+
+using `dotnet run`
+
+```bash
+dotnet run --project Contoso.MyTests -- --settings config.runsettings
+```
+
+using `dotnet exec`
+
+```bash
+dotnet exec Contoso.MyTests.dll --settings config.runsettings
+```
+
+using the executable
+
+```bash
+Contoso.MyTests.exe --settings config.runsettings
+```
+
+Seamesly you can provite the tests [filters](https://learn.microsoft.com/en-us/dotnet/core/testing/selective-unit-tests?pivots=mstest#mstest-examples) using the command line option `--filter`, for instance:
+
+using `dotnet run`
+```bash
+dotnet run --project Contoso.MyTests -- --filter "FullyQualifiedName~UnitTest1|TestCategory=CategoryA"
+```
+
+using `dotnet exec`
+
+```bash
+dotnet exec Contoso.MyTests.dll --filter "FullyQualifiedName~UnitTest1|TestCategory=CategoryA"
+```
+
+using the executable
+
+```bash
+Contoso.MyTests.exe --filter "FullyQualifiedName~UnitTest1|TestCategory=CategoryA"
+```

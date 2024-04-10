@@ -14,7 +14,25 @@ The MSTest runner is open source, and builds on a [`Microsoft.Testing.Platform`]
 
 ## Enable MSTest runner in a MSTest project
 
-To enable the MSTest runner in a MSTest project, you need to add the `EnableMSTestRunner` property and set `OutputType` to `Exe` in your project file, and ensure that you're using `MSTest 3.2.0-preview.23623.1` or newer, consider the following example _*.csproj_ file:
+We recommend using [MSTest SDK](./unit-testing-mstest-sdk.md) as it greatly simplifies your project configuration, the update of the project and ensures a proper alignment of the versions of the platform (MSTest runner) and its extensions.
+
+When using `MSTest SDK` you will by-default opt-in to use MSTest runner.
+
+```xml
+<Project Sdk="MSTest.Sdk/3.3.1">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>
+```
+
+Alternatively, you can enable MSTest runner by adding the `EnableMSTestRunner` property and setting `OutputType` to `Exe` in your project file. You also need to ensure that you're using `MSTest 3.2.0-preview.23623.1` or newer.
+
+Consider the following example project file:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

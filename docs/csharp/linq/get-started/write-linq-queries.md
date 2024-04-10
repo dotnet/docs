@@ -1,7 +1,7 @@
 ---
 title: Use C# to write LINQ queries
 description: Learn how to write LINQ queries in C#.
-ms.date: 12/14/2023
+ms.date: 04/10/2024
 ---
 # Write C# LINQ queries to query data
 
@@ -90,7 +90,56 @@ It can be written by using explicit typing, as follows:
 
 :::code language="csharp" source="./snippets/SnippetApp/WriteLinqQueries.cs" id="write_linq_queries_5b":::
 
+## Dynamically specify predicate filters at run time
+
+In some cases, you don't know until run time how many predicates you have to apply to source elements in the `where` clause. One way to dynamically specify multiple predicate filters is to use the <xref:System.Linq.Enumerable.Contains%2A> method, as shown in the following example. The query returns different results based on the value of `id` when the query is executed.
+
+:::code language="csharp" source="./snippets/SnippetApp/RuntimeFiltering.cs" id="runtime_filtering_1":::
+
+You can use control flow statements, such as `if... else` or `switch`, to select among predetermined alternative queries. In the following example, `studentQuery` uses a different `where` clause if the runtime value of `oddYear` is `true` or `false`.
+
+:::code language="csharp" source="./snippets/SnippetApp/RuntimeFiltering.cs" id="runtime_filtering_2":::
+
+## Handle null values in query expressions
+
+This example shows how to handle possible null values in source collections. An object collection such as an <xref:System.Collections.Generic.IEnumerable%601> can contain elements whose value is [null](../language-reference/keywords/null.md). If a source collection is `null` or contains an element whose value is `null`, and your query doesn't handle `null` values, a <xref:System.NullReferenceException> is thrown when you execute the query.
+
+You can code defensively to avoid a null reference exception as shown in the following example:
+
+:::code language="csharp" source="./snippets/SnippetApp/NullValues.cs" id="null_values_1":::
+
+In the previous example, the `where` clause filters out all null elements in the categories sequence. This technique is independent of the null check in the join clause. The conditional expression with null in this example works because `Products.CategoryID` is of type `int?`, which is shorthand for `Nullable<int>`.
+
+In a join clause, if only one of the comparison keys is a nullable value type, you can cast the other to a nullable value type in the query expression. In the following example, assume that `EmployeeID` is a column that contains values of type `int?`:
+
+:::code language="csharp" source="./snippets/SnippetApp/how-to-handle-null-values-in-query-expressions_2.cs" :::
+
+In each of the examples, the `equals` query keyword is used. You can also use [pattern matching](../language-reference/operators/patterns.md), which includes patterns for `is null` and `is not null`. These patterns aren't recommended in LINQ queries because query providers might not interpret the new C# syntax correctly. A query provider is a library that translates C# query expressions into a native data format, such as Entity Framework Core. Query providers implement the <xref:System.Linq.IQueryProvider?displayProperty=nameWithType> interface to create data sources that implement the <xref:System.Linq.IQueryable%601?displayProperty=nameWithType> interface.
+
+## Handle exceptions in query expressions
+
+It's possible to call any method in the context of a query expression. However, we recommend that you avoid calling any method in a query expression that can create a side effect such as modifying the contents of the data source or throwing an exception. This example shows how to avoid raising exceptions when you call methods in a query expression without violating the general .NET guidelines on exception handling. Those guidelines state that it's acceptable to catch a specific exception when you understand why it's thrown in a given context. For more information, see [Best Practices for Exceptions](../../standard/exceptions/best-practices-for-exceptions.md).
+
+The final example shows how to handle those cases when you must throw an exception during execution of a query.
+
+The following example shows how to move exception handling code outside a query expression. This refactoring is only possible when the method doesn't depend on any variables local to the query. It's easier to deal with exceptions outside of the query expression.
+
+:::code language="csharp" source="./snippets/SnippetApp/Exceptions.cs" id="exceptions_1":::
+
+In the `catch (InvalidOperationException)` in the preceding example, handle (or don't handle) the exception in the way that is appropriate for your application.
+
+In some cases, the best response to an exception that is thrown from within a query might be to stop the query execution immediately. The following example shows how to handle exceptions that might be thrown from inside a query body. Assume that `SomeMethodThatMightThrow` can potentially cause an exception that requires the query execution to stop.
+
+The `try` block encloses the `foreach` loop, and not the query itself. This is because the `foreach` loop is the point at which the query is executed. For more information, see [Introduction to LINQ queries](get-started/introduction-to-linq-queries.md). The runtime exception is thrown when the query is executed. Therefore they must be handled in the `foreach` loop.
+
+:::code language="csharp" source="./snippets/SnippetApp/Exceptions.cs" id="exceptions_2":::
+
+Remember to catch whatever exception you expect to raise and/or do any necessary cleanup in a `finally` block.
+
 ## See also
 
-- [Walkthrough: Writing Queries in C#](../../programming-guide/concepts/linq/walkthrough-writing-queries-linq.md)
+- [Walkthrough: Writing Queries in C#](../walkthrough-writing-queries-linq.md)
 - [where clause](../../language-reference/keywords/where-clause.md)
+- [Querying based on runtime state](../advanced-topics/expression-trees/debugview-syntax.md)
+- <xref:System.Nullable%601>
+- [Nullable value types](../language-reference/builtin-types/nullable-value-types.md)

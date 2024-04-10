@@ -66,6 +66,20 @@ Linq.GetStarted.TypeRelationships.ExplicitType();
 WriteSeparator(nameof(Linq.GetStarted.TypeRelationships.ImplicitType));
 Linq.GetStarted.TypeRelationships.ImplicitType();
 
+WriteSeparator(nameof(Linq.GetStarted.TypeRelationships.ImplicitType));
+ReturnQueryFromMethod.ReturnQueryFromMethod1();
+
+WriteSeparator(nameof(RuntimeFiltering));
+RuntimeFiltering.RuntimeFiltering1();
+RuntimeFiltering.RuntimeFiltering2();
+
+WriteSeparator(nameof(NullValues));
+NullValues.NullValues1();
+
+WriteSeparator(nameof(Exceptions));
+Exceptions.Exceptions1();
+Exceptions.Exceptions2();
+
 void WriteSeparator(string symbol) => Console.WriteLine($"==========  {symbol} ==========");
 
 // This won't work, but we want to make sure it compiles.

@@ -144,12 +144,10 @@ Azure OpenAI is a managed service that allows developers to deploy, tune, and ge
 
 Use the client library for Azure OpenAI to:
 
-- Provide simple text completions via the Completion API.
-- Provide chat-style completions via the Chat Completion API.
+- Engineer generated text completions via the [Completion API](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/advanced-prompt-engineering?pivots=programming-language-completions).
+- Engineer chat-based completions via the [Chat Completion API](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/advanced-prompt-engineering?pivots=programming-language-chat-completions).
 
-The Completion API and the Chat Completion API target different GPT models with different implementations of prompt engineering. The following examples show the same engineered prompt in each API.
-
-The Completion API targets the GPT-3 and GPT-35 models, which have no specific format rules for prompt engineering.
+Completions use GPT-3 and GPT-3.5 models, which have no specific format rules for prompts.
 
 ```csharp
 Prompts = 
@@ -159,7 +157,7 @@ Prompts =
     }
 ```
 
-The Chat Completion API targets the GPT-35-Turbo and GPT-4 models, which use a specific chat-like format consisting of role-based messages.
+Chat Completions use GPT-35-Turbo and GPT-4 models, which use a specific chat-like format consisting of role-based messages.
 
 ```csharp
 Messages =

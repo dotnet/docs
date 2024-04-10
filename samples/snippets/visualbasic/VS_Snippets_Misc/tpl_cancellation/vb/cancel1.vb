@@ -21,7 +21,7 @@ Module Example
         ' Request cancellation of a single task when the token source is canceled.
         ' Pass the token to the user delegate, and also to the task so it can
         ' handle the exception correctly.
-        t = Task.Factory.StartNew(Sub() DoSomeWork(1, token), token)
+        t = Task.Factory.StartNew(Sub() DoSomeWork(token), token)
         Console.WriteLine("Task {0} executing", t.Id)
         tasks.Add(t)
 
@@ -34,12 +34,12 @@ Module Example
                                       For i As Integer = 3 To 10
                                           ' For each child task, pass the same token
                                           ' to each user delegate and to StartNew.
-                                          tc = Task.Factory.StartNew(Sub(iteration) DoSomeWork(iteration, token), i, token)
+                                          tc = Task.Factory.StartNew(Sub(iteration) DoSomeWork(token), i, token)
                                           Console.WriteLine("Task {0} executing", tc.Id)
                                           tasks.Add(tc)
                                           ' Pass the same token again to do work on the parent task.
                                           ' All will be signaled by the call to tokenSource.Cancel below.
-                                          DoSomeWork(2, token)
+                                          DoSomeWork(token)
                                       Next
                                   End Sub,
                                   token)
@@ -85,11 +85,11 @@ Module Example
         Next
     End Sub
 
-    Sub DoSomeWork(ByVal taskNum As Integer, ByVal ct As CancellationToken)
+    Sub DoSomeWork(ByVal ct As CancellationToken)
         ' Was cancellation already requested?
         If ct.IsCancellationRequested = True Then
             Console.WriteLine("Task {0} was cancelled before it got started.",
-                              taskNum)
+                              Task.CurrentId)
             ct.ThrowIfCancellationRequested()
         End If
 
@@ -107,7 +107,7 @@ Module Example
                 sw.SpinOnce()
             Next
             If ct.IsCancellationRequested Then
-                Console.WriteLine("Task {0} cancelled", taskNum)
+                Console.WriteLine("Task {0} cancelled", Task.CurrentId)
                 ct.ThrowIfCancellationRequested()
             End If
         Next

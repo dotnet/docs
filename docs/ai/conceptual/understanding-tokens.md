@@ -67,7 +67,7 @@ There are benefits and disadvantages to each tokenization method:
   - Might cause an increased vocabulary size, requiring more memory resources
   - Can limit the models ability to handle unknown words, typos, or complex syntax
 
-## How are tokens used?
+## How tokens are used
 
 While training, after a text has been tokenized, each unique token is assigned an ID.
 

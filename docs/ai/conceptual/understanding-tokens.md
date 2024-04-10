@@ -112,7 +112,7 @@ Together a model's token limit and tokenization method determine the maximum len
 
 Generative AI services often use token-based pricing. The cost of each request depends on the number of input and output tokens. The pricing might differ between input and output. For example, see [Azure OpenAI Service pricing](https://azure.microsoft.com/pricing/details/cognitive-services/openai-service/).
 
-Generative AI services may also have limits on the maximum number of Tokens-Per-Minute (TPM). These rate limits can vary depending on the service region and LLM. For example, see [Azure OpenAI Service quotas and limits](https://learn.microsoft.com/en-us/azure/ai-services/openai/quotas-limits#regional-quota-limits).
+Generative AI services might also have limits on the maximum number of tokens per minute (TPM). These rate limits can vary depending on the service region and LLM. For example, see [Azure OpenAI Service quotas and limits](/azure/ai-services/openai/quotas-limits#regional-quota-limits).
 
 ## Related content
 

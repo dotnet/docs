@@ -13,6 +13,9 @@ helpviewer_keywords:
   - "security [.NET Framework], Internet"
   - "permissions [.NET Framework], Internet"
 ---
+> [!NOTE]
+> This page contains .NET Framework TLS information. If you're looking for .NET TLS information, see: [TLS/SSL Best Practices](https://learn.microsoft.com/dotnet/core/extensions/sslstream-best-practices)
+
 # Transport Layer Security (TLS) best practices with the .NET Framework
 
 .NET Framework supports the use of the Transport Layer Security (TLS) protocol to secure network communications.
@@ -22,7 +25,7 @@ helpviewer_keywords:
 > [!WARNING]
 > TLS 1.0 and 1.1 has been deprecated by [RFC8996](https://datatracker.ietf.org/doc/rfc8996/). This document will cover TLS 1.2 and TLS 1.3.
 
-The Transport Layer Security (TLS) protocol is an industry standard designed to help protect the privacy of information communicated over the Internet. [TLS 1.3](https://tools.ietf.org/html/rfc8446) is a standard that provides security improvements over previous versions. This article presents recommendations to secure .NET Framework applications that use the TLS protocol.
+The Transport Layer Security (TLS) protocol is an industry latest version of the standard designed to help protect the privacy of information communicated over the Internet. [TLS 1.3](https://tools.ietf.org/html/rfc8446) is a standard that provides security improvements over previous versions. This article presents recommendations to secure .NET Framework applications that use the TLS protocol.
 
 ## Who can benefit from this document?
 
@@ -38,21 +41,21 @@ Here is an updated example table showing the highest supported TLS version for d
 | .NET Framework Target Version | Windows 10 | Windows 11 |
 |-------------------------------|------------|------------|
 | 3.5                           | TLS 1.2    | TLS 1.2    |
-| 4.6.2                         | TLS 1.2    | TLS 1.3    |
-| 4.7                           | TLS 1.2    | TLS 1.3    |
-| 4.7.1                         | TLS 1.2    | TLS 1.3    |
-| 4.7.2                         | TLS 1.2    | TLS 1.3    |
-| 4.8                           | TLS 1.2    | TLS 1.3    |
-| 4.8.1                         | TLS 1.2    | TLS 1.3    |
+| 4.6.2                         | TLS 1.2    | **TLS 1.3**|
+| 4.7                           | TLS 1.2    | **TLS 1.3**|
+| 4.7.1                         | TLS 1.2    | **TLS 1.3**|
+| 4.7.2                         | TLS 1.2    | **TLS 1.3**|
+| 4.8                           | TLS 1.2    | **TLS 1.3**|
+| 4.8.1                         | TLS 1.2    | **TLS 1.3**|
 
-For more information see [TLS protocol version support in Schannel](https://learn.microsoft.com/en-us/windows/win32/secauthn/protocols-in-tls-ssl--schannel-ssp-#tls-protocol-version-support).
+For more information see [TLS protocol version support in Schannel](https://learn.microsoft.com/windows/win32/secauthn/protocols-in-tls-ssl--schannel-ssp-#tls-protocol-version-support).
 
 ## Recommendations
 
 - For TLS 1.3, target .NET Framework 4.6.2 or later.
-- Do not specify the TLS version. Configure your code to let the OS decide on the TLS version.
+- Do not specify the TLS version explicitly. Configure your code to let the OS decide on the TLS version.
 - Perform a thorough code audit to verify you're not specifying a TLS or SSL version explicitly.
-- Do not use `SslProtocols.Default`.
+- Do not use `SslProtocols.Default`. (`SslProtocols.Default` specifies SSL3 and TLS1.0 version which is obsoleted.)
 
 When your app lets the OS choose the TLS version:
 
@@ -63,7 +66,7 @@ The section [Audit your code and make code changes](#audit-your-code-and-make-co
 
 This article explains how to enable the strongest security available for the version of .NET Framework that your app targets and runs on. When an app explicitly sets a security protocol and version, it opts out of any other alternative, and opts out of .NET Framework and OS default behavior. If you want your app to be able to negotiate a TLS 1.3 connection, explicitly setting to a lower TLS version prevents a TLS 1.3 connection.
 
-If you can't avoid hardcoding a protocol version, we strongly recommend that you specify TLS 1.3. For guidance on identifying and removing TLS 1.0 dependencies, download the [Solving the TLS 1.0 Problem](https://www.microsoft.com/download/details.aspx?id=55266) white paper.
+If you can't avoid specifying a protocol version explicitly, we strongly recommend that you specify TLS1.2 or TLS 1.3 (which is `currently considered secure`). For guidance on identifying and removing TLS 1.0 dependencies, download the [Solving the TLS 1.0 Problem](https://www.microsoft.com/download/details.aspx?id=55266) white paper.
 
 WCF Supports TLS 1.2 as the default in .NET Framework 4.7. Starting with .NET Framework 4.7.1, WCF defaults to the operating system configured version. If an application is explicitly configured with `SslProtocols.None`, WCF uses the operating system default setting when using the NetTcp transport.
 
@@ -71,7 +74,7 @@ You can ask questions about this document in the GitHub issue [Transport Layer S
 
 ## Audit your code and make code changes
 
-For ASP.NET applications, inspect the `<system.web><httpRuntime targetFramework>` element of _web.config_ to verify you're using the intended version of the .NET Framework.
+For ASP.NET applications, inspect the `<system.web><httpRuntime targetFramework>` element of _web.config_ to verify you're using the targeting intended version of the .NET Framework.
 
 For Windows Forms and other applications, see [How to: Target a Version of the .NET Framework](/visualstudio/ide/visual-studio-multi-targeting-overview).
 
@@ -126,13 +129,11 @@ For more information, see [Support for TLS System Default Versions included in .
 
 The following sections show how to verify you're not using a specific TLS or SSL version.
 
-#### For HttpClient
+#### For HttpClient and HttpWebRequest
 
 <xref:System.Net.ServicePointManager>, using .NET Framework 4.7 and later versions, will use the default security protocol configured in the OS. To get the default OS choice, if possible, don't set a value for the <xref:System.Net.ServicePointManager.SecurityProtocol?displayProperty=nameWithType> property, which defaults to <xref:System.Net.SecurityProtocolType.SystemDefault?displayProperty=nameWithType>.
 
 Because the <xref:System.Net.SecurityProtocolType.SystemDefault?displayProperty=nameWithType> setting causes the <xref:System.Net.ServicePointManager> to use the default security protocol configured by the operating system, your application may run differently based on the OS it's run on. For example, Windows 10 uses TLS 1.2 while Windows 11 uses TLS 1.3.
-
-The remainder of this article is not relevant when targeting .NET Framework 4.7 or later versions for HTTP networking.
 
 #### For SslStream
 
@@ -141,8 +142,6 @@ The remainder of this article is not relevant when targeting .NET Framework 4.7 
 Don't set a value for the <xref:System.Net.ServicePointManager.SecurityProtocol> property (for HTTP networking).
 
 Don't use the method overloads of <xref:System.Net.Security.SslStream> that take an explicit <xref:System.Security.Authentication.SslProtocols> parameter (for TCP sockets networking). When you retarget your app to .NET Framework 4.7 or later versions, you'll be following the best practices recommendation.
-
-The remainder of this topic is not relevant when targeting .NET Framework 4.7 or later versions for TCP sockets networking.
 
 <a name="wcf-tcp-cert"></a>
 
@@ -184,7 +183,7 @@ The WCF framework automatically chooses the highest protocol available up to TLS
 
 #### Using .NET Framework 3.5 using TCP transport security with Certificate Credentials
 
-These versions of the WCF framework are hardcoded to use values SSL 3.0 and TLS 1.0. These values cannot be changed. You must update and retarget to NET Framework 4.6.2 or later versions to use TLS 1.2.
+These versions of the WCF framework are explicitly specified to use values SSL 3.0 and TLS 1.0. These values cannot be changed. You must update and retarget to NET Framework 4.6.2 or later versions to use TLS 1.2.
 
 ## Configure security via AppContext switches (for .NET Framework 4.6.2 or later versions)
 

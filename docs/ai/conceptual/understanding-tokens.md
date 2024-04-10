@@ -94,7 +94,7 @@ As training continues, any new tokens in the training text are added to the voca
 - meow (9)
 - run (10)
 
-Using these token ID sequences, the semantic relationships between the tokens can be analyzed. These relationships are represented as multi-valued numeric vectors, known as [_embeddings_](understanding-embeddings.md). Each token will be assigned an embedding based on how commonly they are used together or in similar contexts.
+The semantic relationships between the tokens can be analyzed using these token ID sequences. These relationships are represented as multi-valued numeric vectors, known as [_embeddings_](understanding-embeddings.md). Each token is assigned an embedding based on how commonly it's used together with or in similar contexts to the other tokens.
 
 During output generation, the model predicts a vector value for the next token in the sequence. This vector value is then used to select the next token from the model's vocabulary. In practice, multiple vectors are calculated using various elements of the preceding tokens' embeddings. The model then evaluates all potential tokens from these vectors and selects the most probable one to continue the sequence.
 

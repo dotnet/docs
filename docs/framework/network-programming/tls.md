@@ -52,7 +52,7 @@ For more information see [TLS protocol version support in Schannel](https://lear
 
 ## Recommendations
 
-- For TLS 1.3, target .NET Framework 4.6.2 or later.
+- For TLS 1.3, target .NET Framework 4.8 or later.
 - Do not specify the TLS version explicitly. Configure your code to let the OS decide on the TLS version.
 - Perform a thorough code audit to verify you're not specifying a TLS or SSL version explicitly.
 - Do not use `SslProtocols.Default`. (`SslProtocols.Default` specifies SSL3 and TLS1.0 version which is obsoleted.)

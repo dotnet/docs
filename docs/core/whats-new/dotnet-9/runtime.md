@@ -7,19 +7,9 @@ ms.topic: overview
 ---
 # What's new in the .NET 9 runtime
 
-This article describes new features in the .NET runtime for .NET 9. It's been updated for .NET 9 Preview 3.
+This article describes the performance enhancements in the .NET runtime for .NET 9. It's been updated for .NET 9 Preview 3.
 
-## Performance
-
-.NET 9 includes enhancements to the 64-bit JIT compiler that are aimed at improving app performance. These compiler enhancements include:
-
-- [Better code generation for loops](#loop-optimizations).
-- [More method inlining for Native AOT](#inlining-improvements-for-native-aot).
-- [Faster type checks](#pgo-improvements-type-checks-and-casts).
-
-[Arm64 vectorization](#arm64-vectorization-in-net-libraries) is another new feature of the runtime.
-
-### Loop optimizations
+## Loop optimizations
 
 Improving code generation for loops is a priority for .NET 9, and the 64-bit compiler features a new optimization called *induction variable (IV) widening*.
 
@@ -42,7 +32,7 @@ static int Sum(int[] arr)
 
 The index variable, `i`, is 4 bytes in size. At the assembly level, 64-bit registers are typically used to hold array indices on x64, and in previous .NET versions, the compiler generated code that zero-extended `i` to 8 bytes for the array access, but continued to treat `i` as a 4-byte integer elsewhere. However, extending `i` to 8 bytes requires an additional instruction on x64. With IV widening, the 64-bit JIT compiler now widens `i` to 8 bytes throughout the loop, omitting the zero extension. Looping over arrays is very common, and the benefits of this instruction removal quickly add up.
 
-### Inlining improvements for Native AOT
+## Inlining improvements for Native AOT
 
 One of .NET's goals for the 64-bit JIT compiler's inliner is to remove as many restrictions that block a method from being inlined as possible. .NET 9 enables inlining of:
 
@@ -79,17 +69,17 @@ One of .NET's goals for the 64-bit JIT compiler's inliner is to remove as many r
 
   Improvements to the 64-bit JIT compiler's inliner can have compound effects on other inlining decisions, resulting in significant performance wins. For example, the decision to inline `Callee` might enable the call to `Test<string>` to be inlined as well, and so on. Out of [hundreds](https://github.com/dotnet/runtime/pull/99265#issuecomment-2007077353) of benchmark improvements, [at least 80](https://gist.github.com/EgorBo/b6424f7118ff176682f63875d89fb52e) improved by 10% or more.
 
-### PGO improvements: Type checks and casts
+## PGO improvements: Type checks and casts
 
 .NET 8 enabled [dynamic profile-guided optimization (PGO)](../../runtime-config/compilation.md#profile-guided-optimization) by default. NET 9 expands the 64-bit JIT compiler's PGO implementation to profile more code patterns. When tiered compilation is enabled, the 64-bit JIT compiler already inserts instrumentation into your program to profile its behavior. When it recompiles with optimizations, the compiler leverages the profile it built at run time to make decisions specific to the current run of your program. In .NET 9, the 64-bit JIT compiler uses PGO data to improve the performance of *type checks*.
 
 Determining the type of an object requires a call into the runtime, which comes with a performance penalty. When the type of an object needs to be checked, the 64-bit JIT compiler emits this call for the sake of correctness (compilers usually cannot rule out any possibilities, even if they seem improbable). However, if PGO data suggests an object is likely to be a specific type, the 64-bit JIT compiler now emits a *fast path* that cheaply checks for that type, and falls back on the slow path of calling into the runtime only if necessary.
 
-### Arm64 vectorization in .NET libraries
+## Arm64 vectorization in .NET libraries
 
 A new `EncodeToUtf8` implementation takes advantage of the 64-bit JIT compiler's ability to emit multi-register load/store instructions on Arm64. This behavior allows programs to process larger chunks of data with fewer instructions. .NET apps across various domains should see throughput improvements on Arm64 hardware that supports these features. Some [benchmarks](https://github.com/dotnet/perf-autofiling-issues/issues/27114) cut their execution time by more than half.
 
-### Faster exceptions
+## Faster exceptions
 
 The CoreCLR runtime has adopted a new exception handling approach that improves the performance of exception handling. The new implementation is based on the NativeAOT runtime's exception-handling model. The change removes support for Windows structured exception handling (SEH) and its emulation on Unix. The new approach is supported in all environment except for Windows x86 (32-bit).
 

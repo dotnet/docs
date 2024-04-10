@@ -140,6 +140,15 @@ By deeply integrating with Visual Studio Code, Semantic Kernel also makes it eas
 - Write tests for your prompts using your existing testing frameworks.
 - Deploy your prompts to production using your existing CI/CD pipelines.
 
+SK Completions use GPT-3 and GPT-3.5 models, which have no specific format rules for prompts. The preceding sections all contain examples of SK Completions.
+
+SK Chat Completions use GPT-35-Turbo and GPT-4 models, which use a specific chat-like format consisting of role-based messages as shown in the following example.
+
+```csharp
+prompt = @$"<message role=""system"">You are helping students with US History homework. Answers should not be about other countries except in relation to the US. Provide some supporting information for answers. Format any summaries using lists.</message><message role=""user"">Which president had the shortest term?<message/><message role=""assistant"">William Henry Harrison died just 31 days after his inauguration as president in 1841, making his presidency the shortest in U.S. history.<message/><message role=""user"">Instructions: Summarize US Presidential accomplishments, grouped by category.
+Categories: Domestic Policy, US Economy, Foreign Affairs, Space Exploration, Other.</message>
+```
+
 ### Azure OpenAI
 
 Azure OpenAI is a managed service that allows developers to deploy, tune, and generate content from OpenAI models on Azure resources. Azure OpenAI's client library for .NET is an adaptation of OpenAI's REST APIs that provides an idiomatic interface and rich integration with the rest of the Azure SDK ecosystem. It can connect to Azure OpenAI resources or to the non-Azure OpenAI inference endpoint, making it suitable for non-Azure OpenAI development.
@@ -149,7 +158,7 @@ Use the client library for Azure OpenAI to:
 - Engineer generated text completions via the [Completion API](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/advanced-prompt-engineering?pivots=programming-language-completions).
 - Engineer chat-based completions via the [Chat Completion API](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/advanced-prompt-engineering?pivots=programming-language-chat-completions).
 
-Completions use GPT-3 and GPT-3.5 models, which have no specific format rules for prompts.
+Azure OpenAI Completions use GPT-3 and GPT-3.5 models, which have no specific format rules for prompts.
 
 ```csharp
 Prompts = 
@@ -159,7 +168,7 @@ Prompts =
     }
 ```
 
-Chat Completions use GPT-35-Turbo and GPT-4 models, which use a specific chat-like format consisting of role-based messages.
+Azure OpenAI Chat Completions use GPT-35-Turbo and GPT-4 models, which use a specific chat-like format consisting of role-based messages.
 
 ```csharp
 Messages =

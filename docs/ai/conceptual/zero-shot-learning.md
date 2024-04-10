@@ -19,7 +19,32 @@ GPT model performance benefits from [prompt engineering](prompt-engineering-in-d
 
 With zero-shot learning, you include prompts but not verbatim completions (you can include completions that only consist of cues). This means zero-shot learning relies entirely on the model's existing knowledge to generate responses, making it the most cost-effective option for prompt engineering. However, it doesn't add to the model's knowledge.
 
-With few-shot learning, you include prompts paired with verbatim completions. This makes few-shot learning more resource-intensive because it adds to the model's knowledge.
+For example, the following zero-shot prompt tells the model to evaluate user input to determine which of four possible intents it represents, and then to preface its response with **"Intent: "**.
+
+```csharp
+prompt = @$"Instructions: What is the intent of this request?
+If you don't know the intent, don't guess; instead respond with ""Unknown"".
+Choices: SendEmail, SendMessage, CompleteTask, CreateDocument, Unknown.
+User Input: {request}
+Intent: ";
+```
+
+With few-shot learning, you include prompts paired with verbatim completions. This makes few-shot learning more resource-intensive because it adds to the model's knowledge, but it also improves responses by providing examples. 
+
+```csharp
+prompt = @$"Instructions: What is the intent of this request?
+If you don't know the intent, don't guess; instead respond with ""Unknown"".
+Choices: SendEmail, SendMessage, CompleteTask, CreateDocument, Unknown.
+
+User Input: Can you send a very quick approval to the marketing team?
+Intent: SendMessage
+
+User Input: Can you send the full update to the marketing team?
+Intent: SendEmail
+
+User Input: {request}
+Intent: ";
+```
 
 ## Zero-shot learning use cases
 

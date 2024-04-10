@@ -29,10 +29,24 @@ prompt= @$"Instructions: Compare the pros and cons of EVs and petroleum-fueled v
 
 ## Use chain of thought prompting in examples
 
-To use an example for chain of thought prompting, include at least one prompt paired with a verbatim completion that includes the step results.
+You can use examples to indicate the steps for chain of thought prompting, which the model will interpret to mean it should also output step results. Steps can include formatting cues.
+
+```csharp
+prompt= @$"Instructions: Compare the pros and cons of EVs and petroleum-fueled vehicles.
+
+        Differences between EVs and petroleum-fueled vehicles:
+        - 
+
+        Differences ordered according to overall impact, highest-impact first: 
+        1. 
+        
+        Summary of vehicle type differences as pros and cons:
+        Pros of EVs
+        1.
+        Pros of petroleum-fueled vehicles
+        1. ";
+```
 
 ## Related content
 
 - [Prompt engineering techniques](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/advanced-prompt-engineering)
-- [Related article title](link.md)
-- [Related article title](link.md)

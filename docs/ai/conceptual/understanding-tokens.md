@@ -55,7 +55,7 @@ There are benefits and disadvantages to each tokenization method:
   - Allows the model to handle a wider range of inputs, such as unknown words, typos, or complex syntax
   - Might allow the vocabulary size to be reduced, requiring less memory resources
 - _Cons_:
-  - A given text will be broken into more tokens requiring additional computational resources while processing
+  - A given text is broken into more tokens, requiring additional computational resources while processing
   - Given a fixed token limit the maximum length of the model's input and output will be smaller
 
 **Larger tokens (word tokenization)**

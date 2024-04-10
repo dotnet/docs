@@ -75,7 +75,7 @@ Consider the following sentence:
 
 > I heard a dog bark loudly at a cat
 
-After tokenization the following IDs could be assigned:
+After tokenization, the following IDs could be assigned:
 
 - I (1)
 - heard (2)

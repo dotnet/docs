@@ -18,7 +18,7 @@ This article demonstrates how to swap between the OpenAI and [Azure OpenAI](/azu
 * An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 * [.NET SDK](https://dotnet.microsoft.com/download/visual-studio-sdks)
 * [`Microsoft.SemanticKernel` NuGet package](https://www.nuget.org/packages/Microsoft.SemanticKernel)
-* [Create and deploy an Azure OpenAI Service resource](https://learn.microsoft.com/azure/ai-services/openai/how-to/create-resource)
+* [Create and deploy an Azure OpenAI Service resource](/azure/ai-services/openai/how-to/create-resource)
 
 ## Switch from the AOAI client library to Semantic Kernel SDK
 

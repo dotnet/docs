@@ -98,7 +98,7 @@ dotnet run --project Contoso.MyTests -- --filter "FullyQualifiedName~UnitTest1|T
 
 using `dotnet exec`
 
-```bash
+```dotnetcli
 dotnet exec Contoso.MyTests.dll --filter "FullyQualifiedName~UnitTest1|TestCategory=CategoryA"
 ```
 

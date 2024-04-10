@@ -110,6 +110,6 @@ dotnet Contoso.MyTests.dll --filter "FullyQualifiedName~UnitTest1|TestCategory=C
 
 using the executable
 
-```bash
+```dotnetcli
 Contoso.MyTests.exe --filter "FullyQualifiedName~UnitTest1|TestCategory=CategoryA"
 ```

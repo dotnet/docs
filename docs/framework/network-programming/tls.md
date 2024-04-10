@@ -13,10 +13,10 @@ helpviewer_keywords:
   - "security [.NET Framework], Internet"
   - "permissions [.NET Framework], Internet"
 ---
+# Transport Layer Security (TLS) best practices with the .NET Framework
+
 > [!NOTE]
 > This page contains .NET Framework TLS information. If you're looking for .NET TLS information, see: [TLS/SSL Best Practices](https://learn.microsoft.com/dotnet/core/extensions/sslstream-best-practices)
-
-# Transport Layer Security (TLS) best practices with the .NET Framework
 
 .NET Framework supports the use of the Transport Layer Security (TLS) protocol to secure network communications.
 

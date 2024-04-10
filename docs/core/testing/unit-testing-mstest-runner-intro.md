@@ -92,7 +92,7 @@ Seamesly you can provite the tests [filter](./selective-unit-tests#mstest-exampl
 
 using `dotnet run`
 
-```bash
+```dotnetcli
 dotnet run --project Contoso.MyTests -- --filter "FullyQualifiedName~UnitTest1|TestCategory=CategoryA"
 ```
 

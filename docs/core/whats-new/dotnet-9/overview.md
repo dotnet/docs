@@ -25,7 +25,7 @@ The .NET 9 libraries include improvements to serialization, cryptography, LINQ, 
 
 ## .NET SDK
 
-The .NET 9 SDK includes improvements to the terminal logger, tool roll-forward, and unit testing. For more information, see [What's new in the SDK and tooling for .NET 9](sdk.md).
+The .NET 9 SDK includes improvements to the terminal logger, tool roll-forward, and unit testing. For more information, see [What's new in the SDK for .NET 9](sdk.md).
 
 ## .NET Aspire
 

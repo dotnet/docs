@@ -72,6 +72,12 @@ using `dotnet exec`
 dotnet exec Contoso.MyTests.dll --settings config.runsettings
 ```
 
+or
+
+```bash
+dotnet Contoso.MyTests.dll --settings config.runsettings
+```
+
 using the executable
 
 ```bash
@@ -81,6 +87,7 @@ Contoso.MyTests.exe --settings config.runsettings
 Seamesly you can provite the tests [filters](https://learn.microsoft.com/en-us/dotnet/core/testing/selective-unit-tests?pivots=mstest#mstest-examples) using the command line option `--filter`, for instance:
 
 using `dotnet run`
+
 ```bash
 dotnet run --project Contoso.MyTests -- --filter "FullyQualifiedName~UnitTest1|TestCategory=CategoryA"
 ```
@@ -89,6 +96,12 @@ using `dotnet exec`
 
 ```bash
 dotnet exec Contoso.MyTests.dll --filter "FullyQualifiedName~UnitTest1|TestCategory=CategoryA"
+```
+
+or
+
+```bash
+dotnet Contoso.MyTests.dll --filter "FullyQualifiedName~UnitTest1|TestCategory=CategoryA"
 ```
 
 using the executable

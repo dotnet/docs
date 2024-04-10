@@ -91,8 +91,8 @@ Here's an example demonstrating how to configure endpoints for the service named
 ```json
 {
   "Services": {
-    "https": {
-      "catalog": [
+    "catalog": {
+      "https": [
         "localhost:8080",
         "10.46.24.90:80"
       ]

@@ -106,7 +106,7 @@ LLMs have limits on the maximum number of tokens that can be used as input conte
 
 For example, GPT-4 supports up to 128,000 tokens of input context but only 4,096 tokens of output.
 
-Together a model's token limit and tokenization method will determine the maximum length of text that can be provided as input or generated as output.
+Together a model's token limit and tokenization method determine the maximum length of text that can be provided as input or generated as output.
 
 ### Token based pricing and rate limiting
 

@@ -104,7 +104,7 @@ dotnet exec Contoso.MyTests.dll --filter "FullyQualifiedName~UnitTest1|TestCateg
 
 or
 
-```bash
+```dotnetcli
 dotnet Contoso.MyTests.dll --filter "FullyQualifiedName~UnitTest1|TestCategory=CategoryA"
 ```
 

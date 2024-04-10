@@ -15,7 +15,7 @@ Tokens are the words or character sets that large language models (LLMs) decompo
 
 ## What are tokens?
 
-The first step when training an LLM or inputting a prompt is tokenization. The text is broken down into a set of strings, known as _tokens_. These tokens can be distinct words, character sets, or combinations of words and punctuation. The set of unique tokens a model has been trained on is refereed to as its _vocabulary_.
+The first step when training an LLM or inputting a prompt is tokenization. The text is broken down into a set of strings, known as _tokens_. These tokens can be distinct words, character sets, or combinations of words and punctuation. The set of unique tokens a model has been trained on is referred to as its _vocabulary_.
 
 For example, consider the following sentence:
 

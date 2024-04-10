@@ -96,7 +96,7 @@ As training continues, any new tokens in the training text will be added to the 
 
 Using these token ID sequences, the semantic relationships between the tokens can be analyzed. These relationships are represented as multi-valued numeric vectors, known as [_embeddings_](understanding-embeddings.md). Each token will be assigned an embedding based on how commonly they are used together or in similar contexts.
 
-During output generation, the model predicts a vector value for the next token in the sequence. This vector value is then used to select the next token from the model's vocabulary. In practice, multiple vectors will be calculated using various elemets of the preceding tokens' embeddings. The model will then evaluate all potential tokens from these vectors and select the most probable one to continue the sequence.
+During output generation, the model predicts a vector value for the next token in the sequence. This vector value is then used to select the next token from the model's vocabulary. In practice, multiple vectors are calculated using various elements of the preceding tokens' embeddings. The model then evaluates all potential tokens from these vectors and selects the most probable one to continue the sequence.
 
 Output generation is an iterative operation. The predicted token is appended to the sequence so far and used as the input for the next iteration, building the final output one token at a time.
 

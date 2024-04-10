@@ -64,7 +64,7 @@ The MSTest runner supports the [runsettings](unit-testing-platform-runsettings.m
 
 using `dotnet run`
 
-```bash
+```dotnetcli
 dotnet run --project Contoso.MyTests -- --settings config.runsettings
 ```
 

@@ -49,7 +49,7 @@ The earlier GPT models that generate text or code follow any instructions that y
 
 Primary content is text you add to an instruction for the model to process as if it were user input. For example, if you add the instruction **"Summarize US Presidential accomplishments."**, you could add a list of accomplishments as primary content.
 
-Make sure you clearly separate primary content from the instructions that apply to it, such as by labeling it.
+Make sure you clearly separate primary content from the instructions that apply to it, such as by labeling it. Consider the following C# example.
 
 ```csharp
 prompt= @$"Instructions: Summarize US Presidential accomplishments.
@@ -65,7 +65,7 @@ John Adams ...'" //Text truncated;
 
 ### Supporting content
 
-Supporting content is text that an instruction uses as input but isn't the subject of the instruction. The instruction must refer to the supporting content.
+Supporting content is text that an instruction uses as input but isn't the subject of the instruction. The instruction must refer to the supporting content. As with primary content, supporting content should be clearly distinct from the instruction it supports.
 
 Suppose you use the instruction **"Summarize US Presidential accomplishments"** to produce a list. The model might organized and order it in any number of ways. But what if you want the list to group the accomplishments by a specific set of categories? You could adjust your instruction by appending **"&nbsp;grouped by category"** to it, but a model is unlikely to correctly determine which specific categories you want.
 
@@ -84,7 +84,18 @@ First president to be declared an honorary citizen of a foreign country, and an 
 John Adams ..."; //Text truncated
 ```
 
-As with primary content, supporting content should be clearly distinct from the instruction it supports.
+## Examples
+
+This section explains the use of examples in .NET prompt engineering.
+
+An example is text that shows the model how to respond by providing sample user input and model output. The model uses examples to infer what to include in completions. Examples can come either before or after the instructions in an engineered prompt, but the two shouldn't be interspersed.
+
+Like a normal GPT interaction, an example starts with a prompt. The example can include a completion but it's not required. A completion in an example doesn't have to include the verbatim response&mdash;it might just contain a formatted word, the first bullet in an unordered list, or something similar to indicate how each completion should start.  
+
+Examples are classified as zero-shot learning or few-shot learning based on whether they contain verbatim completions.
+
+- **Zero-shot learning** examples include a prompt with no verbatim completion. Because they don't include verbatim completions, zero-shot prompts test a model's responses without giving it example data output. (Zero-shot prompts can have  completions that include cues, such as indicating the model should output an ordered list by including **"1."** as the completion.)
+- **Few-shot learning** examples include several pairs of prompts with verbatim completions. Few-shot learning can change the model's behavior by adding to its existing knowledge.
 
 ## Cues
 
@@ -112,19 +123,6 @@ DOMESTIC POLICY
 - **DOMESTIC POLICY** shows the model that you want it to start each group with the category in all caps.
 - **- George Washington:** shows the model to start each section with George Washington's accomplishments listed on one line.
 - **- John Adams:** shows the model that it should list remaining presidents in chronological order.
-
-## Examples
-
-This section explains the use of examples in .NET prompt engineering.
-
-An example is text that shows the model how to respond by providing sample user input and model output. The model uses examples to infer what to include in completions. Examples can come either before or after the instructions in an engineered prompt, but the two shouldn't be interspersed.
-
-Like a normal GPT interaction, an example starts with a prompt. The example can include a completion but it's not required. A completion in an example doesn't have to include the verbatim response&mdash;it might just contain a formatted word, the first bullet in an unordered list, or something similar to indicate how each completion should start.  
-
-Examples are classified as zero-shot learning or few-shot learning based on whether they contain verbatim completions.
-
-- **Zero-shot learning** examples include a prompt with no verbatim completion. Because they don't include verbatim completions, zero-shot prompts test a model's responses without giving it example data output. (Zero-shot prompts can have  completions that include cues, such as indicating the model should output an ordered list by including **"1."** as the completion.)
-- **Few-shot learning** examples include several pairs of prompts with verbatim completions. Few-shot learning can change the model's behavior by adding to its existing knowledge.
 
 ## .NET implementations
 

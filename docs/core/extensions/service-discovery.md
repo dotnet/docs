@@ -40,14 +40,14 @@ In the _Program.cs_ file of your project, call the <xref:Microsoft.Extensions.De
 builder.Services.AddServiceDiscovery();
 ```
 
-Add service discovery to an individual <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> by calling the `UseServiceDiscovery` extension method:
+Add service discovery to an individual <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> by calling the `AddServiceDiscovery` extension method:
 
 ```csharp
 builder.Services.AddHttpClient<CatalogServiceClient>(static client =>
     {
-        client.BaseAddress = new("http://catalog");
+        client.BaseAddress = new("https://catalog");
     })
-    .UseServiceDiscovery();
+    .AddServiceDiscovery();
 ```
 
 Alternatively, you can add service discovery to all <xref:System.Net.Http.HttpClient> instances by default:
@@ -60,6 +60,27 @@ builder.Services.ConfigureHttpClientDefaults(static http =>
 });
 ```
 
+## Scheme selection when resolving HTTP(S) endpoints
+
+It is common to use HTTP while developing and testing a service locally and HTTPS when the service is deployed. Service Discovery supports this by allowing for a priority list of URI schemes to be specified in the input string given to Service Discovery. Service Discovery will attempt to resolve the services for the schemes in order and will stop after an endpoint is found. URI schemes are separated by a `+` character, for example: `"https+http://basket"`. Service Discovery will first try to find HTTPS endpoints for the `"basket"` service and will then fall back to HTTP endpoints. If any HTTPS endpoint is found, Service Discovery will not include HTTP endpoints.
+
+Schemes can be filtered by configuring the `AllowedSchemes` and `AllowAllSchemes` properties on `ServiceDiscoveryOptions`. The `AllowAllSchemes` property is used to indicate that all schemes are allowed. By default, `AllowAllSchemes` is `true` and all schemes are allowed. Schemes can be restricted by setting `AllowAllSchemes` to `false` and adding allowed schemes to the `AllowedSchemes` property. For example, to allow only HTTPS:
+
+```csharp
+services.Configure<ServiceDiscoveryOptions>(options =>
+{
+    options.AllowAllSchemes = false;
+    options.AllowedSchemes = ["https"];
+});
+```
+
+To explicitly allow all schemes, set the `ServiceDiscoveryOptions.AllowAllSchemes` property to `true`:
+
+```csharp
+services.Configure<ServiceDiscoveryOptions>(
+    options => options.AllowAllSchemes = true);
+```
+
 ## Resolve service endpoints from configuration
 
 The `AddServiceDiscovery` extension method adds a configuration-based endpoint resolver by default.
@@ -70,15 +91,17 @@ Here's an example demonstrating how to configure endpoints for the service named
 ```json
 {
   "Services": {
+    "https": {
       "catalog": [
         "localhost:8080",
-        "10.46.24.90:80",
+        "10.46.24.90:80"
       ]
     }
+  }
 }
 ```
 
-The preceding example adds two endpoints for the service named _catalog_: `localhost:8080`, and `"10.46.24.90:80"`. Each time the _catalog_ is resolved, one of these endpoints is selected.
+The preceding example adds two endpoints for the service named _catalog_: `https://localhost:8080`, and `"https://10.46.24.90:80"`. Each time the _catalog_ is resolved, one of these endpoints is selected.
 
 If service discovery was added to the host using the <xref:Microsoft.Extensions.DependencyInjection.ServiceDiscoveryServiceCollectionExtensions.AddServiceDiscoveryCore%2A> extension method on <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>, the configuration-based endpoint resolver can be added by calling the <xref:Microsoft.Extensions.DependencyInjection.ServiceDiscoveryServiceCollectionExtensions.AddConfigurationServiceEndPointResolver%2A> extension method on `IServiceCollection`.
 

@@ -73,7 +73,7 @@ Some generative AI applications can produce code from natural language inputs. D
 - That accepts a specific input and output structure
 - That uses specific technologies based on their reference documentation
 
-Code generation can be used to provide quick implementations of common operations, such as sorting or filtering data, speed up translating code from one language to another, or answer questions about a technology based on specifed reference documentation. For example, a user may input the request, "Show me how to code a game of tic-tac-toe with Python". A generative AI application might produce the following output:
+Code generation can be used to provide quick implementations of common operations, such as sorting or filtering data, speed up translating code from one language to another, or answer questions about a technology based on specifed reference documentation. For example, a user may input the request, "Show me how to code a game of tic-tac-toe with C#". A generative AI application might produce the following output:
 
 _Here's a simple example of how you can code a game of tic-tac-toe in C#:_
 

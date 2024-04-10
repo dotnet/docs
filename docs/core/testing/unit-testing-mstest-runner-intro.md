@@ -84,7 +84,7 @@ using the executable
 Contoso.MyTests.exe --settings config.runsettings
 ```
 
-Seamesly you can provite the tests [filters](https://learn.microsoft.com/en-us/dotnet/core/testing/selective-unit-tests?pivots=mstest#mstest-examples) using the command line option `--filter`, for instance:
+Seamesly you can provite the tests [filters](https://learn.microsoft.com/dotnet/core/testing/selective-unit-tests?pivots=mstest#mstest-examples) using the command line option `--filter`, for instance:
 
 using `dotnet run`
 

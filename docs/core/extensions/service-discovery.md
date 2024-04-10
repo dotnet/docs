@@ -56,7 +56,7 @@ Alternatively, you can add service discovery to all <xref:System.Net.Http.HttpCl
 builder.Services.ConfigureHttpClientDefaults(static http =>
 {
     // Turn on service discovery by default
-    http.UseServiceDiscovery();
+    http.AddServiceDiscovery();
 });
 ```
 

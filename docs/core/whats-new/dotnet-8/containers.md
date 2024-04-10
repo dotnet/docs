@@ -5,8 +5,6 @@ titleSuffix: ""
 ms.date: 11/14/2023
 ms.topic: overview
 ms.custom: linux-related-content
-ms.author: gewarren
-author: gewarren
 ---
 # What's new in containers for .NET 8
 

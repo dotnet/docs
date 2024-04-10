@@ -18,7 +18,7 @@ The [dotnet test](../tools/dotnet-test.md) command is a way to run tests from so
 
 ### `dotnet test` integration - VSTest mode
 
-`Microsoft.Testing.Platform` provides a compatibility layer to work with `dotnet test` seamlessly.
+`Microsoft.Testing.Platform` provides a [compatibility layer (VSTest Bridge)](./unit-testing-platform-extensions-vstest-bridge.md) to work with `dotnet test` seamlessly.
 
 Tests can be run by running:
 

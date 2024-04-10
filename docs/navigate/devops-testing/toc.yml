@@ -140,7 +140,21 @@ items:
           - name: Comparison with VSTest
             href: ../../core/testing/unit-testing-platform-vs-vstest.md
           - name: Extensions
-            href: ../../core/testing/unit-testing-platform-extensions.md
+            items:
+              - name: Overview
+                href: ../../core/testing/unit-testing-platform-extensions.md
+              - name: Code Coverage
+                href: ../../core/testing/unit-testing-platform-extensions-code-coverage.md
+              - name: Diagnostics
+                href: ../../core/testing/unit-testing-platform-extensions-diagnostics.md
+              - name: Hosting
+                href: ../../core/testing/unit-testing-platform-extensions-hosting.md
+              - name: Policy
+                href: ../../core/testing/unit-testing-platform-extensions-policy.md
+              - name: Test Reports
+                href: ../../core/testing/unit-testing-platform-extensions-test-reports.md
+              - name: VSTest Bridge
+                href: ../../core/testing/unit-testing-platform-extensions-vstest-bridge.md
           - name: Optional telemetry
             href: ../../core/testing/unit-testing-platform-telemetry.md
           - name: Known exit codes

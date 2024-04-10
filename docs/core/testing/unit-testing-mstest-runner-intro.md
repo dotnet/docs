@@ -82,7 +82,7 @@ dotnet Contoso.MyTests.dll --settings config.runsettings
 
 using the executable
 
-```bash
+```dotnetcli
 Contoso.MyTests.exe --settings config.runsettings
 ```
 

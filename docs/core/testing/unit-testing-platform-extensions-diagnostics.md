@@ -38,8 +38,8 @@ You can also enable the diagnostics logs using the environment variables:
 
 This extension allows you to create a crash dump file if the process crashes. This extension is shipped as part of [Microsoft.Testing.Extensions.CrashDump](https://nuget.org/packages/Microsoft.Testing.Extensions.CrashDump) NuGet package.
 
-> [!NOTE]
-> The package is shipped with Microsoft .NET LIBRARY closed-source free to use licensing model.
+> [!IMPORTANT]
+> The package is shipped with Microsoft .NET library closed-source free to use licensing model.
 
 To configure the crash dump file generation, use the following options:
 
@@ -56,8 +56,8 @@ To configure the crash dump file generation, use the following options:
 
 This extension allows you to create a dump file after a given timeout. This extension is shipped as part of [Microsoft.Testing.Extensions.HangDump](https://nuget.org/packages/Microsoft.Testing.Extensions.HangDump) package.
 
-> [!NOTE]
-> The package is shipped with Microsoft .NET LIBRARY closed-source free to use licensing model.
+> [!IMPORTANT]
+> The package is shipped with Microsoft .NET library closed-source free to use licensing model.
 
 To configure the hang dump file generation, use the following options:
 

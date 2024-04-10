@@ -10,8 +10,8 @@ ms.date: 04/10/2024
 
 This extension provides a compatibility layer with VSTest allowing the test frameworks depending on it to continue supporting running in VSTest mode (`vstest.console.exe`, usual `dotnet test`, `VSTest task` on AzDo, Test Explorers of Visual Studio and Visual Studio Code...). This extension is shipped as part of [Microsoft.Testing.Extensions.VSTestBridge](https://www.nuget.org/packages/Microsoft.Testing.Extensions.VSTestBridge) package.
 
-> [!NOTE]
-> The package is shipped with Microsoft .NET LIBRARY closed-source free to use licensing model.
+> [!IMPORTANT]
+> The package is shipped with Microsoft .NET library closed-source free to use licensing model.
 
 ## Compatibility with VSTest
 

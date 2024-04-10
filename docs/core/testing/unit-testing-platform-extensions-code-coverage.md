@@ -24,8 +24,8 @@ Microsoft Code Coverage analysis is possible for both managed (CLR) and unmanage
 > Unmanaged (native) code coverage is disabled in the extension by default. Use flags `EnableStaticNativeInstrumentation` and `EnableDynamicNativeInstrumentation` to enable it if needed.
 > For more information about unmanaged code coverage, see [Static and dynamic native instrumentation](/visualstudio/test/customizing-code-coverage-analysis?#static-and-dynamic-native-instrumentation).
 
-> [!NOTE]
-> The package is shipped with Microsoft .NET LIBRARY closed-source free to use licensing model.
+> [!IMPORTANT]
+> The package is shipped with Microsoft .NET library closed-source free to use licensing model.
 
 For more information about Microsoft code coverage, see its [GitHub page](https://github.com/microsoft/codecoverage).
 

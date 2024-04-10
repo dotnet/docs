@@ -16,8 +16,8 @@ A test report is a file that contains information about the execution and outcom
 
 The Visual Studio test result file (or TRX) is the default format for publishing test results. This extension is shipped as part of [Microsoft.Testing.Extensions.TrxReport](https://nuget.org/packages/Microsoft.Testing.Extensions.TrxReport) package.
 
-> [!NOTE]
-> The package is shipped with Microsoft .NET LIBRARY closed-source free to use licensing model.
+> [!IMPORTANT]
+> The package is shipped with Microsoft .NET library closed-source free to use licensing model.
 
 The available options as follows:
 

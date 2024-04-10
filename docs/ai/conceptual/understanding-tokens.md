@@ -102,7 +102,7 @@ Output generation is an iterative operation. The predicted token is appended to 
 
 ### Token limits
 
-LLM's will have limits on the maximum number of tokens that can be used as input context or generated as output. However, the limits for input context and output generation may differ.
+LLMs have limits on the maximum number of tokens that can be used as input context or generated as output. However, the limits for input context and output generation can differ.
 
 For example, GPT-4 supports up to 128,000 tokens of input context but only 4,096 tokens of output.
 

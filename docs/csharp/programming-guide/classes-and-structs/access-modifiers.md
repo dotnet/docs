@@ -1,7 +1,7 @@
 ---
 title: "Access Modifiers - C# Programming Guide"
 description: All types and type members in C# have an accessibility level that controls whether they can be used from other code. Review this list of access modifiers.
-ms.date: 03/08/2024
+ms.date: 04/11/2024
 helpviewer_keywords:
   - "C# Language, access modifiers"
   - "access modifiers [C#], about"
@@ -16,18 +16,20 @@ All types and type members have an accessibility level. The accessibility level 
 - [internal](../../language-reference/keywords/internal.md): Only code in the same assembly can access this type or member.
 - [protected internal](../../language-reference/keywords/protected-internal.md): Only code in the same assembly *or* in a derived class in another assembly can access this type or member.
 - [private protected](../../language-reference/keywords/private-protected.md): Only code in the same assembly *and* in the same class or a derived class can access the type or member.
+- [file](../../language-reference/keywords/file.md): Only code in the same file can access the type or member.
 
 The [`record`](../../language-reference/builtin-types/record.md) modifier on a type causes the compiler to synthesize extra members. The `record` modifier doesn't affect the default accessibility for either a `record class` or a `record struct`.
 
 ## Summary table
 
-| Caller's location                      | `public` | `protected internal` | `protected` | `internal` | `private protected` | `private` |
-| -------------------------------------- | :------: | :------------------: | :---------: | :--------: | :-----------------: | :-------: |
-| Within the class                       |    ✔️️     |          ✔️           |      ✔️      |     ✔️      |          ✔️          |     ✔️     |
-| Derived class (same assembly)          |    ✔️     |          ✔️           |      ✔️      |     ✔️      |          ✔️          |     ❌     |
-| Non-derived class (same assembly)      |    ✔️     |          ✔️           |      ❌      |     ✔️      |          ❌          |     ❌     |
-| Derived class (different assembly)     |    ✔️     |          ✔️           |      ✔️      |     ❌      |          ❌          |     ❌     |
-| Non-derived class (different assembly) |    ✔️     |          ❌           |      ❌      |     ❌      |          ❌          |     ❌     |
+| Caller's location | `public` | `protected internal` | `protected` | `internal` | `private protected` | `private` | `file` |
+|--|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| Within the file | ✔️️ | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
+| Within the class | ✔️️ | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ❌ |
+| Derived class (same assembly) | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ❌ | ❌ |
+| Non-derived class (same assembly) | ✔️ | ✔️ | ❌ | ✔️ | ❌ | ❌ | ❌ |
+| Derived class (different assembly) | ✔️ | ✔️ | ✔️ | ❌ | ❌ | ❌ | ❌ |
+| Non-derived class (different assembly) | ✔️ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 
 The following examples demonstrate how to specify access modifiers on a type and member:
 

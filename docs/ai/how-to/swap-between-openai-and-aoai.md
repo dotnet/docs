@@ -36,21 +36,21 @@ The Semantic Kernel SDK supports both prompt and chat completions.
 
 A basic implementation of prompt completions with the AOAI client library might look like the following:
 
-:::code language="csharp" source="./snippets/azure-openai-sdk/CompletionExamples.cs" id="prompt-completion":::
+:::code language="csharp" source="./snippets/azure-openai-sdk/CompletionExamples.cs" id="promptCompletion":::
 
 The Semantic Kernel equivalent would be:
 
-:::code language="csharp" source="./snippets/semantic-kernel/CompletionExamples.cs" id="prompt-completion":::
+:::code language="csharp" source="./snippets/semantic-kernel/CompletionExamples.cs" id="promptCompletion":::
 
 ### Implement chat completions with Semantic Kernel
 
 A basic implementation of chat completions with the AOAI client library might look like the following:
 
-:::code language="csharp" source="./snippets/azure-openai-sdk/CompletionExamples.cs" id="chat-completion":::
+:::code language="csharp" source="./snippets/azure-openai-sdk/CompletionExamples.cs" id="chatCompletion":::
 
 The Semantic Kernel equivalent would be:
 
-:::code language="csharp" source="./snippets/semantic-kernel/CompletionExamples.cs" id="chat-completion":::
+:::code language="csharp" source="./snippets/semantic-kernel/CompletionExamples.cs" id="chatCompletion":::
 
 ## Swap between OpenAI and AOAI with Semantic Kernel
 
@@ -66,7 +66,7 @@ az cognitiveservices account show \
 
 Swapping between OpenAI and AOAI simply requires changing the initial service configuration. For example, consider the following configuration for using OpenAI:
 
-:::code language="csharp" source="./snippets/semantic-kernel/AuthExamples.cs" id="openai-auth":::
+:::code language="csharp" source="./snippets/semantic-kernel/AuthExamples.cs" id="openaiAuth":::
 
 Semantic Kernel can be similarly configured to use AOAI with either an API key or token-based authentication:
 
@@ -82,7 +82,7 @@ az cognitiveservices account keys list \
 
 The following configuration uses AOAI with API key authentication:
 
-:::code language="csharp" source="./snippets/semantic-kernel/AuthExamples.cs" id="aoai-api-key-auth":::
+:::code language="csharp" source="./snippets/semantic-kernel/AuthExamples.cs" id="aoaiApiKeyAuth":::
 
 ### Use AOAI with token-based authentication
 
@@ -94,7 +94,7 @@ dotnet add package Azure.Identity
 
 The following configuration uses AOAI with token-based authentication:
 
-:::code language="csharp" source="./snippets/semantic-kernel/AuthExamples.cs" id="aoai-token-auth":::
+:::code language="csharp" source="./snippets/semantic-kernel/AuthExamples.cs" id="aoaiTokenAuth":::
 
 ## Related content
 

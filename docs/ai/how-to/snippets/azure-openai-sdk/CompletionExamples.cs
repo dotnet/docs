@@ -13,7 +13,7 @@ class CompletionExamples
 
     static async Task PromptCompletionExample()
     {
-        // <prompt-completion>
+        // <promptCompletion>
         // === Retrieve the secrets saved during the Azure deployment ===
         var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
         var openAIEndpoint = config["AZURE_OPENAI_ENDPOINT"];
@@ -42,12 +42,12 @@ class CompletionExamples
         ChatCompletions response = await openAIClient.GetChatCompletionsAsync(completionOptions);
         var assistantResponse = response.Choices[0].Message;
         Console.WriteLine($"Output: {assistantResponse.Content}");
-        // </prompt-completion>
+        // </promptCompletion>
     }
 
     static async Task ChatCompletionExample()
     {
-        // <chat-completion>
+        // <chatCompletion>
         // === Retrieve the secrets saved during the Azure deployment ===
         var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
         var openAIEndpoint = config["AZURE_OPENAI_ENDPOINT"];
@@ -118,6 +118,6 @@ class CompletionExamples
         assistantResponse = response.Choices[0].Message;
 
         Console.WriteLine($"Assistant: {assistantResponse.Content}");
-        // </chat-completion>
+        // </chatCompletion>
     }
 }

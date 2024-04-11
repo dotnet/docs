@@ -16,7 +16,7 @@ class AuthExamples
 
     static (Kernel, IChatCompletionService) OpenAIAuthExample()
     {
-        // <openai-auth>
+        // <openaiAuth>
         // === Retrieve the secrets saved when signing up for OpenAI ===
         var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
         var model = config["OPENAI_GPT_NAME"];
@@ -29,14 +29,14 @@ class AuthExamples
 
         // === Alternatively, directly create the OpenAI Chat Completion Service ===
         var service = new OpenAIChatCompletionService(model, key);
-        // </openai-auth>
+        // </openaiAuth>
         
         return (kernel, service);
     }
 
     static (Kernel, IChatCompletionService) AoaiApiKeyAuthExample()
     {
-        // <aoai-api-key-auth>
+        // <aoaiApiKeyAuth>
         // === Retrieve the secrets obtained from the Azure deployment ===
         // Must use the deployment name not the underlying model name
         var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
@@ -51,14 +51,14 @@ class AuthExamples
 
         // === Alternatively, directly create the AOAI Chat Completion Service ===
         var service = new AzureOpenAIChatCompletionService(deployment, endpoint, key);
-        // </aoai-api-key-auth>
+        // </aoaiApiKeyAut>
 
         return (kernel, service);
     }
 
         static (Kernel, IChatCompletionService) AoaiTokenAuthExample()
     {
-        // <aoai-token-auth>
+        // <aoaiTokenAuth>
         // === Retrieve the secrets obtained from the Azure deployment ===
         // Must use the deployment name not the underlying model name
         var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
@@ -78,7 +78,7 @@ class AuthExamples
 
         // === Alternatively, directly create the AOAI Chat Completion Service ===
         var service = new AzureOpenAIChatCompletionService(deployment, endpoint, credentials);
-        // </aoai-token-auth>
+        // </aoaiTokenAuth>
 
         return (kernel, service);
     }

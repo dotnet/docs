@@ -13,7 +13,7 @@ class CompletionExamples
 
     static async Task PromptCompletionExample()
     {
-        // <prompt-completion>
+        // <promptCompletion>
         // === Retrieve the secrets saved during the Azure deployment ===
         // The config values should remain the same between AOAI and Semantic Kernel
         var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
@@ -39,12 +39,12 @@ class CompletionExamples
         // === Get the response and display it ===
         var response = await kernel.InvokePromptAsync<string>(prompt, new(executionSettings));
         Console.WriteLine($"Output: {response}");
-        // </prompt-completion>
+        // </promptCompletion>
     }
 
     static async Task ChatCompletionExample()
     {
-        // <chat-completion>
+        // <chatCompletion>
         // === Retrieve the secrets saved during the Azure deployment ===
         // The config values should remain the same between AOAI and Semantic Kernel
         var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
@@ -108,6 +108,6 @@ class CompletionExamples
         // === Get the next response and display it ===
         assistantResponse = await service.GetChatMessageContentAsync(chatHistory, executionSettings);
         Console.WriteLine($"Assistant: ${assistantResponse.Content}");
-        // </chat-completion>
+        // </chatCompletion>
     }
 }

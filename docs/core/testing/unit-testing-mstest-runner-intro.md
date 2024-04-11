@@ -73,3 +73,61 @@ Consider the following example project file:
 
 </Project>
 ```
+
+## Configurations and filters
+
+### .runsettings
+
+The MSTest runner supports the [runsettings](unit-testing-platform-extensions-vstest-bridge.md#runsettings-support) through command line option `--settings`, for instance:
+
+using `dotnet run`
+
+```dotnetcli
+dotnet run --project Contoso.MyTests -- --settings config.runsettings
+```
+
+using `dotnet exec`
+
+```dotnetcli
+dotnet exec Contoso.MyTests.dll --settings config.runsettings
+```
+
+or
+
+```dotnetcli
+dotnet Contoso.MyTests.dll --settings config.runsettings
+```
+
+using the executable
+
+```dotnetcli
+Contoso.MyTests.exe --settings config.runsettings
+```
+
+### Tests filter
+
+Seamesly you can provite the tests [filter](selective-unit-tests.md?pivots=mstest#mstest-examples) using the command line option `--filter`, for instance:
+
+using `dotnet run`
+
+```dotnetcli
+dotnet run --project Contoso.MyTests -- --filter "FullyQualifiedName~UnitTest1|TestCategory=CategoryA"
+```
+
+using `dotnet exec`
+
+```dotnetcli
+dotnet exec Contoso.MyTests.dll --filter "FullyQualifiedName~UnitTest1|TestCategory=CategoryA"
+```
+
+or
+
+```dotnetcli
+dotnet Contoso.MyTests.dll --filter "FullyQualifiedName~UnitTest1|TestCategory=CategoryA"
+```
+
+using the executable
+
+```dotnetcli
+Contoso.MyTests.exe --filter "FullyQualifiedName~UnitTest1|TestCategory=CategoryA"
+```

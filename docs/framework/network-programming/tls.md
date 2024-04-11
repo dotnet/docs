@@ -127,7 +127,7 @@ For more information, see [Support for TLS System Default Versions included in .
 
 ### If your app targets .NET Framework 4.7 or later versions
 
-The following sections show how to verify you're not using a specific TLS or SSL version.
+The following sections show how to configure your application to use `currently considered secure versions` of TLS. (TLS 1.2, TLS 1.3)
 
 #### For HttpClient and HttpWebRequest
 
@@ -149,7 +149,7 @@ Don't use the method overloads of <xref:System.Net.Security.SslStream> that take
 
 ### If your app targets .NET Framework 4.7 or later versions
 
-The following sections show how to verify you're not using a specific TLS or SSL version.
+The following sections show how to configure your application to use `currently considered secure versions` of TLS. (TLS 1.2, TLS 1.3)
 
 #### Using TCP transport using transport security with certificate credentials
 
@@ -175,7 +175,7 @@ If you're **not** using a custom binding **and** you're setting your WCF binding
 
 ### If your app targets a .NET Framework version earlier than 4.7
 
-The following sections show how to verify you're not using a specific TLS or SSL version.
+The following sections show how to configure your application to use `currently considered secure versions` of TLS. (TLS 1.2, TLS 1.3)
 
 #### Using .NET Framework 4.6.2 using TCP transport security with Certificate Credentials
 

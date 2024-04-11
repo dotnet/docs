@@ -36,211 +36,21 @@ The Semantic Kernel SDK supports both prompt and chat completions.
 
 A basic implementation of prompt completions with the AOAI client library might look like the following:
 
-```csharp
-// === Retrieve the secrets saved during the Azure deployment ===
-var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
-var openAIEndpoint = config["AZURE_OPENAI_ENDPOINT"];
-var openAIDeploymentName = config["AZURE_OPENAI_GPT_NAME"];
-var openAiKey = config["AZURE_OPENAI_KEY"];
-
-
-// === Creating the OpenAIClient ===
-var endpoint = new Uri(openAIEndpoint);
-var credentials = new AzureKeyCredential(openAiKey);
-var openAIClient = new OpenAIClient(endpoint, credentials);
-
-var completionOptions = new ChatCompletionsOptions
-{
-    DeploymentName = openAIDeploymentName
-    // Additional options, e.g., MaxTokens, Temperature, etc.
-};
-
-// === Specify the prompt as a user message ===
-var userRequest = "Please list three services offered by Azure";
-completionOptions.Messages.Add(new ChatRequestUserMessage(userRequest));
-Console.WriteLine($"Prompt: {userRequest}");
-
-// === Get the response and display it ===
-
-ChatCompletions response = await openAIClient.GetChatCompletionsAsync(completionOptions);
-var assistantResponse = response.Choices[0].Message;
-Console.WriteLine($"Output: {assistantResponse.Content}");
-```
+:::code language="csharp" source="./snippets/azure-openai-sdk/CompletionExamples.cs" id="prompt-completion":::
 
 The Semantic Kernel equivalent would be:
 
-```csharp
-// === Retrieve the secrets saved during the Azure deployment ===
-// The config values should remain the same between AOAI and Semantic Kernel
-var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
-var endpoint = config["AZURE_OPENAI_ENDPOINT"];
-var deployment = config["AZURE_OPENAI_GPT_NAME"];
-var key = config["AZURE_OPENAI_KEY"];
-
-var executionSettings = new OpenAIPromptExecutionSettings
-{
-    MaxTokens = 400
-    // Additional options, e.g., Temperature, ResultsPerPrompt, etc.
-};
-
-// === Create a Kernel containing the AOAI Chat Completion Service ===
-var kernel = Kernel.CreateBuilder()
-    .AddAzureOpenAIChatCompletion(deployment, endpoint, key)
-    .Build();
-
-// === Define the prompt ===
-var prompt = "Please list three services offered by Azure";
-Console.WriteLine($"Prompt: {prompt}");
-
-// === Get the response and display it ===
-var response = await kernel.InvokePromptAsync<string>(prompt, new(executionSettings));
-Console.WriteLine($"Output: {response}");
-```
+:::code language="csharp" source="./snippets/semantic-kernel/CompletionExamples.cs" id="prompt-completion":::
 
 ### Implement chat completions with Semantic Kernel
 
 A basic implementation of chat completions with the AOAI client library might look like the following:
 
-```csharp
-// === Retrieve the secrets saved during the Azure deployment ===
-var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
-var openAIEndpoint = config["AZURE_OPENAI_ENDPOINT"];
-var openAIDeploymentName = config["AZURE_OPENAI_GPT_NAME"];
-var openAiKey = config["AZURE_OPENAI_KEY"];
-
-
-// == Creating the OpenAIClient ==========
-var endpoint = new Uri(openAIEndpoint);
-var credentials = new AzureKeyCredential(openAiKey);
-var openAIClient = new OpenAIClient(endpoint, credentials);
-
-var completionOptions = new ChatCompletionsOptions
-{
-    DeploymentName = openAIDeploymentName
-    // Additional options, e.g., MaxTokens, Temperature, etc.
-};
-
-// === Providing context for the AI model as a system message ===
-var systemPrompt =
-"""
-You are a hiking enthusiast who helps people discover fun hikes in their area. You are upbeat and friendly. 
-You introduce yourself when first saying hello. When helping people out, you always ask them 
-for this information to inform the hiking recommendation you provide:
-
-1. Where they are located
-2. What hiking intensity they are looking for
-
-You will then provide three suggestions for nearby hikes that vary in length after you get that information. 
-You will also share an interesting fact about the local nature on the hikes when making a recommendation.
-""";
-
-Console.WriteLine($"System Prompt: {systemPrompt}");
-completionOptions.Messages.Add(new ChatRequestSystemMessage(systemPrompt));
-
-// === Starting the conversation with a user message ===
-var userGreeting =
-"""
-Hi! 
-Apparently you can help me find a hike that I will like?
-""";
-
-Console.WriteLine($"User: {userGreeting}");
-completionOptions.Messages.Add(new ChatRequestUserMessage(userGreeting));
-
-// === Get the first response, display it, and add it to the message list
-ChatCompletions response = await openAIClient.GetChatCompletionsAsync(completionOptions);
-var assistantResponse = response.Choices[0].Message;
-
-Console.WriteLine($"Assistant: {assistantResponse.Content}");
-completionOptions.Messages.Add(new ChatRequestAssistantMessage(assistantResponse.Content));
-
-
-// === Providing the user's request ===
-var hikeRequest =
-"""
-I live in the greater Montreal area and would like an easy hike. I don't mind driving a bit to get there.
-I don't want the hike to be over 10 miles round trip. I'd consider a point-to-point hike.
-I want the hike to be as isolated as possible. I don't want to see many people.
-I would like it to be as bug free as possible.
-""";
-
-Console.WriteLine($"User: {hikeRequest}");
-completionOptions.Messages.Add(new ChatRequestUserMessage(hikeRequest));
-
-// === Get the next response and display it ===
-response = await openAIClient.GetChatCompletionsAsync(completionOptions);
-assistantResponse = response.Choices[0].Message;
-
-Console.WriteLine($"Assistant: {assistantResponse.Content}");
-```
+:::code language="csharp" source="./snippets/azure-openai-sdk/CompletionExamples.cs" id="chat-completion":::
 
 The Semantic Kernel equivalent would be:
 
-```csharp
-// === Retrieve the secrets saved during the Azure deployment ===
-// The config values should remain the same between AOAI and Semantic Kernel
-var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
-var endpoint = config["AZURE_OPENAI_ENDPOINT"];
-var deployment = config["AZURE_OPENAI_GPT_NAME"];
-var key = config["AZURE_OPENAI_KEY"];
-
-var executionSettings = new OpenAIPromptExecutionSettings
-{
-    MaxTokens = 400,
-    // Additional options, e.g., Temperature, ResultsPerPrompt, etc.
-};
-
-// === Create the AOAI Chat Completion Service ===
-var service = new AzureOpenAIChatCompletionService(deployment, endpoint, key);
-
-// === Providing context for AI models via the chat history, initialized with a system message ===
-var systemMessage =
-"""
-You are a hiking enthusiast who helps people discover fun hikes in their area. You are upbeat and friendly. 
-You introduce yourself when first saying hello. When helping people out, you always ask them 
-for this information to inform the hiking recommendation you provide:
-
-1. Where they are located
-2. What hiking intensity they are looking for
-
-You will then provide three suggestions for nearby hikes that vary in length after you get that information. 
-You will also share an interesting fact about the local nature on the hikes when making a recommendation.
-""";
-
-Console.WriteLine($"System Prompt: {systemMessage}");
-var chatHistory = new ChatHistory(systemMessage);
-
-// === Starting the conversation with a user message ===
-var userGreeting =
-"""
-Hi! 
-Apparently you can help me find a hike that I will like?
-""";
-
-Console.WriteLine($"User: {userGreeting}");
-chatHistory.AddUserMessage(userGreeting);
-
-// === Get the first response, display it, and add it to the chat history ===
-var assistantResponse = await service.GetChatMessageContentAsync(chatHistory, executionSettings);
-Console.WriteLine($"Assistant: {assistantResponse.Content}");
-chatHistory.Add(assistantResponse);
-
-// === Providing the user's request ===
-var hikeRequest =
-"""
-I live in the greater Montreal area and would like an easy hike. I don't mind driving a bit to get there.
-I don't want the hike to be over 10 miles round trip. I'd consider a point-to-point hike.
-I want the hike to be as isolated as possible. I don't want to see many people.
-I would like it to be as bug free as possible.
-""";
-
-Console.WriteLine($"User: {hikeRequest}");
-chatHistory.AddUserMessage(hikeRequest);
-
-// === Get the next response and display it ===
-assistantResponse = await service.GetChatMessageContentAsync(chatHistory, executionSettings);
-Console.WriteLine($"Assistant: ${assistantResponse.Content}");
-```
+:::code language="csharp" source="./snippets/semantic-kernel/CompletionExamples.cs" id="chat-completion":::
 
 ## Swap between OpenAI and AOAI with Semantic Kernel
 
@@ -256,20 +66,7 @@ az cognitiveservices account show \
 
 Swapping between OpenAI and AOAI simply requires changing the initial service configuration. For example, consider the following configuration for using OpenAI:
 
-```csharp
-// === Retrieve the secrets saved when signing up for OpenAI ===
-var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
-var model = config["OPENAI_GPT_NAME"];
-var key = config["OPENAI_API_KEY"];
-
-// === Create a Kernel containing the OpenAI Chat Completion Service ===
-var kernel = Kernel.CreateBuilder()
-    .AddOpenAIChatCompletion(model, key)
-    .Build();
-
-// === Alternatively, directly create the OpenAI Chat Completion Service ===
-var service = new OpenAIChatCompletionService(model, key);
-```
+:::code language="csharp" source="./snippets/semantic-kernel/AuthExamples.cs" id="openai-auth":::
 
 Semantic Kernel can be similarly configured to use AOAI with either an API key or token-based authentication:
 
@@ -285,22 +82,7 @@ az cognitiveservices account keys list \
 
 The following configuration uses AOAI with API key authentication:
 
-```csharp
-// === Retrieve the secrets obtained from the Azure deployment ===
-// Must use the deployment name not the underlying model name
-var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
-var endpoint = config["AZURE_OPENAI_ENDPOINT"];
-var deployment = config["AZURE_OPENAI_GPT_NAME"];
-var key = config["AZURE_OPENAI_KEY"];
-
-// === Create a Kernel containing the AOAI Chat Completion Service ===
-var kernel = Kernel.CreateBuilder()
-    .AddAzureOpenAIChatCompletion(deployment, endpoint, key)
-    .Build();
-
-// === Alternatively, directly create the AOAI Chat Completion Service ===
-var service = new AzureOpenAIChatCompletionService(deployment, endpoint, key);
-```
+:::code language="csharp" source="./snippets/semantic-kernel/AuthExamples.cs" id="aoai-api-key-auth":::
 
 ### Use AOAI with token-based authentication
 
@@ -312,27 +94,7 @@ dotnet add package Azure.Identity
 
 The following configuration uses AOAI with token-based authentication:
 
-```csharp
-// === Retrieve the secrets obtained from the Azure deployment ===
-// Must use the deployment name not the underlying model name
-var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
-var endpoint = config["AZURE_OPENAI_ENDPOINT"];
-var deployment = config["AZURE_OPENAI_GPT_NAME"];
-
-// === Create a TokenCredential instance, e.g. DefaultAzureCredential, ManagedIdentityCredential, EnvironmentCredential, etc.
-TokenCredential credentials = new DefaultAzureCredential(new DefaultAzureCredentialOptions
-{
-    // Credential options, e.g., TenantID, ManagedIdentityClientId, etc.
-});
-
-// === Create a Kernel containing the AOAI Chat Completion Service ===
-var kernel = Kernel.CreateBuilder()
-    .AddAzureOpenAIChatCompletion(deployment, endpoint, credentials)
-    .Build();
-
-// === Alternatively, directly create the AOAI Chat Completion Service ===
-var service = new AzureOpenAIChatCompletionService(deployment, endpoint, credentials);
-```
+:::code language="csharp" source="./snippets/semantic-kernel/AuthExamples.cs" id="aoai-token-auth":::
 
 ## Related content
 

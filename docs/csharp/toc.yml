@@ -243,42 +243,38 @@ items:
       href: linq/standard-query-operators/grouping-data.md
   - name: "Tutorial: Writing queries in C#"
     href: linq/walkthrough-writing-queries-linq.md
-  - name: "How to: LINQ and file directories"
-    href: linq/how-to-query-files-and-directories.md
   - name: How-to articles
     items:
+    - name: "How to: LINQ and file directories"
+      href: linq/how-to-query-files-and-directories.md
+
     - name: "How to count occurrences of a word in a string"
       href: programming-guide/concepts/linq/how-to-count-occurrences-of-a-word-in-a-string-linq.md
     - name: "How to query for sentences that contain a specified set of words"
       href: programming-guide/concepts/linq/how-to-query-for-sentences-that-contain-a-specified-set-of-words-linq.md
     - name: "How to query for characters in a string"
       href: programming-guide/concepts/linq/how-to-query-for-characters-in-a-string-linq.md
-    - name: "How to combine LINQ queries with regular expressions"
-      href: programming-guide/concepts/linq/how-to-combine-linq-queries-with-regular-expressions.md
-    - name: "How to find the set difference between two lists"
-      href: programming-guide/concepts/linq/how-to-find-the-set-difference-between-two-lists-linq.md
     - name: "How to sort or filter text data by any word or field"
       href: programming-guide/concepts/linq/how-to-sort-or-filter-text-data-by-any-word-or-field-linq.md
-    - name: "How to reorder the fields of a delimited file"
-      href: programming-guide/concepts/linq/how-to-reorder-the-fields-of-a-delimited-file-linq.md
+    - name: "How to combine LINQ queries with regular expressions"
+      href: programming-guide/concepts/linq/how-to-combine-linq-queries-with-regular-expressions.md
+
+    - name: "How to find the set difference between two lists"
+      href: programming-guide/concepts/linq/how-to-find-the-set-difference-between-two-lists-linq.md
     - name: "How to combine and compare string collections"
       href: programming-guide/concepts/linq/how-to-combine-and-compare-string-collections-linq.md
     - name: "How to populate object collections from multiple sources"
       href: programming-guide/concepts/linq/how-to-populate-object-collections-from-multiple-sources-linq.md
-    - name: "How to split a file into many files by using groups"
-      href: programming-guide/concepts/linq/how-to-split-a-file-into-many-files-by-using-groups-linq.md
-    - name: "How to join content from dissimilar files"
-      href: programming-guide/concepts/linq/how-to-join-content-from-dissimilar-files-linq.md
-    - name: "How to compute column values in a CSV text file"
-      href: programming-guide/concepts/linq/how-to-compute-column-values-in-a-csv-text-file-linq.md
-    - name: "How to use expression trees to build dynamic queries"
-      href: programming-guide/concepts/linq/how-to-use-expression-trees-to-build-dynamic-queries.md
     - name: "How to query an ArrayList with LINQ"
       href: programming-guide/concepts/linq/how-to-query-an-arraylist-with-linq.md
+
+    - name: "How to use expression trees to build dynamic queries"
+      href: programming-guide/concepts/linq/how-to-use-expression-trees-to-build-dynamic-queries.md
     - name: "How to add custom methods for LINQ queries"
       href: programming-guide/concepts/linq/how-to-add-custom-methods-for-linq-queries.md
     - name: How to group results by contiguous keys
       href: linq/group-results-by-contiguous-keys.md
+
 - name: Asynchronous programming
   items:
   - name: Overview

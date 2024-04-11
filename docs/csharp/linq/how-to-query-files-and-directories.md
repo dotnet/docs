@@ -1,8 +1,7 @@
 ---
 title: "LINQ and file directories (C#)"
 description: These C# LINQ resources for file system operations are not used to change the contents of the files or folders.
-ms.date: 07/20/2015
-ms.assetid: b66c55e4-0f72-44e5-b086-519f9962335c
+ms.date: 04/11/2024
 ---
 # How to: use LINQ to query files and directories
 
@@ -676,3 +675,448 @@ class QueryContents
 ```
 
 Create a C# console application project, with `using` directives for the System.Linq and System.IO namespaces.
+
+## How to reorder the fields of a delimited file (LINQ) (C#)
+
+A comma-separated value (CSV) file is a text file that is often used to store spreadsheet data or other tabular data that is represented by rows and columns. By using the <xref:System.String.Split%2A> method to separate the fields, it is very easy to query and manipulate CSV files by using LINQ. In fact, the same technique can be used to reorder the parts of any structured line of text; it is not limited to CSV files.
+
+In the following example, assume that the three columns represent students' "last name," "first name", and "ID." The fields are in alphabetical order based on the students' last names. The query produces a new sequence in which the ID column appears first, followed by a second column that combines the student's first name and last name. The lines are reordered according to the ID field. The results are saved into a new file and the original data is not modified.
+
+Copy the following lines into a plain text file that is named spreadsheet1.csv. Save the file in your project folder.
+
+```csv
+Adams,Terry,120
+Fakhouri,Fadi,116
+Feng,Hanying,117
+Garcia,Cesar,114
+Garcia,Debra,115
+Garcia,Hugo,118
+Mortensen,Sven,113
+O'Donnell,Claire,112
+Omelchenko,Svetlana,111
+Tucker,Lance,119
+Tucker,Michael,122
+Zabokritski,Eugene,121
+```
+
+```csharp
+class CSVFiles
+{
+    static void Main(string[] args)
+    {
+        // Create the IEnumerable data source
+        string[] lines = System.IO.File.ReadAllLines(@"../../../spreadsheet1.csv");
+
+        // Create the query. Put field 2 first, then
+        // reverse and combine fields 0 and 1 from the old field
+        IEnumerable<string> query =
+            from line in lines
+            let x = line.Split(',')
+            orderby x[2]
+            select x[2] + ", " + (x[1] + " " + x[0]);
+
+        // Execute the query and write out the new file. Note that WriteAllLines
+        // takes a string[], so ToArray is called on the query.
+        System.IO.File.WriteAllLines(@"../../../spreadsheet2.csv", query.ToArray());
+
+        Console.WriteLine("Spreadsheet2.csv written to disk. Press any key to exit");
+        Console.ReadKey();
+    }
+}
+/* Output to spreadsheet2.csv:
+111, Svetlana Omelchenko
+112, Claire O'Donnell
+113, Sven Mortensen
+114, Cesar Garcia
+115, Debra Garcia
+116, Fadi Fakhouri
+117, Hanying Feng
+118, Hugo Garcia
+119, Lance Tucker
+120, Terry Adams
+121, Eugene Zabokritski
+122, Michael Tucker
+ */
+```
+
+Create a C# console application project, with `using` directives for the System.Linq and System.IO namespaces.
+
+## How to split a file into many files by using groups (LINQ) (C#)
+
+This example shows one way to merge the contents of two files and then create a set of new files that organize the data in a new way.
+
+### To create the data files
+
+Copy these names into a text file that is named names1.txt and save it in your project folder:
+
+```text
+Bankov, Peter
+Holm, Michael
+Garcia, Hugo
+Potra, Cristina
+Noriega, Fabricio
+Aw, Kam Foo
+Beebe, Ann
+Toyoshima, Tim
+Guy, Wey Yuan
+Garcia, Debra
+```
+
+Copy these names into a text file that is named names2.txt and save it in your project folder: Note that the two files have some names in common.
+
+```text
+Liu, Jinghao
+Bankov, Peter
+Holm, Michael
+Garcia, Hugo
+Beebe, Ann
+Gilchrist, Beth
+Myrcha, Jacek
+Giakoumakis, Leo
+McLin, Nkenge
+El Yassir, Mehdi
+```
+
+```csharp
+class SplitWithGroups
+{
+    static void Main()
+    {
+        string[] fileA = System.IO.File.ReadAllLines(@"../../../names1.txt");
+        string[] fileB = System.IO.File.ReadAllLines(@"../../../names2.txt");
+
+        // Concatenate and remove duplicate names based on
+        // default string comparer
+        var mergeQuery = fileA.Union(fileB);
+
+        // Group the names by the first letter in the last name.
+        var groupQuery = from name in mergeQuery
+                         let n = name.Split(',')
+                         group name by n[0][0] into g
+                         orderby g.Key
+                         select g;
+
+        // Create a new file for each group that was created
+        // Note that nested foreach loops are required to access
+        // individual items with each group.
+        foreach (var g in groupQuery)
+        {
+            // Create the new file name.
+            string fileName = @"../../../testFile_" + g.Key + ".txt";
+
+            // Output to display.
+            Console.WriteLine(g.Key);
+
+            // Write file.
+            using (System.IO.StreamWriter sw = new System.IO.StreamWriter(fileName))
+            {
+                foreach (var item in g)
+                {
+                    sw.WriteLine(item);
+                    // Output to console for example purposes.
+                    Console.WriteLine("   {0}", item);
+                }
+            }
+        }
+        // Keep console window open in debug mode.
+        Console.WriteLine("Files have been written. Press any key to exit");
+        Console.ReadKey();
+    }
+}
+/* Output:
+    A
+       Aw, Kam Foo
+    B
+       Bankov, Peter
+       Beebe, Ann
+    E
+       El Yassir, Mehdi
+    G
+       Garcia, Hugo
+       Guy, Wey Yuan
+       Garcia, Debra
+       Gilchrist, Beth
+       Giakoumakis, Leo
+    H
+       Holm, Michael
+    L
+       Liu, Jinghao
+    M
+       Myrcha, Jacek
+       McLin, Nkenge
+    N
+       Noriega, Fabricio
+    P
+       Potra, Cristina
+    T
+       Toyoshima, Tim
+ */
+```
+
+The program writes a separate file for each group in the same folder as the data files.
+
+Compiling the Code
+
+Create a C# console application project, with `using` directives for the System.Linq and System.IO namespaces.
+
+## How to join content from dissimilar files (LINQ) (C#)
+
+This example shows how to join data from two comma-delimited files that share a common value that is used as a matching key. This technique can be useful if you have to combine data from two spreadsheets, or from a spreadsheet and from a file that has another format, into a new file. You can modify the example to work with any kind of structured text.
+
+### To create the data files
+
+Copy the following lines into a file that is named *scores.csv* and save it to your project folder. The file represents spreadsheet data. Column 1 is the student's ID, and columns 2 through 5 are test scores.
+
+```csv
+111, 97, 92, 81, 60
+112, 75, 84, 91, 39
+113, 88, 94, 65, 91
+114, 97, 89, 85, 82
+115, 35, 72, 91, 70
+116, 99, 86, 90, 94
+117, 93, 92, 80, 87
+118, 92, 90, 83, 78
+119, 68, 79, 88, 92
+120, 99, 82, 81, 79
+121, 96, 85, 91, 60
+122, 94, 92, 91, 91
+```
+
+Copy the following lines into a file that is named *names.csv* and save it to your project folder. The file represents a spreadsheet that contains the student's last name, first name, and student ID.
+
+```csv
+Omelchenko,Svetlana,111
+O'Donnell,Claire,112
+Mortensen,Sven,113
+Garcia,Cesar,114
+Garcia,Debra,115
+Fakhouri,Fadi,116
+Feng,Hanying,117
+Garcia,Hugo,118
+Tucker,Lance,119
+Adams,Terry,120
+Zabokritski,Eugene,121
+Tucker,Michael,122
+```
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+class JoinStrings
+{
+    static void Main()
+    {
+        // Join content from dissimilar files that contain
+        // related information. File names.csv contains the student
+        // name plus an ID number. File scores.csv contains the ID
+        // and a set of four test scores. The following query joins
+        // the scores to the student names by using ID as a
+        // matching key.
+
+        string[] names = System.IO.File.ReadAllLines(@"../../../names.csv");
+        string[] scores = System.IO.File.ReadAllLines(@"../../../scores.csv");
+
+        // Name:    Last[0],       First[1],  ID[2]
+        //          Omelchenko,    Svetlana,  11
+        // Score:   StudentID[0],  Exam1[1]   Exam2[2],  Exam3[3],  Exam4[4]
+        //          111,           97,        92,        81,        60
+
+        // This query joins two dissimilar spreadsheets based on common ID value.
+        // Multiple from clauses are used instead of a join clause
+        // in order to store results of id.Split.
+        IEnumerable<string> scoreQuery1 =
+            from name in names
+            let nameFields = name.Split(',')
+            from id in scores
+            let scoreFields = id.Split(',')
+            where Convert.ToInt32(nameFields[2]) == Convert.ToInt32(scoreFields[0])
+            select nameFields[0] + "," + scoreFields[1] + "," + scoreFields[2]
+                   + "," + scoreFields[3] + "," + scoreFields[4];
+
+        // Pass a query variable to a method and execute it
+        // in the method. The query itself is unchanged.
+        OutputQueryResults(scoreQuery1, "Merge two spreadsheets:");
+
+        // Keep console window open in debug mode.
+        Console.WriteLine("Press any key to exit");
+        Console.ReadKey();
+    }
+
+    static void OutputQueryResults(IEnumerable<string> query, string message)
+    {
+        Console.WriteLine(System.Environment.NewLine + message);
+        foreach (string item in query)
+        {
+            Console.WriteLine(item);
+        }
+        Console.WriteLine("{0} total names in list", query.Count());
+    }
+}
+/* Output:
+Merge two spreadsheets:
+Omelchenko, 97, 92, 81, 60
+O'Donnell, 75, 84, 91, 39
+Mortensen, 88, 94, 65, 91
+Garcia, 97, 89, 85, 82
+Garcia, 35, 72, 91, 70
+Fakhouri, 99, 86, 90, 94
+Feng, 93, 92, 80, 87
+Garcia, 92, 90, 83, 78
+Tucker, 68, 79, 88, 92
+Adams, 99, 82, 81, 79
+Zabokritski, 96, 85, 91, 60
+Tucker, 94, 92, 91, 91
+12 total names in list
+ */
+```
+
+## How to compute column values in a CSV text file (LINQ) (C#)
+
+This example shows how to perform aggregate computations such as Sum, Average, Min, and Max on the columns of a .csv file. The example principles that are shown here can be applied to other types of structured text.
+
+Copy the following lines into a file that is named scores.csv and save it in your project folder. Assume that the first column represents a student ID, and subsequent columns represent scores from four exams.
+
+```csv
+111, 97, 92, 81, 60
+112, 75, 84, 91, 39
+113, 88, 94, 65, 91
+114, 97, 89, 85, 82
+115, 35, 72, 91, 70
+116, 99, 86, 90, 94
+117, 93, 92, 80, 87
+118, 92, 90, 83, 78
+119, 68, 79, 88, 92
+120, 99, 82, 81, 79
+121, 96, 85, 91, 60
+122, 94, 92, 91, 91
+```
+
+```csharp
+class SumColumns
+{
+    static void Main(string[] args)
+    {
+        string[] lines = System.IO.File.ReadAllLines(@"../../../scores.csv");
+
+        // Specifies the column to compute.
+        int exam = 3;
+
+        // Spreadsheet format:
+        // Student ID    Exam#1  Exam#2  Exam#3  Exam#4
+        // 111,          97,     92,     81,     60
+
+        // Add one to exam to skip over the first column,
+        // which holds the student ID.
+        SingleColumn(lines, exam + 1);
+        Console.WriteLine();
+        MultiColumns(lines);
+
+        Console.WriteLine("Press any key to exit");
+        Console.ReadKey();
+    }
+
+    static void SingleColumn(IEnumerable<string> strs, int examNum)
+    {
+        Console.WriteLine("Single Column Query:");
+
+        // Parameter examNum specifies the column to
+        // run the calculations on. This value could be
+        // passed in dynamically at run time.
+
+        // Variable columnQuery is an IEnumerable<int>.
+        // The following query performs two steps:
+        // 1) use Split to break each row (a string) into an array
+        //    of strings,
+        // 2) convert the element at position examNum to an int
+        //    and select it.
+        var columnQuery =
+            from line in strs
+            let elements = line.Split(',')
+            select Convert.ToInt32(elements[examNum]);
+
+        // Execute the query and cache the results to improve
+        // performance. This is helpful only with very large files.
+        var results = columnQuery.ToList();
+
+        // Perform aggregate calculations Average, Max, and
+        // Min on the column specified by examNum.
+        double average = results.Average();
+        int max = results.Max();
+        int min = results.Min();
+
+        Console.WriteLine("Exam #{0}: Average:{1:##.##} High Score:{2} Low Score:{3}",
+                 examNum, average, max, min);
+    }
+
+    static void MultiColumns(IEnumerable<string> strs)
+    {
+        Console.WriteLine("Multi Column Query:");
+
+        // Create a query, multiColQuery. Explicit typing is used
+        // to make clear that, when executed, multiColQuery produces
+        // nested sequences. However, you get the same results by
+        // using 'var'.
+
+        // The multiColQuery query performs the following steps:
+        // 1) use Split to break each row (a string) into an array
+        //    of strings,
+        // 2) use Skip to skip the "Student ID" column, and store the
+        //    rest of the row in scores.
+        // 3) convert each score in the current row from a string to
+        //    an int, and select that entire sequence as one row
+        //    in the results.
+        IEnumerable<IEnumerable<int>> multiColQuery =
+            from line in strs
+            let elements = line.Split(',')
+            let scores = elements.Skip(1)
+            select (from str in scores
+                    select Convert.ToInt32(str));
+
+        // Execute the query and cache the results to improve
+        // performance.
+        // ToArray could be used instead of ToList.
+        var results = multiColQuery.ToList();
+
+        // Find out how many columns you have in results.
+        int columnCount = results[0].Count();
+
+        // Perform aggregate calculations Average, Max, and
+        // Min on each column.
+        // Perform one iteration of the loop for each column
+        // of scores.
+        // You can use a for loop instead of a foreach loop
+        // because you already executed the multiColQuery
+        // query by calling ToList.
+        for (int column = 0; column < columnCount; column++)
+        {
+            var results2 = from row in results
+                           select row.ElementAt(column);
+            double average = results2.Average();
+            int max = results2.Max();
+            int min = results2.Min();
+
+            // Add one to column because the first exam is Exam #1,
+            // not Exam #0.
+            Console.WriteLine("Exam #{0} Average: {1:##.##} High Score: {2} Low Score: {3}",
+                          column + 1, average, max, min);
+        }
+    }
+}
+/* Output:
+    Single Column Query:
+    Exam #4: Average:76.92 High Score:94 Low Score:39
+
+    Multi Column Query:
+    Exam #1 Average: 86.08 High Score: 99 Low Score: 35
+    Exam #2 Average: 86.42 High Score: 94 Low Score: 72
+    Exam #3 Average: 84.75 High Score: 91 Low Score: 65
+    Exam #4 Average: 76.92 High Score: 94 Low Score: 39
+ */
+```
+
+The query works by using the <xref:System.String.Split%2A> method to convert each line of text into an array. Each array element represents a column. Finally, the text in each column is converted to its numeric representation. If your file is a tab-separated file, just update the argument in the `Split` method to `\t`.
+
+Create a C# console application project, with `using` directives for the System.Linq and System.IO namespaces.  
+  

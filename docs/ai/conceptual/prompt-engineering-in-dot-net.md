@@ -130,11 +130,9 @@ This section compares two .NET options for prompt engineering: [Semantic Kernel]
 
 ### Semantic Kernel
 
-Semantic Kernel is an SDK that integrates Large Language Models (LLMs) with conventional programming languages such as C#, Python, and Java. Semantic Kernel lets you define plugins and easily chain them together in just a few lines of code.
+Semantic Kernel is an SDK that integrates Large Language Models (LLMs) with conventional programming languages such as C#, Python, and Java. Semantic Kernel lets you define plugins and easily chain them together in just a few lines of code. You can use [Semantic Kernel planners](/semantic-kernel/agents/planners/?tabs=Csharp) to automatically orchestrate plugins, which lets you ask an LLM to generate a plan that Semantic Kernel can execute to achieve a user's unique goal.
 
-Even better, Semantic Kernel can automatically orchestrate plugins with AI. With [Semantic Kernel planners](/semantic-kernel/agents/planners/?tabs=Csharp), you can ask an LLM to generate a plan that achieves a user's unique goal. Semantic Kernel can then execute that plan for users.
-
-By deeply integrating with Visual Studio Code, Semantic Kernel also makes it easy for you to integrate prompt engineering into your existing development processes:
+By deeply integrating with Visual Studio Code, Semantic Kernel also makes it easy for you to integrate [prompt engineering](/semantic-kernel/prompts/your-first-prompt?tabs=Csharp) into your existing development processes:
 
 - Create prompts directly in your preferred code editor.
 - Write tests for your prompts using your existing testing frameworks.
@@ -149,7 +147,6 @@ prompt = @$"<message role=""system"">You are helping students with US History ho
 <message role=""user"">Which president had the shortest term?<message/>
 <message role=""assistant"">William Henry Harrison died just 31 days after his inauguration as president in 1841, making his presidency the shortest in U.S. history.<message/>
 <message role=""user"">Instructions: Summarize US Presidential accomplishments, grouped by category. Categories: Domestic Policy, US Economy, Foreign Affairs, Space Exploration, Other.</message>";
-Categories: Domestic Policy, US Economy, Foreign Affairs, Space Exploration, Other.</message>
 ```
 
 ### Azure OpenAI

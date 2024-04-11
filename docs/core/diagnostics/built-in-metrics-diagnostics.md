@@ -17,7 +17,7 @@ The `Microsoft.Extensions.Diagnostics.HealthChecks` metrics report health check 
 - [`dotnet.health_check.reports`](#metric-dotnethealth_checkreports)
 - [`dotnet.health_check.unhealthy_checks`](#metric-dotnethealth_checkunhealthy_checks)
 
-These metrics can be enabled by calling the `AddTelemetryHealthCheckPublisher` extension method. These metrics can only be enabled for push-based metrics, and are not available for pull-based metrics.
+You can enable these metrics by calling the <xref:Microsoft.Extensions.DependencyInjection.CommonHealthChecksExtensions.AddTelemetryHealthCheckPublisher%2A> extension method. These metrics can only be enabled for push-based metrics and aren't available for pull-based metrics.
 
 ##### Metric: `dotnet.health_check.reports`
 

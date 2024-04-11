@@ -284,6 +284,8 @@ You can use the registry for fine-grained control over the protocols that your c
 
 Start with the `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols` registry key. Under that key you can create any subkeys in the set `TLS 1.2`, `TLS 1.3`. Under each of those subkeys, you can create subkeys `Client` and/or `Server`. Under `Client` and `Server`, you can create DWORD values `DisabledByDefault` (0 or 1) and `Enabled` (0 or 1).
 
+For more information see: [TLS Registry Settings - Schannel](https://learn.microsoft.com/windows-server/security/tls/tls-registry-settings?tabs=diffie-hellman#tls-dtls-and-ssl-protocol-version-settings)
+
 ## The SCH_USE_STRONG_CRYPTO flag
 
 When it's enabled (by default, by [an `AppContext` switch](#switchsystemnetdontenableschusestrongcrypto), or [by the Windows Registry](#schusestrongcrypto)), .NET Framework uses the `SCH_USE_STRONG_CRYPTO` flag when your app initiates a TLS connection to a server. .NET Framework passes the flag to `Schannel` to instruct it to disable known weak cryptographic algorithms, cipher suites, and TLS/SSL protocol versions that may be otherwise enabled for better interoperability. For more information, see:

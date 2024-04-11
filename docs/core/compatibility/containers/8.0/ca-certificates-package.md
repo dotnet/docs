@@ -9,7 +9,8 @@ The `ca-certificates` package is no longer installed in .NET Alpine container im
 
 ## Previous behavior
 
-Prior to .NET 8, the `ca-certificates` packages was included in .NET's Alpine container images.
+Prior to .NET 8, the `ca-certificates` package was included in .NET's Alpine container images.
+
 
 ## New behavior
 

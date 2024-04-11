@@ -1,6 +1,6 @@
 ---
-title: "Breaking change: 'krb5-libs' packages removed from .NET container images"
-description: Learn about the breaking change in containers where the 'krb5-libs' packages was removed from .NET container images.
+title: "Breaking change: 'krb5-libs' package removed from .NET container images"
+description: Learn about the breaking change in containers where the 'krb5-libs' package was removed from .NET container images.
 ms.date: 08/01/2023
 ---
 # Kerberos package removed from .NET container images
@@ -21,7 +21,7 @@ Prior to .NET 8, the Kerberos package was explicitly installed in all .NET conta
 
 ## New behavior
 
-.NET no longer installs the Kerberos packages in its container images.
+.NET no longer installs the Kerberos package in its container images.
 
 ## Version introduced
 

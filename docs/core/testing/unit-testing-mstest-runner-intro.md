@@ -60,7 +60,7 @@ To enable the MSTest runner in a MSTest project, you need to add the `EnableMSTe
 
 ### .runsettings
 
-The MSTest runner supports the [runsettings](unit-testing-platform-runsettings.md) through command line option `--settings`, for instance:
+The MSTest runner supports the [runsettings](unit-testing-platform-extensions-vstest-bridge.md#runsettings-support) through command line option `--settings`, for instance:
 
 using `dotnet run`
 

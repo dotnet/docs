@@ -25,7 +25,7 @@ ms.topic: reference
 | `9` | The exit code `9` indicates that the minimum execution policy for the executed tests was violated. |
 | `10` | The exit code `10` indicates that the test adapter, Testing.Platform Test Framework, MSTest, NUnit, or xUnit, failed to run tests for an infrastructure reason unrelated to the test's self. An example is failing to create a fixture needed by tests. |
 
-To enable verbose logging and troubleshoot issues, see [Microsoft.Testing.Platform extensions: Troubleshoot](unit-testing-platform-extensions.md#troubleshoot).
+To enable verbose logging and troubleshoot issues, see [Microsoft.Testing.Platform Diagnostics extensions](unit-testing-platform-extensions-diagnostics.md#built-in-options).
 
 ## Ignore specific exit codes
 

@@ -51,7 +51,7 @@ class AuthExamples
 
         // === Alternatively, directly create the AOAI Chat Completion Service ===
         var service = new AzureOpenAIChatCompletionService(deployment, endpoint, key);
-        // </aoaiApiKeyAut>
+        // </aoaiApiKeyAuth>
 
         return (kernel, service);
     }

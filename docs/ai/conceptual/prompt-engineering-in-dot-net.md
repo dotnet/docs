@@ -37,13 +37,13 @@ Directives are more flexible than imperatives:
 
 - A directive can provide more context than an imperative.
 - You can combine several directives in one instruction.
-- It's usually better to implement a series of steps using a sequence of directives. If you tell the model to output the result of each step, when a problem arises you can easily see which step caused it. Although you can tell the model exactly what steps to follow, you can also just tell the model to break the instruction into steps, and then output the result of each step. This approach is called [chain of thought prompting](chain-of-thought-prompting.md).
+- It's usually better to implement a series of steps using a sequence of directives. If you tell the model to output the result of each step, when a problem arises you can easily see which step caused it. Although you can tell the model exactly what steps to follow, you can also just tell the model to break the instruction into steps itself, and tthen to output the result of each step. This approach is called [chain of thought prompting](chain-of-thought-prompting.md).
 
 Instructions are typically more effective when used with examples. However, when you use both in a prompt you should make sure that the instructions are either above or below the examples for best model performance.
 
 Sometimes GPT models don't follow an instruction the way you expect because it doesn't provide enough context. You can add more context to an instruction by including primary and supporting content. You can include these when you add an instruction, and can add or adjust them after you test your instruction's effect.
 
-The earlier GPT models that generate text or code follow any instructions that you include in a prompt. Newer GPT models that support chat-based apps follow instructions that are in a [system message](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/advanced-prompt-engineering?pivots=programming-language-chat-completions#system-message) or a user message, but not in an assistant message.
+The earlier GPT models that generate text or code follow any instructions that you include in a prompt. Newer GPT models that support chat-based apps follow instructions that are in a [system message](/azure/ai-services/openai/concepts/advanced-prompt-engineering?pivots=programming-language-chat-completions#system-message) or a user message, but not in an assistant message.
 
 ### Primary content
 
@@ -65,7 +65,7 @@ John Adams ...'" //Text truncated;
 
 ### Supporting content
 
-Supporting content is text that an instruction uses as input but isn't the subject of the instruction. The instruction must refer to the supporting content. As with primary content, supporting content should be clearly distinct from the instruction it supports.
+Supporting content is text that the model processes as part of an instruction, but which isn't the subject of the instruction. The instruction must refer to the supporting content. As with primary content, supporting content should be clearly distinct from the instruction it supports.
 
 Suppose you use the instruction **"Summarize US Presidential accomplishments"** to produce a list. The model might organized and order it in any number of ways. But what if you want the list to group the accomplishments by a specific set of categories? You could adjust your instruction by appending **"&nbsp;grouped by category"** to it, but a model is unlikely to correctly determine which specific categories you want.
 
@@ -92,14 +92,14 @@ An example is text that shows the model how to respond by providing sample user 
 
 Like a normal GPT interaction, an example starts with a prompt. The example can include a completion but it's not required. A completion in an example doesn't have to include the verbatim response&mdash;it might just contain a formatted word, the first bullet in an unordered list, or something similar to indicate how each completion should start.  
 
-Examples are classified as zero-shot learning or few-shot learning based on whether they contain verbatim completions.
+Examples are classified as [zero-shot learning or few-shot learning](zero-shot-learning.md) based on whether they contain verbatim completions.
 
 - **Zero-shot learning** examples include a prompt with no verbatim completion. Because they don't include verbatim completions, zero-shot prompts test a model's responses without giving it example data output. (Zero-shot prompts can have  completions that include cues, such as indicating the model should output an ordered list by including **"1."** as the completion.)
 - **Few-shot learning** examples include several pairs of prompts with verbatim completions. Few-shot learning can change the model's behavior by adding to its existing knowledge.
 
 ## Cues
 
-A cue is a line of text that conveys the desired structure or format of output. Like an instruction, a cue isn't processed by the model as if it were user input. Like an example, a cue shows the model what you want instead of telling it what to do. You can add as many cues as you want, so you can iterate to get the result you want. Cues are used with an instruction or an example and should be at the end of the prompt.
+A cue is text that conveys the desired structure or format of output. Like an instruction, a cue isn't processed by the model as if it were user input. Like an example, a cue shows the model what you want instead of telling it what to do. You can add as many cues as you want, so you can iterate to get the result you want. Cues are used with an instruction or an example and should be at the end of the prompt.
 
 Suppose you use an instruction to tell the model to produce a list of presidential accomplishments by category, along with supporting content that tells the model what categories to use. You decide that you want the model to produce a nested list with all caps for categories, with each president's accomplishments in each category listed on one line that begins with their name, with presidents listed chronologically. After your instruction and supporting content, you could add three cues to show the model how to structure and format the list:
 
@@ -126,13 +126,13 @@ DOMESTIC POLICY
 
 ## .NET implementations
 
-This section compares two .NET options for prompt engineering: Semantic Kernel and Azure OpenAI.
+This section compares two .NET options for prompt engineering: [Semantic Kernel](/semantic-kernel/overview/) and [Azure OpenAI](/azure/ai-services/openai/overview).
 
 ### Semantic Kernel
 
 Semantic Kernel is an SDK that integrates Large Language Models (LLMs) with conventional programming languages such as C#, Python, and Java. Semantic Kernel lets you define plugins and easily chain them together in just a few lines of code.
 
-Even better, Semantic Kernel can automatically orchestrate plugins with AI. With [Semantic Kernel planners](https://learn.microsoft.com/en-us/semantic-kernel/agents/planners/?tabs=Csharp), you can ask an LLM to generate a plan that achieves a user's unique goal. Semantic Kernel can then execute that plan for users.
+Even better, Semantic Kernel can automatically orchestrate plugins with AI. With [Semantic Kernel planners](/semantic-kernel/agents/planners/?tabs=Csharp), you can ask an LLM to generate a plan that achieves a user's unique goal. Semantic Kernel can then execute that plan for users.
 
 By deeply integrating with Visual Studio Code, Semantic Kernel also makes it easy for you to integrate prompt engineering into your existing development processes:
 
@@ -145,7 +145,10 @@ SK Completions use GPT-3 and GPT-3.5 models, which have no specific format rules
 SK Chat Completions use GPT-35-Turbo and GPT-4 models, which use a specific chat-like format consisting of role-based messages as shown in the following example.
 
 ```csharp
-prompt = @$"<message role=""system"">You are helping students with US History homework. Answers should not be about other countries except in relation to the US. Provide some supporting information for answers. Format any summaries using lists.</message><message role=""user"">Which president had the shortest term?<message/><message role=""assistant"">William Henry Harrison died just 31 days after his inauguration as president in 1841, making his presidency the shortest in U.S. history.<message/><message role=""user"">Instructions: Summarize US Presidential accomplishments, grouped by category.
+prompt = @$"<message role=""system"">You are helping students with US History homework. Answers should not be about other countries except in relation to the US. Provide some supporting information for answers. Format any summaries using lists.</message>
+<message role=""user"">Which president had the shortest term?<message/>
+<message role=""assistant"">William Henry Harrison died just 31 days after his inauguration as president in 1841, making his presidency the shortest in U.S. history.<message/>
+<message role=""user"">Instructions: Summarize US Presidential accomplishments, grouped by category. Categories: Domestic Policy, US Economy, Foreign Affairs, Space Exploration, Other.</message>";
 Categories: Domestic Policy, US Economy, Foreign Affairs, Space Exploration, Other.</message>
 ```
 
@@ -155,36 +158,33 @@ Azure OpenAI is a managed service that allows developers to deploy, tune, and ge
 
 Use the client library for Azure OpenAI to:
 
-- Engineer generated text completions via the [Completion API](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/advanced-prompt-engineering?pivots=programming-language-completions).
-- Engineer chat-based completions via the [Chat Completion API](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/advanced-prompt-engineering?pivots=programming-language-chat-completions).
-
-Azure OpenAI Completions use GPT-3 and GPT-3.5 models, which have no specific format rules for prompts.
+- Engineer generated text completions via the [Completion API](/azure/ai-services/openai/concepts/advanced-prompt-engineering?pivots=programming-language-completions).
+- Engineer chat-based completions via the [Chat Completion API](/azure/ai-services/openai/concepts/advanced-prompt-engineering?pivots=programming-language-chat-completions).
 
 ```csharp
-Prompts = 
-    { 
-        "Summarize US Presidential accomplishments, grouped by category.",
-        "Categories: domestic policy, judicial appointments, trade agreements, space exploration", 
-    }
+Prompts =
+{
+    "Summarize US Presidential accomplishments, grouped by category.",
+    "Categories: domestic policy, judicial appointments, trade agreements, space exploration", 
+}
 ```
 
 Azure OpenAI Chat Completions use GPT-35-Turbo and GPT-4 models, which use a specific chat-like format consisting of role-based messages.
 
 ```csharp
 Messages =
-    {
-        // The system message represents instructions or other guidance about how the assistant should behave
-        new ChatRequestSystemMessage("You are helping students of US History with their homework. Be cheerful about it."),
-        // User messages represent current or historical input from the end user
-        new ChatRequestUserMessage("I need help with my homework."),
-        // Assistant messages represent historical responses from the assistant
-        new ChatRequestAssistantMessage("Of course! That's what I'm here for. How can I help?"),
-        new ChatRequestUserMessage("Summarize US Presidential accomplishments, grouped by category.\\n Categories: domestic policy, judicial appointments, trade agreements, space exploration"),
-    }
+{
+    // The system message represents instructions or other guidance about how the assistant should behave
+    new ChatRequestSystemMessage("You are helping students of US History with their homework. Be cheerful about it."),
+    // User messages represent current or historical input from the end user
+    new ChatRequestUserMessage("I need help with my homework."),
+    // Assistant messages represent historical responses from the assistant
+    new ChatRequestAssistantMessage("Of course! That's what I'm here for. How can I help?"),
+    new ChatRequestUserMessage("Summarize US Presidential accomplishments, grouped by category.\\n Categories: domestic policy, judicial appointments, trade agreements, space exploration"),
+}
 ```
 
 ## Related content
 
-- [Prompt engineering techniques](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/advanced-prompt-engineering)
-- [Zero-shot and few-shot learning](zero-shot-learning.md)
-- [Configure prompts in Semantic Kernel](https://learn.microsoft.com/en-us/semantic-kernel/prompts/configure-prompts?tabs=Csharp)
+- [Prompt engineering techniques](/azure/ai-services/openai/concepts/advanced-prompt-engineering)
+- [Configure prompts in Semantic Kernel](/semantic-kernel/prompts/configure-prompts?tabs=Csharp)

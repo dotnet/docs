@@ -11,7 +11,7 @@ ms.date: 04/10/2024
 
 # Chain of thought prompting
 
-This article explains the use of chain of thought prompting for .NET prompt engineering.
+This article explains the use of chain of thought prompting in .NET.
 
 GPT model performance benefits from [prompt engineering](prompt-engineering-in-dot-net.md), the practice of providing instructions and examples to a model to prime or refine its output. Models often perform better if the task is broken down into smaller steps, which can cause an instruction to become quite long and introduce unintended complexity.
 
@@ -49,4 +49,4 @@ prompt= @$"Instructions: Compare the pros and cons of EVs and petroleum-fueled v
 
 ## Related content
 
-- [Prompt engineering techniques](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/advanced-prompt-engineering)
+- [Prompt engineering techniques](/azure/ai-services/openai/concepts/advanced-prompt-engineering)

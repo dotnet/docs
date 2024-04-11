@@ -13,13 +13,13 @@ ms.date: [mm/dd/yyyy]
 
 # Zero-shot and few-shot learning
 
-This article explains zero-shot learning and few-shot learning in .NET prompt engineering, including their primary use cases.
+This article explains zero-shot learning and few-shot learning for prompt engineering in .NET, including their primary use cases.
 
 GPT model performance benefits from [prompt engineering](prompt-engineering-in-dot-net.md), the practice of providing instructions and examples to a model to refine its output. Zero-shot learning and few-shot learning are techniques that you can use when providing examples.
 
-With zero-shot learning, you include prompts but not verbatim completions (you can include completions that only consist of cues). This means zero-shot learning relies entirely on the model's existing knowledge to generate responses, making it the most cost-effective option for prompt engineering. However, it doesn't add to the model's knowledge.
+With zero-shot learning, you include prompts but not verbatim completions (you can include completions that only consist of cues). Zero-shot learning relies entirely on the model's existing knowledge to generate responses, reducing the amount of tokens created, which can help you control costs. However, zero-shot learning doesn't add to the model's knowledge.
 
-For example, the following zero-shot prompt tells the model to evaluate user input to determine which of four possible intents it represents, and then to preface its response with **"Intent: "**.
+Here's an example zero-shot prompt that tells the model to evaluate user input to determine which of four possible intents the input represents, and then to preface its response with **"Intent: "**.
 
 ```csharp
 prompt = @$"Instructions: What is the intent of this request?
@@ -29,7 +29,7 @@ User Input: {request}
 Intent: ";
 ```
 
-With few-shot learning, you include prompts paired with verbatim completions. This makes few-shot learning more resource-intensive because it adds to the model's knowledge, but it also improves responses by providing examples. 
+With few-shot learning, you include prompts paired with verbatim completions. Compared to zero-shot learning, this means few-shot learning produces more tokens and causes the model to update its knowledge, which can make few-shot learning more resource-intensive. However, for the same reasons few-shot learning also helps the model produce more relevant responses.
 
 ```csharp
 prompt = @$"Instructions: What is the intent of this request?
@@ -59,9 +59,9 @@ Zero-shot learning is the practice of passing prompts that aren't paired with ve
 
 This section explains the use cases for few-shot learning with a GPT-model.
 
-Few-shot learning is the practice of passing few-shot prompts (prompts paired with verbatim completions) to show your model how to respond. Unlike zero-shot learning, few-shot learning can add to the model's knowledge. It has two primary use cases:
+Few-shot learning is the practice of passing prompts paired with verbatim completions (few-shot prompts) to show your model how to respond. Unlike zero-shot learning, few-shot learning can add to the model's knowledge. It has two primary use cases:
 
-- **Tuning an LLM** - Because it can add to the model's knowledge, few-shot learning can improve a model's performance. It also causes more tokens to be created, which can eventually become prohibitively expensive or even infeasible. However, if your LLM isn't fined-tuned yet, you won't get good performance with zero-shot prompts, and few-shot learning is warranted.
+- **Tuning an LLM** - Because it can add to the model's knowledge, few-shot learning can improve a model's performance. It also causes the model to create more tokens than zero-shot learning does, which can eventually become prohibitively expensive or even infeasible. However, if your LLM isn't fined-tuned yet, you won't get good performance with zero-shot prompts, and few-shot learning is warranted.
 - **Fixing performance issues** - You can use few-shot learning as a follow-on to zero-shot learning. In this case, you use zero-shot learning to establish a performance baseline, and then experiment with few-shot learning based on the zero-shot prompts you used. This lets you add to the model's knowledge after seeing how it currently responds, so you can iterate and improve performance while minimizing the number of tokens you introduce.  
 
 ### Caveats
@@ -72,8 +72,4 @@ Few-shot learning is the practice of passing few-shot prompts (prompts paired wi
 
 ## Related content
 
-- [Prompt engineering techniques](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/advanced-prompt-engineering)
-- [Related article title](link.md)
-- [Related article title](link.md)
-
---- Add more RLs after more docs are ready  
+- [Prompt engineering techniques](/azure/ai-services/openai/concepts/advanced-prompt-engineering)

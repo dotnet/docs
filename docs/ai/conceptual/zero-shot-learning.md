@@ -73,3 +73,6 @@ Few-shot learning is the practice of passing prompts paired with verbatim comple
 ## Related content
 
 - [Prompt engineering techniques](/azure/ai-services/openai/concepts/advanced-prompt-engineering)
+- [Chain of thought prompting][def]
+
+[def]: chain-of-thought-prompting.md

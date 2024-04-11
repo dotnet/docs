@@ -3,7 +3,7 @@ title: What's new in .NET libraries for .NET 9
 description: Learn about the new .NET libraries features introduced in .NET 9.
 titleSuffix: ""
 ms.date: 04/11/2024
-ms.topic: overview
+ms.topic: whats-new
 ---
 # What's new in .NET libraries for .NET 9
 
@@ -89,27 +89,6 @@ In .NET Core versions and .NET 5-8, support for building an assembly and emittin
 To create a `PersistedAssemblyBuilder` instance, call its constructor and pass the assembly name, the core assembly, `System.Private.CoreLib`, to reference base runtime types, and optional custom attributes. After you emit all members to the assembly, call the `PersistedAssemblyBuilder.Save(string assemblyFileName)` <!--<xref:System.Reflection.Emit.AssemblyBuilder.PersistedAssemblyBuilder.Save(System.String)>--> method to create an assembly with default settings. If you want to set the entry point or other options, you can call `PersistedAssemblyBuilder.GenerateMetadata(System.Reflection.Metadata.BlobBuilder,System.Reflection.Metadata.BlobBuilder)` <!--<xref:System.Reflection.Emit.AssemblyBuilder.PersistedAssemblyBuilder.GenerateMetadata(System.Reflection.Metadata.BlobBuilder,System.Reflection.Metadata.BlobBuilder)>--> and use the metadata it returns to save the assembly. The following code shows an example of creating a persisted assembly and setting the entry point.
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Reflection.cs" id="SaveAssembly":::
-
-## Tokenizers
-
-Tokenization is a fundamental component in the preprocessing of natural language text for AI models. Tokenizers are responsible for breaking down a string of text into smaller, more manageable parts, often referred to as *tokens*. When using services like Azure OpenAI, you can use tokenizers to get a better understanding of cost and manage context. When working with self-hosted or local models, tokens are the inputs provided to those models.
-
-[Microsoft.ML.Tokenizers](https://devblogs.microsoft.com/dotnet/announcing-ml-net-2-0/#tokenizer-support) is an open-source, cross-platform tokenization library. When it was introduced, the library was scoped to the [Byte-Pair Encoding (BPE)](https://en.wikipedia.org/wiki/Byte_pair_encoding) tokenization strategy to satisfy the language set of scenarios in ML.NET. .NET 9 adds the following enhancements to the library:
-
-- Refines APIs and existing functionality.
-- Adds `Tiktoken` support.
-- Adds `LlamaTokenizer` support.
-- Adds support for scenarios covered by the `DeepDev` and `SharpToken` libraries. If you're using `DeepDev` or `SharpToken`, we recommend migrating to `Microsoft.ML.Tokenizers`. For more details, see the [migration guide](https://github.com/dotnet/machinelearning/blob/main/docs/code/microsoft-ml-tokenizers-migration-guide.md).
-
-The following examples show how to use the `Tiktoken` and `LlamaTokenizer` text tokenizers.
-
-Use `Tiktoken` tokenizer:
-
-:::code language="csharp" source="../snippets/dotnet-9/csharp/Tiktoken.cs" id="Tiktoken":::
-
-Use `LlamaTokenizer` tokenizer:
-
-:::code language="csharp" source="../snippets/dotnet-9/csharp/LlamaTokenizer.cs" id="Llama":::
 
 ## New TimeSpan.From\* overloads
 

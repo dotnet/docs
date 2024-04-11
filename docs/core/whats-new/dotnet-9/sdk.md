@@ -3,7 +3,7 @@ title: What's new in the SDK for .NET 9
 description: Learn about the new .NET SDK features introduced in .NET 9.
 titleSuffix: ""
 ms.date: 04/11/2024
-ms.topic: overview
+ms.topic: whats-new
 ---
 # What's new in the SDK for .NET 9
 

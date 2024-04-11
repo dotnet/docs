@@ -3,7 +3,7 @@ title: What's new in .NET 9
 description: Learn about the new .NET features introduced in .NET 9.
 titleSuffix: ""
 ms.date: 04/11/2024
-ms.topic: overview
+ms.topic: whats-new
 ---
 # What's new in .NET 9
 
@@ -21,7 +21,7 @@ The .NET 9 runtime includes performance improvements, including faster exception
 
 ## .NET libraries
 
-The .NET 9 libraries include improvements to serialization, cryptography, LINQ, reflection emit, tokenizers, and more. For more information, see [What's new in the .NET 9 libraries](libraries.md).
+The .NET 9 libraries include improvements to serialization, cryptography, LINQ, reflection emit, and more. For more information, see [What's new in the .NET 9 libraries](libraries.md).
 
 ## .NET SDK
 

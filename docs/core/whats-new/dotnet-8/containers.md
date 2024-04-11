@@ -3,7 +3,7 @@ title: What's new in containers for .NET 8
 description: Learn about the new containers features introduced in .NET 8.
 titleSuffix: ""
 ms.date: 11/14/2023
-ms.topic: overview
+ms.topic: whats-new
 ms.custom: linux-related-content
 ---
 # What's new in containers for .NET 8

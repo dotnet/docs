@@ -23,7 +23,7 @@ helpviewer_keywords:
 ## What is Transport Layer Security (TLS)?
 
 > [!WARNING]
-> TLS 1.0 and 1.1 has been deprecated by [RFC8996](https://datatracker.ietf.org/doc/rfc8996/). This document will cover TLS 1.2 and TLS 1.3.
+> TLS 1.0 and 1.1 has been deprecated by [RFC8996](https://datatracker.ietf.org/doc/rfc8996/). This document covers TLS 1.2 and TLS 1.3 only.
 
 The Transport Layer Security (TLS) protocol is an industry latest version of the standard designed to help protect the privacy of information communicated over the Internet. [TLS 1.3](https://tools.ietf.org/html/rfc8446) is a standard that provides security improvements over previous versions. This article presents recommendations to secure .NET Framework applications that use the TLS protocol.
 

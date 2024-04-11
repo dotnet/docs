@@ -1,0 +1,18 @@
+items:
+- name: AI documentation for .NET developers
+  href: index.yml
+- name: AI concepts for .NET developers
+  href: overview.md # update once the doc is completed
+- name: Concepts
+  items:
+  - name: How generative AI and LLMs work
+    href: conceptual/how-genai-and-llms-work.md
+- name: How-to articles
+  items:
+  - name: Swap between OpenAI and AOAI
+    href: how-to/swap-between-openai-and-aoai.md
+- name: Tutorials
+  items:
+  - name: Data ingestion with search
+    href: tutorial/data-ingest-with-search.md # update once the doc is completed
+ 

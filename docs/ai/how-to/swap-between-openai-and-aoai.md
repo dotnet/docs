@@ -24,6 +24,12 @@ This article demonstrates how to swap between the OpenAI and [Azure OpenAI](/azu
 
 The following section shows how to add the Semantic Kernel SDK to your .NET project and use it to replace the AOAI client library.
 
+Switching to the Semantic Kernel SDK provides several benefits:
+
+- Easily switch between models from [AOAI](https://azure.microsoft.com/products/cognitive-services/openai-service/), [OpenAI](https://platform.openai.com/docs/), [Hugging Face](https://huggingface.co/), and more.
+- Describe your existing code to AI models, letting Semantic Kernel translate your model's responses into calls to your code.
+- Extensibility through connectors and plugins allows you to orchestrate your existing code without being locked into a specific AI model.
+
 To begin, add the [Semantic Kernel NuGet package](https://www.nuget.org/packages/Microsoft.SemanticKernel) to your project. The following command adds this package to the .NET project in your current working directory:
 
 ```dotnetcli

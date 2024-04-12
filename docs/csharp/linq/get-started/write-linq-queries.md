@@ -112,7 +112,13 @@ In the previous example, the `where` clause filters out all null elements in the
 
 In a join clause, if only one of the comparison keys is a nullable value type, you can cast the other to a nullable value type in the query expression. In the following example, assume that `EmployeeID` is a column that contains values of type `int?`:
 
-:::code language="csharp" source="./snippets/SnippetApp/how-to-handle-null-values-in-query-expressions_2.cs" :::
+```csharp
+var query =
+    from o in db.Orders
+    join e in db.Employees
+        on o.EmployeeID equals (int?)e.EmployeeID
+    select new { o.OrderID, e.FirstName };
+```
 
 In each of the examples, the `equals` query keyword is used. You can also use [pattern matching](../../language-reference/operators/patterns.md), which includes patterns for `is null` and `is not null`. These patterns aren't recommended in LINQ queries because query providers might not interpret the new C# syntax correctly. A query provider is a library that translates C# query expressions into a native data format, such as Entity Framework Core. Query providers implement the <xref:System.Linq.IQueryProvider?displayProperty=nameWithType> interface to create data sources that implement the <xref:System.Linq.IQueryable%601?displayProperty=nameWithType> interface.
 

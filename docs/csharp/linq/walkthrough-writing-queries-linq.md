@@ -42,7 +42,7 @@ Console.WriteLine("Hello, World!");
 
 Replace it with the following code that creates a sequence of `Student` records:
 
-:::code language="csharp" source="./snippets/WalkthroughWritingLinqQueries/StudentDataSource.cs" id="CreateSequence":::
+:::code language="csharp" source="./snippets/WalkthroughWritingLinqQueries/Program.cs" id="CreateSequence":::
 
 - The sequence of students is initialized with a collection expression.
 - The `Student` record type holds the static list of all students.

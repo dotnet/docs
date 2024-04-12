@@ -27,7 +27,7 @@ IEnumerable<Student> studentQuery =
     from student in students
     where student.Scores[0] > 90
     select student;
-// </DefineFirstQuery
+// </DefineFirstQuery>
 
 Console.WriteLine("\nRunning Query 1.............");
 // <RunFirstQuery>
@@ -151,7 +151,7 @@ void GroupVarQuery()
             Console.WriteLine($"   {student.Last}, {student.First}");
         }
     }
-    // </VarGroupVarQuery>
+    // </VarGroupQuery>
 }
 
 void OrderedGroupQuery()

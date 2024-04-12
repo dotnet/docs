@@ -3,7 +3,7 @@ title: "Kerberos package removed from Alpine and Debian images"
 description: Learn about the breaking change in containers where the 'krb5-libs' package was removed from .NET container images.
 ms.date: 08/01/2023
 ---
-# Kerberos package removed from .NET container images
+# Kerberos package removed from Alpine and Debian images
 
 Kerberos is no longer installed in .NET Alpine and Debian container images. Kerberos provides secure networking using the Kerberos protocol.
 

@@ -13,7 +13,7 @@ ms.date: 04/10/2024
 
 This article explains the use of chain of thought prompting in .NET.
 
-GPT model performance benefits from [prompt engineering](prompt-engineering-in-dot-net.md), the practice of providing instructions and examples to a model to prime or refine its output. Models often perform better if the task is broken down into smaller steps, which can cause an instruction to become quite long and introduce unintended complexity.
+GPT model performance benefits from [prompt engineering](prompt-engineering-in-dot-net.md), the practice of providing instructions and examples to a model to prime or refine its output. When processing instructions, models make more reasoning errors when they try to answer right away, rather than taking time to work out an answer. You can help the model reason its way toward correct answers more reliably by asking for the model to include its chain of thought&mdash;the steps it took to follow your instructions, along with the results of each step.
 
 Chain of thought prompting is the practice of prompting a GPT model to perform a task step-by-step and to present each step and its result in order in the output. This simplifies prompt engineering by offloading some execution planning to the model, and makes it easier to connect any problem to a specific step so you know where to focus further efforts.
 

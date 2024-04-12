@@ -11,7 +11,6 @@ The `ca-certificates` package is no longer installed in .NET Alpine container im
 
 Prior to .NET 8, the `ca-certificates` package was included in .NET's Alpine container images.
 
-
 ## New behavior
 
 .NET no longer includes the `ca-certificates` package in its Alpine container images.
@@ -26,7 +25,7 @@ This change can affect [binary compatibility](../../categories.md#binary-compati
 
 ## Reason for change
 
-The package was removed to reduce the image size. The removal of this package reduces .NET 8 Alpine images by 0.6MB.
+The package was removed to reduce the image size. The removal of this package reduces .NET 8 Alpine images by 0.6 MB.
 
 ## Recommended action
 

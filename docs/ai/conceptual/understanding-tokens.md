@@ -5,17 +5,17 @@ author: haywoodsloan
 ms.topic: concept-article
 ms.date: 04/05/2024
 
-#customer intent: As a .NET developer, I want understand how large language models (LLMs) use tokens to analyze semantic relationships and generate natural language outputs, so I may better use LLMs in my .NET projects.
+#customer intent: As a .NET developer, I want understand how large language models (LLMs) use tokens so I can add semantic analysis and text generation capabilities to my .NET projects.
 
 ---
 
 # Understanding tokens
 
-Tokens are the words or character sets that large language models (LLMs) decompose text into. During training, an LLM analyzes the semantic relationships between these tokens, such as how commonly they're used together or if they're used in similar contexts. Once trained, an LLM uses those patterns and relationships to generate a sequence of output tokens based on the input sequence.
+Tokens are the words or character sets that large language models (LLMs) decompose text into. During training, an LLM tokenizes the training text then analyzes the semantic relationships between these tokens, such as how commonly they're used together or if they're used in similar contexts. Once trained, an LLM uses those patterns and relationships to generate a sequence of output tokens based on the input sequence.
 
-## What are tokens?
+## Turning text into tokens
 
-The first step when training an LLM or inputting a prompt is tokenization. The text is broken down into a set of strings, known as _tokens_. These tokens can be distinct words, character sets, or combinations of words and punctuation. The set of unique tokens a model has been trained on is referred to as its _vocabulary_.
+The first step when training an LLM or inputting a prompt is tokenization. The model breaks down the text into a set of strings, known as _tokens_. These tokens can be distinct words, character sets, or combinations of words and punctuation. The set of unique tokens a model has been trained on is referred to as its _vocabulary_.
 
 For example, consider the following sentence:
 
@@ -33,11 +33,11 @@ This text could be tokenized as:
 - a
 - cat
 
-Only the first occurrence of the "a" token will be added to the model's vocabulary. All other occurrences can be represented by that first token.
+The model will only add the first occurrence of the "a" token to it's vocabulary. All other occurrences can be represented by that first token.
 
 With a sufficiently large set of training text, a vocabulary of many thousands of tokens can be compiled.
 
-## How are tokens determined?
+## Common tokenization methods
 
 The specific tokenization method varies by LLM. Some common tokenization methods include:
 
@@ -49,33 +49,20 @@ For example, the GPT models, developed by OpenAI, use _Byte-Pair Encoding_ (BPE)
 
 There are benefits and disadvantages to each tokenization method:
 
-**Smaller tokens (character or subword tokenization)**
+| Token size                                         | Pros                                                                                                                                                                                            | Cons                                                                                                                                                                                                 |
+| -------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Smaller tokens (character or subword tokenization) | - Allows the model to handle a wider range of inputs, such as unknown words, typos, or complex syntax<br>- Might allow the vocabulary size to be reduced, requiring less memory resources       | - A given text is broken into more tokens, requiring additional computational resources while processing<br>- Given a fixed token limit, the maximum size of the model's input and output is smaller |
+| Larger tokens (word tokenization)                  | - A given text is broken into fewer tokens, requiring less computational resources while processing<br>- Given the same token limit, the maximum size of the model's input and output is larger | - Might cause an increased vocabulary size, requiring more memory resources<br>- Can limit the models ability to handle unknown words, typos, or complex syntax                                      |
 
-- _Pros_:
-  - Allows the model to handle a wider range of inputs, such as unknown words, typos, or complex syntax
-  - Might allow the vocabulary size to be reduced, requiring less memory resources
-- _Cons_:
-  - A given text is broken into more tokens, requiring additional computational resources while processing
-  - Given a fixed token limit, the maximum size of the model's input and output is smaller
+## How LLMs use tokens
 
-**Larger tokens (word tokenization)**
+After completing tokenization, LLMs assign an ID to each unique token.
 
-- _Pros_:
-  - A given text is broken into fewer tokens, requiring less computational resources while processing
-  - Given the same token limit, the maximum size of the model's input and output is larger
-- _Cons_:
-  - Might cause an increased vocabulary size, requiring more memory resources
-  - Can limit the models ability to handle unknown words, typos, or complex syntax
-
-## How tokens are used
-
-While training, after a text has been tokenized, each unique token is assigned an ID.
-
-Consider the following sentence:
+Consider the following text:
 
 > I heard a dog bark loudly at a cat
 
-After tokenization, the following IDs could be assigned:
+After using a word tokenization method, a model could assign token IDs like this:
 
 - I (1)
 - heard (2)
@@ -89,30 +76,38 @@ After tokenization, the following IDs could be assigned:
 
 By assigning IDs, text can be represented as a sequence of token IDs. The previous sentence would be represented as [1, 2, 3, 4, 5, 6, 7, 3, 8]. The sentence "I heard a cat" would be represented as [1, 2, 3, 8].
 
-As training continues, any new tokens in the training text are added to the vocabulary and assigned an ID. For example:
+As training continues, the model add any new tokens in the training text to it's vocabulary and assigns it an ID. For example:
 
 - meow (9)
 - run (10)
 
-The semantic relationships between the tokens can be analyzed using these token ID sequences. These relationships are represented as multi-valued numeric vectors, known as [_embeddings_](understanding-embeddings.md). Each token is assigned an embedding based on how commonly it's used together with or in similar contexts to the other tokens.
+The semantic relationships between the tokens can be analyzed using these token ID sequences. Multi-valued numeric vectors, known as [_embeddings_](understanding-embeddings.md), are used to represent these relationships. An embedding is assigned to each token based on how commonly it's used together with or in similar contexts to the other tokens.
 
-During output generation, the model predicts a vector value for the next token in the sequence. This vector value is then used to select the next token from the model's vocabulary. In practice, multiple vectors are calculated using various elements of the preceding tokens' embeddings. The model then evaluates all potential tokens from these vectors and selects the most probable one to continue the sequence.
+During output generation, the model predicts a vector value for the next token in the sequence. The model then selects the next token from it's vocabulary based on this vector value. In practice, the models calculates multiple vectors using various elements of the preceding tokens' embeddings. The model then evaluates all potential tokens from these vectors and selects the most probable one to continue the sequence.
 
-Output generation is an iterative operation. The predicted token is appended to the sequence so far and used as the input for the next iteration, building the final output one token at a time.
+Output generation is an iterative operation. The model appends the predicted token to the sequence so far and uses that as the input for the next iteration, building the final output one token at a time.
 
 ### Token limits
 
-LLMs have limits on the maximum number of tokens that can be used as input context or generated as output. However, the limits for input context and output generation can differ.
+LLMs have limits on the maximum number of tokens that can be used as input or generated as output. This limit often combines the input and output tokens into a maximum context window.
 
-For example, GPT-4 supports up to 128,000 tokens of input context but only 4,096 tokens of output.
+For example, GPT-4 supports up to 8,192 tokens of context. The combined size of the input and output tokens can't exceed 8,192.
 
 Together a model's token limit and tokenization method determine the maximum length of text that can be provided as input or generated as output.
+
+For example, consider a model with a maximum context window of 100 tokens. For the following input text:
+
+> I heard a dog bark loudly at a cat
+
+With a word-based tokenization method, the input is 9 tokens leaving 91 **word** tokens available for the output.
+
+With a character-based tokenization method, the input is 34 tokens (including spaces) leaving only 66 **character** tokens available for the output.
 
 ### Token based pricing and rate limiting
 
 Generative AI services often use token-based pricing. The cost of each request depends on the number of input and output tokens. The pricing might differ between input and output. For example, see [Azure OpenAI Service pricing](https://azure.microsoft.com/pricing/details/cognitive-services/openai-service/).
 
-Generative AI services might also have limits on the maximum number of tokens per minute (TPM). These rate limits can vary depending on the service region and LLM. For example, see [Azure OpenAI Service quotas and limits](/azure/ai-services/openai/quotas-limits#regional-quota-limits).
+Generative AI services might also have limits on the maximum number of tokens per minute (TPM). These rate limits can vary depending on the service region and LLM. For more information about specific regions, see [Azure OpenAI Service quotas and limits](/azure/ai-services/openai/quotas-limits#regional-quota-limits).
 
 ## Related content
 

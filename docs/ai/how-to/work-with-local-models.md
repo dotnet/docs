@@ -34,7 +34,9 @@ article describes.
 
 -->
 
-[Introduce and explain the purpose of the article.]
+This article demonstrates how to integrate a local or custom model into the [Semantic Kernel SDK](/semantic-kernel/overview).
+
+Integrating a custom model enables the Semantic Kernel SDK to utilize any model you have available, regardless of where or how you access the model.
 
 <!-- Required: Introductory paragraphs (no heading)
 
@@ -45,6 +47,11 @@ and to describe the task the article covers.
 -->
 
 ## Prerequisites
+
+* An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
+* [.NET SDK](https://dotnet.microsoft.com/download/visual-studio-sdks)
+* [`Microsoft.SemanticKernel` NuGet package](https://www.nuget.org/packages/Microsoft.SemanticKernel)
+* Deploy your model, it should be accessible to your .NET application
 
 <!-- Optional: Prerequisites - H2
 
@@ -58,13 +65,16 @@ provide instructions and a link.
 
 -->
 
-## "[verb] * [noun]"
+## Implement prompt completion using a local model
 
-[Introduce the procedure.]
+The following section shows how to integration your model with the Semantic Kernel SDK for prompt completions.
 
-1. Procedure step
-1. Procedure step
-1. Procedure step
+1. Create a service class that implements the `ITextGenerationService` interface. For example:
+
+    :::code language="csharp" source="./snippets/semantic-kernel/services/MyTextGenerationService.cs" id="service":::
+
+2. Procedure step
+3. Procedure step
 
 <!-- Required: Steps to complete the task - H2
 

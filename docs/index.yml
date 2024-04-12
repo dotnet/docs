@@ -321,6 +321,8 @@ additionalContent:
         # Card
         - title: Machine learning and AI
           links:
+            - url: ai/index.yml
+              text: AI for .NET Developers
             - url: machine-learning/index.yml
               text: Build custom AI solutions with ML.NET
             - url: /azure/cognitive-services/

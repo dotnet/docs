@@ -58,7 +58,7 @@ This is commonly useful for containers, which often make use of `Systemd` consol
 
 :::code language="csharp" source="snippets/logging/console-formatter-systemd/Program.cs" highlight="5-9":::
 
-The example outputs similar to the following log messages:
+The example produces output similar to the following log messages:
 
 :::image type="content" source="media/console-logs-format-systemd.png" lightbox="media/console-logs-format-systemd.png" alt-text="Example console logs written with the Systemd formatter.":::
 

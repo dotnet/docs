@@ -102,7 +102,7 @@ You can use control flow statements, such as `if... else` or `switch`, to select
 
 ## Handle null values in query expressions
 
-This example shows how to handle possible null values in source collections. An object collection such as an <xref:System.Collections.Generic.IEnumerable%601> can contain elements whose value is [null](../language-reference/keywords/null.md). If a source collection is `null` or contains an element whose value is `null`, and your query doesn't handle `null` values, a <xref:System.NullReferenceException> is thrown when you execute the query.
+This example shows how to handle possible null values in source collections. An object collection such as an <xref:System.Collections.Generic.IEnumerable%601> can contain elements whose value is [null](../../language-reference/keywords/null.md). If a source collection is `null` or contains an element whose value is `null`, and your query doesn't handle `null` values, a <xref:System.NullReferenceException> is thrown when you execute the query.
 
 You can code defensively to avoid a null reference exception as shown in the following example:
 
@@ -114,11 +114,11 @@ In a join clause, if only one of the comparison keys is a nullable value type, y
 
 :::code language="csharp" source="./snippets/SnippetApp/how-to-handle-null-values-in-query-expressions_2.cs" :::
 
-In each of the examples, the `equals` query keyword is used. You can also use [pattern matching](../language-reference/operators/patterns.md), which includes patterns for `is null` and `is not null`. These patterns aren't recommended in LINQ queries because query providers might not interpret the new C# syntax correctly. A query provider is a library that translates C# query expressions into a native data format, such as Entity Framework Core. Query providers implement the <xref:System.Linq.IQueryProvider?displayProperty=nameWithType> interface to create data sources that implement the <xref:System.Linq.IQueryable%601?displayProperty=nameWithType> interface.
+In each of the examples, the `equals` query keyword is used. You can also use [pattern matching](../../language-reference/operators/patterns.md), which includes patterns for `is null` and `is not null`. These patterns aren't recommended in LINQ queries because query providers might not interpret the new C# syntax correctly. A query provider is a library that translates C# query expressions into a native data format, such as Entity Framework Core. Query providers implement the <xref:System.Linq.IQueryProvider?displayProperty=nameWithType> interface to create data sources that implement the <xref:System.Linq.IQueryable%601?displayProperty=nameWithType> interface.
 
 ## Handle exceptions in query expressions
 
-It's possible to call any method in the context of a query expression. However, we recommend that you avoid calling any method in a query expression that can create a side effect such as modifying the contents of the data source or throwing an exception. This example shows how to avoid raising exceptions when you call methods in a query expression without violating the general .NET guidelines on exception handling. Those guidelines state that it's acceptable to catch a specific exception when you understand why it's thrown in a given context. For more information, see [Best Practices for Exceptions](../../standard/exceptions/best-practices-for-exceptions.md).
+It's possible to call any method in the context of a query expression. However, we recommend that you avoid calling any method in a query expression that can create a side effect such as modifying the contents of the data source or throwing an exception. This example shows how to avoid raising exceptions when you call methods in a query expression without violating the general .NET guidelines on exception handling. Those guidelines state that it's acceptable to catch a specific exception when you understand why it's thrown in a given context. For more information, see [Best Practices for Exceptions](../../../standard/exceptions/best-practices-for-exceptions.md).
 
 The final example shows how to handle those cases when you must throw an exception during execution of a query.
 
@@ -140,6 +140,6 @@ Remember to catch whatever exception you expect to raise and/or do any necessary
 
 - [Walkthrough: Writing Queries in C#](../walkthrough-writing-queries-linq.md)
 - [where clause](../../language-reference/keywords/where-clause.md)
-- [Querying based on runtime state](../advanced-topics/expression-trees/debugview-syntax.md)
+- [Querying based on runtime state](../../advanced-topics/expression-trees/debugview-syntax.md)
 - <xref:System.Nullable%601>
-- [Nullable value types](../language-reference/builtin-types/nullable-value-types.md)
+- [Nullable value types](../../language-reference/builtin-types/nullable-value-types.md)

@@ -103,7 +103,7 @@ Create a C# console application project, with `using` directives for the System.
 
 The following example shows how to sort lines of structured text, such as comma-separated values, by any field in the line. The field may be dynamically specified at run time. Assume that the fields in scores.csv represent a student's ID number, followed by a series of four test scores.
 
-Copy the scores.csv data from the topic [How to join content from dissimilar files (LINQ) (C#)](./how-to-join-content-from-dissimilar-files-linq.md) and save it to your solution folder.
+Copy the scores.csv data from the topic [How to join content from dissimilar files (LINQ) (C#)](./how-to-query-files-and-directories.md#how-to-join-content-from-dissimilar-files-linq-c) and save it to your solution folder.
 
 ```csharp
 public class SortLines

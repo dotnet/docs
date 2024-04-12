@@ -620,7 +620,7 @@ Create a C# console application project, with `using` directives for the System.
 
 ## How to query the contents of text files in a folder (LINQ)
 
-This example shows how to query over all the files in a specified directory tree, open each file, and inspect its contents. This type of technique could be used to create indexes or reverse indexes of the contents of a directory tree. A simple string search is performed in this example. However, more complex types of pattern matching can be performed with a regular expression. For more information, see [How to combine LINQ queries with regular expressions (C#)](../programming-guide/concepts/linq/how-to-combine-linq-queries-with-regular-expressions.md).
+This example shows how to query over all the files in a specified directory tree, open each file, and inspect its contents. This type of technique could be used to create indexes or reverse indexes of the contents of a directory tree. A simple string search is performed in this example. However, more complex types of pattern matching can be performed with a regular expression.
 
 ```csharp
 class QueryContents

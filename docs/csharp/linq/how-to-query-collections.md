@@ -4,7 +4,7 @@ description: This series of examples shows you a variety of LINQ techniques to u
 ms.topic: how-to
 ms.date: 04/12/2024
 ---
-## LINQ and collections
+# LINQ and collections
 
 Say a few introductory words about LINQ and collections, LINQ to objects, and arrays.
 
@@ -12,7 +12,35 @@ Say a few introductory words about LINQ and collections, LINQ to objects, and ar
 
 This example shows how to use LINQ to compare two lists of strings and output those lines that are in names1.txt but not in names2.txt.
 
-Copy names1.txt and names2.txt to your solution folder as shown in [How to combine and compare string collections (LINQ) (C#)](./how-to-combine-and-compare-string-collections-linq.md).
+Copy these names into a text file that is named names1.txt and save it in your project folder:
+
+```text
+Bankov, Peter
+Holm, Michael
+Garcia, Hugo
+Potra, Cristina
+Noriega, Fabricio
+Aw, Kam Foo
+Beebe, Ann
+Toyoshima, Tim
+Guy, Wey Yuan
+Garcia, Debra
+```
+
+Copy these names into a text file that is named names2.txt and save it in your project folder. Note that the two files have some names in common.
+
+```text
+Liu, Jinghao
+Bankov, Peter
+Holm, Michael
+Garcia, Hugo
+Beebe, Ann
+Gilchrist, Beth
+Myrcha, Jacek
+Giakoumakis, Leo
+McLin, Nkenge
+El Yassir, Mehdi
+```
 
 ```csharp
 class CompareLists
@@ -213,7 +241,7 @@ This example shows how to merge data from different sources into a sequence of n
 > [!NOTE]
 > Don't try to join in-memory data or data in the file system with data that is still in a database. Such cross-domain joins can yield undefined results because of different ways in which join operations might be defined for database queries and other types of sources. Additionally, there is a risk that such an operation could cause an out-of-memory exception if the amount of data in the database is large enough. To join data from a database to in-memory data, first call `ToList` or `ToArray` on the database query, and then perform the join on the returned collection.
 
-Copy the names.csv and scores.csv files into your project folder, as described in [How to join content from dissimilar files (LINQ) (C#)](./how-to-join-content-from-dissimilar-files-linq.md).
+Copy the names.csv and scores.csv files into your project folder, as described elsewhere in this file.
 
 The following example shows how to use a named type `Student` to store merged data from two in-memory collections of strings that simulate spreadsheet data in .csv format. The first collection of strings represents the student names and IDs, and the second collection represents the student ID (in the first column) and four exam scores. The ID is used as the foreign key.
 
@@ -300,7 +328,7 @@ class PopulateCollection
  */
 ```
 
-In the [select](../../../language-reference/keywords/select-clause.md) clause, an object initializer is used to instantiate each new `Student` object by using the data from the two sources.
+In the [select](../../language-reference/keywords/select-clause.md) clause, an object initializer is used to instantiate each new `Student` object by using the data from the two sources.
 
 If you don't have to store the results of a query, anonymous types can be more convenient than named types. Named types are required if you pass the query results outside the method in which the query is executed. The following example executes the same task as the previous example, but uses anonymous types instead of named types:
 
@@ -334,7 +362,7 @@ foreach (var student in queryNamesScores2)
 
 ## How to query an ArrayList with LINQ (C#)
 
-When using LINQ to query non-generic <xref:System.Collections.IEnumerable> collections such as <xref:System.Collections.ArrayList>, you must explicitly declare the type of the range variable to reflect the specific type of the objects in the collection. For example, if you have an <xref:System.Collections.ArrayList> of `Student` objects, your [from clause](../../../language-reference/keywords/from-clause.md) should look like this:
+When using LINQ to query non-generic <xref:System.Collections.IEnumerable> collections such as <xref:System.Collections.ArrayList>, you must explicitly declare the type of the range variable to reflect the specific type of the objects in the collection. For example, if you have an <xref:System.Collections.ArrayList> of `Student` objects, your [from clause](../../language-reference/keywords/from-clause.md) should look like this:
 
 ```csharp
 var query = from Student s in arrList
@@ -343,7 +371,7 @@ var query = from Student s in arrList
 
 By specifying the type of the range variable, you are casting each item in the <xref:System.Collections.ArrayList> to a `Student`.
 
-The use of an explicitly typed range variable in a query expression is equivalent to calling the <xref:System.Linq.Enumerable.Cast%2A> method. <xref:System.Linq.Enumerable.Cast%2A> throws an exception if the specified cast cannot be performed. <xref:System.Linq.Enumerable.Cast%2A> and <xref:System.Linq.Enumerable.OfType%2A> are the two Standard Query Operator methods that operate on non-generic <xref:System.Collections.IEnumerable> types. For more information, see [Type Relationships in LINQ Query Operations](../../../linq/get-started/type-relationships-in-linq-query-operations.md).
+The use of an explicitly typed range variable in a query expression is equivalent to calling the <xref:System.Linq.Enumerable.Cast%2A> method. <xref:System.Linq.Enumerable.Cast%2A> throws an exception if the specified cast cannot be performed. <xref:System.Linq.Enumerable.Cast%2A> and <xref:System.Linq.Enumerable.OfType%2A> are the two Standard Query Operator methods that operate on non-generic <xref:System.Collections.IEnumerable> types. For more information, see [Type Relationships in LINQ Query Operations](get-started/type-relationships-in-linq-query-operations.md).
 
 The following example shows a simple query over an <xref:System.Collections.ArrayList>. Note that this example uses object initializers when the code calls the <xref:System.Collections.ArrayList.Add%2A> method, but this is not a requirement.
 
@@ -404,5 +432,5 @@ namespace NonGenericLINQ
 
 ## See also
 
-- [Object and Collection Initializers](../../classes-and-structs/object-and-collection-initializers.md)
-- [Anonymous Types](../../../fundamentals/types/anonymous-types.md)
+- [Object and Collection Initializers](../programming-guide/classes-and-structs/object-and-collection-initializers.md)
+- [Anonymous Types](../fundamentals/types/anonymous-types.md)

@@ -154,7 +154,7 @@ For instance, the previous example could be rewritten as follows:
 
 You extend the set of methods that you use for LINQ queries by adding extension methods to the <xref:System.Collections.Generic.IEnumerable%601> interface. For example, in addition to the standard average or maximum operations, you create a custom aggregate method to compute a single value from a sequence of values. You also create a method that works as a custom filter or a specific data transform for a sequence of values and returns a new sequence. Examples of such methods are <xref:System.Linq.Enumerable.Distinct%2A>, <xref:System.Linq.Enumerable.Skip%2A>, and <xref:System.Linq.Enumerable.Reverse%2A>.
 
-When you extend the <xref:System.Collections.Generic.IEnumerable%601> interface, you can apply your custom methods to any enumerable collection. For more information, see [Extension Methods](../../classes-and-structs/extension-methods.md).
+When you extend the <xref:System.Collections.Generic.IEnumerable%601> interface, you can apply your custom methods to any enumerable collection. For more information, see [Extension Methods](../programming-guide/classes-and-structs/extension-methods.md).
 
 ### Add an aggregate method
 
@@ -279,7 +279,6 @@ The `GetEnumerator` method of the `Chunk` class is invoked by the inner foreach 
 
 ## See also
 
-- [Execute expression trees](../../../advanced-topics/expression-trees/expression-trees-execution.md)
-- [Dynamically specify predicate filters at run time](../../../linq/dynamically-specify-predicate-filters-at-runtime.md)
+- [Execute expression trees](../advanced-topics/expression-trees/expression-trees-execution.md)
 - <xref:System.Collections.Generic.IEnumerable%601>
-- [Extension Methods](../../classes-and-structs/extension-methods.md)
+- [Extension Methods](../programming-guide/classes-and-structs/extension-methods.md)

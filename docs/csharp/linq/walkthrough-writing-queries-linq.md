@@ -37,7 +37,7 @@ The data source for the queries is a simple list of `Student` objects. Each `Stu
 - Each student in the list is initialized with an object initializer.  
 - The list itself is initialized with a collection initializer.
 
-This whole data structure will be initialized and instantiated without explicit calls to any constructor or explicit member access. For more information about these new features, see [Auto-Implemented Properties](../../classes-and-structs/auto-implemented-properties.md) and [Object and Collection Initializers](../../classes-and-structs/object-and-collection-initializers.md).
+This whole data structure will be initialized and instantiated without explicit calls to any constructor or explicit member access. For more information about these new features, see [Auto-Implemented Properties](../programming-guide/classes-and-structs/auto-implemented-properties.md) and [Object and Collection Initializers](../programming-guide/classes-and-structs/object-and-collection-initializers.md).
 
 #### To add the data source
 
@@ -53,7 +53,7 @@ This whole data structure will be initialized and instantiated without explicit 
 
 #### To create a simple query
 
-- In the application's `Main` method, create a simple query that, when it is executed, will produce a list of all students whose score on the first test was greater than 90. Note that because the whole `Student` object is selected, the type of the query is `IEnumerable<Student>`. Although the code could also use implicit typing by using the [var](../../../language-reference/statements/declarations.md#implicitly-typed-local-variables) keyword, explicit typing is used to clearly illustrate results. (For more information about `var`, see [Implicitly Typed Local Variables](../../classes-and-structs/implicitly-typed-local-variables.md).)
+- In the application's `Main` method, create a simple query that, when it is executed, will produce a list of all students whose score on the first test was greater than 90. Note that because the whole `Student` object is selected, the type of the query is `IEnumerable<Student>`. Although the code could also use implicit typing by using the [var](../language-reference/statements/declarations.md#implicitly-typed-local-variables) keyword, explicit typing is used to clearly illustrate results. (For more information about `var`, see [Implicitly Typed Local Variables](../programming-guide/classes-and-structs/implicitly-typed-local-variables.md).)
 
 Note also that the query's range variable, `student`, serves as a reference to each `Student` in the source, providing member access for each object.  
 
@@ -77,7 +77,7 @@ Note also that the query's range variable, `student`, serves as a reference to e
    where student.Scores[0] > 90 && student.Scores[3] < 80  
    ```  
 
-For more information, see [where clause](../../../language-reference/keywords/where-clause.md).
+For more information, see [where clause](../language-reference/keywords/where-clause.md).
 
 ## Modify the Query
 
@@ -96,7 +96,7 @@ For more information, see [where clause](../../../language-reference/keywords/wh
    Console.WriteLine("{0}, {1} {2}", student.Last, student.First, student.Scores[0]);
    ```
 
-For more information, see [orderby clause](../../../language-reference/keywords/orderby-clause.md).
+For more information, see [orderby clause](../language-reference/keywords/orderby-clause.md).
 
 #### To group the results
 
@@ -106,14 +106,14 @@ For more information, see [orderby clause](../../../language-reference/keywords/
    [!code-csharp[CsLINQGettingStarted#15](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQGettingStarted/CS/Class1.cs#15)]
 1. Run the application and view the results in the **Console** window.
 
-For more information, see [group clause](../../../language-reference/keywords/group-clause.md).
+For more information, see [group clause](../language-reference/keywords/group-clause.md).
 
 #### To make the variables implicitly typed
 
 1. Explicitly coding `IEnumerables` of `IGroupings` can quickly become tedious. You can write the same query and `foreach` loop much more conveniently by using `var`. The `var` keyword does not change the types of your objects; it just instructs the compiler to infer the types. Change the type of `studentQuery` and the iteration variable `group` to `var` and rerun the query. Note that in the inner `foreach` loop, the iteration variable is still typed as `Student`, and the query works just as before. Change the `student` iteration variable to `var` and run the query again. You see that you get exactly the same results.
    [!code-csharp[CsLINQGettingStarted#16](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQGettingStarted/CS/Class1.cs#16)]
 
-For more information about [var](../../../language-reference/statements/declarations.md#implicitly-typed-local-variables), see [Implicitly Typed Local Variables](../../classes-and-structs/implicitly-typed-local-variables.md).
+For more information about [var](../language-reference/statements/declarations.md#implicitly-typed-local-variables), see [Implicitly Typed Local Variables](../programming-guide/classes-and-structs/implicitly-typed-local-variables.md).
   
 #### To order the groups by their key value
 
@@ -127,11 +127,11 @@ When you run this query, you will see the groups are now sorted in alphabetical 
 1. You can use the `let` keyword to introduce an identifier for any expression result in the query expression. This identifier can be a convenience, as in the following example, or it can enhance performance by storing the results of an expression so that it does not have to be calculated multiple times.
    [!code-csharp[csLINQGettingStarted#18](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQGettingStarted/CS/Class1.cs#18)]
 
-For more information, see [let clause](../../../language-reference/keywords/let-clause.md).
+For more information, see [let clause](../language-reference/keywords/let-clause.md).
 
 #### To use method syntax in a query expression
 
-1. As described in [Query Syntax and Method Syntax in LINQ](../../../linq/get-started/write-linq-queries.md), some query operations can only be expressed by using method syntax. The following code calculates the total score for each `Student` in the source sequence, and then calls the `Average()` method on the results of that query to calculate the average score of the class.
+1. As described in [Query Syntax and Method Syntax in LINQ](./get-started/write-linq-queries.md), some query operations can only be expressed by using method syntax. The following code calculates the total score for each `Student` in the source sequence, and then calls the `Average()` method on the results of that query to calculate the average score of the class.
    [!code-csharp[csLINQGettingStarted#19](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQGettingStarted/CS/Class1.cs#19)]
 
 #### To transform or project in the select clause
@@ -140,8 +140,3 @@ For more information, see [let clause](../../../language-reference/keywords/let-
    [!code-csharp[csLINQGettingStarted#20](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQGettingStarted/CS/Class1.cs#20)]
 1. Code earlier in this walkthrough indicated that the average class score is approximately 334. To produce a sequence of `Students` whose total score is greater than the class average, together with their `Student ID`, you can use an anonymous type in the `select` statement:
    [!code-csharp[csLINQGettingStarted#21](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQGettingStarted/CS/Class1.cs#21)]
-
-## See also
-
-- [Language-Integrated Query (LINQ) (C#)](/dotnet/csharp/linq/)
-- [LINQ Query Expressions](../../../linq/index.md)

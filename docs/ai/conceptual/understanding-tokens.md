@@ -3,7 +3,7 @@ title: "Understanding tokens"
 description: "Understand how large language models (LLMs) use tokens to analyze semantic relationships and generate natural language outputs"
 author: haywoodsloan
 ms.topic: concept-article
-ms.date: 04/05/2024
+ms.date: 04/12/2024
 
 #customer intent: As a .NET developer, I want understand how large language models (LLMs) use tokens so I can add semantic analysis and text generation capabilities to my .NET projects.
 

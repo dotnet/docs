@@ -89,22 +89,35 @@ class LocalModelExamples
             // Add execution settings, such as the ModelID and ExtensionData
         };
 
-        // Initialize a chat history with your initial system message
+        // Send a string representation of the chat history to your model directly through the Kernel
+        // This uses a special syntax to denote the role for each message
+        // For more information on this syntax see https://learn.microsoft.com/en-us/semantic-kernel/prompts/your-first-prompt?tabs=Csharp#6-using-message-roles-in-chat-completion-prompts
+        string prompt = @"
+        <message role=""system"">the initial system message for your chat history</message>
+        <message role=""user"">the user's initial message</message>";
+
+        string? response = await kernel.InvokePromptAsync<string>(prompt);
+        Console.WriteLine($"Output: {response}");
+
+        // Alteratively, send a prompt to your model through the chat completion service
+        // First, initialize a chat history with your initial system message
         string systemMessage = "<the initial system message for your chat history>";
         Console.WriteLine($"System Prompt: {systemMessage}");
         var chatHistory = new ChatHistory(systemMessage);
 
         // Add the user's input to your chat history
-        string userGreeting = "<the user's initial greeting message>";
-        Console.WriteLine($"User: {userGreeting}");
-        chatHistory.AddUserMessage(userGreeting);
+        string userRequest = "<the user's initial message>";
+        Console.WriteLine($"User: {userRequest}");
+        chatHistory.AddUserMessage(userRequest);
 
-        // Send the chat history to your model through the chat completion service
-        // Add the model's response to the chat history
+        // Get the models response and add it to the chat history
         IChatCompletionService service = kernel.GetRequiredService<IChatCompletionService>();
-        ChatMessageContent response = await service.GetChatMessageContentAsync(chatHistory, executionSettings);
-        Console.WriteLine($"Assistant: {response.Content}");
-        chatHistory.Add(response);
+        ChatMessageContent responseMessage = await service.GetChatMessageContentAsync(chatHistory, executionSettings);
+        Console.WriteLine($"Assistant: {responseMessage.Content}");
+        chatHistory.Add(responseMessage);
+
+        // Continue sending and receiving messages between the user and model
+        // ...
         // </useChatService>
     }
 }

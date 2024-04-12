@@ -123,6 +123,58 @@ pet.FirstName = "Jane";
 
 Required init-only properties support immutable structures while allowing natural syntax for users of the type.
 
+## Object Initializers with class-typed properties
+
+When initializing an object, particularly when reusing the current instance, it's crucial to consider the implications for class-typed properties.
+
+```csharp
+public class InitializationSample
+{
+    public class A
+    {
+        public int I { get; set; } = 3;
+        public bool B { get; set; } = true;
+        public string S { get; set; } = "abc";
+        public B ClassB { get; set; } = new() { BB = true, BI = 43 };
+
+        public override string ToString() => $"{I}|{B}|{S}|||{ClassB}";
+    }
+
+    public class B
+    {
+        public int BI { get; set; } = 23;
+        public bool BB { get; set; } = false;
+        public string BS { get; set; } = "BBBabc";
+
+        public override string ToString() => $"{BI}|{BB}|{BS}";
+    }
+
+    public static void Main()
+    {
+        var a = new A
+        {
+            I = 103,
+            B = false,
+            ClassB = { BI = 100003 } //Initializer, reuses current instance: ClassB's values will be: 100003 (new value we assign here), true (kept from A's initialization), "BBBabc" (unchanged default from B)
+        };
+        Console.WriteLine(a);
+
+        var a2 = new A
+        {
+            I = 103,
+            B = false,
+            ClassB = new() { BI = 100003 } //New instance
+        };
+        Console.WriteLine(a2);
+    }
+
+    // Output:
+    //103|False|abc|||100003|True|BBBabc
+    //103|False|abc|||100003|False|BBBabc
+}
+```
+The following example shows how, for ClassB, the initialization process involves updating specific values while retaining others from the original instance.
+
 ## Collection initializers
 
 Collection initializers let you specify one or more element initializers when you initialize a collection type that implements <xref:System.Collections.IEnumerable> and has `Add` with the appropriate signature as an instance method or an extension method. The element initializers can be a simple value, an expression, or an object initializer. By using a collection initializer, you do not have to specify multiple calls; the compiler adds the calls automatically.  

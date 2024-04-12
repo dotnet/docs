@@ -9,42 +9,11 @@ ms.date: 04/11/2024
 
 ---
 
-<!-- --------------------------------------
-
-- Use this template with pattern instructions for:
-
-How To
-
-- Before you sign off or merge:
-
-Remove all comments except the customer intent.
-
-- Feedback:
-
-https://aka.ms/patterns-feedback
-
--->
-
 # Work with local models
-
-<!-- Required: Article headline - H1
-
-Identify the product or service and the task the
-article describes.
-
--->
 
 This article demonstrates how to integrate a local or custom model into the [Semantic Kernel SDK](/semantic-kernel/overview).
 
 Integrating a custom model enables the Semantic Kernel SDK to utilize any model you have available, regardless of where or how you access the model.
-
-<!-- Required: Introductory paragraphs (no heading)
-
-Write a brief introduction that can help the user
-determine whether the article is relevant for them
-and to describe the task the article covers.
-
--->
 
 ## Prerequisites
 
@@ -53,71 +22,38 @@ and to describe the task the article covers.
 * [`Microsoft.SemanticKernel` NuGet package](https://www.nuget.org/packages/Microsoft.SemanticKernel)
 * Deploy your model, it should be accessible to your .NET application
 
-<!-- Optional: Prerequisites - H2
+## Implement text generation using a local model
 
-If included, "Prerequisites" must be the first H2 in the article.
-
-List any items that are needed for the integration,
-such as permissions or software.
-
-If you need to sign in to a portal to do the quickstart, 
-provide instructions and a link.
-
--->
-
-## Implement prompt completion using a local model
-
-The following section shows how to integration your model with the Semantic Kernel SDK for prompt completions.
+The following section shows how to integrate your model with the Semantic Kernel SDK and use it for text generation.
 
 1. Create a service class that implements the `ITextGenerationService` interface. For example:
 
     :::code language="csharp" source="./snippets/semantic-kernel/services/MyTextGenerationService.cs" id="service":::
 
-2. Procedure step
-3. Procedure step
+2. Include the new service class when building the `Kernel`. For example:
 
-<!-- Required: Steps to complete the task - H2
+    :::code language="csharp" source="./snippets/semantic-kernel/LocalModelExamples.cs" id="addTextService":::
 
-In one or more H2 sections, organize procedures. A section
-contains a major grouping of steps that help the user complete
-a task.
+3. Send a text generation prompt to your model directly through the `Kernel` or using the service class. For example:
 
-Begin each section with a brief explanation for context, and
-provide an ordered list of steps to complete the procedure.
+    :::code language="csharp" source="./snippets/semantic-kernel/LocalModelExamples.cs" id="useTextService":::
 
-If it applies, provide sections that describe alternative tasks or
-procedures.
+## Implement chat completion using a local model
 
--->
+The following section shows how to integrate your model with the Semantic Kernel SDK and use it for chat completion.
 
-## Next step -or- Related content
+1. Create a service class that implements the `IChatCompletionService` interface. For example:
 
-> [!div class="nextstepaction"]
-> [Next sequential article title](link.md)
+    :::code language="csharp" source="./snippets/semantic-kernel/services/MyChatCompletionService.cs" id="service":::
 
--or-
+2. Include the new service class when building the `Kernel`. For example:
 
-* [Related article title](link.md)
-* [Related article title](link.md)
-* [Related article title](link.md)
+    :::code language="csharp" source="./snippets/semantic-kernel/LocalModelExamples.cs" id="addChatService":::
 
-<!-- Optional: Next step or Related content - H2
+3. Send a chat completion prompt to your model directly through the `Kernel` or using the service class. For example:
 
-Consider adding one of these H2 sections (not both):
+    :::code language="csharp" source="./snippets/semantic-kernel/LocalModelExamples.cs" id="useChatService":::
 
-A "Next step" section that uses 1 link in a blue box 
-to point to a next, consecutive article in a sequence.
+## Related content
 
--or- 
-
-A "Related content" section that lists links to 
-1 to 3 articles the user might find helpful.
-
--->
-
-<!--
-
-Remove all comments except the customer intent
-before you sign off or merge to the main branch.
-
--->
+* [What is Semantic Kernel](/semantic-kernel/overview/)

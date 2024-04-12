@@ -10,11 +10,11 @@ ms.date: 04/10/2024
 
 This article list and explains all `Microsoft Testing Platform` extensions related to the code coverage capability.
 
-To determine what proportion of your project's code is being tested by coded tests such as unit tests, you can use the code coverage feature. To effectively guard against bugs, your tests should exercise or 'cover' a large proportion of your code.
+You can use the code coverage feature to determine what proportion of your project's code is being tested by coded tests such as unit tests. To effectively guard against bugs, your tests should exercise or *cover* a large proportion of your code.
 
 ## Coverlet
 
-There is currently no Coverlet extension but you can use [Coverlet .NET global tool](https://github.com/coverlet-coverage/coverlet#net-global-tool-guide-suffers-from-possible-known-issue).
+There's currently no Coverlet extension, but you can use [Coverlet .NET global tool](https://github.com/coverlet-coverage/coverlet#net-global-tool-guide-suffers-from-possible-known-issue).
 
 ## Microsoft code coverage
 
@@ -31,11 +31,11 @@ For more information about Microsoft code coverage, see its [GitHub page](https:
 
 Microsoft Code Coverage provides the following options:
 
-| Option | Description |
-|--|--|
-| `--coverage` | Collect the code coverage using dotnet-coverage tool |
-| `--coverage-output` | Output file |
-| `--coverage-output-format` | Output file format. Supported values: 'coverage', 'xml' and 'cobertura' |
-| `--coverage-settings` | XML code coverage settings |
+| Option                     | Description                                                                   |
+|----------------------------|-------------------------------------------------------------------------------|
+| `--coverage`               | Collect the code coverage using dotnet-coverage tool.                         |
+| `--coverage-output`        | Output file.                                                                  |
+| `--coverage-output-format` | Output file format. Supported values are: 'coverage', 'xml', and 'cobertura'. |
+| `--coverage-settings`      | XML code coverage settings.                                                   |
 
 For more information about the available options, see [settings](../additional-tools/dotnet-coverage.md#settings) and [samples](https://github.com/microsoft/codecoverage/tree/main/samples/Algorithms).

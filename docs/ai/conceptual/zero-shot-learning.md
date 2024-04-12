@@ -57,7 +57,7 @@ Zero-shot learning is the practice of passing prompts that aren't paired with ve
 
 ## Few-shot learning use cases
 
-This section explains the use cases for few-shot learning with a GPT-model.
+This section explains the use cases for few-shot learning with a GPT model.
 
 Few-shot learning is the practice of passing prompts paired with verbatim completions (few-shot prompts) to show your model how to respond. Unlike zero-shot learning, few-shot learning can add to the model's knowledge. It has two primary use cases:
 
@@ -67,12 +67,10 @@ Few-shot learning is the practice of passing prompts paired with verbatim comple
 ### Caveats
 
 - Example-based learning doesn’t work well for complex reasoning tasks. However, adding instructions can help address this.
-- Few-shot learning requires creating lengthy prompts. Prompts with large number of tokens can increase computation and latency. There’s also a limit to the length of the prompts.
+- Few-shot learning requires creating lengthy prompts. Prompts with large number of tokens can increase computation and latency. This typically means increased costs. There’s also a limit to the length of the prompts.
 - When you use several examples the model can learn false patterns, such as "Sentiments are twice as likely to be positive than negative."
 
 ## Related content
 
 - [Prompt engineering techniques](/azure/ai-services/openai/concepts/advanced-prompt-engineering)
-- [Chain of thought prompting][def]
-
-[def]: chain-of-thought-prompting.md
+- [Chain of thought prompting](chain-of-thought-prompting.md)

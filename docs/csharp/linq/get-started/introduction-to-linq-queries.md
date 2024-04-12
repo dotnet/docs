@@ -1,7 +1,7 @@
 ---
 title: "Introduction to LINQ Queries (C#)"
 description: LINQ offers a consistent model for queries on data across various kinds of data sources and formats. In a LINQ query, you're always working with objects.
-ms.date: 04/04/2024
+ms.date: 04/15/2024
 helpviewer_keywords:
   - "deferred execution [LINQ]"
   - "LINQ, queries"
@@ -57,14 +57,14 @@ For more information about how to create specific types of data sources, see the
 
 The query specifies what information to retrieve from the data source or sources. Optionally, a query also specifies how that information should be sorted, grouped, and shaped before being returned. A query is stored in a query variable and initialized with a query expression. You use [C# query syntax](../../language-reference/keywords/query-keywords.md) to write queries.
 
-The query in the previous example returns all the even numbers from the integer array. The query expression contains three clauses: `from`, `where` and `select`. (If you're familiar with SQL, you noticed that the ordering of the clauses is reversed from the order in SQL.) The `from` clause specifies the data source, the `where` clause applies the filter, and the `select` clause specifies the type of the returned elements. All the query clauses are discussed in detail in this section. For now, the important point is that in LINQ, the query variable itself takes no action and returns no data. It just stores the information that is required to produce the results when the query is executed at some later point. For more information about how queries are constructed, see [Standard Query Operators Overview (C#)](../standard-query-operators/index.md).
+The query in the previous example returns all the even numbers from the integer array. The query expression contains three clauses: `from`, `where`, and `select`. (If you're familiar with SQL, you noticed that the ordering of the clauses is reversed from the order in SQL.) The `from` clause specifies the data source, the `where` clause applies the filter, and the `select` clause specifies the type of the returned elements. All the query clauses are discussed in detail in this section. For now, the important point is that in LINQ, the query variable itself takes no action and returns no data. It just stores the information that is required to produce the results when the query is executed at some later point. For more information about how queries are constructed, see [Standard Query Operators Overview (C#)](../standard-query-operators/index.md).
 
 > [!NOTE]
 > Queries can also be expressed by using method syntax. For more information, see [Query Syntax and Method Syntax in LINQ](write-linq-queries.md).
 
 ## Classification of standard query operators by manner of execution
 
-The LINQ to Objects implementations of the standard query operator methods execute in one of two main ways: *immediate* or *deferred*. The query operators that use deferred execution can be additionally divided into two categories: *streaming* and *non-streaming*.
+The LINQ to Objects implementations of the standard query operator methods execute in one of two main ways: *immediate* or *deferred*. The query operators that use deferred execution can be additionally divided into two categories: *streaming* and *nonstreaming*.
 
 ### Immediate
 
@@ -80,23 +80,23 @@ You can also force execution by putting the `foreach` loop immediately after the
 
 ### Deferred
 
-Deferred execution means that the operation is not performed at the point in the code where the query is declared. The operation is performed only when the query variable is enumerated, for example by using a `foreach` statement. This means that the results of executing the query depend on the contents of the data source when the query is executed rather than when the query is defined. If the query variable is enumerated multiple times, the results might differ every time. Almost all the standard query operators whose return type is <xref:System.Collections.Generic.IEnumerable%601> or <xref:System.Linq.IOrderedEnumerable%601> execute in a deferred manner. Deferred execution provides the facility of query reuse since the query fetches the updated data from the data source each time query results are iterated. The following code shows an example of deferred execution:
+Deferred execution means that the operation isn't performed at the point in the code where the query is declared. The operation is performed only when the query variable is enumerated, for example by using a `foreach` statement. The results of executing the query depend on the contents of the data source when the query is executed rather than when the query is defined. If the query variable is enumerated multiple times, the results might differ every time. Almost all the standard query operators whose return type is <xref:System.Collections.Generic.IEnumerable%601> or <xref:System.Linq.IOrderedEnumerable%601> execute in a deferred manner. Deferred execution provides the facility of query reuse since the query fetches the updated data from the data source each time query results are iterated. The following code shows an example of deferred execution:
 
 :::code language="csharp" source="./snippets/SnippetApp/Program.cs" id="QueryExecution":::
 
 The `foreach` statement is also where the query results are retrieved. For example, in the previous query, the iteration variable `num` holds each value (one at a time) in the returned sequence.
 
-Because the query variable itself never holds the query results, you can execute it repeatedly to retrieve updated data. For example, you might have a database that is being updated continually by a separate application. In your application, you could create one query that retrieves the latest data, and you could execute it at intervals to retrieve updated results.
+Because the query variable itself never holds the query results, you can execute it repeatedly to retrieve updated data. For example, you might have a database continually by a separate application. In your application, you could create one query that retrieves the latest data, and you could execute it at intervals to retrieve updated results.
 
-Query operators that use deferred execution can be additionally classified as streaming or non-streaming.
+Query operators that use deferred execution can be additionally classified as streaming or nonstreaming.
 
 ### Streaming
 
-Streaming operators do not have to read all the source data before they yield elements. At the time of execution, a streaming operator performs its operation on each source element as it is read and yields the element if appropriate. A streaming operator continues to read source elements until a result element can be produced. This means that more than one source element might be read to produce one result element.
+Streaming operators don't have to read all the source data before they yield elements. At the time of execution, a streaming operator performs its operation on each source element as it is read and yields the element if appropriate. A streaming operator continues to read source elements until a result element can be produced. This means that more than one source element might be read to produce one result element.
 
-### Non-streaming
+### Nonstreaming
 
-Non-streaming operators must read all the source data before they can yield a result element. Operations such as sorting or grouping fall into this category. At the time of execution, non-streaming query operators read all the source data, put it into a data structure, perform the operation, and yield the resulting elements.
+Nonstreaming operators must read all the source data before they can yield a result element. Operations such as sorting or grouping fall into this category. At the time of execution, nonstreaming query operators read all the source data, put it into a data structure, perform the operation, and yield the resulting elements.
 
 ## Classification table
 
@@ -105,7 +105,7 @@ The following table classifies each standard query operator method according to 
 > [!NOTE]
 > If an operator is marked in two columns, two input sequences are involved in the operation, and each sequence is evaluated differently. In these cases, it is always the first sequence in the parameter list that is evaluated in a deferred, streaming manner.
 
-| Standard query operator                             | Return type | Immediate execution | Deferred streaming execution | Deferred Non-streaming execution |
+| Standard query operator                             | Return type | Immediate execution | Deferred streaming execution | Deferred Nonstreaming execution |
 |-----------------------------------------------------|-------------|---------------------|------------------------------|----------------------------------|
 | <xref:System.Linq.Enumerable.Aggregate%2A>          | `TSource`                                         | X |   |   |
 | <xref:System.Linq.Enumerable.All%2A>                | <xref:System.Boolean>                             | X |   |   |
@@ -160,15 +160,15 @@ The following table classifies each standard query operator method according to 
 
 ## LINQ to objects
 
-"LINQ to Objects" refers to the use of LINQ queries with any <xref:System.Collections.IEnumerable> or <xref:System.Collections.Generic.IEnumerable%601> collection directly. You can use LINQ to query any enumerable collections such as <xref:System.Collections.Generic.List%601>, <xref:System.Array>, or <xref:System.Collections.Generic.Dictionary%602>. The collection may be user-defined or may be returned by a .NET API. In the LINQ approach, you write declarative code that describes what you want to retrieve. LINQ to Objects provides a great introduction to programming with LINQ.
+"LINQ to Objects" refers to the use of LINQ queries with any <xref:System.Collections.IEnumerable> or <xref:System.Collections.Generic.IEnumerable%601> collection directly. You can use LINQ to query any enumerable collections such as <xref:System.Collections.Generic.List%601>, <xref:System.Array>, or <xref:System.Collections.Generic.Dictionary%602>. The collection can be user-defined or a type returned by a .NET API. In the LINQ approach, you write declarative code that describes what you want to retrieve. LINQ to Objects provides a great introduction to programming with LINQ.
 
 LINQ queries offer three main advantages over traditional `foreach` loops:
 
-- They are more concise and readable, especially when filtering multiple conditions.
+- They're more concise and readable, especially when filtering multiple conditions.
 - They provide powerful filtering, ordering, and grouping capabilities with a minimum of application code.
 - They can be ported to other data sources with little or no modification.
 
-The more complex the operation you want to perform on the data, the more benefit you'll realize by using LINQ instead of traditional iteration techniques.
+The more complex the operation you want to perform on the data, the more benefit you realize using LINQ instead of traditional iteration techniques.
 
 ## Store the results of a query in memory
 

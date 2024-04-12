@@ -5,7 +5,7 @@ author: haywoodsloan
 ms.topic: how-to 
 ms.date: 04/11/2024
 
-#customer intent: As a .NET developer, I want use custom or local AI models with the Semantic Kernel SDK so that I can choose the model that's best for me.
+#customer intent: As a .NET developer, I want use custom or local AI models with the Semantic Kernel SDK so that I can use any model available to me.
 
 ---
 
@@ -13,7 +13,7 @@ ms.date: 04/11/2024
 
 This article demonstrates how to integrate a local or custom model into the [Semantic Kernel SDK](/semantic-kernel/overview).
 
-Integrating a custom model enables the Semantic Kernel SDK to utilize any model you have available, regardless of where or how you access the model.
+Integrating a custom model enables the Semantic Kernel SDK to utilize any model you have available, regardless of where or how you access it.
 
 ## Prerequisites
 

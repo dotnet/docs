@@ -6,7 +6,8 @@ using Microsoft.SemanticKernel.TextGeneration;
 // <service>
 class MyTextGenerationService : ITextGenerationService
 {
-    public IReadOnlyDictionary<string, object?> Attributes => new Dictionary<string, object?>();
+    private IReadOnlyDictionary<string, object?>? _attributes;
+    public IReadOnlyDictionary<string, object?> Attributes => _attributes ??= new Dictionary<string, object?>();
 
     public async IAsyncEnumerable<StreamingTextContent> GetStreamingTextContentsAsync(string prompt, PromptExecutionSettings? executionSettings = null, Kernel? kernel = null, [EnumeratorCancellation] CancellationToken cancellationToken = default)
     {

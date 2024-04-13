@@ -5,7 +5,8 @@ using Microsoft.SemanticKernel.ChatCompletion;
 // <service>
 class MyChatCompletionService : IChatCompletionService
 {
-    public IReadOnlyDictionary<string, object?> Attributes => new Dictionary<string, object?>();
+    private IReadOnlyDictionary<string, object?>? _attributes;
+    public IReadOnlyDictionary<string, object?> Attributes => _attributes ??= new Dictionary<string, object?>();
 
     public async Task<IReadOnlyList<ChatMessageContent>> GetChatMessageContentsAsync(ChatHistory chatHistory, PromptExecutionSettings? executionSettings = null, Kernel? kernel = null, CancellationToken cancellationToken = default)
     {

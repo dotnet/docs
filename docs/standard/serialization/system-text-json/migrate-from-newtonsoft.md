@@ -50,7 +50,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | Allow comments                                        | ✔️ [ReadCommentHandling global setting](#comments) |
 | Allow trailing commas                                 | ✔️ [AllowTrailingCommas global setting](#trailing-commas) |
 | Custom converter registration                         | ✔️ [Order of precedence differs](#converter-registration-precedence) |
-| No maximum depth by default                           | ✔️ [Default maximum depth 64, configurable](#maximum-depth) |
+| Default maximum depth 64, configurable                | ✔️ [Default maximum depth 64, configurable](#maximum-depth) |
 | `PreserveReferencesHandling` global setting           | ✔️ [ReferenceHandling global setting](#preserve-object-references-and-handle-loops) |
 | Serialize or deserialize numbers in quotes            | ✔️ [NumberHandling global setting, [JsonNumberHandling] attribute](#allow-or-write-numbers-in-quotes) |
 | Deserialize to immutable classes and structs          | ✔️ [JsonConstructor, C# 9 Records](#deserialize-to-immutable-classes-and-structs) |
@@ -149,7 +149,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | Allow comments                                        | ✔️ [ReadCommentHandling global setting](#comments) |
 | Allow trailing commas                                 | ✔️ [AllowTrailingCommas global setting](#trailing-commas) |
 | Custom converter registration                         | ✔️ [Order of precedence differs](#converter-registration-precedence) |
-| No maximum depth by default                           | ✔️ [Default maximum depth 64, configurable](#maximum-depth) |
+| Default maximum depth 64, configurable                | ✔️ [Default maximum depth 64, configurable](#maximum-depth) |
 | `PreserveReferencesHandling` global setting           | ✔️ [ReferenceHandling global setting](#preserve-object-references-and-handle-loops) |
 | Serialize or deserialize numbers in quotes            | ✔️ [NumberHandling global setting, [JsonNumberHandling] attribute](#allow-or-write-numbers-in-quotes) |
 | Deserialize to immutable classes and structs          | ✔️ [JsonConstructor, C# 9 Records](#deserialize-to-immutable-classes-and-structs) |

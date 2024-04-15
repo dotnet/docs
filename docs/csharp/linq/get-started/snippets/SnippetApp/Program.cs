@@ -67,18 +67,18 @@ WriteSeparator(nameof(Linq.GetStarted.TypeRelationships.ImplicitType));
 Linq.GetStarted.TypeRelationships.ImplicitType();
 
 WriteSeparator(nameof(Linq.GetStarted.TypeRelationships.ImplicitType));
-ReturnQueryFromMethod.ReturnQueryFromMethod1();
+LinqSamples.ReturnQueryFromMethod.ReturnQueryFromMethod1();
 
-WriteSeparator(nameof(RuntimeFiltering));
-RuntimeFiltering.RuntimeFiltering1();
-RuntimeFiltering.RuntimeFiltering2();
+WriteSeparator(nameof(LinqSamples.RuntimeFiltering));
+LinqSamples.RuntimeFiltering.RuntimeFiltering1();
+LinqSamples.RuntimeFiltering.RuntimeFiltering2();
 
-WriteSeparator(nameof(NullValues));
-NullValues.NullValues1();
+WriteSeparator(nameof(LinqSamples.NullValues));
+LinqSamples.NullValues.NullValues1();
 
-WriteSeparator(nameof(Exceptions));
-Exceptions.Exceptions1();
-Exceptions.Exceptions2();
+WriteSeparator(nameof(LinqSamples.Exceptions));
+LinqSamples.Exceptions.Exceptions1();
+LinqSamples.Exceptions.Exceptions2();
 
 void WriteSeparator(string symbol) => Console.WriteLine($"==========  {symbol} ==========");
 

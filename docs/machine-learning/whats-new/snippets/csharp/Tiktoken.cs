@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using Microsoft.ML.Tokenizers;
 
@@ -16,7 +16,7 @@ internal class TiktokenExample
         // encodedIds = {9906, 11, 4435, 0}
 
         // Decode IDs to text.
-        string decodedText = tokenizer.Decode(encodedIds);
+        string? decodedText = tokenizer.Decode(encodedIds);
         Console.WriteLine($"decodedText = {decodedText}");
         // decodedText = Hello, World!
 

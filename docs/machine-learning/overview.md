@@ -1,6 +1,6 @@
 ---
 title: Overview of ML.NET
-description: Discover how to use the ML.NET CLI tool to automatically train the best model from the command-line.
+description: Learn about the components that make up ML.NET.
 ms.date: 04/15/2024
 ---
 

@@ -112,9 +112,9 @@ _This code creates a simple console-based tic-tac-toe game in C#. It uses a sing
 
 ## How LLMs work
 
-When training an LLM, the training text is first broken down into [tokens](understanding-tokens.md). Each token identifies a unique text value. A token can be a distinct word, a partial word, or a combination of words and punctuation. Each token is assigned an ID, which enables the text to be represented as a sequence of token IDs.
+When training an LLM, the training text is first broken down into [tokens]<!-- (understanding-tokens.md) -->. Each token identifies a unique text value. A token can be a distinct word, a partial word, or a combination of words and punctuation. Each token is assigned an ID, which enables the text to be represented as a sequence of token IDs.
 
-After the text has been broken down into tokens, a contextual vector, known as an [_embedding_](understanding-embeddings.md), is assigned to each token. These embedding vectors are multi-valued numeric data where each element of a token's vector represents a semantic attribute of the token. The elements of a token's vector are determined based on how commonly tokens are used together or in similar contexts.
+After the text has been broken down into tokens, a contextual vector, known as an [_embedding_]<!-- (understanding-embeddings.md) -->, is assigned to each token. These embedding vectors are multi-valued numeric data where each element of a token's vector represents a semantic attribute of the token. The elements of a token's vector are determined based on how commonly tokens are used together or in similar contexts.
 
 The goal is to predict the next token in the sequence based on the preceding tokens. A weight is assigned to each token in the existing sequence that represents its relative influence on the next token. A calculation is then performed that uses the preceding tokens' weights and embeddings to predict the next vector value. The model then selects the most probable token to continue the sequence based on the predicted vector.
 
@@ -135,6 +135,6 @@ LLMs can be used to perform a variety of NLP tasks, including:
 
 <!-- TODO: Update these links once we have the file names -->
 
-- [Understanding Token](understanding-tokens.md)
-- [Prompt engineering](prompt-engineering-in-dot-net.md)
+- [Understanding Token]<!-- (understanding-tokens.md) -->
+- [Prompt engineering]<!-- (prompt-engineering-in-dot-net.md) -->
 - [Large language models](/training/modules/fundamentals-generative-ai/3-language%20models)

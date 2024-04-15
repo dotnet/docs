@@ -130,36 +130,50 @@ When initializing an object, particularly when reusing the current instance, it'
 ```csharp
 public class InitializationSample
 {
-    public class A
+    public class EmbeddedClassTypeA
     {
-        public int I { get; set; } = 3;
-        public bool B { get; set; } = true;
-        public string S { get; set; } = "abc";
-        public B ClassB { get; set; } = new() { BB = true, BI = 43 };
+        public int I { get; set; } 
+        public bool B { get; set; } 
+        public string S { get; set; }
+        public EmbeddedClassTypeB ClassB { get; set; }
 
         public override string ToString() => $"{I}|{B}|{S}|||{ClassB}";
+
+        public EmbeddedClassTypeA()
+        {
+            I = 3;
+            B = true;
+            S = "abc";
+            ClassB = new() { BB = true, BI = 43 };
+        }
     }
 
-    public class B
+    public class EmbeddedClassTypeB
     {
-        public int BI { get; set; } = 23;
-        public bool BB { get; set; } = false;
-        public string BS { get; set; } = "BBBabc";
+        public int BI { get; set; } 
+        public bool BB { get; set; } 
+        public string BS { get; set; } 
 
         public override string ToString() => $"{BI}|{BB}|{BS}";
+        public EmbeddedClassTypeB()
+        {
+            BI = 23;
+            BB = false;
+            BS = "BBBabc";
+        }
     }
 
     public static void Main()
     {
-        var a = new A
+        var a = new EmbeddedClassTypeA
         {
             I = 103,
             B = false,
-            ClassB = { BI = 100003 } //Initializer, reuses current instance: ClassB's values will be: 100003 (new value we assign here), true (kept from A's initialization), "BBBabc" (unchanged default from B)
+            ClassB = { BI = 100003 }
         };
         Console.WriteLine(a);
 
-        var a2 = new A
+        var a2 = new EmbeddedClassTypeA
         {
             I = 103,
             B = false,
@@ -173,7 +187,7 @@ public class InitializationSample
     //103|False|abc|||100003|False|BBBabc
 }
 ```
-The following example shows how, for ClassB, the initialization process involves updating specific values while retaining others from the original instance.
+The following example shows how, for ClassB, the initialization process involves updating specific values while retaining others from the original instance. The Initializer reuses current instance: ClassB's values will be: `100003` (new value we assign here), `true` (kept from EmbeddedClassTypeA's initialization), `BBBabc` (unchanged default from EmbeddedClassTypeB)
 
 ## Collection initializers
 

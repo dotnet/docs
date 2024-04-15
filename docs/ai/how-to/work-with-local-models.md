@@ -1,5 +1,6 @@
 ---
 title: "Use Custom and Local AI Models with the Semantic Kernel SDK for .NET"
+titleSuffix: ""
 description: "Learn how to use custom or local models for text generation and chat completions in Semantic Kernel SDK for .NET."
 author: haywoodsloan
 ms.topic: how-to 
@@ -9,7 +10,7 @@ ms.date: 04/11/2024
 
 ---
 
-# Use Custom and Local AI Models with the Semantic Kernel SDK
+# Use custom and local AI models with the Semantic Kernel SDK
 
 This article demonstrates how to integrate custom and local models into the [Semantic Kernel SDK](/semantic-kernel/overview) and use them for text generation and chat completions.
 

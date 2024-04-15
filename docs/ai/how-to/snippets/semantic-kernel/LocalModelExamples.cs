@@ -30,7 +30,7 @@ class LocalModelExamples
         Kernel kernel = builder.Build();
         // </addTextService>
 
-        return builder.Build();
+        return kernel;
     }
 
     static Kernel AddChatCompletionServiceExample()
@@ -96,9 +96,10 @@ class LocalModelExamples
         // Send a string representation of the chat history to your model directly through the Kernel
         // This uses a special syntax to denote the role for each message
         // For more information on this syntax see https://learn.microsoft.com/en-us/semantic-kernel/prompts/your-first-prompt?tabs=Csharp#6-using-message-roles-in-chat-completion-prompts
-        string prompt = @"
-        <message role=""system"">the initial system message for your chat history</message>
-        <message role=""user"">the user's initial message</message>";
+        string prompt = """
+        <message role="system">the initial system message for your chat history</message>
+        <message role="user">the user's initial message</message>
+        """;
 
         string? response = await kernel.InvokePromptAsync<string>(prompt);
         Console.WriteLine($"Output: {response}");

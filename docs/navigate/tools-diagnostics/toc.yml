@@ -1037,6 +1037,8 @@ items:
                     href: ../../fundamentals/code-analysis/quality-rules/ca1869.md
                   - name: CA1870
                     href: ../../fundamentals/code-analysis/quality-rules/ca1870.md
+                  - name: CA1871
+                    href: ../../fundamentals/code-analysis/quality-rules/ca1871.md
                   - name: CA1872
                     href: ../../fundamentals/code-analysis/quality-rules/ca1872.md
               - name: SingleFile rules
@@ -1381,6 +1383,8 @@ items:
                     href: ../../fundamentals/code-analysis/quality-rules/ca2262.md
                   - name: CA2263
                     href: ../../fundamentals/code-analysis/quality-rules/ca2263.md
+                  - name: CA2264
+                    href: ../../fundamentals/code-analysis/quality-rules/ca2264.md
           - name: Code style rules
             items:
               - name: Overview
@@ -1837,6 +1841,8 @@ items:
     - name: Overview
       href: ../../fundamentals/apicompat/overview.md
       displayName: api compatibility,apicompat
+    - name: Preview APIs
+      href: ../../fundamentals/apicompat/preview-apis.md
     - name: Diagnostic IDs
       href: ../../fundamentals/apicompat/diagnostic-ids.md
     - name: Assembly validation

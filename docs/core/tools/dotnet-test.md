@@ -15,7 +15,7 @@ ms.date: 03/27/2024
 
 ```dotnetcli
 dotnet test [<PROJECT> | <SOLUTION> | <DIRECTORY> | <DLL> | <EXE>]
-    [--test-adapter-path <ADAPTER_PATH>] 
+    [--test-adapter-path <ADAPTER_PATH>]
     [-a|--arch <ARCHITECTURE>]
     [--blame]
     [--blame-crash]
@@ -52,7 +52,7 @@ dotnet test -h|--help
 
 The `dotnet test` command is used to execute unit tests in a given solution. The `dotnet test` command builds the solution and runs a test host application for each test project in the solution. The test host executes tests in the given project using a test framework, for example: MSTest, NUnit, or xUnit, and reports the success or failure of each test. If all tests are successful, the test runner returns 0 as an exit code; otherwise if any test fails, it returns 1.
 
-For multi-targeted projects, tests are run for each targeted framework. The test host and the unit test framework are packaged as NuGet packages and are restored as ordinary dependencies for the project. Starting with the .NET 9 SDK, these tests are run in parallel by default. To disable parallel execution, set the `TestTfmsInParallel` MSBuild property to `false`. For more information, see [Run tests in parallel](../whats-new/dotnet-9/overview.md#run-tests-in-parallel) and the [example command line later in this article](#testtfmsinparallel).
+For multi-targeted projects, tests are run for each targeted framework. The test host and the unit test framework are packaged as NuGet packages and are restored as ordinary dependencies for the project. Starting with the .NET 9 SDK, these tests are run in parallel by default. To disable parallel execution, set the `TestTfmsInParallel` MSBuild property to `false`. For more information, see [Run tests in parallel](../whats-new/dotnet-9/sdk.md#run-tests-in-parallel) and the [example command line later in this article](#testtfmsinparallel).
 
 Test projects specify the test runner using an ordinary `<PackageReference>` element, as seen in the following sample project file:
 
@@ -97,17 +97,17 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 - **`--blame`**
 
   Runs the tests in blame mode. This option is helpful in isolating problematic tests that cause the test host to crash. When a crash is detected, it creates a sequence file in `TestResults/<Guid>/<Guid>_Sequence.xml` that captures the order of tests that were run before the crash.
-  
+
   This option does not create a memory dump and is not helpful when the test is hanging.
 
 - **`--blame-crash`** (Available since .NET 5.0 SDK)
 
   Runs the tests in blame mode and collects a crash dump when the test host exits unexpectedly. This option depends on the version of .NET used, the type of error, and the operating system.
-  
+
   For exceptions in managed code, a dump will be automatically collected on .NET 5.0 and later versions. It will generate a dump for testhost or any child process that also ran on .NET 5.0 and crashed. Crashes in native code will not generate a dump. This option works on Windows, macOS, and Linux.
-  
+
   Crash dumps in native code, or when using .NET Core 3.1 or earlier versions, can only be collected on Windows, by using Procdump. A directory that contains *procdump.exe* and *procdump64.exe* must be in the PATH or PROCDUMP_PATH environment variable. [Download the tools](/sysinternals/downloads/procdump). Implies `--blame`.
-  
+
   To collect a crash dump from a native application running on .NET 5.0 or later, the usage of Procdump can be forced by setting the `VSTEST_DUMP_FORCEPROCDUMP` environment variable to `1`.
 
 - **`--blame-crash-dump-type <DUMP_TYPE>`** (Available since .NET 5.0 SDK)
@@ -129,7 +129,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 - **`--blame-hang-timeout <TIMESPAN>`** (Available since .NET 5.0 SDK)
 
   Per-test timeout, after which a hang dump is triggered and the test host process and all of its child processes are dumped and terminated. The timeout value is specified in one of the following formats:
-  
+
   - 1.5h, 1.5hour, 1.5hours
   - 90m, 90min, 90minute, 90minutes
   - 5400s, 5400sec, 5400second, 5400seconds
@@ -142,7 +142,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 - **`--collect <DATA_COLLECTOR_NAME>`**
 
   Enables data collector for the test run. For more information, see [Monitor and analyze test run](https://aka.ms/vstest-collect).
-  
+
   For example you can collect code coverage by using the `--collect "Code Coverage"` option. For more information, see [Use code coverage](/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested), [Customize code coverage analysis](/visualstudio/test/customizing-code-coverage-analysis), and [GitHub issue dotnet/docs#34479](https://github.com/dotnet/docs/issues/34479).
 
   To collect code coverage you can also use [Coverlet](https://github.com/coverlet-coverage/coverlet/blob/master/README.md) by using the `--collect "XPlat Code Coverage"` option.
@@ -154,7 +154,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 - **`-e|--environment <NAME="VALUE">`**
 
   Sets the value of an environment variable. Creates the variable if it does not exist, overrides if it does exist. Use of this option will force the tests to be run in an isolated process. The option can be specified multiple times to provide multiple variables.
-  
+
 - **`-f|--framework <FRAMEWORK>`**
 
   The [target framework moniker (TFM)](../../standard/frameworks.md) of the target framework to run tests for. The target framework must also be specified in the project file.
@@ -170,14 +170,14 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 - **`-l|--logger <LOGGER>`**
 
   Specifies a logger for test results and optionally switches for the logger. Specify this parameter multiple times to enable multiple loggers. For more information, see [Reporting test results](https://github.com/microsoft/vstest/blob/main/docs/report.md#available-test-loggers), [Switches for loggers](/visualstudio/msbuild/msbuild-command-line-reference#switches-for-loggers), and the [examples](#examples) later in this article.
-  
+
   In order to pass command-line switches to the logger:
-  
+
   * Use the full name of the switch, not the abbreviated form (for example, `verbosity` instead of `v`).
   * Omit any leading dashes.
   * Replace the space separating each switch with a semicolon `;`.
   * If the switch has a value, replace the colon separator between that switch and its value with the equals sign `=`.
-  
+
   For example, `-v:detailed --consoleLoggerParameters:ErrorsOnly` would become `verbosity=detailed;consoleLoggerParameters=ErrorsOnly`.
 
 - **`--no-build`**
@@ -211,7 +211,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 - **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 
   The target runtime to test for.
-  
+
   Short form `-r` available starting in .NET SDK 7.
 
 - **`-s|--settings <SETTINGS_FILE>`**
@@ -316,7 +316,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 - Run the tests in the `test1` project, providing the `-bl` (binary log) argument to `msbuild`:
 
   ```dotnetcli
-  dotnet test ~/projects/test1/test1.csproj -bl  
+  dotnet test ~/projects/test1/test1.csproj -bl
   ```
 
 - Run the tests in the `test1` project, setting the MSBuild `DefineConstants` property to `DEV`:

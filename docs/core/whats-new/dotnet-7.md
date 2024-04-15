@@ -2,7 +2,7 @@
 title: What's new in .NET 7
 description: Learn about the new features introduced in .NET 7.
 ms.date: 11/08/2022
-ms.topic: overview
+ms.topic: whats-new
 ms.author: gewarren
 author: gewarren
 ---

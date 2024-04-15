@@ -42,6 +42,11 @@ This section describes the best practices to follow when developing world-ready 
 
 1. If a security decision is based on the result of a string comparison or case change operation, use a culture-insensitive string operation. This practice ensures that the result is not affected by the value of `CultureInfo.CurrentCulture`. See the ["String Comparisons that Use the Current Culture"](../../standard/base-types/best-practices-strings.md#string-comparisons-that-use-the-current-culture) section of [Best Practices for Using Strings](../../standard/base-types/best-practices-strings.md) for an example that demonstrates how culture-sensitive string comparisons can produce inconsistent results.
 
+1. For any element being used for interchange (eg, a field in a JSON document in an API call) or storage, use the <xref:System.Globalization.CultureInfo?displayProperty=InvariantCulture>; additionally, you should explicitly specify a roundtrip format (such as the [`"O"`, `"o"` date-time format specifier](../../standard/base-types/standard-date-and-time-format-strings.md#the-round-trip-o-o-format-specifier)).  Although the format strings for the invariant culture are stable and unlikely to change, specifying an explicit format string helps to clarify the intent of your code.
+    -  For date/time elements, consider the advice and observations in Jon Skeet's post [_Storing UTC is not a silver bullet_](https://codeblog.jonskeet.uk/2019/03/27/storing-utc-is-not-a-silver-bullet/).
+
+1. Globalization data [is not stable](https://learn.microsoft.com/en-us/archive/blogs/shawnste/culture-data-shouldnt-be-considered-stable-except-for-invariant), and you should write your application and its tests with this in mind.  It is updated several times a year through host OS channels on all supported platforms.  This data is not maintained by or distributed with the runtime, nor (outside of legacy Windows applications) directly by the host OS.
+
 ## Localization best practices
 
 1. Move all localizable resources to separate resource-only DLLs. Localizable resources include user interface elements, such as strings, error messages, dialog boxes, menus, and embedded object resources.
@@ -66,7 +71,7 @@ This section describes the best practices to follow when developing world-ready 
 
 1. For a complete description of creating and localizing resources, see [Resources in .NET apps](resources.md).
 
-## Globalization best practices for ASP.NET applications
+## Globalization best practices for ASP.NET and other server applications
 
 > [!TIP]
 > The following best practices are for ASP.NET Framework apps. For ASP.NET Core apps, see [Globalization and localization in ASP.NET Core](/aspnet/core/fundamentals/localization).
@@ -88,6 +93,10 @@ This section describes the best practices to follow when developing world-ready 
     - Programmatically in application code. This setting can vary per request. As with a page directive, by the time the application's code is reached, it is too late to specify `fileEncoding` and `requestEncoding`. Only `uiCulture`, `culture`, and `responseEncoding` can be specified in the application code.
 
 1. Note that the uiCulture value can be set to the browser accept language.
+
+1. For applications that are distributed, allow zero-downtime updates (eg, Azure container applications), or similar you must plan for situations where there may be multiple instances of the application with different format rules or other culture data, most relevantly timezone rules.
+    - If your application deployment includes a database, remember that the database will have its own globalization rules.  In most cases you should avoid performing any globalization-related functions in the database.
+    - If your application deployment includes a client application or web frontend using client globalization resources, assume that the client resources differ from the resources available to your server.  Consider exclusively performing globalization functions on the client.
 
 ## Recommendations for robust testing
 

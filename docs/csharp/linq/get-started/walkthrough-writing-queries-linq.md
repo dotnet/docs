@@ -46,13 +46,13 @@ Replace it with the following code that creates a sequence of `Student` records:
 
 - The sequence of students is initialized with a collection expression.
 - The `Student` record type holds the static list of all students.
-- Some of the constructor calls use [named arguments](../programming-guide/classes-and-structs/named-and-optional-arguments.md) to clarify which argument matches which constructor parameter.
+- Some of the constructor calls use [named arguments](../../programming-guide/classes-and-structs/named-and-optional-arguments.md) to clarify which argument matches which constructor parameter.
 
 Try adding a few more students with different test scores to the list of students to get more familiar with the code so far.
 
 ## Create the query
 
-Next, you create your first query. Your query, when it is executed, produces a list of all students whose score on the first test was greater than 90. Because the whole `Student` object is selected, the type of the query is `IEnumerable<Student>`. Although the code could also use implicit typing by using the [var](../language-reference/statements/declarations.md#implicitly-typed-local-variables) keyword, explicit typing is used to clearly illustrate results. (For more information about `var`, see [Implicitly Typed Local Variables](../programming-guide/classes-and-structs/implicitly-typed-local-variables.md).) Add the following code to *Program.cs*, after the code that creates the sequence of students:
+Next, you create your first query. Your query, when it is executed, produces a list of all students whose score on the first test was greater than 90. Because the whole `Student` object is selected, the type of the query is `IEnumerable<Student>`. Although the code could also use implicit typing by using the [var](../../language-reference/statements/declarations.md#implicitly-typed-local-variables) keyword, explicit typing is used to clearly illustrate results. (For more information about `var`, see [Implicitly Typed Local Variables](../../programming-guide/classes-and-structs/implicitly-typed-local-variables.md).) Add the following code to *Program.cs*, after the code that creates the sequence of students:
 
 :::code language="csharp" source="./snippets/WalkthroughWritingLinqQueries/Program.cs" id="DefineFirstQuery":::
 
@@ -70,7 +70,7 @@ You can combine multiple Boolean conditions in the `where` clause in order to fu
 where student.Scores[0] > 90 && student.Scores[3] < 80  
 ```
 
-Try the preceding `where` clause, or experiment yourself with other filter conditions. For more information, see [where clause](../language-reference/keywords/where-clause.md).
+Try the preceding `where` clause, or experiment yourself with other filter conditions. For more information, see [where clause](../../language-reference/keywords/where-clause.md).
 
 ## Order the query results
 
@@ -86,7 +86,7 @@ Change the `WriteLine` format string so that you can see the scores:
 
 :::code language="csharp" source="./snippets/WalkthroughWritingLinqQueries/Program.cs" id="WriteFirstScore":::
 
-For more information, see [orderby clause](../language-reference/keywords/orderby-clause.md).
+For more information, see [orderby clause](../../language-reference/keywords/orderby-clause.md).
 
 ## Group the results
 
@@ -98,13 +98,13 @@ The type of the query has now changed. It now produces a sequence of groups that
 
 :::code language="csharp" source="./snippets/WalkthroughWritingLinqQueries/Program.cs" id="RunGroupQuery":::
 
-Run the application and view the results in the **Console** window. For more information, see [group clause](../language-reference/keywords/group-clause.md).
+Run the application and view the results in the **Console** window. For more information, see [group clause](../../language-reference/keywords/group-clause.md).
 
 Explicitly coding `IEnumerables` of `IGroupings` can quickly become tedious. Write the same query and `foreach` loop much more conveniently by using `var`. The `var` keyword does not change the types of your objects; it just instructs the compiler to infer the types. Change the type of `studentQuery` and the iteration variable `group` to `var` and rerun the query. Note that in the inner `foreach` loop, the iteration variable is still typed as `Student`, and the query works just as before. Change the `student` iteration variable to `var` and run the query again. You see that you get exactly the same results.
 
 :::code language="csharp" source="./snippets/WalkthroughWritingLinqQueries/Program.cs" id="VarGroupQuery":::
 
-For more information about `var`, see [Implicitly Typed Local Variables](../programming-guide/classes-and-structs/implicitly-typed-local-variables.md).
+For more information about `var`, see [Implicitly Typed Local Variables](../../programming-guide/classes-and-structs/implicitly-typed-local-variables.md).
   
 ## Order the groups by their key value
 
@@ -118,11 +118,11 @@ You can use the `let` keyword to introduce an identifier for any expression resu
 
 :::code language="csharp" source="./snippets/WalkthroughWritingLinqQueries/Program.cs" id="QueryWithLet":::
 
-For more information, see the article on the [`let` clause](../language-reference/keywords/let-clause.md).
+For more information, see the article on the [`let` clause](../../language-reference/keywords/let-clause.md).
 
 ## Use method syntax in a query expression
 
-As described in [Query Syntax and Method Syntax in LINQ](./get-started/write-linq-queries.md), some query operations can only be expressed by using method syntax. The following code calculates the total score for each `Student` in the source sequence, and then calls the `Average()` method on the results of that query to calculate the average score of the class.
+As described in [Query Syntax and Method Syntax in LINQ](./write-linq-queries.md), some query operations can only be expressed by using method syntax. The following code calculates the total score for each `Student` in the source sequence, and then calls the `Average()` method on the results of that query to calculate the average score of the class.
 
 :::code language="csharp" source="./snippets/WalkthroughWritingLinqQueries/Program.cs" id="ComputeAverage":::
 

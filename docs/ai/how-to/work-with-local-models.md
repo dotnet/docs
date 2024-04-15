@@ -1,30 +1,30 @@
 ---
-title: "Work with local models"
-description: "Demonstrates how to use custom or local models with the Semantic Kernel SDK for .NET."
+title: "Use Custom and Local AI Models with the Semantic Kernel SDK for .NET"
+description: "Learn how to use custom or local models for text generation and chat completions in Semantic Kernel SDK for .NET."
 author: haywoodsloan
 ms.topic: how-to 
 ms.date: 04/11/2024
 
-#customer intent: As a .NET developer, I want use custom or local AI models with the Semantic Kernel SDK so that I can use any model available to me.
+#customer intent: As a .NET developer, I want to use custom or local AI models with the Semantic Kernel SDK so that I can perform text generation and chat completions using any model available to me.
 
 ---
 
-# Work with local models
+# Use Custom and Local AI Models with the Semantic Kernel SDK
 
-This article demonstrates how to integrate a local or custom model into the [Semantic Kernel SDK](/semantic-kernel/overview).
+This article demonstrates how to integrate custom and local models into the [Semantic Kernel SDK](/semantic-kernel/overview) and use them for text generation and chat completions.
 
-Integrating a custom model enables the Semantic Kernel SDK to utilize any model you have available, regardless of where or how you access it.
+You can adapt the steps to use them with any model that you can access, regardless of where or how you access it. For example, you can integrate the [codellama](https://ollama.com/library/codellama) model with the Semantic Kernel SDK to enable code generation and discussion.
 
 ## Prerequisites
 
 * An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 * [.NET SDK](https://dotnet.microsoft.com/download/visual-studio-sdks)
 * [`Microsoft.SemanticKernel` NuGet package](https://www.nuget.org/packages/Microsoft.SemanticKernel)
-* Deploy your model, it should be accessible to your .NET application
+* A custom or local model, deployed and accessible to your .NET application
 
 ## Implement text generation using a local model
 
-The following section shows how to integrate your model with the Semantic Kernel SDK and use it for text generation.
+The following section shows how you can integrate your model with the Semantic Kernel SDK and then use it to generate text completions.
 
 1. Create a service class that implements the `ITextGenerationService` interface. For example:
 
@@ -40,7 +40,7 @@ The following section shows how to integrate your model with the Semantic Kernel
 
 ## Implement chat completion using a local model
 
-The following section shows how to integrate your model with the Semantic Kernel SDK and use it for chat completion.
+The following section shows how you can integrate your model with the Semantic Kernel SDK and then use it for chat completions.
 
 1. Create a service class that implements the `IChatCompletionService` interface. For example:
 
@@ -57,3 +57,4 @@ The following section shows how to integrate your model with the Semantic Kernel
 ## Related content
 
 * [What is Semantic Kernel](/semantic-kernel/overview/)
+* [Understanding AI plugins in Semantic Kernel](/semantic-kernel/agents/plugins/?tabs=Csharp)

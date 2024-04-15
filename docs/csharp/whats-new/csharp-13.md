@@ -2,6 +2,7 @@
 title: What's new in C# 13 - C# Guide
 description: Get an overview of the new features in C# 13. Follow the release of new preview features as .NET 9 and C# 13 previews are released.
 ms.date: 03/19/2024
+ms.topic: whats-new
 ---
 # What's new in C# 13
 
@@ -36,10 +37,10 @@ You can read the details of the changes in the [proposal specification](~/_cshar
 The implicit "from the end" index operator, `^`, is now allowed in an object initializer expression. For example, you can now initialize an array in an object initializer as shown in the following code:
 
 ```csharp
-var v = new S() 
-{ 
-    buffer = 
-    { 
+var v = new S()
+{
+    buffer =
+    {
         [^1] = 0,
         [^2] = 1,
         [^3] = 2,
@@ -50,7 +51,7 @@ var v = new S()
         [^8] = 7,
         [^9] = 8,
         [^10] = 9
-    } 
+    }
 };
 ```
 

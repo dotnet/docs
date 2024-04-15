@@ -46,18 +46,3 @@ Console.WriteLine($"string: Median = {query4}");
 //     int: Median = 3
 //     string: Median = 4
 // </GenericUsage>
-
-// <SequenceUsage>
-string[] strings = ["a", "b", "c", "d", "e"];
-
-var query5 = strings.AlternateElements();
-
-foreach (var element in query5)
-{
-    Console.WriteLine(element);
-}
-// This code produces the following output:
-//     a
-//     c
-//     e
-// </SequenceUsage>

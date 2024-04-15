@@ -45,7 +45,7 @@ Welcome to what's new in the .NET docs for March 2024. This article lists some o
 - [MSTEST0015: Test method should not be ignored](../core/testing/mstest-analyzers/mstest0015.md)
 - [MSTest overview](../core/testing/unit-testing-mstest-intro.md)
 - [Microsoft.Testing.Platform overview](../core/testing/unit-testing-platform-intro.md)
-- [Use runsettings with Microsoft.Testing.Platform](../core/testing/unit-testing-platform-runsettings.md)
+- [Use runsettings with Microsoft.Testing.Platform](../core/testing/unit-testing-platform-extensions-vstest-bridge.md)
 - [Microsoft.Testing.Platform and VSTest comparison](../core/testing/unit-testing-platform-vs-vstest.md)
 - [dotnet package search](../core/tools/dotnet-package-search.md)
 

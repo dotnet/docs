@@ -24,7 +24,7 @@ public class Example
         // Request cancellation of a single task when the token source is canceled.
         // Pass the token to the user delegate, and also to the task so it can
         // handle the exception correctly.
-        t = Task.Run(() => DoSomeWork(1, token), token);
+        t = Task.Run(() => DoSomeWork(token), token);
         Console.WriteLine("Task {0} executing", t.Id);
         tasks.Add(t);
 
@@ -39,12 +39,12 @@ public class Example
             {
                 // For each child task, pass the same token
                 // to each user delegate and to Task.Run.
-                tc = Task.Run(() => DoSomeWork(i, token), token);
+                tc = Task.Run(() => DoSomeWork(token), token);
                 Console.WriteLine("Task {0} executing", tc.Id);
                 tasks.Add(tc);
                 // Pass the same token again to do work on the parent task.
                 // All will be signaled by the call to tokenSource.Cancel below.
-                DoSomeWork(2, token);
+                DoSomeWork(token);
             }
         }, token);
 
@@ -84,13 +84,13 @@ public class Example
             Console.WriteLine("Task {0} status is now {1}", task.Id, task.Status);
     }
 
-    static void DoSomeWork(int taskNum, CancellationToken ct)
+    static void DoSomeWork(CancellationToken ct)
     {
         // Was cancellation already requested?
         if (ct.IsCancellationRequested)
         {
             Console.WriteLine("Task {0} was cancelled before it got started.",
-                              taskNum);
+                              Task.CurrentId);
             ct.ThrowIfCancellationRequested();
         }
 
@@ -110,7 +110,7 @@ public class Example
 
             if (ct.IsCancellationRequested)
             {
-                Console.WriteLine("Task {0} cancelled", taskNum);
+                Console.WriteLine("Task {0} cancelled", Task.CurrentId);
                 ct.ThrowIfCancellationRequested();
             }
         }

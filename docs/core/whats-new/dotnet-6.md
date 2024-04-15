@@ -2,7 +2,7 @@
 title: What's new in .NET 6
 description: Learn about the new features introduced in .NET 6.
 ms.date: 11/08/2021
-ms.topic: overview
+ms.topic: whats-new
 ms.author: gewarren
 author: gewarren
 ---

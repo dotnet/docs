@@ -14,11 +14,10 @@ When a logging method definition doesn't explicitly include a parameter of type 
 
 Ensure the type containing the logging method includes a field of type `ILogger` or include a parameter of type `ILogger` in the logging method signature.
 
-### Primary Constructors
+> [!NOTE]
+> If you get this error but your class uses a [primary constructor that takes an `ILogger`](https://github.com/dotnet/runtime/issues/91121), you can resolve the error by adding an `ILogger` field as follows:
 
-Smallest possible edit to workaround [Dotnet Runtime Issue 91121 - LoggerMessage source generator does not work with logger from primary constructor](https://github.com/dotnet/runtime/issues/91121):
-
-```
+```csharp
 public partial class Foo(ILogger<Foo> logger) {
     // workaround for https://github.com/dotnet/runtime/issues/91121
     private readonly ILogger _logger = logger;

@@ -2,6 +2,7 @@
 title: What's new in F# 5 - F# Guide
 description: Get an overview of the new features available in F# 5.
 ms.date: 11/04/2021
+ms.topic: whats-new
 ---
 # What's new in F# 5
 

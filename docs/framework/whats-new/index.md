@@ -7,7 +7,7 @@ dev_langs:
   - "vb"
 helpviewer_keywords:
   - "what's new [.NET Framework]"
-ms.assetid: 1d971dd7-10fc-4692-8dac-30ca308fc0fa
+ms.topic: whats-new
 ---
 # What's new in .NET Framework
 

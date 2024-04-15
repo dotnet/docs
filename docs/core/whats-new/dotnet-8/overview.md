@@ -3,9 +3,7 @@ title: What's new in .NET 8
 description: Learn about the new .NET features introduced in .NET 8.
 titleSuffix: ""
 ms.date: 11/14/2023
-ms.topic: overview
-ms.author: gewarren
-author: gewarren
+ms.topic: whats-new
 ---
 # What's new in .NET 8
 
@@ -17,7 +15,7 @@ The .NET 8 runtime includes improvements to performance, garbage collection, and
 
 ## .NET SDK
 
-For information about what's new in the .NET SDK, Native AOT, code analysis, and diagnostics, see [What's new in the SDK and tooling for .NET 8](sdk.md).
+For information about what's new in the .NET SDK, code analysis, and diagnostics, see [What's new in the SDK and tooling for .NET 8](sdk.md).
 
 ## C# 12
 

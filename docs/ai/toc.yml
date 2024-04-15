@@ -2,7 +2,9 @@ items:
 - name: AI for .NET developers
   href: index.yml
 - name: Concepts
-  items: []
+  items:
+  - name: How generative AI and LLMs work
+    href: conceptual/how-genai-and-llms-work.md
 - name: How-to articles
   items:
   - name: Use custom and local AI models with the Semantic Kernel SDK

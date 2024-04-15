@@ -2,6 +2,7 @@
 title: What's new in C# 12 - C# Guide
 description: Get an overview of the new features in C# 12.
 ms.date: 03/19/2024
+ms.topic: whats-new
 ---
 # What's new in C# 12
 

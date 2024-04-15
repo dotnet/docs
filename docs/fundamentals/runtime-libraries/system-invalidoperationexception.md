@@ -181,7 +181,7 @@ How you eliminate or handle the exception depends on your application's assumpti
 - If your failure to check for an empty sequence was inadvertent, you can call one of the overloads of the <xref:System.Linq.Enumerable.Any%2A?displayProperty=nameWithType> overload to determine whether a sequence contains any elements.
 
     > [!TIP]
-    >  Calling the <xref:System.Linq.Enumerable.Any%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Boolean%7D%29?displayProperty=nameWithType> method before generating a sequence can improve performance if the data to be processed might contain a large number of elements or if operation that generates the sequence is expensive.
+    > Calling the <xref:System.Linq.Enumerable.Any%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Boolean%7D%29?displayProperty=nameWithType> method before generating a sequence can improve performance if the data to be processed might contain a large number of elements or if operation that generates the sequence is expensive.
 
 - If you've called a method such as <xref:System.Linq.Enumerable.First%2A?displayProperty=nameWithType>, <xref:System.Linq.Enumerable.Last%2A?displayProperty=nameWithType>, or <xref:System.Linq.Enumerable.Single%2A?displayProperty=nameWithType>, you can substitute an alternate method, such as <xref:System.Linq.Enumerable.FirstOrDefault%2A?displayProperty=nameWithType>, <xref:System.Linq.Enumerable.LastOrDefault%2A?displayProperty=nameWithType>, or  <xref:System.Linq.Enumerable.SingleOrDefault%2A?displayProperty=nameWithType>, that returns a default value instead of a member of the sequence.
 

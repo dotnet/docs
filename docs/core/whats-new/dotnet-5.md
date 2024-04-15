@@ -3,7 +3,7 @@ title: What's new in .NET 5
 description: Learn about .NET 5, a cross-platform and open-source development platform that is the next evolution of .NET Core.
 ms.date: 07/26/2022
 ms.custom: devdivchpfy22
-ms.topic: overview
+ms.topic: whats-new
 ms.author: dapine
 author: IEvangelist
 ---

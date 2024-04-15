@@ -182,8 +182,8 @@ Let's examine these techniques in greater detail.
 
 - Call the <xref:System.Text.StringBuilder.ToString%2A?displayProperty=nameWithType> method to convert the <xref:System.Text.StringBuilder> object to a <xref:System.String> object. You can search the string by using methods such as <xref:System.String.LastIndexOf%2A?displayProperty=nameWithType> or <xref:System.String.StartsWith%2A?displayProperty=nameWithType>, or you can use regular expressions and the <xref:System.Text.RegularExpressions.Regex> class to search for patterns. Because both <xref:System.Text.StringBuilder> and <xref:System.String> objects use UTF-16 encoding to store characters, the index positions of characters, substrings, and regular expression matches are the same in both objects. This enables you to use <xref:System.Text.StringBuilder> methods to make changes at the same position at which that text is found in the <xref:System.String> object.
 
-    > [!NOTE]
-    >  If you adopt this approach, you should work from the end of the <xref:System.Text.StringBuilder> object to its beginning so that you don't have to repeatedly convert the <xref:System.Text.StringBuilder> object to a string.
+  > [!NOTE]
+  > If you adopt this approach, you should work from the end of the <xref:System.Text.StringBuilder> object to its beginning so that you don't have to repeatedly convert the <xref:System.Text.StringBuilder> object to a string.
 
   The following example illustrates this approach. It stores four occurrences of each letter of the English alphabet in a <xref:System.Text.StringBuilder> object. It then converts the text to a <xref:System.String> object and uses a regular expression to identify the starting position of each four-character sequence. Finally, it adds an underscore before each four-character sequence except for the first sequence, and converts the first character of the sequence to uppercase.
 

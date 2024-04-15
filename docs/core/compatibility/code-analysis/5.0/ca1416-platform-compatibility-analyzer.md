@@ -37,14 +37,13 @@ In projects that target platforms for which APIs that they use aren't available,
 
   > [!TIP]
   >
-  > - Blazor WebAssembly projects and Razor class library projects include browser support automatically.
-  > - To manually add the browser as a supported platform for your project, add the following entry to your project file:
+  > Blazor WebAssembly projects and Razor class library projects include browser support automatically. To manually add the browser as a supported platform for your project, add the following entry to your project file:
   >
-  >  ```xml
-  >  <ItemGroup>
-  >    <SupportedPlatform Include="browser" />
-  >  </ItemGroup>
-  >  ```
+  > ```xml
+  > <ItemGroup>
+  >   <SupportedPlatform Include="browser" />
+  > </ItemGroup>
+  > ```
 
 ## Version introduced
 

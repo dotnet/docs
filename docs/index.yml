@@ -319,8 +319,10 @@ additionalContent:
             - url: fsharp/using-fsharp-on-azure/deploying-and-managing.md
               text: Deploying Azure Resources with F#
         # Card
-        - title: Machine learning and AI
+        - title: AI and machine learning
           links:
+            - url: ai/index.yml
+              text: AI for .NET developers
             - url: machine-learning/index.yml
               text: Build custom AI solutions with ML.NET
             - url: /azure/cognitive-services/

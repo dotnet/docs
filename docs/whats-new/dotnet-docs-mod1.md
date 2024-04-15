@@ -59,7 +59,7 @@ Welcome to what's new in the .NET docs for January 2024. This article lists some
 - [System.Threading.Tasks.TaskScheduler class](../fundamentals/runtime-libraries/system-threading-tasks-taskscheduler.md)
 - [System.Threading.Thread class](../fundamentals/runtime-libraries/system-threading-thread.md)
 - [Build apps with .NET](../core/apps.md)
-- [Use runsettings with Microsoft.Testing.Platform](../core/testing/unit-testing-platform-runsettings.md)
+- [Use runsettings with Microsoft.Testing.Platform](../core/testing/unit-testing-platform-extensions-vstest-bridge.md)
 - [Use Microsoft.Testing.Platform with `dotnet test`](../core/testing/unit-testing-platform-integration-dotnet-test.md)
 - [MSTest code analysis](../core/testing/mstest-analyzers/overview.md)
 

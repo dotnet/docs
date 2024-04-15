@@ -63,6 +63,8 @@ class LocalModelExamples
         var executionSettings = new PromptExecutionSettings
         {
             // Add execution settings, such as the ModelID and ExtensionData
+            ModelId = "MyModelId",
+            ExtensionData = new Dictionary<string, object> { { "MaxTokens", 500 } }
         };
 
         // Send a prompt to your model directly through the Kernel
@@ -87,6 +89,8 @@ class LocalModelExamples
         var executionSettings = new PromptExecutionSettings
         {
             // Add execution settings, such as the ModelID and ExtensionData
+            ModelId = "MyModelId",
+            ExtensionData = new Dictionary<string, object> { { "MaxTokens", 500 } }
         };
 
         // Send a string representation of the chat history to your model directly through the Kernel

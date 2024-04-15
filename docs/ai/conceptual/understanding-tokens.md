@@ -81,7 +81,7 @@ As training continues, the model add any new tokens in the training text to it's
 - meow (9)
 - run (10)
 
-The semantic relationships between the tokens can be analyzed using these token ID sequences. Multi-valued numeric vectors, known as [_embeddings_](understanding-embeddings.md), are used to represent these relationships. An embedding is assigned to each token based on how commonly it's used together with or in similar contexts to the other tokens.
+The semantic relationships between the tokens can be analyzed using these token ID sequences. Multi-valued numeric vectors, known as [_embeddings_]<!-- (understanding-embeddings.md) -->, are used to represent these relationships. An embedding is assigned to each token based on how commonly it's used together with or in similar contexts to the other tokens.
 
 During output generation, the model predicts a vector value for the next token in the sequence. The model then selects the next token from it's vocabulary based on this vector value. In practice, the models calculates multiple vectors using various elements of the preceding tokens' embeddings. The model then evaluates all potential tokens from these vectors and selects the most probable one to continue the sequence.
 
@@ -111,6 +111,6 @@ Generative AI services might also have limits on the maximum number of tokens pe
 
 ## Related content
 
-- [How Generative AI and LLMs work](how-genai-and-llms-work.md)
-- [Understanding embeddings](understanding-embeddings.md)
-- [Working with vector databases](working-with-vector-dbs.md)
+- [How Generative AI and LLMs work]<!-- (how-genai-and-llms-work.md) -->
+- [Understanding embeddings]<!-- (understanding-embeddings.md) -->
+- [Working with vector databases]<!-- (working-with-vector-dbs.md) -->

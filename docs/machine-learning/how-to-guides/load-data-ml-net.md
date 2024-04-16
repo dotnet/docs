@@ -43,7 +43,7 @@ public class HousingData
 }
 ```
 
-### Annotating the data model with column attributes
+### Annotate the data model with column attributes
 
 Attributes give ML.NET more information about the data model and the data source.
 

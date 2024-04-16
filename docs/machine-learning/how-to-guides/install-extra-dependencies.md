@@ -32,7 +32,7 @@ No extra installation steps required. The library is installed when the NuGet pa
 
     ```bash
     sudo bash
-    # <type your user password when prompted.  this will put you in a root shell>
+    # <type your user password when prompted. this will put you in a root shell>
     # cd to /tmp where this shell has write permission
     cd /tmp
     # now get the key:
@@ -88,8 +88,8 @@ No extra installation steps required. The library is installed when the NuGet pa
 
 ### Mac
 
-1. Install the library with `Homebrew`
+Install the library with `Homebrew`
 
-    ```bash
-    wget https://raw.githubusercontent.com/Homebrew/homebrew-core/fb8323f2b170bd4ae97e1bac9bf3e2983af3fdb0/Formula/libomp.rb && brew install ./libomp.rb && brew link libomp --force
-    ```
+```bash
+wget https://raw.githubusercontent.com/Homebrew/homebrew-core/fb8323f2b170bd4ae97e1bac9bf3e2983af3fdb0/Formula/libomp.rb && brew install ./libomp.rb && brew link libomp --force
+```

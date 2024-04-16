@@ -1,8 +1,9 @@
 ---
-title: Transport Layer Security (TLS) best practices with the .NET Framework
-description: Describes best practices using Transport Layer Security (TLS) with the .NET Framework
+title: Transport Layer Security (TLS) best practices with .NET Framework
+titleSuffix: ""
+description: Describes best practices using Transport Layer Security (TLS) with .NET Framework
 ms.date: 03/18/2024
-helpviewer_keywords: 
+helpviewer_keywords:
   - "sending data, Internet security"
   - "protocols, Internet security"
   - "Network security"
@@ -13,10 +14,10 @@ helpviewer_keywords:
   - "security [.NET Framework], Internet"
   - "permissions [.NET Framework], Internet"
 ---
-# Transport Layer Security (TLS) best practices with the .NET Framework
+# Transport Layer Security (TLS) best practices with .NET Framework
 
 > [!NOTE]
-> This page contains .NET Framework TLS information. If you're looking for .NET TLS information, see: [TLS/SSL Best Practices](https://learn.microsoft.com/dotnet/core/extensions/sslstream-best-practices)
+> This page contains .NET Framework TLS information. If you're looking for .NET TLS information, see: [TLS/SSL Best Practices](../../core/extensions/sslstream-best-practices.md)
 
 .NET Framework supports the use of the Transport Layer Security (TLS) protocol to secure network communications.
 
@@ -48,7 +49,7 @@ Here is an updated example table showing the highest supported TLS version for d
 | 4.8                           | TLS 1.2    | **TLS 1.3**|
 | 4.8.1                         | TLS 1.2    | **TLS 1.3**|
 
-For more information see [TLS protocol version support in Schannel](https://learn.microsoft.com/windows/win32/secauthn/protocols-in-tls-ssl--schannel-ssp-#tls-protocol-version-support).
+For more information see [TLS protocol version support in Schannel](/windows/win32/secauthn/protocols-in-tls-ssl--schannel-ssp-#tls-protocol-version-support).
 
 ## Recommendations
 
@@ -207,7 +208,7 @@ A value of `false` for `Switch.System.Net.DontEnableSystemDefaultTlsVersions` ca
 
 If your app targets .NET Framework 4.7 or later versions, this switch defaults to `false`. That's a secure default that we recommend. If your app runs on .NET Framework 4.7 or later versions, but targets an earlier version, the switch defaults to `true`. In that case, you should explicitly set it to `false`.
 
-### For WCF Applications
+### For WCF applications
 
 #### Switch.System.ServiceModel.DisableUsingServicePointManagerSecurityProtocols
 
@@ -284,7 +285,7 @@ You can use the registry for fine-grained control over the protocols that your c
 
 Start with the `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols` registry key. Under that key you can create any subkeys in the set `TLS 1.2`, `TLS 1.3`. Under each of those subkeys, you can create subkeys `Client` and/or `Server`. Under `Client` and `Server`, you can create DWORD values `DisabledByDefault` (0 or 1) and `Enabled` (0 or 1).
 
-For more information see: [TLS Registry Settings - Schannel](https://learn.microsoft.com/windows-server/security/tls/tls-registry-settings?tabs=diffie-hellman#tls-dtls-and-ssl-protocol-version-settings)
+For more information see: [TLS Registry Settings - Schannel](/windows-server/security/tls/tls-registry-settings?tabs=diffie-hellman#tls-dtls-and-ssl-protocol-version-settings)
 
 ## The SCH_USE_STRONG_CRYPTO flag
 

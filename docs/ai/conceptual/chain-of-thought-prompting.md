@@ -1,6 +1,6 @@
 ---
 title: "Chain of thought prompting"
-description: "Learn how chain of thought prompting can simplfy prompt engineering."
+description: "Learn how chain of thought prompting can simplify prompt engineering."
 author: catbutler
 ms.topic: concept-article #Don't change.
 ms.date: 04/10/2024

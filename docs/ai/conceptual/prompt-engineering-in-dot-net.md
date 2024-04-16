@@ -1,21 +1,21 @@
 ---
-title: "Prompt engineering in .NET"
+title: "Prompt Engineering"
 description: "Learn basic prompt engineering concepts for .NET."
 author: catbutler
 ms.topic: concept-article #Don't change.
 ms.date: 04/10/2024
 
-#customer intent: As a .NET developer, I want to understand prompt engineering so that I can build more efficient and effective AI apps.
+#customer intent: As a .NET developer, I want to understand prompt engineering techniques for .NET so that I can build more efficient and targeted AI apps.
 
 ---
 
 # Prompt engineering in .NET
 
-This article covers basic GPT prompt engineering for .NET, including Semantic Kernel and Azure OpenAI.
+This article covers GPT prompt engineering for .NET, including Semantic Kernel and Azure OpenAI.
 
-GPT models from OpenAI are prompt-based: they respond to user input text (a prompt) with the most likely series of words to follow (a completion). The basic completion in earlier GPT models is text generated in response to prompts, producing a more free-form interaction. Newer GPT models produce chat completions that use a specific format, with messages based on roles (system, user, assistant) and chat history to preserve conversations.
+GPT models from OpenAI are prompt-based: they respond to user input text (a prompt) with the most likely series of words to follow (a completion). The completion format in earlier GPT models is text generated in response to a prompt, producing a more free-form interaction. Newer GPT models produce a chat completion in message form, with messages based on roles (system, user, assistant) and chat history to preserve conversations.
 
-Consider this text generation example where prompt is the user input and completion is the model ouput:
+Consider this text generation example where *prompt* is the user input and *completion* is the model output:
 
 Prompt:
 **"The president who served the shortest term was "**
@@ -25,66 +25,55 @@ _"Pedro Lascurain."_
 
 Looks right, but what if your app is supposed to help US History students? Pedro Lascurain's 45-minute term is the shortest term for any president, but he served Mexico&mdash;the students are probably looking for _"William Henry Harrsion."_ Clearly, the app could be more helpful to its intended users if you gave it some context.
 
-That's the basic idea of prompt engineering: you add context to the prompt to help the model produce better completions. You can do this by giving the model instructions, examples and cues.
+That's the basic idea of prompt engineering: you add context to the prompt to help the model produce better completions. You can do this by giving the model [*instructions*](#use-instructions-to-tell-the-model-what-to-do), [*examples*](#examples-show-the-model-what-to-do) and [*cues*](#cues). This true for both generated text and chat completions, but the latter has formatting requirements.
 
-## Instructions
+GPT models that support chat-based apps use three roles to organize completions: a system role that controls the chat, a user role to repesent user input, and an assistant role for responding to users. You divide your prompts into messages for each role:
+
+- [System messages](/azure/ai-services/openai/concepts/advanced-prompt-engineering?pivots=programming-language-chat-completions#system-message) give the model instructions about the assistant. A prompt can have only one system message, and it must be the first message.
+- User messages show example or historical prompts, or contain instructions for the assistant. An example chat completion must have at least one user message.
+- Assistant messages show example or historical completions, and must contain a response to the preceding user message. Assistant messages aren't required, but if you include one it must be paired with a user message to form an example.
+
+## Use Instructions to tell the model what to do
 
 This section explains the use of instructions in prompt engineering.
 
-An instruction is text that tells the model how to respond. An instruction can be a directive (**"You are helping students learn about US history, so talk about the US unless they specifically ask about other countries."**) or an imperative (**"Translate to Tagalog:"**).
+An instruction is text that tells the model how to respond. An instruction can be a directive or an imperative:
 
-Directives are more flexible than imperatives:
+- _Directives_ tell the model how to behave, but aren't simple commands&mdash;think character setup for an improv actor:  **"You are helping students learn about U.S. history, so talk about the U.S. unless they specifically ask about other countries."**
+- _Imperatives_ are unambiguous commands for the model to follow. **"Translate to Tagalog:"**
 
-- A directive can provide more context than an imperative.
+Because they are open-ended, directives are more flexible than imperatives:
+
 - You can combine several directives in one instruction.
-- It's usually better to implement a series of steps using a sequence of directives. If you tell the model to output the result of each step, when a problem arises you can easily see which step caused it. Although you can tell the model exactly what steps to follow, you can also just tell the model to break the instruction into steps itself, and tthen to output the result of each step. This approach is called [chain of thought prompting](chain-of-thought-prompting.md).
-
-Instructions are typically more effective when used with examples. However, when you use both in a prompt you should make sure that the instructions are either above or below the examples for best model performance.
-
-Sometimes GPT models don't follow an instruction the way you expect because it doesn't provide enough context. You can add more context to an instruction by including primary and supporting content. You can include these when you add an instruction, and can add or adjust them after you test your instruction's effect.
-
-The earlier GPT models that generate text or code follow any instructions that you include in a prompt. Newer GPT models that support chat-based apps follow instructions that are in a [system message](/azure/ai-services/openai/concepts/advanced-prompt-engineering?pivots=programming-language-chat-completions#system-message) or a user message, but not in an assistant message.
-
-### Primary content
-
-Primary content is text you add to an instruction for the model to process as if it were user input. For example, if you add the instruction **"Summarize US Presidential accomplishments."**, you could add a list of accomplishments as primary content.
-
-Make sure you clearly separate primary content from the instructions that apply to it, such as by labeling it. Consider the following C# example.
-
-```csharp
-prompt= @$"Instructions: Summarize US Presidential accomplishments.
-Accomplishments: 'George Washington
-First president of the United States.
-First president to have been a military veteran.
-First president to be elected to a second term in office.
-First president to receive votes from every presidential elector in an election.
-First president to fill the entire body of the United States federal judges; including the Supreme Court.
-First president to be declared an honorary citizen of a foreign country, and an honorary citizen of France.
-John Adams ...'" //Text truncated;
-```
+- Instructions usually work better when you use them with examples. However, because imperatives are unambiguous commands, models don't need examples to understand them (though you might use an example to show the model how to format responses).Because a directive doesn't tell the model exactly what to do, each example can help the model work better.
+- It's usually better to break down a difficult instruction into a series of steps, which you can do with a sequence of directives. You should also tell the model to output the result of each step, so that you can easily make granular adjustments. Although you can break down the instruction into steps yourself, it's easier to just tell the model to do it, and to output the result of each step. This approach is called [chain of thought prompting](chain-of-thought-prompting.md).
 
 ### Supporting content
 
-Supporting content is text that the model processes as part of an instruction, but which isn't the subject of the instruction. The instruction must refer to the supporting content. As with primary content, supporting content should be clearly distinct from the instruction it supports.
+Supporting content is text you refer to in an instruction, but which isn't the subject of the instruction. The model uses the supporting content to complete the instruction, which means that supplemental content is distributed in completions, typically as part of the completions' structure (such as in headings or column labels).
 
-Suppose you use the instruction **"Summarize US Presidential accomplishments"** to produce a list. The model might organized and order it in any number of ways. But what if you want the list to group the accomplishments by a specific set of categories? You could adjust your instruction by appending **"&nbsp;grouped by category"** to it, but a model is unlikely to correctly determine which specific categories you want.
+Label your supporting content to help the model figure out how to use it with the instruction. Don't worry too much about precision&mdash;labels don't have to match instructions exactly because the model will handle things like word form and capitalization.
 
-To make sure the model uses the categories you want, you could append supporting content to specify your categories and adjust your instruction accordingly. You could add a line of supporting content below the instruction and then change the instruction so it refers to the supporting content:
+Suppose you use the instruction **"Summarize US Presidential accomplishments"** to produce a list. The model might organize and order it in any number of ways. But what if you want the list to group the accomplishments by a specific set of categories? You can adjust your instruction by appending **"&nbsp;grouped by category"** to it, but a model won't know which specific categories you want. Use supporting content to add that information to the instruction.
+
+Adjust your instruction so the model will group by category, and append supporting content that specifies those categories:
 
 ```csharp
-prompt = @$"Instructions: Summarize US Presidential accomplishments, grouped by category.
+prompt = """
+Instructions: Summarize US Presidential accomplishments, grouped by category.
 Categories: Domestic Policy, US Economy, Foreign Affairs, Space Exploration.
-Accomplishments: George Washington
-First president of the United States.
-First president to have been a military veteran.
-First president to be elected to a second term in office.
-First president to receive votes from every presidential elector in an election.
-First president to fill the entire body of the United States federal judges; including the Supreme Court.
-First president to be declared an honorary citizen of a foreign country, and an honorary citizen of France.
-John Adams ..."; //Text truncated
+Accomplishments: 'George Washington
+- First president of the United States.
+- First president to have been a military veteran.
+- First president to be elected to a second term in office.
+- Received votes from every presidential elector in an election.
+- Filled the entire body of the United States federal judges; including the Supreme Court.
+- First president to be declared an honorary citizen of a foreign country, and an honorary citizen of France.
+John Adams ...'; //Text truncated
+"""
 ```
 
-## Examples
+## Examples show the model what to do
 
 This section explains the use of examples in .NET prompt engineering.
 
@@ -104,7 +93,8 @@ A cue is text that conveys the desired structure or format of output. Like an in
 Suppose you use an instruction to tell the model to produce a list of presidential accomplishments by category, along with supporting content that tells the model what categories to use. You decide that you want the model to produce a nested list with all caps for categories, with each president's accomplishments in each category listed on one line that begins with their name, with presidents listed chronologically. After your instruction and supporting content, you could add three cues to show the model how to structure and format the list:
 
 ```csharp
-prompt = @$"Instructions: Summarize US Presidential accomplishments, grouped by category.
+prompt = """
+Instructions: Summarize US Presidential accomplishments, grouped by category.
 Categories: Domestic Policy, US Economy, Foreign Affairs, Space Exploration.
 Accomplishments: George Washington
 First president of the United States.
@@ -113,11 +103,12 @@ First president to be elected to a second term in office.
 First president to receive votes from every presidential elector in an election.
 First president to fill the entire body of the United States federal judges; including the Supreme Court.
 First president to be declared an honorary citizen of a foreign country, and an honorary citizen of France.
-John Adams ...  // Text truncated
-// Cues
+John Adams ...  /// Text truncated
+
 DOMESTIC POLICY
 - George Washington: 
-- John Adams:";
+- John Adams:
+""";
 ```
 
 - **DOMESTIC POLICY** shows the model that you want it to start each group with the category in all caps.
@@ -138,15 +129,25 @@ By deeply integrating with Visual Studio Code, Semantic Kernel also makes it eas
 - Write tests for your prompts using your existing testing frameworks.
 - Deploy your prompts to production using your existing CI/CD pipelines.
 
-SK Completions use GPT-3 and GPT-3.5 models, which have no specific format rules for prompts. The preceding sections all contain examples of SK Completions.
+Semantic Kernel Completions use GPT-3 and GPT-3.5 models, which have no specific format rules for prompts. The preceding sections all contain examples of Semantic Kernel Completions.
 
-SK Chat Completions use GPT-35-Turbo and GPT-4 models, which use a specific chat-like format consisting of role-based messages as shown in the following example.
+Semantic Kernel Chat Completions use GPT-35-Turbo and GPT-4 models, which use a specific chat-like format consisting of role-based messages as shown in the following example.
 
 ```csharp
-prompt = @$"<message role=""system"">You are helping students with US History homework. Answers should not be about other countries except in relation to the US. Provide some supporting information for answers. Format any summaries using lists.</message>
-<message role=""user"">Which president had the shortest term?<message/>
-<message role=""assistant"">William Henry Harrison died just 31 days after his inauguration as president in 1841, making his presidency the shortest in U.S. history.<message/>
-<message role=""user"">Instructions: Summarize US Presidential accomplishments, grouped by category. Categories: Domestic Policy, US Economy, Foreign Affairs, Space Exploration, Other.</message>";
+prompt = """
+<message role=""system"">
+    You are helping students with US History homework. Answers should not be about other countries except in relation to the US. Provide some supporting information for answers. Format any summaries using lists.
+</message>
+<message role=""user"">
+    Which president had the shortest term?
+<message/>
+<message role=""assistant"">
+    William Henry Harrison died just 31 days after his inauguration as president in 1841, making his presidency the shortest in U.S. history.
+<message/>
+<message role=""user"">
+    Instructions: Summarize US Presidential accomplishments, grouped by category. Categories: Domestic Policy, US Economy, Foreign Affairs, Space Exploration, Other.
+</message>
+""";
 ```
 
 ### Azure OpenAI
@@ -182,6 +183,13 @@ Messages =
     new ChatRequestUserMessage("Summarize US Presidential accomplishments, grouped by category.\\n Categories: domestic policy, judicial appointments, trade agreements, space exploration"),
 }
 ```
+
+## Extending the reach of your prompt engineering techniques
+
+You can increase the power of your prompts with two more advanced prompt engineering techniques that we'll cover in depth in their own articles.
+
+- LLMs have token input limits that constrain the amount of text you can fit in a prompt. You can use [embeddings](embeddings.md) and [vector database](vector-dbs.md) solutions to reduce the amount of tokens you need to represent a given piece of text.
+- LLMs aren't trained on your data unless you train them yourself, which can be costly and time-consuming. You can use [retrieval-augmented generation](rag.md) to make your data available to an LLM without training it.
 
 ## Related content
 

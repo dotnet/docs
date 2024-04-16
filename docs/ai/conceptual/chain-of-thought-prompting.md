@@ -1,30 +1,30 @@
 ---
-title: "Chain of thought prompting"
+title: "Chain of Thought Prompting - .NET"
 description: "Learn how chain of thought prompting can simplify prompt engineering."
 author: catbutler
 ms.topic: concept-article #Don't change.
 ms.date: 04/10/2024
 
-#customer intent: As a .NET developer, I want to understand how chain-of-thought prompting can save time and reduce prompt engineering complexity.
+#customer intent: As a .NET developer, I want to understand what chain-of-thought prompting is and how it can help me save time and get better completions out of prompt engineering.
 
 ---
 
-# Chain of thought prompting
+# Chain of thought prompting 
 
 This article explains the use of chain of thought prompting in .NET.
 
-GPT model performance benefits from [prompt engineering](prompt-engineering-in-dot-net.md), the practice of providing instructions and examples to a model to prime or refine its output. When processing instructions, models make more reasoning errors when they try to answer right away, rather than taking time to work out an answer. You can help the model reason its way toward correct answers more reliably by asking for the model to include its chain of thought&mdash;the steps it took to follow your instructions, along with the results of each step.
+GPT model performance benefits from [*prompt engineering*](prompt-engineering-in-dot-net.md), which is the practice of providing instructions and examples to a model to prime or refine its output. As they process instructions, models make more reasoning errors when they try to answer right away rather than taking time to work out an answer. You can help the model reason its way toward correct answers more reliably by asking for the model to include its chain of thought&mdash;that is, the steps it took to follow your instructions, along with the results of each step.
 
 Chain of thought prompting is the practice of prompting a GPT model to perform a task step-by-step and to present each step and its result in order in the output. This simplifies prompt engineering by offloading some execution planning to the model, and makes it easier to connect any problem to a specific step so you know where to focus further efforts.
 
-It's generally much simpler to use instructions for chain of thought prompting, but you can use examples to show the model how to break down tasks.
+It's generally simpler to just instruct the model to include its chain of thought, but you can use examples to show the model how to break down tasks. The following sections show both ways.
 
 ## Use chain of thought prompting in instructions
 
 To use an instruction for chain of thought prompting, include a directive that tells the model to perform the task step-by-step and to output the result of each step.
 
 ```csharp
-prompt= @$"Instructions: Compare the pros and cons of EVs and petroleum-fueled vehicles. Break the task into steps, and output the result of each step as you perform it."; 
+prompt= "Instructions: Compare the pros and cons of EVs and petroleum-fueled vehicles. Break the task into steps, and output the result of each step as you perform it."; 
 ```
 
 ## Use chain of thought prompting in examples
@@ -32,7 +32,8 @@ prompt= @$"Instructions: Compare the pros and cons of EVs and petroleum-fueled v
 You can use examples to indicate the steps for chain of thought prompting, which the model will interpret to mean it should also output step results. Steps can include formatting cues.
 
 ```csharp
-prompt= @$"Instructions: Compare the pros and cons of EVs and petroleum-fueled vehicles.
+prompt= """
+        Instructions: Compare the pros and cons of EVs and petroleum-fueled vehicles.
 
         Differences between EVs and petroleum-fueled vehicles:
         - 
@@ -44,7 +45,8 @@ prompt= @$"Instructions: Compare the pros and cons of EVs and petroleum-fueled v
         Pros of EVs
         1.
         Pros of petroleum-fueled vehicles
-        1. ";
+        1. 
+        """;
 ```
 
 ## Related content

@@ -16,7 +16,7 @@ The <xref:Microsoft.Extensions.Logging.LoggerMessage> class exposes functionalit
 - Logger extension methods must parse the message template (named format string) every time a log message is written. <xref:Microsoft.Extensions.Logging.LoggerMessage> only requires parsing a template once when the message is defined.
 
 > [!IMPORTANT]
-> Instead of using the [LoggerMessage class](xref:Microsoft.Extensions.Logging.LoggerMessage) to create high-performance logs, you can use the [LoggerMessage attribute](xref:Microsoft.Extensions.Logging.LoggerMessageAttribute) in .NET 6.0+. The `LoggerMessageAttribute` provides source-generation logging support designed to deliver a highly usable and highly performant logging solution for modern .NET applications. For more information, see [Compile-time logging source generation (.NET Fundamentals)](./logger-message-generator.md).
+> Instead of using the [LoggerMessage class](xref:Microsoft.Extensions.Logging.LoggerMessage) to create high-performance logs, you can use the [LoggerMessage attribute](xref:Microsoft.Extensions.Logging.LoggerMessageAttribute) in .NET 6 and later versions. The `LoggerMessageAttribute` provides source-generation logging support designed to deliver a highly usable and highly performant logging solution for modern .NET applications. For more information, see [Compile-time logging source generation (.NET Fundamentals)](./logger-message-generator.md).
 
 The sample app demonstrates <xref:Microsoft.Extensions.Logging.LoggerMessage> features with a priority queue processing worker service. The app processes work items in priority order. As these operations occur, log messages are generated using the <xref:Microsoft.Extensions.Logging.LoggerMessage> pattern.
 

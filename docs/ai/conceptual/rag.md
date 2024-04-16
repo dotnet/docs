@@ -1,16 +1,18 @@
 ---
 title: "Using Your Data in Prompt Engineering with Retrival-Augmented Generation - .NET"
-description: "Learn how you can use retreival-augmented generation to pull external text data into examples for prompt engineeing in .NET."
+description: "Learn how you can use retreival-augmented generation to give LLMs access to your data for prompt engineering in .NET."
 author: catbutler
 ms.topic: concept-article #Don't change.
-ms.date: 04/10/2024
+ms.date: 04/15/2024
 
-#customer intent: As a .NET developer, I want to understand how retrieval-augmented generation lets me pull external text data into engineered prompts in .NET so that I can use source text that is much larger than token limits allow.
+#customer intent: As a .NET developer, I want to understand how retrieval-augmented generation works in .NET so that LLMs can use my data sources to augment their knowledge.
 
 ---
 
-# Using retrieval-augmented generation (RAG) to pull external text into prompts
+# Using retrieval-augmented generation (RAG) to increase LLM knowledge
 
-This article describes how retrieval-augmented generation lets you use extensive texts for prompt engineering in .NET.
+This article describes how retrieval-augmented generation lets LLMs use your data sources without first training on the data.
 
-LLMs have input limits that prevent you from putting much reference material in an engnieered prompt. You can work around this limitation by using retrieval-augmented generation: using embeddings to match queries with semantically similar text data.
+LLMs have token input limits that constrain how much text you can put directly into a prompt. For most use cases that's fine: LLMs have extensive knowledge bases. But, LLMs don't know about your data unless you've customized them through training. Retrieval-augmented generation lets you make your data available to LLMs without training them on it first.
+
+With retrieval-augmented generation, you create indexes for querying your data sources and use them to generate embeddings. When a user asks the LLM a question, it compares the question to your indexed data and finds the most relevant context. This context and the user's question then go to the LLM in a prompt, and the LLM provides a response based on your data.

@@ -3,7 +3,7 @@ title: "Using Embeddings for Semantic Analysis - .NET"
 description: "Learn how embeddings enable AI models to perform semantic analysis in .NET."
 author: catbutler
 ms.topic: concept-article #Don't change.
-ms.date: 04/10/2024
+ms.date: 04/11/2024
 
 #customer intent: As a .NET developer, I want to understand how embeddings enable semantic analysis and when to use them in .NET .
 

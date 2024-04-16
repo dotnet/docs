@@ -3,7 +3,7 @@ title: "Understanding vector databases in .NET"
 description: "Understand how vector databases support embeddings in .NET."
 author: catbutler
 ms.topic: concept-article #Don't change.
-ms.date: 04/10/2024
+ms.date: 04/12/2024
 
 #customer intent: As a .NET developer, I want to understand vector databases in .NET so I can generate and store embeddings.
 

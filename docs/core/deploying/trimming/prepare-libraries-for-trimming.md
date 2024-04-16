@@ -12,9 +12,6 @@ The .NET SDK makes it possible to reduce the size of self-contained apps by [tri
 
 ## Enable library trim warnings
 
-> [!TIP]
-> Ensure you're using the .NET 6 SDK or later for these steps. They will not work correctly in previous versions.
-
 There are two ways to find trim warnings in your library:
 
   1. Enable project-specific trimming using the `IsTrimmable` property.
@@ -51,8 +48,6 @@ To create your sample app, first create a separate application project with `dot
     <OutputType>Exe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
     <PublishTrimmed>true</PublishTrimmed>
-    <!-- Prevent warnings from unused code in dependencies -->
-    <TrimmerDefaultAction>link</TrimmerDefaultAction>
   </PropertyGroup>
 
   <ItemGroup>
@@ -178,7 +173,7 @@ In this case the trim analysis will simply keep public methods of `System.Tuple`
 
 ## Recommendations
 
-In general, try to avoid reflection if possible. When using reflection, limit it in scope so that it is reachable only from a small part of the library.
+In general, try to avoid reflection. When using reflection, limit it in scope so that it is reachable only from a small part of the library.
 
 - Avoid using non-understood patterns in places like static constructors that will result in the warning propagating to all members of the class.
 - Avoid annotating virtual methods or interface methods, which will require all overrides to have matching annotations.

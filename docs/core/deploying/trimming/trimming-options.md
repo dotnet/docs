@@ -10,86 +10,27 @@ ms.topic: reference
 
 The following MSBuild properties and items influence the behavior of [trimmed self-contained deployments](trim-self-contained.md). Some of the options mention `ILLink`, which is the name of the underlying tool that implements trimming. For more information about the underlying tool, see the [Trimmer documentation](https://github.com/dotnet/linker/tree/main/docs).
 
-Trimming with `PublishTrimmed` was introduced in .NET Core 3.0. The other options are available only in .NET 5 and later versions.
-
 ## Enable trimming
 
 - `<PublishTrimmed>true</PublishTrimmed>`
 
-  Enable trimming during publish. This also turns off trim-incompatible features and enables [trim analysis](#roslyn-analyzer) during build.
+  Enable trimming during publish. This also turns off [trim-incompatible features](#framework-features-disabled-when-trimming) and enables [trim analysis](#roslyn-analyzer) during build.
 
 Place this setting in the project file to ensure that the setting applies during `dotnet build`, not just `dotnet publish`.
 
-This setting trims any assemblies that have been configured for trimming. With `Microsoft.NET.Sdk` in .NET 6, this includes any assemblies with `[AssemblyMetadata("IsTrimmable", "True")]`, which is the case for framework assemblies. In .NET 5, framework assemblies from the netcoreapp runtime pack are configured for trimming via `<IsTrimmable>` MSBuild metadata. Other SDKs may define different defaults.
+## Show detailed warnings
 
-Starting in .NET 6, this setting also enables the trim-compatibility [Roslyn analyzer](#roslyn-analyzer) and disables [features that are incompatible with trimming](#framework-features-disabled-when-trimming).
+In .NET 6+, trim analysis produces at most one warning for each assembly that comes from a `PackageReference`, indicating that the assembly's internals are not compatible with trimming. You can also show individual warnings for all assemblies:
 
-## Trimming granularity
+- `<TrimmerSingleWarn>false</TrimmerSingleWarn>`
 
-The following granularity settings control how aggressively unused IL is discarded. This can be set as a property affecting all trimmer input assemblies, or as metadata on an [individual assembly](#trimmed-assemblies), which overrides the property setting.
+  Show all detailed warnings, instead of collapsing them to a single warning per assembly.
 
-- `<TrimMode>link</TrimMode>`
-
-  Enable member-level trimming, which removes unused members from types. This is the default in .NET 6+.
-
-- `<TrimMode>copyused</TrimMode>`
-
-  Enable assembly-level trimming, which keeps an entire assembly if any part of it is used (in a statically understood way).
-
-Assemblies with `<IsTrimmable>true</IsTrimmable>` metadata but no explicit `TrimMode` will use the global `TrimMode`. The default `TrimMode` for `Microsoft.NET.Sdk` is `link` in .NET 6+, and `copyused` in previous versions.
-
-## Trim additional assemblies
-
-In .NET 6+, `PublishTrimmed` trims assemblies with the following assembly-level attribute:
-
-```csharp
-[AssemblyMetadata("IsTrimmable", "True")]
-```
-
-The framework libraries have this attribute. In .NET 6+, you can also opt in to trimming for a library without this attribute, specifying the assembly by name (without the `.dll` extension).
-
-```xml
-<ItemGroup>
-  <TrimmableAssembly Include="MyAssembly" />
-</ItemGroup>
-```
-
-This is equivalent to setting MSBuild metadata `<IsTrimmable>true</IsTrimmable>` for the assembly in `ManagedAssemblyToLink` (see below).
-
-## Trimmed assemblies
-
-When publishing a trimmed app, the SDK computes an `ItemGroup` called `ManagedAssemblyToLink` that represents the set of files to be processed for trimming. `ManagedAssemblyToLink` may have metadata that controls the trimming behavior per assembly. To set this metadata, create a target that runs before the built-in `PrepareForILLink` target. The following example shows how to enable trimming of `MyAssembly`.
-
-```xml
-<Target Name="ConfigureTrimming"
-        BeforeTargets="PrepareForILLink">
-  <ItemGroup>
-    <ManagedAssemblyToLink Condition="'%(Filename)' == 'MyAssembly'">
-      <IsTrimmable>true</IsTrimmable>
-    </ManagedAssemblyToLink>
-  </ItemGroup>
-</Target>
-```
-
-You can also use this to override the trimming behavior specified by the library author, by setting `<IsTrimmable>false</IsTrimmable>` for an assembly with `[AssemblyMetadata("IsTrimmable", "True"])`.
-
-Do not add or remove items to/from `ManagedAssemblyToLink`, because the SDK computes this set during publish and expects it not to change. The supported metadata is:
-
-- `<IsTrimmable>true</IsTrimmable>`
-
-  Control whether the given assembly is trimmed.
-
-- `<TrimMode>copyused</TrimMode>` or `<TrimMode>link</TrimMode>`
-
-  Control the [trimming granularity](#trimming-granularity) of this assembly. This takes precedence over the global `TrimMode`. Setting `TrimMode` on an assembly implies `<IsTrimmable>true</IsTrimmable>`.
-
-- `<TrimmerSingleWarn>True</TrimmerSingleWarn>` or `<TrimmerSingleWarn>False</TrimmerSingleWarn>`
-
-  Control whether to show [single warnings](#show-detailed-warnings) for this assembly.
+The defaults show detailed warnings for the project assembly and `ProjectReference` items. `<TrimmerSingleWarn>` can also be set as metadata on an [individual assembly](#trimmed-assemblies) to control the warning behavior for that assembly only.
 
 ## Root assemblies
 
-All assemblies that do not have `<IsTrimmable>true</IsTrimmable>` are considered roots for the analysis, which means that they and all of their statically understood dependencies will be kept. Additional assemblies may be "rooted" by name (without the `.dll` extension):
+Additional assemblies may be "rooted" by name (without the `.dll` extension):
 
 ```xml
 <ItemGroup>
@@ -97,27 +38,7 @@ All assemblies that do not have `<IsTrimmable>true</IsTrimmable>` are considered
 </ItemGroup>
 ```
 
-## Root descriptors
-
-Another way to specify roots for analysis is using an XML file that uses the trimmer [descriptor format](https://github.com/dotnet/linker/blob/main/docs/data-formats.md#descriptor-format). This lets you root specific members instead of a whole assembly.
-
-```xml
-<ItemGroup>
-  <TrimmerRootDescriptor Include="MyRoots.xml" />
-</ItemGroup>
-```
-
-For example, `MyRoots.xml` might root a specific method that is dynamically accessed by the application:
-
-```xml
-<linker>
-  <assembly fullname="MyAssembly">
-    <type fullname="MyAssembly.MyClass">
-      <method name="DynamicallyAccessedMethod" />
-    </type>
-  </assembly>
-</linker>
-```
+This is most useful for analyzing dependenices, as described in [Prepare libraries for trimming](prepare-libraries-for-trimming.md).
 
 ## Analysis warnings
 
@@ -150,16 +71,6 @@ You can suppress individual [warning codes](https://github.com/dotnet/linker/blo
 - `<ILLinkTreatWarningsAsErrors>false</ILLinkTreatWarningsAsErrors>`
 
   Don't treat ILLink warnings as errors. This may be useful to avoid turning trim analysis warnings into errors when treating compiler warnings as errors globally.
-
-## Show detailed warnings
-
-In .NET 6+, trim analysis produces at most one warning for each assembly that comes from a `PackageReference`, indicating that the assembly's internals are not compatible with trimming. You can also show individual warnings for all assemblies:
-
-- `<TrimmerSingleWarn>false</TrimmerSingleWarn>`
-
-  Show all detailed warnings, instead of collapsing them to a single warning per assembly.
-
-The defaults show detailed warnings for the project assembly and `ProjectReference` items. `<TrimmerSingleWarn>` can also be set as metadata on an [individual assembly](#trimmed-assemblies) to control the warning behavior for that assembly only.
 
 ## Remove symbols
 

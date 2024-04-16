@@ -27,7 +27,7 @@ Looks right, but what if your app is supposed to help US History students? Pedro
 
 That's the basic idea of prompt engineering: you add context to the prompt to help the model produce better completions. You can do this by giving the model [*instructions*](#use-instructions-to-tell-the-model-what-to-do), [*examples*](#examples-show-the-model-what-to-do) and [*cues*](#cues). This true for both generated text and chat completions, but the latter has formatting requirements.
 
-GPT models that support chat-based apps use three roles to organize completions: a system role that controls the chat, a user role to repesent user input, and an assistant role for responding to users. You divide your prompts into messages for each role:
+GPT models that support chat-based apps use three roles to organize completions: a system role that controls the chat, a user role to represent user input, and an assistant role for responding to users. You divide your prompts into messages for each role:
 
 - [System messages](/azure/ai-services/openai/concepts/advanced-prompt-engineering?pivots=programming-language-chat-completions#system-message) give the model instructions about the assistant. A prompt can have only one system message, and it must be the first message.
 - User messages show example or historical prompts, or contain instructions for the assistant. An example chat completion must have at least one user message.
@@ -69,8 +69,8 @@ Accomplishments: 'George Washington
 - Received votes from every presidential elector in an election.
 - Filled the entire body of the United States federal judges; including the Supreme Court.
 - First president to be declared an honorary citizen of a foreign country, and an honorary citizen of France.
-John Adams ...'; //Text truncated
-"""
+John Adams ...' ///Text truncated
+""";
 ```
 
 ## Examples show the model what to do

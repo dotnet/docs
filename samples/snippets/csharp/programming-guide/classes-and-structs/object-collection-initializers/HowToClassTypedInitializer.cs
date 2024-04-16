@@ -19,10 +19,12 @@ namespace object_collection_initializers
 
             public EmbeddedClassTypeA()
             {
+                Console.WriteLine($"Entering EmbeddedClassTypeA constructor. Values are: {this}");
                 I = 3;
                 B = true;
                 S = "abc";
                 ClassB = new() { BB = true, BI = 43 };
+                Console.WriteLine($"Exiting EmbeddedClassTypeA constructor. Values are: {this})");
             }
         }
 
@@ -36,9 +38,11 @@ namespace object_collection_initializers
 
             public EmbeddedClassTypeB()
             {
+                Console.WriteLine($"Entering EmbeddedClassTypeB constructor. Values are: {this}");
                 BI = 23;
                 BB = false;
                 BS = "BBBabc";
+                Console.WriteLine($"Exiting EmbeddedClassTypeB constructor. Values are: {this})");
             }
         }
 
@@ -50,7 +54,7 @@ namespace object_collection_initializers
                 B = false,
                 ClassB = { BI = 100003 }
             };
-            Console.WriteLine(a);
+            Console.WriteLine($"After initializing EmbeddedClassTypeA: {a}");
 
             var a2 = new EmbeddedClassTypeA
             {
@@ -58,13 +62,22 @@ namespace object_collection_initializers
                 B = false,
                 ClassB = new() { BI = 100003 } //New instance
             };
-            Console.WriteLine(a2);
+            Console.WriteLine($"After initializing EmbeddedClassTypeA a2: {a2}");
         }
 
         // Output:
-        //103|False|abc|||100003|True|BBBabc
-        //103|False|abc|||100003|False|BBBabc
+        //Entering EmbeddedClassTypeA constructor Values are: 0|False||||
+        //Entering EmbeddedClassTypeB constructor Values are: 0|False|
+        //Exiting EmbeddedClassTypeB constructor Values are: 23|False|BBBabc)
+        //Exiting EmbeddedClassTypeA constructor Values are: 3|True|abc|||43|True|BBBabc)
+        //After initializing EmbeddedClassTypeA: 103|False|abc|||100003|True|BBBabc
+        //Entering EmbeddedClassTypeA constructor Values are: 0|False||||
+        //Entering EmbeddedClassTypeB constructor Values are: 0|False|
+        //Exiting EmbeddedClassTypeB constructor Values are: 23|False|BBBabc)
+        //Exiting EmbeddedClassTypeA constructor Values are: 3|True|abc|||43|True|BBBabc)
+        //Entering EmbeddedClassTypeB constructor Values are: 0|False|
+        //Exiting EmbeddedClassTypeB constructor Values are: 23|False|BBBabc)
+        //After initializing EmbeddedClassTypeA a2: 103|False|abc|||100003|False|BBBabc
     }
-
     // </SnippetHowToClassTypedInitializer>
 }

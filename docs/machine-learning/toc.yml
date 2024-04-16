@@ -2,21 +2,24 @@ items:
 - name: ML.NET
   href: index.yml
 - name: Overview
+  href: overview.md
+- name: Model Builder & CLI
   items:
-  - name: Model Builder & CLI
-    items:
-    - name: The ML.NET Model Builder tool
-      href: automate-training-with-model-builder.md
-    - name: The ML.NET command-line interface
-      href: automate-training-with-cli.md
-      displayName: cli
-  - name: API
-    items:
-    - name: The ML.NET API
-      href: how-does-mldotnet-work.md
-    - name: What is Automated Machine Learning (AutoML)?
-      href: automated-machine-learning-mlnet.md
-  expanded: true
+  - name: The ML.NET Model Builder tool
+    href: automate-training-with-model-builder.md
+  - name: The ML.NET command-line interface
+    href: automate-training-with-cli.md
+    displayName: cli
+    expanded: true
+- name: API
+  items:
+  - name: The ML.NET API
+    href: how-does-mldotnet-work.md
+  - name: What is Automated Machine Learning (AutoML)?
+    href: automated-machine-learning-mlnet.md
+    expanded: true
+- name: What's new
+  href: whats-new/overview.md
 - name: Tutorials
   items:
   - name: Model Builder & CLI
@@ -136,10 +139,6 @@ items:
         href: /azure/machine-learning/how-to-use-automl-onnx-model-dotnet?toc=/dotnet/machine-learning/how-to-guides/toc.json&bc=/dotnet/machine-learning/how-to-guides/toc.json
 - name: Reference
   items:
-  - name: ML.NET API reference
-    href: ../../api/index.md?view=ml-dotnet&preserve-view=true
-  - name: ML.NET Preview API reference
-    href: ../../api/index.md?view=ml-dotnet-preview&preserve-view=true
   - name: CLI reference
     href: reference/ml-net-cli-reference.md
 - name: Resources

@@ -100,7 +100,7 @@ This section describes the best practices to follow when developing world-ready 
 
 ## Recommendations for robust testing
 
-1. To make dependencies more explicit and testing potentially easier and parallelizable, you _SHOULD CONSIDER_ explicitly passing culture-relevant settings, such as `CultureInfo` parameters, to methods that perform formatting, and `TimeZoneInfo` to methods that work with dates and times.  You **MUST** use [`TimeProvider`](https://learn.microsoft.com/en-us/dotnet/api/system.timeprovider?view=net-8.0) or a similar type when retrieving the time.
+1. To make dependencies more explicit and testing potentially easier and parallelizable, you _SHOULD CONSIDER_ explicitly passing culture-relevant settings, such as `CultureInfo` parameters, to methods that perform formatting, and `TimeZoneInfo` to methods that work with dates and times.  You **MUST** use <xref:System.TimeProvider> or a similar type when retrieving the time.
 
 1. For most tests, you _SHOULD NOT_ explicitly validate the exact output of a given formatting operation or the exact offset of a timezone.  Formatting and timezone data may change at any time, and may differ between two otherwise identical instances of an operating system (and potentially different processes on the same machine).  Relying on an exact value makes tests brittle.
     - Generally, validating that some output was received will be sufficient (eg, non-empty strings when formatting).

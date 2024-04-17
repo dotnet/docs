@@ -17,15 +17,15 @@ Embeddings are a way you can give semantic memories to an LLM. Essentially, embe
 
 Summarizing text is especially useful for [prompt engineering](prompt-engineering-in-dot-net.md), because it gives you a way to use far fewer tokens to repesent a given text. You use examples in prompt engineering to show an LLM what to do. However, LLMs limit the number of tokens per input, which constrains how much text you can include in examples. If you try to include more than the limit in one input, the model will ignore some or all of that input. Some LLMs also feature quota systems, another reason to watch your token counts.
 
-## Embeddings let you use math to work with semantic meaning
+## Embeddings preserve semantic meaning
 
 Embeddings turn non-numeric data into numeric data that preserves semantic meaning. Specifically, an embedding is an array of numeric values stored as a vector in a database that an LLM uses to compare embeddings. Two embeddings with similar vectors also have similar semantic values, such as an image and its alt text, or a course syllabus and the textbook for that course.
 
-### Using embedding models to generate embeddings
+### Choosing embedding models to generate embeddings
 
-You generate embeddings for your raw data by using an embedding model: an AI model that can encode a piece of non-numeric data into a vector (a long array of numbers). The model can also decode an embedding into non-numeric data that has the same meaning as the original, raw data.
+You generate embeddings for your raw data by using an embedding model: an AI model that can encode a piece of non-numeric data into a vector (a long array of numbers). The model can also decode an embedding into non-numeric data that has the same or similar meaning as the original, raw data. The embedding model you choose affects which data types you can generate embeddings for.
 
-In Semantic Kernel, you add a connector for an embedding model to your kernel. You should create a [plugin](/semantic-kernel/agents/plugins/?tabs=Csharp) that includes the connector and functions for working with the embedding model, so that a [planner](/semantic-kernel/agents/planners/?tabs=Csharp#what-is-a-planner) can use it.
+In Semantic Kernel, you build connectors for embedding models and databases into your kernel, so you can quickly pull in text data, and generate and store embeddings. This lets you use a vector database solution to store and retrieve semantic memories.
 
 In Azure OpenAI, the service includes access to [embedding models](/azure/ai-services/openai/concepts/models#embeddings).
 

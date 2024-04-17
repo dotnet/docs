@@ -44,7 +44,7 @@ The following runsettings entries allows to configure how MSTest behaves.
 |**TreatClassAndAssemblyCleanupWarningsAsErrors**|false|To see your failures in class cleanups as errors, set this value to **true**.|
 |**TreatDiscoveryWarningsAsErrors**|false|To report test discovery warnings as errors, set this value to **true**.|
 
-### TestRunParameter element
+### `TestRunParameter` element
 
 ```xml
 <TestRunParameters>
@@ -58,7 +58,7 @@ Test run parameters provide a way to define variables and values that are availa
 private string _appUrl;
 public TestContext TestContext { get; set; }
 
-[TestMethod] // [Test] for NUnit
+[TestMethod]
 public void HomePageTest()
 {
     string _appUrl = TestContext.Properties["webAppUrl"];

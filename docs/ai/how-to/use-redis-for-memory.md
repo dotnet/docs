@@ -52,6 +52,7 @@ Before integrating your Redis database to the Semantic Kernel SDK, ensure you ha
 ## Related content
 
 <!-- TODO: update these links once the other docs are done -->
+
 * [Use RAG with SQL]<!-- (link.md) -->
 * [Data ingestion from SharePoint]<!-- (link.md) -->
 * [Working with vector databases]<!-- (link.md) -->

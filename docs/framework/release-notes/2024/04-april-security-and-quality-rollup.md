@@ -1,4 +1,4 @@
-# April 2024 Security and Quality Rollup
+# April 2024 security and quality rollup
 
 _Released April 9, 2024_
 

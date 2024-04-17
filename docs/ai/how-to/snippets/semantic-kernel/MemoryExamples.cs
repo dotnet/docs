@@ -25,11 +25,11 @@ class MemoryExamples
 {
     public static async Task Examples()
     {
-        await RedisearchExample();
+        await RediSearchExample();
     }
 
 
-    static async Task RedisearchExample()
+    static async Task RediSearchExample()
     {
         // <initRedis>
         // Retrieve the Redis connection config

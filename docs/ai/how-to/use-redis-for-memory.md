@@ -1,6 +1,6 @@
 ---
 title: "Use Redis for Memory Storage with the Semantic Kernel SDK for .NET"
-description: "Learn how to use a Redis database with the Redisearch module for memory storage and recall in Semantic Kernel SDK for .NET."
+description: "Learn how to use a Redis database with the RediSearch module for memory storage and recall in Semantic Kernel SDK for .NET."
 author: haywoodsloan
 ms.topic: how-to
 ms.date: 04/17/2024
@@ -11,7 +11,7 @@ ms.date: 04/17/2024
 
 # Use Redis for memory storage with the Semantic Kernel SDK
 
-This article demonstrates how to integrate a Redis database with the Redisearch module into the [Semantic Kernel SDK](/semantic-kernel/overview) and use it for memory storage and retrieval.
+This article demonstrates how to integrate a Redis database with the RediSearch module into the [Semantic Kernel SDK](/semantic-kernel/overview) and use it for memory storage and retrieval.
 
 Adding memory storage to the Semantic Kernel SDK provides a broader context for your requests, and enables you to store data like a traditional database but query it using natural language.
 
@@ -23,11 +23,11 @@ Adding memory storage to the Semantic Kernel SDK provides a broader context for 
 * [`Microsoft.SemanticKernel.Connectors.Redis` NuGet package](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.Redis)
 * [`Microsoft.SemanticKernel.Plugins.Memory` NuGet package](https://www.nuget.org/packages/Microsoft.SemanticKernel.Plugins.Memory)
 * [`StackExchange.Redis` NuGet package](https://www.nuget.org/packages/StackExchange.Redis)
-* A Redis database with the Redisearch module, [deployed and accessible to your .NET application](/azure/azure-cache-for-redis/quickstart-create-redis-enterprise)
+* A Redis database with the RediSearch module, [deployed and accessible to your .NET application](/azure/azure-cache-for-redis/quickstart-create-redis-enterprise)
 
 ## Implement memory storage using a Redis database
 
-Before integrating your Redis database to the Semantic Kernel SDK, ensure you have the Redisearch module enabled. For _Azure Cache for Redis_ see [Use Redis modules with Azure Cache for Redis](/azure/azure-cache-for-redis/cache-redis-modules#adding-modules-to-your-cache).
+Before integrating your Redis database to the Semantic Kernel SDK, ensure you have the RediSearch module enabled. For _Azure Cache for Redis_ see [Use Redis modules with Azure Cache for Redis](/azure/azure-cache-for-redis/cache-redis-modules#adding-modules-to-your-cache).
 
 1. Initialize a connection to your Redis database. For example:
 

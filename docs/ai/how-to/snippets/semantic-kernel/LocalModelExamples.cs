@@ -68,7 +68,7 @@ class LocalModelExamples
         };
 
         // Send a prompt to your model directly through the Kernel
-        // The Kernel response will be null if the model can't reached
+        // The Kernel response will be null if the model can't be reached
         string prompt = "Please list three services offered by Azure";
         string? response = await kernel.InvokePromptAsync<string>(prompt);
         Console.WriteLine($"Output: {response}");

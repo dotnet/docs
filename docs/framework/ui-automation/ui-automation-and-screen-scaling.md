@@ -10,7 +10,6 @@ helpviewer_keywords:
   - "screens, scaling"
   - "UI (user interface), automation"
   - "UI Automation"
-ms.assetid: 4380cad7-e509-448f-b9a5-6de042605fd4
 ---
 # UI Automation and Screen Scaling
 
@@ -63,7 +62,7 @@ Starting with Windows Vista, Windows enables users to change the dots per inch (
      [!code-csharp[Highlighter#101](../../../samples/snippets/csharp/VS_Snippets_Wpf/Highlighter/CSharp/NativeMethods.cs#101)]
      [!code-vb[Highlighter#101](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/Highlighter/VisualBasic/NativeMethods.vb#101)]
 
-     This function makes the entire process dpi-aware, meaning that all windows that belong to the process are unscaled. In the [Highlighter Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Accessibility/Highlighter), for instance, the four windows that make up the highlight rectangle are located at the physical coordinates obtained from UI Automation, not the logical coordinates. If the sample were not dpi-aware, the highlight would be drawn at the logical coordinates on the desktop, which would result in incorrect placement in a non-96- dpi environment.
+     This function makes the entire process dpi-aware, meaning that all windows that belong to the process are unscaled. In the [Highlighter Sample](https://github.com/Microsoft/WPF-Samples/tree/main/Accessibility/Highlighter), for instance, the four windows that make up the highlight rectangle are located at the physical coordinates obtained from UI Automation, not the logical coordinates. If the sample were not dpi-aware, the highlight would be drawn at the logical coordinates on the desktop, which would result in incorrect placement in a non-96- dpi environment.
 
 2. To get cursor coordinates, call the Win32 function `GetPhysicalCursorPos`. The following example shows how to declare and use this function.
 
@@ -77,4 +76,4 @@ Starting with Windows Vista, Windows enables users to change the dots per inch (
 
 ## See also
 
-- [Highlighter Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Accessibility/Highlighter)
+- [Highlighter Sample](https://github.com/Microsoft/WPF-Samples/tree/main/Accessibility/Highlighter)

@@ -361,7 +361,6 @@ Currently, Swashbuckle consists of five internal NuGet packages under the high-l
 After you have installed these NuGet packages in your Web API project, you need to configure Swagger in the _Program.cs_ class, as in the following **simplified** code:
 
 ```csharp
-
 // Add framework services.
 
 builder.Services.AddSwaggerGen(options =>

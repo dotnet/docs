@@ -1,6 +1,6 @@
 ---
 title: Deep Learning overview
-description: Learn what deep learning is and components in ML.NET 
+description: Learn what deep learning is and components in ML.NET
 ms.date: 11/10/2022
 ms.topic: overview
 ms.custom: mvc
@@ -8,25 +8,25 @@ ms.custom: mvc
 
 # What is deep learning?
 
-Deep learning is an umbrella term for machine learning techniques that make use of "deep" neural networks. Today, deep learning is one of the most visible areas of machine learning because of its success in areas like Computer Vision, Natural Language Processing, and when applied to reinforcement learning, scenarios like game playing, decision making and simulation.
+Deep learning is an umbrella term for machine-learning techniques that make use of "deep" neural networks. Today, deep learning is one of the most visible areas of machine learning because of its success in areas like computer vision, natural language processing, and&mdash;when applied to reinforcement learning&mdash;scenarios like game playing, decision making, and simulation.
 
-A crucial element to the success of deep learning has been the availability of data, compute, software frameworks, and runtimes that facilitate the creation of neural network models and their execution for inference.  Examples of such frameworks include TensorFlow, (Py)Torch and ONNX.  
+A crucial element to the success of deep learning has been the availability of data, compute, software frameworks, and runtimes that facilitate the creation of neural network models and their execution for inference. Examples of such frameworks include TensorFlow, (Py)Torch, and ONNX.
 
 ML.NET provides access to some of these frameworks. As a result, ML.NET users can take advantage of deep learning models without having to start from scratch.
 
-## Deep Learning vs Machine Learning?
+## Deep learning vs machine learning
 
-Deep learning relies on neural network algorithms. This is in contrast with traditional or classical machine learning techniques which use a wider variety of algorithms such as generalized linear models, decision trees or Support Vector Machines (SVM).  The most immediate, practical implication of this difference is that deep learning methods may be better suited for some kind of data. In some cases, classical machine learning techniques such as gradient-boosted trees (XGBoost, LightGBM and CatBoost) seem to have an edge for tabular data. For less structured data like text and images, neural networks tend to perform better. The best approach is always to experiment with your particular data source and use case to determine for yourself which techniques work best for your problem.  
+Deep learning relies on neural network algorithms. This is in contrast with traditional or classical machine learning techniques which use a wider variety of algorithms such as generalized linear models, decision trees or Support Vector Machines (SVM). The most immediate, practical implication of this difference is that deep learning methods may be better suited for some kind of data. In some cases, classical machine learning techniques such as gradient-boosted trees (XGBoost, LightGBM and CatBoost) seem to have an edge for tabular data. For less structured data like text and images, neural networks tend to perform better. The best approach is always to experiment with your particular data source and use case to determine for yourself which techniques work best for your problem.
 
 For classical machine learning tasks, ML.NET simplifies this experimentation process through Automated Machine Learning (AutoML). For more information on AutoML, see the article [what is Automated Machine Learning (AutoML)?](automated-machine-learning-mlnet.md).
 
-## Neural Network architectures
+## Neural network architectures
 
-One of the main differentiating characteristics of deep learning is the use of artificial neural network algorithms. At a high-level, you can think of neural networks as a configuration of "processing units" where the output of each unit constitutes the input of another.  Each of these units can take one or many inputs, and essentially carries out a weighted sum of its inputs, applies an offset (or "bias") and then a non-linear transformation function (called "activation").  Different arrangements of these components have been used to describe decision boundaries in classification, regression functions and other structures central to machine learning tasks.
+One of the main differentiating characteristics of deep learning is the use of artificial neural network algorithms. At a high-level, you can think of neural networks as a configuration of "processing units" where the output of each unit constitutes the input of another. Each of these units can take one or many inputs, and essentially carries out a weighted sum of its inputs, applies an offset (or "bias") and then a non-linear transformation function (called "activation"). Different arrangements of these components have been used to describe decision boundaries in classification, regression functions and other structures central to machine learning tasks.
 
 :::image type="content" source="media/single-layer-neural-net.png" alt-text="Diagram representing single layer in neural network" lightbox="media/single-layer-neural-net.png":::
 
-The past decade has seen an increase in cases, applications and techniques of deep learning. This increase is driven in part by an increasing variety of operations that can be incorporated into neural networks, a richer set of arrangements that these operations can be configured in and improved computational support for these improvements.  In general, neural network architectures can be grouped into the following categories:
+The past decade has seen an increase in cases, applications and techniques of deep learning. This increase is driven in part by an increasing variety of operations that can be incorporated into neural networks, a richer set of arrangements that these operations can be configured in and improved computational support for these improvements. In general, neural network architectures can be grouped into the following categories:
 
 * Feed-forward Neural Network
 * Convolutional Neural Network
@@ -38,7 +38,7 @@ For more details, see the [artificial neural networks guide](/azure/machine-lear
 
 ## What can I use deep learning for?
 
-Deep learning architectures, have shown good performance in tasks involving "unstructured data" such as images, audio, and free-form text.  As a result, deep learning has been used to solve problems like:
+Deep learning architectures, have shown good performance in tasks involving "unstructured data" such as images, audio, and free-form text. As a result, deep learning has been used to solve problems like:
 
 * Image classification
 * Audio classification
@@ -91,7 +91,7 @@ At this time, there is no local support for object detection in ML.NET.
 
 To train custom object detection models with ML.NET, see the [Detect stop signs in images with Model Builder tutorial](tutorials/object-detection-model-builder.md)
 
-#### Text classification  
+#### Text classification
 
 Classifying free-form text, whether that's customer reviews or business memos is an important part of many processes.
 
@@ -101,7 +101,7 @@ A text classification training pipeline in ML.NET might look like the following:
 
 ```csharp
 // Define training pipeline using TextClassification trainer
-var pipeline = 
+var pipeline =
     mlContext.Transforms.Conversion.MapValueToKey("Label","Sentiment")
         .Append(mlContext.MulticlassClassification.Trainers.TextClassification(sentence1ColumnName: "Text"))
         .Append(mlContext.Transforms.Conversion.MapKeyToValue("PredictedLabel"));
@@ -115,7 +115,7 @@ var predictedData = model.Transform(newData).GetColumn<string>("PredictedLabel")
 
 To get started training text classification models with ML.NET, see the [Analyze sentiment of website comments in a web application using ML.NET Model Builder tutorial](tutorials/sentiment-analysis-model-builder.md).
 
-#### Sentence Similarity  
+#### Sentence similarity
 
 Tasks such as semantic search rely on the determination of how similar two sentences or passages of text are to each other.
 
@@ -142,9 +142,9 @@ ML.NET provides APIs to consume models in other formats like TensorFlow and ONNX
 
 These APIs are powered by [TensorFlow.NET](https://github.com/SciSharp/TensorFlow.NET) and the [ONNX Runtime](https://onnxruntime.ai/).
 
-#### TensorFlow  
+#### TensorFlow
 
-[TensorFlow](https://www.tensorflow.org/) is a deep learning framework with a rich ecosystem and a variety of pre-trained models available in the [TensorFlow Hub](https://www.tensorflow.org/hub).  
+[TensorFlow](https://www.tensorflow.org/) is a deep learning framework with a rich ecosystem and a variety of pre-trained models available in the [TensorFlow Hub](https://www.tensorflow.org/hub).
 
 With ML.NET, you can take these pretrained TensorFlow models and use them for inferencing inside your .NET applications.
 
@@ -165,11 +165,11 @@ var predictions = model.Transform(dataView).GetColumn<float>("Prediction/Softmax
 
 To get started consuming pretrained TensorFlow models with ML.NET, see the [movie reviews sentiment analysis using a pre-trained TensorFlow model in ML.NET tutorial](tutorials/text-classification-tf.md)
 
-#### ONNX  
+#### ONNX
 
-The [Open Neural Network Exchange(ONNX)](https://onnx.ai/) is an open-source format designed to enable interoperability between machine learning and deep learning frameworks. This means you can train a model in one of the many popular machine learning frameworks like PyTorch, convert it into ONNX format and consume the ONNX model in a different framework like ML.NET.  
+The [Open Neural Network Exchange (ONNX)](https://onnx.ai/) is an open-source format designed to enable interoperability between machine-learning and deep-learning frameworks. This means you can train a model in one of the many popular machine-learning frameworks like PyTorch, convert it into ONNX format, and consume the ONNX model in a different framework like ML.NET.
 
-The [ONNX model repository](https://github.com/onnx/models) hosts several pre-trained ONNX models you can use for inferencing in a wide variety of tasks.
+The [ONNX model repository](https://github.com/onnx/models) hosts several pretrained ONNX models you can use for inferencing in a wide variety of tasks.
 
 With ML.NET, you can take these pretrained ONNX models and use them for inferencing inside your .NET applications.
 
@@ -186,4 +186,4 @@ var model = pipeline.Fit(data);
 var predictions = pipeline.Fit(data).GetColumn<float[]>(TinyYoloModelSettings.ModelOutput);
 ```
 
-To get started consuming pretrained ONNX models with ML.NET, see the [object detection using ONNX in ML.NET tutorial](tutorials/object-detection-onnx.md)
+To get started consuming pretrained ONNX models with ML.NET, see the [object detection using ONNX in ML.NET](tutorials/object-detection-onnx.md) tutorial.

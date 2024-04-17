@@ -32,9 +32,9 @@ For other command-line apps built on `System.CommandLine`:
 
   * For `bash`, add the contents of [*dotnet-suggest-shim.bash*](https://github.com/dotnet/command-line-api/blob/main/src/System.CommandLine.Suggest/dotnet-suggest-shim.bash) to *~/.bash_profile*.
 
-  * For `zsh`, add the contents of [dotnet-suggest-shim.zsh](https://github.com/dotnet/command-line-api/blob/master/src/System.CommandLine.Suggest/dotnet-suggest-shim.zsh) to *~/.zshrc*.
+  * For `zsh`, add the contents of [dotnet-suggest-shim.zsh](https://github.com/dotnet/command-line-api/blob/main/src/System.CommandLine.Suggest/dotnet-suggest-shim.zsh) to *~/.zshrc*.
 
-  * For PowerShell, add the contents of [*dotnet-suggest-shim.ps1*](https://github.com/dotnet/command-line-api/blob/master/src/System.CommandLine.Suggest/dotnet-suggest-shim.ps1) to your PowerShell profile. You can find the expected path to your PowerShell profile by running the following command in your console:
+  * For PowerShell, add the contents of [*dotnet-suggest-shim.ps1*](https://github.com/dotnet/command-line-api/blob/main/src/System.CommandLine.Suggest/dotnet-suggest-shim.ps1) to your PowerShell profile. You can find the expected path to your PowerShell profile by running the following command in your console:
 
     ```console
     echo $profile

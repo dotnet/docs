@@ -9,7 +9,7 @@ ms.date: 04/10/2024
 
 ---
 
-# Chain of thought prompting 
+# Chain of thought prompting
 
 This article explains the use of chain of thought prompting in .NET.
 

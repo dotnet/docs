@@ -31,7 +31,7 @@ You can enable the .NET Framework 3.5 through the Windows Control Panel. This op
 
 ## Download the offline installer
 
-For Windows versions prior to Windows 10, The .NET Framework 3.5 SP1 offline installer is available on the [.NET Framework 3.5 SP1 Download page](https://dotnet.microsoft.com/download/dotnet-framework/net35-sp1?wt.mc_id=install-docs).
+For Windows versions prior to Windows 10, the .NET Framework 3.5 SP1 offline installer is available on the [.NET Framework 3.5 SP1 Download page](https://dotnet.microsoft.com/download/dotnet-framework/net35-sp1?wt.mc_id=install-docs).
 
 ## Troubleshoot the installation of the .NET Framework 3.5
 

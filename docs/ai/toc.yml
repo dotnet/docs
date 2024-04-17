@@ -1,0 +1,15 @@
+items:
+- name: AI for .NET developers
+  href: index.yml
+- name: Concepts
+  items:
+  - name: Prompt engineering
+    href: conceptual/prompt-engineering-in-dot-net.md
+  - name: Chain of thought prompting
+    href: conceptual/chain-of-thought-prompting.md
+  - name: Zero-shot and few-shot learning
+    href: conceptual/zero-shot-learning.md
+- name: How-to articles
+  items: []
+- name: Tutorials
+  items: []

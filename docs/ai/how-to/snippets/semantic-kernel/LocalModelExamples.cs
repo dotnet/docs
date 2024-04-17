@@ -19,11 +19,21 @@ class LocalModelExamples
         IKernelBuilder builder = Kernel.CreateBuilder();
 
         // Add your text generation service as a singleton instance
-        var service = new MyTextGenerationService();
-        builder.Services.AddKeyedSingleton<ITextGenerationService>("myTextService1", service);
+        builder.Services.AddKeyedSingleton<ITextGenerationService>("myTextService1", new MyTextGenerationService
+        {
+            // Specify any properties specific to your service, such as the url or API key
+            ModelUrl = "https://localhost:38748",
+            ModelApiKey = "myApiKey"
+        });
 
         // Alternatively, add your text generation service as a factory method
-        builder.Services.AddKeyedSingleton<ITextGenerationService>("myTextService2", (_, _) => new MyTextGenerationService());
+        builder.Services.AddKeyedSingleton<ITextGenerationService>("myTextService2", (_, _) => new MyTextGenerationService
+        {
+
+            // Specify any properties specific to your service, such as the url or API key
+            ModelUrl = "https://localhost:38748",
+            ModelApiKey = "myApiKey"
+        });
 
         // Add any other Kernel services or configurations
         // ...
@@ -39,11 +49,20 @@ class LocalModelExamples
         IKernelBuilder builder = Kernel.CreateBuilder();
 
         // Add your chat completion service as a singleton instance
-        var service = new MyChatCompletionService();
-        builder.Services.AddKeyedSingleton<IChatCompletionService>("myChatService1", service);
+        builder.Services.AddKeyedSingleton<IChatCompletionService>("myChatService1", new MyChatCompletionService
+        {
+            // Specify any properties specific to your service, such as the url or API key
+            ModelUrl = "https://localhost:38748",
+            ModelApiKey = "myApiKey"
+        });
 
         // Alternatively, add your chat completion service as a factory method
-        builder.Services.AddKeyedSingleton<IChatCompletionService>("myChatService2", (_, _) => new MyChatCompletionService());
+        builder.Services.AddKeyedSingleton<IChatCompletionService>("myChatService2", (_, _) => new MyChatCompletionService
+        {
+            // Specify any properties specific to your service, such as the url or API key
+            ModelUrl = "https://localhost:38748",
+            ModelApiKey = "myApiKey"
+        });
 
         // Add any other Kernel services or configurations
         // ...
@@ -56,7 +75,7 @@ class LocalModelExamples
     static async Task UseTextGenerationServiceExample()
     {
         IKernelBuilder builder = Kernel.CreateBuilder();
-        builder.Services.AddKeyedSingleton<ITextGenerationService>("myTextService", new MyTextGenerationService());
+        builder.Services.AddKeyedSingleton<ITextGenerationService>("myTextService", new MyTextGenerationService { ModelApiKey = "myApiKey" });
         Kernel kernel = builder.Build();
 
         // <useTextService>
@@ -83,7 +102,7 @@ class LocalModelExamples
     static async Task UseChatCompletionServiceExample()
     {
         IKernelBuilder builder = Kernel.CreateBuilder();
-        builder.Services.AddKeyedSingleton<IChatCompletionService>("myChatService", new MyChatCompletionService());
+        builder.Services.AddKeyedSingleton<IChatCompletionService>("myChatService", new MyChatCompletionService { ModelApiKey = "myApiKey" });
         Kernel kernel = builder.Build();
 
         // <useChatService>

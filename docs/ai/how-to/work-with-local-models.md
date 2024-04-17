@@ -16,6 +16,8 @@ This article demonstrates how to integrate custom and local models into the [Sem
 
 You can adapt the steps to use them with any model that you can access, regardless of where or how you access it. For example, you can integrate the [codellama](https://ollama.com/library/codellama) model with the Semantic Kernel SDK to enable code generation and discussion.
 
+Custom and local models often provide access via REST APIs, for example see [Ollama OpenAI compatibility](https://ollama.com/blog/openai-compatibility). Before you integrate your model it will need to be hosted and accessible to your .NET application via HTTPS.
+
 ## Prerequisites
 
 * An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).

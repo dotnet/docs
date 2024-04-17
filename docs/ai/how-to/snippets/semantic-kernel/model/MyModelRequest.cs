@@ -4,8 +4,10 @@ using Microsoft.SemanticKernel.ChatCompletion;
 // This is a simple mock request to provide the needed function signatures for the snippet code
 class MyModelRequest
 {
-    public required string Request { get; init; }
-    public PromptExecutionSettings? Settings { get; init; }
+    public required string Request { get; set; }
+    public PromptExecutionSettings? Settings { get; set; }
+    public bool Stream {get; set; } = true;
+
 
     public static MyModelRequest FromChatHistory(ChatHistory history, PromptExecutionSettings? settings)
     {

@@ -13,12 +13,9 @@ While native code interop works similarly in Native AOT and non-AOT deployments,
 
 ## Direct P/Invoke calls
 
+The benefit of direct P/Inokve calls is *better steady state performance*.
+
 The P/Invoke calls in AOT-compiled binaries are bound lazily at run time by default, for better compatibility. You can configure the AOT compiler to generate direct calls for selected P/Invoke methods that are bound during startup by the dynamic loader that comes with the operating system. The unmanaged libraries and entry points referenced via direct calls must always be available at run time, otherwise the native binary fails to start.
-
-The benefits of direct P/Invoke calls are:
-
-- They have *better steady state performance*.
-- They make it possible to *link the unmanaged dependencies statically*.
 
 You can configure the direct P/Invoke generation using `<DirectPInvoke>` items in the project file. The item name can be either *\<modulename>*, which enables direct calls for all entry points in the module, or *\<modulename!entrypointname>*, which enables a direct call for the specific module and entry point only.
 
@@ -46,20 +43,6 @@ On Windows, Native AOT uses a prepopulated list of direct P/Invoke methods that 
 > Because direct P/Invoke methods are resolved by the operating system dynamic loader and not by the Native AOT runtime library, direct P/Invoke methods will not respect the <xref:System.Runtime.InteropServices.DefaultDllImportSearchPathsAttribute>. The library search order will follow the dynamic loader rules as defined by the operating system. Some operating systems and loaders offer ways to control dynamic loading through linker flags (such as `/DEPENDENTLOADFLAG` on Windows or `-rpath` on Linux). For more information on how to specify linker flags, see the [Linking](#linking) section.
 
 ### Linking
-
-To statically link against an unmanaged library, you need to specify `<NativeLibrary Include="filename" />` pointing to a `.lib` file on Windows and a `.a` file on Unix-like systems.
-
-Examples:
-
-```xml
-<ItemGroup>
-  <!-- Generate direct PInvokes for Dependency -->
-  <DirectPInvoke Include="Dependency" />
-  <!-- Specify library to link against -->
-  <NativeLibrary Include="Dependency.lib" Condition="$(RuntimeIdentifier.StartsWith('win'))" />
-  <NativeLibrary Include="Dependency.a" Condition="!$(RuntimeIdentifier.StartsWith('win'))" />
-</ItemGroup>
-```
 
 To specify additional flags to the native linker, use the `<LinkerArg>` item.
 

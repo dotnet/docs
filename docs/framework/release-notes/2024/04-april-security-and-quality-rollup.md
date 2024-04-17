@@ -10,7 +10,7 @@ _Released April 9, 2024_
 
 This security update addresses a remote code execution vulnerability detailed in [CVE 2024-21409](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE 2024-21409).
 
-#### Defense in Depth Vulnerability
+#### Defense in depth vulnerability
 
 This security update addresses an issue where version of the OSS zlib library is out of date.
 

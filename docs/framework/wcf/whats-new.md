@@ -5,10 +5,10 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "WCF [WCF], what's new"
   - "Windows Communication Foundation [WCF], what's new"
-ms.assetid: 7e93fe73-af93-46b5-9f63-32f761ee40cf
+ms.topic: whats-new
 ---
 
-# What's New in Windows Communication Foundation 4.5
+# What's new in Windows Communication Foundation 4.5
 
 This topic discusses features new to Windows Communication Foundation (WCF) version 4.5.
 

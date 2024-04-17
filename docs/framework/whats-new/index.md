@@ -7,7 +7,7 @@ dev_langs:
   - "vb"
 helpviewer_keywords:
   - "what's new [.NET Framework]"
-ms.assetid: 1d971dd7-10fc-4692-8dac-30ca308fc0fa
+ms.topic: whats-new
 ---
 # What's new in .NET Framework
 
@@ -736,7 +736,7 @@ In .NET Framework 4.7 and earlier versions, ASP.NET allowed developers to store 
 - [Windows Forms](#wf47)
 - [Windows Presentation Foundation (WPF)](#WPF47)
 
-For a list of new APIs added to .NET Framework 4.7, see [.NET Framework 4.7 API Changes](https://github.com/Microsoft/dotnet/blob/master/releases/net47/dotnet47-api-changes.md) on GitHub. For a list of feature improvements and bug fixes in .NET Framework 4.7, see [.NET Framework 4.7 List of Changes](https://github.com/Microsoft/dotnet/blob/master/releases/net47/dotnet47-changes.md) on GitHub. For more information, see [Announcing .NET Framework 4.7](https://devblogs.microsoft.com/dotnet/announcing-the-net-framework-4-7/) in the .NET blog.
+For a list of new APIs added to .NET Framework 4.7, see [.NET Framework 4.7 API Changes](https://github.com/Microsoft/dotnet/blob/main/releases/net47/dotnet47-api-changes.md) on GitHub. For a list of feature improvements and bug fixes in .NET Framework 4.7, see [.NET Framework 4.7 List of Changes](https://github.com/Microsoft/dotnet/blob/main/releases/net47/dotnet47-changes.md) on GitHub. For more information, see [Announcing .NET Framework 4.7](https://devblogs.microsoft.com/dotnet/announcing-the-net-framework-4-7/) in the .NET blog.
 
 <a name="Core47"></a>
 
@@ -1235,7 +1235,7 @@ In previous versions of .NET Framework, WPF applications can't opt into the focu
 
 **Per-monitor DPI**
 
-To support the recent proliferation of high-DPI and hybrid-DPI environments for WPF apps, WPF in .NET Framework 4.6.2 enables per-monitor awareness. See the [samples and developer guide](https://github.com/Microsoft/WPF-Samples/tree/master/PerMonitorDPI) on GitHub for more information about how to enable your WPF app to become per-monitor DPI aware.
+To support the recent proliferation of high-DPI and hybrid-DPI environments for WPF apps, WPF in .NET Framework 4.6.2 enables per-monitor awareness. See the [samples and developer guide](https://github.com/Microsoft/WPF-Samples/tree/main/PerMonitorDPI) on GitHub for more information about how to enable your WPF app to become per-monitor DPI aware.
 
 In previous versions of .NET Framework, WPF apps are system-DPI aware. In other words, the application's UI is scaled by the OS as appropriate, depending on the DPI of the monitor on which the app is rendered.
 
@@ -1322,11 +1322,11 @@ The *unmanaged debugging API* has been enhanced in .NET Framework 4.6.2 to perfo
 
 For more information on .NET Framework 4.6.1, see the following topics:
 
-- [.NET Framework 4.6.1 list of changes](https://github.com/Microsoft/dotnet/blob/master/releases/net461/dotnet461-changes.md)
+- [.NET Framework 4.6.1 list of changes](https://github.com/Microsoft/dotnet/blob/main/releases/net461/dotnet461-changes.md)
 
 - [Application Compatibility in 4.6.1](../migration-guide/application-compatibility.md)
 
-- [.NET Framework API diff](https://github.com/Microsoft/dotnet/blob/master/releases/net461/dotnet461-api-changes.md) (on GitHub)
+- [.NET Framework API diff](https://github.com/Microsoft/dotnet/blob/main/releases/net461/dotnet461-api-changes.md) (on GitHub)
 
 <a name="Crypto"></a>
 

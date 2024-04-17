@@ -2,6 +2,7 @@
 title: ".NET docs: What's new for .NET 7"
 description: "What's new in the .NET docs for the .NET 7 release."
 ms.date: 11/08/2022
+ms.topic: whats-new
 ---
 
 # .NET docs: What's new for the .NET 7 release

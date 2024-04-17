@@ -6,6 +6,8 @@ items:
   - name: How generative AI and LLMs work
     href: conceptual/how-genai-and-llms-work.md
 - name: How-to articles
-  items: []
+  items:
+  - name: Use Redis for memory storage with the Semantic Kernel SDK
+    href: how-to/use-redis-for-memory.md
 - name: Tutorials
   items: []

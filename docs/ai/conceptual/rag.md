@@ -1,5 +1,5 @@
 ---
-title: "Using Your Data in Prompt Engineering with Retrival-Augmented Generation - .NET"
+title: "Using Your Data in Prompt Engineering with Retrival-Augmented Generation"
 description: "Learn how you can use retreival-augmented generation to give LLMs access to your data for prompt engineering in .NET."
 author: catbutler
 ms.topic: concept-article #Don't change.

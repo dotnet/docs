@@ -1,11 +1,11 @@
 ---
-title: "Using Embeddings for Semantic Analysis - .NET"
-description: "Learn how embeddings enable AI models to perform semantic analysis in .NET."
+title: "Using Embeddings to Extend Your AI Model's Reach"
+description: "Learn how embeddings extend the limits and capabilities of AI models in prompt engineering in .NET."
 author: catbutler
 ms.topic: concept-article #Don't change.
 ms.date: 04/11/2024
 
-#customer intent: As a .NET developer, I want to understand how embeddings enable semantic analysis and when to use them in .NET .
+#customer intent: As a .NET developer, I want to understand how embeddings extend LLM limits and capabilities in .NET so that I have more options during prompt engineering and better outcomes for my AI apps.
 
 ---
 
@@ -15,15 +15,11 @@ This article explains how embeddings work in .NET.
 
 Embeddings are a way you can give semantic memories to an LLM. Essentially, embeddings are numeric representations of non-numeric data that preserve its semantic value. You can use embeddings to help an AI model understand the meaning of inputs so that it can perform comparisons and transformations, such as summarizing text or creating images from text descriptions.
 
-Summarizing text is especially useful for [prompt engineering](prompt-engineering-in-dot-net.md), because it gives you a way to use far fewer tokens to repesent a given text.
+Summarizing text is especially useful for [prompt engineering](prompt-engineering-in-dot-net.md), because it gives you a way to use far fewer tokens to repesent a given text. You use examples in prompt engineering to show an LLM what to do. However, LLMs limit the number of tokens per input, which constrains how much text you can include in examples. If you try to include more than the limit in one input, the model will ignore some or all of that input. Some LLMs also feature quota systems, another reason to watch your token counts.
 
-## Generate, store and process embeddings
+## Embeddings let you use math to work with semantic meaning
 
-This section describes how embeddings work in Semantic Kernel and Azure OpenAI.
-
-You use examples in prompt engineering to show an LLM what to do. However, LLMs limit the number of tokens per input, which constrains how much text you can include in examples. If you try to include more than the limit in one input, the model will ignore some or all of that input. Some LLMs also feature quota systems, another reason to watch your token counts.
-
-An embedding is a semantic value that's encoded numerically, so an LLM can compare it to other embeddings that occupy the same vector space. Two embeddings with similar vectors also have similar semantic values, such as an image and its alt text, or a course syllabus and the textbook for that course.
+Embeddings turn non-numeric data into numeric data that preserves semantic meaning. Specifically, an embedding is an array of numeric values stored as a vector in a database that an LLM uses to compare embeddings. Two embeddings with similar vectors also have similar semantic values, such as an image and its alt text, or a course syllabus and the textbook for that course.
 
 ### Using embedding models to generate embeddings
 

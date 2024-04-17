@@ -2,6 +2,7 @@
 title: What's new in F# 6 - F# Guide
 description: Get an overview of the new features available in F# 6.
 ms.date: 10/13/2021
+ms.topic: whats-new
 ---
 # What's new in F# 6
 

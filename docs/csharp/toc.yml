@@ -3,14 +3,14 @@ items:
   href: index.yml
 - name: Get started
   items:
-  - name: Introduction
+  - name: Tour of C#
     href: tour-of-csharp/index.md
-  - name: Types
-    href: tour-of-csharp/types.md
-  - name: Program building blocks
-    href: tour-of-csharp/program-building-blocks.md
-  - name: Major language areas
-    href: tour-of-csharp/features.md
+  - name: Learn C# for Java developers
+    href: tour-of-csharp/tips-for-java-developers.md
+  - name: Learn C# for JavaScript developers
+    href: tour-of-csharp/tips-for-javascript-developers.md
+  - name: Learn C# for Python developers
+    href: tour-of-csharp/tips-for-python-developers.md
   - name: C# language strategy
     href: tour-of-csharp/strategy.md
   - name: Tutorials
@@ -38,8 +38,6 @@ items:
       - name: List collections
         href: tour-of-csharp/tutorials/arrays-and-collections.md
 - name: Fundamentals
-  # TODO: https://github.com/dotnet/docs/pull/23464#discussion_r633857533
-  # Use "title suffix" in docfx.json for "fundamentals", and edit H1s to be unique
   items:
   - name: Program structure
     items:

@@ -1,0 +1,36 @@
+### YamlMime:Hub
+
+title: AI for .NET Developers
+summary: Learn to use AI with .NET. Browse sample code, tutorials, quickstarts, conceptual articles and more.
+brand: dotnet
+
+metadata:
+  title: AI for .NET Developers
+  description: Samples, tutorials, and education for using AI with .NET
+  ms.topic: hub-page
+  ms.service: dotnet-ai
+  ms.date: 04/11/2024
+
+# TODO: populate once docs are ready
+# highlightedContent:
+# # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
+#   items: []
+
+# TODO: populate once docs are ready
+# conceptualContent:
+#   title: Featured content
+#   summary: Learn to develop .NET apps leveraging AI.
+# # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+#   items: []
+
+additionalContent:
+  sections:
+    - title: .NET and AI community resources
+      items:
+        - title: Open source
+          links:
+            - text: Semantic Kernel SDK for .NET
+              url: https://github.com/microsoft/semantic-kernel
+
+  # footer (optional)
+  footer: "Are you interested in contributing to the .NET docs? For more information, see our [contributor guide](/contribute/dotnet/dotnet-contribute)."

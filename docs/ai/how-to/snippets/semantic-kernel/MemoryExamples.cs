@@ -108,7 +108,7 @@ class MemoryExamples
             [TextMemoryPlugin.RelevanceParam] = "0.79",
         });
 
-        // If multiple memories are recalled the function result can be deserialized as a string[]
+        // If memories are recalled the function result can be deserialized as a string[]
         string? resultStr = result.GetValue<string>();
         string[]? parsedResult = string.IsNullOrEmpty(resultStr) ? null : JsonSerializer.Deserialize<string[]>(resultStr);
         Console.WriteLine($"Recalled memories: {(parsedResult?.Length > 0 ? resultStr : "ERROR: memory not found")}");

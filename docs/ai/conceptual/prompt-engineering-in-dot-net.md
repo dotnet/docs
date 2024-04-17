@@ -45,7 +45,7 @@ An instruction is text that tells the model how to respond. An instruction can b
 Because they are open-ended, directives are more flexible than imperatives:
 
 - You can combine several directives in one instruction.
-- Instructions usually work better when you use them with examples. However, because imperatives are unambiguous commands, models don't need examples to understand them (though you might use an example to show the model how to format responses).Because a directive doesn't tell the model exactly what to do, each example can help the model work better.
+- Instructions usually work better when you use them with examples. However, because imperatives are unambiguous commands, models don't need examples to understand them (though you might use an example to show the model how to format responses). Because a directive doesn't tell the model exactly what to do, each example can help the model work better.
 - It's usually better to break down a difficult instruction into a series of steps, which you can do with a sequence of directives. You should also tell the model to output the result of each step, so that you can easily make granular adjustments. Although you can break down the instruction into steps yourself, it's easier to just tell the model to do it, and to output the result of each step. This approach is called [chain of thought prompting](chain-of-thought-prompting.md).
 
 ### Supporting content

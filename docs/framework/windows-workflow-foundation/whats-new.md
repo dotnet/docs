@@ -5,7 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "Windows Workflow Foundation [WF], what's new"
   - "WF [WF], what's new"
-ms.topic: "reference"
+ms.topic: whats-new
 ---
 # What's New in Windows Workflow Foundation
 

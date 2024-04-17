@@ -44,7 +44,7 @@ The `init` accessor can also be used in autoimplemented properties, as the follo
 
 :::code language="csharp" source="snippets/InitExample2.cs":::
 
-The following example shows the distinction between a `private set`, read only, and `init` properties. Both the private set version and the read only version require callers to use the added constructor to set the name property. The `private set` version allows a person to change their name after the instance is constructed. The `init` version doesn't require a constructor. Callers can initialize the properties using an object initializer:
+The following example shows the distinction between a `private set`, read only, and `init` property. Both the private set version and the read only version require callers to use the added constructor to set the name property. The `private set` version allows a person to change their name after the instance is constructed. The `init` version doesn't require a constructor. Callers can initialize the properties using an object initializer:
 
 :::code language="csharp" source="snippets/InitExample4.cs" id="SnippetClassDefinitions":::
 

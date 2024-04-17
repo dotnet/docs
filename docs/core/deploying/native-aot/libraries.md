@@ -11,7 +11,7 @@ ms.date: 04/17/2024
 Publishing .NET class libraries as Native AOT allows creating libraries that can be consumed from non-.NET programming languages. The produced native library is self-contained and doesn't require a .NET runtime to be installed.
 
 > [!NOTE]
-> Only "shared libraries" (also known as DLLs on Windows) are supported. Static libraries may require compiling Native AOT from source and are not officially supported.
+> Only "shared libraries" (also known as DLLs on Windows) are supported. Static libraries are not officially supported and may require compiling Native AOT from source.
 
 Publishing a class library as Native AOT creates a native library that exposes methods of the class library annotated with <xref:System.Runtime.InteropServices.UnmanagedCallersOnlyAttribute> with a non-null `EntryPoint` field. For more information, see the [native library sample](https://github.com/dotnet/samples/tree/main/core/nativeaot/NativeLibrary) available in the dotnet/samples repository on GitHub.
 

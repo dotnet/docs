@@ -2,7 +2,7 @@
 
 _Released April 9, 2024_
 
-## Summary of What's New in this Release
+## Summary of what's new in this release
 
 ### Security improvements
 

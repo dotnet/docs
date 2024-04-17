@@ -50,7 +50,7 @@ Because they are open-ended, directives are more flexible than imperatives:
 
 ### Supporting content
 
-Supporting content is text you refer to in an instruction, but which isn't the subject of the instruction. The model uses the supporting content to complete the instruction, which means that supplemental content is distributed in completions, typically as part of the completions' structure (such as in headings or column labels).
+Supporting content is text that you refer to in an instruction, but which isn't the subject of the instruction. The model uses the supporting content to complete the instruction, which means that supporting content is distributed in completions, typically as part of the completions' structure (such as in headings or column labels).
 
 Label your supporting content to help the model figure out how to use it with the instruction. Don't worry too much about precision&mdash;labels don't have to match instructions exactly because the model will handle things like word form and capitalization.
 

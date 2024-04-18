@@ -91,7 +91,7 @@ The following table is for earlier Windows and Windows Server versions for Secur
 | .NET Framework 3.5 SP1 | [5036637](https://support.microsoft.com/kb/5036637) |
 | .NET Framework 4.6.2 | [5036607](https://support.microsoft.com/kb/5036607) |
 
-The following tables are for earlier Windows and Windows Server versions for Security Only updates which are not cumulative
+The following table is for earlier Windows and Windows Server versions for Security Only updates, which aren't cumulative.
 
 | Product Version | Security Only Update |
 | --- | --- |

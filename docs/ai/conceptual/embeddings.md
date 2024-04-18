@@ -35,7 +35,9 @@ Vector databases are designed to store and process vectors, so they're a natural
 
 ## Use cases for embeddings
 
-This section lists the main use cases for embeddings.
+This section lists the main use cases for embeddings. LLMs can process text embeddings, but to use other data types you need to include a suitable embedding model, such as **dall-e-3** for image generation.
+
+In Semantic Kernel, you add connectors to the kernel for each of the embedding models you want to use, and create plugins for the functions you want to use. Semantic Kernel comes with a set of native plugins that allow you to invoke their functions directly, such as 
 
 ### Increase the amount of text a model will process
 
@@ -49,7 +51,7 @@ Use embeddings to help models generate more relevant and coherent text. For exam
 
 ### Perform text classification, summarization, or translation
 
-Use embeddings to help a model understand the meaning and context of text, and then classify, summarize, or translate that text. For example, you can use embeddings to help models classify texts as positive or negative, spam or not spam, news or opinion, etc.
+Use embeddings to help a model understand the meaning and context of text, and then classify, summarize, or translate that text. For example, you can use embeddings to help models classify texts as positive or negative, spam or not spam, or news or opinion.
 
 ### Turn text into images or images into text
 

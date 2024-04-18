@@ -13,7 +13,7 @@ ms.date: 04/11/2024
 
 This article explains how embeddings work in .NET.
 
-Embeddings are a way you can give semantic memories to an LLM. Essentially, embeddings are numeric representations of non-numeric data that preserve its semantic value. You can use embeddings to help an AI model understand the meaning of inputs so that it can perform comparisons and transformations, such as summarizing text or creating images from text descriptions.
+Embeddings are the way you express semantic meaning to an LLM. Essentially, embeddings are numeric representations of non-numeric data that preserve its semantic meaning. You can use embeddings to help an AI model understand the meaning of inputs so that it can perform comparisons and transformations, such as summarizing text or creating images from text descriptions.
 
 Summarizing text is especially useful for [prompt engineering](), because it gives you a way to use far fewer tokens to repesent a given text. You use examples in prompt engineering to show an LLM what to do. However, LLMs limit the number of tokens per input, which constrains how much text you can include in examples. If you try to include more than the limit in one input, the model will ignore some or all of that input. Some LLMs also feature quota systems, another reason to watch your token counts.
 

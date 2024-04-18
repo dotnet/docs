@@ -137,7 +137,8 @@ class MemoryExamples
         // <promptMemory>
         // Create a prompt that includes memory recall
         // The {{...}} syntax represents an expression to Semantic Kernel
-        // For more information on this syntax see https://learn.microsoft.com/en-us/semantic-kernel/prompts/prompt-template-syntax
+        // For more information on this syntax see:
+        // https://learn.microsoft.com/en-us/semantic-kernel/prompts/prompt-template-syntax
         string memoryRecallPrompt = """ 
             Consider only the facts below when answering questions:
 

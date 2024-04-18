@@ -8,12 +8,18 @@ using Microsoft.SemanticKernel.TextGeneration;
 class MyTextGenerationService : ITextGenerationService
 {
     private IReadOnlyDictionary<string, object?>? _attributes;
-    public IReadOnlyDictionary<string, object?> Attributes => _attributes ??= new Dictionary<string, object?>();
+    public IReadOnlyDictionary<string, object?> Attributes =>
+        _attributes ??= new Dictionary<string, object?>();
 
     public string ModelUrl { get; init; } = "<default url to your model's Chat API>";
     public required string ModelApiKey { get; init; }
 
-    public async IAsyncEnumerable<StreamingTextContent> GetStreamingTextContentsAsync(string prompt, PromptExecutionSettings? executionSettings = null, Kernel? kernel = null, [EnumeratorCancellation] CancellationToken cancellationToken = default)
+    public async IAsyncEnumerable<StreamingTextContent> GetStreamingTextContentsAsync(
+        string prompt,
+        PromptExecutionSettings? executionSettings = null,
+        Kernel? kernel = null,
+        [EnumeratorCancellation] CancellationToken cancellationToken = default
+    )
     {
         // Build your model's request object, specify that streaming is requested
         MyModelRequest request = MyModelRequest.FromPrompt(prompt, executionSettings);
@@ -23,13 +29,18 @@ class MyTextGenerationService : ITextGenerationService
         using var httpClient = new HttpClient();
 
         // Send a POST to your model with the serialized request in the body
-        using HttpResponseMessage httpResponse = await httpClient.PostAsJsonAsync(ModelUrl, request, cancellationToken);
+        using HttpResponseMessage httpResponse = await httpClient.PostAsJsonAsync(
+            ModelUrl,
+            request,
+            cancellationToken
+        );
 
         // Verify the request was completed successfully
         httpResponse.EnsureSuccessStatusCode();
 
         // Read your models response as a stream
-        using StreamReader reader = new(await httpResponse.Content.ReadAsStreamAsync(cancellationToken));
+        using StreamReader reader =
+            new(await httpResponse.Content.ReadAsStreamAsync(cancellationToken));
 
         // Iteratively read a chunk of the response until the end of the stream
         // It is more efficient to use a buffer that is the same size as the internal buffer of the stream
@@ -50,7 +61,12 @@ class MyTextGenerationService : ITextGenerationService
         }
     }
 
-    public async Task<IReadOnlyList<TextContent>> GetTextContentsAsync(string prompt, PromptExecutionSettings? executionSettings = null, Kernel? kernel = null, CancellationToken cancellationToken = default)
+    public async Task<IReadOnlyList<TextContent>> GetTextContentsAsync(
+        string prompt,
+        PromptExecutionSettings? executionSettings = null,
+        Kernel? kernel = null,
+        CancellationToken cancellationToken = default
+    )
     {
         // Build your model's request object
         MyModelRequest request = MyModelRequest.FromPrompt(prompt, executionSettings);
@@ -58,21 +74,25 @@ class MyTextGenerationService : ITextGenerationService
         // Send the completion request via HTTP
         using var httpClient = new HttpClient();
 
-
         // Send a POST to your model with the serialized request in the body
-        using HttpResponseMessage httpResponse = await httpClient.PostAsJsonAsync(ModelUrl, request, cancellationToken);
+        using HttpResponseMessage httpResponse = await httpClient.PostAsJsonAsync(
+            ModelUrl,
+            request,
+            cancellationToken
+        );
 
         // Verify the request was completed successfully
         httpResponse.EnsureSuccessStatusCode();
 
         // Deserialize the response body to your model's response object
         // Handle when the deserialization fails and returns null
-        MyModelResponse response = await httpResponse.Content.ReadFromJsonAsync<MyModelResponse>(cancellationToken)
+        MyModelResponse response =
+            await httpResponse.Content.ReadFromJsonAsync<MyModelResponse>(cancellationToken)
             ?? throw new Exception("Failed to deserialize response from model");
 
         // Convert your model's response into a list of ChatMessageContent
-        return response.Completions
-            .Select<string, TextContent>(completion => new(completion))
+        return response
+            .Completions.Select<string, TextContent>(completion => new(completion))
             .ToImmutableList();
     }
 }

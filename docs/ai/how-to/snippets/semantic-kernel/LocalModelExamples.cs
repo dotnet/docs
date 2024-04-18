@@ -19,21 +19,27 @@ class LocalModelExamples
         IKernelBuilder builder = Kernel.CreateBuilder();
 
         // Add your text generation service as a singleton instance
-        builder.Services.AddKeyedSingleton<ITextGenerationService>("myTextService1", new MyTextGenerationService
-        {
-            // Specify any properties specific to your service, such as the url or API key
-            ModelUrl = "https://localhost:38748",
-            ModelApiKey = "myApiKey"
-        });
+        builder.Services.AddKeyedSingleton<ITextGenerationService>(
+            "myTextService1",
+            new MyTextGenerationService
+            {
+                // Specify any properties specific to your service, such as the url or API key
+                ModelUrl = "https://localhost:38748",
+                ModelApiKey = "myApiKey"
+            }
+        );
 
         // Alternatively, add your text generation service as a factory method
-        builder.Services.AddKeyedSingleton<ITextGenerationService>("myTextService2", (_, _) => new MyTextGenerationService
-        {
-
-            // Specify any properties specific to your service, such as the url or API key
-            ModelUrl = "https://localhost:38748",
-            ModelApiKey = "myApiKey"
-        });
+        builder.Services.AddKeyedSingleton<ITextGenerationService>(
+            "myTextService2",
+            (_, _) =>
+                new MyTextGenerationService
+                {
+                    // Specify any properties specific to your service, such as the url or API key
+                    ModelUrl = "https://localhost:38748",
+                    ModelApiKey = "myApiKey"
+                }
+        );
 
         // Add any other Kernel services or configurations
         // ...
@@ -49,20 +55,27 @@ class LocalModelExamples
         IKernelBuilder builder = Kernel.CreateBuilder();
 
         // Add your chat completion service as a singleton instance
-        builder.Services.AddKeyedSingleton<IChatCompletionService>("myChatService1", new MyChatCompletionService
-        {
-            // Specify any properties specific to your service, such as the url or API key
-            ModelUrl = "https://localhost:38748",
-            ModelApiKey = "myApiKey"
-        });
+        builder.Services.AddKeyedSingleton<IChatCompletionService>(
+            "myChatService1",
+            new MyChatCompletionService
+            {
+                // Specify any properties specific to your service, such as the url or API key
+                ModelUrl = "https://localhost:38748",
+                ModelApiKey = "myApiKey"
+            }
+        );
 
         // Alternatively, add your chat completion service as a factory method
-        builder.Services.AddKeyedSingleton<IChatCompletionService>("myChatService2", (_, _) => new MyChatCompletionService
-        {
-            // Specify any properties specific to your service, such as the url or API key
-            ModelUrl = "https://localhost:38748",
-            ModelApiKey = "myApiKey"
-        });
+        builder.Services.AddKeyedSingleton<IChatCompletionService>(
+            "myChatService2",
+            (_, _) =>
+                new MyChatCompletionService
+                {
+                    // Specify any properties specific to your service, such as the url or API key
+                    ModelUrl = "https://localhost:38748",
+                    ModelApiKey = "myApiKey"
+                }
+        );
 
         // Add any other Kernel services or configurations
         // ...
@@ -75,7 +88,10 @@ class LocalModelExamples
     static async Task UseTextGenerationServiceExample()
     {
         IKernelBuilder builder = Kernel.CreateBuilder();
-        builder.Services.AddKeyedSingleton<ITextGenerationService>("myTextService", new MyTextGenerationService { ModelApiKey = "myApiKey" });
+        builder.Services.AddKeyedSingleton<ITextGenerationService>(
+            "myTextService",
+            new MyTextGenerationService { ModelApiKey = "myApiKey" }
+        );
         Kernel kernel = builder.Build();
 
         // <useTextService>
@@ -94,7 +110,10 @@ class LocalModelExamples
 
         // Alteratively, send a prompt to your model through the text generation service
         ITextGenerationService textService = kernel.GetRequiredService<ITextGenerationService>();
-        TextContent responseContents = await textService.GetTextContentAsync(prompt, executionSettings);
+        TextContent responseContents = await textService.GetTextContentAsync(
+            prompt,
+            executionSettings
+        );
         Console.WriteLine($"Output: {responseContents.Text}");
         // </useTextService>
     }
@@ -102,7 +121,10 @@ class LocalModelExamples
     static async Task UseChatCompletionServiceExample()
     {
         IKernelBuilder builder = Kernel.CreateBuilder();
-        builder.Services.AddKeyedSingleton<IChatCompletionService>("myChatService", new MyChatCompletionService { ModelApiKey = "myApiKey" });
+        builder.Services.AddKeyedSingleton<IChatCompletionService>(
+            "myChatService",
+            new MyChatCompletionService { ModelApiKey = "myApiKey" }
+        );
         Kernel kernel = builder.Build();
 
         // <useChatService>
@@ -117,9 +139,9 @@ class LocalModelExamples
         // This uses a special syntax to denote the role for each message
         // For more information on this syntax see https://learn.microsoft.com/en-us/semantic-kernel/prompts/your-first-prompt?tabs=Csharp#6-using-message-roles-in-chat-completion-prompts
         string prompt = """
-        <message role="system">the initial system message for your chat history</message>
-        <message role="user">the user's initial message</message>
-        """;
+            <message role="system">the initial system message for your chat history</message>
+            <message role="user">the user's initial message</message>
+            """;
 
         string? response = await kernel.InvokePromptAsync<string>(prompt);
         Console.WriteLine($"Output: {response}");
@@ -137,7 +159,10 @@ class LocalModelExamples
 
         // Get the models response and add it to the chat history
         IChatCompletionService service = kernel.GetRequiredService<IChatCompletionService>();
-        ChatMessageContent responseMessage = await service.GetChatMessageContentAsync(chatHistory, executionSettings);
+        ChatMessageContent responseMessage = await service.GetChatMessageContentAsync(
+            chatHistory,
+            executionSettings
+        );
         Console.WriteLine($"Assistant: {responseMessage.Content}");
         chatHistory.Add(responseMessage);
 

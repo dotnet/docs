@@ -6,24 +6,18 @@ class MyModelRequest
 {
     public required string Request { get; set; }
     public PromptExecutionSettings? Settings { get; set; }
-    public bool Stream {get; set; } = true;
+    public bool Stream { get; set; } = true;
 
-
-    public static MyModelRequest FromChatHistory(ChatHistory history, PromptExecutionSettings? settings)
+    public static MyModelRequest FromChatHistory(
+        ChatHistory history,
+        PromptExecutionSettings? settings
+    )
     {
-        return new MyModelRequest()
-        {
-            Request = history.Last().Content!,
-            Settings = settings
-        };
+        return new MyModelRequest() { Request = history.Last().Content!, Settings = settings };
     }
 
     public static MyModelRequest FromPrompt(string prompt, PromptExecutionSettings? settings)
     {
-        return new MyModelRequest()
-        {
-            Request = prompt,
-            Settings = settings
-        };
+        return new MyModelRequest() { Request = prompt, Settings = settings };
     }
 }

@@ -93,7 +93,7 @@ The following table is for earlier Windows and Windows Server versions for Secur
 
 The following table is for earlier Windows and Windows Server versions for Security Only updates, which aren't cumulative.
 
-| Product Version | Security Only Update |
+| Product version | Security only update |
 | --- | --- |
 | **Windows Server 2008 R2** | **[5037127](https://support.microsoft.com/kb/5037127)** |
 | .NET Framework 3.5.1 | [5036634](https://support.microsoft.com/kb/5036634) |

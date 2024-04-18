@@ -1,7 +1,7 @@
 ---
 title: "C# Features That Support LINQ"
 description: Learn about C# features to use with LINQ queries and in other contexts.
-ms.date: 04/15/2024
+ms.date: 04/19/2024
 helpviewer_keywords:
   - "LINQ [C#], features supporting LINQ"
 ---

@@ -1,7 +1,7 @@
 ---
 title: Use C# to write LINQ queries
 description: Learn how to write LINQ queries in C#.
-ms.date: 04/10/2024
+ms.date: 04/19/2024
 ---
 # Write C# LINQ queries to query data
 

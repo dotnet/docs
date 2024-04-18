@@ -70,7 +70,7 @@ The following table outlines the updates in this release.
 | **Windows 10 1507** | |
 | .NET Framework 3.5, 4.6, 4.6.2 | [5032199](https://support.microsoft.com/kb/5032199) |
 
-The following tables are for earlier Windows and Windows Server versions for Security and Quality Rollup updates.  
+The following table is for earlier Windows and Windows Server versions for Security and Quality Rollup updates.  
 
 | Product Version | Security and Quality Rollup |
 | --- | --- |

@@ -5,7 +5,7 @@ author: catbutler
 ms.topic: concept-article #Don't change.
 ms.date: 04/11/2024
 
-#customer intent: As a .NET developer, I want to understand how embeddings extend LLM limits and capabilities in .NET so that I have more options during prompt engineering and better outcomes for my AI apps.
+#customer intent: As a .NET developer, I want to understand how embeddings extend LLM limits and capabilities in .NET so that I have more semantic context and better outcomes for my AI apps.
 
 ---
 

@@ -17,4 +17,4 @@ Publishing a class library as Native AOT creates a native library that exposes m
 
 ## Limitations
 
-**Avoid** features which have process-wide effects or expect to own process-wide state. For example, `EventSourceSupport` should be disabled in production, because Event Source does not support multiple implementations running in the same process.
+Event Source relies on process-wide state that prevents multiple copies from running concurrently in a single process. If multiple Native AOT libraries, or a Native AOT library and CoreCLR, could be loaded into the same process, ensure that `<EventSourceSupport>` is set to `false`.

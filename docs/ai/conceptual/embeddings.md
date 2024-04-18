@@ -1,6 +1,6 @@
 ---
 title: "Using Embeddings to Extend Your AI Model's Reach"
-description: "Learn how embeddings extend the limits and capabilities of AI models in prompt engineering in .NET."
+description: "Learn how embeddings extend the limits and capabilities of AI models in .NET."
 author: catbutler
 ms.topic: concept-article #Don't change.
 ms.date: 04/11/2024

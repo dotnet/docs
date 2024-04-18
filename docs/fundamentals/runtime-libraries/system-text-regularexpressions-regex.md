@@ -21,9 +21,6 @@ The <xref:System.Text.RegularExpressions.Regex> class represents .NET's regular 
 
 To use regular expressions, you define the pattern that you want to identify in a text stream by using the syntax documented in [Regular expression language - quick reference](../../standard/base-types/regular-expression-language-quick-reference.md). Next, you can optionally instantiate a <xref:System.Text.RegularExpressions.Regex> object. Finally, you call a method that performs some operation, such as replacing text that matches the regular expression pattern, or identifying a pattern match.
 
-> [!NOTE]
-> For some common regular expression patterns, see [Regular expression examples](../../standard/base-types/regular-expression-examples.md). There are also a number of online libraries of regular expression patterns, such as the one at [Regular-Expressions.info](https://www.regular-expressions.info/examples.html).
-
 For more information about the regular expression language, see [Regular expression language - quick reference](../../standard/base-types/regular-expression-language-quick-reference.md) or download and print one of these brochures:
 
 [Quick Reference in Word (.docx) format](https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.docx)
@@ -91,7 +88,7 @@ You can set a time-out interval by calling the <xref:System.Text.RegularExpressi
 - By using the value <xref:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout>, if no application-wide time-out value has been set.
 
 > [!IMPORTANT]
-> We recommend that you set a time-out value in all regular expression pattern-matching operations. For more information, see [Best practices for regular expressions](../../standard/base-types/best-practices.md).
+> We recommend that you set a time-out value in all regular expression pattern-matching operations. For more information, see [Best practices for regular expressions](../../standard/base-types/best-practices-regex.md).
 
 ## Examples
 

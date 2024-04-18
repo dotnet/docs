@@ -43,7 +43,7 @@ This release contains no known issues.
 
 The following table outlines the updates in this release.
 
-| Product Version | Cumulative Update |
+| Product version | Cumulative update |
 | --- | --- |
 | **Microsoft server operating system, version 23H2** | |
 | .NET Framework 3.5, 4.8.1 | [5036617](https://support.microsoft.com/kb/5036617) |

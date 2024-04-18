@@ -15,7 +15,7 @@ This article explains how embeddings work in .NET.
 
 Embeddings are a way you can give semantic memories to an LLM. Essentially, embeddings are numeric representations of non-numeric data that preserve its semantic value. You can use embeddings to help an AI model understand the meaning of inputs so that it can perform comparisons and transformations, such as summarizing text or creating images from text descriptions.
 
-Summarizing text is especially useful for [prompt engineering][peng], because it gives you a way to use far fewer tokens to repesent a given text. You use examples in prompt engineering to show an LLM what to do. However, LLMs limit the number of tokens per input, which constrains how much text you can include in examples. If you try to include more than the limit in one input, the model will ignore some or all of that input. Some LLMs also feature quota systems, another reason to watch your token counts.
+Summarizing text is especially useful for [prompt engineering](), because it gives you a way to use far fewer tokens to repesent a given text. You use examples in prompt engineering to show an LLM what to do. However, LLMs limit the number of tokens per input, which constrains how much text you can include in examples. If you try to include more than the limit in one input, the model will ignore some or all of that input. Some LLMs also feature quota systems, another reason to watch your token counts.
 
 ## Embeddings preserve semantic meaning
 
@@ -39,7 +39,7 @@ This section lists the main use cases for embeddings.
 
 ### Increase the amount of text a model will process
 
-Use embeddings to increase the amount of text a model will process, such as during [prompt engineering][peng].
+Use embeddings to increase the amount of text a model will process, such as during [prompt engineering]().
 
 For example, suppose you want to include 500 pages of text in a prompt. The number of tokens for that much raw text will exceed the input token limit, making it impossible to directly include in a prompt. You can use embeddings to summarize and break down large amounts of that text into pieces that are small enough to fit in one input, and then assess the similarity of each piece to the entire raw text. Then you can choose a piece that best preserves the semantic meaning of the raw text and use it in your prompt without hitting the token limit.
 
@@ -61,7 +61,4 @@ Use embeddings to help a model create code from text or vice versa, by convertin
 
 ## Related content
 
-- [Retrieval augmented generation][rag]
-
-[peng]: prompt-engineering-in-dot-net.md
-[rag]: retrieval-augmented-generation.md
+- [Retrieval augmented generation]()

@@ -45,11 +45,13 @@ class MemoryExamples
         // Retrieve the Azure OpenAI config and secrets saved during deployment
         string endpoint = config["AZURE_OPENAI_ENDPOINT"]!;
         string embeddingModel = config["AZURE_OPENAI_EMBEDDING_NAME"]!;
+        string completionModel = config["AZURE_OPENAI_GPT_NAME"]!;
         string key = config["AZURE_OPENAI_KEY"]!;
 
         // Build the Kernel, must add an embedding generation service
         Kernel kernel = Kernel.CreateBuilder()
             .AddAzureOpenAITextEmbeddingGeneration(embeddingModel, endpoint, key)
+            .AddAzureOpenAIChatCompletion(completionModel, endpoint, key)
             .Build();
         // </initKernel>
 
@@ -99,7 +101,7 @@ class MemoryExamples
         Console.WriteLine($"Retrieved memory: {result.GetValue<string>() ?? "ERROR: memory not found"}");
 
         // Alternatively, recall similar memories with the Kernel
-        // Can configure the number of memories to recall and relevance score
+        // Can configure the memory collection, number of memories to recall, and relevance score
         result = await kernel.InvokeAsync(memory["Recall"], new()
         {
             [TextMemoryPlugin.InputParam] = "Ask: where do I live?",
@@ -113,5 +115,33 @@ class MemoryExamples
         string[]? parsedResult = string.IsNullOrEmpty(resultStr) ? null : JsonSerializer.Deserialize<string[]>(resultStr);
         Console.WriteLine($"Recalled memories: {(parsedResult?.Length > 0 ? resultStr : "ERROR: memory not found")}");
         // </useMemory>
+
+        // <promptMemory>
+        // Create a prompt that includes memory recall
+        // The {{...}} syntax represents an expression to Semantic Kernel
+        // For more information on this syntax see https://learn.microsoft.com/en-us/semantic-kernel/prompts/prompt-template-syntax
+        string memoryRecallPrompt = """ 
+        Consider only the facts below when answering questions:
+
+        BEGIN FACTS
+        About me: {{recall 'where did I grow up?'}}
+        END FACTS
+
+        Question: What are some fun facts about my home state?
+        """;
+
+        // Invoke the prompt with the Kernel
+        // Must configure the memory collection, number of memories to recall, and relevance score
+        resultStr = await kernel.InvokePromptAsync<string>(memoryRecallPrompt, new()
+        {
+            [TextMemoryPlugin.CollectionParam] = memoryCollectionName,
+            [TextMemoryPlugin.LimitParam] = "2",
+            [TextMemoryPlugin.RelevanceParam] = "0.79",
+        });
+
+        // If the memory recall fails the model will indicate it has missing information in it's output
+        // Otherwise the output will incorporate your memory as context
+        Console.WriteLine($"Output: {resultStr}");
+        // </promptMemory>
     }
 }

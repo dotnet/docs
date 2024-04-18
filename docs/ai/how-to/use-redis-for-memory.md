@@ -1,6 +1,6 @@
 ---
-title: "Use Redis for Memory Storage with the Semantic Kernel SDK for .NET"
-description: "Learn how to use a Redis database with the RediSearch module for memory storage and recall in Semantic Kernel SDK for .NET."
+title: "Use Redis for Memory Storage with the Semantic Kernel SDK"
+description: "Learn how to use a Redis database with the RediSearch module to give your AI memories in Semantic Kernel SDK for .NET."
 author: haywoodsloan
 ms.topic: how-to
 ms.date: 04/17/2024
@@ -12,6 +12,8 @@ ms.date: 04/17/2024
 # Use Redis for memory storage with the Semantic Kernel SDK
 
 This article demonstrates how to integrate a Redis database with the RediSearch module into the [Semantic Kernel SDK](/semantic-kernel/overview) and use it for memory storage and retrieval.
+
+[Memories](semantic-kernel/memories/) represent text information that has be stored alongside a precomputed embedding vector for the whole text. When an LLM is prompted to recall a memory it uses these precomputed embeddings to efficiently evaluate if a memory is relevant to the prompt. Once the LLM finds a matching memory it uses the memory's text information as context for the next steps in the prompt completion.
 
 Adding memory storage to the Semantic Kernel SDK provides a broader context for your requests, and enables you to store data like a traditional database but query it using natural language.
 
@@ -48,6 +50,10 @@ Before integrating your Redis database to the Semantic Kernel SDK, ensure you ha
 5. Use the `Kernel` and plugin to save, retrieve, and recall memories. For example:
 
     :::code language="csharp" source="./snippets/semantic-kernel/MemoryExamples.cs" id="useMemory":::
+
+6. Use memory recall as part of a prompt with the [prompt template syntax `{{...}}`](/semantic-kernel/prompts/prompt-template-syntax). For example:
+
+    :::code language="csharp" source="./snippets/semantic-kernel/MemoryExamples.cs" id="promptMemory":::
 
 ## Related content
 

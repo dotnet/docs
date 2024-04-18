@@ -10,7 +10,7 @@ using Microsoft.SemanticKernel.Plugins.Memory;
 using StackExchange.Redis;
 
 // Suppress warning about embedding generation still being in evaluation
-#pragma warning disable SKEXP0010 
+#pragma warning disable SKEXP0010
 
 // Suppress warning about Redis connector still being in evaluation
 #pragma warning disable SKEXP0020
@@ -28,7 +28,6 @@ class MemoryExamples
         await RediSearchExample();
     }
 
-
     static async Task RediSearchExample()
     {
         // <initRedis>
@@ -37,7 +36,9 @@ class MemoryExamples
         string redisConfig = config["REDIS_CONFIG"]!;
 
         // Initialize a connection to the Redis database
-        ConnectionMultiplexer connectionMultiplexer = await ConnectionMultiplexer.ConnectAsync(redisConfig);
+        ConnectionMultiplexer connectionMultiplexer = await ConnectionMultiplexer.ConnectAsync(
+            redisConfig
+        );
         IDatabase database = connectionMultiplexer.GetDatabase();
         // </initRedis>
 
@@ -49,7 +50,8 @@ class MemoryExamples
         string key = config["AZURE_OPENAI_KEY"]!;
 
         // Build the Kernel, must add an embedding generation service
-        Kernel kernel = Kernel.CreateBuilder()
+        Kernel kernel = Kernel
+            .CreateBuilder()
             .AddAzureOpenAITextEmbeddingGeneration(embeddingModel, endpoint, key)
             .AddAzureOpenAIChatCompletion(completionModel, endpoint, key)
             .Build();
@@ -64,7 +66,8 @@ class MemoryExamples
         IMemoryStore memoryStore = new RedisMemoryStore(database, vectorSize);
 
         // Retrieve the embedding service from the Kernel
-        ITextEmbeddingGenerationService embeddingService = kernel.Services.GetRequiredService<ITextEmbeddingGenerationService>();
+        ITextEmbeddingGenerationService embeddingService =
+            kernel.Services.GetRequiredService<ITextEmbeddingGenerationService>();
 
         // Initialize a SemanticTextMemory using the memory store and embedding generation service
         SemanticTextMemory textMemory = new(memoryStore, embeddingService);
@@ -83,37 +86,52 @@ class MemoryExamples
         string memoryCollectionName = config["REDIS_MEMORY_COLLECTION_NAME"]!;
 
         // Save a memory with the Kernel
-        await kernel.InvokeAsync(memory["Save"], new()
-        {
-            [TextMemoryPlugin.InputParam] = "My family is from New York",
-            [TextMemoryPlugin.CollectionParam] = memoryCollectionName,
-            [TextMemoryPlugin.KeyParam] = "info1",
-        });
+        await kernel.InvokeAsync(
+            memory["Save"],
+            new()
+            {
+                [TextMemoryPlugin.InputParam] = "My family is from New York",
+                [TextMemoryPlugin.CollectionParam] = memoryCollectionName,
+                [TextMemoryPlugin.KeyParam] = "info1",
+            }
+        );
 
         // Retrieve a memory with the Kernel
-        FunctionResult result = await kernel.InvokeAsync(memory["Retrieve"], new()
-        {
-            [TextMemoryPlugin.CollectionParam] = memoryCollectionName,
-            [TextMemoryPlugin.KeyParam] = "info1",
-        });
+        FunctionResult result = await kernel.InvokeAsync(
+            memory["Retrieve"],
+            new()
+            {
+                [TextMemoryPlugin.CollectionParam] = memoryCollectionName,
+                [TextMemoryPlugin.KeyParam] = "info1",
+            }
+        );
 
         // Get the memory string from the function result, will return a null value if no memory is found
-        Console.WriteLine($"Retrieved memory: {result.GetValue<string>() ?? "ERROR: memory not found"}");
+        Console.WriteLine(
+            $"Retrieved memory: {result.GetValue<string>() ?? "ERROR: memory not found"}"
+        );
 
         // Alternatively, recall similar memories with the Kernel
         // Can configure the memory collection, number of memories to recall, and relevance score
-        result = await kernel.InvokeAsync(memory["Recall"], new()
-        {
-            [TextMemoryPlugin.InputParam] = "Ask: where do I live?",
-            [TextMemoryPlugin.CollectionParam] = memoryCollectionName,
-            [TextMemoryPlugin.LimitParam] = "2",
-            [TextMemoryPlugin.RelevanceParam] = "0.79",
-        });
+        result = await kernel.InvokeAsync(
+            memory["Recall"],
+            new()
+            {
+                [TextMemoryPlugin.InputParam] = "Ask: where do I live?",
+                [TextMemoryPlugin.CollectionParam] = memoryCollectionName,
+                [TextMemoryPlugin.LimitParam] = "2",
+                [TextMemoryPlugin.RelevanceParam] = "0.79",
+            }
+        );
 
         // If memories are recalled the function result can be deserialized as a string[]
         string? resultStr = result.GetValue<string>();
-        string[]? parsedResult = string.IsNullOrEmpty(resultStr) ? null : JsonSerializer.Deserialize<string[]>(resultStr);
-        Console.WriteLine($"Recalled memories: {(parsedResult?.Length > 0 ? resultStr : "ERROR: memory not found")}");
+        string[]? parsedResult = string.IsNullOrEmpty(resultStr)
+            ? null
+            : JsonSerializer.Deserialize<string[]>(resultStr);
+        Console.WriteLine(
+            $"Recalled memories: {(parsedResult?.Length > 0 ? resultStr : "ERROR: memory not found")}"
+        );
         // </useMemory>
 
         // <promptMemory>
@@ -121,23 +139,26 @@ class MemoryExamples
         // The {{...}} syntax represents an expression to Semantic Kernel
         // For more information on this syntax see https://learn.microsoft.com/en-us/semantic-kernel/prompts/prompt-template-syntax
         string memoryRecallPrompt = """ 
-        Consider only the facts below when answering questions:
+            Consider only the facts below when answering questions:
 
-        BEGIN FACTS
-        About me: {{recall 'where did I grow up?'}}
-        END FACTS
+            BEGIN FACTS
+            About me: {{recall 'where did I grow up?'}}
+            END FACTS
 
-        Question: What are some fun facts about my home state?
-        """;
+            Question: What are some fun facts about my home state?
+            """;
 
         // Invoke the prompt with the Kernel
         // Must configure the memory collection, number of memories to recall, and relevance score
-        resultStr = await kernel.InvokePromptAsync<string>(memoryRecallPrompt, new()
-        {
-            [TextMemoryPlugin.CollectionParam] = memoryCollectionName,
-            [TextMemoryPlugin.LimitParam] = "2",
-            [TextMemoryPlugin.RelevanceParam] = "0.79",
-        });
+        resultStr = await kernel.InvokePromptAsync<string>(
+            memoryRecallPrompt,
+            new()
+            {
+                [TextMemoryPlugin.CollectionParam] = memoryCollectionName,
+                [TextMemoryPlugin.LimitParam] = "2",
+                [TextMemoryPlugin.RelevanceParam] = "0.79",
+            }
+        );
 
         // If the memory recall fails the model will indicate it has missing information in it's output
         // Otherwise the output will incorporate your memory as context

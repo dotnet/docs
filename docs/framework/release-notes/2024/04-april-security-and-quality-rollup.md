@@ -27,7 +27,8 @@ This release contains the following quality and reliability improvements.
 Addresses an issue with `JavaScriptSerializer` where after installing the January Security and Quality update, there is a performance degradation. (*Applies to: .NET Framework 4.6.2, 4.7, 4.7.1,4.7.2, 4.8, 4.8.1*)
 
 #### CLR
-+ Addressed an issue with thread pool recycled lists become unresponsive on multi-CPU-group computers (*applies to: .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2, 4.8, 4.8.1*)
+
+Addressed an issue with thread pool recycled lists becoming unresponsive on multi-CPU-group computers (*applies to: .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2, 4.8, 4.8.1*).
 + Addressed an issue where Interlocked.Read from 32-bit apps are much slower on some computers. (*applies to: .NET Framework 4.8.1*)
 
 #### Compilers

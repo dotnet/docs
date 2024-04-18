@@ -32,7 +32,8 @@ Addressed an issue with thread pool recycled lists becoming unresponsive on mult
 + Addressed an issue where Interlocked.Read from 32-bit apps are much slower on some computers. (*applies to: .NET Framework 4.8.1*)
 
 #### Compilers
-+ Addresses an issue using the native C# compiler (csc.exe) to compile code making calls to COM interop assemblies. (*applies to: .NET Framework 4.8.1*)
+
+Addresses an issue when the native C# compiler (csc.exe) is used to compile code making calls to COM interop assemblies. (*Applies to: .NET Framework 4.8.1.*)
 
 ## Known issues
 

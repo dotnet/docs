@@ -69,7 +69,7 @@ The first query uses a simple key to determine a match; this finds files that ha
 
 This example shows how to query over all the files in a specified directory tree, open each file, and inspect its contents. This type of technique could be used to create indexes or reverse indexes of the contents of a directory tree. A simple string search is performed in this example. However, more complex types of pattern matching can be performed with a regular expression.
 
-:::code language="csharp" source="./snippets/HowToFilesAndDirectories/DuplicateFileQuery.cs" id="QueryTextContent":::
+:::code language="csharp" source="./snippets/HowToFilesAndDirectories/Program.cs" id="QueryTextContent":::
 
 ## How to compare the contents of two folders
 
@@ -84,7 +84,7 @@ This example demonstrates three ways to compare two file listings:
   
 The `FileComparer` class shown here demonstrates how to use a custom comparer class together with the Standard Query Operators. The class is not intended for use in real-world scenarios. It just uses the name and length in bytes of each file to determine whether the contents of each folder are identical or not. In a real-world scenario, you should modify this comparer to perform a more rigorous equality check.
 
-:::code language="csharp" source="./snippets/HowToFilesAndDirectories/CompareDirectoryContents.cs" id="QueryDuplicateFileInfo":::
+:::code language="csharp" source="./snippets/HowToFilesAndDirectories/CompareDirectoryContents.cs" id="CompareDirectoryContents":::
 
 ## How to reorder the fields of a delimited file
 
@@ -94,7 +94,7 @@ In the following example, assume that the three columns represent students' "las
 
 Copy the following lines into a plain text file that is named spreadsheet1.csv. Save the file in your project folder.
 
-:::code language="txt" source="./snippets/spreadsheet1.csv":::
+:::code language="txt" source="./snippets/HowToFilesAndDirectories/spreadsheet1.csv":::
 
 Here's the code:
 
@@ -106,11 +106,11 @@ This example shows one way to merge the contents of two files and then create a 
 
 Copy these names into a text file that is named names1.txt and save it in your project folder:
 
-:::code language="txt" source="./snippets/names1.txt":::
+:::code language="txt" source="./snippets/HowToFilesAndDirectories/names1.txt":::
 
 Copy these names into a text file that is named names2.txt and save it in your project folder: Note that the two files have some names in common.
 
-:::code language="txt" source="./snippets/names2.txt":::
+:::code language="txt" source="./snippets/HowToFilesAndDirectories/names2.txt":::
 
 The following code does the stuff:
 
@@ -124,11 +124,11 @@ This example shows how to join data from two comma-delimited files that share a 
 
 Copy the following lines into a file that is named *scores.csv* and save it to your project folder. The file represents spreadsheet data. Column 1 is the student's ID, and columns 2 through 5 are test scores.
 
-:::code language="txt" source="./snippets/scores.csv":::
+:::code language="txt" source="./snippets/HowToFilesAndDirectories/scores.csv":::
 
 Copy the following lines into a file that is named *names.csv* and save it to your project folder. The file represents a spreadsheet that contains the student's last name, first name, and student ID.
 
-:::code language="txt" source="./snippets/names.csv":::
+:::code language="txt" source="./snippets/HowToFilesAndDirectories/names.csv":::
 
 Join content from dissimilar files that contain related information. File names.csv contains the student name plus an ID number. File scores.csv contains the ID and a set of four test scores. The following query joins the scores to the student names by using ID as a matching key. The code follows:
 
@@ -140,131 +140,11 @@ This example shows how to perform aggregate computations such as Sum, Average, M
 
 Copy the following lines into a file that is named scores.csv and save it in your project folder. Assume that the first column represents a student ID, and subsequent columns represent scores from four exams.
 
-:::code language="txt" source="./snippets/scores.csv":::
+:::code language="txt" source="./snippets/HowToFilesAndDirectories/scores.csv":::
 
+And the code is as follows:
 
-```csharp
-class SumColumns
-{
-    static void Main(string[] args)
-    {
-        string[] lines = System.IO.File.ReadAllLines(@"../../../scores.csv");
-
-        // Specifies the column to compute.
-        int exam = 3;
-
-        // Spreadsheet format:
-        // Student ID    Exam#1  Exam#2  Exam#3  Exam#4
-        // 111,          97,     92,     81,     60
-
-        // Add one to exam to skip over the first column,
-        // which holds the student ID.
-        SingleColumn(lines, exam + 1);
-        Console.WriteLine();
-        MultiColumns(lines);
-
-        Console.WriteLine("Press any key to exit");
-        Console.ReadKey();
-    }
-
-    static void SingleColumn(IEnumerable<string> strs, int examNum)
-    {
-        Console.WriteLine("Single Column Query:");
-
-        // Parameter examNum specifies the column to
-        // run the calculations on. This value could be
-        // passed in dynamically at run time.
-
-        // Variable columnQuery is an IEnumerable<int>.
-        // The following query performs two steps:
-        // 1) use Split to break each row (a string) into an array
-        //    of strings,
-        // 2) convert the element at position examNum to an int
-        //    and select it.
-        var columnQuery =
-            from line in strs
-            let elements = line.Split(',')
-            select Convert.ToInt32(elements[examNum]);
-
-        // Execute the query and cache the results to improve
-        // performance. This is helpful only with very large files.
-        var results = columnQuery.ToList();
-
-        // Perform aggregate calculations Average, Max, and
-        // Min on the column specified by examNum.
-        double average = results.Average();
-        int max = results.Max();
-        int min = results.Min();
-
-        Console.WriteLine("Exam #{0}: Average:{1:##.##} High Score:{2} Low Score:{3}",
-                 examNum, average, max, min);
-    }
-
-    static void MultiColumns(IEnumerable<string> strs)
-    {
-        Console.WriteLine("Multi Column Query:");
-
-        // Create a query, multiColQuery. Explicit typing is used
-        // to make clear that, when executed, multiColQuery produces
-        // nested sequences. However, you get the same results by
-        // using 'var'.
-
-        // The multiColQuery query performs the following steps:
-        // 1) use Split to break each row (a string) into an array
-        //    of strings,
-        // 2) use Skip to skip the "Student ID" column, and store the
-        //    rest of the row in scores.
-        // 3) convert each score in the current row from a string to
-        //    an int, and select that entire sequence as one row
-        //    in the results.
-        IEnumerable<IEnumerable<int>> multiColQuery =
-            from line in strs
-            let elements = line.Split(',')
-            let scores = elements.Skip(1)
-            select (from str in scores
-                    select Convert.ToInt32(str));
-
-        // Execute the query and cache the results to improve
-        // performance.
-        // ToArray could be used instead of ToList.
-        var results = multiColQuery.ToList();
-
-        // Find out how many columns you have in results.
-        int columnCount = results[0].Count();
-
-        // Perform aggregate calculations Average, Max, and
-        // Min on each column.
-        // Perform one iteration of the loop for each column
-        // of scores.
-        // You can use a for loop instead of a foreach loop
-        // because you already executed the multiColQuery
-        // query by calling ToList.
-        for (int column = 0; column < columnCount; column++)
-        {
-            var results2 = from row in results
-                           select row.ElementAt(column);
-            double average = results2.Average();
-            int max = results2.Max();
-            int min = results2.Min();
-
-            // Add one to column because the first exam is Exam #1,
-            // not Exam #0.
-            Console.WriteLine("Exam #{0} Average: {1:##.##} High Score: {2} Low Score: {3}",
-                          column + 1, average, max, min);
-        }
-    }
-}
-/* Output:
-    Single Column Query:
-    Exam #4: Average:76.92 High Score:94 Low Score:39
-
-    Multi Column Query:
-    Exam #1 Average: 86.08 High Score: 99 Low Score: 35
-    Exam #2 Average: 86.42 High Score: 94 Low Score: 72
-    Exam #3 Average: 84.75 High Score: 91 Low Score: 65
-    Exam #4 Average: 76.92 High Score: 94 Low Score: 39
- */
-```
+:::code language="csharp" source="./snippets/HowToFilesAndDirectories/SumColumns.cs" id="SumColumns":::
 
 The query works by using the <xref:System.String.Split%2A> method to convert each line of text into an array. Each array element represents a column. Finally, the text in each column is converted to its numeric representation. If your file is a tab-separated file, just update the argument in the `Split` method to `\t`.
   

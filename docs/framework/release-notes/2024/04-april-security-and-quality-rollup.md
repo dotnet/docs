@@ -8,7 +8,7 @@ _Released April 9, 2024_
 
 #### CVE-2024-21409 – Remote code execution vulnerability
 
-This security update addresses a remote code execution vulnerability detailed in [CVE 2024-21409](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE 2024-21409).
+This security update addresses a remote code execution vulnerability detailed in [CVE 2024-21409](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-21409).
 
 #### Defense in depth vulnerability
 

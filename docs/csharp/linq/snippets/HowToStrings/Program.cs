@@ -116,7 +116,7 @@ static void SortStrings()
         119, 68, 79, 88, 92
         115, 35, 72, 91, 70
      */
-    // </SortStrings
+    // </SortStrings>
 }
 
 static void FindSentences()

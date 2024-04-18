@@ -130,13 +130,12 @@ static void QueryByFileSize()
     // <MoreQueriesOnFileSizes>
     // Return the FileInfo object for the largest file
     // by sorting and selecting from beginning of list
-    FileInfo longestFile =
-        (from file in fileList
-         let fileInfo = new FileInfo(file)
-         where fileInfo.Length > 0
-         orderby fileInfo.Length descending
-         select fileInfo)
-        .First();
+    FileInfo longestFile = (from file in fileList
+                            let fileInfo = new FileInfo(file)
+                            where fileInfo.Length > 0
+                            orderby fileInfo.Length descending
+                            select fileInfo
+                            ).First();
 
     Console.WriteLine($"The largest file under {startFolder} is {longestFile.FullName} with a length of {longestFile.Length} bytes");
 
@@ -145,8 +144,8 @@ static void QueryByFileSize()
                              let fileInfo = new FileInfo(file)
                              where fileInfo.Length > 0
                              orderby fileInfo.Length ascending
-                             select fileInfo)
-                             .First();
+                             select fileInfo
+                            ).First();
 
     Console.WriteLine($"The smallest file under {startFolder} is {smallestFile.FullName} with a length of {smallestFile.Length} bytes");
 
@@ -155,8 +154,8 @@ static void QueryByFileSize()
                            let fileInfo = new FileInfo(file)
                            let len = fileInfo.Length
                            orderby len descending
-                           select fileInfo)
-                           .Take(10);
+                           select fileInfo
+                          ).Take(10);
 
     Console.WriteLine($"The 10 largest files under {startFolder} are:");
 

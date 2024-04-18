@@ -1,5 +1,5 @@
 ---
-title: "Using Embeddings to Extend Your AI Model's Reach"
+title: "How Embeddings Extend Your AI Model's Reach"
 description: "Learn how embeddings extend the limits and capabilities of AI models in .NET."
 author: catbutler
 ms.topic: concept-article #Don't change.
@@ -13,19 +13,19 @@ ms.date: 04/11/2024
 
 This article explains how embeddings work in .NET.
 
-Embeddings are the way you express semantic meaning to an LLM. Essentially, embeddings are numeric representations of non-numeric data that preserve its semantic meaning. You can use embeddings to help an AI model understand the meaning of inputs so that it can perform comparisons and transformations, such as summarizing text or creating images from text descriptions.
+Embeddings are the way you express semantic meaning to an LLM. Essentially, embeddings are numeric representations of non-numeric data that preserve its semantic meaning. You can use embeddings to help an AI model understand the meaning of inputs so that it can perform comparisons and transformations, such as summarizing text or creating images from text descriptions. LLMs can use embeddings immediately, and you can store embeddings in vector databases to provide semantic memory for LLMs as-needed.
 
 Summarizing text is especially useful for [prompt engineering](), because it gives you a way to use far fewer tokens to repesent a given text. You use examples in prompt engineering to show an LLM what to do. However, LLMs limit the number of tokens per input, which constrains how much text you can include in examples. If you try to include more than the limit in one input, the model will ignore some or all of that input. Some LLMs also feature quota systems, another reason to watch your token counts.
 
 ## Embeddings preserve semantic meaning
 
-Embeddings turn non-numeric data into numeric data that preserves semantic meaning. Specifically, an embedding is an array of numeric values stored as a vector in a database that an LLM uses to compare embeddings. Two embeddings with similar vectors also have similar semantic values, such as an image and its alt text, or a course syllabus and the textbook for that course.
+Embeddings turn non-numeric data into numeric data that represents semantic meaning. Specifically, an embedding is a vector&mdash;an array of numeric values&mdash; that an LLM uses to compare semantic meanings. Two embeddings with similar vectors also have similar semantic meanings, such as an image and its alt text, or a course syllabus and the textbook for that course.
 
 ### Choosing embedding models to generate embeddings
 
 You generate embeddings for your raw data by using an embedding model: an AI model that can encode a piece of non-numeric data into a vector (a long array of numbers). The model can also decode an embedding into non-numeric data that has the same or similar meaning as the original, raw data. The embedding model you choose affects which data types you can generate embeddings for.
 
-In Semantic Kernel, you build connectors for embedding models and databases into your kernel, so you can quickly pull in text data, and generate and store embeddings. This lets you use a vector database solution to store and retrieve semantic memories.
+In Semantic Kernel, you use connectors to integrate embedding models and databases into your kernel, so you can quickly pull in text data, and generate and store embeddings. This lets you use a vector database solution to store and retrieve semantic memories.
 
 In Azure OpenAI, the service includes access to [embedding models](/azure/ai-services/openai/concepts/models#embeddings).
 
@@ -53,7 +53,7 @@ Use embeddings to help a model understand the meaning and context of text, and t
 
 ### Turn text into images or images into text
 
-Use embeddings to help a model create images from text or vice versa, by converting different types of data into a common representation (that is, vectors). For example, you can use embeddings to help a model generate or describe images such as logos, faces, animals, and landscapes.
+Use an image-embedding model to create vector embeddings for images. Then you can use those embeddings with an LLM to create or modify images using text or vice versa. For example, you can use an embedding model to generate or describe images such as logos, faces, animals, and landscapes.
 
 ### Generate or document code
 

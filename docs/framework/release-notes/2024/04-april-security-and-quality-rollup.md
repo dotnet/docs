@@ -39,7 +39,6 @@ Addresses an issue when the native C# compiler (csc.exe) is used to compile code
 
 This release contains no known issues.  
 
-
 ## Summary tables
 
 The following tables outline the updates in this release. 

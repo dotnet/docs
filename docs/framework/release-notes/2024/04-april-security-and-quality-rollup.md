@@ -41,7 +41,7 @@ This release contains no known issues.
 
 ## Summary tables
 
-The following tables outline the updates in this release. 
+The following table outlines the updates in this release.
 
 | Product Version | Cumulative Update |
 | --- | --- |

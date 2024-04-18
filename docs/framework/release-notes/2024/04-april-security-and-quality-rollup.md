@@ -72,7 +72,7 @@ The following table outlines the updates in this release.
 
 The following table is for earlier Windows and Windows Server versions for Security and Quality Rollup updates.  
 
-| Product Version | Security and Quality Rollup |
+| Product version | Security and quality rollup |
 | --- | --- |
 | **Windows Server 2012 R2** | **[5037040](https://support.microsoft.com/kb/5037040)** |
 | .NET Framework 3.5 | [5036627](https://support.microsoft.com/kb/5036627) |

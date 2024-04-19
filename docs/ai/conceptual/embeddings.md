@@ -31,7 +31,7 @@ In Azure OpenAI, the service includes access to [embedding models](/azure/ai-ser
 
 ### Store and process embeddings in a vector database
 
-Vector databases are designed to store and process vectors, so they're a natural home for embeddings. Different vector databases offer different processing capabilities, so you should choose one based on your raw data and your goals. For information about your options, see [available vector database solutions](vector-dbs.md#available-vector-database-solutions).
+Vector databases are designed to store and process vectors, so they're a natural home for embeddings. Different vector databases offer different processing capabilities, so you should choose one based on your raw data and your goals. For information about your options, see [available vector database solutions](vector-databases.md#available-vector-database-solutions).
 
 ## Use cases for embeddings
 

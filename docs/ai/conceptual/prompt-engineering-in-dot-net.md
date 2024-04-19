@@ -25,13 +25,16 @@ _"Pedro Lascurain."_
 
 Looks right, but what if your app is supposed to help US History students? Pedro Lascurain's 45-minute term is the shortest term for any president, but he served Mexico&mdash;the students are probably looking for _"William Henry Harrsion."_ Clearly, the app could be more helpful to its intended users if you gave it some context.
 
-That's the basic idea of prompt engineering: you add context to the prompt to help the model produce better completions. You can do this by giving the model [*instructions*](#use-instructions-to-tell-the-model-what-to-do), [*examples*](#examples-show-the-model-what-to-do) and [*cues*](#cues). This true for both generated text and chat completions, but the latter has formatting requirements.
+That's the basic idea of prompt engineering: you add context to the prompt to help the model produce better completions. You can do this by giving the model [*instructions*](#use-instructions-to-tell-the-model-what-to-do), [*examples*](#examples-show-the-model-what-to-do) and [*cues*](#cues).
 
-GPT models that support chat-based apps use three roles to organize completions: a system role that controls the chat, a user role to represent user input, and an assistant role for responding to users. You divide your prompts into messages for each role:
+GPT models that support text generation don't require any specific format, but you should organize your prompts so it's clear what's an instruction and what's an example. GPT models that support chat-based apps use three roles to organize completions: a system role that controls the chat, a user role to represent user input, and an assistant role for responding to users. You divide your prompts into messages for each role:
 
 - [System messages](/azure/ai-services/openai/concepts/advanced-prompt-engineering?pivots=programming-language-chat-completions#system-message) give the model instructions about the assistant. A prompt can have only one system message, and it must be the first message.
 - User messages show example or historical prompts, or contain instructions for the assistant. An example chat completion must have at least one user message.
 - Assistant messages show example or historical completions, and must contain a response to the preceding user message. Assistant messages aren't required, but if you include one it must be paired with a user message to form an example.
+
+> [!NOTE]
+> In Semantic Kernel, you can help keep your prompts flexible and lean by [using variables for input parameters](/semantic-kernel/prompts/templatizing-prompts?tabs=Csharp#adding-variables-to-the-prompt) and [calling nested functions](/semantic-kernel/prompts/calling-nested-functions?tabs=Csharp#calling-a-nested-function).
 
 ## Use Instructions to tell the model what to do
 
@@ -48,11 +51,15 @@ Because they are open-ended, directives are more flexible than imperatives:
 - Instructions usually work better when you use them with examples. However, because imperatives are unambiguous commands, models don't need examples to understand them (though you might use an example to show the model how to format responses). Because a directive doesn't tell the model exactly what to do, each example can help the model work better.
 - It's usually better to break down a difficult instruction into a series of steps, which you can do with a sequence of directives. You should also tell the model to output the result of each step, so that you can easily make granular adjustments. Although you can break down the instruction into steps yourself, it's easier to just tell the model to do it, and to output the result of each step. This approach is called [chain of thought prompting](chain-of-thought-prompting.md).
 
-### Supporting content adds context to instructions
+### Primary content and supporting content add context to instructions
 
-Supporting content is text that you refer to in an instruction, but which isn't the subject of the instruction. The model uses the supporting content to complete the instruction, which means that supporting content is distributed in completions, typically as part of the completions' structure (such as in headings or column labels).
+You can add content to add more context to instructions.
 
-Label your supporting content to help the model figure out how to use it with the instruction. Don't worry too much about precision&mdash;labels don't have to match instructions exactly because the model will handle things like word form and capitalization.
+*Primary content* is text that you want the model to process with an instruction. Whatever action the instruction entails, the model will perform it on the primary content to produce a completion.
+
+*Supporting content* is text that you refer to in an instruction, but which isn't the target of the instruction. The model uses the supporting content to complete the instruction, which means that supporting content also appears in completions, typically as some kind of structure (such as in headings or column labels).
+
+Use labels with your instructional content to help the model figure out how to use it with the instruction. Don't worry too much about precision&mdash;labels don't have to match instructions exactly because the model will handle things like word form and capitalization.
 
 Suppose you use the instruction **"Summarize US Presidential accomplishments"** to produce a list. The model might organize and order it in any number of ways. But what if you want the list to group the accomplishments by a specific set of categories? You can adjust your instruction by appending **"&nbsp;grouped by category"** to it, but a model won't know which specific categories you want. Use supporting content to add that information to the instruction.
 
@@ -186,9 +193,9 @@ Messages =
 
 ## Extending the reach of your prompt engineering techniques
 
-You can increase the power of your prompts with two more advanced prompt engineering techniques that we'll cover in depth in their own articles.
+You can also increase the power of your prompts with two more advanced prompt engineering techniques that we'll cover in depth in their own articles.
 
-- LLMs have token input limits that constrain the amount of text you can fit in a prompt. You can use [embeddings](embeddings.md) and [vector database](vector-dbs.md) solutions to reduce the amount of tokens you need to represent a given piece of text.
+- LLMs have token input limits that constrain the amount of text you can fit in a prompt. You can use [embeddings](embeddings.md) and [vector database](vector-databases.md) solutions to reduce the amount of tokens you need to represent a given piece of text.
 - LLMs aren't trained on your data unless you train them yourself, which can be costly and time-consuming. You can use [retrieval-augmented generation](rag.md) to make your data available to an LLM without training it.
 
 ## Related content

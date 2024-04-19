@@ -66,7 +66,7 @@ Few-shot learning has two primary use cases:
 
 ### Caveats
 
-- Example-based learning doesn’t work well for complex reasoning tasks. However, adding instructions can help address this.
+- Example-based learning doesn't work well for complex reasoning tasks. However, adding instructions can help address this.
 - Few-shot learning requires creating lengthy prompts. Prompts with large number of tokens can increase computation and latency. This typically means increased costs. There's also a limit to the length of the prompts.
 - When you use several examples the model can learn false patterns, such as "Sentiments are twice as likely to be positive than negative."
 

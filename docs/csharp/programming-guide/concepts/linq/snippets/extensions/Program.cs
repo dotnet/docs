@@ -1,28 +1,5 @@
 ﻿using Custom.Linq.Extensions;
 
-// <MedianUsage>
-double[] numbers = [1.9, 2, 8, 4, 5.7, 6, 7.2, 0];
-var query = numbers.Median();
-
-Console.WriteLine($"double: Median = {query}");
-// This code produces the following output:
-//     double: Median = 4.85
-// </MedianUsage>
-
-// <OverloadUsage>
-double[] numbers1 = [1.9, 2, 8, 4, 5.7, 6, 7.2, 0];
-var query1 = numbers1.Median();
-
-Console.WriteLine($"double: Median = {query1}");
-
-int[] numbers2 = [1, 2, 3, 4, 5];
-var query2 = numbers2.Median();
-
-Console.WriteLine($"int: Median = {query2}");
-// This code produces the following output:
-//     double: Median = 4.85
-//     int: Median = 3
-// </OverloadUsage>
 
 // <GenericUsage>
 int[] numbers3 = [1, 2, 3, 4, 5];

@@ -13,9 +13,9 @@ ms.date: 04/17/2024
 
 This article demonstrates how to integrate a Redis database with the RediSearch module into the [Semantic Kernel SDK](/semantic-kernel/overview) and use it for memory storage and retrieval.
 
-[Memories](/semantic-kernel/memories/) represent text information that has be stored alongside a precomputed embedding vector for the whole text. When an LLM is prompted to recall a memory it uses these precomputed embeddings to efficiently evaluate if a memory is relevant to the prompt. Once the LLM finds a matching memory it uses the memory's text information as context for the next steps in the prompt completion.
+[Memories](/semantic-kernel/memories/) represent text information that has been stored alongside a precomputed embedding vector for the whole text. When an LLM is prompted to recall a memory, it uses these precomputed embeddings to efficiently evaluate if a memory is relevant to the prompt. Once the LLM finds a matching memory, it uses the memory's text information as context for the next steps in the prompt completion.
 
-Adding memory storage to the Semantic Kernel SDK provides a broader context for your requests, and enables you to store data like a traditional database but query it using natural language.
+When you add memory storage to the Semantic Kernel SDK, it provides a broader context for your requests. It also enables you to store data like a traditional database but query it using natural language.
 
 ## Prerequisites
 
@@ -29,7 +29,7 @@ Adding memory storage to the Semantic Kernel SDK provides a broader context for 
 
 ## Implement memory storage using a Redis database
 
-Before integrating your Redis database to the Semantic Kernel SDK, ensure you have the RediSearch module enabled. For _Azure Cache for Redis_ see [Use Redis modules with Azure Cache for Redis](/azure/azure-cache-for-redis/cache-redis-modules#adding-modules-to-your-cache).
+Before integrating your Redis database to the Semantic Kernel SDK, ensure you have the RediSearch module enabled. For module information for _Azure Cache for Redis_, see [Use Redis modules with Azure Cache for Redis](/azure/azure-cache-for-redis/cache-redis-modules#adding-modules-to-your-cache).
 
 1. Initialize a connection to your Redis database. For example:
 
@@ -39,7 +39,7 @@ Before integrating your Redis database to the Semantic Kernel SDK, ensure you ha
 
     :::code language="csharp" source="./snippets/semantic-kernel/MemoryExamples.cs" id="initKernel":::
 
-3. Wrap the Redis database in a `RedisMemoryStore`, then initialize a `SemanticTextMemory` using the memory store and embedding generation service. For example:
+3. Wrap the Redis database in a `RedisMemoryStore`, then initialize a `SemanticTextMemory` object using the memory store and embedding generation service. For example:
 
     :::code language="csharp" source="./snippets/semantic-kernel/MemoryExamples.cs" id="initMemory":::
 

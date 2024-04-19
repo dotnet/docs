@@ -31,11 +31,11 @@ class MemoryExamples
     static async Task RediSearchExample()
     {
         // <initRedis>
-        // Retrieve the Redis connection config
+        // Retrieve the Redis connection config.
         IConfigurationRoot config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
         string redisConfig = config["REDIS_CONFIG"]!;
 
-        // Initialize a connection to the Redis database
+        // Initialize a connection to the Redis database.
         ConnectionMultiplexer connectionMultiplexer = await ConnectionMultiplexer.ConnectAsync(
             redisConfig
         );
@@ -43,13 +43,13 @@ class MemoryExamples
         // </initRedis>
 
         // <initKernel>
-        // Retrieve the Azure OpenAI config and secrets saved during deployment
+        // Retrieve the Azure OpenAI config and secrets saved during deployment.
         string endpoint = config["AZURE_OPENAI_ENDPOINT"]!;
         string embeddingModel = config["AZURE_OPENAI_EMBEDDING_NAME"]!;
         string completionModel = config["AZURE_OPENAI_GPT_NAME"]!;
         string key = config["AZURE_OPENAI_KEY"]!;
 
-        // Build the Kernel, must add an embedding generation service
+        // Build the Kernel; must add an embedding generation service.
         Kernel kernel = Kernel
             .CreateBuilder()
             .AddAzureOpenAITextEmbeddingGeneration(embeddingModel, endpoint, key)
@@ -58,34 +58,34 @@ class MemoryExamples
         // </initKernel>
 
         // <initMemory>
-        // Retrieve the desired vector size for the memory store
-        // If unspecified the default vector size is 1536
+        // Retrieve the desired vector size for the memory store.
+        // If unspecified, the default vector size is 1536.
         int vectorSize = int.Parse(config["REDIS_MEMORY_VECTOR_SIZE"]!);
 
         // Initialize a memory store using the redis database
         IMemoryStore memoryStore = new RedisMemoryStore(database, vectorSize);
 
-        // Retrieve the embedding service from the Kernel
+        // Retrieve the embedding service from the Kernel.
         ITextEmbeddingGenerationService embeddingService =
             kernel.Services.GetRequiredService<ITextEmbeddingGenerationService>();
 
-        // Initialize a SemanticTextMemory using the memory store and embedding generation service
+        // Initialize a SemanticTextMemory using the memory store and embedding generation service.
         SemanticTextMemory textMemory = new(memoryStore, embeddingService);
         // </initMemory>
 
         // <addMemory>
-        // Initialize a TextMemoryPlugin using the text memory
+        // Initialize a TextMemoryPlugin using the text memory.
         TextMemoryPlugin memoryPlugin = new(textMemory);
 
-        // Import the text memory plugin into the Kernel
+        // Import the text memory plugin into the Kernel.
         KernelPlugin memory = kernel.ImportPluginFromObject(memoryPlugin);
         // </addMemory>
 
         // <useMemory>
-        // Retrieve the desired memory collection name
+        // Retrieve the desired memory collection name.
         string memoryCollectionName = config["REDIS_MEMORY_COLLECTION_NAME"]!;
 
-        // Save a memory with the Kernel
+        // Save a memory with the Kernel.
         await kernel.InvokeAsync(
             memory["Save"],
             new()
@@ -96,7 +96,7 @@ class MemoryExamples
             }
         );
 
-        // Retrieve a memory with the Kernel
+        // Retrieve a memory with the Kernel.
         FunctionResult result = await kernel.InvokeAsync(
             memory["Retrieve"],
             new()
@@ -106,13 +106,13 @@ class MemoryExamples
             }
         );
 
-        // Get the memory string from the function result, will return a null value if no memory is found
+        // Get the memory string from the function result; returns a null value if no memory is found.
         Console.WriteLine(
             $"Retrieved memory: {result.GetValue<string>() ?? "ERROR: memory not found"}"
         );
 
-        // Alternatively, recall similar memories with the Kernel
-        // Can configure the memory collection, number of memories to recall, and relevance score
+        // Alternatively, recall similar memories with the Kernel.
+        // Can configure the memory collection, number of memories to recall, and relevance score.
         result = await kernel.InvokeAsync(
             memory["Recall"],
             new()
@@ -124,7 +124,7 @@ class MemoryExamples
             }
         );
 
-        // If memories are recalled the function result can be deserialized as a string[]
+        // If memories are recalled, the function result can be deserialized as a string[].
         string? resultStr = result.GetValue<string>();
         string[]? parsedResult = string.IsNullOrEmpty(resultStr)
             ? null
@@ -135,10 +135,10 @@ class MemoryExamples
         // </useMemory>
 
         // <promptMemory>
-        // Create a prompt that includes memory recall
-        // The {{...}} syntax represents an expression to Semantic Kernel
+        // Create a prompt that includes memory recall.
+        // The {{...}} syntax represents an expression to Semantic Kernel.
         // For more information on this syntax see:
-        // https://learn.microsoft.com/en-us/semantic-kernel/prompts/prompt-template-syntax
+        // https://learn.microsoft.com/semantic-kernel/prompts/prompt-template-syntax
         string memoryRecallPrompt = """ 
             Consider only the facts below when answering questions:
 
@@ -149,8 +149,8 @@ class MemoryExamples
             Question: What are some fun facts about my home state?
             """;
 
-        // Invoke the prompt with the Kernel
-        // Must configure the memory collection, number of memories to recall, and relevance score
+        // Invoke the prompt with the Kernel.
+        // Must configure the memory collection, number of memories to recall, and relevance score.
         resultStr = await kernel.InvokePromptAsync<string>(
             memoryRecallPrompt,
             new()
@@ -161,8 +161,8 @@ class MemoryExamples
             }
         );
 
-        // If the memory recall fails the model will indicate it has missing information in it's output
-        // Otherwise the output will incorporate your memory as context
+        // If the memory recall fails, the model will indicate it has missing information in its output.
+        // Otherwise the output will incorporate your memory as context.
         Console.WriteLine($"Output: {resultStr}");
         // </promptMemory>
     }

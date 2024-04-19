@@ -15,7 +15,7 @@ This article explains how embeddings work in .NET.
 
 Embeddings are the way you express semantic meaning to an LLM. Essentially, embeddings are numeric representations of non-numeric data that preserve its semantic meaning. You can use embeddings to help an AI model understand the meaning of inputs so that it can perform comparisons and transformations, such as summarizing text or creating images from text descriptions. LLMs can use embeddings immediately, and you can store embeddings in vector databases to provide semantic memory for LLMs as-needed.
 
-Summarizing text is especially useful for [prompt engineering](/), because it gives you a way to use far fewer tokens to repesent a given text. You use instructions in prompt engineering to tell an LLM what to do, and can include text content with the instruction to give the model more context. However, LLMs limit the number of tokens per input, which constrains how much text you can include in prompts. If you try to include more than the limit in one input, the model will ignore some or all of that input. Some LLMs also feature quota systems, another reason to watch your token counts. If you create an embedding for the text content you want to include, the LLM can find a shorter piece of text that has a similar vector, so you can use it instead of the original text to reduce the number of tokens you use to represent the content's meaning.
+Summarizing text is especially useful for [prompt engineering](/), because it gives you a way to use far fewer tokens to repesent a given text. You use instructions in prompt engineering to tell an LLM what to do, and can include text content with the instruction to give the model more context. However, LLMs limit the number of tokens per input, which constrains how much text you can include in prompts. If you try to include more than the limit in one input, the model will ignore some or all of that input. Some LLMs [charge per token](/pricing/details/cognitive-services/openai-service/) or have [quota systems](/azure/ai-services/openai/quotas-limits#regional-quota-limits), more reasons to watch your token counts. If you create an embedding for the text content you want to include, the LLM can find a shorter piece of text that has a similar vector, so you can use it instead of the original text to reduce the number of tokens you use to represent the content's meaning.
 
 ## Embeddings preserve semantic meaning
 
@@ -71,3 +71,5 @@ Use embeddings to help a model create code from text or vice versa, by convertin
 ## Related content
 
 - [How GenAI and LLMs work](how-genai-and-llms-work.md)
+- [Prompt template syntax](/semantic-kernel/prompts/prompt-template-syntax)
+- [Training: Develop AI agents with Azure OpenAI and Semantic Kernel](/training/paths/develop-ai-agents-azure-open-ai-semantic-kernel-sdk/)

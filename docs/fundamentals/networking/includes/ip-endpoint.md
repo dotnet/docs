@@ -1,5 +1,5 @@
 ---
-ms.date: 08/24/2022
+ms.date: 04/17/2024
 author: IEvangelist
 ms.author: dapine
 ms.topic: include
@@ -19,7 +19,14 @@ IPAddress ipAddress = ipHostInfo.AddressList[0];
 ```
 
 > [!TIP]
-> For manual testing and debugging purposes, you can typically use the <xref:System.Net.Dns.GetHostEntryAsync%2A> method to get given the <xref:System.Net.Dns.GetHostName?displayProperty=nameWithType> value to resolve the localhost name to an IP address.
+> For manual testing and debugging purposes, you can typically use the <xref:System.Net.Dns.GetHostEntryAsync%2A> method with the resulting host name from the <xref:System.Net.Dns.GetHostName?displayProperty=nameWithType> value to resolve the localhost name to an IP address. Consider the following code snippet:
+>
+> ```csharp
+> var hostName = Dns.GetHostName();
+> IPHostEntry localhost = await Dns.GetHostEntryAsync(hostName);
+> // This is the IP address of the local machine
+> IPAddress localIpAddress = localhost.AddressList[0];
+> ```
 
 The Internet Assigned Numbers Authority (IANA) defines port numbers for common services. For more information, see [IANA: Service Name and Transport Protocol Port Number Registry](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml)). Other services can have registered port numbers in the range 1,024 to 65,535. The following code combines the IP address for `host.contoso.com` with a port number to create a remote endpoint for a connection.
 

@@ -49,7 +49,7 @@ Because they are open-ended, directives are more flexible than imperatives:
 
 - You can combine several directives in one instruction.
 - Instructions usually work better when you use them with examples. However, because imperatives are unambiguous commands, models don't need examples to understand them (though you might use an example to show the model how to format responses). Because a directive doesn't tell the model exactly what to do, each example can help the model work better.
-- It's usually better to break down a difficult instruction into a series of steps, which you can do with a sequence of directives. You should also tell the model to output the result of each step, so that you can easily make granular adjustments. Although you can break down the instruction into steps yourself, it's easier to just tell the model to do it, and to output the result of each step. This approach is called [chain of thought prompting](chain-of-thought-prompting.md).
+- It's usually better to break down a difficult instruction into a series of steps, which you can do with a sequence of directives. You should also tell the model to output the result of each step, so that you can easily make granular adjustments. Although you can break down the instruction into steps yourself, it's easier to just tell the model to do it, and to output the result of each step. This approach is called *chain of thought prompting*.
 
 ### Primary content and supporting content add context to instructions
 
@@ -88,7 +88,7 @@ An example is text that shows the model how to respond by providing sample user 
 
 Like a normal GPT interaction, an example starts with a prompt. The example can include a completion but it's not required. A completion in an example doesn't have to include the verbatim response&mdash;it might just contain a formatted word, the first bullet in an unordered list, or something similar to indicate how each completion should start.  
 
-Examples are classified as [zero-shot learning or few-shot learning](zero-shot-learning.md) based on whether they contain verbatim completions.
+Examples are classified as *zero-shot learning* or *few-shot learning* based on whether they contain verbatim completions.
 
 - **Zero-shot learning** examples include a prompt with no verbatim completion. Because they don't include verbatim completions, zero-shot prompts test a model's responses without giving it example data output. (Zero-shot prompts can have  completions that include cues, such as indicating the model should output an ordered list by including **"1."** as the completion.)
 - **Few-shot learning** examples include several pairs of prompts with verbatim completions. Few-shot learning can change the model's behavior by adding to its existing knowledge.
@@ -196,7 +196,7 @@ Messages =
 You can also increase the power of your prompts with two more advanced prompt engineering techniques that we'll cover in depth in their own articles.
 
 - LLMs have token input limits that constrain the amount of text you can fit in a prompt. You can use [embeddings](embeddings.md) and [vector database](vector-databases.md) solutions to reduce the amount of tokens you need to represent a given piece of text.
-- LLMs aren't trained on your data unless you train them yourself, which can be costly and time-consuming. You can use [retrieval-augmented generation](rag.md) to make your data available to an LLM without training it.
+- LLMs aren't trained on your data unless you train them yourself, which can be costly and time-consuming. You can use *retrieval-augmented generation* to make your data available to an LLM without training it.
 
 ## Related content
 

@@ -21,7 +21,7 @@ Summarizing text is especially useful for [prompt engineering](/), because it gi
 
 Embeddings turn non-numeric data into numeric data that represents semantic meaning. Specifically, an embedding is a vector&mdash;an array of numeric values&mdash; that an LLM uses to compare semantic meanings. Two embeddings with similar vectors also have similar semantic meanings, such as an image and its alt text, or a course syllabus and the textbook for that course.
 
-### Choosing embedding models to generate embeddings
+### Choose an embedding model
 
 You generate embeddings for your raw data by using an embedding model: an AI model that can encode a piece of non-numeric data into a vector (a long array of numbers). The model can also decode an embedding into non-numeric data that has the same or similar meaning as the original, raw data.
 
@@ -42,7 +42,7 @@ This section lists the main use cases for embeddings. LLMs can process text embe
 
 ### Use your own data to improve completion relevance
 
-Use your own databases to generate embeddings for your data and integrate it with an LLM to make it available for completions. This use of embeddings is called [retrieval-augmented generation (RAG)](/).
+Use your own databases to generate embeddings for your data and integrate it with an LLM to make it available for completions. This use of embeddings is called *retrieval-augmented generation*.
 
 ### Increase the amount of text you can fit in a prompt
 

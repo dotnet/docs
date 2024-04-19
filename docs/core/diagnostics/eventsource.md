@@ -5,7 +5,7 @@ ms.date: 02/17/2022
 ---
 # EventSource
 
-**This article applies to: ✔️** .NET Core 3.1 and later versions **✔️** .NET Framework 4.5 and later versions
+**This article applies to: ✔️** .NET 6 and later versions **✔️** .NET Framework 4.5 and later versions
 
 <xref:System.Diagnostics.Tracing.EventSource?displayProperty=nameWithType> is a fast structured logging solution
 built into the .NET runtime. On .NET Framework EventSource can send events to

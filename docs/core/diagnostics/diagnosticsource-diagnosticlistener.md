@@ -5,7 +5,7 @@ ms.date: 05/12/2022
 ---
 # DiagnosticSource and DiagnosticListener
 
-**This article applies to: ✔️** .NET Core 3.1 and later versions **✔️** .NET Framework 4.5 and later versions
+**This article applies to: ✔️** .NET 6 and later versions **✔️** .NET Framework 4.5 and later versions
 
 <xref:System.Diagnostics.DiagnosticSource?displayProperty=nameWithType> is a module that allows code to be instrumented for production-time
 logging of rich data payloads for consumption within the process that was instrumented. At run time, consumers can dynamically discover

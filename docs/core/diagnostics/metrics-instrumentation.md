@@ -7,7 +7,7 @@ ms.date: 10/31/2023
 
 # Creating metrics
 
-**This article applies to: ✔️** .NET Core 6 and later versions **✔️** .NET Framework 4.6.1 and later versions
+**This article applies to: ✔️** .NET Core 6 and later versions **✔️** .NET Framework 2 and later versions
 
 .NET applications can be instrumented using the <xref:System.Diagnostics.Metrics?displayProperty=nameWithType> APIs to track
 important metrics. Some metrics are included in standard .NET libraries, but you may want to add new custom metrics that are relevant for

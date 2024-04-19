@@ -36,4 +36,4 @@ Sets an environment variable in the process. On non-Windows platforms the runtim
 
 **Header:** CorProf.idl, CorProf.h
 
-**.NET Versions:** Available since .NET Core 3.1
+**.NET Versions:** Available since .NET 6

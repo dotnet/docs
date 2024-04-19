@@ -7,7 +7,7 @@ ms.date: 04/19/2022
 
 # Debug ThreadPool Starvation
 
-**This article applies to: ✔️** .NET Core 3.1 and later versions
+**This article applies to: ✔️** .NET 6 and later versions
 
 In this tutorial, you'll learn how to debug a ThreadPool starvation scenario. ThreadPool starvation occurs when the pool has no available threads to process new work items and it often causes applications to respond slowly. Using the provided example [ASP.NET Core web app](/samples/dotnet/samples/diagnostic-scenarios), you can cause ThreadPool starvation intentionally and learn how to diagnose it.
 

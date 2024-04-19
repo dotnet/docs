@@ -297,7 +297,7 @@ Gets an `IDictionary` of key-value pair strings representing optional arguments 
 
 ### Remarks
 
-This class is immutable, because EventPipe does not allow a provider's configuration to be modified during an EventPipe session as of .NET Core 3.1.
+This class is immutable, because EventPipe does not allow a provider's configuration to be modified during an EventPipe session as of .NET 6.
 
 ## EventPipeSession class
 

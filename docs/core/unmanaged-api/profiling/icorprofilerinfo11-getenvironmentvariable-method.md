@@ -45,7 +45,7 @@ Gets an environment variable from the process. On non-Windows platforms the runt
 
 **Header:** CorProf.idl, CorProf.h
 
-**.NET Versions:** Available since .NET Core 3.1
+**.NET Versions:** Available since .NET 6
 
 ## See also
 

@@ -191,7 +191,7 @@ Messages =
 }
 ```
 
-## Extending the reach of your prompt engineering techniques
+## Extend the reach of your prompt engineering techniques
 
 You can also increase the power of your prompts with two more advanced prompt engineering techniques that are covered in depth in their own articles.
 

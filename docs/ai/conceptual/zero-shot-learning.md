@@ -13,7 +13,7 @@ ms.date: 04/12/2024
 
 This article explains zero-shot learning and few-shot learning for prompt engineering in .NET, including their primary use cases.
 
-GPT model performance benefits from [prompt engineering](prompt-engineering-in-dot-net.md), the practice of providing instructions and examples to a model to refine its output. Zero-shot learning and few-shot learning are techniques that you can use when providing examples.
+GPT model performance benefits from *prompt engineering*, the practice of providing instructions and examples to a model to refine its output. Zero-shot learning and few-shot learning are techniques that you can use when providing examples.
 
 With zero-shot learning, you include prompts but not verbatim completions. You can include completions that only consist of cues. Zero-shot learning relies entirely on the model's existing knowledge to generate responses, which reduces the number of tokens created and can help you control costs. However, zero-shot learning doesn't add to the model's knowledge.
 

@@ -140,4 +140,4 @@ Constructing expression trees using factory methods is relatively complex; it is
 
 For instance, the previous example could be rewritten as follows:
 
-:::code language="csharp" source="./snippets/HowToExtend/Program.cs" id="Dynamic_linq":::
+:::code language="csharp" source="./snippets/HowToBuildDynamicQueries/Program.cs" id="Dynamic_linq":::

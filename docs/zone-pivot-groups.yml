@@ -94,7 +94,7 @@ groups:
       title: Azure Storage
     - id: azure-cosmos-db-nosql
       title: Azure Cosmos DB for NoSQL
-- id: azure-development-tool
+- id: azure-development-tool-set-one
   title: Azure development tool
   prompt: Choose an Azure development tool
   pivots:
@@ -138,3 +138,11 @@ groups:
       title: Semantic Kernel
     - id: azure-openai-sdk
       title: Azure OpenAI SDK
+- id: azure-development-tool-set-two
+  title: Azure development tool
+  prompt: Choose an Azure development tool
+  pivots:
+    - id: azure-portal
+      title: Azure Portal
+    - id: azure-cli
+      title: Azure CLI

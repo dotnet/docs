@@ -46,7 +46,7 @@ Use your own databases to generate embeddings for your data and integrate it wit
 
 ### Increase the amount of text you can fit in a prompt
 
-Use embeddings to increase the amount of text you can fit in a prompt, by reducing the number of tokens per word.
+Use embeddings to increase the amount of context you can fit in a prompt without increasing the number of tokens required.
 
 For example, suppose you want to include 500 pages of text in a prompt. The number of tokens for that much raw text will exceed the input token limit, making it impossible to directly include in a prompt. You can use embeddings to summarize and break down large amounts of that text into pieces that are small enough to fit in one input, and then assess the similarity of each piece to the entire raw text. Then you can choose a piece that best preserves the semantic meaning of the raw text and use it in your prompt without hitting the token limit.
 

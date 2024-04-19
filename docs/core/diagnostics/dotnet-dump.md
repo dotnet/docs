@@ -169,7 +169,7 @@ dotnet-dump analyze <dump_path> [-h|--help] [-c|--command]
 | `dumpgcdata`                                        | Displays information about the GC data. |
 | `dumpgen`                                           | Displays heap content for the specified generation. |
 | `dumpheap`                                          | Displays info about the garbage-collected heap and collection statistics about objects. |
-| `dumpil`                                            | Displays the Microsoft intermediate language (MSIL) that's associated with a managed method. |
+| `dumpil`                                            | Displays the common intermediate language (CIL) that's associated with a managed method. |
 | `dumplog`                                           | Writes the contents of an in-memory stress log to the specified file. |
 | `dumpmd`                                            | Displays information about the `MethodDesc` structure at the specified address. |
 | `dumpmodule`                                        | Displays information about the module at the specified address. |

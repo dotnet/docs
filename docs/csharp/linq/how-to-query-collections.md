@@ -2,7 +2,7 @@
 title: "LINQ and collections"
 description: This series of examples shows you a variety of LINQ techniques to use with collections and arrays
 ms.topic: how-to
-ms.date: 04/19/2024
+ms.date: 04/22/2024
 ---
 # LINQ and collections
 

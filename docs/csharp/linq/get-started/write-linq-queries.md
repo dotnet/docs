@@ -21,7 +21,7 @@ To understand the method-based query, let's examine it more closely. On the righ
 
 ![Screenshot showing all the standard query operators in Intellisense.](./media/write-linq-queries/standard-query-operators.png)
 
-Although it looks as if <xref:System.Collections.Generic.IEnumerable%601> includes additional methods, it doesn't. The standard query operators are implemented as *extension methods*. Extensions methods "extend" an existing type; they can be called as if they were instance methods on the type. The standard query operators extend <xref:System.Collections.Generic.IEnumerable%601> and that is why you can write `numbers.Where(...)`.
+Although it looks as if <xref:System.Collections.Generic.IEnumerable%601> includes more methods, it doesn't. The standard query operators are implemented as *extension methods*. Extensions methods "extend" an existing type; they can be called as if they were instance methods on the type. The standard query operators extend <xref:System.Collections.Generic.IEnumerable%601> and that is why you can write `numbers.Where(...)`.
 
 To use extension methods, you bring them into scope with `using` directives. From your application's point of view, an extension method and a regular instance method are the same.
 
@@ -124,7 +124,7 @@ In each of the examples, the `equals` query keyword is used. You can also use [p
 
 ## Handle exceptions in query expressions
 
-It's possible to call any method in the context of a query expression. However, we recommend that you avoid calling any method in a query expression that can create a side effect such as modifying the contents of the data source or throwing an exception. This example shows how to avoid raising exceptions when you call methods in a query expression without violating the general .NET guidelines on exception handling. Those guidelines state that it's acceptable to catch a specific exception when you understand why it's thrown in a given context. For more information, see [Best Practices for Exceptions](../../../standard/exceptions/best-practices-for-exceptions.md).
+It's possible to call any method in the context of a query expression. Don't call any method in a query expression that can create a side effect such as modifying the contents of the data source or throwing an exception. This example shows how to avoid raising exceptions when you call methods in a query expression without violating the general .NET guidelines on exception handling. Those guidelines state that it's acceptable to catch a specific exception when you understand why it's thrown in a given context. For more information, see [Best Practices for Exceptions](../../../standard/exceptions/best-practices-for-exceptions.md).
 
 The final example shows how to handle those cases when you must throw an exception during execution of a query.
 
@@ -136,7 +136,7 @@ In the `catch (InvalidOperationException)` in the preceding example, handle (or 
 
 In some cases, the best response to an exception that is thrown from within a query might be to stop the query execution immediately. The following example shows how to handle exceptions that might be thrown from inside a query body. Assume that `SomeMethodThatMightThrow` can potentially cause an exception that requires the query execution to stop.
 
-The `try` block encloses the `foreach` loop, and not the query itself. This is because the `foreach` loop is the point at which the query is executed. The runtime exception is thrown when the query is executed. Therefore they must be handled in the `foreach` loop.
+The `try` block encloses the `foreach` loop, and not the query itself. The `foreach` loop is the point at which the query is executed. The runtime exception is thrown when the query is executed. Therefore they must be handled in the `foreach` loop.
 
 :::code language="csharp" source="./snippets/SnippetApp/Exceptions.cs" id="exceptions_2":::
 

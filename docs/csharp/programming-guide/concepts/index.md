@@ -1,7 +1,7 @@
 ---
 title: "Programming Concepts (C#)"
 description: Use the resources in this section to understand programming concepts in the C# language, including object-oriented programming.
-ms.date: 04/12/2024
+ms.date: 04/22/2024
 ---
 # Programming concepts (C#)
 
@@ -18,4 +18,4 @@ This section explains programming concepts in the C# language.
 
 - [Performance Tips](../../../framework/performance/performance-tips.md)
 
-  Discusses several basic rules that may help you increase the performance of your application.
+  Discusses several basic rules that might help you increase the performance of your application.

@@ -1,7 +1,7 @@
 ---
 title: "LINQ and file directories (C#)"
 description: These C# LINQ resources for file system operations are not used to change the contents of the files or folders.
-ms.date: 04/19/2024
+ms.date: 04/22/2024
 ---
 # How to: use LINQ to query files and directories
 

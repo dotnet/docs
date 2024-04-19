@@ -11,7 +11,7 @@ ms.date: 04/12/2024
 
 # Vector databases in .NET
 
-This article explains how vector databases help you use [embeddings](embeddings.md) to extend the data available to LLMs in .NET.
+This article explains how vector databases help you use *embeddings* to extend the data available to LLMs in .NET.
 
 You can use a vector database to store embeddings that you generate with AI embedding models. Embeddings have dimensions that correspond to the learned features or attributes of the embedding model you use. An embedding contains a value for each dimension, providing a semantic and mathematical representation of the source text.
 

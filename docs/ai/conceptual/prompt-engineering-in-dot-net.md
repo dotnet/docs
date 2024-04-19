@@ -23,9 +23,9 @@ Prompt:
 Completion:
 _"Pedro Lascurain."_
 
-Looks right, but what if your app is supposed to help US History students? Pedro Lascurain's 45-minute term is the shortest term for any president, but he served Mexico&mdash;the students are probably looking for _"William Henry Harrsion."_ Clearly, the app could be more helpful to its intended users if you gave it some context.
+Looks right, but what if your app is supposed to help U.S. history students? Pedro Lascurain's 45-minute term is the shortest term for any president, but he served Mexico&mdash;the students are probably looking for _"William Henry Harrsion."_ Clearly, the app could be more helpful to its intended users if you gave it some context.
 
-That's the basic idea of prompt engineering: you add context to the prompt to help the model produce better completions. You can do this by giving the model [*instructions*](#use-instructions-to-tell-the-model-what-to-do), [*examples*](#examples-show-the-model-what-to-do) and [*cues*](#cues).
+That's the basic idea of prompt engineering: you add context to the prompt to help the model produce better completions. You can do this by giving the model [*instructions*](#use-instructions-to-tell-the-model-what-to-do), [*examples*](#examples-show-the-model-what-to-do), and [*cues*](#cues).
 
 GPT models that support text generation don't require any specific format, but you should organize your prompts so it's clear what's an instruction and what's an example. GPT models that support chat-based apps use three roles to organize completions: a system role that controls the chat, a user role to represent user input, and an assistant role for responding to users. You divide your prompts into messages for each role:
 
@@ -36,16 +36,16 @@ GPT models that support text generation don't require any specific format, but y
 > [!NOTE]
 > In Semantic Kernel, you can help keep your prompts flexible and lean by [using variables for input parameters](/semantic-kernel/prompts/templatizing-prompts?tabs=Csharp#adding-variables-to-the-prompt) and [calling nested functions](/semantic-kernel/prompts/calling-nested-functions?tabs=Csharp#calling-a-nested-function).
 
-## Use Instructions to tell the model what to do
+## Use instructions to tell the model what to do
 
 This section explains the use of instructions in prompt engineering.
 
 An instruction is text that tells the model how to respond. An instruction can be a directive or an imperative:
 
-- _Directives_ tell the model how to behave, but aren't simple commands&mdash;think character setup for an improv actor:  **"You are helping students learn about U.S. history, so talk about the U.S. unless they specifically ask about other countries."**
+- _Directives_ tell the model how to behave, but aren't simple commands&mdash;think character setup for an improv actor: **"You're helping students learn about U.S. history, so talk about the U.S. unless they specifically ask about other countries."**
 - _Imperatives_ are unambiguous commands for the model to follow. **"Translate to Tagalog:"**
 
-Because they are open-ended, directives are more flexible than imperatives:
+Because they're open-ended, directives are more flexible than imperatives:
 
 - You can combine several directives in one instruction.
 - Instructions usually work better when you use them with examples. However, because imperatives are unambiguous commands, models don't need examples to understand them (though you might use an example to show the model how to format responses). Because a directive doesn't tell the model exactly what to do, each example can help the model work better.
@@ -63,7 +63,7 @@ Use labels with your instructional content to help the model figure out how to u
 
 Suppose you use the instruction **"Summarize US Presidential accomplishments"** to produce a list. The model might organize and order it in any number of ways. But what if you want the list to group the accomplishments by a specific set of categories? You can adjust your instruction by appending **"&nbsp;grouped by category"** to it, but a model won't know which specific categories you want. Use supporting content to add that information to the instruction.
 
-Adjust your instruction so the model will group by category, and append supporting content that specifies those categories:
+Adjust your instruction so the model groups by category, and append supporting content that specifies those categories:
 
 ```csharp
 prompt = """
@@ -124,11 +124,11 @@ DOMESTIC POLICY
 
 ## .NET implementations
 
-This section compares two .NET options for prompt engineering: [Semantic Kernel](/semantic-kernel/overview/) and [Azure OpenAI](/azure/ai-services/openai/overview).
+This section compares two .NET options for prompt engineering: [Semantic Kernel](#semantic-kernel) and [Azure OpenAI](#azure-openai).
 
 ### Semantic Kernel
 
-Semantic Kernel is an SDK that integrates Large Language Models (LLMs) with conventional programming languages such as C#, Python, and Java. Semantic Kernel lets you define plugins and easily chain them together in just a few lines of code. You can use [Semantic Kernel planners](/semantic-kernel/agents/planners/?tabs=Csharp) to automatically orchestrate plugins, which lets you ask an LLM to generate a plan that Semantic Kernel can execute to achieve a user's unique goal.
+[Semantic Kernel](/semantic-kernel/overview/) is an SDK that integrates Large Language Models (LLMs) with conventional programming languages such as C#, Python, and Java. Semantic Kernel lets you define plugins and easily chain them together in just a few lines of code. You can use [Semantic Kernel planners](/semantic-kernel/agents/planners/?tabs=Csharp) to automatically orchestrate plugins, which lets you ask an LLM to generate a plan that Semantic Kernel can execute to achieve a user's unique goal.
 
 By deeply integrating with Visual Studio Code, Semantic Kernel also makes it easy for you to integrate [prompt engineering](/semantic-kernel/prompts/your-first-prompt?tabs=Csharp) into your existing development processes:
 
@@ -159,7 +159,7 @@ prompt = """
 
 ### Azure OpenAI
 
-Azure OpenAI is a managed service that allows developers to deploy, tune, and generate content from OpenAI models on Azure resources. Azure OpenAI's client library for .NET is an adaptation of OpenAI's REST APIs that provides an idiomatic interface and rich integration with the rest of the Azure SDK ecosystem. It can connect to Azure OpenAI resources or to the non-Azure OpenAI inference endpoint, making it suitable for non-Azure OpenAI development.
+[Azure OpenAI](/azure/ai-services/openai/overview) is a managed service that allows developers to deploy, tune, and generate content from OpenAI models on Azure resources. Azure OpenAI's client library for .NET is an adaptation of OpenAI's REST APIs that provides an idiomatic interface and rich integration with the rest of the Azure SDK ecosystem. It can connect to Azure OpenAI resources or to the non-Azure OpenAI inference endpoint, making it suitable for non-Azure OpenAI development.
 
 Use the client library for Azure OpenAI to:
 

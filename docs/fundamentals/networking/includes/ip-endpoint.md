@@ -19,7 +19,7 @@ IPAddress ipAddress = ipHostInfo.AddressList[0];
 ```
 
 > [!TIP]
-> For manual testing and debugging purposes, you can typically use the <xref:System.Net.Dns.GetHostEntryAsync%2A> method with the resulting hostname from the <xref:System.Net.Dns.GetHostName?displayProperty=nameWithType> value to resolve the localhost name to an IP address. Consider the following code snippet:
+> For manual testing and debugging purposes, you can typically use the <xref:System.Net.Dns.GetHostEntryAsync%2A> method with the resulting host name from the <xref:System.Net.Dns.GetHostName?displayProperty=nameWithType> value to resolve the localhost name to an IP address. Consider the following code snippet:
 >
 > ```csharp
 > var hostName = Dns.GetHostName();

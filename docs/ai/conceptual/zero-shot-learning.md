@@ -2,10 +2,8 @@
 title: "Zero-shot and few-shot learning"
 description: "Learn the use cases for zero-shot and few-shot learning in prompt engineering."
 author: catbutler
-ms.author: [your Microsoft alias or a team alias]
-ms.service: [the approved service name]
 ms.topic: concept-article #Don't change.
-ms.date: [mm/dd/yyyy]
+ms.date: 04/12/2024
 
 #customer intent: As a .NET developer, I want to understand how zero-shot and few-shot learning techniques can help me improve my prompt engineering.
 

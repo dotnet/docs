@@ -50,8 +50,6 @@ Intent:
 
 ## Zero-shot learning use cases
 
-This section explains the use cases for zero-shot learning with a GPT model.
-
 Zero-shot learning is the practice of passing prompts that aren't paired with verbatim completions, although they can be paired with a cue. There are two primary use cases for zero-shot learning:
 
 - **Working with fined-tuned LLMs** - Because it relies on the model's existing knowledge, zero-shot learning is not as resource-intensive as few-shot learning, and it works well with LLMs that have already been fined-tuned on instruction datasets. You might be able to rely solely on zero-shot learning and keep costs relatively low.
@@ -59,9 +57,7 @@ Zero-shot learning is the practice of passing prompts that aren't paired with ve
 
 ## Few-shot learning use cases
 
-This section explains the use cases for few-shot learning with a GPT model.
-
-Few-shot learning is the practice of passing prompts paired with verbatim completions (few-shot prompts) to show your model how to respond. Unlike zero-shot learning, few-shot learning can add to the model's knowledge. You can even use your own datasets to automatically generate few-shot prompts, by performing [retrieval-augmented generation](rag.md).
+Few-shot learning is the practice of passing prompts paired with verbatim completions (few-shot prompts) to show your model how to respond. Unlike zero-shot learning, few-shot learning can add to the model's knowledge. You can even use your own datasets to automatically generate few-shot prompts, by performing retrieval-augmented generation.
 
 Few-shot learning has two primary use cases:
 
@@ -77,4 +73,4 @@ Few-shot learning has two primary use cases:
 ## Related content
 
 - [Prompt engineering techniques](/azure/ai-services/openai/concepts/advanced-prompt-engineering)
-- [Chain of thought prompting](chain-of-thought-prompting.md)
+- [How GenAI and LLMs work](how-genai-and-llms-work.md)

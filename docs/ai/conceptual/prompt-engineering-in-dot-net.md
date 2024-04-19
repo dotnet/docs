@@ -195,7 +195,7 @@ Messages =
 
 You can also increase the power of your prompts with two more advanced prompt engineering techniques that we'll cover in depth in their own articles.
 
-- LLMs have token input limits that constrain the amount of text you can fit in a prompt. You can use *embeddings* and *vector database solutions* to reduce the amount of tokens you need to represent a given piece of text.
+- LLMs have token input limits that constrain the amount of text you can fit in a prompt. You can use *embeddings* and *vector database solutions* to reduce the number of tokens you need to represent a given piece of text.
 - LLMs aren't trained on your data unless you train them yourself, which can be costly and time-consuming. You can use *retrieval-augmented generation* to make your data available to an LLM without training it.
 
 ## Related content

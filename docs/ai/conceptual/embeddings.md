@@ -37,7 +37,7 @@ Vector databases are designed to store and process vectors, so they're a natural
 
 This section lists the main use cases for embeddings. LLMs can process text embeddings, but to use other data types you need to include a suitable embedding model, such as **dall-e-3** for image generation.
 
-> [!NOTE]
+> [!TIP]
 > In Semantic Kernel, you can [use nested functions](/semantic-kernel/prompts/calling-nested-functions?tabs=Csharp#calling-a-nested-function) to integrate embeddings in your prompts.
 
 ### Use your own data to improve completion relevance

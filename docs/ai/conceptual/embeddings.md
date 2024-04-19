@@ -35,7 +35,7 @@ Vector databases are designed to store and process vectors, so they're a natural
 
 ## Use cases for embeddings
 
-This section lists the main use cases for embeddings. LLMs can process text embeddings, but to use other data types you need to include a suitable embedding model, such as **dall-e-3** for image generation.
+This section lists the main use cases for embeddings. LLMs can process text embeddings, but to use other data types you need to include a suitable model, such as **dall-e-3** for image generation.
 
 > [!TIP]
 > In Semantic Kernel, you can [use nested functions](/semantic-kernel/prompts/calling-nested-functions?tabs=Csharp#calling-a-nested-function) to integrate embeddings in your prompts.
@@ -62,7 +62,7 @@ For example, [Speech service](/azure/ai-services/speech-service/) supports a ran
 
 ### Turn text into images or images into text
 
-Semantic image processing requires image embeddings, which most LLMs can't generate. Use an image-embedding model to create vector embeddings for images. Then you can use those embeddings with an LLM to create or modify images using text or vice versa. For example, you can [use the DALL·E embedding model to generate images](/azure/ai-services/openai/dall-e-quickstart?tabs=dalle3%2Ccommand-line&pivots=programming-language-csharp) such as logos, faces, animals, and landscapes.
+Semantic image processing requires image embeddings, which most LLMs can't generate. Use an image-embedding model to create vector embeddings for images. Then you can use those embeddings with an image generation model to create or modify images using text or vice versa. For example, you can [use the DALL·E model to generate images](/azure/ai-services/openai/dall-e-quickstart?tabs=dalle3%2Ccommand-line&pivots=programming-language-csharp) such as logos, faces, animals, and landscapes.
 
 ### Generate or document code
 

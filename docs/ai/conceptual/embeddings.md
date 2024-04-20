@@ -62,7 +62,7 @@ For example, [Speech service](/azure/ai-services/speech-service/) supports a ran
 
 ### Turn text into images or images into text
 
-Semantic image processing requires image embeddings, which most LLMs can't generate. Use an image-embedding model to create vector embeddings for images. Then you can use those embeddings with an image generation model to create or modify images using text or vice versa. For example, you can [use the DALL·E model to generate images](/azure/ai-services/openai/dall-e-quickstart?tabs=dalle3%2Ccommand-line&pivots=programming-language-csharp) such as logos, faces, animals, and landscapes.
+Semantic image processing requires image embeddings, which most LLMs can't generate. Use an image-embedding model such as [ViT](https://huggingface.co/docs/transformers/main/en/model_doc/vit) to create vector embeddings for images. Then you can use those embeddings with an image generation model to create or modify images using text or vice versa. For example, you can [use the DALL·E model to generate images](/azure/ai-services/openai/dall-e-quickstart?tabs=dalle3%2Ccommand-line&pivots=programming-language-csharp) such as logos, faces, animals, and landscapes.
 
 ### Generate or document code
 

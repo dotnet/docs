@@ -33,7 +33,7 @@ This section describes the unmanaged structures that the debugging API uses.
  Provides information about the layout of an array object in memory.
 
  [COR_DEBUG_IL_TO_NATIVE_MAP](cor-debug-il-to-native-map-structure.md)
- Contains the offsets that are used to map Microsoft intermediate language (MSIL) code to native code.
+ Contains the offsets that are used to map common intermediate language (CIL) code to native code.
 
  [COR_DEBUG_STEP_RANGE](cor-debug-step-range-structure.md)
  Contains the offset information for a range of code.

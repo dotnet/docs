@@ -20,7 +20,7 @@ topic_type:
 
 # IMethodMalloc::Alloc Method
 
-Attempts to allocate a specified amount of memory for a new Microsoft intermediate language (MSIL) function body.
+Attempts to allocate a specified amount of memory for a new common intermediate language (CIL) function body.
 
 ## Syntax
 

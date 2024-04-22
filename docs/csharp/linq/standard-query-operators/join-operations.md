@@ -171,5 +171,5 @@ The equivalent query using method syntax is shown in the following code:
 - [Formulate Joins and Cross-Product Queries](../../../framework/data/adonet/sql/linq/formulate-joins-and-cross-product-queries.md)
 - [join clause](../../language-reference/keywords/join-clause.md)
 - [group clause](../../language-reference/keywords/group-clause.md)
-- [How to join content from dissimilar files (LINQ) (C#)](../../programming-guide/concepts/linq/how-to-join-content-from-dissimilar-files-linq.md)
-- [How to populate object collections from multiple sources (LINQ) (C#)](../../programming-guide/concepts/linq/how-to-populate-object-collections-from-multiple-sources-linq.md)
+- [How to join content from dissimilar files (LINQ) (C#)](/dotnet/csharp/linq/how-to-query-files-and-directories)
+- [How to populate object collections from multiple sources (LINQ) (C#)](/dotnet/csharp/linq/how-to-query-collections)

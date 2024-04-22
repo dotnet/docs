@@ -100,5 +100,5 @@ The following example compares the behavior of `Select` and `SelectMany`. The co
 
 - <xref:System.Linq>
 - [select clause](../../language-reference/keywords/select-clause.md)
-- [How to populate object collections from multiple sources (LINQ) (C#)](../../programming-guide/concepts/linq/how-to-populate-object-collections-from-multiple-sources-linq.md)
-- [How to split a file into many files by using groups (LINQ) (C#)](../../programming-guide/concepts/linq/how-to-split-a-file-into-many-files-by-using-groups-linq.md)
+- [How to populate object collections from multiple sources (LINQ) (C#)](/dotnet/csharp/linq/how-to-query-collections)
+- [How to split a file into many files by using groups (LINQ) (C#)](/dotnet/csharp/linq/how-to-query-files-and-directories)

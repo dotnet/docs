@@ -31,5 +31,5 @@ The equivalent query using method syntax is shown in the following code:
 - <xref:System.Linq>
 - [where clause](../../language-reference/keywords/where-clause.md)
 - [How to query an assembly's metadata with Reflection (LINQ) (C#)](../../advanced-topics/reflection-and-attributes/how-to-query-assembly-metadata-with-reflection-linq.md)
-- [How to query for files with a specified attribute or name (C#)](../../programming-guide/concepts/linq/how-to-query-for-files-with-a-specified-attribute-or-name.md)
-- [How to sort or filter text data by any word or field (LINQ) (C#)](../../programming-guide/concepts/linq/how-to-sort-or-filter-text-data-by-any-word-or-field-linq.md)
+- [How to query for files with a specified attribute or name (C#)](/dotnet/csharp/linq//how-to-query-files-and-directories)
+- [How to sort or filter text data by any word or field (LINQ) (C#)](/dotnet/csharp/linq/how-to-query-strings)

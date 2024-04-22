@@ -90,4 +90,4 @@ In the preceding C# code:
 ## See also
 
 - <xref:System.Linq>
-- [How to find the set difference between two lists (LINQ) (C#)](/dotnet/csharp/linq/how-to-query-collections)
+- [How to find the set difference between two lists (LINQ) (C#)](../how-to-query-collections.md)

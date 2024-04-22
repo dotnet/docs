@@ -73,4 +73,4 @@ The equivalent query written using method syntax is shown in the following code:
 
 - <xref:System.Linq>
 - [orderby clause](../../language-reference/keywords/orderby-clause.md)
-- [How to sort or filter text data by any word or field (LINQ) (C#)](/dotnet/csharp/linq/how-to-query-strings)
+- [How to sort or filter text data by any word or field (LINQ) (C#)](../how-to-query-strings.md)

@@ -39,5 +39,5 @@ The following example uses the `Contains` to find students that scored exactly 9
 ## See also
 
 - <xref:System.Linq>
-- [Dynamically specify predicate filters at run time](/dotnet/csharp/linq/get-started/write-linq-queries)
-- [How to query for sentences that contain a specified set of words (LINQ) (C#)](/dotnet/csharp/linq/how-to-query-strings)
+- [Dynamically specify predicate filters at run time](../get-started/write-linq-queries.md)
+- [How to query for sentences that contain a specified set of words (LINQ) (C#)](../how-to-query-strings.md)

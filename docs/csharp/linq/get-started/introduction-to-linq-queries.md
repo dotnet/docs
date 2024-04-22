@@ -51,7 +51,7 @@ IQueryable<Customer> custQuery =
 For more information about how to create specific types of data sources, see the documentation for the various LINQ providers. However, the basic rule is simple: a LINQ data source is any object that supports the generic <xref:System.Collections.Generic.IEnumerable%601> interface, or an interface that inherits from it, typically <xref:System.Linq.IQueryable%601>.
 
 > [!NOTE]
-> Types such as <xref:System.Collections.ArrayList> that support the non-generic <xref:System.Collections.IEnumerable> interface can also be used as a LINQ data source. For more information, see [How to query an ArrayList with LINQ (C#)](/dotnet/csharp/linq/how-to-query-collections).
+> Types such as <xref:System.Collections.ArrayList> that support the non-generic <xref:System.Collections.IEnumerable> interface can also be used as a LINQ data source. For more information, see [How to query an ArrayList with LINQ (C#)](../how-to-query-collections.md).
 
 ## The Query
 
@@ -185,6 +185,6 @@ You should assign the returned collection object to a new variable when you stor
 
 ## See also
 
-- [Walkthrough: Writing Queries in C#](/dotnet/csharp/linq/get-started/walkthrough-writing-queries-linq)
+- [Walkthrough: Writing Queries in C#](walkthrough-writing-queries-linq.md)
 - [foreach, in](../../language-reference/statements/iteration-statements.md#the-foreach-statement)
 - [Query Keywords (LINQ)](../../language-reference/keywords/query-keywords.md)

@@ -38,7 +38,7 @@ In a LINQ query, the first step is to specify the data source. In a LINQ query, 
 The range variable is like the iteration variable in a `foreach` loop except that no actual iteration occurs in a query expression. When the query is executed, the range variable serves as a reference to each successive element in `customers`. Because the compiler can infer the type of `cust`, you don't have to specify it explicitly. You can introduce more range variables in a `let` clause. For more information, see [let clause](../../language-reference/keywords/let-clause.md).
 
 > [!NOTE]
-> For non-generic data sources such as <xref:System.Collections.ArrayList>, the range variable must be explicitly typed. For more information, see [How to query an ArrayList with LINQ (C#)](/dotnet/csharp/linq/how-to-query-collections) and [from clause](../../language-reference/keywords/from-clause.md).
+> For non-generic data sources such as <xref:System.Collections.ArrayList>, the range variable must be explicitly typed. For more information, see [How to query an ArrayList with LINQ (C#)](../how-to-query-collections.md) and [from clause](../../language-reference/keywords/from-clause.md).
 
 Once you obtain a data source, you can perform any number of operations on that data source:
 

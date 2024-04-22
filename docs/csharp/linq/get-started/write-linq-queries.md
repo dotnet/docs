@@ -144,7 +144,7 @@ Remember to catch whatever exception you expect to raise and/or do any necessary
 
 ## See also
 
-- [Walkthrough: Writing Queries in C#](/dotnet/csharp/linq/get-started/walkthrough-writing-queries-linq)
+- [Walkthrough: Writing Queries in C#](walkthrough-writing-queries-linq.md)
 - [where clause](../../language-reference/keywords/where-clause.md)
 - [Querying based on runtime state](../../advanced-topics/expression-trees/debugview-syntax.md)
 - <xref:System.Nullable%601>

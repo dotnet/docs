@@ -125,4 +125,4 @@ The query in the preceding snippet can also be written using method syntax. The 
 - <xref:System.Linq.Enumerable.GroupBy%2A>
 - <xref:System.Linq.IGrouping%602>
 - [group clause](../../language-reference/keywords/group-clause.md)
-- [How to split a file into many files by using groups (LINQ) (C#)](/dotnet/csharp/linq/how-to-query-files-and-directories)
+- [How to split a file into many files by using groups (LINQ) (C#)](../how-to-query-files-and-directories.md)

@@ -29,7 +29,7 @@ Expression trees are immutable; if you want a different expression tree&mdash;an
 - Use runtime state from within the expression tree
 - Call more LINQ methods
 - Vary the expression tree passed into the LINQ methods
-- Construct an <xref:System.Linq.Expressions.Expression%601 expression tree using the factory methods at <xref:System.Linq.Expressions.Expression>
+- Construct an <xref:System.Linq.Expressions.Expression%601> expression tree using the factory methods at <xref:System.Linq.Expressions.Expression>
 - Add method call nodes to an <xref:System.Linq.IQueryable>'s expression tree
 - Construct strings, and use the [Dynamic LINQ library](https://dynamic-linq.net/)
 

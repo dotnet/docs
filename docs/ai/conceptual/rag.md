@@ -21,16 +21,20 @@ To perform retrieval-augmented generation, you create embeddings for your data a
 
 When a user asks a question, the LLM uses your embeddings to compare the user's question to your data and find the most relevant context. This context and the user's question then go to the LLM in a prompt, and the LLM provides a response based on your data.
 
-### Example RAG solution
+### Basic RAG process
 
-Consider a consumer retail "Intelligent Agent" that allows users to ask questions about products, services, and the like.
+To perform RAG, you must process each data source that you want to use for retrievals. The basic process is as follows:
 
-The solution architecture is represented by this diagram: This solution is composed of the following services:
+1. Chunk large data into manageable pieces.
+1. Convert the chunks into a searchable format.
+1. Store the converted data in a location that allows efficient access. Additionally, it's important to store relevant metadata for citations or references when the LLM provides responses.
 
-Azure Cosmos DB for MongoDB vCore - Stores the operational retail data and their vectors in three collections: products, customers and salesorders. It also stores all of the chat history in the completions collection.
-Azure Functions - Hosts two HTTP triggers, Ingest And Vectorize imports and vectorizes data. A second HTTP trigger, Add Remove Data is used to add and remove a product from the product catalog to highlight how to add and remove data in real-time for an AI solution.
-Azure App Service - Hosts the chat web application.
-Azure OpenAI Service - Generates vectors using the Embeddings API on the text-embedding-ada-002 model and chat completions using the Completion API on the gpt-4-32k model.
+:::image type="content" source="./media/concept-retrieval-augmented-generation/retrieval-augmented-generation-walkthrough.png" alt-text="Screenshot of a diagram of the technical overview of an LLM walking through rag steps." lightbox="./media/concept-retrieval-augmented-generation/retrieval-augmented-generation-walkthrough.png":::
+
+- **Source data**: This is where your data exists. It could be a file/folder on your machine, a file in cloud storage, an Azure Machine Learning data asset, a Git repository, or an SQL database.
+- **Data chunking**: The data in your source needs to be converted to plain text. For example, word documents or PDFs need to be cracked open and converted to text. The text is then chunked into smaller pieces.
+- **Converting the text to vectors**: These are embeddings. Vectors are numerical representations of concepts converted to number sequences, which make it easy for computers to understand the relationships between those concepts.
+- **Links between source data and embeddings**: This information is stored as metadata on the chunks you created, which are then used to help the LLMs generate citations while generating responses.
 
 ## Related content
 

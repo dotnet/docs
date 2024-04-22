@@ -90,7 +90,7 @@ To create an app with a user-assigned identity, you first create the identity an
     * This can be a **Management group**, **Subscription**, **Resource group**, or a specific **Azure OpenAI** resource.
 1. Select **Access control (IAM)** on the left navigation pane.
 1. Select **Add**, then select **Add role assignment**.
-1. On the **Role** tab on the next screen, select the **Cognitive Services OpenAI User** role.
+1. On the **Role** tab, select the **Cognitive Services OpenAI User** role.
 1. On the **Members** tab, select the managed identity.
 1. On the **Review + assign** tab, select **Review + assign** to assign the role.
 

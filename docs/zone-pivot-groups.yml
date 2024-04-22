@@ -104,6 +104,14 @@ groups:
       title: Azure CLI
     - id: azure-bicep
       title: Azure Bicep
+- id: azure-development-tool-set-two
+  title: Azure interface
+  prompt: Choose an Azure development tool
+  pivots:
+    - id: azure-portal
+      title: Azure Portal
+    - id: azure-cli
+      title: Azure CLI
 - id: code-language
   title: Code language
   prompt: Choose a code language
@@ -138,11 +146,3 @@ groups:
       title: Semantic Kernel
     - id: azure-openai-sdk
       title: Azure OpenAI SDK
-- id: azure-development-tool-set-two
-  title: Azure development tool
-  prompt: Choose an Azure development tool
-  pivots:
-    - id: azure-portal
-      title: Azure Portal
-    - id: azure-cli
-      title: Azure CLI

@@ -14,7 +14,7 @@ zone_pivot_groups: azure-development-tool-set-two
 
 This article demonstrates how to use Microsoft Entra managed identities to authenticate and authorize an App Service application to an Azure OpenAI resource.
 
-Using a managed identity from Microsoft Entra allows your App Service application to easily access a protected Azure OpenAI resources without having to provision or rotate any secrets.
+Using a managed identity from Microsoft Entra allows your App Service application to easily access a protected Azure OpenAI resources without having to manually provision or rotate any secrets.
 
 The [Semantic Kernel SDK](/semantic-kernel/overview) enables you to easily implement Microsoft Entra authentication in your .NET application.
 
@@ -33,15 +33,15 @@ The [Semantic Kernel SDK](/semantic-kernel/overview) enables you to easily imple
 
 :::zone target="docs" pivot="azure-portal"
 
-1. Navigate to your app's page on the [Azure Portal](https://aka.ms/azureportal), scroll down to the **Settings** group.
+1. Navigate to your app's page on the [Azure Portal](https://aka.ms/azureportal), scroll down to the *Settings* group.
 1. Select **Identity**.
-1. Within the **System assigned** tab, switch **Status** to On. Click **Save**.
+1. Within the **System assigned** tab, toggle *Status* to **On**. Click **Save**.
 
 :::zone-end
 
 :::zone target="docs" pivot="azure-cli"
 
-Run the az webapp identity assign command to create a system-assigned identity:
+Run the `az webapp identity assign` command to create a system-assigned identity:
 
 ```azurecli
 az webapp identity assign --name <app-name> --resource-group <group-name>
@@ -51,17 +51,17 @@ az webapp identity assign --name <app-name> --resource-group <group-name>
 
 ### Add a user-assigned identity
 
-Creating an app with a user-assigned identity requires that you create the identity and then add its resource identifier to your app config.
+To create an app with a user-assigned identity, you first create the identity and then you add its resource identifier to your app config.
 
 :::zone target="docs" pivot="azure-portal"
 
 1. Create a user-assigned managed identity resource according to these [instructions](/azure/active-directory/managed-identities-azure-resources/how-to-manage-ua-identity-portal#create-a-user-assigned-managed-identity).
-1. In the left navigation for your app's page, scroll down to the **Settings** group.
+1. In the left navigation for your app's page, scroll down to the *Settings* group.
 1. Select **Identity**.
 1. Select **User assigned > Add**.
-1. Search for the identity you created earlier, select it, and select **Add**.
+1. Search for the identity you created earlier, select it, and then select **Add**.
 
-    > [!NOTE]
+    > [!CAUTION]
     > Once you select **Add**, the app restarts.
 
 :::zone-end
@@ -87,12 +87,12 @@ Creating an app with a user-assigned identity requires that you create the ident
 :::zone target="docs" pivot="azure-portal"
 
 1. In the [Azure Portal](https://aka.ms/azureportal), navigate to the scope you want to grant **Azure OpenAI** access to.
-    1. This can be a **Management group**, **Subscription**, **Resource group**, or a specific **Azure OpenAI** resource.
+    * This can be a **Management group**, **Subscription**, **Resource group**, or a specific **Azure OpenAI** resource.
 1. Select **Access control (IAM)** on the left navigation pane.
 1. Select **Add**, then select **Add role assignment**.
 1. On the **Role** tab on the next screen, select the **Cognitive Services OpenAI User** role.
-1. On the **Members** tab, select the previously created managed identity.
-1. On the **Review + assign** tab, select Review + assign to assign the role.
+1. On the **Members** tab, select the managed identity.
+1. On the **Review + assign** tab, select **Review + assign** to assign the role.
 
 :::zone-end
 

@@ -28,6 +28,7 @@ To perform RAG, you must process each data source that you want to use for retri
 1. Chunk large data into manageable pieces.
 1. Convert the chunks into a searchable format.
 1. Store the converted data in a location that allows efficient access. Additionally, it's important to store relevant metadata for citations or references when the LLM provides responses.
+1. Feed your converted data to LLMs in prompts.
 
 :::image type="content" source="./media/concept-retrieval-augmented-generation/retrieval-augmented-generation-walkthrough.png" alt-text="Screenshot of a diagram of the technical overview of an LLM walking through rag steps." lightbox="./media/concept-retrieval-augmented-generation/retrieval-augmented-generation-walkthrough.png":::
 

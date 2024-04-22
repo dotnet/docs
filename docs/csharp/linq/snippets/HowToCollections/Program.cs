@@ -214,14 +214,12 @@ static void PopulateCollection()
                             from scoreLine in scores
                             let splitScoreLine = scoreLine.Split(',')
                             where Convert.ToInt32(splitName[2]) == Convert.ToInt32(splitScoreLine[0])
-                            select new
-                            {
-                                First = splitName[0],
-                                Last = splitName[1],
-                                ExamScores = (from scoreAsText in splitScoreLine.Skip(1)
-                                              select Convert.ToInt32(scoreAsText)
-                                             ).ToList()
-                            };
+                            select (FirstName: splitName[0], 
+                                    LastName: splitName[1], 
+                                    ExamScores: (from scoreAsText in splitScoreLine.Skip(1)
+                                                 select Convert.ToInt32(scoreAsText))
+                                                 .ToList()
+                                   );
 
     // Display each student's name and exam score average.
     foreach (var student in queryNamesScores2)

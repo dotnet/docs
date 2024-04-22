@@ -224,7 +224,7 @@ static void PopulateCollection()
     // Display each student's name and exam score average.
     foreach (var student in queryNamesScores2)
     {
-        Console.WriteLine($"The average score of {student.First} {student.Last} is {student.ExamScores.Average()}.");
+        Console.WriteLine($"The average score of {student.FirstName} {student.LastName} is {student.ExamScores.Average()}.");
     }
     // </PopulateCollection2>
 }

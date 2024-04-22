@@ -40,4 +40,4 @@ To perform RAG, you must process each data source that you want to use for retri
 ## Related content
 
 - [Prompt engineering](prompt-engineering-in-dot-net.md)
-- [Get started with the .NET enterprise chat sample using RAG](/dotnet/ai/get-started-app-chat-template?tabs=github-codespaces)
+- [Get started with the .NET enterprise chat app sample using RAG](/dotnet/ai/get-started-app-chat-template?tabs=github-codespaces)

@@ -30,7 +30,7 @@ To perform RAG, you must process each data source that you want to use for retri
 1. Store the converted data in a location that allows efficient access. Additionally, it's important to store relevant metadata for citations or references when the LLM provides responses.
 1. Feed your converted data to LLMs in prompts.
 
-:::image type="content" source="/dotnet/ai/media/concept-retrieval-augmented-generation/retrieval-augmented-generation-walkthrough.png" alt-text="Screenshot of a diagram of the technical overview of an LLM walking through rag steps." lightbox="/dotnet/ai/media/concept-retrieval-augmented-generation/retrieval-augmented-generation-walkthrough.png":::
+:::image type="content" source="./media/rag/architecture.png" alt-text="Screenshot of a diagram of the technical overview of an LLM walking through rag steps.":::
 
 - **Source data**: This is where your data exists. It could be a file/folder on your machine, a file in cloud storage, an Azure Machine Learning data asset, a Git repository, or an SQL database.
 - **Data chunking**: The data in your source needs to be converted to plain text. For example, word documents or PDFs need to be cracked open and converted to text. The text is then chunked into smaller pieces.

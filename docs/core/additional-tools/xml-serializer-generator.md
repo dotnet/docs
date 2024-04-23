@@ -43,14 +43,14 @@ The following instructions show you how to use XML Serializer Generator in a .NE
 2. Use the [`dotnet add package`](../tools/dotnet-add-package.md) command to add a reference to the Microsoft.XmlSerializer.Generator package.
 
    ```dotnetcli
-   dotnet add package Microsoft.XmlSerializer.Generator -v 1.0.0
+   dotnet add package Microsoft.XmlSerializer.Generator -v 8.0.0
    ```
 
    After running the [`dotnet add package`](../tools/dotnet-add-package.md) command, the following lines are added to your *MyApp.csproj* project file:
 
    ```xml
    <ItemGroup>
-      <PackageReference Include="Microsoft.XmlSerializer.Generator" Version="1.0.0" />
+      <PackageReference Include="Microsoft.XmlSerializer.Generator" Version="8.0.0" />
    </ItemGroup>
    ```
 
@@ -58,7 +58,7 @@ The following instructions show you how to use XML Serializer Generator in a .NE
 
    ```xml
    <ItemGroup>
-      <DotNetCliToolReference Include="Microsoft.XmlSerializer.Generator" Version="1.0.0" />
+      <DotNetCliToolReference Include="Microsoft.XmlSerializer.Generator" Version="8.0.0" />
    </ItemGroup>
    ```
 
@@ -96,7 +96,7 @@ If everything succeeds, an assembly named *MyApp.XmlSerializers.dll* is generate
 Congratulations! You have just:
 > [!div class="checklist"]
 >
-> - Created a .NET Core app.
+> - Created a .NET console app.
 > - Added a reference to the Microsoft.XmlSerializer.Generator package.
 > - Edited your MyApp.csproj to add dependencies.
 > - Added a class and an XmlSerializer.

@@ -6,7 +6,7 @@ dev_langs:
   - CSharp
   - VB
 ---
-# xref:System.Xml.XmlResolver> class
+# <xref:System.Xml.XmlResolver> class
 
 [!INCLUDE [context](includes/context.md)]
 

@@ -33,7 +33,7 @@ The [Semantic Kernel SDK](/semantic-kernel/overview) enables you to easily imple
 
 :::zone target="docs" pivot="azure-portal"
 
-1. Navigate to your app's page on the [Azure Portal](https://aka.ms/azureportal), scroll down to the *Settings* group.
+1. Navigate to your app's page on the [Azure Portal](https://aka.ms/azureportal), scroll down to the **Settings** group.
 1. Select **Identity**.
 1. Within the **System assigned** tab, toggle *Status* to **On**. Click **Save**.
 

@@ -33,7 +33,6 @@ Let's start with the rules for indices. Consider an array `sequence`. The `0` in
 
 :::code language="csharp" source="snippets/RangesIndexes/IndicesAndRanges.cs" id="SnippetIndicesAndRanges_Initialization":::
 
-
 You can retrieve the last word with the `^1` index. Add the following code below the initialization:
 
 :::code language="csharp" source="snippets/RangesIndexes/IndicesAndRanges.cs" id="SnippetIndicesAndRanges_LastIndex":::

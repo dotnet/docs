@@ -3,9 +3,9 @@ title: "Use LINQ to query files and directories"
 description: Use Language Integrated Query (LINQ) for file system operations that don't to change the contents of the files or folders.
 ms.date: 04/22/2024
 ---
-# How to: use LINQ to query files and directories
+# How to: Use LINQ to query files and directories
 
-Many file system operations are essentially queries and are therefore well suited to the LINQ approach. These queries are nondestructive. They don't change the contents of the original files or folders. Queries shouldn't cause any side-effects. In general, any code (including queries that perform create / update / delete operators) that modifies source data should be kept separate from the code that just queries the data.
+Many file system operations are essentially queries and are therefore well suited to the LINQ approach. These queries are nondestructive. They don't change the contents of the original files or folders. Queries shouldn't cause any side-effects. In general, any code (including queries that perform create / update / delete operations) that modifies source data should be kept separate from the code that just queries the data.
 
 There's some complexity involved in creating a data source that accurately represents the contents of the file system and handles exceptions gracefully. The examples in this section create a snapshot collection of <xref:System.IO.FileInfo> objects that represents all the files under a specified root folder and all its subfolders. The actual state of each <xref:System.IO.FileInfo> might change in the time between when you begin and end executing a query. For example, you can create a list of <xref:System.IO.FileInfo> objects to use as a data source. If you try to access the `Length` property in a query, the <xref:System.IO.FileInfo> object tries to access the file system to update the value of `Length`. If the file no longer exists, you get a <xref:System.IO.FileNotFoundException> in your query, even though you aren't querying the file system directly.
 

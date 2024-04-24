@@ -9,9 +9,9 @@ helpviewer_keywords:
   - "queries [LINQ in C#], writing"
   - "writing LINQ queries"
 ---
-# Tutorial: Writing queries in C# using Language integrated query (LINQ)
+# Tutorial: Write queries in C# using language integrated query (LINQ)
 
-In this tutorial, you create a data source and write several LINQ queries. You can experiment with the query expressions and see the differences in the results. This walkthrough demonstrates the C# language features that are used to write LINQ query expressions. You can follow along and build the app and experiment with the queries yourself. This article assumes you installed the latest .NET SDK. If not, go to the [.NET Downloads page](https://dot.net) and install the latest version on your machine.
+In this tutorial, you create a data source and write several LINQ queries. You can experiment with the query expressions and see the differences in the results. This walkthrough demonstrates the C# language features that are used to write LINQ query expressions. You can follow along and build the app and experiment with the queries yourself. This article assumes you've installed the latest .NET SDK. If not, go to the [.NET Downloads page](https://dot.net) and install the latest version on your machine.
 
 First, create the application. From the console, type the following command:
 
@@ -64,7 +64,7 @@ Now write the `foreach` loop that causes the query to execute. Each element in t
 
 :::code language="csharp" source="./snippets/WalkthroughWritingLinqQueries/Program.cs" id="RunFirstQuery":::
 
-You can combine multiple Boolean conditions in the `where` clause in order to further refine a query. The following code adds a condition so that the query returns those students whose first score was over 90 and whose last score was less than 80. The `where` clause should resemble the following code.
+To further refine the query, you can combine multiple Boolean conditions in the `where` clause. The following code adds a condition so that the query returns those students whose first score was over 90 and whose last score was less than 80. The `where` clause should resemble the following code.
   
 ```csharp
 where student.Scores[0] > 90 && student.Scores[3] < 80  
@@ -112,7 +112,7 @@ The groups in the previous query aren't in alphabetical order. You can provide a
 
 :::code language="csharp" source="./snippets/WalkthroughWritingLinqQueries/Program.cs" id="OrderedGroupQuery":::
 
-Run this query and, the groups are now sorted in alphabetical order.
+Run this query, and the groups are now sorted in alphabetical order.
 
 You can use the `let` keyword to introduce an identifier for any expression result in the query expression. This identifier can be a convenience, as in the following example. It can also enhance performance by storing the results of an expression so that it doesn't have to be calculated multiple times.
 

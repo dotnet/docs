@@ -4,7 +4,7 @@ description: You can query a string as a sequence of characters in LINQ. This ar
 ms.topic: how-to
 ms.date: 04/22/2024
 ---
-# How to: use LINQ to query strings
+# How to: Use LINQ to query strings
 
 Strings are stored as a sequence of characters. As a sequence of characters, they can be queried using LINQ. In this article, there are several example queries that query strings for different characters or words, filter strings, or mix queries with regular expressions.
 

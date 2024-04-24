@@ -1,14 +1,14 @@
 ---
-title: "How to Build LINQ Queries based on runtime state"
-description: Learn to query dynamically depending on runtime state, by varying either LINQ method calls or the expression trees passed into those methods.
+title: "How to Build LINQ Queries based on run-time state"
+description: Learn to query dynamically depending on run-time state, by varying either LINQ method calls or the expression trees passed into those methods.
 ms.topic: how-to
 ms.date: 04/22/2024
 ---
-# Querying based on runtime state
+# Query based on run-time state
 
-In most LINQ queries, the general shape of the query is set in code. You might be filtering items using a `where` clause, sorting the output collection using `orderby`, grouping items, or performing some computation. Your code might provide parameters for the filter, or the sort key, or other expressions that are part of the query. However, the overall shape of the query can't change. In this article, you learn techniques to use <xref:System.Linq.IQueryable%601?displayProperty=fullName> interface and types that implement it to modify the shape of a query at runtime.
+In most LINQ queries, the general shape of the query is set in code. You might filter items using a `where` clause, sort the output collection using `orderby`, group items, or perform some computation. Your code might provide parameters for the filter, or the sort key, or other expressions that are part of the query. However, the overall shape of the query can't change. In this article, you learn techniques to use <xref:System.Linq.IQueryable%601?displayProperty=fullName> interface and types that implement it to modify the shape of a query at run time.
 
-You use these techniques to build queries at runtime, where some user input or runtime state changes the query methods you want to use as part of the query. You want to edit the query by adding, removing, or modifying query clauses.
+You use these techniques to build queries at run time, where some user input or run-time state changes the query methods you want to use as part of the query. You want to edit the query by adding, removing, or modifying query clauses.
 
 > [!NOTE]
 > Make sure you add `using System.Linq.Expressions;` and `using static System.Linq.Expressions.Expression;` at the top of your *.cs* file.
@@ -19,14 +19,14 @@ Consider code that defines an <xref:System.Linq.IQueryable> or an <xref:System.L
 
 Every time you run the preceding code, the same exact query is executed. Let's learn how to modify the query extend it or modify it. Fundamentally, an <xref:System.Linq.IQueryable> has two components:
 
-- <xref:System.Linq.IQueryable.Expression>&mdash;a language- and datasource-agnostic representation of the current query's components, in the form of an expression tree.
+- <xref:System.Linq.IQueryable.Expression>&mdash;a language-agnostic and datasource-agnostic representation of the current query's components, in the form of an expression tree.
 - <xref:System.Linq.IQueryable.Provider>&mdash;an instance of a LINQ provider, which knows how to materialize the current query into a value or set of values.
 
 In the context of dynamic querying, the provider usually remains the same; the expression tree of the query differs from query to query.
 
-Expression trees are immutable; if you want a different expression tree&mdash;and thus a different query&mdash;you need to translate the existing expression tree to a new one. The following sections describe specific techniques for querying differently in response to runtime state:
+Expression trees are immutable; if you want a different expression tree&mdash;and thus a different query&mdash;you need to translate the existing expression tree to a new one. The following sections describe specific techniques for querying differently in response to run-time state:
 
-- Use runtime state from within the expression tree
+- Use run-time state from within the expression tree
 - Call more LINQ methods
 - Vary the expression tree passed into the LINQ methods
 - Construct an <xref:System.Linq.Expressions.Expression%601> expression tree using the factory methods at <xref:System.Linq.Expressions.Expression>
@@ -35,9 +35,9 @@ Expression trees are immutable; if you want a different expression tree&mdash;an
 
 Each of techniques enables more capabilities, but at a cost of increased complexity.
 
-## Use runtime state from within the expression tree
+## Use run-time state from within the expression tree
 
-The simplest way to query dynamically is to reference the runtime state directly in the query via a closed-over variable, such as `length` in the following code example:
+The simplest way to query dynamically is to reference the run-time state directly in the query via a closed-over variable, such as `length` in the following code example:
 
 :::code language="csharp" source="./snippets/HowToBuildDynamicQueries/Program.cs" id="Runtime_state_from_within_expression_tree":::
 
@@ -50,13 +50,13 @@ Generally, the [built-in LINQ methods](https://github.com/dotnet/runtime/blob/ma
 - Wrap the current expression tree in a <xref:System.Linq.Expressions.MethodCallExpression> representing the method call.
 - Pass the wrapped expression tree back to the provider, either to return a value via the provider's <xref:System.Linq.IQueryProvider.Execute%2A?displayProperty=nameWithType> method; or to return a translated query object via the <xref:System.Linq.IQueryProvider.CreateQuery%2A?displayProperty=nameWithType> method.
 
-You can replace the original query with the result of an <xref:System.Linq.IQueryable%601?displayProperty=nameWithType>-returning method, to get a new query. You can use runtime state, as in the following example:
+You can replace the original query with the result of an <xref:System.Linq.IQueryable%601?displayProperty=nameWithType>-returning method, to get a new query. You can use run-time state, as in the following example:
 
 :::code language="csharp" source="./snippets/HowToBuildDynamicQueries/Program.cs" id="Added_method_calls":::
 
 ## Vary the expression tree passed into the LINQ methods
 
-You can pass in different expressions to the LINQ methods, depending on runtime state:
+You can pass in different expressions to the LINQ methods, depending on run-time state:
 
 :::code language="csharp" source="./snippets/HowToBuildDynamicQueries/Program.cs" id="Varying_expressions":::
 
@@ -92,7 +92,7 @@ The basic steps in constructing an <xref:System.Linq.Expressions.Expression%601>
 
 The following sections describe a scenario in which you might want to construct an <xref:System.Linq.Expressions.Expression%601> to pass into a LINQ method. It provides a complete example of how to do so using the factory methods.
 
-## Construct a full query at runtime
+## Construct a full query at run time
 
 You want to write queries that work with multiple entity types:
 

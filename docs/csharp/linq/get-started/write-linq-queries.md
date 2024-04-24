@@ -96,7 +96,7 @@ In some cases, you don't know until run time how many predicates you have to app
 
 :::code language="csharp" source="./snippets/SnippetApp/RuntimeFiltering.cs" id="runtime_filtering_1":::
 
-You can use control flow statements, such as `if... else` or `switch`, to select among predetermined alternative queries. In the following example, `studentQuery` uses a different `where` clause if the runtime value of `oddYear` is `true` or `false`.
+You can use control flow statements, such as `if... else` or `switch`, to select among predetermined alternative queries. In the following example, `studentQuery` uses a different `where` clause if the run-time value of `oddYear` is `true` or `false`.
 
 :::code language="csharp" source="./snippets/SnippetApp/RuntimeFiltering.cs" id="runtime_filtering_2":::
 
@@ -132,11 +132,11 @@ The following example shows how to move exception handling code outside a query 
 
 :::code language="csharp" source="./snippets/SnippetApp/Exceptions.cs" id="exceptions_1":::
 
-In the `catch (InvalidOperationException)` in the preceding example, handle (or don't handle) the exception in the way that is appropriate for your application.
+In the `catch (InvalidOperationException)` block in the preceding example, handle (or don't handle) the exception in the way that is appropriate for your application.
 
 In some cases, the best response to an exception that is thrown from within a query might be to stop the query execution immediately. The following example shows how to handle exceptions that might be thrown from inside a query body. Assume that `SomeMethodThatMightThrow` can potentially cause an exception that requires the query execution to stop.
 
-The `try` block encloses the `foreach` loop, and not the query itself. The `foreach` loop is the point at which the query is executed. The runtime exception is thrown when the query is executed. Therefore they must be handled in the `foreach` loop.
+The `try` block encloses the `foreach` loop, and not the query itself. The `foreach` loop is the point at which the query is executed. Run-time exceptions are thrown when the query is executed. Therefore they must be handled in the `foreach` loop.
 
 :::code language="csharp" source="./snippets/SnippetApp/Exceptions.cs" id="exceptions_2":::
 

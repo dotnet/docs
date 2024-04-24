@@ -68,7 +68,7 @@ The LINQ to Objects implementations of the standard query operator methods execu
 
 ### Immediate
 
-Immediate execution means that the data source is read and the operation is performed once. All the standard query operators that return a scalar result execute immediately. Examples of such queries are `Count`, `Max`, `Average`, and `First`. These methods execute without an explicit `foreach` statement because the query itself must use `foreach` in order to return a result. These queries return a single value, not an `IEnumerable` collection. You can force a query to execute immediately using the <xref:System.Linq.Enumerable.ToList%2A?displayProperty=nameWithType> or <xref:System.Linq.Enumerable.ToArray%2A?displayProperty=nameWithType> methods. Immediate execution provides reuse of query results, not query declaration. The results are retrieved once, then stored for future use. The following query returns a count of the even numbers in the source array:
+Immediate execution means that the data source is read and the operation is performed once. All the standard query operators that return a scalar result execute immediately. Examples of such queries are `Count`, `Max`, `Average`, and `First`. These methods execute without an explicit `foreach` statement because the query itself must use `foreach` in order to return a result. These queries return a single value, not an `IEnumerable` collection. You can force *any* query to execute immediately using the <xref:System.Linq.Enumerable.ToList%2A?displayProperty=nameWithType> or <xref:System.Linq.Enumerable.ToArray%2A?displayProperty=nameWithType> methods. Immediate execution provides reuse of query results, not query declaration. The results are retrieved once, then stored for future use. The following query returns a count of the even numbers in the source array:
 
 :::code language="csharp" source="./snippets/SnippetApp/Program.cs" id="EagerEvaluation":::
 
@@ -86,7 +86,7 @@ Deferred execution means that the operation isn't performed at the point in the 
 
 The `foreach` statement is also where the query results are retrieved. For example, in the previous query, the iteration variable `num` holds each value (one at a time) in the returned sequence.
 
-Because the query variable itself never holds the query results, you can execute it repeatedly to retrieve updated data. For example, you might have a database continually by a separate application. In your application, you could create one query that retrieves the latest data, and you could execute it at intervals to retrieve updated results.
+Because the query variable itself never holds the query results, you can execute it repeatedly to retrieve updated data. For example, a separate application might update a database continually. In *your* application, you could create one query that retrieves the latest data, and you could execute it at intervals to retrieve updated results.
 
 Query operators that use deferred execution can be additionally classified as streaming or nonstreaming.
 
@@ -105,7 +105,7 @@ The following table classifies each standard query operator method according to 
 > [!NOTE]
 > If an operator is marked in two columns, two input sequences are involved in the operation, and each sequence is evaluated differently. In these cases, it is always the first sequence in the parameter list that is evaluated in a deferred, streaming manner.
 
-| Standard query operator                             | Return type | Immediate execution | Deferred streaming execution | Deferred Nonstreaming execution |
+| Standard query operator                             | Return type | Immediate execution | Deferred streaming execution | Deferred nonstreaming execution |
 |-----------------------------------------------------|-------------|---------------------|------------------------------|----------------------------------|
 | <xref:System.Linq.Enumerable.Aggregate%2A>          | `TSource`                                         | X |   |   |
 | <xref:System.Linq.Enumerable.All%2A>                | <xref:System.Boolean>                             | X |   |   |
@@ -160,7 +160,7 @@ The following table classifies each standard query operator method according to 
 
 ## LINQ to objects
 
-"LINQ to Objects" refers to the use of LINQ queries with any <xref:System.Collections.IEnumerable> or <xref:System.Collections.Generic.IEnumerable%601> collection directly. You can use LINQ to query any enumerable collections such as <xref:System.Collections.Generic.List%601>, <xref:System.Array>, or <xref:System.Collections.Generic.Dictionary%602>. The collection can be user-defined or a type returned by a .NET API. In the LINQ approach, you write declarative code that describes what you want to retrieve. LINQ to Objects provides a great introduction to programming with LINQ.
+"LINQ to Objects" refers to the use of LINQ queries with any <xref:System.Collections.IEnumerable> or <xref:System.Collections.Generic.IEnumerable%601> collection directly. You can use LINQ to query any enumerable collections, such as <xref:System.Collections.Generic.List%601>, <xref:System.Array>, or <xref:System.Collections.Generic.Dictionary%602>. The collection can be user-defined or a type returned by a .NET API. In the LINQ approach, you write declarative code that describes what you want to retrieve. LINQ to Objects provides a great introduction to programming with LINQ.
 
 LINQ queries offer three main advantages over traditional `foreach` loops:
 

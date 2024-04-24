@@ -6,7 +6,7 @@ ms.date: 04/22/2024
 ---
 # How to extend LINQ
 
-All LINQ based methods follow one of two similar patterns. They take an enumerable sequence. They return either a different sequence, or a single value. The consistency of the shape enables you to extend LINQ by writing methods with a similar shape. In fact, the runtime team has added new methods in many .NET releases since LINQ was first introduced. In this article, you see examples of extending LINQ by writing your own methods that follow the same pattern.
+All LINQ based methods follow one of two similar patterns. They take an enumerable sequence. They return either a different sequence, or a single value. The consistency of the shape enables you to extend LINQ by writing methods with a similar shape. In fact, the .NET libraries have gained new methods in many .NET releases since LINQ was first introduced. In this article, you see examples of extending LINQ by writing your own methods that follow the same pattern.
 
 ## Add custom methods for LINQ queries
 
@@ -89,14 +89,14 @@ The solution is implemented as a thread-safe extension method that returns its r
 
 ### `ChunkExtensions` class
 
-In the presented code, of `ChunkExtensions` class implementation, the `while(true)`, loop in the `ChunkBy` method, iterates through source sequence and create a copy of each Chunk. On each pass, the iterator advances to the first element of the next "Chunk", represented by [`Chunk`](#chunk-class) class, in the source sequence. This loop corresponds to the outer foreach loop that executes the query. In that loop, the code does the following actions:
+In the presented code of the `ChunkExtensions` class implementation, the `while(true)` loop in the `ChunkBy` method iterates through source sequence and creates a copy of each Chunk. On each pass, the iterator advances to the first element of the next "Chunk", represented by a [`Chunk`](#chunk-class) object, in the source sequence. This loop corresponds to the outer foreach loop that executes the query. In that loop, the code does the following actions:
 
 1. Get the key for the current Chunk and assign it to `key` variable. The source iterator consumes the source sequence until it finds an element with a key that doesn't match.
 1. Make a new Chunk (group) object, and store it in `current` variable. It has one GroupItem, a copy of the current source element.
 1. Return that Chunk. A Chunk is an `IGrouping<TKey,TSource>`, which is the return value of the [`ChunkBy`](#chunk-class) method. The Chunk only has the first element in its source sequence. The remaining elements are returned only when the client code foreach's over this chunk. See `Chunk.GetEnumerator` for more info.
-1. Check to see if
-   1. the chunk has a copy of all its source elements or
-   1. the iterator reached the end of the source sequence.
+1. Check to see if:
+   - The chunk has a copy of all its source elements, or
+   - The iterator reached the end of the source sequence.
 1. When the caller has enumerated all the chunk items, the `Chunk.GetEnumerator` method has copied all chunk items. If the `Chunk.GetEnumerator` loop didn't enumerate all elements in the chunk, do it now to avoid corrupting the iterator for clients that might be calling it on a separate thread.
 
 ### `Chunk` class
@@ -109,6 +109,6 @@ Each `ChunkItem` (represented by `ChunkItem` class) has a reference to the next 
 
 The `CopyNextChunkElement` method of the `Chunk` class adds one `ChunkItem` to the current group of items. It tries to advance the iterator on the source sequence. If the `MoveNext()` method returns `false` the iteration is at the end, and `isLastSourceElement` is set to `true`.
 
-The `CopyAllChunkElements` method is called after the end of the last chunk was reached. It checks whether there are more elements in the source sequence. If there are, it returns `true` if enumerator for this chunk was exhausted. In this method, when private `DoneCopyingChunk` field is checked for `true`, if isLastSourceElement is `false`, it signals to the outer iterator to continue iterating.
+The `CopyAllChunkElements` method is called after the end of the last chunk was reached. It checks whether there are more elements in the source sequence. If there are, it returns `true` if the enumerator for this chunk was exhausted. In this method, when the private `DoneCopyingChunk` field is checked for `true`, if isLastSourceElement is `false`, it signals to the outer iterator to continue iterating.
 
-The inner foreach loop invokes the `GetEnumerator` method of the `Chunk` class. This method stays one element ahead of the client requests. It adds the next element of the chunk only after the clients requests the previous last element in the list.
+The inner foreach loop invokes the `GetEnumerator` method of the `Chunk` class. This method stays one element ahead of the client requests. It adds the next element of the chunk only after the client requests the previous last element in the list.

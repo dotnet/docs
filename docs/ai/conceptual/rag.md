@@ -13,7 +13,7 @@ ms.date: 04/15/2024
 
 This article describes how retrieval-augmented generation lets LLMs treat your data sources as knowledge without having to train.
 
-LLMs have extensive knowledge bases. For most use cases, you can select an LLM with the knowledge you need. But, LLMs don't know about your data unless you've customized them through training. Retrieval-augmented generation lets you make your data available to LLMs without training them on it first.
+LLMs have extensive knowledge bases through training. For most scenarios, you can select an LLM that is designed for your requirements, but those LLMs still require additional training to understand your specific data. Retrieval-augmented generation lets you make your data available to LLMs without training them on it first.
 
 ## How RAG works
 

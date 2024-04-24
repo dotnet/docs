@@ -8,7 +8,7 @@ ms.custom: mvc, title-hack-0516
 ---
 # Tutorial: Categorize support issues using multiclass classification with ML.NET
 
-This sample tutorial illustrates using ML.NET to create a GitHub issue classifier to train a model that classifies and predicts the Area label for a GitHub issue via a .NET Core console application using C# in Visual Studio.
+This sample tutorial illustrates using ML.NET to create a GitHub issue classifier to train a model that classifies and predicts the Area label for a GitHub issue via a .NET console application using C# in Visual Studio.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
@@ -226,7 +226,7 @@ Use the [Predict()](xref:Microsoft.ML.PredictionEngine%602.Predict%2A) function 
 
 ### Use the model: prediction results
 
-Display `GitHubIssue` and corresponding `Area` label prediction in order to share the results and act on them accordingly.  Create a display for the results using the following <xref:System.Console.WriteLine?displayProperty=nameWithType> code:
+Display `GitHubIssue` and corresponding `Area` label prediction in order to share the results and act on them accordingly. Create a display for the results using the following <xref:System.Console.WriteLine?displayProperty=nameWithType> code:
 
 [!code-csharp[OutputPrediction](./snippets/github-issue-classification/csharp/Program.cs#OutputPrediction)]
 
@@ -270,7 +270,7 @@ Notice the use of the [Transform()](xref:Microsoft.ML.ITransformer.Transform%2A)
 
 The following metrics are evaluated for multiclass classification:
 
-* Micro Accuracy - Every sample-class pair contributes equally to the accuracy metric.  You want Micro Accuracy to be as close to one as possible.
+* Micro Accuracy - Every sample-class pair contributes equally to the accuracy metric. You want Micro Accuracy to be as close to one as possible.
 
 * Macro Accuracy - Every class contributes equally to the accuracy metric. Minority classes are given equal weight as the larger classes. You want Macro Accuracy to be as close to one as possible.
 

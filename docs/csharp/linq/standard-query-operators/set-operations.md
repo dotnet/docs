@@ -90,5 +90,4 @@ In the preceding C# code:
 ## See also
 
 - <xref:System.Linq>
-- [How to combine and compare string collections (LINQ) (C#)](../../programming-guide/concepts/linq/how-to-combine-and-compare-string-collections-linq.md)
-- [How to find the set difference between two lists (LINQ) (C#)](../../programming-guide/concepts/linq/how-to-find-the-set-difference-between-two-lists-linq.md)
+- [How to find the set difference between two lists (LINQ) (C#)](../how-to-query-collections.md)

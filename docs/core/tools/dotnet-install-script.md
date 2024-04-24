@@ -107,8 +107,8 @@ The install scripts do not update the registry on Windows. They just download th
 
   - `STS`: The most recent Standard Term Support release.
   - `LTS`: The most recent Long Term Support release.
-  - Two-part version in A.B format, representing a specific release (for example, `3.1` or `6.0`).
-  - Three-part version in A.B.Cxx format, representing a specific SDK release (for example, 6.0.1xx or 6.0.2xx). Available since the 5.0 release.
+  - Two-part version in A.B format, representing a specific release (for example, `3.1` or `8.0`).
+  - Three-part version in A.B.Cxx format, representing a specific SDK release (for example, 8.0.1xx or 8.0.2xx). Available since the 5.0 release.
 
   The `version` parameter overrides the `channel` parameter when any version other than `latest` is used.
 
@@ -165,7 +165,7 @@ The install scripts do not update the registry on Windows. They just download th
   * `validated`: Builds that have had some internal testing done on them but are not yet released as preview or GA. This quality level is not intended for public use.
   * `preview`: The monthly public releases of the next version of .NET, intended for public use. Not recommended for production use. Intended to allow users to experiment and test the new major version before release.
   * `GA`: The final stable releases of the .NET SDK and Runtime. Intended for public use as well as production support.
-  
+
   The `--quality` option works only in combination with `--channel`, but is not applicable for the `STS` and `LTS` channels and will be ignored if one of those channels is used.
 
   For an SDK installation, use a `channel` value that is in `A.B` or `A.B.Cxx` format.

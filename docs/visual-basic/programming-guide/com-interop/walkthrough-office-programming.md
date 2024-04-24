@@ -1,6 +1,6 @@
 ---
 title: "Walkthrough: Office Programming - Visual Basic"
-description: Learn about the features Visual Studio offers in Visual Basic that improve Microsoft Office programming. 
+description: Learn about the features Visual Studio offers in Visual Basic that improve Microsoft Office programming.
 ms.date: 02/15/2023
 ms.topic: tutorial
 dev_langs:
@@ -112,7 +112,7 @@ You must have Microsoft Office Excel and Microsoft Office Word installed on your
 
 2. Select the **Start**. Locate **Microsoft Visual Studio \<version>** and open a developer command prompt.
 
-3. Type `ildasm` in the Developer Command Prompt for Visual Studio window, and then press ENTER. The IL DASM window appears.
+3. Type `ildasm` in the Developer Command Prompt for Visual Studio window, and then press <kbd>Enter</kbd>. The IL DASM window appears.
 
 4. On the **File** menu in the IL DASM window, select **File** > **Open**. Double-click **Visual Studio \<version>**, and then double-click **Projects**. Open the folder for your project, and look in the bin/Debug folder for *your project name*.dll. Double-click *your project name*.dll. A new window displays your project's attributes, in addition to references to other modules and assemblies. Note that namespaces `Microsoft.Office.Interop.Excel` and `Microsoft.Office.Interop.Word` are included in the assembly. By default in Visual Studio, the compiler imports the types you need from a referenced PIA into your assembly.
 

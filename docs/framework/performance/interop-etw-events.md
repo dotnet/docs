@@ -1,6 +1,6 @@
 ---
 title: "Interop ETW Events"
-description: Review interop ETW (event tracing for Windows) events, which capture information about Microsoft intermediate language (MSIL) stub generation & caching in .NET.
+description: Review interop ETW (event tracing for Windows) events, which capture information about common intermediate language (CIL) stub generation & caching in .NET.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "interop events [.NET Framework]"
@@ -8,7 +8,7 @@ helpviewer_keywords:
 ---
 # Interop ETW Events
 
-Interop events capture information about Microsoft intermediate language (MSIL) stub generation and caching.
+Interop events capture information about common intermediate language (CIL) stub generation and caching.
 
 ## ILStubGenerated Event
 
@@ -22,7 +22,7 @@ The following table shows the keyword and level. (For more information, see [CLR
 
 |Event|Event ID|Raised when|
 |-----------|--------------|-----------------|
-|`ILStubGenerated`|88|The MSIL stub has been generated.|
+|`ILStubGenerated`|88|The CIL stub has been generated.|
 
  The following table shows the event data.
 
@@ -37,7 +37,7 @@ The following table shows the keyword and level. (For more information, see [CLR
 |ManagedInteropMethodSignature|win:UnicodeString|The signature of the managed interop method.|
 |NativeMethodSignature|win:UnicodeString|The native method signature.|
 |StubMethodSignature|win:UnicodeString|The stub method signature.|
-|StubMethodILCode|win:UnicodeString|The MSIL code for the stub method.|
+|StubMethodILCode|win:UnicodeString|The CIL code for the stub method.|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
 
 ## ILStubCacheHit Event
@@ -52,7 +52,7 @@ The following table shows the keyword and level.
 
 |Event|Event ID|Raised when|
 |-----------|--------------|-----------------|
-|`ILStubCacheHit`|89|The MSIL cache has been accessed.|
+|`ILStubCacheHit`|89|The CIL cache has been accessed.|
 
  The following table shows the event data.
 

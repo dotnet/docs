@@ -26,7 +26,7 @@ This sample is a **C# HTTP Trigger Azure Functions application** that uses a pre
 
 ## Create Azure Functions project
 
-1. In Visual Studio 2022 open the **Create a new project** dialog.  
+1. In Visual Studio 2022 open the **Create a new project** dialog.
 1. In the "Create a new project" dialog, select the **Azure Functions** project template.
 1. In the **Name** text box, type "SentimentAnalysisFunctionsApp" and select the **Next** button.
 1. In the "Additional information dialog", leave all the defaults as is and select the **Create** button.
@@ -53,7 +53,7 @@ This sample is a **C# HTTP Trigger Azure Functions application** that uses a pre
 
 Create a class to predict sentiment. Add a new class to your project:
 
-1. In **Solution Explorer**, right-click the project, and then select **Add** > **New Azure Function...**.
+1. In **Solution Explorer**, right-click the project, and then select **Add** > **New Azure Function**.
 
 1. In the **Add New Item** dialog box, select **Azure Function** and change the **Name** field to *AnalyzeSentiment.cs*. Then, select the **Add** button.
 

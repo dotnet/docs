@@ -26,14 +26,14 @@ There are two types of supported releases: Long Term Support (LTS) releases and 
 The following table lists the support status of each version of .NET (and .NET Core):
 
 | ✔️ Supported | ❌ Unsupported |
-|-------------|---------------|
-| 8 (LTS)     | 5             |
-| 7 (STS)     | 3.1           |
-| 6 (LTS)     | 3.0           |
-|             | 2.1           |
-|             | 2.0           |
-|             | 1.1           |
-|             | 1.0           |
+|--------------|-----------------|
+| 8 (LTS)      | 5               |
+| 7 (STS)      | 3.1             |
+| 6 (LTS)      | 3.0             |
+|              | 2.1             |
+|              | 2.0             |
+|              | 1.1             |
+|              | 1.0             |
 
 ## Install with Windows Package Manager (winget)
 

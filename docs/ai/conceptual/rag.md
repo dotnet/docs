@@ -1,5 +1,5 @@
 ---
-title: "Integrate Your Data into AI Apps with Retrival-Augmented Generation"
+title: "Integrate Your Data into AI Apps with Retrieval-Augmented Generation"
 description: "Learn how retreival-augmented generation lets you use your data with LLMs to generate better completions in .NET."
 author: catbutler
 ms.topic: concept-article #Don't change.

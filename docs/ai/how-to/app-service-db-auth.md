@@ -1,13 +1,12 @@
 ---
-title: "[verb] * [noun]"
-description: "[Article description]."
-author: [your GitHub alias]
-ms.author: [your Microsoft alias or a team alias]
-ms.service: [the approved service name]
-ms.topic: how-to #Don't change
-ms.date: [mm/dd/yyyy]
+title: "Authenticate and Authorize App Service to a Vector Database"
+description: "Learn how to authenticate and authorize your App Service .NET application to a vector database solution using Microsoft Entra managed identities, Key Vault, or app settings"
+author: haywoodsloan
+ms.topic: how-to
+ms.date: 04/24/2024
+zone_pivot_groups: azure-development-tool-set-two
 
-#customer intent: As a <role>, I want <what> so that <why>.
+#customer intent: As a .NET developer, I want authenticate and authorize my App Service to a vector database so that I can securely add memories to the AI in my .NET application.
 
 ---
 
@@ -27,7 +26,7 @@ https://aka.ms/patterns-feedback
 
 -->
 
-# "[verb] * [noun]"
+# Authenticate and authorize App Service to a vector database
 
 <!-- Required: Article headline - H1
 
@@ -36,7 +35,9 @@ article describes.
 
 -->
 
-[Introduce and explain the purpose of the article.]
+This article demonstrates how to manage the connection between your App Service .NET application and a vector database solution. It will cover using Microsoft Entra managed identities for supported services and securely storing connection strings for others.
+
+By adding a vector database to your application, you can enable [semantic memories](/semantic-kernel/memories/) for your AI. The [Semantic Kernel SDK](/semantic-kernel/overview) for .NET enables you to easily implement memory storage and recall using your preferred vector database solution.
 
 <!-- Required: Introductory paragraphs (no heading)
 
@@ -47,6 +48,11 @@ and to describe the task the article covers.
 -->
 
 ## Prerequisites
+
+* An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
+* [.NET SDK](https://dotnet.microsoft.com/download/visual-studio-sdks)
+* [Create and deploy a .NET application to App Service](/azure/app-service/quickstart-dotnetcore)
+* [Create and deploy a vector database solution](/semantic-kernel/memories/vector-db)
 
 <!-- Optional: Prerequisites - H2
 
@@ -60,9 +66,9 @@ provide instructions and a link.
 
 -->
 
-## "[verb] * [noun]"
+## Implement Microsoft Entra managed identity authentication
 
-[Introduce the procedure.]
+If a service supports Microsoft Entra authentication, you can use a managed identity with your App Service to securely access your vector database without having to manually provision or rotate any secrets. For a list of Azure services that support Microsoft Entra authentication, see [Azure services that support Microsoft Entra authentication](/entra/identity/managed-identities-azure-resources/services-id-authentication-support)
 
 1. Procedure step
 1. Procedure step
@@ -82,16 +88,13 @@ procedures.
 
 -->
 
-## Next step -or- Related content
+## Related content
 
-> [!div class="nextstepaction"]
-> [Next sequential article title](link.md)
+<!-- Update links once the other docs are done -->
 
--or-
-
-* [Related article title](link.md)
-* [Related article title](link.md)
-* [Related article title](link.md)
+* [Authenticate and authorize App Service to Azure OpenAI using Microsoft Entra and the Semantic Kernel SDK]<!-- (app-service-aoai-auth.md) -->
+* [How to use managed identities for App Service and Azure Functions](/azure/app-service/overview-managed-identity)
+* [Steps to assign an Azure role](/azure/role-based-access-control/role-assignments-steps)
 
 <!-- Optional: Next step or Related content - H2
 

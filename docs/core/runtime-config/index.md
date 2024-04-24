@@ -9,7 +9,7 @@ ms.date: 07/23/2021
 .NET 5+ (including .NET Core versions) supports the use of configuration files and environment variables to configure the behavior of .NET applications.
 
 > [!NOTE]
-> The articles in this section concern configuration of the .NET Runtime itself. If you're migrating to .NET Core 3.1 or later and are looking for a replacement for the *app.config* file, or if you simply want a way to use custom configuration values in your .NET app, see the <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder?displayProperty=fullName> class and [Configuration in .NET](../extensions/configuration.md).
+> The articles in this section concern configuration of the .NET Runtime itself. If you're migrating an app from .NET Framework to .NET and are looking for a replacement for the *app.config* file, or if you simply want a way to use custom configuration values in your .NET app, see the <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder?displayProperty=fullName> class and [Configuration in .NET](../extensions/configuration.md).
 
 Using these settings is an attractive option if:
 
@@ -54,10 +54,10 @@ If you're placing the options in the output JSON file, nest them under the `runt
 ```json
 {
   "runtimeOptions": {
-    "tfm": "netcoreapp3.1",
+    "tfm": "net8.0",
     "framework": {
       "name": "Microsoft.NETCore.App",
-      "version": "3.1.0"
+      "version": "8.0.0"
     },
     "configProperties": {
       "System.Globalization.UseNls": true,
@@ -99,7 +99,7 @@ Here is an example SDK-style project file with MSBuild properties for configurin
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
 
   <PropertyGroup>

@@ -17,14 +17,10 @@ This page is a reference for the MSBuild properties and items that you use to co
 
 ## Enable .NET Desktop SDK
 
-To use WinForms or WPF, configure your project file.
-
-### .NET 5 and later versions
-
-Specify the following settings in the project file of your WinForms or WPF project:
+To use WinForms or WPF, specify the following settings in the project file of your WinForms or WPF project:
 
 - Target the .NET SDK `Microsoft.NET.Sdk`. For more information, see [Project files](overview.md#project-files).
-- Set [`TargetFramework`](msbuild-props.md#targetframework) to a Windows-specific target framework moniker, such as `net6.0-windows`.
+- Set [`TargetFramework`](msbuild-props.md#targetframework) to a Windows-specific target framework moniker, such as `net8.0-windows`.
 - Add a UI framework property (or both, if necessary):
   - Set [`UseWPF`](#usewpf) to `true` to import and use WPF.
   - Set [`UseWindowsForms`](#usewindowsforms) to `true` to import and use WinForms.
@@ -36,32 +32,6 @@ Specify the following settings in the project file of your WinForms or WPF proje
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0-windows</TargetFramework>
-
-    <UseWPF>true</UseWPF>
-    <!-- and/or -->
-    <UseWindowsForms>true</UseWindowsForms>
-  </PropertyGroup>
-
-</Project>
-```
-
-### .NET Core 3.1
-
-Specify the following settings in the project file of your WinForms or WPF project:
-
-- Target the .NET SDK `Microsoft.NET.Sdk.WindowsDesktop`. For more information, see [Project files](overview.md#project-files).
-- Set [`TargetFramework`](msbuild-props.md#targetframework) to `netcoreapp3.1`.
-- Add a UI framework property (or both, if necessary):
-  - Set [`UseWPF`](#usewpf) to `true` to import and use WPF.
-  - Set [`UseWindowsForms`](#usewindowsforms) to `true` to import and use WinForms.
-- (Optional) Set `OutputType` to `WinExe`. This produces an app as opposed to a library. To produce a library, omit this property.
-
-```xml
-<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
-
-  <PropertyGroup>
-    <OutputType>WinExe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
 
     <UseWPF>true</UseWPF>
     <!-- and/or -->
@@ -123,8 +93,6 @@ The `UseWPF` property controls whether or not to include references to WPF libra
 ```
 
 When this property is set to `true`, .NET 5+ projects will automatically import the [.NET Desktop SDK](#enable-net-desktop-sdk).
-
-.NET Core 3.1 projects need to explicitly target the [.NET Desktop SDK](#enable-net-desktop-sdk) to use this property.
 
 ### EnableDefaultApplicationDefinition
 
@@ -235,8 +203,6 @@ The `UseWindowsForms` property controls whether or not your application is built
 ```
 
 When this property is set to `true`, .NET 5+ projects will automatically import the [.NET Desktop SDK](#enable-net-desktop-sdk).
-
-.NET Core 3.1 projects need to explicitly target the [.NET Desktop SDK](#enable-net-desktop-sdk) to use this property.
 
 ## Shared settings
 

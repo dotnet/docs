@@ -361,7 +361,6 @@ Currently, Swashbuckle consists of five internal NuGet packages under the high-l
 After you have installed these NuGet packages in your Web API project, you need to configure Swagger in the _Program.cs_ class, as in the following **simplified** code:
 
 ```csharp
-
 // Add framework services.
 
 builder.Services.AddSwaggerGen(options =>
@@ -377,12 +376,16 @@ builder.Services.AddSwaggerGen(options =>
 
 // Other startup code...
 
-app.UseSwagger()
-    .UseSwaggerUI(c =>
+app.UseSwagger();
+
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwaggerUI(c =>
     {
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
     });
-    ```
+}
+```
 
 Once this is done, you can start your application and browse the following Swagger JSON and UI endpoints using URLs like these:
 

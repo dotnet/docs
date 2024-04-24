@@ -265,7 +265,7 @@ In .NET APIs, a grapheme cluster is called a *text element*. The following metho
 
 :::code language="csharp" source="snippets/character-encoding-introduction/csharp/CountTextElements.cs" id="SnippetCallCountMethod":::
 
-If you run this code in .NET Framework or .NET Core 3.1 or earlier, the text element count for the emoji shows `4`. That is due to a bug in the `StringInfo` class that is fixed in .NET 5.
+If you run this code in .NET Framework or .NET Core 3.1 or earlier, the text element count for the emoji shows `4`. That is due to a bug in the `StringInfo` class that was fixed in .NET 5.
 
 ### Example: splitting string instances
 

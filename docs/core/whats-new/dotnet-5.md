@@ -10,10 +10,10 @@ author: IEvangelist
 
 # What's new in .NET 5
 
-.NET 5 is the next major release of .NET Core following 3.1. We named this new release .NET 5 instead of .NET Core 4 for two reasons:
+.NET 5 is the next major release of .NET Core following 3.1. This release was named .NET 5 instead of .NET Core 4 for two reasons:
 
-- We skipped version numbers 4.x to avoid confusion with .NET Framework 4.x.
-- We dropped "Core" from the name to emphasize that this is the main implementation of .NET going forward. .NET 5 supports more types of apps and more platforms than .NET Core or .NET Framework.
+- Version numbers 4.x were skipped to avoid confusion with .NET Framework 4.x.
+- "Core" was dropped from the name to emphasize that this is the main implementation of .NET going forward. .NET 5 supports more types of apps and more platforms than .NET Core or .NET Framework.
 
 ASP.NET Core 5.0 is based on .NET 5 but retains the name "Core" to avoid confusing it with ASP.NET MVC 5. Likewise, Entity Framework Core 5.0 retains the name "Core" to avoid confusing it with Entity Framework 5 and 6.
 

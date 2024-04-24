@@ -65,7 +65,7 @@ Orleans provides a simple persistence model that ensures the state is available 
 
 While a grain is running, the state is kept in memory so that read requests can be served without accessing storage. When the grain updates its state, calling <xref:Orleans.Core.IStorage.WriteStateAsync%2A?displayProperty=nameWithType> ensures that the backing store is updated for durability and consistency.
 
-For more information, see the [Grain persistence](grains/grain-persistence/index.md).
+For more information, see [Grain persistence](grains/grain-persistence/index.md).
 
 ### Timers and reminders
 

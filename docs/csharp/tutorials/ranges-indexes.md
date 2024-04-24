@@ -43,7 +43,7 @@ The following code creates a subrange with the words "second", "third", and "fou
 
 :::code language="csharp" source="snippets/RangesIndexes/IndicesAndRanges.cs" id="SnippetIndicesAndRanges_Range":::
 
-The following code returns the range with "ninth" and "tenth". It includes `words[^2]` and `words[^1]`. The end index `words[^0]` isn't included. 
+The following code returns the range with "ninth" and "tenth". It includes `words[^2]` and `words[^1]`. The end index `words[^0]` isn't included.
 
 :::code language="csharp" source="snippets/RangesIndexes/IndicesAndRanges.cs" id="SnippetIndicesAndRanges_LastRange":::
 

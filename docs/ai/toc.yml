@@ -12,6 +12,8 @@ items:
   - name: Zero-shot and few-shot learning
     href: conceptual/zero-shot-learning.md
 - name: How-to articles
-  items: []
+  items:
+  - name: Auth from App Service to Azure OpenAI
+    href: how-to/app-service-entra-auth.md
 - name: Tutorials
   items: []

@@ -17,10 +17,10 @@ ms.topic: how-to
 
 This article shows how to create custom converters for the JSON serialization classes that are provided in the <xref:System.Text.Json?displayProperty=fullName> namespace. For an introduction to `System.Text.Json`, see [How to serialize and deserialize JSON in .NET](how-to.md).
 
-A *converter* is a class that converts an object or a value to and from JSON. The `System.Text.Json` namespace has built-in converters for most primitive types that map to JavaScript primitives. You can write custom converters:
+A *converter* is a class that converts an object or a value to and from JSON. The `System.Text.Json` namespace has built-in converters for most primitive types that map to JavaScript primitives. You can write custom converters to override the default behavior of a built-in converter. For example:
 
-* To override the default behavior of a built-in converter. For example, you might want `DateTime` values to be represented by mm/dd/yyyy format. By default, ISO 8601-1:2019 is supported, including the RFC 3339 profile. For more information, see [DateTime and DateTimeOffset support in System.Text.Json](../../datetime/system-text-json-support.md).
-* To support a custom value type. For example, a `PhoneNumber` struct.
+- You might want `DateTime` values to be represented by mm/dd/yyyy format. By default, ISO 8601-1:2019 is supported, including the RFC 3339 profile. For more information, see [DateTime and DateTimeOffset support in System.Text.Json](../../datetime/system-text-json-support.md).
+- You might want to serialize a POCO as JSON string, for example, with a `PhoneNumber` type.
 
 You can also write custom converters to customize or extend `System.Text.Json` with new functionality. The following scenarios are covered later in this article:
 
@@ -250,7 +250,7 @@ For scenarios that require type inference, the following code shows a custom con
 * Strings to `string`
 * Everything else to `JsonElement`
 
-:::code language="csharp" source="snippets/how-to-5-0/csharp/CustomConverterInferredTypesToObject.cs":::
+:::code language="csharp" source="snippets/how-to-contd/csharp/CustomConverterInferredTypesToObject.cs":::
 
 The example shows the converter code and a `WeatherForecast` class with `object` properties. The `Main` method deserializes a JSON string into a `WeatherForecast` instance, first without using the converter, and then using the converter. The console output shows that without the converter, the run-time type for the `Date` property is `JsonElement`; with the converter, the run-time type is `DateTime`.
 
@@ -363,7 +363,7 @@ This null-handling behavior is primarily to optimize performance by skipping an 
 
 To enable a custom converter to handle `null` for a reference or value type, override <xref:System.Text.Json.Serialization.JsonConverter%601.HandleNull%2A?displayProperty=nameWithType> to return `true`, as shown in the following example:
 
-:::code language="csharp" source="snippets/how-to-5-0/csharp/CustomConverterHandleNull.cs" highlight="17":::
+:::code language="csharp" source="snippets/how-to-contd/csharp/CustomConverterHandleNull.cs" highlight="17":::
 
 ## Preserve references
 
@@ -374,23 +374,23 @@ By default, reference data is only cached for each call to <xref:System.Text.Jso
 
 Here are the `Employee` and `Company` classes:
 
-:::code language="csharp" source="snippets/how-to-5-0/csharp/CustomConverterPreserveReferences.cs" id="EmployeeAndCompany":::
+:::code language="csharp" source="snippets/how-to-contd/csharp/CustomConverterPreserveReferences.cs" id="EmployeeAndCompany":::
 
 The converter looks like this:
 
-:::code language="csharp" source="snippets/how-to-5-0/csharp/CustomConverterPreserveReferences.cs" id="CompanyConverter":::
+:::code language="csharp" source="snippets/how-to-contd/csharp/CustomConverterPreserveReferences.cs" id="CompanyConverter":::
 
 A class that derives from <xref:System.Text.Json.Serialization.ReferenceResolver> stores the references in a dictionary:
 
-:::code language="csharp" source="snippets/how-to-5-0/csharp/CustomConverterPreserveReferences.cs" id="MyReferenceResolver":::
+:::code language="csharp" source="snippets/how-to-contd/csharp/CustomConverterPreserveReferences.cs" id="MyReferenceResolver":::
 
 A class that derives from <xref:System.Text.Json.Serialization.ReferenceHandler> holds an instance of `MyReferenceResolver` and creates a new instance only when needed (in a method named `Reset` in this example):
 
-:::code language="csharp" source="snippets/how-to-5-0/csharp/CustomConverterPreserveReferences.cs" id="MyReferenceHandler":::
+:::code language="csharp" source="snippets/how-to-contd/csharp/CustomConverterPreserveReferences.cs" id="MyReferenceHandler":::
 
 When the sample code calls the serializer, it uses a <xref:System.Text.Json.JsonSerializerOptions> instance in which the <xref:System.Text.Json.JsonSerializerOptions.ReferenceHandler> property is set to an instance of `MyReferenceHandler`. When you follow this pattern, be sure to reset the `ReferenceResolver` dictionary when you're finished serializing, to keep it from growing forever.
 
-:::code language="csharp" source="snippets/how-to-5-0/csharp/CustomConverterPreserveReferences.cs" id="CallSerializer" highlight = "4-5,12":::
+:::code language="csharp" source="snippets/how-to-contd/csharp/CustomConverterPreserveReferences.cs" id="CallSerializer" highlight = "4-5,12":::
 
 The preceding example only does serialization, but a similar approach can be adopted for deserialization.
 

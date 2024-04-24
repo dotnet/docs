@@ -23,9 +23,9 @@ There are two kinds of types in C#: reference types and value types. Variables o
 
  C# also provides the following built-in reference types:
 
-- [dynamic](../builtin-types/reference-types.md)
-- [object](../builtin-types/reference-types.md)
-- [string](../builtin-types/reference-types.md)
+- [dynamic](../builtin-types/reference-types.md#the-dynamic-type)
+- [object](../builtin-types/reference-types.md#the-object-type)
+- [string](../builtin-types/reference-types.md#the-string-type)
 
 ## See also
 

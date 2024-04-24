@@ -123,6 +123,14 @@ pet.FirstName = "Jane";
 
 Required init-only properties support immutable structures while allowing natural syntax for users of the type.
 
+## Object Initializers with class-typed properties
+
+When initializing an object, particularly when reusing the current instance, it's crucial to consider the implications for class-typed properties.
+
+[!code-csharp[ClassTypedInitializer](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/object-collection-initializers/HowToClassTypedInitializer.cs#HowToClassTypedInitializer)]  
+
+The following example shows how, for ClassB, the initialization process involves updating specific values while retaining others from the original instance. The Initializer reuses current instance: ClassB's values will be: `100003` (new value we assign here), `true` (kept from EmbeddedClassTypeA's initialization), `BBBabc` (unchanged default from EmbeddedClassTypeB)
+
 ## Collection initializers
 
 Collection initializers let you specify one or more element initializers when you initialize a collection type that implements <xref:System.Collections.IEnumerable> and has `Add` with the appropriate signature as an instance method or an extension method. The element initializers can be a simple value, an expression, or an object initializer. By using a collection initializer, you do not have to specify multiple calls; the compiler adds the calls automatically.  

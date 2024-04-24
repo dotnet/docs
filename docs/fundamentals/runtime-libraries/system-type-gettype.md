@@ -34,8 +34,8 @@ General usage notes:
 
 - Do not pass methods to `assemblyResolver` or `typeResolver` if they come from unknown or untrusted callers. Use only methods that you provide or that you are familiar with.
 
-    > [!CAUTION]
-    >  Using methods from unknown or untrusted callers could result in elevation of privilege for malicious code.
+  > [!CAUTION]
+  > Using methods from unknown or untrusted callers could result in elevation of privilege for malicious code.
 
 - If you omit the `assemblyResolver` and/or `typeResolver` parameters, the value of the `throwOnError` parameter is passed to the methods that perform the default resolution.
 
@@ -106,7 +106,7 @@ Because this assembly is neither mscorlib.dll/System.Private.CoreLib.dll nor the
 Certain characters have special meanings in assembly-qualified names. If a simple type name contains these characters, the characters cause parsing errors when the simple name is part of an assembly-qualified name. To avoid the parsing errors, you must escape the special characters with a backslash before you can pass the assembly-qualified name to the <xref:System.Type.GetType%2A> method. For example, if a type is named `Strange]Type`, the escape character must be added ahead of the square bracket as follows: `Strange\]Type`.
 
 > [!NOTE]
-> Names with such special characters cannot be created in Visual Basic or C#, but can be created by using Microsoft intermediate language (MSIL) or by emitting dynamic assemblies.
+> Names with such special characters cannot be created in Visual Basic or C#, but can be created by using common intermediate language (CIL) or by emitting dynamic assemblies.
 
 The following table shows the special characters for type names.
 

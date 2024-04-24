@@ -80,7 +80,7 @@ The best way to make sure everything works when you've ported your code is to te
   - [Getting Started](https://xunit.net/docs/getting-started/netcore/cmdline)
   - [Tool to convert an MSTest project to xUnit](https://github.com/dotnet/codeformatter/tree/main/src/XUnitConverter)
 - [NUnit](https://nunit.org/)
-  - [Getting Started](https://github.com/nunit/docs/wiki/Installation)
+  - [Getting Started](https://docs.nunit.org/articles/nunit/getting-started/installation)
   - [Blog post about migrating from MSTest to NUnit](https://www.florian-rappl.de/News/Page/275/convert-mstest-to-nunit)
 - [MSTest](/visualstudio/test/unit-test-basics)
 

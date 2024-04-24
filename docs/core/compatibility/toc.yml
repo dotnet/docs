@@ -8,8 +8,14 @@ items:
     items:
     - name: Overview
       href: 9.0.md
+    - name: ASP.NET Core
+      items:
+      - name: DefaultKeyResolution.ShouldGenerateNewKey has altered meaning
+        href: aspnet-core/9.0/key-resolution.md
     - name: Core .NET libraries
       items:
+      - name: API obsoletions with custom diagnostic IDs
+        href: core-libraries/9.0/obsolete-apis-with-custom-diagnostics.md
       - name: Creating type of array of System.Void not allowed
         href: core-libraries/9.0/type-instance.md
       - name: Inline array struct size limit is enforced
@@ -66,12 +72,14 @@ items:
         href: aspnet-core/8.0/trimmode-full.md
     - name: Containers
       items:
-      - name: "'ca-certificates' and 'krb5-libs' removed from Alpine images"
-        href: containers/8.0/krb5-libs-package.md
+      - name: "'ca-certificates' removed from Alpine images"
+        href: containers/8.0/ca-certificates-package.md
       - name: Container images upgraded to Debian 12
         href: containers/8.0/debian-version.md
       - name: Default ASP.NET Core port changed to 8080
         href: containers/8.0/aspnet-port.md
+      - name: Kerberos package removed from Alpine and Debian images
+        href: containers/8.0/krb5-libs-package.md
       - name: libintl package removed from Alpine images
         href: containers/8.0/libintl-package.md
       - name: Multi-platform container tags are Linux-only
@@ -928,6 +936,10 @@ items:
   items:
   - name: ASP.NET Core
     items:
+    - name: .NET 9
+      items:
+      - name: DefaultKeyResolution.ShouldGenerateNewKey has altered meaning
+        href: aspnet-core/9.0/key-resolution.md
     - name: .NET 8
       items:
       - name: ConcurrencyLimiterMiddleware is obsolete
@@ -1140,12 +1152,14 @@ items:
         href: https://github.com/dotnet/dotnet-docker/discussions/3699
     - name: .NET 8
       items:
-      - name: "'ca-certificates' and 'krb5-libs' removed from Alpine images"
-        href: containers/8.0/krb5-libs-package.md
+      - name: "'ca-certificates' removed from Alpine images"
+        href: containers/8.0/ca-certificates-package.md
       - name: Container images upgraded to Debian 12
         href: containers/8.0/debian-version.md
       - name: Default ASP.NET Core port changed to 8080
         href: containers/8.0/aspnet-port.md
+      - name: Kerberos package removed from Alpine and Debian images
+        href: containers/8.0/krb5-libs-package.md        
       - name: libintl package removed from Alpine images
         href: containers/8.0/libintl-package.md
       - name: Multi-platform container tags are Linux-only

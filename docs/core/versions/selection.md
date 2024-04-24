@@ -53,21 +53,21 @@ The process for selecting an SDK version is:
 
 For more information about SDK version selection, see the [Matching rules](../tools/global-json.md#matching-rules) and [rollForward](../tools/global-json.md#rollforward) sections of the [global.json overview](../tools/global-json.md) article.
 
-## Target Framework Monikers define build time APIs
+## Target framework monikers define build time APIs
 
-You build your project against APIs defined in a **Target Framework Moniker** (TFM). You specify the [target framework](../../standard/frameworks.md) in the project file. Set the `TargetFramework` element in your project file as shown in the following example:
-
-``` xml
-<TargetFramework>net5.0</TargetFramework>
-```
-
-You may build your project against multiple TFMs. Setting multiple target frameworks is more common for libraries but can be done with applications as well. You specify a `TargetFrameworks` property (plural of `TargetFramework`). The target frameworks are semicolon-delimited as shown in the following example:
+You build your project against APIs defined in a **target framework moniker** (TFM). You specify the [target framework](../../standard/frameworks.md) in the project file. Set the `TargetFramework` element in your project file as shown in the following example:
 
 ``` xml
-<TargetFrameworks>net5.0;netcoreapp3.1;net47</TargetFrameworks>
+<TargetFramework>net8.0</TargetFramework>
 ```
 
-A given SDK supports a fixed set of frameworks, capped to the target framework of the runtime it ships with. For example, the .NET 5 SDK includes the .NET 5 runtime, which is an implementation of the `net5.0` target framework. The .NET 5 SDK supports `netcoreapp2.0`, `netcoreapp2.1`, `netcoreapp3.0`, and so on, but not `net6.0` (or higher). You install the .NET 6 SDK to build for `net6.0`.
+You can build your project against multiple TFMs. Setting multiple target frameworks is more common for libraries but can be done with applications as well. You specify a `TargetFrameworks` property (plural of `TargetFramework`). The target frameworks are semicolon-delimited as shown in the following example:
+
+``` xml
+<TargetFrameworks>net8.0;net47</TargetFrameworks>
+```
+
+A given SDK supports a fixed set of frameworks, capped to the target framework of the runtime it ships with. For example, the .NET 8 SDK includes the .NET 8 runtime, which is an implementation of the `net8.0` target framework. The .NET 8 SDK supports `net7.0`, `net6.0`, and `net5.0`, but not `net9.0` (or higher). You install the .NET 9 SDK to build for `net9.0`.
 
 ### .NET Standard
 

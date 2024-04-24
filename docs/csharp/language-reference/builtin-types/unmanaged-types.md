@@ -12,6 +12,7 @@ A type is an **unmanaged type** if it's any of the following types:
 - `sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `nint`, `nuint`, `char`, `float`, `double`, `decimal`, or `bool`
 - Any [enum](enum.md) type
 - Any [pointer](../unsafe-code.md#pointer-types) type
+- A [tuple](value-tuples.md) whose members are all of an unmanaged type
 - Any user-defined [struct](struct.md) type that contains fields of unmanaged types only.
 
 You can use the [`unmanaged` constraint](../../programming-guide/generics/constraints-on-type-parameters.md#unmanaged-constraint) to specify that a type parameter is a non-pointer, non-nullable unmanaged type.

@@ -290,7 +290,7 @@ C# version 7.0 was released with Visual Studio 2017. This version has some evolu
 Other features included:
 
 - [Discards](../fundamentals/functional/discards.md)
-- Binary Literals and Digit Separators
+- [Binary Literals and Digit Separators](../language-reference/builtin-types/integral-numeric-types.md#integer-literals)
 - [Throw expressions](../language-reference/statements/exception-handling-statements.md#the-throw-expression)
 
 All of these features offer new capabilities for developers and the opportunity to write cleaner code than ever. A highlight is condensing the declaration of variables to use with the `out` keyword and by allowing multiple return values via tuple. .NET Core now targets any operating system and has its eyes firmly on the cloud and on portability. These new capabilities certainly occupy the language designers' thoughts and time, in addition to coming up with new features.

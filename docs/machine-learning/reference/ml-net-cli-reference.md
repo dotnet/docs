@@ -10,7 +10,7 @@ ms.custom: mlnet-tooling
 The `classification`, `regression`, and `recommendation` commands are the main commands provided by the ML.NET CLI tool. These commands allow you to generate good quality ML.NET models for classification, regression, and recommendation models using automated machine learning (AutoML) as well as the example C# code to run/score that model. In addition, the C# code to train the model is generated for you to research the algorithm and settings of the model.
 
 > [!NOTE]
-> This topic refers to ML.NET CLI and ML.NET AutoML, which are currently in Preview, and material may be subject to change.
+> This article refers to ML.NET CLI and ML.NET AutoML, which are currently in Preview, and material may be subject to change.
 
 ## Overview
 
@@ -125,7 +125,7 @@ mlnet regression
 
 ### Recommendation options
 
-Running `mlnet recommendation` will train a recommendation model.  Choose this command if you want an ML Model to recommend items to users based on ratings (e.g. product recommendation).
+Running `mlnet recommendation` will train a recommendation model. Choose this command if you want an ML Model to recommend items to users based on ratings (e.g. product recommendation).
 
 ```console
 mlnet recommendation

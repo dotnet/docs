@@ -25,20 +25,8 @@ items:
                 items:
                   - name: Overview
                     href: ../core/install/linux-ubuntu.md
-                  - name: "23.10"
-                    href: ../core/install/linux-ubuntu-2310.md
-                  - name: "23.04"
-                    href: ../core/install/linux-ubuntu-2304.md
-                  - name: "22.10"
-                    href: ../core/install/linux-ubuntu-2210.md
-                  - name: "22.04"
-                    href: ../core/install/linux-ubuntu-2204.md
-                  - name: "20.04"
-                    href: ../core/install/linux-ubuntu-2004.md
-                  - name: "18.04"
-                    href: ../core/install/linux-ubuntu-1804.md
-                  - name: "16.04"
-                    href: ../core/install/linux-ubuntu-1604.md
+                  - name: Install
+                    href: ../core/install/linux-ubuntu-install.md
               - name: Alpine
                 href: ../core/install/linux-alpine.md
               - name: CentOS
@@ -168,7 +156,16 @@ items:
       - name: .NET 9
         items:
           - name: What's new
-            href: ../core/whats-new/dotnet-9/overview.md
+            items:
+              - name: Overview
+                href: ../core/whats-new/dotnet-9/overview.md
+                displayName: whats new, what's new
+              - name: Runtime
+                href: ../core/whats-new/dotnet-9/runtime.md
+              - name: Libraries
+                href: ../core/whats-new/dotnet-9/libraries.md
+              - name: SDK
+                href: ../core/whats-new/dotnet-9/sdk.md
           - name: Breaking changes
             href: ../core/compatibility/9.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: .NET 8

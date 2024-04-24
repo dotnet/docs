@@ -24,8 +24,8 @@ public class ConditionalOperator
     private static void ConditionalRefExpressions()
     {
         // <SnippetConditionalRef>
-        int[] smallArray = [1, 2, 3, 4, 5];
-        int[] largeArray = [10, 20, 30, 40, 50];
+        int[] smallArray = {1, 2, 3, 4, 5};
+        int[] largeArray = {10, 20, 30, 40, 50};
 
         int index = 7;
         ref int refValue = ref ((index < 5) ? ref smallArray[index] : ref largeArray[index - 5]);

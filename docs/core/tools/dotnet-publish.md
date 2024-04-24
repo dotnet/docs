@@ -250,7 +250,7 @@ For more information, see the following resources:
 - Publish the project in the current directory, for a specific runtime and target framework:
 
   ```dotnetcli
-  dotnet publish --framework netcoreapp3.1 --runtime osx-x64
+  dotnet publish --framework net8.0 --runtime osx-x64
   ```
 
 - Publish the specified project file:

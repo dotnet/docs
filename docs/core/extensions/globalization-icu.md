@@ -61,7 +61,7 @@ Console.WriteLine($"{greeting.IndexOf("\0", StringComparison.Ordinal)}");
 ```
 
 - In .NET Core 3.1 and earlier versions on Windows, the snippet prints `3` on each of the three lines.
-- For .NET 5 and subsequent versions running on the Windows versions listed in the [ICU on Windows](#icu-on-windows) section table, the snippet prints `0`, `0`, and `3` (for the ordinal search).
+- For .NET 5 and later versions running on the Windows versions listed in the [ICU on Windows](#icu-on-windows) section table, the snippet prints `0`, `0`, and `3` (for the ordinal search).
 
 By default, <xref:System.String.IndexOf(System.String)?displayProperty=nameWithType> performs a culture-aware linguistic search. ICU considers the null character `\0` to be a *zero-weight character*, and thus the character isn't found in the string when using a linguistic search on .NET 5 and later. However, NLS doesn't consider the null character `\0` to be a zero-weight character, and a linguistic search on .NET Core 3.1 and earlier locates the character at position 3. An ordinal search finds the character at position 3 on all .NET versions.
 

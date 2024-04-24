@@ -237,13 +237,13 @@ Hard binding can affect startup time, because all images that are hard bound to 
 
 The following general considerations and application considerations may assist you in deciding whether to undertake the effort of evaluating native images for your application:
 
-- Native images load faster than MSIL because they eliminate the need for many startup activities, such as JIT compilation and type-safety verification.
+- Native images load faster than CIL because they eliminate the need for many startup activities, such as JIT compilation and type-safety verification.
 
 - Native images require a smaller initial working set because there is no need for the JIT compiler.
 
 - Native images enable code sharing between processes.
 
-- Native images require more hard disk space than MSIL assemblies and may require considerable time to generate.
+- Native images require more hard disk space than CIL assemblies and may require considerable time to generate.
 
 - Native images must be maintained.
 

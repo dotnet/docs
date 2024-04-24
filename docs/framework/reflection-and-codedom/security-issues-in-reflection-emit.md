@@ -15,7 +15,7 @@ ms.assetid: 0f8bf8fa-b993-478f-87ab-1a1a7976d298
 ---
 # Security Issues in Reflection Emit
 
-.NET Framework provides three ways to emit Microsoft intermediate language (MSIL), each with its own security issues:
+.NET Framework provides three ways to emit common intermediate language (CIL), each with its own security issues:
 
 - [Dynamic Assemblies](#dynamic-assemblies)
 - [Anonymously Hosted Dynamic Methods](#anonymously-hosted-dynamic-methods)
@@ -59,7 +59,7 @@ ms.assetid: 0f8bf8fa-b993-478f-87ab-1a1a7976d298
  Instead, when an anonymously hosted dynamic method is created, the call stack is captured. When the method is constructed, security demands are made against the captured call stack.
 
 > [!NOTE]
-> Conceptually, demands are made during the construction of the method. That is, demands could be made as each MSIL instruction is emitted. In the current implementation, all demands are made when the <xref:System.Reflection.Emit.DynamicMethod.CreateDelegate%2A?displayProperty=nameWithType> method is called or when the just-in-time (JIT) compiler is invoked, if the method is invoked without calling <xref:System.Reflection.Emit.DynamicMethod.CreateDelegate%2A>.
+> Conceptually, demands are made during the construction of the method. That is, demands could be made as each CIL instruction is emitted. In the current implementation, all demands are made when the <xref:System.Reflection.Emit.DynamicMethod.CreateDelegate%2A?displayProperty=nameWithType> method is called or when the just-in-time (JIT) compiler is invoked, if the method is invoked without calling <xref:System.Reflection.Emit.DynamicMethod.CreateDelegate%2A>.
 
  If the application domain permits it, anonymously hosted dynamic methods can skip JIT visibility checks, subject to the following restriction: The nonpublic types and members accessed by an anonymously hosted dynamic method must be in assemblies whose grant sets are equal to, or subsets of, the grant set of the emitting call stack. This restricted ability to skip JIT visibility checks is enabled if the application domain grants <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag.
 

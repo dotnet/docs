@@ -58,7 +58,7 @@ For more information, see [Performance counters in .NET Framework](../../framewo
 
 The [EventCounters](event-counters.md) API came next after `PerformanceCounters`. This API aimed to provide a uniform
 cross-platform experience. The APIs are available by targeting .NET Core 3.1+, and a small subset is available on .NET Framework 4.7.1
-and above. These APIs are fully supported and are actively used by key .NET libraries, but they
+and later. These APIs are fully supported and are actively used by key .NET libraries, but they
 have less functionality than the newer <xref:System.Diagnostics.Metrics?displayProperty=nameWithType> APIs. EventCounters are able to report
 rates of change and averages, but do not support histograms and percentiles. There is also no support for multi-dimensional metrics. Custom
 tooling is possible via the <xref:System.Diagnostics.Tracing.EventListener> API, though it is not strongly typed, only gives

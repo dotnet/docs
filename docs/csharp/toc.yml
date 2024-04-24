@@ -219,6 +219,8 @@ items:
       href: linq/get-started/type-relationships-in-linq-query-operations.md
     - name: C# features that support LINQ
       href: linq/get-started/features-that-support-linq.md
+    - name: "Tutorial: Writing queries in C#"
+      href: linq/get-started/walkthrough-writing-queries-linq.md
   - name: Standard query operators
     items:
     - name: Overview
@@ -241,72 +243,18 @@ items:
       href: linq/standard-query-operators/join-operations.md
     - name: Group data
       href: linq/standard-query-operators/grouping-data.md
-  - name: LINQ to objects
-    href: linq/query-a-collection-of-objects.md
-  - name: Store the results of a query in memory
-    href: linq/store-the-results-of-a-query-in-memory.md
-  - name: "Walkthrough: Writing queries in C#"
-    href: programming-guide/concepts/linq/walkthrough-writing-queries-linq.md
-  - name: LINQ and file directories
-    items:
-    - name: Overview
-      href: programming-guide/concepts/linq/linq-and-file-directories.md
-    - name: "How to query for files with a specified attribute or name"
-      href: programming-guide/concepts/linq/how-to-query-for-files-with-a-specified-attribute-or-name.md
-    - name: "How to group files by extension"
-      href: programming-guide/concepts/linq/how-to-group-files-by-extension-linq.md
-    - name: "How to query for the total number of bytes in a set of folders"
-      href: programming-guide/concepts/linq/how-to-query-for-the-total-number-of-bytes-in-a-set-of-folders-linq.md
-    - name: "How to compare the contents of two folders"
-      href: programming-guide/concepts/linq/how-to-compare-the-contents-of-two-folders-linq.md
-    - name: "How to query for the largest file or files in a directory tree"
-      href: programming-guide/concepts/linq/how-to-query-for-the-largest-file-or-files-in-a-directory-tree-linq.md
-    - name: "How to query for duplicate files in a directory tree"
-      href: programming-guide/concepts/linq/how-to-query-for-duplicate-files-in-a-directory-tree-linq.md
-    - name: "How to query the contents of files in a folder"
-      href: programming-guide/concepts/linq/how-to-query-the-contents-of-files-in-a-folder-lin.md
   - name: How-to articles
     items:
-    - name: How to return a query from a method
-      href: linq/return-a-query-from-a-method.md
-    - name: Dynamically specify predicate filters at runtime
-      href: linq/dynamically-specify-predicate-filters-at-runtime.md
-    - name: Handle null values in query expressions
-      href: linq/handle-null-values-in-query-expressions.md
-    - name: Handle exceptions in query expressions
-      href: linq/handle-exceptions-in-query-expressions.md
-    - name: "How to count occurrences of a word in a string"
-      href: programming-guide/concepts/linq/how-to-count-occurrences-of-a-word-in-a-string-linq.md
-    - name: "How to query for sentences that contain a specified set of words"
-      href: programming-guide/concepts/linq/how-to-query-for-sentences-that-contain-a-specified-set-of-words-linq.md
-    - name: "How to query for characters in a string"
-      href: programming-guide/concepts/linq/how-to-query-for-characters-in-a-string-linq.md
-    - name: "How to combine LINQ queries with regular expressions"
-      href: programming-guide/concepts/linq/how-to-combine-linq-queries-with-regular-expressions.md
-    - name: "How to find the set difference between two lists"
-      href: programming-guide/concepts/linq/how-to-find-the-set-difference-between-two-lists-linq.md
-    - name: "How to sort or filter text data by any word or field"
-      href: programming-guide/concepts/linq/how-to-sort-or-filter-text-data-by-any-word-or-field-linq.md
-    - name: "How to reorder the fields of a delimited file"
-      href: programming-guide/concepts/linq/how-to-reorder-the-fields-of-a-delimited-file-linq.md
-    - name: "How to combine and compare string collections"
-      href: programming-guide/concepts/linq/how-to-combine-and-compare-string-collections-linq.md
-    - name: "How to populate object collections from multiple sources"
-      href: programming-guide/concepts/linq/how-to-populate-object-collections-from-multiple-sources-linq.md
-    - name: "How to split a file into many files by using groups"
-      href: programming-guide/concepts/linq/how-to-split-a-file-into-many-files-by-using-groups-linq.md
-    - name: "How to join content from dissimilar files"
-      href: programming-guide/concepts/linq/how-to-join-content-from-dissimilar-files-linq.md
-    - name: "How to compute column values in a CSV text file"
-      href: programming-guide/concepts/linq/how-to-compute-column-values-in-a-csv-text-file-linq.md
-    - name: "How to use expression trees to build dynamic queries"
-      href: programming-guide/concepts/linq/how-to-use-expression-trees-to-build-dynamic-queries.md
-    - name: "How to query an ArrayList with LINQ"
-      href: programming-guide/concepts/linq/how-to-query-an-arraylist-with-linq.md
-    - name: "How to add custom methods for LINQ queries"
-      href: programming-guide/concepts/linq/how-to-add-custom-methods-for-linq-queries.md
-    - name: How to group results by contiguous keys
-      href: linq/group-results-by-contiguous-keys.md
+    - name: "How to: LINQ and file directories"
+      href: linq/how-to-query-files-and-directories.md
+    - name: "How to: LINQ and strings"
+      href: linq/how-to-query-strings.md
+    - name: "How to: LINQ and collections"
+      href: linq/how-to-query-collections.md
+    - name: How to extend LINQ with new methods
+      href: linq/how-to-extend-linq.md
+    - name: How to build dynamic queries at run time
+      href: linq/how-to-build-dynamic-queries.md
 - name: Asynchronous programming
   items:
   - name: Overview

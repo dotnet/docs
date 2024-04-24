@@ -1,29 +1,27 @@
 ### YamlMime:Landing
 
-title: ML.NET Documentation
+title: ML.NET documentation
 summary: Learn how to use open-source ML.NET to build custom machine learning models and integrate them into apps. Tutorials, code examples, and more show you how.
 
 metadata:
-  title: ML.NET Documentation - Tutorials, API Reference
+  title: ML.NET documentation - Tutorials, API reference
   description: Learn how to use open-source ML.NET to build custom machine learning models and integrate them into apps. Tutorials, code examples, and more show you how.
   ms.service: dotnet-ml
   ms.topic: landing-page
   ms.collection: collection
   author: natke
   ms.author: nakersha
-  ms.date: 10/30/2019
-
+  ms.date: 04/15/2024
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
 landingContent:
-
   # Basics
-  - title: ML.NET Basics
+  - title: ML.NET basics
     linkLists:
       - linkListType: overview
         links:
-          - text: What is ML.NET?
+          - text: What is the ML.NET API?
             url: how-does-mldotnet-work.md
           - text: What is Model Builder?
             url: automate-training-with-model-builder.md
@@ -54,7 +52,7 @@ landingContent:
           - text: Install the CLI on macOS, Windows, or Linux (low-code)
             url: how-to-guides/install-ml-net-cli.md
 
- # Tutorials - scenarios
+  # Tutorials - scenarios
   - title: Tutorials
     linkLists:
       - linkListType: learn
@@ -84,7 +82,6 @@ landingContent:
           - text: Build a movie recommender (API)
             url: tutorials/movie-recommendation.md
 
-
   # API Card
   - title: How-to guides
     linkLists:
@@ -109,6 +106,8 @@ landingContent:
       - linkListType: reference
         links:
           - text: ML.NET API reference
-            url: ../../api/index.md?view=ml-dotnet
+            url: ../../api/index.md?view=ml-dotnet&preserve-view=true
+          - text: ML.NET CLI reference
+            url: reference/ml-net-cli-reference.md
           - text: ML.NET samples
             url: https://github.com/dotnet/machinelearning-samples

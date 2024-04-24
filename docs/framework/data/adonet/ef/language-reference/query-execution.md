@@ -16,7 +16,7 @@ After a LINQ query is created by a user, it is converted to a command tree. A co
  When a LINQ to Entities query is executed, some expressions in the query might be executed on the server and some parts might be executed locally on the client. Client-side evaluation of an expression takes place before the query is executed on the server. If an expression is evaluated on the client, the result of that evaluation is substituted for the expression in the query, and the query is then executed on the server. Because queries are executed on the data source, the data source configuration overrides the behavior specified in the client. For example, null value handling and numerical precision depend on the server settings. Any exceptions thrown during query execution on the server are passed directly up to the client.  
 
 > [!TIP]
-> For a convenient summary of query operators in table format, which lets you quickly identify an operator's execution behavior, see [Classification of Standard Query Operators by Manner of Execution (C#)](../../../../../csharp/linq/query-a-collection-of-objects.md).
+> For a convenient summary of query operators in table format, which lets you quickly identify an operator's execution behavior, see [Classification of Standard Query Operators by Manner of Execution (C#)](../../../../../csharp/linq/get-started/introduction-to-linq-queries.md).
 
 ## Deferred query execution  
 

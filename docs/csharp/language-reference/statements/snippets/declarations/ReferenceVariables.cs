@@ -11,14 +11,14 @@
     {
         // <AliasToLocalVariable>
         int a = 1;
-        ref int alias = ref a;
-        Console.WriteLine($"(a, alias) is ({a}, {alias})");  // output: (a, alias) is (1, 1)
+        ref int aliasOfa = ref a;
+        Console.WriteLine($"(a, aliasOfa) is ({a}, {aliasOfa})");  // output: (a, aliasOfa) is (1, 1)
 
         a = 2;
-        Console.WriteLine($"(a, alias) is ({a}, {alias})");  // output: (a, alias) is (2, 2)
+        Console.WriteLine($"(a, aliasOfa) is ({a}, {aliasOfa})");  // output: (a, aliasOfa) is (2, 2)
 
-        alias = 3;
-        Console.WriteLine($"(a, alias) is ({a}, {alias})");  // output: (a, alias) is (3, 3)
+        aliasOfa = 3;
+        Console.WriteLine($"(a, aliasOfa) is ({a}, {aliasOfa})");  // output: (a, aliasOfa) is (3, 3)
         // </AliasToLocalVariable>
     }
 

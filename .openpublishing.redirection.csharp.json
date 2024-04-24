@@ -1349,6 +1349,10 @@
             "redirect_url": "/dotnet/csharp/linq/standard-query-operators/grouping-data"
         },
         {
+            "source_path_from_root": "/docs/csharp/linq/linq-to-objects.md",
+            "redirect_url": "/dotnet/csharp/linq/introduction-to-linq-queries"
+        },
+        {
             "source_path_from_root": "/docs/csharp/linq/perform-grouped-joins.md",
             "redirect_url": "/dotnet/csharp/linq/standard-query-operators/join-operations"
         },
@@ -1371,6 +1375,30 @@
         {
             "source_path_from_root": "/docs/csharp/linq/query-expression-basics.md",
             "redirect_url": "/dotnet/csharp/linq/get-started/query-expression-basics"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/linq/query-a-collection-of-objects.md",
+            "redirect_url": "/dotnet/csharp/linq/get-started/introduction-to-linq-queries"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/linq/return-a-query-from-a-method.md",
+            "redirect_url": "/dotnet/csharp/linq/get-started/features-that-support-linq#expressions-as-data"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/linq/dynamically-specify-predicate-filters-at-runtime.md",
+            "redirect_url": "/dotnet/csharp/linq/get-started/write-linq-queries"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/linq/handle-null-values-in-query-expressions.md",
+            "redirect_url": "/dotnet/csharp/linq/get-started/write-linq-queries"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/linq/handle-exceptions-in-query-expressions.md",
+            "redirect_url": "/dotnet/csharp/linq/get-started/write-linq-queries"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/linq/store-the-results-of-a-query-in-memory.md",
+            "redirect_url": "/dotnet/csharp/linq/get-started/introduction-to-linq-queries"
         },
         {
             "source_path_from_root": "/docs/csharp/linq/write-linq-queries.md",
@@ -1965,7 +1993,7 @@
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/expression-trees/debugview-syntax.md",
-            "redirect_url": "/dotnet/csharp/programming-guide/concepts/linq/how-to-use-expression-trees-to-build-dynamic-queries"
+            "redirect_url": "/dotnet/csharp/linq/how-to-build-dynamic-queries"
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/expression-trees/how-to-use-expression-trees-to-build-dynamic-queries.md",
@@ -2003,6 +2031,70 @@
         {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/classification-of-standard-query-operators-by-manner-of-execution.md",
             "redirect_url": "/dotnet/csharp/linq/query-a-collection-of-objects"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/how-to-reorder-the-fields-of-a-delimited-file-linq.md",
+            "redirect_url": "/dotnet/csharp/linq/how-to-query-files-and-directories"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/how-to-split-a-file-into-many-files-by-using-groups-linq.md",
+            "redirect_url": "/dotnet/csharp/linq/how-to-query-files-and-directories"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/how-to-join-content-from-dissimilar-files-linq.md",
+            "redirect_url": "/dotnet/csharp/linq/how-to-query-files-and-directories"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/how-to-compute-column-values-in-a-csv-text-file-linq.md",
+            "redirect_url": "/dotnet/csharp/linq/how-to-query-files-and-directories"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/how-to-query-for-characters-in-a-string-linq.md",
+            "redirect_url": "/dotnet/csharp/linq/how-to-query-strings"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/how-to-count-occurrences-of-a-word-in-a-string-linq.md",
+            "redirect_url": "/dotnet/csharp/linq/how-to-query-strings"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/how-to-sort-or-filter-text-data-by-any-word-or-field-linq.md",
+            "redirect_url": "/dotnet/csharp/linq/how-to-query-strings"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/how-to-query-for-sentences-that-contain-a-specified-set-of-words-linq.md",
+            "redirect_url": "/dotnet/csharp/linq/how-to-query-strings"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/how-to-combine-linq-queries-with-regular-expressions.md",
+            "redirect_url": "/dotnet/csharp/linq/how-to-query-strings"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/how-to-populate-object-collections-from-multiple-sources-linq.md",
+            "redirect_url": "/dotnet/csharp/linq/how-to-query-collections"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/how-to-combine-and-compare-string-collections-linq.md",
+            "redirect_url": "/dotnet/csharp/linq/how-to-query-collections"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/how-to-query-an-arraylist-with-linq.md",
+            "redirect_url": "/dotnet/csharp/linq/how-to-query-collections"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/how-to-find-the-set-difference-between-two-lists-linq.md",
+            "redirect_url": "/dotnet/csharp/linq/how-to-query-collections"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/linq/group-results-by-contiguous-keys.md",
+            "redirect_url": "/dotnet/csharp/linq/how-to-extend-linq"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/how-to-use-expression-trees-to-build-dynamic-queries.md",
+            "redirect_url": "/dotnet/csharp/linq/how-to-build-dynamic-queries"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/how-to-add-custom-methods-for-linq-queries.md",
+            "redirect_url": "/dotnet/csharp/linq/how-to-extend-linq"
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/query-expression-syntax-for-standard-query-operators.md",
@@ -2945,7 +3037,46 @@
         {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/visual-studio-ide-and-tools-support-for-linq.md",
             "redirect_url": "/dotnet/csharp/linq/"
-
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/walkthrough-writing-queries-linq.md",
+            "redirect_url": "/dotnet/csharp/linq/get-started/walkthrough-writing-queries-linq"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/linq/walkthrough-writing-queries-linq.md",
+            "redirect_url": "/dotnet/csharp/linq/get-started/walkthrough-writing-queries-linq"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/linq-and-file-directories.md",
+            "redirect_url": "/dotnet/csharp/linq//how-to-query-files-and-directories"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/how-to-query-for-files-with-a-specified-attribute-or-name.md",
+            "redirect_url": "/dotnet/csharp/linq//how-to-query-files-and-directories"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/how-to-group-files-by-extension-linq.md",
+            "redirect_url": "/dotnet/csharp/linq//how-to-query-files-and-directories"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/how-to-query-for-the-total-number-of-bytes-in-a-set-of-folders-linq.md",
+            "redirect_url": "/dotnet/csharp/linq//how-to-query-files-and-directories"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/how-to-compare-the-contents-of-two-folders-linq.md",
+            "redirect_url": "/dotnet/csharp/linq//how-to-query-files-and-directories"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/how-to-query-for-the-largest-file-or-files-in-a-directory-tree-linq.md",
+            "redirect_url": "/dotnet/csharp/linq//how-to-query-files-and-directories"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/how-to-query-for-duplicate-files-in-a-directory-tree-linq.md",
+            "redirect_url": "/dotnet/csharp/linq//how-to-query-files-and-directories"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/how-to-query-the-contents-of-files-in-a-folder-lin.md",
+            "redirect_url": "/dotnet/csharp/linq//how-to-query-files-and-directories"
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/object-oriented-programming.md",

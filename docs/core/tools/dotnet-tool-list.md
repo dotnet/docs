@@ -40,7 +40,7 @@ The `dotnet tool list` command provides a way for you to list .NET global, tool-
 
 - **`PACKAGE_ID`**
 
-  Lists the tool that has the supplied package ID if the tool is installed. Can be used in conjunction with options. Provides a way to check if a specific tool was installed. The command returns 1 if no tool with the specified package ID is found; returns 0 otherwise.
+  Lists the tool that has the supplied package ID if the tool is installed. Can be used in conjunction with options. Provides a way to check if a specific tool was installed. The command returns list headings with no detail rows if no tool with the specified package ID is found. The command always returns 0.
 
 ## Options
 

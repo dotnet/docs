@@ -9,6 +9,9 @@ _Released April 9, 2024_
 
 ## Summary of what's new in this release
 
+- [Security improvements](#security-improvements)
+- [Quality and reliability improvements](#quality-and-reliability-improvements)
+
 ### Security improvements
 
 #### CVE-2024-21409 – Remote code execution vulnerability
@@ -19,7 +22,7 @@ This security update addresses a remote code execution vulnerability detailed in
 
 This security update addresses an issue where version of the OSS zlib library is out of date.
 
-#### Defense in Depth Vulnerability
+#### Defense in depth vulnerability
 
 This security update addresses an issue in AIA fetching process.
 
@@ -29,12 +32,13 @@ This release contains the following quality and reliability improvements.
 
 #### ASP.NET
 
-Addresses an issue with `JavaScriptSerializer` where after installing the January Security and Quality update, there is a performance degradation. (*Applies to: .NET Framework 4.6.2, 4.7, 4.7.1,4.7.2, 4.8, 4.8.1*)
+Addresses an issue with `JavaScriptSerializer` where after installing the January Security and Quality update, there is a performance degradation. (*Applies to: .NET Framework 4.6.2, 4.7, 4.7.1,4.7.2, 4.8, 4.8.1.*)
 
 #### CLR
 
-Addressed an issue with thread pool recycled lists becoming unresponsive on multi-CPU-group computers (*applies to: .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2, 4.8, 4.8.1*).
-+ Addressed an issue where Interlocked.Read from 32-bit apps are much slower on some computers. (*applies to: .NET Framework 4.8.1*)
+Addressed an issue with thread pool recycled lists becoming unresponsive on multi-CPU-group computers. (*Applies to: .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2, 4.8, 4.8.1.*)
+
+Addressed an issue where Interlocked.Read from 32-bit apps are much slower on some computers. (*Applies to: .NET Framework 4.8.1.*)
 
 #### Compilers
 

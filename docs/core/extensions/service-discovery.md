@@ -11,7 +11,7 @@ ms.topic: overview
 
 In this article, you learn how to use the `Microsoft.Extensions.ServiceDiscovery` library. Service discovery is a way for developers to use logical names instead of physical addresses (IP address and port) to refer to external services.
 
-## Get Started
+## Get started
 
 To get started with service discovery in .NET, install the [Microsoft.Extensions.ServiceDiscovery](https://www.nuget.org/packages/Microsoft.Extensions.ServiceDiscovery) NuGet package.
 
@@ -103,11 +103,11 @@ Here's an example demonstrating how to configure endpoints for the service named
 
 The preceding example adds two endpoints for the service named _catalog_: `https://localhost:8080`, and `"https://10.46.24.90:80"`. Each time the _catalog_ is resolved, one of these endpoints is selected.
 
-If service discovery was added to the host using the <xref:Microsoft.Extensions.DependencyInjection.ServiceDiscoveryServiceCollectionExtensions.AddServiceDiscoveryCore%2A> extension method on <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>, the configuration-based endpoint resolver can be added by calling the <xref:Microsoft.Extensions.DependencyInjection.ServiceDiscoveryServiceCollectionExtensions.AddConfigurationServiceEndPointResolver%2A> extension method on `IServiceCollection`.
+If service discovery was added to the host using the <xref:Microsoft.Extensions.DependencyInjection.ServiceDiscoveryServiceCollectionExtensions.AddServiceDiscoveryCore%2A> extension method on <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>, the configuration-based endpoint resolver can be added by calling the <xref:Microsoft.Extensions.DependencyInjection.ServiceDiscoveryServiceCollectionExtensions.AddConfigurationServiceEndpointProvider%2A> extension method on `IServiceCollection`.
 
 ### Configuration
 
-The configuration resolver is configured using the <xref:Microsoft.Extensions.ServiceDiscovery.ConfigurationServiceEndPointResolverOptions> class, which offers these configuration options:
+The configuration resolver is configured using the <xref:Microsoft.Extensions.ServiceDiscovery.ConfigurationServiceEndpointProviderOptions> class, which offers these configuration options:
 
 - **SectionName**: The name of the configuration section that contains service endpoints. It defaults to `"Services"`.
 
@@ -122,7 +122,7 @@ builder.Services.Configure<ConfigurationServiceEndPointResolverOptions>(
     static options =>
     {
         options.SectionName = "MyServiceEndpoints";
-    
+
         // Configure the logic for applying host name metadata
         options.ApplyHostNameMetadata = static endpoint =>
         {
@@ -143,7 +143,7 @@ The pass-through resolver performs no external resolution and instead resolves e
 
 The pass-through provider is configured by-default when adding service discovery via the `AddServiceDiscovery` extension method.
 
-If service discovery was added to the host using the `AddServiceDiscoveryCore` extension method on `IServiceCollection`, the pass-through provider can be added by calling the <xref:Microsoft.Extensions.DependencyInjection.ServiceDiscoveryServiceCollectionExtensions.AddPassThroughServiceEndPointResolver%2A> extension method on `IServiceCollection`.
+If service discovery was added to the host using the `AddServiceDiscoveryCore` extension method on `IServiceCollection`, the pass-through provider can be added by calling the <xref:Microsoft.Extensions.DependencyInjection.ServiceDiscoveryServiceCollectionExtensions.AddPassThroughServiceEndpointProvider%2A> extension method on `IServiceCollection`.
 
 ## See also
 

@@ -29,7 +29,7 @@ class Program
             "https://learn.microsoft.com/system-center",
             "https://learn.microsoft.com/visualstudio",
             "https://learn.microsoft.com/windows",
-            "https://learn.microsoft.com/xamarin"
+            "https://learn.microsoft.com/maui"
     };
 
     static async Task Main()

@@ -5,7 +5,7 @@ author: catbutler
 ms.topic: concept-article #Don't change.
 ms.date: 04/15/2024
 
-#customer intent: As a .NET developer, I want to understand how agents and copilots extend the functionality of AI apps, so that my app users can handle any type of content and meet more user goals.
+#customer intent: As a .NET developer, I want to understand how agents and copilots extend the functionality of LLMs, so that my apps can handle any type of content and automatically meet user goals.
 
 ---
 
@@ -16,11 +16,13 @@ Agents and copilots both extend an LLM's capabilities by intelligently invoking 
 - An *agent* is an artificial intelligence that can answer questions and automate processes for users. Agents can determine which functions will meet a user's goal, and then call those functions on the user's behalf.
 - A *copilot* is a type of agent that works side-by-side with a user. Unlike an agent, a copilot isn't fully automated&mdash;it relies on user interaction. A copilot can help a user complete a task by providing suggestions and recommendations.
 
-For example, suppose you're building an email chat helper app. Along with the LLM, you'll also need a way to perform email-related actions, as well as functions for searching, summarizing, determining intent, and the like. Creating the plugins is only half the battle: you still need to invoke the right functions at the right time, a process that can be error-prone and inefficient. An agent can handle it better.
+For example, suppose you're building an email chat helper app. Along with the LLM, you'll also need a plugin to perform email-related actions, as well as plugins for searching, summarizing, determining intent, and the like. You can use [native functions](/semantic-kernel/agents/plugins/using-the-kernelfunction-decorator?tabs=Csharp#creating-your-native-functions), [out-of-the-box plugins](/semantic-kernel/agents/plugins/out-of-the-box-plugins?tabs=Csharp), and your own [custom plugins](/semantic-kernel/agents/plugins/?tabs=Csharp#adding-functions-to-plugins).
 
-## Agents automate processes
+Creating the plugins is only half the battle: you still need to invoke the right functions at the right time, a process that can be error-prone and inefficient. An agent can handle it better.
 
-An agent automatically decides what sequence of functions an LLM needs to reach a goal. For example, suppose you have a chat app that reviews new inbox items and determines what action each item requires. If you set up an agent, it can orchestrate the necessary plugin functions and perform the steps automatically.
+An agent automatically decides what sequence of functions an LLM can use to reach a user goal. For example, suppose you have a chat app that reviews new inbox items and determines what action each item requires. If you set up an agent, it can orchestrate the necessary plugin functions and perform the steps automatically.
+
+## Components of an agent
 
 Each agent has three core building blocks: a persona, plugins, and planners.
 
@@ -36,7 +38,10 @@ For example, you can use instructions to tell an agent that it is helping people
 
 ```csharp
 prompt = $"""
-<message role="system">You are a friendly assistant helping people with emails. When you decide to peform an action, explain your decision and then perform the action.</message>
+    <message role="system">
+    You are a friendly assistant helping people with emails.
+    When you decide to peform an action, explain your decision and then perform the action.
+    </message>
 """
 ```
 
@@ -84,3 +89,4 @@ To get started with copilots, try the [Semantic Kernel Chat Copilot](/semantic-k
 ## Related content
 
 - [Develop AI agents using Azure OpenAI and the Semantic Kernel SDK](/training/paths/develop-ai-agents-azure-open-ai-semantic-kernel-sdk/)
+<!-- Add link to openai-functions.md -->

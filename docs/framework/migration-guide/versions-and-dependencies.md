@@ -1,7 +1,7 @@
 ---
 title: .NET Framework & Windows OS versions
 description: Learn about key features in each version of .NET Framework, including underlying CLR versions and versions installed by the Windows operating system.
-ms.date: 04/24/2024
+ms.date: 07/31/2023
 helpviewer_keywords:
   - "versions, .NET Framework"
 ---
@@ -55,15 +55,15 @@ Jump to:
 - New accessibility features
 - [Release notes](https://github.com/Microsoft/dotnet/tree/main/releases/net481/README.md)
 
-|                    | Versions              |
-|--------------------|-----------------------|
-| **CLR**            | 4                     |
-| **Windows**        | ✔️ October 2023 Release (Version 22631)<br/> ✔️ September 2022 Release (Version 22621)<br/> ➕ 11 October 2021 Release (Version 22000)<br/>➕ 10 November 2021 Update<br/>➕ 10 May 2021 Update<br/>➕ 10 October 2020 Update<br/>|
-| **Windows Server** | ➕ Windows Server 2022 |
+| | Versions |
+|-|-|
+|**CLR**|4|
+|**Windows**|✔️ September 2022 Release (Version 22621)<br/> ➕ 11 October 2021 Release (Version 22000)<br/>➕ 10 November 2021 Update<br/>➕ 10 May 2021 Update<br/>➕ 10 October 2020 Update<br/>|
+|**Windows Server**|➕ Windows Server 2022<br/>|
 
 To determine the installed .NET version, use the following `Release` DWORD:
 
-- 533320 (Windows 11 September 2022 Release and Windows 11 October 2023 Release)
+- 533320 (Windows 11 September 2022 Release)
 - 533325 (all other OS versions)
 
 For more information, see [instructions](how-to-determine-which-versions-are-installed.md).
@@ -74,9 +74,9 @@ For more information, see [instructions](how-to-determine-which-versions-are-ins
 - [New in accessibility](../whats-new/whats-new-in-accessibility.md#whats-new-in-accessibility-in-net-framework-48)
 - [Release notes](https://github.com/Microsoft/dotnet/tree/main/releases/net48/README.md)
 
-|         | Versions |
-|---------|----------|
-| **CLR** | 4        |
+| | Versions |
+|-|-|
+|**CLR**|4|
 |**Windows**|✔️ 11 October 2021 Release (Version 22000)<br/>✔️ 10 November 2021 Update<br/>✔️ 10 May 2021 Update<br/>✔️ 10 October 2020 Update<br/>✔️ 10 May 2020 Update<br/>✔️ 10 November 2019 Update<br/>✔️ 10 May 2019 Update<br/>➕ 10 October 2018 Update (Version 1809)<br/>➕ 10 April 2018 Update (Version 1803)<br/>➕ 10 Fall Creators Update (Version 1709)<br/>➕ 10 Creators Update (Version 1703)<br/>➕ 10 Anniversary Update (Version 1607)<br/>➕ 8.1<br/>➕7|
 |**Windows Server**|✔️ Windows Server 2022<br/>➕ Windows Server 2019<br/>➕ Windows Server, version 1809<br/>➕ Windows Server, version 1803<br/>➕ 2016<br/>➕ 2012 R2<br/>➕ 2012<br/>➕ 2008 R2 SP1|
 
@@ -95,14 +95,14 @@ For more information, see [instructions](how-to-determine-which-versions-are-ins
 - [New in accessibility](../whats-new/whats-new-in-accessibility.md#whats-new-in-accessibility-in-net-framework-472)
 - [Release notes](https://github.com/Microsoft/dotnet/tree/main/releases/net472/README.md)
 
-|                               | Versions |
-|-------------------------------|----------|
-| **CLR**                       | 4        |
-| **Included in Visual Studio** | 2019†    |
+| | Versions |
+|-|-|
+|**CLR**|4|
+|**Included in Visual Studio**|2019<sup>1</sup>|
 |**Windows**|✔️ 10 October 2018 Update (Version 1809)<br/>✔️ 10 April 2018 Update (Version 1803)<br/>➕ 10 Fall Creators Update (Version 1709)<br/>➕ 10 Creators Update (Version 1703)<br/>➕ 10 Anniversary Update (Version 1607)<br/>➕ 8.1<br/>➕7|
 |**Windows Server**|✔️ Windows Server 2019<br/>✔️ Windows Server, version 1809<br/>✔️ Windows Server, version 1803<br/>➕ Windows Server, version 1709<br/>➕ 2016<br/>➕ 2012 R2<br/>➕ 2012<br/>➕ 2008 R2 SP1|
 
-†Requires installing the **.NET desktop development**, **ASP.NET and web development**, **Azure development**, **Office/SharePoint development**, **Mobile development with .NET**, or **.NET Core cross-platform development** workloads.
+<sup>1</sup> Requires installing the **.NET desktop development**, **ASP.NET and web development**, **Azure development**, **Office/SharePoint development**, **Mobile development with .NET**, or **.NET Core cross-platform development** workloads.
 
 To determine the installed .NET version, use the following `Release` DWORD:
 
@@ -118,9 +118,9 @@ For more information, see [instructions](how-to-determine-which-versions-are-ins
 - [New in accessibility](../whats-new/whats-new-in-accessibility.md#whats-new-in-accessibility-in-net-framework-471)
 - [Release notes](https://github.com/Microsoft/dotnet/tree/main/releases/net471/README.md)
 
-|         | Versions |
-|---------|----------|
-| **CLR** | 4        |
+| | Versions |
+|-|-|
+|**CLR**|4|
 |**Windows**|✔️ 10 Fall Creators Update (Version 1709)<br/>➕ 10 Creators Update (Version 1703)<br/>➕ 10 Anniversary Update (Version 1607)<br/>➕ 8.1<br/>➕7|
 |**Windows Server**|➕ Windows Server, version 1803<br/>✔️ Windows Server, version 1709<br/>➕ 2016<br/>➕ 2012 R2<br/>➕ 2012<br/>➕ 2008 R2 SP1|
 

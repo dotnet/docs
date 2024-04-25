@@ -9,22 +9,20 @@ ms.custom: updateeachrelease, linux-related-content
 
 # Overview of .NET on Ubuntu
 
-This article describes how to install .NET on Ubuntu. Starting with Ubuntu 22.04, most supported versions of .NET are available in the built-in Ubuntu feed. The Ubuntu .NET backports package repository contains the remaining supported .NET versions, which are not available in the built-in Ubuntu package feed for these Ubuntu versions. For more information about available versions, see the [Supported distributions](#supported-distributions) section.
-Additionally, for Ubuntu 23.10 and previous versions, the Microsoft package repository contains every version of .NET that is currently, or was previously, supported.
+This article describes how to install .NET on Ubuntu. The Microsoft package repository contains every version of .NET that is currently, or was previously, supported on Ubuntu. Starting with Ubuntu 22.04, some versions of .NET are available in the Ubuntu package feed. For more information about available versions, see the [Supported distributions](#supported-distributions) section.
 
 > [!WARNING]
-> It's recommended that you choose between either Ubuntu or Microsoft feeds to source .NET packages. Don't mix .NET packages from multiple package repositories, as this leads to problems when apps try to resolve a specific version of .NET.
+> It's recommended that you choose a single repository to source .NET packages. Don't mix .NET packages from multiple package repositories, as this leads to problems when apps try to resolve a specific version of .NET.
 
 | Method | Pros | Cons |
 |--------|------|------|
-| [Package manager<br>(built-in<br>Ubuntu feed)](#supported-distributions) | <ul><li>Usually the latest version is available.</li><li>Patches are available right way.</li><li>Dependencies are included.</li><li>Easy removal.</li><li>Available .NET versions are supported for the support period of the particular Ubuntu version.</li><li>Support for the IBM System Z platform for .NET 8 on Ubuntu 24.04.</li></ul> | <ul><li>Not available for Ubuntu 16.04, 18.04, 20.04.</li><li>.NET versions available vary by Ubuntu version.</li><li>Preview releases aren't available.</li></ul> |
-| [Package manager<br>(.NET backports<br>Ubuntu feed)](#register-the-ubuntu-net-backports-package-repository) | <ul><li>Contains any supported version, which is not contained in the built-in Ubuntu feed.</li><li>Patches are available right way.</li><li>Dependencies are included.</li><li>Easy removal.</li><li>Compatible with built-in Ubuntu feed.</li></ul> | <ul><li>Not available for Ubuntu 16.04, 18.04, 20.04.</li><li>Requires registering the Ubuntu .NET backports package repository.</li><li>Preview releases aren't available.</li></ul> |
-| [Package manager<br>(Microsoft feed)](#register-the-microsoft-package-repository) | <ul><li>Supported versions always available.</li><li>Patches are available right way.</li><li>Dependencies are included.</li><li>Easy removal.</li></ul> | <ul><li>Not available for Ubuntu 24.04+.</li><li>Requires registering the Microsoft package repository.</li><li>Preview releases aren't available.</li><li>Only supports x64 Ubuntu.</li></ul> |
+| [Package manager<br>(Microsoft feed)](#register-the-microsoft-package-repository) | <ul><li>Supported versions always available.</li><li>Patches are available right way.</li><li>Dependencies are included.</li><li>Easy removal.</li></ul> | <ul><li>Requires registering the Microsoft package repository.</li><li>Preview releases aren't available.</li><li>Only supports x64 Ubuntu.</li></ul> |
+| [Package manager<br>(Ubuntu feed)](#supported-distributions) | <ul><li>Usually the latest version is available.</li><li>Patches are available right way.</li><li>Dependencies are included.</li><li>Easy removal.</li></ul> | <ul><li>.NET versions available vary by Ubuntu version.</li><li>Preview releases aren't available.</li><li>Only supports x64 Ubuntu. (Except for Ubuntu 23.04+, which also supports Arm64)</li></ul> |
 | [Script \ Manual extraction](linux-scripted-manual.md) | <ul><li>Control where .NET is installed.</li><li>Preview releases are available.</li></ul> | <ul><li>Manually install updates.</li><li>Manually install dependencies.</li><li>Manual removal.</li></ul> |
 
 ## Decide how to install .NET
 
-When your version of Ubuntu supports .NET through the built-in or .NET backports Ubuntu feed, support for those builds of .NET is provided by Canonical and the builds might be optimized for different workloads. Microsoft provides support for packages in the Microsoft package repository feed.
+When your version of Ubuntu supports .NET through the built-in Ubuntu feed, support for those builds of .NET is provided by Canonical and the builds might be optimized for different workloads. Microsoft provides support for packages in the Microsoft package repository feed.
 
 Use the following sections to determine how you should install .NET:
 
@@ -37,7 +35,6 @@ Use the following sections to determine how you should install .NET:
 - [I want to install a preview version](#i-want-to-install-a-preview-version)
 - [I don't want to use APT](#i-dont-want-to-use-apt)
 - [I'm using an Arm-based CPU](#im-using-an-arm-based-cpu)
-- [I'm using the IBM System Z platform](#im-using-the-ibm-system-z-platform)
 
 ### I'm using Ubuntu 22.04 or later, and I only need .NET
 
@@ -64,19 +61,17 @@ Review the [Supported distributions](#supported-distributions) section for more 
 
 ### I'm using other Microsoft packages, such as `powershell`, `mdatp`, or `mssql`
 
-If your Ubuntu version supports .NET through an Ubuntu feeds, you must decide which feed should install .NET. The [Supported distributions](#supported-distributions) section provides a table that lists which versions of .NET are available in the package feeds.
+If your Ubuntu version supports .NET through the built-in Ubuntu feed, you must decide which feed should install .NET. The [Supported distributions](#supported-distributions) section provides a table that lists which versions of .NET are available the package feeds.
 
-If you want to source the .NET packages from an Ubuntu feed, you need to deprioritize the .NET packages provided by the Microsoft repository. For instructions on how to deprioritize the packages, see [My Linux distribution provides .NET packages, and I want to use them](linux-package-mixup.md?pivots=os-linux-ubuntu#my-linux-distribution-provides-net-packages-and-i-want-to-use-them).
+If you want to source the .NET packages from the Ubuntu feed, you need to deprioritize the .NET packages provided by the Microsoft repository. For instructions on how to deprioritize the packages, see [My Linux distribution provides .NET packages, and I want to use them](linux-package-mixup.md?pivots=os-linux-ubuntu#my-linux-distribution-provides-net-packages-and-i-want-to-use-them).
 
 ### I want to create a .NET app
 
-Use the same package sources for the SDK as you use for the runtime. It is recommended that you install .NET through an Ubuntu feed. If, however you want to install .NET from another source (e.g. the [Microsoft package repository](#register-the-microsoft-package-repository) to access higher SDK feature bands), you should uninstall .NET, configure your package manager to ignore .NET packages from the Ubuntu feed and reinstall it from the other source.
-
-Review the other suggestions in the [Decide how to install .NET](#decide-how-to-install-net) section.
+Use the same package sources for the SDK as you use for the runtime. For example, if you're using Ubuntu 22.04 and .NET 6, but not .NET 7, it's recommended that you install .NET through the built-in Ubuntu feed. If, however, you move to .NET 7, which isn't provided by Canonical for Ubuntu 22.04, you should uninstall .NET and reinstall it with the **Microsoft package repository**. For more information, see [Register and install with the Microsoft package repository](#register-the-microsoft-package-repository). Also, review the other suggestions in the [Decide how to install .NET](#decide-how-to-install-net) section.
 
 ### I want to run a .NET app in a container, cloud, or continuous-integration scenario
 
-If your Ubuntu version provides the .NET version you require, install it from an Ubuntu feed. Otherwise, [register the Microsoft package repository](#register-the-microsoft-package-repository) and install .NET from that repository. Review the information in the [Supported distributions](#supported-distributions) section.
+If your Ubuntu version provides the .NET version you require, install it from the built-in feed. Otherwise, [register the Microsoft package repository](#register-the-microsoft-package-repository) and install .NET from that repository. Review the information in the [Supported distributions](#supported-distributions) section.
 
 If the version of .NET you want isn't available, try using the [dotnet-install script](linux-scripted-manual.md#scripted-install).
 
@@ -99,20 +94,10 @@ If you want full control over the .NET installation experience, download a tarba
 
 ### I'm using an Arm-based CPU
 
-If your Ubuntu version provides the .NET version you require, install it from the built-in feed. Review the information in the [Supported distributions](#supported-distributions) section.
-
-If the version of .NET you want isn't available, try using one of the following ways to install .NET:
+Use one of the following ways to install .NET:
 
 - [Install .NET with `install-dotnet` script.](linux-scripted-manual.md#scripted-install)
 - [Manually install .NET](linux-scripted-manual.md#manual-install)
-
-### I'm using the IBM System Z platform
-
-Starting with .NET 8 on Ubuntu 24.04, Canonical supports .NET for the IBM System Z platform. Canonical works on extending the support to other .NET and Ubuntu versions.
-
-Install .NET through the built-in Ubuntu feed. For more information, see the following page:
-
-- [Install .NET 8 on Ubuntu 24.04](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2404&tabs=dotnet8).
 
 ## Supported distributions
 
@@ -120,62 +105,19 @@ The following table is a list of currently supported .NET releases and the versi
 
 <!-- This table is replicated in each individual Ubuntu article, but with only that specific version row listed. Make sure to update those tables. -->
 
-| Ubuntu                                                             | Supported .NET versions | Available in<br>built-in Ubuntu feed | [Available in<br>.NET backports<br>Ubuntu feed](#register-the-ubuntu-net-backports-package-repository) | [Available in<br>Microsoft feed](#register-the-microsoft-package-repository) |
-|--------------------------------------------------------------------|-------------------------|--------------------------------------|--------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| [24.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2404) | 8.0, 7.0, 6.0           | 8.0                                  | 7.0, 6.0                                                                                               | None                                                                         |
-| [23.10](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2310)       | 8.0, 7.0, 6.0           | 8.0, 7.0, 6.0                        | None                                                                                                   | 8.0, 7.0, 6.0                                                                |
-| [22.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2204) | 8.0, 7.0, 6.0           | 8.0, 7.0, 6.0                        | None                                                                                                   | 8.0, 7.0, 6.0, 3.1                                                           |
-| [20.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2004) | 8.0, 7.0, 6.0           | None                                 | None                                                                                                   | 8.0, 7.0. 6.0, 5.0, 3.1, 2.1                                                 |
-| [18.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-1804) | 7.0, 6.0                | None                                 | None                                                                                                   | 7.0. 6.0, 5.0, 3.1, 2.2, 2.1                                                 |
-| [16.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-1604) | 6.0                     | None                                 | None                                                                                                   | 6.0, 5.0, 3.1, 3.0, 2.2, 2.1, 2.0                                            |
+| Ubuntu                                                             | Supported .NET versions | Available in Ubuntu feed | [Available in Microsoft feed](#register-the-microsoft-package-repository) |
+|--------------------------------------------------------------------|-------------------------|--------------------------|-----------------------------------|
+| [24.04](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2310)       | 8.0                     | 8.0                      | None                              |
+| [23.10](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2310)       | 8.0, 7.0, 6.0           | 8.0, 7.0, 6.0            | 8.0, 7.0, 6.0                     |
+| [23.04](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2304)       | 8.0, 7.0, 6.0           | 7.0, 6.0                 | 8.0, 7.0, 6.0                     |
+| [22.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2204) | 8.0, 7.0, 6.0           | 7.0, 6.0                 | 8.0, 7.0, 6.0, 3.1                |
+| [20.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2004) | 8.0, 7.0, 6.0           | None                     | 8.0, 7.0. 6.0, 5.0, 3.1, 2.1      |
+| [18.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-1804) | 7.0, 6.0                | None                     | 7.0. 6.0, 5.0, 3.1, 2.2, 2.1      |
+| [16.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-1604) | 6.0                     | None                     | 6.0, 5.0, 3.1, 3.0, 2.2, 2.1, 2.0 |
 
-When an [Ubuntu version](https://wiki.ubuntu.com/Releases) reaches the end of its support period, .NET is no longer supported with that particular Ubuntu version.
-
-Canonical supports .NET versions in the built-in Ubuntu feed for the lifetime of that Ubuntu version, even beyond the Microsoft-provided support lifetime and provides best-effort support for .NET versions in the .NET backports package repository, which does not extend beyond the Microsoft-provided support lifetime.
+When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support, .NET is no longer supported with that version.
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
-
-## Ubuntu .NET backports package repository
-
-The Ubuntu .NET backports package repository provides versions of .NET, which are not available in the built-in Ubuntu feed. The [Supported distributions](#supported-distributions) section provides a table that lists which versions of .NET are available in the package feed. Canonical maintains the packages contained in this package repository and provides best-effort support, which does not extend beyond the Microsoft-provided support lifetime or the support period of the particular Ubuntu version.
-
-See the [web-view of the Ubuntu .NET backports package repository](https://launchpad.net/~dotnet/+archive/ubuntu/backports) for more details.
-
-### Register the Ubuntu .NET backports package repository
-
-Open a terminal and run the following command:
-
-```bash
-sudo add-apt-repository ppa:dotnet/backports
-```
-
-> [!TIP]
-> You do not need to call `apt update`. The `add-apt-repository` command does this by default.
-
-> [!NOTE]
-> The Ubuntu .NET backports package repository is compatible with the built-in Ubuntu feed. Therefore you do not need to configure your package manager to ignore .NET packages in the built-in Ubuntu feed.
-
-### Unregister the Ubuntu .NET backports package repository
-
-If you no longer want to consume packages from the Ubuntu .NET backports package repository you can unregister it. Open a terminal and run the following command:
-
-```bash
-sudo add-apt-repository --remove ppa:dotnet/backports
-```
-
-> [!IMPORTANT]
-> Unregistering the Ubuntu .NET backports package repository does not uninstall any packages.
-
-### add-apt-repository command not found
-
-The [`add-apt-repository(1)`](https://manpages.ubuntu.com/manpages/en/man1/add-apt-repository.1.html) utility is pre-installed on most Ubuntu installations.
-
-If you receive an error message that the `add-apt-repository` command was not found, you have to install the `software-properties-common` package, which provides this command. Open a terminal and run the following commands:
-
-```bash
-sudo apt update
-sudo apt install software-properties-common
-```
 
 ## Register the Microsoft package repository
 
@@ -187,7 +129,7 @@ The Microsoft package repository contains all versions of .NET that were previou
 Preview releases are **not** available in the Microsoft package repository. For more information, see [Install preview versions](#install-preview-versions).
 
 > [!CAUTION]
-> We recommend that you only use one repository to manage all of your .NET installs. If you've previously installed .NET with the Ubuntu repository, you must clean the system of .NET packages and configure APT to ignore the Ubuntu feeds. For more information about how to do this, see [I need a version of .NET that isn't provided by my Linux distribution](linux-package-mixup.md?pivots=os-linux-ubuntu#i-need-a-version-of-net-that-isnt-provided-by-my-linux-distribution).
+> We recommend that you only use one repository to manage all of your .NET installs. If you've previously installed .NET with the Ubuntu repository, you must clean the system of .NET packages and configure the APT to ignore the Ubuntu feed. For more information about how to do this, see [I need a version of .NET that isn't provided by my Linux distribution](linux-package-mixup.md?pivots=os-linux-ubuntu#i-need-a-version-of-net-that-isnt-provided-by-my-linux-distribution).
 
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
 
@@ -209,13 +151,13 @@ sudo apt update
 ```
 
 > [!TIP]
-> The previous script was written for Ubuntu and it might not work if you're using a derived distribution, such as Linux Mint. It's likely that the `$repo_version` variable won't be assigned the correct value, making the URI for the `wget` command invalid. This variable maps to the specific Ubuntu version you want to get packages for, such as 22.04 or 23.10.
+> The previous script was written for Ubuntu and it might not work if you're using a derived distribution, such as Linux Mint. It's likely that the `$repo_version` variable won't be assigned the correct value, making the URI for the `wget` command invalid. This variable maps to the specific Ubuntu version you want to get packages for, such as 22.10 or 23.04.
 >
 > You can use a web browser and navigate to <https://packages.microsoft.com/config/ubuntu/> to see which versions of Ubuntu are available to use as the `$repo_version` value.
 
 ## Install .NET
 
-After you've [registered the Microsoft package repository](#register-the-microsoft-package-repository), or if the Ubuntu Feeds supports the .NET package for your Ubuntu version, you can install .NET through the package manager with the `sudo apt install <package-name>` command. Replace `<package-name>` with the name of the .NET package you want to install. For example, to install .NET SDK 8.0, use the command `sudo apt install dotnet-sdk-8.0`. The following table lists the currently supported .NET packages:
+After you've [registered the Microsoft package repository](#register-the-microsoft-package-repository), or if your version of Ubuntu's default feed supports the .NET package, you can install .NET through the package manager with the `sudo apt install <package-name>` command. Replace `<package-name>` with the name of the .NET package you want to install. For example, to install .NET SDK 8.0, use the command `sudo apt install dotnet-sdk-8.0`. The following table lists the currently supported .NET packages:
 
 || Product      | Type    | Package                  |
 |---------|--------------|---------|--------------------------|
@@ -229,7 +171,7 @@ After you've [registered the Microsoft package repository](#register-the-microso
 | **6.0**    | .NET         | Runtime | `dotnet-runtime-6.0`     |
 | **6.0**    | .NET         | SDK     | `dotnet-sdk-6.0`         |
 
-If you want to install an unsupported version of .NET, check the [Supported distributions](#supported-distributions) section to see if that version of .NET is available. Then, substitute the **version** of .NET you want to install. For example, to install ASP.NET Core 8.0, use the package name `aspnetcore-runtime-8.0`.
+If you want to install an unsupported version of .NET, check the [Supported distributions](#supported-distributions) section to see if that version of .NET is available. Then, substitute the **version** of .NET you want to install. For example, to install ASP.NET Core 2.1, use the package name `aspnetcore-runtime-2.1`.
 
 > [!TIP]
 > If you're not creating .NET apps, install the ASP.NET Core runtime as it includes the .NET runtime and also supports ASP.NET Core apps.
@@ -301,7 +243,6 @@ If you're using an Ubuntu version prior to 23.10, try the following commands:
 
 When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you must install these dependencies to run your app:
 
-- ca-certificates
 - libc6
 - libgcc1 (for 16.x and 18.x)
 - libgcc-s1 (for 20.x or later)
@@ -310,8 +251,8 @@ When you install with a package manager, these libraries are installed for you. 
 - libicu60 (for 18.x)
 - libicu66 (for 20.x)
 - libicu70 (for 22.04)
-- libicu72 (for 23.10)
-- libicu74 (for 24.04 or later)
+- libicu71 (for 22.10)
+- libicu72 (for 23.04 or later)
 - liblttng-ust1 (for 22.x or later)
 - libssl1.0.0 (for 16.x)
 - libssl1.1 (for 18.x, 20.x)

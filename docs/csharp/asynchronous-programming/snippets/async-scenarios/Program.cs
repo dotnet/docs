@@ -62,7 +62,7 @@ public class Program
             "https://dotnetfoundation.org",
             "https://learn.microsoft.com/visualstudio",
             "https://learn.microsoft.com/windows",
-            "https://learn.microsoft.com/maui"
+            "https://learn.microsoft.com/xamarin"
     };
 
     private static void Calculate()
@@ -205,7 +205,7 @@ public class Program
 // https://dotnetfoundation.org: 16
 // https://learn.microsoft.com/visualstudio: 0
 // https://learn.microsoft.com/windows: 0
-// https://learn.microsoft.com/maui: 6
+// https://learn.microsoft.com/xamarin: 6
 // Total: 238
 // Retrieving User objects with list of IDs...
 // 1: isEnabled= False

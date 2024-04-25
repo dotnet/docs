@@ -13,9 +13,9 @@ helpviewer_keywords:
 
 The tables in this article provide the hardware, operating system, and software requirements for the following .NET Framework versions:
 
-- .NET Framework 4.6.2.
-- .NET Framework 4.7 and its point releases (4.7.1 and 4.7.2).
 - .NET Framework 4.8 and its point release (4.8.1).
+- .NET Framework 4.7 and its point releases (4.7.1 and 4.7.2).
+- .NET Framework 4.6.2.
 
 For information on earlier .NET Framework versions, see [.NET Framework versions and dependencies](../migration-guide/versions-and-dependencies.md).
 

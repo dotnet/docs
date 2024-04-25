@@ -4,7 +4,7 @@ description: "Learn how to authenticate and authorize your app service applicati
 author: haywoodsloan
 ms.topic: how-to
 ms.date: 04/19/2024
-zone_pivot_groups: azure-development-tool-set-two
+zone_pivot_groups: azure-interface
 
 #customer intent: As a .NET developer, I want authenticate and authorize my App Service to Azure OpenAI using Microsoft Entra so that I can securely use AI in my .NET application.
 

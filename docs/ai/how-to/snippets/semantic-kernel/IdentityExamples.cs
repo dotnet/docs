@@ -28,6 +28,7 @@ class IdentityExamples
         await ManagedIdentityExample();
         await AiSearchExample();
         await RedisKeyVaultExample();
+        RedisAppSettingsExample();
     }
 
     static async Task ManagedIdentityExample()
@@ -170,7 +171,7 @@ class IdentityExamples
         // </redisStore>
     }
 
-    static async Task RedisAppSettingsExample()
+    static void RedisAppSettingsExample()
     {
         // <appSettingsConfig>
         // User secrets let you provide connection strings when testing locally
@@ -181,8 +182,8 @@ class IdentityExamples
             .Build();
 
         // Retrieve the Redis connection string obtained from the app settings.
-        // App settings are prefixed with "APPSETTING_"
-        string redisConnectionString = config["APPSETTING_AZURE_REDIS_CONNECT_STRING"]!;
+        // The connection string name should match the entry in application settings
+        string redisConnectionString = config.GetConnectionString("AZURE_REDIS")!;
         // </appSettingsConfig>
     }
 }

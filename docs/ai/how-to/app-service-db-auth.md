@@ -12,7 +12,7 @@ zone_pivot_groups: azure-development-tool-set-two
 
 # Authenticate and authorize App Service to a vector database
 
-This article demonstrates how to manage the connection between your App Service .NET application and a vector database solution. It will cover using Microsoft Entra managed identities for supported services and securely storing connection strings for others.
+This article demonstrates how to manage the connection between your App Service .NET application and a [vector database solution](../conceptual/vector-databases.md). It covers using Microsoft Entra managed identities for supported services and securely storing connection strings for others.
 
 By adding a vector database to your application, you can enable [semantic memories](/semantic-kernel/memories/) for your AI. The [Semantic Kernel SDK](/semantic-kernel/overview) for .NET enables you to easily implement memory storage and recall using your preferred vector database solution.
 
@@ -145,7 +145,7 @@ The following code samples require these additional libraries:
 
     :::code language="csharp" source="./snippets/semantic-kernel/IdentityExamples.cs" id="tokenCredential":::
 
-1. Initialize an `IMemoryStore` object for your vector database, then use it to build a `ISemanticTextMemory`:
+1. Initialize an `IMemoryStore` object for your vector database, then use it to build an `ISemanticTextMemory`:
 
     :::code language="csharp" source="./snippets/semantic-kernel/IdentityExamples.cs" id="aiStore":::
 
@@ -167,25 +167,27 @@ Before following these steps, retrieve a connection string for your vector datab
 
 :::zone target="docs" pivot="azure-portal"
 
-Before following these steps, ensure you have [created a Key Vault using the Azure Portal](/azure/key-vault/general/quick-create-portal).
+> [!IMPORTANT]
+> Before following these steps, ensure you have [created a Key Vault using the Azure Portal](/azure/key-vault/general/quick-create-portal).
 
 1. Navigate to your key vault in the [Azure Portal](https://aka.ms/azureportal).
 1. In the Key Vault left navigation, select **Objects** then select **Secrets**.
 1. Select **+ Generate/Import**.
 1. On the **Create a secret** screen choose the following values:
-   * **Upload options**: Manual.
+   * **Upload options**: `Manual`.
    * **Name**: Type a name for the secret. The secret name must be unique within a Key Vault.
-   * **Value**: The connection string for your vector database
+   * **Value**: The connection string for your vector database.
    * Leave the other values to their defaults. Select **Create**.
-1. Once you receive the message that the secret has been successfully created, it is ready to use in your application.
+1. When you receive the message that the secret has been successfully created, it's ready to use in your application.
 
 :::zone-end
 
 :::zone target="docs" pivot="azure-cli"
 
-Before following these steps, ensure you have [created a Key Vault using the Azure CLI](/azure/key-vault/general/quick-create-cli).
+> [!IMPORTANT]
+> Before following these steps, ensure you have [created a Key Vault using the Azure CLI](/azure/key-vault/general/quick-create-cli).
 
-1. Grant your user account permissions to your key vault through Role-Based Access Control (RBAC), assign a role using the Azure CLI command `az role assignment create`:
+1. Grant your user account permissions to your key vault through Role-Based Access Control (RBAC), assign a role using the Azure CLI command [`az role assignment create`](/cli/azure/role/assignment?view=azure-cli-latest#az-role-assignment-create):
 
     ```azurecli
     az role assignment create \
@@ -194,7 +196,7 @@ Before following these steps, ensure you have [created a Key Vault using the Azu
     --scope "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.KeyVault/vaults/{keyVaultName}"
     ```
 
-1. Add the connection string to Key Vault using the Azure CLI command `az keyvault secret set`:
+1. Add the connection string to Key Vault using the Azure CLI command [`az keyvault secret set`](/cli/azure/keyvault/secret?view=azure-cli-latest#az-keyvault-secret-set):
 
     ```azurecli
     az keyvault secret set \
@@ -207,18 +209,18 @@ Before following these steps, ensure you have [created a Key Vault using the Azu
 
 ### Grant your App Service access to Key Vault
 
-1. Follow these steps to [assign a managed identity to your App Service](#add-a-managed-identity-to-app-service)
-1. Follow these steps to [add the `Key Vault Secrets User` and `Key Vault Reader` roles to your managed identity](#assign-a-azure-role-to-your-managed-identity)
+1. [Assign a managed identity to your App Service](#add-a-managed-identity-to-app-service).
+1. [Add the `Key Vault Secrets User` and `Key Vault Reader` roles to your managed identity](#assign-a-azure-role-to-your-managed-identity).
 
 ### Implement connection string retrieval from Key Vault
 
-The following code samples require these additional libraries:
+To use the following code samples, you need these additional libraries:
 
 * [`Azure.Identity` NuGet package](https://www.nuget.org/packages/Azure.Identity)
 * [`Azure.Extensions.AspNetCore.Configuration.Secrets` NuGet package](https://www.nuget.org/packages/Azure.Extensions.AspNetCore.Configuration.Secrets)
 * [`Microsoft.Extensions.Configuration` NuGet package](https://www.nuget.org/packages/Microsoft.Extensions.Configuration)
 
-These code samples show integrating a Redis database, but they can be applied to any vector database that supports connection strings.
+These code samples use a Redis database, but you can apply them to any vector database that supports connection strings.
 
 1. Initialize a `DefaultAzureCredential` object to pick up your app's managed identity:
 
@@ -228,7 +230,7 @@ These code samples show integrating a Redis database, but they can be applied to
 
     :::code language="csharp" source="./snippets/semantic-kernel/IdentityExamples.cs" id="vaultConfig":::
 
-1. Use the connection string from Key Vault to initialize an `IMemoryStore` object for your vector database, then use it to build a `ISemanticTextMemory`:
+1. Use your vector database connection string from Key Vault to initialize an `IMemoryStore` object, and then use it to build an `ISemanticTextMemory`:
 
     :::code language="csharp" source="./snippets/semantic-kernel/IdentityExamples.cs" id="redisStore":::
 
@@ -240,24 +242,25 @@ These code samples show integrating a Redis database, but they can be applied to
 
     :::code language="csharp" source="./snippets/semantic-kernel/IdentityExamples.cs" id="useMemory":::
 
-## Use app settings to store connection secrets
+## Use application settings to store connection secrets
 
-If a vector database doesn't support Microsoft Entra authentication, you can use the App Service app settings to store your connection secrets. By using app settings you can store your connection secrets without provisioning any additional Azure resources.
+If a vector database doesn't support Microsoft Entra authentication, you can use the App Service application settings to store your connection secrets. By using application settings you can store your connection secrets without provisioning any additional Azure resources.
 
 Before following these steps, retrieve a connection string for your vector database. For example, see [Use Azure Cache for Redis in .NET Framework](/azure/azure-cache-for-redis/cache-dotnet-how-to-use-azure-redis-cache#retrieve-host-name-ports-and-access-keys-from-the-azure-portal).
 
-### Add a connection string to app settings
+### Add a connection string to application settings
 
 :::zone target="docs" pivot="azure-portal"
 
 1. Navigate to your app's page on the [Azure Portal](https://aka.ms/azureportal).
 1. In the app's left menu, select **Configuration** > **Application settings**.
-    * By default, values for app settings are hidden in the portal for security.
-    * To see a hidden value of an app setting, select its Value field.
-1. Select **New application setting**.
-1. On the **Add/Edit application setting** screen choose the following values:
+    * By default, values for application settings are hidden in the portal for security.
+    * To see a hidden value of an application setting, select its Value field.
+1. Select **New connection setting**.
+1. On the **Add/Edit connection string** screen choose the following values:
    * **Name**: Type a name for the setting. The setting name must be unique.
-   * **Value**: The connection string for your vector database
+   * **Value**: The connection string for your vector database.
+   * **Type**: The type of connection, `Custom` if no others apply.
    * Leave the other values to their defaults. Select **OK**.
 1. Select **Save** back in the Configuration page.
 
@@ -265,31 +268,32 @@ Before following these steps, retrieve a connection string for your vector datab
 
 :::zone target="docs" pivot="azure-cli"
 
-Add or edit an app setting with the Azure CLI command `az webapp config app settings set`:
+Add or edit an app setting with the Azure CLI command [`az webapp config connection-string set`](/cli/azure/webapp/config/connection-string?view=azure-cli-latest#az-webapp-config-connection-string-set):
 
 ```azurecli
-az webapp config appsettings set \
+az webapp config connection-string set \
 --name "{appName}" \
 --resource-group "{groupName}" \
---settings {secretName}="{connectionString}"
+--connection-string-type "{connectionType}" \
+--settings {connectionName}='{connectionString}'
 ```
 
 :::zone-end
 
 ### Implement connection string retrieval from app settings
 
-The following code samples require these additional libraries:
+To use the following code samples, you need these additional libraries:
 
 * [`Microsoft.Extensions.Configuration` NuGet package](https://www.nuget.org/packages/Microsoft.Extensions.Configuration)
 * [`Microsoft.Extensions.Configuration.EnvironmentVariables` NuGet package](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.EnvironmentVariables)
 
-These code samples show integrating a Redis database, but they can be applied to any vector database that supports connection strings.
+These code samples use a Redis database, but you can apply them to any vector database that supports connection strings.
 
-1. Add environment variables when building your configuration, this will map your app settings to the `IConfigurationRoot` object prefixed with `APPSETTING_`:
+1. Add environment variables when building your configuration, this will map your connection strings to the `IConfigurationRoot` object:
 
     :::code language="csharp" source="./snippets/semantic-kernel/IdentityExamples.cs" id="appSettingsConfig":::
 
-1. Use the connection string from Key Vault to initialize an `IMemoryStore` object for your vector database, then use it to build a `ISemanticTextMemory`:
+1. Use your vector database connection string from app settings to initialize an `IMemoryStore` object, and then use it to build an `ISemanticTextMemory`:
 
     :::code language="csharp" source="./snippets/semantic-kernel/IdentityExamples.cs" id="redisStore":::
 

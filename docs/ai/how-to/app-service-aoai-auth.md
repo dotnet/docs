@@ -12,7 +12,7 @@ zone_pivot_groups: azure-development-tool-set-two
 
 # Authenticate and authorize App Service to Azure OpenAI using Microsoft Entra and the Semantic Kernel SDK
 
-This article demonstrates how to use Microsoft Entra managed identities to authenticate and authorize an App Service application to an Azure OpenAI resource.
+This article demonstrates how to use [Microsoft Entra managed identities](/azure/app-service/overview-managed-identity) to authenticate and authorize an App Service application to an Azure OpenAI resource.
 
 By using a managed identity from Microsoft Entra, your App Service application can easily access protected Azure OpenAI resources without having to manually provision or rotate any secrets.
 

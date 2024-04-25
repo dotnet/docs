@@ -1,11 +1,11 @@
 ---
-title: "Let Agents and Copilots Bring Functionality to Your App"
-description: "Learn how agents and copilots intelligently extend the functionality of LLMs to efficiently meet user goals in .NET."
+title: "Agents and Copilots Bring Automation and Interactive Assistance to Your App"
+description: "Learn how agents and copilots intelligently extend the functionality of LLMs to automatically meet user goals in .NET."
 author: catbutler
 ms.topic: concept-article #Don't change.
 ms.date: 04/15/2024
 
-#customer intent: As a .NET developer, I want to understand how agents and copilots extend the functionality of AI apps, so that my apps can handle any type of content and meet more user goals.
+#customer intent: As a .NET developer, I want to understand how agents and copilots extend the functionality of AI apps, so that my app users can handle any type of content and meet more user goals.
 
 ---
 
@@ -13,14 +13,16 @@ ms.date: 04/15/2024
 
 Agents and copilots both extend an LLM's capabilities by intelligently invoking external functionality, such as sending an email.
 
-- **An agent** is an artificial intelligence that can answer questions and automate processes for users. Agents can determine which functions will meet a user's goal, and then call those functions on the user's behalf.
-- **A copilot** is a type of agent that works side-by-side with a user. Unlike an agent, a copilot isn't fully automated&mdash;it relies on user interaction. A copilot can help a user complete a task by providing suggestions and recommendations.
+- An *agent* is an artificial intelligence that can answer questions and automate processes for users. Agents can determine which functions will meet a user's goal, and then call those functions on the user's behalf.
+- A *copilot* is a type of agent that works side-by-side with a user. Unlike an agent, a copilot isn't fully automated&mdash;it relies on user interaction. A copilot can help a user complete a task by providing suggestions and recommendations.
 
-For example, suppose you're building an email chat helper app. Along with the LLM, you'll also need a way to perform email-related actions, as well as functions for searching, summarizing, determining intent, and the like. Creating the plugins is only half the battle: you still need to invoke the right functions at the right time, a process with many opportunities for errors and inefficiencies. An agent can handle it better.
+For example, suppose you're building an email chat helper app. Along with the LLM, you'll also need a plugin to perform email-related actions, as well as plugins for searching, summarizing, determining intent, and the like. You can use [native functions](/semantic-kernel/agents/plugins/using-the-kernelfunction-decorator?tabs=Csharp#creating-your-native-functions), [out-of-the-box plugins](/semantic-kernel/agents/plugins/out-of-the-box-plugins?tabs=Csharp), and your own [custom plugins](/semantic-kernel/agents/plugins/?tabs=Csharp#adding-functions-to-plugins).
 
-## Agents automate processes
+Creating the plugins is only half the battle: you still need to invoke the right functions at the right time, a process that can be error-prone and inefficient. An agent can handle it better.
 
-An agent automatically decides what sequence of functions an LLM needs in order to reach a goal. For example, suppose you have a chat app that reviews new inbox items and determines what action each item requires. If you set up an agent, it can orchestrate the necessary plugin functions and perform the steps automatically.
+An agent automatically decides what sequence of functions an LLM needs to reach a goal. For example, suppose you have a chat app that reviews new inbox items and determines what action each item requires. If you set up an agent, it can orchestrate the necessary plugin functions and perform the steps automatically.
+
+## Components of an agent
 
 Each agent has three core building blocks: a persona, plugins, and planners.
 
@@ -32,19 +34,19 @@ Each agent has three core building blocks: a persona, plugins, and planners.
 
 An agent's persona is its identity: any plugins and planners that the agent uses are tools, but the persona determines how it uses those tools. You use [instructions](prompt-engineering-dotnet.md#use-instructions-to-tell-the-model-what-to-do) in a prompt to establish an agent's persona.
 
-For example, you can use instructions to tell the agent that it is helping people manage emails, and to explain its decisions as it makes them.
+For example, you can use instructions to tell an agent that it is helping people manage emails, and to explain its decisions as it makes them. Your prompt might look something like this:
+
+```csharp
+prompt = $"""
+<message role="system">You are a friendly assistant helping people with emails. When you decide to peform an action, explain your decision and then perform the action.</message>
+"""
+```
 
 ### Plugins
 
-You use [plugins](/semantic-kernel/agents/plugins/?tabs=Csharp) to do things an LLM can't do alone, such as:
+You use [plugins](/semantic-kernel/agents/plugins/?tabs=Csharp) to do things an LLM can't do alone, such as retrieving data from external data sources or completing tasks in the real world.
 
-- Retrieving data from external data sources
-- Knowing what time it is
-- Performing complex math
-- Completing tasks in the real world
-- Memorizing and recalling information
-
-For example, an LLM can't send an email, so to add that function to a chat app, you'd need a plugin.
+For example, an LLM can't send an email, so to add that function to a chat app, you'd need to create a plugin. To process text from the emails, you could use [core plugins](/semantic-kernel/agents/plugins/out-of-the-box-plugins?tabs=Csharp#core-plugins), such as the [ConversationSummaryPlugin](/dotnet/api/microsoft.semantickernel.plugins.core.conversationsummaryplugin?view=semantic-kernel-dotnet).
 
 Make sure you clearly document the functions in your plugins&mdash;planners use this information to determine what functions are available.
 
@@ -74,7 +76,7 @@ Very handy, but what if the user doesn't like the email body? A copilot adds a u
 1. Get the email address of the recipient
 1. Get the topic of the email
 1. Generate the subject and body of the email
-**1. Review the email with the user and make adjustments**
+1. **Review the email with the user and make adjustments**
 1. Send the email
 
 ### Semantic Kernel Chat Copilot app

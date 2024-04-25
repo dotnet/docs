@@ -21,7 +21,7 @@ items:
   items:
   - name: Authenticate App Service to Azure OpenAI
     href: how-to/app-service-aoai-auth.md
-  - name: Auth from App Service to Vector DBs
+  - name: Authenticate App Service to a vector database
     href: how-to/app-service-db-auth.md
   - name: Use custom and local AI models with the Semantic Kernel SDK
     href: how-to/work-with-local-models.md

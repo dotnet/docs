@@ -60,7 +60,7 @@ The templates that ship with the .NET SDK have the following additional options:
 
 - **`-f|--framework <FRAMEWORK>`**
 
-  Specifies the [framework](../../standard/frameworks.md) to target. Values: `net8.0`, `net7.0`, `net6.0`, or `netcoreapp3.1` to create a .NET Class Library or `netstandard2.1` or `netstandard2.0` to create a .NET Standard Class Library. The default value for .NET SDK 8.0.x is `net8.0`.
+  Specifies the [framework](../../standard/frameworks.md) to target. Values: `net8.0`, `net7.0`, or `net6.0` to create a .NET Class Library, or `netstandard2.1` or `netstandard2.0` to create a .NET Standard Class Library. The default value for .NET SDK 8.0.x is `net8.0`.
 
   To create a project that targets a framework earlier than the SDK that you're using, see [`--framework` for `console` projects](#template-options) earlier in this article.
 

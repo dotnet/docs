@@ -105,7 +105,7 @@ Provides methods to sequentially iterate through a collection of frozen objects 
 Provides methods to sequentially iterate through a collection of threads in the CLR.
 
 [IMethodMalloc Interface](imethodmalloc-interface.md)\
-Provides the [Alloc](imethodmalloc-alloc-method.md) method to allocate memory for a new Microsoft intermediate language (MSIL) function body.
+Provides the [Alloc](imethodmalloc-alloc-method.md) method to allocate memory for a new common intermediate language (CIL) function body.
 
 ## Related Sections
 

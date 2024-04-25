@@ -28,7 +28,7 @@ In this tutorial, you learn how to:
 
 ## Image classification transfer learning sample overview
 
-This sample is a C# .NET Core console application that classifies images using a pretrained deep learning TensorFlow model. The code for this sample can be found on the [samples browser](/samples/dotnet/machinelearning-samples/mlnet-image-classification-transfer-learning/).
+This sample is a C# console application that classifies images using a pretrained deep learning TensorFlow model. The code for this sample can be found on the [samples browser](/samples/dotnet/machinelearning-samples/mlnet-image-classification-transfer-learning/).
 
 ## Understand the problem
 

@@ -228,7 +228,7 @@ A property names a value or state of the type and defines methods for getting or
 [!code-csharp[Conceptual.Types.Members.Properties#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.types.members.properties/cs/example.cs#1)]
 [!code-vb[Conceptual.Types.Members.Properties#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.types.members.properties/vb/example.vb#1)]
 
-In addition to including the property itself, the Microsoft intermediate language (MSIL) for a type that contains a readable property includes a `get_`*propertyname* method, and the MSIL for a type that contains a writable property includes a `set_`*propertyname* method.
+In addition to including the property itself, the common intermediate language (CIL) for a type that contains a readable property includes a `get_`*propertyname* method, and the CIL for a type that contains a writable property includes a `set_`*propertyname* method.
 
 ### Methods
 

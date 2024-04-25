@@ -247,7 +247,7 @@ Calling the <xref:System.Linq.Enumerable.Single%2A?displayProperty=nameWithType>
 
 ### Dynamic cross-application domain field access
 
-The <xref:System.Reflection.Emit.OpCodes.Ldflda?displayProperty=nameWithType> Microsoft intermediate language (MSIL) instruction throws an <xref:System.InvalidOperationException> exception if the object containing the field whose address you are trying to retrieve is not within the application domain in which your code is executing. The address of a field can only be accessed from the application domain in which it resides.
+The <xref:System.Reflection.Emit.OpCodes.Ldflda?displayProperty=nameWithType> common intermediate language (CIL) instruction throws an <xref:System.InvalidOperationException> exception if the object containing the field whose address you are trying to retrieve is not within the application domain in which your code is executing. The address of a field can only be accessed from the application domain in which it resides.
 
 ## Throw an InvalidOperationException exception
 

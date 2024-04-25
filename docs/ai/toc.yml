@@ -5,9 +5,23 @@ items:
   items:
   - name: How generative AI and LLMs work
     href: conceptual/how-genai-and-llms-work.md
+  - name: Embeddings preserve semantic meaning
+    href: conceptual/embeddings.md
+  - name: Vector databases support semantic memory  
+    href: conceptual/vector-databases.md
+  - name: Prompt engineering
+    href: conceptual/prompt-engineering-dotnet.md
+  - name: Chain of thought prompting
+    href: conceptual/chain-of-thought-prompting.md
+  - name: Zero-shot and few-shot learning
+    href: conceptual/zero-shot-learning.md
+  - name: Retrieval-augmented generation
+    href: conceptual/rag.md
 - name: How-to articles
   items:
   - name: Use Redis for memory storage with the Semantic Kernel SDK
     href: how-to/use-redis-for-memory.md
+  - name: Use custom and local AI models with the Semantic Kernel SDK
+    href: how-to/work-with-local-models.md
 - name: Tutorials
   items: []

@@ -1,2 +1,2 @@
 await IdentityExamples.Examples();
-﻿await LocalModelExamples.Examples();
+await LocalModelExamples.Examples();

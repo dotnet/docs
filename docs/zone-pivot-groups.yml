@@ -94,7 +94,7 @@ groups:
       title: Azure Storage
     - id: azure-cosmos-db-nosql
       title: Azure Cosmos DB for NoSQL
-- id: azure-development-tool-set-one
+- id: azure-development-tool
   title: Azure development tool
   prompt: Choose an Azure development tool
   pivots:
@@ -106,7 +106,7 @@ groups:
       title: Azure Bicep
 - id: azure-interface
   title: Azure interface
-  prompt: Choose an Azure development tool
+  prompt: Choose an Azure interface
   pivots:
     - id: azure-portal
       title: Azure Portal

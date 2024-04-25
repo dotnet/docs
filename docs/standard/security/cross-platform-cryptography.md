@@ -51,7 +51,7 @@ The underlying ciphers and chaining are done by the system libraries.
 
 Authenticated encryption (AE) support is provided for AES-CCM, AES-GCM, and ChaCha20Poly1305 via the <xref:System.Security.Cryptography.AesCcm?displayProperty=fullName>, <xref:System.Security.Cryptography.AesGcm?displayProperty=fullName>, and <xref:System.Security.Cryptography.ChaCha20Poly1305?displayProperty=fullName> classes, respectively.
 
-As authenticated encryption requires newer platform APIs to support the algorithm, support may not be present on all platforms. The `IsSupported` static property on the classes for the algorithm can be used to detect at runtime if the current platform supports the algorithm or not.
+Since authenticated encryption requires newer platform APIs to support the algorithm, support may not be present on all platforms. The `IsSupported` static property on the classes for the algorithm can be used to detect at runtime if the current platform supports the algorithm or not.
 
 | Cipher + Mode     | Windows                 | Linux          | macOS   | iOS, tvOS, MacCatalyst | Android       | Browser |
 |-------------------|-------------------------|----------------|---------|------------------------|---------------|---------|

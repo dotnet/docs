@@ -46,7 +46,7 @@ If a vector database service supports Microsoft Entra authentication, you can us
 Run the `az webapp identity assign` command to create a system-assigned identity:
 
 ```azurecli
-az webapp identity assign --name <app-name> --resource-group <group-name>
+az webapp identity assign --name {appName} --resource-group {groupName}
 ```
 
 :::zone-end
@@ -73,13 +73,13 @@ To create an app with a user-assigned identity, first create the identity and th
 1. Create a user-assigned identity:
 
     ```azurecli
-    az identity create --resource-group <group-name> --name <identity-name>
+    az identity create --resource-group {groupName} --name {identityName}
     ```
 
 1. Assign the identity to your app:
 
     ```azurecli
-    az webapp identity assign --resource-group <group-name> --name <app-name> --identities <identity-id>
+    az webapp identity assign --resource-group {groupName} --name {appName} --identities {identityId}
     ```
 
 :::zone-end

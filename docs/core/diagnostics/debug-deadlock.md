@@ -18,7 +18,7 @@ In this tutorial, you will:
 > - Investigate an app that has stopped responding
 > - Generate a core dump file
 > - Analyze process threads in the dump file
-> - Analyze callstacks and sync blocks
+> - Analyze call stacks and sync blocks
 > - Diagnose and solve a deadlock
 
 ## Prerequisites

@@ -1,6 +1,6 @@
 ---
 title: 'Tutorial: Detect anomalies in phone calls'
-description: Learn how to build an anomaly detection application for time series data. This tutorial creates a .NET Core console application using C# in Visual Studio 2019.
+description: Learn how to build an anomaly detection application for time series data. This tutorial creates a .NET console application using C# in Visual Studio 2019.
 ms.date: 07/28/2021
 ms.topic: tutorial
 ms.custom: mvc
@@ -8,7 +8,7 @@ ms.custom: mvc
 ---
 # Tutorial: Detect anomalies in time series with ML.NET
 
-Learn how to build an anomaly detection application for time series data. This tutorial creates a .NET Core console application using C# in Visual Studio 2019.
+Learn how to build an anomaly detection application for time series data. This tutorial creates a .NET console application using C# in Visual Studio 2019.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]

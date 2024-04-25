@@ -24,7 +24,7 @@ For simple communication across processes, consider inter-process communication 
 
 Across machines, use a network-based solution as an alternative. Preferably, use a low-overhead plain text protocol, such as HTTP. The [Kestrel web server](/aspnet/core/fundamentals/servers/kestrel), which is the web server used by ASP.NET Core, is an option here. Also, consider using <xref:System.Net.Sockets> for network-based, cross-machine scenarios. StreamJsonRpc, mentioned earlier, can be used for JSON or binary (via MessagePack) communication over web sockets.
 
-For more messaging options, see [.NET Open Source Developer Projects: Messaging](https://github.com/Microsoft/dotnet/blob/master/dotnet-developer-projects.md#messaging).
+For more messaging options, see [.NET Open Source Developer Projects: Messaging](https://github.com/Microsoft/dotnet/blob/main/dotnet-developer-projects.md#messaging).
 
 Because remoting is not supported, calls to `BeginInvoke()` and `EndInvoke()` on delegate objects will throw `PlatformNotSupportedException`. For more information, see [Migrating Delegate BeginInvoke Calls For .NET Core](https://devblogs.microsoft.com/dotnet/migrating-delegate-begininvoke-calls-for-net-core/).
 

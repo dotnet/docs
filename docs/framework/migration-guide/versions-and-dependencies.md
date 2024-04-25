@@ -53,7 +53,7 @@ Jump to:
 
 - [New features](../whats-new/index.md#whats-new-in-net-framework-481)
 - New accessibility features
-- [Release notes](https://github.com/Microsoft/dotnet/tree/master/releases/net481/README.md)
+- [Release notes](https://github.com/Microsoft/dotnet/tree/main/releases/net481/README.md)
 
 | | Versions |
 |-|-|
@@ -72,7 +72,7 @@ For more information, see [instructions](how-to-determine-which-versions-are-ins
 
 - [New features](../whats-new/index.md#whats-new-in-net-framework-48)
 - [New in accessibility](../whats-new/whats-new-in-accessibility.md#whats-new-in-accessibility-in-net-framework-48)
-- [Release notes](https://github.com/Microsoft/dotnet/tree/master/releases/net48/README.md)
+- [Release notes](https://github.com/Microsoft/dotnet/tree/main/releases/net48/README.md)
 
 | | Versions |
 |-|-|
@@ -93,7 +93,7 @@ For more information, see [instructions](how-to-determine-which-versions-are-ins
 
 - [New features](../whats-new/index.md#whats-new-in-net-framework-472)
 - [New in accessibility](../whats-new/whats-new-in-accessibility.md#whats-new-in-accessibility-in-net-framework-472)
-- [Release notes](https://github.com/Microsoft/dotnet/tree/master/releases/net472/README.md)
+- [Release notes](https://github.com/Microsoft/dotnet/tree/main/releases/net472/README.md)
 
 | | Versions |
 |-|-|
@@ -116,7 +116,7 @@ For more information, see [instructions](how-to-determine-which-versions-are-ins
 
 - [New features](../whats-new/index.md#whats-new-in-net-framework-471)
 - [New in accessibility](../whats-new/whats-new-in-accessibility.md#whats-new-in-accessibility-in-net-framework-471)
-- [Release notes](https://github.com/Microsoft/dotnet/tree/master/releases/net471/README.md)
+- [Release notes](https://github.com/Microsoft/dotnet/tree/main/releases/net471/README.md)
 
 | | Versions |
 |-|-|
@@ -134,7 +134,7 @@ For more information, see [instructions](how-to-determine-which-versions-are-ins
 ### .NET Framework 4.7
 
 - [New features](../whats-new/index.md#whats-new-in-net-framework-47)
-- [Release notes](https://github.com/Microsoft/dotnet/tree/master/releases/net47/README.md)
+- [Release notes](https://github.com/Microsoft/dotnet/tree/main/releases/net47/README.md)
 
 |                    | Versions                                                                                              |
 |--------------------|-------------------------------------------------------------------------------------------------------|
@@ -152,7 +152,7 @@ For more information, see [instructions](how-to-determine-which-versions-are-ins
 ### .NET Framework 4.6.2
 
 - [New features](../whats-new/index.md#whats-new-in-net-framework-462)
-- [Release notes](https://github.com/Microsoft/dotnet/tree/master/releases/net462/README.md)
+- [Release notes](https://github.com/Microsoft/dotnet/tree/main/releases/net462/README.md)
 
 |                    | Versions                                                                                                   |
 |--------------------|------------------------------------------------------------------------------------------------------------|
@@ -170,7 +170,7 @@ For more information, see [instructions](how-to-determine-which-versions-are-ins
 ### .NET Framework 4.6.1
 
 - [New features](../whats-new/index.md#whats-new-in-net-framework-461)
-- [Release notes](https://github.com/Microsoft/dotnet/tree/master/releases/net461/README.md)
+- [Release notes](https://github.com/Microsoft/dotnet/tree/main/releases/net461/README.md)
 
 |                                       | Versions                                                                  |
 |---------------------------------------|---------------------------------------------------------------------------|
@@ -191,7 +191,7 @@ For more information, see [instructions](how-to-determine-which-versions-are-ins
 ### .NET Framework 4.6
 
 - [New features](../whats-new/index.md#whats-new-in-net-2015)
-- [Release notes](https://github.com/Microsoft/dotnet/tree/master/releases/net46/README.md)
+- [Release notes](https://github.com/Microsoft/dotnet/tree/main/releases/net46/README.md)
 
 |                                       | Versions                                                 |
 |---------------------------------------|----------------------------------------------------------|
@@ -210,7 +210,7 @@ For more information, see [instructions](how-to-determine-which-versions-are-ins
 ### .NET Framework 4.5.2
 
 - [New features](../whats-new/index.md#whats-new-in-net-framework-452)
-- [Release notes](https://github.com/Microsoft/dotnet/tree/master/releases/net452/README.md)
+- [Release notes](https://github.com/Microsoft/dotnet/tree/main/releases/net452/README.md)
 
 |                    | Versions                                                 |
 |--------------------|----------------------------------------------------------|
@@ -223,7 +223,7 @@ To determine the installed .NET version, use `Release` DWORD 379893. For more in
 ### .NET Framework 4.5.1
 
 - [New features](../whats-new/index.md#whats-new-in-net-framework-451)
-- [Release notes](https://github.com/Microsoft/dotnet/tree/master/releases/net451/README.md)
+- [Release notes](https://github.com/Microsoft/dotnet/tree/main/releases/net451/README.md)
 
 |                                       | Versions                                                       |
 |---------------------------------------|----------------------------------------------------------------|
@@ -244,7 +244,7 @@ For more information, see [instructions](how-to-determine-which-versions-are-ins
 ### .NET Framework 4.5
 
 - [New features](../whats-new/index.md#whats-new-in-net-framework-45)
-- [Release notes](https://github.com/Microsoft/dotnet/tree/master/releases/net45/README.md)
+- [Release notes](https://github.com/Microsoft/dotnet/tree/main/releases/net45/README.md)
 
 |                                       | Versions                                  |
 |---------------------------------------|-------------------------------------------|

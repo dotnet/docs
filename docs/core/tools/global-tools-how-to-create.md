@@ -42,7 +42,7 @@ This is the first in a series of three tutorials. In this tutorial, you create a
    > <Project Sdk="Microsoft.NET.Sdk">
    >   <PropertyGroup>
    >     <OutputType>Exe</OutputType>
-   >     <TargetFrameworks>netcoreapp3.1;net5.0;net6.0</TargetFrameworks>
+   >     <TargetFrameworks>net8.0;net6.0</TargetFrameworks>
    >   </PropertyGroup>
    > </Project>
    > ```

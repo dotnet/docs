@@ -34,18 +34,18 @@ HRESULT GetCodeChunks (
 
 ## Parameters
 
-`cbufSize`  
+`cbufSize`
 [in] Size of the `chunks` array.
 
-`pcnumChunks`  
+`pcnumChunks`
 [out] The number of chunks returned in the `chunks` array.
 
-`chunks`  
+`chunks`
 [out] An array of "CodeChunkInfo" structures, each of which represents a single chunk of code. If the value of `cbufSize` is 0, this parameter can be null.
 
 ## Remarks
 
-The code chunks will never overlap, and they will follow the order in which they would have been concatenated by [ICorDebugCode::GetCode](icordebugcode-getcode-method.md). A Microsoft intermediate language (MSIL) code object in the .NET Framework version 2.0 will comprise a single code chunk.
+The code chunks will never overlap, and they will follow the order in which they would have been concatenated by [ICorDebugCode::GetCode](icordebugcode-getcode-method.md). A common intermediate language (CIL) code object in the .NET Framework version 2.0 will comprise a single code chunk.
 
 ## Requirements
 

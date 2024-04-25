@@ -29,6 +29,11 @@ The [Semantic Kernel SDK](/semantic-kernel/overview) enables you to easily imple
 
 ## Add a managed identity to App Service
 
+Your application can be granted two types of identities:
+
+* A **system-assigned identity** is tied to your application and is deleted if your app is deleted. An app can only have one system-assigned identity.
+* A **user-assigned identity** is a standalone Azure resource that can be assigned to your app. An app can have multiple user-assigned identities.
+
 ### Add a system-assigned identity
 
 :::zone target="docs" pivot="azure-portal"

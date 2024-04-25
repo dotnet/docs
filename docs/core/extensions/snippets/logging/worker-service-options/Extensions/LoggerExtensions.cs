@@ -11,7 +11,7 @@ public static class LoggerExtensions
     #endregion
 
     #region ProcessingWorkField
-    private static Func<ILogger, DateTime, IDisposable?> s_processingWorkScope;
+    private static readonly Func<ILogger, DateTime, IDisposable?> s_processingWorkScope;
     #endregion
 
     static LoggerExtensions()
@@ -33,7 +33,7 @@ public static class LoggerExtensions
         #region ProcessingWorkAssignment
         s_processingWorkScope =
             LoggerMessage.DefineScope<DateTime>(
-                "Processing work, started at: {DateTime}");
+                "Processing scope, started at: {DateTime}");
         #endregion
     }
 

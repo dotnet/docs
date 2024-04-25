@@ -61,7 +61,7 @@ The EuroSAT dataset contains a collection of satellite images divided into ten c
 
 When first adding Model Builder to the solution it will prompt you to create an `mbconfig` file. The `mbconfig` file keeps track of everything you do in Model Builder to allow you to reopen the session.
 
-1. In Solution Explorer, right-click the **LandUse** project, and select **Add > Machine Learning Model...**.
+1. In Solution Explorer, right-click the **LandUse** project, and select **Add > Machine Learning Model**.
 1. In the dialog, name the Model Builder project **LandUse**, and click **Add**.
 
 ## Choose a scenario

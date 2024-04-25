@@ -1,6 +1,6 @@
 ---
 title: 'Tutorial: Detect anomalies in product sales'
-description: Learn how to build an anomaly detection application for product sales data. This tutorial creates a .NET Core console application using C# in Visual Studio 2019.
+description: Learn how to build an anomaly detection application for product sales data. This tutorial creates a .NET console application using C# in Visual Studio 2019.
 ms.date: 11/11/2021
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0612
@@ -8,7 +8,7 @@ ms.custom: mvc, title-hack-0612
 ---
 # Tutorial: Detect anomalies in product sales with ML.NET
 
-Learn how to build an anomaly detection application for product sales data. This tutorial creates a .NET Core console application using C# in Visual Studio.
+Learn how to build an anomaly detection application for product sales data. This tutorial creates a .NET console application using C# in Visual Studio.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
@@ -266,7 +266,7 @@ Alert   Score   P-Value
 
 ## Change point detection
 
-`Change points` are persistent changes in a time series event stream distribution of values, like level changes and trends. These persistent changes last much longer than `spikes` and could indicate catastrophic event(s). `Change points` are not usually visible to the naked eye, but can be detected in your data using approaches such as in the following method.  The following image is an example of a change point detection:
+`Change points` are persistent changes in a time series event stream distribution of values, like level changes and trends. These persistent changes last much longer than `spikes` and could indicate catastrophic event(s). `Change points` are not usually visible to the naked eye, but can be detected in your data using approaches such as in the following method. The following image is an example of a change point detection:
 
 ![Screenshot that shows a change point detection.](./media/sales-anomaly-detection/change-point-detection.png)
 

@@ -20,7 +20,7 @@ For example, suppose you're building an email chat helper app. Along with the LL
 
 ## Agents automate processes
 
-An agent automatically decides what sequence of functions an LLM needs in order to reach a goal. For example, suppose you have a chat app that reviews new inbox items and determines what action each item requires. If you set up an agent, it can orchestrate the necessary plugin functions and perform the steps automatically.
+An agent automatically decides what sequence of functions an LLM needs to reach a goal. For example, suppose you have a chat app that reviews new inbox items and determines what action each item requires. If you set up an agent, it can orchestrate the necessary plugin functions and perform the steps automatically.
 
 Each agent has three core building blocks: a persona, plugins, and planners.
 

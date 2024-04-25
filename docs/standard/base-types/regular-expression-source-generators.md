@@ -219,45 +219,58 @@ private bool TryMatchAtCurrentPosition(ReadOnlySpan<char> inputSpan)
 {
     int pos = base.runtextpos;
     int matchStart = pos;
+    int charloop_starting_pos = 0, charloop_ending_pos = 0;
     ReadOnlySpan<char> slice = inputSpan.Slice(pos);
     
-    // Match with 2 alternative expressions, atomically.
-    {
-        if (slice.IsEmpty)
+    // Match a character in the set [ab] greedily any number of times.
+    //{
+        charloop_starting_pos = pos;
+        
+        int iteration = slice.IndexOfAnyExcept('a', 'b');
+        if (iteration < 0)
+        {
+            iteration = slice.Length;
+        }
+        
+        slice = slice.Slice(iteration);
+        pos += iteration;
+        
+        charloop_ending_pos = pos;
+        goto CharLoopEnd;
+        
+        CharLoopBacktrack:
+        
+        if (Utilities.s_hasTimeout)
+        {
+            base.CheckTimeout();
+        }
+        
+        if (charloop_starting_pos >= charloop_ending_pos ||
+            (charloop_ending_pos = inputSpan.Slice(charloop_starting_pos, charloop_ending_pos - charloop_starting_pos).LastIndexOfAny('b', 'c')) < 0)
         {
             return false; // The input didn't match.
         }
+        charloop_ending_pos += charloop_starting_pos;
+        pos = charloop_ending_pos;
+        slice = inputSpan.Slice(pos);
         
-        switch (slice[0])
-        {
-            case 'A' or 'a':
-                if ((uint)slice.Length < 3 ||
-                    !slice.Slice(1).StartsWith("bc", StringComparison.OrdinalIgnoreCase)) // Match the string "bc" (ordinal case-insensitive)
-                {
-                    return false; // The input didn't match.
-                }
-                
-                pos += 3;
-                slice = inputSpan.Slice(pos);
-                break;
-                
-            case 'D' or 'd':
-                if ((uint)slice.Length < 3 ||
-                    !slice.Slice(1).StartsWith("ef", StringComparison.OrdinalIgnoreCase)) // Match the string "ef" (ordinal case-insensitive)
-                {
-                    return false; // The input didn't match.
-                }
-                
-                pos += 3;
-                slice = inputSpan.Slice(pos);
-                break;
-                
-            default:
-                return false; // The input didn't match.
-        }
+        CharLoopEnd:
+    //}
+    
+    // Advance the next matching position.
+    if (base.runtextpos < pos)
+    {
+        base.runtextpos = pos;
+    }
+    
+    // Match a character in the set [bc].
+    if (slice.IsEmpty || !char.IsBetween(slice[0], 'b', 'c'))
+    {
+        goto CharLoopBacktrack;
     }
     
     // The input matched.
+    pos++;
     base.runtextpos = pos;
     base.Capture(0, matchStart, pos);
     return true;

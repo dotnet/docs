@@ -84,7 +84,7 @@ To create an app with a user-assigned identity, first create the identity and th
 
 :::zone-end
 
-### Assign a Azure role to your managed identity
+### Assign an Azure role to your managed identity
 
 :::zone target="docs" pivot="azure-portal"
 
@@ -161,7 +161,7 @@ The following code samples require these additional libraries:
 
 If a vector database doesn't support Microsoft Entra authentication, you can use a Key Vault to store your connection secrets and retrieve them with your App Service application. By using a Key Vault to store your connection secrets you can share them with multiple applications, and control access to individual secrets per application.
 
-Before following these steps, retrieve a connection string for your vector database. For example, see [Use Azure Cache for Redis in .NET Framework](/azure/azure-cache-for-redis/cache-dotnet-how-to-use-azure-redis-cache#retrieve-host-name-ports-and-access-keys-from-the-azure-portal).
+Before following these steps, retrieve a connection string for your vector database. For example, see [Use Azure Cache for Redis with an ASP.NET Core web app](/azure/azure-cache-for-redis/cache-web-app-aspnet-core-howto#retrieve-host-name-ports-and-access-keys-from-the-azure-portal).
 
 ### Add a connection string to Key Vault
 
@@ -210,7 +210,7 @@ Before following these steps, retrieve a connection string for your vector datab
 ### Grant your App Service access to Key Vault
 
 1. [Assign a managed identity to your App Service](#add-a-managed-identity-to-app-service).
-1. [Add the `Key Vault Secrets User` and `Key Vault Reader` roles to your managed identity](#assign-a-azure-role-to-your-managed-identity).
+1. [Add the `Key Vault Secrets User` and `Key Vault Reader` roles to your managed identity](#assign-an-azure-role-to-your-managed-identity).
 
 ### Implement connection string retrieval from Key Vault
 

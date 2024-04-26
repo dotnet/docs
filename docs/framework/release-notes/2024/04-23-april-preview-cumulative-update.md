@@ -28,7 +28,7 @@ Addresses an issue where `ISymUnmanagedReader::GetMethodsFromDocumentPosition` a
 
 #### .NET libraries
 
-Addresses an issue which can be triggered in the fbx file parser. (*Applies to: .NET Framework 4.8, 4.8.1.*)
+Addresses an issue that can be triggered in the fbx file parser. (*Applies to: .NET Framework 4.8, 4.8.1.*)
 
 Addresses an issue to use MIST validated implementations of FIPS algorithms. (*Applies to: .NET Framework 4.8, 4.8.1.*)
 

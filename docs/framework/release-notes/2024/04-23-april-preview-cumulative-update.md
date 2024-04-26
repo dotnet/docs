@@ -38,7 +38,7 @@ Addresses an issue with wildcard format changes introduced in IIS 10. (*Applies 
 
 #### WPF
 
-Addresses an issue where apps crash when calling GetWindowText and GetWindowTextLength methods. (*Applies to: .NET Framework 4.8, 4.8.1.*)
+Addresses an issue where apps crash when calling the `GetWindowText` and `GetWindowTextLength` methods. (*Applies to: .NET Framework 4.8, 4.8.1.*)
 
 ## Known issues
 

@@ -15,6 +15,7 @@ ms.date: 11/27/2023
 
 ```dotnetcli
 dotnet build [<PROJECT>|<SOLUTION>] [-a|--arch <ARCHITECTURE>]
+    [--artifacts-path <ARTIFACTS_DIR>]
     [-c|--configuration <CONFIGURATION>] [-f|--framework <FRAMEWORK>]
     [--disable-build-servers]
     [--force] [--interactive] [--no-dependencies] [--no-incremental]
@@ -83,6 +84,10 @@ The project or solution file to build. If a project or solution file isn't speci
 ## Options
 
 [!INCLUDE [arch](../../../includes/cli-arch.md)]
+
+- **`--artifacts-path <ARTIFACTS_DIR>**
+
+  Use the [Artifacts Output Layout](../sdk/artifacts-output.md). All build outputs from the projects will go in subfolders under the specified path, seperated by the project.
 
 [!INCLUDE [configuration](../../../includes/cli-configuration.md)]
 

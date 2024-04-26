@@ -15,6 +15,7 @@ ms.date: 04/04/2024
 
 ```dotnetcli
 dotnet publish [<PROJECT>|<SOLUTION>] [-a|--arch <ARCHITECTURE>]
+    [--artifacts-path <ARTIFACTS_DIR>]
     [-c|--configuration <CONFIGURATION>] [--disable-build-servers]
     [-f|--framework <FRAMEWORK>] [--force] [--interactive]
     [--manifest <PATH_TO_MANIFEST_FILE>] [--no-build] [--no-dependencies]
@@ -124,6 +125,10 @@ For more information, see the following resources:
 ## Options
 
 [!INCLUDE [arch](../../../includes/cli-arch.md)]
+
+- **`--artifacts-path <ARTIFACTS_DIR>**
+
+  Use the [Artifacts Output Layout](../sdk/artifacts-output.md). All publish outputs from the projects will go in subfolders under the specified path, seperated by the project.
 
 [!INCLUDE [configuration](../../../includes/cli-configuration-publish-pack.md)]
 

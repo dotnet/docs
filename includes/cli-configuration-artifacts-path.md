@@ -6,4 +6,4 @@ ms.topic: include
 ---
 - **`--artifacts-path <ARTIFACTS_DIR>`**
 
-  Use the [Artifacts Output Layout](../docs/core/sdk/artifacts-output.md). All output, including build, publish, and pack output, from the command will go in subfolders under the specified path, seperated by the project. Available since .NET 8.
+  All build output files from the executed command will go in subfolders under the specified path, separated by project. For more information see [Artifacts Output Layout](../docs/core/sdk/artifacts-output.md). Available since .NET 8.+

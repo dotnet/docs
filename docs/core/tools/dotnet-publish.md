@@ -126,9 +126,7 @@ For more information, see the following resources:
 
 [!INCLUDE [arch](../../../includes/cli-arch.md)]
 
-- **`--artifacts-path <ARTIFACTS_DIR>**
-
-  Use the [Artifacts Output Layout](../sdk/artifacts-output.md). All publish outputs from the projects will go in subfolders under the specified path, seperated by the project.
+[!INCLUDE [artifacts-path](../../../includes/cli-configuration-artifacts-path.md)]
 
 [!INCLUDE [configuration](../../../includes/cli-configuration-publish-pack.md)]
 

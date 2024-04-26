@@ -95,9 +95,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 [!INCLUDE [arch-no-a](../../../includes/cli-arch-no-a.md)]
 
-- **`--artifacts-path <ARTIFACTS_DIR>**
-
-  Use the [Artifacts Output Layout](../sdk/artifacts-output.md). All test outputs from the projects will go in subfolders under the specified path, seperated by the project.
+[!INCLUDE [artifacts-path](../../../includes/cli-configuration-artifacts-path.md)]
 
 - **`--blame`**
 

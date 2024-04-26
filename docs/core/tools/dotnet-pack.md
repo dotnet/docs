@@ -60,9 +60,7 @@ You can provide MSBuild properties to the `dotnet pack` command for the packing 
 
 ## Options
 
-- **`--artifacts-path <ARTIFACTS_DIR>**
-
-  Use the [Artifacts Output Layout](../sdk/artifacts-output.md). All pack outputs from the projects will go in subfolders under the specified path, seperated by the project.
+[!INCLUDE [artifacts-path](../../../includes/cli-configuration-artifacts-path.md)]
 
 [!INCLUDE [configuration](../../../includes/cli-configuration-publish-pack.md)]
 

@@ -85,9 +85,7 @@ The project or solution file to build. If a project or solution file isn't speci
 
 [!INCLUDE [arch](../../../includes/cli-arch.md)]
 
-- **`--artifacts-path <ARTIFACTS_DIR>**
-
-  Use the [Artifacts Output Layout](../sdk/artifacts-output.md). All build outputs from the projects will go in subfolders under the specified path, seperated by the project.
+[!INCLUDE [artifacts-path](../../../includes/cli-configuration-artifacts-path.md)]
 
 [!INCLUDE [configuration](../../../includes/cli-configuration.md)]
 

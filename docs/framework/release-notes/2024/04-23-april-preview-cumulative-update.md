@@ -24,7 +24,7 @@ This release contains the following quality and reliability improvements.
 
 Addresses an issue where crashes can occur if several threads all concurrently query the `ITypeInfo` implementation of the same managed type. (*Applies to: .NET Framework 4.8, 4.8.1.*)
 
-Addresses an issue with ISymUnmanagedReader::GetMethodsFromDocumentPosition and ISymUnmanagedReader2::GetMethodsInDocument API's might result in incorrect results under certain circumstances. (*Applies to: .NET Framework 4.8.1.*)
+Addresses an issue where `ISymUnmanagedReader::GetMethodsFromDocumentPosition` and `ISymUnmanagedReader2::GetMethodsInDocument` might return incorrect results under certain circumstances. (*Applies to: .NET Framework 4.8.1.*)
 
 #### .NET libraries
 

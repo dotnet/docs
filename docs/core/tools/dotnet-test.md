@@ -17,6 +17,7 @@ ms.date: 03/27/2024
 dotnet test [<PROJECT> | <SOLUTION> | <DIRECTORY> | <DLL> | <EXE>]
     [--test-adapter-path <ADAPTER_PATH>]
     [-a|--arch <ARCHITECTURE>]
+    [--artifacts-path <ARTIFACTS_DIR>]
     [--blame]
     [--blame-crash]
     [--blame-crash-dump-type <DUMP_TYPE>]
@@ -93,6 +94,10 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
   Short form `-a` available in .NET SDK versions earlier than 7.
 
 [!INCLUDE [arch-no-a](../../../includes/cli-arch-no-a.md)]
+
+- **`--artifacts-path <ARTIFACTS_DIR>**
+
+  Use the [Artifacts Output Layout](../sdk/artifacts-output.md). All test outputs from the projects will go in subfolders under the specified path, seperated by the project.
 
 - **`--blame`**
 

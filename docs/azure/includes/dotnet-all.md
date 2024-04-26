@@ -457,8 +457,8 @@
 | Functions Extensions - Dapr | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Dapr/1.0.0) |  |  |
 | Functions Extensions - Dapr Core | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Extensions.Dapr.Core/1.0.0) |  |  |
 | Functions Extensions - HTTP AspNet Core | NuGet [1.2.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore/1.2.1) |  |  |
-| Functions Extensions - Redis | NuGet [0.5.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Redis/0.5.0-preview) |  |  |
-| Functions Extensions - Redis | NuGet [0.5.0-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Redis/0.5.0-preview) |  |  |
+| Functions Extensions - Redis | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Redis/1.0.0) |  |  |
+| Functions Extensions - Redis | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Redis/1.0.0) |  |  |
 | Functions Extensions - WebPubSub | NuGet [1.7.0-beta.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.WebPubSub/1.7.0-beta.1) |  |  |
 | Functions Extensions - Worker Extentions | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Dapr/1.0.0) |  |  |
 | Functions item template pack for Microsoft Template Engine | NuGet [4.0.2945](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.ItemTemplates/4.0.2945) |  | GitHub [4.0.2945](https://github.com/Azure/azure-functions-templates/tree/3.1.1582) |

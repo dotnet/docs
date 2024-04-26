@@ -1,9 +1,16 @@
-﻿static void Main(string[] args)
+﻿using System.ServiceProcess;
+
+public class Class1
 {
-    ServiceBase[] ServicesToRun;
-    ServicesToRun = new ServiceBase[]
+    // <Snippet1>
+    static void Main(string[] args)
     {
-        new MyNewService(args)
-    };
-    ServiceBase.Run(ServicesToRun);
+        ServiceBase[] ServicesToRun;
+        ServicesToRun = new ServiceBase[]
+        {
+            new MyNewService(args)
+        };
+        ServiceBase.Run(ServicesToRun);
+    }
+    // </Snippet1>
 }

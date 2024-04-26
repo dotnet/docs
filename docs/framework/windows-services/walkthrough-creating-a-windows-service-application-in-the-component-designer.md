@@ -362,35 +362,7 @@ Each Windows service has a registry entry under the **HKEY_LOCAL_MACHINE\SYSTEM\
 
 1. In **MyNewService.cs**, or **MyNewService.vb**, change the `MyNewService` constructor to accept and process an input parameter:
 
-   ```csharp
-   public MyNewService(string[] args)
-   {
-       InitializeComponent();
-
-       string eventSourceName = "MySource";
-       string logName = "MyNewLog";
-
-       if (args.Length > 0)
-       {
-          eventSourceName = args[0];
-       }
-
-       if (args.Length > 1)
-       {
-           logName = args[1];
-       }
-
-       eventLog1 = new EventLog();
-
-       if (!EventLog.SourceExists(eventSourceName))
-       {
-           EventLog.CreateEventSource(eventSourceName, logName);
-       }
-
-       eventLog1.Source = eventSourceName;
-       eventLog1.Log = logName;
-   }
-   ```
+   [!code-csharp[VbRadconService#2](./snippets/MyNewService/csharp/MyNewService.cs#ContructorWithArgs)]
 
    ```vb
    Public Sub New(ByVal cmdArgs() As String)
@@ -416,7 +388,7 @@ Each Windows service has a registry entry under the **HKEY_LOCAL_MACHINE\SYSTEM\
 
 1. Select **Program.cs**, or **MyNewService.Designer.vb**, then choose **View Code** from the shortcut menu. In the `Main` method, change the code to add an input parameter and pass it to the service constructor:
 
-   [!code-csharp[VbRadconService](./snippets/MyNewService/csharp/Program-add-parameter.cs?highlight=1,6)]
+   [!code-csharp[VbRadconService](./snippets/MyNewService/csharp/Program-add-parameter.cs#1?highlight=6,11)]
    [!code-vb[VbRadconService](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRadconService/VB/MyNewService.Designer-add-parameter.vb?highlight=1-2)]
 
 1. To specify the command-line arguments, add the following code to the `ProjectInstaller` class in **ProjectInstaller.cs**, or **ProjectInstaller.vb**:
@@ -481,7 +453,7 @@ For more information, see [How to: Install and uninstall services](how-to-instal
 
    You should see your service listed in **Services**, displayed alphabetically by the display name that you set for it.
 
-   ![MyNewService in the Services window.](./media/windowsservices-serviceswindow.png)
+   ![MyNewService in the Services window.](./media/windowsservices-serviceswindow.PNG)
 
 2. To start the service, choose **Start** from the service's shortcut menu.
 

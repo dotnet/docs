@@ -23,7 +23,7 @@ To resolve the errors, do one of the following:
 
 - Remove the explicit `Compile`, `EmbeddedResource`, or `None` items that match the implicit ones listed on the previous table.
 
-- Set the [EnableDefaultItems property](msbuild-props.md#enabledefaultitems) to `false` to disable all implicit file inclusion:
+- Set the [EnableDefaultItems property](../../project-sdk/msbuild-props.md#enabledefaultitems) to `false` to disable all implicit file inclusion:
 
   ```xml
   <PropertyGroup>
@@ -33,7 +33,7 @@ To resolve the errors, do one of the following:
 
   If you want to specify files to be published with your app, you can still use the known MSBuild mechanisms for that, for example, the `Content` element.
 
-- Selectively disable only `Compile`, `EmbeddedResource`, or `None` globs by setting the [EnableDefaultCompileItems](msbuild-props.md#enabledefaultcompileitems), [EnableDefaultEmbeddedResourceItems](msbuild-props.md#enabledefaultembeddedresourceitems), or [EnableDefaultNoneItems](msbuild-props.md#enabledefaultnoneitems) property to `false`:
+- Selectively disable only `Compile`, `EmbeddedResource`, or `None` globs by setting the [EnableDefaultCompileItems](../../project-sdk/msbuild-props.md#enabledefaultcompileitems), [EnableDefaultEmbeddedResourceItems](../../project-sdk/msbuild-props.md#enabledefaultembeddedresourceitems), or [EnableDefaultNoneItems](../../project-sdk/msbuild-props.md#enabledefaultnoneitems) property to `false`:
 
   ```xml
   <PropertyGroup>

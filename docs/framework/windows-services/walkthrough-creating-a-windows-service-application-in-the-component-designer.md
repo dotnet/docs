@@ -1,7 +1,7 @@
 ---
 title: "Tutorial: Create a Windows service app"
 description: In this tutorial, create a Windows service app in Visual Studio that writes messages to an event log. Add features, set status, add installers, and more.
-ms.date: 03/27/2019
+ms.date: 04/25/2024
 ms.topic: tutorial
 dev_langs:
   - "csharp"

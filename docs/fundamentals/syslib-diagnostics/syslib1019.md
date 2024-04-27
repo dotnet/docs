@@ -19,7 +19,7 @@ Ensure the type containing the logging method includes a field of type `ILogger`
 
 ```csharp
 public partial class Foo(ILogger<Foo> logger) {
-    // workaround for https://github.com/dotnet/runtime/issues/91121
+    // Workaround for https://github.com/dotnet/runtime/issues/91121.
     private readonly ILogger _logger = logger;
 }
 ```

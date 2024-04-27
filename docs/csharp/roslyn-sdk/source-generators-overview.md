@@ -72,6 +72,8 @@ In this guide, you'll explore the creation of a source generator using the <xref
 
     > [!TIP]
     > The source generator project needs to target the `netstandard2.0` TFM, otherwise it will not work.
+    > The source generator can be hosted under .NET Framework environment (in Visual Studio IDE or MSBuild CLI), or .NET 7.0+ environment (`dotnet` CLI, VS Code, or VS out-of-process).
+    > So, to support all the possible environments where a source generator can run in, it should be `netstandard2.0`.
 
 1. Create a new C# file named _HelloSourceGenerator.cs_ that specifies your own Source Generator like so:
 

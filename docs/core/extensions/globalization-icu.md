@@ -27,7 +27,7 @@ Before .NET 5, the .NET globalization APIs used different underlying libraries o
 Starting with .NET 5, developers have more control over which underlying library is used, enabling applications to avoid differences across platforms.
 
 > [!NOTE]
-> The culture data that drives the behavior of the ICU library is usually maintained by the [Common Locale Data Repository (CLDR)](https://cldr.unicode.org/), not by the runtime or the host OS.
+> The culture data that drives the behavior of the ICU library is usually maintained by the [Common Locale Data Repository (CLDR)](https://cldr.unicode.org/), not the runtime.
 
 ## ICU on Windows
 

@@ -45,7 +45,7 @@ This section describes the best practices to follow when developing world-ready 
 1. For any element being used for interchange (for example, a field in a JSON document in an API call) or storage, use the <xref:System.Globalization.CultureInfo?displayProperty=InvariantCulture>; additionally, you should explicitly specify a roundtrip format (such as the [`"O"`, `"o"` date-time format specifier](../../standard/base-types/standard-date-and-time-format-strings.md#the-round-trip-o-o-format-specifier)). Although the format strings for the invariant culture are stable and unlikely to change, specifying an explicit format string helps to clarify the intent of your code.
     - For date/time elements, consider the advice and observations of Noda Time author Jon Skeet, who shares valuable insights. For more information, see [Jon Skeet: _Storing UTC is not a silver bullet_](https://codeblog.jonskeet.uk/2019/03/27/storing-utc-is-not-a-silver-bullet/).
 
-1. Globalization data [is not stable](/archive/blogs/shawnste/culture-data-shouldnt-be-considered-stable-except-for-invariant), and you should write your application and its tests with this in mind. It's updated several times a year through host OS channels on all supported platforms. This data is typically not distributed with the runtime.
+1. Globalization data [is not stable](https://devblogs.microsoft.com/i18n/culture-data-shouldnt-be-considered-stable/), and you should write your application and its tests with this in mind. It's updated several times a year through host OS channels on all supported platforms. This data is typically not distributed with the runtime.
 
 ## Localization best practices
 

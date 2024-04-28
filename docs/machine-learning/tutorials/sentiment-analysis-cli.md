@@ -164,7 +164,7 @@ Those enumerated assets are explained in the following steps of the tutorial.
     }
     ```
 
-    - The first lines of code create a *single sample data*, in this case based on the first row of your dataset to be used for the prediction. You can also create your own 'hard-coded' data by updating the code:
+    - The first lines of code create a *single sample data*, in this case, based on the first row of your dataset to be used for the prediction. You can also create your own 'hard-coded' data by updating the code:
 
         ```csharp
         ModelInput sampleData = new ModelInput()
@@ -178,13 +178,13 @@ Those enumerated assets are explained in the following steps of the tutorial.
 
 1. Run the project, either using the original sample data loaded from the first row of the dataset or by providing your own custom hard-coded sample data. You should get a prediction comparable to:
 
-![ML.NET CLI run the app from Visual Studio](./media/mlnet-cli/mlnet-cli-console-app.png))
+![ML.NET CLI run the app from Visual Studio](./media/mlnet-cli/mlnet-cli-console-app.png)
 
-1. Try changing the hard-coded sample data to other sentences with different sentiment and see how the model predicts positive or negative sentiment.
+Try changing the hard-coded sample data to other sentences with different sentiments and see how the model predicts positive or negative sentiment.
 
 ## Infuse your end-user applications with ML model predictions
 
-You can use similar 'ML model scoring code' to run the model in your end-user application and make predictions.
+You can use a similar 'ML model scoring code' to run the model in your end-user application and make predictions.
 
 For instance, you could directly move that code to any Windows desktop application such as **WPF** and **WinForms** and run the model in the same way than it was done in the console app.
 

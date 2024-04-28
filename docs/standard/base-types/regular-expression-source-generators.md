@@ -2,7 +2,7 @@
 title: ".NET regular expression source generators"
 description: Learn how to use regular expression source generators to optimize the performance of matching algorithms in .NET.
 ms.topic: conceptual
-ms.date: 04/02/2024
+ms.date: 04/19/2024
 author: IEvangelist
 ms.author: dapine
 zone_pivot_groups: dotnet-version-7-8
@@ -219,45 +219,58 @@ private bool TryMatchAtCurrentPosition(ReadOnlySpan<char> inputSpan)
 {
     int pos = base.runtextpos;
     int matchStart = pos;
+    int charloop_starting_pos = 0, charloop_ending_pos = 0;
     ReadOnlySpan<char> slice = inputSpan.Slice(pos);
     
-    // Match with 2 alternative expressions, atomically.
-    {
-        if (slice.IsEmpty)
+    // Match a character in the set [ABab] greedily any number of times.
+    //{
+        charloop_starting_pos = pos;
+        
+        int iteration = slice.IndexOfAnyExcept(Utilities.s_ascii_600000006000000);
+        if (iteration < 0)
+        {
+            iteration = slice.Length;
+        }
+        
+        slice = slice.Slice(iteration);
+        pos += iteration;
+        
+        charloop_ending_pos = pos;
+        goto CharLoopEnd;
+        
+        CharLoopBacktrack:
+        
+        if (Utilities.s_hasTimeout)
+        {
+            base.CheckTimeout();
+        }
+        
+        if (charloop_starting_pos >= charloop_ending_pos ||
+            (charloop_ending_pos = inputSpan.Slice(charloop_starting_pos, charloop_ending_pos - charloop_starting_pos).LastIndexOfAny(Utilities.s_ascii_C0000000C000000)) < 0)
         {
             return false; // The input didn't match.
         }
+        charloop_ending_pos += charloop_starting_pos;
+        pos = charloop_ending_pos;
+        slice = inputSpan.Slice(pos);
         
-        switch (slice[0])
-        {
-            case 'A' or 'a':
-                if ((uint)slice.Length < 3 ||
-                    !slice.Slice(1).StartsWith("bc", StringComparison.OrdinalIgnoreCase)) // Match the string "bc" (ordinal case-insensitive)
-                {
-                    return false; // The input didn't match.
-                }
-                
-                pos += 3;
-                slice = inputSpan.Slice(pos);
-                break;
-                
-            case 'D' or 'd':
-                if ((uint)slice.Length < 3 ||
-                    !slice.Slice(1).StartsWith("ef", StringComparison.OrdinalIgnoreCase)) // Match the string "ef" (ordinal case-insensitive)
-                {
-                    return false; // The input didn't match.
-                }
-                
-                pos += 3;
-                slice = inputSpan.Slice(pos);
-                break;
-                
-            default:
-                return false; // The input didn't match.
-        }
+        CharLoopEnd:
+    //}
+    
+    // Advance the next matching position.
+    if (base.runtextpos < pos)
+    {
+        base.runtextpos = pos;
+    }
+    
+    // Match a character in the set [BCbc].
+    if (slice.IsEmpty || ((uint)((slice[0] | 0x20) - 'b') > (uint)('c' - 'b')))
+    {
+        goto CharLoopBacktrack;
     }
     
     // The input matched.
+    pos++;
     base.runtextpos = pos;
     base.Capture(0, matchStart, pos);
     return true;
@@ -275,11 +288,11 @@ private bool TryMatchAtCurrentPosition(ReadOnlySpan<char> inputSpan)
     int charloop_starting_pos = 0, charloop_ending_pos = 0;
     ReadOnlySpan<char> slice = inputSpan.Slice(pos);
     
-    // Match a character in the set [ab] greedily any number of times.
+    // Match a character in the set [ABab] greedily any number of times.
     //{
         charloop_starting_pos = pos;
-
-        int iteration = slice.IndexOfAnyExcept('a', 'b');
+        
+        int iteration = slice.IndexOfAnyExcept("ABab");
         if (iteration < 0)
         {
             iteration = slice.Length;
@@ -299,9 +312,7 @@ private bool TryMatchAtCurrentPosition(ReadOnlySpan<char> inputSpan)
         }
 
         if (charloop_starting_pos >= charloop_ending_pos ||
-            (charloop_ending_pos = inputSpan.Slice(
-                charloop_starting_pos, charloop_ending_pos - charloop_starting_pos)
-                .LastIndexOfAny('b', 'c')) < 0)
+            (charloop_ending_pos = inputSpan.Slice(charloop_starting_pos, charloop_ending_pos - charloop_starting_pos).LastIndexOfAny("BCbc")) < 0)
         {
             return false; // The input didn't match.
         }
@@ -318,8 +329,8 @@ private bool TryMatchAtCurrentPosition(ReadOnlySpan<char> inputSpan)
         base.runtextpos = pos;
     }
 
-    // Match a character in the set [bc].
-    if (slice.IsEmpty || !char.IsBetween(slice[0], 'b', 'c'))
+    // Match a character in the set [BCbc].
+    if (slice.IsEmpty || ((uint)((slice[0] | 0x20) - 'b') > (uint)('c' - 'b')))
     {
         goto CharLoopBacktrack;
     }

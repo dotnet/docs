@@ -26,6 +26,9 @@ Before .NET 5, the .NET globalization APIs used different underlying libraries o
 
 Starting with .NET 5, developers have more control over which underlying library is used, enabling applications to avoid differences across platforms.
 
+> [!NOTE]
+> The culture data that drives the behavior of the ICU library is usually maintained by the [Common Locale Data Repository (CLDR)](https://cldr.unicode.org/), not by the runtime or the host OS.
+
 ## ICU on Windows
 
 Windows now incorporates a preinstalled [icu.dll](/windows/win32/intl/international-components-for-unicode--icu-) version as part of its features that's automatically employed for globalization tasks. This modification allows .NET to leverage this ICU library for its globalization support. In cases where the ICU library is unavailable or cannot be loaded, as is the case with older Windows versions, .NET 5 and subsequent versions revert to using the NLS-based implementation.

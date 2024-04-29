@@ -10,26 +10,28 @@ ms.author: alexwolf
 
 # Implement Azure OpenAI with RAG using vector search in a .NET app
 
-This tutorial explores the integration of the RAG pattern using Open AI models and vector search capabilities. The sample application performs vector searches against custom data stored in Cosmos DB for MongoDB and further refines the responses using generative AI models, such as GPT-35 and GPT-4. In the sections ahead, you'll setup a sample application and explore key code examples that demonstrates these concepts.
+This tutorial explores the integration of the RAG pattern using Open AI models and vector search capabilities. The sample application performs vector searches on custom data stored in Azure Cosmos DB for MongoDB and further refines the responses using generative AI models, such as GPT-35 and GPT-4. In the sections ahead, you'll setup a sample application and explore key code examples that demonstrates these concepts.
 
 ## Prerequsites
 
-- [.NET 8.0 installed](https://dotnet.microsoft.com/en-us/)
-- An Azure Account
-- Azure Cosmos DB for MongoDB vCore Account
-- Azure Open AI Service
-  - Deploy text-davinci-003 model for embeddings
-  - Deploy gpt-35-turbo model for chat completions
+- [.NET 8.0 installed](https://dotnet.microsoft.com/)
+- An [Azure Account](https://azure.microsoft.com/free)
+- An [Azure Cosmos DB for MongoDB vCore](/azure/cosmos-db/mongodb/vcore/introduction) service
+- An [Azure Open AI](/azure/ai-services/openai/overview) service
+  - Deploy `text-embedding-ada-002` model for embeddings
+  - Deploy `gpt-35-turbo` model for chat completions
 
 ## App overview
 
 The Cosmos Recipe Guide app allows you to perform vector and AI driven searches against a set of recipe data. You can search directly for available recipes or prompt the app with ingredient names to find related recipes. The app guides you through the following workflow to demonstrate this type of functionality:
 
-1. Upload sample data to an Azure Cosmos DB for MongoDB database
-1. Create embeddings from the uploaded sample data using an Azure OpenAI embeddings model (text-embedding-ada-003)
-1. Create a vector index on the generated embeddings
-1. Perform vector similarity search based on the user prompts
-1. Use an Azure OpenAI completions model (GPT-35) to compose a more meaningful answer based on the search results data
+1. Upload sample data to an Azure Cosmos DB for MongoDB database.
+1. Create embeddings for the uploaded sample data using the Azure OpenAI `text-embedding-ada-002` embeddings model.
+1. Create a vector index on the generated embeddings.
+1. Perform vector similarity search based on the user prompts.
+1. Use the Azure OpenAI `gpt-35-turbo` completions model to compose a more meaningful answer based on the search results data.
+
+    :::image type="content" source="../media/get-started-app-chat-template/contoso-recipes.png" alt-text="A screenshot showing the running sample app.":::
 
 The sections ahead explore these steps in more detail.
 
@@ -57,9 +59,9 @@ The sections ahead explore these steps in more detail.
 
 ## Explore the app
 
-When you run the app for the first time, it connects to Azure Cosmos DB and reports that there are no recipes available yet. To begin, follow the steps displayed by the app.
+When you run the app for the first time, it connects to Azure Cosmos DB and reports that there are no recipes available yet. Follow the steps displayed by the app to begin the core workflow.
 
-1. Select **Upload Documents to Cosmos DB:** and hit enter. This option reads documents from the local project and uploads the JSON files to the Cosmos DB NoSQL account.
+1. Select **Upload recipe(s) to Cosmos DB** and hit enter. This command reads documents from the local project and uploads the JSON files to the Cosmos DB account.
 
     The code from the _Utility.cs_ class parses the local JSON files:
 
@@ -112,9 +114,38 @@ When you run the app for the first time, it connects to Azure Cosmos DB and repo
         }
     ```
 
-1. Select **Vectorize and Upload Recipes to Azure Cosmos DB for MongoDB vCore:**.
+1. Select **Vectorize the recipe(s) and store them in Cosmos DB**.
 
-    The JSON data uploaded to Cosmos DB is not optimized for efficient integration with Open AI. To use the RAG pattern, the app must be able to find contextually relevant recipes from Cosmos DB. The `CreateVectorIndexIfNotExists` in the _VCoreMongoService.cs_ file creates an embedding for each item in the database to utilize the vector search capability in Azure Cosmos DB for MongoDB vCore.
+    The JSON items uploaded to Cosmos DB do not contain embeddings and therefore are not optimized for RAG via vector search. An embedding is an information dense, numerical representation of the semantic meaning of a piece of text. Vector searches are able to find items with contextually similar embeddings.
+
+    The `GetEmbeddingsAsync` method in the _OpenAIService.cs_ file creates an embedding for each item in the database.
+
+    ```C#
+    public async Task<float[]?> GetEmbeddingsAsync(dynamic data)
+    {
+        try
+        {
+            EmbeddingsOptions options = new EmbeddingsOptions(data)
+            {
+                Input = data
+            };
+
+            var response = await _openAIClient.GetEmbeddingsAsync(openAIEmbeddingDeployment, options);
+
+            Embeddings embeddings = response.Value;
+            float[] embedding = embeddings.Data[0].Embedding.ToArray();
+
+            return embedding;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"GetEmbeddingsAsync Exception: {ex.Message}");
+            return null;
+        }
+    }
+    ```
+
+    The `CreateVectorIndexIfNotExists` in the _VCoreMongoService.cs_ file creates a vector index, which enables you to perform vector similarity searches.
 
     ```C#
     public void CreateVectorIndexIfNotExists(string vectorIndexName)
@@ -157,36 +188,9 @@ When you run the app for the first time, it connects to Azure Cosmos DB and repo
     }
     ```
 
-    The `GetEmbeddingsAsync` method in the _OpenAIService.cs_ file creates an embedding for each item in the database.
+1. Select the **Ask AI Assistant (search for a recipe by name or description, or ask a question)** option in the application to run a user query.
 
-    ```C#
-    public async Task<float[]?> GetEmbeddingsAsync(dynamic data)
-    {
-        try
-        {
-            EmbeddingsOptions options = new EmbeddingsOptions(data)
-            {
-                Input = data
-            };
-
-            var response = await _openAIClient.GetEmbeddingsAsync(openAIEmbeddingDeployment, options);
-
-            Embeddings embeddings = response.Value;
-            float[] embedding = embeddings.Data[0].Embedding.ToArray();
-
-            return embedding;
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine($"GetEmbeddingsAsync Exception: {ex.Message}");
-            return null;
-        }
-    }
-    ```
-
-1. Select the **Perform Search:** option in the application to run a user query.
-
-    The user query is converted to an embedding using the Open AI service. The embedding is then sent to Azure Cosmos DB for MongoDB vCore to perform a vector search. The `VectorSearchAsync` method in the _VCoreMongoService.cs_ file performs a vector search to find vectors that are close to the supplied vector and returns a list of documents from Azure Cosmos DB for MongoDB vCore.
+    The user query is converted to an embedding using the Open AI service and the embedding model. The embedding is then sent to Azure Cosmos DB for MongoDB and is used to perform a vector search. The `VectorSearchAsync` method in the _VCoreMongoService.cs_ file performs a vector search to find vectors that are close to the supplied vector and returns a list of documents from Azure Cosmos DB for MongoDB vCore.
 
       ```C#
     public async Task<List<Recipe>> VectorSearchAsync(float[] queryVector)

@@ -8,18 +8,18 @@ author: alexwolfmsft
 ms.author: alexwolf
 ---
 
-# Use RAG and vector search with Azure Cosmos DB for MongoDB
+# Implement Azure OpenAI with RAG using vector search in a .NET app
 
 This tutorial explores the integration of the RAG pattern using Open AI models and vector search capabilities. The sample application performs vector searches against custom data stored in Cosmos DB for MongoDB and further refines the responses using generative AI models, such as GPT-35 and GPT-4. In the sections ahead, you'll setup a sample application and explore key code examples that demonstrates these concepts.
 
 ## Prerequsites
 
-- [.NET 8.0 installed]()
+- [.NET 8.0 installed](https://dotnet.microsoft.com/en-us/)
 - An Azure Account
 - Azure Cosmos DB for MongoDB vCore Account
 - Azure Open AI Service
-    - Deploy text-davinci-003 model for embeddings
-    - Deploy gpt-35-turbo model for chat completions
+  - Deploy text-davinci-003 model for embeddings
+  - Deploy gpt-35-turbo model for chat completions
 
 ## App overview
 
@@ -57,7 +57,7 @@ The sections ahead explore these steps in more detail.
 
 ## Explore the app
 
-When you run the app for the first time, it connects to Cosmos DB and report that there are no recipes available yet. To begin, follow the steps displayed by the app.
+When you run the app for the first time, it connects to Azure Cosmos DB and reports that there are no recipes available yet. To begin, follow the steps displayed by the app.
 
 1. Select **Upload Documents to Cosmos DB:** and hit enter. This option reads documents from the local project and uploads the JSON files to the Cosmos DB NoSQL account.
 
@@ -184,7 +184,7 @@ When you run the app for the first time, it connects to Cosmos DB and report tha
     }
     ```
 
-1. Select the **Perform Search:** option in the application to run a user query. 
+1. Select the **Perform Search:** option in the application to run a user query.
 
     The user query is converted to an embedding using the Open AI service. The embedding is then sent to Azure Cosmos DB for MongoDB vCore to perform a vector search. The `VectorSearchAsync` method in the _VCoreMongoService.cs_ file performs a vector search to find vectors that are close to the supplied vector and returns a list of documents from Azure Cosmos DB for MongoDB vCore.
 

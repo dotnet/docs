@@ -36,7 +36,7 @@ The MSBuild project or solution to clean. If a project or solution file is not s
 
 ## Options
 
-[!INCLUDE [artifacts-path](../../../includes/cli-configuration-artifacts-path.md)]
+[!INCLUDE [artifacts-path](../../../includes/cli-artifacts-path.md)]
 
 [!INCLUDE [configuration](../../../includes/cli-configuration-clean.md)]
 

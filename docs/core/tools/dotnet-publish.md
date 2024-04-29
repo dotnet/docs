@@ -126,7 +126,7 @@ For more information, see the following resources:
 
 [!INCLUDE [arch](../../../includes/cli-arch.md)]
 
-[!INCLUDE [artifacts-path](../../../includes/cli-configuration-artifacts-path.md)]
+[!INCLUDE [artifacts-path](../../../includes/cli-artifacts-path.md)]
 
 [!INCLUDE [configuration](../../../includes/cli-configuration-publish-pack.md)]
 

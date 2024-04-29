@@ -60,7 +60,7 @@ You can provide MSBuild properties to the `dotnet pack` command for the packing 
 
 ## Options
 
-[!INCLUDE [artifacts-path](../../../includes/cli-configuration-artifacts-path.md)]
+[!INCLUDE [artifacts-path](../../../includes/cli-artifacts-path.md)]
 
 [!INCLUDE [configuration](../../../includes/cli-configuration-publish-pack.md)]
 

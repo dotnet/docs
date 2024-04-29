@@ -85,7 +85,7 @@ The project or solution file to build. If a project or solution file isn't speci
 
 [!INCLUDE [arch](../../../includes/cli-arch.md)]
 
-[!INCLUDE [artifacts-path](../../../includes/cli-configuration-artifacts-path.md)]
+[!INCLUDE [artifacts-path](../../../includes/cli-artifacts-path.md)]
 
 [!INCLUDE [configuration](../../../includes/cli-configuration.md)]
 

@@ -95,7 +95,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 [!INCLUDE [arch-no-a](../../../includes/cli-arch-no-a.md)]
 
-[!INCLUDE [artifacts-path](../../../includes/cli-configuration-artifacts-path.md)]
+[!INCLUDE [artifacts-path](../../../includes/cli-artifacts-path.md)]
 
 - **`--blame`**
 

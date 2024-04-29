@@ -142,6 +142,20 @@ For more information, see [ContainerImageName](#containerimagename).
 
 To publish the .NET app as a container, use the following [dotnet publish](../tools/dotnet-publish.md) command:
 
+:::zone pivot="dotnet-8-0"
+
+```dotnetcli
+dotnet publish --os linux --arch x64 /t:PublishContainer
+```
+
+The preceding .NET CLI command publishes the app as a container:
+
+- Targeting Linux as the OS (`--os linux`).
+- Specifying an x64 architecture (`--arch x64`).
+
+:::zone-end
+:::zone pivot="dotnet-7-0"
+
 ```dotnetcli
 dotnet publish --os linux --arch x64 /t:PublishContainer -c Release
 ```
@@ -151,6 +165,8 @@ The preceding .NET CLI command publishes the app as a container:
 - Targeting Linux as the OS (`--os linux`).
 - Specifying an x64 architecture (`--arch x64`).
 - Using the release configuration (`-c Release`).
+
+:::zone-end
 
 > [!IMPORTANT]
 > To build the container locally, you must have the Docker daemon running. If it isn't running when you attempt to publish the app as a container, you'll experience an error similar to the following:

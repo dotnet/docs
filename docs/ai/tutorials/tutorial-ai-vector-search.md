@@ -103,7 +103,6 @@ When you run the app for the first time, it connects to Cosmos DB and report tha
                 var filter = Builders<BsonDocument>.Filter.Eq("_id", _idValue);
                 var options = new ReplaceOptions { IsUpsert = true };
                 await _recipeCollection.ReplaceOneAsync(filter, document, options);
-
             }
             catch (Exception ex)
             {
@@ -129,14 +128,18 @@ When you run the app for the first time, it connects to Cosmos DB and report tha
                 if (!vectorIndexExists)
                 {
                     BsonDocumentCommand<BsonDocument> command = new BsonDocumentCommand<BsonDocument>(
-                    BsonDocument.Parse(@"
-                        { createIndexes: 'Recipe', 
-                            indexes: [{ 
-                            name: 'vectorSearchIndex', 
-                            key: { embedding: 'cosmosSearch' }, 
-                            cosmosSearchOptions: { kind: 'vector-ivf', numLists: 5, similarity: 'COS', dimensions: 1536 } 
-                            }] 
-                        }"));
+                        BsonDocument.Parse(@"
+                            { createIndexes: 'Recipe', 
+                                indexes: [{ 
+                                name: 'vectorSearchIndex', 
+                                key: { embedding: 'cosmosSearch' }, 
+                                cosmosSearchOptions: { 
+                                    kind: 'vector-ivf',
+                                    numLists: 5,
+                                    similarity: 'COS',
+                                    dimensions: 1536 } 
+                                }] 
+                            }"));
 
                     BsonDocument result = _database.RunCommand(command);
                     if (result["ok"] != 1)
@@ -189,7 +192,6 @@ When you run the app for the first time, it connects to Cosmos DB and report tha
     public async Task<List<Recipe>> VectorSearchAsync(float[] queryVector)
         {
             List<string> retDocs = new List<string>();
-
             string resultDocuments = string.Empty;
 
             try
@@ -198,13 +200,25 @@ When you run the app for the first time, it connects to Cosmos DB and report tha
                 //Project the fields that are needed
                 BsonDocument[] pipeline = new BsonDocument[]
                 {   
-                    BsonDocument.Parse($"{{$search: {{cosmosSearch: {{ vector: [{string.Join(',', queryVector)}], path: 'embedding', k: {_maxVectorSearchResults}}}, returnStoredSource:true}}}}"),
+                    BsonDocument.Parse(
+                        @$"{{$search: {{ 
+                                cosmosSearch: 
+                                    {{ vector: [{string.Join(',', queryVector)}],
+                                       path: 'embedding',
+                                       k: {_maxVectorSearchResults}}},
+                                       returnStoredSource:true
+                                    }}
+                                }}"),
                     BsonDocument.Parse($"{{$project: {{embedding: 0}}}}"),
                 };
 
-                var bsonDocuments = await _recipeCollection.Aggregate<BsonDocument>(pipeline).ToListAsync();
+                var bsonDocuments = await _recipeCollection
+                    .Aggregate<BsonDocument>(pipeline).ToListAsync();
 
-                var recipes = bsonDocuments.ToList().ConvertAll(bsonDocument => BsonSerializer.Deserialize<Recipe>(bsonDocument)); 
+                var recipes = bsonDocuments
+                    .ToList()
+                    .ConvertAll(bsonDocument =>
+                        BsonSerializer.Deserialize<Recipe>(bsonDocument)); 
                 return recipes;
             }
             catch (MongoException ex)
@@ -212,7 +226,6 @@ When you run the app for the first time, it connects to Cosmos DB and report tha
                 Console.WriteLine($"Exception: VectorSearchAsync(): {ex.Message}");
                 throw;
             }
-
         }
     ```
 
@@ -228,30 +241,29 @@ When you run the app for the first time, it connects to Cosmos DB and report tha
         Instructions:
         - Only answer questions related to the recipe provided below,
         - Don't reference any recipe not provided below.
-        - If you're unsure of an answer, you can say ""I don't know"" or ""I'm not sure"" and recommend users search themselves.        
+        - If you're unsure of an answer, say ""I don't know"" and recommend users search themselves.        
         - Your response  should be complete. 
-        - List the Name of the Recipe at the start of your response folowed by step by step cooking instructions
+        - List the Name of the Recipe at the start of your response followed by step by step cooking instructions.
         - Assume the user is not an expert in cooking.
         - Format the content so that it can be printed to the Command Line console;
         - In case there are more than one recipes you find let the user pick the most appropiate recipe.";
      ```
 
-    The `GetChatCompletionAsync` method generates a chat completion based on the prompt and the vector search results:
+    The `GetChatCompletionAsync` method generates a chat completion based on the prompt and the vector search results.
 
     ``` C#
     public async Task<(string response, int promptTokens, int responseTokens)> GetChatCompletionAsync(string userPrompt, string documents)
     {
-
         try
         {
 
-            ChatMessage systemMessage = new ChatMessage(ChatRole.System, _systemPromptRecipeAssistant + documents);
-            ChatMessage userMessage = new ChatMessage(ChatRole.User, userPrompt);
-
+            ChatMessage systemMessage = new ChatMessage(
+                ChatRole.System, _systemPromptRecipeAssistant + documents);
+            ChatMessage userMessage = new ChatMessage(
+                ChatRole.User, userPrompt);
 
             ChatCompletionsOptions options = new()
             {
-
                 Messages =
                 {
                     systemMessage,
@@ -264,8 +276,8 @@ When you run the app for the first time, it connects to Cosmos DB and report tha
                 PresencePenalty = 0
             };
 
-            Azure.Response<ChatCompletions> completionsResponse = await openAIClient.GetChatCompletionsAsync(openAICompletionDeployment, options);
-
+            Azure.Response<ChatCompletions> completionsResponse = 
+                await openAIClient.GetChatCompletionsAsync(openAICompletionDeployment, options);
             ChatCompletions completions = completionsResponse.Value;
 
             return (
@@ -277,11 +289,9 @@ When you run the app for the first time, it connects to Cosmos DB and report tha
         }
         catch (Exception ex)
         {
-
             string message = $"OpenAIService.GetChatCompletionAsync(): {ex.Message}";
             Console.WriteLine(message);
             throw;
-
         }
     }
     ```

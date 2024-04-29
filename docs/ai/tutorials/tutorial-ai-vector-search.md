@@ -23,17 +23,14 @@ This tutorial explores integration of the RAG pattern using Open AI models and v
 
 ## App overview
 
-The Cosmos Recipe Guide app allows you to perform vector and AI driven searches against a set of recipe data. You can search directly for available recipes or prompt the app with ingredient names to find related recipes. The app guides you through the following workflow to demonstrate this type of functionality:
+The Cosmos Recipe Guide app allows you to perform vector and AI driven searches against a set of recipe data. You can search directly for available recipes or prompt the app with ingredient names to find related recipes. The app and the sections ahead guide you through the following workflow to demonstrate this type of functionality:
 
 1. Upload sample data to an Azure Cosmos DB for MongoDB database.
-1. Create embeddings for the uploaded sample data using the Azure OpenAI `text-embedding-ada-002` embeddings model.
-1. Create a vector index on the generated embeddings.
+1. Create embeddings and a vector index for the uploaded sample data using the Azure OpenAI `text-embedding-ada-002` model.
 1. Perform vector similarity search based on the user prompts.
-1. Use the Azure OpenAI `gpt-35-turbo` completions model to compose a more meaningful answer based on the search results data.
+1. Use the Azure OpenAI `gpt-35-turbo` completions model to compose more meaningful answers based on the search results data.
 
     :::image type="content" source="../media/get-started-app-chat-template/contoso-recipes.png" alt-text="A screenshot showing the running sample app.":::
-
-The sections ahead explore these steps in more detail.
 
 ## Get started
 
@@ -43,7 +40,7 @@ The sections ahead explore these steps in more detail.
     git clone https://github.com/microsoft/AzureDataRetrievalAugmentedGenerationSamples.git
     ```
 
-1. In the **C#/CosmosDB-MongoDBvCore** folder, open the **CosmosRecipeGuide.sln** file.
+1. In the _C#/CosmosDB-MongoDBvCore_ folder, open the **CosmosRecipeGuide.sln** file.
 
 1. In the _appsettings.json_ file, replace the following config values with your Azure OpenAI and Azure CosmosDB for MongoDb values:
 
@@ -61,9 +58,9 @@ The sections ahead explore these steps in more detail.
 
 When you run the app for the first time, it connects to Azure Cosmos DB and reports that there are no recipes available yet. Follow the steps displayed by the app to begin the core workflow.
 
-1. Select **Upload recipe(s) to Cosmos DB** and hit enter. This command reads documents from the local project and uploads the JSON files to the Cosmos DB account.
+1. Select **Upload recipe(s) to Cosmos DB** and hit enter. This command reads sample JSON files from the local project and uploads them to the Cosmos DB account.
 
-    The code from the _Utility.cs_ class parses the local JSON files:
+    The code from the _Utility.cs_ class parses the local JSON files.
 
     ``` C#
     public static List<Recipe> ParseDocuments(string Folderpath)
@@ -85,7 +82,7 @@ When you run the app for the first time, it connects to Azure Cosmos DB and repo
     }
     ```
 
-    The `UpsertVectorAsync` method in the _VCoreMongoService.cs_ file uploads the documents to Azure Cosmos DB for MongoDB;
+    The `UpsertVectorAsync` method in the _VCoreMongoService.cs_ file uploads the documents to Azure Cosmos DB for MongoDB.
 
     ```C#
     public async Task UpsertVectorAsync(Recipe recipe)
@@ -233,27 +230,7 @@ When you run the app for the first time, it connects to Azure Cosmos DB and repo
         }
     ```
 
-    The app also uses prompt engineering to ensure Open AI service limits and formats the response for supplied recipes.
-
-    ```C#
-    //System prompts to send with user prompts to instruct the model for chat session
-    private readonly string _systemPromptRecipeAssistant = @"
-        You are an intelligent assistant for Contoso Recipes. 
-        You are designed to provide helpful answers to user questions about 
-        recipes, cooking instructions provided in JSON format below.
-  
-        Instructions:
-        - Only answer questions related to the recipe provided below,
-        - Don't reference any recipe not provided below.
-        - If you're unsure of an answer, say ""I don't know"" and recommend users search themselves.        
-        - Your response  should be complete. 
-        - List the Name of the Recipe at the start of your response followed by step by step cooking instructions.
-        - Assume the user is not an expert in cooking.
-        - Format the content so that it can be printed to the Command Line console;
-        - In case there are more than one recipes you find let the user pick the most appropiate recipe.";
-     ```
-
-    The `GetChatCompletionAsync` method generates a chat completion based on the prompt and the vector search results.
+    The `GetChatCompletionAsync` method generates an improved chat completion response based on the user prompt and the related vector search results.
 
     ``` C#
     public async Task<(string response, int promptTokens, int responseTokens)> GetChatCompletionAsync(string userPrompt, string documents)
@@ -299,3 +276,23 @@ When you run the app for the first time, it connects to Azure Cosmos DB and repo
         }
     }
     ```
+
+    The app also uses prompt engineering to ensure Open AI service limits and formats the response for supplied recipes.
+
+    ```C#
+    //System prompts to send with user prompts to instruct the model for chat session
+    private readonly string _systemPromptRecipeAssistant = @"
+        You are an intelligent assistant for Contoso Recipes. 
+        You are designed to provide helpful answers to user questions about 
+        recipes, cooking instructions provided in JSON format below.
+  
+        Instructions:
+        - Only answer questions related to the recipe provided below,
+        - Don't reference any recipe not provided below.
+        - If you're unsure of an answer, say ""I don't know"" and recommend users search themselves.        
+        - Your response  should be complete. 
+        - List the Name of the Recipe at the start of your response followed by step by step cooking instructions.
+        - Assume the user is not an expert in cooking.
+        - Format the content so that it can be printed to the Command Line console;
+        - In case there are more than one recipes you find let the user pick the most appropiate recipe.";
+     ```

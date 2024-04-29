@@ -61,7 +61,7 @@ When you run the application for the first time, it will connect to Cosmos DB an
 
 ### Upload local data to the database
 
-1) Select **Upload Documents to Cosmos DB:** and hit enter. This option reads documents from the local machine and uploads the JSON files to the Cosmos DB NoSQL account.
+1. Select **Upload Documents to Cosmos DB:** and hit enter. This option reads documents from the local machine and uploads the JSON files to the Cosmos DB NoSQL account.
 
     The code from the _Utility.cs class handles parsing the local JSON files:
 
@@ -116,92 +116,52 @@ When you run the application for the first time, it will connect to Cosmos DB an
         }
     ```
 
-3) **Vectorize and Upload Recipes to Azure Cosmos DB for MongoDB vCore:** The JSON data uploaded to Cosmos DB is not yet ready for efficient integration with Open AI. To use the RAG pattern, we need to find relevant recipes from Cosmos DB. Embeddings help us achieve this. To accomplish the task, we will utilize the vector search capability in Azure Cosmos DB for MongoDB vCore to search for embeddings. Firstly, create the required vector search index in Azure Cosmos DB for MongoDB vCore. Then, vectorize the recipes and upload the vectors to Azure Cosmos DB for MongoDB vCore. Selecting the second option in the application will perform all these activities.
+1. Select **Vectorize and Upload Recipes to Azure Cosmos DB for MongoDB vCore:**.
 
-      
-    ####  Build the Vector Index in Azure Cosmos DB for MongoDB vCore
+    The JSON data uploaded to Cosmos DB is not optimized for efficient integration with Open AI. To use the RAG pattern, the app must be able to find relevant recipes from Cosmos DB. Create an embedding for each item in the database to utilize the vector search capability in Azure Cosmos DB for MongoDB vCore.
+
+    The `CreateVectorIndexIfNotExists` in the _VCoreMongoService.cs_ file creates a vector in the database for the uploaded recipe data.
+
     ```C#
     public void CreateVectorIndexIfNotExists(string vectorIndexName)
-        {
-
-            try
-            {
-
-                //Find if vector index exists in vectors collection
-                using (IAsyncCursor<BsonDocument> indexCursor = _recipeCollection.Indexes.List())
-                {
-                    bool vectorIndexExists = indexCursor.ToList().Any(x => x["name"] == vectorIndexName);
-                    if (!vectorIndexExists)
-                    {
-                        BsonDocumentCommand<BsonDocument> command = new BsonDocumentCommand<BsonDocument>(
-                        BsonDocument.Parse(@"
-                            { createIndexes: 'Recipe', 
-                              indexes: [{ 
-                                name: 'vectorSearchIndex', 
-                                key: { embedding: 'cosmosSearch' }, 
-                                cosmosSearchOptions: { kind: 'vector-ivf', numLists: 5, similarity: 'COS', dimensions: 1536 } 
-                              }] 
-                            }"));
-
-                        BsonDocument result = _database.RunCommand(command);
-                        if (result["ok"] != 1)
-                        {
-                            Console.WriteLine("CreateIndex failed with response: " + result.ToJson());
-                        }
-                    }
-                }
-
-            }
-            catch (MongoException ex)
-            {
-                Console.WriteLine("MongoDbService InitializeVectorIndex: " + ex.Message);
-                throw;
-            }
-
-        }
-    
-    ```
-
-    #### Initialize the Azure Open AI SDK
-      ``` C#
-    public OpenAIService(string endpoint, string key, string embeddingsDeployment, string CompletionDeployment, string maxTokens)
     {
-
-
-
-        _openAIEmbeddingDeployment = embeddingsDeployment;
-        _openAICompletionDeployment = CompletionDeployment;
-        _openAIMaxTokens = int.TryParse(maxTokens, out openAIMaxTokens) ? openAIMaxTokens : 8191;
-
-
-        OpenAIClientOptions clientOptions = new OpenAIClientOptions()
-        {
-            Retry =
-            {
-                Delay = TimeSpan.FromSeconds(2),
-                MaxRetries = 10,
-                Mode = RetryMode.Exponential
-            }
-        };
-
         try
         {
+            //Find if vector index exists in vectors collection
+            using (IAsyncCursor<BsonDocument> indexCursor = _recipeCollection.Indexes.List())
+            {
+                bool vectorIndexExists = indexCursor.ToList().Any(x => x["name"] == vectorIndexName);
+                if (!vectorIndexExists)
+                {
+                    BsonDocumentCommand<BsonDocument> command = new BsonDocumentCommand<BsonDocument>(
+                    BsonDocument.Parse(@"
+                        { createIndexes: 'Recipe', 
+                            indexes: [{ 
+                            name: 'vectorSearchIndex', 
+                            key: { embedding: 'cosmosSearch' }, 
+                            cosmosSearchOptions: { kind: 'vector-ivf', numLists: 5, similarity: 'COS', dimensions: 1536 } 
+                            }] 
+                        }"));
 
-            //Use this as endpoint in configuration to use non-Azure Open AI endpoint and OpenAI model names
-            if (endpoint.Contains("api.openai.com"))
-                _openAIClient = new OpenAIClient(key, clientOptions);
-            else
-                _openAIClient = new(new Uri(endpoint), new AzureKeyCredential(key), clientOptions);
+                    BsonDocument result = _database.RunCommand(command);
+                    if (result["ok"] != 1)
+                    {
+                        Console.WriteLine("CreateIndex failed with response: " + result.ToJson());
+                    }
+                }
+            }
         }
-        catch (Exception ex)
+        catch (MongoException ex)
         {
-            Console.WriteLine($"OpenAIService Constructor failure: {ex.Message}");
+            Console.WriteLine("MongoDbService InitializeVectorIndex: " + ex.Message);
+            throw;
         }
     }
-    ```   
-   
-    #### Generate Embedings using Open AI Service
-      ``` C#
+    ```
+
+    The `GetEmbeddingsAsync` method in the _OpenAIService.cs_ file creates an embedding for each item in the database.
+
+    ```C#
     public async Task<float[]?> GetEmbeddingsAsync(dynamic data)
     {
         try
@@ -214,7 +174,6 @@ When you run the application for the first time, it will connect to Cosmos DB an
             var response = await _openAIClient.GetEmbeddingsAsync(openAIEmbeddingDeployment, options);
 
             Embeddings embeddings = response.Value;
-
             float[] embedding = embeddings.Data[0].Embedding.ToArray();
 
             return embedding;
@@ -227,12 +186,10 @@ When you run the application for the first time, it will connect to Cosmos DB an
     }
     ```
 
-    
-5)    **Perform Search:** The third option in the application runs the search based on the user query. The user query is converted to an embedding using the Open AI service. The embedding is then sent to Azure Cosmos DB for MongoDB vCore to perform a vector search. The vector search attempts to find vectors that are close to the supplied vector and returns a list of documents from Azure Cosmos DB for MongoDB vCore. The serialized documents retrieved from Azure Cosmos DB for MongoDB vCore are passed as strings to the Open AI service completion service as prompts. During this process, we also include the instructions we want to provide to the Open AI service as prompt. The Open AI service processes the instructions and custom data provided as prompts to generate the response.
+5) Select the **Perform Search:** option in the application to run a user query. The user query is converted to an embedding using the Open AI service. The embedding is then sent to Azure Cosmos DB for MongoDB vCore to perform a vector search. The vector search attempts to find vectors that are close to the supplied vector and returns a list of documents from Azure Cosmos DB for MongoDB vCore.
 
-    
+    The `VectorSearchAsync` method in the _VCoreMongoService.cs_ file performs a vector search 
 
-    #### Performing Vector Search in Azure Cosmos DB for MongoDB vCore
       ```C#
     public async Task<List<Recipe>> VectorSearchAsync(float[] queryVector)
         {
@@ -264,8 +221,8 @@ When you run the application for the first time, it will connect to Cosmos DB an
         }
     ```
     
-   
-    #### Prompt Engineering to make sure Open AI service limits the response to supplied recipes
+    The app includes prompt engineering to ensure Open AI service limits and formats the response for supplied recipes.
+
     ```C#
     //System prompts to send with user prompts to instruct the model for chat session
     private readonly string _systemPromptRecipeAssistant = @"
@@ -283,8 +240,9 @@ When you run the application for the first time, it will connect to Cosmos DB an
         - Format the content so that it can be printed to the Command Line console;
         - In case there are more than one recipes you find let the user pick the most appropiate recipe.";
      ```
-    
-    #### Generate Chat Completion based on Prompt and Custom Data 
+
+    The `GetChatCompletionAsync` method generates a chat completion based on the prompt and the vector search results:
+
     ``` C#
     public async Task<(string response, int promptTokens, int responseTokens)> GetChatCompletionAsync(string userPrompt, string documents)
     {

@@ -33,7 +33,7 @@ This text could be tokenized as:
 - a
 - cat
 
-The model will add only the first occurrence of the "a" token to it's vocabulary. All other occurrences can be represented by that first token.
+The model will add only the first occurrence of the "a" token to its vocabulary. All other occurrences can be represented by that first token.
 
 By having a sufficiently large set of training text, tokenization can compile a vocabulary of many thousands of tokens.
 
@@ -45,7 +45,7 @@ The specific tokenization method varies by LLM. Common tokenization methods incl
 - **Character** tokenization (text is split into individual characters)
 - **Subword** tokenization (text is split into partial words or character sets)
 
-For example, the GPT models, developed by OpenAI, use _Byte-Pair Encoding_ (BPE) which is a type of subword tokenization. OpenAI provides [a tool to visualize how text will be tokenized](https://platform.openai.com/tokenizer).
+For example, the GPT models, developed by OpenAI, use a type of subword tokenization that's known as _Byte-Pair Encoding_ (BPE). OpenAI provides [a tool to visualize how text will be tokenized](https://platform.openai.com/tokenizer).
 
 There are benefits and disadvantages to each tokenization method:
 

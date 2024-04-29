@@ -25,6 +25,8 @@ items:
     href: conceptual/agents.md
 - name: How-to articles
   items:
+  - name: Use Redis for memory storage with the Semantic Kernel SDK
+    href: how-to/use-redis-for-memory.md
   - name: Use custom and local AI models with the Semantic Kernel SDK
     href: how-to/work-with-local-models.md
 - name: Tutorials

@@ -1,1 +1,2 @@
-﻿await LocalModelExamples.Examples();
+await MemoryExamples.Examples();
+await LocalModelExamples.Examples();

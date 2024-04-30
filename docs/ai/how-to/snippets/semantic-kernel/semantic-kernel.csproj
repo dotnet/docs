@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -6,6 +6,7 @@
     <RootNamespace>semantic_kernel</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <UserSecretsId>ed6763a1-4d17-4e03-aa62-819cfc78ef3b</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -18,6 +19,7 @@
     <PackageReference Include="Microsoft.SemanticKernel.Connectors.AzureAISearch" Version="1.9.0-alpha" />
     <PackageReference Include="Microsoft.SemanticKernel.Connectors.Redis" Version="1.9.0-alpha" />
     <PackageReference Include="Microsoft.SemanticKernel.Plugins.Memory" Version="1.9.0-alpha" />
+    <PackageReference Include="StackExchange.Redis" Version="2.7.33" />
   </ItemGroup>
 
 </Project>

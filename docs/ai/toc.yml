@@ -5,6 +5,8 @@ items:
   items:
   - name: How generative AI and LLMs work
     href: conceptual/how-genai-and-llms-work.md
+  - name: Understanding tokens
+    href: conceptual/understanding-tokens.md
   - name: Embeddings preserve semantic meaning
     href: conceptual/embeddings.md
   - name: Vector databases support semantic memory  
@@ -17,12 +19,18 @@ items:
     href: conceptual/zero-shot-learning.md
   - name: Retrieval-augmented generation
     href: conceptual/rag.md
+  - name: Understand OpenAI function calling
+    href: conceptual/understanding-openai-functions.md
+  - name: Agents and copilots
+    href: conceptual/agents.md
 - name: How-to articles
   items:
   - name: Authenticate App Service to Azure OpenAI
     href: how-to/app-service-aoai-auth.md
   - name: Authenticate App Service to a vector database
     href: how-to/app-service-db-auth.md
+  - name: Use Redis for memory storage with the Semantic Kernel SDK
+    href: how-to/use-redis-for-memory.md
   - name: Use custom and local AI models with the Semantic Kernel SDK
     href: how-to/work-with-local-models.md
 - name: Tutorials

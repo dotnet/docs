@@ -480,7 +480,7 @@
 | Microsoft.Azure.Functions.Worker.Extensions.ApplicationInsights | NuGet [1.0.0-preview4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.ApplicationInsights/1.0.0-preview4) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.CosmosDB | NuGet [4.8.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.CosmosDB/4.8.1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.EventGrid | NuGet [3.4.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventGrid/3.4.1) |  |  |
-| Microsoft.Azure.Functions.Worker.Extensions.EventHubs | NuGet [6.3.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventHubs/6.3.0) |  |  |
+| Microsoft.Azure.Functions.Worker.Extensions.EventHubs | NuGet [6.3.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventHubs/6.3.1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Http | NuGet [3.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http/3.1.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Kafka | NuGet [3.10.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Kafka/3.10.1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Kusto | NuGet [1.0.9-Preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Kusto/1.0.9-Preview) |  |  |

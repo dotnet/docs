@@ -66,7 +66,7 @@ To create an app with a user-assigned identity, first create the identity and th
 1. Select **User assigned > Add**.
 1. Search for the identity you created earlier, select it, and then select **Add**.
 
-    > [!CAUTION]
+    > [!IMPORTANT]
     > Once you select **Add**, the app restarts.
 
 :::zone-end

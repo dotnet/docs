@@ -33,16 +33,16 @@ If a vector database service supports Microsoft Entra authentication, you can us
 
 Your application can be granted two types of identities:
 
-* A **system-assigned identity** is tied to your application and is deleted if your app is deleted. An app can only have one system-assigned identity.
+* A **system-assigned identity** is tied to your application and is deleted if your app is deleted. An app can have only one system-assigned identity.
 * A **user-assigned identity** is a standalone Azure resource that can be assigned to your app. An app can have multiple user-assigned identities.
 
 #### Add a system-assigned identity
 
 :::zone target="docs" pivot="azure-portal"
 
-1. Navigate to your app's page on the [Azure Portal](https://aka.ms/azureportal), scroll down to the **Settings** group.
+1. Navigate to your app's page in the [Azure portal](https://aka.ms/azureportal), and then scroll down to the **Settings** group.
 1. Select **Identity**.
-1. Within the **System assigned** tab, toggle *Status* to **On**. Click **Save**.
+1. On the **System assigned** tab, toggle *Status* to **On**, and then select **Save**.
 
 :::zone-end
 
@@ -58,18 +58,18 @@ az webapp identity assign --name {appName} --resource-group {groupName}
 
 #### Add a user-assigned identity
 
-To create an app with a user-assigned identity, first create the identity and then add its resource identifier to your app config.
+To add a user-assigned identity to your app, create the identity, and then add its resource identifier to your app config.
 
 :::zone target="docs" pivot="azure-portal"
 
-1. Create a user-assigned managed identity resource according to these [instructions](/azure/active-directory/managed-identities-azure-resources/how-to-manage-ua-identity-portal#create-a-user-assigned-managed-identity).
-1. In the left navigation for your app's page, scroll down to the **Settings** group.
+1. Create a user-assigned managed identity resource by following [these instructions](/azure/active-directory/managed-identities-azure-resources/how-to-manage-ua-identity-portal#create-a-user-assigned-managed-identity).
+1. In the left navigation pane of your app's page, scroll down to the **Settings** group.
 1. Select **Identity**.
-1. Select **User assigned > Add**.
-1. Search for the identity you created earlier, select it, and then select **Add**.
+1. Select **User assigned** > **Add**.
+1. Locate the identity that you created earlier, select it, and then select **Add**.
 
-    > [!CAUTION]
-    > Once you select **Add**, the app restarts.
+    > [!IMPORTANT]
+    > After you select **Add**, the app restarts.
 
 :::zone-end
 
@@ -93,9 +93,8 @@ To create an app with a user-assigned identity, first create the identity and th
 
 :::zone target="docs" pivot="azure-portal"
 
-1. In the [Azure Portal](https://aka.ms/azureportal), navigate to the scope you want to grant vector database access to.
-    * The scope can be a **Management group**, **Subscription**, or **Resource group**, or a specific Azure resource.
-1. Select **Access control (IAM)** on the left navigation pane.
+1. In the [Azure Portal](https://aka.ms/azureportal), navigate to the scope that you want to grant vector database access to. The scope can be a **Management group**, **Subscription**, **Resource group**, or a specific Azure resource.
+1. In the left navigation pane, select **Access control (IAM)**.
 1. Select **Add**, then select **Add role assignment**.
 1. On the **Role** tab, select the appropriate role that grants read access to your vector database.
 1. On the **Members** tab, select the managed identity.

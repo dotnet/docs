@@ -18,7 +18,6 @@ This article also demonstrates how to use the [Semantic Kernel SDK](/semantic-ke
 
 By using a managed identity from Microsoft Entra, your App Service application can easily access protected Azure OpenAI resources without having to manually provision or rotate any secrets.
 
-
 ## Prerequisites
 
 * An Azure account that has an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).

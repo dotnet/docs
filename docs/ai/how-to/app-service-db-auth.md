@@ -51,7 +51,7 @@ Your application can be granted two types of identities:
 Run the `az webapp identity assign` command to create a system-assigned identity:
 
 ```azurecli
-az webapp identity assign --name {appName} --resource-group {groupName}
+az webapp identity assign --name <appName> --resource-group <groupName>
 ```
 
 :::zone-end
@@ -78,13 +78,13 @@ To add a user-assigned identity to your app, create the identity, and then add i
 1. Create a user-assigned identity:
 
     ```azurecli
-    az identity create --resource-group {groupName} --name {identityName}
+    az identity create --resource-group <groupName> --name <identityName>
     ```
 
 1. Assign the identity to your app:
 
     ```azurecli
-    az webapp identity assign --resource-group {groupName} --name {appName} --identities {identityId}
+    az webapp identity assign --resource-group <groupName> --name <appName> --identities <identityId>
     ```
 
 :::zone-end
@@ -107,33 +107,33 @@ To add a user-assigned identity to your app, create the identity, and then add i
 **Resource scope**
 
 ```azurecli
-az role assignment create --assignee "{managedIdentityObjectID}" \
---role "{myVectorDbReaderRole}" \
---scope "/subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}/providers/{providerName}/{resourceType}/{resourceSubType}/{resourceName}"
+az role assignment create --assignee "<managedIdentityObjectID>" \
+--role "<myVectorDbReaderRole>" \
+--scope "/subscriptions/<subscriptionId>/resourcegroups/<resourceGroupName>/providers/<providerName>/<resourceType>/<resourceSubType>/<resourceName>"
 ```
 
 **Resource group scope**
 
 ```azurecli
-az role assignment create --assignee "{managedIdentityObjectID}" \
---role "{myVectorDbReaderRole}" \
---scope "/subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}"
+az role assignment create --assignee "<managedIdentityObjectID>" \
+--role "<myVectorDbReaderRole>" \
+--scope "/subscriptions/<subscriptionId>/resourcegroups/<resourceGroupName>"
 ```
 
 **Subscription scope**
 
 ```azurecli
-az role assignment create --assignee "{managedIdentityObjectID}" \
---role "{myVectorDbReaderRole}" \
---scope "/subscriptions/{subscriptionId}"
+az role assignment create --assignee "<managedIdentityObjectID>" \
+--role "<myVectorDbReaderRole>" \
+--scope "/subscriptions/<subscriptionId>"
 ```
 
 **Management group scope**
 
 ```azurecli
-az role assignment create --assignee "{managedIdentityObjectID}" \
---role "{myVectorDbReaderRole}" \
---scope "/providers/Microsoft.Management/managementGroups/{managementGroupName}"
+az role assignment create --assignee "<managedIdentityObjectID>" \
+--role "<myVectorDbReaderRole>" \
+--scope "/providers/Microsoft.Management/managementGroups/<managementGroupName>"
 ```
 
 :::zone-end
@@ -196,17 +196,17 @@ Before following these steps, retrieve a connection string for your vector datab
     ```azurecli
     az role assignment create \
     --role "Key Vault Secrets User" \
-    --assignee "{yourEmailAddress}" \
-    --scope "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.KeyVault/vaults/{keyVaultName}"
+    --assignee "<yourEmailAddress>" \
+    --scope "/subscriptions/<subscriptionId>/resourceGroups/<resourceGroupName>/providers/Microsoft.KeyVault/vaults/<keyVaultName>"
     ```
 
 1. Add the connection string to Key Vault using the Azure CLI command [`az keyvault secret set`](/cli/azure/keyvault/secret?view=azure-cli-latest#az-keyvault-secret-set):
 
     ```azurecli
     az keyvault secret set \
-    --vault-name "{keyVaultName}" \
-    --name "{secretName}" \
-    --value "{connectionString}"
+    --vault-name "<keyVaultName>" \
+    --name "<secretName>" \
+    --value "<connectionString>"
     ```
 
 :::zone-end
@@ -276,10 +276,10 @@ Add or edit an app setting with the Azure CLI command [`az webapp config connect
 
 ```azurecli
 az webapp config connection-string set \
---name "{appName}" \
---resource-group "{groupName}" \
---connection-string-type "{connectionType}" \
---settings {connectionName}='{connectionString}'
+--name "<appName>" \
+--resource-group "<groupName>" \
+--connection-string-type "<connectionType>" \
+--settings <connectionName>='<connectionString>'
 ```
 
 :::zone-end

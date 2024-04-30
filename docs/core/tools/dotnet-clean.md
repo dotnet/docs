@@ -14,7 +14,8 @@ ms.date: 02/14/2020
 ## Synopsis
 
 ```dotnetcli
-dotnet clean [<PROJECT>|<SOLUTION>] [-c|--configuration <CONFIGURATION>]
+dotnet clean [<PROJECT>|<SOLUTION>] [--artifacts-path <ARTIFACTS_DIR>]
+    [-c|--configuration <CONFIGURATION>]
     [-f|--framework <FRAMEWORK>] [--interactive]
     [--nologo] [-o|--output <OUTPUT_DIRECTORY>]
     [-r|--runtime <RUNTIME_IDENTIFIER>] [--tl:[auto|on|off]]
@@ -34,6 +35,8 @@ The `dotnet clean` command cleans the output of the previous build. It's impleme
 The MSBuild project or solution to clean. If a project or solution file is not specified, MSBuild searches the current working directory for a file that has a file extension that ends in *proj* or *sln*, and uses that file.
 
 ## Options
+
+[!INCLUDE [artifacts-path](../../../includes/cli-artifacts-path.md)]
 
 [!INCLUDE [configuration](../../../includes/cli-configuration-clean.md)]
 

@@ -88,10 +88,10 @@ The original deployment only deployed the minimal services necessary to host the
 
 ::: zone pivot="azure-storage"
 
-1. Using the terminal, run `azd env set` to configure the `DEPLOY_AZURE_COSMOS_DB_NOSQL` environment variable to enable deployment of Azure Cosmos DB for NoSQL.
+1. Using the terminal, run `azd env set` to configure the `DEPLOY_AZURE_TABLE_STORAGE` environment variable to enable deployment of Azure Cosmos DB for NoSQL.
 
     ```azuredeveloper
-    azd env set DEPLOY_AZURE_COSMOS_DB_NOSQL true
+    azd env set DEPLOY_AZURE_TABLE_STORAGE true
     ```
 
 ::: zone-end
@@ -101,7 +101,7 @@ The original deployment only deployed the minimal services necessary to host the
 1. Using the terminal, run `azd env set` to configure the `DEPLOY_AZURE_COSMOS_DB_NOSQL` environment variable to enable deployment of Azure Cosmos DB for NoSQL.
 
     ```azuredeveloper
-    azd env set DEPLOY_AZURE_TABLE_STORAGE true
+    azd env set DEPLOY_AZURE_COSMOS_DB_NOSQL true
     ```
 
 ::: zone-end

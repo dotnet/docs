@@ -14,6 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       issues: write
+      pull-requests: write
+      id-token: write
     if: ${{ github.repository_owner == 'dotnet' }}
     steps:
       - name: "Print manual bulk import run reason"

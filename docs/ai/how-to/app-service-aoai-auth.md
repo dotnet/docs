@@ -57,7 +57,7 @@ az webapp identity assign --name <app-name> --resource-group <group-name>
 
 ### Add a user-assigned identity
 
-To create an app with a user-assigned identity, first create the identity and then add its resource identifier to your app config.
+To add a user-assigned identity to your app, create the identity, and then add its resource identifier to your app config.
 
 :::zone target="docs" pivot="azure-portal"
 
@@ -92,8 +92,7 @@ To create an app with a user-assigned identity, first create the identity and th
 
 :::zone target="docs" pivot="azure-portal"
 
-1. In the [Azure Portal](https://aka.ms/azureportal), navigate to the scope that you want to grant **Azure OpenAI** access to.
-The scope can be a **Management group**, **Subscription**, **Resource group**, or a specific **Azure OpenAI** resource.
+1. In the [Azure Portal](https://aka.ms/azureportal), navigate to the scope that you want to grant **Azure OpenAI** access to. The scope can be a **Management group**, **Subscription**, **Resource group**, or a specific **Azure OpenAI** resource.
 1. In the left navigation pane, select **Access control (IAM)**.
 1. Select **Add**, then select **Add role assignment**.
 1. On the **Role** tab, select the **Cognitive Services OpenAI User** role.

@@ -49,7 +49,7 @@ Your application can be granted two types of identities:
 Run the `az webapp identity assign` command to create a system-assigned identity:
 
 ```azurecli
-az webapp identity assign --name {appName} --resource-group {groupName}
+az webapp identity assign --name <appName> --resource-group <groupName>
 ```
 
 :::zone-end
@@ -76,13 +76,13 @@ To add a user-assigned identity to your app, create the identity, and then add i
 1. Create a user-assigned identity:
 
     ```azurecli
-    az identity create --resource-group {groupName} --name {identityName}
+    az identity create --resource-group <groupName> --name <identityName>
     ```
 
 1. Assign the identity to your app:
 
     ```azurecli
-    az webapp identity assign --resource-group {groupName} --name {appName} --identities {identityId}
+    az webapp identity assign --resource-group <groupName> --name <appName> --identities <identityId>
     ```
 
 :::zone-end
@@ -105,33 +105,33 @@ To add a user-assigned identity to your app, create the identity, and then add i
 **Resource scope**
 
 ```azurecli
-az role assignment create --assignee "{managedIdentityObjectID}" \
+az role assignment create --assignee "<managedIdentityObjectID>" \
 --role "Cognitive Services OpenAI User" \
---scope "/subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}/providers/{providerName}/{resourceType}/{resourceSubType}/{resourceName}"
+--scope "/subscriptions/<subscriptionId>/resourcegroups/<resourceGroupName>/providers/<providerName>/<resourceType>/<resourceSubType>/<resourceName>"
 ```
 
 **Resource group scope**
 
 ```azurecli
-az role assignment create --assignee "{managedIdentityObjectID}" \
+az role assignment create --assignee "<managedIdentityObjectID>" \
 --role "Cognitive Services OpenAI User" \
---scope "/subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}"
+--scope "/subscriptions/<subscriptionId>/resourcegroups/<resourceGroupName>"
 ```
 
 **Subscription scope**
 
 ```azurecli
-az role assignment create --assignee "{managedIdentityObjectID}" \
+az role assignment create --assignee "<managedIdentityObjectID>" \
 --role "Cognitive Services OpenAI User" \
---scope "/subscriptions/{subscriptionId}"
+--scope "/subscriptions/<subscriptionId>"
 ```
 
 **Management group scope**
 
 ```azurecli
-az role assignment create --assignee "{managedIdentityObjectID}" \
+az role assignment create --assignee "<managedIdentityObjectID>" \
 --role "Cognitive Services OpenAI User" \
---scope "/providers/Microsoft.Management/managementGroups/{managementGroupName}"
+--scope "/providers/Microsoft.Management/managementGroups/<managementGroupName>"
 ```
 
 :::zone-end

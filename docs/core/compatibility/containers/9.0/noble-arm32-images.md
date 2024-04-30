@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: `9.0-noble` images are 64-bit only"
 description: Learn about the breaking change in Ubuntu 24.04 "noble" container images.
-ms.date: 07/11/2023
+ms.date: 04/29/2024
 ms.custom: linux-related-content
 ---
 # `9.0-noble` images are 64-bit only
@@ -14,9 +14,9 @@ Previously, you could reference a tag like `8.0` and be able to retrieve an Arm3
 
 ## New behavior
 
-Starting in .NET 9, the `9.0` tag will only retrieve 64-bit images.
+Starting in .NET 9, the `9.0` tag only retrieves 64-bit images.
 
-Canonical has signaled that Arm32 is on the path to being deprecated / not supported for Ubuntu. Ubuntu related .NET tags will be 64-bit only going forward.
+Canonical has signaled that Arm32 is on the path to being deprecated / not supported for Ubuntu. Ubuntu-related .NET tags are 64-bit only going forward.
 
 > From 24.04 (noble), we will no longer be producing 32-bit (armhf) images for the Raspberry Pi.
 
@@ -40,7 +40,7 @@ This change was made due to .NET 9 year 2038 incompatibility (specific to Arm32)
 
 Use Debian or Alpine Arm32 images or switch to a 64-bit environment. For example, Raspberry Pi can run both Arm32 and Arm64 Raspberry Pi OS variants.
 
-Example .NET 9 container tags supported for Arm32.
+Example .NET 9 container tags supported for Arm32:
 
 - Debian: `mcr.microsoft.com/dotnet/sdk:9.0`
 - Alpine: `mcr.microsoft.com/dotnet/sdk:9.0-alpine`

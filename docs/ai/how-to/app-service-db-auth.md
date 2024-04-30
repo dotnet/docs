@@ -89,7 +89,7 @@ To add a user-assigned identity to your app, create the identity, and then add i
 
 :::zone-end
 
-### Assign an Azure role to your managed identity
+### Add an Azure role to your managed identity
 
 :::zone target="docs" pivot="azure-portal"
 

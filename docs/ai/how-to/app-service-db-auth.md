@@ -214,7 +214,7 @@ Before following these steps, retrieve a connection string for your vector datab
 ### Grant your App Service access to Key Vault
 
 1. [Assign a managed identity to your App Service](#add-a-managed-identity-to-app-service).
-1. [Add the `Key Vault Secrets User` and `Key Vault Reader` roles to your managed identity](#assign-an-azure-role-to-your-managed-identity).
+1. [Add the `Key Vault Secrets User` and `Key Vault Reader` roles to your managed identity](#add-an-azure-role-to-your-managed-identity).
 
 ### Implement connection string retrieval from Key Vault
 

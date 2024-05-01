@@ -1,6 +1,4 @@
 ﻿//<snippet3>
-using System;
-
 class ArgumentOutOfRangeExample
 {
     public static void Main()

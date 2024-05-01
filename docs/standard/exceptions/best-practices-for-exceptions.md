@@ -52,7 +52,9 @@ The approach to choose depends on how often you expect the event to occur.
   > [!NOTE]
   > Up-front checks eliminate exceptions most of the time. However, there can be race conditions where the guarded condition changes between the check and the operation, and in that case, you could still incur an exception.
 
-.NET design patterns include alternative forms of error handling for situations when the performance cost of exceptions is prohibitive. For example, <xref:System.Int32.TryParse%2A?displayProperty=nameWithType> returns a Boolean, with an `out` parameter that contains the parsed valid integer upon success. <xref:System.Collections.Generic.Dictionary%602.TryGetValue%2A?displayProperty=nameWithType> has similar behavior for attempting to get a value from a dictionary.
+### Call `Try*` methods to avoid exceptions
+
+If the performance cost of exceptions is prohibitive, some .NET library methods provide alternative forms of error handling. For example, <xref:System.Int32.Parse%2A?displayProperty=nameWithType> throws an <xref:System.OverflowException> if the value to be parsed is too large to be represented by <xref:System.Int32>. However, <xref:System.Int32.TryParse%2A?displayProperty=nameWithType> doesn't throw this exception. Instead, it returns a Boolean and has an `out` parameter that contains the parsed valid integer upon success. <xref:System.Collections.Generic.Dictionary%602.TryGetValue%2A?displayProperty=nameWithType> has similar behavior for attempting to get a value from a dictionary.
 
 ### Catch cancellation and asynchronous exceptions
 

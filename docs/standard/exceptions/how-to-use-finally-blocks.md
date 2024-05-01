@@ -21,7 +21,7 @@ When an exception occurs, execution stops and control is given to the appropriat
 The following code example uses a `try`/`catch` block to catch an <xref:System.ArgumentOutOfRangeException>. The `Main` method creates two arrays and attempts to copy one to the other. The action generates an <xref:System.ArgumentOutOfRangeException> because `length` is specified as -1, and the error is written to the console. The `finally` block executes regardless of the outcome of the copy action.
 
 [!code-cpp[CodeTryCatchFinallyExample#3](../../../samples/snippets/cpp/VS_Snippets_CLR/CodeTryCatchFinallyExample/CPP/source2.cpp#3)]
-[!code-csharp[CodeTryCatchFinallyExample#3](../../../samples/snippets/csharp/VS_Snippets_CLR/CodeTryCatchFinallyExample/CS/source2.cs#3)]
+[!code-csharp[CodeTryCatchFinallyExample#3](./snippets/how-to-use-finally-blocks/csharp/source2.cs#3)]
 [!code-vb[CodeTryCatchFinallyExample#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CodeTryCatchFinallyExample/VB/source2.vb#3)]  
 
 ## See also

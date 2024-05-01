@@ -29,7 +29,33 @@ For more information about the terminal logger, see [dotnet build options](../..
 
 A new option for [`dotnet tool install`](../../tools/dotnet-tool-install.md) lets *users* decide how .NET tools should be run. When you install a tool via `dotnet tool install`, or when you run tool via [`dotnet tool run <toolname>`](../../tools/dotnet-tool-run.md), you can specify a new flag called `--allow-roll-forward`. This option configures the tool with roll-forward mode `Major`. This mode allows the tool to run on a newer major version of .NET if the matching .NET version is not available. This feature helps early adopters use .NET tools without tool authors having to change any code.
 
-## Terminal logger usability
+## Terminal logger
+
+The terminal logger is now [enabled by default](#enabled-by-default) and also has [improved usability](#usability).
+
+### Enabled by default
+
+Starting in .NET 9, the default experience for all .NET CLI commands that use MSBuild is terminal logger, the enhanced logging experience that was released in .NET 8. This new output uses the capabilities of modern terminals to provide functionality like:
+
+- Clickable links
+- Duration timers for MSBuild tasks
+- Color coding of warning and error messages
+
+The output is more condensed and usable than the existing MSBuild console logger.
+
+The new logger attempts to auto-detect if it can be used, but you can also manually control whether terminal logger is used. Specify the `--tl:off` command-line option to disable terminal logger for a specific command. Or, to disable terminal logger more broadly, set the `MSBUILDTERMINALLOGGER` environment variable to `off`.
+
+The set of commands that uses terminal logger by default is:
+
+- `build`
+- `clean`
+- `msbuild`
+- `pack`
+- `publish`
+- `restore`
+- te`st
+
+### Usability
 
 The terminal logger now summarizes the total count of failures and warnings at the end of a build. It also shows errors that contain newlines. (For more information about the terminal logger, see ['dotnet build' options](../../tools/dotnet-build.md#options), specifically the `--tl` option.)
 

@@ -1,6 +1,6 @@
 ---
-title: Lambda expression warnings
-description: This article helps you diagnose and correct compiler errors and warnings for lambda expression declarations and usage.
+title: Lock statement errors and warnings
+description: This article helps you diagnose and correct compiler errors and warnings when you use the `lock` statement.
 f1_keywords:
   - "CS0185"
   - "CS1996"

@@ -3,7 +3,8 @@ using System.Threading.Tasks;
 
 public class Account
 {
-    private readonly object balanceLock = new object();
+    // Use `object` in versions earlier than C# 13
+    private readonly System.Threading.Lock balanceLock = new();
     private decimal balance;
 
     public Account(decimal initialBalance) => balance = initialBalance;
@@ -53,6 +54,7 @@ class AccountTest
 {
     static async Task Main()
     {
+
         var account = new Account(1000);
         var tasks = new Task[100];
         for (int i = 0; i < tasks.Length; i++)

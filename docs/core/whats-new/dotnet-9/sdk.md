@@ -53,7 +53,7 @@ The set of commands that uses terminal logger by default is:
 - `pack`
 - `publish`
 - `restore`
-- te`st
+- `test`
 
 ### Usability
 

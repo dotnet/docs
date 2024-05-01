@@ -57,7 +57,7 @@ Examples:
   <DirectPInvoke Include="Dependency" />
   <!-- Specify library to link against -->
   <NativeLibrary Include="Dependency.lib" Condition="$(RuntimeIdentifier.StartsWith('win'))" />
-  <NativeLibrary Include="Dependency.a" Condition="!$(RuntimeIdentifier.StartsWith('win'))" />
+  <NativeLibrary Include="Dependency.a" Condition="!$(RuntimeIdentifier.StartsWith('linux'))" />
 </ItemGroup>
 ```
 

@@ -24,7 +24,7 @@ The following best practices concern how you handle exceptions:
 - [Catch cancellation and asynchronous exceptions](#catch-cancellation-and-asynchronous-exceptions)
 - [Design classes so that exceptions can be avoided](#design-classes-so-that-exceptions-can-be-avoided)
 - [Restore state when methods don't complete due to exceptions](#restore-state-when-methods-dont-complete-due-to-exceptions)
-- [Capture exceptions to rethrow later](#capture-exceptions-to-rethrow-later)
+- [Capture and rethrow exceptions properly](#capture-and-rethrow-exceptions-properly)
 
 ### Use try/catch/finally blocks to recover from errors or release resources
 
@@ -46,8 +46,11 @@ If you don't check the connection state before closing, you can catch the `Inval
 
 The approach to choose depends on how often you expect the event to occur.
 
-- Check for error conditions in code if the event happens routinely and could be considered part of normal execution. When you check for common error conditions, less code is executed because you avoid exceptions.
 - Use exception handling if the event doesn't occur often, that is, if the event is truly exceptional and indicates an error, such as an unexpected end-of-file. When you use exception handling, less code is executed in normal conditions.
+- Check for error conditions in code if the event happens routinely and could be considered part of normal execution. When you check for common error conditions, less code is executed because you avoid exceptions.
+
+  > [!NOTE]
+  > Up-front checks eliminate exceptions most of the time. However, there can be race conditions where the guarded condition changes between the check and the operation, and in that case, you could still incur an exception.
 
 .NET design patterns include alternative forms of error handling for situations when the performance cost of exceptions is prohibitive. For example, <xref:System.Int32.TryParse%2A?displayProperty=nameWithType> returns a Boolean, with an `out` parameter that contains the parsed valid integer upon success. <xref:System.Collections.Generic.Dictionary%602.TryGetValue%2A?displayProperty=nameWithType> has similar behavior for attempting to get a value from a dictionary.
 
@@ -148,13 +151,12 @@ Catch ex As Exception
 End Try
 ```
 
-### Capture exceptions to rethrow later
+### Capture and rethrow exceptions properly
 
-To capture an exception and preserve its callstack to be able to rethrow it later, use the <xref:System.Runtime.ExceptionServices.ExceptionDispatchInfo?displayProperty=fullName> class. This class provides the following methods and properties (among others):
+Once an exception is thrown, part of the information it carries is the stack trace. The stack trace is a list of the method call hierarchy that starts with the method that throws the exception and ends with the method that catches the exception. If you rethrow an exception by specifying the exception in the `throw` statement, for example, `throw e`, the stack trace is restarted at the current method and the list of method calls between the original method that threw the exception and the current method is lost. To keep the original stack trace information with the exception, there are two options that depend on where you're rethrowing the exception from:
 
-- Use <xref:System.Runtime.ExceptionServices.ExceptionDispatchInfo.Capture(System.Exception)?displayProperty=nameWithType> to capture an exception and call stack.
-- Use <xref:System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw?displayProperty=nameWithType> to restore the state that was saved when the exception was captured and rethrow the captured exception.
-- Use the <xref:System.Runtime.ExceptionServices.ExceptionDispatchInfo.SourceException?displayProperty=nameWithType> property to inspect the captured exception.
+- If you rethrow the exception from within the handler (`catch` block) that's caught the exception instance, use the `throw` statement without specifying the exception. Code analysis rule [CA2200](../../fundamentals/code-analysis/quality-rules/ca2200.md) helps you find places in your code where you might inadvertently lose stack trace information.
+- If you're rethrowing the exception from somewhere other than the handler (`catch` block), use <xref:System.Runtime.ExceptionServices.ExceptionDispatchInfo.Capture(System.Exception)?displayProperty=nameWithType> to capture the exception in the handler and <xref:System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw?displayProperty=nameWithType> when you want to rethrow it. You can use the <xref:System.Runtime.ExceptionServices.ExceptionDispatchInfo.SourceException?displayProperty=nameWithType> property to inspect the captured exception.
 
 The following example shows how the <xref:System.Runtime.ExceptionServices.ExceptionDispatchInfo> class can be used, and what the output might look like.
 
@@ -203,7 +205,6 @@ The following best practices concern how you throw exceptions:
 - [Include a localized string message](#include-a-localized-string-message)
 - [Use proper grammar](#use-proper-grammar)
 - [Place throw statements well](#place-throw-statements-well)
-- [Rethrow to preserve stack details](#rethrow-to-preserve-stack-details)
 - [Don't raise exceptions in finally clauses](#dont-raise-exceptions-in-finally-clauses)
 - [Don't raise exceptions from unexpected places](#dont-raise-exceptions-from-unexpected-places)
 - [Throw argument validation exceptions synchronously](#throw-argument-validation-exceptions-synchronously)
@@ -225,7 +226,7 @@ It's common for a class to throw the same exception from different places in its
 [!code-csharp[Conceptual.Exception.Handling#6](./snippets/best-practices/csharp/source.cs#6)]
 [!code-vb[Conceptual.Exception.Handling#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.exception.handling/vb/source.vb#6)]
 
-Some key .NET exception types have static methods that allocate and throw the exception. To make your code smaller and faster, use these methods whenever possible:
+Some key .NET exception types have such static `throw` helper methods that allocate and throw the exception. You should call these methods instead of constructing and throwing the corresponding exception type:
 
 - <xref:System.ArgumentNullException.ThrowIfNull%2A?displayProperty=nameWithType>
 - <xref:System.ArgumentException.ThrowIfNullOrEmpty(System.String,System.String)?displayProperty=nameWithType>
@@ -241,7 +242,8 @@ Some key .NET exception types have static methods that allocate and throw the ex
 - <xref:System.ArgumentOutOfRangeException.ThrowIfGreaterThanOrEqual%60%601(%60%600,%60%600,System.String)?displayProperty=nameWithType>
 - <xref:System.ObjectDisposedException.ThrowIf%2A?displayProperty=nameWithType>
 
-The following code analysis rules can help you find places in your code where you can take advantage of these static `throw` helpers: [CA1510](../../fundamentals/code-analysis/quality-rules/ca1510.md), [CA1511](../../fundamentals/code-analysis/quality-rules/ca1511.md), [CA1512](../../fundamentals/code-analysis/quality-rules/ca1512.md), and [CA1513](../../fundamentals/code-analysis/quality-rules/ca1513.md).
+> [!TIP]
+> The following code analysis rules can help you find places in your code where you can take advantage of these static `throw` helpers: [CA1510](../../fundamentals/code-analysis/quality-rules/ca1510.md), [CA1511](../../fundamentals/code-analysis/quality-rules/ca1511.md), [CA1512](../../fundamentals/code-analysis/quality-rules/ca1512.md), and [CA1513](../../fundamentals/code-analysis/quality-rules/ca1513.md).
 
 If you're implementing an asynchronous method, call <xref:System.Threading.CancellationToken.ThrowIfCancellationRequested?displayProperty=nameWithType> instead of checking if cancellation was requested and then constructing and throwing <xref:System.OperationCanceledException>. For more information, see [CA2250](../../fundamentals/code-analysis/quality-rules/ca2250.md).
 
@@ -263,23 +265,17 @@ Write clear sentences and include ending punctuation. Each sentence in the strin
 
 Place throw statements where the stack trace will be helpful. The stack trace begins at the statement where the exception is thrown and ends at the `catch` statement that catches the exception.
 
-### Rethrow to preserve stack details
-
-Once an exception is thrown, part of the information it carries is the stack trace. The stack trace is a list of the method call hierarchy that starts with the method that throws the exception and ends with the method that catches the exception. If an exception is rethrown by specifying the exception in the `throw` statement, the stack trace is restarted at the current method and the list of method calls between the original method that threw the exception and the current method is lost. To keep the original stack trace information with the exception, use the `throw` statement without specifying the exception.
-
-For more information, see [CA2200: Rethrow to preserve stack details](../../fundamentals/code-analysis/quality-rules/ca2200.md).
-
 ### Don't raise exceptions in finally clauses
 
-For more information, see [CA2219: Do not raise exceptions in exception clauses](../../fundamentals/code-analysis/quality-rules/ca2219.md).
+Don't raise exceptions in `finally` clauses. For more information, see code analysis rule [CA2219](../../fundamentals/code-analysis/quality-rules/ca2219.md).
 
 ### Don't raise exceptions from unexpected places
 
-Some methods, such as `Equals`, `GetHashCode`, and `ToString` methods, static constructors, and equality operators, shouldn't throw exceptions. For more information, see [CA1065](../../fundamentals/code-analysis/quality-rules/ca1065.md).
+Some methods, such as `Equals`, `GetHashCode`, and `ToString` methods, static constructors, and equality operators, shouldn't throw exceptions. For more information, see code analysis rule [CA1065](../../fundamentals/code-analysis/quality-rules/ca1065.md).
 
 ### Throw argument validation exceptions synchronously
 
-In task-returning methods, we recommend that you validate arguments and throw any corresponding exceptions, such as <xref:System.ArgumentException> and <xref:System.ArgumentNullException>, before entering the asynchronous part of the method. Exceptions that are thrown in the asynchronous part of the method are stored in the returned task and don't emerge until, for example, the task is awaited. For more information, see [Exceptions in task-returning methods](../../csharp/fundamentals/exceptions/creating-and-throwing-exceptions.md#exceptions-in-task-returning-methods).
+In task-returning methods, you should validate arguments and throw any corresponding exceptions, such as <xref:System.ArgumentException> and <xref:System.ArgumentNullException>, before entering the asynchronous part of the method. Exceptions that are thrown in the asynchronous part of the method are stored in the returned task and don't emerge until, for example, the task is awaited. For more information, see [Exceptions in task-returning methods](../../csharp/fundamentals/exceptions/creating-and-throwing-exceptions.md#exceptions-in-task-returning-methods).
 
 ## Custom exception types
 

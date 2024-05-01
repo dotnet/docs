@@ -42,7 +42,7 @@ These errors indicate that your code violates rules regarding the `lock` the sta
 
 You must update your code to follow the rules of the `lock` statement.
 
-## lock warnings
+## lock warning
 
 - **CS9216**: *A value of type `System.Threading.Lock` converted to a different type will use likely unintended monitor-based locking in `lock` statement.*
 

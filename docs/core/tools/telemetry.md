@@ -76,7 +76,7 @@ The telemetry feature collects the following data:
 | >=5.0.100     | Hashed RuntimeIdentifier used for build (MSBuild property) |
 | >=5.0.100     | Hashed SelfContained used for build (MSBuild property) |
 | >=5.0.100     | Hashed UseApphost used for build (MSBuild property) |
-| >=5.0.100     | Hashed OutputType used for build (MSBuild property  |
+| >=5.0.100     | Hashed OutputType used for build (MSBuild property |
 | >=5.0.201     | Hashed PublishReadyToRun used for build (MSBuild property) |
 | >=5.0.201     | Hashed PublishTrimmed used for build (MSBuild property) |
 | >=5.0.201     | Hashed PublishSingleFile used for build (MSBuild property) |
@@ -93,6 +93,20 @@ The telemetry feature collects the following data:
 | >=6.0.300     | If the CLI was invoked from a Continuous Integration environment. For more information, see [Continuous Integration Detection](#continuous-integration-detection).|
 | >=7.0.100     | Hashed PublishAot used for build (MSBuild property) |
 | >=7.0.100     | Hashed PublishProtocol used for build (MSBuild property) |
+| >=8.0.100     | Hashed TargetPlatformIdentifier used for build (MSBuild property) |
+| >=8.0.100     | Hashed RuntimeIdentifier used for build (MSBuild property) |
+| >=8.0.100     | Hashed BlazorWasm used for build (MSBuild property) |
+| >=8.0.100     | Hashed WasmSDK used for build (MSBuild property) |
+| >=8.0.100     | Hashed UsesMaui used for build (MSBuild property) |
+| >=8.0.100     | Hashed UsesMobileSDKOnly used for build (MSBuild property) |
+| >=8.0.100     | Hashed UsesOtherMobileSDK used for build (MSBuild property) |
+| >=8.0.100     | Hashed MonoAOT used for build (MSBuild property) |
+| >=8.0.100     | Hashed NativeAOT used for build (MSBuild property) |
+| >=8.0.100     | Hashed Interp used for build (MSBuild property) |
+| >=8.0.100     | Hashed LibraryMode used for build (MSBuild property)|
+| >=8.0.100     | Hashed HybridGlobalization used for build (MSBuild property) |
+| >=8.0.100     | Hashed ResolvedRuntimePack used for build (MSBuild property) |
+| >=8.0.100     | Hashed StripILAfterAOT used for build (MSBuild property) |
 
 ### Collected options
 

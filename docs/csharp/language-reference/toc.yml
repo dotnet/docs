@@ -505,6 +505,9 @@ items:
   - name: static abstract interface members
     href: ./compiler-messages/static-abstract-interfaces.md
     displayName: CS8920, CS8921, CS8922, CS8923, CS8924, CS8925, CS8926, CS8928, CS8930, 8931, 8932
+  - name: Thread synchronization
+    href: ./compiler-messages/lock-semantics.md
+    displayName: CS0185, CS9216, CS9217
   - name: Warning waves
     href: ./compiler-messages/warning-waves.md
     displayName: >
@@ -762,8 +765,6 @@ items:
       href: ../misc/cs0180.md
     - name: CS0181
       href: ./compiler-messages/cs0181.md
-    - name: CS0185
-      href: ../misc/cs0185.md
     - name: CS0186
       href: ../misc/cs0186.md
     - name: CS0191

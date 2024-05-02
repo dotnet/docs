@@ -18,7 +18,7 @@ For information about choosing between .NET 5+ and .NET Standard, see [.NET 5+ a
 
 ### Which .NET Standard version to target
 
-We recommend you target .NET Standard 2.0, unless you need to support an earlier version. Most general-purpose libraries should not need APIs outside of .NET Standard 2.0. .NET Standard 2.0 is supported by all modern platforms and is the recommended way to support multiple platforms with one target.
+If you're targeting .NET Standard, we recommend you target .NET Standard 2.0, unless you need to support an earlier version. Most general-purpose libraries should not need APIs outside of .NET Standard 2.0, and .NET Framework doesn't support .NET Standard 2.1. .NET Standard 2.0 is supported by all modern platforms and is the recommended way to support multiple platforms with one target.
 
 If you need to support .NET Standard 1.x, we recommend that you *also* target .NET Standard 2.0. .NET Standard 1.x is distributed as a granular set of NuGet packages, which creates a large package dependency graph and results in developers downloading a lot of packages when building. For more information, see [Cross-platform targeting](library-guidance/cross-platform-targeting.md) and [.NET 5+ and .NET Standard](#net-5-and-net-standard) later in this article.
 
@@ -109,7 +109,7 @@ Here are some guidelines for new code for .NET 5+:
 
   If you're building reusable libraries that you plan to ship on NuGet, consider the trade-off between reach and available feature set. .NET Standard 2.0 is the latest version that's supported by .NET Framework, so it gives good reach with a fairly large feature set. We don't recommend targeting .NET Standard 1.x, as you'd limit the available feature set for a minimal increase in reach.
 
-  If you don't need to support .NET Framework, you could go with .NET Standard 2.1 or .NET 8. We recommend you skip .NET Standard 2.1 and go straight to .NET 8. Most widely used libraries will multi-target for both .NET Standard 2.0 and .NET 5+. Supporting .NET Standard 2.0 gives you the most reach, while supporting .NET 5+ ensures you can leverage the latest platform features for customers that are already on .NET 5+.
+  If you don't need to support .NET Framework, you could target .NET Standard 2.1 or .NET 8. We recommend you skip .NET Standard 2.1 and go straight to .NET 8. Most widely used libraries multi-target for both .NET Standard 2.0 and .NET 5+. Supporting .NET Standard 2.0 gives you the most reach, while supporting .NET 5+ ensures you can leverage the latest platform features for customers that are already on .NET 5+.
 
 ### .NET Standard problems
 

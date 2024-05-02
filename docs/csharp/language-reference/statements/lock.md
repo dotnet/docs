@@ -32,7 +32,7 @@ using (x.EnterScope())
 
 The object returned by <xref:System.Threading.Lock.EnterScope?displayProperty=nameWithType> is a [`ref struct`](../builtin-types/ref-struct.md) that includes a `Dispose()` method. The generated [`using`](using.md) statement ensures the scope is released even if an exception is thrown with the body of the `lock` statement.
 
-Otherwise, the `lock` statement is precisely equivalent to
+Otherwise, the `lock` statement is precisely equivalent to:
 
 ```csharp
 object __lockObj = x;
@@ -54,7 +54,7 @@ You can't use the [`await` expression](../operators/await.md) in the body of a `
 
 ## Guidelines
 
-Beginning with .NET 9 and C# 13, lock a dedicated object instance of the <xref:System.Threading.Lock?displayProperty=nameWithType> type. That ensures the best performance. In addition, the compiler issues a warning if a known `Lock` object is cast to another type and locked. If using an older version of .NET and C#, lock on a dedicated object instance that isn't used for another purpose. Avoid using the same lock object instance for different shared resources, as it might result in deadlock or lock contention. In particular, avoid using the following instances as lock objects:
+Beginning with .NET 9 and C# 13, lock a dedicated object instance of the <xref:System.Threading.Lock?displayProperty=nameWithType> type for best performance. In addition, the compiler issues a warning if a known `Lock` object is cast to another type and locked. If using an older version of .NET and C#, lock on a dedicated object instance that isn't used for another purpose. Avoid using the same lock object instance for different shared resources, as it might result in deadlock or lock contention. In particular, avoid using the following instances as lock objects:
 
 - `this`, as callers might also lock `this`.
 - <xref:System.Type> instances, as they might be obtained by the [typeof](../operators/type-testing-and-cast.md#typeof-operator) operator or reflection.

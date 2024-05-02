@@ -4,10 +4,10 @@ using System.Threading.Tasks;
 public class Account
 {
     // Use `object` in versions earlier than C# 13
-    private readonly System.Threading.Lock balanceLock = new();
-    private decimal balance;
+    private readonly System.Threading.Lock _balanceLock = new();
+    private decimal _balance;
 
-    public Account(decimal initialBalance) => balance = initialBalance;
+    public Account(decimal initialBalance) => _balance = initialBalance;
 
     public decimal Debit(decimal amount)
     {
@@ -54,7 +54,6 @@ class AccountTest
 {
     static async Task Main()
     {
-
         var account = new Account(1000);
         var tasks = new Task[100];
         for (int i = 0; i < tasks.Length; i++)

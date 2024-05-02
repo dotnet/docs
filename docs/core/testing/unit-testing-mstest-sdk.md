@@ -58,7 +58,7 @@ Then, you would have a _global.json_ file that specifies the `MSTest.Sdk` versio
 }
 ```
 
-For more information, see [Use MSBuild project SDKs](/visualstudio/msbuild/how-to-use-project-sdk?#how-project-sdks-are-resolved).
+For more information, see [Use MSBuild project SDKs](/visualstudio/msbuild/how-to-use-project-sdk#how-project-sdks-are-resolved).
 
 When you `build` the project, all the needed components are restored and installed using the standard NuGet workflow set by your project.
 

@@ -1,9 +1,4 @@
 ﻿//<snippet1>
-using System;
-using System.IO;
-using System.Data;
-using System.Data.SqlClient;
-
 public class FileReaderException : Exception
 {
     public FileReaderException(string description) : base(description)
@@ -20,24 +15,16 @@ public enum ConnectionState
 
 public class DemoDBClient
 {
-    private ConnectionState state;
-
     public DemoDBClient()
     {
-        state = ConnectionState.Open;
+        State = ConnectionState.Open;
     }
 
-    public ConnectionState State
-    {
-        get
-        {
-            return state;
-        }
-    }
+    public ConnectionState State { get; private set; }
 
     public void Close()
     {
-        state = ConnectionState.Closed;
+        State = ConnectionState.Closed;
     }
 }
 
@@ -85,15 +72,9 @@ public class ExceptionHandling
 //<snippet5>
 class FileRead
 {
-    public void ReadAll(FileStream fileToRead)
+    public static void ReadAll(FileStream fileToRead)
     {
-        // This if statement is optional
-        // as it is very unlikely that
-        // the stream would ever be null.
-        if (fileToRead == null)
-        {
-            throw new ArgumentNullException();
-        }
+        ArgumentNullException.ThrowIfNull(fileToRead);
 
         int b;
 
@@ -114,24 +95,20 @@ class FileRead
 //<snippet6>
 class FileReader
 {
-    private string fileName;
+    private readonly string _fileName;
 
     public FileReader(string path)
     {
-        fileName = path;
+        _fileName = path;
     }
 
     public byte[] Read(int bytes)
     {
-        byte[] results = FileUtils.ReadFromFile(fileName, bytes);
-        if (results == null)
-        {
-            throw NewFileIOException();
-        }
+        byte[] results = FileUtils.ReadFromFile(_fileName, bytes) ?? throw NewFileIOException();
         return results;
     }
 
-    FileReaderException NewFileIOException()
+    static FileReaderException NewFileIOException()
     {
         string description = "My NewFileIOException Description";
 

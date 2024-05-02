@@ -49,5 +49,5 @@ We recommend the following sequence of tutorials and articles for an introductio
 
 # Next Steps
 
-- [Quickstart: Build an Azure AI chat app with .NET](../quickstarts/get-started-azure-openai.mdt)
+- [Quickstart: Build an Azure AI chat app with .NET](../quickstarts/get-started-azure-openai.md)
 - [Video series: Machine Learning and AI with .NET](/shows/machine-learning-and-ai-with-dotnet-for-beginners)

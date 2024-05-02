@@ -38,16 +38,16 @@ We recommend the following sequence of tutorials and articles for an introductio
 
    |Scenario  |Tutorial  |
    |----------|----------|
-   | Creating a chat application | [Build an Azure AI chat app with .NET](../quickstarts/get-started-azure-openai)|
-   | Summarizing text | [Summarize text using Azure AI chat app with .NET](../quickstarts/quickstart-openai-summarize-text) |
-   | Chatting with your data     | [Get insight about your data from an .NET Azure AI chat app](../quickstarts/quickstart-ai-chat-with-data) |
-   | Call .NET functions with AI | [Extend Azure AI using Tools and execute a local Function with .NET](../quickstarts/quickstart-azure-openai-tool) |
-   | Generating images | [Generate images using Azure AI with .NET](../quickstarts/quickstart-openai-generate-images) |
-   | Training your own model |[ML.NET Tutorial](/learn/ml-dotnet/get-started-tutorial/intro) |
+   | Creating a chat application | [Build an Azure AI chat app with .NET](../quickstarts/get-started-azure-openai.md)|
+   | Summarizing text | [Summarize text using Azure AI chat app with .NET](../quickstarts/quickstart-openai-summarize-text.md) |
+   | Chatting with your data     | [Get insight about your data from an .NET Azure AI chat app](../quickstarts/quickstart-ai-chat-with-data.md) |
+   | Call .NET functions with AI | [Extend Azure AI using Tools and execute a local Function with .NET](../quickstarts/quickstart-azure-openai-tool.md) |
+   | Generating images | [Generate images using Azure AI with .NET](../quickstarts/quickstart-openai-generate-images.md) |
+   | Training your own model |[ML.NET Tutorial](https://dotnet.microsoft.com/learn/ml-dotnet/get-started-tutorial/intro) |
 
-1. Browse the Table of Contents to learn more about the core concepts, starting with [How generative AI and LLMs work](../conceptual/how-genai-and-llms-work)
+1. Browse the Table of Contents to learn more about the core concepts, starting with [How generative AI and LLMs work](../conceptual/how-genai-and-llms-work.md)
 
 # Next Steps
 
-- [Machine Learning and AI with .NET](/shows/machine-learning-and-ai-with-dotnet-for-beginners)
-- [Quickstart: Summarize text using Azure AI chat app with .NET](/dotnet/ai/quickstarts/quickstart-openai-summarize-text)
+- [Quickstart: Build an Azure AI chat app with .NET](../quickstarts/get-started-azure-openai.mdt)
+- [Video series: Machine Learning and AI with .NET](/shows/machine-learning-and-ai-with-dotnet-for-beginners)

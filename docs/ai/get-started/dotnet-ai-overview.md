@@ -10,7 +10,7 @@ ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 
 With .NET, you can use Artificial Intelligence (AI) to mimic human-like behavior and accomplish complex tasks in your applications - all using the tools, platforms, and services that are familiar to you.
 
-# Why choose .NET to build AI applications?
+## Why choose .NET to build AI applications?
 
 Millions of developers use .NET to create applications that run on the web, on mobile and desktop devices, or in the cloud. By using .NET to integrate AI into your applications, you can take advantage of all that .NET has to offer:
 
@@ -20,7 +20,7 @@ Millions of developers use .NET to create applications that run on the web, on m
 * Runs on top of the most popular web servers and cloud platforms.
 * Powerful tooling to edit, debug, test, and deploy.
 
-# What can you build with AI and .NET?
+## What can you build with AI and .NET?
 
 The opportunities with AI are near endless, here are a few examples of solutions you can build using AI in your .NET applications:
 
@@ -30,7 +30,7 @@ The opportunities with AI are near endless, here are a few examples of solutions
 * Classification: Label the severity of a customer reported issue.
 * Task automation: Automatically perform the next step in a workflow as tasks are completed.
 
-# Recommended learning path
+## Recommended learning path
 
 We recommend the following sequence of tutorials and articles for an introduction to developing applications with AI and .NET:
 
@@ -47,7 +47,7 @@ We recommend the following sequence of tutorials and articles for an introductio
 
 1. Browse the Table of Contents to learn more about the core concepts, starting with [How generative AI and LLMs work](../conceptual/how-genai-and-llms-work.md)
 
-# Next Steps
+## Next Steps
 
 - [Quickstart: Build an Azure AI chat app with .NET](../quickstarts/get-started-azure-openai.md)
 - [Video series: Machine Learning and AI with .NET](/shows/machine-learning-and-ai-with-dotnet-for-beginners)

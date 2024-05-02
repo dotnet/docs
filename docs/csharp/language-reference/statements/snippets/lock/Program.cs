@@ -17,11 +17,11 @@ public class Account
         }
 
         decimal appliedAmount = 0;
-        lock (balanceLock)
+        lock (_balanceLock)
         {
-            if (balance >= amount)
+            if (_balance >= amount)
             {
-                balance -= amount;
+                _balance -= amount;
                 appliedAmount = amount;
             }
         }
@@ -35,17 +35,17 @@ public class Account
             throw new ArgumentOutOfRangeException(nameof(amount), "The credit amount cannot be negative.");
         }
 
-        lock (balanceLock)
+        lock (_balanceLock)
         {
-            balance += amount;
+            _balance += amount;
         }
     }
 
     public decimal GetBalance()
     {
-        lock (balanceLock)
+        lock (_balanceLock)
         {
-            return balance;
+            return _balance;
         }
     }
 }

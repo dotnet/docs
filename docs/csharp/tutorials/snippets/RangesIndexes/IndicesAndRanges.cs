@@ -4,23 +4,24 @@ class IndicesAndRanges
 {
     // <SnippetIndicesAndRanges_Initialization>
     private string[] words = [
-                    // index from start    index from end
-        "The",      // 0                   ^9
-        "quick",    // 1                   ^8
-        "brown",    // 2                   ^7
-        "fox",      // 3                   ^6
-        "jumped",   // 4                   ^5
-        "over",     // 5                   ^4
-        "the",      // 6                   ^3
-        "lazy",     // 7                   ^2
-        "dog"       // 8                   ^1
-    ];
+                    // index from start     index from end
+        "first",    // 0                    ^10
+        "second",   // 1                    ^9
+        "third",    // 2                    ^8
+        "fourth",   // 3                    ^7
+        "fifth",    // 4                    ^6
+        "sixth",    // 5                    ^5
+        "seventh",  // 6                    ^4
+        "eighth",   // 7                    ^3
+        "ninth",    // 8                    ^2
+        "tenth"     // 9                    ^1
+    ];              // 10 (or words.Length) ^0
     // </SnippetIndicesAndRanges_Initialization>
 
     internal int Syntax_LastIndex()
     {
         // <SnippetIndicesAndRanges_LastIndex>
-        Console.WriteLine($"The last word is {words[^1]}");
+        Console.WriteLine($"The last word is < {words[^1]} >."); // The last worid is < tenth >. 
         // </SnippetIndicesAndRanges_LastIndex>
         return 0;
     }
@@ -28,9 +29,11 @@ class IndicesAndRanges
     internal int Syntax_Range()
     {
         // <SnippetIndicesAndRanges_Range>
-        string[] quickBrownFox = words[1..4];
-        foreach (var word in quickBrownFox)
-            Console.Write($"< {word} >");
+        string[] secondThirdFourth = words[1..4]; // contains "second", "third" and "fourth"
+        
+        // < second >< third >< fourth >
+        foreach (var word in secondThirdFourth)
+            Console.Write($"< {word} >"); 
         Console.WriteLine();
         // </SnippetIndicesAndRanges_Range>
         return 0;
@@ -39,9 +42,11 @@ class IndicesAndRanges
     internal int Syntax_LastRange()
     {
         // <SnippetIndicesAndRanges_LastRange>
-        string[] lazyDog = words[^2..^0];
-        foreach (var word in lazyDog)
-            Console.Write($"< {word} >");
+        string[] lastTwo = words[^2..^0]; // contains "ninth" and "tenth"
+       
+        // < ninth >< tenth >
+        foreach (var word in lastTwo)
+            Console.Write($"< {word} >"); 
         Console.WriteLine();
         // </SnippetIndicesAndRanges_LastRange>
         return 0;
@@ -50,17 +55,23 @@ class IndicesAndRanges
     internal int Syntax_PartialRange()
     {
         // <SnippetIndicesAndRanges_PartialRanges>
-        string[] allWords = words[..]; // contains "The" through "dog".
-        string[] firstPhrase = words[..4]; // contains "The" through "fox"
-        string[] lastPhrase = words[6..]; // contains "the", "lazy" and "dog"
+        string[] allWords = words[..]; // contains "first" through "tenth".
+        string[] firstPhrase = words[..4]; // contains "first" through "fourth"
+        string[] lastPhrase = words[6..]; // contains "seventh", "eight", "ninth" and "tenth"
+
+        // < first >< second >< third >< fourth >< fifth >< sixth >< seventh >< eighth >< ninth >< tenth >
         foreach (var word in allWords)
-            Console.Write($"< {word} >");
+            Console.Write($"< {word} >"); 
         Console.WriteLine();
+
+        // < first >< second >< third >< fourth >
         foreach (var word in firstPhrase)
-            Console.Write($"< {word} >");
+            Console.Write($"< {word} >"); 
         Console.WriteLine();
+
+        // < seventh >< eighth >< ninth >< tenth >
         foreach (var word in lastPhrase)
-            Console.Write($"< {word} >");
+            Console.Write($"< {word} >"); 
         Console.WriteLine();
         // </SnippetIndicesAndRanges_PartialRanges>
         return 0;
@@ -69,12 +80,14 @@ class IndicesAndRanges
     internal int Syntax_IndexRangeType()
     {
         // <SnippetIndicesAndRanges_RangeIndexTypes>
-        Index the = ^3;
-        Console.WriteLine(words[the]);
+        Index thirdFromEnd = ^3;
+        Console.WriteLine($"< {words[thirdFromEnd]} > "); // < eighth > 
         Range phrase = 1..4;
         string[] text = words[phrase];
+        
+        // < second >< third >< fourth >
         foreach (var word in text)
-            Console.Write($"< {word} >");
+            Console.Write($"< {word} >");  
         Console.WriteLine();
         // </SnippetIndicesAndRanges_RangeIndexTypes>
         return 0;

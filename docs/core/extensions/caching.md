@@ -3,7 +3,7 @@ title: Caching in .NET
 description: Discover effective ways to implement in-memory and distributed caching in .NET. Boost app performance and scalability with .NET caching.
 author: IEvangelist
 ms.author: dapine
-ms.date: 12/11/2023
+ms.date: 04/11/2024
 ---
 
 # Caching in .NET
@@ -58,6 +58,9 @@ Depending on your .NET workload, you might access the `IMemoryCache` differently
 With in-memory caching services registered, and resolved through DI, you're ready to start caching. This sample iterates through the letters in the English alphabet 'A' through 'Z'. The `record AlphabetLetter` type holds the reference to the letter, and generates a message.
 
 :::code source="snippets/caching/memory-apis/Program.cs" range="70-74":::
+
+> [!TIP]
+> The `file` access modifier is used on the `AlphabetLetter` type, as it's defined within and only accessed from the _Program.cs_ file. For more information, see [file (C# Reference)](../../csharp/language-reference/keywords/file.md). To see the full source code, see the [Program.cs](#put-it-all-together) section.
 
 The sample includes a helper function that iterates through the alphabet letters:
 

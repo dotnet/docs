@@ -20,4 +20,3 @@ The `new` keyword is used as:
 ## See also
 
 - [C# Keywords](index.md)
-- [C# Reference](../index.md)

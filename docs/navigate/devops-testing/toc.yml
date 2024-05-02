@@ -71,6 +71,8 @@ items:
             href: ../../core/testing/unit-testing-mstest-sdk.md
           - name: MSTest runner
             href: ../../core/testing/unit-testing-mstest-runner-intro.md
+          - name: Configure MSTest
+            href: ../../core/testing/unit-testing-mstest-configure.md
           - name: Code analysis
             items:
               - name: Overview
@@ -140,15 +142,27 @@ items:
           - name: Comparison with VSTest
             href: ../../core/testing/unit-testing-platform-vs-vstest.md
           - name: Extensions
-            href: ../../core/testing/unit-testing-platform-extensions.md
+            items:
+              - name: Overview
+                href: ../../core/testing/unit-testing-platform-extensions.md
+              - name: Code Coverage
+                href: ../../core/testing/unit-testing-platform-extensions-code-coverage.md
+              - name: Diagnostics
+                href: ../../core/testing/unit-testing-platform-extensions-diagnostics.md
+              - name: Hosting
+                href: ../../core/testing/unit-testing-platform-extensions-hosting.md
+              - name: Policy
+                href: ../../core/testing/unit-testing-platform-extensions-policy.md
+              - name: Test Reports
+                href: ../../core/testing/unit-testing-platform-extensions-test-reports.md
+              - name: VSTest Bridge
+                href: ../../core/testing/unit-testing-platform-extensions-vstest-bridge.md
           - name: Optional telemetry
             href: ../../core/testing/unit-testing-platform-telemetry.md
           - name: Known exit codes
             href: ../../core/testing/unit-testing-platform-exit-codes.md
           - name: Integration with dotnet test
             href: ../../core/testing/unit-testing-platform-integration-dotnet-test.md
-          - name: Runsettings
-            href: ../../core/testing/unit-testing-platform-runsettings.md
       - name: Run selective unit tests
         href: ../../core/testing/selective-unit-tests.md
       - name: Order unit tests

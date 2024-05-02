@@ -17,5 +17,4 @@ The `using` keyword has two major uses:
 
 ## See also
 
-- [C# reference](../index.md)
 - [C# keywords](index.md)

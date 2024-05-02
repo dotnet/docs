@@ -36,7 +36,6 @@ Raw string literals were introduced in C# 11.
 
 ## See also
 
-- [C# reference](../index.md)
 - [C# special characters](./index.md)
 - [C# string interpolation](./interpolated.md)
 - [Raw string literals feature specification](~/_csharplang/proposals/csharp-11.0/raw-string-literal.md)

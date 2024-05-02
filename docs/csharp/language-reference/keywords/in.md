@@ -22,4 +22,3 @@ The `in` keyword is used in the following contexts:
 ## See also
 
 - [C# Keywords](index.md)
-- [C# Reference](../index.md)

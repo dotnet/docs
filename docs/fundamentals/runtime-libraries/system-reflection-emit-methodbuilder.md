@@ -7,7 +7,7 @@ ms.date: 12/31/2023
 
 [!INCLUDE [context](includes/context.md)]
 
-The <xref:System.Reflection.Emit.MethodBuilder> class is used to fully describe a method in Microsoft intermediate language (MSIL), including the name, attributes, signature, and method body. It is used in conjunction with the <xref:System.Reflection.Emit.TypeBuilder> class to create classes at runtime.
+The <xref:System.Reflection.Emit.MethodBuilder> class is used to fully describe a method in common intermediate language (CIL), including the name, attributes, signature, and method body. It is used in conjunction with the <xref:System.Reflection.Emit.TypeBuilder> class to create classes at runtime.
 
 You can use reflection emit to define global methods and to define methods as type members. The APIs that define methods return <xref:System.Reflection.Emit.MethodBuilder> objects.
 

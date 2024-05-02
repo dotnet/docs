@@ -46,7 +46,7 @@ An assembly defines the following information:
 
 - The **type boundary**. Every type's identity includes the name of the assembly in which it resides. A type called `MyType` that's loaded in the scope of one assembly isn't the same as a type called `MyType` that's loaded in the scope of another assembly.
 
-- The **reference-scope boundary**: The [assembly manifest](#assembly-manifest) has metadata that's used for resolving types and satisfying resource requests. The manifest specifies the types and resources to expose outside the assembly and enumerates other assemblies on which it depends. Microsoft intermediate language (MSIL) code in a portable executable (PE) file won't be executed unless it has an associated [assembly manifest](#assembly-manifest).
+- The **reference-scope boundary**: The [assembly manifest](#assembly-manifest) has metadata that's used for resolving types and satisfying resource requests. The manifest specifies the types and resources to expose outside the assembly and enumerates other assemblies on which it depends. Common intermediate language (CIL) code in a portable executable (PE) file won't be executed unless it has an associated [assembly manifest](#assembly-manifest).
 
 - The **version boundary**. The assembly is the smallest versionable unit in the common language runtime. All types and resources in the same assembly are versioned as a unit. The [assembly manifest](#assembly-manifest) describes the version dependencies you specify for any dependent assemblies. For more information about versioning, see [Assembly versioning](versioning.md).
 

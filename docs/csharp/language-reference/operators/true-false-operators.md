@@ -42,5 +42,4 @@ Wait!
 
 ## See also
 
-- [C# reference](../index.md)
 - [C# operators and expressions](index.md)

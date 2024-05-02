@@ -59,7 +59,6 @@ For more information, see [The using statement](~/_csharpstandard/standard/state
 
 ## See also
 
-- [C# reference](../index.md)
 - <xref:System.IDisposable?displayProperty=nameWithType>
 - <xref:System.IAsyncDisposable?displayProperty=nameWithType>
 - [Using objects that implement IDisposable](../../../standard/garbage-collection/using-objects.md)

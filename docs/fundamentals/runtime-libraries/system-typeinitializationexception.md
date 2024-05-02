@@ -94,7 +94,7 @@ Most commonly, a <xref:System.TypeInitializationException> exception is thrown w
    :::code language="vb" source="./snippets/System/TypeInitializationException/Overview/vb/Missing1.vb" id="Snippet2":::
 
    > [!NOTE]
-   >  In this example, a <xref:System.TypeInitializationException> exception was thrown because an assembly could not be loaded. The exception can also be thrown if a static constructor attempts to open a data file, such as a configuration file, an XML file, or a file containing serialized data, that it cannot find.
+   > In this example, a <xref:System.TypeInitializationException> exception was thrown because an assembly could not be loaded. The exception can also be thrown if a static constructor attempts to open a data file, such as a configuration file, an XML file, or a file containing serialized data, that it cannot find.
 
 ## Regular expression match timeout values
 

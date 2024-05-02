@@ -76,5 +76,4 @@ For more information, see the following proposals for the [C# language specifica
 
 ## See also
 
-- [C# reference](../index.md)
 - [Nullable value types](nullable-value-types.md)

@@ -33,7 +33,7 @@ The `throw` statement throws an exception:
 
 In a `throw e;` statement, the result of expression `e` must be implicitly convertible to <xref:System.Exception?displayProperty=nameWithType>.
 
-You can use the built-in exception classes, for example, <xref:System.ArgumentOutOfRangeException> or <xref:System.InvalidOperationException>. .NET also provides the helper methods to throw exceptions in certain conditions: <xref:System.ArgumentNullException.ThrowIfNull%2A?displayProperty=nameWithType> and <xref:System.ArgumentException.ThrowIfNullOrEmpty%2A?displayProperty=nameWithType>. You can also define your own exception classes that derive from <xref:System.Exception?displayProperty=nameWithType>. For more information, see [Creating and throwing exceptions](../../fundamentals/exceptions/creating-and-throwing-exceptions.md).
+You can use the built-in exception classes, for example, <xref:System.ArgumentOutOfRangeException> or <xref:System.InvalidOperationException>. .NET also provides the following helper methods to throw exceptions in certain conditions: <xref:System.ArgumentNullException.ThrowIfNull%2A?displayProperty=nameWithType> and <xref:System.ArgumentException.ThrowIfNullOrEmpty%2A?displayProperty=nameWithType>. You can also define your own exception classes that derive from <xref:System.Exception?displayProperty=nameWithType>. For more information, see [Creating and throwing exceptions](../../fundamentals/exceptions/creating-and-throwing-exceptions.md).
 
 Inside a [`catch` block](#the-try-catch-statement), you can use a `throw;` statement to re-throw the exception that is handled by the `catch` block:
 
@@ -140,7 +140,6 @@ For more information, see the following sections of the [C# language specificati
 
 ## See also
 
-- [C# reference](../index.md)
 - [Exceptions and exception handling](../../fundamentals/exceptions/index.md)
 - [Handling and throwing exceptions in .NET](../../../standard/exceptions/index.md)
 - [throw preferences (style rule IDE0016)](../../../fundamentals/code-analysis/style-rules/ide0016.md)

@@ -21,6 +21,5 @@ The following example shows the use of `descending` in an [orderby clause](./ord
 
 ## See also
 
-- [C# Reference](../index.md)
 - [LINQ in C#](../../linq/index.md)
 - [ascending](./ascending.md)

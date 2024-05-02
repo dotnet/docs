@@ -26,6 +26,9 @@ Before .NET 5, the .NET globalization APIs used different underlying libraries o
 
 Starting with .NET 5, developers have more control over which underlying library is used, enabling applications to avoid differences across platforms.
 
+> [!NOTE]
+> The culture data that drives the behavior of the ICU library is usually maintained by the [Common Locale Data Repository (CLDR)](https://cldr.unicode.org/), not the runtime.
+
 ## ICU on Windows
 
 Windows now incorporates a preinstalled [icu.dll](/windows/win32/intl/international-components-for-unicode--icu-) version as part of its features that's automatically employed for globalization tasks. This modification allows .NET to leverage this ICU library for its globalization support. In cases where the ICU library is unavailable or cannot be loaded, as is the case with older Windows versions, .NET 5 and subsequent versions revert to using the NLS-based implementation.
@@ -61,7 +64,7 @@ Console.WriteLine($"{greeting.IndexOf("\0", StringComparison.Ordinal)}");
 ```
 
 - In .NET Core 3.1 and earlier versions on Windows, the snippet prints `3` on each of the three lines.
-- For .NET 5 and subsequent versions running on the Windows versions listed in the [ICU on Windows](#icu-on-windows) section table, the snippet prints `0`, `0`, and `3` (for the ordinal search).
+- For .NET 5 and later versions running on the Windows versions listed in the [ICU on Windows](#icu-on-windows) section table, the snippet prints `0`, `0`, and `3` (for the ordinal search).
 
 By default, <xref:System.String.IndexOf(System.String)?displayProperty=nameWithType> performs a culture-aware linguistic search. ICU considers the null character `\0` to be a *zero-weight character*, and thus the character isn't found in the string when using a linguistic search on .NET 5 and later. However, NLS doesn't consider the null character `\0` to be a zero-weight character, and a linguistic search on .NET Core 3.1 and earlier locates the character at position 3. An ordinal search finds the character at position 3 on all .NET versions.
 

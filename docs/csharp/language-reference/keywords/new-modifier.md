@@ -52,7 +52,6 @@ For more information, see [The new modifier](~/_csharpstandard/standard/classes.
 
 ## See also
 
-- [C# Reference](../index.md)
 - [C# Keywords](index.md)
 - [Modifiers](index.md)
 - [Versioning with the Override and New Keywords](../../programming-guide/classes-and-structs/versioning-with-the-override-and-new-keywords.md)

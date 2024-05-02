@@ -88,7 +88,6 @@ Specifications for newer features are:
 ## See also
 
 - [Simplify conditional expression (style rule IDE0075)](../../../fundamentals/code-analysis/style-rules/ide0075.md)
-- [C# reference](../index.md)
 - [C# operators and expressions](index.md)
 - [if statement](../statements/selection-statements.md#the-if-statement)
 - [?. and ?[] operators](member-access-operators.md#null-conditional-operators--and-)

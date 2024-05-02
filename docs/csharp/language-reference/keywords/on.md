@@ -21,5 +21,4 @@ The following example shows the use of `on` in a `join` clause.
 
 ## See also
 
-- [C# Reference](../index.md)
 - [Language Integrated Query (LINQ)](../../linq/index.md)

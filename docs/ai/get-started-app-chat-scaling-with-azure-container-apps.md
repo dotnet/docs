@@ -9,7 +9,7 @@ ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 
 # Scale Azure OpenAI for .NET chat using RAG with Azure Container Apps
 
-[!INCLUDE [aca-load-balancer-intro](~/azure-dev-docs-pr/articles/intro/includes//scaling-load-balancer-introduction-azure-container-apps.md)]
+[!INCLUDE [aca-load-balancer-intro](~/azure-dev-docs-pr/articles/ai/includes//scaling-load-balancer-introduction-azure-container-apps.md)]
 
 ## Prerequisites
 
@@ -32,15 +32,15 @@ ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 
 ---
 
-[!INCLUDE [scaling-load-balancer-aca-procedure.md](~/azure-dev-docs-pr/articles/intro/includes//scaling-load-balancer-procedure-azure-container-apps.md)]
+[!INCLUDE [scaling-load-balancer-aca-procedure.md](~/azure-dev-docs-pr/articles/ai/includes//scaling-load-balancer-procedure-azure-container-apps.md)]
 
-[!INCLUDE [redeployment-procedure](~/azure-dev-docs-pr/articles/intro/includes//redeploy-procedure-chat.md)]
+[!INCLUDE [redeployment-procedure](~/azure-dev-docs-pr/articles/ai/includes//redeploy-procedure-chat.md)]
 
-[!INCLUDE [logs](~/azure-dev-docs-pr/articles/intro/includes//scaling-load-balancer-logs-azure-container-apps.md)]
+[!INCLUDE [logs](~/azure-dev-docs-pr/articles/ai/includes//scaling-load-balancer-logs-azure-container-apps.md)]
 
-[!INCLUDE [capacity.md](~/azure-dev-docs-pr/articles/intro/includes//scaling-load-balancer-capacity.md)]
+[!INCLUDE [capacity.md](~/azure-dev-docs-pr/articles/ai/includes//scaling-load-balancer-capacity.md)]
 
-[!INCLUDE [aca-cleanup](~/azure-dev-docs-pr/articles/intro/includes//scaling-load-balancer-cleanup-azure-container-apps.md)]
+[!INCLUDE [aca-cleanup](~/azure-dev-docs-pr/articles/ai/includes//scaling-load-balancer-cleanup-azure-container-apps.md)]
 
 ## Sample code
 

@@ -26,7 +26,7 @@ The following example uses the `All` to find students that scored above 70 on al
   
 ## Any
 
-The following example uses the `Any` to find students that scored greater than 96 on an exam.
+The following example uses the `Any` to find students that scored greater than 95 on any exam.
 
 :::code language="csharp" source="./snippets/standard-query-operators/QuantifierExamples.cs" id="AnyQuantifier":::
 
@@ -39,5 +39,5 @@ The following example uses the `Contains` to find students that scored exactly 9
 ## See also
 
 - <xref:System.Linq>
-- [Dynamically specify predicate filters at run time](../dynamically-specify-predicate-filters-at-runtime.md)
-- [How to query for sentences that contain a specified set of words (LINQ) (C#)](../../programming-guide/concepts/linq/how-to-query-for-sentences-that-contain-a-specified-set-of-words-linq.md)
+- [Dynamically specify predicate filters at run time](../get-started/write-linq-queries.md)
+- [How to query for sentences that contain a specified set of words (LINQ) (C#)](../how-to-query-strings.md)

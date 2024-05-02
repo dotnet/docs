@@ -1,12 +1,11 @@
 ---
-description: "Learn more about: How to: Specify the Certificate Authority Certificate Chain Used to Verify Signatures (WCF)"
 title: "How to: Specify the Certificate Authority Certificate Chain Used to Verify Signatures (WCF)"
+description: "Learn more about: How to: Specify the Certificate Authority Certificate Chain Used to Verify Signatures (WCF)"
 ms.date: "03/30/2017"
 ms.topic: how-to
-helpviewer_keywords: 
+helpviewer_keywords:
   - "certificates [WCF], specifying the certificate authority certificate chain"
   - "certificates [WCF], verifying signatures"
-ms.assetid: 7c719355-aa41-4567-80d0-5115a8cf73fd
 ---
 # How to: Specify the Certificate Authority Certificate Chain Used to Verify Signatures (WCF)
 
@@ -16,7 +15,7 @@ When Windows Communication Foundation (WCF) receives a SOAP message signed using
   
 - For each certification authority that a SOAP message recipient intends to trust X.509 certificates issued from, install the certification authority certificate chain into the certificate store that WCF is configured to retrieve X.509 certificates from.  
   
-     For instance, if a SOAP message recipient intends to trust X.509 certificates issued by Microsoft, the certification authority certificate chain for Microsoft must be installed in the certificate store that WCF is set up to look for X.509 certificates from. The certificate store in which WCF looks for X.509 certificates can be specified in code or configuration. For example, this can be specified in code using the <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential.SetCertificate%2A> method or in configuration a few ways, including the [\<serviceCertificate>](../../configure-apps/file-schema/wcf/servicecertificate-of-clientcredentials-element.md) .  
+     For instance, if a SOAP message recipient intends to trust X.509 certificates issued by Microsoft, the certification authority certificate chain for Microsoft must be installed in the certificate store that WCF is set up to look for X.509 certificates from. The certificate store in which WCF looks for X.509 certificates can be specified in code or configuration. For example, this can be specified in code using the <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential.SetCertificate%2A> method or in configuration a few ways, including the [\<serviceCertificate>](../../configure-apps/file-schema/wcf/servicecertificate-of-clientcredentials-element.md).
   
      Because Windows ships with a set of default certificate chains for trusted certificate authorities, it may not be necessary to install the certificate chain for all certificate authorities.  
   

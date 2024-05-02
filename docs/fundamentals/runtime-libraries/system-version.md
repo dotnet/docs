@@ -75,8 +75,8 @@ Ordinarily, the <xref:System.Version> class is not used to assign a version numb
   :::code language="csharp" source="./snippets/System/Version/Overview/csharp/clickonce.cs" id="Snippet7":::
   :::code language="vb" source="./snippets/System/Version/Overview/vb/clickonce.vb" id="Snippet7":::
 
-    > [!IMPORTANT]
-    >  The Publish Version of an application for ClickOnce deployment is completely independent of its assembly version.
+  > [!IMPORTANT]
+  > The Publish Version of an application for ClickOnce deployment is completely independent of its assembly version.
 
 ## Compare version objects
 

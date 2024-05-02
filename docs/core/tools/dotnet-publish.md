@@ -1,7 +1,7 @@
 ---
 title: dotnet publish command
 description: The dotnet publish command publishes a .NET project or solution to a directory.
-ms.date: 07/19/2023
+ms.date: 04/04/2024
 ---
 # dotnet publish
 
@@ -15,6 +15,7 @@ ms.date: 07/19/2023
 
 ```dotnetcli
 dotnet publish [<PROJECT>|<SOLUTION>] [-a|--arch <ARCHITECTURE>]
+    [--artifacts-path <ARTIFACTS_DIR>]
     [-c|--configuration <CONFIGURATION>] [--disable-build-servers]
     [-f|--framework <FRAMEWORK>] [--force] [--interactive]
     [--manifest <PATH_TO_MANIFEST_FILE>] [--no-build] [--no-dependencies]
@@ -125,7 +126,9 @@ For more information, see the following resources:
 
 [!INCLUDE [arch](../../../includes/cli-arch.md)]
 
-[!INCLUDE [configuration](../../../includes/cli-configuration.md)]
+[!INCLUDE [artifacts-path](../../../includes/cli-artifacts-path.md)]
+
+[!INCLUDE [configuration](../../../includes/cli-configuration-publish-pack.md)]
 
 [!INCLUDE [disable-build-servers](../../../includes/cli-disable-build-servers.md)]
 
@@ -250,7 +253,7 @@ For more information, see the following resources:
 - Publish the project in the current directory, for a specific runtime and target framework:
 
   ```dotnetcli
-  dotnet publish --framework netcoreapp3.1 --runtime osx-x64
+  dotnet publish --framework net8.0 --runtime osx-x64
   ```
 
 - Publish the specified project file:

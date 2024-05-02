@@ -53,7 +53,6 @@ For more information, see [The yield statement](~/_csharpstandard/standard/state
 
 ## See also
 
-- [C# reference](../index.md)
 - [Iterators](../../iterators.md)
 - [Iterate through collections in C#](../../programming-guide/concepts/iterators.md)
 - [foreach](iteration-statements.md#the-foreach-statement)

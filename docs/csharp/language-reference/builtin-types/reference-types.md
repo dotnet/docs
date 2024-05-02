@@ -284,7 +284,6 @@ For more information, see the following sections of the [C# language specificati
 
 ### See also
 
-- [C# Reference](../index.md)
 - [C# Keywords](../keywords/index.md)
 - [Events](../../programming-guide/events/index.md)
 - [Using Type dynamic](../../advanced-topics/interop/using-type-dynamic.md)

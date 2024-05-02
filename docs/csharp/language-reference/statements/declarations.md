@@ -67,7 +67,7 @@ In pattern matching, the `var` keyword is used in a [`var` pattern](../operators
 When you declare a local variable and add the `ref` keyword before the variable's type, you declare a *reference variable*, or a `ref` local:
 
 ```csharp
-ref int alias = ref variable;
+ref int aliasOfvariable = ref variable;
 ```
 
 A reference variable is a variable that refers to another variable, which is called the *referent*. That is, a reference variable is an *alias* to its referent. When you assign a value to a reference variable, that value is assigned to the referent. When you read the value of a reference variable, the referent's value is returned. The following example demonstrates that behavior:
@@ -117,7 +117,6 @@ For more information about the `scoped` modifier, see the [Low-level struct impr
 
 ## See also
 
-- [C# reference](../index.md)
 - [Object and collection initializers](../../programming-guide/classes-and-structs/object-and-collection-initializers.md)
 - [ref keyword](../keywords/ref.md)
 - [Reduce memory allocations using new C# features](../../advanced-topics/performance/index.md)

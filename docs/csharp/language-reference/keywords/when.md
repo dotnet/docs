@@ -33,5 +33,4 @@ The following example uses the `when` keyword to conditionally execute handlers 
 
 ## See also
 
-- [C# reference](../index.md)
 - [C# keywords](index.md)

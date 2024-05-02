@@ -22,5 +22,4 @@ You cannot use `void` as the type of a variable.
 
 ## See also
 
-- [C# reference](../index.md)
 - <xref:System.Void?displayProperty=nameWithType>

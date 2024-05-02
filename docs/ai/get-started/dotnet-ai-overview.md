@@ -23,7 +23,7 @@ Millions of developers use .NET to create applications that run on the web, on m
 
 # What can you build with AI and .NET?
 
-The opportunities with AI are near endless, but here are a few of the most common types of solutions you can build using AI in your .NET applications:
+The opportunities with AI are near endless, here are a few examples of solutions you can build using AI in your .NET applications:
 
 * Language processing: Create virtual agents / chatbots to talk with your data, and generate content/images.
 * Computer vision: Identify objects in an object or video.
@@ -33,11 +33,20 @@ The opportunities with AI are near endless, but here are a few of the most commo
 
 # Recommended learning path
 
-## Generative AI
-## Models
-## Prompts
-## Data retrieval
-## Calling native .NET methods
+We recommend the following sequence of tutorials and articles for an introduction to developing applications with AI and .NET:
+
+1. Follow a tutorial to learn about the basics of AI:
+
+   |Scenario  |Tutorial  |
+   |----------|----------|
+   | Creating a chat application | [Build an Azure AI chat app with .NET](../quickstarts/get-started-azure-openai)|
+   | Summarizing text | [Summarize text using Azure AI chat app with .NET](../quickstarts/quickstart-openai-summarize-text) |
+   | Chatting with your data     | [Get insight about your data from an .NET Azure AI chat app](../quickstarts/quickstart-ai-chat-with-data) |
+   | Call .NET functions with AI | [Extend Azure AI using Tools and execute a local Function with .NET](../quickstarts/quickstart-azure-openai-tool) |
+   | Generating images | [Generate images using Azure AI with .NET](../quickstarts/quickstart-openai-generate-images) |
+   | Training your own model |[ML.NET Tutorial](/learn/ml-dotnet/get-started-tutorial/intro) |
+
+1. Browse the Table of Contents to learn more about the core concepts, starting with [How generative AI and LLMs work](../conceptual/how-genai-and-llms-work)
 
 # Next Steps
 

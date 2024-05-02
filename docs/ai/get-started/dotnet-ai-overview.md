@@ -18,7 +18,6 @@ Millions of developers use .NET to create applications that run on the web, on m
 * Develop on Windows, macOS, and Linux.
 * Open-source and community-focused.
 * Runs on top of the most popular web servers and cloud platforms.
-* Take 
 * Powerful tooling to edit, debug, test, and deploy.
 
 # What can you build with AI and .NET?

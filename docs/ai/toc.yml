@@ -27,6 +27,8 @@ items:
   items:
   - name: Authenticate App Service to Azure OpenAI
     href: how-to/app-service-aoai-auth.md
+  - name: Authenticate App Service to a vector database
+    href: how-to/app-service-db-auth.md
   - name: Use Redis for memory storage with the Semantic Kernel SDK
     href: how-to/use-redis-for-memory.md
   - name: Use custom and local AI models with the Semantic Kernel SDK

@@ -58,38 +58,51 @@ The <xref:System.Reflection.Emit.AssemblyBuilder.Save%2A?displayProperty=nameWit
 
 To create a `PersistedAssemblyBuilder` instance, use the `public PersistedAssemblyBuilder(AssemblyName name, Assembly coreAssembly, IEnumerable<CustomAttributeBuilder>? assemblyAttributes = null)` constructor. The `coreAssembly` parameter is used to resolve base runtime types and can be used for resolving reference assembly versioning:
 
-- If `Reflection.Emit` is used to generate an assembly that targets a specific TFM, open the reference assemblies for the given TFM using `MetadataLoadContext` and use the value of the [MetadataLoadContext.CoreAssembly](xref:System.Reflection.MetadataLoadContext.CoreAssembly) property for `coreAssembly`. This value allows the generator to run on one .NET runtime version and target a different .NET runtime version.
+- If `Reflection.Emit` is used to generate an assembly that's only going to be executed on the same runtime version as the runtime version that the compiler is running on (typically in-proc), the core assembly can be simply `typeof(object).Assembly`. The following example demonstrates how to create and save an assembly to a stream and run it with current runtime assembly:
 
-- If `Reflection.Emit` is used to generate an assembly that's only going to be executed on the same runtime version as the runtime version that the compiler is running on (typically in-proc), the core assembly can be `typeof(object).Assembly`. The reference assemblies aren't necessary in this case.
-
-The following example demonstrates how to create and save an assembly to a stream and run it:
-
-```csharp
-public void CreateSaveAndRunAssembly(string assemblyPath)
-{
-    PersistedAssemblyBuilder ab = new PersistedAssemblyBuilder(new AssemblyName("MyAssembly"), typeof(object).Assembly);
-    ModuleBuilder mob = ab.DefineDynamicModule("MyModule");
-    TypeBuilder tb = mob.DefineType("MyType", TypeAttributes.Public | TypeAttributes.Class);
-    MethodBuilder meb = tb.DefineMethod("SumMethod", MethodAttributes.Public | MethodAttributes.Static,
+  ```csharp
+  public void CreateSaveAndRunAssembly(string assemblyPath)
+  {
+      PersistedAssemblyBuilder ab = new PersistedAssemblyBuilder(new AssemblyName("MyAssembly"), typeof(object).Assembly);
+      ModuleBuilder mob = ab.DefineDynamicModule("MyModule");
+      TypeBuilder tb = mob.DefineType("MyType", TypeAttributes.Public | TypeAttributes.Class);
+      MethodBuilder meb = tb.DefineMethod("SumMethod", MethodAttributes.Public | MethodAttributes.Static,
                                                                    typeof(int), new Type[] {typeof(int), typeof(int)});
-    ILGenerator il = meb.GetILGenerator();
-    il.Emit(OpCodes.Ldarg_0);
-    il.Emit(OpCodes.Ldarg_1);
-    il.Emit(OpCodes.Add);
-    il.Emit(OpCodes.Ret);
+      ILGenerator il = meb.GetILGenerator();
+      il.Emit(OpCodes.Ldarg_0);
+      il.Emit(OpCodes.Ldarg_1);
+      il.Emit(OpCodes.Add);
+      il.Emit(OpCodes.Ret);
 
-    tb.CreateType();
+      tb.CreateType();
 
-    using var stream = new MemoryStream();
-    ab.Save(stream);  // or pass filename to save into a file
-    stream.Seek(0, SeekOrigin.Begin);
-    Assembly assembly = AssemblyLoadContext.Default.LoadFromStream(stream);
-    MethodInfo method = assembly.GetType("MyType").GetMethod("SumMethod");
-    Console.WriteLine(method.Invoke(null, new object[] { 5, 10 }));
-}
-```
+      using var stream = new MemoryStream();
+      ab.Save(stream);  // or pass filename to save into a file
+      stream.Seek(0, SeekOrigin.Begin);
+      Assembly assembly = AssemblyLoadContext.Default.LoadFromStream(stream);
+      MethodInfo method = assembly.GetType("MyType").GetMethod("SumMethod");
+      Console.WriteLine(method.Invoke(null, new object[] { 5, 10 }));
+  }
+  ```
 
-In order to set entry point for an executable and/or set other options for the assembly file you could to call the `public MetadataBuilder GenerateMetadata(out BlobBuilder ilStream, out BlobBuilder mappedFieldData)` method and use the populated metadata for generating the assembly with desired the options, for example:
+- If `Reflection.Emit` is used to generate an assembly that targets a specific TFM, open the reference assemblies for the given TFM using `MetadataLoadContext` and use the value of the [MetadataLoadContext.CoreAssembly](xref:System.Reflection.MetadataLoadContext.CoreAssembly) property for `coreAssembly`. This value allows the generator to run on one .NET runtime version and target a different .NET runtime version. Note that, you should use types returned by the MetadataLoadContext instance when referencing core types. For example, instead of `typeof(object)`, you should lookup `System.Object` type in `MetadataLoadContext.CoreAssembly` by name:
+
+  ```csharp
+  public void CreatePersistedAssemblyBuilderCoreAssemblyWithMetadataLoadContext(string refAssembliesPath)
+  {
+      PathAssemblyResolver resolver = new PathAssemblyResolver(Directory.GetFiles(refAssembliesPath, "*.dll"));
+      using MetadataLoadContext context = new MetadataLoadContext(resolver);
+      Assembly coreAssembly = context.CoreAssembly;
+      PersistedAssemblyBuilder ab = new PersistedAssemblyBuilder(new AssemblyName("MyDynamicAssembly"), coreAssembly);
+      TypeBuilder typeBuilder = ab.DefineDynamicModule("MyModule").DefineType("Test", TypeAttributes.Public);
+      MethodBuilder methodBuilder = typeBuilder.DefineMethod("Method", MethodAttributes.Public, coreAssembly.GetType(typeof(int).FullName), Type.EmptyTypes);
+      // .. add members and save the assembly
+  }
+  ```
+
+### Set entry point for an executable
+
+In order to set entry point for an executable and/or set other options for the assembly file you could call the `public MetadataBuilder GenerateMetadata(out BlobBuilder ilStream, out BlobBuilder mappedFieldData)` method and use the populated metadata for generating the assembly with desired the options, for example:
 
 ```csharp
 PersistedAssemblyBuilder ab = new PersistedAssemblyBuilder(new AssemblyName("MyAssembly"), typeof(object).Assembly);
@@ -117,6 +130,123 @@ peBuilder.Serialize(peBlob);
 // in case saving to a file:
 using var fileStream = new FileStream("MyAssembly.exe", FileMode.Create, FileAccess.Write);
 peBlob.WriteContentTo(fileStream); 
+```
+
+### Emitting symbols and generating PDB
+
+The symbols metadata populated into the `pdbBuilder` out parameter when `GenerateMetadata(out BlobBuilder ilStream, out BlobBuilder mappedFieldData, out MetadataBuilder pdbBuilder)` method called on `PersistedAssemblyBuilder` instance. The steps for creating an assembly with portable PDB:
+
+1. Create `ISymbolDocumentWriter` instances with `ModuleBuilder.DefineDocument(...)` method, while emitting method's IL also emit the corresponding symbol info.
+2. Create `PortablePdbBuilder` instance using the `pdbBuilder` instance produced with `GenerateMetadata(...)` method.
+3. Serialize the `PortablePdbBuilder` into a `Blob`, write the `Blob` into a PDB file stream (only in case generating standalone PDB).
+4. Create `DebugDirectoryBuilder` instance and add a `CodeViewEntry` (standalone PDB) or `EmbeddedPortablePdbEntry`.
+5. Set the optional `debugDirectoryBuilder` argument when creating `PEBuilder` instance.
+
+Following example shows how to emit symbol info and generate PDB:
+
+```csharp
+static void GenerateAssemblyWithPDB()
+{
+    PersistedAssemblyBuilder ab = new PersistedAssemblyBuilder(new AssemblyName("MyAssembly"), typeof(object).Assembly);
+    ModuleBuilder mb = ab.DefineDynamicModule("MyModule");
+    TypeBuilder tb = mb.DefineType("MyType", TypeAttributes.Public | TypeAttributes.Class);
+    MethodBuilder mb1 = tb.DefineMethod("SumMethod", MethodAttributes.Public | MethodAttributes.Static, typeof(int), [typeof(int), typeof(int)]);
+    ISymbolDocumentWriter srcDoc = mb.DefineDocument("MySourceFile.cs", SymLanguageType.CSharp);
+    ILGenerator il = mb1.GetILGenerator();
+    LocalBuilder local = il.DeclareLocal(typeof(int));
+    local.SetLocalSymInfo("myLocal");
+    il.MarkSequencePoint(srcDoc, 7, 0, 7, 11);
+    ...
+    il.Emit(OpCodes.Ret);
+
+    MethodBuilder entryPoint = tb.DefineMethod("Main", MethodAttributes.HideBySig | MethodAttributes.Public | MethodAttributes.Static);
+    ILGenerator il2 = entryPoint.GetILGenerator();
+    il2.BeginScope();
+    ...
+    il2.EndScope();
+    ...
+    tb.CreateType();
+
+    MetadataBuilder metadataBuilder = ab.GenerateMetadata(out BlobBuilder ilStream, out _, out MetadataBuilder pdbBuilder);
+    MethodDefinitionHandle entryPointHandle = MetadataTokens.MethodDefinitionHandle(entryPoint.MetadataToken);
+    DebugDirectoryBuilder debugDirectoryBuilder = GeneratePDB(pdbBuilder, metadataBuilder.GetRowCounts(), entryPointHandle);
+
+    ManagedPEBuilder peBuilder = new ManagedPEBuilder(
+                    header: new PEHeaderBuilder(imageCharacteristics: Characteristics.ExecutableImage, subsystem: Subsystem.WindowsCui),
+                    metadataRootBuilder: new MetadataRootBuilder(metadataBuilder),
+                    ilStream: ilStream,
+                    debugDirectoryBuilder: debugDirectoryBuilder,
+                    entryPoint: entryPointHandle);
+
+    BlobBuilder peBlob = new BlobBuilder();
+    peBuilder.Serialize(peBlob);
+
+    using var fileStream = new FileStream("MyAssembly.exe", FileMode.Create, FileAccess.Write);
+    peBlob.WriteContentTo(fileStream);
+}
+
+static DebugDirectoryBuilder GeneratePDB(MetadataBuilder pdbBuilder, ImmutableArray<int> rowCounts, MethodDefinitionHandle entryPointHandle)
+{
+    BlobBuilder portablePdbBlob = new BlobBuilder();
+    PortablePdbBuilder portablePdbBuilder = new PortablePdbBuilder(pdbBuilder, rowCounts, entryPointHandle);
+    BlobContentId pdbContentId = portablePdbBuilder.Serialize(portablePdbBlob);
+    // In case saving PDB to a file
+    using FileStream fileStream = new FileStream("MyAssemblyEmbeddedSource.pdb", FileMode.Create, FileAccess.Write);
+    portablePdbBlob.WriteContentTo(fileStream);
+
+    DebugDirectoryBuilder debugDirectoryBuilder = new DebugDirectoryBuilder();
+    debugDirectoryBuilder.AddCodeViewEntry("MyAssemblyEmbeddedSource.pdb", pdbContentId, portablePdbBuilder.FormatVersion);
+    // In case embedded in PE:
+    // debugDirectoryBuilder.AddEmbeddedPortablePdbEntry(portablePdbBlob, portablePdbBuilder.FormatVersion);
+    return debugDirectoryBuilder;
+}
+```
+
+Further user could add CustomDebugInformation by calling the AddCustomDebugInformation method from the `pdbBuilder` instance to add source embedding and source indexing etc. advanced PDB info.
+
+```csharp
+private static void EmbedSource(MetadataBuilder pdbBuilder)
+{
+    byte[] sourceBytes = File.ReadAllBytes("MySourceFile2.cs");
+    BlobBuilder sourceBlob = new BlobBuilder();
+    sourceBlob.WriteBytes(sourceBytes);
+    pdbBuilder.AddCustomDebugInformation(MetadataTokens.DocumentHandle(1),
+        pdbBuilder.GetOrAddGuid(new Guid("0E8A571B-6926-466E-B4AD-8AB04611F5FE")), pdbBuilder.GetOrAddBlob(sourceBlob));
+}
+```
+
+### Adding resources with PersistedAssemblyBuilder
+
+With `MetadataBuilder.AddManifestResource(...)` you could add as many resources as needed, but streams have to be concatenated together into one `BlobBuilder` that you pass into `ManagedPEBuilder` argument.
+Following example shows how to create resources and attach it to the assembly created:
+
+```csharp
+public static void SetResource()
+{
+    PersistedAssemblyBuilder ab = CreateAssemblyAndItsContents();
+    MetadataBuilder metadata = ab.GenerateMetadata(out BlobBuilder ilStream, out _);
+
+    using MemoryStream stream = new MemoryStream();
+    ResourceWriter myResourceWriter = new ResourceWriter(stream);
+    myResourceWriter.AddResource("AddResource 1", "First added resource");
+    myResourceWriter.AddResource("AddResource 2", "Second added resource");
+    myResourceWriter.AddResource("AddResource 3", "Third added resource");
+    myResourceWriter.Close();
+    BlobBuilder resourceBlob = new BlobBuilder();
+    resourceBlob.WriteBytes(stream.ToArray());
+    metadata.AddManifestResource(ManifestResourceAttributes.Public, metadata.GetOrAddString("MyResource"), default, (uint)resourceBlob.Count);
+
+    ManagedPEBuilder peBuilder = new ManagedPEBuilder(
+                    header: new PEHeaderBuilder(imageCharacteristics: Characteristics.ExecutableImage | Characteristics.Dll),
+                    metadataRootBuilder: new MetadataRootBuilder(metadata),
+                    ilStream: ilStream,
+                    managedResources: resourceBlob);
+
+    BlobBuilder blob = new BlobBuilder();
+    peBuilder.Serialize(blob);
+    using var fileStream = new FileStream("MyAssemblyWithResource.dll", FileMode.Create, FileAccess.Write);
+    blob.WriteContentTo(fileStream);
+}
 ```
 
 > [!NOTE]

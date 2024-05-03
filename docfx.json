@@ -32,6 +32,14 @@
                 ]
             },
             {
+                "src": "data-integration-repo/data-integration",
+                "files": [
+                    "**/*.md",
+                    "**/*.yml"
+                ],
+                "dest": "my-data-integration"
+            },
+            {
                 "files": [
                     "**/*.md"
                 ],

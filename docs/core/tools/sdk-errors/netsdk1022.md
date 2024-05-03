@@ -47,7 +47,7 @@ To resolve the errors, do one of the following:
 
 ## WPF projects
 
-You might his this error in a WPF project due to duplicate `ApplicationDefinition` or `Page` items. To resolve the error, can you disable default items using an MSBuild property. For example, to disable default `Page` items in a WPF project, set `EnableDefaultPageItems` to `false`:
+You might hit this error in a WPF project due to duplicate `ApplicationDefinition` or `Page` items. To resolve the error, can you disable default items using an MSBuild property. For example, to disable default `Page` items in a WPF project, set `EnableDefaultPageItems` to `false`:
 
 ```xml
 <PropertyGroup>

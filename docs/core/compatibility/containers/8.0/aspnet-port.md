@@ -15,7 +15,7 @@ Apps built using the older <xref:Microsoft.AspNetCore.WebHost.CreateDefaultBuild
 
 Prior to .NET 8, you could run a container that expected port 80 to be the default port and be able to access the running app.
 
-For example, you could run the following command to access the app locally at port 8000, which is mapped to port 80 in the container:
+For example, you could run the following command and then access the app locally at port 8000, which is mapped to port 80 in the container:
 
 `docker run --rm -it -p 8000:80 <my-app>`
 

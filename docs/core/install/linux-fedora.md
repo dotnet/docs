@@ -3,7 +3,7 @@ title: Install .NET on Fedora
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Fedora.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/14/2023
+ms.date: 05/03/2024
 ms.custom: linux-related-content
 ---
 
@@ -24,9 +24,8 @@ The following table is a list of currently supported .NET releases and the versi
 
 | Fedora | .NET      |
 |--------|-----------|
-| 40     | 8, 6   |
+| 40     | 8, 6      |
 | 39     | 8, 7, 6   |
-| 38     | 8, 7, 6   |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 

@@ -1,8 +1,12 @@
 items:
   - name: .NET fundamentals documentation
     href: index.yml
-  - name: Data Gateway
-    href: my-data-integration/toc.yml
+  - name: Data gateway 1
+    href: my-data-integration/TOC.yml
+  - name: Data gateway 2
+    href: my-data-integration/gateway/index.yml
+  - name: Data gateway 3
+    href: my-data-integration/TOC.json
   - name: Get started
     items:
       - name: Hello World

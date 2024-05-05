@@ -1092,14 +1092,22 @@ match l with
     | [] -> failwith "Couldn't find David"
 ```
 
-If the expression on the right of the pattern matching arrow is too large, move it to the following line, indented one step from the `match`/`|`.
+If one of the expressions on the right of the pattern matching arrow is too large, move it to the following line, indented one step from the `match`/`|`. Move all the other expressions to the next line as well for consistency.
 
 ```fsharp
 // ✔️ OK
 match lam with
-| Var v -> 1
+| Var v ->
+    1
 | Abs(x, body) ->
     1 + sizeLambda body
+| App(lam1, lam2) ->
+    sizeLambda lam1 + sizeLambda lam2
+
+// ❌ Not OK, see above for preferred formatting
+match lam with
+| Var v -> 1
+| Abs(x, body) -> 1 + sizeLambda body
 | App(lam1, lam2) ->
     sizeLambda lam1 + sizeLambda lam2
 ```

@@ -29,7 +29,7 @@ This change was introduced to allow for 100% asynchronous file I/O with <xref:Sy
 
 ## Recommended action
 
-- If you rely on <xref:System.IO.FileStream.Position?displayProperty=nameWithType> being set before the read or write starts because your code performs *parallel* reads or writes, you should switch to use the <xref:System.IO.RandomAccess?displayProperty=fullName> API instead. The <xref:System.IO.RandomAccess> is designed for parallel file operations.
+- If you rely on <xref:System.IO.FileStream.Position?displayProperty=nameWithType> being set before the read or write starts because your code performs *parallel* reads or writes, you should switch to use the <xref:System.IO.RandomAccess?displayProperty=fullName> API instead. The <xref:System.IO.RandomAccess> API is designed for parallel file operations.
 
 - To enable the .NET 5 behavior in .NET 6, specify an `AppContext` switch or an environment variable. By setting the switch to `true`, you opt out of all performance improvements made to `FileStream` in .NET 6.
 

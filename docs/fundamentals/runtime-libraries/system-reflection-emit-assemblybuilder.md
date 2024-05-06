@@ -88,7 +88,7 @@ To create a `PersistedAssemblyBuilder` instance, use the `public PersistedAssemb
 - If `Reflection.Emit` is used to generate an assembly that targets a specific TFM, open the reference assemblies for the given TFM using `MetadataLoadContext` and use the value of the [MetadataLoadContext.CoreAssembly](xref:System.Reflection.MetadataLoadContext.CoreAssembly) property for `coreAssembly`. This value allows the generator to run on one .NET runtime version and target a different .NET runtime version. Note that, you should use types returned by the MetadataLoadContext instance when referencing core types. For example, instead of `typeof(object)`, you should lookup `System.Object` type in `MetadataLoadContext.CoreAssembly` by name:
 
   ```csharp
-  public void CreatePersistedAssemblyBuilderCoreAssemblyWithMetadataLoadContext(string refAssembliesPath)
+  public void CreatePersistedAssemblyBuilderWithMetadataLoadContextCoreAssembly(string refAssembliesPath)
   {
       PathAssemblyResolver resolver = new PathAssemblyResolver(Directory.GetFiles(refAssembliesPath, "*.dll"));
       using MetadataLoadContext context = new MetadataLoadContext(resolver);
@@ -202,7 +202,7 @@ static DebugDirectoryBuilder GeneratePdb(MetadataBuilder pdbBuilder, ImmutableAr
 }
 ```
 
-Further you could add CustomDebugInformation by calling the AddCustomDebugInformation method from the `pdbBuilder` instance to add source embedding and source indexing etc. advanced PDB info.
+Further you could add `CustomDebugInformation` by calling the `AddCustomDebugInformation` method from the `pdbBuilder` instance to add source embedding and source indexing etc. advanced PDB info.
 
 ```csharp
 private static void EmbedSource(MetadataBuilder pdbBuilder)

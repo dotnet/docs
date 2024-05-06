@@ -94,7 +94,6 @@ The telemetry feature collects the following data:
 | >=7.0.100     | Hashed PublishAot used for build (MSBuild property) |
 | >=7.0.100     | Hashed PublishProtocol used for build (MSBuild property) |
 | >=8.0.100     | Hashed TargetPlatformIdentifier used for build (MSBuild property) |
-| >=8.0.100     | Hashed RuntimeIdentifier used for build (MSBuild property) |
 | >=8.0.100     | Hashed BlazorWasm used for build (MSBuild property) |
 | >=8.0.100     | Hashed WasmSDK used for build (MSBuild property) |
 | >=8.0.100     | Hashed UsesMaui used for build (MSBuild property) |

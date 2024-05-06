@@ -140,6 +140,54 @@ Or to disable an extension that is coming from the selected profile. In this cas
 </Project>
 ```
 
+## Features
+
+Outside of the selection of the runner and runner specific extensions, `MSTest.Sdk` also provides additional features to simplify and enhance your testing experience.
+
+### Aspire
+
+`.NET Aspire` is an opinionated, cloud ready stack for building observable, production ready, distributed applications. .NET Aspire is delivered through a collection of NuGet packages that handle specific cloud-native concerns. For more information about it, check out its [documentation page](https://learn.microsoft.com/dotnet/aspire/get-started/aspire-overview).
+
+> [!NOTE]
+> This feature is available from MSTest.Sdk 3.4.0
+
+By setting the property `EnableAspireTesting` to `true` you can bring all dependencies and default usings you would need for testing with `Aspire` and `MSTest`.
+
+```xml
+<Project Sdk="MSTest.Sdk/3.4.0">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <EnableAspireTesting>true</EnableAspireTesting>
+    </PropertyGroup>
+
+    <!-- references to the code to test -->
+
+</Project>
+```
+
+### Playwright
+
+`Playwright` enables reliable end-to-end testing for modern web apps. For more information about it, check out its [documentation page](https://playwright.dev/dotnet/docs/intro).
+
+> [!NOTE]
+> This feature is available from MSTest.Sdk 3.4.0
+
+By setting the property `EnablePlaywright` to `true` you can bring all dependencies and default usings you would need for testing with `Playwright` and `MSTest`.
+
+```xml
+<Project Sdk="MSTest.Sdk/3.4.0">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <EnablePlaywright>true</EnablePlaywright>
+    </PropertyGroup>
+
+    <!-- references to the code to test -->
+
+</Project>
+```
+
 ## Migrating to MSTest SDK
 
 When migrating an existing MSTest test project to MSTest SDK, start by replacing the `Sdk="Microsoft.NET.Sdk"` entry at the top of your test project with `Sdk="MSTest.Sdk/3.3.1"`

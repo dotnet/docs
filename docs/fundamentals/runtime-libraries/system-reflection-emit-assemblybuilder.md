@@ -95,14 +95,14 @@ To create a `PersistedAssemblyBuilder` instance, use the `public PersistedAssemb
       Assembly coreAssembly = context.CoreAssembly;
       PersistedAssemblyBuilder ab = new PersistedAssemblyBuilder(new AssemblyName("MyDynamicAssembly"), coreAssembly);
       TypeBuilder typeBuilder = ab.DefineDynamicModule("MyModule").DefineType("Test", TypeAttributes.Public);
-      MethodBuilder methodBuilder = typeBuilder.DefineMethod("Method", MethodAttributes.Public, coreAssembly.GetType(typeof(int).FullName), Type.EmptyTypes);
+      MethodBuilder methodBuilder = typeBuilder.DefineMethod("Method", MethodAttributes.Public, coreAssembly.GetType("System.Int32"), Type.EmptyTypes);
       // .. add members and save the assembly
   }
   ```
 
 ### Set entry point for an executable
 
-In order to set entry point for an executable and/or set other options for the assembly file you could call the `public MetadataBuilder GenerateMetadata(out BlobBuilder ilStream, out BlobBuilder mappedFieldData)` method and use the populated metadata for generating the assembly with desired the options, for example:
+In order to set entry point for an executable and/or set other options for the assembly file you could call the `public MetadataBuilder GenerateMetadata(out BlobBuilder ilStream, out BlobBuilder mappedFieldData)` method and use the populated metadata for generating the assembly with desired options, for example:
 
 ```csharp
 PersistedAssemblyBuilder ab = new PersistedAssemblyBuilder(new AssemblyName("MyAssembly"), typeof(object).Assembly);
@@ -145,7 +145,7 @@ The symbols metadata populated into the `pdbBuilder` out parameter when `Generat
 Following example shows how to emit symbol info and generate PDB:
 
 ```csharp
-static void GenerateAssemblyWithPDB()
+static void GenerateAssemblyWithPdb()
 {
     PersistedAssemblyBuilder ab = new PersistedAssemblyBuilder(new AssemblyName("MyAssembly"), typeof(object).Assembly);
     ModuleBuilder mb = ab.DefineDynamicModule("MyModule");
@@ -169,7 +169,7 @@ static void GenerateAssemblyWithPDB()
 
     MetadataBuilder metadataBuilder = ab.GenerateMetadata(out BlobBuilder ilStream, out _, out MetadataBuilder pdbBuilder);
     MethodDefinitionHandle entryPointHandle = MetadataTokens.MethodDefinitionHandle(entryPoint.MetadataToken);
-    DebugDirectoryBuilder debugDirectoryBuilder = GeneratePDB(pdbBuilder, metadataBuilder.GetRowCounts(), entryPointHandle);
+    DebugDirectoryBuilder debugDirectoryBuilder = GeneratePdb(pdbBuilder, metadataBuilder.GetRowCounts(), entryPointHandle);
 
     ManagedPEBuilder peBuilder = new ManagedPEBuilder(
                     header: new PEHeaderBuilder(imageCharacteristics: Characteristics.ExecutableImage, subsystem: Subsystem.WindowsCui),
@@ -185,7 +185,7 @@ static void GenerateAssemblyWithPDB()
     peBlob.WriteContentTo(fileStream);
 }
 
-static DebugDirectoryBuilder GeneratePDB(MetadataBuilder pdbBuilder, ImmutableArray<int> rowCounts, MethodDefinitionHandle entryPointHandle)
+static DebugDirectoryBuilder GeneratePdb(MetadataBuilder pdbBuilder, ImmutableArray<int> rowCounts, MethodDefinitionHandle entryPointHandle)
 {
     BlobBuilder portablePdbBlob = new BlobBuilder();
     PortablePdbBuilder portablePdbBuilder = new PortablePdbBuilder(pdbBuilder, rowCounts, entryPointHandle);
@@ -202,7 +202,7 @@ static DebugDirectoryBuilder GeneratePDB(MetadataBuilder pdbBuilder, ImmutableAr
 }
 ```
 
-Further user could add CustomDebugInformation by calling the AddCustomDebugInformation method from the `pdbBuilder` instance to add source embedding and source indexing etc. advanced PDB info.
+Further you could add CustomDebugInformation by calling the AddCustomDebugInformation method from the `pdbBuilder` instance to add source embedding and source indexing etc. advanced PDB info.
 
 ```csharp
 private static void EmbedSource(MetadataBuilder pdbBuilder)
@@ -221,16 +221,17 @@ With `MetadataBuilder.AddManifestResource(...)` you could add as many resources 
 Following example shows how to create resources and attach it to the assembly created:
 
 ```csharp
-public static void SetResource()
+public static void GenerateAssemblyWithResources()
 {
-    PersistedAssemblyBuilder ab = CreateAssemblyAndItsContents();
+    PersistedAssemblyBuilder ab = new PersistedAssemblyBuilder(new AssemblyName("MyAssembly"), typeof(object).Assembly);
+    ab.DefineDynamicModule("MyModule");
     MetadataBuilder metadata = ab.GenerateMetadata(out BlobBuilder ilStream, out _);
 
     using MemoryStream stream = new MemoryStream();
     ResourceWriter myResourceWriter = new ResourceWriter(stream);
-    myResourceWriter.AddResource("AddResource 1", "First added resource");
-    myResourceWriter.AddResource("AddResource 2", "Second added resource");
-    myResourceWriter.AddResource("AddResource 3", "Third added resource");
+    myResourceWriter.AddResource("String 1", "First string");
+    myResourceWriter.AddResource("String 2", "Second string");
+    myResourceWriter.AddResource("String 3", "Third string");
     myResourceWriter.Close();
     BlobBuilder resourceBlob = new BlobBuilder();
     resourceBlob.WriteBytes(stream.ToArray());

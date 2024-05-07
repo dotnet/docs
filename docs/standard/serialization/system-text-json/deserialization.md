@@ -23,7 +23,7 @@ Any JSON properties that aren't represented in your class are ignored [by defaul
 
 The following example shows how to deserialize a JSON string:
 
-:::code language="csharp" source="snippets/how-to/csharp/DeserializeExtra.cs" highlight="53-54":::
+:::code language="csharp" source="snippets/how-to/csharp/DeserializeExtra.cs" highlight="54-55":::
 :::code language="vb" source="snippets/how-to/vb/RoundtripToString.vb" id="Deserialize":::
 
 To deserialize from a file by using synchronous code, read the file into a string, as shown in the following example:

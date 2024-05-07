@@ -1,8 +1,13 @@
 items:
 - name: C# language reference
-  href: ./index.yml
-- name: Configure language version
-  href: ./configure-language-version.md
+  href: index.yml
+- name: Language version
+  items:
+  - name: Overview
+    href: ./language-versioning.md
+    displayName: language version
+  - name: Configure
+    href: ./configure-language-version.md
 - name: Types
   items:
   - name: Value types
@@ -423,7 +428,6 @@ items:
     href: ./xmldoc/recommended-tags.md
   - name: Examples
     href: ./xmldoc/examples.md
-    
 - name: C# compiler messages
   href: ./compiler-messages/index.md
   items:

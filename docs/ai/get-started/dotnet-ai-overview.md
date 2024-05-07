@@ -8,7 +8,7 @@ ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 
 # Develop .NET applications with AI features
 
-With .NET, you can use Artificial Intelligence (AI) to mimic human-like behavior and accomplish complex tasks in your applications - all using the tools, platforms, and services that are familiar to you.
+With .NET, you can use artificial intelligence (AI) to mimic human behavior and accomplish complex tasks in your applications&mdash;all using the tools, platforms, and services that are familiar to you.
 
 ## Why choose .NET to build AI applications?
 
@@ -22,32 +22,32 @@ Millions of developers use .NET to create applications that run on the web, on m
 
 ## What can you build with AI and .NET?
 
-The opportunities with AI are near endless, here are a few examples of solutions you can build using AI in your .NET applications:
+The opportunities with AI are near endless. Here are a few examples of solutions you can build using AI in your .NET applications:
 
-* Language processing: Create virtual agents / chatbots to talk with your data, and generate content/images.
+* Language processing: Create virtual agents / chatbots to talk with your data and generate content and images.
 * Computer vision: Identify objects in an object or video.
 * Audio generation: Use synthesized voices to interact with customers.
-* Classification: Label the severity of a customer reported issue.
+* Classification: Label the severity of a customer-reported issue.
 * Task automation: Automatically perform the next step in a workflow as tasks are completed.
 
 ## Recommended learning path
 
 We recommend the following sequence of tutorials and articles for an introduction to developing applications with AI and .NET:
 
-1. Follow a tutorial to learn about the basics of AI:
+- Follow a tutorial to learn about the basics of AI:
 
    |Scenario  |Tutorial  |
    |----------|----------|
-   | Creating a chat application | [Build an Azure AI chat app with .NET](../quickstarts/get-started-azure-openai.md)|
-   | Summarizing text | [Summarize text using Azure AI chat app with .NET](../quickstarts/quickstart-openai-summarize-text.md) |
-   | Chatting with your data     | [Get insight about your data from an .NET Azure AI chat app](../quickstarts/quickstart-ai-chat-with-data.md) |
-   | Call .NET functions with AI | [Extend Azure AI using Tools and execute a local Function with .NET](../quickstarts/quickstart-azure-openai-tool.md) |
-   | Generating images | [Generate images using Azure AI with .NET](../quickstarts/quickstart-openai-generate-images.md) |
-   | Training your own model |[ML.NET Tutorial](https://dotnet.microsoft.com/learn/ml-dotnet/get-started-tutorial/intro) |
+   | Create a chat application | [Build an Azure AI chat app with .NET](../quickstarts/get-started-azure-openai.md)|
+   | Summarize text | [Summarize text using Azure AI chat app with .NET](../quickstarts/quickstart-openai-summarize-text.md) |
+   | Chat with your data     | [Get insight about your data from an .NET Azure AI chat app](../quickstarts/quickstart-ai-chat-with-data.md) |
+   | Call .NET functions with AI | [Extend Azure AI using tools and execute a local function with .NET](../quickstarts/quickstart-azure-openai-tool.md) |
+   | Generate images | [Generate images using Azure AI with .NET](../quickstarts/quickstart-openai-generate-images.md) |
+   | Train your own model |[ML.NET Tutorial](https://dotnet.microsoft.com/learn/ml-dotnet/get-started-tutorial/intro) |
 
-1. Browse the Table of Contents to learn more about the core concepts, starting with [How generative AI and LLMs work](../conceptual/how-genai-and-llms-work.md)
+- Browse the table of contents to learn more about the core concepts, starting with [How generative AI and LLMs work](../conceptual/how-genai-and-llms-work.md)
 
-## Next Steps
+## Next steps
 
 - [Quickstart: Build an Azure AI chat app with .NET](../quickstarts/get-started-azure-openai.md)
 - [Video series: Machine Learning and AI with .NET](/shows/machine-learning-and-ai-with-dotnet-for-beginners)

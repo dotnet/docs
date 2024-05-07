@@ -11,8 +11,7 @@ class Program
             @"\\LOCALHOST\c$\temp\test-file.txt",
             @"\\.\c:\temp\test-file.txt",
             @"\\?\c:\temp\test-file.txt",
-            @"\\.\UNC\LOCALHOST\c$\temp\test-file.txt",
-            @"\\127.0.0.1\c$\temp\test-file.txt" };
+            @"\\.\UNC\LOCALHOST\c$\temp\test-file.txt" };
 
         foreach (var filename in filenames)
         {
@@ -22,7 +21,6 @@ class Program
     }
 }
 // The example displays output like the following:
-//      file test-file.txt: 22 bytes
 //      file test-file.txt: 22 bytes
 //      file test-file.txt: 22 bytes
 //      file test-file.txt: 22 bytes

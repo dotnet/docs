@@ -144,9 +144,9 @@ Or to disable an extension that is coming from the selected profile. In this cas
 
 Outside of the selection of the runner and runner specific extensions, `MSTest.Sdk` also provides additional features to simplify and enhance your testing experience.
 
-### Aspire
+### .NET Aspire
 
-`.NET Aspire` is an opinionated, cloud ready stack for building observable, production ready, distributed applications. .NET Aspire is delivered through a collection of NuGet packages that handle specific cloud-native concerns. For more information about it, check out its [documentation page](https://learn.microsoft.com/dotnet/aspire/get-started/aspire-overview).
+.NET Aspire is an opinionated, cloud ready stack for building observable, production ready, distributed applications. .NET Aspire is delivered through a collection of NuGet packages that handle specific cloud-native concerns. For more information, see the [.NET Aspire docs](/dotnet/aspire/get-started/aspire-overview).
 
 > [!NOTE]
 > This feature is available from MSTest.Sdk 3.4.0
@@ -168,7 +168,7 @@ By setting the property `EnableAspireTesting` to `true` you can bring all depend
 
 ### Playwright
 
-`Playwright` enables reliable end-to-end testing for modern web apps. For more information about it, check out its [documentation page](https://playwright.dev/dotnet/docs/intro).
+Playwright enables reliable end-to-end testing for modern web apps. For more information, see the official [Playwright docs](https://playwright.dev/dotnet/docs/intro).
 
 > [!NOTE]
 > This feature is available from MSTest.Sdk 3.4.0

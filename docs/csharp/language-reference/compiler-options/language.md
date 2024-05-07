@@ -60,7 +60,7 @@ This option specifies the names of one or more symbols that you want to define. 
 
 ## LangVersion
 
-The default language version for the C# compiler depends on the target framework for your application and the version of the SDK or Visual Studio installed. Those rules are defined in [C# language versioning](../configure-language-version.md#defaults).
+The default language version for the C# compiler depends on the target framework for your application and the version of the SDK or Visual Studio installed. Those rules are defined in [C# language versioning](../language-versioning.md#defaults).
 
 The **LangVersion** option causes the compiler to accept only syntax that is included in the specified C# language specification, for example:
 

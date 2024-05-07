@@ -62,7 +62,7 @@ Welcome to what's new in the .NET docs for April 2024. This article lists some o
 
 ### New articles
 
-- [April 2024 security and quality rollup](../framework/release-notes/2024/04-april-security-and-quality-rollup.md)
+- [April 2024 security and quality rollup](/dotnet/framework/release-notes/2024/04-april-security-and-quality-rollup)
 
 ### Updated articles
 

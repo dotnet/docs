@@ -17,7 +17,7 @@ It's possible to build a MSTest app without this SDK, however, the MSTest SDK is
 
 The MSTest SDK discovers and runs your tests using the [MSTest runner](./unit-testing-mstest-runner-intro.md).
 
-How to use the `MSTest.Sdk` in a project:
+You can enable `MSTest.Sdk` in a project by simply updating the `Sdk` attribute of the `Project` node of your project:
 
 ```xml
 <Project Sdk="MSTest.Sdk/3.3.1">
@@ -33,7 +33,32 @@ How to use the `MSTest.Sdk` in a project:
 
 > [!NOTE]
 > `/3.3.1` is given as example as it's the first version providing the SDK but it can be replaced with any newer version.
-> Alternatively, you can set the SDK version at solution level using the _global.json_. For more information, see [Use MSBuild project SDKs](/visualstudio/msbuild/how-to-use-project-sdk?#how-project-sdks-are-resolved).
+
+To simplify handling of versions we recommend setting the SDK version at solution level using the _global.json_. For example, your project file would look like:
+
+```xml
+<Project Sdk="MSTest.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+    </PropertyGroup>
+
+    <!-- references to the code to test -->
+
+</Project>
+```
+
+Then, you would have a _global.json_ file that specifies the `MSTest.Sdk` version as follows:
+
+```json
+{
+    "msbuild-sdks": {
+        "MSTest.Sdk": "3.3.1"
+    }
+}
+```
+
+For more information, see [Use MSBuild project SDKs](/visualstudio/msbuild/how-to-use-project-sdk#how-project-sdks-are-resolved).
 
 When you `build` the project, all the needed components are restored and installed using the standard NuGet workflow set by your project.
 
@@ -41,7 +66,7 @@ You don't need anything else to build and run your tests and you can use the sam
 
 ## Select the runner
 
-By default, MSTest SDK relies on MSTest runner, but you can easily switch to VSTest by adding the property `<UseVSTest>true</UseVSTest>`.
+By default, MSTest SDK relies on [MSTest runner](./unit-testing-mstest-runner-intro.md), but you can easily switch to [VSTest](/visualstudio/test/vstest-console-options) by adding the property `<UseVSTest>true</UseVSTest>`.
 
 ## Extend MSTest runner
 
@@ -115,6 +140,54 @@ Or to disable an extension that is coming from the selected profile. In this cas
 </Project>
 ```
 
+## Features
+
+Outside of the selection of the runner and runner specific extensions, `MSTest.Sdk` also provides additional features to simplify and enhance your testing experience.
+
+### .NET Aspire
+
+.NET Aspire is an opinionated, cloud ready stack for building observable, production ready, distributed applications. .NET Aspire is delivered through a collection of NuGet packages that handle specific cloud-native concerns. For more information, see the [.NET Aspire docs](/dotnet/aspire/get-started/aspire-overview).
+
+> [!NOTE]
+> This feature is available from MSTest.Sdk 3.4.0
+
+By setting the property `EnableAspireTesting` to `true` you can bring all dependencies and default usings you would need for testing with `Aspire` and `MSTest`.
+
+```xml
+<Project Sdk="MSTest.Sdk/3.4.0">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <EnableAspireTesting>true</EnableAspireTesting>
+    </PropertyGroup>
+
+    <!-- references to the code to test -->
+
+</Project>
+```
+
+### Playwright
+
+Playwright enables reliable end-to-end testing for modern web apps. For more information, see the official [Playwright docs](https://playwright.dev/dotnet/docs/intro).
+
+> [!NOTE]
+> This feature is available from MSTest.Sdk 3.4.0
+
+By setting the property `EnablePlaywright` to `true` you can bring all dependencies and default usings you would need for testing with `Playwright` and `MSTest`.
+
+```xml
+<Project Sdk="MSTest.Sdk/3.4.0">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <EnablePlaywright>true</EnablePlaywright>
+    </PropertyGroup>
+
+    <!-- references to the code to test -->
+
+</Project>
+```
+
 ## Migrating to MSTest SDK
 
 When migrating an existing MSTest test project to MSTest SDK, start by replacing the `Sdk="Microsoft.NET.Sdk"` entry at the top of your test project with `Sdk="MSTest.Sdk/3.3.1"`
@@ -123,7 +196,17 @@ When migrating an existing MSTest test project to MSTest SDK, start by replacing
 
 ```diff
 - Sdk="Microsoft.NET.Sdk"
-+ Sdk="MSTest.Sdk/3.3.1"
++ Sdk="MSTest.Sdk"
+```
+
+Add the version to your `global.json`:
+
+```json
+{
+    "msbuild-sdks": {
+        "MSTest.Sdk": "3.3.1"
+    }
+}
 ```
 
 You can then start simplifying your project.

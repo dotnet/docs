@@ -11,17 +11,51 @@ metadata:
   ms.service: dotnet-ai
   ms.date: 04/11/2024
 
-# TODO: populate once docs are ready
-# highlightedContent:
-# # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
-#   items: []
 
-# TODO: populate once docs are ready
-# conceptualContent:
-#   title: Featured content
-#   summary: Learn to develop .NET apps leveraging AI.
-# # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
-#   items: []
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
+  items:
+    - itemType: overview
+      title: Develop .NET apps that use Azure AI services
+      url: azure-ai-for-dotnet-developers.md
+    - itemType: concept
+      title: Overview of the .NET + AI ecosystem
+      url: /dotnet-ai-ecosystem.md
+    - itemType: concept
+      title: How generative AI and LLMs work
+      url: /conceptual/how-genai-and-llms-work.md
+    - itemType: quickstart
+      title: Build an Azure AI chat app with .NET
+      url: /quickstarts/get-started-azure-openai.md
+    - itemType: quickstart
+      title: Use your own data in an .NET Azure AI chat app
+      url: /quickstarts/quickstart-ai-chat-with-data.md
+    - itemType: deploy
+      title: Deploy a .NET app with Azure DevOps
+      url: /azure/devops/pipelines/ecosystems/dotnet-core?view=azure-devops
+
+conceptualContent:
+  title: Featured content
+  summary: Learn to develop .NET apps leveraging a variety of Azure services.
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+  items:
+    - title: Essential concepts
+      links:
+        - itemType: concept
+          text: How generative AI and LLMs work
+          url: /conceptual/how-genai-and-llms-work.md
+        - itemType: concept
+          text: Prompt engineering in .NET
+          url: /conceptual/prompt-engineering-dotnet.md
+        - itemType: concept
+          text: Understand tokens
+          url: /conceptual/understanding-tokens.md
+        - itemType: concept
+          text: Understand agents
+          url: /conceptual/agents.md
+        - itemType: concept
+          text: Retrieval Augmented Generation (RAG)
+          url: /conceptual/rag.md
 
 additionalContent:
   sections:

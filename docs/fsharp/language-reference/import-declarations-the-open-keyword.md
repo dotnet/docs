@@ -65,20 +65,20 @@ printfn "%A" A
 ## Open from root path only with `global` keyword
 Nested modules like 
 ```fsharp
-module M =
-    module A =
+module A =
+    module B =
         ...
 ```
 can be opend via
 ```fsharp
-open M
-open A // opens M.A
+open A // opens A
+open B // opens A.B
 ```
-if want to open only fully qualified modules or namspaces prefix them with `global`:
+To open **only** fully qualified modules or namspaces prefix them with the `global` keyword:
 ```fsharp
-open global.M
-open global.A // this now fails
-open global.M.A // works
+open global.A   // works
+open global.B   // this now fails
+open global.A.B // works
 ```
 
 

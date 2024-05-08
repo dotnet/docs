@@ -1,12 +1,12 @@
 items:
 - name: C# language reference
-  href: index.yml
-- name: Language version
   items:
-  - name: Overview
+  - name: Index
+    href: index.yml
+  - name: Language versioning
     href: ./language-versioning.md
     displayName: language version
-  - name: Configure
+  - name: Configure language version
     href: ./configure-language-version.md
 - name: Types
   items:

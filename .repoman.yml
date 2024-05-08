@@ -26,7 +26,15 @@ issues:
       pass:
         - check:
           - type: query
-            value: "length(Issue.labels[?name == 'doc-enhancement' || name == 'product-question' || name == 'in-progress' || name == 'test-issue' || name == 'kudos' || name == 'loc' || name == 'doc-bug' || name == 'product-feedback' || name == 'code-of-conduct' || name == 'support-request' || name == 'duplicate' || name == 'resolved-by-customer' || name == 'docs-experience' || name == 'doc-provided' || name == 'doc-idea' || name == 'needs-more-info']) != `0`"
+            value: "length(Issue.labels[?name == ':pushpin: seQUESTered' || name == ':world_map: reQUEST' || name == 'doc-enhancement' || name == 'product-question' || name == 'in-progress' || name == 'test-issue' || name == 'kudos' || name == 'loc' || name == 'doc-bug' || name == 'product-feedback' || name == 'code-of-conduct' || name == 'support-request' || name == 'duplicate' || name == 'resolved-by-customer' || name == 'docs-experience' || name == 'doc-provided' || name == 'doc-idea' || name == 'needs-more-info']) != `0`"
+          pass:
+            - labels-remove: [":watch: Not Triaged"]
+          fail:
+            - labels-add: [":watch: Not Triaged"]
+      fail:
+        - check:
+          - type: query
+            value: "length(Issue.labels[?name == ':pushpin: seQUESTered' || name == ':world_map: reQUEST']) != `0`"
           pass:
             - labels-remove: [":watch: Not Triaged"]
           fail:

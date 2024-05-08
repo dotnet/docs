@@ -62,6 +62,25 @@ open type M.DU
 
 printfn "%A" A
 ```
+## Open from root path only with `global` keyword
+Nested modules like 
+```fsharp
+module M =
+    module A =
+        ...
+```
+can be opend via
+```fsharp
+open M
+open A // opens M.A
+```
+if want to open only fully qualified modules or namspaces prefix them with `global`:
+```fsharp
+open global.M
+open global.A // this now fails
+open global.M.A // works
+```
+
 
 ## Namespaces That Are Open by Default
 

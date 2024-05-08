@@ -24,7 +24,7 @@ highlightedContent:
     # Card
     - title: Tour of C#
       itemType: get-started
-      url: ./tour-of-csharp/index.md
+      url: ./tour-of-csharp/overview.md
     # Card
     - title: C# fundamentals
       itemType: concept
@@ -57,7 +57,7 @@ productDirectory:
       # imageSrc should be square in ratio with no white space
       imageSrc: ../media/logo_csharp.png
       links:
-        - url: tour-of-csharp/index.md
+        - url: ./tour-of-csharp/overview.md
           text: A tour of C#
         - url: ./tour-of-csharp/tutorials/index.md
           text: Beginner C# tutorials

@@ -26,7 +26,7 @@ landingContent:
           - text: "Self-guided tutorials"
             url: https://learn.microsoft.com/users/dotnet/collections/yz26f8y64n7k07?WT.mc_id=dotnet-35129-website 
           - text: "In-browser tutorial"
-            url: ./tour-of-csharp/tutorials/hello-world.yml
+            url: ./tutorials/hello-world.yml
       - linkListType: reference
         links:
           - text: "C# on Q&A"
@@ -43,7 +43,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: "A tour of C#"
-            url: tour-of-csharp/index.md
+            url: ./index.md
           - text: "Inside a C# program"
             url: ../fundamentals/program-structure/index.md
           - text: "C# highlights video series"
@@ -73,7 +73,7 @@ landingContent:
           - text: Pattern matching
             url: ../fundamentals/tutorials/pattern-matching.md
           - text: Use LINQ to query data
-            url: tutorials/working-with-linq.md
+            url: ../tutorials/working-with-linq.md
 
   - title: "Key concepts"
     linkLists:
@@ -86,7 +86,7 @@ landingContent:
       - linkListType: concept
         links:
           - text: "Language Integrated Query (LINQ)"
-            url: linq/index.md
+            url: ../linq/index.md
           - text: "Asynchronous programming"
             url: ../programming-guide/concepts/async/index.md
 

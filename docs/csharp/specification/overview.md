@@ -9,6 +9,9 @@ The [C# language specification](~/_csharpstandard/standard/README.md) is the def
 
 This section contains the latest working draft of the [C# language specification](~/_csharpstandard/standard/README.md). The latest working draft is published here before being submitted to ECMA for approval. The committee works in the [dotnet/csharpstandard](https://github.com/dotnet/csharpstandard) repository. You can track the committee's progress and participate in the standard work there.
 
+> [!NOTE]
+> The committee works to update the C# language specification, but it has fallen behind the current implementation. For specifications about current features, see [Feature specifications](feature-spec-overview.md).
+
 ## See also
 
 - [Feature specifications](feature-spec-overview.md)

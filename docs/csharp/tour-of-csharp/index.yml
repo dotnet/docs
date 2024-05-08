@@ -75,6 +75,35 @@ landingContent:
           - text: Use LINQ to query data
             url: ../tutorials/working-with-linq.md
 
+  - title: "What's new"
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: "What's new in C# 13"
+            url: ../whats-new/csharp-13.md
+          - text: "What's new in C# 12"
+            url: ../whats-new/csharp-12.md
+          - text: "What's new in C# 11"
+            url: ../whats-new/csharp-11.md
+          - text: "What's new in C# 10"
+            url: ../whats-new/csharp-10.md
+      - linkListType: tutorial
+        links:
+          - text: Explore record types
+            url: ../whats-new/tutorials/records.md
+          - text: Explore top level statements
+            url: ../whats-new/tutorials/top-level-statements.md
+          - text: Explore new patterns
+            url: ../whats-new/tutorials/patterns-objects.md
+          - text: Write a custom string interpolation handler
+            url: ../whats-new/tutorials/interpolated-string-handler.md
+      - linkListType: reference
+        links:
+          - text: Breaking changes in the C# compiler
+            url: ../whats-new/breaking-changes.md
+          - text: Version compatibility
+            url: ../whats-new/version-update-considerations.md
+            
   - title: "Key concepts"
     linkLists:
       - linkListType: overview
@@ -105,35 +134,6 @@ landingContent:
           - text: ".NET Compiler Platform SDK"
             url: ../roslyn-sdk/index.md
 
-  - title: "What's new"
-    linkLists:
-      - linkListType: whats-new
-        links:
-          - text: "What's new in C# 13"
-            url: ../whats-new/csharp-13.md
-          - text: "What's new in C# 12"
-            url: ../whats-new/csharp-12.md
-          - text: "What's new in C# 11"
-            url: ../whats-new/csharp-11.md
-          - text: "What's new in C# 10"
-            url: ../whats-new/csharp-10.md
-      - linkListType: tutorial
-        links:
-          - text: Explore record types
-            url: ../whats-new/tutorials/records.md
-          - text: Explore top level statements
-            url: ../whats-new/tutorials/top-level-statements.md
-          - text: Explore new patterns
-            url: ../whats-new/tutorials/patterns-objects.md
-          - text: Write a custom string interpolation handler
-            url: ../whats-new/tutorials/interpolated-string-handler.md
-      - linkListType: reference
-        links:
-          - text: Breaking changes in the C# compiler
-            url: ../whats-new/breaking-changes.md
-          - text: Version compatibility
-            url: ../whats-new/version-update-considerations.md
-            
   - title: "Stay in touch"
     linkLists:
       - linkListType: reference

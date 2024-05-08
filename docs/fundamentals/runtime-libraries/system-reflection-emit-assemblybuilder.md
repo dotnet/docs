@@ -58,7 +58,7 @@ The <xref:System.Reflection.Emit.AssemblyBuilder.Save%2A?displayProperty=nameWit
 
 To create a `PersistedAssemblyBuilder` instance, use the `public PersistedAssemblyBuilder(AssemblyName name, Assembly coreAssembly, IEnumerable<CustomAttributeBuilder>? assemblyAttributes = null)` constructor. The `coreAssembly` parameter is used to resolve base runtime types and can be used for resolving reference assembly versioning:
 
-- If `Reflection.Emit` is used to generate an assembly that's only going to be executed on the same runtime version as the runtime version that the compiler is running on (typically in-proc), the core assembly can be simply `typeof(object).Assembly`. The following example demonstrates how to create and save an assembly to a stream and run it with current runtime assembly:
+- If `Reflection.Emit` is used to generate an assembly that will only be executed on the same runtime version as the runtime version that the compiler is running on (typically in-proc), the core assembly can be simply `typeof(object).Assembly`. The following example demonstrates how to create and save an assembly to a stream and run it with the current runtime assembly:
 
   ```csharp
   public void CreateSaveAndRunAssembly(string assemblyPath)
@@ -85,7 +85,7 @@ To create a `PersistedAssemblyBuilder` instance, use the `public PersistedAssemb
   }
   ```
 
-- If `Reflection.Emit` is used to generate an assembly that targets a specific TFM, open the reference assemblies for the given TFM using `MetadataLoadContext` and use the value of the [MetadataLoadContext.CoreAssembly](xref:System.Reflection.MetadataLoadContext.CoreAssembly) property for `coreAssembly`. This value allows the generator to run on one .NET runtime version and target a different .NET runtime version. Note that, you should use types returned by the MetadataLoadContext instance when referencing core types. For example, instead of `typeof(object)`, you should lookup `System.Object` type in `MetadataLoadContext.CoreAssembly` by name:
+- If `Reflection.Emit` is used to generate an assembly that targets a specific TFM, open the reference assemblies for the given TFM using `MetadataLoadContext` and use the value of the [MetadataLoadContext.CoreAssembly](xref:System.Reflection.MetadataLoadContext.CoreAssembly) property for `coreAssembly`. This value allows the generator to run on one .NET runtime version and target a different .NET runtime version. You should use types returned by the `MetadataLoadContext` instance when referencing core types. For example, instead of `typeof(int)`, find the `System.Int32` type in `MetadataLoadContext.CoreAssembly` by name:
 
   ```csharp
   public void CreatePersistedAssemblyBuilderWithMetadataLoadContextCoreAssembly(string refAssembliesPath)
@@ -102,7 +102,7 @@ To create a `PersistedAssemblyBuilder` instance, use the `public PersistedAssemb
 
 ### Set entry point for an executable
 
-In order to set entry point for an executable and/or set other options for the assembly file you could call the `public MetadataBuilder GenerateMetadata(out BlobBuilder ilStream, out BlobBuilder mappedFieldData)` method and use the populated metadata for generating the assembly with desired options, for example:
+To set the entry point for an executable or to set other options for the assembly file, you can call the `public MetadataBuilder GenerateMetadata(out BlobBuilder ilStream, out BlobBuilder mappedFieldData)` method and use the populated metadata to generate the assembly with desired options, for example:
 
 ```csharp
 PersistedAssemblyBuilder ab = new PersistedAssemblyBuilder(new AssemblyName("MyAssembly"), typeof(object).Assembly);
@@ -132,17 +132,17 @@ using var fileStream = new FileStream("MyAssembly.exe", FileMode.Create, FileAcc
 peBlob.WriteContentTo(fileStream); 
 ```
 
-### Emitting symbols and generating PDB
+### Emit symbols and generate PDB
 
-The symbols metadata populated into the `pdbBuilder` out parameter when `GenerateMetadata(out BlobBuilder ilStream, out BlobBuilder mappedFieldData, out MetadataBuilder pdbBuilder)` method called on `PersistedAssemblyBuilder` instance. The steps for creating an assembly with portable PDB:
+The symbols metadata is populated into the `pdbBuilder` out parameter when you call the `GenerateMetadata(out BlobBuilder ilStream, out BlobBuilder mappedFieldData, out MetadataBuilder pdbBuilder)` method on a `PersistedAssemblyBuilder` instance. To create an assembly with a portable PDB:
 
-1. Create `ISymbolDocumentWriter` instances with `ModuleBuilder.DefineDocument(...)` method, while emitting method's IL also emit the corresponding symbol info.
-2. Create `PortablePdbBuilder` instance using the `pdbBuilder` instance produced with `GenerateMetadata(...)` method.
-3. Serialize the `PortablePdbBuilder` into a `Blob`, write the `Blob` into a PDB file stream (only in case generating standalone PDB).
-4. Create `DebugDirectoryBuilder` instance and add a `CodeViewEntry` (standalone PDB) or `EmbeddedPortablePdbEntry`.
-5. Set the optional `debugDirectoryBuilder` argument when creating `PEBuilder` instance.
+1. Create `ISymbolDocumentWriter` instances with the `ModuleBuilder.DefineDocument(...)` method. While emitting the method's IL, also emit the corresponding symbol info.
+2. Create a `PortablePdbBuilder` instance using the `pdbBuilder` instance produced by the `GenerateMetadata(...)` method.
+3. Serialize the `PortablePdbBuilder` into a `Blob`, and write the `Blob` into a PDB file stream (only if you're generating a standalone PDB).
+4. Create a `DebugDirectoryBuilder` instance and add a `CodeViewEntry` (standalone PDB) or `EmbeddedPortablePdbEntry`.
+5. Set the optional `debugDirectoryBuilder` argument when creating the `PEBuilder` instance.
 
-Following example shows how to emit symbol info and generate PDB:
+The following example shows how to emit symbol info and generate a PDB file.
 
 ```csharp
 static void GenerateAssemblyWithPdb()
@@ -215,10 +215,10 @@ private static void EmbedSource(MetadataBuilder pdbBuilder)
 }
 ```
 
-### Adding resources with PersistedAssemblyBuilder
+### Add resources with PersistedAssemblyBuilder
 
-With `MetadataBuilder.AddManifestResource(...)` you could add as many resources as needed, but streams have to be concatenated together into one `BlobBuilder` that you pass into `ManagedPEBuilder` argument.
-Following example shows how to create resources and attach it to the assembly created:
+You can call `MetadataBuilder.AddManifestResource(...)` to add as many resources as needed. Streams must be concatenated into one `BlobBuilder` that you pass into the `ManagedPEBuilder` argument.
+The following example shows how to create resources and attach it to the assembly that's created.
 
 ```csharp
 public static void GenerateAssemblyWithResources()

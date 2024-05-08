@@ -1,7 +1,8 @@
 items:
 - name: C# specifications
-  href: index.yml
   items:
+  - name: Index
+    href: index.yml
   - name: Overview
     href: overview.md
   - name: C# 8 draft specification
@@ -220,7 +221,9 @@ items:
         href: ../../../_csharplang/proposals/csharp-11.0/generic-attributes.md
       - name: Experimental attribute
         href: ../../../_csharplang/proposals/csharp-12.0/experimental-attribute.md
-- name: C# conceptual documentation
-  href: ../index.yml
-- name: C# language reference
-  href: ../language-reference/index.yml
+- name: Other C# documentation
+  items:
+  - name: C# conceptual docs
+    href: ../index.yml
+  - name: C# language reference
+    href: ../language-reference/index.yml

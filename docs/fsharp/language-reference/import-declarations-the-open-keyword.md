@@ -62,7 +62,7 @@ open type M.DU
 
 printfn "%A" A
 ```
-## Open from root path only with `global` keyword
+## Open from root path only with `global` specifier
 Nested modules like 
 ```fsharp
 module A =
@@ -74,7 +74,7 @@ can be opend via
 open A // opens A
 open B // opens A.B
 ```
-To open **only** fully qualified modules or namspaces prefix them with the `global` keyword:
+To open **only** fully qualified modules or namspaces prefix them with the `global` specifier:
 ```fsharp
 open global.A   // works
 open global.B   // this now fails

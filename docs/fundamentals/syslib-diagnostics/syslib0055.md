@@ -23,11 +23,11 @@ Calling them in code generates warning `SYSLIB0055` at compile time.
 
 ## Reason for obsoletion
 
-The Arm Advanced SIMD `UQRSHRN` instruction performs an unsigned saturated narrow operation. As such, its result is always unsigned. However, the affected APIs accepted and returned signed types, meaning they didn't work as expected if you followed the API description rather than the instruction description.
+The Arm Advanced SIMD `UQRSHRN` instruction performs an unsigned saturated narrow operation. As such, its result is always unsigned. However, the affected APIs accepted and returned signed types, meaning they didn't work as expected if you followed the API description rather than the instruction description. In addition, the underlying implementation can't be corrected to perform signed saturated narrow operations and return signed results.
 
 ## Workaround
 
-Call the corresponding unsigned overload instead. For example, <xref:System.Runtime.Intrinsics.Arm.AdvSimd.ShiftRightLogicalRoundedNarrowingSaturateUpper(System.Runtime.Intrinsics.Vector64{System.UInt32},System.Runtime.Intrinsics.Vector128{System.UInt64},System.Byte)?displayProperty=nameWithType>.
+Intentionally convert the argument to an unsigned type and call the corresponding unsigned overload instead, for example, <xref:System.Runtime.Intrinsics.Arm.AdvSimd.ShiftRightLogicalRoundedNarrowingSaturateUpper(System.Runtime.Intrinsics.Vector64{System.UInt32},System.Runtime.Intrinsics.Vector128{System.UInt64},System.Byte)?displayProperty=nameWithType>. Then intentionally convert the result to a signed type.
 
 ## Suppress a warning
 

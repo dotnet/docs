@@ -62,25 +62,31 @@ open type M.DU
 
 printfn "%A" A
 ```
+
 ## Open from root path only with `global` specifier
-Nested modules like 
+
+Nested modules like
+
 ```fsharp
 module A =
     module B =
         ...
 ```
+
 can be opened via
+
 ```fsharp
 open A // opens A
 open B // opens A.B
 ```
+
 To open **only** fully qualified modules or namespaces prefix them with the `global` specifier:
+
 ```fsharp
 open global.A   // works
 open global.B   // this now fails
 open global.A.B // works
 ```
-
 
 ## Namespaces That Are Open by Default
 

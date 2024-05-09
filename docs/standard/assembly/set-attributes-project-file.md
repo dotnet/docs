@@ -69,7 +69,7 @@ This item tells the .NET SDK to emit the following C# (or equivalent F# or Visua
 
 (The actual date string would be whatever you provided at the time of the build.)
 
-If the attribute takes types other than `System.String`, you can specify the type, or provide the literal text by using a particular pattern of XML elements supported by the MSBuild `WriteCodeFragment` task. See [WriteCodeFragment task - Generate assembly-level attributes](/visualstudio/msbuild/writecodefragment-task#generate-assembly-level-attributes).
+If the attribute has parameter types other than `System.String`, you can specify the type, or provide the literal text by using a particular pattern of XML elements supported by the MSBuild `WriteCodeFragment` task. See [WriteCodeFragment task - Generate assembly-level attributes](/visualstudio/msbuild/writecodefragment-task#generate-assembly-level-attributes).
 
 ## Migrate from .NET Framework
 

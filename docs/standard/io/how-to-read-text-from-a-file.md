@@ -32,9 +32,9 @@ The following examples show how to read text synchronously and asynchronously fr
 
 The following example shows a synchronous read operation within a console app. The file contents are read and stored in a string variable, which is then written to the console.
 
-1.  Create a <xref:System.IO.StreamReader> instance.
-1.  Call the <xref:System.IO.StreamReader.ReadToEnd?displayProperty=nameWithType> method and assign the result to a string.
-1.  Write the output to the console.
+1. Create a <xref:System.IO.StreamReader> instance.
+1. Call the <xref:System.IO.StreamReader.ReadToEnd?displayProperty=nameWithType> method and assign the result to a string.
+1. Write the output to the console.
 
 :::code language="csharp" source="snippets/how-to-read-text-from-a-file/csharp/Program.cs" id="sync":::
 :::code language="vb" source="snippets/how-to-read-text-from-a-file/vb/Program.vb" id="sync":::
@@ -43,9 +43,9 @@ The following example shows a synchronous read operation within a console app. T
 
 The following example shows an asynchronous read operation within a console app. The file contents are read and stored in a string variable, which is then written to the console.
 
-1.  Create a <xref:System.IO.StreamReader> instance.
-1.  Await the <xref:System.IO.StreamReader.ReadToEndAsync?displayProperty=nameWithType> method and assign the result to a string.
-1.  Write the output to the console.
+1. Create a <xref:System.IO.StreamReader> instance.
+1. Await the <xref:System.IO.StreamReader.ReadToEndAsync?displayProperty=nameWithType> method and assign the result to a string.
+1. Write the output to the console.
 
 :::code language="csharp" source="snippets/how-to-read-text-from-a-file/csharp/Program.cs" id="async":::
 :::code language="vb" source="snippets/how-to-read-text-from-a-file/vb/Program.vb" id="async":::

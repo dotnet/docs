@@ -1,7 +1,7 @@
 ---
 title: Disabled runtime marshalling - .NET
 description: Learn how .NET marshals your types to a native representation when runtime marshalling is disabled.
-ms.date: 01/12/2022
+ms.date: 04/08/2024
 ---
 
 # Disabled runtime marshalling
@@ -46,7 +46,7 @@ When marshalling is disabled, the rules for default marshalling change to much s
 
 ## Examples
 
-The following example shows some features that are enabled or disabled when runtime marshalling is disabled:
+The following example shows some features that are enabled or disabled when runtime marshalling is disabled. These examples use `[DllImport]` as opposed to the recommended `[LibraryImport]` to demonstrate the manual application of this guidance. The in-box Roslyn Analyzer will provide additional guidance when `[LibraryImport]` is used.
 
 ```csharp
 using System.Runtime.InteropServices;

@@ -1,18 +1,21 @@
 ---
 title: Type marshalling - .NET
 description: Learn how .NET marshals your types to a native representation.
-ms.date: 01/18/2019
+ms.date: 04/08/2024
 ---
 
 # Type marshalling
 
 **Marshalling** is the process of transforming types when they need to cross between managed and native code.
 
-Marshalling is needed because the types in the managed and unmanaged code are different. In managed code, for instance, you have a `String`, while in the unmanaged world strings can be Unicode ("wide"), non-Unicode, null-terminated, ASCII, etc. By default, the P/Invoke subsystem tries to do the right thing based on the default behavior, described on this article. However, for those situations where you need extra control, you can employ the [MarshalAs](xref:System.Runtime.InteropServices.MarshalAsAttribute) attribute to specify what is the expected type on the unmanaged side. For instance, if you want the string to be sent as a null-terminated ANSI string, you could do it like this:
+Marshalling is needed because the types in the managed and unmanaged code are different. In managed code, for instance, you have a `string`, while unmanaged strings can be .NET Unicode (UTF-16), ANSI Code Page, UTF-8, null-terminated, ASCII, etc. By default, the P/Invoke subsystem tries to do the right thing based on the default behavior, described in this article. However, for those situations where you need extra control, you can employ the [MarshalAs](xref:System.Runtime.InteropServices.MarshalAsAttribute) attribute to specify what is the expected type on the unmanaged side. For instance, if you want the string to be sent as a null-terminated UTF-8 string, you could do it like this:
 
 ```csharp
-[DllImport("somenativelibrary.dll")]
+[LibraryImport("somenativelibrary.dll")]
 static extern int MethodA([MarshalAs(UnmanagedType.LPStr)] string parameter);
+
+[LibraryImport("somenativelibrary.dll", StringMarshalling = StringMarshalling.Utf8)]
+static extern int MethodB(string parameter);
 ```
 
 If you apply the [`System.Runtime.CompilerServices.DisableRuntimeMarshallingAttribute`](xref:System.Runtime.CompilerServices.DisableRuntimeMarshallingAttribute) attribute to the assembly, the rules in the following section don't apply. For information on how .NET values are exposed to native code when this attribute is applied, see [disabled runtime marshalling](disabled-marshalling.md).
@@ -94,11 +97,12 @@ When you are calling methods on COM objects in .NET, the .NET runtime changes th
 Another aspect of type marshalling is how to pass in a struct to an unmanaged method. For instance, some of the unmanaged methods require a struct as a parameter. In these cases, you need to create a corresponding struct or a class in managed part of the world to use it as a parameter. However, just defining the class isn't enough, you also need to instruct the marshaller how to map fields in the class to the unmanaged struct. Here the `StructLayout` attribute becomes useful.
 
 ```csharp
-[DllImport("kernel32.dll")]
+[LibraryImport("kernel32.dll")]
 static extern void GetSystemTime(SystemTime systemTime);
 
 [StructLayout(LayoutKind.Sequential)]
-class SystemTime {
+struct SystemTime
+{
     public ushort Year;
     public ushort Month;
     public ushort DayOfWeek;
@@ -109,7 +113,8 @@ class SystemTime {
     public ushort Millisecond;
 }
 
-public static void Main(string[] args) {
+public static void Main(string[] args)
+{
     SystemTime st = new SystemTime();
     GetSystemTime(st);
     Console.WriteLine(st.Year);

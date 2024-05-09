@@ -13,9 +13,9 @@ class Program
             @"\\?\c:\temp\test-file.txt",
             @"\\.\UNC\LOCALHOST\c$\temp\test-file.txt" };
 
-        foreach (var filename in filenames)
+        foreach (string filename in filenames)
         {
-            FileInfo fi = new FileInfo(filename);
+            FileInfo fi = new(filename);
             Console.WriteLine($"file {fi.Name}: {fi.Length:N0} bytes");
         }
     }

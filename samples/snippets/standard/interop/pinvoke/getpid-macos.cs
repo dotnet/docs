@@ -3,12 +3,12 @@ using System.Runtime.InteropServices;
 
 namespace PInvokeSamples
 {
-    public static class Program
+    public static partial class Program
     {
         // Import the libSystem shared library and define the method
         // corresponding to the native function.
-        [DllImport("libSystem.dylib")]
-        private static extern int getpid();
+        [LibraryImport("libSystem.dylib")]
+        private static partial int getpid();
 
         public static void Main(string[] args)
         {

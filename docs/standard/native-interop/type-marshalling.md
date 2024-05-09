@@ -14,6 +14,8 @@ Marshalling is needed because the types in the managed and unmanaged code are di
 [LibraryImport("somenativelibrary.dll")]
 static extern int MethodA([MarshalAs(UnmanagedType.LPStr)] string parameter);
 
+// or
+
 [LibraryImport("somenativelibrary.dll", StringMarshalling = StringMarshalling.Utf8)]
 static extern int MethodB(string parameter);
 ```
@@ -36,8 +38,8 @@ This first table describes the mappings for various types for whom the marshalli
 | `uint`      | `System.UInt32`  | `uint32_t`              |
 | `long`      | `System.Int64`   | `int64_t`               |
 | `ulong`     | `System.UInt64`  | `uint64_t`              |
-| `char`      | `System.Char`    | Either `char` or `char16_t` depending on the `CharSet` of the P/Invoke or structure. See the [charset documentation](charset.md). |
-|             | `System.Char`    | Either `char*` or `char16_t*` depending on the `CharSet` of the P/Invoke or structure. See the [charset documentation](charset.md). |
+| `char`      | `System.Char`    | Either `char` or `char16_t` depending on the encoding of the P/Invoke or structure. See the [charset documentation](charset.md). |
+|             | `System.Char`    | Either `char*` or `char16_t*` depending on the encoding of the P/Invoke or structure. See the [charset documentation](charset.md). |
 | `nint`      | `System.IntPtr`  | `intptr_t`        |
 | `nuint`     | `System.UIntPtr` | `uintptr_t`      |
 |             | .NET Pointer types (ex. `void*`)  | `void*` |

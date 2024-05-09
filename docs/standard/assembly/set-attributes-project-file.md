@@ -69,6 +69,8 @@ This item tells the .NET SDK to emit the following C# (or equivalent F# or Visua
 
 (The actual date string would be whatever you provided at the time of the build.)
 
+If the attribute takes types other than `System.String`, you can specify the type, or provide the literal text by using a particular pattern of XML elements supported by the MSBuild `WriteCodeFragment` task. See [WriteCodeFragment task - Generate assembly-level attributes](/visualstudio/msbuild/writecodefragment-task#generate-assembly-level-attributes).
+
 ## Migrate from .NET Framework
 
 If you migrate your .NET Framework project to .NET 6 or later, you might encounter an error related to duplicate assembly info files. That's because .NET Framework project templates create a code file with assembly info attributes set. The file is typically located at *.\Properties\AssemblyInfo.cs* or *.\Properties\AssemblyInfo.vb*. However, SDK-style projects also *generate* this file for you based on the project settings.

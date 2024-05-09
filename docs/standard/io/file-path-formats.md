@@ -40,8 +40,8 @@ You can determine whether a file path is fully qualified (that is, if the path i
 
 The following example illustrates the difference between absolute and relative paths. It assumes that the directory `D:\FY2018\` exists, and that you haven't set any current directory for `D:\` from the command prompt before running the example.
 
-[!code-csharp[absolute-and-relative-paths](~/samples/snippets/standard/io/file-names/cs/paths/paths.cs)]
-[!code-vb[absolute-and-relative-paths](~/samples/snippets/standard/io/file-names/vb/paths/paths.vb)]
+[!code-csharp[absolute-and-relative-paths](~/samples/snippets/standard/io/file-names/cs/paths.cs)]
+[!code-vb[absolute-and-relative-paths](~/samples/snippets/standard/io/file-names/vb/paths.vb)]
 
 ## UNC paths
 
@@ -100,8 +100,8 @@ DOS device paths are fully qualified by definition and cannot begin with a relat
 
 The following example illustrates some of the ways in which you can refer to a file when using the APIs in the <xref:System.IO> namespace. The example instantiates a <xref:System.IO.FileInfo> object and uses its <xref:System.IO.FileInfo.Name> and <xref:System.IO.FileInfo.Length> properties to display the filename and the length of the file.
 
-[!code-csharp[referring-to-the-same-file](~/samples/snippets/standard/io/file-names/cs/file-refs/file-refs.cs)]
-[!code-vb[referring-to-the-same-file](~/samples/snippets/standard/io/file-names/vb/file-refs/file-refs.vb)]
+[!code-csharp[referring-to-the-same-file](~/samples/snippets/standard/io/file-names/cs/file-refs.cs)]
+[!code-vb[referring-to-the-same-file](~/samples/snippets/standard/io/file-names/vb/file-refs.vb)]
 
 ## Path normalization
 
@@ -210,7 +210,7 @@ Directory.Create("TeStDiReCtOrY")
 
 creates a directory named TeStDiReCtOrY. If you rename a directory or file to change its case, the directory or file name reflects the case of the string used when you rename it. For example, the following code renames a file named test.txt to Test.txt:
 
-[!code-csharp[case-and-renaming](~/samples/snippets/standard/io/file-names/cs/rename/rename.cs)]
-[!code-vb[case-and-renaming](~/samples/snippets/standard/io/file-names/vb/rename/rename.vb)]
+[!code-csharp[case-and-renaming](~/samples/snippets/standard/io/file-names/cs/rename.cs)]
+[!code-vb[case-and-renaming](~/samples/snippets/standard/io/file-names/vb/rename.vb)]
 
 However, directory and file name comparisons are case-insensitive. If you search for a file named "test.txt", .NET file system APIs ignore case in the comparison. "Test.txt", "TEST.TXT", "test.TXT", and any other combination of uppercase and lowercase letters will match "test.txt".

@@ -12,7 +12,7 @@ ms.date: 04/08/2024
 The guidance in this section applies to all interop scenarios.
 
 - ✔️ DO use `[LibraryImport]`, if possible, when targeting .NET 7+.
-  - There are cases when using `[DllImport]` is appropriate. A Roslyn Analyzer will tell you when that is the case.
+  - There are cases when using `[DllImport]` is appropriate. A code analyzer with ID [SYSLIB1054](../../fundamentals/syslib-diagnostics/syslib1050-1069.md) tells you when that's the case.
 - ✔️ DO use the same naming and capitalization for your methods and parameters as the native method you want to call.
 - ✔️ CONSIDER using the same naming and capitalization for constant values.
 - ✔️ DO use .NET types that map closest to the native type. For example, in C#, use `uint` when the native type is `unsigned int`.
@@ -25,7 +25,7 @@ The guidance in this section applies to all interop scenarios.
 
 ## LibraryImport attribute settings
 
-A Roslyn Analyzer will help guide users with `LibraryImportAttribute`. In most circumstances, `LibraryImportAttribute` uses require explicit declarations rather than relying on default settings. This design is intentional and helps avoid unintended behavior in interop scenarios.
+A code analyzer, with ID [SYSLIB1054](../../fundamentals/syslib-diagnostics/syslib1050-1069.md), helps guide you with `LibraryImportAttribute`. In most cases, the use of `LibraryImportAttribute` requires an explicit declaration rather than relying on default settings. This design is intentional and helps avoid unintended behavior in interop scenarios.
 
 ## DllImport attribute settings
 
@@ -38,7 +38,11 @@ A Roslyn Analyzer will help guide users with `LibraryImportAttribute`. In most c
 
 ## String parameters
 
-When <xref:System.Runtime.InteropServices.LibraryImportAttribute.StringMarshalling> is defined as <xref:System.Runtime.InteropServices.StringMarshalling.Utf16> or the argument is explicitly marked as `[MarshalAs(UnmanagedType.LPWSTR)]` or <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet> is Unicode _and_ the string is passed by value (not `ref` or `out`), the string will be pinned and used directly by native code (rather than copied).
+The string is pinned and used directly by native code (rather than copied) when:
+
+- <xref:System.Runtime.InteropServices.LibraryImportAttribute.StringMarshalling> is defined as <xref:System.Runtime.InteropServices.StringMarshalling.Utf16>.
+- The argument is explicitly marked as `[MarshalAs(UnmanagedType.LPWSTR)]`.
+- <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet> is Unicode and the string is passed by value (not `ref` or `out`).
 
 ❌ DON'T use `[Out] string` parameters. String parameters passed by value with the `[Out]` attribute can destabilize the runtime if the string is an interned string. See more information about string interning in the documentation for <xref:System.String.Intern%2A?displayProperty=nameWithType>.
 

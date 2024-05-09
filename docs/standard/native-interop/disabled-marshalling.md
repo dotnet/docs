@@ -46,7 +46,7 @@ When marshalling is disabled, the rules for default marshalling change to much s
 
 ## Examples
 
-The following example shows some features that are enabled or disabled when runtime marshalling is disabled. These examples use `[DllImport]` as opposed to the recommended `[LibraryImport]` to demonstrate the manual application of this guidance. The in-box Roslyn Analyzer will provide additional guidance when `[LibraryImport]` is used.
+The following example shows some features that are enabled or disabled when runtime marshalling is disabled. To demonstrate the manual application of this guidance, these examples use `[DllImport]` as opposed to the recommended `[LibraryImport]` attribute. The analyzer with ID [SYSLIB1054](../../fundamentals/syslib-diagnostics/syslib1050-1069.md) provides additional guidance when you use `[LibraryImport]`.
 
 ```csharp
 using System.Runtime.InteropServices;

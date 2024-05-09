@@ -74,7 +74,7 @@ can be opened via
 open A // opens A
 open B // opens A.B
 ```
-To open **only** fully qualified modules or namspaces prefix them with the `global` specifier:
+To open **only** fully qualified modules or namespaces prefix them with the `global` specifier:
 ```fsharp
 open global.A   // works
 open global.B   // this now fails

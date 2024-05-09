@@ -40,15 +40,15 @@ A code analyzer, with ID [SYSLIB1054](../../fundamentals/syslib-diagnostics/sysl
 
 A `string` is pinned and used directly by native code (rather than copied) when passed by value (not `ref` or `out`) and any one of the following:
 
-- <xref:System.Runtime.InteropServices.LibraryImportAttribute.StringMarshalling> is defined as <xref:System.Runtime.InteropServices.StringMarshalling.Utf16>.
+- <xref:System.Runtime.InteropServices.LibraryImportAttribute.StringMarshalling?displayProperty=nameWithType> is defined as <xref:System.Runtime.InteropServices.StringMarshalling.Utf16>.
 - The argument is explicitly marked as `[MarshalAs(UnmanagedType.LPWSTR)]`.
-- <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet> is Unicode.
+- <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayProperty=nameWithType> is <xref:System.Runtime.InteropServices.CharSet.Unicode>.
 
 ❌ DON'T use `[Out] string` parameters. String parameters passed by value with the `[Out]` attribute can destabilize the runtime if the string is an interned string. See more information about string interning in the documentation for <xref:System.String.Intern%2A?displayProperty=nameWithType>.
 
 ✔️ CONSIDER `char[]` or `byte[]` arrays from an `ArrayPool` when native code is expected to fill a character buffer. This requires passing the argument as `[Out]`.
 
-### DllImport specific guidance
+### DllImport-specific guidance
 
 ✔️ CONSIDER setting the `CharSet` property in `[DllImport]` so the runtime knows the expected string encoding.
 

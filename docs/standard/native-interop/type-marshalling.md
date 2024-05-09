@@ -98,7 +98,7 @@ Another aspect of type marshalling is how to pass in a struct to an unmanaged me
 
 ```csharp
 [LibraryImport("kernel32.dll")]
-static extern void GetSystemTime(SystemTime systemTime);
+static partial void GetSystemTime(out SystemTime systemTime);
 
 [StructLayout(LayoutKind.Sequential)]
 struct SystemTime

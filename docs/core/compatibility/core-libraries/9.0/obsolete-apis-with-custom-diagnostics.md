@@ -2,7 +2,7 @@
 title: "Breaking change: .NET 9 obsoletions with custom IDs"
 titleSuffix: ""
 description: Learn about the .NET 9 breaking change in core .NET libraries where some APIs have been marked as obsolete with a custom diagnostic ID.
-ms.date: 04/05/2024
+ms.date: 05/09/2024
 ---
 # API obsoletions with non-default diagnostic IDs (.NET 9)
 
@@ -17,6 +17,8 @@ The following table lists the custom diagnostic IDs and their corresponding warn
 | Diagnostic ID | Description | Severity |
 | - | - |
 | [SYSLIB0009](../../../../fundamentals/syslib-diagnostics/syslib0009.md) | <xref:System.Net.AuthenticationManager> is not supported. Methods will no-op or throw <xref:System.PlatformNotSupportedException>. | Warning |
+| [SYSLIB0054](../../../../fundamentals/syslib-diagnostics/syslib0054.md) | <xref:System.Threading.Thread.VolatileRead%2A?displayProperty=nameWithType> and <xref:System.Threading.Thread.VolatileWrite%2A?displayProperty=nameWithType> are obsolete. Use <xref:System.Threading.Volatile.Read%2A?displayProperty=nameWithType> or <xref:System.Threading.Volatile.Write%2A?displayProperty=nameWithType> instead. | Warning |
+| [SYSLIB0055](../../../../fundamentals/syslib-diagnostics/syslib0055.md) | The underlying hardware instruction does not perform a signed saturate narrowing operation, and it always returns an unsigned result. Use the unsigned overload instead. | Warning |
 
 ## Version introduced
 
@@ -37,6 +39,23 @@ These obsoletions can affect [source compatibility](../../categories.md#source-c
 ### SYSLIB0009
 
 - <xref:System.Net.AuthenticationManager?displayProperty=fullName>
+
+### SYSLIB0054
+
+- <xref:System.Threading.Thread.VolatileRead%2A?displayProperty=fullName>
+- <xref:System.Threading.Thread.VolatileWrite%2A?displayProperty=fullName>
+
+### SYSLIB0055
+
+- <xref:System.Runtime.Intrinsics.Arm.AdvSimd.Arm64.ShiftRightLogicalRoundedNarrowingSaturateScalar(System.Runtime.Intrinsics.Vector64{System.Int64},System.Byte)?displayProperty=fullName>
+- <xref:System.Runtime.Intrinsics.Arm.AdvSimd.Arm64.ShiftRightLogicalRoundedNarrowingSaturateScalar(System.Runtime.Intrinsics.Vector64{System.Int16},System.Byte)?displayProperty=fullName>
+- <xref:System.Runtime.Intrinsics.Arm.AdvSimd.Arm64.ShiftRightLogicalRoundedNarrowingSaturateScalar(System.Runtime.Intrinsics.Vector64{System.Int32},System.Byte)?displayProperty=fullName>
+- <xref:System.Runtime.Intrinsics.Arm.AdvSimd.ShiftRightLogicalRoundedNarrowingSaturateLower(System.Runtime.Intrinsics.Vector128{System.Int16},System.Byte)?displayProperty=fullName>
+- <xref:System.Runtime.Intrinsics.Arm.AdvSimd.ShiftRightLogicalRoundedNarrowingSaturateLower(System.Runtime.Intrinsics.Vector128{System.Int64},System.Byte)?displayProperty=fullName>
+- <xref:System.Runtime.Intrinsics.Arm.AdvSimd.ShiftRightLogicalRoundedNarrowingSaturateLower(System.Runtime.Intrinsics.Vector128{System.Int32},System.Byte)?displayProperty=fullName>
+- <xref:System.Runtime.Intrinsics.Arm.AdvSimd.ShiftRightLogicalRoundedNarrowingSaturateUpper(System.Runtime.Intrinsics.Vector64{System.Byte},System.Runtime.Intrinsics.Vector128{System.UInt16},System.Byte)?displayProperty=fullName>
+- <xref:System.Runtime.Intrinsics.Arm.AdvSimd.ShiftRightLogicalRoundedNarrowingSaturateUpper(System.Runtime.Intrinsics.Vector64{System.SByte},System.Runtime.Intrinsics.Vector128{System.Int16},System.Byte)?displayProperty=fullName>
+- <xref:System.Runtime.Intrinsics.Arm.AdvSimd.ShiftRightLogicalRoundedNarrowingSaturateUpper(System.Runtime.Intrinsics.Vector64{System.Int16},System.Runtime.Intrinsics.Vector128{System.Int32},System.Byte)?displayProperty=fullName>
 
 ## See also
 

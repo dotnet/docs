@@ -69,7 +69,7 @@ module A =
     module B =
         ...
 ```
-can be opend via
+can be opened via
 ```fsharp
 open A // opens A
 open B // opens A.B

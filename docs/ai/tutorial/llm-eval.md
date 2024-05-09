@@ -104,13 +104,13 @@ Get the source for the evaluation application and ensure it can be built success
     dotnet build LLMEval.Test.csproj
     ```
 
-## 2 - Configure the models to test, generate test data, and perform evaluations
+## 2 - Configure the models to test, perform evaluations, and generate test data
 
-Set the model to be tested, as well as the models for generating test data and performing evaluations.
+Set the model to be tested, as well as the models for performing evaluations and generating test data.
 
 It's best to use a GPT-4 model for performing evaluation. You can use an Azure OpenAI resource, an OpenAI instance, or any LLM supported by Semantic Kernel SDK. This article shows using an GPT-4 models deployed to an Azure OpenAI resource for evaluations.
 
-The `KernelFactory` class (`src/LLMEval.Test/KernelFactory.cs`) handles creating the kernels for evaluations, generating data, and the LLM being tested.
+The `KernelFactory` class (`src/LLMEval.Test/KernelFactory.cs`) handles creating the kernels for evaluations, generating test data, and the LLM being tested.
 
 <!-- Required: Tasks to complete in the process - H2
 

@@ -75,7 +75,7 @@ The following table provides an index to the `SYSLIB0XXX` obsoletions in .NET 5+
 | [SYSLIB0052](syslib0052.md) | Warning | APIs that support obsolete mechanisms for Regex extensibility are obsolete. |
 | [SYSLIB0053](syslib0053.md) | Warning | <xref:System.Security.Cryptography.AesGcm> should indicate the required tag size for encryption and decryption. Use a constructor that accepts the tag size. |
 | [SYSLIB0054](syslib0054.md) | Warning | <xref:System.Threading.Thread.VolatileRead%2A?displayProperty=nameWithType> and <xref:System.Threading.Thread.VolatileWrite%2A?displayProperty=nameWithType> are obsolete. Use <xref:System.Threading.Volatile.Read%2A?displayProperty=nameWithType> or <xref:System.Threading.Volatile.Write%2A?displayProperty=nameWithType> instead. |
-| [SYSLIB0055](syslib0055.md) | Warning | The underlying hardware instruction does not perform a signed saturate narrowing operation, and it always returns an unsigned result. Use the unsigned overload instead. |
+| [SYSLIB0055](syslib0055.md) | Warning | `AdvSimd.ShiftRightLogicalRoundedNarrowingSaturate*` methods with signed parameters are obsolete. Use the unsigned overloads instead. |
 
 ## Suppress warnings
 

@@ -18,7 +18,7 @@ The following table lists the custom diagnostic IDs and their corresponding warn
 | - | - |
 | [SYSLIB0009](../../../../fundamentals/syslib-diagnostics/syslib0009.md) | <xref:System.Net.AuthenticationManager> is not supported. Methods will no-op or throw <xref:System.PlatformNotSupportedException>. | Warning |
 | [SYSLIB0054](../../../../fundamentals/syslib-diagnostics/syslib0054.md) | <xref:System.Threading.Thread.VolatileRead%2A?displayProperty=nameWithType> and <xref:System.Threading.Thread.VolatileWrite%2A?displayProperty=nameWithType> are obsolete. Use <xref:System.Threading.Volatile.Read%2A?displayProperty=nameWithType> or <xref:System.Threading.Volatile.Write%2A?displayProperty=nameWithType> instead. | Warning |
-| [SYSLIB0055](../../../../fundamentals/syslib-diagnostics/syslib0055.md) | The underlying hardware instruction does not perform a signed saturate narrowing operation, and it always returns an unsigned result. Use the unsigned overload instead. | Warning |
+| [SYSLIB0055](../../../../fundamentals/syslib-diagnostics/syslib0055.md) | `AdvSimd.ShiftRightLogicalRoundedNarrowingSaturate*` methods with signed parameters are obsolete. Use the unsigned overloads instead. | Warning |
 
 ## Version introduced
 

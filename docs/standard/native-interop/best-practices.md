@@ -38,11 +38,11 @@ A code analyzer, with ID [SYSLIB1054](../../fundamentals/syslib-diagnostics/sysl
 
 ## String parameters
 
-The string is pinned and used directly by native code (rather than copied) when:
+A `string` is pinned and used directly by native code (rather than copied) when passed by value (not `ref` or `out`) and any one of the following:
 
 - <xref:System.Runtime.InteropServices.LibraryImportAttribute.StringMarshalling> is defined as <xref:System.Runtime.InteropServices.StringMarshalling.Utf16>.
 - The argument is explicitly marked as `[MarshalAs(UnmanagedType.LPWSTR)]`.
-- <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet> is Unicode and the string is passed by value (not `ref` or `out`).
+- <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet> is Unicode.
 
 ❌ DON'T use `[Out] string` parameters. String parameters passed by value with the `[Out]` attribute can destabilize the runtime if the string is an interned string. See more information about string interning in the documentation for <xref:System.String.Intern%2A?displayProperty=nameWithType>.
 
@@ -138,7 +138,11 @@ public struct UnicodeCharStruct
 }
 ```
 
-`string` contains blittable contents if it isn't contained in another type and it's being passed as an argument that is marked with `[MarshalAs(UnmanagedType.LPWStr)]` or `[LibraryImport]` has `StringMarshalling = StringMarshalling.Utf16` or the `[DllImport]` has `CharSet = CharSet.Unicode` set.
+`string` contains blittable contents if it isn't contained in another type and is being passed by value (not `ref` or `out`) as an argument and any one of the following:
+
+- <xref:System.Runtime.InteropServices.LibraryImportAttribute.StringMarshalling> is defined as <xref:System.Runtime.InteropServices.StringMarshalling.Utf16>.
+- The argument is explicitly marked as `[MarshalAs(UnmanagedType.LPWSTR)]`.
+- <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet> is Unicode.
 
 You can see if a type is blittable or contains blittable contents by attempting to create a pinned `GCHandle`. If the type isn't a string or considered blittable, `GCHandle.Alloc` will throw an `ArgumentException`.
 

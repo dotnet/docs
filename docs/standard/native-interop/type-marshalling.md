@@ -8,7 +8,7 @@ ms.date: 04/08/2024
 
 **Marshalling** is the process of transforming types when they need to cross between managed and native code.
 
-Marshalling is needed because the types in the managed and unmanaged code are different. In managed code, for instance, you have a `string`, while unmanaged strings can be .NET Unicode (UTF-16), ANSI Code Page, UTF-8, null-terminated, ASCII, etc. By default, the P/Invoke subsystem tries to do the right thing based on the default behavior, described in this article. However, for those situations where you need extra control, you can employ the [MarshalAs](xref:System.Runtime.InteropServices.MarshalAsAttribute) attribute to specify what is the expected type on the unmanaged side. For instance, if you want the string to be sent as a null-terminated UTF-8 string, you could do it like this:
+Marshalling is needed because the types in the managed and unmanaged code are different. In managed code, for instance, you have a `string`, while unmanaged strings can be .NET `string` encoding (UTF-16), ANSI Code Page encoding, UTF-8, null-terminated, ASCII, etc. By default, the P/Invoke subsystem tries to do the right thing based on the default behavior, described in this article. However, for those situations where you need extra control, you can employ the [MarshalAs](xref:System.Runtime.InteropServices.MarshalAsAttribute) attribute to specify what is the expected type on the unmanaged side. For instance, if you want the string to be sent as a null-terminated UTF-8 string, you could do it like this:
 
 ```csharp
 [LibraryImport("somenativelibrary.dll")]

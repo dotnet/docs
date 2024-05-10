@@ -51,10 +51,11 @@ In this tutorial, you learn how to:
 
 > [!div class="checklist"]
 >
+> * Clone and build the evaluation application
 > * Configure the models to test, generate test data, and perform evaluations
 > * Generate test data for an evaluation
 > * Perform an evaluation of your LLM
-> * View the results of an evaluation
+> * Review the results of an evaluation
 
 <!-- Required: Outline (no heading)
 
@@ -76,8 +77,7 @@ free trial before the first H2.
 
 ## Prerequisites
 
-* [.NET 8.0 SDK (or newer)](https://dotnet.microsoft.com/download/visual-studio-sdks)
-* [Visual Studio 2022 (or newer)](https://visualstudio.microsoft.com/downloads/) or [Visual Studio Code](https://code.visualstudio.com/Download)
+* [.NET 8.0 SDK](https://dotnet.microsoft.com/download/visual-studio-sdks)
 * [Create and deploy a GPT-4 model to Azure OpenAI Service](/azure/ai-services/openai/how-to/create-resource)
 
 <!-- Optional: Prerequisites - H2
@@ -92,16 +92,16 @@ provide instructions and a link.
 
 -->
 
-## 1 - Build the evaluation application
+## 1 - Clone the evaluation application
 
-Get the source for the evaluation application and ensure it can be built successfully.
+Get the source for the evaluation application and ensure it can be built.
 
 1. Clone the repository [dotnet/ai-samples](https://github.com/dotnet/ai-samples)
-1. From a terminal or command prompt, navigate to the `ai-samples/src/llm-eval/LLMEval.Test` directory.
+1. From a terminal or command prompt, navigate to the `ai-samples/src/llm-eval` directory.
 1. Build the evaluation application:
 
     ```dotnetcli
-    dotnet build LLMEval.Test.csproj
+    dotnet build .
     ```
 
 ## 2 - Configure the models to test, perform evaluations, and generate test data
@@ -140,7 +140,7 @@ dotnet user-secrets set "AZURE_OPENAI_ENDPOINT" "<deployment-endpoint>"
 dotnet user-secrets set "AZURE_OPENAI_KEY" "<deployment-key>"
 ```
 
-The evaluation application is configured to use the previously set secrets to connect to an Azure OpenAI model to perform evaluations. This configuration can be updated in the `KernelFactory.CreateKernelEval` method:
+The evaluation application is configured to use these secrets to connect to an Azure OpenAI model to perform evaluations. This configuration can be updated in the `KernelFactory.CreateKernelEval` method:
 
 :::code language="csharp" source="./snippets/llm-eval/KernelFactoryExamples.cs" id="evalKernel":::
 
@@ -191,9 +191,9 @@ myResourceGroup -Name mycontainer
 
 ## 3 - Generate test data
 
-The evaluation application compares an LLM's output to "ground truth" answers, the ideal answer for a particular question. At least 200 question-answer pairs are recommended for an evaluation.
+The evaluation application compares an LLM's output to "ground truth" answers, which are ideal question-answer pairs. At least 200 question-answer pairs are recommended for an evaluation.
 
-You can use the evaluation application to generate an initial set of question-answer pairs. Then manually curate them, rewriting or removing an subpar answers.
+You can use the evaluation application to generate an initial set of question-answer pairs. Then manually curate them, rewriting or removing any subpar answers.
 
 <!-- Required: Tasks to complete in the process - H2
 
@@ -202,9 +202,25 @@ the user completes in the process the tutorial describes.
 
 -->
 
-1. Procedure step
-1. Procedure step
-1. Procedure step
+1. From the `ai-samples/src/llm-eval/LLMEval.Test` directory, run the following command:
+
+    ```dotnetcli
+    dotnet run .
+    ```
+
+1. Select **Generate QAs associated to a topic, and export to json**, then press **Enter**.
+
+    :::image type="content" source="../media/llm-eval/eval-app-gen-scenario.png" lightbox="../media/llm-eval/eval-app-gen-scenario.png" alt-text="Scenario selection step of the Evaluation Application":::
+
+1. Enter the number of question-answer pairs to be generated and their topic.
+
+    :::image type="content" source="../media/llm-eval/eval-app-gen-input.png" lightbox="../media/llm-eval/eval-app-gen-input.png" alt-text="Number and topic inputs for question-answer generation with the Evaluation Application":::
+
+1. A preview of the generated question-answer pairs in JSON format is shown, enter the path of the file to save the JSON to.
+
+    :::image type="content" source="../media/llm-eval/eval-app-gen-output.png" lightbox="../media/llm-eval/eval-app-gen-output.png" alt-text="Output file input for question-answer generation with the Evaluation Application":::
+
+1. Review the output JSON, update or remove any incorrect or subpar answers.
 
 <!-- Required: Steps to complete the tasks - H2
 
@@ -247,7 +263,7 @@ myResourceGroup -Name mycontainer
 
 ## 4 - Perform an evaluation
 
-[Introduce a task and its role in completing the process.]
+Once the question-answer pairs have been curated, the evaluation application uses them to evaluate the outputs of the test model.
 
 <!-- Required: Tasks to complete in the process - H2
 
@@ -256,7 +272,12 @@ the user completes in the process the tutorial describes.
 
 -->
 
-1. Procedure step
+1. From the `ai-samples/src/llm-eval/LLMEval.Test` directory, run the following command:
+
+    ```dotnetcli
+    dotnet run .
+    ```
+
 1. Procedure step
 1. Procedure step
 
@@ -299,9 +320,9 @@ myResourceGroup -Name mycontainer
 ```
 -->
 
-## 5 - View the evaluation results
+## 5 - Review the evaluation results
 
-[Introduce a task and its role in completing the process.]
+The evaluation results generated in the last step include a *coherence*, *relevance*, and *groundedness* metric. These metrics are similar to the built-in metrics provided by the Azure AI Studio.
 
 <!-- Required: Tasks to complete in the process - H2
 
@@ -310,9 +331,12 @@ the user completes in the process the tutorial describes.
 
 -->
 
-1. Procedure step
-1. Procedure step
-1. Procedure step
+* *coherence*: Measures how well the language model can produce outputs that flow smoothly, read naturally, and resemble human-like language.
+  * Based on `ai-samples/src/LLMEval.Core/_prompts/coherence/skprompt.txt`
+* *relevance*: Assesses the ability of answers to capture the key points of the context.
+  * Based on `ai-samples/src/LLMEval.Core/_prompts/relevance/skprompt.txt`
+* *groundedness*: Assesses the correspondence between claims in an AI-generated answer and the source context, making sure that these claims are substantiated by the context.
+  * Based on `ai-samples/src/LLMEval.Core/_prompts/groundedness/skprompt.txt`
 
 <!-- Required: Steps to complete the tasks - H2
 
@@ -355,7 +379,10 @@ myResourceGroup -Name mycontainer
 
 ## Clean up resources
 
-If you no longer need them, delete the Azure OpenAI resource and GPT-4 model deployment. To do so, select the Azure OpenAI resource then select **Delete**.
+If you no longer need them, delete the Azure OpenAI resource and GPT-4 model deployment.
+
+1. In the [Azure Portal](https://aka.ms/azureportal), navigate to the Azure OpenAI resource.
+1. Select the Azure OpenAI resource then select **Delete**.
 
 ## Related content
 

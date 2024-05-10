@@ -154,6 +154,6 @@ If you no longer need them, delete the Azure OpenAI resource and GPT-4 model dep
 
 ## Related content
 
-* [Use custom and local AI models with the Semantic Kernel SDK](../how-to/work-with-local-models.md)
+* [Evaluation of generative AI applications](/azure/ai-studio/concepts/evaluation-approach-gen-ai)
 * [What is Semantic Kernel?](/semantic-kernel/overview/?tabs=Csharp)
 * [What is Azure OpenAI Service?](/azure/ai-services/openai/overview)

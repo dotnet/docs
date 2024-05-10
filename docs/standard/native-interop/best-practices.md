@@ -1,7 +1,7 @@
 ---
 title: Native interoperability best practices - .NET
 description: Learn the best practices for interfacing with native components in .NET.
-ms.date: 10/27/2023
+ms.date: 04/08/2024
 ---
 # Native interoperability best practices
 
@@ -11,15 +11,22 @@ ms.date: 10/27/2023
 
 The guidance in this section applies to all interop scenarios.
 
+- ✔️ DO use `[LibraryImport]`, if possible, when targeting .NET 7+.
+  - There are cases when using `[DllImport]` is appropriate. A code analyzer with ID [SYSLIB1054](../../fundamentals/syslib-diagnostics/syslib1050-1069.md) tells you when that's the case.
 - ✔️ DO use the same naming and capitalization for your methods and parameters as the native method you want to call.
 - ✔️ CONSIDER using the same naming and capitalization for constant values.
 - ✔️ DO use .NET types that map closest to the native type. For example, in C#, use `uint` when the native type is `unsigned int`.
 - ✔️ DO prefer expressing higher level native types using .NET structs rather than classes.
+- ✔️ DO prefer using function pointers, as opposed to `Delegate` types, when passing callbacks to unmanaged functions in C#.
 - ✔️ DO use `[In]` and `[Out]` attributes on array parameters.
 - ✔️ DO only use `[In]` and `[Out]` attributes on other types when the behavior you want differs from the default behavior.
 - ✔️ CONSIDER using <xref:System.Buffers.ArrayPool%601?displayProperty=nameWithType> to pool your native array buffers.
 - ✔️ CONSIDER wrapping your P/Invoke declarations in a class with the same name and capitalization as your native library.
-  - This allows your `[DllImport]` attributes to use the C# `nameof` language feature to pass in the name of the native library and ensure that you didn't misspell the name of the native library.
+  - This allows your `[LibraryImport]` or `[DllImport]` attributes to use the C# `nameof` language feature to pass in the name of the native library and ensure that you didn't misspell the name of the native library.
+
+## LibraryImport attribute settings
+
+A code analyzer, with ID [SYSLIB1054](../../fundamentals/syslib-diagnostics/syslib1050-1069.md), helps guide you with `LibraryImportAttribute`. In most cases, the use of `LibraryImportAttribute` requires an explicit declaration rather than relying on default settings. This design is intentional and helps avoid unintended behavior in interop scenarios.
 
 ## DllImport attribute settings
 
@@ -32,13 +39,19 @@ The guidance in this section applies to all interop scenarios.
 
 ## String parameters
 
-When the CharSet is Unicode or the argument is explicitly marked as `[MarshalAs(UnmanagedType.LPWSTR)]` _and_ the string is passed by value (not `ref` or `out`), the string will be pinned and used directly by native code (rather than copied).
+A `string` is pinned and used directly by native code (rather than copied) when passed by value (not `ref` or `out`) and any one of the following:
+
+- <xref:System.Runtime.InteropServices.LibraryImportAttribute.StringMarshalling?displayProperty=nameWithType> is defined as <xref:System.Runtime.InteropServices.StringMarshalling.Utf16>.
+- The argument is explicitly marked as `[MarshalAs(UnmanagedType.LPWSTR)]`.
+- <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayProperty=nameWithType> is <xref:System.Runtime.InteropServices.CharSet.Unicode>.
 
 ❌ DON'T use `[Out] string` parameters. String parameters passed by value with the `[Out]` attribute can destabilize the runtime if the string is an interned string. See more information about string interning in the documentation for <xref:System.String.Intern%2A?displayProperty=nameWithType>.
 
-✔️ CONSIDER setting the `CharSet` property in `[DllImport]` so the runtime knows the expected string encoding.
-
 ✔️ CONSIDER `char[]` or `byte[]` arrays from an `ArrayPool` when native code is expected to fill a character buffer. This requires passing the argument as `[Out]`.
+
+### DllImport-specific guidance
+
+✔️ CONSIDER setting the `CharSet` property in `[DllImport]` so the runtime knows the expected string encoding.
 
 ✔️ CONSIDER avoiding `StringBuilder` parameters. `StringBuilder` marshalling *always* creates a native buffer copy. As such, it can be extremely inefficient. Take the typical scenario of calling a Windows API that takes a string:
 
@@ -126,7 +139,11 @@ public struct UnicodeCharStruct
 }
 ```
 
-`string` contains blittable contents if it isn't contained in another type and it's being passed as an argument that is marked with `[MarshalAs(UnmanagedType.LPWStr)]` or the `[DllImport]` has `CharSet = CharSet.Unicode` set.
+`string` contains blittable contents if it isn't contained in another type and is being passed by value (not `ref` or `out`) as an argument and any one of the following:
+
+- <xref:System.Runtime.InteropServices.LibraryImportAttribute.StringMarshalling> is defined as <xref:System.Runtime.InteropServices.StringMarshalling.Utf16>.
+- The argument is explicitly marked as `[MarshalAs(UnmanagedType.LPWSTR)]`.
+- <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet> is Unicode.
 
 You can see if a type is blittable or contains blittable contents by attempting to create a pinned `GCHandle`. If the type isn't a string or considered blittable, `GCHandle.Alloc` will throw an `ArgumentException`.
 

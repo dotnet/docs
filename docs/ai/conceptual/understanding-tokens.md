@@ -33,8 +33,6 @@ This text could be tokenized as:
 - a
 - cat
 
-The model will add only the first occurrence of the "a" token to its vocabulary. All other occurrences can be represented by that first token.
-
 By having a sufficiently large set of training text, tokenization can compile a vocabulary of many thousands of tokens.
 
 ## Common tokenization methods
@@ -113,6 +111,6 @@ Generative AI services might also be limited regarding the maximum number of tok
 
 ## Related content
 
-- [How Generative AI and LLMs work]<!-- (how-genai-and-llms-work.md) -->
-- [Understanding embeddings]<!-- (understanding-embeddings.md) -->
-- [Working with vector databases]<!-- (working-with-vector-dbs.md) -->
+- [How Generative AI and LLMs work](how-genai-and-llms-work.md)
+- [Understanding embeddings](embeddings.md)
+- [Working with vector databases](vector-databases.md)

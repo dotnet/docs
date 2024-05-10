@@ -36,4 +36,6 @@ items:
   - name: Use custom and local AI models with the Semantic Kernel SDK
     href: how-to/work-with-local-models.md
 - name: Tutorials
-  items: []
+  items:
+  - name: Evaluate an LLM's prompt completions
+    href: tutorial/llm-eval.md

@@ -16,9 +16,9 @@ ms.date: 04/29/2021
 ```dotnetcli
 dotnet new search <TEMPLATE_NAME>
 
-dotnet new search [<TEMPLATE_NAME>] [--author <AUTHOR>] [-lang|--language {"C#"|"F#"|VB}]
+dotnet new search [<TEMPLATE_NAME>] [--author <AUTHOR>] [-lang|--language <language>]
     [--package <PACKAGE>] [--tag <TAG>] [--type <TYPE>]
-    [--columns <COLUMNS>] [--columns-all]
+    [--columns <author|language|tags|type>] [--columns-all]
     [-d|--diagnostics] [--verbosity <LEVEL>] [-h|--help]
 ```
 
@@ -42,7 +42,7 @@ The `dotnet new search` command searches for templates supported by `dotnet new`
 - **`TEMPLATE_NAME`**
 
   If the argument is specified, only templates containing `<TEMPLATE_NAME>` in the template name or short name will be shown.
-  The argument is mandatory when `--author`, `--language`, `--package`, `--tag` or `--type` options are not specified.
+  The argument is mandatory when `--author`, `--language`, `--package`, `--tag`, or `--type` options are not specified.
 
   > [!NOTE]
   > Starting with .NET SDK 6.0.100, you can put the `<TEMPLATE_NAME>` argument after the `--search` option. For example, `dotnet new --search web` provides the same result as `dotnet new web --search`.
@@ -52,17 +52,17 @@ The `dotnet new search` command searches for templates supported by `dotnet new`
 
 - **`--author <AUTHOR>`**
 
-  Filters templates based on template author. Partial match is supported.
+  Filters templates based on template author. A partial match is supported.
 
 - **`--columns <COLUMNS>`**
 
-  Comma-separated list of columns to display in the output. The supported columns are:
-  - `language` - A comma-separated list of languages supported by the template.
-  - `tags` - The list of template tags.
+  The list of columns to display in the output. The supported columns are:
   - `author` - The template author.
-  - `type` - The template type: project or item.
+  - `language` - The template language.
+  - `tags` - The list of template tags.
+  - `type` - The template type.
   
-  The template name, short name, package name and total downloads count are always shown. The default list of columns is template name, short name, author, language, package, and total downloads. This list is equivalent to specifying `--columns=author,language`.
+  The template name, short name, package name, an indication if it's a trusted source, and total downloads count are always shown. The default list of columns is template name, short name, language, package, an indication if it's a trusted source, and total downloads. To specify multiple columns, use the `--columns` option multiple times.
 
 - **`--columns-all`**
 
@@ -76,16 +76,16 @@ The `dotnet new search` command searches for templates supported by `dotnet new`
 
   Prints out help for the search command. Available since .NET SDK 7.0.100.
 
-- **`-lang|--language {C#|F#|VB}`**
+- **`-lang|--language <language>`**
 
-  Filters templates based on language supported by the template. The language accepted varies by the template. Not valid for some templates.
+  Filters templates based on language supported by the template. The language accepted varies by the template, possible languages are C#, F#, VB, SQL, JSON, TypeScript, and more. Not valid for some templates.
 
   > [!NOTE]
   > Some shells interpret `#` as a special character. In those cases, enclose the language parameter value in quotes. For example, `dotnet new --search --language "F#"`.
 
 - **`--package <PACKAGE>`**
 
-  Filters templates based on NuGet package ID. Partial match is supported.
+  Filters templates based on NuGet package ID. A partial match is supported.
 
 - **`--tag <TAG>`**
 
@@ -125,7 +125,7 @@ The `dotnet new search` command searches for templates supported by `dotnet new`
 - Search for all C# templates, showing the type and tags in the output.
 
   ```dotnetcli
-  dotnet new search --language "C#" --columns "type,tags"
+  dotnet new search --language "C#" --columns "type" --columns "tags"
   ```
 
 ## See also

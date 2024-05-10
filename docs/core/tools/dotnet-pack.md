@@ -14,8 +14,9 @@ ms.date: 04/04/2024
 ## Synopsis
 
 ```dotnetcli
-dotnet pack [<PROJECT>|<SOLUTION>] [-c|--configuration <CONFIGURATION>]
-    [--force] [--include-source] [--include-symbols] [--interactive]
+dotnet pack [<PROJECT>|<SOLUTION>] [--artifacts-path <ARTIFACTS_DIR>]
+    [-c|--configuration <CONFIGURATION>] [--force]
+    [--include-source] [--include-symbols] [--interactive]
     [--no-build] [--no-dependencies] [--no-restore] [--nologo]
     [-o|--output <OUTPUT_DIRECTORY>] [--runtime <RUNTIME_IDENTIFIER>]
     [-s|--serviceable] [--tl:[auto|on|off]] [-v|--verbosity <LEVEL>]
@@ -58,6 +59,8 @@ You can provide MSBuild properties to the `dotnet pack` command for the packing 
   The project or solution to pack. It's either a path to a csproj, vbproj, or fsproj file, or to a solution file or directory. If not specified, the command searches the current directory for a project or solution file.
 
 ## Options
+
+[!INCLUDE [artifacts-path](../../../includes/cli-artifacts-path.md)]
 
 [!INCLUDE [configuration](../../../includes/cli-configuration-publish-pack.md)]
 

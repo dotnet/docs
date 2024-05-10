@@ -1,13 +1,14 @@
 ---
 title: What's new in C# 13 - C# Guide
 description: Get an overview of the new features in C# 13. Follow the release of new preview features as .NET 9 and C# 13 previews are released.
-ms.date: 03/19/2024
+ms.date: 05/02/2024
 ms.topic: whats-new
 ---
 # What's new in C# 13
 
 C# 13 includes the following new features. You can try these features using the latest [Visual Studio 2022](https://visualstudio.microsoft.com/vs/preview/) version or the [.NET 9 Preview SDK](https://dotnet.microsoft.com/download/dotnet).
 
+- [New `lock` type and semantics](#new-lock-object).
 - [New escape sequence - `\e`](#new-escape-sequence).
 - [Method group natural type improvements](#method-group-natural-type)
 - [Implicit indexer access in object initializers](#implicit-index-access)
@@ -16,9 +17,15 @@ C# 13 is supported on **.NET 9**. For more information, see [C# language version
 
 You can download the latest .NET 9 preview SDK from the [.NET downloads page](https://dotnet.microsoft.com/download). You can also download [Visual Studio 2022 - preview](https://visualstudio.microsoft.com/vs/), which includes the .NET 9 Preview SDK.
 
-New features are added to the "What's new in C#" page when they are available in public preview releases. The [working set](https://github.com/dotnet/roslyn/blob/main/docs/Language%20Feature%20Status.md#working-set) section of the [roslyn feature status page](https://github.com/dotnet/roslyn/blob/main/docs/Language%20Feature%20Status.md) tracks when upcoming features are merged into the main branch.
+New features are added to the "What's new in C#" page when they're available in public preview releases. The [working set](https://github.com/dotnet/roslyn/blob/main/docs/Language%20Feature%20Status.md#working-set) section of the [roslyn feature status page](https://github.com/dotnet/roslyn/blob/main/docs/Language%20Feature%20Status.md) tracks when upcoming features are merged into the main branch.
 
 [!INCLUDE [released-version-feedback](./includes/released-feedback.md)]
+
+## New lock object
+
+The .NET 9 runtime includes a new type for thread synchronization, the <xref:System.Threading.Lock?displayProperty=fullName> type. This type provides better thread synchronization through its API. The <xref:System.Threading.Lock.EnterScope?displayProperty=nameWithType> method enters an exclusive scope. The `ref struct` returned from that supports the `Dispose()` pattern to exit the exclusive scope.
+
+The C# [`lock`](../language-reference/statements/lock.md) statement recognizes if the target of the lock is a `Lock` object. If so, it uses the updated API, rather than the traditional API using <xref:System.Threading.Monitor?displayProperty=nameWithType>. The compiler also recognizes if you convert a `Lock` object to another type and the `Monitor` based code would be generated.
 
 ## New escape sequence
 
@@ -28,7 +35,7 @@ You can use `\e` as a [character literal](~/_csharpstandard/standard/lexical-str
 
 This feature makes small optimizations to overload resolution involving method groups. The previous behavior was for the compiler to construct the full set of candidate methods for a method group. If a natural type was needed, the natural type was determined from the full set of candidate methods.
 
-The new behavior is to prune the set of candidate methods at each scope, removing those candidate methods that aren't applicable. Typically, these are generic methods with the wrong arity, or constraints that aren't satisfied. The process continues to the next outer scope only if no candidate methods have been found. This process more closely follows the general algorithm for overload resolution. If all candidate methods found at a given scope don't match, the method group doesn't have a natural type.
+The new behavior is to prune the set of candidate methods at each scope, removing those candidate methods that aren't applicable. Typically, these are generic methods with the wrong arity, or constraints that aren't satisfied. The process continues to the next outer scope only if no candidate methods are found. This process more closely follows the general algorithm for overload resolution. If all candidate methods found at a given scope don't match, the method group doesn't have a natural type.
 
 You can read the details of the changes in the [proposal specification](~/_csharplang/proposals/method-group-natural-type-improvements.md).
 
@@ -55,7 +62,7 @@ var v = new S()
 };
 ```
 
-In versions prior to C# 13, the `^` operator can't be used in an object initializer. You need to index the elements from the front.
+In versions before C# 13, the `^` operator can't be used in an object initializer. You need to index the elements from the front.
 
 ## See also
 

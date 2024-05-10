@@ -58,6 +58,7 @@ configuration:
       then:
       - addLabel:
           label: ':octocat: auto-merge'
+      triggerOnOwnActions: true
       description: Label PRs from Dotnet Policy Service
     - if:
       - payloadType: Pull_Request

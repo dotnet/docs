@@ -123,7 +123,7 @@ int M()
 
 The compiler can determine that `LocalFunction` definitely assigns `y` when called. Because `LocalFunction` is called before the `return` statement, `y` is definitely assigned at the `return` statement.
 
-Note that when a local function captures variables in the enclosing scope, the local function is implemented as a delegate type.
+Note that when a local function captures variables in the enclosing scope, the local function is implemented using a closure, like delegate types are.
 
 ### Heap allocations
 

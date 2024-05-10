@@ -7,10 +7,6 @@ ms.date: 10/06/2021
 
 You may need the .NET Framework 3.5 to run an app on Windows 11, Windows 10, Windows 8.1, and Windows 8. You can also use these instructions for earlier Windows versions.
 
-## Download the offline installer
-
-The .NET Framework 3.5 SP1 offline installer is available on the [.NET Framework 3.5 SP1 Download page](https://dotnet.microsoft.com/download/dotnet-framework/net35-sp1) and is available for Windows versions prior to Windows 10.
-
 ## Install the .NET Framework 3.5 on Demand
 
 You may see the following configuration dialog if you try to run an app that requires .NET Framework 3.5. Choose **Install this feature** to enable .NET Framework 3.5. This option requires an Internet connection.
@@ -32,6 +28,10 @@ You can enable the .NET Framework 3.5 through the Windows Control Panel. This op
    ![Screenshot showing installation of .NET with the control panel.](./media/dotnet-35-windows/dotnet-control-panel.png)
 
    You don't need to select the child items for **Windows Communication Foundation (WCF) HTTP Activation** and **Windows Communication Foundation (WCF) Non-HTTP Activation** unless you're a developer or server administrator who requires this functionality.
+
+## Download the offline installer
+
+For Windows versions prior to Windows 10, the .NET Framework 3.5 SP1 offline installer is available on the [.NET Framework 3.5 SP1 Download page](https://dotnet.microsoft.com/download/dotnet-framework/net35-sp1?wt.mc_id=install-docs).
 
 ## Troubleshoot the installation of the .NET Framework 3.5
 

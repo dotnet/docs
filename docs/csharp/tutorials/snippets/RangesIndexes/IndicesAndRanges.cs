@@ -31,7 +31,7 @@ class IndicesAndRanges
         // <SnippetIndicesAndRanges_Range>
         string[] secondThirdFourth = words[1..4]; // contains "second", "third" and "fourth"
         
-        // < first >< second >< third >< fourth >
+        // < second >< third >< fourth >
         foreach (var word in secondThirdFourth)
             Console.Write($"< {word} >"); 
         Console.WriteLine();

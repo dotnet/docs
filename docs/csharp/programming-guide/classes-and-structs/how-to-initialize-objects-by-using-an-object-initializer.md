@@ -26,6 +26,10 @@ Object initializers can be used to set indexers in an object. The following exam
 
 [!code-csharp[InitializerIndexerExample](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/object-collection-initializers/HowToIndexInitializer.cs#HowToIndexInitializer)]  
 
+The next example shows the order of execution of constructor and member initializations using constructor with and without parameter:
+
+[!code-csharp[InitializerIndexerExample](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/object-collection-initializers/HowToIndexInitializer.cs#HowToIndexInitializer)]  
+
 ## See also
 
 - [Object and Collection Initializers](object-and-collection-initializers.md)

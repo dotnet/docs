@@ -3,8 +3,9 @@ title: System.Reflection.Emit.PersistedAssemblyBuilder class
 description: Learn about the System.Reflection.Emit.PersistedAssemblyBuilder class.
 ms.date: 05/10/2024
 ---
+# Persisted dynamic assemblies in .NET
 
-## Persisted dynamic assemblies in .NET
+[!INCLUDE [context](includes/context.md)]
 
 The <xref:System.Reflection.Emit.AssemblyBuilder.Save%2A?displayProperty=nameWithType> API wasn't originally ported to .NET (Core) because the implementation depended heavily on Windows-specific native code that also wasn't ported. In .NET 9 we added a fully managed `Reflection.Emit` implementation that supports saving. This implementation has no dependency on the pre-existing, runtime-specific `Reflection.Emit` implementation. That is, now there are two different implementations in .NET, runnable and persisted. To run the persisted assembly, first save it into a memory stream or a file, then load it back. Before `PersistedAssemblyBuilder`, because you could only run a generated assembly and not save it, it was difficult to debug these in-memory assemblies. Advantages of saving a dynamic assembly to a file are:
 
@@ -15,19 +16,19 @@ To create a `PersistedAssemblyBuilder` instance, use the `public PersistedAssemb
 
 - If `Reflection.Emit` is used to generate an assembly that will only be executed on the same runtime version as the runtime version that the compiler is running on (typically in-proc), the core assembly can be simply `typeof(object).Assembly`. The following example demonstrates how to create and save an assembly to a stream and run it with the current runtime assembly:
 
-[!code-csharp[CreateAndRunAssembly#1](/snippets/System.Reflection.Emit/PersistedAssemblyBuilder/Overview/csharp/CreateAndRunAssembly.cs#1)]
+  :::code language="csharp" source="./snippets/System.Reflection.Emit/PersistedAssemblyBuilder/Overview/csharp/CreateAndRunAssembly.cs" id="Snippet1":::
 
 - If `Reflection.Emit` is used to generate an assembly that targets a specific TFM, open the reference assemblies for the given TFM using `MetadataLoadContext` and use the value of the [MetadataLoadContext.CoreAssembly](xref:System.Reflection.MetadataLoadContext.CoreAssembly) property for `coreAssembly`. This value allows the generator to run on one .NET runtime version and target a different .NET runtime version. You should use types returned by the `MetadataLoadContext` instance when referencing core types. For example, instead of `typeof(int)`, find the `System.Int32` type in `MetadataLoadContext.CoreAssembly` by name:
 
-[!code-csharp[CreateAndRunAssembly#2](/snippets/System.Reflection.Emit/PersistedAssemblyBuilder/Overview/csharp/CreateAndRunAssembly.cs#2)]
+  :::code language="csharp" source="./snippets/System.Reflection.Emit/PersistedAssemblyBuilder/Overview/csharp/CreateAndRunAssembly.cs" id="Snippet2":::
 
-### Set entry point for an executable
+## Set entry point for an executable
 
 To set the entry point for an executable or to set other options for the assembly file, you can call the `public MetadataBuilder GenerateMetadata(out BlobBuilder ilStream, out BlobBuilder mappedFieldData)` method and use the populated metadata to generate the assembly with desired options, for example:
 
-[!code-csharp[GenerateMetadata#1](/snippets/System.Reflection.Emit/PersistedAssemblyBuilder/Overview/csharp/GenerateMetadata.cs#1)]
+:::code language="csharp" source="./snippets/System.Reflection.Emit/PersistedAssemblyBuilder/Overview/csharp/GenerateMetadataSnippets.cs" id="Snippet1":::
 
-### Emit symbols and generate PDB
+## Emit symbols and generate PDB
 
 The symbols metadata is populated into the `pdbBuilder` out parameter when you call the `GenerateMetadata(out BlobBuilder ilStream, out BlobBuilder mappedFieldData, out MetadataBuilder pdbBuilder)` method on a `PersistedAssemblyBuilder` instance. To create an assembly with a portable PDB:
 
@@ -110,12 +111,12 @@ private static void EmbedSource(MetadataBuilder pdbBuilder)
 }
 ```
 
-### Add resources with PersistedAssemblyBuilder
+## Add resources with PersistedAssemblyBuilder
 
 You can call `MetadataBuilder.AddManifestResource(...)` to add as many resources as needed. Streams must be concatenated into one `BlobBuilder` that you pass into the `ManagedPEBuilder` argument.
 The following example shows how to create resources and attach it to the assembly that's created.
 
-[!code-csharp[GenerateMetadata#2](/snippets/System.Reflection.Emit/PersistedAssemblyBuilder/Overview/csharp/GenerateMetadata.cs#2)]
+:::code language="csharp" source="./snippets/System.Reflection.Emit/PersistedAssemblyBuilder/Overview/csharp/GenerateMetadataSnippets.cs" id="Snippet2":::
 
 > [!NOTE]
 > The metadata tokens for all members are populated on the <xref:System.Reflection.Emit.AssemblyBuilder.Save%2A> operation. Don't use the tokens of a generated type and its members before saving, as they'll have default values or throw exceptions. It's safe to use tokens for types that are referenced, not generated.

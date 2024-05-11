@@ -232,7 +232,7 @@ The following steps walk you through the process of changing the settings.
 
 1. What is the difference in the answers?
 
-    The response which used the Semantic ranker provided a single answer. The response without semantic ranking returned a less direct answer.
+    The response that used the Semantic ranker provided a single answer. The response without semantic ranking returned a less direct answer.
 
 ## Clean up resources
 

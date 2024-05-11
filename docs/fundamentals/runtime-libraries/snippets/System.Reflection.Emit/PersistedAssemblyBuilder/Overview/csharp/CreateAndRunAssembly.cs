@@ -1,10 +1,11 @@
-
+using System;
+using System.IO;
 using System.Reflection;
 using System.Reflection.Emit;
 using System.Runtime.Loader;
 using System.Runtime.InteropServices;
 
-public class Example
+public class CreatePersistedAssemblyExample
 {
     public static void Main()
     {

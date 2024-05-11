@@ -221,7 +221,7 @@ The following steps walk you through the process of changing the settings.
    What is included in my Northwind Health Plus plan that is not in standard?
     ```
 
-    The chat may return with follow-up question suggestions.
+    The chat might return with follow-up question suggestions.
 
 1. In the **Settings** tab, deselect **Use semantic ranker for retrieval**.
 1. Ask the same question again.

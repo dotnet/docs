@@ -54,11 +54,13 @@ The sample uses the following includes:
 ```
 
 These files can be found at the following locations:
+
 * <https://github.com/dotnet/runtime/blob/main/src/native/corehost/nethost/nethost.h>
 * <https://github.com/dotnet/runtime/blob/main/src/native/corehost/coreclr_delegates.h>
 * <https://github.com/dotnet/runtime/blob/main/src/native/corehost/hostfxr.h>
 
 Or, if you have for example installed the .Net 8 SDK on Windows:
+
 * `C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Host.win-x64\8.0.4\runtimes\win-x64\native`
 
 ### Step 2 - Initialize and start the .NET runtime

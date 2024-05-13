@@ -11,11 +11,11 @@ ms.date: 05/13/2024
 
 ---
 
-# Manage OpenAI Content Filtering in a .NET app
+# Work with OpenAI content filtering in a .NET app
 
 This article demonstrates how to handle content filtering concerns in a .NET app. Azure OpenAI Service includes a content filtering system that works alongside core models. This system works by running both the prompt and completion through an ensemble of classification models aimed at detecting and preventing the output of harmful content. The content filtering system detects and takes action on specific categories of potentially harmful content in both input prompts and output completions. Variations in API configurations and application design might affect completions and thus filtering behavior.
 
-The [Content Filtering](/azure/ai-services/openai/concepts/content-filter) documentation provides a deeper exploration of content filtering concepts and concerns. This article provides examples of how to work with content filtering features in a .NET app.
+The [Content Filtering](/azure/ai-services/openai/concepts/content-filter) documentation provides a deeper exploration of content filtering concepts and concerns. This article provides examples of how to work with content filtering features programmatically in a .NET app.
 
 ## Prerequisites
 
@@ -27,7 +27,7 @@ The [Content Filtering](/azure/ai-services/openai/concepts/content-filter) docum
 
 To utilize the sample code in this article, you'll need to create and assign a content filter to your OpenAI model.
 
-1. [Create and assign a content filter](/azure/ai-services/openai/how-to/content-filters) to a GPT-35 or GPT-4 model.
+1. [Create and assign a content filter](/azure/ai-services/openai/how-to/content-filters) to your provisioned GPT-35 or GPT-4 model.
 
 1. Create a simple chat completion flow in your .NET app using the `OpenAiClient`. Replace the `YOUR_OPENAI_ENDPOINT`, `YOUR_OPENAI_KEY`, and `YOUR_OPENAI_DEPLOYMENT` values with your own.
 

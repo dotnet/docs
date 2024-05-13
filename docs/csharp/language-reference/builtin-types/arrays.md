@@ -45,7 +45,10 @@ The following example creates single-dimensional, multidimensional, and jagged a
 > Many of the examples in this article use [collection expressions](../operators/collection-expressions.md) (which use square brackets) to initialize the arrays. Collection expressions were first introduced in C# 12, which shipped with .NET 8. If you can't ugrade to C# 12 yet, use `{` and `}` to initialize the arrays instead.
 >
 > ```csharp
-> int[] array2 = [1, 2, 3, 4, 5, 6];
+> // Collection expressions:
+> int[] array = [1, 2, 3, 4, 5, 6];
+> // Alternative syntax:
+> int[] array2 = {1, 2, 3, 4, 5, 6};
 > ```
 
 ## Single-dimensional arrays

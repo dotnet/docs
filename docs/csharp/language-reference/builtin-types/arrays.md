@@ -42,7 +42,7 @@ The following example creates single-dimensional, multidimensional, and jagged a
 :::code language="csharp" source="./snippets/shared/Arrays.cs" id="DeclareArrays":::
 
 > [!IMPORTANT]
-> Many of the examples in this article use [collection expressions](../operators/collection-expressions.md) to initialize the arrays. Collection expressions were first introduced in C# 12, which shipped with .NET 8. If you can't use C# 12 yet, you'll need to use `{` and `}` to initialize the arrays:
+> Many of the examples in this article use [collection expressions](../operators/collection-expressions.md) (which use square brackets) to initialize the arrays. Collection expressions were first introduced in C# 12, which shipped with .NET 8. If you can't ugrade to C# 12 yet, use `{` and `}` to initialize the arrays instead.
 >
 > ```csharp
 > int[] array2 = [1, 2, 3, 4, 5, 6];

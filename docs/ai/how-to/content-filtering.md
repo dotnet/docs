@@ -23,7 +23,7 @@ The [Content Filtering](/azure/ai-services/openai/concepts/content-filter) docum
 * [.NET SDK](https://dotnet.microsoft.com/download/visual-studio-sdks)
 * [Create and deploy an Azure OpenAI Service resource](/azure/ai-services/openai/how-to/create-resource)
 
-## Configure the content filter
+## Configure and test the content filter
 
 To utilize the sample code in this article, you'll need to create and assign a content filter to your OpenAI model.
 

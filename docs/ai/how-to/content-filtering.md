@@ -43,16 +43,17 @@ To utilize the sample code in this article, you'll need to create and assign a c
 
     :::code language="csharp" source="./snippets/content-filtering/program.cs" id="printContentFilteringResult":::
 
-The following output shows an example of running the app with a prompt that triggers a low severity content filtering result:
+1. Replace the `YOUR_PROMPT` placeholder with your own message and run the app to experiment with content filtering results. The following output shows an example of a prompt that triggers a low severity content filtering result:
 
-```output
-I am sorry if I have done anything to upset you. Is there anything I can do to assist you and make things better?
-
-Hate category is filtered: False with safe severity.
-SelfHarm category is filtered: False with safe severity.
-Sexual category is filtered: False with safe severity.
-Violence category is filtered: False with medium severity.
-```
+    ```output
+    I am sorry if I have done anything to upset you.
+    Is there anything I can do to assist you and make things better?
+    
+    Hate category is filtered: False with safe severity.
+    SelfHarm category is filtered: False with safe severity.
+    Sexual category is filtered: False with safe severity.
+    Violence category is filtered: False with medium severity.
+    ```
 
 ## Related content
 

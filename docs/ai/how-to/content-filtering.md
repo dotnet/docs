@@ -23,11 +23,17 @@ The [Content Filtering](/azure/ai-services/openai/concepts/content-filter) docum
 * [.NET SDK](https://dotnet.microsoft.com/download/visual-studio-sdks)
 * [Create and deploy an Azure OpenAI Service resource](/azure/ai-services/openai/how-to/create-resource)
 
-## Configure and test the content filter
+## Configure the content filter
 
 To utilize the sample code in this article, you'll need to create and assign a content filter to your OpenAI model.
 
 1. [Create and assign a content filter](/azure/ai-services/openai/how-to/content-filters) to your provisioned GPT-35 or GPT-4 model.
+
+1. Add the [`Azure.AI.OpenAI`](https://www.nuget.org/packages/Azure.AI.OpenAI) NuGet package to your project.
+
+    ```dotnetcli
+    dotnet add package Azure.AI.OpenAI
+    ```
 
 1. Create a simple chat completion flow in your .NET app using the `OpenAiClient`. Replace the `YOUR_OPENAI_ENDPOINT`, `YOUR_OPENAI_KEY`, and `YOUR_OPENAI_DEPLOYMENT` values with your own.
 
@@ -36,6 +42,17 @@ To utilize the sample code in this article, you'll need to create and assign a c
 1. Print out the content filtering results for each category.
 
     :::code language="csharp" source="./snippets/content-filtering/program.cs" id="printContentFilteringResult":::
+
+The following output shows an example of running the app with a prompt that triggers a low severity content filtering result:
+
+```output
+I am sorry if I have done anything to upset you. Is there anything I can do to assist you and make things better?
+
+Hate category is filtered: False with safe severity.
+SelfHarm category is filtered: False with safe severity.
+Sexual category is filtered: False with safe severity.
+Violence category is filtered: False with medium severity.
+```
 
 ## Related content
 

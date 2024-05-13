@@ -1,7 +1,7 @@
-﻿using Azure;
+﻿// <chatCompletionFlow>
+using Azure;
 using Azure.AI.OpenAI;
 
-// <chatCompletionFlow>
 string endpoint = "YOUR_OPENAI_ENDPOINT";
 string key = "YOUR_OPENAI_KEY";
 

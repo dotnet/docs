@@ -25,7 +25,7 @@ The [Content Filtering](/azure/ai-services/openai/concepts/content-filter) docum
 
 ## Configure and test the content filter
 
-To utilize the sample code in this article, you'll need to create and assign a content filter to your OpenAI model.
+To use the sample code in this article, you need to create and assign a content filter to your OpenAI model.
 
 1. [Create and assign a content filter](/azure/ai-services/openai/how-to/content-filters) to your provisioned GPT-35 or GPT-4 model.
 

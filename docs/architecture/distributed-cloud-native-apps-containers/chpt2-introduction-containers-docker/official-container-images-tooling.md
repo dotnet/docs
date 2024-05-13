@@ -45,3 +45,7 @@ When you explore the .NET image repositories at Microsoft Artifact Registry, you
 | mcr.microsoft.com/dotnet/sdk:**8.0** | .NET 8, with SDKs included, on Linux and Windows (multi-arch) |
 
 You can find all the available docker images in [dotnet-docker](https://github.com/dotnet/dotnet-docker) and also refer to the latest preview releases by using nightly build `mcr.microsoft.com/dotnet/nightly/*`
+
+>[!div class="step-by-step"]
+>[Previous](container-terminology.md)
+>[Next](...TODO...)

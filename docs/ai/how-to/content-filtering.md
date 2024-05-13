@@ -49,10 +49,10 @@ To utilize the sample code in this article, you'll need to create and assign a c
     I am sorry if I have done anything to upset you.
     Is there anything I can do to assist you and make things better?
     
-    Hate category is filtered: False with safe severity.
+    Hate category is filtered: False with low severity.
     SelfHarm category is filtered: False with safe severity.
     Sexual category is filtered: False with safe severity.
-    Violence category is filtered: False with medium severity.
+    Violence category is filtered: False with low severity.
     ```
 
 ## Related content

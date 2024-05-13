@@ -10,6 +10,7 @@ namespace object_collection_initializers
             HowToObjectInitializers.Main();
             HowToIndexInitializer.Main();
             HowToDictionaryInitializer.Main();
+            ObjectInitializersExecutionOrder.Main();
         }
     }
 }

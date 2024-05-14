@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Evaluate an LLM's Prompt Completions"
-description: "Evaluate the coherence, relevance, and groundedness of a LLM's prompt completions using Azure OpenAI and the Semantic Kernel SDK for .NET."
+description: "Evaluate the coherence, relevance, and groundedness of an LLM's prompt completions using Azure OpenAI and the Semantic Kernel SDK for .NET."
 author: haywoodsloan
 ms.topic: tutorial 
 ms.date: 05/08/2024
@@ -20,7 +20,7 @@ In this tutorial, you learn how to:
 > [!div class="checklist"]
 >
 > * Clone and build the evaluation application
-> * Configure the models to test, generate test data, and perform evaluations
+> * Configure the models
 > * Generate evaluation test data
 > * Perform an evaluation of your LLM
 > * Review the results of an evaluation
@@ -36,7 +36,7 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 Get the source for the evaluation application and ensure it can be built.
 
-1. Clone the repository [dotnet/ai-samples](https://github.com/dotnet/ai-samples)
+1. Clone the repository [dotnet/ai-samples](https://github.com/dotnet/ai-samples).
 1. From a terminal or command prompt, navigate to the `ai-samples/src/llm-eval` directory.
 1. Build the evaluation application:
 
@@ -44,21 +44,21 @@ Get the source for the evaluation application and ensure it can be built.
     dotnet build .
     ```
 
-## 2 - Configure the models to test, perform evaluations, and generate test data
+## 2 - Configure the models
 
 Set the model to be tested and the models to perform evaluations and generate test data.
 
 It's best to use a GPT-4 model for performing evaluation. You can use an Azure OpenAI resource, an OpenAI instance, or any LLM supported by the Semantic Kernel SDK. This article uses a GPT-4 model deployed to an Azure OpenAI resource for evaluations.
 
-The `KernelFactory` class (`src/LLMEval.Test/KernelFactory.cs`) handles creating the kernels for evaluations, generating test data, and the LLM being tested.
+The `KernelFactory` class (`src/LLMEval.Test/KernelFactory.cs`) creates the kernels for evaluations, generating test data, and the LLM being tested.
 
 ### Configure the model to test
 
-The evaluation application is configured to test the model returned by the `KernelFactory.CreateKernelTest` method.
+The evaluation application tests the model that the `KernelFactory.CreateKernelTest` method returns.
 
 The Semantic Kernel SDK can integrate any model that supports the *OpenAI Chat Completion API*.
 
-Update the `KernelFactory.CreateKernelTest` method to return a `Kernel` object that uses the model to be tested. For example, the following creates a `Kernel` object that uses a Llama 3 model deployed and hosted locally using Ollama:
+Update the `KernelFactory.CreateKernelTest` method to return a `Kernel` object that uses the model to be tested. For example, the following example creates a `Kernel` object that uses a Llama 3 model deployed and hosted locally using Ollama:
 
 :::code language="csharp" source="./snippets/llm-eval/KernelFactoryExamples.cs" id="testKernel":::
 
@@ -73,21 +73,21 @@ dotnet user-secrets set "AZURE_OPENAI_ENDPOINT" "<deployment-endpoint>"
 dotnet user-secrets set "AZURE_OPENAI_KEY" "<deployment-key>"
 ```
 
-The evaluation application is configured to use these secrets to connect to an Azure OpenAI model to perform evaluations. This configuration can be updated in the `KernelFactory.CreateKernelEval` method:
+The evaluation application is configured to use these secrets to connect to an Azure OpenAI model to perform evaluations. You can update this configuration in the `KernelFactory.CreateKernelEval` method:
 
 :::code language="csharp" source="./snippets/llm-eval/KernelFactoryExamples.cs" id="evalKernel":::
 
 ### Configure the model to generate test data
 
-The evaluation application is configured to use [the secrets set in the previous step](#configure-the-model-to-perform-evaluations) to connect to an Azure OpenAI model to generate test data. This configuration can be updated in the `KernelFactory.CreateKernelGenerateData` method:
+The evaluation application is configured to use [the secrets set in the previous step](#configure-the-model-to-perform-evaluations) to connect to an Azure OpenAI model to generate test data. You can update this configuration in the `KernelFactory.CreateKernelGenerateData` method:
 
 :::code language="csharp" source="./snippets/llm-eval/KernelFactoryExamples.cs" id="genKernel":::
 
 ## 3 - Generate test data
 
-The evaluation application compares an LLM's output to "ground truth" answers, which are ideal question-answer pairs. At least 200 question-answer pairs are recommended for an evaluation.
+The evaluation application compares an LLM's output to "ground truth" answers, which are ideal question-answer pairs. It's recommended to have at least 200 question-answer pairs for an evaluation.
 
-You can use the evaluation application to generate an initial set of question-answer pairs. Then manually curate them, rewriting or removing any subpar answers.
+You can use the evaluation application to generate an initial set of question-answer pairs. Then manually curate them by rewriting or removing any subpar answers.
 
 Tips for generating test data:
 
@@ -101,7 +101,7 @@ Tips for generating test data:
     dotnet run .
     ```
 
-1. Select **Generate QAs associated to a topic, and export to json**, then press **Enter**.
+1. Select **Generate QAs associated to a topic, and export to json**, then press <kbd>Enter</kbd>.
 
     :::image type="content" source="../media/llm-eval/eval-app-gen-scenario.png" lightbox="../media/llm-eval/eval-app-gen-scenario.png" alt-text="Scenario selection step of the Evaluation Application":::
 
@@ -113,11 +113,11 @@ Tips for generating test data:
 
     :::image type="content" source="../media/llm-eval/eval-app-gen-output.png" lightbox="../media/llm-eval/eval-app-gen-output.png" alt-text="Output file input for question-answer generation with the Evaluation Application":::
 
-1. Review the output JSON, update or remove any incorrect or subpar answers.
+1. Review the output JSON, and update or remove any incorrect or subpar answers.
 
 ## 4 - Perform an evaluation
 
-Once the question-answer pairs have been curated, the evaluation application can use them to evaluate the outputs of the test model.
+Once you've curated the question-answer pairs, the evaluation application can use them to evaluate the outputs of the test model.
 
 1. Copy the JSON file containing the question-answer pairs to `ai-samples/src/llm-eval/LLMEval.Test/assets/qa-02.json`.
 1. From the `ai-samples/src/llm-eval/LLMEval.Test` directory, run the following command:
@@ -126,7 +126,7 @@ Once the question-answer pairs have been curated, the evaluation application can
     dotnet run .
     ```
 
-1. Select **List of QAs from a file**, then press **Enter**.
+1. Select **List of QAs from a file**, then press <kbd>Enter</kbd>.
 
     :::image type="content" source="../media/llm-eval/eval-app-test-scenario.png" lightbox="../media/llm-eval/eval-app-test-scenario.png" alt-text="Scenario selection step of the Evaluation Application":::
 

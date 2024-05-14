@@ -1,6 +1,6 @@
 ---
 title: May 2024 security and quality rollup
-description: Learn about the improvements in the .NET Framework May> 2024 security and quality rollup.
+description: Learn about the improvements in the .NET Framework May 2024 security and quality rollup.
 ms.date: 05/14/2024
 ---
 # May 2024 security and quality rollup

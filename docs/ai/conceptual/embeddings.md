@@ -54,7 +54,7 @@ After you generate embeddings, you'll need a way to store them so you can later 
 
 ### Using embeddings in your LLM solution
 
-When building LLM-based application, you can use Semantic Kernel to integrate embedding models and vector stores, so you can quickly pull in text data, and generate and store embeddings. This lets you use a vector database solution to store and retrieve semantic memories. 
+When building LLM-based application, you can use Semantic Kernel to integrate embedding models and vector stores, so you can quickly pull in text data, and generate and store embeddings. This lets you use a vector database solution to store and retrieve semantic memories.
 
 ## Related content
 

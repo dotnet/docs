@@ -64,7 +64,7 @@ landingContent:
           - text: Use custom and local AI models with the Semantic Kernel SDK
             url: how-to/work-with-local-models.md
           - text: Work with content filtering
-            url: how-to/content-filtering.md
+            url: how-to/work-with-local-models.md
 
   # Card (Optional; Remove if not applicable.)
   - title: Tutorials
@@ -72,7 +72,7 @@ landingContent:
       - linkListType: tutorial
         links:
           - text: Scale Azure OpenAI with Azure Container Apps
-            url: get-started-app-chat-scaling-with-azure-container-apps.md.md
+            url: get-started-app-chat-scaling-with-azure-container-apps.md
           - text: .NET enterprise chat sample using RAG
             url: get-started-app-chat-template.md
           - text: Implement RAG using vector search
@@ -84,10 +84,10 @@ landingContent:
       - linkListType: tutorial
         links:
           - text: Fundamentals of Azure OpenAI Service
-            url: /training/modules/explore-azure-openai/
+            url: /training/modules/explore-azure-openai
           - text: Generate conversations Azure OpenAI Completions
-            url: /training/modules/open-ai-dotnet-text-completions/
+            url: /training/modules/open-ai-dotnet-text-completions
           - text: .NET enterprise chat sample using RAG
             url: get-started-app-chat-template.md
           - text: Develop AI agents using Azure OpenAI
-            url: /training/paths/develop-ai-agents-azure-open-ai-semantic-kernel-sdk/
+            url: /training/paths/develop-ai-agents-azure-open-ai-semantic-kernel-sdk

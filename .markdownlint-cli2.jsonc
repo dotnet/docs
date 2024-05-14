@@ -14,6 +14,8 @@
         "MD026": false,
         // Cannot be enabled due to sequential Note blocks
         "MD028": false,
+        // Won't allow "1.  Item" to align 4 spaces in with content. According to commonmark
+        "MD030": false,
         "MD033": {
             "allowed_elements": [
                 "a",

@@ -9,7 +9,7 @@ The terminal logger is now enabled by default for all "interactive" terminal ses
 
 ## Previous behavior
 
-`dotnet build` and other build-related CLI commands used the 'minimal' verbosity console logger by default for user-driven builds.
+`dotnet build` and other build-related CLI commands used the 'minimal' verbosity MSBuild console logger by default for user-driven builds.
 
 ## New behavior
 
@@ -31,8 +31,8 @@ The terminal logger output about the progress of a build is more information den
 
 If you need to revert to the console logger, you can disable the terminal logger can be disabled in the following ways:
 
-- To disable terminal logger for a single build, specify `--tl:off` on the command line or via an MSBuild response file.
-- To disable terminal logger for all builds, set the `MSBUILDTERMINALLOGGER` environment variable to `off` to accomplish this.
+- To disable terminal logger for a specific command, specify `--tl:off` on the command line or via an MSBuild response file.
+- To disable terminal logger for all commands, set the `MSBUILDTERMINALLOGGER` environment variable to `off`.
 
 ## Affected APIs
 
@@ -41,3 +41,4 @@ N/A
 ## See also
 
 - ['dotnet build' options](../../../tools/dotnet-build.md#options)
+- [Terminal logger](../../../whats-new/dotnet-9/sdk.md#terminal-logger)

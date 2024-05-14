@@ -24,7 +24,7 @@ highlightedContent:
     # Card
     - title: Tour of C#
       itemType: get-started
-      url: ./tour-of-csharp/index.md
+      url: ./tour-of-csharp/overview.md
     # Card
     - title: C# fundamentals
       itemType: concept
@@ -57,7 +57,7 @@ productDirectory:
       # imageSrc should be square in ratio with no white space
       imageSrc: ../media/logo_csharp.png
       links:
-        - url: tour-of-csharp/index.md
+        - url: ./tour-of-csharp/overview.md
           text: A tour of C#
         - url: ./tour-of-csharp/tutorials/index.md
           text: Beginner C# tutorials
@@ -223,35 +223,20 @@ additionalContent:
             - url: ../fsharp/scenarios/web-development.md
               text: F# for web development
         # Card
-        - title: Mobile
+        - title: Mobile and Desktop
           links:
-            - url: /dotnet/maui
-              text: .NET Multi-platform App UI (.NET MAUI)
-            - url: /xamarin/xamarin-forms
-              text: Xamarin.Forms
-            - url: /xamarin/ios
-              text: Xamarin.iOS
-            - url: /xamarin/android
-              text: Xamarin.Android
-            - url: /azure/developer/mobile-apps
-              text: Develop Xamarin apps with Azure
-        # Card
-        - title: Desktop
-          links:
-            - url: /uwp
-              text: Universal Windows apps
             - url: /dotnet/desktop/wpf/
               text: Windows Presentation Foundation (.NET 5+)
-            - url: /dotnet/desktop/wpf/?view=netframeworkdesktop-4.8&preserve-view=true
-              text: Windows Presentation Foundation (.NET Framework)
             - url: /dotnet/desktop/winforms/
               text: Windows Forms (.NET 5+)
-            - url: /dotnet/desktop/winforms/?view=netframeworkdesktop-4.8&preserve-view=true
-              text: Windows Forms (.NET Framework)
             - url: /dotnet/maui
               text: .NET Multi-platform App UI (.NET MAUI)
-            - url: /xamarin/mac
-              text: Xamarin for macOS
+            - url: /azure/developer/mobile-apps
+              text: Develop mobile apps with Azure
+            - url: /dotnet/desktop/wpf/?view=netframeworkdesktop-4.8&preserve-view=true
+              text: Windows Presentation Foundation (.NET Framework)
+            - url: /dotnet/desktop/winforms/?view=netframeworkdesktop-4.8&preserve-view=true
+              text: Windows Forms (.NET Framework)
         # Card
         - title: Microservices
           links:

@@ -34,7 +34,7 @@ You can learn more about primary constructors in the tutorial for [exploring pri
 
 ## Collection expressions
 
-Collection expressions introduce a new terse syntax to create common collection values. Inlining other collections into these values is possible using a spread operator `..`.
+Collection expressions introduce a new terse syntax to create common collection values. Inlining other collections into these values is possible using a spread element `..e`.
 
 Several collection-like types can be created without requiring external BCL support.  These types are:
 
@@ -64,7 +64,7 @@ int[] row2 = [7, 8, 9];
 int[][] twoDFromVariables = [row0, row1, row2];
 ```
 
-The *spread operator*, `..` in a collection expression replaces its argument with the elements from that collection. The argument must be a collection type. The following examples show how the spread operator works:
+The *spread element*, `..e` in a collection expression adds all the elements in that expression. The argument must be a collection type. The following examples show how the spread element works:
 
 ```csharp
 int[] row0 = [1, 2, 3];
@@ -79,7 +79,7 @@ foreach (var element in single)
 // 1, 2, 3, 4, 5, 6, 7, 8, 9,
 ```
 
-The operand of a spread operator is an expression that can be enumerated. The spread operator evaluates each element of the enumerations expression.
+The spread element evaluates each element of the enumerations expression. Each element is included in the output collection.
 
 You can use collection expressions anywhere you need a collection of elements. They can specify the initial value for a collection or be passed as arguments to methods that take collection types. You can learn more about collection expressions in the [language reference article on collection expressions](../language-reference/operators/collection-expressions.md) or the [feature specification](~/_csharplang/proposals/csharp-12.0/collection-expressions.md).
 

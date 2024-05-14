@@ -1,9 +1,9 @@
 ---
 title: Install .NET on Alpine
-description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Alpine.
+description: Learn about which versions of .NET SDK and .NET Runtime are supported, and how to install them on Alpine.
 author: adegeo
 ms.author: adegeo
-ms.date: 03/26/2024
+ms.date: 05/14/2024
 ms.custom: linux-related-content
 ---
 
@@ -29,10 +29,6 @@ The Alpine package manager supports installing some versions of .NET. If the .NE
 - [Use the .NET install script.](linux-scripted-manual.md#scripted-install)
 - [Download and install .NET manually.](linux-scripted-manual.md#manual-install)
 
-## Install .NET 7
-
-[!INCLUDE [linux-apk-install-70](includes/linux-install-70-apk.md)]
-
 ## Install .NET 6
 
 [!INCLUDE [linux-apk-install-60](includes/linux-install-60-apk.md)]
@@ -41,13 +37,13 @@ The Alpine package manager supports installing some versions of .NET. If the .NE
 
 The following table is a list of currently supported .NET releases and the versions of Alpine they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Alpine reaches end-of-life](https://alpinelinux.org/releases/).
 
-| Alpine | Supported Version  | Available in Package Manager |
-|--------|--------------------| -----------------------------|
-| 3.19   | .NET 8.0, .NET 7.0, .NET 6.0 | .NET 7.0, .NET 6.0 |
-| 3.18   | .NET 8.0, .NET 7.0, .NET 6.0 | .NET 7.0, .NET 6.0 |
-| 3.17   | .NET 8.0, .NET 7.0, .NET 6.0 | .NET 7.0, .NET 6.0 |
-| 3.16   | .NET 7.0, .NET 6.0 | .NET 6.0 |
-| 3.15   | .NET 7.0, .NET 6.0 | None |
+| Alpine | Supported Version | Available in Package Manager |
+|--------|-------------------|------------------------------|
+| 3.19   | 8.0, 6.0          | 7.0, 6.0                     |
+| 3.18   | 8.0, 6.0          | 7.0, 6.0                     |
+| 3.17   | 8.0, 6.0          | 7.0, 6.0                     |
+| 3.16   | 6.0               | 6.0                          |
+| 3.15   | 6.0               | None                         |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 

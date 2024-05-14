@@ -1,9 +1,9 @@
 ---
 title: Install .NET on CentOS Linux
-description: Demonstrates the various ways to install .NET SDK and .NET Runtime on CentOS Linux.
+description: Learn about which versions of .NET SDK and .NET Runtime are supported, and how to install them on CentOS Linux.
 author: adegeo
 ms.author: adegeo
-ms.date: 05/04/2023
+ms.date: 05/14/2024
 ms.custom: linux-related-content
 ---
 
@@ -21,7 +21,7 @@ The following table is a list of currently supported .NET releases on CentOS Lin
 
 | CentOS Linux | .NET |
 |--------------|------|
-| 7            | 7, 6 |
+| 7            | 6.0  |
 
 > [!WARNING]
 > CentOS Linux 8 reached an early End Of Life (EOL) on December 31st, 2021. For more information, see the official [CentOS Linux EOL page](https://www.centos.org/centos-linux-eol/). Because of this, .NET isn't supported on CentOS Linux 8.
@@ -46,7 +46,7 @@ The following table is a list of currently supported .NET releases on CentOS Lin
 sudo rpm -Uvh https://packages.microsoft.com/config/centos/7/packages-microsoft-prod.rpm
 ```
 
-[!INCLUDE [linux-yum-install-70](includes/linux-install-70-yum.md)]
+[!INCLUDE [linux-yum-install-60](includes/linux-install-60-yum.md)]
 
 ## How to install other versions
 

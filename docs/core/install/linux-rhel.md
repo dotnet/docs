@@ -1,9 +1,9 @@
 ---
 title: Install .NET on RHEL and CentOS Stream
-description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Red Hat Enterprise Linux.
+description: Learn about which versions of .NET are supported, and how to install them on Red Hat Enterprise Linux and CentOS Stream.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/14/2023
+ms.date: 05/14/2024
 ms.custom: linux-related-content
 ---
 
@@ -28,11 +28,11 @@ The following table is a list of currently supported .NET releases on both RHEL 
 
 | Distribution           | .NET      |
 | ---------------------- | --------- |
-| RHEL 9 (9.1)           | 8, 7, 6   |
-| RHEL 8 (8.7)           | 8, 7, 6   |
-| RHEL 7                 | 6         |
-| CentOS Stream 9        | 8, 7, 6   |
-| CentOS Stream 8        | 8, 7, 6   |
+| RHEL 9 (9.1)           | 8.0, 6.0  |
+| RHEL 8 (8.7)           | 8.0, 6.0  |
+| RHEL 7                 | 6.0       |
+| CentOS Stream 9        | 8.0, 6.0  |
+| CentOS Stream 8        | 8.0, 6.0  |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
@@ -63,10 +63,6 @@ The following table is a list of currently supported .NET releases on both RHEL 
 ## RHEL 7 ❌ .NET 8
 
 .NET 8 isn't compatible with RHEL 7 and doesn't work.
-
-## RHEL 7 ❌ .NET 7
-
-.NET 7 isn't officially supported on RHEL 7. To install .NET 7, see [Install .NET on Linux by using an install script or by extracting binaries](linux-scripted-manual.md).
 
 ## RHEL 7 ✔️ .NET 6
 

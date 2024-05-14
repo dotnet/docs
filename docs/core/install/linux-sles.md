@@ -1,6 +1,6 @@
 ---
 title: Install .NET on SLES
-description: Demonstrates the various ways to install .NET SDK and .NET Runtime on SLES.
+description: Learn about which versions of .NET SDK and .NET Runtime are supported, and how to install .NET on SLES.
 author: adegeo
 ms.author: adegeo
 ms.date: 05/14/2024

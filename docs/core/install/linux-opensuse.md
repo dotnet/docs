@@ -1,6 +1,6 @@
 ---
 title: Install .NET on openSUSE
-description: Learn about which versions of .NET SDK and .NET Runtime are supported, and how to install them on openSUSE.
+description: Learn about which versions of .NET SDK and .NET Runtime are supported, and how to install .NET on openSUSE.
 author: adegeo
 ms.author: adegeo
 ms.date: 05/14/2024

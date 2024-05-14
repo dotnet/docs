@@ -1,6 +1,6 @@
 ---
 title: Install .NET on Windows
-description: Learn about the different ways you can install .NET and which versions of Windows support .NET.
+description: Learn about which versions of .NET SDK and .NET Runtime are supported, and how to install .NET on Windows.
 author: adegeo
 ms.author: adegeo
 ms.date: 05/14/2024

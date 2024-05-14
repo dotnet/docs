@@ -1,7 +1,7 @@
 ---
 title: Get started with the .NET enterprise chat app sample using RAG 
 description: Get started with .NET and search across your own data using a chat app sample implemented using Azure OpenAI Service and Retrieval Augmented Generation (RAG) in Azure AI Search. Easily deploy with Azure Developer CLI. This article uses the Azure AI Reference Template sample.
-ms.date: 11/19/2023
+ms.date: 05/10/2024
 ms.topic: get-started
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 # CustomerIntent: As a .NET developer new to Azure OpenAI, I want deploy and use sample code to interact with app infused with my own business data so that learn from the sample code.
@@ -12,9 +12,6 @@ ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 This article shows you how to deploy and run the [Enterprise chat app sample for .NET](https://github.com/Azure-Samples/azure-search-openai-demo-csharp). This sample implements a chat app using C#, Azure OpenAI Service, and [Retrieval Augmented Generation (RAG)](/azure/search/retrieval-augmented-generation-overview) in Azure AI Search to get answers about employee benefits at a fictitious company. The employee benefits chat app is seeded with PDF files including an employee handbook, a benefits document and a list of company roles and expectations.
 
 * [Demo video](https://aka.ms/azai/net/video)
-
-> [!div class="nextstepaction"]
-> [Begin now](#open-development-environment)
 
 By following the instructions in this article, you will:
 
@@ -181,7 +178,7 @@ The sample repository contains all the code and configuration files you need to 
 The chat app is preloaded with employee benefits information from [PDF files](https://github.com/Azure-Samples/azure-search-openai-demo-csharp/tree/main/data). You can use the chat app to ask questions about the benefits. The following steps walk you through the process of using the chat app.
 
 1. In the browser, navigate to the **Chat** page using the left navigation.
-1. Select or enter "What is included in my Northwind Health Plus plan that is not in standard?" in the chat text box.
+1. Select or enter "What is included in my Northwind Health Plus plan that is not in standard?" in the chat text box. Your response is _similar_ to the following image.
 
     :::image type="content" source="./media/get-started-app-chat-template/browser-chat-initial-answer.png" lightbox="./media/get-started-app-chat-template/browser-chat-initial-answer.png" alt-text="Screenshot of chat app's first answer.":::
 
@@ -218,17 +215,13 @@ The intelligence of the chat is determined by the OpenAI model and the settings 
 The following steps walk you through the process of changing the settings.
 
 1. In the browser, select the gear icon in the upper right of the page.
-1. Check the **Suggest follow-up questions** checkbox and ask the same question again.
+1. If not selected, select the **Suggest follow-up questions** checkbox and ask the same question again.
 
     ```Text
-    What is my deductible?
+   What is included in my Northwind Health Plus plan that is not in standard?
     ```
 
-    The chat returns follow-up question suggestions such as the following:
-
-    - "What is the cost sharing for out-of-network services?"
-    - "Are preventive care services subject to the deductible?"
-    - "How does the prescription drug deductible work?"
+    The chat might return with follow-up question suggestions.
 
 1. In the **Settings** tab, deselect **Use semantic ranker for retrieval**.
 1. Ask the same question again.
@@ -239,9 +232,7 @@ The following steps walk you through the process of changing the settings.
 
 1. What is the difference in the answers?
 
-    The response which used the Semantic ranker provided a single answer: `The deductible for the Northwind Health Plus plan is $2,000 per year`.
-
-    The response without semantic ranking returned a less direct answer: `Based on the information provided, it is unclear what your specific deductible is. The Northwind Health Plus plan has different deductible amounts for in-network and out-of-network services, and there is also a separate prescription drug deductible. I would recommend checking with your provider or referring to the specific benefits details for your plan to determine your deductible amount`.
+    The response that used the Semantic ranker provided a single answer. The response without semantic ranking returned a less direct answer.
 
 ## Clean up resources
 

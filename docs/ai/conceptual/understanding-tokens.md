@@ -3,7 +3,7 @@ title: "Understanding tokens"
 description: "Understand how large language models (LLMs) use tokens to analyze semantic relationships and generate natural language outputs"
 author: haywoodsloan
 ms.topic: concept-article
-ms.date: 04/12/2024
+ms.date: 05/14/2024
 
 #customer intent: As a .NET developer, I want understand how large language models (LLMs) use tokens so I can add semantic analysis and text generation capabilities to my .NET projects.
 
@@ -32,8 +32,6 @@ This text could be tokenized as:
 - at
 - a
 - cat
-
-The model will add only the first occurrence of the "a" token to its vocabulary. All other occurrences can be represented by that first token.
 
 By having a sufficiently large set of training text, tokenization can compile a vocabulary of many thousands of tokens.
 
@@ -113,6 +111,6 @@ Generative AI services might also be limited regarding the maximum number of tok
 
 ## Related content
 
-- [How Generative AI and LLMs work]<!-- (how-genai-and-llms-work.md) -->
-- [Understanding embeddings]<!-- (understanding-embeddings.md) -->
-- [Working with vector databases]<!-- (working-with-vector-dbs.md) -->
+- [How Generative AI and LLMs work](how-genai-and-llms-work.md)
+- [Understanding embeddings](embeddings.md)
+- [Working with vector databases](vector-databases.md)

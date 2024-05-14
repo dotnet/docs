@@ -1,3 +1,5 @@
+### YamlMime:Landing
+
 title: AI for .NET Developers
 summary: Learn to use AI with .NET. Browse sample code, tutorials, quickstarts, conceptual articles and more.
 
@@ -19,14 +21,12 @@ landingContent:
   # Card 
   - title: Get started
     linkLists:
-      - linkListType: linkListType
+      - linkListType: get-started
         links:
           - text: Develop .NET applications
             url: get-started/dotnet-ai-overview.md
           - text: Explore the .NET AI Ecosystem
             url: get-started/dotnet-ai-overview.md
-      - linkListType: linkListType
-        links:      
           - text: Build an Azure AI chat app with .NET
             url: quickstarts/get-started-azure-openai.md
           - text: Summarize text using an Azure OpenAI chat app
@@ -37,7 +37,7 @@ landingContent:
   # Card
   - title: Essential concepts
     linkLists:
-      - linkListType: linkListType
+      - linkListType: concept
         links:
           - text: How generative AI and LLMs work
             url: conceptual/how-genai-and-llms-work.md
@@ -53,7 +53,7 @@ landingContent:
   # Card (Optional; Remove if not applicable.)
   - title: Common tasks
     linkLists:
-      - linkListType: linkListType
+      - linkListType: how-to-guide
         links:
           - text: Authenticate App Service to Azure OpenAI
             url: how-to/app-service-aoai-auth.md
@@ -69,7 +69,7 @@ landingContent:
   # Card (Optional; Remove if not applicable.)
   - title: Tutorials
     linkLists:
-      - linkListType: linkListType
+      - linkListType: tutorial
         links:
           - text: Scale Azure OpenAI with Azure Container Apps
             url: get-started-app-chat-scaling-with-azure-container-apps.md.md
@@ -81,7 +81,7 @@ landingContent:
   # Card (Optional; Remove if not applicable.)
   - title: Training
     linkLists:
-      - linkListType: linkListType
+      - linkListType: tutorial
         links:
           - text: Fundamentals of Azure OpenAI Service
             url: /training/modules/explore-azure-openai/

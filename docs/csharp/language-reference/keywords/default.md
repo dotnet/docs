@@ -1,6 +1,6 @@
 ---
 description: "default - C# reference"
-title: "default "
+title: "default keyword"
 ms.date: 04/28/2021
 f1_keywords: 
   - "default"

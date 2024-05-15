@@ -1,6 +1,6 @@
 ---
 description: "abstract - C# Reference"
-title: "abstract "
+title: "abstract keyword"
 ms.date: 07/20/2015
 f1_keywords: 
   - "abstract"

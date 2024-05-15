@@ -1,6 +1,6 @@
 ---
 description: "async - C# Reference"
-title: "async "
+title: "async keyword"
 ms.date: 05/22/2017
 f1_keywords:
   - "async_CSharpKeyword"

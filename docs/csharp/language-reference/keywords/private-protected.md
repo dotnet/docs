@@ -1,6 +1,6 @@
 ---
 description: "private protected - C# Reference"
-title: "private protected "
+title: "private protected keyword"
 ms.date: 11/15/2017
 f1_keywords:
   - "privateprotected_CSharpKeyword"

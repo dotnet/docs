@@ -1,5 +1,5 @@
 ---
-title: Pattern matching overview  guide
+title: Pattern matching overview
 description: "Learn about pattern matching expressions in C#"
 ms.date: 03/13/2024
 ---

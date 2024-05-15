@@ -1,5 +1,5 @@
 ---
-title: Classes and objects   Fundamentals tutorial
+title: Classes and objects tutorial
 description: Create your first C# program and explore object oriented concepts
 ms.date: 02/25/2022
 ---

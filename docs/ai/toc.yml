@@ -19,9 +19,9 @@ items:
   items:
   - name: How generative AI and LLMs work
     href: conceptual/how-genai-and-llms-work.md
-  - name: Understanding tokens
+  - name: Understand tokens
     href: conceptual/understanding-tokens.md
-  - name: Embeddings preserve semantic meaning
+  - name: Preserve semantic meaning with embeddings
     href: conceptual/embeddings.md
   - name: Vector databases support semantic memory  
     href: conceptual/vector-databases.md
@@ -43,10 +43,12 @@ items:
     href: how-to/app-service-aoai-auth.md
   - name: Authenticate App Service to a vector database
     href: how-to/app-service-db-auth.md
-  - name: Use Redis for memory storage with the Semantic Kernel SDK
+  - name: Use Redis with Semantic Kernel
     href: how-to/use-redis-for-memory.md
-  - name: Use custom and local AI models with the Semantic Kernel SDK
+  - name: Use custom & local AI models Semantic Kernel
     href: how-to/work-with-local-models.md
+  - name: Work with content filtering
+    href: how-to/content-filtering.md
 - name: Tutorials
   items:
   - name: Get started with the .NET enterprise chat sample

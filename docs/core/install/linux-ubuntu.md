@@ -1,9 +1,9 @@
 ---
 title: .NET and Ubuntu overview
-description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Ubuntu.
+description: Learn about the ways you can install .NET on Ubuntu, either from the built-in package feed, the .NET backports repository, or the Microsoft repository.
 author: adegeo
 ms.author: adegeo
-ms.date: 01/24/2024
+ms.date: 05/14/2024
 ms.custom: updateeachrelease, linux-related-content
 ---
 
@@ -122,11 +122,11 @@ The following table is a list of currently supported .NET releases and the versi
 
 | Ubuntu                                                             | Supported .NET versions | Available in<br>built-in Ubuntu feed | [Available in<br>.NET backports<br>Ubuntu feed](#register-the-ubuntu-net-backports-package-repository) | [Available in<br>Microsoft feed](#register-the-microsoft-package-repository) |
 |--------------------------------------------------------------------|-------------------------|--------------------------------------|--------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| [24.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2404) | 8.0, 7.0, 6.0           | 8.0                                  | 7.0, 6.0                                                                                               | None                                                                         |
-| [23.10](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2310)       | 8.0, 7.0, 6.0           | 8.0, 7.0, 6.0                        | None                                                                                                   | 8.0, 7.0, 6.0                                                                |
-| [22.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2204) | 8.0, 7.0, 6.0           | 8.0, 7.0, 6.0                        | None                                                                                                   | 8.0, 7.0, 6.0, 3.1                                                           |
-| [20.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2004) | 8.0, 7.0, 6.0           | None                                 | None                                                                                                   | 8.0, 7.0. 6.0, 5.0, 3.1, 2.1                                                 |
-| [18.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-1804) | 7.0, 6.0                | None                                 | None                                                                                                   | 7.0. 6.0, 5.0, 3.1, 2.2, 2.1                                                 |
+| [24.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2404) | 8.0, 6.0                | 8.0                                  | 7.0, 6.0                                                                                               | None                                                                         |
+| [23.10](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2310)       | 8.0, 6.0                | 8.0, 7.0, 6.0                        | None                                                                                                   | 8.0, 7.0, 6.0                                                                |
+| [22.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2204) | 8.0, 6.0                | 8.0, 7.0, 6.0                        | None                                                                                                   | 8.0, 7.0, 6.0, 3.1                                                           |
+| [20.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2004) | 8.0, 6.0                | None                                 | None                                                                                                   | 8.0, 7.0. 6.0, 5.0, 3.1, 2.1                                                 |
+| [18.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-1804) | 6.0                     | None                                 | None                                                                                                   | 7.0. 6.0, 5.0, 3.1, 2.2, 2.1                                                 |
 | [16.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-1604) | 6.0                     | None                                 | None                                                                                                   | 6.0, 5.0, 3.1, 3.0, 2.2, 2.1, 2.0                                            |
 
 When an [Ubuntu version](https://wiki.ubuntu.com/Releases) reaches the end of its support period, .NET is no longer supported with that particular Ubuntu version.
@@ -168,7 +168,7 @@ sudo add-apt-repository --remove ppa:dotnet/backports
 
 ### add-apt-repository command not found
 
-The [`add-apt-repository(1)`](https://manpages.ubuntu.com/manpages/en/man1/add-apt-repository.1.html) utility is pre-installed on most Ubuntu installations.
+The [`add-apt-repository(1)`](https://manpages.ubuntu.com/manpages/noble/en/man1/add-apt-repository.1.html) utility is pre-installed on most Ubuntu installations.
 
 If you receive an error message that the `add-apt-repository` command was not found, you have to install the `software-properties-common` package, which provides this command. Open a terminal and run the following commands:
 
@@ -222,9 +222,6 @@ After you've [registered the Microsoft package repository](#register-the-microso
 | **8.0**    | ASP.NET Core | Runtime | `aspnetcore-runtime-8.0` |
 | **8.0**    | .NET         | Runtime | `dotnet-runtime-8.0`     |
 | **8.0**    | .NET         | SDK     | `dotnet-sdk-8.0`         |
-| **7.0**    | ASP.NET Core | Runtime | `aspnetcore-runtime-7.0` |
-| **7.0**    | .NET         | Runtime | `dotnet-runtime-7.0`     |
-| **7.0**    | .NET         | SDK     | `dotnet-sdk-7.0`         |
 | **6.0**    | ASP.NET Core | Runtime | `aspnetcore-runtime-6.0` |
 | **6.0**    | .NET         | Runtime | `dotnet-runtime-6.0`     |
 | **6.0**    | .NET         | SDK     | `dotnet-sdk-6.0`         |
@@ -256,11 +253,11 @@ For more information, see [Uninstall .NET](remove-runtime-sdk-versions.md?pivots
 
 ## Use APT to update .NET
 
-If you installed .NET through a package manager, you can upgrade the package with the `apt upgrade` command. For example, the following commands upgrade the `dotnet-sdk-7.0` package with the latest version:
+If you installed .NET through a package manager, you can upgrade the package with the `apt upgrade` command. For example, the following commands upgrade the `dotnet-sdk-8.0` package with the latest version:
 
 ```bash
 sudo apt update
-sudo apt upgrade dotnet-sdk-7.0
+sudo apt upgrade dotnet-sdk-8.0
 ```
 
 > [!TIP]

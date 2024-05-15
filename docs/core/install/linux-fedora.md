@@ -54,13 +54,13 @@ The following table is a list of currently supported .NET releases and the versi
 
 Older versions of Fedora don't contain .NET in the default package repositories. You can install .NET with the [_dotnet-install.sh_ script](linux-scripted-manual.md#scripted-install), or use Microsoft's repository to install .NET:
 
-1.  First, add the Microsoft signing key to your list of trusted keys.
+01. First, add the Microsoft signing key to your list of trusted keys.
 
     ```bash
     sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
     ```
 
-1.  Next, add the Microsoft package repository. The source of the repository is based on your version of Fedora.
+01. Next, add the Microsoft package repository. The source of the repository is based on your version of Fedora.
 
     | Fedora Version | Package repository |
     | -------------- | ------- |
@@ -79,7 +79,7 @@ Older versions of Fedora don't contain .NET in the default package repositories.
     sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/fedora/31/prod.repo
     ```
 
-1.  Use the `sudo dnf install` command to install a .NET package.
+01. Use the `sudo dnf install` command to install a .NET package.
 
 ## How to install other versions
 

@@ -196,7 +196,7 @@ The .NET templates are available on NuGet, and you can install them like any oth
 
 For example, the .NET 8 SDK includes templates for a console app targeting .NET 8. If you wanted to target .NET Core 3.1, you would need to install the 3.1 template package.
 
-1.  Try creating an app that targets .NET Core 3.1.
+01. Try creating an app that targets .NET Core 3.1.
 
     ```dotnetcli
     dotnet new console --framework netcoreapp3.1
@@ -204,13 +204,13 @@ For example, the .NET 8 SDK includes templates for a console app targeting .NET 
 
     If you see an error message, you need to install the templates.
 
-1.  Install the .NET Core 3.1 project templates.
+01. Install the .NET Core 3.1 project templates.
 
     ```dotnetcli
     dotnet new install Microsoft.DotNet.Common.ProjectTemplates.3.1
     ```
 
-1.  Try creating the app a second time.
+01. Try creating the app a second time.
 
     ```dotnetcli
     dotnet new console --framework netcoreapp3.1

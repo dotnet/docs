@@ -232,7 +232,7 @@ The following example demonstrates the effect of using all the ranges presented 
 
 For more information, see [Indices and ranges](../../tutorials/ranges-indexes.md).
 
-The `..` token is also used as the [spread operator](./collection-expressions.md#spread-element) in a collection expression.
+The `..` token is also used for the [spread element](./collection-expressions.md#spread-element) in a collection expression.
 
 ## Operator overloadability
 

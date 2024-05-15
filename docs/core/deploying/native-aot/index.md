@@ -171,12 +171,6 @@ The publish process analyzes the entire project and its dependencies for possibl
 
 ---
 
-## Build native libraries
-
-Publishing .NET class libraries as Native AOT allows creating libraries that can be consumed from non-.NET programming languages. The produced native library is self-contained and doesn't require a .NET runtime to be installed.
-
-Publishing a class library as Native AOT creates a native library that exposes methods of the class library annotated with <xref:System.Runtime.InteropServices.UnmanagedCallersOnlyAttribute> with a non-null `EntryPoint` field. For more information, see the [native library sample](https://github.com/dotnet/samples/tree/main/core/nativeaot/NativeLibrary) available in the dotnet/samples repository on GitHub.
-
 ## Platform/architecture restrictions
 
 The following table shows supported compilation targets.

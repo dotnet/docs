@@ -25,30 +25,7 @@ ms.author: faisalhafeez
 
 ## Cause
 
-This rule raises a diagnostic when an argument containing a conditional access is passed to the assertion methods below:
-
-- `Assert.IsTrue`
-- `Assert.IsFalse`
-- `Assert.AreEqual`
-- `Assert.AreNotEqual`
-- `Assert.AreSame`
-- `Assert.AreNotSame`
-- `CollectionAssert.AreEqual`
-- `CollectionAssert.AreNotEqual`
-- `CollectionAssert.AreEquivalent`
-- `CollectionAssert.AreNotEquivalent`
-- `CollectionAssert.Contains`
-- `CollectionAssert.DoesNotContain`
-- `CollectionAssert.AllItemsAreNotNull`
-- `CollectionAssert.AllItemsAreUnique`
-- `CollectionAssert.AllItemsAreInstancesOfType`
-- `CollectionAssert.IsSubsetOf`
-- `CollectionAssert.IsNotSubsetOf`
-- `StringAssert.Contains`
-- `StringAssert.StartsWith`
-- `StringAssert.EndsWith`
-- `StringAssert.Matches`
-- `StringAssert.DoesNotMatch`
+This rule raises a diagnostic when an argument containing a conditional access is passed to the `Assert`, `CollectionAssert` or `StringAssert`  assertion methods.
 
 ## Rule description
 

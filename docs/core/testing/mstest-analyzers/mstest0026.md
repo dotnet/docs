@@ -52,6 +52,10 @@ This rule raises a diagnostic when an argument containing a conditional access i
 
 ## Rule description
 
+## How to fix violations
+
+Ensure that arguments do not contain conditional access when passed to the assertion methods.
+
 ```csharp
 Company? company = GetCompany();
 Assert.AreEqual(company?.Name, "Contoso"); // MSTEST0026
@@ -62,10 +66,6 @@ Assert.IsNotNull(company);
 Assert.AreEqual(company.Name, "Contoso");
 StringAssert.Contains(company.Address, "Brazil");
 ```
-
-## How to fix violations
-
-Ensure that arguments do not contain conditional access when passed to the assertion methods.
 
 ## When to suppress warnings
 

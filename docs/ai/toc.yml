@@ -3,24 +3,36 @@ items:
   href: index.yml
 - name: Overview
   href: get-started/dotnet-ai-overview.md
+- name: Quickstarts
+  items:
+  - name: Summarize text
+    href: quickstart-openai-summarize-text.md
+  - name: Build a chat app
+    href: get-started-azure-openai.md
+  - name: Create an app to chat about your data
+    href: quickstart-ai-chat-with-data.md
+  - name: Execute a local .NET function
+    href: quickstart-azure-openai-tool.md
+  - name: Generate images
+    href: quickstart-openai-generate-images.md
 - name: Concepts
   items:
   - name: How generative AI and LLMs work
     href: conceptual/how-genai-and-llms-work.md
-  - name: Understand tokens
+  - name: Understanding tokens
     href: conceptual/understanding-tokens.md
-  - name: Preserve semantic meaning with embeddings
+  - name: Embeddings preserve semantic meaning
     href: conceptual/embeddings.md
+  - name: Vector databases support semantic memory  
+    href: conceptual/vector-databases.md
   - name: Prompt engineering
     href: conceptual/prompt-engineering-dotnet.md
-  - name: Retrieval-augmented generation
-    href: conceptual/rag.md
-  - name: Vector databases and semantic memory  
-    href: conceptual/vector-databases.md
   - name: Chain of thought prompting
     href: conceptual/chain-of-thought-prompting.md
   - name: Zero-shot and few-shot learning
     href: conceptual/zero-shot-learning.md
+  - name: Retrieval-augmented generation
+    href: conceptual/rag.md
   - name: Understand OpenAI function calling
     href: conceptual/understanding-openai-functions.md
   - name: Agents and copilots
@@ -31,13 +43,15 @@ items:
     href: how-to/app-service-aoai-auth.md
   - name: Authenticate App Service to a vector database
     href: how-to/app-service-db-auth.md
-  - name: Use Redis with Semantic Kernel
+  - name: Use Redis for memory storage with the Semantic Kernel SDK
     href: how-to/use-redis-for-memory.md
-  - name: Use custom & local AI models with Semantic Kernel
+  - name: Use custom and local AI models with the Semantic Kernel SDK
     href: how-to/work-with-local-models.md
-  - name: Work with content filtering
-    href: how-to/content-filtering.md
 - name: Tutorials
   items:
+  - name: Get started with the .NET enterprise chat sample
+    href: get-started-app-chat-template.md
   - name: Implement RAG using vector search
-    href: tutorials/tutorial-ai-vector-search.md
+    href: tutorial-ai-vector-search.md
+  - name: Scale Azure OpenAI with Azure Container Apps
+    href: get-started-app-chat-scaling-with-azure-container-apps.md

@@ -91,3 +91,5 @@ The following table is for earlier Windows and Windows Server versions for Secur
 | .NET Framework 2.0, 3.0 | [5036625](https://support.microsoft.com/kb/5036625) |
 | .NET Framework 3.5 SP1 | [5036637](https://support.microsoft.com/kb/5036637) |
 | .NET Framework 4.6.2 | [5037917](https://support.microsoft.com/kb/5037917) |
+
+The operating system row lists a KB which will be used for update offering purposes. When the operating system KB is offered, the applicability logic will determine the specific .NET Framework update(s) will be installed. Updates for individual .NET Framework versions will be installed based on the version of .NET Framework that is already present on the device. Because of this the operating system KB is not expected to be listed as installed updates on the device. The expected update to be installed are the .NET Framework specific version updates listed in the table above.

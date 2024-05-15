@@ -26,3 +26,4 @@ Identifier | Name | Description
 [MSTEST0017](mstest0017.md) | AssertionArgsShouldBePassedInCorrectOrder | Assertion arguments should be passed in the correct order
 [MSTEST0023](mstest0023.md) | DoNotNegateBooleanAssertionAnalyzer | Do not negate boolean assertions
 [MSTEST0024](mstest0024.md) | DoNotStoreStaticTestContextAnalyzer | Do not store TestContext in a static member
+[MSTEST0026](mstest0026.md) | AssertionArgsShouldAvoidConditionalAccessRuleId | Avoid conditional access in assertions

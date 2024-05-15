@@ -5,7 +5,7 @@ namespace scl;
 
 class Program
 {
-    static int Main(string[] args)
+    static async Task<int> Main(string[] args)
     {
         var fileOption = new Option<FileInfo?>(
             name: "--file",

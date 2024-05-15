@@ -130,17 +130,6 @@ updates:
         patterns:
           - "*" # Prefer a single PR per solution update.
   - package-ecosystem: "nuget"
-    directory: "/docs/csharp/programming-guide/concepts/linq/snippets" #linq-snippets.sln
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-    groups:
-      # Group .NET updates together for solutions.
-      dotnet:
-        patterns:
-          - "*" # Prefer a single PR per solution update.
-  - package-ecosystem: "nuget"
     directory: "/docs/csharp/roslyn-sdk/snippets/source-generators" #source-generators.sln
     schedule:
       interval: "weekly"
@@ -329,17 +318,6 @@ updates:
           - "*" # Prefer a single PR per solution update.
   - package-ecosystem: "nuget"
     directory: "/samples/snippets/core/tutorials/netcore-hosting/csharp/HostWithHostFxr" #HostWithHostFxr.sln
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-    groups:
-      # Group .NET updates together for solutions.
-      dotnet:
-        patterns:
-          - "*" # Prefer a single PR per solution update.
-  - package-ecosystem: "nuget"
-    directory: "/samples/snippets/csharp/concepts/linq" #LinqSamples.sln
     schedule:
       interval: "weekly"
       day: "wednesday"
@@ -1846,6 +1824,17 @@ updates:
         patterns:
           - "*" # Prefer a single PR per project update.
   - package-ecosystem: "nuget"
+    directory: "/docs/csharp/linq/snippets/HowToBuildDynamicQueries" #HowToBuildDynamicQueries.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+    groups:
+      # Group .NET updates together for projects.
+      dotnet:
+        patterns:
+          - "*" # Prefer a single PR per project update.
+  - package-ecosystem: "nuget"
     directory: "/docs/csharp/roslyn-sdk/snippets/source-generators/SourceGenerator" #SourceGenerator.csproj
     schedule:
       interval: "weekly"
@@ -1935,6 +1924,17 @@ updates:
           - "*" # Prefer a single PR per project update.
   - package-ecosystem: "nuget"
     directory: "/docs/framework/migration-guide/snippets/visual-basic" #FrameworkVersions.vbproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+    groups:
+      # Group .NET updates together for projects.
+      dotnet:
+        patterns:
+          - "*" # Prefer a single PR per project update.
+  - package-ecosystem: "nuget"
+    directory: "/docs/framework/windows-services/snippets/MyNewService/csharp" #Project.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"

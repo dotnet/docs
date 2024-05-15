@@ -37,6 +37,9 @@ The following code exemplifies how to bind the configuration section to the opti
 
 :::code source="snippets/configuration/console-validation-gen/Program.cs":::
 
+> [!TIP]
+> When AOT compilation is enabled by including `<PublishAot>true</PublishAot>` in the _.csproj_ file, the code might generate warnings such as [IL2025](../deploying/trimming/trim-warnings/il2025.md) and [IL3050](../deploying/native-aot/warnings/il3050.md). To mitigate these warnings, it's recommended to use the configuration source generator. To enable the configuration source generator, add the property `<EnableConfigurationBindingGenerator>true</EnableConfigurationBindingGenerator>` to the project file.
+
 By leveraging compile-time source generation for options validation, you can generate performance-optimized validation code and eliminate the need for reflection, resulting in smoother AOT-compatible app building. The following code demonstrates how to use the options validation source generator:
 
 :::code source="snippets/configuration/console-validation-gen/ValidateSettingsOptions.cs":::

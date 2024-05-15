@@ -45,7 +45,9 @@ The following restrictions apply to collectible assemblies:
 
 - **Static references**
 
-  Types in an ordinary dynamic assembly cannot have static references to types that are defined in a collectible assembly. For example, if you define an ordinary type that inherits from a type in a collectible assembly, a <xref:System.NotSupportedException> exception is thrown. A type in a collectible assembly can have static references to a type in another collectible assembly, but this extends the lifetime of the referenced assembly to the lifetime of the referencing assembly.
+   Types in an ordinary dynamic assembly cannot have static references to types that are defined in a collectible assembly. For example, if you define an ordinary type that inherits from a type in a collectible assembly, a <xref:System.NotSupportedException> exception is thrown. A type in a collectible assembly can have static references to a type in another collectible assembly, but this extends the lifetime of the referenced assembly to the lifetime of the referencing assembly.
+
+The following restrictions apply to collectible assemblies in .NET Framework:
 
 - **COM interop**
 
@@ -70,6 +72,12 @@ The following restrictions apply to collectible assemblies:
 - **Thread-static data**
 
    Thread-static variables aren't supported.
+
+The following restrictions apply to collectible assemblies in .NET Framework and .NET versions prior to .NET 9:
+
+- **Static fields with `FixedAddressValueTypeAttribute`**
+
+   Static fields that are defined in collectible assemblies cannot have the <xref:System.Runtime.CompilerServices.FixedAddressValueTypeAttribute> attribute applied.
 
 ## See also
 

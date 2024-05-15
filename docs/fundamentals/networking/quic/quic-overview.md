@@ -314,7 +314,7 @@ The sample usage of `QuicStream` in client scenario:
 
 ```csharp
 // Consider connection from the connection example, open a bidirectional stream.
-await using var stream = await connection.OpenStreamAsync(QuicStreamType.Bidirectional, cancellationToken);
+await using var stream = await connection.OpenOutboundStreamAsync(QuicStreamType.Bidirectional, cancellationToken);
 
 // Send some data.
 await stream.WriteAsync(data, cancellationToken);
@@ -338,7 +338,7 @@ And the sample usage of `QuicStream` in server scenario:
 
 ```csharp
 // Consider connection from the connection example, accept a stream.
-await using var stream = await connection.AcceptStreamAsync(cancellationToken);
+await using var stream = await connection.AcceptInboundStreamAsync(cancellationToken);
 
 if (stream.Type != QuicStreamType.Bidirectional)
 {

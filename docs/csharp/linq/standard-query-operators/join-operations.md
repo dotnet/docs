@@ -124,7 +124,7 @@ The first example in this article shows you how to perform a group join. The sec
 
 ### Group join
 
-The following example performs a group join of objects of type `Department` and `Student` based on the `Deoartment.ID` matching the `Student.DepartmentID` property. Unlike a non-group join, which produces a pair of elements for each match, the group join produces only one resulting object for each element of the first collection, which in this example is a `Department` object. The corresponding elements from the second collection, which in this example are `Student` objects, are grouped into a collection. Finally, the result selector function creates an anonymous type for each match that consists of `Department.Name` and a collection of `Student` objects.
+The following example performs a group join of objects of type `Department` and `Student` based on the `Department.ID` matching the `Student.DepartmentID` property. Unlike a non-group join, which produces a pair of elements for each match, the group join produces only one resulting object for each element of the first collection, which in this example is a `Department` object. The corresponding elements from the second collection, which in this example are `Student` objects, are grouped into a collection. Finally, the result selector function creates an anonymous type for each match that consists of `Department.Name` and a collection of `Student` objects.
 
 :::code language="csharp" source="./snippets/standard-query-operators/GroupJoins.cs" id="GroupJoinQuery":::
 

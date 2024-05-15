@@ -1,5 +1,5 @@
 ---
-title: "How to define value equality for a class or struct - C# Programming Guide"
+title: "How to define value equality for a class or struct "
 description: Learn how to define value equality for a class or struct. See code examples and view available resources.
 ms.topic: how-to
 ms.date: 03/26/2021

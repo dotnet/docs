@@ -1,5 +1,5 @@
 ---
-title: Use patterns in objects - C# tutorial
+title: Use patterns in objects  tutorial
 description: This tutorial teaches you techniques to use pattern matching in class members to create better models for object behavior
 ms.date: 11/05/2020
 ---

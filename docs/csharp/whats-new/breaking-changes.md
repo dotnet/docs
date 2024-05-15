@@ -1,5 +1,5 @@
 ---
-title: Breaking changes in the C# compiler
+title: Breaking changes in the compiler
 description: Find any breaking changes in the C# compiler that you're using.
 ms.topic: troubleshooting
 ms.date: 03/21/2022

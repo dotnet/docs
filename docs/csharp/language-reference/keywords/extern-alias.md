@@ -1,6 +1,6 @@
 ---
 description: "extern alias - C# Reference"
-title: "extern alias - C# Reference"
+title: "extern alias "
 ms.date: 07/20/2015
 f1_keywords: 
   - "alias_CSharpKeyword"

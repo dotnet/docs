@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Creating and Using Dynamic Objects in C#"
+title: "Walkthrough: Creating and Using Dynamic Objects"
 description: Learn how to create and use dynamic objects in this walkthrough. Create a custom dynamic object and a project that uses an 'IronPython' library.
 ms.date: 02/17/2023
 helpviewer_keywords:

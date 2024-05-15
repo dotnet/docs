@@ -1,6 +1,6 @@
 ---
 description: "event - C# Reference"
-title: "event - C# Reference"
+title: "event "
 ms.date: 07/20/2015
 f1_keywords:
   - "event"

@@ -1,6 +1,6 @@
 ---
 description: "ascending - C# Reference"
-title: "ascending - C# Reference"
+title: "ascending "
 ms.date: 07/20/2015
 f1_keywords: 
   - "ascending"

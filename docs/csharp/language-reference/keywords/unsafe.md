@@ -1,6 +1,6 @@
 ---
 description: "unsafe keyword - C# Reference"
-title: "unsafe keyword - C# Reference"
+title: "unsafe keyword "
 ms.date: 07/20/2015
 f1_keywords:
   - "unsafe_CSharpKeyword"

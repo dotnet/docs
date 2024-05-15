@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Writing LINQ Queries in C#"
+title: "Tutorial: Writing LINQ Queries"
 description: This walkthrough shows how C# language features are used in LINQ query expressions.
 ms.date: 04/22/2024
 ms.topic: tutorial

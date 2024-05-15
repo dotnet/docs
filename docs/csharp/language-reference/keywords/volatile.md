@@ -1,6 +1,6 @@
 ---
 description: "volatile - C# Reference"
-title: "volatile - C# Reference"
+title: "volatile "
 ms.date: 10/24/2018
 f1_keywords: 
   - "volatile_CSharpKeyword"

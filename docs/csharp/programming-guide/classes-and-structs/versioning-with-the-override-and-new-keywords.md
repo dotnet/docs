@@ -1,5 +1,5 @@
 ---
-title: "Versioning with the Override and New Keywords - C# Programming Guide"
+title: "Versioning with the Override and New Keywords "
 description: Learn about versioning for base and derived classes in C#, and how to specify whether a method is intended to override or hide an inherited method.
 ms.date: 07/20/2015
 helpviewer_keywords: 

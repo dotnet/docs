@@ -1,6 +1,6 @@
 ---
 description: Learn how to create custom event accessors using add keyword in C#
-title: "add - C# Reference"
+title: "add "
 ms.date: 07/20/2015
 f1_keywords: 
   - "add_CSharpKeyword"

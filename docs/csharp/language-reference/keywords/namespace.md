@@ -1,6 +1,6 @@
 ---
 description: "namespace keyword - C# Reference"
-title: "namespace keyword - C# Reference"
+title: "namespace keyword "
 ms.date: 08/19/2021
 f1_keywords: 
   - "namespace_CSharpKeyword"

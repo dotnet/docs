@@ -1,5 +1,5 @@
 ---
-title: "Attributes interpreted by the C# compiler: Nullable static analysis"
+title: "Attributes interpreted by the compiler: Nullable static analysis"
 ms.date: 05/20/2022
 description: Learn about attributes that are interpreted by the compiler to provide better static analysis for nullable and non-nullable reference types.
 ---

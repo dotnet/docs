@@ -1,6 +1,6 @@
 ---
 description: "Learn the different C# preprocessor directives that control conditional compilation, warnings, nullable analysis, and more"
-title: "C# preprocessor directives"
+title: "Preprocessor directives"
 ms.date: 01/30/2023
 f1_keywords:
   - "cs.preprocessor"

@@ -1,5 +1,5 @@
 ---
-title: "Differences Between C++ Templates and C# Generics - C# Programming Guide"
+title: "Differences Between C++ Templates and C# Generics "
 description: Learn about the differences between C++ templates and C# generics. Both are language features that provide support for parameterized types.
 ms.date: 07/20/2015
 helpviewer_keywords:

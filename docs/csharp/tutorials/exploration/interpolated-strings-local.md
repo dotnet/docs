@@ -1,5 +1,5 @@
 ---
-title: String interpolation - C# tutorial
+title: String interpolation  tutorial
 description: This tutorial shows you how to use the C# string interpolation feature to include formatted expression results in a larger string.
 ms.date: 10/23/2018
 ---

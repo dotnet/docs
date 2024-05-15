@@ -1,5 +1,5 @@
 ---
-title: "Extension Methods - C# Programming Guide"
+title: "Extension Methods "
 description: Extension methods in C# enable you to add methods to existing types without creating a new derived type, recompiling, or otherwise modifying the original type.
 ms.date: 03/15/2024
 helpviewer_keywords: 

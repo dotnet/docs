@@ -1,6 +1,6 @@
 ---
 description: "readonly keyword - C# Reference"
-title: "readonly keyword - C# Reference"
+title: "readonly keyword "
 ms.date: 01/09/2024
 f1_keywords:
   - "readonly_CSharpKeyword"

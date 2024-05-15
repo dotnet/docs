@@ -1,5 +1,5 @@
 ---
-title: "Indexers - C# Programming Guide"
+title: "Indexers "
 description: Indexers in C# allow class or struct instances to be indexed like arrays. You can set or get the indexed value without specifying a type or instance member.
 ms.date: 03/10/2017
 f1_keywords: 

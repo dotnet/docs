@@ -1,5 +1,5 @@
 ---
-title: Top-level statements - C# tutorial
+title: Top-level statements  tutorial
 description: This tutorial shows how you can use top-level statements to experiment and prove concepts while exploring your ideas
 ms.date: 11/14/2023
 ---

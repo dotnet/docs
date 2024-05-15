@@ -1,6 +1,6 @@
 ---
 description: "virtual - C# Reference"
-title: "virtual - C# Reference"
+title: "virtual "
 ms.date: 07/20/2015
 f1_keywords: 
   - "virtual_CSharpKeyword"

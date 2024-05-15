@@ -1,5 +1,5 @@
 ---
-title: "How to concatenate multiple strings (C# Guide)"
+title: "How to concatenate multiple strings "
 description: There are multiple ways to concatenate strings in C#. Learn the options and the reasons behind different choices.
 ms.date: 03/15/2024
 helpviewer_keywords: 

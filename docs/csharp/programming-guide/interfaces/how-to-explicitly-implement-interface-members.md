@@ -1,5 +1,5 @@
 ---
-title: "How to explicitly implement interface members - C# Programming Guide"
+title: "How to explicitly implement interface members "
 description: Learn how to explicitly implement interface members in this C# example. The members are accessed through the interface instance.
 ms.date: 07/20/2015
 ms.topic: how-to

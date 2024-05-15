@@ -1,5 +1,5 @@
 ---
-title: Version and update considerations for C# developers
+title: Version and update considerations for developers
 description: Introducing new languages features in your library can impact the code that uses it.
 ms.topic: language-reference
 ms.date: 06/26/2023

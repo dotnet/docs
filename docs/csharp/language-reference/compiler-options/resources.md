@@ -1,6 +1,6 @@
 ---
 description: "C# Compiler Options to control Windows resources embedded in a dotnet application."
-title: "C# Compiler Options - resource options"
+title: "Compiler Options - resource options"
 ms.date: 03/12/2021
 f1_keywords: 
   - "cs.build.options"

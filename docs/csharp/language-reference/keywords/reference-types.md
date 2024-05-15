@@ -1,6 +1,6 @@
 ---
 description: "Reference types - C# Reference"
-title: "Reference types - C# Reference"
+title: "Reference types "
 ms.date: 07/20/2015
 f1_keywords: 
   - "cs.referencetypes"

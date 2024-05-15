@@ -1,5 +1,5 @@
 ---
-title: "Records - C# reference"
+title: "Records "
 description: Learn about the record type in C#
 ms.date: 05/25/2023
 f1_keywords: 

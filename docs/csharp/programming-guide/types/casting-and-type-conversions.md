@@ -1,5 +1,5 @@
 ---
-title: "Casting and type conversions - C# Programming Guide"
+title: "Casting and type conversions "
 description: Learn about casting and type conversions, such as implicit, explicit (casts), and user-defined conversions.
 ms.date: 03/15/2024
 helpviewer_keywords: 

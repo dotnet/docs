@@ -1,6 +1,6 @@
 ---
 description: "init keyword - C# Reference"
-title: "init keyword - C# Reference"
+title: "init keyword "
 ms.date: 12/06/2023
 f1_keywords: 
   - "init"

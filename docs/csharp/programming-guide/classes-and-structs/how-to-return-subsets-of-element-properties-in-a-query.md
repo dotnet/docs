@@ -1,5 +1,5 @@
 ---
-title: "How to return subsets of element properties in a query - C# Programming Guide"
+title: "How to return subsets of element properties in a query "
 description: Learn how to use an anonymous type in a query expression in C# to return some of the properties of each source element.
 ms.date: 07/20/2015
 helpviewer_keywords: 

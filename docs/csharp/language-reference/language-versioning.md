@@ -1,5 +1,5 @@
 ---
-title: C# language versioning - C# Guide
+title: Language versioning
 description: Learn about how the C# language version is determined based on your project and the reasons behind that choice.
 ms.custom: "updateeachrelease"
 ms.date: 10/30/2023

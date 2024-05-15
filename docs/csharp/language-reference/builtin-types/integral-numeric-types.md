@@ -1,5 +1,5 @@
 ---
-title: "Integral numeric types - C# reference"
+title: "Integral numeric types "
 titleSuffix: ""
 description: "Learn the range, storage size, and uses for each of the integral numeric types."
 ms.date: 06/17/2022

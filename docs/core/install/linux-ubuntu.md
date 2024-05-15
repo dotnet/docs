@@ -168,7 +168,7 @@ sudo add-apt-repository --remove ppa:dotnet/backports
 
 ### add-apt-repository command not found
 
-The [`add-apt-repository(1)`](https://manpages.ubuntu.com/manpages/en/man1/add-apt-repository.1.html) utility is pre-installed on most Ubuntu installations.
+The [`add-apt-repository(1)`](https://manpages.ubuntu.com/manpages/noble/en/man1/add-apt-repository.1.html) utility is pre-installed on most Ubuntu installations.
 
 If you receive an error message that the `add-apt-repository` command was not found, you have to install the `software-properties-common` package, which provides this command. Open a terminal and run the following commands:
 

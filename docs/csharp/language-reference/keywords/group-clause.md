@@ -1,6 +1,6 @@
 ---
 description: "group clause - C# Reference"
-title: "group clause "
+title: "group clause"
 ms.date: 07/20/2015
 f1_keywords: 
   - "group"

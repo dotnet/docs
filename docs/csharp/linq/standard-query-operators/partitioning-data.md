@@ -1,5 +1,5 @@
 ---
-title: "Partitioning data "
+title: "Partitioning data"
 description: Learn how to partition data in LINQ. View an illustration showing the results of partitioning operations.
 ms.date: 02/14/2024
 ---

@@ -1,6 +1,6 @@
 ---
 description: "override modifier - C# Reference"
-title: "override modifier "
+title: "override modifier"
 ms.date: 10/22/2020
 f1_keywords: 
   - "override"

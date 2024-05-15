@@ -1,5 +1,5 @@
 ---
-title: "Constraints on type parameters "
+title: "Constraints on type parameters"
 description: Learn about constraints on type parameters. Constraints tell the compiler what capabilities a type argument must have.
 ms.date: 03/11/2024
 f1_keywords:

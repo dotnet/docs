@@ -1,5 +1,5 @@
 ---
-title: "How to implement and call a custom extension method "
+title: "How to implement and call a custom extension method"
 description: Learn how to implement extension methods for any .NET type. Client code can use your methods by adding a reference to a DLL and adding a using directive.
 ms.date: 07/20/2015
 helpviewer_keywords: 

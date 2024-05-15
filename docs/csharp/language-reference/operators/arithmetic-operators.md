@@ -1,5 +1,5 @@
 ---
-title: "Arithmetic operators "
+title: "Arithmetic operators"
 description: "Learn about C# operators that perform multiplication, division, remainder, addition, and subtraction operations with numeric types."
 ms.date: 07/25/2022
 author: pkulikov

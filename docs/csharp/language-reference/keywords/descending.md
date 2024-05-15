@@ -1,6 +1,6 @@
 ---
 description: "descending contextual keyword - C# Reference"
-title: "descending contextual keyword "
+title: "descending contextual keyword"
 ms.date: 07/20/2015
 f1_keywords: 
   - "descending"

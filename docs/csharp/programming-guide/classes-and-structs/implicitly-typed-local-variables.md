@@ -1,5 +1,5 @@
 ---
-title: "Implicitly typed local variables "
+title: "Implicitly typed local variables"
 description: The var keyword in C# instructs the compiler to infer the type of the variable from the expression on the right side of the initialization statement.
 ms.date: 07/20/2015
 helpviewer_keywords: 

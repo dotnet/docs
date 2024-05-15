@@ -1,5 +1,5 @@
 ---
-title: "Enumeration types "
+title: "Enumeration types"
 description: "Learn about C# enumeration types that represent a choice or a combination of choices"
 ms.date: 12/13/2019
 f1_keywords:

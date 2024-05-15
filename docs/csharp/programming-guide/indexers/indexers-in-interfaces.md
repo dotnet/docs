@@ -1,5 +1,5 @@
 ---
-title: "Indexers in Interfaces "
+title: "Indexers in Interfaces"
 description: Indexers can be declared on an interface in C#. Learn how accessors of interface indexers differ from the accessors of class indexers.
 ms.date: 02/08/2020
 helpviewer_keywords: 

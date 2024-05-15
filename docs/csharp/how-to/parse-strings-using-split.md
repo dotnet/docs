@@ -1,5 +1,5 @@
 ---
-title: "Divide strings using String.Split "
+title: "Divide strings using String.Split"
 description: The Split method returns an array of strings split from a set of delimiters. It's an easy way to extract substrings from a string.
 ms.date: 03/06/2024
 helpviewer_keywords:

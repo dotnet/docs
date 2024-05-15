@@ -1,6 +1,6 @@
 ---
 description: "static modifier - C# Reference"
-title: "static modifier "
+title: "static modifier"
 ms.date: 09/25/2020
 f1_keywords: 
   - "static"

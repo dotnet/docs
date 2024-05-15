@@ -1,6 +1,6 @@
 ---
 description: "when contextual keyword - C# reference"
-title: "when contextual keyword "
+title: "when contextual keyword"
 ms.date: 03/07/2017
 f1_keywords: 
   - "when_CSharpKeyword"

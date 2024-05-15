@@ -1,6 +1,6 @@
 ---
 description: "where clause - C# Reference"
-title: "where clause "
+title: "where clause"
 ms.date: 07/20/2015
 f1_keywords: 
   - "whereclause_CSharpKeyword"

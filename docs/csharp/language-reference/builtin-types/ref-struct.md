@@ -1,5 +1,5 @@
 ---
-title: "ref struct types "
+title: "ref struct types"
 description: Learn about the ref struct type in C#
 ms.date: 10/12/2022
 ---

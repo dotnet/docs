@@ -1,6 +1,6 @@
 ---
 description: "const keyword - C# Reference"
-title: "const keyword "
+title: "const keyword"
 ms.date: 06/20/2021
 f1_keywords: 
   - "const_CSharpKeyword"

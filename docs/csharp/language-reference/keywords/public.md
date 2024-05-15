@@ -1,6 +1,6 @@
 ---
 description: "public keyword - C# Reference"
-title: "public keyword "
+title: "public keyword"
 ms.date: 07/20/2015
 f1_keywords:
   - "public"

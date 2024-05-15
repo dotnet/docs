@@ -1,5 +1,5 @@
 ---
-title: "Statements "
+title: "Statements"
 description: Learn about statements in C# programming. See a list of statement types, and view code examples and additional resources.
 ms.date: 07/20/2015
 helpviewer_keywords: 

@@ -1,5 +1,5 @@
 ---
-title: "How to initialize objects by using an object initializer "
+title: "How to initialize objects by using an object initializer"
 description: Learn how to use object initializers to initialize type objects in C# without invoking a constructor. Use an object initializer to define an anonymous type.
 ms.date: 12/20/2018
 helpviewer_keywords: 

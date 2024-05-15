@@ -1,6 +1,6 @@
 ---
 description: Learn about unmanaged types in C#
-title: "Unmanaged types "
+title: "Unmanaged types"
 ms.date: 09/06/2019
 helpviewer_keywords: 
   - "unmanaged type [C#]"

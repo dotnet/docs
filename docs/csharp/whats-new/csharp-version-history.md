@@ -20,7 +20,7 @@ This article provides a history of each major release of the C# language. The C#
 The following features were added in C# 12:
 
 - [Primary constructors](./csharp-12.md#primary-constructors) - You can create primary constructors in any `class` or `struct` type.
-- [Collection expressions](./csharp-12.md#collection-expressions) - A new syntax to specify collection expressions, including the spread operator, (`..`), to expand any collection.
+- [Collection expressions](./csharp-12.md#collection-expressions) - A new syntax to specify collection expressions, including the spread element, (`..e`), to expand any collection.
 - [Inline arrays](./csharp-12.md#inline-arrays) - Inline arrays enable you to create an array of fixed size in a `struct` type.
 - [Optional parameters in lambda expressions](./csharp-12.md#default-lambda-parameters) - You can define default values for parameters on lambda expressions.
 - [`ref readonly` parameters](./csharp-12.md#ref-readonly-parameters) - `ref readonly` parameters enables more clarity for APIs that might be using `ref` parameters or `in` parameters.

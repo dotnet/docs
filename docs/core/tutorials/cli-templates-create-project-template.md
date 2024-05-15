@@ -94,7 +94,7 @@ Open the _template.json_ with your favorite text editor and paste in the followi
   "identity": "ExampleTemplate.AsyncProject",
   "name": "Example templates: async project",
   "shortName": "consoleasync",
-  "sourceName":"ExampleTemplate.AsyncProject",
+  "sourceName":"consoleasync",
   "tags": {
     "language": "C#",
     "type": "project"

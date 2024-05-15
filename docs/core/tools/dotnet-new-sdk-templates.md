@@ -44,7 +44,7 @@ The templates that ship with the .NET SDK have the following additional options:
 
   Sets the `LangVersion` property in the created project file. For example, use `--langVersion 7.3` to use C# 7.3. Not supported for F#. Available since .NET Core 2.2 SDK.
 
-  For a list of default C# versions, see [Defaults](../../csharp/language-reference/configure-language-version.md#defaults).
+  For a list of default C# versions, see [Defaults](../../csharp/language-reference/language-versioning.md#defaults).
 
 - **`--no-restore`**
 
@@ -68,7 +68,7 @@ The templates that ship with the .NET SDK have the following additional options:
 
   Sets the `LangVersion` property in the created project file. For example, use `--langVersion 7.3` to use C# 7.3. Not supported for F#. Available since .NET Core 2.2 SDK.
 
-  For a list of default C# versions, see [Defaults](../../csharp/language-reference/configure-language-version.md#defaults).
+  For a list of default C# versions, see [Defaults](../../csharp/language-reference/language-versioning.md#defaults).
 
 - **`--no-restore`**
 
@@ -86,7 +86,7 @@ The templates that ship with the .NET SDK have the following additional options:
 
   Sets the `LangVersion` property in the created project file. For example, use `--langVersion 7.3` to use C# 7.3.
 
-  For a list of default C# versions, see [Defaults](../../csharp/language-reference/configure-language-version.md#defaults).
+  For a list of default C# versions, see [Defaults](../../csharp/language-reference/language-versioning.md#defaults).
 
 - **`--no-restore`**
 
@@ -100,7 +100,7 @@ The templates that ship with the .NET SDK have the following additional options:
 
   Sets the `LangVersion` property in the created project file. For example, use `--langVersion 7.3` to use C# 7.3.
 
-  For a list of default C# versions, see [Defaults](../../csharp/language-reference/configure-language-version.md#defaults).
+  For a list of default C# versions, see [Defaults](../../csharp/language-reference/language-versioning.md#defaults).
 
 - **`--no-restore`**
 

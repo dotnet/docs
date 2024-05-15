@@ -4,10 +4,10 @@ using System.Runtime.InteropServices;
 
 namespace PInvokeSamples
 {
-    public static class Program
+    public static partial class Program
     {
-        [DllImport("nativedep")]
-        private static extern int ExportedFunction();
+        [LibraryImport("nativedep")]
+        private static partial int ExportedFunction();
 
         public static void Main(string[] args)
         {

@@ -125,5 +125,5 @@ During training, the complete sequence of tokens is known, but all tokens that c
 ## Related content
 
 - [Understand Tokens](understanding-tokens.md)
-- [Prompt engineering](prompt-engineering-dotnet)
+- [Prompt engineering](prompt-engineering-dotnet.md)
 - [Large language models](/training/modules/fundamentals-generative-ai/3-language%20models)

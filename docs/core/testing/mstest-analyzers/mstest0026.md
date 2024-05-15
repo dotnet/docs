@@ -11,7 +11,7 @@ helpviewer_keywords:
 author: fhnaseer
 ms.author: faisalhafeez
 ---
-# MSTEST0025: Avoid conditional access in assertions
+# MSTEST0026: Avoid conditional access in assertions
 
 | Property                            | Value                                                 |
 |-------------------------------------|-------------------------------------------------------|
@@ -25,7 +25,7 @@ ms.author: faisalhafeez
 
 ## Cause
 
-This rule raises a diagnostic when an argument contains a conditional access in the assertion methods below:
+This rule raises a diagnostic when an argument containing a conditional access is passed to the assertion methods below:
 
 - `Assert.IsTrue`
 - `Assert.IsFalse`
@@ -54,7 +54,7 @@ This rule raises a diagnostic when an argument contains a conditional access in 
 
 ## How to fix violations
 
-Ensure that arguments do not contain conditional access to the methods below:
+Ensure that arguments do not contain conditional access when passed to the methods below:
 
 - `Assert.IsTrue`
 - `Assert.IsFalse`

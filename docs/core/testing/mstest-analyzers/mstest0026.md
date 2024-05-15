@@ -16,8 +16,8 @@ ms.author: faisalhafeez
 | Property                            | Value                                                 |
 |-------------------------------------|-------------------------------------------------------|
 | **Rule ID**                         | MSTEST0026                                            |
-| **Title**                           | Avoid conditional access in assertions |
-| **Category**                        | Usage                                                |
+| **Title**                           | Avoid conditional access in assertions                |
+| **Category**                        | Usage                                                 |
 | **Fix is breaking or non-breaking** | Non-breaking                                          |
 | **Enabled by default**              | Yes                                                   |
 | **Default severity**                | Info                                                  |

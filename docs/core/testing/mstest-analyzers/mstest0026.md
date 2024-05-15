@@ -25,13 +25,7 @@ ms.author: faisalhafeez
 
 ## Cause
 
-This rule raises a diagnostic when an argument containing a conditional access is passed to the `Assert`, `CollectionAssert` or `StringAssert`  assertion methods.
-
-## Rule description
-
-## How to fix violations
-
-Ensure that arguments do not contain conditional access when passed to the methods below:
+This rule raises a diagnostic when an argument containing a conditional access is passed to the `Assert`, `CollectionAssert` or `StringAssert`  assertion methods below:
 
 - `Assert.IsTrue`
 - `Assert.IsFalse`
@@ -55,6 +49,23 @@ Ensure that arguments do not contain conditional access when passed to the metho
 - `StringAssert.EndsWith`
 - `StringAssert.Matches`
 - `StringAssert.DoesNotMatch`
+
+## Rule description
+
+```csharp
+Company? company = GetCompany();
+Assert.AreEqual(company?.Name, "Contoso"); // MSTEST0026
+StringAssert.Contains(company?.Address, "Brazil"); // MSTEST0026
+
+// Fixed code
+Assert.IsNotNull(company);
+Assert.AreEqual(company.Name, "Contoso");
+StringAssert.Contains(company.Address, "Brazil");
+```
+
+## How to fix violations
+
+Ensure that arguments do not contain conditional access when passed to the assertion methods.
 
 ## When to suppress warnings
 

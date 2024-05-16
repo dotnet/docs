@@ -29,7 +29,7 @@ The .NET 9 SDK includes improvements to the terminal logger, tool roll-forward, 
 
 ## .NET Aspire
 
-.NET Aspire is an opinionated, cloud-ready stack for building observable, production ready, distributed applications.​ .NET Aspire is delivered through a collection of NuGet packages that handle specific cloud-native concerns, and is available in preview for .NET 9. For more information, see [.NET Aspire (Preview)](/dotnet/aspire).
+.NET Aspire is an opinionated, cloud-ready stack for building observable, production ready, distributed applications.​ .NET Aspire is delivered through a collection of NuGet packages that handle specific cloud-native concerns, and is available in preview for .NET 9. For more information, see [.NET Aspire](/dotnet/aspire).
 
 ## ASP.NET Core
 

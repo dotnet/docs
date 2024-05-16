@@ -4,8 +4,6 @@ description: "Learn how to authenticate and authorize your App Service .NET appl
 author: haywoodsloan
 ms.topic: how-to
 ms.date: 04/24/2024
-ms.service: dotnet
-ms.subservice: intelligent-apps
 zone_pivot_groups: azure-interface
 
 #customer intent: As a .NET developer, I want authenticate and authorize my App Service to a vector database so that I can securely add memories to the AI in my .NET application.

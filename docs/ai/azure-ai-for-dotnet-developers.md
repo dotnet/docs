@@ -4,8 +4,6 @@ description: This article provides an organized list of resources about Azure AI
 ms.date: 11/19/2023
 ms.topic: overview
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
-ms.service: dotnet
-ms.subservice: intelligent-apps
 ---
 
 # Develop AI apps with .NET

@@ -6,8 +6,6 @@ ms.topic: quickstart
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 author: fboucher
 ms.author: frbouche
-ms.service: dotnet
-ms.subservice: intelligent-apps
 zone_pivot_groups: openai-library
 # CustomerIntent: As a .NET developer new to Azure OpenAI, I want deploy and use sample code to interact to learn from the sample code.
 ---

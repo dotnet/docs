@@ -555,7 +555,8 @@
                 "docs/standard/design-guidelines/*.md": "standard-library",
                 "docs/standard/security/**.md": "security-practices",
                 "docs/visual-basic/language-reference/error-messages/**/**.md": "errors-warnings",
-                "docs/visual-basic/misc/**/**.md": "errors-warnings"
+                "docs/visual-basic/misc/**/**.md": "errors-warnings",
+                "docs/ai/**/**.md": "intelligent-apps"
             },
             "title": {
                 "_csharpstandard/standard/README.md": "Table of contents",
@@ -833,7 +834,8 @@
             },
             "ms.custom": {
                 "docs/framework/**/*.md": "UpdateFrequency5",
-                "docs/visual-basic/**/*.md": "UpdateFrequency5"
+                "docs/visual-basic/**/*.md": "UpdateFrequency5",
+                "docs/ai/**/**.md": "build-2024-intelligent-apps"
             },
             "no-loc": {
                 "**/**.md": [

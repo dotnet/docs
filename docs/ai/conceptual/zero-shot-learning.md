@@ -4,8 +4,6 @@ description: "Learn the use cases for zero-shot and few-shot learning in prompt 
 author: catbutler
 ms.topic: concept-article #Don't change.
 ms.date: 04/12/2024
-ms.service: dotnet
-ms.subservice: intelligent-apps
 
 #customer intent: As a .NET developer, I want to understand how zero-shot and few-shot learning techniques can help me improve my prompt engineering.
 

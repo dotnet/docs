@@ -4,8 +4,6 @@ description: "Learn basic prompt engineering concepts for .NET."
 author: catbutler
 ms.topic: concept-article #Don't change.
 ms.date: 04/10/2024
-ms.service: dotnet
-ms.subservice: intelligent-apps
 
 #customer intent: As a .NET developer, I want to understand prompt engineering techniques for .NET so that I can build more efficient and targeted AI apps.
 

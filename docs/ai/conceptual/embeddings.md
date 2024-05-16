@@ -4,8 +4,6 @@ description: "Learn how embeddings extend the limits and capabilities of AI mode
 author: catbutler
 ms.topic: concept-article #Don't change.
 ms.date: 04/11/2024
-ms.service: dotnet
-ms.subservice: intelligent-apps
 
 #customer intent: As a .NET developer, I want to understand how embeddings extend LLM limits and capabilities in .NET so that I have more semantic context and better outcomes for my AI apps.
 

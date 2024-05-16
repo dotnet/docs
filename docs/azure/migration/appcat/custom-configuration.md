@@ -6,7 +6,7 @@ Before running an analysis we discover all rules and analyzers provided to AppCA
 
 To control/scope rules and/or analyzers used, you can provide a json run config file which would allow you to:
 
-- change default settings to include or exclude some binaries 
+- change default settings to include or exclude some binaries
 - disable existing specific rules or specific analyzers
 - change properties in existing rules
 - add new rules
@@ -15,10 +15,12 @@ To control/scope rules and/or analyzers used, you can provide a json run config 
 ## How to provide run config
 
 For CLI:
+
 - in the interactive mode CLI will ask if you want to provide run config and then if you said yes, asks to type/paste path to the run config file.
 - in non-interactive mode there is new argument `-c|--config` which allows to provide the path to the run config json.
 
 For VS:
+
 - at the step where we allow to edit analysis settings we added a text box and `Browse` button to let you specify a run config json.
 
 After analysis is done, run config is stored in the report and re-used if user opens report again and refreshes.

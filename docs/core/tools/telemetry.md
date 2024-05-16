@@ -94,18 +94,18 @@ The telemetry feature collects the following data:
 | >=7.0.100     | Hashed PublishAot used for build (MSBuild property) |
 | >=7.0.100     | Hashed PublishProtocol used for build (MSBuild property) |
 | >=8.0.100     | Hashed TargetPlatformIdentifier used for build (MSBuild property) |
-| >=8.0.100     | Hashed BlazorWasm used for build (MSBuild property) |
-| >=8.0.100     | Hashed WasmSDK used for build (MSBuild property) |
-| >=8.0.100     | Hashed UsesMaui used for build (MSBuild property) |
-| >=8.0.100     | Hashed UsesMobileSDKOnly used for build (MSBuild property) |
-| >=8.0.100     | Hashed UsesOtherMobileSDK used for build (MSBuild property) |
-| >=8.0.100     | Hashed MonoAOT used for build (MSBuild property) |
-| >=8.0.100     | Hashed NativeAOT used for build (MSBuild property) |
-| >=8.0.100     | Hashed Interp used for build (MSBuild property) |
-| >=8.0.100     | Hashed LibraryMode used for build (MSBuild property)|
 | >=8.0.100     | Hashed HybridGlobalization used for build (MSBuild property) |
-| >=8.0.100     | Hashed ResolvedRuntimePack used for build (MSBuild property) |
-| >=8.0.100     | Hashed StripILAfterAOT used for build (MSBuild property) |
+| >=8.0.100     | Whether .NET Blazor WebAssembly SDK is used. |
+| >=8.0.100     | Whether .NET WebAssembly SDK is used. |
+| >=8.0.100     | Whether .NET MAUI is used. |
+| >=8.0.100     | Whether .NET mobile SDK is used. |
+| >=8.0.100     | Whether other mobile SDKs are used (like: Avalonia, Uno). |
+| >=8.0.100     | Whether Mono AOT is used. |
+| >=8.0.100     | Whether Mono AOT strip IL feature is used. |
+| >=8.0.100     | Whether Mono interpreter is used. |
+| >=8.0.100     | Whether library mode for mobile is used.  |
+| >=8.0.100     | Whether NativeAOT is used. |
+| >=8.0.100     | Used Mono runtime pack version. |
 
 ### Collected options
 

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 
-internal class CodeGenTokenizer
+internal class CodeGen
 {
     public static void RunIt()
     {

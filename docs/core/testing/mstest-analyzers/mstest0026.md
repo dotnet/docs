@@ -25,7 +25,7 @@ ms.author: faisalhafeez
 
 ## Cause
 
-This rule raises a diagnostic when an argument containing a conditional access is passed to the `Assert`, `CollectionAssert` or `StringAssert`  assertion methods below:
+This rule raises a diagnostic when an argument containing a conditional access `(?.)` is passed to the assertion methods below:
 
 - `Assert.IsTrue`
 - `Assert.IsFalse`
@@ -52,9 +52,11 @@ This rule raises a diagnostic when an argument containing a conditional access i
 
 ## Rule description
 
+The purpose of assertions in unit tests is to verify that certain conditions are met. When a conditional access is used in an assertion, it introduces an additional condition that may or may not be met, depending on the state of the object being accessed. This can lead to inconsistent test results and make test less clear.
+
 ## How to fix violations
 
-Ensure that arguments do not contain conditional access when passed to the assertion methods.
+Ensure that arguments do not contain conditional access `(?.)` when passed to the assertion methods. Instead, perform null checks before making the assertion.
 
 ```csharp
 Company? company = GetCompany();

@@ -1,7 +1,7 @@
 ---
 title: Get started with the .NET enterprise chat app sample using RAG 
 description: Get started with .NET and search across your own data using a chat app sample implemented using Azure OpenAI Service and Retrieval Augmented Generation (RAG) in Azure AI Search. Easily deploy with Azure Developer CLI. This article uses the Azure AI Reference Template sample.
-ms.date: 05/10/2024
+ms.date: 05/16/2024
 ms.topic: get-started
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 # CustomerIntent: As a .NET developer new to Azure OpenAI, I want deploy and use sample code to interact with app infused with my own business data so that learn from the sample code.
@@ -56,22 +56,21 @@ To follow along with this article, you need the following prerequisites:
 
 #### [Codespaces (recommended)](#tab/github-codespaces)
 
-1. An Azure subscription - [Create one for free](https://azure.microsoft.com/free/ai-services?azure-portal=true)
-1. Azure account permissions - Your Azure Account must have Microsoft.Authorization/roleAssignments/write permissions, such as [User Access Administrator](/azure/role-based-access-control/built-in-roles#user-access-administrator) or [Owner](/azure/role-based-access-control/built-in-roles#owner).
-1. Access granted to Azure OpenAI in the desired Azure subscription.
+* An Azure subscription - [Create one for free](https://azure.microsoft.com/free/ai-services?azure-portal=true)
+* Azure account permissions - Your Azure Account must have Microsoft.Authorization/roleAssignments/write permissions, such as [User Access Administrator](/azure/role-based-access-control/built-in-roles#user-access-administrator) or [Owner](/azure/role-based-access-control/built-in-roles#owner).
+* Access granted to Azure OpenAI in the desired Azure subscription.
     Currently, access to this service is granted only by application. You can apply for access to Azure OpenAI by completing the form at [https://aka.ms/oai/access](https://aka.ms/oai/access). Open an issue on this repo to contact us if you have an issue.
-1. GitHub account
+* GitHub account
 
 #### [Visual Studio Code](#tab/visual-studio-code)
 
-1. An Azure subscription - [Create one for free](https://azure.microsoft.com/free/ai-services?azure-portal=true)
-1. Azure account permissions - Your Azure Account must have Microsoft.Authorization/roleAssignments/write permissions, such as [User Access Administrator](/azure/role-based-access-control/built-in-roles#user-access-administrator) or [Owner](/azure/role-based-access-control/built-in-roles#owner).
-1. Access granted to Azure OpenAI in the desired Azure subscription.
+* An Azure subscription - [Create one for free](https://azure.microsoft.com/free/ai-services?azure-portal=true)
+* Azure account permissions - Your Azure Account must have Microsoft.Authorization/roleAssignments/write permissions, such as [User Access Administrator](/azure/role-based-access-control/built-in-roles#user-access-administrator) or [Owner](/azure/role-based-access-control/built-in-roles#owner).
+* Access granted to Azure OpenAI in the desired Azure subscription.
     Currently, access to this service is granted only by application. You can apply for access to Azure OpenAI by completing the form at [https://aka.ms/oai/access](https://aka.ms/oai/access). Open an issue on this repo to contact us if you have an issue.
-1. [Azure Developer CLI](/azure/developer/azure-developer-cli/install-azd?tabs=winget-windows%2Cbrew-mac%2Cscript-linux&pivots=os-windows)
-1. [Docker Desktop](https://www.docker.com/products/docker-desktop/) - start Docker Desktop if it's not already running
-1. [Visual Studio Code](https://code.visualstudio.com/)
-1. [Dev Container Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+* [Docker Desktop](https://www.docker.com/products/docker-desktop/) - start Docker Desktop if it's not already running
+* [Visual Studio Code](https://code.visualstudio.com/)
+* [Dev Container Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
 ---
 
@@ -89,8 +88,7 @@ Begin now with a development environment that has all the dependencies installed
 1. Start the process to create a new GitHub Codespace on the `main` branch of the [`Azure-Samples/azure-search-openai-demo-csharp`](https://github.com/Azure-Samples/azure-search-openai-demo-csharp) GitHub repository.
 1. Right-click on the following button, and select _Open link in new windows_ in order to have both the development environment and the documentation available at the same time.
 
-    > [!div class="nextstepaction"]
-    > [Open this project in GitHub Codespaces](https://github.com/codespaces/new?azure-portal=true&hide_repo_select=true&ref=main&repo=624102171)
+    [![Open this project in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/Azure-Samples/azure-search-openai-demo-csharp)
 
 1. On the **Create codespace** page, review the codespace configuration settings and then select **Create new codespace**:
 
@@ -112,9 +110,9 @@ Begin now with a development environment that has all the dependencies installed
 
 The [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) for Visual Studio Code requires [Docker](https://docs.docker.com/) to be installed on your local machine. The extension hosts the development container locally using the Docker host with the correct developer tools and dependencies preinstalled to complete this article.
 
-1. Open **Visual Studio Code** in the context of an empty directory.
-
 1. Ensure that you have the [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) installed in Visual Studio Code.
+
+1. [![Open this project in Dev Containers](https://img.shields.io/static/v1?label=Dev%20Containers&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://codespaces.new/Azure-Samples/azure-search-openai-demo-csharp)
 
 1. Open a new terminal in the editor.
 

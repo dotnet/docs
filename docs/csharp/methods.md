@@ -112,20 +112,22 @@ Passing a reference-type parameter allows you to change the value of the referen
 
 <a name="paramarray"></a>
 
-### Parameter arrays
+### Parameter collections
 
-Sometimes, the requirement that you specify the exact number of arguments to your method is restrictive. By using the `params` keyword to indicate that a parameter is a parameter array, you allow your method to be called with a variable number of arguments. The parameter tagged with the `params` keyword must be an array type, and it must be the last parameter in the method's parameter list.
+Sometimes, the requirement that you specify the exact number of arguments to your method is restrictive. By using the `params` keyword to indicate that a parameter is a parameter collection, you allow your method to be called with a variable number of arguments. The parameter tagged with the `params` keyword must be a collection type, and it must be the last parameter in the method's parameter list.
 
 A caller can then invoke the method in either of four ways:
 
-- By passing an array of the appropriate type that contains the desired number of elements.
-- By passing a comma-separated list of individual arguments of the appropriate type to the method.
+- By passing a collection of the appropriate type that contains the desired number of elements. The example uses a [collection expression](./language-reference/operators/collection-expressions.md) so the compiler creates an appropriate collection type.
+- By passing a comma-separated list of individual arguments of the appropriate type to the method. The compiler creates the appropriate collection type.
 - By passing `null`.
-- By not providing an argument to the parameter array.
+- By not providing an argument to the parameter collection.
 
-The following example defines a method named `GetVowels` that returns all the vowels from a parameter array. The `Main` method illustrates all four ways of invoking the method. Callers aren't required to supply any arguments for parameters that include the `params` modifier. In that case, the parameter is an empty array.
+The following example defines a method named `GetVowels` that returns all the vowels from a parameter collection. The `Main` method illustrates all four ways of invoking the method. Callers aren't required to supply any arguments for parameters that include the `params` modifier. In that case, the parameter is an empty collection.
 
 [!code-csharp[csSnippets.Methods#75](~/samples/snippets/csharp/concepts/methods/params75.cs#75)]
+
+Prior to C# 13, the `params` modifier can be used only with a single dimensional array.
 
 <a name="optional"></a>
 

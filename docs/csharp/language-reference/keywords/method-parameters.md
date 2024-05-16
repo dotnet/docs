@@ -197,12 +197,35 @@ The only method call where the argument is passed by reference is the final one.
 
 No other parameters are permitted after the `params` keyword in a method declaration, and only one `params` keyword is permitted in a method declaration.
 
-If the declared type of the `params` parameter isn't a single-dimensional array, compiler error [CS0225](../../misc/cs0225.md) occurs.
+The declared type of the `params` parameter must be a collection type. Recognized collection types are:
+
+- A single dimensional *array type* `T[]`, in which case the *element type* is `T`
+- A *span type*
+  - `System.Span<T>`
+  - `System.ReadOnlySpan<T>`  
+  in which cases the *element type* is `T`
+- A *type* with an accessible *create method* with a corresponding *element type*.
+- A *struct* or *class type* that implements <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName> where:
+  - The *type* has a constructor that can be invoked with no arguments, and the constructor is at least as accessible as the declaring member.
+  - The *type* has an instance (not an extension) method `Add` where:
+    - The method can be invoked with a single value argument.
+    - If the method is generic, the type arguments can be inferred from the argument.
+    - The method is at least as accessible as the declaring member.
+    In which case the *element type* is the *iteration type* of the *type*.
+- An *interface type*
+  - <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName>
+  - <xref:System.Collections.Generic.IReadOnlyCollection%601?displayProperty=fullName>
+  - <xref:System.Collections.Generic.IReadOnlyList%601?displayProperty=fullName>
+  - <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>
+  - <xref:System.Collections.Generic.IList%601?displayProperty=fullName>
+  in which cases the *element type* is `T`
+
+Prior to C# 13, the parameter must be a single dimensional array.
 
 When you call a method with a `params` parameter, you can pass in:
 
 - A comma-separated list of arguments of the type of the array elements.
-- An array of arguments of the specified type.
+- A collection of arguments of the specified type.
 - No arguments. If you send no arguments, the length of the `params` list is zero.
 
 The following example demonstrates various ways in which arguments can be sent to a `params` parameter.

@@ -98,13 +98,13 @@ Beginning with C# 12, you can provide *default values* for parameters on lambda 
 
 :::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetDefaultParameters":::
 
-You can also declare lambda expressions with `params` arrays as parameters:
+You can also declare lambda expressions with `params` arrays or collections as parameters:
 
 :::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetParamsArray":::
 
-As part of these updates, when a method group that has a default parameter is assigned to a lambda expression, that lambda expression also has the same default parameter. A method group with a `params` array parameter can also be assigned to a lambda expression.
+As part of these updates, when a method group that has a default parameter is assigned to a lambda expression, that lambda expression also has the same default parameter. A method group with a `params` collection parameter can also be assigned to a lambda expression.
 
-Lambda expressions with default parameters or `params` arrays as parameters don't have natural types that correspond to `Func<>` or `Action<>` types. However, you can define delegate types that include default parameter values:
+Lambda expressions with default parameters or `params` collections as parameters don't have natural types that correspond to `Func<>` or `Action<>` types. However, you can define delegate types that include default parameter values:
 
 :::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="DelegateDeclarations":::
 

@@ -8,6 +8,7 @@ ms.topic: whats-new
 
 C# 13 includes the following new features. You can try these features using the latest [Visual Studio 2022](https://visualstudio.microsoft.com/vs/preview/) version or the [.NET 9 Preview SDK](https://dotnet.microsoft.com/download/dotnet).
 
+- [`params` collections](#params-collections)
 - [New `lock` type and semantics](#new-lock-object).
 - [New escape sequence - `\e`](#new-escape-sequence).
 - [Method group natural type improvements](#method-group-natural-type)
@@ -21,11 +22,17 @@ New features are added to the "What's new in C#" page when they're available in 
 
 [!INCLUDE [released-version-feedback](./includes/released-feedback.md)]
 
+## `params` collections
+
+The `params` modifier isn't limited to array types. You can now use `param` with any recognized collection type. In addition to arrays, <xref:System.Span%601?displayProperty=nameWithType>, <xref:System.ReadOnlySpan%601?displayProperty=nameWithType>, types that implement <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> in addition to having an `Add` method. In addition to concrete types, interfaces <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType>, <xref:System.Collections.Generic.IReadOnlyCollection%601?displayProperty=nameWithType>, <xref:System.Collections.Generic.IReadOnlyList%601?displayProperty=nameWithType>, <xref:System.Collections.Generic.ICollection%601?displayProperty=nameWithType> or <xref:System.Collections.Generic.IList%601?displayProperty=nameWithType> can be used.
+
+When an interface type is used, the compiler synthesizes the storage for the arguments supplied. You can learn more in the feature specification for [`params` collections](~/_csharplang/proposals/params-collections.md)
+
 ## New lock object
 
 The .NET 9 runtime includes a new type for thread synchronization, the <xref:System.Threading.Lock?displayProperty=fullName> type. This type provides better thread synchronization through its API. The <xref:System.Threading.Lock.EnterScope?displayProperty=nameWithType> method enters an exclusive scope. The `ref struct` returned from that supports the `Dispose()` pattern to exit the exclusive scope.
 
-The C# [`lock`](../language-reference/statements/lock.md) statement recognizes if the target of the lock is a `Lock` object. If so, it uses the updated API, rather than the traditional API using <xref:System.Threading.Monitor?displayProperty=nameWithType>. The compiler also recognizes if you convert a `Lock` object to another type and the `Monitor` based code would be generated.
+The C# [`lock`](../language-reference/statements/lock.md) statement recognizes if the target of the lock is a `Lock` object. If so, it uses the updated API, rather than the traditional API using <xref:System.Threading.Monitor?displayProperty=nameWithType>. The compiler also recognizes if you convert a `Lock` object to another type and the `Monitor` based code would be generated. You can read more in the feature specification for the [new lock object](~/_csharplang/proposals/lock-object.md).
 
 ## New escape sequence
 

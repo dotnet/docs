@@ -1,5 +1,5 @@
 ---
-title: "Delegates - C# Programming Guide"
+title: "Delegates"
 description: A delegate in C# is a type that refers to methods with a parameter list and return type. Delegates are used to pass methods as arguments to other methods.
 ms.date: 02/02/2021
 helpviewer_keywords: 

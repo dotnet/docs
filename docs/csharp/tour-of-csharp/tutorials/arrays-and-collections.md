@@ -1,5 +1,5 @@
 ---
-title: Work with List\<T> - Introduction to C# tutorial
+title: Work with List\<T> - Introductory tutorial
 description: Learn C# by exploring the generic List collection type in this tutorial.
 ms.date: 03/23/2022
 ---

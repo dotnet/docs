@@ -1,5 +1,5 @@
 ---
-title: Configure C# language version - C# Guide
+title: Configure language version
 description: Learn how to override the default C# language version manually.
 ms.custom: "updateeachrelease"
 ms.date: 10/30/2023

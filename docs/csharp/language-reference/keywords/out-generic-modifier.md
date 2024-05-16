@@ -1,6 +1,6 @@
 ---
 description: "out keyword (generic modifier) - C# Reference"
-title: "out keyword (generic modifier) - C# Reference"
+title: "out keyword (generic modifier)"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "covariance, out keyword [C#]"

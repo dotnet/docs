@@ -1,5 +1,5 @@
 ---
-title: Introduction to C# - become familiar with the development tools
+title: Become familiar with the development tools
 description: This article provides a basic introduction to the tools you'll use to develop C# and .NET Applications on your machine.
 ms.date: 02/02/2021
 ---

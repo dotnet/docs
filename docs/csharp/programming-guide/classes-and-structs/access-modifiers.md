@@ -1,5 +1,5 @@
 ---
-title: "Access Modifiers - C# Programming Guide"
+title: "Access Modifiers"
 description: All types and type members in C# have an accessibility level that controls whether they can be used from other code. Review this list of access modifiers.
 ms.date: 04/11/2024
 helpviewer_keywords:

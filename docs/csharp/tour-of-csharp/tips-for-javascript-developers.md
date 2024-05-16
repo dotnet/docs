@@ -1,5 +1,5 @@
 ---
-title: A tour of C# - Tips for JavaScript and TypeScript Developers
+title: Tips for JavaScript and TypeScript Developers
 description: "New to C#, but know JavaScript or TypeScript? Here's a roadmap of what's familiar, features in C# that aren't in JavaScript or TypeScript, and alternatives for features you use that aren't in C#"
 ms.date: 04/03/2024
 ---

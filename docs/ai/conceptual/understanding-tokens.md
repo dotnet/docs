@@ -4,6 +4,8 @@ description: "Understand how large language models (LLMs) use tokens to analyze 
 author: haywoodsloan
 ms.topic: concept-article
 ms.date: 05/14/2024
+ms.service: dotnet
+ms.subservice: intelligent-apps
 
 #customer intent: As a .NET developer, I want understand how large language models (LLMs) use tokens so I can add semantic analysis and text generation capabilities to my .NET projects.
 

@@ -4,6 +4,8 @@ description: "Learn how embeddings extend the limits and capabilities of AI mode
 author: catbutler
 ms.topic: concept-article #Don't change.
 ms.date: 04/11/2024
+ms.service: dotnet
+ms.subservice: intelligent-apps
 
 #customer intent: As a .NET developer, I want to understand how embeddings extend LLM limits and capabilities in .NET so that I have more semantic context and better outcomes for my AI apps.
 
@@ -15,7 +17,7 @@ This article explains how embeddings work in .NET.
 
 Embeddings are the way you express semantic meaning to an LLM. Essentially, embeddings are numeric representations of non-numeric data that preserve its semantic meaning. You can use embeddings to help an AI model understand the meaning of inputs so that it can perform comparisons and transformations, such as summarizing text or creating images from text descriptions. LLMs can use embeddings immediately, and you can store embeddings in vector databases to provide semantic memory for LLMs as-needed.
 
-Summarizing text is especially useful for [prompt engineering](/), because it gives you a way to use far fewer tokens to repesent a given text. You use instructions in prompt engineering to tell an LLM what to do, and can include text content with the instruction to give the model more context. However, LLMs limit the number of tokens per input, which constrains how much text you can include in prompts. If you try to include more than the limit in one input, the model will ignore some or all of that input. Some LLMs [charge per token](/pricing/details/cognitive-services/openai-service/) or have [quota systems](/azure/ai-services/openai/quotas-limits#regional-quota-limits), more reasons to watch your token counts. If you create an embedding for the text content you want to include, the LLM can find a shorter piece of text that has a similar vector, so you can use it instead of the original text to reduce the number of tokens you use to represent the content's meaning.
+Summarizing text is especially useful for [prompt engineering](/prompt-engineering-dotnet.md), because it gives you a way to use far fewer tokens to repesent a given text. You use instructions in prompt engineering to tell an LLM what to do, and can include text content with the instruction to give the model more context. However, LLMs limit the number of tokens per input, which constrains how much text you can include in prompts. If you try to include more than the limit in one input, the model will ignore some or all of that input. Some LLMs [charge per token](/pricing/details/cognitive-services/openai-service/) or have [quota systems](/azure/ai-services/openai/quotas-limits#regional-quota-limits), more reasons to watch your token counts. If you create an embedding for the text content you want to include, the LLM can find a shorter piece of text that has a similar vector, so you can use it instead of the original text to reduce the number of tokens you use to represent the content's meaning.
 
 ## Embeddings preserve semantic meaning
 

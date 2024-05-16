@@ -5,6 +5,8 @@ ms.date: 04/26/2024
 ms.topic: tutorial
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 author: alexwolfmsft
+ms.service: dotnet
+ms.subservice: intelligent-apps
 ms.author: alexwolf
 ---
 

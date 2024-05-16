@@ -4,6 +4,8 @@ description: "Learn how chain of thought prompting can simplify prompt engineeri
 author: catbutler
 ms.topic: concept-article #Don't change.
 ms.date: 04/10/2024
+ms.service: dotnet
+ms.subservice: intelligent-apps
 
 #customer intent: As a .NET developer, I want to understand what chain-of-thought prompting is and how it can help me save time and get better completions out of prompt engineering.
 

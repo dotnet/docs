@@ -4,6 +4,8 @@ description: "Understand how function calling enables you to integrate external 
 author: haywoodsloan
 ms.topic: concept-article 
 ms.date: 05/14/2024
+ms.service: dotnet
+ms.subservice: intelligent-apps
 
 #customer intent: As a .NET developer, I want to understand OpenAI function calling so that I can integrate external tools with AI completions in my .NET project.
 

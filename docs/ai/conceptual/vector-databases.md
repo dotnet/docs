@@ -4,6 +4,8 @@ description: "Learn how vector databases extend LLM capabilities by storing and 
 author: catbutler
 ms.topic: concept-article #Don't change.
 ms.date: 04/12/2024
+ms.service: dotnet
+ms.subservice: intelligent-apps
 
 #customer intent: As a .NET developer, I want to learn how vector databases store and process embeddings in .NET so I can make more data available to LLMs in my apps.
 

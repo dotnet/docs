@@ -5,6 +5,8 @@ description: "Learn how to use custom or local models for text generation and ch
 author: haywoodsloan
 ms.topic: how-to 
 ms.date: 04/11/2024
+ms.service: dotnet
+ms.subservice: intelligent-apps
 
 #customer intent: As a .NET developer, I want to use custom or local AI models with the Semantic Kernel SDK so that I can perform text generation and chat completions using any model available to me.
 

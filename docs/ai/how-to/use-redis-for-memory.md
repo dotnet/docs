@@ -4,6 +4,8 @@ description: "Learn how to use a Redis database together with the RediSearch mod
 author: haywoodsloan
 ms.topic: how-to
 ms.date: 04/17/2024
+ms.service: dotnet
+ms.subservice: intelligent-apps
 
 #customer intent: As a .NET developer, I want to use Redis for memory storage together with the Semantic Kernel SDK so that I can store and recall memories in my application.
 

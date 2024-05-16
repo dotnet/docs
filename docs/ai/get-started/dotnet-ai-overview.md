@@ -3,6 +3,8 @@ title: Develop .NET applications with AI features
 description: Learn how you can build .NET applications that include AI features.
 ms.date: 05/02/2024
 ms.topic: overview
+ms.service: dotnet
+ms.subservice: intelligent-apps
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 ---
 

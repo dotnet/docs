@@ -12,7 +12,7 @@ public static class ForeachStatement
     private static void ForeachWithIEnumerable()
     {
         // <WithIEnumerable>
-        List<int> fibNumbers = { 0, 1, 1, 2, 3, 5, 8, 13 };
+        List<int> fibNumbers = new() { 0, 1, 1, 2, 3, 5, 8, 13 };
         foreach (int element in fibNumbers)
         {
             Console.Write($"{element} ");

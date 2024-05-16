@@ -1,5 +1,5 @@
 ---
-title: "C# Compiler warning waves"
+title: "Compiler warning waves"
 description: "C# warning waves are optional warnings that can be reported on code where previously a warning wouldn't have been reported. They represent practices that could be harmful, or potentially elements that may be breaking changes in the future."
 ms.date: 05/11/2022
 f1_keywords:

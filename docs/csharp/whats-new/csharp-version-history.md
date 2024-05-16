@@ -1,5 +1,5 @@
 ---
-title: The history of C# - C# Guide
+title: The history of C#
 description: Learn how the C# language has changed over its many releases. Learn when different features were introduced in the language.
 author: erikdietrich
 ms.date: 03/06/2024

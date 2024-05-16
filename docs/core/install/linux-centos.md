@@ -1,9 +1,9 @@
 ---
 title: Install .NET on CentOS Linux
-description: Demonstrates the various ways to install .NET SDK and .NET Runtime on CentOS Linux.
+description: Learn about which versions of .NET SDK and .NET Runtime are supported, and how to install .NET on CentOS Linux.
 author: adegeo
 ms.author: adegeo
-ms.date: 05/04/2023
+ms.date: 05/14/2024
 ms.custom: linux-related-content
 ---
 
@@ -21,7 +21,7 @@ The following table is a list of currently supported .NET releases on CentOS Lin
 
 | CentOS Linux | .NET |
 |--------------|------|
-| 7            | 7, 6 |
+| 7            | 6.0  |
 
 > [!WARNING]
 > CentOS Linux 8 reached an early End Of Life (EOL) on December 31st, 2021. For more information, see the official [CentOS Linux EOL page](https://www.centos.org/centos-linux-eol/). Because of this, .NET isn't supported on CentOS Linux 8.
@@ -46,7 +46,27 @@ The following table is a list of currently supported .NET releases on CentOS Lin
 sudo rpm -Uvh https://packages.microsoft.com/config/centos/7/packages-microsoft-prod.rpm
 ```
 
-[!INCLUDE [linux-yum-install-70](includes/linux-install-70-yum.md)]
+### Install the SDK
+
+The .NET SDK allows you to develop apps with .NET. If you install the .NET SDK, you don't need to install the corresponding runtime. To install the .NET SDK, run the following command:
+
+```bash
+sudo yum install dotnet-sdk-6.0
+```
+
+### Install the runtime
+
+The ASP.NET Core Runtime allows you to run apps that were made with .NET that didn't provide the runtime. The following command installs the ASP.NET Core Runtime, which is the most compatible runtime for .NET. In your terminal, run the following command:
+
+```bash
+sudo yum install aspnetcore-runtime-6.0
+```
+
+As an alternative to the ASP.NET Core Runtime, you can install the .NET Runtime, which doesn't include ASP.NET Core support: replace `aspnetcore-runtime-6.0` in the previous command with `dotnet-runtime-6.0`:
+
+```bash
+sudo yum install dotnet-runtime-6.0
+```
 
 ## How to install other versions
 

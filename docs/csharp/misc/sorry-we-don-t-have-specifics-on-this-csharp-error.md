@@ -1,5 +1,5 @@
 ---
-title: "Sorry, we don't have specifics on this C# error"
+title: "Sorry, we don't have specifics on this error"
 description: "List of possible resources for compiler errors and warnings that haven't been documented yet."
 ms.date: 12/18/2023
 f1_keywords:

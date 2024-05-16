@@ -1,6 +1,6 @@
 ---
 description: "sealed modifier - C# Reference"
-title: "sealed modifier - C# Reference"
+title: "sealed modifier"
 ms.date: 07/20/2015
 f1_keywords: 
   - "sealed"

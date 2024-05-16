@@ -1,5 +1,5 @@
 ---
-title: "How to access Office interop objects - C# Programming Guide"
+title: "How to access Office interop objects"
 description: Learn about C# features that simplify access to Office API objects. Use the new features to write code that creates and displays an Excel worksheet.
 ms.topic: how-to
 ms.date: 02/15/2023

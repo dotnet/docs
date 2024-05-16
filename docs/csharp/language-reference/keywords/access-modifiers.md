@@ -1,6 +1,6 @@
 ---
 description: "Access Modifiers - C# Reference"
-title: "Access Modifiers - C# Reference"
+title: "Access Modifiers"
 ms.date: 09/15/2022
 helpviewer_keywords:
   - "access modifiers [C#]"

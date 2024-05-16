@@ -1,5 +1,5 @@
 ---
-title: "How to modify string contents - C# Guide"
+title: "How to modify string contents"
 description: Review examples of several techniques to modify existing string contents in C#, which return a new string object.
 ms.date: 02/26/2018
 helpviewer_keywords: 

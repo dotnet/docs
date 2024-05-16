@@ -49,15 +49,15 @@ The following examples show how to use the `Tiktoken` text tokenizer.
 
 The following examples show how to use the `Llama` text tokenizer.
 
-:::code language="csharp" source="./snippets/csharp/LlamaTokenizer.cs" id="Llama":::
+:::code language="csharp" source="./snippets/csharp/Llama.cs" id="Llama":::
 
 The following examples show how to use the `CodeGen` tokenizer.
 
-:::code language="csharp" source="./snippets/csharp/CodeGenTokenizer.cs" id="CodeGen":::
+:::code language="csharp" source="./snippets/csharp/CodeGen.cs" id="CodeGen":::
 
 The following example demonstrates how to use the tokenizer with `Span<char>` and how to disable normalization or pretokenization on the encoding calls.
 
-:::code language="csharp" source="./snippets/csharp/LlamaTokenizer.cs" id="Span":::
+:::code language="csharp" source="./snippets/csharp/Llama.cs" id="Span":::
 
 ## Model Builder (Visual Studio extension)
 

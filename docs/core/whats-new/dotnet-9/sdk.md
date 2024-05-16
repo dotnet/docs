@@ -7,7 +7,7 @@ ms.topic: whats-new
 ---
 # What's new in the SDK for .NET 9
 
-This article describes new features in the .NET SDK for .NET 9. It's been updated for .NET 9 Preview 3.
+This article describes new features in the .NET SDK for .NET 9. It's been updated for .NET 9 Preview 4.
 
 ## Unit testing
 

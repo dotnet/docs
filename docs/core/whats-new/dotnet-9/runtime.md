@@ -7,7 +7,7 @@ ms.topic: whats-new
 ---
 # What's new in the .NET 9 runtime
 
-This article describes the performance enhancements in the .NET runtime for .NET 9. It's been updated for .NET 9 Preview 3.
+This article describes the performance enhancements in the .NET runtime for .NET 9. It's been updated for .NET 9 Preview 4.
 
 ## Loop optimizations
 

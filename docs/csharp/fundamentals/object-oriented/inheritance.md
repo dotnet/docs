@@ -1,5 +1,5 @@
 ---
-title: "Inheritance"
+title: "Objected oriented programming - inheritance"
 description: Inheritance in C# enables you to create new classes that reuse, extend, and modify the behavior defined in other classes.
 ms.date: 05/14/2021
 helpviewer_keywords: 

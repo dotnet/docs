@@ -17,7 +17,7 @@ This article has been updated for .NET 9 Preview 3.
 
 ## .NET runtime
 
-The .NET 9 runtime includes performance improvements, including faster exception handling, inlining improvements for Native AOT, and loop and PGO improvements. For more information, see [What's new in the .NET 9 runtime](runtime.md).
+The .NET 9 runtime includes performance improvements, including faster exception handling, inlining improvements, and loop and PGO improvements. For more information, see [What's new in the .NET 9 runtime](runtime.md).
 
 ## .NET libraries
 

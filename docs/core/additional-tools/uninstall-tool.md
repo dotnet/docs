@@ -20,9 +20,6 @@ On macOS, the tool can only uninstall SDKs and runtimes located in the */usr/loc
 
 Because of these limitations, the tool might not be able to uninstall all of the .NET SDKs and runtimes on your machine. You can use the `dotnet --info` command to find all of the .NET SDKs and runtimes installed, including those SDKs and runtimes that the tool can't remove. The `dotnet-core-uninstall list` command displays which SDKs can be uninstalled with the tool.
 
-> [!NOTE]
-> Currently, the .NET Uninstall Tool doesn't support .NET 8+. For more information about the release schedule of the tool, see [GitHub - dotnet-uninstall-tool Roadmap](https://github.com/dotnet/cli-lab/issues/279).
-
 ## Install the tool
 
 You can download .NET uninstall tool from [the tool's releases page](https://aka.ms/dotnet-core-uninstall-tool) and find the source code at the [dotnet/cli-lab](https://github.com/dotnet/cli-lab) GitHub repository.

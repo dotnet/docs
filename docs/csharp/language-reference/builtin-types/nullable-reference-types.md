@@ -1,5 +1,5 @@
 ---
-title: "Nullable reference types - C# reference"
+title: "Nullable reference types"
 description: Learn about C# nullable reference types and how to use them
 ms.date: 09/08/2021
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Office Programming - C#"
+title: "Walkthrough: Office Programming"
 description: Learn about the features Visual Studio offers that improve Microsoft Office programming.
 ms.date: 02/15/2023
 ms.topic: tutorial

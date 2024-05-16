@@ -41,6 +41,16 @@ The following example creates single-dimensional, multidimensional, and jagged a
 
 :::code language="csharp" source="./snippets/shared/Arrays.cs" id="DeclareArrays":::
 
+> [!IMPORTANT]
+> Many of the examples in this article use [collection expressions](../operators/collection-expressions.md) (which use square brackets) to initialize the arrays. Collection expressions were first introduced in C# 12, which shipped with .NET 8. If you can't ugrade to C# 12 yet, use `{` and `}` to initialize the arrays instead.
+>
+> ```csharp
+> // Collection expressions:
+> int[] array = [1, 2, 3, 4, 5, 6];
+> // Alternative syntax:
+> int[] array2 = {1, 2, 3, 4, 5, 6};
+> ```
+
 ## Single-dimensional arrays
 
 A *single-dimensional array* is a sequence of like elements. You access an element via its *index*. The *index* is its ordinal position in the sequence. The first element in the array is at index `0`. You create a single-dimensional array using the [new](../operators/new-operator.md) operator specifying the array element type and the number of elements. The following example declares and initializes single-dimensional arrays:

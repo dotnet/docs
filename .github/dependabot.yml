@@ -1934,6 +1934,17 @@ updates:
         patterns:
           - "*" # Prefer a single PR per project update.
   - package-ecosystem: "nuget"
+    directory: "/docs/framework/windows-services/snippets/MyNewService/csharp" #Project.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+    groups:
+      # Group .NET updates together for projects.
+      dotnet:
+        patterns:
+          - "*" # Prefer a single PR per project update.
+  - package-ecosystem: "nuget"
     directory: "/docs/fundamentals/code-analysis/quality-rules/snippets/csharp/all-rules" #all-rules.csproj
     schedule:
       interval: "weekly"
@@ -2177,17 +2188,6 @@ updates:
           - "*" # Prefer a single PR per project update.
   - package-ecosystem: "nuget"
     directory: "/docs/orleans/grains/snippets/transactions/Server" #Server.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-    groups:
-      # Group .NET updates together for projects.
-      dotnet:
-        patterns:
-          - "*" # Prefer a single PR per project update.
-  - package-ecosystem: "nuget"
-    directory: "/docs/orleans/host/snippets" #Client.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"

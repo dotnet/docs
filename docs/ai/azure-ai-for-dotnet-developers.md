@@ -6,8 +6,8 @@ ms.topic: overview
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 ---
 
-# Develop .NET apps that use Azure AI services
+# Develop AI apps with .NET
 
-This article provides documentation, samples, and other resources for learning how to develop applications that use Azure OpenAI Service and other Azure AI Services.
+This article contains an organized list of the best learning resources for .NET developers who are getting started building AI apps. Resources include popular quickstart articles, reference samples, documentation, training courses, and so on.
 
 [!INCLUDE [include-file-from-azure-dev-docs-pr](~/azure-dev-docs-pr/articles/ai/includes/azure-ai-for-developers-dotnet.md)]

@@ -37,7 +37,7 @@ Vector databases and their search features are especially useful in [RAG pattern
 1. Run a vector search across your data, comparing the user prompt embedding to the embeddings your database.
 1. Use a language model such as GPT-35 or GPT-4 to assembly a user friendly completion from the vector search results.
 
-Visit the [Implement Azure OpenAI with RAG using vector search in a .NET app](../tutorials/tutorial-ai-vector-serach.md) tutorial for a hands-on example of this flow.
+Visit the [Implement Azure OpenAI with RAG using vector search in a .NET app](../tutorials/tutorial-ai-vector-search.md) tutorial for a hands-on example of this flow.
 
 Other benefits of the RAG pattern include:
 
@@ -65,5 +65,5 @@ You use [connectors](/semantic-kernel/memories/vector-db#available-connectors-to
 
 ## Related content
 
-- [Implement Azure OpenAI with RAG using vector search in a .NET app](..tutorials/tutorial-ai-vector-serach.md)
+- [Implement Azure OpenAI with RAG using vector search in a .NET app](../tutorials/tutorial-ai-vector-search.md)
 - [More Semantic Kernel .NET connectors](https://github.com/microsoft/semantic-kernel/tree/main/dotnet/src/Connectors)

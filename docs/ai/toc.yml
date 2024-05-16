@@ -3,6 +3,8 @@ items:
   href: index.yml
 - name: Overview
   href: get-started/dotnet-ai-overview.md
+- name: Learning resources and samples
+  href: azure-ai-for-dotnet-developers.md
 - name: Quickstarts
   items:
   - name: Summarize text
@@ -35,8 +37,6 @@ items:
     href: conceptual/rag.md
   - name: Understand OpenAI function calling
     href: conceptual/understanding-openai-functions.md
-  - name: Agents and copilots
-    href: conceptual/agents.md
 - name: How-to articles
   items:
   - name: Authenticate App Service to Azure OpenAI

@@ -1,5 +1,5 @@
 ---
-title: "Finalizers - C# Programming Guide"
+title: "Finalizers"
 description: Finalizers in C# perform any necessary final clean-up when a class instance is being collected by the garbage collector.
 ms.date: 08/20/2021
 helpviewer_keywords: 

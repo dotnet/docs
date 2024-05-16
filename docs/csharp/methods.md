@@ -1,5 +1,5 @@
 ---
-title: Methods - C# Guide
+title: Overview of methods
 description: Overview of methods, method parameters, and method return values
 ms.subservice: fundamentals
 ms.date: 03/16/2021

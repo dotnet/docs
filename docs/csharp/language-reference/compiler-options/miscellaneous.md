@@ -1,6 +1,6 @@
 ---
 description: "Miscellaneous C# Compiler Options. These options provide general options to the compiler."
-title: "C# Compiler Options that don't fit other categories"
+title: "Compiler Options that don't fit other categories"
 ms.date: 03/12/2021
 f1_keywords: 
   - "cs.build.options"

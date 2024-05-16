@@ -1,5 +1,5 @@
 ---
-title: "Creating Variant Generic Interfaces (C#)"
+title: "Creating Variant Generic Interfaces"
 description: Learn how to create variant generic interfaces with covariant or contravariant generic type parameters.
 ms.date: 07/20/2015
 ms.assetid: 30330ec4-9df2-4838-a535-6c406d0ed4df

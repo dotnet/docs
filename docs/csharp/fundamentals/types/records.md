@@ -1,5 +1,5 @@
 ---
-title: "Records in C#"
+title: "Record types"
 description: Learn about C# record types and how to create them. A record is a class that provides value semantics.
 ms.date: 05/24/2023
 helpviewer_keywords: 

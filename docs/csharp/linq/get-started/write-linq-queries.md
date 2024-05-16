@@ -1,5 +1,5 @@
 ---
-title: Use C# to write LINQ queries
+title: Write LINQ queries
 description: Learn how to write LINQ queries in C#.
 ms.date: 04/19/2024
 ---

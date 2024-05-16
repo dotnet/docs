@@ -1,5 +1,5 @@
 ---
-title: "C# operators and expressions - List all C# operators and expression"
+title: "Operators and expressions - List all operators and expression"
 description: "Learn the C# operators and expressions, operator precedence, and operator associativity."
 ms.date: 11/28/2022
 f1_keywords: 

@@ -1,5 +1,5 @@
 ---
-title: Indexers
+title: Overview of indexers
 description: Learn about C# indexers and how they implement indexed properties, which are properties referenced using one or more arguments.
 ms.date: 06/20/2016
 ms.subservice: fundamentals

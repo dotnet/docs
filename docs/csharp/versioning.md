@@ -1,5 +1,5 @@
 ---
-title: C# Versioning - C# Guide
+title: Versioning
 description: Understand how versioning works in C# and .NET
 ms.date: 01/08/2017
 ms.subservice: advanced-concepts

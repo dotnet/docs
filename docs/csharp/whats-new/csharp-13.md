@@ -1,5 +1,5 @@
 ---
-title: What's new in C# 13 - C# Guide
+title: What's new in C# 13
 description: Get an overview of the new features in C# 13. Follow the release of new preview features as .NET 9 and C# 13 previews are released.
 ms.date: 05/02/2024
 ms.topic: whats-new

@@ -35,7 +35,7 @@ The following sections describe attributes, child elements, and parent elements.
 
 |Value|Description|
 |-----------|-----------------|
-|`0`|The runtime uses the faster interop marshaling architecture introduced in the .NET Framework 4, which does not detect and fix incorrect platform invoke declarations. This is the default.|
+|`0`|The runtime uses the faster interop marshalling architecture introduced in the .NET Framework 4, which does not detect and fix incorrect platform invoke declarations. This is the default.|
 |`1`|The runtime uses slower transitions that detect and fix incorrect platform invoke declarations.|
 
 ### Child Elements
@@ -51,9 +51,9 @@ None.
 
 ## Remarks
 
-This element enables you to trade faster interop marshaling for run-time resilience against incorrect platform invoke declarations.
+This element enables you to trade faster interop marshalling for run-time resilience against incorrect platform invoke declarations.
 
-Starting with the .NET Framework 4, a streamlined interop marshaling architecture provides a significant performance improvement for transitions from managed code to unmanaged code. In earlier versions of the .NET Framework, the marshaling layer detected incorrect platform invoke declarations on 32-bit platforms and automatically fixed the stack. The new marshaling architecture eliminates this step. As a result, transitions are very fast, but an incorrect platform invoke declaration can cause a program failure.
+Starting with the .NET Framework 4, a streamlined interop marshalling architecture provides a significant performance improvement for transitions from managed code to unmanaged code. In earlier versions of the .NET Framework, the marshalling layer detected incorrect platform invoke declarations on 32-bit platforms and automatically fixed the stack. The new marshalling architecture eliminates this step. As a result, transitions are very fast, but an incorrect platform invoke declaration can cause a program failure.
 
 To make it easy to detect incorrect declarations during development, the Visual Studio debugging experience has been improved. The [pInvokeStackImbalance](../../../debug-trace-profile/pinvokestackimbalance-mda.md) managed debugging assistant (MDA) notifies you of incorrect platform invoke declarations when your application is running with the debugger attached.
 
@@ -77,6 +77,7 @@ The following example shows how to opt into increased resilience against incorre
 
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
 - [Runtime Settings Schema](index.md)
 - [Configuration File Schema](../index.md)
 - [pInvokeStackImbalance](../../../debug-trace-profile/pinvokestackimbalance-mda.md)

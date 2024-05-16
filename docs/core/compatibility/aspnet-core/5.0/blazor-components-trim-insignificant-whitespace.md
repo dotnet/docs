@@ -1,23 +1,22 @@
 ---
 title: "Breaking change: Blazor: Insignificant whitespace trimmed from components at compile time"
 description: "Learn about the breaking change in ASP.NET Core 5.0 titled Blazor: Insignificant whitespace trimmed from components at compile time"
-author: scottaddie
 ms.author: scaddie
 ms.date: 10/01/2020
 ---
 # Blazor: Insignificant whitespace trimmed from components at compile time
 
-Starting with ASP.NET Core 5.0 Preview 7, the Razor compiler omits insignificant whitespace in Blazor components (*.razor* files) at compile time. For discussion, see issue [dotnet/aspnetcore#23568](https://github.com/dotnet/aspnetcore/issues/23568).
+Starting with ASP.NET Core 5.0, the Razor compiler omits insignificant whitespace in Razor components (*.razor* files) at compile time. For discussion, see issue [dotnet/aspnetcore#23568](https://github.com/dotnet/aspnetcore/issues/23568).
 
 ## Version introduced
 
-5.0 Preview 7
+5.0
 
 ## Old behavior
 
 In 3.x versions of Blazor Server and Blazor WebAssembly, whitespace is honored in a component's source code. Whitespace-only text nodes render in the browser's Document Object Model (DOM) even when there's no visual effect.
 
-Consider the following Blazor component code:
+Consider the following Razor component code:
 
 ```razor
 <ul>

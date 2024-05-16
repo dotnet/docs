@@ -20,7 +20,7 @@ The .NET Framework Data Provider for SQL Server, <xref:System.Data.SqlClient>, s
 
 ### Creating the SQL Server Table
 
-The following Transact-SQL statements creates a table named employees and inserts a row of data. Once you have enabled FILESTREAM storage, you can use this table in conjunction with the code examples that follow. The links to resources in SQL Server Books Online are located at the end of this topic.
+The following Transact-SQL statements creates a table named employees and inserts a row of data. Once you have enabled FILESTREAM storage, you can use this table in conjunction with the code examples that follow.
 
 ```sql
 CREATE TABLE employees
@@ -169,9 +169,9 @@ namespace FileStreamTest
 
 For another sample, see [How to store and fetch binary data into a file stream column](https://www.codeproject.com/Articles/32216/How-to-store-and-fetch-binary-data-into-a-file-str).
 
-## Resources in SQL Server Books Online
+## SQL Server docs resources
 
-The complete documentation for FILESTREAM is located in the following sections in SQL Server Books Online.
+The complete documentation for FILESTREAM is located in the following sections of the SQL Server docs.
 
 |Topic|Description|
 |-----------|-----------------|

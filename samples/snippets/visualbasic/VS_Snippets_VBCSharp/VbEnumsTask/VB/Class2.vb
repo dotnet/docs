@@ -158,7 +158,7 @@
     End Class
 
     '******************************************************************************
-    ' HowtoDeterminetheStringAssociatedwithanEnumerationValue
+    ' HowtoDetermineTheStringAssociatedWithAnEnumerationValue
     ' <snippet2>
     Public Enum flavorEnum
         salty
@@ -232,7 +232,7 @@
 
 
     '******************************************************************************
-    ' HowtoIterateThroughAnEnumerationinVisualBasic
+    ' HowtoIterateThroughAnEnumerationInVisualBasic
     Public Sub Method7()
         ' <snippet7>
         Dim items As Array

@@ -6,7 +6,7 @@ ms.assetid: c8b51f1e-c096-4c42-ad99-0519887bbbc5
 ---
 # ASP.NET Compatibility
 
-This sample demonstrates how to enable ASP.NET Compatibility mode in Windows Communication Foundation (WCF). Services running in ASP.NET Compatibility mode participate fully in the ASP.NET application pipeline and can make use of ASP.NET features such as file/URL authorization, session state, and the <xref:System.Web.HttpContext> class. The <xref:System.Web.HttpContext> class allows access to cookies, sessions, and other ASP.NET features. This mode requires that the bindings use the HTTP transport and the service itself must be hosted in IIS.
+The [ASPNetCompatibility sample](https://github.com/dotnet/samples/tree/main/framework/wcf) demonstrates how to enable ASP.NET Compatibility mode in Windows Communication Foundation (WCF). Services running in ASP.NET Compatibility mode participate fully in the ASP.NET application pipeline and can make use of ASP.NET features such as file/URL authorization, session state, and the <xref:System.Web.HttpContext> class. The <xref:System.Web.HttpContext> class allows access to cookies, sessions, and other ASP.NET features. This mode requires that the bindings use the HTTP transport and the service itself must be hosted in IIS.
 
 In this sample, the client is a console application (an executable) and the service is hosted in Internet Information Services (IIS).
 
@@ -15,22 +15,13 @@ In this sample, the client is a console application (an executable) and the serv
 
 This sample requires a .NET Framework 4 application pool in order to run. To create a new application pool, or to modify the default application pool, follow these steps.
 
-1. Open **Control Panel**.  Open the **Administrative Tools** applet under the **System and Security** heading. Open the **Internet Information Services (IIS) Manager** applet.
+1. Open **Control Panel**. Open the **Administrative Tools** applet under the **System and Security** heading. Open the **Internet Information Services (IIS) Manager** applet.
 
 2. Expand the treeview in the **Connections** pane. Select the **Application Pools** node.
 
 3. To set the default application pool to use .NET Framework 4 (which may cause incompatibility problems with existing sites), right-click the **DefaultAppPool** list item and select **Basic Settings…**. Set the **.Net Framework Version** pull-down to **.Net Framework v4.0.30128** (or later).
 
 4. To create a new application pool that uses .NET Framework 4 (to preserve compatibility for other applications), right-click the **Application Pools** node and select **Add Application Pool…**. Name the new application pool, and set the **.Net Framework Version** pull-down to **.Net Framework v4.0.30128** (or later). After running the setup steps below, right-click the **ServiceModelSamples** application and select **Manage Application**, **Advanced Settings…**. Set the **Application Pool** to the new application pool.
-
-> [!IMPORTANT]
-> The samples may already be installed on your computer. Check for the following (default) directory before continuing.
->
-> `<InstallDrive>:\WF_WCF_Samples`
->
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
->
-> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\Hosting\WebHost\ASPNetCompatibility`
 
 This sample is based on the [Getting Started](getting-started-sample.md), which implements a calculator service. The `ICalculator` contract has been modified as the `ICalculatorSession` contract to allow a set of operations to be performed, while keeping a running result.
 
@@ -121,7 +112,7 @@ Press <ENTER> to terminate client.
 
 3. After the solution has been built, run Setup.bat to set up the ServiceModelSamples Application in IIS 7.0. The ServiceModelSamples directory should now appear as an IIS 7.0 Application.
 
-4. To run the sample in a single- or cross-computer configuration, follow the instructions in [Running the Windows Communication Foundation Samples](running-the-samples.md).
+4. To run the sample in a single-computer or cross-computer configuration, follow the instructions in [Running the Windows Communication Foundation Samples](running-the-samples.md).
 
 ## See also
 

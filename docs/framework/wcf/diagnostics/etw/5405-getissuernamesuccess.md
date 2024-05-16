@@ -6,10 +6,10 @@ ms.assetid: b7904796-0eb2-4d45-a1bb-d13af9ab740d
 ---
 # 5405 - GetIssuerNameSuccess
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|5405|  
 |Keywords|Security|  
 |Level|Verbose|  

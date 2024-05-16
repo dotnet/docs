@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: f99e2f93-fca5-403f-8a0c-770761d4905a
+ms.topic: how-to
 ---
 
 # How to filter on an optional element (LINQ to XML)
@@ -174,8 +174,8 @@ Child Four Text
 - <xref:System.Xml.Linq.XElement.Attribute%2A?displayProperty=nameWithType>
 - <xref:System.Xml.Linq.XContainer.Elements%2A?displayProperty=nameWithType>
 - <xref:System.Xml.Linq.Extensions.Elements%2A?displayProperty=nameWithType>
-- [Standard Query Operators Overview (C#)](../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)
-- [Projection Operations (C#)](../../csharp/programming-guide/concepts/linq/projection-operations.md)
+- [Standard Query Operators Overview (C#)](../../csharp/linq/standard-query-operators/index.md)
+- [Projection Operations (C#)](../../csharp/linq/standard-query-operators/projection-operations.md)
 - [Basic Queries (LINQ to XML) (Visual Basic)](./find-element-specific-attribute.md)
 - [XML Child Axis Property (Visual Basic)](../../visual-basic/language-reference/xml-axis/xml-child-axis-property.md)
 - [XML Attribute Axis Property (Visual Basic)](../../visual-basic/language-reference/xml-axis/xml-attribute-axis-property.md)

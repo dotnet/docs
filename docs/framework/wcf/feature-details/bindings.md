@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Windows Communication Foundation Bindings"
-title: "Windows Communication Foundation Bindings"
+title: "Bindings in WCF"
+titleSuffix: ""
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "WCF [WCF], bindings"
@@ -8,7 +9,7 @@ helpviewer_keywords:
   - "bindings [WCF]"
 ms.assetid: 83639133-89f7-43f0-b4ef-8d9e57c08d25
 ---
-# Windows Communication Foundation Bindings
+# Bindings (WCF)
 
 Windows Communication Foundation (WCF) separates how the software for an application is written from how it communicates with other software. Bindings are used to specify the transport, encoding, and protocol details required for clients and services to communicate with each other. WCF uses bindings to generate the underlying wire representation of the endpoint, so most of the binding details must be agreed upon by the parties that are communicating. The easiest way to achieve this is for clients of a service to use the same binding that the endpoint for the service uses. For more information about how to do this, see [Using Bindings to Configure Services and Clients](../using-bindings-to-configure-services-and-clients.md).  
   

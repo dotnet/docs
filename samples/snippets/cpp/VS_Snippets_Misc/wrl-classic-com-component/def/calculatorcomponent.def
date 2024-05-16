@@ -1,8 +1,0 @@
-// <snippet4>
-LIBRARY
-
-EXPORTS
-    DllGetActivationFactory PRIVATE
-    DllGetClassObject       PRIVATE
-    DllCanUnloadNow         PRIVATE
-// </snippet4>

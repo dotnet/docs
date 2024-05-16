@@ -6,10 +6,10 @@ ms.assetid: 80bcea7c-ae57-4b89-8032-5f9787545b07
 ---
 # 3359 - SecurityImpersonationSuccess
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3359|  
 |Keywords|Security|  
 |Level|Verbose|  

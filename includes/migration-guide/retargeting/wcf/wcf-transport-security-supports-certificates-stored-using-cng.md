@@ -10,20 +10,20 @@ Apps that target the .NET Framework 4.6.1 and earlier but are running on the .NE
 
 ```xml
 <runtime>
-  <AppContextSwitchOverrides value="Switch.System.ServiceModel.DisableCngCertificates=false" />
+  <AppContextSwitchOverrides value="Switch.System.IdentityModel.DisableCngCertificates=false" />
 </runtime>
 ```
 
 This can also be done programmatically with the following code:
 
 ```csharp
-private const string DisableCngCertificates = @"Switch.System.ServiceModel.DisableCngCertificate";
+private const string DisableCngCertificates = @"Switch.System.IdentityModel.DisableCngCertificate";
 
 AppContext.SetSwitch(disableCngCertificates, false);
 ```
 
 ```vb
-Const DisableCngCertificates As String = "Switch.System.ServiceModel.DisableCngCertificates"
+Const DisableCngCertificates As String = "Switch.System.IdentityModel.DisableCngCertificates"
 AppContext.SetSwitch(disableCngCertificates, False)
 ```
 

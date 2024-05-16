@@ -39,7 +39,7 @@ Note that the `try...with` construct is a separate construct from the `try...fin
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet5702.fs)]
 
-In the context of computation expressions, including sequence expressions and asynchronous workflows, **try...finally** expressions can have a custom implementation. For more information, see [Computation Expressions](../computation-expressions.md).
+In the context of computation expressions, including sequence expressions and async expressions, **try...finally** expressions can have a custom implementation. For more information, see [Computation Expressions](../computation-expressions.md).
 
 ## See also
 

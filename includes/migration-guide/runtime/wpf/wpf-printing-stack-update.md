@@ -6,7 +6,7 @@ WPF's Printing APIs using <xref:System.Printing.PrintQueue?displayProperty=fullN
 
 #### Suggestion
 
-To use the old stack in Windows 10 Creators Update, set the <code>UseXpsOMPrinting</code> REG_DWORD value of the <code>HKEY_CURRENT_USER\Software\Microsoft\.NETFramework\Windows Presentation Foundation\Printing</code> registry key to <code>1</code>.
+To use the old stack in Windows 10 Creators Update, set the `UseXpsOMPrinting` REG_DWORD value of the `HKEY_CURRENT_USER\Software\Microsoft\.NETFramework\Windows Presentation Foundation\Printing` registry key to `1`.
 
 | Name    | Value       |
 |:--------|:------------|

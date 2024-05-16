@@ -9,37 +9,37 @@ class MyMethodInfo
     {
         Console.WriteLine("Reflection.MethodInfo");
         // Gets and displays the Type.
-        Type MyType = Type.GetType("System.Reflection.FieldInfo");
+        Type myType = Type.GetType("System.Reflection.FieldInfo");
         // Specifies the member for which you want type information.
-        MethodInfo Mymethodinfo = MyType.GetMethod("GetValue");
-        Console.WriteLine(MyType.FullName + "." + Mymethodinfo.Name);
+        MethodInfo myMethodInfo = myType.GetMethod("GetValue");
+        Console.WriteLine(myType.FullName + "." + myMethodInfo.Name);
         // Gets and displays the MemberType property.
-        MemberTypes Mymembertypes = Mymethodinfo.MemberType;
-        if (MemberTypes.Constructor == Mymembertypes)
+        MemberTypes myMemberTypes = myMethodInfo.MemberType;
+        if (MemberTypes.Constructor == myMemberTypes)
         {
             Console.WriteLine("MemberType is of type All");
         }
-        else if (MemberTypes.Custom == Mymembertypes)
+        else if (MemberTypes.Custom == myMemberTypes)
         {
             Console.WriteLine("MemberType is of type Custom");
         }
-        else if (MemberTypes.Event == Mymembertypes)
+        else if (MemberTypes.Event == myMemberTypes)
         {
             Console.WriteLine("MemberType is of type Event");
         }
-        else if (MemberTypes.Field == Mymembertypes)
+        else if (MemberTypes.Field == myMemberTypes)
         {
             Console.WriteLine("MemberType is of type Field");
         }
-        else if (MemberTypes.Method == Mymembertypes)
+        else if (MemberTypes.Method == myMemberTypes)
         {
             Console.WriteLine("MemberType is of type Method");
         }
-        else if (MemberTypes.Property == Mymembertypes)
+        else if (MemberTypes.Property == myMemberTypes)
         {
             Console.WriteLine("MemberType is of type Property");
         }
-        else if (MemberTypes.TypeInfo == Mymembertypes)
+        else if (MemberTypes.TypeInfo == myMemberTypes)
         {
             Console.WriteLine("MemberType is of type TypeInfo");
         }

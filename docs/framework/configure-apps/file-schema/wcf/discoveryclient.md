@@ -6,7 +6,7 @@ ms.assetid: a78f74c3-1152-4149-ab29-3f12d316caeb
 ---
 # \<discoveryClient>
 
-A configuration element for creating a custom binding that enables a client application to automatically search for a discoverable service and find its address at runtime.  
+A configuration element for creating a custom binding that enables a client application to automatically search for a discoverable service and find its address at run time.  
   
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
@@ -42,7 +42,7 @@ A configuration element for creating a custom binding that enables a client appl
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|discoveryEndpoint|A string that contains the name of the Discovery Endpoint that enables a client application to automatically search for a discoverable service and find its address at runtime.|  
+|discoveryEndpoint|A string that contains the name of the Discovery Endpoint that enables a client application to automatically search for a discoverable service and find its address at run time.|  
   
 ### Child Elements  
   

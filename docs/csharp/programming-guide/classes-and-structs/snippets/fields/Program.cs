@@ -1,6 +1,4 @@
-﻿using System;
-
-//<Snippet1>
+﻿//<Snippet1>
 public class CalendarEntry
 {
 
@@ -23,13 +21,13 @@ public class CalendarEntry
             }
             else
             {
-                throw new ArgumentOutOfRangeException();
+                throw new ArgumentOutOfRangeException("Date");
             }
         }
     }
 
     // public field (Generally not recommended).
-    public string Day;
+    public string? Day;
 
     // Public method also exposes _date field safely.
     // Example call: birthday.SetDate("1975, 6, 30");
@@ -44,7 +42,7 @@ public class CalendarEntry
         }
         else
         {
-            throw new ArgumentOutOfRangeException();
+            throw new ArgumentOutOfRangeException("dateString");
         }
     }
 
@@ -58,7 +56,7 @@ public class CalendarEntry
         }
         else
         {
-            throw new ArgumentOutOfRangeException();
+            throw new ArgumentOutOfRangeException("dateString");
         }
     }
 }

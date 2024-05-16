@@ -6,10 +6,10 @@ ms.assetid: 57636a9a-561e-44aa-aef9-1f1894aaa6dd
 ---
 # 103 - ActivityStateRecord
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |Id|103|  
 |Keywords|EndToEndMonitoring, Troubleshooting, HealthMonitoring, WFTracking|  
 |Level|Information|  

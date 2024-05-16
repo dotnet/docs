@@ -1,7 +1,6 @@
-﻿namespace ConsoleDI.IEnumerableExample
+﻿namespace ConsoleDI.IEnumerableExample;
+
+public interface IMessageWriter
 {
-    public interface IMessageWriter
-    {
-        void Write(string message);
-    }
+    void Write(string message);
 }

@@ -7,7 +7,7 @@ helpviewer_keywords:
   - "compile-time assembly referencing"
   - "assemblies [.NET], strong-named"
   - "assembly binding, strong-named"
-ms.assetid: 4c6a406a-b5eb-44fa-b4ed-4e95bb95a813
+ms.topic: how-to
 dev_langs: 
   - "csharp"
   - "vb"

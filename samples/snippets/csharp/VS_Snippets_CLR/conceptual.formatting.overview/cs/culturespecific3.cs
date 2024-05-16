@@ -1,9 +1,7 @@
 ﻿// <Snippet19>
-using System;
 using System.Globalization;
-using System.Threading;
 
-public class Example
+public class Example6
 {
    public static void Main()
    {
@@ -11,10 +9,9 @@ public class Example
       Decimal value = 1043.17m;
 
       foreach (var cultureName in cultureNames) {
-         // Change the current thread culture.
-         Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(cultureName);
-         Console.WriteLine("The current culture is {0}",
-                           Thread.CurrentThread.CurrentCulture.Name);
+         // Change the current culture.
+         CultureInfo.CurrentCulture = CultureInfo.CreateSpecificCulture(cultureName);
+         Console.WriteLine($"The current culture is {CultureInfo.CurrentCulture.Name}");
          Console.WriteLine(value.ToString("C2"));
          Console.WriteLine();
       }

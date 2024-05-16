@@ -1,1 +1,1 @@
-twoDimensionalArray.[0, 1] <- 1.0
+twoDimensionalArray[0, 1] <- 1.0

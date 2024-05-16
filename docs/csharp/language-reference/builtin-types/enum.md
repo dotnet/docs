@@ -1,5 +1,5 @@
 ---
-title: "Enumeration types - C# reference"
+title: "Enumeration types"
 description: "Learn about C# enumeration types that represent a choice or a combination of choices"
 ms.date: 12/13/2019
 f1_keywords:
@@ -56,7 +56,7 @@ For more information and examples, see the <xref:System.FlagsAttribute?displayPr
 
 The <xref:System.Enum?displayProperty=nameWithType> type is the abstract base class of all enumeration types. It provides a number of methods to get information about an enumeration type and its values. For more information and examples, see the <xref:System.Enum?displayProperty=nameWithType> API reference page.
 
-Beginning with C# 7.3, you can use `System.Enum` in a base class constraint (that is known as the [enum constraint](../../programming-guide/generics/constraints-on-type-parameters.md#enum-constraints)) to specify that a type parameter is an enumeration type. Any enumeration type also satisfies the `struct` constraint, which is used to specify that a type parameter is a non-nullable value type.
+You can use `System.Enum` in a base class constraint (that is known as the [enum constraint](../../programming-guide/generics/constraints-on-type-parameters.md#enum-constraints)) to specify that a type parameter is an enumeration type. Any enumeration type also satisfies the `struct` constraint, which is used to specify that a type parameter is a non-nullable value type.
 
 ## Conversions
 
@@ -70,19 +70,19 @@ For any enumeration type, there exist [boxing and unboxing](../../programming-gu
 
 ## C# language specification
 
-For more information, see the following sections of the [C# language specification](~/_csharplang/spec/introduction.md):
+For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
-- [Enums](~/_csharplang/spec/enums.md)
-- [Enum values and operations](~/_csharplang/spec/enums.md#enum-values-and-operations)
-- [Enumeration logical operators](~/_csharplang/spec/expressions.md#enumeration-logical-operators)
-- [Enumeration comparison operators](~/_csharplang/spec/expressions.md#enumeration-comparison-operators)
-- [Explicit enumeration conversions](~/_csharplang/spec/conversions.md#explicit-enumeration-conversions)
-- [Implicit enumeration conversions](~/_csharplang/spec/conversions.md#implicit-enumeration-conversions)
+- [Enums](~/_csharpstandard/standard/enums.md)
+- [Enum values and operations](~/_csharpstandard/standard/enums.md#196-enum-values-and-operations)
+- [Enumeration logical operators](~/_csharpstandard/standard/expressions.md#12133-enumeration-logical-operators)
+- [Enumeration comparison operators](~/_csharpstandard/standard/expressions.md#12126-enumeration-comparison-operators)
+- [Explicit enumeration conversions](~/_csharpstandard/standard/conversions.md#1033-explicit-enumeration-conversions)
+- [Implicit enumeration conversions](~/_csharpstandard/standard/conversions.md#1024-implicit-enumeration-conversions)
 
 ## See also
 
-- [C# reference](../index.md)
 - [Enumeration format strings](../../../standard/base-types/enumeration-format-strings.md)
 - [Design guidelines - Enum design](../../../standard/design-guidelines/enum.md)
 - [Design guidelines - Enum naming conventions](../../../standard/design-guidelines/names-of-classes-structs-and-interfaces.md#naming-enumerations)
-- [switch statement](../keywords/switch.md)
+- [`switch` expression](../operators/switch-expression.md)
+- [`switch` statement](../statements/selection-statements.md#the-switch-statement)

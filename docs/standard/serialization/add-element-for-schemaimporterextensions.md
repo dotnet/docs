@@ -5,7 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "XML serialization, configuration"
   - "<add> element for <schemaImporterExtensions> element"
-ms.assetid: c828a558-094b-441e-9065-790b87315fa0
+ms.topic: reference
 ---
 # \<add> Element for \<schemaImporterExtensions>
 

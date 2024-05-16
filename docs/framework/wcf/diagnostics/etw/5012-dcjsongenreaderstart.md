@@ -6,10 +6,10 @@ ms.assetid: 6d2ad3c9-47ee-4e77-b1c6-259ab15b0cfb
 ---
 # 5012 - DCJsonGenReaderStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|5012|  
 |Keywords|Serialization|  
 |Level|Verbose|  

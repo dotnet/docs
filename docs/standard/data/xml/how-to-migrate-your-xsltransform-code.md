@@ -9,9 +9,11 @@ ms.assetid: 910beb2f-cfb3-4e8e-9936-f7e0c5f4064a
 ---
 # How to: Migrate Your XslTransform Code
 
-The new XSLT classes have been designed to be very similar to the existing classes. The <xref:System.Xml.Xsl.XslCompiledTransform> class replaces the <xref:System.Xml.Xsl.XslTransform> class. Style sheets are compiled using the <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> method. Transforms are executed using the <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> method. The following procedures show common XSLT tasks, and compare the code using the <xref:System.Xml.Xsl.XslTransform> class versus the <xref:System.Xml.Xsl.XslCompiledTransform> class.  
+The <xref:System.Xml.Xsl.XslCompiledTransform> class replaced the <xref:System.Xml.Xsl.XslTransform> class. This newer class was designed to be very similar to <xref:System.Xml.Xsl.XslTransform>. Style sheets are compiled using the <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> method. Transforms are executed using the <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> method.
+
+The following procedures show common XSLT tasks, and compare the code using the <xref:System.Xml.Xsl.XslTransform> class versus the <xref:System.Xml.Xsl.XslCompiledTransform> class.  
   
-### To transform a file and output to a URI  
+## To transform a file and output to a URI  
   
 - Code using the <xref:System.Xml.Xsl.XslTransform> class.  
   
@@ -23,7 +25,7 @@ The new XSLT classes have been designed to be very similar to the existing class
      [!code-csharp[XML_Migration#10](../../../../samples/snippets/csharp/VS_Snippets_Data/XML_Migration/CS/migration.cs#10)]
      [!code-vb[XML_Migration#10](../../../../samples/snippets/visualbasic/VS_Snippets_Data/XML_Migration/VB/migration.vb#10)]  
   
-### To compile a style sheet and use a resolver with default credentials  
+## To compile a style sheet and use a resolver with default credentials  
   
 - Code using the <xref:System.Xml.Xsl.XslTransform> class.  
   
@@ -35,7 +37,7 @@ The new XSLT classes have been designed to be very similar to the existing class
      [!code-csharp[XML_Migration#12](../../../../samples/snippets/csharp/VS_Snippets_Data/XML_Migration/CS/migration.cs#12)]
      [!code-vb[XML_Migration#12](../../../../samples/snippets/visualbasic/VS_Snippets_Data/XML_Migration/VB/migration.vb#12)]  
   
-### To use an XSLT parameter  
+## To use an XSLT parameter  
   
 - Code using the <xref:System.Xml.Xsl.XslTransform> class.  
   
@@ -47,7 +49,10 @@ The new XSLT classes have been designed to be very similar to the existing class
      [!code-csharp[XML_Migration#14](../../../../samples/snippets/csharp/VS_Snippets_Data/XML_Migration/CS/migration.cs#14)]
      [!code-vb[XML_Migration#14](../../../../samples/snippets/visualbasic/VS_Snippets_Data/XML_Migration/VB/migration.vb#14)]  
   
-### To enable XSLT scripting  
+## To enable XSLT scripting
+
+> [!NOTE]
+> Script blocks are supported only in .NET Framework. They are _not_ supported on .NET Core or .NET 5 or later.
   
 - Code using the <xref:System.Xml.Xsl.XslTransform> class.  
   
@@ -59,7 +64,7 @@ The new XSLT classes have been designed to be very similar to the existing class
      [!code-csharp[XML_Migration#16](../../../../samples/snippets/csharp/VS_Snippets_Data/XML_Migration/CS/migration.cs#16)]
      [!code-vb[XML_Migration#16](../../../../samples/snippets/visualbasic/VS_Snippets_Data/XML_Migration/VB/migration.vb#16)]  
   
-### To load the results into a DOM object  
+## To load the results into a DOM object  
   
 - Code using the <xref:System.Xml.Xsl.XslTransform> class.  
   
@@ -74,7 +79,7 @@ The new XSLT classes have been designed to be very similar to the existing class
      [!code-csharp[XML_Migration#20](../../../../samples/snippets/csharp/VS_Snippets_Data/XML_Migration/CS/migration.cs#20)]
      [!code-vb[XML_Migration#20](../../../../samples/snippets/visualbasic/VS_Snippets_Data/XML_Migration/VB/migration.vb#20)]  
   
-### To stream the results into another data store  
+## To stream the results into another data store  
   
 - Code using the <xref:System.Xml.Xsl.XslTransform> class.  
   

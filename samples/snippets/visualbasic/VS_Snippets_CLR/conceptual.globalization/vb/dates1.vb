@@ -5,11 +5,11 @@ Option Strict On
 Imports System.Globalization
 Imports System.Threading
 
-Module Example
-    Dim dates() As Date = {New Date(2012, 10, 11, 7, 06, 0),
+Module Example3
+    Dim dates() As Date = {New Date(2012, 10, 11, 7, 6, 0),
                             New Date(2012, 10, 11, 18, 19, 0)}
 
-    Public Sub Main()
+    Public Sub Main3()
         Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("hr-HR")
         ShowDayInfo()
         Console.WriteLine()

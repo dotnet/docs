@@ -1,7 +1,7 @@
 ---
 title: LINQ overview - .NET
 description: Language-Integrated Query (LINQ) provides language-level querying capabilities, and a higher-order function API to C# and Visual Basic, that enable you to write expressive declarative code.
-author: cartermp
+author: BillWagner
 ms.author: wiwagn
 ms.date: 06/20/2016
 dev_langs:
@@ -105,7 +105,7 @@ End Function
 
 Writing code to manually traverse the XML document to do this task would be far more challenging.
 
-Interacting with XML isn't the only thing you can do with LINQ Providers. [Linq to SQL](../../framework/data/adonet/sql/linq/index.md) is a fairly bare-bones Object-Relational Mapper (ORM) for an MSSQL Server Database. The [JSON.NET](https://www.newtonsoft.com/json/help/html/LINQtoJSON.htm) library provides efficient JSON Document traversal via LINQ. Furthermore, if there isn't a library that does what you need, you can also [write your own LINQ Provider](/previous-versions/visualstudio/visual-studio-2012/bb546158(v=vs.110))!
+Interacting with XML isn't the only thing you can do with LINQ Providers. [Linq to SQL](../../framework/data/adonet/sql/linq/index.md) is a fairly bare-bones Object-Relational Mapper (ORM) for an MSSQL Server Database. The [Json.NET](https://www.newtonsoft.com/json/help/html/LINQtoJSON.htm) library provides efficient JSON Document traversal via LINQ. Furthermore, if there isn't a library that does what you need, you can also [write your own LINQ Provider](/previous-versions/visualstudio/visual-studio-2012/bb546158(v=vs.110))!
 
 ## Reasons to use the query syntax
 
@@ -177,7 +177,7 @@ var queryCats = from dog in dogs
 
 // Summing the lengths of a set of strings.
 int seed = 0;
-int sumOfStrings = strings.Aggregate(seed, (s1, s2) => s1.Length + s2.Length);
+int sumOfStrings = strings.Aggregate(seed, (partialSum, nextString) => partialSum + nextString.Length);
 ```
 
 ```vb
@@ -198,7 +198,7 @@ Dim queryCats = From dog In dogs
 
 ' Summing the lengths of a set of strings.
 Dim seed As Integer = 0
-Dim sumOfStrings As Integer = strings.Aggregate(seed, Function(s1, s2) s1.Length + s2.Length)
+Dim sumOfStrings As Integer = strings.Aggregate(seed, Function(partialSum, nextString) partialSum + nextString.Length)
 ```
 
 ### Flattening a list of lists
@@ -245,7 +245,6 @@ public class DogHairLengthComparer : IEqualityComparer<Dog>
 
 // Gets all the short-haired dogs between two different kennels.
 var allShortHairedDogs = kennel1.Dogs.Union(kennel2.Dogs, new DogHairLengthComparer());
-
 ```
 
 ```vb

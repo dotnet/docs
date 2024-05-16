@@ -6,10 +6,10 @@ ms.assetid: 7348caaa-add0-473d-8af3-b2dadb68abdb
 ---
 # 5604 - SessionCookieReadingStarted
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|5604|  
 |Keywords|Security|  
 |Level|Verbose|  

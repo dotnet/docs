@@ -10,7 +10,6 @@ Imports System.ServiceModel.Security.Tokens
 Imports System.ServiceModel.Channels
 Imports System.IdentityModel.Policy
 
-<Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 Namespace Microsoft.ServiceModel.Samples
     '<snippet1>
     Public Class MyClientCredentials

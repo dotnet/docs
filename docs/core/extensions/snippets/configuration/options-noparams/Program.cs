@@ -1,26 +1,12 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
-using ExampleLibrary.Extensions.DependencyInjection;
+﻿using ExampleLibrary.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace Options.NoParams
-{
-    class Program
-    {
-        static async Task Main(string[] args)
-        {
-            using IHost host = CreateHostBuilder(args).Build();
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
 
-            // Application code should start here.
+builder.Services.AddMyLibraryService();
 
-            await host.RunAsync();
-        }
+using IHost host = builder.Build();
 
-        static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
-                .ConfigureServices(services =>
-                {
-                    services.AddMyLibraryService();
-                });
-    }
-}
+// Application code should start here.
+
+await host.RunAsync();

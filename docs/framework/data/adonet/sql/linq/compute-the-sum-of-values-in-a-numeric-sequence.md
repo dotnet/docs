@@ -17,7 +17,7 @@ Use the <xref:System.Linq.Enumerable.Sum%2A> operator to compute the sum of nume
   
 - SQL limitations on intermediate results apply to aggregates in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]. Sum of 32-bit integer quantities is not computed by using 64-bit results, and overflow can occur for the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] translation of `Sum`. This possibility exists even if the Standard Query Operator implementation does not cause an overflow for the corresponding in-memory sequence.  
   
-## Example  
+## Example 1
 
  The following example finds the total freight of all orders in the `Order` table.  
   
@@ -26,7 +26,7 @@ Use the <xref:System.Linq.Enumerable.Sum%2A> operator to compute the sum of nume
  [!code-csharp[DLinqQueryExamples#12](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryExamples/cs/Program.cs#12)]
  [!code-vb[DLinqQueryExamples#12](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#12)]  
   
-## Example  
+## Example 2  
 
  The following example finds the total number of units on order for all products.  
   

@@ -72,7 +72,7 @@ typedef enum CorFieldAttr {
 |`fdPinvokeImpl`|Specifies that the field implementation is forwarded through PInvoke.|  
 |`fdReservedMask`|Reserved for internal use by the common language runtime.|  
 |`fdRTSpecialName`|Specifies that the common language runtime metadata internal APIs should check the encoding of the name.|  
-|`fdHasFieldMarshal`|Specifies that the field contains marshaling information.|  
+|`fdHasFieldMarshal`|Specifies that the field contains marshalling information.|  
 |`fdHasDefault`|Specifies that the field has a default value.|  
 |`fdHasFieldRVA`|Specifies that the field has a relative virtual address.|  
   

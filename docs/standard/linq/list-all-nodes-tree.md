@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 3e934371-f4c6-458b-9f6b-f9061b596f5b
+ms.topic: how-to
 ---
 
 # How to list all nodes in a tree (LINQ to XML)

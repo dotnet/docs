@@ -6,7 +6,6 @@ Imports System.ServiceModel.Channels
 Imports System.Security.Permissions
 Imports System.ServiceModel.Security.Tokens
 
-<assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 Public Class Test
 
     Shared Sub Main()

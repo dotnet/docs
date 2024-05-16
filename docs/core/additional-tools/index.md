@@ -21,6 +21,8 @@ The [.NET Uninstall Tool](https://github.com/dotnet/cli-lab/releases) (`dotnet-c
 
 [dotnet-gcdump](../diagnostics/dotnet-gcdump.md) provides a way to collect GC (Garbage Collector) dumps of live .NET processes.
 
+[dotnet-monitor](../diagnostics/dotnet-monitor.md) provides a way to monitor .NET applications in production environments and to collect diagnostic artifacts (for example, dumps, traces, logs, and metrics) on-demand or using automated rules for collecting under specified conditions.
+
 [dotnet-trace](../diagnostics/dotnet-trace.md) collects profiling data from your app that can help in scenarios where you need to find out what causes an app to run slow.
 
 ## .NET Install tool for extension authors
@@ -48,3 +50,7 @@ Like the [Xml Serializer Generator (sgen.exe)](../../standard/serialization/xml-
 ## Generating Self-Signed Certificates
 
 You can use [dotnet dev-certs](self-signed-certificates-guide.md) to create self-signed certificates for development and testing scenarios.
+
+## .NET code coverage tool
+
+You can use [dotnet-coverage](dotnet-coverage.md) to collect [code coverage](../testing/unit-testing-code-coverage.md) from any .NET process.

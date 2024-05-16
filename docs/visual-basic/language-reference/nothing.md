@@ -33,9 +33,9 @@ If a variable is of a reference type, assigning `Nothing` to the variable sets i
 
 [!code-vb[VbVbalrKeywords#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrKeywords/VB/class3.vb#8)]
 
-When checking whether a reference (or nullable value type) variable is `null`, do not use `= Nothing` or `<> Nothing`. Always use `Is Nothing` or `IsNot Nothing`.
+To check whether a reference (or nullable value type) variable is `null`, always use `Is Nothing` or `IsNot Nothing`. Don't use `= Nothing` or `<> Nothing`.
 
-For strings in Visual Basic, the empty string equals `Nothing`. Therefore, `"" = Nothing` is true.
+For strings in Visual Basic, the empty string equals `Nothing`. Therefore, `"" = Nothing` is true. This fact makes it especially important that you choose the correct comparison when you work with strings. Although `myString = Nothing` and `myString <> Nothing` indicate whether a non-empty value is set, we strongly recommend using `String.IsNullOrEmpty(myString)` for this purpose. Use `Is Nothing` and `IsNot Nothing` to determine whether any value, including an empty string, was set.
 
 The following example shows comparisons that use the `Is` and `IsNot` operators:
 

@@ -27,15 +27,15 @@ boolean_expression && boolean_expression
   
 ## Remarks  
 
- Double ampersands (&&) have the same functionality as the AND operator.  
+ Double ampersands (&&) have the same functionality as the `AND` operator.  
   
- The following table shows possible input values and return types.  
+ The following matrix shows possible input value combinations and return values.  
   
-||`TRUE`|`FALSE`|`NULL`|  
-|-|------------|-------------|------------|  
-|`TRUE`|TRUE|FALSE|NULL|  
-|`FALSE`|FALSE|FALSE|FALSE|  
-|`NULL`|NULL|FALSE|NULL|  
+|             | `TRUE` | `FALSE` | `NULL` |
+| ----------- | ------ | ------- | ------ |
+| **`TRUE`**  | TRUE   | FALSE   | NULL   |
+| **`FALSE`** | FALSE  | FALSE   | FALSE  |
+| **`NULL`**  | NULL   | FALSE   | NULL   |
   
 ## Example  
 

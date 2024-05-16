@@ -11,6 +11,8 @@ ms.assetid: 37585bf2-4c27-4dee-849a-af70e3338cc1
 ---
 # Operator Overloads
 
+[!INCLUDE [not-current](includes/not-current.md)]
+
 Operator overloads allow framework types to appear as if they were built-in language primitives.
 
  Although allowed and useful in some situations, operator overloads should be used cautiously. There are many cases in which operator overloading has been abused, such as when framework designers started to use operators for operations that should be simple methods. The following guidelines should help you decide when and how to use operator overloading.

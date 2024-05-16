@@ -722,7 +722,7 @@ The IEHost.dll and IEExec.exe assemblies have been removed from .NET Framework. 
 > |<xref:Microsoft.VisualBasic.CompilerServices.NewLateBinding?displayProperty=nameWithType>|<xref:Microsoft.VisualBasic.CompilerServices.NewLateBinding.FallbackSet%2A>|Use of this member generates a compiler error.<br /><br /> Don't use this method.|
 > |<xref:Microsoft.VisualBasic.CompilerServices.NewLateBinding?displayProperty=nameWithType>|<xref:Microsoft.VisualBasic.CompilerServices.NewLateBinding.FallbackSetComplex%2A>|Use of this member generates a compiler error.<br /><br /> Don't use this method.|
 > |<xref:Microsoft.VisualBasic.CompilerServices.Operators?displayProperty=nameWithType>|<xref:Microsoft.VisualBasic.CompilerServices.Operators.FallbackInvokeUserDefinedOperator%2A>|Use of this member generates a compiler error.<br /><br /> Don't use this method.|
-> |<xref:Microsoft.VisualBasic.MyServices.RegistryProxy?displayProperty=nameWithType>|<xref:Microsoft.VisualBasic.MyServices.RegistryProxy.DynData%2A>|The `DynData` registry key works only on Win9x, which isn't supported by this version of the .NET Framework. Use the `PerformanceData` registry key instead. This property will be removed from a future version of the Framework.|
+> |<xref:Microsoft.VisualBasic.MyServices.RegistryProxy?displayProperty=nameWithType>|<xref:Microsoft.VisualBasic.MyServices.RegistryProxy.DynData%2A>|The `DynData` registry key works only on Win9x, which isn't supported by this version of .NET Framework. Use the `PerformanceData` registry key instead. This property will be removed from a future version of .NET Framework.|
 
 ## See also
 

@@ -21,7 +21,7 @@ topic_type:
 
 Creates a value of the specified type, with an initial value of zero or null.  
   
- This method is obsolete in the .NET Framework version 2.0. Use [ICorDebugEval2::CreateValueForType](icordebugeval2-createvaluefortype-method.md) instead.  
+ This method is obsolete in .NET Framework version 2.0. Use [ICorDebugEval2::CreateValueForType](icordebugeval2-createvaluefortype-method.md) instead.  
   
 ## Syntax  
   

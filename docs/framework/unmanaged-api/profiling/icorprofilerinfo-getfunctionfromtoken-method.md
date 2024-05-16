@@ -19,7 +19,7 @@ topic_type:
 ---
 # ICorProfilerInfo::GetFunctionFromToken Method
 
-Gets the ID of a function. This method is obsolete in the .NET Framework version 2.0. Use the [ICorProfilerInfo2::GetFunctionFromTokenAndTypeArgs](icorprofilerinfo2-getfunctionfromtokenandtypeargs-method.md) method instead.  
+Gets the ID of a function. This method is obsolete in .NET Framework version 2.0. Use the [ICorProfilerInfo2::GetFunctionFromTokenAndTypeArgs](icorprofilerinfo2-getfunctionfromtokenandtypeargs-method.md) method instead.  
   
 ## Syntax  
   

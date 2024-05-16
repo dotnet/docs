@@ -31,12 +31,6 @@ namespace ca1032
         {
             // Add any type-specific logic for inner exceptions.
         }
-
-        protected GoodException(SerializationInfo info,
-           StreamingContext context) : base(info, context)
-        {
-            // Implement type-specific serialization constructor logic.
-        }
     }
     //</snippet1>
 }

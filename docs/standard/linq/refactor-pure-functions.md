@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 2944a0d4-fd33-4e2e-badd-abb0f9be2fcc
+ms.topic: how-to
 ---
 
 # Refactor into pure functions (LINQ to XML)
@@ -154,7 +154,7 @@ One approach that can be very useful is to write functions that are locally impu
 
 An important characteristic of the standard query operators is that they're implemented as pure functions.
 
-For more information, see [Standard Query Operators Overview (C#)](../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md) and [Standard Query Operators Overview (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md).
+For more information, see [Standard Query Operators Overview (C#)](../../csharp/linq/standard-query-operators/index.md) and [Standard Query Operators Overview (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md).
 
 ## See also
 

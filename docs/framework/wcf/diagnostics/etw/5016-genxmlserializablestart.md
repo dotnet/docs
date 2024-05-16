@@ -6,10 +6,10 @@ ms.assetid: e1284ef0-2ec9-4acf-8901-c61521561cce
 ---
 # 5016 - GenXmlSerializableStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|5016|  
 |Keywords|Serialization|  
 |Level|Verbose|  

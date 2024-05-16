@@ -2,7 +2,6 @@
 title: "Service Trace Viewer Tool (SvcTraceViewer.exe)"
 description: Use Service Trace Viewer to merge, view, and filter trace messages in the log so that you can diagnose, repair, and verify WCF service issues.
 ms.date: "03/30/2017"
-ms.assetid: 9027efd3-df8d-47ed-8bcd-f53d55ed803c
 ---
 # Service Trace Viewer Tool (SvcTraceViewer.exe)
 
@@ -12,7 +11,7 @@ Windows Communication Foundation (WCF) Service Trace Viewer Tool helps you analy
 
 Diagnostic traces provide you with information that shows what is happening throughout your application's operation. As the name implies, you can follow operations from their source to destination and through intermediate points as well.
 
-You can configure tracing using the application’s configuration file—either Web.config for Web-hosted applications, or *Appname*.config for self-hosted applications. The following is an example:
+You can configure tracing using the application's configuration file—either Web.config for Web-hosted applications, or *Appname*.config for self-hosted applications. The following is an example:
 
 ```xml
 <system.diagnostics>
@@ -93,7 +92,7 @@ The Service Trace Viewer supports three file types:
 
 #### Event Tracing and Crimson Tracing
 
-The viewer’s native format is the activity tracing format that WCF emits. Traces emitted in a different format must be converted before the viewer displays them. Currently, in addition to the activity tracing format, the viewer supports event tracing and crimson tracing.
+The viewer's native format is the activity tracing format that WCF emits. Traces emitted in a different format must be converted before the viewer displays them. Currently, in addition to the activity tracing format, the viewer supports event tracing and crimson tracing.
 
 When you open a file that does not contain activity traces, the viewer attempts to convert the file. You must specify the name and location of the file that will contain the converted trace data. Once the data has been converted, the viewer displays the content of the new file.
 
@@ -134,7 +133,7 @@ The **Activity** view displays activity names, number of traces in the activity,
 
 By clicking any of the listed activities, the traces in this activity are displayed in the trace pane on the right. You can then select a trace to view its details.
 
-You can select multiple activities by pressing the **Ctrl** or **Shift** key and clicking the desired activities. The trace pane displays all the traces of the selected activities.
+You can select multiple activities by pressing the <kbd>Ctrl</kbd> or <kbd>Shift</kbd> key and clicking the desired activities. The trace pane displays all the traces of the selected activities.
 
 You can double-click an activity to display it in **Graph** View. The alternative way is to select an activity and switch to **Graph** View.
 
@@ -151,7 +150,7 @@ This view enables you to manage trace files in the current project. See the Mana
 
 ##### Message View
 
-This view enables you to view all message log traces, including Action, Date/Time, Process, Acivity and From/To, and navigate to the details of the associated message log trace. You can group the message log traces by Activity Boundary, Process/Thread, or Send & Receive for easier navigation of the message flow.
+This view enables you to view all message log traces, including Action, Date/Time, Process, Activity and From/To, and navigate to the details of the associated message log trace. You can group the message log traces by Activity Boundary, Process/Thread, or Send & Receive for easier navigation of the message flow.
 
 ##### Graph View
 
@@ -177,7 +176,7 @@ To expand or collapse activity transfers,
 
 1. Locate the transfer trace with a "+" sign on the left of the transfer icon.
 
-2. Click the "+", or press **Ctrl** and "+" using the keyboard.
+2. Click the "+", or press <kbd>Ctrl</kbd> and "+" using the keyboard.
 
 3. The next activity appears in the graph.
 
@@ -252,7 +251,7 @@ Only traces that passes through all filters is displayed.
 
 The filter toolbar appears across the top of the tool. If it is not present, you can activate it in the **View** menu. The bar has three components:
 
-- Look for: **Look for** defines the subject to look for in the filter operation. For example, if you want to find all traces that were emitted in the context of process X, set this field to X and the **Search In** field to ‘Process Name’. This field changes to a DateTime selector control when a time-based filter is selected.
+- Look for: **Look for** defines the subject to look for in the filter operation. For example, if you want to find all traces that were emitted in the context of process X, set this field to X and the **Search In** field to 'Process Name'. This field changes to a DateTime selector control when a time-based filter is selected.
 
 - Search in: This field defines the type of filter to apply.
 
@@ -290,7 +289,7 @@ You can click an existing trace and create a filter based on the structure of th
 
 4. The tree view on the left displays the structure of the trace record you selected in step 1. Browse to the element you want to create a condition for. In this example, browse to the ThreadID to be located in the XPath: /E2ETraceEvent/System/Execution/@ThreadID node. Double-click the ThreadID attribute in the tree view. This creates an expression for the attribute on the right of the dialog.
 
-5. Change the parameter field for the ThreadID condition from None to ‘{0}’. This step enables the ThreadID value to be configured when the filter is applied. (See the How to Apply a Filter section) You can define up to four parameters. Conditions are combined using the OR operator.
+5. Change the parameter field for the ThreadID condition from None to '{0}'. This step enables the ThreadID value to be configured when the filter is applied. (See the How to Apply a Filter section) You can define up to four parameters. Conditions are combined using the OR operator.
 
 6. Click **Ok** to create the filter.
 
@@ -311,13 +310,13 @@ The Custom Filters menu allows you to enter XPath filters manually.
 
 ###### Applying a Custom Filter
 
-Once a custom filter has been created, it is accessible though the filter toolbar. Select the filter you want to apply in the **Search In** field of the filter toolbar. For the previous example, select ‘Thread ID’.
+Once a custom filter has been created, it is accessible though the filter toolbar. Select the filter you want to apply in the **Search In** field of the filter toolbar. For the previous example, select 'Thread ID'.
 
 1. Specify the value you are looking for in the **Find What** field. In our example, enter the ID of the thread you want to search for.
 
 2. Click **Filter Now**, and observe the result of the operation.
 
-If your filter uses multiple parameters, enter them using ‘;’ as a separator in the **Find What** field. For example, the following string defines 3 parameters: ‘1;findValue;text’. The viewer applies ‘1’ to the {0} parameter of the filter. ‘findValue’ and ‘text’ are applied to {1} and {2} respectively.
+If your filter uses multiple parameters, enter them using ';' as a separator in the **Find What** field. For example, the following string defines 3 parameters: '1;findValue;text'. The viewer applies '1' to the {0} parameter of the filter. 'findValue' and 'text' are applied to {1} and {2} respectively.
 
 ###### Sharing custom Filters
 
@@ -478,7 +477,7 @@ The following is a list of icons that the Service Trace Viewer tool uses in the 
 |![Environment activity](./media/29fa00ac-cf78-46e5-822d-56222fff61d1.gif "29fa00ac-cf78-46e5-822d-56222fff61d1")|Environment activity: An activity that creates, opens, or closes a WCF host or client. Errors that have happened during these phases will appear in this activity.|
 |![Listen activity](./media/d7b135f6-ec7d-45d7-9913-037ab30e4c26.gif "d7b135f6-ec7d-45d7-9913-037ab30e4c26")|Listen activity: An activity that logs traces related to a listener. Inside this activity, we can view listener information and connection requests.|
 |![Receive Bytes activity](./media/2f628580-b80f-45a7-925b-616c96426c0e.gif "2f628580-b80f-45a7-925b-616c96426c0e")|Receive Bytes activity: An activity that groups all traces related to receiving incoming bytes on a connection between two endpoints. This activity is essential in correlating with transport activities that propagate their activity id such as http.sys. Connection errors such as aborts will appear in this activity.|
-|![Process Message activity](./media/wcfc-executionactivityiconc.GIF "wcfc_ExecutionActivityIconc")|Process Message activity: An activity that groups traces related to creating a WCF message. Errors due to a bad envelope or a malformed message will appear in that activity. Inside this activity, we can inspect message headers to see if an activity id was propagated from the caller. If this is true, when we transfer to Process Action activity (the next icon), we can also assign to that activity the propagated activity id for correlation between the caller and callee’s traces.|
+|![Process Message activity](./media/wcfc-executionactivityiconc.GIF "wcfc_ExecutionActivityIconc")|Process Message activity: An activity that groups traces related to creating a WCF message. Errors due to a bad envelope or a malformed message will appear in that activity. Inside this activity, we can inspect message headers to see if an activity id was propagated from the caller. If this is true, when we transfer to Process Action activity (the next icon), we can also assign to that activity the propagated activity id for correlation between the caller and callee's traces.|
 |![Message Log trace](./media/7c66e994-2476-4260-a0db-98948b9af197.gif "7c66e994-2476-4260-a0db-98948b9af197")|Process Action activity: An activity that groups all traces related to a WCF request across two endpoints. If `propagateActivity` is set to `true` on both endpoints in configuration, all traces from both endpoints are merged into one activity for direct correlation. Such activity will contain errors due to transport or security processing, extending to the user code boundary and back (if a response exists).|
 |![Process Message activity](./media/wcfc-executionactivityiconc.GIF "wcfc_ExecutionActivityIconc")|Execute User Code activity: An activity that groups user code traces for processing a request.|
 

@@ -6,10 +6,10 @@ ms.assetid: 87afe601-5e25-4964-b9c5-aed6d3d35e1c
 ---
 # 3319 - SocketAcceptEnqueued
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3319|  
 |Keywords|TCP|  
 |Level|Verbose|  

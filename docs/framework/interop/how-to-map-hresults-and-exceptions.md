@@ -40,7 +40,7 @@ COM methods report errors by returning HRESULTs; .NET methods report them by thr
     }
     ```
 
- You might encounter a program (in any programming language) that uses both managed and unmanaged code at the same time. For example, the custom marshaler in the following code example uses the `Marshal.ThrowExceptionForHR(int HResult)` method to throw an exception with a specific HRESULT value. The method looks up the HRESULT and generates the appropriate exception type. For example, the HRESULT in the following code fragment generates `ArgumentException`.
+ You might encounter a program (in any programming language) that uses both managed and unmanaged code at the same time. For example, the custom marshaller in the following code example uses the `Marshal.ThrowExceptionForHR(int HResult)` method to throw an exception with a specific HRESULT value. The method looks up the HRESULT and generates the appropriate exception type. For example, the HRESULT in the following code fragment generates `ArgumentException`.
 
 ```cpp
 CMyClass::MethodThatThrows
@@ -49,7 +49,7 @@ CMyClass::MethodThatThrows
 }
 ```
 
- The following table provides the common mappings from HRESULT to its comparable exception class in .NET. HRESULT values without explicit mappings are mapped to `COMException`. The complete up-to-date mapping can be found in the [dotnet/runtime repository](https://github.com/dotnet/runtime/blob/master/src/coreclr/vm/rexcep.h).
+ The following table provides the common mappings from HRESULT to its comparable exception class in .NET. HRESULT values without explicit mappings are mapped to `COMException`. The complete up-to-date mapping can be found in the [dotnet/runtime repository](https://github.com/dotnet/runtime/blob/main/src/coreclr/vm/rexcep.h).
 
 |HRESULT|.NET exception|
 |-------------|--------------------|

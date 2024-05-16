@@ -25,7 +25,7 @@ Public Class BlogService
         Dim feed As New SyndicationFeed("My Blog Feed", "This is a test feed", New Uri("http://SomeURI"), "FeedOneID", new DateTimeOffset(DateTime.Now))
         feed.Authors.Add(New SyndicationPerson("someone@microsoft.com"))
         feed.Categories.Add(New SyndicationCategory("How To Sample Code"))
-        feed.Description = New TextSyndicationContent("This is a sample that illistrates how to expose a feed imports ATOM with WCF")
+        feed.Description = New TextSyndicationContent("This is a sample that illustrates how to expose a feed imports ATOM with WCF")
         ' </Snippet2>
 
         ' <Snippet3>

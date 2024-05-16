@@ -1,14 +1,14 @@
 ---
 title: 'Tutorial: Detect anomalies in phone calls'
-description: Learn how to build an anomaly detection application for time series data. This tutorial creates a .NET Core console application using C# in Visual Studio 2019.
-ms.date: 12/04/2020
+description: Learn how to build an anomaly detection application for time series data. This tutorial creates a .NET console application using C# in Visual Studio 2019.
+ms.date: 07/28/2021
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a developer, I want to use ML.NET in a time-series anomaly detection for number of phone calls so that I can analyze the data for anomaly points to take the appropriate action.
 ---
 # Tutorial: Detect anomalies in time series with ML.NET
 
-Learn how to build an anomaly detection application for time series data. This tutorial creates a .NET Core console application using C# in Visual Studio 2019.
+Learn how to build an anomaly detection application for time series data. This tutorial creates a .NET console application using C# in Visual Studio 2019.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
@@ -17,27 +17,35 @@ In this tutorial, you learn how to:
 > * Detect period for a time series
 > * Detect anomaly for a periodical time series
 
-You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/PhoneCallsAnomalyDetection) repository.
+You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/main/machine-learning/tutorials/PhoneCallsAnomalyDetection) repository.
 
 ## Prerequisites
 
-* [Visual Studio 2019 version 16.7.8 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) with the ".NET Core cross-platform development" workload installed.
+* [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/) with the ".NET Desktop Development" workload installed.
 
-* [The phone-calls.csv dataset](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/AnomalyDetection_PhoneCalls/SrEntireDetection/Data/phone-calls.csv).
+* [The phone-calls.csv dataset](https://github.com/dotnet/machinelearning-samples/blob/main/samples/csharp/getting-started/AnomalyDetection_PhoneCalls/SrEntireDetection/Data/phone-calls.csv).
 
 ## Create a console application
 
-1. Create a **C# .NET Core Console Application** called "PhoneCallsAnomalyDetection".
+1. Create a C# **Console Application** called "PhoneCallsAnomalyDetection". Click the **Next** button.
 
-2. Create a directory named *Data* in your project to save your data set files.
+2. Choose .NET 6 as the framework to use. Click the **Create** button.
 
-3. Install the **Microsoft.ML NuGet Package**:
+3. Create a directory named *Data* in your project to save your data set files.
 
-    [!INCLUDE [mlnet-current-nuget-version](../../../includes/mlnet-current-nuget-version.md)]
+4. Install the **Microsoft.ML NuGet Package** version **1.5.2**:
 
-    In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the Browse tab, search for **Microsoft.ML** and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed. Repeat these steps for **Microsoft.ML.TimeSeries**.
+    1. In Solution Explorer, right-click on your project and select **Manage NuGet Packages**.
+    1. Choose "nuget.org" as the Package source.
+    1. Select the **Browse** tab.
+    1. Search for **Microsoft.ML**.
+    1. Select **Microsoft.ML** from the list of packages and choose version **1.5.2** from the **Version** dropdown.
+    1. Select the **Install** button.
+    1. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
 
-4. Add the following `using` statements at the top of your *Program.cs* file:
+    Repeat these steps for **Microsoft.ML.TimeSeries** version **1.5.2**.
+
+5. Add the following `using` statements at the top of your *Program.cs* file:
 
     [!code-csharp[AddUsings](./snippets/phone-calls-anomaly-detection/csharp/Program.cs#AddUsings "Add necessary usings")]
 
@@ -45,7 +53,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 1. Download the dataset and save it to the *Data* folder you previously created:
 
-    Right click on [*phone-calls.csv*](https://raw.githubusercontent.com/dotnet/machinelearning-samples/master/samples/csharp/getting-started/AnomalyDetection_PhoneCalls/SrEntireDetection/Data/phone-calls.csv) and select "Save Link (or Target) As..."
+    Right click on [*phone-calls.csv*](https://raw.githubusercontent.com/dotnet/machinelearning-samples/main/samples/csharp/getting-started/AnomalyDetection_PhoneCalls/SrEntireDetection/Data/phone-calls.csv) and select "Save Link (or Target) As..."
 
      Make sure you either save the \*.csv file to the *Data* folder, or after you save it elsewhere, move the \*.csv file to the *Data* folder.
 
@@ -89,13 +97,13 @@ Add a new class to your project:
 
     `PhoneCallsPrediction` specifies the prediction data class. For SR-CNN detector, the prediction depends on the [detect mode](xref:Microsoft.ML.TimeSeries.SrCnnDetectMode) specified. In this sample, we select the `AnomalyAndMargin` mode. The output contains seven columns. In most cases, `IsAnomaly`, `ExpectedValue`, `UpperBoundary`, and `LowerBoundary` are informative enough. They tell you if a point is an anomaly, the expected value of the point and the lower / upper boundary region of the point.
 
-5. Add the following code to the line right above the `Main` method to specify the path to your data file:
+5. Add the following code to the line right below the using statements to specify the path to your data file:
 
     [!code-csharp[Declare global variables](./snippets/phone-calls-anomaly-detection/csharp/Program.cs#DeclareGlobalVariables "Declare global variables")]
 
-### Initialize variables in Main
+### Initialize variables
 
-1. Replace the `Console.WriteLine("Hello World!")` line in the `Main` method with the following code to declare and initialize the `mlContext` variable:
+1. Replace the `Console.WriteLine("Hello World!")` line with the following code to declare and initialize the `mlContext` variable:
 
     [!code-csharp[CreateMLContext](./snippets/phone-calls-anomaly-detection/csharp/Program.cs#CreateMLContext "Create the ML Context")]
 
@@ -103,9 +111,9 @@ Add a new class to your project:
 
 ### Load the data
 
-Data in ML.NET is represented as an [IDataView class](xref:Microsoft.ML.IDataView). `IDataView` is a flexible, efficient way of describing tabular data (numeric and text). Data can be loaded from a text file or from other sources (for example, SQL database or log files) to an `IDataView` object.
+Data in ML.NET is represented as an [IDataView interface](xref:Microsoft.ML.IDataView). `IDataView` is a flexible, efficient way of describing tabular data (numeric and text). Data can be loaded from a text file or from other sources (for example, SQL database or log files) to an `IDataView` object.
 
-1. Add the following code as the next line of the `Main` method:
+1. Add the following code below the creation of the `mlContext` variable:
 
     [!code-csharp[LoadData](./snippets/phone-calls-anomaly-detection/csharp/Program.cs#LoadData "loading dataset")]
 
@@ -125,10 +133,10 @@ In the first step, we invoke the `DetectSeasonality` function to determine the p
 
 ### Create the DetectPeriod method
 
-1. Create the `DetectPeriod` method, just below the `Main` method, using the following code:
+1. Create the `DetectPeriod` method at the bottom of the **Program.cs** file using the following code:
 
     ```csharp
-    static void DetectPeriod(MLContext mlContext, IDataView phoneCalls)
+    int DetectPeriod(MLContext mlContext, IDataView phoneCalls)
     {
 
     }
@@ -142,7 +150,11 @@ In the first step, we invoke the `DetectSeasonality` function to determine the p
 
     [!code-csharp[DisplayPeriod](./snippets/phone-calls-anomaly-detection/csharp/Program.cs#DisplayPeriod)]
 
-4. Add the following call to the `DetectPeriod` method in the `Main` method:
+4. Return the period value.
+
+    [!code-csharp[ReturnPeriod](./snippets/phone-calls-anomaly-detection/csharp/Program.cs#L52)]
+
+5. Add the following call to the `DetectPeriod` method below the call to the `LoadFromTextFile()` method:
 
     [!code-csharp[CallDetectPeriod](./snippets/phone-calls-anomaly-detection/csharp/Program.cs#CallDetectPeriod)]
 
@@ -163,7 +175,7 @@ In this step, you use the <xref:Microsoft.ML.TimeSeriesCatalog.DetectEntireAnoma
 1. Create the `DetectAnomaly` method, just below the `DetectPeriod` method, using the following code:
 
     ```csharp
-    static void DetectAnomaly(MLContext mlContext, IDataView phoneCalls, int period)
+    void DetectAnomaly(MLContext mlContext, IDataView phoneCalls, int period)
     {
 
     }
@@ -190,14 +202,14 @@ In this step, you use the <xref:Microsoft.ML.TimeSeriesCatalog.DetectEntireAnoma
     * `Index` is the index of each point.
     * `Anomaly` is the indicator of whether each point is detected as anomaly.
     * `ExpectedValue` is the estimated value of each point.
-    * `LowerBoundary` is the lowest value each point can be to be not anomaly.
-    * `UpperBoundary` is the highest value each point can be to be not anomaly.
+    * `LowerBoundary` is the lowest value each point can be to not be an anomaly.
+    * `UpperBoundary` is the highest value each point can be to not be an anomaly.
 
 6. Iterate through the `predictions` `IEnumerable` and display the results with the following code:
 
     [!code-csharp[DisplayAnomalyDetectionResults](./snippets/phone-calls-anomaly-detection/csharp/Program.cs#DisplayAnomalyDetectionResults)]
 
-7. Add the following call to the `DetectAnomaly` method in the `Main` method:
+7. Add the following call to the `DetectAnomaly` method below the `DetectPeriod()` method call:
 
     [!code-csharp[CallDetectAnomaly](./snippets/phone-calls-anomaly-detection/csharp/Program.cs#CallDetectAnomaly)]
 
@@ -244,7 +256,7 @@ Index   Data    Anomaly AnomalyScore    Mag     ExpectedValue   BoundaryUnit    
 
 Congratulations! You've now successfully built machine learning models for detecting period and anomaly on a periodical series.
 
-You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/PhoneCallsAnomalyDetection) repository.
+You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/main/machine-learning/tutorials/PhoneCallsAnomalyDetection) repository.
 
 In this tutorial, you learned how to:
 > [!div class="checklist"]
@@ -257,4 +269,4 @@ In this tutorial, you learned how to:
 
 Check out the Machine Learning samples GitHub repository to explore a Power Consumption Anomaly Detection sample.
 > [!div class="nextstepaction"]
-> [dotnet/machinelearning-samples GitHub repository](https://github.com/dotnet/machinelearning-samples/tree/master/samples/csharp/getting-started/AnomalyDetection_PowerMeterReadings)
+> [dotnet/machinelearning-samples GitHub repository](https://github.com/dotnet/machinelearning-samples/tree/main/samples/csharp/getting-started/AnomalyDetection_PowerMeterReadings)

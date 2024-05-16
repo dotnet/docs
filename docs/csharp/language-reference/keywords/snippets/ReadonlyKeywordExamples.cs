@@ -2,19 +2,19 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace keywords
+namespace Keywords
 {
     // <SnippetReadonlyField>
     class Age
     {
-        readonly int year;
+        private readonly int _year;
         Age(int year)
         {
-            this.year = year;
+            _year = year;
         }
         void ChangeYear()
         {
-            //year = 1967; // Compile error if uncommented.
+            //_year = 1967; // Compile error if uncommented.
         }
     }
     // </SnippetReadonlyField>
@@ -65,8 +65,8 @@ namespace keywords
         }
 
         // <SnippetReadonlyReturn>
-        private static readonly SamplePoint origin = new SamplePoint(0, 0, 0);
-        public static ref readonly SamplePoint Origin => ref origin;
+        private static readonly SamplePoint s_origin = new SamplePoint(0, 0, 0);
+        public static ref readonly SamplePoint Origin => ref s_origin;
         // </SnippetReadonlyReturn>
 
         private static void ReadonlyRefReturns()
@@ -74,4 +74,17 @@ namespace keywords
             Console.WriteLine(Origin);
         }
     }
+
+    // <SnippetReadonlyRefReadonly>
+    public struct ReadonlyRefReadonlyExample
+    {
+        private int _data;
+
+        public readonly ref readonly int ReadonlyRefReadonly(ref int reference)
+        {
+            // _data = 1; // Compile error if uncommented.
+            return ref reference;
+        }
+    }
+    // </SnippetReadonlyRefReadonly>
 }

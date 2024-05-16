@@ -6,10 +6,10 @@ ms.assetid: 57aa18b4-6512-4f1a-a4e3-71f58a867ed2
 ---
 # 3559 - ServiceActivationStop
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3559|  
 |Keywords|WebHost|  
 |Level|Information|  

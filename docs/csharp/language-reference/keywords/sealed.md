@@ -1,6 +1,6 @@
 ---
 description: "sealed modifier - C# Reference"
-title: "sealed modifier - C# Reference"
+title: "sealed modifier"
 ms.date: 07/20/2015
 f1_keywords: 
   - "sealed"
@@ -34,11 +34,9 @@ When applied to a method or property, the `sealed` modifier must always be used 
 
 Because structs are implicitly sealed, they cannot be inherited.
 
-For more information, see [Inheritance](../../programming-guide/classes-and-structs/inheritance.md).
+For more information, see [Inheritance](../../fundamentals/object-oriented/inheritance.md).
 
 For more examples, see [Abstract and Sealed Classes and Class Members](../../programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md).
-
-## Example
 
 [!code-csharp[csrefKeywordsModifiers#17](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#17)]
 
@@ -64,8 +62,6 @@ To determine whether to seal a class, method, or property, you should generally 
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [Static Classes and Static Class Members](../../programming-guide/classes-and-structs/static-classes-and-static-class-members.md)
 - [Abstract and Sealed Classes and Class Members](../../programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md)

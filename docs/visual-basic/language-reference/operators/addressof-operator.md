@@ -31,13 +31,13 @@ AddressOf procedurename
   
  The `AddressOf` operator can be used as the operand of a delegate constructor or it can be used in a context in which the type of the delegate can be determined by the compiler.  
   
-## Example  
+## Example 1
 
  This example uses the `AddressOf` operator to designate a delegate to handle the `Click` event of a button.  
   
  [!code-vb[VbVbalrDelegates#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDelegates/VB/Class1.vb#8)]  
   
-## Example  
+## Example 2  
 
  The following example uses the `AddressOf` operator to designate the startup function for a thread.  
   

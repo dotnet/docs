@@ -6,7 +6,6 @@ Imports System.Runtime.Serialization
 Imports System.Security.Permissions
 '</snippet0>
 
-<assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 
 
 Friend Class Service

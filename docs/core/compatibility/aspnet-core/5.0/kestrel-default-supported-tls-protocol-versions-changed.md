@@ -1,7 +1,6 @@
 ---
 title: "Breaking change: Kestrel: Default supported TLS protocol versions changed"
 description: "Learn about the breaking change in ASP.NET Core 5.0 titled Kestrel: Default supported TLS protocol versions changed"
-author: scottaddie
 ms.author: scaddie
 ms.date: 10/01/2020
 ---
@@ -38,7 +37,7 @@ Unless your app has a specific reason not to, you should use the new defaults. V
 
 To disable older protocols, take one of the following actions:
 
-* Disable older protocols, such as TLS 1.0, system-wide with the [Windows instructions](../../../../framework/network-programming/tls.md#configuring-schannel-protocols-in-the-windows-registry). It's currently enabled by default on all Windows versions.
+* Disable older protocols, such as TLS 1.0, system-wide with the [Windows instructions](../../../../framework/network-programming/tls.md#configure-schannel-protocols-in-the-windows-registry). It's currently enabled by default on all Windows versions.
 * Manually select which protocols you want to support in code as follows:
 
     ```csharp

@@ -8,6 +8,7 @@ helpviewer_keywords:
 dev_langs: 
   - "csharp"
   - "vb"
+ms.topic: how-to
 ---
 # Use user-filtered exception handlers
 

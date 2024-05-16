@@ -2,7 +2,6 @@
 description: "Learn more about: Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder.Build"
 title: "Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder.Build"
 ms.date: "03/30/2017"
-ms.topic: "reference"
 api_name: 
   - "Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder.Build"
 api_location: 

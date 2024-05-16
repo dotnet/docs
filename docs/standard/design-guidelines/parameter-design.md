@@ -12,6 +12,8 @@ ms.assetid: 3f33bf46-4a7b-43b3-bb78-1ffebe0dcfa6
 ---
 # Parameter Design
 
+[!INCLUDE [not-current](includes/not-current.md)]
+
 This section provides broad guidelines on parameter design, including sections with guidelines for checking arguments. In addition, you should refer to the guidelines described in [Naming Parameters](naming-parameters.md).
 
  ✔️ DO use the least derived parameter type that provides the functionality required by the member.
@@ -34,7 +36,7 @@ This section provides broad guidelines on parameter design, including sections w
 
  This better communicates the relationship between the methods.
 
-### Choosing Between Enum and Boolean Parameters  
+### Choosing Between Enum and Boolean Parameters
 
  ✔️ DO use enums if a member would otherwise have two or more Boolean parameters.
 
@@ -74,7 +76,7 @@ This section provides broad guidelines on parameter design, including sections w
 
  ❌ AVOID using `out` or `ref` parameters.
 
- Using `out` or `ref` parameters requires experience with pointers, understanding how value types and reference types differ, and handling methods with multiple return values. Also, the difference between `out` and `ref` parameters is not widely understood. Framework architects designing for a general audience should not expect users to master working with `out` or `ref` parameters.
+ Using `out` or `ref` parameters requires experience with pointers, understanding how value types and reference types differ, and handling methods with multiple return values. Also, the difference between `out` and `ref` parameters is not widely understood. Framework architects designing for a general audience should not expect users to become proficient in working with `out` or `ref` parameters.
 
  ❌ DO NOT pass reference types by reference.
 

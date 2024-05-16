@@ -1,11 +1,11 @@
 ---
 title: "CLR ETW Providers"
-description: "Review details about the two common language runtime (CLR) event tracing for Windows (ETW) providers: the runtimne provider and the rundown provider."
+description: "Review details about the two common language runtime (CLR) event tracing for Windows (ETW) providers: the runtime provider and the rundown provider."
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "ETW, CLR providers"
   - "CLR ETW providers"
-ms.assetid: 0beafad4-b2c8-47f4-b342-83411d57a51f
+ms.topic: reference
 ---
 # CLR ETW Providers
 

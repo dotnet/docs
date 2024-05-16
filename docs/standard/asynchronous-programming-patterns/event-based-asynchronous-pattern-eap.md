@@ -54,7 +54,7 @@ There are a number of ways to expose asynchronous features to client code. The E
  [Task Parallel Library (TPL)](../parallel-programming/task-parallel-library-tpl.md)  
  Describes a programming model for asynchronous and parallel operations.  
   
- [Threading](../threading/index.md)  
+ [Threading](../threading/managed-threading-basics.md)  
  Describes multithreading features in .NET.  
   
 ## See also

@@ -6,10 +6,10 @@ ms.assetid: 68b4fa1d-eee6-4a2a-8c16-7e9d89f08ab9
 ---
 # 1018 - StartCancelActivityWorkItem
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1018|  
 |Keywords|WFRuntime|  
 |Level|Verbose|  

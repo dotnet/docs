@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 64de5186-b81a-4ddd-8327-8693df59a01b
+ms.topic: how-to
 ---
 
 # How to control namespace prefixes (LINQ to XML)

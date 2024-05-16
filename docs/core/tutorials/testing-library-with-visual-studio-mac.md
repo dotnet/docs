@@ -5,6 +5,8 @@ ms.date: 11/18/2020
 ---
 # Test a .NET class library using Visual Studio
 
+[!INCLUDE [](~/includes/vs-mac-eol.md)]
+
 This tutorial shows how to automate unit testing by adding a test project to a solution.
 
 ## Prerequisites
@@ -167,7 +169,7 @@ Visual Studio starts the test project with the debugger attached. Execution will
 
 ## Additional resources
 
-* [Unit testing in .NET](../testing/index.md)
+- [Unit testing in .NET](../testing/index.md)
 
 ## Next steps
 

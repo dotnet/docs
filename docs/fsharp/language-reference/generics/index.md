@@ -15,7 +15,7 @@ let function-name<type-parameters> parameter-list =
 function-body
 
 // Explicitly generic method.
-[ static ] member object-identifer.method-name<type-parameters> parameter-list [ return-type ] =
+[ static ] member object-identifier.method-name<type-parameters> parameter-list [ return-type ] =
 method-body
 
 // Explicitly generic class, record, interface, structure,

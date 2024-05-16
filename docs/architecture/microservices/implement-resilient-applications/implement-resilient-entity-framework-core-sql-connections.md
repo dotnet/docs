@@ -5,32 +5,26 @@ ms.date: 10/16/2018
 ---
 # Implement resilient Entity Framework Core SQL connections
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 For Azure SQL DB, Entity Framework (EF) Core already provides internal database connection resiliency and retry logic. But you need to enable the Entity Framework execution strategy for each <xref:Microsoft.EntityFrameworkCore.DbContext> connection if you want to have [resilient EF Core connections](/ef/core/miscellaneous/connection-resiliency).
 
 For instance, the following code at the EF Core connection level enables resilient SQL connections that are retried if the connection fails.
 
 ```csharp
-// Startup.cs from any ASP.NET Core Web API
-public class Startup
-{
-    // Other code ...
-    public IServiceProvider ConfigureServices(IServiceCollection services)
+// Program.cs from any ASP.NET Core Web API
+// Other code ...
+builder.Services.AddDbContext<CatalogContext>(options =>
     {
-        // ...
-        services.AddDbContext<CatalogContext>(options =>
+        options.UseSqlServer(builder.Configuration["ConnectionString"],
+        sqlServerOptionsAction: sqlOptions =>
         {
-            options.UseSqlServer(Configuration["ConnectionString"],
-            sqlServerOptionsAction: sqlOptions =>
-            {
-                sqlOptions.EnableRetryOnFailure(
-                maxRetryCount: 10,
-                maxRetryDelay: TimeSpan.FromSeconds(30),
-                errorNumbersToAdd: null);
-            });
+            sqlOptions.EnableRetryOnFailure(
+            maxRetryCount: 10,
+            maxRetryDelay: TimeSpan.FromSeconds(30),
+            errorNumbersToAdd: null);
         });
-    }
-//...
-}
+    });
 ```
 
 ## Execution strategies and explicit transactions using BeginTransaction and multiple DbContexts
@@ -43,7 +37,7 @@ If you try to execute that transaction when using an EF execution strategy (retr
 
 > System.InvalidOperationException: The configured execution strategy 'SqlServerRetryingExecutionStrategy' does not support user initiated transactions. Use the execution strategy returned by 'DbContext.Database.CreateExecutionStrategy()' to execute all the operations in the transaction as a retriable unit.
 
-The solution is to manually invoke the EF execution strategy with a delegate representing everything that needs to be executed. If a transient failure occurs, the execution strategy will invoke the delegate again. For example, the following code show how it's implemented in eShopOnContainers with two multiple DbContexts (\_catalogContext and the IntegrationEventLogContext) when updating a product and then saving the ProductPriceChangedIntegrationEvent object, which needs to use a different DbContext.
+The solution is to manually invoke the EF execution strategy with a delegate representing everything that needs to be executed. If a transient failure occurs, the execution strategy will invoke the delegate again. For example, the following code shows how it's implemented in eShopOnContainers with two multiple DbContexts (\_catalogContext and the IntegrationEventLogContext) when updating a product and then saving the ProductPriceChangedIntegrationEvent object, which needs to use a different DbContext.
 
 ```csharp
 public async Task<IActionResult> UpdateProduct(
@@ -95,7 +89,7 @@ public class CatalogIntegrationEventService : ICatalogIntegrationEventService
     {
         // Use of an EF Core resiliency strategy when using multiple DbContexts
         // within an explicit BeginTransaction():
-        // https://docs.microsoft.com/ef/core/miscellaneous/connection-resiliency
+        // https://learn.microsoft.com/ef/core/miscellaneous/connection-resiliency
         await ResilientTransaction.New(_catalogContext).ExecuteAsync(async () =>
         {
             // Achieving atomicity between original catalog database
@@ -124,7 +118,7 @@ public class ResilientTransaction
     {
         // Use of an EF Core resiliency strategy when using multiple DbContexts
         // within an explicit BeginTransaction():
-        // https://docs.microsoft.com/ef/core/miscellaneous/connection-resiliency
+        // https://learn.microsoft.com/ef/core/miscellaneous/connection-resiliency
         var strategy = _context.Database.CreateExecutionStrategy();
         await strategy.ExecuteAsync(async () =>
         {
@@ -139,7 +133,7 @@ public class ResilientTransaction
 ## Additional resources
 
 - **Connection Resiliency and Command Interception with EF in an ASP.NET MVC Application** \
-  [https://docs.microsoft.com/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/connection-resiliency-and-command-interception-with-the-entity-framework-in-an-asp-net-mvc-application](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/connection-resiliency-and-command-interception-with-the-entity-framework-in-an-asp-net-mvc-application)
+  [https://learn.microsoft.com/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/connection-resiliency-and-command-interception-with-the-entity-framework-in-an-asp-net-mvc-application](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/connection-resiliency-and-command-interception-with-the-entity-framework-in-an-asp-net-mvc-application)
 
 - **Cesar de la Torre. Using Resilient Entity Framework Core SQL Connections and Transactions** \
   <https://devblogs.microsoft.com/cesardelatorre/using-resilient-entity-framework-core-sql-connections-and-transactions-retries-with-exponential-backoff/>

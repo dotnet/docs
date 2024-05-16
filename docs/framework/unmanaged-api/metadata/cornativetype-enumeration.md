@@ -127,7 +127,7 @@ typedef enum CorNativeType {
 |`NATIVE_TYPE_ASANY`|A reference to any native type.|  
 |`NATIVE_TYPE_ARRAY`|A reference to an array with members of an unspecified type.|  
 |`NATIVE_TYPE_LPSTRUCT`|A 32-bit integer pointer to a structure.|  
-|`NATIVE_TYPE_CUSTOMMARSHALER`|A custom marshaler native type.<br /><br /> This must be followed by a string of the following format: "Native type name/0Custom marshaler type name/0Optional cookie/0" or "{Native type GUID}/0Custom marshaler type name/0Optional cookie/0"|  
+|`NATIVE_TYPE_CUSTOMMARSHALER`|A custom marshaller native type.<br /><br /> This must be followed by a string of the following format: "Native type name/0Custom marshaller type name/0Optional cookie/0" or "{Native type GUID}/0Custom marshaller type name/0Optional cookie/0"|  
 |`NATIVE_TYPE_ERROR`|COM Interop.<br /><br /> With ELEMENT_TYPE_I4 this type maps to VT_HRESULT.|  
 |`NATIVE_TYPE_IINSPECTABLE`|A native `IInspectable` type.|  
 |`NATIVE_TYPE_HSTRING`|A native `HString`.|  

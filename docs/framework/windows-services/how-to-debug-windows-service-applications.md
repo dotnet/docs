@@ -5,19 +5,21 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "debugging Windows Service applications"
   - "debugging [Visual Studio], Windows services"
-  - "Windows NT services, debugging"
+  - "Windows services, debugging"
   - "Windows Service applications, debugging"
   - "services, debugging"
 ms.assetid: 63ab0800-0f05-4f1e-88e6-94c73fd920a2
 ---
 # How to: Debug Windows Service Applications
 
+[!INCLUDE [windows-service-disambiguation](../../core/extensions/includes/windows-service-disambiguation.md)]
+
 A service must be run from within the context of the Services Control Manager rather than from within Visual Studio. For this reason, debugging a service is not as straightforward as debugging other Visual Studio application types. To debug a service, you must start the service and then attach a debugger to the process in which it is running. You can then debug your application by using all of the standard debugging functionality of Visual Studio.  
   
 > [!CAUTION]
-> You should not attach to a process unless you know what the process is and understand the consequences of attaching to and possibly killing that process. For example, if you attach to the WinLogon process and then stop debugging, the system will halt because it can’t operate without WinLogon.  
+> You should not attach to a process unless you know what the process is and understand the consequences of attaching to and possibly killing that process. For example, if you attach to the WinLogon process and then stop debugging, the system will halt because it can't operate without WinLogon.  
   
- You can attach the debugger only to a running service. The attachment process interrupts the current functioning of your service; it doesn’t actually stop or pause the service's processing. That is, if your service is running when you begin debugging, it is still technically in the Started state as you debug it, but its processing has been suspended.  
+ You can attach the debugger only to a running service. The attachment process interrupts the current functioning of your service; it doesn't actually stop or pause the service's processing. That is, if your service is running when you begin debugging, it is still technically in the Started state as you debug it, but its processing has been suspended.  
   
  After attaching to the process, you can set breakpoints and use these to debug your code. Once you exit the dialog box you use to attach to the process, you are effectively in debug mode. You can use the Services Control Manager to start, stop, pause and continue your service, thus hitting the breakpoints you've set. You can later remove this dummy service after debugging is successful.  
   
@@ -67,7 +69,7 @@ A service must be run from within the context of the Services Control Manager ra
 
  Attaching to the service's process allows you to debug most, but not all, the code for that service. For example, because the service has already been started, you cannot debug the code in the service's <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method or the code in the `Main` method that is used to load the service this way. One way to work around this limitation is to create a temporary second service in your service application that exists only to aid in debugging. You can install both services, and then start this dummy service to load the service process. Once the temporary service has started the process, you can use the **Debug** menu in Visual Studio to attach to the service process.  
   
- Try adding calls to the <xref:System.Threading.Thread.Sleep%2A> method to delay action until you’re able to attach to the process.  
+ Try adding calls to the <xref:System.Threading.Thread.Sleep%2A> method to delay action until you're able to attach to the process.  
   
  Try changing the program to a regular console application. To do this, rewrite the `Main` method as follows so it can run both as a Windows Service and as a console application, depending on how it's started.  
   

@@ -2,7 +2,7 @@
 description: "Learn more about: Message Security Anonymous"
 title: "Message Security Anonymous"
 ms.date: "03/30/2017"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "WS Security"
 ms.assetid: c321cbf9-8c05-4cce-b5a5-4bf7b230ee03
 ---
@@ -13,7 +13,7 @@ The Message Security Anonymous sample demonstrates how to implement a Windows Co
 > [!NOTE]
 > The setup procedure and build instructions for this sample are located at the end of this topic.
 
- This sample adds a new operation to the calculator interface that returns `True` if the client was not authenticated.
+This sample adds a new operation to the calculator interface that returns `True` if the client was not authenticated.
 
 ```csharp
 public class CalculatorService : ICalculator
@@ -27,7 +27,7 @@ public class CalculatorService : ICalculator
 }
 ```
 
- The service exposes a single endpoint for communicating with the service, defined using a configuration file (Web.config). The endpoint consists of an address, a binding, and a contract. The binding is configured with a `wsHttpBinding` binding. The default security mode for the `wsHttpBinding` binding is `Message`. The `clientCredentialType` attribute is set to `None`.
+The service exposes a single endpoint for communicating with the service, defined using a configuration file (Web.config). The endpoint consists of an address, a binding, and a contract. The binding is configured with a `wsHttpBinding` binding. The default security mode for the `wsHttpBinding` binding is `Message`. The `clientCredentialType` attribute is set to `None`.
 
 ```xml
 <system.serviceModel>
@@ -53,7 +53,7 @@ public class CalculatorService : ICalculator
 </system.serviceModel>
 ```
 
- The credentials to be used for service authentication are specified in the [\<behavior>](../../configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md). The server certificate must contain the same value for the `SubjectName` as the value specified for the `findValue` attribute as shown in the following sample code.
+The credentials to be used for service authentication are specified in the [\<behavior>](../../configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md). The server certificate must contain the same value for the `SubjectName` as the value specified for the `findValue` attribute as shown in the following sample code.
 
 ```xml
 <behaviors>
@@ -74,7 +74,7 @@ public class CalculatorService : ICalculator
 </behaviors>
 ```
 
- The client endpoint configuration consists of an absolute address for the service endpoint, the binding, and the contract. The client security mode for the `wsHttpBinding` binding is `Message`. The `clientCredentialType` attribute is set to `None`.
+The client endpoint configuration consists of an absolute address for the service endpoint, the binding, and the contract. The client security mode for the `wsHttpBinding` binding is `Message`. The `clientCredentialType` attribute is set to `None`.
 
 ```xml
 <system.serviceModel>
@@ -102,9 +102,9 @@ public class CalculatorService : ICalculator
 </system.serviceModel>
 ```
 
- The sample sets the <xref:System.ServiceModel.Security.X509ServiceCertificateAuthentication.CertificateValidationMode%2A> to <xref:System.ServiceModel.Security.X509CertificateValidationMode.PeerOrChainTrust> for authenticating the service's certificate. This is done in the client's App.config file in the `behaviors` section. This means that if the certificate is in the user's Trusted People store, then it is trusted without performing a validation of the certificate's issuer chain. This setting is used here for convenience so that the sample can be run without requiring certificates issued by a certification authority (CA). This setting is less secure than the default, ChainTrust. The security implications of this setting should be carefully considered before using `PeerOrChainTrust` in production code.
+The sample sets the <xref:System.ServiceModel.Security.X509ServiceCertificateAuthentication.CertificateValidationMode%2A> to <xref:System.ServiceModel.Security.X509CertificateValidationMode.PeerOrChainTrust> for authenticating the service's certificate. This is done in the client's App.config file in the `behaviors` section. This means that if the certificate is in the user's Trusted People store, then it is trusted without performing a validation of the certificate's issuer chain. This setting is used here for convenience so that the sample can be run without requiring certificates issued by a certification authority (CA). This setting is less secure than the default, ChainTrust. The security implications of this setting should be carefully considered before using `PeerOrChainTrust` in production code.
 
- The client implementation adds a call to the `IsCallerAnonymous` method and otherwise does not differ from the [WSHttpBinding](wshttpbinding.md) sample.
+The client implementation adds a call to the `IsCallerAnonymous` method and otherwise does not differ from the [WSHttpBinding](wshttpbinding.md) sample.
 
 ```csharp
 // Create a client with a client endpoint configuration.
@@ -129,7 +129,7 @@ Console.WriteLine("Press <ENTER> to terminate client.");
 Console.ReadLine();
 ```
 
- When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.
+When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.
 
 ```console
 IsCallerAnonymous returned: True
@@ -140,9 +140,9 @@ Divide(22,7) = 3.14285714285714
 Press <ENTER> to terminate client.
 ```
 
- The Setup.bat batch file included with the Message Security Anonymous sample enables you to configure the server with a relevant certificate to run a hosted application that requires certificate-based security. The batch file can be run in two modes. To run the batch file in the single-computer mode, type `setup.bat` at the command line. To run it in service mode, type `setup.bat service`. Use this mode when running the sample across computers. See the setup procedure at the end of this topic for details.
+The Setup.bat batch file included with the Message Security Anonymous sample enables you to configure the server with a relevant certificate to run a hosted application that requires certificate-based security. The batch file can be run in two modes. To run the batch file in the single-computer mode, type `setup.bat` at the command line. To run it in service mode, type `setup.bat service`. Use this mode when running the sample across computers. See the setup procedure at the end of this topic for details.
 
- The following provides a brief overview of the different sections of the batch files:
+The following provides a brief overview of the different sections of the batch files:
 
 - Creating the server certificate.
 
@@ -198,39 +198,39 @@ Press <ENTER> to terminate client.
 2. Run Setup.bat from the sample install folder in a Developer Command Prompt for Visual Studio run with administrator privileges. This installs all the certificates required for running the sample.
 
     > [!NOTE]
-    > The setup batch file is designed to be run from a  Developer Command Prompt for Visual Studio. It requires that the path environment variable point to the directory where the SDK is installed. This environment variable is automatically set within a Developer Command Prompt for Visual Studio.  
-  
-3. Verify access to the service using a browser by entering the address `http://localhost/servicemodelsamples/service.svc`.  
-  
-4. Launch Client.exe from \client\bin. Client activity is displayed on the client console application.  
-  
-5. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
-  
-### To run the sample across computers  
-  
-1. Create a directory on the service computer. Create a virtual application named servicemodelsamples for this directory by using the Internet Information Services (IIS) management tool.  
-  
-2. Copy the service program files from \inetpub\wwwroot\servicemodelsamples to the virtual directory on the service computer. Ensure that you copy the files in the \bin subdirectory. Also copy the Setup.bat and Cleanup.bat files to the service computer.  
-  
-3. Create a directory on the client computer for the client binaries.  
-  
-4. Copy the client program files to the client directory on the client computer. Also copy the Setup.bat, Cleanup.bat, and ImportServiceCert.bat files to the client.  
-  
-5. On the server, run `setup.bat service` in a Developer Command Prompt for Visual Studio opened with administrator privileges. Running `setup.bat` with the `service` argument creates a service certificate with the fully-qualified domain name of the computer and exports the service certificate to a file named Service.cer.  
-  
-6. Edit Web.config to reflect the new certificate name (in the `findValue` attribute in the [\<serviceCertificate>](../../configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md)), which is the same as the fully-qualified domain name of the computer.  
-  
-7. Copy the Service.cer file from the service directory to the client directory on the client computer.  
-  
-8. In the Client.exe.config file on the client computer, change the address value of the endpoint to match the new address of your service.  
-  
-9. On the client, run ImportServiceCert.bat in a Developer Command Prompt for Visual Studio opened with administrator privileges. This imports the service certificate from the Service.cer file into the CurrentUser - TrustedPeople store.  
-  
-10. On the client computer, launch Client.exe from a command prompt. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
-  
-### To clean up after the sample  
-  
-- Run Cleanup.bat in the samples folder after you have finished running the sample.  
-  
+    > The setup batch file is designed to be run from a  Developer Command Prompt for Visual Studio. It requires that the path environment variable point to the directory where the SDK is installed. This environment variable is automatically set within a Developer Command Prompt for Visual Studio.
+
+3. Verify access to the service using a browser by entering the address `http://localhost/servicemodelsamples/service.svc`.
+
+4. Launch Client.exe from \client\bin. Client activity is displayed on the client console application.
+
+5. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).
+
+### To run the sample across computers
+
+1. Create a directory on the service computer. Create a virtual application named servicemodelsamples for this directory by using the Internet Information Services (IIS) management tool.
+
+2. Copy the service program files from \inetpub\wwwroot\servicemodelsamples to the virtual directory on the service computer. Ensure that you copy the files in the \bin subdirectory. Also copy the Setup.bat and Cleanup.bat files to the service computer.
+
+3. Create a directory on the client computer for the client binaries.
+
+4. Copy the client program files to the client directory on the client computer. Also copy the Setup.bat, Cleanup.bat, and ImportServiceCert.bat files to the client.
+
+5. On the server, run `setup.bat service` in a Developer Command Prompt for Visual Studio opened with administrator privileges. Running `setup.bat` with the `service` argument creates a service certificate with the fully-qualified domain name of the computer and exports the service certificate to a file named Service.cer.
+
+6. Edit Web.config to reflect the new certificate name (in the `findValue` attribute in the [\<serviceCertificate>](../../configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md)), which is the same as the fully-qualified domain name of the computer.
+
+7. Copy the Service.cer file from the service directory to the client directory on the client computer.
+
+8. In the Client.exe.config file on the client computer, change the address value of the endpoint to match the new address of your service.
+
+9. On the client, run ImportServiceCert.bat in a Developer Command Prompt for Visual Studio opened with administrator privileges. This imports the service certificate from the Service.cer file into the CurrentUser - TrustedPeople store.
+
+10. On the client computer, launch Client.exe from a command prompt. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).
+
+### To clean up after the sample
+
+- Run Cleanup.bat in the samples folder after you have finished running the sample.
+
 > [!NOTE]
 > This script does not remove service certificates on a client when running this sample across computers. If you have run Windows Communication Foundation (WCF) samples that use certificates across computers, be sure to clear the service certificates that have been installed in the CurrentUser - TrustedPeople store. To do this, use the following command: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>` For example: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com.`

@@ -22,7 +22,7 @@ Namespace Replay
         End Sub
 
         '<snippet1>
-        Private Function CreateSymetricBindingForClient() As SecurityBindingElement
+        Private Function CreateSymmetricBindingForClient() As SecurityBindingElement
             Dim b = SecurityBindingElement.CreateKerberosBindingElement()
             With b.LocalClientSettings
                 .DetectReplays = True

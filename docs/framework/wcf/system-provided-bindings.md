@@ -4,7 +4,7 @@ description: "Learn about all of the system-provided Windows Communication Found
 ms.date: "06/05/2018"
 helpviewer_keywords: 
   - "bindings [WCF], system-provided"
-ms.assetid: 2c243746-45ce-4588-995e-c17126a579a6
+ms.topic: reference
 ---
 # System-provided bindings
 

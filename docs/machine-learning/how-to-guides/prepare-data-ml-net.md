@@ -3,8 +3,9 @@ title: Prepare data for building a model
 description: Learn how to use transforms in ML.NET to manipulate and prepare data for additional processing or model building.
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 01/29/2020
+ms.date: 11/06/2022
 ms.custom: mvc, how-to, title-hack-0625
+ms.topic: how-to
 #Customer intent: As a developer, I want to know how I can transform and prepare data with ML.NET
 ---
 
@@ -13,6 +14,62 @@ ms.custom: mvc, how-to, title-hack-0625
 Learn how to use ML.NET to prepare data for additional processing or building a model.
 
 Data is often unclean and sparse. ML.NET machine learning algorithms expect input or features to be in a single numerical vector. Similarly, the value to predict (label), especially when it's categorical data, has to be encoded. Therefore one of the goals of data preparation is to get the data into the format expected by ML.NET algorithms.
+
+## Split data into training & test sets
+
+The following section outlines common problems when training a model known as overfitting and underfitting. Splitting your data and validation your models using a held out set can help you identify and mitigate these problems.
+
+### Overfitting & underfitting
+
+Overfitting and underfitting are the two most common problems you encounter when training a model. Underfitting means the selected trainer is not capable enough to fit training dataset and usually result in a high loss during training and low score/metric on test dataset. To resolve this you need to either select a more powerful model or perform more feature engineering. Overfitting is the opposite, which happens when model learns the training data too well. This usually results in low loss metric during training but high loss on test dataset.
+
+A good analogy for these concepts is studying for an exam. Let's say you knew the questions and answers ahead of time. After studying, you take the test and get a perfect score. Great news! However, when you're given the exam again with the questions rearranged and with slightly different wording you get a lower score. That suggests you memorized the answers and didn't actually learn the concepts you were being tested on. This is an example of overfitting. Underfitting is the opposite where the study materials you were given don't accurately represent what you're evaluated on for the exam. As a result, you resort to guessing the answers since you don't have enough knowledge to answer correctly.
+
+### Split data
+
+Take the following input data and load it into an [`IDataView`](xref:Microsoft.ML.IDataView) called `data`:
+
+```csharp
+var homeDataList = new HomeData[]
+{
+    new()
+    {
+        NumberOfBedrooms = 1f,
+        Price = 100_000f
+    },
+    new()
+    {
+        NumberOfBedrooms = 2f,
+        Price = 300_000f
+    },
+    new()
+    {
+        NumberOfBedrooms = 6f,
+        Price = 600_000f
+    },
+    new()
+    {
+        NumberOfBedrooms = 3f,
+        Price = 300_000f
+    },
+    new()
+    {
+        NumberOfBedrooms = 2f,
+        Price = 200_000f
+    }
+};
+```
+
+To split data into train / test sets, use the <xref:Microsoft.ML.DataOperationsCatalog.TrainTestSplit(Microsoft.ML.IDataView,System.Double,System.String,System.Nullable{System.Int32})> method.
+
+```csharp
+// Apply filter
+TrainTestData dataSplit = mlContext.Data.TrainTestSplit(data, testFraction: 0.2);
+```
+
+The `testFraction` parameter is used to take 0.2 or 20% of the dataset for testing. The remaining 80% is used for training.
+
+The result is <xref:Microsoft.ML.DataOperationsCatalog.TrainTestData> with two IDataViews which you can access via <xref:Microsoft.ML.DataOperationsCatalog.TrainTestData.TrainSet> and <xref:Microsoft.ML.DataOperationsCatalog.TrainTestData.TestSet>.
 
 ## Filter data
 
@@ -23,17 +80,17 @@ Take the following input data and load it into an [`IDataView`](xref:Microsoft.M
 ```csharp
 HomeData[] homeDataList = new HomeData[]
 {
-    new HomeData
+    new ()
     {
         NumberOfBedrooms=1f,
         Price=100000f
     },
-    new HomeData
+    new ()
     {
         NumberOfBedrooms=2f,
         Price=300000f
     },
-    new HomeData
+    new ()
     {
         NumberOfBedrooms=6f,
         Price=600000f
@@ -59,17 +116,17 @@ Take the following input data and load it into an [`IDataView`](xref:Microsoft.M
 ```csharp
 HomeData[] homeDataList = new HomeData[]
 {
-    new HomeData
+    new ()
     {
         NumberOfBedrooms=1f,
         Price=100000f
     },
-    new HomeData
+    new ()
     {
         NumberOfBedrooms=2f,
         Price=300000f
     },
-    new HomeData
+    new ()
     {
         NumberOfBedrooms=6f,
         Price=float.NaN
@@ -108,12 +165,12 @@ Take the following input data and load it into an [`IDataView`](xref:Microsoft.M
 ```csharp
 HomeData[] homeDataList = new HomeData[]
 {
-    new HomeData
+    new ()
     {
         NumberOfBedrooms = 2f,
         Price = 200000f
     },
-    new HomeData
+    new ()
     {
         NumberOfBedrooms = 1f,
         Price = 100000f
@@ -146,17 +203,17 @@ Take the following input data and load it into an [`IDataView`](xref:Microsoft.M
 ```csharp
 HomeData[] homeDataList = new HomeData[]
 {
-    new HomeData
+    new ()
     {
         NumberOfBedrooms=1f,
         Price=100000f
     },
-    new HomeData
+    new ()
     {
         NumberOfBedrooms=2f,
         Price=300000f
     },
-    new HomeData
+    new ()
     {
         NumberOfBedrooms=6f,
         Price=600000f
@@ -196,12 +253,12 @@ The transforms used to perform key value mapping are [MapValueToKey](xref:Micros
 
 One hot encoding takes a finite set of values and maps them onto integers whose binary representation has a single `1` value in unique positions in the string. One hot encoding can be the best choice if there is no implicit ordering of the categorical data. The following table shows an example with zip codes as raw values.
 
-|Raw value|One hot encoded value|
-|---------|---------------------|
-|98052|00...01|
-|98100|00...10|
-|...|...|
-|98109|10...00|
+| Raw value | One hot encoded value |
+|-----------|-----------------------|
+| 98052     | 00...01               |
+| 98100     | 00...10               |
+| ...       | ...                   |
+| 98109     | 10...00               |
 
 The transform to convert categorical data to one-hot encoded numbers is [`OneHotEncoding`](xref:Microsoft.ML.CategoricalCatalog.OneHotEncoding%2A).
 
@@ -271,11 +328,11 @@ Using the first entry as an example, the following is a detailed description of 
 
 **Original Text: This is a good product**
 
-|Transform | Description | Result
-|--|--|--|
-|1. NormalizeText | Converts all letters to lowercase by default | this is a good product
-|2. TokenizeWords | Splits string into individual words | ["this","is","a","good","product"]
-|3. RemoveDefaultStopWords | Removes stopwords like *is* and *a*. | ["good","product"]
-|4. MapValueToKey | Maps the values to keys (categories) based on the input data |  [1,2]
-|5. ProduceNGrams | Transforms text into sequence of consecutive words | [1,1,1,0,0]
-|6. NormalizeLpNorm | Scale inputs by their lp-norm | [ 0.577350529, 0.577350529, 0.577350529, 0, 0 ]
+| Transform                 | Description                                  | Result                             |
+|---------------------------|----------------------------------------------|------------------------------------|
+| 1. NormalizeText          | Converts all letters to lowercase by default | this is a good product             |
+| 2. TokenizeWords          | Splits string into individual words          | ["this","is","a","good","product"] |
+| 3. RemoveDefaultStopWords | Removes stop words like *is* and *a*.        | ["good","product"]                 |
+|4. MapValueToKey | Maps the values to keys (categories) based on the input data | [1,2] |
+|5. ProduceNGrams | Transforms text into sequence of consecutive words | [1,1,1,0,0] |
+|6. NormalizeLpNorm | Scale inputs by their lp-norm | [ 0.577350529, 0.577350529, 0.577350529, 0, 0 ] |

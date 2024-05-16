@@ -37,13 +37,13 @@ The following sections describe attributes, child elements, and parent elements.
 | ---------- | ------ | ----------- |
 | "AnchorLayout.DisableSinglePassControlScaling" | "true"&#124;"false" | Indicates whether anchored controls are scaled in a single pass. "true" to disable single pass scaling; otherwise, false. See the "Single pass scaling" section in the [Remarks](#remarks) for more information. |
 | "DpiAwareness" | "PerMonitorV2"&#124;"false" | Indicates whether an application is DPI-aware. Set the key to "PerMonitorV2" to support Dpi awareness; otherwise, set it to "false". DPI awareness is an opt-in feature; to take advantage of Windows Forms' high DPI support, you should set its value to "PerMonitorV2". See the [Remarks](#remarks) section for more information. |
-| "CheckedListBox.DisableHighDpiImprovements" | "true"&#124;"false" | Indicates whether the <xref:System.Windows.Forms.CheckedListBox> control takes advantage of scaling and layout improvements introduced in the .NET Framework 4.7. "true" to opt out of scaling and layout improvements; otherwise, "false". |
-| "DataGridView.DisableHighDpiImprovements" | "true"&#124;"false" | Indicates whether the <xref:System.Windows.Forms.DataGridView> control scaling and layout improvements introduced in the .NET Framework 4.7. "true" to opt out of DPI awareness; "false" otherwise. |
+| "CheckedListBox.DisableHighDpiImprovements" | "true"&#124;"false" | Indicates whether the <xref:System.Windows.Forms.CheckedListBox> control takes advantage of scaling and layout improvements introduced in .NET Framework 4.7. "true" to opt out of scaling and layout improvements; otherwise, "false". |
+| "DataGridView.DisableHighDpiImprovements" | "true"&#124;"false" | Indicates whether the <xref:System.Windows.Forms.DataGridView> control scaling and layout improvements introduced in .NET Framework 4.7. "true" to opt out of DPI awareness; "false" otherwise. |
 | "DisableDpiChangedMessageHandling" | "true"&#124;"false" | "true" to opt out of receiving messages related to DPI scaling changes; "false" otherwise. See the [Remarks](#remarks) section for more information. |
 | "EnableWindowsFormsHighDpiAutoResizing" | "true"&#124;"false" | Indicates whether a Windows Forms application is automatically resized due to DPI scaling changes. "true" to enable automatic resizing; otherwise, false. |
 | "Form.DisableSinglePassControlScaling" | "true"&#124;"false" | Indicates whether the <xref:System.Windows.Forms.Form> is scaled in a single pass. "true" to disable single-pass scaling; otherwise, false. See the "Single pass scaling" section in the [Remarks](#remarks) for more information. |
 | "MonthCalendar.DisableSinglePassControlScaling" | "true"&#124;"false" | Indicates whether the <xref:System.Windows.Forms.MonthCalendar> control is scaled in a single pass. "true" to disable single-pass scaling; otherwise, false. See the "Single pass scaling" section in the [Remarks](#remarks) for more information. |
-| "Toolstrip.DisableHighDpiImprovements" | "true"&#124;"false" | Indicates whether the <xref:System.Windows.Forms.ToolStrip> control takes advantage of scaling and layout improvements introduced in the .NET Framework 4.7. "true" to opt out of DPI awareness; "false" otherwise. |
+| "Toolstrip.DisableHighDpiImprovements" | "true"&#124;"false" | Indicates whether the <xref:System.Windows.Forms.ToolStrip> control takes advantage of scaling and layout improvements introduced in .NET Framework 4.7. "true" to opt out of DPI awareness; "false" otherwise. |
 
 ### Child elements
 
@@ -57,7 +57,7 @@ None.
 
 ## Remarks
 
-Starting with the .NET Framework 4.7, the `<System.Windows.Forms.ApplicationConfigurationSection>` element allows you to configure Windows Forms applications to take advantage of features added in recent releases of the .NET Framework.
+Starting with .NET Framework 4.7, the `<System.Windows.Forms.ApplicationConfigurationSection>` element allows you to configure Windows Forms applications to take advantage of features added in recent releases of the .NET Framework.
 
 The `<System.Windows.Forms.ApplicationConfigurationSection>` element allows you to add one or more child `<add>` elements, each of which defines a specific configuration setting.
 
@@ -65,7 +65,7 @@ For an overview of Windows Forms High DPI support, see [High DPI Support in Wind
 
 ### DpiAwareness
 
-Windows Forms apps that run under Windows versions starting with Windows 10 Creators Edition and target versions of the .NET Framework starting with the .NET Framework 4.7 can be configured to take advantage of high DPI improvements introduced in the .NET Framework 4.7. These include:
+Windows Forms apps that run under Windows versions starting with Windows 10 Creators Edition and target versions of the .NET Framework starting with the .NET Framework 4.7 can be configured to take advantage of high DPI improvements introduced in .NET Framework 4.7. These include:
 
 - Support for dynamic DPI scenarios in which the user changes the DPI or scale factor after a Windows Forms application has been launched.
 
@@ -97,11 +97,11 @@ For more information on taking advantage of High DPI support in Windows Forms ap
 
 ### DisableDpiChangedMessageHandling
 
-Starting with the .NET Framework 4.7, Windows Forms controls raise a number of events related to changes in DPI scaling. These include the <xref:System.Windows.Forms.Control.DpiChangedAfterParent>, <xref:System.Windows.Forms.Control.DpiChangedBeforeParent>, and <xref:System.Windows.Forms.Form.DpiChanged> events. The value of the `DisableDpiChangedMessageHandling` key determines whether these events are raised in a Windows Forms application.
+Starting with .NET Framework 4.7, Windows Forms controls raise a number of events related to changes in DPI scaling. These include the <xref:System.Windows.Forms.Control.DpiChangedAfterParent>, <xref:System.Windows.Forms.Control.DpiChangedBeforeParent>, and <xref:System.Windows.Forms.Form.DpiChanged> events. The value of the `DisableDpiChangedMessageHandling` key determines whether these events are raised in a Windows Forms application.
 
 ### Single-pass scaling
 
-Single or multi-pass scaling influences the perceived responsiveness of the user interface and the visual appearance of user interface elements as they are scaled. Starting with the .NET Framework 4.7, Windows Forms uses single pass scaling. In previous versions of the .NET Framework, scaling was performed through multiple passes, which caused some controls to be scaled more than was necessary. Single-pass scaling should only be disabled if your app depends on the old behavior.
+Single or multi-pass scaling influences the perceived responsiveness of the user interface and the visual appearance of user interface elements as they are scaled. Starting with .NET Framework 4.7, Windows Forms uses single pass scaling. In previous versions of the .NET Framework, scaling was performed through multiple passes, which caused some controls to be scaled more than was necessary. Single-pass scaling should only be disabled if your app depends on the old behavior.
 
 ## See also
 

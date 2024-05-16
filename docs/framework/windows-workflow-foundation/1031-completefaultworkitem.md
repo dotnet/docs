@@ -6,10 +6,10 @@ ms.assetid: 95f4ccb0-6be4-41f3-9330-fae43165828f
 ---
 # 1031 - CompleteFaultWorkItem
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1031|  
 |Keywords|WFRuntime|  
 |Level|Verbose|  

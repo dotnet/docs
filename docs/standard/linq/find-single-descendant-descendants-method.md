@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 6f735be9-0293-4680-8007-ca9d96bfebed
+ms.topic: how-to
 ---
 
 # How to find a single descendant using the Descendants method (LINQ to XML)

@@ -18,7 +18,7 @@ The Peer-to-Peer Collaboration Infrastructure is a simplified implementation of 
   
 - A request to host a session is sent, somehow, and the host peer agrees to manage collaboration activity.  
   
-- The host invites contacts on the subnet (including the requestor) to a session.  
+- The host invites contacts on the subnet (including the requester) to a session.  
   
 - All peers who want to collaborate may add the host to their contact managers.  
   

@@ -6,10 +6,10 @@ ms.assetid: 0293dd4e-e6ae-473a-b3d6-c2d38f9bd875
 ---
 # 115 - WorkflowInstanceAbortedRecordWithId
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|115|  
 |Keywords|HealthMonitoring, WFTracking|  
 |Level|Warning|  

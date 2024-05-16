@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 00cf5555-374e-4369-bf93-7bd2e7f21db3
+ms.topic: how-to
 ---
 
 # How to find an element with a specific child element (LINQ to XML)
@@ -91,5 +91,5 @@ This example produces the following output:
 
 - <xref:System.Xml.Linq.XElement.Attribute%2A>
 - <xref:System.Xml.Linq.XContainer.Elements%2A>
-- [Standard Query Operators Overview](../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)
-- [Projection Operations](../../csharp/programming-guide/concepts/linq/projection-operations.md)
+- [Standard Query Operators Overview](../../csharp/linq/standard-query-operators/index.md)
+- [Projection Operations](../../csharp/linq/standard-query-operators/projection-operations.md)

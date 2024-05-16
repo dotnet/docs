@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 067e6da2-ee32-486d-803c-e611b328e39a
+ms.topic: how-to
 ---
 
 # How to chain axis method calls (LINQ to XML)

@@ -6,10 +6,10 @@ ms.assetid: 9f66cd1c-950b-4073-a1c9-62eba33dbc22
 ---
 # 1442 - ReceiveRetryCountReached
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1442|  
 |Keywords|Quota|  
 |Level|Warning|  

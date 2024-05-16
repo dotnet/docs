@@ -6,10 +6,10 @@ ms.assetid: 7f104c23-cee3-4e22-89ad-4934b8a587bb
 ---
 # 4807 - DiscoveryMessageWithInvalidReplyTo
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4807|  
 |Keywords|Discovery|  
 |Level|Warning|  

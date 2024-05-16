@@ -16,6 +16,13 @@ early as possible in the development cycle. The sooner you find any potential is
 in your code, the easier they are to fix. The analyzers flag issues in existing code and
 warn about new issues as you continue development.
 
+> [!NOTE]
+> This article makes use of the now deprecated [Microsoft.NetFramework.Analyzers NuGet
+package](https://www.nuget.org/packages/Microsoft.NetFramework.Analyzers/). Starting in .NET 5,
+NET analyzers are included with the .NET SDK. If needed, you can use the [Microsoft.CodeAnalysis.NetAnalyzers
+NuGet package](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers)
+instead. For more information, see [Code analysis in .NET](../fundamentals/code-analysis/overview.md).
+
 ## Install and configure analyzers
 
 The .NET Framework Analyzer is delivered in the [Microsoft.NetFramework.Analyzers](https://www.nuget.org/packages/Microsoft.NetFramework.Analyzers/) NuGet package. This package provides analyzers that are specific to .NET Framework APIs, which includes security analyzers. The package is included with the [Microsoft.CodeAnalysis.FxCopAnalyzers package](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers), so if you install that package, there's no need to install the .NET Framework analyzers separately.
@@ -53,7 +60,7 @@ The analyzers examine the code in your solution and surface warnings with a `CA`
 
 - [CA2235: Mark all non-serializable fields](../fundamentals/code-analysis/quality-rules/ca2235.md)
 
-- [CA2237: Mark ISerializable types with serializable](../fundamentals/code-analysis/quality-rules/ca2237.md)
+- [CA2237: Mark ISerializable types with SerializableAttribute](../fundamentals/code-analysis/quality-rules/ca2237.md)
 
 - [CA3075: Insecure DTD processing in XML](../fundamentals/code-analysis/quality-rules/ca3075.md)
 

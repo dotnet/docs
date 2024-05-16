@@ -6,10 +6,10 @@ ms.assetid: eca50fa7-5276-4759-ad1c-e490b9bd1f82
 ---
 # 1131 - InvokeMethodUseAsyncPattern
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1131|  
 |Keywords|WFRuntime|  
 |Level|Information|  

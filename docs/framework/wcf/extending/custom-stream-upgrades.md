@@ -22,7 +22,7 @@ Stream-oriented transports such as TCP and Named Pipes operate on a continuous s
   
 3. An upgrade *Provider* creates the *Initiator* on the client and the *Acceptor* on the server.  
   
-4. A stream upgrade *Binding Element* is added to the bindings on the service and the client, and creates the provider at runtime.  
+4. A stream upgrade *Binding Element* is added to the bindings on the service and the client, and creates the provider at run time.  
   
  Note that in the case of multiple upgrades, the Initiator and Acceptor encapsulate state machines to enforce which upgrade transitions are valid for each Initiation.  
   

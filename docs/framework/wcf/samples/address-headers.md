@@ -7,7 +7,7 @@ ms.assetid: b0c94d4a-3bde-4b4d-bb6d-9f12bc3a6940
 
 # Address Headers
 
-The Address Headers sample demonstrates how clients can pass reference parameters to a service using Windows Communication Foundation (WCF).
+The [Address Headers sample](https://github.com/dotnet/samples/tree/main/framework/wcf/Basic/Client/AddressHeaders/CS) demonstrates how clients can pass reference parameters to a service using Windows Communication Foundation (WCF).
 
 > [!NOTE]
 > The setup procedure and build instructions for this sample are located at the end of this topic.
@@ -72,12 +72,3 @@ The code iterates over all the headers on the incoming message, looking for head
 2. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).
 
 3. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](running-the-samples.md).
-
-> [!IMPORTANT]
-> The samples may already be installed on your machine. Check for the following (default) directory before continuing.
->
-> `<InstallDrive>:\WF_WCF_Samples`
->
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
->
-> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Client\AddressHeaders`

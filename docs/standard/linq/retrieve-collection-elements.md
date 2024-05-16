@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: b849668c-7976-4974-b8e1-1cd587d34258
+ms.topic: how-to
 ---
 
 # How to retrieve a collection of elements (LINQ to XML)

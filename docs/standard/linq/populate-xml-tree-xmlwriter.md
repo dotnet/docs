@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: cd5674d1-5c54-4efc-ba68-e23b2875295f
+ms.topic: how-to
 ---
 
 # How to populate an XML tree with an XmlWriter (LINQ to XML)

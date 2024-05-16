@@ -6,7 +6,7 @@ ms.assetid: 5ff139f9-8806-47bc-8f33-47fe6c436b92
 ---
 # Circular Tracing
 
-This sample demonstrates the implementation of a circular buffer trace listener. A common scenario for production services is to have services that are available for long periods of time and to have trace logging enabled at a low level. These services consume a lot of disk space. When troubleshooting a service, the most recent data in the trace log is relevant to solving a problem. This sample demonstrates an implementation of a circular buffer trace listener in which only the most recent traces are kept on disk up to a configurable amount of data. This sample is based on the [Getting Started](getting-started-sample.md) and includes a custom tracing listener.
+The [CircularTracing sample](https://github.com/dotnet/samples/tree/main/framework/wcf) demonstrates the implementation of a circular buffer trace listener. A common scenario for production services is to have services that are available for long periods of time and to have trace logging enabled at a low level. These services consume a lot of disk space. When troubleshooting a service, the most recent data in the trace log is relevant to solving a problem. This sample demonstrates an implementation of a circular buffer trace listener in which only the most recent traces are kept on disk up to a configurable amount of data. This sample is based on the [Getting Started](getting-started-sample.md) and includes a custom tracing listener.
 
 > [!NOTE]
 > The setup procedure and build instructions for this sample are located at the end of this topic.
@@ -47,15 +47,6 @@ A service can be configured to use the Circular Buffer Trace Listener by adding 
 2. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).
 
 3. To run the sample in a single- or cross-computer configuration, follow the instructions in [Running the Windows Communication Foundation Samples](running-the-samples.md).
-
-> [!IMPORTANT]
-> The samples may already be installed on your computer. Check for the following (default) directory before continuing.
->
-> `<InstallDrive>:\WF_WCF_Samples`
->
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
->
-> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\CircularTracing`
 
 ## See also
 

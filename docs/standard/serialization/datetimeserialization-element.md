@@ -6,7 +6,7 @@ helpviewer_keywords:
   - "dateTimeSerialization element"
   - "XML serialization, configuration"
   - "<dateTimeSerialization> element"
-ms.assetid: 90fda55c-7730-41e9-bc4b-6423a4b920af
+ms.topic: reference
 ---
 # \<dateTimeSerialization> Element
 

@@ -25,12 +25,12 @@ ms.assetid: 63c7c695-44b6-4f31-bb9c-00f2763f525e
 SyndicationFeedFormatter GetTemplate1();  
 ```  
   
- To turn on the WCF WEB HTTP Help page, you must add an endpoint behavior to your service's endpoints. This can be done in configuration or code. To enable the WCF WEB HTTP Help age in configuration, add an endpoint behavior with a `<webHttp>` element, set `enableHelp` to `true`, and add an endpoint and configure it to use the endpoint behavior. The following configuration code shows how to do this.  
+ To turn on the WCF WEB HTTP Help page, you must add an endpoint behavior to your service's endpoints. This can be done in configuration or code. To enable the WCF WEB HTTP Help age in configuration, add an endpoint behavior with a `<webHttp>` element, set `helpEnabled` to `true`, and add an endpoint and configure it to use the endpoint behavior. The following configuration code shows how to do this.  
   
 ```xml  
 <endpointBehaviors>  
    <behavior name="RESTEndpointBehavior">  
-      <webHttp enableHelp="true"/>  
+      <webHttp helpEnabled="true"/>  
    </behavior>  
 </endpointBehaviors>  
 <!-- ... -->  

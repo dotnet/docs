@@ -6,10 +6,10 @@ ms.assetid: 2f7d89d7-3a6a-40fe-9610-5424eb6bbf61
 ---
 # 223 - OperationFaulted
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|223|  
 |Keywords|EndToEndMonitoring, HealthMonitoring, Troubleshooting, ServiceModel|  
 |Level|Warning|  

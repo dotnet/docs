@@ -152,7 +152,7 @@ End Class
 
 ```csharp
 // Create a client object with the given client endpoint configuration.
-CalculatorClient calcClient = new CalculatorClient("CalculatorEndpoint"));
+CalculatorClient calcClient = new CalculatorClient("CalculatorEndpoint");
 // Call the Add service operation.
 double value1 = 100.00D;
 double value2 = 15.99D;

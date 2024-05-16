@@ -6,13 +6,10 @@ using System.ServiceModel;
 using System.ServiceModel.Channels;
 using System.ServiceModel.Security;
 using System.ServiceModel.Security.Tokens;
-using System.Security.Permissions;
 // </Snippet1>
-[assembly: SecurityPermission(
-   SecurityAction.RequestMinimum, Execution = true)]
+
 namespace Samples
 {
-
     public sealed class CustomBindingCreator
     {
         private CustomBindingCreator() { }

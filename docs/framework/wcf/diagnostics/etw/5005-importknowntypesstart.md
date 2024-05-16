@@ -6,10 +6,10 @@ ms.assetid: e70c9c92-833d-4e88-b129-1decf7a0491d
 ---
 # 5005 - ImportKnownTypesStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|5005|  
 |Keywords|Serialization|  
 |Level|Verbose|  

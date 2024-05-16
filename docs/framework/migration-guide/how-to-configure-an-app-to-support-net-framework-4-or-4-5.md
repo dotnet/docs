@@ -25,7 +25,7 @@ All apps that host the common language runtime (CLR) need to start, or *activate
 
      If the version of the .NET Framework that the app was built on is not present and a configuration file does not specify a version in a [\<supportedRuntime> element](../configure-apps/file-schema/startup/supportedruntime-element.md), the app tries to run on the latest version of the .NET Framework that is present on the user's computer.
 
-     However, .NET Framework 1.0, 1.1, 2.0, 3.0, and 3.5 apps do not automatically run on the .NET Framework 4 or later, and in some cases, the user may receive an error and may be prompted to install the .NET Framework 3.5. The activation behavior may also depend on the user’s operating system, because  different versions of Windows system include different versions of the .NET Framework. If your app supports both the .NET Framework 3.5 and 4 or later, we recommend that you indicate this with multiple entries in the configuration file to avoid .NET Framework initialization errors. For more information, see [Versions and Dependencies](versions-and-dependencies.md).
+     However, .NET Framework 1.0, 1.1, 2.0, 3.0, and 3.5 apps do not automatically run on the .NET Framework 4 or later, and in some cases, the user may receive an error and may be prompted to install .NET Framework 3.5. The activation behavior may also depend on the user’s operating system, because  different versions of Windows system include different versions of the .NET Framework. If your app supports both the .NET Framework 3.5 and 4 or later, we recommend that you indicate this with multiple entries in the configuration file to avoid .NET Framework initialization errors. For more information, see [Versions and Dependencies](versions-and-dependencies.md).
 
  You might also want to configure your .NET Framework 3.5 apps to run on the .NET Framework 4 or later versions, even on computers that have the .NET Framework 3.5 installed, to take advantage of the performance improvements in versions 4 and later versions.
 
@@ -38,7 +38,7 @@ All apps that host the common language runtime (CLR) need to start, or *activate
 
 1. Add or locate the configuration file for the .NET Framework project. The configuration file for an app is in the same directory and has the same name as the app, but has a .config extension. For example, for an app named MyExecutable.exe, the application configuration file is named MyExecutable.exe.config.
 
-     To add a configuration file, on the Visual Studio menu bar, choose **Project**, **Add New Item**. Choose **General** from the left pane, and then choose **Configuration File**. Name the configuration file *appName*.exe.config. These menu choices are not available for Windows Store app or Windows phone app projects, because you cannot change the activation policy on those platforms.
+     To add a configuration file, on the Visual Studio menu bar, choose **Project**, **Add New Item**. Choose **General** from the left pane, and then choose **Configuration File**. Name the configuration file *App.config*. These menu choices are not available for Windows Store app or Windows phone app projects, because you cannot change the activation policy on those platforms.
 
 2. Add the [\<supportedRuntime>](../configure-apps/file-schema/startup/supportedruntime-element.md) element as follows to the application configuration file:
 

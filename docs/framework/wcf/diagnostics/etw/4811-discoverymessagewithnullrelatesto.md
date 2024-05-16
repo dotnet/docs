@@ -6,10 +6,10 @@ ms.assetid: dab901e8-a2b3-41c1-a76b-bcd8b3c7c29a
 ---
 # 4811 - DiscoveryMessageWithNullRelatesTo
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4811|  
 |Keywords|Discovery|  
 |Level|Warning|  

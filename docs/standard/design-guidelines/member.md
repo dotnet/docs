@@ -19,14 +19,14 @@ Methods, properties, events, constructors, and fields are collectively referred 
   
 ## In This Section  
 
- [Member Overloading](member-overloading.md)  
- [Property Design](property.md)  
- [Constructor Design](constructor.md)  
- [Event Design](event.md)  
- [Field Design](field.md)  
- [Extension Methods](extension-methods.md)  
- [Operator Overloads](operator-overloads.md)  
- [Parameter Design](parameter-design.md)  
+ [Member Overloading](member-overloading.md)\
+ [Property Design](property.md)\
+ [Constructor Design](constructor.md)\
+ [Event Design](event.md)\
+ [Field Design](field.md)\
+ [Extension Methods](extension-methods.md)\
+ [Operator Overloads](operator-overloads.md)\
+ [Parameter Design](parameter-design.md)\
  *Portions © 2005, 2009 Microsoft Corporation. All rights reserved.*  
   
  *Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  

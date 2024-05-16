@@ -8,7 +8,7 @@ Imports System.IO
 Public Class ProcessFile
 
     Public Shared Sub Main()
-        Dim fs As FileStream
+        Dim fs As FileStream = Nothing
         Try
             ' Opens a text file.
             fs = New FileStream("c:\temp\data.txt", FileMode.Open)

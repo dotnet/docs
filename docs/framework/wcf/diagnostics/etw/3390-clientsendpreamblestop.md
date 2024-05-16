@@ -6,10 +6,10 @@ ms.assetid: fbf6e4ed-8538-417e-b4d1-a30b45ee6b5d
 ---
 # 3390 - ClientSendPreambleStop
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3390|  
 |Keywords|Channel|  
 |Level|Verbose|  

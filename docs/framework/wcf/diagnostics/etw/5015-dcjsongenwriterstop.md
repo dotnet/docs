@@ -6,10 +6,10 @@ ms.assetid: c7d70416-88e3-409a-90d7-0f412fa37f2e
 ---
 # 5015 - DCJsonGenWriterStop
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|5015|  
 |Keywords|Serialization|  
 |Level|Verbose|  

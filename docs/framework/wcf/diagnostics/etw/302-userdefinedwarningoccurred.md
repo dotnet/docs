@@ -6,10 +6,10 @@ ms.assetid: 8d1f0bf1-0151-45e6-be92-573d397b54de
 ---
 # 302 - UserDefinedWarningOccurred
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|302|  
 |Keywords|Troubleshooting, HealthMonitoring, UserEvents, ServiceModel, EndToEndMonitoring|  
 |Level|Warning|  

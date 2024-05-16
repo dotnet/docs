@@ -9,9 +9,11 @@ ms.assetid: 93e099eb-daa1-4f1e-b031-c1e10a996f88
 ---
 # Code Access Security and ADO.NET
 
-The .NET Framework offers role-based security as well as code access security (CAS), both of which are implemented using a common infrastructure supplied by the common language runtime (CLR). In the world of unmanaged code, most applications execute with the permissions of the user or principal. As a result, computer systems can be damaged and private data compromised when malicious or error-filled software is run by a user with elevated privileges.  
+.NET Framework offers role-based security as well as code access security (CAS), both of which are implemented using a common infrastructure supplied by the common language runtime (CLR). In the world of unmanaged code, most applications execute with the permissions of the user or principal. As a result, computer systems can be damaged and private data compromised when malicious or error-filled software is run by a user with elevated privileges.  
   
- By contrast, managed code executing in the .NET Framework includes code access security, which applies to code alone. Whether the code is allowed to run or not depends on the code's origin or other aspects of the code's identity, not solely the identity of the principal. This reduces the likelihood that managed code can be misused.  
+ By contrast, managed code executing in .NET Framework includes code access security, which applies to code alone. Whether the code is allowed to run or not depends on the code's origin or other aspects of the code's identity, not solely the identity of the principal. This reduces the likelihood that managed code can be misused.
+
+[!INCLUDE [cas-deprecated](../../../../includes/cas-deprecated.md)]
   
 ## Code Access Permissions  
 
@@ -46,7 +48,7 @@ The .NET Framework offers role-based security as well as code access security (C
   
  The CLR uses permissions to implement its mechanism for enforcing restrictions on managed code. Role-based security permissions provide a mechanism for discovering whether a user (or the agent acting on the user's behalf) has a particular identity or is a member of a specified role. For more information, see [Security Permissions](/previous-versions/dotnet/netframework-4.0/5ba4k1c5(v=vs.100)).  
   
- Depending on the type of application you are building, you should also consider implementing role-based permissions in the database. For more information on role-based security in SQL Server, see [SQL Server Security](./sql/sql-server-security.md).  
+ Depending on the type of application you are building, you should also consider implementing role-based permissions in the database. For more information on role-based security in SQL Server, see [SQL Server Security](/previous-versions/dotnet/framework/data/adonet/sql/sql-server-security).  
   
 ## Assemblies  
 

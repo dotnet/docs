@@ -51,7 +51,7 @@ aximp [options]{file.dll | file.ocx}
   
  Aximp.exe converts an entire ActiveX Control type library at one time and produces a set of assemblies that contain the common language runtime metadata and control implementation for the types defined in the original type library. The generated files are named according to the following pattern:  
   
- common language runtime proxy for COM types: *progid*.dll  
+ Common language runtime proxy for COM types: *progid*.dll  
   
  Windows Forms proxy for ActiveX controls (where Ax signifies ActiveX): Ax*progid*.dll  
   
@@ -62,9 +62,7 @@ aximp [options]{file.dll | file.ocx}
   
  Using Aximp.exe to generate a .NET assembly for the ActiveX WebBrowser control (shdocvw.dll) is not supported.  
   
- When you run Aximp.exe over shdocvw.dll, it will always create another file named shdocvw.dll in the directory from which the tool is run. If this generated file is placed in the Documents and Settings directory, it causes problems for Microsoft Internet Explorer and Windows Explorer. When the computer is rebooted, Windows looks in the Documents and Settings directory before the system32 directory to find a copy of shdocvw.dll. It will use the copy it finds in Documents and Settings and attempt to load the managed wrappers. Internet Explorer and Windows Explorer will not function properly because they rely on the rendering engine in the version of shdocvw.dll located in the system32 directory. If this problem occurs, delete the copy of shdocvw.dll in the Documents and Settings directory and reboot the computer.  
-  
- Using Aximp.exe with shdocvw.dll to create a .NET assembly for use in application development can also cause problems. In this case, your application will load both the system version of shdocvw.dll and the generated version, and may give the system version priority. In this case, when you attempt to load a Web page inside the WebBrowser ActiveX control, users may be prompted with an Open/Save dialog box. When the user clicks **Open**, the Web page will be opened in Internet Explorer. This occurs only with computers that are running Internet Explorer version 6 or earlier. To prevent this problem, use the managed <xref:System.Windows.Forms.WebBrowser> control or use Visual Studio to generate the managed shdocvw.dll as described in [How to: Add References to Type Libraries](../interop/how-to-add-references-to-type-libraries.md).  
+ When you run Aximp.exe over shdocvw.dll, it will always create another file named shdocvw.dll in the directory from which the tool is run. If you place this generated file in the Documents directory, it can cause problems for Windows Explorer. When the computer is rebooted, Windows looks in the Documents directory before the system32 directory to find a copy of shdocvw.dll. It will use the copy it finds in Documents and attempt to load the managed wrappers. Windows Explorer won't function properly because it relies on the rendering engine in the version of shdocvw.dll located in the system32 directory. If this problem occurs, delete the copy of shdocvw.dll in the Documents directory and reboot the computer.
   
 ## Example  
 

@@ -5,7 +5,7 @@ ms.date: 02/14/2020
 ---
 # dotnet tool restore
 
-**This article applies to:** ✔️ .NET Core 3.0 SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -27,15 +27,13 @@ dotnet tool restore -h|--help
 
 The `dotnet tool restore` command finds the tool manifest file that is in scope for the current directory and installs the tools that are listed in it. For information about manifest files, see [Install a local tool](global-tools.md#install-a-local-tool) and [Invoke a local tool](global-tools.md#invoke-a-local-tool).
 
+For information about where local tools are stored, see [dotnet tool install](dotnet-tool-install.md#local-tools).
+
 ## Options
 
-- **`--configfile <FILE>`**
+[!INCLUDE [configfile](../../../includes/cli-configfile.md)]
 
-  The NuGet configuration (*nuget.config*) file to use.
-
-- **`--add-source <SOURCE>`**
-
-  Adds an additional NuGet package source to use during installation.
+[!INCLUDE [add-source](../../../includes/cli-add-source.md)]
 
 - **`--tool-manifest <PATH>`**
 
@@ -53,17 +51,11 @@ The `dotnet tool restore` command finds the tool manifest file that is in scope 
 
   Do not cache packages and http requests.
 
-- **`--interactive`**
+[!INCLUDE [interactive](../../../includes/cli-interactive.md)]
 
-  Allows the command to stop and wait for user input or action (for example to complete authentication).
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
-- **`-h|--help`**
-
-  Prints out a short help for the command.
-
-- **`-v|--verbosity <LEVEL>`**
-
-  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
+[!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
 
 ## Example
 

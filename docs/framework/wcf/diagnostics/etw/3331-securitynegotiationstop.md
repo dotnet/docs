@@ -6,10 +6,10 @@ ms.assetid: 66ae93c8-00d3-4d6e-88ae-6da694285220
 ---
 # 3331 - SecurityNegotiationStop
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3331|  
 |Keywords|Security|  
 |Level|Verbose|  

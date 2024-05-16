@@ -8,7 +8,7 @@ ms.assetid: 7a2ab59a-cf66-437a-b01e-f8f7268a3f7a
 
 ## Properties  
   
-|||  
+|Property|Value|
 |-|-|  
 |ID|1001|  
 |Keywords|WFRuntime|  

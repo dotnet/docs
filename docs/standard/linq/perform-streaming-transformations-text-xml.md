@@ -4,7 +4,7 @@ description: You can use an extension method that releases a line at a time to s
 ms.date: 07/20/2015
 dev_langs:
   - "csharp"
-ms.assetid: 9b3bd941-d0ff-4f2d-ae41-7c3b81d8fae6
+ms.topic: how-to
 ---
 
 # How to perform streaming transformations of text to XML in C# (LINQ to XML)

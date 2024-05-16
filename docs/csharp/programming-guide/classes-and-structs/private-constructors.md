@@ -1,5 +1,5 @@
 ---
-title: "Private Constructors - C# Programming Guide"
+title: "Private Constructors"
 description: A private constructor is a special instance constructor in C# used to restrict how an object can be created. They may be used with factory methods or other construction idioms.
 ms.date: 07/20/2015
 helpviewer_keywords: 
@@ -27,15 +27,10 @@ A private constructor is a special instance constructor. It is generally used in
   
  [!code-csharp[ErrorInstantiatingUsingPrivateConstructor#13](snippets/private-constructors/Program.cs#3)]
   
-## C# Language Specification  
-
-For more information, see [Private constructors](~/_csharplang/spec/classes.md#private-constructors) in the [C# Language Specification](/dotnet/csharp/language-reference/language-specification/introduction). The language specification is the definitive source for C# syntax and usage.
-  
 ## See also
 
-- [C# Programming Guide](../index.md)
-- [Classes and Structs](./index.md)
+- [The C# type system](../../fundamentals/types/index.md)
 - [Constructors](./constructors.md)
-- [Finalizers](./destructors.md)
+- [Finalizers](./finalizers.md)
 - [private](../../language-reference/keywords/private.md)
 - [public](../../language-reference/keywords/public.md)

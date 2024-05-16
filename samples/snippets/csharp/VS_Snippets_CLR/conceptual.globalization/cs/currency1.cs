@@ -4,9 +4,9 @@ using System.Globalization;
 using System.IO;
 using System.Threading;
 
-public class Example
+public class Example1
 {
-   public static void Main()
+   public static void Main1()
    {
       // Display the currency value.
       Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-US");

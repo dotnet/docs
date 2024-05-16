@@ -43,6 +43,7 @@ namespace interfaces
                 sample.Paint();
                 control.Paint();
                 surface.Paint();
+                
                 // Output:
                 // Paint method in SampleClass
                 // Paint method in SampleClass
@@ -78,17 +79,15 @@ namespace interfaces
             public static void CallExplicitImplementation()
             {
                 //<SnippetCallExplicitImplementation>
-                // Call the Paint methods from Main.
+                SampleClass sample = new SampleClass();
+                IControl control = sample;
+                ISurface surface = sample;
 
-                SampleClass obj = new SampleClass();
-                //obj.Paint();  // Compiler error.
-
-                IControl c = obj;
-                c.Paint();  // Calls IControl.Paint on SampleClass.
-
-                ISurface s = obj;
-                s.Paint(); // Calls ISurface.Paint on SampleClass.
-
+                // The following lines all call the same method.
+                //sample.Paint(); // Compiler error.
+                control.Paint();  // Calls IControl.Paint on SampleClass.
+                surface.Paint();  // Calls ISurface.Paint on SampleClass.
+                
                 // Output:
                 // IControl.Paint
                 // ISurface.Paint

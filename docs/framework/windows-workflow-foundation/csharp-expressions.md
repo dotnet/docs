@@ -6,7 +6,7 @@ ms.assetid: 29110be7-f4e3-407e-8dbe-78102eb21115
 ---
 # C# Expressions
 
-Starting with .NET Framework 4.5, C# expressions are supported in Windows Workflow Foundation (WF). New C# workflow projects created in Visual Studio 2012 that target .NET Framework 4.5 use C# expressions, and Visual Basic workflow projects use Visual Basic expressions. Existing .NET Framework 4 workflow projects that use Visual Basic expressions can be migrated to [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] regardless of the project language and are supported. This topic provides an overview of C# expressions in [!INCLUDE[wf1](../../../includes/wf1-md.md)].
+Starting with .NET Framework 4.5, C# expressions are supported in Windows Workflow Foundation (WF). New C# workflow projects created in Visual Studio 2012 that target .NET Framework 4.5 use C# expressions, and Visual Basic workflow projects use Visual Basic expressions. Existing .NET Framework 4 workflow projects that use Visual Basic expressions can be migrated to [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] regardless of the project language and are supported. This topic provides an overview of C# expressions in WF.
 
 ## Using C# expressions in workflows
 

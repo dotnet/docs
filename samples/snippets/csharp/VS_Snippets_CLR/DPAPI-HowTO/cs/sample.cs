@@ -6,16 +6,12 @@ using System.Security.Cryptography;
 
 public class MemoryProtectionSample
 {
-    public static void Main()
-    {
-        Run();
-    }
+    public static void Main() => Run();
 
     public static void Run()
     {
         try
         {
-
             ///////////////////////////////
             //
             // Memory Encryption - ProtectedMemory
@@ -25,19 +21,19 @@ public class MemoryProtectionSample
             // Create the original data to be encrypted (The data length should be a multiple of 16).
             byte[] toEncrypt = UnicodeEncoding.ASCII.GetBytes("ThisIsSomeData16");
 
-            Console.WriteLine("Original data: " + UnicodeEncoding.ASCII.GetString(toEncrypt));
+            Console.WriteLine($"Original data: {UnicodeEncoding.ASCII.GetString(toEncrypt)}");
             Console.WriteLine("Encrypting...");
 
             // Encrypt the data in memory.
             EncryptInMemoryData(toEncrypt, MemoryProtectionScope.SameLogon);
 
-            Console.WriteLine("Encrypted data: " + UnicodeEncoding.ASCII.GetString(toEncrypt));
+            Console.WriteLine($"Encrypted data: {UnicodeEncoding.ASCII.GetString(toEncrypt)}");
             Console.WriteLine("Decrypting...");
 
             // Decrypt the data in memory.
             DecryptInMemoryData(toEncrypt, MemoryProtectionScope.SameLogon);
 
-            Console.WriteLine("Decrypted data: " + UnicodeEncoding.ASCII.GetString(toEncrypt));
+            Console.WriteLine($"Decrypted data: {UnicodeEncoding.ASCII.GetString(toEncrypt)}");
 
             ///////////////////////////////
             //
@@ -55,7 +51,7 @@ public class MemoryProtectionSample
             byte[] entropy = CreateRandomEntropy();
 
             Console.WriteLine();
-            Console.WriteLine("Original data: " + UnicodeEncoding.ASCII.GetString(toEncrypt));
+            Console.WriteLine($"Original data: {UnicodeEncoding.ASCII.GetString(toEncrypt)}");
             Console.WriteLine("Encrypting and writing to disk...");
 
             // Encrypt a copy of the data to the stream.
@@ -73,20 +69,20 @@ public class MemoryProtectionSample
 
             fStream.Close();
 
-            Console.WriteLine("Decrypted data: " + UnicodeEncoding.ASCII.GetString(decryptData));
+            Console.WriteLine($"Decrypted data: {UnicodeEncoding.ASCII.GetString(decryptData)}");
         }
         catch (Exception e)
         {
-            Console.WriteLine("ERROR: " + e.Message);
+            Console.WriteLine($"ERROR: {e.Message}");
         }
     }
 
     public static void EncryptInMemoryData(byte[] Buffer, MemoryProtectionScope Scope )
     {
         if (Buffer == null)
-            throw new ArgumentNullException("Buffer");
+            throw new ArgumentNullException(nameof(Buffer));
         if (Buffer.Length <= 0)
-            throw new ArgumentException("Buffer");
+            throw new ArgumentException("The buffer length was 0.", nameof(Buffer));
 
         // Encrypt the data in memory. The result is stored in the same array as the original data.
         ProtectedMemory.Protect(Buffer, Scope);
@@ -95,9 +91,9 @@ public class MemoryProtectionSample
     public static void DecryptInMemoryData(byte[] Buffer, MemoryProtectionScope Scope)
     {
         if (Buffer == null)
-            throw new ArgumentNullException("Buffer");
+            throw new ArgumentNullException(nameof(Buffer));
         if (Buffer.Length <= 0)
-            throw new ArgumentException("Buffer");
+            throw new ArgumentException("The buffer length was 0.", nameof(Buffer));
 
         // Decrypt the data in memory. The result is stored in the same array as the original data.
         ProtectedMemory.Unprotect(Buffer, Scope);
@@ -119,15 +115,15 @@ public class MemoryProtectionSample
     public static int EncryptDataToStream(byte[] Buffer, byte[] Entropy, DataProtectionScope Scope, Stream S)
     {
         if (Buffer == null)
-            throw new ArgumentNullException("Buffer");
+            throw new ArgumentNullException(nameof(Buffer));
         if (Buffer.Length <= 0)
-            throw new ArgumentException("Buffer");
+            throw new ArgumentException("The buffer length was 0.", nameof(Buffer));
         if (Entropy == null)
-            throw new ArgumentNullException("Entropy");
+            throw new ArgumentNullException(nameof(Entropy));
         if (Entropy.Length <= 0)
-            throw new ArgumentException("Entropy");
+            throw new ArgumentException("The entropy length was 0.", nameof(Entropy));
         if (S == null)
-            throw new ArgumentNullException("S");
+            throw new ArgumentNullException(nameof(S));
 
         int length = 0;
 
@@ -149,13 +145,13 @@ public class MemoryProtectionSample
     public static byte[] DecryptDataFromStream(byte[] Entropy, DataProtectionScope Scope, Stream S, int Length)
     {
         if (S == null)
-            throw new ArgumentNullException("S");
+            throw new ArgumentNullException(nameof(S));
         if (Length <= 0 )
-            throw new ArgumentException("Length");
+            throw new ArgumentException("The given length was 0.", nameof(Length));
         if (Entropy == null)
-            throw new ArgumentNullException("Entropy");
+            throw new ArgumentNullException(nameof(Entropy));
         if (Entropy.Length <= 0)
-            throw new ArgumentException("Entropy");
+            throw new ArgumentException("The entropy length was 0.", nameof(Entropy));
 
         byte[] inBuffer = new byte[Length];
         byte[] outBuffer;
@@ -172,7 +168,7 @@ public class MemoryProtectionSample
             throw new IOException("Could not read the stream.");
         }
 
-        // Return the length that was written to the stream.
+        // Return the decrypted data
         return outBuffer;
     }
 }

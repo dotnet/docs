@@ -2,11 +2,11 @@
 title: Breaking changes - .NET Framework to .NET Core
 titleSuffix: ""
 description: Lists the breaking changes from .NET Framework to .NET Core 1.0 - 3.1.
-ms.date: 05/05/2020
+ms.date: 05/01/2024
 ---
 # Breaking changes for migration from .NET Framework to .NET Core
 
-If you're migrating an app from .NET Framework to .NET Core versions 1.0 through 3.1, the breaking changes listed in this article may affect you. Breaking changes are grouped by category, and within those categories, by the version of .NET Core in which they were introduced.
+If you're migrating an app from .NET Framework to .NET Core versions 1.0 through 3.1, the breaking changes listed in this article might affect you. Breaking changes are grouped by category, and within those categories, by the version of .NET Core in which they were introduced.
 
 > [!NOTE]
 > This article is not a complete list of breaking changes between .NET Framework and .NET Core. The most important breaking changes are added here as we become aware of them.
@@ -14,10 +14,15 @@ If you're migrating an app from .NET Framework to .NET Core versions 1.0 through
 ## Core .NET libraries
 
 - [Change in default value of UseShellExecute](#change-in-default-value-of-useshellexecute)
+- [IDispatchImplAttribute API is removed](#net-8)
 - [UnauthorizedAccessException thrown by FileSystemInfo.Attributes](#unauthorizedaccessexception-thrown-by-filesysteminfoattributes)
 - [Handling corrupted-process-state exceptions is not supported](#handling-corrupted-state-exceptions-is-not-supported)
 - [UriBuilder properties no longer prepend leading characters](#uribuilder-properties-no-longer-prepend-leading-characters)
 - [Process.StartInfo throws InvalidOperationException for processes you didn't start](#processstartinfo-throws-invalidoperationexception-for-processes-you-didnt-start)
+
+### .NET 8
+
+[IDispatchImplAttribute API is removed](interop/8.0/idispatchimplattribute-removed.md)
 
 ### .NET Core 2.1
 
@@ -75,7 +80,7 @@ If you're migrating an app from .NET Framework to .NET Core versions 1.0 through
 
 ## Windows Forms
 
-Windows Forms support was added to .NET Core in version 3.0. If you're migrating a Windows Forms app from .NET Framework to .NET Core, the breaking changes listed here may affect your app.
+Windows Forms support was added to .NET Core in version 3.0. If you're migrating a Windows Forms app from .NET Framework to .NET Core, the breaking changes listed here might affect your app.
 
 - [Removed controls](#removed-controls)
 - [CellFormatting event not raised if tooltip is shown](#cellformatting-event-not-raised-if-tooltip-is-shown)
@@ -90,6 +95,10 @@ Windows Forms support was added to .NET Core in version 3.0. If you're migrating
 - [EnableVisualStyleValidation compatibility switch not supported](#enablevisualstylevalidation-compatibility-switch-not-supported)
 - [UseLegacyContextMenuStripSourceControlValue compatibility switch not supported](#uselegacycontextmenustripsourcecontrolvalue-compatibility-switch-not-supported)
 - [UseLegacyImages compatibility switch not supported](#uselegacyimages-compatibility-switch-not-supported)
+- [About and SplashScreen templates are broken for Visual Basic](#about-and-splashscreen-templates-are-broken)
+- [Types in Microsoft.VisualBasic.ApplicationServices namespace not available](#types-in-microsoftvisualbasicapplicationservices-namespace-not-available)
+- [Types in Microsoft.VisualBasic.Devices namespace not available](#types-in-microsoftvisualbasicdevices-namespace-not-available)
+- [Types in Microsoft.VisualBasic.MyServices namespace not available](#types-in-microsoftvisualbasicmyservices-namespace-not-available)
 
 ### .NET Core 3.1
 
@@ -144,6 +153,21 @@ Windows Forms support was added to .NET Core in version 3.0. If you're migrating
 ***
 
 [!INCLUDE[UseLegacyImages compatibility switch not supported](~/includes/core-changes/windowsforms/3.0/deprecate-uselegacyimages.md)]
+
+***
+
+[!INCLUDE[About and SplashScreen templates are broken for Visual Basic](~/includes/core-changes/visualbasic/3.0/vb-winforms-splash-about-broken.md)]
+
+***
+
+[!INCLUDE[Types in Microsoft.VisualBasic.ApplicationServices namespace not available](~/includes/core-changes/visualbasic/3.0/microsoft.visualbasic.applicationservices-unavailable.md)]
+
+***
+[!INCLUDE[Types in Microsoft.VisualBasic.Devices namespace not available](~/includes/core-changes/visualbasic/3.0/microsoft.visualbasic.devices-unavailable.md)]
+
+***
+
+[!INCLUDE[Types in Microsoft.VisualBasic.MyServices namespace not available](~/includes/core-changes/visualbasic/3.0/microsoft.visualbasic.myservices-unavailable.md)]
 
 ***
 

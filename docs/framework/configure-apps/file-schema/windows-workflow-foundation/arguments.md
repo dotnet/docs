@@ -2,7 +2,6 @@
 description: "Learn more about: <arguments>"
 title: "<arguments>"
 ms.date: "03/30/2017"
-ms.topic: "reference"
 ms.assetid: 0f327196-f468-4be3-b6c4-68ba981a1bd6
 ---
 # \<arguments>

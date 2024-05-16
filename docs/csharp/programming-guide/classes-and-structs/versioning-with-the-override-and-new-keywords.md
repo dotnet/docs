@@ -1,5 +1,5 @@
 ---
-title: "Versioning with the Override and New Keywords - C# Programming Guide"
+title: "Versioning with the Override and New Keywords"
 description: Learn about versioning for base and derived classes in C#, and how to specify whether a method is intended to override or hide an inherited method.
 ms.date: 07/20/2015
 helpviewer_keywords: 
@@ -65,7 +65,7 @@ The C# language is designed so that versioning between [base](../../language-ref
   
  [!code-csharp[csProgGuideInheritance#32](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideInheritance/CS/Inheritance.cs#32)]  
   
- When `DoWork` is called on an instance of `Derived`, the C# compiler will first try to make the call compatible with the versions of `DoWork` declared originally on `Derived`. Override methods are not considered as declared on a class, they are new implementations of a method declared on a base class. Only if the C# compiler cannot match the method call to an original method on `Derived` will it try to match the call to an overridden method with the same name and compatible parameters. For example:  
+ When `DoWork` is called on an instance of `Derived`, the C# compiler will first try to make the call compatible with the versions of `DoWork` declared originally on `Derived`. Override methods are not considered as declared on a class, they are new implementations of a method declared on a base class. Only if the C# compiler cannot match the method call to an original method on `Derived`, it will try to match the call to an overridden method with the same name and compatible parameters. For example:  
   
  [!code-csharp[csProgGuideInheritance#33](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideInheritance/CS/Inheritance.cs#33)]  
   
@@ -77,7 +77,6 @@ The C# language is designed so that versioning between [base](../../language-ref
   
 ## See also
 
-- [C# Programming Guide](../index.md)
-- [Classes and Structs](./index.md)
+- [The C# type system](../../fundamentals/types/index.md)
 - [Methods](./methods.md)
-- [Inheritance](./inheritance.md)
+- [Inheritance](../../fundamentals/object-oriented/inheritance.md)

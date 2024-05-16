@@ -1,7 +1,7 @@
 ---
-title: "Attributed Programming Model Overview (MEF)"
+title: "Attributed programming model overview (MEF)"
 description: Get started with the attributed programming model, which is the default programming model for the Managed Extensibility Framework (MEF) in .NET.
-ms.date: "03/30/2017"
+ms.date: 06/09/2021
 dev_langs:
   - "csharp"
   - "vb"
@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: 49b787ff-2741-4836-ad51-c3017dc592d4
 ---
 
-# Attributed Programming Model Overview (MEF)
+# Attributed programming model overview (MEF)
 
 In the Managed Extensibility Framework (MEF), a *programming model* is a particular method of defining the set of conceptual objects on which MEF operates. These conceptual objects include parts, imports, and exports. MEF uses these objects, but does not specify how they should be represented. Therefore, a wide variety of programming models are possible, including customized programming models.
 
@@ -975,8 +975,3 @@ Parts that require work to be performed at shut down or that need to release res
 For long-lived composition containers, memory consumption by parts with a creation policy of non-shared can become a problem. These non-shared parts can be created multiple times and will not be disposed until the container itself is disposed. To deal with this, the container provides the `ReleaseExport` method. Calling this method on a non-shared export removes that export from the composition container and disposes it. Parts that are used only by the removed export, and so on down the tree, are also removed and disposed. In this way, resources can be reclaimed without disposing the composition container itself.
 
 `IPartImportsSatisfiedNotification` contains one method named `OnImportsSatisfied`. This method is called by the composition container on any parts that implement the interface when composition has been completed and the part's imports are ready for use. Parts are created by the composition engine to fill the imports of other parts. Before the imports of a part have been set, you cannot perform any initialization that relies on or manipulates imported values in the part constructor unless those values have been specified as prerequisites by using the `ImportingConstructor` attribute. This is normally the preferred method, but in some cases, constructor injection may not be available. In those cases, initialization can be performed in `OnImportsSatisfied`, and the part should implement `IPartImportsSatisfiedNotification`.
-
-## See also
-
-- [Channel 9 Video: Open Up Your Applications with the Managed Extensibility Framework](https://channel9.msdn.com/events/TechEd/NorthAmerica/2009/DTL328)
-- [Channel 9 Video: Managed Extensibility Framework (MEF) 2.0](https://channel9.msdn.com/posts/NET-45-Oleg-Lvovitch-and-Kevin-Ransom-Managed-Extensibility-Framework-MEF-20)

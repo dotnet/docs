@@ -70,8 +70,8 @@ namespace object_collection_initializers
             }
 
             // Properties.
-            public string FirstName { get; set; }
-            public string LastName { get; set; }
+            public string? FirstName { get; set; }
+            public string? LastName { get; set; }
             public int ID { get; set; }
 
             public override string ToString() => FirstName + "  " + ID;

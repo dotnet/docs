@@ -30,7 +30,7 @@ HRESULT ExceptionUnwindFunctionEnter(
   
 ## Parameters
 
-`functionId`
+`functionId`\
 [in] The ID of the function that is being unwound.
 
 ## Remarks  

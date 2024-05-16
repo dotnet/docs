@@ -6,7 +6,7 @@ ms.assetid: ff664f33-ad02-422c-9041-bab6d993f9cc
 ---
 # Dead Letter Queues
 
-This sample demonstrates how to handle and process messages that have failed delivery. It is based on the [Transacted MSMQ Binding](transacted-msmq-binding.md) sample. This sample uses the `netMsmqBinding` binding. The service is a self-hosted console application to enable you to observe the service receiving queued messages.
+The [DeadLetter sample](https://github.com/dotnet/samples/tree/main/framework/wcf) demonstrates how to handle and process messages that have failed delivery. It is based on the [Transacted MSMQ Binding](transacted-msmq-binding.md) sample. This sample uses the `netMsmqBinding` binding. The service is a self-hosted console application to enable you to observe the service receiving queued messages.
 
 > [!NOTE]
 > The setup procedure and build instructions for this sample are located at the end of this topic.
@@ -14,11 +14,11 @@ This sample demonstrates how to handle and process messages that have failed del
 > [!NOTE]
 > This sample demonstrates each application dead letter queue that is only available on Windows Vista. The sample can be modified to use the default system-wide queues for MSMQ 3.0 on Windows Server 2003 and Windows XP.
 
- In queued communication, the client communicates to the service using a queue. More precisely, the client sends messages to a queue. The service receives messages from the queue. The service and client therefore, do not have to be running at the same time to communicate using a queue.
+In queued communication, the client communicates to the service using a queue. More precisely, the client sends messages to a queue. The service receives messages from the queue. The service and client therefore, do not have to be running at the same time to communicate using a queue.
 
- Because queued communication can involve a certain amount of dormancy, you may want to associate a time-to-live value on the message to ensure that the message does not get delivered to the application if it has gone past the time. There are also cases, where an application must be informed whether a message failed delivery. In all of these cases, such as when the time-to-live on the message has expired or the message failed delivery, the message is put in a dead letter queue. The sending application can then read the messages in the dead-letter queue and take corrective actions that range from no action to correcting the reasons for failed delivery and resending the message.
+Because queued communication can involve a certain amount of dormancy, you may want to associate a time-to-live value on the message to ensure that the message does not get delivered to the application if it has gone past the time. There are also cases, where an application must be informed whether a message failed delivery. In all of these cases, such as when the time-to-live on the message has expired or the message failed delivery, the message is put in a dead letter queue. The sending application can then read the messages in the dead-letter queue and take corrective actions that range from no action to correcting the reasons for failed delivery and resending the message.
 
- The dead-letter queue in the `NetMsmqBinding` binding is expressed in the following properties:
+The dead-letter queue in the `NetMsmqBinding` binding is expressed in the following properties:
 
 - <xref:System.ServiceModel.MsmqBindingBase.DeadLetterQueue%2A> property to express the kind of dead-letter queue required by the client. This enumeration has the following values:
 
@@ -30,11 +30,11 @@ This sample demonstrates how to handle and process messages that have failed del
 
 - <xref:System.ServiceModel.MsmqBindingBase.CustomDeadLetterQueue%2A> property to express the specific queue to use as a dead-letter queue. This is available only in Windows Vista.
 
- In this sample, the client sends a batch of messages to the service from within the scope of a transaction and specifies an arbitrarily low value for "time-to-live" for these messages (about 2 seconds). The client also specifies a custom dead-letter queue to use to enqueue the messages that have expired.
+In this sample, the client sends a batch of messages to the service from within the scope of a transaction and specifies an arbitrarily low value for "time-to-live" for these messages (about 2 seconds). The client also specifies a custom dead-letter queue to use to enqueue the messages that have expired.
 
- The client application can read the messages in the dead-letter queue and either retry sending the message or correct the error that caused the original message to be placed in the dead-letter queue and send the message. In the sample, the client displays an error message.
+The client application can read the messages in the dead-letter queue and either retry sending the message or correct the error that caused the original message to be placed in the dead-letter queue and send the message. In the sample, the client displays an error message.
 
- The service contract is `IOrderProcessor`, as shown in the following sample code.
+The service contract is `IOrderProcessor`, as shown in the following sample code.
 
 ```csharp
 [ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples")]
@@ -45,9 +45,9 @@ public interface IOrderProcessor
 }
 ```
 
- The service code in the sample is that of the [Transacted MSMQ Binding](transacted-msmq-binding.md).
+The service code in the sample is that of the [Transacted MSMQ Binding](transacted-msmq-binding.md).
 
- Communication with the service takes place within the scope of a transaction. The service reads messages from the queue, performs the operation and then displays the results of the operation. The application also creates a dead-letter queue for dead-letter messages.
+Communication with the service takes place within the scope of a transaction. The service reads messages from the queue, performs the operation and then displays the results of the operation. The application also creates a dead-letter queue for dead-letter messages.
 
 ```csharp
 //The service contract is defined in generatedClient.cs, generated from the service by the svcutil tool.
@@ -104,12 +104,12 @@ class Client
 }
 ```
 
- The client's configuration specifies a short duration for the message to reach the service. If the message cannot be transmitted within the duration specified, the message expires and is moved to the dead-letter queue.
+The client's configuration specifies a short duration for the message to reach the service. If the message cannot be transmitted within the duration specified, the message expires and is moved to the dead-letter queue.
 
 > [!NOTE]
 > It is possible for the client to deliver the message to the service queue within the specified time. To ensure you see the dead-letter service in action, you should run the client before starting the service. The message times out and is delivered to the dead-letter service.
 
- The application must define which queue to use as its dead-letter queue. If no queue is specified, the default system-wide transactional dead-letter queue is used to queue dead messages. In this example, the client application specifies its own application dead-letter queue.
+The application must define which queue to use as its dead-letter queue. If no queue is specified, the default system-wide transactional dead-letter queue is used to queue dead messages. In this example, the client application specifies its own application dead-letter queue.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -142,12 +142,12 @@ class Client
 </configuration>
 ```
 
- The dead-letter message service reads messages from the dead-letter queue. The dead-letter message service implements the `IOrderProcessor` contract. Its implementation however is not to process orders. The dead-letter message service is a client service and does not have the facility to process orders.
+The dead-letter message service reads messages from the dead-letter queue. The dead-letter message service implements the `IOrderProcessor` contract. Its implementation however is not to process orders. The dead-letter message service is a client service and does not have the facility to process orders.
 
 > [!NOTE]
 > The dead-letter queue is a client queue and is local to the client queue manager.
 
- The dead-letter message service implementation checks for the reason a message failed delivery and takes corrective measures. The reason for a message failure is captured in two enumerations, <xref:System.ServiceModel.Channels.MsmqMessageProperty.DeliveryFailure%2A> and <xref:System.ServiceModel.Channels.MsmqMessageProperty.DeliveryStatus%2A>. You can retrieve the <xref:System.ServiceModel.Channels.MsmqMessageProperty> from the <xref:System.ServiceModel.OperationContext> as shown in the following sample code:
+The dead-letter message service implementation checks for the reason a message failed delivery and takes corrective measures. The reason for a message failure is captured in two enumerations, <xref:System.ServiceModel.Channels.MsmqMessageProperty.DeliveryFailure%2A> and <xref:System.ServiceModel.Channels.MsmqMessageProperty.DeliveryStatus%2A>. You can retrieve the <xref:System.ServiceModel.Channels.MsmqMessageProperty> from the <xref:System.ServiceModel.OperationContext> as shown in the following sample code:
 
 ```csharp
 public void SubmitPurchaseOrder(PurchaseOrder po)
@@ -165,9 +165,9 @@ public void SubmitPurchaseOrder(PurchaseOrder po)
 }
 ```
 
- Messages in the dead-letter queue are messages that are addressed to the service that is processing the message. Therefore, when the dead-letter message service reads messages from the queue, the Windows Communication Foundation (WCF) channel layer finds the mismatch in endpoints and does not dispatch the message. In this case, the message is addressed to the order processing service but is received by the dead-letter message service. To receive a message that is addressed to a different endpoint, an address filter to match any address is specified in the `ServiceBehavior`. This is required to successfully process messages that are read from the dead-letter queue.
+Messages in the dead-letter queue are messages that are addressed to the service that is processing the message. Therefore, when the dead-letter message service reads messages from the queue, the Windows Communication Foundation (WCF) channel layer finds the mismatch in endpoints and does not dispatch the message. In this case, the message is addressed to the order processing service but is received by the dead-letter message service. To receive a message that is addressed to a different endpoint, an address filter to match any address is specified in the `ServiceBehavior`. This is required to successfully process messages that are read from the dead-letter queue.
 
- In this sample, the dead-letter message service resends the message if the reason for failure is that the message timed out. For all other reasons, it displays the delivery failure, as shown in the following sample code:
+In this sample, the dead-letter message service resends the message if the reason for failure is that the message timed out. For all other reasons, it displays the delivery failure, as shown in the following sample code:
 
 ```csharp
 // Service class that implements the service contract.
@@ -224,7 +224,7 @@ public class PurchaseOrderDLQService : IOrderProcessor
 }
 ```
 
- The following sample shows the configuration for a dead-letter message:
+The following sample shows the configuration for a dead-letter message:
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -261,20 +261,20 @@ public class PurchaseOrderDLQService : IOrderProcessor
 </configuration>
 ```
 
- In running the sample, there are 3 executables to run to see how the dead-letter queue works for each application; the client, service and a dead-letter service that reads from the dead-letter queue for each application and resends the message to the service. All are console applications with output in console windows.
+In running the sample, there are 3 executables to run to see how the dead-letter queue works for each application; the client, service and a dead-letter service that reads from the dead-letter queue for each application and resends the message to the service. All are console applications with output in console windows.
 
 > [!NOTE]
 > Because queuing is in use, the client and service do not have to be up and running at the same time. You can run the client, shut it down, and then start up the service and it still receives its messages. You should start the service and shut it down so that the queue can be created.
 
- When running the client, the client displays the message:
+When running the client, the client displays the message:
 
 ```console
 Press <ENTER> to terminate client.
 ```
 
- The client attempted to send the message but with a short timeout, the message expired and is now queued in the dead-letter queue for each application.
+The client attempted to send the message but with a short timeout, the message expired and is now queued in the dead-letter queue for each application.
 
- You then run the dead-letter service, which reads the message and displays the error code and resends the message back to the service.
+You then run the dead-letter service, which reads the message and displays the error code and resends the message back to the service.
 
 ```console
 The dead letter service is ready.
@@ -289,7 +289,7 @@ Trying to resend the message
 Purchase order resent
 ```
 
- The service starts and then reads the resent message and processes it.
+The service starts and then reads the resent message and processes it.
 
 ```console
 The service is ready.
@@ -347,13 +347,4 @@ Processing Purchase Order: 97897eff-f926-4057-a32b-af8fb11b9bf9
 
 ## Comments
 
- By default with the `netMsmqBinding` binding transport, security is enabled. Two properties, `MsmqAuthenticationMode` and `MsmqProtectionLevel`, together determine the type of transport security. By default the authentication mode is set to `Windows` and the protection level is set to `Sign`. For MSMQ to provide the authentication and signing feature, it must be part of a domain. If you run this sample on a computer that is not part of a domain, you receive the following error: "User's internal message queuing certificate does not exist".
-
-> [!IMPORTANT]
-> The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
->
-> `<InstallDrive>:\WF_WCF_Samples`  
->
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->
-> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\Net\MSMQ\DeadLetter`  
+By default with the `netMsmqBinding` binding transport, security is enabled. Two properties, `MsmqAuthenticationMode` and `MsmqProtectionLevel`, together determine the type of transport security. By default the authentication mode is set to `Windows` and the protection level is set to `Sign`. For MSMQ to provide the authentication and signing feature, it must be part of a domain. If you run this sample on a computer that is not part of a domain, you receive the following error: "User's internal message queuing certificate does not exist".

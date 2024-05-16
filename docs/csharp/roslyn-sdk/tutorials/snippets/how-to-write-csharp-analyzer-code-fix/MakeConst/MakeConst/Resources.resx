@@ -118,15 +118,15 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AnalyzerDescription" xml:space="preserve">
-    <value>Make Constant.</value>
+    <value>Variables that are not modified should be made constants.</value>
     <comment>An optional longer localizable description of the diagnostic.</comment>
   </data>
   <data name="AnalyzerMessageFormat" xml:space="preserve">
-    <value>can be made constant</value>
+    <value>Variable '{0}' can be made constant</value>
     <comment>The format-able message the diagnostic displays.</comment>
   </data>
   <data name="AnalyzerTitle" xml:space="preserve">
-    <value>Variable can be made constant.</value>
+    <value>Variable can be made constant</value>
     <comment>The title of the diagnostic.</comment>
   </data>
 </root>

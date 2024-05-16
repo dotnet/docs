@@ -1,6 +1,6 @@
 ---
 description: Learn about the built-in boolean type in C#
-title: "bool type - C# reference"
+title: "bool type"
 ms.date: 11/26/2019
 f1_keywords: 
   - bool
@@ -18,7 +18,7 @@ ms.assetid: 551cfe35-2632-4343-af49-33ad12da08e2
 
 The `bool` type keyword is an alias for the .NET <xref:System.Boolean?displayProperty=nameWithType> structure type that represents a Boolean value, which can be either `true` or `false`.
 
-To perform logical operations with values of the `bool` type, use [Boolean logical](../operators/boolean-logical-operators.md) operators. The `bool` type is the result type of [comparison](../operators/comparison-operators.md) and [equality](../operators/equality-operators.md) operators. A `bool` expression can be a controlling conditional expression in the [if](../keywords/if-else.md), [do](../keywords/do.md), [while](../keywords/while.md), and [for](../keywords/for.md) statements and in the [conditional operator `?:`](../operators/conditional-operator.md).
+To perform logical operations with values of the `bool` type, use [Boolean logical](../operators/boolean-logical-operators.md) operators. The `bool` type is the result type of [comparison](../operators/comparison-operators.md) and [equality](../operators/equality-operators.md) operators. A `bool` expression can be a controlling conditional expression in the [if](../statements/selection-statements.md#the-if-statement), [do](../statements/iteration-statements.md#the-do-statement), [while](../statements/iteration-statements.md#the-while-statement), and [for](../statements/iteration-statements.md#the-for-statement) statements and in the [conditional operator `?:`](../operators/conditional-operator.md).
 
 The default value of the `bool` type is `false`.
 
@@ -40,10 +40,9 @@ C# provides only two conversions that involve the `bool` type. Those are an impl
 
 ## C# language specification
 
-For more information, see [The bool type](~/_csharplang/spec/types.md#the-bool-type) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+For more information, see [The bool type](~/_csharpstandard/standard/types.md#839-the-bool-type) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 
-- [C# reference](../index.md)
 - [Value types](value-types.md)
 - [true and false operators](../operators/true-false-operators.md)

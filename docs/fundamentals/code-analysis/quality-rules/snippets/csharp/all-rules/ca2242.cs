@@ -5,7 +5,7 @@ namespace ca2242
     //<snippet1>
     class NaNTests
     {
-        static double zero;
+        static double zero = 0;
 
         static void Main()
         {

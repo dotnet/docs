@@ -6,7 +6,7 @@ ms.assetid: 2d191c9f-62f4-4c63-92dd-cda917fcf254
 ---
 # Custom Tracking
 
-This sample demonstrates how to create a custom tracking participant and write the contents of the tracking data to console. In addition, the sample demonstrates how to emit <xref:System.Activities.Tracking.CustomTrackingRecord> objects populated with user defined data. The console-based tracking participant filters the <xref:System.Activities.Tracking.TrackingRecord> objects emitted by the workflow using a tracking profile object created in code.
+The [CustomTracking sample](https://github.com/dotnet/samples/tree/main/framework/windows-workflow-foundation/basic/Tracking/CustomTracking/CS) demonstrates how to create a custom tracking participant and write the contents of the tracking data to console. In addition, the sample demonstrates how to emit <xref:System.Activities.Tracking.CustomTrackingRecord> objects populated with user defined data. The console-based tracking participant filters the <xref:System.Activities.Tracking.TrackingRecord> objects emitted by the workflow using a tracking profile object created in code.
 
 ## Sample Details
 
@@ -132,21 +132,12 @@ context.Track(customRecord);
 
 #### To use this sample
 
-1. Using Visual Studio 2010, open the CustomTrackingSample.sln solution file.
+1. Using Visual Studio, open the CustomTrackingSample.sln solution file.
 
 2. To build the solution, press CTRL+SHIFT+B.
 
 3. To run the solution, press CTRL+F5.
 
-> [!IMPORTANT]
-> The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
->
-> `<InstallDrive>:\WF_WCF_Samples`  
->
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->
-> `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Tracking\CustomTracking`  
-  
 ## See also
 
 - [AppFabric Monitoring Samples](/previous-versions/appfabric/ff383407(v=azure.10))

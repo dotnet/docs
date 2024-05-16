@@ -2,7 +2,6 @@
 description: "Learn more about: <cancelRequestedQueries>"
 title: "<cancelRequestedQueries>"
 ms.date: "03/30/2017"
-ms.topic: "reference"
 ms.assetid: eab5af7e-76fa-434d-9d36-873e995cee05
 ---
 # \<cancelRequestedQueries>

@@ -38,7 +38,7 @@
 /docs/csharp/ @BillWagner
 
 # The F# Guide:
-/docs/fsharp/ @cartermp
+/docs/fsharp/ @BillWagner @kathleendollard @dotnet/fsharp-team-msft
 
 # The Visual Basic Guide:
 /docs/visual-basic/ @KathleenDollard @BillWagner
@@ -52,8 +52,33 @@
 # The .NET Architecture Guide:
 /docs/architecture/ @nishanil @IEvangelist
 
+# .NET Orleans
+/docs/orleans/ @IEvangelist
+
+############### Azure ################
+
 # Azure Guide
-/docs/azure/ @CamSoper
+/docs/azure/ @alexwolfmsft @CamSoper
+
+# Azure SDK package list
+/docs/azure/includes/ @dotnet/docs
+
+# Azure SDK catch-all entry
+/docs/azure/sdk/ @jsquire @pallavit
+
+# Azure SDK authentication topics
+/docs/azure/sdk/authentication/ @christothes @schaabs
+
+# Azure SDK miscellaneous topics
+/docs/azure/sdk/azure-sdk-configure-proxy.md @annelo-msft @christothes @JoshLove-msft @KrzysztofCwalina @jsquire
+/docs/azure/sdk/azure-sdk-for-net.md @jsquire @pallavit
+/docs/azure/sdk/dependency-injection.md @JoshLove-msft @jsquire
+/docs/azure/sdk/logging.md @annelo-msft @christothes @JoshLove-msft @KrzysztofCwalina @jsquire
+/docs/azure/sdk/packages.md @jsquire @pallavit
+/docs/azure/sdk/pagination.md @annelo-msft @christothes @JoshLove-msft @KrzysztofCwalina @jsquire
+/docs/azure/sdk/resource-management.md @ArthurMa1978 @m-nash
+/docs/azure/sdk/thread-safety.md @annelo-msft @christothes @JoshLove-msft @KrzysztofCwalina @jsquire
+/docs/azure/sdk/unit-testing-mocking.md @annelo-msft @christothes @JoshLove-msft @KrzysztofCwalina @jsquire
 
 # IoT Guide
 /docs/iot/ @CamSoper
@@ -68,11 +93,13 @@
 
 ############### .NET Core ########################
 # What's New
-/docs/core/whats-new/ @adegeo
+/docs/core/whats-new/ @gewarren
 # Deployment
 /docs/core/deploying/ @adegeo
 # Diagnostics
-/docs/core/diagnostics/ @sywhang @sdmaclea @dotnet/docs
+/docs/core/diagnostics/ @tommcdon @dotnet/docs
+# Extensions
+/docs/core/extensions/ @IEvangelist
 # Docker
 /docs/core/docker/ @IEvangelist
 # Install
@@ -82,7 +109,9 @@
 # Project SDKs
 /docs/core/project-sdk/ @gewarren
 # Config settings
-/docs/core/run-time-config/ @gewarren
+/docs/core/runtime-config/ @gewarren
+# Testing
+/docs/core/testing/ @IEvangelist
 # Tools
 /docs/core/tools/ @tdykstra
 # Tutorials
@@ -104,7 +133,7 @@
 # Resources
 /docs/framework/resources/ @adegeo
 # Tools
-/docs/framework/tools/ @tdykstra
+/docs/framework/tools/ @gewarren
 # UI Automation
 /docs/framework/ui-automation/ @adegeo
 # What's New
@@ -116,7 +145,7 @@
 # XAML Services
 /docs/framework/xaml-services/ @adegeo
 # ADO.NET
-/docs/framework/data/ @stevestein
+/docs/framework/data/ @mcleblanc
 # NCL
 /docs/framework/configure-apps/file-schema/network/ @karelz
 /docs/framework/network-programming/ @karelz
@@ -132,15 +161,20 @@
 # Asynchronous Programming Patterns
 /docs/standard/asynchronous-programming-patterns/ @BillWagner
 # Attributes
-/docs/standard/attributes/ @tdykstra
+/docs/standard/attributes/ @gewarren
+# Character encoding
+/docs/standard/base-types/character-encoding/ @gewarren
+/docs/standard/base-types/character-encoding-introduction/ @gewarren
 # Base types
 /docs/standard/base-types/ @adegeo
 # Collections
 /docs/standard/collections/ @IEvangelist
+# System.CommandLine
+/docs/standard/commandline/ @tdykstra
 # Data
 /docs/standard/data/ @gewarren
 # Data - SQLite
-/docs/standard/data/sqlite/ @bricelam
+/docs/standard/data/sqlite/ @ajcvickers
 # Datetime
 /docs/standard/datetime/ @adegeo
 # Design guidelines
@@ -148,7 +182,7 @@
 # Events
 /docs/standard/events/ @IEvangelist
 # Exceptions
-/docs/standard/exceptions/ @tdykstra
+/docs/standard/exceptions/ @gewarren
 # GC
 /docs/standard/garbage-collection/ @gewarren
 # Generics
@@ -162,7 +196,7 @@
 # LINQ
 /docs/standard/linq/ @dotnet/docs
 # Memory and spans
-/docs/standard/memory-and-spans/ @tdykstra
+/docs/standard/memory-and-spans/ @gewarren
 # Native Interop
 /docs/standard/native-interop/ @jkoritzinsky
 # Parallel programming
@@ -170,7 +204,7 @@
 # Security
 /docs/standard/security/ @IEvangelist
 # Serialization
-/docs/standard/serialization/ @tdykstra
+/docs/standard/serialization/ @gewarren
 # Threading
 /docs/standard/threading/ @BillWagner
 # What's New
@@ -180,7 +214,7 @@
 # Blazor:
 /docs/architecture/blazor-for-web-forms-developers/ @danroth27 @IEvangelist
 # gRPC:
-/docs/architecture/grpc-for-wcf-developers/ @shirhatti @IEvangelist
+/docs/architecture/grpc-for-wcf-developers/ @IEvangelist
 # Desktop:
 /docs/architecture/modernize-desktop/ @OliaG @IEvangelist
 
@@ -192,7 +226,7 @@
 # Visual Basic snippets:
 /samples/snippets/visualbasic/ @BillWagner
 # F# Snippets:
-/samples/snippets/fsharp/ @cartermp
+/samples/snippets/fsharp/ @dotnet/docs
 
 # WPF folders:
 /samples/snippets/xaml/wpf/   @adegeo

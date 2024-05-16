@@ -15,11 +15,11 @@ let (|identifier|) [arguments] valueToMatch = expression
 
 // Active Pattern with multiple choices.
 // Uses a FSharp.Core.Choice<_,...,_> based on the number of case names. In F#, the limitation n <= 7 applies.
-let (|identifer1|identifier2|...|) valueToMatch = expression
+let (|identifier1|identifier2|...|) valueToMatch = expression
 
 // Partial active pattern definition.
 // Uses a FSharp.Core.option<_> to represent if the type is satisfied at the call site.
-let (|identifier|_|) [arguments ] valueToMatch = expression
+let (|identifier|_|) [arguments] valueToMatch = expression
 ```
 
 ## Remarks
@@ -127,6 +127,26 @@ The output of the previous code is as follows:
 Hello, random citizen!
 Hello, George!
 ```
+
+Note however that only single-case active patterns can be parameterized.
+
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet5008.fs)]
+
+## Struct Representations for Partial Active Patterns
+
+By default, partial active patterns return an `option` value, which will involve an allocation for the `Some` value on a successful match. Alternatively, you can use a [value option](value-options.md) as a return value through the use of the `Struct` attribute:
+
+```fsharp
+open System
+
+[<return: Struct>]
+let (|Int|_|) str =
+   match Int32.TryParse(str) with
+   | (true, n) -> ValueSome n
+   | _ -> ValueNone
+```
+
+The attribute must be specified, because the use of a struct return is not inferred from simply changing the return type to `ValueOption`. For more information, see [RFC FS-1039](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1039-struct-representation-for-active-patterns.md).
 
 ## See also
 

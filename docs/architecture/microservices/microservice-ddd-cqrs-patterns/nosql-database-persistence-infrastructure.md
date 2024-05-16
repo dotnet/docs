@@ -1,9 +1,11 @@
 ---
 title: Using NoSQL databases as a persistence infrastructure
 description: Understand the use of NoSql databases in general, and Azure Cosmos DB in particular, as an option to implement persistence.
-ms.date: 01/13/2021
+ms.date: 06/23/2021
 ---
 # Use NoSQL databases as a persistence infrastructure
+
+[!INCLUDE [download-alert](../includes/download-alert.md)]
 
 When you use NoSQL databases for your infrastructure data tier, you typically do not use an ORM like Entity Framework Core. Instead you use the API provided by the NoSQL engine, such as Azure Cosmos DB, MongoDB, Cassandra, RavenDB, CouchDB, or Azure Storage Tables.
 
@@ -23,8 +25,8 @@ For instance, the following JSON code is a sample implementation of an order agg
 
 ```json
 {
-    "id": "2017001",
-    "orderDate": "2/25/2017",
+    "id": "2024001",
+    "orderDate": "2/25/2024",
     "buyerId": "1234567",
     "address": [
         {
@@ -36,9 +38,9 @@ For instance, the following JSON code is a sample implementation of an order agg
         }
     ],
     "orderItems": [
-        {"id": 20170011, "productId": "123456", "productName": ".NET T-Shirt",
+        {"id": 20240011, "productId": "123456", "productName": ".NET T-Shirt",
         "unitPrice": 25, "units": 2, "discount": 0},
-        {"id": 20170012, "productId": "123457", "productName": ".NET Mug",
+        {"id": 20240012, "productId": "123457", "productName": ".NET Mug",
         "unitPrice": 15, "units": 1, "discount": 0}
     ]
 }
@@ -63,7 +65,7 @@ When you use a C\# model to implement the aggregate to be used by the Azure Cosm
 
 Order orderAggregate = new Order
 {
-    Id = "2017001",
+    Id = "2024001",
     OrderDate = new DateTime(2005, 7, 1),
     BuyerId = "1234567",
     PurchaseOrderNumber = "PO18009186470"
@@ -82,7 +84,7 @@ orderAggregate.UpdateAddress(address);
 
 OrderItem orderItem1 = new OrderItem
 {
-    Id = 20170011,
+    Id = 20240011,
     ProductId = "123456",
     ProductName = ".NET T-Shirt",
     UnitPrice = 25,
@@ -271,7 +273,6 @@ services:
     environment:
       # Other settings
       - ConnectionString=${ESHOP_AZURE_COSMOSDB:-mongodb://nosqldata}
-
 ```
 
 The `ConnectionString` environment variable is resolved this way: If the `ESHOP_AZURE_COSMOSDB` global variable is defined in the `.env` file with the Azure Cosmos DB connection string, it will use it to access the Azure Cosmos DB database in the cloud. If it’s not defined, it will take the `mongodb://nosqldata` value and use the development MongoDB container.
@@ -282,7 +283,7 @@ The following code shows the `.env` file with the Azure Cosmos DB connection str
 # .env file, in eShopOnContainers root folder
 # Other Docker environment variables
 
-ESHOP_EXTERNAL_DNS_NAME_OR_IP=localhost
+ESHOP_EXTERNAL_DNS_NAME_OR_IP=host.docker.internal
 ESHOP_PROD_EXTERNAL_DNS_NAME_OR_IP=<YourDockerHostIP>
 
 #ESHOP_AZURE_COSMOSDB=<YourAzureCosmosDBConnData>
@@ -309,22 +310,22 @@ services:
 #### Additional resources
 
 - **Modeling document data for NoSQL databases** \
-  <https://docs.microsoft.com/azure/cosmos-db/modeling-data>
+  [https://learn.microsoft.com/azure/cosmos-db/modeling-data](/azure/cosmos-db/modeling-data)
 
 - **Vaughn Vernon. The Ideal Domain-Driven Design Aggregate Store?** \
   <https://kalele.io/blog-posts/the-ideal-domain-driven-design-aggregate-store/>
 
 - **Introduction to Azure Cosmos DB: API for MongoDB**  \
-  <https://docs.microsoft.com/azure/cosmos-db/mongodb-introduction>
+  [https://learn.microsoft.com/azure/cosmos-db/mongodb-introduction](/azure/cosmos-db/mongodb-introduction)
 
 - **Azure Cosmos DB: Build a MongoDB API web app with .NET and the Azure portal**  \
-  <https://docs.microsoft.com/azure/cosmos-db/create-mongodb-dotnet>
+  [https://learn.microsoft.com/azure/cosmos-db/create-mongodb-dotnet](/azure/cosmos-db/create-mongodb-dotnet)
 
 - **Use the Azure Cosmos DB Emulator for local development and testing**  \
-  <https://docs.microsoft.com/azure/cosmos-db/local-emulator>
+  [https://learn.microsoft.com/azure/cosmos-db/local-emulator](/azure/cosmos-db/local-emulator)
 
 - **Connect a MongoDB application to Azure Cosmos DB**  \
-  <https://docs.microsoft.com/azure/cosmos-db/connect-mongodb-account>
+  [https://learn.microsoft.com/azure/cosmos-db/connect-mongodb-account](/azure/cosmos-db/connect-mongodb-account)
 
 - **The Cosmos DB Emulator Docker image (Windows Container)**  \
   <https://hub.docker.com/r/microsoft/azure-cosmosdb-emulator/>
@@ -333,7 +334,7 @@ services:
   <https://hub.docker.com/_/mongo/>
 
 - **Use MongoChef (Studio 3T) with an Azure Cosmos DB: API for MongoDB account**  \
-  <https://docs.microsoft.com/azure/cosmos-db/mongodb-mongochef>
+  [https://learn.microsoft.com/azure/cosmos-db/mongodb-mongochef](/azure/cosmos-db/mongodb-mongochef)
 
 >[!div class="step-by-step"]
 >[Previous](infrastructure-persistence-layer-implementation-entity-framework-core.md)

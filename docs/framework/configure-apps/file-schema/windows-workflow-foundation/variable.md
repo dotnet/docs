@@ -2,7 +2,6 @@
 description: "Learn more about: <variable>"
 title: "<variable>"
 ms.date: "03/30/2017"
-ms.topic: "reference"
 ms.assetid: 46cc8cbc-10ec-4625-8813-3f5cd6c6afde
 ---
 # \<variable>

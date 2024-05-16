@@ -14,7 +14,7 @@ Id: 141
   
 ## Description  
 
- This event indicates that arecovery log entry could not be generated for a participant enlistment. The transaction will be aborted. The event lists the Transaction ID, Enlistment ID, exception, process name and process ID.  
+ This event indicates that a recovery log entry could not be generated for a participant enlistment. The transaction will be aborted. The event lists the Transaction ID, Enlistment ID, exception, process name and process ID.  
   
 ## See also
 

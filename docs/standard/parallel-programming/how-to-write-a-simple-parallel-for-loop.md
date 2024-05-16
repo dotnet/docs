@@ -1,7 +1,7 @@
 ---
 title: "How to: Write a Simple Parallel.For Loop"
 description: Learn to write Parallel.For loops in .NET in which you don't need to cancel the loop, break out of loop iterations, or maintain any thread-local state.
-ms.date: "03/30/2017"
+ms.date: "07/16/2021"
 dev_langs:
   - "csharp"
   - "vb"
@@ -48,7 +48,7 @@ If you require more control over the concurrency level, use one of the overloads
 
 ## Return Value and Exception Handling
 
-<xref:System.Threading.Tasks.Parallel.For%2A> returns a <xref:System.Threading.Tasks.ParallelLoopResult?displayProperty=nameWithType> object when all threads have completed. This return value is useful when you are stopping or breaking loop iteration manually, because the <xref:System.Threading.Tasks.ParallelLoopResult> stores information such as the last iteration that ran to completion. If one or more exceptions occur on one of the threads, a <xref:System.AggregateException?displayProperty=nameWithType> will be thrown.
+<xref:System.Threading.Tasks.Parallel.For%2A> returns use a <xref:System.Threading.Tasks.ParallelLoopResult?displayProperty=nameWithType> object when all threads have completed. This return value is useful when you are stopping or breaking loop iteration manually, because the <xref:System.Threading.Tasks.ParallelLoopResult> stores information such as the last iteration that ran to completion. If one or more exceptions occur on one of the threads, a <xref:System.AggregateException?displayProperty=nameWithType> will be thrown.
 
 In the code in this example, the return value of <xref:System.Threading.Tasks.Parallel.For%2A> is not used.
 

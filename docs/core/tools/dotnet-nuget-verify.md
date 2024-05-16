@@ -19,6 +19,7 @@ dotnet nuget verify [<package-path(s)>]
     [--all]
     [--certificate-fingerprint <FINGERPRINT>]
     [-v|--verbosity <LEVEL>]
+    [--configfile <FILE>]
 
 dotnet nuget verify -h|--help
 ```
@@ -26,6 +27,9 @@ dotnet nuget verify -h|--help
 ## Description
 
 The `dotnet nuget verify` command verifies a signed NuGet package.
+
+  > [!NOTE]
+  > This command requires a certificate root store that is valid for both code signing and timestamping. Also, this command may not be supported on some combinations of operating system and .NET SDK. For more information, see [NuGet signed package verification](nuget-signed-package-verification.md).
 
 ## Arguments
 
@@ -46,13 +50,36 @@ The `dotnet nuget verify` command verifies a signed NuGet package.
 
   Verify that the signer certificate matches with one of the specified `SHA256` fingerprints. This option can be supplied multiple times to provide multiple fingerprints.
 
-* **`-v|--verbosity <LEVEL>`**
+- **`-v|--verbosity <LEVEL>`**
 
-  Sets the MSBuild verbosity level. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default is `normal`.
+  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default is `minimal`. For more information, see <xref:Microsoft.Build.Framework.LoggerVerbosity>.
 
-* **`-h|--help`**
+  The following table shows what is displayed for each verbosity level.
 
-  Prints out a short help for the command.
+  ​                                  | `q[uiet]` | `m[inimal]` | `n[ormal]` | `d[etailed]` | `diag[nostic]`
+  ----------------------------------| --------- | ----------- | ---------- | -----------| --------------
+  `Certificate chain Information`   | ❌       | ❌          | ❌         | ✔️         | ✔️
+  `Path to package being verified`  | ❌       | ❌          | ✔️         | ✔️         | ✔️
+  `Hashing algorithm used for signature`        | ❌       | ❌          | ✔️         | ✔️         | ✔️
+  `Author/Repository Certificate -> SHA1 hash`| ❌       | ❌          | ✔️         | ✔️         | ✔️
+  `Author/Repository Certificate -> Issued By`| ❌       | ❌          | ✔️         | ✔️         | ✔️
+  `Timestamp Certificate -> Issued By`| ❌       | ❌          | ✔️         | ✔️         | ✔️
+  `Timestamp Certificate -> SHA-256 hash`| ❌       | ❌          | ✔️         | ✔️         | ✔️
+  `Timestamp Certificate -> Validity period`| ❌       | ❌          | ✔️         | ✔️         | ✔️
+  `Timestamp Certificate -> SHA1 hash`| ❌       | ❌          | ✔️         | ✔️         | ✔️
+  `Timestamp Certificate -> Subject name`| ❌       | ❌          | ✔️         | ✔️         | ✔️
+  `Author/Repository Certificate -> Subject name`| ❌       | ✔️          | ✔️         | ✔️         | ✔️
+  `Author/Repository Certificate -> SHA-256 hash`| ❌       | ✔️          | ✔️         | ✔️         | ✔️
+  `Author/Repository Certificate -> Validity period`| ❌       | ✔️          | ✔️         | ✔️         | ✔️
+  `Author/Repository Certificate -> Service index URL (If applicable)`| ❌       | ✔️          | ✔️         | ✔️         | ✔️
+  `Package name being verified`                    | ❌       | ✔️          | ✔️         | ✔️         | ✔️
+  `Type of signature (author or repository)`| ❌       | ✔️          | ✔️         | ✔️         | ✔️
+
+  ❌ indicates details that are **not** displayed. ✔️ indicates details that are displayed.
+
+[!INCLUDE [configfile](../../../includes/cli-configfile.md)]
+
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 ## Examples
 
@@ -78,4 +105,10 @@ The `dotnet nuget verify` command verifies a signed NuGet package.
 
   ```dotnetcli
   dotnet nuget verify foo.nupkg --certificate-fingerprint CE40881FF5F0AD3E58965DA20A9F571EF1651A56933748E1BF1C99E537C4E039 --certificate-fingerprint EC10992GG5F0AD3E58965DA20A9F571EF1651A56933748E1BF1C99E537C4E027
+  ```
+
+- Verify the signature of *foo.nupkg* by using settings (`packagesources` and `trustedSigners`) only from the specified *nuget.config* file:
+
+  ```dotnetcli
+  dotnet nuget verify foo.nupkg --configfile ..\Settings\nuget.config
   ```

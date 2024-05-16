@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "HRESULTs"
   - "exceptions, COM interop"
   - "COM interop, exceptions"
-ms.assetid: e6104aa8-8e5f-4069-b864-def85579c96c
+ms.topic: how-to
 ---
 # Handling COM Interop Exceptions
 

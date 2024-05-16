@@ -2,7 +2,7 @@
 description: "Learn more about: Task 3: Create the Toolbox and PropertyGrid Panes"
 title: "Task 3: Create the Toolbox and PropertyGrid Panes"
 ms.date: "03/30/2017"
-ms.assetid: 72c1546a-eed5-4f0f-a616-719a163414f4
+ms.topic: "tutorial"
 ---
 # Task 3: Create the Toolbox and PropertyGrid Panes
 

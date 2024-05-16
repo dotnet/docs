@@ -22,7 +22,7 @@ xmlns:my='clr-namespace:XAMLActivityDefinition;assembly=XAMLActivityDefinition'
 xmlns:s="clr-namespace:System;assembly=mscorlib"  
 xmlns="http://schemas.microsoft.com/2009/workflow">  
 <z:SchemaType.Members>  
-    <z:SchemaType.SchemaProperty Name='Text' Type=' InArgument(s:String)' />  
+  <z:SchemaType.SchemaProperty Name='Text' Type='InArgument(s:String)' />  
   <z:SchemaType.SchemaProperty Name='Response' Type='OutArgument(s:String)' />  
 </z:SchemaType.Members>  
   <Sequence>  

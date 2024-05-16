@@ -32,8 +32,6 @@ This section contains common questions and troubleshooting help for using queues
 
 - Only MSMQ 4.0 supports remote transacted read.
 
-For more information, see [Differences in Queuing Features in Windows Vista, Windows Server 2003, and Windows XP](diff-in-queue-in-vista-server-2003-windows-xp.md).
-
 **Q:** Can I use MSMQ 3.0 on one side of a queued communication and MSMQ 4.0 on the other side?
 
 **A:** Yes.
@@ -117,7 +115,7 @@ System.ServiceModel.MsmqPoisonMessageException: The transport channel detected a
 ---> System.ServiceModel.ProtocolException: An incoming MSMQ message contained invalid or unexpected .NET Message Framing information in its body. The message cannot be received. Ensure that the sender is using a compatible service contract with a matching SessionMode.
 ```
 
-The system dead-letter queue, as well as any custom dead-letter queue, is particularly susceptible to this issue if an application sends both queued session messages and queued datagram messages from the same computer. If a message cannot be sent successfully, it is moved to the dead-letter queue. Under these circumstances, it is possible to have both session and datagram messages in the dead-letter queue. There is no way to separate both types of messages at runtime when reading from a queue, therefore, applications should not send both queued session messages and queued datagram messages from the same computer.
+The system dead-letter queue, as well as any custom dead-letter queue, is particularly susceptible to this issue if an application sends both queued session messages and queued datagram messages from the same computer. If a message cannot be sent successfully, it is moved to the dead-letter queue. Under these circumstances, it is possible to have both session and datagram messages in the dead-letter queue. There is no way to separate both types of messages at run time when reading from a queue, therefore, applications should not send both queued session messages and queued datagram messages from the same computer.
 
 ### MSMQ Integration: Specific Troubleshooting
 

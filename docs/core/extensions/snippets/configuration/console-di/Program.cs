@@ -1,60 +1,59 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿// <Program>
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using ConsoleDI.Example;
 
-namespace ConsoleDI.Example
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+
+builder.Services.AddTransient<IExampleTransientService, ExampleTransientService>();
+builder.Services.AddScoped<IExampleScopedService, ExampleScopedService>();
+builder.Services.AddSingleton<IExampleSingletonService, ExampleSingletonService>();
+builder.Services.AddTransient<ServiceLifetimeReporter>();
+
+using IHost host = builder.Build();
+
+ExemplifyServiceLifetime(host.Services, "Lifetime 1");
+ExemplifyServiceLifetime(host.Services, "Lifetime 2");
+
+await host.RunAsync();
+
+static void ExemplifyServiceLifetime(IServiceProvider hostProvider, string lifetime)
 {
-    class Program
-    {
-        static Task Main(string[] args)
-        {
-            using IHost host = CreateHostBuilder(args).Build();
+    using IServiceScope serviceScope = hostProvider.CreateScope();
+    IServiceProvider provider = serviceScope.ServiceProvider;
+    ServiceLifetimeReporter logger = provider.GetRequiredService<ServiceLifetimeReporter>();
+    logger.ReportServiceLifetimeDetails(
+        $"{lifetime}: Call 1 to provider.GetRequiredService<ServiceLifetimeReporter>()");
 
-            ExemplifyScoping(host.Services, "Scope 1");
-            ExemplifyScoping(host.Services, "Scope 2");
+    Console.WriteLine("...");
 
-            return host.RunAsync();
-        }
-        // Sample output:
-        // Scope 1-Call 1 .GetRequiredService<OperationLogger>(): ITransientOperation [ 80f4...Always different        ]
-        // Scope 1-Call 1 .GetRequiredService<OperationLogger>(): IScopedOperation    [ c878...Changes only with scope ]
-        // Scope 1-Call 1 .GetRequiredService<OperationLogger>(): ISingletonOperation [ 1586...Always the same         ]
-        // ...
-        // Scope 1-Call 2 .GetRequiredService<OperationLogger>(): ITransientOperation [ f3c0...Always different        ]
-        // Scope 1-Call 2 .GetRequiredService<OperationLogger>(): IScopedOperation    [ c878...Changes only with scope ]
-        // Scope 1-Call 2 .GetRequiredService<OperationLogger>(): ISingletonOperation [ 1586...Always the same         ]
-        //
-        // Scope 2-Call 1 .GetRequiredService<OperationLogger>(): ITransientOperation [ f9af...Always different        ]
-        // Scope 2-Call 1 .GetRequiredService<OperationLogger>(): IScopedOperation    [ 2bd0...Changes only with scope ]
-        // Scope 2-Call 1 .GetRequiredService<OperationLogger>(): ISingletonOperation [ 1586...Always the same         ]
-        // ...
-        // Scope 2-Call 2 .GetRequiredService<OperationLogger>(): ITransientOperation [ fa65...Always different        ]
-        // Scope 2-Call 2 .GetRequiredService<OperationLogger>(): IScopedOperation    [ 2bd0...Changes only with scope ]
-        // Scope 2-Call 2 .GetRequiredService<OperationLogger>(): ISingletonOperation [ 1586...Always the same         ]
+    logger = provider.GetRequiredService<ServiceLifetimeReporter>();
+    logger.ReportServiceLifetimeDetails(
+        $"{lifetime}: Call 2 to provider.GetRequiredService<ServiceLifetimeReporter>()");
 
-        static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
-                .ConfigureServices((_, services) =>
-                    services.AddTransient<ITransientOperation, DefaultOperation>()
-                            .AddScoped<IScopedOperation, DefaultOperation>()
-                            .AddSingleton<ISingletonOperation, DefaultOperation>()
-                            .AddTransient<OperationLogger>());
-
-        static void ExemplifyScoping(IServiceProvider services, string scope)
-        {
-            using IServiceScope serviceScope = services.CreateScope();
-            IServiceProvider provider = serviceScope.ServiceProvider;
-
-            OperationLogger logger = provider.GetRequiredService<OperationLogger>();
-            logger.LogOperations($"{scope}-Call 1 .GetRequiredService<OperationLogger>()");
-
-            Console.WriteLine("...");
-
-            logger = provider.GetRequiredService<OperationLogger>();
-            logger.LogOperations($"{scope}-Call 2 .GetRequiredService<OperationLogger>()");
-
-            Console.WriteLine();
-        }
-    }
+    Console.WriteLine();
 }
+// </Program>
+
+// <Output>
+// Sample output:
+// Lifetime 1: Call 1 to provider.GetRequiredService<ServiceLifetimeReporter>()
+//     IExampleTransientService: d08a27fa-87d2-4a06-98d7-2773af886125 (Always different)
+//     IExampleScopedService: 402c83c9-b4ed-4be1-b78c-86be1b1d908d (Changes only with lifetime)
+//     IExampleSingletonService: a61f1ff4-0b14-4508-bd41-21d852484a7b (Always the same)
+// ...
+// Lifetime 1: Call 2 to provider.GetRequiredService<ServiceLifetimeReporter>()
+//     IExampleTransientService: b43d68fb-2c7b-4a9b-8f02-fc507c164326 (Always different)
+//     IExampleScopedService: 402c83c9-b4ed-4be1-b78c-86be1b1d908d (Changes only with lifetime)
+//     IExampleSingletonService: a61f1ff4-0b14-4508-bd41-21d852484a7b (Always the same)
+// 
+// Lifetime 2: Call 1 to provider.GetRequiredService<ServiceLifetimeReporter>()
+//     IExampleTransientService: f3856b59-ab3f-4bbd-876f-7bab0013d392 (Always different)
+//     IExampleScopedService: bba80089-1157-4041-936d-e96d81dd9d1c (Changes only with lifetime)
+//     IExampleSingletonService: a61f1ff4-0b14-4508-bd41-21d852484a7b (Always the same)
+// ...
+// Lifetime 2: Call 2 to provider.GetRequiredService<ServiceLifetimeReporter>()
+//     IExampleTransientService: a8015c6a-08cd-4799-9ec3-2f2af9cbbfd2 (Always different)
+//     IExampleScopedService: bba80089-1157-4041-936d-e96d81dd9d1c (Changes only with lifetime)
+//     IExampleSingletonService: a61f1ff4-0b14-4508-bd41-21d852484a7b (Always the same)
+// </Output>

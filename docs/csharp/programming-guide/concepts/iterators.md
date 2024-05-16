@@ -1,5 +1,5 @@
 ---
-title: Iterate through collections in C#
+title: Iterate through collections
 description: Learn how to use an iterator to step through collections like lists and arrays. Iterators are consumed from client code using a foreach statement or LINQ query.
 ms.date: 08/14/2018
 ms.assetid: c93f6dd4-e72a-4a06-be1c-a98b3255b734
@@ -8,9 +8,9 @@ ms.assetid: c93f6dd4-e72a-4a06-be1c-a98b3255b734
 
 An *iterator* can be used to step through collections such as lists and arrays.
 
-An iterator method or `get` accessor performs a custom iteration over a collection. An iterator method uses the [yield return](../../language-reference/keywords/yield.md) statement to return each element one at a time. When a `yield return` statement is reached, the current location in code is remembered. Execution is restarted from that location the next time the iterator function is called.
+An iterator method or `get` accessor performs a custom iteration over a collection. An iterator method uses the [yield return](../../language-reference/statements/yield.md) statement to return each element one at a time. When a `yield return` statement is reached, the current location in code is remembered. Execution is restarted from that location the next time the iterator function is called.
 
-You consume an iterator from client code by using a [foreach](../../language-reference/keywords/foreach-in.md) statement or by using a LINQ query.
+You consume an iterator from client code by using a [foreach](../../language-reference/statements/iteration-statements.md#the-foreach-statement) statement or by using a LINQ query.
 
 In the following example, the first iteration of the `foreach` loop causes execution to proceed in the `SomeNumbers` iterator method until the first `yield return` statement is reached. This iteration returns a value of 3, and the current location in the iterator method is retained. On the next iteration of the loop, execution in the iterator method continues from where it left off, again stopping when it reaches a `yield return` statement. This iteration returns a value of 5, and the current location in the iterator method is again retained. The loop completes when the end of the iterator method is reached.
 
@@ -42,7 +42,7 @@ You can use a `yield break` statement to end the iteration.
 
 ## Simple Iterator
 
-The following example has a single `yield return` statement that is inside a [for](../../language-reference/keywords/for.md) loop. In `Main`, each iteration of the `foreach` statement body creates a call to the iterator function, which proceeds to the next `yield return` statement.
+The following example has a single `yield return` statement that is inside a [for](../../language-reference/statements/iteration-statements.md#the-for-statement) loop. In `Main`, each iteration of the `foreach` statement body creates a call to the iterator function, which proceeds to the next `yield return` statement.
 
 ```csharp
 static void Main()
@@ -90,7 +90,7 @@ static void Main()
 
 public class DaysOfTheWeek : IEnumerable
 {
-    private string[] days = { "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" };
+    private string[] days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
     public IEnumerator GetEnumerator()
     {
@@ -329,7 +329,7 @@ In C#, `yield` is not a reserved word and has special meaning only when it is us
 
 Although you write an iterator as a method, the compiler translates it into a nested class that is, in effect, a state machine. This class keeps track of the position of the iterator as long the `foreach` loop in the client code continues.
 
-To see what the compiler does, you can use the Ildasm.exe tool to view the Microsoft intermediate language code that's generated for an iterator method.
+To see what the compiler does, you can use the Ildasm.exe tool to view the common intermediate language code that's generated for an iterator method.
 
 When you create an iterator for a [class](../../language-reference/keywords/class.md) or [struct](../../language-reference/builtin-types/struct.md), you don't have to implement the whole <xref:System.Collections.IEnumerator> interface. When the compiler detects the iterator, it automatically generates the `Current`, `MoveNext`, and `Dispose` methods of the <xref:System.Collections.IEnumerator> or <xref:System.Collections.Generic.IEnumerator%601> interface.
 
@@ -337,7 +337,7 @@ On each successive iteration of the `foreach` loop (or the direct call to `IEnum
 
 Iterators don't support the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=nameWithType> method. To reiterate from the start, you must obtain a new iterator. Calling <xref:System.Collections.IEnumerator.Reset%2A> on the iterator returned by an iterator method throws a <xref:System.NotSupportedException>.
 
-For additional information, see the [C# Language Specification](~/_csharplang/spec/classes.md#iterators).
+For additional information, see the [C# Language Specification](~/_csharpstandard/standard/classes.md#1514-iterators).
 
 ## Use of Iterators
 
@@ -353,7 +353,5 @@ Iterators enable you to maintain the simplicity of a `foreach` loop when you nee
 
 - <xref:System.Collections.Generic>
 - <xref:System.Collections.Generic.IEnumerable%601>
-- [foreach, in](../../language-reference/keywords/foreach-in.md)
-- [yield](../../language-reference/keywords/yield.md)
-- [Using foreach with Arrays](../arrays/using-foreach-with-arrays.md)
-- [Generics](../generics/index.md)
+- [foreach, in](../../language-reference/statements/iteration-statements.md#the-foreach-statement)
+- [Generics](../../fundamentals/types/generics.md)

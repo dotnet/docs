@@ -33,7 +33,7 @@ Specifies the throttling mechanism of a Windows Communication Foundation (WCF) s
 |---------------|-----------------|  
 |maxConcurrentCalls|A positive integer that limits the number of messages that currently process across a <xref:System.ServiceModel.ServiceHost>. Calls in excess of the limit are queued. Setting this value to 0 is equivalent to setting it to Int32.MaxValue. The default is 16 * processor count.|  
 |maxConcurrentInstances|A positive integer that limits the number of <xref:System.ServiceModel.InstanceContext> objects that execute at one time across a <xref:System.ServiceModel.ServiceHost>. Requests to create additional instances are queued and complete when a slot below the limit becomes available. The default is the sum of maxConcurrentSessions and MaxConcurrentCalls|  
-|maxConcurrentSessions|A positive integer that limits the number of sessions a <xref:System.ServiceModel.ServiceHost> object can accept.<br /><br /> The service will accept connections in excess of the limit, but only the channels below the limit are active (messages are read from the channel). Setting this value to 0 is equivalent to setting it to Int32.MaxValue. The default is 100 * processor count.|  
+|maxConcurrentSessions|A positive integer that limits the number of sessions a <xref:System.ServiceModel.ServiceHost> object can accept.<br /><br /> The service will accept connections in excess of the limit, but only the channels below the limit are active (messages are read from the channel). The default is 100 * processor count.|  
   
 ### Child Elements  
 

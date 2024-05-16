@@ -66,7 +66,7 @@ If you are consuming a class, module, or structure that has members of unsigned 
     ```
 
     > [!CAUTION]
-    > The `UInteger`, `ULong`, `UShort`, and `SByte` data types are not part of the [Language Independence and Language-Independent Components](../../../standard/language-independence-and-language-independent-components.md) (CLS), so CLS-compliant code cannot consume a component that uses them.
+    > The `UInteger`, `ULong`, `UShort`, and `SByte` data types are not part of the [Language Independence and Language-Independent Components](../../../standard/language-independence.md) (CLS), so CLS-compliant code cannot consume a component that uses them.
 
     > [!IMPORTANT]
     > Making a call to unmanaged code, such as the Windows application programming interface (API), exposes your code to potential security risks.

@@ -7,25 +7,33 @@ namespace HowToStrings
     {
         public static void Examples()
         {
-            Console.WriteLine("Example one");
+            Console.WriteLine("Split words");
             Console.WriteLine();
             SplitWords();
 
-            Console.WriteLine("Example two");
+            Console.WriteLine("Enumerate words");
+            Console.WriteLine();
+            EnumerateWords();
+
+            Console.WriteLine("Split words with repeated separators");
             Console.WriteLine();
             SplitWordsWithRepeatedSeparators();
 
-            Console.WriteLine("Example three");
+            Console.WriteLine("Split on multiple chars");
             Console.WriteLine();
             SplitOnMultipleChars();
 
-            Console.WriteLine("Example four");
+            Console.WriteLine("Split on multiple chars with gaps");
             Console.WriteLine();
             SplitOnMultipleCharsWithGaps();
 
-            Console.WriteLine("Example five");
+            Console.WriteLine("Split using strings");
             Console.WriteLine();
             SplitUsingStrings();
+
+            Console.WriteLine("Split into no more than four substrings");
+            Console.WriteLine();
+            SplitFourTimes();
         }
 
         private static void SplitWords()
@@ -39,6 +47,19 @@ namespace HowToStrings
                 System.Console.WriteLine($"<{word}>");
             }
             // </Snippet1>
+        }
+
+        private static void EnumerateWords()
+        {
+            // <Snippet1.5>
+            string phrase = "The quick brown fox jumps over the lazy dog.";
+            string[] words = phrase.Split(' ');
+
+            for (int i = 0; i < words.Length; i++)
+            {
+                System.Console.WriteLine($"Index {i}: <{words[i]}>");
+            }
+            // </Snippet1.5>
         }
 
         private static void SplitWordsWithRepeatedSeparators()
@@ -106,6 +127,19 @@ namespace HowToStrings
                 System.Console.WriteLine(word);
             }
             // </Snippet5>
+        }
+
+        private static void SplitFourTimes()
+        {
+            // <Snippet6>
+            string phrase = "The quick brown fox jumps over the lazy dog.";
+            string[] words = phrase.Split(' ', 4, System.StringSplitOptions.None);
+
+            foreach (var word in words)
+            {
+                System.Console.WriteLine($"<{word}>");
+            }
+            // </Snippet6>
         }
     }
 }

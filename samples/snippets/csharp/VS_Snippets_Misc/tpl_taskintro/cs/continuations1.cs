@@ -2,7 +2,7 @@
 using System;
 using System.Threading.Tasks;
 
-public class Example
+public class ContinuationOne
 {
    public static void Main()
    {

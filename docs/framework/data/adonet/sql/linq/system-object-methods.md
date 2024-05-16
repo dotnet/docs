@@ -6,20 +6,19 @@ ms.assetid: 5397fca0-689e-443e-802f-e1cbdc866427
 ---
 # System.Object Methods
 
-[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] supports the following <xref:System.Object> methods.  
+[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] supports the following <xref:System.Object> methods:
+
+- <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType>
+- <xref:System.Object.Equals%28System.Object%2CSystem.Object%29?displayProperty=nameWithType>
+- <xref:System.Object.ToString?displayProperty=nameWithType>
   
-|||  
-|-|-|  
-|<xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType>|<xref:System.Object.Equals%28System.Object%2CSystem.Object%29?displayProperty=nameWithType>|  
-|<xref:System.Object.ToString?displayProperty=nameWithType>||  
-  
- [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] does not support the following <xref:System.Object> methods.  
-  
-|||  
-|-|-|  
-|<xref:System.Object.GetHashCode?displayProperty=nameWithType>|<xref:System.Object.ReferenceEquals%28System.Object%2CSystem.Object%29?displayProperty=nameWithType>|  
-|<xref:System.Object.MemberwiseClone?displayProperty=nameWithType>|<xref:System.Object.GetType?displayProperty=nameWithType>|  
-|<xref:System.Object.ToString?displayProperty=nameWithType> for binary types such as `BINARY`, `VARBINARY`, `IMAGE`, and `TIMESTAMP`.||  
+ [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] does not support the following <xref:System.Object> methods:
+
+- <xref:System.Object.GetHashCode?displayProperty=nameWithType>
+- <xref:System.Object.ReferenceEquals%28System.Object%2CSystem.Object%29?displayProperty=nameWithType>
+- <xref:System.Object.MemberwiseClone?displayProperty=nameWithType>
+- <xref:System.Object.GetType?displayProperty=nameWithType>
+- <xref:System.Object.ToString?displayProperty=nameWithType> for binary types such as `BINARY`, `VARBINARY`, `IMAGE`, and `TIMESTAMP`.
   
 ## Differences from .NET  
 

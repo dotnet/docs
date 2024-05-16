@@ -1,18 +1,10 @@
-﻿using System.Threading.Tasks;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
+﻿using DependencyInjection.Example;
 
-namespace DependencyInjection.Example
-{
-    class Program
-    {
-        static Task Main(string[] args) =>
-            CreateHostBuilder(args).Build().RunAsync();
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
 
-        static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
-                .ConfigureServices((_, services) =>
-                    services.AddHostedService<Worker>()
-                            .AddScoped<IMessageWriter, MessageWriter>());
-    }
-}
+builder.Services.AddHostedService<Worker>();
+builder.Services.AddSingleton<IMessageWriter, MessageWriter>();
+
+using IHost host = builder.Build();
+
+host.Run();

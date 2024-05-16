@@ -1,11 +1,11 @@
 ---
 title: How to find preceding siblings - LINQ to XML
-description: "Learn how to to find sibling elements that precede a given element. Two methods are shown: one uses XPathSelectElements along the preceding-sibling axis, the other uses XNode.ElementsBeforeSelf."
+description: "Learn how to find sibling elements that precede a given element. Two methods are shown: one uses XPathSelectElements along the preceding-sibling axis, the other uses XNode.ElementsBeforeSelf."
 ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: b281ff99-d08a-43d0-bea1-eff831b2f8ae
+ms.topic: how-to
 ---
 
 # How to find preceding siblings (LINQ to XML)

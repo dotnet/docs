@@ -1,11 +1,11 @@
 ---
 title: Basic Types
-description: Discover the fundamental basic types that are used in the F# language.
+description: Discover the fundamental basic types that are used in F#.
 ms.date: 08/15/2020
 ---
 # Basic types
 
-This topic lists the basic types that are defined in the F# language. These types are the most fundamental in F#, forming the basis of nearly every F# program. They are a superset of .NET primitive types.
+This topic lists the basic types that are defined in F#. These types are the most fundamental in F#, forming the basis of nearly every F# program. They are a superset of .NET primitive types.
 
 |Type|.NET type|Description|Example|
 |----|---------|-----------|-------|
@@ -20,7 +20,7 @@ This topic lists the basic types that are defined in the F# language. These type
 |`uint64`|<xref:System.UInt64>|Values from 0 to 18,446,744,073,709,551,615.|`1UL`|
 |`nativeint`|<xref:System.IntPtr>|A native pointer as a signed integer.|`nativeint 1`|
 |`unativeint`|<xref:System.UIntPtr>|A native pointer as an unsigned integer.|`unativeint 1`|
-|`decimal`|<xref:System.Decimal>|A floating point data type that has at least 28 significant digits.|`1.0`|
+|`decimal`|<xref:System.Decimal>|A floating point data type that has at least 28 significant digits.|`1.0m`|
 |`float`, `double`|<xref:System.Double>|A 64-bit floating point type.|`1.0`|
 |`float32`, `single`|<xref:System.Single>|A 32-bit floating point type.|`1.0f`|
 |`char`|<xref:System.Char>|Unicode character values.|`'c'`|

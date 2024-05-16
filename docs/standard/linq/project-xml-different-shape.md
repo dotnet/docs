@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 4cb6b14a-32dc-4a2a-813e-bf9368fa8d86
+ms.topic: how-to
 ---
 
 # Project XML in a different shape (LINQ to XML)

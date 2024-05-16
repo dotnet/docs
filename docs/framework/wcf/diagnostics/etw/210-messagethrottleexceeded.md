@@ -6,10 +6,10 @@ ms.assetid: 24ca08ea-c11c-4753-946e-98aa820f8711
 ---
 # 210 - MessageThrottleExceeded
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|210|  
 |Keywords|EndToEndMonitoring, HealthMonitoring, Troubleshooting, ServiceModel|  
 |Level|Warning|  

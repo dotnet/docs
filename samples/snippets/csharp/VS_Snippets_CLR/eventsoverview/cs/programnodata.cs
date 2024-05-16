@@ -3,7 +3,7 @@ using System;
 
 namespace ConsoleApplication1
 {
-    class Program
+    class ProgramOne
     {
         static void Main(string[] args)
         {
@@ -40,16 +40,7 @@ namespace ConsoleApplication1
             total += x;
             if (total >= threshold)
             {
-                OnThresholdReached(EventArgs.Empty);
-            }
-        }
-
-        protected virtual void OnThresholdReached(EventArgs e)
-        {
-            EventHandler handler = ThresholdReached;
-            if (handler != null)
-            {
-                handler(this, e);
+                ThresholdReached?.Invoke(this, EventArgs.Empty);
             }
         }
 

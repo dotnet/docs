@@ -44,7 +44,7 @@ Provides methods to create, modify, and save metadata about the assembly in the 
 |[DefineTypeRefByName Method](imetadataemit-definetyperefbyname-method.md)|Gets a metadata token for a type that is defined in another module outside the current scope.|  
 |[DefineUserString Method](imetadataemit-defineuserstring-method.md)|Gets a metadata token for the specified literal string.|  
 |[DeleteClassLayout Method](imetadataemit-deleteclasslayout-method.md)|Destroys the class layout metadata signature for the type referenced by the specified token.|  
-|[DeleteFieldMarshal Method](imetadataemit-deletefieldmarshal-method.md)|Destroys the PInvoke marshaling metadata signature for the object referenced by the specified token.|  
+|[DeleteFieldMarshal Method](imetadataemit-deletefieldmarshal-method.md)|Destroys the PInvoke marshalling metadata signature for the object referenced by the specified token.|  
 |[DeletePinvokeMap Method](imetadataemit-deletepinvokemap-method.md)|Destroys the PInvoke mapping metadata for the object referenced by the specified token.|  
 |[DeleteToken Method](imetadataemit-deletetoken-method.md)|Deletes the specified token from the current metadata scope.|  
 |[GetSaveSize Method](imetadataemit-getsavesize-method.md)|Gets the estimated binary size of the assembly in the current scope.|  
@@ -58,7 +58,7 @@ Provides methods to create, modify, and save metadata about the assembly in the 
 |[SetClassLayout Method](imetadataemit-setclasslayout-method.md)|Sets or updates the class layout signature of a type defined by a prior call to `IMetaDataEmit::DefineTypeDef`.|  
 |[SetCustomAttributeValue Method](imetadataemit-setcustomattributevalue-method.md)|Sets or updates the value of a custom attribute defined by a prior call to `IMetaDataEmit::DefineCustomAttribute`.|  
 |[SetEventProps Method](imetadataemit-seteventprops-method.md)|Sets or updates the specified feature of an event defined by a prior call to `IMetaDataEmit::DefineEvent`.|  
-|[SetFieldMarshal Method](imetadataemit-setfieldmarshal-method.md)|Sets the PInvoke marshaling information for the field, method return, or method parameter referenced by the specified token.|  
+|[SetFieldMarshal Method](imetadataemit-setfieldmarshal-method.md)|Sets the PInvoke marshalling information for the field, method return, or method parameter referenced by the specified token.|  
 |[SetFieldProps Method](imetadataemit-setfieldprops-method.md)|Sets or updates the default value for the field referenced by the specified field token.|  
 |[SetFieldRVA Method](imetadataemit-setfieldrva-method.md)|Sets a global variable value for the relative virtual address of the field referenced by the specified token.|  
 |[SetHandler Method](imetadataemit-sethandler-method.md)|Sets the method referenced by the specified `IUnknown` pointer as a notification callback for token remaps.|  

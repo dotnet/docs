@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Document your code with XML (Visual Basic)"
 title: "Documenting Your Code with XML"
-ms.date: 07/20/2015
+ms.date: 11/22/2021
 helpviewer_keywords:
   - "XML [Visual Basic], documenting code"
   - "XML comments, Visual Basic"
@@ -14,7 +14,7 @@ In Visual Basic, you can document your code using XML.
 
 ## XML documentation comments
 
-Visual Basic provides an easy way to automatically create XML documentation for projects. You can automatically generate an XML skeleton for your types and members, and then provide summaries, descriptive documentation for each parameter, and other remarks. With the appropriate setup, the XML documentation is automatically emitted into an XML file with the same root file name as your project. For more information, see [-doc](../../reference/command-line-compiler/doc.md).
+Visual Basic provides an easy way to automatically create XML documentation for projects. You can automatically generate an XML skeleton for your types and members, and then provide summaries, descriptive documentation for each parameter, and other remarks. With the appropriate setup, the XML documentation is automatically emitted into an XML file with the same root file name as your project. For information about configuring the generation of the XML documentation file, see [-doc compiler option](../../reference/command-line-compiler/doc.md) and [GenerateDocumentationFile MSBuild property](../../../core/project-sdk/msbuild-props.md#generatedocumentationfile).
 
 The XML file can be consumed or otherwise manipulated as XML. This file is located in the same directory as the output .exe or .dll file of your project.
 

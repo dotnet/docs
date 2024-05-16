@@ -6,10 +6,10 @@ ms.assetid: 97340f4d-4e09-4e42-a17a-982b3868dbcf
 ---
 # 206 - ErrorHandlerInvoked
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|206|  
 |Keywords|Troubleshooting, ServiceModel|  
 |Level|Information|  

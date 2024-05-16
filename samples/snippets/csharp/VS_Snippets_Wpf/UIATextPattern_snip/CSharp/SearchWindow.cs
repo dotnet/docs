@@ -728,7 +728,7 @@ namespace SDKSample
         /// Outputs the FontNameAttribute value for a range of text.
         /// </summary>
         /// <param name="targetTextElement">
-        /// The AutomationElment that represents a text control.
+        /// The AutomationElement that represents a text control.
         /// </param>
         /// -------------------------------------------------------------------
         private void GetFontNameAttribute(AutomationElement targetTextElement)
@@ -2135,9 +2135,9 @@ namespace SDKSample
                 Console.WriteLine("Root element does not contain a descendant that supports TextPattern.");
                 return null;
             }
-            TextPatternRange[] currentSelelction = textpatternPattern.GetSelection();
+            TextPatternRange[] currentSelection = textpatternPattern.GetSelection();
             // Find 'italic' range
-            return currentSelelction[0].FindAttribute(TextPattern.IsItalicAttribute, true, false);
+            return currentSelection[0].FindAttribute(TextPattern.IsItalicAttribute, true, false);
         }
         // </Snippet1064>
         // <Snippet1065>
@@ -2209,7 +2209,7 @@ namespace SDKSample
         /// Retrieves the embedded children of a document control.
         /// </summary>
         /// <param name="targetTextElement">
-        /// The AutomationElment that represents a text control.
+        /// The AutomationElement that represents a text control.
         /// </param>
         /// -------------------------------------------------------------------
         private void GetEmbeddedObjects(AutomationElement targetTextElement)
@@ -2243,7 +2243,7 @@ namespace SDKSample
         /// of a document control and displays the content of the range.
         /// </summary>
         /// <param name="targetTextElement">
-        /// The AutomationElment that represents a text control.
+        /// The AutomationElement that represents a text control.
         /// </param>
         /// -------------------------------------------------------------------
         private void GetRangeFromChild(AutomationElement targetTextElement)
@@ -2333,7 +2333,7 @@ namespace SDKSample
         /// is the current selection.
         /// </summary>
         /// <param name="targetTextElement">
-        /// The AutomationElment that represents a text control.
+        /// The AutomationElement that represents a text control.
         /// </param>
         /// <param name="textUnit">
         /// The text unit value.

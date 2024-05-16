@@ -6,7 +6,7 @@ If one of the input collections is marked completed, <xref:System.Collections.Co
 
 #### Suggestion
 
-If TryTakeFromAny returning -1 or TakeFromAny throwing were used for control-flow purposes in cases of a blocking collection being completed, such code should now be changed to use <code>.Any(b =&gt; b.IsCompleted)</code> to detect that condition.
+If TryTakeFromAny returning -1 or TakeFromAny throwing were used for control-flow purposes in cases of a blocking collection being completed, such code should now be changed to use `.Any(b =&gt; b.IsCompleted)` to detect that condition.
 
 | Name    | Value       |
 |:--------|:------------|

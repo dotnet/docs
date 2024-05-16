@@ -20,20 +20,20 @@ The following guidelines will help you use these to organize your code.
 
 ### Prefer namespaces at the top level
 
-For any publicly consumable code, namespaces are preferential to modules at the top level. Because they are compiled as .NET namespaces, they are consumable from C# with no issue.
+For any publicly consumable code, namespaces are preferential to modules at the top level. Because they are compiled as .NET namespaces, they are consumable from C# without resorting to `using static`.
 
 ```fsharp
-// Good!
+// Recommended.
 namespace MyCode
 
 type MyClass() =
     ...
 ```
 
-Using a top-level module may not appear different when called only from F#, but for C# consumers, callers may be surprised by having to qualify `MyClass` with the `MyCode` module.
+Using a top-level module may not appear different when called only from F#, but for C# consumers, callers may be surprised by having to qualify `MyClass` with the `MyCode` module when not aware of the specific `using static` C# construct.
 
 ```fsharp
-// Bad!
+// Will be seen as a static class outside F#
 module MyCode
 
 type MyClass() =
@@ -68,7 +68,7 @@ Additionally, exposing extension methods and expression builders at the namespac
 
 Adding the `[<RequireQualifiedAccess>]` attribute to a module indicates that the module may not be opened and that references to the elements of the module require explicit qualified access. For example, the `Microsoft.FSharp.Collections.List` module has this attribute.
 
-This is useful when functions and values in the module have names that are likely to conflict with names in other modules. Requiring qualified access can greatly increase the long-term maintainability and evolvability of a library.
+This is useful when functions and values in the module have names that are likely to conflict with names in other modules. Requiring qualified access can greatly increase long-term maintainability and the ability of a library to evolve.
 
 ```fsharp
 [<RequireQualifiedAccess>]
@@ -83,7 +83,7 @@ let parsed = StringTokenization.parse s // Must qualify to use 'parse'
 
 ### Sort `open` statements topologically
 
-In F#, the order of declarations matters, including with `open` statements. This is unlike C#, where the effect of `using` and `using static` is independent of the ordering of those statements in a file.
+In F#, the order of declarations matters, including with `open` statements (and `open type`, just refered as `open` farther down). This is unlike C#, where the effect of `using` and `using static` is independent of the ordering of those statements in a file.
 
 In F#, elements opened into a scope can shadow others already present. This means that reordering `open` statements could alter the meaning of code. As a result, any arbitrary sorting of all `open` statements (for example, alphanumerically) is not recommended, lest you generate different behavior that you might expect.
 
@@ -120,14 +120,14 @@ open Internal.Utilities
 open Internal.Utilities.Collections
 ```
 
-Note that a line break separates topological layers, with each layer being sorted alphanumerically afterwards. This cleanly organizes code without accidentally shadowing values.
+A line break separates topological layers, with each layer being sorted alphanumerically afterwards. This cleanly organizes code without accidentally shadowing values.
 
 ## Use classes to contain values that have side effects
 
 There are many times when initializing a value can have side effects, such as instantiating a context to a database or other remote resource. It is tempting to initialize such things in a module and use it in subsequent functions:
 
 ```fsharp
-// This is bad!
+// Not recommended, side-effect at static initialization
 module MyApi =
     let dep1 = File.ReadAllText "/Users/<name>/connectionstring.txt"
     let dep2 = Environment.GetEnvironmentVariable "DEP_2"
@@ -136,10 +136,10 @@ module MyApi =
     let dep3() = r.Next() // Problematic if multiple threads use this
 
     let function1 arg = doStuffWith dep1 dep2 dep3 arg
-    let function2 arg = doSutffWith dep1 dep2 dep3 arg
+    let function2 arg = doStuffWith dep1 dep2 dep3 arg
 ```
 
-This is frequently a bad idea for a few reasons:
+This is frequently problematic for a few reasons:
 
 First, application configuration is pushed into the codebase with `dep1` and `dep2`. This is difficult to maintain in larger codebases.
 
@@ -212,7 +212,7 @@ The main constructs available in F# for the purposes of raising exceptions shoul
 | `failwith` | `failwith "message"` | Raises a `System.Exception` with the specified message. |
 | `failwithf` | `failwithf "format string" argForFormatString` | Raises a `System.Exception` with a message determined by the format string and its inputs. |
 
-Use `nullArg`, `invalidArg` and `invalidOp` as the mechanism to throw `ArgumentNullException`, `ArgumentException` and `InvalidOperationException` when appropriate.
+Use `nullArg`, `invalidArg`, and `invalidOp` as the mechanism to throw `ArgumentNullException`, `ArgumentException`, and `InvalidOperationException` when appropriate.
 
 The `failwith` and `failwithf` functions should generally be avoided because they raise the base `Exception` type, not a specific exception. As per the [Exception Design Guidelines](../../standard/design-guidelines/exceptions.md), you want to raise more specific exceptions when you can.
 
@@ -232,13 +232,13 @@ Reconciling functionality to perform in the face of an exception with pattern ma
 
 ### Do not use monadic error handling to replace exceptions
 
-Exceptions are often seen as taboo in functional programming. Indeed, exceptions violate purity, so it's safe to consider them not-quite functional. However, this ignores the reality of where code must run, and that runtime errors can occur. In general, write code on the assumption that most things are neither pure nor total, to minimize unpleasant surprises.
+Exceptions are often seen as taboo in the pure functional paradigm. Indeed, exceptions violate purity, so it's safe to consider them not-quite functionally pure. However, this ignores the reality of where code must run, and that runtime errors can occur. In general, write code on the assumption that most things aren't pure or total, to minimize unpleasant surprises (akin to empty `catch` in C# or mismanaging the stack trace, discarding information).
 
 It is important to consider the following core strengths/aspects of Exceptions with respect to their relevance and appropriateness in the .NET runtime and cross-language ecosystem as a whole:
 
-1. They contain detailed diagnostic information, which is very helpful when debugging an issue.
-2. They are well-understood by the runtime and other .NET languages.
-3. They can reduce significant boilerplate when compared with code that goes out of its way to *avoid* exceptions by implementing some subset of their semantics on an ad-hoc basis.
+- They contain detailed diagnostic information, which is helpful when debugging an issue.
+- They are well understood by the runtime and other .NET languages.
+- They can reduce significant boilerplate when compared with code that goes out of its way to *avoid* exceptions by implementing some subset of their semantics on an ad-hoc basis.
 
 This third point is critical. For nontrivial complex operations, failing to use exceptions can result in dealing with structures like this:
 
@@ -246,7 +246,7 @@ This third point is critical. For nontrivial complex operations, failing to use 
 Result<Result<MyType, string>, string list>
 ```
 
-Which can easily lead to fragile code like pattern matching on "stringly-typed" errors:
+Which can easily lead to fragile code like pattern matching on "stringly typed" errors:
 
 ```fsharp
 let result = doStuff()
@@ -261,16 +261,16 @@ match result with
 Additionally, it can be tempting to swallow any exception in the desire for a "simple" function that returns a "nicer" type:
 
 ```fsharp
-// This is bad!
+// Can be problematic due to discarding the cause of error.
 let tryReadAllText (path : string) =
     try System.IO.File.ReadAllText path |> Some
     with _ -> None
 ```
 
-Unfortunately, `tryReadAllText` can throw numerous exceptions based on the myriad of things that can happen on a file system, and this code discards away any information about what might actually be going wrong in your environment. If you replace this code with a result type, then you're back to "stringly-typed" error message parsing:
+Unfortunately, `tryReadAllText` can throw numerous exceptions based on the myriad of things that can happen on a file system, and this code discards away any information about what might actually be going wrong in your environment. If you replace this code with a result type, then you're back to "stringly typed" error message parsing:
 
 ```fsharp
-// This is bad!
+// Problematic, callers only have a string to figure the cause of error.
 let tryReadAllText (path : string) =
     try System.IO.File.ReadAllText path |> Ok
     with e -> Error e.Message
@@ -303,7 +303,7 @@ F# supports partial application, and thus, various ways to program in a point-fr
 
 ### Do not use partial application and currying in public APIs
 
-With little exception, the use of partial application in public APIs can be confusing for consumers. Usually, `let`-bound values in F# code are **values**, not **function values**. Mixing together values and function values can result in saving a small number of lines of code in exchange for quite a bit of cognitive overhead, especially if combined with operators such as `>>` to compose functions.
+With little exception, the use of partial application in public APIs can be confusing for consumers. Usually, `let`-bound values in F# code are **values**, not **function values**. Mixing together values and function values can result in saving a few lines of code in exchange for quite a bit of cognitive overhead, especially if combined with operators such as `>>` to compose functions.
 
 ### Consider the tooling implications for point-free programming
 
@@ -353,7 +353,7 @@ module Transactions =
 
 type Transactor(ctx, currentBalance) =
     member _.ExecuteTransaction(txnType) =
-        Transactions.doTransaction ctx txtType currentBalance
+        Transactions.doTransaction ctx txnType currentBalance
         ...
 ```
 
@@ -371,7 +371,7 @@ module TransactionsTestable =
 Partially applying `doTransaction` with a mocking context object lets you call the function in all of your unit tests without needing to construct a mocked context each time:
 
 ```fsharp
-namespace TransactionTests
+module TransactionTests
 
 open Xunit
 open TransactionTypes
@@ -392,11 +392,13 @@ let ``Test withdrawal transaction with 0.0 for balance``() =
     Assert.Equal(expected, actual)
 ```
 
-This technique should not be universally applied to your entire codebase, but it is a good way to reduce boilerplate for complicated internals and unit testing those internals.
+Don't apply this technique universally to your entire codebase, but it is a good way to reduce boilerplate for complicated internals and unit testing those internals.
 
 ## Access control
 
 F# has multiple options for [Access control](../language-reference/access-control.md), inherited from what is available in the .NET runtime. These are not just usable for types - you can use them for functions, too.
+
+Good practices in context of libraries that are widely consumed:
 
 * Prefer non-`public` types and members until you need them to be publicly consumable. This also minimizes what consumers couple to.
 * Strive to keep all helper functionality `private`.
@@ -418,7 +420,7 @@ Type inference can save you from typing a lot of boilerplate. And automatic gene
 
     This is the general way to do things in .NET, so it's recommended that you use PascalCase rather than snake_case or camelCase.
 
-Finally, automatic generalization is not always a boon for people who are new to F# or a large codebase. There is cognitive overhead in using components that are generic. Furthermore, if automatically generalized functions are not used with different input types (let alone if they are intended to be used as such), then there is no real benefit to them being generic at that point in time. Always consider if the code you are writing will actually benefit from being generic.
+Finally, automatic generalization is not always a boon for people who are new to F# or a large codebase. There is cognitive overhead in using components that are generic. Furthermore, if automatically generalized functions are not used with different input types (let alone if they are intended to be used as such), then there is no real benefit to them being generic then. Always consider if the code you are writing will actually benefit from being generic.
 
 ## Performance
 
@@ -513,13 +515,13 @@ The previous observations about performance with struct tuples and records also 
     let reverseName (Name s) =
         s.ToCharArray()
         |> Array.rev
-        |> string
+        |> System.String
         |> Name
 
     let structReverseName (SName s) =
         s.ToCharArray()
         |> Array.rev
-        |> string
+        |> System.String
         |> SName
 ```
 
@@ -527,13 +529,29 @@ It's common to define single-case Discriminated Unions like this for domain mode
 
 Although the previous example showed that a struct Discriminated Union yielded better performance, it is common to have larger Discriminated Unions when modeling a domain. Larger data types like that may not perform as well if they are structs depending on the operations on them, since more copying could be involved.
 
-### Functional programming and mutation
+## Immutability and mutation
 
 F# values are immutable by default, which allows you to avoid certain classes of bugs (especially those involving concurrency and parallelism). However, in certain cases, in order to achieve optimal (or even reasonable) efficiency of execution time or memory allocations, a span of work may best be implemented by using in-place mutation of state. This is possible in an opt-in basis with F# with the `mutable` keyword.
 
 Use of `mutable` in F# may feel at odds with functional purity. This is understandable, but functional purity everywhere can be at odds with performance goals. A compromise is to encapsulate mutation such that callers need not care about what happens when they call a function. This allows you to write a functional interface over a mutation-based implementation for performance-critical code.
 
-#### Wrap mutable code in immutable interfaces
+Also, F# `let` binding constructs allow you to nest bindings into another one, this can be leveraged to keep the scope of `mutable` variable close or at its theoritical smallest.
+
+```fsharp
+let data =
+    [
+        let mutable completed = false
+        while not completed do
+            logic ()
+            // ...
+            if someCondition then
+                completed <- true   
+    ]
+```  
+
+No code can access the mutable `completed` that was used only to initialize `data` let bound value.
+
+### Wrap mutable code in immutable interfaces
 
 With referential transparency as a goal, it is critical to write code that does not expose the mutable underbelly of performance-critical functions. For example, the following code implements the `Array.contains` function in the F# core library:
 
@@ -544,14 +562,14 @@ let inline contains value (array:'T[]) =
     let mutable state = false
     let mutable i = 0
     while not state && i < array.Length do
-        state <- value = array.[i]
+        state <- value = array[i]
         i <- i + 1
     state
 ```
 
 Calling this function multiple times does not change the underlying array, nor does it require you to maintain any mutable state in consuming it. It is referentially transparent, even though almost every line of code within it uses mutation.
 
-#### Consider encapsulating mutable data in classes
+### Consider encapsulating mutable data in classes
 
 The previous example used a single function to encapsulate operations using mutable data. This is not always sufficient for more complex sets of data. Consider the following sets of functions:
 
@@ -559,10 +577,10 @@ The previous example used a single function to encapsulate operations using muta
 open System.Collections.Generic
 
 let addToClosureTable (key, value) (t: Dictionary<_,_>) =
-    if not (t.ContainsKey(key)) then
-        t.Add(key, value)
+    if t.ContainsKey(key) then
+        t[key] <- value
     else
-        t.[key] <- value
+        t.Add(key, value)
 
 let closureTableCount (t: Dictionary<_,_>) = t.Count
 
@@ -582,10 +600,10 @@ type Closure1Table() =
     let t = Dictionary<Item0, HashSet<TerminalIndex>>()
 
     member _.Add(key, value) =
-        if not (t.ContainsKey(key)) then
-            t.Add(key, value)
+        if t.ContainsKey(key) then
+            t[key] <- value
         else
-            t.[key] <- value
+            t.Add(key, value)
 
     member _.Count = t.Count
 
@@ -597,7 +615,7 @@ type Closure1Table() =
 
 `Closure1Table` encapsulates the underlying mutation-based data structure, thereby not forcing callers to maintain the underlying data structure. Classes are a powerful way to encapsulate data and routines that are mutation-based without exposing the details to callers.
 
-#### Prefer `let mutable` to reference cells
+### Prefer `let mutable` to `ref`
 
 Reference cells are a way to represent the reference to a value rather than the value itself. Although they can be used for performance-critical code, they are not recommended. Consider the following example:
 
@@ -629,6 +647,46 @@ let kernels =
 
 Aside from the single point of mutation in the middle of the lambda expression, all other code that touches `acc` can do so in a manner that is no different to the usage of a normal `let`-bound immutable value. This will make it easier to change over time.
 
+## Nulls and default values
+
+Nulls should generally be avoided in F#. By default F#-declared types do not support the use of the `null` literal, and all values and objects are initialized. However, some common .NET APIs return or accept nulls, and some common .NET-declared types such as arrays and strings allow nulls. However, the occurrence of `null` values is very rare in F# programming and one of the benefits of using F# is to avoid null reference errors in most cases.
+
+### Avoid the use of the `AllowNullLiteral` attribute
+
+By default F#-declared types do not support the use of the `null` literal. You can manually annotate F# types with `AllowNullLiteral` to allow this. However, it is almost always better to avoid doing this.
+
+### Avoid the use of the `Unchecked.defaultof<_>` attribute
+
+It is possible to generate a `null` or zero-initialized value for an F# type by using `Unchecked.defaultof<_>`. This can be useful when initializing storage for some data structures, or in some high-performance coding pattern, or in interoperability. However the use of this construct should be avoided.
+
+### Avoid the use of the `DefaultValue` attribute
+
+By default F# records and objects must be properly initialized on construction. The `DefaultValue` attribute can be used to populate some fields of objects with a `null` or zero-initialized value. This construct is rarely needed and its use should be avoided.
+
+### If you check for null inputs, raise exceptions at first opportunity
+
+When writing new F# code, in practice there's no need to check for null inputs, unless you expect that code to be used from C# or other .NET languages.
+
+If you do decide to add checks for null inputs, perform the checks at first opportunity and raise an exception. For example:
+
+```fsharp
+let inline checkNonNull argName arg =
+    if isNull arg then
+        nullArg argName
+
+module Array =
+    let contains value (array:'T[]) =
+        checkNonNull "array" array
+        let mutable result = false
+        let mutable i = 0
+        while not state && i < array.Length do
+            result <- value = array[i]
+            i <- i + 1
+        result
+```
+
+For legacy reasons some string functions in FSharp.Core still treat nulls as empty strings and do not fail on null arguments. However do not take this as guidance, and do not adopt coding patterns that attribute any semantic meaning to "null".
+
 ## Object programming
 
 F# has full support for objects and object-oriented (OO) concepts. Although many OO concepts are powerful and useful, not all of them are ideal to use. The following lists offer guidance on categories of OO features at a high level.
@@ -639,7 +697,8 @@ F# has full support for objects and object-oriented (OO) concepts. Although many
 * Instance members
 * Implicit constructors
 * Static members
-* Indexer notation (`arr.[x]`)
+* Indexer notation (`arr[x]`), by defining an `Item` property
+* Slicing notation (`arr[x..y]`, `arr[x..]`, `arr[..y]`), by defining `GetSlice` members
 * Named and Optional arguments
 * Interfaces and interface implementations
 
@@ -693,7 +752,7 @@ For example, here is the code that is run in [Ionide](https://ionide.io/) to pro
         }
 ```
 
-Because there is no need for a class when interacting with the Visual Studio Code API, Object Expressions are an ideal tool for this. They are also valuable for unit testing, when you want to stub out an interface with test routines in an ad hoc manner.
+Because there is no need for a class when interacting with the Visual Studio Code API, Object Expressions are an ideal tool for this. They are also valuable for unit testing, when you want to stub out an interface with test routines in an improvised manner.
 
 ## Consider Type Abbreviations to shorten signatures
 
@@ -731,7 +790,7 @@ module Networking =
     let send data (bufferSize: int) = ...
 ```
 
-In summary, the pitfall with Type Abbreviations is that they are **not** abstractions over the types they are abbreviating. In the previous example, `BufferSize` is just an `int` under the covers, with no additional data, nor any benefits from the type system besides what `int` already has.
+In summary, the pitfall with Type Abbreviations is that they are **not** abstractions over the types they are abbreviating. In the previous example, `BufferSize` is just an `int` under the covers, with no extra data, nor any benefits from the type system besides what `int` already has.
 
 An alternative approach to using type abbreviations to represent a domain is to use single-case discriminated unions. The previous sample can be modeled as follows:
 

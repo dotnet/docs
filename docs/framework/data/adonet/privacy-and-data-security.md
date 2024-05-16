@@ -29,5 +29,5 @@ Safeguarding and managing sensitive information in an ADO.NET application is dep
 ## See also
 
 - [Securing ADO.NET Applications](securing-ado-net-applications.md)
-- [SQL Server Security](./sql/sql-server-security.md)
+- [SQL Server Security](/previous-versions/dotnet/framework/data/adonet/sql/sql-server-security)
 - [ADO.NET Overview](ado-net-overview.md)

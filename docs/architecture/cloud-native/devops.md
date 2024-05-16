@@ -1,10 +1,12 @@
 ---
 title: DevOps
 description: DevOps considerations for cloud-native applications
-ms.date: 01/19/2021
+ms.date: 04/06/2022
 ---
 
 # DevOps
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 The favorite mantra of software consultants is to answer "It depends" to any question posed. It isn't because software consultants are fond of not taking a position. It's because there's no one true answer to any questions in software. There's no absolute right and wrong, but rather a balance between opposites.
 
@@ -12,7 +14,7 @@ Take, for instance, the two major schools of developing web applications: Single
 
 Cloud-native applications aren't immune to that same dichotomy. They have clear advantages in terms of speed of development, stability, and scalability, but managing them can be quite a bit more difficult.
 
-Years ago, it wasn't uncommon for the process of moving an application from development to production to take a month, or even more. Companies released software on a 6-month or even every year cadence. One needs to look no further than Microsoft Windows to get an idea for the cadence of releases that were acceptable before the ever-green days of Windows 10. Five years passed between Windows XP and Vista, a further 3 between Vista and Windows 7.
+Years ago, it wasn't uncommon for the process of moving an application from development to production to take a month, or even more. Companies released software on a 6-month or even every year cadence. One needs to look no further than Microsoft Windows to get an idea for the cadence of releases that were acceptable before the ever-green days of Windows 10. Five years passed between Windows XP and Vista, a further three between Vista and Windows 7.
 
 It's now fairly well established that being able to release software rapidly gives fast-moving companies a huge market advantage over their more sloth-like competitors. It's for that reason that major updates to Windows 10 are now approximately every six months.
 
@@ -149,7 +151,7 @@ The stages in the boards aren't the only organizational tool. Depending on the c
 
 The description field supports the normal styles you'd expect (bold, italic underscore and strike through) and the ability to insert images. This makes it a powerful tool for use when specifying work or bugs.
 
-Tasks can be rolled up into features, which define a larger unit of work. Features, in turn, can be [rolled up into epics](/azure/devops/boards/backlogs/define-features-epics?view=azure-devops). Classifying tasks in this hierarchy makes it much easier to understand how close a large feature is to rolling out.
+Tasks can be rolled up into features, which define a larger unit of work. Features, in turn, can be [rolled up into epics](/azure/devops/boards/backlogs/define-features-epics?view=azure-devops&preserve-view=true). Classifying tasks in this hierarchy makes it much easier to understand how close a large feature is to rolling out.
 
 ![Figure 10-6 Work item types configured by default in the Basic process template](./media/board-issue-types.png)
 
@@ -196,7 +198,7 @@ variables:
   buildConfiguration: release
 
 pool:
-  name: Hosted VS2017
+  name: Hosted VisualStudio
   demands:
   - msbuild
   - visualstudio
@@ -251,7 +253,7 @@ This build definition uses a number of built-in tasks that make creating builds 
 
 Builds can be triggered manually, by a check-in, on a schedule, or by the completion of another build. In most cases, building on every check-in is desirable. Builds can be filtered so that different builds run against different parts of the repository or against different branches. This allows for scenarios like running fast builds with reduced testing on pull requests and running a full regression suite against the trunk on a nightly basis.
 
-The end result of a build is a collection of files known as build artifacts. These artifacts can be passed along to the next step in the build process or added to an Azure Artifact feed, so they can be consumed by other builds.
+The end result of a build is a collection of files known as build artifacts. These artifacts can be passed along to the next step in the build process or added to an Azure Artifacts feed, so they can be consumed by other builds.
 
 ### Azure DevOps releases
 

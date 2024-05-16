@@ -2,7 +2,7 @@
 title: Serialize to files, TextWriters, and XmlWriters - LINQ to XML
 description: You can serialize XML trees to a File, a TextWriter, or an XmlWriter, and you can serialize any XML component, including XDocument and XElement, to a string by using the ToString method.
 ms.date: 07/20/2015
-ms.assetid: bd3ea6f7-895b-4ff4-a625-fe2bb55b1886
+ms.topic: how-to
 ---
 
 # Serialize to files, TextWriters, and XmlWriters (LINQ to XML)

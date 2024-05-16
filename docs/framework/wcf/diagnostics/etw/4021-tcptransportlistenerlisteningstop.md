@@ -6,10 +6,10 @@ ms.assetid: 00108ffa-fe02-477e-b9aa-6f08f6849cd2
 ---
 # 4021 - TcpTransportListenerListeningStop
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4021|  
 |Keywords|ActivationServices|  
 |Level|Verbose|  

@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 48145cf9-1e0b-4e73-bbfd-28fc04800dc4
+ms.topic: how-to
 ---
 
 # How to project a new type (LINQ to XML)

@@ -2,6 +2,7 @@
 title: Explore code with the Roslyn syntax visualizer in Visual Studio
 description: The syntax visualizer provides a visual tool to explore the models the .NET Compiler Platform SDK generates for code.
 ms.date: 03/07/2018
+ms.topic: tutorial
 ms.custom: mvc, vs-dotnet
 ---
 # Explore code with the Roslyn syntax visualizer in Visual Studio
@@ -23,8 +24,6 @@ This command opens the Syntax Visualizer as a floating tool window. If you don't
 Dock this tool window at a convenient location inside Visual Studio, such as the left side. The Visualizer shows information about the current code file.
 
 Create a new project using the **File** > **New Project** command. You can create either a Visual Basic or C# project. When Visual Studio opens the main code file for this project, the visualizer displays the syntax tree for it. You can open any existing C# / Visual Basic file in this Visual Studio instance, and the visualizer displays that file's syntax tree. If you have multiple code files open inside Visual Studio, the visualizer displays the syntax tree for the currently active code file, (the code file that has keyboard focus.)
-
-<!-- markdownlint-disable MD025 -->
 
 # [C#](#tab/csharp)
 

@@ -2,7 +2,6 @@
 description: "Learn more about: Using Annotation in Queries"
 title: "Using Annotation in Queries"
 ms.date: "03/30/2017"
-ms.topic: "reference"
 ms.assetid: 50855b30-d5fe-49a9-89d3-3f1bfd670958
 ---
 # Using Annotation in Queries

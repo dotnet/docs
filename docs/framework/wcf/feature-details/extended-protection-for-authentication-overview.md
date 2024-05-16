@@ -31,3 +31,4 @@ Extended Protection for Authentication helps protect against man-in-the-middle (
 ## See also
 
 - [Security Model for Windows Server App Fabric](/previous-versions/appfabric/ee677202(v=azure.10))
+- [Supporting Extended Protection for Authentication (EPA) in a service](/windows/win32/secauthn/epa-support-in-service)

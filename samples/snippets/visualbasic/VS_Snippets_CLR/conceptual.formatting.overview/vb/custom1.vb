@@ -1,8 +1,8 @@
 ﻿' Visual Basic .NET Document
 Option Strict On
 
-Module Example
-    Public Sub Main()
+Module Example8
+    Public Sub Main8()
         ' <Snippet9>
         Dim customFormat As String = "MMMM dd, yyyy (dddd)"
         Dim date1 As Date = #8/28/2009#

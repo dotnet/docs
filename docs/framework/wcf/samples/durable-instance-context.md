@@ -6,7 +6,7 @@ ms.assetid: 97bc2994-5a2c-47c7-927a-c4cd273153df
 ---
 # Durable Instance Context
 
-This sample demonstrates how to customize the Windows Communication Foundation (WCF) runtime to enable durable instance contexts. It uses SQL Server 2005 as its backing store (SQL Server 2005 Express in this case). However, it also provides a way to access custom storage mechanisms.
+The [Durable sample](https://github.com/dotnet/samples/tree/main/framework/wcf) demonstrates how to customize the Windows Communication Foundation (WCF) runtime to enable durable instance contexts. It uses SQL Server 2005 as its backing store (SQL Server 2005 Express in this case). However, it also provides a way to access custom storage mechanisms.
 
 > [!NOTE]
 > The setup procedure and build instructions for this sample are located at the end of this topic.
@@ -447,12 +447,3 @@ Press ENTER to shut down client
 
 > [!NOTE]
 > You must be running SQL Server 2005 or SQL Express 2005 to run this sample. If you are running SQL Server 2005, you must modify the configuration of the service's connection string. When running cross-machine, SQL Server is only required on the server machine.
-
-> [!IMPORTANT]
-> The samples may already be installed on your machine. Check for the following (default) directory before continuing.
->
-> `<InstallDrive>:\WF_WCF_Samples`
->
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
->
-> `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Instancing\Durable`

@@ -13,11 +13,8 @@ public class CompBuf
             Console.WriteLine($"{FILE_NAME} does not exist!");
             return;
         }
-        FileStream fsIn = new FileStream(FILE_NAME, FileMode.Open,
-            FileAccess.Read, FileShare.Read);
-        // Create an instance of StreamReader that can read
-        // characters from the FileStream.
-        using (StreamReader sr = new StreamReader(fsIn))
+        // Create an instance of StreamReader characters from the file.
+        using (StreamReader sr = new StreamReader(FILE_NAME))
         {
             string input;
             // While not at the end of the file, read lines from the file.

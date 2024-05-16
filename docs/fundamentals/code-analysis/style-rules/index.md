@@ -1,38 +1,35 @@
 ---
-title: Code style rules overview
-description: Learn about the different .NET code style rules and categories.
-ms.date: 09/25/2020
-ms.topic: reference
+title: Code-style rules overview
+description: Learn about the different .NET code-style rules and categories.
+ms.date: 12/11/2023
 author: gewarren
 ms.author: gewarren
 ---
-# Code style rules
+# Code-style rules
 
-.NET code style analysis provides rules that aim to maintain consistent *code style* in your codebase. These rules have an "IDE" prefix in the rule ID. Most of the rules have associated options to customize the preferred style. The rules are organized into the following subcategories:
+.NET code-style analysis provides rules that aim to maintain consistent *style* in your codebase. These rules have an "IDE" prefix in the rule ID.
 
-- [Language rules](language-rules.md)
+The code-style rules are organized into the following subcategories:
 
-   Rules that pertain to the C# or Visual Basic language. For example, you can specify rules that regard the use of `var` when defining variables, or whether expression-bodied members are preferred.
+- [Language and unnecessary code rules](language-rules.md)
 
-- [Unnecessary code rules](unnecessary-code-rules.md)
+  Rules that pertain to the C# or Visual Basic language. For example, you can specify rules that regard the use of `var` when defining variables, or whether expression-bodied members are preferred. This category also includes rules that find unnecessary code, for example, unreachable code within methods or unused private fields, properties, or methods.
 
-   Rules that pertain to unnecessary code that indicates a potential readability, maintainability, performance, or functional problem. For example, unreachable code within methods or unused private fields, properties, or methods is unnecessary code.
+- [Formatting rules](ide0055.md)
 
-- [Formatting rules](formatting-rules.md)
-
-   Rules that pertain to the layout and structure of your code in order to make it easier to read. For example, you can specify rules that regard Allman braces, or whether spaces in control blocks are preferred.
+  Rules that pertain to the layout and structure of your code in order to make it easier to read. For example, you can specify a formatting option that defines whether spaces in control blocks are preferred or not.
 
 - [Naming rules](naming-rules.md)
 
-   Rules that pertain to the naming of code elements. For example, you can specify that `async` method names must have an "Async" suffix.
+  Rules that pertain to the naming of code elements. For example, you can specify that `async` method names must have an "Async" suffix.
 
 - [Miscellaneous rules](miscellaneous-rules.md)
 
-   Rules that do not belong in other categories.
+  Rules that do not belong in other categories.
 
 ## Index
 
-The following table list all the code style rules by ID and options, if any.
+The following table list all the code-style rules by ID and [options](../code-style-rule-options.md), if any.
 
 > [!div class="mx-tdCol3BreakAll"]
 > | Rule ID | Title | Option |
@@ -59,9 +56,9 @@ The following table list all the code style rules by ID and options, if any.
 > | [IDE0025](ide0025.md) | Use expression body for properties | [csharp_style_expression_bodied_properties](ide0025.md#csharp_style_expression_bodied_properties) |
 > | [IDE0026](ide0026.md) | Use expression body for indexers | [csharp_style_expression_bodied_indexers](ide0026.md#csharp_style_expression_bodied_indexers) |
 > | [IDE0027](ide0027.md) | Use expression body for accessors | [csharp_style_expression_bodied_accessors](ide0027.md#csharp_style_expression_bodied_accessors) |
-> | [IDE0028](ide0028.md) | Use collection initializers | [dotnet_style_collection_initializer](ide0028.md#dotnet_style_collection_initializer) |
-> | [IDE0029](ide0029-ide0030.md) | Use coalesce expression (non-nullable types) | [dotnet_style_coalesce_expression](ide0029-ide0030.md#dotnet_style_coalesce_expression) |
-> | [IDE0030](ide0029-ide0030.md) | Use coalesce expression (nullable types) | [dotnet_style_coalesce_expression](ide0029-ide0030.md#dotnet_style_coalesce_expression) |
+> | [IDE0028](ide0028.md) | Use collection initializers | [dotnet_style_collection_initializer](ide0028.md#dotnet_style_collection_initializer)<br/>[dotnet_style_prefer_collection_expression (C# only)](ide0028.md#dotnet_style_prefer_collection_expression-c-only) |
+> | [IDE0029](ide0029-ide0030-ide0270.md) | Null check can be simplified | [dotnet_style_coalesce_expression](ide0029-ide0030-ide0270.md#dotnet_style_coalesce_expression) |
+> | [IDE0030](ide0029-ide0030-ide0270.md) | Null check can be simplified | [dotnet_style_coalesce_expression](ide0029-ide0030-ide0270.md#dotnet_style_coalesce_expression) |
 > | [IDE0031](ide0031.md) | Use null propagation | [dotnet_style_null_propagation](ide0031.md#dotnet_style_null_propagation) |
 > | [IDE0032](ide0032.md) | Use auto property | [dotnet_style_prefer_auto_properties](ide0032.md#dotnet_style_prefer_auto_properties) |
 > | [IDE0033](ide0033.md) | Use explicitly provided tuple name | [dotnet_style_explicit_tuple_names](ide0033.md#dotnet_style_explicit_tuple_names) |
@@ -70,7 +67,7 @@ The following table list all the code style rules by ID and options, if any.
 > | [IDE0036](ide0036.md) | Order modifiers | [csharp_preferred_modifier_order](ide0036.md#csharp_preferred_modifier_order)<br/> [visual_basic_preferred_modifier_order](ide0036.md#visual_basic_preferred_modifier_order)<br/> |
 > | [IDE0037](ide0037.md) | Use inferred member name | [dotnet_style_prefer_inferred_tuple_names](ide0037.md#dotnet_style_prefer_inferred_tuple_names)<br/> [dotnet_style_prefer_inferred_anonymous_type_member_names](ide0037.md#dotnet_style_prefer_inferred_anonymous_type_member_names) |
 > | [IDE0038](ide0020-ide0038.md) | Use pattern matching to avoid `is` check followed by a cast (without variable) | [csharp_style_pattern_matching_over_is_with_cast_check](ide0020-ide0038.md#csharp_style_pattern_matching_over_is_with_cast_check) |
-> | [IDE0039](ide0039.md) | Use local function instead of lambda | [csharp_style_pattern_local_over_anonymous_function](ide0039.md#csharp_style_pattern_local_over_anonymous_function) |
+> | [IDE0039](ide0039.md) | Use local function instead of lambda | [csharp_style_prefer_local_over_anonymous_function](ide0039.md#csharp_style_prefer_local_over_anonymous_function) |
 > | [IDE0040](ide0040.md) | Add accessibility modifiers | [dotnet_style_require_accessibility_modifiers](ide0040.md#dotnet_style_require_accessibility_modifiers) |
 > | [IDE0041](ide0041.md) | Use is null check | [dotnet_style_prefer_is_null_check_over_reference_equality_method](ide0041.md#dotnet_style_prefer_is_null_check_over_reference_equality_method) |
 > | [IDE0042](ide0042.md) | Deconstruct variable declaration | [csharp_style_deconstructed_variable_declaration](ide0042.md#csharp_style_deconstructed_variable_declaration) |
@@ -85,7 +82,7 @@ The following table list all the code style rules by ID and options, if any.
 > | [IDE0052](ide0052.md) | Remove unread private member | |
 > | [IDE0053](ide0053.md) | Use expression body for lambdas | [csharp_style_expression_bodied_lambdas](ide0053.md#csharp_style_expression_bodied_lambdas) |
 > | [IDE0054](ide0054-ide0074.md) | Use compound assignment | [dotnet_style_prefer_compound_assignment](ide0054-ide0074.md#dotnet_style_prefer_compound_assignment) |
-> | [IDE0055](formatting-rules.md) | Fix formatting | |
+> | [IDE0055](ide0055.md) | Fix formatting | (Too many to list here. See [.NET formatting options](dotnet-formatting-options.md) and [C# formatting options](csharp-formatting-options.md).) |
 > | [IDE0056](ide0056.md) | Use index operator | [csharp_style_prefer_index_operator](ide0056.md#csharp_style_prefer_index_operator) |
 > | [IDE0057](ide0057.md) | Use range operator | [csharp_style_prefer_range_operator](ide0057.md#csharp_style_prefer_range_operator) |
 > | [IDE0058](ide0058.md) | Remove unused expression value | [csharp_style_unused_value_expression_statement_preference](ide0058.md#csharp_style_unused_value_expression_statement_preference)<br/> [visual_basic_style_unused_value_expression_statement_preference](ide0058.md#visual_basic_style_unused_value_expression_statement_preference) |
@@ -105,7 +102,7 @@ The following table list all the code style rules by ID and options, if any.
 > | [IDE0075](ide0075.md) | Simplify conditional expression | [dotnet_style_prefer_simplified_boolean_expressions](ide0075.md#dotnet_style_prefer_simplified_boolean_expressions) |
 > | [IDE0076](ide0076.md) | Remove invalid global `SuppressMessageAttribute` | |
 > | [IDE0077](ide0077.md) | Avoid legacy format target in global `SuppressMessageAttribute` | |
-> | [IDE0078](ide0078.md) | Use pattern matching | [csharp_style_prefer_pattern_matching](ide0078.md#csharp_style_prefer_pattern_matching) |
+> | [IDE0078](ide0078-ide0260.md) | Use pattern matching | [csharp_style_prefer_pattern_matching](ide0078-ide0260.md#csharp_style_prefer_pattern_matching-ide0078) |
 > | [IDE0079](ide0079.md) | Remove unnecessary suppression | [dotnet_remove_unnecessary_suppression_exclusions](ide0079.md#dotnet_remove_unnecessary_suppression_exclusions) |
 > | [IDE0080](ide0080.md) | Remove unnecessary suppression operator | |
 > | [IDE0081](ide0081.md) | Remove `ByVal` | |
@@ -115,30 +112,52 @@ The following table list all the code style rules by ID and options, if any.
 > | [IDE0090](ide0090.md) | Simplify `new` expression | [csharp_style_implicit_object_creation_when_type_is_apparent](ide0090.md#csharp_style_implicit_object_creation_when_type_is_apparent) |
 > | [IDE0100](ide0100.md) | Remove unnecessary equality operator | |
 > | [IDE0110](ide0110.md) | Remove unnecessary discard | |
+> | [IDE0120](ide0120.md) | Simplify LINQ expression | |
+> | [IDE0130](ide0130.md) | Namespace does not match folder structure | [dotnet_style_namespace_match_folder](ide0130.md#dotnet_style_namespace_match_folder) |
+> | [IDE0140](ide0140.md) | Simplify object creation | [visual_basic_style_prefer_simplified_object_creation](ide0140.md#visual_basic_style_prefer_simplified_object_creation) |
+> | [IDE0150](ide0150.md) | Prefer `null` check over type check | [csharp_style_prefer_null_check_over_type_check](ide0150.md#csharp_style_prefer_null_check_over_type_check) |
+> | [IDE0160](ide0160-ide0161.md) | Use block-scoped namespace | [csharp_style_namespace_declarations](ide0160-ide0161.md#csharp_style_namespace_declarations) |
+> | [IDE0161](ide0160-ide0161.md) | Use file-scoped namespace | [csharp_style_namespace_declarations](ide0160-ide0161.md#csharp_style_namespace_declarations) |
+> | [IDE0170](ide0170.md) | Simplify property pattern | [csharp_style_prefer_extended_property_pattern](ide0170.md#csharp_style_prefer_extended_property_pattern) |
+> | [IDE0180](ide0180.md) | Use tuple to swap values | [csharp_style_prefer_tuple_swap](ide0180.md#csharp_style_prefer_tuple_swap) |
+> | [IDE0200](ide0200.md) | Remove unnecessary lambda expression | [csharp_style_prefer_method_group_conversion](ide0200.md#csharp_style_prefer_method_group_conversion) |
+> | [IDE0210](ide0210.md) | Convert to top-level statements | [csharp_style_prefer_top_level_statements](ide0210.md#csharp_style_prefer_top_level_statements) |
+> | [IDE0211](ide0211.md) | Convert to 'Program.Main' style program | [csharp_style_prefer_top_level_statements](ide0211.md#csharp_style_prefer_top_level_statements) |
+> | [IDE0220](ide0220.md) | Add explicit cast in foreach loop | [dotnet_style_prefer_foreach_explicit_cast_in_source](ide0220.md#dotnet_style_prefer_foreach_explicit_cast_in_source) |
+> | [IDE0230](ide0230.md) | Use UTF-8 string literal | [csharp_style_prefer_utf8_string_literals](ide0230.md#csharp_style_prefer_utf8_string_literals) |
+> | [IDE0240](ide0240.md) | Nullable directive is redundant | |
+> | [IDE0241](ide0241.md) | Nullable directive is unnecessary | |
+> | [IDE0250](ide0250.md) | Struct can be made 'readonly' | [csharp_style_prefer_readonly_struct](ide0250.md#csharp_style_prefer_readonly_struct) |
+> | [IDE0251](ide0251.md) | Member can be made 'readonly' | [csharp_style_prefer_readonly_struct_member](ide0251.md#csharp_style_prefer_readonly_struct_member) |
+> | [IDE0260](ide0078-ide0260.md) | Use pattern matching | [csharp_style_pattern_matching_over_as_with_null_check](ide0078-ide0260.md#csharp_style_pattern_matching_over_as_with_null_check-ide0260) |
+> | [IDE0270](ide0029-ide0030-ide0270.md) | Null check can be simplified | [dotnet_style_coalesce_expression](ide0029-ide0030-ide0270.md#dotnet_style_coalesce_expression) |
+> | [IDE0280](ide0280.md) | Use `nameof` | |
+> | [IDE0290](ide0290.md) | Use primary constructor | [csharp_style_prefer_primary_constructors](ide0290.md#csharp_style_prefer_primary_constructors) |
+> | [IDE0300](ide0300.md) | Use collection expression for array | [dotnet_style_prefer_collection_expression](ide0300.md#dotnet_style_prefer_collection_expression) |
+> | [IDE0301](ide0301.md) | Use collection expression for empty | [dotnet_style_prefer_collection_expression](ide0301.md#dotnet_style_prefer_collection_expression) |
+> | [IDE0302](ide0302.md) | Use collection expression for stackalloc | [dotnet_style_prefer_collection_expression](ide0302.md#dotnet_style_prefer_collection_expression) |
+> | [IDE0303](ide0303.md) | Use collection expression for `Create()` | [dotnet_style_prefer_collection_expression](ide0303.md#dotnet_style_prefer_collection_expression) |
+> | [IDE0304](ide0304.md) | Use collection expression for builder | [dotnet_style_prefer_collection_expression](ide0304.md#dotnet_style_prefer_collection_expression) |
+> | [IDE0305](ide0305.md) | Use collection expression for fluent | [dotnet_style_prefer_collection_expression](ide0305.md#dotnet_style_prefer_collection_expression) |
 > | [IDE1005](ide1005.md) | Use conditional delegate call | [csharp_style_conditional_delegate_call](ide1005.md#csharp_style_conditional_delegate_call) |
 > | [IDE1006](naming-rules.md) | Naming styles | |
 
+> [!NOTE]
+> There are some rules that only surface in the Visual Studio IDE, and these regard JSON and regular expression pattern strings. For more information, see [JSON001](/visualstudio/ide/reference/json001), [JSON002](/visualstudio/ide/reference/json002), and [RE0001](/visualstudio/ide/reference/re0001).
+
 ## Legend
 
-The following table shows the type of information that is provided for each rule in the reference documentation.
+The following table shows the type of information that's provided for each rule in the reference documentation.
 
-|Item|Description|
-|----------|-----------------|
-| **Rule ID** |The unique identifier for the rule. The rule ID is used for configuring rule severity and suppressing warnings in the code file.|
-| **Title** |The title for the rule.|
-| **Category** | The category for the rule. |
-| **Subcategory** | The sub-category for the rule, such as Language rules, Formatting rules or Naming rules. |
-| **Applicable languages** |Applicable .NET languages (C# or Visual Basic), along with the minimum language version, if applicable.|
-| **Introduced version** |Version of the .NET SDK or Visual Studio when the rule was first introduced.|
-
-For each option for the rule, following information is provided.
-
-|Item|Description|
-|----------|-----------------|
-| **Option name** |The code style option name for the rule, if any. Options for customizing style are specified in an EditorConfig file.|
-| **Option values** |The code style option values for the rule option, if any.|
-| **Default option value** |Default code style option value for the rule option, if any.
-| **Examples** |Examples for the code style corresponding to the option.|
+| Item                     | Description                                                                                                       |
+|--------------------------|-------------------------------------------------------------------------------------------------------------------|
+| **Rule ID**              | The unique identifier for the rule. Used for configuring rule severity and suppressing warnings in the code file. |
+| **Title**                | The title for the rule.                                                                                           |
+| **Category**             | The category for the rule.                                                                                        |
+| **Subcategory**          | The subcategory for the rule, such as Language rules, Formatting rules, or Naming rules.                          |
+| **Applicable languages** | Applicable .NET languages (C# or Visual Basic), along with the minimum language version, if applicable.           |
+| **Introduced version**   | Version of the .NET SDK or Visual Studio when the rule was first introduced.                                      |
+| **Options**              | Any available options for the rule.                                                                               |
 
 ## See also
 

@@ -6,10 +6,10 @@ ms.assetid: 42630d32-c24d-41b9-9106-9ca1a3e2f7d8
 ---
 # 3381 - SequenceAcknowledgementSent
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3381|  
 |Keywords|Channel|  
 |Level|Verbose|  

@@ -56,4 +56,4 @@ The following code example shows the Web method on the client that turns off ASP
   
 ## See also
 
-- [Custom Serialization](custom-serialization.md)
+- [Custom Serialization](/previous-versions/dotnet/fundamentals/serialization/binary/custom-serialization)

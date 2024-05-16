@@ -1,6 +1,6 @@
 ---
 description: "class keyword - C# Reference"
-title: "class keyword - C# Reference"
+title: "class keyword"
 ms.date: 07/18/2017
 f1_keywords: 
   - "class_CSharpKeyword"
@@ -48,7 +48,7 @@ A class can contain declarations of the following members:
 
 - [Fields](../../programming-guide/classes-and-structs/fields.md)
 
-- [Finalizers](../../programming-guide/classes-and-structs/destructors.md)
+- [Finalizers](../../programming-guide/classes-and-structs/finalizers.md)
 
 - [Methods](../../programming-guide/classes-and-structs/methods.md)
 
@@ -62,9 +62,9 @@ A class can contain declarations of the following members:
 
 - [Delegates](../../programming-guide/delegates/index.md)
 
-- [Classes](../../programming-guide/classes-and-structs/classes.md)
+- [Classes](../../fundamentals/types/classes.md)
 
-- [Interfaces](../../programming-guide/interfaces/index.md)
+- [Interfaces](../../fundamentals/types/interfaces.md)
 
 - [Structure types](../builtin-types/struct.md)
 
@@ -96,7 +96,5 @@ Finally, notice that for the object created using the parameterless constructor 
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](./index.md)
 - [Reference Types](./reference-types.md)

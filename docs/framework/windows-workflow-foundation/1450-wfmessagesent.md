@@ -6,10 +6,10 @@ ms.assetid: 1acc8b92-a76d-479b-a6fe-328affff5f3d
 ---
 # 1450 - WfMessageSent
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1450|  
 |Keywords|WFServices|  
 |Level|Information|  

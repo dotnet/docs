@@ -2,10 +2,12 @@
 title: Azure platform resiliency
 description: Architecting Cloud Native .NET Apps for Azure | Cloud Infrastructure Resiliency with Azure
 author: robvet
-ms.date: 05/13/2020
+ms.date: 04/06/2022
 ---
 
 # Azure platform resiliency
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 Building a reliable application in the cloud is different from traditional on-premises application development. While historically you purchased higher-end hardware to scale up, in a cloud environment you scale out. Instead of trying to prevent failures, the goal is to minimize their effects and keep the system stable.
 
@@ -28,7 +30,7 @@ We've said resiliency enables your application to react to failure and still rem
 
 - *Heavy load.* Load balance across instances to handle spikes in usage. For example, put two or more Azure VMs behind a load balancer to distribute traffic to all VMs.
 
-- *Accidental data deletion or corruption.* Back up data so it can be restored if there’s any deletion or corruption. For example, use Azure Backup to periodically back up
+- *Accidental data deletion or corruption.* Back up data so it can be restored if there's any deletion or corruption. For example, use Azure Backup to periodically back up
 your Azure VMs.
 
 ## Design with redundancy
@@ -43,7 +45,7 @@ To architect redundancy, you need to identify the critical paths in your applica
 
 - *Leveraging a load balancer.* Load-balancing distributes your application's requests to healthy service instances and automatically removes unhealthy instances from rotation. When deploying to Kubernetes, load balancing can be specified in the Kubernetes manifest file in the Services section.
 
-- *Plan for multiregion deployment.* If you deploy your application to a single region, and that region becomes unavailable, your application will also become unavailable. This may be unacceptable under the terms of your application's service level agreements. Instead, consider deploying your application and its services across multiple regions. For example, an Azure Kubernetes Service (AKS) cluster is deployed to a single region. To protect your system from a regional failure, you might deploy your application to multiple AKS clusters across different regions and use the [Paired Regions](https://buildazure.com/2017/01/06/azure-region-pairs-explained/) feature to coordinate platform updates and prioritize recovery efforts.
+- *Plan for multiregion deployment.* If you deploy your application to a single region, and that region becomes unavailable, your application will also become unavailable. This may be unacceptable under the terms of your application's service level agreements. Instead, consider deploying your application and its services across multiple regions. For example, an Azure Kubernetes Service (AKS) cluster is deployed to a single region. To protect your system from a regional failure, you might deploy your application to multiple AKS clusters across different regions and use the [Paired Regions](/azure/virtual-machines/regions#region-pairs) feature to coordinate platform updates and prioritize recovery efforts.
 
 - *Enable [geo-replication](/azure/sql-database/sql-database-active-geo-replication).* Geo-replication for services such as Azure SQL Database and Cosmos DB will create secondary replicas of your data across multiple regions. While both services will automatically replicate data within the same region, geo-replication protects you against a regional outage by enabling you to fail over to a secondary region. Another best practice for geo-replication centers around storing container images. To deploy a service in AKS, you need to store and pull the image from a repository. Azure Container Registry integrates with AKS and can securely store container images. To improve performance and availability, consider geo-replicating your images to a registry in each region where you have an AKS cluster. Each AKS cluster then pulls container images from the local container registry in its region as shown in Figure 6-4:
 

@@ -1,15 +1,15 @@
 ---
-title: Casting and Conversions
-description: Learn how the F# programming language provides conversion operators for arithmetic conversions between various primitive types.
+title: Casting and conversions
+description: Learn how the F# programming language provides operators for arithmetic conversions between various primitive types.
 ms.date: 02/20/2020
 ---
-# Casting and Conversions (F#)
+# Casting and conversions (F#)
 
-This topic describes support for type conversions in F#.
+This article describes support for type conversions in F#.
 
 ## Arithmetic Types
 
-F# provides conversion operators for arithmetic conversions between various primitive types, such as between integer and floating point types. The integral and char conversion operators have checked and unchecked forms; the floating point operators and the `enum` conversion operator do not. The unchecked forms are defined in `Microsoft.FSharp.Core.Operators` and the checked forms are defined in `Microsoft.FSharp.Core.Operators.Checked`. The checked forms check for overflow and generate a runtime exception if the resulting value exceeds the limits of the target type.
+F# provides conversion operators for arithmetic conversions between various primitive types, such as between integer and floating point types. The integral and char conversion operators have checked and unchecked forms; the floating point operators and the `enum` conversion operator do not. The unchecked forms are defined in `FSharp.Core.Operators` and the checked forms are defined in `FSharp.Core.Operators.Checked`. The checked forms check for overflow and generate a runtime exception if the resulting value exceeds the limits of the target type.
 
 Each of these operators has the same name as the name of the destination type. For example, in the following code, in which the types are explicitly annotated, `byte` appears with two different meanings. The first occurrence is the type and the second is the conversion operator.
 
@@ -66,7 +66,7 @@ F# provides operators for these types of conversions. The `:>` operator casts up
 
 ### Upcasting
 
-In many object-oriented languages, upcasting is implicit; in F#, the rules are slightly different. Upcasting is applied automatically when you pass arguments to methods on an object type. However, for let-bound functions in a module, upcasting is not automatic, unless the parameter type is declared as a flexible type. For more information, see [Flexible Types](flexible-Types.md).
+In many object-oriented languages, upcasting is implicit; in F#, the rules are slightly different. Upcasting is applied automatically when you pass arguments to methods on an object type. However, for let-bound functions in a module, upcasting is not automatic, unless the parameter type is declared as a flexible type. For more information, see [Flexible Types](flexible-types.md).
 
 The `:>` operator performs a static cast, which means that the success of the cast is determined at compile time. If a cast that uses `:>` compiles successfully, it is a valid cast and has no chance of failure at run time.
 
@@ -94,19 +94,106 @@ The following code illustrates the use of the `:>` and `:?>` operators. The code
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet4403.fs)]
 
-Because generic operators `downcast` and `upcast` rely on type inference to determine the argument and return type, in the above code, you can replace
+Because the generic operators `downcast` and `upcast` rely on type inference to determine the argument and return type, you can replace `let base1 = d1 :> Base1` in the previous code example with `let base1: Base1 = upcast d1`.
+
+A type annotation is required, because `upcast` by itself could not determine the base class.
+
+## Implicit upcast conversions
+
+Implicit upcasts are inserted in the following situations:
+
+* When providing a parameter to a function or method with a known named type. This includes when a construct such as computation expressions or slicing becomes a method call.
+
+* When assigning to or mutating a record field or property that has a known named type.
+
+* When a branch of an `if/then/else` or `match` expression has a known target type arising from another branch or overall known type.
+
+* When an element of a list, array, or sequence expression has a known target type.
+
+For example, consider the following code:
 
 ```fsharp
-let base1 = d1 :> Base1
+open System
+open System.IO
+
+let findInputSource () : TextReader =
+    if DateTime.Now.DayOfWeek = DayOfWeek.Monday then
+        // On Monday a TextReader
+        Console.In
+    else
+        // On other days a StreamReader
+        File.OpenText("path.txt")
 ```
 
-with
+Here the branches of the conditional compute a `TextReader` and `StreamReader` respectively. On the second branch, the known target type is `TextReader` from the type annotation on the method, and from the first branch. This means no upcast is needed on the second branch.
+
+To show a warning at every point an additional implicit upcast is used, you can enable warning 3388 (`/warnon:3388` or property `<WarnOn>3388</WarnOn>`).
+
+### Implicit numeric conversions
+
+F# uses explicit widening of numeric types in most cases via conversion operators. For example, explicit widening is needed for most numeric types, such as `int8` or `int16`, or from `float32` to `float64`, or when either source or destination type is unknown.
+
+However, implicit widening is allowed for 32-bit integers widened to 64-bit integers, in the same situations as implicit upcasts. For example, consider a typical API shape:
 
 ```fsharp
-let base1: Base1 = upcast d1
+type Tensor(…) =
+    static member Create(sizes: seq<int64>) = Tensor(…)
 ```
 
-Note that a type annotation is required, since `upcast` by itself could not determine the base class.
+Integer literals for int64 may be used:
+
+```fsharp
+Tensor.Create([100L; 10L; 10L])
+```
+
+Or integer literals for int32:
+
+```fsharp
+Tensor.Create([int64 100; int64 10; int64 10])
+```
+
+Widening happens automatically for `int32` to `int64`, `int32` to `nativeint`, and `int32` to `double`, when both source and destination type are known during type inference. So in cases such as the previous examples, `int32` literals can be used:
+
+```fsharp
+Tensor.Create([100; 10; 10])
+```
+
+You can also optionally enable the warning 3389 (`/warnon:3389` or property `<WarnOn>3389</WarnOn>`) to show a warning at every point implicit numeric widening is used.
+
+### .NET-style implicit conversions
+
+.NET APIs allow the definition of `op_Implicit` static methods to provide implicit conversions between types. These are applied automatically in F# code when passing arguments to methods. For example, consider the following code making explicit calls to `op_Implicit` methods:
+
+```fsharp
+open System.Xml.Linq
+
+let purchaseOrder = XElement.Load("PurchaseOrder.xml")
+let partNos = purchaseOrder.Descendants(XName.op_Implicit "Item")
+```
+
+.NET-style `op_Implicit` conversions are applied automatically for argument expressions when types are available for source expression and target type:
+
+```fsharp
+open System.Xml.Linq
+
+let purchaseOrder = XElement.Load("PurchaseOrder.xml")
+let partNos = purchaseOrder.Descendants("Item")
+```
+
+You can also optionally enable the warning 3395 (`/warnon:3395` or property `<WarnOn>3395</WarnOn>`) to show a warning at every point a .NET-style implicit conversion is used.
+
+.NET-style `op_Implicit` conversions are also applied automatically for non-method-argument expressions in the same situations as implicit upcasts. However, when used widely or inappropriately, implicit conversions can interact poorly with type inference and lead to code that's harder to understand. For this reason, these always generate warnings when used in non-argument positions.
+
+To show a warning at every point that a .NET-style implicit conversion is used for a non-method argument, you can enable warning 3391 (`/warnon:3391` or property `<WarnOn>3391</WarnOn>`).
+
+### Summary of warnings related to conversions
+
+The following optional warnings are provided for uses of implicit conversions:
+
+* `/warnon:3388` (additional implicit upcast)
+* `/warnon:3389` (implicit numeric widening)
+* `/warnon:3391` (`op_Implicit` at non-method arguments, on by default)
+* `/warnon:3395` (`op_Implicit` at method arguments)
 
 ## See also
 

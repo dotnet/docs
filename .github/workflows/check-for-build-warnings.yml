@@ -1,0 +1,24 @@
+name: 'OPS status checker'
+
+on: 
+  pull_request_target:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  status_checker_job:
+    name: Look for build warnings
+    runs-on: ubuntu-latest
+    permissions:
+        statuses: write
+        issues: write
+        pull-requests: write
+    steps:
+    - uses: actions/checkout@v4.1.5
+      with:
+        ref: ${{ github.event.pull_request.head.sha }}
+
+    - uses: dotnet/docs-tools/actions/status-checker@main
+      with:
+        repo_token: ${{ secrets.GITHUB_TOKEN }}
+        docs_path: "docs"
+        url_base_path: "dotnet"

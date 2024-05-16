@@ -6,10 +6,10 @@ ms.assetid: f0752c88-61f9-4579-81a1-d804fbc000a9
 ---
 # 2029 - CompileVbExpressionStop
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|2029|  
 |Keywords|WFRuntime|  
 |Level|Verbose|  

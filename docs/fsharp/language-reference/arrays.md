@@ -1,9 +1,10 @@
 ---
-title: Arrays
+title: Arrays in F#
+titleSuffix: ""
 description: Learn how to create and use arrays in the F# programming language.
-ms.date: 08/13/2020
+ms.date: 10/29/2021
 ---
-# Arrays
+# Arrays (F#)
 
 Arrays are fixed-size, zero-based, mutable collections of consecutive data elements that are all of the same type.
 
@@ -17,11 +18,27 @@ You can also put each element on a separate line, in which case the semicolon se
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/arrays/snippet2.fs)]
 
-The type of the array elements is inferred from the literals used and must be consistent. The following code causes an error because 1.0 is a float and 2 and 3 are integers.
+The type of the array elements is inferred from the literals used and must be consistent.
 
 ```fsharp
-// Causes an error.
-// let array2 = [| 1.0; 2; 3 |]
+// This is an array of 3 integers.
+let array1 = [| 1; 2; 3 |]
+// This is an array of a tuple of 3 integers.
+let array2 = [| 1, 2, 3 |]
+```
+
+The following code causes an error because 3.0 is a float and 1 and 2 are integers.
+
+```fsharp
+// Causes an error. The 3.0 (float) cannot be converted to integer implicitly.
+// let array3 = [| 1; 2; 3.0 |]
+```
+
+The following code causes an error too because `1,2` is a tuple and `3` is an integer.
+
+```fsharp
+// Causes an error too. The 3 (integer) cannot be converted to tuple implicitly.
+// let array4 = [| 1, 2; 3 |]
 ```
 
 You can also use sequence expressions to create arrays. Following is an example that creates an array of squares of integers from 1 to 10.
@@ -34,7 +51,7 @@ To create an array in which all the elements are initialized to zero, use `Array
 
 ## Access elements
 
-You can access array elements by using a dot operator (`.`) and brackets (`[` and `]`).
+You can access array elements by using brackets (`[` and `]`). The original dot syntax (`.[index]`) is still supported but no longer recommended as of F# 6.0.
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/arrays/snippet5.fs)]
 
@@ -137,13 +154,6 @@ The output of the preceding code is as follows.
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/arrays/snippet16.fs)]
 
-The output of the preceding code is as follows.
-
-```console
-[|(1, 1, 1); (1, 2, 2); (1, 3, 3); (2, 1, 2); (2, 2, 4); (2, 3, 6); (3, 1, 3);
-(3, 2, 6); (3, 3, 9)|]
-```
-
 [`Array.filter`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-arraymodule.html#filter) takes a Boolean condition function and generates a new array that contains only those elements from the input array for which the condition is true. The following code demonstrates `Array.filter`.
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/arrays/snippet17.fs)]
@@ -198,26 +208,26 @@ In a two-dimensional array (a matrix), you can extract a sub-matrix by specifyin
 
 ```fsharp
 // Get rows 1 to N from an NxM matrix (returns a matrix):
-matrix.[1.., *]
+matrix[1.., *]
 
 // Get rows 1 to 3 from a matrix (returns a matrix):
-matrix.[1..3, *]
+matrix[1..3, *]
 
 // Get columns 1 to 3 from a matrix (returns a matrix):
-matrix.[*, 1..3]
+matrix[*, 1..3]
 
 // Get a 3x3 submatrix:
-matrix.[1..3, 1..3]
+matrix[1..3, 1..3]
 ```
 
 You can decompose a multidimensional array into subarrays of the same or lower dimension. For example, you can obtain a vector from a matrix by specifying a single row or column.
 
 ```fsharp
 // Get row 3 from a matrix as a vector:
-matrix.[3, *]
+matrix[3, *]
 
 // Get column 3 from a matrix as a vector:
-matrix.[*, 3]
+matrix[*, 3]
 ```
 
 You can use this slicing syntax for types that implement the element access operators and overloaded `GetSlice` methods. For example, the following code creates a Matrix type that wraps the F# 2D array, implements an Item property to provide support for array indexing, and implements three versions of `GetSlice`. If you can use this code as a template for your matrix types, you can use all the slicing operations that this section describes.
@@ -227,8 +237,8 @@ type Matrix<'T>(N: int, M: int) =
     let internalArray = Array2D.zeroCreate<'T> N M
 
     member this.Item
-        with get(a: int, b: int) = internalArray.[a, b]
-        and set(a: int, b: int) (value:'T) = internalArray.[a, b] <- value
+        with get(a: int, b: int) = internalArray[a, b]
+        and set(a: int, b: int) (value:'T) = internalArray[a, b] <- value
 
     member this.GetSlice(rowStart: int option, rowFinish : int option, colStart: int option, colFinish : int option) =
         let rowStart =
@@ -247,7 +257,7 @@ type Matrix<'T>(N: int, M: int) =
             match colFinish with
             | Some(v) -> v
             | None -> internalArray.GetLength(1) - 1
-        internalArray.[rowStart..rowFinish, colStart..colFinish]
+        internalArray[rowStart..rowFinish, colStart..colFinish]
 
     member this.GetSlice(row: int, colStart: int option, colFinish: int option) =
         let colStart =
@@ -258,7 +268,7 @@ type Matrix<'T>(N: int, M: int) =
             match colFinish with
             | Some(v) -> v
             | None -> internalArray.GetLength(1) - 1
-        internalArray.[row, colStart..colFinish]
+        internalArray[row, colStart..colFinish]
 
     member this.GetSlice(rowStart: int option, rowFinish: int option, col: int) =
         let rowStart =
@@ -269,23 +279,23 @@ type Matrix<'T>(N: int, M: int) =
             match rowFinish with
             | Some(v) -> v
             | None -> internalArray.GetLength(0) - 1
-        internalArray.[rowStart..rowFinish, col]
+        internalArray[rowStart..rowFinish, col]
 
 module test =
     let generateTestMatrix x y =
         let matrix = new Matrix<float>(3, 3)
         for i in 0..2 do
             for j in 0..2 do
-                matrix.[i, j] <- float(i) * x - float(j) * y
+                matrix[i, j] <- float(i) * x - float(j) * y
         matrix
 
     let test1 = generateTestMatrix 2.3 1.1
-    let submatrix = test1.[0..1, 0..1]
+    let submatrix = test1[0..1, 0..1]
     printfn $"{submatrix}"
 
-    let firstRow = test1.[0,*]
-    let secondRow = test1.[1,*]
-    let firstCol = test1.[*,0]
+    let firstRow = test1[0,*]
+    let secondRow = test1[1,*]
+    let firstCol = test1[*,0]
     printfn $"{firstCol}"
 ```
 

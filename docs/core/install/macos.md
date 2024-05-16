@@ -1,9 +1,10 @@
 ---
 title: Install .NET on macOS
-description: Learn about what versions of macOS you can install .NET on.
+description: Learn about which versions of .NET SDK and .NET Runtime are supported, and how to install .NET on macOS.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/10/2020
+ms.date: 05/14/2024
+ms.custom: linux-related-content
 ---
 
 # Install .NET on macOS
@@ -14,35 +15,32 @@ ms.date: 11/10/2020
 > - [Install on macOS](macos.md)
 > - [Install on Linux](linux.md)
 
-In this article, you'll learn how to install .NET on macOS. .NET is made up of the runtime and the SDK. The runtime is used to run a .NET app and may or may not be included with the app. The SDK is used to create .NET apps and libraries. The .NET runtime is always installed with the SDK.
+In this article, you learn how to install .NET on macOS. .NET is made up of the runtime and the SDK. The runtime is used to run a .NET app and might or might not be included with the app. The SDK is used to create .NET apps and libraries. The .NET runtime is always installed with the SDK.
 
-The latest version of .NET is 5.0.
+The latest version of .NET is 8.
 
 > [!div class="button"]
-> [Download .NET Core](https://dotnet.microsoft.com/download/dotnet)
+> [Download .NET](https://dotnet.microsoft.com/download/dotnet)
 
 ## Supported releases
 
-The following table is a list of currently supported .NET releases and the versions of macOS they're supported on. These versions remain supported either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
+There are two types of supported releases: Long Term Support (LTS) releases and Standard Term Support (STS) releases. The quality of all releases is the same. The only difference is the length of support. LTS releases get free support and patches for three years. STS releases get free support and patches for 18 months. For more information, see [.NET Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
 
-- A ✔️ indicates that the version of .NET Core is still supported.
-- A ❌ indicates that the version of .NET Core isn't supported.
+The following table is a list of currently supported .NET releases and the versions of macOS they're supported on:
 
-| Operating System          | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
-|---------------------------|---------------|---------------|----------------|
-| macOS 11.0 "Big Sur"        | ✔️ 2.1 ([Release notes][release-notes-21]) | ✔️ 3.1 ([Release notes][release-notes-31]) | ✔️ 5.0 ([Release notes][release-notes-50]) |
-| macOS 10.15 "Catalina"    | ✔️ 2.1 ([Release notes][release-notes-21]) | ✔️ 3.1 ([Release notes][release-notes-31]) | ✔️ 5.0 ([Release notes][release-notes-50]) |
-| macOS 10.14 "Mojave"      | ✔️ 2.1 ([Release notes][release-notes-21]) | ✔️ 3.1 ([Release notes][release-notes-31]) | ✔️ 5.0 ([Release notes][release-notes-50]) |
-| macOS 10.13 "High Sierra" | ✔️ 2.1 ([Release notes][release-notes-21]) | ✔️ 3.1 ([Release notes][release-notes-31]) | ✔️ 5.0 ([Release notes][release-notes-50]) |
-| macOS 10.12 "Sierra"      | ✔️ 2.1 ([Release notes][release-notes-21]) | ❌ 3.1 ([Release notes][release-notes-31]) | ❌ 5.0 ([Release notes][release-notes-50]) |
+| Operating System       | .NET 8 (LTS) | .NET 6 (LTS) |
+|------------------------|--------------|--------------|
+| macOS 14.0 "Sonoma"    | ✔️ 8.0       | ✔️ 6.0        |
+| macOS 13.0 "Ventura"   | ✔️ 8.0       | ✔️ 6.0        |
+| macOS 12.0 "Monterey"  | ✔️ 8.0       | ✔️ 6.0        |
+| macOS 11.0 "Big Sur"   | ❌           | ✔️ 6.0        |
+| macOS 10.15 "Catalina" | ❌           | ✔️ 6.0        |
+
+For a full list of .NET versions and their support life cycle, see [.NET Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
 
 ## Unsupported releases
 
-The following versions of .NET are ❌ no longer supported. The downloads for these still remain published:
-
-- 3.0 ([Release notes][release-notes-30])
-- 2.2 ([Release notes][release-notes-22])
-- 2.0 ([Release notes][release-notes-20])
+[!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
 ## Runtime information
 
@@ -63,24 +61,11 @@ There are two different runtimes you can install on macOS:
 
 The SDK is used to build and publish .NET apps and libraries. Installing the SDK includes both [runtimes](#runtime-information): ASP.NET Core and .NET.
 
-## Dependencies
+## Notarization
 
-.NET is supported on the following macOS releases:
+Beginning with macOS Catalina (version 10.15), all software built after June 1, 2019 that's distributed with Developer ID must be notarized. This requirement applies to the .NET runtime, .NET SDK, and software created with .NET.
 
-> [!NOTE]
-> A `+` symbol represents the minimum version.
-
-| .NET Core Version | macOS                 | Architectures | More information    |
-| ----------------- | --------------------- | --------------| --- |
-| 5.0               | High Sierra (10.13+)  | x64 | [More information](https://github.com/dotnet/core/blob/master/release-notes/5.0/5.0-supported-os.md) |
-| 3.1               | High Sierra (10.13+)  | x64 | [More information](https://github.com/dotnet/core/blob/master/release-notes/3.1/3.1-supported-os.md) |
-| 3.0               | High Sierra (10.13+)  | x64 | [More information](https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md) |
-| 2.2               | Sierra (10.12+)       | x64 | [More information](https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2-supported-os.md) |
-| 2.1               | Sierra (10.12+)       | x64 | [More information](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md) |
-
-Beginning with macOS Catalina (version 10.15), all software built after June 1, 2019 that is distributed with Developer ID, must be notarized. This requirement applies to the .NET runtime, .NET SDK, and software created with .NET.
-
-The runtime and SDK installers for .NET 5.0 and .NET Core 3.1, 3.0, and 2.1, have been notarized since February 18, 2020. Prior released versions aren't notarized. If you run a non-notarized app, you'll see an error similar to the following image:
+The runtime and SDK installers for .NET have been notarized since February 18, 2020. Prior released versions aren't notarized. If you run a non-notarized app, you'll see an error similar to the following image:
 
 ![macOS Catalina notarization alert](media/dependencies/macos-notarized-pkg-warning.png)
 
@@ -97,66 +82,133 @@ brew update
 brew install mono-libgdiplus
 ```
 
-## Install with an installer
+## Automated install
 
-macOS has standalone installers that can be used to install the .NET 5.0 SDK:
+macOS has standalone installers that can be used to install .NET:
 
-- [x64 (64-bit) CPUs](https://dotnet.microsoft.com/download/dotnet/5.0)
+- ✔️ [.NET 8 downloads](https://dotnet.microsoft.com/download/dotnet/8.0)
+- ✔️ [.NET 6 downloads](https://dotnet.microsoft.com/download/dotnet/6.0)
 
-## Download and manually install
+## Manual install
 
-<!-- Note, this content is taken from includes/linux-install-manual.md but changed for macOS. Any fixes should be applied there too, though content may be different -->
+<!-- Note, this content is taken from linux-scripted-manual.md but changed for macOS. Any fixes should be applied there too, though content may be different -->
 
-As an alternative to the macOS installers for .NET, you can download and manually install the SDK and runtime. Manual install is usually performed as part of continuous integration testing. For a developer or user, it's generally better to use an [installer](https://dotnet.microsoft.com/download/dotnet).
+As an alternative to the macOS installers for .NET, you can download and manually install the SDK and runtime. Manual installation is usually performed as part of continuous integration testing. For a developer or user, it's generally better to use an [installer](https://dotnet.microsoft.com/download/dotnet).
 
-If you install .NET SDK, you don't need to install the corresponding runtime. First, download a **binary** release for either the SDK or the runtime from one of the following sites:
+Download a **binary** release for either the SDK or the runtime from one of the following sites. The .NET SDK includes the corresponding runtime:
 
-- ✔️ [.NET 5.0 downloads](https://dotnet.microsoft.com/download/dotnet/5.0)
-- ✔️ [.NET Core 3.1 downloads](https://dotnet.microsoft.com/download/dotnet/3.1)
-- ✔️ [.NET Core 2.1 downloads](https://dotnet.microsoft.com/download/dotnet/2.1)
-- [All .NET Core downloads](https://dotnet.microsoft.com/download/dotnet)
+- ✔️ [.NET 8 downloads](https://dotnet.microsoft.com/download/dotnet/8.0)
+- ✔️ [.NET 6 downloads](https://dotnet.microsoft.com/download/dotnet/6.0)
+- [All .NET downloads](https://dotnet.microsoft.com/download/dotnet)
 
-Next, extract the downloaded file and use the `export` command to set variables used by .NET and then ensure .NET is in PATH.
+Extract the downloaded file and use the `export` command to set `DOTNET_ROOT` to the extracted folder's location and then ensure .NET is in PATH. Exporting `DOTNET_ROOT` makes the .NET CLI commands available in the terminal. For more information about .NET environment variables, see [.NET SDK and CLI environment variables](../tools/dotnet-environment-variables.md#net-sdk-and-cli-environment-variables).
 
-To extract the runtime and make the .NET CLI commands available at the terminal, first download a .NET binary release. Then, open a terminal and run the following commands from the directory where the file was saved. The archive file name may be different depending on what you downloaded.
+Different versions of .NET can be extracted to the same folder, which coexist side-by-side.
 
-**Use the following commands to extract the runtime or SDK that you downloaded.** Remember to change the `DOTNET_FILE` value to your file name:
+### Example
+
+The following commands use Bash to set the environment variable `DOTNET_ROOT` to the current working directory followed by `.dotnet`. That directory is created if it doesn't exist. The `DOTNET_FILE` environment variable is the filename of the .NET binary release you want to install. This file is extracted to the `DOTNET_ROOT` directory. Both the `DOTNET_ROOT` directory and its `tools` subdirectory are added to the `PATH` environment variable.
+
+> [!IMPORTANT]
+> If you run these commands, remember to change the `DOTNET_FILE` value to the name of the .NET binary you downloaded.
 
 ```bash
-DOTNET_FILE=dotnet-sdk-5.0.102-linux-x64.tar.gz
-export DOTNET_ROOT=$HOME/dotnet
+DOTNET_FILE=dotnet-sdk-8.0.100-osx-x64.tar.gz
+export DOTNET_ROOT=$(pwd)/.dotnet
 
 mkdir -p "$DOTNET_ROOT" && tar zxf "$DOTNET_FILE" -C "$DOTNET_ROOT"
 
 export PATH=$PATH:$DOTNET_ROOT
 ```
 
-> [!TIP]
-> The preceding `export` commands only make the .NET CLI commands available for the terminal session in which it was run.
->
-> You can edit your shell profile to permanently add the commands. There are a number of different shells available for Linux and each has a different profile. For example:
->
-> - **Bash Shell**: *~/.bash_profile*, *~/.bashrc*
-> - **Korn Shell**: *~/.kshrc* or *.profile*
-> - **Z Shell**: *~/.zshrc* or *.zprofile*
->
-> Edit the appropriate source file for your shell and add `:$HOME/dotnet` to the end of the existing `PATH` statement. If no `PATH` statement is included, add a new line with `export PATH=$PATH:$HOME/dotnet`.
->
-> Also, add `export DOTNET_ROOT=$HOME/dotnet` to the end of the file.
+You can install more than one version of .NET in the same folder.
 
-This approach lets you install different versions into separate locations and choose explicitly which one to use by which application.
+You can also install .NET to the home directory identified by the `HOME` variable or `~` path:
+
+```bash
+export DOTNET_ROOT=$HOME/.dotnet
+```
+
+## Verify downloaded binaries
+
+[!INCLUDE [verify-download-intro](includes/verify-download-intro.md)]
+
+[!INCLUDE [verify-download-macos-linux](includes/verify-download-macos-linux.md)]
+
+## Set environment variables system-wide
+
+If you used the instructions in the [Manual install example](#example) section, the variables set only apply to your current terminal session. Add them to your shell profile. There are many different shells available for macOS and each has a different profile. For example:
+
+- **Bash Shell**: *~/.profile*, */etc/profile*
+- **Korn Shell**: *~/.kshrc* or *.profile*
+- **Z Shell**: *~/.zshrc* or *.zprofile*
+
+Set the following two environment variables in your shell profile:
+
+- `DOTNET_ROOT`
+
+  This variable is set to the folder .NET was installed to, such as `$HOME/.dotnet`:
+
+  ```bash
+  export DOTNET_ROOT=$HOME/.dotnet
+  ```
+
+- `PATH`
+
+  This variable should include both the `DOTNET_ROOT` folder and the `DOTNET_ROOT/tools` folder:
+
+  ```bash
+  export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
+  ```
+
+## Arm-based Macs
+
+The following sections describe things you should consider when installing .NET on an Arm-based Mac.
+
+<!-- This section is mirrored in the windows.md file. Changes here should be applied there -->
+
+### What's supported
+
+The following table describes which versions of .NET are supported on an Arm-based Mac:
+
+| .NET Version | Architecture | SDK | Runtime | [Path conflict](#path-conflicts) |
+|--------------|--------------|-----|---------|----------------------------------|
+| 8            | Arm64        | Yes | Yes     | No                               |
+| 8            | x64          | Yes | Yes     | No                               |
+| 7            | Arm64        | Yes | Yes     | No                               |
+| 7            | x64          | Yes | Yes     | No                               |
+| 6            | Arm64        | Yes | Yes     | No                               |
+| 6            | x64          | Yes | Yes     | No                               |
+
+Starting with .NET 6, the x64 and Arm64 versions of the .NET SDK exist independently from each other. If a new version is released, each install needs to be upgraded.
+
+### Path differences
+
+On an Arm-based Mac, all Arm64 versions of .NET are installed to the normal _/usr/local/share/dotnet/_ folder. However, when you install the **x64** version of .NET SDK, it's installed to the _/usr/local/share/dotnet/x64/dotnet/_ folder.
+
+### Path conflicts
+
+Starting with .NET 6, the **x64** .NET SDK installs to its own directory, as described in the previous section. This allows the Arm64 and x64 versions of the .NET SDK to exist on the same machine. However, any **x64** SDK prior to .NET 6 isn't supported and installs to the same location as the Arm64 version, the _/usr/local/share/dotnet/_ folder. If you want to install an unsupported x64 SDK, you need to first uninstall the Arm64 version. The opposite is also true, you need to uninstall the unsupported x64 SDK to install the Arm64 version.
+
+### Path variables
+
+Environment variables that add .NET to system path, such as the `PATH` variable, might need to be changed if you have both the x64 and Arm64 versions of the .NET 6 SDK installed. Additionally, some tools rely on the `DOTNET_ROOT` environment variable, which would also need to be updated to point to the appropriate .NET 6 SDK installation folder.
 
 ## Install with Visual Studio for Mac
 
-Visual Studio for Mac installs the .NET SDK when the **.NET** workload is selected. To get started with .NET development on macOS, see [Install Visual Studio 2019 for Mac](/visualstudio/mac/installation).
+Visual Studio for Mac installs the .NET SDK when the **.NET** workload is selected. To get started with .NET development on macOS, see [Install Visual Studio 2022 for Mac](/visualstudio/mac/installation).
 
-| .NET SDK version      | Visual Studio version                      |
-| --------------------- | ------------------------------------------ |
-| 5.0                   | Visual Studio 2019 for Mac version 8.8 or higher. |
-| 3.1                   | Visual Studio 2019 for Mac version 8.4 or higher. |
-| 2.1                   | Visual Studio 2019 for Mac version 8.0 or higher. |
+> [!IMPORTANT]
+> Visual Studio for Mac is being retired. For more information, see [What's happening to Visual Studio for Mac?](/visualstudio/mac/what-happened-to-vs-for-mac?view=vsmac-2022&preserve-view=true).
 
-[![macOS Visual Studio 2019 for Mac with .NET workload feature](media/install-sdk/mac-install-selection.png)](media/install-sdk/mac-install-selection.png#lightbox)
+| .NET SDK version      | Visual Studio version                                                               |
+| --------------------- | ----------------------------------------------------------------------------------- |
+| 8.0                   | Visual Studio 2022 for Mac 17.6.1 or higher. (Available as a preview feature only.) |
+| 6.0                   | Visual Studio 2022 for Mac 17.0 or higher.                                          |
+
+:::image type="content" source="media/install-sdk/mac-install-selection.png" alt-text="macOS Visual Studio 2022 for Mac with the .NET workload selected." lightbox="media/install-sdk/mac-install-selection.png":::
+
+[!INCLUDE [](~/includes/vs-mac-eol.md)]
 
 ## Install alongside Visual Studio Code
 
@@ -172,36 +224,28 @@ While Visual Studio Code doesn't come with an automated .NET installer like Visu
 
 The [dotnet-install scripts](../tools/dotnet-install-script.md) are used for automation and non-admin installs of the runtime. You can download the script from the [dotnet-install script reference page](../tools/dotnet-install-script.md).
 
-The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is .NET Core 3.1. You can choose a specific release by specifying the `current` switch. Include the `runtime` switch to install a runtime. Otherwise, the script installs the [SDK](./windows.md).
+The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is .NET 8. You can choose a specific release by specifying the `channel` switch. Include the `runtime` switch to install a runtime. Otherwise, the script installs the SDK.
+
+The following command installs the ASP.NET Core runtime for maximum compatibility. The ASP.NET Core runtime also includes the standard .NET runtime.
 
 ```bash
-./dotnet-install.sh --channel 5.0 --runtime aspnetcore
+./dotnet-install.sh --channel 8.0 --runtime aspnetcore
 ```
-
-> [!NOTE]
-> The previous command installs the ASP.NET Core runtime for maximum compatability. The ASP.NET Core runtime also includes the standard .NET runtime.
 
 ## Docker
 
 Containers provide a lightweight way to isolate your application from the rest of the host system. Containers on the same machine share just the kernel and use resources given to your application.
 
-.NET can run in a Docker container. Official .NET Docker images are published to the Microsoft Container Registry (MCR) and are discoverable at the [Microsoft .NET Core Docker Hub repository](https://hub.docker.com/_/microsoft-dotnet/). Each repository contains images for different combinations of the .NET (SDK or Runtime) and OS that you can use.
+.NET can run in a Docker container. Official .NET Docker images are published to the Microsoft Container Registry (MCR) and are discoverable at the [Microsoft .NET Docker Hub repository](https://hub.docker.com/_/microsoft-dotnet/). Each repository contains images for different combinations of the .NET (SDK or Runtime) and OS that you can use.
 
 Microsoft provides images that are tailored for specific scenarios. For example, the [ASP.NET Core repository](https://hub.docker.com/_/microsoft-dotnet-aspnet) provides images that are built for running ASP.NET Core apps in production.
 
-For more information about using .NET Core in a Docker container, see [Introduction to .NET and Docker](../docker/introduction.md) and [Samples](https://github.com/dotnet/dotnet-docker/blob/master/samples/README.md).
+For more information about using .NET in a Docker container, see [Introduction to .NET and Docker](../docker/introduction.md) and [Samples](https://github.com/dotnet/dotnet-docker/blob/main/samples/README.md).
 
 ## Next steps
 
-- [How to check if .NET Core is already installed](how-to-detect-installed-versions.md?pivots=os-macos).
+- [How to check if .NET is already installed](how-to-detect-installed-versions.md?pivots=os-macos).
 - [Working with macOS Catalina notarization](macos-notarization-issues.md).
 - [Tutorial: Get started on macOS](../tutorials/with-visual-studio-mac.md).
 - [Tutorial: Create a new app with Visual Studio Code](../tutorials/with-visual-studio-code.md).
-- [Tutorial: Containerize a .NET Core app](../docker/build-container.md).
-
-[release-notes-21]: https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md
-[release-notes-31]: https://github.com/dotnet/core/blob/master/release-notes/3.1/3.1-supported-os.md
-[release-notes-50]: https://github.com/dotnet/core/blob/master/release-notes/5.0/5.0-supported-os.md
-[release-notes-20]: https://github.com/dotnet/core/blob/master/release-notes/2.0/2.0-supported-os.md
-[release-notes-22]: https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2-supported-os.md
-[release-notes-30]: https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md
+- [Tutorial: Containerize a .NET app](../docker/build-container.md).

@@ -2,7 +2,7 @@
 description: "Learn more about: Specifying a Custom Crypto Algorithm"
 title: "Specifying a Custom Crypto Algorithm"
 ms.date: "03/30/2017"
-ms.assetid: d662a305-8e09-451d-9a59-b0f12b012f1d
+ms.topic: how-to
 ---
 # Specifying a Custom Crypto Algorithm
 
@@ -85,7 +85,7 @@ public class MyCustomAlgorithmSuite : SecurityAlgorithmSuite
   
 ## Register the Custom Algorithm  
 
- Registration can be done in a configuration file or in imperative code. Registering a custom algorithm is done by creating a mapping between a class that implements a crypto service provider and an alias. The alias is then mapped to a URI which is used when specifying the algorithm in the WCF service’s binding. The following configuration snippet illustrates how to register a custom algorithm in config:  
+ Registration can be done in a configuration file or in imperative code. Registering a custom algorithm is done by creating a mapping between a class that implements a crypto service provider and an alias. The alias is then mapped to a URI which is used when specifying the algorithm in the WCF service's binding. The following configuration snippet illustrates how to register a custom algorithm in config:  
   
 ```xml  
 <configuration>  

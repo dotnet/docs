@@ -6,10 +6,10 @@ ms.assetid: 497a78ca-d4d6-4b9d-9b35-bc2db33d6e9c
 ---
 # 5003 - DCDeserializeWithSurrogateStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|5003|  
 |Keywords|Serialization|  
 |Level|Verbose|  

@@ -1,8 +1,4 @@
-﻿' Visual Basic .NET Document
-Option Strict On
-
-' <Snippet1>
-Imports System.IO
+﻿Imports System.IO
 Imports System.Text.RegularExpressions
 
 Public Class WordCount
@@ -41,12 +37,3 @@ Public Class WordCount
         End Get
     End Property
 End Class
-' </Snippet1>
-
-Public Module Example
-    Public Sub Main()
-        Dim wc As New WordCount("C:\users\ronpet\documents\Fr_Mike_Mass.txt")
-        Console.WriteLine("File {0} ({1}) has {2} words",
-                          wc.Name, wc.FullName, wc.Count)
-    End Sub
-End Module

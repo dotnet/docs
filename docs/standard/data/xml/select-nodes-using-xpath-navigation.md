@@ -5,7 +5,7 @@ ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
   - "vb"
-ms.assetid: 8e4450dc-56b3-472b-b467-32f5694f83ad
+ms.topic: how-to
 ---
 # Select Nodes Using XPath Navigation
 

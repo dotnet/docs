@@ -44,7 +44,7 @@ typedef enum _tagAssemblyComparisonResult {
 |Member name|Description|  
 |-----------------|-----------------|  
 |`ACR_EquivalentFullMatch`|Indicates that all assembly fields in the comparison match.|  
-|`ACR_EquivalentFXUnified`|Indicates that assemblies are considered equivalent based on the common language runtime version (CLR) unification of assembly version numbers in the .NET Framework version 2.0.|  
+|`ACR_EquivalentFXUnified`|Indicates that assemblies are considered equivalent based on the common language runtime version (CLR) unification of assembly version numbers in .NET Framework version 2.0.|  
 |`ACR_EquivalentPartialFXUnified`|Indicates a partial match of the assemblies based on the CLR unification of assembly version numbers in the .NET Framework 2.0.|  
 |`ACR_EquivalentPartialMatch`|Indicates a partial match of the assemblies.|  
 |`ACR_EquivalentPartialUnified`|Indicates a partial match of the assemblies based on legacy unification of version numbers.|  

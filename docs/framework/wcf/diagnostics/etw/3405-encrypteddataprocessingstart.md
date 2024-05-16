@@ -6,10 +6,10 @@ ms.assetid: bdb6e4e8-ec85-4629-a43a-7836d445ecab
 ---
 # 3405 - EncryptedDataProcessingStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3405|  
 |Keywords|Security|  
 |Level|Verbose|  

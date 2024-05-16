@@ -14,9 +14,9 @@ Public Class Temperature
     End Function
 End Class
 
-Module Example
-    Public Sub Main()
-        Dim currentTemperature As New Temperature(23.6d)
+Module Example13
+    Public Sub Main13()
+        Dim currentTemperature As New Temperature(23.6D)
         Console.WriteLine("The current temperature is " +
                           currentTemperature.ToString())
     End Sub

@@ -6,7 +6,7 @@ ms.assetid: 8ea5860d-0c42-4ae9-941a-e07efdd8e29c
 ---
 # AJAX Service with JSON and XML Sample
 
-This sample demonstrates how to use Windows Communication Foundation (WCF) to create an Asynchronous JavaScript and XML (AJAX) service that returns either JavaScript Object Notation (JSON) or XML data. You can access an AJAX service by using JavaScript code from a Web browser client. This sample builds on the [Basic AJAX Service](basic-ajax-service.md) sample.
+The [XmlAjaxService sample](https://github.com/dotnet/samples/tree/main/framework/wcf) demonstrates how to use Windows Communication Foundation (WCF) to create an Asynchronous JavaScript and XML (AJAX) service that returns either JavaScript Object Notation (JSON) or XML data. You can access an AJAX service by using JavaScript code from a Web browser client. This sample builds on the [Basic AJAX Service](basic-ajax-service.md) sample.
 
 Unlike the other AJAX samples, this sample does not use ASP.NET AJAX and the <xref:System.Web.UI.ScriptManager> control. With some additional configuration, WCF AJAX services can be accessed from any HTML page through JavaScript, and this scenario is shown here. For an example of using WCF with ASP.NET AJAX, see [AJAX Samples](ajax.md).
 
@@ -87,15 +87,6 @@ xmlHttp.onreadystatechange=function(){
      }
 }
 ```
-
-> [!IMPORTANT]
-> The samples may already be installed on your machine. Check for the following (default) directory before continuing.
->
-> `<InstallDrive>:\WF_WCF_Samples`
->
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
->
-> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\AJAX\XmlAjaxService`
 
 #### To set up, build, and run the sample
 

@@ -5,7 +5,7 @@ ms.date: 05/16/2016
 ---
 # Exception Handling
 
-This section contains information about exception handling support in the F# language.
+This section contains information about exception handling support in F#.
 
 ## Exception Handling Basics
 
@@ -20,6 +20,6 @@ In addition, as the stack is unwound, the runtime executes any code in `finally`
 |[Exception Types](exception-types.md)|Describes how to declare an exception type.|
 |[Exceptions: The `try...with` Expression](the-try-with-expression.md)|Describes the language construct that supports exception handling.|
 |[Exceptions: The `try...finally` Expression](the-try-finally-expression.md)|Describes the language construct that enables you to execute clean-up code as the stack unwinds when an exception is thrown.|
-|[Exceptions: the `raise` Function](the-raise-Function.md)|Describes how to throw an exception object.|
+|[Exceptions: the `raise` Function](the-raise-function.md)|Describes how to throw an exception object.|
 |[Exceptions: The `failwith` Function](the-failwith-function.md)|Describes how to generate a general F# exception.|
 |[Exceptions: The `invalidArg` Function](the-invalidArg-function.md)|Describes how to generate an invalid argument exception.|

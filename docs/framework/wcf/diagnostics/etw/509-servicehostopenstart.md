@@ -6,10 +6,10 @@ ms.assetid: e53683f9-b2c4-4a61-bd66-3956b1914d8f
 ---
 # 509 - ServiceHostOpenStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|509|  
 |Keywords|ServiceHost|  
 |Level|Information|  

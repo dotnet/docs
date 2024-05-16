@@ -1,14 +1,14 @@
 ---
 title: Byrefs
 description: Learn about byref and byref-like types in F#, which are used for low-level programming.
-ms.date: 11/04/2019
+ms.date: 09/27/2021
 ---
 # Byrefs
 
 F# has two major feature areas that deal in the space of low-level programming:
 
 * The `byref`/`inref`/`outref` types, which are managed pointers. They have restrictions on usage so that you cannot compile a program that is invalid at run time.
-* A `byref`-like struct, which is a [structure](structures.md) that has similar semantics and the same compile-time restrictions as `byref<'T>`. One example is <xref:System.Span%601>.
+* A `byref`-like struct, which is a [struct](structs.md) that has similar semantics and the same compile-time restrictions as `byref<'T>`. One example is <xref:System.Span%601>.
 
 ## Syntax
 
@@ -98,7 +98,20 @@ All of these rules together mean that the holder of an `inref` pointer may not m
 
 ### Outref semantics
 
-The purpose of `outref<'T>` is to indicate that the pointer should only be written to. Unexpectedly, `outref<'T>` permits reading the underlying value despite its name. This is for compatibility purposes. Semantically, `outref<'T>` is no different than `byref<'T>`.
+The purpose of `outref<'T>` is to indicate that the pointer should only be written to. Unexpectedly, `outref<'T>` permits reading the underlying value despite its name. This is for compatibility purposes.
+
+Semantically, `outref<'T>` is no different than `byref<'T>`, except for one difference: methods with `outref<'T>` parameters are implicitly constructed into a tuple return type, just like when calling a method with an `[<Out>]` parameter.
+
+```fs
+type C =
+    static member M1(x, y: _ outref) =
+        y <- x
+        true
+
+match C.M1 1 with
+| true, 1 -> printfn "Expected" // Fine with outref, error with byref
+| _ -> printfn "Never matched"
+```
 
 ### Interop with C\#
 
@@ -188,7 +201,7 @@ Also, to return byref, use `&value` (where value is a variable that lives longer
 let mutable sum = 0
 let safeSum (bytes: Span<byte>) =
     for i in 0 .. bytes.Length - 1 do
-        sum <- sum + int bytes.[i]
+        sum <- sum + int bytes[i]
     &sum  // sum lives longer than the scope of this function.
 ```
 
@@ -205,9 +218,9 @@ type C() =
     member _.FindLargestSmallerThan(target: int) =
         let mutable ctr = nums.Length - 1
 
-        while ctr > 0 && nums.[ctr] >= target do ctr <- ctr - 1
+        while ctr > 0 && nums[ctr] >= target do ctr <- ctr - 1
 
-        if ctr > 0 then &nums.[ctr] else &nums.[0]
+        if ctr > 0 then &nums[ctr] else &nums[0]
 
 [<EntryPoint>]
 let main argv =

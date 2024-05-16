@@ -1,6 +1,6 @@
 ---
 description: "protected keyword - C# Reference"
-title: "protected keyword - C# Reference"
+title: "protected keyword"
 ms.date: 07/20/2015
 f1_keywords:
   - "protected"
@@ -20,7 +20,7 @@ A protected member is accessible within its class and by derived class instances
 
 For a comparison of `protected` with the other access modifiers, see [Accessibility Levels](accessibility-levels.md).
 
-## Example
+## Example 1
 
 A protected member of a base class is accessible in a derived class only if the access occurs through the derived class type. For example, consider the following code segment:
 
@@ -30,7 +30,7 @@ The statement `a.x = 10` generates an error because it is made within the static
 
 Struct members cannot be protected because the struct cannot be inherited.
 
-## Example
+## Example 2
 
 In this example, the class `DerivedPoint` is derived from `Point`. Therefore, you can access the protected members of the base class directly from the derived class.
 
@@ -44,12 +44,10 @@ If you change the access levels of `x` and `y` to [private](private.md), the com
 
 ## C# language specification  
 
-For more information, see [Declared accessibility](~/_csharplang/spec/basic-concepts.md#declared-accessibility) in the [C# Language Specification](/dotnet/csharp/language-reference/language-specification/introduction). The language specification is the definitive source for C# syntax and usage.
+For more information, see [Declared accessibility](~/_csharpstandard/standard/basic-concepts.md#752-declared-accessibility) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [Access Modifiers](access-modifiers.md)
 - [Accessibility Levels](accessibility-levels.md)

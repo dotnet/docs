@@ -2,9 +2,9 @@
 Option Strict On
 
 ' <Snippet9>
-Module Example
-    Public Sub Main()
-        Dim pst As TimeZoneInfo = TimeZoneInfo.FindSystemTimeZoneByID("Pacific Standard Time")
+Module Example8
+    Public Sub Main8()
+        Dim pst As TimeZoneInfo = TimeZoneInfo.FindSystemTimeZoneById("Pacific Standard Time")
         Dim date1 As Date = DateTime.SpecifyKind(#3/9/2013 10:30AM#,
                                                  DateTimeKind.Local)
         Dim utc1 As Date = date1.ToUniversalTime()

@@ -1,26 +1,23 @@
-﻿using System;
+﻿namespace builtin_types;
 
-namespace builtin_types
+public static class CharType
 {
-    public static class CharType
+    public static void Examples()
     {
-        public static void Examples()
-        {
-            Literals();
-        }
+        Literals();
+    }
 
-        private static void Literals()
+    private static void Literals()
+    {
+        // <SnippetLiterals>
+        var chars = new[]
         {
-            // <SnippetLiterals>
-            var chars = new[]
-            {
-                'j',
-                '\u006A',
-                '\x006A',
-                (char)106,
-            };
-            Console.WriteLine(string.Join(" ", chars));  // output: j j j j
-            // </SnippetLiterals>
-        }
+            'j',
+            '\u006A',
+            '\x006A',
+            (char)106,
+        };
+        Console.WriteLine(string.Join(" ", chars));  // output: j j j j
+        // </SnippetLiterals>
     }
 }

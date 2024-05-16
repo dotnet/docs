@@ -3,7 +3,6 @@ title: ASP.NET Core breaking changes
 titleSuffix: ""
 description: Lists the breaking changes in ASP.NET Core 3.0 and 3.1.
 ms.date: 11/03/2020
-author: scottaddie
 ms.author: scaddie
 ---
 # ASP.NET Core breaking changes for versions 3.0 and 3.1
@@ -229,7 +228,7 @@ The following breaking changes in ASP.NET Core 3.0 and 3.1 are documented on thi
 
 ***
 
-[!INCLUDE[Razor: RazorTemplatEengine API removed](~/includes/core-changes/aspnetcore/3.0/razor-razortemplateengine-api-removed.md)]
+[!INCLUDE[Razor: RazorTemplateEngine API removed](~/includes/core-changes/aspnetcore/3.0/razor-razortemplateengine-api-removed.md)]
 
 ***
 

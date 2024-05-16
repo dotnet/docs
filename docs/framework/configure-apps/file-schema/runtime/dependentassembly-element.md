@@ -79,6 +79,7 @@ Encapsulates binding policy and assembly location for each assembly. Use one `de
   
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
 - [Runtime Settings Schema](index.md)
 - [Configuration File Schema](../index.md)
 - [Redirecting Assembly Versions](../../redirect-assembly-versions.md)

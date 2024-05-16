@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Predict prices using regression'
 description: This tutorial illustrates how to build a regression model using ML.NET to predict prices, specifically, New York City taxi fares.
-ms.date: 06/30/2020
+ms.date: 11/11/2021
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0516
 #Customer intent: As a developer, I want to use ML.NET so that I can train and build a model in a regression scenario to predict prices.
@@ -22,11 +22,13 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) or later or Visual Studio 2017 version 15.6 or later with the ".NET Core cross-platform development" workload installed.
+* [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/) with the ".NET Desktop Development" workload installed.
 
 ## Create a console application
 
-1. Create a **.NET Core Console Application** called "TaxiFarePrediction".
+1. Create a C# **Console Application** called "TaxiFarePrediction".
+
+1. Choose .NET 6 as the framework to use. Click the **Create** button.
 
 1. Create a directory named *Data* in your project to store the data set and model files.
 
@@ -38,7 +40,7 @@ In this tutorial, you learn how to:
 
 ## Prepare and understand the data
 
-1. Download the [taxi-fare-train.csv](https://github.com/dotnet/machinelearning/blob/master/test/data/taxi-fare-train.csv) and the [taxi-fare-test.csv](https://github.com/dotnet/machinelearning/blob/master/test/data/taxi-fare-test.csv) data sets and save them to the *Data* folder you've created at the previous step. We use these data sets to train the machine learning model and then evaluate how accurate the model is. These data sets are originally from the [NYC TLC Taxi Trip data set](https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page).
+1. Download the [taxi-fare-train.csv](https://github.com/dotnet/machinelearning/blob/main/test/data/taxi-fare-train.csv) and the [taxi-fare-test.csv](https://github.com/dotnet/machinelearning/blob/main/test/data/taxi-fare-test.csv) data sets and save them to the *Data* folder you've created at the previous step. We use these data sets to train the machine learning model and then evaluate how accurate the model is. These data sets are originally from the [NYC TLC Taxi Trip data set](https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page).
 
 1. In **Solution Explorer**, right-click each of the \*.csv files and select **Properties**. Under **Advanced**, change the value of **Copy to Output Directory** to **Copy if newer**.
 
@@ -89,19 +91,19 @@ You need to create three fields to hold the paths to the files with data sets an
 * `_testDataPath` contains the path to the file with the data set used to evaluate the model.
 * `_modelPath` contains the path to the file where the trained model is stored.
 
-Add the following code right above the `Main` method to specify those paths and for the `_textLoader` variable:
+Add the following code right below the usings section to specify those paths and for the `_textLoader` variable:
 
 [!code-csharp[InitializePaths](./snippets/predict-prices/csharp/Program.cs#2 "Define variables to store the data file paths")]
 
 All ML.NET operations start in the [MLContext class](xref:Microsoft.ML.MLContext). Initializing `mlContext` creates a new ML.NET environment that can be shared across the model creation workflow objects. It's similar, conceptually, to `DBContext` in Entity Framework.
 
-### Initialize variables in Main
+### Initialize variables
 
-Replace the `Console.WriteLine("Hello World!")` line in the `Main` method with the following code to declare and initialize the `mlContext` variable:
+Replace the `Console.WriteLine("Hello World!")` line with the following code to declare and initialize the `mlContext` variable:
 
 [!code-csharp[CreateMLContext](./snippets/predict-prices/csharp/Program.cs#3 "Create the ML Context")]
 
-Add the following as the next line of code in the `Main` method to call the `Train` method:
+Add the following as the next line of code to call the `Train` method:
 
 [!code-csharp[Train](./snippets/predict-prices/csharp/Program.cs#5 "Train your model")]
 
@@ -112,10 +114,10 @@ The `Train()` method executes the following tasks:
 * Trains the model.
 * Returns the model.
 
-The `Train` method trains the model. Create that method just below `Main`, using the following code:
+The `Train` method trains the model. Create that method just below using the following code:
 
 ```csharp
-public static ITransformer Train(MLContext mlContext, string dataPath)
+ITransformer Train(MLContext mlContext, string dataPath)
 {
 
 }
@@ -123,7 +125,7 @@ public static ITransformer Train(MLContext mlContext, string dataPath)
 
 ## Load and transform data
 
-ML.NET uses the [IDataView class](xref:Microsoft.ML.IDataView) as a flexible, efficient way of describing numeric or text tabular data. `IDataView` can load either text files or in real time (for example, SQL database or log files). Add the following code as the first line of the `Train()` method:
+ML.NET uses the [IDataView interface](xref:Microsoft.ML.IDataView) as a flexible, efficient way of describing numeric or text tabular data. `IDataView` can load either text files or in real time (for example, SQL database or log files). Add the following code as the first line of the `Train()` method:
 
 [!code-csharp[LoadTrainData](./snippets/predict-prices/csharp/Program.cs#6 "loading training dataset")]
 
@@ -164,7 +166,7 @@ Return the trained model with the following line of code in the `Train()` method
 Next, evaluate your model performance with your test data for quality assurance and validation. Create the `Evaluate()` method, just after `Train()`, with the following code:
 
 ```csharp
-private static void Evaluate(MLContext mlContext, ITransformer model)
+void Evaluate(MLContext mlContext, ITransformer model)
 {
 
 }
@@ -177,7 +179,7 @@ The `Evaluate` method executes the following tasks:
 * Evaluates the model and creates metrics.
 * Displays the metrics.
 
-Add a call to the new method from the `Main` method, right under the `Train` method call, using the following code:
+Add a call to the new method right under the `Train` method call, using the following code:
 
 [!code-csharp[CallEvaluate](./snippets/predict-prices/csharp/Program.cs#14 "Call the Evaluate method")]
 
@@ -221,7 +223,7 @@ Console.WriteLine($"*------------------------------------------------");
 Create the `TestSinglePrediction` method, just after the `Evaluate` method, using the following code:
 
 ```csharp
-private static void TestSinglePrediction(MLContext mlContext, ITransformer model)
+void TestSinglePrediction(MLContext mlContext, ITransformer model)
 {
 
 }
@@ -234,7 +236,7 @@ The `TestSinglePrediction` method executes the following tasks:
 * Combines test data and predictions for reporting.
 * Displays the predicted results.
 
-Add a call to the new method from the `Main` method, right under the `Evaluate` method call, using the following code:
+Add a call to the new method right under the `Evaluate` method call, using the following code:
 
 [!code-csharp[CallTestSinglePrediction](./snippets/predict-prices/csharp/Program.cs#20 "Call the TestSinglePrediction method")]
 
@@ -263,7 +265,7 @@ To display the predicted fare of the specified trip, add the following code into
 
 Run the program to see the predicted taxi fare for your test case.
 
-Congratulations! You've now successfully built a machine learning model for predicting taxi trip fares, evaluated its accuracy, and used it to make predictions. You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/TaxiFarePrediction) GitHub repository.
+Congratulations! You've now successfully built a machine learning model for predicting taxi trip fares, evaluated its accuracy, and used it to make predictions. You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/main/machine-learning/tutorials/TaxiFarePrediction) GitHub repository.
 
 ## Next steps
 

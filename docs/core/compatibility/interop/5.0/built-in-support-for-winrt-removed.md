@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: Built-in support for WinRT is removed from .NET"
 description: Learn about the interop breaking change in .NET 5 where built-in support for WinRT is removed from .NET.
-ms.date: 10/13/2020
+ms.date: 03/29/2022
 ---
 # Built-in support for WinRT is removed from .NET
 
@@ -21,7 +21,7 @@ This breaking change was made for the following reasons:
 
 - So WinRT can be developed and improved separately from the .NET runtime.
 - For symmetry with interop systems provided for other operating systems, such as iOS and Android.
-- To take advantage of other .NET features, such as C# features, intermediate language (IL) linking, and ahead-of-time (AOT) compilation.
+- To take advantage of other .NET features, such as C# features, intermediate language (IL) trimming, and ahead-of-time (AOT) compilation.
 - To simplify the .NET runtime codebase.
 
 ## Recommended action
@@ -29,10 +29,12 @@ This breaking change was made for the following reasons:
 - Remove references to the [Microsoft.Windows.SDK.Contracts package](https://www.nuget.org/packages/Microsoft.Windows.SDK.Contracts).  Instead, specify the version of the Windows APIs that you want to access via the `TargetFramework` property of the project.  For example:
 
   ```xml
-  <TargetFramework>net5.0-windows10.0.19041</TargetFramework>
+  <TargetFramework>net5.0-windows10.0.19041.0</TargetFramework>
   ```
 
-- Use the [C#/WinRT](/windows/uwp/csharp-winrt/) tool chain to generate or customize WinRT APIs and types for .NET 5 and later versions.
+- If you're consuming a third-party runtime component that's defined in a *.winmd* file, add a reference to the [Microsoft.Windows.CsWinRT NuGet package](https://www.nuget.org/packages/Microsoft.Windows.CsWinRT/). For information on how to generate the C# projection, see the [C#/WinRT](/windows/uwp/csharp-winrt/) documentation.
+
+For more information, see [Call Windows Runtime APIs in desktop apps](/windows/apps/desktop/modernize/desktop-to-uwp-enhance).
 
 ## Affected APIs
 

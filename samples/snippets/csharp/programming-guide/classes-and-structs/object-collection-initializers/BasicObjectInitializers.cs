@@ -13,7 +13,7 @@ namespace object_collection_initializers
         {
             // Auto-implemented properties.
             public int Age { get; set; }
-            public string Name { get; set; }
+            public string? Name { get; set; }
 
             public Cat()
             {
@@ -25,6 +25,13 @@ namespace object_collection_initializers
             }
         }
         // </SnippetCatDeclaration>
+
+        // <SnippetCatOwnerDeclaration>
+        public class CatOwner
+        {
+            public IList<Cat> Cats { get; } = new List<Cat>();
+        }
+        // </SnippetCatOwnerDeclaration>
 
         // <SnippetMatrixDeclaration>
         public class Matrix
@@ -42,7 +49,7 @@ namespace object_collection_initializers
 
         public class Product
         {
-            public string ProductName { get; set; }
+            public string? ProductName { get; set; }
             public decimal UnitPrice { get; set; }
         }
 
@@ -87,14 +94,14 @@ namespace object_collection_initializers
             };
             // </SnippetListInitializer>
 
-            // <SnippetListInitialerWithNull>
-            List<Cat> moreCats = new List<Cat>
+            // <SnippetListInitializerWithNull>
+            List<Cat?> moreCats = new List<Cat?>
             {
                 new Cat{ Name = "Furrytail", Age=5 },
                 new Cat{ Name = "Peaches", Age=4 },
                 null
             };
-            // </SnippetListInitialerWithNull>
+            // </SnippetListInitializerWithNull>
 
             // <SnippetDictionaryIndexerInitializer>
             var numbers = new Dictionary<int, string>
@@ -114,6 +121,29 @@ namespace object_collection_initializers
             };
             // </SnippetDictionaryAddInitializer>
 
+            {
+                // <SnippetReadOnlyPropertyCollectionInitializer>
+                CatOwner owner = new CatOwner
+                {
+                    Cats =
+                    {
+                        new Cat{ Name = "Sylvester", Age=8 },
+                        new Cat{ Name = "Whiskers", Age=2 },
+                        new Cat{ Name = "Sasha", Age=14 }
+                    }
+                };
+                // </SnippetReadOnlyPropertyCollectionInitializer>
+            }
+
+            {
+                // <SnippetReadOnlyPropertyCollectionInitializerTranslation>
+                CatOwner owner = new CatOwner();
+                owner.Cats.Add(new Cat{ Name = "Sylvester", Age=8 });
+                owner.Cats.Add(new Cat{ Name = "Whiskers", Age=2 });
+                owner.Cats.Add(new Cat{ Name = "Sasha", Age=14 });
+                // </SnippetReadOnlyPropertyCollectionInitializerTranslation>
+            }
+
             InitializationSample.Main();
             FullExample.Main();
             DictionaryExample.Main();
@@ -128,7 +158,7 @@ namespace object_collection_initializers
         {
             // Auto-implemented properties.
             public int Age { get; set; }
-            public string Name { get; set; }
+            public string? Name { get; set; }
 
             public Cat() { }
 
@@ -150,7 +180,7 @@ namespace object_collection_initializers
                 new Cat { Name = "Sasha", Age = 14 }
             };
 
-            List<Cat> moreCats = new List<Cat>
+            List<Cat?> moreCats = new List<Cat?>
             {
                 new Cat { Name = "Furrytail", Age = 5 },
                 new Cat { Name = "Peaches", Age = 4 },
@@ -163,7 +193,7 @@ namespace object_collection_initializers
             foreach (Cat c in cats)
                 System.Console.WriteLine(c.Name);
 
-            foreach (Cat c in moreCats)
+            foreach (Cat? c in moreCats)
                 if (c != null)
                     System.Console.WriteLine(c.Name);
                 else
@@ -234,7 +264,7 @@ namespace object_collection_initializers
     // <SnippetFullDictionaryInitializer>
     public class DictionaryExample
     {
-        class RudimentaryMultiValuedDictionary<TKey, TValue> : IEnumerable<KeyValuePair<TKey, List<TValue>>>
+        class RudimentaryMultiValuedDictionary<TKey, TValue> : IEnumerable<KeyValuePair<TKey, List<TValue>>> where TKey : notnull
         {
             private Dictionary<TKey, List<TValue>> internalDictionary = new Dictionary<TKey, List<TValue>>();
 
@@ -252,7 +282,7 @@ namespace object_collection_initializers
 
             public void Add(TKey key, IEnumerable<TValue> values)
             {
-                if (!internalDictionary.TryGetValue(key, out List<TValue> storedValues))
+                if (!internalDictionary.TryGetValue(key, out List<TValue>? storedValues))
                     internalDictionary.Add(key, storedValues = new List<TValue>());
 
                 storedValues.AddRange(values);

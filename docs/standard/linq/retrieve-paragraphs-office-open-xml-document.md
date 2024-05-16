@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: cc2687cf-d648-451e-88ac-3847c6c967c8
+ms.topic: how-to
 ---
 
 # How to retrieve paragraphs from an Office Open XML document (LINQ to XML)

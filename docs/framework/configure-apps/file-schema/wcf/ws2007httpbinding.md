@@ -42,8 +42,7 @@ Defines an interoperable binding that provides support for the correct versions 
         <message clientCredentialType ="Certificate/IssuedToken/None/UserName/Windows"
                  negotiateServiceCredential="Boolean"
                  algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"
-                 establishSecurityContext="Boolean"
-                 negotiateServiceCredential="Boolean" />
+                 establishSecurityContext="Boolean" />
     </security>
     <readerQuotas maxArrayLength="Integer"
                   maxBytesPerRead="Integer"

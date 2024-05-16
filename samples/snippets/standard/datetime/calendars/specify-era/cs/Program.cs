@@ -16,11 +16,11 @@ public class Example
            if (jaJp.DateTimeFormat.GetEraName(ctr) == "明治")
               eraIndex = ctr;
         var date1 = japaneseCal.ToDateTime(23, 9, 8, 0, 0, 0, 0, eraIndex);
-        Console.WriteLine($"{date1.ToString("d", jaJp)} (Gregorian {date1:d}");
+        Console.WriteLine($"{date1.ToString("d", jaJp)} (Gregorian {date1:d})");
 
         try {
             var date2 = DateTime.Parse("明治23/9/8", jaJp);
-            Console.WriteLine($"{date1.ToString("d", jaJp)} (Gregorian {date1:d}");
+            Console.WriteLine($"{date2.ToString("d", jaJp)} (Gregorian {date2:d})");
         }
         catch (FormatException)
         {
@@ -28,8 +28,8 @@ public class Example
         }
 
         try {
-            var date3 = DateTime.ParseExact("明治23/9/8", "gyy/m/d", jaJp);
-            Console.WriteLine($"{date1.ToString("d", jaJp)} (Gregorian {date1:d}");
+            var date3 = DateTime.ParseExact("明治23/9/8", "gyy/M/d", jaJp);
+            Console.WriteLine($"{date3.ToString("d", jaJp)} (Gregorian {date3:d})");
         }
         catch (FormatException)
         {
@@ -38,6 +38,6 @@ public class Example
     }
 }
 // The example displays the following output:
-//   明治23/9/8 (Gregorian 9/8/1890
-//   明治23/9/8 (Gregorian 9/8/1890
-//   明治23/9/8 (Gregorian 9/8/1890
+//   明治23/9/8 (Gregorian 9/8/1890)
+//   明治23/9/8 (Gregorian 9/8/1890)
+//   明治23/9/8 (Gregorian 9/8/1890)

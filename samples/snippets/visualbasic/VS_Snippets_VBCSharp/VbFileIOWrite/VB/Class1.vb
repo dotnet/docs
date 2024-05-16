@@ -1,5 +1,5 @@
 ﻿Class Class1c726124781d49769baaed46814ff3fe
-    ' HowtoWriteTexttoFilesinMyDocuments(VisualBasic)
+    ' HowtoWriteTextToFilesInMyDocuments(VisualBasic)
 
     Public Sub Method1()
         ' <snippet1>
@@ -25,7 +25,7 @@
 End Class
 
 Class Class304956eb530d4df7b48f9b4d1f2581a0
-    ' HowtoWriteTexttoFilesinVisualBasic
+    ' HowtoWriteTextToFilesInVisualBasic
 
     Public Sub Method3()
         ' <snippet3>
@@ -48,7 +48,7 @@ Class Class304956eb530d4df7b48f9b4d1f2581a0
 End Class
 
 Class Class99762e57ef464dcc8959a8f79c22f067
-    ' HowtoWriteTexttoaFilewithaStreamWriter(VisualBasic)
+    ' HowtoWriteTextToAFileWithAStreamWriter(VisualBasic)
 
     Public Sub Method5()
         ' <snippet5>
@@ -62,7 +62,7 @@ Class Class99762e57ef464dcc8959a8f79c22f067
 End Class
 
 Class Classbbbd7fb5f16941a9b53f520ea9613913
-    ' HowtoAppendtoaTextFile(VisualBasic)
+    ' HowtoAppendToATextFile(VisualBasic)
 
     Public Sub Method6()
         ' <snippet6>

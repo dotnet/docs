@@ -6,7 +6,7 @@ ms.assetid: f743fbc7-faff-45e5-af1e-61577d87f0cc
 ---
 # Query Expression Examples (LINQ to DataSet)
 
-This section provides LINQ to DataSet programming examples in query expression syntax that use the standard query operators. The <xref:System.Data.DataSet> used in these examples is populated by using the `FillDataSet` method, which is specified in [Loading Data Into a DataSet](loading-data-into-a-dataset.md). For more information, see [Standard Query Operators Overview (C#)](../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md) or [Standard Query Operators Overview (Visual Basic)](../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md).  
+This section provides LINQ to DataSet programming examples in query expression syntax that use the standard query operators. The <xref:System.Data.DataSet> used in these examples is populated by using the `FillDataSet` method, which is specified in [Loading Data Into a DataSet](loading-data-into-a-dataset.md). For more information, see [Standard Query Operators Overview (C#)](../../../csharp/linq/standard-query-operators/index.md) or [Standard Query Operators Overview (Visual Basic)](../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md).  
   
 ## In This Section  
 

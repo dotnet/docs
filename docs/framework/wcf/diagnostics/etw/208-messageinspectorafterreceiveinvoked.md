@@ -6,10 +6,10 @@ ms.assetid: dfb5f7b0-4346-4949-8104-351726b1f502
 ---
 # 208 - MessageInspectorAfterReceiveInvoked
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|208|  
 |Keywords|Troubleshooting, ServiceModel|  
 |Level|Information|  

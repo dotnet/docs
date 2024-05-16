@@ -26,7 +26,7 @@ dotnet nuget add source -h|--help
 The `dotnet nuget add source` command adds a new package source to your NuGet configuration files.
 
 > [!WARNING]
-> When adding multiple package sources, be careful not to introduce a [dependency confusion vulnerability](https://aka.ms/pkg-sec-wp).
+> When adding multiple package sources, be careful not to introduce a [dependency confusion vulnerability](/nuget/concepts/security-best-practices#nuget-feeds).
 
 ## Arguments
 
@@ -36,9 +36,7 @@ The `dotnet nuget add source` command adds a new package source to your NuGet co
 
 ## Options
 
-- **`--configfile <FILE>`**
-
-  The NuGet configuration file. If specified, only the settings from this file will be used. If not specified, the hierarchy of configuration files from the current directory will be used. For more information, see [Common NuGet Configurations](/nuget/consume-packages/configuring-nuget-behavior).
+[!INCLUDE [configfile](../../../includes/cli-configfile.md)]
 
 - **`-n|--name <SOURCE_NAME>`**
 
@@ -48,9 +46,17 @@ The `dotnet nuget add source` command adds a new package source to your NuGet co
 
   Password to be used when connecting to an authenticated source.
 
+> [!NOTE]
+> Be aware that encrypted passwords are only supported on Windows.
+> Moreover, they can only be decrypted on the same machine and by the same user who originally encrypted them.
+
 - **`--store-password-in-clear-text`**
 
   Enables storing portable package source credentials by disabling password encryption.
+
+> [!WARNING]
+> Storing passwords in clear text is strongly discouraged.
+> For more information on managing credentials securely, refer to the [security best practices for consuming packages from private feeds](/nuget/consume-packages/consuming-packages-authenticated-feeds#security-best-practices-for-managing-credentials).
 
 - **`-u|--username <USER>`**
 
@@ -77,7 +83,7 @@ The `dotnet nuget add source` command adds a new package source to your NuGet co
 - Add a source that needs authentication:
 
   ```dotnetcli
-  dotnet nuget add source https://someServer/myTeam -n myTeam -u myUsername -p myPassword --store-password-in-clear-text
+  dotnet nuget add source https://someServer/myTeam -n myTeam -u myUsername -p myPassword
   ```
 
 - Add a source that needs authentication (then go install credential provider):
@@ -87,6 +93,8 @@ The `dotnet nuget add source` command adds a new package source to your NuGet co
   ```
 
 ## See also
+
+- [Security best practices for managing package source credentials](/nuget/consume-packages/consuming-packages-authenticated-feeds#security-best-practices-for-managing-credentials)
 
 - [Package source sections in NuGet.config files](/nuget/reference/nuget-config-file#package-source-sections)
 

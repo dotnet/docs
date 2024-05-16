@@ -5,7 +5,7 @@ ms.date: 02/14/2020
 ---
 # dotnet remove reference
 
-**This article applies to:** ✔️ .NET Core 2.x SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -36,9 +36,7 @@ Project-to-project (P2P) references to remove. You can specify one or multiple p
 
 ## Options
 
-- **`-h|--help`**
-
-  Prints out a short help for the command.
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 - **`-f|--framework <FRAMEWORK>`**
 

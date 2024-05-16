@@ -2,7 +2,7 @@
 title: "Control Flow Activities in WF"
 description: This article summarizes the .NET Framework 4.6.1 activities for controlling flow of execution within a workflow.
 ms.date: "03/30/2017"
-ms.assetid: 6892885b-f7c5-4aea-8f5e-28863fb4ae75
+ms.topic: "reference"
 ---
 # Control Flow Activities in WF
 

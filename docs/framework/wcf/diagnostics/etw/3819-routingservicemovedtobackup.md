@@ -6,10 +6,10 @@ ms.assetid: bf4086de-efd4-413c-9bc3-32a85b6b6722
 ---
 # 3819 - RoutingServiceMovedToBackup
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3819|  
 |Keywords|RoutingServices|  
 |Level|Information|  

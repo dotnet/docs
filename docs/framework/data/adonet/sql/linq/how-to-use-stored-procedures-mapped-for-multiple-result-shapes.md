@@ -15,7 +15,7 @@ When a stored procedure can return multiple result shapes, the return type canno
   
  The <xref:System.Data.Linq.Mapping.ResultTypeAttribute> attribute is applied to stored procedures that return multiple result types to specify the set of types the procedure can return.  
   
-## Example  
+## Example 1
 
  In the following SQL code example, the result shape depends on the input (`shape =1` or `shape = 2`). You do not know which projection will be returned first.  
   
@@ -31,7 +31,7 @@ else if(@shape = 2)
  [!code-csharp[DLinqSprox#4](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqSprox/cs/northwind-sprox.cs#4)]
  [!code-vb[DLinqSprox#4](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqSprox/vb/northwind-sprox.vb#4)]  
   
-## Example  
+## Example 2  
 
  You would use code similar to the following to execute this stored procedure.  
   

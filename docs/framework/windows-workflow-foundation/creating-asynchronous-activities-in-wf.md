@@ -2,7 +2,7 @@
 title: "Creating Asynchronous Activities in WF"
 description: Learn how to create custom asynchronous activities using AsyncCodeActivity, which enables derived activities to implement asynchronous execution logic.
 ms.date: "03/30/2017"
-ms.assetid: 497e81ed-5eef-460c-ba55-fae73c05824f
+ms.topic: "how-to"
 ---
 # Creating Asynchronous Activities in WF
 
@@ -10,11 +10,11 @@ ms.assetid: 497e81ed-5eef-460c-ba55-fae73c05824f
   
 ## Using AsyncCodeActivity  
 
- <xref:System.Activities?displayProperty=nameWithType> provides custom activity authors with different base classes for different activity authoring requirements. Each one carries a particular semantic and provides a workflow author (and the activity runtime) a corresponding contract. An <xref:System.Activities.AsyncCodeActivity> based activity is an activity that performs work asynchronously relative to the scheduler thread and whose execution logic is expressed in managed code. As a result of going asynchronous, an <xref:System.Activities.AsyncCodeActivity> may induce an idle point during execution. Due to the volatile nature of asynchronous work, an <xref:System.Activities.AsyncCodeActivity> always creates a no persist block for the duration of the activity’s execution. This prevents the workflow runtime from persisting the workflow instance in the middle of the asynchronous work, and also prevents the workflow instance from unloading while the asynchronous code is executing.  
+ <xref:System.Activities?displayProperty=nameWithType> provides custom activity authors with different base classes for different activity authoring requirements. Each one carries a particular semantic and provides a workflow author (and the activity runtime) a corresponding contract. An <xref:System.Activities.AsyncCodeActivity> based activity is an activity that performs work asynchronously relative to the scheduler thread and whose execution logic is expressed in managed code. As a result of going asynchronous, an <xref:System.Activities.AsyncCodeActivity> may induce an idle point during execution. Due to the volatile nature of asynchronous work, an <xref:System.Activities.AsyncCodeActivity> always creates a no persist block for the duration of the activity's execution. This prevents the workflow runtime from persisting the workflow instance in the middle of the asynchronous work, and also prevents the workflow instance from unloading while the asynchronous code is executing.  
   
 ### AsyncCodeActivity Methods  
 
- Activities that derive from <xref:System.Activities.AsyncCodeActivity> can create asynchronous execution logic by overriding the <xref:System.Activities.AsyncCodeActivity.BeginExecute%2A> and <xref:System.Activities.AsyncCodeActivity.EndExecute%2A> methods with custom code. When called by the runtime, these methods are passed an <xref:System.Activities.AsyncCodeActivityContext>. <xref:System.Activities.AsyncCodeActivityContext> allows the activity author to provide shared state across <xref:System.Activities.AsyncCodeActivity.BeginExecute%2A>/ <xref:System.Activities.AsyncCodeActivity.EndExecute%2A> in the context’s <xref:System.Activities.AsyncCodeActivityContext.UserState%2A> property. In the following example, a `GenerateRandom` activity generates a random number asynchronously.  
+ Activities that derive from <xref:System.Activities.AsyncCodeActivity> can create asynchronous execution logic by overriding the <xref:System.Activities.AsyncCodeActivity.BeginExecute%2A> and <xref:System.Activities.AsyncCodeActivity.EndExecute%2A> methods with custom code. When called by the runtime, these methods are passed an <xref:System.Activities.AsyncCodeActivityContext>. <xref:System.Activities.AsyncCodeActivityContext> allows the activity author to provide shared state across <xref:System.Activities.AsyncCodeActivity.BeginExecute%2A>/ <xref:System.Activities.AsyncCodeActivity.EndExecute%2A> in the context's <xref:System.Activities.AsyncCodeActivityContext.UserState%2A> property. In the following example, a `GenerateRandom` activity generates a random number asynchronously.  
   
  [!code-csharp[CFX_ActivityExample#8](~/samples/snippets/csharp/VS_Snippets_CFX/CFX_ActivityExample/cs/Program.cs#8)]  
   

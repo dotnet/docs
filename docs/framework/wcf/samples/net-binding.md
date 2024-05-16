@@ -6,18 +6,18 @@ ms.assetid: 4d10072a-ae0a-486a-b713-49703e26d9bf
 ---
 # Net Binding
 
-This section contains samples that demonstrate using network binding attributes of an endpoint element.  
-  
-## In This Section  
+This section contains samples that demonstrate using network binding attributes of an endpoint element.
 
- [Net MSMQ Binding](net-msmq-binding.md)  
- Demonstrate using MSMQ binding attributes of an endpoint element.  
-  
- [Message Queueing Integration](message-queueing-integration.md)  
- Demonstrate integration between message queuing and WCF.  
-  
- [NetTCPBinding](nettcpbinding.md)  
- Demonstrate using TCP binding in WCF.  
-  
- [NetNamedPipeBinding](netnamedpipebinding.md)  
- Demonstrates the `netNamedPipeBinding` binding, which provides cross-process communication on the same machine.
+## In This Section
+
+ [Net MSMQ Binding](net-msmq-binding.md)
+Demonstrate using MSMQ binding attributes of an endpoint element.
+
+ [Message Queueing Integration](message-queueing-integration.md)
+Demonstrate integration between message queuing and WCF.
+
+ [NetTCPBinding](nettcpbinding.md)
+Demonstrate using TCP binding in WCF.
+
+ [NetNamedPipeBinding](netnamedpipebinding.md)
+Demonstrates the `netNamedPipeBinding` binding, which provides cross-process communication on the same machine.

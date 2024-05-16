@@ -6,54 +6,110 @@
         "linkFormat": "relative",
         "relativeLinkPrefix": "../"
     },
+    "navigationOptions": {
+        "maximumNumberOfArticles": 3,
+        "tocParentNode": "Latest documentation updates",
+        "repoTocFolder": "docs/whats-new",
+        "indexParentNode": "Latest documentation updates",
+        "repoIndexFolder": "docs/whats-new"
+    },
     "areas": [
         {
-            "names": ["."],
-            "heading": "Home"
+            "names": [ "standard/security" ],
+            "heading": ".NET security"
         },
         {
-            "names": ["architecture"],
-            "heading": "Architecture guides"
+            "names": [ "core/compatibility" ],
+            "heading": ".NET breaking changes"
         },
         {
-            "names": ["azure"],
-            "heading": "Azure .NET SDK"
-        },
-        {
-            "names": ["csharp"],
-            "heading": "C# language"
-        },
-        {
-            "names": ["desktop-wpf"],
-            "heading": ".NET Core desktop"
-        },
-        {
-            "names": ["framework"],
-            "heading": ".NET Framework"
-        },
-        {
-            "names": ["fsharp"],
-            "heading": "F# language"
-        },
-        {
-            "names": ["core", "fundamentals", "standard"],
+            "names": [ "core", "fundamentals", "standard" ],
             "heading": ".NET fundamentals"
         },
         {
-            "names": ["iot"],
+            "names": [ "core/porting" ],
+            "heading": "Migration to .NET"
+        },
+        {
+            "names": [ "csharp" ],
+            "heading": "C# language"
+        },
+        {
+            "names": [ "fsharp" ],
+            "heading": "F# language"
+        },
+        {
+            "names": [ "visual-basic" ],
+            "heading": "Visual Basic language"
+        },
+        {
+            "names": [ "architecture" ],
+            "heading": "Architecture guides"
+        },
+        {
+            "names": [ "devops",
+                       "core/testing",
+                       "core/deploying",
+                       "core/docker"
+                     ],
+            "heading": "DevOps and testing in .NET"
+        },
+        {
+            "names": [ "core/tools",
+                       "core/additional-tools",
+                       "core/diagnostics",
+                       "fundamentals/code-analysis",
+                       "standard/analyzers",
+                       "fundamentals/syslib-diagnostics",
+                       "fundamentals/package-validation"
+                     ],
+            "heading": ".NET tools and diagnostics"
+        },
+        {
+            "names": [ "standard/asynchronous-programming-patterns",
+                       "standard/parallel-programming",
+                       "standard/threading",
+                       "standard/collections/thread-safe",
+                       "standard/native-interop",
+                       "standard/garbage-collection"
+                     ],
+            "heading": "Advanced .NET programming"
+        },
+        {
+            "names": [ "azure" ],
+            "heading": "Azure SDK for .NET"
+        },
+        {
+            "names": [ "desktop-wpf" ],
+            "heading": ".NET Core desktop"
+        },
+        {
+            "names": [ "standard/linq", "standard/data" ],
+            "heading": "Data access in .NET"
+        },
+        {
+            "names": [ "iot" ],
             "heading": ".NET IoT libraries"
         },
         {
-            "names": ["machine-learning"],
+            "names": [ "machine-learning" ],
             "heading": "ML.NET"
         },
         {
-            "names": ["spark"],
+            "names": [ "orleans", "dotnet-orleans" ],
+            "heading": "Microsoft Orleans"
+        },
+        {
+            "names": [ "spark" ],
             "heading": ".NET for Apache Spark"
         },
         {
-            "names": ["visual-basic"],
-            "heading": "Visual Basic language"
+            "names": [ "." ],
+            "heading": "Home"
+        },
+        {
+            "names": [ "framework" ],
+            "heading": ".NET Framework"
         }
     ]
 }

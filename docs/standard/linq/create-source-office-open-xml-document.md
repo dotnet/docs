@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 653c8cdb-73be-4dc2-927f-924cfb4ed9ed
+ms.topic: how-to
 ---
 
 # Create the source Office Open XML document (LINQ to XML)

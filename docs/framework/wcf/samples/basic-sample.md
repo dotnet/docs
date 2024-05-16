@@ -6,10 +6,10 @@ ms.assetid: c1910bc1-3d0a-4fa6-b12a-4ed6fe759620
 ---
 # Basic Sample
 
-This sample shows how to make a service discoverable and how to search for and call a discoverable service. This sample is composed of two projects: service and client.
+The [Basic discovery sample](https://github.com/dotnet/samples/tree/main/framework/wcf/Basic/Discovery/Basic) shows how to make a service discoverable and how to search for and call a discoverable service. This sample is composed of two projects: service and client.
 
 > [!NOTE]
-> This sample implements discovery in code.  For a sample that implements discovery in configuration, see [Configuration](configuration-sample.md).
+> This sample implements discovery in code. For a sample that implements discovery in configuration, see [Configuration](configuration-sample.md).
 
 ## Service
 
@@ -82,19 +82,10 @@ static void InvokeCalculatorService(ServiceEndpoint serviceEndpoint)
 
 1. This sample uses HTTP endpoints and to run this sample, proper URL ACLs must be added. For more information, see [Configuring HTTP and HTTPS](../feature-details/configuring-http-and-https.md). Executing the following command at an elevated privilege should add the appropriate ACLs. You may want to substitute your Domain and Username for the following arguments if the command does not work as is. `netsh http add urlacl url=http://+:8000/ user=%DOMAIN%\%UserName%`
 
-2. Using Visual Studio 2012, open the Basic.sln and build the sample.
+2. Using Visual Studio, open the Basic.sln and build the sample.
 
 3. Run the service.exe application.
 
 4. After the service has started, run the client.exe.
 
 5. Observe that the client was able to find the service without knowing its address.
-
-> [!IMPORTANT]
-> The samples may already be installed on your machine. Check for the following (default) directory before continuing.
->
-> `<InstallDrive>:\WF_WCF_Samples`
->
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
->
-> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Discovery\Basic`

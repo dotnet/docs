@@ -6,10 +6,10 @@ ms.assetid: 029c0e75-8cf0-4860-8539-c2baa18eb7a7
 ---
 # 3382 - ClientReliableSessionReconnect
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3382|  
 |Keywords|Channel|  
 |Level|Informational|  

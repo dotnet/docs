@@ -31,10 +31,10 @@ HRESULT AssemblyUnloadFinished(
   
 ## Parameters
 
-`assemblyId`
+`assemblyId`\
 [in] Identifies the assembly that is being unloaded.
 
-`hrStatus`
+`hrStatus`\
 [in] An HRESULT that indicates whether the assembly was unloaded successfully.
 
 ## Remarks  

@@ -8,9 +8,10 @@ helpviewer_keywords:
   - "Pascal-case names [.NET Framework]"
   - "case sensitivity, capitalization conventions"
   - "names [.NET Framework], capitalization"
-ms.assetid: 4c4ea526-9203-486f-b72d-29d61c5b3c6d
 ---
 # Capitalization Conventions
+
+[!INCLUDE [not-current](includes/not-current.md)]
 
 The guidelines in this chapter lay out a simple method for using case that, when applied consistently, make identifiers for types, members, and parameters easy to read.
 
@@ -97,7 +98,7 @@ The guidelines in this chapter lay out a simple method for using case that, when
 
  ❌ DO NOT assume that all programming languages are case sensitive. They are not. Names cannot differ by case alone.
 
- *Portions © 2005, 2009 Microsoft Corporation. All rights reserved.*
+ *Portions &copy; 2005, 2009 Microsoft Corporation. All rights reserved.*
 
  *Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*
 

@@ -1,8 +1,6 @@
 ---
 title: Test published output with dotnet vstest
 description: Learn how to run tests on published libraries, instead of on source code, with the dotnet vstest command.
-author: kendrahavens
-ms.author: kehavens
 ms.date: 10/18/2017
 ---
 # Test published output with dotnet vstest

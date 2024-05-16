@@ -15,12 +15,12 @@
         protected void Pedal() { }
 
         // private field:
-        private int wheels = 3;
+        private int _wheels = 3;
 
         // protected internal property:
         protected internal int Wheels
         {
-            get { return wheels; }
+            get { return _wheels; }
         }
     }
     //</SnippetMethodAccess>

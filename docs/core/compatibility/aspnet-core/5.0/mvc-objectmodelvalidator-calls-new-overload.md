@@ -1,7 +1,6 @@
 ---
 title: "Breaking change: MVC: ObjectModelValidator calls a new overload of ValidationVisitor.Validate"
 description: "Learn about the breaking change in ASP.NET Core 5.0 titled MVC: ObjectModelValidator calls a new overload of ValidationVisitor.Validate"
-author: scottaddie
 ms.author: scaddie
 ms.date: 10/01/2020
 ---
@@ -44,7 +43,7 @@ This change was introduced to support validators, such as <xref:System.Component
 
 ## Recommended action
 
-Validation frameworks that rely on `ObjectModelValidator` to invoke the existing overload of `ValidationVisitor` must override the new method when targeting .NET 5.0 or later:
+Validation frameworks that rely on `ObjectModelValidator` to invoke the existing overload of `ValidationVisitor` must override the new method when targeting .NET 5 or later:
 
 ```csharp
 public class MyCustomValidationVisitor : ValidationVisitor

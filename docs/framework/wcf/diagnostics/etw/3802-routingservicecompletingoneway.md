@@ -6,10 +6,10 @@ ms.assetid: 34bfe6c6-b6d0-4b38-854f-4ad245e90e15
 ---
 # 3802 - RoutingServiceCompletingOneWay
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3802|  
 |Keywords|RoutingServices|  
 |Level|Information|  

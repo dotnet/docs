@@ -14,7 +14,7 @@ The Visual Basic Language Specification is the authoritative source for answers 
   
 The specification is available on the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkId=188623).  
   
-This site contains the [Visual Basic 11 specification](../../../../_vblang/spec/introduction.md). It's built from the Markdown files contained in [the dotnet/vblang GitHub repository](https://github.com/dotnet/vblang/blob/master/spec/README.md).
+This site contains the [Visual Basic 11 specification](~/_vblang/spec/introduction.md). It's built from the Markdown files contained in [the dotnet/vblang GitHub repository](https://github.com/dotnet/vblang/blob/main/spec/README.md).
 
 Issues on the specification should be created in the [dotnet/vblang](https://github.com/dotnet/vblang/issues) repository. Or, if you're interested
 in fixing any errors you find, you can submit a [Pull request](https://github.com/dotnet/vblang/pulls) to the same repository.
@@ -24,4 +24,4 @@ in fixing any errors you find, you can submit a [Pull request](https://github.co
 - [Visual Basic Language Reference](../../language-reference/index.md)
 
 >[!div class="step-by-step"]
->[Next](../../../../_vblang/spec/introduction.md)
+>[Next](~/_vblang/spec/introduction.md)

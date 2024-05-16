@@ -21,7 +21,7 @@ topic_type:
 
 Allocates a new object instance and calls the specified constructor method.  
   
- This method is obsolete in the .NET Framework version 2.0. Use [ICorDebugEval2::NewParameterizedObject](icordebugeval2-newparameterizedobject-method.md) instead.  
+ This method is obsolete in .NET Framework version 2.0. Use [ICorDebugEval2::NewParameterizedObject](icordebugeval2-newparameterizedobject-method.md) instead.  
   
 ## Syntax  
   

@@ -46,6 +46,16 @@ If a conversion fails at run time, the appropriate exception is thrown. If a nar
 
 If the data type of `expression` or `typename` is a class or structure you've defined, you can define `CType` on that class or structure as a conversion operator. This makes `CType` act as an *overloaded operator*. If you do this, you can control the behavior of conversions to and from your class or structure, including the exceptions that can be thrown.
 
+## Conversion Keywords
+
+ A comparison of the type conversion keywords is as follows.  
+  
+|Keyword|Data types|Argument relationship|Run-time failure|  
+|---|---|---|---|  
+|`CType`|Any data types|Widening or narrowing conversion must be defined between the two data types|Throws <xref:System.InvalidCastException>|  
+|[DirectCast Operator](../operators/directcast-operator.md)|Any data types|One type must inherit from or implement the other type|Throws <xref:System.InvalidCastException>|  
+|[TryCast](../operators/trycast-operator.md)|Reference types only|One type must inherit from or implement the other type|Returns [Nothing](../nothing.md)|  
+
 ## Overloading
 
 The `CType` operator can also be overloaded on a class or structure defined outside your code. If your code converts to or from such a class or structure, be sure you understand the behavior of its `CType` operator. For more information, see [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md).

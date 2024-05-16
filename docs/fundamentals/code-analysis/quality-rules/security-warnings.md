@@ -2,7 +2,6 @@
 title: Security rules (code analysis)
 description: "Learn about code analysis security rules."
 ms.date: 10/02/2019
-ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.securityrules
 helpviewer_keywords:
@@ -88,7 +87,7 @@ Security rules support safer libraries and applications. These rules help preven
 |[CA5376: Use SharedAccessProtocol HttpsOnly](ca5376.md)|SAS is sensitive data that can't be transported in plain text on HTTP.|
 |[CA5377: Use container level access policy](ca5377.md)|A container-level access policy can be modified or revoked at any time. It provides greater flexibility and control over the permissions that are granted.|
 |[CA5378: Do not disable ServicePointManagerSecurityProtocols](ca5378.md)|Setting `DisableUsingServicePointManagerSecurityProtocols` to `true` limits Windows Communication Framework's (WCF) Transport Layer Security (TLS) connections to using TLS 1.0. That version of TLS will be deprecated.|
-|[CA5379: Ensure key derivation function algorithm is sufficiently strong](ca5379.md)|The <xref:System.Security.Cryptography.Rfc2898DeriveBytes> class defaults to using the <xref:System.Security.Cryptography.HashAlgorithmName.SHA1> algorithm. You should specify the hash algorithm to use in some overloads of the constructor with <xref:System.Security.Cryptography.HashAlgorithmName.SHA256> or higher. Note, <xref:System.Security.Cryptography.Rfc2898DeriveBytes.HashAlgorithm> property only has a `get` accessor and doesn't have a `overriden` modifier.|
+|[CA5379: Ensure key derivation function algorithm is sufficiently strong](ca5379.md)|The <xref:System.Security.Cryptography.Rfc2898DeriveBytes> class defaults to using the <xref:System.Security.Cryptography.HashAlgorithmName.SHA1> algorithm. You should specify the hash algorithm to use in some overloads of the constructor with <xref:System.Security.Cryptography.HashAlgorithmName.SHA256> or higher. Note, <xref:System.Security.Cryptography.Rfc2898DeriveBytes.HashAlgorithm> property only has a `get` accessor and doesn't have a `overridden` modifier.|
 |[CA5380: Do not add certificates to root store](ca5380.md)|This rule detects code that adds a certificate into the Trusted Root Certification Authorities certificate store. By default, the Trusted Root Certification Authorities certificate store is configured with a set of public CAs that has met the requirements of the Microsoft Root Certificate Program.|
 |[CA5381: Ensure certificates are not added to root store](ca5381.md)|This rule detects code that potentially adds a certificate into the Trusted Root Certification Authorities certificate store. By default, the Trusted Root Certification Authorities certificate store is configured with a set of public certification authorities (CAs) that has met the requirements of the Microsoft Root Certificate Program.|
 |[CA5382: Use secure cookies in ASP.NET Core](ca5382.md)|Applications available over HTTPS must use secure cookies, which indicate to the browser that the cookie should only be transmitted using Transport Layer Security (TLS).|
@@ -113,3 +112,5 @@ Security rules support safer libraries and applications. These rules help preven
 |[CA5401: Do not use CreateEncryptor with non-default IV](ca5401.md)|Symmetric encryption should always use a non-repeatable initialization vector to prevent dictionary attacks.|
 |[CA5402: Use CreateEncryptor with the default IV](ca5402.md)|Symmetric encryption should always use a non-repeatable initialization vector to prevent dictionary attacks.|
 |[CA5403: Do not hard-code certificate](ca5403.md)|The `data` or `rawData` parameter of a <xref:System.Security.Cryptography.X509Certificates.X509Certificate> or <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> constructor is hard-coded.|
+| [CA5404: Do not disable token validation checks](ca5404.md) | <xref:Microsoft.IdentityModel.Tokens.TokenValidationParameters> properties that control token validation should not be set to `false`. |
+| [CA5405: Do not always skip token validation in delegates](ca5405.md) | The callback assigned to <xref:Microsoft.IdentityModel.Tokens.AudienceValidator>  or <xref:Microsoft.IdentityModel.Tokens.LifetimeValidator> always returns `true`. |

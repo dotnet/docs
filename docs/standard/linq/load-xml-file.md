@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 3ed38487-8028-4209-9872-c8dce0ed4dfe
+ms.topic: how-to
 ---
 
 # How to load XML from a file (LINQ to XML)

@@ -11,13 +11,15 @@ Most of the Windows Communication Foundation (WCF) samples are hosted in Interne
 The **ServiceModelSamples** virtual directory is used for building and running all samples that use an IIS-hosted service. This is the only virtual directory that is required to run the samples. Building a sample will replace any previously deployed service at this virtual directory; only the most recently built sample will be deployed and available in this virtual directory.
 
 > [!NOTE]
-> You must run all commands under a local administrator account. If you are using Windows 7, Windows Vista, or Windows Server 2008 R2, you must also run the command prompt with elevated privileges. To do so, right-click the command prompt icon, and then click **Run as administrator**. All commands in this topic must be run in a command prompt that has the appropriate path settings.  The easiest way to ensure this is by using the Visual Studio Command Prompt. To open this prompt, click **Start**, select **All Programs**, scroll down to **Visual Studio 2010**, select **Visual Studio Tools**, right-click **Visual Studio Command Prompt (2010)**, and then click **Run as administrator**. If you have one of the Visual Studio Express editions installed, this command prompt is not available, and you will have to add "C:\Windows\Microsoft.Net\Framework\v4.0" to the system path.
+>
+> - You must run all commands under a local administrator account. If you are using Windows 7, Windows Vista, or Windows Server 2008 R2, you must also run the command prompt with elevated privileges. To do so, right-click the command prompt icon, and then click **Run as administrator**.
+> - All commands in this article must be run in a command prompt that has the appropriate path settings. The easiest way to ensure this is by using the [Developer Command Prompt for Visual Studio](/visualstudio/ide/reference/command-prompt-powershell).
 
-### One-time setup procedure for WCF samples
+## One-time setup procedure for WCF samples
 
 1. Ensure that ASP.NET is set up. For more information about how to set up ASP.NET, see [Internet Information Service Hosting Instructions](internet-information-service-hosting-instructions.md).
 
-2. Ensure that .NET Framework 4 is installed. Search the following directory for v4.0 (or later): **\Windows\Microsoft.NET\Framework**
+2. Ensure that .NET Framework 4+ is installed. Search the following directory for v4.0 (or later): **\Windows\Microsoft.NET\Framework**
 
 3. Ensure you have Visual Studio 2012 or later installed, or your operating system is Windows Server 2008 SP2 or later.
 
@@ -36,48 +38,42 @@ The **ServiceModelSamples** virtual directory is used for building and running a
 
 5. Follow the [Firewall Instructions](firewall-instructions.md) for enabling the ports used by the samples.
 
-6. Check for the following default directory: \<InstallDrive>:**\WF_WCF_Samples**. If the samples were previously installed, this is the default directory.
-
-7. If the samples are not installed, install them from [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459).
-
-8. After installing the samples, go to : \<InstallDrive>:**\WF_WCF_Samples\WCF\Setup\\**
-
-9. Run the **Setupvroot.bat** batch file. The following steps are performed:
+6. Run the [Setupvroot.bat batch file](https://github.com/dotnet/samples/blob/main/framework/wcf/Setup/setupvroot.bat). The following steps are performed:
 
     - A virtual directory is created in IIS named ServiceModelSamples.
 
     - New disk directories are created named %SystemDrive%\Inetpub\wwwroot\ServiceModelSamples and %SystemDrive%\Inetpub\wwwroot\ServiceModelSamples\bin.
 
-    If you prefer to set up these directories manually, see the [Virtual Directory Setup Instructions](virtual-directory-setup-instructions.md). To revert all changes done in this step, run cleanupvroot.bat after you finish using the samples.
+    If you prefer to set up these directories manually, see the [Virtual Directory Setup Instructions](virtual-directory-setup-instructions.md). To revert all changes done in this step, run [cleanupvroot.bat](https://github.com/dotnet/samples/blob/main/framework/wcf/Setup/cleanupvroot.bat) after you finish using the samples.
 
     > [!NOTE]
-    > This procedure must be performed only once on a computer, unless cleanupvroot.bat is run.
+    > This procedure must be performed only once on a computer, unless you run cleanupvroot.bat.
 
-10. You must grant permission to modify for %SystemDrive%\inetpub\wwwroot to the account under which you are building the samples and the Network Service user. While building, some Web-hosted samples might attempt to copy the compiled binaries to the previously mentioned location, and if you have not set the appropriate permissions, the build will break. Alternatively, you can leave the permissions as they are and run the SDK command prompt or Visual Studio Command Prompt (2012) as Administrator, or build the samples in Visual Studio 2012, also run as Administrator.
+7. You must grant permission to modify for %SystemDrive%\inetpub\wwwroot to the account under which you are building the samples and the Network Service user. While building, some Web-hosted samples might attempt to copy the compiled binaries to the previously mentioned location, and if you have not set the appropriate permissions, the build will break. Alternatively, you can leave the permissions as they are and run the SDK command prompt or Visual Studio Command Prompt (2012) as Administrator, or build the samples in Visual Studio 2012, also run as Administrator.
 
     > [!NOTE]
-    > If this step is not completed, all IIS-hosted samples will fail while building. Ensure that you set the permissions correctly, or run both the SDK command prompt and Visual Studio Command Prompt (2012) as Administrator.
+    > If this step is not completed, all IIS-hosted samples will fail while building. Ensure that you set the permissions correctly, or run both the SDK command prompt and Visual Studio Command Prompt as Administrator.
 
-11. Create a C:\logs directory on the computer; some samples might be expecting it. Make sure that the appropriate account has write access granted to this folder. For Windows 7, Windows Vista, and Windows Server 2008 R2, this account is **Network Service**. For  Windows Server 2008, the account is NT Authority\Network Service. For Windows XP and Windows Server 2003, the account is ASPNET.
+8. Create a C:\logs directory on the computer because some samples might be expecting it. Make sure that the appropriate account has write access granted to this folder. For Windows 7, Windows Vista, and Windows Server 2008 R2, this account is **Network Service**. For  Windows Server 2008, the account is NT Authority\Network Service. For Windows XP and Windows Server 2003, the account is ASPNET.
 
-12. Run the Setupcerttool.bat file. This file is located in the  \<InstallPath>\WF_WCF_Samples\WCF\Setup\  folder.  This script will perform the following tasks:
+9. Run the [Setupcerttool.bat file](https://github.com/dotnet/samples/blob/main/framework/wcf/Setup/setupCertTool.bat). This script performs the following tasks:
 
-    - Build the FindPrivateKey tool.
+    - Builds the [FindPrivateKey tool](https://github.com/dotnet/samples/tree/main/framework/wcf/Setup/FindPrivateKey/CS).
 
-    - Create a directory called %ProgramFiles%\ServiceModelSampleTools.
+    - Creates a directory called %ProgramFiles%\ServiceModelSampleTools.
 
-    - Copy the new FindPrivateKey tool to this directory.
+    - Copies the new FindPrivateKey tool to this directory.
 
     This tool is required by samples that use certificates and are hosted in IIS.
 
     > [!NOTE]
-    > For security purposes, remember to remove the virtual directory definition and permissions granted in the setup steps above by running the batch file named Cleanupvroot.bat after you are finished with the samples.
+    > For security purposes, remember to remove the virtual directory definition and permissions granted in the setup steps above by running the batch file named [cleanupvroot.bat](https://github.com/dotnet/samples/blob/main/framework/wcf/Setup/cleanupvroot.bat) after you're finished with the samples.
 
-13. Samples that are self-hosted (not hosted in IIS) require permission to register HTTP addresses on the computer for listening. The permission for an HTTP namespace reservation comes from the user account used to run the sample. By default, administrator accounts have the permission to register any HTTP address. Non-administrator accounts must be granted permission for the HTTP namespaces used by the samples. For more information about how to configure namespace reservations, see [Configuring HTTP and HTTPS](../feature-details/configuring-http-and-https.md).
+10. Samples that are self-hosted (not hosted in IIS) require permission to register HTTP addresses on the computer for listening. The permission for an HTTP namespace reservation comes from the user account used to run the sample. By default, administrator accounts have the permission to register any HTTP address. Non-administrator accounts must be granted permission for the HTTP namespaces used by the samples. For more information about how to configure namespace reservations, see [Configuring HTTP and HTTPS](../feature-details/configuring-http-and-https.md).
 
-14. Some samples require Message Queuing. See [Installing Message Queuing (MSMQ)](installing-message-queuing-msmq.md) for installation instructions.
+11. Some samples require Message Queuing. See [Installing Message Queuing (MSMQ)](installing-message-queuing-msmq.md) for installation instructions.
 
     > [!NOTE]
     > Ensure that you start the MSMQ service before you run any samples that require Message Queuing.
 
-15. Some samples require certificates. See [Internet Information Services (IIS) Server Certificate Installation Instructions](iis-server-certificate-installation-instructions.md).
+12. Some samples require certificates. See [Internet Information Services (IIS) Server Certificate Installation Instructions](iis-server-certificate-installation-instructions.md).

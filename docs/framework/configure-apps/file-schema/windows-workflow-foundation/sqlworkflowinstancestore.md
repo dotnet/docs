@@ -2,7 +2,6 @@
 description: "Learn more about: <sqlWorkflowInstanceStore>"
 title: "<sqlWorkflowInstanceStore>"
 ms.date: "03/30/2017"
-ms.topic: "reference"
 ms.assetid: 8a4e4214-fc51-4f4d-b968-0427c37a9520
 ---
 # \<sqlWorkflowInstanceStore>

@@ -2,7 +2,7 @@
 title: How to join two collections - LINQ to XML
 description: An XSD file can establish relationships in an XML file, to enable joining of elements to create new types of elements. This article provides an example for C# and Visual Basic that joins elements and creates a new XML document.
 ms.date: 07/20/2015
-ms.assetid: 7b817ede-911a-4cff-9dd3-639c3fc228c9
+ms.topic: how-to
 dev_langs:
   - "csharp"
   - "vb"
@@ -18,7 +18,7 @@ The article [Sample XSD file: Customers and orders](sample-xsd-file-customers-or
 
 With LINQ to XML, you can take advantage of this relationship by using the `join` clause to join customer information to order information.
 
-For more detailed information about `join`, see [Join Operations (C#)](../../csharp/programming-guide/concepts/linq/join-operations.md) and [Join Operations (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/join-operations.md).
+For more detailed information about `join`, see [Join Operations (C#)](../../csharp/linq/standard-query-operators/join-operations.md) and [Join Operations (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/join-operations.md).
 > [!NOTE]
 > Joins are done using linear searches. There are no indexes to boost search performance.
 

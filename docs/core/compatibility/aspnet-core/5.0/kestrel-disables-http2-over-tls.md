@@ -1,7 +1,6 @@
 ---
 title: "Breaking change: Kestrel: HTTP/2 disabled over TLS on incompatible Windows versions"
 description: "Learn about the breaking change in ASP.NET Core 5.0 titled Kestrel: HTTP/2 disabled over TLS on incompatible Windows versions"
-author: scottaddie
 ms.author: scaddie
 ms.date: 10/01/2020
 ---
@@ -21,7 +20,7 @@ For discussion, see issue [dotnet/aspnetcore#23068](https://github.com/dotnet/as
 
 ## Version introduced
 
-ASP.NET Core 5.0 Preview 7
+ASP.NET Core 5.0
 
 ## Old behavior
 

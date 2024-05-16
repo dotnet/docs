@@ -2,7 +2,7 @@
 description: "Learn more about: Configuring Discovery in a Configuration File"
 title: "Configuring Discovery in a Configuration File"
 ms.date: "03/30/2017"
-ms.assetid: b9884c11-8011-4763-bc2c-c526b80175d0
+ms.topic: how-to
 ---
 # Configuring Discovery in a Configuration File
 
@@ -10,7 +10,7 @@ There are four major groups of configuration settings used in discovery. This to
   
 ## Behavior Configuration  
 
- Discovery uses service behaviors and endpoint behaviors. The <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior> behavior enables discovery for all of a service’s endpoints and allows you to specify announcement endpoints.  The following example shows how to add the <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior> and specify an announcement endpoint.  
+ Discovery uses service behaviors and endpoint behaviors. The <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior> behavior enables discovery for all of a service's endpoints and allows you to specify announcement endpoints.  The following example shows how to add the <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior> and specify an announcement endpoint.  
   
 ```xml  
 <behaviors>  
@@ -113,7 +113,7 @@ There are four major groups of configuration settings used in discovery. This to
       <extensions>  
          <CustomMetadata>This is custom metadata.</CustomMetadata>  
          <d:Types xmlns:d="http://schemas.xmlsoap.org/ws/2005/04/discovery" xmlns:i="http://printer.example.org/2003/imaging">i:PrintBasic</d:Types>  
-         <CustomMetadata netsted="true">  
+         <CustomMetadata nested="true">  
             <NestedMetadata>This is a nested custom metadata.</NestedMetadata>  
          </CustomMetadata>  
       </extensions>  
@@ -185,7 +185,7 @@ There are four major groups of configuration settings used in discovery. This to
   
 ## Standard Endpoint Configuration  
 
- Standard endpoints are predefined endpoints that have default values for one or more properties (address, binding, or contract) or one or more property values that cannot change. .NET 4 ships with 3 discovery related standard endpoints: <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint>, <xref:System.ServiceModel.Discovery.UdpAnnouncementEndpoint>, and <xref:System.ServiceModel.Discovery.DynamicEndpoint>.  The <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint> is a standard endpoint that is pre-configured for discovery operations over a UDP multicast binding. The <xref:System.ServiceModel.Discovery.UdpAnnouncementEndpoint> is a standard endpoint that is pre-configured to send announcement messages over a UDP binding. The <xref:System.ServiceModel.Discovery.DynamicEndpoint> is a standard endpoint that uses discovery to find the endpoint address of a discovered service dynamically at runtime.  Standard bindings are specified with an <`endpoint`> element that contains kind attribute that specified the type of standard endpoint to add. The following example shows how to add a <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint> and a <xref:System.ServiceModel.Discovery.UdpAnnouncementEndpoint>.  
+ Standard endpoints are predefined endpoints that have default values for one or more properties (address, binding, or contract) or one or more property values that cannot change. .NET 4 ships with 3 discovery related standard endpoints: <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint>, <xref:System.ServiceModel.Discovery.UdpAnnouncementEndpoint>, and <xref:System.ServiceModel.Discovery.DynamicEndpoint>.  The <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint> is a standard endpoint that is pre-configured for discovery operations over a UDP multicast binding. The <xref:System.ServiceModel.Discovery.UdpAnnouncementEndpoint> is a standard endpoint that is pre-configured to send announcement messages over a UDP binding. The <xref:System.ServiceModel.Discovery.DynamicEndpoint> is a standard endpoint that uses discovery to find the endpoint address of a discovered service dynamically at run time.  Standard bindings are specified with an <`endpoint`> element that contains kind attribute that specified the type of standard endpoint to add. The following example shows how to add a <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint> and a <xref:System.ServiceModel.Discovery.UdpAnnouncementEndpoint>.  
   
 ```xml  
 <services>  
@@ -232,7 +232,7 @@ There are four major groups of configuration settings used in discovery. This to
 </standardEndpoints>
 ```  
   
- Once you’ve added the standard endpoint configuration, reference the configuration in the <`endpoint`> element for each endpoint as shown in the following sample.  
+ Once you've added the standard endpoint configuration, reference the configuration in the <`endpoint`> element for each endpoint as shown in the following sample.  
   
 ```xml  
 <services>  
@@ -241,7 +241,7 @@ There are four major groups of configuration settings used in discovery. This to
       <endpoint kind="udpDiscoveryEndpoint" endpointConfiguration="udpDiscoveryEndpointSettings"/>  
    </service>  
    <service name="AnnouncementListener">  
-      <endpoint kind="udpAnnouncementEndpoint" endpointConfiguration="udpAnnouncementEndpointSettings" >  
+      <endpoint kind="udpAnnouncementEndpoint" endpointConfiguration="udpAnnouncementEndpointSettings" />  
    </service>  
 </services>  
 ```  
@@ -272,7 +272,7 @@ There are four major groups of configuration settings used in discovery. This to
            </standardEndpoint>  
          </dynamicEndpoint>  
    </standardEndpoints>  
-</system.ServiceModel>  
+</system.serviceModel>  
 ```  
   
  For more information about standard endpoints see [Standard Endpoints](standard-endpoints.md).

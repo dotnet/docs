@@ -2,7 +2,7 @@
 title: "Modifying Elements, Attributes, and Nodes in an XML Tree"
 description: Learn about methods and properties that you can use to modify an element, its child nodes, or its attributes.
 ms.date: 07/20/2015
-ms.assetid: 0ed22e4e-4c6b-4eb1-b0eb-06685efd8c33
+ms.topic: reference
 ---
 
 # Modify elements, attributes, and nodes in an XML tree (LINQ to XML)

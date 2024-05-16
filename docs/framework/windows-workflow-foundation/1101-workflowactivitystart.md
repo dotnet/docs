@@ -6,10 +6,10 @@ ms.assetid: 831cd386-b9b5-47a9-9690-aff6292ff348
 ---
 # 1101 - WorkflowActivityStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1101|  
 |Keywords|WFRuntime|  
 |Level|Information|  

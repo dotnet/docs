@@ -4,8 +4,6 @@ Imports System.Security.Cryptography
 Imports System.Security.Cryptography.Xml
 Imports System.Security.Cryptography.X509Certificates
 
-
-
 Module Program
 
     Sub Main(ByVal args() As String)
@@ -39,9 +37,7 @@ Module Program
 
     Sub Decrypt(ByVal Doc As XmlDocument)
         ' Check the arguments.  
-        If Doc Is Nothing Then
-            Throw New ArgumentNullException("Doc")
-        End If
+        ArgumentNullException.ThrowIfNull(Doc)
 
         ' Create a new EncryptedXml object.
         ' <snippet3>

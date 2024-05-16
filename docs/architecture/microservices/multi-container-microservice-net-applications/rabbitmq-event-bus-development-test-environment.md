@@ -5,7 +5,9 @@ ms.date: 01/13/2021
 ---
 # Implementing an event bus with RabbitMQ for the development or test environment
 
-We should start by saying that if you create your custom event bus based on RabbitMQ running in a container, as the eShopOnContainers application does, it should be used only for your development and test environments. Don't use it for your production environment, unless you are building it as a part of a production-ready service bus. A simple custom event bus might be missing many production-ready critical features that a commercial service bus has.
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
+We should start by saying that if you create your custom event bus based on [RabbitMQ](https://www.rabbitmq.com/) running in a container, as the eShopOnContainers application does, it should be used only for your development and test environments. Don't use it for your production environment, unless you are building it as a part of a production-ready service bus as described in the [Additional resources section below](rabbitmq-event-bus-development-test-environment.md#additional-resources). A simple custom event bus might be missing many production-ready critical features that a commercial service bus has.
 
 One of the event bus custom implementations in eShopOnContainers is basically a library using the RabbitMQ API. (There's another implementation based on Azure Service Bus.)
 
@@ -29,7 +31,7 @@ The RabbitMQ implementation of a sample dev/test event bus is boilerplate code. 
 
 ## Implementing a simple publish method with RabbitMQ
 
-The following code is a ***simplified*** version of an event bus implementation for RabbitMQ, to showcase the whole scenario. You don't really handle the connection this way. To see the full implementation, see the actual code in the [dotnet-architecture/eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/BuildingBlocks/EventBus/EventBusRabbitMQ/EventBusRabbitMQ.cs) repository.
+The following code is a ***simplified*** version of an event bus implementation for RabbitMQ, to showcase the whole scenario. You don't really handle the connection this way. To see the full implementation, see the actual code in the [dotnet-architecture/eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers/blob/main/src/BuildingBlocks/EventBus/EventBusRabbitMQ/EventBusRabbitMQ.cs) repository.
 
 ```csharp
 public class EventBusRabbitMQ : IEventBus, IDisposable
@@ -57,7 +59,7 @@ public class EventBusRabbitMQ : IEventBus, IDisposable
 }
 ```
 
-The [actual code](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/BuildingBlocks/EventBus/EventBusRabbitMQ/EventBusRabbitMQ.cs) of the Publish method in the eShopOnContainers application is improved by using a [Polly](https://github.com/App-vNext/Polly) retry policy, which retries the task some times in case the RabbitMQ container is not ready. This scenario can occur when docker-compose is starting the containers; for example, the RabbitMQ container might start more slowly than the other containers.
+The [actual code](https://github.com/dotnet-architecture/eShopOnContainers/blob/main/src/BuildingBlocks/EventBus/EventBusRabbitMQ/EventBusRabbitMQ.cs) of the Publish method in the eShopOnContainers application is improved by using a [Polly](https://github.com/App-vNext/Polly) retry policy, which retries the task some times in case the RabbitMQ container is not ready. This scenario can occur when docker-compose is starting the containers; for example, the RabbitMQ container might start more slowly than the other containers.
 
 As mentioned earlier, there are many possible configurations in RabbitMQ, so this code should be used only for dev/test environments.
 
@@ -102,7 +104,7 @@ Each event type has a related channel to get events from RabbitMQ. You can then 
 
 The Subscribe method accepts an IIntegrationEventHandler object, which is like a callback method in the current microservice, plus its related IntegrationEvent object. The code then adds that event handler to the list of event handlers that each integration event type can have per client microservice. If the client code has not already been subscribed to the event, the code creates a channel for the event type so it can receive events in a push style from RabbitMQ when that event is published from any other service.
 
-As mentioned above, the event bus implemented in eShopOnContainers has only and educational purpose, since it only handles the main scenarios, so it's not ready for production.
+As mentioned above, the event bus implemented in eShopOnContainers has only an educational purpose, since it only handles the main scenarios, so it's not ready for production.
 
 For production scenarios check the additional resources below, specific for RabbitMQ, and the [Implementing event-based communication between microservices](./integration-event-based-microservice-communications.md#additional-resources) section.
 
@@ -110,13 +112,19 @@ For production scenarios check the additional resources below, specific for Rabb
 
 A production-ready solution with support for RabbitMQ.
 
+- **Peregrine Connect** - Simplify your integration with efficient design, deployment, and management of apps, APIs, and workflows \
+  <https://www.peregrineconnect.com/why-peregrine/rabbitmq-integration>
+
+- **NServiceBus** - Fully-supported commercial service bus with advanced management and monitoring tooling for .NET \
+  <https://particular.net/>
+
 - **EasyNetQ** - Open Source .NET API client for RabbitMQ \
   <https://easynetq.com/>
 
-- **MassTransit** \
+- **MassTransit** - Free, open-source distributed application framework for .NET \
   <https://masstransit-project.com/>
   
-- **Rebus** - Open source .NET Service Bus
+- **Rebus** - Open source .NET Service Bus \
   <https://github.com/rebus-org/Rebus>
 
 > [!div class="step-by-step"]

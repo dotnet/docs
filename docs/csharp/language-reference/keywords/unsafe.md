@@ -1,6 +1,6 @@
 ---
 description: "unsafe keyword - C# Reference"
-title: "unsafe keyword - C# Reference"
+title: "unsafe keyword"
 ms.date: 07/20/2015
 f1_keywords:
   - "unsafe_CSharpKeyword"
@@ -11,7 +11,7 @@ ms.assetid: 7e818009-1c6e-4b9e-b769-3728a01586a0
 ---
 # unsafe (C# Reference)
 
-The `unsafe` keyword denotes an unsafe context, which is required for any operation involving pointers. For more information, see [Unsafe Code and Pointers](../../programming-guide/unsafe-code-pointers/index.md).
+The `unsafe` keyword denotes an unsafe context, which is required for any operation involving pointers. For more information, see [Unsafe Code and Pointers](../unsafe-code.md).
 
 You can use the `unsafe` modifier in the declaration of a type or a member. The entire textual extent of the type or member is therefore considered an unsafe context. For example, the following is a method declared with the `unsafe` modifier:
 
@@ -45,13 +45,11 @@ To compile unsafe code, you must specify the [**AllowUnsafeBlocks**](../compiler
 
 ## C# language specification
 
-For more information, see [Unsafe code](~/_csharplang/spec/unsafe-code.md) in the [C# Language Specification](/dotnet/csharp/language-reference/language-specification/introduction). The language specification is the definitive source for C# syntax and usage.
+For more information, see [Unsafe code](~/_csharpstandard/standard/unsafe-code.md) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C# Keywords](index.md)
-- [fixed Statement](fixed-statement.md)
-- [Unsafe Code and Pointers](../../programming-guide/unsafe-code-pointers/index.md)
-- [Fixed Size Buffers](../../programming-guide/unsafe-code-pointers/fixed-size-buffers.md)
+- [C# keywords](index.md)
+- [`fixed` statement](../statements/fixed.md)
+- [Unsafe code, pointer types, and function pointers](../unsafe-code.md)
+- [Pointer related operators](../operators/pointer-related-operators.md)

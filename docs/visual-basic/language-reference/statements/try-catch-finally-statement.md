@@ -2,13 +2,13 @@
 title: "Try...Catch...Finally statement"
 description: Learn to use exception handling with Visual Basic Try/Catch/Finally statements.
 ms.date: 12/07/2018
-f1_keywords: 
+f1_keywords:
   - "vb.Try...Catch...Finally"
   - "vb.when"
   - "vb.Finally"
   - "vb.Catch"
   - "vb.Try"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Try...Catch...Finally statements"
   - "Try statement [Visual Basic]"
   - "try-catch exception handling, Try...Catch...Finally statements"
@@ -20,6 +20,7 @@ helpviewer_keywords:
   - "Visual Basic code, handling errors while running"
   - "structured exception handling, Try...Catch...Finally statements"
 ms.assetid: d6488026-ccb3-42b8-a810-0d97b9d6472b
+no-loc: [Try, Catch, Finally]
 ---
 # Try...Catch...Finally Statement (Visual Basic)
 
@@ -102,11 +103,11 @@ The `Catch` block `exception` argument is an instance of the <xref:System.Except
 
 The properties of the `Exception` object help to identify the cause and location of an exception. For example, the <xref:System.Exception.StackTrace%2A> property lists the called methods that led to the exception, helping you find where the error occurred in the code. <xref:System.Exception.Message%2A> returns a message that describes the exception. <xref:System.Exception.HelpLink%2A> returns a link to an associated Help file. <xref:System.Exception.InnerException%2A> returns the `Exception` object that caused the current exception, or it returns `Nothing` if there is no original `Exception`.
 
-## Considerations when using a Try…Catch statement
+## Considerations when using a `Try…Catch` statement
 
 Use a `Try…Catch` statement only to signal the occurrence of unusual or unanticipated program events. Reasons for this include the following:
 
-- Catching exceptions at runtime creates additional overhead, and is likely to be slower than pre-checking to avoid exceptions.
+- Catching exceptions at run time creates additional overhead, and is likely to be slower than pre-checking to avoid exceptions.
 
 - If a `Catch` block is not handled correctly, the exception might not be reported correctly to users.
 
@@ -132,7 +133,7 @@ An `Await` expression can't be inside a `Catch` block or `Finally` block.
 
 An iterator function or `Get` accessor performs a custom iteration over a collection. An iterator uses a [Yield](yield-statement.md) statement to return each element of the collection one at a time. You call an iterator function by using a [For Each...Next Statement](for-each-next-statement.md).
 
-A `Yield` statement can be inside a `Try` block. A `Try` block that contains a `Yield` statement can have `Catch` blocks, and can have a `Finally` block. See the "Try Blocks in Visual Basic" section of [Iterators](../../programming-guide/concepts/iterators.md) for an example.
+A `Yield` statement can be inside a `Try` block. A `Try` block that contains a `Yield` statement can have `Catch` blocks, and can have a `Finally` block. For an example, see [Try Blocks](../../programming-guide/concepts/iterators.md#try-blocks).
 
 A `Yield` statement cannot be inside a `Catch` block or a `Finally` block.
 
@@ -148,13 +149,13 @@ In such a partial-trust situation, you have to put the `Process.Start` statement
 
 ## Examples
 
-### The structure of Try...Catch...Finally
+### The structure of `Try...Catch...Finally`
 
 The following example illustrates the structure of the `Try...Catch...Finally` statement.
 
-[!code-vb[VbVbalrStatements#86](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#86)]  
+[!code-vb[VbVbalrStatements#86](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#86)]
 
-### Exception in a method called from a Try block
+### Exception in a method called from a `Try` block
 
 In the following example, the `CreateException` method throws a `NullReferenceException`. The code that generates the exception is not in a `Try` block. Therefore, the `CreateException` method does not handle the exception. The `RunSample` method does handle the exception because the call to the `CreateException` method is in a `Try` block.
 
@@ -168,7 +169,7 @@ The following example shows how to use a `Catch When` statement to filter on a c
 
 [!code-vb[VbVbalrStatements#92](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#92)]
 
-### Nested Try statements
+### Nested `Try` statements
 
 The following example has a `Try…Catch` statement that is contained in a `Try` block. The inner `Catch` block throws an exception that has its `InnerException` property set to the original exception. The outer `Catch` block reports its own exception and the inner exception.
 
@@ -182,7 +183,7 @@ Uncomment the `Throw New Exception` line in the example to demonstrate exception
 
 Uncomment the `Throw New OperationCancelledException` line to demonstrate what happens when you cancel an asynchronous process. The exception is caught in the `Catch` block, and the task's `IsCanceled` property is set to `True`. However, under some conditions that don't apply to this example, `IsFaulted` is set to `True` and `IsCanceled` is set to `False`.
 
-[!code-vb[csAsyncExceptions#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/csasyncexceptions/vb/class1.vb#1)]
+:::code language="vb" source="./snippets/try-catch-finally-statement/vb/AsyncExceptionExamples.vb" ID="Snippet1":::
 
 ### Handling multiple exceptions in async methods
 
@@ -190,7 +191,7 @@ The following example illustrates exception handling where multiple tasks can re
 
 Each of the three tasks causes an exception. The `Catch` block iterates through the exceptions, which are found in the `Exception.InnerExceptions` property of the task that `Task.WhenAll` returned.
 
-[!code-vb[csAsyncExceptions#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/csasyncexceptions/vb/class1.vb#3)]
+:::code language="vb" source="./snippets/try-catch-finally-statement/vb/AsyncExceptionExamples.vb" ID="Snippet3":::
 
 ## See also
 

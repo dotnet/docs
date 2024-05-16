@@ -1,5 +1,5 @@
 ---
-title: "Floating-point numeric types - C# reference"
+title: "Floating-point numeric types"
 description: "Learn about the built-in C# floating-point types: float, double, and decimal"
 ms.date: 02/04/2021
 f1_keywords:
@@ -84,7 +84,7 @@ decimal myMoney = 3_000.5m;
 myMoney = 400.75M;
 ```
 
-The preceding example also shows the use of `_` as a *digit separator*, which is supported starting with C# 7.0. You can use the digit separator with all kinds of numeric literals.
+The preceding example also shows the use of `_` as a *digit separator*. You can use the digit separator with all kinds of numeric literals.
 
 You can also use scientific notation, that is, specify an exponent part of a real literal, as the following example shows:
 
@@ -105,15 +105,14 @@ There is only one implicit conversion between floating-point numeric types: from
 
 ## C# language specification
 
-For more information, see the following sections of the [C# language specification](~/_csharplang/spec/introduction.md):
+For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
-- [Floating-point types](~/_csharplang/spec/types.md#floating-point-types)
-- [The decimal type](~/_csharplang/spec/types.md#the-decimal-type)
-- [Real literals](~/_csharplang/spec/lexical-structure.md#real-literals)
+- [Floating-point types](~/_csharpstandard/standard/types.md#837-floating-point-types)
+- [The decimal type](~/_csharpstandard/standard/types.md#838-the-decimal-type)
+- [Real literals](~/_csharpstandard/standard/lexical-structure.md#6454-real-literals)
 
 ## See also
 
-- [C# reference](../index.md)
 - [Value types](value-types.md)
 - [Integral types](integral-numeric-types.md)
 - [Standard numeric format strings](../../../standard/base-types/standard-numeric-format-strings.md)

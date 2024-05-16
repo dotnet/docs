@@ -6,10 +6,10 @@ ms.assetid: d2e8cd7e-f7aa-476c-9857-1e04c4b52dc0
 ---
 # 1420 - ReaderQuotaExceeded
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1420|  
 |Keywords|Quota|  
 |Level|Error|  

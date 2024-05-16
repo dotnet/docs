@@ -4,7 +4,7 @@ description: Learn how to configure HTTP/HTTPS to allow WCF services and clients
 ms.date: "04/08/2019"
 helpviewer_keywords: 
   - "configuring HTTP [WCF]"
-ms.assetid: b0c29a86-bc0c-41b3-bc1e-4eb5bb5714d4
+ms.topic: how-to
 ---
 # Configuring HTTP and HTTPS
 

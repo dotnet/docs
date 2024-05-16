@@ -6,9 +6,9 @@ f1_keywords:
   - "vb.Unicode"
 helpviewer_keywords: 
   - "Unicode, external references"
-  - "Declare statement [Visual Basic], marshaling strings"
+  - "Declare statement [Visual Basic], marshalling strings"
   - "Unicode keyword [Visual Basic]"
-  - "Unicode, marshaling strings"
+  - "Unicode, marshalling strings"
 ms.assetid: 0021d5ff-3209-444e-8497-420f3e6ee075
 ---
 # Unicode (Visual Basic)

@@ -22,11 +22,11 @@ XML namespaces associate element and attribute names in an XML document with cus
   
 ```xml  
 <mybook:BOOK xmlns:mybook="http://www.contoso.com/books.dtd">  
-<bb:BOOK xmlns:bb="urn:blueyonderairlines" />
-</mybook>
+    <bb:BOOK xmlns:bb="urn:blueyonderairlines" />
+</mybook:BOOK>
 ```  
   
- To signify that an element is a part of a particular namespace, add the namespace prefix to it. For example, if a `Author` element belongs to the `mybook` namespace, it is declared as `<mybook:Author>`.  
+ To signify that an element is a part of a particular namespace, add the namespace prefix to it. For example, if an `Author` element belongs to the `mybook` namespace, it is declared as `<mybook:Author>`.  
   
 <a name="scope"></a>
 

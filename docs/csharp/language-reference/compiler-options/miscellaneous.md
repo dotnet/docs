@@ -1,6 +1,6 @@
 ---
 description: "Miscellaneous C# Compiler Options. These options provide general options to the compiler."
-title: "C# Compiler Options that don't fit other categories"
+title: "Compiler Options that don't fit other categories"
 ms.date: 03/12/2021
 f1_keywords: 
   - "cs.build.options"
@@ -11,11 +11,11 @@ helpviewer_keywords:
 ---
 # Miscellaneous C# Compiler Options
 
-The following options control miscellaneous compiler behavior. The new MSBuild syntax is shown in **Bold**. The older *csc.exe* syntax is shown in `code style`.
+The following options control miscellaneous compiler behavior. The new MSBuild syntax is shown in **Bold**. The older *csc.exe* command-line syntax is shown in `code style`.
 
-- **ResponseFiles** / `-@`: Read response file for more options.
+- **ResponseFiles** / <code>@*CustomOpts.RSP*</code> : Read the specified response file for more options.
 - **NoLogo** / `-nologo` : Suppress compiler copyright message.
-- **NoConfig** / `-noconfig`: Don't auto include *CSC.RSP* file.
+- **NoConfig** / `-noconfig` : Don't auto include *CSC.RSP* file.
 
 ## ResponseFiles
 

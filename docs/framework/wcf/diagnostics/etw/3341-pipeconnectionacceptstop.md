@@ -6,10 +6,10 @@ ms.assetid: 85d20b28-53c2-4206-90bc-8564a03dcb49
 ---
 # 3341 - PipeConnectionAcceptStop
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3341|  
 |Keywords|Channel|  
 |Level|Verbose|  

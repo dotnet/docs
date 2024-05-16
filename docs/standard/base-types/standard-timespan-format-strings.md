@@ -3,10 +3,10 @@ title: "Standard TimeSpan format strings"
 description: Review standard TimeSpan format strings, which use a single format specifier to define the text representation of a TimeSpan value in .NET.
 ms.date: "03/30/2017"
 ms.topic: reference
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "format specifiers, standard time interval"
   - "format strings"
   - "standard time interval format strings"
@@ -17,11 +17,10 @@ helpviewer_keywords:
   - "formatting [.NET], time"
   - "standard TimeSpan format strings"
   - "formatting [.NET], time intervals"
-ms.assetid: 9f6c95eb-63ae-4dcc-9c32-f81985c75794
 ---
 # Standard TimeSpan format strings
 
-A standard <xref:System.TimeSpan> format string uses a single format specifier to define the text representation of a <xref:System.TimeSpan> value that results from a formatting operation. Any format string that contains more than one character, including white space, is interpreted as a custom <xref:System.TimeSpan> format string. For more information, see [Custom TimeSpan format strings](custom-timespan-format-strings.md) .  
+A standard <xref:System.TimeSpan> format string uses a single format specifier to define the text representation of a <xref:System.TimeSpan> value that results from a formatting operation. Any format string that contains more than one character, including white space, is interpreted as a custom <xref:System.TimeSpan> format string. For more information, see [Custom TimeSpan format strings](custom-timespan-format-strings.md).
   
  The string representations of <xref:System.TimeSpan> values are produced by calls to the overloads of the <xref:System.TimeSpan.ToString%2A?displayProperty=nameWithType> method, as well as by methods that support composite formatting, such as <xref:System.String.Format%2A?displayProperty=nameWithType>. For more information, see [Formatting Types](formatting-types.md) and [Composite Formatting](composite-formatting.md). The following example illustrates the use of standard format strings in formatting operations.  
   
@@ -43,11 +42,11 @@ The following table lists the standard time interval format specifiers.
 
 ## The Constant ("c") Format Specifier  
 
- The "c" format specifier returns the string representation of a <xref:System.TimeSpan> value in the following form:  
+The "c" format specifier returns the string representation of a <xref:System.TimeSpan> value in the following form:  
   
- [-][*d*.]*hh*:*mm*:*ss*[.*fffffff*]  
+`[-][d.]hh:mm:ss[.fffffff]`  
   
- Elements in square brackets ([ and ]) are optional. The period (.) and colon (:) are literal symbols. The following table describes the remaining elements.  
+Elements in square brackets ([ and ]) are optional. The period (.) and colon (:) are literal symbols. The following table describes the remaining elements.  
   
 |Element|Description|  
 |-------------|-----------------|  
@@ -70,19 +69,19 @@ The following table lists the standard time interval format specifiers.
 
 ## The General Short ("g") Format Specifier  
 
- The "g" <xref:System.TimeSpan> format specifier returns the string representation of a <xref:System.TimeSpan> value in a compact form by including only the elements that are necessary. It has the following form:  
+The "g" <xref:System.TimeSpan> format specifier returns the string representation of a <xref:System.TimeSpan> value in a compact form by including only the elements that are necessary. It has the following form:  
   
- [-][*d*:]*h*:*mm*:*ss*[.*FFFFFFF*]  
+`[-][d:]h:mm:ss[.FFFFFFF]`  
   
- Elements in square brackets ([ and ]) are optional. The colon (:) is a literal symbol. The following table describes the remaining elements.  
+Elements in square brackets ([ and ]) are optional. The colon (:) is a literal symbol. The following table describes the remaining elements.  
   
 |Element|Description|  
 |-------------|-----------------|  
 |*-*|An optional negative sign, which indicates a negative time interval.|  
 |*d*|The optional number of days, with no leading zeros.|  
 |*h*|The number of hours, which ranges from "0" to "23", with no leading zeros.|  
-|*mm*|The number of minutes, which ranges from "00" to "59"..|  
-|*ss*|The number of seconds, which ranges from "00" to "59"..|  
+|*mm*|The number of minutes, which ranges from "00" to "59".|  
+|*ss*|The number of seconds, which ranges from "00" to "59".|  
 |*.*|The fractional seconds separator. It is equivalent to the specified culture's <xref:System.Globalization.NumberFormatInfo.NumberDecimalSeparator%2A> property without user overrides.|  
 |*FFFFFFF*|The fractional seconds. As few digits as possible are displayed.|  
   
@@ -95,11 +94,11 @@ The following table lists the standard time interval format specifiers.
 
 ## The General Long ("G") Format Specifier  
 
- The "G" <xref:System.TimeSpan> format specifier returns the string representation of a <xref:System.TimeSpan> value in a long form that always includes both days and fractional seconds. The string that results from the "G" standard format specifier has the following form:  
+The "G" <xref:System.TimeSpan> format specifier returns the string representation of a <xref:System.TimeSpan> value in a long form that always includes both days and fractional seconds. The string that results from the "G" standard format specifier has the following form:  
   
- [-]*d*:*hh*:*mm*:*ss*.*fffffff*  
+`[-]d:hh:mm:ss.fffffff`  
   
- Elements in square brackets ([ and ]) are optional. The colon (:) is a literal symbol. The following table describes the remaining elements.  
+Elements in square brackets ([ and ]) are optional. The colon (:) is a literal symbol. The following table describes the remaining elements.  
   
 |Element|Description|  
 |-------------|-----------------|  

@@ -16,7 +16,7 @@ The <xref:System.Data.Linq.DataContext> is the main conduit by which you connect
 > [!IMPORTANT]
 > Maintaining a secure connection is of the highest importance. For more information, see [Security in LINQ to SQL](security-in-linq-to-sql.md).  
   
-## Example  
+## Example 1
 
  In the following example, the <xref:System.Data.Linq.DataContext> is used to connect to the Northwind sample database and to retrieve rows of customers whose city is London.  
   
@@ -25,7 +25,7 @@ The <xref:System.Data.Linq.DataContext> is the main conduit by which you connect
   
  Each database table is represented as a `Table` collection available by way of the <xref:System.Data.Linq.DataContext.GetTable%2A> method, by using the entity class to identify it.  
   
-## Example  
+## Example 2  
 
  Best practice is to declare a strongly typed <xref:System.Data.Linq.DataContext> instead of relying on the basic <xref:System.Data.Linq.DataContext> class and the <xref:System.Data.Linq.DataContext.GetTable%2A> method. A strongly typed <xref:System.Data.Linq.DataContext> declares all `Table` collections as members of the context, as in the following example.  
   

@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 57a82bcf-de03-4f1c-a0c8-9a76e989d542
+ms.topic: how-to
 ---
 
 # Functional construction (LINQ to XML)

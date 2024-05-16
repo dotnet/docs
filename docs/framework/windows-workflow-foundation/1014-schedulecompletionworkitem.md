@@ -6,10 +6,10 @@ ms.assetid: 84203735-478d-42d8-a320-c175dbddcb38
 ---
 # 1014 - ScheduleCompletionWorkItem
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1014|  
 |Keywords|WFRuntime|  
 |Level|Verbose|  

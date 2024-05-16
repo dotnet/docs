@@ -6,7 +6,7 @@ ms.assetid: a5ae8ced-61fe-4c10-bb8a-95630e50f603
 ---
 # How to: Query for Sentences that Contain a Specified Set of Words (LINQ) (Visual Basic)
 
-This example shows how to find sentences in a text file that contain matches for each of a specified set of words. Although the array of search terms is hard-coded in this example, it could also be populated dynamically at runtime. In this example, the query returns the sentences that contain the words "Historically," "data," and "integrated."
+This example shows how to find sentences in a text file that contain matches for each of a specified set of words. Although the array of search terms is hard-coded in this example, it could also be populated dynamically at run time. In this example, the query returns the sentences that contain the words "Historically," "data," and "integrated."
 
 ## Example
 
@@ -28,7 +28,7 @@ Class FindSentences
         ' Split the text block into an array of sentences.
         Dim sentences As String() = text.Split(New Char() {".", "?", "!"})
 
-        ' Define the search terms. This list could also be dynamically populated at runtime
+        ' Define the search terms. This list could also be dynamically populated at run time
         Dim wordsToMatch As String() = {"Historically", "data", "integrated"}
 
         ' Find sentences that contain all the terms in the wordsToMatch array

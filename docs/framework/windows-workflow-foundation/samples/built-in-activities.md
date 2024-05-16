@@ -4,7 +4,7 @@ title: "Built-in Activities"
 ms.date: "03/30/2017"
 ms.assetid: 31e1b8c2-7f74-458a-b2e2-fddc5b10eac1
 ---
-# Built-in Activities
+# Built-in activities
 
 This section contains samples that demonstrate built-in Windows Workflow Foundation (WF) activities.
 

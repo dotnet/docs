@@ -6,10 +6,10 @@ ms.assetid: 1de37c02-e14b-42ad-a23a-9ee8edc354b5
 ---
 # 3380 - SocketAsyncWriteStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3380|  
 |Keywords|TCP|  
 |Level|Verbose|  

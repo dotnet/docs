@@ -6,7 +6,7 @@ ms.date: 02/14/2020
 ---
 # dotnet nuget locals
 
-**This article applies to:** ✔️ .NET Core 2.x SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -41,9 +41,7 @@ The `dotnet nuget locals` command clears or lists local NuGet resources in the h
 
   Forces the application to run using an invariant, English-based culture.
 
-- **`-h|--help`**
-
-  Prints out a short help for the command.
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 - **`-c|--clear`**
 
@@ -58,7 +56,7 @@ The `dotnet nuget locals` command clears or lists local NuGet resources in the h
 - Displays the paths of all the local cache directories (http-cache directory, global-packages cache directory, and temporary cache directory):
 
   ```dotnetcli
-  dotnet nuget locals all –l
+  dotnet nuget locals all -l
   ```
 
 - Displays the path for the local http-cache directory:

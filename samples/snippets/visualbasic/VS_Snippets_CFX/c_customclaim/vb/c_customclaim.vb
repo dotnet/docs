@@ -6,7 +6,6 @@ Imports System.Security.Permissions
 
 '</snippet1>
 
-<assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 
 '<snippet2>
 <DataContract(Name:="MyResource", [Namespace]:="http://example.org/resources")> _

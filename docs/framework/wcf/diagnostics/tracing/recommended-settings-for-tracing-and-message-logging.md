@@ -96,7 +96,7 @@ This topic describes recommended tracing and message logging settings for differ
   
 ## Using WMI to Modify Settings  
 
- You can use WMI to change configuration settings at runtime (by enabling the `wmiProviderEnabled` attribute in the configuration, as demonstrated in the previously configuration example). For example, you can use WMI within the CIM Studio to change the trace source levels from Warning to Information at runtime. You should be aware that the performance cost of live debugging in this way can be very high. For more information about using WMI, see the [Using Windows Management Instrumentation for Diagnostics](../wmi/index.md) topic.  
+ You can use WMI to change configuration settings at run time (by enabling the `wmiProviderEnabled` attribute in the configuration, as demonstrated in the previously configuration example). For example, you can use WMI within the CIM Studio to change the trace source levels from Warning to Information at run time. You should be aware that the performance cost of live debugging in this way can be very high. For more information about using WMI, see the [Using Windows Management Instrumentation for Diagnostics](../wmi/index.md) topic.  
   
 ## Enable Correlated Events in ASP.NET Tracing  
 

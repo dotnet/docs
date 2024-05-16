@@ -6,10 +6,10 @@ ms.assetid: 2bd8b4a1-b210-4c07-8156-f19392318c08
 ---
 # 114 - WorkflowInstanceRecordWithId
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|114|  
 |Keywords|HealthMonitoring, WFTracking|  
 |Level|Information|  

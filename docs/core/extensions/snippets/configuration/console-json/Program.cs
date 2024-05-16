@@ -1,44 +1,32 @@
-﻿using System;
-using System.Threading.Tasks;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
+using ConsoleJson.Example;
 
-namespace ConsoleJson.Example
-{
-    class Program
-    {
-        static async Task Main(string[] args)
-        {
-            using IHost host = CreateHostBuilder(args).Build();
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
 
-            // Application code should start here.
+builder.Configuration.Sources.Clear();
 
-            await host.RunAsync();
-        }
+IHostEnvironment env = builder.Environment;
 
-        static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
-                .ConfigureAppConfiguration((hostingContext, configuration) =>
-                {
-                    configuration.Sources.Clear();
+builder.Configuration
+    .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+    .AddJsonFile($"appsettings.{env.EnvironmentName}.json", true, true);
 
-                    IHostEnvironment env = hostingContext.HostingEnvironment;
+TransientFaultHandlingOptions options = new();
+builder.Configuration.GetSection(nameof(TransientFaultHandlingOptions))
+    .Bind(options);
 
-                    configuration
-                        .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
-                        .AddJsonFile($"appsettings.{env.EnvironmentName}.json", true, true);
+Console.WriteLine($"TransientFaultHandlingOptions.Enabled={options.Enabled}");
+Console.WriteLine($"TransientFaultHandlingOptions.AutoRetryDelay={options.AutoRetryDelay}");
 
-                    IConfigurationRoot configurationRoot = configuration.Build();
+using IHost host = builder.Build();
 
-                    TransientFaultHandlingOptions options = new();
-                    configurationRoot.GetSection(nameof(TransientFaultHandlingOptions))
-                                     .Bind(options);
+// Application code should start here.
 
-                    Console.WriteLine($"TransientFaultHandlingOptions.Enabled={options.Enabled}");
-                    Console.WriteLine($"TransientFaultHandlingOptions.AutoRetryDelay={options.AutoRetryDelay}");
-                });
-        // Sample output:
-        //    TransientFaultHandlingOptions.Enabled=True
-        //    TransientFaultHandlingOptions.AutoRetryDelay=00:00:07
-    }
-}
+await host.RunAsync();
+
+// <Output>
+// Sample output:
+//    TransientFaultHandlingOptions.Enabled=True
+//    TransientFaultHandlingOptions.AutoRetryDelay=00:00:07
+// </Output>

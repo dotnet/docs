@@ -6,10 +6,10 @@ ms.assetid: 81fc404c-6341-4fa0-a58e-c32875471c12
 ---
 # 57404 - HandledExceptionWarning
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|57404|  
 |Keywords|Infrastructure|  
 |Level|Warning|  

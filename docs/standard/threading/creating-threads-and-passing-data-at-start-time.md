@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "threading [.NET], creating"
   - "threading [.NET], passing data to threads"
   - "threading [.NET], retrieving data from threads"
-ms.assetid: 52b32222-e185-4f42-91a7-eaca65c0ab6d
+ms.topic: how-to
 ---
 # Creating threads and passing data at start time
 
@@ -57,5 +57,5 @@ Neither <xref:System.Threading.ThreadStart> nor <xref:System.Threading.Parameter
 - <xref:System.Threading.ThreadStart>
 - <xref:System.Threading.ParameterizedThreadStart>
 - <xref:System.Threading.Thread.Start%2A?displayProperty=nameWithType>
-- [Threading](index.md)
+- [Threading](managed-threading-basics.md)
 - [Using Threads and Threading](using-threads-and-threading.md)

@@ -6,10 +6,10 @@ ms.assetid: a7152c0e-10e5-4446-b52d-60838fb99748
 ---
 # 3375 - TextMessageDecodingStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3375|  
 |Keywords|Channel|  
 |Level|Verbose|  

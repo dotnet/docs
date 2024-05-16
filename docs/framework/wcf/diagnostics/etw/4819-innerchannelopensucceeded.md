@@ -6,10 +6,10 @@ ms.assetid: 1ea7f6ac-a7d8-4ae6-89c7-4fdf99665b4b
 ---
 # 4819 - InnerChannelOpenSucceeded
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4819|  
 |Keywords|Discovery|  
 |Level|Information|  

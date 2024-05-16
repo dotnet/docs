@@ -44,7 +44,7 @@ The following list defines some terms related to functional transformations.
 higher-order (first-class) function \
 A function that can be treated as a programmatic object. For example, a higher-order function can be passed to or returned from other functions. In C# and Visual Basic, delegates and lambda expressions are language features that support higher-order functions. To write a higher-order function, you declare one or more arguments to take delegates, and you often use lambda expressions when calling it. Many of the standard query operators are higher-order functions.
 
-For more information, see [Standard Query Operators Overview (C#)](../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md) and [Standard Query Operators Overview (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md).
+For more information, see [Standard Query Operators Overview (C#)](../../csharp/linq/standard-query-operators/index.md) and [Standard Query Operators Overview (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md).
 
 lambda expression \
 Essentially, an inline anonymous function that can be used wherever a delegate type is expected. This is a simplified definition of lambda expressions, but it's adequate for the purposes of this tutorial.
@@ -57,7 +57,7 @@ A structured set of data, usually of a uniform type. To be compatible with LINQ,
 tuple (anonymous types) \
 A mathematical concept, a tuple is a finite sequence of objects, each of a specific type. A tuple is also known as an ordered list. Anonymous types are a language implementation of this concept, which enable an unnamed class type to be declared and an object of that type to be instantiated at the same time.
 
-For more information, see [Anonymous Types (C# Programming Guide)](../../csharp/programming-guide/classes-and-structs/anonymous-types.md) and [Anonymous Types (Visual Basic)](../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md).
+For more information, see [Anonymous Types (C# Programming Guide)](../../csharp/fundamentals/types/anonymous-types.md) and [Anonymous Types (Visual Basic)](../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md).
 
 type inference (implicit typing) \
 The ability of a compiler to determine the type of a variable in the absence of an explicit type declaration.
@@ -67,7 +67,7 @@ For more information, see [Implicitly typed local variables (C# Programming Guid
 deferred execution and lazy evaluation \
 The delaying of evaluation of an expression until its resolved value is actually required. Deferred execution is supported in collections.
 
-For more C# information, see [Introduction to LINQ Queries (C#)](../../csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md) and [Deferred Execution and Lazy Evaluation in LINQ to XML (C#)](./deferred-execution-lazy-evaluation.md).
+For more C# information, see [Introduction to LINQ Queries (C#)](../../csharp/linq/get-started/introduction-to-linq-queries.md) and [Deferred Execution and Lazy Evaluation in LINQ to XML (C#)](./deferred-execution-lazy-evaluation.md).
 
 For more Visual Basic information, see [Basic Query Operations (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/basic-query-operations.md) and [Deferred Execution and Lazy Evaluation in LINQ to XML (Visual Basic)](./deferred-execution-lazy-evaluation.md).
 

@@ -17,7 +17,7 @@ Snapshot isolation enhances concurrency for OLTP applications.
   
  The term "snapshot" reflects the fact that all queries in the transaction see the same version, or snapshot, of the database, based on the state of the database at the moment in time when the transaction begins. No locks are acquired on the underlying data rows or data pages in a snapshot transaction, which permits other transactions to execute without being blocked by a prior uncompleted transaction. Transactions that modify data do not block transactions that read data, and transactions that read data do not block transactions that write data, as they normally would under the default READ COMMITTED isolation level in SQL Server. This non-blocking behavior also significantly reduces the likelihood of deadlocks for complex transactions.  
   
- Snapshot isolation uses an optimistic concurrency model. If a snapshot transaction attempts to commit modifications to data that has changed since the transaction began, the transaction will roll back and an error will be raised. You can avoid this by using UPDLOCK hints for SELECT statements that access data to be modified. See "Locking Hints" in SQL Server Books Online for more information.  
+ Snapshot isolation uses an optimistic concurrency model. If a snapshot transaction attempts to commit modifications to data that has changed since the transaction began, the transaction will roll back and an error will be raised. You can avoid this by using UPDLOCK hints for SELECT statements that access data to be modified. For more information, see [Hints (Transact-SQL)](/sql/t-sql/queries/hints-transact-sql-table).
   
  Snapshot isolation must be enabled by setting the ALLOW_SNAPSHOT_ISOLATION ON database option before it is used in transactions. This activates the mechanism for storing row versions in the temporary database (**tempdb**). You must enable snapshot isolation in each database that uses it with the Transact-SQL ALTER DATABASE statement. In this respect, snapshot isolation differs from the traditional isolation levels of READ COMMITTED, REPEATABLE READ, SERIALIZABLE, and READ UNCOMMITTED, which require no configuration. The following statements activate snapshot isolation and replace the default READ COMMITTED behavior with SNAPSHOT:  
   
@@ -141,8 +141,8 @@ SELECT * FROM TestSnapshotUpdate WITH (UPDLOCK)
   WHERE PriKey BETWEEN 1 AND 3  
 ```  
   
- Using the UPDLOCK lock hint blocks any rows attempting to update the rows before the first transaction completes. This guarantees that the selected rows have no conflicts when they are updated later in the transaction. See "Locking Hints" in SQL Server Books Online.  
-  
+ Using the UPDLOCK lock hint blocks any rows attempting to update the rows before the first transaction completes. This guarantees that the selected rows have no conflicts when they are updated later in the transaction. For more information, see [Hints (Transact-SQL)](/sql/t-sql/queries/hints-transact-sql-table).
+
  If your application has many conflicts, snapshot isolation may not be the best choice. Hints should only be used when really needed. Your application should not be designed so that it constantly relies on lock hints for its operation.  
   
 ## See also

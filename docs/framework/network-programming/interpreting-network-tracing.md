@@ -4,7 +4,7 @@ description: Find out how to use tracing to capture calls your application makes
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "TraceMode attribute"
-  - "hexidecimal data, network tracing output"
+  - "hexadecimal data, network tracing output"
   - "network tracing, analyzing"
   - "protocolonly"
   - "text, network tracing output"

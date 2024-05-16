@@ -6,10 +6,10 @@ ms.assetid: 7d710875-fb77-4463-978b-bc86d59d84cd
 ---
 # 209 - MessageInspectorBeforeSendInvoked
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|209|  
 |Keywords|Troubleshooting, ServiceModel|  
 |Level|Information|  

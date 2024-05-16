@@ -72,5 +72,6 @@ Requests that the common language runtime (CLR) reduce memory use by specifying 
   
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
 - [Runtime Settings Schema](index.md)
 - [Configuration File Schema](../index.md)

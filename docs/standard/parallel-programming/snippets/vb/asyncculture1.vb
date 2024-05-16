@@ -7,7 +7,7 @@ Imports System.Globalization
 Imports System.Threading
 
 Module Example
-    Public Sub Main1()
+    Public Sub Main()
         Dim values() As Decimal = {163025412.32D, 18905365.59D}
         Dim formatString As String = "C2"
         Dim formatDelegate As Func(Of String) = Function()

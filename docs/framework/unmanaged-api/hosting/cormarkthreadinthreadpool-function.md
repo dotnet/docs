@@ -18,7 +18,7 @@ topic_type:
 ---
 # CorMarkThreadInThreadPool Function
 
-Marks the currently executing thread-pool thread for the execution of managed code. Starting with the .NET Framework version 2.0, this function has no effect. It is not required, and can be removed from your code. This function is deprecated in the .NET Framework 4.  
+Marks the currently executing thread-pool thread for the execution of managed code. Starting with .NET Framework version 2.0, this function has no effect. It is not required, and can be removed from your code. This function is deprecated in the .NET Framework 4.  
   
 ## Syntax  
   

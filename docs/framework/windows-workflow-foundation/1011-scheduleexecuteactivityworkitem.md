@@ -6,10 +6,10 @@ ms.assetid: e503ae46-ad6b-4fcb-8c0e-146d59a8eff1
 ---
 # 1011 - ScheduleExecuteActivityWorkItem
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1011|  
 |Keywords|WFRuntime|  
 |Level|Verbose|  

@@ -43,8 +43,8 @@ Module CustomNumericFormatting
         ' Displays 00123
 
         value = 1.2
-        Console.Writeline(value.ToString("0.00", CultureInfo.InvariantCulture))
-        Console.Writeline(String.Format(CultureInfo.InvariantCulture,
+        Console.WriteLine(value.ToString("0.00", CultureInfo.InvariantCulture))
+        Console.WriteLine(String.Format(CultureInfo.InvariantCulture,
                           "{0:0.00}", value))
         ' Displays 1.20
         Console.WriteLine(value.ToString("00.00", CultureInfo.InvariantCulture))
@@ -66,7 +66,7 @@ Module CustomNumericFormatting
         Console.WriteLine(value.ToString("0,0", CultureInfo.InvariantCulture))
         Console.WriteLine(String.Format(CultureInfo.InvariantCulture,
                                         "{0:0,0}", value))
-        ' Displays 1,234,567,890      
+        ' Displays 1,234,567,890
         Dim elGR As CultureInfo = CultureInfo.CreateSpecificCulture("el-GR")
         Console.WriteLine(value.ToString("0,0", elGR))
         Console.WriteLine(String.Format(elGR, "{0:0,0}", value))
@@ -76,13 +76,13 @@ Module CustomNumericFormatting
         Console.WriteLine(value.ToString("0,0.0", CultureInfo.InvariantCulture))
         Console.WriteLine(String.Format(CultureInfo.InvariantCulture,
                                         "{0:0,0.0}", value))
-        ' Displays 1,234,567,890.1  
+        ' Displays 1,234,567,890.1
 
         value = 1234.567890
         Console.WriteLine(value.ToString("0,0.00", CultureInfo.InvariantCulture))
         Console.WriteLine(String.Format(CultureInfo.InvariantCulture,
                                         "{0:0,0.00}", value))
-        ' Displays 1,234.57 
+        ' Displays 1,234.57
         ' </Snippet1>
     End Sub
 
@@ -114,7 +114,7 @@ Module CustomNumericFormatting
         Console.WriteLine(value.ToString("(###) ###-####"))
         Console.WriteLine(String.Format("{0:(###) ###-####}", value))
         ' Displays (123) 456-7890
-        ' </Snippet2>  
+        ' </Snippet2>
     End Sub
 
     Private Sub ShowDecimalPoint()
@@ -122,8 +122,8 @@ Module CustomNumericFormatting
         Dim value As Double
 
         value = 1.2
-        Console.Writeline(value.ToString("0.00", CultureInfo.InvariantCulture))
-        Console.Writeline(String.Format(CultureInfo.InvariantCulture,
+        Console.WriteLine(value.ToString("0.00", CultureInfo.InvariantCulture))
+        Console.WriteLine(String.Format(CultureInfo.InvariantCulture,
                                         "{0:0.00}", value))
         ' Displays 1.20
 
@@ -149,7 +149,7 @@ Module CustomNumericFormatting
         Console.WriteLine(String.Format(CultureInfo.InvariantCulture,
                           "{0:0.###E+0}", value))
         ' Displays 8.6E+4
-        ' </Snippet3>         
+        ' </Snippet3>
     End Sub
 
     Private Sub ShowThousandSpecifier
@@ -158,12 +158,12 @@ Module CustomNumericFormatting
         Console.WriteLine(value.ToString("#,#", CultureInfo.InvariantCulture))
         Console.WriteLine(String.Format(CultureInfo.InvariantCulture,
                                         "{0:#,#}", value))
-        ' Displays 1,234,567,890      
+        ' Displays 1,234,567,890
 
         Console.WriteLine(value.ToString("#,##0,,", CultureInfo.InvariantCulture))
         Console.WriteLine(String.Format(CultureInfo.InvariantCulture,
                                         "{0:#,##0,,}", value))
-        ' Displays 1,235      	
+        ' Displays 1,235
         ' </Snippet4>
     End Sub
 
@@ -172,12 +172,12 @@ Module CustomNumericFormatting
         Dim value As Double = 1234567890
         Console.WriteLine(value.ToString("#,,", CultureInfo.InvariantCulture))
         Console.WriteLine(String.Format(CultureInfo.InvariantCulture, "{0:#,,}", value))
-        ' Displays 1235   
+        ' Displays 1235
 
         Console.WriteLine(value.ToString("#,,,", CultureInfo.InvariantCulture))
         Console.WriteLine(String.Format(CultureInfo.InvariantCulture,
                                         "{0:#,,,}", value))
-        ' Displays 1  
+        ' Displays 1
 
         Console.WriteLine(value.ToString("#,##0,,", CultureInfo.InvariantCulture))
         Console.WriteLine(String.Format(CultureInfo.InvariantCulture,
@@ -192,7 +192,7 @@ Module CustomNumericFormatting
         Console.WriteLine(value.ToString("#0.##%", CultureInfo.InvariantCulture))
         Console.WriteLine(String.Format(CultureInfo.InvariantCulture,
                                         "{0:#0.##%}", value))
-        ' Displays 8.6%      
+        ' Displays 8.6%
         ' </Snippet6>
     End Sub
 
@@ -246,7 +246,7 @@ Module CustomNumericFormatting
         Console.WriteLine(value.ToString(perMilleFmt, CultureInfo.InvariantCulture))
         Console.WriteLine(String.Format(CultureInfo.InvariantCulture,
                                         "{0:" + perMilleFmt + "}", value))
-        ' Displays 3.54 ‰      
+        ' Displays 3.54 ‰
         ' </Snippet9>
     End Sub
 End Module

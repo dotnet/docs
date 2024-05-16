@@ -62,5 +62,5 @@ FtpWebResponse response = (FtpWebResponse)request.GetResponse();
 ## See also
 
 - [Security in Network Programming](security-in-network-programming.md)
-- [Network Programming in the .NET Framework](index.md)
+- [Network programming in .NET](../../fundamentals/networking/overview.md)
 - [Certificate Selection and Validation](certificate-selection-and-validation.md)

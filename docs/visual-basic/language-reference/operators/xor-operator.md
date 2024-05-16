@@ -75,7 +75,7 @@ result = expression1 Xor expression2
 
  The `Xor` operator can be *overloaded*, which means that a class or structure can redefine its behavior when an operand has the type of that class or structure. If your code uses this operator on such a class or structure, make sure you understand its redefined behavior. For more information, see [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md).  
   
-## Example  
+## Example 1
 
  The following example uses the `Xor` operator to perform logical exclusion (exclusive logical disjunction) on two expressions. The result is a `Boolean` value that represents whether exactly one of the expressions is `True`.  
   
@@ -83,7 +83,7 @@ result = expression1 Xor expression2
   
  The previous example produces results of `False`, `True`, and `False`, respectively.  
   
-## Example  
+## Example 2  
 
  The following example uses the `Xor` operator to perform logical exclusion (exclusive logical disjunction) on the individual bits of two numeric expressions. The bit in the result pattern is set if exactly one of the corresponding bits in the operands is set to 1.  
   

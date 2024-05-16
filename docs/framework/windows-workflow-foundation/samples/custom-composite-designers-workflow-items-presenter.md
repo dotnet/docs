@@ -11,7 +11,7 @@ ms.assetid: 70055c4b-1173-47a3-be80-b5bce6f59e9a
 
 The <xref:System.Activities.Presentation.WorkflowItemsPresenter?displayProperty=nameWithType> is a key type in the WF designer programming model that allows for the editing of a collection of contained elements. This sample shows how to build an activity designer that surfaces such an editable collection.
 
-This sample demonstrates:
+The [WorkflowItemsPresenter sample](https://github.com/dotnet/samples/tree/main/framework/windows-workflow-foundation/basic/CustomActivities/CustomActivityDesigners/WorkflowItemsPresenter/cs) demonstrates:
 
 - Creating a custom activity designer with a <xref:System.Activities.Presentation.WorkflowItemsPresenter?displayProperty=nameWithType>.
 
@@ -21,13 +21,13 @@ This sample demonstrates:
 
 ## Set up, build, and run the sample
 
-1. Open the **UsingWorkflowItemsPresenter.sln** sample solution for C# or for Visual Basic in Visual Studio 2010.
+1. Open the **UsingWorkflowItemsPresenter.sln** sample solution for C# or for Visual Basic in Visual Studio.
 
 2. Build and run the solution.
 
    A rehosted workflow designer application opens, and you can drag activities onto the canvas.
 
-## Sample Highlights
+## Sample highlights
 
 The code for this sample shows the following:
 
@@ -146,15 +146,6 @@ The code for this sample shows the following:
     </Grid>
   </sad: ActivityDesigner>
   ```
-
-> [!IMPORTANT]
-> The samples may already be installed on your machine. Check for the following (default) directory before continuing.
->
-> `<InstallDrive>:\WF_WCF_Samples`
->
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
->
-> `<InstallDrive>:\WF_WCF_Samples\WF\Basic\CustomActivities\CustomActivityDesigners\WorkflowItemsPresenter`
 
 ## See also
 

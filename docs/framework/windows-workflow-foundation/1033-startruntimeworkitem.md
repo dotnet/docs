@@ -6,10 +6,10 @@ ms.assetid: 172b5346-9f3b-46ae-bc06-39872022376a
 ---
 # 1033 - StartRuntimeWorkItem
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1033|  
 |Keywords|WFRuntime|  
 |Level|Verbose|  

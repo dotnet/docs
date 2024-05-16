@@ -31,7 +31,7 @@ namespace RuneSamples
 
                 TextElementEnumerator enumerator = StringInfo.GetTextElementEnumerator(input);
 
-                int textElementCount = 0;
+                int textElementCount = 1;
                 while (enumerator.MoveNext())
                 {
                     builder.Append(enumerator.Current);

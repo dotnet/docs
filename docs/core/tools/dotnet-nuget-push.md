@@ -6,7 +6,7 @@ ms.date: 02/14/2020
 ---
 # dotnet nuget push
 
-**This article applies to:** ✔️ .NET Core 2.x SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -26,9 +26,20 @@ dotnet nuget push -h|--help
 
 ## Description
 
-The `dotnet nuget push` command pushes a package to the server and publishes it. The push command uses server and credential details found in the system's NuGet config file or chain of config files. For more information on config files, see [Configuring NuGet Behavior](/nuget/consume-packages/configuring-nuget-behavior). NuGet's default configuration is obtained by loading *%AppData%\NuGet\NuGet.config* (Windows) or *$HOME/.local/share* (Linux/macOS), then loading any *nuget.config* or *.nuget\nuget.config* starting from the root of drive and ending in the current directory.
+The `dotnet nuget push` command pushes a package to the server and publishes it. The push command uses server and credential details found in the system's NuGet config file or chain of config files. For more information on config files, see [Configuring NuGet Behavior](/nuget/consume-packages/configuring-nuget-behavior). NuGet's default configuration is obtained by loading *%AppData%\NuGet\NuGet.config* (Windows) or *$HOME/.nuget/NuGet/NuGet.Config* (Linux/macOS), then loading any *nuget.config* or *.nuget\nuget.config* starting from the root of drive and ending in the current directory.
 
 The command pushes an existing package. It doesn't create a package. To create a package, use [`dotnet pack`](dotnet-pack.md).
+
+### Hierarchical folder structure
+
+This command can store packages in a hierarchical folder structure, which is recommended to optimize performance. It stores packages in a hierarchical folder structure when publishing to a local folder (feed), like `nuget add` does, if there already is at least one package in the feed that is in a hierarchical folder structure. If the feed has a hierarchical folder structured package already in it, `dotnet nuget push` respects that structure. So, if you want to publish to a local feed using the .NET CLI instead of the NuGet CLI:
+
+* Before you publish the first package, go to your global packages folder, at *%userprofile%.nuget\packages*, and select the root folder of a package id. It can be any package that is not part of a framework, like .NET standard or ASP.NET.
+* Copy the selected package folder into the root folder of the local feed.
+* Use `dotnet nuget push` to publish your package to the local feed.
+* You can now delete the folder you previously copied in, and you can freely use `dotnet nuget push` to publish to your local feed.
+
+Alternatively, use the NuGet CLI for the first package, then you can use `dotnet nuget push` for the rest. For more information, see [Local feeds](/nuget/hosting-packages/local-feeds).  
 
 ## Arguments
 
@@ -46,13 +57,9 @@ The command pushes an existing package. It doesn't create a package. To create a
 
   Forces the application to run using an invariant, English-based culture.
 
-- **`-h|--help`**
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
-  Prints out a short help for the command.
-
-- **`--interactive`**
-
-  Allows the command to block and requires manual action for operations like authentication. Option available since .NET Core 2.2 SDK.
+[!INCLUDE [interactive](../../../includes/cli-interactive-3-0.md)]
 
 - **`-k|--api-key <API_KEY>`**
 
@@ -64,8 +71,7 @@ The command pushes an existing package. It doesn't create a package. To create a
 
 - **`--no-service-endpoint`**
 
-  Doesn't append "api/v2/package" to the source URL. Option available since .NET Core 2.1 SDK.
-
+  Doesn't append "api/v2/package" to the source URL.
 - **`-s|--source <SOURCE>`**
 
   Specifies the server URL. NuGet identifies a UNC or local folder source and simply copies the file there instead of pushing it using HTTP.
@@ -74,7 +80,7 @@ The command pushes an existing package. It doesn't create a package. To create a
 
 - **`--skip-duplicate`**
 
-  When pushing multiple packages to an HTTP(S) server, treats any 409 Conflict response as a warning so that the push can continue. Available since .NET Core 3.1 SDK.
+  When pushing multiple packages to an HTTP(S) server, treats any 409 Conflict response as a warning so that other pushes can continue.
 
 - **`-sk|--symbol-api-key <API_KEY>`**
 
@@ -86,7 +92,7 @@ The command pushes an existing package. It doesn't create a package. To create a
 
 - **`-t|--timeout <TIMEOUT>`**
 
-  Specifies the timeout for pushing to a server in seconds. Defaults to 300 seconds (5 minutes). Specifying 0 (zero seconds) applies the default value.
+  Specifies the timeout for pushing to a server in seconds. Defaults to 300 seconds (5 minutes). Specifying 0 applies the default value.
 
 ## Examples
 
@@ -102,7 +108,7 @@ The command pushes an existing package. It doesn't create a package. To create a
   dotnet nuget push foo.nupkg -k 4003d786-cc37-4004-bfdf-c4f3e8ef9b3a -s https://api.nuget.org/v3/index.json
   ```
   
-  * Push *foo.nupkg* to the custom push source `https://customsource`, specifying an API key:
+- Push *foo.nupkg* to the custom push source `https://customsource`, specifying an API key:
 
   ```dotnetcli
   dotnet nuget push foo.nupkg -k 4003d786-cc37-4004-bfdf-c4f3e8ef9b3a -s https://customsource/
@@ -151,5 +157,5 @@ The command pushes an existing package. It doesn't create a package. To create a
   ```dotnetcli
   dotnet nuget push "*.nupkg" -s c:\mydir
   ```
-
-  This command doesn't store packages in a hierarchical folder structure, which is recommended to optimize performance. For more information, see [Local feeds](/nuget/hosting-packages/local-feeds).  
+  
+- For pushing to Azure Artifacts, [see Azure Artifacts' push documentation](/azure/devops/artifacts/nuget/dotnet-exe#publish-packages).

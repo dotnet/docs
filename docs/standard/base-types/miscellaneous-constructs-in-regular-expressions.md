@@ -50,7 +50,7 @@ Regular expressions in .NET include three miscellaneous language constructs. One
 |`(D\w+)`|Match a capital "D" followed by one or more word characters. This is the first capture group.|  
 |`(?ixn)`|From this point on, make comparisons case-insensitive, make only explicit captures, and ignore white space in the regular expression pattern.|  
 |`\s`|Match a white-space character.|  
-|`(d\w+)`|Match an uppercase or lowercase "d" followed by one or more word characters. This group is not captured because the `n` (explicit capture) option was enabled..|  
+|`(d\w+)`|Match an uppercase or lowercase "d" followed by one or more word characters. This group is not captured because the `n` (explicit capture) option was enabled.|  
 |`\b`|Match a word boundary.|  
   
 ## Inline Comment  
@@ -75,7 +75,7 @@ Regular expressions in .NET include three miscellaneous language constructs. One
   
 ## End-of-Line Comment  
 
- A number sign (`#`)marks an x-mode comment, which starts at the unescaped # character at the end of the regular expression pattern and continues until the end of the line. To use this construct, you must either enable the `x` option (through inline options) or supply the <xref:System.Text.RegularExpressions.RegexOptions.IgnorePatternWhitespace?displayProperty=nameWithType> value to the `option` parameter when instantiating the <xref:System.Text.RegularExpressions.Regex> object or calling a static <xref:System.Text.RegularExpressions.Regex> method.  
+ A number sign (`#`) marks an x-mode comment, which starts at the unescaped # character at the end of the regular expression pattern and continues until the end of the line. To use this construct, you must either enable the `x` option (through inline options) or supply the <xref:System.Text.RegularExpressions.RegexOptions.IgnorePatternWhitespace?displayProperty=nameWithType> value to the `option` parameter when instantiating the <xref:System.Text.RegularExpressions.Regex> object or calling a static <xref:System.Text.RegularExpressions.Regex> method.  
   
  The following example illustrates the end-of-line comment construct. It determines whether a string is a composite format string that includes at least one format item. The following table describes the constructs in the regular expression pattern:  
   

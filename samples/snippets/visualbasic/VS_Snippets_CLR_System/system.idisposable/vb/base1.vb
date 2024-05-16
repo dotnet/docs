@@ -1,15 +1,14 @@
-﻿' Visual Basic .NET Document
-Option Strict On
-
-' <Snippet3>
-Imports Microsoft.Win32.SafeHandles
+﻿Imports Microsoft.Win32.SafeHandles
 Imports System.Runtime.InteropServices
 
-Class BaseClass : Implements IDisposable
-    ' Flag: Has Dispose already been called?
-    Dim disposed As Boolean = False
+Public Class BaseClassWithSafeHandle
+    Implements IDisposable
+
+    ' To detect redundant calls
+    Private _disposedValue As Boolean
+
     ' Instantiate a SafeHandle instance.
-    Dim handle As SafeHandle = New SafeFileHandle(IntPtr.Zero, True)
+    Private _safeHandle As SafeHandle = New SafeFileHandle(IntPtr.Zero, True)
 
     ' Public implementation of Dispose pattern callable by consumers.
     Public Sub Dispose() _
@@ -19,16 +18,15 @@ Class BaseClass : Implements IDisposable
     End Sub
 
     ' Protected implementation of Dispose pattern.
-    Protected Overridable Sub Dispose(disposing As Boolean)
-        If disposed Then Return
+    Protected Overridable Sub Dispose(ByVal disposing As Boolean)
+        If Not _disposedValue Then
 
-        If disposing Then
-            handle.Dispose()
-            ' Free any other managed objects here.
-            '
+            If disposing Then
+                _safeHandle?.Dispose()
+                _safeHandle = Nothing
+            End If
+
+            _disposedValue = True
         End If
-
-        disposed = True
     End Sub
 End Class
-' </Snippet3>

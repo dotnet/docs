@@ -5,6 +5,8 @@ ms.date: 01/30/2020
 ---
 # Implement resilient applications
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 *Your microservice and cloud-based applications must embrace the partial failures that will certainly occur eventually. You must design your application to be resilient to those partial failures.*
 
 Resiliency is the ability to recover from failures and continue to function. It isn't about avoiding failures but accepting the fact that failures will happen and responding to them in a way that avoids downtime or data loss. The goal of resiliency is to return the application to a fully functioning state after a failure.
@@ -21,7 +23,7 @@ The many individual components of your application should also incorporate healt
 > The Polly library is still used to add resilience to database connections, specially while starting up the services.
 
 >[!WARNING]
-> All code samples in this section were valid before using Linkerd and are not updated to reflect the current actual code. So they make sense in the context of this section.
+> All code samples and images in this section were valid before using Linkerd and are not updated to reflect the current actual code. So they make sense in the context of this section.
 
 >[!div class="step-by-step"]
 >[Previous](../microservice-ddd-cqrs-patterns/microservice-application-layer-implementation-web-api.md)

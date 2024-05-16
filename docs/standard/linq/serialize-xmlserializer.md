@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 2e0a0bbc-c548-4fe2-8741-be5a9ccd0cbb
+ms.topic: how-to
 ---
 
 # How to serialize using XmlSerializer (LINQ to XML)

@@ -2,7 +2,7 @@
 description: "Learn more about: Pausing and Resuming a Workflow"
 title: "Pausing and Resuming a Workflow"
 ms.date: "03/30/2017"
-ms.assetid: 11f38339-79c7-4295-b610-24a7223bbf6d
+ms.topic: "how-to"
 ---
 # Pausing and Resuming a Workflow
 

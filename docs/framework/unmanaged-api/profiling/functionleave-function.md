@@ -21,7 +21,7 @@ topic_type:
 Notifies the profiler that a function is about to return to the caller.  
   
 > [!NOTE]
-> The `FunctionLeave` function is deprecated in the .NET Framework 2.0. It will continue to work, but will incur a performance penalty. Use the [FunctionLeave2](functionleave2-function.md) function instead.  
+> The `FunctionLeave` function is deprecated in .NET Framework 2.0. It will continue to work, but will incur a performance penalty. Use the [FunctionLeave2](functionleave2-function.md) function instead.  
   
 ## Syntax  
   

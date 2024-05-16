@@ -33,5 +33,5 @@ Although calling unmanaged DLL functions is nearly identical to calling other ma
  [Consuming Unmanaged DLL Functions](consuming-unmanaged-dll-functions.md)  
  Describes how to call unmanaged DLL functions using platform invoke.  
   
- [Marshaling Data with Platform Invoke](marshaling-data-with-platform-invoke.md)  
+ [Marshalling Data with Platform Invoke](marshalling-data-with-platform-invoke.md)  
  Describes how to declare method parameters and pass arguments to functions exported by unmanaged libraries.

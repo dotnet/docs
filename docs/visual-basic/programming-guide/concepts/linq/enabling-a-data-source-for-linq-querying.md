@@ -4,7 +4,7 @@ title: "Enabling a Data Source for LINQ Querying2"
 ms.date: 07/20/2015
 ms.assetid: c412f0cf-ff0e-4993-ab3d-1b49e23f00f8
 ---
-# Enabling a Data Source for LINQ Querying
+# Enabling a Data Source for LINQ Querying (Visual Basic)
 
 There are various ways to extend LINQ to enable any data source to be queried in the LINQ pattern. The data source might be a data structure, a Web service, a file system, or a database, to name some. The LINQ pattern makes it easy for clients to query a data source for which LINQ querying is enabled, because the syntax and pattern of the query does not change. The ways in which LINQ can be extended to these data sources include the following:
 

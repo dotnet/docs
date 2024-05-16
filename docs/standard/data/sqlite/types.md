@@ -13,6 +13,7 @@ SQLite only has four primitive data types: INTEGER, REAL, TEXT, and BLOB. APIs t
 | Byte           | INTEGER |                                                               |
 | Byte[]         | BLOB    |                                                               |
 | Char           | TEXT    | UTF-8                                                         |
+| DateOnly       | TEXT    | yyyy-MM-dd                                                    |
 | DateTime       | TEXT    | yyyy-MM-dd HH:mm:ss.FFFFFFF                                   |
 | DateTimeOffset | TEXT    | yyyy-MM-dd HH:mm:ss.FFFFFFFzzz                                |
 | Decimal        | TEXT    | `0.0###########################` format. REAL would be lossy. |
@@ -24,6 +25,7 @@ SQLite only has four primitive data types: INTEGER, REAL, TEXT, and BLOB. APIs t
 | SByte          | INTEGER |                                                               |
 | Single         | REAL    |                                                               |
 | String         | TEXT    | UTF-8                                                         |
+| TimeOnly       | TEXT    | HH:mm:ss.fffffff                                              |
 | TimeSpan       | TEXT    | d.hh:mm:ss.fffffff                                            |
 | UInt16         | INTEGER |                                                               |
 | UInt32         | INTEGER |                                                               |
@@ -36,9 +38,11 @@ Some .NET types can be read from alternative SQLite types. Parameters can also b
 | .NET           | SQLite  | Remarks          |
 | -------------- | ------- | ---------------- |
 | Char           | INTEGER | UTF-16           |
+| DateOnly       | REAL    | Julian day value |
 | DateTime       | REAL    | Julian day value |
 | DateTimeOffset | REAL    | Julian day value |
 | Guid           | BLOB    |                  |
+| TimeOnly       | REAL    | In days          |
 | TimeSpan       | REAL    | In days          |
 
 For example, the following query reads a TimeSpan value from a REAL column in the result set.

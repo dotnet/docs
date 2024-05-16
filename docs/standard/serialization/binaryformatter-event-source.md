@@ -4,16 +4,17 @@ description: Learn how to use the BinaryFormatter event source to log when seria
 ms.date: 12/03/2020
 ms.author: levib
 author: GrabYourPitchforks
+ms.topic: reference
 ---
 # BinaryFormatter event source
 
-Starting with .NET 5.0, <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> includes a built-in <xref:System.Diagnostics.Tracing.EventSource> that gives you visibility into when an object serialization or deserialization is occurring. Apps can use <xref:System.Diagnostics.Tracing.EventListener>-derived types to listen for these notifications and log them.
+Starting with .NET 5, <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> includes a built-in <xref:System.Diagnostics.Tracing.EventSource> that gives you visibility into when an object serialization or deserialization is occurring. Apps can use <xref:System.Diagnostics.Tracing.EventListener>-derived types to listen for these notifications and log them.
 
 This functionality is not a substitute for a <xref:System.Runtime.Serialization.SerializationBinder> or an <xref:System.Runtime.Serialization.ISerializationSurrogate> and can't be used to modify the data being serialized or deserialized. Rather, this eventing system is intended to provide insight into the types being serialized or deserialized. It can also be used to detect unintended calls into the `BinaryFormatter` infrastructure, such as calls originating from third-party library code.
 
 ## Description of events
 
-The `BinaryFormatter` event source has the well-known name `System.Runtime.Serialization.Formatters.Binary.BinaryFormatterEventSource`. Listeners may subscribe to 6 events.
+The `BinaryFormatter` event source has the well-known name `System.Runtime.Serialization.Formatters.Binary.BinaryFormatterEventSource`. Listeners can subscribe to six events.
 
 ### SerializationStart event (id = `10`)
 
@@ -74,10 +75,10 @@ For more information, see <xref:System.Diagnostics.Tracing.EventKeywords?display
 
 The following code:
 
-- creates an `EventListener`-derived type that writes to `System.Console`,
-- subscribes that listener to `BinaryFormatter`-produced notifications,
-- serializes and deserializes a simple object graph using `BinaryFormatter`, and
-- analyzes the events that have been raised.
+* creates an `EventListener`-derived type that writes to `System.Console`,
+* subscribes that listener to `BinaryFormatter`-produced notifications,
+* serializes and deserializes a simple object graph using `BinaryFormatter`, and
+* analyzes the events that have been raised.
 
 :::code language="csharp" source="snippets/binaryformatter-event-source/csharp/Program.cs":::
 

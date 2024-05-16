@@ -45,13 +45,13 @@ An interface that has a covariant type parameter enables its methods to return m
 
 A covariant delegate can be assigned another delegate of the same type, but with a more derived generic type parameter.
 
-## Example
+## Example 1
 
 The following example shows how to declare, extend, and implement a covariant generic interface. It also shows how to use implicit conversion for classes that implement a covariant interface.
 
 [!code-vb[vbVarianceKeywords#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/vbvariancekeywords/vb/module1.vb#3)]
 
-## Example
+## Example 2
 
 The following example shows how to declare, instantiate, and invoke a covariant generic delegate. It also shows how you can use implicit conversion for delegate types.
 

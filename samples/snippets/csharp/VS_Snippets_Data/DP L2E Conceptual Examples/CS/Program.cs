@@ -72,7 +72,7 @@ namespace L2E_ConceptualExamplesCS
             //*** Query results examples ***//
             //QueryResults1();
 
-            //*** Canoncial Function Mapping***//
+            //*** Canonical Function Mapping***//
             // FunctionMapping();
             // FunctionMapping2();  // Not used in docs.
             // FunctionMappingWorkAround();
@@ -273,7 +273,7 @@ namespace L2E_ConceptualExamplesCS
                 ObjectQuery<SalesOrderHeader> sales = context.SalesOrderHeaders;
 
                 //Throws a NotSupportedException
-                /* var orders = from c in edm.Cusomters
+                /* var orders = from c in edm.Customers
               join c2 in edm.Orders
            on c.Region == c2.ShipRegion
               where c.Region == null

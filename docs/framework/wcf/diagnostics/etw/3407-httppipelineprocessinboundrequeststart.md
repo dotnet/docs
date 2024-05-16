@@ -6,10 +6,10 @@ ms.assetid: f9cc34e8-f4e1-43c8-823f-6186ee5e676f
 ---
 # 3407 - HttpPipelineProcessInboundRequestStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3407|  
 |Keywords|HTTP|  
 |Level|Verbose|  

@@ -30,7 +30,7 @@ namespace Examples.AdvancedProgramming.AsynchronousOperations
             // Do any additional work that can be done here.
             try
             {
-                // EndGetHostByName blocks until the process completes.
+                // EndGetHostEntry blocks until the process completes.
                 IPHostEntry host = Dns.EndGetHostEntry(result);
                 string[] aliases = host.Aliases;
                 IPAddress[] addresses = host.AddressList;

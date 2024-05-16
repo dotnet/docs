@@ -7,8 +7,8 @@ namespace ca1031
     // Creates two violations of the rule.
     public class GenericExceptionsCaught
     {
-        FileStream inStream;
-        FileStream outStream;
+        FileStream? inStream;
+        FileStream? outStream;
 
         public GenericExceptionsCaught(string inFile, string outFile)
         {
@@ -34,7 +34,7 @@ namespace ca1031
 
     public class GenericExceptionsCaughtFixed
     {
-        FileStream inStream;
+        FileStream? inStream;
         FileStream outStream;
 
         public GenericExceptionsCaughtFixed(string inFile, string outFile)

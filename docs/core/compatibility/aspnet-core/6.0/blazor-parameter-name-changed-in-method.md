@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: Blazor: Parameter name changed in RequestImageFileAsync method"
 description: "Learn about the breaking change in ASP.NET Core 6.0 titled Blazor: Parameter name changed in RequestImageFileAsync method"
-author: scottaddie
+no-loc: [ Blazor ]
 ms.author: scaddie
 ms.date: 02/09/2021
 ---
@@ -11,7 +11,7 @@ The `RequestImageFileAsync` method's `maxWith` parameter was renamed from `maxWi
 
 ## Version introduced
 
-6.0 Preview 1
+ASP.NET Core 6.0
 
 ## Old behavior
 

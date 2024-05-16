@@ -1,13 +1,12 @@
 ---
 title: "Breaking change: Blazor: Target framework of NuGet packages changed"
 description: "Learn about the breaking change in ASP.NET Core 5.0 titled Blazor: Target framework of NuGet packages changed"
-author: scottaddie
 ms.author: scaddie
 ms.date: 10/01/2020
 ---
 # Blazor: Target framework of NuGet packages changed
 
-Blazor 3.2 WebAssembly projects were compiled to target .NET Standard 2.1 (`<TargetFramework>netstandard2.1</TargetFramework>`). In ASP.NET Core 5.0, both Blazor Server and Blazor WebAssembly projects target .NET 5.0 (`<TargetFramework>net5.0</TargetFramework>`). To better align with the target framework change, the following Blazor packages no longer target .NET Standard 2.1:
+Blazor 3.2 WebAssembly projects were compiled to target .NET Standard 2.1 (`<TargetFramework>netstandard2.1</TargetFramework>`). In ASP.NET Core 5.0, both Blazor Server and Blazor WebAssembly projects target .NET 5 (`<TargetFramework>net5.0</TargetFramework>`). To better align with the target framework change, the following Blazor packages no longer target .NET Standard 2.1:
 
 * [Microsoft.AspNetCore.Components](https://www.nuget.org/packages/Microsoft.AspNetCore.Components)
 * [Microsoft.AspNetCore.Components.Authorization](https://www.nuget.org/packages/Microsoft.AspNetCore.Components.Authorization)
@@ -39,7 +38,7 @@ The change was made to better align with .NET target framework requirements.
 
 ## Recommended action
 
-Blazor 3.2 WebAssembly projects should target .NET 5.0 as part of updating their package references to 5.x.x. Libraries that reference one of these packages can either target .NET 5.0 or multi-target depending on their requirements.
+Blazor 3.2 WebAssembly projects should target .NET 5 as part of updating their package references to 5.x.x. Libraries that reference one of these packages can either target .NET 5 or multi-target depending on their requirements.
 
 ## Affected APIs
 

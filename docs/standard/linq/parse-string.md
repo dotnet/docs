@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 81e5686c-9658-42d8-a7e3-b11be0a2c98b
+ms.topic: how-to
 ---
 
 # How to parse a string (LINQ to XML)

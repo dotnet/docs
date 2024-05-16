@@ -1,6 +1,6 @@
 ---
 description: "virtual - C# Reference"
-title: "virtual - C# Reference"
+title: "virtual keyword"
 ms.date: 07/20/2015
 f1_keywords: 
   - "virtual_CSharpKeyword"
@@ -42,7 +42,7 @@ Virtual properties behave like virtual methods, except for the differences in de
 
 In this example, the `Shape` class contains the two coordinates `x`, `y`, and the `Area()` virtual method. Different shape classes such as `Circle`, `Cylinder`, and `Sphere` inherit the `Shape` class, and the surface area is calculated for each figure. Each derived class has its own override implementation of `Area()`.
 
-Notice that the inherited classes `Circle`, `Sphere`, and `Cylinder` all use constructors that initialize the base class, as shown in the following declaration.
+Notice that the inherited classes `Circle`, `Cylinder`, and `Sphere` all use constructors that initialize the base class, as shown in the following declaration.
 
 ```csharp
 public Cylinder(double r, double h): base(r, h) {}
@@ -58,7 +58,7 @@ The following program calculates and displays the appropriate area for each figu
 
 ## See also
 
-- [Polymorphism](../../programming-guide/classes-and-structs/polymorphism.md)
+- [Polymorphism](../../fundamentals/object-oriented/polymorphism.md)
 - [abstract](abstract.md)
 - [override](override.md)
 - [new (modifier)](new-modifier.md)

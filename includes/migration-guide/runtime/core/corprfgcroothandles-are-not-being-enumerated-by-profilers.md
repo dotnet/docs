@@ -2,7 +2,7 @@
 
 #### Details
 
-In the .NET Framework v4.5.1, the profiling API <code>RootReferences2()</code> is incorrectly never returning <code>COR_PRF_GC_ROOT_HANDLE</code> (they are returned as <code>COR_PRF_GC_ROOT_OTHER</code> instead). This issue is fixed beginning in the .NET Framework 4.6.
+In the .NET Framework v4.5.1, the profiling API `RootReferences2()` is incorrectly never returning `COR_PRF_GC_ROOT_HANDLE` (they are returned as `COR_PRF_GC_ROOT_OTHER` instead). This issue is fixed beginning in the .NET Framework 4.6.
 
 #### Suggestion
 

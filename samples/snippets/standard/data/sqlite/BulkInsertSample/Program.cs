@@ -24,7 +24,7 @@ namespace BulkInsertSample
             var stopwatch = Stopwatch.StartNew();
 
             // There is no special API for inserting data in bulk. For the best performance,
-            // follow this pattern of using a transaction and re-using the same parameterzed
+            // follow this pattern of using a transaction and re-using the same parameterized
             // command.
             #region snippet_BulkInsert
             using (var transaction = connection.BeginTransaction())

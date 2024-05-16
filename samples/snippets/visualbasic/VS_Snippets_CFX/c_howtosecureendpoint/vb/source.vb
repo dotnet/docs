@@ -4,7 +4,6 @@ Imports System.ServiceModel
 Imports System.ServiceModel.Description
 Imports System.Security.Permissions
 
-<Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 Namespace Microsoft.Security.Samples
     Public Class Test
         Shared Sub Main()

@@ -3,6 +3,8 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 
+namespace Example.Iterations;
+
 class CustomData
 {
    public long CreationTime;
@@ -10,7 +12,7 @@ class CustomData
    public int ThreadNum;
 }
 
-public class Example
+public class IterationTwo
 {
    public static void Main()
    {

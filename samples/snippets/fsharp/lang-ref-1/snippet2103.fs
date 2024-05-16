@@ -1,1 +1,1 @@
-let col2 = enum<Color>(3)
+let col2 = enum<Color> (3)

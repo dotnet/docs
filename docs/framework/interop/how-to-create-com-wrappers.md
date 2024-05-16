@@ -9,13 +9,13 @@ ms.assetid: bdf89bea-1623-45ee-a57b-cf7c90395efa
 ---
 # How to: Create COM Wrappers
 
-You can create Component Object Model (COM) wrappers by using Visual Studio 2005 features or the .NET Framework tools Tlbimp.exe and Regasm.exe. Both methods generate two types of COM wrappers:
+You can create Component Object Model (COM) wrappers by using Visual Studio features or the .NET Framework tools Tlbimp.exe and Regasm.exe. Both methods generate two types of COM wrappers:
 
 - A [Runtime Callable Wrapper](../../standard/native-interop/runtime-callable-wrapper.md) from a type library to run a COM object in managed code.
 
 - A [COM Callable Wrapper](../../standard/native-interop/com-callable-wrapper.md) with the required registry settings to run a managed object in a native application.
 
-In Visual Studio 2005, you can add the COM wrapper as a reference to your project.
+In Visual Studio, you can add the COM wrapper as a reference to your project.
 
 ## Wrap COM Objects in a Managed Application
 
@@ -56,7 +56,7 @@ You can now write code to access the COM object. You can begin by declaring the 
   
 4. Select the **Register for COM interop** check box.  
   
- When you build the project, the assembly is automatically registered for COM interop. If you are building a native application in Visual Studio 2005, you can use the assembly by clicking **Add Reference** on the **Project** menu.  
+ When you build the project, the assembly is automatically registered for COM interop. If you are building a native application in Visual Studio, you can use the assembly by clicking **Add Reference** on the **Project** menu.  
   
 ### To create a COM callable wrapper using .NET Framework tools  
   

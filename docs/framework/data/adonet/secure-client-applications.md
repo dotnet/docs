@@ -28,16 +28,14 @@ Applications typically consist of many parts that must all be protected from vul
  Describes how to use the <xref:System.Text.RegularExpressions.Regex> class to check the validity of user input.  
   
 ## Windows Applications  
-
- In the past, Windows applications generally ran with full permissions. The .NET Framework provides the infrastructure to restrict code executing in a Windows application by using code access security (CAS). However, CAS alone is not enough to protect your application.  
   
- [Windows Forms Security](/dotnet/desktop/winforms/windows-forms-security)  
+ [Windows Forms Security](/dotnet/desktop/winforms/windows-forms-security)\
  Discusses how to secure Windows Forms applications and provides links to related topics.  
   
- [Windows Forms and Unmanaged Applications](/dotnet/desktop/winforms/advanced/windows-forms-and-unmanaged-applications)  
+ [Windows Forms and Unmanaged Applications](/dotnet/desktop/winforms/advanced/windows-forms-and-unmanaged-applications)\
  Describes how to interact with unmanaged applications in a Windows Forms application.  
   
- [ClickOnce Deployment for Windows Forms](/dotnet/desktop/winforms/clickonce-deployment-for-windows-forms)  
+ [ClickOnce Deployment for Windows Forms](/dotnet/desktop/winforms/clickonce-deployment-for-windows-forms)\
  Describes how to use `ClickOnce` deployment in a Windows Forms application and discusses the security implications.  
   
 ## ASP.NET and XML Web Services  
@@ -63,7 +61,7 @@ Applications typically consist of many parts that must all be protected from vul
 |--------------|-----------------|  
 |[Configuration of Remote Applications](/previous-versions/dotnet/netframework-4.0/b8tysty8(v=vs.100))|Discusses how to configure remoting applications in order to avoid common problems.|  
 |[Security in Remoting](/previous-versions/dotnet/netframework-4.0/9hwst9th(v=vs.100))|Describes authentication and encryption as well as additional security topics relevant to remoting.|  
-|[Security and Remoting Considerations](../../misc/security-and-remoting-considerations.md)|Describes security issues with protected objects and application domain crossing.|  
+|[Security and Remoting Considerations](/previous-versions/dotnet/framework/code-access-security/security-and-remoting-considerations)|Describes security issues with protected objects and application domain crossing.|  
   
 ## See also
 

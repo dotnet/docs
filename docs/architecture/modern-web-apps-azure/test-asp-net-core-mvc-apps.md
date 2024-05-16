@@ -3,15 +3,17 @@ title: Test ASP.NET Core MVC apps
 description: Architect Modern Web Applications with ASP.NET Core and Azure | Test ASP.NET Core MVC Apps
 author: ardalis
 ms.author: wiwagn
-ms.date: 12/01/2020
+ms.date: 12/12/2021
 ---
 
 # Test ASP.NET Core MVC apps
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 > *"If you don't like unit testing your product, most likely your customers won't like to test it, either."*
  > \_- Anonymous-
 
-Software of any complexity can fail in unexpected ways in response to changes. Thus, testing after making changes is required for all but the most trivial (or least critical) applications. Manual testing is the slowest, least reliable, most expensive way to test software. Unfortunately, if applications aren't designed to be testable, it can be the only means available. Applications written to follow the architectural principles laid out in [chapter 4](architectural-principles.md) should be unit testable. ASP.NET Core applications support automated integration and functional testing.
+Software of any complexity can fail in unexpected ways in response to changes. Thus, testing after making changes is required for all but the most trivial (or least critical) applications. Manual testing is the slowest, least reliable, most expensive way to test software. Unfortunately, if applications aren't designed to be testable, it can be the only means of testing available. Applications written to follow the architectural principles laid out in [chapter 4](architectural-principles.md) should be largely unit testable. ASP.NET Core applications support automated integration and functional testing.
 
 ## Kinds of automated tests
 
@@ -109,10 +111,10 @@ Sometimes you'll need to refactor your code in order to unit test it. Frequently
 [HttpGet("[controller]/pic/{id}")]
 public IActionResult GetImage(int id)
 {
-    var contentRoot = _env.ContentRootPath + "//Pics";
-    var path = Path.Combine(contentRoot, id + ".png");
-    Byte[] b = System.IO.File.ReadAllBytes(path);
-    return File(b, "image/png");
+  var contentRoot = _env.ContentRootPath + "//Pics";
+  var path = Path.Combine(contentRoot, id + ".png");
+  Byte[] b = System.IO.File.ReadAllBytes(path);
+  return File(b, "image/png");
 }
 ```
 
@@ -124,17 +126,17 @@ If you can't unit test the file system behavior directly, and you can't test the
 [HttpGet("[controller]/pic/{id}")]
 public IActionResult GetImage(int id)
 {
-    byte[] imageBytes;
-    try
-    {
-        imageBytes = _imageService.GetImageBytesById(id);
-    }
-    catch (CatalogImageMissingException ex)
-    {
-        _logger.LogWarning($"No image found for id: {id}");
-        return NotFound();
-    }
-    return File(imageBytes, "image/png");
+  byte[] imageBytes;
+  try
+  {
+    imageBytes = _imageService.GetImageBytesById(id);
+  }
+  catch (CatalogImageMissingException ex)
+  {
+    _logger.LogWarning($"No image found for id: {id}");
+    return NotFound();
+  }
+  return File(imageBytes, "image/png");
 }
 ```
 
@@ -150,23 +152,31 @@ Most of the integration tests in your ASP.NET Core apps should be testing servic
 
 For ASP.NET Core applications, the `TestServer` class makes functional tests fairly easy to write. You configure a `TestServer` using a `WebHostBuilder` (or `HostBuilder`) directly (as you normally do for your application), or with the `WebApplicationFactory` type (available since version 2.1). Try to match your test host to your production host as closely as possible, so your tests exercise behavior similar to what the app will do in production. The `WebApplicationFactory` class is helpful for configuring the TestServer's ContentRoot, which is used by ASP.NET Core to locate static resource like Views.
 
-You can create simple functional tests by creating a test class that implements `IClassFixture\<WebApplicationFactory\<TEntry>>`, where `TEntry` is your web application's `Startup` class. With this interface in place, your test fixture can create a client using the factory's `CreateClient` method:
+You can create simple functional tests by creating a test class that implements `IClassFixture<WebApplicationFactory<TEntryPoint>>`, where `TEntryPoint` is your web application's `Startup` class. With this interface in place, your test fixture can create a client using the factory's `CreateClient` method:
 
 ```csharp
-public class BasicWebTests : IClassFixture<WebApplicationFactory<Startup>>
+public class BasicWebTests : IClassFixture<WebApplicationFactory<Program>>
 {
-    protected readonly HttpClient _client;
+  protected readonly HttpClient _client;
 
-    public BasicWebTests(WebApplicationFactory<Startup> factory)
-    {
-        _client = factory.CreateClient();
-    }
+  public BasicWebTests(WebApplicationFactory<Program> factory)
+  {
+    _client = factory.CreateClient();
+  }
 
-    // write tests that use _client
+  // write tests that use _client
 }
 ```
 
-Frequently, you'll want to perform some additional configuration of your site before each test runs, such as configuring the application to use an in-memory data store and then seeding the application with test data. To achieve this functionality, create your own subclass of `WebApplicationFactory\<TEntry>` and override its `ConfigureWebHost` method. The example below is from the eShopOnWeb FunctionalTests project and is used as part of the tests on the main web application.
+> [!TIP]
+> If you're using minimal API configuration in your _Program.cs_ file, by default the class will be declared internal and won't be accessible from the test project. You can choose any other instance class in your web project instead, or add this to your _Program.cs_ file:
+>
+> ```csharp
+> // Make the implicit Program class public so test projects can access it
+> public partial class Program { }
+> ```
+
+Frequently, you'll want to perform some additional configuration of your site before each test runs, such as configuring the application to use an in-memory data store and then seeding the application with test data. To achieve this functionality, create your own subclass of `WebApplicationFactory<TEntryPoint>` and override its `ConfigureWebHost` method. The example below is from the eShopOnWeb FunctionalTests project and is used as part of the tests on the main web application.
 
 ```csharp
 using Microsoft.AspNetCore.Hosting;
@@ -180,73 +190,71 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using System;
 
-namespace Microsoft.eShopWeb.FunctionalTests.Web
+namespace Microsoft.eShopWeb.FunctionalTests.Web;
+public class WebTestFixture : WebApplicationFactory<Startup>
 {
-    public class WebTestFixture : WebApplicationFactory<Startup>
+  protected override void ConfigureWebHost(IWebHostBuilder builder)
+  {
+    builder.UseEnvironment("Testing");
+
+    builder.ConfigureServices(services =>
     {
-        protected override void ConfigureWebHost(IWebHostBuilder builder)
+      services.AddEntityFrameworkInMemoryDatabase();
+
+      // Create a new service provider.
+      var provider = services
+            .AddEntityFrameworkInMemoryDatabase()
+            .BuildServiceProvider();
+
+      // Add a database context (ApplicationDbContext) using an in-memory
+      // database for testing.
+      services.AddDbContext<CatalogContext>(options =>
+      {
+        options.UseInMemoryDatabase("InMemoryDbForTesting");
+        options.UseInternalServiceProvider(provider);
+      });
+
+      services.AddDbContext<AppIdentityDbContext>(options =>
+      {
+        options.UseInMemoryDatabase("Identity");
+        options.UseInternalServiceProvider(provider);
+      });
+
+      // Build the service provider.
+      var sp = services.BuildServiceProvider();
+
+      // Create a scope to obtain a reference to the database
+      // context (ApplicationDbContext).
+      using (var scope = sp.CreateScope())
+      {
+        var scopedServices = scope.ServiceProvider;
+        var db = scopedServices.GetRequiredService<CatalogContext>();
+        var loggerFactory = scopedServices.GetRequiredService<ILoggerFactory>();
+
+        var logger = scopedServices
+            .GetRequiredService<ILogger<WebTestFixture>>();
+
+        // Ensure the database is created.
+        db.Database.EnsureCreated();
+
+        try
         {
-            builder.UseEnvironment("Testing");
+          // Seed the database with test data.
+          CatalogContextSeed.SeedAsync(db, loggerFactory).Wait();
 
-            builder.ConfigureServices(services =>
-            {
-                 services.AddEntityFrameworkInMemoryDatabase();
-
-                // Create a new service provider.
-                var provider = services
-                    .AddEntityFrameworkInMemoryDatabase()
-                    .BuildServiceProvider();
-
-                // Add a database context (ApplicationDbContext) using an in-memory
-                // database for testing.
-                services.AddDbContext<CatalogContext>(options =>
-                {
-                    options.UseInMemoryDatabase("InMemoryDbForTesting");
-                    options.UseInternalServiceProvider(provider);
-                });
-
-                services.AddDbContext<AppIdentityDbContext>(options =>
-                {
-                    options.UseInMemoryDatabase("Identity");
-                    options.UseInternalServiceProvider(provider);
-                });
-
-                // Build the service provider.
-                var sp = services.BuildServiceProvider();
-
-                // Create a scope to obtain a reference to the database
-                // context (ApplicationDbContext).
-                using (var scope = sp.CreateScope())
-                {
-                    var scopedServices = scope.ServiceProvider;
-                    var db = scopedServices.GetRequiredService<CatalogContext>();
-                    var loggerFactory = scopedServices.GetRequiredService<ILoggerFactory>();
-
-                    var logger = scopedServices
-                        .GetRequiredService<ILogger<WebTestFixture>>();
-
-                    // Ensure the database is created.
-                    db.Database.EnsureCreated();
-
-                    try
-                    {
-                        // Seed the database with test data.
-                        CatalogContextSeed.SeedAsync(db, loggerFactory).Wait();
-
-                        // seed sample user data
-                        var userManager = scopedServices.GetRequiredService<UserManager<ApplicationUser>>();
-                        var roleManager = scopedServices.GetRequiredService<RoleManager<IdentityRole>>();
-                        AppIdentityDbContextSeed.SeedAsync(userManager, roleManager).Wait();
-                    }
-                    catch (Exception ex)
-                    {
-                        logger.LogError(ex, $"An error occurred seeding the " +
-                            "database with test messages. Error: {ex.Message}");
-                    }
-                }
-            });
+          // seed sample user data
+          var userManager = scopedServices.GetRequiredService<UserManager<ApplicationUser>>();
+          var roleManager = scopedServices.GetRequiredService<RoleManager<IdentityRole>>();
+          AppIdentityDbContextSeed.SeedAsync(userManager, roleManager).Wait();
         }
-    }
+        catch (Exception ex)
+        {
+          logger.LogError(ex, $"An error occurred seeding the " +
+                    "database with test messages. Error: {ex.Message}");
+        }
+      }
+    });
+  }
 }
 ```
 
@@ -258,30 +266,28 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace Microsoft.eShopWeb.FunctionalTests.WebRazorPages
+namespace Microsoft.eShopWeb.FunctionalTests.WebRazorPages;
+[Collection("Sequential")]
+public class HomePageOnGet : IClassFixture<WebTestFixture>
 {
-    [Collection("Sequential")]
-    public class HomePageOnGet : IClassFixture<WebTestFixture>
-    {
-        public HomePageOnGet(WebTestFixture factory)
-        {
-            Client = factory.CreateClient();
-        }
+  public HomePageOnGet(WebTestFixture factory)
+  {
+    Client = factory.CreateClient();
+  }
 
-        public HttpClient Client { get; }
+  public HttpClient Client { get; }
 
-        [Fact]
-        public async Task ReturnsHomePageWithProductListing()
-        {
-            // Arrange & Act
-            var response = await Client.GetAsync("/");
-            response.EnsureSuccessStatusCode();
-            var stringResponse = await response.Content.ReadAsStringAsync();
+  [Fact]
+  public async Task ReturnsHomePageWithProductListing()
+  {
+    // Arrange & Act
+    var response = await Client.GetAsync("/");
+    response.EnsureSuccessStatusCode();
+    var stringResponse = await response.Content.ReadAsStringAsync();
 
-            // Assert
-            Assert.Contains(".NET Bot Black Sweatshirt", stringResponse);
-        }
-    }
+    // Assert
+    Assert.Contains(".NET Bot Black Sweatshirt", stringResponse);
+  }
 }
 ```
 
@@ -290,13 +296,13 @@ This functional test exercises the full ASP.NET Core MVC / Razor Pages applicati
 > ### References – Test ASP.NET Core MVC apps
 >
 > - **Testing in ASP.NET Core** \
->   <https://docs.microsoft.com/aspnet/core/testing/>
+>   [https://learn.microsoft.com/aspnet/core/testing/](/aspnet/core/testing/)
 > - **Unit Test Naming Convention** \
 >   <https://ardalis.com/unit-test-naming-convention>
 > - **Testing EF Core** \
->   <https://docs.microsoft.com/ef/core/miscellaneous/testing/>
+>   [https://learn.microsoft.com/ef/core/miscellaneous/testing/](/ef/core/miscellaneous/testing/)
 > - **Integration tests in ASP.NET Core** \
->   <https://docs.microsoft.com/aspnet/core/test/integration-tests>
+>   [https://learn.microsoft.com/aspnet/core/test/integration-tests](/aspnet/core/test/integration-tests)
 
 >[!div class="step-by-step"]
 >[Previous](work-with-data-in-asp-net-core-apps.md)

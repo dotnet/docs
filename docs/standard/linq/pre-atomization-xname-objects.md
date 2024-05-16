@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: e84fbbe7-f072-4771-bfbb-059d18e1ad15
+ms.topic: how-to
 ---
 
 # Pre-Atomization of XName objects (LINQ to XML)

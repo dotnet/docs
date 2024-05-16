@@ -53,7 +53,7 @@ Demonstrates a service that hosts multiple endpoints at a single `ListenUri`.
 Demonstrates how to send extra information on a WCF call using headers.
 
 - [Service Description](service-description.md)\
-Demonstrates how a service can retrieve its service description information at runtime.
+Demonstrates how a service can retrieve its service description information at run time.
 
 - [ConcurrencyMode.Reentrant](concurrencymode-reentrant.md)\
 Demonstrates how to use the Reentrant concurrency mode on a service implementation.

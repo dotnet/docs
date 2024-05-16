@@ -13,7 +13,7 @@ ms.assetid: b935fd84-cb9c-4205-8c48-658d5db2ec93
   
  For an example of how to use an input parameter in a query that returns a rowset, see [How to: Return Rowsets](how-to-return-rowsets.md).  
   
-## Example  
+## Example 1
 
  The following example takes a single input parameter (the customer ID) and returns an out parameter (the total sales for that customer).  
   
@@ -30,7 +30,7 @@ where O.CUSTOMERID = @CustomerID AND O.ORDERID = OD.ORDERID
  [!code-csharp[DLinqSprox#2](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqSprox/cs/northwind-sprox.cs#2)]
  [!code-vb[DLinqSprox#2](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqSprox/vb/northwind-sprox.vb#2)]  
   
-## Example  
+## Example 2  
 
  You would call this stored procedure as follows:  
   

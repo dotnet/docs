@@ -8,12 +8,12 @@ ms.assetid: 9547f8a6-8f75-4c64-9d6d-391385557d8c
 
 ## Properties  
   
-|||  
-|-|-|  
-|ID|134|  
-|Keywords|Threading|  
-|Level|Verbose|  
-|Channel|Microsoft-Windows-Application Server-Applications/Debug|  
+| Property | Value                                                   |
+| -------- | ------------------------------------------------------- |
+| ID       | 134                                                     |
+| Keywords | Threading                                               |
+| Level    | Verbose                                                 |
+| Channel  | Microsoft-Windows-Application Server-Applications/Debug |
   
 ## Description  
 
@@ -21,6 +21,4 @@ ms.assetid: 9547f8a6-8f75-4c64-9d6d-391385557d8c
   
 ## Message  
 
- I/O Thread scheduler callback invoked.  
-  
-## Details
+ I/O Thread scheduler callback invoked.

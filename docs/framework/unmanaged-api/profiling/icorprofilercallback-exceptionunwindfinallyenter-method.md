@@ -30,7 +30,7 @@ HRESULT ExceptionUnwindFinallyEnter(
   
 ## Parameters
 
-`functionId`
+`functionId`\
 [in] The ID of the function that contains the `finally` clause.
 
 ## Remarks  

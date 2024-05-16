@@ -5,7 +5,7 @@ ms.date: 11/11/2020
 ---
 # dotnet tool search
 
-**This article applies to:** ✔️ .NET 5.0 SDK and later versions
+**This article applies to:** ✔️ .NET 5 SDK and later versions
 
 ## Name
 
@@ -44,9 +44,7 @@ The command uses the [NuGet Search API](/nuget/api/search-query-service-resource
 
   Specifies the number of query results to show. Used for pagination.
 
-- **`-h|--help`**
-
-  Shows command-line help.
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 ## Examples
 

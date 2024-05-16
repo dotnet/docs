@@ -24,6 +24,7 @@ The following breaking changes are documented on this page:
 | [EnableVisualStyleValidation compatibility switch not supported](#enablevisualstylevalidation-compatibility-switch-not-supported) | 3.0 |
 | [UseLegacyContextMenuStripSourceControlValue compatibility switch not supported](#uselegacycontextmenustripsourcecontrolvalue-compatibility-switch-not-supported) | 3.0 |
 | [UseLegacyImages compatibility switch not supported](#uselegacyimages-compatibility-switch-not-supported) | 3.0 |
+| [About and SplashScreen templates are broken for Visual Basic](#about-and-splashscreen-templates-are-broken) | 3.0 |
 
 ## .NET Core 3.1
 
@@ -81,6 +82,10 @@ The following breaking changes are documented on this page:
 
 ***
 
+[!INCLUDE[About and SplashScreen templates are broken for Visual Basic](~/includes/core-changes/visualbasic/3.0/vb-winforms-splash-about-broken.md)]
+
+***
+
 ## See also
 
-- [Port a Windows Forms app to .NET Core](/dotnet/desktop/winforms/migration/?view=netdesktop-5.0&preserve-view=true)
+- [Port a Windows Forms app to .NET Core](/dotnet/desktop/winforms/migration/)

@@ -8,11 +8,11 @@ When the <xref:System.Data.Objects.ObjectContext.CreateDatabase?displayProperty=
 
 If the log file name is important for an app, the app should be updated to expect the standard _log.ldf file name format.
 
-| Name    | Value       |
-|:--------|:------------|
-| Scope   |Edge|
-|Version|4.5|
-|Type|Runtime
+|             | Value   |
+|:------------|:--------|
+| **Scope**   | Edge    |
+| **Version** | 4.5     |
+| **Type**    | Runtime |
 
 #### Affected APIs
 

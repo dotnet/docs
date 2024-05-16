@@ -6,10 +6,10 @@ ms.assetid: f2b015b3-dafe-4468-a3ac-5b547ff413e6
 ---
 # 3395 - MessageWrittenAsynchronouslyByEncoder
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3395|  
 |Keywords|Channel|  
 |Level|Information|  

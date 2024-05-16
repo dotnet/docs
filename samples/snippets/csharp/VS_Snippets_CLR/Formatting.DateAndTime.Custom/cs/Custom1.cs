@@ -274,7 +274,8 @@ public class Class1
       DateTime date1 = DateTime.UtcNow;
       Console.WriteLine(String.Format("{0:%z}, {0:zz}, {0:zzz}",
                         date1));
-      // Displays -7, -07, -07:00
+      // Displays -7, -07, -07:00 on .NET Framework
+      // Displays +0, +00, +00:00 on .NET Core and .NET 5+
 
       DateTimeOffset date2 = new DateTimeOffset(2008, 8, 1, 0, 0, 0,
                                                 new TimeSpan(6, 0, 0));

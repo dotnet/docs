@@ -2,9 +2,9 @@
 description: "Learn more about: Exceptions"
 title: "Exceptions"
 ms.date: "03/30/2017"
-ms.assetid: 065205cc-52dd-4f30-9578-b17d8d113136
+ms.topic: "reference"
 ---
-# Exceptions
+# Windows Workflow Foundation Exceptions
 
 Workflows can use the <xref:System.Activities.Statements.TryCatch> activity to handle exceptions that are raised during the execution of a workflow. These exceptions can be handled or they can be re-thrown using the <xref:System.Activities.Statements.Rethrow> activity. Activities in the <xref:System.Activities.Statements.TryCatch.Finally%2A> section are executed when either the <xref:System.Activities.Statements.TryCatch.Try%2A> section or the <xref:System.Activities.Statements.TryCatch.Catches%2A> section completes. Workflows hosted by a <xref:System.Activities.WorkflowApplication> instance can also use the <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A> event handler to handle exceptions that are not handled by a <xref:System.Activities.Statements.TryCatch> activity.  
   
@@ -24,7 +24,7 @@ Workflows can use the <xref:System.Activities.Statements.TryCatch> activity to h
 
  If an exception is thrown by an activity and is unhandled, the default behavior is to terminate the workflow instance. If a custom <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A> handler is present, it can override this default behavior. This handler gives the workflow host author an opportunity to provide the appropriate handling, such as custom logging, aborting the workflow, canceling the workflow, or terminating the workflow.  If a workflow raises an exception that is not handled, the <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A> handler is invoked. There are three possible actions returned from <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A> which determine the final outcome of the workflow.  
   
-- **Cancel** - A cancelled workflow instance is a graceful exit of a branch execution. You can model cancelation behavior (for example, by using a CancellationScope activity). The Completed handler is invoked when the cancellation process completes. A cancelled workflow is in the Cancelled state.  
+- **Cancel** - A cancelled workflow instance is a graceful exit of a branch execution. You can model cancellation behavior (for example, by using a CancellationScope activity). The Completed handler is invoked when the cancellation process completes. A cancelled workflow is in the Cancelled state.  
   
 - **Terminate** - A terminated workflow instance cannot be resumed or restarted.  This triggers the Completed event in which you can provide an exception as the reason it was terminated. The Terminated handler is invoked when the termination process completes. A terminated workflow is in the Faulted state.  
   

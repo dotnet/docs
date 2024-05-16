@@ -1,0 +1,2 @@
+﻿
+LinqSamples.IndexClass.Intro();

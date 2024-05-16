@@ -2,10 +2,10 @@
 title: "How to: Create unsigned friend assemblies"
 description: This article shows how to use friend assemblies with assemblies that are unsigned. It includes information about .NET security.
 ms.date: 08/19/2019
-ms.assetid: 78cbc4f0-b021-4141-a4ff-eb4edbd814ca
 dev_langs:
   - "csharp"
   - "vb"
+ms.topic: how-to
 ---
 # How to: Create unsigned friend assemblies
 
@@ -146,5 +146,5 @@ There are similarities between the <xref:System.Runtime.CompilerServices.Interna
 - [Assemblies in .NET](index.md)
 - [Friend assemblies](friend.md)
 - [How to: Create signed friend assemblies](create-signed-friend.md)
-- [C# programming guide](../../csharp/programming-guide/index.md)
+- [C# programming guide](../../csharp/programming-guide/concepts/index.md)
 - [Programming concepts (Visual Basic)](../../visual-basic/programming-guide/concepts/index.md)

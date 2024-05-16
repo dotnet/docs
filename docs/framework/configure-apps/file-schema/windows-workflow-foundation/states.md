@@ -2,7 +2,6 @@
 description: "Learn more about: <states>"
 title: "<states>"
 ms.date: "03/30/2017"
-ms.topic: "reference"
 ms.assetid: ebea5e7c-ad58-43c5-8f2d-cca25ae1b721
 ---
 # \<states>

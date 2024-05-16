@@ -1,9 +1,11 @@
 ---
 title: Health monitoring
 description: Explore one way of implementing health monitoring.
-ms.date: 01/13/2021
+ms.date: 06/23/2021
 ---
 # Health monitoring
+
+[!INCLUDE [download-alert](../includes/download-alert.md)]
 
 Health monitoring can allow near-real-time information about the state of your containers and microservices. Health monitoring is critical to multiple aspects of operating microservices and is especially important when orchestrators perform partial application upgrades in phases, as explained later.
 
@@ -21,27 +23,24 @@ To use this feature effectively, you need to first configure services in your mi
 
 ### Use the HealthChecks feature in your back-end ASP.NET microservices
 
-In this section, you'll learn how to implement the HealthChecks feature in a sample ASP.NET Core 3.1 Web API application when using the [Microsoft.Extensions.Diagnostics.HealthChecks](https://www.nuget.org/packages/Microsoft.Extensions.Diagnostics.HealthChecks) package. The Implementation of this feature in a large-scale microservices like the eShopOnContainers is explained in the next section.
+In this section, you'll learn how to implement the HealthChecks feature in a sample ASP.NET Core 8.0 Web API application when using the [Microsoft.Extensions.Diagnostics.HealthChecks](https://www.nuget.org/packages/Microsoft.Extensions.Diagnostics.HealthChecks) package. The Implementation of this feature in a large-scale microservices like the eShopOnContainers is explained in the next section.
 
 To begin, you need to define what constitutes a healthy status for each microservice. In the sample application, we define the microservice is healthy if its API is accessible via HTTP and its related SQL Server database is also available.
 
-In .NET 5, with the built-in APIs, you can configure the services, add a Health Check for the microservice and its dependent SQL Server database in this way:
+In .NET 8, with the built-in APIs, you can configure the services, add a Health Check for the microservice and its dependent SQL Server database in this way:
 
 ```csharp
-// Startup.cs from .NET 5 Web API sample
-//
-public void ConfigureServices(IServiceCollection services)
-{
-    //...
-    // Registers required services for health checks
-    services.AddHealthChecks()
-        // Add a health check for a SQL Server database
-        .AddCheck(
-            "OrderingDB-check",
-            new SqlConnectionHealthCheck(Configuration["ConnectionString"]),
-            HealthStatus.Unhealthy,
-            new string[] { "orderingdb" });
-}
+// Program.cs from .NET 8 Web API sample
+
+//...
+// Registers required services for health checks
+builder.Services.AddHealthChecks()
+    // Add a health check for a SQL Server database
+    .AddCheck(
+        "OrderingDB-check",
+        new SqlConnectionHealthCheck(builder.Configuration["ConnectionString"]),
+        HealthStatus.Unhealthy,
+        new string[] { "orderingdb" });
 ```
 
 In the previous code, the `services.AddHealthChecks()` method configures a basic HTTP check that returns a status code **200** with "Healthy".  Further, the `AddCheck()` extension method configures a custom `SqlConnectionHealthCheck` that checks the related SQL Database's health.
@@ -54,7 +53,7 @@ The `AddCheck()` method adds a new health check with a specified name and the im
 // Sample SQL Connection Health Check
 public class SqlConnectionHealthCheck : IHealthCheck
 {
-    private static readonly string DefaultTestQuery = "Select 1";
+    private const string DefaultTestQuery = "Select 1";
 
     public string ConnectionString { get; }
 
@@ -103,19 +102,9 @@ Note that in the previous code, `Select 1` is the query used to check the Health
 Finally, add a middleware that responds to the url path `/hc`:
 
 ```csharp
-// Startup.cs from .NET 5 Web Api sample
-//
-public void Configure(IApplicationBuilder app, IHostingEnvironment env)
-{
-    //…
-    app.UseEndpoints(endpoints =>
-    {
-        //...
-        endpoints.MapHealthChecks("/hc");
-        //...
-    });
-    //…
-}
+// Program.cs from .NET 8 Web Api sample
+
+app.MapHealthChecks("/hc");
 ```
 
 When the endpoint `<yourmicroservice>/hc` is invoked, it runs all the health checks that are configured in the `AddHealthChecks()` method in the Startup class and shows the result.
@@ -124,7 +113,7 @@ When the endpoint `<yourmicroservice>/hc` is invoked, it runs all the health che
 
 Microservices in eShopOnContainers rely on multiple services to perform its task. For example, the `Catalog.API` microservice from eShopOnContainers depends on many services, such as Azure Blob Storage, SQL Server, and RabbitMQ. Therefore, it has several health checks added using the `AddCheck()` method. For every dependent service, a custom `IHealthCheck` implementation that defines its respective health status would need to be added.
 
-The open-source project [AspNetCore.Diagnostics.HealthChecks](https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks) solves this problem by providing custom health check implementations for each of these enterprise services, that are built on top of .NET 5. Each health check is available as an individual NuGet package that can be easily added to the project. eShopOnContainers uses them extensively in all its microservices.
+The open-source project [AspNetCore.Diagnostics.HealthChecks](https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks) solves this problem by providing custom health check implementations for each of these enterprise services, that are built on top of .NET 8. Each health check is available as an individual NuGet package that can be easily added to the project. eShopOnContainers uses them extensively in all its microservices.
 
 For instance, in the `Catalog.API` microservice, the following NuGet packages were added:
 
@@ -135,7 +124,7 @@ For instance, in the `Catalog.API` microservice, the following NuGet packages we
 In the following code, the health check implementations are added for each dependent service and then the middleware is configured:
 
 ```csharp
-// Startup.cs from Catalog.api microservice
+// Extension method from Catalog.api microservice
 //
 public static IServiceCollection AddCustomHealthCheck(this IServiceCollection services, IConfiguration configuration)
 {
@@ -193,9 +182,9 @@ app.UseHealthChecks("/hc", new HealthCheckOptions()
 
 ### Query your microservices to report about their health status
 
-When you've configured health checks as described in this article and you have the microservice running in Docker, you can directly check from a browser if it's healthy. You have to publish the container port in the Docker host, so you can access the container through the external Docker host IP or through `localhost`, as shown in figure 8-8.
+When you've configured health checks as described in this article and you have the microservice running in Docker, you can directly check from a browser if it's healthy. You have to publish the container port in the Docker host, so you can access the container through the external Docker host IP or through `host.docker.internal`, as shown in figure 8-8.
 
-![Screenshot of the JSON response returned by a health check.](./media/monitor-app-health/health-check-json-response.png)
+![Screenshot of the JSON response returned by a health check.](media/monitor-app-health/health-check-json-response.png)
 
 **Figure 8-8**. Checking health status of a single service from a browser
 
@@ -220,39 +209,30 @@ Sample configuration file for health check UI:
 ```json
 // Configuration
 {
-  "HealthChecks-UI": {
+  "HealthChecksUI": {
     "HealthChecks": [
       {
         "Name": "Ordering HTTP Check",
-        "Uri": "http://localhost:5102/hc"
+        "Uri": "http://host.docker.internal:5102/hc"
       },
       {
         "Name": "Ordering HTTP Background Check",
-        "Uri": "http://localhost:5111/hc"
+        "Uri": "http://host.docker.internal:5111/hc"
       },
       //...
     ]}
 }
 ```
 
-*Startup.cs* file that adds HealthChecksUI:
+_Program.cs_ file that adds HealthChecksUI:
 
 ```csharp
-// Startup.cs from WebStatus(Watch Dog) service
+// Program.cs from WebStatus(Watch Dog) service
 //
-public void ConfigureServices(IServiceCollection services)
-{
-    //…
-    // Registers required services for health checks
-    services.AddHealthChecksUI();
-}
-//…
-public void Configure(IApplicationBuilder app, IHostingEnvironment env)
-{
-    //…
-    app.UseHealthChecksUI(config => config.UIPath = "/hc-ui");
-    //…
-}
+// Registers required services for health checks
+builder.Services.AddHealthChecksUI();
+// build the app, register other middleware
+app.UseHealthChecksUI(config => config.UIPath = "/hc-ui");
 ```
 
 ## Health checks when using orchestrators
@@ -281,7 +261,7 @@ Finally, if you're storing all the event streams, you can use Microsoft Power BI
   <https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks>
 
 - **Introduction to Service Fabric health monitoring** \
-  [https://docs.microsoft.com/azure/service-fabric/service-fabric-health-introduction](/azure/service-fabric/service-fabric-health-introduction)
+  [https://learn.microsoft.com/azure/service-fabric/service-fabric-health-introduction](/azure/service-fabric/service-fabric-health-introduction)
 
 - **Azure Monitor** \
   <https://azure.microsoft.com/services/monitor/>

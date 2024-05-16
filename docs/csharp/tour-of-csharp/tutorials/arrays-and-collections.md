@@ -1,27 +1,28 @@
 ---
-title: Work with collections - Introduction to C# tutorial
-description: Learn C# by exploring the List collection in this tutorial.
-ms.date: 02/05/2021
+title: Work with List\<T> - Introductory tutorial
+description: Learn C# by exploring the generic List collection type in this tutorial.
+ms.date: 03/23/2022
 ---
-# Learn to manage data collections using the generic list type
+# Learn to manage data collections using List\<T> in C\#
 
 This introductory tutorial provides an introduction to the C# language and the basics of the <xref:System.Collections.Generic.List%601> class.
 
 ## Prerequisites
 
-The tutorial expects that you have a machine set up for local development. On Windows, Linux, or macOS, you can use the .NET CLI to create, build, and run applications. On Mac and Windows, you can use Visual Studio 2019. For setup instructions, see [Set up your local environment](local-environment.md).
+The tutorial expects that you have a machine set up for local development. See [Set up your local environment](local-environment.md) for installation instructions and an overview of application development in .NET.
+
+If you prefer to run the code without having to set up a local environment, see the [interactive-in-browser version of this tutorial](list-collection.yml).
 
 ## A basic list example
 
 Create a directory named *list-tutorial*. Make that the current directory and run `dotnet new console`.
 
+[!INCLUDE [csharp10-templates](../../../../includes/csharp10-templates.md)]
+
 Open *Program.cs* in your favorite editor, and replace the existing code with the following:
 
 ```csharp
-using System;
-using System.Collections.Generic;
-
-var names = new List<string> { "<name>", "Ana", "Felipe" };
+List<string> names = ["<name>", "Ana", "Felipe"];
 foreach (var name in names)
 {
     Console.WriteLine($"Hello {name.ToUpper()}!");
@@ -112,14 +113,11 @@ Save the file and type `dotnet run` to try this latest version.
 Before you start the next section, let's move the current code into a separate method. That makes it easier to start working with a new example. Place all the code you've written in a new method called `WorkWithStrings()`. Call that method at the top of your program. When you finish, your code should look like this:
 
 ```csharp
-using System;
-using System.Collections.Generic;
+WorkWithStrings();
 
-WorkWithString();
-
-void WorkWithString()
+void WorkWithStrings()
 {
-    var names = new List<string> { "<name>", "Ana", "Felipe" };
+    List<string> names = ["<name>", "Ana", "Felipe"];
     foreach (var name in names)
     {
         Console.WriteLine($"Hello {name.ToUpper()}!");
@@ -175,7 +173,7 @@ You've been using the `string` type in lists so far. Let's make a <xref:System.C
 Add the following to your program after you call `WorkWithStrings()`:
 
 ```csharp
-var fibonacciNumbers = new List<int> {1, 1};
+List<int> fibonacciNumbers = [1, 1];
 ```
 
 That creates a list of integers, and sets the first two integers to the value 1. These are the first two values of a *Fibonacci Sequence*, a sequence of numbers. Each next Fibonacci number is found by taking the sum of the previous two numbers. Add this code:
@@ -187,13 +185,15 @@ var previous2 = fibonacciNumbers[fibonacciNumbers.Count - 2];
 fibonacciNumbers.Add(previous + previous2);
 
 foreach (var item in fibonacciNumbers)
+{
     Console.WriteLine(item);
+}
 ```
 
 Save the file and type `dotnet run` to see the results.
 
 > [!TIP]
-> To concentrate on just this section, you can comment out the code that calls `WorkingWithStrings();`. Just put two `/` characters in front of the call like this:  `// WorkingWithStrings();`.
+> To concentrate on just this section, you can comment out the code that calls `WorkWithStrings();`. Just put two `/` characters in front of the call like this:  `// WorkWithStrings();`.
 
 ## Challenge
 
@@ -201,10 +201,10 @@ See if you can put together some of the concepts from this and earlier lessons. 
 
 ## Complete challenge
 
-You can see an example solution by [looking at the finished sample code on GitHub](https://github.com/dotnet/samples/tree/master/csharp/list-quickstart/Program.cs#L8-L16).
+You can see an example solution by [looking at the finished sample code on GitHub](https://github.com/dotnet/samples/tree/main/csharp/list-quickstart/Program.cs#L8-L16).
 
 With each iteration of the loop, you're taking the last two integers in the list, summing them, and adding that value to the list. The loop repeats until you've added 20 items to the list.
 
-Congratulations, you've completed the list tutorial. You can continue with [additional](../../tutorials/index.md) tutorials in your own development environment.
+Congratulations, you've completed the list tutorial. You can continue with [additional](../../fundamentals/tutorials/classes.md) tutorials in your own development environment.
 
 You can learn more about working with the `List` type in the .NET fundamentals article on [collections](../../../standard/collections/index.md). You'll also learn about many other collection types.

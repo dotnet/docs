@@ -18,19 +18,19 @@ To reconcile differences between expected and actual database values before you 
 
  In this scenario, a <xref:System.Data.Linq.ChangeConflictException> exception is thrown when User1 tries to submit changes, because User2 has in the meantime changed the Assistant and Department columns. The following table shows the situation.  
   
-||Manager|Assistant|Department|  
-|------|-------------|---------------|----------------|  
-|Original database state when queried by User1 and User2.|Alfreds|Maria|Sales|  
-|User1 prepares to submit these changes.|Alfred||Marketing|  
-|User2 has already submitted these changes.||Mary|Service|  
+| State                                                    | Manager | Assistant | Department |
+| -------------------------------------------------------- | ------- | --------- | ---------- |
+| Original database state when queried by User1 and User2. | Alfreds | Maria     | Sales      |
+| User1 prepares to submit these changes.                  | Alfred  |           | Marketing  |
+| User2 has already submitted these changes.               |         | Mary      | Service    |
   
  User1 decides to resolve this conflict by merging database values with the current client member values. The result will be that database values are overwritten only when the current changeset has also modified that value.  
   
  When User1 resolves the conflict by using <xref:System.Data.Linq.RefreshMode.KeepChanges>, the result in the database is as in the following table:  
   
-||Manager|Assistant|Department|  
-|------|-------------|---------------|----------------|  
-|New state after conflict resolution.|Alfred<br /><br /> (from User1)|Mary<br /><br /> (from User2)|Marketing<br /><br /> (from User1)|  
+| State                                | Manager                         | Assistant                     | Department                         |
+| ------------------------------------ | ------------------------------- | ----------------------------- | ---------------------------------- |
+| New state after conflict resolution. | Alfred<br /><br /> (from User1) | Mary<br /><br /> (from User2) | Marketing<br /><br /> (from User1) |
   
  The following example shows how to merge database values with the current client member values (unless the client has also changed that value). No inspection or custom handling of individual member conflicts occurs.  
   

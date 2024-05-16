@@ -6,10 +6,10 @@ ms.assetid: 0d3cff1a-97e6-4b6c-be18-108c6881bfc0
 ---
 # 1126 - InvokedMethodThrewException
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1126|  
 |Keywords|WFRuntime|  
 |Level|Information|  

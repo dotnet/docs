@@ -6,13 +6,15 @@ ms.date: 10/08/2018
 
 # Design validations in the domain model layer
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 In DDD, validation rules can be thought as invariants. The main responsibility of an aggregate is to enforce invariants across state changes for all the entities within that aggregate.
 
 Domain entities should always be valid entities. There are a certain number of invariants for an object that should always be true. For example, an order item object always has to have a quantity that must be a positive integer, plus an article name and price. Therefore, invariants enforcement is the responsibility of the domain entities (especially of the aggregate root) and an entity object should not be able to exist without being valid. Invariant rules are simply expressed as contracts, and exceptions or notifications are raised when they are violated.
 
 The reasoning behind this is that many bugs occur because objects are in a state they should never have been in.
 
-Let's propose we now have a SendUserCreationEmailService that takes a UserProfile ... how can we rationalize in that service that Name is not null? Do we check it again? Or more likely ... you just don't bother to check and "hope for the best"—you hope that someone bothered to validate it before sending it to you. Of course, using TDD one of the first tests we should be writing is that if I send a customer with a null name that it should raise an error. But once we start writing these kinds of tests over and over again we realize ... "wait if we never allowed name to become null we wouldn't have all of these tests".
+Let's propose we now have a SendUserCreationEmailService that takes a UserProfile ... how can we rationalize in that service that Name is not null? Do we check it again? Or more likely ... you just don't bother to check and "hope for the best"—you hope that someone bothered to validate it before sending it to you. Of course, using TDD one of the first tests we should be writing is that if I send a customer with a null name that it should raise an error. But once we start writing these kinds of tests over and over again we realize ... "what if we never allowed name to become null? we wouldn't have all of these tests!".
 
 ## Implement validations in the domain model layer
 
@@ -81,10 +83,10 @@ Using field validation with data annotations, for example, you do not duplicate 
 ## Additional resources
 
 - **Rachel Appel. Introduction to model validation in ASP.NET Core MVC** \
-  <https://docs.microsoft.com/aspnet/core/mvc/models/validation>
+  [https://learn.microsoft.com/aspnet/core/mvc/models/validation](/aspnet/core/mvc/models/validation)
 
 - **Rick Anderson. Adding validation** \
-  <https://docs.microsoft.com/aspnet/core/tutorials/first-mvc-app/validation>
+  [https://learn.microsoft.com/aspnet/core/tutorials/first-mvc-app/validation](/aspnet/core/tutorials/first-mvc-app/validation)
 
 - **Martin Fowler. Replacing Throwing Exceptions with Notification in Validations** \
   <https://martinfowler.com/articles/replaceThrowWithNotification.html>

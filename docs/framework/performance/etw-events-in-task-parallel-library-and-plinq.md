@@ -4,7 +4,7 @@ description: Read about ETW events in the Task Parallel Library and PLINQ. Use t
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "tasks, ETW events"
-ms.assetid: 87a9cff5-d86f-4e44-a06e-d12764d0dce2
+ms.topic: reference
 ---
 # ETW Events in Task Parallel Library and PLINQ
 

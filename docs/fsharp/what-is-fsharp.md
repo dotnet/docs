@@ -1,31 +1,29 @@
 ---
 title: What is F#
-description: Learn about what the F# programming language is and what F# programming is like. Learn about rich data types, functions, and how they fit together.
-ms.date: 08/03/2018
+description: Learn about what the F# programming language is and what F# programming is like. Learn about rich types, functions, and how they fit together.
+ms.date: 11/04/2021
 ---
 # What is F\#
 
-F# is a functional programming language that makes it easy to write correct and maintainable code.
+F# is a universal programming language for writing succinct, robust and performant code.
 
-F# programming primarily involves defining types and functions that are type-inferred and generalized automatically. This allows your focus to remain on the problem domain and manipulating its data, rather than the details of programming.
+F# allows you to write uncluttered, self-documenting code, where your focus remains on your problem domain, rather than the details of programming.
+
+It does this without compromising on speed and compatibility - it is open-source, cross-platform and interoperable.
 
 ```fsharp
 open System // Gets access to functionality in System namespace.
 
+// Defines a list of names
+let names = [ "Peter"; "Julia"; "Xi" ]
+
 // Defines a function that takes a name and produces a greeting.
-let getGreeting name = $"Hello, {name}! Isn't F# great?"
+let getGreeting name = $"Hello, {name}"
 
-[<EntryPoint>]
-let main args =
-    // Defines a list of names
-    let names = [ "Don"; "Julia"; "Xi" ]
-
-    // Prints a greeting for each name!
-    names
-    |> List.map getGreeting
-    |> List.iter (fun greeting -> printfn $"{greeting}")
-
-    0
+// Prints a greeting for each name!
+names
+|> List.map getGreeting
+|> List.iter (fun greeting -> printfn $"{greeting}! Enjoy your F#")
 ```
 
 F# has numerous features, including:
@@ -38,11 +36,12 @@ F# has numerous features, including:
 * Pattern matching
 * Async programming
 
-A full set of features are documented in the [F# language reference](./language-reference/index.md).
+A full set of features are documented in the [F# language guide](./language-reference/index.md).
 
 ## Rich data types
 
-Data types such as [Records](./language-reference/records.md) and [Discriminated Unions](./language-reference/discriminated-unions.md) let you represent complex data and domains.
+Types such as [Records](./language-reference/records.md) and [Discriminated Unions](./language-reference/discriminated-unions.md)
+let you represent your data.
 
 ```fsharp
 // Group data with Records
@@ -65,9 +64,9 @@ type WithdrawalResult =
 
 F# records and discriminated unions are non-null, immutable, and comparable by default, making them very easy to use.
 
-## Enforced correctness with functions and pattern matching
+## Correctness with functions and pattern matching
 
-F# functions are easy to declare and powerful in practice. When combined with [pattern matching](./language-reference/pattern-matching.md), they allow you to define behavior whose correctness is enforced by the compiler.
+F# functions are easy to define. When combined with [pattern matching](./language-reference/pattern-matching.md), they allow you to define behavior whose correctness is enforced by the compiler.
 
 ```fsharp
 // Returns a WithdrawalResult
@@ -78,9 +77,9 @@ let handleWithdrawal amount =
 
     // The F# compiler enforces accounting for each case!
     match w with
-    | Success s -> printfn "Successfully withdrew %f{s.Amount}"
-    | InsufficientFunds f -> printfn "Failed: balance is %f{f.Balance}"
-    | CardExpired d -> printfn "Failed: card expired on {d}"
+    | Success s -> printfn $"Successfully withdrew %f{s.Amount}"
+    | InsufficientFunds f -> printfn $"Failed: balance is %f{f.Balance}"
+    | CardExpired d -> printfn $"Failed: card expired on {d}"
     | UndisclosedFailure -> printfn "Failed: unknown :("
 ```
 
@@ -88,7 +87,7 @@ F# functions are also first-class, meaning they can be passed as parameters and 
 
 ## Functions to define operations on objects
 
-F# has full support for objects, which are useful data types when you need to blend data and functionality. F# functions are used to manipulate objects.
+F# has full support for objects, which are useful when you need to blend data and functionality. F# members and functions can be defined to manipulate objects.
 
 ```fsharp
 type Set<'T when 'T: comparison>(elements: seq<'T>) =
@@ -98,8 +97,8 @@ type Set<'T when 'T: comparison>(elements: seq<'T>) =
     // ...
     // Further Implementation elided
     // ...
-    interface IEnumerable<‘T>
-    interface IReadOnlyCollection<‘T>
+    interface IEnumerable<'T>
+    interface IReadOnlyCollection<'T>
 
 module Set =
     let isEmpty (set: Set<'T>) = set.IsEmpty
@@ -109,7 +108,7 @@ module Set =
     let add value (set: Set<'T>) = set.Add(value)
 ```
 
-Rather than writing code that is object-oriented, in F#, you will often write code that treats objects as another data type for functions to manipulate. Features such as [generic interfaces](./language-reference/interfaces.md), [object expressions](./language-reference/object-expressions.md), and judicious use of [members](./language-reference/members/index.md) are common in larger F# programs.
+In F#, you will often write code that treats objects as a type for functions to manipulate. Features such as [generic interfaces](./language-reference/interfaces.md), [object expressions](./language-reference/object-expressions.md), and judicious use of [members](./language-reference/members/index.md) are common in larger F# programs.
 
 ## Next steps
 

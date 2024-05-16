@@ -6,10 +6,10 @@ ms.assetid: 27b551b5-ae76-49f8-bab8-6300009eb4c1
 ---
 # 440 - StartSignpostEvent1
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|440|  
 |Keywords|Troubleshooting|  
 |Level|Information|  

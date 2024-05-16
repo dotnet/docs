@@ -6,10 +6,10 @@ ms.assetid: e68539d0-5338-468a-9f75-7e5b09d39a3c
 ---
 # 117 - WorkflowInstanceTerminatedRecordWithId
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|117|  
 |Keywords|HealthMonitoring, WFTracking|  
 |Level|Error|  

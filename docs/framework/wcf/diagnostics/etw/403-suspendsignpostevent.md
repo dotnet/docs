@@ -6,10 +6,10 @@ ms.assetid: fb2e6f29-e556-47b4-b4c1-acd6b8879702
 ---
 # 403 - SuspendSignpostEvent
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|403|  
 |Keywords|Troubleshooting|  
 |Level|Information|  

@@ -1,1 +1,1 @@
-let arrayOfTenZeroes : int array = Array.zeroCreate 10
+let arrayOfTenZeroes: int array = Array.zeroCreate 10

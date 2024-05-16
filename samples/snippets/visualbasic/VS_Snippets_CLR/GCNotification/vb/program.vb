@@ -8,23 +8,23 @@ Class Program
     ' While loop in the WaitForFullGcProc method.
     Private Shared checkForNotify As Boolean = False
 
-    ' Variable for suspending work 
+    ' Variable for suspending work
     ' (such as servicing allocated server requests)
-    ' after a notification is received and then 
+    ' after a notification is received and then
     ' resuming allocation after inducing a garbage collection.
     Private Shared bAllocate As Boolean = False
 
     ' Variable for ending the example.
     Private Shared finalExit As Boolean = False
 
-    ' Collection for objects that  
+    ' Collection for objects that
     ' simulate the server request workload.
     Private Shared load As New List(Of Byte())
 
 
     Public Shared Sub Main(ByVal args() As String)
         Try
-            ' Register for a notification. 
+            ' Register for a notification.
             GC.RegisterForFullGCNotification(10, 10)
             Console.WriteLine("Registered for GC notification.")
 
@@ -86,12 +86,12 @@ Class Program
     Public Shared Sub OnFullGCApproachNotify()
         Console.WriteLine("Redirecting requests.")
 
-        ' Method that tells the request queuing  
-        ' server to not direct requests to this server. 
+        ' Method that tells the request queuing
+        ' server to not direct requests to this server.
         RedirectRequests()
 
-        ' Method that provides time to 
-        ' finish processing pending requests. 
+        ' Method that provides time to
+        ' finish processing pending requests.
         FinishExistingRequests()
 
         ' This is a good time to induce a GC collection
@@ -131,9 +131,9 @@ Class Program
                     Exit While
                 Else
                     ' This can occur if a timeout period
-                    ' is specified for WaitForFullGCApproach(Timeout) 
-                    ' or WaitForFullGCComplete(Timeout)  
-                    ' and the time out period has elapsed. 
+                    ' is specified for WaitForFullGCApproach(Timeout)
+                    ' or WaitForFullGCComplete(Timeout)
+                    ' and the time out period has elapsed.
                     Console.WriteLine("GC Notification not applicable.")
                     Exit While
                 End If
@@ -143,7 +143,7 @@ Class Program
                 ' Check for a notification of a completed collection.
                 s = GC.WaitForFullGCComplete
                 If (s = GCNotificationStatus.Succeeded) Then
-                    Console.WriteLine("GC Notifiction raised.")
+                    Console.WriteLine("GC Notification raised.")
                     OnFullGCCompleteEndNotify()
                 ElseIf (s = GCNotificationStatus.Canceled) Then
                     Console.WriteLine("GC Notification cancelled.")
@@ -157,7 +157,7 @@ Class Program
 
             End While
             Thread.Sleep(500)
-            ' FinalExit is set to true right before  
+            ' FinalExit is set to true right before
             ' the main thread cancelled notification.
             If finalExit Then
                 Exit While

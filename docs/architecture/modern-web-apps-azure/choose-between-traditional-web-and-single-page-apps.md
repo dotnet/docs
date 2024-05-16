@@ -4,10 +4,12 @@ description: Learn how to choose between traditional web apps and single page ap
 author: ardalis
 ms.author: wiwagn
 no-loc: [Blazor, WebAssembly]
-ms.date: 12/01/2020
+ms.date: 12/12/2021
 ---
 
 # Choose Between Traditional Web Apps and Single Page Apps (SPAs)
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 > "Atwood's Law: Any application that can be written in JavaScript, will eventually be written in JavaScript."  
 > _\- Jeff Atwood_
@@ -20,7 +22,7 @@ Use traditional web applications when:
 
 - Your application needs to function in browsers without JavaScript support.
 
-- Your team is unfamiliar with JavaScript or TypeScript development techniques.
+- Your application is public-facing and benefits from search engine discovery and referrals.
 
 Use a SPA when:
 
@@ -30,13 +32,13 @@ Use a SPA when:
 
 - Your application must already expose an API for other (internal or public) clients.
 
-Additionally, SPA frameworks require greater architectural and security expertise. They experience greater churn due to frequent updates and new frameworks than traditional web applications. Configuring automated build and deployment processes and utilizing deployment options like containers may be more difficult with SPA applications than traditional web apps.
+Additionally, SPA frameworks require greater architectural and security expertise. They experience greater churn due to frequent updates and new client frameworks than traditional web applications. Configuring automated build and deployment processes and utilizing deployment options like containers may be more difficult with SPA applications than traditional web apps.
 
 Improvements in user experience made possible by the SPA approach must be weighed against these considerations.
 
 ## Blazor
 
-ASP.NET Core includes a model for building rich, interactive, and composable user interfaces called Blazor. Blazor server-side allows developers to build UI with C# and Razor on the server and for the UI to be interactively connected to the browser in real-time using a persistent SignalR connection. Blazor WebAssembly introduces another option for Blazor apps, allowing them to run in the browser using WebAssembly. Because it's real .NET running on WebAssembly, you can reuse code and libraries from server-side parts of your application.
+ASP.NET Core includes a model for building rich, interactive, and composable user interfaces called Blazor. Blazor server-side allows developers to build UI with C# and Razor on the server and for the UI to be interactively connected to the browser in real-time using a persistent SignalR connection. Blazor WebAssembly introduces another option for Blazor apps, allowing them to run in the browser using WebAssembly. Because it's real .NET code running on WebAssembly, you can reuse code and libraries from server-side parts of your application.
 
 Blazor provides a new, third option to consider when evaluating whether to build a purely server-rendered web application or a SPA. You can build rich, SPA-like client-side behaviors using Blazor, without the need for significant JavaScript development. Blazor applications can call APIs to request data or perform server-side operations. They can interoperate with JavaScript where necessary to take advantage of JavaScript libraries and frameworks.
 
@@ -112,6 +114,14 @@ The following decision table summarizes some of the basic factors to consider wh
 | Support Browsers without Scripting                   | **Supported**           | **Not Supported**           | **Supported**   |
 | Minimal Client-Side Application Behavior             | **Well-Suited**         | **Overkill**                | **Viable**      |
 | Rich, Complex User Interface Requirements            | **Limited**             | **Well-Suited**             | **Well-Suited** |
+
+## Other considerations
+
+Traditional Web Apps tend to be simpler and have better Search Engine Optimization (SEO) criteria than SPA apps. Search engine bots can easily consume content from traditional apps, while support for indexing SPAs may be lacking or limited. If your app benefits from public discovery by search engines, this is often an important consideration.
+
+In addition, unless you've built a management tool for your SPA's content, it may require developers to make changes. Traditional Web Apps are often easier for non-developers to make changes to, since much of the content is simply HTML and may not require a build process to preview or even deploy. If non-developers in your organization are likely to need to maintain the content of the app, a traditional web app may be a better choice.
+
+SPAs shine when the app has complex interactive forms or other user interaction features. For complex apps that require authentication to use, and thus aren't accessible by public search engine spiders, SPAs are a great option in many cases.
 
 >[!div class="step-by-step"]
 >[Previous](modern-web-applications-characteristics.md)

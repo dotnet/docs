@@ -68,7 +68,7 @@ Module RegExExamples
     Public Sub Example3()
         ' <Snippet3>
         Dim input As String = "abacus -- alabaster - * - atrium -+- " +
-                            "any -*- actual - + - armoir - - alarm"
+                            "any -*- actual - + - armoire - - alarm"
         Dim pattern As String = "\s-\s?[+*]?\s?-\s"
         Dim elements() As String = Regex.Split(input, pattern)
         For Each element In elements
@@ -81,7 +81,7 @@ Module RegExExamples
         '       atrium
         '       any
         '       actual
-        '       armoir
+        '       armoire
         '       alarm
         ' </Snippet3>
     End Sub

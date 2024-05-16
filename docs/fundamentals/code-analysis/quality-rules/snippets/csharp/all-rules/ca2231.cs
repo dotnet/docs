@@ -24,9 +24,9 @@ namespace ca2231
 
         // Violates rule: OverrideGetHashCodeOnOverridingEquals.
         // Violates rule: OverrideOperatorEqualsOnOverridingValueTypeEquals.
-        public override bool Equals(object obj)
+        public override bool Equals(object? obj)
         {
-            if (obj.GetType() != typeof(PointWithoutHash))
+            if (obj?.GetType() != typeof(PointWithoutHash))
                 return false;
 
             PointWithoutHash p = (PointWithoutHash)obj;

@@ -4,18 +4,19 @@ using System.Text.RegularExpressions;
 
 public class Example
 {
-   public static void Main()
-   {
-      string[] inputs = { "jack.sprat", "dog#", "dog#1", "me.myself",
+    public static void Main()
+    {
+        string[] inputs = { "jack.sprat", "dog#", "dog#1", "me.myself",
                           "me.myself!" };
-      string pattern = @"^[A-Z0-9]([-!#$%&'.*+/=?^`{}|~\w])*(?<=[A-Z0-9])$";
-      foreach (string input in inputs) {
-         if (Regex.IsMatch(input, pattern, RegexOptions.IgnoreCase))
-            Console.WriteLine("{0}: Valid", input);
-         else
-            Console.WriteLine("{0}: Invalid", input);
-      }
-   }
+        string pattern = @"^[A-Z0-9]([-!#$%&'.*+/=?^`{}|~\w])*(?<=[A-Z0-9])$";
+        foreach (string input in inputs)
+        {
+            if (Regex.IsMatch(input, pattern, RegexOptions.IgnoreCase))
+                Console.WriteLine("{0}: Valid", input);
+            else
+                Console.WriteLine("{0}: Invalid", input);
+        }
+    }
 }
 // The example displays the following output:
 //       jack.sprat: Valid

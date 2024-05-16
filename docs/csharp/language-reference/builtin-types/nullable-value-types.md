@@ -1,5 +1,5 @@
 ---
-title: "Nullable value types - C# reference"
+title: "Nullable value types"
 description: Learn about C# nullable value types and how to use them
 ms.date: 11/04/2019
 helpviewer_keywords: 
@@ -8,9 +8,6 @@ helpviewer_keywords:
 # Nullable value types (C# reference)
 
 A *nullable value type* `T?` represents all values of its underlying [value type](value-types.md) `T` and an additional [null](../keywords/null.md) value. For example, you can assign any of the following three values to a `bool?` variable: `true`, `false`, or `null`. An underlying value type `T` cannot be a nullable value type itself.
-
-> [!NOTE]
-> C# 8.0 introduces the nullable reference types feature. For more information, see [Nullable reference types](nullable-reference-types.md). The nullable value types are available beginning with C# 2.
 
 Any nullable value type is an instance of the generic <xref:System.Nullable%601?displayProperty=nameWithType> structure. You can refer to a nullable value type with an underlying type `T` in any of the following interchangeable forms: `Nullable<T>` or `T?`.
 
@@ -26,7 +23,7 @@ The default value of a nullable value type represents `null`, that is, it's an i
 
 ## Examination of an instance of a nullable value type
 
-Beginning with C# 7.0, you can use the [`is` operator with a type pattern](../operators/type-testing-and-cast.md#type-testing-with-pattern-matching) to both examine an instance of a nullable value type for `null` and retrieve a value of an underlying type:
+You can use the [`is` operator with a type pattern](../operators/type-testing-and-cast.md#type-testing-with-pattern-matching) to both examine an instance of a nullable value type for `null` and retrieve a value of an underlying type:
 
 [!code-csharp-interactive[use pattern matching](snippets/shared/NullableValueTypes.cs#PatternMatching)]
 
@@ -109,26 +106,23 @@ Also, don't use the [is](../operators/type-testing-and-cast.md#is-operator) oper
 
 [!code-csharp-interactive[is operator example](snippets/shared/NullableValueTypes.cs#IsOperator)]
 
-You can use the code presented in the following example to determine whether an instance is of a nullable value type:
-
-[!code-csharp-interactive[whether an instance is of a nullable type](snippets/shared/NullableValueTypes.cs#IsInstanceNullable)]
+Instead use the <xref:System.Nullable.GetUnderlyingType%2A?displayProperty=nameWithType> from the first example and [typeof](../operators/type-testing-and-cast.md#typeof-operator) operator to check if an instance is of a nullable value type.
 
 > [!NOTE]
 > The methods described in this section are not applicable in the case of [nullable reference types](nullable-reference-types.md).
 
 ## C# language specification
 
-For more information, see the following sections of the [C# language specification](~/_csharplang/spec/introduction.md):
+For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
-- [Nullable types](~/_csharplang/spec/types.md#nullable-types)
-- [Lifted operators](~/_csharplang/spec/expressions.md#lifted-operators)
-- [Implicit nullable conversions](~/_csharplang/spec/conversions.md#implicit-nullable-conversions)
-- [Explicit nullable conversions](~/_csharplang/spec/conversions.md#explicit-nullable-conversions)
-- [Lifted conversion operators](~/_csharplang/spec/conversions.md#lifted-conversion-operators)
+- [Nullable types](~/_csharpstandard/standard/types.md#8312-nullable-value-types)
+- [Lifted operators](~/_csharpstandard/standard/expressions.md#1248-lifted-operators)
+- [Implicit nullable conversions](~/_csharpstandard/standard/conversions.md#1026-implicit-nullable-conversions)
+- [Explicit nullable conversions](~/_csharpstandard/standard/conversions.md#1034-explicit-nullable-conversions)
+- [Lifted conversion operators](~/_csharpstandard/standard/conversions.md#1062-lifted-conversions)
 
 ## See also
 
-- [C# reference](../index.md)
 - [What exactly does 'lifted' mean?](/archive/blogs/ericlippert/what-exactly-does-lifted-mean)
 - <xref:System.Nullable%601?displayProperty=nameWithType>
 - <xref:System.Nullable?displayProperty=nameWithType>

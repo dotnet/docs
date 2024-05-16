@@ -6,10 +6,10 @@ ms.assetid: 2288f390-9263-4acf-b0ef-b0cab82bbec1
 ---
 # 3416 - WebSocketConnectionRequestSendStop
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3416|  
 |Keywords|HTTP|  
 |Level|Verbose|  

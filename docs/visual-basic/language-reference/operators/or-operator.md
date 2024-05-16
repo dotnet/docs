@@ -74,7 +74,7 @@ result = expression1 Or expression2
 
  The `Or` operator can be *overloaded*, which means that a class or structure can redefine its behavior when an operand has the type of that class or structure. If your code uses this operator on such a class or structure, be sure you understand its redefined behavior. For more information, see [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md).  
   
-## Example  
+## Example 1
 
  The following example uses the `Or` operator to perform an inclusive logical disjunction on two expressions. The result is a `Boolean` value that represents whether either of the two expressions is `True`.  
   
@@ -82,7 +82,7 @@ result = expression1 Or expression2
   
  The preceding example produces results of `True`, `True`, and `False`, respectively.  
   
-## Example  
+## Example 2  
 
  The following example uses the `Or` operator to perform inclusive logical disjunction on the individual bits of two numeric expressions. The bit in the result pattern is set if either of the corresponding bits in the operands is set to 1.  
   

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace AttributeExamples
+﻿namespace AttributeExamples
 {
     namespace VersionOne
     {

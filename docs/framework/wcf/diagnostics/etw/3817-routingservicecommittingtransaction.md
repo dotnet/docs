@@ -6,10 +6,10 @@ ms.assetid: 85d71995-3a19-4955-81ba-3e72fe4c5b32
 ---
 # 3817 - RoutingServiceCommittingTransaction
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3817|  
 |Keywords|RoutingServices|  
 |Level|Information|  

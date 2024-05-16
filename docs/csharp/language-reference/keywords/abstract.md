@@ -1,6 +1,6 @@
 ---
 description: "abstract - C# Reference"
-title: "abstract - C# Reference"
+title: "abstract keyword"
 ms.date: 07/20/2015
 f1_keywords: 
   - "abstract"
@@ -13,7 +13,7 @@ ms.assetid: b0797770-c1f3-4b4d-9441-b9122602a6bb
 
 The `abstract` modifier indicates that the thing being modified has a missing or incomplete implementation. The abstract modifier can be used with classes, methods, properties, indexers, and events. Use the `abstract` modifier in a class declaration to indicate that a class is intended only to be a base class of other classes, not instantiated on its own. Members marked as abstract must be implemented by non-abstract classes that derive from the abstract class.
   
-## Example  
+## Example 1
 
  In this example, the class `Square` must provide an implementation of `GetArea` because it derives from `Shape`:  
   
@@ -61,7 +61,7 @@ The `abstract` modifier indicates that the thing being modified has a missing or
   
 [!code-csharp[csrefKeywordsModifiers#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#2)]
   
-## Example  
+## Example 2
 
  In this example, the class `DerivedClass` is derived from an abstract class `BaseClass`. The abstract class contains an abstract method, `AbstractMethod`, and two abstract properties, `X` and `Y`.  
   
@@ -81,8 +81,6 @@ You will get an error saying that the compiler cannot create an instance of the 
   
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
 - [Modifiers](index.md)
 - [virtual](./virtual.md)
 - [override](./override.md)

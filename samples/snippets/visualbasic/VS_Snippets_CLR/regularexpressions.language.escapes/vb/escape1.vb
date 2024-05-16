@@ -11,7 +11,7 @@ Module Example
                               "Shanghai, China" + vbTab + "13,831,900" + vbCrLf + _
                               "Karachi, Pakistan|12,991,000" + vbCrLf + _
                               "Delhi, India" + vbTab + "12,259,230" + vbCrLf + _
-                              "Istanbul, Turkey|11,372,613" + vbCrLf
+                              "Istanbul, Türkiye|11,372,613" + vbCrLf
         Console.WriteLine("Population of the World's Largest Cities, 2009")
         Console.WriteLine()
         Console.WriteLine("{0,-20} {1,10}", "City", "Population")
@@ -31,5 +31,5 @@ End Module
 '       Shanghai, China      13,831,900
 '       Karachi, Pakistan    12,991,000
 '       Delhi, India         12,259,230
-'       Istanbul, Turkey     11,372,613
+'       Istanbul, Türkiye     11,372,613
 ' </Snippet1>

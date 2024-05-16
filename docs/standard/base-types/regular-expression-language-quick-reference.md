@@ -53,18 +53,18 @@ A character class matches any one of a set of characters. Character classes incl
 
 |Character class|Description|Pattern|Matches|
 |---------------------|-----------------|-------------|-------------|
-|`[` *character_group* `]`|Matches any single character in *character_group*. By default, the match is case-sensitive.|`[ae]`|`"a"` in `"gray"`<br /><br /> `"a"`, `"e"` in `"lane"`|
-|`[^` *character_group* `]`|Negation: Matches any single character that is not in *character_group*. By default, characters in *character_group* are case-sensitive.|`[^aei]`|`"r"`, `"g"`, `"n"` in `"reign"`|
-|`[` *first* `-` *last* `]`|Character range: Matches any single character in the range from *first* to *last*.|`[A-Z]`|`"A"`, `"B"` in `"AB123"`|
-|`.`|Wildcard: Matches any single character except \n.<br /><br /> To match a literal period character (. or `\u002E`), you must precede it with the escape character (`\.`).|`a.e`|`"ave"` in `"nave"`<br /><br /> `"ate"` in `"water"`|
-|`\p{` *name* `}`|Matches any single character in the Unicode general category or named block specified by *name*.|`\p{Lu}`<br /><br /> `\p{IsCyrillic}`|`"C"`, `"L"` in `"City Lights"`<br /><br /> `"Д"`, `"Ж"` in `"ДЖem"`|
-|`\P{` *name* `}`|Matches any single character that is not in the Unicode general category or named block specified by *name*.|`\P{Lu}`<br /><br /> `\P{IsCyrillic}`|`"i"`, `"t"`, `"y"` in `"City"`<br /><br /> `"e"`, `"m"` in `"ДЖem"`|
-|`\w`|Matches any word character.|`\w`|`"I"`, `"D"`, `"A"`, `"1"`, `"3"` in `"ID A1.3"`|
-|`\W`|Matches any non-word character.|`\W`|`" "`, `"."` in `"ID A1.3"`|
-|`\s`|Matches any white-space character.|`\w\s`|`"D "` in `"ID A1.3"`|
-|`\S`|Matches any non-white-space character.|`\s\S`|`" _"` in `"int __ctr"`|
-|`\d`|Matches any decimal digit.|`\d`|`"4"` in `"4 = IV"`|
-|`\D`|Matches any character other than a decimal digit.|`\D`|`" "`, `"="`, `" "`, `"I"`, `"V"` in `"4 = IV"`|
+|`[` *character_group* `]`|Matches any [single character in *character_group*](character-classes-in-regular-expressions.md#positive-character-group--). By default, the match is case-sensitive.|`[ae]`|`"a"` in `"gray"`<br /><br /> `"a"`, `"e"` in `"lane"`|
+|`[^` *character_group* `]`|Negation: Matches any [single character that is not in *character_group*](character-classes-in-regular-expressions.md#negative-character-group-). By default, characters in *character_group* are case-sensitive.|`[^aei]`|`"r"`, `"g"`, `"n"` in `"reign"`|
+|`[` *first* `-` *last* `]`|Character range: Matches any [single character in the range from *first* to *last*](character-classes-in-regular-expressions.md#positive-character-group--).|`[A-Z]`|`"A"`, `"B"` in `"AB123"`|
+|`.`|Wildcard: Matches any [single character except `\n`](character-classes-in-regular-expressions.md#any-character-).<br /><br /> To match a literal period character (. or `\u002E`), you must precede it with the escape character (`\.`).|`a.e`|`"ave"` in `"nave"`<br /><br /> `"ate"` in `"water"`|
+|`\p{` *name* `}`|Matches [any single character in the Unicode general category or named block specified by *name*](character-classes-in-regular-expressions.md#unicode-category-or-unicode-block-p).|`\p{Lu}`<br /><br /> `\p{IsCyrillic}`|`"C"`, `"L"` in `"City Lights"`<br /><br /> `"Д"`, `"Ж"` in `"ДЖem"`|
+|`\P{` *name* `}`|Matches [any single character that is not in the Unicode general category or named block specified by *name*](character-classes-in-regular-expressions.md#negative-unicode-category-or-unicode-block-p).|`\P{Lu}`<br /><br /> `\P{IsCyrillic}`|`"i"`, `"t"`, `"y"` in `"City"`<br /><br /> `"e"`, `"m"` in `"ДЖem"`|
+|`\w`|Matches any [word character](character-classes-in-regular-expressions.md#word-character-w).|`\w`|`"I"`, `"D"`, `"A"`, `"1"`, `"3"` in `"ID A1.3"`|
+|`\W`|Matches any [non-word character](character-classes-in-regular-expressions.md#non-word-character-w).|`\W`|`" "`, `"."` in `"ID A1.3"`|
+|`\s`|Matches any [white-space character](character-classes-in-regular-expressions.md#whitespace-character-s).|`\w\s`|`"D "` in `"ID A1.3"`|
+|`\S`|Matches any [non-white-space character](character-classes-in-regular-expressions.md#non-whitespace-character-s).|`\s\S`|`" _"` in `"int __ctr"`|
+|`\d`|Matches any [decimal digit](character-classes-in-regular-expressions.md#decimal-digit-character-d).|`\d`|`"4"` in `"4 = IV"`|
+|`\D`|Matches any [character other than a decimal digit](character-classes-in-regular-expressions.md#non-digit-character-d).|`\D`|`" "`, `"="`, `" "`, `"I"`, `"V"` in `"4 = IV"`|
 
 ## Anchors
 
@@ -77,7 +77,7 @@ Anchors, or atomic zero-width assertions, cause a match to succeed or fail depen
 |`\A`|The match must occur at the start of the string.|`\A\d{3}`|`"901"` in `"901-333-"`|
 |`\Z`|The match must occur at the end of the string or before `\n` at the end of the string.|`-\d{3}\Z`|`"-333"` in `"-901-333"`|
 |`\z`|The match must occur at the end of the string.|`-\d{3}\z`|`"-333"` in `"-901-333"`|
-|`\G`|The match must occur at the point where the previous match ended.|`\G\(\d\)`|`"(1)"`, `"(3)"`, `"(5)"` in `"(1)(3)(5)[7](9)"`|
+|`\G`|The match must occur at the point where the previous match ended, or if there was no previous match, at the position in the string where matching started.|`\G\(\d\)`|`"(1)"`, `"(3)"`, `"(5)"` in `"(1)(3)(5)[7](9)"`|
 |`\b`|The match must occur on a boundary between a `\w` (alphanumeric) and a `\W` (nonalphanumeric) character.|`\b\w+\s\w+\b`|`"them theme"`, `"them them"` in `"them theme them them"`|
 |`\B`|The match must not occur on a `\b` boundary.|`\Bend\w*\b`|`"ends"`, `"ender"` in `"end sends endure lender"`|
 
@@ -96,19 +96,19 @@ Grouping constructs delineate subexpressions of a regular expression and typical
 |`(?!` *subexpression* `)`|Zero-width negative lookahead assertion.|`\b\w+\b(?!.+and.+)`|`"and"`, `"some"`, `"mice"`<br/>in<br/>`"cats, dogs and some mice."`|
 |`(?<=` *subexpression* `)`|Zero-width positive lookbehind assertion.|`\b\w+\b(?<=.+and.+)`<br/><br/>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;<br/><br/>`\b\w+\b(?<=.+and.*)`|`"some"`, `"mice"`<br/>in<br/>`"cats, dogs and some mice."`<br/>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;<br/>`"and"`, `"some"`, `"mice"`<br/>in<br/>`"cats, dogs and some mice."`|
 |`(?<!` *subexpression* `)`|Zero-width negative lookbehind assertion.|`\b\w+\b(?<!.+and.+)`<br/><br/>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;<br/><br/>`\b\w+\b(?<!.+and.*)`|`"cats"`, `"dogs"`, `"and"`<br/>in<br/>`"cats, dogs and some mice."`<br/>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;<br/>`"cats"`, `"dogs"`<br/>in<br/>`"cats, dogs and some mice."`|
-|`(?>` *subexpression* `)`|Atomic group.|`(?>a\|ab)c`|`"ac"` in`"ac"`<br/><br/>_nothing_ in`"abc"`|
+|`(?>` *subexpression* `)`|Atomic group.|'(?>a&#124;ab)c|`"ac"` in`"ac"`<br/><br/>_nothing_ in`"abc"`|
 
 ### Lookarounds at a glance
 
 When the regular expression engine hits a **lookaround expression**, it takes a substring reaching from the current position to the start (lookbehind) or end (lookahead) of the original string, and then runs
 <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=nameWithType> on that substring using the lookaround pattern. Success of this subexpression's result is then determined by whether it's a positive or negative assertion.
 
-| Lookaround | Name | Function |
-| - | - | - |
-`(?=check)` | Positive&nbsp;Lookahead | Asserts that what immediately follows the current position in the string is "check"
-`(?<=check)` | Positive&nbsp;Lookbehind | Asserts that what immediately precedes the current position in the string is "check"
-`(?!check)` | Negative&nbsp;Lookahead  | Asserts that what immediately follows the current position in the string is not "check"
-`(?<!check)` | Negative&nbsp;Lookbehind | Asserts that what immediately precedes the current position in the string is not "check"
+| Lookaround   | Name                     | Function                                                                                 |
+|--------------|--------------------------|------------------------------------------------------------------------------------------|
+| `(?=check)`  | Positive&nbsp;Lookahead  | Asserts that what immediately follows the current position in the string is "check"      |
+| `(?<=check)` | Positive&nbsp;Lookbehind | Asserts that what immediately precedes the current position in the string is "check"     |
+| `(?!check)`  | Negative&nbsp;Lookahead  | Asserts that what immediately follows the current position in the string is not "check"  |
+| `(?<!check)` | Negative&nbsp;Lookbehind | Asserts that what immediately precedes the current position in the string is not "check" |
 
 Once they have matched, **atomic groups** won't be re-evaluated again, even when the remainder of the pattern fails due to the match. This can significantly improve performance when quantifiers occur within the atomic group or the remainder of the pattern.
 
@@ -118,15 +118,15 @@ A quantifier specifies how many instances of the previous element (which can be 
 
 |Quantifier|Description|Pattern|Matches|
 |----------------|-----------------|-------------|-------------|
-|`*`|Matches the previous element zero or more times.|`\d*\.\d`|`".0"`, `"19.9"`, `"219.9"`|
+|`*`|Matches the previous element zero or more times.|`a.*c`|`"abcbc"` in `"abcbc"`|
 |`+`|Matches the previous element one or more times.|`"be+"`|`"bee"` in `"been"`, `"be"` in `"bent"`|
-|`?`|Matches the previous element zero or one time.|`"rai?n"`|`"ran"`, `"rain"`|
+|`?`|Matches the previous element zero or one time.|`"rai?"`|`"rai"` in `"rain"`|
 |`{` *n* `}`|Matches the previous element exactly *n* times.|`",\d{3}"`|`",043"` in `"1,043.6"`, `",876"`, `",543"`, and `",210"` in `"9,876,543,210"`|
 |`{` *n* `,}`|Matches the previous element at least *n* times.|`"\d{2,}"`|`"166"`, `"29"`, `"1930"`|
 |`{` *n* `,` *m* `}`|Matches the previous element at least *n* times, but no more than *m* times.|`"\d{3,5}"`|`"166"`, `"17668"`<br /><br /> `"19302"` in `"193024"`|
-|`*?`|Matches the previous element zero or more times, but as few times as possible.|`\d*?\.\d`|`".0"`, `"19.9"`, `"219.9"`|
+|`*?`|Matches the previous element zero or more times, but as few times as possible.|`a.*?c`|`"abc"` in `"abcbc"`|
 |`+?`|Matches the previous element one or more times, but as few times as possible.|`"be+?"`|`"be"` in `"been"`, `"be"` in `"bent"`|
-|`??`|Matches the previous element zero or one time, but as few times as possible.|`"rai??n"`|`"ran"`, `"rain"`|
+|`??`|Matches the previous element zero or one time, but as few times as possible.|`"rai??"`|`"ra"` in `"rain"`|
 |`{` *n* `}?`|Matches the preceding element exactly *n* times.|`",\d{3}?"`|`",043"` in `"1,043.6"`, `",876"`, `",543"`, and `",210"` in `"9,876,543,210"`|
 |`{` *n* `,}?`|Matches the previous element at least *n* times, but as few times as possible.|`"\d{2,}?"`|`"166"`, `"29"`, `"1930"`|
 |`{` *n* `,` *m* `}?`|Matches the previous element between *n* and *m* times, but as few times as possible.|`"\d{3,5}?"`|`"166"`, `"17668"`<br /><br /> `"193"`, `"024"` in `"193024"`|
@@ -147,8 +147,8 @@ Alternation constructs modify a regular expression to enable either/or matching.
 |Alternation construct|Description|Pattern|Matches|
 |---------------------------|-----------------|-------------|-------------|
 |<code>&#124;</code>|Matches any one element separated by the vertical bar (<code>&#124;</code>) character.|<code>th(e&#124;is&#124;at)</code>|`"the"`, `"this"` in `"this is the day."`|
-|`(?(` *expression* `)` *yes* <code>&#124;</code> *no* `)`|Matches *yes* if the regular expression pattern designated by *expression* matches; otherwise, matches the optional *no* part. *expression* is interpreted as a zero-width assertion.|<code>(?(A)A\d{2}\b&#124;\b\d{3}\b)</code>|`"A10"`, `"910"` in `"A10 C103 910"`|
-|`(?(` *name* `)` *yes* <code>&#124;</code> *no* `)`|Matches *yes* if *name*, a named or numbered capturing group, has a match; otherwise, matches the optional *no*.|<code>(?&lt;quoted&gt;&quot;)?(?(quoted).+?&quot;&#124;\S+\s)</code>|`"Dogs.jpg "`, `"\"Yiska playing.jpg\""` in `"Dogs.jpg \"Yiska playing.jpg\""`|
+|`(?(` *expression* `)` *yes* <code>&#124;</code> *no* `)`<br /> or <br />`(?(` *expression* `)` *yes* `)`|Matches *yes* if the regular expression pattern designated by *expression* matches; otherwise, matches the optional *no* part. *expression* is interpreted as a zero-width assertion.<br /><br />To avoid ambiguity with a named or numbered capturing group, you can optionally use an explicit assertion, like this:<br />`(?( (?=` *expression* `) )` *yes* <code>&#124;</code> *no* `)`|<code>(?(A)A\d{2}\b&#124;\b\d{3}\b)</code>|`"A10"`, `"910"` in `"A10 C103 910"`|
+|`(?(` *name* `)` *yes* <code>&#124;</code> *no* `)`<br /> or <br />`(?(` *name* `)` *yes* `)`|Matches *yes* if *name*, a named or numbered capturing group, has a match; otherwise, matches the optional *no*.|<code>(?&lt;quoted&gt;&quot;)?(?(quoted).+?&quot;&#124;\S+\s)</code>|`"Dogs.jpg "`, `"\"Yiska playing.jpg\""` in `"Dogs.jpg \"Yiska playing.jpg\""`|
 
 ## Substitutions
 

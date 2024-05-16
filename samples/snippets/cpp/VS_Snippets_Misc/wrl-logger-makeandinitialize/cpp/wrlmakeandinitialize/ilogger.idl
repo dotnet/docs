@@ -1,8 +1,0 @@
-import "ocidl.idl";
-
-// Prints text to the console.
-[uuid(AFDB9683-F18A-4B85-90D1-B6158DAFA46C)]
-interface ILogger : IUnknown
-{
-    HRESULT Log([in] LPCWSTR text);
-}

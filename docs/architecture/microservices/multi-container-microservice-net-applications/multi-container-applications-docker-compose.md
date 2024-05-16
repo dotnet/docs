@@ -1,10 +1,12 @@
 ---
 title: Defining your multi-container application with docker-compose.yml
 description: How to specify  microservices composition for a multicontainer application with docker-compose.yml.
-ms.date: 01/13/2021
+ms.date: 11/19/2021
 ---
 
 # Defining your multi-container application with docker-compose.yml
+
+[!INCLUDE [download-alert](../includes/download-alert.md)]
 
 In this guide, the [docker-compose.yml](https://docs.docker.com/compose/compose-file/) file was introduced in the section [Step 4. Define your services in docker-compose.yml when building a multi-container Docker application](../docker-application-development-process/docker-app-development-workflow.md#step-4-define-your-services-in-docker-composeyml-when-building-a-multi-container-docker-application). However, there are additional ways to use the docker-compose files that are worth exploring in further detail.
 
@@ -245,7 +247,7 @@ services:
       - marketing-api
 
   sqldata:
-    image: mcr.microsoft.com/mssql/server:2017-latest
+    image: mcr.microsoft.com/mssql/server:2019-latest
 
   nosqldata:
     image: mongo
@@ -255,7 +257,6 @@ services:
 
   rabbitmq:
     image: rabbitmq:3-management
-
 ```
 
 The values in the base docker-compose.yml file should not change because of different target deployment environments.
@@ -304,7 +305,7 @@ services:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://0.0.0.0:80
       - ConnectionString=${ESHOP_AZURE_CATALOG_DB:-Server=sqldata;Database=Microsoft.eShopOnContainers.Services.CatalogDb;User Id=sa;Password=[PLACEHOLDER]}
-      - PicBaseUrl=${ESHOP_AZURE_STORAGE_CATALOG_URL:-http://localhost:5202/api/v1/catalog/items/[0]/pic/}
+      - PicBaseUrl=${ESHOP_AZURE_STORAGE_CATALOG_URL:-http://host.docker.internal:5202/api/v1/catalog/items/[0]/pic/}
       - EventBusConnection=${ESHOP_AZURE_SERVICE_BUS:-rabbitmq}
       - EventBusUserName=${ESHOP_SERVICE_BUS_USERNAME}
       - EventBusPassword=${ESHOP_SERVICE_BUS_PASSWORD}
@@ -331,7 +332,7 @@ services:
       - identityUrl=http://identity-api
       - IdentityUrlExternal=http://${ESHOP_EXTERNAL_DNS_NAME_OR_IP}:5105
       - CampaignDetailFunctionUri=${ESHOP_AZUREFUNC_CAMPAIGN_DETAILS_URI}
-      - PicBaseUrl=${ESHOP_AZURE_STORAGE_MARKETING_URL:-http://localhost:5110/api/v1/campaigns/[0]/pic/}
+      - PicBaseUrl=${ESHOP_AZURE_STORAGE_MARKETING_URL:-http://host.docker.internal:5110/api/v1/campaigns/[0]/pic/}
       - AzureStorageAccountName=${ESHOP_AZURE_STORAGE_MARKETING_NAME}
       - AzureStorageAccountKey=${ESHOP_AZURE_STORAGE_MARKETING_KEY}
       - AzureServiceBusEnabled=False
@@ -378,7 +379,6 @@ services:
     ports:
       - "15672:15672"
       - "5672:5672"
-
 ```
 
 In this example, the development override configuration exposes some ports to the host, defines environment variables with redirect URLs, and specifies connection strings for the development environment. These settings are all just for the development environment.
@@ -410,7 +410,7 @@ The following example shows an .env file like the [.env](https://github.com/dotn
 ```sh
 # .env file
 
-ESHOP_EXTERNAL_DNS_NAME_OR_IP=localhost
+ESHOP_EXTERNAL_DNS_NAME_OR_IP=host.docker.internal
 
 ESHOP_PROD_EXTERNAL_DNS_NAME_OR_IP=10.121.122.92
 ```
@@ -425,14 +425,14 @@ The values set in the run-time environment always override the values defined in
     <https://docs.docker.com/compose/overview/>
 
 - **Multiple Compose files** \
-    [https://docs.docker.com/compose/extends/\#multiple-compose-files](https://docs.docker.com/compose/extends/#multiple-compose-files)
+    [https://docs.docker.com/compose/multiple-compose-files/](https://docs.docker.com/compose/multiple-compose-files/)
 
 ### Building optimized ASP.NET Core Docker images
 
 If you are exploring Docker and .NET on sources on the Internet, you will find Dockerfiles that demonstrate the simplicity of building a Docker image by copying your source into a container. These examples suggest that by using a simple configuration, you can have a Docker image with the environment packaged with your application. The following example shows a simple Dockerfile in this vein.
 
 ```dockerfile
-FROM mcr.microsoft.com/dotnet/sdk:5.0
+FROM mcr.microsoft.com/dotnet/sdk:8.0
 WORKDIR /app
 ENV ASPNETCORE_URLS http://+:80
 EXPOSE 80
@@ -465,10 +465,10 @@ For faster startup, runtime images also automatically set aspnetcore\_urls to po
 #### Additional resources
 
 - **Building Optimized Docker Images with ASP.NET Core**
-  <https://docs.microsoft.com/archive/blogs/stevelasker/building-optimized-docker-images-with-asp-net-core>
+  [https://learn.microsoft.com/archive/blogs/stevelasker/building-optimized-docker-images-with-asp-net-core](/archive/blogs/stevelasker/building-optimized-docker-images-with-asp-net-core)
 
 - **Building Docker Images for .NET Applications**
-  [https://docs.microsoft.com/dotnet/core/docker/building-net-docker-images](/aspnet/core/host-and-deploy/docker/building-net-docker-images)
+  [https://learn.microsoft.com/dotnet/core/docker/building-net-docker-images](/aspnet/core/host-and-deploy/docker/building-net-docker-images)
 
 > [!div class="step-by-step"]
 > [Previous](data-driven-crud-microservice.md)

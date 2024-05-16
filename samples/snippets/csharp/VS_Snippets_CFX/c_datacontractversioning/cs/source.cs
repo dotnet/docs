@@ -3,8 +3,6 @@ using System.ServiceModel;
 using System.Security.Permissions;
 using System.Runtime.Serialization;
 using System.Xml;
-[assembly: SecurityPermission(
-   SecurityAction.RequestMinimum, Execution = true)]
 namespace DataContractsPrime
 {
     //C_DataContractVersioning#1

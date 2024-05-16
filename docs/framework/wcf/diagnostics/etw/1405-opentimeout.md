@@ -8,12 +8,12 @@ ms.assetid: 45470cf9-b84c-4e5e-86e2-2eb7722cbc1a
 
 ## Properties  
   
-|||  
-|-|-|  
-|ID|1405|  
-|Keywords|ServiceModel|  
-|Level|Error|  
-|Channel|Microsoft-Windows-Application Server-Applications/Analytic|  
+| Property | Value                                                      |
+| -------- | ---------------------------------------------------------- |
+| ID       | 1405                                                       |
+| Keywords | ServiceModel                                               |
+| Level    | Error                                                      |
+| Channel  | Microsoft-Windows-Application Server-Applications/Analytic |
   
 ## Description  
 

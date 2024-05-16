@@ -2,7 +2,7 @@
 title: Preserve white space while loading or parsing XML - LINQ to XML
 description: You can control the white space behavior of LINQ to XML methods that populate XML trees. For instance, you can remove indentation for in-memory processing, or leave it as is.
 ms.date: 07/20/2015
-ms.assetid: f3ff58c4-55aa-4fcd-b933-e3a2ee6e706c
+ms.topic: how-to
 ---
 
 # Preserve white space while loading or parsing XML (LINQ to XML)

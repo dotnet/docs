@@ -1,5 +1,5 @@
 ---
-title: "Comparison Between Properties and Indexers - C# Programming Guide"
+title: "Comparison Between Properties and Indexers"
 description: Compare how indexers in C# are like properties. Except for some differences, the rules that are defined for property accessors apply to indexer accessors.
 ms.date: 07/20/2015
 helpviewer_keywords: 
@@ -22,6 +22,5 @@ Indexers are like properties. Except for the differences shown in the following 
   
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Indexers](./index.md)
 - [Properties](../classes-and-structs/properties.md)

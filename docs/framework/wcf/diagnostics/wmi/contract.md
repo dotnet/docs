@@ -1,116 +1,116 @@
 ---
-description: "Learn more about: Contract"
-title: "Contract"
+description: "Learn more about the Contract class."
+title: "Contract class"
 ms.date: "03/30/2017"
 ms.assetid: aa00f6b3-7e1f-4213-841a-206463fca20b
 ---
-# Contract
+# Contract class
 
-Contract  
-  
-## Syntax  
-  
+Contract
+
+## Syntax
+
 ```csharp
-class Contract  
-{  
-  sint32 AppDomainId;  
-  Behavior Behaviors[];  
-  string Name;  
-  string Namespace;  
-  Operation Operations[];  
-  sint32 ProcessId;  
-  Contract ref;  
-  string SessionMode;  
-  string Type;  
-};  
-```  
-  
-## Methods  
+class Contract
+{
+  sint32 AppDomainId;
+  Behavior Behaviors[];
+  string Name;
+  string Namespace;
+  Operation Operations[];
+  sint32 ProcessId;
+  Contract ref;
+  string SessionMode;
+  string Type;
+};
+```
 
- The Contract class does not define any methods.  
-  
-## Properties  
+## Methods
 
- The Contract class has the following properties:  
-  
-### AppDomainId  
+ The Contract class does not define any methods.
 
- Data type: sint32  
-  
- Access type: Read-only  
-  
- The appdomain id of the appdomain that hosts the contract.  
-  
-### Behaviors  
+## Properties
 
- Data type: Behavior array  
-  
- Access type: Read-only  
-  
- The behaviors associated with this contract.  
-  
-### Name  
+ The Contract class has the following properties:
 
- Data type: string  
-  
- Access type: Read-only  
-  
- The name of the contract in WSDL.  
-  
-### Namespace  
+### AppDomainId
 
- Data type: string  
-  
- Access type: Read-only  
-  
- The namespace of the `portType` element in WSDL.  
-  
-### Operations  
+ Data type: sint32
 
- Data type: Operation array  
-  
- Access type: Read-only  
-  
- The operations of this contract.  
-  
-### ProcessId  
+ Access type: Read-only
 
- Data type: sint32  
-  
- Access type: Read-only  
-  
- The process Id of the process that hosts the contract.  
-  
-### ref  
+ The appdomain id of the appdomain that hosts the contract.
 
- Data type: Contract  
-  
- Access type: Read-only  
-  
- The type of callback when the contract is a duplex contract.  
-  
-### SessionMode  
+### Behaviors
 
- Data type: string  
-  
- Access type: Read-only  
-  
- Indicates whether the contract requires the binding associated with this contract to use channel sessions.  
-  
-### Type  
+ Data type: Behavior array
 
- Data type: string  
-  
- Access type: Read-only  
-  
- The type of the contract.  
-  
-## Requirements  
-  
-|MOF|Declared in Servicemodel.mof.|  
-|---------|-----------------------------------|  
-|Namespace|Defined in root\ServiceModel|  
-  
+ Access type: Read-only
+
+ The behaviors associated with this contract.
+
+### Name
+
+ Data type: string
+
+ Access type: Read-only
+
+ The name of the contract in WSDL.
+
+### Namespace
+
+ Data type: string
+
+ Access type: Read-only
+
+ The namespace of the `portType` element in WSDL.
+
+### Operations
+
+ Data type: Operation array
+
+ Access type: Read-only
+
+ The operations of this contract.
+
+### ProcessId
+
+ Data type: sint32
+
+ Access type: Read-only
+
+ The process Id of the process that hosts the contract.
+
+### ref
+
+ Data type: Contract
+
+ Access type: Read-only
+
+ The type of callback when the contract is a duplex contract.
+
+### SessionMode
+
+ Data type: string
+
+ Access type: Read-only
+
+ Indicates whether the contract requires the binding associated with this contract to use channel sessions.
+
+### Type
+
+ Data type: string
+
+ Access type: Read-only
+
+ The type of the contract.
+
+## Requirements
+
+|MOF|Declared in Servicemodel.mof.|
+|---------|-----------------------------------|
+|Namespace|Defined in root\ServiceModel|
+
 ## See also
 
 - <xref:System.ServiceModel.Description.ContractDescription>

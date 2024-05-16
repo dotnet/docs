@@ -21,7 +21,7 @@ topic_type:
 
 Sets up a call to the specified function.
 
-This method is obsolete in the .NET Framework version 2.0. Use [ICorDebugEval2::CallParameterizedFunction](icordebugeval2-callparameterizedfunction-method.md) instead.
+This method is obsolete in .NET Framework version 2.0. Use [ICorDebugEval2::CallParameterizedFunction](icordebugeval2-callparameterizedfunction-method.md) instead.
 
 ## Syntax
 

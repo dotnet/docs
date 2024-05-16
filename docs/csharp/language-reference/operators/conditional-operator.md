@@ -1,7 +1,7 @@
 ---
-description: "?: operator - C# reference"
-title: "?: operator - C# reference"
-ms.date: "09/17/2020"
+title: "?: operator - the ternary conditional operator"
+description: "Learn about the C# ternary conditional operator, (`?:`), that returns the result of one of the two expressions based on a Boolean expression's result."
+ms.date: "11/29/2022"
 f1_keywords:
   - "?:_CSharpKeyword"
   - "?_CSharpKeyword"
@@ -9,27 +9,26 @@ f1_keywords:
 helpviewer_keywords:
   - "?: operator [C#]"
   - "conditional operator (?:) [C#]"
-ms.assetid: e83a17f1-7500-48ba-8bee-2fbc4c847af4
 ---
-# ?: operator (C# reference)
+# ?: operator - the ternary conditional operator
 
-The conditional operator `?:`, also known as the ternary conditional operator, evaluates a Boolean expression and returns the result of one of the two expressions, depending on whether the Boolean expression evaluates to `true` or `false`.
+The conditional operator `?:`, also known as the ternary conditional operator, evaluates a Boolean expression and returns the result of one of the two expressions, depending on whether the Boolean expression evaluates to `true` or `false`, as the following example shows:
 
-The syntax for the conditional operator is as follows:
+:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ConditionalOperator.cs" id="BasicExample":::
+
+As the preceding example shows, the syntax for the conditional operator is as follows:
 
 ```csharp
 condition ? consequent : alternative
 ```
 
-The `condition` expression must evaluate to `true` or `false`. If `condition` evaluates to `true`, the `consequent` expression is evaluated, and its result becomes the result of the operation. If `condition` evaluates to `false`, the `alternative` expression is evaluated, and its result becomes the result of the operation. Only `consequent` or `alternative` is evaluated.
+The `condition` expression must evaluate to `true` or `false`. If `condition` evaluates to `true`, the `consequent` expression is evaluated, and its result becomes the result of the operation. If `condition` evaluates to `false`, the `alternative` expression is evaluated, and its result becomes the result of the operation. Only `consequent` or `alternative` is evaluated. Conditional expressions are target-typed. That is, if a target type of a conditional expression is known, the types of `consequent` and `alternative` must be implicitly convertible to the target type, as the following example shows:
 
-Beginning with C# 9.0, conditional expressions are target-typed. That is, if a target type of a conditional expression is known, the types of `consequent` and `alternative` must be implicitly convertible to the target type, as the following example shows:
+:::code language="csharp" source="snippets/shared/ConditionalOperator.cs" id="TargetTyped":::
 
-[!code-csharp[target-typed conditional](snippets/shared/ConditionalOperator.cs#TargetTyped)]
+If a target type of a conditional expression is unknown (for example, when you use the [`var`](../statements/declarations.md#implicitly-typed-local-variables) keyword) or the type of `consequent` and `alternative` must be the same or there must be an implicit conversion from one type to the other:
 
-If a target type of a conditional expression is unknown (for example, when you use the [`var`](../keywords/var.md) keyword) or in C# 8.0 and earlier, the type of `consequent` and `alternative` must be the same or there must be an implicit conversion from one type to the other:
-
-[!code-csharp[not target-typed conditional](snippets/shared/ConditionalOperator.cs#NotTargetTyped)]
+:::code language="csharp" source="snippets/shared/ConditionalOperator.cs" id="NotTargetTyped":::
 
 The conditional operator is right-associative, that is, an expression of the form
 
@@ -50,13 +49,13 @@ a ? b : (c ? d : e)
 > is this condition true ? yes : no
 > ```
 
-The following example demonstrates the usage of the conditional operator:
-
-[!code-csharp-interactive[non ref conditional](snippets/shared/ConditionalOperator.cs#ConditionalValue)]
-
 ## Conditional ref expression
 
-Beginning with C# 7.2, a [ref local](../keywords/ref.md#ref-locals) or [ref readonly local](../keywords/ref.md#ref-readonly-locals) variable can be assigned conditionally with a conditional ref expression. You can also use a conditional ref expression as a [reference return value](../keywords/ref.md#reference-return-values) or as a [`ref` method argument](../keywords/ref.md#passing-an-argument-by-reference).
+A conditional ref expression conditionally returns a variable reference, as the following example shows:
+
+:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ConditionalOperator.cs" id="ConditionalRef":::
+
+You can [`ref` assign](assignment-operator.md#ref-assignment) the result of a conditional ref expression, use it as a [reference return](../statements/jump-statements.md#ref-returns) or pass it as a `ref`, `out`, `in`, or `ref readonly` [method parameter](../keywords/method-parameters.md#reference-parameters). You can also assign to the result of a conditional ref expression, as the preceding example shows.
 
 The syntax for a conditional ref expression is as follows:
 
@@ -64,38 +63,33 @@ The syntax for a conditional ref expression is as follows:
 condition ? ref consequent : ref alternative
 ```
 
-Like the original conditional operator, a conditional ref expression evaluates only one of the two expressions: either `consequent` or `alternative`.
+Like the conditional operator, a conditional ref expression evaluates only one of the two expressions: either `consequent` or `alternative`.
 
-In the case of a conditional ref expression, the type of `consequent` and `alternative` must be the same. Conditional ref expressions are not target-typed.
+In a conditional ref expression, the type of `consequent` and `alternative` must be the same. Conditional ref expressions aren't target-typed.
 
-The following example demonstrates the usage of a conditional ref expression:
+## Conditional operator and an `if` statement
 
-[!code-csharp-interactive[conditional ref](snippets/shared/ConditionalOperator.cs#ConditionalRef)]
+Use of the conditional operator instead of an [`if` statement](../statements/selection-statements.md#the-if-statement) might result in more concise code in cases when you need conditionally to compute a value. The following example demonstrates two ways to classify an integer as negative or nonnegative:
 
-## Conditional operator and an `if..else` statement
-
-Use of the conditional operator instead of an [if-else](../keywords/if-else.md) statement might result in more concise code in cases when you need conditionally to compute a value. The following example demonstrates two ways to classify an integer as negative or nonnegative:
-
-[!code-csharp[conditional and if-else](snippets/shared/ConditionalOperator.cs#CompareWithIf)]
+:::code language="csharp" source="snippets/shared/ConditionalOperator.cs" id="CompareWithIf":::
 
 ## Operator overloadability
 
-A user-defined type cannot overload the conditional operator.
+A user-defined type can't overload the conditional operator.
 
 ## C# language specification
 
-For more information, see the [Conditional operator](~/_csharplang/spec/expressions.md#conditional-operator) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+For more information, see the [Conditional operator](~/_csharpstandard/standard/expressions.md#1218-conditional-operator) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
-For more information about features added in C# 7.2 and later, see the following feature proposal notes:
+Specifications for newer features are:
 
-- [Conditional ref expressions (C# 7.2)](~/_csharplang/proposals/csharp-7.2/conditional-ref.md)
-- [Target-typed conditional expression (C# 9.0)](~/_csharplang/proposals/csharp-9.0/target-typed-conditional-expression.md)
+- [Target-typed conditional expression](~/_csharplang/proposals/csharp-9.0/target-typed-conditional-expression.md)
 
 ## See also
 
-- [C# reference](../index.md)
+- [Simplify conditional expression (style rule IDE0075)](../../../fundamentals/code-analysis/style-rules/ide0075.md)
 - [C# operators and expressions](index.md)
-- [if-else statement](../keywords/if-else.md)
+- [if statement](../statements/selection-statements.md#the-if-statement)
 - [?. and ?[] operators](member-access-operators.md#null-conditional-operators--and-)
 - [?? and ??= operators](null-coalescing-operator.md)
 - [ref keyword](../keywords/ref.md)

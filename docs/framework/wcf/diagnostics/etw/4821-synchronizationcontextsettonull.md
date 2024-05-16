@@ -6,10 +6,10 @@ ms.assetid: 0fbff6f6-752a-4a4a-b5a3-3adb5e688527
 ---
 # 4821 - SynchronizationContextSetToNull
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4821|  
 |Keywords|Discovery|  
 |Level|Information|  

@@ -1,9 +1,15 @@
+---
+author: adegeo
+ms.author: adegeo
+ms.date: 12/29/2023
+ms.topic: include
+ms.custom: linux-related-content
+---
 
 > [!IMPORTANT]
-> Package manager installs are only supported on the **x64** architecture. Other architectures, such as **ARM**, must install .NET by some other means such as with Snap, an installer script, or through a manual binary installation.
+> Using a package manager to install .NET from the **Microsoft package feed** only supports the **x64** architecture. Other architectures, such as **Arm**, aren't supported by the **Microsoft package feed**.
 
-For more information on installing .NET without a package manager, see one of the following articles:
+For more information on installing .NET **without a package manager**, see one of the following articles:
 
-- [Install the .NET SDK or the .NET Runtime with Snap.](../linux-snap.md)
-- [Install the .NET SDK or the .NET Runtime with a script.](../linux-scripted-manual.md#scripted-install)
-- [Install the .NET SDK or the .NET Runtime manually.](../linux-scripted-manual.md#manual-install)
+- [Use the `install-dotnet` script to install .NET.](../linux-scripted-manual.md#scripted-install)
+- [Manually install .NET.](../linux-scripted-manual.md#manual-install)

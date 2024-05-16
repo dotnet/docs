@@ -25,9 +25,9 @@ ms.assetid: 44bf97aa-a9a4-4eba-9a0d-cfaa6fc53a66
 The Native Image Generator (Ngen.exe) is a tool that improves the performance of managed applications. Ngen.exe creates native images, which are files containing compiled processor-specific machine code, and installs them into the native image cache on the local computer. The runtime can use native images from the cache instead of using the just-in-time (JIT) compiler to compile the original assembly.
 
 > [!NOTE]
-> Ngen.exe compiles native images for assemblies that target the .NET Framework only. The equivalent native image generator for .NET Core is [CrossGen](https://github.com/dotnet/runtime/blob/master/docs/workflow/building/coreclr/crossgen.md).
+> Ngen.exe compiles native images for assemblies that target .NET Framework only. The equivalent native image generator for .NET Core is [CrossGen](https://devblogs.microsoft.com/dotnet/conversation-about-crossgen2/).
 
-Changes to Ngen.exe in the .NET Framework 4:
+Changes to Ngen.exe in .NET Framework 4:
 
 - Ngen.exe now compiles assemblies with full trust, and code access security (CAS) policy is no longer evaluated.
 
@@ -73,7 +73,7 @@ The following table shows the syntax of each `action`. For descriptions of the i
 |Action|Description|
 |------------|-----------------|
 |`install` [`assemblyName` &#124; `assemblyPath`] [`scenarios`] [`config`] [`/queue`[`:`{`1`&#124;`2`&#124;`3`}]]|Generate native images for an assembly and its dependencies and install the images in the native image cache.<br /><br /> If `/queue` is specified, the action is queued for the native image service. The default priority is 3. See the [Priority Levels](#PriorityTable) table.|
-|`uninstall` [`assemblyName` &#124; `assemblyPath`] [`scenarios`] [`config`]|Delete the native images of an assembly and its dependencies from the native image cache.<br /><br /> To uninstall a single image and its dependencies, use the same command-line arguments that were used to install the image. **Note:**  Starting with the .NET Framework 4, the action `uninstall` * is no longer supported.|
+|`uninstall` [`assemblyName` &#124; `assemblyPath`] [`scenarios`] [`config`]|Delete the native images of an assembly and its dependencies from the native image cache.<br /><br /> To uninstall a single image and its dependencies, use the same command-line arguments that were used to install the image. **Note:**  Starting with .NET Framework 4, the action `uninstall` * is no longer supported.|
 |`update` [`/queue`]|Update native images that have become invalid.<br /><br /> If `/queue` is specified, the updates are queued for the native image service. Updates are always scheduled at priority 3, so they run when the computer is idle.|
 |`display` [`assemblyName` &#124; `assemblyPath`]|Display the state of the native images for an assembly and its dependencies.<br /><br /> If no argument is supplied, everything in the native image cache is displayed.|
 |`executeQueuedItems` [<code>1&#124;2&#124;3</code>]<br /><br /> -or-<br /><br /> `eqi` [1&#124;2&#124;3]|Execute queued compilation jobs.<br /><br /> If a priority is specified, compilation jobs with greater or equal priority are executed. If no priority is specified, all queued compilation jobs are executed.|
@@ -125,7 +125,7 @@ The following table shows the syntax of each `action`. For descriptions of the i
 |------------|-----------------|
 |`/nologo`|Suppress the Microsoft startup banner display.|
 |`/silent`|Suppress the display of success messages.|
-|`/verbose`|Display detailed information for debugging. **Note:**  Due to operating system limitations, this option does not display as much additional information on Windows 98 and Windows Millennium Edition.|
+|`/verbose`|Display detailed information for debugging.|
 |`/help`, `/?`|Display command syntax and options for the current release.|
 
 ## Remarks
@@ -133,9 +133,9 @@ The following table shows the syntax of each `action`. For descriptions of the i
 To run Ngen.exe, you must have administrative privileges.
 
 > [!CAUTION]
-> Do not run Ngen.exe on assemblies that are not fully trusted. Starting with the .NET Framework 4, Ngen.exe compiles assemblies with full trust, and code access security (CAS) policy is no longer evaluated.
+> Do not run Ngen.exe on assemblies that are not fully trusted. Starting with .NET Framework 4, Ngen.exe compiles assemblies with full trust, and code access security (CAS) policy is no longer evaluated.
 
-Starting with the .NET Framework 4, the native images that are generated with Ngen.exe can no longer be loaded into applications that are running in partial trust. Instead, the just-in-time (JIT) compiler is invoked.
+Starting with .NET Framework 4, the native images that are generated with Ngen.exe can no longer be loaded into applications that are running in partial trust. Instead, the just-in-time (JIT) compiler is invoked.
 
 Ngen.exe generates native images for the assembly specified by the `assemblyname` argument to the `install` action and all its dependencies. Dependencies are determined from references in the assembly manifest. The only scenario in which you need to install a dependency separately is when the application loads it using reflection, for example by calling the <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> method.
 
@@ -237,13 +237,13 @@ Hard binding can affect startup time, because all images that are hard bound to 
 
 The following general considerations and application considerations may assist you in deciding whether to undertake the effort of evaluating native images for your application:
 
-- Native images load faster than MSIL because they eliminate the need for many startup activities, such as JIT compilation and type-safety verification.
+- Native images load faster than CIL because they eliminate the need for many startup activities, such as JIT compilation and type-safety verification.
 
 - Native images require a smaller initial working set because there is no need for the JIT compiler.
 
 - Native images enable code sharing between processes.
 
-- Native images require more hard disk space than MSIL assemblies and may require considerable time to generate.
+- Native images require more hard disk space than CIL assemblies and may require considerable time to generate.
 
 - Native images must be maintained.
 
@@ -353,9 +353,7 @@ In addition, native images are not used if the assembly has been upgraded, or if
 
 When you use Ngen.exe to create a native image of an assembly, the output depends upon the command-line options that you specify and certain settings on your computer. These settings include the following:
 
-- The version of the .NET Framework.
-
-- The version of the operating system, if the change is from the Windows 9x family to the Windows NT family.
+- The version of .NET Framework.
 
 - The exact identity of the assembly (recompilation changes identity).
 
@@ -365,13 +363,9 @@ When you use Ngen.exe to create a native image of an assembly, the output depend
 
 Ngen.exe records this information when it generates a native image. When you execute an assembly, the runtime looks for the native image generated with options and settings that match the computer's current environment. The runtime reverts to JIT compilation of an assembly if it cannot find a matching native image. The following changes to a computer's settings and environment cause native images to become invalid:
 
-- The version of the .NET Framework.
+- The version of .NET Framework.
 
-     If you apply an update to the .NET Framework, all native images that you have created using Ngen.exe become invalid. For this reason, all updates of the .NET Framework execute the `Ngen Update` command, to ensure that all native images are regenerated. The .NET Framework automatically creates new native images for the .NET Framework libraries that it installs.
-
-- The version of the operating system, if the change is from the Windows 9x family to the Windows NT family.
-
-     For example, if the version of the operating system running on a computer changes from Windows 98 to Windows XP, all native images stored in the native image cache become invalid. However, if the operating system changes from Windows 2000 to Windows XP, the images are not invalidated.
+     If you apply an update to .NET Framework, all native images that you have created using Ngen.exe become invalid. For this reason, all updates of .NET Framework execute the `Ngen Update` command, to ensure that all native images are regenerated. .NET Framework automatically creates new native images for the .NET Framework libraries that it installs.
 
 - The exact identity of the assembly.
 
@@ -385,7 +379,7 @@ Ngen.exe records this information when it generates a native image. When you exe
 
      Changing machine security policy to restrict permissions previously granted to an assembly can cause a previously compiled native image for that assembly to become invalid.
 
-     For detailed information about how the common language runtime administers code access security and how to use permissions, see [Code Access Security](../misc/code-access-security.md).
+     For detailed information about how the common language runtime administers code access security and how to use permissions, see [Code Access Security](/previous-versions/dotnet/framework/code-access-security/code-access-security).
 
 <a name="Troubleshooting"></a>
 
@@ -564,7 +558,7 @@ The native image task is registered once for each CPU architecture supported on 
 |NET Framework NGEN v4.0.30319|Yes|Yes|
 |NET Framework NGEN v4.0.30319 64|No|Yes|
 
-The native image task is available in the .NET Framework 4.5 and later versions, when running on Windows 8 or later. On earlier versions of Windows, the .NET Framework uses the [Native Image Service](#native-image-service).
+The native image task is available in .NET Framework 4.5 and later versions, when running on Windows 8 or later. On earlier versions of Windows, the .NET Framework uses the [Native Image Service](#native-image-service).
 
 ### Task Lifetime
 
@@ -628,7 +622,7 @@ After being initiated by the execution of an Ngen.exe command that includes the 
 
 ### Service Interaction with Clients
 
-In the .NET Framework version 2.0, the only interaction with the native image service is through the command-line tool Ngen.exe. Use the command-line tool in installation scripts to queue actions for the native image service and to interact with the service.
+In .NET Framework version 2.0, the only interaction with the native image service is through the command-line tool Ngen.exe. Use the command-line tool in installation scripts to queue actions for the native image service and to interact with the service.
 
 ## See also
 

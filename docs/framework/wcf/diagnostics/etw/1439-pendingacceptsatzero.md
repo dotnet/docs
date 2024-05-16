@@ -6,10 +6,10 @@ ms.assetid: a57d550d-70f5-4f63-9ba7-e0f666b8f0ac
 ---
 # 1439 - PendingAcceptsAtZero
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1439|  
 |Keywords|Quota|  
 |Level|Information|  

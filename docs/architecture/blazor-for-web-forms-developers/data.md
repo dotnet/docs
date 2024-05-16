@@ -4,10 +4,12 @@ description: Learn how to access and handle data in ASP.NET Web Forms and Blazor
 author: csharpfritz    
 ms.author: jefritz
 no-loc: [Blazor]
-ms.date: 11/20/2020
+ms.date: 04/11/2022
 ---
 
 # Work with data
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 Data access is the backbone of an ASP.NET Web Forms app. If you're building forms for the web, what happens to that data? With Web Forms, there were multiple data access techniques you could use to interact with a database:
 
@@ -19,7 +21,7 @@ Data Sources were controls that you could place on a Web Forms page and configur
 
 ![Data Sources](media/data/datasources.png)
 
-ADO.NET is the low-level approach to interacting with a database. Your apps could create a connection to the database with Commands, Recordsets, and Datasets for interacting. The results could then be bound to fields on screen without much code. The drawback of this approach was that each set of ADO.NET objects (`Connection`, `Command`, and `Recordset`) was bound to libraries provided by a database vendor. Use of these components made the code rigid and difficult to migrate to a different database.
+ADO.NET is the low-level approach to interacting with a database. Your apps could create a connection to the database with Commands, Datatables, and Datasets for interacting. The results could then be bound to fields on screen without much code. The drawback of this approach was that each set of ADO.NET objects (`Connection`, `Command`, and `DataTable`) was bound to libraries provided by a database vendor. Use of these components made the code rigid and difficult to migrate to a different database.
 
 ## Entity Framework
 
@@ -62,7 +64,7 @@ public class MyDbContext : DbContext
 }
 ```
 
-The `MyDbContext` class provides the one property that defines the access and translation for the `Product` class.  Your application configures this class for interaction with the database using the following entries in the `Startup` class's `ConfigureServices` method:
+The `MyDbContext` class provides the one property that defines the access and translation for the `Product` class.  Your application configures this class for interaction with the database using the following entries in the `Startup` class's `ConfigureServices` method (or appropriate location in *Program.cs* using the `builder.Services` property instead of `services`):
 
 ```csharp
 services.AddDbContext<MyDbContext>(options =>
@@ -96,10 +98,11 @@ More information about [EF Core](/ef/core/) can be found on the Microsoft Docs s
 
 ## Interact with web services
 
-When ASP.NET was first released, SOAP services were the preferred way for web servers and clients to exchange data. Much has changed since that time, and the preferred interactions with services have shifted to direct HTTP client interactions. With ASP.NET Core and Blazor, you can register the configuration of your `HttpClient` in the `Startup` class's `ConfigureServices` method. Use that configuration when you need to interact with the HTTP endpoint. Consider the following configuration code:
+When ASP.NET was first released, SOAP services were the preferred way for web servers and clients to exchange data. Much has changed since that time, and the preferred interactions with services have shifted to direct HTTP client interactions. With ASP.NET Core and Blazor, you can register the configuration of your `HttpClient` in *Program.cs* or in the `Startup` class's `ConfigureServices` method. Use that configuration when you need to interact with the HTTP endpoint. Consider the following configuration code:
 
 ```csharp
-services.AddHttpClient("github", client =>
+// in Program.cs
+builder.Services.AddHttpClient("github", client =>
 {
     client.BaseAddress = new Uri("http://api.github.com/");
     // Github API versioning
@@ -127,7 +130,7 @@ Whenever you need to access data from GitHub, create a client with a name of `gi
 }
 ```
 
-This method returns the string describing the collection of issues in the *dotnet/docs* GitHub repository. It returns content in JSON format and is deserialized into appropriate GitHub issue objects. There are many ways that you can configure the `HttpClientFactory` to deliver preconfigured `HttpClient` objects. Try configuring multiple `HttpClient` instances with different names and endpoints for the various web services you work with. This approach will make your interactions with those services easier to work with on each page. For more details, read [the documentation for the IHttpClientFactory](/aspnet/core/fundamentals/http-requests).
+This method returns the string describing the collection of issues in the *dotnet/docs* GitHub repository. It returns content in JSON format and is deserialized into appropriate GitHub issue objects. There are many ways that you can configure the `HttpClientFactory` to deliver preconfigured `HttpClient` objects. Try configuring multiple `HttpClient` instances with different names and endpoints for the various web services you work with. This approach will make your interactions with those services easier to work with on each page. For more information, see [Make HTTP requests using IHttpClientFactory](/aspnet/core/fundamentals/http-requests).
 
 >[!div class="step-by-step"]
 >[Previous](forms-validation.md)

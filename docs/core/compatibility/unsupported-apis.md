@@ -2,18 +2,18 @@
 title: Unsupported APIs on .NET Core and .NET 5+
 titleSuffix: ""
 description: Learn which .NET APIs always throw an exception on .NET Core and .NET 5 and later versions.
-ms.date: 10/13/2020
+ms.date: 08/22/2023
 ---
 # APIs that always throw exceptions on .NET Core and .NET 5+
 
-The following APIs will always throw a <xref:System.PlatformNotSupportedException> on .NET 5 and later versions (including all versions of .NET Core) on all or a subset of platforms.
+The following APIs will always throw an exception on .NET (Core) on all or a subset of platforms. In most cases, the exception that's thrown is <xref:System.PlatformNotSupportedException>.
 
 This article organizes the affected APIs by namespace.
 
 > [!NOTE]
 >
 > - This article is a work-in-progress. It is not a complete list of APIs that throw exceptions on .NET 5+.
-> - This article does not include the explicit interface implementations for binary serialization that throw on .NET 5+. For more information, see [Binary serialization in .NET Core](../../standard/serialization/binary-serialization.md#net-core).
+> - This article does not include the explicit interface implementations for binary serialization that throw on .NET 5+. For more information, see [Binary serialization in .NET Core](/previous-versions/dotnet/fundamentals/serialization/binary/binary-serialization#net-core).
 
 ## System
 
@@ -21,6 +21,7 @@ This article organizes the affected APIs by namespace.
 | - | - |
 | <xref:System.AppDomain.CreateDomain%2A?displayProperty=nameWithType> | All |
 | <xref:System.AppDomain.ExecuteAssembly(System.String,System.String[],System.Byte[],System.Configuration.Assemblies.AssemblyHashAlgorithm)?displayProperty=nameWithType> | All |
+| <xref:System.AppDomain.Unload(System.AppDomain)?displayProperty=nameWithType> | All |
 | <xref:System.Console.CapsLock?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Console.NumberLock?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Delegate.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=nameWithType> | All |
@@ -163,12 +164,15 @@ This article organizes the affected APIs by namespace.
 
 | Member | Platforms that throw |
 | - | - |
+| <xref:System.Reflection.Assembly.CodeBase?displayProperty=nameWithType> | All |
+| <xref:System.Reflection.Assembly.EscapedCodeBase?displayProperty=nameWithType> | All |
+| <xref:System.Reflection.Assembly.LoadFrom(System.String,System.Byte[],System.Configuration.Assemblies.AssemblyHashAlgorithm)?displayProperty=nameWithType> | All |
 | <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A?displayProperty=nameWithType> | All |
 | <xref:System.Reflection.Assembly.ReflectionOnlyLoadFrom(System.String)?displayProperty=nameWithType> | All |
 | <xref:System.Reflection.AssemblyName.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=nameWithType> | All |
+| <xref:System.Reflection.AssemblyName.KeyPair?displayProperty=nameWithType> | All |
 | <xref:System.Reflection.AssemblyName.OnDeserialization(System.Object)?displayProperty=nameWithType> | All |
-| <xref:System.Reflection.StrongNameKeyPair.%23ctor(System.String)> | All |
-| <xref:System.Reflection.StrongNameKeyPair.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)> | All |
+| <xref:System.Reflection.StrongNameKeyPair.%23ctor%2A> | All |
 | <xref:System.Reflection.StrongNameKeyPair.PublicKey?displayProperty=nameWithType> | All |
 
 ## System.Runtime.CompilerServices
@@ -181,6 +185,7 @@ This article organizes the affected APIs by namespace.
 
 | Member | Platforms that throw |
 | - | - |
+| <xref:System.Runtime.InteropServices.IDispatchImplAttribute> | All |
 | <xref:System.Runtime.InteropServices.Marshal.GetIDispatchForObject(System.Object)?displayProperty=nameWithType> | All |
 | <xref:System.Runtime.InteropServices.RuntimeEnvironment.SystemConfigurationFile?displayProperty=nameWithType> | All |
 | <xref:System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeInterfaceAsIntPtr(System.Guid,System.Guid)?displayProperty=nameWithType> | All |
@@ -193,7 +198,11 @@ This article organizes the affected APIs by namespace.
 
 | Member | Platforms that throw |
 | - | - |
+| <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize(System.IO.Stream,System.Object)?displayProperty=fullName>* | All |
+| <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize(System.IO.Stream)?displayProperty=nameWithType>* | All |
 | <xref:System.Runtime.Serialization.XsdDataContractExporter.Schemas?displayProperty=nameWithType> | All |
+
+\* .NET 8 and later versions only for all project types except Windows Forms and WPF.
 
 ## System.Security
 
@@ -229,6 +238,14 @@ This article organizes the affected APIs by namespace.
 | Member | Platforms that throw |
 | - | - |
 | <xref:System.Security.Cryptography.AsymmetricAlgorithm.Create(System.String)?displayProperty=nameWithType> | All |
+| <xref:System.Security.Cryptography.CngAlgorithm?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Security.Cryptography.CngAlgorithmGroup?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Security.Cryptography.CngKey?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Security.Cryptography.CngKeyBlobFormat?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Security.Cryptography.CngKeyCreationParameters?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Security.Cryptography.CngProvider?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Security.Cryptography.CngUIPolicy?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Security.Cryptography.CryptoConfig.EncodeOID(System.String)?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.CspKeyContainerInfo.%23ctor%2A> | Linux and macOS |
 | <xref:System.Security.Cryptography.CspKeyContainerInfo.Accessible?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Security.Cryptography.CspKeyContainerInfo.Exportable?displayProperty=nameWithType> | Linux and macOS |
@@ -242,6 +259,14 @@ This article organizes the affected APIs by namespace.
 | <xref:System.Security.Cryptography.CspKeyContainerInfo.RandomlyGenerated?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Security.Cryptography.CspKeyContainerInfo.Removable?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Security.Cryptography.CspKeyContainerInfo.UniqueKeyContainerName?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Security.Cryptography.ECDiffieHellmanCng.FromXmlString(System.String,System.Security.Cryptography.ECKeyXmlFormat)?displayProperty=nameWithType> | All |
+| <xref:System.Security.Cryptography.ECDiffieHellmanCng.ToXmlString(System.Security.Cryptography.ECKeyXmlFormat)?displayProperty=nameWithType> | All |
+| <xref:System.Security.Cryptography.ECDiffieHellmanCngPublicKey.FromXmlString(System.String)?displayProperty=nameWithType> | All |
+| <xref:System.Security.Cryptography.ECDiffieHellmanCngPublicKey.ToXmlString?displayProperty=nameWithType> | All |
+| <xref:System.Security.Cryptography.ECDiffieHellmanPublicKey.ToByteArray?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Security.Cryptography.ECDiffieHellmanPublicKey.ToXmlString?displayProperty=nameWithType> | All |
+| <xref:System.Security.Cryptography.ECDsaCng.FromXmlString(System.String,System.Security.Cryptography.ECKeyXmlFormat)?displayProperty=nameWithType> | All |
+| <xref:System.Security.Cryptography.ECDsaCng.ToXmlString(System.Security.Cryptography.ECKeyXmlFormat)?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.HashAlgorithm.Create?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.HMAC.Create?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.HMAC.Create(System.String)?displayProperty=nameWithType> | All |
@@ -252,6 +277,10 @@ This article organizes the affected APIs by namespace.
 | <xref:System.Security.Cryptography.KeyedHashAlgorithm.Create(System.String)?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.ProtectedData.Protect%2A?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Security.Cryptography.ProtectedData.Unprotect%2A?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Security.Cryptography.RSACryptoServiceProvider.DecryptValue(System.Byte[])?displayProperty=fullName> | All |
+| <xref:System.Security.Cryptography.RSACryptoServiceProvider.EncryptValue(System.Byte[])?displayProperty=fullName> | All |
+| <xref:System.Security.Cryptography.RSA.DecryptValue(System.Byte[])?displayProperty=fullName> | All |
+| <xref:System.Security.Cryptography.RSA.EncryptValue(System.Byte[])?displayProperty=fullName> | All |
 | <xref:System.Security.Cryptography.RSA.FromXmlString%2A?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.RSA.ToXmlString%2A?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.SymmetricAlgorithm.Create?displayProperty=nameWithType> | All |
@@ -319,5 +348,5 @@ This article organizes the affected APIs by namespace.
 ## See also
 
 - [Breaking changes for migration from .NET Framework to .NET Core](fx-core.md)
-- [Binary serialization in .NET Core](../../standard/serialization/binary-serialization.md#net-core)
+- [Binary serialization in .NET Core](/previous-versions/dotnet/fundamentals/serialization/binary/binary-serialization#net-core)
 - [.NET portability analyzer](../../standard/analyzers/portability-analyzer.md)

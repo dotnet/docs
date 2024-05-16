@@ -1,33 +1,43 @@
 ---
 title: How the .NET Runtime and SDK are versioned
 description: This article explains how the .NET SDK and Runtime are versioned (similar to semantic versioning).
-ms.date: 12/07/2020
+ms.custom: updateeachrelease
+ms.date: 04/26/2023
 ---
 
-# Overview of how .NET is versioned
+# How .NET is versioned
 
-The [.NET Runtime and the .NET SDK](../introduction.md#sdk-and-runtimes) add new features at different frequencies. In general, the SDK is updated more frequently than the Runtime. This article explains the runtime and the SDK version numbers.
+The [.NET Runtime and the .NET SDK](../introduction.md) add new features at different frequencies. In general, the SDK is updated more frequently than the runtime. This article explains the runtime and the SDK version numbers.
+
+.NET releases a new major version every November. Even-numbered releases, such as .NET 6 or .NET 8, are long-term supported (LTS). LTS releases get free support and patches for three years. Odd-numbered releases are standard-term support. Standard-term support releases get free support and patches for 18 months.
 
 ## Versioning details
 
-The .NET Runtime has a major/minor/patch approach to versioning that follows [semantic versioning](#semantic-versioning).
+The .NET Runtime has a major.minor.patch approach to versioning that follows [semantic versioning](#semantic-versioning).
 
-The .NET SDK doesn't follow semantic versioning. The .NET SDK releases faster and its version numbers must communicate both the aligned runtime and the SDK's own minor and patch releases.
+The .NET SDK, however, doesn't follow semantic versioning. The .NET SDK releases faster and its version numbers must communicate both the aligned runtime and the SDK's own minor and patch releases.
 
-The first two positions of the .NET SDK version number are locked to the .NET Runtime version it released with. Each version of the SDK can create applications for this runtime or any lower version.
+The first two positions of the .NET SDK version number match the .NET Runtime version it released with. Each version of the SDK can create applications for this runtime or any lower version.
 
 The third position of the SDK version number communicates both the minor and patch number. The minor version is multiplied by 100. The final two digits represent the patch number. Minor version 1, patch version 2 would be represented as 102. For example, here's a possible sequence of runtime and SDK version numbers:
 
-| Change                | .NET Runtime      | .NET SDK (\*)     |
-|-----------------------|-------------------|-------------------|
-| Initial release       | 2.2.0             | 2.2.100           |
-| SDK patch             | 2.2.0             | 2.2.101           |
-| Runtime and SDK patch | 2.2.1             | 2.2.102           |
-| SDK feature change    | 2.2.1             | 2.2.200           |
+| Change                | .NET Runtime      | .NET SDK (\*)     | Notes |
+|-----------------------|-------------------|-------------------|-------------------------------------------------------------------------------------|
+| Initial release       | 5.0.0             | 5.0.100           | Initial release.                                                                    |
+| SDK patch             | 5.0.0             | 5.0.101           | Runtime didn't change with this SDK patch. SDK patch bumps last digit in SDK patch. |
+| Runtime and SDK patch | 5.0.1             | 5.0.102           | Runtime patch bumps Runtime patch number. SDK patch bumps last digit in SDK patch.  |
+| SDK feature change    | 5.0.1             | 5.0.200           | Runtime patch didn't change. New SDK feature bumps first digit in SDK patch.        |
+| Runtime patch         | 5.0.2             | 5.0.200           | Runtime patch bumps Runtime patch number. SDK doesn't change.                       |
+
+From the preceding table you can see several policies:
+
+- The Runtime and SDK share major and minor versions. The first two numbers for a given SDK and runtime should match. All the preceding examples are part of the .NET 5.0 release stream.
+- The patch version of the runtime revs only when the runtime is updated. The SDK patch number doesn't update for a runtime patch.
+- The patch version of the SDK updates only when the SDK is updated. It's possible that a runtime patch doesn't require an SDK patch.
 
 NOTES:
 
-- If the SDK has 10 feature updates before a runtime feature update, version numbers roll into the 1000 series with numbers like 2.2.1000 as the feature release following 2.2.900. This situation isn't expected to occur.
+- If the SDK has 10 feature updates before a runtime feature update, version numbers roll into the 1000 series. Version 5.0.1000 would follow version 5.0.900. This situation isn't expected to occur.
 - 99 patch releases without a feature release won't occur. If a release approaches this number, it forces a feature release.
 
 You can see more details in the initial proposal at the [dotnet/designs](https://github.com/dotnet/designs/pull/29) repository.
@@ -42,55 +52,59 @@ MAJOR.MINOR.PATCH[-PRERELEASE-BUILDNUMBER]
 
 The optional `PRERELEASE` and `BUILDNUMBER` parts are never part of supported releases and only exist on nightly builds, local builds from source targets, and unsupported preview releases.
 
-### Understand runtime version number changes
+### Runtime version number changes
 
-`MAJOR` is incremented when:
+- `MAJOR` is incremented once a year and may contain:
 
-- Significant changes occur to the product, or a new product direction.
-- Breaking changes were taken. There's a high bar to accepting breaking changes.
-- An old version is no longer supported.
-- A newer `MAJOR` version of an existing dependency is adopted.
+  - Significant changes in the product, or a new product direction.
+  - API introduced breaking changes. There's a high bar to accepting breaking changes.
+  - A newer `MAJOR` version of an existing dependency is adopted.
 
-`MINOR` is incremented when:
+  Major releases happen once a year, even-numbered versions are long-term supported (LTS) releases. The first LTS release using this versioning scheme is .NET 6. The latest non-LTS version is .NET 7.
 
-- Public API surface area is added.
-- A new behavior is added.
-- A newer `MINOR` version of an existing dependency is adopted.
-- A new dependency is introduced.
+- `MINOR` is incremented when:
 
-`PATCH` is incremented when:
+  - Public API surface area is added.
+  - A new behavior is added.
+  - A newer `MINOR` version of an existing dependency is adopted.
+  - A new dependency is introduced.
 
-- Bug fixes are made.
-- Support for a newer platform is added.
-- A newer `PATCH` version of an existing dependency is adopted.
-- Any other change doesn't fit one of the previous cases.
+- `PATCH` is incremented when:
 
-When there are multiple changes, the highest element affected by individual changes is incremented, and the following ones are reset to zero. For example, when `MAJOR` is incremented, `MINOR` and `PATCH` are reset to zero. When `MINOR` is incremented, `PATCH` is reset to zero while `MAJOR` is left untouched.
+  - Bug fixes are made.
+  - Support for a newer platform is added.
+  - A newer `PATCH` version of an existing dependency is adopted.
+  - Any other change doesn't fit one of the previous cases.
+
+When there are multiple changes, the highest element affected by individual changes is incremented, and the following ones are reset to zero. For example, when `MAJOR` is incremented, `MINOR.PATCH` are reset to zero. When `MINOR` is incremented, `PATCH` is reset to zero while `MAJOR` remains the same.
 
 ## Version numbers in file names
 
-The files downloaded for .NET carry the version, for example, `dotnet-sdk-2.1.300-win10-x64.exe`.
+The files downloaded for .NET carry the version, for example, `dotnet-sdk-5.0.301-win-x64.exe`.
 
 ### Preview versions
 
-Preview versions have a `-preview[number]-([build]|"final")` appended to the version number. For example, `2.0.0-preview1-final`.
+Preview versions have a `-preview.[number].[build]` appended to the version number. For example, `6.0.0-preview.5.21302.13`.
 
 ### Servicing versions
 
-After a release goes out, the release branches generally stop producing daily builds and instead start producing servicing builds. Servicing versions have a `-servicing-[number]` appended to the version. For example, `2.0.1-servicing-006924`.
+After a release goes out, the release branches generally stop producing daily builds and instead start producing servicing builds. Servicing versions have a `-servicing-[number]` appended to the version. For example, `5.0.1-servicing-006924`.
 
-## Relationship to .NET Standard versions
+## .NET Runtime compatibility
 
-.NET Standard consists of a .NET reference assembly. There are multiple implementations specific to each platform. The reference assembly contains the definition of .NET APIs which are part of a given .NET Standard version. Each implementation fulfills the .NET Standard contract on the specific platform.
+The .NET Runtime maintains a high level of compatibility between versions. .NET apps should, by and large, continue to work after upgrading to a new major .NET Runtime version.
 
-The .NET Standard reference assembly uses a `MAJOR.MINOR` versioning scheme. `PATCH` level isn't useful for .NET Standard because it exposes only an API specification (no implementation) and by definition any change to the API would represent a change in the feature set, and thus a new `MINOR` version.
+Each major .NET Runtime version contains intentional, carefully vetted, and documented [breaking changes](../compatibility/breaking-changes.md). The documented breaking changes aren't the only source of issues that can affect an app after upgrade. For example, a performance improvement in the .NET Runtime (that's not considered a breaking change) can expose latent app threading bugs that cause the app to not work on that version. It's expected for large apps to require a few fixes after upgrading to a new .NET Runtime major version.
 
-The implementations on each platform may be updated, typically as part of the platform release, and thus not evident to the programmers using .NET Standard on that platform.
+By default, .NET apps are configured to run on a given .NET Runtime major version, so recompilation is highly recommended to upgrade the app to run on a new .NET Runtime major version. Then retest the app after upgrading to identify any issues.
 
-For more information, see [.NET Standard](../../standard/net-standard.md).
+Suppose upgrading via app recompilation isn't feasible. In that case, the .NET Runtime provides [additional settings](selection.md#control-roll-forward-behavior) to enable an app to run on a higher major .NET Runtime version than the version it was compiled for. These settings don't change the risks involved in upgrading the app to a higher major .NET Runtime version, and it's still required to retest the app post upgrade.
+
+The .NET Runtime supports loading libraries that target older .NET Runtime versions. An app that's upgraded to a newer major .NET Runtime version can reference libraries and NuGet packages that target older .NET Runtime versions. It's unnecessary to simultaneously upgrade the target runtime version of all libraries and NuGet packages referenced by the app.
 
 ## See also
 
+- [Breaking changes in .NET](../compatibility/breaking-changes.md)
 - [Target frameworks](../../standard/frameworks.md)
 - [.NET distribution packaging](../distribution-packaging.md)
 - [.NET Support Lifecycle Fact Sheet](https://dotnet.microsoft.com/platform/support/policy)

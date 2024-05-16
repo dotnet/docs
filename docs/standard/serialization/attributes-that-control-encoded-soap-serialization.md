@@ -2,13 +2,12 @@
 title: "Attributes That Control Encoded SOAP Serialization"
 description: This article lists a special set of attributes found in the System.Xml.Serialization namespace needed to conform to the SOAP specification.
 ms.date: "03/30/2017"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "SOAP, XML serialization"
   - "XML serialization, SOAP"
   - "XML serialization, attributes"
   - "attributes [.NET], XML serialization"
   - "serialization, attributes"
-ms.assetid: 93ee258c-9c0f-4a08-897c-c10db7a00f91
 ---
 # Attributes That Control Encoded SOAP Serialization
 

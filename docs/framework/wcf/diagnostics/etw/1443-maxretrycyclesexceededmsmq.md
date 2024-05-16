@@ -6,10 +6,10 @@ ms.assetid: 5fb5b119-7ae0-4c88-b3ab-3679063707d9
 ---
 # 1443 - MaxRetryCyclesExceededMsmq
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1443|  
 |Keywords|Quota|  
 |Level|Error|  

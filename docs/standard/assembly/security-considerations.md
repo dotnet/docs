@@ -27,7 +27,7 @@ When you build an assembly, you can specify a set of permissions that the assemb
   
 - The input evidence is used unaltered as the final set of evidence used for policy resolution. The methods that use this semantic include **Assembly.Load(byte[])** and **AppDomain.DefineDynamicAssembly()**.  
   
-  Optional permissions can be granted by the [security policy](../../framework/misc/code-access-security-basics.md) set on the computer where the assembly will run. If you want your code to handle all potential security exceptions, you can do one of the following:  
+  Optional permissions can be granted by the [security policy](/previous-versions/dotnet/framework/code-access-security/code-access-security-basics) set on the computer where the assembly will run. If you want your code to handle all potential security exceptions, you can do one of the following:  
   
 - Insert a permission request for all the permissions your code must have, and handle up front the load-time failure that occurs if the permissions are not granted.  
   
@@ -36,7 +36,7 @@ When you build an assembly, you can specify a set of permissions that the assemb
   > [!NOTE]
   > Security is a complex area, and you have many options to choose from. For more information, see [Key Security Concepts](../security/key-security-concepts.md).  
   
- At load time, the assembly's evidence is used as input to security policy. Security policy is established by the enterprise and the computer's administrator as well as by user policy settings, and determines the set of permissions that is granted to all managed code when executed. Security policy can be established for the publisher of the assembly (if it has a signing tool generated signature), for the Web site and zone (in Internet Explorer terms) the assembly was downloaded from, or for the assembly's strong name. For example, a computer's administrator can establish security policy that allows all code downloaded from a Web site and signed by a given software company to access a database on a computer, but does not grant access to write to the computer's disk.  
+ At load time, the assembly's evidence is used as input to security policy. Security policy is established by the enterprise and the computer's administrator as well as by user policy settings, and determines the set of permissions that's granted to all managed code when executed. Security policy can be established for the publisher of the assembly (if it has a signing tool generated signature), for the Web site and zone (which was an Internet Explorer concept) that the assembly was downloaded from, or for the assembly's strong name. For example, a computer's administrator can establish security policy that allows all code downloaded from a Web site and signed by a given software company to access a database on a computer, but does not grant access to write to the computer's disk.  
   
 ## Strong-named assemblies and signing tools  
 
@@ -54,7 +54,7 @@ When you build an assembly, you can specify a set of permissions that the assemb
   
  The common language runtime also performs a hash verification; the assembly manifest contains a list of all files that make up the assembly, including a hash of each file as it existed when the manifest was built. As each file is loaded, its contents are hashed and compared with the hash value stored in the manifest. If the two hashes do not match, the assembly fails to load.  
   
- Because strong naming and signing using [SignTool.exe (Sign Tool)](../../framework/tools/signtool-exe.md) guarantee integrity, you can base code access security policy on these two forms of assembly evidence. Strong naming and signing using [SignTool.exe (Sign Tool)](../../framework/tools/signtool-exe.md) guarantee integrity through digital signatures and certificates. All the technologies mentioned—hash verification, strong naming, and signing using [SignTool.exe (Sign Tool)](../../framework/tools/signtool-exe.md)—work together to ensure that the assembly has not been altered in any way.  
+ Strong naming and signing using [SignTool.exe (Sign Tool)](../../framework/tools/signtool-exe.md) guarantee integrity through digital signatures and certificates. All the technologies mentioned, that is, hash verification, strong naming, and signing using [SignTool.exe (Sign Tool)](../../framework/tools/signtool-exe.md), work together to ensure that the assembly has not been altered in any way.  
   
 ## See also
 

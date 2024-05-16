@@ -6,10 +6,10 @@ ms.assetid: f5e7b068-a335-4c4b-9cae-44d0ffeaa595
 ---
 # 57403 - TraceCodeEventLogWarning
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|57403|  
 |Keywords|Infrastructure|  
 |Level|Warning|  

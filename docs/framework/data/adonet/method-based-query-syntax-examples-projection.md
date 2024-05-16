@@ -51,5 +51,5 @@ The examples in this topic demonstrate how to use the <xref:System.Linq.Enumerab
 
 - [Loading Data Into a DataSet](loading-data-into-a-dataset.md)
 - [LINQ to DataSet Examples](linq-to-dataset-examples.md)
-- [Standard Query Operators Overview (C#)](../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)
+- [Standard Query Operators Overview (C#)](../../../csharp/linq/standard-query-operators/index.md)
 - [Standard Query Operators Overview (Visual Basic)](../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)

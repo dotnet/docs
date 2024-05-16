@@ -6,10 +6,10 @@ ms.assetid: 979ec935-bd9f-4798-be9a-25e08c4b94cf
 ---
 # 4213 - RunnableInstancesDetectionError
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4213|  
 |Keywords|WFInstanceStore|  
 |Level|Error|  

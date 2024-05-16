@@ -37,7 +37,7 @@ public class UnwrapExample
             {
                 Thread.Sleep(1000);
 
-                int x = (int)obj;
+                int x = (int)(obj!);
                 Console.WriteLine("Thread={0}, Next={1}", Thread.CurrentThread.ManagedThreadId, ++x);
                 return x;
             },

@@ -31,7 +31,7 @@ XML serialization is the underlying transport mechanism used in the XML Web serv
 
  When you're creating an XML Web service, you can use both sets of attributes on the methods. In the following code example, the class named `MyService` contains two XML Web service methods, `MyLiteralMethod` and `MyEncodedMethod`. Both methods perform the same function: returning an instance of the `Order` class. In the `Order` class, the <xref:System.Xml.Serialization.XmlTypeAttribute> and the <xref:System.Xml.Serialization.SoapTypeAttribute> attributes are both applied to the `OrderID` field, and both attributes have their `ElementName` property set to different values.  
   
- To run the example, paste the code into a file with an .asmx extension, and place the file into a virtual directory managed by Internet Information Services (IIS). From an HTML browser, such as Internet Explorer, type the name of the computer, virtual directory, and file.  
+ To run the example, paste the code into a file with an .asmx extension, and place the file into a virtual directory managed by Internet Information Services (IIS). From a web browser, type the name of the computer, virtual directory, and file.  
   
 ```vb  
 <%@ WebService Language="VB" Class="MyService" %>  

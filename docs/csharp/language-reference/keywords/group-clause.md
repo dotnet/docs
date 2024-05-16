@@ -1,6 +1,6 @@
 ---
 description: "group clause - C# Reference"
-title: "group clause - C# Reference"
+title: "group clause"
 ms.date: 07/20/2015
 f1_keywords: 
   - "group"
@@ -26,7 +26,7 @@ More complete examples of the use of `group` with and without `into` are provide
 
 ## Enumerating the results of a group query
 
-Because the <xref:System.Linq.IGrouping%602> objects produced by a `group` query are essentially a list of lists, you must use a nested [foreach](foreach-in.md) loop to access the items in each group. The outer loop iterates over the group keys, and the inner loop iterates over each item in the group itself. A group may have a key but no elements. The following is the `foreach` loop that executes the query in the previous code examples:
+Because the <xref:System.Linq.IGrouping%602> objects produced by a `group` query are essentially a list of lists, you must use a nested [foreach](../statements/iteration-statements.md#the-foreach-statement) loop to access the items in each group. The outer loop iterates over the group keys, and the inner loop iterates over each item in the group itself. A group may have a key but no elements. The following is the `foreach` loop that executes the query in the previous code examples:
 
 [!code-csharp[cscsrefQueryKeywords#12](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsCsrefQueryKeywords/CS/Group.cs#12)]
 
@@ -48,7 +48,7 @@ The following example shows the use of a bool value for a key to divide the resu
 
 ### Grouping by numeric range
 
-The next example uses an expression to create numeric group keys that represent a percentile range. Note the use of [let](let-clause.md) as a convenient location to store a method call result, so that you don't have to call the method two times in the `group` clause. For more information about how to safely use methods in query expressions, see [Handle exceptions in query expressions](../../linq/handle-exceptions-in-query-expressions.md).
+The next example uses an expression to create numeric group keys that represent a percentile range. Note the use of [let](let-clause.md) as a convenient location to store a method call result, so that you don't have to call the method two times in the `group` clause. For more information about how to safely use methods in query expressions, see [Handle exceptions in query expressions](../../linq/get-started/write-linq-queries.md).
 
 [!code-csharp[cscsrefQueryKeywords#15](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsCsrefQueryKeywords/CS/Group.cs#15)]
 
@@ -60,9 +60,9 @@ Use a composite key when you want to group elements according to more than one k
 group person by new {name = person.surname, city = person.city};
 ```
 
-Use a named type if you must pass the query variable to another method. Create a special class using auto-implemented properties for the keys, and then override the <xref:System.Object.Equals%2A> and <xref:System.Object.GetHashCode%2A> methods. You can also use a struct, in which case you do not strictly have to override those methods. For more information see [How to implement a lightweight class with auto-implemented properties](../../programming-guide/classes-and-structs/how-to-implement-a-lightweight-class-with-auto-implemented-properties.md) and [How to query for duplicate files in a directory tree](../../programming-guide/concepts/linq/how-to-query-for-duplicate-files-in-a-directory-tree-linq.md). The latter article has a code example that demonstrates how to use a composite key with a named type.
+Use a named type if you must pass the query variable to another method. Create a special class using auto-implemented properties for the keys, and then override the <xref:System.Object.Equals%2A> and <xref:System.Object.GetHashCode%2A> methods. You can also use a struct, in which case you do not strictly have to override those methods. For more information see [How to implement a lightweight class with auto-implemented properties](../../programming-guide/classes-and-structs/how-to-implement-a-lightweight-class-with-auto-implemented-properties.md) and [How to query for duplicate files in a directory tree](../../linq/how-to-query-files-and-directories.md). The latter article has a code example that demonstrates how to use a composite key with a named type.
 
-## Example
+## Example 1
 
 The following example shows the standard pattern for ordering source data into groups when no additional query logic is applied to the groups. This is called a grouping without a continuation. The elements in an array of strings are grouped according to their first letter. The result of the query is an <xref:System.Linq.IGrouping%602> type that contains a public `Key` property of type `char` and an <xref:System.Collections.Generic.IEnumerable%601> collection that contains each item in the grouping.
 
@@ -70,7 +70,7 @@ The result of a `group` clause is a sequence of sequences. Therefore, to access 
 
 [!code-csharp[cscsrefQueryKeywords#16](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsCsrefQueryKeywords/CS/Group.cs#16)]
 
-## Example
+## Example 2
 
 This example shows how to perform additional logic on the groups after you have created them, by using a *continuation* with `into`. For more information, see [into](into.md). The following example queries each group to select only those whose key value is a vowel.
 
@@ -88,6 +88,6 @@ At compile time, `group` clauses are translated into calls to the <xref:System.L
 - <xref:System.Linq.Enumerable.ThenByDescending%2A>
 - [Query Keywords](query-keywords.md)
 - [Language Integrated Query (LINQ)](../../linq/index.md)
-- [Create a nested group](../../linq/create-a-nested-group.md)
-- [Group query results](../../linq/group-query-results.md)
-- [Perform a subquery on a grouping operation](../../linq/perform-a-subquery-on-a-grouping-operation.md)
+- [Create a nested group](../../linq/standard-query-operators/grouping-data.md)
+- [Group query results](../../linq/standard-query-operators/grouping-data.md)
+- [Perform a subquery on a grouping operation](../../linq/standard-query-operators/grouping-data.md)

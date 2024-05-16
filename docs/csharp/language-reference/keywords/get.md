@@ -1,6 +1,6 @@
 ---
 description: "get - C# Reference"
-title: "get - C# Reference"
+title: "get keyword"
 ms.date: 03/10/2017
 f1_keywords: 
   - "get_CSharpKeyword"
@@ -17,7 +17,7 @@ The following example defines both a `get` and a `set` accessor for a property n
 
  [!code-csharp[get#1](../../../../samples/snippets/csharp/language-reference/keywords/get/get-1.cs)]  
   
-Often, the `get` accessor consists of a single statement that returns a value, as it did in the previous example. Starting with C# 7.0, you can implement the `get` accessor as an expression-bodied member. The following example implements both the `get` and the `set` accessor as expression-bodied members.
+Often, the `get` accessor consists of a single statement that returns a value, as it did in the previous example. You can implement the `get` accessor as an expression-bodied member. The following example implements both the `get` and the `set` accessor as expression-bodied members.
 
  [!code-csharp[get#3](../../../../samples/snippets/csharp/language-reference/keywords/get/get-3.cs)]
 
@@ -31,7 +31,5 @@ For simple cases in which a property's `get` and `set` accessors perform no othe
   
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](./index.md)
 - [Properties](../../programming-guide/classes-and-structs/properties.md)

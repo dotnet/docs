@@ -6,10 +6,10 @@ ms.assetid: aa70573e-8a76-486a-9616-ccca8c7008b6
 ---
 # 4810 - DiscoveryMessageWithNullMessageSequence
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4810|  
 |Keywords|Discovery|  
 |Level|Warning|  

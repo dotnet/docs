@@ -4,7 +4,7 @@ Option Strict On
 ' <Snippet5>
 Imports System.Text.RegularExpressions
 
-Module Example
+Module SingleLineExample
     Public Sub Main()
         Dim pattern As String = "(?s)^.+"
         Dim input As String = "This is one line and" + vbCrLf + "this is the second."

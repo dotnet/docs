@@ -8,7 +8,7 @@ ms.date: 07/08/2020
 
 [App Service](/azure/app-service/overview) is a fully managed compute platform service that's optimized for hosting scalable websites and web applications. This article provides information on how to lift-and-shift an existing application to Azure App Service, modifications to consider, and additional resources for [moving to the cloud](https://azure.microsoft.com/migration/web-applications/). Most ASP.NET websites (Webforms, MVC) and services (Web API, WCF) can move directly to Azure App Service with no changes. Some may need minor changes while others may need some refactoring.
 
-Ready to get started? [Publish your ASP.NET + SQL application to Azure App Service](https://tutorials.visualstudio.com/azure-webapp-migrate/intro).
+Ready to get started? [Publish your ASP.NET + SQL application to Azure App Service](/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase).
 
 ## Considerations
 
@@ -31,9 +31,9 @@ For WCF, the following bindings are supported:
 |--|--|
 | `BasicHttp` |  |
 | `WSHttp` |  |
-| `WSDualHttpBinding` | [Web socket support](/azure/app-service/web-sites-configure) must be enabled. | [Web socket support](/azure/app-service/web-sites-configure) must be enabled. |
-| `NetHttpBinding` | [Web socket support](/azure/app-service/web-sites-configure) must be enabled for duplex contracts. | [Web socket support](/azure/app-service/web-sites-configure) must be enabled for duplex contracts. |
-| `NetHttpsBinding` | [Web socket support](/azure/app-service/web-sites-configure) must be enabled for duplex contracts. | [Web socket support](/azure/app-service/web-sites-configure) must be enabled for duplex contracts. |
+| `WSDualHttpBinding` | [Web socket support](/azure/app-service/web-sites-configure) must be enabled. |
+| `NetHttpBinding` | [Web socket support](/azure/app-service/web-sites-configure) must be enabled for duplex contracts. |
+| `NetHttpsBinding` | [Web socket support](/azure/app-service/web-sites-configure) must be enabled for duplex contracts. |
 | `BasicHttpContextBinding` |  |
 | `WebHttpBinding` |  |
 | `WSHttpContextBinding` |  |

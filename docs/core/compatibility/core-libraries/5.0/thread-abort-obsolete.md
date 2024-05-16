@@ -17,6 +17,8 @@ Starting in .NET 5, <xref:System.Threading.Thread.Abort%2A?displayProperty=nameW
 
 Given that <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> always throws a <xref:System.PlatformNotSupportedException> on all .NET implementations except .NET Framework, <xref:System.ObsoleteAttribute> was added to the method to draw attention to places where it's called.
 
+When you call <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> to abort a thread other than the current thread, you don't know what code has executed or failed to execute when the <xref:System.Threading.ThreadAbortException> is thrown. You also cannot be certain of the state of your application or any application and user state that it's responsible for preserving. For example, calling <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> may prevent the execution of static constructors or the release of managed or unmanaged resources. For this reason, <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> always throws a <xref:System.PlatformNotSupportedException> on .NET Core and .NET 5+.
+
 ## Version introduced
 
 5.0
@@ -67,15 +69,3 @@ Given that <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> 
 ## Affected APIs
 
 - <xref:System.Threading.Thread.Abort%2A?displayProperty=fullName>
-
-<!--
-
-#### Category
-
-Core .NET libraries
-
-### Affected APIs
-
-- `Overload:System.Threading.Thread.Abort`
-
--->

@@ -9,7 +9,7 @@ ms.assetid: 7ead0cb3-3b19-414a-8417-a1c1fa198d9e
 ---
 # Migrate from the .NET Framework 1.1
 
-Windows 7 and later versions of the Windows operating system do not support the .NET Framework 1.1. As a result, applications that target the .NET Framework 1.1 will not run without modification on Windows 7 or later operating system versions. This topic discusses the steps required to run an application that targets the .NET Framework 1.1 under Windows 7 and later versions of the Windows operating system. For more information about the .NET Framework 1.1 and Windows 8, see [Run .NET Framework 1.1 Apps on Windows 8 and later versions](../install/run-net-framework-1-1-apps.md).
+Windows 7 and later versions of the Windows operating system do not support .NET Framework 1.1. As a result, applications that target the .NET Framework 1.1 will not run without modification on Windows 7 or later operating system versions. This topic discusses the steps required to run an application that targets the .NET Framework 1.1 under Windows 7 and later versions of the Windows operating system. For more information about the .NET Framework 1.1 and Windows 8, see [Run .NET Framework 1.1 Apps on Windows 8 and later versions](../install/run-net-framework-1-1-apps.md).
 
 ## Retarget or recompile
 
@@ -61,4 +61,4 @@ To assess the impact of possible breaking changes on your application, you must 
 
 The impact of deprecated types and members is somewhat different for retargeted applications and recompiled applications. The use of obsolete types and members will not affect a retargeted application unless the obsolete type or member has been physically removed from its assembly. Recompiling an application that uses obsolete types or members usually produces a compiler warning rather than a compiler error. However, in some cases, it produces a compiler error, and code that uses the obsolete type or member does not compile successfully. In this case, you must rewrite the source code that calls the obsolete type or member before you recompile your application. For more information about obsolete types and members, see [What's Obsolete in the Class Library](../whats-new/whats-obsolete.md).
 
-To assess the impact of types and members that have been deprecated since the release of the .NET Framework 2.0 SP1, see [What's Obsolete in the Class Library](../whats-new/whats-obsolete.md). Review the lists of obsolete types and member for the .NET Framework 2.0 SP1, the .NET Framework 3.5, and the .NET Framework 4.
+To assess the impact of types and members that have been deprecated since the release of the .NET Framework 2.0 SP1, see [What's Obsolete in the Class Library](../whats-new/whats-obsolete.md). Review the lists of obsolete types and member for the .NET Framework 2.0 SP1, .NET Framework 3.5, and the .NET Framework 4.

@@ -6,10 +6,10 @@ ms.assetid: e5629542-9067-42ba-b1cc-e8af61484643
 ---
 # 3357 - SecurityIdentityVerificationFailure
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3357|  
 |Keywords|Security|  
 |Level|Error|  

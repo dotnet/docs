@@ -190,7 +190,7 @@ System.Console.WriteLine(checkForSeven stringList)
 
 // Function compose takes two arguments. Each argument is a function
 // that takes one argument of the same type. The following declaration
-// uses lambda expresson syntax.
+// uses lambda expression syntax.
 let compose =
     fun op1 op2 ->
         fun n ->

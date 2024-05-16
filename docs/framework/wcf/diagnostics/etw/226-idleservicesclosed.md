@@ -6,10 +6,10 @@ ms.assetid: b5e72de3-33c6-46a2-998a-3809b520bb30
 ---
 # 226 - IdleServicesClosed
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|226|  
 |Keywords|HealthMonitoring, WebHost|  
 |Level|LogAlways|  

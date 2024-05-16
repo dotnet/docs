@@ -9,8 +9,9 @@ Module SignXML
             ' Create a new CspParameters object to specify
             ' a key container.
             ' <snippet2>
-            Dim cspParams As New CspParameters()
-            cspParams.KeyContainerName = "XML_DSIG_RSA_KEY"
+            Dim cspParams As New CspParameters With {
+                .KeyContainerName = "XML_DSIG_RSA_KEY"
+            }
             ' </snippet2>
             ' Create a new RSA signing key and save it in the container. 
             ' <snippet3>
@@ -18,10 +19,10 @@ Module SignXML
             ' </snippet3>
             ' Create a new XML document.
             ' <snippet4>
-            Dim xmlDoc As New XmlDocument()
-
             ' Load an XML file into the XmlDocument object.
-            xmlDoc.PreserveWhitespace = True
+            Dim xmlDoc As New XmlDocument With {
+                .PreserveWhitespace = True
+            }
             xmlDoc.Load("test.xml")
             ' </snippet4>
             ' Sign the XML document. 
@@ -44,10 +45,12 @@ Module SignXML
     Sub SignXml(ByVal xmlDoc As XmlDocument, ByVal rsaKey As RSA)
         ' Check arguments.
         If xmlDoc Is Nothing Then
-            Throw New ArgumentException(NameOf(xmlDoc))
+            Throw New ArgumentException(
+                "The XML doc cannot be nothing.", NameOf(xmlDoc))
         End If
         If rsaKey Is Nothing Then
-            Throw New ArgumentException(NameOf(rsaKey))
+            Throw New ArgumentException(
+                "The RSA key cannot be nothing.", NameOf(rsaKey))
         End If
         ' Create a SignedXml object.
         ' <snippet5>

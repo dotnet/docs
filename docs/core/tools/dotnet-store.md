@@ -5,7 +5,7 @@ ms.date: 02/14/2020
 ---
 # dotnet store
 
-**This article applies to:** ✔️ .NET Core 2.x SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -47,9 +47,7 @@ dotnet store -h|--help
 
   Specifies the .NET SDK version. This option enables you to select a specific framework version beyond the framework specified by the `-f|--framework` option.
 
-- **`-h|--help`**
-
-  Shows help information.
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 - **`-o|--output <OUTPUT_DIRECTORY>`**
 
@@ -57,15 +55,13 @@ dotnet store -h|--help
 
 - **`--skip-optimization`**
 
-  Skips the optimization phase.
+  Skips the optimization phase. For more information about optimization, see [Preparing a runtime environment](../deploying/runtime-store.md#preparing-a-runtime-environment).
 
 - **`--skip-symbols`**
 
   Skips symbol generation. Currently, you can only generate symbols on Windows and Linux.
 
-- **`-v|--verbosity <LEVEL>`**
-
-  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
+[!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
 
 - **`-w|--working-dir <WORKING_DIRECTORY>`**
 
@@ -73,16 +69,16 @@ dotnet store -h|--help
 
 ## Examples
 
-- Store the packages specified in the *packages.csproj* project file for .NET Core 2.0.0:
+- Store the packages specified in the *packages.csproj* project file for .NET 6.0.1:
 
   ```dotnetcli
-  dotnet store --manifest packages.csproj --framework-version 2.0.0
+  dotnet store --manifest packages.csproj --framework-version 6.0.1 --framework net6.0 --runtime win-x64
   ```
 
 - Store the packages specified in the *packages.csproj* without optimization:
 
   ```dotnetcli
-  dotnet store --manifest packages.csproj --skip-optimization
+  dotnet store --manifest packages.csproj --skip-optimization --framework net6.0 --runtime linux-x64
   ```
 
 ## See also

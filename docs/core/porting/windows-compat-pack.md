@@ -1,10 +1,11 @@
 ---
 title: Use the Windows Compatibility Pack to port code
-description: Learn about the Windows Compatibility Pack and how can you use it to port existing .NET Framework code to .NET 5 and .NET Core 3.1.
+description: Learn about the Windows Compatibility Pack and how can you use it to port existing .NET Framework code to .NET.
 author: terrajobst
-ms.date: 03/04/2021
+ms.date: 05/25/2023
 ---
-# Use the Windows Compatibility Pack to port code to .NET 5+
+
+# Use the Windows Compatibility Pack to port code to .NET
 
 Some of the most common issues found when porting existing code from .NET Framework to .NET are dependencies on APIs and technologies that are only found in .NET Framework. The *Windows Compatibility Pack* provides many of these technologies, so it's much easier to build .NET applications and .NET Standard libraries.
 
@@ -34,7 +35,7 @@ It provides about 20,000 APIs, including Windows-only and cross-platform APIs fr
 - Windows Runtime Caching
 - Windows Services
 
-For more information, see the [specification of the compatibility pack](https://github.com/dotnet/designs/blob/master/accepted/2018/compat-pack/compat-pack.md).
+For more information, see the [specification of the compatibility pack](https://github.com/dotnet/designs/blob/main/accepted/2018/compat-pack/compat-pack.md).
 
 ## Get started
 
@@ -44,7 +45,7 @@ For more information, see the [specification of the compatibility pack](https://
 
    If you want to stay on Windows, you're all set.
 
-3. If you want to run the .NET application or .NET Standard library on Linux or macOS, use the [API Analyzer](../../standard/analyzers/api-analyzer.md) to find usage of APIs that won't work cross-platform.
+3. If you want to run the .NET application or .NET Standard library on Linux or macOS, use the [Platform compatibility analyzer](../../standard/analyzers/platform-compat-analyzer.md) to find usage of APIs that won't work cross-platform.
 
 4. Either remove the usages of those APIs, replace them with cross-platform alternatives, or guard them using a platform check, like:
 
@@ -68,12 +69,4 @@ For more information, see the [specification of the compatibility pack](https://
     }
     ```
 
-For a demo, check out the [Channel 9 video of the Windows Compatibility Pack](https://channel9.msdn.com/Events/Connect/2017/T123).
-
-## See also
-
-- [Overview of porting from .NET Framework to .NET](index.md)
-- [ASP.NET to ASP.NET Core migration](/aspnet/core/migration/proper-to-2x)
-- [Migrate .NET Framework WPF apps to .NET](/dotnet/desktop/wpf/migration/convert-project-from-net-framework?view=netdesktop-5.0&preserve-view=true)
-- [Migrate .NET Framework Windows Forms apps to .NET](/dotnet/desktop/winforms/migration/?view=netdesktop-5.0&preserve-view=true)
-- [Port .NET Framework libraries to .NET](libraries.md)
+For a demo, check out the [Channel 9 video of the Windows Compatibility Pack](/Events/Connect/2017/T123).

@@ -6,10 +6,10 @@ ms.assetid: 3b46ea28-3ee0-43eb-96ff-a6d696da87f8
 ---
 # 1039 - ExitNoPersistBlock
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1039|  
 |Keywords|WFRuntime|  
 |Level|Verbose|  

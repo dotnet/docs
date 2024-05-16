@@ -81,7 +81,8 @@ namespace DateAndTimeSample
             // Convert TimeSpan to days instead of text
             command.Parameters.AddWithValue("$expected", expected).SqliteType = SqliteType.Real;
             #endregion
-            var count = (long)command.ExecuteScalar();
+            var oCount = command.ExecuteScalar();
+            var count = (oCount is not null) ? (long)oCount : -1;
             Console.WriteLine($"{count} tasks are overdue.");
         }
     }

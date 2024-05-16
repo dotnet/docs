@@ -6,10 +6,10 @@ ms.assetid: 274e9209-1720-4512-a615-e742f00895f4
 ---
 # 1146 - FlowchartSwitchCase
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1146|  
 |Keywords|WFActivities|  
 |Level|Information|  

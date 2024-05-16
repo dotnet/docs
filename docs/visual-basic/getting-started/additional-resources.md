@@ -27,19 +27,19 @@ The following web sites provide guidance and can help you find answers to common
 |URL|Description|
 |----------|----------------|
 |[Visual Basic documentation samples](https://github.com/dotnet/docs/tree/main/samples/snippets/visualbasic)|Contains the samples used throughout the Visual Basic and .NET documentation.|
-|[Samples browser](https://docs.microsoft.com/samples/browse/?languages=vb)|Contains code samples written in Visual Basic|
+|[Samples browser](/samples/browse/?languages=vb)|Contains code samples written in Visual Basic|
 
 ### Forums
 
 |URL|Description|
 |----------|----------------|
-|[Microsoft Q&A](https://docs.microsoft.com/answers/topics/dotnet-visual-basic.html)|Technical questions about Visual Basic programming language.|
+|[Microsoft Q&A](/answers/topics/dotnet-visual-basic.html)|Technical questions about Visual Basic programming language.|
 
 ### Videos and webcasts
 
 |URL|Description|
 |----------|----------------|
-|[Channel9](https://channel9.msdn.com/)|Provides continuous community through videos, Wikis, and forums.|
+|[GitHub: Visual Basic .NET](https://github.com/dotnet/vblang)|The official repo for Visual Basic .NET language design.|
 
 ### Support
 
@@ -55,6 +55,7 @@ The following web sites provide guidance and can help you find answers to common
 |[VBForums](http://www.vbforums.com/)|Provides a forum to discuss Visual Basic, .NET, and more.|
 |[vbCity](http://vbcity.com/)|A community site for people to learn and ask questions about Visual Basic and .NET.|
 |[Stack Overflow](https://stackoverflow.com/questions/tagged/vb.net)|Stack Overflow is a question and answer site for developers.|
+|[Tutlane](https://www.tutlane.com/tutorial/visual-basic)|Tutlane provides tutorials to learn Visual Basic, C#, etc.|
 
 ## See also
 

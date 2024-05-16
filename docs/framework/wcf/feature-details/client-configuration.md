@@ -2,7 +2,7 @@
 title: "Client Configuration"
 description: Learn how to use WCF client configuration to specify the address, binding, behavior, and contract for an endpoint, which is used to connect to a service.
 ms.date: "03/30/2017"
-ms.assetid: 5da5bd3b-65d9-43b7-91b9-cc9e989b1350
+ms.topic: how-to
 ---
 # Client Configuration
 
@@ -45,7 +45,7 @@ You can use the Windows Communication Foundation (WCF) client configuration to s
           </endpoint>  
         </client>  
   
-//The bindings section references by the bindingConfiguration endpoint attribute.  
+<!-- The bindings section references by the bindingConfiguration endpoint attribute.   -->
     <bindings>  
       <wsHttpBinding>  
         <binding name="WSHttpBinding_IHello"
@@ -55,7 +55,7 @@ You can use the Windows Communication Foundation (WCF) client configuration to s
           <reliableSession ordered="true"
                            enabled="false" />  
           <security mode="Message">  
-           //Security settings go here.  
+           <!-- Security settings go here.   -->
           </security>  
         </binding>  
         <binding name="Another Binding"  
@@ -64,7 +64,7 @@ You can use the Windows Communication Foundation (WCF) client configuration to s
           </wsHttpBinding>  
      </bindings>  
   
-//The behavior section references by the behaviorConfiguration endpoint attribute.  
+<!-- The behavior section references by the behaviorConfiguration endpoint attribute.   -->
         <behaviors>  
             <endpointBehaviors>  
                 <behavior name=" IHello_Behavior ">  

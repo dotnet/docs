@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Activities;
 
 namespace ActivityLibrary1
@@ -19,7 +16,7 @@ namespace ActivityLibrary1
             if (string.IsNullOrEmpty(name))
             {
                 throw new ArgumentException("BookmarkName cannot be an Empty string.",
-                    "BookmarkName");
+                    "context");
             }
 
             context.CreateBookmark(name, new BookmarkCallback(OnReadComplete));

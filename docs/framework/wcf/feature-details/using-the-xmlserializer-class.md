@@ -11,9 +11,9 @@ ms.assetid: c680602d-39d3-44f1-bf22-8e6654ad5069
 ---
 # Using the XmlSerializer Class
 
-Windows Communication Foundation (WCF) can use two different serialization technologies to turn the data in your application into XML that is transmitted between clients and services, a process called serialization.
+Windows Communication Foundation (WCF) can use two different serialization technologies to turn the data in your application into XML that's transmitted between clients and services: `DataContractSerializer` and `XmlSerializer`.
 
-## DataContractSerializer as the Default
+## DataContractSerializer
 
 By default WCF uses the <xref:System.Runtime.Serialization.DataContractSerializer> class to serialize data types. This serializer supports the following types:
 
@@ -31,13 +31,13 @@ Many .NET Framework types fall into the latter two categories and are thus seria
 
 The <xref:System.Runtime.Serialization.DataContractSerializer>, used together with data contract types, is the recommended way to write new WCF services. For more information, see [Using Data Contracts](using-data-contracts.md).
 
-## When to Use the XmlSerializer Class
+## XmlSerializer
 
 WCF also supports the <xref:System.Xml.Serialization.XmlSerializer> class. The <xref:System.Xml.Serialization.XmlSerializer> class is not unique to WCF. It is the same serialization engine that ASP.NET Web services use. The <xref:System.Xml.Serialization.XmlSerializer> class supports a much narrower set of types than the <xref:System.Runtime.Serialization.DataContractSerializer> class, but allows much more control over the resulting XML and supports much more of the XML Schema definition language (XSD) standard. It also does not require any declarative attributes on the serializable types. For more information, see the XML Serialization topic in the .NET Framework documentation. The <xref:System.Xml.Serialization.XmlSerializer> class does not support data contract types.
 
 When using Svcutil.exe or the **Add Service Reference** feature in Visual Studio to generate client code for a third-party service, or to access a third-party schema, an appropriate serializer is automatically selected for you. If the schema is not compatible with the <xref:System.Runtime.Serialization.DataContractSerializer>, the <xref:System.Xml.Serialization.XmlSerializer> is selected.
 
-## Manually Switching to the XmlSerializer
+## Switch to the XmlSerializer
 
 At times, you may have to manually switch to the <xref:System.Xml.Serialization.XmlSerializer>. This happens, for example, in the following cases:
 

@@ -6,10 +6,10 @@ ms.assetid: ed4d1851-b378-489b-a22d-c1db09571fb4
 ---
 # 100 - WorkflowInstanceRecord
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |Id|100|  
 |Keywords|EndToEndMonitoring, Troubleshooting, HealthMonitoring, WFTracking|  
 |Level|Information|  

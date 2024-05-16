@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: daed00dd-923a-43be-8a90-eee406f6f574
+ms.topic: how-to
 ---
 
 # How to find elements with a specific attribute (LINQ to XML)

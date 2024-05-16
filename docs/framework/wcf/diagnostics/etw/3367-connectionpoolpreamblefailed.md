@@ -6,10 +6,10 @@ ms.assetid: a8ce3088-b621-4c84-a4d7-826afc33537f
 ---
 # 3367 - ConnectionPoolPreambleFailed
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3367|  
 |Keywords|Channel|  
 |Level|Error|  

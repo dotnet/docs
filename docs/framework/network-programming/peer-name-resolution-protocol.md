@@ -26,7 +26,7 @@ The Peer Name Resolution Protocol demonstrates the following properties:
   
 ## The System.Net.PeerToPeer namespace  
   
-- PNRP functionality is defined by the <xref:System.Net.PeerToPeer> namespace within the .NET Framework version 3.5. It provides a set of types that can be used to register and resolve peer names with an available PNRP service.  
+- PNRP functionality is defined by the <xref:System.Net.PeerToPeer> namespace within .NET Framework version 3.5. It provides a set of types that can be used to register and resolve peer names with an available PNRP service.  
   
 - (PNRP and custom peer resolvers can be created and instantiated using the types provided in the <xref:System.ServiceModel.PeerResolvers> namespace.)  
   
@@ -46,4 +46,3 @@ The Peer Name Resolution Protocol demonstrates the following properties:
 
 - <xref:System.ServiceModel.PeerResolvers>
 - <xref:System.Net.PeerToPeer>
-- [Network Programming Samples](network-programming-samples.md)

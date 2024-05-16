@@ -90,7 +90,8 @@ The following example shows how to specify where the runtime can find an assembl
 
 ## See also
 
-- [Runtime settings schema](index.md)
+- [Configure apps by using configuration files](../../index.md)
+- [Runtime Settings Schema](index.md)
 - [Configuration file schema](../index.md)
 - [Specify an assembly's location](../../../../standard/assembly/location.md)
 - [How the runtime locates assemblies](../../../deployment/how-the-runtime-locates-assemblies.md)

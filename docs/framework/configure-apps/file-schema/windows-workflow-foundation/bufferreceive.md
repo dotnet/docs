@@ -2,7 +2,6 @@
 description: "Learn more about: <bufferReceive>"
 title: "<bufferReceive>"
 ms.date: "03/30/2017"
-ms.topic: "reference"
 ms.assetid: b23c3a54-10d4-4f13-ab6d-98b26b76f22a
 ---
 # \<bufferReceive>

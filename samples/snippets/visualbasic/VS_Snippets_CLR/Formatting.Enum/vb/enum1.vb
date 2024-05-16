@@ -23,10 +23,11 @@ Module modMain
     Private Sub ShowGSpecifier()
         Console.WriteLine("G Specifier:")
         ' <Snippet1>
-        Console.WriteLine(ConsoleColor.Red.ToString("G"))           ' Displays Red
+        Console.WriteLine((CType(7, DayOfWeek)).ToString("G"))    ' 7
+        Console.WriteLine(ConsoleColor.Red.ToString("G"))         ' Red
         Dim attributes As FileAttributes = FileAttributes.Hidden Or _
                                            FileAttributes.Archive
-        Console.WriteLine(attributes.ToString("G"))     ' Displays Hidden, Archive                               
+        Console.WriteLine(attributes.ToString("G"))               ' Hidden, Archive
         ' </Snippet1>
         Console.WriteLine()
     End Sub
@@ -34,10 +35,11 @@ Module modMain
     Private Sub ShowFSpecifier()
         Console.WriteLine("F Specifier:")
         ' <Snippet2>
-        Console.WriteLine(ConsoleColor.Blue.ToString("F"))         ' Displays Blue
+        Console.WriteLine((CType(7, DayOfWeek)).ToString("F"))    ' Monday, Saturday
+        Console.WriteLine(ConsoleColor.Blue.ToString("F"))        ' Blue
         Dim attributes As FileAttributes = FileAttributes.Hidden Or _
                                            FileAttributes.Archive
-        Console.WriteLine(attributes.ToString("F"))     ' Displays Hidden, Archive                               
+        Console.WriteLine(attributes.ToString("F"))               ' Hidden, Archive
         ' </Snippet2>
         Console.WriteLine()
     End Sub
@@ -45,10 +47,11 @@ Module modMain
     Private Sub ShowDSpecifier()
         Console.WriteLine("D Specifier:")
         ' <Snippet3>
-        Console.WriteLine(ConsoleColor.Cyan.ToString("D"))           ' Displays 11
+        Console.WriteLine((CType(7, DayOfWeek)).ToString("D"))     ' 7
+        Console.WriteLine(ConsoleColor.Cyan.ToString("D"))         ' 11
         Dim attributes As FileAttributes = FileAttributes.Hidden Or _
                                            FileAttributes.Archive
-        Console.WriteLine(attributes.ToString("D"))                  ' Displays 34                               
+        Console.WriteLine(attributes.ToString("D"))                ' 34
         ' </Snippet3>
         Console.WriteLine()
     End Sub
@@ -56,10 +59,11 @@ Module modMain
     Private Sub ShowXSpecifier()
         Console.WriteLine("X Specifier:")
         ' <Snippet4>
-        Console.WriteLine(ConsoleColor.Cyan.ToString("X"))     ' Displays 0000000B
+        Console.WriteLine((CType(7, DayOfWeek)).ToString("X"))    ' 00000007
+        Console.WriteLine(ConsoleColor.Cyan.ToString("X"))        ' 0000000B
         Dim attributes As FileAttributes = FileAttributes.Hidden Or _
                                            FileAttributes.Archive
-        Console.WriteLine(attributes.ToString("X"))            ' Displays 00000022                               
+        Console.WriteLine(attributes.ToString("X"))               ' 00000022
         ' </Snippet4>
         Console.WriteLine()
     End Sub

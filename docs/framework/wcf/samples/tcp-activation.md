@@ -7,19 +7,10 @@ ms.assetid: bf8c215c-0228-4f4f-85c2-e33794ec09a7
 
 # TCP Activation
 
-This sample demonstrates hosting a service that uses Windows Process Activation Services (WAS) to activate a service that communicates over the net.tcp protocol. This sample is based on the [Getting Started](getting-started-sample.md).
+The [TCPActivation sample](https://github.com/dotnet/samples/tree/main/framework/wcf) demonstrates hosting a service that uses Windows Process Activation Services (WAS) to activate a service that communicates over the net.tcp protocol. This sample is based on the [Getting Started](getting-started-sample.md).
 
 > [!NOTE]
 > The setup procedure and build instructions for this sample are located at the end of this topic.
-
-> [!IMPORTANT]
-> The samples may already be installed on your computer. Check for the following (default) directory before continuing.
->
-> `<InstallDrive>:\WF_WCF_Samples`
->
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
->
-> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\Hosting\WASHost\TCPActivation`
 
 The sample consists of a client console program (.exe) and a service library (.dll) hosted in a worker process activated by WAS. Client activity is visible in the console window.
 

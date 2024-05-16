@@ -5,7 +5,6 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "ETW, method events (CLR)"
   - "method events [.NET Framework]"
-ms.assetid: 167a4459-bb6e-476c-9046-7920880f2bb5
 ---
 
 # Method ETW Events
@@ -134,7 +133,7 @@ The following table shows the event data:
 |MethodID|win:UInt64|Unique identifier of the method.|
 |ModuleID|win:UInt64|Identifier of the module to which this method belongs.|
 |MethodToken|win:UInt32|0 for dynamic methods and JIT helpers.|
-|MethodILSize|win:UInt32|The size of the Microsoft intermediate language (MSIL) for the method that is being JIT-compiled.|
+|MethodILSize|win:UInt32|The size of the common intermediate language (CIL) for the method that is being JIT-compiled.|
 |MethodNameSpace|win:UnicodeString|Full class name associated with the method.|
 |MethodName|win:UnicodeString|Name of the method.|
 |MethodSignature|win:UnicodeString|Signature of the method (comma-separated list of type names).|

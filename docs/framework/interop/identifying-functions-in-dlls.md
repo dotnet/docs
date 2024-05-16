@@ -37,7 +37,7 @@ The identity of a DLL function consists of the following elements:
 |Kernel32.dll|Low-level operating system functions for memory management and resource handling.|  
 |User32.dll|Windows management functions for message handling, timers, menus, and communications.|  
   
- For complete documentation on the Windows API, see the Platform SDK. For examples that demonstrate how to construct .NET-based declarations to be used with platform invoke, see [Marshaling Data with Platform Invoke](marshaling-data-with-platform-invoke.md).  
+ For complete documentation on the Windows API, see the Platform SDK. For examples that demonstrate how to construct .NET-based declarations to be used with platform invoke, see [Marshalling Data with Platform Invoke](marshalling-data-with-platform-invoke.md).  
   
 ## See also
 

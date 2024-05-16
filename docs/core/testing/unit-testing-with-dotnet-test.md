@@ -1,19 +1,19 @@
 ---
-title: Unit testing C# code in .NET Core using dotnet test and xUnit
-description: Learn unit test concepts in C# and .NET Core through an interactive experience building a sample solution step-by-step using dotnet test and xUnit.
+title: Unit testing C# code in .NET using dotnet test and xUnit
+description: Learn unit test concepts in C# and .NET through an interactive experience building a sample solution step-by-step using dotnet test and xUnit.
 author: ardalis
 ms.author: wiwagn
-ms.date: 10/21/2020
+ms.date: 03/07/2024
 ---
-# Unit testing C# in .NET Core using dotnet test and xUnit
+# Unit testing C# in .NET using dotnet test and xUnit
 
-This tutorial shows how to build a solution containing a unit test project and source code project. To follow the tutorial using a pre-built solution, [view or download the sample code](https://github.com/dotnet/samples/tree/master/core/getting-started/unit-testing-using-dotnet-test/). For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#view-and-download-samples).
+This tutorial shows how to build a solution containing a unit test project and source code project. To follow the tutorial using a pre-built solution, [view or download the sample code](https://github.com/dotnet/samples/tree/main/core/getting-started/unit-testing-using-dotnet-test/). For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#view-and-download-samples).
 
 ## Create the solution
 
 In this section, a solution is created that contains the source and test projects. The completed solution has the following directory structure:
 
-```
+```txt
 /unit-testing-using-dotnet-test
     unit-testing-using-dotnet-test.sln
     /PrimeService
@@ -81,9 +81,10 @@ The following instructions provide the steps to create the test solution. See [C
 * The preceding command:
   * Creates the *PrimeService.Tests* project in the *PrimeService.Tests* directory. The test project uses [xUnit](https://xunit.net/) as the test library.
   * Configures the test runner by adding the following `<PackageReference />`elements to the project file:
-    * "Microsoft.NET.Test.Sdk"
-    * "xunit"
-    * "xunit.runner.visualstudio"
+    * `Microsoft.NET.Test.Sdk`
+    * `xunit`
+    * `xunit.runner.visualstudio`
+    * `coverlet.collector`
 
 * Add the test project to the solution file by running the following command:
 
@@ -103,7 +104,7 @@ The following instructions provide the steps to create the test solution. See [C
 
 This section summarizes all the commands in the previous section. Skip this section if you've completed the steps in the previous section.
 
-The following commands create the test solution on a windows machine. For macOS and Unix, update the `ren` command to the OS version of `ren` to rename a file:
+The following commands create the test solution on a Windows machine. For macOS and Unix, update the `ren` command to the OS version of `ren` to rename a file:
 
 ```dotnetcli
 dotnet new sln -o unit-testing-using-dotnet-test
@@ -120,7 +121,7 @@ Follow the instructions for "Replace the code in *PrimeService.cs* with the foll
 
 ## Create a test
 
-A popular approach in test driven development (TDD) is to write a test before implementing the target code. This tutorial uses the TDD approach. The `IsPrime` method is callable, but not implemented. A test call to `IsPrime` fails. With TDD, a test is written that is known to fail. The target code is updated to make the test pass. You keep repeating this approach, writing a failing test and then updating the target code to pass.
+A popular approach in test driven development (TDD) is to write a (failing) test before implementing the target code. This tutorial uses the TDD approach. The `IsPrime` method is callable, but not implemented. A test call to `IsPrime` fails. With TDD, a test is written that is known to fail. The target code is updated to make the test pass. You keep repeating this approach, writing a failing test and then updating the target code to pass.
 
 Update the *PrimeService.Tests* project:
 
@@ -167,7 +168,8 @@ Run `dotnet test`. The test passes.
 
 ### Add more tests
 
-Add prime number tests for 0 and -1. You could copy the preceding test and change the following code to use 0 and -1:
+Add prime number tests for 0 and -1. You could copy the test created in the preceding step and make copies of the following code to test 0 and -1.
+But don't do it, as there's a better way.
 
 ```csharp
 var primeService = new PrimeService();
@@ -196,11 +198,15 @@ public void IsPrime_InputIs1_ReturnFalse()
 
 with the following code:
 
-[!code-csharp[Sample_TestCode](../../../samples/snippets/core/testing/unit-testing-using-dotnet-test/csharp/PrimeService.Tests/PrimeService_IsPrimeShould.cs?name=Sample_TestCode)]
+ :::code language="csharp" source="../../../samples/snippets/core/testing/unit-testing-using-dotnet-test/csharp/PrimeService.Tests/PrimeService_IsPrimeShould.cs" id="Sample_TestCode":::
 
 In the preceding code, `[Theory]` and `[InlineData]` enable testing several values less than two. Two is the smallest prime number.
 
-Run `dotnet test`, two of the tests fail. To make all of the tests pass, update the `IsPrime` method with the following code:
+Add the following code after the class declaration and before the `[Theory]` attribute:
+
+ :::code language="csharp" source="../../../samples/snippets/core/testing/unit-testing-using-dotnet-test/csharp/PrimeService.Tests/PrimeService_IsPrimeShould.cs" id="Sample_InitCode":::
+
+Run `dotnet test`, and two of the tests fail. To make all of the tests pass, update the `IsPrime` method with the following code:
 
 ```csharp
 public bool IsPrime(int candidate)
@@ -213,7 +219,7 @@ public bool IsPrime(int candidate)
 }
 ```
 
-Following the TDD approach, add more failing tests, then update the target code. See the [finished version of the tests](https://github.com/dotnet/samples/blob/master/core/getting-started/unit-testing-using-dotnet-test/PrimeService.Tests/PrimeService_IsPrimeShould.cs) and the [complete implementation of the library](https://github.com/dotnet/samples/blob/master/core/getting-started/unit-testing-using-dotnet-test/PrimeService/PrimeService.cs).
+Following the TDD approach, add more failing tests, then update the target code. See the [finished version of the tests](https://github.com/dotnet/samples/blob/main/core/getting-started/unit-testing-using-dotnet-test/PrimeService.Tests/PrimeService_IsPrimeShould.cs) and the [complete implementation of the library](https://github.com/dotnet/samples/blob/main/core/getting-started/unit-testing-using-dotnet-test/PrimeService/PrimeService.cs).
 
 The completed `IsPrime` method is not an efficient algorithm for testing primality.
 

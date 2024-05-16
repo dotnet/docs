@@ -6,16 +6,7 @@ ms.assetid: 9b240937-76a7-45cd-8823-7f82c34d03bd
 ---
 # Document Approval Process
 
-This sample demonstrates the use of many Windows Workflow Foundation (WF) and Windows Communication Foundation (WCF) features together. Together they implement a document approval process scenario. A client application can submit documents for approval and approve documents. An approval manager application exists to facilitate communications between clients and to enforce the rules of the approval process. The approval process is a workflow that can execute several types of approval. Activities exist to get a single approval, a quorum approval (a percentage of set of approvers), and a complex approval process that consists of a quorum and single approval in a sequence.
-
-> [!IMPORTANT]
-> The samples may already be installed on your machine. Check for the following (default) directory before continuing.
->
-> `<InstallDrive>:\WF_WCF_Samples`
->
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
->
-> `<InstallDrive>:\WF_WCF_Samples\WF\Application\DocumentApprovalProcess`
+The [DocumentApprovalProcess sample](https://github.com/dotnet/samples/tree/main/framework/windows-workflow-foundation/application/DocumentApprovalProcess/CS) demonstrates the use of many Windows Workflow Foundation (WF) and Windows Communication Foundation (WCF) features together. Together they implement a document approval process scenario. A client application can submit documents for approval and approve documents. An approval manager application exists to facilitate communications between clients and to enforce the rules of the approval process. The approval process is a workflow that can execute several types of approval. Activities exist to get a single approval, a quorum approval (a percentage of set of approvers), and a complex approval process that consists of a quorum and single approval in a sequence.
 
 ## Sample Details
 
@@ -33,7 +24,7 @@ From the client's perspective, the approval process functions as follows:
 
 4. Once joined, a client can send a document for approval using single, quorum or complex approval processes.
 
-5. A button in the client’s interface is clicked, starting a workflow instance in a client Workflow Service Host.
+5. A button in the client's interface is clicked, starting a workflow instance in a client Workflow Service Host.
 
 6. The workflow sends an approval request to the approval manager application.
 
@@ -53,7 +44,7 @@ From the client's perspective, the approval process functions as follows:
 
 14. A WCF client is used to send an approval response back to the approval manager application.
 
-From the approval manager application’s point of view, the approval process functions as follows:
+From the approval manager application's point of view, the approval process functions as follows:
 
 1. A client requests to participate to the approval process system.
 
@@ -75,21 +66,21 @@ From the approval manager application’s point of view, the approval process fu
 
 ## Using the Sample
 
-##### To set up the database
+### To set up the database
 
-1. From a Visual Studio 2010 command prompt opened with Administrator privileges, navigate to this DocumentApprovalProcess folder and run Setup.cmd.
+1. From a Visual Studio command prompt opened with Administrator privileges, navigate to this DocumentApprovalProcess folder and run Setup.cmd.
 
-##### To set up the application
+### To set up the application
 
-1. Using Visual Studio 2010, open the DocumentApprovalProcess.sln solution file.
+1. Using Visual Studio, open the DocumentApprovalProcess.sln solution file.
 
 2. To build the solution, press CTRL+SHIFT+B.
 
 3. To run the solution, launch the Approval Manager Application by right-clicking the ApprovalManager project in the **Solution Explorer** and clicking **Debug**->**Start** new instance from the right-click menu.
 
-    Wait for the manager’s output to let you know that it is ready.
+    Wait for the manager's output to let you know that it is ready.
 
-##### To run the single approval scenario
+### To run the single approval scenario
 
 1. Open a command prompt with administrator permission.
 
@@ -105,7 +96,7 @@ From the approval manager application’s point of view, the approval process fu
 
 7. In the `UserType2` client, a document awaiting approval appears. Select it and press **approve** or **reject**. The results should show in the `UserType1` client.
 
-##### To run the quorum approval scenario
+### To run the quorum approval scenario
 
 1. Open a command prompt with administrator permission.
 
@@ -121,7 +112,7 @@ From the approval manager application’s point of view, the approval process fu
 
 7. In the `UserType2` clients, a document awaiting approval appears. Select it and press **approve** or **reject**. The results should show in the `UserType1` client.
 
-##### To run the complex approval scenario
+### To run the complex approval scenario
 
 1. Open a command prompt with administrator permission.
 
@@ -141,6 +132,6 @@ From the approval manager application’s point of view, the approval process fu
 
 8. Approve or reject the document from the `UserType3` client. The results should show in the `UserType1` client.
 
-##### To clean up
+### To clean up
 
-1. From a Visual Studio 2010 command prompt, navigate to the DocumentApprovalProcess folder and run Cleanup.cmd.
+1. From a Visual Studio command prompt, navigate to the DocumentApprovalProcess folder and run Cleanup.cmd.

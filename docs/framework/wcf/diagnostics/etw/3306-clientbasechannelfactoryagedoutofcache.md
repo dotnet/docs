@@ -6,10 +6,10 @@ ms.assetid: d8af1dbf-ea3b-4931-94eb-6d21e30a886e
 ---
 # 3306 - ClientBaseChannelFactoryAgedOutofCache
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3306|  
 |Keywords|ServiceModel|  
 |Level|Information|  

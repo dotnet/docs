@@ -8,8 +8,8 @@ helpviewer_keywords:
   - "MDAs (managed debugging assistants), invalid function pointer to delegates"
   - "function pointers, invalid"
   - "marshaling, run-time errors"
-  - "managed debugging assistants (MDAs), marshaling"
-  - "MDAs (managed debugging assistants), marshaling"
+  - "managed debugging assistants (MDAs), marshalling"
+  - "MDAs (managed debugging assistants), marshalling"
   - "invalid function pointers"
 ms.assetid: 99ae44f1-783e-49a9-9009-24f54bbd0f09
 ---
@@ -51,4 +51,4 @@ The `invalidFunctionPointerInDelegate` managed debugging assistant (MDA) is acti
 
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
 - [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)
-- [Interop Marshaling](../interop/interop-marshaling.md)
+- [Interop Marshaling](../interop/interop-marshalling.md)

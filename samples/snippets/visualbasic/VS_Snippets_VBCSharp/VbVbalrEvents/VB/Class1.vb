@@ -235,6 +235,13 @@ Class Class647cd825e8774910b4f18d168beebe6a
         RemoveHandler Obj.Ev_Event, AddressOf EventHandler
         ' This event will not be handled.
         Obj.CauseSomeEvent()
+        ' Associate an event handler with an event, using a lambda.
+        ' This handler cannot be removed.
+        AddHandler Obj.Ev_Event, Sub ()
+            MsgBox("Lambda caught event.")
+        End Sub
+        ' This event will be handled by the lambda above.
+        Obj.CauseSomeEvent()
     End Sub
 
     Sub EventHandler()

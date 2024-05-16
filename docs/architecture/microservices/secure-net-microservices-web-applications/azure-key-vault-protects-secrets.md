@@ -6,6 +6,8 @@ ms.date: 01/30/2020
 ---
 # Use Azure Key Vault to protect secrets at production time
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 Secrets stored as environment variables or stored by the Secret Manager tool are still stored locally and unencrypted on the machine. A more secure option for storing secrets is [Azure Key Vault](https://azure.microsoft.com/services/key-vault/), which provides a secure, central location for storing keys and secrets.
 
 The **Azure.Extensions.AspNetCore.Configuration.Secrets** package allows an ASP.NET Core application to read configuration information from Azure Key Vault. To start using secrets from an Azure Key Vault, you follow these steps:
@@ -31,16 +33,16 @@ Note that calling `AddAzureKeyVault` requires the application ID that was regist
 ## Additional resources
 
 - **Using Azure Key Vault to protect application secrets** \
-  [https://docs.microsoft.com/azure/architecture/multitenant-identity](/azure/architecture/multitenant-identity)
+  [https://learn.microsoft.com/azure/architecture/multitenant-identity](/azure/architecture/multitenant-identity)
 
 - **Safe storage of app secrets during development** \
-  [https://docs.microsoft.com/aspnet/core/security/app-secrets](/aspnet/core/security/app-secrets)
+  [https://learn.microsoft.com/aspnet/core/security/app-secrets](/aspnet/core/security/app-secrets)
 
 - **Configuring data protection** \
-  [https://docs.microsoft.com/aspnet/core/security/data-protection/configuration/overview](/aspnet/core/security/data-protection/configuration/overview)
+  [https://learn.microsoft.com/aspnet/core/security/data-protection/configuration/overview](/aspnet/core/security/data-protection/configuration/overview)
 
 - **Data Protection key management and lifetime in ASP.NET Core** \
-  [https://docs.microsoft.com/aspnet/core/security/data-protection/configuration/default-settings](/aspnet/core/security/data-protection/configuration/default-settings)
+  [https://learn.microsoft.com/aspnet/core/security/data-protection/configuration/default-settings](/aspnet/core/security/data-protection/configuration/default-settings)
 
 >[!div class="step-by-step"]
 >[Previous](developer-app-secrets-storage.md)

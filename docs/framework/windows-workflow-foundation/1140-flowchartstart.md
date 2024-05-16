@@ -6,10 +6,10 @@ ms.assetid: 9aa2c71e-a4ab-4aed-b76d-4795e8493b70
 ---
 # 1140 - FlowchartStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1140|  
 |Keywords|WFActivities|  
 |Level|Information|  

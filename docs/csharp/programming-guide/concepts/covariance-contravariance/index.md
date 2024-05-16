@@ -1,5 +1,5 @@
 ---
-title: "Covariance and Contravariance (C#)"
+title: "Covariance and Contravariance"
 description: Learn about covariance and contravariance and how they affect assignment compatibility. See a code example that demonstrates the differences between them.
 ms.date: 07/20/2015
 ms.assetid: 066d9a3c-aab7-4ea6-826d-0b1a85399c74
@@ -25,7 +25,7 @@ IEnumerable<object> objects = strings;
   
 // Contravariance.
 // Assume that the following method is in the class:
-// static void SetObject(object o) { }
+static void SetObject(object o) { }
 Action<object> actObject = SetObject;  
 // An object that is instantiated with a less derived type argument
 // is assigned to an object instantiated with a more derived type argument.

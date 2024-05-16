@@ -17,7 +17,7 @@ This provider emits various events from the .NET runtime, including GC, loader, 
 
 ### "Microsoft-DotNETCore-SampleProfiler" provider
 
-This provider is a .NET runtime event provider that is used for CPU sampling for managed callstacks. When enabled, it captures a snapshot of each thread's managed callstack every 10 milliseconds. To enable this capture, you must specify an <xref:System.Diagnostics.Tracing.EventLevel> of `Informational` or higher.
+This provider is a .NET runtime event provider that is used for CPU sampling for managed callstacks. When enabled, it captures a snapshot of each thread's managed callstack every millisecond. To enable this capture, you must specify an <xref:System.Diagnostics.Tracing.EventLevel> of `Informational` or higher.
 
 ## Framework libraries
 
@@ -25,12 +25,16 @@ This provider is a .NET runtime event provider that is used for CPU sampling for
 
 This provider logs information from DependencyInjection. The following table shows events logged by the `Microsoft-Extensions-DependencyInjection` provider:
 
-|Event name|Level|Description|
-|----------|-----|-----------|
-|`CallSiteBuilt`|Verbose (5)|A call site has been built.|
-|`ServiceResolved`|Verbose (5)|A service has been resolved.|
-|`ExpressionTreeGenerated`|Verbose (5)|An expression tree has been generated.|
-|`DynamicMethodBuilt`|Verbose (5)|A <xref:System.Reflection.Emit.DynamicMethod> has been built.|
+|Event name|Keyword|Level|Description|
+|----------|-------|-----|-----------|
+|`CallSiteBuilt`||Verbose (5)|A call site has been built.|
+|`ServiceResolved`||Verbose (5)|A service has been resolved.|
+|`ExpressionTreeGenerated`||Verbose (5)|An expression tree has been generated.|
+|`DynamicMethodBuilt`||Verbose (5)|A <xref:System.Reflection.Emit.DynamicMethod> has been built.|
+|`ScopeDisposed`||Verbose (5)|A scope has been disposed.|
+|`ServiceRealizationFailed`||Verbose (5)|A service realization has failed.|
+|`ServiceProviderBuilt`|`ServiceProviderInitialized(0x1)`|Verbose (5)|A <xref:Microsoft.Extensions.DependencyInjection.ServiceProvider> has been built.|
+|`ServiceProviderDescriptors`|`ServiceProviderInitialized(0x1)`|Verbose (5)|A list of <xref:Microsoft.Extensions.DependencyInjection.ServiceDescriptor> that has been used during the <xref:Microsoft.Extensions.DependencyInjection.ServiceProvider> build.|
 
 ### "System.Buffers.ArrayPoolEventSource" provider
 
@@ -43,6 +47,7 @@ This provider logs information from the ArrayPool. The following table shows the
 |`BufferReturned`|Verbose (5)|A buffer is returned to the pool.|
 |`BufferTrimmed`|Informational (4)|A buffer is attempted to be freed due to memory pressure or inactivity.|
 |`BufferTrimPoll`|Informational (4)|A check is being made to trim buffers.|
+|`BufferDropped`|Informational (4)|A buffer is dropped when returned to the pool.|
 
 ### "System.Net.Http" provider
 

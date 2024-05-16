@@ -6,10 +6,10 @@ ms.assetid: 55dc74a8-348f-47f3-aaca-4aef6cd75651
 ---
 # 716 - ClientChannelOpenStop
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|716|  
 |Keywords|ServiceModel|  
 |Level|Information|  

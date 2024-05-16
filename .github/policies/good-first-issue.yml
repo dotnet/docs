@@ -1,0 +1,23 @@
+id: good-first-issue
+name: GitOps.PullRequestIssueManagement
+description: Label new "typo" issues as good first issues
+resource: repository
+disabled: false
+where:
+configuration:
+  resourceManagementConfiguration:
+    eventResponderTasks:
+    - if:
+      - payloadType: Issues
+      - isAction:
+          action: Opened
+      - titleContains:
+          pattern: (T|t)ypo
+          isRegex: True
+      then:
+      - addLabel:
+          label: doc-bug
+      - addLabel:
+          label: help wanted
+      - addLabel:
+          label: good first issue

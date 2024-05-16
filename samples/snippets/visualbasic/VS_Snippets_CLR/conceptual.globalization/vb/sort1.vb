@@ -5,9 +5,9 @@ Option Strict On
 Imports System.Globalization
 Imports System.Threading
 
-Module Example
-    Public Sub Main()
-        Dim values() As String = {"able", "ångström", "apple", _
+Module Example18
+    Public Sub Main18()
+        Dim values() As String = {"able", "ångström", "apple",
                                    "Æble", "Windows", "Visual Studio"}
         ' Change thread to en-US.
         Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-US")

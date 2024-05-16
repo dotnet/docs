@@ -6,10 +6,10 @@ ms.assetid: a8b6efce-cf46-485f-9cd6-58126b627032
 ---
 # 1432 - ConcurrentSessionsRatio
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1432|  
 |Keywords|Quota|  
 |Level|Verbose|  

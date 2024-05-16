@@ -1,13 +1,12 @@
 ---
 title: Design with nullable reference types
 description: This advanced tutorial provides an introduction to nullable reference types. You'll learn to express your design intent on when reference values may be null, and have the compiler enforce when they cannot be null.
-ms.date: 02/19/2019
-ms.technology: csharp-null-safety
-ms.custom: mvc
+ms.date: 11/01/2022
+ms.subservice: null-safety
 ---
 # Tutorial: Express your design intent more clearly with nullable and non-nullable reference types
 
-C# 8.0 introduces [nullable reference types](../nullable-references.md), which complement reference types the same way nullable value types complement value types. You declare a variable to be a **nullable reference type** by appending a `?` to the type. For example, `string?` represents a nullable `string`. You can use these new types to more clearly express your design intent: some variables *must always have a value*, others *may be missing a value*.
+[Nullable reference types](../nullable-references.md) complement reference types the same way nullable value types complement value types. You declare a variable to be a **nullable reference type** by appending a `?` to the type. For example, `string?` represents a nullable `string`. You can use these new types to more clearly express your design intent: some variables *must always have a value*, others *may be missing a value*.
 
 In this tutorial, you'll learn how to:
 
@@ -20,9 +19,9 @@ In this tutorial, you'll learn how to:
 
 ## Prerequisites
 
-You'll need to set up your machine to run .NET Core, including the C# 8.0 compiler. The C# 8.0 compiler is available with [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), or [.NET Core 3.0](https://dotnet.microsoft.com/download/dotnet/3.0).
+You'll need to set up your machine to run .NET, including the C# compiler. The C# compiler is available with [Visual Studio 2022](https://visualstudio.microsoft.com/downloads), or the [.NET SDK](https://dotnet.microsoft.com/download/dotnet).
 
-This tutorial assumes you're familiar with C# and .NET, including either Visual Studio or the .NET Core CLI.
+This tutorial assumes you're familiar with C# and .NET, including either Visual Studio or the .NET CLI.
 
 ## Incorporate nullable reference types into your designs
 
@@ -32,11 +31,13 @@ The code you'll write for this sample expresses that intent, and the compiler en
 
 ## Create the application and enable nullable reference types
 
-Create a new console application either in Visual Studio or from the command line using `dotnet new console`. Name the application `NullableIntroduction`. Once you've created the application, you'll need to specify that the entire project compiles in an enabled **nullable annotation context**. Open the *.csproj* file and add a `Nullable` element to the `PropertyGroup` element. Set its value to `enable`. You must opt into the **nullable reference types** feature, even in C# 8.0 projects. That's because once the feature is turned on, existing reference variable declarations become **non-nullable reference types**. While that decision will help find issues where existing code may not have proper null-checks, it may not accurately reflect your original design intent:
+Create a new console application either in Visual Studio or from the command line using `dotnet new console`. Name the application `NullableIntroduction`. Once you've created the application, you'll need to specify that the entire project compiles in an enabled **nullable annotation context**. Open the *.csproj* file and add a `Nullable` element to the `PropertyGroup` element. Set its value to `enable`. You must opt into the **nullable reference types** feature in projects earlier than C# 11. That's because once the feature is turned on, existing reference variable declarations become **non-nullable reference types**. While that decision will help find issues where existing code may not have proper null-checks, it may not accurately reflect your original design intent:
 
 ```xml
 <Nullable>enable</Nullable>
 ```
+
+Prior to .NET 6, new projects do not include the `Nullable` element. Beginning with .NET 6, new projects include the `<Nullable>enable</Nullable>` element in the project file.
 
 ### Design the types for the application
 
@@ -101,7 +102,7 @@ namespace NullableIntroduction
 
 Because you haven't initialized `QuestionText`, the compiler issues a warning that a non-nullable property hasn't been initialized. Your design requires the question text to be non-null, so you add a constructor to initialize it and the `QuestionType` value as well. The finished class definition looks like the following code:
 
-[!code-csharp[DefineQuestion](~/samples/snippets/csharp/NullableIntroduction/NullableIntroduction/SurveyQuestion.cs)]
+:::code language="csharp" source="./snippets/NullableIntroduction/SurveyQuestion.cs":::
 
 Adding the constructor removes the warning. The constructor argument is also a non-nullable reference type, so the compiler doesn't issue any warnings.
 
@@ -127,7 +128,7 @@ As before, you must initialize the list object to a non-null value or the compil
 
 Switch to *Program.cs* in your editor and replace the contents of `Main` with the following lines of code:
 
-[!code-csharp[AddQuestions](~/samples/snippets/csharp/NullableIntroduction/NullableIntroduction/Program.cs#AddQuestions)]
+:::code language="csharp" source="./snippets/NullableIntroduction/Program.cs" id="AddQuestions":::
 
 Because the entire project is in an enabled nullable annotation context, you'll get warnings when you pass `null` to any method expecting a non-nullable reference type. Try it by adding the following line to `Main`:
 
@@ -159,7 +160,7 @@ namespace NullableIntroduction
 
 Next, add a `static` method to create new participants by generating a random ID:
 
-[!code-csharp[GenerateRespondents](~/samples/snippets/csharp/NullableIntroduction/NullableIntroduction/SurveyResponse.cs#Random)]
+:::code language="csharp" source="./snippets/NullableIntroduction/SurveyResponse.cs" id="Random":::
 
 The main responsibility of this class is to generate the responses for a participant to the questions in the survey. This responsibility has a few steps:
 
@@ -168,7 +169,7 @@ The main responsibility of this class is to generate the responses for a partici
 
 Add the following code to your `SurveyResponse` class:
 
-[!code-csharp[AnswerSurvey](~/samples/snippets/csharp/NullableIntroduction/NullableIntroduction/SurveyResponse.cs#AnswerSurvey)]
+:::code language="csharp" source="./snippets/NullableIntroduction/SurveyResponse.cs" id="AnswerSurvey":::
 
 The storage for the survey answers is a `Dictionary<int, string>?`, indicating that it may be null. You're using the new language feature to declare your design intent, both to the compiler and to anyone reading your code later. If you ever dereference `surveyResponses` without checking for the `null` value first, you'll get a compiler warning. You don't get a warning in the `AnswerSurvey` method because the compiler can determine the `surveyResponses` variable was set to a non-null value above.
 
@@ -176,45 +177,43 @@ Using `null` for missing answers highlights a key point for working with nullabl
 
 Next, you need to write the `PerformSurvey` method in the `SurveyRun` class. Add the following code in the `SurveyRun` class:
 
-[!code-csharp[PerformSurvey](~/samples/snippets/csharp/NullableIntroduction/NullableIntroduction/SurveyRun.cs#PerformSurvey)]
+:::code language="csharp" source="./snippets/NullableIntroduction/SurveyRun.cs" id="PerformSurvey":::
 
 Here again, your choice of a nullable `List<SurveyResponse>?` indicates the response may be null. That indicates the survey hasn't been given to any respondents yet. Notice that respondents are added until enough have consented.
 
 The last step to run the survey is to add a call to perform the survey at the end of the `Main` method:
 
-[!code-csharp[RunSurvey](~/samples/snippets/csharp/NullableIntroduction/NullableIntroduction/Program.cs#RunSurvey)]
+:::code language="csharp" source="./snippets/NullableIntroduction/Program.cs" id="RunSurvey":::
 
 ## Examine survey responses
 
 The last step is to display survey results. You'll add code to many of the classes you've written. This code demonstrates the value of distinguishing nullable and non-nullable reference types. Start by adding the following two expression-bodied members to the `SurveyResponse` class:
 
-[!code-csharp[ReportResponses](~/samples/snippets/csharp/NullableIntroduction/NullableIntroduction/SurveyResponse.cs#SurveyStatus)]
+:::code language="csharp" source="./snippets/NullableIntroduction/SurveyResponse.cs" id="SurveyStatus":::
 
 Because `surveyResponses` is a nullable reference type, null checks are necessary before de-referencing it. The `Answer` method returns a non-nullable string, so we have to cover the case of a missing answer by using the null-coalescing operator.
 
 Next, add these three expression-bodied members to the `SurveyRun` class:
 
-[!code-csharp[ReportResults](~/samples/snippets/csharp/NullableIntroduction/NullableIntroduction/SurveyRun.cs#RunReport)]
+:::code language="csharp" source="./snippets/NullableIntroduction/SurveyRun.cs" id="RunReport":::
 
 The `AllParticipants` member must take into account that the `respondents` variable might be null, but the return value can't be null. If you change that expression by removing the `??` and the empty sequence that follows, the compiler warns you the method might return `null` and its return signature returns a non-nullable type.
 
 Finally, add the following loop at the bottom of the `Main` method:
 
-[!code-csharp[DisplaySurveyResults](~/samples/snippets/csharp/NullableIntroduction/NullableIntroduction/Program.cs#WriteAnswers)]
+:::code language="csharp" source="./snippets/NullableIntroduction/Program.cs" id="WriteAnswers":::
 
 You don't need any `null` checks in this code because you've designed the underlying interfaces so that they all return non-nullable reference types.
 
 ## Get the code
 
-You can get the code for the finished tutorial from our [samples](https://github.com/dotnet/samples) repository in the [csharp/NullableIntroduction](https://github.com/dotnet/samples/tree/master/csharp/NullableIntroduction) folder.
+You can get the code for the finished tutorial from our [samples](https://github.com/dotnet/samples) repository in the [csharp/NullableIntroduction](https://github.com/dotnet/samples/tree/main/csharp/NullableIntroduction) folder.
 
 Experiment by changing the type declarations between nullable and non-nullable reference types. See how that generates different warnings to ensure you don't accidentally dereference a `null`.
 
 ## Next steps
 
-Learn more by migrating an existing application to use nullable reference types:
-> [!div class="nextstepaction"]
-> [Upgrade an application to use nullable reference types](upgrade-to-nullable-references.md)
-
 Learn how to use nullable reference type when using Entity Framework:
+
+> [!div class="nextstepaction"]
 > [Entity Framework Core Fundamentals: Working with Nullable Reference Types](/ef/core/miscellaneous/nullable-reference-types)

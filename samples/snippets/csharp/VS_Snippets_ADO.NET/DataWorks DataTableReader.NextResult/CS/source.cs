@@ -1,15 +1,12 @@
 ﻿using System;
 using System.Data;
 
-class DataTableReaderConstructor
+static class DataTableReaderConstructor
 {
     [STAThread]
-    static void Main()
-    {
-        TestConstructor();
-    }
+    static void Main() => TestConstructor();
     // <Snippet1>
-    private static void TestConstructor()
+    static void TestConstructor()
     {
         // Create two data adapters, one for each of the two
         // DataTables to be filled.
@@ -17,7 +14,7 @@ class DataTableReaderConstructor
         DataTable productDataTable = GetProducts();
 
         // Create the new DataTableReader.
-        using (DataTableReader reader = new DataTableReader(
+        using (DataTableReader reader = new(
                    new DataTable[] { customerDataTable, productDataTable }))
         {
             // Print the contents of each of the result sets.
@@ -31,15 +28,15 @@ class DataTableReaderConstructor
         Console.ReadLine();
     }
 
-    private static DataTable GetCustomers()
+    static DataTable GetCustomers()
     {
         // Create sample Customers table, in order
         // to demonstrate the behavior of the DataTableReader.
-        DataTable table = new DataTable();
+        DataTable table = new();
 
         // Create two columns, ID and Name.
         DataColumn idColumn = table.Columns.Add("ID", typeof(int));
-        table.Columns.Add("Name", typeof(string ));
+        table.Columns.Add("Name", typeof(string));
 
         // Set the ID column as the primary key column.
         table.PrimaryKey = new DataColumn[] { idColumn };
@@ -51,15 +48,15 @@ class DataTableReaderConstructor
         return table;
     }
 
-    private static DataTable GetProducts()
+    static DataTable GetProducts()
     {
         // Create sample Products table, in order
         // to demonstrate the behavior of the DataTableReader.
-        DataTable table = new DataTable();
+        DataTable table = new();
 
         // Create two columns, ID and Name.
         DataColumn idColumn = table.Columns.Add("ID", typeof(int));
-        table.Columns.Add("Name", typeof(string ));
+        table.Columns.Add("Name", typeof(string));
 
         // Set the ID column as the primary key column.
         table.PrimaryKey = new DataColumn[] { idColumn };
@@ -71,12 +68,12 @@ class DataTableReaderConstructor
         return table;
     }
 
-    private static void PrintColumns(DataTableReader reader)
+    static void PrintColumns(DataTableReader reader)
     {
         // Loop through all the rows in the DataTableReader
         while (reader.Read())
         {
-            for (int i = 0; i < reader.FieldCount; i++)
+            for (var i = 0; i < reader.FieldCount; i++)
             {
                 Console.Write(reader[i] + " ");
             }

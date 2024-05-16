@@ -2,7 +2,7 @@
 description: "Learn more about: Task 1: Create a New Windows Presentation Foundation Application"
 title: "Task 1: Create a New Windows Presentation Foundation Application"
 ms.date: "03/30/2017"
-ms.assetid: 270eaeba-9492-4532-af9f-403ce5c9935b
+ms.topic: "tutorial"
 ---
 # Task 1: Create a New Windows Presentation Foundation Application
 

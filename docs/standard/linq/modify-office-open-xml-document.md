@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 467d489c-2b1b-453b-a757-8ac180e82a96
+ms.topic: how-to
 ---
 # How to modify an Office Open XML document (LINQ to XML)
 

@@ -51,8 +51,7 @@ Specifies whether unhandled task exceptions should terminate a running process.
 |Element|Description|  
 |-------------|-----------------|  
 |`configuration`|The root element in every configuration file used by the common language runtime and .NET Framework applications.|  
-|`runtime`|Contains information about runtime initialization options.|  
-|||  
+|`runtime`|Contains information about runtime initialization options.|
   
 ## Remarks  
 
@@ -62,7 +61,7 @@ Specifies whether unhandled task exceptions should terminate a running process.
   
  To make it easier for developers to write asynchronous code based on tasks, the .NET Framework 4.5 changes this default behavior for unobserved exceptions. Unobserved exceptions still cause the <xref:System.Threading.Tasks.TaskScheduler.UnobservedTaskException> event to be raised, but by default, the process does not terminate. Instead, the exception is ignored after the event is raised, regardless of whether an event handler observes the exception.  
   
- In the .NET Framework 4.5, you can use the [\<ThrowUnobservedTaskExceptions> element](throwunobservedtaskexceptions-element.md) in an application configuration file to enable the .NET Framework 4 behavior of throwing an exception.  
+ In .NET Framework 4.5, you can use the [\<ThrowUnobservedTaskExceptions> element](throwunobservedtaskexceptions-element.md) in an application configuration file to enable the .NET Framework 4 behavior of throwing an exception.  
   
  You can also specify the exception behavior in one of the following ways:  
   
@@ -70,7 +69,7 @@ Specifies whether unhandled task exceptions should terminate a running process.
   
 - By setting the registry DWORD value ThrowUnobservedTaskExceptions = 1 in the HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework key.  
   
-## Example  
+## Example 1
 
  The following example shows how to enable the throwing of exceptions in tasks by using an application configuration file.  
   
@@ -82,7 +81,7 @@ Specifies whether unhandled task exceptions should terminate a running process.
 </configuration>  
 ```  
   
-## Example  
+## Example 2  
 
  The following example demonstrates how an unobserved exception is thrown from a task. The code must be run as a released program to work correctly.  
   
@@ -91,5 +90,6 @@ Specifies whether unhandled task exceptions should terminate a running process.
   
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
 - [Runtime Settings Schema](index.md)
 - [Configuration File Schema](../index.md)

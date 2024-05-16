@@ -6,10 +6,10 @@ ms.assetid: 6ae63a4e-a4dd-44de-881f-95b50f983ef5
 ---
 # 503 - ServiceHostFactoryCreationStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|503|  
 |Keywords|WebHost|  
 |Level|Information|  

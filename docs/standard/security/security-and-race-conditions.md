@@ -1,6 +1,6 @@
 ---
 title: "Security and Race Conditions"
-description:: Describes pitfalls to avoid around security holes exploited by race conditions, including dispose methods, constructors, cached objects, and finalizers.
+description: Describes pitfalls to avoid around security holes exploited by race conditions, including dispose methods, constructors, cached objects, and finalizers.
 ms.date: 07/15/2020
 dev_langs: 
   - "csharp"
@@ -48,7 +48,7 @@ In some applications, it might be possible for other threads to access class mem
   
 ## Race Conditions with Cached Objects  
 
-Code that caches security information or uses the code access security [Assert](../../framework/misc/using-the-assert-method.md) operation might also be vulnerable to race conditions if other parts of the class are not appropriately synchronized, as shown in the following example.  
+Code that caches security information or uses the code access security [Assert](/previous-versions/dotnet/framework/code-access-security/using-the-assert-method) operation might also be vulnerable to race conditions if other parts of the class are not appropriately synchronized, as shown in the following example.  
   
 ```vb  
 Sub SomeSecureFunction()  

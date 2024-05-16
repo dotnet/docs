@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "Workflow, compilation"
   - "Workflow, XOML files"
   - "Workflow, wcf"
+ms.topic: "reference"
 ---
 # wfc.exe (Workflow Command-line Compiler Tool)
 

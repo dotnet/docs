@@ -6,10 +6,10 @@ ms.assetid: 9d85113b-73b9-4599-b776-30b40aaf1e7a
 ---
 # 4801 - DiscoveryClientInClientChannelFailedToClose
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4801|  
 |Keywords|Discovery|  
 |Level|Warning|  

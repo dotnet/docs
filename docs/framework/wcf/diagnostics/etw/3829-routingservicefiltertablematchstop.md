@@ -6,10 +6,10 @@ ms.assetid: 3355b8c2-2d5b-4c1b-8981-0cda08dee519
 ---
 # 3829 - RoutingServiceFilterTableMatchStop
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3829|  
 |Keywords|RoutingServices|  
 |Level|Information|  

@@ -16,7 +16,7 @@ ms.assetid: 385e911b-18c1-4e98-9924-c6d279101dd9
 A *dimension* is a direction in which you can vary the specification of an array's elements. An array that holds the sales total for each day of the month has one dimension (the day of the month). An array that holds the sales total by department for each day of the month has two dimensions (the department number and the day of the month). The number of dimensions an array has is called its *rank*.
 
 > [!NOTE]
-> You can use the <xref:System.Array.Rank%2A> property to determine the how many dimensions an array has.
+> You can use the <xref:System.Array.Rank%2A> property to determine how many dimensions an array has.
 
 ## Working with Dimensions
 

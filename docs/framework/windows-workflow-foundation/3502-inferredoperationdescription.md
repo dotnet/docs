@@ -6,10 +6,10 @@ ms.assetid: 6aebb614-3c72-4537-ba11-3cc7200ef1f1
 ---
 # 3502 - InferredOperationDescription
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3502|  
 |Keywords|WFServices|  
 |Level|Information|  

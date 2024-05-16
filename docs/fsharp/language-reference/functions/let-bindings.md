@@ -88,7 +88,7 @@ The scope of an entity declared with a let binding is limited to the portion of 
 
 Normally, functions in modules must be qualified by the name of the module when used by client code. For example, if a module `Module1` has a function `function1`, users would specify `Module1.function1` to refer to the function.
 
-Users of a module may use an import declaration to make the functions within that module available for use without being qualified by the module name. In the example just mentioned, users of the module can in that case open the module by using the import declaration open `Module1` and thereafter refer to `function1` directly.
+Users of a module may use an import declaration to make the functions within that module available for use without being qualified by the module name. In the example just mentioned, users of the module can in that case open the module by using the import declaration `open Module1` and thereafter refer to `function1` directly.
 
 ```fsharp
 module Module1 =

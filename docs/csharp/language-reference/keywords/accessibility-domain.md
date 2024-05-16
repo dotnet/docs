@@ -1,6 +1,6 @@
 ---
 description: "Accessibility Domain - C# Reference"
-title: "Accessibility Domain - C# Reference"
+title: "Accessibility Domain"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "accessibility domain [C#]"
@@ -24,8 +24,6 @@ The accessibility domain of a member specifies in which program sections a membe
   
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](./index.md)
 - [Access Modifiers](./access-modifiers.md)
 - [Accessibility Levels](./accessibility-levels.md)

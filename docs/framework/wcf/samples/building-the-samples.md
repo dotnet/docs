@@ -6,7 +6,7 @@ ms.assetid: 2899e7a5-9cb2-4e8d-b8d2-f31391549198
 ---
 # Building the Windows Communication Foundation Samples
 
-The Windows Communication Foundation (WCF) samples can be built using the Visual Studio IDE or using the **msbuild** command from the command line. Both procedures are described in this topic.
+The Windows Communication Foundation (WCF) samples can be built using the Visual Studio IDE or the **msbuild** command from the command line. Both procedures are described in this article.
 
 > [!NOTE]
 > Before building or running any of the WCF samples, ensure you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](one-time-setup-procedure-for-the-wcf-samples.md).
@@ -33,19 +33,19 @@ The Windows Communication Foundation (WCF) samples can be built using the Visual
 
 ## Setup Batch Files and Scripts
 
- Setup.exe and Cleanup.exe batch files and scripts should be run from Developer Command Prompt for Visual Studio. Several set up and clean up files perform tasks that require administrative privileges and should be launched with administrator privileges.
+Setup.exe and Cleanup.exe batch files and scripts should be run from Developer Command Prompt for Visual Studio. Several set up and clean up files perform tasks that require administrative privileges and should be launched with administrator privileges.
 
 ## Important Security Information about Metadata Endpoints
 
- To prevent unintentional disclosure of potentially sensitive service metadata, the default configuration for Windows Communication Foundation (WCF) services disables metadata publishing. This behavior is secure by default, but also means that you cannot use a metadata import tool (such as Svcutil.exe) to generate the client code required to call the service unless the service’s metadata publishing behavior is explicitly enabled in configuration. To make experimenting with the samples easier, almost all samples expose an unsecured metadata publishing endpoint. Such endpoints are potentially available to anonymous unauthenticated consumers and care must be taken before deploying such endpoints to ensure that publicly disclosing a service’s metadata is appropriate. For more information about publishing service metadata, see the [Metadata Publishing Behavior](metadata-publishing-behavior.md) sample. See the [Custom Secure Metadata Endpoint](custom-secure-metadata-endpoint.md) sample for a sample securing a metadata endpoint.
+To prevent unintentional disclosure of potentially sensitive service metadata, the default configuration for Windows Communication Foundation (WCF) services disables metadata publishing. This behavior is secure by default, but also means that you cannot use a metadata import tool (such as Svcutil.exe) to generate the client code required to call the service unless the service's metadata publishing behavior is explicitly enabled in configuration. To make experimenting with the samples easier, almost all samples expose an unsecured metadata publishing endpoint. Such endpoints are potentially available to anonymous unauthenticated consumers and care must be taken before deploying such endpoints to ensure that publicly disclosing a service's metadata is appropriate. For more information about publishing service metadata, see the [Metadata Publishing Behavior](metadata-publishing-behavior.md) sample. See the [Custom Secure Metadata Endpoint](custom-secure-metadata-endpoint.md) sample for a sample securing a metadata endpoint.
 
 ## Exception Handling
 
- Generally speaking these samples do not include exception handling to keep the code focused on the subject of the sample. For more information about exception handling, see the [Expected Exceptions](expected-exceptions.md) sample.
+Generally speaking these samples do not include exception handling to keep the code focused on the subject of the sample. For more information about exception handling, see the [Expected Exceptions](expected-exceptions.md) sample.
 
 ## Regenerating Clients and Configuration with Svcutil
 
- You can use the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) to regenerate client code and configuration for most of the samples. Some samples require manually edited configuration. For example, if you use Svcutil.exe to regenerate the configuration for a sample that uses client certificate credentials, you must manually specify the credentials previously configured. Some samples use specific Svcutil.exe options to affect the generated code, these options are specified in the specific sample topics.
+You can use the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) to regenerate client code and configuration for most of the samples. Some samples require manually edited configuration. For example, if you use Svcutil.exe to regenerate the configuration for a sample that uses client certificate credentials, you must manually specify the credentials previously configured. Some samples use specific Svcutil.exe options to affect the generated code, these options are specified in the specific sample topics.
 
 ### To regenerate the client and configuration files
 

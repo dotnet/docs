@@ -4,48 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 
-namespace AutoImplMutable
-{
-    // Auto-impl props
-    //<snippet28>
-    // This class is mutable. Its data can be modified from
-    // outside the class.
-    class Customer
-    {
-        // Auto-implemented properties for trivial get and set
-        public double TotalPurchases { get; set; }
-        public string Name { get; set; }
-        public int CustomerId { get; set; }
-
-        // Constructor
-        public Customer(double purchases, string name, int id)
-        {
-            TotalPurchases = purchases;
-            Name = name;
-            CustomerId = id;
-        }
-
-        // Methods
-        public string GetContactInfo() { return "ContactInfo"; }
-        public string GetTransactionHistory() { return "History"; }
-
-        // .. Additional methods, events, etc.
-    }
-
-    class Program
-    {
-        static void Main()
-        {
-            // Intialize a new object.
-            Customer cust1 = new Customer(4987.63, "Northwind", 90108);
-
-            // Modify a property.
-            cust1.TotalPurchases += 499.99;
-        }
-    }
-    //</snippet28>
-}
-
 namespace Immutable
 {
 
@@ -342,54 +300,7 @@ namespace csrefLINQExamples
                 //</snippet36>
             }
 
-            // Implicitly Typed Arrays example 1
-            //<snippet37>
-            class ImplicitlyTypedArraySample
-            {
-                static void Main()
-                {
-                    var a = new[] { 1, 10, 100, 1000 }; // int[]
-                    var b = new[] { "hello", null, "world" }; // string[]
-
-                    // single-dimension jagged array
-                    var c = new[]
-                    {
-                        new[]{1,2,3,4},
-                        new[]{5,6,7,8}
-                    };
-
-                    // jagged array of strings
-                    var d = new[]
-                    {
-                        new[]{"Luca", "Mads", "Luke", "Dinesh"},
-                        new[]{"Karen", "Suma", "Frances"}
-                    };
-                }
-            }
-            //</snippet37>
-
-            // Implicitly Typed Arrays examples 2
-            class ImplicitArraySample2
-            {
-                static void Method()
-                {
-                    //<snippet38>
-            var contacts = new[]
-            {
-                new {
-                    Name = " Eugene Zabokritski",
-                    PhoneNumbers = new[] { "206-555-0108", "425-555-0001" }
-                },
-                new {
-                    Name = " Hanying Feng",
-                    PhoneNumbers = new[] { "650-555-0199" }
-                }
-            };
-                    //</snippet38>
-                }
-            }
-
-            //Object and collection intializers
+            //Object and collection initializers
 
             //<snippet46>
             // The following code consolidates examples from the topic.
@@ -660,49 +571,6 @@ namespace csrefLINQExamples
              */
             //</snippet64>
 
-            //<snippet65>
-            class Test
-            {
-                delegate void TestDelegate(string s);
-                static void M(string s)
-                {
-                    Console.WriteLine(s);
-                }
-
-                static void Main(string[] args)
-                {
-                    // Original delegate syntax required
-                    // initialization with a named method.
-                    TestDelegate testDelA = new TestDelegate(M);
-
-                    // C# 2.0: A delegate can be initialized with
-                    // inline code, called an "anonymous method." This
-                    // method takes a string as an input parameter.
-                    TestDelegate testDelB = delegate(string s) { Console.WriteLine(s); };
-
-                    // C# 3.0. A delegate can be initialized with
-                    // a lambda expression. The lambda also takes a string
-                    // as an input parameter (x). The type of x is inferred by the compiler.
-                    TestDelegate testDelC = (x) => { Console.WriteLine(x); };
-
-                    // Invoke the delegates.
-                    testDelA("Hello. My name is M and I write lines.");
-                    testDelB("That's nothing. I'm anonymous and ");
-                    testDelC("I'm a famous author.");
-
-                    // Keep console window open in debug mode.
-                    Console.WriteLine("Press any key to exit.");
-                    Console.ReadKey();
-                }
-            }
-            /* Output:
-                Hello. My name is M and I write lines.
-                That's nothing. I'm anonymous and
-                I'm a famous author.
-                Press any key to exit.
-             */
-            //</snippet65>
-
             //<snippet 66>
             class Test2
             {
@@ -735,7 +603,7 @@ namespace csrefLINQExamples
             //<snippet80>
             class MQ
             {
-                // QueryMethhod1 returns a query as its value.
+                // QueryMethod1 returns a query as its value.
                 IEnumerable<string> QueryMethod1(ref int[] ints)
                 {
                     var intsToStrings = from i in ints

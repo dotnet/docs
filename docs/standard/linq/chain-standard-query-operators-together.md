@@ -4,7 +4,7 @@ description: Learn how to chain query operators together.
 ms.date: 07/20/2015
 dev_langs:
   - "csharp"
-ms.assetid: 66f2b0a9-2c23-4735-988e-bbc9dfb55c7b
+ms.topic: how-to
 ---
 
 # Chain standard query operators together (C#) (LINQ to XML)

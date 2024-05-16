@@ -3,6 +3,7 @@ title: "How to: Inspect assembly contents using MetadataLoadContext"
 description: "Learn how to use MetadataLoadContext, which is an API that enables you to load .NET assemblies for inspection purposes."
 author: MSDN-WhiteKnight
 ms.date: 03/10/2020
+ms.topic: how-to
 ---
 # How to: Inspect assembly contents using MetadataLoadContext
 
@@ -32,6 +33,14 @@ The following code sample creates <xref:System.Reflection.MetadataLoadContext>, 
 
 [!code-csharp[](snippets/inspect-contents-using-metadataloadcontext/MetadataLoadContextSnippets.cs#CreateContext)]
 
+If you need to test types in <xref:System.Reflection.MetadataLoadContext> for equality or assignability, only use type objects loaded into that context. Mixing <xref:System.Reflection.MetadataLoadContext> types with runtime types is not supported. For example, consider a type `testedType` in <xref:System.Reflection.MetadataLoadContext>. If you need to test whether another type is assignable from it, don't use code like `typeof(MyType).IsAssignableFrom(testedType)`. Use code like this instead:
+
+[!code-csharp[](snippets/inspect-contents-using-metadataloadcontext/MetadataLoadContextSnippets.cs#Assignability)]
+
 ## Example
 
 For a complete code example, see the [Inspect assembly contents using MetadataLoadContext sample](/samples/dotnet/samples/inspect-assembly-contents-using-metadataloadcontext/).
+
+## See also
+
+- [Reflection in .NET](../../fundamentals/reflection/reflection.md)

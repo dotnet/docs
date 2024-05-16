@@ -6,10 +6,10 @@ ms.assetid: 038ccc90-63f8-42c2-aa17-94a16fde6566
 ---
 # 5014 - DCJsonGenWriterStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|5014|  
 |Keywords|Serialization|  
 |Level|Verbose|  

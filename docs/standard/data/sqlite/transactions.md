@@ -21,7 +21,7 @@ SQLite also supports **read uncommitted** when using a shared cache. This level 
 
 - A *dirty read* occurs when changes pending in one transaction are returned by a query outside of the transaction, but the changes in the transaction are rolled back. The results contain data that was never actually committed to the database.
 
-- A *nonrepeatable read* occurs when a transaction queries same row twice, but the results are different because it was changed between the two queries by another transaction.
+- A *nonrepeatable read* occurs when a transaction queries the same row twice, but the results are different because it was changed between the two queries by another transaction.
 
 - *Phantoms* are rows that get changed or added to meet the where clause of a query during a transaction. If allowed, the same query could return different rows when executed twice in the same transaction.
 
@@ -39,3 +39,11 @@ Starting with Microsoft.Data.Sqlite version 5.0, transactions can be deferred. T
 
 > [!WARNING]
 > Commands inside a deferred transaction can fail if they cause the transaction to be upgraded from a read transaction to a write transaction while the database is locked. When this happens, the application will need to retry the entire transaction.
+
+## Savepoints
+
+Version 6.0 of Microsoft.Data.Sqlite supports savepoints. Savepoints can be used to create nested transactions. Savepoints can be rolled back without affecting other parts of the transaction, and even though a savepoint may be committed (released), its changes may later be rolled back as part of its parent transaction.
+
+The following code illustrates using the Optimistic Offline Lock pattern to detect concurrent updates and resolve conflicts within a savepoint as part of a larger transaction.
+
+[!code-csharp[](../../../../samples/snippets/standard/data/sqlite/SavepointSample/Program.cs#snippet_Savepoint)]

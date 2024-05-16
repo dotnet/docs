@@ -1,0 +1,14 @@
+<!--<snippet10>-->
+<?xml version="1.0"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="urn:empl-hire" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="employee">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ID" type="xs:unsignedShort" />
+        <xs:element name="hire-date" type="xs:date" />
+        <xs:element name="title" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+<!--</snippet10>-->

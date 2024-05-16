@@ -5,6 +5,8 @@ ms.date: 11/25/2020
 ---
 # Use enumeration classes instead of enum types
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 [Enumerations](../../../csharp/language-reference/builtin-types/enum.md) (or *enum types* for short) are a thin language wrapper around an integral type. You might want to limit their use to when you are storing one value from a closed set of values. Classification based on sizes (small, medium, large) is a good example. Using enums for control flow or more robust abstractions can be a [code smell](https://deviq.com/antipatterns/code-smells). This type of usage leads to fragile code with many control flow statements checking values of the enum.
 
 Instead, you can create Enumeration classes that enable all the rich features of an object-oriented language.
@@ -58,9 +60,9 @@ You can use this class as a type in any entity or value object, as for the follo
 public class CardType
     : Enumeration
 {
-    public static CardType Amex = new CardType(1, nameof(Amex));
-    public static CardType Visa = new CardType(2, nameof(Visa));
-    public static CardType MasterCard = new CardType(3, nameof(MasterCard));
+    public static CardType Amex = new(1, nameof(Amex));
+    public static CardType Visa = new(2, nameof(Visa));
+    public static CardType MasterCard = new(3, nameof(MasterCard));
 
     public CardType(int id, string name)
         : base(id, name)

@@ -2,10 +2,9 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using System.Security.Permissions;
 using System.Runtime.Serialization;
 //</snippet0>
-[assembly: SecurityPermission(SecurityAction.RequestMinimum)]
+
 namespace ServiceModel.Samples
 {
     //<snippet1>

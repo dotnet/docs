@@ -1,6 +1,6 @@
 ---
 description: Learn more about void keyword in C#
-title: "void - C# reference"
+title: "void"
 ms.date: 02/11/2020
 f1_keywords: 
   - "void_CSharpKeyword"
@@ -16,11 +16,10 @@ You use `void` as the return type of a [method](../../programming-guide/classes-
 
 [!code-csharp[void method](snippets/shared/VoidType.cs#VoidExample)]
 
-You can also use `void` as a referent type to declare a pointer to an unknown type. For more information, see [Pointer types](../../programming-guide/unsafe-code-pointers/pointer-types.md).
+You can also use `void` as a referent type to declare a pointer to an unknown type. For more information, see [Pointer types](../unsafe-code.md#pointer-types).
 
 You cannot use `void` as the type of a variable.
 
 ## See also
 
-- [C# reference](../index.md)
 - <xref:System.Void?displayProperty=nameWithType>

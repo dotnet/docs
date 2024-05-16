@@ -35,7 +35,7 @@ Contains a cryptography class that has a mapping to a friendly name in the [\<na
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|`customClassName`|Required attribute.<br /><br /> Contains the information for the cryptography class. Use this attribute to provide a short name for your class. You must specify a string that meets the requirements specified in [Specifying Fully Qualified Type Names](../../../reflection-and-codedom/specifying-fully-qualified-type-names.md).|  
+|`customClassName`|Required attribute.<br /><br /> Contains the information for the cryptography class. Use this attribute to provide a short name for your class. You must specify a string that meets the requirements specified in [Specifying Fully Qualified Type Names](../../../../fundamentals/reflection/specifying-fully-qualified-type-names.md).|  
   
 ### Child Elements  
 

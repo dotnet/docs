@@ -82,6 +82,7 @@ The following example indicates that an application uses server GC with 10 heaps
 
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
 - <xref:System.Runtime.GCSettings.IsServerGC%2A?displayProperty=nameWithType>
 - [GCNoAffinitize element](gcnoaffinitize-element.md)
 - [GCHeapCount element](gcheapcount-element.md)

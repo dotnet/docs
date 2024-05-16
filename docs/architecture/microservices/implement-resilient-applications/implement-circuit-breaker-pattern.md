@@ -1,10 +1,12 @@
 ---
 title: Implementing the Circuit Breaker pattern
 description: Learn how to implement the Circuit Breaker pattern as a complementary system to Http retries.
-ms.date: 03/03/2020
+ms.date: 03/09/2022
 ---
 
 # Implement the Circuit Breaker pattern
+
+[!INCLUDE [download-alert](../includes/download-alert.md)]
 
 As noted earlier, you should handle faults that might take a variable amount of time to recover from, as might happen when you try to connect to a remote service or resource. Handling this type of fault can improve the stability and resiliency of an application.
 
@@ -26,15 +28,18 @@ As when implementing retries, the recommended approach for circuit breakers is t
 
 Adding a circuit breaker policy into your `IHttpClientFactory` outgoing middleware pipeline is as simple as adding a single incremental piece of code to what you already have when using `IHttpClientFactory`.
 
-The only addition here to the code used for HTTP call retries is the code where you add the Circuit Breaker policy to the list of policies to use, as shown in the following incremental code, part of the ConfigureServices() method.
+The only addition here to the code used for HTTP call retries is the code where you add the Circuit Breaker policy to the list of policies to use, as shown in the following incremental code.
 
 ```csharp
-//ConfigureServices()  - Startup.cs
-services.AddHttpClient<IBasketService, BasketService>()
-        .SetHandlerLifetime(TimeSpan.FromMinutes(5))  //Sample. Default lifetime is 2 minutes
+// Program.cs
+var retryPolicy = GetRetryPolicy();
+var circuitBreakerPolicy = GetCircuitBreakerPolicy();
+
+builder.Services.AddHttpClient<IBasketService, BasketService>()
+        .SetHandlerLifetime(TimeSpan.FromMinutes(5))  // Sample: default lifetime is 2 minutes
         .AddHttpMessageHandler<HttpClientAuthorizationDelegatingHandler>()
-        .AddPolicyHandler(GetRetryPolicy())
-        .AddPolicyHandler(GetCircuitBreakerPolicy());
+        .AddPolicyHandler(retryPolicy)
+        .AddPolicyHandler(circuitBreakerPolicy);
 ```
 
 The `AddPolicyHandler()` method is what adds policies to the `HttpClient` objects you'll use. In this case, it's adding a Polly policy for a circuit breaker.
@@ -42,6 +47,7 @@ The `AddPolicyHandler()` method is what adds policies to the `HttpClient` object
 To have a more modular approach, the Circuit Breaker Policy is defined in a separate method called `GetCircuitBreakerPolicy()`, as shown in the following code:
 
 ```csharp
+// also in Program.cs
 static IAsyncPolicy<HttpResponseMessage> GetCircuitBreakerPolicy()
 {
     return HttpPolicyExtensions
@@ -56,7 +62,7 @@ Circuit breakers should also be used to redirect requests to a fallback infrastr
 
 All those features are for cases where you're managing the failover from within the .NET code, as opposed to having it managed automatically for you by Azure, with location transparency.
 
-From a usage point of view, when using HttpClient, there’s no need to add anything new here because the code is the same than when using `HttpClient` with `IHttpClientFactory`, as shown in previous sections.
+From a usage point of view, when using HttpClient, there's no need to add anything new here because the code is the same than when using `HttpClient` with `IHttpClientFactory`, as shown in previous sections.
 
 ## Test Http retries and circuit breakers in eShopOnContainers
 
@@ -140,7 +146,7 @@ Finally, another possibility for the `CircuitBreakerPolicy` is to use `Isolate` 
 ## Additional resources
 
 - **Circuit Breaker pattern**\
-  [https://docs.microsoft.com/azure/architecture/patterns/circuit-breaker](/azure/architecture/patterns/circuit-breaker)
+  [https://learn.microsoft.com/azure/architecture/patterns/circuit-breaker](/azure/architecture/patterns/circuit-breaker)
 
 >[!div class="step-by-step"]
 >[Previous](implement-http-call-retries-exponential-backoff-polly.md)

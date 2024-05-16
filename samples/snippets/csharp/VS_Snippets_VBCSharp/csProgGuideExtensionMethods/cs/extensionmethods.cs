@@ -1,8 +1,4 @@
 ﻿//<Snippet1>
-using System.Linq;
-using System.Text;
-using System;
-
 namespace CustomExtensions
 {
     // Extension methods must be defined in a static class.
@@ -11,7 +7,7 @@ namespace CustomExtensions
         // This is the extension method.
         // The first parameter takes the "this" modifier
         // and specifies the type for which the method is defined.
-        public static int WordCount(this String str)
+        public static int WordCount(this string str)
         {
             return str.Split(new char[] {' ', '.','?'}, StringSplitOptions.RemoveEmptyEntries).Length;
         }
@@ -39,16 +35,13 @@ namespace Extension_Methods_Simple
 namespace Extension2
 {
 
-//<snippet2>
-using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Linq;
+    //<snippet2>
+    using System;
 
-namespace EnumExtension
-{
-    // Define an extension method in a non-nested static class.
-    public static class Extensions
+    namespace EnumExtension
+    {
+        // Define an extension method in a non-nested static class.
+        public static class Extensions
     {
         public static Grades minPassing = Grades.D;
         public static bool Passing(this Grades grade)
@@ -92,7 +85,7 @@ namespace EnumExtension
 
         static void Main()
         {
-            int[] ints = { 10, 45, 15, 39, 21, 26 };
+            int[] ints = [10, 45, 15, 39, 21, 26];
             var result = ints.OrderBy(g => g);
             foreach (var i in result)
             {
@@ -108,7 +101,7 @@ namespace ExtensionMethods
 {
     public static class MyExtensions
     {
-        public static int WordCount(this String str)
+        public static int WordCount(this string str)
         {
             return str.Split(new char[] { ' ', '.', '?' },
                              StringSplitOptions.RemoveEmptyEntries).Length;
@@ -121,8 +114,6 @@ namespace ExtensionMethods
 // Define an interface named IMyInterface.
 namespace DefineIMyInterface
 {
-    using System;
-
     public interface IMyInterface
     {
         // Any class that implements IMyInterface must define a method

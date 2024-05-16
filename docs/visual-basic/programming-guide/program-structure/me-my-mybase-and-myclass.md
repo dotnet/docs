@@ -48,7 +48,7 @@ ChangeFormColor(Me)
   
 ## My  
 
- The `My` feature provides easy and intuitive access to a number of .NET Framework classes, enabling the Visual Basic user to interact with the computer, application, settings, resources, and so on.  
+ The `My` feature provides easy and intuitive access to a number of .NET Framework classes, enabling the Visual Basic user to interact with the computer, application, settings, resources, and so on. For a list of these classes, see the [Visual Basic Run-time Objects](../../language-reference/objects/index.md#visual-basic-run-time-objects) reference.  
   
 ## MyBase  
 

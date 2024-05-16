@@ -6,10 +6,10 @@ ms.assetid: c7b5b73e-c1cd-41a5-9a0b-ab86af437f60
 ---
 # 3378 - SocketAsyncReadStop
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3378|  
 |Keywords|TCP|  
 |Level|Verbose|  

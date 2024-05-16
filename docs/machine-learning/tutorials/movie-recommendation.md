@@ -1,8 +1,8 @@
 ---
 title: 'Tutorial: Build a movie recommender - matrix factorization'
-description: This tutorial shows you how to build a movie recommender with ML.NET in a .NET Core console application. The steps use C# and Visual Studio 2019.
+description: This tutorial shows you how to build a movie recommender with ML.NET in a .NET console application. The steps use C# and Visual Studio 2019.
 author: briacht
-ms.date: 06/30/2020
+ms.date: 11/11/2021
 ms.custom: mvc, title-hack-0516
 ms.topic: tutorial
 #Customer intent: As a developer, I want to use ML.NET to apply a recommendation learning algorithm so that I can understand how to recommend items based on a user's history.
@@ -10,7 +10,7 @@ ms.topic: tutorial
 
 # Tutorial: Build a movie recommender using matrix factorization with ML.NET
 
-This tutorial shows you how to build a movie recommender with ML.NET in a .NET Core console application. The steps use C# and Visual Studio 2019.
+This tutorial shows you how to build a movie recommender with ML.NET in a .NET console application. The steps use C# and Visual Studio 2019.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
@@ -21,7 +21,7 @@ In this tutorial, you learn how to:
 > * Evaluate a model
 > * Deploy and consume a model
 
-You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/MovieRecommendation) repository.
+You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/main/machine-learning/tutorials/MovieRecommendation) repository.
 
 ## Machine learning workflow
 
@@ -34,7 +34,7 @@ You will use the following steps to accomplish your task, as well as any other M
 
 ## Prerequisites
 
-* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) or later or Visual Studio 2017 version 15.6 or later with the ".NET Core cross-platform development" workload installed.
+* [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/).
 
 ## Select the appropriate machine learning task
 
@@ -44,19 +44,21 @@ There are several ways to approach recommendation problems, such as recommending
 
 ### Create a project
 
-1. Open Visual Studio 2017. Select **File** > **New** > **Project** from the menu bar. In the **New Project** dialog, select the **Visual C#** node followed by the **.NET Core** node. Then select the **Console App (.NET Core)** project template. In the **Name** text box, type "MovieRecommender" and then select the **OK** button.
+1. Create a C# **Console Application** called "MovieRecommender". Click the **Next** button.
 
-2. Create a directory named *Data* in your project to store the data set:
+2. Choose .NET 6 as the framework to use. Click the **Create** button.
+
+3. Create a directory named *Data* in your project to store the data set:
 
     In **Solution Explorer**, right-click the project and select **Add** > **New Folder**. Type "Data" and hit Enter.
 
-3. Install the **Microsoft.ML** and **Microsoft.ML.Recommender** NuGet Packages:
+4. Install the **Microsoft.ML** and **Microsoft.ML.Recommender** NuGet Packages:
 
     [!INCLUDE [mlnet-current-nuget-version](../../../includes/mlnet-current-nuget-version.md)]
 
     In **Solution Explorer**, right-click the project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the **Browse** tab, search for **Microsoft.ML**, select the package in the list, and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed. Repeat these steps for **Microsoft.ML.Recommender**.
 
-4. Add the following `using` statements at the top of your *Program.cs* file:
+5. Add the following `using` statements at the top of your *Program.cs* file:
 
     [!code-csharp[UsingStatements](./snippets/movie-recommendation/csharp/Program.cs#UsingStatements "Add necessary usings")]
 
@@ -64,8 +66,8 @@ There are several ways to approach recommendation problems, such as recommending
 
 1. Download the two datasets and save them to the *Data* folder you previously created:
 
-   * Right click on [*recommendation-ratings-train.csv*](https://raw.githubusercontent.com/dotnet/machinelearning-samples/master/samples/csharp/getting-started/MatrixFactorization_MovieRecommendation/Data/recommendation-ratings-train.csv) and select "Save Link (or Target) As..."
-   * Right click on [*recommendation-ratings-test.csv*](https://raw.githubusercontent.com/dotnet/machinelearning-samples/master/samples/csharp/getting-started/MatrixFactorization_MovieRecommendation/Data/recommendation-ratings-test.csv) and select "Save Link (or Target) As..."
+   * Right click on [*recommendation-ratings-train.csv*](https://raw.githubusercontent.com/dotnet/machinelearning-samples/main/samples/csharp/getting-started/MatrixFactorization_MovieRecommendation/Data/recommendation-ratings-train.csv) and select "Save Link (or Target) As..."
+   * Right click on [*recommendation-ratings-test.csv*](https://raw.githubusercontent.com/dotnet/machinelearning-samples/main/samples/csharp/getting-started/MatrixFactorization_MovieRecommendation/Data/recommendation-ratings-test.csv) and select "Save Link (or Target) As..."
 
      Make sure you either save the \*.csv files to the *Data* folder, or after you save it elsewhere, move the \*.csv files to the *Data* folder.
 
@@ -133,16 +135,16 @@ Create another class, `MovieRatingPrediction`, to represent predicted results by
 
 [!code-csharp[PredictionClass](./snippets/movie-recommendation/csharp/MovieRatingData.cs#PredictionClass "Add the Movie Prediction Class")]
 
-In *Program.cs*, replace the `Console.WriteLine("Hello World!")` with the following code inside `Main()`:
+In *Program.cs*, replace the `Console.WriteLine("Hello World!")` with the following code:
 
 [!code-csharp[MLContext](./snippets/movie-recommendation/csharp/Program.cs#MLContext "Add MLContext")]
 
 The [MLContext class](xref:Microsoft.ML.MLContext) is a starting point for all ML.NET operations, and initializing `mlContext` creates a new ML.NET environment that can be shared across the model creation workflow objects. It's similar, conceptually, to `DBContext` in Entity Framework.
 
-After `Main()`, create a method called `LoadData()`:
+At the bottom of the file, create a method called `LoadData()`:
 
 ```csharp
-public static (IDataView training, IDataView test) LoadData(MLContext mlContext)
+(IDataView training, IDataView test) LoadData(MLContext mlContext)
 {
 
 }
@@ -155,20 +157,20 @@ Initialize your data path variables, load the data from the \*.csv files, and re
 
 [!code-csharp[LoadData](./snippets/movie-recommendation/csharp/Program.cs#LoadData "Load data from data paths")]
 
-Data in ML.NET is represented as an [IDataView class](xref:Microsoft.ML.IDataView). `IDataView` is a flexible, efficient way of describing tabular data (numeric and text). Data can be loaded from a text file or in real time (for example, SQL database or log files) to an `IDataView` object.
+Data in ML.NET is represented as an [IDataView interface](xref:Microsoft.ML.IDataView). `IDataView` is a flexible, efficient way of describing tabular data (numeric and text). Data can be loaded from a text file or in real time (for example, SQL database or log files) to an `IDataView` object.
 
 The [LoadFromTextFile()](xref:Microsoft.ML.TextLoaderSaverCatalog.LoadFromTextFile%60%601%28Microsoft.ML.DataOperationsCatalog,System.String,System.Char,System.Boolean,System.Boolean,System.Boolean,System.Boolean%29) defines the data schema and reads in the file. It takes in the data path variables and returns an `IDataView`. In this case, you provide the path for your `Test` and `Train` files and indicate both the text file header (so it can use the column names properly) and the comma character data separator (the default separator is a tab).
 
-Add the following code in the `Main()` method to call your `LoadData()` method and return the `Train` and `Test` data:
+Add the following code to call your `LoadData()` method and return the `Train` and `Test` data:
 
-[!code-csharp[LoadDataMain](./snippets/movie-recommendation/csharp/Program.cs#LoadDataMain "Add LoadData method to Main")]
+[!code-csharp[LoadDataMain](./snippets/movie-recommendation/csharp/Program.cs#LoadDataMain "Add LoadData method")]
 
 ## Build and train your model
 
 Create the `BuildAndTrainModel()` method, just after the `LoadData()` method, using the following code:
 
 ```csharp
-public static ITransformer BuildAndTrainModel(MLContext mlContext, IDataView trainingDataView)
+ITransformer BuildAndTrainModel(MLContext mlContext, IDataView trainingDataView)
 {
 
 }
@@ -193,7 +195,7 @@ Choose the machine learning algorithm and append it to the data transformation d
 
 [!code-csharp[AddAlgorithm](./snippets/movie-recommendation/csharp/Program.cs#AddAlgorithm "Add the training algorithm with options")]
 
-The [MatrixFactorizationTrainer](xref:Microsoft.ML.RecommendationCatalog.RecommendationTrainers.MatrixFactorization%28Microsoft.ML.Trainers.MatrixFactorizationTrainer.Options%29) is your recommendation training algorithm.  [Matrix Factorization](https://en.wikipedia.org/wiki/Matrix_factorization_(recommender_systems)) is a common approach to recommendation when you have data on how users have rated products in the past, which is the case for the datasets in this tutorial. There are other recommendation algorithms for when you have different data available (see the [Other recommendation algorithms](#other-recommendation-algorithms) section below to learn more).
+The [MatrixFactorizationTrainer](xref:Microsoft.ML.RecommendationCatalog.RecommendationTrainers.MatrixFactorization%28Microsoft.ML.Trainers.MatrixFactorizationTrainer.Options%29) is your recommendation training algorithm. [Matrix Factorization](https://en.wikipedia.org/wiki/Matrix_factorization_(recommender_systems)) is a common approach to recommendation when you have data on how users have rated products in the past, which is the case for the datasets in this tutorial. There are other recommendation algorithms for when you have different data available (see the [Other recommendation algorithms](#other-recommendation-algorithms) section below to learn more).
 
 In this case, the `Matrix Factorization` algorithm uses a method called "collaborative filtering", which assumes that if User 1 has the same opinion as User 2 on a certain issue, then User 1 is more likely to feel the same way as User 2 about a different issue.
 
@@ -201,8 +203,8 @@ For instance, if User 1 and User 2 rate movies similarly, then User 2 is more li
 
 | | `Incredibles 2 (2018)` | `The Avengers (2012)` | `Guardians of the Galaxy (2014)` |
 | -------------:|-------------:| -----:|-----:|
-| User 1 | Watched and liked movie | Watched and liked movie | Watched and liked movie |
-| User 2 | Watched and liked movie | Watched and liked movie | Has not watched -- RECOMMEND movie |
+| **User 1** | Watched and liked movie | Watched and liked movie | Watched and liked movie |
+| **User 2** | Watched and liked movie | Watched and liked movie | Has not watched -- RECOMMEND movie |
 
 The `Matrix Factorization` trainer has several [Options](xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Options), which you can read more about in the [Algorithm hyperparameters](#algorithm-hyperparameters) section below.
 
@@ -214,9 +216,9 @@ The [Fit()](xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Fit%28Microsof
 
 For more information on the model training workflow in ML.NET, see [What is ML.NET and how does it work?](../how-does-mldotnet-work.md#code-workflow).
 
-Add the following as the next line of code in the `Main()` method to call your `BuildAndTrainModel()` method and return the trained model:
+Add the following as the next line of code below the call to the `LoadData()` method to call your `BuildAndTrainModel()` method and return the trained model:
 
-[!code-csharp[BuildTrainModelMain](./snippets/movie-recommendation/csharp/Program.cs#BuildTrainModelMain "Add BuildAndTrainModel method in Main")]
+[!code-csharp[BuildTrainModelMain](./snippets/movie-recommendation/csharp/Program.cs#BuildTrainModelMain "Add BuildAndTrainModel method")]
 
 ## Evaluate your model
 
@@ -225,7 +227,7 @@ Once you have trained your model, use your test data to evaluate how your model 
 Create the `EvaluateModel()` method, just after the `BuildAndTrainModel()` method, using the following code:
 
 ```csharp
-public static void EvaluateModel(MLContext mlContext, IDataView testDataView, ITransformer model)
+void EvaluateModel(MLContext mlContext, IDataView testDataView, ITransformer model)
 {
 
 }
@@ -247,9 +249,9 @@ Print your evaluation metrics to the console by adding the following as the next
 
 [!code-csharp[PrintMetrics](./snippets/movie-recommendation/csharp/Program.cs#PrintMetrics "Print the evaluation metrics")]
 
-Add the following as the next line of code in the `Main()` method to call your `EvaluateModel()` method:
+Add the following as the next line of code below the call to the `BuildAndTrainModel()` method to call your `EvaluateModel()` method:
 
-[!code-csharp[EvaluateModelMain](./snippets/movie-recommendation/csharp/Program.cs#EvaluateModelMain "Add EvaluateModel method in Main")]
+[!code-csharp[EvaluateModelMain](./snippets/movie-recommendation/csharp/Program.cs#EvaluateModelMain "Add EvaluateModel method")]
 
 The output so far should look similar to the following text:
 
@@ -296,7 +298,7 @@ Now you can use your trained model to make predictions on new data.
 Create the `UseModelForSinglePrediction()` method, just after the `EvaluateModel()` method, using the following code:
 
 ```csharp
-public static void UseModelForSinglePrediction(MLContext mlContext, ITransformer model)
+void UseModelForSinglePrediction(MLContext mlContext, ITransformer model)
 {
 
 }
@@ -323,9 +325,9 @@ To print the results, add the following as the next lines of code in the `UseMod
 
 [!code-csharp[PrintResults](./snippets/movie-recommendation/csharp/Program.cs#PrintResults "Print the recommendation prediction results")]
 
-Add the following as the next line of code in the `Main()` method to call your `UseModelForSinglePrediction()` method:
+Add the following as the next line of code after the call to the `EvaluateModel()` method to call your `UseModelForSinglePrediction()` method:
 
-[!code-csharp[UseModelMain](./snippets/movie-recommendation/csharp/Program.cs#UseModelMain "Add UseModelForSinglePrediction method in Main")]
+[!code-csharp[UseModelMain](./snippets/movie-recommendation/csharp/Program.cs#UseModelMain "Add UseModelForSinglePrediction method")]
 
 The output of this method should look similar to the following text:
 
@@ -341,7 +343,7 @@ To use your model to make predictions in end-user applications, you must first s
 Create the `SaveModel()` method, just after the `UseModelForSinglePrediction()` method, using the following code:
 
 ```csharp
-public static void SaveModel(MLContext mlContext, DataViewSchema trainingDataViewSchema, ITransformer model)
+void SaveModel(MLContext mlContext, DataViewSchema trainingDataViewSchema, ITransformer model)
 {
 
 }
@@ -353,9 +355,9 @@ Save your trained model by adding the following code in the `SaveModel()` method
 
 This method saves your trained model to a .zip file (in the "Data" folder), which can then be used in other .NET applications to make predictions.
 
-Add the following as the next line of code in the `Main()` method to call your `SaveModel()` method:
+Add the following as the next line of code after the call to the `UseModelForSinglePrediction()` method to call your `SaveModel()` method:
 
-[!code-csharp[SaveModelMain](./snippets/movie-recommendation/csharp/Program.cs#SaveModelMain "Create SaveModel method in Main")]
+[!code-csharp[SaveModelMain](./snippets/movie-recommendation/csharp/Program.cs#SaveModelMain "Create SaveModel method")]
 
 ### Use your saved model
 
@@ -396,7 +398,7 @@ Movie 10 is recommended for user 6
 =============== Saving the model to a file ===============
 ```
 
-Congratulations! You've now successfully built a machine learning model for recommending movies. You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/MovieRecommendation) repository.
+Congratulations! You've now successfully built a machine learning model for recommending movies. You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/main/machine-learning/tutorials/MovieRecommendation) repository.
 
 ## Improve your model
 
@@ -441,8 +443,8 @@ The matrix factorization algorithm with collaborative filtering is only one appr
 
 | Algorithm       | Scenario           | Sample  |
 | ------------- |:-------------:| -----:|
-| One Class Matrix Factorization | Use this when you only have userId and movieId. This style of recommendation is based upon the co-purchase scenario, or products frequently bought together, which means it will recommend to customers a set of products based upon their own purchase order history. | [>Try it out](https://github.com/dotnet/machinelearning-samples/tree/master/samples/csharp/getting-started/MatrixFactorization_ProductRecommendation) |
-| Field Aware Factorization Machines | Use this to make recommendations when you have more Features beyond userId, productId, and rating (such as product description or product price). This method also uses a collaborative filtering approach. | [>Try it out](https://github.com/dotnet/machinelearning-samples/tree/master/samples/csharp/end-to-end-apps/Recommendation-MovieRecommender) |
+| One Class Matrix Factorization | Use this when you only have userId and movieId. This style of recommendation is based upon the co-purchase scenario, or products frequently bought together, which means it will recommend to customers a set of products based upon their own purchase order history. | [>Try it out](https://github.com/dotnet/machinelearning-samples/tree/main/samples/csharp/getting-started/MatrixFactorization_ProductRecommendation) |
+| Field Aware Factorization Machines | Use this to make recommendations when you have more Features beyond userId, productId, and rating (such as product description or product price). This method also uses a collaborative filtering approach. | [>Try it out](https://github.com/dotnet/machinelearning-samples/tree/main/samples/csharp/end-to-end-apps/Recommendation-MovieRecommender) |
 
 ### New user scenario
 

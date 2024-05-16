@@ -2,24 +2,24 @@
 description: "Learn more about: DataMemberFieldEditor Class"
 title: "DataMemberFieldEditor Class"
 ms.date: "03/30/2017"
-ms.technology: "dotnet-winforms"
-api_name: 
+ms.subservice: "winforms"
+api_name:
   - "System.Windows.Forms.Design.DataMemberFieldEditor"
-api_location: 
+api_location:
   - "System.Design.dll"
-api_type: 
+api_type:
   - "Assembly"
 ms.assetid: 27ae39b7-3491-40f9-9b33-2de798f123ad
-topic_type: 
+topic_type:
   - "apiref"
 ---
 
 # DataMemberFieldEditor Class
 
-Provides user interface for editing properties of data-bound objects by listing all properties of the `DataSource` object to select the value source from.  
-  
+Provides user interface for editing properties of data-bound objects by listing all properties of the `DataSource` object to select the value source from.
+
 ## Syntax
-  
+
 ```csharp
 internal class DataMemberFieldEditor : UITypeEditor
 ```
@@ -31,12 +31,12 @@ internal class DataMemberFieldEditor : UITypeEditor
 
 ## Requirements
 
-**Namespace:** <xref:System.Windows.Forms.Design?displayProperty=nameWithType>  
-  
-**Assembly:** System.Design (in System.Design.dll)  
-  
-**.NET Framework versions:** Available since 2.0.  
-  
+**Namespace:** <xref:System.Windows.Forms.Design?displayProperty=nameWithType>
+
+**Assembly:** System.Design (in System.Design.dll)
+
+**.NET Framework versions:** Available since 2.0.
+
 ## See also
 
 - <xref:System.Windows.Forms.Design?displayProperty=nameWithType>

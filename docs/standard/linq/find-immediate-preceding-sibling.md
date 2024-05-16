@@ -1,11 +1,11 @@
 ---
 title: How to find the immediate preceding sibling - LINQ to XML
-description: "Learn how to find find the sibling that immediately precedes a node. Two methods are shown: one uses XPathEvaluate, the other uses LINQ to XML query."
+description: "Learn how to find the sibling that immediately precedes a node. Two methods are shown: one uses XPathEvaluate, the other uses LINQ to XML query."
 ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 74c06201-0b1b-4b5e-b3ac-0092980614e6
+ms.topic: how-to
 ---
 
 # How to find the immediate preceding sibling (LINQ to XML)

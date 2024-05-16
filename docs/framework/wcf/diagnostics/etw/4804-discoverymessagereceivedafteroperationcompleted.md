@@ -6,10 +6,10 @@ ms.assetid: 61d2791c-e1a2-400a-a57e-66818ac5962e
 ---
 # 4804 - DiscoveryMessageReceivedAfterOperationCompleted
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4804|  
 |Keywords|Discovery|  
 |Level|Information|  

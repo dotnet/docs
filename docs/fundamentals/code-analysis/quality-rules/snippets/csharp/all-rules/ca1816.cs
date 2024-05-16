@@ -6,7 +6,7 @@ namespace ca1816
     //<snippet1>
     public class DatabaseConnector : IDisposable
     {
-        private SqlConnection _Connection = new SqlConnection();
+        private SqlConnection? _Connection = new SqlConnection();
 
         public void Dispose()
         {
@@ -34,7 +34,7 @@ namespace ca1816_2
     //<snippet2>
     public class DatabaseConnector : IDisposable
     {
-        private SqlConnection _Connection = new SqlConnection();
+        private SqlConnection? _Connection = new SqlConnection();
 
         public void Dispose()
         {

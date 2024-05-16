@@ -1,5 +1,5 @@
 ---
-title: "Properties "
+title: "Properties"
 description: A property in C# is a member that uses accessor methods to read, write, or compute the value of a private field as if it were a public data member.
 ms.date: 03/15/2024
 f1_keywords:

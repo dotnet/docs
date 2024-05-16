@@ -1,5 +1,5 @@
 ---
-title: "Built-in reference types "
+title: "Built-in reference types"
 description: "Learn about reference types that have C# keywords you can use to declare them."
 ms.date: 08/16/2022
 f1_keywords: 

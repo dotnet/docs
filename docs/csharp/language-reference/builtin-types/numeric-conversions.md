@@ -1,6 +1,6 @@
 ---
 description: Learn about the implicit and explicit conversions between the built-in numeric types in C#
-title: "Built-in numeric conversions "
+title: "Built-in numeric conversions"
 ms.date: 01/30/2023
 helpviewer_keywords: 
   - "implicit numeric conversions [C#]"

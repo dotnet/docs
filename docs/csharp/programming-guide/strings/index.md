@@ -1,5 +1,5 @@
 ---
-title: "Strings "
+title: "Strings"
 description: Learn about strings in C# programming. See information on declaring and initializing strings, the immutability of string objects, and string escape sequences.
 ms.date: 03/15/2024
 helpviewer_keywords:

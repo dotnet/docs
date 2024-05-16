@@ -1,5 +1,5 @@
 ---
-title: "Partial Classes and Methods "
+title: "Partial Classes and Methods"
 description: Partial classes and methods in C# split the definition of a class, a struct, an interface, or a method over two or more source files.
 ms.date: 03/12/2024
 helpviewer_keywords:

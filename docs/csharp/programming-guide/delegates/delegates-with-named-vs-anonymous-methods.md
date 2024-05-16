@@ -1,5 +1,5 @@
 ---
-title: "Delegates with Named vs. Anonymous Methods "
+title: "Delegates with Named vs. Anonymous Methods"
 description: Learn about delegates with named vs. anonymous methods. See code examples and view additional available resources.
 ms.date: 11/08/2021
 helpviewer_keywords: 

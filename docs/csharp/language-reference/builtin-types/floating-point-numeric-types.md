@@ -1,5 +1,5 @@
 ---
-title: "Floating-point numeric types "
+title: "Floating-point numeric types"
 description: "Learn about the built-in C# floating-point types: float, double, and decimal"
 ms.date: 02/04/2021
 f1_keywords:

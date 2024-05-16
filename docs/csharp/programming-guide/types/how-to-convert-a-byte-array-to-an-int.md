@@ -1,5 +1,5 @@
 ---
-title: "How to convert a byte array to an int "
+title: "How to convert a byte array to an int"
 description: Learn how to convert a byte array to an int. See code examples and view additional available resources.
 ms.date: 07/20/2015
 helpviewer_keywords:

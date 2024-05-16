@@ -1,6 +1,6 @@
 ---
 description: "Special Characters - C# Reference"
-title: "Special Characters "
+title: "Special Characters"
 ms.date: 02/14/2017
 f1_keywords: 
   - "cs.special characters"

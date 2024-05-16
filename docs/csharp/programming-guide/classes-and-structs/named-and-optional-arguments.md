@@ -1,5 +1,5 @@
 ---
-title: "Named and Optional Arguments "
+title: "Named and Optional Arguments"
 description: Named arguments in C# specify arguments by name, not position. Optional arguments can be omitted.
 ms.date: 03/14/2024
 f1_keywords: 

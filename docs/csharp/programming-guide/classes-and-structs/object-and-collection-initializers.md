@@ -1,5 +1,5 @@
 ---
-title: "Object and Collection Initializers "
+title: "Object and Collection Initializers"
 description: Object initializers in C# assign values to accessible fields or properties of an object at creation after invoking a constructor.
 ms.date: 12/19/2018
 helpviewer_keywords: 

@@ -1,6 +1,6 @@
 ---
 description: "partial method - C# Reference"
-title: "partial method "
+title: "partial method"
 ms.date: 03/23/2021
 f1_keywords: 
   - "partialmethod_CSharpKeyword"

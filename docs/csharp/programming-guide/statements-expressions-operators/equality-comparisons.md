@@ -1,5 +1,5 @@
 ---
-title: "Equality Comparisons "
+title: "Equality Comparisons"
 description: Learn about equality comparisons. See descriptions of 'value equality' and 'reference equality', and view additional resources.
 ms.date: 07/20/2015
 helpviewer_keywords: 

@@ -1,5 +1,5 @@
 ---
-title: "How to raise base class events in derived classes "
+title: "How to raise base class events in derived classes"
 description: Learn how to raise base class events in derived classes. See a code example and view additional available resources.
 ms.topic: how-to
 ms.date: 07/20/2015

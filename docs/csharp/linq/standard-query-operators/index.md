@@ -1,5 +1,5 @@
 ---
-title: "Standard Query Operators Overview "
+title: "Standard Query Operators Overview"
 description: The LINQ standard query operators provide query capabilities including filtering, projection, aggregation, and sorting in C#.
 ms.date: 02/16/2024
 ---

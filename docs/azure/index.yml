@@ -97,7 +97,7 @@ conceptualContent:
       links:
         - itemType: overview
           url: /dotnet/ai/get-started/dotnet-ai-overview
-          text: Build cloud native apps using .NET Aspire
+          text: AI for .NET overview
         - itemType: quickstart
           url: /dotnet/ai/quickstarts/get-started-azure-openai
           text: Build a chat app
@@ -105,11 +105,17 @@ conceptualContent:
           text: Generate images
           url: /dotnet/ai/quickstarts/quickstart-openai-generate-images
         - itemType: concept
-          text: Prompt engineering
+          text: Understand prompt engineering
           url: /dotnet/ai/conceptual/prompt-engineering-dotnet
+        - itemType: concept
+          text: Understand generative AI and LLMs
+          url: /dotnet/ai/conceptual/how-genai-and-llms-work
         - itemType: tutorial
           text: Implement RAG using vector search
           url: /dotnet/ai/tutorials/tutorial-ai-vector-search
+        - itemType: tutorial
+          text: Get started with the .NET enterprise chat sample
+          url: /dotnet/ai/get-started-app-chat-template
         - itemType: overview
           text: Learning resources and samples
           url: /dotnet/ai/azure-ai-for-dotnet-developers

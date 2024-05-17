@@ -111,7 +111,7 @@ Begin now with a development environment that has all the dependencies installed
 
 The [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) for Visual Studio Code requires [Docker](https://docs.docker.com/) to be installed on your local machine. The extension hosts the development container locally using the Docker host with the correct developer tools and dependencies preinstalled to complete this article.
 
-1. Create a new local directory on your computer for the project. 
+1. Create a new local directory on your computer for the project.
 
     ```bash
     mkdir my-intelligent-app && cd my-intelligent-app
@@ -130,7 +130,7 @@ The [Dev Containers extension](https://marketplace.visualstudio.com/items?itemNa
     azd init -t azure-search-openai-demo-csharp
     ```
 
-1. Open the Command Pallete, search for and select **Dev Containers: Open Folder in Container** to open the project in a dev container. Wait until the dev container opens before continuing. 
+1. Open the Command Pallete, search for and select **Dev Containers: Open Folder in Container** to open the project in a dev container. Wait until the dev container opens before continuing.
 1. Sign in to Azure with the Azure Developer CLI.
 
     ```bash

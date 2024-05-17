@@ -53,7 +53,7 @@ In the following steps, you'll look at the files created by the publish process.
 
 1. Select the **Explorer** in the left navigation bar.
 
-1. Expand *bin/Release/net7.0/publish*.
+1. Expand *bin/Release/net8.0/publish*.
 
    :::image type="content" source="media/publishing-with-visual-studio-code/published-files-output-net8.png" alt-text="Explorer showing published files":::
 

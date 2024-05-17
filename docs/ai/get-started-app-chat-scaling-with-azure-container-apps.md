@@ -1,7 +1,7 @@
 ---
 title: Scale Azure OpenAI for .NET chat sample using RAG
 description: Learn how to add load balancing to your application to extend the chat app beyond the Azure OpenAI token and model quota limits.
-ms.date: 03/11/2024
+ms.date: 05/16/2024
 ms.topic: get-started
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 # CustomerIntent: As a .NET developer new to Azure OpenAI, I want to scale my Azure OpenAI capacity to avoid rate limit errors with Azure Container Apps.
@@ -26,9 +26,9 @@ ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 
 #### [Visual Studio Code](#tab/visual-studio-code)
 
-* [Azure Developer CLI](/azure/developer/azure-developer-cli/install-azd)
 * [Docker Desktop](https://www.docker.com/products/docker-desktop/) - start Docker Desktop if it's not already running
-* [Visual Studio Code](https://code.visualstudio.com/) with [Dev Container Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+* [Visual Studio Code](https://code.visualstudio.com/)
+* [Dev Container Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
 ---
 

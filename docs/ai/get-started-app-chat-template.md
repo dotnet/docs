@@ -138,6 +138,7 @@ The [Dev Containers extension](https://marketplace.visualstudio.com/items?itemNa
     ```
 
     Copy the code from the terminal and then paste it into a browser. Follow the instructions to authenticate with your Azure account.
+
 1. The remaining exercises in this project take place in the context of this development container.
 
 ---

@@ -159,7 +159,7 @@ Use the `Load` method to load the data into an [`IDataView`](xref:Microsoft.ML.I
 IDataView data = loader.Load(dbSource);
 ```
 
-## Load images from files
+## Load images
 
 To load image data from a directory, first create a model that includes the image path and a label. `ImagePath` is the absolute path of the image in the data source directory. `Label` is the class or category of the actual image file.
 

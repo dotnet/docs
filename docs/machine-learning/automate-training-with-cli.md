@@ -55,7 +55,7 @@ An example of usage (classification scenario):
 mlnet classification --dataset "yelp_labelled.txt" --label-col 1 --has-header false --train-time 10
 ```
 
-There is also a command where you can train using an `mbconfig` file. The `mbconfig` file gets created when starting a Model Builder session.
+There is also a command where you can train using an *mbconfig* file. The *mbconfig* file is created when you start a Model Builder session.
 
 ![ML.NET classification from the command line](media/automate-training-with-cli/mlnet-classification-powershell.gif)
 
@@ -68,7 +68,8 @@ The ML task commands in the CLI generate the following assets in the output fold
 - C# solution with:
   - A console app to run/score the generated model (to make predictions in your end-user apps with that model).
   - A console app with the training code used to generate that model (for learning purposes or model retraining).
-    - This also include the serialized model .zip ("best model") ready to use for running predictions.
+    - This serialized model ("best model") is also provided as a compressed *.zip* file that's ready to use for running predictions.
+    - An *mbconfig* file, which contains configuration data that lets you open the model in Model Builder.
 - Log file with information of all iterations/sweeps across the multiple algorithms evaluated, including their detailed configuration/pipeline.
 
 The first two assets can directly be used in your end-user apps (for example, ASP.NET Core web apps, services, and desktop apps) to make predictions with that generated ML model.

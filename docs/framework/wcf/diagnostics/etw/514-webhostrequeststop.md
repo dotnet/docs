@@ -6,10 +6,10 @@ ms.assetid: c5858bf6-3330-4f2a-9907-a99692fa8817
 ---
 # 514 - WebHostRequestStop
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|514|  
 |Keywords|WebHost|  
 |Level|Information|  

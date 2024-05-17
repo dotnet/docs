@@ -6,7 +6,7 @@ Hosting these controls is blocked in Internet Explorer.
 
 #### Suggestion
 
-Internet Explorer will fail to launch an application that uses managed browser hosting controls. The previous behavior can be restored by setting the EnableIEHosting value of the registry subkey <code>HKLM/SOFTWARE/MICROSOFT/.NETFramework</code> to <code>1</code> for x86 systems and for 32-bit processes on x64 systems, and by setting the <code>EnableIEHosting</code> value of the registry subkey <code>HKLM/SOFTWARE/Wow6432Node/Microsoft/.NETFramework</code> to <code>1</code> for 64-bit processes on x64 systems.
+Internet Explorer will fail to launch an application that uses managed browser hosting controls. The previous behavior can be restored by setting the EnableIEHosting value of the registry subkey `HKLM/SOFTWARE/MICROSOFT/.NETFramework` to `1` for x86 systems and for 32-bit processes on x64 systems, and by setting the `EnableIEHosting` value of the registry subkey `HKLM/SOFTWARE/Wow6432Node/Microsoft/.NETFramework` to `1` for 64-bit processes on x64 systems.
 
 | Name    | Value       |
 |:--------|:------------|

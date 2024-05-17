@@ -36,26 +36,42 @@
     {
       "path_to_root": "_themes",
       "url": "https://github.com/Microsoft/templates.docs.msft",
-      "branch": "master",
+      "branch": "main",
       "branch_mapping": {}
     },
     {
       "path_to_root": "_themes.pdf",
       "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
-      "branch": "master",
+      "branch": "main",
       "branch_mapping": {}
     },
     {
       "path_to_root": "_csharplang",
       "url": "https://github.com/dotnet/csharplang",
       "branch": "main",
-      "include_in_build": true
+      "include_in_build": true,
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "_csharpstandard",
+      "url": "https://github.com/dotnet/csharpstandard",
+      "branch": "draft-v8",
+      "include_in_build": true,
+      "branch_mapping": {}
     },
     {
       "path_to_root": "_vblang",
       "url": "https://github.com/dotnet/vblang",
       "branch": "main",
-      "include_in_build": true
+      "include_in_build": true,
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "_roslyn",
+      "url": "https://github.com/dotnet/roslyn",
+      "branch": "main",
+      "include_in_build": true,
+      "branch_mapping": {}
     },
     {
       "path_to_root": "machinelearning-samples",
@@ -66,10 +82,14 @@
     {
       "path_to_root": "iot-samples",
       "url": "https://github.com/MicrosoftDocs/dotnet-iot-assets",
-      "branch": "master",
-      "branch_mapping": {
-        "main": "master"
-      }
+      "branch": "main",
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "azure-dev-docs-pr",
+      "url": "https://github.com/MicrosoftDocs/azure-dev-docs-pr",
+      "branch": "main",
+      "branch_mapping": {}
     }
   ],
   "branch_target_mapping": {
@@ -91,5 +111,23 @@
   "docs_build_engine": {
     "name": "docfx_v3"
   },
+  "redirection_files": [
+    ".openpublishing.redirection.json",
+    ".openpublishing.redirection.ai.json",
+    ".openpublishing.redirection.architecture.json",
+    ".openpublishing.redirection.azure.json",
+    ".openpublishing.redirection.core.json",
+    ".openpublishing.redirection.csharp.json",
+    ".openpublishing.redirection.desktop-wpf.json",
+    ".openpublishing.redirection.framework.json",
+    ".openpublishing.redirection.framework-winforms.json",
+    ".openpublishing.redirection.framework-wpf.json",
+    ".openpublishing.redirection.fsharp.json",
+    ".openpublishing.redirection.fundamentals.json",
+    ".openpublishing.redirection.machine-learning.json",
+    ".openpublishing.redirection.orleans.json",
+    ".openpublishing.redirection.standard.json",
+    ".openpublishing.redirection.visual-basic.json"
+  ],
   "need_generate_intellisense": false
 }

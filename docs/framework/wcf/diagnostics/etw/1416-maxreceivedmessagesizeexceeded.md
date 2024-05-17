@@ -6,10 +6,10 @@ ms.assetid: ee5562dd-29e1-432d-9c78-0bdc3ae365c4
 ---
 # 1416 - MaxReceivedMessageSizeExceeded
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1416|  
 |Keywords|Quota|  
 |Level|Error|  

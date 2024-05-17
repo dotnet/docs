@@ -4,9 +4,11 @@ description: Learn how to build reusable UI components with Blazor and how they 
 author: danroth27
 ms.author: daroth
 no-loc: [Blazor]
-ms.date: 09/18/2019
+ms.date: 04/11/2022
 ---
 # Build reusable UI components with Blazor
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 One of the beautiful things about ASP.NET Web Forms is how it enables encapsulation of reusable pieces of user interface (UI) code into reusable UI controls. Custom user controls can be defined in markup using *.ascx* files. You can also build elaborate server controls in code with full designer support.
 
@@ -157,9 +159,26 @@ If the namespace for a component isn't in scope, you can specify a component usi
 <MyComponentLib.Counter />
 ```
 
+## Modify page title from components
+
+When building SPA-style apps, it's common for parts of a page to reload without reloading the entire page. Even so, it can be useful to have the title of the page change based on which component is currently loaded. This can be accomplished by including the `<PageTitle>` tag in the component's Razor page:
+
+```razor
+@page "/"
+<PageTitle>Home</PageTitle>
+```
+
+The contents of this element can be dynamic, for instance showing the current count of messages:
+
+```razor
+<PageTitle>@MessageCount messages</PageTitle>
+```
+
+Note that if several components on a particular page include `<PageTitle>` tags, only the last one will be displayed (since each one will overwrite the previous one).
+
 ## Component parameters
 
-In ASP.NET Web Forms, you can flow parameters and data to controls using public properties. These properties can be set in markup using attributes or set directly in code. Blazor components work in a similar fashion, although the component properties must also be marked with the `[Parameter]` attribute to be considered component parameters.
+In ASP.NET Web Forms, you can flow parameters and data to controls using public properties. These properties can be set in markup using attributes or set directly in code. Razor components work in a similar fashion, although the component properties must also be marked with the `[Parameter]` attribute to be considered component parameters.
 
 The following `Counter` component defines a component parameter called `IncrementAmount` that can be used to specify the amount that the `Counter` should be incremented each time the button is clicked.
 
@@ -188,6 +207,45 @@ To specify a component parameter in Blazor, use an attribute as you would in ASP
 ```razor
 <Counter IncrementAmount="10" />
 ```
+
+### Query string parameters
+
+Razor components can also leverage values from the query string of the page they're rendered on as a parameter source. To enable this, add the `[SupplyParameterFromQuery]` attribute to the parameter. For example, the following parameter definition would get its value from the request in the form `?IncBy=2`:
+
+```csharp
+[Parameter]
+[SupplyParameterFromQuery(Name = "IncBy")]
+public int IncrementAmount { get; set; } = 1;
+```
+
+If you don't supply a custom `Name` in the `[SupplyParameterFromQuery]` attribute, by default it will match the property name (`IncrementAmount` in this case).
+
+## Components and error boundaries
+
+By default, Blazor apps will detect unhandled exceptions and show an error message at the bottom of the page with no additional detail. To constrain the parts of the app that are impacted by an unhandled error, for instance to limit the impact to a single component, the `<ErrorBoundary>` tag can be wrapped around component declarations.
+
+For example, to protect against possible exceptions thrown from the `Counter` component, declare it within an `<ErrorBoundary>` and optionally specify a message to display if there is an exception:
+
+```razor
+<ErrorBoundary>
+    <ChildContent>
+        <Counter />
+    </ChildContent>
+    <ErrorContent>
+        Oops! The counter isn't working right now; please try again later.
+    </ErrorContent>
+</ErrorBoundary>
+```
+
+If you don't need to specify custom error content, you can just wrap the component directly:
+
+```razor
+<ErrorBoundary>
+  <Counter />
+</ErrorBoundary>
+```
+
+A default message stating "An error as occurred." will be displayed if an unhandled exception occurs in the wrapped component.
 
 ## Event handlers
 
@@ -424,7 +482,7 @@ public partial class Counter : System.Web.UI.UserControl
 }
 ```
 
-Blazor components also have a well-defined lifecycle. A component's lifecycle can be used to initialize component state and implement advanced component behaviors.
+Razor components also have a well-defined lifecycle. A component's lifecycle can be used to initialize component state and implement advanced component behaviors.
 
 All of Blazor's component lifecycle methods have both synchronous and asynchronous versions. Component rendering is synchronous. You can't run asynchronous logic as part of the component rendering. All asynchronous logic must execute as part of an `async` lifecycle method.
 
@@ -473,7 +531,7 @@ The `firstRender` parameter is `true` the first time the component is rendered; 
 
 ### IDisposable
 
-Blazor components can implement `IDisposable` to dispose of resources when the component is removed from the UI. A Razor component can implement `IDispose` by using the `@implements` directive:
+Razor components can implement `IDisposable` to dispose of resources when the component is removed from the UI. A Razor component can implement `IDispose` by using the `@implements` directive:
 
 ```razor
 @using System
@@ -499,7 +557,7 @@ To capture a component reference in Blazor, use the `@ref` directive attribute. 
 <MyLoginDialog @ref="loginDialog" ... />
 
 @code {
-    MyLoginDialog loginDialog;
+    MyLoginDialog loginDialog = default!;
 
     void OnSomething()
     {
@@ -514,17 +572,17 @@ Manipulating component state directly using component references isn't recommend
 
 ## Capture element references
 
-Blazor components can capture references to an element. Unlike HTML server controls in ASP.NET Web Forms, you can't manipulate the DOM directly using an element reference in Blazor. Blazor handles most DOM interactions for you using its DOM diffing algorithm. Captured element references in Blazor are opaque. However, they're used to pass a specific element reference in a JavaScript interop call. For more information about JavaScript interop, see [ASP.NET Core Blazor JavaScript interop](/aspnet/core/blazor/javascript-interop).
+Razor components can capture references to an element. Unlike HTML server controls in ASP.NET Web Forms, you can't manipulate the DOM directly using an element reference in Blazor. Blazor handles most DOM interactions for you using its DOM diffing algorithm. Captured element references in Blazor are opaque. However, they're used to pass a specific element reference in a JavaScript interop call. For more information about JavaScript interop, see [ASP.NET Core Blazor JavaScript interop](/aspnet/core/blazor/javascript-interop).
 
 ## Templated components
 
 In ASP.NET Web Forms, you can create *templated controls*. Templated controls enable the developer to specify a portion of the HTML used to render a container control. The mechanics of building templated server controls are complex, but they enable powerful scenarios for rendering data in a user customizable way. Examples of templated controls include `Repeater` and `DataList`.
 
-Blazor components can also be templated by defining component parameters of type `RenderFragment` or `RenderFragment<T>`. A `RenderFragment` represents a chunk of Razor markup that can then be rendered by the component. A `RenderFragment<T>` is a chunk of Razor markup that takes a parameter that can be specified when the render fragment is rendered.
+Razor components can also be templated by defining component parameters of type `RenderFragment` or `RenderFragment<T>`. A `RenderFragment` represents a chunk of Razor markup that can then be rendered by the component. A `RenderFragment<T>` is a chunk of Razor markup that takes a parameter that can be specified when the render fragment is rendered.
 
 ### Child content
 
-Blazor components can capture their child content as a `RenderFragment` and render that content as part of the component rendering. To capture child content, define a component parameter of type `RenderFragment` and name it `ChildContent`.
+Razor components can capture their child content as a `RenderFragment` and render that content as part of the component rendering. To capture child content, define a component parameter of type `RenderFragment` and name it `ChildContent`.
 
 *ChildContentComponent.razor*
 
@@ -551,7 +609,7 @@ A parent component can then supply child content using normal Razor syntax.
 
 ### Template parameters
 
-A templated Blazor component can also define multiple component parameters of type `RenderFragment` or `RenderFragment<T>`. The parameter for a `RenderFragment<T>` can be specified when it's invoked. To specify a generic type parameter for a component, use the `@typeparam` Razor directive.
+A templated Razor component can also define multiple component parameters of type `RenderFragment` or `RenderFragment<T>`. The parameter for a `RenderFragment<T>` can be specified when it's invoked. To specify a generic type parameter for a component, use the `@typeparam` Razor directive.
 
 *SimpleListView.razor*
 
@@ -604,7 +662,7 @@ The output of this component looks like this:
 
 ## Code-behind
 
-A Blazor component is typically authored in a single *.razor* file. However, it's also possible to separate the code and markup using a code-behind file. To use a component file, add a C# file that matches the file name of the component file but with a *.cs* extension added (*Counter.razor.cs*). Use the C# file to define a base class for the component. You can name the base class anything you'd like, but it's common to name the class the same as the component class, but with a `Base` extension added (`CounterBase`). The component-based class must also derive from `ComponentBase`. Then, in the Razor component file, add the `@inherits` directive to specify the base class for the component (`@inherits CounterBase`).
+A Razor component is typically authored in a single *.razor* file. However, it's also possible to separate the code and markup using a code-behind file. To use a component file, add a C# file that matches the file name of the component file but with a *.cs* extension added (*Counter.razor.cs*). Use the C# file to define a base class for the component. You can name the base class anything you'd like, but it's common to name the class the same as the component class, but with a `Base` extension added (`CounterBase`). The component-based class must also derive from `ComponentBase`. Then, in the Razor component file, add the `@inherits` directive to specify the base class for the component (`@inherits CounterBase`).
 
 *Counter.razor*
 
@@ -636,7 +694,7 @@ The visibility of the component's members in the base class must be `protected` 
 
 ## Additional resources
 
-The preceding isn't an exhaustive treatment of all aspects of Blazor components. For more information on how to [Create and use ASP.NET Core Razor components](/aspnet/core/blazor/components), see the Blazor documentation.
+The preceding isn't an exhaustive treatment of all aspects of Razor components. For more information on how to [Create and use ASP.NET Core Razor components](/aspnet/core/blazor/components), see the Blazor documentation.
 
 >[!div class="step-by-step"]
 >[Previous](app-startup.md)

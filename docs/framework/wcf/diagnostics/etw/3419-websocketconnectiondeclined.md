@@ -6,10 +6,10 @@ ms.assetid: d1d27f33-7d59-40c7-b464-6cd1f13b7c72
 ---
 # 3419 - WebSocketConnectionDeclined
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3419|  
 |Keywords|HTTP|  
 |Level|Error|  

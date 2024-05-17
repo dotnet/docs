@@ -6,10 +6,10 @@ ms.assetid: c6e5c051-5597-49d1-a5ea-0a26ec04443d
 ---
 # 3358 - PortSharingDuplicatedSocket
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3358|  
 |Keywords|ActivationServices|  
 |Level|Verbose|  

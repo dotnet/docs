@@ -6,10 +6,10 @@ ms.assetid: d621ecfe-3335-44cb-97cd-a6648eecd9e2
 ---
 # 4033 - RoutingTableLookupStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4033|  
 |Keywords|ActivationServices|  
 |Level|Verbose|  

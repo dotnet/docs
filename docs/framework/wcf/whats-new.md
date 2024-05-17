@@ -5,12 +5,14 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "WCF [WCF], what's new"
   - "Windows Communication Foundation [WCF], what's new"
-ms.assetid: 7e93fe73-af93-46b5-9f63-32f761ee40cf
+ms.topic: whats-new
 ---
 
-# What's New in Windows Communication Foundation 4.5
+# What's new in Windows Communication Foundation 4.5
 
 This topic discusses features new to Windows Communication Foundation (WCF) version 4.5.
+
+[!INCLUDE[](~/includes/wcf_grpc_heading.md)]
 
 ## WCF Simplification Features
 
@@ -82,10 +84,6 @@ The following table describes the settings that have changed and where to find a
 |maxPendingConnections|ConnectionOrientedTransportBindingElement|12 * number of processors|<xref:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.MaxPendingConnections%2A>|
 |receiveTimeout|SMSvcHost.exe|30 seconds|[Configuring the Net.TCP Port Sharing Service](./feature-details/configuring-the-net-tcp-port-sharing-service.md)|
 
-## XML Editor Tooltips
-
-In order to help new and existing WCF service developers to configure their services, the Visual Studio XML editor now provides tooltips for every configuration element and its properties that is part of the service configuration file.
-
 ## Configuring WCF Services in Code
 
 Windows Communication Foundation (WCF) allows developers to configure services using configuration files or code. Configuration files are useful when a service needs to be configured after being deployed. When using configuration files, an IT professional only needs to update the configuration file, no recompilation is required. Configuration files, however, can be complex and difficult to maintain. There is no support for debugging configuration files and configuration elements are referenced by names which makes authoring configuration files error-prone and difficult. WCF also allows you to configure services in code. In earlier versions of WCF (4.0 and earlier) configuring services in code was easy in self-hosted scenarios, the <xref:System.ServiceModel.ServiceHost> class allowed you to configure endpoints and behaviors prior to calling ServiceHost.Open. In web hosted scenarios, however, you don’t have access to the <xref:System.ServiceModel.ServiceHost> class. To configure a web hosted service you were required to create a `System.ServiceModel.ServiceHostFactory` that created the <xref:System.ServiceModel.Activation.ServiceHostFactory> and performed any needed configuration. Starting with .NET Framework 4.5, WCF provides an easier way to configure both self-hosted and web hosted services in code. For more information, see [Configuring WCF Services in Code](configuring-wcf-services-in-code.md).
@@ -122,11 +120,11 @@ Support has been added to allow for WCF services with Internationalized Domain N
 
 ## HttpClient
 
-A new class called <xref:System.Net.Http.HttpClient> has been added to make working with HTTP requests much easier. For more info, see [Making apps social and connected with HTTP services](https://channel9.msdn.com/Events/BUILD/BUILD2011/PLAT-581T) and the [HTTP Client Sample](https://code.msdn.microsoft.com/windowsapps/HttpClient-sample-55700664).
+A new class called <xref:System.Net.Http.HttpClient> has been added to make working with HTTP requests much easier. For more info, see <xref:System.Net.Http.HttpClient> and [Guidelines for using HttpClient](../../fundamentals/networking/http/httpclient-guidelines.md).
 
-## Configuration Intellisense
+## Configuration IntelliSense
 
-Attribute values in configuration files for custom attributes defined in the project now support intellisense to facilitate working with configurations quickly and accurately.
+Attribute values in configuration files for custom attributes defined in the project now support IntelliSense to facilitate working with configurations quickly and accurately.
 
 ## Configuration tooltips
 

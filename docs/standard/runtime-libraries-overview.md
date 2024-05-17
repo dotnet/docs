@@ -1,12 +1,11 @@
 ---
 title: Runtime libraries overview
 description: Learn what is included in the Runtime libraries section of the table of contents.
-author: tdykstra
-ms.date: 11/12/2020
+ms.date: 08/24/2021
 ---
 # Runtime libraries overview
 
-The [.NET runtime](../core/introduction.md#sdk-and-runtimes), which is installed on a machine for use by [framework-dependent apps](../core/introduction.md#deployment-models), has an expansive standard set of class libraries, known as [runtime libraries](glossary.md#runtime), [framework libraries](glossary.md#framework-libraries), or the [base class library (BCL)](glossary.md#bcl). In addition, there are extensions to the runtime libraries, provided in NuGet packages.
+The [.NET runtime](../core/introduction.md) has an expansive standard set of class libraries, known as [runtime libraries](glossary.md#runtime), [framework libraries](glossary.md#framework-libraries), or the [base class library (BCL)](glossary.md#bcl). In addition, there are extensions to the runtime libraries, provided in NuGet packages.
 
 These libraries provide implementations for many general and app-specific types, algorithms, and utility functionality.
 
@@ -18,9 +17,25 @@ These libraries provide the foundational types and utility functionality and are
 
 Some libraries are provided in NuGet packages rather than included in the runtime's [shared framework](glossary.md#shared-framework). For example:
 
-* [Logging](../core/extensions/logging.md)
-* [Dependency injection](../core/extensions/dependency-injection.md)
-* [Configuration](../core/extensions/configuration.md)
+| Conceptual content                                                 | NuGet package                                         |
+|--------------------------------------------------------------------|-------------------------------------------------------|
+| [Configuration](../core/extensions/configuration.md)               | [`Microsoft.Extensions.Configuration`][configuration] |
+| [Dependency injection](../core/extensions/dependency-injection.md) | [`Microsoft.Extensions.DependencyInjection`][di]      |
+| [File globbing](../core/extensions/file-globbing.md)               | [`Microsoft.Extensions.FileSystemGlobbing`][fsg]      |
+| [Generic Host](../core/extensions/generic-host.md)                 | [`Microsoft.Extensions.Hosting`][host]                |
+| [HTTP](../core/extensions/httpclient-factory.md)                   | <sup>†</sup> [`Microsoft.Extensions.Http`][http]      |
+| [Localization](../core/extensions/localization.md)                 | [`Microsoft.Extensions.Localization`][loc]            |
+| [Logging](../core/extensions/logging.md)                           | [`Microsoft.Extensions.Logging`][log]                 |
+
+<sup>†</sup> For some target frameworks, including `net6.0`, these libraries are part of the shared framework and don't need to be installed separately.
+
+[configuration]: https://www.nuget.org/packages/Microsoft.Extensions.Configuration
+[di]: https://www.nuget.org/packages/Microsoft.Extensions.DependencyInjection
+[fsg]: https://www.nuget.org/packages/Microsoft.Extensions.FileSystemGlobbing
+[host]: https://www.nuget.org/packages/Microsoft.Extensions.Hosting
+[http]: https://www.nuget.org/packages/Microsoft.Extensions.Http
+[loc]: https://www.nuget.org/packages/Microsoft.Extensions.Localization
+[log]: https://www.nuget.org/packages/Microsoft.Extensions.Logging
 
 ## See also
 

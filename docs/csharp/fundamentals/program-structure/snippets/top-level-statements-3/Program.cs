@@ -1,6 +1,4 @@
-﻿using System;
-
-if (args.Length > 0)
+﻿if (args.Length > 0)
 {
     foreach (var arg in args)
     {
@@ -11,4 +9,3 @@ else
 {
     Console.WriteLine("No arguments");
 }
-

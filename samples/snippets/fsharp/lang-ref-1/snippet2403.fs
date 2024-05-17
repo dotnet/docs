@@ -1,2 +1,2 @@
-type MyGenericClass<'a> (x: 'a) =
-   do printfn "%A" x
+type MyGenericClass<'a>(x: 'a) =
+    do printfn "%A" x

@@ -1,9 +1,9 @@
 ---
 title: 'Tutorial: Detect objects in images with Model Builder'
 description: This tutorial illustrates how to build an object detection model using ML.NET Model Builder and Azure ML to detect stop signs in images.
-author: briacht
-ms.author: brachtma
-ms.date: 04/13/2021
+author: luisquintanilla
+ms.author: luquinta
+ms.date: 09/20/2021
 ms.topic: tutorial
 ms.custom: mlnet-tooling
 #Customer intent: As a non-developer, I want to use Model Builder to automatically generate a model to detect stop signs in images using Model Builder.
@@ -11,22 +11,18 @@ ms.custom: mlnet-tooling
 
 # Tutorial: Detect stop signs in images with Model Builder
 
-Learn how to build an object detection model using ML.NET Model Builder and Azure Machine Learning to detect and locate stop signs in images.
-
-In this tutorial, you learn how to:
+In this tutorial, you learn how to build an object detection model using ML.NET Model Builder and Azure Machine Learning to detect and locate stop signs in images.
 
 > [!div class="checklist"]
 >
 > - Prepare and understand the data
+> - Create a Model Builder config file
 > - Choose the scenario
 > - Choose the training environment
 > - Load the data
 > - Train the model
 > - Evaluate the model
 > - Use the model for predictions
-
-> [!NOTE]
-> Model Builder is currently in Preview.
 
 ## Prerequisites
 
@@ -49,15 +45,11 @@ Some use cases for object detection include:
 - Object Counting
 - Activity Recognition
 
-This sample creates a C# .NET Core console application that detects stop signs in images using a machine learning model built with Model Builder. You can find the source code for this tutorial at the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/main/samples/modelbuilder/ObjectDetection_StopSigns) GitHub repository.
+This sample creates a C# console application that detects stop signs in images using a machine learning model built with Model Builder. You can find the source code for this tutorial at the [samples browser](/samples/dotnet/machinelearning-samples/mlnet-object-detection-model-builder/).
 
 ## Prepare and understand the data
 
 The Stop Sign dataset consists of 50 images downloaded from [Unsplash](https://unsplash.com/), each of which contain at least one stop sign.
-
-The first thing you need to do is annotate your images, or draw bounding boxes around the stop signs in each image. In this tutorial, you will annotate your images with a tool called [VoTT](https://github.com/microsoft/VoTT).
-
-> If you want to skip the data labeling steps below, you can [download this version of the dataset](https://aka.ms/mlnet-object-detection-tutorial-assets) and skip to [Create a console application](object-detection-model-builder.md#create-a-console-application).
 
 ### Create a new VoTT project
 
@@ -65,17 +57,17 @@ The first thing you need to do is annotate your images, or draw bounding boxes a
 1. [Download VoTT](https://github.com/Microsoft/VoTT/releases) (Visual Object Tagging Tool).
 1. Open VoTT and select **New Project**.
 
-    ![VoTT Home Screen](./media/object-detection-model-builder/vott.png)
+    ![VoTT Home Screen](../how-to-guides/media/vott/vott.png)
 
 1. In **Project Settings**, change the **Display Name** to "StopSignObjDetection".
-1. Change the **Security Token** to *Generate New Security Token*.
+1. Change the **Security Token** to _Generate New Security Token_.
 1. Next to **Source Connection**, select **Add Connection**.
-1. In **Connection Settings**, change the **Display Name** for the source connection to "StopSignImages", and select *Local File System* as the **Provider**. For the **Folder Path**, select the *Stop-Signs* folder which contains the 50 training images, and then select **Save Connection**.
+1. In **Connection Settings**, change the **Display Name** for the source connection to "StopSignImages", and select _Local File System_ as the **Provider**. For the **Folder Path**, select the _Stop-Signs_ folder which contains the 50 training images, and then select **Save Connection**.
 
     ![VoTT New Connection Dialog](./media/object-detection-model-builder/vott-new-connection.png)
 
-1. In **Project Settings**, change the **Source Connection** to *StopSignImages* (the connection you just created).
-1. Change the **Target Connection** to *StopSignImages* as well. Your **Project Settings** should now look similar to this screenshot:
+1. In **Project Settings**, change the **Source Connection** to _StopSignImages_ (the connection you just created).
+1. Change the **Target Connection** to _StopSignImages_ as well. Your **Project Settings** should now look similar to this screenshot:
 
     ![VoTT Project Settings Dialog](./media/object-detection-model-builder/vott-new-project.png)
 
@@ -87,7 +79,7 @@ You should now see a window with preview images of all the training images on th
 
 1. Select the first (plus-shaped) icon in the **Tags** toolbar to add a new tag.
 
-    ![VoTT New Tag Icon](./media/object-detection-model-builder/vott-new-tag-icon.png)
+    ![VoTT New Tag Icon](../how-to-guides/media/vott/vott-new-tag-icon.png)
 
 1. Name the tag "Stop-Sign" and hit <kbd>Enter</kbd> on your keyboard.
 
@@ -105,8 +97,8 @@ You should now see a window with preview images of all the training images on th
 Once you have labeled all of your training images, you can export the file that will be used by Model Builder for training.
 
 1. Select the fourth icon in the left toolbar (the one with the diagonal arrow in a box) to go to the **Export Settings**.
-1. Leave the **Provider** as *VoTT JSON*.
-1. Change the **Asset State** to *Only tagged Assets*.
+1. Leave the **Provider** as _VoTT JSON_.
+1. Change the **Asset State** to _Only tagged Assets_.
 1. Uncheck **Include Images**. If you include the images, then the training images will be copied to the export folder that is generated, which is not necessary.
 1. Select **Save Export Settings**.
 
@@ -114,22 +106,26 @@ Once you have labeled all of your training images, you can export the file that 
 
 1. Go back to the **Tags editor** (the second icon in the left toolbar shaped like a ribbon). In the top toolbar, select the **Export Project** icon (the last icon shaped like an arrow in a box), or use the keyboard shortcut <kbd>Ctrl</kbd>+<kbd>E</kbd>.
 
-    ![VoTT Export Button](./media/object-detection-model-builder/vott-export-button.png)
+    ![VoTT Export Button](../how-to-guides/media/vott/vott-export-button.png)
 
-This export will create a new folder called *vott-json-export* in your *Stop-Sign-Images* folder and will generate a JSON file named *StopSignObjDetection-export* in that new folder. You will use this JSON file in the next steps for training an object detection model in Model Builder.
+This export will create a new folder called _vott-json-export_ in your _Stop-Sign-Images_ folder and will generate a JSON file named _StopSignObjDetection-export_ in that new folder. You will use this JSON file in the next steps for training an object detection model in Model Builder.
 
 ## Create a console application
 
-1. In Visual Studio, create a **C# .NET Core console application** called *StopSignDetection*.
+In Visual Studio, create a **C# console application** called _StopSignDetection_.
+
+## Create an `mbconfig` file
+
+1. In **Solution Explorer**, right-click the _StopSignDetection_ project, and select **Add** > **Machine Learning Model** to open the Model Builder UI.
+1. In the dialog, name the Model Builder project **StopSignDetection**, and click **Add**.
 
 ## Choose a scenario
 
-1. In **Solution Explorer**, right-click the *StopSignDetection* project, and select **Add** > **Machine Learning** to open the Model Builder UI.
-1. For this sample, the scenario is object detection. In the **Scenario** step of Model Builder, select the **Object Detection** scenario.
+For this sample, the scenario is object detection. In the **Scenario** step of Model Builder, select the **Object Detection** scenario.
 
 ![Model Builder wizard in Visual Studio](./media/object-detection-model-builder/obj-det-scenario.png)
 
-> If you don't see *Object Detection* in the list of scenarios, you may need to [update your version of Model Builder](https://marketplace.visualstudio.com/items?itemName=MLNET.07).
+> If you don't see _Object Detection_ in the list of scenarios, you may need to [update your version of Model Builder](https://marketplace.visualstudio.com/items?itemName=MLNET.07).
 
 ## Choose the training environment
 
@@ -178,9 +174,10 @@ If you’re satisfied with your configuration, select the **Next step** button i
 
 In the **Data** step of Model Builder, you will select your training dataset.
 
->Model Builder currently only accepts the format of JSON generated by VoTT, but the team plans to add support for more formats in the future. If there is a dataset format for object detection that you’d like to see supported in Model Builder, leave your feedback on [GitHub](https://github.com/dotnet/machinelearning-modelbuilder/issues/new?assignees=&labels=&template=data_suggestion.md&title=).
+> [!IMPORTANT]
+> Model Builder currently only accepts the format of JSON [generated by VoTT](../how-to-guides/label-images-for-object-detection-using-vott.md).
 
-1. Select the button next to the **Select a folder** text box and use the File Explorer to find the `StopSignObjDetection-export.json` which should be located in the *Stop-Signs/vott-json-export* directory.
+1. Select the button inside **Input** section and use the File Explorer to find the `StopSignObjDetection-export.json` which should be located in the _Stop-Signs/vott-json-export_ directory.
 
     ![Model Builder Data Step](./media/object-detection-model-builder/obj-det-data.png)
 
@@ -206,7 +203,7 @@ In the Evaluate screen, you get an overview of the results from the training pro
 
 ![Model Builder Evaluate Step](./media/object-detection-model-builder/obj-det-evaluate.png)
 
-In this case, the accuracy says 100%, which means that the model is more than likely *overfit* due to too few images in the dataset.
+In this case, the accuracy says 100%, which means that the model is more than likely _overfit_ due to too few images in the dataset.
 
 You can use the **Try your model** experience to quickly check whether your model is performing as expected.
 
@@ -218,33 +215,21 @@ The score shown on each detected bounding box indicates the **confidence** of th
 
 The **Score threshold**, which can be increased or decreased with the threshold slider, will add and remove detected objects based on their scores. For instance, if the threshold is .51, then the model will only show objects that have a confidence score of .51 or above. As you increase the threshold, you will see less detected objects, and as you decrease the threshold, you will see more detected objects.
 
-If you're not satisfied with your accuracy metrics, one easy way to try to improve model accuracy is to use more data. Otherwise, select the **Next step** link to move on to the **Code** step in Model Builder.
+If you're not satisfied with your accuracy metrics, one easy way to try to improve model accuracy is to use more data. Otherwise, select the **Next step** link to move on to the **Consume** step in Model Builder.
 
-## Add the code to make predictions
+## (Optional) Consume the model
 
-Two projects are created as a result of the training process.
+This step will have project templates that you can use to consume the model. This step is optional and you can choose the method that best suits your needs on how to serve the model.
 
-- *StopSignDetectionML.ConsoleApp*: A C# .NET Core Console application that contains the model training code and sample consumption code.
-- *StopSignDetectionML.Model*: A .NET Standard class library containing the data models that define the schema of input and output model data, the saved version of the best performing model during training, and a helper class called `ConsumeModel` to make predictions.
+- Console App
+- Web API
 
-1. In the code step of Model Builder, select **Add Projects** to add the auto-generated projects to the solution.
-1. Open the *Program.cs* file in the *StopSignDetection* project, and add the following using statement at the top of the file to reference the *StopSignDetectionML.Model* project:
+### Console App
 
-    [!code-csharp [ProgramUsings](~/machinelearning-samples/samples/modelbuilder/ObjectDetection_StopSigns/StopSignDetection/Program.cs#L2)]
+When adding a console app to your solution, you will be prompted to name the project.
 
-1. Download the following [test image](~/machinelearning-samples/samples/modelbuilder/ObjectDetection_StopSigns/StopSignDetection/test-image1.jpeg).
-1. Create a new instance of the `ModelInput` class with the `ImageSource` property set to the filepath of your test image inside the `Main` method of your application. Replace the "Hello World" statement with the following code:
-
-    [!code-csharp [InputData](~/machinelearning-samples/samples/modelbuilder/ObjectDetection_StopSigns/StopSignDetection/Program.cs#L10-L15)]
-
-1. Use the `Predict` method from the `ConsumeModel` class to load the trained model, create a [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) for the model, and make predictions on new data. Add the following code below the `ModelInput` statement:
-
-    [!code-csharp [Prediction](~/machinelearning-samples/samples/modelbuilder/ObjectDetection_StopSigns/StopSignDetection/Program.cs#L15)]
-
-1. Print out the Prediction's output, including the label, coordinates, and score by adding the following code:
-
-    [!code-csharp [PrintResults](~/machinelearning-samples/samples/modelbuilder/ObjectDetection_StopSigns/StopSignDetection/Program.cs#L17-L18)]
-
+1. Name the console project **StopSignDetection_Console**.
+1. Click **Add to solution** to add the project to your current solution.
 1. Run the application.
 
     The output generated by the program should look similar to the snippet below:
@@ -252,10 +237,58 @@ Two projects are created as a result of the training process.
     ```bash
     Predicted Boxes:
 
-    Top: 89.453415, Left: 481.95343, Right: 724.8073, Bottom: 388.32385, Label: Stop-Sign, Score: 0.99539465
+    Top: 73.225296, Left: 256.89764, Right: 533.8884, Bottom: 484.24243, Label: stop-sign, Score: 0.9970765
     ```
 
-Congratulations! You've successfully built a machine learning model to detect stop signs in images using Model Builder. You can find the source code for this tutorial at the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/main/samples/modelbuilder/ObjectDetection_StopSigns) GitHub repository.
+### Web API
+
+When you add a web API to your solution, you're prompted to name the project.
+
+1. Name the Web API project **StopSignDetection_API**.
+1. Select **Add to solution** to add the project to your current solution.
+1. Run the application.
+1. Open PowerShell and enter the following code where PORT is the port your application is listening on.
+
+    ```powershell
+    $body = @{
+         ImageSource = <Image location on your local machine>
+     }
+
+     Invoke-RestMethod "https://localhost:<PORT>/predict" -Method Post -Body ($body | ConvertTo-Json) -ContentType "application/json"
+    ```
+
+1. If successful, the output should look similar to the following text.
+
+   ```powershell
+   boxes                                      labels scores       boundingBoxes
+   -----                                      ------ ------       -------------
+   {339.97797, 154.43184, 472.6338, 245.0796} {1}    {0.99273646} {}
+   ```
+
+   - The `boxes` column gives the bounding box coordinates of the object that was detected. The values here belong to the left, top, right, and bottom coordinates respectively.
+   - The `labels` are the index of the predicted labels. In this case, the value 1 is a stop sign.
+   - The `scores` defines how confident the model is that the bounding box belongs to that label.
+
+<!-- markdownlint-disable MD027 -->
+   > [!NOTE]
+   > **(Optional)** The bounding box coordinates are normalized for a width of 800 pixels and a height of 600 pixels. To scale the bounding box coordinates for your image in further post-processing, you need to:
+   >
+   > 1. Multiply the top and bottom coordinates by the original image height, and multiply the left and right coordinates by the original image width.
+   > 1. Divide the top and bottom coordinates by 600, and divide the left and right coordinates by 800.
+   >
+   >    For example, given the original image dimensions,`actualImageHeight` and `actualImageWidth`, and a `ModelOutput` called `prediction`, the following code snippet shows how to scale the `BoundingBox` coordinates:
+   >
+   >    ```csharp
+   >    var top = originalImageHeight * prediction.Top / 600;
+   >    var bottom = originalImageHeight * prediction.Bottom / 600;
+   >    var left = originalImageWidth * prediction.Left / 800;
+   >    var right = originalImageWidth * prediction.Right / 800;
+   >    ```
+   >
+   > An image can have more than one bounding box, so the same process needs to be applied to each of the bounding boxes in the image.
+<!-- markdownlint-enable MD027 -->
+
+Congratulations! You've successfully built a machine learning model to detect stop signs in images using Model Builder. You can find the source code for this tutorial at the [samples browser](/samples/dotnet/machinelearning-samples/mlnet-object-detection-model-builder/).
 
 ## Additional resources
 

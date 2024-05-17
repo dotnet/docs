@@ -90,6 +90,7 @@ The following example does not affinitize server GC threads and limits the numbe
 
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
 - <xref:System.Runtime.GCSettings.IsServerGC%2A?displayProperty=nameWithType>
 - [GCNoAffinitize element](gcnoaffinitize-element.md)
 - [GCHeapAffinitizeMask element](gcheapaffinitizemask-element.md)

@@ -9,6 +9,8 @@ f1_keywords:
 
 This topic describes processor directives and compiler directives.
 
+For F# Interactive (`dotnet fsi`) directives, see [Interactive Programming with F#](../tools/fsharp-interactive/index.md).
+
 ## Preprocessor Directives
 
 A preprocessor directive is prefixed with the # symbol and appears on a line by itself. It is interpreted by the preprocessor, which runs before the compiler itself.
@@ -21,9 +23,7 @@ The following table lists the preprocessor directives that are available in F#.
 |`#else`|Supports conditional compilation. Marks a section of code to include if the symbol used with the previous `#if` is not defined.|
 |`#endif`|Supports conditional compilation. Marks the end of a conditional section of code.|
 |`#`[line] *int*,<br/>`#`[line] *int* *string*,<br/>`#`[line] *int* *verbatim-string*|Indicates the original source code line and file name, for debugging. This feature is provided for tools that generate F# source code.|
-|`#nowarn` *warningcode*|Disables a compiler warning or warnings. To disable a warning, find its number from the compiler output and include it in quotation marks. Omit the "FS" prefix. To disable multiple warning numbers on the same line, include each number in quotation marks, and separate each string by a space. For example:
-
-`#nowarn "9" "40"`
+|`#nowarn` *warningcode*|Disables a compiler warning or warnings. To disable a warning, find its number from the compiler output and include it in quotation marks. Omit the "FS" prefix. To disable multiple warning numbers on the same line, include each number in quotation marks, and separate each string by a space. <br/> For example: `#nowarn "9" "40"`|
 
 The effect of disabling a warning applies to the entire file, including portions of the file that precede the directive.|
 
@@ -61,18 +61,6 @@ When you use the `#line` directive, file names must be enclosed in quotation mar
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet7303.fs)]
 
 These tokens indicate that the F# code generated at this location is derived from some constructs at or near line `25` in `Script1`.
-
-## Compiler Directives
-
-Compiler directives resemble preprocessor directives, because they are prefixed with a # sign, but instead of being interpreted by the preprocessor, they are left for the compiler to interpret and act on.
-
-The following table lists the compiler directive that is available in F#.
-
-|Directive|Description|
-|---------|-----------|
-|`#light` ["on"&#124;"off"]|Enables or disables lightweight syntax, for compatibility with other versions of ML. By default, lightweight syntax is enabled. Verbose syntax is always enabled. Therefore, you can use both lightweight syntax and verbose syntax. The directive `#light` by itself is equivalent to `#light "on"`. If you specify `#light "off"`, you must use verbose syntax for all language constructs. Syntax in the documentation for F# is presented with the assumption that you are using lightweight syntax. For more information, see [Verbose Syntax](verbose-syntax.md).|
-
-For interpreter (fsi.exe) directives, see [Interactive Programming with F#](../tools/fsharp-interactive/index.md).
 
 ## See also
 

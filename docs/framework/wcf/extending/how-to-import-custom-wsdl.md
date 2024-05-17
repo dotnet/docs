@@ -78,4 +78,4 @@ This topic describes how to import custom WSDL. To handle the custom WSDL, you m
 
 - [Metadata](../feature-details/metadata.md)
 - [Exporting and Importing Metadata](../feature-details/exporting-and-importing-metadata.md)
-- [Custom WSDL Publication](/previous-versions/dotnet/framework/wcf/samples/custom-wsdl-publication)
+- [Custom WSDL Publication](../samples/custom-wsdl-publication.md)

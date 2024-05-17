@@ -1,16 +1,21 @@
 ---
-title: Branches and loops - Introduction to C# tutorial
+title: Branches and loops - Introductory tutorial
 description: In this tutorial about branches and loops, you write C# code to explore the language syntax that supports conditional branches and loops to execute statements repeatedly.
-ms.date: 02/05/2021
+ms.date: 03/23/2022
 ---
 
-# Learn conditional logic with branch and loop statements
+# C# `if` statements and loops - conditional logic tutorial
 
-This tutorial teaches you how to write code that examines variables and changes the execution path based on those variables. You write C# code and see the results of compiling and running it. The tutorial contains a series of lessons that explore branching and looping constructs in C#. These lessons teach you the fundamentals of the C# language.
+This tutorial teaches you how to write C# code that examines variables and changes the execution path based on those variables. You write C# code and see the results of compiling and running it. The tutorial contains a series of lessons that explore branching and looping constructs in C#. These lessons teach you the fundamentals of the C# language.
+
+> [!TIP]
+> To paste a code snippet inside the **focus mode** you should use your keyboard shortcut (<kbd>Ctrl</kbd> + <kbd>v</kbd>, or <kbd>cmd</kbd> + <kbd>v</kbd>).
 
 ## Prerequisites
 
-The tutorial expects that you have a machine set up for local development. On Windows, Linux, or macOS, you can use the .NET CLI to create, build, and run applications. On Mac and Windows, you can use Visual Studio 2019. For setup instructions, see [Set up your local environment](local-environment.md).
+The tutorial expects that you have a machine set up for local development. See [Set up your local environment](local-environment.md) for installation instructions and an overview of application development in .NET.
+
+If you prefer to run the code without having to set up a local environment, see the [interactive-in-browser version of this tutorial](branches-and-loops.yml).
 
 ## Make decisions using the `if` statement
 
@@ -20,11 +25,11 @@ Create a directory named *branches-tutorial*. Make that the current directory an
 dotnet new console -n BranchesAndLoops -o .
 ```
 
+[!INCLUDE [csharp10-templates](../../../../includes/csharp10-templates.md)]
+
 This command creates a new .NET console application in the current directory. Open *Program.cs* in your favorite editor, and replace the contents with the following code:
 
 ```csharp
-using System;
-
 int a = 5;
 int b = 6;
 if (a + b > 10)
@@ -118,8 +123,6 @@ Modify the values of `a`, `b`, and `c` and switch between `&&` and `||` to explo
 You've finished the first step. Before you start the next section, let's move the current code into a separate method. That makes it easier to start working with a new example. Put the existing code in a method called `ExploreIf()`. Call it from the top of your program. When you finished those changes, your code should look like the following:
 
 ```csharp
-using System;
-
 ExploreIf();
 
 void ExploreIf()
@@ -181,7 +184,7 @@ while (counter < 10)
 }
 ```
 
-The `while` statement checks a condition and executes the statement or statement block following the `while`. It repeatedly checks the condition and executing those statements until the condition is false.
+The `while` statement checks a condition and executes the statement or statement block following the `while`. It repeatedly checks the condition, executing those statements until the condition is false.
 
 There's one other new operator in this example. The `++` after the `counter` variable is the **increment** operator. It adds 1 to the value of `counter` and stores that value in the `counter` variable.
 
@@ -287,5 +290,5 @@ your own development environment.
 
 You can learn more about these concepts in these articles:
 
-- [If and else statement](../../language-reference/keywords/if-else.md)
+- [Selection statements](../../language-reference/statements/selection-statements.md)
 - [Iteration statements](../../language-reference/statements/iteration-statements.md)

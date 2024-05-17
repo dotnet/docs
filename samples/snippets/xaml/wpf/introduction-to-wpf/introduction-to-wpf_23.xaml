@@ -1,8 +1,0 @@
-    <!-- Style that will be applied to all buttons -->
-    <Style TargetType="{x:Type Button}">
-      <Setter Property="Background" Value="Orange" />
-      <Setter Property="BorderBrush" Value="Crimson" />
-      <Setter Property="FontSize" Value="20" />
-      <Setter Property="FontWeight" Value="Bold" />
-      <Setter Property="Margin" Value="5" />
-    </Style>

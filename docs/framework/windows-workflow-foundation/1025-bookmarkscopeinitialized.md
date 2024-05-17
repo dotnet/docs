@@ -6,10 +6,10 @@ ms.assetid: 63584434-e709-471d-9e96-97d3d99e70d6
 ---
 # 1025 - BookmarkScopeInitialized
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1025|  
 |Keywords|WFRuntime|  
 |Level|Verbose|  

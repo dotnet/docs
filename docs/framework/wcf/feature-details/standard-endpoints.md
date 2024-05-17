@@ -168,7 +168,7 @@ serviceHost.AddServiceEndpoint(new CustomEndpoint());
  A standard endpoint that is used by services to send announcement messages over a UDP binding.  
   
  <xref:System.ServiceModel.Discovery.DynamicEndpoint>  
- A standard endpoint that uses WS-Discovery to find the endpoint address dynamically at runtime.  
+ A standard endpoint that uses WS-Discovery to find the endpoint address dynamically at run time.  
   
  <xref:System.ServiceModel.Description.ServiceMetadataEndpoint>  
  A standard endpoint for metadata exchange.  

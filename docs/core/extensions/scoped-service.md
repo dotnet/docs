@@ -3,7 +3,7 @@ title: Use scoped services within a BackgroundService
 description: Learn how to use scoped services within a BackgroundService in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 05/26/2021
+ms.date: 12/13/2023
 ms.topic: tutorial
 ---
 
@@ -19,9 +19,11 @@ In this tutorial, you learn how to:
 > - Delegate work to a scoped service.
 > - Implement an `override` of <xref:Microsoft.Extensions.Hosting.BackgroundService.StopAsync(System.Threading.CancellationToken)?displayProperty=nameWithType>.
 
+[!INCLUDE [workers-samples-browser](includes/workers-samples-browser.md)]
+
 ## Prerequisites
 
-- The [.NET 5.0 SDK or later](https://dotnet.microsoft.com/download/dotnet)
+- The [.NET 8.0 SDK or later](https://dotnet.microsoft.com/download/dotnet/8.0)
 - A .NET integrated development environment (IDE)
   - Feel free to use [Visual Studio](https://visualstudio.microsoft.com)
 
@@ -47,15 +49,15 @@ The hosted service creates a scope to resolve the scoped background service to c
 
 Replace the existing `Worker` class with the following C# code, and rename the file to *ScopedBackgroundService.cs*:
 
-:::code source="snippets/workers/scoped-service/ScopedBackgroundService.cs" highlight="33-39":::
+:::code source="snippets/workers/scoped-service/ScopedBackgroundService.cs" highlight="22-28":::
 
-In the preceding code, an explicit scope is created and the `IScopedProcessingService` implementation is resolved from the dependency injection service provider. The resolved service instance is scoped, and it's `DoWorkAsync` method is awaited.
+In the preceding code, an explicit scope is created and the `IScopedProcessingService` implementation is resolved from the dependency injection service scope factory. The resolved service instance is scoped, and its `DoWorkAsync` method is awaited.
 
 Replace the template *Program.cs* file contents with the following C# code:
 
-:::code source="snippets/workers/scoped-service/Program.cs" highlight="8-9":::
+:::code source="snippets/workers/scoped-service/Program.cs" highlight="4-5":::
 
-The services are registered in `IHostBuilder.ConfigureServices` (*Program.cs*). The hosted service is registered with the `AddHostedService` extension method.
+The services are registered in (*Program.cs*). The hosted service is registered with the `AddHostedService` extension method.
 
 For more information on registering services, see [Dependency injection in .NET](dependency-injection.md).
 

@@ -2,7 +2,7 @@
 description: "Learn more about: s_isDebuggerCheckDisabledForTestPurposes Field"
 title: "s_isDebuggerCheckDisabledForTestPurposes Field"
 ms.date: "03/30/2017"
-ms.technology: "dotnet-wpf"
+ms.subservice: "wpf"
 topic_type:
   - "apiref"
 api_name:

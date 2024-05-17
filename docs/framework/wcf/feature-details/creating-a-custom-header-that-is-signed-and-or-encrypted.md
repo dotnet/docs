@@ -55,6 +55,6 @@ public  class MyMessageContract
   
 ## See also
 
-- [Default Message Contract](/previous-versions/dotnet/framework/wcf/samples/default-message-contract)
-- [Message Contracts](/previous-versions/dotnet/framework/wcf/samples/message-contracts)
+- [Default Message Contract](../samples/default-message-contract.md)
+- [Message Contracts](../samples/message-contracts.md)
 - [Using Message Contracts](using-message-contracts.md)

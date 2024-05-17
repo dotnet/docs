@@ -10,7 +10,7 @@ The [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] h
   
 ## Transaction Activities  
   
-|||  
+| Activity type | Description |  
 |-|-|  
 |<xref:System.Activities.Statements.CancellationScope>|Associates cancellation logic, in the form of an activity, with a main path of execution, also expressed as an activity.|  
 |<xref:System.Activities.Statements.CompensableActivity>|Supports compensation of its child activities.|  

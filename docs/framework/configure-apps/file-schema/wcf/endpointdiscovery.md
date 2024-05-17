@@ -54,8 +54,7 @@ Specifies the various discovery settings for an endpoint, such as its discoverab
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<behavior>](behavior-of-endpointbehaviors.md)|Specifies a behavior element.|  
-|||  
+|[\<behavior>](behavior-of-endpointbehaviors.md)|Specifies a behavior element.|
   
 ## Remarks  
 

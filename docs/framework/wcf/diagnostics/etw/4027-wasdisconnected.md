@@ -6,10 +6,10 @@ ms.assetid: 940337a3-3094-488a-a1b5-0fb4ab16da73
 ---
 # 4027 - WasDisconnected
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4027|  
 |Keywords|ActivationServices|  
 |Level|Verbose|  

@@ -226,6 +226,7 @@ namespace MyBuffers
         SequencePosition? FindIndexOf(in ReadOnlySequence<byte> buffer, byte data)
         {
             SequencePosition position = buffer.Start;
+            SequencePosition result = position;
 
             while (buffer.TryGet(ref position, out ReadOnlyMemory<byte> segment))
             {
@@ -233,8 +234,10 @@ namespace MyBuffers
                 var index = span.IndexOf(data);
                 if (index != -1)
                 {
-                    return buffer.GetPosition(position, index);
+                    return buffer.GetPosition(index, result);
                 }
+
+                result = position;
             }
             return null;
         }

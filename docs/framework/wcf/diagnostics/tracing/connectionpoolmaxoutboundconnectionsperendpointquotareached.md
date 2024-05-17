@@ -2,16 +2,17 @@
 description: "Learn more about: System.ServiceModel.Channels.ConnectionPoolMaxOutboundConnectionsPerEndpointQuotaReached"
 title: "System.ServiceModel.Channels.ConnectionPoolMaxOutboundConnectionsPerEndpointQuotaReached"
 ms.date: "03/30/2017"
+ms.topic: reference
 ms.assetid: 01c1fd61-84ef-43b8-a2e8-ae64ebbd0d18
 ---
 # System.ServiceModel.Channels.ConnectionPoolMaxOutboundConnectionsPerEndpointQuotaReached
 
-System.ServiceModel.Channels.ConnectionPoolMaxOutboundConnectionsPerEndpointQuotaReached  
-  
-## Description  
+System.ServiceModel.Channels.ConnectionPoolMaxOutboundConnectionsPerEndpointQuotaReached
 
- MaxOutboundConnectionsPerEndpoint quota has been reached, so the connection was closed and not stored in this connection pool.  
-  
+## Description
+
+ MaxOutboundConnectionsPerEndpoint quota has been reached, so the connection was closed and not stored in this connection pool.
+
 ## See also
 
 - [Tracing](index.md)

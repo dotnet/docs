@@ -26,7 +26,7 @@ namespace IrisFlowerClustering
         public uint PredictedClusterId;
 
         [ColumnName("Score")]
-        public float[] Distances;
+        public float[]? Distances;
     }
     // </SnippetClassDefinitions>
 }

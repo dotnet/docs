@@ -6,10 +6,10 @@ ms.assetid: 28f6151c-650f-473d-a807-cb06b56f67f1
 ---
 # 3366 - SharedListenerProxyRegisterFailed
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3366|  
 |Keywords|ActivationServices|  
 |Level|Error|  

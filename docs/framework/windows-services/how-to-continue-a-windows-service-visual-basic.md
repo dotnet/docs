@@ -13,6 +13,8 @@ ms.assetid: e5d13760-4c83-4b0d-abef-39852677cd7a
 ---
 # How to: Continue a Windows Service (Visual Basic)
 
+[!INCLUDE [windows-service-disambiguation](../../core/extensions/includes/windows-service-disambiguation.md)]
+
 This example uses the <xref:System.ServiceProcess.ServiceController> component to continue the IIS Admin service on the local computer.  
   
 ## Example  

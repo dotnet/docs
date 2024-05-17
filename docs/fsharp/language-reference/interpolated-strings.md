@@ -14,6 +14,7 @@ Interpolated strings are [strings](strings.md) that allow you to embed F# expres
 $"string-text {expr}"
 $"string-text %format-specifier{expr}"
 $"""string-text {"embedded string literal"}"""
+$$"""string-text %%format-specifier{{expr}}"""
 ```
 
 ## Remarks
@@ -53,8 +54,6 @@ printfn $"Name: %s{age}, Age: %d{name}"
 
 In the previous example, the code mistakenly passes the `age` value where `name` should be, and vice/versa. Because the interpolated strings use format specifiers, this is a compile error instead of a subtle runtime bug.
 
-All format specifiers covered in [plaintext formatting](plaintext-formatting.md) are valid inside of an interpolated string.
-
 ## Verbatim interpolated strings
 
 F# supports verbatim interpolated strings with triple quotes so that you can embed string literals.
@@ -63,6 +62,35 @@ F# supports verbatim interpolated strings with triple quotes so that you can emb
 let age = 30
 
 printfn $"""Name: {"Phillip"}, Age: %d{age}"""
+```
+
+## Format specifiers
+
+Format specifiers can either be printf-style or .NET-style. Printf-style specifiers are those covered in [plaintext formatting](plaintext-formatting.md), placed before the braces. For example:
+
+```fsharp
+let pi = $"%0.3f{System.Math.PI}"  // "3.142"
+let code = $"0x%08x{43962}"  // "0x0000abba"
+```
+
+The format specifier `%A` is particularly useful for producing diagnostic output of structured F# data.
+
+```fsharp
+let data = [0..4]
+let output = $"The data is %A{data}"  // "The data is [0; 1; 2; 3; 4]"
+```
+
+.NET-style specifiers are those usable with <xref:System.String.Format%2A?displayProperty=nameWithType>, placed after a `:` within the braces. For example:
+
+```fsharp
+let pi = $"{System.Math.PI:N4}"  // "3.1416"
+let now = $"{System.DateTime.UtcNow:``yyyyMMdd``}" // e.g. "20220210"
+```
+
+If a .NET-style specifier contains an unusual character, then it can be escaped using double-backticks:
+
+```fsharp
+let nowDashes = $"{System.DateTime.UtcNow:``yyyy-MM-dd``}" // e.g. "2022-02-10"
 ```
 
 ## Aligning expressions in interpolated strings
@@ -94,6 +122,29 @@ let frmtStr = $"The speed of light is {speedOfLight:N3} km/s." : FormattableStri
 
 Note that the type annotation must be on the interpolated string expression itself. F# does not implicitly convert an interpolated string into a <xref:System.FormattableString>.
 
+## Extended syntax for string interpolation
+
+Beginning with F# 8, when you work with text containing multiple `{`, `}` or `%` characters already, you can use extended string interpolation syntax to remove the need for escaping.
+
+Triple quote string literals can start with multiple `$` characters, which changes how many braces are required to open and close interpolation.
+In these string literals, `{` and `}` characters don't need to be escaped:
+
+```fsharp
+let str = $$"""A string containing some {curly braces} and an {{"F#" + " " + "expression"}}."""
+// "A string containing some {curly braces} and an F# expression."
+let another = $$$"""A string with pairs of {{ and }} characters and {{{ "an F# expression" }}}."""
+// "A string with pairs of {{ and }} characters and an F# expression."""
+```
+
+The number of `%` characters needed for format specifiers is affected in the same way:
+
+```fsharp
+let percent = $$"""50% of 20 is %%.1f{{20m * 0.5m}}"""
+// "50% of 20 is 10.0"
+```
+
 ## See also
 
 * [Strings](strings.md)
+* [F# RFC FS-1001 - Interpolated strings](https://github.com/fsharp/fslang-design/blob/main/FSharp-5.0/FS-1001-StringInterpolation.md)
+* [F# RFC FS-1132 - Extended syntax for interpolated strings](https://github.com/fsharp/fslang-design/blob/main/FSharp-8.0/FS-1132-better-interpolated-triple-quoted-strings.md)

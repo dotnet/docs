@@ -57,4 +57,4 @@ The MDA message gives the name of the platform invoke method call that is causin
 
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
 - [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)
-- [Interop Marshaling](../interop/interop-marshaling.md)
+- [Interop Marshaling](../interop/interop-marshalling.md)

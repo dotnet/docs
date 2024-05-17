@@ -17,8 +17,8 @@ The following table shows the difference in behavior.
 
 |  | Previous .NET versions | .NET 5+ |
 |--|------------------------|---------|
-| Windows | 6.2.9200.0 | 10.0.19042.0 |
-| macOS | 19.6.0.0 | 10.15.7 |
+| **Windows** | 6.2.9200.0 | 10.0.19042.0 |
+| **macOS** | 19.6.0.0 | 10.15.7 |
 
 ## Reason for change
 

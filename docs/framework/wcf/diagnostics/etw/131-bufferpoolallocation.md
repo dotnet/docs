@@ -10,12 +10,12 @@ BufferPoolAllocation
   
 ## Properties  
   
-|||  
-|-|-|  
-|ID|131|  
-|Keywords|Infrastructure|  
-|Level|Verbose|  
-|Channel|DEBUG|  
+| Property | Value          |
+| -------- | -------------- |
+| ID       | 131            |
+| Keywords | Infrastructure |
+| Level    | Verbose        |
+| Channel  | DEBUG          |
   
 ## Description  
 
@@ -23,6 +23,4 @@ BufferPoolAllocation
   
 ## Message  
 
- Pool allocating %1 Bytes.  
-  
-## Details
+ Pool allocating %1 Bytes.

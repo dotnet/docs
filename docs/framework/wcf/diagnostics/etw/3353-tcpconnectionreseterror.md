@@ -6,10 +6,10 @@ ms.assetid: 19df26fe-1088-4969-b137-b6f25740b468
 ---
 # 3353 - TcpConnectionResetError
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3353|  
 |Keywords|TCP|  
 |Level|Warning|  

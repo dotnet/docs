@@ -1,7 +1,7 @@
 ---
 title: "Loops: for...in Expression"
 description: See how the F# for...in expression looping construct is used to iterate over the matches of a pattern in an enumerable collection.
-ms.date: 05/16/2016
+ms.date: 10/29/2021
 ---
 # Loops: for...in Expression
 
@@ -18,7 +18,7 @@ for pattern in enumerable-expression do
 
 The `for...in` expression can be compared to the `for each` statement in other .NET languages because it is used to loop over the values in an enumerable collection. However, `for...in` also supports pattern matching over the collection instead of just iteration over the whole collection.
 
-The enumerable expression can be specified as an enumerable collection or, by using the `..` operator, as a range on an integral type. Enumerable collections include lists, sequences, arrays, sets, maps, and so on. Any type that implements `System.Collections.IEnumerable` can be used.
+The enumerable expression can be specified as an enumerable collection or, by using the `..` operator. Enumerable collections include lists, sequences, arrays, sets, maps, and so on. Any type that implements `System.Collections.IEnumerable` can be used.
 
 When you express a range by using the `..` operator, you can use the following syntax.
 
@@ -28,7 +28,7 @@ You can also use a version that includes an increment called the *skip*, as in t
 
 *start* .. *skip* .. *finish*
 
-When you use integral ranges and a simple counter variable as a pattern, the typical behavior is to increment the counter variable by 1 on each iteration, but if the range includes a skip value, the counter is incremented by the skip value instead.
+If the skip value is unspecified, then the next value generated in the collection is incremented by 1. When skip is specified, it is incremented by that value.
 
 Values matched in the pattern can also be used in the body expression.
 
@@ -125,7 +125,7 @@ The output is as follows.
 Number of elements in list1: 5
 ```
 
-`Note` You can use `for...in` in sequence expressions and other computation expressions, in which case a customized version of the `for...in` expression is used. For more information, see [Sequences](sequences.md), [Asynchronous Workflows](asynchronous-workflows.md), and [Computation Expressions](computation-expressions.md).
+`Note` You can use `for...in` in sequence expressions and other computation expressions, in which case a customized version of the `for...in` expression is used. For more information, see [Sequences](sequences.md), [Async expressions](async-expressions.md), [Task expressions](task-expressions.md), and [Computation Expressions](computation-expressions.md).
 
 ## See also
 

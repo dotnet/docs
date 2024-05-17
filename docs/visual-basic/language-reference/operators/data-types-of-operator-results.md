@@ -54,14 +54,13 @@ Visual Basic determines the result data type of an operation based on the data t
  The `/` operator is defined only for the [Decimal](../data-types/decimal-data-type.md), [Single](../data-types/single-data-type.md), and [Double](../data-types/double-data-type.md) data types. Visual Basic widens each operand as necessary to the appropriate data type before the operation, and the result has that data type.  
   
  The following table shows the result data types for the `/` operator. Note that this table is symmetric; for a given combination of operand data types, the result data type is the same regardless of the order of the operands.  
-  
-||||||  
-|---|---|---|---|---|  
-||`Decimal`|`Single`|`Double`|Any integer type|  
-|`Decimal`|Decimal|Single|Double|Decimal|  
-|`Single`|Single|Single|Double|Single|  
-|`Double`|Double|Double|Double|Double|  
-|Any integer type|Decimal|Single|Double|Double|  
+
+|                      | `Decimal` | `Single` | `Double` | Any integer type |
+| -------------------- | --------- | -------- | -------- | ---------------- |
+| **`Decimal`**        | Decimal   | Single   | Double   | Decimal          |
+| **`Single`**         | Single    | Single   | Double   | Single           |
+| **`Double`**         | Double    | Double   | Double   | Double           |
+| **Any integer type** | Decimal   | Single   | Double   | Double           |
   
  The `^` operator is defined only for the `Double` data type. Visual Basic widens each operand as necessary to `Double` before the operation, and the result data type is always `Double`.  
   
@@ -83,57 +82,53 @@ Visual Basic determines the result data type of an operation based on the data t
 ### Unary + and – Operators  
 
  The following table shows the result data types for the two unary operators, `+` and `–`.  
-  
-|||||||||||  
-|---|---|---|---|---|---|---|---|---|---|  
-||`Boolean`|`SByte`|`Byte`|`Short`|`UShort`|`Integer`|`UInteger`|`Long`|`ULong`|  
-|Unary `+`|Short|SByte|Byte|Short|UShort|Integer|UInteger|Long|ULong|  
-|Unary `–`|Short|SByte|Short|Short|Integer|Integer|Long|Long|Decimal|  
+
+|               | `Boolean` | `SByte` | `Byte` | `Short` | `UShort` | `Integer` | `UInteger` | `Long` | `ULong` |
+| ------------- | --------- | ------- | ------ | ------- | -------- | --------- | ---------- | ------ | ------- |
+| **Unary `+`** | Short     | SByte   | Byte   | Short   | UShort   | Integer   | UInteger   | Long   | ULong   |
+| **Unary `–`** | Short     | SByte   | Short  | Short   | Integer  | Integer   | Long       | Long   | Decimal |
   
 ### <\< and >> Operators  
 
  The following table shows the result data types for the two bit-shift operators, `<<` and `>>`. Visual Basic treats each bit-shift operator as a unary operator on its left operand (the bit pattern to be shifted).  
-  
-|||||||||||  
-|---|---|---|---|---|---|---|---|---|---|  
-||`Boolean`|`SByte`|`Byte`|`Short`|`UShort`|`Integer`|`UInteger`|`Long`|`ULong`|  
-|`<<`, `>>`|Short|SByte|Byte|Short|UShort|Integer|UInteger|Long|ULong|  
+
+|                | `Boolean` | `SByte` | `Byte` | `Short` | `UShort` | `Integer` | `UInteger` | `Long` | `ULong` |
+| -------------- | --------- | ------- | ------ | ------- | -------- | --------- | ---------- | ------ | ------- |
+| **`<<`, `>>`** | Short     | SByte   | Byte   | Short   | UShort   | Integer   | UInteger   | Long   | ULong   |
   
  If the left operand is `Decimal`, `Single`, `Double`, or `String`, Visual Basic attempts to convert it to `Long` before the operation, and the result data type is `Long`. The right operand (the number of bit positions to shift) must be `Integer` or a type that widens to `Integer`.  
   
 ### Binary +, –, \*, and Mod Operators  
 
- The following table shows the result data types for the binary `+` and `–` operators and the `*` and `Mod` operators. Note that this table is symmetric; for a given combination of operand data types, the result data type is the same regardless of the order of the operands.  
-  
-|||||||||||  
-|---|---|---|---|---|---|---|---|---|---|  
-||`Boolean`|`SByte`|`Byte`|`Short`|`UShort`|`Integer`|`UInteger`|`Long`|`ULong`|  
-|`Boolean`|Short|SByte|Short|Short|Integer|Integer|Long|Long|Decimal|  
-|`SByte`|SByte|SByte|Short|Short|Integer|Integer|Long|Long|Decimal|  
-|`Byte`|Short|Short|Byte|Short|UShort|Integer|UInteger|Long|ULong|  
-|`Short`|Short|Short|Short|Short|Integer|Integer|Long|Long|Decimal|  
-|`UShort`|Integer|Integer|UShort|Integer|UShort|Integer|UInteger|Long|ULong|  
-|`Integer`|Integer|Integer|Integer|Integer|Integer|Integer|Long|Long|Decimal|  
-|`UInteger`|Long|Long|UInteger|Long|UInteger|Long|UInteger|Long|ULong|  
-|`Long`|Long|Long|Long|Long|Long|Long|Long|Long|Decimal|  
-|`ULong`|Decimal|Decimal|ULong|Decimal|ULong|Decimal|ULong|Decimal|ULong|  
+ The following table shows the result data types for the binary `+` and `–` operators and the `*` and `Mod` operators. Note that this table is symmetric; for a given combination of operand data types, the result data type is the same regardless of the order of the operands.
+
+|                | `Boolean` | `SByte` | `Byte`   | `Short` | `UShort` | `Integer` | `UInteger` | `Long`  | `ULong` |
+| -------------- | --------- | ------- | -------- | ------- | -------- | --------- | ---------- | ------- | ------- |
+| **`Boolean`**  | Short     | SByte   | Short    | Short   | Integer  | Integer   | Long       | Long    | Decimal |
+| **`SByte`**    | SByte     | SByte   | Short    | Short   | Integer  | Integer   | Long       | Long    | Decimal |
+| **`Byte`**     | Short     | Short   | Byte     | Short   | UShort   | Integer   | UInteger   | Long    | ULong   |
+| **`Short`**    | Short     | Short   | Short    | Short   | Integer  | Integer   | Long       | Long    | Decimal |
+| **`UShort`**   | Integer   | Integer | UShort   | Integer | UShort   | Integer   | UInteger   | Long    | ULong   |
+| **`Integer`**  | Integer   | Integer | Integer  | Integer | Integer  | Integer   | Long       | Long    | Decimal |
+| **`UInteger`** | Long      | Long    | UInteger | Long    | UInteger | Long      | UInteger   | Long    | ULong   |
+| **`Long`**     | Long      | Long    | Long     | Long    | Long     | Long      | Long       | Long    | Decimal |
+| **`ULong`**    | Decimal   | Decimal | ULong    | Decimal | ULong    | Decimal   | ULong      | Decimal | ULong   |
   
 ### \\ Operator  
 
  The following table shows the result data types for the `\` operator. Note that this table is symmetric; for a given combination of operand data types, the result data type is the same regardless of the order of the operands.  
-  
-|||||||||||  
-|---|---|---|---|---|---|---|---|---|---|  
-||`Boolean`|`SByte`|`Byte`|`Short`|`UShort`|`Integer`|`UInteger`|`Long`|`ULong`|  
-|`Boolean`|Short|SByte|Short|Short|Integer|Integer|Long|Long|Long|  
-|`SByte`|SByte|SByte|Short|Short|Integer|Integer|Long|Long|Long|  
-|`Byte`|Short|Short|Byte|Short|UShort|Integer|UInteger|Long|ULong|  
-|`Short`|Short|Short|Short|Short|Integer|Integer|Long|Long|Long|  
-|`UShort`|Integer|Integer|UShort|Integer|UShort|Integer|UInteger|Long|ULong|  
-|`Integer`|Integer|Integer|Integer|Integer|Integer|Integer|Long|Long|Long|  
-|`UInteger`|Long|Long|UInteger|Long|UInteger|Long|UInteger|Long|ULong|  
-|`Long`|Long|Long|Long|Long|Long|Long|Long|Long|Long|  
-|`ULong`|Long|Long|ULong|Long|ULong|Long|ULong|Long|ULong|  
+
+|                | `Boolean` | `SByte` | `Byte`   | `Short` | `UShort` | `Integer` | `UInteger` | `Long` | `ULong` |
+| -------------- | --------- | ------- | -------- | ------- | -------- | --------- | ---------- | ------ | ------- |
+| **`Boolean`**  | Short     | SByte   | Short    | Short   | Integer  | Integer   | Long       | Long   | Long    |
+| **`SByte`**    | SByte     | SByte   | Short    | Short   | Integer  | Integer   | Long       | Long   | Long    |
+| **`Byte`**     | Short     | Short   | Byte     | Short   | UShort   | Integer   | UInteger   | Long   | ULong   |
+| **`Short`**    | Short     | Short   | Short    | Short   | Integer  | Integer   | Long       | Long   | Long    |
+| **`UShort`**   | Integer   | Integer | UShort   | Integer | UShort   | Integer   | UInteger   | Long   | ULong   |
+| **`Integer`**  | Integer   | Integer | Integer  | Integer | Integer  | Integer   | Long       | Long   | Long    |
+| **`UInteger`** | Long      | Long    | UInteger | Long    | UInteger | Long      | UInteger   | Long   | ULong   |
+| **`Long`**     | Long      | Long    | Long     | Long    | Long     | Long      | Long       | Long   | Long    |
+| **`ULong`**    | Long      | Long    | ULong    | Long    | ULong    | Long      | ULong      | Long   | ULong   |
   
  If either operand of the `\` operator is [Decimal](../data-types/decimal-data-type.md), [Single](../data-types/single-data-type.md), or [Double](../data-types/double-data-type.md), Visual Basic attempts to convert it to [Long](../data-types/long-data-type.md) before the operation, and the result data type is `Long`.  
   
@@ -150,30 +145,28 @@ Visual Basic determines the result data type of an operation based on the data t
 ### Bitwise Not Operator  
 
  The following table shows the result data types for the bitwise `Not` operator.  
-  
-|||||||||||  
-|---|---|---|---|---|---|---|---|---|---|  
-||`Boolean`|`SByte`|`Byte`|`Short`|`UShort`|`Integer`|`UInteger`|`Long`|`ULong`|  
-|`Not`|Boolean|SByte|Byte|Short|UShort|Integer|UInteger|Long|ULong|  
+
+|           | `Boolean` | `SByte` | `Byte` | `Short` | `UShort` | `Integer` | `UInteger` | `Long` | `ULong` |
+| --------- | --------- | ------- | ------ | ------- | -------- | --------- | ---------- | ------ | ------- |
+| **`Not`** | Boolean   | SByte   | Byte   | Short   | UShort   | Integer   | UInteger   | Long   | ULong   |
   
  If the operand is `Decimal`, `Single`, `Double`, or `String`, Visual Basic attempts to convert it to `Long` before the operation, and the result data type is `Long`.  
   
 ### Bitwise And, Or, and Xor Operators  
 
  The following table shows the result data types for the bitwise `And`, `Or`, and `Xor` operators. Note that this table is symmetric; for a given combination of operand data types, the result data type is the same regardless of the order of the operands.  
-  
-|||||||||||  
-|---|---|---|---|---|---|---|---|---|---|  
-||`Boolean`|`SByte`|`Byte`|`Short`|`UShort`|`Integer`|`UInteger`|`Long`|`ULong`|  
-|`Boolean`|Boolean|SByte|Short|Short|Integer|Integer|Long|Long|Long|  
-|`SByte`|SByte|SByte|Short|Short|Integer|Integer|Long|Long|Long|  
-|`Byte`|Short|Short|Byte|Short|UShort|Integer|UInteger|Long|ULong|  
-|`Short`|Short|Short|Short|Short|Integer|Integer|Long|Long|Long|  
-|`UShort`|Integer|Integer|UShort|Integer|UShort|Integer|UInteger|Long|ULong|  
-|`Integer`|Integer|Integer|Integer|Integer|Integer|Integer|Long|Long|Long|  
-|`UInteger`|Long|Long|UInteger|Long|UInteger|Long|UInteger|Long|ULong|  
-|`Long`|Long|Long|Long|Long|Long|Long|Long|Long|Long|  
-|`ULong`|Long|Long|ULong|Long|ULong|Long|ULong|Long|ULong|  
+
+|                | `Boolean` | `SByte` | `Byte`   | `Short` | `UShort` | `Integer` | `UInteger` | `Long` | `ULong` |
+| -------------- | --------- | ------- | -------- | ------- | -------- | --------- | ---------- | ------ | ------- |
+| **`Boolean`**  | Boolean   | SByte   | Short    | Short   | Integer  | Integer   | Long       | Long   | Long    |
+| **`SByte`**    | SByte     | SByte   | Short    | Short   | Integer  | Integer   | Long       | Long   | Long    |
+| **`Byte`**     | Short     | Short   | Byte     | Short   | UShort   | Integer   | UInteger   | Long   | ULong   |
+| **`Short`**    | Short     | Short   | Short    | Short   | Integer  | Integer   | Long       | Long   | Long    |
+| **`UShort`**   | Integer   | Integer | UShort   | Integer | UShort   | Integer   | UInteger   | Long   | ULong   |
+| **`Integer`**  | Integer   | Integer | Integer  | Integer | Integer  | Integer   | Long       | Long   | Long    |
+| **`UInteger`** | Long      | Long    | UInteger | Long    | UInteger | Long      | UInteger   | Long   | ULong   |
+| **`Long`**     | Long      | Long    | Long     | Long    | Long     | Long      | Long       | Long   | Long    |
+| **`ULong`**    | Long      | Long    | ULong    | Long    | ULong    | Long      | ULong      | Long   | ULong   |
   
  If an operand is `Decimal`, `Single`, `Double`, or `String`, Visual Basic attempts to convert it to `Long` before the operation, and the result data type is the same as if that operand had already been `Long`.  
   

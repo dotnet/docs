@@ -33,4 +33,4 @@ WCF supports serializing data in JSON format. This topic describes how to tell W
 
 - [AJAX Integration and JSON Support](ajax-integration-and-json-support.md)
 - [Stand-Alone JSON Serialization](stand-alone-json-serialization.md)
-- [JSON Serialization](/previous-versions/dotnet/framework/wcf/samples/json-serialization)
+- [JSON Serialization](../samples/json-serialization.md)

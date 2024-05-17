@@ -48,9 +48,9 @@ By default, Windows Communication Foundation (WCF) makes endpoints available onl
      [!code-csharp[htSoapWeb#5](../../../../samples/snippets/csharp/VS_Snippets_CFX/htsoapweb/cs/program.cs#5)]
      [!code-vb[htSoapWeb#5](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/htsoapweb/vb/program.vb#5)]
 
-## To call service operations mapped to GET in Internet Explorer
+## To call service operations mapped to GET in a browser
 
-1. Open Internet Explorer and type "`http://localhost:8000/Web/EchoWithGet?s=Hello, world!`" and press ENTER. The URL contains the base address of the service (`http://localhost:8000/`), the relative address of the endpoint (""), the service operation to call ("EchoWithGet"), and a question mark followed by a list of named parameters separated by an ampersand (&).
+1. In a web browser, browse to "`http://localhost:8000/Web/EchoWithGet?s=Hello, world!`". The URL contains the base address of the service (`http://localhost:8000/`), the relative address of the endpoint (""), the service operation to call ("EchoWithGet"), and a question mark followed by a list of named parameters separated by an ampersand (&).
 
 ## To call service operations on the Web endpoint in code
 

@@ -31,6 +31,6 @@ The scenarios for designing custom activities and for rehosting the Windows Work
 ## See also
 
 - [Extending Windows Workflow Foundation](extend.md)
-- [Designer](/previous-versions/dotnet/framework/windows-workflow-foundation/samples/designer)
-- [Custom Activity Designers](/previous-versions/dotnet/framework/windows-workflow-foundation/samples/custom-activity-designers)
-- [Designer ReHosting](/previous-versions/dotnet/framework/windows-workflow-foundation/samples/designer-rehosting)
+- [Designer](./samples/designer.md)
+- [Custom Activity Designers](./samples/custom-activity-designers.md)
+- [Designer ReHosting](./samples/designer-rehosting.md)

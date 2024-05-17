@@ -14,7 +14,7 @@ Windows Workflow Foundation (WF) provides several methods of hosting workflows. 
   
  [!code-csharp[CFX_WorkflowInvokerExample#1](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowinvokerexample/cs/program.cs#1)]  
   
- When a workflow is invoked using <xref:System.Activities.WorkflowInvoker>, the workflow executes on the calling thread and the <xref:System.Activities.WorkflowInvoker.Invoke%2A> method blocks until the workflow is complete, including any idle time. To configure a time-out interval in which the workflow must complete, use one of the <xref:System.Activities.WorkflowInvoker.Invoke%2A> overloads that takes a <xref:System.TimeSpan> parameter. In this example, a workflow is invoked twice with two different time-out intervals. The first workflow complets, but the second does not.  
+ When a workflow is invoked using <xref:System.Activities.WorkflowInvoker>, the workflow executes on the calling thread and the <xref:System.Activities.WorkflowInvoker.Invoke%2A> method blocks until the workflow is complete, including any idle time. To configure a time-out interval in which the workflow must complete, use one of the <xref:System.Activities.WorkflowInvoker.Invoke%2A> overloads that takes a <xref:System.TimeSpan> parameter. In this example, a workflow is invoked twice with two different time-out intervals. The first workflow completes, but the second does not.  
   
  [!code-csharp[CFX_WorkflowInvokerExample#50](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowinvokerexample/cs/program.cs#50)]  
   

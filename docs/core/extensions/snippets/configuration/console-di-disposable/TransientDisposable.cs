@@ -1,9 +1,6 @@
-﻿using System;
+﻿namespace ConsoleDisposable.Example;
 
-namespace ConsoleDisposable.Example
+public sealed class TransientDisposable : IDisposable
 {
-    public class TransientDisposable : IDisposable
-    {
-        public void Dispose() => Console.WriteLine($"{nameof(TransientDisposable)}.Dispose()");
-    }
+    public void Dispose() => Console.WriteLine($"{nameof(TransientDisposable)}.Dispose()");
 }

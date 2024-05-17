@@ -5,7 +5,7 @@ ms.date: 04/24/2017
 ---
 # Modules
 
-In the context of the F# language, a *module* is a grouping of F# code, such as values, types, and function values, in an F# program. Grouping code in modules helps keep related code together and helps avoid name conflicts in your program.
+In the context of F#, a *module* is a grouping of F# code, such as values, types, and function values, in an F# program. Grouping code in modules helps keep related code together and helps avoid name conflicts in your program.
 
 ## Syntax
 
@@ -128,4 +128,4 @@ This capability is also possible in [Namespaces](namespaces.md) with F# 4.1.
 
 - [F# Language Reference](index.md)
 - [Namespaces](namespaces.md)
-- [F# RFC FS-1009 - Allow mutually referential types and modules over larger scopes within files](https://github.com/fsharp/fslang-design/blob/master/FSharp-4.1/FS-1009-mutually-referential-types-and-modules-single-scope.md)
+- [F# RFC FS-1009 - Allow mutually referential types and modules over larger scopes within files](https://github.com/fsharp/fslang-design/blob/main/FSharp-4.1/FS-1009-mutually-referential-types-and-modules-single-scope.md)

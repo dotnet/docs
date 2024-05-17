@@ -8,7 +8,7 @@ ms.assetid: e80d9734-b43a-4d21-a250-74400330a4c0
 
 [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] provides several system-provided activities for controlling execution and branching within a Flowchart.  
   
-|||  
+| Activity type | Description |  
 |-|-|  
 |<xref:System.Activities.Statements.Flowchart>|Executes contained activities using the familiar Flowchart paradigm.|  
 |<xref:System.Activities.Statements.FlowDecision>|A specialized <xref:System.Activities.Statements.FlowNode> that provides the ability to model a conditional node with two outcomes.|  

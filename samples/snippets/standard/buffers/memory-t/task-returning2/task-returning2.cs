@@ -11,7 +11,7 @@ public class Example
     {
         // Run in the background so that we don't block the main thread while performing IO.
         return Task.Run(() => {
-                    StreamWriter sw = File.AppendText(@".\input-numbers.dat");
+            StreamWriter sw = File.AppendText(@".\input-numbers.dat");
             sw.WriteLine(message);
             sw.Flush();
         });
@@ -27,7 +27,12 @@ public class Example
             var span = memory.Span;
             while (true)
             {
-                int value = Int32.Parse(Console.ReadLine());
+                string? s = Console.ReadLine();
+
+                if (s is null)
+                    return;
+
+                int value = Int32.Parse(s);
                 if (value < 0)
                     return;
 

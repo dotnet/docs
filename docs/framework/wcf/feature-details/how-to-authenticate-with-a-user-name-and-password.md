@@ -8,7 +8,7 @@ ms.assetid: a5415be2-0ef3-464c-9f76-c255cb8165a4
 ---
 # How to: Authenticate with a User Name and Password
 
-This topic demonstrates how to enable a Windows Communication Foundation (WCF) service to authenticate a client with a Windows domain username and password. It assumes you have a working, self-hosted WCF service. For an example of creating a basic self-hosted WCF service see, [Getting Started Tutorial](../getting-started-tutorial.md). This topic assumes the service is configured in code. If you would like to see an example of configuring a similar service using a configuration file, see [Message Security User Name](/previous-versions/dotnet/framework/wcf/samples/message-security-user-name).
+This topic demonstrates how to enable a Windows Communication Foundation (WCF) service to authenticate a client with a Windows domain username and password. It assumes you have a working, self-hosted WCF service. For an example of creating a basic self-hosted WCF service see, [Getting Started Tutorial](../getting-started-tutorial.md). This topic assumes the service is configured in code. If you would like to see an example of configuring a similar service using a configuration file, see [Message Security User Name](../samples/message-security-user-name.md).
 
 To configure a service to authenticate its clients using Windows Domain username and passwords use the <xref:System.ServiceModel.WSHttpBinding> and set its `Security.Mode` property to `Message`. In addition you must specify an X509 certificate that will be used to encrypt the username and password as they are sent from the client to the service.
 
@@ -27,7 +27,7 @@ On the client, you must prompt the user for the username and password and specif
     // ...
     ```
 
-2. Specify the server certificate used to encrypt the username and password information sent over the wire. This code should immediately follow the code above. The following example uses the certificate that is created by the setup.bat file from the [Message Security User Name](/previous-versions/dotnet/framework/wcf/samples/message-security-user-name) sample:
+2. Specify the server certificate used to encrypt the username and password information sent over the wire. This code should immediately follow the code above. The following example uses the certificate that is created by the setup.bat file from the [Message Security User Name](../samples/message-security-user-name.md) sample:
 
     ```csharp
     // ...

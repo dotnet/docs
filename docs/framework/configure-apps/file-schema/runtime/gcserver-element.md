@@ -62,7 +62,7 @@ For single-processor computers, the default workstation garbage collection shoul
 This element can be used only in the application configuration file; it is ignored if it is in the machine configuration file.
 
 > [!NOTE]
-> In the .NET Framework 4 and earlier versions, concurrent garbage collection is not available when server garbage collection is enabled. Starting with the .NET Framework 4.5, server garbage collection is concurrent. To use non-concurrent server garbage collection, set the **gcServer** element to `true` and the [gcConcurrent element](gcconcurrent-element.md) to `false`.
+> In the .NET Framework 4 and earlier versions, concurrent garbage collection is not available when server garbage collection is enabled. Starting with .NET Framework 4.5, server garbage collection is concurrent. To use non-concurrent server garbage collection, set the **gcServer** element to `true` and the [gcConcurrent element](gcconcurrent-element.md) to `false`.
 
 Starting with .NET Framework 4.6.2, you can also use the following elements to configure server GC:
 
@@ -86,6 +86,7 @@ The following example enables server garbage collection:
 
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
 - <xref:System.Runtime.GCSettings.IsServerGC%2A?displayProperty=nameWithType>
 - [Runtime Settings Schema](index.md)
 - [Configuration File Schema](../index.md)

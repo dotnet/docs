@@ -11,6 +11,8 @@ ms.assetid: 0a632bc7-9b03-44ee-8842-c82f88672a45
 ---
 # Abstractions (Abstract Types and Interfaces)
 
+[!INCLUDE [not-current](includes/not-current.md)]
+
 An abstraction is a type that describes a contract but does not provide a full implementation of the contract. Abstractions are usually implemented as abstract classes or interfaces, and they come with a well-defined set of reference documentation describing the required semantics of the types implementing the contract. Some of the most important abstractions in the .NET Framework include <xref:System.IO.Stream>, <xref:System.Collections.Generic.IEnumerable%601>, and <xref:System.Object>.
 
  You can extend frameworks by implementing a concrete type that supports the contract of an abstraction and using this concrete type with framework APIs consuming (operating on) the abstraction.

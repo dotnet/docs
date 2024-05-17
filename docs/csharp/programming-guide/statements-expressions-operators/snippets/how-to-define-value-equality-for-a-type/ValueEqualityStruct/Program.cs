@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ValueEqualityStruct
+﻿namespace ValueEqualityStruct
 {
     struct TwoDPoint : IEquatable<TwoDPoint>
     {
@@ -18,7 +16,7 @@ namespace ValueEqualityStruct
             Y = y;
         }
 
-        public override bool Equals(object obj) => obj is TwoDPoint other && this.Equals(other);
+        public override bool Equals(object? obj) => obj is TwoDPoint other && this.Equals(other);
 
         public bool Equals(TwoDPoint p) => X == p.X && Y == p.Y;
 

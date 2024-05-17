@@ -3,9 +3,8 @@ title: Order unit tests
 description: Learn how to order unit tests with .NET Core.
 author: IEvangelist
 ms.author: dapine
-ms.date: 05/18/2020
+ms.date: 03/17/2023
 zone_pivot_groups: unit-testing-framework-set-one
-recommendations: false
 ---
 
 # Order unit tests
@@ -15,7 +14,7 @@ Occasionally, you may want to have unit tests run in a specific order. Ideally, 
 If you prefer to browse the source code, see the [order .NET Core unit tests](/samples/dotnet/samples/order-unit-tests-cs) sample repository.
 
 > [!TIP]
-> In addition to the ordering capabilities outlined in this article, consider [creating custom playlists with Visual Studio](/visualstudio/test/run-unit-tests-with-test-explorer?view=vs-2019#create-custom-playlists) as an alternative.
+> In addition to the ordering capabilities outlined in this article, consider [creating custom playlists with Visual Studio](/visualstudio/test/run-unit-tests-with-test-explorer#create-custom-playlists) as an alternative.
 
 :::zone pivot="mstest"
 
@@ -24,7 +23,7 @@ If you prefer to browse the source code, see the [order .NET Core unit tests](/s
 With MSTest, tests are automatically ordered by their test name.
 
 > [!NOTE]
-> A test named `Test14` will run before `Test2` even though the number  `2` is less than `14`. This is because, test name ordering uses the text name of the test.
+> A test named `Test14` will run before `Test2` even though the number  `2` is less than `14`. This is because test name ordering uses the text name of the test.
 
 :::code language="csharp" source="snippets/order-unit-tests/csharp/MSTest.Project/ByAlphabeticalOrder.cs":::
 
@@ -72,7 +71,7 @@ Then in a test class you set the test case order with the `TestCaseOrdererAttrib
 
 ## Order by priority
 
-To order tests explicitly, NUnit provides an [`OrderAttribute`](https://github.com/nunit/docs/wiki/Order-Attribute). Tests with this attribute are started before tests without. The order value is used to determined the order to run the unit tests.
+To order tests explicitly, NUnit provides an [`OrderAttribute`](https://docs.nunit.org/articles/nunit/writing-tests/attributes/order). Tests with this attribute are started before tests without. The order value is used to determine the order to run the unit tests.
 
 :::code language="csharp" source="snippets/order-unit-tests/csharp/NUnit.TestProject/ByOrder.cs":::
 

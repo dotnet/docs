@@ -1,28 +1,24 @@
 ﻿using System.Text.Json;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 
-namespace Console.ExampleFormatters.Json
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+
+builder.Logging.AddJsonConsole(options =>
 {
-    class Program
+    options.IncludeScopes = false;
+    options.TimestampFormat = "HH:mm:ss ";
+    options.JsonWriterOptions = new JsonWriterOptions
     {
-        static Task Main(string[] args) =>
-            CreateHostBuilder(args).Build().RunAsync();
+        Indented = true
+    };
+});
 
-        static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
-                .ConfigureWebHostDefaults(builder => builder.UseStartup<Startup>())
-                .ConfigureLogging(builder =>
-                    builder.AddJsonConsole(options =>
-                    {
-                        options.IncludeScopes = false;
-                        options.TimestampFormat = "hh:mm:ss ";
-                        options.JsonWriterOptions = new JsonWriterOptions
-                        {
-                            Indented = true
-                        };
-                    }));
-    }
-}
+using IHost host = builder.Build();
+
+var logger =
+    host.Services
+        .GetRequiredService<ILoggerFactory>()
+        .CreateLogger<Program>();
+
+logger.LogInformation("Hello .NET friends!");
+
+await host.RunAsync();

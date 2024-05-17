@@ -71,6 +71,7 @@ Specifies whether the runtime searches for assemblies in directories specified b
   
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
 - [Runtime Settings Schema](index.md)
 - [Configuration File Schema](../index.md)
 - [How to: Locate Assemblies by Using DEVPATH](../../how-to-locate-assemblies-by-using-devpath.md)

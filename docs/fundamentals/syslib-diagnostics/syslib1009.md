@@ -2,6 +2,8 @@
 title: SYSLIB1009 warning
 description: Learn about the diagnostic that generates compile-time warning SYSLIB1009.
 ms.date: 05/07/2021
+f1_keywords:
+  - syslib1009
 ---
 
 # SYSLIB1009: Logging methods must be static

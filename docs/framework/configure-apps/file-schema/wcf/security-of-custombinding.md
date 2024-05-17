@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: <security> of <customBinding>"
 title: "<security> of <customBinding>"
-ms.date: "03/30/2017"
+ms.date: "10/31/2023"
 ms.assetid: 243a5148-bbd1-447f-a8a5-6e7792c0a3f1
 ---
 # \<security> of \<customBinding>
@@ -26,7 +26,6 @@ Specifies the security options for a custom binding.
           keyEntropyMode="ClientEntropy/ServerEntropy/CombinedEntropy"
           messageProtectionOrder="SignBeforeEncrypt/SignBeforeEncryptAndEncryptSignature/EncryptBeforeSign"
           messageSecurityVersion="WSSecurityJan2004/WSSecurityXXX2005"
-          requireDerivedKeys="Boolean"
           requireSecurityContextCancellation="Boolean"
           requireSignatureConfirmation="Boolean"
           securityHeaderLayout="Strict/Lax/LaxTimestampFirst/LaxTimestampLast">
@@ -75,7 +74,7 @@ Specifies the security options for a custom binding.
 |TripleDes|Use TripleDes encryption,  Sha1 for message digest, Rsa-oaep-mgf1p for key wrap.|  
 |Basic128Rsa15|Use Aes128 for message encryption, Sha1 for message digest and Rsa15 for key wrap.|  
 |TripleDesRsa15|Use TripleDes encryption, Sha1 for message digest and Rsa15 for key wrap.|  
-|Basic128Sha256|Use Aes256 for message encryption, Sha256 for message digest and Rsa-oaep-mgf1p for key wrap.|  
+|Basic128Sha256|Use Aes128 for message encryption, Sha256 for message digest and Rsa-oaep-mgf1p for key wrap.|  
 |Basic192Sha256|Use Aes192 for message encryption, Sha256 for message digest and Rsa-oaep-mgf1p for key wrap.|  
 |Basic256Sha256|Use Aes256 for message encryption, Sha256 for message digest and Rsa-oaep-mgf1p for key wrap.|  
 |TripleDesSha256|Use TripleDes for message encryption, Sha256 for message digest and Rsa-oaep-mgf1p for key wrap.|  
@@ -109,7 +108,7 @@ Specifies the security options for a custom binding.
   
  The service configuration defines a custom binding that supports TCP communication protected using TLS/SSL protocol, and Windows message security. The custom binding uses a service certificate to authenticate the service on the transport level and to protect the messages during the transmission between client and service. This is accomplished by the [\<sslStreamSecurity>](sslstreamsecurity.md) binding element. The service's certificate is configured using a service behavior.  
   
- Additionally, the custom binding uses message security with Windows credential type - this is the default credential type. This is accomplished by the [security](security-of-custombinding.md) binding element. Both client and service are authenticated using message-level security if Kerberos authentication mechanism is available. If the Kerberos authentication mechanism is not available, NTLM authentication is used. NTLM authenticates the client to the service but does not authenticate service to the client. The [security](security-of-custombinding.md) binding element is configured to use `SecureConversation` authenticationType, which results in the creation of a security session on both the client and the service. This is required to enable the service's duplex contract to work. For more information on running this example, see [Custom Binding Security](/previous-versions/dotnet/framework/wcf/samples/custom-binding-security).  
+ Additionally, the custom binding uses message security with Windows credential type - this is the default credential type. This is accomplished by the [security](security-of-custombinding.md) binding element. Both client and service are authenticated using message-level security if Kerberos authentication mechanism is available. If the Kerberos authentication mechanism is not available, NTLM authentication is used. NTLM authenticates the client to the service but does not authenticate service to the client. The [security](security-of-custombinding.md) binding element is configured to use `SecureConversation` authenticationType, which results in the creation of a security session on both the client and the service. This is required to enable the service's duplex contract to work. For more information on running this example, see [Custom Binding Security](../../../wcf/samples/custom-binding-security.md).  
   
 ```xml  
 <configuration>
@@ -176,4 +175,4 @@ Specifies the security options for a custom binding.
 - [Custom Bindings](../../../wcf/extending/custom-bindings.md)
 - [\<customBinding>](custombinding.md)
 - [How to: Create a Custom Binding Using the SecurityBindingElement](../../../wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)
-- [Custom Binding Security](/previous-versions/dotnet/framework/wcf/samples/custom-binding-security)
+- [Custom Binding Security](../../../wcf/samples/custom-binding-security.md)

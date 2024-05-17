@@ -1,7 +1,7 @@
 ﻿
 Imports System.Net.Http
 
-' Example that demonstrates Asynchronous Progamming with Async and Await.
+' Example that demonstrates Asynchronous Programming with Async and Await.
 ' It uses HttpClient.GetStringAsync to download the contents of a website.
 ' Sample Output:
 ' Working . . . . . . .
@@ -23,21 +23,21 @@ Class MainWindow
 
 
     ' Three things to note about writing an Async Function:
-    '  - The function has an Async modifier. 
+    '  - The function has an Async modifier.
     '  - Its return type is Task or Task(Of T). (See "Return Types" section.)
     '  - As a matter of convention, its name ends in "Async".
     Async Function AccessTheWebAsync() As Task(Of Integer)
 
         Using client As New HttpClient()
 
-            ' Call and await separately. 
+            ' Call and await separately.
             '  - AccessTheWebAsync can do other things while GetStringAsync is also running.
-            '  - getStringTask stores the task we get from the call to GetStringAsync. 
+            '  - getStringTask stores the task we get from the call to GetStringAsync.
             '  - Task(Of String) means it is a task which returns a String when it is done.
             Dim getStringTask As Task(Of String) =
-                client.GetStringAsync("https://docs.microsoft.com/dotnet")
+                client.GetStringAsync("https://learn.microsoft.com/dotnet")
 
-            ' You can do other work here that doesn't rely on the string from GetStringAsync. 
+            ' You can do other work here that doesn't rely on the string from GetStringAsync.
             DoIndependentWork()
 
             ' The Await operator suspends AccessTheWebAsync.

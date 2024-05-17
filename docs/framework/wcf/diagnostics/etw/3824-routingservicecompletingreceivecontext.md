@@ -6,10 +6,10 @@ ms.assetid: b716f0a1-c2ce-4e7c-b2d6-405a488c6591
 ---
 # 3824 - RoutingServiceCompletingReceiveContext
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3824|  
 |Keywords|RoutingServices|  
 |Level|Verbose|  

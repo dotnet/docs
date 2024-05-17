@@ -4,17 +4,17 @@ description: Learn how to build full-stack web apps with .NET using Blazor and .
 author: danroth27
 ms.author: daroth
 no-loc: [Blazor, WebAssembly]
-ms.date: 02/02/2021
+ms.date: 01/10/2022
 ---
 # Blazor for ASP.NET Web Forms Developers
 
-![Screenshot that shows the Serverless Apps e-book cover.](./media/index/blazor-for-aspnet-web-forms-developers.png)
+![Blazor for ASP.NET Web Forms Developers  e-book cover.](./media/index/blazor-for-aspnet-web-forms-developers.png)
 
 > DOWNLOAD available at: <https://aka.ms/blazor-ebook>
 
-**EDITION v1.0**
+**EDITION v8.0** - Updated to .NET 8
 
-Refer [changelog](https://aka.ms/blazor-ebook-changelog) for the book updates and community contributions.
+Refer to [changelog](https://aka.ms/blazor-ebook-changelog) for the book updates and community contributions.
 
 PUBLISHED BY
 
@@ -26,7 +26,7 @@ One Microsoft Way
 
 Redmond, Washington 98052-6399
 
-Copyright © 2021 by Microsoft Corporation
+Copyright &copy; 2023 by Microsoft Corporation
 
 All rights reserved. No part of the contents of this book may be reproduced or transmitted in any form or by any means without the written permission of the publisher.
 
@@ -50,7 +50,7 @@ Authors:
 
 > **[Scott Addie](https://github.com/scottaddie)**, Senior Content Developer, Microsoft Corp.
 
-> **[Steve "ardalis" Smith](https://ardalis.com)**, Software Architect and Trainer, Ardalis Services LLC
+> **[Steve "@ardalis" Smith](https://github.com/ardalis)**, Software Architect and Trainer, NimblePros.com
 
 ## Introduction
 
@@ -76,9 +76,7 @@ This book is an introduction to Blazor, not a comprehensive migration guide. Whi
 
 You can find the official Blazor home page and documentation at <https://blazor.net>.
 
-## Send your feedback
-
-This book and related samples are constantly evolving, so your feedback is welcomed! If you have comments about how this book can be improved, use the feedback section at the bottom of any page built on [GitHub issues](https://github.com/dotnet/docs/issues).
+[!INCLUDE [feedback](../includes/feedback.md)]
 
 >[!div class="step-by-step"]
 >[Next](introduction.md)

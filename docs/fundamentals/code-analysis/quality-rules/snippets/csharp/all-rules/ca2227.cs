@@ -11,7 +11,7 @@ namespace ca2227
             get;
 
             // This set accessor violates rule CA2227.
-            // To fix the code, remove this set accessor.
+            // To fix the code, remove this set accessor or change it to init.
             set;
         }
 

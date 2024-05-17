@@ -1,0 +1,108 @@
+items:
+  - name: Framework design guidelines
+    items:
+    - name: Overview
+      href: index.md
+    - name: Naming guidelines
+      href: naming-guidelines.md
+      items:
+      - name: Capitalization conventions
+        href: capitalization-conventions.md
+      - name: General naming conventions
+        href: general-naming-conventions.md
+      - name: Names of assemblies and DLLs
+        href: names-of-assemblies-and-dlls.md
+      - name: Names of namespaces
+        href: names-of-namespaces.md
+      - name: Names of classes, structs, and interfaces
+        href: names-of-classes-structs-and-interfaces.md
+      - name: Names of type members
+        href: names-of-type-members.md
+      - name: Naming parameters
+        href: naming-parameters.md
+      - name: Naming resources
+        href: naming-resources.md
+    - name: Type design guidelines
+      href: type.md
+      items:
+      - name: Choose between class and struct
+        href: choosing-between-class-and-struct.md
+      - name: Abstract class design
+        href: abstract-class.md
+      - name: Static class design
+        href: static-class.md
+      - name: Interface design
+        href: interface.md
+      - name: Struct design
+        href: struct.md
+      - name: Enum design
+        href: enum.md
+      - name: Nested types
+        href: nested-types.md
+    - name: Member design guidelines
+      href: member.md
+      items:
+      - name: Member overloading
+        href: member-overloading.md
+      - name: Property design
+        href: property.md
+      - name: Constructor design
+        href: constructor.md
+      - name: Event design
+        href: event.md
+      - name: Field design
+        href: field.md
+      - name: Extension methods
+        href: extension-methods.md
+      - name: Operator overloads
+        href: operator-overloads.md
+      - name: Parameter design
+        href: parameter-design.md
+    - name: Design for extensibility
+      href: designing-for-extensibility.md
+      items:
+      - name: Unsealed classes
+        href: unsealed-classes.md
+      - name: Protected members
+        href: protected-members.md
+      - name: Events and callbacks
+        href: events-and-callbacks.md
+      - name: Virtual members
+        href: virtual-members.md
+      - name: Abstractions (abstract types and interfaces)
+        href: abstractions-abstract-types-and-interfaces.md
+      - name: Base classes for implementing abstractions
+        href: base-classes-for-implementing-abstractions.md
+      - name: Sealing
+        href: sealing.md
+    - name: Exception design guidelines
+      href: exceptions.md
+      items:
+      - name: Exception throwing
+        href: exception-throwing.md
+      - name: Use standard exception types
+        href: using-standard-exception-types.md
+      - name: Exceptions and performance
+        href: exceptions-and-performance.md
+    - name: Usage guidelines
+      href: usage-guidelines.md
+      items:
+      - name: Arrays
+        href: arrays.md
+      - name: Attributes
+        href: attributes.md
+      - name: Collections
+        href: guidelines-for-collections.md
+      - name: Serialization
+        href: serialization.md
+      - name: System.Xml usage
+        href: system-xml-usage.md
+      - name: Equality operators
+        href: equality-operators.md
+    - name: Common design patterns
+      href: common-design-patterns.md
+      items:
+      - name: Dependency properties
+        href: dependency-properties.md
+      - name: Dispose pattern
+        href: dispose-pattern.md

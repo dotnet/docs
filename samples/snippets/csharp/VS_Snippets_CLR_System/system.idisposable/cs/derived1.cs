@@ -2,29 +2,27 @@
 using System;
 using System.Runtime.InteropServices;
 
-class DerivedClassWithSafeHandle : BaseClassWithSafeHandle
+public class DerivedClassWithSafeHandle : BaseClassWithSafeHandle
 {
     // To detect redundant calls
-    private bool _disposed = false;
+    private bool _disposedValue;
 
     // Instantiate a SafeHandle instance.
-    private SafeHandle _safeHandle = new SafeFileHandle(IntPtr.Zero, true);
+    private SafeHandle? _safeHandle = new SafeFileHandle(IntPtr.Zero, true);
 
     // Protected implementation of Dispose pattern.
     protected override void Dispose(bool disposing)
     {
-        if (_disposed)
+        if (!_disposedValue)
         {
-            return;
-        }
+            if (disposing)
+            {
+                _safeHandle?.Dispose();
+                _safeHandle = null;
+            }
 
-        if (disposing)
-        {
-           // Dispose managed state (managed objects).
-            _safeHandle?.Dispose();
+            _disposedValue = true;
         }
-
-        _disposed = true;
 
         // Call base class implementation.
         base.Dispose(disposing);

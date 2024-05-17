@@ -7,9 +7,17 @@ f1_keywords:
 ---
 # Interactive programming with F\#
 
-F# Interactive (dotnet fsi) is used to run F# code interactively at the console, or to execute F# scripts. In other words, F# interactive executes a REPL (Read, Evaluate, Print Loop) for the F# language.
+F# Interactive (dotnet fsi) is used to run F# code interactively at the console, or to execute F# scripts. In other words, F# interactive executes a REPL (Read, Evaluate, Print Loop) for F#.
 
 To run F# Interactive from the console, run `dotnet fsi`. You will find `dotnet fsi` in any .NET SDK.
+
+> [!NOTE]
+> If you intend to use F# interactive under .NET Framework runtime, you'll need the [Visual Studio Build Tools](https://visualstudio.microsoft.com/downloads/?q=build+tools) or an edition of Visual Studio installed, and invoke the `FsiAnyCPU.exe` command from a "Developer Command Prompt" or simply make `FsiAnyCPU.exe` available in the `PATH` environment variable, in place of `dotnet fsi` command line.
+>
+> Tooling supports defining version F# Interactive runtime:
+>
+> * In Visual Studio: In the menu bar, **Tools** / **Options** then **F# Tools** / **F# Interactive**, and adjust **Use .NET Core Scripting**.
+> * In Visual Studio Code (ionide extension): In the command palette, **Preferences: Open User Settings**, then **Extensions** / **F#** / **FSharp: Fsi Sdk File Path**.
 
 For information about available command-line options, see [F# Interactive Options](../../language-reference/fsharp-interactive-options.md).
 
@@ -85,9 +93,9 @@ F# scripting is natively supported in [Visual Studio](../../get-started/get-star
 ## Referencing packages in F# Interactive
 
 > [!NOTE]
-> Package management system is extensible, read more [about other extensions](https://fsharp.github.io/FSharp.Compiler.Service/reference/Microsoft.DotNet.DependencyManager.html).
+> Package management system is extensible, see more about the [plugins and extension mechanism](https://aka.ms/dotnetdepmanager).
 
-F# Interactive supports referencing NuGet packages with the `#r "nuget:"` syntax and an optional version:
+Since 5.0 release of the language, F# Interactive supports referencing packages through an extensibility mechanism; out of the box, it can reference NuGet packages with the `#r "nuget:"` syntax and an optional version:
 
 ```fsharp
 #r "nuget: Newtonsoft.Json"
@@ -120,8 +128,8 @@ printfn $"{f (dsharp.tensor 1.2)}"
 You can also specify a package source with the `#i` command. The following example specifies a remote and a local source:
 
 ```fsharp
-#i "nuget:https://my-remote-package-source/index.json"
-#i @"path-to-my-local-source"
+#i "nuget: https://my-remote-package-source/index.json"
+#i """nuget: C:\path\to\my\local\source"""
 ```
 
 This will tell the resolution engine under the covers to also take into account the remote and/or local sources added to a script.
@@ -130,8 +138,9 @@ You can specify as many package references as you like in a script.
 
 > [!NOTE]
 > There's currently a limitation for scripts that use framework references (e.g.`Microsoft.NET.Sdk.Web` or  `Microsoft.NET.Sdk.WindowsDesktop`). Packages like Saturn, Giraffe, WinForms are not available. This is being tracked in issue [#9417](https://github.com/dotnet/fsharp/issues/9417).
-
-For more information, see [package management extensibility and other extensions](https://fsharp.github.io/FSharp.Compiler.Service/reference/Microsoft.DotNet.DependencyManager.html).
+> WinForms, still works in the .NET Framework version of F# Interactive.
+>
+> To load additional extensions beside those shipped with the SDK and/or with your tooling, use the `--compilertool:<extensionsfolderpath>` flag as argument for F# Interactive session (or in your tooling settings).
 
 ## Referencing assemblies on disk with F# interactive
 
@@ -143,7 +152,7 @@ module MyAssembly
 let myFunction x y = x + 2 * y
 ```
 
-One compiled, you can reference it in a file called `Script.fsx` like so:
+Once compiled, you can reference it in a file called `Script.fsx` like so:
 
 ```fsharp
 #r "path/to/MyAssembly.dll"
@@ -179,8 +188,6 @@ open Script1
 printfn $"%d{square 12}"
 ```
 
-Note that the `open Script1` declaration is required. This is because constructs in an F# script are compiled into a top-level module that is the name of the script file it is in.
-
 You can evaluate `Script2.fsx` like so:
 
 ```console
@@ -189,6 +196,13 @@ dotnet fsi Script2.fsx
 ```
 
 You can specify as many `#load` directives as you like in a script.
+
+> [!NOTE]
+> The `open Script1` declaration is required. This is because constructs in an F# script are compiled into a top-level module that is the name of the script file it is in. If the script file has a lowercase name such as `script3.fsx` then the implied module name is automatically capitalized, and you will need to use `open Script3`. If you would like a loadable-script to define constructs in a specific namespace of module you can include a namespace of module declaration, for example:
+>
+> ```fsharp
+> module MyScriptLibrary
+> ```
 
 ## Using the `fsi` object in F# code
 
@@ -205,7 +219,7 @@ for arg in args do
 
 When evaluated, it prints all arguments. The first argument is always the name of the script that is evaluated:
 
-```dotnet
+```dotnetcli
 dotnet fsi Script1.fsx hello world from fsi
 Script1.fsx
 hello
@@ -223,12 +237,15 @@ The `#r` and `#load` directives seen previously are only available in F# Interac
 |Directive|Description|
 |---------|-----------|
 |`#r "nuget:..."`|References a package from NuGet|
+|`#r "extname:..."`|Reference a package from `extname` extension[^1] (such as `paket`)|
 |`#r "assembly-name.dll"`|References an assembly on disk|
 |`#load "file-name.fsx"`|Reads a source file, compiles it, and runs it.|
 |`#help`|Displays information about available directives.|
 |`#I`|Specifies an assembly search path in quotation marks.|
 |`#quit`|Terminates an F# Interactive session.|
 |`#time "on"` or `#time "off"`|By itself, `#time` toggles whether to display performance information. When it is `"on"`, F# Interactive measures real time, CPU time, and garbage collection information for each section of code that is interpreted and executed.|
+
+[^1]: More about [F# Interactive extensions](https://aka.ms/dotnetdepmanager).
 
 When you specify files or paths in F# Interactive, a string literal is expected. Therefore, files and paths must be in quotation marks, and the usual escape characters apply. You can use the `@` character to cause F# Interactive to interpret a string that contains a path as a verbatim string. This causes F# Interactive to ignore any escape characters.
 

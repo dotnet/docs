@@ -1,8 +1,8 @@
-### Fixed a hang when ListBox contains duplicate value-types
+### Fixed a issue when ListBox stops responding if it contains duplicate value-types
 
 #### Details
 
-Fixed a problem where a virtualizing<xref:System.Windows.Controls.ItemsControl> can hang during scrolling when its Items collection contains duplicate value-typed objects.
+Fixed a problem where a virtualizing <xref:System.Windows.Controls.ItemsControl> can stop responding during scrolling when its `Items` collection contains duplicate value-typed objects.
 
 | Name    | Value       |
 |:--------|:------------|

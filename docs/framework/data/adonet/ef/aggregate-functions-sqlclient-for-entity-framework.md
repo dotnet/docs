@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Aggregate Functions (SqlClient for Entity Framework)"
 title: "Aggregate Functions (SqlClient for Entity Framework)"
+ms.topic: reference
 ms.date: "03/30/2017"
 ms.assetid: 03303f01-b591-4efc-9875-f9c608edff0b
 ---
@@ -50,10 +51,14 @@ Returns the number of items in a collection as an `Int32`.
 
 A Collection\<T>, where T is one of the following types:
 
-|   |   |   |   |
-|---|---|---|---|
-|`Boolean`|`Double`|`DateTime`|`DateTimeOffset`|
-|`Time`|`String`|`Binary`|`Guid` (not returned in SQL Server 2000)|
+- `Boolean`
+- `Double`
+- `DateTime`
+- `DateTimeOffset`
+- `Time`
+- `String`
+- `Binary`
+- `Guid` (not returned in SQL Server 2000)
 
 **Return Value**
 
@@ -71,10 +76,14 @@ Returns the number of items in a collection as a `bigint`.
 
  A Collection(T), where T is one of the following types:
 
- |   |   |   |   |
-|---|---|---|---|
-|`Boolean`|`Double`|`DateTime`|`DateTimeOffset`|
-|`Time`|`String`|`Binary`|`Guid` (not returned in SQL Server 2000)|
+- `Boolean`
+- `Double`
+- `DateTime`
+- `DateTimeOffset`
+- `Time`
+- `String`
+- `Binary`
+- `Guid` (not returned in SQL Server 2000)
 
 **Return Value**
 
@@ -92,10 +101,13 @@ Returns the maximum value the collection.
 
 A Collection(T), where T is one of the following types:
 
-|   |   |   |   |
-|---|---|---|---|
-|`Boolean`|`Double`|`DateTime`|`DateTimeOffset`|
-|`Time`|`String`|`Binary`||
+- `Boolean`
+- `Double`
+- `DateTime`
+- `DateTimeOffset`
+- `Time`
+- `String`
+- `Binary`
 
 **Return Value**
 
@@ -113,10 +125,13 @@ Returns the minimum value in a collection.
 
 A Collection(T), where T is one of the following types:
 
-|   |   |   |   |
-|---|---|---|---|
-|`Boolean`|`Double`|`DateTime`|`DateTimeOffset`|
-|`Time`|`String`|`Binary`||
+- `Boolean`
+- `Double`
+- `DateTime`
+- `DateTimeOffset`
+- `Time`
+- `String`
+- `Binary`
 
 **Return Value**
 

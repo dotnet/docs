@@ -6,10 +6,10 @@ ms.assetid: 322efeb2-8081-4d3c-ab92-31d5b236f4d3
 ---
 # 5403 - TokenValidationSuccess
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|5403|  
 |Keywords|Security|  
 |Level|Verbose|  

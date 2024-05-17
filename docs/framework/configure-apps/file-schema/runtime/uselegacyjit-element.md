@@ -51,7 +51,7 @@ None
   
 ## Remarks  
 
-Starting with the .NET Framework 4.6, the common language runtime uses a new 64-bit compiler for Just-In-Time (JIT) compilation by default. In some cases, this may result in a difference in behavior from application code that was JIT-compiled by the previous version of the 64-bit JIT compiler. By setting the `enabled` attribute of the `<useLegacyJit>` element to `1`, you can disable the new 64-bit JIT compiler and instead compile your app using the legacy 64-bit JIT compiler.  
+Starting with .NET Framework 4.6, the common language runtime uses a new 64-bit compiler for Just-In-Time (JIT) compilation by default. In some cases, this may result in a difference in behavior from application code that was JIT-compiled by the previous version of the 64-bit JIT compiler. By setting the `enabled` attribute of the `<useLegacyJit>` element to `1`, you can disable the new 64-bit JIT compiler and instead compile your app using the legacy 64-bit JIT compiler.  
   
 > [!NOTE]
 > The `<useLegacyJit>` element affects 64-bit JIT compilation only. Compilation with the 32-bit JIT compiler is unaffected.  
@@ -89,6 +89,7 @@ The following configuration file disables compilation with the new 64-bit JIT co
   
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
 - [\<runtime> Element](runtime-element.md)
 - [\<configuration> Element](../configuration-element.md)
 - [Mitigation: New 64-bit JIT Compiler](../../../migration-guide/mitigation-new-64-bit-jit-compiler.md)

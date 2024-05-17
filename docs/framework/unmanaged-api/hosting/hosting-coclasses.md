@@ -18,7 +18,7 @@ This section describes the unmanaged API coclasses that the hosting API uses.
  Provides interfaces for managing code execution by the runtime.  
   
  [ComCallUnmarshal Coclass](comcallunmarshal-coclass.md)  
- Provides interfaces for managing the marshaling of interface pointers.  
+ Provides interfaces for managing the marshalling of interface pointers.  
   
  [CorRuntimeHost Coclass](corruntimehost-coclass.md)  
  Provides interfaces for managing applications that are being executed by the common language runtime.  

@@ -1,13 +1,13 @@
 ---
 title: .NET Microservices. Architecture for Containerized .NET Applications
 description: .NET Microservices Architecture for Containerized .NET Applications | Microservices are modular and independently deployable services. Docker containers (for Linux and Windows) simplify deployment and testing by bundling a service and its dependencies into a single unit, which is then run in an isolated environment.
-ms.date: 02/02/2021
+ms.date: 01/10/2022
 ---
 # .NET Microservices: Architecture for Containerized .NET Applications
 
 ![Book cover](./media/cover-large.png)
 
-**EDITION v5.0** - Updated to ASP.NET Core 5.0
+**EDITION v7.0** - Updated to ASP.NET Core 7.0
 
 Refer [changelog](https://aka.ms/MicroservicesEbookChangelog) for the book updates and community contributions.
 
@@ -21,7 +21,7 @@ To make it easier to get started, the guide focuses on a reference containerized
 
 - Clone/Fork the reference application [eShopOnContainers on GitHub](https://github.com/dotnet-architecture/eShopOnContainers)
 
-- Watch the [introductory video on Channel 9](https://aka.ms/microservices-video)
+- Watch the [introductory video](https://aka.ms/microservices-video)
 
 - Get to know the [Microservices Architecture](https://aka.ms/MicroservicesArchitecture) right away
 
@@ -29,7 +29,7 @@ To make it easier to get started, the guide focuses on a reference containerized
 
 Enterprises are increasingly realizing cost savings, solving deployment problems, and improving DevOps and production operations by using containers. Microsoft has been releasing container innovations for Windows and Linux by creating products like Azure Kubernetes Service and Azure Service Fabric, and by partnering with industry leaders like Docker, Mesosphere, and Kubernetes. These products deliver container solutions that help companies build and deploy applications at cloud speed and scale, whatever their choice of platform or tools.
 
-Docker is becoming the de facto standard in the container industry, supported by the most significant vendors in the Windows and Linux ecosystems. (Microsoft is one of the main cloud vendors supporting Docker.) In the future, Docker will probably be ubiquitous in any datacenter in the cloud or on-premises.
+Docker is becoming the de facto standard in the container industry, supported by the most significant vendors in the Windows and Linux ecosystems. (Microsoft is one of the main cloud vendors supporting Docker). In the future, Docker will probably be ubiquitous in any datacenter in the cloud or on-premises.
 
 In addition, the [microservices](https://martinfowler.com/articles/microservices.html) architecture is emerging as an important approach for distributed mission-critical applications. In a microservice-based architecture, the application is built on a collection of services that can be developed, tested, deployed, and versioned independently.
 
@@ -43,7 +43,10 @@ After you have studied this guide, your next step would be to learn about produc
 
 ## Version
 
-This guide has been revised to cover **.NET 5** version along with many additional updates related to the same “wave” of technologies (that is, Azure and additional third-party technologies) coinciding in time with the .NET 5 release. That’s why the book version has also been updated to version **5.0**.
+This guide has been revised to cover **.NET 7** version along with many additional updates related to the same "wave" of technologies (that is, Azure and additional third-party technologies) coinciding in time with the .NET 7 release.
+
+> [!NOTE]
+> A new version of this eBook is being created for .NET 8 and the new [eShop](https://github.com/dotnet/eshop) sample.
 
 ## What this guide does not cover
 
@@ -62,7 +65,7 @@ You will also find this guide useful if you are a technical decision maker, such
 
 ### How to use this guide
 
-The first part of this guide introduces Docker containers, discusses how to choose between .NET 5 and the .NET Framework as a development framework, and provides an overview of microservices. This content is for architects and technical decision makers who want an overview but don't need to focus on code implementation details.
+The first part of this guide introduces Docker containers, discusses how to choose between .NET 7 and the .NET Framework as a development framework, and provides an overview of microservices. This content is for architects and technical decision makers who want an overview but don't need to focus on code implementation details.
 
 The second part of the guide starts with the [Development process for Docker based applications](./docker-application-development-process/index.md) section. It focuses on the development and microservice patterns for implementing applications using .NET and Docker. This section will be of most interest to developers and architects who want to focus on code and on patterns and implementation details.
 
@@ -72,9 +75,7 @@ The eShopOnContainers application is an open-source reference app for .NET and m
 
 The purpose of the application is to showcase architectural patterns. **IT IS NOT A PRODUCTION-READY TEMPLATE** to start real-world applications. In fact, the application is in a permanent beta state, as it's also used to test new potentially interesting technologies as they show up.
 
-## Send us your feedback!
-
-We wrote this guide to help you understand the architecture of containerized applications and microservices in .NET. The guide and related reference application will be evolving, so we welcome your feedback! If you have comments about how this guide can be improved, submit feedback at <https://aka.ms/ebookfeedback>.
+[!INCLUDE [feedback](../includes/feedback.md)]
 
 ## Credits
 
@@ -156,7 +157,7 @@ One Microsoft Way
 
 Redmond, Washington 98052-6399
 
-Copyright © 2021 by Microsoft Corporation
+Copyright © 2023 by Microsoft Corporation
 
 All rights reserved. No part of the contents of this book may be reproduced or transmitted in any form or by any means without the written permission of the publisher.
 

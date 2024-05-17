@@ -1,7 +1,7 @@
 ---
 title: "Decrypting data"
 description: Learn how to decrypt data in .NET, using a symmetric algorithm or an asymmetric algorithm.
-ms.date: 04/19/2021
+ms.date: 11/14/2022
 dev_langs:
   - "csharp"
   - "vb"

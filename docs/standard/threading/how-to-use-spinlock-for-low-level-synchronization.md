@@ -25,5 +25,5 @@ The following example demonstrates how to use a <xref:System.Threading.SpinLock>
 ## See also
 
 - [Threading objects and features](threading-objects-and-features.md)
-- [lock statement (C#)](../../csharp/language-reference/keywords/lock-statement.md)
+- [lock statement (C#)](../../csharp/language-reference/statements/lock.md)
 - [SyncLock statement (Visual Basic)](../../visual-basic/language-reference/statements/synclock-statement.md)

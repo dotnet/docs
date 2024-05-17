@@ -4,10 +4,10 @@ Option Strict On
 ' <Snippet10>
 Imports System.Text.RegularExpressions
 
-Module Example
+Module Explicit2Example
     Public Sub Main()
-        Dim input As String = "This is the first sentence. Is it the beginning " + _
-                              "of a literary masterpiece? I think not. Instead, " + _
+        Dim input As String = "This is the first sentence. Is it the beginning " +
+                              "of a literary masterpiece? I think not. Instead, " +
                               "it is a nonsensical paragraph."
         Dim pattern As String = "(?n)\b\(?((?>\w+),?\s?)+[\.!?]\)?"
 

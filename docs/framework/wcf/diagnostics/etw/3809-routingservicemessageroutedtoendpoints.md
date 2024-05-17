@@ -6,10 +6,10 @@ ms.assetid: 22479cc6-72d1-48df-912c-fc37bddeb043
 ---
 # 3809 - RoutingServiceMessageRoutedToEndpoints
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3809|  
 |Keywords|RoutingServices|  
 |Level|Verbose|  

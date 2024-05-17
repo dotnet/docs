@@ -8,14 +8,17 @@
 ' </auto-generated>
 '------------------------------------------------------------------------------
 
+Imports System
+Imports System.ComponentModel
+Imports System.Data.EntityClient
 Imports System.Data.Objects
 Imports System.Data.Objects.DataClasses
-Imports System.Data.EntityClient
-Imports System.ComponentModel
-Imports System.Xml.Serialization
+Imports System.Linq
 Imports System.Runtime.Serialization
+Imports System.Xml.Serialization
 
-<Assembly: EdmSchemaAttribute("fd49a1a5-2494-431d-8fa4-6a847d8614c0")>
+
+<Assembly: EdmSchemaAttribute("d0f5f369-502e-4140-aef5-d2d9144b4de9")>
 #Region "EDM Relationship Metadata"
 <Assembly: EdmRelationshipAttribute("AdventureWorksModel", "FK_SalesOrderHeader_Address_BillToAddressID", "Address", System.Data.Metadata.Edm.RelationshipMultiplicity.One, GetType(Address), "SalesOrderHeader", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, GetType(SalesOrderHeader), True)>
 <Assembly: EdmRelationshipAttribute("AdventureWorksModel", "FK_SalesOrderHeader_Address_ShipToAddressID", "Address", System.Data.Metadata.Edm.RelationshipMultiplicity.One, GetType(Address), "SalesOrderHeader", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, GetType(SalesOrderHeader), True)>
@@ -39,7 +42,7 @@ Public Partial Class AdventureWorksEntities
     ''' </summary>
     Public Sub New()
         MyBase.New("name=AdventureWorksEntities", "AdventureWorksEntities")
-    MyBase.ContextOptions.LazyLoadingEnabled = true
+        MyBase.ContextOptions.LazyLoadingEnabled = true
         OnContextCreated()
     End Sub
 
@@ -48,7 +51,7 @@ Public Partial Class AdventureWorksEntities
     ''' </summary>
     Public Sub New(ByVal connectionString As String)
         MyBase.New(connectionString, "AdventureWorksEntities")
-    MyBase.ContextOptions.LazyLoadingEnabled = true
+        MyBase.ContextOptions.LazyLoadingEnabled = true
         OnContextCreated()
     End Sub
 
@@ -57,7 +60,7 @@ Public Partial Class AdventureWorksEntities
     ''' </summary>
     Public Sub New(ByVal connection As EntityConnection)
         MyBase.New(connection, "AdventureWorksEntities")
-    MyBase.ContextOptions.LazyLoadingEnabled = true
+        MyBase.ContextOptions.LazyLoadingEnabled = true
         OnContextCreated()
     End Sub
 
@@ -143,6 +146,7 @@ Public Partial Class AdventureWorksEntities
     Private _SalesOrderHeaders As ObjectSet(Of SalesOrderHeader)
 
     #End Region
+
     #Region "AddTo Methods"
 
     ''' <summary>
@@ -181,9 +185,11 @@ Public Partial Class AdventureWorksEntities
     End Sub
 
     #End Region
+
 End Class
 
 #End Region
+
 #Region "Entities"
 
 ''' <summary>
@@ -219,6 +225,7 @@ Public Partial Class Address
     End Function
 
     #End Region
+
     #Region "Primitive Properties"
 
     ''' <summary>
@@ -424,6 +431,7 @@ Public Partial Class Address
     End Sub
 
     #End Region
+
     #Region "Navigation Properties"
 
     ''' <summary>
@@ -463,6 +471,7 @@ Public Partial Class Address
     End Property
 
     #End Region
+
 End Class
 
 ''' <summary>
@@ -504,6 +513,7 @@ Public Partial Class Contact
     End Function
 
     #End Region
+
     #Region "Primitive Properties"
 
     ''' <summary>
@@ -834,6 +844,7 @@ Public Partial Class Contact
     End Sub
 
     #End Region
+
     #Region "Complex Properties"
 
     ''' <summary>
@@ -871,6 +882,7 @@ Public Partial Class Contact
     End Sub
 
     #End Region
+
     #Region "Navigation Properties"
 
     ''' <summary>
@@ -892,6 +904,7 @@ Public Partial Class Contact
     End Property
 
     #End Region
+
 End Class
 
 ''' <summary>
@@ -939,6 +952,7 @@ Public Partial Class Product
     End Function
 
     #End Region
+
     #Region "Primitive Properties"
 
     ''' <summary>
@@ -1569,6 +1583,7 @@ Public Partial Class Product
     End Sub
 
     #End Region
+
 End Class
 
 ''' <summary>
@@ -1594,9 +1609,8 @@ Public Partial Class SalesOrderDetail
     ''' <param name="lineTotal">Initial value of the LineTotal property.</param>
     ''' <param name="rowguid">Initial value of the rowguid property.</param>
     ''' <param name="modifiedDate">Initial value of the ModifiedDate property.</param>
-    ' <snippetCreateSalesOrderDetailDefinition>
-    Public Shared Function CreateSalesOrderDetail(ByVal salesOrderID As Global.System.Int32, ByVal salesOrderDetailID As Global.System.Int32, ByVal orderQty As Global.System.Int16, ByVal productID As Global.System.Int32, ByVal specialOfferID As Global.System.Int32, ByVal unitPrice As Global.System.Decimal, ByVal unitPriceDiscount As Global.System.Decimal, ByVal lineTotal As Global.System.Decimal, ByVal rowguid As Global.System.Guid, ByVal modifiedDate As Global.System.DateTime) As SalesOrderDetail
-        Dim salesOrderDetail As SalesOrderDetail = New SalesOrderDetail
+    Public Shared Function CreateSalesOrderDetail(salesOrderID As Global.System.Int32, salesOrderDetailID As Global.System.Int32, orderQty As Global.System.Int16, productID As Global.System.Int32, specialOfferID As Global.System.Int32, unitPrice As Global.System.Decimal, unitPriceDiscount As Global.System.Decimal, lineTotal As Global.System.Decimal, rowguid As Global.System.Guid, modifiedDate As Global.System.DateTime) As SalesOrderDetail
+        Dim salesOrderDetail as SalesOrderDetail = New SalesOrderDetail
         salesOrderDetail.SalesOrderID = salesOrderID
         salesOrderDetail.SalesOrderDetailID = salesOrderDetailID
         salesOrderDetail.OrderQty = orderQty
@@ -1609,21 +1623,21 @@ Public Partial Class SalesOrderDetail
         salesOrderDetail.ModifiedDate = modifiedDate
         Return salesOrderDetail
     End Function
-    '</snippetCreateSalesOrderDetailDefinition>
 
-#End Region
-#Region "Primitive Properties"
+    #End Region
+
+    #Region "Primitive Properties"
 
     ''' <summary>
     ''' No Metadata Documentation available.
     ''' </summary>
-    <EdmScalarPropertyAttribute(EntityKeyProperty:=True, IsNullable:=False)>
+    <EdmScalarPropertyAttribute(EntityKeyProperty:=true, IsNullable:=false)>
     <DataMemberAttribute()>
     Public Property SalesOrderID() As Global.System.Int32
         Get
             Return _SalesOrderID
         End Get
-        Set(ByVal value As Global.System.Int32)
+        Set
             If (_SalesOrderID <> Value) Then
                 OnSalesOrderIDChanging(value)
                 ReportPropertyChanging("SalesOrderID")
@@ -1635,22 +1649,22 @@ Public Partial Class SalesOrderDetail
     End Property
 
     Private _SalesOrderID As Global.System.Int32
-    Partial Private Sub OnSalesOrderIDChanging(ByVal value As Global.System.Int32)
+    Private Partial Sub OnSalesOrderIDChanging(value As Global.System.Int32)
     End Sub
 
-    Partial Private Sub OnSalesOrderIDChanged()
+    Private Partial Sub OnSalesOrderIDChanged()
     End Sub
 
     ''' <summary>
     ''' No Metadata Documentation available.
     ''' </summary>
-    <EdmScalarPropertyAttribute(EntityKeyProperty:=True, IsNullable:=False)>
+    <EdmScalarPropertyAttribute(EntityKeyProperty:=true, IsNullable:=false)>
     <DataMemberAttribute()>
     Public Property SalesOrderDetailID() As Global.System.Int32
         Get
             Return _SalesOrderDetailID
         End Get
-        Set(ByVal value As Global.System.Int32)
+        Set
             If (_SalesOrderDetailID <> Value) Then
                 OnSalesOrderDetailIDChanging(value)
                 ReportPropertyChanging("SalesOrderDetailID")
@@ -1662,47 +1676,47 @@ Public Partial Class SalesOrderDetail
     End Property
 
     Private _SalesOrderDetailID As Global.System.Int32
-    Partial Private Sub OnSalesOrderDetailIDChanging(ByVal value As Global.System.Int32)
+    Private Partial Sub OnSalesOrderDetailIDChanging(value As Global.System.Int32)
     End Sub
 
-    Partial Private Sub OnSalesOrderDetailIDChanged()
+    Private Partial Sub OnSalesOrderDetailIDChanged()
     End Sub
 
     ''' <summary>
     ''' No Metadata Documentation available.
     ''' </summary>
-    <EdmScalarPropertyAttribute(EntityKeyProperty:=False, IsNullable:=True)>
+    <EdmScalarPropertyAttribute(EntityKeyProperty:=false, IsNullable:=true)>
     <DataMemberAttribute()>
     Public Property CarrierTrackingNumber() As Global.System.String
         Get
             Return _CarrierTrackingNumber
         End Get
-        Set(ByVal value As Global.System.String)
+        Set
             OnCarrierTrackingNumberChanging(value)
             ReportPropertyChanging("CarrierTrackingNumber")
-            _CarrierTrackingNumber = StructuralObject.SetValidValue(value, True)
+            _CarrierTrackingNumber = StructuralObject.SetValidValue(value, true)
             ReportPropertyChanged("CarrierTrackingNumber")
             OnCarrierTrackingNumberChanged()
         End Set
     End Property
 
     Private _CarrierTrackingNumber As Global.System.String
-    Partial Private Sub OnCarrierTrackingNumberChanging(ByVal value As Global.System.String)
+    Private Partial Sub OnCarrierTrackingNumberChanging(value As Global.System.String)
     End Sub
 
-    Partial Private Sub OnCarrierTrackingNumberChanged()
+    Private Partial Sub OnCarrierTrackingNumberChanged()
     End Sub
 
     ''' <summary>
     ''' No Metadata Documentation available.
     ''' </summary>
-    <EdmScalarPropertyAttribute(EntityKeyProperty:=False, IsNullable:=False)>
+    <EdmScalarPropertyAttribute(EntityKeyProperty:=false, IsNullable:=false)>
     <DataMemberAttribute()>
     Public Property OrderQty() As Global.System.Int16
         Get
             Return _OrderQty
         End Get
-        Set(ByVal value As Global.System.Int16)
+        Set
             OnOrderQtyChanging(value)
             ReportPropertyChanging("OrderQty")
             _OrderQty = StructuralObject.SetValidValue(value)
@@ -1712,22 +1726,22 @@ Public Partial Class SalesOrderDetail
     End Property
 
     Private _OrderQty As Global.System.Int16
-    Partial Private Sub OnOrderQtyChanging(ByVal value As Global.System.Int16)
+    Private Partial Sub OnOrderQtyChanging(value As Global.System.Int16)
     End Sub
 
-    Partial Private Sub OnOrderQtyChanged()
+    Private Partial Sub OnOrderQtyChanged()
     End Sub
 
     ''' <summary>
     ''' No Metadata Documentation available.
     ''' </summary>
-    <EdmScalarPropertyAttribute(EntityKeyProperty:=False, IsNullable:=False)>
+    <EdmScalarPropertyAttribute(EntityKeyProperty:=false, IsNullable:=false)>
     <DataMemberAttribute()>
     Public Property ProductID() As Global.System.Int32
         Get
             Return _ProductID
         End Get
-        Set(ByVal value As Global.System.Int32)
+        Set
             OnProductIDChanging(value)
             ReportPropertyChanging("ProductID")
             _ProductID = StructuralObject.SetValidValue(value)
@@ -1737,22 +1751,22 @@ Public Partial Class SalesOrderDetail
     End Property
 
     Private _ProductID As Global.System.Int32
-    Partial Private Sub OnProductIDChanging(ByVal value As Global.System.Int32)
+    Private Partial Sub OnProductIDChanging(value As Global.System.Int32)
     End Sub
 
-    Partial Private Sub OnProductIDChanged()
+    Private Partial Sub OnProductIDChanged()
     End Sub
 
     ''' <summary>
     ''' No Metadata Documentation available.
     ''' </summary>
-    <EdmScalarPropertyAttribute(EntityKeyProperty:=False, IsNullable:=False)>
+    <EdmScalarPropertyAttribute(EntityKeyProperty:=false, IsNullable:=false)>
     <DataMemberAttribute()>
     Public Property SpecialOfferID() As Global.System.Int32
         Get
             Return _SpecialOfferID
         End Get
-        Set(ByVal value As Global.System.Int32)
+        Set
             OnSpecialOfferIDChanging(value)
             ReportPropertyChanging("SpecialOfferID")
             _SpecialOfferID = StructuralObject.SetValidValue(value)
@@ -1762,22 +1776,22 @@ Public Partial Class SalesOrderDetail
     End Property
 
     Private _SpecialOfferID As Global.System.Int32
-    Partial Private Sub OnSpecialOfferIDChanging(ByVal value As Global.System.Int32)
+    Private Partial Sub OnSpecialOfferIDChanging(value As Global.System.Int32)
     End Sub
 
-    Partial Private Sub OnSpecialOfferIDChanged()
+    Private Partial Sub OnSpecialOfferIDChanged()
     End Sub
 
     ''' <summary>
     ''' No Metadata Documentation available.
     ''' </summary>
-    <EdmScalarPropertyAttribute(EntityKeyProperty:=False, IsNullable:=False)>
+    <EdmScalarPropertyAttribute(EntityKeyProperty:=false, IsNullable:=false)>
     <DataMemberAttribute()>
     Public Property UnitPrice() As Global.System.Decimal
         Get
             Return _UnitPrice
         End Get
-        Set(ByVal value As Global.System.Decimal)
+        Set
             OnUnitPriceChanging(value)
             ReportPropertyChanging("UnitPrice")
             _UnitPrice = StructuralObject.SetValidValue(value)
@@ -1787,22 +1801,22 @@ Public Partial Class SalesOrderDetail
     End Property
 
     Private _UnitPrice As Global.System.Decimal
-    Partial Private Sub OnUnitPriceChanging(ByVal value As Global.System.Decimal)
+    Private Partial Sub OnUnitPriceChanging(value As Global.System.Decimal)
     End Sub
 
-    Partial Private Sub OnUnitPriceChanged()
+    Private Partial Sub OnUnitPriceChanged()
     End Sub
 
     ''' <summary>
     ''' No Metadata Documentation available.
     ''' </summary>
-    <EdmScalarPropertyAttribute(EntityKeyProperty:=False, IsNullable:=False)>
+    <EdmScalarPropertyAttribute(EntityKeyProperty:=false, IsNullable:=false)>
     <DataMemberAttribute()>
     Public Property UnitPriceDiscount() As Global.System.Decimal
         Get
             Return _UnitPriceDiscount
         End Get
-        Set(ByVal value As Global.System.Decimal)
+        Set
             OnUnitPriceDiscountChanging(value)
             ReportPropertyChanging("UnitPriceDiscount")
             _UnitPriceDiscount = StructuralObject.SetValidValue(value)
@@ -1812,22 +1826,22 @@ Public Partial Class SalesOrderDetail
     End Property
 
     Private _UnitPriceDiscount As Global.System.Decimal
-    Partial Private Sub OnUnitPriceDiscountChanging(ByVal value As Global.System.Decimal)
+    Private Partial Sub OnUnitPriceDiscountChanging(value As Global.System.Decimal)
     End Sub
 
-    Partial Private Sub OnUnitPriceDiscountChanged()
+    Private Partial Sub OnUnitPriceDiscountChanged()
     End Sub
 
     ''' <summary>
     ''' No Metadata Documentation available.
     ''' </summary>
-    <EdmScalarPropertyAttribute(EntityKeyProperty:=False, IsNullable:=False)>
+    <EdmScalarPropertyAttribute(EntityKeyProperty:=false, IsNullable:=false)>
     <DataMemberAttribute()>
     Public Property LineTotal() As Global.System.Decimal
         Get
             Return _LineTotal
         End Get
-        Set(ByVal value As Global.System.Decimal)
+        Set
             OnLineTotalChanging(value)
             ReportPropertyChanging("LineTotal")
             _LineTotal = StructuralObject.SetValidValue(value)
@@ -1837,22 +1851,22 @@ Public Partial Class SalesOrderDetail
     End Property
 
     Private _LineTotal As Global.System.Decimal
-    Partial Private Sub OnLineTotalChanging(ByVal value As Global.System.Decimal)
+    Private Partial Sub OnLineTotalChanging(value As Global.System.Decimal)
     End Sub
 
-    Partial Private Sub OnLineTotalChanged()
+    Private Partial Sub OnLineTotalChanged()
     End Sub
 
     ''' <summary>
     ''' No Metadata Documentation available.
     ''' </summary>
-    <EdmScalarPropertyAttribute(EntityKeyProperty:=False, IsNullable:=False)>
+    <EdmScalarPropertyAttribute(EntityKeyProperty:=false, IsNullable:=false)>
     <DataMemberAttribute()>
     Public Property rowguid() As Global.System.Guid
         Get
             Return _rowguid
         End Get
-        Set(ByVal value As Global.System.Guid)
+        Set
             OnrowguidChanging(value)
             ReportPropertyChanging("rowguid")
             _rowguid = StructuralObject.SetValidValue(value)
@@ -1862,22 +1876,22 @@ Public Partial Class SalesOrderDetail
     End Property
 
     Private _rowguid As Global.System.Guid
-    Partial Private Sub OnrowguidChanging(ByVal value As Global.System.Guid)
+    Private Partial Sub OnrowguidChanging(value As Global.System.Guid)
     End Sub
 
-    Partial Private Sub OnrowguidChanged()
+    Private Partial Sub OnrowguidChanged()
     End Sub
 
     ''' <summary>
     ''' No Metadata Documentation available.
     ''' </summary>
-    <EdmScalarPropertyAttribute(EntityKeyProperty:=False, IsNullable:=False)>
+    <EdmScalarPropertyAttribute(EntityKeyProperty:=false, IsNullable:=false)>
     <DataMemberAttribute()>
     Public Property ModifiedDate() As Global.System.DateTime
         Get
             Return _ModifiedDate
         End Get
-        Set(ByVal value As Global.System.DateTime)
+        Set
             OnModifiedDateChanging(value)
             ReportPropertyChanging("ModifiedDate")
             _ModifiedDate = StructuralObject.SetValidValue(value)
@@ -1887,14 +1901,15 @@ Public Partial Class SalesOrderDetail
     End Property
 
     Private _ModifiedDate As Global.System.DateTime
-    Partial Private Sub OnModifiedDateChanging(ByVal value As Global.System.DateTime)
+    Private Partial Sub OnModifiedDateChanging(value As Global.System.DateTime)
     End Sub
 
-    Partial Private Sub OnModifiedDateChanged()
+    Private Partial Sub OnModifiedDateChanged()
     End Sub
 
-#End Region
-#Region "Navigation Properties"
+    #End Region
+
+    #Region "Navigation Properties"
 
     ''' <summary>
     ''' No Metadata Documentation available.
@@ -1907,7 +1922,7 @@ Public Partial Class SalesOrderDetail
         Get
             Return CType(Me, IEntityWithRelationships).RelationshipManager.GetRelatedReference(Of SalesOrderHeader)("AdventureWorksModel.FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID", "SalesOrderHeader").Value
         End Get
-        Set(ByVal value As SalesOrderHeader)
+        Set
             CType(Me, IEntityWithRelationships).RelationshipManager.GetRelatedReference(Of SalesOrderHeader)("AdventureWorksModel.FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID", "SalesOrderHeader").Value = value
         End Set
     End Property
@@ -1920,14 +1935,15 @@ Public Partial Class SalesOrderDetail
         Get
             Return CType(Me, IEntityWithRelationships).RelationshipManager.GetRelatedReference(Of SalesOrderHeader)("AdventureWorksModel.FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID", "SalesOrderHeader")
         End Get
-        Set(ByVal value As EntityReference(Of SalesOrderHeader))
-            If (Not value Is Nothing) Then
+        Set
+            If (Not value Is Nothing)
                 CType(Me, IEntityWithRelationships).RelationshipManager.InitializeRelatedReference(Of SalesOrderHeader)("AdventureWorksModel.FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID", "SalesOrderHeader", value)
             End If
         End Set
     End Property
 
-#End Region
+    #End Region
+
 End Class
 
 ''' <summary>
@@ -1936,9 +1952,9 @@ End Class
 <EdmEntityTypeAttribute(NamespaceName:="AdventureWorksModel", Name:="SalesOrderHeader")>
 <Serializable()>
 <DataContractAttribute(IsReference:=True)>
-Partial Public Class SalesOrderHeader
+Public Partial Class SalesOrderHeader
     Inherits EntityObject
-#Region "Factory Method"
+    #Region "Factory Method"
 
     ''' <summary>
     ''' Create a new SalesOrderHeader object.
@@ -1961,8 +1977,8 @@ Partial Public Class SalesOrderHeader
     ''' <param name="totalDue">Initial value of the TotalDue property.</param>
     ''' <param name="rowguid">Initial value of the rowguid property.</param>
     ''' <param name="modifiedDate">Initial value of the ModifiedDate property.</param>
-    Public Shared Function CreateSalesOrderHeader(ByVal salesOrderID As Global.System.Int32, ByVal revisionNumber As Global.System.Byte, ByVal orderDate As Global.System.DateTime, ByVal dueDate As Global.System.DateTime, ByVal status As Global.System.Byte, ByVal onlineOrderFlag As Global.System.Boolean, ByVal salesOrderNumber As Global.System.String, ByVal customerID As Global.System.Int32, ByVal contactID As Global.System.Int32, ByVal billToAddressID As Global.System.Int32, ByVal shipToAddressID As Global.System.Int32, ByVal shipMethodID As Global.System.Int32, ByVal subTotal As Global.System.Decimal, ByVal taxAmt As Global.System.Decimal, ByVal freight As Global.System.Decimal, ByVal totalDue As Global.System.Decimal, ByVal rowguid As Global.System.Guid, ByVal modifiedDate As Global.System.DateTime) As SalesOrderHeader
-        Dim salesOrderHeader As SalesOrderHeader = New SalesOrderHeader
+    Public Shared Function CreateSalesOrderHeader(salesOrderID As Global.System.Int32, revisionNumber As Global.System.Byte, orderDate As Global.System.DateTime, dueDate As Global.System.DateTime, status As Global.System.Byte, onlineOrderFlag As Global.System.Boolean, salesOrderNumber As Global.System.String, customerID As Global.System.Int32, contactID As Global.System.Int32, billToAddressID As Global.System.Int32, shipToAddressID As Global.System.Int32, shipMethodID As Global.System.Int32, subTotal As Global.System.Decimal, taxAmt As Global.System.Decimal, freight As Global.System.Decimal, totalDue As Global.System.Decimal, rowguid As Global.System.Guid, modifiedDate As Global.System.DateTime) As SalesOrderHeader
+        Dim salesOrderHeader as SalesOrderHeader = New SalesOrderHeader
         salesOrderHeader.SalesOrderID = salesOrderID
         salesOrderHeader.RevisionNumber = revisionNumber
         salesOrderHeader.OrderDate = orderDate
@@ -1984,19 +2000,20 @@ Partial Public Class SalesOrderHeader
         Return salesOrderHeader
     End Function
 
-#End Region
-#Region "Primitive Properties"
+    #End Region
+
+    #Region "Primitive Properties"
 
     ''' <summary>
     ''' No Metadata Documentation available.
     ''' </summary>
-    <EdmScalarPropertyAttribute(EntityKeyProperty:=True, IsNullable:=False)>
+    <EdmScalarPropertyAttribute(EntityKeyProperty:=true, IsNullable:=false)>
     <DataMemberAttribute()>
     Public Property SalesOrderID() As Global.System.Int32
         Get
             Return _SalesOrderID
         End Get
-        Set(ByVal value As Global.System.Int32)
+        Set
             If (_SalesOrderID <> Value) Then
                 OnSalesOrderIDChanging(value)
                 ReportPropertyChanging("SalesOrderID")
@@ -2008,22 +2025,22 @@ Partial Public Class SalesOrderHeader
     End Property
 
     Private _SalesOrderID As Global.System.Int32
-    Partial Private Sub OnSalesOrderIDChanging(ByVal value As Global.System.Int32)
+    Private Partial Sub OnSalesOrderIDChanging(value As Global.System.Int32)
     End Sub
 
-    Partial Private Sub OnSalesOrderIDChanged()
+    Private Partial Sub OnSalesOrderIDChanged()
     End Sub
 
     ''' <summary>
     ''' No Metadata Documentation available.
     ''' </summary>
-    <EdmScalarPropertyAttribute(EntityKeyProperty:=False, IsNullable:=False)>
+    <EdmScalarPropertyAttribute(EntityKeyProperty:=false, IsNullable:=false)>
     <DataMemberAttribute()>
     Public Property RevisionNumber() As Global.System.Byte
         Get
             Return _RevisionNumber
         End Get
-        Set(ByVal value As Global.System.Byte)
+        Set
             OnRevisionNumberChanging(value)
             ReportPropertyChanging("RevisionNumber")
             _RevisionNumber = StructuralObject.SetValidValue(value)
@@ -2033,22 +2050,22 @@ Partial Public Class SalesOrderHeader
     End Property
 
     Private _RevisionNumber As Global.System.Byte
-    Partial Private Sub OnRevisionNumberChanging(ByVal value As Global.System.Byte)
+    Private Partial Sub OnRevisionNumberChanging(value As Global.System.Byte)
     End Sub
 
-    Partial Private Sub OnRevisionNumberChanged()
+    Private Partial Sub OnRevisionNumberChanged()
     End Sub
 
     ''' <summary>
     ''' No Metadata Documentation available.
     ''' </summary>
-    <EdmScalarPropertyAttribute(EntityKeyProperty:=False, IsNullable:=False)>
+    <EdmScalarPropertyAttribute(EntityKeyProperty:=false, IsNullable:=false)>
     <DataMemberAttribute()>
     Public Property OrderDate() As Global.System.DateTime
         Get
             Return _OrderDate
         End Get
-        Set(ByVal value As Global.System.DateTime)
+        Set
             OnOrderDateChanging(value)
             ReportPropertyChanging("OrderDate")
             _OrderDate = StructuralObject.SetValidValue(value)
@@ -2058,22 +2075,22 @@ Partial Public Class SalesOrderHeader
     End Property
 
     Private _OrderDate As Global.System.DateTime
-    Partial Private Sub OnOrderDateChanging(ByVal value As Global.System.DateTime)
+    Private Partial Sub OnOrderDateChanging(value As Global.System.DateTime)
     End Sub
 
-    Partial Private Sub OnOrderDateChanged()
+    Private Partial Sub OnOrderDateChanged()
     End Sub
 
     ''' <summary>
     ''' No Metadata Documentation available.
     ''' </summary>
-    <EdmScalarPropertyAttribute(EntityKeyProperty:=False, IsNullable:=False)>
+    <EdmScalarPropertyAttribute(EntityKeyProperty:=false, IsNullable:=false)>
     <DataMemberAttribute()>
     Public Property DueDate() As Global.System.DateTime
         Get
             Return _DueDate
         End Get
-        Set(ByVal value As Global.System.DateTime)
+        Set
             OnDueDateChanging(value)
             ReportPropertyChanging("DueDate")
             _DueDate = StructuralObject.SetValidValue(value)
@@ -2083,22 +2100,22 @@ Partial Public Class SalesOrderHeader
     End Property
 
     Private _DueDate As Global.System.DateTime
-    Partial Private Sub OnDueDateChanging(ByVal value As Global.System.DateTime)
+    Private Partial Sub OnDueDateChanging(value As Global.System.DateTime)
     End Sub
 
-    Partial Private Sub OnDueDateChanged()
+    Private Partial Sub OnDueDateChanged()
     End Sub
 
     ''' <summary>
     ''' No Metadata Documentation available.
     ''' </summary>
-    <EdmScalarPropertyAttribute(EntityKeyProperty:=False, IsNullable:=True)>
+    <EdmScalarPropertyAttribute(EntityKeyProperty:=false, IsNullable:=true)>
     <DataMemberAttribute()>
     Public Property ShipDate() As Nullable(Of Global.System.DateTime)
         Get
             Return _ShipDate
         End Get
-        Set(ByVal value As Nullable(Of Global.System.DateTime))
+        Set
             OnShipDateChanging(value)
             ReportPropertyChanging("ShipDate")
             _ShipDate = StructuralObject.SetValidValue(value)
@@ -2108,22 +2125,22 @@ Partial Public Class SalesOrderHeader
     End Property
 
     Private _ShipDate As Nullable(Of Global.System.DateTime)
-    Partial Private Sub OnShipDateChanging(ByVal value As Nullable(Of Global.System.DateTime))
+    Private Partial Sub OnShipDateChanging(value As Nullable(Of Global.System.DateTime))
     End Sub
 
-    Partial Private Sub OnShipDateChanged()
+    Private Partial Sub OnShipDateChanged()
     End Sub
 
     ''' <summary>
     ''' No Metadata Documentation available.
     ''' </summary>
-    <EdmScalarPropertyAttribute(EntityKeyProperty:=False, IsNullable:=False)>
+    <EdmScalarPropertyAttribute(EntityKeyProperty:=false, IsNullable:=false)>
     <DataMemberAttribute()>
     Public Property Status() As Global.System.Byte
         Get
             Return _Status
         End Get
-        Set(ByVal value As Global.System.Byte)
+        Set
             OnStatusChanging(value)
             ReportPropertyChanging("Status")
             _Status = StructuralObject.SetValidValue(value)
@@ -2133,22 +2150,22 @@ Partial Public Class SalesOrderHeader
     End Property
 
     Private _Status As Global.System.Byte
-    Partial Private Sub OnStatusChanging(ByVal value As Global.System.Byte)
+    Private Partial Sub OnStatusChanging(value As Global.System.Byte)
     End Sub
 
-    Partial Private Sub OnStatusChanged()
+    Private Partial Sub OnStatusChanged()
     End Sub
 
     ''' <summary>
     ''' No Metadata Documentation available.
     ''' </summary>
-    <EdmScalarPropertyAttribute(EntityKeyProperty:=False, IsNullable:=False)>
+    <EdmScalarPropertyAttribute(EntityKeyProperty:=false, IsNullable:=false)>
     <DataMemberAttribute()>
     Public Property OnlineOrderFlag() As Global.System.Boolean
         Get
             Return _OnlineOrderFlag
         End Get
-        Set(ByVal value As Global.System.Boolean)
+        Set
             OnOnlineOrderFlagChanging(value)
             ReportPropertyChanging("OnlineOrderFlag")
             _OnlineOrderFlag = StructuralObject.SetValidValue(value)
@@ -2158,97 +2175,97 @@ Partial Public Class SalesOrderHeader
     End Property
 
     Private _OnlineOrderFlag As Global.System.Boolean
-    Partial Private Sub OnOnlineOrderFlagChanging(ByVal value As Global.System.Boolean)
+    Private Partial Sub OnOnlineOrderFlagChanging(value As Global.System.Boolean)
     End Sub
 
-    Partial Private Sub OnOnlineOrderFlagChanged()
+    Private Partial Sub OnOnlineOrderFlagChanged()
     End Sub
 
     ''' <summary>
     ''' No Metadata Documentation available.
     ''' </summary>
-    <EdmScalarPropertyAttribute(EntityKeyProperty:=False, IsNullable:=False)>
+    <EdmScalarPropertyAttribute(EntityKeyProperty:=false, IsNullable:=false)>
     <DataMemberAttribute()>
     Public Property SalesOrderNumber() As Global.System.String
         Get
             Return _SalesOrderNumber
         End Get
-        Set(ByVal value As Global.System.String)
+        Set
             OnSalesOrderNumberChanging(value)
             ReportPropertyChanging("SalesOrderNumber")
-            _SalesOrderNumber = StructuralObject.SetValidValue(value, False)
+            _SalesOrderNumber = StructuralObject.SetValidValue(value, true)
             ReportPropertyChanged("SalesOrderNumber")
             OnSalesOrderNumberChanged()
         End Set
     End Property
 
     Private _SalesOrderNumber As Global.System.String
-    Partial Private Sub OnSalesOrderNumberChanging(ByVal value As Global.System.String)
+    Private Partial Sub OnSalesOrderNumberChanging(value As Global.System.String)
     End Sub
 
-    Partial Private Sub OnSalesOrderNumberChanged()
+    Private Partial Sub OnSalesOrderNumberChanged()
     End Sub
 
     ''' <summary>
     ''' No Metadata Documentation available.
     ''' </summary>
-    <EdmScalarPropertyAttribute(EntityKeyProperty:=False, IsNullable:=True)>
+    <EdmScalarPropertyAttribute(EntityKeyProperty:=false, IsNullable:=true)>
     <DataMemberAttribute()>
     Public Property PurchaseOrderNumber() As Global.System.String
         Get
             Return _PurchaseOrderNumber
         End Get
-        Set(ByVal value As Global.System.String)
+        Set
             OnPurchaseOrderNumberChanging(value)
             ReportPropertyChanging("PurchaseOrderNumber")
-            _PurchaseOrderNumber = StructuralObject.SetValidValue(value, True)
+            _PurchaseOrderNumber = StructuralObject.SetValidValue(value, true)
             ReportPropertyChanged("PurchaseOrderNumber")
             OnPurchaseOrderNumberChanged()
         End Set
     End Property
 
     Private _PurchaseOrderNumber As Global.System.String
-    Partial Private Sub OnPurchaseOrderNumberChanging(ByVal value As Global.System.String)
+    Private Partial Sub OnPurchaseOrderNumberChanging(value As Global.System.String)
     End Sub
 
-    Partial Private Sub OnPurchaseOrderNumberChanged()
+    Private Partial Sub OnPurchaseOrderNumberChanged()
     End Sub
 
     ''' <summary>
     ''' No Metadata Documentation available.
     ''' </summary>
-    <EdmScalarPropertyAttribute(EntityKeyProperty:=False, IsNullable:=True)>
+    <EdmScalarPropertyAttribute(EntityKeyProperty:=false, IsNullable:=true)>
     <DataMemberAttribute()>
     Public Property AccountNumber() As Global.System.String
         Get
             Return _AccountNumber
         End Get
-        Set(ByVal value As Global.System.String)
+        Set
             OnAccountNumberChanging(value)
             ReportPropertyChanging("AccountNumber")
-            _AccountNumber = StructuralObject.SetValidValue(value, True)
+            _AccountNumber = StructuralObject.SetValidValue(value, true)
             ReportPropertyChanged("AccountNumber")
             OnAccountNumberChanged()
         End Set
     End Property
 
     Private _AccountNumber As Global.System.String
-    Partial Private Sub OnAccountNumberChanging(ByVal value As Global.System.String)
+    Private Partial Sub OnAccountNumberChanging(value As Global.System.String)
     End Sub
 
-    Partial Private Sub OnAccountNumberChanged()
+    Private Partial Sub OnAccountNumberChanged()
     End Sub
 
     ''' <summary>
     ''' No Metadata Documentation available.
     ''' </summary>
-    <EdmScalarPropertyAttribute(EntityKeyProperty:=False, IsNullable:=False)>
+    <EdmScalarPropertyAttribute(EntityKeyProperty:=false, IsNullable:=false)>
     <DataMemberAttribute()>
     Public Property CustomerID() As Global.System.Int32
         Get
             Return _CustomerID
         End Get
-        Set(ByVal value As Global.System.Int32)
+        Set
             OnCustomerIDChanging(value)
             ReportPropertyChanging("CustomerID")
             _CustomerID = StructuralObject.SetValidValue(value)
@@ -2258,22 +2275,22 @@ Partial Public Class SalesOrderHeader
     End Property
 
     Private _CustomerID As Global.System.Int32
-    Partial Private Sub OnCustomerIDChanging(ByVal value As Global.System.Int32)
+    Private Partial Sub OnCustomerIDChanging(value As Global.System.Int32)
     End Sub
 
-    Partial Private Sub OnCustomerIDChanged()
+    Private Partial Sub OnCustomerIDChanged()
     End Sub
 
     ''' <summary>
     ''' No Metadata Documentation available.
     ''' </summary>
-    <EdmScalarPropertyAttribute(EntityKeyProperty:=False, IsNullable:=False)>
+    <EdmScalarPropertyAttribute(EntityKeyProperty:=false, IsNullable:=false)>
     <DataMemberAttribute()>
     Public Property ContactID() As Global.System.Int32
         Get
             Return _ContactID
         End Get
-        Set(ByVal value As Global.System.Int32)
+        Set
             OnContactIDChanging(value)
             ReportPropertyChanging("ContactID")
             _ContactID = StructuralObject.SetValidValue(value)
@@ -2283,22 +2300,22 @@ Partial Public Class SalesOrderHeader
     End Property
 
     Private _ContactID As Global.System.Int32
-    Partial Private Sub OnContactIDChanging(ByVal value As Global.System.Int32)
+    Private Partial Sub OnContactIDChanging(value As Global.System.Int32)
     End Sub
 
-    Partial Private Sub OnContactIDChanged()
+    Private Partial Sub OnContactIDChanged()
     End Sub
 
     ''' <summary>
     ''' No Metadata Documentation available.
     ''' </summary>
-    <EdmScalarPropertyAttribute(EntityKeyProperty:=False, IsNullable:=True)>
+    <EdmScalarPropertyAttribute(EntityKeyProperty:=false, IsNullable:=true)>
     <DataMemberAttribute()>
     Public Property SalesPersonID() As Nullable(Of Global.System.Int32)
         Get
             Return _SalesPersonID
         End Get
-        Set(ByVal value As Nullable(Of Global.System.Int32))
+        Set
             OnSalesPersonIDChanging(value)
             ReportPropertyChanging("SalesPersonID")
             _SalesPersonID = StructuralObject.SetValidValue(value)
@@ -2308,22 +2325,22 @@ Partial Public Class SalesOrderHeader
     End Property
 
     Private _SalesPersonID As Nullable(Of Global.System.Int32)
-    Partial Private Sub OnSalesPersonIDChanging(ByVal value As Nullable(Of Global.System.Int32))
+    Private Partial Sub OnSalesPersonIDChanging(value As Nullable(Of Global.System.Int32))
     End Sub
 
-    Partial Private Sub OnSalesPersonIDChanged()
+    Private Partial Sub OnSalesPersonIDChanged()
     End Sub
 
     ''' <summary>
     ''' No Metadata Documentation available.
     ''' </summary>
-    <EdmScalarPropertyAttribute(EntityKeyProperty:=False, IsNullable:=True)>
+    <EdmScalarPropertyAttribute(EntityKeyProperty:=false, IsNullable:=true)>
     <DataMemberAttribute()>
     Public Property TerritoryID() As Nullable(Of Global.System.Int32)
         Get
             Return _TerritoryID
         End Get
-        Set(ByVal value As Nullable(Of Global.System.Int32))
+        Set
             OnTerritoryIDChanging(value)
             ReportPropertyChanging("TerritoryID")
             _TerritoryID = StructuralObject.SetValidValue(value)
@@ -2333,22 +2350,22 @@ Partial Public Class SalesOrderHeader
     End Property
 
     Private _TerritoryID As Nullable(Of Global.System.Int32)
-    Partial Private Sub OnTerritoryIDChanging(ByVal value As Nullable(Of Global.System.Int32))
+    Private Partial Sub OnTerritoryIDChanging(value As Nullable(Of Global.System.Int32))
     End Sub
 
-    Partial Private Sub OnTerritoryIDChanged()
+    Private Partial Sub OnTerritoryIDChanged()
     End Sub
 
     ''' <summary>
     ''' No Metadata Documentation available.
     ''' </summary>
-    <EdmScalarPropertyAttribute(EntityKeyProperty:=False, IsNullable:=False)>
+    <EdmScalarPropertyAttribute(EntityKeyProperty:=false, IsNullable:=false)>
     <DataMemberAttribute()>
     Public Property BillToAddressID() As Global.System.Int32
         Get
             Return _BillToAddressID
         End Get
-        Set(ByVal value As Global.System.Int32)
+        Set
             OnBillToAddressIDChanging(value)
             ReportPropertyChanging("BillToAddressID")
             _BillToAddressID = StructuralObject.SetValidValue(value)
@@ -2358,22 +2375,22 @@ Partial Public Class SalesOrderHeader
     End Property
 
     Private _BillToAddressID As Global.System.Int32
-    Partial Private Sub OnBillToAddressIDChanging(ByVal value As Global.System.Int32)
+    Private Partial Sub OnBillToAddressIDChanging(value As Global.System.Int32)
     End Sub
 
-    Partial Private Sub OnBillToAddressIDChanged()
+    Private Partial Sub OnBillToAddressIDChanged()
     End Sub
 
     ''' <summary>
     ''' No Metadata Documentation available.
     ''' </summary>
-    <EdmScalarPropertyAttribute(EntityKeyProperty:=False, IsNullable:=False)>
+    <EdmScalarPropertyAttribute(EntityKeyProperty:=false, IsNullable:=false)>
     <DataMemberAttribute()>
     Public Property ShipToAddressID() As Global.System.Int32
         Get
             Return _ShipToAddressID
         End Get
-        Set(ByVal value As Global.System.Int32)
+        Set
             OnShipToAddressIDChanging(value)
             ReportPropertyChanging("ShipToAddressID")
             _ShipToAddressID = StructuralObject.SetValidValue(value)
@@ -2383,22 +2400,22 @@ Partial Public Class SalesOrderHeader
     End Property
 
     Private _ShipToAddressID As Global.System.Int32
-    Partial Private Sub OnShipToAddressIDChanging(ByVal value As Global.System.Int32)
+    Private Partial Sub OnShipToAddressIDChanging(value As Global.System.Int32)
     End Sub
 
-    Partial Private Sub OnShipToAddressIDChanged()
+    Private Partial Sub OnShipToAddressIDChanged()
     End Sub
 
     ''' <summary>
     ''' No Metadata Documentation available.
     ''' </summary>
-    <EdmScalarPropertyAttribute(EntityKeyProperty:=False, IsNullable:=False)>
+    <EdmScalarPropertyAttribute(EntityKeyProperty:=false, IsNullable:=false)>
     <DataMemberAttribute()>
     Public Property ShipMethodID() As Global.System.Int32
         Get
             Return _ShipMethodID
         End Get
-        Set(ByVal value As Global.System.Int32)
+        Set
             OnShipMethodIDChanging(value)
             ReportPropertyChanging("ShipMethodID")
             _ShipMethodID = StructuralObject.SetValidValue(value)
@@ -2408,22 +2425,22 @@ Partial Public Class SalesOrderHeader
     End Property
 
     Private _ShipMethodID As Global.System.Int32
-    Partial Private Sub OnShipMethodIDChanging(ByVal value As Global.System.Int32)
+    Private Partial Sub OnShipMethodIDChanging(value As Global.System.Int32)
     End Sub
 
-    Partial Private Sub OnShipMethodIDChanged()
+    Private Partial Sub OnShipMethodIDChanged()
     End Sub
 
     ''' <summary>
     ''' No Metadata Documentation available.
     ''' </summary>
-    <EdmScalarPropertyAttribute(EntityKeyProperty:=False, IsNullable:=True)>
+    <EdmScalarPropertyAttribute(EntityKeyProperty:=false, IsNullable:=true)>
     <DataMemberAttribute()>
     Public Property CreditCardID() As Nullable(Of Global.System.Int32)
         Get
             Return _CreditCardID
         End Get
-        Set(ByVal value As Nullable(Of Global.System.Int32))
+        Set
             OnCreditCardIDChanging(value)
             ReportPropertyChanging("CreditCardID")
             _CreditCardID = StructuralObject.SetValidValue(value)
@@ -2433,47 +2450,47 @@ Partial Public Class SalesOrderHeader
     End Property
 
     Private _CreditCardID As Nullable(Of Global.System.Int32)
-    Partial Private Sub OnCreditCardIDChanging(ByVal value As Nullable(Of Global.System.Int32))
+    Private Partial Sub OnCreditCardIDChanging(value As Nullable(Of Global.System.Int32))
     End Sub
 
-    Partial Private Sub OnCreditCardIDChanged()
+    Private Partial Sub OnCreditCardIDChanged()
     End Sub
 
     ''' <summary>
     ''' No Metadata Documentation available.
     ''' </summary>
-    <EdmScalarPropertyAttribute(EntityKeyProperty:=False, IsNullable:=True)>
+    <EdmScalarPropertyAttribute(EntityKeyProperty:=false, IsNullable:=true)>
     <DataMemberAttribute()>
     Public Property CreditCardApprovalCode() As Global.System.String
         Get
             Return _CreditCardApprovalCode
         End Get
-        Set(ByVal value As Global.System.String)
+        Set
             OnCreditCardApprovalCodeChanging(value)
             ReportPropertyChanging("CreditCardApprovalCode")
-            _CreditCardApprovalCode = StructuralObject.SetValidValue(value, True)
+            _CreditCardApprovalCode = StructuralObject.SetValidValue(value, true)
             ReportPropertyChanged("CreditCardApprovalCode")
             OnCreditCardApprovalCodeChanged()
         End Set
     End Property
 
     Private _CreditCardApprovalCode As Global.System.String
-    Partial Private Sub OnCreditCardApprovalCodeChanging(ByVal value As Global.System.String)
+    Private Partial Sub OnCreditCardApprovalCodeChanging(value As Global.System.String)
     End Sub
 
-    Partial Private Sub OnCreditCardApprovalCodeChanged()
+    Private Partial Sub OnCreditCardApprovalCodeChanged()
     End Sub
 
     ''' <summary>
     ''' No Metadata Documentation available.
     ''' </summary>
-    <EdmScalarPropertyAttribute(EntityKeyProperty:=False, IsNullable:=True)>
+    <EdmScalarPropertyAttribute(EntityKeyProperty:=false, IsNullable:=true)>
     <DataMemberAttribute()>
     Public Property CurrencyRateID() As Nullable(Of Global.System.Int32)
         Get
             Return _CurrencyRateID
         End Get
-        Set(ByVal value As Nullable(Of Global.System.Int32))
+        Set
             OnCurrencyRateIDChanging(value)
             ReportPropertyChanging("CurrencyRateID")
             _CurrencyRateID = StructuralObject.SetValidValue(value)
@@ -2483,22 +2500,22 @@ Partial Public Class SalesOrderHeader
     End Property
 
     Private _CurrencyRateID As Nullable(Of Global.System.Int32)
-    Partial Private Sub OnCurrencyRateIDChanging(ByVal value As Nullable(Of Global.System.Int32))
+    Private Partial Sub OnCurrencyRateIDChanging(value As Nullable(Of Global.System.Int32))
     End Sub
 
-    Partial Private Sub OnCurrencyRateIDChanged()
+    Private Partial Sub OnCurrencyRateIDChanged()
     End Sub
 
     ''' <summary>
     ''' No Metadata Documentation available.
     ''' </summary>
-    <EdmScalarPropertyAttribute(EntityKeyProperty:=False, IsNullable:=False)>
+    <EdmScalarPropertyAttribute(EntityKeyProperty:=false, IsNullable:=false)>
     <DataMemberAttribute()>
     Public Property SubTotal() As Global.System.Decimal
         Get
             Return _SubTotal
         End Get
-        Set(ByVal value As Global.System.Decimal)
+        Set
             OnSubTotalChanging(value)
             ReportPropertyChanging("SubTotal")
             _SubTotal = StructuralObject.SetValidValue(value)
@@ -2508,22 +2525,22 @@ Partial Public Class SalesOrderHeader
     End Property
 
     Private _SubTotal As Global.System.Decimal
-    Partial Private Sub OnSubTotalChanging(ByVal value As Global.System.Decimal)
+    Private Partial Sub OnSubTotalChanging(value As Global.System.Decimal)
     End Sub
 
-    Partial Private Sub OnSubTotalChanged()
+    Private Partial Sub OnSubTotalChanged()
     End Sub
 
     ''' <summary>
     ''' No Metadata Documentation available.
     ''' </summary>
-    <EdmScalarPropertyAttribute(EntityKeyProperty:=False, IsNullable:=False)>
+    <EdmScalarPropertyAttribute(EntityKeyProperty:=false, IsNullable:=false)>
     <DataMemberAttribute()>
     Public Property TaxAmt() As Global.System.Decimal
         Get
             Return _TaxAmt
         End Get
-        Set(ByVal value As Global.System.Decimal)
+        Set
             OnTaxAmtChanging(value)
             ReportPropertyChanging("TaxAmt")
             _TaxAmt = StructuralObject.SetValidValue(value)
@@ -2533,22 +2550,22 @@ Partial Public Class SalesOrderHeader
     End Property
 
     Private _TaxAmt As Global.System.Decimal
-    Partial Private Sub OnTaxAmtChanging(ByVal value As Global.System.Decimal)
+    Private Partial Sub OnTaxAmtChanging(value As Global.System.Decimal)
     End Sub
 
-    Partial Private Sub OnTaxAmtChanged()
+    Private Partial Sub OnTaxAmtChanged()
     End Sub
 
     ''' <summary>
     ''' No Metadata Documentation available.
     ''' </summary>
-    <EdmScalarPropertyAttribute(EntityKeyProperty:=False, IsNullable:=False)>
+    <EdmScalarPropertyAttribute(EntityKeyProperty:=false, IsNullable:=false)>
     <DataMemberAttribute()>
     Public Property Freight() As Global.System.Decimal
         Get
             Return _Freight
         End Get
-        Set(ByVal value As Global.System.Decimal)
+        Set
             OnFreightChanging(value)
             ReportPropertyChanging("Freight")
             _Freight = StructuralObject.SetValidValue(value)
@@ -2558,22 +2575,22 @@ Partial Public Class SalesOrderHeader
     End Property
 
     Private _Freight As Global.System.Decimal
-    Partial Private Sub OnFreightChanging(ByVal value As Global.System.Decimal)
+    Private Partial Sub OnFreightChanging(value As Global.System.Decimal)
     End Sub
 
-    Partial Private Sub OnFreightChanged()
+    Private Partial Sub OnFreightChanged()
     End Sub
 
     ''' <summary>
     ''' No Metadata Documentation available.
     ''' </summary>
-    <EdmScalarPropertyAttribute(EntityKeyProperty:=False, IsNullable:=False)>
+    <EdmScalarPropertyAttribute(EntityKeyProperty:=false, IsNullable:=false)>
     <DataMemberAttribute()>
     Public Property TotalDue() As Global.System.Decimal
         Get
             Return _TotalDue
         End Get
-        Set(ByVal value As Global.System.Decimal)
+        Set
             OnTotalDueChanging(value)
             ReportPropertyChanging("TotalDue")
             _TotalDue = StructuralObject.SetValidValue(value)
@@ -2583,47 +2600,47 @@ Partial Public Class SalesOrderHeader
     End Property
 
     Private _TotalDue As Global.System.Decimal
-    Partial Private Sub OnTotalDueChanging(ByVal value As Global.System.Decimal)
+    Private Partial Sub OnTotalDueChanging(value As Global.System.Decimal)
     End Sub
 
-    Partial Private Sub OnTotalDueChanged()
+    Private Partial Sub OnTotalDueChanged()
     End Sub
 
     ''' <summary>
     ''' No Metadata Documentation available.
     ''' </summary>
-    <EdmScalarPropertyAttribute(EntityKeyProperty:=False, IsNullable:=True)>
+    <EdmScalarPropertyAttribute(EntityKeyProperty:=false, IsNullable:=true)>
     <DataMemberAttribute()>
     Public Property Comment() As Global.System.String
         Get
             Return _Comment
         End Get
-        Set(ByVal value As Global.System.String)
+        Set
             OnCommentChanging(value)
             ReportPropertyChanging("Comment")
-            _Comment = StructuralObject.SetValidValue(value, True)
+            _Comment = StructuralObject.SetValidValue(value, true)
             ReportPropertyChanged("Comment")
             OnCommentChanged()
         End Set
     End Property
 
     Private _Comment As Global.System.String
-    Partial Private Sub OnCommentChanging(ByVal value As Global.System.String)
+    Private Partial Sub OnCommentChanging(value As Global.System.String)
     End Sub
 
-    Partial Private Sub OnCommentChanged()
+    Private Partial Sub OnCommentChanged()
     End Sub
 
     ''' <summary>
     ''' No Metadata Documentation available.
     ''' </summary>
-    <EdmScalarPropertyAttribute(EntityKeyProperty:=False, IsNullable:=False)>
+    <EdmScalarPropertyAttribute(EntityKeyProperty:=false, IsNullable:=false)>
     <DataMemberAttribute()>
     Public Property rowguid() As Global.System.Guid
         Get
             Return _rowguid
         End Get
-        Set(ByVal value As Global.System.Guid)
+        Set
             OnrowguidChanging(value)
             ReportPropertyChanging("rowguid")
             _rowguid = StructuralObject.SetValidValue(value)
@@ -2633,22 +2650,22 @@ Partial Public Class SalesOrderHeader
     End Property
 
     Private _rowguid As Global.System.Guid
-    Partial Private Sub OnrowguidChanging(ByVal value As Global.System.Guid)
+    Private Partial Sub OnrowguidChanging(value As Global.System.Guid)
     End Sub
 
-    Partial Private Sub OnrowguidChanged()
+    Private Partial Sub OnrowguidChanged()
     End Sub
 
     ''' <summary>
     ''' No Metadata Documentation available.
     ''' </summary>
-    <EdmScalarPropertyAttribute(EntityKeyProperty:=False, IsNullable:=False)>
+    <EdmScalarPropertyAttribute(EntityKeyProperty:=false, IsNullable:=false)>
     <DataMemberAttribute()>
     Public Property ModifiedDate() As Global.System.DateTime
         Get
             Return _ModifiedDate
         End Get
-        Set(ByVal value As Global.System.DateTime)
+        Set
             OnModifiedDateChanging(value)
             ReportPropertyChanging("ModifiedDate")
             _ModifiedDate = StructuralObject.SetValidValue(value)
@@ -2658,14 +2675,15 @@ Partial Public Class SalesOrderHeader
     End Property
 
     Private _ModifiedDate As Global.System.DateTime
-    Partial Private Sub OnModifiedDateChanging(ByVal value As Global.System.DateTime)
+    Private Partial Sub OnModifiedDateChanging(value As Global.System.DateTime)
     End Sub
 
-    Partial Private Sub OnModifiedDateChanged()
+    Private Partial Sub OnModifiedDateChanged()
     End Sub
 
-#End Region
-#Region "Navigation Properties"
+    #End Region
+
+    #Region "Navigation Properties"
 
     ''' <summary>
     ''' No Metadata Documentation available.
@@ -2678,7 +2696,7 @@ Partial Public Class SalesOrderHeader
         Get
             Return CType(Me, IEntityWithRelationships).RelationshipManager.GetRelatedReference(Of Address)("AdventureWorksModel.FK_SalesOrderHeader_Address_BillToAddressID", "Address").Value
         End Get
-        Set(ByVal value As Address)
+        Set
             CType(Me, IEntityWithRelationships).RelationshipManager.GetRelatedReference(Of Address)("AdventureWorksModel.FK_SalesOrderHeader_Address_BillToAddressID", "Address").Value = value
         End Set
     End Property
@@ -2691,8 +2709,8 @@ Partial Public Class SalesOrderHeader
         Get
             Return CType(Me, IEntityWithRelationships).RelationshipManager.GetRelatedReference(Of Address)("AdventureWorksModel.FK_SalesOrderHeader_Address_BillToAddressID", "Address")
         End Get
-        Set(ByVal value As EntityReference(Of Address))
-            If (Not value Is Nothing) Then
+        Set
+            If (Not value Is Nothing)
                 CType(Me, IEntityWithRelationships).RelationshipManager.InitializeRelatedReference(Of Address)("AdventureWorksModel.FK_SalesOrderHeader_Address_BillToAddressID", "Address", value)
             End If
         End Set
@@ -2709,7 +2727,7 @@ Partial Public Class SalesOrderHeader
         Get
             Return CType(Me, IEntityWithRelationships).RelationshipManager.GetRelatedReference(Of Address)("AdventureWorksModel.FK_SalesOrderHeader_Address_ShipToAddressID", "Address").Value
         End Get
-        Set(ByVal value As Address)
+        Set
             CType(Me, IEntityWithRelationships).RelationshipManager.GetRelatedReference(Of Address)("AdventureWorksModel.FK_SalesOrderHeader_Address_ShipToAddressID", "Address").Value = value
         End Set
     End Property
@@ -2722,8 +2740,8 @@ Partial Public Class SalesOrderHeader
         Get
             Return CType(Me, IEntityWithRelationships).RelationshipManager.GetRelatedReference(Of Address)("AdventureWorksModel.FK_SalesOrderHeader_Address_ShipToAddressID", "Address")
         End Get
-        Set(ByVal value As EntityReference(Of Address))
-            If (Not value Is Nothing) Then
+        Set
+            If (Not value Is Nothing)
                 CType(Me, IEntityWithRelationships).RelationshipManager.InitializeRelatedReference(Of Address)("AdventureWorksModel.FK_SalesOrderHeader_Address_ShipToAddressID", "Address", value)
             End If
         End Set
@@ -2740,7 +2758,7 @@ Partial Public Class SalesOrderHeader
         Get
             Return CType(Me, IEntityWithRelationships).RelationshipManager.GetRelatedReference(Of Contact)("AdventureWorksModel.FK_SalesOrderHeader_Contact_ContactID", "Contact").Value
         End Get
-        Set(ByVal value As Contact)
+        Set
             CType(Me, IEntityWithRelationships).RelationshipManager.GetRelatedReference(Of Contact)("AdventureWorksModel.FK_SalesOrderHeader_Contact_ContactID", "Contact").Value = value
         End Set
     End Property
@@ -2753,8 +2771,8 @@ Partial Public Class SalesOrderHeader
         Get
             Return CType(Me, IEntityWithRelationships).RelationshipManager.GetRelatedReference(Of Contact)("AdventureWorksModel.FK_SalesOrderHeader_Contact_ContactID", "Contact")
         End Get
-        Set(ByVal value As EntityReference(Of Contact))
-            If (Not value Is Nothing) Then
+        Set
+            If (Not value Is Nothing)
                 CType(Me, IEntityWithRelationships).RelationshipManager.InitializeRelatedReference(Of Contact)("AdventureWorksModel.FK_SalesOrderHeader_Contact_ContactID", "Contact", value)
             End If
         End Set
@@ -2767,21 +2785,23 @@ Partial Public Class SalesOrderHeader
     <SoapIgnoreAttribute()>
     <DataMemberAttribute()>
     <EdmRelationshipNavigationPropertyAttribute("AdventureWorksModel", "FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID", "SalesOrderDetail")>
-    Public Property SalesOrderDetails() As EntityCollection(Of SalesOrderDetail)
+     Public Property SalesOrderDetails() As EntityCollection(Of SalesOrderDetail)
         Get
-            Return CType(Me, IEntityWithRelationships).RelationshipManager.GetRelatedCollection(Of SalesOrderDetail)("AdventureWorksModel.FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID", "SalesOrderDetail")
+            Return CType(Me,IEntityWithRelationships).RelationshipManager.GetRelatedCollection(Of SalesOrderDetail)("AdventureWorksModel.FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID", "SalesOrderDetail")
         End Get
-        Set(ByVal value As EntityCollection(Of SalesOrderDetail))
-            If (Not value Is Nothing) Then
+        Set
+            If (Not value Is Nothing)
                 CType(Me, IEntityWithRelationships).RelationshipManager.InitializeRelatedCollection(Of SalesOrderDetail)("AdventureWorksModel.FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID", "SalesOrderDetail", value)
             End If
         End Set
     End Property
 
-#End Region
+    #End Region
+
 End Class
 
 #End Region
+
 #Region "ComplexTypes"
 
 ''' <summary>
@@ -2845,7 +2865,9 @@ Public Partial Class EmailPhone
     End Sub
 
     #End Region
+
 End Class
 
 #End Region
+
 

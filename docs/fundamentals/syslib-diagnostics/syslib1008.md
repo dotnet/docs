@@ -2,6 +2,8 @@
 title: SYSLIB1008 error
 description: Learn about the diagnostic that generates compile-time error SYSLIB1008.
 ms.date: 05/07/2021
+f1_keywords:
+  - syslib1008
 ---
 
 # SYSLIB1008: One of the arguments to a logging method must implement the `ILogger` interface

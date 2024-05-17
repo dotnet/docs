@@ -1,7 +1,7 @@
 ---
 title: "How to: Cancel a Task and Its Children"
 description: See examples of how to cancel a task and its children in .NET. The examples cover steps from cancelable task creation, to the notice that the task was canceled.
-ms.date: "03/30/2017"
+ms.date: 04/09/2024
 dev_langs: 
   - "csharp"
   - "vb"
@@ -11,7 +11,7 @@ ms.assetid: 08574301-8331-4719-ad50-9cf7f6ff3048
 ---
 # How to: Cancel a Task and Its Children
 
-These examples show how to perform the following tasks:  
+These examples show how to perform the following tasks:
   
 1. Create and start a cancelable task.  
   

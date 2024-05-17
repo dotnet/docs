@@ -23,16 +23,40 @@ public DiagnosticsClient
         bool requestRundown = true,
         int circularBufferMB = 256);
 
+    public Task<EventPipeSession> StartEventPipeSessionAsync(
+        IEnumerable<EventPipeProvider> providers,
+        bool requestRundown,
+        int circularBufferMB = 256,
+        CancellationToken token = default);
+
     public void WriteDump(
         DumpType dumpType,
         string dumpPath,
         bool logDumpGeneration = false);
+
+    public async Task WriteDumpAsync(
+        DumpType dumpType,
+        string dumpPath,
+        bool logDumpGeneration,
+        CancellationToken token);
 
     public void AttachProfiler(
         TimeSpan attachTimeout,
         Guid profilerGuid,
         string profilerPath,
         byte[] additionalData = null);
+
+    public void SetStartupProfiler(
+        Guid profilerGuid,
+        string profilerPath);
+
+    public void ResumeRuntime();
+
+    public void SetEnvironmentVariable(
+        string name,
+        string value);
+
+    public Dictionary<string, string> GetProcessEnvironment();
 
     public static IEnumerable<int> GetPublishedProcesses();
 }
@@ -54,7 +78,12 @@ Creates a new instance of `DiagnosticsClient` for a compatible .NET process runn
 public EventPipeSession StartEventPipeSession(
     IEnumerable<EventPipeProvider> providers,
     bool requestRundown = true,
-    int circularBufferMB = 256)
+    int circularBufferMB = 256);
+public Task<EventPipeSession> StartEventPipeSessionAsync(
+    IEnumerable<EventPipeProvider> providers,
+    bool requestRundown,
+    int circularBufferMB = 256,
+    CancellationToken token = default);
 ```
 
 Starts an EventPipe tracing session using the given providers and settings.
@@ -62,24 +91,28 @@ Starts an EventPipe tracing session using the given providers and settings.
 * `providers` : An `IEnumerable` of [`EventPipeProvider`](#eventpipeprovider-class)s to start tracing.
 * `requestRundown`: A `bool` specifying whether rundown provider events from the target app's runtime should be requested.
 * `circularBufferMB`: An `int` specifying the total size of circular buffer used by the target app's runtime on collecting events.
+* `token` (for the Async overload): The token to monitor for cancellation requests.
 
 ```csharp
-public EventPipeSession StartEventPipeSession(EventPipeProvider providers, bool requestRundown=true, int circularBufferMB=256)
+public EventPipeSession StartEventPipeSession(EventPipeProvider provider, bool requestRundown = true, int circularBufferMB = 256)
+public Task<EventPipeSession> StartEventPipeSessionAsync(EventPipeProvider provider, bool requestRundown, int circularBufferMB = 256, CancellationToken token = default)
 ```
 
-* `providers` : An [`EventPipeProvider`](#eventpipeprovider-class) to start tracing.
+* `provider` : An [`EventPipeProvider`](#eventpipeprovider-class) to start tracing.
 * `requestRundown`: A `bool` specifying whether rundown provider events from the target app's runtime should be requested.
 * `circularBufferMB`: An `int` specifying the total size of circular buffer used by the target app's runtime on collecting events.
+* `token` (for the Async overload): The token to monitor for cancellation requests.
 
 > [!NOTE]
-> Rundown events contain payloads that may be needed for post analysis, such as resolving method names of thread samples. Unless you know you do not want this, we recommend setting this to true. In large applications, this may take a while.
-
-* `circularBufferMB` : The size of the circular buffer to be used as a buffer for writing events within the runtime.
+> Rundown events contain payloads that may be needed for post analysis, such as resolving method names of thread samples. Unless you know you do not want this, we recommend setting `requestRundown` to true. In large applications, this may take a while.
 
 ### WriteDump method
 
 ```csharp
-public void WriteDump(DumpType dumpType, string dumpPath, bool logDumpGeneration=false);
+public void WriteDump(
+    DumpType dumpType,
+    string dumpPath,
+    bool logDumpGeneration=false);
 ```
 
 Request a dump for post-mortem debugging of the target application. The type of the dump can be specified using the [`DumpType`](#dumptype-enum) enum.
@@ -88,10 +121,46 @@ Request a dump for post-mortem debugging of the target application. The type of 
 * `dumpPath` : The path to the dump to be written out to.
 * `logDumpGeneration` : If set to `true`, the target application will write out diagnostic logs during dump generation.
 
+```csharp
+public void WriteDump(DumpType dumpType, string dumpPath, WriteDumpFlags flags)
+```
+
+Request a dump for post-mortem debugging of the target application. The type of the dump can be specified using the [`DumpType`](#dumptype-enum) enum.
+
+* `dumpType` : Type of the dump to be requested.
+* `dumpPath` : The path to the dump to be written out to.
+* `flags` : logging and crash report flags. On runtimes less than 6.0, only LoggingEnabled is supported.
+
+```csharp
+public async Task WriteDumpAsync(DumpType dumpType, string dumpPath, bool logDumpGeneration, CancellationToken token)
+```
+
+Request a dump for post-mortem debugging of the target application. The type of the dump can be specified using the [`DumpType`](#dumptype-enum) enum.
+
+* `dumpType` : Type of the dump to be requested.
+* `dumpPath` : The path to the dump to be written out to.
+* `logDumpGeneration` : If set to `true`, the target application will write out diagnostic logs during dump generation.
+* `token` : The token to monitor for cancellation requests.
+
+```csharp
+public async Task WriteDumpAsync(DumpType dumpType, string dumpPath, WriteDumpFlags flags, CancellationToken token)
+```
+
+Request a dump for post-mortem debugging of the target application. The type of the dump can be specified using the [`DumpType`](#dumptype-enum) enum.
+
+* `dumpType` : Type of the dump to be requested.
+* `dumpPath` : The path to the dump to be written out to.
+* `flags` : logging and crash report flags. On runtimes less than 6.0, only LoggingEnabled is supported.
+* `token` : The token to monitor for cancellation requests.
+
 ### AttachProfiler method
 
 ```csharp
-public void AttachProfiler(TimeSpan attachTimeout, Guid profilerGuid, string profilerPath, byte[] additionalData=null);
+public void AttachProfiler(
+    TimeSpan attachTimeout,
+    Guid profilerGuid,
+    string profilerPath,
+    byte[] additionalData=null);
 ```
 
 Request to attach an ICorProfiler to the target application.
@@ -100,6 +169,48 @@ Request to attach an ICorProfiler to the target application.
 * `profilerGuid` :  `Guid` of the ICorProfiler to be attached.
 * `profilerPath` : Path to the ICorProfiler dll to be attached.
 * `additionalData` : Optional additional data that can be passed to the runtime during profiler attach.
+
+### SetStartupProfiler method
+
+```csharp
+public void SetStartupProfiler(
+        Guid profilerGuid,
+        string profilerPath);
+```
+
+Set a profiler as the startup profiler. It is only valid to issue this command while the runtime is paused at startup.
+
+* `profilerGuid` : `Guid` for the profiler to be attached.
+* `profilerPath` : Path to the profiler to be attached.
+
+### ResumeRuntime method
+
+```csharp
+public void ResumeRuntime();
+```
+
+Tell the runtime to resume execution after being paused at startup.
+
+### SetEnvironmentVariable method
+
+```csharp
+public void SetEnvironmentVariable(
+    string name,
+    string value);
+```
+
+Set an environment variable in the target process.
+
+* `name` : The name of the environment variable to set.
+* `value` : The value of the environment variable to set.
+
+### GetProcessEnvironment
+
+```csharp
+public Dictionary<string, string> GetProcessEnvironment()
+```
+
+Gets all environment variables and their values from the target process.
 
 ### GetPublishedProcesses method
 

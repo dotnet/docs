@@ -61,7 +61,7 @@ class SecurityPrincipalDemo
 
         // Construct a GenericIdentity object based on the current Windows
         // identity name and authentication type.
-        string authenticationType = windowsIdentity.AuthenticationType;
+        string authenticationType = windowsIdentity.AuthenticationType!;
         string userName = windowsIdentity.Name;
         GenericIdentity genericIdentity =
             new GenericIdentity(userName, authenticationType);

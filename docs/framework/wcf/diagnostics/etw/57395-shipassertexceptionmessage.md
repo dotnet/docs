@@ -6,10 +6,10 @@ ms.assetid: 37f0c15b-e34e-42fe-8f86-b122e592add5
 ---
 # 57395 - ShipAssertExceptionMessage
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|57395|  
 |Keywords|Infrastructure|  
 |Level|Error|  

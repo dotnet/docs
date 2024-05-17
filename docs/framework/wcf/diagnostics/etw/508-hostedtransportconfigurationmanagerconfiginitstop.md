@@ -6,10 +6,10 @@ ms.assetid: 24838d74-05e4-4860-876e-428f947dc7ca
 ---
 # 508 - HostedTransportConfigurationManagerConfigInitStop
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|508|  
 |Keywords|WebHost|  
 |Level|Information|  

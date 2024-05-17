@@ -10,8 +10,8 @@ ms.topic: "reference"
   
 ## Error handling activities  
   
-|||  
-|-|-|  
-|<xref:System.Activities.Statements.Rethrow>|Rethrows the last exception thrown from within a `TryCatch` activity.|  
-|<xref:System.Activities.Statements.Throw>|Throws an exception.|  
-|<xref:System.Activities.Statements.TryCatch>|Implements exception handling.|
+| Activity type                                | Description                                                           |
+| -------------------------------------------- | --------------------------------------------------------------------- |
+| <xref:System.Activities.Statements.Rethrow>  | Rethrows the last exception thrown from within a `TryCatch` activity. |
+| <xref:System.Activities.Statements.Throw>    | Throws an exception.                                                  |
+| <xref:System.Activities.Statements.TryCatch> | Implements exception handling.                                        |

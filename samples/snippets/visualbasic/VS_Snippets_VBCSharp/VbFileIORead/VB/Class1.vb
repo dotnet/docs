@@ -1,5 +1,5 @@
 ﻿Class Class384033c618f94d59961036371226558f
-    ' HowtoReadTextfromFileswithaStreamReader(VisualBasic)
+    ' HowtoReadTextFromFilesWithAStreamReader(VisualBasic)
 
     Public Sub Method1()
         ' <snippet1>
@@ -37,7 +37,7 @@ Class Class735fe9d70f7a4185ba02f35e580ec4b8
 End Class
 
 Class Class8d185eb279ca42cd95a7d3ff44a5a0f8
-    ' HowtoReadFromaTextFilewithMultipleFormatsinVisualBasic
+    ' HowtoReadFromATextFileWithMultipleFormatsInVisualBasic
 
     Public Sub Method4()
         ' <snippet4>
@@ -137,7 +137,7 @@ Class Class8d185eb279ca42cd95a7d3ff44a5a0f8
 End Class
 
 Class Class99be5692967a4e85993ecd18139a5a69
-    ' HowtoReadFromaFixed-widthTextFileinVisualBasic
+    ' HowtoReadFromAFixed-widthTextFileInVisualBasic
 
     Public Sub Method9()
         ' <snippet9>
@@ -221,7 +221,7 @@ Class Class99be5692967a4e85993ecd18139a5a69
 End Class
 
 Class Classa7ce11069e5448f688deb421c19bd128
-    ' HowtoReadfromExistingTextFilesinMyDocuments(VisualBasic)
+    ' HowtoReadfromExistingTextFilesInMyDocuments(VisualBasic)
 
     Public Sub Method14()
         ' <snippet14>
@@ -243,7 +243,7 @@ Class Classa7ce11069e5448f688deb421c19bd128
 End Class
 
 Class Classa8413fe40dba49c8869244fb67a9ec4f
-    ' HowtoReadFromaComma-DelimitedTextFileinVisualBasic
+    ' HowtoReadFromAComma-DelimitedTextFileInVisualBasic
 
     Public Sub Method15()
         ' <snippet15>

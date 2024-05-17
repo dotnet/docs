@@ -8,12 +8,12 @@ ms.assetid: 3908748b-f060-46a2-8043-49e09218d2e5
 
 ## Properties  
   
-|||  
-|-|-|  
-|ID|1403|  
-|Keywords|ServiceModel|  
-|Level|Information|  
-|Channel|Microsoft-Windows-Application Server-Applications/Analytic|  
+| Property | Value                                                      |
+| -------- | ---------------------------------------------------------- |
+| ID       | 1403                                                       |
+| Keywords | ServiceModel                                               |
+| Level    | Information                                                |
+| Channel  | Microsoft-Windows-Application Server-Applications/Analytic |
   
 ## Description  
 

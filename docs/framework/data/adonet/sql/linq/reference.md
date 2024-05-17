@@ -24,7 +24,7 @@ This section provides reference information for [!INCLUDE[vbtecdlinq](../../../.
  [External Mapping](external-mapping.md)  
  Describes the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] external-mapping approach to mapping a [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] object model to a SQL Server database. Provides the XSD schema definition for mapping files.  
   
- [Frequently Asked Questions](frequently-asked-questions.md)  
+ [Frequently Asked Questions](frequently-asked-questions.yml)  
  Provides answers to common questions regarding [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].  
   
  [SQL Server Compact and LINQ to SQL](sql-server-compact-and-linq-to-sql.md)  
@@ -38,7 +38,7 @@ This section provides reference information for [!INCLUDE[vbtecdlinq](../../../.
  [LINQ to SQL](index.md)  
  Provides a portal for [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] topics.  
   
- [Language-Integrated Query (LINQ) - C#](../../../../../csharp/programming-guide/concepts/linq/index.md)  
+ [Language-Integrated Query (LINQ) - C#](/dotnet/csharp/linq/)  
  [Language-Integrated Query (LINQ) - Visual Basic](../../../../../visual-basic/programming-guide/concepts/linq/index.md)  
  Provides portals for LINQ topics.  
   

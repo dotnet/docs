@@ -6,7 +6,6 @@ namespace test
 {
     class Test
     {
-        string message = "Hello";
     }
 
     class Program

@@ -1,6 +1,6 @@
 ---
 description: "public keyword - C# Reference"
-title: "public keyword - C# Reference"
+title: "public keyword"
 ms.date: 07/20/2015
 f1_keywords:
   - "public"
@@ -34,12 +34,10 @@ If you change the `public` access level to [private](private.md) or [protected](
 
 ## C# language specification  
 
-For more information, see [Declared accessibility](~/_csharplang/spec/basic-concepts.md#declared-accessibility) in the [C# Language Specification](/dotnet/csharp/language-reference/language-specification/introduction). The language specification is the definitive source for C# syntax and usage.
+For more information, see [Declared accessibility](~/_csharpstandard/standard/basic-concepts.md#752-declared-accessibility) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
 - [Access Modifiers](../../programming-guide/classes-and-structs/access-modifiers.md)
 - [C# Keywords](index.md)
 - [Access Modifiers](access-modifiers.md)

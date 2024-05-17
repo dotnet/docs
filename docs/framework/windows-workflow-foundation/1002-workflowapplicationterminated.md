@@ -6,10 +6,10 @@ ms.assetid: 4e8b111f-79dc-4898-bb4a-e9b36f69420f
 ---
 # 1002 - WorkflowApplicationTerminated
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1002|  
 |Keywords|WFRuntime|  
 |Level|Information|  

@@ -1,7 +1,7 @@
 ---
 title: "Exposing .NET Core components to COM"
 description: "This tutorial shows you how to expose a class to COM from .NET Core. You generate a COM server and a side-by-side server manifest for Registry-Free COM."
-ms.date: "07/12/2019"
+ms.date: 07/12/2019
 helpviewer_keywords:
   - "exposing .NET Core components to COM"
   - "interoperation with unmanaged code, exposing .NET Core components"
@@ -11,9 +11,9 @@ author: "jkoritzinsky"
 ms.author: "jekoritz"
 ---
 
-# Exposing .NET Core components to COM
+# Expose .NET Core components to COM
 
-In .NET Core, the process for exposing your .NET objects to COM has been significantly streamlined in comparison to .NET Framework. The following process will walk you through how to expose a class to COM. This tutorial shows you how to:
+This article walks you through how to expose a class to COM from .NET Core (or .NET 5+). This tutorial shows you how to:
 
 - Expose a class to COM from .NET Core.
 - Generate a COM server as part of building your .NET Core library.
@@ -84,7 +84,7 @@ The resulting output will now also have a `ProjectName.X.manifest` file. This fi
 
 Unlike in .NET Framework, there is no support in .NET Core or .NET 5+ for generating a [COM Type Library (TLB)](/windows/win32/midl/com-dcom-and-type-libraries#type-library) from a .NET assembly. The guidance is to either manually write an IDL file or a C/C++ header for the native declarations of the COM interfaces. If you decide to write an IDL file, you can compile it with the Visual C++ SDK's MIDL compiler to produce a TLB.
 
-In .NET 6 Preview 5 and later versions, the .NET SDK supports embedding already-compiled TLBs into the COM host as part of your project build.
+In .NET 6 and later versions, the .NET SDK supports embedding already-compiled TLBs into the COM host as part of your project build.
 
 To embed a type library into your application, follow these steps:
 
@@ -97,6 +97,18 @@ For example, the following code block adds the `Server.tlb` type library at inde
 ```xml
 <ItemGroup>
     <ComHostTypeLibrary Include="Server.tlb" Id="1" />
+</ItemGroup>
+```
+
+## Loading in the default `AssemblyLoadContext`
+
+During activation, the assembly containing the COM component is loaded in a separate <xref:System.Runtime.Loader.AssemblyLoadContext> based on the assembly path. If there is one assembly providing multiple COM servers, the `AssemblyLoadContext` is reused such that all of the servers from that assembly reside in the same load context. If there are multiple assemblies providing COM servers, a new `AssemblyLoadContext` is created for each assembly, and each server resides in the load context that corresponds to its assembly.
+
+In .NET 8 and later versions, the assembly can specify that it should be loaded in the default `AssemblyLoadContext`. To enable loading in the default context, add the following [RuntimeHostConfigurationOption](../runtime-config/index.md#msbuild-properties) item to the project:
+
+```xml
+<ItemGroup>
+  <RuntimeHostConfigurationOption Include="System.Runtime.InteropServices.COM.LoadComponentInDefaultContext" Value="true" />
 </ItemGroup>
 ```
 

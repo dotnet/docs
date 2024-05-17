@@ -32,13 +32,13 @@ HRESULT DynamicMethodJITCompilationStarted(
 `functionId`  
 [in] The identifier of the in-memory function for which JIT compilation is started.
 
-`fIsSafeToBlock`
+`fIsSafeToBlock`\
 [in] `true` to indicate that blocking may cause the runtime to wait for the calling thread to return from this callback; `false` to indicate that blocking will not affect the operation of the runtime.  
 
-`pILHeader`
+`pILHeader`\
 [in] A pointer to the first byte of the method's IL header.
 
-`cbILHeader`
+`cbILHeader`\
 [in] The number of bytes in the IL header.
 
 ## Remarks  

@@ -6,10 +6,10 @@ ms.assetid: eb015842-cc5a-47be-bce5-6af39e567723
 ---
 # 1150 - CompensationState
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1150|  
 |Keywords|WFActivities|  
 |Level|Information|  

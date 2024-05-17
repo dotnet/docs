@@ -30,7 +30,7 @@ HRESULT ExceptionSearchFilterEnter(
   
 ## Parameters
 
-`functionId`
+`functionId`\
 [in] The ID of the function that contains the filter.
 
 ## Requirements  

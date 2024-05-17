@@ -21,7 +21,6 @@
         '</Snippet171>
     End Sub
 
-
     Private Sub Example2()
         '<Snippet172>
         Dim index As Integer = 0
@@ -48,7 +47,6 @@
         '</Snippet172>
     End Sub
 
-
     '<Snippet173>
     Private Sub ShowText(ByVal textFilePath As String)
         If System.IO.File.Exists(textFilePath) = False Then
@@ -64,6 +62,5 @@
         End If
     End Sub
     '</Snippet173>
-
 
 End Class

@@ -56,7 +56,7 @@ The Visual Basic compiler converts descendant axis properties into calls to the 
 
 The name in a descendant axis property can use only XML namespaces declared globally with the `Imports` statement. It cannot use XML namespaces declared locally within XML element literals. For more information, see [Imports Statement (XML Namespace)](../statements/imports-statement-xml-namespace.md).
 
-## Example
+## Example 1
 
 The following example shows how to access the value of the first descendant node named `name` and the values of all descendant nodes named `phone` from the `contacts` object.
 
@@ -68,7 +68,7 @@ This code displays the following text:
 
 `Home Phone = 206-555-0144`
 
-## Example
+## Example 2
 
 The following example declares `ns` as an XML namespace prefix. It then uses the prefix of the namespace to create an XML literal and access the value of the first child node with the qualified name `ns:name`.
 

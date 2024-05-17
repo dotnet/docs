@@ -85,13 +85,13 @@ Local constants (inside a procedure) default to public access, and you cannot us
 
 - **Qualification.** Code outside a class, structure, or module must qualify a member constant's name with the name of that class, structure, or module. Code outside a procedure or block cannot refer to any local constants within that procedure or block.
 
-## Example
+## Example 1
 
 The following example uses the `Const` statement to declare constants for use in place of literal values.
 
 [!code-vb[VbVbalrStatements#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#13)]
 
-## Example
+## Example 2
 
 If you define a constant with data type `Object`, the Visual Basic compiler gives it the type of `initializer`, instead of `Object`. In the following example, the constant `naturalLogBase` has the run-time type `Decimal`.
 

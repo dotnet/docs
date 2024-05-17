@@ -8,11 +8,15 @@ rebuild.cmd
 *.bim.layout
 *.bim_*.settings
 
+*.exe
+*.msi
+
 _site/
 api/
 _themes/
 _themes.pdf/
 _csharplang/
+_csharpstandard/
 _vblang/
 log/
 .optemp/
@@ -26,6 +30,7 @@ _dependentPackages/
 !/xml/System.Net.Cache/
 
 # Visual Studio Code
+**/.vscode/
 .vscode/
 !.vscode/extensions.json
 
@@ -49,3 +54,12 @@ ehthumbs_vista.db
 # Ionide folder, used in F# for VSCode
 .ionide/
 docs/core/extensions/snippets/workers/cloud-service/Properties/PublishProfiles/cloudworker.pubxml
+docs/csharp/language-reference/xmldoc/snippets/xmldoc/xmldoc.xml
+
+BenchmarkDotNet.Artifacts
+*.pfx
+/samples/snippets/csharp/concepts/.editorconfig
+/.gitignore
+
+# ReplayCheck (temporary)
+.replaycheck/

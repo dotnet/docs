@@ -1,9 +1,9 @@
 ﻿using System;
 
-namespace ConsoleApplication1
+namespace ConsoleApplication2
 {
     // <snippet2>
-    class Program
+    class ProgramTwo
     {
         static void Main()
         {
@@ -27,8 +27,7 @@ namespace ConsoleApplication1
 
         protected virtual void OnThresholdReached(EventArgs e)
         {
-            EventHandler handler = ThresholdReached;
-            handler?.Invoke(this, e);
+            ThresholdReached?.Invoke(this, e);
         }
 
         // provide remaining implementation for the class

@@ -6,10 +6,10 @@ ms.assetid: 14696793-16eb-4847-a530-fa2f90f682c9
 ---
 # 4010 - PendingSessionQueueFull
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4010|  
 |Keywords|ActivationServices|  
 |Level|Warning|  

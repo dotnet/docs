@@ -18,7 +18,7 @@ The article [Sample XSD file: Customers and orders](sample-xsd-file-customers-or
 
 With LINQ to XML, you can take advantage of this relationship by using the `join` clause to join customer information to order information.
 
-For more detailed information about `join`, see [Join Operations (C#)](../../csharp/programming-guide/concepts/linq/join-operations.md) and [Join Operations (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/join-operations.md).
+For more detailed information about `join`, see [Join Operations (C#)](../../csharp/linq/standard-query-operators/join-operations.md) and [Join Operations (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/join-operations.md).
 > [!NOTE]
 > Joins are done using linear searches. There are no indexes to boost search performance.
 

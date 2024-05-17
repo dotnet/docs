@@ -2,6 +2,8 @@
 title: SYSLIB0002 error
 description: Learn about the obsoletion that generates compile-time error SYSLIB0002.
 ms.date: 10/20/2020
+f1_keywords:
+  - syslib0002
 ---
 # SYSLIB0002: PrincipalPermissionAttribute is obsolete
 
@@ -52,8 +54,6 @@ Unlike other obsoletion warnings, you can't suppress the error.
       // Code that should run only when user is an administrator.
   }
   ```
-
-[!INCLUDE [suppress-syslib-warning](includes/suppress-syslib-warning.md)]
 
 ## See also
 

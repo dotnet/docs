@@ -1,10 +1,11 @@
 ---
 title: Make predictions with a trained model
-description: Learn to make predictions using a trained model
-ms.date: 09/18/2019
+description: Learn to make predictions using a trained ML.NET model
+ms.date: 10/05/2021
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc, how-to
+ms.topic: how-to
 #Customer intent: As a developer I want to use my model to make predictions
 ---
 
@@ -84,7 +85,14 @@ HousingPrediction prediction = predictionEngine.Predict(inputData);
 
 If you access the `Score` property of the `prediction` object, you should get a value similar to `150079`.
 
-## Multiple predictions
+> [!TIP]
+> [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) is not thread-safe. Additionally, you have to create an instance of it everywhere it is needed within your application. As your application grows, this process can become unmanageable. For improved performance and thread safety, use a combination of dependency injection and the [PredictionEnginePool](xref:Microsoft.Extensions.ML.PredictionEnginePool%602) service, which creates an [`ObjectPool`](xref:Microsoft.Extensions.ObjectPool.ObjectPool%601) of [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) objects for use throughout your application.
+>
+> For examples on how to use the [PredictionEnginePool](xref:Microsoft.Extensions.ML.PredictionEnginePool%602) service, see [deploy a model to a web API](serve-model-web-api-ml-net.md) and [deploy a model to Azure Functions](serve-model-serverless-azure-functions-ml-net.md).
+>
+> See [dependency injection in ASP.NET Core](/aspnet/core/fundamentals/dependency-injection) for more information.
+
+## Multiple predictions (IDataView)
 
 Given the following data, load it into an [`IDataView`](xref:Microsoft.ML.IDataView). In this case, the name of the [`IDataView`](xref:Microsoft.ML.IDataView) is `inputData`. Because `CurrentPrice` is the target or label you're trying to predict using new data, it's assumed there is no value for it at the moment.
 
@@ -131,3 +139,15 @@ The predicted values in the score column should look like the following:
 | 1 | 144638.2 |
 | 2 | 150079.4 |
 | 3 | 107789.8 |
+
+## Multiple predictions (PredictionEnginePool)
+
+To make multiple predictions using [PredictionEnginePool](xref:Microsoft.Extensions.ML.PredictionEnginePool%602), you can take an `IEnumerable` containing multiple instances of your model input. For example an `IEnumerable<HousingInput>` and apply the [`Predict`](xref:Microsoft.Extensions.ML.PredictionEnginePoolExtensions.Predict%2A) method to each element using LINQ's [`Select`](xref:System.Linq.Enumerable.Select%2A) method.
+
+This code sample assumes you have a [PredictionEnginePool](xref:Microsoft.Extensions.ML.PredictionEnginePool%602) called `predictionEnginePool` and an `IEnumerable<HousingData>` called `housingData`.
+
+```csharp
+IEnumerable<HousingPrediction> predictions = housingData.Select(input => predictionEnginePool.Predict(input));
+```
+
+The result is an `IEnumerable` containing instances of your predictions. In this case, it would be `IEnumerable<HousingPrediction>`.

@@ -43,7 +43,7 @@ This change was introduced to support validators, such as <xref:System.Component
 
 ## Recommended action
 
-Validation frameworks that rely on `ObjectModelValidator` to invoke the existing overload of `ValidationVisitor` must override the new method when targeting .NET 5.0 or later:
+Validation frameworks that rely on `ObjectModelValidator` to invoke the existing overload of `ValidationVisitor` must override the new method when targeting .NET 5 or later:
 
 ```csharp
 public class MyCustomValidationVisitor : ValidationVisitor

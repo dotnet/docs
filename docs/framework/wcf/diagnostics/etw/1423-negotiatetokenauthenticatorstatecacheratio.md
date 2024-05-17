@@ -6,10 +6,10 @@ ms.assetid: 6301db99-bb23-40d1-b8df-f0ae1793ce68
 ---
 # 1423 - NegotiateTokenAuthenticatorStateCacheRatio
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1423|  
 |Keywords|Quota|  
 |Level|Verbose|  

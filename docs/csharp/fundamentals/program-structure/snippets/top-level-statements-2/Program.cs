@@ -1,6 +1,4 @@
-﻿using System;
-
-MyClass.TestMethod();
+﻿MyClass.TestMethod();
 MyNamespace.MyClass.MyMethod();
 
 public class MyClass
@@ -9,7 +7,6 @@ public class MyClass
     {
         Console.WriteLine("Hello World!");
     }
-
 }
 
 namespace MyNamespace

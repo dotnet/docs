@@ -1,13 +1,11 @@
 ---
-title: "How to implement a lightweight class with auto-implemented properties - C# Programming Guide"
+title: "How to implement a lightweight class with auto-implemented properties"
 description: Learn how to create an immutable lightweight class in C# that encapsulates auto-implemented properties. There are two implementation approaches.
-ms.date: 07/20/2015
+ms.date: 07/29/2022
 helpviewer_keywords:
   - "auto-implemented properties [C#]"
   - "properties [C#], auto-implemented"
 ms.topic: how-to
-ms.custom: contperf-fy21q2
-ms.assetid: 1dc5a8ad-a4f7-4f32-8506-3fc6d8c8bfed
 ---
 # How to implement a lightweight class with auto-implemented properties (C# Programming Guide)
 
@@ -16,12 +14,10 @@ This example shows how to create an immutable lightweight class that serves only
 You can make an immutable property in the following ways:
 
 - Declare only the [get](../../language-reference/keywords/get.md) accessor, which makes the property immutable everywhere except in the type's constructor.
-
 - Declare an [init](../../language-reference/keywords/init.md) accessor instead of a `set` accessor, which makes the property settable only in the constructor or by using an [object initializer](object-and-collection-initializers.md).
+- Declare the [set](../../language-reference/keywords/set.md) accessor to be [private](../../language-reference/keywords/private.md).  The property is settable within the type, but it's immutable to consumers.
 
-- Declare the [set](../../language-reference/keywords/set.md) accessor to be [private](../../language-reference/keywords/private.md).  The property is settable within the type, but it is immutable to consumers.
-
-  When you declare a private `set` accessor, you cannot use an object initializer to initialize the property. You must use a constructor or a factory method.
+You can add the [`required`](../../language-reference/keywords/required.md) modifier to the property declaration to force callers to set the property as part of initializing a new object.
 
 The following example shows how a property with only get accessor differs than one with get and private set.
 
@@ -42,7 +38,7 @@ class Contact
     //public void ChangeName(string newName) => Name = newName;
 
     // Address is assignable here.
-    public void ChangeAddress(string newAddress) => Address = newAddress
+    public void ChangeAddress(string newAddress) => Address = newAddress;
 }
 ```
 
@@ -100,10 +96,10 @@ public class Program
     static void Main()
     {
         // Some simple data sources.
-        string[] names = {"Terry Adams","Fadi Fakhouri", "Hanying Feng",
-                            "Cesar Garcia", "Debra Garcia"};
-        string[] addresses = {"123 Main St.", "345 Cypress Ave.", "678 1st Ave",
-                                "12 108th St.", "89 E. 42nd St."};
+        string[] names = ["Terry Adams","Fadi Fakhouri", "Hanying Feng",
+                            "Cesar Garcia", "Debra Garcia"];
+        string[] addresses = ["123 Main St.", "345 Cypress Ave.", "678 1st Ave",
+                                "12 108th St.", "89 E. 42nd St."];
 
         // Simple query to demonstrate object creation in select clause.
         // Create Contact objects by using a constructor.
@@ -127,10 +123,6 @@ public class Program
         // List elements cannot be modified by client code.
         // CS0272:
         // list2[0].Name = "Eugene Zabokritski";
-
-        // Keep the console open in debug mode.
-        Console.WriteLine("Press any key to exit.");
-        Console.ReadKey();
     }
 }
 
@@ -143,7 +135,7 @@ public class Program
 */
 ```
 
-The compiler creates backing fields for each auto-implemented property. The fields are not accessible directly from source code.
+The compiler creates backing fields for each auto-implemented property. The fields aren't accessible directly from source code.
 
 ## See also
 

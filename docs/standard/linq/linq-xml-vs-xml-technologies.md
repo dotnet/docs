@@ -29,7 +29,7 @@ XSLT can be a productive system that yields high-performance applications. For e
 
 However, XSLT doesn't take advantage of the C# and Visual Basic knowledge that many developers have. It requires developers to write code in a different and complex programming language. Using two non-integrated development systems such as C# (or Visual Basic) and XSLT results in software systems that are more difficult to develop and maintain.
 
-After you've mastered LINQ to XML query expressions, LINQ to XML transformations are a powerful technology that's easy to use. Basically, you form your XML document by using functional construction, pulling in data from various sources, constructing <xref:System.Xml.Linq.XElement> objects dynamically, and assembling the whole into a new XML tree. The transformation can generate a completely new document. Constructing transformations in LINQ to XML is relatively easy and intuitive, and the resulting code is readable. This reduces development and maintenance costs.
+After you've become proficient in using LINQ to XML query expressions, LINQ to XML transformations are a powerful technology that's easy to use. Basically, you form your XML document by using functional construction, pulling in data from various sources, constructing <xref:System.Xml.Linq.XElement> objects dynamically, and assembling the whole into a new XML tree. The transformation can generate a completely new document. Constructing transformations in LINQ to XML is relatively easy and intuitive, and the resulting code is readable. This reduces development and maintenance costs.
 
 LINQ to XML isn't intended to replace XSLT. XSLT is still the tool of choice for complicated and document-centric XML transformations, especially if the structure of the document isn't well defined.
 
@@ -41,7 +41,7 @@ XSLT is XML, and that's why it can be programmatically manipulated.
 
 MSXML is the COM-based technology for processing XML that's included with Microsoft Windows. MSXML provides a native implementation of the DOM with support for XPath and XSLT. It also contains the SAX2 non-caching, event-based parser.
 
-MSXML performs well, is secure by default in most scenarios, and can be accessed in Internet Explorer for doing client-side XML processing in AJAX-style applications. MSXML can be used from any programming language that supports COM, including C++, JavaScript, and Visual Basic 6.0.
+MSXML performs well, is secure by default in most scenarios, and can be accessed in a browser for doing client-side XML processing in AJAX-style applications. MSXML can be used from any programming language that supports COM, including C++, JavaScript, and Visual Basic 6.0.
 
 MSXML isn't recommended for use in managed code based on the CLR.
 

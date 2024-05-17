@@ -9,7 +9,7 @@ The SignalR Java Client is now RxJava3.
 
 ## Version introduced
 
-ASP.NET Core 6.0 Preview 4
+ASP.NET Core 6.0
 
 ## Old behavior
 

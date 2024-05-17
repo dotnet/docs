@@ -22,7 +22,7 @@ In a distributed system containing interconnected services, it is necessary to d
 
 2. If you haven’t enabled analytic tracing, expand **Applications and Services Logs**, **Microsoft**, **Windows**, **Application Server-Applications**. Select **View**, **Show Analytic and Debug Logs**. Right-click **Analytic** and select **Enable Log**. Leave Event Viewer open so that traces can be viewed.
 
-3. Open the sample created in the [Getting Started Tutorial](../getting-started-tutorial.md) in Visual Studio 2012. Note that you must run Visual Studio 2012 as an administrator so that the service can be created. If you have the WCF samples installed, you can open the [Getting Started](/previous-versions/dotnet/framework/wcf/samples/getting-started-sample), which contains the completed project created in the tutorial.
+3. Open the sample created in the [Getting Started Tutorial](../getting-started-tutorial.md) in Visual Studio 2012. Note that you must run Visual Studio 2012 as an administrator so that the service can be created. If you have the WCF samples installed, you can open the [Getting Started](../samples/getting-started-sample.md), which contains the completed project created in the tutorial.
 
 4. Right-click the **Service** project and select **Add**, **New Item**. Select **Application Configuration File** and click **OK**.
 

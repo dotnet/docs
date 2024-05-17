@@ -21,7 +21,7 @@ using System.Activities.Validation;
 // Snippets
 // 1 WorkflowApplicationUnhandledExceptionEventArgs
 // 2 IdleEventArgs
-// 3  WorkflowCompletEventArgs
+// 3  WorkflowCompleteEventArgs
 // 4 WorkflowApplicationCompletedEventArgs
 // 5 WorkflowApplicationAbortedEventArgs
 // 6, 7, 8 - UnhandledExceptionAction

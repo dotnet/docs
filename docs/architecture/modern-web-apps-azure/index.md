@@ -3,14 +3,14 @@ title: Architect modern web applications with ASP.NET Core and Azure
 description: A guide that provides end-to-end guidance on building monolithic web applications using ASP.NET Core and Azure.
 author: ardalis
 ms.author: wiwagn
-ms.date: 02/02/2021
+ms.date: 01/10/2022
 ---
 
 # Architect Modern Web Applications with ASP.NET Core and Azure
 
 ![Book cover image of the Architect Modern Web Applications guide.](./media/index/web-application-guide-cover-image.png)
 
-**EDITION v5.0** - Updated to ASP.NET Core 5.0
+**EDITION v8.0** - Updated to ASP.NET Core 8.0
 
 Refer [changelog](https://aka.ms/aspnet-ebook-changelog) for the book updates and community contributions.
 
@@ -24,7 +24,7 @@ One Microsoft Way
 
 Redmond, Washington 98052-6399
 
-Copyright © 2021 by Microsoft Corporation
+Copyright © 2023 by Microsoft Corporation
 
 All rights reserved. No part of the contents of this book may be reproduced or transmitted in any form or by any means without the written permission of the publisher.
 
@@ -56,7 +56,7 @@ Editors:
 
 ## Introduction
 
-.NET 5 and ASP.NET Core offer several advantages over traditional .NET development. You should use .NET 5 for your server applications if some or all of the following are important to your application's success:
+.NET 8 and ASP.NET Core offer several advantages over traditional .NET development. You should use .NET 8 for your server applications if some or all of the following are important to your application's success:
 
 - Cross-platform support.
 
@@ -68,7 +68,7 @@ Editors:
 
 - Side-by-side versioning of .NET versions by application on the same server.
 
-Traditional .NET applications can and do support many of these requirements, but ASP.NET Core and .NET 5 have been optimized to offer improved support for the above scenarios.
+Traditional .NET 4.x apps can and do support many of these requirements, but ASP.NET Core and .NET 8 have been optimized to offer improved support for the above scenarios.
 
 More and more organizations are choosing to host their web applications in the cloud using services like Microsoft Azure. You should consider hosting your application in the cloud if the following are important to your application or organization:
 
@@ -86,11 +86,11 @@ Building web applications with ASP.NET Core, hosted in Azure, offers many compet
 
 ## Version
 
-This guide has been revised to cover **.NET 5.0** version along with many additional updates related to the same "wave" of technologies (that is, Azure and additional third-party technologies) coinciding in time with the .NET 5.0 release. That's why the book version has also been updated to version **5.0**.
+This guide has been revised to cover **.NET 8.0** version along with many additional updates related to the same "wave" of technologies (that is, Azure and additional third-party technologies) coinciding in time with the .NET 8.0 release. That's why the book version has also been updated to version **8.0**.
 
 ## Purpose
 
-This guide provides end-to-end guidance on building *monolithic* web applications using ASP.NET Core and Azure. In this context, "monolithic" refers to the fact that these applications are deployed as a single unit, not as a collection of interacting services and applications.
+This guide provides end-to-end guidance on building *monolithic* web applications using ASP.NET Core and Azure. In this context, "monolithic" refers to the fact that these applications are deployed as a single unit, not as a collection of interacting services and applications. In some contexts, the term *monolith* may be used as a pejorative, but in the vast majority of situations a single application is much easier to build, deploy, and debug than an app composed of many different services, while still achieving the business requirements.
 
 This guide is complementary to ["_.NET Microservices. Architecture for Containerized .NET Applications_"](../microservices/index.md), which focuses more on Docker, microservices, and deployment of containers to host enterprise applications.
 
@@ -113,10 +113,12 @@ This guide has been condensed into a relatively small document that focuses on b
 
 Feel free to forward this guide to your team to help ensure a common understanding of these considerations and opportunities. Having everybody working from a common set of terminology and underlying principles helps ensure consistent application of architectural patterns and practices.
 
+[!INCLUDE [feedback](../includes/feedback.md)]
+
 ## References
 
-- **Choosing between .NET 5 and .NET Framework for server apps**  
-  [https://docs.microsoft.com/dotnet/standard/choosing-core-framework-server](../../standard/choosing-core-framework-server.md)
+- **Choosing between .NET and .NET Framework for server apps**  
+  [https://learn.microsoft.com/dotnet/standard/choosing-core-framework-server](../../standard/choosing-core-framework-server.md)
 
 >[!div class="step-by-step"]
 >[Next](modern-web-applications-characteristics.md)

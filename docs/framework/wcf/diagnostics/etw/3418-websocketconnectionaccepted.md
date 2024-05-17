@@ -6,10 +6,10 @@ ms.assetid: 684a1806-27a4-4ac8-87d4-9089d55def13
 ---
 # 3418 - WebSocketConnectionAccepted
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3418|  
 |Keywords|HTTP|  
 |Level|Verbose|  

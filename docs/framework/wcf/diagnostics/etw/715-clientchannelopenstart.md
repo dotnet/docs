@@ -6,10 +6,10 @@ ms.assetid: 62be7826-9c4e-4fec-b958-185ddfaed976
 ---
 # 715 - ClientChannelOpenStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|715|  
 |Keywords|ServiceModel|  
 |Level|Information|  

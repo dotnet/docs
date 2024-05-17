@@ -58,7 +58,7 @@ This section of the documentation provides information about Windows Communicati
  [Windows Communication Foundation Tools](tools.md)\
  Describes WCF tools designed to make it easier to create, deploy, and manage WCF applications
 
- [Windows Communication Foundation Samples](/previous-versions/dotnet/framework/wcf/samples/index)\
+ [Windows Communication Foundation Samples](./samples/index.md)\
  Samples that provide instruction on various aspects of Windows Communication Foundation
 
  [Windows Communication Foundation Glossary](glossary.md)\

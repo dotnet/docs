@@ -24,17 +24,19 @@ The downside to strong naming is that .NET Framework on Windows enables strict l
 
 When .NET developers complain about strong naming, what they're usually complaining about is strict assembly loading. Fortunately, this issue is isolated to .NET Framework. .NET 5+, .NET Core, Xamarin, UWP, and most other .NET implementations don't have strict assembly loading, which is the main downside of strong naming.
 
-One important aspect of strong naming is that it's viral: a strong named assembly can only reference other strong named assemblies. If your library isn't strong named, then you have excluded developers who are building an application or library that needs strong naming from using it.
+One important aspect of strong naming on .NET Framework is that it's viral: a strong-named assembly can only reference other strong-named assemblies. If your library isn't strong named, then .NET Framework apps and libraries that need strong naming can't use it.
 
-The benefits of strong naming are:
+The benefits of strong naming on .NET Framework are:
 
 1. The assembly can be referenced and used by other strong-named assemblies.
 2. The assembly can be stored in the Global Assembly Cache (GAC).
 3. The assembly can be loaded side by side with other versions of the assembly. Side-by-side assembly loading is commonly required by applications with plug-in architectures.
 
+Strong naming has no benefits on .NET Core/5+. C# compiler produces CS8002 warning for strong-named assemblies referencing non-strong named assemblies. It is fine to suppress this warning for libraries that target .NET Core/5+ only.
+
 ## Create strong named .NET libraries
 
-You should strong name your open-source .NET libraries. Strong naming an assembly ensures the most people can use it, and strict assembly loading only affects .NET Framework.
+You should strong name your open-source .NET libraries if their targets include .NET Framework or .NET Standard. Strong naming is not required for libraries that target .NET Core/5+ only.
 
 > [!NOTE]
 > This guidance is specific to publicly distributed .NET libraries, such as .NET libraries published on NuGet.org. Strong naming is not required by most .NET applications and should not be done by default.

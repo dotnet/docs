@@ -1,0 +1,90 @@
+### YamlMime:Landing
+
+title: Advanced .NET programming documentation
+summary: Learn about advanced programming concepts in .NET such as threading, parallel programming, asynchronous programming models, native interop, and memory management.
+
+metadata:
+  title: Advanced .NET programming documentation
+  description: Learn about advanced programming concepts in .NET such as threading, parallel programming, asynchronous programming models, native interop, and memory management.
+  ms.topic: landing-page
+  ms.date: 01/17/2023
+
+landingContent:
+
+  # Card
+  - title: Asynchronous programming
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Pattern overview
+            url: ../../standard/asynchronous-programming-patterns/index.md
+          - text: TAP overview
+            url: ../../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md
+          - text: EAP overview
+            url: ../../standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md
+          - text: APM overview
+            url: ../../standard/asynchronous-programming-patterns/asynchronous-programming-model-apm.md
+
+  # Card
+  - title: Threading
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview
+            url: ../../standard/threading/managed-threading-basics.md
+      - linkListType: concept
+        links:
+          - text: Managed thread pool
+            url: ../../standard/threading/the-managed-thread-pool.md
+
+  # Card
+  - title: Parallel programming
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Parallel Programming in .NET
+            url: ../../standard/parallel-programming/index.md
+      - linkListType: concept
+        links:
+          - text: Task Parallel Library (TPL)
+            url: ../../standard/parallel-programming/task-parallel-library-tpl.md
+          - text: Task-based asynchronous programming
+            url: ../../standard/parallel-programming/task-based-asynchronous-programming.md
+          - text: Task cancellation
+            url: ../../standard/parallel-programming/task-cancellation.md
+      - linkListType: how-to-guide
+        links:
+          - text: Write a simple parallel program using Parallel.ForEach
+            url: ../../standard/parallel-programming/how-to-write-a-simple-parallel-foreach-loop.md
+          - text: Return a value from a task
+            url: ../../standard/parallel-programming/how-to-return-a-value-from-a-task.md
+
+  # Card
+  - title: Native interoperability
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview
+            url: ../../standard/native-interop/index.md
+          - text: P/Invoke
+            url: ../../standard/native-interop/pinvoke.md
+          - text: Type marshalling
+            url: ../../standard/native-interop/type-marshalling.md
+
+  # Card
+  - title: Memory management
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Managed code
+            url: ../../standard/managed-code.md
+          - text: Garbage collection
+            url: ../../standard/garbage-collection/index.md
+          - text: Unmanaged resources
+            url: ../../standard/garbage-collection/unmanaged.md
+      - linkListType: concept
+        links:
+          - text: Implement a Dispose method
+            url: ../../standard/garbage-collection/implementing-dispose.md
+          - text: Implement a DisposeAsync method
+            url: ../../standard/garbage-collection/implementing-disposeasync.md

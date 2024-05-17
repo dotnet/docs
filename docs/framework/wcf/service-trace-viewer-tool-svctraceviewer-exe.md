@@ -2,7 +2,6 @@
 title: "Service Trace Viewer Tool (SvcTraceViewer.exe)"
 description: Use Service Trace Viewer to merge, view, and filter trace messages in the log so that you can diagnose, repair, and verify WCF service issues.
 ms.date: "03/30/2017"
-ms.topic: reference
 ---
 # Service Trace Viewer Tool (SvcTraceViewer.exe)
 
@@ -134,7 +133,7 @@ The **Activity** view displays activity names, number of traces in the activity,
 
 By clicking any of the listed activities, the traces in this activity are displayed in the trace pane on the right. You can then select a trace to view its details.
 
-You can select multiple activities by pressing the **Ctrl** or **Shift** key and clicking the desired activities. The trace pane displays all the traces of the selected activities.
+You can select multiple activities by pressing the <kbd>Ctrl</kbd> or <kbd>Shift</kbd> key and clicking the desired activities. The trace pane displays all the traces of the selected activities.
 
 You can double-click an activity to display it in **Graph** View. The alternative way is to select an activity and switch to **Graph** View.
 
@@ -151,7 +150,7 @@ This view enables you to manage trace files in the current project. See the Mana
 
 ##### Message View
 
-This view enables you to view all message log traces, including Action, Date/Time, Process, Acivity and From/To, and navigate to the details of the associated message log trace. You can group the message log traces by Activity Boundary, Process/Thread, or Send & Receive for easier navigation of the message flow.
+This view enables you to view all message log traces, including Action, Date/Time, Process, Activity and From/To, and navigate to the details of the associated message log trace. You can group the message log traces by Activity Boundary, Process/Thread, or Send & Receive for easier navigation of the message flow.
 
 ##### Graph View
 
@@ -177,7 +176,7 @@ To expand or collapse activity transfers,
 
 1. Locate the transfer trace with a "+" sign on the left of the transfer icon.
 
-2. Click the "+", or press **Ctrl** and "+" using the keyboard.
+2. Click the "+", or press <kbd>Ctrl</kbd> and "+" using the keyboard.
 
 3. The next activity appears in the graph.
 

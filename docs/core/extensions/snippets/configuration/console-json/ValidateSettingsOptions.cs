@@ -1,40 +1,42 @@
-﻿using System.Text.RegularExpressions;
+﻿using System.Text;
+using System.Text.RegularExpressions;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 
-namespace ConsoleJson.Example
+namespace ConsoleJson.Example;
+
+sealed partial class ValidateSettingsOptions(
+    IConfiguration config)
+    : IValidateOptions<SettingsOptions>
 {
-    class ValidateSettingsOptions : IValidateOptions<SettingsOptions>
+    public SettingsOptions? Settings { get; private set; } =
+        config.GetSection(SettingsOptions.ConfigurationSectionName)
+              .Get<SettingsOptions>();
+
+    public ValidateOptionsResult Validate(string? name, SettingsOptions options)
     {
-        public SettingsOptions _settings { get; private set; }
-
-        public ValidateSettingsOptions(IConfiguration config) =>
-            _settings = config.GetSection(SettingsOptions.Settings)
-                              .Get<SettingsOptions>();
-
-        public ValidateOptionsResult Validate(string name, SettingsOptions options)
+        StringBuilder? failure = null;
+    
+        if (!ValidationRegex().IsMatch(options.SiteTitle))
         {
-            string result = "";
-            var rx = new Regex(@"^[a-zA-Z''-'\s]{1,40}$");
-            Match match = rx.Match(options.SiteTitle);
-            if (string.IsNullOrEmpty(match.Value))
-            {
-                result += $"{options.SiteTitle} doesn't match RegEx\n";
-            }
-
-            if (options.Scale < 0 || options.Scale > 1000)
-            {
-                result += $"{options.Scale} isn't within Range 0 - 1000\n";
-            }
-
-            if (_settings.Scale is 0 && _settings.VerbosityLevel <= _settings.Scale)
-            {
-                result += "VerbosityLevel must be > than Scale.";
-            }
-
-            return result != null 
-                ? ValidateOptionsResult.Fail(result)
-                : ValidateOptionsResult.Success;
+            (failure ??= new()).AppendLine($"{options.SiteTitle} doesn't match RegEx");
         }
+
+        if (options.Scale is < 0 or > 1_000)
+        {
+            (failure ??= new()).AppendLine($"{options.Scale} isn't within Range 0 - 1000");
+        }
+
+        if (Settings is { Scale: 0 } && Settings.VerbosityLevel <= Settings.Scale)
+        {
+            (failure ??= new()).AppendLine("VerbosityLevel must be > than Scale.");
+        }
+
+        return failure is not null
+            ? ValidateOptionsResult.Fail(failure.ToString())
+            : ValidateOptionsResult.Success;
     }
+
+    [GeneratedRegex("^[a-zA-Z''-'\\s]{1,40}$")]
+    private static partial Regex ValidationRegex();
 }

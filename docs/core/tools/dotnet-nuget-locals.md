@@ -6,7 +6,7 @@ ms.date: 02/14/2020
 ---
 # dotnet nuget locals
 
-**This article applies to:** ✔️ .NET Core 2.x SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -41,9 +41,7 @@ The `dotnet nuget locals` command clears or lists local NuGet resources in the h
 
   Forces the application to run using an invariant, English-based culture.
 
-- **`-h|--help`**
-
-  Prints out a short help for the command.
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 - **`-c|--clear`**
 

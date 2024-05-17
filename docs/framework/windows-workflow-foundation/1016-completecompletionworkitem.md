@@ -6,10 +6,10 @@ ms.assetid: 246929fb-6f14-440a-814b-cd8349350644
 ---
 # 1016 - CompleteCompletionWorkItem
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1016|  
 |Keywords|WFRuntime|  
 |Level|Verbose|  

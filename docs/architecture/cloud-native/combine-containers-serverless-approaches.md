@@ -1,10 +1,12 @@
 ---
 title: Combining containers and serverless approaches for cloud-native services
 description: Combining containers and Kubernetes with serverless approaches
-ms.date: 05/13/2020
+ms.date: 04/06/2022
 ---
 
 # Combining containers and serverless approaches
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 Cloud-native applications typically implement services leveraging containers and orchestration. There are often opportunities to expose some of the application's services as Azure Functions. However, with a cloud-native app deployed to Kubernetes, it would be nice to leverage Azure Functions within this same toolset. Fortunately, you can wrap Azure Functions inside Docker containers and deploy them using the same processes and tools as the rest of your Kubernetes-based app.
 
@@ -14,7 +16,7 @@ Your Azure Function has no knowledge of the platform on which it's deployed. For
 
 ## When should you avoid using containers with Azure Functions?
 
-If you want to use consumption billing, you won't be able to run your function in a container. What's more, if you deploy your function to a Kubernetes cluster, you'll no longer benefit from the built-in scaling provided by Azure Functions. You'll need to use Kubernetes' scaling features, described earlier in this chapter.
+If you want to use consumption billing, you can't run your function in a container. What's more, if you deploy your function to a Kubernetes cluster, you'll no longer benefit from the built-in scaling provided by Azure Functions. You'll need to use Kubernetes' scaling features, described earlier in this chapter.
 
 ## How to combine serverless and Docker containers
 
@@ -32,7 +34,7 @@ In this chapter, you've seen that the Azure Functions' platform automatically sc
 
 KEDA provides event-driven scaling functionality to the Functions' runtime in a Docker container. KEDA can scale from zero instances (when no events are occurring) out to `n instances`, based on load. It enables autoscaling by exposing custom metrics to the Kubernetes autoscaler (Horizontal Pod Autoscaler). Using Functions containers with KEDA makes it possible to replicate serverless function capabilities in any Kubernetes cluster.
 
-It is worth noting that the KEDA project is now managed by the Cloud Native Computing Foundation (CNCF).
+It's worth noting that the KEDA project is now managed by the Cloud Native Computing Foundation (CNCF).
 
 >[!div class="step-by-step"]
 >[Previous](leverage-serverless-functions.md)

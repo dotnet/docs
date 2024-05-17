@@ -1,12 +1,9 @@
-﻿using System;
+﻿namespace DependencyInjection.Example;
 
-namespace DependencyInjection.Example
+public class MessageWriter : IMessageWriter
 {
-    public class MessageWriter : IMessageWriter
+    public void Write(string message)
     {
-        public void Write(string message)
-        {
-            Console.WriteLine($"MessageWriter.Write(message: \"{message}\")");
-        }
+        Console.WriteLine($"MessageWriter.Write(message: \"{message}\")");
     }
 }

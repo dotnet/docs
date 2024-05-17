@@ -2,7 +2,7 @@
 
 #### Details
 
-In order to conform to RFC 2396, spaces in route paths are now escaped when populating action parameters from a route. So, whereas  <code>/controller/action/some data</code> would previously match the route <code>/controller/action/{data}</code> and provide <code>some data</code> as the data parameter, it will now provide <code>some%20data</code> instead.
+In order to conform to RFC 2396, spaces in route paths are now escaped when populating action parameters from a route. So, whereas  `/controller/action/some data` would previously match the route `/controller/action/{data}` and provide `some data` as the data parameter, it will now provide `some%20data` instead.
 
 #### Suggestion
 

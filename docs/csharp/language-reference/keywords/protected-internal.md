@@ -1,6 +1,6 @@
 ---
 description: "protected internal - C# Reference"
-title: "protected internal - C# Reference"
+title: "protected internal keyword"
 ms.date: 11/15/2017
 f1_keywords:
   - "protectedinternal_CSharpKeyword"
@@ -58,14 +58,54 @@ In the second file, an attempt to access `myValue` through an instance of `BaseC
 
 Struct members cannot be `protected internal` because the struct cannot be inherited.
 
+## Overriding protected internal members
+
+When overriding a virtual member, the accessibility modifier of the overridden method depends on the assembly where the derived class is defined.
+
+When the derived class is defined in the same assembly as the base class, all overridden members have `protected internal` access. If the derived class is defined in a different assembly from the base class, overridden members have `protected` access.
+
+```csharp
+// Assembly1.cs
+// Compile with: /target:library
+public class BaseClass
+{
+    protected internal virtual int GetExampleValue()
+    {
+        return 5;
+    }
+}
+
+public class DerivedClassSameAssembly : BaseClass
+{
+    // Override to return a different example value, accessibility modifiers remain the same.
+    protected internal override int GetExampleValue()
+    {
+        return 9;
+    }
+}
+```
+
+```csharp
+// Assembly2.cs
+// Compile with: /reference:Assembly1.dll
+class DerivedClassDifferentAssembly : BaseClass
+{
+    // Override to return a different example value, since this override
+    // method is defined in another assembly, the accessibility modifiers
+    // are only protected, instead of protected internal.
+    protected override int GetExampleValue()
+    {
+        return 2;
+    }
+}
+```
+
 ## C# language specification
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [Access Modifiers](access-modifiers.md)
 - [Accessibility Levels](accessibility-levels.md)

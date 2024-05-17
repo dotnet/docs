@@ -1,4 +1,4 @@
-// This computes 3 - 2 - 1, which evalates to -6.
+// This computes 3 - 2 - 1, which evaluates to -6.
 let subtractArray array1 = Array.fold (fun acc elem -> acc - elem) 0 array1
 printfn "%d" (subtractArray [| 1; 2; 3 |])
 

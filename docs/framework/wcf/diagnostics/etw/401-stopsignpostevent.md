@@ -6,10 +6,10 @@ ms.assetid: e033d03a-510d-4300-aa65-ef02cb4807f2
 ---
 # 401- StopSignPostEvent
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|401|  
 |Keywords|Troubleshooting|  
 |Level|Information|  

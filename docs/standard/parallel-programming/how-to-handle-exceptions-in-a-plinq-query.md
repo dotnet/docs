@@ -20,7 +20,7 @@ In some cases when PLINQ falls back to sequential execution, and an exception oc
 >
 > This example is intended to demonstrate usage, and might not run faster than the equivalent sequential LINQ to Objects query. For more information about speedup, see [Understanding Speedup in PLINQ](understanding-speedup-in-plinq.md).
 
-## Example
+## Example 1
 
 This example shows how to put the try-catch blocks around the code that executes the query to catch any <xref:System.AggregateException?displayProperty=nameWithType>s that are thrown.
 
@@ -29,7 +29,7 @@ This example shows how to put the try-catch blocks around the code that executes
 
 In this example, the query cannot continue after the exception is thrown. By the time your application code catches the exception, PLINQ has already stopped the query on all threads.
 
-## Example
+## Example 2
 
 The following example shows how to put a try-catch block in a delegate to make it possible to catch an exception and continue with the query execution.
 

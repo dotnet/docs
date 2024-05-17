@@ -2,6 +2,8 @@
 title: SYSLIB1002 warning
 description: Learn about the diagnostic that generates compile-time warning SYSLIB1002.
 ms.date: 05/07/2021
+f1_keywords:
+  - syslib1002
 ---
 
 # SYSLIB1002: Don't include log level parameters as templates in the logging message

@@ -37,7 +37,7 @@ public interface IOneWayCalculator
 }  
 ```  
   
- For a complete example, see the [One-Way](/previous-versions/dotnet/framework/wcf/samples/one-way) sample.  
+ For a complete example, see the [One-Way](../samples/one-way.md) sample.  
   
 ## Clients Blocking with One-Way Operations  
 
@@ -53,4 +53,4 @@ public interface IOneWayCalculator
   
 ## See also
 
-- [One-Way](/previous-versions/dotnet/framework/wcf/samples/one-way)
+- [One-Way](../samples/one-way.md)

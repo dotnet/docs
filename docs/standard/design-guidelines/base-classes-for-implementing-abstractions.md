@@ -9,6 +9,8 @@ ms.assetid: 37a2d9a4-9721-482a-a40f-eee2c1d97875
 ---
 # Base Classes for Implementing Abstractions
 
+[!INCLUDE [not-current](includes/not-current.md)]
+
 Strictly speaking, a class becomes a base class when another class is derived from it. For the purpose of this section, however, a base class is a class designed mainly to provide a common abstraction or for other classes to reuse some default implementation though inheritance. Base classes usually sit in the middle of inheritance hierarchies, between an abstraction at the root of a hierarchy and several custom implementations at the bottom.
 
  They serve as implementation helpers for implementing abstractions. For example, one of the Framework’s abstractions for ordered collections of items is the <xref:System.Collections.Generic.IList%601> interface. Implementing <xref:System.Collections.Generic.IList%601> is not trivial, and therefore the Framework provides several base classes, such as <xref:System.Collections.ObjectModel.Collection%601> and <xref:System.Collections.ObjectModel.KeyedCollection%602>, which serve as helpers for implementing custom collections.

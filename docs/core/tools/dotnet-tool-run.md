@@ -5,7 +5,7 @@ ms.date: 02/14/2020
 ---
 # dotnet tool run
 
-**This article applies to:** ✔️ .NET Core 3.0 SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -31,9 +31,7 @@ The `dotnet tool run` command searches tool manifest files that are in scope for
 
 ## Options
 
-- **`-h|--help`**
-
-  Prints out a short help for the command.
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 ## Example
 

@@ -6,10 +6,10 @@ ms.assetid: 6995fdd4-520e-46b9-a825-a3001dcdb0ef
 ---
 # 3311 - DispatchSuccessful
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3311|  
 |Keywords|ServiceModel|  
 |Level|Information|  

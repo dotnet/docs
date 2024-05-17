@@ -20,7 +20,7 @@ class Program
                     // Display each file over 10 MB;
                     if (fi.Length > 10000000)
                     {
-                        Console.WriteLine($"{fi.FullName}\t\t{fi.Length.ToString("NO")}");
+                        Console.WriteLine($"{fi.FullName}\t\t{fi.Length.ToString("N0")}");
                     }
                 }
                 catch (UnauthorizedAccessException unAuthTop)
@@ -40,7 +40,7 @@ class Program
                             // Display each file over 10 MB;
                             if (fi.Length > 10000000)
                             {
-                                Console.WriteLine($"{fi.FullName}\t\t{fi.Length.ToString("NO")}");
+                                Console.WriteLine($"{fi.FullName}\t\t{fi.Length.ToString("N0")}");
                             }
                         }
                         catch (UnauthorizedAccessException unAuthFile)

@@ -6,10 +6,10 @@ ms.assetid: 9ee7fcee-e040-4306-968e-ed840a1cb00c
 ---
 # 1148 - FlowchartSwitchCaseNotFound
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1148|  
 |Keywords|WFActivities|  
 |Level|Information|  

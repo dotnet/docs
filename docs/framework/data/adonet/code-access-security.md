@@ -9,9 +9,11 @@ ms.assetid: 93e099eb-daa1-4f1e-b031-c1e10a996f88
 ---
 # Code Access Security and ADO.NET
 
-The .NET Framework offers role-based security as well as code access security (CAS), both of which are implemented using a common infrastructure supplied by the common language runtime (CLR). In the world of unmanaged code, most applications execute with the permissions of the user or principal. As a result, computer systems can be damaged and private data compromised when malicious or error-filled software is run by a user with elevated privileges.  
+.NET Framework offers role-based security as well as code access security (CAS), both of which are implemented using a common infrastructure supplied by the common language runtime (CLR). In the world of unmanaged code, most applications execute with the permissions of the user or principal. As a result, computer systems can be damaged and private data compromised when malicious or error-filled software is run by a user with elevated privileges.  
   
- By contrast, managed code executing in the .NET Framework includes code access security, which applies to code alone. Whether the code is allowed to run or not depends on the code's origin or other aspects of the code's identity, not solely the identity of the principal. This reduces the likelihood that managed code can be misused.  
+ By contrast, managed code executing in .NET Framework includes code access security, which applies to code alone. Whether the code is allowed to run or not depends on the code's origin or other aspects of the code's identity, not solely the identity of the principal. This reduces the likelihood that managed code can be misused.
+
+[!INCLUDE [cas-deprecated](../../../../includes/cas-deprecated.md)]
   
 ## Code Access Permissions  
 

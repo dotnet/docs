@@ -6,10 +6,10 @@ ms.assetid: 2e1786c1-cbdd-4427-b8fc-cbf86b8debae
 ---
 # 5006 - ImportKnownTypesStop
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|5006|  
 |Keywords|Serialization|  
 |Level|Verbose|  

@@ -45,8 +45,10 @@ CorFlags.exe assembly [options]
   
 ## Remarks  
 
- If no options are specified, the CorFlags Conversion tool displays the flags for the specified assembly.  
-  
+If no options are specified, the CorFlags Conversion tool displays the flags for the specified assembly.
+
+For more information, see section **II.25.3.3.1 Runtime flags** of the [ECMA-335 specification](https://www.ecma-international.org/publications-and-standards/standards/ecma-335/). For information about the PE flag, see [Optional Header (Image Only)](/windows/win32/debug/pe-format#optional-header-image-only).
+
 ## See also
 
 - [Tools](index.md)

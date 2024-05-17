@@ -21,7 +21,6 @@ type Point2D =
         member this.GetDistanceFrom(p: Point2D) =
             let dX = (p.X - this.X) ** 2.0
             let dY = (p.Y - this.Y) ** 2.0
-            
-            dX + dY
-            |> sqrt
+
+            dX + dY |> sqrt
     end

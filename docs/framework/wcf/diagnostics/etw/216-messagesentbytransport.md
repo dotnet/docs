@@ -6,10 +6,10 @@ ms.assetid: 150c3167-4154-4225-8d94-57cc94341233
 ---
 # 216 - MessageSentByTransport
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|216|  
 |Keywords|Troubleshooting, ServiceModel|  
 |Level|Information|  

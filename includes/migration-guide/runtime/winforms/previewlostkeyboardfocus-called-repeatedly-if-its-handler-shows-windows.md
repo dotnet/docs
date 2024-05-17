@@ -6,13 +6,16 @@ Beginning in the .NET Framework 4.5, calling <xref:System.Windows.Forms.MessageB
 
 #### Suggestion
 
-There are two options to work around this issue:<ol><li>It may be avoided by calling <xref:System.Windows.MessageBox.Show%2A?displayProperty=nameWithType> instead of <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType>.</li><li>It may be avoided by showing the message box from a <xref:System.Windows.UIElement.LostKeyboardFocus> event handler (as opposed to a <xref:System.Windows.UIElement.PreviewLostKeyboardFocus?displayProperty=fullName> event handler).</li></ol>
+There are two options to work around this issue:
 
-| Name    | Value       |
-|:--------|:------------|
-| Scope   |Edge|
-|Version|4.5|
-|Type|Runtime|
+- It may be avoided by calling <xref:System.Windows.MessageBox.Show%2A?displayProperty=nameWithType> instead of <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType>.
+- It may be avoided by showing the message box from a <xref:System.Windows.UIElement.LostKeyboardFocus> event handler (as opposed to a <xref:System.Windows.UIElement.PreviewLostKeyboardFocus?displayProperty=fullName> event handler).
+
+| Name    | Value   |
+| :------ | :------ |
+| Scope   | Edge    |
+| Version | 4.5     |
+| Type    | Runtime |
 
 #### Affected APIs
 

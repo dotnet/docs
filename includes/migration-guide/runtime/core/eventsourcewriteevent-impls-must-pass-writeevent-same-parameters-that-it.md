@@ -2,7 +2,7 @@
 
 #### Details
 
-The runtime now enforces the contract that specifies the following: A class derived from <xref:System.Diagnostics.Tracing.EventSource?displayProperty=fullName> that defines an ETW event method must call the base class <code>EventSource.WriteEvent</code> method with the event ID followed by the same arguments that the ETW event method was passed.
+The runtime now enforces the contract that specifies the following: A class derived from <xref:System.Diagnostics.Tracing.EventSource?displayProperty=fullName> that defines an ETW event method must call the base class `EventSource.WriteEvent` method with the event ID followed by the same arguments that the ETW event method was passed.
 
 #### Suggestion
 

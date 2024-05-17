@@ -1,10 +1,9 @@
 ---
 title: 'Tutorial: ML.NET classification model to categorize images'
-description: Learn how to train a classification model to categorize images using a pre-trained TensorFlow model for image processing. 
-ms.date: 04/13/2021
+description: Learn how to train a classification model to categorize images using a pre-trained TensorFlow model for image processing.
+ms.date: 11/11/2021
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0612
-recommendations: false
 #Customer intent: As a developer, I want to train a classification model with ML.NET to categorize images using a pre-trained TensorFlow model to process images.
 ---
 # Tutorial: Train an ML.NET classification model to categorize images
@@ -21,11 +20,11 @@ In this tutorial, you learn how to:
 > * Train and evaluate the ML.NET model
 > * Classify a test image
 
-You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/main/machine-learning/tutorials/TransferLearningTF) repository. Note that by default, the .NET project configuration for this tutorial targets .NET core 2.2.
+You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/main/machine-learning/tutorials/TransferLearningTF) repository. By default, the .NET project configuration for this tutorial targets .NET core 2.2.
 
 ## Prerequisites
 
-* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) or later or Visual Studio 2017 version 15.6 or later with the ".NET Core cross-platform development" workload installed.
+* [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/)
 * [The tutorial assets directory .ZIP file](https://github.com/dotnet/samples/blob/main/machine-learning/tutorials/TransferLearningTF/image-classifier-assets.zip)
 * [The InceptionV1 machine learning model](https://storage.googleapis.com/download.tensorflow.org/models/inception5h.zip)
 
@@ -45,7 +44,7 @@ Image classification is a specific classification task that allows us to automat
 * Detecting a human face in an image or not.
 * Detecting cats vs. dogs.
 
- Or as in the following images, determining if an image is a(n)  food, toy, or appliance:
+ Or as in the following images, determining if an image is a food, toy, or appliance:
 
 ![pizza image](./media/image-classification/220px-Pepperoni_pizza.jpg)
 ![teddy bear image](./media/image-classification/119px-Nalle_-_a_small_brown_teddy_bear.jpg)
@@ -60,7 +59,7 @@ Image classification is a specific classification task that allows us to automat
 
 Training an [image classification](https://en.wikipedia.org/wiki/Outline_of_object_recognition) model from scratch requires setting millions of parameters, a ton of labeled training data and a vast amount of compute resources (hundreds of GPU hours). While not as effective as training a custom model from scratch, using a pre-trained model allows you to shortcut this process by working with thousands of images vs. millions of labeled images and build a customized model fairly quickly (within an hour on a machine without a GPU). This tutorial scales that process down even further, using only a dozen training images.
 
-The `Inception model` is trained to classify images into a thousand categories, but for this tutorial, you need to classify images in a smaller category set, and only those categories.You can use the `Inception model`'s ability to recognize and classify images to the new limited categories of your custom image classifier.
+The `Inception model` is trained to classify images into a thousand categories, but for this tutorial, you need to classify images in a smaller category set, and only those categories. You can use the `Inception model`'s ability to recognize and classify images to the new limited categories of your custom image classifier.
 
 * Food
 * Toy
@@ -70,7 +69,7 @@ This tutorial uses the TensorFlow [Inception](https://storage.googleapis.com/dow
 
 Because the `Inception model` has already been pre-trained on thousands of different images, internally it contains the [image features](https://en.wikipedia.org/wiki/Feature_(computer_vision)) needed for image identification. We can make use of these internal image features in the model to train a new model with far fewer classes.
 
-As shown in the following diagram, you add a reference to the ML.NET NuGet packages in your .NET Core or .NET Framework applications. Under the covers, ML.NET includes and references the native `TensorFlow` library that allows you to write code that loads an existing trained `TensorFlow` model file.
+As shown in the following diagram, you add a reference to the ML.NET NuGet packages in your .NET or .NET Framework applications. Under the covers, ML.NET includes and references the native `TensorFlow` library that allows you to write code that loads an existing trained `TensorFlow` model file.
 
 ![TensorFlow transform ML.NET Arch diagram](./media/image-classification/tensorflow-mlnet.png)
 
@@ -86,7 +85,7 @@ See [Deep learning vs. machine learning](/azure/machine-learning/concept-deep-le
 
 ### Data
 
-There are two data sources: the `.tsv` file, and the image files.  The `tags.tsv` file contains two columns: the first one is defined as `ImagePath` and the second one is the `Label` corresponding to the image. The following example file doesn't have a header row, and looks like this:
+There are two data sources: the `.tsv` file, and the image files. The `tags.tsv` file contains two columns: the first one is defined as `ImagePath` and the second one is the `Label` corresponding to the image. The following example file doesn't have a header row, and looks like this:
 
 <!-- markdownlint-disable MD010 -->
 ```tsv
@@ -111,7 +110,9 @@ The training and testing images are located in the assets folders that you'll do
 
 ### Create a project
 
-1. Create a **.NET Core Console Application** called "TransferLearningTF".
+1. Create a C# **Console Application** called "TransferLearningTF". Click the **Next** button.
+
+1. Choose .NET 6 as the framework to use. Click the **Create** button.
 
 1. Install the **Microsoft.ML NuGet Package**:
 
@@ -122,7 +123,7 @@ The training and testing images are located in the assets folders that you'll do
     * Select the **Install** button.
     * Select the **OK** button on the **Preview Changes** dialog.
     * Select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
-    * Repeat these steps for **Microsoft.ML.ImageAnalytics**, **SciSharp.TensorFlow.Redist** and **Microsoft.ML.TensorFlow**.
+    * Repeat these steps for **Microsoft.ML.ImageAnalytics**, **SciSharp.TensorFlow.Redist**, and **Microsoft.ML.TensorFlow**.
 
 ### Download assets
 
@@ -144,7 +145,7 @@ The training and testing images are located in the assets folders that you'll do
 
     [!code-csharp[AddUsings](./snippets/image-classification/csharp/Program.cs#AddUsings)]
 
-1. Add the following code to the line right above the `Main` method to specify the asset paths:
+1. Add the following code to the line right below the using statements to specify the asset paths:
 
     [!code-csharp[DeclareGlobalVariables](./snippets/image-classification/csharp/Program.cs#DeclareGlobalVariables)]
 
@@ -168,17 +169,17 @@ The training and testing images are located in the assets folders that you'll do
 
     `ImagePrediction` is the class used for prediction after the model has been trained. It has a `string` (`ImagePath`) for the image path. The `Label` is used to reuse and train the model. The `PredictedLabelValue` is used during prediction and evaluation. For evaluation, an input with training data, the predicted values, and the model are used.
 
-### Initialize variables in Main
+### Initialize variables
 
-1. Initialize the `mlContext` variable with a new instance of `MLContext`.  Replace the `Console.WriteLine("Hello World!")` line with the following code in the `Main` method:
+1. Initialize the `mlContext` variable with a new instance of `MLContext`. Replace the `Console.WriteLine("Hello World!")` line with the following code:
 
     [!code-csharp[CreateMLContext](./snippets/image-classification/csharp/Program.cs#CreateMLContext)]
 
-    The [MLContext class](xref:Microsoft.ML.MLContext) is a starting point for all ML.NET operations, and initializing `mlContext` creates a new ML.NET environment that can be shared across the model creation workflow objects. It's similar, conceptually, to `DBContext` in Entity Framework.
+    The <xref:Microsoft.ML.MLContext> class is a starting point for all ML.NET operations, and initializing `mlContext` creates a new ML.NET environment that can be shared across the model creation workflow objects. It's similar, conceptually, to `DBContext` in Entity Framework.
 
 ### Create a struct for Inception model parameters
 
-1. The Inception model has several parameters you need to pass in. Create a struct to map the parameter values to friendly names with the following code, just after the `Main()` method:
+1. The Inception model has several parameters you need to pass in. Create a struct to map the parameter values to friendly names with the following code, just after initializing the `mlContext` variable:
 
     [!code-csharp[InceptionSettings](./snippets/image-classification/csharp/Program.cs#InceptionSettings)]
 
@@ -189,7 +190,7 @@ Since you'll display the image data and the related predictions more than once, 
 1. Create the `DisplayResults()` method, just after the `InceptionSettings` struct, using the following code:
 
     ```csharp
-    private static void DisplayResults(IEnumerable<ImagePrediction> imagePredictionData)
+    void DisplayResults(IEnumerable<ImagePrediction> imagePredictionData)
     {
 
     }
@@ -199,29 +200,12 @@ Since you'll display the image data and the related predictions more than once, 
 
     [!code-csharp[DisplayPredictions](./snippets/image-classification/csharp/Program.cs#DisplayPredictions)]
 
-### Create a .tsv file utility method
-
-1. Create the `ReadFromTsv()` method, just after the `DisplayResults()` method, using the following code:
-
-    ```csharp
-    public static IEnumerable<ImageData> ReadFromTsv(string file, string folder)
-    {
-
-    }
-    ```
-
-1. Fill in the body of the `ReadFromTsv` method:
-
-    [!code-csharp[ReadFromTsv](./snippets/image-classification/csharp/Program.cs#ReadFromTsv)]
-
-    The code parses through the `tags.tsv` file to add the file path to the image file name for the `ImagePath` property and load it and the `Label` into an `ImageData` object.
-
 ### Create a method to make a prediction
 
 1. Create the `ClassifySingleImage()` method, just before the `DisplayResults()` method, using the following code:
 
     ```csharp
-    public static void ClassifySingleImage(MLContext mlContext, ITransformer model)
+    void ClassifySingleImage(MLContext mlContext, ITransformer model)
     {
 
     }
@@ -246,7 +230,7 @@ Since you'll display the image data and the related predictions more than once, 
 
 ## Construct the ML.NET model pipeline
 
-An ML.NET model pipeline is a chain of estimators. Note that no execution happens during pipeline construction. The estimator objects are created but not executed.
+An ML.NET model pipeline is a chain of estimators. No execution happens during pipeline construction. The estimator objects are created but not executed.
 
 1. Add a method to generate the model
 
@@ -255,13 +239,13 @@ An ML.NET model pipeline is a chain of estimators. Note that no execution happen
     Create the `GenerateModel()` method, just after the `InceptionSettings` struct and just before the `DisplayResults()` method, using the following code:
 
     ```csharp
-    public static ITransformer GenerateModel(MLContext mlContext)
+    ITransformer GenerateModel(MLContext mlContext)
     {
 
     }
     ```
 
-1. Add the estimators to load, resize and extract the pixels from the image data:
+1. Add the estimators to load, resize, and extract the pixels from the image data:
 
     [!code-csharp[ImageTransforms](./snippets/image-classification/csharp/Program.cs#ImageTransforms)]
 
@@ -337,17 +321,17 @@ An ML.NET model pipeline is a chain of estimators. Note that no execution happen
 
     [!code-csharp[SaveModel](./snippets/image-classification/csharp/Program.cs#ReturnModel)]
 
-## Run the application!
+## Run the application
 
-1. Add the call to `GenerateModel` in the `Main` method after the creation of the MLContext class:
+1. Add the call to `GenerateModel` after the creation of the <xref:Microsoft.ML.MLContext> class:
 
     [!code-csharp[CallGenerateModel](./snippets/image-classification/csharp/Program.cs#CallGenerateModel)]
 
-1. Add the call to the `ClassifySingleImage()` method as the next line of code in the `Main` method:
+1. Add the call to the `ClassifySingleImage()` method after the call to the `GenerateModel()` method:
 
     [!code-csharp[CallClassifySingleImage](./snippets/image-classification/csharp/Program.cs#CallClassifySingleImage)]
 
-1. Run your console app (Ctrl + F5). Your results should be similar to the following output.  You may see warnings or processing messages, but these messages have been removed from the following results for clarity.
+1. Run your console app (<kbd>Ctrl</kbd> + <kbd>F5</kbd>). Your results should be similar to the following output. (You may see warnings or processing messages, but these messages have been removed from the following results for clarity.)
 
     ```console
     =============== Training classification model ===============

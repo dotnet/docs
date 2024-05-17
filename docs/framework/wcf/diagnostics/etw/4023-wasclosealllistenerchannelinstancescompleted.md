@@ -6,10 +6,10 @@ ms.assetid: 95dd5810-78a5-4183-98ef-77267dd64aac
 ---
 # 4023 - WasCloseAllListenerChannelInstancesCompleted
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4023|  
 |Keywords|ActivationServices|  
 |Level|Information|  

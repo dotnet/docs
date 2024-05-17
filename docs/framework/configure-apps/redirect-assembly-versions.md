@@ -2,7 +2,7 @@
 title: "Redirecting Assembly Versions"
 description: Redirect compile-time binding references to different versions of .NET assemblies, third-party assemblies, or your own app's assemblies.
 ms.date: "03/30/2017"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "assembly binding, redirection"
   - "redirecting assembly binding to earlier version"
   - "configuration [.NET Framework], applications"
@@ -12,7 +12,10 @@ ms.assetid: 88fb1a17-6ac9-4b57-8028-193aec1f727c
 ---
 # Redirecting assembly versions
 
-You can redirect compile-time binding references to .NET Framework assemblies, third-party assemblies, or your own app's assemblies. You can redirect your app to use a different version of an assembly in a number of ways: through publisher policy, through an app configuration file; or through the machine configuration file. This article discusses how assembly binding works in the .NET Framework and how it can be configured.
+You can redirect compile-time binding references to .NET Framework assemblies, third-party assemblies, or your own app's assemblies. You can redirect your app to use a different version of an assembly in a number of ways: through publisher policy, through an app configuration file; or through the machine configuration file. This article discusses how assembly binding works in .NET Framework and how it can be configured.
+
+> [!TIP]
+> This article is specific to .NET Framework apps. For information about assembly loading in .NET 5+ (and .NET Core), see [Dependency loading in .NET](../../core/dependency-loading/overview.md).
 
 <a name="BKMK_Assemblyunificationanddefaultbinding"></a>
 
@@ -20,7 +23,7 @@ You can redirect compile-time binding references to .NET Framework assemblies, t
 
  Bindings to .NET Framework assemblies are sometimes redirected through a process called *assembly unification*. The .NET Framework consists of a version of the common language runtime and about two dozen .NET Framework assemblies that make up the type library. These .NET Framework assemblies are treated by the runtime as a single unit. By default, when an app is launched, all references to types in code run by the runtime are directed to .NET Framework assemblies that have the same version number as the runtime that is loaded in a process. The redirections that occur with this model are the default behavior for the runtime.
 
- For example, if your app references types in the System.XML namespace and was built by using the .NET Framework 4.5, it contains static references to the System.XML assembly that ships with runtime version 4.5. If you want to redirect the binding reference to point to the System.XML assembly that ship with the .NET Framework 4, you can put redirect information in the app configuration file. A binding redirection in a configuration file for a unified .NET Framework assembly cancels the unification for that assembly.
+ For example, if your app references types in the System.XML namespace and was built by using .NET Framework 4.5, it contains static references to the System.XML assembly that ships with runtime version 4.5. If you want to redirect the binding reference to point to the System.XML assembly that ship with .NET Framework 4, you can put redirect information in the app configuration file. A binding redirection in a configuration file for a unified .NET Framework assembly cancels the unification for that assembly.
 
  In addition, you may want to manually redirect assembly binding for third-party assemblies if there are multiple versions available.
 
@@ -40,7 +43,7 @@ You can redirect compile-time binding references to .NET Framework assemblies, t
 
 ## Redirect versions at the app level
 
- There are a few different techniques for changing the binding behavior for your app through the app configuration file: you can manually edit the file, you can rely on automatic binding redirection, or you can specify binding behavior by bypassing publisher policy.
+ There are a few different techniques for changing the binding behavior for your app through the app configuration file: you can [manually edit the file](#manually-edit-the-app-config-file), you can [rely on automatic binding redirection](#rely-on-automatic-binding-redirection), or you can specify binding behavior by [bypassing publisher policy](#bypass-publisher-policy).
 
 ### Manually edit the app config file
 
@@ -89,7 +92,7 @@ There might be rare cases when a machine administrator wants all apps on a compu
 
 ## Specify assembly binding in configuration files
 
- You use the same XML format to specify binding redirects whether it’s in the app configuration file, the machine configuration file, or the publisher policy file. To redirect one assembly version to another, use the [\<bindingRedirect>](./file-schema/runtime/bindingredirect-element.md) element. The **oldVersion** attribute can specify a single assembly version or a range of versions. The `newVersion` attribute should specify a single version.  For example, `<bindingRedirect oldVersion="1.1.0.0-1.2.0.0" newVersion="2.0.0.0"/>` specifies that the runtime should use version 2.0.0.0 instead of the assembly versions between 1.1.0.0 and 1.2.0.0.
+ You use the same XML format to specify binding redirects whether it's in the app configuration file, the machine configuration file, or the publisher policy file. To redirect one assembly version to another, use the [\<bindingRedirect>](./file-schema/runtime/bindingredirect-element.md) element. The **oldVersion** attribute can specify a single assembly version or a range of versions. The `newVersion` attribute should specify a single version.  For example, `<bindingRedirect oldVersion="1.1.0.0-1.2.0.0" newVersion="2.0.0.0"/>` specifies that the runtime should use version 2.0.0.0 instead of the assembly versions between 1.1.0.0 and 1.2.0.0.
 
  The following code example demonstrates a variety of binding redirect scenarios. The example specifies a redirect for a range of versions for `myAssembly`, and a single binding redirect for `mySecondAssembly`. The example also specifies that publisher policy file will not override the binding redirects for `myThirdAssembly`.
 
@@ -143,7 +146,7 @@ There might be rare cases when a machine administrator wants all apps on a compu
 </runtime>
 ```
 
- You should enter redirection information in version order. For example, enter assembly binding redirection information for .NET Framework 3.5 assemblies followed by .NET Framework 4.5 assemblies. Finally, enter assembly binding redirection information for any .NET Framework assembly redirection that does not use the **appliesTo** attribute and therefore applies to all versions of the .NET Framework. If there is a conflict in redirection, the first matching redirection statement in the configuration file is used.
+ You should enter redirection information in version order. For example, enter assembly binding redirection information for .NET Framework 3.5 assemblies followed by .NET Framework 4.5 assemblies. Finally, enter assembly binding redirection information for any .NET Framework assembly redirection that does not use the **appliesTo** attribute and therefore applies to all versions of .NET Framework. If there is a conflict in redirection, the first matching redirection statement in the configuration file is used.
 
  For example, to redirect one reference to a .NET Framework 3.5 assembly and another reference to a .NET Framework 4 assembly, use the pattern shown in the following pseudocode.
 

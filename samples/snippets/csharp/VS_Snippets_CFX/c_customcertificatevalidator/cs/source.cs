@@ -6,10 +6,6 @@ using System.Security.Cryptography.X509Certificates;
 using System.ServiceModel;
 using System.ServiceModel.Security;
 
-using System.Security.Permissions;
-
-[assembly: SecurityPermission(
-   SecurityAction.RequestMinimum, Execution = true)]
 namespace Microsoft.ServiceModel.Samples
 {
     [ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples")]

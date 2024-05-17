@@ -6,10 +6,10 @@ ms.assetid: 8f20271f-a30b-456c-a416-73329921c6d3
 ---
 # 3409 - HttpPipelineProcessInboundRequestStop
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3409|  
 |Keywords|HTTP|  
 |Level|Verbose|  

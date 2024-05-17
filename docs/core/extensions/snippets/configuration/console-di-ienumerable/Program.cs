@@ -1,26 +1,15 @@
-﻿using System.Threading.Tasks;
-using ConsoleDI.IEnumerableExample;
+﻿using ConsoleDI.IEnumerableExample;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace ConsoleDI.Example
-{
-    class Program
-    {
-        static Task Main(string[] args)
-        {
-            using IHost host = CreateHostBuilder(args).Build();
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
 
-            _ = host.Services.GetService<ExampleService>();
+builder.Services.AddSingleton<IMessageWriter, ConsoleMessageWriter>();
+builder.Services.AddSingleton<IMessageWriter, LoggingMessageWriter>();
+builder.Services.AddSingleton<ExampleService>();
 
-            return host.RunAsync();
-        }
+using IHost host = builder.Build();
 
-        static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
-                .ConfigureServices((_, services) =>
-                    services.AddSingleton<IMessageWriter, ConsoleMessageWriter>()
-                            .AddSingleton<IMessageWriter, LoggingMessageWriter>()
-                            .AddSingleton<ExampleService>());
-    }
-}
+_ = host.Services.GetService<ExampleService>();
+
+await host.RunAsync();

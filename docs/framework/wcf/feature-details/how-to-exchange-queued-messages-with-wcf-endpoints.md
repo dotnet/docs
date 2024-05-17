@@ -75,10 +75,10 @@ Queues ensure that reliable messaging can occur between a client and a Windows C
 ## See also
 
 - <xref:System.ServiceModel.NetMsmqBinding>
-- [Transacted MSMQ Binding](/previous-versions/dotnet/framework/wcf/samples/transacted-msmq-binding)
+- [Transacted MSMQ Binding](../samples/transacted-msmq-binding.md)
 - [Queuing in WCF](queuing-in-wcf.md)
 - [How to: Exchange Messages with WCF Endpoints and Message Queuing Applications](how-to-exchange-messages-with-wcf-endpoints-and-message-queuing-applications.md)
-- [Windows Communication Foundation to Message Queuing](/previous-versions/dotnet/framework/wcf/samples/wcf-to-message-queuing)
-- [Installing Message Queuing (MSMQ)](/previous-versions/dotnet/framework/wcf/samples/installing-message-queuing-msmq)
-- [Message Queuing to Windows Communication Foundation](/previous-versions/dotnet/framework/wcf/samples/message-queuing-to-wcf)
-- [Message Security over Message Queuing](/previous-versions/dotnet/framework/wcf/samples/message-security-over-message-queuing)
+- [Windows Communication Foundation to Message Queuing](../samples/wcf-to-message-queuing.md)
+- [Installing Message Queuing (MSMQ)](../samples/installing-message-queuing-msmq.md)
+- [Message Queuing to Windows Communication Foundation](../samples/message-queuing-to-wcf.md)
+- [Message Security over Message Queuing](../samples/message-security-over-message-queuing.md)

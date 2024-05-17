@@ -3,16 +3,18 @@ title: gRPC
 description: Learn about gRPC, its role in cloud-native applications, and how it differs from HTTP RESTful communication.
 author: robvet
 no-loc: [Blazor, "Blazor WebAssembly"]
-ms.date: 01/19/2021
+ms.date: 12/14/2023
 ---
 
 # gRPC
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 So far in this book, we've focused on [REST-based](/azure/architecture/best-practices/api-design) communication. We've seen that REST is a flexible architectural style that defines CRUD-based operations against entity resources. Clients interact with resources across HTTP with a request/response communication model. While REST is widely implemented, a newer communication technology, gRPC, has gained tremendous momentum across the cloud-native community.
 
 ## What is gRPC?
 
-gRPC is a modern, high-performance framework that evolves the age-old [remote procedure call (RPC)](https://en.wikipedia.org/wiki/Remote_procedure_call) protocol. At the application level, gRPC streamlines messaging between clients and back-end services. Originating from Google, gRPC is open source and part of the  [Cloud Native Computing Foundation (CNCF)](https://www.cncf.io/) ecosystem of cloud-native offerings. CNCF considers gRPC an [incubating project](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc). Incubating means end users are using the technology in production applications, and the project has a healthy number of contributors.
+gRPC is a modern, high-performance framework that evolves the age-old [remote procedure call (RPC)](https://en.wikipedia.org/wiki/Remote_procedure_call) protocol. At the application level, gRPC streamlines messaging between clients and back-end services. Originating from Google, gRPC is open source and part of the  [Cloud Native Computing Foundation (CNCF)](https://www.cncf.io/) ecosystem of cloud-native offerings. CNCF considers gRPC an [incubating project](https://github.com/cncf/toc/blob/main/process/graduation_criteria.md). Incubating means end users are using the technology in production applications, and the project has a healthy number of contributors.
 
 A typical gRPC client app will expose a local, in-process function that implements a business operation. Under the covers, that local function invokes another function on a remote machine. What appears to be a local call essentially becomes a transparent out-of-process call to a remote service. The RPC plumbing abstracts the point-to-point networking communication, serialization, and execution between computers.
 
@@ -30,7 +32,7 @@ gRPC uses HTTP/2 for its transport protocol. While compatible with HTTP 1.1, HTT
 - Built-in streaming enabling requests and responses to asynchronously stream large data sets.
 - Header compression that reduces network usage.
 
-gRPC is lightweight and highly performant. It can be up to 8x faster than JSON serialization with messages 60-80% smaller. In Microsoft [Windows Communication Foundation (WCF)](../../framework/wcf/whats-wcf.md) parlance, gRPC performance exceeds the speed and efficiency of the highly optimized [NetTCP bindings](/dotnet/api/system.servicemodel.nettcpbinding?view=netframework-4.8). Unlike NetTCP, which favors the Microsoft stack, gRPC is cross-platform.
+gRPC is lightweight and highly performant. It can be up to 8x faster than JSON serialization with messages 60-80% smaller. In Microsoft [Windows Communication Foundation (WCF)](../../framework/wcf/whats-wcf.md) parlance, gRPC performance exceeds the speed and efficiency of the highly optimized [NetTCP bindings](/dotnet/api/system.servicemodel.nettcpbinding?view=netframework-4.8&preserve-view=true). Unlike NetTCP, which favors the Microsoft stack, gRPC is cross-platform.
 
 ## Protocol Buffers
 
@@ -42,29 +44,27 @@ Using the proto file, the Protobuf compiler, `protoc`, generates both client and
 - A strongly typed base class with the required network plumbing that the remote gRPC service can inherit and extend.
 - A client stub that contains the required plumbing to invoke the remote gRPC service.
 
-At runtime, each message is serialized as a standard Protobuf representation and exchanged between the client and remote service. Unlike JSON or XML, Protobuf messages are serialized as compiled binary bytes.
-
-The book, [gRPC for WCF Developers](../grpc-for-wcf-developers/index.md), available from the Microsoft Architecture site, provides in-depth coverage of gRPC and Protocol Buffers.
+At run time, each message is serialized as a standard Protobuf representation and exchanged between the client and remote service. Unlike JSON or XML, Protobuf messages are serialized as compiled binary bytes.
 
 ## gRPC support in .NET
 
 gRPC is integrated into .NET Core 3.0 SDK and later. The following tools support it:
 
-- Visual Studio 2019, version 16.3 or later, with the web development workload installed.
+- Visual Studio 2022 with the ASP.NET and web development workload installed
 - Visual Studio Code
-- the dotnet CLI
+- The `dotnet` CLI
 
-The SDK includes tooling for endpoint routing, built-in IoC, and logging. The open-source Kestrel web server supports HTTP/2 connections. Figure 4-20 shows a Visual Studio 2019 template that scaffolds a skeleton project for a gRPC service. Note how .NET fully supports Windows, Linux, and macOS.
+The SDK includes tooling for endpoint routing, built-in IoC, and logging. The open-source Kestrel web server supports HTTP/2 connections. Figure 4-20 shows a Visual Studio 2022 template that scaffolds a skeleton project for a gRPC service. Note how .NET fully supports Windows, Linux, and macOS.
 
-![gRPC Support in Visual Studio 2019](./media/visual-studio-2019-grpc-template.png)
+![gRPC Support in Visual Studio 2022](./media/visual-studio-2022-grpc-template.png)
 
-**Figure 4-20**. gRPC support in Visual Studio 2019
+**Figure 4-20**. gRPC support in Visual Studio 2022
   
-Figure 4-21 shows the skeleton gRPC service generated from the built-in scaffolding included in Visual Studio 2019.  
+Figure 4-21 shows the skeleton gRPC service generated from the built-in scaffolding included in Visual Studio 2022.  
 
-![gRPC project in Visual Studio 2019](./media/grpc-project.png  )
+![gRPC project in Visual Studio 2022](./media/grpc-project.png  )
 
-**Figure 4-21**. gRPC project in Visual Studio 2019
+**Figure 4-21**. gRPC project in Visual Studio 2022
 
 In the previous figure, note the proto description file and service code. As you'll see shortly, Visual Studio generates additional configuration in both the Startup class and underlying project file.
 

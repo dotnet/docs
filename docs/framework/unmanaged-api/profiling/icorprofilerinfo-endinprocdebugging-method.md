@@ -19,7 +19,7 @@ topic_type:
 ---
 # ICorProfilerInfo::EndInprocDebugging Method
 
-Shuts down an in-process debugging session. This method is obsolete in the .NET Framework version 2.0.  
+Shuts down an in-process debugging session. This method is obsolete in .NET Framework version 2.0.  
   
 ## Syntax  
   

@@ -32,9 +32,9 @@
             this.buttonDecryptFile = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.buttonEncryptFile = new System.Windows.Forms.Button();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this._encryptOpenFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.buttonCreateAsmKeys = new System.Windows.Forms.Button();
-            this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
+            this._decryptOpenFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.grpAsmKeys = new System.Windows.Forms.GroupBox();
             this.buttonGetPrivateKey = new System.Windows.Forms.Button();
             this.buttonImportPublicKey = new System.Windows.Forms.Button();
@@ -87,8 +87,8 @@
             //
             // openFileDialog1
             //
-            this.openFileDialog1.Filter = "All files (*.*)|*.*";
-            this.openFileDialog1.InitialDirectory = "c:\\meow";
+            this._encryptOpenFileDialog.Filter = "All files (*.*)|*.*";
+            this._encryptOpenFileDialog.InitialDirectory = "c:\\meow";
             //
             // buttonCreateAsmKeys
             //
@@ -102,8 +102,8 @@
             //
             // openFileDialog2
             //
-            this.openFileDialog2.Filter = "Encrypted files (*.enc) | *.enc|All files (*.*)|*.*";
-            this.openFileDialog2.InitialDirectory = "c:\\encrypt";
+            this._decryptOpenFileDialog.Filter = "Encrypted files (*.enc) | *.enc|All files (*.*)|*.*";
+            this._decryptOpenFileDialog.InitialDirectory = "c:\\encrypt";
             //
             // grpAsmKeys
             //
@@ -116,7 +116,7 @@
             this.grpAsmKeys.Size = new System.Drawing.Size(160, 138);
             this.grpAsmKeys.TabIndex = 42;
             this.grpAsmKeys.TabStop = false;
-            this.grpAsmKeys.Text = "Asymetric Keys";
+            this.grpAsmKeys.Text = "Asymmetric Keys";
             //
             // buttonGetPrivateKey
             //
@@ -181,9 +181,9 @@
         private System.Windows.Forms.Button buttonDecryptFile;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button buttonEncryptFile;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.OpenFileDialog _encryptOpenFileDialog;
         private System.Windows.Forms.Button buttonCreateAsmKeys;
-        private System.Windows.Forms.OpenFileDialog openFileDialog2;
+        private System.Windows.Forms.OpenFileDialog _decryptOpenFileDialog;
         private System.Windows.Forms.GroupBox grpAsmKeys;
         private System.Windows.Forms.Button buttonExportPublicKey;
         private System.Windows.Forms.Button buttonImportPublicKey;

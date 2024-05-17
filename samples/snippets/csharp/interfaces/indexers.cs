@@ -45,7 +45,7 @@
         {
             // <SnippetExampleCode>
             IndexerClass test = new IndexerClass();
-            System.Random rand = new System.Random();
+            System.Random rand = System.Random.Shared;
             // Call the indexer to initialize its elements.
             for (int i = 0; i < 10; i++)
             {

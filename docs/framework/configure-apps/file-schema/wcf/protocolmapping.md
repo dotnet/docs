@@ -6,7 +6,7 @@ ms.assetid: 5076644b-1f33-4f26-9488-87de9fcda04c
 ---
 # \<protocolMapping>
 
-Represents a configuration section for defining a set of default protocol mapping between transport protocol schemes (e.g., http, net.tcp, net.pipe, etc.) and WCF bindings. When creating default endpoints at runtime, Windows Communication Foundation (WCF) looks at the configured mappings and decides on which binding to use for a particular based address.  
+Represents a configuration section for defining a set of default protocol mapping between transport protocol schemes (e.g., http, net.tcp, net.pipe, etc.) and WCF bindings. When creating default endpoints at run time, Windows Communication Foundation (WCF) looks at the configured mappings and decides on which binding to use for a particular based address.  
   
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\

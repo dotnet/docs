@@ -101,6 +101,6 @@ This example produces the following output:
 
 ## See also
 
-- [Sorting Data (C#)](../../csharp/programming-guide/concepts/linq/sorting-data.md)
+- [Sorting Data (C#)](../../csharp/linq/standard-query-operators/sorting-data.md)
 - [Sorting Data (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/sorting-data.md)
 - [Basic Queries (LINQ to XML) (Visual Basic)](./find-element-specific-attribute.md)

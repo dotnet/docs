@@ -1,8 +1,7 @@
 ﻿using System;
 using System.ServiceModel;
-using System.Security.Permissions;
 using System.Security.Cryptography.X509Certificates;
-[assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution = true)]
+
 namespace Samples
 {
     public class Test
@@ -39,7 +38,7 @@ namespace Samples
             b.Security.Transport.ClientCredentialType = HttpClientCredentialType.Windows;
             //</snippet5>
         }
-        private void MakeMessgeBinding()
+        private void MakeMessageBinding()
         {
             //<snippet6>
             //<snippet2>
@@ -87,8 +86,8 @@ namespace Samples
             //<snippet8>
             NetTcpBinding b = new NetTcpBinding(SecurityMode.TransportWithMessageCredential);
             b.Security.Message.ClientCredentialType = MessageCredentialType.Certificate;
-            Uri netTcpAdddress = new Uri("net.tcp://baseAddress");
-            ServiceHost sh = new ServiceHost(typeof(Calculator), netTcpAdddress);
+            Uri netTcpAddress = new Uri("net.tcp://baseAddress");
+            ServiceHost sh = new ServiceHost(typeof(Calculator), netTcpAddress);
             sh.Credentials.ServiceCertificate.SetCertificate(
                 StoreLocation.LocalMachine, StoreName.My,
                 X509FindType.FindByIssuerName, "Contoso.com");
@@ -105,8 +104,8 @@ namespace Samples
             NetTcpBinding b = new NetTcpBinding(SecurityMode.TransportWithMessageCredential);
             b.Security.Transport.ClientCredentialType = TcpClientCredentialType.Windows;
             b.Security.Message.ClientCredentialType = MessageCredentialType.Certificate;
-            Uri netTcpAdddress = new Uri("net.tcp://Tcp");
-            ServiceHost sh = new ServiceHost(typeof(Calculator), netTcpAdddress);
+            Uri netTcpAddress = new Uri("net.tcp://Tcp");
+            ServiceHost sh = new ServiceHost(typeof(Calculator), netTcpAddress);
             sh.Credentials.ServiceCertificate.SetCertificate(
                 StoreLocation.LocalMachine, StoreName.My,
                 X509FindType.FindByIssuerName, "Contoso.com");

@@ -1,0 +1,104 @@
+### YamlMime:Landing
+
+title: "Specifications"
+summary: "Read the detailed specification for the C# language and the detailed specifications for the latest features."
+
+metadata:
+  title: "Specifications - ECMA specification and latest features."
+  description: "Read the detailed specifications for the C# language and the latest features. The specifications are the definitive source for the behavior of the C# language."
+  ms.topic: landing-page # Required
+  ms.date: 03/12/2024
+
+landingContent:
+  - title: "ECMA specifications and latest features"
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Specification process 
+            url: ./overview.md
+          - text: Detailed ECMA specification contents
+            url: ../../../_csharpstandard/standard/README.md
+      - linkListType: reference
+        links:
+          - text: Latest feature specifications
+            url: ../../../_csharplang/proposals/csharp-10.0/enhanced-line-directives.md
+
+
+  - title: "Draft C# ECMA specification - Introductory material"
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Foreword
+            url: ../../../_csharpstandard/standard/foreword.md
+          - text: Introduction
+            url: ../../../_csharpstandard/standard/introduction.md
+      - linkListType: reference
+        links:
+          - text: Scope
+            url: ../../../_csharpstandard/standard/scope.md
+          - text: Normative references
+            url: ../../../_csharpstandard/standard/normative-references.md
+          - text: Terms and definitions
+            url: ../../../_csharpstandard/standard/terms-and-definitions.md
+          - text: General description
+            url: ../../../_csharpstandard/standard/general-description.md
+          - text: Conformance
+            url: ../../../_csharpstandard/standard/conformance.md
+
+  - title: "Draft C# ECMA specification - Language specification"
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Lexical structure
+            url: ../../../_csharpstandard/standard/lexical-structure.md
+          - text: Basic concepts
+            url: ../../../_csharpstandard/standard/basic-concepts.md
+          - text: Types
+            url: ../../../_csharpstandard/standard/types.md
+          - text: Variables
+            url: ../../../_csharpstandard/standard/variables.md
+          - text: Conversions
+            url: ../../../_csharpstandard/standard/conversions.md
+          - text: Patterns
+            url: ../../../_csharpstandard/standard/patterns.md
+          - text: Expressions
+            url: ../../../_csharpstandard/standard/expressions.md
+          - text: Statements
+            url: ../../../_csharpstandard/standard/statements.md
+      - linkListType: reference
+        links:
+          - text: Namespaces
+            url: ../../../_csharpstandard/standard/namespaces.md
+          - text: Classes
+            url: ../../../_csharpstandard/standard/classes.md
+          - text: Structs
+            url: ../../../_csharpstandard/standard/structs.md
+          - text: Arrays
+            url: ../../../_csharpstandard/standard/arrays.md
+          - text: Interfaces
+            url: ../../../_csharpstandard/standard/interfaces.md
+          - text: Enums
+            url: ../../../_csharpstandard/standard/enums.md
+          - text: Delegates
+            url: ../../../_csharpstandard/standard/delegates.md
+          - text: Exceptions
+            url: ../../../_csharpstandard/standard/exceptions.md
+          - text: Attributes
+            url: ../../../_csharpstandard/standard/attributes.md
+          - text: Unsafe code
+            url: ../../../_csharpstandard/standard/unsafe-code.md
+
+  - title: "Draft C# ECMA specification - Annexes"
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Grammar
+            url: ../../../_csharpstandard/standard/grammar.md
+          - text: Portability issues
+            url: ../../../_csharpstandard/standard/portability-issues.md
+          - text: Standard library
+            url: ../../../_csharpstandard/standard/standard-library.md
+          - text: Documentation comments
+            url: ../../../_csharpstandard/standard/documentation-comments.md
+          - text: Bibliography
+            url: ../../../_csharpstandard/standard/bibliography.md

@@ -1,7 +1,7 @@
 ---
-title: Inheritance in C#
+title: "Tutorial: Introduction to Inheritance"
 description: Learn to use inheritance in C# libraries and applications.
-ms.date: 07/05/2018
+ms.date: 02/25/2022
 ms.assetid: aeb68c74-0ea0-406f-9fbe-2ce02d47ef31
 ---
 # Inheritance in C# and .NET
@@ -10,7 +10,7 @@ This tutorial introduces you to inheritance in C#. Inheritance is a feature of o
 
 ## Prerequisites
 
-This tutorial assumes that you've installed the .NET Core SDK. Visit the [.NET Core Downloads](https://dotnet.microsoft.com/download) page to download it. You also need a code editor. This tutorial uses [Visual Studio Code](https://code.visualstudio.com), although you can use any code editor of your choice.
+[!INCLUDE [Prerequisites](../../includes/prerequisites.md)]
 
 ## Running the examples
 
@@ -37,11 +37,11 @@ Not all members of a base class are inherited by derived classes. The following 
 
 - [Instance constructors](../../programming-guide/classes-and-structs/constructors.md), which you call to create a new instance of the class. Each class must define its own constructors.
 
-- [Finalizers](../../programming-guide/classes-and-structs/destructors.md), which are called by the runtime's garbage collector to destroy instances of a class.
+- [Finalizers](../../programming-guide/classes-and-structs/finalizers.md), which are called by the runtime's garbage collector to destroy instances of a class.
 
 While all other members of a base class are inherited by derived classes, whether they are visible or not depends on their accessibility. A member's accessibility affects its visibility for derived classes as follows:
 
-- [Private](../../language-reference/keywords/private.md) members are visible only in derived classes that are nested in their base class. Otherwise, they are not visible in derived classes. In the following example, `A.B` is a nested class that derives from `A`, and `C` derives from `A`. The private `A.value` field is visible in A.B. However, if you remove the comments from the `C.GetValue` method and attempt to compile the example, it produces compiler error CS0122: "'A.value' is inaccessible due to its protection level."
+- [Private](../../language-reference/keywords/private.md) members are visible only in derived classes that are nested in their base class. Otherwise, they are not visible in derived classes. In the following example, `A.B` is a nested class that derives from `A`, and `C` derives from `A`. The private `A._value` field is visible in A.B. However, if you remove the comments from the `C.GetValue` method and attempt to compile the example, it produces compiler error CS0122: "'A._value' is inaccessible due to its protection level."
 
   [!code-csharp[Inheritance](./snippets/inheritance/private.cs#1)]
 
@@ -53,7 +53,7 @@ While all other members of a base class are inherited by derived classes, whethe
 
   [!code-csharp[Inheritance](./snippets/inheritance/basics.cs#1)]
 
-Derived classes can also *override* inherited members by providing an alternate implementation. In order to be able to override a member, the member in the base class must be marked with the [virtual](../../language-reference/keywords/virtual.md) keyword. By default, base class members are not marked as `virtual` and cannot be overridden. Attempting to override a non-virtual member, as the following example does, generates compiler error CS0506: "\<member> cannot override inherited member \<member> because it is not marked virtual, abstract, or override.
+Derived classes can also *override* inherited members by providing an alternate implementation. In order to be able to override a member, the member in the base class must be marked with the [virtual](../../language-reference/keywords/virtual.md) keyword. By default, base class members are not marked as `virtual` and cannot be overridden. Attempting to override a non-virtual member, as the following example does, generates compiler error CS0506: "\<member> cannot override inherited member \<member> because it is not marked virtual, abstract, or override."
 
 ```csharp
 public class A
@@ -93,8 +93,6 @@ public class B : A // Generates CS0534.
 Inheritance applies only to classes and interfaces. Other type categories (structs, delegates, and enums) do not support inheritance. Because of these rules, attempting to compile code like the following example produces compiler error CS0527: "Type 'ValueType' in interface list is not an interface." The error message indicates that, although you can define the interfaces that a struct implements, inheritance is not supported.
 
 ```csharp
-using System;
-
 public struct ValueStructure : ValueType // Generates CS0527.
 {
 }
@@ -186,7 +184,7 @@ In designing your `Publication` class, you need to make several design decisions
 
   The `Publication` class does not have any `abstract` methods, but the class itself is `abstract`.
 
-- Whether a derived class represents the final class in the inheritance hierarchy and cannot itself be used as a base class for additional derived classes. By default, any class can serve as a base class. You can apply the [sealed](../../language-reference/keywords/sealed.md) keyword to indicate that a class cannot serve as a base class for any additional classes. Attempting to derive from a sealed class generated compiler error CS0509, "cannot derive from sealed type \<typeName>".
+- Whether a derived class represents the final class in the inheritance hierarchy and cannot itself be used as a base class for additional derived classes. By default, any class can serve as a base class. You can apply the [sealed](../../language-reference/keywords/sealed.md) keyword to indicate that a class cannot serve as a base class for any additional classes. Attempting to derive from a sealed class generated compiler error CS0509, "cannot derive from sealed type \<typeName>."
 
   For your example, you'll mark your derived class as `sealed`.
 
@@ -275,13 +273,13 @@ You can now instantiate a `Book` object, invoke both its unique and inherited me
 
 In the previous example, you defined a base class that provided an implementation for a number of methods to allow derived classes to share code. In many cases, however, the base class is not expected to provide an implementation. Instead, the base class is an *abstract class* that declares *abstract methods*; it serves as a template that defines the members that each derived class must implement. Typically in an abstract base class, the implementation of each derived type is unique to that type. You marked the class with the abstract keyword because it made no sense to instantiate a `Publication` object, although the class did provide implementations of functionality common to publications.
 
-For example, each closed two-dimensional geometric shape includes two properties: area, the inner extent of the shape; and perimeter, or the distance along the edges of the shape. The way in which these properties are calculated, however, depends completely on the specific shape. The formula for calculating the perimeter (or circumference) of a circle, for example, is different from that of a triangle. The `Shape` class is an `abstract` class with `abstract` methods. That indicates derived classes share the same functionality, but those derived classes implement that functionality differently.
+For example, each closed two-dimensional geometric shape includes two properties: area, the inner extent of the shape; and perimeter, or the distance along the edges of the shape. The way in which these properties are calculated, however, depends completely on the specific shape. The formula for calculating the perimeter (or circumference) of a circle, for example, is different from that of a square. The `Shape` class is an `abstract` class with `abstract` methods. That indicates derived classes share the same functionality, but those derived classes implement that functionality differently.
 
 The following example defines an abstract base class named `Shape` that defines two properties: `Area` and `Perimeter`. In addition to marking the class with the [abstract](../../language-reference/keywords/abstract.md) keyword, each instance member is also marked with the [abstract](../../language-reference/keywords/abstract.md) keyword. In this case, `Shape` also overrides the <xref:System.Object.ToString%2A?displayProperty=nameWithType> method to return the name of the type, rather than its fully qualified name. And it defines two static members, `GetArea` and `GetPerimeter`, that allow callers to easily retrieve the area and perimeter of an instance of any derived class. When you pass an instance of a derived class to either of these methods, the runtime calls the method override of the derived class.
 
 [!code-csharp[Inheritance](./snippets/inheritance/shape.cs#1)]
 
-You can then derive some classes from `Shape` that represent specific shapes. The following example defines three classes, `Triangle`, `Rectangle`, and `Circle`. Each uses a formula unique for that particular shape to compute the area and perimeter. Some of the derived classes also define properties, such as `Rectangle.Diagonal` and `Circle.Diameter`, that are unique to the shape that they represent.
+You can then derive some classes from `Shape` that represent specific shapes. The following example defines three classes, `Square`, `Rectangle`, and `Circle`. Each uses a formula unique for that particular shape to compute the area and perimeter. Some of the derived classes also define properties, such as `Rectangle.Diagonal` and `Circle.Diameter`, that are unique to the shape that they represent.
 
 [!code-csharp[Inheritance](./snippets/inheritance/shape.cs#2)]
 

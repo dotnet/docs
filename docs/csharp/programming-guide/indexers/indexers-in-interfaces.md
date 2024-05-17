@@ -1,5 +1,5 @@
 ---
-title: "Indexers in Interfaces - C# Programming Guide"
+title: "Indexers in Interfaces"
 description: Indexers can be declared on an interface in C#. Learn how accessors of interface indexers differ from the accessors of class indexers.
 ms.date: 02/08/2020
 helpviewer_keywords: 
@@ -58,7 +58,6 @@ implements the indexer on the `ICitizen` interface.
 
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Indexers](./index.md)
 - [Properties](../classes-and-structs/properties.md)
 - [Interfaces](../../fundamentals/types/interfaces.md)

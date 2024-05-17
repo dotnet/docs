@@ -40,7 +40,7 @@ COM methods report errors by returning HRESULTs; .NET methods report them by thr
     }
     ```
 
- You might encounter a program (in any programming language) that uses both managed and unmanaged code at the same time. For example, the custom marshaler in the following code example uses the `Marshal.ThrowExceptionForHR(int HResult)` method to throw an exception with a specific HRESULT value. The method looks up the HRESULT and generates the appropriate exception type. For example, the HRESULT in the following code fragment generates `ArgumentException`.
+ You might encounter a program (in any programming language) that uses both managed and unmanaged code at the same time. For example, the custom marshaller in the following code example uses the `Marshal.ThrowExceptionForHR(int HResult)` method to throw an exception with a specific HRESULT value. The method looks up the HRESULT and generates the appropriate exception type. For example, the HRESULT in the following code fragment generates `ArgumentException`.
 
 ```cpp
 CMyClass::MethodThatThrows

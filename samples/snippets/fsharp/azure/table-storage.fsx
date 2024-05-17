@@ -1,194 +1,160 @@
+// <nuget>
+#r "nuget:Azure.Data.Tables" // Load the Azure Data Tables nuget package
+// </nuget>
+
+// <open>
 open System
-open System.IO
-open Microsoft.Azure // Namespace for CloudConfigurationManager
-open Microsoft.Azure.Storage // Namespace for CloudStorageAccount
-open Microsoft.Azure.Storage.Table // Namespace for Table storage types
+open Azure
+open Azure.Data.Tables // Namespace for Table storage types
+// </open>
 
 //
 // Get your connection string.
 //
-
-let storageConnString = "..." // fill this in from your storage account
-(*
-// Parse the connection string and return a reference to the storage account.
-let storageConnString = 
-    CloudConfigurationManager.GetSetting("StorageConnectionString")
-*)
-//
-// Parse the connection string.
-//
-
-// Parse the connection string and return a reference to the storage account.
-let storageAccount = CloudStorageAccount.Parse(storageConnString)
+// <connectionString>
+let storageConnString = "UseDevelopmentStorage=true" // fill this in from your storage account
+// </connectionString>
 
 //
 // Create the Table service client.
 //
-
-// Create the table client.
-let tableClient = storageAccount.CreateCloudTableClient()
+// <createTableClient>
+let tableClient = TableServiceClient storageConnString
+// </createTableClient>
 
 //
 // Create a table.
 //
-
+// <createTable>
 // Retrieve a reference to the table.
-let table = tableClient.GetTableReference("people")
+let table = tableClient.GetTableClient "people"
 
 // Create the table if it doesn't exist.
-table.CreateIfNotExists()
+table.CreateIfNotExists () |> ignore
+// </createTable>
 
 //
 // Add an entity to a table. The last name is used as a partition key.
 //
 
-type Customer(firstName, lastName, email: string, phone: string) =
-    inherit TableEntity(partitionKey=lastName, rowKey=firstName)
+// Note: In F#, interfaces are implemented explicitly. The Azure Storage SDK
+// expects at least PartitionKey and RowKey to be implicitly available. Therefore,
+// we have to "shadow" both PartitionKey and RowKey on the Customer type directly.
+// <addEntity>
+type Customer (firstName, lastName, email: string, phone: string) =
+    interface ITableEntity with
+        member val ETag = ETag "" with get, set
+        member val PartitionKey = "" with get, set
+        member val RowKey = "" with get, set
+        member val Timestamp = Nullable() with get, set
+
     new() = Customer(null, null, null, null)
     member val Email = email with get, set
     member val PhoneNumber = phone with get, set
+    member val PartitionKey = lastName with get, set
+    member val RowKey = firstName with get, set
+// </addEntity>
 
-let customer = 
-    Customer("Walter", "Harp", "Walter@contoso.com", "425-555-0101")
-
-let insertOp = TableOperation.Insert(customer)
-table.Execute(insertOp)
-
+// <addEntityToTable>
+let customer = Customer ("Walter", "Harp", "Walter@contoso.com", "425-555-0101")
+table.AddEntity customer
+// </addEntityToTable>
 
 //
 // Insert a batch of entities. All must have the same partition key.
 //
+// <addBatchOfEntities>
+let customers =
+    [
+        Customer("Jeff", "Smith", "Jeff@contoso.com", "425-555-0102")
+        Customer("Ben", "Smith", "Ben@contoso.com", "425-555-0103")
+    ]
 
-let customer1 =
-    Customer("Jeff", "Smith", "Jeff@contoso.com", "425-555-0102")
-
-let customer2 =
-    Customer("Ben", "Smith", "Ben@contoso.com", "425-555-0103")
-
-let batchOp = TableBatchOperation()
-batchOp.Insert(customer1)
-batchOp.Insert(customer2)
-table.ExecuteBatch(batchOp)
+// Add the entities to be added to the batch and submit it in a transaction.
+customers
+|> List.map (fun customer -> TableTransactionAction (TableTransactionActionType.Add, customer))
+|> table.SubmitTransaction
+// </addBatchOfEntities>
 
 //
 // Retrieve all entities in a partition.
 //
-
-let query =
-    TableQuery<Customer>().Where(
-        TableQuery.GenerateFilterCondition(
-            "PartitionKey", QueryComparisons.Equal, "Smith"))
-
-let result = table.ExecuteQuery(query)
-
-for customer in result do 
-    printfn "customer: %A %A" customer.RowKey customer.PartitionKey
+// <retrieveEntities>
+table.Query<Customer> "PartitionKey eq 'Smith'"
+// </retrieveEntities>
 
 //
 // Retrieve a range of entities in a partition.
 //
-
-let range =
-    TableQuery<Customer>().Where(
-        TableQuery.CombineFilters(
-            TableQuery.GenerateFilterCondition(
-                "PartitionKey", QueryComparisons.Equal, "Smith"),
-            TableOperators.And,
-            TableQuery.GenerateFilterCondition(
-                "RowKey", QueryComparisons.LessThan, "M")))
-
-let rangeResult = table.ExecuteQuery(range)
-
-for customer in rangeResult do 
-    printfn "customer: %A %A" customer.RowKey customer.PartitionKey
+// <retrieveEntitiesRange>
+table.Query<Customer> "PartitionKey eq 'Smith' and RowKey lt 'J'"
+// </retrieveEntitiesRange>
 
 //
 // Retrieve a single entity.
 //
+// <retrieveEntity>
+let singleResult = table.GetEntity<Customer>("Smith", "Ben").Value
+// </retrieveEntity>
 
-let retrieveOp = TableOperation.Retrieve<Customer>("Smith", "Ben")
-
-let retrieveResult = table.Execute(retrieveOp)
-
-// Show the result
-let retrieveCustomer = retrieveResult.Result :?> Customer
-printfn "customer: %A %A" retrieveCustomer.RowKey retrieveCustomer.PartitionKey
+// <printEntity>
+// Evaluate this value to print it out into the F# Interactive console
+singleResult
+// </printEntity>
 
 //
-// Replace an entity.
+// Update an entity and show how to handle any exceptions that Azure may throw.
 //
-
+// <updateEntity>
+singleResult.PhoneNumber <- "425-555-0103"
 try
-    let customer = retrieveResult.Result :?> Customer
-    customer.PhoneNumber <- "425-555-0103"
-    let replaceOp = TableOperation.Replace(customer)
-    table.Execute(replaceOp) |> ignore
-    Console.WriteLine("Update succeeeded")
-with e ->
-    Console.WriteLine("Update failed")
+    table.UpdateEntity (singleResult, ETag "", TableUpdateMode.Replace) |> ignore
+    printfn "Update succeeded"
+with
+| :? RequestFailedException as e ->
+    printfn $"Update failed: {e.Status} - {e.ErrorCode}"
+// </updateEntity>
 
 //
-// Insert-or-update an entity.
+// Upsert an entity.
 //
-
-try
-    let customer = retrieveResult.Result :?> Customer
-    customer.PhoneNumber <- "425-555-0104"
-    let replaceOp = TableOperation.InsertOrReplace(customer)
-    table.Execute(replaceOp) |> ignore
-    Console.WriteLine("Update succeeeded")
-with e ->
-    Console.WriteLine("Update failed")
+// <upsertEntity>
+singleResult.PhoneNumber <- "425-555-0104"
+table.UpsertEntity (singleResult, TableUpdateMode.Replace)
+// </upsertEntity>
 
 //
 // Query a subset of entity properties.
 //
-
-// Define the query, and select only the Email property.
-let projectionQ = TableQuery<DynamicTableEntity>().Select [|"Email"|]
-
-// Define an entity resolver to work with the entity after retrieval.
-let resolver = EntityResolver<string>(fun pk rk ts props etag ->
-    if props.ContainsKey("Email") then
-        props.["Email"].StringValue
-    else
-        null
-    )
-
-let resolvedResults = table.ExecuteQuery(projectionQ, resolver, null, null)
+// <querySubset>
+query {
+    for customer in table.Query<Customer> () do
+    select customer.Email
+}
+// </querySubset>
 
 //
 // Retrieve entities in pages asynchronously.
 //
+// <retrieveEntitiesAsync>
+let pagesResults = table.Query<Customer> ()
 
-let tableQ = TableQuery<Customer>()
-
-let asyncQuery = 
-    let rec loop (cont: TableContinuationToken) = async {
-        let! ct = Async.CancellationToken
-        let! result = table.ExecuteQuerySegmentedAsync(tableQ, cont, ct) |> Async.AwaitTask
-
-        // ...process the result here...
-        
-        // Continue to the next segment
-        match result.ContinuationToken with
-        | null -> ()
-        | cont -> return! loop cont 
-    }
-    loop null
-
-let asyncResults = asyncQuery |> Async.RunSynchronously
+for page in pagesResults.AsPages () do
+    printfn "This is a new page!"
+    for customer in page.Values do
+        printfn $"customer: {customer.RowKey} {customer.PartitionKey}"
+// </retrieveEntitiesAsync>
 
 //
 // Delete an entity.
 //
-
-let deleteOp = TableOperation.Delete(customer)
-table.Execute(deleteOp)
+// <deleteEntity>
+table.DeleteEntity ("Smith", "Ben")
+// </deleteEntity>
 
 //
 // Delete a table.
 //
-
-table.DeleteIfExists()
-
+// <deleteTable>
+table.Delete ()
+// </deleteTable>

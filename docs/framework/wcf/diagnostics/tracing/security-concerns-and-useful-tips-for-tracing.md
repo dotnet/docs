@@ -82,7 +82,7 @@ This topic describes how you can protect sensitive information from being expose
   
  The changes are effective only when the application starts or restarts. An event is logged at startup when both attributes are set to `true`. An event is also logged if `logKnownPii` is set to `true` but `enableLoggingKnownPii` is `false`.  
   
- For more information on PII logging, see [PII Security Lockdown](/previous-versions/dotnet/framework/wcf/samples/pii-security-lockdown) sample.  
+ For more information on PII logging, see [PII Security Lockdown](../../samples/pii-security-lockdown.md) sample.  
   
  The machine administrator and application deployer should exercise extreme caution when using these two switches. If PII logging is enabled, security keys and PII are logged. If it is disabled, sensitive and application-specific data is still logged in message headers and bodies. For a more thorough discussion on privacy and protecting PII from being exposed, see [User Privacy](/previous-versions/dotnet/articles/aa480490(v=msdn.10)).  
   

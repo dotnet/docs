@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace lambda_expressions
@@ -11,6 +12,7 @@ namespace lambda_expressions
             CountExample();
             TakeWhileExample();
             TakeWhileWithIndexExample();
+            QueryExample();
         }
 
         private static void FuncExample()
@@ -51,6 +53,32 @@ namespace lambda_expressions
             // Output:
             // 5 4
             // </SnippetTakeWhileWithIndex>
+        }
+
+        private static void QueryExample()
+        {
+            // <Query>
+            var numberSets = new List<int[]>
+            {
+                new[] { 1, 2, 3, 4, 5 },
+                new[] { 0, 0, 0 },
+                new[] { 9, 8 },
+                new[] { 1, 0, 1, 0, 1, 0, 1, 0 }
+            };
+
+            var setsWithManyPositives = 
+                from numberSet in numberSets
+                where numberSet.Count(n => n > 0) > 3
+                select numberSet;
+
+            foreach (var numberSet in setsWithManyPositives)
+            {
+                Console.WriteLine(string.Join(" ", numberSet));
+            }
+            // Output:
+            // 1 2 3 4 5
+            // 1 0 1 0 1 0 1 0
+            // </Query>
         }
     }
 }

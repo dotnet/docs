@@ -5,7 +5,7 @@ Imports System.Globalization
 Imports System.Text.RegularExpressions
 Imports System.Threading
 
-Module Example
+Module CultureExample
     Public Sub Main()
         ShowIllegalAccess()
         Console.WriteLine("-----")
@@ -20,7 +20,7 @@ Module Example
         Dim input As String = "file://c:/Documents.MyReport.doc"
         Dim pattern As String = "$FILE://"
 
-        Console.WriteLine("Culture-sensitive matching ({0} culture)...", _
+        Console.WriteLine("Culture-sensitive matching ({0} culture)...",
                           Thread.CurrentThread.CurrentCulture.Name)
         If Regex.IsMatch(input, pattern, RegexOptions.IgnoreCase) Then
             Console.WriteLine("URLs that access files are not allowed.")
@@ -44,7 +44,7 @@ Module Example
         Dim pattern As String = "$FILE://"
 
         Console.WriteLine("Culture-insensitive matching...")
-        If Regex.IsMatch(input, pattern, _
+        If Regex.IsMatch(input, pattern,
                        RegexOptions.IgnoreCase Or RegexOptions.CultureInvariant) Then
             Console.WriteLine("URLs that access files are not allowed.")
         Else

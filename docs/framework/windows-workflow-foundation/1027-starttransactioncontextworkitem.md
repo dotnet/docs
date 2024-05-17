@@ -6,10 +6,10 @@ ms.assetid: 116ae5ec-b9d5-4231-824e-270d00eea7b8
 ---
 # 1027 - StartTransactionContextWorkItem
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1027|  
 |Keywords|WFRuntime|  
 |Level|Verbose|  

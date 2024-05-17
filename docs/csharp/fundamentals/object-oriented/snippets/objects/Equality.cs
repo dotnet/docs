@@ -1,7 +1,6 @@
-
 using System;
 
-public class equality
+public class Equality
 {
     public static void EqualityTest()
     {

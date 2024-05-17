@@ -72,6 +72,7 @@ The following example shows how to enable garbage collection for multiple CPU gr
 
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
 - [Runtime Settings Schema](index.md)
 - [Configuration File Schema](../index.md)
 - [Disable concurrent garbage collection](gcconcurrent-element.md#to-disable-background-garbage-collection)

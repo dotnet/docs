@@ -17,7 +17,7 @@ use ptr = fixed expression
 
 This extends the syntax of expressions to allow extracting a pointer and binding it to a name which is prevented from being collected or moved during garbage-collection.  
 
-A pointer from an expression is fixed via the `fixed` keyword is bound to an identifier via the `use` keyword.  The semantics of this are similar to resource management via the `use` keyword.  The pointer is fixed while it is in scope, and once it is out of scope, it is no longer fixed.  `fixed` cannot be used outside the context of a `use` binding.  You must bind the pointer to a name with `use`.
+A pointer from an expression is fixed via the `fixed` keyword and is bound to an identifier via the `use` keyword.  The semantics of this are similar to resource management via the `use` keyword.  The pointer is fixed while it is in scope, and once it is out of scope, it is no longer fixed.  `fixed` cannot be used outside the context of a `use` binding.  You must bind the pointer to a name with `use`.
 
 Use of `fixed` must occur within an expression in a function or a method.  It cannot be used at a script-level or module-level scope.
 

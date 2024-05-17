@@ -46,7 +46,7 @@ When multiple threads can make calls to the properties and methods of a single o
  Both Visual Basic and C# support the marking of blocks of code with a particular language keyword, the `lock` statement in C# or the `SyncLock` statement in Visual Basic. When the code is executed by a thread, an attempt is made to acquire the lock. If the lock has already been acquired by another thread, the thread blocks until the lock becomes available. When the thread exits the synchronized block of code, the lock is released, no matter how the thread exits the block.  
   
 > [!NOTE]
-> The `lock` and `SyncLock` statements are implemented using <xref:System.Threading.Monitor.Enter%2A?displayProperty=nameWithType> and <xref:System.Threading.Monitor.Exit%2A?displayProperty=nameWithType>, so other methods of <xref:System.Threading.Monitor> can be used in conjunction with them within the synchronized region.  
+> Beginning in C# 13, the `lock` statement recognizes if the locked object is an instance of <xref:System.Threading.Lock?displayProperty=nameWithType> and uses the `EnterScope` method to create a synchronized region. The `lock`, when the target isn't a `Lock` instance, and `SyncLock` statements are implemented using <xref:System.Threading.Monitor.Enter%2A?displayProperty=nameWithType> and <xref:System.Threading.Monitor.Exit%2A?displayProperty=nameWithType>, so other methods of <xref:System.Threading.Monitor> can be used in conjunction with them within the synchronized region.  
   
  You can also decorate a method with a <xref:System.Runtime.CompilerServices.MethodImplAttribute> with a value of <xref:System.Runtime.CompilerServices.MethodImplOptions.Synchronized?displayProperty=nameWithType>, which has the same effect as using <xref:System.Threading.Monitor> or one of the compiler keywords to lock the entire body of the method.  
   
@@ -57,7 +57,7 @@ When multiple threads can make calls to the properties and methods of a single o
   
 ### Compiler support  
 
- Both Visual Basic and C# support a language keyword that uses <xref:System.Threading.Monitor.Enter%2A?displayProperty=nameWithType> and <xref:System.Threading.Monitor.Exit%2A?displayProperty=nameWithType> to lock the object. Visual Basic supports the [SyncLock](../../visual-basic/language-reference/statements/synclock-statement.md) statement; C# supports the [lock](../../csharp/language-reference/keywords/lock-statement.md) statement.  
+ Both Visual Basic and C# support a language keyword that uses <xref:System.Threading.Monitor.Enter%2A?displayProperty=nameWithType> and <xref:System.Threading.Monitor.Exit%2A?displayProperty=nameWithType> to lock the object. Visual Basic supports the [SyncLock](../../visual-basic/language-reference/statements/synclock-statement.md) statement; C# supports the [lock](../../csharp/language-reference/statements/lock.md) statement.  
   
  In both cases, if an exception is thrown in the code block, the lock acquired by the **lock** or **SyncLock** is released automatically. The C# and Visual Basic compilers emit a **try**/**finally** block with **Monitor.Enter** at the beginning of the try, and **Monitor.Exit** in the **finally** block. If an exception is thrown inside the **lock** or **SyncLock** block, the **finally** handler runs to allow you to do any clean-up work.  
   
@@ -71,4 +71,4 @@ In .NET Framework and Xamarin applications only, you can use the <xref:System.Ru
 - [Threads and Threading](threads-and-threading.md)
 - [Overview of Synchronization Primitives](overview-of-synchronization-primitives.md)
 - [SyncLock Statement](../../visual-basic/language-reference/statements/synclock-statement.md)
-- [lock Statement](../../csharp/language-reference/keywords/lock-statement.md)
+- [lock Statement](../../csharp/language-reference/statements/lock.md)

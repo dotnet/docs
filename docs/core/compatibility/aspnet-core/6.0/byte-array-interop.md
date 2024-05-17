@@ -2,7 +2,6 @@
 title: "Breaking change: Blazor: Byte Array Interop"
 description: "Learn about the breaking change in ASP.NET Core 6.0 titled Blazor: Byte Array Interop"
 no-loc: [ Blazor ]
-ms.author: taparik
 ms.date: 06/21/2021
 ---
 # Blazor: Byte-array interop
@@ -11,28 +10,7 @@ Blazor now supports optimized byte-array interop, which avoids encoding and deco
 
 ## Version introduced
 
-ASP.NET Core 6.0 Preview 6
-
-## Return byte array from JavaScript to .NET
-
-### Old behavior
-
-```typescript
-function someJSMethodReturningAByteArray() {
-    const data = new Uint8Array([ 1, 2, 3 ]);
-    const base64EncodedData = btoa(String.fromCharCode.apply(null, data as unknown as number[]));
-    return base64EncodedData;
-}
-```
-
-### New behavior
-
-```typescript
-function someJSMethodReturningAByteArray() {
-    const data = new Uint8Array([ 1, 2, 3 ]);
-    return data;
-}
-```
+ASP.NET Core 6.0
 
 ## Receive byte array in JavaScript from .NET
 
@@ -71,10 +49,22 @@ In the preceding code example, you'd treat the incoming parameter in JavaScript 
 
 ### Return byte array from JavaScript to .NET
 
-If .NET expects a `byte[]`, JavaScript must provide a `Uint8Array`. Previously, it was possible to provide a Base64-encoded array using `btoa`.
+If .NET expects a `byte[]`, JavaScript _should_ provide a `Uint8Array`. It's still possible to provide a Base64-encoded array using `btoa`, however that is less performant.
 
-For example, if you have the following code, then you must provide a `Uint8Array` from JavaScript that's _not_ Base64-encoded:
+For example, if you have the following code, then you _should_ provide a `Uint8Array` from JavaScript that's _not_ Base64-encoded:
 
 ```csharp
 var bytes = await _jsRuntime.InvokeAsync<byte[]>("someJSMethodReturningAByteArray");
 ```
+
+<!--
+
+## Category
+
+ASP.NET Core
+
+## Affected APIs
+
+Not detectable via API analysis
+
+-->

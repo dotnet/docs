@@ -52,4 +52,4 @@ The `failedQI` managed debugging assistant (MDA) is activated when the runtime c
 
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
 - [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)
-- [Interop Marshaling](../interop/interop-marshaling.md)
+- [Interop Marshaling](../interop/interop-marshalling.md)

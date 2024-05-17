@@ -6,11 +6,13 @@ ms.assetid: 551d2290-ed80-49be-b377-44b32444da1c
 ---
 # Introduction to SQL Server CLR Integration
 
-The common language runtime (CLR) is the heart of the Microsoft .NET Framework and provides the execution environment for all .NET Framework code. Code that runs within the CLR is referred to as managed code. The CLR provides various functions and services required for program execution, including just-in-time (JIT) compilation, allocating and managing memory, enforcing type safety, exception handling, thread management, and security.  
+The common language runtime (CLR) is the heart of .NET Framework and provides the execution environment for all .NET Framework code. Code that runs within the CLR is referred to as managed code. The CLR provides various functions and services required for program execution, including just-in-time (JIT) compilation, allocating and managing memory, enforcing type safety, exception handling, thread management, and security.  
   
  With the CLR hosted in Microsoft SQL Server (called CLR integration), you can author stored procedures, triggers, user-defined functions, user-defined types, and user-defined aggregates in managed code. Because managed code compiles to native code prior to execution, you can achieve significant performance increases in some scenarios.  
   
- Managed code uses Code Access Security (CAS), code links, and application domains to prevent assemblies from performing certain operations. SQL Server uses CAS to help secure the managed code and prevent compromise of the operating system or database server.  
+Managed code running on .NET Framework uses Code Access Security (CAS), code links, and application domains to prevent assemblies from performing certain operations. SQL Server uses CAS to help secure the managed code and prevent compromise of the operating system or database server.
+
+[!INCLUDE [cas-deprecated](../../../../../includes/cas-deprecated.md)]
   
  This section is meant to provide only enough information to get started programming with SQL Server CLR integration, and is not meant to be comprehensive. For more detailed information, see [Common Language Runtime (CLR) Integration Overview](/sql/relational-databases/clr-integration/common-language-runtime-integration-overview).
   

@@ -1,10 +1,11 @@
 ---
 title: Publish a .NET console application using Visual Studio for Mac
 description: Learn how to use Visual Studio for Mac to create the set of files that are needed to run a .NET application.
-ms.date: 11/30/2020
-recommendations: false
+ms.date: 12/19/2022
 ---
 # Tutorial: Publish a .NET console application using Visual Studio for Mac
+
+[!INCLUDE [](~/includes/vs-mac-eol.md)]
 
 This tutorial shows how to publish a console app so that other users can run it. Publishing creates the set of files that are needed to run your application. To deploy the files, copy them to the target machine.
 
@@ -58,7 +59,7 @@ As the preceding image shows, the published output includes the following files:
 
 * *HelloWorld.runtimeconfig.json*
 
-   This is the application's run-time configuration file. It identifies the version of .NET that your application was built to run on. You can also add configuration options to it. For more information, see [.NET run-time configuration settings](../run-time-config/index.md#runtimeconfigjson).
+   This is the application's runtime configuration file. It identifies the version of .NET that your application was built to run on. You can also add configuration options to it. For more information, see [.NET runtime configuration settings](../runtime-config/index.md#runtimeconfigjson).
 
 ## Run the published app
 
@@ -77,6 +78,10 @@ As the preceding image shows, the published output includes the following files:
 ## Additional resources
 
 - [.NET application deployment](../deploying/index.md)
+- [Publish .NET apps with the .NET CLI](../deploying/deploy-with-cli.md)
+- [`dotnet publish`](../tools/dotnet-publish.md)
+- [Tutorial: Publish a .NET console application using Visual Studio Code](publishing-with-visual-studio-code.md)
+- [Use the .NET SDK in continuous integration (CI) environments](../../devops/dotnet-cli-and-continuous-integration.md)
 
 ## Next steps
 

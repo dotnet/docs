@@ -1,9 +1,0 @@
-﻿<Window x:Class="AsyncMethodCS.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        <Button Name="startButton" Content="Start" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="41,36,0,0" Click="startButton_Click"/>
-
-    </Grid>
-</Window>

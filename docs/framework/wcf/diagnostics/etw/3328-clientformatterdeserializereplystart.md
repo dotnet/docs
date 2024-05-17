@@ -6,10 +6,10 @@ ms.assetid: 3e8cb064-3052-481e-8a81-3e311d9ce138
 ---
 # 3328 - ClientFormatterDeserializeReplyStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3328|  
 |Keywords|ServiceModel|  
 |Level|Verbose|  

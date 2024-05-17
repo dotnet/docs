@@ -5,7 +5,7 @@ ms.date: 02/14/2020
 ---
 # dotnet list reference
 
-**This article applies to:** ✔️ .NET Core 2.x SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -31,9 +31,7 @@ The `dotnet list reference` command provides a convenient option to list project
 
 ## Options
 
-* **`-h|--help`**
-
-  Prints out a short help for the command.
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 ## Examples
 

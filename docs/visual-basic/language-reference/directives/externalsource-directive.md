@@ -3,10 +3,8 @@ description: "Learn more about: #ExternalSource Directive"
 title: "#ExternalSource Directive"
 ms.date: 07/20/2015
 f1_keywords: 
-  - "#Externalsource"
   - "#ExternalSource"
   - "vb.ExternalSource"
-  - "Externalsource"
   - "vb.#ExternalSource"
   - "ExternalSource"
 helpviewer_keywords: 

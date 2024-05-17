@@ -1,25 +1,23 @@
 ﻿// <Snippet1>
-using System;
-
 public class A
 {
-   private int value = 10;
+    private int _value = 10;
 
-   public class B : A
-   {
-       public int GetValue()
-       {
-           return this.value;
-       }
-   }
+    public class B : A
+    {
+        public int GetValue()
+        {
+            return _value;
+        }
+    }
 }
 
 public class C : A
 {
-//    public int GetValue()
-//    {
-//        return this.value;
-//    }
+    //    public int GetValue()
+    //    {
+    //        return _value;
+    //    }
 }
 
 public class AccessExample

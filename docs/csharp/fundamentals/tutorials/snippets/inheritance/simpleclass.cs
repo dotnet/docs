@@ -1,5 +1,4 @@
 ﻿// <Snippet2>
-using System;
 using System.Reflection;
 
 public class SimpleClassExample
@@ -11,7 +10,7 @@ public class SimpleClassExample
                              BindingFlags.NonPublic | BindingFlags.FlattenHierarchy;
         MemberInfo[] members = t.GetMembers(flags);
         Console.WriteLine($"Type {t.Name} has {members.Length} members: ");
-        foreach (var member in members)
+        foreach (MemberInfo member in members)
         {
             string access = "";
             string stat = "";
@@ -31,7 +30,7 @@ public class SimpleClassExample
                 if (method.IsStatic)
                     stat = " Static";
             }
-            var output = $"{member.Name} ({member.MemberType}): {access}{stat}, Declared by {member.DeclaringType}";
+            string output = $"{member.Name} ({member.MemberType}): {access}{stat}, Declared by {member.DeclaringType}";
             Console.WriteLine(output);
         }
     }

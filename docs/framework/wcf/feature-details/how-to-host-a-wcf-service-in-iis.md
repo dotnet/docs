@@ -13,7 +13,7 @@ This topic outlines the basic steps required to create a Windows Communication F
   
  For more information about how WCF and ASP.NET interact, see [WCF Services and ASP.NET](wcf-services-and-aspnet.md). For more information about configuring security, see [Security](security.md).  
   
- For the source copy of this example, see [IIS Hosting Using Inline Code](/previous-versions/dotnet/framework/wcf/samples/iis-hosting-using-inline-code).  
+ For the source copy of this example, see [IIS Hosting Using Inline Code](../samples/iis-hosting-using-inline-code.md).  
   
 ### To create a service hosted by IIS  
   
@@ -56,13 +56,13 @@ This topic outlines the basic steps required to create a Windows Communication F
      [!code-csharp[c_HowTo_HostInIIS#12](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_hostiniis/cs/source.cs#12)]
      [!code-vb[c_HowTo_HostInIIS#12](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_howto_hostiniis/vb/source.vb#12)]  
   
-10. Create a file named "Web.config" in the application directory and add the following configuration code into the file. At runtime, the WCF infrastructure uses the information to construct an endpoint that client applications can communicate with.  
+10. Create a file named "Web.config" in the application directory and add the following configuration code into the file. At run time, the WCF infrastructure uses the information to construct an endpoint that client applications can communicate with.  
   
      [!code-xml[c_HowTo_HostInIIS#100](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_hostiniis/common/web.config#100)]
   
-     This example explicitly specifies endpoints in the configuration file. If you do not add any endpoints to the service, the runtime adds default endpoints for you. For more information about default endpoints, bindings, and behaviors see [Simplified Configuration](../simplified-configuration.md) and [Simplified Configuration for WCF Services](/previous-versions/dotnet/framework/wcf/samples/simplified-configuration-for-wcf-services).  
+     This example explicitly specifies endpoints in the configuration file. If you do not add any endpoints to the service, the runtime adds default endpoints for you. For more information about default endpoints, bindings, and behaviors see [Simplified Configuration](../simplified-configuration.md) and [Simplified Configuration for WCF Services](../samples/simplified-configuration-for-wcf-services.md).  
   
-11. To make sure the service is hosted correctly, open an instance of Internet Explorer and browse to the service's URL: `http://localhost/IISHostedCalc/Service.svc`  
+11. To make sure the service is hosted correctly, open a browser and browse to the service's URL: `http://localhost/IISHostedCalc/Service.svc`  
   
 ## Example  
 

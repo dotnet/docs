@@ -82,7 +82,7 @@ public class CancellationExample
         Console.WriteLine("Continuation Status: {0}", continuation.Status);
     }
 
-    static void Elapsed(object state)
+    static void Elapsed(object? state)
     {
         if (state is CancellationTokenSource cts)
         {

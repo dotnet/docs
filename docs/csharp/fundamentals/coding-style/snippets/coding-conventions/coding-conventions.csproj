@@ -2,7 +2,9 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
     <StartupObject>Coding_Conventions_Examples.Program</StartupObject>    
     <RootNamespace>Coding_Conventions_Examples</RootNamespace>
     <AssemblyName>Coding Conventions Examples</AssemblyName>

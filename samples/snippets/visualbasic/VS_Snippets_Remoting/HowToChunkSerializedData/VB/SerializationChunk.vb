@@ -1,11 +1,9 @@
 ﻿Imports System.IO
 Imports System.Web.Services
 Imports System.Web.Services.Protocols
-Imports System.Runtime.Serialization
 Imports System.Xml
 Imports System.Xml.Serialization
 Imports System.Xml.Schema
-Imports System.Security.Permissions
 
 Public Class Test
 
@@ -17,7 +15,7 @@ Public Class Test
     End Sub
 
     '<snippet1>
-    <WebMethod(), System.Web.Services.Protocols.SoapDocumentMethodAttribute(ParameterStyle:=SoapParameterStyle.Bare)> _
+    <WebMethod(), SoapDocumentMethodAttribute(ParameterStyle:=SoapParameterStyle.Bare)>
     Public Function DownloadSong(ByVal Authorization As DownloadAuthorization, ByVal filePath As String) As SongStream
 
         ' Turn off response buffering.
@@ -31,7 +29,7 @@ End Class
 '</snippet1>
 
 '<snippet2>
-<XmlSchemaProvider("MySchema")> _
+<XmlSchemaProvider("MySchema")>
 Public Class SongStream
     Implements IXmlSerializable
 
@@ -45,7 +43,6 @@ Public Class SongStream
     Public Sub New(ByVal filePath As String)
         Me.filePath = filePath
     End Sub
-
 
     ' This is the method named by the XmlSchemaProviderAttribute applied to the type.
     Public Shared Function MySchema(ByVal xs As XmlSchemaSet) As XmlQualifiedName
@@ -62,8 +59,6 @@ Public Class SongStream
         Return New XmlQualifiedName("songStream", ns)
 
     End Function
-
-
 
     Sub WriteXml(ByVal writer As System.Xml.XmlWriter) Implements IXmlSerializable.WriteXml
         ' This is the chunking code.
@@ -112,12 +107,10 @@ End Class
 '</snippet2>
 Public Delegate Sub ProgressMade(ByVal Progress As Double)
 
-
 '<snippet3>
 Public Class SongFile
     Implements IXmlSerializable
     Public Shared Event OnProgress As ProgressMade
-
 
     Public Sub New()
 
@@ -171,16 +164,13 @@ Public Class SongFile
         reader.ReadEndElement()
     End Sub
 
-    <PermissionSet(SecurityAction.Demand, Name:="FullTrust")> _
     Public Sub Play()
         System.Diagnostics.Process.Start(Me.filePath)
     End Sub
 
-
     Function GetSchema() As System.Xml.Schema.XmlSchema Implements IXmlSerializable.GetSchema
         Throw New System.NotImplementedException()
     End Function
-
 
     Public Sub WriteXml(ByVal writer As XmlWriter) Implements IXmlSerializable.WriteXml
         Throw New System.NotImplementedException()

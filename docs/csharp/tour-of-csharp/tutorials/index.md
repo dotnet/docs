@@ -1,17 +1,17 @@
 ---
-title: Introduction to C# - interactive tutorials
+title: Interactive tutorials
 description: Learn C# in your browser, and get started with your own development environment
-ms.date: 02/02/2021
+ms.date: 03/15/2024
 ms.custom: mvc
 ---
 # Introduction to C\#
 
 Welcome to the introduction to C# tutorials. These lessons start with interactive code
 that you can run in your browser. You can learn the basics of C# from the
-[C# 101 video series](https://aka.ms/dotnet3-csharp) before starting these interactive lessons.
+[C# for Beginners video series](https://aka.ms/dotnet/beginnervideos/youtube/csharp) before starting these interactive lessons.
 
-<!--markdownlint-disable MD034 -->
-> [!VIDEO https://channel9.msdn.com/Series/CSharp-101/What-is-C/player]
+<!--markdownlint-disable-next-line MD034 -->
+> [!VIDEO https://www.youtube.com/embed/9THmGiSPjBQ?si=3kUKFtOMLpEzeq7J]
 
 The first lessons explain C# concepts using small snippets of code. You'll
 learn the basics of C# syntax and how to work with data types like strings,
@@ -22,9 +22,9 @@ programming or the C# language.
 You can try these tutorials in different environments. The concepts you'll learn are the same. The difference is which experience you prefer:
 
 - [In your browser, on the docs platform](hello-world.yml): This experience embeds a runnable C# code window in docs pages. You write and execute C# code in the browser.
-- [In the Microsoft Learn experience](/learn/paths/csharp-first-steps/). This learning path contains several modules that teach the basics of C#.
+- [In the Microsoft Learn training experience](/training/paths/csharp-first-steps/). This learning path contains several modules that teach the basics of C#.
 - [In Jupyter on Binder](https://mybinder.org/v2/gh/dotnet/try-samples/main?filepath=hello-csharp%2Fhello-world.ipynb). You can experiment with C# code in a Jupyter notebook on binder.
-- [On your local machine](numbers-in-csharp-local.md). After you've explored online, you can [download](https://dotnet.microsoft.com/download) the .NET Core SDK and build programs on your machine.
+- [On your local machine](numbers-in-csharp-local.md). After you've explored online, you can [download the .NET SDK and build programs on your machine](local-environment.md).
 
 All the introductory tutorials following the Hello World lesson are available using
 the online browser experience or [in your own local development
@@ -36,7 +36,7 @@ on your machine.
 ## [Hello world](hello-world.yml)
 
 In the [Hello world](hello-world.yml) tutorial, you'll create the most basic
-C# program. You'll explore the `string` type and how to work with text. You can also use the path on [Microsoft Learn](/learn/paths/csharp-first-steps/) or [Jupyter on Binder](https://mybinder.org/v2/gh/dotnet/try-samples/main?filepath=hello-csharp%2Fhello-world.ipynb).
+C# program. You'll explore the `string` type and how to work with text. You can also use the path on [Microsoft Learn training](/training/paths/csharp-first-steps/) or [Jupyter on Binder](https://mybinder.org/v2/gh/dotnet/try-samples/main?filepath=hello-csharp%2Fhello-world.ipynb).
 
 ## [Numbers in C#](numbers-in-csharp.yml)
 

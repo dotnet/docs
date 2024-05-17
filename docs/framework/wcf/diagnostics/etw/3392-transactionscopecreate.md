@@ -6,10 +6,10 @@ ms.assetid: 2b6257a6-683b-4adc-aca5-6d095e4c03a0
 ---
 # 3392 - TransactionScopeCreate
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3392|  
 |Keywords|ServiceModel|  
 |Level|Information|  

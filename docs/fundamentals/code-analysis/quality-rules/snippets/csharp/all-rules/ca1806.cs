@@ -3,7 +3,7 @@
     //<snippet1>
     public class Book
     {
-        private readonly string _Title;
+        private readonly string? _Title;
 
         public Book(string title)
         {
@@ -16,7 +16,7 @@
             _Title = title;
         }
 
-        public string Title
+        public string? Title
         {
             get { return _Title; }
         }
@@ -29,7 +29,7 @@ namespace ca1806_2
     //<snippet2>
     public class Book
     {
-        private readonly string _Title;
+        private readonly string? _Title;
 
         public Book(string title)
         {
@@ -41,7 +41,7 @@ namespace ca1806_2
             _Title = title;
         }
 
-        public string Title
+        public string? Title
         {
             get { return _Title; }
         }

@@ -1,5 +1,5 @@
 ---
-title: "Generic Delegates - C# Programming Guide"
+title: "Generic Delegates"
 description: Learn about using generic delegates in C#. See code examples and view additional available resources.
 ms.date: 07/20/2015
 helpviewer_keywords: 
@@ -32,7 +32,6 @@ A [delegate](../../language-reference/builtin-types/reference-types.md) can defi
 ## See also
 
 - <xref:System.Collections.Generic>
-- [C# Programming Guide](../index.md)
 - [Introduction to Generics](../../fundamentals/types/generics.md)
 - [Generic Methods](./generic-methods.md)
 - [Generic Classes](./generic-classes.md)

@@ -1,31 +1,22 @@
-﻿using System.Threading;
-using System.Threading.Tasks;
-using Microsoft.Extensions.Logging;
+﻿namespace App.ScopedService;
 
-namespace App.ScopedService
+public sealed class DefaultScopedProcessingService(
+    ILogger<DefaultScopedProcessingService> logger) : IScopedProcessingService
 {
-    public class DefaultScopedProcessingService : IScopedProcessingService
+    private int _executionCount;
+
+    public async Task DoWorkAsync(CancellationToken stoppingToken)
     {
-        private int _executionCount;
-        private readonly ILogger<DefaultScopedProcessingService> _logger;
-
-        public DefaultScopedProcessingService(
-            ILogger<DefaultScopedProcessingService> logger) =>
-            _logger = logger;
-
-        public async Task DoWorkAsync(CancellationToken stoppingToken)
+        while (!stoppingToken.IsCancellationRequested)
         {
-            while (!stoppingToken.IsCancellationRequested)
-            {
-                ++ _executionCount;
+            ++ _executionCount;
 
-                _logger.LogInformation(
-                    "{ServiceName} working, execution count: {Count}",
-                    nameof(DefaultScopedProcessingService),
-                    _executionCount);
+            logger.LogInformation(
+                "{ServiceName} working, execution count: {Count}",
+                nameof(DefaultScopedProcessingService),
+                _executionCount);
 
-                await Task.Delay(10_000, stoppingToken);
-            }
+            await Task.Delay(10_000, stoppingToken);
         }
     }
 }

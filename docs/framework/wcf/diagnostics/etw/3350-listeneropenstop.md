@@ -6,10 +6,10 @@ ms.assetid: 67211588-3c52-465a-92dd-20185e7edcf0
 ---
 # 3350 - ListenerOpenStop
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3350|  
 |Keywords|Channel|  
 |Level|Verbose|  

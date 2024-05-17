@@ -45,15 +45,15 @@ Public Class Product
     End Function
 End Class
 
-Module Example
-    Public Sub Main()
+Module Example2
+    Public Sub Main2()
         Dim item1 As New Product("WidgetA")
         item1.Quantity = 17
-        item1.Price = 6.32d
+        item1.Price = 6.32D
         Dim thatDate As DateTime = #5/1/2009#
         Dim result As String
         ' <Snippet14>
-        result = String.Format("On {0:d}, the inventory of {1} was worth {2:C2}.", _
+        result = String.Format("On {0:d}, the inventory of {1} was worth {2:C2}.",
                                thatDate, item1, item1.Value)
         Console.WriteLine(result)
         ' The example displays output like the following if run on a system

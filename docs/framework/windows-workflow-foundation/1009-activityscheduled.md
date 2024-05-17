@@ -6,10 +6,10 @@ ms.assetid: 307e38b6-d47e-47a4-9708-e74d8314b1a1
 ---
 # 1009 - ActivityScheduled
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1009|  
 |Keywords|WFRuntime|  
 |Level|Information|  

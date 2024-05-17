@@ -59,8 +59,6 @@ Specifies common language runtime startup information.
 
  The **\<supportedRuntime>** element should be used by all applications built using version 1.1 or later of the runtime. Applications built to support only version 1.0 of the runtime must use the **\<requiredRuntime>** element.
 
- The startup code for an application hosted in Microsoft Internet Explorer ignores the **\<startup>** element and its child elements.
-
 ## The useLegacyV2RuntimeActivationPolicy attribute
 
  This attribute is useful if your application uses legacy activation paths, such as the [CorBindToRuntimeEx function](../../../unmanaged-api/hosting/corbindtoruntimeex-function.md), and you want those paths to activate version 4 of the CLR instead of an earlier version, or if your application is built with the .NET Framework 4 but has a dependency on a mixed-mode assembly built with an earlier version of the .NET Framework. In those scenarios, set the attribute to `true`.

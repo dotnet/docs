@@ -16,7 +16,7 @@ namespace Microsoft.WCF.Documentation
     {
       MyInstanceContextExtension extension = new MyInstanceContextExtension();
 
-      //Add your custom InstanceContex extension that will let you associate state with this instancecontext
+      //Add your custom InstanceContext extension that will let you associate state with this instancecontext
       instanceContext.Extensions.Add(extension);
     }
   }

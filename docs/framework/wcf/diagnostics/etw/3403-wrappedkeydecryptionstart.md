@@ -6,10 +6,10 @@ ms.assetid: 267e2b54-6c42-42c0-bb2e-7e6af013bc6b
 ---
 # 3403 - WrappedKeyDecryptionStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3403|  
 |Keywords|Security|  
 |Level|Verbose|  

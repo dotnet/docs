@@ -5,7 +5,7 @@ ms.date: 02/14/2020
 ---
 # dotnet clean
 
-**This article applies to:** ✔️ .NET Core 2.x SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -14,10 +14,12 @@ ms.date: 02/14/2020
 ## Synopsis
 
 ```dotnetcli
-dotnet clean [<PROJECT>|<SOLUTION>] [-c|--configuration <CONFIGURATION>]
+dotnet clean [<PROJECT>|<SOLUTION>] [--artifacts-path <ARTIFACTS_DIR>]
+    [-c|--configuration <CONFIGURATION>]
     [-f|--framework <FRAMEWORK>] [--interactive]
     [--nologo] [-o|--output <OUTPUT_DIRECTORY>]
-    [-r|--runtime <RUNTIME_IDENTIFIER>] [-v|--verbosity <LEVEL>]
+    [-r|--runtime <RUNTIME_IDENTIFIER>] [--tl:[auto|on|off]]
+    [-v|--verbosity <LEVEL>]
 
 dotnet clean -h|--help
 ```
@@ -34,37 +36,37 @@ The MSBuild project or solution to clean. If a project or solution file is not s
 
 ## Options
 
-* **`-c|--configuration <CONFIGURATION>`**
+[!INCLUDE [artifacts-path](../../../includes/cli-artifacts-path.md)]
 
-  Defines the build configuration. The default for most projects is `Debug`, but you can override the build configuration settings in your project. This option is only required when cleaning if you specified it during build time.
+[!INCLUDE [configuration](../../../includes/cli-configuration-clean.md)]
 
 * **`-f|--framework <FRAMEWORK>`**
 
   The [framework](../../standard/frameworks.md) that was specified at build time. The framework must be defined in the [project file](../project-sdk/overview.md). If you specified the framework at build time, you must specify the framework when cleaning.
 
-* **`-h|--help`**
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
-  Prints out a short help for the command.
-
-* **`--interactive`**
-
-  Allows the command to stop and wait for user input or action. For example, to complete authentication. Available since .NET Core 3.0 SDK.
+[!INCLUDE [interactive](../../../includes/cli-interactive-3-0.md)]
 
 * **`--nologo`**
 
-  Doesn't display the startup banner or the copyright message. Available since .NET Core 3.0 SDK.
+  Doesn't display the startup banner or the copyright message.
 
 * **`-o|--output <OUTPUT_DIRECTORY>`**
 
   The directory that contains the build artifacts to clean. Specify the `-f|--framework <FRAMEWORK>` switch with the output directory switch if you specified the framework when the project was built.
 
+  - .NET 7.0.200 SDK and later
+
+    If you specify the `--output` option when running this command on a solution, the CLI will emit a warning (an error in 7.0.200) due to the unclear semantics of the output path. The `--output` option is disallowed because all outputs of all built projects would be copied into the specified directory, which isn't compatible with multi-targeted projects, as well as projects that have different versions of direct and transitive dependencies. For more information, see [Solution-level `--output` option no longer valid for build-related commands](../compatibility/sdk/7.0/solution-level-output-no-longer-valid.md).
+
 * **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 
   Cleans the output folder of the specified runtime. This is used when a [self-contained deployment](../deploying/index.md#publish-self-contained) was created.
 
-* **`-v|--verbosity <LEVEL>`**
+[!INCLUDE [tl](../../../includes/cli-tl.md)]
 
-  Sets the MSBuild verbosity level. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default is `normal`.
+[!INCLUDE [verbosity](../../../includes/cli-verbosity-normal.md)]
 
 ## Examples
 

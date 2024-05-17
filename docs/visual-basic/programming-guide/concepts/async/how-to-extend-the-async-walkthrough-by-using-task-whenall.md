@@ -13,11 +13,11 @@ You might have noticed in the walkthrough that the websites download at differen
 You apply the `Task.WhenAll` method to a collection of tasks. The application of `WhenAll` returns a single task that isn’t complete until every task in the collection is completed. The tasks appear to run in parallel, but no additional threads are created. The tasks can complete in any order.
 
 > [!IMPORTANT]
-> The following procedures describe extensions to the async applications that are developed in [Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)](walkthrough-accessing-the-web-by-using-async-and-await.md). You can develop the applications by either completing the walkthrough or downloading the code from [Developer Code Samples](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f).
+> The following procedures describe extensions to the async applications that are developed in [Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)](walkthrough-accessing-the-web-by-using-async-and-await.md). You can develop the applications by either completing the walkthrough or downloading the sample from the [.NET Sample Browser](/samples/dotnet/samples/async-and-await-vb/). The example code is in the **SerialAsyncExample** project.
 >
 > To run the example, you must have Visual Studio 2012 or later installed on your computer.
 
-### To add Task.WhenAll to your GetURLContentsAsync solution
+## To add Task.WhenAll to your GetURLContentsAsync solution
 
 1. Add the `ProcessURLAsync` method to the first application that's developed in [Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)](walkthrough-accessing-the-web-by-using-async-and-await.md).
 
@@ -167,7 +167,7 @@ You apply the `Task.WhenAll` method to a collection of tasks. The application of
 
 For either solution, choose the F5 key to run the program, and then choose the **Start** button. The output should resemble the output from the async solutions in [Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)](walkthrough-accessing-the-web-by-using-async-and-await.md). However, notice that the websites appear in a different order each time.
 
-## Example
+## Example 1
 
 The following code shows the extensions to the project that uses the `GetURLContentsAsync` method to download content from the web.
 
@@ -301,7 +301,7 @@ Class MainWindow
 End Class
 ```
 
-## Example
+## Example 2
 
 The following code shows the extensions to the project that uses method `HttpClient.GetByteArrayAsync` to download content from the web.
 

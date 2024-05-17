@@ -63,13 +63,13 @@ FUNCTION function-name
   
  Functions can also be declared in the model itself. Functions declared in the model are executed in the same way as functions declared inline in the command. For more information, see [User-Defined Functions](user-defined-functions-entity-sql.md).  
   
-## Example  
+## Example 1
 
  The following Entity SQL command defines a function `Products` that takes an integer value to filter the returned products.  
   
  [!code-sql[DP EntityServices Concepts#FUNCTION1](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#function1)]  
   
-## Example  
+## Example 2  
 
  The following Entity SQL command defines a function `StringReturnsCollection` that takes a collection of strings to filter the returned contacts.  
   

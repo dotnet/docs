@@ -1,5 +1,5 @@
 ---
-title: "Object and Collection Initializers - C# Programming Guide"
+title: "Object and Collection Initializers"
 description: Object initializers in C# assign values to accessible fields or properties of an object at creation after invoking a constructor.
 ms.date: 12/19/2018
 helpviewer_keywords: 
@@ -20,7 +20,7 @@ Object initializers let you assign values to any accessible fields or properties
 
 The object initializers syntax allows you to create an instance, and after that it assigns the newly created object, with its assigned properties, to the variable in the assignment.
 
-Starting with C# 6, object initializers can set indexers, in addition to assigning fields and properties. Consider this basic `Matrix` class:
+Object initializers can set indexers, in addition to assigning fields and properties. Consider this basic `Matrix` class:
 
 [!code-csharp[ObjectInitializer2](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/object-collection-initializers/BasicObjectInitializers.cs#MatrixDeclaration)]  
 
@@ -31,7 +31,8 @@ You could initialize the identity matrix with the following code:
 Any accessible indexer that contains an accessible setter can be used as one of the expressions in an object initializer, regardless of the number or types of arguments. The index arguments form the left side of the assignment, and the value is the right side of the expression.  For example, these are all valid if `IndexersExample` has the appropriate indexers:
 
 ```csharp
-var thing = new IndexersExample {
+var thing = new IndexersExample
+{
     name = "object one",
     [1] = '1',
     [2] = '4',
@@ -74,6 +75,62 @@ Each object in the new anonymous type has two public properties that receive the
 select new {p.ProductName, Price = p.UnitPrice};  
 ```
 
+## Object Initializers with the `required` modifier
+
+You use the `required` keyword to force callers to set the value of a property or field using an object initializer. Required properties don't need to be set as constructor parameters. The compiler ensures all callers initialize those values.
+
+```csharp
+public class Pet
+{
+    public required int Age;
+    public string Name;
+}
+
+// `Age` field is necessary to be initialized.
+// You don't need to initialize `Name` property
+var pet = new Pet() { Age = 10};
+
+// Compiler error:
+// Error CS9035 Required member 'Pet.Age' must be set in the object initializer or attribute constructor.
+// var pet = new Pet();
+```
+
+It's a typical practice to guarantee that your object is properly initialized, especially when you have multiple fields or properties to manage and don't want to include them all in the constructor.
+
+## Object Initializers with the `init` accessor
+
+Making sure no one changes the designed object could be limited by using an `init` accessor. It helps to restrict the setting of the property value.
+
+```csharp
+public class Person
+{
+    public string FirstName { get; set; }
+    public string LastName { get; init; }
+}
+
+// The `LastName` property can be set only during initialization. It CAN'T be modified afterwards.
+// The `FirstName` property can be modified after initialization.
+var pet = new Person() { FirstName = "Joe", LastName = "Doe"};
+
+// You can assign the FirstName property to a different value.
+pet.FirstName = "Jane";
+
+// Compiler error:
+// Error CS8852  Init - only property or indexer 'Person.LastName' can only be assigned in an object initializer,
+//               or on 'this' or 'base' in an instance constructor or an 'init' accessor.
+// pet.LastName = "Kowalski";
+```
+
+Required init-only properties support immutable structures while allowing natural syntax for users of the type.
+
+## Object Initializers with class-typed properties
+
+When initializing an object, particularly when reusing the current instance, it's crucial to consider the implications for class-typed properties.
+
+[!code-csharp[ClassTypedInitializer](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/object-collection-initializers/HowToClassTypedInitializer.cs#HowToClassTypedInitializer)]  
+
+The following example shows how, for ClassB, the initialization process involves updating specific values while retaining others from the original instance. The Initializer reuses current instance: ClassB's values will be: `100003` (new value we assign here), `true` (kept from EmbeddedClassTypeA's initialization), `BBBabc` (unchanged default from EmbeddedClassTypeB)
+
 ## Collection initializers
 
 Collection initializers let you specify one or more element initializers when you initialize a collection type that implements <xref:System.Collections.IEnumerable> and has `Add` with the appropriate signature as an instance method or an extension method. The element initializers can be a simple value, an expression, or an object initializer. By using a collection initializer, you do not have to specify multiple calls; the compiler adds the calls automatically.  
@@ -91,13 +148,13 @@ The following collection initializer uses object initializers to initialize obje
   
 You can specify [null](../../language-reference/keywords/null.md) as an element in a collection initializer if the collection's `Add` method allows it.  
   
-[!code-csharp[ListInitializerNull](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/object-collection-initializers/BasicObjectInitializers.cs#ListInitialerWithNull)]  
+[!code-csharp[ListInitializerNull](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/object-collection-initializers/BasicObjectInitializers.cs#ListInitializerWithNull)]  
   
  You can specify indexed elements if the collection supports read / write indexing.
   
 [!code-csharp[DictionaryInitializer](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/object-collection-initializers/BasicObjectInitializers.cs#DictionaryIndexerInitializer)]  
 
-The preceding sample generates code that calls the <xref:System.Collections.Generic.Dictionary%602.Item(%600)> to set the values. Before C# 6, you could initialize dictionaries and other associative containers using the following syntax. Notice that instead of indexer syntax, with parentheses and an assignment, it uses an object with multiple values:
+The preceding sample generates code that calls the <xref:System.Collections.Generic.Dictionary%602.Item(%600)> to set the values. You could also initialize dictionaries and other associative containers using the following syntax. Notice that instead of indexer syntax, with parentheses and an assignment, it uses an object with multiple values:
 
 [!code-csharp[DictionaryAddInitializer](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/object-collection-initializers/BasicObjectInitializers.cs#DictionaryAddInitializer)]  
 
@@ -147,6 +204,7 @@ The following example shows an object that implements <xref:System.Collections.I
 
 ## See also
 
-- [C# Programming Guide](../index.md)
+- [Use object initializers (style rule IDE0017)](../../../fundamentals/code-analysis/style-rules/ide0017.md)
+- [Use collection initializers (style rule IDE0028)](../../../fundamentals/code-analysis/style-rules/ide0028.md)
 - [LINQ in C#](../../linq/index.md)
 - [Anonymous Types](../../fundamentals/types/anonymous-types.md)

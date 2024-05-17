@@ -12,33 +12,33 @@ ms.assetid: 54bce311-3d23-40b9-ba90-1bdbdaf8fbba
 # UI Automation Support for the MenuItem Control Type
 
 > [!NOTE]
-> This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](/windows/win32/winauto/entry-uiauto-win32).
+> This documentation is intended for .NET Framework developers who want to use the managed UI Automation classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about UI Automation, see [Windows Automation API: UI Automation](/windows/win32/winauto/entry-uiauto-win32).
 
-This topic provides information about [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] support for the MenuItem control type. It describes the control's [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] tree structure and provides the properties and control patterns that are required for the MenuItem control type.
+This topic provides information about Microsoft UI Automation support for the MenuItem control type. It describes the control's Microsoft UI Automation tree structure and provides the properties and control patterns that are required for the MenuItem control type.
 
 A menu control allows hierarchal organization of elements associated with commands and event handlers. In a typical Microsoft Windows application, a menu bar contains several menu items (such as **File**, **Edit**, and **Window**), and each menu item displays a menu. A menu contains a collection of menu items (such as **New**, **Open**, and **Close**), which can be expanded to display additional menu items or perform a specific action when clicked. A menu item can be hosted in a menu, menu bar, or tool bar.
 
-The following sections define the required [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree structure, properties, control patterns, and events for the MenuItem control type. The [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] requirements apply to all list controls, whether [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)], Win32, or Windows Forms.
+The following sections define the required UI Automation tree structure, properties, control patterns, and events for the MenuItem control type. The UI Automation requirements apply to all list controls, whether Windows Presentation Foundation (WPF), Win32, or Windows Forms.
 
 <a name="Required_UI_Automation_Tree_Structure"></a>
 
 ## Required UI Automation Tree Structure
 
-The following table depicts the control view and the content view of the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree that pertains to menu item controls and describes what can be contained in each view. For more information on the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree, see [UI Automation Tree Overview](ui-automation-tree-overview.md).
+The following table depicts the control view and the content view of the UI Automation tree that pertains to menu item controls and describes what can be contained in each view. For more information on the UI Automation tree, see [UI Automation Tree Overview](ui-automation-tree-overview.md).
 
 |Control View|Content View|
 |------------------|------------------|
 |MenuItem "Help"<br /><br /> <ul><li>Menu (sub menu of Help menu item)<br /><br /> <ul><li>MenuItem "Help Topics"</li><li>MenuItem "About Notepad"</li></ul></li></ul>|MenuItem "Help"<br /><br /> -   MenuItem "Help Topics"<br />-   MenuItem "About Notepad"|
 
-The control view of the menu item control has the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree structure shown above. Note that the **Help** menu item is included to better illustrate the structure in a typical menu to submenu hierarchy.
+The control view of the menu item control has the UI Automation tree structure shown above. Note that the **Help** menu item is included to better illustrate the structure in a typical menu to submenu hierarchy.
 
-For the content view, Menu is absent from the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree because it does not convey meaningful information to the end user.
+For the content view, Menu is absent from the UI Automation tree because it does not convey meaningful information to the end user.
 
 <a name="Required_UI_Automation_Properties"></a>
 
 ## Required UI Automation Properties
 
-The following table lists the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] properties whose value or definition is especially relevant to menu item controls. For more information on [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] properties, see [UI Automation Properties for Clients](ui-automation-properties-for-clients.md).
+The following table lists the UI Automation properties whose value or definition is especially relevant to menu item controls. For more information on UI Automation properties, see [UI Automation Properties for Clients](ui-automation-properties-for-clients.md).
 
 |Property|Value|Description|
 |--------------|-----------|-----------------|
@@ -46,18 +46,18 @@ The following table lists the [!INCLUDE[TLA2#tla_uiautomation](../../../includes
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.BoundingRectangleProperty>|See notes.|The outermost rectangle that contains the whole control.|
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.ClickablePointProperty>|See notes.|Supported if there is a bounding rectangle. If not every point within the bounding rectangle is clickable, and you perform specialized hit testing, then override and provide a clickable point.|
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.IsKeyboardFocusableProperty>|See notes.|If the control can receive keyboard focus, it must support this property.|
-|<xref:System.Windows.Automation.AutomationElementIdentifiers.NameProperty>|See notes.|The menu item control is included in the content view of the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree and is self labeled with a name.|
+|<xref:System.Windows.Automation.AutomationElementIdentifiers.NameProperty>|See notes.|The menu item control is included in the content view of the UI Automation tree and is self labeled with a name.|
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.LabeledByProperty>|`Null`|No label.|
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.ControlTypeProperty>|MenuItem|This value is the same for all UI frameworks.|
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.LocalizedControlTypeProperty>|"menu item"|Localized string corresponding to the MenuItem control type.|
-|<xref:System.Windows.Automation.AutomationElementIdentifiers.IsContentElementProperty>|True|The menu item control is never included in the content view of the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree.|
-|<xref:System.Windows.Automation.AutomationElementIdentifiers.IsControlElementProperty>|True|The menu item control must always be included in the control view of the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree.|
+|<xref:System.Windows.Automation.AutomationElementIdentifiers.IsContentElementProperty>|True|The menu item control is never included in the content view of the UI Automation tree.|
+|<xref:System.Windows.Automation.AutomationElementIdentifiers.IsControlElementProperty>|True|The menu item control must always be included in the control view of the UI Automation tree.|
 
 <a name="Required_UI_Automation_Control_Patterns"></a>
 
 ## Required UI Automation Control Patterns
 
-The following table lists the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] control patterns required to be supported by menu item controls. For more information on control patterns, see [UI Automation Control Patterns Overview](ui-automation-control-patterns-overview.md).
+The following table lists the UI Automation control patterns required to be supported by menu item controls. For more information on control patterns, see [UI Automation Control Patterns Overview](ui-automation-control-patterns-overview.md).
 
 |Control Pattern Property|Support|Notes|
 |------------------------------|-------------|-----------|
@@ -70,7 +70,7 @@ The following table lists the [!INCLUDE[TLA2#tla_uiautomation](../../../includes
 
 ## UI Automation Events for Menu Item
 
-The following table lists the [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] events associated with the menu item control.
+The following table lists the Microsoft UI Automation events associated with the menu item control.
 
 |Event|Support|Explanation|
 |-----------|-------------|-----------------|
@@ -83,9 +83,9 @@ The following table lists the [!INCLUDE[TLA#tla_uiautomation](../../../includes/
 
 ## Required UI Automation Events
 
-The following table lists the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] events required to be supported by all menu item controls. For more information on events, see [UI Automation Events Overview](ui-automation-events-overview.md).
+The following table lists the UI Automation events required to be supported by all menu item controls. For more information on events, see [UI Automation Events Overview](ui-automation-events-overview.md).
 
-|[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] Event|Support/Value|Notes|
+|UI Automation Event|Support/Value|Notes|
 |---------------------------------------------------------------------------------|--------------------|-----------|
 |<xref:System.Windows.Automation.InvokePatternIdentifiers.InvokedEvent>|Depends|None|
 |<xref:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementAddedToSelectionEvent>|Depends|None|

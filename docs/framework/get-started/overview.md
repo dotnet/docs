@@ -35,8 +35,6 @@ ms.assetid: 29848c96-fc36-462d-8072-ba223a40b697
 
 For example, ASP.NET hosts the runtime to provide a scalable, server-side environment for managed code. ASP.NET works directly with the runtime to enable ASP.NET apps and XML web services, both of which are discussed later in this article.
 
-Internet Explorer is an example of an unmanaged app that hosts the runtime (in the form of a MIME type extension). Using Internet Explorer to host the runtime enables you to embed managed components or Windows Forms controls in HTML documents. Hosting the runtime in this way makes managed mobile code possible, but with significant improvements that only managed code offers, such as semi-trusted execution and isolated file storage.
-
 The following illustration shows the relationship of the common language runtime and the class library to your apps and to the overall system. The illustration also shows how managed code operates within a larger architecture.
 
 ![Screenshot that shows how managed code operates within a larger architecture.](./media/overview/language-runtime-class-library-relationship.gif)

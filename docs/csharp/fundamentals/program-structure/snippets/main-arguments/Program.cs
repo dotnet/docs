@@ -1,21 +1,17 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿namespace main_arguments;
 
-namespace main_arguments
+// <AsyncMain>
+class Program
 {
-    class Program
+    static async Task<int> Main(string[] args)
     {
-        #region AsyncMain
-        static async Task<int> Main(string[] args)
-        {
-            return await AsyncConsoleWork();
-        }
-        #endregion
+        return await AsyncConsoleWork();
+    }
 
-        private static async Task<int> AsyncConsoleWork()
-        {
-            await Task.Delay(1000);
-            return 0;
-        }
+    private static async Task<int> AsyncConsoleWork()
+    {
+        // main body here 
+        return 0;
     }
 }
+// </AsyncMain>

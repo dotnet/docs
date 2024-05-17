@@ -1,5 +1,5 @@
 ---
-title: "How to implement interface events - C# Programming Guide"
+title: "How to implement interface events"
 description: Learn how to implement interface events in a class. See code examples and view additional available resources.
 ms.topic: how-to
 ms.date: 07/20/2015
@@ -57,7 +57,6 @@ By providing your own accessors, you can specify whether the two events are repr
   
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Events](./index.md)
 - [Delegates](../delegates/index.md)
 - [Explicit Interface Implementation](../interfaces/explicit-interface-implementation.md)

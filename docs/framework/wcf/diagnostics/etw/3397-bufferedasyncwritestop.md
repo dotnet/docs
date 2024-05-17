@@ -6,10 +6,10 @@ ms.assetid: 1bbf56fc-04fe-443b-ae97-769814c7be57
 ---
 # 3397 - BufferedAsyncWriteStop
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3397|  
 |Keywords|Channel|  
 |Level|Information|  

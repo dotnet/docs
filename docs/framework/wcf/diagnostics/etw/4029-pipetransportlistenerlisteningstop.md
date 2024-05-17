@@ -6,10 +6,10 @@ ms.assetid: 870d196d-b5c6-462e-be74-d6ab0d452bd0
 ---
 # 4029 - PipeTransportListenerListeningStop
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4029|  
 |Keywords|ActivationServices|  
 |Level|Verbose|  

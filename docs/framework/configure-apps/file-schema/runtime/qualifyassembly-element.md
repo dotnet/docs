@@ -75,6 +75,7 @@ Specifies the full name of the assembly that should be dynamically loaded when a
   
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
 - [Runtime Settings Schema](index.md)
 - [How the Runtime Locates Assemblies](../../../deployment/how-the-runtime-locates-assemblies.md)
 - [Partial Assembly References](/previous-versions/dotnet/netframework-4.0/0a7zy9z5(v=vs.100))

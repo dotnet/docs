@@ -11,7 +11,7 @@ The Windows Communication Foundation (WCF) Service Moniker allows COM applicatio
 > [!NOTE]
 > <xref:System.ServiceModel.ComIntegration.IChannelCredentials> is an IDispatch-based interface and you will not get IntelliSense functionality in the Visual Studio environment.  
   
- This article will use the WCF service defined in the [Message Security Sample](/previous-versions/dotnet/framework/wcf/samples/message-security-sample).  
+ This article will use the WCF service defined in the [Message Security Sample](../samples/message-security-sample.md).  
   
 ### To specify a client certificate  
   
@@ -23,7 +23,7 @@ The Windows Communication Foundation (WCF) Service Moniker allows COM applicatio
   
 4. Add `bindingNamespace="http://Microsoft.ServiceModel.Samples"` to the endpoint tag in the App.config for the service.  
   
-5. Build the Message Security Sample and run Service.exe. Use Internet Explorer and browse to the service's URI (`http://localhost:8000/ServiceModelSamples/Service`) to ensure that the service is working.  
+5. Build the Message Security Sample and run Service.exe. Browse to the service's URI (`http://localhost:8000/ServiceModelSamples/Service`) to ensure that the service is working.  
   
 6. Open Visual Basic 6.0 and create a new Standard .exe file. Add a button to the form and double-click the button to add the following code to the Click handler:  
   
@@ -111,7 +111,7 @@ The Windows Communication Foundation (WCF) Service Moniker allows COM applicatio
   
 ### To specify an issue token  
   
-1. Issue tokens are used only for applications using federated security. For more information about federated security, see [Federation and Issued Tokens](federation-and-issued-tokens.md) and [Federation Sample](/previous-versions/dotnet/framework/wcf/samples/federation-sample).  
+1. Issue tokens are used only for applications using federated security. For more information about federated security, see [Federation and Issued Tokens](federation-and-issued-tokens.md) and [Federation Sample](../samples/federation-sample.md).  
   
      The following Visual Basic code example illustrates how to call the <xref:System.ServiceModel.ComIntegration.IChannelCredentials.SetIssuedToken%28System.String%2CSystem.String%2CSystem.String%29> method:  
   

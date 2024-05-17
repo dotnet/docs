@@ -1,9 +1,9 @@
 ---
-title: Implement a custom configuration provider in .NET
-description: Learn how to implement a custom configuration provider in .NET applications.
+title: Implement a custom configuration provider
+description: Learn how to implement a custom configuration provider in .NET apps. Explore a database configuration provider that uses Entity Framework Core.
 author: IEvangelist
 ms.author: dapine
-ms.date: 04/19/2021
+ms.date: 02/20/2024
 ms.topic: how-to
 ---
 
@@ -20,13 +20,13 @@ The provider has the following characteristics:
 - The EF in-memory database is used for demonstration purposes.
   - To use a database that requires a connection string, get a connection string from an interim configuration.
 - The provider reads a database table into configuration at startup. The provider doesn't query the database on a per-key basis.
-- Reload-on-change isn't implemented, so updating the database after the app starts has no effect on the app's configuration.
+- Reload-on-change isn't implemented, so updating the database after the app has started will not affect the app's configuration.
 
 Define a `Settings` record type entity for storing configuration values in the database. For example, you could add a *Settings.cs* file in your *Models* folder:
 
 :::code language="csharp" source="snippets/configuration/custom-provider/Models/Settings.cs":::
 
-For information on record types, see [Record types in C# 9](../../csharp/whats-new/csharp-9.md#record-types).
+For information on record types, see [Record types in C#](../../csharp/language-reference/builtin-types/record.md).
 
 Add an `EntityConfigurationContext` to store and access the configured values.
 
@@ -48,18 +48,17 @@ Create the custom configuration provider by inheriting from <xref:Microsoft.Exte
 
 :::code language="csharp" source="snippets/configuration/custom-provider/Providers/EntityConfigurationProvider.cs":::
 
-An `AddEntityConfiguration` extension method permits adding the configuration source to a <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder> instance.
+An `AddEntityConfiguration` extension method permits adding the configuration source to the underlying `ConfigurationManager` instance.
 
-*Extensions/ConfigurationBuilderExtensions.cs*:
+*Extensions/ConfigurationManagerExtensions.cs*:
 
-:::code language="csharp" source="snippets/configuration/custom-provider/Extensions/ConfigurationBuilderExtensions.cs":::
+:::code language="csharp" source="snippets/configuration/custom-provider/Extensions/ConfigurationManagerExtensions.cs":::
 
-> [!IMPORTANT]
-> The use of a temporary configuration source to acquire the connection string is important. The current `builder` has its configuration constructed temporarily by calling <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder.Build?displayProperty=nameWithType>, and <xref:Microsoft.Extensions.Configuration.ConfigurationExtensions.GetConnectionString%2A>. After obtaining the connection string, the `builder` adds the `EntityConfigurationSource` given the `connectionString`.
+Since the <xref:Microsoft.Extensions.Configuration.ConfigurationManager> is both an implementation of <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder> and <xref:Microsoft.Extensions.Configuration.IConfigurationRoot>, the extension method can access the connection strings configuration and add the `EntityConfigurationSource`.
 
 The following code shows how to use the custom `EntityConfigurationProvider` in *Program.cs*:
 
-:::code language="csharp" source="snippets/configuration/custom-provider/Program.cs" highlight="33":::
+:::code language="csharp" source="snippets/configuration/custom-provider/Program.cs" highlight="9":::
 
 ## Consume provider
 
@@ -67,9 +66,9 @@ To consume the custom configuration provider, you can use the [options pattern](
 
 :::code language="csharp" source="snippets/configuration/custom-provider/WidgetOptions.cs":::
 
-A call to <xref:Microsoft.Extensions.Hosting.IHostBuilder.ConfigureServices%2A> configures the mapping of the options.
+A call to <xref:Microsoft.Extensions.DependencyInjection.OptionsConfigurationServiceCollectionExtensions.Configure%2A> registers a configuration instance, which `TOptions` binds against.
 
-:::code language="csharp" source="snippets/configuration/custom-provider/Program.cs" highlight="16-19,35-37":::
+:::code language="csharp" source="snippets/configuration/custom-provider/Program.cs" highlight="14,16-19":::
 
 The preceding code configures the `WidgetOptions` object from the `"WidgetOptions"` section of the configuration. This enables the options pattern, exposing a dependency injection-ready `IOptions<WidgetOptions>` representation of the EF settings. The options are ultimately provided from the custom configuration provider.
 

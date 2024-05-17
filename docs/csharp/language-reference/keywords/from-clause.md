@@ -1,6 +1,6 @@
 ---
 description: "from clause - C# Reference"
-title: "from clause - C# Reference"
+title: "from clause"
 ms.date: 07/20/2015
 f1_keywords: 
   - "from_CSharpKeyword"
@@ -20,17 +20,17 @@ A query expression must begin with a `from` clause. Additionally, a query expres
 
 Both the range variable and the data source are strongly typed. The data source referenced in the `from` clause must have a type of <xref:System.Collections.IEnumerable>, <xref:System.Collections.Generic.IEnumerable%601>, or a derived type such as <xref:System.Linq.IQueryable%601>.
 
-In the following example, `numbers` is the data source and `num` is the range variable. Note that both variables are strongly typed even though the [var](var.md) keyword is used.
+In the following example, `numbers` is the data source and `num` is the range variable. Note that both variables are strongly typed even though the [var](../statements//declarations.md#implicitly-typed-local-variables) keyword is used.
 
 [!code-csharp[cscsrefQueryKeywords#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsCsrefQueryKeywords/CS/From.cs#1)]
 
 ## The range variable
 
-The compiler infers the type of the range variable when the data source implements <xref:System.Collections.Generic.IEnumerable%601>. For example, if the source has a type of `IEnumerable<Customer>`, then the range variable is inferred to be `Customer`. The only time that you must specify the type explicitly is when the source is a non-generic `IEnumerable` type such as <xref:System.Collections.ArrayList>. For more information, see [How to query an ArrayList with LINQ](../../programming-guide/concepts/linq/how-to-query-an-arraylist-with-linq.md).
+The compiler infers the type of the range variable when the data source implements <xref:System.Collections.Generic.IEnumerable%601>. For example, if the source has a type of `IEnumerable<Customer>`, then the range variable is inferred to be `Customer`. The only time that you must specify the type explicitly is when the source is a non-generic `IEnumerable` type such as <xref:System.Collections.ArrayList>. For more information, see [How to query an ArrayList with LINQ](../../linq/how-to-query-collections.md).
 
 In the previous example `num` is inferred to be of type `int`. Because the range variable is strongly typed, you can call methods on it or use it in other operations. For example, instead of writing `select num`, you could write `select num.ToString()` to cause the query expression to return a sequence of strings instead of integers. Or you could write `select num + 10` to cause the expression to return the sequence 14, 11, 13, 12, 10. For more information, see [select clause](select-clause.md).
 
-The range variable is like an iteration variable in a [foreach](../statements/iteration-statements.md#the-foreach-statement) statement except for one very important difference: a range variable never actually stores data from the source. It's just a syntactic convenience that enables the query to describe what will occur when the query is executed. For more information, see [Introduction to LINQ Queries (C#)](../../programming-guide/concepts/linq/introduction-to-linq-queries.md).
+The range variable is like an iteration variable in a [foreach](../statements/iteration-statements.md#the-foreach-statement) statement except for one very important difference: a range variable never actually stores data from the source. It's just a syntactic convenience that enables the query to describe what will occur when the query is executed. For more information, see [Introduction to LINQ Queries (C#)](../../linq/get-started/introduction-to-linq-queries.md).
 
 ## Compound from clauses
 
@@ -46,7 +46,7 @@ The following example shows how two `from` clauses can be used to form a complet
 
 [!code-csharp[cscsrefQueryKeywords#3](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsCsrefQueryKeywords/CS/From.cs#3)]
 
-For more information about join operations that use multiple `from` clauses, see [Perform left outer joins](../../linq/perform-left-outer-joins.md).
+For more information about join operations that use multiple `from` clauses, see [Perform left outer joins](../../linq/standard-query-operators/join-operations.md).
 
 ## See also
 

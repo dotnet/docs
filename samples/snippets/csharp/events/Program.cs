@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
+﻿ using System.IO;
 
 namespace EventSampleCode
 {
@@ -12,10 +6,10 @@ namespace EventSampleCode
     {
         static void Main(string[] args)
         {
+            // <SnippetDeclareEventHandler>
             var fileLister = new FileSearcher();
             int filesFound = 0;
 
-            // <SnippetDeclareEventHandler>
             EventHandler<FileFoundArgs> onFileFound = (sender, eventArgs) =>
             {
                 Console.WriteLine(eventArgs.FoundFile);
@@ -45,12 +39,9 @@ namespace EventSampleCode
     public class FileFoundArgs : EventArgs
     {
         public string FoundFile { get; }
-        public bool CancelRequested { get; set;}
+        public bool CancelRequested { get; set; }
 
-        public FileFoundArgs(string fileName)
-        {
-            FoundFile = fileName;
-        }
+        public FileFoundArgs(string fileName) => FoundFile = fileName;
     }
     // </SnippetEventArgs>
 
@@ -73,15 +64,15 @@ namespace EventSampleCode
     public class FileSearcher
     {
         // <SnippetDeclareEvent>
-        public event EventHandler<FileFoundArgs> FileFound;
+        public event EventHandler<FileFoundArgs>? FileFound;
         // </SnippetDeclareEvent>
         // <SnippetDeclareSearchEvent>
         internal event EventHandler<SearchDirectoryArgs> DirectoryChanged
         {
-            add { directoryChanged += value; }
-            remove { directoryChanged -= value; }
+            add { _directoryChanged += value; }
+            remove { _directoryChanged -= value; }
         }
-        private EventHandler<SearchDirectoryArgs> directoryChanged;
+        private EventHandler<SearchDirectoryArgs>? _directoryChanged;
         // </SnippetDeclareSearchEvent>
 
         // <SnippetFinalImplementation>
@@ -94,14 +85,13 @@ namespace EventSampleCode
                 var totalDirs = allDirectories.Length + 1;
                 foreach (var dir in allDirectories)
                 {
-                    directoryChanged?.Invoke(this,
-                        new SearchDirectoryArgs(dir, totalDirs, completedDirs++));
+                    RaiseSearchDirectoryChanged(dir, totalDirs, completedDirs++);
                     // Search 'dir' and its subdirectories for files that match the search pattern:
                     SearchDirectory(dir, searchPattern);
                 }
                 // Include the Current Directory:
-                directoryChanged?.Invoke(this,
-                    new SearchDirectoryArgs(directory, totalDirs, completedDirs++));
+                RaiseSearchDirectoryChanged(directory, totalDirs, completedDirs++);
+                
                 SearchDirectory(directory, searchPattern);
             }
             else
@@ -109,16 +99,30 @@ namespace EventSampleCode
                 SearchDirectory(directory, searchPattern);
             }
         }
-
+        
         private void SearchDirectory(string directory, string searchPattern)
         {
             foreach (var file in Directory.EnumerateFiles(directory, searchPattern))
             {
-                var args = new FileFoundArgs(file);
-                FileFound?.Invoke(this, args);
+                FileFoundArgs args = RaiseFileFound(file);
                 if (args.CancelRequested)
+                {
                     break;
+                }
             }
+        }
+
+        private void RaiseSearchDirectoryChanged(
+            string directory, int totalDirs, int completedDirs) =>
+            _directoryChanged?.Invoke(
+                this,
+                    new SearchDirectoryArgs(directory, totalDirs, completedDirs));
+
+        private FileFoundArgs RaiseFileFound(string file)
+        {
+            var args = new FileFoundArgs(file);
+            FileFound?.Invoke(this, args);
+            return args;
         }
         // </SnippetFinalImplementation>
     }
@@ -131,25 +135,25 @@ namespace VersionOne
     {
         public string FoundFile { get; }
 
-        public FileFoundArgs(string fileName)
-        {
-            FoundFile = fileName;
-        }
+        public FileFoundArgs(string fileName) => FoundFile = fileName;
     }
     // </SnippetEventArgsV1>
 
     // <SnippetFileSearcherV1>
     public class FileSearcher
     {
-        public event EventHandler<FileFoundArgs> FileFound;
+        public event EventHandler<FileFoundArgs>? FileFound;
 
         public void Search(string directory, string searchPattern)
         {
             foreach (var file in Directory.EnumerateFiles(directory, searchPattern))
             {
-                FileFound?.Invoke(this, new FileFoundArgs(file));
+                RaiseFileFound(file);
             }
         }
+        
+        private void RaiseFileFound(string file) =>
+            FileFound?.Invoke(this, new FileFoundArgs(file));
     }
     // </SnippetFileSearcherV1>
 }

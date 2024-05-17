@@ -49,7 +49,7 @@ HRESULT ImpersonateLoggedOnUser (
 
  Call `LogonUser` or a related Win32 function to get a handle to the credentials of the current user identity.  
   
- The `HANDLE` type is not COM-compliant, that is, its size is specific to an operating system, and it requires custom marshaling. Thus, this token is for use only within the process, between the CLR and the host.  
+ The `HANDLE` type is not COM-compliant, that is, its size is specific to an operating system, and it requires custom marshalling. Thus, this token is for use only within the process, between the CLR and the host.  
   
 ## Requirements  
 

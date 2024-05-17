@@ -29,7 +29,7 @@ In .NET 5 and later versions, the <xref:System.Reflection.Assembly.GlobalAssembl
 
 ```csharp
 Assembly asm = typeof(object).Assembly;
-// Prints 'False' on .NET 5.0+; also produces warning SYSLIB0005 at compile time.
+// Prints 'False' on .NET 5+; also produces warning SYSLIB0005 at compile time.
 Console.WriteLine(asm.GlobalAssemblyCache);
 ```
 
@@ -45,14 +45,14 @@ The global assembly cache (GAC) does not exist as a concept in .NET Core and .NE
 
 ## Recommended action
 
-- If your application queries the <xref:System.Reflection.Assembly.GlobalAssemblyCache> property, consider removing the call. If you use the <xref:System.Reflection.Assembly.GlobalAssemblyCache> value to choose between an "assembly in the GAC"-flow vs. an "assembly not in the GAC"-flow at run time, reconsider whether the flow still makes sense for a .NET Core or .NET 5.0+ application.
+- If your application queries the <xref:System.Reflection.Assembly.GlobalAssemblyCache> property, consider removing the call. If you use the <xref:System.Reflection.Assembly.GlobalAssemblyCache> value to choose between an "assembly in the GAC"-flow vs. an "assembly not in the GAC"-flow at run time, reconsider whether the flow still makes sense for a .NET Core or .NET 5+ application.
 
 - If you must continue to use the obsolete APIs, you can suppress the `SYSLIB0005` warning in code.
 
   ```csharp
   Assembly asm = typeof(object).Assembly;
   #pragma warning disable SYSLIB0005 // Disable the warning.
-  // Prints 'False' on .NET 5.0+.
+  // Prints 'False' on .NET 5+.
   Console.WriteLine(asm.GlobalAssemblyCache);
   #pragma warning restore SYSLIB0005 // Re-enable the warning.
   ```

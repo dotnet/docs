@@ -1,50 +1,38 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Threading;
-using System.Threading.Tasks;
+﻿namespace App.ScopedService;
 
-namespace App.ScopedService
+public sealed class ScopedBackgroundService(
+    IServiceScopeFactory serviceScopeFactory,
+    ILogger<ScopedBackgroundService> logger) : BackgroundService
 {
-    public sealed class ScopedBackgroundService : BackgroundService
+    private const string ClassName = nameof(ScopedBackgroundService);
+
+    protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
-        private readonly IServiceProvider _serviceProvider;
-        private readonly ILogger<ScopedBackgroundService> _logger;
+        logger.LogInformation(
+            "{Name} is running.", ClassName);
 
-        public ScopedBackgroundService(
-            IServiceProvider serviceProvider,
-            ILogger<ScopedBackgroundService> logger) =>
-            (_serviceProvider, _logger) = (serviceProvider, logger);
+        await DoWorkAsync(stoppingToken);
+    }
 
-        protected override async Task ExecuteAsync(CancellationToken stoppingToken)
+    private async Task DoWorkAsync(CancellationToken stoppingToken)
+    {
+        logger.LogInformation(
+            "{Name} is working.", ClassName);
+
+        using (IServiceScope scope = serviceScopeFactory.CreateScope())
         {
-            _logger.LogInformation(
-                $"{nameof(ScopedBackgroundService)} is running.");
+            IScopedProcessingService scopedProcessingService =
+                scope.ServiceProvider.GetRequiredService<IScopedProcessingService>();
 
-            await DoWorkAsync(stoppingToken);
+            await scopedProcessingService.DoWorkAsync(stoppingToken);
         }
+    }
 
-        private async Task DoWorkAsync(CancellationToken stoppingToken)
-        {
-            _logger.LogInformation(
-                $"{nameof(ScopedBackgroundService)} is working.");
+    public override async Task StopAsync(CancellationToken stoppingToken)
+    {
+        logger.LogInformation(
+            "{Name} is stopping.", ClassName);
 
-            using (IServiceScope scope = _serviceProvider.CreateScope())
-            {
-                IScopedProcessingService scopedProcessingService =
-                    scope.ServiceProvider.GetRequiredService<IScopedProcessingService>();
-
-                await scopedProcessingService.DoWorkAsync(stoppingToken);
-            }
-        }
-
-        public override async Task StopAsync(CancellationToken stoppingToken)
-        {
-            _logger.LogInformation(
-                $"{nameof(ScopedBackgroundService)} is stopping.");
-
-            await base.StopAsync(stoppingToken);
-        }
+        await base.StopAsync(stoppingToken);
     }
 }

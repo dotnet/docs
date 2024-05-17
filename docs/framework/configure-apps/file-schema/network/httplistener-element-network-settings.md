@@ -128,15 +128,10 @@ Customizes parameters used by the <xref:System.Net.HttpListener> class.
 </configuration>  
 ```  
   
-## Element Information  
-  
-|||
-|-|-|  
-|Namespace|System.Net|  
-|Schema Name||  
-|Validation File||  
-|Can be Empty||  
-  
+## Element Information
+
+**Namespace**: System.Net
+
 ## See also
 
 - <xref:System.Net.Configuration.HttpListenerElement>

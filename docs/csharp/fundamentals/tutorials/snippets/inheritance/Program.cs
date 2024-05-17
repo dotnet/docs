@@ -1,17 +1,14 @@
-﻿using System;
+namespace Inheritance;
 
-namespace inheritance
+class Program
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Basic.Example.Main();
-            IsA_Namespace.Example.Main();
-            AccessExample.Main(args);
-            Example.Example.Main();
-            ClassNameExample.Main();
-            ClassExample.Main();
-        }
+        Basic.Example.Main();
+        IsA_Namespace.Example.Main();
+        AccessExample.Main(args);
+        Example.Example.Main();
+        ClassNameExample.Main();
+        ClassExample.Main();
     }
 }

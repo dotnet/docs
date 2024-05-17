@@ -6,7 +6,7 @@ ms.assetid: 99016fa4-1778-495b-b4cc-0e22fbec42c6
 ---
 # Discovery Find and FindCriteria
 
-A discovery find operation is initiated by a client to discover one or more services and is one of the main actions in discovery. Performing a find sends a WS-Discovery Probe message over the network. Services that match the criteria specified reply with WS-Discovery ProbeMatch messages. For more information about discovery messages, see the [WS-Discovery specification](http://schemas.xmlsoap.org/ws/2004/10/discovery/ws-discovery.pdf).
+A discovery find operation is initiated by a client to discover one or more services and is one of the main actions in discovery. Performing a find sends a WS-Discovery Probe message over the network. Services that match the criteria specified reply with WS-Discovery ProbeMatch messages. For more information about discovery messages, see the [WS-Discovery specification](https://schemas.xmlsoap.org/ws/2004/10/discovery/ws-discovery.pdf).
 
 ## DiscoveryClient
 
@@ -67,5 +67,5 @@ Console.WriteLine("Found {0} ICalculatorService endpoint(s).", findResponse.Endp
 
 - [WCF Discovery Overview](wcf-discovery-overview.md)
 - [Using the Discovery Client Channel](using-the-discovery-client-channel.md)
-- [Discovery with Scopes](/previous-versions/dotnet/framework/wcf/samples/discovery-with-scopes-sample)
-- [Basic](/previous-versions/dotnet/framework/wcf/samples/basic-sample)
+- [Discovery with Scopes](../samples/discovery-with-scopes-sample.md)
+- [Basic](../samples/basic-sample.md)

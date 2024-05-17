@@ -2,7 +2,7 @@
 using System;
 using System.Globalization;
 
-public class Example
+public class Example18
 {
    public static void Main()
    {

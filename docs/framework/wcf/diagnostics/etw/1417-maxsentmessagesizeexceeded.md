@@ -6,10 +6,10 @@ ms.assetid: 3cb7c2f0-97bf-4ee9-a037-ed64a25a18fd
 ---
 # 1417 - MaxSentMessageSizeExceeded
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1417|  
 |Keywords|Quota|  
 |Level|Error|  

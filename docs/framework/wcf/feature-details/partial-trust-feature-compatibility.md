@@ -10,13 +10,13 @@ Windows Communication Foundation (WCF) supports a limited subset of functionalit
   
 ## Minimum Permission Requirements  
 
- WCF supports a subset of features in applications running under either of the following standard named permission sets:  
+WCF supports a subset of features in applications running under either of the following standard named permission sets:  
   
 - Medium Trust permissions  
   
 - Internet Zone permissions  
   
- Attempting to use WCF in partially-trusted applications with more restrictive permissions may result in security exceptions at runtime.  
+ Attempting to use WCF in partially-trusted applications with more restrictive permissions may result in security exceptions at run time.  
   
 ## Contracts  
 
@@ -56,7 +56,7 @@ Windows Communication Foundation (WCF) supports a limited subset of functionalit
   
 ### Security  
 
- Partially-trusted applications can use WCF's transport-level security features for securing their communication. Message-level security is not supported. Configuring a binding to use message-level security results in an exception at runtime.  
+ Partially-trusted applications can use WCF's transport-level security features for securing their communication. Message-level security is not supported. Configuring a binding to use message-level security results in an exception at run time.  
   
 ### Unsupported Bindings  
 
@@ -68,7 +68,7 @@ Windows Communication Foundation (WCF) supports a limited subset of functionalit
   
 - All serializable `[DataContract]` types must be `public`.  
   
-- All serializable `[DataMember]` fields or properties in a `[DataContract]` type must be public and read/write. The serialization and deserialization of [readonly](https://go.microsoft.com/fwlink/?LinkID=98854) fields is not supported when running WCF in a partially-trusted application.  
+- All serializable `[DataMember]` fields or properties in a `[DataContract]` type must be public and read/write. The serialization and deserialization of `readonly` fields is not supported when running WCF in a partially trusted application.  
   
 - The `[Serializable]`/ISerializable programming model is not supported in a partial trust environment.  
   
@@ -168,7 +168,7 @@ Windows Communication Foundation (WCF) supports a limited subset of functionalit
   
 - Performance counters  
   
- Use of WCF features that are not supported in a partial trust environment may result in exceptions at runtime.  
+ Use of WCF features that are not supported in a partial trust environment may result in exceptions at run time.  
   
 ## Unlisted Features  
 

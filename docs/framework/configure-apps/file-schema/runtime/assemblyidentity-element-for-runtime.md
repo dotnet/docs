@@ -71,7 +71,7 @@ culture="assembly culture"/>
   
  If the `processorArchitecture` attribute is present, the `<assemblyIdentity>` element applies only to the assembly with the corresponding processor architecture. If the `processorArchitecture` attribute is not present, the `<assemblyIdentity>` element can apply to an assembly with any processor architecture.  
   
- The following example shows a configuration file for two assemblies with the same name that target two different two processor architectures, and whose versions have not been maintained in synch. When the application executes on the x86 platform the first `<assemblyIdentity>` element applies and the other is ignored. If the application executes on a platform other than x86 or ia64, both are ignored.  
+ The following example shows a configuration file for two assemblies with the same name that target two different processor architectures, and whose versions have not been maintained in synch. When the application executes on the x86 platform, the first `<assemblyIdentity>` element applies and the other is ignored. If the application executes on a platform other than x86 or ia64, both are ignored.  
   
 ```xml  
 <configuration>  
@@ -121,6 +121,7 @@ culture="assembly culture"/>
   
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
 - [Runtime Settings Schema](index.md)
 - [Configuration File Schema](../index.md)
 - [Redirecting Assembly Versions](../../redirect-assembly-versions.md)

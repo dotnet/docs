@@ -1,5 +1,5 @@
 ---
-title: "this keyword - C# Reference"
+title: "this keyword"
 description: this keyword (C# Reference)
 ms.date: 07/20/2015
 f1_keywords: 
@@ -28,7 +28,7 @@ The following are common uses of `this`:
   CalcTax(this);
   ```
 
-- To declare indexers, for example:
+- To declare [indexers](../../programming-guide/indexers/index.md), for example:
 
   [!code-csharp[csrefKeywordsAccess#5](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsAccess/CS/csrefKeywordsAccess.cs#5)]
 
@@ -46,8 +46,7 @@ In this example, `this` is used to qualify the `Employee` class members, `name` 
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
+- [`this` code-style preferences (IDE0003 and IDE0009)](../../../fundamentals/code-analysis/style-rules/ide0003-ide0009.md)
 - [C# Keywords](index.md)
 - [base](base.md)
 - [Methods](../../programming-guide/classes-and-structs/methods.md)

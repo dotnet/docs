@@ -6,6 +6,8 @@ ms.date: 06/23/2021
 
 # Subscribing to events
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 The first step for using the event bus is to subscribe the microservices to the events they want to receive. That functionality should be done in the receiver microservices.
 
 The following simple code shows what each receiver microservice needs to implement when starting the service (that is, in the `Startup` class) so it subscribes to the events it needs. In this case, the `basket-api` microservice needs to subscribe to `ProductPriceChangedIntegrationEvent` and the `OrderStartedIntegrationEvent` messages.
@@ -20,7 +22,6 @@ eventBus.Subscribe<ProductPriceChangedIntegrationEvent,
 
 eventBus.Subscribe<OrderStartedIntegrationEvent,
                    OrderStartedIntegrationEventHandler>();
-
 ```
 
 After this code runs, the subscriber microservice will be listening through RabbitMQ channels. When any message of type ProductPriceChangedIntegrationEvent arrives, the code invokes the event handler that is passed to it and processes the event.
@@ -210,7 +211,6 @@ public async Task<IActionResult> UpdateProduct([FromBody]CatalogItem productToUp
 
   return Ok();
 }
-
 ```
 
 After the ProductPriceChangedIntegrationEvent integration event is created, the transaction that stores the original domain operation (update the catalog item) also includes the persistence of the event in the EventLog table. This makes it a single transaction, and you will always be able to check whether event messages were sent.
@@ -295,7 +295,7 @@ Some message processing is inherently idempotent. For example, if a system gener
 ### Additional resources
 
 - **Honoring message idempotency** \
-  <https://docs.microsoft.com/previous-versions/msp-n-p/jj591565(v=pandp.10)#honoring-message-idempotency>
+  [https://learn.microsoft.com/previous-versions/msp-n-p/jj591565(v=pandp.10)#honoring-message-idempotency](/previous-versions/msp-n-p/jj591565(v=pandp.10)#honoring-message-idempotency)
 
 ## Deduplicating integration event messages
 
@@ -303,7 +303,7 @@ You can make sure that message events are sent and processed only once per subsc
 
 ### Deduplicating message events at the EventHandler level
 
-One way to make sure that an event is processed only once by any receiver is by implementing certain logic when processing the message events in event handlers. For example, that is the approach used in the eShopOnContainers application, as you can see in the [source code of the UserCheckoutAcceptedIntegrationEventHandler class](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.API/Application/IntegrationEvents/EventHandling/UserCheckoutAcceptedIntegrationEventHandler.cs) when it receives a `UserCheckoutAcceptedIntegrationEvent` integration event. (In this case, the `CreateOrderCommand` is wrapped with an `IdentifiedCommand`, using the `eventMsg.RequestId` as an identifier, before sending it to the command handler).
+One way to make sure that an event is processed only once by any receiver is by implementing certain logic when processing the message events in event handlers. For example, that is the approach used in the eShopOnContainers application, as you can see in the [source code of the UserCheckoutAcceptedIntegrationEventHandler class](https://github.com/dotnet-architecture/eShopOnContainers/blob/main/src/Services/Ordering/Ordering.API/Application/IntegrationEvents/EventHandling/UserCheckoutAcceptedIntegrationEventHandler.cs) when it receives a `UserCheckoutAcceptedIntegrationEvent` integration event. (In this case, the `CreateOrderCommand` is wrapped with an `IdentifiedCommand`, using the `eventMsg.RequestId` as an identifier, before sending it to the command handler).
 
 ### Deduplicating messages when using RabbitMQ
 
@@ -328,7 +328,7 @@ If the "redelivered" flag is set, the receiver must take that into account, beca
     <https://www.enterpriseintegrationpatterns.com/patterns/messaging/PublishSubscribeChannel.html>
 
 - **Communicating Between Bounded Contexts** \
-    <https://docs.microsoft.com/previous-versions/msp-n-p/jj591572(v=pandp.10)>
+    [https://learn.microsoft.com/previous-versions/msp-n-p/jj591572(v=pandp.10)](/previous-versions/msp-n-p/jj591572(v=pandp.10))
 
 - **Eventual Consistency** \
     <https://en.wikipedia.org/wiki/Eventual_consistency>
@@ -343,7 +343,7 @@ If the "redelivered" flag is set, the receiver must take that into account, beca
     <https://microservices.io/patterns/data/event-sourcing.html>
 
 - **Introducing Event Sourcing** \
-    <https://docs.microsoft.com/previous-versions/msp-n-p/jj591559(v=pandp.10)>
+    [https://learn.microsoft.com/previous-versions/msp-n-p/jj591559(v=pandp.10)](/previous-versions/msp-n-p/jj591559(v=pandp.10))
 
 - **Event Store database**. Official site. \
     <https://geteventstore.com/>
@@ -358,16 +358,19 @@ If the "redelivered" flag is set, the receiver must take that into account, beca
     <https://www.quora.com/What-Is-CAP-Theorem-1>
 
 - **Data Consistency Primer** \
-    <https://docs.microsoft.com/previous-versions/msp-n-p/dn589800(v=pandp.10)>
+    [https://learn.microsoft.com/previous-versions/msp-n-p/dn589800(v=pandp.10)](/previous-versions/msp-n-p/dn589800(v=pandp.10))
 
 - **Rick Saling. The CAP Theorem: Why "Everything is Different" with the Cloud and Internet** \
-    <https://docs.microsoft.com/archive/blogs/rickatmicrosoft/the-cap-theorem-why-everything-is-different-with-the-cloud-and-internet/>
+    [https://learn.microsoft.com/archive/blogs/rickatmicrosoft/the-cap-theorem-why-everything-is-different-with-the-cloud-and-internet/](/archive/blogs/rickatmicrosoft/the-cap-theorem-why-everything-is-different-with-the-cloud-and-internet/)
 
 - **Eric Brewer. CAP Twelve Years Later: How the "Rules" Have Changed** \
     <https://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed>
 
-- **Azure Service Bus. Brokered Messaging: Duplicate Detection**  \
-    <https://code.msdn.microsoft.com/Brokered-Messaging-c0acea25>
+- **CAP, PACELC, and Microservices** \
+    <https://ardalis.com/cap-pacelc-and-microservices/>
+
+- **Azure Service Bus. Brokered Messaging: Duplicate Detection**\
+  <https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Windows%20Azure%20Product%20Team/Brokered%20Messaging%20Duplicate%20Detection>
 
 - **Reliability Guide** (RabbitMQ documentation) \
     <https://www.rabbitmq.com/reliability.html#consumer>

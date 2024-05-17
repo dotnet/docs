@@ -43,11 +43,11 @@ The option type supports the following properties and methods.
 
 |Property or method|Type|Description|
 |------------------|----|-----------|
-|[None](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-fsharpoption-1.html#None)|`'T option`|A static property that enables you to create an option value that has the `None` value.|
-|[IsNone](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-fsharpoption-1.html#IsNone)|`bool`|Returns `true` if the option has the `None` value.|
-|[IsSome](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-fsharpoption-1.html#IsSome)|`bool`|Returns `true` if the option has a value that is not `None`.|
-|[Some](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-fsharpoption-1.html#Some)|`'T option`|A static member that creates an option that has a value that is not `None`.|
-|[Value](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-fsharpoption-1.html#Value)|`'T`|Returns the underlying value, or throws a `System.NullReferenceException` if the value is `None`.|
+|`None`|`'T option`|A static member that creates an option value that has the `None` value.|
+|[IsNone](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-option-1.html#IsNone)|`bool`|Returns `true` if the option has the `None` value.|
+|[IsSome](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-option-1.html#IsSome)|`bool`|Returns `true` if the option has a value that is not `None`.|
+|`Some`|`'T option`|A static member that creates an option that has a value that is not `None`.|
+|[Value](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-option-1.html#Value)|`'T`|Returns the underlying value, or throws a `System.NullReferenceException` if the value is `None`.|
 
 ## Option Module
 

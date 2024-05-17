@@ -2,43 +2,44 @@
 using System.Data;
 using System.Data.SqlClient;
 
-class Program
+static class Program
 {
     static void Main()
     {
-        string connectionString = GetConnectionString();
+        var connectionString = GetConnectionString();
         AdapterUpdate(connectionString);
         Console.ReadLine();
     }
     // <Snippet1>
-    private static void AdapterUpdate(string connectionString)
+    static void AdapterUpdate(string connectionString)
     {
         using (SqlConnection connection =
-                   new SqlConnection(connectionString))
+                   new(connectionString))
         {
-            SqlDataAdapter dataAdpater = new SqlDataAdapter(
+            SqlDataAdapter dataAdapter = new(
               "SELECT CategoryID, CategoryName FROM Categories",
-              connection);
-
-            dataAdpater.UpdateCommand = new SqlCommand(
+              connection)
+            {
+                UpdateCommand = new SqlCommand(
                "UPDATE Categories SET CategoryName = @CategoryName " +
-               "WHERE CategoryID = @CategoryID", connection);
+               "WHERE CategoryID = @CategoryID", connection)
+            };
 
-            dataAdpater.UpdateCommand.Parameters.Add(
+            dataAdapter.UpdateCommand.Parameters.Add(
                "@CategoryName", SqlDbType.NVarChar, 15, "CategoryName");
 
-            SqlParameter parameter = dataAdpater.UpdateCommand.Parameters.Add(
+            SqlParameter parameter = dataAdapter.UpdateCommand.Parameters.Add(
               "@CategoryID", SqlDbType.Int);
             parameter.SourceColumn = "CategoryID";
             parameter.SourceVersion = DataRowVersion.Original;
 
-            DataTable categoryTable = new DataTable();
-            dataAdpater.Fill(categoryTable);
+            DataTable categoryTable = new();
+            dataAdapter.Fill(categoryTable);
 
             DataRow categoryRow = categoryTable.Rows[0];
             categoryRow["CategoryName"] = "New Beverages";
 
-            dataAdpater.Update(categoryTable);
+            dataAdapter.Update(categoryTable);
 
             Console.WriteLine("Rows after update.");
             foreach (DataRow row in categoryTable.Rows)
@@ -51,11 +52,9 @@ class Program
     }
     // </Snippet1>
 
-    static private string GetConnectionString()
-    {
+    static string GetConnectionString() =>
         // To avoid storing the connection string in your code,
         // you can retrieve it from a configuration file.
-        return "Data Source=(local);Initial Catalog=Northwind;"
+        "Data Source=(local);Initial Catalog=Northwind;"
             + "Integrated Security=true";
-    }
 }

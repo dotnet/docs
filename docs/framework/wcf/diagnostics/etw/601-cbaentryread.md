@@ -6,10 +6,10 @@ ms.assetid: 7d8b757f-e8d8-4c12-927e-ba3776c17983
 ---
 # 601 - CBAEntryRead
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|601|  
 |Keywords||  
 |Level|Verbose|  

@@ -6,10 +6,10 @@ ms.assetid: 1f10a482-9e8f-4726-bdc8-b18a32e4dfdc
 ---
 # 3411 - HttpPipelineTimeoutException
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3411|  
 |Keywords|HTTP|  
 |Level|Error|  

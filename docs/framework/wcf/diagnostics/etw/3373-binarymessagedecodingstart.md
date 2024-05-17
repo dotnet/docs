@@ -6,10 +6,10 @@ ms.assetid: 20b13b33-d67d-47fd-aeec-a7fa3fc87c26
 ---
 # 3373 - BinaryMessageDecodingStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3373|  
 |Keywords|Channel|  
 |Level|Verbose|  

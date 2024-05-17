@@ -1,10 +1,12 @@
 ---
 title: Azure security for cloud-native apps
 description: Architecting Cloud Native .NET Apps for Azure | Azure Security for Cloud Native Apps
-ms.date: 01/19/2021
+ms.date: 04/06/2022
 ---
 
 # Azure security for cloud-native apps
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 Cloud-native applications can be both easier and more difficult to secure than traditional applications. On the downside, you need to secure more smaller applications and dedicate more energy to build out the security infrastructure. The heterogeneous nature of programming languages and styles in most service deployments also means you need to pay more attention to security bulletins from many different providers.
 
@@ -262,7 +264,7 @@ While Cosmos DB doesn't provide for supplying customer encryption keys, there ha
 
 ## Keeping secure
 
-Azure has all the tools necessary to release a highly secure product. However, a chain is only as strong as its weakest link. If the applications deployed on top of Azure aren't developed with a proper security mindset and good security audits, then they become the weak link in the chain. There are many great static analysis tools, encryption libraries, and security practices that can be used to ensure that the software installed on Azure is as secure as Azure itself. Examples include [static analysis tools](https://www.whitesourcesoftware.com/), [encryption libraries](https://www.libressl.org/), and [security practices](https://azure.microsoft.com/resources/videos/red-vs-blue-internal-security-penetration-testing-of-microsoft-azure/).
+Azure has all the tools necessary to release a highly secure product. However, a chain is only as strong as its weakest link. If the applications deployed on top of Azure aren't developed with a proper security mindset and good security audits, then they become the weak link in the chain. There are many great static analysis tools, encryption libraries, and security practices that can be used to ensure that the software installed on Azure is as secure as Azure itself. Examples include [static analysis tools](https://www.mend.io/sca/), [encryption libraries](https://www.libressl.org/), and [security practices](https://azure.microsoft.com/resources/videos/red-vs-blue-internal-security-penetration-testing-of-microsoft-azure/).
 
 >[!div class="step-by-step"]
 >[Previous](security.md)

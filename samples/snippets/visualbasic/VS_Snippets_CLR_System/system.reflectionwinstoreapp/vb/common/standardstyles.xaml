@@ -142,7 +142,7 @@
     </Style>
 
     <!-- Button styles -->
-    
+
     <!--
         TextButtonStyle is used to style a Button using subheader-styled text with no other adornment.  There
         are two styles that are based on TextButtonStyle (TextPrimaryButtonStyle and TextSecondaryButtonStyle)
@@ -242,8 +242,8 @@
     </Style>
 
     <!--
-        AppBarButtonStyle is used to style a Button (or ToggleButton) for use in an App Bar.  Content will be centered 
-        and should fit within the 40 pixel radius glyph provided.  16-point Segoe UI Symbol is used for content text 
+        AppBarButtonStyle is used to style a Button (or ToggleButton) for use in an App Bar.  Content will be centered
+        and should fit within the 40 pixel radius glyph provided.  16-point Segoe UI Symbol is used for content text
         to simplify the use of glyphs from that font.  AutomationProperties.Name is used for the text below the glyph.
     -->
     <Style x:Key="AppBarButtonStyle" TargetType="ButtonBase">
@@ -399,15 +399,15 @@
         </Setter>
     </Style>
 
-    <!-- 
+    <!--
         Standard AppBarButton Styles for use with Button and ToggleButton
-    
-        An AppBarButton Style is provided for each of the glyphs in the Segoe UI Symbol font.  
+
+        An AppBarButton Style is provided for each of the glyphs in the Segoe UI Symbol font.
         Uncomment any style you reference (as not all may be required).
     -->
 
     <!--
-    
+
     <Style x:Key="SkipBackAppBarButtonStyle" TargetType="ButtonBase" BasedOn="{StaticResource AppBarButtonStyle}">
         <Setter Property="AutomationProperties.AutomationId" Value="SkipBackAppBarButton"/>
         <Setter Property="AutomationProperties.Name" Value="Skip Back"/>
@@ -1092,7 +1092,7 @@
     </Style>
     <Style x:Key="PermissionsAppBarButtonStyle" TargetType="ButtonBase" BasedOn="{StaticResource AppBarButtonStyle}">
         <Setter Property="AutomationProperties.AutomationId" Value="PermissionsAppBarButton"/>
-        <Setter Property="AutomationProperties.Name" Value="Permisions"/>
+        <Setter Property="AutomationProperties.Name" Value="Permissions"/>
         <Setter Property="Content" Value="&#xE192;"/>
     </Style>
     <Style x:Key="HighlightAppBarButtonStyle" TargetType="ButtonBase" BasedOn="{StaticResource AppBarButtonStyle}">
@@ -1117,7 +1117,7 @@
     </Style>
     <Style x:Key="OpenLocalAppBarButtonStyle" TargetType="ButtonBase" BasedOn="{StaticResource AppBarButtonStyle}">
         <Setter Property="AutomationProperties.AutomationId" Value="OpenLocalAppBarButton"/>
-        <Setter Property="AutomationProperties.Name" Value="Open Loal"/>
+        <Setter Property="AutomationProperties.Name" Value="Open Local"/>
         <Setter Property="Content" Value="&#xE197;"/>
     </Style>
     <Style x:Key="MuteAppBarButtonStyle" TargetType="ButtonBase" BasedOn="{StaticResource AppBarButtonStyle}">
@@ -1536,7 +1536,7 @@
     <!--
         SnappedBackButtonStyle is used to style a Button for use in the title area of a snapped page.  Margins appropriate
         for the conventional page layout are included as part of the style.
-        
+
         The obvious duplication here is necessary as the glyphs used in snapped are not merely smaller versions of the same
         glyph but are actually distinct.
     -->

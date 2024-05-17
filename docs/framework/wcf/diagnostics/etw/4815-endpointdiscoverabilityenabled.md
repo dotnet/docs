@@ -6,10 +6,10 @@ ms.assetid: cd027b98-da63-4046-8243-c09e30870b5f
 ---
 # 4815 - EndpointDiscoverabilityEnabled
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4815|  
 |Keywords|Discovery|  
 |Level|Information|  

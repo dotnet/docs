@@ -6,10 +6,10 @@ ms.assetid: a76cb3c1-e6e7-4b36-9e84-f74f638c867e
 ---
 # 3324 - DispatchFormatterSerializeReplyStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3324|  
 |Keywords|ServiceModel|  
 |Level|Verbose|  

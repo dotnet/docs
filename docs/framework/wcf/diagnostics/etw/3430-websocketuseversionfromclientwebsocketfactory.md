@@ -6,10 +6,10 @@ ms.assetid: fb04adb2-e629-4ae7-b3a6-5512f3927cb2
 ---
 # 3430 - WebSocketUseVersionFromClientWebSocketFactory
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3430|  
 |Keywords|HTTP|  
 |Level|Verbose|  

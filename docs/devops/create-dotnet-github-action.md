@@ -1,11 +1,10 @@
 ---
 title: "Tutorial: Create a GitHub Action with .NET"
-description: Learn how to create a GitHub action with a containerized .NET app.
+description: Learn how to create a GitHub Action with a containerized .NET app.
 author: IEvangelist
 ms.author: dapine
-ms.date: 04/01/2021
+ms.date: 12/14/2023
 ms.topic: tutorial
-recommendations: false
 ---
 
 # Tutorial: Create a GitHub Action with .NET
@@ -23,7 +22,7 @@ In this tutorial, you learn how to:
 ## Prerequisites
 
 - A [GitHub account](https://github.com/join)
-- The [.NET 5.0 SDK or later](https://dotnet.microsoft.com/download/dotnet)
+- The [.NET 6 SDK or later](https://dotnet.microsoft.com/download/dotnet)
 - A .NET integrated development environment (IDE)
   - Feel free to use the [Visual Studio IDE](https://visualstudio.microsoft.com)
 
@@ -51,17 +50,17 @@ References to the source code in this tutorial have portions of the app omitted 
 
 The .NET console app uses the [`CommandLineParser` NuGet](https://www.nuget.org/packages/CommandLineParser/) package to parse arguments into the `ActionInputs` object.
 
-:::code language="csharp" source="snippets/DotNet.GitHubAction/ActionInputs.cs":::
+:::code language="csharp" source="snippets/create-dotnet-github-action/DotNet.GitHubAction/ActionInputs.cs":::
 
 The preceding action inputs class defines several required inputs for the app to run successfully. The constructor will write the `"GREETINGS"` environment variable value, if one is available in the current execution environment. The `Name` and `Branch` properties are parsed and assigned from the last segment of a `"/"` delimited string.
 
 With the defined action inputs class, focus on the *Program.cs* file.
 
-:::code language="csharp" source="snippets/DotNet.GitHubAction/Program.cs":::
+:::code language="csharp" source="snippets/create-dotnet-github-action/DotNet.GitHubAction/Program.cs":::
 
 The `Program` file is simplified for brevity, to explore the full sample source, see [*Program.cs*](https://github.com/dotnet/samples/blob/main/github-actions/DotNet.GitHubAction/DotNet.GitHubAction/Program.cs). The mechanics in place demonstrate the boilerplate code required to use:
 
-- [Top-level statements](../csharp/whats-new/tutorials/top-level-statements.md)
+- [Top-level statements](../csharp/tutorials/top-level-statements.md)
 - [Generic Host](../core/extensions/generic-host.md)
 - [Dependency injection](../core/extensions/dependency-injection.md)
 
@@ -78,28 +77,31 @@ GitHub Actions support two variations of app development, either
 - JavaScript (optionally [TypeScript](https://www.typescriptlang.org))
 - Docker container (any app that runs on [Docker](https://docs.github.com/actions/creating-actions/creating-a-docker-container-action))
 
-Since .NET is *not* natively supported by GitHub Actions, the .NET app needs to be containerized. For more information, see [Containerize a .NET app](../core/docker/build-container.md).
+The virtual environment where the GitHub Action is hosted may or may not have .NET installed. For information about what is preinstalled in the target environment, see [GitHub Actions Virtual Environments](https://github.com/actions/virtual-environments). While it's possible to run .NET CLI commands from the GitHub Actions workflows, for a more fully functioning .NET-based GitHub Action, we recommend that you containerize the app. For more information, see [Containerize a .NET app](../core/docker/build-container.md).
 
 ### The Dockerfile
 
 A [*Dockerfile*](https://docs.docker.com/engine/reference/builder) is a set of instructions to build an image. For .NET applications, the *Dockerfile* usually sits in the root of the directory next to a solution file.
 
-:::code language="dockerfile" source="snippets/Dockerfile" highlight="23":::
+:::code language="dockerfile" source="snippets/create-dotnet-github-action/Dockerfile" highlight="24":::
 
 > [!NOTE]
-> The .NET app in this tutorial relies on the .NET SDK as part of its functionality, as such, the highlighted line relayers the .NET SDK anew with the build output. For applications that ***do not*** require the .NET SDK as part of their functionality, they should rely on just the .NET Runtime instead. This greatly reduces the size of the image.
+> The .NET app in this tutorial relies on the .NET SDK as part of its functionality. The _Dockerfile_ creates a new set of Docker layers, independent from the previous ones. It starts from scratch with the SDK image, and adds the build output from the previous set of layers. For applications that ***do not*** require the .NET SDK as part of their functionality, they should rely on just the .NET Runtime instead. This greatly reduces the size of the image.
 >
 > ```dockerfile
-> FROM mcr.microsoft.com/dotnet/runtime:5.0
+> FROM mcr.microsoft.com/dotnet/runtime:7.0
 > ```
+
+> [!WARNING]
+> Pay close attention to every step within the _Dockerfile_, as it does differ from the standard _Dockerfile_ created from the "add docker support" functionality. In particular, the last few steps vary by not specifying a new `WORKDIR` which would change the path to the app's `ENTRYPOINT`.
 
 The preceding *Dockerfile* steps include:
 
-- Setting the base image from `mcr.microsoft.com/dotnet/sdk:5.0` as the alias `build-env`.
+- Setting the base image from `mcr.microsoft.com/dotnet/sdk:7.0` as the alias `build-env`.
 - Copying the contents and publishing the .NET app:
   - The app is published using the [`dotnet publish`](../core/tools/dotnet-publish.md) command.
 - Applying labels to the container.
-- Relayering the .NET SDK image from `mcr.microsoft.com/dotnet/sdk:5.0`
+- Relayering the .NET SDK image from `mcr.microsoft.com/dotnet/sdk:7.0`
 - Copying the published build output from the `build-env`.
 - Defining the entry point, which delegates to [`dotnet /DotNet.GitHubAction.dll`](../core/tools/dotnet.md).
 
@@ -107,13 +109,13 @@ The preceding *Dockerfile* steps include:
 > The MCR in `mcr.microsoft.com` stands for "Microsoft Container Registry", and is Microsoft's syndicated container catalog from the official Docker hub. For more information, see [Microsoft syndicates container catalog](https://azure.microsoft.com/blog/microsoft-syndicates-container-catalog/).
 
 > [!CAUTION]
-> If you use a *global.json* file to pin the SDK version, you should explicitly refer to that version in your *Dockerfile*. For example, if you've used *global.json* to pin SDK version `5.0.300`, your *Dockerfile* should use `mcr.microsoft.com/dotnet/sdk:5.0.300`. This prevents breaking the GitHub Action when a new minor revision is released.
+> If you use a *global.json* file to pin the SDK version, you should explicitly refer to that version in your *Dockerfile*. For example, if you've used *global.json* to pin SDK version `5.0.300`, your *Dockerfile* should use `mcr.microsoft.com/dotnet/sdk:5.0.300`. This prevents breaking the GitHub Actions when a new minor revision is released.
 
 ## Define action inputs and outputs
 
 In the [Explore the app](#explore-the-app) section, you learned about the `ActionInputs` class. This object represents the inputs for the GitHub Action. For GitHub to recognize that the repository is a GitHub Action, you need to have an *action.yml* file at the root of the repository.
 
-:::code language="yml" source="snippets/action.yml":::
+:::code language="yml" source="snippets/create-dotnet-github-action/action.yml":::
 
 The preceding *action.yml* file defines:
 
@@ -125,11 +127,17 @@ The preceding *action.yml* file defines:
 
 For more information, see [Metadata syntax for GitHub Actions](https://docs.github.com/actions/creating-actions/metadata-syntax-for-github-actions).
 
+### Pre-defined environment variables
+
+With GitHub Actions, you'll get a lot of [environment variables](https://docs.github.com/actions/learn-github-actions/environment-variables#default-environment-variables) by default. For instance, the variable `GITHUB_REF` will always contain a reference to the branch or tag that triggered the workflow run. `GITHUB_REPOSITORY` has the owner and repository name, for example, `dotnet/docs`.
+
+You should explore the pre-defined environment variables and use them accordingly.
+
 ## Workflow composition
 
 With the [.NET app containerized](#prepare-the-net-app-for-github-actions), and the [action inputs and outputs](#define-action-inputs-and-outputs) defined, you're ready to consume the action. GitHub Actions are *not* required to be published in the GitHub Marketplace to be used. Workflows are defined in the *.github/workflows* directory of a repository as YAML files.
 
-:::code language="yml" source="snippets/workflow.yml":::
+:::code language="yml" source="snippets/create-dotnet-github-action/workflow.yml":::
 
 > [!IMPORTANT]
 > For containerized GitHub Actions, you're required to use `runs-on: ubuntu-latest`. For more information, see [Workflow syntax `jobs.<job_id>.runs-on`](https://docs.github.com/actions/reference/workflow-syntax-for-github-actions#jobsjob_idruns-on).
@@ -144,9 +152,9 @@ For more information, see [Creating your first workflow](https://docs.github.com
 
 Focusing on the `steps` node, the composition is more obvious:
 
-:::code language="yml" source="snippets/workflow.yml" range="22-47":::
+:::code language="yml" source="snippets/create-dotnet-github-action/workflow.yml" range="25-50":::
 
-The `jobs/steps` represents the *workflow composition*. Steps are orchestrated such that they're sequential, communicative, and composable. With various GitHub Actions representing steps, each having inputs and outputs, workflows can be composed.
+The `jobs.steps` represents the *workflow composition*. Steps are orchestrated such that they're sequential, communicative, and composable. With various GitHub Actions representing steps, each having inputs and outputs, workflows can be composed.
 
 In the preceding steps, you can observe:
 
@@ -165,12 +173,9 @@ In the preceding steps, you can observe:
 
 ## Put it all together
 
-The [dotnet/samples](https://github.com/dotnet/samples) GitHub repository is home to many .NET sample source code projects, including the app in this tutorial.
+The [dotnet/samples](https://github.com/dotnet/samples) GitHub repository is home to many .NET sample source code projects, including [the app in this tutorial](https://github.com/dotnet/samples/tree/main/github-actions/DotNet.GitHubAction).
 
-- The app is available in the [samples browser](/samples/dotnet/samples/create-dotnet-github-action).
-- The generated [*CODE_METRICS.md*](https://github.com/dotnet/samples/blob/main/github-actions/DotNet.GitHubAction/CODE_METRICS.md) file is navigable.
-
-The *CODE_METRICS.md* file represents the hierarchy of the projects it analyzed. Each project has a top-level section, and an emoji the represents the overall status of the highest cyclomatic complexity for nested objects. As you navigate the file, each section exposes drill-down opportunities with a summary of each area. The markdown has collapsible sections as an added convenience.
+The generated [*CODE_METRICS.md*](https://github.com/dotnet/samples/blob/main/github-actions/DotNet.GitHubAction/CODE_METRICS.md) file is navigable. This file represents the hierarchy of the projects it analyzed. Each project has a top-level section, and an emoji that represents the overall status of the highest cyclomatic complexity for nested objects. As you navigate the file, each section exposes drill-down opportunities with a summary of each area. The markdown has collapsible sections as an added convenience.
 
 The hierarchy progresses from:
 
@@ -185,17 +190,38 @@ The hierarchy progresses from:
 
 The workflow specifies that `on` a `push` to the `main` branch, the action is triggered to run. When it runs, the **Actions** tab in GitHub will report the live log stream of its execution. Here is an example log from the `.NET code metrics` run:
 
-:::image type="content" source="media/action-log.png" lightbox="media/action-log.png" border="true" alt-text=".NET code metrics - GitHub Action log":::
+:::image type="content" source="media/action-log.png" lightbox="media/action-log.png" border="true" alt-text=".NET code metrics - GitHub Actions log":::
+
+## Performance improvements
+
+If you followed along the sample, you might have noticed that every time this action is used, it will do a **docker build** for that image. So, every trigger is faced with some time to build the container before running it. Before releasing your GitHub Actions to the marketplace, you should:
+
+1. (automatically) Build the Docker image
+2. Push the docker image to the GitHub Container Registry (or any other public container registry)
+3. Change the action to not build the image, but to use an image from a public registry.
+
+```yaml
+# Rest of action.yml content removed for readability
+# using Dockerfile
+runs:
+  using: 'docker'
+  image: 'Dockerfile' # Change this line
+# using container image from public registry
+runs:
+  using: 'docker'
+  image: 'docker://ghcr.io/some-user/some-registry' # Starting with docker:// is important!!
+```
+
+For more information, see [GitHub Docs: Working with the Container registry](https://docs.github.com/packages/working-with-a-github-packages-registry/working-with-the-container-registry).
 
 ## See also
-
-<!-- TODO: Add DevOps eBook link when published -->
 
 - [.NET Generic Host](../core/extensions/generic-host.md)
 - [Dependency injection in .NET](../core/extensions/dependency-injection.md)
 - [Code metrics values](/visualstudio/code-quality/code-metrics-values)
+- [Open-source GitHub Action build in .NET](https://github.com/svrooij/dotnet-feeder/) with a [workflow](https://github.com/svrooij/dotnet-feeder/blob/main/.github/workflows/build.yml) for building and pushing the docker image automatically.
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [.NET GitHub Action sample code](/samples/dotnet/samples/create-dotnet-github-action)
+> [.NET GitHub Actions sample code](/samples/dotnet/samples/create-dotnet-github-action)

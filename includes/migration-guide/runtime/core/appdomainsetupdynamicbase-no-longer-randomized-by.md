@@ -6,7 +6,7 @@ Prior to the .NET Framework 4.6, the value of <xref:System.AppDomainSetup.Dynami
 
 #### Suggestion
 
-Be aware that enabling <code>UseRandomizedStringHashAlgorithm</code> will not result in <xref:System.AppDomainSetup.DynamicBase> being randomized. If a random base is needed, it must be produced in your app's code rather than via this API.
+Be aware that enabling `UseRandomizedStringHashAlgorithm` will not result in <xref:System.AppDomainSetup.DynamicBase> being randomized. If a random base is needed, it must be produced in your app's code rather than via this API.
 
 | Name    | Value       |
 |:--------|:------------|

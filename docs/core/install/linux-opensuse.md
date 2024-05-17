@@ -1,9 +1,10 @@
 ---
-title: Install .NET on openSUSE - .NET
-description: Demonstrates the various ways to install .NET SDK and .NET Runtime on openSUSE.
+title: Install .NET on openSUSE
+description: Learn about which versions of .NET SDK and .NET Runtime are supported, and how to install .NET on openSUSE.
 author: adegeo
 ms.author: adegeo
-ms.date: 01/06/2021
+ms.date: 05/14/2024
+ms.custom: linux-related-content
 ---
 
 # Install the .NET SDK or the .NET Runtime on openSUSE
@@ -18,25 +19,21 @@ ms.date: 01/06/2021
 
 The following table is a list of currently supported .NET releases on openSUSE 15. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of openSUSE is no longer supported.
 
-- A ✔️ indicates that the version of openSUSE or .NET is still supported.
-- A ❌ indicates that the version of openSUSE or .NET isn't supported on that openSUSE release.
-- When both a version of openSUSE and a version of .NET have ✔️, that OS and .NET combination is supported.
+| openSUSE   | .NET      |
+|------------|-----------|
+| 15.4+      | 8, 6      |
 
-| openSUSE                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
-|----------------------------|---------------|---------------|----------------|
-| ✔️ [15](#opensuse-15-)     | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+[!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
-The following versions of .NET are no longer supported. The downloads for these still remain published:
+## Install preview versions
 
-- 3.0
-- 2.2
-- 2.0
+[!INCLUDE [preview installs don't support package managers](./includes/linux-install-previews.md)]
 
 ## Remove preview versions
 
 [!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
 
-## openSUSE 15 ✔️
+## openSUSE 15
 
 [!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
 
@@ -48,7 +45,7 @@ sudo mv prod.repo /etc/zypp/repos.d/microsoft-prod.repo
 sudo chown root:root /etc/zypp/repos.d/microsoft-prod.repo
 ```
 
-[!INCLUDE [linux-zyp-install-50](includes/linux-install-50-zyp.md)]
+[!INCLUDE [linux-zyp-install-80](includes/linux-install-80-zyp.md)]
 
 ## How to install other versions
 
@@ -74,16 +71,17 @@ When you install with a package manager, these libraries are installed for you. 
 - libicu
 - libopenssl1_0_0
 
-If the target runtime environment's OpenSSL version is 1.1 or newer, you'll need to install **compat-openssl10**.
+If the target runtime environment's OpenSSL version is 1.1 or newer, you'll need to install `compat-openssl10`.
+
+Dependencies can be installed with the `zypper install` command. The following snippet demonstrates installing the `krb5` library:
+
+```bash
+sudo zypper install krb5
+```
 
 For more information about the dependencies, see [Self-contained Linux apps](https://github.com/dotnet/core/blob/main/Documentation/self-contained-linux-apps.md).
 
-For .NET apps that use the *System.Drawing.Common* assembly, you'll also need the following dependency:
-
-- [libgdiplus (version 6.0.1 or later)](https://www.mono-project.com/docs/gui/libgdiplus/)
-
-  > [!WARNING]
-  > You can install a recent version of *libgdiplus* by adding the Mono repository to your system. For more information, see <https://www.mono-project.com/download/stable/>.
+[!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
 
 ## Next steps
 

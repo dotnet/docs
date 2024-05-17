@@ -6,10 +6,10 @@ ms.assetid: 767591c3-2674-4d7e-a61b-e76da3b159ae
 ---
 # 5601 - FederationMessageProcessingSuccess
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|5601|  
 |Keywords|Security|  
 |Level|Verbose|  

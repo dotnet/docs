@@ -2,6 +2,8 @@
 title: SYSLIB1013 warning
 description: Learn about the diagnostic that generates compile-time warning SYSLIB1013.
 ms.date: 05/07/2021
+f1_keywords:
+  - syslib1013
 ---
 
 # SYSLIB1013: Don't include exception parameters as templates in the logging message

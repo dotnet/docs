@@ -18,7 +18,7 @@ There are several ways to create bindings not provided by the system:
   
 ## The Order of Binding Elements  
 
- Each binding element represents a processing step when sending or receiving messages. At runtime, binding elements create the channels and listeners necessary to build outgoing and incoming channel stacks.  
+ Each binding element represents a processing step when sending or receiving messages. At run time, binding elements create the channels and listeners necessary to build outgoing and incoming channel stacks.  
   
  There are three main types of binding elements: Protocol Binding Elements, Encoding Binding Elements and Transport Binding Elements.  
   
@@ -54,7 +54,7 @@ Binding customBinding = new CustomBinding(
 );  
 ```  
   
- How you write your new binding element depends on its exact functionality. One of the samples, [Transport: UDP](/previous-versions/dotnet/framework/wcf/samples/transport-udp), provides a detailed description of how to implement one kind of binding element.  
+ How you write your new binding element depends on its exact functionality. One of the samples, [Transport: UDP](../samples/transport-udp.md), provides a detailed description of how to implement one kind of binding element.  
   
 ## Creating a New Binding  
 

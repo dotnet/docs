@@ -421,7 +421,7 @@ using (var context = new AdventureWorksEntities())
 // The following example creates a new order for existing Contact using the reference assignment.
 // Notice that to set the reference, we need to load the contact.
 // You do not need to call AddObject() because when you assign the reference
-// to the navigation property the objects on both ends get synronized in the state manager.
+// to the navigation property the objects on both ends get synchronized in the state manager.
 using (var context = new AdventureWorksEntities())
 {
     SalesOrderHeader order = new SalesOrderHeader

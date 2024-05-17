@@ -3,11 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.ServiceModel;
 //<snippet0>
-using System.Security.Permissions;
 using System.ServiceModel.Description;
 using System.Security.Principal;
 
-[assembly: PermissionSet(SecurityAction.RequestMinimum)]
 namespace Unsecured
 {
     class Service

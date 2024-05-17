@@ -6,10 +6,10 @@ ms.assetid: 5d4a214f-e242-4475-8bc9-02409190dc2c
 ---
 # 501 - CompilationStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|501|  
 |Keywords|WebHost|  
 |Level|Information|  

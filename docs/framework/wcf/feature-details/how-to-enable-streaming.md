@@ -73,4 +73,4 @@ Windows Communication Foundation (WCF) can send messages using either buffered o
 ## See also
 
 - [Large Data and Streaming](large-data-and-streaming.md)
-- [Stream](/previous-versions/dotnet/framework/wcf/samples/stream)
+- [Stream](../samples/stream.md)

@@ -25,7 +25,7 @@ This topic explains how to configure tracking for a [!INCLUDE[netfx_current_long
     > [!NOTE]
     > The preceding configuration sample is using simplified configuration. For more information, see [Simplified Configuration](../simplified-configuration.md).  
   
-     The preceding configuration sample adds a <xref:System.Activities.Tracking.EtwTrackingParticipant> and specifies a tracking profile name. Tracking profiles are created in a <`trackingProfile`> element within a <`tracking`> element. The tracking profile contains tracking queries that permit a tracking participant to subscribe to workflow events that are emitted when the state of a workflow instance changes at runtime. The following example shows how to create a tracking profile.  
+     The preceding configuration sample adds a <xref:System.Activities.Tracking.EtwTrackingParticipant> and specifies a tracking profile name. Tracking profiles are created in a <`trackingProfile`> element within a <`tracking`> element. The tracking profile contains tracking queries that permit a tracking participant to subscribe to workflow events that are emitted when the state of a workflow instance changes at run time. The following example shows how to create a tracking profile.  
   
     ```xml  
     <system.serviceModel>  
@@ -66,6 +66,6 @@ This topic explains how to configure tracking for a [!INCLUDE[netfx_current_long
   
 ## See also
 
-- [Simplified Configuration for WCF Services](/previous-versions/dotnet/framework/wcf/samples/simplified-configuration-for-wcf-services)
+- [Simplified Configuration for WCF Services](../samples/simplified-configuration-for-wcf-services.md)
 - [Workflow Services](workflow-services.md)
 - [Tracking Profiles](../../windows-workflow-foundation/tracking-profiles.md)

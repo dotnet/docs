@@ -32,7 +32,7 @@ C# and Visual Basic each have two keywords for asynchronous programming:
 
 - `Await` (Visual Basic) or `await` (C#) operator, which is applied to the result of an async method.
 
-To implement asynchronous I/O operations, use these keywords in conjunction with the async methods, as shown in the following examples. For more information, see [Asynchronous programming with async and await (C#)](../../csharp/programming-guide/concepts/async/index.md) or [Asynchronous Programming with Async and Await (Visual Basic)](../../visual-basic/programming-guide/concepts/async/index.md).
+To implement asynchronous I/O operations, use these keywords in conjunction with the async methods, as shown in the following examples. For more information, see [Asynchronous programming with async and await (C#)](../../csharp/asynchronous-programming/index.md) or [Asynchronous Programming with Async and Await (Visual Basic)](../../visual-basic/programming-guide/concepts/async/index.md).
 
 The following example demonstrates how to use two <xref:System.IO.FileStream> objects to copy files asynchronously from one directory to another. Notice that the <xref:System.Web.UI.WebControls.Button.Click> event handler for the <xref:System.Windows.Controls.Button> control is marked with the `async` modifier because it calls an asynchronous method.
 
@@ -55,5 +55,5 @@ The next example shows the code-behind file and the XAML file that are used to o
 
 - <xref:System.IO.Stream>
 - [File and Stream I/O](index.md)
-- [Asynchronous programming with async and await (C#)](../../csharp/programming-guide/concepts/async/index.md)
+- [Asynchronous programming with async and await (C#)](../../csharp/asynchronous-programming/index.md)
 - [Asynchronous Programming with Async and Await (Visual Basic)](../../visual-basic/programming-guide/concepts/async/index.md)

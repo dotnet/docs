@@ -1,6 +1,6 @@
 ---
 description: "C# Compiler Options that control compiler output. These options control the assembly generation from a compilation."
-title: "C# Compiler Options - Output options"
+title: "Compiler Options - Output options"
 ms.date: 03/12/2021
 f1_keywords: 
   - "cs.build.options"
@@ -13,26 +13,30 @@ helpviewer_keywords:
 ---
 # C# Compiler Options that control compiler output
 
-The following options control compiler output generation. The new MSBuild syntax is shown in **Bold**. The older *csc.exe* syntax is shown in `code style`.
+The following options control compiler output generation.
 
-- **DocumentationFile** / `-doc`: Generate XML doc file from `///` comments.
-- **OutputAssembly** / `-out`: Specify the output assembly file.
-- **PlatformTarget** / `-platform`: Specify the target platform CPU.
-- **ProduceReferenceAssembly** / `-refout`: Generate a reference assembly.
-- **TargetType** `-target`: Specify the type of the output assembly.
+| MSBuild | *csc.exe* | Description |
+|---|---|---|
+| **DocumentationFile** | `-doc:` | Generate XML doc file from `///` comments. |
+| **OutputAssembly** | `-out:` | Specify the output assembly file. |
+| **PlatformTarget** | `-platform:` | Specify the target platform CPU. |
+| **ProduceReferenceAssembly** | `-refout:` | Generate a reference assembly. |
+| **TargetType** | `-target:` | Specify the type of the output assembly. |
 
 ## DocumentationFile
 
-The **DocumentationFile** option allows you to place documentation comments in an XML file. To learn more about documenting your code, see [Recommended Tags for Documentation Comments](../../programming-guide/xmldoc/recommended-tags-for-documentation-comments.md). The value specifies the path to the output XML file. The XML file contains the comments in the source code files of the compilation.
+The **DocumentationFile** option allows you to place documentation comments in an XML file. To learn more about documenting your code, see [Recommended Tags for Documentation Comments](../xmldoc/recommended-tags.md). The value specifies the path to the output XML file. The XML file contains the comments in the source code files of the compilation.
 
 ```xml
 <DocumentationFile>path/to/file.xml</DocumentationFile>
 ```
 
-The source code file that contains Main or top-level statements is output first into the XML. You'll often want to use the generated .xml file with [IntelliSense](/visualstudio/ide/using-intellisense). The *.xml* filename must be the same as the assembly name. The *.xml* file must be in the same directory as the assembly. When the assembly is referenced in a Visual Studio project, the *.xml* file is found as well. For more information about generating code comments, see [Supplying Code Comments](/visualstudio/ide/reference/generate-xml-documentation-comments). Unless you compile with [`<TargetType:Module>`](#targettype), `file` will contain `<assembly>` and `</assembly>` tags specifying the name of the file containing the assembly manifest for the output file. For examples, see [How to use the XML documentation features](../../programming-guide/xmldoc/how-to-use-the-xml-documentation-features.md).
+The source code file that contains Main or top-level statements is output first into the XML. You'll often want to use the generated .xml file with [IntelliSense](/visualstudio/ide/using-intellisense). The *.xml* filename must be the same as the assembly name. The *.xml* file must be in the same directory as the assembly. When the assembly is referenced in a Visual Studio project, the *.xml* file is found as well. For more information about generating code comments, see [Supplying Code Comments](/visualstudio/ide/reference/generate-xml-documentation-comments). Unless you compile with [`<TargetType:Module>`](#targettype), `file` will contain `<assembly>` and `</assembly>` tags specifying the name of the file containing the assembly manifest for the output file. For examples, see [How to use the XML documentation features](../xmldoc/index.md).
 
 > [!NOTE]
 > The **DocumentationFile** option applies to all files in the project. To disable warnings related to documentation comments for a specific file or section of code, use [#pragma warning](../preprocessor-directives.md#pragma-warning).
+
+This option can be used in any .NET SDK-style project. For more information, see [DocumentationFile property](../../../core/project-sdk/msbuild-props.md#documentationfile).
 
 ## OutputAssembly
 
@@ -82,15 +86,19 @@ The behavior of **anycpu** has some additional nuances on .NET Core and .NET 5 a
 
 ## ProduceReferenceAssembly
 
-The **ProduceReferenceAssembly** option specifies a file path where the reference assembly should be output. It translates to `metadataPeStream` in the Emit API. The `filepath` specifies the path for the reference assembly. It should generally match that of the primary assembly. The recommended convention (used by MSBuild) is to place the reference assembly in a "ref/" subfolder relative to the primary assembly.
+The **ProduceReferenceAssembly** option controls whether the compiler produces reference assemblies.
 
 ```xml
-<ProduceReferenceAssembly>filepath</ProduceReferenceAssembly>
+<ProduceReferenceAssembly>true</ProduceReferenceAssembly>
 ```
 
-Reference assemblies are a special type of assembly that contains only the minimum amount of metadata required to represent the library's public API surface. They include declarations for all members that are significant when referencing an assembly in build tools. Reference assemblies exclude all member implementations and declarations of private members. Those members have no observable impact on their API contract. For more information, see [Reference assemblies](../../../standard/assembly/reference-assemblies.md) in the .NET Guide.
+Reference assemblies are a special type of assembly that contain only the minimum amount of metadata required to represent the library's public API surface. They include declarations for all members that are significant when referencing an assembly in build tools. Reference assemblies exclude all member implementations and declarations of private members. Those members have no observable impact on their API contract. For more information, see [Reference assemblies](../../../standard/assembly/reference-assemblies.md) in the .NET Guide.
 
 The **ProduceReferenceAssembly** and [**ProduceOnlyReferenceAssembly**](./code-generation.md#produceonlyreferenceassembly) options are mutually exclusive.
+
+You generally don't need to work directly with reference assembly files. By default, reference assemblies are generated in a `ref` subfolder of the intermediate path (i.e. `obj/ref/`). To generate them under the output directory instead (i.e. `bin/ref/`) set `ProduceReferenceAssemblyInOutDir` to `true` in your project.
+
+.NET SDK 6.0.200 made a [change](../../../core/compatibility/sdk/6.0/write-reference-assemblies-to-obj.md) that moved reference assemblies from the output directory to the intermediate directory by default.
 
 ## TargetType
 

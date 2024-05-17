@@ -6,10 +6,10 @@ ms.assetid: 8489e542-b2ab-4c31-9150-08d4f6704150
 ---
 # 5009 - DCGenWriterStop
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|5009|  
 |Keywords|Serialization|  
 |Level|Verbose|  

@@ -1,6 +1,6 @@
 ---
 title: "Security and Race Conditions"
-description:: Describes pitfalls to avoid around security holes exploited by race conditions, including dispose methods, constructors, cached objects, and finalizers.
+description: Describes pitfalls to avoid around security holes exploited by race conditions, including dispose methods, constructors, cached objects, and finalizers.
 ms.date: 07/15/2020
 dev_langs: 
   - "csharp"

@@ -6,10 +6,10 @@ ms.assetid: 5e1894a6-9c44-4533-aaec-64063a2cbb06
 ---
 # 712 - DispatchMessageStop
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|712|  
 |Keywords|ServiceModel|  
 |Level|Information|  

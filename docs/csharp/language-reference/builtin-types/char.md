@@ -1,6 +1,6 @@
 ---
 description: Learn about the built-in character type in C#
-title: "char type - C# reference"
+title: "char type"
 ms.date: 05/11/2020
 f1_keywords:
   - "char"
@@ -48,11 +48,10 @@ There are no implicit conversions from other types to the `char` type. However, 
 
 ## C# language specification
 
-For more information, see the [Integral types](~/_csharplang/spec/types.md#integral-types) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+For more information, see the [Integral types](~/_csharpstandard/standard/types.md#836-integral-types) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 
-- [C# reference](../index.md)
 - [Value types](value-types.md)
 - [Strings](../../programming-guide/strings/index.md)
 - <xref:System.Text.Rune?displayProperty=nameWithType>

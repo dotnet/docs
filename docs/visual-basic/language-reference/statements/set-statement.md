@@ -19,7 +19,7 @@ Declares a `Set` property procedure used to assign a value to a property.
 ## Syntax  
   
 ```vb  
-[ <attributelist> ] [ accessmodifier ] Set (ByVal value [ As datatype ])  
+[ <attributelist> ] [ accessmodifier ] Set [([ByVal value [ As datatype ]])]  
     [ statements ]  
 End Set  
 ```  
@@ -43,10 +43,10 @@ End Set
  See [Access levels in Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md).  
   
  `value`  
- Required. Parameter containing the new value for the property.  
+ Optional. Parameter containing the new value for the property. If not given (that is if parameter list is not present or is empty), an implicit parameter named `value` is defined. The data type of this implicit parameter is the data type of the property where this `Set` statement is declared.  
   
  `datatype`  
- Required if `Option Strict` is `On`. Data type of the `value` parameter. The data type specified must be the same as the data type of the property where this `Set` statement is declared.  
+ Required if `value` is present and `Option Strict` is `On`. Cannot be present if `value` is not given. Data type of the `value` parameter. The data type specified must be the same as the data type of the property where this `Set` statement is declared.  
   
  `statements`  
  Optional. One or more statements that run when the `Set` property procedure is called.  

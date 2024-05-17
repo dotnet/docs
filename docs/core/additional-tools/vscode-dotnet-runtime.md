@@ -23,7 +23,7 @@ For more examples, check out these open source extensions that currently leverag
 
 - [Azure Resource Manager (ARM) Tools for Visual Studio Code](https://github.com/microsoft/vscode-azurearmtools)
 
-- [.NET Interactive Notebooks](https://github.com/dotnet/interactive/tree/main/src/dotnet-interactive-vscode)
+- [.NET Interactive Notebooks](https://github.com/dotnet/interactive/tree/main/src/polyglot-notebooks-vscode)
 
 ## Getting started: end users
 

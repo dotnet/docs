@@ -6,10 +6,10 @@ ms.assetid: b2074414-abad-4643-ba38-f94b331def93
 ---
 # 3423 - WebSocketAsyncWriteStop
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3423|  
 |Keywords|HTTP|  
 |Level|Verbose|  

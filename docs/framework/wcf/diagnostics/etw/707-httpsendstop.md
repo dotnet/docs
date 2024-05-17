@@ -6,10 +6,10 @@ ms.assetid: 5c8a607a-be7a-4e36-a885-67746f03cae6
 ---
 # 707 - HttpSendStop
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|707|  
 |Keywords|HTTP|  
 |Level|Verbose|  

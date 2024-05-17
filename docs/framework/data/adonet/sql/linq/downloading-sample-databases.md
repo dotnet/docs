@@ -25,7 +25,7 @@ The Northwind sample database for Microsoft Access is not available on the Micro
 
 1. Open Access.
 
-1. Enter **Northwind** in the **Search for Online Templates** box, and then select **Enter**.
+1. Enter **Northwind** in the **Search for Online Templates** box, and then select <kbd>Enter</kbd>.
 
 1. On the results screen, select **Northwind**. A new window opens with a description of the Northwind database.
 
@@ -49,7 +49,7 @@ If you want to view or modify a database that you've downloaded, you can use SQL
 
 [Download SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms)
 
-You can also view and manage databases in the Visual Studio integrated development environment (IDE). In [Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019), connect to the database from **SQL Server Object Explorer**, or create a Data Connection to the database in **Server Explorer**. Open these explorer panes from the **View** menu.
+You can also view and manage databases in the Visual Studio integrated development environment (IDE). In [Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019), connect to the database from **SQL Server Object Explorer**, or create a Data Connection to the database in **Server Explorer**. Open these explorer panes from the **View** menu.
 
 ## <a name="get_sql"></a> Get SQL Server Express
 
@@ -57,7 +57,7 @@ SQL Server Express is a free, entry-level edition of SQL Server that you can red
   
 [SQL Server Express Edition](https://www.microsoft.com/sql-server/sql-server-editions-express)
 
-If you're using [Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019), SQL Server Express LocalDB is included in the free Community edition of Visual Studio, as well as the Professional and higher editions.  
+If you're using [Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019), SQL Server Express LocalDB is included in the free Community edition of Visual Studio, as well as the Professional and higher editions.  
 
 ## See also
 

@@ -1,27 +1,24 @@
-using System;
+﻿namespace IterationStatements;
 
-namespace IterationStatements
+public static class DoStatement
 {
-    public static class DoStatement
+    public static void Examples()
     {
-        public static void Examples()
-        {
-            Example();
-        }
+        Example();
+    }
 
-        private static void Example()
+    private static void Example()
+    {
+        // <Example>
+        int n = 0;
+        do
         {
-            // <Example>
-            int n = 0;
-            do
-            {
-                Console.Write(n);
-                n++;
-            } while (n < 5);
-            // Output:
-            // 01234
-            // </Example>
-            Console.WriteLine();
-        }
+            Console.Write(n);
+            n++;
+        } while (n < 5);
+        // Output:
+        // 01234
+        // </Example>
+        Console.WriteLine();
     }
 }

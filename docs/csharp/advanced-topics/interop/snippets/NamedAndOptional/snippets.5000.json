@@ -1,0 +1,11 @@
+{
+    "host": "visualstudio",
+    "expectederrors": [
+        {
+            "file": "docs/csharp/advanced-topics/interop/snippets/NamedAndOptional/WordProgram.cs",
+            "line": 8,
+            "column": 24,
+            "error": "CS0234"
+        }
+    ]
+}

@@ -6,10 +6,10 @@ ms.assetid: fd960f10-dd43-42d4-a415-75eae0cb7cac
 ---
 # 1424 - SecuritySessionRatio
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1424|  
 |Keywords|Quota|  
 |Level|Verbose|  

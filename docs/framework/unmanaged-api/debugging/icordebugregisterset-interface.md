@@ -27,7 +27,7 @@ Represents the set of registers available on the computer that is currently exec
 |[GetRegisters Method](icordebugregisterset-getregisters-method.md)|Gets the value of each register (on the computer that is currently executing code) that is specified by the bit mask.|  
 |[GetRegistersAvailable Method](icordebugregisterset-getregistersavailable-method.md)|Gets a bit mask indicating which registers in this `ICorDebugRegisterSet` are currently available.|  
 |[GetThreadContext Method](icordebugregisterset-getthreadcontext-method.md)|Gets the context of the current thread.|  
-|[SetRegisters Method](icordebugregisterset-setregisters-method.md)|Not implemented for the .NET Framework version 2.0.|  
+|[SetRegisters Method](icordebugregisterset-setregisters-method.md)|Not implemented for .NET Framework version 2.0.|  
 |[SetThreadContext Method](icordebugregisterset-setthreadcontext-method.md)|Not implemented for the .NET Framework 2.0.|  
   
 ## Remarks  

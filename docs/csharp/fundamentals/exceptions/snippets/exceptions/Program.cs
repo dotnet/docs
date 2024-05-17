@@ -1,12 +1,15 @@
 ﻿using System;
 using System.IO;
+using exceptions;
 
 namespace Exceptions
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
+            var toast = await KitchenHelpers.ToastBreadAsync(2, 100);
+
             ExceptionTest.Main();
             TestThrowCatch();
             CatchOrder.Main();
@@ -183,9 +186,10 @@ namespace Exceptions
             {
                 return array[index];
             }
-            catch (IndexOutOfRangeException ex)
+            catch (IndexOutOfRangeException e)
             {
-                throw new ArgumentException("Index is out of range", nameof(index), ex);
+                throw new ArgumentOutOfRangeException(
+                    "Parameter index is out of range.", e);
             }
         }
         // </InvalidArg>

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace inheritance
+﻿namespace inheritance
 {
     //<SnippetClasses>
     // WorkItem implicitly inherits from the Object class.
@@ -85,7 +82,7 @@ namespace inheritance
             this.Description = desc;
             this.jobLength = jobLen;
 
-            // Property originalItemId is a member of ChangeRequest, but not
+            // Property originalItemID is a member of ChangeRequest, but not
             // of WorkItem.
             this.originalItemID = originalID;
         }
@@ -143,7 +140,7 @@ namespace inheritance
         {
             // <SnippetUsePolymorphism>
             // Polymorphism at work #1: a Rectangle, Triangle and Circle
-            // can all be used whereever a Shape is expected. No cast is
+            // can all be used wherever a Shape is expected. No cast is
             // required because an implicit conversion exists from a derived
             // class to its base class.
             var shapes = new List<Shape>

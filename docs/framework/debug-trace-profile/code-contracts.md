@@ -1,6 +1,7 @@
 ---
 title: "Code Contracts"
-description: Explore code contracts, which provide a way to specify preconditions, postconditions, and object invariants in your .NET code.
+titleSuffix: .NET Framework
+description: "Explore code contracts, which provide a way to specify preconditions, postconditions, and object invariants in your .NET Framework code."
 ms.date: "09/05/2018"
 dev_langs:
   - "csharp"
@@ -9,9 +10,12 @@ helpviewer_keywords:
   - "Code contracts"
 ms.assetid: 84526045-496f-489d-8517-a258cf76f040
 ---
-# Code Contracts
+# Code contracts (.NET Framework)
 
-Code contracts provide a way to specify preconditions, postconditions, and object invariants in your code. Preconditions are requirements that must be met when entering a method or property. Postconditions describe expectations at the time the method or property code exits. Object invariants describe the expected state for a class that is in a good state.
+Code contracts provide a way to specify preconditions, postconditions, and object invariants in .NET Framework code. Preconditions are requirements that must be met when entering a method or property. Postconditions describe expectations at the time the method or property code exits. Object invariants describe the expected state for a class that is in a good state.
+
+> [!NOTE]
+> Code contracts aren't supported in .NET 5+ (including .NET Core versions). Consider using [Nullable reference types](../../csharp/nullable-references.md) instead.
 
 Code contracts include classes for marking your code, a static analyzer for compile-time analysis, and a runtime analyzer. The classes for code contracts can be found in the <xref:System.Diagnostics.Contracts> namespace.
 
@@ -25,7 +29,7 @@ The benefits of code contracts include the following:
 
 - Reference documentation: The documentation generator augments existing XML documentation files with contract information. There are also style sheets that can be used with [Sandcastle](https://github.com/EWSoftware/SHFB) so that the generated documentation pages have contract sections.
 
-All .NET Framework languages can immediately take advantage of contracts; you do not have to write a special parser or compiler. A Visual Studio add-in lets you specify the level of code contract analysis to be performed. The analyzers can confirm that the contracts are well-formed (type checking and name resolution) and can produce a compiled form of the contracts in Microsoft intermediate language (MSIL) format. Authoring contracts in Visual Studio lets you take advantage of the standard IntelliSense provided by the tool.
+All .NET Framework languages can immediately take advantage of contracts; you do not have to write a special parser or compiler. A Visual Studio add-in lets you specify the level of code contract analysis to be performed. The analyzers can confirm that the contracts are well-formed (type checking and name resolution) and can produce a compiled form of the contracts in common intermediate language (CIL) format. Authoring contracts in Visual Studio lets you take advantage of the standard IntelliSense provided by the tool.
 
 Most methods in the contract class are conditionally compiled; that is, the compiler emits calls to these methods only when  you define a special symbol, CONTRACTS_FULL, by using the `#define` directive. CONTRACTS_FULL lets you write contracts in your code without using `#ifdef` directives; you can produce different builds, some with contracts, and some without.
 

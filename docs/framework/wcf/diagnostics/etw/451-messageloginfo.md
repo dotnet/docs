@@ -6,10 +6,10 @@ ms.assetid: 485b4b29-dc21-4a35-93f8-5f4726d6aa5a
 ---
 # 451 - MessageLogInfo
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|451|  
 |Keywords|Troubleshooting, WCFMessageLogging|  
 |Level|Information|  

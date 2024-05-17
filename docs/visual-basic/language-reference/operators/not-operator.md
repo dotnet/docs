@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Not Operator (Visual Basic)"
 title: "Not Operator"
-ms.date: 07/20/2015
+ms.date: 10/27/2023
 f1_keywords: 
   - "vb.Not"
 helpviewer_keywords: 
@@ -53,6 +53,8 @@ result = Not expression
 > [!NOTE]
 > Since the logical and bitwise operators have a lower precedence than other arithmetic and relational operators, any bitwise operations should be enclosed in parentheses to ensure accurate execution.  
   
+Note that if `Not someStr?.Contains("some string")` or any other value that evaluates as `Boolean?` has the value of `nothing` or `HasValue=false`, the `else` block is run.  The evaluation follows the SQL evaluation where null/nothing doesn't equal anything, not even another null/nothing.
+
 ## Data Types  
 
  For a Boolean negation, the data type of the result is `Boolean`. For a bitwise negation, the result data type is the same as that of `expression`. However, if expression is `Decimal`, the result is `Long`.  
@@ -61,7 +63,7 @@ result = Not expression
 
  The `Not` operator can be *overloaded*, which means that a class or structure can redefine its behavior when its operand has the type of that class or structure. If your code uses this operator on such a class or structure, be sure you understand its redefined behavior. For more information, see [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md).  
   
-## Example  
+## Example 1
 
  The following example uses the `Not` operator to perform logical negation on a `Boolean` expression. The result is a `Boolean` value that represents the reverse of the value of the expression.  
   
@@ -69,7 +71,7 @@ result = Not expression
   
  The preceding example produces results of `False` and `True`, respectively.  
   
-## Example  
+## Example 2  
 
  The following example uses the `Not` operator to perform logical negation of the individual bits of a numeric expression. The bit in the result pattern is set to the reverse of the corresponding bit in the operand pattern, including the sign bit.  
   

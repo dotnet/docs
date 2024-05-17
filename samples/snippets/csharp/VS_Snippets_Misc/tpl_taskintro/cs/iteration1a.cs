@@ -10,7 +10,7 @@ class CustomData
    public int ThreadNum;
 }
 
-public class Example
+public class IterationOne
 {
    public static void Main()
    {

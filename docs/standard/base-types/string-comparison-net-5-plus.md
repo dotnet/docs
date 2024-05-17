@@ -2,11 +2,12 @@
 title: Behavior changes when comparing strings on .NET 5+
 description: Learn about string-comparison behavior changes in .NET 5 and later versions on Windows.
 ms.topic: conceptual
-ms.date: 12/07/2020
+ms.date: 02/15/2022
 ---
+
 # Behavior changes when comparing strings on .NET 5+
 
-.NET 5.0 introduces a runtime behavioral change where globalization APIs [now use ICU by default](../../core/compatibility/globalization/5.0/icu-globalization-api.md) across all supported platforms. This is a departure from earlier versions of .NET Core and from .NET Framework, which utilize the operating system's national language support (NLS) functionality when running on Windows. For more information on these changes, including compatibility switches that can revert the behavior change, see [.NET globalization and ICU](../globalization-localization/globalization-icu.md).
+.NET 5 introduces a runtime behavioral change where globalization APIs [use ICU by default](../../core/compatibility/globalization/5.0/icu-globalization-api.md) across all supported platforms. This is a departure from earlier versions of .NET Core and from .NET Framework, which utilize the operating system's national language support (NLS) functionality when running on Windows. For more information on these changes, including compatibility switches that can revert the behavior change, see [.NET globalization and ICU](../../core/extensions/globalization-icu.md).
 
 ## Reason for change
 
@@ -19,22 +20,33 @@ If you use functions like `string.IndexOf(string)` without calling the overload 
 This can manifest itself even in places where you aren't always expecting globalization facilities to be active. For example, the following code can produce a different answer depending on the current runtime.
 
 ```cs
+const string greeting = "Hel\0lo";
+Console.WriteLine($"{greeting.IndexOf("\0")}");
+
+// The snippet prints:
+//
+// '3' when running on .NET Core 2.x - 3.x (Windows)
+// '0' when running on .NET 5 or later (Windows)
+// '0' when running on .NET Core 2.x - 3.x or .NET 5 (non-Windows)
+// '3' when running on .NET Core 2.x or .NET 5+ (in invariant mode)
+
 string s = "Hello\r\nworld!";
 int idx = s.IndexOf("\n");
 Console.WriteLine(idx);
 
 // The snippet prints:
 //
-// '6' when running on .NET Framework (Windows)
-// '6' when running on .NET Core 2.x - 3.x (Windows)
-// '-1' when running on .NET 5 (Windows)
-// '-1' when running on .NET Core 2.x - 3.x or .NET 5 (non-Windows)
-// '6' when running on .NET Core 2.x or .NET 5 (in invariant mode)
+// '6' when running on .NET Core 3.1
+// '-1' when running on .NET 5 or .NET Core 3.1 (non-Windows OS)
+// '-1' when running on .NET 5 (Windows 10 May 2019 Update or later)
+// '6' when running on .NET 6+ (all Windows and non-Windows OSs)
 ```
+
+For more information, see [Globalization APIs use ICU libraries on Windows](../../core/compatibility/globalization/5.0/icu-globalization-api.md).
 
 ## Guard against unexpected behavior
 
-This section provides two options for dealing with unexpected behavior changes in .NET 5.0.
+This section provides two options for dealing with unexpected behavior changes in .NET 5.
 
 ### Enable code analyzers
 
@@ -48,7 +60,7 @@ These specific rules aren't enabled by default. To enable them and show any viol
 
 ```xml
 <PropertyGroup>
-  <AnalysisMode>AllEnabledByDefault</AnalysisMode>
+  <AnalysisMode>All</AnalysisMode>
   <WarningsAsErrors>$(WarningsAsErrors);CA1307;CA1309;CA1310</WarningsAsErrors>
 </PropertyGroup>
 ```
@@ -99,14 +111,14 @@ list.Sort(StringComparer.Ordinal);
 
 ### Revert back to NLS behaviors
 
-To revert .NET 5 applications back to older NLS behaviors when running on Windows, follow the steps in [.NET Globalization and ICU](../globalization-localization/globalization-icu.md). This application-wide compatibility switch must be set at the application level. Individual libraries cannot opt-in or opt-out of this behavior.
+To revert .NET 5+ applications back to older NLS behaviors when running on Windows, follow the steps in [.NET Globalization and ICU](../../core/extensions/globalization-icu.md). This application-wide compatibility switch must be set at the application level. Individual libraries cannot opt-in or opt-out of this behavior.
 
 > [!TIP]
 > We strongly recommend you enable the [CA1307](../../fundamentals/code-analysis/quality-rules/ca1307.md), [CA1309](../../fundamentals/code-analysis/quality-rules/ca1309.md), and [CA1310](../../fundamentals/code-analysis/quality-rules/ca1310.md) code analysis rules to help improve code hygiene and discover any existing latent bugs. For more information, see [Enable code analyzers](#enable-code-analyzers).
 
 ## Affected APIs
 
-Most .NET applications won't encounter any unexpected behaviors due to the changes in .NET 5.0. However, due to the number of affected APIs and how foundational these APIs are to the wider .NET ecosystem, you should be aware of the potential for .NET 5.0 to introduce unwanted behaviors or to expose latent bugs that already exist in your application.
+Most .NET applications won't encounter any unexpected behaviors due to the changes in .NET 5. However, due to the number of affected APIs and how foundational these APIs are to the wider .NET ecosystem, you should be aware of the potential for .NET 5 to introduce unwanted behaviors or to expose latent bugs that already exist in your application.
 
 The affected APIs include:
 
@@ -131,7 +143,7 @@ The affected APIs include:
 
 All of the above APIs use *linguistic* string searching and comparison using the thread's [current culture](xref:System.Threading.Thread.CurrentCulture), by default. The differences between *linguistic* and *ordinal* search and comparison are called out in the [Ordinal vs. linguistic search and comparison](#ordinal-vs-linguistic-search-and-comparison).
 
-Because ICU implements linguistic string comparisons differently from NLS, Windows-based applications that upgrade to .NET 5.0 from an earlier version of .NET Core or .NET Framework and that call one of the affected APIs may notice that the APIs begin exhibiting different behaviors.
+Because ICU implements linguistic string comparisons differently from NLS, Windows-based applications that upgrade to .NET 5 from an earlier version of .NET Core or .NET Framework and that call one of the affected APIs may notice that the APIs begin exhibiting different behaviors.
 
 ### Exceptions
 
@@ -142,7 +154,7 @@ For a more detailed analysis of the default behavior of each <xref:System.String
 
 ## Ordinal vs. linguistic search and comparison
 
-*Ordinal* (also known as *non-linguistic*) search and comparison decomposes a string into its individual `char` elements and performs a char-by-char search or comparison. For example, the strings `"dog"` and `"dog"` compare as *equal* under an `Ordinal` comparer, since the two strings consist of the exact same sequence of chars. However, `"dog"` and `"Dog"` compare as *not equal* under an `Ordinal` comparer, because they don't consist of the exact same sequence of chars. That is, uppercase `'D'`'s code point `U+0044` occurs before lowercase `'d'`'s code point `U+0064`, resulting in `"dog"` sorting before `"Dog"`.
+*Ordinal* (also known as *non-linguistic*) search and comparison decomposes a string into its individual `char` elements and performs a char-by-char search or comparison. For example, the strings `"dog"` and `"dog"` compare as *equal* under an `Ordinal` comparer, since the two strings consist of the exact same sequence of chars. However, `"dog"` and `"Dog"` compare as *not equal* under an `Ordinal` comparer, because they don't consist of the exact same sequence of chars. That is, uppercase `'D'`'s code point `U+0044` occurs before lowercase `'d'`'s code point `U+0064`, resulting in `"Dog"` sorting before `"dog"`.
 
 An `OrdinalIgnoreCase` comparer still operates on a char-by-char basis, but it eliminates case differences while performing the operation. Under an `OrdinalIgnoreCase` comparer, the char pairs `'d'` and `'D'` compare as *equal*, as do the char pairs `'á'` and `'Á'`. But the unaccented char `'a'` compares as *not equal* to the accented char `'á'`.
 
@@ -152,15 +164,14 @@ Some examples of this are provided in the following table:
 |---|---|---|---|
 | `"dog"` | `"dog"` | equal | equal |
 | `"dog"` | `"Dog"` | not equal | equal |
-| `"resume"` | `"Resume"` | not equal | equal |
 | `"resume"` | `"résumé"` | not equal | not equal |
 
 Unicode also allows strings to have several different in-memory representations. For example, an e-acute (é) can be represented in two possible ways:
 
 * A single literal `'é'` character (also written as `'\u00E9'`).
-* A literal unaccented `'e'` character, followed by a combining accent modifier character `'\u0301'`.
+* A literal unaccented `'e'` character followed by a combining accent modifier character `'\u0301'`.
 
-This means that the following _four_ strings all result in `"résumé"` when displayed, even though their constituent pieces are different. The strings use a combination of literal `'é'` characters or literal unaccented `'e'` characters plus the combining accent modifier `'\u0301'`.
+This means that the following _four_ strings all display as `"résumé"`, even though their constituent pieces are different. The strings use a combination of literal `'é'` characters or literal unaccented `'e'` characters plus the combining accent modifier `'\u0301'`.
 
 * `"r\u00E9sum\u00E9"`
 * `"r\u00E9sume\u0301"`
@@ -195,7 +206,7 @@ Consider again the string `"résumé"` and its four different representations. T
 | `"r\u00E9sum\u00E9"` | `"r" + "\u00E9" + "s" + "u" + "m" + "\u00E9"` |
 | `"r\u00E9sume\u0301"` | `"r" + "\u00E9" + "s" + "u" + "m" + "e\u0301"` |
 | `"re\u0301sum\u00E9"` | `"r" + "e\u0301" + "s" + "u" + "m" + "\u00E9"` |
-| `"re\u0301sume\u0301"` | `"r" + "e\u00E9" + "s" + "u" + "m" + "e\u0301"` |
+| `"re\u0301sume\u0301"` | `"r" + "e\u0301" + "s" + "u" + "m" + "e\u0301"` |
 
 A collation element corresponds loosely to what readers would think of as a single character or cluster of characters. It's conceptually similar to a [grapheme cluster](character-encoding-introduction.md#grapheme-clusters) but encompasses a somewhat larger umbrella.
 
@@ -203,8 +214,8 @@ Under a linguistic comparer, exact matches aren't necessary. Collation elements 
 
 ```cs
 Console.WriteLine("r\u00E9sum\u00E9".IndexOf("e")); // prints '-1' (not found)
-Console.WriteLine("r\u00E9sum\u00E9".IndexOf("e\u00E9")); // prints '1'
-Console.WriteLine("\u00E9".IndexOf("e\u00E9")); // prints '0'
+Console.WriteLine("r\u00E9sum\u00E9".IndexOf("\u00E9")); // prints '1'
+Console.WriteLine("\u00E9".IndexOf("e\u0301")); // prints '0'
 ```
 
 As a consequence of this, two strings of different lengths may compare as equal if a linguistic comparison is used. Callers should take care not to special-case logic that deals with string length in such scenarios.
@@ -218,7 +229,7 @@ For example, [in the Hungarian alphabet](https://en.wikipedia.org/wiki/Hungarian
 | `"endz"` | `"e" + "n" + "d" + "z"` | (using a standard linguistic comparer) |
 | `"endz"` | `"e" + "n" + "dz"` | (using a Hungarian culture-aware comparer) |
 
-When using a Hungarian culture-aware comparer, this means that the string `"endz"` *does not* end with the substring `"z"`, as <\dz\> and <\z\> are considered collation elements with different semantic meaning.
+When using a Hungarian culture-aware comparer, this means that the string `"endz"` *does not* end with the substring `"z"`, as \<dz\> and \<z\> are considered collation elements with different semantic meaning.
 
 ```cs
 // Set thread culture to Hungarian
@@ -235,7 +246,7 @@ Console.WriteLine("endz".EndsWith("z")); // Prints 'True'
 > - Behavior: Linguistic and culture-aware comparers can undergo behavioral adjustments from time to time. Both ICU and the older Windows NLS facility are updated to account for how world languages change. For more information, see the blog post [Locale (culture) data churn](/archive/blogs/shawnste/locale-culture-data-churn). The *Ordinal* comparer's behavior will never change since it performs exact bitwise searching and comparison. However, the *OrdinalIgnoreCase* comparer's behavior may change as Unicode grows to encompass more character sets and corrects omissions in existing casing data.
 > - Usage: The comparers `StringComparison.InvariantCulture` and `StringComparison.InvariantCultureIgnoreCase` are linguistic comparers that are not culture-aware. That is, these comparers understand concepts such as the accented character é having multiple possible underlying representations, and that all such representations should be treated equal. But non-culture-aware linguistic comparers won't contain special handling for \<dz\> as distinct from \<d\> or \<z\>, as shown above. They also won't special-case characters like the German Eszett (ß).
 
-.NET also offers the *invariant globalization mode*. This opt-in mode disables code paths that deal with linguistic search and comparison routines. In this mode, all operations use *Ordinal* or *OrdinalIgnoreCase* behaviors, regardless of what `CultureInfo` or `StringComparison` argument the caller provides. For more information, see [Run-time configuration options for globalization](../../core/run-time-config/globalization.md) and [.NET Core Globalization Invariant Mode](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md).
+.NET also offers the *invariant globalization mode*. This opt-in mode disables code paths that deal with linguistic search and comparison routines. In this mode, all operations use *Ordinal* or *OrdinalIgnoreCase* behaviors, regardless of what `CultureInfo` or `StringComparison` argument the caller provides. For more information, see [Runtime configuration options for globalization](../../core/runtime-config/globalization.md) and [.NET Core Globalization Invariant Mode](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md).
 
 For more information, see [Best practices for comparing strings in .NET](best-practices-strings.md).
 
@@ -325,6 +336,6 @@ if (span.StartsWith("Hello", StringComparison.Ordinal)) { /* do something */ } /
 - [Globalization breaking changes](../../core/compatibility/globalization.md)
 - [Best practices for comparing strings in .NET](best-practices-strings.md)
 - [How to compare strings in C#](../../csharp/how-to/compare-strings.md)
-- [.NET globalization and ICU](../globalization-localization/globalization-icu.md)
+- [.NET globalization and ICU](../../core/extensions/globalization-icu.md)
 - [Ordinal vs. culture-sensitive string operations](/dotnet/api/system.string#ordinal-vs-culture-sensitive-operations)
 - [Overview of .NET source code analysis](../../fundamentals/code-analysis/overview.md)

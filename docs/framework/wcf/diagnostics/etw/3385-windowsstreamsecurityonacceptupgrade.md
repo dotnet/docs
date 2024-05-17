@@ -6,10 +6,10 @@ ms.assetid: 3d17dc6a-befb-49f0-a150-c4875405ce7a
 ---
 # 3385 - WindowsStreamSecurityOnAcceptUpgrade
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3385|  
 |Keywords|Security|  
 |Level|Verbose|  

@@ -1,5 +1,5 @@
 ---
-title: "Delegates - C# Programming Guide"
+title: "Delegates"
 description: A delegate in C# is a type that refers to methods with a parameter list and return type. Delegates are used to pass methods as arguments to other methods.
 ms.date: 02/02/2021
 helpviewer_keywords: 
@@ -22,7 +22,7 @@ Any method from any accessible class or struct that matches the delegate type ca
 
 This ability to refer to a method as a parameter makes delegates ideal for defining callback methods. You can write a method that compares two objects in your application. That method can be used in a delegate for a sort algorithm. Because the comparison code is separate from the library, the sort method can be more general.
 
-[Function pointers](~/_csharplang/proposals/csharp-9.0/function-pointers.md) were added to C# 9 for similar scenarios, where you need more control over the calling convention. The code associated with a delegate is invoked using a virtual method added to a delegate type. Using function pointers, you can specify different conventions.
+[Function pointers](~/_csharplang/proposals/csharp-9.0/function-pointers.md) support similar scenarios, where you need more control over the calling convention. The code associated with a delegate is invoked using a virtual method added to a delegate type. Using function pointers, you can specify different conventions.
 
 ## Delegates Overview
 
@@ -46,15 +46,9 @@ Delegates have the following properties:
 
 ## C# Language Specification
 
-For more information, see [Delegates](~/_csharplang/spec/delegates.md) in the [C# Language Specification](/dotnet/csharp/language-reference/language-specification/introduction). The language specification is the definitive source for C# syntax and usage.
-
-## Featured Book Chapters
-
-- [Delegates, Events, and Lambda Expressions](/previous-versions/visualstudio/visual-studio-2008/ff518994(v=orm.10)) in [C# 3.0 Cookbook, Third Edition: More than 250 solutions for C# 3.0 programmers](/previous-versions/visualstudio/visual-studio-2008/ff518995(v=orm.10))
-- [Delegates and Events](/previous-versions/visualstudio/visual-studio-2008/ff652490(v=orm.10)) in [Learning C# 3.0: Master the fundamentals of C# 3.0](/previous-versions/visualstudio/visual-studio-2008/ff652493(v=orm.10))
+For more information, see [Delegates](~/_csharpstandard/standard/delegates.md) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.
 
 ## See also
 
 - <xref:System.Delegate>
-- [C# Programming Guide](../index.md)
 - [Events](../events/index.md)

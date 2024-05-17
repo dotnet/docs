@@ -6,10 +6,10 @@ ms.assetid: 5a46dc5f-d517-4135-8905-25a42f01206b
 ---
 # 4206 - UnlockInstanceException
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4206|  
 |Keywords|WFInstanceStore|  
 |Level|Error|  

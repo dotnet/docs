@@ -58,13 +58,13 @@ The following procedure demonstrates how to implement a self-hosted service in a
      [!code-vb[CFX_SelfHost4#4](../../../samples/snippets/visualbasic/VS_Snippets_CFX/cfx_selfhost4/vb/module1.vb#4)]
 
     > [!NOTE]
-    > This example uses default endpoints, and no configuration file is required for this service. If no endpoints are configured, then the runtime creates one endpoint for each base address for each service contract implemented by the service. For more information about default endpoints, see [Simplified Configuration](simplified-configuration.md) and [Simplified Configuration for WCF Services](/previous-versions/dotnet/framework/wcf/samples/simplified-configuration-for-wcf-services).
+    > This example uses default endpoints, and no configuration file is required for this service. If no endpoints are configured, then the runtime creates one endpoint for each base address for each service contract implemented by the service. For more information about default endpoints, see [Simplified Configuration](simplified-configuration.md) and [Simplified Configuration for WCF Services](./samples/simplified-configuration-for-wcf-services.md).
 
-7. Press **Ctrl**+**Shift**+**B** to build the solution.
+7. Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> to build the solution.
 
 ## Test the service
 
-1. Press **Ctrl**+**F5** to run the service.
+1. Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> to run the service.
 
 2. Open **WCF Test Client**.
 
@@ -95,7 +95,7 @@ The following example creates a <xref:System.ServiceModel.ServiceHost> object to
 - <xref:System.Configuration.ConfigurationManager.AppSettings%2A>
 - <xref:System.Configuration.ConfigurationManager>
 - [How to: Host a WCF Service in IIS](./feature-details/how-to-host-a-wcf-service-in-iis.md)
-- [Self-Host](/previous-versions/dotnet/framework/wcf/samples/self-host)
+- [Self-Host](./samples/self-host.md)
 - [Hosting Services](hosting-services.md)
 - [How to: Define a Service Contract](how-to-define-a-wcf-service-contract.md)
 - [How to: Implement a Service Contract](how-to-implement-a-wcf-contract.md)

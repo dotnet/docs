@@ -6,10 +6,10 @@ ms.assetid: a40e6b7e-c2a6-4186-b1d6-c9560f24a959
 ---
 # 4812 - DiscoveryMessageWithNullReplyTo
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4812|  
 |Keywords|Discovery|  
 |Level|Warning|  

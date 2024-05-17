@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: Parameters renamed in Stream-derived types"
-description: Learn about the .NET 6.0 breaking change in core .NET libraries where some parameter names in methods of Stream-derived types were changed.
+description: Learn about the .NET 6 breaking change in core .NET libraries where some parameter names in methods of Stream-derived types were changed.
 ms.date: 03/04/2021
 ---
 # Some parameters in Stream-derived types are renamed
@@ -15,7 +15,7 @@ In .NET 6, all types that derive from <xref:System.IO.Stream?displayProperty=ful
 
 ## Version introduced
 
-6.0 Preview 1
+.NET 6
 
 ## Reason for change
 
@@ -23,7 +23,7 @@ There are several reasons for the change:
 
 - If an invalid argument was passed and an exception was thrown, that exception might have contained the base parameter's name or the derived parameter's name, depending on the implementation. Since the caller may have been using a reference typed as the base or as the derived type, it's impossible for the argument name in the exception to always be correct.
 - Having different parameter names makes it harder to consistently validate behavior across all <xref:System.IO.Stream> implementations.
-- .NET 6 adds a public method on <xref:System.IO.Stream> for validating arguments, and that methods needs to have a consistent parameter name to use.
+- .NET 6 adds a public method on <xref:System.IO.Stream> for validating arguments, and that method needs to have a consistent parameter name to use.
 
 ## Recommended action
 
@@ -60,36 +60,6 @@ In both cases, the recommended action is to consistently use the base parameter 
 - <xref:System.Net.Sockets.NetworkStream.Write(System.Byte[],System.Int32,System.Int32)?displayProperty=fullName>
 - <xref:System.Net.Sockets.NetworkStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)?displayProperty=fullName>
 
-<!--
+## See also
 
-### Category
-
-Core .NET libraries
-
-### Affected APIs
-
-- `M:System.IO.Compression.DeflateStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)`
-- `M:System.IO.Compression.DeflateStream.Read(System.Byte[],System.Int32,System.Int32)`
-- `M:System.IO.Compression.DeflateStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)`
-- `M:System.IO.Compression.DeflateStream.Write(System.Byte[],System.Int32,System.Int32)`
-- `M:System.IO.Compression.DeflateStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)`
-- `M:System.IO.Compression.GZipStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)`
-- `M:System.IO.Compression.GZipStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)`
-- `M:System.IO.Compression.GZipStream.Read(System.Byte[],System.Int32,System.Int32)`
-- `M:System.IO.Compression.GZipStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)`
-- `M:System.IO.Compression.GZipStream.Write(System.Byte[],System.Int32,System.Int32)`
-- `M:System.IO.Compression.GZipStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)`
-- `M:System.IO.BufferedStream.Read(System.Byte[],System.Int32,System.Int32)`
-- `M:System.IO.BufferedStream.Write(System.Byte[],System.Int32,System.Int32)`
-- `M:System.IO.FileStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)`
-- `M:System.IO.FileStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)`
-- `M:System.IO.FileStream.Read(System.Byte[],System.Int32,System.Int32)`
-- `M:System.IO.FileStream.Write(System.Byte[],System.Int32,System.Int32)`
-- `M:System.Net.Sockets.NetworkStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)`
-- `M:System.Net.Sockets.NetworkStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)`
-- `M:System.Net.Sockets.NetworkStream.Read(System.Byte[],System.Int32,System.Int32)`
-- `M:System.Net.Sockets.NetworkStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)`
-- `M:System.Net.Sockets.NetworkStream.Write(System.Byte[],System.Int32,System.Int32)`
-- `M:System.Net.Sockets.NetworkStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)`
-
--->
+- [Parameter names changed in .NET 6](parameter-name-changes.md)

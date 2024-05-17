@@ -6,10 +6,10 @@ ms.assetid: 16ed96c1-9f8d-4f08-b57c-5cba3b88b475
 ---
 # 4013 - MessageQueueUnregisterSucceeded
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4013|  
 |Keywords|ActivationServices|  
 |Level|Verbose|  

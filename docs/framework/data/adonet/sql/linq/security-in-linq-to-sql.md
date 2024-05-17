@@ -35,4 +35,4 @@ Security risks are always present when you connect to a database. Although LINQ 
 ## See also
 
 - [Background Information](background-information.md)
-- [Frequently Asked Questions](frequently-asked-questions.md)
+- [Frequently Asked Questions](frequently-asked-questions.yml)

@@ -2,10 +2,12 @@
 title: Relational vs. NoSQL data
 description: Learn about relational and NoSQL data in cloud-native applications
 author: robvet
-ms.date: 01/19/2021
+ms.date: 04/06/2022
 ---
 
 # Relational vs. NoSQL data
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 Relational and NoSQL are two types of database systems commonly implemented in cloud-native apps. They're built differently, store data differently, and accessed differently. In this section, we'll look at both. Later in this chapter, we'll look at an emerging database technology called *NewSQL*.
 
@@ -58,7 +60,7 @@ NoSQL databases typically support high availability and partition tolerance. The
 
 If data replicas were to lose connectivity in a "highly available" NoSQL database cluster, you could still complete a write operation to the database. The database cluster would allow the write operation and update each data replica as it becomes available. NoSQL databases that support multiple writable replicas can further strengthen high availability by avoiding the need for failover when optimizing recovery time objective.
 
-Moden NoSQL databases typically implement partitioning capabilities as a feature of their system design. Partition management is often built-in to the database, and routing is achieved through placement hints - often called partition keys. A flexible data models enables the NoSQL databases to lower the burden of schema management and improve availablity when deploying application updates that require data model changes.
+Modern NoSQL databases typically implement partitioning capabilities as a feature of their system design. Partition management is often built-in to the database, and routing is achieved through placement hints - often called partition keys. A flexible data models enables the NoSQL databases to lower the burden of schema management and improve availability when deploying application updates that require data model changes.
 
 High availability and massive scalability are often more critical to the business than relational table joins and referential integrity. Developers can implement techniques and patterns such as Sagas, CQRS, and asynchronous messaging to embrace eventual consistency.
 
@@ -70,11 +72,11 @@ Based upon specific data requirements, a cloud-native-based microservice can imp
 
 |  Consider a NoSQL datastore when: | Consider a relational database when: |
 | :-------- | :-------- |
-| You have high volume workloads that require predictable latency at large scale (e.g. latency measured in milliseconds while performing millions of transactions per second) | Your workload volume generally fits within thousands of transactions per second |
+| You have high volume workloads that require predictable latency at large scale (for example, latency measured in milliseconds while performing millions of transactions per second) | Your workload volume generally fits within thousands of transactions per second |
 | Your data is dynamic and frequently changes | Your data is highly structured and requires referential integrity |
-| Relationships can be de-normalized data models | Relationships are expressed through table joins on normalized data models |  
+| Relationships can be de-normalized data models | Relationships are expressed through table joins on normalized data models |
 | Data retrieval is simple and expressed without table joins | You work with complex queries and reports|
-| Data is typically replicated across geographies and requires finer control over consistency, availablity, and performance | Data is typically centralized, or can be replicated regions asynchronously |
+| Data is typically replicated across geographies and requires finer control over consistency, availability, and performance | Data is typically centralized, or can be replicated regions asynchronously |
 | Your application will be deployed to commodity hardware, such as with public clouds | Your application will be deployed to large, high-end hardware |
 
 In the next sections, we'll explore the options available in the Azure cloud for storing and managing your cloud-native data.
@@ -83,7 +85,7 @@ In the next sections, we'll explore the options available in the Azure cloud for
 
 To start, you could provision an Azure virtual machine and install your database of choice for each service. While you'd have full control over the environment, you'd forgo many built-in features of the cloud platform. You'd also be responsible for managing the virtual machine and database for each service. This approach could quickly become time-consuming and expensive.
 
-Instead, cloud-native applications favor data services exposed as a [Database as a Service (DBaaS)](https://www.stratoscale.com/blog/dbaas/what-is-database-as-a-service/). Fully managed by a cloud vendor, these services provide built-in security, scalability, and monitoring. Instead of owning the service, you simply consume it as a [backing service](./definition.md#backing-services). The provider operates the resource at scale and bears the responsibility for performance and maintenance.
+Instead, cloud-native applications favor data services exposed as a Database as a Service (DBaaS). Fully managed by a cloud vendor, these services provide built-in security, scalability, and monitoring. Instead of owning the service, you simply consume it as a [backing service](./definition.md#backing-services). The provider operates the resource at scale and bears the responsibility for performance and maintenance.
 
 They can be configured across cloud availability zones and regions to achieve high availability. They all support just-in-time capacity and a pay-as-you-go model. Azure features different kinds of managed data service options, each with specific benefits.
 
@@ -110,7 +112,7 @@ Development teams with expertise in Microsoft SQL Server should consider
 For use with a cloud-native microservice, Azure SQL Database is available with three deployment options:
 
 - A Single Database represents a fully managed SQL Database running on an [Azure SQL Database server](/azure/sql-database/sql-database-servers) in the Azure cloud. The database is considered [*contained*](/sql/relational-databases/databases/contained-databases) as it has no configuration dependencies on the underlying database server.
-  
+
 - A [Managed Instance](/azure/sql-database/sql-database-managed-instance) is a fully managed instance of the Microsoft SQL Server Database Engine that provides near-100% compatibility with an on-premises SQL Server. This option supports larger databases, up to 35 TB and is placed in an [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview) for better isolation.
 
 - [Azure SQL Database serverless](/azure/sql-database/sql-database-serverless) is a compute tier for a single database that automatically scales based on workload demand. It bills only for the amount of compute used per second. The service is well suited for workloads with intermittent, unpredictable usage patterns, interspersed with periods of inactivity. The serverless compute tier also automatically pauses databases during inactive periods so that only storage charges are billed. It automatically resumes when activity returns.
@@ -123,7 +125,7 @@ Open-source relational databases have become a popular choice for cloud-native a
 
 Developers can easily self-host any open-source database on an Azure VM. While providing full control, this approach puts you on the hook for the management, monitoring, and maintenance of the database and VM.
 
-However, Microsoft continues its commitment to keeping Azure an “open platform” by offering several popular open-source databases as *fully managed* DBaaS services.
+However, Microsoft continues its commitment to keeping Azure an "open platform" by offering several popular open-source databases as *fully managed* DBaaS services.
 
 ### Azure Database for MySQL
 
@@ -141,9 +143,9 @@ MariaDB has a strong community and is used by many large enterprises. While Orac
 
 ### Azure Database for PostgreSQL
 
-[PostgreSQL](https://www.postgresql.org/) is an open-source relational database with over 30 years of active development. PostgresSQL has a strong reputation for reliability and data integrity. It’s feature rich, SQL compliant, and considered more performant than MySQL - especially for workloads with complex queries and heavy writes. Many large enterprises including Apple, Red Hat, and Fujitsu have built products using PostgreSQL.
+[PostgreSQL](https://www.postgresql.org/) is an open-source relational database with over 30 years of active development. PostgreSQL has a strong reputation for reliability and data integrity. It's feature rich, SQL compliant, and considered more performant than MySQL - especially for workloads with complex queries and heavy writes. Many large enterprises including Apple, Red Hat, and Fujitsu have built products using PostgreSQL.
 
-[Azure Database for PostgreSQL](https://azure.microsoft.com/services/postgresql/) is a fully managed relational database service, based on the open-source Postgres database engine. The service supports many development platforms, including C++, Java, Python, Node, C\#, and PHP. You can migrate PostgreSQL databases to it using the [command-line interface](https://datamigration.microsoft.com/scenario/postgresql-to-azurepostgresql?step=1) tool or Azure Data Migration Service.
+[Azure Database for PostgreSQL](https://azure.microsoft.com/services/postgresql/) is a fully managed relational database service, based on the open-source Postgres database engine. The service supports many development platforms, including C++, Java, Python, Node, C\#, and PHP. You can migrate PostgreSQL databases to it using the command-line interface tool or Azure Data Migration Service.
 
 Azure Database for PostgreSQL is available with two deployment options:
 
@@ -161,7 +163,7 @@ If your services require fast response from anywhere in the world, high availabi
 
 **Figure 5-12**: Overview of Azure Cosmos DB
 
-The previous figure presents many of the built-in cloud-native capabilities available in Cosmos DB. In this section, we’ll take a closer look at them.
+The previous figure presents many of the built-in cloud-native capabilities available in Cosmos DB. In this section, we'll take a closer look at them.
 
 ### Global support
 
@@ -171,7 +173,7 @@ You can distribute Cosmos databases across regions or around the world, placing 
 
 Cosmos DB supports [active/active](https://kemptechnologies.com/white-papers/unfog-confusion-active-passive-activeactive-load-balancing/) clustering at the global level, enabling you to configure any of your database regions to support *both writes and reads*.
 
-The [Multi-Master](/azure/cosmos-db/multi-master-benefits) protocol is an important feature in Cosmos DB that enables the following functionality:
+The [Multi-region write](/azure/cosmos-db/conflict-resolution-policies) protocol is an important feature in Cosmos DB that enables the following functionality:
 
 - Unlimited elastic write and read scalability.
 
@@ -187,12 +189,12 @@ When replatforming monolithic applications to a cloud-native architecture, devel
 
 | Provider | Description  |
 | :-------- | :-------- |
-| SQL API | Proprietary API that supports JSON documents and SQL-based queries |
+| NoSQL API | API for NoSQL stores data in document format |
 | Mongo DB API | Supports Mongo DB APIs and JSON documents|
 | Gremlin API | Supports Gremlin API with graph-based nodes and edge data representations |
-| Cassandra API | Supports Casandra API for wide-column data representations |  
-| Table API  | Supports Azure Table Storage with premium enhancements |  
-| etcd API | Enables Cosmos DB as a backing store for Azure Kubernetes Service clusters |
+| Cassandra API | Supports Casandra API for wide-column data representations |
+| Table API  | Supports Azure Table Storage with premium enhancements |
+| PostgreSQL API | Managed service for running PostgreSQL at any scale |
 
 Development teams can migrate existing Mongo, Gremlin, or Cassandra databases into Cosmos DB with minimal changes to data or code. For new apps, development teams can choose among open-source options or the built-in SQL API model.
 
@@ -200,13 +202,13 @@ Development teams can migrate existing Mongo, Gremlin, or Cassandra databases in
 
 In the previous table, note the [Table API](/azure/cosmos-db/table-introduction) option. This API is an evolution of Azure Table Storage. Both share the same underlying table model, but the Cosmos DB Table API adds premium enhancements not available in the Azure Storage API. The following table contrasts the features.
 
-|  | Azure Table Storage  | Azure Cosmos DB  |
-| :-------- | :-------- |:-------- |
-| Latency | Fast | Single-digit millisecond latency for reads and writes anywhere in the world |
-| Throughput | Limit of 20,000 operations per table | Unlimited operations per table |
-| Global Distribution | Single region with optional single secondary read region | Turnkey distributions to all regions with automatic failover |
-| Indexing | Available for partition and row key properties only | Automatic indexing of all properties |
-| Pricing | Optimized for cold workloads (low throughput : storage ratio) | Optimizied for hot workloads (high throughput : storage ratio) |
+| Feature             | Azure Table Storage                                           | Azure Cosmos DB                                                             |
+|:--------------------|:--------------------------------------------------------------|:----------------------------------------------------------------------------|
+| Latency             | Fast                                                          | Single-digit millisecond latency for reads and writes anywhere in the world |
+| Throughput          | Limit of 20,000 operations per table                          | Unlimited operations per table                                              |
+| Global Distribution | Single region with optional single secondary read region      | Turnkey distributions to all regions with automatic failover                |
+| Indexing            | Available for partition and row key properties only           | Automatic indexing of all properties                                        |
+| Pricing             | Optimized for cold workloads (low throughput : storage ratio) | Optimized for hot workloads (high throughput : storage ratio)              |
 
 Microservices that consume Azure Table storage can easily migrate to the Cosmos DB Table API. No code changes are required.
 
@@ -229,8 +231,8 @@ Azure Cosmos DB offers five well-defined [consistency models](/azure/cosmos-db/c
 | Eventual | No ordering guarantee for reads. Replicas will eventually converge. |
 | Constant Prefix | Reads are still eventual, but data is returned in the ordering in which it is written. |
 | Session | Guarantees you can read any data written during the current session. It is the default consistency level. |
-| Bounded Staleness | Reads trail writes by interval that you specify. |  
-| Strong  | Reads are guaranteed to return most recent committed version of an item. A client never sees an uncommitted or partial read. |  
+| Bounded Staleness | Reads trail writes by interval that you specify. |
+| Strong  | Reads are guaranteed to return most recent committed version of an item. A client never sees an uncommitted or partial read. |
 
 In the article [Getting Behind the 9-Ball: Cosmos DB Consistency Levels Explained](https://blog.jeremylikness.com/blog/2018-03-23_getting-behind-the-9ball-cosmosdb-consistency-levels/), Microsoft Program Manager Jeremy Likness provides an excellent explanation of the five models.
 
@@ -248,7 +250,7 @@ To partition the container, items are divided into distinct subsets called logi
 
 **Figure 5-14**: Cosmos DB partitioning mechanics
 
-Note in the  previous figure how each item includes a partition key of either ‘city’ or ‘airport’. The key determines the item’s logical partition. Items with a city code are assigned to the container on the left, and items with an airport code, to the container on the right. Combining the partition key value with the ID value creates an item's index, which uniquely identifies the item.
+Note in the  previous figure how each item includes a partition key of either 'city' or 'airport'. The key determines the item's logical partition. Items with a city code are assigned to the container on the left, and items with an airport code, to the container on the right. Combining the partition key value with the ID value creates an item's index, which uniquely identifies the item.
 
 Internally, Cosmos DB automatically manages the placement of [logical partitions](/azure/cosmos-db/partition-data) on physical partitions to satisfy the scalability and performance needs of the container. As application throughput and storage requirements  increase, Azure Cosmos DB redistributes logical partitions across a greater number of servers. Redistribution operations are managed by Cosmos DB and invoked without interruption or downtime.
 
@@ -260,16 +262,16 @@ The Cloud Native Computing Foundation (CNCF) features several NewSQL database pr
 
 | Project | Characteristics |
 | :-------- | :-------- |
-| Cockroach DB |An ACID-compliant, relational database that scales globally. Add a new node to a cluster and CockroachDB takes care of balancing the data across instances and geographies. It creates, manages, and distributes replicas to ensure reliability. It’s open source and freely available.  |
+| Cockroach DB |An ACID-compliant, relational database that scales globally. Add a new node to a cluster and CockroachDB takes care of balancing the data across instances and geographies. It creates, manages, and distributes replicas to ensure reliability. It's open source and freely available.  |
 | TiDB | An open-source database that supports Hybrid Transactional and Analytical Processing (HTAP) workloads. It is MySQL-compatible and features horizontal scalability, strong consistency, and high availability.  TiDB acts like a MySQL server. You can continue to use existing MySQL client libraries, without requiring extensive code changes to your application. |
-| YugabyteDB | An open source, high-performance, distributed SQL database. It supports low query latency, resilience against failures, and global data distribution. YugabyteDB is PostgressSQL-compatible and handles scale-out RDBMS and internet-scale OLTP workloads. The product also supports NoSQL and is compatible with Cassandra. |
+| YugabyteDB | An open source, high-performance, distributed SQL database. It supports low query latency, resilience against failures, and global data distribution. YugabyteDB is PostgreSQL-compatible and handles scale-out RDBMS and internet-scale OLTP workloads. The product also supports NoSQL and is compatible with Cassandra. |
 |Vitess | Vitess is a database solution for deploying, scaling, and managing large clusters of MySQL instances. It can run in a public or private cloud architecture. Vitess combines and extends many important MySQL features and features both vertical and horizontal sharding support. Originated by YouTube, Vitess has been serving all YouTube database traffic since 2011. |
 
 The open-source projects in the previous figure are available from the Cloud Native Computing Foundation. Three of the offerings are full database products, which include .NET support. The other, Vitess, is a database clustering system that horizontally scales large clusters of MySQL instances.
 
 A key design goal for NewSQL databases is to work natively in Kubernetes, taking advantage of the platform's resiliency and scalability.
 
-NewSQL databases are designed to thrive in ephemeral cloud environments where underlying virtual machines can be restarted or rescheduled at a moment’s notice. The databases are designed to survive node failures without data loss nor downtime. CockroachDB, for example, is able to survive a machine loss by maintaining three consistent replicas of any data across the nodes in a cluster.
+NewSQL databases are designed to thrive in ephemeral cloud environments where underlying virtual machines can be restarted or rescheduled at a moment's notice. The databases are designed to survive node failures without data loss nor downtime. CockroachDB, for example, is able to survive a machine loss by maintaining three consistent replicas of any data across the nodes in a cluster.
 
 Kubernetes uses a *Services construct* to allow a client to address a group of identical NewSQL databases processes from a single DNS entry. By decoupling the database instances from the address of the service with which it's associated, we can scale without disrupting existing application instances. Sending a request to any service at a given time will always yield the same result.
 
@@ -286,7 +288,7 @@ One of the more time-consuming tasks is migrating data from one data platform to
 - Azure Database for MariaDB
 - Azure Database for PostgreSQL
 - Azure Cosmos DB
-  
+
 The service provides recommendations to guide you through the changes required to execute a migration, both small or large.
 
 >[!div class="step-by-step"]

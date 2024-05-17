@@ -5,7 +5,7 @@ ms.date: 05/16/2016
 ---
 # Exception Handling
 
-This section contains information about exception handling support in the F# language.
+This section contains information about exception handling support in F#.
 
 ## Exception Handling Basics
 

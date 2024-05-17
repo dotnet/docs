@@ -34,7 +34,7 @@ HRESULT GetFieldMarshal (
 ## Parameters  
 
  `tk`  
- [in] The metadata token that represents the field to get interop marshaling information for.  
+ [in] The metadata token that represents the field to get interop marshalling information for.  
   
  `ppvNativeType`  
  [out] A pointer to the metadata signature of the field's native type.  

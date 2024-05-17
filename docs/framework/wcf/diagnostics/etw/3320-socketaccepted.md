@@ -6,10 +6,10 @@ ms.assetid: b98b0066-b78c-4c11-9567-43dbbbd254ce
 ---
 # 3320 - SocketAccepted
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3320|  
 |Keywords|TCP|  
 |Level|Verbose|  

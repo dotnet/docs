@@ -19,7 +19,7 @@ Today, many business developers must use two (or more) programming languages: a 
   
  ![LINQ to ADO.NET overview](./media/dpue-linqtoadonetoverview-bpuedev11.gif "DPUE_LinqToAdoNetOverview_bpuedev11")  
   
- For more information about LINQ, see [Language Integrated Query (LINQ)](../../../csharp/programming-guide/concepts/linq/index.md).
+ For more information about LINQ, see [Language Integrated Query (LINQ)](/dotnet/csharp/linq/).
   
  The following sections provide more information about LINQ to DataSet, [!INCLUDE[vbtecdlinq](../../../../includes/vbtecdlinq-md.md)], and LINQ to Entities.  
   
@@ -44,5 +44,5 @@ Today, many business developers must use two (or more) programming languages: a 
 - [LINQ to DataSet](linq-to-dataset.md)
 - [LINQ to SQL](./sql/linq/index.md)
 - [LINQ to Entities](./ef/language-reference/linq-to-entities.md)
-- [Language Integrated Query (LINQ)](../../../csharp/programming-guide/concepts/linq/index.md)
+- [Language Integrated Query (LINQ)](/dotnet/csharp/linq/)
 - [ADO.NET Overview](ado-net-overview.md)

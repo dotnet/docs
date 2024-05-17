@@ -1,7 +1,7 @@
 ---
 title: Introduction to character encoding in .NET
 description: Learn about character encoding and decoding in .NET.
-ms.date: 03/09/2020
+ms.date: 08/11/2021
 ms.topic: conceptual
 no-loc: [Rune, char, string]
 dev_langs:
@@ -9,6 +9,7 @@ dev_langs:
 helpviewer_keywords:
   - "encoding, understanding"
 ---
+
 # Character encoding in .NET
 
 This article provides an introduction to character encoding systems that are used by .NET. The article explains how the <xref:System.String>, <xref:System.Char>, <xref:System.Text.Rune>, and <xref:System.Globalization.StringInfo> types work with Unicode, UTF-16, and UTF-8.
@@ -99,13 +100,13 @@ The Unicode Standard defines over 1.1 million [code points](https://www.unicode.
 
 Here are some examples of code point assignments, with links to Unicode charts in which they appear:
 
-|Decimal|Hex       |Example|Description|
-|------:|----------|-------|-----------|
-|10     | `U+000A` |N/A| [LINE FEED](https://www.unicode.org/charts/PDF/U0000.pdf) |
-|97     | `U+0061` | a | [LATIN SMALL LETTER A](https://www.unicode.org/charts/PDF/U0000.pdf) |
-|562    | `U+0232` | Ȳ | [LATIN CAPITAL LETTER Y WITH MACRON](https://www.unicode.org/charts/PDF/U0180.pdf) |
-|68,675 | `U+10C43`| 𐱃 | [OLD TURKIC LETTER ORKHON AT](https://www.unicode.org/charts/PDF/U10C00.pdf) |
-|127,801| `U+1F339`| 🌹 | [ROSE emoji](https://www.unicode.org/charts/PDF/U1F300.pdf) |
+| Decimal | Hex       | Example | Description                                                                        |
+|--------:|-----------|---------|------------------------------------------------------------------------------------|
+| 10      | `U+000A`  | N/A     | [LINE FEED](https://www.unicode.org/charts/PDF/U0000.pdf)                          |
+| 97      | `U+0061`  | a       | [LATIN SMALL LETTER A](https://www.unicode.org/charts/PDF/U0000.pdf)               |
+| 562     | `U+0232`  | Ȳ       | [LATIN CAPITAL LETTER Y WITH MACRON](https://www.unicode.org/charts/PDF/U0180.pdf) |
+| 68,675  | `U+10C43` | 𐱃     | [OLD TURKIC LETTER ORKHON AT](https://www.unicode.org/charts/PDF/U10C00.pdf)       |
+| 127,801 | `U+1F339` | 🌹     | [ROSE emoji](https://www.unicode.org/charts/PDF/U1F300.pdf)                        |
 
 Code points are customarily referred to by using the syntax `U+xxxx`, where `xxxx` is the hex-encoded integer value.
 
@@ -264,7 +265,7 @@ In .NET APIs, a grapheme cluster is called a *text element*. The following metho
 
 :::code language="csharp" source="snippets/character-encoding-introduction/csharp/CountTextElements.cs" id="SnippetCallCountMethod":::
 
-If you run this code in .NET Framework or .NET Core 3.1 or earlier, the text element count for the emoji shows `4`. That is due to a bug in the `StringInfo` class that is fixed in .NET 5.
+If you run this code in .NET Framework or .NET Core 3.1 or earlier, the text element count for the emoji shows `4`. That is due to a bug in the `StringInfo` class that was fixed in .NET 5.
 
 ### Example: splitting string instances
 
@@ -280,7 +281,7 @@ A better approach is to break the string by counting grapheme clusters, or text 
 
 :::code language="csharp" source="snippets/character-encoding-introduction/csharp/InsertNewlines.cs" id="SnippetGoodExample":::
 
-As noted earlier, however, in implementations of .NET other than .NET 5, the `StringInfo` class might handle some grapheme clusters incorrectly.
+As noted earlier, prior to .NET 5, the `StringInfo` class had a bug causing some grapheme clusters to be handled incorrectly.
 
 ## UTF-8 and UTF-32
 
@@ -313,6 +314,9 @@ UTF-32: [ 000104CC ]     (1x 32-bit code unit  = 32 bits total)
 ```
 
 As noted earlier, a single UTF-16 code unit from a [surrogate pair](#surrogate-pairs) is meaningless by itself. In the same way, a single UTF-8 code unit is meaningless by itself if it's in a sequence of two, three, or four used to calculate a scalar value.
+
+> [!NOTE]
+> Beginning with C# 11, you can represent UTF-8 string literals using the "u8" suffix on a literal string. For more information on UTF-8 string literals, see the "string literals" section of the article on [built in reference types](../../csharp/language-reference/builtin-types/reference-types.md#utf-8-string-literals) in the C# Guide.
 
 ### Endianness
 
@@ -381,4 +385,4 @@ For information about how to use the built-in `Encoding` classes, see [How to us
 - <xref:System.String>
 - <xref:System.Char>
 - <xref:System.Text.Rune>
-- [Globalization and Localization](../globalization-localization/index.md)
+- [Globalization and localization](../../core/extensions/globalization-and-localization.md)

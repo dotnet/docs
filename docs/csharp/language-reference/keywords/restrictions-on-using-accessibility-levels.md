@@ -1,6 +1,6 @@
 ---
 description: "Restrictions on using accessibility levels - C# Reference"
-title: "Restrictions on using accessibility levels - C# Reference"
+title: "Restrictions on using accessibility levels"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "access modifiers [C#], accessibility level restrictions"
@@ -104,8 +104,6 @@ public class A
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [Access Modifiers](access-modifiers.md)
 - [Accessibility Domain](accessibility-domain.md)

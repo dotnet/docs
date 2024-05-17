@@ -6,10 +6,10 @@ ms.assetid: f72a59aa-8093-4a8e-94df-40acaffb1ffb
 ---
 # 106 - CancelRequestRecord
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |Id|106|  
 |Keywords|EndToEndMonitoring, Troubleshooting, HealthMonitoring, WFTracking|  
 |Level|Information|  

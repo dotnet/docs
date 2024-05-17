@@ -36,7 +36,7 @@ namespace DapperSample
     {
         public bool Boolean { get; set; }
         public byte Byte { get; set; }
-        public byte[] ByteArray { get; set; }
+        public byte[]? ByteArray { get; set; }
         public char Char { get; set; }
         public DateTime DateTime { get; set; }
         public DateTimeOffset DateTimeOffset { get; set; }
@@ -48,7 +48,7 @@ namespace DapperSample
         public long Int64 { get; set; }
         public sbyte SByte { get; set; }
         public short Int16 { get; set; }
-        public string String { get; set; }
+        public string? String { get; set; }
         public TimeSpan TimeSpan { get; set; }
         public uint UInt32 { get; set; }
         public ulong UInt64 { get; set; }

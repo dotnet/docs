@@ -6,10 +6,10 @@ ms.assetid: 2f2e3446-1f0c-4e8a-b14c-0e500de0f075
 ---
 # 3342 - EstablishConnectionStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3342|  
 |Keywords|Channel|  
 |Level|Verbose|  

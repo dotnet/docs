@@ -1,6 +1,6 @@
 ---
 description: "in (Generic Modifier) - C# Reference"
-title: "in (Generic Modifier) - C# Reference"
+title: "in (Generic Modifier)"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "contravariance, in keyword [C#]"
@@ -12,7 +12,7 @@ For generic type parameters, the `in` keyword specifies that the type parameter 
 
 Contravariance enables you to use a less derived type than that specified by the generic parameter. This allows for implicit conversion of classes that implement contravariant interfaces and implicit conversion of delegate types. Covariance and contravariance in generic type parameters are supported for reference types, but they are not supported for value types.
 
-A type can be declared contravariant in a generic interface or delegate only if it defines the type of a method's parameters and not of a method's return type. `In`, `ref`, and `out` parameters must be invariant, meaning they are neither covariant or contravariant.
+A type can be declared contravariant in a generic interface or delegate only if it defines the type of a method's parameters and not of a method's return type. `In`, `ref`, and `out` parameters must be invariant, meaning they are neither covariant nor contravariant.
 
 An interface that has a contravariant type parameter allows its methods to accept arguments of less derived types than those specified by the interface type parameter. For example, in the <xref:System.Collections.Generic.IComparer%601> interface, type T is contravariant, you can assign an object of the `IComparer<Person>` type to an object of the `IComparer<Employee>` type without using any special conversion methods if `Employee` inherits `Person`.
 

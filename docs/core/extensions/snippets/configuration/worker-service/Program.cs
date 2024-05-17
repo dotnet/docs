@@ -1,17 +1,9 @@
-﻿using System.Threading.Tasks;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
+﻿using WorkerService.Example;
 
-namespace WorkerService.Example
-{
-    class Program
-    {
-        static Task Main(string[] args) =>
-            CreateHostBuilder(args).Build().RunAsync();
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
 
-        static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
-                .ConfigureServices((_, services) =>
-                    services.AddHostedService<Worker>());
-    }
-}
+builder.Services.AddHostedService<Worker>();
+
+using IHost host = builder.Build();
+
+await host.RunAsync();

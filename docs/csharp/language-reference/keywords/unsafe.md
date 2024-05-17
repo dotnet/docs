@@ -1,6 +1,6 @@
 ---
 description: "unsafe keyword - C# Reference"
-title: "unsafe keyword - C# Reference"
+title: "unsafe keyword"
 ms.date: 07/20/2015
 f1_keywords:
   - "unsafe_CSharpKeyword"
@@ -45,13 +45,11 @@ To compile unsafe code, you must specify the [**AllowUnsafeBlocks**](../compiler
 
 ## C# language specification
 
-For more information, see [Unsafe code](~/_csharplang/spec/unsafe-code.md) in the [C# Language Specification](/dotnet/csharp/language-reference/language-specification/introduction). The language specification is the definitive source for C# syntax and usage.
+For more information, see [Unsafe code](~/_csharpstandard/standard/unsafe-code.md) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C# Keywords](index.md)
-- [fixed Statement](fixed-statement.md)
-- [Unsafe Code and Pointers](../unsafe-code.md)
-- [Fixed Size Buffers](../unsafe-code.md#fixed-size-buffers)
+- [C# keywords](index.md)
+- [`fixed` statement](../statements/fixed.md)
+- [Unsafe code, pointer types, and function pointers](../unsafe-code.md)
+- [Pointer related operators](../operators/pointer-related-operators.md)

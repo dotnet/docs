@@ -153,7 +153,7 @@ You can install an application manifest in the same directory as the COM applica
 
 1. Create a resource script that contains the following statement:
 
-     `RT_MANIFEST 1 myManagedComp.manifest`
+     `1 RT_MANIFEST myManagedComp.manifest`
 
      In this statement, `myManagedComp.manifest` is the name of the component manifest being embedded. For this example, the script file name is `myresource.rc`.
 

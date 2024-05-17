@@ -1,5 +1,5 @@
 ---
-title: Use patterns in objects - C# tutorial
+title: Use patterns in objects C# tutorial
 description: This tutorial teaches you techniques to use pattern matching in class members to create better models for object behavior
 ms.date: 11/05/2020
 ---
@@ -17,7 +17,7 @@ In this tutorial, you'll learn how to:
 
 ## Prerequisites
 
-You’ll need to set up your machine to run .NET 5, including the C# 9.0 compiler. The C# 9.0 compiler is available starting with [Visual Studio 2019 version 16.8 preview](https://visualstudio.microsoft.com/vs/preview/) or the [.NET 5.0 SDK preview](https://dotnet.microsoft.com/download/dotnet/5.0).
+You'll need to set up your machine to run .NET. Download [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) or the [.NET SDK](https://dotnet.microsoft.com/download).
 
 ## Build a simulation of a canal lock
 
@@ -59,7 +59,7 @@ A better way is to use *patterns* to determine if the object is in a valid state
 | ----------- | ---------- | ----------- | ------------------ |
 | Closed      | Closed     | High        | Closed             |
 | Closed      | Closed     | Low         | Closed             |
-| Closed      | Open       | High        | Open               |
+| Closed      | Open       | High        | Closed             |
 | ~~Closed~~  | ~~Open~~   | ~~Low~~     | ~~Closed~~         |
 | Open        | Closed     | High        | Open               |
 | Open        | Closed     | Low         | Closed (Error)     |
@@ -96,7 +96,7 @@ _ => throw new InvalidOperationException("Invalid internal state"),
 
 Run your tests again, and they pass. Here's the final version of the `SetHighGate` method:
 
-:::code language="csharp" source="snippets/pattern-objects/CanalLock.cs" ID="FinalImplementaton":::
+:::code language="csharp" source="snippets/pattern-objects/CanalLock.cs" ID="FinalImplementation":::
 
 ## Implement patterns yourself
 

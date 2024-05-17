@@ -14,7 +14,7 @@ Use the <xref:System.Linq.Enumerable.First%2A> operator to return the first elem
 > [!NOTE]
 > [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] does not support the <xref:System.Linq.Enumerable.Last%2A> operator.  
   
-## Example  
+## Example 1
 
  The following code finds the first `Shipper` in a table:  
   
@@ -25,7 +25,7 @@ Use the <xref:System.Linq.Enumerable.First%2A> operator to return the first elem
  [!code-csharp[DLinqQueryExamples#14](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryExamples/cs/Program.cs#14)]
  [!code-vb[DLinqQueryExamples#14](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#14)]  
   
-## Example  
+## Example 2  
 
  The following code finds the single `Customer` that has the `CustomerID` BONAP.  
   

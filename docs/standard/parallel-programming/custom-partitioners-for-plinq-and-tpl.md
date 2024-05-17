@@ -29,7 +29,7 @@ Some overloads of the <xref:System.Collections.Concurrent.Partitioner.Create%2A?
 
 In general, load balancing requires the partitions to request elements relatively frequently from the partitioner. By contrast, a partitioner that does static partitioning can assign the elements to each partitioner all at once by using either range or chunk partitioning. This requires less overhead than load balancing, but it might take longer to execute if one thread ends up with significantly more work than the others. By default when it is passed an IList or an array, PLINQ always uses range partitioning without load balancing. To enable load balancing for PLINQ, use the `Partitioner.Create` method, as shown in the following example.
 
-[!code-csharp[TPL_Partitioners#02](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_partitioners/cs/partitioners.cs#02)]
+[!code-csharp[TPL_Partitioners#02](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_partitioners/cs/00/partitioners.cs#02)]
 [!code-vb[TPL_Partitioners#02](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_partitioners/vb/partitionsnippets_vb.vb#02)]
 
 The best way to determine whether to use load balancing in any given scenario is to experiment and measure how long it takes operations to complete under representative loads and computer configurations. For example, static partitioning might provide significant speedup on a multi-core computer that has only a few cores, but it might result in slowdowns on computers that have relatively many cores.
@@ -63,7 +63,7 @@ In some scenarios, it might be worthwhile or even required to implement your own
 
 To create a basic custom partitioner, derive a class from <xref:System.Collections.Concurrent.Partitioner%601?displayProperty=nameWithType> and override the virtual methods, as described in the following table.
 
-|||
+|Method|Description|
 |-|-|
 |<xref:System.Collections.Concurrent.Partitioner%601.GetPartitions%2A>|This method is called once by the main thread and returns an IList(IEnumerator(TSource)). Each worker thread in the loop or query can call `GetEnumerator` on the list to retrieve a <xref:System.Collections.Generic.IEnumerator%601> over a distinct partition.|
 |<xref:System.Collections.Concurrent.Partitioner%601.SupportsDynamicPartitions%2A>|Return `true` if you implement <xref:System.Collections.Concurrent.Partitioner%601.GetDynamicPartitions%2A>, otherwise, `false`.|
@@ -71,7 +71,7 @@ To create a basic custom partitioner, derive a class from <xref:System.Collectio
 
 If the results must be sortable or you require indexed access into the elements, then derive from <xref:System.Collections.Concurrent.OrderablePartitioner%601?displayProperty=nameWithType> and override its virtual methods as described in the following table.
 
-|||
+|Method|Description|
 |-|-|
 |<xref:System.Collections.Concurrent.OrderablePartitioner%601.GetPartitions%2A>|This method is called once by the main thread and returns an `IList(IEnumerator(TSource))`. Each worker thread in the loop or query can call `GetEnumerator` on the list to retrieve a <xref:System.Collections.Generic.IEnumerator%601> over a distinct partition.|
 |<xref:System.Collections.Concurrent.Partitioner%601.SupportsDynamicPartitions%2A>|Return `true` if you implement <xref:System.Collections.Concurrent.OrderablePartitioner%601.GetDynamicPartitions%2A>; otherwise, false.|

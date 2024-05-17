@@ -1,7 +1,9 @@
 ---
 title: SYSLIB0003 warning
 description: Learn about the obsoletions that generate compile-time warning SYSLIB0003.
-ms.date: 10/20/2020
+ms.date: 08/16/2021
+f1_keywords:
+  - syslib0003
 ---
 # SYSLIB0003: Code access security is not supported
 
@@ -146,9 +148,12 @@ The complete list of obsolete CAS APIs is as follows:
 - <xref:System.Security.Policy.StrongNameMembershipCondition?displayProperty=fullName>
 - <xref:System.Security.Policy.Url?displayProperty=fullName>
 - <xref:System.Security.Policy.Zone?displayProperty=fullName>
+- <xref:System.Security.SecurityContext?displayProperty=fullName>
 - <xref:System.Security.SecurityManager?displayProperty=fullName>
 - <xref:System.ServiceProcess.ServiceControllerPermission?displayProperty=fullName>
 - <xref:System.ServiceProcess.ServiceControllerPermissionAttribute?displayProperty=fullName>
+- <xref:System.Threading.Thread.GetCompressedStack?displayProperty=fullName>
+- <xref:System.Threading.Thread.SetCompressedStack(System.Threading.CompressedStack)?displayProperty=fullName>
 - <xref:System.Transactions.DistributedTransactionPermission?displayProperty=fullName>
 - <xref:System.Transactions.DistributedTransactionPermissionAttribute?displayProperty=fullName>
 - <xref:System.Web.AspNetHostingPermission?displayProperty=fullName>
@@ -172,7 +177,7 @@ The complete list of obsolete CAS APIs is as follows:
   }
   ```
 
-- If you're denying or restricting (via `PermitOnly`) any permission, contact your security advisor. Because CAS attributes are not honored by the .NET 5.0+ runtime, your application could have a security hole if it incorrectly relies on the CAS infrastructure to restrict access to these methods.
+- If you're denying or restricting (via `PermitOnly`) any permission, contact your security advisor. Because CAS attributes are not honored by the .NET 5+ runtime, your application could have a security hole if it incorrectly relies on the CAS infrastructure to restrict access to these methods.
 
   ```csharp
   // REVIEW the attribute below; could indicate security vulnerability.
@@ -204,7 +209,35 @@ The complete list of obsolete CAS APIs is as follows:
 
 - If you're demanding <xref:System.Security.Permissions.PrincipalPermission>, consult the guidance for [SYSLIB0002: PrincipalPermissionAttribute is obsolete](syslib0002.md#workarounds). That guidance applies for both <xref:System.Security.Permissions.PrincipalPermission> and <xref:System.Security.Permissions.PrincipalPermissionAttribute>.
 
-[!INCLUDE [suppress-syslib-warning](includes/suppress-syslib-warning.md)]
+## Suppress a warning
+
+If you must use the obsolete APIs, you can suppress the warning in code or in your project file.
+
+To suppress only a single violation, add preprocessor directives to your source file to disable and then re-enable the warning.
+
+```csharp
+// Disable the warning.
+#pragma warning disable SYSLIB0003
+
+// Code that uses obsolete API.
+// ...
+
+// Re-enable the warning.
+#pragma warning restore SYSLIB0003
+```
+
+To suppress all the `SYSLIB0003` warnings in your project, add a `<NoWarn>` property to your project file.
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+   ...
+   <NoWarn>$(NoWarn);SYSLIB0003</NoWarn>
+  </PropertyGroup>
+</Project>
+```
+
+For more information, see [Suppress warnings](obsoletions-overview.md#suppress-warnings).
 
 ## See also
 

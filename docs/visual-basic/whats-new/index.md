@@ -8,11 +8,12 @@ helpviewer_keywords:
   - "new features, Visual Basic"
   - "what's new [Visual Basic]"
   - "Visual Basic, what's new"
-ms.assetid: d7e97396-7f42-4873-a81c-4ebcc4b6ca02
+ms.custom: UpdateFrequency1
+ms.topic: whats-new
 ---
 # What's new for Visual Basic
 
-This topic lists key feature names for each version of Visual Basic, with detailed descriptions of the new and enhanced features in the latest versions of the language.
+This article lists key feature names for each version of Visual Basic, with detailed descriptions of the new and enhanced features in the latest versions of the language.
 
 ## Current version
 
@@ -167,11 +168,11 @@ Tuples are a lightweight data structure that most commonly is used to return mul
 
 Visual Basic's support for tuples lets you quickly define a tuple, optionally assign semantic names to its values, and quickly retrieve its values. The following example wraps a call to the <xref:System.Int32.TryParse%2A> method and returns a tuple.
 
-[!code-vb[Tuple](../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuple-returns.vb#2)]
+:::code language="vb" source="../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuples/tuple-returns.vb" id="ParseIntegerReturnsTuple":::
 
 You can then call the method and handle the returned tuple with code like the following.
 
-[!code-vb[ReturnTuple](../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuple-returns.vb#3)]
+:::code language="vb" source="../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuples/tuple-returns.vb" id="MethodCallWithTuple":::
 
 **Binary literals and digit separators**
 
@@ -183,7 +184,7 @@ For more information, see the "Literal assignments" section of the [Byte](../lan
 
 [**Support for C# reference return values**](../programming-guide/language-features/procedures/ref-return-values.md)
 
-Starting with C# 7.0, C# supports reference return values. That is, when the calling method receives a value returned by reference, it can change the value of the reference. Visual Basic does not allow you to author methods with reference return values, but it does allow you to consume and modify the reference return values.
+C# supports reference return values. That is, when the calling method receives a value returned by reference, it can change the value of the reference. Visual Basic does not allow you to author methods with reference return values, but it does allow you to consume and modify the reference return values.
 
 For example, the following `Sentence` class written in C# includes a `FindNext` method that finds the next word in a sentence that begins with a specified substring. The string is returned as a reference return value, and a `Boolean` variable passed by reference to the method indicates whether the search was successful. This means that in addition to reading the returned value, the caller can also modify it, and that modification is reflected in the `Sentence` class.
 

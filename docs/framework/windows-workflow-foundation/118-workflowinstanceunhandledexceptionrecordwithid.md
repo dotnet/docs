@@ -6,10 +6,10 @@ ms.assetid: 2ce4b193-e141-4cc4-86a3-2e8c984c110d
 ---
 # 118 - WorkflowInstanceUnhandledExceptionRecordWithId
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|118|  
 |Keywords|HealthMonitoring, WFTracking|  
 |Level|Error|  

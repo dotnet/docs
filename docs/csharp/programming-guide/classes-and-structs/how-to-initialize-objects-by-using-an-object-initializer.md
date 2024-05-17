@@ -1,12 +1,11 @@
 ---
-title: "How to initialize objects by using an object initializer - C# Programming Guide"
+title: "How to initialize objects by using an object initializer"
 description: Learn how to use object initializers to initialize type objects in C# without invoking a constructor. Use an object initializer to define an anonymous type.
 ms.date: 12/20/2018
 helpviewer_keywords: 
   - "object initializers [C#], how to use"
   - "objects [C#], initializing"
 ms.topic: how-to
-ms.custom: contperf-fy21q2
 ms.assetid: 4b75ebb2-2e29-43de-929c-d736a8f27ce6
 ---
 # How to initialize objects by using an object initializer (C# Programming Guide)
@@ -27,7 +26,10 @@ Object initializers can be used to set indexers in an object. The following exam
 
 [!code-csharp[InitializerIndexerExample](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/object-collection-initializers/HowToIndexInitializer.cs#HowToIndexInitializer)]  
 
+The next example shows the order of execution of constructor and member initializations using constructor with and without parameter:
+
+[!code-csharp[ExecutionOrderExample](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/object-collection-initializers/HowToIndexInitializer.cs#ObjectInitializersExecutionOrder)]  
+
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Object and Collection Initializers](object-and-collection-initializers.md)

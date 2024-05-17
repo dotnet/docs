@@ -1,23 +1,21 @@
-﻿using System;
-using System.Data;
-namespace DataTableAddCS
+﻿using System.Data;
+namespace DataTableAddCS;
+
+static class Program
 {
-    class Program
+    static void Main()
     {
-        static void Main()
-        {
-            // <Snippet1>
-            DataSet customerOrders = new DataSet("CustomerOrders");
+        // <Snippet1>
+        DataSet customerOrders = new("CustomerOrders");
 
-            DataTable ordersTable = customerOrders.Tables.Add("Orders");
+        DataTable ordersTable = customerOrders.Tables.Add("Orders");
 
-            DataColumn pkOrderID =
-                ordersTable.Columns.Add("OrderID", typeof(Int32));
-            ordersTable.Columns.Add("OrderQuantity", typeof(Int32));
-            ordersTable.Columns.Add("CompanyName", typeof(string));
+        DataColumn pkOrderID =
+            ordersTable.Columns.Add("OrderID", typeof(int));
+        ordersTable.Columns.Add("OrderQuantity", typeof(int));
+        ordersTable.Columns.Add("CompanyName", typeof(string));
 
-            ordersTable.PrimaryKey = new DataColumn[] { pkOrderID };
-            // </Snippet1>
-        }
+        ordersTable.PrimaryKey = new DataColumn[] { pkOrderID };
+        // </Snippet1>
     }
 }

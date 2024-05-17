@@ -1,6 +1,6 @@
 ---
 description: "private keyword - C# Reference"
-title: "private keyword - C# Reference"
+title: "private keyword"
 ms.date: 07/20/2015
 f1_keywords: 
   - "private_CSharpKeyword"
@@ -20,8 +20,8 @@ Private access is the least permissive access level. Private members are accessi
 ```csharp
 class Employee
 {
-    private int i;
-    double d;   // private access by default
+    private int _i;
+    double _d;   // private access by default
 }
 ```
 
@@ -33,18 +33,16 @@ For a comparison of `private` with the other access modifiers, see [Accessibilit
 
 ## Example
 
-In this example, the `Employee` class contains two private data members, `name` and `salary`. As private members, they cannot be accessed except by member methods. Public methods named `GetName` and `Salary` are added to allow controlled access to the private members. The `name` member is accessed by way of a public method, and the `salary` member is accessed by way of a public read-only property. (See [Properties](../../programming-guide/classes-and-structs/properties.md) for more information.)
+In this example, the `Employee` class contains two private data members, `_name` and `_salary`. As private members, they cannot be accessed except by member methods. Public methods named `GetName` and `Salary` are added to allow controlled access to the private members. The `_name` member is accessed by way of a public method, and the `_salary` member is accessed by way of a public read-only property. For more information, see [Properties](../../programming-guide/classes-and-structs/properties.md).
 
 [!code-csharp[csrefKeywordsModifiers#10](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#10)]
 
 ## C# language specification  
 
-For more information, see [Declared accessibility](~/_csharplang/spec/basic-concepts.md#declared-accessibility) in the [C# Language Specification](/dotnet/csharp/language-reference/language-specification/introduction). The language specification is the definitive source for C# syntax and usage.
+For more information, see [Declared accessibility](~/_csharpstandard/standard/basic-concepts.md#752-declared-accessibility) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [Access Modifiers](access-modifiers.md)
 - [Accessibility Levels](accessibility-levels.md)

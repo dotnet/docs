@@ -6,10 +6,10 @@ ms.assetid: c068fc0e-07ee-4551-9824-ea7216e1fe37
 ---
 # 3507 - ServiceEndpointAdded
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3507|  
 |Keywords|WFServices|  
 |Level|Information|  

@@ -1,9 +1,10 @@
 ---
-title: Records
+title: Records in F#
+titleSuffix: ""
 description: Learn how F# records represent simple aggregates of named values, optionally with members.
-ms.date: 08/15/2020
+ms.date: 12/21/2021
 ---
-# Records
+# Records (F#)
 
 Records represent simple aggregates of named values, optionally with members. They can either be structs or reference types.  They are reference types by default.
 
@@ -104,6 +105,24 @@ and Address =
     Line2: string
     PostCode: string
     Occupant: Person }
+```
+
+To create instances of both, you do the following:
+
+```fsharp
+// Create a Person type and use the Address type that is not defined
+let rec person =
+  {
+      Name = "Person name"
+      Age = 12
+      Address =
+          {
+              Line1 = "line 1"
+              Line2 = "line 2"
+              PostCode = "abc123"
+              Occupant = person
+          }
+  }
 ```
 
 If you were to define the previous example without the `and` keyword, then it would not compile. The `and` keyword is required for mutually recursive definitions.

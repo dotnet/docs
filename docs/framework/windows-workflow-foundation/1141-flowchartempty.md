@@ -6,10 +6,10 @@ ms.assetid: a5361db9-c3b5-40fc-96d5-4879953c4cd9
 ---
 # 1141 - FlowchartEmpty
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1141|  
 |Keywords|WFActivities|  
 |Level|Warning|  

@@ -17,7 +17,7 @@ let identifier = lazy ( expression )
 
 In the previous syntax, *expression* is code that is evaluated only when a result is required, and *identifier* is a value that stores the result. The value is of type `Lazy<'T>`, where the actual type that is used for `'T` is determined from the result of the expression.
 
-Lazy expressions enable you to improve performance by restricting the execution of an expressions to only those situations in which a result is needed.
+Lazy expressions enable you to improve performance by restricting the execution of an expression to only those situations in which a result is needed.
 
 To force the expressions to be performed, you call the method `Force`. `Force` causes the execution to be performed only one time. Subsequent calls to `Force` return the same result, but do not execute any code.
 

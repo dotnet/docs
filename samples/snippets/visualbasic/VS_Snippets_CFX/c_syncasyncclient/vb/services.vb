@@ -35,10 +35,10 @@ Namespace Microsoft.WCF.Documentation
 
         Public Function SampleMethod(ByVal msg As String) As String Implements ISampleService.SampleMethod
             Console.WriteLine("Called synchronous sample method with ""{0}""", msg)
-            Return "The sychronous service greets you: " & msg
+            Return "The synchronous service greets you: " & msg
         End Function
 
-        ' This asynchronously implemented operation is never called because 
+        ' This asynchronously implemented operation is never called because
         ' there is a synchronous version of the same method.
         Public Function BeginSampleMethod(ByVal msg As String, ByVal callback As AsyncCallback, ByVal asyncState As Object) As IAsyncResult Implements ISampleService.BeginSampleMethod
             Console.WriteLine("BeginSampleMethod called with: " & msg)

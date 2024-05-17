@@ -6,10 +6,10 @@ ms.assetid: 8c8bee26-9ad4-4e01-bd16-0e1fd510fb6b
 ---
 # 4207 - MaximumRetriesExceededForSqlCommand
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4207|  
 |Keywords|Quota, WFInstanceStore|  
 |Level|Information|  

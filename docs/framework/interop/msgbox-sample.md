@@ -8,7 +8,7 @@ dev_langs:
   - "cpp"
 helpviewer_keywords: 
   - "marshaling, MsgBox sample"
-  - "data marshaling, MsgBox sample"
+  - "data marshalling, MsgBox sample"
 ms.assetid: 9e0edff6-cc0d-4d5c-a445-aecf283d9c3a
 ---
 # MsgBox Sample
@@ -26,7 +26,7 @@ This sample demonstrates how to pass string types by value as In parameters and 
   
  In this sample, the `NativeMethods` class contains a managed prototype for each unmanaged function called by the `MsgBoxSample` class. The managed prototype methods `MsgBox`, `MsgBox2`, and `MsgBox3` have different declarations for the same unmanaged function.  
   
- The declaration for `MsgBox2` produces incorrect output in the message box because the character type, specified as ANSI, is mismatched with the entry point `MessageBoxW`, which is the name of the Unicode function. The declaration for `MsgBox3` creates a mismatch between the **EntryPoint**, **CharSet**, and **ExactSpelling** fields. When called, `MsgBox3` throws an exception. For detailed information on string naming and name marshaling, see [Specifying a Character Set](specifying-a-character-set.md).  
+ The declaration for `MsgBox2` produces incorrect output in the message box because the character type, specified as ANSI, is mismatched with the entry point `MessageBoxW`, which is the name of the Unicode function. The declaration for `MsgBox3` creates a mismatch between the **EntryPoint**, **CharSet**, and **ExactSpelling** fields. When called, `MsgBox3` throws an exception. For detailed information on string naming and name marshalling, see [Specifying a Character Set](specifying-a-character-set.md).  
   
 ## Declaring Prototypes  
 
@@ -42,7 +42,7 @@ This sample demonstrates how to pass string types by value as In parameters and 
   
 ## See also
 
-- [Marshaling Strings](marshaling-strings.md)
-- [Default Marshaling for Strings](default-marshaling-for-strings.md)
+- [Marshalling Strings](marshalling-strings.md)
+- [Default Marshalling for Strings](default-marshalling-for-strings.md)
 - [Creating Prototypes in Managed Code](creating-prototypes-in-managed-code.md)
 - [Specifying a Character Set](specifying-a-character-set.md)

@@ -12,6 +12,8 @@ ms.assetid: bc496a91-fefb-4ce0-ab4c-61f09964119a
 ---
 # Equality Operators
 
+[!INCLUDE [not-current](includes/not-current.md)]
+
 This section discusses overloading equality operators and refers to `operator==` and `operator!=` as equality operators.
 
  ❌ DO NOT overload one of the equality operators and not the other.

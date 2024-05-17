@@ -1,6 +1,6 @@
 <FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
   <Paragraph>
-    Planetary 
+    Planetary
     <Image Width="25" Height="25"   Margin="5" Name="Planet_Image">
       <Image.Source>
         <BitmapImage UriSource="Content\SolarSystem.bmp" />
@@ -9,7 +9,7 @@
     Information Table
   </Paragraph>
 
-  
+
   <Table CellSpacing="5">
 
     <Table.Columns>
@@ -111,14 +111,14 @@
         </TableCell>
       </TableRow>
 
-      <!-- Sub-title row for the outter planets. -->
+      <!-- Sub-title row for the outer planets. -->
       <TableRow>
         <TableCell ColumnSpan="4">
           <Paragraph FontSize="14pt" FontWeight="Bold">The Major Outer Planets</Paragraph>
         </TableCell>
       </TableRow>
 
-      <!-- Four data rows for the major outter planets. -->
+      <!-- Four data rows for the major outer planets. -->
       <TableRow>
         <TableCell>
           <Paragraph>Jupiter</Paragraph>

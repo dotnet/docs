@@ -1,8 +1,8 @@
 ﻿' Visual Basic .NET Document
 Option Strict On
 
-Module Example
-    Public Sub Main()
+Module Example16
+    Public Sub Main16()
         ' <Snippet3>
         Dim integerValue As Integer = 60312
         Console.WriteLine(integerValue.ToString("X"))   ' Displays EB98.

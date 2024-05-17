@@ -6,10 +6,10 @@ ms.assetid: c9de20d8-9f53-432d-8100-c05387441f65
 ---
 # 3427 - WebSocketCloseOutputSent
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3427|  
 |Keywords|HTTP|  
 |Level|Verbose|  

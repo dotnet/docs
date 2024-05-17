@@ -6,10 +6,10 @@ ms.assetid: 2cc1693d-7834-45ce-9a6d-dbe31dc2d517
 ---
 # 5605 - SessionCookieReadingSuccess
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|5605|  
 |Keywords|Security|  
 |Level|Verbose|  

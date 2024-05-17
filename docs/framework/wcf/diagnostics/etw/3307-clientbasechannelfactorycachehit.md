@@ -6,10 +6,10 @@ ms.assetid: 93d332af-a666-4fa4-81a3-2db6b1eaf190
 ---
 # 3307 - ClientBaseChannelFactoryCacheHit
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3307|  
 |Keywords|ServiceModel|  
 |Level|Information|  

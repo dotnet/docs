@@ -52,7 +52,7 @@ ms.assetid: fefca07f-7555-4e77-be86-3c542e928312
   
 ## Additional Considerations  
   
-- The profiler class implements the [ICorProfilerCallback](icorprofilercallback-interface.md) and [ICorProfilerCallback2](icorprofilercallback2-interface.md) interfaces. In the .NET Framework version 2.0, a profiler must implement `ICorProfilerCallback2`. If it does not, `ICorProfilerCallback2` will not be loaded.  
+- The profiler class implements the [ICorProfilerCallback](icorprofilercallback-interface.md) and [ICorProfilerCallback2](icorprofilercallback2-interface.md) interfaces. In .NET Framework version 2.0, a profiler must implement `ICorProfilerCallback2`. If it does not, `ICorProfilerCallback2` will not be loaded.  
   
 - Only one profiler can profile a process at one time in a given environment. You can register two different profilers in different environments, but each must profile separate processes. The profiler must be implemented as an in-process COM server DLL, which is mapped into the same address space as the process that is being profiled. This means that the profiler runs in-process. The .NET Framework does not support any other type of COM server. For example, if a profiler wants to monitor applications from a remote computer, it must implement collector agents on each computer. These agents will batch results and communicate them to the central data collection computer.  
   

@@ -6,10 +6,10 @@ ms.assetid: 568212f7-1060-4f5c-a7a0-1352c7cc743b
 ---
 # 4802 - DiscoveryClientProtocolExceptionSuppressed
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4802|  
 |Keywords|Discovery|  
 |Level|Information|  

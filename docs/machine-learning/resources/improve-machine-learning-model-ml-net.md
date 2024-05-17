@@ -1,16 +1,17 @@
 ---
-title: "How-To: Improve model accuracy"
-description: Learn how to improve model accuracy
-ms.date: 04/29/2019
+title: "How-To: Improve your ML.NET model"
+description: Learn how to improve your ML.NET model
+ms.date: 03/11/2022
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc
-#Customer intent: As a developer, I want to improve the accuracy of my model.
+ms.topic: how-to
+#Customer intent: As a developer, I want to improve my ML.NET model.
 ---
 
-# Improve ML.NET Model Accuracy
+# Improve your ML.NET model
 
-Learn how to improve the accuracy of your model.
+Learn how to improve your ML.NET model.
 
 ## Reframe the problem
 
@@ -38,7 +39,7 @@ Visit the following link to learn [how to use cross validation in ML.NET](../how
 
 ## Hyperparameter tuning
 
-Training machine learning models is an iterative and exploratory process. For example, what is the optimal number of clusters when training a model using the K-Means algorithm? The answer depends on many factors such as the structure of the data. Finding that number would require experimenting with different values for k and then evaluating performance to determine which value is best. The practice of tuning these parameters to find an optimal model is known as hyper-parameter tuning.
+Training machine learning models is an iterative and exploratory process. For example, what is the optimal number of clusters when training a model using the K-Means algorithm? The answer depends on many factors such as the structure of the data. Finding that number would require experimenting with different values for k and then evaluating performance to determine which value is best. The practice of tuning the parameters that guide the training process to find an optimal model is known as hyperparameter tuning.
 
 ## Choose a different algorithm
 

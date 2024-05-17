@@ -1,16 +1,13 @@
 ---
-title: Introduction to C# - become familiar with the development tools
+title: Become familiar with the development tools
 description: This article provides a basic introduction to the tools you'll use to develop C# and .NET Applications on your machine.
 ms.date: 02/02/2021
 ---
 # Set up your local environment
 
-The first step in running a tutorial on your machine is to set up a development environment. Choose one of the following alternatives:
+The first step in running a tutorial on your machine is to set up a development environment.
 
-* To use the .NET CLI and your choice of text or code editor, see the .NET tutorial [Hello World in 10 minutes](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro). The tutorial has instructions for setting up a development environment on Windows, Linux, or macOS.
-* To use the .NET CLI and Visual Studio Code, install the [.NET SDK](https://dotnet.microsoft.com/download) and
-[Visual Studio Code](https://code.visualstudio.com/).
-* To use Visual Studio 2019, see [Tutorial: Create a simple C# console app in Visual Studio](/visualstudio/get-started/csharp/tutorial-console).
+[!INCLUDE [Prerequisites](../../includes/prerequisites.md)]
 
 ## Basic application development flow
 
@@ -23,6 +20,8 @@ The instructions in these tutorials assume that you're using the .NET CLI to cre
 If you use Visual Studio 2019 for these tutorials, you'll choose a Visual Studio menu selection when a tutorial directs you to run one of these CLI commands:
 
 * **File** > **New** > **Project** creates an application.
+  * The `Console Application` project template is recommended.
+  * You will be given the option to specify a target framework. The tutorials below work best when targeting .NET 5 or higher.
 * **Build** >  **Build Solution** builds the executable.
 * **Debug** > **Start Without Debugging** runs the executable.
 

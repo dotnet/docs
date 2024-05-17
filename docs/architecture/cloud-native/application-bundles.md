@@ -1,10 +1,12 @@
 ---
 title: Cloud Native Application Bundles
 description: Architecting Cloud Native .NET Apps for Azure | Cloud Native Application Bundles
-ms.date: 01/19/2021
+ms.date: 04/06/2022
 ---
 
 # Cloud Native Application Bundles
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 A key property of cloud-native applications is that they leverage the capabilities of the cloud to speed up development. This design often means that a full application uses different kinds of technologies. Applications may be shipped in Docker containers, some services may use Azure Functions, while other parts may run directly on virtual machines allocated on large metal servers with hardware GPU acceleration. No two cloud-native applications are the same, so it's been difficult to provide a single mechanism for shipping them.
 

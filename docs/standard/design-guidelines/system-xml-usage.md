@@ -6,6 +6,8 @@ ms.assetid: 82302f0d-a621-4c6f-b57d-999bd61f21a6
 ---
 # System.Xml Usage
 
+[!INCLUDE [not-current](includes/not-current.md)]
+
 This section talks about usage of several types residing in <xref:System.Xml?displayProperty=nameWithType> namespaces that can be used to represent XML data.
 
  ❌ DO NOT use <xref:System.Xml.XmlNode> or <xref:System.Xml.XmlDocument> to represent XML data. Favor using instances of <xref:System.Xml.XPath.IXPathNavigable>, <xref:System.Xml.XmlReader>, <xref:System.Xml.XmlWriter>, or subtypes of <xref:System.Xml.Linq.XNode> instead. `XmlNode` and `XmlDocument` are not designed for exposing in public APIs.

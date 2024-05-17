@@ -96,6 +96,6 @@ There may be scenarios in which federated clients communicate with a service and
   
 - `KeyWrapAlgorithm`  
   
- The client configuration file contains a `secondaryParamters` element that wraps the parameters specified by the RP.  
+ The client configuration file contains a `secondaryParameters` element that wraps the parameters specified by the RP.  
   
  WCF copies all the parameters specified within the `SecondaryParameters` section to the top-level RST element, but does not convert them to the 2005 WS-Trust namespace.

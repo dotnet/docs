@@ -1,17 +1,18 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using App.WindowsService;
+﻿using App.WindowsService;
+using Microsoft.Extensions.Logging.Configuration;
+using Microsoft.Extensions.Logging.EventLog;
 
-using IHost host = Host.CreateDefaultBuilder(args)
-    .UseWindowsService(options =>
-    {
-        options.ServiceName = ".NET Joke Service";
-    })
-    .ConfigureServices(services =>
-    {
-        services.AddHostedService<WindowsBackgroundService>();
-        services.AddHttpClient<JokeService>();
-    })
-    .Build();
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+builder.Services.AddWindowsService(options =>
+{
+    options.ServiceName = ".NET Joke Service";
+});
 
-await host.RunAsync();
+LoggerProviderOptions.RegisterProviderOptions<
+    EventLogSettings, EventLogLoggerProvider>(builder.Services);
+
+builder.Services.AddSingleton<JokeService>();
+builder.Services.AddHostedService<WindowsBackgroundService>();
+
+IHost host = builder.Build();
+host.Run();

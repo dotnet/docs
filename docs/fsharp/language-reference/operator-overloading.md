@@ -39,15 +39,13 @@ Depending on the exact character sequence you use, your operator will have a cer
 
 The operator character `.` does not affect precedence, so that, for example, if you want to define your own version of multiplication that has the same precedence and associativity as ordinary multiplication, you could create operators such as `.*`.
 
-Only the operators `?` and `?<-` may start with `?`.
-
 The `$` operator must stand alone and without additional symbols.
 
 A table that shows the precedence of all operators in F# can be found in [Symbol and Operator Reference](./symbol-and-operator-reference/index.md).
 
 ## Overloaded Operator Names
 
-When the F# compiler compiles an operator expression, it generates a method that has a compiler-generated name for that operator. This is the name that appears in the Microsoft intermediate language (MSIL) for the method, and also in reflection and IntelliSense. You do not normally need to use these names in F# code.
+When the F# compiler compiles an operator expression, it generates a method that has a compiler-generated name for that operator. This is the name that appears in the common intermediate language (CIL) for the method, and also in reflection and IntelliSense. You do not normally need to use these names in F# code.
 
 The following table shows the standard operators and their corresponding generated names.
 

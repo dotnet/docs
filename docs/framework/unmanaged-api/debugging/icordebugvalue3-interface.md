@@ -28,7 +28,7 @@ Extends the "ICorDebugValue" and "ICorDebugValue2" interfaces to provide support
   
 ## Remarks  
 
- The [ICorDebugValue::GetSize](icordebugvalue3-getsize64-method.md) method returns an object size that ranges from 0 to 2,147,483,647 bytes. In the .NET Framework 4.5, the size of arrays can exceed 2 GB. The `ICorDebugValue3` interface enables you to determine the size of these arrays.  
+ The [ICorDebugValue::GetSize](icordebugvalue3-getsize64-method.md) method returns an object size that ranges from 0 to 2,147,483,647 bytes. In .NET Framework 4.5, the size of arrays can exceed 2 GB. The `ICorDebugValue3` interface enables you to determine the size of these arrays.  
   
 ## Requirements  
 

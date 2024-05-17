@@ -8,11 +8,13 @@ The <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter?displayProp
 
 <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter?displayProperty=fullName> serialization should be replaced with <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=fullName> serialization or <xref:System.Runtime.Serialization.NetDataContractSerializer?displayProperty=fullName> to be resilient to .NET Framework changes.
 
-| Name    | Value       |
-|:--------|:------------|
-| Scope   |Minor|
-|Version|4.5|
-|Type|Runtime|
+[!INCLUDE [binary-serialization-warning](../../../binary-serialization-warning.md)]
+
+| Name    | Value   |
+| :------ | :------ |
+| Scope   | Minor   |
+| Version | 4.5     |
+| Type    | Runtime |
 
 #### Affected APIs
 

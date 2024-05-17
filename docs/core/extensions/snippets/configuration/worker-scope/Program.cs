@@ -1,16 +1,13 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using WorkerScope.Example;
+﻿using WorkerScope.Example;
 
-using var host =
-    Host.CreateDefaultBuilder(args)
-        .ConfigureServices(
-            (_, services) =>
-                services.AddHostedService<Worker>()
-                    .AddScoped<IObjectIdProvider, AutoIncrementingIdProvider>()
-                    .AddScoped<IObjectRelay, ObjectWorkerService>()
-                    .AddScoped<IObjectStore, ObjectWorkerService>()
-                    .AddScoped<IObjectProcessor, ObjectWorkerService>())
-        .Build();
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+
+builder.Services.AddHostedService<Worker>();
+builder.Services.AddScoped<IObjectIdProvider, AutoIncrementingIdProvider>();
+builder.Services.AddScoped<IObjectRelay, ObjectWorkerService>();
+builder.Services.AddScoped<IObjectStore, ObjectWorkerService>();
+builder.Services.AddScoped<IObjectProcessor, ObjectWorkerService>();
+
+using IHost host = builder.Build();
 
 await host.RunAsync();

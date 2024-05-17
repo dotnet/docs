@@ -9,7 +9,6 @@ Imports System.ServiceModel.Dispatcher
 Imports System.ServiceModel.Channels
 Imports System.Security.Permissions
 
-<Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 Namespace Microsoft.Samples
     Public Class test
         Shared Sub Main()

@@ -13,6 +13,8 @@ ms.assetid: 67b3c6e2-6a8f-480d-a78f-ebeeaca1b95a
 ---
 # Event Design
 
+[!INCLUDE [not-current](includes/not-current.md)]
+
 Events are the most commonly used form of callbacks (constructs that allow the framework to call into user code). Other callback mechanisms include members taking delegates, virtual members, and interface-based plug-ins. Data from usability studies indicate that the majority of developers are more comfortable using events than they are using the other callback mechanisms. Events are nicely integrated with Visual Studio and many languages.
 
  It is important to note that there are two groups of events: events raised before a state of the system changes, called pre-events, and events raised after a state changes, called post-events. An example of a pre-event would be `Form.Closing`, which is raised before a form is closed. An example of a post-event would be `Form.Closed`, which is raised after a form is closed.

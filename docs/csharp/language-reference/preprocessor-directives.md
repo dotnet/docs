@@ -1,8 +1,8 @@
 ---
 description: "Learn the different C# preprocessor directives that control conditional compilation, warnings, nullable analysis, and more"
-title: "C# preprocessor directives"
-ms.date: 03/17/2021
-f1_keywords: 
+title: "Preprocessor directives"
+ms.date: 01/30/2023
+f1_keywords:
   - "cs.preprocessor"
   - "#nullable"
   - "#if"
@@ -19,7 +19,8 @@ f1_keywords:
   - "#pragma"
   - "#pragma warning"
   - "#pragma checksum"
-helpviewer_keywords: 
+  - "defaultline_CSharpKeyword"
+helpviewer_keywords:
   - "preprocessor directives [C#]"
   - "keywords [C#], preprocessor directives"
   - "#nullable directive [C#]"
@@ -46,7 +47,7 @@ Although the compiler doesn't have a separate preprocessor, the directives descr
 
 The `#nullable` preprocessor directive sets the *nullable annotation context* and *nullable warning context*. This directive controls whether nullable annotations have effect, and whether nullability warnings are given. Each context is either *disabled* or *enabled*.
 
-Both contexts can be specified at the project level (outside of C# source code). The `#nullable` directive controls the annotation and warning contexts and takes precedence over the project-level settings. A directive sets the context(s) it controls until another directive overrides it, or until the end of the source file.
+Both contexts can be specified at the project level (outside of C# source code) adding the [`Nullable`](./compiler-options/language.md#nullable) element to the `PropertyGroup` element. The `#nullable` directive controls the annotation and warning contexts and takes precedence over the project-level settings. A directive sets the context(s) it controls until another directive overrides it, or until the end of the source file.
 
 The effect of the directives is as follows:
 
@@ -69,7 +70,7 @@ You use four preprocessor directives to control conditional compilation:
 - `#else`: Closes the preceding conditional compilation and opens a new conditional compilation if the previous specified symbol isn't defined.
 - `#endif`: Closes the preceding conditional compilation.
 
-When the C# compiler finds an `#if` directive, followed eventually by an `#endif` directive, it compiles the code between the directives only if the specified symbol is defined. Unlike C and C++, you can't assign a numeric value to a symbol. The `#if` statement in C# is Boolean and only tests whether the symbol has been defined or not. For example:
+The C# compiler compiles the code between the `#if` directive and  `#endif` directive only if the specified symbol is defined, or not defined when the `!` not operator is used. Unlike C and C++, a numeric value to a symbol can't be assigned. The `#if` statement in C# is Boolean and only tests whether the symbol has been defined or not. For example, the following code is compiled when `DEBUG` is defined:
 
 ```csharp
 #if DEBUG
@@ -77,7 +78,25 @@ When the C# compiler finds an `#if` directive, followed eventually by an `#endif
 #endif
 ```
 
+The following code is compiled when `MYTEST` is **not** defined:
+
+```csharp
+#if !MYTEST
+    Console.WriteLine("MYTEST is not defined");
+#endif
+```
+
 You can use the operators [`==` (equality)](operators/equality-operators.md#equality-operator-) and [`!=` (inequality)](operators/equality-operators.md#inequality-operator-) to test for the [`bool`](builtin-types/bool.md) values `true` or `false`. `true` means the symbol is defined. The statement `#if DEBUG` has the same meaning as `#if (DEBUG == true)`. You can use the [`&&` (and)](operators/boolean-logical-operators.md#conditional-logical-and-operator-), [`||` (or)](operators/boolean-logical-operators.md#conditional-logical-or-operator-), and [`!` (not)](operators/boolean-logical-operators.md#logical-negation-operator-) operators to evaluate whether multiple symbols have been defined. You can also group symbols and operators with parentheses.
+
+The following is a complex directive that allows your code to take advantage of newer .NET features while remaining backward compatible. For example, imagine that you're using a NuGet package in your code, but the package only supports .NET 6 and up, as well as .NET Standard 2.0 and up:
+
+```csharp
+#if (NET6_0_OR_GREATER || NETSTANDARD2_0_OR_GREATER)
+    Console.WriteLine("Using .NET 6+ or .NET Standard 2+ code.");
+#else
+    Console.WriteLine("Using older code that doesn't support the above .NET versions.");
+#endif
+```
 
 `#if`, along with the `#else`, `#elif`, `#endif`, `#define`, and `#undef` directives, lets you include or exclude code based on the existence of one or more symbols. Conditional compilation can be useful when compiling code for a debug build or when compiling for a specific configuration.
 
@@ -88,7 +107,7 @@ A conditional directive beginning with an `#if` directive must explicitly be ter
 ```csharp
 #define VC7
 //...
-#if debug
+#if DEBUG
     Console.WriteLine("Debug build");
 #elif VC7
     Console.WriteLine("Visual Studio 7");
@@ -122,7 +141,7 @@ public class MyClass
 #elif (!DEBUG && MYTEST)
         Console.WriteLine("MYTEST is defined");
 #elif (DEBUG && MYTEST)
-        Console.WriteLine("DEBUG and MYTEST are defined");  
+        Console.WriteLine("DEBUG and MYTEST are defined");
 #else
         Console.WriteLine("DEBUG and MYTEST are not defined");
 #endif
@@ -162,7 +181,6 @@ You use `#define` to define a symbol. When you use the symbol as the expression 
 #if VERBOSE
     Console.WriteLine("Verbose output version");
 #endif
-
  ```
 
 > [!NOTE]
@@ -256,28 +274,57 @@ A `#line hidden` directive doesn't affect file names or line numbers in error re
 
 The `#line filename` directive specifies the file name you want to appear in the compiler output. By default, the actual name of the source code file is used. The file name must be in double quotation marks ("") and must be preceded by a line number.
 
-The following example shows how the debugger ignores the hidden lines in the code. When you run the example, it will display three lines of text. However, when you set a break point, as shown in the example, and hit F10 to step through the code, the debugger ignores the hidden line. Even if you set a break point at the hidden line, the debugger will still ignore it.
+Beginning with C# 10, you can use a new form of the `#line` directive:
 
 ```csharp
-// preprocessor_linehidden.cs
-using System;
-class MainClass
-{
-    static void Main()
-    {
-        Console.WriteLine("Normal line #1."); // Set break point here.
-#line hidden
-        Console.WriteLine("Hidden line.");
-#line default
-        Console.WriteLine("Normal line #2.");
-    }
-}
+#line (1, 1) - (5, 60) 10 "partial-class.cs"
+/*34567*/int b = 0;
 ```
+
+The components of this form are:
+
+- `(1, 1)`:  The start line and column for the first character on the line that follows the directive. In this example, the next line would be reported as line 1, column 1.
+- `(5, 60)`: The end line and column for the marked region.
+- `10`: The column offset for the `#line` directive to take effect. In this example, the 10th column would be reported as column one. That's where the declaration `int b = 0;` begins. This field is optional. If omitted, the directive takes effect on the first column.
+- `"partial-class.cs"`: The name of the output file.
+
+The preceding example would generate the following warning:
+
+```dotnetcli
+partial-class.cs(1,5,1,6): warning CS0219: The variable 'b' is assigned but its value is never used
+```
+
+After remapping, the variable, `b`, is on the first line, at character six, of the file `partial-class.cs`.
+
+Domain-specific languages (DSLs) typically use this format to provide a better mapping from the source file to the generated C# output. The most common use of this extended `#line` directive is to re-map warnings or errors that appear in a generated file to the original source.  For example, consider this razor page:
+
+```razor
+@page "/"
+Time: @DateTime.NowAndThen
+```
+
+The property `DateTime.Now` was typed incorrectly as `DateTime.NowAndThen`.  The generated C# for this razor snippet looks like the following, in `page.g.cs`:
+
+```csharp
+  _builder.Add("Time: ");
+#line (2, 6) - (2, 27) 15 "page.razor"
+  _builder.Add(DateTime.NowAndThen);
+```
+
+The compiler output for the preceding snippet is:
+
+```dotnetcli
+page.razor(2, 2, 2, 27)error CS0117: 'DateTime' does not contain a definition for 'NowAndThen'
+```
+
+Line 2, column 6 in `page.razor` is where the text `@DateTime.NowAndThen` begins. That's noted by `(2, 6)` in the directive. That span of `@DateTime.NowAndThen` ends at line 2, column 27. That's noted by the `(2, 27)` in the directive. The text for `DateTime.NowAndThen` begins in column 15 of `page.g.cs`. That's noted by the `15` in the directive. Putting all the arguments together, and the compiler reports the error in its location in `page.razor`. The developer can navigate directly to the error in their source code, not the generated source.
+
+To see more examples of this format, see the [feature specification](~/_csharplang/proposals/csharp-10.0/enhanced-line-directives.md#examples) in the section on examples.
 
 ## Pragmas
 
 `#pragma` gives the compiler special instructions for the compilation of the file in which it appears. The instructions must be supported by the compiler. In other words, you can't use `#pragma` to create custom preprocessing instructions.
-  
+
 - [`#pragma warning`](#pragma-warning): Enable or disable warnings.
 - [`#pragma checksum`](#pragma-checksum): Generate a checksum.
 

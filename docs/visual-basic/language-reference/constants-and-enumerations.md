@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Constants and Enumerations (Visual Basic)"
-title: "Constants and Enumerations"
+title: "Constants and Enumerations (Visual Basic)"
+titleSuffix: ""
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "enumerations [Visual Basic]"

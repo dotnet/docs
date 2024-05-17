@@ -13,7 +13,7 @@ ms.assetid: 8e08b74b-fa44-4018-b63d-0d0805f85e3f
 
 By default, when a user name and password is used for authentication, Windows Communication Foundation (WCF) uses Windows to validate the user name and password. However, WCF allows for custom user name and password authentication schemes, also known as *validators*. To incorporate a custom user name and password validator, create a class that derives from <xref:System.IdentityModel.Selectors.UserNamePasswordValidator> and then configure it.
 
-For a sample application, see [User Name Password Validator](/previous-versions/dotnet/framework/wcf/samples/user-name-password-validator).
+For a sample application, see [User Name Password Validator](../samples/user-name-password-validator.md).
 
 ### To create a custom user name and password validator
 

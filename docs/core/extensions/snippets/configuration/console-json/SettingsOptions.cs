@@ -1,19 +1,20 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace ConsoleJson.Example
+namespace ConsoleJson.Example;
+
+public sealed class SettingsOptions
 {
-    public class SettingsOptions
-    {
-        public const string Settings = nameof(Settings);
+    public const string ConfigurationSectionName = "MyCustomSettingsSection";
 
-        [RegularExpression(@"^[a-zA-Z''-'\s]{1,40}$")]
-        public string SiteTitle { get; set; }
+    [Required]
+    [RegularExpression(@"^[a-zA-Z''-'\s]{1,40}$")]
+    public required string SiteTitle { get; set; }
 
-        [Range(0, 1000,
-            ErrorMessage = "Value for {0} must be between {1} and {2}.")]
-        public int Scale { get; set; }
+    [Required]
+    [Range(0, 1_000,
+        ErrorMessage = "Value for {0} must be between {1} and {2}.")]
+    public required int Scale { get; set; }
 
-        public int VerbosityLevel { get; set; }
-    }
+    [Required]
+    public required int VerbosityLevel { get; set; }
 }

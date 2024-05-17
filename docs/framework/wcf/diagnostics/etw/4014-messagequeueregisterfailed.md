@@ -6,10 +6,10 @@ ms.assetid: d8aa80ea-e251-4b54-ade7-bfbd6670a6ef
 ---
 # 4014 - MessageQueueRegisterFailed
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4014|  
 |Keywords|ActivationServices|  
 |Level|Error|  

@@ -6,10 +6,10 @@ ms.assetid: c65657a4-80c1-448a-81d9-02d734e66075
 ---
 # 3329 - ClientFormatterDeserializeReplyStop
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3329|  
 |Keywords|ServiceModel|  
 |Level|Verbose|  

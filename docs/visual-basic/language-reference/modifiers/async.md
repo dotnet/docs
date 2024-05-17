@@ -54,7 +54,7 @@ For more information and examples, see [Async Return Types](../../programming-gu
 
 ## Example
 
-The following examples show an async event handler, an async lambda expression, and an async method. For a full example that uses these elements, see [Walkthrough: Accessing the Web by Using Async and Await](../../programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md). You can download the walkthrough code from [Developer Code Samples](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f).
+The following examples show an async event handler, an async lambda expression, and an async method. For a full example that uses these elements, see [Walkthrough: Accessing the Web by Using Async and Await](../../programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md). You can download the sample from the [.NET Sample Browser](/samples/dotnet/samples/async-and-await-vb/). The example code is in the **SerialAsyncExample** project.
 
 ```vb
 ' An event handler must be a Sub procedure.

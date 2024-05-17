@@ -10,7 +10,7 @@ namespace UnitTestingBestPractices
         {
             if (numbers == null)
             {
-                throw new ArgumentException(nameof(numbers));
+                throw new ArgumentNullException(nameof(numbers));
             }
 
             int result;
@@ -49,7 +49,7 @@ namespace UnitTestingBestPractices
             var result = int.TryParse(number, out var parsedNumber);
             if (result == false)
             {
-                 throw new ArgumentException(nameof(number));
+                throw new ArgumentException($"Unable to parse {nameof(number)} as an Int32.", nameof(number));
             }
 
             return parsedNumber;

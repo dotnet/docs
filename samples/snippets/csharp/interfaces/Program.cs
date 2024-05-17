@@ -7,7 +7,7 @@ namespace interfaces
         static void Main(string[] args)
         {
             InterfaceSnippets.TestInterfaces();
-            Properties.Examples();
+            // Properties.Examples();
             Indexers.Examples();
         }
     }

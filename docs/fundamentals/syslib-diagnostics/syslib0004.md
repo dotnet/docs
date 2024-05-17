@@ -2,6 +2,8 @@
 title: SYSLIB0004 warning
 description: Learn about the obsoletions that generate compile-time warning SYSLIB0004.
 ms.date: 10/20/2020
+f1_keywords:
+  - syslib0004
 ---
 # SYSLIB0004: The constrained execution region (CER) feature is not supported
 
@@ -19,9 +21,15 @@ The following CER-related APIs are obsolete:
 - <xref:System.Runtime.ConstrainedExecution.PrePrepareMethodAttribute?displayProperty=nameWithType>
 - <xref:System.Runtime.ConstrainedExecution.ReliabilityContractAttribute?displayProperty=nameWithType>
 
+However, the following CER-related APIs are *not* obsolete:
+
+- <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareDelegate(System.Delegate)?displayProperty=nameWithType>
+- <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareMethod%2A?displayProperty=nameWithType>
+- <xref:System.Runtime.ConstrainedExecution.CriticalFinalizerObject?displayProperty=nameWithType>
+
 ## Workarounds
 
-- If you have applied a CER attribute to a method, remove the attribute. These attributes have no effect in .NET 5 and later versions.
+- If you've applied a CER attribute to a method, remove the attribute. These attributes have no effect in .NET 5 and later versions.
 
   ```csharp
   // REMOVE the attribute below.
@@ -81,7 +89,7 @@ The following CER-related APIs are obsolete:
   }
   ```
 
-- If you are calling `RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup`, replace the call with a standard _try / catch / finally_ block.
+- If you are calling `RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup`, replace the call with a standard `try/catch/finally` block.
 
   ```csharp
   // The sample below produces warning SYSLIB0004.
@@ -110,7 +118,35 @@ The following CER-related APIs are obsolete:
   }
   ```
 
-[!INCLUDE [suppress-syslib-warning](includes/suppress-syslib-warning.md)]
+## Suppress a warning
+
+If you must use the obsolete APIs, you can suppress the warning in code or in your project file.
+
+To suppress only a single violation, add preprocessor directives to your source file to disable and then re-enable the warning.
+
+```csharp
+// Disable the warning.
+#pragma warning disable SYSLIB0004
+
+// Code that uses obsolete API.
+// ...
+
+// Re-enable the warning.
+#pragma warning restore SYSLIB0004
+```
+
+To suppress all the `SYSLIB0004` warnings in your project, add a `<NoWarn>` property to your project file.
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+   ...
+   <NoWarn>$(NoWarn);SYSLIB0004</NoWarn>
+  </PropertyGroup>
+</Project>
+```
+
+For more information, see [Suppress warnings](obsoletions-overview.md#suppress-warnings).
 
 ## See also
 

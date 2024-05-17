@@ -14,7 +14,7 @@ namespace specialNamespaceForOneMethodSignature
     using System;
     class Task<TResult>
     {
-        public TResult Tvalue;
+        public TResult TValue;
     }
     class Dummy <TResult>
     {
@@ -288,7 +288,7 @@ namespace APM_Task
             // Simulating some heavy work.
             Thread.SpinWait(500000000);
 
-            // Actual implemenation left as exercise for the reader.
+            // Actual implementation left as exercise for the reader.
             // Several examples are available on the Web.
             return "3.14159265358979323846264338327950288";
         }
@@ -311,7 +311,7 @@ namespace APM_Task
             AsyncCallback callBack = new AsyncCallback(PrintResult);
             IAsyncResult ar = calc.BeginCalculate(places, callBack, calc);
 
-            // Do some work on this thread while the calulator is busy.
+            // Do some work on this thread while the calculator is busy.
             Console.WriteLine("Working...");
             Thread.SpinWait(500000);
             Console.ReadLine();

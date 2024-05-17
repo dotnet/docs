@@ -8,8 +8,8 @@ namespace Applications.ConsoleApps
         public static void Main()
         {
             Console.WriteLine("Enter any text, followed by <Enter>:\n");
-            String s = Console.ReadLine();
-            ShowWords(s);
+            String? s = Console.ReadLine();
+            ShowWords(s ?? "You didn't enter anything.");
             Console.Write("\nPress any key to continue... ");
             Console.ReadKey();
         }

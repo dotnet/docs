@@ -1,4 +1,4 @@
-﻿'<SNIPPET1> 
+﻿'<SNIPPET1>
 Imports System.Security.Cryptography
 
 
@@ -6,12 +6,12 @@ Imports System.Security.Cryptography
 Module SCSign
 
     Sub Main(ByVal args() As String)
-        ' To idendify the Smart Card CryptoGraphic Providers on your
+        ' To identify the Smart Card CryptoGraphic Providers on your
         ' computer, use the Microsoft Registry Editor (Regedit.exe).
         ' The available Smart Card CryptoGraphic Providers are listed
         ' in HKEY_LOCAL_MACHINE\Software\Microsoft\Cryptography\Defaults\Provider.
 
-        ' Create a new CspParameters object that identifies a 
+        ' Create a new CspParameters object that identifies a
         ' Smart Card CryptoGraphic Provider.
         ' The 1st parameter comes from HKEY_LOCAL_MACHINE\Software\Microsoft\Cryptography\Defaults\Provider Types.
         ' The 2nd parameter comes from HKEY_LOCAL_MACHINE\Software\Microsoft\Cryptography\Defaults\Provider.
@@ -41,5 +41,5 @@ Module SCSign
     End Sub
 
 End Module
-'</SNIPPET1> 
+'</SNIPPET1>
 

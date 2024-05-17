@@ -1,7 +1,7 @@
 ---
 title: "Destroying threads"
 description: Know your options when you need to destroy a thread in .NET, such as cooperative cancellation or the Thread.Abort method. Learn to handle ThreadAbortException.
-ms.date: "03/30/2017"
+ms.date: 05/26/2022
 dev_langs: 
   - "csharp"
   - "vb"
@@ -10,12 +10,16 @@ helpviewer_keywords:
   - "threading [.NET], destroying threads"
 ms.topic: how-to
 ---
-# Destroying threads
+# Destroy threads
 
-To terminate the execution of the thread, you usually use the [cooperative cancellation model](cancellation-in-managed-threads.md). Sometimes it is not possible to stop a thread cooperatively, because it runs third-party code not designed for cooperative cancellation. The <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> method in .NET Framework can be used to terminate a managed thread forcibly. When you call <xref:System.Threading.Thread.Abort%2A>, the Common Language Runtime throws a <xref:System.Threading.ThreadAbortException> in the target thread, which the target thread can catch. For more information, see <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType>. The <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> method is not supported in .NET 5 (including .NET Core) and later versions. If you need to terminate the execution of third-party code forcibly in .NET 5+, run it in the separate process and use <xref:System.Diagnostics.Process.Kill%2A?displayProperty=nameWithType>.
+To terminate the execution of the thread, you usually use the [cooperative cancellation model](cancellation-in-managed-threads.md). However, sometimes it's not possible to stop a thread cooperatively, because it runs third-party code not designed for cooperative cancellation. In .NET Framework apps, you can use the <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> method to terminate a managed thread forcibly. When you call <xref:System.Threading.Thread.Abort%2A>, the Common Language Runtime throws a <xref:System.Threading.ThreadAbortException> in the target thread, which the target thread can catch. (However, the .NET Framework runtime always automatically rethrows the exception after the `catch` block.) For more information, see <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType>.
+
+The <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> method [is not supported](../../core/compatibility/core-libraries/5.0/thread-abort-obsolete.md) in .NET 5 (including .NET Core) and later versions. If you need to terminate the execution of third-party code forcibly in .NET 5+, run it in the separate process and use <xref:System.Diagnostics.Process.Kill%2A?displayProperty=nameWithType>.
 
 > [!NOTE]
-> If a thread is executing unmanaged code when its <xref:System.Threading.Thread.Abort%2A> method is called, the runtime marks it <xref:System.Threading.ThreadState.AbortRequested?displayProperty=nameWithType>. The exception is thrown when the thread returns to managed code.  
+>
+> - When you call <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> to abort a thread other than the current thread, you don't know what code has executed or failed to execute when the <xref:System.Threading.ThreadAbortException> is thrown. You also cannot be certain of the state of your application or any application and user state that it's responsible for preserving. For example, calling <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> may prevent the execution of static constructors or the release of managed or unmanaged resources.
+> - If a thread is executing unmanaged code when its <xref:System.Threading.Thread.Abort%2A> method is called, the runtime marks it <xref:System.Threading.ThreadState.AbortRequested?displayProperty=nameWithType>. The exception is thrown when the thread returns to managed code.  
   
  Once a thread is aborted, it cannot be restarted.  
   
@@ -62,6 +66,7 @@ catch (ThreadAbortException ex)
   
 ## See also
 
+- [Thread.Abort is obsolete](../../core/compatibility/core-libraries/5.0/thread-abort-obsolete.md)
 - <xref:System.Threading.ThreadAbortException>
 - <xref:System.Threading.Thread>
 - [Using Threads and Threading](using-threads-and-threading.md)

@@ -3,8 +3,6 @@ Imports System.Xml
 Imports System.Security.Cryptography
 Imports System.Security.Cryptography.Xml
 
-
-
 Class Program
 
     Shared Sub Main(ByVal args() As String)
@@ -27,7 +25,7 @@ Class Program
         cspParams.KeyContainerName = "XML_ENC_RSA_KEY"
         ' </snippet2>
         ' Create a new RSA key and save it in the container.  This key will encrypt
-        ' a symmetric key, which will then be encryped in the XML document.
+        ' a symmetric key, which will then be encrypted in the XML document.
         ' <snippet3>
         Dim rsaKey As New RSACryptoServiceProvider(cspParams)
         ' </snippet3>
@@ -67,27 +65,17 @@ Class Program
 
     Public Shared Sub Encrypt(ByVal Doc As XmlDocument, ByVal EncryptionElement As String, ByVal EncryptionElementID As String, ByVal Alg As RSA, ByVal KeyName As String)
         ' Check the arguments.
-        If Doc Is Nothing Then
-            Throw New ArgumentNullException("Doc")
-        End If
-        If EncryptionElement Is Nothing Then
-            Throw New ArgumentNullException("EncryptionElement")
-        End If
-        If EncryptionElementID Is Nothing Then
-            Throw New ArgumentNullException("EncryptionElementID")
-        End If
-        If Alg Is Nothing Then
-            Throw New ArgumentNullException("Alg")
-        End If
-        If KeyName Is Nothing Then
-            Throw New ArgumentNullException("KeyName")
-        End If
+        ArgumentNullException.ThrowIfNull(Doc)
+        ArgumentNullException.ThrowIfNull(EncryptionElement)
+        ArgumentNullException.ThrowIfNull(EncryptionElementID)
+        ArgumentNullException.ThrowIfNull(Alg)
+        ArgumentNullException.ThrowIfNull(KeyName)
         '//////////////////////////////////////////////
         ' Find the specified element in the XmlDocument
         ' object and create a new XmlElement object.
         '//////////////////////////////////////////////
         ' <snippet5>
-        Dim elementToEncrypt As XmlElement = Doc.GetElementsByTagName(EncryptionElement)(0) '
+        Dim elementToEncrypt As XmlElement = Doc.GetElementsByTagName(EncryptionElement)(0)
 
         ' Throw an XmlException if the element was not found.
         If elementToEncrypt Is Nothing Then
@@ -182,7 +170,7 @@ Class Program
             ' </snippet15>
         Catch e As Exception
             ' re-throw the exception.
-            Throw e
+            Throw
         Finally
             If Not (sessionKey Is Nothing) Then
                 sessionKey.Clear()
@@ -194,16 +182,10 @@ Class Program
 
 
     Public Shared Sub Decrypt(ByVal Doc As XmlDocument, ByVal Alg As RSA, ByVal KeyName As String)
-        ' Check the arguments.  
-        If Doc Is Nothing Then
-            Throw New ArgumentNullException("Doc")
-        End If
-        If Alg Is Nothing Then
-            Throw New ArgumentNullException("Alg")
-        End If
-        If KeyName Is Nothing Then
-            Throw New ArgumentNullException("KeyName")
-        End If
+        ' Check the arguments.
+        ArgumentNullException.ThrowIfNull(Doc)
+        ArgumentNullException.ThrowIfNull(Alg)
+        ArgumentNullException.ThrowIfNull(KeyName)
         ' Create a new EncryptedXml object.
         Dim exml As New EncryptedXml(Doc)
 

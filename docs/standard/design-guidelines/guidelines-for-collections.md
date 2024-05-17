@@ -6,6 +6,8 @@ ms.assetid: 297b8f1d-b11f-4dc6-960a-8e990817304e
 ---
 # Guidelines for Collections
 
+[!INCLUDE [not-current](includes/not-current.md)]
+
 Any type designed specifically to manipulate a group of objects having some common characteristic can be considered a collection. It is almost always appropriate for such types to implement <xref:System.Collections.IEnumerable> or <xref:System.Collections.Generic.IEnumerable%601>, so in this section we only consider types implementing one or both of those interfaces to be collections.
 
  ❌ DO NOT use weakly typed collections in public APIs.

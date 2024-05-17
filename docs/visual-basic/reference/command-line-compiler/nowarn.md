@@ -36,7 +36,7 @@ Suppresses the compiler's ability to generate warnings.
 |---|  
 |1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**. <br />2.  Click the **Compile** tab.<br />3.  Select the **Disable all warnings** check box to disable all warnings.<br />     - or -<br />     To disable a particular warning, click **None** from the drop-down list adjacent to the warning.|  
   
-## Example  
+## Example 1
 
  The following code compiles `T2.vb` and does not display any warnings.  
   
@@ -44,7 +44,7 @@ Suppresses the compiler's ability to generate warnings.
 vbc -nowarn t2.vb  
 ```  
   
-## Example  
+## Example 2  
 
  The following code compiles `T2.vb` and does not display the warnings for unused local variables (42024).  
   

@@ -1,7 +1,7 @@
 ---
 title: Discriminated Unions
 description: Learn how to use F# discriminated unions.
-ms.date: 08/15/2020
+ms.date: 08/03/2021
 ---
 # Discriminated Unions
 
@@ -176,7 +176,7 @@ type Shape =
 
     member this.Area =
         match this with
-        | Circle r -> 2.0 * Math.PI * r
+        | Circle r -> Math.PI * (r ** 2.0)
         | EquilateralTriangle s -> s * s * sqrt 3.0 / 4.0
         | Square s -> s * s
         | Rectangle(l, w) -> l * w

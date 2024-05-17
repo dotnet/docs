@@ -46,7 +46,7 @@ Windows Communication Foundation (WCF) provides a rich infrastructure for export
   
  The <xref:System.ServiceModel.Description.ServiceMetadataBehavior> uses a <xref:System.ServiceModel.Description.WsdlExporter?displayProperty=nameWithType> to export metadata for all service endpoints in your service. For more information about exporting metadata from a service, see [Exporting and Importing Metadata](exporting-and-importing-metadata.md).  
   
- The <xref:System.ServiceModel.Description.ServiceMetadataBehavior> augments your service host by adding a <xref:System.ServiceModel.Description.ServiceMetadataExtension> instance as an extension to your service host. The <xref:System.ServiceModel.Description.ServiceMetadataExtension?displayProperty=nameWithType> provides the implementation for the metadata publishing protocols. You can also use the <xref:System.ServiceModel.Description.ServiceMetadataExtension?displayProperty=nameWithType> to get the service's metadata at runtime by accessing the <xref:System.ServiceModel.Description.ServiceMetadataExtension.Metadata%2A> property.  
+ The <xref:System.ServiceModel.Description.ServiceMetadataBehavior> augments your service host by adding a <xref:System.ServiceModel.Description.ServiceMetadataExtension> instance as an extension to your service host. The <xref:System.ServiceModel.Description.ServiceMetadataExtension?displayProperty=nameWithType> provides the implementation for the metadata publishing protocols. You can also use the <xref:System.ServiceModel.Description.ServiceMetadataExtension?displayProperty=nameWithType> to get the service's metadata at run time by accessing the <xref:System.ServiceModel.Description.ServiceMetadataExtension.Metadata%2A> property.  
   
 > [!CAUTION]
 > If you add a MEX endpoint in your application configuration file and then attempt to add the <xref:System.ServiceModel.Description.ServiceMetadataBehavior> to your service host in code you get the following exception:  
@@ -55,7 +55,7 @@ Windows Communication Foundation (WCF) provides a rich infrastructure for export
 >
 > You can work around this issue by either adding the <xref:System.ServiceModel.Description.ServiceMetadataBehavior> in the configuration file or adding both the endpoint and <xref:System.ServiceModel.Description.ServiceMetadataBehavior> in code.  
 >
-> For an example of adding <xref:System.ServiceModel.Description.ServiceMetadataBehavior> in an application configuration file, see the [Getting Started](/previous-versions/dotnet/framework/wcf/samples/getting-started-sample). For an example of adding <xref:System.ServiceModel.Description.ServiceMetadataBehavior> in code, see the [Self-Host](/previous-versions/dotnet/framework/wcf/samples/self-host) sample.  
+> For an example of adding <xref:System.ServiceModel.Description.ServiceMetadataBehavior> in an application configuration file, see the [Getting Started](../samples/getting-started-sample.md). For an example of adding <xref:System.ServiceModel.Description.ServiceMetadataBehavior> in code, see the [Self-Host](../samples/self-host.md) sample.  
 
 > [!CAUTION]
 > When publishing metadata for a service that exposes two different service contracts in which each contain an operation of the same name an exception is thrown. For example, if you have a service that exposes a service contract called ICarService that has an operation Get(Car c) and the same service exposes a service contract called IBookService that has an operation Get(Book b), an exception is thrown or an error message is displayed when generating the service's metadata. To work around this issue do one of the following:  
@@ -86,7 +86,7 @@ Windows Communication Foundation (WCF) provides a rich infrastructure for export
   
 ## Dynamic Bindings  
 
- You can dynamically update the binding that you use to create a channel to a service endpoint in the event that the binding for the endpoint changes or you want to create a channel to an endpoint that uses the same contract but has a different binding. You can use the <xref:System.ServiceModel.Description.MetadataResolver> static class to retrieve and import metadata at runtime for service endpoints that implement a specific contract. You can then use the imported <xref:System.ServiceModel.Description.ServiceEndpoint?displayProperty=nameWithType> objects to create a client or channel factory to the desired endpoint.  
+ You can dynamically update the binding that you use to create a channel to a service endpoint in the event that the binding for the endpoint changes or you want to create a channel to an endpoint that uses the same contract but has a different binding. You can use the <xref:System.ServiceModel.Description.MetadataResolver> static class to retrieve and import metadata at run time for service endpoints that implement a specific contract. You can then use the imported <xref:System.ServiceModel.Description.ServiceEndpoint?displayProperty=nameWithType> objects to create a client or channel factory to the desired endpoint.  
   
 ## See also
 

@@ -3,9 +3,11 @@ title: Common web application architectures
 description: Architect Modern Web Applications with ASP.NET Core and Azure | Explore the common web application architectures
 author: ardalis
 ms.author: wiwagn
-ms.date: 12/01/2020
+ms.date: 12/12/2021
 ---
 # Common web application architectures
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 > "If you think good architecture is expensive, try bad architecture."
 > _- Brian Foote and Joseph Yoder_
@@ -47,7 +49,7 @@ In addition to the potential of swapping out implementations in response to futu
 Logical layering is a common technique for improving the organization of code in enterprise software applications, and there are several ways in which code can be organized into layers.
 
 > [!NOTE]
- > _Layers_ represent logical separation within the application. In the event that application logic is physically distributed to separate servers or processes, these separate physical deployment targets are referred to as _tiers_. It's possible, and quite common, to have an N-Layer application that is deployed to a single tier.
+> _Layers_ represent logical separation within the application. In the event that application logic is physically distributed to separate servers or processes, these separate physical deployment targets are referred to as _tiers_. It's possible, and quite common, to have an N-Layer application that is deployed to a single tier.
 
 ## Traditional "N-Layer" architecture applications
 
@@ -91,9 +93,9 @@ The simplest approach to scaling a web application in Azure is to configure scal
 
 ## Clean architecture
 
-Applications that follow the Dependency Inversion Principle as well as the Domain-Driven Design (DDD) principles tend to arrive at a similar architecture. This architecture has gone by many names over the years. One of the first names was Hexagonal Architecture, followed by Ports-and-Adapters. More recently, it's been cited as the [Onion Architecture](https://jeffreypalermo.com/blog/the-onion-architecture-part-1/) or [Clean Architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html). The latter name, Clean Architecture, is used as the name for this architecture in this e-book.
+Applications that follow the Dependency Inversion Principle as well as the Domain-Driven Design (DDD) principles tend to arrive at a similar architecture. This architecture has gone by many names over the years. One of the first names was Hexagonal Architecture, followed by Ports-and-Adapters. More recently, it's been cited as the [Onion Architecture](https://jeffreypalermo.com/blog/the-onion-architecture-part-1/) or [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html). The latter name, Clean Architecture, is used as the name for this architecture in this e-book.
 
-The eShopOnWeb reference application uses the Clean Architecture approach in organizing its code into projects. You can find a solution template you can use as a starting point for your own ASP.NET Core on the [ardalis/cleanarchitecture](https://github.com/ardalis/cleanarchitecture) GitHub repository.
+The eShopOnWeb reference application uses the Clean Architecture approach in organizing its code into projects. You can find a solution template you can use as a starting point for your own ASP.NET Core solutions in the [ardalis/cleanarchitecture](https://github.com/ardalis/cleanarchitecture) GitHub repository or by [installing the template from NuGet](https://www.nuget.org/packages/Ardalis.CleanArchitecture.Template/).
 
 Clean architecture puts the business logic and application model at the center of the application. Instead of having business logic depend on data access or other infrastructure concerns, this dependency is inverted: infrastructure and implementation details depend on the Application Core. This functionality is achieved by defining abstractions, or interfaces, in the Application Core, which are then implemented by types defined in the Infrastructure layer. A common way of visualizing this architecture is to use a series of concentric circles, similar to an onion. Figure 5-7 shows an example of this style of architectural representation.
 
@@ -146,9 +148,12 @@ The Application Core holds the business model, which includes entities, services
 ##### Application Core types
 
 - Entities (business model classes that are persisted)
+- Aggregates (groups of entities)
 - Interfaces
-- Services
-- DTOs
+- Domain Services
+- Specifications
+- Custom Exceptions and Guard Clauses
+- Domain Events and Handlers
 
 #### Infrastructure
 
@@ -169,19 +174,20 @@ The user interface layer in an ASP.NET Core MVC application is the entry point f
 ##### UI Layer types
 
 - Controllers
-- Filters
+- Custom Filters
+- Custom Middleware
 - Views
 - ViewModels
 - Startup
 
-The Startup class is responsible for configuring the application, and for wiring up implementation types to interfaces, allowing dependency injection to work properly at run time.
+The `Startup` class or _Program.cs_ file is responsible for configuring the application, and for wiring up implementation types to interfaces. The place where this logic is performed is known as the app's *composition root*, and is what allows dependency injection to work properly at run time.
 
 > [!NOTE]
-> In order to wire up dependency injection in ConfigureServices in the Startup.cs file of the UI project, the project may need to reference the Infrastructure project. This dependency can be eliminated, most easily by using a custom DI container. For the purposes of this sample, the simplest approach is to allow the UI project to reference the Infrastructure project.
+> In order to wire up dependency injection during app startup, the UI layer project may need to reference the Infrastructure project. This dependency can be eliminated, most easily by using a custom DI container that has built-in support for loading types from assemblies. For the purposes of this sample, the simplest approach is to allow the UI project to reference the Infrastructure project (but developers should limit actual references to types in the Infrastructure project to the app's composition root).
 
 ## Monolithic applications and containers
 
-You can build a single and monolithic-deployment based Web Application or Service and deploy it as a container. Within the application, it might not be monolithic but organized into several libraries, components, or layers. Externally, it's a single container like a single process, single web application, or single service.
+You can build a single and monolithic-deployment based Web Application or Service and deploy it as a container. Within the application, it might not be monolithic but organized into several libraries, components, or layers. Externally, it's a single container with a single process, single web application, or single service.
 
 To manage this model, you deploy a single container to represent the application. To scale, just add additional copies with a load balancer in front. The simplicity comes from managing a single deployment in a single container or VM.
 
@@ -205,7 +211,7 @@ The deployment to the various hosts can be managed with traditional deployment t
 
 ### Monolithic application deployed as a container
 
-There are benefits of using containers to manage monolithic application deployments. Scaling the instances of containers is far faster and easier than deploying additional VMs. Even when using virtual machine scale sets to scale VMs, they take time to instance. When deployed as app instances, the configuration of the app is managed as part of the VM.
+There are benefits of using containers to manage monolithic application deployments. Scaling the instances of containers is far faster and easier than deploying additional VMs. Even when using virtual machine scale sets to scale VMs, they take time to create. When deployed as app instances, the configuration of the app is managed as part of the VM.
 
 Deploying updates as Docker images is far faster and network efficient. Docker Images typically start in seconds, speeding rollouts. Tearing down a Docker instance is as easy as issuing a `docker stop` command, typically completing in less than a second.
 
@@ -223,7 +229,9 @@ Early in the development of an application, you might not have a clear idea wher
 
 Separating an application into many discrete processes also introduces overhead. There's more complexity in separating features into different processes. The communication protocols become more complex. Instead of method calls, you must use asynchronous communications between services. As you move to a microservices architecture, you need to add many of the building blocks implemented in the microservices version of the eShopOnContainers application: event bus handling, message resiliency and retries, eventual consistency, and more.
 
-The much simpler [eShopOnWeb reference application](https://github.com/dotnet-architecture/eShopOnWeb) supports single-container monolithic container usage. The application includes one web application that includes traditional MVC views, web APIs, and Razor Pages. This application can be launched from the solution root using the `docker-compose build` and `docker-compose up` commands. This command configures a container for the web instance, using the `Dockerfile` found in the web project's root, and runs the container on a specified port. You can download the source for this application from GitHub and run it locally. Even this monolithic application benefits from being deployed in a container environment.
+The much simpler [eShopOnWeb reference application](https://github.com/dotnet-architecture/eShopOnWeb) supports single-container monolithic container usage. The application includes one web application that includes traditional MVC views, web APIs, and Razor Pages. Optionally, you can run the application's Blazor-based admin component, which requires a separate API project to run as well.
+
+The application can be launched from the solution root using the `docker-compose build` and `docker-compose up` commands. This command configures a container for the web instance, using the `Dockerfile` found in the web project's root, and runs the container on a specified port. You can download the source for this application from GitHub and run it locally. Even this monolithic application benefits from being deployed in a container environment.
 
 For one, the containerized deployment means that every instance of the application runs in the same environment. This approach includes the developer environment where early testing and development take place. The development team can run the application in a containerized environment that matches the production environment.
 
@@ -262,7 +270,7 @@ networks:
 The `docker-compose.yml` file references the `Dockerfile` in the `Web` project. The `Dockerfile` is used to specify which base container will be used and how the application will be configured on it. The `Web`' `Dockerfile`:
 
 ```dockerfile
-FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /app
 
 COPY *.sln .
@@ -272,7 +280,7 @@ RUN dotnet restore
 
 RUN dotnet publish -c Release -o out
 
-FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS runtime
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
 WORKDIR /app
 COPY --from=build /app/src/Web/out ./
 
@@ -287,10 +295,16 @@ Note that running Docker containers may be bound to ports you might otherwise tr
 
 If you want to add Docker support to your application using Visual Studio, make sure Docker Desktop is running when you do so. The wizard won't run correctly if Docker Desktop isn't running when you start the wizard. In addition, the wizard examines your current container choice to add the correct Docker support. If you want to add, support for Windows Containers, you need to run the wizard while you have Docker Desktop running with Windows Containers configured. If you want to add, support for Linux containers, run the wizard while you have Docker running with Linux containers configured.
 
+### Other web application architectural styles
+
+- [Web-Queue-Worker](/azure/architecture/guide/architecture-styles/web-queue-worker): The core components of this architecture are a web front end that serves client requests, and a worker that performs resource-intensive tasks, long-running workflows, or batch jobs. The web front end communicates with the worker through a message queue.
+- [N-tier](/azure/architecture/guide/architecture-styles/n-tier): An N-tier architecture divides an application into logical layers and physical tiers.
+- [Microservice](/azure/architecture/guide/architecture-styles/microservices): A microservices architecture consists of a collection of small, autonomous services. Each service is self-contained and should implement a single business capability within a bounded context.
+
 ### References – Common web architectures
 
 - **The Clean Architecture**  
-  <https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html>
+  <https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html>
 - **The Onion Architecture**  
   <https://jeffreypalermo.com/blog/the-onion-architecture-part-1/>
 - **The Repository Pattern**  
@@ -300,7 +314,7 @@ If you want to add Docker support to your application using Visual Studio, make 
 - **Architecting Microservices e-book**  
   <https://aka.ms/MicroservicesEbook>
 - **DDD (Domain-Driven Design)**  
-  <https://docs.microsoft.com/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/>
+  [https://learn.microsoft.com/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/](../microservices/microservice-ddd-cqrs-patterns/index.md)
 
 >[!div class="step-by-step"]
 >[Previous](architectural-principles.md)

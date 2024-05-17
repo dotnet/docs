@@ -1,0 +1,70 @@
+{
+  "Timestamp": "02:28:19 ",
+  "EventId": 0,
+  "LogLevel": "Information",
+  "Category": "Console.ExampleFormatters.Json.Startup",
+  "Message": "Hello .NET friends!",
+  "State": {
+    "Message": "Hello .NET friends!",
+    "{OriginalFormat}": "Hello .NET friends!"
+  }
+}
+{
+  "Timestamp": "02:28:21 ",
+  "EventId": 14,
+  "LogLevel": "Information",
+  "Category": "Microsoft.Hosting.Lifetime",
+  "Message": "Now listening on: https://localhost:5001",
+  "State": {
+    "Message": "Now listening on: https://localhost:5001",
+    "address": "https://localhost:5001",
+    "{OriginalFormat}": "Now listening on: {address}"
+  }
+}
+{
+  "Timestamp": "02:28:21 ",
+  "EventId": 14,
+  "LogLevel": "Information",
+  "Category": "Microsoft.Hosting.Lifetime",
+  "Message": "Now listening on: http://localhost:5000",
+  "State": {
+    "Message": "Now listening on: http://localhost:5000",
+    "address": "http://localhost:5000",
+    "{OriginalFormat}": "Now listening on: {address}"
+  }
+}
+{
+  "Timestamp": "02:28:21 ",
+  "EventId": 0,
+  "LogLevel": "Information",
+  "Category": "Microsoft.Hosting.Lifetime",
+  "Message": "Application started. Press Ctrl\u002BC to shut down.",
+  "State": {
+    "Message": "Application started. Press Ctrl\u002BC to shut down.",
+    "{OriginalFormat}": "Application started. Press Ctrl\u002BC to shut down."
+  }
+}
+{
+  "Timestamp": "02:28:21 ",
+  "EventId": 0,
+  "LogLevel": "Information",
+  "Category": "Microsoft.Hosting.Lifetime",
+  "Message": "Hosting environment: Development",
+  "State": {
+    "Message": "Hosting environment: Development",
+    "envName": "Development",
+    "{OriginalFormat}": "Hosting environment: {envName}"
+  }
+}
+{
+  "Timestamp": "02:28:21 ",
+  "EventId": 0,
+  "LogLevel": "Information",
+  "Category": "Microsoft.Hosting.Lifetime",
+  "Message": "Content root path: .\\snippets\\logging\\console-formatter-json",
+  "State": {
+    "Message": "Content root path: .\\snippets\\logging\\console-formatter-json",
+    "contentRoot": ".\\snippets\\logging\\console-formatter-json",
+    "{OriginalFormat}": "Content root path: {contentRoot}"
+  }
+}

@@ -124,7 +124,7 @@ The [Dev Containers extension](https://marketplace.visualstudio.com/items?itemNa
     ```
 
 1. Open a new terminal in Visual Studio Code.
-1. Run the following AZD command to bring the GitHub repository to your local computer.
+1. Run the following `azd` command to clone the GitHub repository to your local computer.
 
     ```bash
     azd init -t azure-search-openai-demo-csharp

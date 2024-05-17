@@ -68,6 +68,7 @@ To follow along with this article, you need the following prerequisites:
 * Azure account permissions - Your Azure Account must have Microsoft.Authorization/roleAssignments/write permissions, such as [User Access Administrator](/azure/role-based-access-control/built-in-roles#user-access-administrator) or [Owner](/azure/role-based-access-control/built-in-roles#owner).
 * Access granted to Azure OpenAI in the desired Azure subscription.
     Currently, access to this service is granted only by application. You can apply for access to Azure OpenAI by completing the form at [https://aka.ms/oai/access](https://aka.ms/oai/access). Open an issue on this repo to contact us if you have an issue.
+* [Azure Developer CLI](/azure/developer/azure-developer-cli)
 * [Docker Desktop](https://www.docker.com/products/docker-desktop/) - start Docker Desktop if it's not already running
 * [Visual Studio Code](https://code.visualstudio.com/)
 * [Dev Container Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
@@ -110,37 +111,33 @@ Begin now with a development environment that has all the dependencies installed
 
 The [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) for Visual Studio Code requires [Docker](https://docs.docker.com/) to be installed on your local machine. The extension hosts the development container locally using the Docker host with the correct developer tools and dependencies preinstalled to complete this article.
 
-1. Ensure that you have the [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) installed in Visual Studio Code.
+1. Create a new local directory on your computer for the project.
 
-1. [![Open this project in Dev Containers](https://img.shields.io/static/v1?label=Dev%20Containers&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://codespaces.new/Azure-Samples/azure-search-openai-demo-csharp)
+    ```bash
+    mkdir my-intelligent-app && cd my-intelligent-app
+    ```
 
-1. Open a new terminal in the editor.
+1. Open Visual Studio Code in that directory:
 
-    > [!TIP]
-    > You can use the main menu to navigate to the **Terminal** menu option and then select the **New Terminal** option.
-    >
-    > :::image type="content" source="./media/get-started-app-chat-template/open-terminal-option.png" lightbox="./media/get-started-app-chat-template/open-terminal-option.png" alt-text="Screenshot of the menu option to open a new terminal.":::
+    ```bash
+    code .
+    ```
 
+1. Open a new terminal in Visual Studio Code.
+1. Run the following `azd` command to clone the GitHub repository to your local computer.
+
+    ```bash
+    azd init -t azure-search-openai-demo-csharp
+    ```
+
+1. Open the Command Pallete, search for and select **Dev Containers: Open Folder in Container** to open the project in a dev container. Wait until the dev container opens before continuing.
 1. Sign in to Azure with the Azure Developer CLI.
 
     ```bash
     azd auth login
     ```
 
-    When prompted, copy the code from the terminal and then paste it into a browser. Follow the instructions to authenticate with your Azure account.
-
-1. Create a folder and initialize it to use the sample project with Azure Developer CLI:
-
-    ```bash
-    azd init -t azure-search-openai-demo-csharp
-    ```
-
-    You don't need to clone this repository.
-
-1. Open the **Command Palette**, search for the **Dev Containers** commands, and then select **Dev Containers: Reopen in Container**.
-
-    > [!TIP]
-    > Visual Studio Code may automatically prompt you to reopen the existing folder within a development container. This is functionally equivalent to using the command palette to reopen the current workspace in a container.
+    Copy the code from the terminal and then paste it into a browser. Follow the instructions to authenticate with your Azure account.
 
 1. The remaining exercises in this project take place in the context of this development container.
 

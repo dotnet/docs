@@ -46,7 +46,7 @@ Use embeddings to help a model create code from text or vice versa, by convertin
 
 ## Choose an embedding model
 
-You generate embeddings for your raw data by using an embedding model: an AI model that can encode a piece of non-numeric data into a vector (a long array of numbers). The model can also decode an embedding into non-numeric data that has the same or similar meaning as the original, raw data. There are many embedding models available for you to use, with OpenAI's text-embedding-ada-002 model being one of the common models you'll see used. For more examples, see the list of [Embedding models available on Azure OpenAI](/azure/ai-services/openai/concepts/models#embeddings).
+You generate embeddings for your raw data by using an embedding model: an AI model that can encode a piece of non-numeric data into a vector (a long array of numbers). The model can also decode an embedding into non-numeric data that has the same or similar meaning as the original, raw data. There are many embedding models available for you to use, with OpenAI's text-embedding-ada-002 model being one of the common models that's used. For more examples, see the list of [Embedding models available on Azure OpenAI](/azure/ai-services/openai/concepts/models#embeddings).
 
 ### Store and process embeddings in a vector database
 
@@ -54,7 +54,7 @@ After you generate embeddings, you'll need a way to store them so you can later 
 
 ### Using embeddings in your LLM solution
 
-When building LLM-based application, you can use Semantic Kernel to integrate embedding models and vector stores, so you can quickly pull in text data, and generate and store embeddings. This lets you use a vector database solution to store and retrieve semantic memories.
+When building LLM-based applications, you can use Semantic Kernel to integrate embedding models and vector stores, so you can quickly pull in text data, and generate and store embeddings. This lets you use a vector database solution to store and retrieve semantic memories.
 
 ## Related content
 

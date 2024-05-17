@@ -1,7 +1,7 @@
 ---
-description: "Method Parameters"
-title: "Method parameters are passed by value. Modifiers enable pass-by-reference semantics, including distinctions such as read-only, and `out` parameters. Learn the different parameter passing modes and how to use them. The params modifier allows a series of optional arguments."
-ms.date: 10/05/2023
+title: "Method Parameters"
+description: "Method parameters are passed by value. Modifiers enable pass-by-reference semantics, including distinctions such as read-only, and `out` parameters. The params modifier allows a series of optional arguments."
+ms.date: 05/17/2024
 helpviewer_keywords: 
   - "methods [C#], parameters"
   - "method parameters [C#]"
@@ -220,7 +220,7 @@ The declared type of the `params` parameter must be a collection type. Recognize
   - <xref:System.Collections.Generic.IList%601?displayProperty=fullName>
   in which cases the *element type* is `T`
 
-Prior to C# 13, the parameter must be a single dimensional array.
+Before C# 13, the parameter must be a single dimensional array.
 
 When you call a method with a `params` parameter, you can pass in:
 
@@ -230,6 +230,6 @@ When you call a method with a `params` parameter, you can pass in:
 
 The following example demonstrates various ways in which arguments can be sent to a `params` parameter.
 
-[!code-csharp[csrefKeywordsMethodParams#5](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsMethodParams/CS/csrefKeywordsMethodParams.cs#5)]
+:::code language="csharp" source="snippets/ParameterModifiers.cs" id="ParamsModifierExamples":::
 
 - [Argument lists](~/_csharpstandard/standard/expressions.md#1262-argument-lists) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.

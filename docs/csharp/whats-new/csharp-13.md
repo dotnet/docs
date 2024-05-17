@@ -1,7 +1,7 @@
 ---
 title: What's new in C# 13
 description: Get an overview of the new features in C# 13. Follow the release of new preview features as .NET 9 and C# 13 previews are released.
-ms.date: 05/02/2024
+ms.date: 05/17/2024
 ms.topic: whats-new
 ---
 # What's new in C# 13
@@ -24,9 +24,9 @@ New features are added to the "What's new in C#" page when they're available in 
 
 ## `params` collections
 
-The `params` modifier isn't limited to array types. You can now use `param` with any recognized collection type. In addition to arrays, <xref:System.Span%601?displayProperty=nameWithType>, <xref:System.ReadOnlySpan%601?displayProperty=nameWithType>, types that implement <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> in addition to having an `Add` method. In addition to concrete types, interfaces <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType>, <xref:System.Collections.Generic.IReadOnlyCollection%601?displayProperty=nameWithType>, <xref:System.Collections.Generic.IReadOnlyList%601?displayProperty=nameWithType>, <xref:System.Collections.Generic.ICollection%601?displayProperty=nameWithType> or <xref:System.Collections.Generic.IList%601?displayProperty=nameWithType> can be used.
+The `params` modifier isn't limited to array types. You can now use `param` with any recognized collection type. In addition to arrays, <xref:System.Span%601?displayProperty=nameWithType>, <xref:System.ReadOnlySpan%601?displayProperty=nameWithType>, types that implement <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> in addition to having an `Add` method. In addition to concrete types, interfaces <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType>, <xref:System.Collections.Generic.IReadOnlyCollection%601?displayProperty=nameWithType>, <xref:System.Collections.Generic.IReadOnlyList%601?displayProperty=nameWithType>, <xref:System.Collections.Generic.ICollection%601?displayProperty=nameWithType>, or <xref:System.Collections.Generic.IList%601?displayProperty=nameWithType> can be used.
 
-When an interface type is used, the compiler synthesizes the storage for the arguments supplied. You can learn more in the feature specification for [`params` collections](~/_csharplang/proposals/params-collections.md)
+When an interface type is used, the compiler synthesizes the storage for the arguments supplied. You can learn more in the feature specification for [`params` collections](~/_csharplang/proposals/params-collections.md).
 
 ## New lock object
 
@@ -42,7 +42,7 @@ You can use `\e` as a [character literal](~/_csharpstandard/standard/lexical-str
 
 This feature makes small optimizations to overload resolution involving method groups. The previous behavior was for the compiler to construct the full set of candidate methods for a method group. If a natural type was needed, the natural type was determined from the full set of candidate methods.
 
-The new behavior is to prune the set of candidate methods at each scope, removing those candidate methods that aren't applicable. Typically, these are generic methods with the wrong arity, or constraints that aren't satisfied. The process continues to the next outer scope only if no candidate methods are found. This process more closely follows the general algorithm for overload resolution. If all candidate methods found at a given scope don't match, the method group doesn't have a natural type.
+The new behavior is to prune the set of candidate methods at each scope, removing those candidate methods that aren't applicable. Typically, the removed methods are generic methods with the wrong arity, or constraints that aren't satisfied. The process continues to the next outer scope only if no candidate methods are found. This process more closely follows the general algorithm for overload resolution. If all candidate methods found at a given scope don't match, the method group doesn't have a natural type.
 
 You can read the details of the changes in the [proposal specification](~/_csharplang/proposals/method-group-natural-type-improvements.md).
 

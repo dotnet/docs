@@ -3,7 +3,7 @@ title: "Understanding OpenAI Function Calling"
 description: "Understand how function calling enables you to integrate external tools with your OpenAI application."
 author: haywoodsloan
 ms.topic: concept-article 
-ms.date: 04/26/2024
+ms.date: 05/14/2024
 
 #customer intent: As a .NET developer, I want to understand OpenAI function calling so that I can integrate external tools with AI completions in my .NET project.
 
@@ -61,6 +61,6 @@ If your request exceeds the model's token limit, try the following modifications
 
 ## Related content
 
-* [Understanding tokens]<!--(understanding-tokens.md)-->
+* [Understanding tokens](understanding-tokens.md)
 * [Creating native functions for AI to call](/semantic-kernel/agents/plugins/using-the-kernelfunction-decorator?tabs=Csharp)
 * [Prompt engineering](prompt-engineering-dotnet.md)

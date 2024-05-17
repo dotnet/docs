@@ -26,9 +26,12 @@ Before .NET 5, the .NET globalization APIs used different underlying libraries o
 
 Starting with .NET 5, developers have more control over which underlying library is used, enabling applications to avoid differences across platforms.
 
+> [!NOTE]
+> The culture data that drives the behavior of the ICU library is usually maintained by the [Common Locale Data Repository (CLDR)](https://cldr.unicode.org/), not the runtime.
+
 ## ICU on Windows
 
-Windows now incorporates a preinstalled [icu.dll](/windows/win32/intl/international-components-for-unicode--icu-) version as part of its features that's automatically employed for globalization tasks. This modification allows .NET to leverage this ICU library for its globalization support. In cases where the ICU library is unavailable or cannot be loaded, as is the case with older Windows versions, .NET 5 and subsequent versions revert to using the NLS-based implementation.
+Windows now incorporates a preinstalled [icu.dll](/windows/win32/intl/international-components-for-unicode--icu-) version as part of its features that's automatically employed for globalization tasks. This modification allows .NET to use this ICU library for its globalization support. In cases where the ICU library is unavailable or can't be loaded, as is the case with older Windows versions, .NET 5 and subsequent versions revert to using the NLS-based implementation.
 
 The following table shows which versions of .NET are capable of loading the ICU library across different Windows client and server versions:
 
@@ -65,7 +68,7 @@ Console.WriteLine($"{greeting.IndexOf("\0", StringComparison.Ordinal)}");
 
 By default, <xref:System.String.IndexOf(System.String)?displayProperty=nameWithType> performs a culture-aware linguistic search. ICU considers the null character `\0` to be a *zero-weight character*, and thus the character isn't found in the string when using a linguistic search on .NET 5 and later. However, NLS doesn't consider the null character `\0` to be a zero-weight character, and a linguistic search on .NET Core 3.1 and earlier locates the character at position 3. An ordinal search finds the character at position 3 on all .NET versions.
 
-You can run code analysis rules [CA1307: Specify StringComparison for clarity](../../fundamentals/code-analysis/quality-rules/ca1307.md) and [CA1309: Use ordinal StringComparison](../../fundamentals/code-analysis/quality-rules/ca1309.md) to find call sites in your code where the string comparison isn't specified or it is not ordinal.
+You can run code analysis rules [CA1307: Specify StringComparison for clarity](../../fundamentals/code-analysis/quality-rules/ca1307.md) and [CA1309: Use ordinal StringComparison](../../fundamentals/code-analysis/quality-rules/ca1309.md) to find call sites in your code where the string comparison isn't specified or it isn't ordinal.
 
 For more information, see [Behavior changes when comparing strings on .NET 5+](../../standard/base-types/string-comparison-net-5-plus.md).
 
@@ -136,7 +139,7 @@ In addition, it's crucial for apps to ensure that they're not running in [global
 
 ### Use NLS instead of ICU
 
-Using ICU instead of NLS may result in behavioral differences with some globalization-related operations. To revert back to using NLS, a developer can opt out of the ICU implementation. Applications can enable NLS mode in any of the following ways:
+Using ICU instead of NLS might result in behavioral differences with some globalization-related operations. To revert back to using NLS, a developer can opt out of the ICU implementation. Applications can enable NLS mode in any of the following ways:
 
 - In the project file:
 
@@ -183,9 +186,9 @@ To determine the version of .NET, use <xref:System.Runtime.InteropServices.Runti
 
 ## App-local ICU
 
-Each release of ICU may bring with it bug fixes as well as updated Common Locale Data Repository (CLDR) data that describes the world's languages. Moving between versions of ICU can subtly impact app behavior when it comes to globalization-related operations. To help application developers ensure consistency across all deployments, .NET 5 and later versions enable apps on both Windows and Unix to carry and use their own copy of ICU.
+Each release of ICU might bring with it bug fixes and updated Common Locale Data Repository (CLDR) data that describes the world's languages. Moving between versions of ICU can subtly impact app behavior when it comes to globalization-related operations. To help application developers ensure consistency across all deployments, .NET 5 and later versions enable apps on both Windows and Unix to carry and use their own copy of ICU.
 
-Applications can opt-in to an app-local ICU implementation mode in one of the following ways:
+Applications can opt in to an app-local ICU implementation mode in one of the following ways:
 
 - In the project file, set the appropriate `RuntimeHostConfigurationOption` value:
 
@@ -247,7 +250,7 @@ macOS has a different behavior for resolving dependent dynamic libraries from th
  /usr/lib/libc++.1.dylib (compatibility version 1.0.0, current version 902.1.0)
 ```
 
-These commands just reference the name of the dependent libraries for the other components of ICU. The loader performs the search following the `dlopen` conventions, which involves having these libraries in the system directories or setting the `LD_LIBRARY_PATH` env vars, or having ICU at the app-level directory. If you can't set `LD_LIBRARY_PATH` or ensure that ICU binaries are at the app-level directory, you will need to do some extra work.
+These commands just reference the name of the dependent libraries for the other components of ICU. The loader performs the search following the `dlopen` conventions, which involves having these libraries in the system directories or setting the `LD_LIBRARY_PATH` env vars, or having ICU at the app-level directory. If you can't set `LD_LIBRARY_PATH` or ensure that ICU binaries are at the app-level directory, you'll need to do some extra work.
 
 There are some directives for the loader, like `@loader_path`, which tell the loader to search for that dependency in the same directory as the binary with that load command. There are two ways to achieve this:
 

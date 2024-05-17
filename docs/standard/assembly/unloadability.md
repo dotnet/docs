@@ -69,6 +69,13 @@ However, the unload doesn't complete immediately. As previously mentioned, it re
 
 [!code-csharp[Part 6](~/samples/snippets/standard/assembly/unloading/simple_example.cs#7)]
 
+### Limitations
+
+Assemblies loaded in a collectible `AssemblyLoadContext` must abide by the general [restrictions on collectible assemblies](../../fundamentals/reflection/collectible-assemblies.md#restrictions-on-collectible-assemblies). The following limitations additionally apply:
+
+* Assemblies written in C++/CLI are not supported.
+* [ReadyToRun](../../core/deploying/ready-to-run.md) generated code will be ignored.
+
 ### The Unloading event
 
 In some cases, it might be necessary for the code loaded into a custom `AssemblyLoadContext` to perform some cleanup when the unloading is initiated. For example, it might need to stop threads or clean up strong GC handles. The `Unloading` event can be used in such cases. You can hook a handler that performs the necessary cleanup to this event.

@@ -1,14 +1,14 @@
 ---
 title: Develop .NET applications with AI features
 description: Learn how you can build .NET applications that include AI features.
-ms.date: 05/02/2024
+ms.date: 05/17/2024
 ms.topic: overview
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 ---
 
 # Develop .NET applications with AI features
 
-With .NET, you can use artificial intelligence (AI) to mimic human behavior and accomplish complex tasks in your applications&mdash;all using the tools, platforms, and services that are familiar to you.
+With .NET, you can use artificial intelligence (AI) to automate and accomplish complex tasks in your applications using the tools, platforms, and services that are familiar to you.
 
 ## Why choose .NET to build AI applications?
 

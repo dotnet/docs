@@ -1,5 +1,5 @@
 ---
-title: "Generic Methods - C# Programming Guide"
+title: "Generic Methods"
 description: Learn about methods declared with type parameters, known as generic methods. See code examples and view additional available resources.
 ms.date: 07/20/2015
 helpviewer_keywords: 

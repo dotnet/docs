@@ -1,9 +1,9 @@
 ---
 title: Install .NET on macOS
-description: Learn about what versions of macOS you can install .NET on.
+description: Learn about which versions of .NET SDK and .NET Runtime are supported, and how to install .NET on macOS.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/13/2023
+ms.date: 05/14/2024
 ms.custom: linux-related-content
 ---
 
@@ -28,13 +28,13 @@ There are two types of supported releases: Long Term Support (LTS) releases and 
 
 The following table is a list of currently supported .NET releases and the versions of macOS they're supported on:
 
-| Operating System       | .NET 8 (LTS) | .NET 7 (STS) | .NET 6 (LTS) |
-|------------------------|--------------|--------------|--------------|
-| macOS 14.0 "Sonoma"    | ✔️ 8.0        | ✔️ 7.0        | ✔️ 6.0        |
-| macOS 13.0 "Ventura"   | ✔️ 8.0        | ✔️ 7.0        | ✔️ 6.0        |
-| macOS 12.0 "Monterey"  | ✔️ 8.0        | ✔️ 7.0        | ✔️ 6.0        |
-| macOS 11.0 "Big Sur"   | ❌           | ✔️ 7.0        | ✔️ 6.0        |
-| macOS 10.15 "Catalina" | ❌           | ✔️ 7.0        | ✔️ 6.0        |
+| Operating System       | .NET 8 (LTS) | .NET 6 (LTS) |
+|------------------------|--------------|--------------|
+| macOS 14.0 "Sonoma"    | ✔️ 8.0       | ✔️ 6.0        |
+| macOS 13.0 "Ventura"   | ✔️ 8.0       | ✔️ 6.0        |
+| macOS 12.0 "Monterey"  | ✔️ 8.0       | ✔️ 6.0        |
+| macOS 11.0 "Big Sur"   | ❌           | ✔️ 6.0        |
+| macOS 10.15 "Catalina" | ❌           | ✔️ 6.0        |
 
 For a full list of .NET versions and their support life cycle, see [.NET Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
 
@@ -87,7 +87,6 @@ brew install mono-libgdiplus
 macOS has standalone installers that can be used to install .NET:
 
 - ✔️ [.NET 8 downloads](https://dotnet.microsoft.com/download/dotnet/8.0)
-- ✔️ [.NET 7 downloads](https://dotnet.microsoft.com/download/dotnet/7.0)
 - ✔️ [.NET 6 downloads](https://dotnet.microsoft.com/download/dotnet/6.0)
 
 ## Manual install
@@ -99,7 +98,6 @@ As an alternative to the macOS installers for .NET, you can download and manuall
 Download a **binary** release for either the SDK or the runtime from one of the following sites. The .NET SDK includes the corresponding runtime:
 
 - ✔️ [.NET 8 downloads](https://dotnet.microsoft.com/download/dotnet/8.0)
-- ✔️ [.NET 7 downloads](https://dotnet.microsoft.com/download/dotnet/7.0)
 - ✔️ [.NET 6 downloads](https://dotnet.microsoft.com/download/dotnet/6.0)
 - [All .NET downloads](https://dotnet.microsoft.com/download/dotnet)
 
@@ -201,12 +199,11 @@ Environment variables that add .NET to system path, such as the `PATH` variable,
 Visual Studio for Mac installs the .NET SDK when the **.NET** workload is selected. To get started with .NET development on macOS, see [Install Visual Studio 2022 for Mac](/visualstudio/mac/installation).
 
 > [!IMPORTANT]
-> Visual Studio for Mac is being retired. For more information, see [What's happening to Visual Studio for Mac?](/visualstudio/mac/what-happened-to-vs-for-mac?view=vsmac-2022).
+> Visual Studio for Mac is being retired. For more information, see [What's happening to Visual Studio for Mac?](/visualstudio/mac/what-happened-to-vs-for-mac?view=vsmac-2022&preserve-view=true).
 
 | .NET SDK version      | Visual Studio version                                                               |
 | --------------------- | ----------------------------------------------------------------------------------- |
 | 8.0                   | Visual Studio 2022 for Mac 17.6.1 or higher. (Available as a preview feature only.) |
-| 7.0                   | Visual Studio 2022 for Mac 17.4 or higher.                                          |
 | 6.0                   | Visual Studio 2022 for Mac 17.0 or higher.                                          |
 
 :::image type="content" source="media/install-sdk/mac-install-selection.png" alt-text="macOS Visual Studio 2022 for Mac with the .NET workload selected." lightbox="media/install-sdk/mac-install-selection.png":::

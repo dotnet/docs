@@ -2,7 +2,7 @@
 
 #### Change description
 
-In .NET Framework, the <xref:System.Windows.Forms.Control.DefaultFont?displayProperty=nameWithType> property was set to `Microsoft Sans Serif 8 pt`. The following image shows a window that uses the default font.
+In .NET Framework, the <xref:System.Windows.Forms.Control.DefaultFont?displayProperty=nameWithType> property was set to `Microsoft Sans Serif 8.25 pt`. The following image shows a window that uses the default font.
 
 ![Default control font in .NET Framework](~/docs/images/core-changes/windowsforms/control-defaultfont-changed/defaultfont-framework.png)
 
@@ -20,15 +20,42 @@ This change was made to align with [Windows user experience (UX) guidelines](/wi
 
 Because of the change in the size of forms and controls, ensure that your application renders correctly.
 
-To retain the original font, set your form's default font to `Microsoft Sans Serif 8 pt`. For example:
+To retain the original font for a single form, set its default font to `Microsoft Sans Serif 8.25 pt`. For example:
 
 ```csharp
 public MyForm()
 {
     InitializeComponent();
-    Font = new Font(new FontFamily("Microsoft Sans Serif"), 8f);
+    Font = new Font(new FontFamily("Microsoft Sans Serif"), 8.25f);
 }
 ```
+
+Or, you can change the default font for an entire application in either of the following ways:
+
+- By setting the `ApplicationDefaultFont` MSBuild property to "Microsoft Sans Serif, 8.25pt". This is the preferred technique because it allows Visual Studio to use the new settings in the designer.
+
+  ```xml
+  <PropertyGroup>
+    <ApplicationDefaultFont>Microsoft Sans Serif, 8.25pt</ApplicationDefaultFont>
+  </PropertyGroup>
+  ```
+
+- By calling <xref:System.Windows.Forms.Application.SetDefaultFont(System.Drawing.Font)?displayProperty=nameWithType>.
+
+  ```csharp
+  class Program
+  {
+      [STAThread]
+      static void Main()
+      {
+          Application.EnableVisualStyles();
+          Application.SetCompatibleTextRenderingDefault(false);
+          Application.SetHighDpiMode(HighDpiMode.SystemAware);
+          Application.SetDefaultFont(new Font(new FontFamily("Microsoft Sans Serif"), 8.25f));
+          Application.Run(new Form1());
+      }
+  }
+  ```
 
 #### Category
 

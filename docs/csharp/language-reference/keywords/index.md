@@ -1,6 +1,6 @@
 ---
 description: "C# Keywords"
-title: "C# Keywords"
+title: "Keywords"
 ms.date: 09/15/2022
 f1_keywords: 
   - "cs.keywords"

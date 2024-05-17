@@ -24,13 +24,13 @@ highlightedContent:
     # Card
     - title: Tour of C#
       itemType: get-started
-      url: ./tour-of-csharp/index.md
+      url: ./tour-of-csharp/overview.md
     # Card
-    - title: C# fundamentals
+    - title: Fundamentals
       itemType: concept
       url: ./fundamentals/program-structure/index.md
     # Card
-    - title: What's new in C#
+    - title: What's new
       itemType: whats-new
       url: ./whats-new/csharp-13.md
     # Card
@@ -49,15 +49,15 @@ highlightedContent:
 
 # productDirectory section (Optional; Remove if not applicable.)
 productDirectory:
-  title: Learn to program with C#
+  title: Learn to program
   summary: Major concepts and features of the C# language
   items:
     # Card
-    - title: Get started with C#
+    - title: Get started
       # imageSrc should be square in ratio with no white space
       imageSrc: ../media/logo_csharp.png
       links:
-        - url: tour-of-csharp/index.md
+        - url: ./tour-of-csharp/overview.md
           text: A tour of C#
         - url: ./tour-of-csharp/tutorials/index.md
           text: Beginner C# tutorials
@@ -70,7 +70,7 @@ productDirectory:
         - url: https://aka.ms/csharp-certification
           text: Foundational C# Certification
 
-    - title: C# fundamentals
+    - title: Fundamentals
       # imageSrc should be square in ratio with no white space
       imageSrc: ../media/dotnet-bot.svg
       links:
@@ -119,7 +119,7 @@ conceptualContent:
 # itemType: reference
   # Supports up to 3 subsections
   sections:
-    - title: C# reference
+    - title: Reference
       summary: >
         Read C# language reference material, and the C# language specifications. The C# reference provides an informative reference for the C# language.
         The C# language specification is the normative reference for the C# language. It's the official source for C# language syntax and semantics.
@@ -151,7 +151,7 @@ conceptualContent:
               itemType: reference
               text: Documentation comments
         # Card
-        - title: C# Language reference
+        - title: Language reference
           summary: Unsafe code and compiler options
           links:
             - url: ./language-reference/attributes/global.md
@@ -168,7 +168,7 @@ conceptualContent:
               text: Compiler options
 
         # Card
-        - title: C# specification
+        - title: Language specification
           summary: The official specification for the C# language
           links:
             - url: ./specification/index.yml
@@ -223,35 +223,20 @@ additionalContent:
             - url: ../fsharp/scenarios/web-development.md
               text: F# for web development
         # Card
-        - title: Mobile
+        - title: Mobile and Desktop
           links:
-            - url: /dotnet/maui
-              text: .NET Multi-platform App UI (.NET MAUI)
-            - url: /xamarin/xamarin-forms
-              text: Xamarin.Forms
-            - url: /xamarin/ios
-              text: Xamarin.iOS
-            - url: /xamarin/android
-              text: Xamarin.Android
-            - url: /azure/developer/mobile-apps
-              text: Develop Xamarin apps with Azure
-        # Card
-        - title: Desktop
-          links:
-            - url: /uwp
-              text: Universal Windows apps
             - url: /dotnet/desktop/wpf/
               text: Windows Presentation Foundation (.NET 5+)
-            - url: /dotnet/desktop/wpf/?view=netframeworkdesktop-4.8&preserve-view=true
-              text: Windows Presentation Foundation (.NET Framework)
             - url: /dotnet/desktop/winforms/
               text: Windows Forms (.NET 5+)
-            - url: /dotnet/desktop/winforms/?view=netframeworkdesktop-4.8&preserve-view=true
-              text: Windows Forms (.NET Framework)
             - url: /dotnet/maui
               text: .NET Multi-platform App UI (.NET MAUI)
-            - url: /xamarin/mac
-              text: Xamarin for macOS
+            - url: /azure/developer/mobile-apps
+              text: Develop mobile apps with Azure
+            - url: /dotnet/desktop/wpf/?view=netframeworkdesktop-4.8&preserve-view=true
+              text: Windows Presentation Foundation (.NET Framework)
+            - url: /dotnet/desktop/winforms/?view=netframeworkdesktop-4.8&preserve-view=true
+              text: Windows Forms (.NET Framework)
         # Card
         - title: Microservices
           links:

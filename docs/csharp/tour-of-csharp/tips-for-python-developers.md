@@ -1,5 +1,5 @@
 ---
-title: A tour of C# - Tips for Python Developers
+title: Tips for Python Developers
 description: New to C#, but know Python? Here's a roadmap of what's familiar, features in C# that aren't in Python, and alternatives for Python features that aren't in C#.
 ms.date: 04/03/2024
 ---
@@ -18,7 +18,7 @@ C# and Python share similar concepts. These familiar constructs help you learn C
 As you start learning C#, you'll learn these important concepts where C# is different than Python:
 
 1. [***Indentation vs. tokens***](./tutorials/branches-and-loops-local.md): In Python, newlines and indentation are first-class syntactic elements. In C#, whitespace isn't significant. Tokens, like `;` separate statements, and other tokens `{` and `}` control block scope for `if` and other block statements. However, for readability, most coding styles (including the style used in these docs) use indentation to reinforce the block scopes declared by `{` and `}`.
-1. [***Static typing***](../fundamentals/types/index.md): In C#, a variable declaration includes its type. Reassigning a variable to an object of a different type generates a compiler error. In python, the type can change when reassigned.
+1. [***Static typing***](../fundamentals/types/index.md): In C#, a variable declaration includes its type. Reassigning a variable to an object of a different type generates a compiler error. In Python, the type can change when reassigned.
 1. [***Nullable types***](../nullable-references.md): C# variables can be *nullable* or *non-nullable*. A non-nullable type is one that can't be null (or nothing). It always refers to a valid object. By contrast, a nullable type might either refer to a valid object, or null.
 1. [***LINQ***](../linq/index.md): The query expression keywords that make up Language Integrated Query (LINQ) aren't keywords in Python. However, Python libraries like `itertools`, `more-itertools`, and `py-linq` provide similar functionality.
 1. [***Generics***](../fundamentals/types/generics.md): C# generics use C# static typing to make assertions about the arguments supplied for type parameters. A generic algorithm might need to specify constraints that an argument type must satisfy.

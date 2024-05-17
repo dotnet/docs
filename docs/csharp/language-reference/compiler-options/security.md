@@ -1,6 +1,6 @@
 ---
 description: "C# Compiler Options for security. These options control signing assemblies or address space layout."
-title: "C# Compiler Options - security options"
+title: "Compiler Options - security options"
 ms.date: 03/12/2021
 f1_keywords:
   - "cs.build.options"

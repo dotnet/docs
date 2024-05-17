@@ -1,9 +1,9 @@
 ---
 title: Install .NET on Windows
-description: Learn about the different ways you can install .NET and which versions of Windows support .NET.
+description: Learn about which versions of .NET SDK and .NET Runtime are supported, and how to install .NET on Windows.
 author: adegeo
 ms.author: adegeo
-ms.date: 12/13/2023
+ms.date: 05/14/2024
 ---
 
 # Install .NET on Windows
@@ -27,9 +27,10 @@ The following table lists the support status of each version of .NET (and .NET C
 
 | ✔️ Supported | ❌ Unsupported |
 |--------------|-----------------|
-| 8 (LTS)      | 5               |
-| 7 (STS)      | 3.1             |
-| 6 (LTS)      | 3.0             |
+| 8 (LTS)      | 7 (STS)         |
+| 6 (LTS)      | 5               |
+|              | 3.1             |
+|              | 3.0             |
 |              | 2.1             |
 |              | 2.0             |
 |              | 1.1             |
@@ -192,19 +193,18 @@ Windows 10 versions end-of-service dates are segmented by edition. Only **Home**
 > [!TIP]
 > A `+` symbol represents the minimum version.
 
-| Operating System                      | .NET 8 | .NET 7 | .NET 6 |
-|---------------------------------------|--------|--------|--------|
-| Windows 11                            | ✔️     | ✔️     | ✔️    |
-| Windows Server 2022                   | ✔️     | ✔️     | ✔️    |
-| Windows Server, Version 1903 or later | ✔️     | ✔️     | ✔️    |
-| Windows 10, Version 1607 or later     | ✔️     | ✔️     | ✔️    |
-| Windows 8.1                           | ❌     | ❌     | ✔️    |
-| Windows 7 SP1 [ESU][esu]              | ❌     | ❌     | ✔️    |
-| Windows Server 2019<br>Windows Server 2016<br>Windows Server 2012 R2<br>Windows Server 2012| ✔️ | ✔️     | ✔️    |
-| Windows Server Core 2012 R2           | ✔️     | ✔️     | ✔️    |
-| Windows Server Core 2012              | ✔️     | ✔️     | ✔️    |
-| Nano Server, Version 1809+            | ✔️     | ✔️     | ✔️    |
-| Nano Server, Version 1803             | ❌     | ❌     | ❌    |
+| Operating System                      | .NET 8 | .NET 6 |
+|---------------------------------------|--------|--------|
+| Windows 11                            | ✔️     | ✔️    |
+| Windows Server 2022                   | ✔️     | ✔️    |
+| Windows Server, Version 1903 or later | ✔️     | ✔️    |
+| Windows 10, Version 1607 or later     | ✔️     | ✔️    |
+| Windows 8.1                           | ❌     | ✔️    |
+| Windows 7 SP1 [ESU][esu]              | ❌     | ✔️    |
+| Windows Server 2022<br>Windows Server 2019<br>Windows Server 2016<br>Windows Server 2012 R2<br>Windows Server 2012| ✔️ | ✔️    |
+| Windows Server Core 2012 (and R2)     | ✔️     | ✔️    |
+| Nano Server, Version 1809+            | ✔️     | ✔️    |
+| Nano Server, Version 1803             | ❌     | ❌    |
 
 For more information about .NET 8 supported operating systems, distributions, and lifecycle policy, see [.NET 8 Supported OS Versions](https://github.com/dotnet/core/blob/main/release-notes/8.0/supported-os.md).
 
@@ -298,23 +298,6 @@ The following Windows versions are supported with .NET 8:
 | Nano Server         | 1809+         | x64             |
 
 For more information about .NET 8 supported operating systems, distributions, and lifecycle policy, see [.NET 8 Supported OS Versions](https://github.com/dotnet/core/blob/main/release-notes/8.0/supported-os.md).
-
-# [.NET 7](#tab/net70)
-
-The following Windows versions are supported with .NET 7:
-
-> [!NOTE]
-> A `+` symbol represents the minimum version.
-
-| OS                  | Version       | Architectures   |
-|---------------------|---------------|-----------------|
-| Windows 11          | 21H2+         | x64, Arm64      |
-| Windows 10 Client   | 1607+         | x64, x86, Arm64 |
-| Windows Server      | 2012+         | x64, x86        |
-| Windows Server Core | 2012+         | x64, x86        |
-| Nano Server         | 1809+         | x64             |
-
-For more information about .NET 7 supported operating systems, distributions, and lifecycle policy, see [.NET 7 Supported OS Versions](https://github.com/dotnet/core/blob/main/release-notes/7.0/supported-os.md).
 
 # [.NET 6](#tab/net60)
 

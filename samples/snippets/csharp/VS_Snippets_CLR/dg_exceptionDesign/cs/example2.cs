@@ -23,11 +23,10 @@ public class TestExample
 {
     public static void Main()
     {
-        EmployeeListNotFoundException e1, e2, e3;
-        Exception ex = new Exception();
+        Exception ex = new();
 
-        e1 = new EmployeeListNotFoundException();
-        e2 = new EmployeeListNotFoundException("Hi!");
-        e3 = new EmployeeListNotFoundException("Hi!", ex);
+        _ = new EmployeeListNotFoundException();
+        _ = new EmployeeListNotFoundException("Hi!");
+        _ = new EmployeeListNotFoundException("Hi!", ex);
     }
 }

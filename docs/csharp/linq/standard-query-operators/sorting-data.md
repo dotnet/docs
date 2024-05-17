@@ -1,5 +1,5 @@
 ---
-title: "Sorting Data (C#)"
+title: "Sorting Data"
 description: Learn about sort operations and the standard query operator methods that perform sort operations in LINQ in C#.  
 ms.date: 01/22/2024
 ---

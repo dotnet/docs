@@ -1,5 +1,5 @@
 ---
-title: Declare and use primary constructors in classes and structs
+title: Declare and use C# primary constructors in classes and structs
 description: "Learn how and when to declare primary constructors in your class and struct types. Primary constructors provide concise syntax to declare constructor parameters available anywhere in your type."
 ms.date: 05/26/2023
 ---

@@ -122,19 +122,8 @@ This process continues iteratively for each token in the sequence, with the outp
 
 During training, the complete sequence of tokens is known, but all tokens that come after the one currently being considered are ignored. The predicted value for the next token's vector is compared to the actual value and the loss is calculated. The weights are then incrementally adjusted to reduce the loss and improve the model.
 
-## Potential uses of LLMs
-
-LLMs can be used to perform a variety of NLP tasks, including:
-
-- Determining sentiment and classifying text
-- Summarizing large blocks of text into the most important details
-- Comparing multiple texts to detect potential plagiarism
-- Rephrasing text meant for one audience to better suit another
-
 ## Related content
 
-<!-- TODO: Update these links once we have the file names -->
-
-- [Understanding Token]<!-- (understanding-tokens.md) -->
-- [Prompt engineering]<!-- (prompt-engineering-in-dot-net.md) -->
+- [Understand Tokens](understanding-tokens.md)
+- [Prompt engineering](prompt-engineering-dotnet.md)
 - [Large language models](/training/modules/fundamentals-generative-ai/3-language%20models)

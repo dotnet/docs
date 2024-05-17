@@ -1,6 +1,6 @@
 ---
 description: "internal - C# Reference"
-title: "internal - C# Reference"
+title: "internal keyword"
 ms.date: 07/20/2015
 f1_keywords: 
   - "internal_CSharpKeyword"

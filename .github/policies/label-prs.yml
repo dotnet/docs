@@ -8,7 +8,8 @@ where:
 configuration:
   resourceManagementConfiguration:
     eventResponderTasks:
-    - if:
+    - description: Label community PRs
+      if:
       - payloadType: Pull_Request
       - isAction:
           action: Opened
@@ -38,28 +39,31 @@ configuration:
       then:
       - addLabel:
           label: community-contribution
-      description: Label community PRs
-    - if:
+    - description: Label PRs from the Azure SDK bot
+      if:
       - payloadType: Pull_Request
       - isActivitySender:
           user: azure-sdk
           issueAuthor: False
       then:
       - approvePullRequest:
-          comment: "Approved, we'll :shipit: when all status checks pass."
+          comment: "Approved; this PR will merge when all status checks pass."
       - addLabel:
           label: ':octocat: auto-merge'
-      description: Label PRs from the Azure SDK bot
-    - if:
+    - description: Label PRs from Dotnet Policy Service
+      if:
       - payloadType: Pull_Request
       - isActivitySender:
           user: dotnet-policy-service
           issueAuthor: False
       then:
+      - approvePullRequest:
+          comment: "Approved; this PR will merge when all status checks pass."
       - addLabel:
           label: ':octocat: auto-merge'
-      description: Label PRs from Dotnet Policy Service
-    - if:
+      triggerOnOwnActions: true
+    - description: Label PRs with okr-health
+      if:
       - payloadType: Pull_Request
       - or:
         - titleContains:
@@ -71,8 +75,8 @@ configuration:
       then:
       - addLabel:
           label: okr-health
-      description: Label PRs with okr-health
-    - if:
+    - description: Label PRs with okr-freshness
+      if:
       - payloadType: Pull_Request
       - or:
         - titleContains:
@@ -84,4 +88,3 @@ configuration:
       then:
       - addLabel:
           label: okr-freshness
-      description: Label PRs with okr-freshness

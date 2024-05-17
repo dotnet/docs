@@ -1,5 +1,5 @@
 ---
-title: "await operator - asynchronously wait for a task to complete "
+title: "await operator - asynchronously wait for a task to complete"
 description: "The C# `await` operator asynchronously suspends evaluation of the enclosing `async` method."
 ms.date: 11/29/2022
 f1_keywords: 

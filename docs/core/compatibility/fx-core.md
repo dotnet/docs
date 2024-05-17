@@ -2,11 +2,11 @@
 title: Breaking changes - .NET Framework to .NET Core
 titleSuffix: ""
 description: Lists the breaking changes from .NET Framework to .NET Core 1.0 - 3.1.
-ms.date: 08/22/2023
+ms.date: 05/01/2024
 ---
 # Breaking changes for migration from .NET Framework to .NET Core
 
-If you're migrating an app from .NET Framework to .NET Core versions 1.0 through 3.1, the breaking changes listed in this article may affect you. Breaking changes are grouped by category, and within those categories, by the version of .NET Core in which they were introduced.
+If you're migrating an app from .NET Framework to .NET Core versions 1.0 through 3.1, the breaking changes listed in this article might affect you. Breaking changes are grouped by category, and within those categories, by the version of .NET Core in which they were introduced.
 
 > [!NOTE]
 > This article is not a complete list of breaking changes between .NET Framework and .NET Core. The most important breaking changes are added here as we become aware of them.
@@ -80,7 +80,7 @@ If you're migrating an app from .NET Framework to .NET Core versions 1.0 through
 
 ## Windows Forms
 
-Windows Forms support was added to .NET Core in version 3.0. If you're migrating a Windows Forms app from .NET Framework to .NET Core, the breaking changes listed here may affect your app.
+Windows Forms support was added to .NET Core in version 3.0. If you're migrating a Windows Forms app from .NET Framework to .NET Core, the breaking changes listed here might affect your app.
 
 - [Removed controls](#removed-controls)
 - [CellFormatting event not raised if tooltip is shown](#cellformatting-event-not-raised-if-tooltip-is-shown)

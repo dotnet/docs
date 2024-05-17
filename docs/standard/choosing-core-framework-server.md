@@ -68,7 +68,7 @@ Side-by-side installation isn't possible with .NET Framework. It's a Windows com
 
 ## When to choose .NET Framework
 
-.NET offers significant benefits for new applications and application patterns. However, .NET Framework continues to be the natural choice for many existing scenarios, and as such, .NET Framework isn't replaced by .NET for all server applications.
+Use .NET Framework when there is specific reasons that require it
 
 ### Current .NET Framework applications
 

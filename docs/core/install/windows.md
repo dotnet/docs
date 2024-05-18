@@ -16,15 +16,19 @@ ms.date: 05/15/2024
 > - [Install on macOS](macos.md)
 > - [Install on Linux](linux.md)
 
-There are many different ways to install .NET on Windows. This article helps you understand which the best way to install .NET.
+There are many different ways to install .NET on Windows. This article helps you understand the difference between the SDK and Runtime, which runtime you should install, and the method you should use to install .NET.
+
+.NET is made up of the runtime and the SDK. The runtime runs .NET apps, and the SDK is used to create apps.
 
 Unlike .NET Framework, .NET isn't installed and tied to your version of Windows. You can only have a single version of .NET Framework installed on Windows. .NET can be installed anywhere on your computer and some apps might include their own copy of .NET.
 
-By default, .NET is installed to the _Program Files\\dotnet_ directory on your computer, unless the install mechanism chooses a different directory.
+By default, .NET is installed to the _Program Files\\dotnet_ directory on your computer, unless the install method chooses a different directory.
+
+## Which runtime should you install
 
 <a name="#runtime-table"></a>
 
-.NET is made up of the runtime and the SDK. The runtime runs .NET apps, and the SDK is used to create apps. There are three different runtimes for Windows, which enable different types of apps to run. The SDK includes all three runtimes. If you install a specific runtime, it might include other runtimes. The following table describes which runtime is included with a particular .NET installer:
+There are three different runtimes for Windows, which enable different types of apps to run. The SDK includes all three runtimes. If you install a specific runtime, it might include other runtimes. The following table describes which runtime is included with a particular .NET installer:
 
 |                          | Includes .NET Runtime         | Includes .NET Desktop Runtime | Includes ASP.NET Core Runtime |
 | ------------------------ | ----------------------------- | ----------------------------- | ----------------------------- |
@@ -43,17 +47,17 @@ The following table is a list of currently supported .NET releases and the versi
 
 Windows 10 versions end-of-service dates are segmented by edition. Only **Home**, **Pro**, **Pro Education**, and **Pro for Workstations** editions are considered in the following table. Check the [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet) for specific details.
 
-| Operating System                      | .NET 8 (Architectures) | .NET 6 (Architectures) |
-|---------------------------------------|--------|--------|
-| Windows 11                            | ✔️ x64, x86, Arm64     | ✔️ x64, Arm64    |
-| Windows Server 2022                   | ✔️ x64, x86     | ✔️ x64, x86    |
-| Windows 10, Version 1607 or later     | ✔️ x64, x86, Arm64    | ✔️ x64, x86, Arm64   |
-| Windows 8.1                           | ❌     | ✔️ x64, x86    |
-| Windows 7 SP1 [ESU][esu]              | ❌     | ✔️ x64, x86    |
-| Windows Server 2022<br>Windows Server 2019<br>Windows Server, Version 1903 or later<br>Windows Server 2016<br>Windows Server 2012 R2<br>Windows Server 2012| ✔️ x64, x86 | ✔️ x64, x86    |
-| Windows Server Core 2012 (and R2)     | ✔️ x64, x86     | ✔️ x64, x86    |
-| Nano Server, Version 1809+            | ✔️ x64     | ✔️ x64    |
-| Nano Server, Version 1803             | ❌     | ❌    |
+| Operating System                    | .NET 8 (Architectures) | .NET 6 (Architectures) |
+|-------------------------------------|------------------------|------------------------|
+| Windows 11                          | ✔️ x64, x86, Arm64    | ✔️ x64, Arm64          |
+| Windows Server 2022                 | ✔️ x64, x86           | ✔️ x64, x86            |
+| Windows 10, Version 1607 or later   | ✔️ x64, x86, Arm64    | ✔️ x64, x86, Arm64     |
+| Windows 8.1                         | ❌                     | ✔️ x64, x86            |
+| Windows 7 SP1 [ESU][esu]            | ❌                     | ✔️ x64, x86            |
+| Windows Server 2022<br>Windows Server 2019<br>Windows Server, Version 1903 or later<br>Windows Server 2016<br>Windows Server 2012 R2<br>Windows Server 2012 | ✔️ x64, x86           | ✔️ x64, x86            |
+| Windows Server Core 2012 (and R2)   | ✔️ x64, x86           | ✔️ x64, x86            |
+| Nano Server, Version 1809+          | ✔️ x64                | ✔️ x64                 |
+| Nano Server, Version 1803           | ❌                     | ❌                      |
 
 > [!TIP]
 > A `+` symbol represents the minimum version.

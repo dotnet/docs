@@ -86,6 +86,33 @@ This section lists some of the available options. To see the full list of availa
 - [disallowed\_symbol\_names](#disallowed_symbol_names)
 - [exclude\_ordefault\_methods](#exclude_ordefault_methods)
 - [ignore_internalsvisibleto](#ignore_internalsvisibleto)
+- [try_determine_additional_string_formatting_methods_automatically](#try_determine_additional_string_formatting_methods_automatically)
+- [unsafe_DllImportSearchPath_bits](#unsafe_DllImportSearchPath_bits)
+- [exclude_aspnet_core_mvc_controllerbase](#exclude_aspnet_core_mvc_controllerbase)
+- [interprocedural_analysis_kind](#interprocedural_analysis_kind)
+- [max_interprocedural_method_call_chain](#max_interprocedural_method_call_chain)
+- [max_interprocedural_lambda_or_local_function_call_chain](#max_interprocedural_lambda_or_local_function_call_chain)
+- [dispose_analysis_kind](#dispose_analysis_kind)
+- [dispose_ownership_transfer_at_constructor](#dispose_ownership_transfer_at_constructor)
+- [dispose_ownership_transfer_at_method_call](#dispose_ownership_transfer_at_method_call)
+- [points_to_analysis_kind](#points_to_analysis_kind)
+- [copy_analysis](#copy_analysis)
+- [sufficient_IterationCount_for_weak_KDF_algorithm](#sufficient_IterationCount_for_weak_KDF_algorithm)
+- [enum_values_prefix_trigger](#enum_values_prefix_trigger)
+- [exclude_indirect_base_types](#exclude_indirect_base_types)
+- [additional_required_suffixes](#additional_required_suffixes)
+- [additional_required_generic_interfaces](#additional_required_generic_interfaces)
+- [additional_inheritance_excluded_symbol_names](#additional_inheritance_excluded_symbol_names)
+- [analyzed_symbol_kinds](#analyzed_symbol_kinds)
+- [use_naming_heuristic](#use_naming_heuristic)
+- [additional_use_results_methods](#additional_use_results_methods)
+- [allowed_suffixes](#allowed_suffixes)
+- [enable_platform_analyzer_on_pre_net5_target](#additional_inheritance_excluded_symbol_names)
+- [exclude_structs](#exclude_structs)
+- [additional_enum_none_names](#additional_enum_none_names)
+- [enumeration_methods](#enumeration_methods)
+- [linq_chain_methods](#linq_chain_methods)
+- [assume_method_enumerates_parameters](#assume_method_enumerates_parameters)
 
 ### api_surface
 
@@ -183,3 +210,275 @@ This section lists some of the available options. To see the full list of availa
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
 | Includes assemblies marked with <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> in analysis. | `true` or `false` | `true` | [CA1812](quality-rules/ca1812.md) [CA1852](quality-rules/ca1852.md) |
+
+### try_determine_additional_string_formatting_methods_automatically
+
+| Description | Allowable values | Default value | Configurable rules |
+| - | - | - | - |
+| Boolean option to enable heuristically detecting of additional string formatting methods <br/>A method is considered a string formatting method if it has a `string format` parameter followed by a `params object[]` parameter. | `true` or `false` | `false` | [CA2241](quality-rules/ca2241.md) |
+
+### unsafe_DllImportSearchPath_bits
+
+| Description | Allowable values | Default value | Configurable rules |
+| - | - | - | - |
+| Unsafe DllImportSearchPath bits when using DefaultDllImportSearchPaths attribute | Integer values of `System.Runtime.InteropServices.DllImportSearchPath` | `770` (i.e. `AssemblyDirectory | UseDllDirectoryForDependencies | ApplicationDirectory`) | [CA5393](quality-rules/CA5393.md) |
+
+### exclude_aspnet_core_mvc_controllerbase
+
+| Description | Allowable values | Default value | Configurable rules |
+| - | - | - | - |
+| Exclude ASP.NET Core MVC ControllerBase when considering CSRF | `true` or `false` | `true` | [CA5391](quality-rules/CA5391.md) |
+
+### interprocedural_analysis_kind
+
+| Description | Allowable values | Default value | Configurable rules |
+| - | - | - | - |
+| Interprocedural analysis Kind | - `None` - Skip interprocedural analysis for source method invocations.</br> - `NonContextSensitive` - Performs non-context sensitive interprocedural analysis for all source method invocations.</br> - `ContextSensitive` - Performs context sensitive interprocedural analysis for all source method invocations. | _Specific to each configurable rule_ |  |
+
+
+### max_interprocedural_method_call_chain
+
+| Description | Allowable values | Default value | Configurable rules |
+| - | - | - | - |
+| Maximum method call chain length to analyze for interprocedural dataflow analysis | Unsigned integer | `3` |  |
+
+### max_interprocedural_lambda_or_local_function_call_chain
+
+| Description | Allowable values | Default value | Configurable rules |
+| - | - | - | - |
+| Maximum lambda or local function call chain length to analyze for interprocedural dataflow analysis | Unsigned integer | `3` |  |
+
+### dispose_analysis_kind
+
+| Description | Allowable values | Default value | Configurable rules |
+| - | - | - | - |
+| Dispose analysis kind for IDisposable rules | - `AllPaths` - Track and report missing dispose violations on all paths (non-exception and exception paths). Additionally, also flag use of non-recommended dispose patterns that may cause potential dispose leaks.</br> - `AllPathsOnlyNotDisposed` - Track and report missing dispose violations on all paths (non-exception and exception paths). Do not flag use of non-recommended dispose patterns that may cause potential dispose leaks.</br> - `NonExceptionPaths` - Track and report missing dispose violations only on non-exception program paths. Additionally, also flag use of non-recommended dispose patterns that may cause potential dispose leaks.</br> - `NonExceptionPathsOnlyNotDisposed` - Track and report missing dispose violations only on non-exception program paths. Do not flag use of non-recommended dispose patterns that may cause potential dispose leaks. | NonExceptionPaths | [CA2000](quality-rules/CA2000.md) |
+
+### dispose_ownership_transfer_at_constructor
+
+| Description | Allowable values | Default value | Configurable rules |
+| - | - | - | - |
+| Configure dispose ownership transfer for arguments passed to constructor invocation | `true` or `false` | `false` | [CA2000](quality-rules/CA2000.md) |
+
+For example, consider the below code:
+
+```csharp
+using System;
+
+class A : IDisposable
+{
+    public void Dispose()
+    {
+    }
+}
+
+class Test
+{
+    DisposableOwnerType M1()
+    {
+        // Dispose ownership for allocation 'new A()' is assumed to be transferred to the returned 'DisposableOwnerType' instance
+        // only if 'dotnet_code_quality.dispose_ownership_transfer_at_constructor = true'.
+        // Otherwise, current method 'M1' has the dispose ownership for 'new A()', and it fires a CA2000 as a dispose leak for the below code.
+        return new DisposableOwnerType(new A());
+    }
+}
+```
+
+### dispose_ownership_transfer_at_method_call
+
+| Description | Allowable values | Default value | Configurable rules |
+| - | - | - | - |
+| Configure dispose ownership transfer for disposable objects passed as arguments to method calls | `true` or `false` | `false` | [CA2000](quality-rules/CA2000.md) |
+
+For example, consider the below code:
+
+```csharp
+using System;
+
+class Test
+{
+    void M1()
+    {
+        // Dispose ownership for allocation 'new A()' is assumed to be transferred to 'TransferDisposeOwnership' method
+        // if 'dotnet_code_quality.dispose_ownership_transfer_at_method_call = true'.
+        // Otherwise, current method 'M1' has the dispose ownership for 'new A()', and it fires a CA2000 as a dispose leak for the below code.
+        TransferDisposeOwnership(new A());
+    }
+}
+```
+
+### points_to_analysis_kind
+
+| Description | Allowable values | Default value | Configurable rules |
+| - | - | - | - |
+| Points to analysis kind for DFA rules based on PointsToAnalysis | - `None` - PointsToAnalysis is disabled.</br> - `PartialWithoutTrackingFieldsAndProperties` - Partial analysis that does not track PointsToData for fields and properties for improved performance.</br> - `Complete` - Complete analysis that also tracks PointsToData for fields and properties. | _Specific to each configurable rule_ | All DFA rules |
+
+### copy_analysis
+
+| Description | Allowable values | Default value | Configurable rules |
+| - | - | - | - |
+| Configure execution of Copy analysis (tracks value and reference copies) | `true` or `false` | `false` | _Specific to each configurable rule_ (`true` for most rules) |  |
+
+### sufficient_IterationCount_for_weak_KDF_algorithm
+
+| Description | Allowable values | Default value | Configurable rules |
+| - | - | - | - |
+| Configure sufficient IterationCount when using weak KDF algorithm | integral values | _Specific to each configurable rule_ (`100000` for most rules) |  |
+
+### enum_values_prefix_trigger
+
+| Description | Allowable values | Default value | Configurable rules |
+| - | - | - | - |
+| Do not prefix enum values with type name | - `AnyEnumValue` - The rule will be triggered if _any_ of the enum values starts with the enum type name.</br> - `AllEnumValues` - The rule will be triggered if _all_ of the enum values start with the enum type name.</br> - `Heuristic` - The rule will be triggered using the default FxCop heuristic (i.e. when at least 75% of the enum values start with the enum type name).</br> | `Heuristic` | [CA1712](quality-rules/CA1712.md) |
+
+### exclude_indirect_base_types
+
+| Description | Allowable values | Default value | Configurable rules |
+| - | - | - | - |
+| Exclude indirect base types | `true` or `false` | `true` | [CA1710](quality-rules/CA1710.md) |
+
+```csharp
+// An issue is always raised on this type because the suffix should be 'Exception'.
+public class MyBaseClass : Exception, IEnumerable
+{
+   // code omitted for simplicity
+}
+
+// If the option is enabled no issue is raised on 'MyClass'; otherwise an issue will
+// suggest to add the 'Exception' suffix.
+public class MyClass : MyBaseClass
+{
+   // code omitted for simplicity
+}
+```
+
+### additional_required_suffixes
+
+| Description | Allowable values | Default value | Configurable rules |
+| - | - | - | - |
+| Additional required suffixes | List (separated by `\|`) of type names with their required suffix (separated by `->`). Allowed type name formats:</br> - Type name only (includes all types with the name, regardless of the containing type or namespace).</br> - Fully qualified names in the symbol's documentation ID format with an optional `T:` prefix.| None | [CA1710](quality-rules/CA1710.md) |
+
+Examples:
+
+| Option Value | Summary |
+| --- | --- |
+| `dotnet_code_quality.CA1710.additional_required_suffixes = MyClass->Class` | All types inheriting from `MyClass` are expected to have the `Class` suffix. |
+| `dotnet_code_quality.CA1710.additional_required_suffixes = MyClass->Class\|MyNamespace.IPath->Path` | All types inheriting from `MyClass` are expected to have the `Class` suffix AND all types implementing `MyNamespace.IPath` are expected to have the `Path` suffix. |
+| `dotnet_code_quality.CA1710.additional_required_suffixes = T:System.Data.IDataReader->{}` | Allows to override built-in suffixes, in this case, all types implementing `IDataReader` are no longer expected to end in `Collection`. |
+
+### additional_required_generic_interfaces
+
+| Description | Allowable values | Default value | Configurable rules |
+| - | - | - | - |
+| Additional required generic interfaces | List (separated by `\|`) of interface names with their required generic fully qualified interface (separated by `->`). Allowed interface formats:</br> - Interface name only (includes all interfaces with the name, regardless of the containing type or namespace).</br> - Fully qualified names in the symbol's documentation ID format with an optional `T:` prefix. | [CA1010](quality-rules/CA1010.md) |
+
+Examples:
+
+| Option Value | Summary |
+| --- | --- |
+| ``dotnet_code_quality.CA1010.additional_required_generic_interfaces = ISomething->System.Collections.Generic.IEnumerable`1`` | All types implementing `ISomething` regardless of its namespace are expected to also implement ``System.Collections.Generic.IEnumerable\`1``. |
+| ``dotnet_code_quality.CA1010.additional_required_generic_interfaces = T:System.Collections.IDictionary->T:System.Collections.Generic.IDictionary`2`` | All types implementing `System.Collections.IDictionary` are expected to also implement ``System.Collections.Generic.IDictionary`2``. |
+
+### additional_inheritance_excluded_symbol_names
+
+| Description | Allowable values | Default value | Configurable rules |
+| - | - | - | - |
+| Inheritance excluded type or namespace names | Names of types or namespaces (separated by `\|`), such that the type or type's namespace does not count in the inheritance hierarchy tree. Allowed type name formats:</br> - Type or namespace name (includes all types with the name, regardless of the containing type or namespace and all types whose namespace contains the name).</br> - Type or namespace name ending with a wildcard symbol (includes all types whose name starts with the given name, regardless of the containing type or namespace and all types whose namespace contains the name). </br> - | `N:System.*` (note that this value is always automatically added to the value provided)</br> - Fully qualified names in the symbol's documentation ID format with an optional `T:` prefix for types or `N:` prefix for namespaces.</br> - Fully qualified type or namespace name with an optional `T:` prefix for type or `N:` prefix for namespace and ending with the wildcard symbol (includes all types whose fully qualified name starts with the given suffix).| [CA1501](quality-rules/CA1501.md) |
+
+Examples:
+
+| Option Value | Summary |
+| --- | --- |
+| `dotnet_code_quality.CA1501.additional_inheritance_excluded_symbol_names = MyType` | Matches all types named `MyType` or whose containing namespace contains `MyType` and all types from the `System` namespace. |
+| `dotnet_code_quality.CA1501.additional_inheritance_excluded_symbol_names = MyType1\|MyType2` | Matches all types named either `MyType1` or `MyType2` or whose containing namespace contains either `MyType1` or `MyType2` and all types from the `System` namespace. |
+| `dotnet_code_quality.CA1501.additional_inheritance_excluded_symbol_names = T:NS.MyType` | Matches specific type `MyType` in the namespace `NS` and all types from the `System` namespace. |
+| `dotnet_code_quality.CA1501.additional_inheritance_excluded_symbol_names = T:NS1.MyType1\|T:NS2.MyType2` | Matches specific types `MyType1` and `MyType2` with respective fully qualified names and all types from the `System` namespace. |
+| `dotnet_code_quality.CA1501.additional_inheritance_excluded_symbol_names = N:NS` | Matches all types from the `NS` namespace and all types from the `System` namespace. |
+| `dotnet_code_quality.CA1501.additional_inheritance_excluded_symbol_names = My*` | Matches all types whose name starts with `My` or whose containing namespace parts starts with `My` and all types from the `System` namespace. |
+| `dotnet_code_quality.CA1501.additional_inheritance_excluded_symbol_names = T:NS.My*` | Matches all types whose name starts with `My` in the namespace `NS` and all types from the `System` namespace. |
+| `dotnet_code_quality.CA1501.additional_inheritance_excluded_symbol_names = N:My*` | Matches all types whose containing namespace starts with `My` and all types from the `System` namespace. |
+
+### analyzed_symbol_kinds
+
+| Description | Allowable values | Default value | Configurable rules |
+| - | - | - | - |
+| Analyzed symbol kinds | One or more fields of enum Microsoft.CodeAnalysis.SymbolKind as a comma separated list. | `Namespace, NamedType, Method, Property, Event, Parameter` | [CA1716](quality-rules/CA1716.md) |
+
+### use_naming_heuristic
+
+| Description | Allowable values | Default value | Configurable rules |
+| - | - | - | - |
+| Use naming heuristic | `true` or `false` | `false` | [CA1303](quality-rules/CA1303.md) |
+
+### additional_use_results_methods
+
+| Description | Allowable values | Default value | Configurable rules |
+| - | - | - | - |
+| Additional use results methods | Names of additional methods (separated by `\|`). Allowed method name formats:</br> - Method name only (includes all methods with the name, regardless of the containing type or namespace).</br> - Fully qualified names in the symbol's documentation ID format with an optional `M:` prefix. | None | [CA1806](quality-rules/CA1806.md) |
+
+
+Examples:
+
+| Option Value | Summary |
+| --- | --- |
+| `dotnet_code_quality.CA1806.additional_use_results_methods = MyMethod` | Matches all methods named `MyMethod` in the compilation. |
+| `dotnet_code_quality.CA1806.additional_use_results_methods = MyMethod1\|MyMethod2` | Matches all methods named either `MyMethod1` or `MyMethod2` in the compilation. |
+| `dotnet_code_quality.CA1806.additional_use_results_methods = M:NS.MyType.MyMethod(ParamType)` | Matches specific method `MyMethod` with given fully qualified signature. |
+| `dotnet_code_quality.CA1806.additional_use_results_methods = M:NS1.MyType1.MyMethod1(ParamType)\|M:NS2.MyType2.MyMethod2(ParamType)` | Matches specific methods `MyMethod1` and `MyMethod2` with respective fully qualified signature. |
+
+
+### allowed_suffixes
+
+| Description | Allowable values | Default value | Configurable rules |
+| - | - | - | - |
+| Allowed suffixes | List (separated by `\|`) of allowed suffixes. |  | [CA1711](quality-rules/CA1711.md) |
+
+### enable_platform_analyzer_on_pre_net5_target
+
+| Description | Allowable values | Default value | Configurable rules |
+| - | - | - | - |
+| Enable platform compatibility analyzer for TFMs <= net5.0 | `true` or `false` | `false` | [CA1416](quality-rules/CA1416.md) |
+
+### exclude_structs
+
+| Description | Allowable values | Default value | Configurable rules |
+| - | - | - | - |
+| Exclude structs | `true` or `false` | `false` | [CA1051](quality-rules/CA1051.md) |
+
+### additional_enum_none_names
+
+| Description | Allowable values | Default value | Configurable rules |
+| - | - | - | - |
+| Additional enum `None` names | Names of additional enum None names (separated by `\|`). | empty | [CA1008](quality-rules/CA1008.md) |
+
+Example:
+```
+dotnet_code_quality.CA1008.additional_enum_none_names = Never
+dotnet_code_quality.CA1008.additional_enum_none_names = Never|Nothing
+```
+
+### enumeration_methods
+
+| Description | Allowable values | Default value | Configurable rules |
+| - | - | - | - |
+| Enumeration methods | Fully qualified names of additional methods enumerating all parameters with IEnumerable type (separated by `\|`). | empty | [CA1851](quality-rules/CA1851.md) |
+
+Example:
+
+```
+dotnet_code_quality.CA1851.enumeration_methods = M:NS.Cls.SomeMethod(System.Collections.Generic.IEnumerable{System.Int32})
+dotnet_code_quality.CA1851.enumeration_methods = M:NS.Cls.SomeMethod*
+M:NS.Cls.SomeMethod``1(System.Collections.Generic.IEnumerable{System.Int32}) | M:NS.Cls.OtherMethod*
+```
+
+### linq_chain_methods
+
+| Description | Allowable values | Default value | Configurable rules |
+| - | - | - | - |
+| This option is used to include customized methods like `Select` into the analysis scope. | Fully qualified names of additional methods accepting IEnumerable parameters and return a new IEnumerable type instance(separated by `\|`). By default, the IEnumerable type parameters of the Linq Chain method are considered not enumerated. This behavior could be overridden by combining using the `enumeration_methods` option. | empty | [CA1851](quality-rules/CA1851.md) |
+
+### assume_method_enumerates_parameters
+
+| Description | Allowable values | Default value | Configurable rules |
+| - | - | - | - |
+| Assume method enumerates parameters | `true` or `false` | `false` | [CA1851](quality-rules/CA1851.md) |

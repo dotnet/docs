@@ -57,7 +57,7 @@ If you're unsure which method you should choose after reviewing the lists in the
 
 ### Users and Developers
 
-- [.NET Installer](#install-with-windows-installer-msi)
+- [.NET Installer](#net-installer)
 
   Install .NET with a Windows Installer package, which is an executable that you run. This method can install the SDK and Runtime. Installs are performed system-wide.
 
@@ -185,13 +185,13 @@ For more information about, see [.NET SDK, MSBuild, and Visual Studio versioning
 
 ## Install with Visual Studio Code
 
-Visual Studio Code uses the versions of .NET already installed on your system. Remember, Visual Studio installs its own copy of .NET, so you must install .NET using either [Windows Installer](#install-with-windows-installer-msi) or [Windows Package Manager](#install-with-windows-package-manager-winget).
+Visual Studio Code uses the versions of .NET already installed on your system. Remember, Visual Studio installs its own copy of .NET, so you must install .NET using either [.NET Installer](#net-installer) or [Windows Package Manager](#install-with-windows-package-manager-winget).
 
 .NET apps are created in Visual Studio Code with the C# Dev Kit extension.
 
 1. First, install the .NET SDK by following the steps in one of the other sections, except for the section on Visual Studio.
 
-   - [Windows Installer (MSI)](#install-with-windows-installer-msi)
+   - [.NET Installer](#net-installer)
    - [Windows Package Manager (WinGet)](#install-with-windows-package-manager-winget)
 
 1. Next, install Visual Studio Code, if you haven't already. For more information, see [Visual Studio Code on Windows](https://code.visualstudio.com/docs/setup/windows).
@@ -313,7 +313,7 @@ winget install Microsoft.DotNet.DesktopRuntime.Preview
 
 ## Install with PowerShell
 
-Installing .NET through the `dotnet-install` PowerShell script is recommended for continuous integration and nonadmin installs. If you're installing .NET for normal use on your system, use either the [Windows Installer](#install-with-windows-installer-msi) or [Windows Package Manager](#install-with-windows-package-manager-winget) installation methods.
+Installing .NET through the `dotnet-install` PowerShell script is recommended for continuous integration and nonadmin installs. If you're installing .NET for normal use on your system, use either the [.NET Installer](#net-installer) or [Windows Package Manager](#install-with-windows-package-manager-winget) installation methods.
 
 The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is .NET 8. You can choose a specific release by specifying the `-Channel` switch. Include the `-Runtime` switch to install a runtime. Otherwise, the script installs the SDK. The script is available at <https://dot.net/v1/dotnet-install.ps1> and the source code is hosted on [GitHub](https://github.com/dotnet/install-scripts).
 

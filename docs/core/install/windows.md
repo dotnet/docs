@@ -110,11 +110,11 @@ The **x64** .NET SDK installs to its own directory, as described in the previous
 
 ### Path variables
 
-Environment variables that add .NET to system path, such as the `PATH` variable, may need to be changed if you have both the x64 and Arm64 versions of the .NET SDK installed. Additionally, some tools rely on the `DOTNET_ROOT` environment variable, which would also need to be updated to point to the appropriate .NET SDK installation folder.
+Environment variables that add .NET to system path, such as the `PATH` variable, might need to be changed if you have both the x64 and Arm64 versions of the .NET SDK installed. Additionally, some tools rely on the `DOTNET_ROOT` environment variable, which would also need to be updated to point to the appropriate .NET SDK installation folder.
 
 ## Choose how to install .NET
 
-There are different ways to install .NET and some products may manage their own version of .NET, such as Visual Studio. If you install .NET through software that manages its own version of .NET, you should also install the .NET runtime separately so that you can run .NET apps.
+There are different ways to install .NET and some products might manage their own version of .NET, such as Visual Studio. If you install .NET through software that manages its own version of .NET, you should also install the .NET runtime separately so that you can run .NET apps.
 
 - [Visual Studio](#install-with-visual-studio)
 
@@ -181,9 +181,13 @@ Visual Studio Code uses the versions of .NET already installed on your system. R
 
 .NET apps are created in Visual Studio Code with the C# Dev Kit extension.
 
-1. Install .NET by following the steps in one of the other sections, except for the section on Visual Studio.
-1. Install Visual Studio Code, if you haven't already. For more information, see [Visual Studio Code on Windows](https://code.visualstudio.com/docs/setup/windows).
-1. Install the C# Dev Kit extension. For more information, see [Getting Started with C# in VS Code](https://code.visualstudio.com/docs/csharp/get-started#_install).
+1. First, install the .NET SDK by following the steps in one of the other sections, except for the section on Visual Studio.
+
+   - [Windows Installer (MSI)](#install-with-windows-installer-msi)
+   - [Windows Package Manager (WinGet)](#install-with-windows-package-manager-winget)
+
+1. Next, install Visual Studio Code, if you haven't already. For more information, see [Visual Studio Code on Windows](https://code.visualstudio.com/docs/setup/windows).
+1. Lastly, install the C# Dev Kit extension. For more information, see [Getting Started with C# in VS Code](https://code.visualstudio.com/docs/csharp/get-started#_install).
 
 ## Install with Windows Installer (MSI)
 
@@ -345,7 +349,7 @@ If you install the SDK, you don't need to install the runtimes.
 
 ## Troubleshooting
 
-After installing the .NET SDK, you may run into problems trying to run .NET CLI commands. This section collects those common problems and provides solutions.
+After installing the .NET SDK, you might run into problems trying to run .NET CLI commands. This section collects those common problems and provides solutions.
 
 - [No .NET SDK was found](#no-net-sdk-was-found)
 - [Building apps is slower than expected](#building-apps-is-slower-than-expected)

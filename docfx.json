@@ -399,6 +399,7 @@
                 "_csharpstandard/**/*.md": "wiwagn",
                 "_roslyn/docs/compilers/CSharp/*.md": "wiwagn",
                 "_vblang/spec/*.md": "wiwagn",
+                "docs/ai/**/*.*": "alexwolf",
                 "docs/architecture/**/**.md": "jamont",
                 "docs/architecture/grpc-for-wcf-developers/**/**.md": "jamesnk",
                 "docs/architecture/modernize-desktop/**/**.md": "oliag",
@@ -497,6 +498,7 @@
                 "_csharpstandard/**/*.md": "lang-spec",
                 "_roslyn/docs/compilers/CSharp/*.md": "whats-new",
                 "_vblang/spec/*.md": "vb-spec",
+                "docs/ai/**/**.md": "intelligent-apps",
                 "docs/architecture/blazor-for-web-forms-developers/**/**.md": "blazor",
                 "docs/architecture/cloud-native/**/**.md": "cloud-native",
                 "docs/architecture/containerized-lifecycle/**/**.md": "containerized-lifecycle",
@@ -832,6 +834,7 @@
                 "docs/standard/design-guidelines/**.md": false
             },
             "ms.custom": {
+                "docs/ai/**/**.md": "build-2024-intelligent-apps",
                 "docs/framework/**/*.md": "UpdateFrequency5",
                 "docs/visual-basic/**/*.md": "UpdateFrequency5"
             },

@@ -43,6 +43,8 @@ To run all .NET apps on Windows, you want both the ASP.NET Core Runtime to run a
 
 There are different ways to install .NET and some products might manage their own version of .NET, such as Visual Studio. If you install .NET through software that manages its own version of .NET, you should also install the .NET runtime separately so that you can run .NET apps.
 
+If you're unsure which method you should choose after reviewing the lists in the following sections, you probably want to use the [.NET Installer]().
+
 ### Developers
 
 - [Visual Studio](#install-with-visual-studio)
@@ -51,21 +53,21 @@ There are different ways to install .NET and some products might manage their ow
 
 - [Visual Studio Code - C# Dev Kit](#install-with-visual-studio-code)
 
-  Install the **C# Dev Kit** extension for Visual Studio Code to develop .NET apps. This method installs the SDK.
+  Install the **C# Dev Kit** extension for Visual Studio Code to develop .NET apps. This method uses the SDKs you've previously installed.
 
 ### Users and Developers
 
+- [.NET Installer](#install-with-windows-installer-msi)
+
+  Install .NET with a Windows Installer package, which is an executable that you run. This method can install the SDK and Runtime. Installs are performed system-wide.
+
 - [Windows Package Manager (WinGet)](#install-with-windows-package-manager-winget)
 
-  Use **WinGet** to install .NET when you want to manage .NET through the command line. This installs a global copy of .NET. This method installs the SDK or Runtime.
-
-- [Windows Installer (MSI)](#install-with-windows-installer-msi)
-
-  Install .NET with an _msi_ file.
+  Use **WinGet** to install .NET when you want to manage .NET through the command line. This method can install the SDK and Runtime. Installs are performed system-wide.
 
 - [PowerShell](#install-with-powershell)
 
-  A PowerShell script that can automate the install of the Runtime or SDK. You can choose which version of .NET to install.
+  A PowerShell script that can automate the install of the SDK or Runtime. You can choose which version of .NET to install.
 
 ## Supported versions
 
@@ -195,7 +197,7 @@ Visual Studio Code uses the versions of .NET already installed on your system. R
 1. Next, install Visual Studio Code, if you haven't already. For more information, see [Visual Studio Code on Windows](https://code.visualstudio.com/docs/setup/windows).
 1. Lastly, install the C# Dev Kit extension. For more information, see [Getting Started with C# in VS Code](https://code.visualstudio.com/docs/csharp/get-started#_install).
 
-## Install with Windows Installer (MSI)
+## .NET Installer
 
 The [download page](https://dotnet.microsoft.com/download/dotnet) for .NET provides Windows Installer executables.
 

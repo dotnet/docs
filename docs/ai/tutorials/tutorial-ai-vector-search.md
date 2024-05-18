@@ -10,7 +10,7 @@ ms.author: alexwolf
 
 # Implement Azure OpenAI with RAG using vector search in a .NET app
 
-This tutorial explores integration of the RAG pattern using Open AI models and vector search capabilities in a .NET app. The sample application performs vector searches on custom data stored in Azure Cosmos DB for MongoDB and further refines the responses using generative AI models, such as GPT-35 and GPT-4. In the sections ahead, you'll setup a sample application and explore key code examples that demonstrate these concepts.
+This tutorial explores integration of the RAG pattern using Open AI models and vector search capabilities in a .NET app. The sample application performs vector searches on custom data stored in Azure Cosmos DB for MongoDB and further refines the responses using generative AI models, such as GPT-35 and GPT-4. In the sections that follow, you'll set up a sample application and explore key code examples that demonstrate these concepts.
 
 ## Prerequsites
 
@@ -52,13 +52,13 @@ The Cosmos Recipe Guide app allows you to perform vector and AI driven searches 
     "MongoVcoreConnection": "<your-mongo-connection-string>"
     ```
 
-1. Launch the app by pressing the start button at the top of Visual Studio.
+1. Launch the app by pressing the **Start** button at the top of Visual Studio.
 
 ## Explore the app
 
 When you run the app for the first time, it connects to Azure Cosmos DB and reports that there are no recipes available yet. Follow the steps displayed by the app to begin the core workflow.
 
-1. Select **Upload recipe(s) to Cosmos DB** and hit enter. This command reads sample JSON files from the local project and uploads them to the Cosmos DB account.
+1. Select **Upload recipe(s) to Cosmos DB** and press <kbd>Enter</kbd>. This command reads sample JSON files from the local project and uploads them to the Cosmos DB account.
 
     The code from the _Utility.cs_ class parses the local JSON files.
 
@@ -113,7 +113,7 @@ When you run the app for the first time, it connects to Azure Cosmos DB and repo
 
 1. Select **Vectorize the recipe(s) and store them in Cosmos DB**.
 
-    The JSON items uploaded to Cosmos DB do not contain embeddings and therefore are not optimized for RAG via vector search. An embedding is an information dense, numerical representation of the semantic meaning of a piece of text. Vector searches are able to find items with contextually similar embeddings.
+    The JSON items uploaded to Cosmos DB do not contain embeddings and therefore are not optimized for RAG via vector search. An embedding is an information-dense, numerical representation of the semantic meaning of a piece of text. Vector searches are able to find items with contextually similar embeddings.
 
     The `GetEmbeddingsAsync` method in the _OpenAIService.cs_ file creates an embedding for each item in the database.
 
@@ -237,7 +237,6 @@ When you run the app for the first time, it connects to Azure Cosmos DB and repo
     {
         try
         {
-
             ChatMessage systemMessage = new ChatMessage(
                 ChatRole.System, _systemPromptRecipeAssistant + documents);
             ChatMessage userMessage = new ChatMessage(
@@ -287,7 +286,7 @@ When you run the app for the first time, it connects to Azure Cosmos DB and repo
         recipes, cooking instructions provided in JSON format below.
   
         Instructions:
-        - Only answer questions related to the recipe provided below,
+        - Only answer questions related to the recipe provided below.
         - Don't reference any recipe not provided below.
         - If you're unsure of an answer, say ""I don't know"" and recommend users search themselves.        
         - Your response  should be complete. 

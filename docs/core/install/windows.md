@@ -22,7 +22,7 @@ Unlike .NET Framework, .NET isn't installed and tied to your version of Windows.
 
 By default, .NET is installed to the _Program Files\\dotnet_ directory on your computer, unless the install mechanism chooses a different directory.
 
-<a href="#runtime-table"></a>
+<a name="#runtime-table"></a>
 
 .NET is made up of the runtime and the SDK. The runtime runs .NET apps, and the SDK is used to create apps. There are three different runtimes for Windows, which enable different types of apps to run. The SDK includes all three runtimes. If you install a specific runtime, it might include other runtimes. The following table describes which runtime is included with a particular .NET installer:
 
@@ -194,11 +194,14 @@ Visual Studio Code uses the versions of .NET already installed on your system. R
 The [download page](https://dotnet.microsoft.com/download/dotnet) for .NET provides Windows Installer executables.
 
 1. Open a web browser and navigate to <https://dotnet.microsoft.com/download/dotnet>.
-1. Select the version of .NET download you want to download, such as 8.0.
+1. Select the version of .NET you want to download, such as 8.0.
 1. Find the SDK or Runtime box that contains the links for downloading .NET.
 1. Under the **Installers** column, find the **Windows** row and select the link for your CPU architecture. If you're unsure, select **x64** as it's the most common.
 
    The browser automatically downloads the MSI package.
+
+   > [!TIP]
+   > The following image shows the SDK, but you can also download the Runtime.
 
    :::image type="content" source="media/windows/dotnet-download-page-small.png" alt-text="An image of the .NET download page, with the SDK download link highlighted." lightbox="media/windows/dotnet-download-page.png":::
 
@@ -209,11 +212,11 @@ The [download page](https://dotnet.microsoft.com/download/dotnet) for .NET provi
 
    :::image type="content" source="media/windows/msi-installer.png" alt-text="A screenshot of the .NET MSI installer app window.":::
 
-1. Select **Install** and follow the instructions.
+1. Select **Install** and follow the instructions to install .NET.
 
 ### Command-line options
 
-If you want to install .NET silently, such as in a production environment or to support continuous integration, use the following switches:
+If you want to install .NET silently, such as in a production environment or to support continuous integration, use the following Windows Installer options:
 
 - `/install`\
 Installs .NET.
@@ -231,7 +234,7 @@ dotnet-sdk-8.0.100-win-x64.exe /install /quiet /norestart
 For more information, see [Standard Installer Command-Line Options](/windows/win32/msi/standard-installer-command-line-options).
 
 > [!TIP]
-> The installer returns an exit code of **0** for success and an exit code of **3010** to indicate that a restart is required. Any other value is generally an error code.
+> The installer returns an exit code of **0** for success and an exit code of **3010** to indicate that a restart is required. Any other value is most likely an error code.
 
 ## Install with Windows Package Manager (WinGet)
 
@@ -248,7 +251,7 @@ The .NET WinGet packages are:
 
 ### Install the SDK
 
-If you install the SDK, you don't need to install the runtimes.
+If you install the SDK, you don't need to install the corresponding runtime.
 
 01. Install [WinGet through the Windows Store]().
 01. Open a terminal, such as PowerShell or `cmd.exe`.
@@ -304,14 +307,12 @@ winget install Microsoft.DotNet.DesktopRuntime.Preview
 
 Installing .NET through the `dotnet-install` PowerShell script is recommended for continuous integration and nonadmin installs. If you're installing .NET for normal use on your system, use either the [Windows Installer](#install-with-windows-installer-msi) or [Windows Package Manager](#install-with-windows-package-manager-winget) installation methods.
 
-The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is .NET 8. You can choose a specific release by specifying the `-Channel` switch. Include the `-Runtime` switch to install a runtime. Otherwise, the script installs the SDK.
+The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is .NET 8. You can choose a specific release by specifying the `-Channel` switch. Include the `-Runtime` switch to install a runtime. Otherwise, the script installs the SDK. The script is available at <https://dot.net/v1/dotnet-install.ps1> and the source code is hosted on [GitHub](https://github.com/dotnet/install-scripts).
 
 > [!div class="button"]
-> [Download the script from <https://dot.net/v1/dotnet-install.ps1>](https://dot.net/v1/dotnet-install.ps1)
+> [Download the script](https://dot.net/v1/dotnet-install.ps1)
 
 For more information about the script, see [dotnet-install script reference](../tools/dotnet-install-script.md).
-
-The source code for the script is available on [GitHub](https://github.com/dotnet/install-scripts).
 
 ### Install the runtime
 
@@ -319,7 +320,7 @@ The .NET Runtime is installed by providing the `-Runtime` switch.
 
 01. Download the install script from <https://dot.net/v1/dotnet-install.ps1>
 01. Open PowerShell and navigate to the folder containing the script.
-01. Run the following commands to install both the Desktop and ASP.NET Core runtimes for maximum compatibility:
+01. Run the following commands to install both the Desktop runtime and ASP.NET Core runtime for maximum compatibility:
 
     ```powershell
     dotnet-install.ps1 -Runtime windowsdesktop
@@ -332,7 +333,7 @@ If you install the SDK, you don't need to install the runtimes.
 
 01. Download the install script from <https://dot.net/v1/dotnet-install.ps1>
 01. Open PowerShell and navigate to the folder containing the script.
-01. Run the following command to install .NET SDK.
+01. Run the following command to install the .NET SDK.
 
     ```powershell
     dotnet-install.ps1
@@ -389,7 +390,9 @@ Most likely you installed both the x86 (32-bit) and x64 (64-bit) versions of the
 
 Ensure that Smart App Control, a Windows feature, is off. Smart App Control isn't recommended to be enabled on machines used for development. Any setting other than "off" might negatively affect SDK performance.
 
-### Required C++ runtime files are missing
+<a name="required-c-runtime-files-are-missing"></a>
+
+### `hostfxr.dll` / `api-ms-win-crt-runtime-l1-1-0.dll` / `api-ms-win-cor-timezone-l1-1-0.dll` is missing
 
 Install the Microsoft Visual C++ 2015-2019 Redistributable ([64-bit][vcc64] or [32-bit][vcc32]).
 

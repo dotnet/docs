@@ -118,6 +118,8 @@ Environment variables that add .NET to system path, such as the `PATH` variable,
 
 There are different ways to install .NET and some products might manage their own version of .NET, such as Visual Studio. If you install .NET through software that manages its own version of .NET, you should also install the .NET runtime separately so that you can run .NET apps.
 
+### Developers
+
 - [Visual Studio](#install-with-visual-studio)
 
   Use **Visual Studio** to install .NET when you want to develop .NET apps using Visual Studio. Visual Studio manages its own copy of .NET. This method installs the SDK, Runtime, and Visual Studio templates.
@@ -125,6 +127,8 @@ There are different ways to install .NET and some products might manage their ow
 - [Visual Studio Code - C# Dev Kit](#install-with-visual-studio-code)
 
   Install the **C# Dev Kit** extension for Visual Studio Code to develop .NET apps. This method installs the SDK.
+
+### Users and Developers
 
 - [Windows Package Manager (WinGet)](#install-with-windows-package-manager-winget)
 

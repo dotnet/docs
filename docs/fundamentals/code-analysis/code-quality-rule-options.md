@@ -221,7 +221,7 @@ This section lists some of the available options. To see the full list of availa
 
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
-| Unsafe DllImportSearchPath bits when using DefaultDllImportSearchPaths attribute | Integer values of `System.Runtime.InteropServices.DllImportSearchPath` | `770` (i.e. `AssemblyDirectory | UseDllDirectoryForDependencies | ApplicationDirectory`) | [CA5393](quality-rules/ca5393.md) |
+| Unsafe DllImportSearchPath bits when using DefaultDllImportSearchPaths attribute | Integer values of `System.Runtime.InteropServices.DllImportSearchPath` | `770` (i.e. `AssemblyDirectory \| UseDllDirectoryForDependencies \| ApplicationDirectory`) | [CA5393](quality-rules/ca5393.md) |
 
 ### exclude_aspnet_core_mvc_controllerbase
 
@@ -234,7 +234,6 @@ This section lists some of the available options. To see the full list of availa
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
 | Interprocedural analysis Kind | - `None` - Skip interprocedural analysis for source method invocations.</br> - `NonContextSensitive` - Performs non-context sensitive interprocedural analysis for all source method invocations.</br> - `ContextSensitive` - Performs context sensitive interprocedural analysis for all source method invocations. | _Specific to each configurable rule_ |  |
-
 
 ### max_interprocedural_method_call_chain
 
@@ -317,7 +316,7 @@ class Test
 
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
-| Configure execution of Copy analysis (tracks value and reference copies) | `true` or `false` | `false` | _Specific to each configurable rule_ (`true` for most rules) |  |
+| Configure execution of Copy analysis (tracks value and reference copies) | `true` or `false` | _Specific to each configurable rule_ (`true` for most rules) |  |
 
 ### sufficient_IterationCount_for_weak_KDF_algorithm
 
@@ -370,7 +369,7 @@ Examples:
 
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
-| Additional required generic interfaces | List (separated by `\|`) of interface names with their required generic fully qualified interface (separated by `->`). Allowed interface formats:</br> - Interface name only (includes all interfaces with the name, regardless of the containing type or namespace).</br> - Fully qualified names in the symbol's documentation ID format with an optional `T:` prefix. | [CA1010](quality-rules/ca1010.md) |
+| Additional required generic interfaces | List (separated by `\|`) of interface names with their required generic fully qualified interface (separated by `->`). Allowed interface formats:</br> - Interface name only (includes all interfaces with the name, regardless of the containing type or namespace).</br> - Fully qualified names in the symbol's documentation ID format with an optional `T:` prefix. | None | [CA1010](quality-rules/ca1010.md) |
 
 Examples:
 
@@ -416,7 +415,6 @@ Examples:
 | - | - | - | - |
 | Additional use results methods | Names of additional methods (separated by `\|`). Allowed method name formats:</br> - Method name only (includes all methods with the name, regardless of the containing type or namespace).</br> - Fully qualified names in the symbol's documentation ID format with an optional `M:` prefix. | None | [CA1806](quality-rules/ca1806.md) |
 
-
 Examples:
 
 | Option Value | Summary |
@@ -425,7 +423,6 @@ Examples:
 | `dotnet_code_quality.CA1806.additional_use_results_methods = MyMethod1\|MyMethod2` | Matches all methods named either `MyMethod1` or `MyMethod2` in the compilation. |
 | `dotnet_code_quality.CA1806.additional_use_results_methods = M:NS.MyType.MyMethod(ParamType)` | Matches specific method `MyMethod` with given fully qualified signature. |
 | `dotnet_code_quality.CA1806.additional_use_results_methods = M:NS1.MyType1.MyMethod1(ParamType)\|M:NS2.MyType2.MyMethod2(ParamType)` | Matches specific methods `MyMethod1` and `MyMethod2` with respective fully qualified signature. |
-
 
 ### allowed_suffixes
 
@@ -452,6 +449,7 @@ Examples:
 | Additional enum `None` names | Names of additional enum None names (separated by `\|`). | empty | [CA1008](quality-rules/ca1008.md) |
 
 Example:
+
 ```
 dotnet_code_quality.CA1008.additional_enum_none_names = Never
 dotnet_code_quality.CA1008.additional_enum_none_names = Never|Nothing

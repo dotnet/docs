@@ -39,6 +39,34 @@ To ensure that you can run all .NET apps on Windows, install both the ASP.NET Co
 
 To run all .NET apps on Windows, you want both the ASP.NET Core Runtime to run any web apps, and .NET Desktop Runtime to run any desktop app such as a Windows Presentation Foundation (WPF) or Windows Forms (WinForms) app.
 
+## Choose how to install .NET
+
+There are different ways to install .NET and some products might manage their own version of .NET, such as Visual Studio. If you install .NET through software that manages its own version of .NET, you should also install the .NET runtime separately so that you can run .NET apps.
+
+### Developers
+
+- [Visual Studio](#install-with-visual-studio)
+
+  Use **Visual Studio** to install .NET when you want to develop .NET apps using Visual Studio. Visual Studio manages its own copy of .NET. This method installs the SDK, Runtime, and Visual Studio templates.
+
+- [Visual Studio Code - C# Dev Kit](#install-with-visual-studio-code)
+
+  Install the **C# Dev Kit** extension for Visual Studio Code to develop .NET apps. This method installs the SDK.
+
+### Users and Developers
+
+- [Windows Package Manager (WinGet)](#install-with-windows-package-manager-winget)
+
+  Use **WinGet** to install .NET when you want to manage .NET through the command line. This installs a global copy of .NET. This method installs the SDK or Runtime.
+
+- [Windows Installer (MSI)](#install-with-windows-installer-msi)
+
+  Install .NET with an _msi_ file.
+
+- [PowerShell](#install-with-powershell)
+
+  A PowerShell script that can automate the install of the Runtime or SDK. You can choose which version of .NET to install.
+
 ## Supported versions
 
 The following table is a list of currently supported .NET releases and the versions of Windows they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Windows reaches end-of-life](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).
@@ -113,34 +141,6 @@ The **x64** .NET SDK installs to its own directory, as described in the previous
 ### Path variables
 
 Environment variables that add .NET to system path, such as the `PATH` variable, might need to be changed if you have both the x64 and Arm64 versions of the .NET SDK installed. Additionally, some tools rely on the `DOTNET_ROOT` environment variable, which would also need to be updated to point to the appropriate .NET SDK installation folder.
-
-## Choose how to install .NET
-
-There are different ways to install .NET and some products might manage their own version of .NET, such as Visual Studio. If you install .NET through software that manages its own version of .NET, you should also install the .NET runtime separately so that you can run .NET apps.
-
-### Developers
-
-- [Visual Studio](#install-with-visual-studio)
-
-  Use **Visual Studio** to install .NET when you want to develop .NET apps using Visual Studio. Visual Studio manages its own copy of .NET. This method installs the SDK, Runtime, and Visual Studio templates.
-
-- [Visual Studio Code - C# Dev Kit](#install-with-visual-studio-code)
-
-  Install the **C# Dev Kit** extension for Visual Studio Code to develop .NET apps. This method installs the SDK.
-
-### Users and Developers
-
-- [Windows Package Manager (WinGet)](#install-with-windows-package-manager-winget)
-
-  Use **WinGet** to install .NET when you want to manage .NET through the command line. This installs a global copy of .NET. This method installs the SDK or Runtime.
-
-- [Windows Installer (MSI)](#install-with-windows-installer-msi)
-
-  Install .NET with an _msi_ file.
-
-- [PowerShell](#install-with-powershell)
-
-  A PowerShell script that can automate the install of the Runtime or SDK. You can choose which version of .NET to install.
 
 ## Install with Visual Studio
 

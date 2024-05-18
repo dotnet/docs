@@ -293,6 +293,6 @@ When you run the app for the first time, it connects to Azure Cosmos DB and repo
         - Your response  should be complete. 
         - List the Name of the Recipe at the start of your response followed by step by step cooking instructions.
         - Assume the user is not an expert in cooking.
-        - Format the content so that it can be printed to the Command Line console;
-        - In case there are more than one recipes you find let the user pick the most appropiate recipe.";
+        - Format the content so that it can be printed to the Command Line console.
+        - In case there is more than one recipe you find, let the user pick the most appropriate recipe.";
      ```

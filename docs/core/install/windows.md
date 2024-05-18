@@ -26,8 +26,6 @@ By default, .NET is installed to the _Program Files\\dotnet_ directory on your c
 
 ## Which runtime should you install
 
-<a name="#runtime-table"></a>
-
 There are three different runtimes for Windows, which enable different types of apps to run. The SDK includes all three runtimes. If you install a specific runtime, it might include other runtimes. The following table describes which runtime is included with a particular .NET installer:
 
 |                          | Includes .NET Runtime         | Includes .NET Desktop Runtime | Includes ASP.NET Core Runtime |
@@ -267,7 +265,7 @@ If you install the SDK, you don't need to install the corresponding runtime.
 
 ### Install the runtime
 
-There are different runtimes you can install. Refer to the [runtime table](#runtime-table) at the beginning of this article to understand what's included with each runtime.
+There are different runtimes you can install. Refer to the [Which runtime should you install](#which-runtime-should-you-install) section to understand what's included with each runtime.
 
 01. Install [WinGet through the Windows Store]().
 01. Open a terminal, such as **PowerShell** or **Command Prompt**.

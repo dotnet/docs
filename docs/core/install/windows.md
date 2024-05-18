@@ -10,6 +10,12 @@ ms.date: 05/15/2024
 
 # Install .NET on Windows
 
+> [!div class="op_single_selector"]
+>
+> - [Install on Windows](windows.md)
+> - [Install on macOS](macos.md)
+> - [Install on Linux](linux.md)
+
 There are many different ways to install .NET on Windows. This article helps you understand which the best way to install .NET.
 
 Unlike .NET Framework, .NET isn't installed and tied to your version of Windows. You can only have a single version of .NET Framework installed on Windows. .NET can be installed anywhere on your computer and some apps might include their own copy of .NET.

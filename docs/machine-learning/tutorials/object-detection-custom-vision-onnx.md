@@ -89,11 +89,11 @@ To build the ML.NET pipeline, you'll need the names of the input and output colu
 
 1. Install the following NuGet packages for the project:
 
-   [!INCLUDE [mlnet-current-nuget-version](../../../includes/mlnet-current-nuget-version.md)]
-
    - **Microsoft.ML**
    - **Microsoft.ML.ImageAnalytics**
    - **Microsoft.Onnx.Transformer**
+
+   [!INCLUDE [mlnet-current-nuget-version](../../../includes/mlnet-current-nuget-version.md)]
 
 ## Reference the ONNX model
 

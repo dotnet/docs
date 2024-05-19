@@ -19,7 +19,7 @@ This article shows how to migrate from [Newtonsoft.Json](https://www.newtonsoft.
 The `System.Text.Json` namespace provides functionality for serializing to and deserializing from JavaScript Object Notation (JSON). The `System.Text.Json` library is included in the runtime for .NET Core 3.1 and later versions. For other target frameworks, install the [System.Text.Json](https://www.nuget.org/packages/System.Text.Json) NuGet package. The package supports:
 
 * .NET Standard 2.0 and later versions
-* .NET Framework 4.7.2 and later versions
+* .NET Framework 4.6.2 and later versions
 * .NET Core 2.0, 2.1, and 2.2
 
 `System.Text.Json` focuses primarily on performance, security, and standards compliance. It has some key differences in default behavior and doesn't aim to have feature parity with `Newtonsoft.Json`. For some scenarios, `System.Text.Json` currently has no built-in functionality, but there are recommended workarounds. For other scenarios, workarounds are impractical.

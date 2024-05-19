@@ -22,22 +22,24 @@ items:
   href: whats-new/overview.md
 - name: Tutorials
   items:
-  - name: Model Builder & CLI
+  - name: Model Builder
     items:
-    - name: Predict prices (Model Builder value prediction)
+    - name: Predict prices (value prediction)
       href: tutorials/predict-prices-with-model-builder.md
-    - name: Analyze sentiment using the ML.NET CLI
-      href: tutorials/sentiment-analysis-cli.md
-    - name: Analyze sentiment in Razor Pages (Model Builder text classification)
+    - name: Analyze sentiment in Razor Pages (text classification)
       href: tutorials/sentiment-analysis-model-builder.md
-    - name: Categorize health violations (Model Builder data classification)
+    - name: Categorize health violations (data classification)
       href: tutorials/health-violation-classification-model-builder.md
-    - name: Categorize land use from satellite images (Model Builder image classification)
+    - name: Categorize land use from satellite images (image classification)
       href: tutorials/image-classification-model-builder.md
-    - name: Detect traffic signs (Model Builder object detection)
+    - name: Detect traffic signs (object detection)
       href: tutorials/object-detection-model-builder.md
-    - name: Train a recommendation model using Model Builder
+    - name: Train a recommendation model
       href: tutorials/movie-recommendation-model-builder.md
+  - name: CLI
+    items:
+    - name: Analyze sentiment
+      href: tutorials/sentiment-analysis-cli.md
   - name: API
     items:
     - name: Overview
@@ -64,6 +66,8 @@ items:
       href: tutorials/sales-anomaly-detection.md
     - name: Detect objects in images (object detection)
       href: tutorials/object-detection-onnx.md
+    - name: Detect objects in images from Custom Vision ONNX model
+      href: tutorials/object-detection-custom-vision-onnx.md
     - name: Classify sentiment using TensorFlow (text classification)
       href: tutorials/text-classification-tf.md
   - name: Infer.NET
@@ -123,7 +127,7 @@ items:
         href: how-to-guides/inspect-intermediate-data-ml-net.md
       - name: Determine model feature importance with PFI
         href: how-to-guides/explain-machine-learning-model-permutation-feature-importance-ml-net.md
-    - name: Use the trained model
+    - name: Use a trained model
       items:
       - name: Save and load a model
         href: how-to-guides/save-load-machine-learning-models-ml-net.md

@@ -179,7 +179,7 @@ Windows Communication Foundation (WCF) version 1 implements version 1.0 of the W
       <wscoor:CoordinationType>...</wscoor:CoordinationType>  
     </wscoor:CreateCoordinationContext>  
   </s:Body>  
-</s11:Envelope>  
+</s:Envelope>  
 ```  
   
 #### CreateCoordinationContextResponse  

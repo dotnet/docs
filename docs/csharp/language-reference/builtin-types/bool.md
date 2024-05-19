@@ -1,6 +1,6 @@
 ---
 description: Learn about the built-in boolean type in C#
-title: "bool type - C# reference"
+title: "bool type"
 ms.date: 11/26/2019
 f1_keywords: 
   - bool
@@ -44,6 +44,5 @@ For more information, see [The bool type](~/_csharpstandard/standard/types.md#83
 
 ## See also
 
-- [C# reference](../index.md)
 - [Value types](value-types.md)
 - [true and false operators](../operators/true-false-operators.md)

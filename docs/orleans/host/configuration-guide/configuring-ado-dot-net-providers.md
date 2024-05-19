@@ -1,13 +1,12 @@
 ---
 title: Configure ADO.NET providers
 description: Learn how to configure ADO.NET providers in .NET Orleans.
-ms.date: 03/09/2022
+ms.date: 03/16/2022
 ---
 
 # Configure ADO.NET providers
 
-Any reliable deployment of Orleans requires using persistent storage to keep system state, specifically Orleans cluster membership table and reminders.
-One of the available options is using a SQL database via the ADO.NET providers.
+Any reliable deployment of Orleans requires using persistent storage to keep system state, specifically Orleans cluster membership table and reminders. One of the available options is using a SQL database via the ADO.NET providers.
 
 To use ADO.NET for persistence, clustering, or reminders, one needs to configure the ADO.NET providers as part of the silo configuration, and, in the case of clustering, also as part of the client configurations.
 

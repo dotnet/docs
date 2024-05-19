@@ -9,6 +9,8 @@ ms.assetid: ee0038ef-b247-4747-a650-3c5c5cd58d8b
 ---
 # Attributes (.NET Framework design guidelines)
 
+[!INCLUDE [not-current](includes/not-current.md)]
+
 <xref:System.Attribute?displayProperty=nameWithType> is a base class used to define custom attributes.
 
  Attributes are annotations that can be added to programming elements such as assemblies, types, members, and parameters. They are stored in the metadata of the assembly and can be accessed at run time using the reflection APIs. For example, the Framework defines the <xref:System.ObsoleteAttribute>, which can be applied to a type or a member to indicate that the type or member has been deprecated.

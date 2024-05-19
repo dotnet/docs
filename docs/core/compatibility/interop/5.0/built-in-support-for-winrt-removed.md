@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: Built-in support for WinRT is removed from .NET"
 description: Learn about the interop breaking change in .NET 5 where built-in support for WinRT is removed from .NET.
-ms.date: 10/13/2020
+ms.date: 03/29/2022
 ---
 # Built-in support for WinRT is removed from .NET
 
@@ -32,7 +32,7 @@ This breaking change was made for the following reasons:
   <TargetFramework>net5.0-windows10.0.19041.0</TargetFramework>
   ```
 
-- Use the [C#/WinRT](/windows/uwp/csharp-winrt/) tool chain to generate or customize WinRT APIs and types for .NET 5 and later versions.
+- If you're consuming a third-party runtime component that's defined in a *.winmd* file, add a reference to the [Microsoft.Windows.CsWinRT NuGet package](https://www.nuget.org/packages/Microsoft.Windows.CsWinRT/). For information on how to generate the C# projection, see the [C#/WinRT](/windows/uwp/csharp-winrt/) documentation.
 
 For more information, see [Call Windows Runtime APIs in desktop apps](/windows/apps/desktop/modernize/desktop-to-uwp-enhance).
 

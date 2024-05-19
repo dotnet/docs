@@ -2,8 +2,6 @@
 using System.ServiceModel;
 using System.Security.Permissions;
 using System.Runtime.Serialization;
-[assembly: SecurityPermission(
-   SecurityAction.RequestMinimum, Execution = true)]
 
 namespace Example
 {

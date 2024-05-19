@@ -37,8 +37,7 @@ class Program
             foregroundColorOption
         };
 
-        rootCommand.SetHandler(
-            (FileInfo file, bool lightMode, ConsoleColor color) =>
+        rootCommand.SetHandler((file, lightMode, color) =>
             {
                 Console.BackgroundColor = lightMode ? ConsoleColor.White: ConsoleColor.Black;
                 Console.ForegroundColor = color;
@@ -77,8 +76,7 @@ class Program
             foregroundColorOption
         };
 
-        rootCommand.SetHandler(
-            (FileInfo file, bool lightMode, ConsoleColor color) =>
+        rootCommand.SetHandler((file, lightMode, color) =>
             {
                 Console.BackgroundColor = lightMode ? ConsoleColor.Black : ConsoleColor.White;
                 Console.ForegroundColor = color;
@@ -90,7 +88,7 @@ class Program
             foregroundColorOption);
 
         // <first2columns>
-        fileOption.ArgumentHelpName = "<FILEPATH>";
+        fileOption.ArgumentHelpName = "FILEPATH";
 
         var parser = new CommandLineBuilder(rootCommand)
                 .UseDefaults()
@@ -134,8 +132,7 @@ class Program
             foregroundColorOption
         };
 
-        rootCommand.SetHandler(
-            (FileInfo file, bool lightMode, ConsoleColor color) =>
+        rootCommand.SetHandler((file, lightMode, color) =>
             {
                 Console.BackgroundColor = lightMode ? ConsoleColor.Black : ConsoleColor.White;
                 Console.ForegroundColor = color;
@@ -147,7 +144,7 @@ class Program
             foregroundColorOption);
 
         // <description>
-        fileOption.ArgumentHelpName = "<FILEPATH>";
+        fileOption.ArgumentHelpName = "FILEPATH";
 
         var parser = new CommandLineBuilder(rootCommand)
                 .UseDefaults()

@@ -5,22 +5,19 @@ using Shared;
 
 namespace BasicHttp.Example;
 
-public class ItemService
+public sealed class ItemService(HttpClient httpClient) : IDisposable
 {
-    private readonly HttpClient _httpClient = null!;
-
-    public ItemService(HttpClient httpClient) => _httpClient = httpClient;
 
     // <Create>
     public async Task CreateItemAsync(Item item)
     {
         using StringContent json = new(
-            JsonSerializer.Serialize(item, DefaultJsonSerialization.Options),
+            JsonSerializer.Serialize(item, new JsonSerializerOptions(JsonSerializerDefaults.Web)),
             Encoding.UTF8,
             MediaTypeNames.Application.Json);
 
         using HttpResponseMessage httpResponse =
-            await _httpClient.PostAsync("/api/items", json);
+            await httpClient.PostAsync("/api/items", json);
 
         httpResponse.EnsureSuccessStatusCode();
     }
@@ -29,12 +26,12 @@ public class ItemService
     public async Task UpdateItemAsync(Item item)
     {
         using StringContent json = new(
-            JsonSerializer.Serialize(item, DefaultJsonSerialization.Options),
+            JsonSerializer.Serialize(item, new JsonSerializerOptions(JsonSerializerDefaults.Web)),
             Encoding.UTF8,
             MediaTypeNames.Application.Json);
 
         using HttpResponseMessage httpResponse =
-            await _httpClient.PutAsync($"/api/items/{item.Id}", json);
+            await httpClient.PutAsync($"/api/items/{item.Id}", json);
 
         httpResponse.EnsureSuccessStatusCode();
     }
@@ -43,9 +40,11 @@ public class ItemService
     public async Task DeleteItemAsync(Guid id)
     {
         using HttpResponseMessage httpResponse =
-            await _httpClient.DeleteAsync($"/api/items/{id}");
+            await httpClient.DeleteAsync($"/api/items/{id}");
 
         httpResponse.EnsureSuccessStatusCode();
     }
     // </Delete>
+
+    void IDisposable.Dispose() => httpClient?.Dispose();
 }

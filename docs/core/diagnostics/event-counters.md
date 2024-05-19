@@ -39,7 +39,7 @@ An event listener specifies how long measurement intervals are. At the end of ea
 
 ## Implement an EventSource
 
-The following code implements a sample <xref:System.Diagnostics.Tracing.EventSource> exposed as the named `"Sample.EventCounter.Minimal"` provider. This source contains an <xref:System.Diagnostics.Tracing.EventCounter> representing request-processing time. Such a counter has a name (that is, its unique ID in the source) and a display name, both used by listener tools such as [dotnet-counter](dotnet-counters.md).
+The following code implements a sample <xref:System.Diagnostics.Tracing.EventSource> exposed as the named `"Sample.EventCounter.Minimal"` provider. This source contains an <xref:System.Diagnostics.Tracing.EventCounter> representing request-processing time. Such a counter has a name (that is, its unique ID in the source) and a display name, both used by listener tools such as [dotnet-counters](dotnet-counters.md).
 
 :::code language="csharp" source="snippets/EventCounters/MinimalEventCounterSource.cs":::
 
@@ -185,10 +185,10 @@ EventCounters can be consumed by Azure Monitor, specifically Azure Application I
 
 #### dotnet-monitor
 
-The `dotnet-monitor` tool is an experimental tool that makes it easier to get access to diagnostics information in a .NET process. The
-tool serves as a superset of all diagnostics tools. In addition to traces, it can monitor metrics, collect memory dumps, and collect GC dumps. It's distributed as both a CLI tool and a docker image. It exposes a REST API, and the collection of diagnostic artifacts occurs through REST calls.
+The `dotnet-monitor` tool makes it easier to access diagnostics from a .NET process in a remote and automated fashion. In addition to traces, it can monitor metrics,
+collect memory dumps, and collect GC dumps. It's distributed as both a CLI tool and a docker image. It exposes a REST API, and the collection of diagnostic artifacts occurs through REST calls.
 
-For more information, see [Introducing dotnet-monitor, an experimental tool](https://devblogs.microsoft.com/dotnet/introducing-dotnet-monitor).
+For more information, see [dotnet-monitor](dotnet-monitor.md).
 
 ### Consume in-proc
 

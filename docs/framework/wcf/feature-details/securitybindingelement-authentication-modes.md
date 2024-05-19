@@ -72,7 +72,7 @@ Windows Communication Foundation (WCF) provides several modes by which clients a
   
 ### IssuedTokenForSslNegotiated  
 
- With this authentication mode, the client does not authenticate to the service, as such; instead, the client authenticates to a security token service and receives a SAML token, which it then presents to the server to prove its knowledge of a shared key. The issued token appears at the SOAP layer as either an endorsing supporting token or a bearer token; that is, a token that signs the message signature. The service is authenticated using an X.509 certificate. The security binding element is a <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> returned by the <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateIssuedTokenForSslBindingElement%2A> method. Alternatively, set the `authenticationMode` attribute to `IssuedTokenForSslnegotiated`.  
+ With this authentication mode, the client does not authenticate to the service, as such; instead, the client authenticates to a security token service and receives a SAML token, which it then presents to the server to prove its knowledge of a shared key. The issued token appears at the SOAP layer as either an endorsing supporting token or a bearer token; that is, a token that signs the message signature. The service is authenticated using an X.509 certificate. The security binding element is a <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> returned by the <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateIssuedTokenForSslBindingElement%2A> method. Alternatively, set the `authenticationMode` attribute to `IssuedTokenForSslNegotiated`.  
   
 ### IssuedTokenOverTransport  
 

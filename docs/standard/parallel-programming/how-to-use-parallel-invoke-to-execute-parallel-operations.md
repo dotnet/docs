@@ -28,7 +28,7 @@ This example parallelizes the operations, not the data. As an alternate approach
 
 ## Compile the Code
 
-Copy and paste the entire example into a Microsoft Visual Studio project and press **F5**.
+Copy and paste the entire example into a Microsoft Visual Studio project and press <kbd>F5</kbd>.
 
 ## See also
 

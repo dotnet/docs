@@ -1,7 +1,7 @@
 ---
 title: I/O pipelines - .NET
 description: Learn how to efficiently use I/O pipelines in .NET and avoid problems in your code.
-ms.date: 08/27/2020
+ms.date: 05/09/2022
 helpviewer_keywords:
   - "Pipelines"
   - "Pipelines I/O"
@@ -13,6 +13,8 @@ ms.author: riande
 # System.IO.Pipelines in .NET
 
 <xref:System.IO.Pipelines> is a library that is designed to make it easier to do high-performance I/O in .NET. It's a library targeting .NET Standard that works on all .NET implementations.
+
+The library is available in the [System.IO.Pipelines](https://www.nuget.org/packages/System.IO.Pipelines) Nuget package.
 
 <a name="solve"></a>
 
@@ -61,8 +63,6 @@ To fix the preceding problems, the following changes are required:
 :::code language="csharp" source="snippets/pipelines_1/ProcessLinesAsync.cs" id="snippet":::
 
 The previous code is complex and doesn't address all the problems identified. High-performance networking usually means writing complex code to maximize performance. `System.IO.Pipelines` was designed to make writing this type of code easier.
-
-[!INCLUDE [localized code comments](../../../includes/code-comments-loc.md)]
 
 ## Pipe
 
@@ -333,6 +333,18 @@ The previous method of writing uses the buffers provided by the `PipeWriter`. It
 * A new buffer must be requested after calling <xref:System.IO.Pipelines.PipeWriter.Advance%2A> to continue writing more data. The previously acquired buffer can't be written to.
 * Calling `GetMemory` or `GetSpan` while there's an incomplete call to `FlushAsync` isn't safe.
 * Calling `Complete` or `CompleteAsync` while there's unflushed data can result in memory corruption.
+
+## Tips for using PipeReader and PipeWriter
+
+The following tips will help you use the <xref:System.IO.Pipelines> classes successfully:
+
+* Always complete the [PipeReader](xref:System.IO.Pipelines.PipeReader.Complete%2A?displayProperty=nameWithType) and [PipeWriter](xref:System.IO.Pipelines.PipeWriter.Complete%2A?displayProperty=nameWithType), including an exception where applicable.
+* Always call <xref:System.IO.Pipelines.PipeReader.AdvanceTo%2A?displayProperty=nameWithType> after calling <xref:System.IO.Pipelines.PipeReader.ReadAsync%2A?displayProperty=nameWithType>.
+* Periodically `await` <xref:System.IO.Pipelines.PipeWriter.FlushAsync%2A?displayProperty=nameWithType> while writing, and always check <xref:System.IO.Pipelines.FlushResult.IsCompleted?displayProperty=nameWithType>. Abort writing if `IsCompleted` is `true`, as that indicates the reader is completed and no longer cares about what is written.
+* Do call <xref:System.IO.Pipelines.PipeWriter.FlushAsync%2A?displayProperty=nameWithType> after writing something that you want the `PipeReader` to have access to.
+* Do not call `FlushAsync` if the reader can't start until `FlushAsync` finishes, as that may cause a deadlock.
+* Ensure that only one context "owns" a `PipeReader` or `PipeWriter` or accesses them. These types are not thread-safe.
+* Never access a <xref:System.IO.Pipelines.ReadResult.Buffer%2A?displayProperty=nameWithType> after calling `AdvanceTo` or completing the `PipeReader`.
 
 ## IDuplexPipe
 

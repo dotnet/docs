@@ -13,7 +13,7 @@ ms.assetid: c0a9bcdf-3df8-4db3-b1b6-abbdb2af809a
 ---
 # Default Marshalling Behavior
 
-Interop marshalling operates on rules that dictate how data associated with method parameters behaves as it passes between managed and unmanaged memory. These built-in rules control such marshalling activities as data type transformations, whether a callee can change data passed to it and return those changes to the caller, and under which circumstances the m marshallerrovides performance optimizations.  
+Interop marshalling operates on rules that dictate how data associated with method parameters behaves as it passes between managed and unmanaged memory. These built-in rules control such marshalling activities as data type transformations, whether a callee can change data passed to it and return those changes to the caller, and under which circumstances the marshaller provides performance optimizations.  
   
  This section identifies the default behavioral characteristics of the interop marshalling service. It presents detailed information on marshalling arrays, Boolean types, char types, delegates, classes, objects, strings, and structures.  
   
@@ -36,7 +36,7 @@ BSTR MethodOne (BSTR b) {
   
  However, if you define the method as a platform invoke prototype, replace each **BSTR** type with a <xref:System.String> type, and call `MethodOne`, the common language runtime attempts to free `b` twice. You can change the marshalling behavior by using <xref:System.IntPtr> types rather than **String** types.  
   
- The runtime always uses the **CoTaskMemFree** method to free memory. If the memory you are working with was not allocated with the **CoTaskMemAlloc** method, you must use an **IntPtr** and free the memory manually using the appropriate method. Similarly, you can avoid automatic memory freeing in situations where memory should never be freed, such as when using the **GetCommandLine** function from Kernel32.dll, which returns a pointer to kernel memory. For details on manually freeing memory, see the [Buffers Sample](/previous-versions/dotnet/netframework-4.0/x3txb6xc(v=vs.100)).  
+ The runtime always uses the **CoTaskMemFree** method on Windows and **free** method on other platforms to free memory. If the memory you are working with was not allocated with the **CoTaskMemAlloc** method on Windows or **malloc** method on other platforms, you must use an **IntPtr** and free the memory manually using the appropriate method. Similarly, you can avoid automatic memory freeing in situations where memory should never be freed, such as when using the **GetCommandLine** function from Kernel32.dll, which returns a pointer to kernel memory. For details on manually freeing memory, see the [Buffers Sample](/previous-versions/dotnet/netframework-4.0/x3txb6xc(v=vs.100)).  
   
 ## Default marshalling for classes  
 
@@ -350,7 +350,7 @@ interface _Graphics {
 }  
 ```  
   
- The same rules used to marshal values and references to platform invoke calls are used when marshalling through COM interfaces. For example, when an instance of the `Point` value type is passed from the .NET Framework to COM, the `Point` is passed by value. If the `Point` value type is passed by reference, a pointer to a `Point` is passed on the stack. The interop  marshallerdoes not support higher levels of indirection (**Point** \*\*) in either direction.  
+ The same rules used to marshal values and references to platform invoke calls are used when marshalling through COM interfaces. For example, when an instance of the `Point` value type is passed from the .NET Framework to COM, the `Point` is passed by value. If the `Point` value type is passed by reference, a pointer to a `Point` is passed on the stack. The interop marshaller does not support higher levels of indirection (**Point** \*\*) in either direction.  
   
 > [!NOTE]
 > Structures having the <xref:System.Runtime.InteropServices.LayoutKind> enumeration value set to **Explicit** cannot be used in COM interop because the exported type library cannot express an explicit layout.  

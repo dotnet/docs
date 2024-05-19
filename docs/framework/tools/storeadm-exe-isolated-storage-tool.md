@@ -30,7 +30,7 @@ storeadm [/list][/machine][/remove][/roaming][/quiet]
 |------------|-----------------|  
 |**/h**[**elp**]|Displays command syntax and options for the tool.|  
 |**/list**|Displays all existing stores for the current user. This includes the stores for all applications or assemblies executed by this user.|  
-|**/machine**|Selects the machine store. Use this option with the **/list** or **/remove** option to specify that the action should apply to the machine store.<br /><br /> New in the .NET Framework 2.0|  
+|**/machine**|Selects the machine store. Use this option with the **/list** or **/remove** option to specify that the action should apply to the machine store.<br /><br /> New in .NET Framework 2.0|  
 |**/quiet**|Specifies quiet mode; suppresses informational output so that only error messages appear.|  
 |**/remove**|Permanently removes all existing stores for the current user.|  
 |**/roaming**|Selects the roaming store. Use this option with the **/list** or **/remove** options to specify that the action should apply to the roaming store.|  

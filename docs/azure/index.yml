@@ -8,7 +8,7 @@ metadata:
   title: Azure for .NET developers
   description: Samples, tutorials, and education for .NET on Azure
   ms.topic: hub-page
-  ms.prod: azure-dotnet
+  ms.service: azure-dotnet
   ms.date: 05/13/2021
 
 highlightedContent:
@@ -25,7 +25,7 @@ highlightedContent:
       url: /azure/azure-functions/functions-create-your-first-function-visual-studio
     - itemType: tutorial
       title: ASP.NET Core and Docker
-      url: /visualstudio/containers/container-tools?view=vs-2019
+      url: /visualstudio/containers/container-tools
     - itemType: deploy
       title: Deploy a .NET app with Azure DevOps
       url: /azure/devops/pipelines/ecosystems/dotnet-core?view=azure-devops
@@ -34,7 +34,7 @@ highlightedContent:
       url: /azure/app-service/app-service-web-tutorial-auth-aad
     - itemType: learn
       title: Secure custom APIs with Microsoft Identity
-      url: /learn/modules/identity-secure-custom-api/
+      url: /training/modules/identity-secure-custom-api/
     - itemType: get-started
       title: Azure SDK for .NET
       url: sdk/azure-sdk-for-dotnet.md
@@ -54,13 +54,13 @@ conceptualContent:
           url: /azure/azure-functions/functions-overview
         - itemType: learn
           text: Host a web app with Azure App Service
-          url: /learn/modules/host-a-web-app-with-azure-app-service/
+          url: /training/modules/host-a-web-app-with-azure-app-service/
         - itemType: learn
           text: Develop, test, and deploy an Azure Function with Visual Studio
-          url: /learn/modules/develop-test-deploy-azure-functions-with-visual-studio/
+          url: /training/modules/develop-test-deploy-azure-functions-with-visual-studio/
         - itemType: learn
           text: Publish and manage your APIs with Azure API Management
-          url: /learn/modules/publish-manage-apis-with-azure-api-management/
+          url: /training/modules/publish-manage-apis-with-azure-api-management/
         - itemType: tutorial
           text: ASP.NET Core web app with App Service and Azure SQL Database
           url: /azure/app-service/app-service-web-tutorial-dotnet-sqldatabase
@@ -72,12 +72,18 @@ conceptualContent:
           url: /azure/app-service/app-service-web-tutorial-rest-api
     - title: Create cloud native apps
       links:
+        - itemType: overview
+          url: /dotnet/aspire/get-started/aspire-overview
+          text: Build cloud native apps using .NET Aspire
+        - itemType: quickstart
+          url: /dotnet/aspire/get-started/build-your-first-aspire-app?tabs=visual-studio
+          text: Build your first .NET Aspire app
         - itemType: quickstart
           text: Run and debug a microservice in Kubernetes
           url: /azure/dev-spaces/quickstart-netcore-visualstudio
         - itemType: learn
           text: Create and deploy a cloud-native ASP.NET Core microservice
-          url: /learn/modules/microservices-aspnet-core/
+          url: /training/modules/microservices-aspnet-core/
         - itemType: tutorial
           text: Deploy and debug multiple containers in AKS
           url: /azure/dev-spaces/multi-service-netcore-visualstudio
@@ -86,12 +92,38 @@ conceptualContent:
           url: /azure/azure-app-configuration/use-feature-flags-dotnet-core
         - itemType: how-to-guide
           text: Deploy a .NET Core app to Azure Container Registry
-          url: /visualstudio/containers/hosting-web-apps-in-docker?view=vs-2019
+          url: /visualstudio/containers/hosting-web-apps-in-docker
+    - title: Create intelligent apps with AI
+      links:
+        - itemType: overview
+          url: ../ai/get-started/dotnet-ai-overview.md
+          text: AI for .NET overview
+        - itemType: quickstart
+          url: ../ai/quickstarts/get-started-azure-openai.md
+          text: Build a chat app
+        - itemType: quickstart
+          text: Generate images
+          url: ../ai/quickstarts/quickstart-openai-generate-images.md
+        - itemType: concept
+          text: Understand prompt engineering
+          url: ../ai/conceptual/prompt-engineering-dotnet.md
+        - itemType: concept
+          text: Understand generative AI and LLMs
+          url: ../ai/conceptual/how-genai-and-llms-work.md
+        - itemType: tutorial
+          text: Implement RAG using vector search
+          url: ../ai/tutorials/tutorial-ai-vector-search.md
+        - itemType: tutorial
+          text: Get started with the .NET enterprise chat sample
+          url: ../ai/get-started-app-chat-template.md
+        - itemType: overview
+          text: Learning resources and samples
+          url: ../ai/azure-ai-for-dotnet-developers.md
     - title: Create mobile apps
       links:
         - itemType: learn
           text: Consume REST services from Azure in Xamarin apps
-          url: /learn/modules/consume-rest-services/
+          url: /training/modules/consume-rest-services/
         - itemType: quickstart
           text: Create a Xamarin.Forms app with .NET SDK and Azure Cosmos DB's API for MongoDB
           url: /azure/cosmos-db/create-mongodb-xamarin
@@ -110,7 +142,7 @@ conceptualContent:
           text: Choose the right data storage option
           url: /azure/architecture/guide/technology-choices/data-store-overview
         - itemType: quickstart
-          text: Use .NET to query a Azure SQL Database or Azure SQL Managed Instance
+          text: Use .NET to query an Azure SQL Database or Azure SQL Managed Instance
           url: /azure/azure-sql/database/connect-query-dotnet-core
         - itemType: quickstart
           text: Use .NET to query Azure PostgreSQL
@@ -123,13 +155,13 @@ conceptualContent:
           url: /azure/postgresql/connect-csharp
         - itemType: learn
           text: Persist and retrieve relational data with Entity Framework Core
-          url: /learn/modules/persist-data-ef-core/
+          url: /training/modules/persist-data-ef-core/
         - itemType: learn
           text: Build a .NET Core app with Azure Cosmos DB in Visual Studio Code
-          url: /learn/modules/build-cosmos-db-app-with-vscode/
+          url: /training/modules/build-cosmos-db-app-with-vscode/
         - itemType: learn
           text: Store application data with Azure Blob storage
-          url: /learn/modules/store-app-data-with-azure-blob-storage/
+          url: /training/modules/store-app-data-with-azure-blob-storage/
     - title: Authentication and security
       links:
         - itemType: overview
@@ -137,13 +169,13 @@ conceptualContent:
           url: /azure/active-directory/develop/
         - itemType: learn
           text: Secure your application by using OpenID Connect and Azure AD
-          url: /learn/modules/secure-app-with-oidc-and-azure-ad/
+          url: /training/modules/secure-app-with-oidc-and-azure-ad/
         - itemType: learn
           text: Secure custom APIs with Microsoft Identity
-          url: /learn/modules/identity-secure-custom-api/
+          url: /training/modules/identity-secure-custom-api/
         - itemType: learn
           text: Secure an ASP.NET Core web app with the ASP.NET Identity framework
-          url: /learn/modules/secure-aspnet-core-identity/
+          url: /training/modules/secure-aspnet-core-identity/
         - itemType: tutorial
           text: Add sign-in to Microsoft to an ASP.NET web app
           url: /azure/active-directory/develop/tutorial-v2-asp-webapp
@@ -175,7 +207,7 @@ conceptualContent:
           url: /azure/event-grid/overview
         - itemType: quickstart
           text: Use Azure Queue Storage
-          url: /azure/storage/queues/storage-dotnet-how-to-use-queues?tabs=dotnet
+          url: /azure/storage/queues/storage-quickstart-queues-dotnet?tabs=dotnet
         - itemType: quickstart
           text: Use Azure Service Bus queues
           url: /azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues
@@ -192,7 +224,7 @@ conceptualContent:
           url: /azure/azure-monitor/app/dotnet-quickstart
         - itemType: learn
           text: Capture and view page load times in your Azure web app
-          url: /learn/modules/capture-page-load-times-application-insights/
+          url: /training/modules/capture-page-load-times-application-insights/
         - itemType: how-to-guide
           text: Troubleshoot ASP.NET Core on Azure App Service and IIS
           url: /aspnet/core/test/troubleshoot-azure-iis
@@ -205,20 +237,6 @@ conceptualContent:
         - itemType: how-to-guide
           text: Troubleshoot an app in Azure App Service using Visual Studio
           url: /azure/app-service/troubleshoot-dotnet-visual-studio
-    - title: Migration
-      links:
-        - itemType: concept
-          text: Choose an Azure hosting option
-          url: ./migration/choose.md
-        - itemType: how-to-guide
-          text: Migrate a .NET web app or service to Azure App Service
-          url: ./migration/app-service.md
-        - itemType: how-to-guide
-          text: Migrate an ASP.NET app to an Azure VM
-          url: ./migration/vm.md
-        - itemType: how-to-guide
-          text: Migrate a SQL Server database to Azure
-          url: ./migration/sql.md
     - title: Azure SDK for .NET
       links:
         - itemType: download
@@ -238,7 +256,7 @@ conceptualContent:
           url: dotnet-dev-env-checklist.md
         - itemType: reference
           text: API reference
-          url: /dotnet/api/overview/azure/?view=azure-dotnet
+          url: /dotnet/api/azure
 
 additionalContent:
   sections:
@@ -260,8 +278,8 @@ additionalContent:
               url: /Shows/On-NET
             - text: .NET Community Standup
               url: https://dotnet.microsoft.com/platform/community/standup
-            - text: The .NET Docs Show
-              url: https://dotnetdocs.dev
+            - text: On .NET Live
+              url: https://dotnet.microsoft.com/live/dotnet-docs
         - title: Open Source
           links:
             - text: Azure SDK for .NET

@@ -2,7 +2,6 @@
 title: Configuration files for code analysis rules
 description: Learn about different configuration files to configure code analysis rules.
 ms.date: 07/07/2021
-ms.topic: conceptual
 no-loc: ["EditorConfig"]
 ---
 # Configuration files for code analysis rules
@@ -34,7 +33,7 @@ You can apply EditorConfig file conventions to a folder, a project, or an entire
 If you have an existing *.editorconfig* file for editor settings such as indent size or whether to trim trailing whitespace, you can place your code analysis configuration options in the same file.
 
 > [!TIP]
-> Visual Studio provides an *.editorconfig* item template that makes is easy to add one of these files to your project. For more information, see [Add an EditorConfig file to a project](/visualstudio/ide/create-portable-custom-editor-options#add-an-editorconfig-file-to-a-project).
+> Visual Studio provides an *.editorconfig* item template that makes it easy to add one of these files to your project. For more information, see [Add an EditorConfig file to a project](/visualstudio/ide/create-portable-custom-editor-options#add-an-editorconfig-file-to-a-project).
 
 ### Example
 
@@ -67,7 +66,7 @@ dotnet_diagnostic.CA1000.severity = warning
 
 ## Global AnalyzerConfig
 
-Starting with the .NET 5 SDK (which is supported in Visual Studio 2019 version 16.8 and later), you can also configure analyzer options with global _AnalyzerConfig_ files. These files are used to provide **options that apply to all the source files in a project**, regardless of their file names or file paths.
+Starting with the .NET 5 SDK (which is supported in Visual Studio 2019 and later), you can also configure analyzer options with global _AnalyzerConfig_ files. These files are used to provide **options that apply to all the source files in a project**, regardless of their file names or file paths.
 
 Unlike [EditorConfig](#editorconfig) files, global configuration files can't be used to configure editor style settings for IDEs, such as indent size or whether to trim trailing whitespace. Instead, they are designed purely for specifying project-level analyzer configuration options.
 
@@ -97,7 +96,19 @@ Consider the following naming recommendations:
 - MSBuild tooling-generated global config files should be named *<%Target_Name%>_Generated.globalconfig* or similar.
 
 > [!NOTE]
-> The top-level entry `is_global = true` is required even when the file is named `.globalconfig`.
+> The top-level entry `is_global = true` is not required when the file is named `.globalconfig`, but it is recommended for clarity.
+
+### Distribution in NuGet packages
+
+Global AnalyzerConfig files can be distributed with NuGet packages. To do so, add a [*.props* file](/nuget/concepts/msbuild-props-and-targets) to the NuGet package. In the *.props* file, add a `GlobalAnalyzerConfigFiles` item under the `Project` node:
+
+```xml
+<Project>
+  <ItemGroup>
+    <GlobalAnalyzerConfigFiles Include="Relative/Path/to/PackageName.globalconfig" />
+  </ItemGroup>
+</Project>
+```
 
 ### Example
 

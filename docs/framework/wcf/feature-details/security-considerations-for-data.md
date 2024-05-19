@@ -36,6 +36,8 @@ You should ensure that no malicious code is plugged in to the various extensibil
 
 Note that when running in partial trust, the data contract serialization infrastructure supports only a limited subset of the data contract programming model - for example, private data members or types using the <xref:System.SerializableAttribute> attribute are not supported. For more information, see [Partial Trust](partial-trust.md).
 
+[!INCLUDE [cas-deprecated](../../../../includes/cas-deprecated.md)]
+
 ## Avoiding Unintentional Information Disclosure
 
 When designing serializable types with security in mind, information disclosure is a possible concern.

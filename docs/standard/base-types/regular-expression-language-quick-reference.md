@@ -77,7 +77,7 @@ Anchors, or atomic zero-width assertions, cause a match to succeed or fail depen
 |`\A`|The match must occur at the start of the string.|`\A\d{3}`|`"901"` in `"901-333-"`|
 |`\Z`|The match must occur at the end of the string or before `\n` at the end of the string.|`-\d{3}\Z`|`"-333"` in `"-901-333"`|
 |`\z`|The match must occur at the end of the string.|`-\d{3}\z`|`"-333"` in `"-901-333"`|
-|`\G`|The match must occur at the point where the previous match ended.|`\G\(\d\)`|`"(1)"`, `"(3)"`, `"(5)"` in `"(1)(3)(5)[7](9)"`|
+|`\G`|The match must occur at the point where the previous match ended, or if there was no previous match, at the position in the string where matching started.|`\G\(\d\)`|`"(1)"`, `"(3)"`, `"(5)"` in `"(1)(3)(5)[7](9)"`|
 |`\b`|The match must occur on a boundary between a `\w` (alphanumeric) and a `\W` (nonalphanumeric) character.|`\b\w+\s\w+\b`|`"them theme"`, `"them them"` in `"them theme them them"`|
 |`\B`|The match must not occur on a `\b` boundary.|`\Bend\w*\b`|`"ends"`, `"ender"` in `"end sends endure lender"`|
 
@@ -96,19 +96,19 @@ Grouping constructs delineate subexpressions of a regular expression and typical
 |`(?!` *subexpression* `)`|Zero-width negative lookahead assertion.|`\b\w+\b(?!.+and.+)`|`"and"`, `"some"`, `"mice"`<br/>in<br/>`"cats, dogs and some mice."`|
 |`(?<=` *subexpression* `)`|Zero-width positive lookbehind assertion.|`\b\w+\b(?<=.+and.+)`<br/><br/>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;<br/><br/>`\b\w+\b(?<=.+and.*)`|`"some"`, `"mice"`<br/>in<br/>`"cats, dogs and some mice."`<br/>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;<br/>`"and"`, `"some"`, `"mice"`<br/>in<br/>`"cats, dogs and some mice."`|
 |`(?<!` *subexpression* `)`|Zero-width negative lookbehind assertion.|`\b\w+\b(?<!.+and.+)`<br/><br/>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;<br/><br/>`\b\w+\b(?<!.+and.*)`|`"cats"`, `"dogs"`, `"and"`<br/>in<br/>`"cats, dogs and some mice."`<br/>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;<br/>`"cats"`, `"dogs"`<br/>in<br/>`"cats, dogs and some mice."`|
-|`(?>` *subexpression* `)`|Atomic group.|`(?>a|ab)c`|`"ac"` in`"ac"`<br/><br/>_nothing_ in`"abc"`|
+|`(?>` *subexpression* `)`|Atomic group.|'(?>a&#124;ab)c|`"ac"` in`"ac"`<br/><br/>_nothing_ in`"abc"`|
 
 ### Lookarounds at a glance
 
 When the regular expression engine hits a **lookaround expression**, it takes a substring reaching from the current position to the start (lookbehind) or end (lookahead) of the original string, and then runs
 <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=nameWithType> on that substring using the lookaround pattern. Success of this subexpression's result is then determined by whether it's a positive or negative assertion.
 
-| Lookaround | Name | Function |
-| - | - | - |
-`(?=check)` | Positive&nbsp;Lookahead | Asserts that what immediately follows the current position in the string is "check"
-`(?<=check)` | Positive&nbsp;Lookbehind | Asserts that what immediately precedes the current position in the string is "check"
-`(?!check)` | Negative&nbsp;Lookahead  | Asserts that what immediately follows the current position in the string is not "check"
-`(?<!check)` | Negative&nbsp;Lookbehind | Asserts that what immediately precedes the current position in the string is not "check"
+| Lookaround   | Name                     | Function                                                                                 |
+|--------------|--------------------------|------------------------------------------------------------------------------------------|
+| `(?=check)`  | Positive&nbsp;Lookahead  | Asserts that what immediately follows the current position in the string is "check"      |
+| `(?<=check)` | Positive&nbsp;Lookbehind | Asserts that what immediately precedes the current position in the string is "check"     |
+| `(?!check)`  | Negative&nbsp;Lookahead  | Asserts that what immediately follows the current position in the string is not "check"  |
+| `(?<!check)` | Negative&nbsp;Lookbehind | Asserts that what immediately precedes the current position in the string is not "check" |
 
 Once they have matched, **atomic groups** won't be re-evaluated again, even when the remainder of the pattern fails due to the match. This can significantly improve performance when quantifiers occur within the atomic group or the remainder of the pattern.
 
@@ -118,15 +118,15 @@ A quantifier specifies how many instances of the previous element (which can be 
 
 |Quantifier|Description|Pattern|Matches|
 |----------------|-----------------|-------------|-------------|
-|`*`|Matches the previous element zero or more times.|`\d*\.\d`|`".0"`, `"19.9"`, `"219.9"`|
+|`*`|Matches the previous element zero or more times.|`a.*c`|`"abcbc"` in `"abcbc"`|
 |`+`|Matches the previous element one or more times.|`"be+"`|`"bee"` in `"been"`, `"be"` in `"bent"`|
-|`?`|Matches the previous element zero or one time.|`"rai?n"`|`"ran"`, `"rain"`|
+|`?`|Matches the previous element zero or one time.|`"rai?"`|`"rai"` in `"rain"`|
 |`{` *n* `}`|Matches the previous element exactly *n* times.|`",\d{3}"`|`",043"` in `"1,043.6"`, `",876"`, `",543"`, and `",210"` in `"9,876,543,210"`|
 |`{` *n* `,}`|Matches the previous element at least *n* times.|`"\d{2,}"`|`"166"`, `"29"`, `"1930"`|
 |`{` *n* `,` *m* `}`|Matches the previous element at least *n* times, but no more than *m* times.|`"\d{3,5}"`|`"166"`, `"17668"`<br /><br /> `"19302"` in `"193024"`|
-|`*?`|Matches the previous element zero or more times, but as few times as possible.|`\d*?\.\d`|`".0"`, `"19.9"`, `"219.9"`|
+|`*?`|Matches the previous element zero or more times, but as few times as possible.|`a.*?c`|`"abc"` in `"abcbc"`|
 |`+?`|Matches the previous element one or more times, but as few times as possible.|`"be+?"`|`"be"` in `"been"`, `"be"` in `"bent"`|
-|`??`|Matches the previous element zero or one time, but as few times as possible.|`"rai??n"`|`"ran"`, `"rain"`|
+|`??`|Matches the previous element zero or one time, but as few times as possible.|`"rai??"`|`"ra"` in `"rain"`|
 |`{` *n* `}?`|Matches the preceding element exactly *n* times.|`",\d{3}?"`|`",043"` in `"1,043.6"`, `",876"`, `",543"`, and `",210"` in `"9,876,543,210"`|
 |`{` *n* `,}?`|Matches the previous element at least *n* times, but as few times as possible.|`"\d{2,}?"`|`"166"`, `"29"`, `"1930"`|
 |`{` *n* `,` *m* `}?`|Matches the previous element between *n* and *m* times, but as few times as possible.|`"\d{3,5}?"`|`"166"`, `"17668"`<br /><br /> `"193"`, `"024"` in `"193024"`|

@@ -39,7 +39,7 @@ You enclose a property definition between a `Property` statement and an `End Pro
   
 1. Between the `Property` and `End Property` statements, write a [Set Statement](../../../language-reference/statements/set-statement.md), followed by an `End Set` statement.  
   
-2. In the `Set` statement, follow the `Set` keyword with a parameter list in parentheses. This parameter list must include at least a value parameter for the value passed by the calling code. The default name for this value parameter is `Value`, but you can use a different name if appropriate. The value parameter must have the same data type as the property itself.  
+2. In the `Set` statement, optionally follow the `Set` keyword with a parameter list in parentheses. If the parameter list is not present or is empty, an implicit parameter named `Value` is defined, whose type is the type of the property itself. If the parameter list is not empty, you can use a different name if appropriate, but the parameter must have the same data type as the property itself.  
   
 3. Place the code statements to store a value in the property between the `Set` and `End Set` statements. This code can include other calculations and data manipulations in addition to validating and storing the property's value.  
   

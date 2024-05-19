@@ -1,5 +1,5 @@
 ---
-title: "How to determine whether a string represents a numeric value - C# Programming Guide"
+title: "How to determine whether a string represents a numeric value"
 description: Learn how to determine whether a string is a valid representation of a specified numeric type. See code examples and view additional resources.
 ms.topic: how-to
 ms.date: 07/20/2015
@@ -28,7 +28,7 @@ bool result = int.TryParse(s, out i); //i now = 108
 
  The following examples show how to use `TryParse` with string representations of `long`, `byte`, and `decimal` values.  
   
- [!code-csharp[csProgGuideStrings#14](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStrings/CS/Strings.cs#14)]  
+:::code language="csharp" source="./snippets/StringParsing.cs" id="ParseNumbers":::
   
 ## Robust Programming  
 

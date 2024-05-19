@@ -2,7 +2,7 @@
   "profiles": {
     "scl": {
       "commandName": "Project",
-      "commandLineArgs": "quotes"
+      "commandLineArgs": "quotes read --file sampleQuotes.txt"
     }
   }
 }

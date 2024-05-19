@@ -3,10 +3,8 @@
 using System;
 using System.IdentityModel.Claims;
 using System.Runtime.Serialization;
-using System.Security.Permissions;
 //</snippet1>
-[assembly: SecurityPermission(
-   SecurityAction.RequestMinimum, Execution = true)]
+
 namespace Samples
 {
   //<snippet2>

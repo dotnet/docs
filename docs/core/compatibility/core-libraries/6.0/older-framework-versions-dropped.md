@@ -44,6 +44,7 @@ The following packages no longer ship old frameworks:
 - Microsoft.Extensions.DependencyModel
 - Microsoft.Win32.Registry.AccessControl
 - Microsoft.Win32.SystemEvents
+- System.Collections.Immutable
 - System.ComponentModel.Annotations
 - System.ComponentModel.Composition
 - System.ComponentModel.Composition.Registration
@@ -53,6 +54,7 @@ The following packages no longer ship old frameworks:
 - System.Composition.Runtime
 - System.Composition.TypedParts
 - System.Data.Odbc
+- System.Data.OleDb
 - System.Diagnostics.DiagnosticSource
 - System.Diagnostics.EventLog
 - System.Diagnostics.PerformanceCounter
@@ -64,19 +66,26 @@ The following packages no longer ship old frameworks:
 - System.IO.Pipelines
 - System.Management
 - System.Net.Http.WinHttpHandler
+- System.Net.WebSockets.WebSocketProtocol
+- System.Numerics.Tensors
 - System.Reflection.Context
+- System.Reflection.Metadata
+- System.Reflection.MetadataLoadContext
 - System.Runtime.Caching
 - System.Runtime.CompilerServices.Unsafe
 - System.Security.Cryptography.Cng
 - System.Security.Cryptography.OpenSsl
 - System.Security.Cryptography.Pkcs
 - System.Security.Cryptography.ProtectedData
+- System.Security.Permissions
 - System.ServiceProcess.ServiceController
 - System.Speech
 - System.Text.Encoding.CodePages
 - System.Text.Encodings.Web
 - System.Threading.AccessControl
 - System.Threading.Channels
+- System.Threading.Tasks.Dataflow
+- System.Windows.Extensions
 
 The following packages will no longer be updated because their implementation is now part of the .NET 6 platform:
 

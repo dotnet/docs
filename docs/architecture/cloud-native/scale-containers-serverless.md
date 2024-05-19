@@ -1,10 +1,12 @@
 ---
 title: Scaling containers and serverless applications
 description: Scaling cloud-native applications with Azure Kubernetes Service to meet user demand.
-ms.date: 12/21/2021
+ms.date: 04/06/2022
 ---
 
 # Scaling containers and serverless applications
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 There are two ways to scale an application: up or out. The former refers to adding capacity to a single resource, while the latter refers to adding more resources to increase capacity.
 

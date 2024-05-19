@@ -1,7 +1,7 @@
 ---
-title: "The C# type system"
+title: "The type system"
 description: Learn about creating types in C#, such as tuples, records, value types, and reference types.
-ms.date: 09/30/2021
+ms.date: 11/14/2023
 helpviewer_keywords:
   - "value types [C#]"
   - "reference types [C#]"
@@ -36,7 +36,7 @@ The compiler embeds the type information into the executable file as metadata. T
 
 ## Specifying types in variable declarations
 
-When you declare a variable or constant in a program, you must either specify its type or use the [`var`](../../language-reference/keywords/var.md) keyword to let the compiler infer the type. The following example shows some variable declarations that use both built-in numeric types and complex user-defined types:
+When you declare a variable or constant in a program, you must either specify its type or use the [`var`](../../language-reference/statements/declarations.md#implicitly-typed-local-variables) keyword to let the compiler infer the type. The following example shows some variable declarations that use both built-in numeric types and complex user-defined types:
 
 :::code language="csharp" source="../../programming-guide/types/snippets/index/Program.cs" ID="Declarations":::
 
@@ -70,7 +70,7 @@ The following illustration shows the relationship between value types and refere
 > [!NOTE]
 > You can see that the most commonly used types are all organized in the <xref:System> namespace. However, the namespace in which a type is contained has no relation to whether it is a value type or reference type.
 
-Classes and structs are two of the basic constructs of the common type system in .NET. C# 9 adds records, which are a kind of class. Each is essentially a data structure that encapsulates a set of data and behaviors that belong together as a logical unit. The data and behaviors are the *members* of the class, struct, or record. The members include its methods, properties, events, and so on, as listed later in this article.
+Classes and structs are two of the basic constructs of the common type system in .NET. Each is essentially a data structure that encapsulates a set of data and behaviors that belong together as a logical unit. The data and behaviors are the *members* of the class, struct, or record. The members include its methods, properties, events, and so on, as listed later in this article.
 
 A class, struct, or record declaration is like a blueprint that is used to create instances or objects at run time. If you define a class, struct, or record named `Person`, `Person` is the name of the type. If you declare and initialize a variable `p` of type `Person`, `p` is said to be an object or instance of `Person`. Multiple instances of the same `Person` type can be created, and each instance can have different values in its properties and fields.  
   
@@ -78,7 +78,7 @@ A class is a reference type. When an object of the type is created, the variable
   
 A struct is a value type. When a struct is created, the variable to which the struct is assigned holds the struct's actual data. When the struct is assigned to a new variable, it's copied. The new variable and the original variable therefore contain two separate copies of the same data. Changes made to one copy don't affect the other copy.
 
-Record types may be either reference types (`record class`) or value types (`record struct`).
+Record types may be either reference types (`record class`) or value types (`record struct`). Record types contain methods that support value-equality.
   
 In general, classes are used to model more complex behavior. Classes typically store data that is intended to be modified after a class object is created. Structs are best suited for small data structures. Structs typically store data that isn't intended to be modified after the struct is created. Record types are data structures with additional compiler synthesized members. Records typically store data that isn't intended to be modified after the object is created.
 
@@ -130,7 +130,7 @@ All arrays are reference types, even if their elements are value types. Arrays i
 
 :::code language="csharp" source="../../programming-guide/types/snippets/index/Program.cs" ID="ArrayDeclaration":::
 
-Reference types fully support inheritance. When you create a class, you can inherit from any other interface or class that isn't defined as [sealed](../../language-reference/keywords/sealed.md). Other classes can inherit from your class and override your virtual methods. For more information about how to create your own classes, see [Classes, structs, and records](../types/index.md). For more information about inheritance and virtual methods, see [Inheritance](../object-oriented/inheritance.md).
+Reference types fully support inheritance. When you create a class, you can inherit from any other interface or class that isn't defined as [sealed](../../language-reference/keywords/sealed.md). Other classes can inherit from your class and override your virtual methods. For more information about how to create your own classes, see [Classes, structs, and records](../object-oriented/index.md). For more information about inheritance and virtual methods, see [Inheritance](../object-oriented/inheritance.md).
 
 ## Types of literal values
 
@@ -150,7 +150,7 @@ The use of the type parameter makes it possible to reuse the same class to hold 
 
 ## Implicit types, anonymous types, and nullable value types
 
-You can implicitly type a local variable (but not class members) by using the [`var`](../../language-reference/keywords/var.md) keyword. The variable still receives a type at compile time, but the type is provided by the compiler. For more information, see [Implicitly Typed Local Variables](../../programming-guide/classes-and-structs/implicitly-typed-local-variables.md).
+You can implicitly type a local variable (but not class members) by using the [`var`](../../language-reference/statements/declarations.md#implicitly-typed-local-variables) keyword. The variable still receives a type at compile time, but the type is provided by the compiler. For more information, see [Implicitly Typed Local Variables](../../programming-guide/classes-and-structs/implicitly-typed-local-variables.md).
 
 It can be inconvenient to create a named type for simple sets of related values that you don't intend to store or pass outside method boundaries. You can create *anonymous types* for this purpose. For more information, see [Anonymous Types](anonymous-types.md).
 

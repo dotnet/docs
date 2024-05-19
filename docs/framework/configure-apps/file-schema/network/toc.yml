@@ -1,99 +1,99 @@
+items:
 - name: Network settings schema
   href: index.md
+- name: <system.Net> element (network settings)
+  href: system-net-element-network-settings.md
   items:
-  - name: <system.Net> element (network settings)
-    href: system-net-element-network-settings.md
+  - name: <authenticationModules> element
+    href: authenticationmodules-element-network-settings.md
     items:
-    - name: <authenticationModules> element
-      href: authenticationmodules-element-network-settings.md
-      items:
-      - name: <add> element for authenticationModules
-        href: add-element-for-authenticationmodules-network-settings.md
-      - name: <remove> element for authenticationModules
-        href: remove-element-for-authenticationmodules-network-settings.md
-      - name: <clear> element for authenticationModules
-        href: clear-element-for-authenticationmodules-network-settings.md
-    - name: <connectionManagement> element
-      href: connectionmanagement-element-network-settings.md
-      items:
-      - name: <add> element for connectionManagement
-        href: add-element-for-connectionmanagement-network-settings.md
-      - name: <clear> element for connectionManagement
-        href: clear-element-for-connectionmanagement-network-settings.md
-      - name: <remove> element for connectionManagement
-        href: remove-element-for-connectionmanagement-network-settings.md
-    - name: <defaultProxy> element
-      href: defaultproxy-element-network-settings.md
-      items:
-      - name: <bypasslist> element
-        href: bypasslist-element-network-settings.md
-        items:
-        - name: <add> element for bypasslist
-          href: add-element-for-bypasslist-network-settings.md
-        - name: <clear> element for bypasslist
-          href: clear-element-for-bypasslist-network-settings.md
-        - name: <remove> element for bypasslist
-          href: remove-element-for-bypasslist-network-settings.md
-      - name: <module> element
-        href: module-element-network-settings.md
-      - name: <proxy> element
-        href: proxy-element-network-settings.md
-    - name: <mailSettings> element
-      href: mailsettings-element-network-settings.md
-      items:
-      - name: <smtp> element
-        href: smtp-element-network-settings.md
-        items:
-        - name: <specifiedPickupDirectory> element
-          href: specifiedpickupdirectory-element-network-settings.md
-        - name: <network> element
-          href: network-element-network-settings.md
-    - name: <requestCaching> element
-      href: requestcaching-element-network-settings.md
-      items:
-      - name: <defaultHttpCachePolicy> element
-        href: defaulthttpcachepolicy-element-network-settings.md
-      - name: <defaultFtpCachePolicy> element
-        href: defaultftpcachepolicy-element-network-settings.md
-    - name: <settings> element
-      href: settings-element-network-settings.md
-      items:
-      - name: <httpWebRequest> element
-        href: httpwebrequest-element-network-settings.md
-      - name: <ipv6> element
-        href: ipv6-element-network-settings.md
-      - name: <performanceCounter> element
-        href: performancecounter-element-network-settings.md
-      - name: <servicePointManager> element
-        href: servicepointmanager-element-network-settings.md
-      - name: <socket> element
-        href: socket-element-network-settings.md
-      - name: <webProxyScript> element
-        href: webproxyscript-element-network-settings.md
-      - name: <httpListener> element
-        href: httplistener-element-network-settings.md
-    - name: <webRequestModules> element
-      href: webrequestmodules-element-network-settings.md
-      items:
-      - name: <add> element for webRequestModules
-        href: add-element-for-webrequestmodules-network-settings.md
-      - name: <remove> element for webRequestModules
-        href: remove-element-for-webrequestmodules-network-settings.md
-      - name: <clear> element for webRequestModules
-        href: clear-element-for-webrequestmodules-network-settings.md
-  - name: <uri> element (Uri settings)
-    href: uri-element-uri-settings.md
+    - name: <add> element for authenticationModules
+      href: add-element-for-authenticationmodules-network-settings.md
+    - name: <remove> element for authenticationModules
+      href: remove-element-for-authenticationmodules-network-settings.md
+    - name: <clear> element for authenticationModules
+      href: clear-element-for-authenticationmodules-network-settings.md
+  - name: <connectionManagement> element
+    href: connectionmanagement-element-network-settings.md
     items:
-    - name: <idn> element
-      href: idn-element-uri-settings.md
-    - name: <iriParsing> element
-      href: iriparsing-element-uri-settings.md
-    - name: <schemeSettings> element
-      href: schemesettings-element-uri-settings.md
+    - name: <add> element for connectionManagement
+      href: add-element-for-connectionmanagement-network-settings.md
+    - name: <clear> element for connectionManagement
+      href: clear-element-for-connectionmanagement-network-settings.md
+    - name: <remove> element for connectionManagement
+      href: remove-element-for-connectionmanagement-network-settings.md
+  - name: <defaultProxy> element
+    href: defaultproxy-element-network-settings.md
+    items:
+    - name: <bypasslist> element
+      href: bypasslist-element-network-settings.md
       items:
-      - name: <add> element for schemeSettings
-        href: add-element-for-schemesettings-uri-settings.md
-      - name: <clear> element for schemeSettings
-        href: clear-element-for-schemesettings-uri-settings.md
-      - name: <remove> element for schemeSettings
-        href: remove-element-for-schemesettings-uri-settings.md
+      - name: <add> element for bypasslist
+        href: add-element-for-bypasslist-network-settings.md
+      - name: <clear> element for bypasslist
+        href: clear-element-for-bypasslist-network-settings.md
+      - name: <remove> element for bypasslist
+        href: remove-element-for-bypasslist-network-settings.md
+    - name: <module> element
+      href: module-element-network-settings.md
+    - name: <proxy> element
+      href: proxy-element-network-settings.md
+  - name: <mailSettings> element
+    href: mailsettings-element-network-settings.md
+    items:
+    - name: <smtp> element
+      href: smtp-element-network-settings.md
+      items:
+      - name: <specifiedPickupDirectory> element
+        href: specifiedpickupdirectory-element-network-settings.md
+      - name: <network> element
+        href: network-element-network-settings.md
+  - name: <requestCaching> element
+    href: requestcaching-element-network-settings.md
+    items:
+    - name: <defaultHttpCachePolicy> element
+      href: defaulthttpcachepolicy-element-network-settings.md
+    - name: <defaultFtpCachePolicy> element
+      href: defaultftpcachepolicy-element-network-settings.md
+  - name: <settings> element
+    href: settings-element-network-settings.md
+    items:
+    - name: <httpWebRequest> element
+      href: httpwebrequest-element-network-settings.md
+    - name: <ipv6> element
+      href: ipv6-element-network-settings.md
+    - name: <performanceCounter> element
+      href: performancecounter-element-network-settings.md
+    - name: <servicePointManager> element
+      href: servicepointmanager-element-network-settings.md
+    - name: <socket> element
+      href: socket-element-network-settings.md
+    - name: <webProxyScript> element
+      href: webproxyscript-element-network-settings.md
+    - name: <httpListener> element
+      href: httplistener-element-network-settings.md
+  - name: <webRequestModules> element
+    href: webrequestmodules-element-network-settings.md
+    items:
+    - name: <add> element for webRequestModules
+      href: add-element-for-webrequestmodules-network-settings.md
+    - name: <remove> element for webRequestModules
+      href: remove-element-for-webrequestmodules-network-settings.md
+    - name: <clear> element for webRequestModules
+      href: clear-element-for-webrequestmodules-network-settings.md
+- name: <uri> element (Uri settings)
+  href: uri-element-uri-settings.md
+  items:
+  - name: <idn> element
+    href: idn-element-uri-settings.md
+  - name: <iriParsing> element
+    href: iriparsing-element-uri-settings.md
+  - name: <schemeSettings> element
+    href: schemesettings-element-uri-settings.md
+    items:
+    - name: <add> element for schemeSettings
+      href: add-element-for-schemesettings-uri-settings.md
+    - name: <clear> element for schemeSettings
+      href: clear-element-for-schemesettings-uri-settings.md
+    - name: <remove> element for schemeSettings
+      href: remove-element-for-schemesettings-uri-settings.md

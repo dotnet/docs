@@ -1,10 +1,9 @@
 ---
 title: 'Tutorial: ML.NET classification model to categorize images'
-description: Learn how to train a classification model to categorize images using a pre-trained TensorFlow model for image processing. 
+description: Learn how to train a classification model to categorize images using a pre-trained TensorFlow model for image processing.
 ms.date: 11/11/2021
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0612
-recommendations: false
 #Customer intent: As a developer, I want to train a classification model with ML.NET to categorize images using a pre-trained TensorFlow model to process images.
 ---
 # Tutorial: Train an ML.NET classification model to categorize images
@@ -25,7 +24,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 ## Prerequisites
 
-* [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/).
+* [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/)
 * [The tutorial assets directory .ZIP file](https://github.com/dotnet/samples/blob/main/machine-learning/tutorials/TransferLearningTF/image-classifier-assets.zip)
 * [The InceptionV1 machine learning model](https://storage.googleapis.com/download.tensorflow.org/models/inception5h.zip)
 
@@ -70,7 +69,7 @@ This tutorial uses the TensorFlow [Inception](https://storage.googleapis.com/dow
 
 Because the `Inception model` has already been pre-trained on thousands of different images, internally it contains the [image features](https://en.wikipedia.org/wiki/Feature_(computer_vision)) needed for image identification. We can make use of these internal image features in the model to train a new model with far fewer classes.
 
-As shown in the following diagram, you add a reference to the ML.NET NuGet packages in your .NET Core or .NET Framework applications. Under the covers, ML.NET includes and references the native `TensorFlow` library that allows you to write code that loads an existing trained `TensorFlow` model file.
+As shown in the following diagram, you add a reference to the ML.NET NuGet packages in your .NET or .NET Framework applications. Under the covers, ML.NET includes and references the native `TensorFlow` library that allows you to write code that loads an existing trained `TensorFlow` model file.
 
 ![TensorFlow transform ML.NET Arch diagram](./media/image-classification/tensorflow-mlnet.png)
 
@@ -86,7 +85,7 @@ See [Deep learning vs. machine learning](/azure/machine-learning/concept-deep-le
 
 ### Data
 
-There are two data sources: the `.tsv` file, and the image files.  The `tags.tsv` file contains two columns: the first one is defined as `ImagePath` and the second one is the `Label` corresponding to the image. The following example file doesn't have a header row, and looks like this:
+There are two data sources: the `.tsv` file, and the image files. The `tags.tsv` file contains two columns: the first one is defined as `ImagePath` and the second one is the `Label` corresponding to the image. The following example file doesn't have a header row, and looks like this:
 
 <!-- markdownlint-disable MD010 -->
 ```tsv
@@ -172,7 +171,7 @@ The training and testing images are located in the assets folders that you'll do
 
 ### Initialize variables
 
-1. Initialize the `mlContext` variable with a new instance of `MLContext`.  Replace the `Console.WriteLine("Hello World!")` line with the following code:
+1. Initialize the `mlContext` variable with a new instance of `MLContext`. Replace the `Console.WriteLine("Hello World!")` line with the following code:
 
     [!code-csharp[CreateMLContext](./snippets/image-classification/csharp/Program.cs#CreateMLContext)]
 
@@ -322,7 +321,7 @@ An ML.NET model pipeline is a chain of estimators. No execution happens during p
 
     [!code-csharp[SaveModel](./snippets/image-classification/csharp/Program.cs#ReturnModel)]
 
-## Run the application!
+## Run the application
 
 1. Add the call to `GenerateModel` after the creation of the <xref:Microsoft.ML.MLContext> class:
 
@@ -332,7 +331,7 @@ An ML.NET model pipeline is a chain of estimators. No execution happens during p
 
     [!code-csharp[CallClassifySingleImage](./snippets/image-classification/csharp/Program.cs#CallClassifySingleImage)]
 
-1. Run your console app (Ctrl + F5). Your results should be similar to the following output.  You may see warnings or processing messages, but these messages have been removed from the following results for clarity.
+1. Run your console app (<kbd>Ctrl</kbd> + <kbd>F5</kbd>). Your results should be similar to the following output. (You may see warnings or processing messages, but these messages have been removed from the following results for clarity.)
 
     ```console
     =============== Training classification model ===============

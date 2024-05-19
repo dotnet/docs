@@ -21,11 +21,11 @@ class Program
         var rootCommand = new RootCommand();
         rootCommand.Add(delayOption);
 
-        rootCommand.SetHandler((int delayOptionValue) =>
-        {
-            Console.WriteLine($"--delay = {delayOptionValue}");
-        },
-        delayOption);
+        rootCommand.SetHandler((delayOptionValue) =>
+            {
+                Console.WriteLine($"--delay = {delayOptionValue}");
+            },
+            delayOption);
 
         await rootCommand.InvokeAsync(args);
     }

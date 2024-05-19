@@ -644,7 +644,7 @@ namespace SDKSample
             // An instance of TextPatternRange will become invalid if
             // one of the following occurs:
             // 1) The text in the provider changes via some user activity.
-            // 2) ValuePattern.SetValue is used to programatically change
+            // 2) ValuePattern.SetValue is used to programmatically change
             // the value of the text in the provider.
             // The only way the client application can detect if the text
             // has changed (to ensure that the ranges are still valid),
@@ -936,7 +936,7 @@ namespace SDKSample
                 }
                 // End of document (either the start or end of the document
                 // range depending on search direction) was reached before
-                // finding another occurence of the search string.
+                // finding another occurrence of the search string.
                 else
                 {
                     targetResult.Content = "End of document reached.";
@@ -1013,7 +1013,7 @@ namespace SDKSample
             TextPatternRange[] selectionRanges =
                            targetTextPattern.GetSelection();
 
-            // Iterate throught the ranges for a text control that supports
+            // Iterate through the ranges for a text control that supports
             // multiple selections and move the selections the specified text
             // unit and direction.
             foreach (TextPatternRange textRange in selectionRanges)

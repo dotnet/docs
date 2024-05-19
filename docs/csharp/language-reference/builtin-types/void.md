@@ -1,6 +1,6 @@
 ---
 description: Learn more about void keyword in C#
-title: "void - C# reference"
+title: "void"
 ms.date: 02/11/2020
 f1_keywords: 
   - "void_CSharpKeyword"
@@ -22,5 +22,4 @@ You cannot use `void` as the type of a variable.
 
 ## See also
 
-- [C# reference](../index.md)
 - <xref:System.Void?displayProperty=nameWithType>

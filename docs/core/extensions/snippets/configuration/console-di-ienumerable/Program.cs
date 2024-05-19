@@ -2,23 +2,14 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace ConsoleDI.Example;
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
 
-class Program
-{
-    static Task Main(string[] args)
-    {
-        using IHost host = CreateHostBuilder(args).Build();
+builder.Services.AddSingleton<IMessageWriter, ConsoleMessageWriter>();
+builder.Services.AddSingleton<IMessageWriter, LoggingMessageWriter>();
+builder.Services.AddSingleton<ExampleService>();
 
-        _ = host.Services.GetService<ExampleService>();
+using IHost host = builder.Build();
 
-        return host.RunAsync();
-    }
+_ = host.Services.GetService<ExampleService>();
 
-    static IHostBuilder CreateHostBuilder(string[] args) =>
-        Host.CreateDefaultBuilder(args)
-            .ConfigureServices((_, services) =>
-                services.AddSingleton<IMessageWriter, ConsoleMessageWriter>()
-                        .AddSingleton<IMessageWriter, LoggingMessageWriter>()
-                        .AddSingleton<ExampleService>());
-}
+await host.RunAsync();

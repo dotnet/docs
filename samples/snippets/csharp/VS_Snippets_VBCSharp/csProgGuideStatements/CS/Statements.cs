@@ -4,7 +4,7 @@
     public class SimpleStatements
     {
         //<Snippet1>
-        static void Main()
+        public static void Main()
         {
             // Declaration statement.
             int counter;
@@ -17,7 +17,7 @@
 
             // Declaration statements with initializers are functionally
             // equivalent to  declaration statement followed by assignment statement:
-            int[] radii = { 15, 32, 108, 74, 9 }; // Declare and initialize an array.
+            int[] radii = [15, 32, 108, 74, 9]; // Declare and initialize an array.
             const double pi = 3.14159; // Declare and initialize  constant.
 
             // foreach statement block that contains multiple statements.
@@ -49,7 +49,7 @@
     public class WrapStatements
     {
 
-        static void Main()
+        public static void Main()
         {
             int x = 4;
             bool b = ((x < 10) && (x > 5)) || ((x > 20) && (x < 25));
@@ -96,7 +96,7 @@
             public int Num { get; set; }
             public string Str { get; set; }
 
-            static void Main()
+            public static void Main()
             {
                 Test a = new Test() { Num = 1, Str = "Hi" };
                 Test b = new Test() { Num = 1, Str = "Hi" };
@@ -112,10 +112,6 @@
                 areEqual = System.Object.ReferenceEquals(a, b);
                 // True:
                 System.Console.WriteLine("ReferenceEquals(a, b) = {0}", areEqual);
-
-                // Keep the console open in debug mode.
-                Console.WriteLine("Press any key to exit.");
-                Console.ReadKey();
             }
         }
         //</Snippet18>
@@ -281,7 +277,7 @@
 
         class Program
         {
-            static void Main(string[] args)
+            public static void Main()
             {
                 ThreeDPoint pointA = new ThreeDPoint(3, 4, 5);
                 ThreeDPoint pointB = new ThreeDPoint(3, 4, 5);
@@ -306,10 +302,6 @@
                 System.Collections.ArrayList list = new System.Collections.ArrayList();
                 list.Add(new ThreeDPoint(3, 4, 5));
                 Console.WriteLine("pointE.Equals(list[0]): {0}", pointE.Equals(list[0]));
-
-                // Keep the console window open in debug mode.
-                Console.WriteLine("Press any key to exit.");
-                Console.ReadKey();
             }
         }
 
@@ -367,16 +359,12 @@
                 Console.WriteLine("Distribution:");
 
                 GroupByRange(uniqueHashCodes);
-
-                // Keep the console open in debug mode.
-                Console.WriteLine("Press any key to exit.");
-                Console.ReadKey();
             }
 
             static int GetRange(int hash, int granularity)
             {
                 if (hash <= 0)
-                    throw new System.ArgumentException();
+                    throw new System.ArgumentException("hash must be greater than 0", nameof(hash));
                 return hash / (System.Int32.MaxValue / granularity);
             }
 
@@ -449,7 +437,7 @@
 
         class Program
         {
-            static void Main(string[] args)
+            public static void Main()
             {
                 TwoDPoint pointA = new TwoDPoint(3, 4);
                 TwoDPoint pointB = new TwoDPoint(3, 4);
@@ -495,10 +483,6 @@
                 pointD = temp;
                 // True:
                 Console.WriteLine("pointD == (pointC = 3,4) = {0}", pointD == pointC);
-
-                // Keep the console window open in debug mode.
-                Console.WriteLine("Press any key to exit.");
-                Console.ReadKey();
             }
         }
 

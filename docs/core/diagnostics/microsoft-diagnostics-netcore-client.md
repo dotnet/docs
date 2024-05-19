@@ -23,6 +23,12 @@ public DiagnosticsClient
         bool requestRundown = true,
         int circularBufferMB = 256);
 
+    public Task<EventPipeSession> StartEventPipeSessionAsync(
+        IEnumerable<EventPipeProvider> providers,
+        bool requestRundown,
+        int circularBufferMB = 256,
+        CancellationToken token = default);
+
     public void WriteDump(
         DumpType dumpType,
         string dumpPath,
@@ -73,6 +79,11 @@ public EventPipeSession StartEventPipeSession(
     IEnumerable<EventPipeProvider> providers,
     bool requestRundown = true,
     int circularBufferMB = 256);
+public Task<EventPipeSession> StartEventPipeSessionAsync(
+    IEnumerable<EventPipeProvider> providers,
+    bool requestRundown,
+    int circularBufferMB = 256,
+    CancellationToken token = default);
 ```
 
 Starts an EventPipe tracing session using the given providers and settings.
@@ -80,19 +91,20 @@ Starts an EventPipe tracing session using the given providers and settings.
 * `providers` : An `IEnumerable` of [`EventPipeProvider`](#eventpipeprovider-class)s to start tracing.
 * `requestRundown`: A `bool` specifying whether rundown provider events from the target app's runtime should be requested.
 * `circularBufferMB`: An `int` specifying the total size of circular buffer used by the target app's runtime on collecting events.
+* `token` (for the Async overload): The token to monitor for cancellation requests.
 
 ```csharp
-public EventPipeSession StartEventPipeSession(EventPipeProvider providers, bool requestRundown=true, int circularBufferMB=256)
+public EventPipeSession StartEventPipeSession(EventPipeProvider provider, bool requestRundown = true, int circularBufferMB = 256)
+public Task<EventPipeSession> StartEventPipeSessionAsync(EventPipeProvider provider, bool requestRundown, int circularBufferMB = 256, CancellationToken token = default)
 ```
 
-* `providers` : An [`EventPipeProvider`](#eventpipeprovider-class) to start tracing.
+* `provider` : An [`EventPipeProvider`](#eventpipeprovider-class) to start tracing.
 * `requestRundown`: A `bool` specifying whether rundown provider events from the target app's runtime should be requested.
 * `circularBufferMB`: An `int` specifying the total size of circular buffer used by the target app's runtime on collecting events.
+* `token` (for the Async overload): The token to monitor for cancellation requests.
 
 > [!NOTE]
-> Rundown events contain payloads that may be needed for post analysis, such as resolving method names of thread samples. Unless you know you do not want this, we recommend setting this to true. In large applications, this may take a while.
-
-* `circularBufferMB` : The size of the circular buffer to be used as a buffer for writing events within the runtime.
+> Rundown events contain payloads that may be needed for post analysis, such as resolving method names of thread samples. Unless you know you do not want this, we recommend setting `requestRundown` to true. In large applications, this may take a while.
 
 ### WriteDump method
 

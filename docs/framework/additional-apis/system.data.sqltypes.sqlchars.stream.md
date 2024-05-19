@@ -3,7 +3,7 @@ description: "Learn more about: SqlChars.Stream Property"
 title: SqlChars.Stream Property (System.Data.SqlTypes)
 author: stevestein
 ms.date: 12/19/2018
-ms.technology: "dotnet-data"
+ms.subservice: "data-access"
 topic_type:
   - "apiref"
 api_name:

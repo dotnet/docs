@@ -1,4 +1,4 @@
-﻿public class NestedSettings
+﻿public sealed class NestedSettings
 {
-    public string Message { get; set; } = null!;
+    public required string Message { get; set; } = null!;
 }

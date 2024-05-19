@@ -1,7 +1,7 @@
 ---
 title: Interpret ML.NET models with Permutation Feature Importance
 description: Understand the feature importance of models with Permutation Feature Importance in ML.NET
-ms.date: 10/05/2021
+ms.date: 12/06/2022
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc,how-to
@@ -23,21 +23,21 @@ Additionally, by highlighting the most important features, model builders can fo
 
 The features in the dataset being used for this sample are in columns 1-12. The goal is to predict `Price`.
 
-| Column | Feature | Description
-| --- | --- | --- |
-| 1 | CrimeRate | Per capita crime rate
-| 2 | ResidentialZones | Residential zones in town
-| 3 | CommercialZones | Non-residential zones in town
-| 4 | NearWater | Proximity to body of water
-| 5 | ToxicWasteLevels | Toxicity levels (PPM)
-| 6 | AverageRoomNumber | Average number of rooms in house
-| 7 | HomeAge | Age of home
-| 8 | BusinessCenterDistance | Distance to nearest business district
-| 9 | HighwayAccess | Proximity to highways
-| 10 | TaxRate | Property tax rate
-| 11 | StudentTeacherRatio | Ratio of students to teachers
-| 12 | PercentPopulationBelowPoverty | Percent of population living below poverty
-| 13 | Price | Price of the home
+| Column | Feature                       | Description                                |
+|--------|-------------------------------|--------------------------------------------|
+| 1      | CrimeRate                     | Per capita crime rate                      |
+| 2      | ResidentialZones              | Residential zones in town                  |
+| 3      | CommercialZones               | Non-residential zones in town              |
+| 4      | NearWater                     | Proximity to body of water                 |
+| 5      | ToxicWasteLevels              | Toxicity levels (PPM)                      |
+| 6      | AverageRoomNumber             | Average number of rooms in house           |
+| 7      | HomeAge                       | Age of home                                |
+| 8      | BusinessCenterDistance        | Distance to nearest business district      |
+| 9      | HighwayAccess                 | Proximity to highways                      |
+| 10     | TaxRate                       | Property tax rate                          |
+| 11     | StudentTeacherRatio           | Ratio of students to teachers              |
+| 12     | PercentPopulationBelowPoverty | Percent of population living below poverty |
+| 13     | Price                         | Price of the home                          |
 
 A sample of the dataset is shown below:
 
@@ -105,22 +105,14 @@ string[] featureColumnNames =
         .Select(column => column.Name)
         .Where(columnName => columnName != "Label").ToArray();
 
-// 2. Define estimator with data pre-processing steps
-IEstimator<ITransformer> dataPrepEstimator =
+// 2. Define training pipeline
+IEstimator<ITransformer> sdcaEstimator =
     mlContext.Transforms.Concatenate("Features", featureColumnNames)
-        .Append(mlContext.Transforms.NormalizeMinMax("Features"));
+        .Append(mlContext.Transforms.NormalizeMinMax("Features"))
+        .Append(mlContext.Regression.Trainers.Sdca());
 
-// 3. Create transformer using the data pre-processing estimator
-ITransformer dataPrepTransformer = dataPrepEstimator.Fit(data);
-
-// 4. Pre-process the training data
-IDataView preprocessedTrainData = dataPrepTransformer.Transform(data);
-
-// 5. Define Stochastic Dual Coordinate Ascent machine learning estimator
-var sdcaEstimator = mlContext.Regression.Trainers.Sdca();
-
-// 6. Train machine learning model
-var sdcaModel = sdcaEstimator.Fit(preprocessedTrainData);
+// 3. Train machine learning model
+var sdcaModel = sdcaEstimator.Fit(data);
 ```
 
 ## Explain the model with Permutation Feature Importance (PFI)
@@ -128,14 +120,15 @@ var sdcaModel = sdcaEstimator.Fit(preprocessedTrainData);
 In ML.NET use the [`PermutationFeatureImportance`](xref:Microsoft.ML.PermutationFeatureImportanceExtensions) method for your respective task.
 
 ```csharp
+// Use the model to make predictions
+var transformedData = sdcaModel.Transform(data);
+
+// Calculate feature importance
 ImmutableArray<RegressionMetricsStatistics> permutationFeatureImportance =
     mlContext
         .Regression
-        .PermutationFeatureImportance(sdcaModel, preprocessedTrainData, permutationCount:3);
+        .PermutationFeatureImportance(sdcaModel, transformedData, permutationCount:3);
 ```
-
-> [!NOTE]
-> For pipelines that combine the preprocessing transforms and trainer, assuming that the trainer is at the end of the pipeline, you'll need to extract it using the `LastTransformer` property.
 
 The result of using [`PermutationFeatureImportance`](xref:Microsoft.ML.PermutationFeatureImportanceExtensions) on the training dataset is an [`ImmutableArray`](xref:System.Collections.Immutable.ImmutableArray) of [`RegressionMetricsStatistics`](xref:Microsoft.ML.Data.RegressionMetricsStatistics) objects. [`RegressionMetricsStatistics`](xref:Microsoft.ML.Data.RegressionMetricsStatistics) provides summary statistics like mean and standard deviation for multiple observations of [`RegressionMetrics`](xref:Microsoft.ML.Data.RegressionMetrics) equal to the number of permutations specified by the `permutationCount` parameter.
 
@@ -160,25 +153,26 @@ foreach (var feature in featureImportanceMetrics)
 
 Printing the values for each of the features in `featureImportanceMetrics` would generate output similar to that below. Keep in mind that you should expect to see different results because these values vary based on the data that they are given.
 
-| Feature | Change to R-Squared |
-|:--|:--:|
-HighwayAccess       |   -0.042731
-StudentTeacherRatio |   -0.012730
-BusinessCenterDistance| -0.010491
-TaxRate             |   -0.008545
-AverageRoomNumber   |   -0.003949
-CrimeRate           |   -0.003665
-CommercialZones     |   0.002749
-HomeAge             |   -0.002426
-ResidentialZones    |   -0.002319
-NearWater           |   0.000203
-PercentPopulationLivingBelowPoverty|    0.000031
-ToxicWasteLevels    |   -0.000019
+| Feature                             | Change to R-Squared |
+|:------------------------------------|:-------------------:|
+| HighwayAccess                       | -0.042731           |
+| StudentTeacherRatio                 | -0.012730           |
+| BusinessCenterDistance              | -0.010491           |
+| TaxRate                             | -0.008545           |
+| AverageRoomNumber                   | -0.003949           |
+| CrimeRate                           | -0.003665           |
+| CommercialZones                     | 0.002749            |
+| HomeAge                             | -0.002426           |
+| ResidentialZones                    | -0.002319           |
+| NearWater                           | 0.000203            |
+| PercentPopulationLivingBelowPoverty | 0.000031            |
+| ToxicWasteLevels                    | -0.000019           |
 
 Taking a look at the five most important features for this dataset, the price of a house predicted by this model is influenced by its proximity to highways, student teacher ratio of schools in the area, proximity to major employment centers, property tax rate and average number of rooms in the home.
 
 ## Next steps
 
+- [Use Permutation Feature Importance (PFI) with AutoML](how-to-use-the-automl-api.md#determine-feature-importance)
 - [Make predictions with a trained model](machine-learning-model-predictions-ml-net.md)
 - [Retrain a model](retrain-model-ml-net.md)
 - [Deploy a model in an ASP.NET Core Web API](serve-model-web-api-ml-net.md)

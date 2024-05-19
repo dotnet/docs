@@ -83,6 +83,7 @@ The following example shows how to specify the behavior that validates the stron
 
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
 - [Runtime Settings Schema](index.md)
 - [Configuration File Schema](../index.md)
 - [How to: Disable the strong-name bypass feature](../../../../standard/assembly/disable-strong-name-bypass-feature.md)

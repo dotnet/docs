@@ -41,7 +41,7 @@ directory.CreateIfNotExistsAsync()
 
 let file = directory.GetFileClient("fileName")
 
-let writeToFile localFilePath = 
+let writeToFile localFilePath =
     use stream = File.OpenRead(localFilePath)
     file.Create(stream.Length)
     file.UploadRange(
@@ -56,7 +56,7 @@ writeToFile "localFilePath"
 
 let download = file.Download()
 
-let copyTo saveDownloadPath = 
+let copyTo saveDownloadPath =
     use downStream = File.OpenWrite(saveDownloadPath)
     download.Value.Content.CopyTo(downStream)
 
@@ -114,7 +114,7 @@ destFile.StartCopyAsync(sourceFile.Uri)
 // Copy a file to a blob.
 //
 
-// Create a new file SAS 
+// Create a new file SAS
 let fileSASCopyToBlob = ShareSasBuilder(
     ShareName = "shareName",
     FilePath = "sourceFilePath",
@@ -137,7 +137,7 @@ destBlob.StartCopyFromUriAsync(sourceFileCopyToBlob.Uri)
 // Troubleshooting File storage using metrics.
 //
 
-// Instatiate a ShareServiceClient
+// Instantiate a ShareServiceClient
 let shareService = ShareServiceClient(storageConnString);
 
 // Set metrics properties for File service

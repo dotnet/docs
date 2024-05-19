@@ -1,2 +1,2 @@
-{:allowed-branchname-matches ["^main$" "^release..*"]
- :allowed-filename-matches ["^..*"]}
+{:allowed-branchname-matches ["main" "release-.*"]
+ :allowed-filename-matches ["docs" "includes"]}

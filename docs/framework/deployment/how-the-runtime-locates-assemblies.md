@@ -40,7 +40,7 @@ The runtime uses the following steps to resolve an assembly reference:
 2. [Checks whether the assembly name has been bound to before](#step2) and, if so, uses the previously loaded assembly. If a previous request to load the assembly failed, the request is failed immediately without attempting to load the assembly.
 
     > [!NOTE]
-    > The caching of assembly binding failures is new in the .NET Framework version 2.0.
+    > The caching of assembly binding failures is new in .NET Framework version 2.0.
 
 3. [Checks the global assembly cache](#step3). If the assembly is found there, the runtime uses this assembly.
 
@@ -74,7 +74,7 @@ These files follow the same syntax and provide information such as binding redir
 
 ### Application Configuration File
 
-First, the common language runtime checks the application configuration file for information that overrides the version information stored in the calling assembly's manifest. The application configuration file can be deployed with an application, but is not required for application execution. Usually the retrieval of this file is almost instantaneous, but in situations where the application base is on a remote computer, such as in an Internet Explorer Web-based scenario, the configuration file must be downloaded.
+First, the common language runtime checks the application configuration file for information that overrides the version information stored in the calling assembly's manifest. The application configuration file can be deployed with an application, but is not required for application execution. Usually the retrieval of this file is almost instantaneous, but in situations where the application base is on a remote computer, such as in a Web-based scenario, the configuration file must be downloaded.
 
 For client executables, the application configuration file resides in the same directory as the application's executable and has the same base name as the executable with a .config extension. For example, the configuration file for C:\Program Files\Myapp\Myapp.exe is C:\Program Files\Myapp\Myapp.exe.config. In a browser-based scenario, the HTML file must use the **\<link>** element to explicitly point to the configuration file.
 
@@ -144,7 +144,7 @@ Third, the runtime examines the machine configuration file. This file, called Ma
 
 If the requested assembly has also been requested in previous calls, the common language runtime uses the assembly that is already loaded. This can have ramifications when naming assemblies that make up an application. For more information about naming assemblies, see [Assembly Names](../../standard/assembly/names.md).
 
-If a previous request for the assembly failed, subsequent requests for the assembly are failed immediately without attempting to load the assembly. Starting with the .NET Framework version 2.0, assembly binding failures are cached, and the cached information is used to determine whether to attempt to load the assembly.
+If a previous request for the assembly failed, subsequent requests for the assembly are failed immediately without attempting to load the assembly. Starting with .NET Framework version 2.0, assembly binding failures are cached, and the cached information is used to determine whether to attempt to load the assembly.
 
 > [!NOTE]
 > To revert to the behavior of the .NET Framework versions 1.0 and 1.1, which did not cache binding failures, include the [\<disableCachingBindingFailures> Element](../configure-apps/file-schema/runtime/disablecachingbindingfailures-element.md) in your configuration file.

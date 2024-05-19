@@ -50,7 +50,7 @@ Typically, the value restriction error occurs either when you want a construct t
 
 - Add explicit generic type parameters. This option is rarely used.
 
-- The following code examples illustrate each of these scenarios.
+The following code examples illustrate each of these scenarios.
 
 Case 1: Too complex an expression. In this example, the list `counter` is intended to be `int option ref`, but it is not defined as a simple immutable value.
 

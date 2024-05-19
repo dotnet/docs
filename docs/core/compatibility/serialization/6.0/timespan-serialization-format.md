@@ -12,7 +12,7 @@ ms.date: 01/11/2022
 In .NET 6 GA, source generators serialize <xref:System.TimeSpan> values by outputting all public properties of the type, which is the default serialization behavior for objects:
 
 ```json
-{"days":0,"hours":0,"milliseconds":0,"minutes":0,"seconds":1,"ticks":10000000,"totalDays":1.1574074074074073E-05,"totalHours":0.0002777777777777778,"totalMilliseconds":1000,"totalMinutes":0.016666666666666666,"totalSeconds":1}
+{"days":2,"hours":0,"milliseconds":0,"minutes":0,"seconds":1,"ticks":1728010000000,"totalDays":2.0000115740740743,"totalHours":48.000277777777775,"totalMilliseconds":172801000,"totalMinutes":2880.016666666667,"totalSeconds":172801}
 ```
 
 ## New behavior
@@ -20,7 +20,7 @@ In .NET 6 GA, source generators serialize <xref:System.TimeSpan> values by outpu
 In servicing release .NET 6.0.2, source generators serialize <xref:System.TimeSpan> values in the following format, which is consistent with the reflection-based serializer format:
 
 ```json
-"00:00:01"
+"2.00:00:01"
 ```
 
 ## Version introduced
@@ -29,17 +29,17 @@ In servicing release .NET 6.0.2, source generators serialize <xref:System.TimeSp
 
 ## Type of breaking change
 
-This change may affect [binary compatibility](../../categories.md#binary-compatibility).
+This change might affect [binary compatibility](../../categories.md#binary-compatibility).
 
 ## Reason for change
 
-[System.Text.Json source generation](../../../../standard/serialization/system-text-json-source-generation.md) is a new feature, and its serialization behavior should be as consistent as possible with the reflection-based serializer. This change simplifies migration to source generators.
+[System.Text.Json source generation](../../../../standard/serialization/system-text-json/source-generation.md) is a new feature, and its serialization behavior should be as consistent as possible with the reflection-based serializer. This change simplifies migration to source generators.
 
 ## Recommended action
 
 It's unlikely for users to depend on the current <xref:System.TimeSpan> serialization format, as it redundantly outputs all public properties of the type (which is the default serialization behavior for objects), and it doesn't roundtrip.
 
-If you do depend on the existing behavior, the recommended course of action is to [author a custom converter](../../../../standard/serialization/system-text-json-converters-how-to.md) that outputs the needed properties from <xref:System.TimeSpan>:
+If you do depend on the existing behavior, the recommended course of action is to [author a custom converter](../../../../standard/serialization/system-text-json/converters-how-to.md) that outputs the needed properties from <xref:System.TimeSpan>:
 
 ```csharp
 public class TimeSpanConverter : JsonConverter<TimeSpan>
@@ -61,4 +61,4 @@ public class TimeSpanConverter : JsonConverter<TimeSpan>
 
 ## See also
 
-- [How to use source generation in System.Text.Json](../../../../standard/serialization/system-text-json-source-generation.md)
+- [How to use source generation in System.Text.Json](../../../../standard/serialization/system-text-json/source-generation.md)

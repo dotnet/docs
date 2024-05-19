@@ -1,7 +1,7 @@
 ---
 title: Grain interface versioning
 description: Learn how to use grain interface versioning in .NET Orleans.
-ms.date: 01/31/2022
+ms.date: 03/16/2022
 ---
 
 # Grain interface versioning
@@ -14,7 +14,7 @@ On a given cluster, silos can support different versions of a grain type.
 
 ![Cluster with different versions of a grain](version.png)
 
-In this example the client and Silo{1,2,3} were compiled with grain interface `A` version 1. Silo 4 was compiled with `A` version 2.
+In this example, the client and Silo{1,2,3} were compiled with grain interface `A` version 1. Silo 4 was compiled with `A` version 2.
 
 ## Limitations
 
@@ -27,7 +27,9 @@ If the version attribute is not explicitly added to the grain interface, then th
 
 ```csharp
 [Version(X)]
-public interface IVersionUpgradeTestGrain : IGrainWithIntegerKey {}
+public interface IVersionUpgradeTestGrain : IGrainWithIntegerKey
+{
+}
 ```
 
 Where `X` is the version number of the grain interface, which is typically monotonically increasing.
@@ -46,7 +48,7 @@ By default:
 - All versioned grains are supposed to be backward-compatible only (see [backward compatibility guidelines](backward-compatibility-guidelines.md) and [compatible grains](compatible-grains.md)). That means that a v1 grain can make calls to a v2 grain, but a v2 grain cannot call a v1.
 - When multiple versions exist in the cluster, the new activation will be randomly placed on a compatible silo.
 
-You can change this default behavior via the option `GrainVersioningOptions`:
+You can change this default behavior via the <xref:Orleans.Configuration.GrainVersioningOptions>:
 
 ```csharp
 var silo = new HostBuilder()

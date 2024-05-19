@@ -2,7 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-using IHost host = Host.CreateDefaultBuilder(args).Build();
+using IHost host = Host.CreateApplicationBuilder(args).Build();
 
 // Ask the service provider for the configuration abstraction.
 IConfiguration config = host.Services.GetRequiredService<IConfiguration>();
@@ -10,7 +10,7 @@ IConfiguration config = host.Services.GetRequiredService<IConfiguration>();
 // Get values from the config given their key and their target type.
 int keyOneValue = config.GetValue<int>("KeyOne");
 bool keyTwoValue = config.GetValue<bool>("KeyTwo");
-string keyThreeNestedValue = config.GetValue<string>("KeyThree:Message");
+string? keyThreeNestedValue = config.GetValue<string>("KeyThree:Message");
 
 // Write the values to the console.
 Console.WriteLine($"KeyOne = {keyOneValue}");

@@ -19,6 +19,5 @@ public class ExampleWithReferenceType
         original.Tags.Add("C");
         Console.WriteLine($"Tags of {nameof(copy)}: {copy.PrintTags()}");
         // output: Tags of copy: A, B, C
-
     }
 }

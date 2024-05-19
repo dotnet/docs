@@ -92,16 +92,16 @@ Basic integer types are `byte` (`System.Byte`), `sbyte` (`System.SByte`), `int16
  Basic floating point types are `float` (`System.Double`), `float32` (`System.Single`), and `decimal` (`System.Decimal`).
 
 The optional width is an integer indicating the minimal width of the result. For instance, `%6d` prints an integer, prefixing it with spaces
-to fill at least six characters. If width is `*`, then an extra integer  argument is taken to specify the corresponding width.
+to fill at least six characters. If width is `*`, then an extra integer argument is taken to specify the corresponding width.
 
 Valid flags are:
 
-| Flag   | Effect        | Remarks                      |
-|:-------------------|:---------------|:-----------------------------|
-| `0`  | Add zeros instead of spaces to make up the required width |    |
-| `-` |  Left justify the result within the specified width |   |
-| `+`  | Add a `+` character if the number is positive (to match a `-` sign for negatives) |   |
-| space character | Add an extra space if the number is positive (to match a '-' sign for negatives) |
+| Flag            | Effect                                                                            |
+|:----------------|:----------------------------------------------------------------------------------|
+| `0`             | Add zeros instead of spaces to make up the required width                         |
+| `-`             | Left justify the result within the specified width                                |
+| `+`             | Add a `+` character if the number is positive (to match a `-` sign for negatives) |
+| space character | Add an extra space if the number is positive (to match a '-' sign for negatives)  |
 
 The printf `#` flag is invalid and a compile-time error will be reported if it is used.
 
@@ -132,7 +132,6 @@ When using the `%A` specifier, strings are formatted using quotes. Escape codes 
 
 ```fsharp
 printfn "%A" ("abc", "a\tb\nc\"d")
-
 ```
 
 produces
@@ -168,7 +167,7 @@ Culture 2: 12/31/1999 12:00:00 AM
 
 ### Structured values
 
-When formatting plain text using the `%A` specifier, block indentation is used for F# lists and tuples. This shown in the previous example.
+When formatting plain text using the `%A` specifier, block indentation is used for F# lists and tuples. This is shown in the previous example.
 The structure of arrays is also used, including multi-dimensional arrays.  Single-dimensional arrays are shown with `[| ... |]` syntax. For example,
 
 ```fsharp
@@ -360,7 +359,7 @@ Counts([0; 1; 2; 3;
 
 The default implementation of `ToString` is observable in F# programming. Often, the default results
 aren't suitable for use in either programmer-facing information display or user output, and as a result it
-is common to override the default implementation.  
+is common to override the default implementation.
 
 By default, F# record and union types override the implementation of `ToString` with an implementation that
 uses `sprintf "%+A"`.  For example,

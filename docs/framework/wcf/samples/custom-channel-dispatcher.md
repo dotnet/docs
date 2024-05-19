@@ -22,7 +22,7 @@ The dispatcher first opens the channel listener and then accepts the singleton r
 
 ## Creating a Response Message
 
-The message processing is implemented in the type `MyServiceManager`. In the `HandleRequest` method, the `Action` header of the message is first checked to see whether the request is supported. A predefined SOAP action "http://tempuri.org/HelloWorld/Hello" is defined to provide message filtering. This is similar to the service contract concept in the WCF implementation of <xref:System.ServiceModel.ServiceHost>.
+The message processing is implemented in the type `MyServiceManager`. In the `HandleRequest` method, the `Action` header of the message is first checked to see whether the request is supported. A predefined SOAP action `http://tempuri.org/HelloWorld/Hello` is defined to provide message filtering. This is similar to the service contract concept in the WCF implementation of <xref:System.ServiceModel.ServiceHost>.
 
 For the correct SOAP action case, the sample retrieves the requested message data and generates a corresponding response to the request similar to what is seen in the <xref:System.ServiceModel.ServiceHost> case.
 

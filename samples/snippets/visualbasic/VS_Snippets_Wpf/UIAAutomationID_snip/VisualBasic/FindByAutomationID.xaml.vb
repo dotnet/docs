@@ -18,7 +18,7 @@ Namespace UIAAutomationID_snip
     ''' Interaction logic for FindByAutomationID.xaml
     ''' </summary>
     Partial Public Class FindByAutomationID
-        Inherits Window 
+        Inherits Window
         Private targetApp As AutomationElement
 
         Public Sub New()
@@ -55,7 +55,7 @@ Namespace UIAAutomationID_snip
         ''' The AutomationID value of interest.
         ''' </param>
         ''' <returns>
-        ''' The collection of automation elements that have the specified 
+        ''' The collection of automation elements that have the specified
         ''' AutomationID value.
         ''' </returns>
         '''--------------------------------------------------------------------
@@ -77,7 +77,7 @@ Namespace UIAAutomationID_snip
             Try
                 ' Start application.
                 Dim p As Process = Process.Start("Notepad.exe")
-                'Process.Start(System.Windows.Forms.Application.StartupPath + 
+                'Process.Start(System.Windows.Forms.Application.StartupPath +
                 '"\\AutomationID_snip_Win32Target.exe");
                 ' Give application some time to startup.
                 If p.WaitForInputIdle(10000) = False Then
@@ -104,7 +104,7 @@ Namespace UIAAutomationID_snip
         ''' <param name="sender">Object that raised the event.</param>
         ''' <param name="e">Event arguments.</param>
         ''' <remarks>
-        ''' UI Automation must be called on a separate thread if the client 
+        ''' UI Automation must be called on a separate thread if the client
         ''' application itself could become a target for event handling.
         ''' For example, focus tracking is a desktop event that could involve
         ''' the client application.
@@ -122,7 +122,7 @@ Namespace UIAAutomationID_snip
 
         '''--------------------------------------------------------------------
         ''' <summary>
-        ''' Delegated method for ThreadStart. Creates a UI Automation worker 
+        ''' Delegated method for ThreadStart. Creates a UI Automation worker
         ''' class that does all UI Automation related work.
         ''' </summary>
         '''--------------------------------------------------------------------
@@ -142,22 +142,22 @@ Namespace UIAAutomationID_snip
         ''' a WriteToScript function for each event of interest.
         ''' </summary>
         ''' <remarks>
-        ''' A major drawback to using AutomationID for recording user 
-        ''' interactions in a volatile UI is the probability of catastrophic 
-        ''' change in the UI. For example, the 'Processes' dialog where items 
+        ''' A major drawback to using AutomationID for recording user
+        ''' interactions in a volatile UI is the probability of catastrophic
+        ''' change in the UI. For example, the 'Processes' dialog where items
         ''' in the listbox container can change with no input from the user.
-        ''' This mandates thtat a record and playback application must be 
-        ''' reliant on the tester owning the UI being tested. In other words, 
-        ''' there has to be a contract between the provider and client that 
-        ''' excludes uncontrolled, external applications. The added benefit 
+        ''' This mandates that a record and playback application must be
+        ''' reliant on the tester owning the UI being tested. In other words,
+        ''' there has to be a contract between the provider and client that
+        ''' excludes uncontrolled, external applications. The added benefit
         ''' is the guarantee that each control in the UI should have an
         ''' AutomationID assigned to it.
-        ''' 
+        '''
         ''' This function relies on a UI Automation worker class to create
-        ''' the System.Collections.Generic.Queue object that stores the 
+        ''' the System.Collections.Generic.Queue object that stores the
         ''' information for the recorded user interactions. This
         ''' allows post-processing of the recorded items prior to actually
-        ''' writing them to a script. If this is not necessary the interaction 
+        ''' writing them to a script. If this is not necessary the interaction
         ''' could be written to the script immediately.
         ''' </remarks>
         '''--------------------------------------------------------------------
@@ -170,10 +170,10 @@ Namespace UIAAutomationID_snip
                 AutomationElement.AutomationIdProperty, storedItem.AutomationID)
                 ' Confirm the existence of a control.
                 ' Depending on the controls and complexity of interaction
-                ' this step may not be necessary or may require additional 
-                ' functionality. For example, to confirm the existence of a 
-                ' child menu item that had been invoked the parent menu item 
-                ' would have to be expanded. 
+                ' this step may not be necessary or may require additional
+                ' functionality. For example, to confirm the existence of a
+                ' child menu item that had been invoked the parent menu item
+                ' would have to be expanded.
                 element = targetApp.FindFirst( _
                 TreeScope.Descendants, propertyCondition)
                 If element Is Nothing Then
@@ -189,7 +189,7 @@ Namespace UIAAutomationID_snip
 
         '''--------------------------------------------------------------------
         ''' <summary>
-        ''' Generates script code and outputs the code to a text control in 
+        ''' Generates script code and outputs the code to a text control in
         ''' the client.
         ''' </summary>
         ''' <param name="automationID">

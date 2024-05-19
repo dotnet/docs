@@ -1,17 +1,17 @@
 ---
-title: "Breaking change: Globalization APIs use ICU libraries on Windows"
-description: Learn about the globalization breaking change in .NET 5 where ICU libraries are used for globalization functionality instead of NLS.
+title: "Breaking change: Globalization APIs use ICU libraries on Windows 10"
+description: Learn about the globalization breaking change in .NET 5 where ICU libraries are used for globalization functionality instead of NLS on Windows 10.
 ms.date: 02/15/2022
 ---
-# Globalization APIs use ICU libraries on Windows
+# Globalization APIs use ICU libraries on Windows 10
 
-.NET 5 and later versions use [International Components for Unicode (ICU)](http://site.icu-project.org/home) libraries for globalization functionality when running on Windows 10 May 2019 Update or later.
+.NET 5 and later versions use [International Components for Unicode (ICU)](https://icu.unicode.org/) libraries for globalization functionality when running on Windows 10 May 2019 Update or later.
 
 ## Change description
 
 In .NET Core 1.0 - 3.1 and .NET Framework 4 and later, .NET libraries use [National Language Support (NLS)](/windows/win32/intl/national-language-support) APIs for globalization functionality on Windows. For example, NLS functions were used to compare strings, get culture information, and perform string casing in the appropriate culture.
 
-Starting in .NET 5, if an app is running on Windows 10 May 2019 Update or later, .NET libraries use [ICU](http://site.icu-project.org/home) globalization APIs, by default.
+Starting in .NET 5, if an app is running on Windows 10 May 2019 Update or later, .NET libraries use [ICU](https://icu.unicode.org/) globalization APIs, by default.
 
 > [!NOTE]
 > Windows 10 May 2019 Update and later versions ship with the ICU native library. If the .NET runtime can't load ICU, it uses NLS instead.
@@ -42,7 +42,7 @@ For more information, see [Behavior changes when comparing strings on .NET 5+](.
 
 ### Currency symbol
 
-Consider the following code that formats a string using the currency format specifier `C`. The current thread's culture is set to a culture that includes only the language and not the country.
+Consider the following code that formats a string using the currency format specifier `C`. The current thread's culture is set to a culture that includes only the language and not the country or region.
 
 ```csharp
 System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("de");
@@ -75,22 +75,6 @@ No action is required on the part of the developer. However, if you wish to cont
 - <xref:System.Collections.Generic.SortedList%602?displayProperty=fullName> (when the keys are strings)
 - <xref:System.Collections.Generic.SortedSet%601?displayProperty=fullName> (when the set contains strings)
 
-<!--
+## See also
 
-### Affected APIs
-
-- ``T:System.Span`1``
-- `T:System.String`
-- `N:System.Globalization`
-- `Overload:System.Array.Sort`
-- ``M:System.Collections.Generic.List`1.Sort``
-- ``T:System.Collections.Generic.SortedDictionary`2``
-- ``T:System.Collections.Generic.SortedList`2``
-- ``T:System.Collections.Generic.SortedSet`1``
-
-### Category
-
-- Core .NET libraries
-- Globalization
-
--->
+- [Globalization APIs use ICU libraries on Windows Server](../7.0/icu-globalization-api.md)

@@ -5,6 +5,8 @@ ms.date: 10/16/2018
 ---
 # Strategies to handle partial failure
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 To deal with partial failures, use one of the strategies described here.
 
 **Use asynchronous communication (for example, message-based communication) across internal microservices**. It's highly advisable not to create long chains of synchronous HTTP calls across the internal microservices because that incorrect design will eventually become the main cause of bad outages. On the contrary, except for the front-end communications between the client applications and the first level of microservices or fine-grained API Gateways, it's recommended to use only asynchronous (message-based) communication once past the initial request/response cycle, across the internal microservices. Eventual consistency and event-driven architectures will help to minimize ripple effects. These approaches enforce a higher level of microservice autonomy and therefore prevent against the problem noted here.
@@ -22,19 +24,19 @@ To deal with partial failures, use one of the strategies described here.
 ## Additional resources
 
 - **Resiliency patterns**\
-  [https://docs.microsoft.com/azure/architecture/framework/resiliency/reliability-patterns](/azure/architecture/framework/resiliency/reliability-patterns)
+  [https://learn.microsoft.com/azure/architecture/framework/resiliency/reliability-patterns](/azure/architecture/framework/resiliency/reliability-patterns)
 
 - **Adding Resilience and Optimizing Performance**\
-  [https://docs.microsoft.com/previous-versions/msp-n-p/jj591574(v=pandp.10)](/previous-versions/msp-n-p/jj591574(v=pandp.10))
+  [https://learn.microsoft.com/previous-versions/msp-n-p/jj591574(v=pandp.10)](/previous-versions/msp-n-p/jj591574(v=pandp.10))
 
 - **Bulkhead.** GitHub repo. Implementation with Polly policy.\
   <https://github.com/App-vNext/Polly/wiki/Bulkhead>
 
 - **Designing resilient applications for Azure**\
-  [https://docs.microsoft.com/azure/architecture/framework/resiliency/app-design](/azure/architecture/framework/resiliency/app-design)
+  [https://learn.microsoft.com/azure/architecture/framework/resiliency/app-design](/azure/architecture/framework/resiliency/app-design)
 
 - **Transient fault handling**\
-  [https://docs.microsoft.com/azure/architecture/best-practices/transient-faults](/azure/architecture/best-practices/transient-faults)
+  [https://learn.microsoft.com/azure/architecture/best-practices/transient-faults](/azure/architecture/best-practices/transient-faults)
 
 >[!div class="step-by-step"]
 >[Previous](handle-partial-failure.md)

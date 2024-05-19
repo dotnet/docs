@@ -1,12 +1,12 @@
 ---
 title: Disabled runtime marshalling - .NET
 description: Learn how .NET marshals your types to a native representation when runtime marshalling is disabled.
-ms.date: 01/12/2022
+ms.date: 04/08/2024
 ---
 
 # Disabled runtime marshalling
 
-When the [`System.Runtime.CompilerServices.DisableRuntimeMarshallingAttribute`](xref:System.Runtime.CompilerServices.DisableRuntimeMarshallingAttribute) attribute is applied to an assembly, the runtime disables most built-in support for data marshalling between managed and native representations. This document describes the features that are disabled and how .NET types map to native types when marshalling is disabled.
+When the [`System.Runtime.CompilerServices.DisableRuntimeMarshallingAttribute`](xref:System.Runtime.CompilerServices.DisableRuntimeMarshallingAttribute) attribute is applied to an assembly, the runtime disables most built-in support for data marshalling between managed and native representations. This article describes the features that are disabled and how .NET types map to native types when marshalling is disabled.
 
 ## Scenarios where marshalling is disabled
 
@@ -16,7 +16,7 @@ When the `DisableRuntimeMarshallingAttribute` is applied to an assembly, it affe
 
 When the `DisableRuntimeMarshallingAttribute` is applied to an assembly, the following attributes will have no effect or throw an exception:
 
-- [`LCIDConversionAttribute`](xref:System.Runtime.InteropServices.LCIDConversionAttribute) on a P/Invoke or a delegate
+- <xref:System.Runtime.InteropServices.LCIDConversionAttribute> on a P/Invoke or a delegate
 - `SetLastError=true` on a P/Invoke
 - `ThrowOnUnmappableChar=true` on a P/Invoke
 - `BestFitMapping=true` on a P/Invoke
@@ -46,7 +46,7 @@ When marshalling is disabled, the rules for default marshalling change to much s
 
 ## Examples
 
-The following example shows some features that are enabled or disabled when runtime marshalling is disabled:
+The following example shows some features that are enabled or disabled when runtime marshalling is disabled. To demonstrate the manual application of this guidance, these examples use `[DllImport]` as opposed to the recommended `[LibraryImport]` attribute. The analyzer with ID [SYSLIB1054](../../fundamentals/syslib-diagnostics/syslib1050-1069.md) provides additional guidance when you use `[LibraryImport]`.
 
 ```csharp
 using System.Runtime.InteropServices;

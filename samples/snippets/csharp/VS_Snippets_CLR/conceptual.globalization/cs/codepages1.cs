@@ -5,12 +5,17 @@ using System.Text;
 
 public class Example
 {
-    public static void Main()
+    public static void CodePages()
     {
         // Represent Greek uppercase characters in code page 737.
-        char[] greekChars = { 'Α', 'Β', 'Γ', 'Δ', 'Ε', 'Ζ', 'Η', 'Θ',
-                            'Ι', 'Κ', 'Λ', 'Μ', 'Ν', 'Ξ', 'Ο', 'Π',
-                            'Ρ', 'Σ', 'Τ', 'Υ', 'Φ', 'Χ', 'Ψ', 'Ω' };
+        char[] greekChars =
+        {
+            'Α', 'Β', 'Γ', 'Δ', 'Ε', 'Ζ', 'Η', 'Θ',
+            'Ι', 'Κ', 'Λ', 'Μ', 'Ν', 'Ξ', 'Ο', 'Π',
+            'Ρ', 'Σ', 'Τ', 'Υ', 'Φ', 'Χ', 'Ψ', 'Ω'
+        };
+
+        Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
 
         Encoding cp737 = Encoding.GetEncoding(737);
         int nBytes = cp737.GetByteCount(greekChars);
@@ -38,6 +43,7 @@ public class Example
         Console.WriteLine(data);
     }
 }
+
 // The example displays the following output:
 //       ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ
 //       €‚ƒ„…†‡ˆ‰Š‹ŒŽ‘’""•–—

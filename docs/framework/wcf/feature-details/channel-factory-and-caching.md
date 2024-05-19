@@ -63,7 +63,7 @@ class Program
 {
    static void Main(string[] args)
    {
-      ClientBase.CacheSettings = CacheSettings.Default;
+      ClientBase<ITest>.CacheSettings = CacheSettings.Default;
       int i = 1;
       foreach (string msg in messages)
       {
@@ -91,7 +91,7 @@ class Program
 {
    static void Main(string[] args)
    {
-      ClientBase.CacheSettings = CacheSettings.AlwaysOff;
+      ClientBase<ITest>.CacheSettings = CacheSettings.AlwaysOff;
       foreach (string msg in messages)
       {
          using (TestClient proxy = new TestClient ("MyEndpoint", new EndpointAddress(address)))

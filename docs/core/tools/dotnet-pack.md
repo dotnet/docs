@@ -1,11 +1,11 @@
 ---
 title: dotnet pack command
 description: The dotnet pack command creates NuGet packages for your .NET project.
-ms.date: 08/23/2021
+ms.date: 04/04/2024
 ---
 # dotnet pack
 
-**This article applies to:** ✔️ .NET Core 2.x SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -14,11 +14,12 @@ ms.date: 08/23/2021
 ## Synopsis
 
 ```dotnetcli
-dotnet pack [<PROJECT>|<SOLUTION>] [-c|--configuration <CONFIGURATION>]
-    [--force] [--include-source] [--include-symbols] [--interactive]
+dotnet pack [<PROJECT>|<SOLUTION>] [--artifacts-path <ARTIFACTS_DIR>]
+    [-c|--configuration <CONFIGURATION>] [--force]
+    [--include-source] [--include-symbols] [--interactive]
     [--no-build] [--no-dependencies] [--no-restore] [--nologo]
     [-o|--output <OUTPUT_DIRECTORY>] [--runtime <RUNTIME_IDENTIFIER>]
-    [-s|--serviceable] [-v|--verbosity <LEVEL>]
+    [-s|--serviceable] [--tl:[auto|on|off]] [-v|--verbosity <LEVEL>]
     [--version-suffix <VERSION_SUFFIX>]
 
 dotnet pack -h|--help
@@ -33,7 +34,7 @@ If you want to generate a package that contains the debug symbols, you have two 
 - `--include-symbols` - it creates the symbols package.
 - `--include-source` - it creates the symbols package with a `src` folder inside containing the source files.
 
-NuGet dependencies of the packed project are added to the *.nuspec* file, so they're properly resolved when the package is installed. If the packed project has references to other projects, the other projects are not included in the package. Currently, you must have a package per project if you have project-to-project dependencies.
+NuGet dependencies of the packed project are added to the *.nuspec* file, so they're properly resolved when the package is installed. If the packed project has references to other projects, the other projects aren't included in the package. Currently, you must have a package per project if you have project-to-project dependencies.
 
 By default, `dotnet pack` builds the project first. If you wish to avoid this behavior, pass the `--no-build` option. This option is often useful in Continuous Integration (CI) build scenarios where you know the code was previously built.
 
@@ -42,13 +43,8 @@ By default, `dotnet pack` builds the project first. If you wish to avoid this be
 
 You can provide MSBuild properties to the `dotnet pack` command for the packing process. For more information, see [NuGet pack target properties](/nuget/reference/msbuild-targets#pack-target) and the [MSBuild Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference). The [Examples](#examples) section shows how to use the MSBuild `-p` switch for a couple of different scenarios.
 
-Web projects aren't packable by default. To override the default behavior, add the following property to your *.csproj* file:
-
-```xml
-<PropertyGroup>
-   <IsPackable>true</IsPackable>
-</PropertyGroup>
-```
+> [!NOTE]
+> Web projects aren't packable.
 
 ### Implicit restore
 
@@ -64,9 +60,9 @@ Web projects aren't packable by default. To override the default behavior, add t
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
+[!INCLUDE [artifacts-path](../../../includes/cli-artifacts-path.md)]
 
-[!INCLUDE [configuration](../../../includes/cli-configuration.md)]
+[!INCLUDE [configuration](../../../includes/cli-configuration-publish-pack.md)]
 
 - **`--force`**
 
@@ -98,11 +94,15 @@ Web projects aren't packable by default. To override the default behavior, add t
 
 - **`--nologo`**
 
-  Doesn't display the startup banner or the copyright message. Available since .NET Core 3.0 SDK.
+  Doesn't display the startup banner or the copyright message.
 
 - **`-o|--output <OUTPUT_DIRECTORY>`**
 
   Places the built packages in the directory specified.
+
+  - .NET 7.0.200 SDK
+
+    In the 7.0.200 SDK, if you specify the `--output` option when running this command on a solution, the CLI will emit an error. This is a regression and was fixed in 7.0.201 and later versions of the .NET SDK.
 
 - **`--runtime <RUNTIME_IDENTIFIER>`**
 
@@ -111,6 +111,8 @@ Web projects aren't packable by default. To override the default behavior, add t
 - **`-s|--serviceable`**
 
   Sets the serviceable flag in the package. For more information, see [.NET Blog: .NET Framework 4.5.1 Supports Microsoft Security Updates for .NET NuGet Libraries](https://aka.ms/nupkgservicing).
+
+[!INCLUDE [tl](../../../includes/cli-tl.md)]
 
 [!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
 
@@ -174,10 +176,10 @@ Web projects aren't packable by default. To override the default behavior, add t
   dotnet pack -p:TargetFrameworks=net45
   ```
 
-- Pack the project and use a specific runtime (Windows 10) for the restore operation:
+- Pack the project and use a specific runtime (Windows) for the restore operation:
 
   ```dotnetcli
-  dotnet pack --runtime win10-x64
+  dotnet pack --runtime win-x64
   ```
 
 - Pack the project using a *.nuspec* file:

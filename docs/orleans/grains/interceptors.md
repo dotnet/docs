@@ -1,12 +1,12 @@
 ---
 title: Grain call filters
 description: Learn about grain call filter in .NET Orleans.
-ms.date: 01/31/2022
+ms.date: 03/16/2022
 ---
 
 # Grain call filters
 
-Grain call filters provide a means for intercepting grain calls. Filters can execute code both before and after a grain call. Multiple filters can be installed simultaneously. Filters are asynchronous and can modify `RequestContext`, arguments, and the return value of the method being invoked. Filters can also inspect the `MethodInfo` of the method being invoked on the grain class and can be used to throw or handle exceptions.
+Grain call filters provide a means for intercepting grain calls. Filters can execute code both before and after a grain call. Multiple filters can be installed simultaneously. Filters are asynchronous and can modify <xref:Orleans.Runtime.RequestContext>, arguments, and the return value of the method being invoked. Filters can also inspect the <xref:System.Reflection.MethodInfo> of the method being invoked on the grain class and can be used to throw or handle exceptions.
 
 Some example usages of grain call filters are:
 
@@ -23,7 +23,7 @@ Incoming call filters are executed when receiving a call. Outgoing call filters 
 
 ## Incoming call filters
 
-Incoming grain call filters implement the `IIncomingGrainCallFilter` interface, which has one method:
+Incoming grain call filters implement the <xref:Orleans.IIncomingGrainCallFilter> interface, which has one method:
 
 ```csharp
 public interface IIncomingGrainCallFilter
@@ -32,7 +32,7 @@ public interface IIncomingGrainCallFilter
 }
 ```
 
-The `IIncomingGrainCallContext` argument passed to the `Invoke` method has the following shape:
+The <xref:Orleans.IIncomingGrainCallContext> argument passed to the `Invoke` method has the following shape:
 
 ```csharp
 public interface IIncomingGrainCallContext
@@ -73,11 +73,11 @@ The `IIncomingGrainCallFilter.Invoke(IIncomingGrainCallContext)` method must awa
 
 ## Configure incoming grain call filters
 
-Implementations of `IIncomingGrainCallFilter` can either be registered as silo-wide filters via Dependency Injection or they can be registered as grain-level filters via a grain implementing `IIncomingGrainCallFilter` directly.
+Implementations of <xref:Orleans.IIncomingGrainCallFilter> can either be registered as silo-wide filters via Dependency Injection or they can be registered as grain-level filters via a grain implementing `IIncomingGrainCallFilter` directly.
 
 ### Silo-wide grain call filters
 
-A delegate can be registered as a silo-wide grain call filters using Dependency Injection like so:
+A delegate can be registered as a silo-wide grain call filter using Dependency Injection like so:
 
 ```csharp
 siloHostBuilder.AddIncomingGrainCallFilter(async context =>
@@ -102,8 +102,7 @@ siloHostBuilder.AddIncomingGrainCallFilter(async context =>
 });
 ```
 
-Similarly, a class can be registered as a grain call filter using the `AddIncomingGrainCallFilter` helper method.
-Here is an example of a grain call filter that logs the results of every grain method:
+Similarly, a class can be registered as a grain call filter using the <xref:Orleans.Hosting.SiloHostBuilderGrainCallFilterExtensions.AddIncomingGrainCallFilter%2A> helper method. Here is an example of a grain call filter that logs the results of every grain method:
 
 ```csharp
 public class LoggingCallFilter : IIncomingGrainCallFilter
@@ -159,7 +158,7 @@ siloHostBuilder.ConfigureServices(
     services => services.AddSingleton<IIncomingGrainCallFilter, LoggingCallFilter>());
 ```
 
-### Per-grain Grain Call Filters
+### Per-grain Grain call filters
 
 A grain class can register itself as a grain call filter and filter any calls made to it by implementing `IIncomingGrainCallFilter` like so:
 
@@ -239,7 +238,7 @@ public interface IOutgoingGrainCallFilter
 }
 ```
 
-The `IOutgoingGrainCallContext` argument passed to the `Invoke` method has the following shape:
+The <xref:Orleans.IOutgoingGrainCallContext> argument passed to the `Invoke` method has the following shape:
 
 ```csharp
 public interface IOutgoingGrainCallContext
@@ -302,7 +301,7 @@ builder.AddOutgoingGrainCallFilter(async context =>
 });
 ```
 
-In the above code, `builder` may be either an instance of `ISiloHostBuilder` or `IClientBuilder`.
+In the above code, `builder` may be either an instance of <xref:Orleans.Hosting.ISiloHostBuilder> or <xref:Orleans.IClientBuilder>.
 
 Similarly, a class can be registered as an outgoing grain call filter.
 Here is an example of a grain call filter that logs the results of every grain method:
@@ -361,7 +360,7 @@ builder.ConfigureServices(
     services => services.AddSingleton<IOutgoingGrainCallFilter, LoggingCallFilter>());
 ```
 
-As with the delegate call filter example, `builder` may be an instance of either `ISiloHostBuiler` or `IClientBuilder`.
+As with the delegate call filter example, `builder` may be an instance of either <xref:Orleans.Hosting.ISiloHostBuilder> or <xref:Orleans.IClientBuilder>.
 
 ## Use cases
 
@@ -371,7 +370,7 @@ When an exception that has been thrown from the server is getting deserialized o
 
 This happens if the assembly containing the exception is not available to the client. For example, say you are using Entity Framework in your grain implementations; then an `EntityException` may be thrown. The client on the other hand does not (and should not) reference `EntityFramework.dll` since it does not know the underlying data access layer.
 
-When the client tries to deserialize the `EntityException`, it will fail due to the missing DLL; as a consequence, a `TypeLoadException` is thrown hiding the original `EntityException`.
+When the client tries to deserialize the `EntityException`, it will fail due to the missing DLL; as a consequence, a <xref:System.TypeLoadException> is thrown hiding the original `EntityException`.
 
 One may argue that this is pretty okay since the client would never handle the `EntityException`; otherwise, it would have to reference `EntityFramework.dll`.
 
@@ -467,7 +466,7 @@ This way the client tells the server that it wants to use exception conversion.
 
 ### Call grains from interceptors
 
-It is possible to make grain calls from an interceptor by injecting `IGrainFactory` into the interceptor class:
+It is possible to make grain calls from an interceptor by injecting <xref:Orleans.IGrainFactory> into the interceptor class:
 
 ```csharp
 private readonly IGrainFactory _grainFactory;

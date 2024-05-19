@@ -1,7 +1,7 @@
 ---
 title: "Retrieve resources in .NET apps"
 description: Retrieve resources in .NET apps. Package resources for the default (neutral) culture with the main assembly and create a satellite assembly for each culture.
-ms.date: 08/09/2021
+ms.date: 03/13/2023
 dev_langs: 
  - "csharp"
  - "vb"
@@ -51,7 +51,7 @@ The French (France) resource is in a file named Strings.fr-FR.txt:
 TimeHeader=L'heure actuelle est
 ```
 
-The Russian (Russia) resource is in a file named Strings.ru-RU-txt:
+The Russian (Russia) resource is in a file named Strings.ru-RU.txt:
 
 ```text
 TimeHeader=Текущее время —

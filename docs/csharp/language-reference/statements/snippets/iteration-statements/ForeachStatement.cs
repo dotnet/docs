@@ -12,7 +12,7 @@ public static class ForeachStatement
     private static void ForeachWithIEnumerable()
     {
         // <WithIEnumerable>
-        var fibNumbers = new List<int> { 0, 1, 1, 2, 3, 5, 8, 13 };
+        List<int> fibNumbers = new() { 0, 1, 1, 2, 3, 5, 8, 13 };
         foreach (int element in fibNumbers)
         {
             Console.Write($"{element} ");
@@ -26,7 +26,7 @@ public static class ForeachStatement
     private static void ForeachWithSpan()
     {
         // <WithSpan>
-        Span<int> numbers = new int[] { 3, 14, 15, 92, 6 };
+        Span<int> numbers = [3, 14, 15, 92, 6];
         foreach (int number in numbers)
         {
             Console.Write($"{number} ");

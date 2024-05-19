@@ -11,7 +11,7 @@ If you run into compatibility issues with this change on the .NET Framework 4.7.
 ```xml
 <configuration>
   <runtime>
-    <AppContextSwitchOverrides value=&quot;Switch.System.ServiceModel.UseSha1InMsmqEncryptionAlgorithm=true&quot; />
+    <AppContextSwitchOverrides value="Switch.System.ServiceModel.UseSha1InMsmqEncryptionAlgorithm=true" />
   </runtime>
 </configuration>
 ```

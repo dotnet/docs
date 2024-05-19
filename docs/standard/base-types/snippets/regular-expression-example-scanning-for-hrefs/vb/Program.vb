@@ -6,7 +6,7 @@ Public Module Example
     ' <main>
     Public Sub Main()
         Dim inputString As String = "My favorite web sites include:</P>" &
-                                    "<A HREF=""https://docs.microsoft.com/en-us/dotnet/"">" &
+                                    "<A HREF=""https://learn.microsoft.com/en-us/dotnet/"">" &
                                     ".NET Documentation</A></P>" &
                                     "<A HREF=""http://www.microsoft.com"">" &
                                     "Microsoft Corporation Home Page</A></P>" &
@@ -15,7 +15,7 @@ Public Module Example
         DumpHRefs(inputString)
     End Sub
     ' The example displays the following output:
-    '       Found href https://docs.microsoft.com/dotnet/ at 43
+    '       Found href https://learn.microsoft.com/dotnet/ at 43
     '       Found href http://www.microsoft.com at 114
     '       Found href https://devblogs.microsoft.com/dotnet/ at 188
     ' </main>

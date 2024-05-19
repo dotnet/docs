@@ -19,9 +19,9 @@ The [SqlTracking sample](https://github.com/dotnet/samples/tree/main/framework/w
 
 3. Open SqlTrackingSample.sln in Visual Studio.
 
-4. Press **Ctrl**+**Shift**+**B** to build the solution.
+4. Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> to build the solution.
 
-5. Press **F5** to run the application.
+5. Press <kbd>F5</kbd> to run the application.
 
    The browser window opens and shows the directory listing for the application.
 

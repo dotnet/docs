@@ -2,21 +2,16 @@
 title: Create a .NET console application using Visual Studio for Mac
 description: Learn how to create a .NET console application using Visual Studio for Mac.
 ms.date: 11/30/2020
-recommendations: false
 ---
 # Tutorial: Create a .NET console application using Visual Studio for Mac
 
 This tutorial shows how to create and run a .NET console application using Visual Studio for Mac.
 
-> [!NOTE]
-> Your feedback is highly valued. There are two ways you can provide feedback to the development team on Visual Studio for Mac:
->
-> * In Visual Studio for Mac, select **Help** > **Report a Problem** from the menu or **Report a Problem** from the Welcome screen, which will open a window for filing a bug report. You can track your feedback in the [Developer Community](https://aka.ms/feedback/report?space=41) portal.
-> * To make a suggestion, select **Help** > **Provide a Suggestion** from the menu or **Provide a Suggestion** from the Welcome screen, which will take you to the [Visual Studio for Mac Developer Community webpage](https://aka.ms/feedback/suggest?space=41).
+[!INCLUDE [](~/includes/vs-mac-eol.md)]
 
 ## Prerequisites
 
-* [Visual Studio for Mac version 8.8 or later](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link). Select the option to install .NET Core. Installing Xamarin is optional for .NET development. For more information, see the following resources:
+* [Visual Studio for Mac version 8.8 or later](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link). Select the option to install .NET Core. Installing Xamarin is optional for .NET development. For more information, see the following resources:
 
   * [Tutorial: Install Visual Studio for Mac](/visualstudio/mac/installation).
   * [Supported macOS versions](../install/windows.md).

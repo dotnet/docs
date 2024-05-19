@@ -1,5 +1,5 @@
 ---
-title: Iterate through collections in C#
+title: Iterate through collections
 description: Learn how to use an iterator to step through collections like lists and arrays. Iterators are consumed from client code using a foreach statement or LINQ query.
 ms.date: 08/14/2018
 ms.assetid: c93f6dd4-e72a-4a06-be1c-a98b3255b734
@@ -8,7 +8,7 @@ ms.assetid: c93f6dd4-e72a-4a06-be1c-a98b3255b734
 
 An *iterator* can be used to step through collections such as lists and arrays.
 
-An iterator method or `get` accessor performs a custom iteration over a collection. An iterator method uses the [yield return](../../language-reference/keywords/yield.md) statement to return each element one at a time. When a `yield return` statement is reached, the current location in code is remembered. Execution is restarted from that location the next time the iterator function is called.
+An iterator method or `get` accessor performs a custom iteration over a collection. An iterator method uses the [yield return](../../language-reference/statements/yield.md) statement to return each element one at a time. When a `yield return` statement is reached, the current location in code is remembered. Execution is restarted from that location the next time the iterator function is called.
 
 You consume an iterator from client code by using a [foreach](../../language-reference/statements/iteration-statements.md#the-foreach-statement) statement or by using a LINQ query.
 
@@ -90,7 +90,7 @@ static void Main()
 
 public class DaysOfTheWeek : IEnumerable
 {
-    private string[] days = { "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" };
+    private string[] days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
     public IEnumerator GetEnumerator()
     {
@@ -329,7 +329,7 @@ In C#, `yield` is not a reserved word and has special meaning only when it is us
 
 Although you write an iterator as a method, the compiler translates it into a nested class that is, in effect, a state machine. This class keeps track of the position of the iterator as long the `foreach` loop in the client code continues.
 
-To see what the compiler does, you can use the Ildasm.exe tool to view the Microsoft intermediate language code that's generated for an iterator method.
+To see what the compiler does, you can use the Ildasm.exe tool to view the common intermediate language code that's generated for an iterator method.
 
 When you create an iterator for a [class](../../language-reference/keywords/class.md) or [struct](../../language-reference/builtin-types/struct.md), you don't have to implement the whole <xref:System.Collections.IEnumerator> interface. When the compiler detects the iterator, it automatically generates the `Current`, `MoveNext`, and `Dispose` methods of the <xref:System.Collections.IEnumerator> or <xref:System.Collections.Generic.IEnumerator%601> interface.
 
@@ -337,7 +337,7 @@ On each successive iteration of the `foreach` loop (or the direct call to `IEnum
 
 Iterators don't support the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=nameWithType> method. To reiterate from the start, you must obtain a new iterator. Calling <xref:System.Collections.IEnumerator.Reset%2A> on the iterator returned by an iterator method throws a <xref:System.NotSupportedException>.
 
-For additional information, see the [C# Language Specification](~/_csharpstandard/standard/classes.md#1414-iterators).
+For additional information, see the [C# Language Specification](~/_csharpstandard/standard/classes.md#1514-iterators).
 
 ## Use of Iterators
 
@@ -354,6 +354,4 @@ Iterators enable you to maintain the simplicity of a `foreach` loop when you nee
 - <xref:System.Collections.Generic>
 - <xref:System.Collections.Generic.IEnumerable%601>
 - [foreach, in](../../language-reference/statements/iteration-statements.md#the-foreach-statement)
-- [yield](../../language-reference/keywords/yield.md)
-- [Using foreach with Arrays](../arrays/using-foreach-with-arrays.md)
 - [Generics](../../fundamentals/types/generics.md)

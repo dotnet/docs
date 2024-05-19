@@ -75,7 +75,7 @@ To generate classes from schemas that are usable with Windows Communication Foun
 
  This corresponds to the **/serializable** switch on the `Svcutil.exe` tool.  
   
- Sometimes it is important for the types generated from the schema to be usable with .NET Framework runtime serialization engines (for example, the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=nameWithType> and the <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter> classes). This is useful when using types for .NET Framework remoting. To enable this, you must apply the <xref:System.SerializableAttribute> attribute to the generated types in addition to the regular <xref:System.Runtime.Serialization.DataContractAttribute> attribute. The attribute is generated automatically if the `GenerateSerializable` import option is set to `true`.  
+ Sometimes it is important for the types generated from the schema to be usable with .NET Framework runtime serialization engines. This is useful when using types for .NET Framework remoting. To enable this, you must apply the <xref:System.SerializableAttribute> attribute to the generated types in addition to the regular <xref:System.Runtime.Serialization.DataContractAttribute> attribute. The attribute is generated automatically if the `GenerateSerializable` import option is set to `true`.  
   
  The following example shows the `Vehicle` class generated with the `GenerateSerializable` import option set to `true`.  
   

@@ -1,7 +1,7 @@
 ---
 title: Messaging delivery guarantees
 description: Learn about messaging delivery guarantees in .NET Orleans.
-ms.date: 02/01/2022
+ms.date: 03/17/2022
 ---
 
 # Messaging delivery guarantees
@@ -10,7 +10,7 @@ Orleans messaging delivery guarantees are **at-most-once**, by default. Optional
 
 In more detail:
 
-* Every message in Orleans has an automatic timeout (the exact timeout can be configured). If the reply does not arrive on time, the returned `Task` is broken with a timeout exception.
+* Every message in Orleans has an automatic timeout (the exact timeout can be configured). If the reply does not arrive on time, the returned <xref:System.Threading.Tasks.Task> is broken with a timeout exception.
 * Orleans can be configured to do automatic retries upon timeout. By default, it _does not_ do automatic retries.
 * Application code of course can also choose to do retries upon timeout.
 

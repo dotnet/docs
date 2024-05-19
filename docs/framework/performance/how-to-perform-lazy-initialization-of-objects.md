@@ -51,7 +51,7 @@ End Sub
   {  
       return ParallelEnumerable.Range(0, 1000).  
           Select(i => Compute(i)).Aggregate((x,y) => x + y);  
-  }, LazyExecutionMode.EnsureSingleThreadSafeExecution);  
+  }, LazyThreadSafetyMode.ExecutionAndPublication);  
   
   // Do some work that may or may not set someCondition to true.  
   //  ...  

@@ -72,25 +72,43 @@ var mResult = Matrix4x4.Multiply(m1, m2);
 
 The <xref:System.Numerics.Vector%601> gives the ability to use longer vectors. The count of a <xref:System.Numerics.Vector%601> instance is fixed, but its value <xref:System.Numerics.Vector%601.Count%2A?displayProperty=nameWithType> depends on the CPU of the machine running the code.
 
-The example below demonstrates how to calculate the element-wise product of two arrays using <xref:System.Numerics.Vector%601>.
+The following example demonstrates how to calculate the element-wise sum of two arrays using <xref:System.Numerics.Vector%601>.
 
 ```csharp
-double[] SimdVectorProd(double[] left, double[] right)
+double[] Sum(double[] left, double[] right)
 {
-    var offset = Vector<double>.Count;
-    double[] result = new double[left.Length];
-    int i = 0;
-    for (i = 0; i < left.Length; i += offset)
+    if (left is null)
+    {
+        throw new ArgumentNullException(nameof(left));
+    }
+
+    if (right is null)
+    {
+        throw new ArgumentNullException(nameof(right));
+    }
+
+    if (left.Length != right.Length)
+    {
+        throw new ArgumentException($"{nameof(left)} and {nameof(right)} are not the same length");
+    }
+
+    int length = left.Length;
+    double[] result = new double[length];
+
+    // Get the number of elements that can't be processed in the vector
+    // NOTE: Vector<T>.Count is a JIT time constant and will get optimized accordingly
+    int remaining = length % Vector<double>.Count;
+
+    for (int i = 0; i < length - remaining; i += Vector<double>.Count)
     {
         var v1 = new Vector<double>(left, i);
         var v2 = new Vector<double>(right, i);
-        (v1 * v2).CopyTo(result, i);
+        (v1 + v2).CopyTo(result, i);
     }
 
-    //remaining items
-    for (; i < left.Length; ++i)
+    for (int i = length - remaining; i < length; i++)
     {
-        result[i] = left[i] * right[i];
+        result[i] = left[i] + right[i];
     }
 
     return result;

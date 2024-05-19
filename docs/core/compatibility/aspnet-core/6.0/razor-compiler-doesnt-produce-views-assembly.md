@@ -21,7 +21,7 @@ In previous versions, the Razor compiler utilizes a two-step compilation process
 
 ## New behavior
 
-Both views and application types are included in a single *AppName.dll* assembly. View types have the accessibility modifiers `internal` and `sealed`, by default, and are included under the `AspNetCoreGeneratedDocument` namespace.
+Both views and application types are included in a single *AppName.dll* assembly. View types have the accessibility modifiers `internal` and `sealed` and are included under the `AspNetCoreGeneratedDocument` namespace.
 
 ## Reason for change
 

@@ -6,11 +6,11 @@ ms.assetid: 61e0b396-09d7-4e13-9711-7dcbcbd103a0
 ---
 # SqlClient Support for High Availability, Disaster Recovery
 
-This topic discusses SqlClient support (added in .NET Framework 4.5) for high-availability, disaster recovery with the Always On features -- Always On availability groups (AGs) and Always On failover cluster instances (FCIs) with SQL Server 2012 or later.  For more information about either Always On feature, see SQL Server Books Online.  
+This article discusses SqlClient support (added in .NET Framework 4.5) for high-availability, disaster recovery with the Always On features -- Always On availability groups (AGs) and Always On failover cluster instances (FCIs) with SQL Server 2012 or later.
   
  You can now specify an availability group listener or the name of an FCI in the connection property. If a SqlClient application is connected to a database that fails over, the original connection is broken and the application must open a new connection to continue work after the failover.  
   
- If you are not connecting to an AG or FCI, and if multiple IP addresses are associated with a hostname, SqlClient will iterate sequentially through all IP addresses associated with DNS entry. This can be time consuming if the first IP address returned by DNS server is not bound to any network interface card (NIC). When connecting an FCI, or to the listener of an availability group, SqlClient attempts to establish connections to all IP addresses in parallel and if a connection attempt succeeds, the driver discards any pending connection attempts.  
+ If you are not connecting to an AG or FCI, and if multiple IP addresses are associated with a hostname, SqlClient will iterate sequentially through all IP addresses associated with DNS entry. This can be time consuming if the first IP address returned by DNS server is not bound to any network interface card (NIC). When connecting an FCI, or to the listener of an availability group, SqlClient attempts to establish connections to all IP addresses in parallel. If a connection attempt succeeds, the driver discards any pending connection attempts.  
   
 > [!NOTE]
 > Increasing connection timeout and implementing connection retry logic will increase the probability that an application will connect to an availability group. Also, because a connection can fail because of a failover, you should implement connection retry logic, retrying a failed connection until it reconnects.  
@@ -23,12 +23,12 @@ This topic discusses SqlClient support (added in .NET Framework 4.5) for high-av
   
  You can programmatically modify these connection string keywords with:  
   
-1. <xref:System.Data.SqlClient.SqlConnectionStringBuilder.ApplicationIntent%2A>  
+- <xref:System.Data.SqlClient.SqlConnectionStringBuilder.ApplicationIntent%2A>  
   
-2. <xref:System.Data.SqlClient.SqlConnectionStringBuilder.MultiSubnetFailover%2A>  
+- <xref:System.Data.SqlClient.SqlConnectionStringBuilder.MultiSubnetFailover%2A>  
 
 > [!NOTE]
-> Setting `MultiSubnetFailover` to `true` isn't required with .NET Framework 4.6.1 or later versions.
+> Setting `MultiSubnetFailover` to `true` isn't required with .NET Framework versions 4.6.1 and later. It is required in .NET Core and .NET 5+.
   
 ## Connecting With MultiSubnetFailover  
 
@@ -56,9 +56,9 @@ This topic discusses SqlClient support (added in .NET Framework 4.5) for high-av
   
  If read-only routing is not in effect, connecting to a secondary replica location will fail in the following situations:  
   
-1. If the secondary replica location is not configured to accept connections.  
+- If the secondary replica location is not configured to accept connections.  
   
-2. If an application uses `ApplicationIntent=ReadWrite` (discussed below) and the secondary replica location is configured for read-only access.  
+- If an application uses `ApplicationIntent=ReadWrite` (discussed below) and the secondary replica location is configured for read-only access.  
   
  <xref:System.Data.SqlClient.SqlDependency> is not supported on read-only secondary replicas.  
   

@@ -1,6 +1,6 @@
 ---
 description: "namespace keyword - C# Reference"
-title: "namespace keyword - C# Reference"
+title: "namespace keyword"
 ms.date: 08/19/2021
 f1_keywords: 
   - "namespace_CSharpKeyword"
@@ -70,7 +70,7 @@ For more information on file scoped namespace declarations, see the [feature spe
 
 ## See also
 
-- [C# reference](../index.md)
+- [Namespace declaration preferences (IDE0160 and IDE0161)](../../../fundamentals/code-analysis/style-rules/ide0160-ide0161.md)
 - [C# keywords](index.md)
 - [using](using-directive.md)
 - [using static](using-directive.md)

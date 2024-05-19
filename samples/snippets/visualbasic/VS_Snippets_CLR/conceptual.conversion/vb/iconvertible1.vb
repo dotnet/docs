@@ -1,7 +1,7 @@
 ﻿' Visual Basic .NET Document
 Option Strict On
 
-Module Example
+Module ConvertibleExample
     Public Sub Main()
         CallEII()
         Console.WriteLine("-----")

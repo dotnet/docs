@@ -4,9 +4,11 @@ description: Learn how to build forms with client-side validation in Blazor.
 author: danroth27
 ms.author: daroth
 no-loc: [Blazor, "Blazor WebAssembly"]
-ms.date: 12/2/2021
+ms.date: 04/11/2022
 ---
 # Forms and validation
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 The ASP.NET Web Forms framework includes a set of validation server controls that handle validating user input entered into a form (`RequiredFieldValidator`, `CompareValidator`, `RangeValidator`, and so on). The ASP.NET Web Forms framework also supports model binding and validating the model based on data annotations (`[Required]`, `[StringLength]`, `[Range]`, and so on). The validation logic can be enforced both on the server and on the client using unobtrusive JavaScript-based validation. The `ValidationSummary` server control is used to display a summary of the validation errors to the user.
 

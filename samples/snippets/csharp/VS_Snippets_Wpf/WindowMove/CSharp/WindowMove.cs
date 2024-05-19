@@ -61,7 +61,6 @@ using System.Text;
 using System.Diagnostics;
 using System.ComponentModel;
 using System.Windows.Threading;
-using System.Security.Permissions;
 
 namespace SDKSample
 {
@@ -150,7 +149,7 @@ namespace SDKSample
                 }
                 else
                 {
-                    Feedback("Wndow is not moveable.");
+                    Feedback("Window is not moveable.");
                 }
             }
             catch (ElementNotAvailableException)
@@ -362,7 +361,6 @@ namespace SDKSample
         /// <param name="sender">The object that raised the event.</param>
         /// <param name="e">Event arguments.</param>
         /// <returns>The target automation element.</returns>
-        [SecurityPermission(SecurityAction.Demand, Flags = SecurityPermissionFlag.UnmanagedCode)]
         private AutomationElement StartTargetApp(string app)
         {
             try

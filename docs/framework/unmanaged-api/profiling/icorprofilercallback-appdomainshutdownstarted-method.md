@@ -30,7 +30,7 @@ HRESULT AppDomainShutdownStarted(
   
 ## Parameters
 
-`appDomainId`
+`appDomainId`\
 [in] Identifies the domain in which the application's assemblies are stored.
 
 ## Remarks  

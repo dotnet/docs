@@ -38,7 +38,7 @@ namespace Microsoft.Samples.Xml.Schema
             validator.GetUnspecifiedDefaultAttributes(new ArrayList());
             validator.ValidateEndOfAttributes(null);
 
-            // Get the next exptected element in the bookstore context.
+            // Get the next expected element in the bookstore context.
             XmlSchemaParticle[] particles = validator.GetExpectedParticles();
             XmlSchemaElement nextElement = particles[0] as XmlSchemaElement;
             Console.WriteLine("Expected Element: '{0}'", nextElement.Name);
@@ -48,7 +48,7 @@ namespace Microsoft.Samples.Xml.Schema
                 // Validate the book element.
                 validator.ValidateElement("book", "http://www.contoso.com/books", null);
 
-                // Get the exptected attributes for the book element.
+                // Get the expected attributes for the book element.
                 Console.Write("\nExpected attributes: ");
                 XmlSchemaAttribute[] attributes = validator.GetExpectedAttributes();
                 foreach (XmlSchemaAttribute attribute in attributes)

@@ -46,7 +46,7 @@ You can take a name of nearly every F# construct:
 module M =
     let f x = nameof x
 
-printfn $"{(M.f 12)]}"
+printfn $"{(M.f 12)}"
 printfn $"{(nameof M)}"
 printfn $"{(nameof M.f)}"
 ```

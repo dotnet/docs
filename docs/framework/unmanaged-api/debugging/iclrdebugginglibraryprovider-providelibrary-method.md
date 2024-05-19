@@ -39,7 +39,7 @@ HRESULT ProvideLibrary(
 `dwTimestamp` \
 [in] The date time stamp stored in the COFF file header of PE files.
 
-`pLibraryProvider` \
+`dwSizeOfImage` \
 [in] The `SizeOfImage` field stored in the COFF optional file header of PE files.
 
 `hModule` \

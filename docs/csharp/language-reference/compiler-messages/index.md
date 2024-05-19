@@ -1,6 +1,6 @@
 ---
 description: "C# Compiler Errors"
-title: "C# Compiler messages"
+title: "Compiler messages"
 ms.date: 04/27/2021
 helpviewer_keywords: 
   - "C# language, compiler errors"
@@ -26,4 +26,4 @@ For information about how to configure error and warning options in C#, see [C# 
 - [C# Compiler Options](../compiler-options/index.md)
 - [Build Page, Project Designer (C#)](/visualstudio/ide/reference/build-page-project-designer-csharp)
 - [**WarningLevel** (C# Compiler Options)](../compiler-options/errors-warnings.md#warninglevel)
-- [**DisabledWarnings** (C# Compiler Options)](../compiler-options/errors-warnings.md#disabledwarnings)
+- [**NoWarn** (C# Compiler Options)](../compiler-options/errors-warnings.md#nowarn)

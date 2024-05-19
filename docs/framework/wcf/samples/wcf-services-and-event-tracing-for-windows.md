@@ -16,9 +16,9 @@ This sample includes a basic WCF service in which events are emitted from the se
 
 1. Using Visual Studio, open the EtwAnalyticTraceSample.sln solution file.
 
-2. To build the solution, press **Ctrl**+**Shift**+**B**.
+2. To build the solution, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>.
 
-3. To run the solution, press **Ctrl**+**F5**.
+3. To run the solution, press <kbd>Ctrl</kbd>+<kbd>F5</kbd>.
 
      In the Web browser, click **Calculator.svc**. The URI of the WSDL document for the service should appear in the browser. Copy that URI.
 

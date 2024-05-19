@@ -3,7 +3,7 @@ title: 'Tutorial: Classify health violations with Model Builder'
 description: This tutorial illustrates how to build a multiclass classification model using ML.NET Model Builder to classify restaurant health violation severity in San Francisco.
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 09/20/2021
+ms.date: 11/10/2022
 ms.topic: tutorial
 ms.custom: mvc,mlnet-tooling
 #Customer intent: As a non-developer, I want to use Model Builder to automatically generate a model to classify violation severity using Model Builder.
@@ -25,20 +25,17 @@ In this tutorial, you learn how to:
 > - Evaluate the model
 > - Use the model for predictions
 
-> [!NOTE]
-> Model Builder is currently in Preview.
-
 ## Prerequisites
 
 For a list of prerequisites and installation instructions, visit the [Model Builder installation guide](../how-to-guides/install-model-builder.md).
 
 ## Model Builder multiclass classification overview
 
-This sample creates a C# .NET Core console application that categorizes the risk of health violations using a machine learning model built with Model Builder. You can find the source code for this tutorial at the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/main/samples/modelbuilder/MulticlassClassification_RestaurantViolations) GitHub repository.
+This sample creates a C# console application that categorizes the risk of health violations using a machine learning model built with Model Builder. You can find the source code for this tutorial at the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/main/samples/modelbuilder/MulticlassClassification_RestaurantViolations) GitHub repository.
 
 ## Create a console application
 
-1. Create a **C# .NET Core console application** called "RestaurantViolations".
+Create a **C# console application** called "RestaurantViolations".
 
 ## Prepare and understand the data
 
@@ -60,16 +57,16 @@ Each row in the dataset contains information regarding violations observed durin
 
 The `label` is the column you want to predict. When performing a classification task, the goal is to assign a category (text or numerical). In this classification scenario, the severity of the violation is assigned the value of low, moderate, or high risk. Therefore, the **RiskCategory** is the label. The `features` are the inputs you give the model to predict the `label`. In this case, the **InspectionType** and **ViolationDescription** are used as features or inputs to predict the **RiskCategory**.
 
-## Create Model Builder Config File
+## Create Model Builder config file
 
 When first adding Model Builder to the solution it will prompt you to create an `mbconfig` file. The `mbconfig` file keeps track of everything you do in Model Builder to allow you to reopen the session.
 
-1. In **Solution Explorer**, right-click the *RestaurantViolations* project, and select **Add** > **Machine Learning Model...**.
+1. In **Solution Explorer**, right-click the *RestaurantViolations* project, and select **Add** > **Machine Learning Model**.
 1. Name the `mbconfig` project **RestaurantViolationsPrediction**, and click the **Add** button.
 
 ## Choose a scenario
 
-![Model Builder wizard in Visual Studio](../media/model-builder-scenarios.png)
+:::image type="content" source="../media/model-builder-scenarios-2-0.png" alt-text="Model Builder Scenario Screen" lightbox="../media/model-builder-scenarios-2-0.png":::
 
 To train your model, select from the list of available machine learning scenarios provided by Model Builder. In this case, the scenario is *Data classification*.
 
@@ -179,4 +176,4 @@ To learn more about topics mentioned in this tutorial, visit the following resou
 
 - [Model Builder Scenarios](../automate-training-with-model-builder.md#scenario)
 - [Multiclass Classification](../resources/glossary.md#multiclass-classification)
-- [Multiclass Classification Model Metrics](../resources/metrics.md#evaluation-metrics-for-multi-class-classification)
+- [Multiclass Classification Model Metrics](../resources/metrics.md#evaluation-metrics-for-multi-class-classification-and-text-classification)

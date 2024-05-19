@@ -2,11 +2,13 @@
 title: SYSLIB1003 error
 description: Learn about the diagnostic that generates compile-time error SYSLIB1003.
 ms.date: 05/07/2021
+f1_keywords:
+  - syslib1003
 ---
 
 # SYSLIB1003: Logging method parameter names can't start with an underscore
 
-The name a of parameter of a method annotated with the `LoggerMessageAttribute` starts with an underscore character. This is not allowed as it may result in conflicting symbol names with respect to the automatically generated code.
+The name of a parameter of a method annotated with the `LoggerMessageAttribute` starts with an underscore character. This is not allowed as it may result in conflicting symbol names with respect to the automatically generated code.
 
 ## Workarounds
 

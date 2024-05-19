@@ -17,13 +17,125 @@ available to diagnose application issues when needed. See
 
 ## Collect traces using OpenTelemetry
 
-### Prerequisites
+[OpenTelemetry](https://opentelemetry.io/) is a vendor-neutral open-source project supported by the
+[Cloud Native Computing Foundation](https://www.cncf.io/) that aims to standardize generating and collecting telemetry for
+cloud-native software. In these examples, you'll collect and display distributed trace information on the console. To learn how to
+configure OpenTelemetry to send information elsewhere, see the
+[OpenTelemetry getting started guide](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/docs/trace/getting-started-console/README.md).
+
+### ASP.NET example
+
+#### Prerequisites
+
+- [.NET Core 7.0 SDK](https://dotnet.microsoft.com/download/dotnet) or a later version
+
+#### Create an example application
+
+First, create a new ASP.NET web app to use as the demo application.
+
+```dotnetcli
+dotnet new webapp
+```
+
+This app displays a web page, but no distributed tracing information is collected yet
+if we browse the web page.
+
+#### Configure collection
+
+To use OpenTelemetry, you need to add references to several NuGet packages.
+
+```dotnetcli
+dotnet add package OpenTelemetry --version 1.4.0-rc1
+dotnet add package OpenTelemetry.Exporter.Console --version 1.4.0-rc1
+dotnet add package OpenTelemetry.Extensions.Hosting --version 1.4.0-rc1
+dotnet add package OpenTelemetry.Instrumentation.AspNetCore --version 1.0.0-rc9.10
+```
+
+> [!NOTE]
+> At the time of writing, the 1.4.0 Release Candidate 1 build was the latest version of OpenTelemetry available. Once a final version
+> is available, use that instead.
+
+Next, modify the source code in *Program.cs* so it looks like this:
+
+```csharp
+using OpenTelemetry;
+using OpenTelemetry.Trace;
+
+var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+builder.Services.AddRazorPages();
+builder.Services.AddOpenTelemetry()
+    .WithTracing(builder =>
+    {
+        builder.AddAspNetCoreInstrumentation();
+        builder.AddConsoleExporter();
+    }).StartWithHost();
+
+var app = builder.Build();
+
+// Configure the HTTP request pipeline.
+if (!app.Environment.IsDevelopment())
+{
+    app.UseExceptionHandler("/Error");
+    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+    app.UseHsts();
+}
+
+app.UseHttpsRedirection();
+app.UseStaticFiles();
+
+app.UseRouting();
+
+app.UseAuthorization();
+
+app.MapRazorPages();
+
+app.Run();
+```
+
+Run the app and use a web browser to browse to the web page being hosted. Now that you enabled OpenTelemetry distributed
+tracing, you should see information about the browser web requests printed to the console:
+
+```
+Activity.TraceId:            9c4519ce65a667280daedb3808d376f0
+Activity.SpanId:             727c6a8a6cff664f
+Activity.TraceFlags:         Recorded
+Activity.ActivitySourceName: Microsoft.AspNetCore
+Activity.DisplayName:        /
+Activity.Kind:               Server
+Activity.StartTime:          2023-01-08T01:56:05.4529879Z
+Activity.Duration:           00:00:00.1048255
+Activity.Tags:
+    net.host.name: localhost
+    net.host.port: 5163
+    http.method: GET
+    http.scheme: http
+    http.target: /
+    http.url: http://localhost:5163/
+    http.flavor: 1.1
+    http.user_agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.76
+    http.status_code: 200
+Resource associated with Activity:
+    service.name: unknown_service:demo
+```
+
+All of the OpenTelemetry configuration occurs in the new source lines that start with `builder.Services.AddOpenTelemetry()`. You used
+`.WithTracing(...)` to enable distributed tracing. `AddAspNetCoreInstrumentation()` enabled OpenTelemetry to collect all the
+distributed trace Activities that are produced by the ASP.NET Core web server, and `AddConsoleExporter()` instructs OpenTelemetry
+to send that information to the console. For a less trivial app, you could add more instrumentation libraries to also collect
+tracing for database queries or outbound HTTP requests. You'd also replace the console exporter with an exporter for Jaeger, Zipken, or
+another monitoring service you've chosen to use.
+
+### Console app example
+
+#### Prerequisites
 
 - [.NET Core 2.1 SDK](https://dotnet.microsoft.com/download/dotnet) or a later version
 
-### Create an example application
+#### Create an example application
 
-Before any distributed trace telemetry can be collected, we need to produce it. Often this instrumentation might be
+Before any distributed trace telemetry can be collected, you need to produce it. Often this instrumentation is
 in libraries, but for simplicity, you'll create a small app that has some example instrumentation using
 <xref:System.Diagnostics.ActivitySource.StartActivity%2A>. At this point, no collection has happened, and
 StartActivity() has no side-effect and returns null. See
@@ -95,13 +207,7 @@ Running the app does not collect any trace data yet:
 Example work done
 ```
 
-### Collect using OpenTelemetry
-
-[OpenTelemetry](https://opentelemetry.io/) is a vendor-neutral open-source project supported by the
-[Cloud Native Computing Foundation](https://www.cncf.io/) that aims to standardize generating and collecting telemetry for
-cloud-native software. In this example, you will collect and display distributed trace information on the console though
-OpenTelemetry can be reconfigured to send it elsewhere. For more information, see the
-[OpenTelemetry getting started guide](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/docs/trace/getting-started/README.md).
+#### Configure collection
 
 Add the [OpenTelemetry.Exporter.Console](https://www.nuget.org/packages/OpenTelemetry.Exporter.Console/) NuGet package.
 
@@ -172,7 +278,7 @@ Resource associated with Activity:
 Example work done
 ```
 
-#### Sources
+##### Sources
 
 In the example code, you invoked `AddSource("Sample.DistributedTracing")` so that OpenTelemetry would
 capture the Activities produced by the ActivitySource that was already present in the code:
@@ -183,7 +289,7 @@ static ActivitySource s_source = new ActivitySource("Sample.DistributedTracing")
 
 Telemetry from any ActivitySource can be captured by calling `AddSource()` with the source's name.
 
-#### Exporters
+##### Exporters
 
 The console exporter is helpful for quick examples or local development but in a production deployment
 you will probably want to send traces to a centralized store. OpenTelemetry supports various destinations using different

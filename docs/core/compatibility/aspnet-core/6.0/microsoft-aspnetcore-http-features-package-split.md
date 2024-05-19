@@ -46,7 +46,7 @@ This change was introduced for two reasons:
 
 When upgrading to ASP.NET Core 6.0, remove any packages references for Microsoft.AspNetCore.Http.Features. Add a package reference for Microsoft.Extensions.Features only if required.
 
-For class libraries that need to consume the types from Microsoft.AspNetCore.Http.Features, add a `FrameworkReference` instead:
+For class libraries that need to consume the types from Microsoft.AspNetCore.Http.Features, add a `FrameworkReference` item instead:
 
 ```xml
 <ItemGroup>

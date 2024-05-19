@@ -50,6 +50,7 @@ This setting was introduced in .NET Framework 4.8.
 
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
 - [Run-time settings schema](index.md)
 - [Configuration file schema](../index.md)
 - [Fundamentals of garbage collection](../../../../standard/garbage-collection/fundamentals.md)

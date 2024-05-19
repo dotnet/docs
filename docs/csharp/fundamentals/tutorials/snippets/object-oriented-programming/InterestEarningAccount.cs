@@ -13,7 +13,7 @@ public class InterestEarningAccount : BankAccount
     {
         if (Balance > 500m)
         {
-            decimal interest = Balance * 0.05m;
+            decimal interest = Balance * 0.02m;
             MakeDeposit(interest, DateTime.Now, "apply monthly interest");
         }
     }

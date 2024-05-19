@@ -3,12 +3,14 @@ title: Trimming options
 description: Learn how to control trimming of self-contained apps.
 author: sbomer
 ms.author: svbomer
-ms.date: 08/25/2020
+ms.date: 08/10/2023
 ms.topic: reference
+zone_pivot_groups: dotnet-version
 ---
+
 # Trimming options
 
-The following MSBuild properties and items influence the behavior of [trimmed self-contained deployments](trim-self-contained.md). Some of the options mention `ILLink`, which is the name of the underlying tool that implements trimming. For more information about the underlying tool, see the [Trimmer documentation](https://github.com/dotnet/linker/tree/main/docs).
+The following MSBuild properties and items influence the behavior of [trimmed self-contained deployments](trim-self-contained.md). Some of the options mention `ILLink`, which is the name of the underlying tool that implements trimming. For more information about the underlying tool, see the [Trimmer documentation](https://github.com/dotnet/runtime/tree/main/docs/tools/illink).
 
 Trimming with `PublishTrimmed` was introduced in .NET Core 3.0. The other options are available only in .NET 5 and later versions.
 
@@ -16,17 +18,58 @@ Trimming with `PublishTrimmed` was introduced in .NET Core 3.0. The other option
 
 - `<PublishTrimmed>true</PublishTrimmed>`
 
-  Enable trimming during publish. This also turns off trim-incompatible features and enables [trim analysis](#roslyn-analyzer) during build.
+  Enable trimming during publish. This setting also turns off trim-incompatible features and enables [trim analysis](#roslyn-analyzer) during build. In .NET 8 and later apps, this setting also enables the configuration binding and request delegate source generators.
+
+> [!NOTE]
+> If you specify trimming as enabled from the command line, your debugging experience will differ and you might encounter additional bugs in the final product.
 
 Place this setting in the project file to ensure that the setting applies during `dotnet build`, not just `dotnet publish`.
 
-This setting trims any assemblies that have been configured for trimming. With `Microsoft.NET.Sdk` in .NET 6, this includes any assemblies with `[AssemblyMetadata("IsTrimmable", "True")]`, which is the case for framework assemblies. In .NET 5, framework assemblies from the netcoreapp runtime pack are configured for trimming via `<IsTrimmable>` MSBuild metadata. Other SDKs may define different defaults.
+:::zone pivot="dotnet-8-0,dotnet-7-0"
 
-Starting in .NET 6, this setting also enables the trim-compatibility [Roslyn analyzer](#roslyn-analyzer) and disables [features that are incompatible with trimming](#framework-features-disabled-when-trimming).
+This setting enables trimming and trims all assemblies by default. In .NET 6, only assemblies that opted-in to trimming via `[AssemblyMetadata("IsTrimmable", "True")]` were trimmed by default. You can return to the previous behavior by using `<TrimMode>partial</TrimMode>`.
+
+:::zone-end
+
+:::zone pivot="dotnet-6-0"
+
+This setting trims any assemblies that have been configured for trimming. With `Microsoft.NET.Sdk` in .NET 6, this includes any assemblies with `[AssemblyMetadata("IsTrimmable", "True")]`, which is the case for the .NET runtime assemblies. In .NET 5, assemblies from the netcoreapp runtime pack are configured for trimming via `<IsTrimmable>` MSBuild metadata. Other SDKs might define different defaults.
+
+:::zone-end
+
+This setting also enables the trim-compatibility [Roslyn analyzer](#roslyn-analyzer) and disables [features that are incompatible with trimming](#framework-features-disabled-when-trimming).
 
 ## Trimming granularity
 
-The following granularity settings control how aggressively unused IL is discarded. This can be set as a property affecting all trimmer input assemblies, or as metadata on an [individual assembly](#trimmed-assemblies), which overrides the property setting.
+:::zone pivot="dotnet-8-0,dotnet-7-0"
+
+Use the `TrimMode` property to set the trimming granularity to either `partial` or `full`. The default setting for console apps (and, starting in .NET 8, Web SDK apps) is `full`:
+
+```csharp
+<TrimMode>full</TrimMode>
+```
+
+To only trim assemblies that have opted-in to trimming, set the property to `partial`:
+
+```csharp
+<TrimMode>partial</TrimMode>
+```
+
+If you change the trim mode to `partial`, you can opt-in individual assemblies to trimming by using a `<TrimmableAssembly>` MSBuild item.
+
+```xml
+<ItemGroup>
+  <TrimmableAssembly Include="MyAssembly" />
+</ItemGroup>
+```
+
+This is equivalent to setting `[AssemblyMetadata("IsTrimmable", "True")]` when building the assembly.
+
+:::zone-end
+
+:::zone pivot="dotnet-6-0"
+
+The following granularity settings control how aggressively unused IL is discarded. This can be set as a property affecting all trimmer input assemblies, or as metadata on an [individual assembly](#trimming-settings-for-individual-assemblies), which overrides the property setting.
 
 - `<TrimMode>link</TrimMode>`
 
@@ -48,17 +91,9 @@ In .NET 6+, `PublishTrimmed` trims assemblies with the following assembly-level 
 
 The framework libraries have this attribute. In .NET 6+, you can also opt in to trimming for a library without this attribute, specifying the assembly by name (without the `.dll` extension).
 
-```xml
-<ItemGroup>
-  <TrimmableAssembly Include="MyAssembly" />
-</ItemGroup>
-```
+## Trimming settings for individual assemblies
 
-This is equivalent to setting MSBuild metadata `<IsTrimmable>true</IsTrimmable>` for the assembly in `ManagedAssemblyToLink` (see below).
-
-## Trimmed assemblies
-
-When publishing a trimmed app, the SDK computes an `ItemGroup` called `ManagedAssemblyToLink` that represents the set of files to be processed for trimming. `ManagedAssemblyToLink` may have metadata that controls the trimming behavior per assembly. To set this metadata, create a target that runs before the built-in `PrepareForILLink` target. The following example shows how to enable trimming of `MyAssembly`.
+When publishing a trimmed app, the SDK computes an `ItemGroup` called `ManagedAssemblyToLink` that represents the set of files to be processed for trimming. `ManagedAssemblyToLink` might have metadata that controls the trimming behavior per assembly. To set this metadata, create a target that runs before the built-in `PrepareForILLink` target. The following example shows how to enable trimming of `MyAssembly`.
 
 ```xml
 <Target Name="ConfigureTrimming"
@@ -71,9 +106,9 @@ When publishing a trimmed app, the SDK computes an `ItemGroup` called `ManagedAs
 </Target>
 ```
 
-You can also use this to override the trimming behavior specified by the library author, by setting `<IsTrimmable>false</IsTrimmable>` for an assembly with `[AssemblyMetadata("IsTrimmable", "True"])`.
+You can also use this target to override the trimming behavior specified by the library author, by setting `<IsTrimmable>false</IsTrimmable>` for an assembly with `[AssemblyMetadata("IsTrimmable", "True"])`.
 
-Do not add or remove items to/from `ManagedAssemblyToLink`, because the SDK computes this set during publish and expects it not to change. The supported metadata is:
+Do not add or remove items from `ManagedAssemblyToLink`, because the SDK computes this set during publish and expects it not to change. The supported metadata is:
 
 - `<IsTrimmable>true</IsTrimmable>`
 
@@ -81,15 +116,17 @@ Do not add or remove items to/from `ManagedAssemblyToLink`, because the SDK comp
 
 - `<TrimMode>copyused</TrimMode>` or `<TrimMode>link</TrimMode>`
 
-  Control the [trimming granularity](#trimming-granularity) of this assembly. This takes precedence over the global `TrimMode`. Setting `TrimMode` on an assembly implies `<IsTrimmable>true</IsTrimmable>`.
+  Control the [trimming granularity](#trimming-granularity) of this assembly. This metadata takes precedence over the global `TrimMode`. Setting `TrimMode` on an assembly implies `<IsTrimmable>true</IsTrimmable>`.
 
-- `<TrimmerSingleWarn>True</TrimmerSingleWarn>` or `<TrimmerSingleWarn>False</TrimmerSingleWarn>`
+- `<TrimmerSingleWarn>True</TrimmerSingleWarn>`
 
   Control whether to show [single warnings](#show-detailed-warnings) for this assembly.
 
+:::zone-end
+
 ## Root assemblies
 
-All assemblies that do not have `<IsTrimmable>true</IsTrimmable>` are considered roots for the analysis, which means that they and all of their statically understood dependencies will be kept. Additional assemblies may be "rooted" by name (without the `.dll` extension):
+If an assembly is not trimmed, it's considered "rooted", which means that it and all of its statically understood dependencies will be kept. Additional assemblies can be "rooted" by name (without the `.dll` extension):
 
 ```xml
 <ItemGroup>
@@ -99,7 +136,7 @@ All assemblies that do not have `<IsTrimmable>true</IsTrimmable>` are considered
 
 ## Root descriptors
 
-Another way to specify roots for analysis is using an XML file that uses the trimmer [descriptor format](https://github.com/dotnet/linker/blob/main/docs/data-formats.md#descriptor-format). This lets you root specific members instead of a whole assembly.
+Another way to specify roots for analysis is using an XML file that uses the trimmer [descriptor format](https://github.com/dotnet/runtime/blob/main/docs/tools/illink/data-formats.md#descriptor-format). This lets you root specific members instead of a whole assembly.
 
 ```xml
 <ItemGroup>
@@ -107,7 +144,7 @@ Another way to specify roots for analysis is using an XML file that uses the tri
 </ItemGroup>
 ```
 
-For example, `MyRoots.xml` might root a specific method that is dynamically accessed by the application:
+For example, `MyRoots.xml` might root a specific method that's dynamically accessed by the application:
 
 ```xml
 <linker>
@@ -125,7 +162,7 @@ For example, `MyRoots.xml` might root a specific method that is dynamically acce
 
   Enable trim analysis warnings.
 
-Trimming removes IL that is not statically reachable. Apps that use reflection or other patterns that create dynamic dependencies may be broken by trimming. To warn about such patterns, set `<SuppressTrimAnalysisWarnings>` to `false`. This will include warnings about the entire app, including your own code, library code, and framework code.
+Trimming removes IL that's not statically reachable. Apps that use reflection or other patterns that create dynamic dependencies might be broken by trimming. To warn about such patterns, set `<SuppressTrimAnalysisWarnings>` to `false`. This setting will surface warnings about the entire app, including your own code, library code, and framework code.
 
 ## Roslyn analyzer
 
@@ -135,21 +172,13 @@ Setting `PublishTrimmed` in .NET 6+ also enables a Roslyn analyzer that shows a 
 
   Enable a Roslyn analyzer for a subset of trim analysis warnings.
 
-## Warning versions
-
-Trim analysis respects the [`AnalysisLevel`](../../project-sdk/msbuild-props.md#analysislevel) property that controls the version of analysis warnings across the SDK. The `ILLinkWarningLevel` property controls the version of trim analysis warnings independently (similar to `WarningLevel` for the compiler):
-
-- `<ILLinkWarningLevel>5</ILLinkWarningLevel>`
-
-  Emit only warnings of the given level or lower. To include all warning versions, set the value to `9999`.
-
 ## Suppress warnings
 
-You can suppress individual [warning codes](https://github.com/dotnet/linker/blob/main/docs/error-codes.md#warning-codes) using the usual MSBuild properties respected by the toolchain, including `NoWarn`, `WarningsAsErrors`, `WarningsNotAsErrors`, and `TreatWarningsAsErrors`. There is an additional option that controls the ILLink warn-as-error behavior independently:
+You can suppress individual [warning codes](https://github.com/dotnet/runtime/blob/main/docs/tools/illink/error-codes.md#warning-codes) using the usual MSBuild properties respected by the toolchain, including `NoWarn`, `WarningsAsErrors`, `WarningsNotAsErrors`, and `TreatWarningsAsErrors`. There's an additional option that controls the ILLink warn-as-error behavior independently:
 
 - `<ILLinkTreatWarningsAsErrors>false</ILLinkTreatWarningsAsErrors>`
 
-  Don't treat ILLink warnings as errors. This may be useful to avoid turning trim analysis warnings into errors when treating compiler warnings as errors globally.
+  Don't treat ILLink warnings as errors. This might be useful to avoid turning trim analysis warnings into errors when treating compiler warnings as errors globally.
 
 ## Show detailed warnings
 
@@ -159,8 +188,6 @@ In .NET 6+, trim analysis produces at most one warning for each assembly that co
 
   Show all detailed warnings, instead of collapsing them to a single warning per assembly.
 
-The defaults show detailed warnings for the project assembly and `ProjectReference` items. `<TrimmerSingleWarn>` can also be set as metadata on an [individual assembly](#trimmed-assemblies) to control the warning behavior for that assembly only.
-
 ## Remove symbols
 
 Symbols are usually trimmed to match the trimmed assemblies. You can also remove all symbols:
@@ -169,7 +196,7 @@ Symbols are usually trimmed to match the trimmed assemblies. You can also remove
 
   Remove symbols from the trimmed application, including embedded PDBs and separate PDB files. This applies to both the application code and any dependencies that come with symbols.
 
-The SDK also makes it possible to disable debugger support using the property `DebuggerSupport`. When debugger support is disabled, trimming will remove symbols automatically (`TrimmerRemoveSymbols` will default to true).
+The SDK also makes it possible to disable debugger support using the property `DebuggerSupport`. When debugger support is disabled, trimming removes symbols automatically (`TrimmerRemoveSymbols` will default to true).
 
 ## Trimming framework library features
 
@@ -185,7 +212,7 @@ Several feature areas of the framework libraries come with trimmer directives th
 
 - `<EnableUnsafeBinaryFormatterSerialization>false</EnableUnsafeBinaryFormatterSerialization>`
 
-  Remove BinaryFormatter serialization support. For more information, see [BinaryFormatter serialization methods are obsolete](../../compatibility/core-libraries/5.0/binaryformatter-serialization-obsolete.md).
+  Remove BinaryFormatter serialization support. For more information, see [BinaryFormatter serialization methods are obsolete](../../compatibility/serialization/5.0/binaryformatter-serialization-obsolete.md).
 
 - `<EnableUnsafeUTF7Encoding>false</EnableUnsafeUTF7Encoding>`
 
@@ -207,19 +234,23 @@ Several feature areas of the framework libraries come with trimmer directives th
 
   Remove metadata update-specific logic related to hot reload.
 
+- `<StackTraceSupport>false</StackTraceSupport>` (.NET 8+)
+
+  Remove support for generating stack traces (for example, <xref:System.Environment.StackTrace?displayProperty=nameWithType>, or <xref:System.Exception.ToString%2A?displayProperty=nameWithType>) by the runtime. The amount of information that will be removed from stack trace strings may depend on other deployment options. This option does not affect stack traces generated by debuggers.
+
 - `<UseNativeHttpHandler>true</UseNativeHttpHandler>`
 
   Use the default platform implementation of HttpMessageHandler for Android/iOS and remove the managed implementation.
 
 - `<UseSystemResourceKeys>true</UseSystemResourceKeys>`
 
-  Strip exception messages for `System.*` assemblies. When an exception is thrown from a `System.*` assembly, the message will be a simplified resource ID instead of the full message.
+  Strip exception messages for `System.*` assemblies. When an exception is thrown from a `System.*` assembly, the message is a simplified resource ID instead of the full message.
 
-These properties cause the related code to be trimmed and also disable features via the [runtimeconfig](../../runtime-config/index.md) file. For more information about these properties, including the corresponding *runtimeconfig* options, see [feature switches](https://github.com/dotnet/runtime/blob/main/docs/workflow/trimming/feature-switches.md). Some SDKs may have default values for these properties.
+These properties cause the related code to be trimmed and also disable features via the [runtimeconfig](../../runtime-config/index.md) file. For more information about these properties, including the corresponding *runtimeconfig* options, see [feature switches](https://github.com/dotnet/runtime/blob/main/docs/workflow/trimming/feature-switches.md). Some SDKs might have default values for these properties.
 
 ## Framework features disabled when trimming
 
-The following features are incompatible with trimming because they require code that is not statically referenced. These are disabled by default in trimmed apps.
+The following features are incompatible with trimming because they require code that's not statically referenced. These features are disabled by default in trimmed apps.
 
 > [!WARNING]
 > Enable these features at your own risk. They are likely to break trimmed apps without extra work to preserve the dynamically referenced code.
@@ -230,7 +261,7 @@ The following features are incompatible with trimming because they require code 
 
 - `<CustomResourceTypesSupport>`
 
-  Use of custom resource types is not supported. ResourceManager code paths that use reflection for custom resource types is trimmed.
+  Use of custom resource types isn't supported. ResourceManager code paths that use reflection for custom resource types are trimmed.
 
 - `<EnableCppCLIHostActivation>`
 
@@ -242,4 +273,4 @@ The following features are incompatible with trimming because they require code 
 
 - `<StartupHookSupport>`
 
-  Running code before `Main` with `DOTNET_STARTUP_HOOKS` is not supported. For more information, see [host startup hook](https://github.com/dotnet/runtime/blob/main/docs/design/features/host-startup-hook.md).
+  Running code before `Main` with `DOTNET_STARTUP_HOOKS` isn't supported. For more information, see [host startup hook](https://github.com/dotnet/runtime/blob/main/docs/design/features/host-startup-hook.md).

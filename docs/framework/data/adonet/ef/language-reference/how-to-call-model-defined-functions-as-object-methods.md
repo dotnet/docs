@@ -47,7 +47,16 @@ This topic describes how to call a model-defined function as a method on an <xre
 
  Consider the conceptual model function below that returns product revenue for a specified product. (For information about adding the function to your conceptual model, see [How to: Define Custom Functions in the Conceptual Model](/previous-versions/dotnet/netframework-4.0/dd456812(v=vs.100)).)
 
- [!code-xml[DP L2E Methods on ObjectContext#4](../../../../../../samples/snippets/xml/VS_Snippets_Data/dp l2e methods on objectcontext/xml/adventureworks.edmx#4)]
+```xml
+<Function Name="GetProductRevenue" ReturnType="Edm.Decimal">
+  <Parameter Name="productID" Type="Edm.Int32" />
+  <DefiningExpression>
+    SUM( SELECT VALUE((s.UnitPrice - s.UnitPriceDiscount)  * s.OrderQty)
+    FROM AdventureWorksEntities.SalesOrderDetails as s
+    WHERE s.ProductID = productID)
+  </DefiningExpression>
+</Function>
+```
 
 ## Example 2
 
@@ -67,7 +76,17 @@ This topic describes how to call a model-defined function as a method on an <xre
 
  The following example demonstrates how to call a model-defined function that returns a collection (as an <xref:System.Linq.IQueryable%601> object). Consider the conceptual model function below that returns all the `SalesOrderDetails` for a given product ID.
 
- [!code-xml[DP L2E Methods on ObjectContext#7](../../../../../../samples/snippets/xml/VS_Snippets_Data/dp l2e methods on objectcontext/xml/adventureworks.edmx#7)]
+```xml
+<Function Name="GetDetailsById" 
+          ReturnType="Collection(AdventureWorksModel.SalesOrderDetail)">
+  <Parameter Name="productID" Type="Edm.Int32" />
+  <DefiningExpression>
+    SELECT VALUE s
+    FROM AdventureWorksEntities.SalesOrderDetails AS s
+    WHERE s.ProductID = productID
+  </DefiningExpression>
+</Function>
+```
 
 ## Example 5
 
@@ -92,9 +111,17 @@ This topic describes how to call a model-defined function as a method on an <xre
 > [!NOTE]
 > When you call a model-defined function as a static method on a custom class, the model-defined function must accept a collection and return an aggregation of values in the collection.
 
- Consider the conceptual model function below that returns product revenue for a SalesOrderDetail collection. (For information about adding the function to your conceptual model, see [How to: Define Custom Functions in the Conceptual Model](/previous-versions/dotnet/netframework-4.0/dd456812(v=vs.100)).).
+ Consider the conceptual model function below that returns product revenue for a SalesOrderDetail collection. (For information about adding the function to your conceptual model, see [How to: Define Custom Functions in the Conceptual Model](/previous-versions/dotnet/netframework-4.0/dd456812(v=vs.100)).)
 
- [!code-xml[DP L2E Methods on ObjectContext#1](../../../../../../samples/snippets/xml/VS_Snippets_Data/dp l2e methods on objectcontext/xml/adventureworks.edmx#1)]
+```xml
+<Function Name="GetProductRevenue" ReturnType="Edm.Decimal">
+  <Parameter Name="details" Type="Collection(AdventureWorksModel.SalesOrderDetail)" />
+  <DefiningExpression>
+    SUM( SELECT VALUE((s.UnitPrice - s.UnitPriceDiscount)  * s.OrderQty)
+    FROM details as s)
+  </DefiningExpression>
+</Function>
+```
 
 ## Example 8
 

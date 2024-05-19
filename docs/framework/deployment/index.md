@@ -149,7 +149,7 @@ The .NET Framework provides the following options for distributing applications:
 
 To determine where to deploy your application's assemblies so they can be found by the runtime, see [How the Runtime Locates Assemblies](how-the-runtime-locates-assemblies.md).
 
-Security considerations can also affect how you deploy your application. Security permissions are granted to managed code according to where the code is located. Deploying an application or component to a location where it receives little trust, such as the Internet, limits what the application or component can do. For more information about deployment and security considerations, see [Code Access Security Basics](/previous-versions/dotnet/framework/code-access-security/code-access-security-basics).
+Security considerations can also affect how you deploy your application. Security permissions are granted to managed code according to where the code is located. Deploying an application or component to a location where it receives little trust, such as the internet, limits what the application or component can do.
 
 ## Related Topics
 

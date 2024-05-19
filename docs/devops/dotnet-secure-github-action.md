@@ -5,7 +5,6 @@ author: IEvangelist
 ms.author: dapine
 ms.date: 02/16/2022
 ms.topic: quickstart
-recommendations: false
 ---
 
 # Quickstart: Create a security scan GitHub workflow
@@ -14,7 +13,7 @@ In this quickstart, you will learn how to create a CodeQL GitHub workflow to aut
 
 > In CodeQL, code is treated as data. Security vulnerabilities, bugs, and other errors are modeled as queries that can be executed against databases extracted from code.
 >
-> &mdash; [GitHub CodeQL: About](https://codeql.github.com/docs/codeql-overview/about-codeql)
+> - [GitHub CodeQL: About](https://codeql.github.com/docs/codeql-overview/about-codeql)
 
 [!INCLUDE [prerequisites](includes/prerequisites.md)]
 
@@ -35,7 +34,7 @@ In the preceding workflow composition:
   :::code language="yml" source="snippets/dotnet-secure-github-action/codeql-analysis.yml" range="3-15":::
 
   - Triggered when a `push` or `pull_request` occurs on the `main` branch where any files changed ending with the *.cs* or *.csproj* file extensions.
-  - As a cron job (on a schedule) &mdash; to run at 8:00 UTC every Thursday.
+  - As a cron job (on a schedule)&mdash;to run at 8:00 UTC every Thursday.
 
 - The `jobs` node builds out the steps for the workflow to take.
 

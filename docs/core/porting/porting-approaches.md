@@ -7,6 +7,10 @@ ms.date: 06/10/2021
 ---
 # Create a porting plan
 
+We recommend using the Visual Studio [.NET Upgrade Assistant](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.upgradeassistant) to update .NET Framework code to the latest .NET versions. For more information see the blog [Upgrading your .NET projects with Visual Studio](https://devblogs.microsoft.com/dotnet/upgrade-assistant-now-in-visual-studio/).
+
+[!INCLUDE[](~/includes/deprecating-api-port.md)]
+
 Before you jump straight into the code, take the time to go through the recommended pre-migration steps. This article gives you insight into the kinds of issues you may come across, and helps you decide on an approach that makes the most sense.
 
 ## Port your code
@@ -76,7 +80,7 @@ The best way to make sure everything works when you've ported your code is to te
   - [Getting Started](https://xunit.net/docs/getting-started/netcore/cmdline)
   - [Tool to convert an MSTest project to xUnit](https://github.com/dotnet/codeformatter/tree/main/src/XUnitConverter)
 - [NUnit](https://nunit.org/)
-  - [Getting Started](https://github.com/nunit/docs/wiki/Installation)
+  - [Getting Started](https://docs.nunit.org/articles/nunit/getting-started/installation)
   - [Blog post about migrating from MSTest to NUnit](https://www.florian-rappl.de/News/Page/275/convert-mstest-to-nunit)
 - [MSTest](/visualstudio/test/unit-test-basics)
 

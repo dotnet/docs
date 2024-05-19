@@ -17,9 +17,9 @@ This article is a high-level overview of EventPipe. It describes when and how to
 
 EventPipe aggregates events emitted by runtime components - for example, the Just-In-Time compiler or the garbage collector - and events written from [EventSource](xref:System.Diagnostics.Tracing.EventSource) instances in the libraries and user code.
 
-The events are then serialized and can be written directly to a file or consumed through a Diagnostics Port from out-of-proces. On Windows, Diagnostic Ports are implemented as `NamedPipe`s. On non-Windows platforms, such as Linux or macOS, it is implemented using Unix Domain Sockets. For more information about the Diagnostics Port and how to interact with it via its custom inter-process communication protocol, see the [diagnostics IPC protocol documentation](https://github.com/dotnet/diagnostics/blob/main/documentation/design-docs/ipc-protocol.md).
+The events are then serialized in the `.nettrace` file format and can be written directly to a file or streamed through a [diagnostic port](./diagnostic-port.md) for out-of-process consumption.
 
-EventPipe then writes the serialized events in the `.nettrace` file format, either as a stream via Diagnostic Ports or directly to a file. To learn more about the EventPipe serialization format, refer to the [EventPipe format documentation](https://github.com/microsoft/perfview/blob/main/src/TraceEvent/EventPipe/EventPipeFormat.md).
+To learn more about the EventPipe serialization format, refer to the [EventPipe format documentation](https://github.com/microsoft/perfview/blob/main/src/TraceEvent/EventPipe/EventPipeFormat.md).
 
 ## EventPipe vs. ETW/LTTng
 

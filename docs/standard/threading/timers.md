@@ -14,10 +14,11 @@ author: "pkulikov"
 ---
 # Timers
 
-.NET provides two timers to use in a multithreaded environment:
+.NET provides three timers to use in a multithreaded environment:
 
 - <xref:System.Threading.Timer?displayProperty=nameWithType>, which executes a single callback method on a <xref:System.Threading.ThreadPool> thread at regular intervals.
 - <xref:System.Timers.Timer?displayProperty=nameWithType>, which by default raises an event on a <xref:System.Threading.ThreadPool> thread at regular intervals.
+- <xref:System.Threading.PeriodicTimer?displayProperty=nameWithType>, which allows the caller to perform work after awaiting individual ticks of the timer.
 
 > [!NOTE]
 > Some .NET implementations may include additional timers:
@@ -47,9 +48,20 @@ Another timer that can be used in a multithreaded environment is <xref:System.Ti
 When you create a <xref:System.Timers.Timer?displayProperty=nameWithType> object, you may specify the time interval in which to raise an <xref:System.Timers.Timer.Elapsed> event. Use the <xref:System.Timers.Timer.Enabled%2A> property to indicate if a timer should raise an <xref:System.Timers.Timer.Elapsed> event. If you need an <xref:System.Timers.Timer.Elapsed> event to be raised only once after the specified interval has elapsed, set the <xref:System.Timers.Timer.AutoReset%2A> to `false`. The default value of the <xref:System.Timers.Timer.AutoReset%2A> property is `true`, which means that an <xref:System.Timers.Timer.Elapsed> event is raised regularly at the interval defined by the <xref:System.Timers.Timer.Interval%2A> property.
 
 For more information and examples, see <xref:System.Timers.Timer?displayProperty=nameWithType>.
+
+## The System.Threading.PeriodicTimer class
+
+The <xref:System.Threading.PeriodicTimer?displayProperty=nameWithType> class enables you to await individual ticks of a specified interval, performing work after calling <xref:System.Threading.PeriodicTimer.WaitForNextTickAsync%2A?displayProperty=nameWithType>.
+
+When you create a <xref:System.Threading.PeriodicTimer?displayProperty=nameWithType> object, you specify a <xref:System.TimeSpan> that determines the length of time between each tick of the timer. Instead of passing a callback or setting an event handler as in the previous timer classes, you perform work directly in scope, awaiting <xref:System.Threading.PeriodicTimer.WaitForNextTickAsync%2A> to advance the timer by the specified interval.
+
+The <xref:System.Threading.PeriodicTimer.WaitForNextTickAsync%2A> method returns a [`ValueTask<bool>`](xref:System.Threading.Tasks.ValueTask%601); `true` upon successful firing of the timer, and `false` when the timer has been canceled by calling <xref:System.Threading.PeriodicTimer.Dispose%2A?displayProperty=nameWithType>. <xref:System.Threading.PeriodicTimer.WaitForNextTickAsync%2A> optionally accepts a <xref:System.Threading.CancellationToken>, which results in a <xref:System.Threading.Tasks.TaskCanceledException> when a cancellation has been requested.
+
+For more information, see <xref:System.Threading.PeriodicTimer?displayProperty=nameWithType>.
   
 ## See also
 
 - <xref:System.Threading.Timer?displayProperty=nameWithType>
 - <xref:System.Timers.Timer?displayProperty=nameWithType>
+- <xref:System.Threading.PeriodicTimer?displayProperty=nameWithType>
 - [Threading Objects and Features](threading-objects-and-features.md)

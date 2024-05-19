@@ -2,15 +2,15 @@
 description: "Learn more about: HttpStatusDescription class"
 title: HttpStatusDescription class (System.Net)
 ms.date: 06/12/2020
-ms.technology: dotnet-networking
-topic_type: 
+ms.subservice: networking
+topic_type:
   - apiref
-api_name: 
+api_name:
   - System.Net.HttpStatusDescription
   - System.Net.HttpStatusDescription.Get
-api_location: 
+api_location:
   - System.dll
-api_type: 
+api_type:
   - Assembly
 ---
 # HttpStatusDescription class

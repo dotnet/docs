@@ -37,7 +37,7 @@ A configuration element used to configure the <xref:System.ServiceModel.UdpBindi
                   maxNameTableCharCount="Integer"
                   maxStringContentLength="Integer" />
   </binding>
-</basicHttpBinding>
+</udpBinding>
 ```  
   
 ## Attributes and Elements  

@@ -93,6 +93,7 @@ The following example enables background garbage collection:
 
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
 - [Runtime Settings Schema](index.md)
 - [Configuration File Schema](../index.md)
 - [Fundamentals of Garbage Collection](../../../../standard/garbage-collection/fundamentals.md)

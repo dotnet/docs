@@ -62,14 +62,8 @@ namespace ca1060
     //<snippet4>
     public static class Cursor
     {
-        // Callers do not require UnmanagedCode permission, however,       
-        // they do require UIPermissionWindow.AllWindows.    
         public static void Hide()
         {
-            // Need to demand an appropriate permission           
-            // in place of UnmanagedCode permission as            
-            // ShowCursor is not considered a safe method.       
-            new UIPermission(UIPermissionWindow.AllWindows).Demand();
             UnsafeNativeMethods.ShowCursor(false);
         }
     }

@@ -1,5 +1,5 @@
 ---
-title: "How to raise base class events in derived classes - C# Programming Guide"
+title: "How to raise base class events in derived classes"
 description: Learn how to raise base class events in derived classes. See a code example and view additional available resources.
 ms.topic: how-to
 ms.date: 07/20/2015
@@ -22,7 +22,6 @@ The following simple example shows the standard way to declare events in a base 
   
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Events](./index.md)
 - [Delegates](../delegates/index.md)
 - [Access Modifiers](../classes-and-structs/access-modifiers.md)

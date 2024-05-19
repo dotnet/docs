@@ -1,16 +1,14 @@
 ---
 title: Get started with Azure and .NET
 description: Learn the basics you need to know about Azure and .NET.
-ms.date: 05/05/2021
+ms.date: 03/23/2023
 ms.topic: overview
-ms.custom: devx-track-dotnet
-ms.author: daberry
-author: daberry
+ms.custom: devx-track-dotnet, engagement-fy23
 ---
 
 # Introduction to Azure and .NET
 
-Azure is a cloud platform designed to simplify the process of building modern applications.  Whether you choose to host your applications entirely in Azure or extend your on-premises applications with Azure services, Azure helps you create applications that are scalable, reliable, and maintainable.  With extensive support in tools you already use like Visual Studio and Visual Studio Code and a comprehensive SDK library, Azure is designed to make you, the .NET developer productive right from the start.
+Azure is a cloud platform designed to simplify the process of building modern applications.  Whether you choose to host your applications entirely in Azure or extend your on-premises applications with Azure services, Azure helps you create applications that are scalable, reliable, and maintainable.  With extensive support in tools you already use like Visual Studio and Visual Studio Code and a comprehensive SDK library, Azure is designed to make you, the .NET developer, productive right from the start.
 
 ## Application development scenarios on Azure
 

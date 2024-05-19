@@ -60,7 +60,7 @@ The analyzers examine the code in your solution and surface warnings with a `CA`
 
 - [CA2235: Mark all non-serializable fields](../fundamentals/code-analysis/quality-rules/ca2235.md)
 
-- [CA2237: Mark ISerializable types with serializable](../fundamentals/code-analysis/quality-rules/ca2237.md)
+- [CA2237: Mark ISerializable types with SerializableAttribute](../fundamentals/code-analysis/quality-rules/ca2237.md)
 
 - [CA3075: Insecure DTD processing in XML](../fundamentals/code-analysis/quality-rules/ca3075.md)
 

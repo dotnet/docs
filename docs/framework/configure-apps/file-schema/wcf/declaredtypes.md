@@ -34,7 +34,7 @@ Contains the known types that the <xref:System.Runtime.Serialization.DataContrac
           </knownType>
         </add>
       </declaredTypes>
-    <dataContractSerializer>
+    </dataContractSerializer>
   </system.runtime.serialization>
 </configuration>
 ```  
@@ -84,7 +84,7 @@ Contains the known types that the <xref:System.Runtime.Serialization.DataContrac
           </knownType>
         </add>
       </declaredTypes>
-    <dataContractSerializer>
+    </dataContractSerializer>
   </system.runtime.serialization>
 </configuration>
 ```  

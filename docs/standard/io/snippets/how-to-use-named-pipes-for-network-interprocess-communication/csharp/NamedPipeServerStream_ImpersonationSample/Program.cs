@@ -12,14 +12,14 @@ public class PipeServer
     public static void Main()
     {
         int i;
-        Thread[] servers = new Thread[numThreads];
+        Thread?[] servers = new Thread[numThreads];
 
         Console.WriteLine("\n*** Named pipe server stream with impersonation example ***\n");
         Console.WriteLine("Waiting for client connect...\n");
         for (i = 0; i < numThreads; i++)
         {
             servers[i] = new Thread(ServerThread);
-            servers[i].Start();
+            servers[i]?.Start();
         }
         Thread.Sleep(250);
         while (i > 0)
@@ -28,9 +28,9 @@ public class PipeServer
             {
                 if (servers[j] != null)
                 {
-                    if (servers[j].Join(250))
+                    if (servers[j]!.Join(250))
                     {
-                        Console.WriteLine("Server thread[{0}] finished.", servers[j].ManagedThreadId);
+                        Console.WriteLine("Server thread[{0}] finished.", servers[j]!.ManagedThreadId);
                         servers[j] = null;
                         i--;    // decrement the thread watch count
                     }
@@ -40,7 +40,7 @@ public class PipeServer
         Console.WriteLine("\nServer threads exhausted, exiting.");
     }
 
-    private static void ServerThread(object data)
+    private static void ServerThread(object? data)
     {
         NamedPipeServerStream pipeServer =
             new NamedPipeServerStream("testpipe", PipeDirection.InOut, numThreads);

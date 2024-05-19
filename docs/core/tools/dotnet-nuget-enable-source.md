@@ -31,8 +31,6 @@ The `dotnet nuget enable source` command enables an existing source in your NuGe
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
-
 [!INCLUDE [configfile](../../../includes/cli-configfile.md)]
 
 ## Examples

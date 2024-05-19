@@ -1,11 +1,10 @@
-﻿using System;
-using System.Text.Json;
+﻿using System.Text.Json;
 
 public class Example
 {
     private class Product
     {
-        public string Name { get; set; }
+        public string? Name { get; set; }
         public DateTime ExpiryDate { get; set; }
     }
 
@@ -14,7 +13,7 @@ public class Example
         string json = @"{""Name"":""Banana"",""ExpiryDate"":""26/07/2019""}";
         try
         {
-            Product _ = JsonSerializer.Deserialize<Product>(json);
+            Product _ = JsonSerializer.Deserialize<Product>(json)!;
         }
         catch (JsonException e)
         {

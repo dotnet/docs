@@ -1,6 +1,6 @@
 ---
 description: "extern alias - C# Reference"
-title: "extern alias - C# Reference"
+title: "extern alias"
 ms.date: 07/20/2015
 f1_keywords: 
   - "alias_CSharpKeyword"
@@ -61,8 +61,6 @@ using Class1V2 = GridV2::Namespace.Class1;
   
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](./index.md)
 - [:: Operator](../operators/namespace-alias-qualifier.md)
 - [**References** (C# Compiler Options)](../compiler-options/inputs.md#references)

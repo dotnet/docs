@@ -3,6 +3,8 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 
+namespace Run;
+
 public class Example
 {
    public static void Main()
@@ -18,7 +20,10 @@ public class Example
       taskA.Wait();
    }
 }
-// The example displays output like the following:
+// The example displays output as follows:
 //       Hello from thread 'Main'.
 //       Hello from taskA.
+// or
+//       Hello from taskA.
+//       Hello from thread 'Main'.
 // </Snippet2>

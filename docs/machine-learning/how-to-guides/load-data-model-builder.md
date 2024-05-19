@@ -35,7 +35,7 @@ You can load text or numeric data from a file into Model Builder. It accepts com
 1. Select the **Browse** button next to the text box, and use File Explorer to browse and select the data file.
 1. Choose a category in the **Column to predict (Label)** dropdown.
 
-    > ![NOTE]
+    > [!NOTE]
     > **(Optional) data classification scenarios**: If the data type of your label column (the value in the "Column to predict (Label)" dropdown) is set to Boolean (True/False), a binary classification algorithm is used in your model training pipeline. Otherwise, a multiclass classification trainer is used. Use **Advanced data options** to modify the data type for your label column and inform Model Builder which type of trainer it should use for your data.  
 
 1. Update the data in the **Advanced data options** link to set column settings or to update the data formatting.
@@ -59,7 +59,7 @@ To load data from a SQL Server database file into Model Builder:
 1. Choose the dataset name from the **Table Name** dropdown.
 1. From the **Column to predict (Label)** dropdown, choose the data category on which you want to make a prediction.
 
-    > ![NOTE]
+    > [!NOTE]
     > **(Optional) data classification scenarios**: If the data type of your label column (the value in the "Column to predict (Label)" dropdown) is set to Boolean (True/False), a binary classification algorithm is used in your model training pipeline. Otherwise, a multiclass classification trainer is used. Use **Advanced data options** to modify the data type for your label column and inform Model Builder which type of trainer it should use for your data.
 
 1. Update the data in the **Advanced data options** link to set column settings or to update the data formatting.
@@ -79,7 +79,7 @@ To load data from a SQL Server database connection into Model Builder:
 1. Choose the dataset name from the **Table Name** dropdown.
 1. From the **Column to predict (Label)** dropdown, choose the data category on which you want to make a prediction.
 
-    > ![NOTE]
+    > [!NOTE]
     > **(Optional) data classification scenarios**: If the data type of your label column (the value in the "Column to predict (Label)" dropdown) is set to Boolean (True/False), a binary classification algorithm is used in your model training pipeline. Otherwise, a multiclass classification trainer is used. Use **Advanced data options** to modify the data type for your label column and inform Model Builder which type of trainer it should use for your data.
 
 1. Update the data in the **Advanced data options** link to set column settings or to update the data formatting.

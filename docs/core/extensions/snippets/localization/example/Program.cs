@@ -11,22 +11,21 @@ using static System.Text.Encoding;
 
 OutputEncoding = Unicode;
 
-if (args is { Length: 1 })
+if (args is [var cultureName])
 {
     CultureInfo.CurrentCulture =
         CultureInfo.CurrentUICulture =
-            CultureInfo.GetCultureInfo(args[0]);
+            CultureInfo.GetCultureInfo(cultureName);
 }
 
-using IHost host = Host.CreateDefaultBuilder(args)
-    .ConfigureServices(services =>
-    {
-        services.AddLocalization();
-        services.AddTransient<MessageService>();
-        services.AddTransient<ParameterizedMessageService>();
-    })
-    .ConfigureLogging(options => options.SetMinimumLevel(LogLevel.Warning))
-    .Build();
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+
+builder.Services.AddLocalization();
+builder.Services.AddTransient<MessageService>();
+builder.Services.AddTransient<ParameterizedMessageService>();
+builder.Logging.SetMinimumLevel(LogLevel.Warning);
+
+using IHost host = builder.Build();
 
 IServiceProvider services = host.Services;
 
@@ -37,11 +36,13 @@ ILogger logger =
 MessageService messageService =
     services.GetRequiredService<MessageService>();
 logger.LogWarning(
+    "{Msg}",
     messageService.GetGreetingMessage());
 
 ParameterizedMessageService parameterizedMessageService =
     services.GetRequiredService<ParameterizedMessageService>();
 logger.LogWarning(
+    "{Msg}",
     parameterizedMessageService.GetFormattedMessage(
         DateTime.Today.AddDays(-3), 37.63));
 

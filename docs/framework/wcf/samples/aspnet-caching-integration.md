@@ -36,7 +36,7 @@ As the Client console application runs, the client makes requests to the service
 
 1. Open the solution for the ASP.NET Caching Integration Sample.
 
-2. Press **Ctrl**+**Shift**+**B** to build the solution.
+2. Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> to build the solution.
 
 3. If the **Solution Explorer** window is not already open, press CTRL+W+S.
 

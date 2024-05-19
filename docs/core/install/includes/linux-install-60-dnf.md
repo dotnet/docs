@@ -3,6 +3,7 @@ author: adegeo
 ms.author: adegeo
 ms.date: 01/05/2022
 ms.topic: include
+ms.custom: linux-related-content
 ---
 
 ### Install the SDK
@@ -15,7 +16,7 @@ sudo dnf install dotnet-sdk-6.0
 
 ### Install the runtime
 
-The ASP.NET Core Runtime allows you to run apps that were made with .NET that didn't provide the runtime. The following command install the ASP.NET Core Runtime, which is the most compatible runtime for .NET. In your terminal, run the following command:
+The ASP.NET Core Runtime allows you to run apps that were made with .NET that didn't provide the runtime. The following command installs the ASP.NET Core Runtime, which is the most compatible runtime for .NET. In your terminal, run the following command:
 
 ```bash
 sudo dnf install aspnetcore-runtime-6.0

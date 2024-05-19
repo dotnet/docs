@@ -4,7 +4,7 @@ using System;
 namespace GenericsExample1
 {
     //<snippet2>
-    public class Generic<T>
+    public class SimpleGenericClass<T>
     {
         public T Field;
     }
@@ -15,16 +15,16 @@ namespace GenericsExample1
         //<snippet3>
         public static void Main()
         {
-            Generic<string> g = new Generic<string>();
+            SimpleGenericClass<string> g = new SimpleGenericClass<string>();
             g.Field = "A string";
             //...
-            Console.WriteLine("Generic.Field           = \"{0}\"", g.Field);
-            Console.WriteLine("Generic.Field.GetType() = {0}", g.Field.GetType().FullName);
+            Console.WriteLine("SimpleGenericClass.Field           = \"{0}\"", g.Field);
+            Console.WriteLine("SimpleGenericClass.Field.GetType() = {0}", g.Field.GetType().FullName);
         }
         //</snippet3>
 
        //<snippet4>
-        T Generic<T>(T arg)
+        T MyGenericMethod<T>(T arg)
         {
             T temp = arg;
             //...
@@ -46,7 +46,7 @@ namespace GenericsExample2
             return temp;
         }
     }
-    class Generic<T>
+    class MyGenericClass<T>
     {
         T M(T arg)
         {

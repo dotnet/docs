@@ -1,4 +1,6 @@
-﻿public record Point<T>(T X, T Y) : IAdditionOperators<Point<T>, Translation<T>, Point<T>>
+﻿using System.Numerics;
+
+public record Point<T>(T X, T Y) : IAdditionOperators<Point<T>, Translation<T>, Point<T>>
     where T : IAdditionOperators<T, T, T>, IAdditiveIdentity<T, T>
 {
     public static Point<T> operator +(Point<T> left, Translation<T> right) =>

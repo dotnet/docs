@@ -1,11 +1,11 @@
 ---
 title: dotnet tool update command
 description: The dotnet tool update command updates the specified .NET tool on your machine.
-ms.date: 07/08/2020
+ms.date: 03/15/2024
 ---
 # dotnet tool update
 
-**This article applies to:** ✔️ .NET Core 2.1 SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -15,21 +15,27 @@ ms.date: 07/08/2020
 
 ```dotnetcli
 dotnet tool update <PACKAGE_ID> -g|--global
-    [--add-source <SOURCE>] [--configfile <FILE>]
+    [--add-source <SOURCE>] [--allow-downgrade]
+    [--configfile <FILE>]
     [--disable-parallel] [--framework <FRAMEWORK>]
-    [--ignore-failed-sources] [--interactive] [--no-cache]
+    [--ignore-failed-sources] [--interactive]
+    [--no-cache] [--prerelease]
     [-v|--verbosity <LEVEL>] [--version <VERSION>]
 
 dotnet tool update <PACKAGE_ID> --tool-path <PATH>
-    [--add-source <SOURCE>] [--configfile <FILE>]
+    [--add-source <SOURCE>] [--allow-downgrade]
+    [--configfile <FILE>]
     [--disable-parallel] [--framework <FRAMEWORK>]
-    [--ignore-failed-sources] [--interactive] [--no-cache]
+    [--ignore-failed-sources] [--interactive] 
+    [--no-cache] [--prerelease]
     [-v|--verbosity <LEVEL>] [--version <VERSION>]
 
 dotnet tool update <PACKAGE_ID> --local
-    [--add-source <SOURCE>] [--configfile <FILE>]
+    [--add-source <SOURCE>] [--allow-downgrade]
+    [--configfile <FILE>]
     [--disable-parallel] [--framework <FRAMEWORK>]
-    [--ignore-failed-sources] [--interactive] [--no-cache]
+    [--ignore-failed-sources] [--interactive]
+    [--no-cache] [--prerelease]
     [--tool-manifest <PATH>]
     [-v|--verbosity <LEVEL>] [--version <VERSION>]
 
@@ -44,8 +50,6 @@ The `dotnet tool update` command provides a way for you to update .NET tools on 
 * To update a global tool that was installed in a custom location, use the `--tool-path` option.
 * To update a local tool, use the `--local` option.
 
-**Local tools are available starting with .NET Core SDK 3.0.**
-
 ## Arguments
 
 - **`PACKAGE_ID`**
@@ -54,9 +58,9 @@ The `dotnet tool update` command provides a way for you to update .NET tools on 
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
-
 [!INCLUDE [add-source](../../../includes/cli-add-source.md)]
+
+[!INCLUDE [allow-downgrade](../../../includes/cli-allow-downgrade.md)]
 
 [!INCLUDE [configfile](../../../includes/cli-configfile.md)]
 
@@ -88,6 +92,10 @@ The `dotnet tool update` command provides a way for you to update .NET tools on 
 
   Do not cache packages and HTTP requests.
 
+- **`--prerelease`**
+
+  Include prerelease versions.
+
 - **`--tool-manifest <PATH>`**
 
   Path to the manifest file.
@@ -101,6 +109,8 @@ The `dotnet tool update` command provides a way for you to update .NET tools on 
 - **`--version <VERSION>`**
 
   The version range of the tool package to update to. This cannot be used to downgrade versions, you must `uninstall` newer versions first.
+
+  Starting in .NET 8.0, `--version Major.Minor.Patch` refers to a specific major.minor.patch version, including unlisted versions. To get the latest version of a certain major.minor version instead, use `--version Major.Minor.*`.
 
 ## Examples
 

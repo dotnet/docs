@@ -2,6 +2,7 @@
 title: Get started with F# with command-line tools
 description: Learn how to build a simple multi-project solution on F# using the .NET CLI on any operating system (Windows, macOS, or Linux).
 ms.date: 10/29/2021
+ms.custom: linux-related-content
 ---
 # Get started with F# with the .NET CLI
 
@@ -15,7 +16,7 @@ This article assumes that you know how to use a command line and have a preferre
 
 ## Build a simple multi-project solution
 
-Open a command prompt/terminal and use the [dotnet new](../../core/tools/dotnet-new.md) command to create new solution file called `FSharpSample`:
+Open a command prompt/terminal and use the [dotnet new](../../core/tools/dotnet-new.md) command to create a new solution file called `FSharpSample`:
 
 ```dotnetcli
 dotnet new sln -o FSharpSample
@@ -32,7 +33,7 @@ FSharpSample
 
 Change directories to *FSharpSample*.
 
-Use the `dotnet new` command, create a class library project in the **src** folder named Library.
+Use the `dotnet new` command to create a class library project in the **src** folder named Library.
 
 ```dotnetcli
 dotnet new classlib -lang "F#" -o src/Library
@@ -71,7 +72,7 @@ Run `dotnet build` to build the project. Unresolved dependencies will be restore
 
 ### Write a console application that consumes the class library
 
-Use the `dotnet new` command, create a console application in the **src** folder named App.
+Use the `dotnet new` command to create a console application in the **src** folder named App.
 
 ```dotnetcli
 dotnet new console -lang "F#" -o src/App
@@ -120,7 +121,7 @@ Add the `App` project to the `FSharpSample` solution using the `dotnet sln add` 
 dotnet sln add src/App/App.fsproj
 ```
 
-Restore the NuGet dependencies, `dotnet restore` and run `dotnet build` to build the project.
+Restore the NuGet dependencies with `dotnet restore` and run `dotnet build` to build the project.
 
 Change directory to the `src/App` console project and run the project passing `Hello World` as arguments:
 

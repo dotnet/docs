@@ -73,5 +73,6 @@ Specifies whether the full thread stack is committed when a thread is started.
   
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
 - [Runtime Settings Schema](index.md)
 - [Configuration File Schema](../index.md)

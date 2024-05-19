@@ -75,6 +75,7 @@ Specifies whether the default behavior, which is to allow the runtime host to ov
   
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
 - [Runtime Settings Schema](index.md)
 - [Configuration File Schema](../index.md)
 - [How the Runtime Locates Assemblies](../../../deployment/how-the-runtime-locates-assemblies.md)

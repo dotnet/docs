@@ -28,7 +28,7 @@ ASP.NET Core is a redesign of ASP.NET 4.x. Some of the benefits ASP.NET Core pro
 
 See [Why use ASP.NET Core?](/aspnet/core/introduction-to-aspnet-core#why-choose-aspnet-core) for an expanded list of benefits.
 
-For more information on ASP.NET Core](/aspnet/core), see:
+For more information on [ASP.NET Core](/aspnet/core), see:
 
 - [Get started with Razor Pages](/aspnet/core/tutorials/razor-pages/razor-pages-start)
 - [Create a Web API](/aspnet/core/tutorials/first-web-api)

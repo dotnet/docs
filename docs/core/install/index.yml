@@ -1,18 +1,17 @@
 ### YamlMime:Landing
 
 title: Install .NET on Windows, Linux, and macOS
-summary: Learn about installing .NET Core, .NET 5, and later versions on Windows, Linux, and macOS. Discover the dependencies required to develop, deploy, and run .NET apps.
+summary: Learn about installing .NET on Windows, Linux, and macOS. Discover the dependencies required to develop, deploy, and run .NET apps.
 
 metadata:
   title: Install .NET on Windows, Linux, and macOS
-  description: Learn where to download and install .NET Core, .NET 5, and later versions on Windows, Linux, and macOS. Discover the dependencies required to develop, deploy, and run .NET apps.
+  description: Learn where to download and install .NET on Windows, Linux, and macOS. Discover the dependencies required to develop, deploy, and run .NET apps.
   ms.topic: landing-page
-  ms.date: 06/29/2020
+  ms.date: 01/26/2023
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
 landingContent:
-
   # Card
   - title: Windows
     linkLists:
@@ -58,14 +57,14 @@ landingContent:
             url: linux-fedora.md
           - text: openSUSE
             url: linux-opensuse.md
-          - text: Red Hat Enterprise Linux
+          - text: Red Hat Enterprise Linux and CentOS Stream
             url: linux-rhel.md
-          - text: SUSE Linux Enterprise Server 
+          - text: SUSE Linux Enterprise Server
             url: linux-sles.md
           - text: Ubuntu
             url: linux-ubuntu.md
 
-# Card
+  # Card
   - title: "Q&A"
     linkLists:
       - linkListType: get-started

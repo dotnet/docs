@@ -5,7 +5,7 @@ ms.date: 11/04/2021
 ---
 # Compiler options
 
-This topic describes compiler command-line options for the F# compiler, fsc.exe.
+This article describes compiler command-line options for the F# compiler. The command `dotnet build` invokes the F# compiler on F# project files. F# project files are noted with the `.fsproj` extension.
 
 The compilation environment can also be controlled by setting the project properties. For projects targeting .NET Core, the "Other flags" property, `<OtherFlags>...</OtherFlags>` in `.fsproj`, is used for specifying extra command-line options.
 
@@ -20,7 +20,7 @@ The following table shows compiler options listed alphabetically. Some of the F#
 |`--baseaddress:address`|Specifies the preferred base address at which to load a DLL.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;baseaddress &#40;C&#35; Compiler Options&#41;](../../csharp/language-reference/compiler-options/advanced.md#baseaddress).|
 |`--codepage:id`|Specifies which code page to use during compilation if the required page isn't the current default code page for the system.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;code pages &#40;C&#35; Compiler Options&#41;](../../csharp/language-reference/compiler-options/advanced.md#codepage).|
 |`--consolecolors`|Specifies that errors and warnings use color-coded text on the console.|
-|`--crossoptimize[+|-]`|Enables or disables cross-module optimizations.|
+|`--crossoptimize[+ or -]`|Enables or disables cross-module optimizations.|
 |<code>--delaysign[+&#124;-]</code>|Delay-signs the assembly using only the public portion of the strong name key.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;delaysign &#40;C&#35; Compiler Options&#41;](../../csharp/language-reference/compiler-options/security.md#delaysign).|
 |<code>--checked[+&#124;-]</code>|Enables or disables the generation of overflow checks.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;checked &#40;C&#35; Compiler Options&#41;](../../csharp/language-reference/compiler-options/language.md#checkforoverflowunderflow).|
 |<code>--debug[+&#124;-]</code><br /><br /><code>-g[+&#124;-]</code><br /><br /><code>--debug:[full&#124;pdbonly]</code><br /><br /><code>-g: [full&#124;pdbonly]</code>|Enables or disables the generation of debug information, or specifies the type of debug information to generate. The default is `full`, which allows attaching to a running program. Choose `pdbonly` to get limited debugging information stored in a pdb (program database) file.<br /><br />Equivalent to the C# compiler option of the same name. For more information, see<br /><br />[&#47;debug &#40;C&#35; Compiler Options&#41;](../../csharp/language-reference/compiler-options/code-generation.md#debugtype).|
@@ -40,8 +40,8 @@ The following table shows compiler options listed alphabetically. Some of the F#
 |`--nologo`|Doesn't show the banner text when launching the compiler.|
 |`--nooptimizationdata`|Instructs the compiler to only include optimization essential for implementing inlined constructs. Inhibits cross-module inlining but improves binary compatibility.|
 |`--nowin32manifest`|Instructs the compiler to omit the default Win32 manifest.|
-|`--nowarn:warning-number-list`|Disables specific warnings listed by number. Separate each warning number by a comma. You can discover the warning number for any warning from the compilation output.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;nowarn &#40;C&#35; Compiler Options&#41;](../../csharp/language-reference/compiler-options/errors-warnings.md#disabledwarnings).|
-|<code>--optimize[+&#124;-][optimization-option-list]</code><br /><br /><code>-O[+&#124;-] [optimization-option-list]</code>|Enables or disables optimizations. Some optimization options can be disabled or enabled selectively by listing them. These are: `nojitoptimize`, `nojittracking`, `nolocaloptimize`, `nocrossoptimize`, `notailcalls`.|
+|`--nowarn:warning-number-list`|Disables specific warnings listed by number. Separate each warning number by a comma. You can discover the warning number for any warning from the compilation output.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;nowarn &#40;C&#35; Compiler Options&#41;](../../csharp/language-reference/compiler-options/errors-warnings.md#nowarn).|
+|<code>--optimize[+&#124;-] [optimization-option-list]</code><br /><br /><code>-O[+&#124;-] [optimization-option-list]</code>|Enables or disables optimizations. Some optimization options can be disabled or enabled selectively by listing them. These are: `nojitoptimize`, `nojittracking`, `nolocaloptimize`, `nocrossoptimize`, `notailcalls`.|
 |`--out:output-filename`<br /><br />`-o:output-filename`|Specifies the name of the compiled assembly or module.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;out &#40;C&#35; Compiler Options&#41;](../../csharp/language-reference/compiler-options/output.md#outputassembly).|
 |`--pathmap:path=sourcePath,...`|Specifies how to map physical paths to source path names output by the compiler.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;pathmap &#40;C&#35; Compiler Options&#41;](../../csharp/language-reference/compiler-options/advanced.md#pathmap).|
 |`--pdb:pdb-filename`|Names the output debug PDB (program database) file. This option only applies when `--debug` is also enabled.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;pdb &#40;C&#35; Compiler Options&#41;](../../csharp/language-reference/compiler-options/advanced.md#pdbfile).|
@@ -60,7 +60,7 @@ The following table shows compiler options listed alphabetically. Some of the F#
 |`--times`|Displays timing information for compilation.|
 |`--utf8output`|Enables printing compiler output in the UTF-8 encoding.|
 |`--warn:warning-level`|Sets a warning level (0 to 5). The default level is 3. Each warning is given a level based on its severity. Level 5 gives more, but less severe, warnings than level 1.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;warn &#40;C&#35; Compiler Options&#41;](../../csharp/language-reference/compiler-options/errors-warnings.md#warninglevel).|
-|`--warnon:warning-number-list`|Enable specific warnings that might be off by default or disabled by another command-line option.|
+|`--warnon:warning-number-list`|Enable specific warnings that might be off by default or disabled by another command-line option. The list is comma-separated.|
 |<code>--warnaserror[+&#124;-] [warning-number-list]</code>|Enables or disables the option to report warnings as errors. You can provide specific warning numbers to be disabled or enabled. Options later in the command line override options earlier in the command line. For example, to specify the warnings that you don't want reported as errors, specify `--warnaserror+` `--warnaserror-:warning-number-list`.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;warnaserror &#40;C&#35; Compiler Options&#41;](../../csharp/language-reference/compiler-options/errors-warnings.md#treatwarningsaserrors).|
 |`--win32manifest:manifest-filename`|Adds a Win32 manifest file to the compilation. This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;win32manifest &#40;C&#35; Compiler Options&#41;](../../csharp/language-reference/compiler-options/resources.md#win32manifest).|
 |`--win32res:resource-filename`|Adds a Win32 resource file to the compilation.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;win32res (&#40;C&#35;) Compiler Options&#41;](../../csharp/language-reference/compiler-options/resources.md#win32resource).|
@@ -79,11 +79,14 @@ The F# compiler supports several opt-in warnings:
 | 3180  | Implicit heap allocations       |  n/a  | Warn when a mutable local is implicitly allocated as a reference cell because it has been captured by a closure. |
 | 3366  | Index notation                  |  n/a  | Warn when the F# 5 index notation `expr.[idx]` is used. |
 | 3517  | InlineIfLambda failure          |  n/a  | Warn when the F# optimizer fails to inline an `InlineIfLambda` value, for example if a computed function value has been provided instead of an explicit lambda. |
+| 3387  | `op_Implicit` conversion        |  n/a  | Warn when a .NET implicit conversion is used at a method argument. |
 | 3388  | Additional implicit upcast      |  n/a  | Warn when an additional upcast is implicitly used, added in F# 6. |
 | 3389  | Implicit widening               |  n/a  | Warn when an implicit numeric widening is used. |
-| 3390  | `op_Implicit` conversion        |  n/a  | Warn when a .NET implicit conversion is used at a method argument. |
+| 3390  | Malformed XML doc comments      |  n/a  | Warn when XML doc comments are malformed in various ways. |
 
 You can enable these warnings by using  `/warnon:NNNN` or `<WarnOn>NNNN</WarnOn>` where `NNNN` is the relevant warning number.
+(You may also use the syntax `<WarnOn>FSNNNN</WarnOn>`, e.g. `<WarnOn>FS3388</WarnOn>`.)
+Note that if the `WarnOn` property is specified multiple times, only the last occurrence is used. To specify multiple warnings, provide the `WarnOn` property once with a comma-separated string as its contents: `<WarnOn>3388,3559</WarnOn>`.
 
 ## Related articles
 

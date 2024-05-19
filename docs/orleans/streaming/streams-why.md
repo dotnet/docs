@@ -1,27 +1,26 @@
 ---
 title: Why streams in Orleans?
 description: Learn why you'd want to use streams in .NET Orleans.
-ms.date: 02/01/2022
+ms.date: 03/21/2022
 ---
 
 # Why streams in Orleans?
 
-There are already a wide range of technologies that allow you to build stream processing systems.
-Those include systems to **durably store stream data** (e.g., [Event Hubs](https://azure.microsoft.com/services/event-hubs/) and [Kafka](https://kafka.apache.org/)) and systems to express **compute operations** over stream data (e.g., [Azure Stream Analytics](https://azure.microsoft.com/services/stream-analytics/), [Apache Storm](https://storm.apache.org/), and [Apache Spark Streaming](https://spark.apache.org/streaming/)). Those are great systems that allow you to build efficient data stream processing pipelines.
+There are already a wide range of technologies that allow you to build stream processing systems. Those include systems to **durably store stream data** (e.g., [Event Hubs](https://azure.microsoft.com/services/event-hubs/) and [Kafka](https://kafka.apache.org/)) and systems to express **compute operations** over stream data (e.g., [Azure Stream Analytics](https://azure.microsoft.com/services/stream-analytics/), [Apache Storm](https://storm.apache.org/), and [Apache Spark Streaming](https://spark.apache.org/streaming/)). Those are great systems that allow you to build efficient data stream processing pipelines.
 
 ### Limitations of existing systems
 
-However, those systems are not suitable for **fine-grained free-form compute over stream data**. The Streaming Compute systems mentioned above all allow you to specify a **unified data-flow graph of operations that are applied in the same way to all stream items**. This is a powerful model when data is uniform and you want to express the same set of transformation, filtering, or aggregation operations over this data. But there are other use cases where you need to express fundamentally different operations over different data items. And in some of them as part of this processing you occasionally need to make an external call, such as invoke some arbitrary REST API. The unified data-flow stream processing engines either do not support those scenarios, support them in a limited and constrained way, or are inefficient in supporting them. This is because they are inherently optimized for a **large volume of similar items, and usually limited in terms of expressiveness, processing**. Orleans Streams target those other scenarios.
+However, those systems are not suitable for **fine-grained free-form compute over stream data**. The streaming compute systems mentioned above all allow you to specify a **unified data-flow graph of operations that are applied in the same way to all stream items**. This is a powerful model when data is uniform and you want to express the same set of transformation, filtering, or aggregation operations over this data. But there are other use cases where you need to express fundamentally different operations over different data items. And in some of them as part of this processing, you occasionally need to make an external call, such as invoke some arbitrary REST API. The unified data-flow stream processing engines either do not support those scenarios, support them in a limited and constrained way, or are inefficient in supporting them. This is because they are inherently optimized for a **large volume of similar items, and usually limited in terms of expressiveness, processing**. Orleans Streams target those other scenarios.
 
 ### Motivation
 
-It all started with requests from Orleans users to support returning a sequence of items from a grain method call. As you can imagine, that was only the tip of the iceberg. They actually needed much more than that.
+It all started with requests from Orleans users to support returning a sequence of items from a grain method call. As you can imagine, that was only the tip of the iceberg. They needed much more than that.
 
-A typical scenario for Orleans Streams is when you have per user streams and you want to perform **different processing for each user**, within the context of an individual user. We may have millions of users but some of them are interested in weather and can subscribe to weather alerts for a particular location, while some are interested in sports events; somebody else is tracking status of a particular flight. Processing those events requires different logic, but you don't want to run two independent instances of stream processing. Some users are interested in only a particular stock and only if a certain external condition applies, a condition that may not necessarily be part of the stream data (and thus needs to be checked dynamically at runtime as part of processing).
+A typical scenario for Orleans Streams is when you have per-user streams and you want to perform **different processing for each user**, within the context of an individual user. We may have millions of users but some of them are interested in weather and can subscribe to weather alerts for a particular location, while some are interested in sports events; somebody else is tracking the status of a particular flight. Processing those events requires different logic, but you don't want to run two independent instances of stream processing. Some users are interested in only a particular stock and only if a certain external condition applies, a condition that may not necessarily be part of the stream data (and thus needs to be checked dynamically at runtime as part of processing).
 
-Users change their interests all the time, hence their subscriptions to specific streams of events come and go dynamically, thus **the streaming topology changes dynamically and rapidly**. On top of that, **the processing logic per user evolves and changes dynamically as well, based on user state and external events**. External events may modify the  processing logic for a particular user. For example, in a game cheating detection system, when a new way to cheat is discovered the processing logic needs to be updated with the new rule to detect this new violation. This needs to be done of course **without disrupting the ongoing processing pipeline**. Bulk data-flow stream processing engines were not built to support such scenarios.
+Users change their interests all the time, hence their subscriptions to specific streams of events come and go dynamically, thus **the streaming topology changes dynamically and rapidly**. On top of that, **the processing logic per user evolves and changes dynamically as well, based on user state and external events**. External events may modify the processing logic for a particular user. For example, in a game cheating detection system, when a new way to cheat is discovered the processing logic needs to be updated with the new rule to detect this new violation. This needs to be done of course **without disrupting the ongoing processing pipeline**. Bulk data-flow stream processing engines were not built to support such scenarios.
 
-It goes almost without saying that such a system has to run on a number of network-connected machines, not on a single node. Hence, the processing logic has to be distributed in a scalable and elastic manner across a cluster of servers.
+It goes almost without saying that such a system has to run on several network-connected machines, not on a single node. Hence, the processing logic has to be distributed in a scalable and elastic manner across a cluster of servers.
 
 ### New Requirements
 
@@ -44,7 +43,7 @@ We want the system to allow for dynamically evolving topologies. The existing sy
 Stream.GroupBy(x=> x.key).Extract(x=>x.field).Select(x=>x+2).AverageWindow(x, 5sec).Where(x=>x > 0.8) *
 ``
 
-Change the threshold condition in the `Where` filter, add an additional `Select` statement or add another branch in the data-flow graph and produce a new output stream. In existing systems this is not possible without tearing down the entire topology and restarting the data-flow from scratch. Practically, those systems will checkpoint the existing computation and will be able to restart from the latest checkpoint. Still, such a restart is disruptive and costly to an online service that produces results in real time. Such a restart becomes especially impractical when we are talking about a large number of such expressions being executed with similar but different (per-user, per-device, etc.) parameters and that continually change.
+Change the threshold condition in the <xref:System.Linq.Enumerable.Where%2A> filter, add <xref:System.Linq.Enumerable.Select%2A> statement or add another branch in the data-flow graph and produce a new output stream. In existing systems, this is not possible without tearing down the entire topology and restarting the data-flow from scratch. Practically, those systems will checkpoint the existing computation and will be able to restart from the latest checkpoint. Still, such a restart is disruptive and costly to an online service that produces results in real-time. Such a restart becomes especially impractical when we are talking about a large number of such expressions being executed with similar but different (per-user, per-device, etc.) parameters and that continually change.
 
 We want the system to allow for evolving the stream processing graph at runtime, by adding new links or nodes to the computation graph, or by changing the processing logic within the computation nodes.
 
@@ -52,7 +51,7 @@ We want the system to allow for evolving the stream processing graph at runtime,
 
 In the existing systems, the smallest unit of abstraction is usually the whole flow (topology). However, many of our target scenarios require an individual node/link in the topology to be a logical entity by itself. That way each entity can be potentially managed independently. For example, in the big stream topology comprising multiple links, different links can have different characteristics and can be implemented over different physical transports. Some links can go over TCP sockets, while others over reliable queues. Different links can have different delivery guarantees. Different nodes can have different checkpointing strategies, and their processing logic can be expressed in different models or even different languages. Such flexibility is usually not possible in existing systems.
 
-The unit of abstraction and flexibility argument is similar to a comparison of SoA (Service Oriented Architectures) vs. Actors. Actor systems allow more flexibility, since each actor is essentially an independently managed ''tiny service''. Similarly, we want the stream system to allow for such fine grained control.
+The unit of abstraction and flexibility argument is similar to a comparison of SoA (Service Oriented Architectures) vs. Actors. Actor systems allow more flexibility since each actor is essentially an independently managed ''tiny service''. Similarly, we want the stream system to allow for such fine-grained control.
 
 #### Distribution
 
@@ -66,7 +65,7 @@ And of course, our system should have all the properties of a **"good distribute
 
 These were the requirements we had in mind for building [**Orleans Streaming**](index.md).
 
-_Clarificaton_: Orleans currently does not directly support writing declarative dataflow expressions like in the example above. The current Orleans Streaming APIs are more low level building blocks, as described [here](streams-programming-apis.md). Providing declarative dataflow expressions is our future goal.
+_Clarification_: Orleans currently does not directly support writing declarative dataflow expressions like in the example above. The current Orleans Streaming APIs are more low-level building blocks, as described [here](streams-programming-apis.md). Providing declarative dataflow expressions is our future goal.
 
 ## See also
 

@@ -2,7 +2,7 @@
 
 namespace App.QueueService;
 
-public class DefaultBackgroundTaskQueue : IBackgroundTaskQueue
+public sealed class DefaultBackgroundTaskQueue : IBackgroundTaskQueue
 {
     private readonly Channel<Func<CancellationToken, ValueTask>> _queue;
 
@@ -18,10 +18,7 @@ public class DefaultBackgroundTaskQueue : IBackgroundTaskQueue
     public async ValueTask QueueBackgroundWorkItemAsync(
         Func<CancellationToken, ValueTask> workItem)
     {
-        if (workItem is null)
-        {
-            throw new ArgumentNullException(nameof(workItem));
-        }
+        ArgumentNullException.ThrowIfNull(workItem);
 
         await _queue.Writer.WriteAsync(workItem);
     }

@@ -1,10 +1,12 @@
 ---
 title: Implementing value objects
 description: .NET Microservices Architecture for Containerized .NET Applications | Get into the details and options to implement value objects using new Entity Framework features.
-ms.date: 02/17/2022
+ms.date: 04/11/2022
 ---
 
 # Implement value objects
+
+[!INCLUDE [download-alert](../includes/download-alert.md)]
 
 As discussed in earlier sections about entities and aggregates, identity is fundamental for entities. However, there are many objects and data items in a system that do not require an identity and identity tracking, such as value objects.
 
@@ -43,7 +45,7 @@ public abstract class ValueObject
         {
             return false;
         }
-        return ReferenceEquals(left, null) || left.Equals(right);
+        return ReferenceEquals(left, right) || left.Equals(right);
     }
 
     protected static bool NotEqualOperator(ValueObject left, ValueObject right)
@@ -82,12 +84,12 @@ The `ValueObject` is an `abstract class` type, but in this example, it doesn't o
 ```csharp
 public static bool operator ==(ValueObject one, ValueObject two)
 {
-    return one?.Equals(two) ?? (one is null && two is null ? true : false);
+    return EqualOperator(one, two);
 }
 
 public static bool operator !=(ValueObject one, ValueObject two)
 {
-    return !(one?.Equals(two) ?? (one is null && two is null ? true : false));
+    return NotEqualOperator(one, two);
 }
 ```
 
@@ -315,8 +317,6 @@ public class Address
 
 - Table splitting is optional, that is, they can optionally be mapped to a separate table and still be owned types.
 
-- They can reference other entities (that is, they can act as the dependent side on relationships to other non-owned types).
-
 ## Additional resources
 
 - **Martin Fowler. ValueObject pattern** \
@@ -329,10 +329,10 @@ public class Address
   <https://www.amazon.com/Implementing-Domain-Driven-Design-Vaughn-Vernon/dp/0321834577/>
 
 - **Owned Entity Types** \
-  [https://docs.microsoft.com/ef/core/modeling/owned-entities](/ef/core/modeling/owned-entities)
+  [https://learn.microsoft.com/ef/core/modeling/owned-entities](/ef/core/modeling/owned-entities)
 
 - **Shadow Properties** \
-  [https://docs.microsoft.com/ef/core/modeling/shadow-properties](/ef/core/modeling/shadow-properties)
+  [https://learn.microsoft.com/ef/core/modeling/shadow-properties](/ef/core/modeling/shadow-properties)
 
 - **Complex types and/or value objects**. Discussion in the EF Core GitHub repo (Issues tab) \
   <https://github.com/dotnet/efcore/issues/246>

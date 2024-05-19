@@ -49,7 +49,7 @@ UdpBinding myBinding = new UdpBinding();
 ServiceHost host = new ServiceHost(typeof(StockTickerService), new Uri(serviceAddress));
 // Add service endpoint
 host.AddServiceEndpoint(typeof(IStockTicker), myBinding, string.Empty);
-// Openup the service host
+// Open up the service host
 host.Open();
 
 Console.WriteLine("Start receiving stock information");
@@ -77,7 +77,7 @@ IStockTicker proxy = factory.CreateChannel();
 
 while (true)
 {
-    // This will continue to mulicast stock information
+    // This will continue to multicast stock information
     proxy.SendStockInfo(GetStockInfo());
     Console.WriteLine($"sent stock info at {DateTime.Now}");
     // Wait for one second before sending another update

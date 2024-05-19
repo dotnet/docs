@@ -67,6 +67,7 @@ Setting the `enabled` attribute of the `<relativeBindForResources>` element to `
 
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
 - [Package and deploy resources](../../../../core/extensions/package-and-deploy-resources.md)
 - [Runtime settings schema](index.md)
 - [Configuration file schema](../index.md)

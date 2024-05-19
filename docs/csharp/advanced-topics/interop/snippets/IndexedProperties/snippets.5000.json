@@ -1,0 +1,11 @@
+{
+    "host": "visualstudio",
+    "expectederrors": [
+        {
+            "file": "docs/csharp/advanced-topics/interop/snippets/IndexedProperties/Program.cs",
+            "line": 13,
+            "column": 40,
+            "error": "CS0234"
+        }
+    ]
+}

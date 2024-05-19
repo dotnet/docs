@@ -5,6 +5,8 @@ ms.date: 01/13/2021
 ---
 # Resiliency and high availability in microservices
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 Dealing with unexpected failures is one of the hardest problems to solve, especially in a distributed system. Much of the code that developers write involves handling exceptions, and this is also where the most time is spent in testing. The problem is more involved than writing code to handle failures. What happens when the machine where the microservice is running fails? Not only do you need to detect this microservice failure (a hard problem on its own), but you also need something to restart your microservice.
 
 A microservice needs to be resilient to failures and to be able to restart often on another machine for availability. This resiliency also comes down to the state that was saved on behalf of the microservice, where the microservice can recover this state from, and whether the microservice can restart successfully. In other words, there needs to be resiliency in the compute capability (the process can restart at any time) as well as resilience in the state or data (no data loss, and the data remains consistent).
@@ -57,19 +59,19 @@ Different orchestrators might sound similar, but the diagnostics and health chec
   <https://github.com/Azure/diagnostics-eventflow>
 
 - **What is Azure Diagnostics** \
-  [https://docs.microsoft.com/azure/azure-diagnostics](/azure/azure-diagnostics)
+  [https://learn.microsoft.com/azure/azure-diagnostics](/azure/azure-diagnostics)
 
 - **Connect Windows computers to the Azure Monitor service** \
-  [https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows](/azure/azure-monitor/platform/agent-windows)
+  [https://learn.microsoft.com/azure/azure-monitor/platform/agent-windows](/azure/azure-monitor/platform/agent-windows)
 
 - **Logging What You Mean: Using the Semantic Logging Application Block** \
-  [https://docs.microsoft.com/previous-versions/msp-n-p/dn440729(v=pandp.60)](/previous-versions/msp-n-p/dn440729(v=pandp.60))
+  [https://learn.microsoft.com/previous-versions/msp-n-p/dn440729(v=pandp.60)](/previous-versions/msp-n-p/dn440729(v=pandp.60))
 
 - **Splunk** Official site. \
   <https://www.splunk.com/>
 
 - **EventSource Class** API for events tracing for Windows (ETW) \
-  [https://docs.microsoft.com/dotnet/api/system.diagnostics.tracing.eventsource](xref:System.Diagnostics.Tracing.EventSource)
+  [https://learn.microsoft.com/dotnet/api/system.diagnostics.tracing.eventsource](xref:System.Diagnostics.Tracing.EventSource)
 
 >[!div class="step-by-step"]
 >[Previous](microservice-based-composite-ui-shape-layout.md)

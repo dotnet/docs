@@ -8,10 +8,10 @@ public class DiscardPatternMatching
     public static void DiscardSwitchExample()
     {
         // <DiscardSwitchExample>
-        object?[] objects = { CultureInfo.CurrentCulture,
+        object?[] objects = [CultureInfo.CurrentCulture,
                            CultureInfo.CurrentCulture.DateTimeFormat,
                            CultureInfo.CurrentCulture.NumberFormat,
-                           new ArgumentException(), null };
+                           new ArgumentException(), null];
         foreach (var obj in objects)
             ProvidesFormatInfo(obj);
 

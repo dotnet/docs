@@ -5,7 +5,7 @@ let area myShape =
     | Circle radius -> pi * radius * radius
     | EquilateralTriangle s -> (sqrt 3.0) / 4.0 * s * s
     | Square s -> s * s
-    | Rectangle (h, w) -> h * w
+    | Rectangle(h, w) -> h * w
 
 let radius = 15.0
 let myCircle = Circle(radius)

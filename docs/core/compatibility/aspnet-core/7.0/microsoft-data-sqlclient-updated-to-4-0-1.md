@@ -10,7 +10,7 @@ The `Microsoft.Data.SqlClient` package has been updated to 4.0.1.
 
 ## Version introduced
 
-ASP.NET Core 7.0 Preview 2
+ASP.NET Core 7.0
 
 ## Previous behavior
 

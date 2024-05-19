@@ -1,6 +1,6 @@
 ---
 description: Learn about the built-in character type in C#
-title: "char type - C# reference"
+title: "char type"
 ms.date: 05/11/2020
 f1_keywords:
   - "char"
@@ -52,7 +52,6 @@ For more information, see the [Integral types](~/_csharpstandard/standard/types.
 
 ## See also
 
-- [C# reference](../index.md)
 - [Value types](value-types.md)
 - [Strings](../../programming-guide/strings/index.md)
 - <xref:System.Text.Rune?displayProperty=nameWithType>

@@ -35,7 +35,8 @@ namespace CollationSample
                 FROM greek_letter
                 WHERE value = 'λ' COLLATE NOCASE
             ";
-            var count = (long)queryCommand.ExecuteScalar();
+            var oCount = queryCommand.ExecuteScalar();
+            var count = (oCount is not null) ? (int)oCount : -1;
             #endregion
 
             Console.WriteLine($"Results: {count}");

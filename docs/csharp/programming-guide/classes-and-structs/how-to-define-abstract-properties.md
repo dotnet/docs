@@ -1,12 +1,11 @@
 ---
-title: "How to define abstract properties - C# Programming Guide"
+title: "How to define abstract properties"
 description: Learn how to define abstract properties in C#. Declaring an abstract property means that a class supports a property. The derived classes implement accessors.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "properties [C#], abstract"
   - "abstract properties [C#]"
 ms.topic: how-to
-ms.custom: contperf-fy21q2
 ms.assetid: 672a90eb-47b9-4ae0-9914-af53852fddcb
 ---
 # How to define abstract properties (C# Programming Guide)
@@ -51,7 +50,6 @@ The following example shows how to define [abstract](../../language-reference/ke
   
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [The C# type system](../../fundamentals/types/index.md)
 - [Abstract and Sealed Classes and Class Members](./abstract-and-sealed-classes-and-class-members.md)
 - [Properties](./properties.md)

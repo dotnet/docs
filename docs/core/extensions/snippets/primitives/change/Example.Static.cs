@@ -8,7 +8,7 @@ internal static partial class Example
         CancellationTokenSource cancellationTokenSource = new();
         CancellationChangeToken cancellationChangeToken = new(cancellationTokenSource.Token);
 
-        Func<IChangeToken> producer = () =>
+        IChangeToken producer()
         {
             // The producer factory should always return a new change token.
             // If the token's already fired, get a new token.
@@ -19,9 +19,9 @@ internal static partial class Example
             }
 
             return cancellationChangeToken;
-        };
+        }
 
-        Action consumer = () => Console.WriteLine("The callback was invoked.");
+        void consumer() => Console.WriteLine("The callback was invoked.");
 
         using (ChangeToken.OnChange(producer, consumer))
         {

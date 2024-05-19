@@ -1,10 +1,9 @@
 ---
 title: .NET Framework & Windows OS versions
 description: Learn about key features in each version of .NET Framework, including underlying CLR versions and versions installed by the Windows operating system.
-ms.date: 05/11/2021
+ms.date: 04/24/2024
 helpviewer_keywords:
   - "versions, .NET Framework"
-ms.assetid: f75a72de-e2f2-4a7a-9574-3f278684ea90
 ---
 # .NET Framework versions and dependencies
 
@@ -32,6 +31,7 @@ The tables that follow summarize .NET Framework version history and correlate ea
 
 Jump to:
 
+- [.NET Framework 4.8.1](#net-framework-481)
 - [.NET Framework 4.8](#net-framework-48)
 - [.NET Framework 4.7.2](#net-framework-472)
 - [.NET Framework 4.7.1](#net-framework-471)
@@ -49,16 +49,35 @@ Jump to:
 - [.NET Framework 1.1](#net-framework-11)
 - [.NET Framework 1.0](#net-framework-10)
 
+### .NET Framework 4.8.1
+
+- [New features](../whats-new/index.md#whats-new-in-net-framework-481)
+- New accessibility features
+- [Release notes](https://github.com/Microsoft/dotnet/tree/main/releases/net481/README.md)
+
+|                    | Versions              |
+|--------------------|-----------------------|
+| **CLR**            | 4                     |
+| **Windows**        | ✔️ October 2023 Release (Version 22631)<br/> ✔️ September 2022 Release (Version 22621)<br/> ➕ 11 October 2021 Release (Version 22000)<br/>➕ 10 November 2021 Update<br/>➕ 10 May 2021 Update<br/>➕ 10 October 2020 Update<br/>|
+| **Windows Server** | ➕ Windows Server 2022 |
+
+To determine the installed .NET version, use the following `Release` DWORD:
+
+- 533320 (Windows 11 September 2022 Release and Windows 11 October 2023 Release)
+- 533325 (all other OS versions)
+
+For more information, see [instructions](how-to-determine-which-versions-are-installed.md).
+
 ### .NET Framework 4.8
 
 - [New features](../whats-new/index.md#whats-new-in-net-framework-48)
 - [New in accessibility](../whats-new/whats-new-in-accessibility.md#whats-new-in-accessibility-in-net-framework-48)
-- [Release notes](https://github.com/Microsoft/dotnet/tree/master/releases/net48/README.md)
+- [Release notes](https://github.com/Microsoft/dotnet/tree/main/releases/net48/README.md)
 
-| | Versions |
-|-|-|
-|**CLR**|4|
-|**Windows**|✔️ 11<br/>✔️ 10 May 2021 Update<br/>✔️ 10 October 2020 Update<br/>✔️ 10 May 2020 Update<br/>✔️ 10 November 2019 Update<br/>✔️ 10 May 2019 Update<br/>➕ 10 October 2018 Update (Version 1809)<br/>➕ 10 April 2018 Update (Version 1803)<br/>➕ 10 Fall Creators Update (Version 1709)<br/>➕ 10 Creators Update (Version 1703)<br/>➕ 10 Anniversary Update (Version 1607)<br/>➕ 8.1<br/>➕7|
+|         | Versions |
+|---------|----------|
+| **CLR** | 4        |
+|**Windows**|✔️ 11 October 2021 Release (Version 22000)<br/>✔️ 10 November 2021 Update<br/>✔️ 10 May 2021 Update<br/>✔️ 10 October 2020 Update<br/>✔️ 10 May 2020 Update<br/>✔️ 10 November 2019 Update<br/>✔️ 10 May 2019 Update<br/>➕ 10 October 2018 Update (Version 1809)<br/>➕ 10 April 2018 Update (Version 1803)<br/>➕ 10 Fall Creators Update (Version 1709)<br/>➕ 10 Creators Update (Version 1703)<br/>➕ 10 Anniversary Update (Version 1607)<br/>➕ 8.1<br/>➕7|
 |**Windows Server**|✔️ Windows Server 2022<br/>➕ Windows Server 2019<br/>➕ Windows Server, version 1809<br/>➕ Windows Server, version 1803<br/>➕ 2016<br/>➕ 2012 R2<br/>➕ 2012<br/>➕ 2008 R2 SP1|
 
 To determine the installed .NET version, use the following `Release` DWORD:
@@ -74,16 +93,16 @@ For more information, see [instructions](how-to-determine-which-versions-are-ins
 
 - [New features](../whats-new/index.md#whats-new-in-net-framework-472)
 - [New in accessibility](../whats-new/whats-new-in-accessibility.md#whats-new-in-accessibility-in-net-framework-472)
-- [Release notes](https://github.com/Microsoft/dotnet/tree/master/releases/net472/README.md)
+- [Release notes](https://github.com/Microsoft/dotnet/tree/main/releases/net472/README.md)
 
-| | Versions |
-|-|-|
-|**CLR**|4|
-|**Included in Visual Studio**|2019<sup>1</sup>|
+|                               | Versions |
+|-------------------------------|----------|
+| **CLR**                       | 4        |
+| **Included in Visual Studio** | 2019†    |
 |**Windows**|✔️ 10 October 2018 Update (Version 1809)<br/>✔️ 10 April 2018 Update (Version 1803)<br/>➕ 10 Fall Creators Update (Version 1709)<br/>➕ 10 Creators Update (Version 1703)<br/>➕ 10 Anniversary Update (Version 1607)<br/>➕ 8.1<br/>➕7|
 |**Windows Server**|✔️ Windows Server 2019<br/>✔️ Windows Server, version 1809<br/>✔️ Windows Server, version 1803<br/>➕ Windows Server, version 1709<br/>➕ 2016<br/>➕ 2012 R2<br/>➕ 2012<br/>➕ 2008 R2 SP1|
 
-<sup>1</sup> Requires installing the **.NET desktop development**, **ASP.NET and web development**, **Azure development**, **Office/SharePoint development**, **Mobile development with .NET**, or **.NET Core cross-platform development** workloads.
+†Requires installing the **.NET desktop development**, **ASP.NET and web development**, **Azure development**, **Office/SharePoint development**, **Mobile development with .NET**, or **.NET Core cross-platform development** workloads.
 
 To determine the installed .NET version, use the following `Release` DWORD:
 
@@ -97,11 +116,11 @@ For more information, see [instructions](how-to-determine-which-versions-are-ins
 
 - [New features](../whats-new/index.md#whats-new-in-net-framework-471)
 - [New in accessibility](../whats-new/whats-new-in-accessibility.md#whats-new-in-accessibility-in-net-framework-471)
-- [Release notes](https://github.com/Microsoft/dotnet/tree/master/releases/net471/README.md)
+- [Release notes](https://github.com/Microsoft/dotnet/tree/main/releases/net471/README.md)
 
-| | Versions |
-|-|-|
-|**CLR**|4|
+|         | Versions |
+|---------|----------|
+| **CLR** | 4        |
 |**Windows**|✔️ 10 Fall Creators Update (Version 1709)<br/>➕ 10 Creators Update (Version 1703)<br/>➕ 10 Anniversary Update (Version 1607)<br/>➕ 8.1<br/>➕7|
 |**Windows Server**|➕ Windows Server, version 1803<br/>✔️ Windows Server, version 1709<br/>➕ 2016<br/>➕ 2012 R2<br/>➕ 2012<br/>➕ 2008 R2 SP1|
 
@@ -115,7 +134,7 @@ For more information, see [instructions](how-to-determine-which-versions-are-ins
 ### .NET Framework 4.7
 
 - [New features](../whats-new/index.md#whats-new-in-net-framework-47)
-- [Release notes](https://github.com/Microsoft/dotnet/tree/master/releases/net47/README.md)
+- [Release notes](https://github.com/Microsoft/dotnet/tree/main/releases/net47/README.md)
 
 |                    | Versions                                                                                              |
 |--------------------|-------------------------------------------------------------------------------------------------------|
@@ -133,13 +152,13 @@ For more information, see [instructions](how-to-determine-which-versions-are-ins
 ### .NET Framework 4.6.2
 
 - [New features](../whats-new/index.md#whats-new-in-net-framework-462)
-- [Release notes](https://github.com/Microsoft/dotnet/tree/master/releases/net462/README.md)
+- [Release notes](https://github.com/Microsoft/dotnet/tree/main/releases/net462/README.md)
 
 |                    | Versions                                                                                                   |
 |--------------------|------------------------------------------------------------------------------------------------------------|
 | **CLR**            | 4                                                                                                          |
 | **Windows**        | ✔️ 10 Anniversary Update (Version 1607)<br/>➕ 10 November Update (Version 1511)<br/>➕ 10<br/>➕ 8.1<br />➕ 7 |
-| **Windows Server** | ✔️ 2016<br /><br/>➕ 2012 R2<br />➕ 2012<br />➕ 2008 R2 SP1                                                |
+| **Windows Server** | ✔️ 2016<br /><br/>➕ 2012 R2<br />➕ 2012<br />➕ 2008 R2 SP1<br />➕ 2008 SP2                           |
 
 To determine the installed .NET version, use the following `Release` DWORD:
 
@@ -151,7 +170,7 @@ For more information, see [instructions](how-to-determine-which-versions-are-ins
 ### .NET Framework 4.6.1
 
 - [New features](../whats-new/index.md#whats-new-in-net-framework-461)
-- [Release notes](https://github.com/Microsoft/dotnet/tree/master/releases/net461/README.md)
+- [Release notes](https://github.com/Microsoft/dotnet/tree/main/releases/net461/README.md)
 
 |                                       | Versions                                                                  |
 |---------------------------------------|---------------------------------------------------------------------------|
@@ -172,7 +191,7 @@ For more information, see [instructions](how-to-determine-which-versions-are-ins
 ### .NET Framework 4.6
 
 - [New features](../whats-new/index.md#whats-new-in-net-2015)
-- [Release notes](https://github.com/Microsoft/dotnet/tree/master/releases/net46/README.md)
+- [Release notes](https://github.com/Microsoft/dotnet/tree/main/releases/net46/README.md)
 
 |                                       | Versions                                                 |
 |---------------------------------------|----------------------------------------------------------|
@@ -191,7 +210,7 @@ For more information, see [instructions](how-to-determine-which-versions-are-ins
 ### .NET Framework 4.5.2
 
 - [New features](../whats-new/index.md#whats-new-in-net-framework-452)
-- [Release notes](https://github.com/Microsoft/dotnet/tree/master/releases/net452/README.md)
+- [Release notes](https://github.com/Microsoft/dotnet/tree/main/releases/net452/README.md)
 
 |                    | Versions                                                 |
 |--------------------|----------------------------------------------------------|
@@ -204,7 +223,7 @@ To determine the installed .NET version, use `Release` DWORD 379893. For more in
 ### .NET Framework 4.5.1
 
 - [New features](../whats-new/index.md#whats-new-in-net-framework-451)
-- [Release notes](https://github.com/Microsoft/dotnet/tree/master/releases/net451/README.md)
+- [Release notes](https://github.com/Microsoft/dotnet/tree/main/releases/net451/README.md)
 
 |                                       | Versions                                                       |
 |---------------------------------------|----------------------------------------------------------------|
@@ -225,7 +244,7 @@ For more information, see [instructions](how-to-determine-which-versions-are-ins
 ### .NET Framework 4.5
 
 - [New features](../whats-new/index.md#whats-new-in-net-framework-45)
-- [Release notes](https://github.com/Microsoft/dotnet/tree/master/releases/net45/README.md)
+- [Release notes](https://github.com/Microsoft/dotnet/tree/main/releases/net45/README.md)
 
 |                                       | Versions                                  |
 |---------------------------------------|-------------------------------------------|
@@ -351,7 +370,7 @@ To determine the installed .NET version, use `Release` DWORD 378389. For more in
 
 The following guidelines apply:
 
-- In Visual Studio, you can choose .NET Framework 4.5 as the target framework for a project (this sets the <xref:Microsoft.Build.Tasks.GetReferenceAssemblyPaths.TargetFrameworkMoniker%2A?displayProperty=nameWithType> property) to compile the project as a .NET Framework 4.5 assembly or executable. This assembly or executable can then be used on any computer that has the .NET Framework 4.5, 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, 4.7, 4.7.1, 4.7.2, or 4.8 installed.
+- In Visual Studio, you can choose .NET Framework 4.5 as the target framework for a project (this sets the <xref:Microsoft.Build.Tasks.GetReferenceAssemblyPaths.TargetFrameworkMoniker%2A?displayProperty=nameWithType> property) to compile the project as a .NET Framework 4.5 assembly or executable. This assembly or executable can then be used on any computer that has .NET Framework 4.5, 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, 4.7, 4.7.1, 4.7.2, or 4.8 installed.
 
 - In Visual Studio, you can choose .NET Framework 4.5.1 as the target framework for a project to compile it as a .NET Framework 4.5.1 assembly or executable. Only run this assembly or executable on computers that have .NET Framework 4.5.1 or later installed. An executable that targets .NET Framework 4.5.1 will be blocked from running on a computer that only has an earlier version of .NET Framework, such as .NET Framework 4.5, installed. The user will be prompted to install .NET Framework 4.5.1. In addition, .NET Framework 4.5.1 assemblies should not be called from an app that targets an earlier version of .NET Framework, such as .NET Framework 4.5.
 

@@ -6,13 +6,13 @@
 
 #### Suggestion
 
-If an <xref:System.AggregateException?displayProperty=fullName> was being caught as a means of detecting a task that was cancelled prior to the <xref:System.Threading.Tasks.Task.WaitAll%2A> call being invoked, that code should instead do the same detection via the  <xref:System.Threading.Tasks.Task.IsCanceled%2A> property (for example: .Any(t =&gt; t.IsCanceled)) since .NET Framework 4.6 will only throw in that case if all awaited tasks are completed prior to the timeout.
+If an <xref:System.AggregateException?displayProperty=fullName> was being caught as a means of detecting a task that was cancelled prior to the <xref:System.Threading.Tasks.Task.WaitAll%2A> call being invoked, that code should instead do the same detection via the  <xref:System.Threading.Tasks.Task.IsCanceled%2A> property (for example: `.Any(t => t.IsCanceled)`) since .NET Framework 4.6 will only throw in that case if all awaited tasks are completed prior to the timeout.
 
-| Name    | Value       |
-|:--------|:------------|
-| Scope   |Minor|
-|Version|4.5|
-|Type|Runtime
+|             | Value   |
+|:------------|:--------|
+| **Scope**   | Minor   |
+| **Version** | 4.5     |
+| **Type**    | Runtime |
 
 #### Affected APIs
 

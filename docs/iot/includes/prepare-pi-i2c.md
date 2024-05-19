@@ -1,8 +1,8 @@
-## Prepare the Raspberry Pi
+## Prepare the SBC
 
-Use the `raspi-config` command to ensure the following two services are enabled:
+Ensure your SBC is configured to support the following services:
 
 - SSH
 - I2C
 
-For more information on `raspi-config`, refer to the [Raspberry Pi documentation](https://www.raspberrypi.com/documentation/computers/configuration.html).
+For many devices, no additional configuration is required. For Raspberry Pi, use the `raspi-config` command. For more information on `raspi-config`, refer to the [Raspberry Pi documentation](https://www.raspberrypi.com/documentation/computers/configuration.html).

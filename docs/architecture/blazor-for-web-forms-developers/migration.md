@@ -4,9 +4,11 @@ description: Learn how to approach migrating an existing ASP.NET Web Forms app t
 author: twsouthwick
 ms.author: tasou
 no-loc: [Blazor, WebAssembly]
-ms.date: 12/2/2021
+ms.date: 04/11/2022
 ---
 # Migrate from ASP.NET Web Forms to Blazor
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 Migrating a code base from ASP.NET Web Forms to Blazor is a time-consuming task that requires planning. This chapter outlines the process. Something that can ease the transition is to ensure the app adheres to an *N-tier* architecture, wherein the app model (in this case, Web Forms) is separate from the business logic. This logical separation of layers makes it clear what needs to move to .NET Core and Blazor.
 
@@ -229,7 +231,6 @@ void ConfigDataBase(IApplicationBuilder app)
 }
 
 app.Run();
-
 ```
 
 One significant change you may notice from Web Forms is the prominence of dependency injection (DI). DI has been a guiding principle in the ASP.NET Core design. It supports customization of almost all aspects of the ASP.NET Core framework. There's even a built-in service provider that can be used for many scenarios. If more customization is required, it can be supported by many community projects. For example, you can carry forward your third-party DI library investment.
@@ -256,7 +257,6 @@ To serve static files (for example, HTML, CSS, images, and JavaScript), the file
 app.UseStaticFiles();
 
 ...
-
 ```
 
 The eShop project enables basic static file access. There are many customizations available for static file access. For information on enabling default files or a file browser, see [Static files in ASP.NET Core](/aspnet/core/fundamentals/static-files).

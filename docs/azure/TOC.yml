@@ -23,6 +23,18 @@
     href: dotnet-dev-env-checklist.md
 - name: Migrate to Azure
   items:
+    - name: Azure Migrate application and code assessment
+      items:
+      - name: Overview
+        href: ./migration/appcat/app-code-assessment-toolkit.md
+      - name: Install
+        href: ./migration/appcat/install.md
+      - name: Visual Studio walkthrough
+        href: ./migration/appcat/visual-studio.md
+      - name: .NET CLI walkthrough
+        href: ./migration/appcat/dotnet-cli.md
+      - name: Interpret the results
+        href: ./migration/appcat/interpret-results.md
     - name: Choose the right Azure hosting option
       href: ./migration/choose.md
     - name: Migrate a .NET web app or service to Azure App Service
@@ -31,12 +43,32 @@
       href: ./migration/vm.md
     - name: Migrate a SQL Server database to Azure
       href: ./migration/sql.md
+- name: Azure AI for .NET
+  href: ../ai/get-started/dotnet-ai-overview.md
 - name: Azure SDK for .NET
   items:
     - name: What is the Azure SDK for .NET?
       href: ./sdk/azure-sdk-for-dotnet.md
     - name: Authentication
-      href: ./sdk/authentication.md
+      items:
+      - name: Overview
+        href: ./sdk/authentication/index.md
+      - name: Auth during local development
+        items:
+        - name: Auth using developer service principals
+          href: ./sdk/authentication/local-development-service-principal.md
+        - name: Auth using developer accounts
+          href: ./sdk/authentication/local-development-dev-accounts.md
+      - name: Auth from Azure-hosted apps
+        href: ./sdk/authentication/azure-hosted-apps.md
+      - name: Auth from on-premises apps
+        href: ./sdk/authentication/on-premises-apps.md
+      - name: Auth via configuration files
+        href: ./sdk/authentication/create-token-credentials-from-configuration.md
+      - name: Additional auth methods
+        href: ./sdk/authentication/additional-methods.md
+    - name: Resource management
+      href: ./sdk/resource-management.md
     - name: Dependency injection
       href: ./sdk/dependency-injection.md
     - name: Thread safety
@@ -45,10 +77,10 @@
       href: ./sdk/logging.md
     - name: Pagination
       href: ./sdk/pagination.md
+    - name: Unit testing and mocking
+      href: ./sdk/unit-testing-mocking.md
     - name: Configure a proxy server
       href: ./sdk/azure-sdk-configure-proxy.md
-    - name: Resource management
-      href: ./sdk/resource-management.md
     - name: Packages list
       href: ./sdk/packages.md
     - name: SDK example
@@ -84,4 +116,4 @@
   - name: All samples
     href: /samples/browse/?languages=csharp%2Caspx-csharp%2Cfsharp%2Cvb
 - name: API reference
-  href: /dotnet/api/overview/azure/?view=azure-dotnet
+  href: /dotnet/api/overview/azure/?view=azure-dotnet&preserve-view=true

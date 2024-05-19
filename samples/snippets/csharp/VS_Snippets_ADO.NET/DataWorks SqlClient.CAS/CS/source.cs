@@ -26,9 +26,9 @@ namespace PartialTrustTopic {
          PermissionSet permissions = new PermissionSet(PermissionState.None);
          permissions.AddPermission(new SecurityPermission(SecurityPermissionFlag.Execution));
 
-         // Create sandbox AppDomain with permission set that only allows execution,
-         // and has no SqlClientPermissions.
-         AppDomainSetup appDomainSetup = new AppDomainSetup();
+            // Create sandbox AppDomain with permission set that only allows execution,
+            // and has no SqlClientPermissions.
+            AppDomainSetup appDomainSetup = new AppDomainSetup();
          appDomainSetup.ApplicationBase = AppDomain.CurrentDomain.SetupInformation.ApplicationBase;
          AppDomain firstDomain = AppDomain.CreateDomain("NoSqlPermissions", null, appDomainSetup, permissions);
 

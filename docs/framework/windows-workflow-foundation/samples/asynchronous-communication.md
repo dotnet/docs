@@ -35,4 +35,4 @@ The [AsynchronousCommunication sample](https://github.com/dotnet/samples/tree/ma
 
 3. Move **RentalApprovalService** to the first position in the list, followed by **CreditCheckService**, followed by **Client**. Set the **Start** action on all three projects.
 
-4. Click **OK**, and press **F5** to run the sample.
+4. Click **OK**, and press <kbd>F5</kbd> to run the sample.

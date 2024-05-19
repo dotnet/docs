@@ -1,7 +1,7 @@
 ---
 title: "Tutorial: Get started with System.CommandLine"
 description: Learn how to use the System.CommandLine library for command-line apps.
-ms.date: 03/09/2022
+ms.date: 04/07/2022
 ms.topic: tutorial
 no-loc: [System.CommandLine]
 helpviewer_keywords:
@@ -36,7 +36,7 @@ In this tutorial, you learn how to:
 
 Or
 
-* [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2022) with the **.NET desktop development** workload installed.
+* [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2022) with the **.NET desktop development** workload installed.
 
 ## Create the app
 
@@ -66,7 +66,7 @@ Create a .NET 6 console app project named "scl".
 
 The preceding code:
 
-* Creates an [option](syntax.md#options) named `--file` of type `FileInfo` and assigns it to the [root command](syntax.md#commands):
+* Creates an [option](syntax.md#options) named `--file` of type <xref:System.IO.FileInfo> and assigns it to the [root command](syntax.md#commands):
 
   :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage1/Program.cs" id="option" :::
 
@@ -82,7 +82,7 @@ The preceding code:
 
 You can use any of the following ways to test while developing a command-line app:
 
-* Run the `dotnet build`command, and then open a command prompt in the *scl/bin/Debug/net6.0* folder to run the executable:
+* Run the `dotnet build` command, and then open a command prompt in the *scl/bin/Debug/net6.0* folder to run the executable:
 
   ```console
   dotnet build
@@ -329,7 +329,7 @@ scl quotes delete --search-terms David "You can do" Antoine "Perfection is achie
 
    :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage3/Program.cs" id="fileoption" :::
 
-   This code uses `ParseArgument<T>` to provide custom parsing, validation, and error handling.
+   This code uses <xref:System.CommandLine.Parsing.ParseArgument%601> to provide custom parsing, validation, and error handling.
 
    Without this code, missing files are reported with an exception and stack trace. With this code just the specified error message is displayed.
 
@@ -339,7 +339,7 @@ scl quotes delete --search-terms David "You can do" Antoine "Perfection is achie
 
    :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage3/Program.cs" id="optionsandargs" :::
 
-   The `AllowMultipleArgumentsPerToken` setting lets you omit the `--search-terms` option name when specifying elements in the list after the first one. It makes the following examples of command-line input equivalent:
+   The <xref:System.CommandLine.Option.AllowMultipleArgumentsPerToken> setting lets you omit the `--search-terms` option name when specifying elements in the list after the first one. It makes the following examples of command-line input equivalent:
 
    ```console
    scl quotes delete --search-terms David "You can do"
@@ -390,7 +390,7 @@ Build the project, and then try the following commands.
 Submit a nonexistent file to `--file` with the `read` command, and you get an error message instead of an exception and stack trace:
 
 ```console
-scl read --file nofile
+scl quotes read --file nofile
 ```
 
 ```output

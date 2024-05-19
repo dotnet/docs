@@ -6,7 +6,7 @@ namespace ca1054
     public class ErrorProne
     {
         // Violates rule UriPropertiesShouldNotBeStrings.
-        public string SomeUri { get; set; }
+        public string? SomeUri { get; set; }
 
         // Violates rule UriParametersShouldNotBeStrings.
         public void AddToHistory(string uriString) { }
@@ -22,7 +22,7 @@ namespace ca1054
     {
         // To retrieve a string, call SomeUri.ToString().
         // To set using a string, call SomeUri = new Uri(string).
-        public Uri SomeUri { get; set; }
+        public Uri? SomeUri { get; set; }
 
         public void AddToHistory(string uriString)
         {

@@ -7,7 +7,7 @@ namespace Console.ExampleFormatters.Custom;
 
 public sealed class CustomColorFormatter : ConsoleFormatter, IDisposable
 {
-    private readonly IDisposable _optionsReloadToken;
+    private readonly IDisposable? _optionsReloadToken;
     private CustomColorOptions _formatterOptions;
 
     private bool ConsoleColorFormattingEnabled =>
@@ -26,7 +26,7 @@ public sealed class CustomColorFormatter : ConsoleFormatter, IDisposable
 
     public override void Write<TState>(
         in LogEntry<TState> logEntry,
-        IExternalScopeProvider scopeProvider,
+        IExternalScopeProvider? scopeProvider,
         TextWriter textWriter)
     {
         if (logEntry.Exception is null)

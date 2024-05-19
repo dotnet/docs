@@ -16,7 +16,7 @@ ms.assetid: daf9d9d5-84ac-4bd9-a864-27665ffd0f5c
 > [!NOTE]
 > This article is intended for **developers** who either want to install .NET Framework on their own system or who want to install it with their applications. For **users** interested in installing .NET Framework, see the individual articles that discuss installing .NET Framework on specific operating systems, such as [Install .NET Framework on Windows 10 and Windows Server 2016](on-windows-10.md).
 
-This article provides links for installing all versions of .NET Framework from .NET Framework 4.5 to .NET Framework 4.8 on your computer. If you're a developer, you can also use these links to download and redistribute .NET Framework with your apps. For information on deploying a version of .NET Framework with your app, see [.NET Framework deployment guide for developers](../deployment/deployment-guide-for-developers.md).
+This article provides links for installing all versions of .NET Framework from .NET Framework 4.5 to .NET Framework 4.8.1 on your computer. If you're a developer, you can also use these links to download and redistribute .NET Framework with your apps. For information on deploying a version of .NET Framework with your app, see [.NET Framework deployment guide for developers](../deployment/deployment-guide-for-developers.md).
 
 [!INCLUDE[net_retirement](../../../includes/net-framework-retired-versions.md)]
 
@@ -31,7 +31,8 @@ Use the following table for quick links, or read further for details. To view th
 
 | .NET Framework version | Installer (Developer Pack and Runtime) | Platform support |
 | ---------------------- | -------------------------------------- | ---------------- |
-|**4.8**   | [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48)    | **Included in:**<br/><br/>Windows 11<br/>Windows 10 May 2019 Update (and later versions)<br/>[Visual Studio 2019 (16.3 update)](https://my.visualstudio.com/Downloads?q=visual%20studio%202017)<br/><br/> **You can install on:**<br/><br/>Windows 10 October 2018 Update<br/>Windows 10 April 2018 Update<br/>Windows 10 Fall Creators Update<br/>Windows 10 Creators Update <br /> Windows 10 Anniversary Update<br /> Windows 8.1 and earlier<br />Windows Server 2022<br /> Windows Server 2019<br/>Windows Server, Version 1809<br/>Windows Server, Version 1803<br /><br/> (for a full list, see [system requirements](../get-started/system-requirements.md))|
+|**4.8.1**   | [.NET Framework 4.8.1](https://dotnet.microsoft.com/download/dotnet-framework/net481)    | **Included in:**<br/><br/>[Visual Studio 2022 (version 17.3)](https://my.visualstudio.com/Downloads?q=visual%20studio%202017)<br/><br/> **You can install on:**<br/><br/>Windows 11<br/>Windows 10 version 21H2<br/>Windows 10 version 21H1<br/>Windows 10 version 20H2<br/>Windows Server 2022<br /><br/> (for a full list, see [system requirements](../get-started/system-requirements.md))|
+|**4.8**   | [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48)    | **Included in:**<br/><br/>Windows 11<br/>Windows 10 May 2019 Update (and later versions)<br/>[Visual Studio 2019 (version 16.3)](https://my.visualstudio.com/Downloads?q=visual%20studio%202019)<br/><br/> **You can install on:**<br/><br/>Windows 10 October 2018 Update<br/>Windows 10 April 2018 Update<br/>Windows 10 Fall Creators Update<br/>Windows 10 Creators Update <br /> Windows 10 Anniversary Update<br /> Windows 8.1 and earlier<br />Windows Server 2022<br /> Windows Server 2019<br/>Windows Server, Version 1809<br/>Windows Server, Version 1803<br /><br/> (for a full list, see [system requirements](../get-started/system-requirements.md))|
 |**4.7.2** | [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework/net472) | **Included in:** <br/><br/>Windows 10 October 2018 Update<br/>Windows 10 April 2018 Update<br/>Windows Server 2019<br/>Windows Server, Version 1809<br/>Windows Server, Version 1803<br/>[Visual Studio 2017 (15.8 update)](https://my.visualstudio.com/Downloads?q=visual%20studio%202017)<br/><br/> **You can install on:**<br/> <br/>Windows 10 Fall Creators Update<br/>Windows 10 Creators Update <br /> Windows 10 Anniversary Update<br /> Windows 8.1 and earlier<br /> Windows Server, version 1709 and earlier<br /><br/> (for a full list, see [system requirements](../get-started/system-requirements.md))|
 |**4.7.1** | [.NET Framework 4.7.1](https://dotnet.microsoft.com/download/dotnet-framework/net471) | **Included in:** <br/><br/>Windows 10 Fall Creators Update<br/>Windows Server, version 1709<br/>[Visual Studio 2017 (15.5 update)](https://my.visualstudio.com/Downloads?q=visual%20studio%202017)<br/><br/> **You can install on:**<br/><br/> Windows 10 Creators Update <br /> Windows 10 Anniversary Update<br /> Windows 8.1 and earlier<br /> Windows Server 2016 and earlier<br /> (for a full list, see [system requirements](../get-started/system-requirements.md))|
 |**4.7**   | [.NET Framework 4.7](https://dotnet.microsoft.com/download/dotnet-framework/net47)    | **Included in:** <br/><br/>Windows 10 Creators Update<br/>[Visual Studio 2017 (15.3 update)](https://my.visualstudio.com/Downloads?q=visual%20studio%202017)<br/><br/> **You can install on:**<br /><br/> Windows 10 Anniversary Update<br /> Windows 8.1 and earlier<br /> Windows Server 2016 and earlier<br /> (for a full list, see [system requirements](../get-started/system-requirements.md))|
@@ -68,6 +69,7 @@ A *targeting pack* lets your app target a specific version of .NET Framework whe
 
 The developer pack for .NET Framework 4.5.1 or 4.5.2, the targeting pack for .NET Framework 4.6, and the developer pack for .NET Framework 4.6.1, 4.6.2, 4.7, 4.7.1, 4.7.2, or 4.8 provides a particular .NET Framework's version of the reference assemblies, language packs, and IntelliSense files for use in an integrated development environment such as Visual Studio. If you're using Visual Studio, the developer pack or targeting pack also adds the installed version of .NET Framework to the target choices when you create a new project.  Choose one of the following:
 
+- [.NET Framework 4.8.1](https://dotnet.microsoft.com/download/dotnet-framework/net481)
 - [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48)
 - [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework/net472)
 - [.NET Framework 4.7.1](https://dotnet.microsoft.com/download/dotnet-framework/net471)
@@ -102,6 +104,7 @@ Both web and offline installers are designed for x86-based and x64-based compute
 
 1. Open the download page for the .NET Framework version you want to install:
 
+   - [.NET Framework 4.8.1](https://dotnet.microsoft.com/download/dotnet-framework/net481)
    - [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48)
    - [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework/net472)
    - [.NET Framework 4.7.1](https://dotnet.microsoft.com/download/dotnet-framework/net471)
@@ -149,6 +152,7 @@ Language packs are executable files that contain the localized resources (such a
 
 1. Open the language pack download page for the .NET Framework version you've installed:
 
+   - [.NET Framework 4.8.1](https://dotnet.microsoft.com/download/dotnet-framework/net481)
    - [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48)
    - [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework/net472)
    - [.NET Framework 4.7.1](https://dotnet.microsoft.com/download/dotnet-framework/net471)

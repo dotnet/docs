@@ -33,7 +33,7 @@ Class ListMembers
         fi = t.GetFields((BindingFlags.Instance Or BindingFlags.NonPublic Or BindingFlags.Public))
         Console.WriteLine("// Instance Fields")
         PrintMembers(fi)
-        ' Instance properites.
+        ' Instance properties.
         pi = t.GetProperties((BindingFlags.Instance Or BindingFlags.NonPublic Or BindingFlags.Public))
         Console.WriteLine("// Instance Properties")
         PrintMembers(pi)

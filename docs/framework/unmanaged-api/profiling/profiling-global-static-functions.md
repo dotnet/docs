@@ -17,13 +17,13 @@ This section describes the unmanaged API functions that the profiling API uses.
 ## .NET Framework version 1 Profiling Functions  
 
  [FunctionEnter Function](functionenter-function.md)  
- Notifies the profiler that control is being passed to a function. Deprecated in the .NET Framework 2.0.  
+ Notifies the profiler that control is being passed to a function. Deprecated in .NET Framework 2.0.  
   
  [FunctionLeave Function](functionleave-function.md)  
- Notifies the profiler that a function is about to return to the caller. Deprecated in the .NET Framework 2.0.  
+ Notifies the profiler that a function is about to return to the caller. Deprecated in .NET Framework 2.0.  
   
  [FunctionTailcall Function](functiontailcall-function.md)  
- Notifies the profiler that the currently executing function is about to perform a tail call to another function. Deprecated in the .NET Framework 2.0.  
+ Notifies the profiler that the currently executing function is about to perform a tail call to another function. Deprecated in .NET Framework 2.0.  
   
 ## .NET Framework version 2 Profiling Functions  
 

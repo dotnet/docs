@@ -3,7 +3,6 @@ title: Infer.NET game match-up app - probabilistic programming
 description: Discover how to use probabilistic programming with Infer.NET to create a game match-up list app based on a simplified version of TrueSkill.
 ms.date: 01/30/2020
 ms.custom: mvc,how-to
-recommendations: false
 #Customer intent: As a developer, I want to use probabilistic programming with Infer.NET to create a game matchup list app based on a simplified version of TrueSkill.
 ---
 
@@ -17,13 +16,13 @@ Probabilistic programming allows you to create statistical models of real-world 
 
 ## Prerequisites
 
-- Local development environment setup
+- Local development environment.
 
   This how-to guide expects you to have a machine you can use for development. The .NET tutorial [Hello World in 10 minutes](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) has instructions for setting up your local development environment on macOS, Windows, or Linux.
 
 ## Create your app
 
-1. Open a new command prompt and run the following commands:
+Open a new command prompt and run the following commands:
 
 ```dotnetcli
 dotnet new console -o myApp
@@ -42,20 +41,20 @@ dotnet add package Microsoft.ML.Probabilistic.Compiler
 
 ## Design your model
 
-The example sample uses table tennis or foosball matches played in the office. You have the participants and outcome of each match.  You want to infer the player's skills from this data. Assume that each player has a normally distributed latent skill and their given match performance is a noisy version of this skill. The data constrains the winner’s performance to be greater than the loser’s performance. This is a simplified version of the popular [TrueSkill](https://www.microsoft.com/research/project/trueskill-ranking-system/) model, which also supports teams, draws, and other extensions. An [advanced version](https://www.microsoft.com/research/publication/trueskill-2-improved-bayesian-skill-rating-system/) of this model is used for matchmaking in the best-selling game titles Halo and Gears of War.
+The example sample uses table tennis or foosball matches played in the office. You have the participants and outcome of each match. You want to infer the player's skills from this data. Assume that each player has a normally distributed latent skill and their given match performance is a noisy version of this skill. The data constrains the winner’s performance to be greater than the loser’s performance. This is a simplified version of the popular [TrueSkill](https://www.microsoft.com/research/project/trueskill-ranking-system/) model, which also supports teams, draws, and other extensions. An [advanced version](https://www.microsoft.com/research/publication/trueskill-2-improved-bayesian-skill-rating-system/) of this model is used for matchmaking in the best-selling game titles Halo and Gears of War.
 
 You need to list the inferred player skills, alongside with their variance – the measure of uncertainty around the skills.
 
 *Game result sample data*
 
-Game |Winner | Loser
----------|----------|---------
- 1 | Player 0 | Player 1
- 2 | Player 0 | Player 3
- 3 | Player 0 | Player 4
- 4 | Player 1 | Player 2
- 5 | Player 3 | Player 1
- 6 | Player 4 | Player 2
+| Game | Winner   | Loser    |
+|------|----------|----------|
+| 1    | Player 0 | Player 1 |
+| 2    | Player 0 | Player 3 |
+| 3    | Player 0 | Player 4 |
+| 4    | Player 1 | Player 2 |
+| 5    | Player 3 | Player 1 |
+| 6    | Player 4 | Player 2 |
 
 With a closer look at the sample data, you’ll notice that players 3 and 4 both have one win and one loss. Let's see what the rankings look like using probabilistic programming. Notice also there is a player zero because even office match up lists are zero based to us developers.
 

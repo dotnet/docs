@@ -55,7 +55,7 @@ On Windows Vista, samples that are not hosted in IIS require elevated privileges
 
 ### To debug a service
 
-1. Build the solution (both client and service) using the **Build** menu or **Ctrl**+**Shift**+**B**.
+1. Build the solution (both client and service) using the **Build** menu or <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>.
 
 2. If the service is hosted in IIS:
 

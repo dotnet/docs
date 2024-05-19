@@ -37,7 +37,7 @@ Both TPL and PLINQ rely on the <xref:System.Threading.ThreadPool> threads. The <
 
 At last, you can use the <xref:System.Threading.Thread?displayProperty=nameWithType> class that represents a managed thread. For more information, see [Using threads and threading](using-threads-and-threading.md).
 
-Multiple threads might need to access a shared resource. To keep the resource in a uncorrupted state and avoid race conditions, you must synchronize the thread access to it. You also might want to coordinate the interaction of multiple threads. .NET provides a range of types that you can use to synchronize access to a shared resource or coordinate thread interaction. For more information, see [Overview of synchronization primitives](overview-of-synchronization-primitives.md).
+Multiple threads might need to access a shared resource. To keep the resource in an uncorrupted state and avoid race conditions, you must synchronize the thread access to it. You also might want to coordinate the interaction of multiple threads. .NET provides a range of types that you can use to synchronize access to a shared resource or coordinate thread interaction. For more information, see [Overview of synchronization primitives](overview-of-synchronization-primitives.md).
 
 Do handle exceptions in threads. Unhandled exceptions in threads generally terminate the process. For more information, see [Exceptions in managed threads](exceptions-in-managed-threads.md).
 

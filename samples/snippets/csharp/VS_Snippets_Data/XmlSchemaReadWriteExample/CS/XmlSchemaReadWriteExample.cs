@@ -12,12 +12,12 @@ class XmlSchemaReadWriteExample
         try
         {
             XmlTextReader reader = new XmlTextReader("example.xsd");
-            XmlSchema myschema = XmlSchema.Read(reader, ValidationCallback);
-            myschema.Write(Console.Out);
+            XmlSchema schema = XmlSchema.Read(reader, ValidationCallback);
+            schema.Write(Console.Out);
             FileStream file = new FileStream("new.xsd", FileMode.Create, FileAccess.ReadWrite);
             XmlTextWriter xwriter = new XmlTextWriter(file, new UTF8Encoding());
             xwriter.Formatting = Formatting.Indented;
-            myschema.Write(xwriter);
+            schema.Write(xwriter);
         }
         catch(Exception e)
         {

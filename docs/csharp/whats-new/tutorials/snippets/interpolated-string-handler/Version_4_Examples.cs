@@ -18,7 +18,7 @@ internal static class Version_4
 
         logger.LogMessage(LogLevel.Warning, "Warning Level. This warning is a string, not an interpolated string expression.");
 
-        // <TestSideeffects>
+        // <TestSideEffects>
         int index = 0;
         int numberOfIncrements = 0;
         for (var level = LogLevel.Critical; level <= LogLevel.Trace; level++)
@@ -29,6 +29,6 @@ internal static class Version_4
         }
         Console.WriteLine($"Value of index {index}, value of numberOfIncrements: {numberOfIncrements}");
 
-        // </TestSideeffects>
+        // </TestSideEffects>
     }
 }

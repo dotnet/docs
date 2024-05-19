@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: .NET globalization and ICU"
 title: "Globalization and ICU"
-ms.date: 02/15/2022
+ms.date: 03/13/2023
 helpviewer_keywords:
   - "globalization [.NET], about globalization"
   - "global applications, globalization"
@@ -14,7 +14,7 @@ helpviewer_keywords:
 
 # .NET globalization and ICU
 
-Prior to .NET 5, the .NET globalization APIs used different underlying libraries on different platforms. On Unix, the APIs used [International Components for Unicode (ICU)](http://site.icu-project.org/home), and on Windows, they used [National Language Support (NLS)](/windows/win32/intl/national-language-support). This resulted in some behavioral differences in a handful of globalization APIs when running applications on different platforms. Behavior differences were evident in these areas:
+Before .NET 5, the .NET globalization APIs used different underlying libraries on different platforms. On Unix, the APIs used [International Components for Unicode (ICU)](https://icu.unicode.org/), and on Windows, they used [National Language Support (NLS)](/windows/win32/intl/national-language-support). This resulted in some behavioral differences in a handful of globalization APIs when running applications on different platforms. Behavior differences were evident in these areas:
 
 - Cultures and culture data
 - String casing
@@ -26,16 +26,31 @@ Prior to .NET 5, the .NET globalization APIs used different underlying libraries
 
 Starting with .NET 5, developers have more control over which underlying library is used, enabling applications to avoid differences across platforms.
 
+> [!NOTE]
+> The culture data that drives the behavior of the ICU library is usually maintained by the [Common Locale Data Repository (CLDR)](https://cldr.unicode.org/), not the runtime.
+
 ## ICU on Windows
 
-Windows 10 May 2019 Update and later versions include [icu.dll](/windows/win32/intl/international-components-for-unicode--icu-) as part of the OS, and .NET 5 and later versions use ICU by default. When running on Windows, .NET 5 and later versions try to load `icu.dll` and, if it's available, use it for the globalization implementation. If the ICU library can't be found or loaded, such as when running on older versions of Windows, .NET 5 and later versions fall back to the NLS-based implementation.
+Windows now incorporates a preinstalled [icu.dll](/windows/win32/intl/international-components-for-unicode--icu-) version as part of its features that's automatically employed for globalization tasks. This modification allows .NET to use this ICU library for its globalization support. In cases where the ICU library is unavailable or can't be loaded, as is the case with older Windows versions, .NET 5 and subsequent versions revert to using the NLS-based implementation.
+
+The following table shows which versions of .NET are capable of loading the ICU library across different Windows client and server versions:
+
+.NET version| Windows version
+---|---
+.NET 5 or .NET 6|Windows client 10 version 1903 or later
+.NET 5 or .NET 6|Windows Server 2022 or later
+.NET 7 or later|Windows client 10 version 1703 or later
+.NET 7 or later|Windows Server 2019 or later
+
+> [!NOTE]
+> .NET 7 and later versions have the capability to load ICU on older Windows versions, in contrast to .NET 6 and .NET 5.
 
 > [!NOTE]
 > Even when using ICU, the `CurrentCulture`, `CurrentUICulture`, and `CurrentRegion` members still use Windows operating system APIs to honor user settings.
 
 ### Behavioral differences
 
-If you upgrade your app to target .NET 5, you might see changes in your app even if you don't realize you're using globalization facilities. This section lists one of the behavioral changes you might see, but there are others too.
+If you upgrade your app to target .NET 5 or later, you might see changes in your app even if you don't realize you're using globalization facilities. This section lists one of the behavioral changes you might see, but there are others too.
 
 #### String.IndexOf
 
@@ -49,17 +64,82 @@ Console.WriteLine($"{greeting.IndexOf("\0", StringComparison.Ordinal)}");
 ```
 
 - In .NET Core 3.1 and earlier versions on Windows, the snippet prints `3` on each of the three lines.
-- In .NET 5 and later versions on Windows 19H1 and later versions, the snippet prints `0`, `0`, and `3` (for the ordinal search).
+- For .NET 5 and later versions running on the Windows versions listed in the [ICU on Windows](#icu-on-windows) section table, the snippet prints `0`, `0`, and `3` (for the ordinal search).
 
 By default, <xref:System.String.IndexOf(System.String)?displayProperty=nameWithType> performs a culture-aware linguistic search. ICU considers the null character `\0` to be a *zero-weight character*, and thus the character isn't found in the string when using a linguistic search on .NET 5 and later. However, NLS doesn't consider the null character `\0` to be a zero-weight character, and a linguistic search on .NET Core 3.1 and earlier locates the character at position 3. An ordinal search finds the character at position 3 on all .NET versions.
 
-You can run code analysis rules [CA1307: Specify StringComparison for clarity](../../fundamentals/code-analysis/quality-rules/ca1307.md) and [CA1309: Use ordinal StringComparison](../../fundamentals/code-analysis/quality-rules/ca1309.md) to find call sites in your code where the string comparison isn't specified or it is not ordinal.
+You can run code analysis rules [CA1307: Specify StringComparison for clarity](../../fundamentals/code-analysis/quality-rules/ca1307.md) and [CA1309: Use ordinal StringComparison](../../fundamentals/code-analysis/quality-rules/ca1309.md) to find call sites in your code where the string comparison isn't specified or it isn't ordinal.
 
 For more information, see [Behavior changes when comparing strings on .NET 5+](../../standard/base-types/string-comparison-net-5-plus.md).
 
+#### String.EndsWith
+
+```csharp
+const string foo = "abc";
+
+Console.WriteLine(foo.EndsWith("\0"));
+Console.WriteLine(foo.EndsWith("c"));
+Console.WriteLine(foo.EndsWith("\0", StringComparison.CurrentCulture));
+Console.WriteLine(foo.EndsWith("\0", StringComparison.Ordinal));
+Console.WriteLine(foo.EndsWith('\0'));
+```
+
+> [!IMPORTANT]
+> In .NET 5+ running on Windows versions listed in the [ICU on Windows](#icu-on-windows) table, the preceding snippet prints:
+>
+> ```Output
+> True
+> True
+> True
+> False
+> False
+> ```
+
+To avoid this behavior, use the `char` parameter overload or `StringComparison.Oridinal`.
+
+#### String.StartsWith
+
+```csharp
+const string foo = "abc";
+
+Console.WriteLine(foo.StartsWith("\0"));
+Console.WriteLine(foo.StartsWith("a"));
+Console.WriteLine(foo.StartsWith("\0", StringComparison.CurrentCulture));
+Console.WriteLine(foo.StartsWith("\0", StringComparison.Ordinal));
+Console.WriteLine(foo.StartsWith('\0'));
+```
+
+> [!IMPORTANT]
+> In .NET 5+ running on Windows versions listed in the [ICU on Windows](#icu-on-windows) table, the preceding snippet prints:
+>
+> ```Output
+> True
+> True
+> True
+> False
+> False
+> ```
+
+To avoid this behavior, use the `char` parameter overload or `StringComparison.Oridinal`.
+
+#### TimeZoneInfo.FindSystemTimeZoneById
+
+ICU provides the flexibility to create <xref:System.TimeZoneInfo> instances using [IANA](https://www.iana.org/time-zones) time zone IDs, even when the application is running on Windows. Similarly, you can create <xref:System.TimeZoneInfo> instances with Windows time zone IDs, even when running on non-Windows platforms. However, it's important to note that this functionality isn't available when using [NLS mode](#use-nls-instead-of-icu) or [globalization invariant mode](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md).
+
+#### ICU dependent APIs
+
+.NET introduced APIs that are dependent on ICU. These APIs can succeed only when using ICU. Here are some examples:
+
+- <xref:System.TimeZoneInfo.TryConvertIanaIdToWindowsId(System.String,System.String@)>
+- <xref:System.TimeZoneInfo.TryConvertWindowsIdToIanaId%2A>
+
+On the Windows versions listed in the [ICU on Windows](#icu-on-windows) section table, the mentioned APIs will consistently succeed. However, on older versions of Windows, these APIs will consistently fail. In such cases, you can enable the [app-local ICU](#app-local-icu) feature to ensure the success of these APIs. On non-Windows platforms, these APIs will always succeed regardless of the version.
+
+In addition, it's crucial for apps to ensure that they're not running in [globalization invariant mode](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md) or [NLS mode](#use-nls-instead-of-icu) to guarantee the success of these APIs.
+
 ### Use NLS instead of ICU
 
-Using ICU instead of NLS may result in behavioral differences with some globalization-related operations. To revert back to using NLS, a developer can opt out of the ICU implementation. Applications can enable NLS mode in any of the following ways:
+Using ICU instead of NLS might result in behavioral differences with some globalization-related operations. To revert back to using NLS, a developer can opt out of the ICU implementation. Applications can enable NLS mode in any of the following ways:
 
 - In the project file:
 
@@ -106,11 +186,11 @@ To determine the version of .NET, use <xref:System.Runtime.InteropServices.Runti
 
 ## App-local ICU
 
-Each release of ICU may bring with it bug fixes as well as updated Common Locale Data Repository (CLDR) data that describes the world's languages. Moving between versions of ICU can subtly impact app behavior when it comes to globalization-related operations. To help application developers ensure consistency across all deployments, .NET 5 and later versions enable apps on both Windows and Unix to carry and use their own copy of ICU.
+Each release of ICU might bring with it bug fixes and updated Common Locale Data Repository (CLDR) data that describes the world's languages. Moving between versions of ICU can subtly impact app behavior when it comes to globalization-related operations. To help application developers ensure consistency across all deployments, .NET 5 and later versions enable apps on both Windows and Unix to carry and use their own copy of ICU.
 
-Applications can opt in to an app-local ICU implementation mode in any of the following ways:
+Applications can opt in to an app-local ICU implementation mode in one of the following ways:
 
-- In  the project file:
+- In the project file, set the appropriate `RuntimeHostConfigurationOption` value:
 
   ```xml
   <ItemGroup>
@@ -118,7 +198,7 @@ Applications can opt in to an app-local ICU implementation mode in any of the fo
   </ItemGroup>
   ```
 
-- In the `runtimeconfig.json` file:
+- Or in the _runtimeconfig.json_ file, set the appropriate `runtimeOptions.configProperties` value:
 
   ```json
   {
@@ -130,24 +210,28 @@ Applications can opt in to an app-local ICU implementation mode in any of the fo
   }
   ```
 
-- By setting the environment variable `DOTNET_SYSTEM_GLOBALIZATION_APPLOCALICU` to the value `<suffix>:<version>` or `<version>`.
+- Or by setting the environment variable `DOTNET_SYSTEM_GLOBALIZATION_APPLOCALICU` to the value `<suffix>:<version>` or `<version>`.
 
   `<suffix>`: Optional suffix of fewer than 36 characters in length, following the public ICU packaging conventions. When building a custom ICU, you can customize it to produce the lib names and exported symbol names to contain a suffix, for example, `libicuucmyapp`, where `myapp` is the suffix.
 
   `<version>`: A valid ICU version, for example, 67.1. This version is used to load the binaries and to get the exported symbols.
 
-To load ICU when the app-local switch is set, .NET uses the <xref:System.Runtime.InteropServices.NativeLibrary.TryLoad%2A?displayProperty=nameWithType> method, which probes multiple paths. The method first tries to find the library in the `NATIVE_DLL_SEARCH_DIRECTORIES` property, which is created by the dotnet host based on the `deps.json` file for the app. For more information, see [Default probing](../../core/dependency-loading/default-probing.md).
+When either of these options is set, you can add a [Microsoft.ICU.ICU4C.Runtime](https://www.nuget.org/packages/Microsoft.ICU.ICU4C.Runtime) `PackageReference` to your project that corresponds to the configured `version` and that's all that is needed.
+
+Alternatively, to load ICU when the app-local switch is set, .NET uses the <xref:System.Runtime.InteropServices.NativeLibrary.TryLoad%2A?displayProperty=nameWithType> method, which probes multiple paths. The method first tries to find the library in the `NATIVE_DLL_SEARCH_DIRECTORIES` property, which is created by the dotnet host based on the `deps.json` file for the app. For more information, see [Default probing](../../core/dependency-loading/default-probing.md).
 
 For self-contained apps, no special action is required by the user, other than making sure ICU is in the app directory (for self-contained apps, the working directory defaults to `NATIVE_DLL_SEARCH_DIRECTORIES`).
 
 If you're consuming ICU via a NuGet package, this works in framework-dependent applications. NuGet resolves the native assets and includes them in the `deps.json` file and in the output directory for the application under the `runtimes` directory. .NET loads it from there.
 
-For framework-dependent apps (not self contained) where ICU is consumed from a local build, you must take additional steps. The .NET SDK doesn't yet have a feature for "loose" native binaries to be incorporated into `deps.json` (see [this SDK issue](https://github.com/dotnet/sdk/issues/11373)). Instead, you can enable this by adding additional information into the application's project file. For example:
+For framework-dependent apps (not self-contained) where ICU is consumed from a local build, you must take additional steps. The .NET SDK doesn't yet have a feature for "loose" native binaries to be incorporated into `deps.json` (see [this SDK issue](https://github.com/dotnet/sdk/issues/11373)). Instead, you can enable this by adding additional information into the application's project file. For example:
 
 ```xml
 <ItemGroup>
   <IcuAssemblies Include="icu\*.so*" />
-  <RuntimeTargetsCopyLocalItems Include="@(IcuAssemblies)" AssetType="native" CopyLocal="true" DestinationSubDirectory="runtimes/linux-x64/native/" DestinationSubPath="%(FileName)%(Extension)" RuntimeIdentifier="linux-x64" NuGetPackageId="System.Private.Runtime.UnicodeData" />
+  <RuntimeTargetsCopyLocalItems Include="@(IcuAssemblies)" AssetType="native" CopyLocal="true"
+    DestinationSubDirectory="runtimes/linux-x64/native/" DestinationSubPath="%(FileName)%(Extension)"
+    RuntimeIdentifier="linux-x64" NuGetPackageId="System.Private.Runtime.UnicodeData" />
 </ItemGroup>
 ```
 
@@ -155,7 +239,7 @@ This must be done for all the ICU binaries for the supported runtimes. Also, the
 
 ### macOS behavior
 
-`macOS` has a different behavior for resolving dependent dynamic libraries from the load commands specified in the `match-o` file than the Linux loader. In the Linux loader, .NET can try `libicudata`, `libicuuc`, and `libicui18n` (in that order) to satisfy ICU dependency graph. However, on macOS, this doesn't work. When building ICU on macOS, you, by default, get a dynamic library with these load commands in `libicuuc`. The following snippet shows an example.
+macOS has a different behavior for resolving dependent dynamic libraries from the load commands specified in the `Mach-O` file than the Linux loader. In the Linux loader, .NET can try `libicudata`, `libicuuc`, and `libicui18n` (in that order) to satisfy ICU dependency graph. However, on macOS, this doesn't work. When building ICU on macOS, you, by default, get a dynamic library with these load commands in `libicuuc`. The following snippet shows an example.
 
 ```sh
 ~/ % otool -L /Users/santifdezm/repos/icu-build/icu/install/lib/libicuuc.67.1.dylib
@@ -166,7 +250,7 @@ This must be done for all the ICU binaries for the supported runtimes. Also, the
  /usr/lib/libc++.1.dylib (compatibility version 1.0.0, current version 902.1.0)
 ```
 
-These commands just reference the name of the dependent libraries for the other components of ICU. The loader performs the search following the `dlopen` conventions, which involves having these libraries in the system directories or setting the `LD_LIBRARY_PATH` env vars, or having ICU at the app-level directory. If you can't set `LD_LIBRARY_PATH` or ensure that ICU binaries are at the app-level directory, you will need to do some extra work.
+These commands just reference the name of the dependent libraries for the other components of ICU. The loader performs the search following the `dlopen` conventions, which involves having these libraries in the system directories or setting the `LD_LIBRARY_PATH` env vars, or having ICU at the app-level directory. If you can't set `LD_LIBRARY_PATH` or ensure that ICU binaries are at the app-level directory, you'll need to do some extra work.
 
 There are some directives for the loader, like `@loader_path`, which tell the loader to search for that dependency in the same directory as the binary with that load command. There are two ways to achieve this:
 
@@ -204,4 +288,4 @@ The following APIs are supported with limitations:
 - <xref:System.String.Normalize(System.Text.NormalizationForm)?displayProperty=nameWithType> and <xref:System.String.IsNormalized(System.Text.NormalizationForm)?displayProperty=nameWithType> don't support the rarely used <xref:System.Text.NormalizationForm.FormKC> and <xref:System.Text.NormalizationForm.FormKD> forms.
 - <xref:System.Globalization.RegionInfo.CurrencyNativeName?displayProperty=nameWithType> returns the same value as <xref:System.Globalization.RegionInfo.CurrencyEnglishName?displayProperty=nameWithType>.
 
-In addition, a list of supported locales can be found on the [dotnet/icu repo](https://github.com/dotnet/icu/blob/0f49268ddfd3331ca090f1c51d2baa2f75f6c6c0/icu-filters/optimal.json#L6-L54).
+In addition, fewer locales are supported. The supported list can be found in the [dotnet/icu repo](https://github.com/dotnet/icu/blob/dotnet/main/icu-filters/icudt_wasm.json#L7-L195).

@@ -35,7 +35,7 @@ Dim actObject As Action(Of Object) = AddressOf SetObject
 Dim actString As Action(Of String) = actObject
 ```
 
-Covariance for arrays enables implicit conversion of an array of a more derived type to an array of a less derived type. But this operation is not type safe, as shown in the following code example.
+Covariance for arrays enables implicit conversion of an array of a more derived type to an array of a less derived type. But this operation isn't type safe, as shown in the following code example.
 
 ```vb
 Dim array() As Object = New String(10) {}
@@ -43,7 +43,12 @@ Dim array() As Object = New String(10) {}
 ' array(0) = 10
 ```
 
-Covariance and contravariance support for method groups allows for matching method signatures with delegate types. This enables you to assign to delegates not only methods that have matching signatures, but also methods that return more derived types (covariance) or that accept parameters that have less derived types (contravariance) than that specified by the delegate type. For more information, see [Variance in Delegates (Visual Basic)](variance-in-delegates.md) and [Using Variance in Delegates (Visual Basic)](using-variance-in-delegates.md).
+Covariance and contravariance support for method groups allows for matching method signatures with delegate types. This matching enables you to assign to a delegate not only a method that has a matching signature, but also a method that:
+
+- Returns a more derived type (covariance) than the return type specified by the delegate type.
+- Accepts parameters that have less derived types (contravariance) than those specified by the delegate type.
+
+For more information, see [Variance in Delegates (Visual Basic)](variance-in-delegates.md) and [Using Variance in Delegates (Visual Basic)](using-variance-in-delegates.md).
 
 The following code example shows covariance and contravariance support for method groups.
 
@@ -85,7 +90,7 @@ Dim objects As IEnumerable(Of Object) = strings
 
 A generic interface or delegate is called *variant* if its generic parameters are declared covariant or contravariant. Visual Basic enables you to create your own variant interfaces and delegates. For more information, see [Creating Variant Generic Interfaces (Visual Basic)](creating-variant-generic-interfaces.md) and [Variance in Delegates (Visual Basic)](variance-in-delegates.md).
 
-## Related Topics
+## Related articles
 
 |Title|Description|
 |-----------|-----------------|

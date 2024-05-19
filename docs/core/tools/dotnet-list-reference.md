@@ -5,7 +5,7 @@ ms.date: 02/14/2020
 ---
 # dotnet list reference
 
-**This article applies to:** ✔️ .NET Core 2.x SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -30,8 +30,6 @@ The `dotnet list reference` command provides a convenient option to list project
   The project file to operate on. If a file is not specified, the command will search the current directory for one.
 
 ## Options
-
-<!-- markdownlint-disable MD012 -->
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 

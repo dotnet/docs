@@ -55,6 +55,6 @@ The sample consists of two ASP.NET web applications: one contains just a WCF ser
 
 1. Open the solution for the JSONP Sample.
 
-2. press **F5** to launch `http://localhost:26648/JSONPClientPage.aspx` in the browser.
+2. press <kbd>F5</kbd> to launch `http://localhost:26648/JSONPClientPage.aspx` in the browser.
 
 3. Notice that after the page loads, the text inputs for "Name" and "Address" are populated by values. These values were supplied from a call to the WCF service after the browser finished rendering the page.

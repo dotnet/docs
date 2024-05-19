@@ -1,5 +1,5 @@
 ---
-title: "Explicit Interface Implementation - C# Programming Guide"
+title: "Explicit Interface Implementation"
 description: A class can implement interfaces that contain a member with the same signature in C#. Explicit implementation creates a class member specific to one interface.
 ms.date: 03/24/2021
 helpviewer_keywords: 
@@ -30,7 +30,7 @@ Explicit implementation is also used to resolve cases where two interfaces each 
 
 An explicit interface implementation doesn't have an access modifier since it isn't accessible as a member of the type it's defined in. Instead, it's only accessible when called through an instance of the interface. If you specify an access modifier for an explicit interface implementation, you get compiler error [CS0106](../../language-reference/compiler-messages/cs0106.md). For more information, see [`interface` (C# Reference)](../../language-reference/keywords/interface.md).
 
-Beginning with [C# 8.0](../../whats-new/csharp-8.md#default-interface-methods), you can define an implementation for members declared in an interface. If a class inherits a method implementation from an interface, that method is only accessible through a reference of the interface type. The inherited member doesn't appear as part of the public interface. The following sample defines a default implementation for an interface method:
+You can define an implementation for members declared in an interface. If a class inherits a method implementation from an interface, that method is only accessible through a reference of the interface type. The inherited member doesn't appear as part of the public interface. The following sample defines a default implementation for an interface method:
 
 [!code-csharp[NameCollisions](~/samples/snippets/csharp/interfaces/ExplicitImplementation.cs#DefaultImplementation)]
 
@@ -42,7 +42,6 @@ Any class that implements the `IControl` interface can override the default `Pai
 
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Object oriented programming](../../fundamentals/object-oriented/index.md)
 - [Interfaces](../../fundamentals/types/interfaces.md)
 - [Inheritance](../../fundamentals/object-oriented/inheritance.md)

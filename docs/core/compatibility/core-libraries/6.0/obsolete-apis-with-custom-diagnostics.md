@@ -10,7 +10,7 @@ Some APIs have been marked as obsolete, starting in .NET 6. This breaking change
 
 ## Change description
 
-In previous .NET versions, these APIs can be used without any build warning. In .NET 6 and later versions, use of these APIS produces a compile-time warning or error with a custom diagnostic ID. The use of custom diagnostic IDs allows you to suppress the obsoletion warnings individually instead of blanket-suppressing all obsoletion warnings.
+In previous .NET versions, these APIs can be used without any build warning. In .NET 6 and later versions, use of these APIs produces a compile-time warning or error with a custom diagnostic ID. The use of custom diagnostic IDs allows you to suppress the obsoletion warnings individually instead of blanket-suppressing all obsoletion warnings.
 
 The following table lists the custom diagnostic IDs and their corresponding warning messages for obsoleted APIs.
 

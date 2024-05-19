@@ -1,24 +1,24 @@
 ---
-title: "Using Delegates - C# Programming Guide"
+title: "Using Delegates"
 description: Learn how to use delegates. Delegates are an object-oriented, type safe, and secure type that safely encapsulates a method.
-ms.date: 07/20/2015
+ms.date: 07/31/2023
 helpviewer_keywords:
   - "delegates [C#], how to use"
 ms.assetid: 99a2fc27-a32e-4a34-921c-e65497520eec
 ---
 # Using Delegates (C# Programming Guide)
 
-A [delegate](../../language-reference/builtin-types/reference-types.md) is a type that safely encapsulates a method, similar to a function pointer in C and C++. Unlike C function pointers, delegates are object-oriented, type safe, and secure. The type of a delegate is defined by the name of the delegate. The following example declares a delegate named `Del` that can encapsulate a method that takes a [string](../../language-reference/builtin-types/reference-types.md) as an argument and returns [void](../../language-reference/builtin-types/void.md):
+A [delegate](../../language-reference/builtin-types/reference-types.md) is a type that safely encapsulates a method, similar to a function pointer in C and C++. Unlike C function pointers, delegates are object-oriented, type safe, and secure. The type of a delegate is defined by the name of the delegate. The following example declares a delegate named `Callback` that can encapsulate a method that takes a [string](../../language-reference/builtin-types/reference-types.md) as an argument and returns [void](../../language-reference/builtin-types/void.md):
 
 [!code-csharp[csProgGuideDelegates#21](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDelegates/CS/Delegates.cs#21)]
 
-A delegate object is normally constructed by providing the name of the method the delegate will wrap, or with a [lambda expression](../../language-reference/operators/lambda-expressions.md). Once a delegate is instantiated, a method call made to the delegate will be passed by the delegate to that method. The parameters passed to the delegate by the caller are passed to the method, and the return value, if any, from the method is returned to the caller by the delegate. This is known as invoking the delegate. An instantiated delegate can be invoked as if it were the wrapped method itself. For example:
+A delegate object is normally constructed by providing the name of the method the delegate will wrap, or with a [lambda expression](../../language-reference/operators/lambda-expressions.md). Once a delegate is instantiated in this manner it can be invoked. Invoking a delegate calls the method attached to the delegate instance. The parameters passed to the delegate by the caller are passed to the method, and the return value, if any, from the method is returned to the caller by the delegate. For example:
 
 [!code-csharp[csProgGuideDelegates#22](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDelegates/CS/Delegates.cs#22)]  
 
 [!code-csharp[csProgGuideDelegates#23](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDelegates/CS/Delegates.cs#23)]
 
-Delegate types are derived from the <xref:System.Delegate> class in .NET. Delegate types are [sealed](../../language-reference/keywords/sealed.md)—they cannot be derived from— and it is not possible to derive custom classes from <xref:System.Delegate>. Because the instantiated delegate is an object, it can be passed as a parameter, or assigned to a property. This allows a method to accept a delegate as a parameter, and call the delegate at some later time. This is known as an asynchronous callback, and is a common method of notifying a caller when a long process has completed. When a delegate is used in this fashion, the code using the delegate does not need any knowledge of the implementation of the method being used. The functionality is similar to the encapsulation interfaces provide.
+Delegate types are derived from the <xref:System.Delegate> class in .NET. Delegate types are [sealed](../../language-reference/keywords/sealed.md)—they cannot be derived from— and it is not possible to derive custom classes from <xref:System.Delegate>. Because the instantiated delegate is an object, it can be passed as an argument, or assigned to a property. This allows a method to accept a delegate as a parameter, and call the delegate at some later time. This is known as an asynchronous callback, and is a common method of notifying a caller when a long process has completed. When a delegate is used in this fashion, the code using the delegate does not need any knowledge of the implementation of the method being used. The functionality is similar to the encapsulation interfaces provide.
 
 Another common use of callbacks is defining a custom comparison method and passing that delegate to a sort method. It allows the caller's code to become part of the sort algorithm. The following example method uses the `Del` type as a parameter:
 
@@ -64,7 +64,6 @@ Comparing delegates of two different types assigned at compile-time will result 
 
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Delegates](./index.md)
 - [Using Variance in Delegates](../concepts/covariance-contravariance/using-variance-in-delegates.md)
 - [Variance in Delegates](../concepts/covariance-contravariance/variance-in-delegates.md)

@@ -7,6 +7,8 @@ ms.date: 12/12/2021
 ---
 # Architectural principles
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 > "If builders built buildings the way programmers wrote programs, then the first woodpecker that came along would destroy civilization."  
 > _\- Gerald Weinberg_
 
@@ -46,7 +48,7 @@ Applying the dependency inversion principle allows A to call methods on an abstr
 
 ### Explicit dependencies
 
-**Methods and classes should explicitly require any collaborating objects they need in order to function correctly.** I call this the [Explicit Dependencies Principle](https://deviq.com/principles/explicit-dependencies-principle). Class constructors provide an opportunity for classes to identify the things they need in order to be in a valid state and to function properly. If you define classes that can be constructed and called, but that will only function properly if certain global or infrastructure components are in place, these classes are being *dishonest* with their clients. The constructor contract is telling the client that it only needs the things specified (possibly nothing if the class is just using a parameterless constructor), but then at runtime it turns out the object really did need something else.
+**Methods and classes should explicitly require any collaborating objects they need in order to function correctly.** It is called the [Explicit Dependencies Principle](https://deviq.com/principles/explicit-dependencies-principle). Class constructors provide an opportunity for classes to identify the things they need in order to be in a valid state and to function properly. If you define classes that can be constructed and called, but that will only function properly if certain global or infrastructure components are in place, these classes are being *dishonest* with their clients. The constructor contract is telling the client that it only needs the things specified (possibly nothing if the class is just using a parameterless constructor), but then at runtime it turns out the object really did need something else.
 
 By following the explicit dependencies principle, your classes and methods are being honest with their clients about what they need in order to function. Following the principle makes your code more self-documenting and your coding contracts more user-friendly, since users will come to trust that as long as they provide what's required in the form of method or constructor parameters, the objects they're working with will behave correctly at run time.
 

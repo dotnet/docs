@@ -1,15 +1,14 @@
 ---
 title: 'Tutorial: Detect anomalies in phone calls'
-description: Learn how to build an anomaly detection application for time series data. This tutorial creates a .NET Core console application using C# in Visual Studio 2019.
+description: Learn how to build an anomaly detection application for time series data. This tutorial creates a .NET console application using C# in Visual Studio 2019.
 ms.date: 07/28/2021
 ms.topic: tutorial
 ms.custom: mvc
-recommendations: false
 #Customer intent: As a developer, I want to use ML.NET in a time-series anomaly detection for number of phone calls so that I can analyze the data for anomaly points to take the appropriate action.
 ---
 # Tutorial: Detect anomalies in time series with ML.NET
 
-Learn how to build an anomaly detection application for time series data. This tutorial creates a .NET Core console application using C# in Visual Studio 2019.
+Learn how to build an anomaly detection application for time series data. This tutorial creates a .NET console application using C# in Visual Studio 2019.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
@@ -203,8 +202,8 @@ In this step, you use the <xref:Microsoft.ML.TimeSeriesCatalog.DetectEntireAnoma
     * `Index` is the index of each point.
     * `Anomaly` is the indicator of whether each point is detected as anomaly.
     * `ExpectedValue` is the estimated value of each point.
-    * `LowerBoundary` is the lowest value each point can be to be not anomaly.
-    * `UpperBoundary` is the highest value each point can be to be not anomaly.
+    * `LowerBoundary` is the lowest value each point can be to not be an anomaly.
+    * `UpperBoundary` is the highest value each point can be to not be an anomaly.
 
 6. Iterate through the `predictions` `IEnumerable` and display the results with the following code:
 

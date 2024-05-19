@@ -1,29 +1,28 @@
 ﻿using System;
 using System.Data;
 
-namespace NavigationCS
+namespace NavigationCS;
+
+static class Program
 {
-    class Program
+    static void Main()
     {
-        static void Main()
+        DataSet customerOrders = new();
+        // <Snippet1>
+        DataRelation customerOrdersRelation =
+            customerOrders.Relations.Add("CustOrders",
+            customerOrders.Tables["Customers"].Columns["CustomerID"],
+            customerOrders.Tables["Orders"].Columns["CustomerID"]);
+
+        foreach (DataRow custRow in customerOrders.Tables["Customers"].Rows)
         {
-            DataSet customerOrders = new DataSet();
-            // <Snippet1>
-            DataRelation customerOrdersRelation =
-                customerOrders.Relations.Add("CustOrders",
-                customerOrders.Tables["Customers"].Columns["CustomerID"],
-                customerOrders.Tables["Orders"].Columns["CustomerID"]);
+            Console.WriteLine(custRow["CustomerID"].ToString());
 
-            foreach (DataRow custRow in customerOrders.Tables["Customers"].Rows)
+            foreach (DataRow orderRow in custRow.GetChildRows(customerOrdersRelation))
             {
-                Console.WriteLine(custRow["CustomerID"].ToString());
-
-                foreach (DataRow orderRow in custRow.GetChildRows(customerOrdersRelation))
-                {
-                    Console.WriteLine(orderRow["OrderID"].ToString());
-                }
+                Console.WriteLine(orderRow["OrderID"].ToString());
             }
-            // </Snippet1>
         }
+        // </Snippet1>
     }
 }

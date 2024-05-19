@@ -3,10 +3,10 @@
 class DayOfWeekCollection
 {
     Day[] days =
-    {
+    [
         Day.Sunday, Day.Monday, Day.Tuesday, Day.Wednesday,
         Day.Thursday, Day.Friday, Day.Saturday
-    };
+    ];
 
     // Indexer with only a get accessor with the expression-bodied definition:
     public int this[Day day] => FindDayIndex(day);

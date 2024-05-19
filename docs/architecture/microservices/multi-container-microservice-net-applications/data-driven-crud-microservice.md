@@ -1,10 +1,12 @@
 ---
 title: Creating a simple data-driven CRUD microservice
 description: .NET Microservices Architecture for Containerized .NET Applications | Understand the creation of a simple CRUD (data-driven) microservice within the context of a microservices application.
-ms.date: 06/23/2021
+ms.date: 03/04/2024
 ---
 
 # Creating a simple data-driven CRUD microservice
+
+[!INCLUDE [download-alert](../includes/download-alert.md)]
 
 This section outlines how to create a simple microservice that performs create, read, update, and delete (CRUD) operations on a data source.
 
@@ -182,45 +184,40 @@ In ASP.NET Core, you can use Dependency Injection (DI) out of the box. You do no
 
 In the `CatalogController` class mentioned earlier, `CatalogContext` (which inherits from `DbContext`) type is injected along with the other required objects in the `CatalogController()` constructor.
 
-An important configuration to set up in the Web API project is the DbContext class registration into the service's IoC container. You typically do so in the `Startup` class by calling the `services.AddDbContext<CatalogContext>()` method inside the `ConfigureServices()` method, as shown in the following **simplified** example:
+An important configuration to set up in the Web API project is the DbContext class registration into the service's IoC container. You typically do so in the _Program.cs_ file by calling the `builder.Services.AddDbContext<CatalogContext>()` method, as shown in the following **simplified** example:
 
 ```csharp
-public void ConfigureServices(IServiceCollection services)
+// Additional code...
+
+builder.Services.AddDbContext<CatalogContext>(options =>
 {
-    // Additional code...
-    services.AddDbContext<CatalogContext>(options =>
+    options.UseSqlServer(builder.Configuration["ConnectionString"],
+    sqlServerOptionsAction: sqlOptions =>
     {
-        options.UseSqlServer(Configuration["ConnectionString"],
-        sqlServerOptionsAction: sqlOptions =>
-        {
-            sqlOptions.MigrationsAssembly(
-                typeof(Startup).GetTypeInfo().Assembly.GetName().Name);
+        sqlOptions.MigrationsAssembly(
+            typeof(Program).GetTypeInfo().Assembly.GetName().Name);
 
-           //Configuring Connection Resiliency:
-           sqlOptions.
-               EnableRetryOnFailure(maxRetryCount: 5,
-               maxRetryDelay: TimeSpan.FromSeconds(30),
-               errorNumbersToAdd: null);
+        //Configuring Connection Resiliency:
+        sqlOptions.
+            EnableRetryOnFailure(maxRetryCount: 5,
+            maxRetryDelay: TimeSpan.FromSeconds(30),
+            errorNumbersToAdd: null);
+    });
 
-       });
-
-       // Changing default behavior when client evaluation occurs to throw.
-       // Default in EFCore would be to log warning when client evaluation is done.
-       options.ConfigureWarnings(warnings => warnings.Throw(
-           RelationalEventId.QueryClientEvaluationWarning));
-   });
-
-  //...
-}
+    // Changing default behavior when client evaluation occurs to throw.
+    // Default in EFCore would be to log warning when client evaluation is done.
+    options.ConfigureWarnings(warnings => warnings.Throw(
+        RelationalEventId.QueryClientEvaluationWarning));
+});
 ```
 
 ### Additional resources
 
 - **Querying Data** \
-  [https://docs.microsoft.com/ef/core/querying/index](/ef/core/querying/index)
+  [https://learn.microsoft.com/ef/core/querying/index](/ef/core/querying/index)
 
 - **Saving Data** \
-  [https://docs.microsoft.com/ef/core/saving/index](/ef/core/saving/index)
+  [https://learn.microsoft.com/ef/core/saving/index](/ef/core/saving/index)
 
 ## The DB connection string and environment variables used by Docker containers
 
@@ -259,7 +256,7 @@ catalog-api:
 
 The docker-compose.yml files at the solution level are not only more flexible than configuration files at the project or microservice level, but also more secure if you override the environment variables declared at the docker-compose files with values set from your deployment tools, like from Azure DevOps Services Docker deployment tasks.
 
-Finally, you can get that value from your code by using Configuration\["ConnectionString"\], as shown in the ConfigureServices method in an earlier code example.
+Finally, you can get that value from your code by using `builder.Configuration\["ConnectionString"\]`, as shown in an earlier code example.
 
 However, for production environments, you might want to explore additional ways on how to store secrets like the connection strings. An excellent way to manage application secrets is using [Azure Key Vault](https://azure.microsoft.com/services/key-vault/).
 
@@ -300,11 +297,13 @@ This versioning mechanism is simple and depends on the server routing the reques
 
 ### Additional resources
 
+- **ASP.NET API Versioning** \ <https://github.com/dotnet/aspnet-api-versioning>
+
 - **Scott Hanselman. ASP.NET Core RESTful Web API versioning made easy** \
   <https://www.hanselman.com/blog/ASPNETCoreRESTfulWebAPIVersioningMadeEasy.aspx>
 
 - **Versioning a RESTful web API** \
-  [https://docs.microsoft.com/azure/architecture/best-practices/api-design#versioning-a-restful-web-api](/azure/architecture/best-practices/api-design#versioning-a-restful-web-api)
+  [https://learn.microsoft.com/azure/architecture/best-practices/api-design#versioning-a-restful-web-api](/azure/architecture/best-practices/api-design#versioning-a-restful-web-api)
 
 - **Roy Fielding. Versioning, Hypermedia, and REST** \
   <https://www.infoq.com/articles/roy-fielding-on-versioning>
@@ -359,45 +358,32 @@ The Swashbuckle generated Swagger UI API documentation includes all published ac
 
 Currently, Swashbuckle consists of five internal NuGet packages under the high-level metapackage [Swashbuckle.AspNetCore](https://www.nuget.org/packages/Swashbuckle.AspNetCore) for ASP.NET Core applications.
 
-After you have installed these NuGet packages in your Web API project, you need to configure Swagger in the Startup class, as in the following **simplified** code:
+After you have installed these NuGet packages in your Web API project, you need to configure Swagger in the _Program.cs_ class, as in the following **simplified** code:
 
 ```csharp
-public class Startup
+// Add framework services.
+
+builder.Services.AddSwaggerGen(options =>
 {
-    public IConfigurationRoot Configuration { get; }
-    // Other startup code...
-
-    public void ConfigureServices(IServiceCollection services)
+    options.DescribeAllEnumsAsStrings();
+    options.SwaggerDoc("v1", new OpenApiInfo
     {
-        // Other ConfigureServices() code...
+        Title = "eShopOnContainers - Catalog HTTP API",
+        Version = "v1",
+        Description = "The Catalog Microservice HTTP API. This is a Data-Driven/CRUD microservice sample"
+    });
+});
 
-        // Add framework services.
-        services.AddSwaggerGen(options =>
-        {
-            options.DescribeAllEnumsAsStrings();
-            options.SwaggerDoc("v1", new OpenApiInfo
-            {
-                Title = "eShopOnContainers - Catalog HTTP API",
-                Version = "v1",
-                Description = "The Catalog Microservice HTTP API. This is a Data-Driven/CRUD microservice sample"
-            });
-        });
+// Other startup code...
 
-        // Other ConfigureServices() code...
-    }
+app.UseSwagger();
 
-    public void Configure(IApplicationBuilder app,
-        IHostingEnvironment env,
-        ILoggerFactory loggerFactory)
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwaggerUI(c =>
     {
-        // Other Configure() code...
-        // ...
-        app.UseSwagger()
-            .UseSwaggerUI(c =>
-            {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
-            });
-    }
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+    });
 }
 ```
 
@@ -415,24 +401,18 @@ You previously saw the generated UI created by Swashbuckle for a URL like `http:
 
 **Figure 6-9**. Swashbuckle UI testing the Catalog/Items API method
 
-The Swagger UI API detail shows a sample of the response and can be used to execute the real API, which is great for developer discovery. Figure 6-10 shows the Swagger JSON metadata generated from the eShopOnContainers microservice (which is what the tools use underneath) when you request `http://<your-root-url>/swagger/v1/swagger.json` using [Postman](https://www.getpostman.com/).
-
-![Screenshot of a Sample Postman UI showing Swagger JSON metadata.](./media/data-driven-crud-microservice/swagger-json-metadata.png)
-
-**Figure 6-10**. Swagger JSON metadata
-
-It is that simple. And because it is automatically generated, the Swagger metadata will grow when you add more functionality to your API.
+The Swagger UI API detail shows a sample of the response and can be used to execute the real API, which is great for developer discovery. To see the Swagger JSON metadata generated from the eShopOnContainers microservice (which is what the tools use underneath), make a you request `http://<your-root-url>/swagger/v1/swagger.json` using the [Visual Studio Code: REST Client extension](https://marketplace.visualstudio.com/items?itemName=humao.rest-client).
 
 ### Additional resources
 
 - **ASP.NET Web API Help Pages using Swagger** \
-  [https://docs.microsoft.com/aspnet/core/tutorials/web-api-help-pages-using-swagger](/aspnet/core/tutorials/web-api-help-pages-using-swagger)
+  [https://learn.microsoft.com/aspnet/core/tutorials/web-api-help-pages-using-swagger](/aspnet/core/tutorials/web-api-help-pages-using-swagger)
 
 - **Get started with Swashbuckle and ASP.NET Core** \
-  [https://docs.microsoft.com/aspnet/core/tutorials/getting-started-with-swashbuckle](/aspnet/core/tutorials/getting-started-with-swashbuckle)
+  [https://learn.microsoft.com/aspnet/core/tutorials/getting-started-with-swashbuckle](/aspnet/core/tutorials/getting-started-with-swashbuckle)
 
 - **Get started with NSwag and ASP.NET Core** \
-  [https://docs.microsoft.com/aspnet/core/tutorials/getting-started-with-nswag](/aspnet/core/tutorials/getting-started-with-nswag)
+  [https://learn.microsoft.com/aspnet/core/tutorials/getting-started-with-nswag](/aspnet/core/tutorials/getting-started-with-nswag)
 
 > [!div class="step-by-step"]
 > [Previous](microservice-application-design.md)

@@ -79,6 +79,7 @@ This example produces the following output:
 
 ```output
 Some text that's broken up into multiple segments.
+```
 
 ## Example: Find when the XML is in a namespace
 

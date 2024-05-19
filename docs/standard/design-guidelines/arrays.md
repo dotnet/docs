@@ -10,6 +10,8 @@ helpviewer_keywords:
 ---
 # Arrays (.NET Framework design guidelines)
 
+[!INCLUDE [not-current](includes/not-current.md)]
+
 ✔️ DO prefer using collections over arrays in public APIs. The [Collections](guidelines-for-collections.md) section provides details about how to choose between collections and arrays.
 
  ❌ DO NOT use read-only array fields. The field itself is read-only and can't be changed, but elements in the array can be changed.

@@ -11,7 +11,7 @@ ms.assetid: d266cbd8-bf91-41d1-baf0-afbc481a741f
 
 By default, applications use the set of .NET Framework assemblies that shipped with the runtime version used to compile the application. You can use the **appliesTo** attribute on the [\<assemblyBinding>](../configure-apps/file-schema/runtime/assemblybinding-element-for-runtime.md) element in an application configuration file to redirect assembly binding references to a specific version of the .NET Framework assemblies. This optional attribute uses a .NET Framework version number to indicate which version it applies to. If no **appliesTo** attribute is specified, the **\<assemblyBinding>** element applies to all versions of the .NET Framework.  
   
- The **appliesTo** attribute was introduced in the .NET Framework version 1.1; it is ignored by the .NET Framework version 1.0. This means that all **\<assemblyBinding>** elements are applied when using the .NET Framework version 1.0, even if an **appliesTo** attribute is specified.  
+ The **appliesTo** attribute was introduced in the .NET Framework version 1.1; it is ignored by .NET Framework version 1.0. This means that all **\<assemblyBinding>** elements are applied when using .NET Framework version 1.0, even if an **appliesTo** attribute is specified.  
   
 > [!NOTE]
 > Use the **appliesTo** attribute to limit assembly binding redirection to a specific version of the runtime.  

@@ -11,14 +11,14 @@ The `rec` keyword is used together with the `let` keyword to define a recursive 
 
 ```fsharp
 // Recursive function:
-let rec function-nameparameter-list =
+let rec function-name parameter-list =
     function-body
 
 // Mutually recursive functions:
-let rec function1-nameparameter-list =
+let rec function1-name parameter-list =
     function1-body
 
-and function2-nameparameter-list =
+and function2-name parameter-list =
     function2-body
 ...
 ```
@@ -37,7 +37,7 @@ let rec fib n =
 ```
 
 > [!NOTE]
-> In practice, code like the previous sample is not ideal because it unecessarily recomputes values that have already been computed. This is because it is not tail recursive, which is explained further in this article.
+> In practice, code like the previous sample is not ideal because it unnecessarily recomputes values that have already been computed. This is because it is not tail recursive, which is explained further in this article.
 
 Methods are implicitly recursive within the type they are defined in, meaning there is no need to add the `rec` keyword. For example:
 
@@ -49,11 +49,11 @@ type MyClass() =
         | n -> this.Fib(n-1) + this.Fib(n-2)
 ```
 
-Let bindings within classes are not implicitly recursive, though. All `let`-bound functions require the `rec` keyword.
+`let` bindings within classes are not implicitly recursive, though. All `let`-bound functions require the `rec` keyword.
 
 ## Tail recursion
 
-For some recursive functions, it is necessary to refactor a more "pure" definition to one that is [tail recursive](https://cs.stackexchange.com/questions/6230/what-is-tail-recursion). This prevents unnecessary recomputations. For example, the previous fibonacci number generator can be rewritten like this:
+For some recursive functions, it is necessary to refactor a more "pure" definition to one that is [tail recursive](https://cs.stackexchange.com/questions/6230/what-is-tail-recursion). This prevents unnecessary recomputations. For example, the previous Fibonacci number generator can be rewritten like this:
 
 ```fsharp
 let fib n =
@@ -66,11 +66,11 @@ let fib n =
     loop 0 1 n
 ```
 
-This is a more complicated implementation. Generating a fibonacci number is a great example of a "naive" algorithm that's mathematically pure but inefficient in practice. Several aspects make it efficient in F# while still remaining recursively defined:
+Generating a Fibonacci number is a great example of a "naive" algorithm that's mathematically pure but inefficient in practice. While this is a more complicated implementation, several aspects make it efficient in F# while still remaining recursively defined:
 
 * A recursive inner function named `loop`, which is an idiomatic F# pattern.
-* Two accumulator parameters, which pass accumulate values to recursive calls.
-* A check on the value of `n` to return a specific accumulate.
+* Two accumulator parameters, which pass accumulated values to recursive calls.
+* A check on the value of `n` to return a specific accumulator.
 
 If this example were written iteratively with a loop, the code would look similar with two different values accumulating numbers until a particular condition was met.
 
@@ -78,9 +78,22 @@ The reason why this is tail-recursive is because the recursive call does not nee
 
 It's common to write F# code that recursively processes something with an inner and outer function, as the previous example shows. The inner function uses tail recursion, while the outer function has a better interface for callers.
 
+Starting with F# 8.0, you can use the `TailCall` attribute to explicitly state your intention of defining a tail-recursive function to the compiler. The compiler will then warn you if your function makes non-tail recursive calls. You can use the attribute on methods and module-level functions.  
+For example, using it on the first `fib` definition:
+
+```fsharp
+[<TailCall>]
+let rec fib n =
+    match n with
+    | 0 | 1 -> n
+    | n -> fib (n-1) + fib (n-2)
+```
+
+would trigger compiler warnings about the two non-tail recursive calls.
+
 ## Mutually Recursive Functions
 
-Sometimes functions are *mutually recursive*, meaning that calls form a circle, where one function calls another which in turn calls the first, with any number of calls in between. You must define such functions together in the one `let` binding, using the `and` keyword to link them together.
+Sometimes functions are *mutually recursive*, meaning that calls form a circle, where one function calls another which in turn calls the first, with any number of calls in between. You must define such functions together in one `let` binding, using the `and` keyword to link them together.
 
 The following example shows two mutually recursive functions.
 

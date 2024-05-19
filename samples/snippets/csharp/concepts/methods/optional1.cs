@@ -1,27 +1,25 @@
 ﻿// <Snippet21>
-using System;
-
 public class Options
 {
     public void ExampleMethod(int required, int optionalInt = default,
                               string? description = default)
-   {
+    {
         var msg = $"{description ?? "N/A"}: {required} + {optionalInt} = {required + optionalInt}";
         Console.WriteLine(msg);
-   }
+    }
 }
 // </Snippet21>
 
 // <Snippet22>
-public class OptionsExample
+public static class OptionsExample
 {
-   public static void Main()
-   {
-      var opt = new Options();
-      opt.ExampleMethod(10);
-      opt.ExampleMethod(10, 2);
-      opt.ExampleMethod(12, description: "Addition with zero:");
-   }
+    public static void Main()
+    {
+        var opt = new Options();
+        opt.ExampleMethod(10);
+        opt.ExampleMethod(10, 2);
+        opt.ExampleMethod(12, description: "Addition with zero:");
+    }
 }
 // The example displays the following output:
 //      N/A: 10 + 0 = 10

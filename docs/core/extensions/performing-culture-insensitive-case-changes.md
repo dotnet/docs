@@ -1,7 +1,7 @@
 ---
 title: Perform culture-insensitive case changes
 description: "Learn how to perform culture-insensitive case changes"
-ms.date: 08/11/2021
+ms.date: 03/13/2023
 dev_langs:
     - "csharp"
     - "vb"
@@ -25,9 +25,9 @@ Often, strings are converted to a standard case to enable easier lookup later. W
 
 If a security decision is based on a case change operation, the operation should be culture-insensitive to ensure that the result is not affected by the value of `CultureInfo.CurrentCulture`. See the "String Comparisons that Use the Current Culture" section of the [Best Practices for Using Strings](../../standard/base-types/best-practices-strings.md) article for an example that demonstrates how culture-sensitive string operations can produce inconsistent results.
 
-## Using the String.ToUpper and String.ToLower Methods
+## String.ToUpper and String.ToLower
 
-For code clarity, it is recommended that you always use overloads of the `String.ToUpper` and `String.ToLower` methods that allow you to specify a `culture` parameter explicitly. For example, the following code performs an identifier lookup. The `key.ToLower` operation is culture-sensitive by default, but this behavior is not clear from reading the code.
+For code clarity, it's recommended that you always use overloads of the `String.ToUpper` and `String.ToLower` methods that let you specify a culture explicitly. For example, the following code performs an identifier lookup. The `key.ToLower` operation is culture-sensitive by default, but this behavior is not clear from reading the code.
 
 ### Example
 
@@ -44,7 +44,7 @@ static object LookupKey(string key)
 }
 ```
 
-If you want the `key.ToLower` operation to be culture-insensitive, you should change the preceding example as follows to explicitly use the `CultureInfo.InvariantCulture` when changing the case.
+If you want the `key.ToLower` operation to be culture-insensitive, change the preceding example as follows to explicitly use `CultureInfo.InvariantCulture` when changing the case.
 
 ```vb
 Shared Function LookupKey(key As String) As Object
@@ -59,9 +59,9 @@ static object LookupKey(string key)
 }
 ```
 
-## Using the Char.ToUpper and Char.ToLower Methods
+## Char.ToUpper and Char.ToLower
 
-Although the `Char.ToUpper` and `Char.ToLower` methods have the same characteristics as the `String.ToUpper` and `String.ToLower` methods, the only cultures that are affected are Turkish (Turkey) and Azerbaijani (Latin, Azerbaijan). These are the only two cultures with single-character casing differences. For more details about this unique case mapping, see the "Casing" section in the <xref:System.String> class topic. For code clarity and to ensure consistent results, it is recommended that you always use the overloads of these methods that allow you to explicitly specify a `culture` parameter.
+Although the `Char.ToUpper` and `Char.ToLower` methods have the same characteristics as the `String.ToUpper` and `String.ToLower` methods, the only cultures that are affected are Turkish (Türkiye) and Azerbaijani (Latin, Azerbaijan). These are the only two cultures with single-character casing differences. For more details about this unique case mapping, see the "Casing" section in the <xref:System.String> class documentation. For code clarity and to ensure consistent results, it's recommended that you always use the overloads of these methods that accept a <xref:System.Globalization.CultureInfo> parameter.
 
 ## See also
 
@@ -69,4 +69,6 @@ Although the `Char.ToUpper` and `Char.ToLower` methods have the same characteris
 - <xref:System.String.ToLower%2A?displayProperty=nameWithType>
 - <xref:System.Char.ToUpper%2A?displayProperty=nameWithType>
 - <xref:System.Char.ToLower%2A?displayProperty=nameWithType>
+- [CA1311: Specify a culture or use an invariant version](../../fundamentals/code-analysis/quality-rules/ca1311.md)
+- [Change case in .NET](../../standard/base-types/changing-case.md)
 - [Perform culture-insensitive string operations](performing-culture-insensitive-string-operations.md)

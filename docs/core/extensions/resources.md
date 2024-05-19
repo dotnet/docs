@@ -1,7 +1,7 @@
 ---
 title: "Resources in .NET apps"
 description: Understand resources in .NET apps. A resource is any non-executable data that's logically deployed with an app.
-ms.date: 08/09/2021
+ms.date: 03/13/2023
 helpviewer_keywords:
   - "deploying applications [.NET Framework], resources"
   - "deploying applications [.NET Core], resources"

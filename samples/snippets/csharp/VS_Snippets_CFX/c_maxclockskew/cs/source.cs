@@ -7,8 +7,6 @@ using System.ServiceModel.Description;
 //using System.Security.Cryptography.X509Certificates;
 using System.ServiceModel.Security.Tokens;
 
-[assembly: SecurityPermission(
-   SecurityAction.RequestMinimum, Execution = true)]
 namespace Examples
 {
     public class Program

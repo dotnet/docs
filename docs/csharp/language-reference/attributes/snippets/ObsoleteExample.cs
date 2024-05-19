@@ -1,5 +1,4 @@
 ﻿// <Snippet1>
-using System;
 
 namespace AttributeExamples
 {

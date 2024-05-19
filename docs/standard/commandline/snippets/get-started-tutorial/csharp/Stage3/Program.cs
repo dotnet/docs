@@ -19,7 +19,7 @@ class Program
                     return new FileInfo("sampleQuotes.txt");
 
                 }
-                var filePath = result.Tokens.Single().Value;
+                string? filePath = result.Tokens.Single().Value;
                 if (!File.Exists(filePath))
                 {
                     result.ErrorMessage = "File does not exist";
@@ -87,25 +87,22 @@ class Program
         quotesCommand.AddCommand(addCommand);
         // </commands>
 
-        readCommand.SetHandler(async
-            (FileInfo file, int delay, ConsoleColor fgcolor, bool lightMode) =>
-        {
-            await ReadFile(file, delay, fgcolor, lightMode);
-        },
-                fileOption, delayOption, fgcolorOption, lightModeOption);
+        readCommand.SetHandler(async (file, delay, fgcolor, lightMode) =>
+            {
+                await ReadFile(file!, delay, fgcolor, lightMode);
+            },
+            fileOption, delayOption, fgcolorOption, lightModeOption);
 
         // <sethandlers>
-        deleteCommand.SetHandler(
-            (FileInfo file, string[] searchTerms) =>
+        deleteCommand.SetHandler((file, searchTerms) =>
             {
-                DeleteFromFile(file, searchTerms);
+                DeleteFromFile(file!, searchTerms);
             },
             fileOption, searchTermsOption);
 
-        addCommand.SetHandler(
-            (FileInfo file, string quote, string byline) =>
+        addCommand.SetHandler((file, quote, byline) =>
             {
-                AddToFile(file, quote, byline);
+                AddToFile(file!, quote, byline);
             },
             fileOption, quoteArgument, bylineArgument);
         // </sethandlers>
@@ -137,7 +134,7 @@ class Program
     internal static void AddToFile(FileInfo file, string quote, string byline)
     {
         Console.WriteLine("Adding to file");
-        using var writer = file.AppendText();
+        using StreamWriter? writer = file.AppendText();
         writer.WriteLine($"{Environment.NewLine}{Environment.NewLine}{quote}");
         writer.WriteLine($"{Environment.NewLine}-{byline}");
         writer.Flush();

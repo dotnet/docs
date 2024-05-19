@@ -10,7 +10,7 @@ SignalR Hub methods now support injecting services from your Dependency Injectio
 
 ## Version introduced
 
-ASP.NET Core 7.0 Preview 2
+ASP.NET Core 7.0
 
 ## Previous behavior
 

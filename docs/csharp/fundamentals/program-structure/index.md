@@ -1,7 +1,7 @@
 ---
-title: "General Structure of a C# Program"
+title: "General Structure of a Program"
 description: Learn about the structure of a C# program by using a skeleton program that contains all the required elements for a program.
-ms.date: 05/14/2021
+ms.date: 03/11/2022
 helpviewer_keywords: 
   - "C# language, program structure"
 ms.assetid: 5ae964a5-0ef0-40fe-88fb-6d1793371d0d
@@ -12,7 +12,7 @@ C# programs consist of one or more files. Each file contains zero or more namesp
 
 :::code language="csharp" source="snippets/toplevel-structure/Program.cs":::
 
-The preceding example uses *top-level statements* for the program's entry point. This feature was added in C# 9. Prior to C# 9, the entry point was a static method named `Main`, as shown in the following example:
+The preceding example uses *top-level statements* for the program's entry point. You can also create a static method named `Main` as the program's entry point, as shown in the following example:
 
 :::code language="csharp" source="snippets/structure/Program.cs":::
 

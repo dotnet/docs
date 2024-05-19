@@ -2,10 +2,12 @@
 title: Introduction to cloud-native applications
 description: Learn about cloud-native computing
 author: robvet
-ms.date: 10/10/2021
+ms.date: 04/06/2022
 ---
 
 # Introduction to cloud-native applications
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 Another day, at the office, working on "the next big thing."
 

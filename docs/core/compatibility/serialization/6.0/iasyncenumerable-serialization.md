@@ -33,7 +33,7 @@ This change was introduced to add support for streaming <xref:System.Collections
 Check if your serialization models contain types that implement <xref:System.Collections.Generic.IAsyncEnumerable%601> and determine if emitting the enumeration in the JSON output is desirable. You can disable <xref:System.Collections.Generic.IAsyncEnumerable%601> serialization in one of the following ways:
 
 - Attach a <xref:System.Text.Json.Serialization.JsonIgnoreAttribute> to the property containing the <xref:System.Collections.Generic.IAsyncEnumerable%601>.
-- Define a [custom converter factory](../../../../standard/serialization/system-text-json-converters-how-to.md#sample-factory-pattern-converter) that serializes <xref:System.Collections.Generic.IAsyncEnumerable%601> instances as empty JSON objects.
+- Define a [custom converter factory](../../../../standard/serialization/system-text-json/converters-how-to.md#sample-factory-pattern-converter) that serializes <xref:System.Collections.Generic.IAsyncEnumerable%601> instances as empty JSON objects.
 
 ## Affected APIs
 

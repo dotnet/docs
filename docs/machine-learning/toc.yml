@@ -1,33 +1,40 @@
+items:
 - name: ML.NET
   href: index.yml
 - name: Overview
-  expanded: true
+  href: overview.md
+- name: Model Builder & CLI
   items:
-  - name: Model Builder & CLI
-    items:
-    - name: The ML.NET Model Builder tool
-      href: automate-training-with-model-builder.md
-    - name: The ML.NET Command-Line interface
-      href: automate-training-with-cli.md
-  - name: API
-    items:
-    - name: The ML.NET API
-      href: how-does-mldotnet-work.md
+  - name: The ML.NET Model Builder tool
+    href: automate-training-with-model-builder.md
+  - name: The ML.NET command-line interface
+    href: automate-training-with-cli.md
+    displayName: cli
+    expanded: true
+- name: API
+  items:
+  - name: The ML.NET API
+    href: how-does-mldotnet-work.md
+  - name: What is Automated Machine Learning (AutoML)?
+    href: automated-machine-learning-mlnet.md
+    expanded: true
+- name: What's new
+  href: whats-new/overview.md
 - name: Tutorials
   items:
   - name: Model Builder & CLI
     items:
-    - name: Predict prices (Model Builder & regression)
+    - name: Predict prices (Model Builder value prediction)
       href: tutorials/predict-prices-with-model-builder.md
     - name: Analyze sentiment using the ML.NET CLI
       href: tutorials/sentiment-analysis-cli.md
-    - name: Analyze sentiment in Razor Pages (Model Builder & binary classification)
+    - name: Analyze sentiment in Razor Pages (Model Builder text classification)
       href: tutorials/sentiment-analysis-model-builder.md
-    - name: Categorize health violations (Model Builder & multiclass classification)
+    - name: Categorize health violations (Model Builder data classification)
       href: tutorials/health-violation-classification-model-builder.md
-    - name: Categorize land use from satellite images (Model Builder & image classification)
+    - name: Categorize land use from satellite images (Model Builder image classification)
       href: tutorials/image-classification-model-builder.md
-    - name: Detect traffic signs (Model Builder & object detection)
+    - name: Detect traffic signs (Model Builder object detection)
       href: tutorials/object-detection-model-builder.md
     - name: Train a recommendation model using Model Builder
       href: tutorials/movie-recommendation-model-builder.md
@@ -45,15 +52,15 @@
       href: tutorials/iris-clustering.md
     - name: Recommend movies (matrix factorization)
       href: tutorials/movie-recommendation.md
-    - name: Image Classification (transfer learning)
-      href: tutorials/image-classification-api-transfer-learning.md      
+    - name: Image classification (transfer learning)
+      href: tutorials/image-classification-api-transfer-learning.md
     - name: Classify images (model composition)
       href: tutorials/image-classification.md
     - name: Forecast bike rental demand (time series)
       href: tutorials/time-series-demand-forecasting.md
     - name: Call-volume spikes (anomaly detection)
       href: tutorials/phone-calls-anomaly-detection.md
-    - name: Product Sales Analysis (anomaly detection)
+    - name: Product sales analysis (anomaly detection)
       href: tutorials/sales-anomaly-detection.md
     - name: Detect objects in images (object detection)
       href: tutorials/object-detection-onnx.md
@@ -67,10 +74,12 @@
   items:
   - name: ML.NET tasks
     href: resources/tasks.md
-  - name: Algorithms
-    href: how-to-choose-an-ml-net-algorithm.md
   - name: Data transforms
     href: resources/transforms.md
+  - name: Algorithms
+    href: how-to-choose-an-ml-net-algorithm.md
+  - name: Deep learning overview
+    href: deep-learning-overview.md
   - name: Model evaluation metrics
     href: resources/metrics.md
   - name: Improve model accuracy
@@ -89,8 +98,9 @@
       href: how-to-guides/install-gpu-model-builder.md
     - name: Install the CLI
       href: how-to-guides/install-ml-net-cli.md
-    - name: Use the automated ML API
-      href: how-to-guides/how-to-use-the-automl-api.md
+    - name: Format data for named entity recognition
+      href: how-to-guides/ner-dataset-guide.md
+      displayName: ner
   - name: API
     items:
     - name: Install extra dependencies
@@ -99,10 +109,14 @@
       href: how-to-guides/load-data-ml-net.md
     - name: Prepare data
       href: how-to-guides/prepare-data-ml-net.md
+    - name: Work with DataFrames
+      href: how-to-guides/getting-started-dataframe.md
     - name: Train, evaluate, and explain the model
       items:
       - name: Train and evaluate a model
         href: how-to-guides/train-machine-learning-model-ml-net.md
+      - name: Use the automated ML API
+        href: how-to-guides/how-to-use-the-automl-api.md
       - name: Train a model using cross-validation
         href: how-to-guides/train-machine-learning-model-cross-validation-ml-net.md
       - name: Inspect intermediate pipeline data values
@@ -115,7 +129,7 @@
         href: how-to-guides/save-load-machine-learning-models-ml-net.md
       - name: Use a model to make predictions
         href: how-to-guides/machine-learning-model-predictions-ml-net.md
-      - name: Re-train a model
+      - name: Retrain a model
         href: how-to-guides/retrain-model-ml-net.md
       - name: Deploy a model to Azure Functions
         href: how-to-guides/serve-model-serverless-azure-functions-ml-net.md
@@ -123,14 +137,8 @@
         href: how-to-guides/serve-model-web-api-ml-net.md
       - name: Consume Azure Machine Learning ONNX model
         href: /azure/machine-learning/how-to-use-automl-onnx-model-dotnet?toc=/dotnet/machine-learning/how-to-guides/toc.json&bc=/dotnet/machine-learning/how-to-guides/toc.json
-      - name: Make batch predictions using .NET for Apache Spark
-        href: ../spark/tutorials/ml-sentiment-analysis.md
 - name: Reference
   items:
-  - name: ML.NET API Reference
-    href: ../../api/index.md?view=ml-dotnet
-  - name: ML.NET API Preview API Reference
-    href: ../../api/index.md?view=ml-dotnet-preview
   - name: CLI reference
     href: reference/ml-net-cli-reference.md
 - name: Resources

@@ -5,7 +5,7 @@ ms.date: 10/25/2021
 ---
 # Minimal API renames in RC 1
 
-Some APIS were renamed to improve the consistency of type names and to remove "minimal" and "action" from the API names.
+Some APIs were renamed to improve the consistency of type names and to remove "minimal" and "action" from the API names.
 
 ## Version introduced
 

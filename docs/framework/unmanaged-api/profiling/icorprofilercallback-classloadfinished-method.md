@@ -31,10 +31,10 @@ HRESULT ClassLoadFinished(
   
 ## Parameters
 
-`classId`
+`classId`\
 [in] Identifies the class that was loaded.
 
-`hrStatus`
+`hrStatus`\
 [in] An HRESULT that indicates whether the class loaded successfully.
 
 ## Remarks  

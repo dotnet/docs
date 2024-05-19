@@ -1,15 +1,18 @@
 ﻿using App.WindowsService;
+using Microsoft.Extensions.Logging.Configuration;
+using Microsoft.Extensions.Logging.EventLog;
 
-using IHost host = Host.CreateDefaultBuilder(args)
-    .UseWindowsService(options =>
-    {
-        options.ServiceName = ".NET Joke Service";
-    })
-    .ConfigureServices(services =>
-    {
-        services.AddSingleton<JokeService>();
-        services.AddHostedService<WindowsBackgroundService>();
-    })
-    .Build();
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+builder.Services.AddWindowsService(options =>
+{
+    options.ServiceName = ".NET Joke Service";
+});
 
-await host.RunAsync();
+LoggerProviderOptions.RegisterProviderOptions<
+    EventLogSettings, EventLogLoggerProvider>(builder.Services);
+
+builder.Services.AddSingleton<JokeService>();
+builder.Services.AddHostedService<WindowsBackgroundService>();
+
+IHost host = builder.Build();
+host.Run();

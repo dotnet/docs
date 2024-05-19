@@ -1,16 +1,19 @@
 ---
 title: Organizing and testing projects with the .NET CLI
 description: This tutorial explains how to organize and test .NET projects from the command line.
-ms.date: 09/10/2018
+ms.date: 04/15/2022
 ---
 
 # Organizing and testing projects with the .NET CLI
 
-This tutorial follows [Tutorial: Create a console application with .NET using Visual Studio Code](with-visual-studio-code.md), taking you beyond the creation of a simple console app to develop advanced and well-organized applications. After showing you how to use folders to organize your code, this tutorial shows you how to extend a console application with the [xUnit](https://xunit.net/) testing framework.
+This tutorial follows [Tutorial: Create a console application with .NET using Visual Studio Code](with-visual-studio-code.md), taking you beyond the creation of a simple console app to develop advanced and well-organized applications. After showing you how to use folders to organize your code, the tutorial shows you how to extend a console application with the [xUnit](https://xunit.net/) testing framework.
+
+> [!NOTE]
+> This tutorial recommends that you place the application project and test project in separate folders. Some developers prefer to keep these projects in the same folder. For more information, see GitHub issue [dotnet/docs #26395](https://github.com/dotnet/docs/issues/26395).
 
 ## Using folders to organize code
 
-If you want to introduce new types into a console app, you can do so by adding files containing the types to the app. For example if you add files containing `AccountInformation` and `MonthlyReportRecords` types to your project, the project file structure is flat and easy to navigate:
+If you want to introduce new types into a console app, you can do so by adding files containing the types to the app. For example, if you add files containing `AccountInformation` and `MonthlyReportRecords` types to your project, the project file structure is flat and easy to navigate:
 
 ```
 /MyProject
@@ -20,7 +23,7 @@ If you want to introduce new types into a console app, you can do so by adding f
 |__Program.cs
 ```
 
-However, this only works well when the size of your project is relatively small. Can you imagine what will happen if you add 20 types to the project? The project definitely wouldn't be easy to navigate and maintain with that many files littering the project's root directory.
+However, this flat structure only works well when the size of your project is relatively small. Can you imagine what will happen if you add 20 types to the project? The project definitely wouldn't be easy to navigate and maintain with that many files littering the project's root directory.
 
 To organize the project, create a new folder and name it *Models* to hold the type files. Place the type files into the *Models* folder:
 
@@ -100,9 +103,9 @@ Optional exercise: You can add a new pet type, such as a `Bird`, by extending th
 
 The `NewTypes` project is in place, and you've organized it by keeping the pets-related types in a folder. Next, create your test project and start writing tests with the [xUnit](https://xunit.net/) test framework. Unit testing allows you to automatically check the behavior of your pet types to confirm that they're operating properly.
 
-Navigate back to the *src* folder and create a *test* folder with a *NewTypesTests* folder within it. At a command prompt from the *NewTypesTests* folder, execute `dotnet new xunit`. This produces two files: *NewTypesTests.csproj* and *UnitTest1.cs*.
+Navigate back to the *src* folder and create a *test* folder with a *NewTypesTests* folder within it. At a command prompt from the *NewTypesTests* folder, execute `dotnet new xunit`. This command produces two files: *NewTypesTests.csproj* and *UnitTest1.cs*.
 
-The test project cannot currently test the types in `NewTypes` and requires a project reference to the `NewTypes` project. To add a project reference, use the [`dotnet add reference`](../tools/dotnet-add-reference.md) command:
+The test project can't currently test the types in `NewTypes` and requires a project reference to the `NewTypes` project. To add a project reference, use the [`dotnet add reference`](../tools/dotnet-add-reference.md) command:
 
 ```dotnetcli
 dotnet add reference ../../src/NewTypes/NewTypes.csproj
@@ -120,14 +123,14 @@ Or, you also have the option of manually adding the project reference by adding 
 
 [!code-xml[NewTypesTests csproj](../../../samples/snippets/core/tutorials/testing-with-cli/csharp/test/NewTypesTests/NewTypesTests.csproj)]
 
-The *NewTypesTests.csproj* file contains the following:
+The *NewTypesTests.csproj* file contains the following package references:
 
-* Package reference to `Microsoft.NET.Test.Sdk`, the .NET testing infrastructure
-* Package reference to `xunit`, the xUnit testing framework
-* Package reference to `xunit.runner.visualstudio`, the test runner
-* Project reference to `NewTypes`, the code to test
+* `Microsoft.NET.Test.Sdk`, the .NET testing infrastructure
+* `xunit`, the xUnit testing framework
+* `xunit.runner.visualstudio`, the test runner
+* `NewTypes`, the code to test
 
-Change the name of *UnitTest1.cs* to *PetTests.cs* and replace the code in the file with the following:
+Change the name of *UnitTest1.cs* to *PetTests.cs* and replace the code in the file with the following code:
 
 ```csharp
 using System;
@@ -206,7 +209,7 @@ Change the assertions of your tests from `Assert.NotEqual` to `Assert.Equal`:
 
 [!code-csharp[PetTests class](../../../samples/snippets/core/tutorials/testing-with-cli/csharp/test/NewTypesTests/PetTests.cs)]
 
-Re-run the tests with the `dotnet test` command and obtain the following output:
+Rerun the tests with the `dotnet test` command and obtain the following output:
 
 ```output
 Test run for C:\Source\dotnet\docs\samples\snippets\core\tutorials\testing-with-cli\csharp\test\NewTypesTests\bin\Debug\net5.0\NewTypesTests.dll (.NETCoreApp,Version=v5.0)

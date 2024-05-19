@@ -6,7 +6,7 @@ ms.assetid: d79fb295-ebc7-438d-ba1b-05be7d534834
 ---
 # Style Sheet Directives Embedded in a Document
 
-Occasionally, existing XML contains the style sheet directive of `<?xml:stylesheet?>`. Microsoft Internet Explorer accepts this as an alternative to the `<?xml-stylesheet?>` syntax. When the XML data contains an `<?xml:stylesheet?>` directive, as shown in the following data, attempting to load this data into the XML Document Object Model (DOM) throws an exception.
+Occasionally, existing XML contains the style sheet directive of `<?xml:stylesheet?>` (notice the use of a colon instead of a hyphen). When the XML data contains an `<?xml:stylesheet?>` directive, as shown in the following data, attempting to load this data into the XML Document Object Model (DOM) throws an exception.
 
 ```xml
 <?xml version="1.0" ?>
@@ -27,7 +27,7 @@ From Section 6 of the Namespaces in XML specification, the effect of having the 
 
 With the `<?xml:stylesheet?>` containing a colon, you now violate the rule in the second bullet.
 
-According to the World Wide Web Consortium (W3C) [Associating Style Sheets with XML documents Version 1.0 Recommendation](https://www.w3.org/TR/xml-stylesheet/),  the processing instruction to associate an XSLT style sheet with an XML document is `<?xml-stylesheet?>`, with a dash replacing the colon.
+According to the World Wide Web Consortium (W3C) [Associating Style Sheets with XML documents Version 1.0 Recommendation](https://www.w3.org/TR/xml-stylesheet/), the processing instruction to associate an XSLT style sheet with an XML document is `<?xml-stylesheet?>`, with a dash replacing the colon.
 
 ## See also
 

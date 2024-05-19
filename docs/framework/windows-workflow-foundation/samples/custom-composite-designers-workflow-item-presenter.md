@@ -64,7 +64,7 @@ The code for this sample shows:
 
 1. Open the solution in Visual Studio.
 
-2. Press **F5** to compile and run the application.
+2. Press <kbd>F5</kbd> to compile and run the application.
 
 ## See also
 

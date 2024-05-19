@@ -5,7 +5,7 @@ ms.date: 02/14/2020
 ---
 # dotnet store
 
-**This article applies to:** ✔️ .NET Core 2.x SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -28,8 +28,6 @@ dotnet store -h|--help
 `dotnet store` stores the specified assemblies in the [runtime package store](../deploying/runtime-store.md). By default, assemblies are optimized for the target runtime and framework. For more information, see the [runtime package store](../deploying/runtime-store.md) topic.
 
 ## Required options
-
-<!-- markdownlint-disable MD012 -->
 
 - **`-f|--framework <FRAMEWORK>`**
 

@@ -1,7 +1,7 @@
 ﻿// Using a string as an indexer value
 class DayCollection
 {
-    string[] days = { "Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat" };
+    string[] days = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
 
     // Indexer with only a get accessor with the expression-bodied definition:
     public int this[string day] => FindDayIndex(day);

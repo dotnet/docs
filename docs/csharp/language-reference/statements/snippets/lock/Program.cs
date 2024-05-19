@@ -3,10 +3,11 @@ using System.Threading.Tasks;
 
 public class Account
 {
-    private readonly object balanceLock = new object();
-    private decimal balance;
+    // Use `object` in versions earlier than C# 13
+    private readonly System.Threading.Lock _balanceLock = new();
+    private decimal _balance;
 
-    public Account(decimal initialBalance) => balance = initialBalance;
+    public Account(decimal initialBalance) => _balance = initialBalance;
 
     public decimal Debit(decimal amount)
     {
@@ -16,11 +17,11 @@ public class Account
         }
 
         decimal appliedAmount = 0;
-        lock (balanceLock)
+        lock (_balanceLock)
         {
-            if (balance >= amount)
+            if (_balance >= amount)
             {
-                balance -= amount;
+                _balance -= amount;
                 appliedAmount = amount;
             }
         }
@@ -34,17 +35,17 @@ public class Account
             throw new ArgumentOutOfRangeException(nameof(amount), "The credit amount cannot be negative.");
         }
 
-        lock (balanceLock)
+        lock (_balanceLock)
         {
-            balance += amount;
+            _balance += amount;
         }
     }
 
     public decimal GetBalance()
     {
-        lock (balanceLock)
+        lock (_balanceLock)
         {
-            return balance;
+            return _balance;
         }
     }
 }
@@ -67,7 +68,7 @@ class AccountTest
 
     static void Update(Account account)
     {
-        decimal[] amounts = { 0, 2, -3, 6, -2, -1, 8, -5, 11, -6 };
+        decimal[] amounts = [0, 2, -3, 6, -2, -1, 8, -5, 11, -6];
         foreach (var amount in amounts)
         {
             if (amount >= 0)

@@ -1,7 +1,4 @@
-using System;
-using System.Collections.Generic;
-
-namespace Patterns
+﻿namespace Patterns
 {
     public static class DeclarationAndTypePatterns
     {
@@ -10,8 +7,20 @@ namespace Patterns
             BasicExample();
             ReferenceConversion();
             NullableAndUnboxing();
+            NotNullPattern();
         }
 
+        private static void NotNullPattern()
+        {
+            object input = new();
+            // <NonNullCheck>
+            if (input is not null)
+            {
+                // ...
+            }
+            // </NonNullCheck>
+        }
+        
         private static void BasicExample()
         {
             // <BasicExample>

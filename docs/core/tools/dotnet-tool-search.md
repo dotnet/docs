@@ -28,8 +28,6 @@ The command uses the [NuGet Search API](/nuget/api/search-query-service-resource
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
-
 - **`--detail`**
 
   Shows detailed results from the query.

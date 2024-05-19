@@ -8,8 +8,14 @@ class Example
         IMemoryOwner<char> owner = MemoryPool<char>.Shared.Rent();
 
         Console.Write("Enter a number: ");
-	    try {
-            var value = Int32.Parse(Console.ReadLine());
+        try
+        {
+            string? s = Console.ReadLine();
+
+            if (s is null)
+                return;
+
+            var value = Int32.Parse(s);
 
             var memory = owner.Memory;
 
@@ -17,13 +23,16 @@ class Example
 
             DisplayBufferToConsole(owner.Memory.Slice(0, value.ToString().Length));
         }
-        catch (FormatException) {
+        catch (FormatException)
+        {
             Console.WriteLine("You did not enter a valid number.");
         }
-        catch (OverflowException) {
+        catch (OverflowException)
+        {
             Console.WriteLine($"You entered a number less than {Int32.MinValue:N0} or greater than {Int32.MaxValue:N0}.");
         }
-        finally {
+        finally
+        {
             owner?.Dispose();
         }
     }

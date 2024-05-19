@@ -80,5 +80,6 @@ Determines whether date and time parsing methods use an adjusted set of rules to
   
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
 - [\<runtime> Element](runtime-element.md)
 - [\<configuration> Element](../configuration-element.md)

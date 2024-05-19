@@ -37,7 +37,26 @@ The following table shows the literal types in F#. Characters that represent dig
 
 ## Named literals
 
-Values that are intended to be constants can be marked with the [Literal](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-literalattribute.html) attribute. This attribute has the effect of causing a value to be compiled as a constant.
+Values that are intended to be constants can be marked with the [Literal](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-literalattribute.html) attribute.
+
+This attribute has the effect of causing a value to be compiled as a constant. In the following example, both `x` and `y` below are immutable values, but `x` is evaluated at run-time, whereas `y` is a compile-time constant.
+
+```fsharp
+let x = "a" + "b" // evaluated at run-time
+
+[<Literal>]
+let y = "a" + "b" // evaluated at compile-time
+```
+
+For example, this distinction matters when calling an [external function](functions/external-functions.md), because `DllImport` is an attribute that needs to know the value of `myDLL` during compilation. Without the `[<Literal>]` declaration, this code would fail to compile:
+
+```fsharp
+[<Literal>]
+let myDLL = "foo.dll"
+
+[<DllImport(myDLL, CallingConvention = CallingConvention.Cdecl)>]
+extern void HelloWorld()
+```
 
 In pattern matching expressions, identifiers that begin with lowercase characters are always treated as variables to be bound, rather than as literals, so you should generally use initial capitals when you define literals.
 
@@ -60,13 +79,19 @@ let Literal3 = System.IO.FileAccess.Read ||| System.IO.FileAccess.Write
 
 ## Remarks
 
+Named literals are useful for:
+
+- Pattern matching without a `when` clause.
+- Attribute arguments.
+- Static type provider arguments.
+
 Unicode strings can contain explicit encodings that you can specify by using `\u` followed by a 16-bit hexadecimal code (0000 - FFFF), or UTF-32 encodings that you can specify by using `\U` followed by a 32-bit hexadecimal code that represents any Unicode code point (00000000 - 0010FFFF).
 
-The use of other bitwise operators other than `|||` isn't allowed.
+The use of bitwise operators other than `|||` isn't allowed.
 
 ## Integers in other bases
 
-Signed 32-bit integers can also be specified in hexadecimal, octal, or binary using a `0x`, `0o` or `0b` prefix respectively.
+Signed 32-bit integers can also be specified in hexadecimal, octal, or binary using a `0x`, `0o` or `0b` prefix, respectively.
 
 ```fsharp
 let numbers = (0x9F, 0o77, 0b1010)
@@ -82,5 +107,5 @@ let value = 0xDEAD_BEEF
 
 let valueAsBits = 0b1101_1110_1010_1101_1011_1110_1110_1111
 
-let exampleSSN = 123_456_7890
+let exampleSSN = 123_45_6789
 ```

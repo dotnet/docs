@@ -12,7 +12,7 @@ public class CanalLock
     public bool HighWaterGateOpen { get; private set; } = false;
     public bool LowWaterGateOpen { get; private set; } = false;
 
-    // <FinalImplementaton>
+    // <FinalImplementation>
     // Change the upper gate.
     public void SetHighGate(bool open)
     {
@@ -24,7 +24,7 @@ public class CanalLock
             _                              => throw new InvalidOperationException("Invalid internal state"),
         };
     }
-    // </FinalImplementaton>
+    // </FinalImplementation>
 
     // <FinalExercise>
     // Change the lower gate.

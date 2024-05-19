@@ -73,5 +73,6 @@ Specifies whether the runtime will use COM interop instead of remoting for all c
   
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
 - [Runtime Settings Schema](index.md)
 - [Configuration File Schema](../index.md)

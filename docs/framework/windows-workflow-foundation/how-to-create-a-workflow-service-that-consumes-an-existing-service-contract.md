@@ -21,7 +21,7 @@ ms.assetid: 11d11b59-acc4-48bf-8e4b-e97b516aa0a9
   
 1. Right-click the project in **Solution Explorer** and select **Add**, **New Item…**. Select the **Code** node on the left, and the **Class** template on the right. Name the new class `IBookService` and click **Ok**.  
   
-2. In the top of the code window that appears, add a Using statement to `System.Servicemodel`.  
+2. In the top of the code window that appears, add a Using statement to `System.ServiceModel`.  
   
     ```csharp  
     using System.ServiceModel;  

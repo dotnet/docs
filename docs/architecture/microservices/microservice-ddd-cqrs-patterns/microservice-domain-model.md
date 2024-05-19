@@ -5,6 +5,8 @@ ms.date: 01/30/2020
 ---
 # Design a microservice domain model
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 *Define one rich domain model for each business microservice or Bounded Context.*
 
 Your goal is to create a single cohesive domain model for each business microservice or Bounded Context (BC). Keep in mind, however, that a BC or business microservice could sometimes be composed of several physical services that share a single domain model. The domain model must capture the rules, behavior, business language, and constraints of the single Bounded Context or business microservice that it represents.

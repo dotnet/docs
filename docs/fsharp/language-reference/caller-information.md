@@ -11,7 +11,7 @@ To obtain this information, you use attributes that are applied to optional para
 
 |Attribute|Description|Type|
 |---------|-----------|----|
-|[CallerFilePath](/dotnet/api/system.runtime.compilerservices.callerfilepathattribute)|Full path of the source file that contains the caller. This is the file path at compile time.|`String`
+|[CallerFilePath](/dotnet/api/system.runtime.compilerservices.callerfilepathattribute)|Full path of the source file that contains the caller. This is the file path at compile time.|`String`|
 |[CallerLineNumber](/dotnet/api/system.runtime.compilerservices.callerlinenumberattribute)|Line number in the source file at which the method is called.|`Integer`|
 |[CallerMemberName](/dotnet/api/system.runtime.compilerservices.callermembernameattribute)|Method or property name of the caller. See the Member Names section later in this topic.|`String`|
 

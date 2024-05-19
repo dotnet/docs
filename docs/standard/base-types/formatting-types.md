@@ -251,7 +251,7 @@ You can also format a numeric value for a specific culture by calling a `ToStrin
 
 - A <xref:System.Globalization.NumberFormatInfo> object that defines the culture-specific formatting conventions to be used. Its <xref:System.Globalization.NumberFormatInfo.GetFormat%2A> method returns an instance of itself.
 
-The following example uses <xref:System.Globalization.NumberFormatInfo> objects that represent the English (United States) and English (Great Britain) cultures and the French and Russian neutral cultures to format a floating-point number.
+The following example uses <xref:System.Globalization.NumberFormatInfo> objects that represent the English (United States) and English (United Kingdom) cultures and the French and Russian neutral cultures to format a floating-point number.
 
 [!code-csharp[Conceptual.Formatting.Overview#20](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.formatting.overview/cs/culturespecific4.cs#20)]
 [!code-vb[Conceptual.Formatting.Overview#20](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.formatting.overview/vb/culturespecific4.vb#20)]
@@ -269,7 +269,7 @@ You can also format a date and time value for a specific culture by calling a <x
 
 - A <xref:System.Globalization.DateTimeFormatInfo> object that defines the culture-specific formatting conventions to be used. Its <xref:System.Globalization.DateTimeFormatInfo.GetFormat%2A> method returns an instance of itself.
 
-The following example uses <xref:System.Globalization.DateTimeFormatInfo> objects that represent the English (United States) and English (Great Britain) cultures and the French and Russian neutral cultures to format a date.
+The following example uses <xref:System.Globalization.DateTimeFormatInfo> objects that represent the English (United States) and English (United Kingdom) cultures and the French and Russian neutral cultures to format a date.
 
 [!code-csharp[Conceptual.Formatting.Overview#18](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.formatting.overview/cs/culturespecific2.cs#18)]
 [!code-vb[Conceptual.Formatting.Overview#18](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.formatting.overview/vb/culturespecific2.vb#18)]
@@ -303,7 +303,7 @@ Some methods, such as <xref:System.String.Format%2A?displayProperty=nameWithType
 
 In addition to replacing a format item with the string representation of its corresponding object, format items also let you control the following:
 
-- The specific way in which an object is represented as a string, if the object implements the <xref:System.IFormattable> interface and supports format strings. You do this by following the format item's index with a `:` (colon) followed by a valid format string. The previous example did this by formatting a date value with the "d" (short date pattern) format string (e.g., `{0:d}`) and   by formatting a numeric value with the "C2" format string (e.g., `{2:C2}` to represent the number as a currency value with two fractional decimal digits.
+- The specific way in which an object is represented as a string, if the object implements the <xref:System.IFormattable> interface and supports format strings. You do this by following the format item's index with a `:` (colon) followed by a valid format string. The previous example did this by formatting a date value with the "d" (short date pattern) format string (for example, `{0:d}`) and   by formatting a numeric value with the "C2" format string (for example, `{2:C2}` to represent the number as a currency value with two fractional decimal digits.
 
 - The width of the field that contains the object's string representation, and the alignment of the string representation in that field. You do this by following the format item's index with a `,` (comma) followed the field width. The string is right-aligned in the field if the field width is a positive value, and it is left-aligned if the field width is a negative value. The following example left-aligns date values in a 20-character field, and it right-aligns decimal values with one fractional digit in an 11-character field.
 

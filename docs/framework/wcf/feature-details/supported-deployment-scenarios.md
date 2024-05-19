@@ -40,7 +40,6 @@ WCF can be used to communicate with remote servers from within partially trusted
 
 ## See also
 
-- [Code Access Security](/previous-versions/dotnet/framework/code-access-security/code-access-security)
 - [Windows Presentation Foundation Browser-Hosted Applications Overview](/dotnet/desktop/wpf/app-development/wpf-xaml-browser-applications-overview)
 - [Partial Trust](partial-trust.md)
 - [ASP.NET Trust Levels and Policy Files](/previous-versions/wyts434y(v=vs.140))

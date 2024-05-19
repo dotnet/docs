@@ -6,13 +6,13 @@ In the .NET Framework 4.5, a small number of .NET methods began throwing first c
 
 #### Suggestion
 
-This bug can be avoided by upgrading to .NET Framework 4.5.1. Alternatively, test automation can be updated to not break on first-chance <xref:System.EntryPointNotFoundException?displayProperty=fullName>s.
+This bug can be avoided by upgrading to .NET Framework 4.5.1. Alternatively, test automation can be updated to not break on first-chance <xref:System.EntryPointNotFoundException?displayProperty=fullName> exceptions.
 
-| Name    | Value       |
-|:--------|:------------|
-| Scope   |Edge|
-|Version|4.5|
-|Type|Runtime
+|             | Value   |
+|:------------|:--------|
+| **Scope**   | Edge    |
+| **Version** | 4.5     |
+| **Type**    | Runtime |
 
 #### Affected APIs
 

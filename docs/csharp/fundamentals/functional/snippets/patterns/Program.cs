@@ -11,6 +11,8 @@ class Program
         var sequence = new List<int> {1,2,3,4,5,6,7};
         var middle = MidPoint(sequence);
         Console.WriteLine(middle);
+
+        ListPattern.Example();
     }
 
     // <MidPoint>
@@ -36,13 +38,15 @@ class Program
     private static void NullReferenceCheck()
     {
         // <NullReferenceCheck>
-        string? message = "This is not the null string";
+        string? message = ReadMessageOrDefault();
 
         if (message is not null)
         {
             Console.WriteLine(message);
         }
         // </NullReferenceCheck>
+
+        static string? ReadMessageOrDefault() => "This is not the null string";
     }
 
 

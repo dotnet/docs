@@ -4,7 +4,6 @@ Imports System.IdentityModel.Claims
 Imports System.Security.Permissions
 
 '</snippet1>
-<assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 '<snippet2>
 NotInheritable Public Class MyResourceType
     ' private members

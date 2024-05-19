@@ -1,10 +1,10 @@
-- name: Startup Settings Schema
+items:
+- name: Startup settings schema
   href: index.md
+- name: <startup> element
+  href: startup-element.md
   items:
-  - name: <startup> Element
-    href: startup-element.md
-    items:
-    - name: <requiredRuntime> Element
-      href: requiredruntime-element.md
-    - name: <supportedRuntime> Element
-      href: supportedruntime-element.md
+  - name: <requiredRuntime> element
+    href: requiredruntime-element.md
+  - name: <supportedRuntime> element
+    href: supportedruntime-element.md

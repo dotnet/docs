@@ -8,7 +8,6 @@ dev_langs:
 helpviewer_keywords:
   - "service contracts [WCF], implementing"
 ms.assetid: d5ab51ba-61ae-403e-b3c8-e2669e326806
-recommendations: false
 ---
 # Tutorial: Implement a Windows Communication Foundation service contract
 
@@ -129,7 +128,7 @@ Edit **App.config** in **GettingStartedLib** to reflect the changes you made to 
 
 ## Compile the code
 
-Build the solution to verify there aren't any compilation errors. If you're using Visual Studio, on the **Build** menu select **Build Solution** (or press **Ctrl**+**Shift**+**B**).
+Build the solution to verify there aren't any compilation errors. If you're using Visual Studio, on the **Build** menu select **Build Solution** (or press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>).
 
 ## Next steps
 

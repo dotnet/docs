@@ -16,6 +16,8 @@ ms.assetid: 87a4b0da-ed64-43b1-ac43-968576c444ce
 ---
 # Names of Classes, Structs, and Interfaces
 
+[!INCLUDE [not-current](includes/not-current.md)]
+
 The naming guidelines that follow apply to general type naming.
 
  ✔️ DO name classes and structs with nouns or noun phrases, using PascalCasing.

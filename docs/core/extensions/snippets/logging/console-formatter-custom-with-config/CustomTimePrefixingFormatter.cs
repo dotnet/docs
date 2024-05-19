@@ -7,21 +7,24 @@ namespace Console.ExampleFormatters.CustomWithConfig;
 
 public sealed class CustomTimePrefixingFormatter : ConsoleFormatter, IDisposable
 {
-    private readonly IDisposable _optionsReloadToken;
+    private readonly IDisposable? _optionsReloadToken;
     private CustomWrappingConsoleFormatterOptions _formatterOptions;
 
-    public CustomTimePrefixingFormatter(IOptionsMonitor<CustomWrappingConsoleFormatterOptions> options)
+    public CustomTimePrefixingFormatter(
+        IOptionsMonitor<CustomWrappingConsoleFormatterOptions> options)
         // Case insensitive
-        : base(nameof(CustomTimePrefixingFormatter)) =>
-        (_optionsReloadToken, _formatterOptions) =
-            (options.OnChange(ReloadLoggerOptions), options.CurrentValue);
+        : base(nameof(CustomTimePrefixingFormatter))
+    {
+        _optionsReloadToken = options.OnChange(ReloadLoggerOptions);
+        _formatterOptions = options.CurrentValue;
+    }
 
     private void ReloadLoggerOptions(CustomWrappingConsoleFormatterOptions options) =>
         _formatterOptions = options;
 
     public override void Write<TState>(
         in LogEntry<TState> logEntry,
-        IExternalScopeProvider scopeProvider,
+        IExternalScopeProvider? scopeProvider,
         TextWriter textWriter)
     {
         string message =
@@ -44,10 +47,13 @@ public sealed class CustomTimePrefixingFormatter : ConsoleFormatter, IDisposable
             ? DateTime.UtcNow
             : DateTime.Now;
 
-        textWriter.Write($"{_formatterOptions.CustomPrefix} {now.ToString(_formatterOptions.TimestampFormat)}");
+        textWriter.Write($"""
+            {_formatterOptions.CustomPrefix} {now.ToString(_formatterOptions.TimestampFormat)}
+            """);
     }
 
-    private void WriteSuffix(TextWriter textWriter) => textWriter.WriteLine($" {_formatterOptions.CustomSuffix}");
+    private void WriteSuffix(TextWriter textWriter) =>
+        textWriter.WriteLine($" {_formatterOptions.CustomSuffix}");
 
     public void Dispose() => _optionsReloadToken?.Dispose();
 }

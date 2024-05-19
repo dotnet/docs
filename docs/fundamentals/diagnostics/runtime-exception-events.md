@@ -1,8 +1,7 @@
 ---
 title: "Exception runtime events"
-description: See .NET runtime events that collect diagnostic information specific to the exceptions and exception handling.
+description: Learn about the .NET runtime events that collect diagnostic information specific to the exceptions and exception handling.
 ms.date: "11/13/2020"
-ms.topic: reference
 helpviewer_keywords:
   - "exception events (CoreCLR)"
   - "exception handling events (CoreCLR)"
@@ -146,7 +145,7 @@ This event is emitted when the runtime is done handling a managed exception that
 |Keyword for raising the event|Level|
 |-----------------------------------|-----------|
 |`ExceptionKeyword` (0x8000)|Informational (4)|
-  
+
  The following table shows event information.
 
 |Event|Event ID|Raised when|

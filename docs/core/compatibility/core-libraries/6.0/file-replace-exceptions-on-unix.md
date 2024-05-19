@@ -7,7 +7,7 @@ ms.date: 10/13/2021
 
 The behavior of <xref:System.IO.File.Replace%2A?displayProperty=nameWithType> on Unix-based operating systems has changed. The exceptions it throws now match those that are thrown by the Windows implementation.
 
-## Previous Behavior
+## Previous behavior
 
 On Unix, with .NET 5, the <xref:System.IO.File.Replace%2A?displayProperty=nameWithType> method:
 

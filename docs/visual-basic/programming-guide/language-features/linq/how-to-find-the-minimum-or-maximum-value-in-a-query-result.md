@@ -70,7 +70,7 @@ Language-Integrated Query (LINQ) makes it easy to access database information an
   
      [!code-vb[VbLINQToSQLHowTos#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQtoSQLHowTos/VB/Form7.vb#14)]  
   
-4. Press **F5** to run your project and view the results.  
+4. Press <kbd>F5</kbd> to run your project and view the results.  
   
 ## See also
 

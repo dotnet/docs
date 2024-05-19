@@ -6,67 +6,70 @@ using System.Threading;
 
 public class Example15
 {
-   public static void Main15()
-   {
-      // Create ten random doubles.
-      Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-US");
-      double[] numbers = GetRandomNumbers(10);
-      DisplayRandomNumbers(numbers);
+    public static void Main15()
+    {
+        // Create ten random doubles.
+        Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-US");
+        double[] numbers = GetRandomNumbers(10);
+        DisplayRandomNumbers(numbers);
 
-      // Persist the numbers as strings.
-      StreamWriter sw = new StreamWriter("randoms.dat");
-      for (int ctr = 0; ctr < numbers.Length; ctr++)
-         sw.Write("{0:R}{1}", numbers[ctr], ctr < numbers.Length - 1 ? "|" : "");
+        // Persist the numbers as strings.
+        StreamWriter sw = new StreamWriter("randoms.dat");
+        for (int ctr = 0; ctr < numbers.Length; ctr++)
+            sw.Write("{0:R}{1}", numbers[ctr], ctr < numbers.Length - 1 ? "|" : "");
 
-      sw.Close();
+        sw.Close();
 
-      // Read the persisted data.
-      StreamReader sr = new StreamReader("randoms.dat");
-      string numericData = sr.ReadToEnd();
-      sr.Close();
-      string[] numberStrings = numericData.Split('|');
+        // Read the persisted data.
+        StreamReader sr = new StreamReader("randoms.dat");
+        string numericData = sr.ReadToEnd();
+        sr.Close();
+        string[] numberStrings = numericData.Split('|');
 
-      // Restore and display the data using the conventions of the en-US culture.
-      Console.WriteLine("Current Culture: {0}",
-                        Thread.CurrentThread.CurrentCulture.DisplayName);
-      foreach (var numberStr in numberStrings) {
-         double restoredNumber;
-         if (Double.TryParse(numberStr, out restoredNumber))
-            Console.WriteLine(restoredNumber.ToString("R"));
-         else
-            Console.WriteLine("ERROR: Unable to parse '{0}'", numberStr);
-      }
-      Console.WriteLine();
+        // Restore and display the data using the conventions of the en-US culture.
+        Console.WriteLine("Current Culture: {0}",
+                          Thread.CurrentThread.CurrentCulture.DisplayName);
+        foreach (var numberStr in numberStrings)
+        {
+            double restoredNumber;
+            if (Double.TryParse(numberStr, out restoredNumber))
+                Console.WriteLine(restoredNumber.ToString("R"));
+            else
+                Console.WriteLine("ERROR: Unable to parse '{0}'", numberStr);
+        }
+        Console.WriteLine();
 
-      // Restore and display the data using the conventions of the fr-FR culture.
-      Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("fr-FR");
-      Console.WriteLine("Current Culture: {0}",
-                        Thread.CurrentThread.CurrentCulture.DisplayName);
-      foreach (var numberStr in numberStrings) {
-         double restoredNumber;
-         if (Double.TryParse(numberStr, out restoredNumber))
-            Console.WriteLine(restoredNumber.ToString("R"));
-         else
-            Console.WriteLine("ERROR: Unable to parse '{0}'", numberStr);
-      }
-   }
+        // Restore and display the data using the conventions of the fr-FR culture.
+        Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("fr-FR");
+        Console.WriteLine("Current Culture: {0}",
+                          Thread.CurrentThread.CurrentCulture.DisplayName);
+        foreach (var numberStr in numberStrings)
+        {
+            double restoredNumber;
+            if (Double.TryParse(numberStr, out restoredNumber))
+                Console.WriteLine(restoredNumber.ToString("R"));
+            else
+                Console.WriteLine("ERROR: Unable to parse '{0}'", numberStr);
+        }
+    }
 
-   private static double[] GetRandomNumbers(int n)
-   {
-      Random rnd = new Random();
-      double[] numbers = new double[n];
-      for (int ctr = 0; ctr < n; ctr++)
-         numbers[ctr] = rnd.NextDouble() * 1000;
-      return numbers;
-   }
+    private static double[] GetRandomNumbers(int n)
+    {
+        Random rnd = new Random();
+        double[] numbers = new double[n];
+        for (int ctr = 0; ctr < n; ctr++)
+            numbers[ctr] = rnd.NextDouble() * 1000;
+        return numbers;
+    }
 
-   private static void DisplayRandomNumbers(double[] numbers)
-   {
-      for (int ctr = 0; ctr < numbers.Length; ctr++)
-         Console.WriteLine(numbers[ctr].ToString("R"));
-      Console.WriteLine();
-   }
+    private static void DisplayRandomNumbers(double[] numbers)
+    {
+        for (int ctr = 0; ctr < numbers.Length; ctr++)
+            Console.WriteLine(numbers[ctr].ToString("R"));
+        Console.WriteLine();
+    }
 }
+
 // The example displays output like the following:
 //       487.0313743534644
 //       674.12000879371533

@@ -2,18 +2,18 @@
 '*
 '* File: WindowMove.vb
 '*
-'* Description:  
-'*       Moves a WCP window from a random location on the desktop to the 
-'*       top-left corner of the desktop. This is accomplished by obtaining an 
-'*       automation element based on the text value of the window, 
+'* Description:
+'*       Moves a WCP window from a random location on the desktop to the
+'*       top-left corner of the desktop. This is accomplished by obtaining an
+'*       automation element based on the text value of the window,
 '*       and then obtaining a TransformPattern object from this element.
-'*       If the element is moveable, rects for both the element and the 
+'*       If the element is moveable, rects for both the element and the
 '*       desktop are created.
 '*       The top and left coordinates needed to move the parent window are set
 '*       and, if not out of range, the window is moved to the new coordinates.
-'* 
+'*
 '* Programming Elements:
-'*    This sample demonstrates the following UI Automation programming elements 
+'*    This sample demonstrates the following UI Automation programming elements
 '*    from the System.Windows.Automation namespace:
 '*       Automation class
 '*           ScopeFlags
@@ -36,9 +36,9 @@
 '*
 ' *
 ' *  This file is part of the Microsoft .NET Framework SDK Code Samples.
-' * 
+' *
 ' *  Copyright (C) Microsoft Corporation.  All rights reserved.
-' * 
+' *
 ' *  This source code is intended only as a supplement to Microsoft
 ' *  Development Tools and/or on-line documentation.  See these other
 ' *  materials for detailed information regarding Microsoft code samples.
@@ -60,8 +60,6 @@ Imports System.IO
 Imports System.Text
 Imports System.Diagnostics
 Imports System.ComponentModel
-Imports System.Security.Permissions
-
 
 Namespace SDKSample
 
@@ -113,7 +111,7 @@ Namespace SDKSample
                 If (windowPattern Is Nothing) Then Return
 
                 ' Make sure our window is usable.
-                ' WaitForInputIdle will return before the specified time 
+                ' WaitForInputIdle will return before the specified time
                 ' if the window is ready.
                 If (False = windowPattern.WaitForInputIdle(10000)) Then
                     Feedback("Object not responding in a timely manner.")
@@ -146,7 +144,7 @@ Namespace SDKSample
                     ' Move element
                     transformPattern.Move(0, 0)
                 Else
-                    Feedback("Wndow is not moveable.")
+                    Feedback("Window is not moveable.")
                 End If
 
             Catch exc As ElementNotAvailableException
@@ -219,7 +217,7 @@ Namespace SDKSample
         '<Snippet1300>
         '' <summary>
         '' Handles the 'Move' button invoked event.
-        '' By default, the Move method does not allow an object 
+        '' By default, the Move method does not allow an object
         '' to be moved completely off-screen.
         '' </summary>
         '' <param name="src">The object that raised the event.</param>
@@ -346,7 +344,6 @@ Namespace SDKSample
         '' <param name="sender">The object that raised the event.</param>
         '' <param name="e">Event arguments.</param>
         '' <returns>The target automation element.</returns>
-        <SecurityPermission(SecurityAction.Demand, Flags:=SecurityPermissionFlag.UnmanagedCode)> _
         Private Function StartTargetApp(ByVal app As String) As AutomationElement
             Try
                 ' Start application.
@@ -404,14 +401,14 @@ Namespace SDKSample
         Private Sub RegisterForEvents(ByVal ae As AutomationElement, _
             ByVal ap As AutomationPattern, ByVal ts As TreeScope)
             If (ap.Id = windowPattern.Pattern.Id) Then
-                ' The WindowPattern exposes an elements ability to change 
+                ' The WindowPattern exposes an elements ability to change
                 ' its on-screen position or size.
 
-                ' The following code shows an example of listening for the 
+                ' The following code shows an example of listening for the
                 ' BoundingRectangle property changed event on the window.
                 Feedback("Start listening for WindowMove events for the control.")
 
-                ' Define an AutomationPropertyChangedEventHandler delegate to 
+                ' Define an AutomationPropertyChangedEventHandler delegate to
                 ' listen for window moved events.
                 Dim hWindowMove As AutomationPropertyChangedEventHandler = _
                     AddressOf OnWindowMove

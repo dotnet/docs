@@ -186,12 +186,12 @@ Symbols:
 
     3. Open StockService.cs in the StockService project and comment out the [Policy] attribute on the `StockService` class. This disables security from the sample. While WCF can interoperate with WSE 3.0 secure endpoints, security is disabled to keep this sample focused on the custom TCP transport.
 
-    4. press **F5** to start the `TcpSyncStockService`. The service starts in a new console window.
+    4. press <kbd>F5</kbd> to start the `TcpSyncStockService`. The service starts in a new console window.
 
     5. Open this TCP transport sample in Visual Studio.
 
     6. Update the "hostname" variable in TestCode.cs to match the machine name running the `TcpSyncStockService`.
 
-    7. press **F5** to start the TCP transport sample.
+    7. press <kbd>F5</kbd> to start the TCP transport sample.
 
     8. The TCP transport test client starts in a new console. The client requests stock quotes from the service and then displays the results in its console window.

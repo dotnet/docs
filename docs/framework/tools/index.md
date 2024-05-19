@@ -13,7 +13,7 @@ ms.assetid: a2ca532d-91f7-426a-9303-417c2ee1247c
 
 The .NET Framework tools make it easier for you to create, deploy, and manage applications and components that target the .NET Framework.
 
-Most of the .NET Framework tools described in this section are automatically installed with Visual Studio. To download Visual Studio, visit the [Visual Studio Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) page.
+Most of the .NET Framework tools described in this section are automatically installed with Visual Studio. To download Visual Studio, visit the [Visual Studio Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) page.
 
 You can run all the tools from the command line, with the exception of the Assembly Cache Viewer (*Shfusion.dll*). You must access *Shfusion.dll* from File Explorer.
 
@@ -82,7 +82,7 @@ Enables you to tune native image assemblies using common end-user scenarios. Mpg
 Improves the performance of managed applications through the use of native images (files containing compiled processor-specific machine code). The runtime can use native images from the cache instead of using the just-in-time (JIT) compiler to compile the original assembly.
 
 [Peverify.exe (PEVerify Tool)](peverify-exe-peverify-tool.md)\
-Helps you verify whether your Microsoft intermediate language (MSIL) code and associated metadata meet type safety requirements.
+Helps you verify whether your common intermediate language (CIL) code and associated metadata meet type safety requirements.
 
 [Regasm.exe (Assembly Registration Tool)](regasm-exe-assembly-registration-tool.md)\
 Reads the metadata within an assembly and adds the necessary entries to the registry. This enables COM clients to appear as .NET Framework classes.

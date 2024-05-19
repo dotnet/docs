@@ -50,31 +50,31 @@ Public Class Form1
             ret &= listener.Name
             Dim listenerType As Type = listener.GetType
             If listenerType Is GetType(DefaultTraceListener) Then
-                Dim tmp As DefaultTraceListener = 
+                Dim tmp As DefaultTraceListener =
                     DirectCast(listener, DefaultTraceListener)
                 ret &= ": Writes to the debug output."
             ElseIf listenerType Is GetType(Logging.FileLogTraceListener) Then
-                Dim tmp As Logging.FileLogTraceListener = 
+                Dim tmp As Logging.FileLogTraceListener =
                     DirectCast(listener, Logging.FileLogTraceListener)
                 ret &= ": Log filename: " & tmp.FullLogFileName
             ElseIf listenerType Is GetType(EventLogTraceListener) Then
-                Dim tmp As EventLogTraceListener = 
+                Dim tmp As EventLogTraceListener =
                     DirectCast(listener, EventLogTraceListener)
                 ret &= ": Event log name: " & tmp.EventLog.Log
             ElseIf listenerType Is GetType(XmlWriterTraceListener) Then
-                Dim tmp As Diagnostics.XmlWriterTraceListener = 
+                Dim tmp As Diagnostics.XmlWriterTraceListener =
                     DirectCast(listener, XmlWriterTraceListener)
                 ret &= ": XML log"
             ElseIf listenerType Is GetType(ConsoleTraceListener) Then
-                Dim tmp As ConsoleTraceListener = 
+                Dim tmp As ConsoleTraceListener =
                     DirectCast(listener, ConsoleTraceListener)
                 ret &= ": Console log"
             ElseIf listenerType Is GetType(DelimitedListTraceListener) Then
-                Dim tmp As DelimitedListTraceListener = 
+                Dim tmp As DelimitedListTraceListener =
                     DirectCast(listener, DelimitedListTraceListener)
                 ret &= ": Delimited log"
             Else
-                ret &= ": Unhandeled log type: " & 
+                ret &= ": Unhandled log type: " &
                     listenerType.ToString
             End If
             ret &= vbCrLf
@@ -86,12 +86,12 @@ Public Class Form1
 
     '<snippet11>
     Public Sub TracingTest(ByVal fileName As String)
-        My.Application.Log.WriteEntry( 
-            "Entering TracingTest with argument " & 
+        My.Application.Log.WriteEntry(
+            "Entering TracingTest with argument " &
             fileName & ".")
         ' Code to trace goes here.
-        My.Application.Log.WriteEntry( 
-            "Exiting TracingTest with argument " & 
+        My.Application.Log.WriteEntry(
+            "Exiting TracingTest with argument " &
             fileName & ".")
     End Sub
     '</snippet11>
@@ -108,9 +108,9 @@ Public Class Form1
             '</snippet7>
         Catch ex As Exception
             '<snippet8>
-            My.Application.Log.WriteException(ex, 
-                TraceEventType.Error, 
-                "Exception in ExceptionLogTest " & 
+            My.Application.Log.WriteException(ex,
+                TraceEventType.Error,
+                "Exception in ExceptionLogTest " &
                 "with argument " & fileName & ".")
             '</snippet8>
         End Try
@@ -136,12 +136,12 @@ End Class
 Public Class SimpleListener
     Inherits System.Diagnostics.TraceListener
 
-    <Security.Permissions.HostProtection(Synchronization:=True)> 
+    <Security.Permissions.HostProtection(Synchronization:=True)>
     Public Overloads Overrides Sub Write(ByVal message As String)
         MsgBox("Write: " & message)
     End Sub
 
-    <Security.Permissions.HostProtection(Synchronization:=True)> 
+    <Security.Permissions.HostProtection(Synchronization:=True)>
     Public Overloads Overrides Sub WriteLine(ByVal message As String)
         MsgBox("WriteLine: " & message)
     End Sub

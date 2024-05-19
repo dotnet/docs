@@ -532,7 +532,7 @@ Note the following points:
 
 - You use `obj` as the base type of the method, but you’ll use a `Regex` object as the runtime representation of this type, as the next example shows.
 
-- The call to the `Regex` constructor throws a <xref:System.ArgumentException> when a regular expression isn’t valid. The compiler catches this exception and reports an error message to the user at compile time or in the Visual Studio editor. This exception enables regular expressions to be validated without running an application.
+- The call to the `Regex` constructor throws an <xref:System.ArgumentException> when a regular expression isn’t valid. The compiler catches this exception and reports an error message to the user at compile time or in the Visual Studio editor. This exception enables regular expressions to be validated without running an application.
 
 The type defined above isn't useful yet because it doesn’t contain any meaningful methods or properties. First, add a static `IsMatch` method:
 

@@ -22,7 +22,7 @@ Typically, app developers select a telemetry service that stores this trace info
 then use a corresponding library to transmit the distributed tracing telemetry to their chosen
 service:
 
-- [OpenTelemetry](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/docs/trace/getting-started/README.md)
+- [OpenTelemetry](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/docs/trace/getting-started-console/README.md)
 is a vendor-neutral library that supports several services. For more information, see [Collect distributed traces with OpenTelemetry](distributed-tracing-collection-walkthroughs.md#collect-traces-using-opentelemetry).
 - [Application Insights](/azure/azure-monitor/app/distributed-tracing)
 is a full-featured service provided by Microsoft. For more information, see [Collect distributed traces with Application Insights](distributed-tracing-collection-walkthroughs.md#collect-traces-using-application-insights).

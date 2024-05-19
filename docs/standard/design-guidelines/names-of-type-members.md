@@ -15,6 +15,8 @@ ms.assetid: af5a0903-36af-4c2a-b848-cf959affeaa5
 ---
 # Names of Type Members
 
+[!INCLUDE [not-current](includes/not-current.md)]
+
 Types are made of members: methods, properties, events, constructors, and fields. The following sections describe guidelines for naming type members.
 
 ## Names of Methods

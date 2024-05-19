@@ -5,6 +5,8 @@ ms.date: 10/19/2018
 ---
 # .NET Microservices Architecture key takeaways
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 As a summary and key takeaways, the following are the most important conclusions from this guide.
 
 **Benefits of using containers.** Container-based solutions provide important cost savings because they help reduce deployment problems caused by failing dependencies in production environments. Containers significantly improve DevOps and production operations.

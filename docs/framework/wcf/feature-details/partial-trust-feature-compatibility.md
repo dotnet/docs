@@ -10,7 +10,7 @@ Windows Communication Foundation (WCF) supports a limited subset of functionalit
   
 ## Minimum Permission Requirements  
 
- WCF supports a subset of features in applications running under either of the following standard named permission sets:  
+WCF supports a subset of features in applications running under either of the following standard named permission sets:  
   
 - Medium Trust permissions  
   
@@ -68,7 +68,7 @@ Windows Communication Foundation (WCF) supports a limited subset of functionalit
   
 - All serializable `[DataContract]` types must be `public`.  
   
-- All serializable `[DataMember]` fields or properties in a `[DataContract]` type must be public and read/write. The serialization and deserialization of [readonly](https://go.microsoft.com/fwlink/?LinkID=98854) fields is not supported when running WCF in a partially-trusted application.  
+- All serializable `[DataMember]` fields or properties in a `[DataContract]` type must be public and read/write. The serialization and deserialization of `readonly` fields is not supported when running WCF in a partially trusted application.  
   
 - The `[Serializable]`/ISerializable programming model is not supported in a partial trust environment.  
   

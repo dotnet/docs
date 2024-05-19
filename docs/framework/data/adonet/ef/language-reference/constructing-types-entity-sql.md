@@ -46,7 +46,7 @@ Entity SQL allows type constructors (initializers) to create instances of named 
 
 The following expression creates an instance of a complex type.
 
-`MyModel.ZipCode(‘98118’, ‘4567’)`
+`MyModel.ZipCode('98118', '4567')`
 
 The following expression creates an instance of a nested complex type.
 
@@ -56,7 +56,7 @@ The following expression creates an instance of an entity with a nested complex 
 
 `MyModel.Person("Bill", MyModel.AddressInfo('My street address', 'Seattle', 'WA', MyModel.ZipCode('98118', '4567')))`
 
-The following example shows how to initialize a property of a complex type to null. `MyModel.ZipCode(‘98118’, null)`
+The following example shows how to initialize a property of a complex type to null. `MyModel.ZipCode('98118', null)`
 
 The arguments to the constructor are assumed to be in the same order as the declaration of the attributes of the type.
 

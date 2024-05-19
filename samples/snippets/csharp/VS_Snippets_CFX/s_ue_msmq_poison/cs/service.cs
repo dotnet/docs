@@ -13,7 +13,7 @@ using System.Text;
 
 namespace Microsoft.ServiceModel.Samples
 {
-    // Define the purchas order line item.
+    // Define the purchase order line item.
     [DataContract]
     public class PurchaseOrderLineItem
     {

@@ -1,5 +1,5 @@
 ---
-title: "Boxing and Unboxing - C# Programming Guide"
+title: "Boxing and Unboxing"
 description: Learn about boxing and unboxing in C# programming. See code examples and view additional available resources.
 ms.date: 07/20/2015
 f1_keywords: 
@@ -107,6 +107,5 @@ the conversion will be performed, and you will get the output:
 
 ## See also
 
-- [C# programming guide](../index.md)
 - [Reference types](../../language-reference/keywords/reference-types.md)
 - [Value types](../../language-reference/builtin-types/value-types.md)

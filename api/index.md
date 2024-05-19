@@ -1,17 +1,17 @@
 ---
-description: "Learn more about: .NET API browser"
+description: Explore Microsoft's comprehensive .NET API browser. Your ultimate resource for all .NET-based APIs. Start your search now.
 layout: ApiBrowserPage
 hide_bc: true
 title: .NET API browser
-quickFilterColumn1: net-6.0,netframework-4.8,netstandard-2.1
-quickFilterColumn2: aspnetcore-6.0,efcore-5.0,xamarin-forms
+quickFilterColumn1: net-8.0,netframework-4.8,netstandard-2.1
+quickFilterColumn2: aspnetcore-8.0,efcore-8.0,net-maui-8.0
 quickFilterColumn3: azure-dotnet,ml-dotnet,spark-dotnet
 ms.topic: landing-page
 ms.custom: "updateeachrelease"
-ms.date: 11/17/2021
+ms.date: 11/14/2023
 ---
 # .NET API browser
 
 Welcome to the .NET API browser – your one-stop shop for all .NET-based APIs from Microsoft. Start searching for any managed APIs by typing in the box below.
 
-You can learn more about the API browser [in our blog post](/teamblog/announcing-unified-dotnet-experience-on-docs). If you have any feedback, create a new issue in the [MicrosoftDocs/feedback repository on GitHub](https://github.com/MicrosoftDocs/feedback/issues).
+If you have any feedback, create a new issue in the [dotnet/dotnet-api-docs](https://github.com/dotnet/dotnet-api-docs/issues) repo.

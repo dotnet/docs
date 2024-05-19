@@ -1,28 +1,22 @@
-﻿
-using System;
-using System.Data;
-using System.Data.SqlClient;
-using System.Data.OleDb;
+﻿using System;
 using System.Configuration;
 
-class Program
+static class Program
 {
     static void Main()
     {
-        string s = GetConnectionStringByProvider("System.Data.SqlClient");
+        var s = GetConnectionStringByProvider("System.Data.SqlClient");
         Console.WriteLine(s);
         Console.ReadLine();
     }
+
     // <Snippet1>
     // Retrieve a connection string by specifying the providerName.
     // Assumes one connection string per provider in the config file.
-    static string GetConnectionStringByProvider(string providerName)
+    static string? GetConnectionStringByProvider(string providerName)
     {
-        // Return null on failure.
-        string returnValue = null;
-
         // Get the collection of connection strings.
-        ConnectionStringSettingsCollection settings =
+        ConnectionStringSettingsCollection? settings =
             ConfigurationManager.ConnectionStrings;
 
         // Walk through the collection and return the first
@@ -32,11 +26,12 @@ class Program
             foreach (ConnectionStringSettings cs in settings)
             {
                 if (cs.ProviderName == providerName)
-                    returnValue = cs.ConnectionString;
-                break;
+                {
+                    return cs.ConnectionString;
+                }
             }
         }
-        return returnValue;
+        return null;
     }
     // </Snippet1>
 }

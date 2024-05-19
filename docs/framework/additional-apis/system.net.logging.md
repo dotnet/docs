@@ -2,10 +2,10 @@
 description: "Learn more about: Logging class"
 title: Logging class (System.Net)
 ms.date: 06/12/2020
-ms.technology: dotnet-networking
-topic_type: 
+ms.subservice: networking
+topic_type:
   - apiref
-api_name: 
+api_name:
   - System.Net.Logging
   - System.Net.Logging.Associate
   - System.Net.Logging.Enter
@@ -13,9 +13,9 @@ api_name:
   - System.Net.Logging.Exit
   - System.Net.Logging.get_Http
   - System.Net.Logging.get_On
-api_location: 
+api_location:
   - System.dll
-api_type: 
+api_type:
   - Assembly
 ---
 # Logging class

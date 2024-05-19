@@ -66,7 +66,7 @@ After initial deployment, and potentially several times during their lifetime, s
 
  A .NET class or structure can be projected as a data contract by applying the <xref:System.Runtime.Serialization.DataContractAttribute> attribute to the class. The .NET type and its data contract projections are two distinct matters. It is possible to have multiple .NET types with the same data contract projection. This distinction is especially useful in allowing you to change the .NET type while maintaining the projected data contract, thereby maintaining compatibility with existing clients even in the strict sense of the word. There are two things you should always do to maintain this distinction between .NET type and data contract:  
   
-- Specify a <xref:System.Runtime.Serialization.DataContractAttribute.Name%2A> and <xref:System.Runtime.Serialization.DataContractAttribute.Namespace%2A>. You should always specify the name and namespace of your data contract to prevent your .NET type’s name and namespace from being exposed in the contract. This way, if you decide later to change the .NET namespace or type name, your data contract remains the same.  
+- Specify a <xref:System.Runtime.Serialization.DataContractAttribute.Name%2A> and <xref:System.Runtime.Serialization.DataContractAttribute.Namespace%2A>. You should always specify the name and namespace of your data contract to prevent your .NET type's name and namespace from being exposed in the contract. This way, if you decide later to change the .NET namespace or type name, your data contract remains the same.  
   
 - Specify <xref:System.Runtime.Serialization.DataMemberAttribute.Name%2A>. You should always specify the name of your data members to prevent your .NET member name from being exposed in the contract. This way, if you decide later to change the .NET name of the member, your data contract remains the same.  
   
@@ -76,7 +76,7 @@ After initial deployment, and potentially several times during their lifetime, s
   
  If service compatibility is of high importance, you might consider ignoring unused data members in your code and leave them in place. If you are splitting up a data member into multiple members, you might consider leaving the existing member in place as a property that can perform the required splitting and re-aggregation for down-level clients (clients that are not upgraded to the latest version).  
   
- Similarly, changes to the data contract’s name or namespace are breaking changes.  
+ Similarly, changes to the data contract's name or namespace are breaking changes.  
   
 ### Round-Trips of Unknown Data  
 
@@ -109,7 +109,7 @@ After initial deployment, and potentially several times during their lifetime, s
   
 ### Specifying Name, Namespace, and Action  
 
- By default, the name of a service contract is the name of the interface. Its default namespace is "http://tempuri.org", and each operation’s action is "http://tempuri.org/contractname/methodname". It is recommended that you explicitly specify a name and namespace for the service contract, and an action for each operation to avoid using "http://tempuri.org" and to prevent interface and method names from being exposed in the service’s contract.  
+ By default, the name of a service contract is the name of the interface. Its default namespace is `http://tempuri.org`, and each operation's action is `http://tempuri.org/contractname/methodname`. It is recommended that you explicitly specify a name and namespace for the service contract, and an action for each operation to avoid using `http://tempuri.org` and to prevent interface and method names from being exposed in the service's contract.  
   
 ### Adding Parameters and Operations  
 
@@ -169,7 +169,7 @@ public class PurchaseOrderV1 : IPurchaseOrderV1
 }  
 ```  
   
- While the service contract’s operations would be written in terms of `PurchaseOrderV1`, the actual business logic would be in terms of `IPurchaseOrderV1`. Then, in version 2, there would be a new `IPurchaseOrderV2` interface and a new `PurchaseOrderV2` class as shown in the following code:  
+ While the service contract's operations would be written in terms of `PurchaseOrderV1`, the actual business logic would be in terms of `IPurchaseOrderV1`. Then, in version 2, there would be a new `IPurchaseOrderV2` interface and a new `PurchaseOrderV2` class as shown in the following code:  
   
 ```csharp
 public interface IPurchaseOrderV2  

@@ -12,7 +12,7 @@ The Microsoft .NET Framework includes three models for processing XML data: the 
   
  The <xref:System.Xml.XPath.XPathDocument> class is a read-only, in-memory data store that is based on the XPath data model. The <xref:System.Xml.XPath.XPathNavigator> class offers several editing options and navigation capabilities using a cursor model over XML documents contained in the read-only <xref:System.Xml.XPath.XPathDocument> class as well as the <xref:System.Xml.XmlDocument> class.  
   
- [LINQ to XML](../../linq/linq-xml-overview.md) is a model introduced in the .NET Framework version 3.5 for processing XML data. It's an in-memory model that leverages [Language-Integrated Query (LINQ)](../../../csharp/programming-guide/concepts/linq/index.md). LINQ extends the language syntax of C# and Visual Basic to provide new query capabilities.  
+ [LINQ to XML](../../linq/linq-xml-overview.md) is a model introduced in the .NET Framework version 3.5 for processing XML data. It's an in-memory model that leverages [Language-Integrated Query (LINQ)](/dotnet/csharp/linq/). LINQ extends the language syntax of C# and Visual Basic to provide new query capabilities.  
   
 ## In This Section  
 

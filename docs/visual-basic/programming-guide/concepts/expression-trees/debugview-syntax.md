@@ -4,7 +4,7 @@ description: Learn about the special syntax used by the DebugView property to pr
 author: zspitz
 ms.author: wiwagn
 ms.date: 02/14/2021
-ms.topic: reference
+ms.topic: language-reference
 helpviewer_keywords:
 - "expression trees"
 - "debugview"

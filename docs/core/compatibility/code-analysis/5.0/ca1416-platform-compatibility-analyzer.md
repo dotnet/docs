@@ -37,14 +37,13 @@ In projects that target platforms for which APIs that they use aren't available,
 
   > [!TIP]
   >
-  > - Blazor WebAssembly projects and Razor class library projects include browser support automatically.
-  > - To manually add the browser as a supported platform for your project, add the following entry to your project file:
+  > Blazor WebAssembly projects and Razor class library projects include browser support automatically. To manually add the browser as a supported platform for your project, add the following entry to your project file:
   >
-  >  ```xml
-  >  <ItemGroup>
-  >    <SupportedPlatform Include="browser" />
-  >  </ItemGroup>
-  >  ```
+  > ```xml
+  > <ItemGroup>
+  >   <SupportedPlatform Include="browser" />
+  > </ItemGroup>
+  > ```
 
 ## Version introduced
 
@@ -88,7 +87,7 @@ public void PlayCMajor()
 
 If you don't want to fix all your call sites, you can choose one of the following options to suppress the warning:
 
-- To suppress rule CA1416, you can do so using `#pragma` or the [**DisabledWarnings**](../../../../csharp/language-reference/compiler-options/errors-warnings.md#disabledwarnings) compiler flag, or by [setting the rule's severity](../../../../fundamentals/code-analysis/configuration-options.md#severity-level) to `none` in an .editorconfig file.
+- To suppress rule CA1416, you can do so using `#pragma` or the [**NoWarn**](../../../../csharp/language-reference/compiler-options/errors-warnings.md#nowarn) compiler flag, or by [setting the rule's severity](../../../../fundamentals/code-analysis/configuration-options.md#severity-level) to `none` in an .editorconfig file.
 
   ```csharp
   public void PlayCMajor()

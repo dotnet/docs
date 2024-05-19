@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Configuration file schema for the .NET Framework"
-title: "Configuration file schema for the .NET Framework"
+description: "Learn more about: Configuration file schema for .NET Framework"
+title: "Configuration file schema for .NET Framework"
 ms.date: "05/01/2017"
 helpviewer_keywords:
   - ".NET Framework application configuration, configuration schema"
@@ -23,7 +23,7 @@ helpviewer_keywords:
   - "configuration file reference [.NET Framework]"
 ms.assetid: 69003d39-dc8a-460c-a6be-e6d93e690b38
 ---
-# Configuration file schema for the .NET Framework
+# Configuration file schema for .NET Framework
 
 Configuration files are standard XML files that you can use to change settings and set policies for your apps. The .NET Framework configuration schema consists of elements that you can use in configuration files to control the behavior of your apps. The table of contents for this section reflects the schema hierarchy for startup, runtime, network, and other types of configuration settings.
 

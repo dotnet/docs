@@ -1,6 +1,4 @@
-﻿using System;
-using System.Threading;
-using Microsoft.Extensions.Primitives;
+﻿using Microsoft.Extensions.Primitives;
 
 internal static partial class Example
 {
@@ -12,7 +10,8 @@ internal static partial class Example
 
         Console.WriteLine($"HasChanged: {cancellationChangeToken.HasChanged}");
 
-        Action<object?> callback = _ => Console.WriteLine("The callback was invoked.");
+        static void callback(object? _) =>
+            Console.WriteLine("The callback was invoked.");
 
         using (IDisposable subscription =
             cancellationChangeToken.RegisterChangeCallback(callback, null))

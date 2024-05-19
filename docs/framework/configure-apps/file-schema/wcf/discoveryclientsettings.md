@@ -29,7 +29,7 @@ Contains the settings needed by an application to participate in the service dis
             <contractTypeNames>
               <add name="String"
                    namespace="String" />
-            <contractTypeNames>
+            </contractTypeNames>
             <extensions />
             <scopes>
               <add scope="URI"/>

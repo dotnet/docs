@@ -5,7 +5,7 @@ ms.date: 11/04/2021
 ---
 # Enumerations
 
-*Enumerations*, also known as *enums*, , are integral types where labels are assigned to a subset of the values. You can use them in place of literals to make code more readable and maintainable.
+*Enumerations*, also known as *enums*, are integral types where labels are assigned to a subset of the values. You can use them in place of literals to make code more readable and maintainable.
 
 ## Syntax
 

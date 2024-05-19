@@ -1,8 +1,6 @@
 let rec tryFindMatch pred list =
     match list with
-    | head :: tail -> if pred(head)
-                        then Some(head)
-                        else tryFindMatch pred tail
+    | head :: tail -> if pred (head) then Some(head) else tryFindMatch pred tail
     | [] -> None
 
 // result1 is Some 100 and its type is int option.

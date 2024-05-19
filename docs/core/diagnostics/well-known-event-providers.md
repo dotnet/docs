@@ -17,7 +17,7 @@ This provider emits various events from the .NET runtime, including GC, loader, 
 
 ### "Microsoft-DotNETCore-SampleProfiler" provider
 
-This provider is a .NET runtime event provider that is used for CPU sampling for managed callstacks. When enabled, it captures a snapshot of each thread's managed callstack every 10 milliseconds. To enable this capture, you must specify an <xref:System.Diagnostics.Tracing.EventLevel> of `Informational` or higher.
+This provider is a .NET runtime event provider that is used for CPU sampling for managed callstacks. When enabled, it captures a snapshot of each thread's managed callstack every millisecond. To enable this capture, you must specify an <xref:System.Diagnostics.Tracing.EventLevel> of `Informational` or higher.
 
 ## Framework libraries
 
@@ -47,6 +47,7 @@ This provider logs information from the ArrayPool. The following table shows the
 |`BufferReturned`|Verbose (5)|A buffer is returned to the pool.|
 |`BufferTrimmed`|Informational (4)|A buffer is attempted to be freed due to memory pressure or inactivity.|
 |`BufferTrimPoll`|Informational (4)|A check is being made to trim buffers.|
+|`BufferDropped`|Informational (4)|A buffer is dropped when returned to the pool.|
 
 ### "System.Net.Http" provider
 

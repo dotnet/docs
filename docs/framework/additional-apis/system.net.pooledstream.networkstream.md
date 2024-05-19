@@ -2,7 +2,7 @@
 description: "Learn more about: PooledStream.NetworkStream Property"
 title: PooledStream.NetworkStream Property (System.Net)
 ms.date: 10/21/2019
-ms.technology: "dotnet-networking"
+ms.subservice: "networking"
 topic_type:
   - "apiref"
 api_name:
@@ -26,7 +26,7 @@ internal NetworkStream NetworkStream { get; set; }
 
 ## Property value
 
-<xref:System.Net.Sockets.NetworkStream>  
+<xref:System.Net.Sockets.NetworkStream>
 The network stream for the `PooledStream` socket.
 
 ## Remarks

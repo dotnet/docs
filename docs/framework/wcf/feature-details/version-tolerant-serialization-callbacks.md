@@ -21,12 +21,12 @@ The data contract programming model fully supports the version-tolerant serializ
 
  There are four callback attributes. Each attribute can be applied to a method that the serialization/deserialization engine calls at various times. The table below explains when to use each attribute.  
   
-|Attribute|When the corresponding method is called|  
-|---------------|---------------------------------------------|  
-|<xref:System.Runtime.Serialization.OnSerializingAttribute>|Called before serializing the type.|  
-|<xref:System.Runtime.Serialization.OnSerializedAttribute>|Called after serializing the type.|  
-|<xref:System.Runtime.Serialization.OnDeserializingAttribute>|Called before deserializing the type.|  
-|<xref:System.Runtime.Serialization.OnDeserializedAttribute>|Called after deserializing the type.|  
+| Attribute                                                    | When the corresponding method is called |
+| ------------------------------------------------------------ | --------------------------------------- |
+| <xref:System.Runtime.Serialization.OnSerializingAttribute>   | Called before serializing the type.     |
+| <xref:System.Runtime.Serialization.OnSerializedAttribute>    | Called after serializing the type.      |
+| <xref:System.Runtime.Serialization.OnDeserializingAttribute> | Called before deserializing the type.   |
+| <xref:System.Runtime.Serialization.OnDeserializedAttribute>  | Called after deserializing the type.    |
   
  The methods must accept a <xref:System.Runtime.Serialization.StreamingContext> parameter.  
   
@@ -46,4 +46,4 @@ The data contract programming model fully supports the version-tolerant serializ
 - <xref:System.Runtime.Serialization.OnDeserializingAttribute>
 - <xref:System.Runtime.Serialization.OnDeserializedAttribute>
 - <xref:System.Runtime.Serialization.StreamingContext>
-- [Version Tolerant Serialization](../../../standard/serialization/version-tolerant-serialization.md)
+- [Version Tolerant Serialization](/previous-versions/dotnet/fundamentals/serialization/binary/version-tolerant-serialization)

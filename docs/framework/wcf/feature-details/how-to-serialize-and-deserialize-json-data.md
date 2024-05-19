@@ -7,7 +7,7 @@ ms.assetid: 88abc1fb-8196-4ee3-a23b-c6934144d1dd
 # How to use DataContractJsonSerializer
 
 > [!NOTE]
-> This article is about <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>. For most scenarios that involve serializing and deserializing JSON, we recommend the APIs in the [System.Text.Json namespace](../../../standard/serialization/system-text-json-overview.md).
+> This article is about <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>. For most scenarios that involve serializing and deserializing JSON, we recommend the APIs in the [System.Text.Json namespace](../../../standard/serialization/system-text-json/overview.md).
 
 JSON (JavaScript Object Notation) is an efficient data encoding format that enables fast exchanges of small amounts of data between client browsers and AJAX-enabled Web services.
 
@@ -136,4 +136,4 @@ public class TestDuplicateDataDerived : TestDuplicateDataBase
 
 ## See also
 
-- [JSON serialization in .NET](../../../standard/serialization/system-text-json-overview.md)
+- [JSON serialization in .NET](../../../standard/serialization/system-text-json/overview.md)

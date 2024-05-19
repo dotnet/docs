@@ -7,7 +7,7 @@ dev_langs:
   - "vb"
 ms.assetid: 6c804e4d-f348-4afd-9f63-d3f0f24bc6a9
 ---
-# How to: Call Model-Defined Functions in Queries
+# How to: Call model-defined functions in queries
 
 This topic describes how to call functions that are defined in the conceptual model from within LINQ to Entities queries.
 
@@ -23,9 +23,16 @@ This topic describes how to call functions that are defined in the conceptual mo
 
  The following example demonstrates how to call a function that is defined in the conceptual model from within a LINQ to Entities query. The example uses the School model. For information about the School model, see [Creating the School Sample Database](/previous-versions/dotnet/netframework-4.0/bb399731(v=vs.100)) and [Generating the School .edmx File](/previous-versions/dotnet/netframework-4.0/bb399739(v=vs.100)).
 
- The following conceptual model function returns the number of years since an instructor was hired. For information about adding the function to a conceptual model, see [How to: Define Custom Functions in the Conceptual Model](/previous-versions/dotnet/netframework-4.0/dd456812(v=vs.100)).)
+ The following conceptual model function returns the number of years since an instructor was hired. For information about adding the function to a conceptual model, see [How to: Define Custom Functions in the Conceptual Model](/previous-versions/dotnet/netframework-4.0/dd456812(v=vs.100)).
 
- [!code-xml[DP ConceptualModelFunctions#1](../../../../../../samples/snippets/xml/VS_Snippets_Data/dp conceptualmodelfunctions/xml/school.edmx#1)]
+```xml
+<Function Name="YearsSince" ReturnType="Edm.Int32">
+  <Parameter Name="date" Type="Edm.DateTime" />
+  <DefiningExpression>
+    Year(CurrentDateTime()) - Year(date)
+  </DefiningExpression>
+</Function>
+```
 
 ## Example 2
 

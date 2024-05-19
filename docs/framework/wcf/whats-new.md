@@ -5,12 +5,14 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "WCF [WCF], what's new"
   - "Windows Communication Foundation [WCF], what's new"
-ms.assetid: 7e93fe73-af93-46b5-9f63-32f761ee40cf
+ms.topic: whats-new
 ---
 
-# What's New in Windows Communication Foundation 4.5
+# What's new in Windows Communication Foundation 4.5
 
 This topic discusses features new to Windows Communication Foundation (WCF) version 4.5.
+
+[!INCLUDE[](~/includes/wcf_grpc_heading.md)]
 
 ## WCF Simplification Features
 
@@ -118,7 +120,7 @@ Support has been added to allow for WCF services with Internationalized Domain N
 
 ## HttpClient
 
-A new class called <xref:System.Net.Http.HttpClient> has been added to make working with HTTP requests much easier. For more info, see [Making apps social and connected with HTTP services](https://channel9.msdn.com/Events/BUILD/BUILD2011/PLAT-581T).
+A new class called <xref:System.Net.Http.HttpClient> has been added to make working with HTTP requests much easier. For more info, see <xref:System.Net.Http.HttpClient> and [Guidelines for using HttpClient](../../fundamentals/networking/http/httpclient-guidelines.md).
 
 ## Configuration IntelliSense
 

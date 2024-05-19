@@ -2,7 +2,7 @@
 description: Learn more about the ResetActiveAndFocusedControlsRecursive method
 title: ResetActiveAndFocusedControlsRecursive method
 ms.date: 11/10/2021
-ms.technology: dotnet-winforms
+ms.subservice: winforms
 api_name:
   - System.Windows.Forms.ContainerControl.ResetActiveAndFocusedControlsRecursive
 api_location:

@@ -1,6 +1,0 @@
-CMFCRibbonPanel* pPanel3 = pCategory->AddPanel(_T("Font"));
-
-CMFCRibbonFontComboBox::m_bDrawUsingFont = TRUE;
-CMFCRibbonFontComboBox* pBtn7 = new CMFCRibbonFontComboBox(ID_RIBBON_EBTN_7);
-pBtn7->SelectItem(_T("Arial"));
-pPanel3->Add(pBtn7);

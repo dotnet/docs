@@ -33,7 +33,7 @@ SELECT p, GroupPartition(ol.Quantity) FROM LOB.OrderLines AS ol
 ```sql
 SELECT p, Sum(GroupPartition(ol.Quantity)) FROM LOB.OrderLines AS ol
   GROUP BY ol.Product AS p
-SELET p, Sum(ol.Quantity) FROM LOB.OrderLines AS ol
+SELECT p, Sum(ol.Quantity) FROM LOB.OrderLines AS ol
   group by ol.Product as p
 ```
 
@@ -48,7 +48,7 @@ SELECT p, GroupPartition(ol.Quantity) FROM LOB.OrderLines AS ol GROUP BY ol.Prod
  With a regular `GROUP BY`, the results of the grouping are hidden. You can only use the results in an aggregate function. In order to see the results of the grouping, you have to correlate the results of the grouping and the input set by using a subquery. The following two queries are equivalent:
 
 ```sql
-SELET p, (SELECT q FROM GroupPartition(ol.Quantity) AS q) FROM LOB.OrderLines AS ol GROUP BY ol.Product AS p
+SELECT p, (SELECT q FROM GroupPartition(ol.Quantity) AS q) FROM LOB.OrderLines AS ol GROUP BY ol.Product AS p
 SELECT p, (SELECT ol.Quantity AS q FROM LOB.OrderLines AS ol2 WHERE ol2.Product = p) FROM LOB.OrderLines AS ol GROUP BY ol.Product AS p
 ```
 

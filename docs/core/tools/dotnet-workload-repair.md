@@ -29,15 +29,7 @@ The `dotnet workload repair` command reinstalls all installed workloads. Workloa
 
 For more information about the `dotnet workload` commands, see the [dotnet workload install](dotnet-workload-install.md#description) command.
 
-## Arguments
-
-- **`WORKLOAD_ID`**
-
-  The workload ID of the workload to repair.
-
 ## Options
-
-<!-- markdownlint-disable MD012 -->
 
 [!INCLUDE [config-file](../../../includes/cli-configfile.md)]
 

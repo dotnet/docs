@@ -2,8 +2,7 @@
 title: "Tutorial: Install and use a .NET global tool"
 description: Learn how to install and use a .NET tool as a global tool.
 ms.topic: tutorial
-ms.date: 02/12/2020
-recommendations: false
+ms.date: 07/25/2023
 ---
 
 # Tutorial: Install and use a .NET global tool using the .NET CLI
@@ -34,6 +33,8 @@ This tutorial teaches you how to install and use a global tool. You use a tool t
    You can invoke the tool using the following command: botsay
    Tool 'microsoft.botsay' (version '1.0.0') was successfully installed.
    ```
+
+   [!INCLUDE[](~/includes/dotnet-tool-install-arch-options.md)]
 
 1. Invoke the tool:
 

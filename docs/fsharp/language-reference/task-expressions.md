@@ -24,7 +24,7 @@ In a task expression, some expressions and operations are synchronous, and some 
 The following code shows the difference between `let` and `let!`. The line of code that uses `let` just creates a task as an object that you can await later by using, for example, `task.Wait()` or `task.Result`. The line of code that uses `let!` starts the task and awaits its result.
 
 ```fsharp
-// let just stores the result as an task.
+// let just stores the result as a task.
 let (result1 : Task<int>) = stream.ReadAsync(buffer, offset, count, cancellationToken)
 // let! completes the asynchronous operation and returns the data.
 let! (result2 : int)  = stream.ReadAsync(buffer, offset, count, cancellationToken)

@@ -1,5 +1,5 @@
 ---
-title: "Knowing When to Use Override and New Keywords - C# Programming Guide"
+title: "Knowing When to Use Override and New Keywords"
 description: Use the new and override keywords in C# to specify how methods with the same name in a base and derived class interact.
 ms.date: 07/20/2015
 helpviewer_keywords: 
@@ -539,7 +539,6 @@ namespace OverrideAndNew2
   
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [The C# type system](../../fundamentals/types/index.md)
 - [Versioning with the Override and New Keywords](./versioning-with-the-override-and-new-keywords.md)
 - [base](../../language-reference/keywords/base.md)

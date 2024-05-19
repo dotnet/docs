@@ -4,9 +4,11 @@ description: Learn how to handle authentication and authorization in ASP.NET Web
 author: ardalis
 ms.author: daroth
 no-loc: [Blazor]
-ms.date: 12/2/2021
+ms.date: 04/11/2022
 ---
 # Security: Authentication and Authorization in ASP.NET Web Forms and Blazor
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 Migrating from an ASP.NET Web Forms application to Blazor will almost certainly require updating how authentication and authorization are performed, assuming the application had authentication configured. This chapter will cover how to migrate from the ASP.NET Web Forms universal provider model (for membership, roles, and user profiles) and how to work with ASP.NET Core Identity from Blazor apps. While this chapter will cover the high-level steps and considerations, the detailed steps and scripts may be found in the referenced documentation.
 

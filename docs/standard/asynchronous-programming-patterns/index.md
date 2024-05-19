@@ -15,7 +15,7 @@ ms.assetid: 4ece5c0b-f8fe-4114-9862-ac02cfe5a5d7
 
 - **Event-based Asynchronous Pattern (EAP)**, which is the event-based legacy model for providing asynchronous behavior. It requires a method that has the `Async` suffix and one or more events, event handler delegate types, and `EventArg`-derived types. EAP was introduced in .NET Framework 2.0. It's no longer recommended for new development. For more information, see [Event-based Asynchronous Pattern (EAP)](event-based-asynchronous-pattern-eap.md).  
 
-- **Asynchronous Programming Model (APM)** pattern (also called the <xref:System.IAsyncResult> pattern), which is the legacy model that uses the <xref:System.IAsyncResult> interface to provide asynchronous behavior. In this pattern, synchronous operations require `Begin` and `End` methods (for example, `BeginWrite` and `EndWrite` to implement an asynchronous write operation). This pattern is no longer recommended for new development. For more information, see [Asynchronous Programming Model (APM)](asynchronous-programming-model-apm.md).  
+- **Asynchronous Programming Model (APM)** pattern (also called the <xref:System.IAsyncResult> pattern), which is the legacy model that uses the <xref:System.IAsyncResult> interface to provide asynchronous behavior. In this pattern, asynchronous operations require `Begin` and `End` methods (for example, `BeginWrite` and `EndWrite` to implement an asynchronous write operation). This pattern is no longer recommended for new development. For more information, see [Asynchronous Programming Model (APM)](asynchronous-programming-model-apm.md).  
   
 ## Comparison of patterns
 
@@ -61,6 +61,6 @@ public class MyClass
 
 ## See also
 
-- [C# - Asynchronous programming with async and await](../../csharp/programming-guide/concepts/async/index.md)
+- [C# - Asynchronous programming with async and await](../../csharp/asynchronous-programming/index.md)
 - [Visual Basic - Asynchronous Programming with Async and Await](../../visual-basic/programming-guide/concepts/async/index.md)
 - [F# - Asynchronous Programming](../../fsharp/tutorials/async.md)

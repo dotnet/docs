@@ -22,8 +22,6 @@ You can run commands as root as long as you don't transition back and forth betw
 
 The following instructions demonstrate the recommended way to install, run, and uninstall .NET tools that require elevated permissions to execute.
 
-<!-- markdownlint-disable MD025 -->
-
 # [Windows](#tab/windows)
 
 ### Install the tool
@@ -32,7 +30,7 @@ If the folder `%ProgramFiles%\dotnet-tools` already exists, do the following to 
 
 - Right-click the `%ProgramFiles%\dotnet-tools` folder and select **Properties**. The **Common Properties** dialog box opens.
 - Select the **Security** tab. Under **Group or user names**, check whether the "Users" group has permission to write or modify the directory.
-- If the "Users" group can write or modify the directory, use a different directory name when installing the tools rather than *dotnet-tools*.
+- If the "Users" group cannot write or modify the directory, use a different directory name when installing the tools rather than *dotnet-tools*.
 
 To install tools, run the following command in elevated prompt. It will create the *dotnet-tools* folder during the installation.
 

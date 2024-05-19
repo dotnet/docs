@@ -55,7 +55,7 @@ Specifies the compiler version attributes for a language provider.
   
 ## Remarks  
 
- In the .NET Framework version 3.5, Code Document Object Model (CodeDOM) code providers can support provider-specific options by using the `<providerOption>` element.  
+ In .NET Framework version 3.5, Code Document Object Model (CodeDOM) code providers can support provider-specific options by using the `<providerOption>` element.  
   
  The .NET Framework 3.5 includes updated .NET Framework 2.0 assemblies and provides new version 3.5 assemblies that contain new types. The Microsoft C# and Visual Basic code providers are contained in .NET Framework 2.0 assemblies but have been updated to support version 3.5 compilers. By default, the updated code providers generate code for version 2.0 compilers. You can use the `<providerOption>` element to change the target compiler version to 3.5. To do this, specify "CompilerVersion" for the `name` attribute and "v3.5" for the `value` attribute. You must precede the version number with a lower-case "v".  
   
@@ -95,5 +95,5 @@ Specifies the compiler version attributes for a language provider.
 - <xref:System.CodeDom.Compiler.CodeDomProvider>
 - [Configuration File Schema](../index.md)
 - [\<compilers> Element](compilers-element.md)
-- [Specifying Fully Qualified Type Names](../../../reflection-and-codedom/specifying-fully-qualified-type-names.md)
+- [Specifying Fully Qualified Type Names](../../../../fundamentals/reflection/specifying-fully-qualified-type-names.md)
 - [compiler Element for compilers for compilation (ASP.NET Settings Schema)](/previous-versions/dotnet/netframework-4.0/a15ebt6c(v=vs.100))

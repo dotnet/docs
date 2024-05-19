@@ -2,7 +2,6 @@
 title: SingleFile rules (code analysis)
 description: "Learn about code analysis single file rules."
 ms.date: 09/04/2020
-ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.singlefilerules
 helpviewer_keywords:

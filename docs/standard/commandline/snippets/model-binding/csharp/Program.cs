@@ -7,7 +7,8 @@ class Program
         await IntAndString(args);
         await Enum(args);
         await ArraysAndLists(args);
-        await FileInfo(args);
+        await FileSystemInfoExample(args);
+        await FileInfoExample(args);
         await Uri(args);
         await ComplexType.Program.Main(args);
         await ParseArgument.Program.Main(args);
@@ -23,13 +24,13 @@ class Program
         var messageOption = new Option<string>
             ("--message", "An option whose argument is parsed as a string.");
 
-        var rootCommand = new RootCommand("Model binding example");
+        var rootCommand = new RootCommand("Parameter binding example");
         rootCommand.Add(delayOption);
         rootCommand.Add(messageOption);
 
         rootCommand.SetHandler(
             // <lambda>
-            (int delayOptionValue, string messageOptionValue) =>
+            (delayOptionValue, messageOptionValue) =>
             {
                 DisplayIntAndString(delayOptionValue, messageOptionValue);
             },
@@ -60,7 +61,7 @@ class Program
         var rootCommand = new RootCommand("Enum binding example");
         rootCommand.Add(colorOption);
 
-        rootCommand.SetHandler((ConsoleColor colorOptionValue) =>
+        rootCommand.SetHandler((colorOptionValue) =>
             { Console.WriteLine(colorOptionValue); },
             colorOption);
 
@@ -78,23 +79,55 @@ class Program
         var command = new RootCommand("IEnumerable binding example");
         command.Add(itemsOption);
 
-        command.SetHandler(
-            (IEnumerable<string> items) =>
+        command.SetHandler((items) =>
             {
                 Console.WriteLine(items.GetType());
 
-                foreach (var item in items)
+                foreach (string item in items)
                 {
                     Console.WriteLine(item);
                 }
-            }, itemsOption);
+            },
+            itemsOption);
 
         await command.InvokeAsync(args);
         // </ienumerable>
         await command.InvokeAsync("--items one --items two --items three");
         await command.InvokeAsync("--items one two three");
     }
-    static async Task FileInfo(string[] args)
+    static async Task FileSystemInfoExample(string[] args)
+    {
+        // <filesysteminfo>
+        var fileOrDirectoryOption = new Option<FileSystemInfo>("--file-or-directory");
+
+        var command = new RootCommand();
+        command.Add(fileOrDirectoryOption);
+
+        command.SetHandler((fileSystemInfo) =>
+            {
+                switch (fileSystemInfo)
+                {
+                    case FileInfo file                    :
+                        Console.WriteLine($"File name: {file.FullName}");
+                        break;
+                    case DirectoryInfo directory:
+                        Console.WriteLine($"Directory name: {directory.FullName}");
+                        break;
+                    default:
+                        Console.WriteLine("Not a valid file or directory name.");
+                        break;
+                }
+            },
+            fileOrDirectoryOption);
+
+        await command.InvokeAsync(args);
+        // </filesysteminfo>
+        await command.InvokeAsync("--file-or-directory scl.runtimeconfig.json");
+        await command.InvokeAsync("--file-or-directory ../net6.0");
+        await command.InvokeAsync("--file-or-directory newfile.json");
+    }
+
+    static async Task FileInfoExample(string[] args)
     {
         // <fileinfo>
         var fileOption = new Option<FileInfo>("--file");
@@ -102,16 +135,23 @@ class Program
         var command = new RootCommand();
         command.Add(fileOption);
 
-        command.SetHandler(
-            (FileInfo? file) =>
+        command.SetHandler((file) =>
             {
-                Console.WriteLine($"Type: {file?.GetType()}");
-                Console.WriteLine($"Name: {file?.FullName}");
-            }, fileOption);
+                if (file is not null)
+                {
+                    Console.WriteLine($"File name: {file?.FullName}");
+                }
+                else
+                {
+                    Console.WriteLine("Not a valid file name.");
+                }
+            },
+            fileOption);
 
         await command.InvokeAsync(args);
         // </fileinfo>
         await command.InvokeAsync("--file scl.runtimeconfig.json");
+        await command.InvokeAsync("--file newfile.json");
     }
 
     static async Task Uri(string[] args)
@@ -122,12 +162,11 @@ class Program
         var command = new RootCommand();
         command.Add(endpointOption);
 
-        command.SetHandler(
-            (Uri? uri) =>
+        command.SetHandler((uri) =>
             {
-                Console.WriteLine($"Type: {uri?.GetType()}");
                 Console.WriteLine($"URL: {uri?.ToString()}");
-            }, endpointOption);
+            },
+            endpointOption);
 
         await command.InvokeAsync(args);
         // </uri>
@@ -137,22 +176,23 @@ class Program
     static async Task OnlyTakeExample(string[] args)
     {
         // <onlytake>
+        var arg1 = new Argument<string[]>(name: "arg1", parse: result =>
+        {
+            result.OnlyTake(2);//System.CommandLine.Parsing.ArgumentResult.OnlyTake
+            return result.Tokens.Select(t => t.Value).ToArray();
+        });
+        var arg2 = new Argument<string[]>("arg2");
+
         var rootCommand = new RootCommand
         {
-            new Argument<string[]>(name: "arg1", parse: result =>
-            {
-                result.OnlyTake(2);//System.CommandLine.Parsing.ArgumentResult.OnlyTake
-                return result.Tokens.Select(t => t.Value).ToArray();
-            }),
-            new Argument<string[]>("arg2")
+            arg1, arg2
         };
-        rootCommand.SetHandler(
-            (string[] arg1, string[] arg2) =>
+        rootCommand.SetHandler((arg1Value, arg2Value) =>
             {
-                Console.WriteLine($"arg1 = {String.Concat(arg1)}");
-                Console.WriteLine($"arg2 = {String.Concat(arg2)}");
+                Console.WriteLine($"arg1 = {String.Concat(arg1Value)}");
+                Console.WriteLine($"arg2 = {String.Concat(arg2Value)}");
             },
-            rootCommand.Arguments[0], rootCommand.Arguments[1]);
+            arg1, arg2);
         await rootCommand.InvokeAsync(args);
         // </onlytake>
         await rootCommand.InvokeAsync("1 2 3 4 5");

@@ -4,8 +4,6 @@ using System.Collections.Generic;
 using System.Collections;
 using System.Security.Permissions;
 
-[assembly: SecurityPermission(
-   SecurityAction.RequestMinimum, Execution = true)]
 namespace ConceptualKnownTypeSamples
 {
     public sealed class Test

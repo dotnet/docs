@@ -5,7 +5,7 @@ ms.date: 02/14/2020
 ---
 # dotnet remove package
 
-**This article applies to:** ✔️ .NET Core 2.x SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -34,8 +34,6 @@ Specifies the project file. If not specified, the command searches the current d
 The package reference to remove.
 
 ## Options
-
-<!-- markdownlint-disable MD012 -->
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 

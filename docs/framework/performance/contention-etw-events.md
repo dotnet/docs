@@ -5,7 +5,6 @@ ms.date: 11/11/2021
 helpviewer_keywords:
   - "contention events [.NET Framework]"
   - "ETW, contention events (CLR)"
-ms.topic: reference
 ---
 
 # Contention ETW events

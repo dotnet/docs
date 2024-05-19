@@ -28,9 +28,6 @@ In this tutorial, you:
 > - Evaluate the model
 > - Consume the model
 
-> [!NOTE]
-> Model Builder is currently in Preview.
-
 ## Prerequisites
 
 - For a list of pre-requisites and installation instructions, visit the [Model Builder installation guide](../how-to-guides/install-model-builder.md).
@@ -64,12 +61,12 @@ The EuroSAT dataset contains a collection of satellite images divided into ten c
 
 When first adding Model Builder to the solution it will prompt you to create an `mbconfig` file. The `mbconfig` file keeps track of everything you do in Model Builder to allow you to reopen the session.
 
-1. In Solution Explorer, right-click the **LandUse** project, and select **Add > Machine Learning Model...**.
+1. In Solution Explorer, right-click the **LandUse** project, and select **Add > Machine Learning Model**.
 1. In the dialog, name the Model Builder project **LandUse**, and click **Add**.
 
 ## Choose a scenario
 
-![Model Builder Scenarios](../media/model-builder-scenarios.png)
+:::image type="content" source="../media/model-builder-scenarios-2-0.png" alt-text="Model Builder Scenario Screen" lightbox="../media/model-builder-scenarios-2-0.png":::
 
 To train your model, you need to select from the list of available machine learning scenarios provided by Model Builder.
 
@@ -210,7 +207,7 @@ If you no longer plan to use the Azure resources you created, delete them. This 
 1. Navigate to the [Azure portal](https://portal.azure.com/) and select **Resource groups** in the portal menu.
 1. From the list of resource groups, select the resource group you created. In this case, it's "landuse-rg".
 1. Select **Delete resource group**.
-1. Type the resource group name, "landuse-rg", into the text box and then select **Enter**.
+1. Type the resource group name, "landuse-rg", into the text box and then select <kbd>Enter</kbd>.
 
 ## Next steps
 

@@ -1,5 +1,5 @@
 ---
-title: "How to define value equality for a class or struct - C# Programming Guide"
+title: "How to define value equality for a class or struct"
 description: Learn how to define value equality for a class or struct. See code examples and view available resources.
 ms.topic: how-to
 ms.date: 03/26/2021
@@ -48,7 +48,7 @@ The implementation details for value equality are different for classes and stru
 5. Optional: To support definitions for "greater than" or "less than," implement the <xref:System.IComparable%601> interface for your type, and also overload the [<=](../../language-reference/operators/comparison-operators.md#less-than-or-equal-operator-) and [>=](../../language-reference/operators/comparison-operators.md#greater-than-or-equal-operator-) operators.  
 
 > [!NOTE]
-> Starting in C# 9.0, you can use records to get value equality semantics without any unnecessary boilerplate code.
+> You can use records to get value equality semantics without any unnecessary boilerplate code.
 
 ## Class example
 
@@ -79,11 +79,10 @@ The following example shows how to implement value equality in a struct (value t
 
 :::code language="csharp" source="snippets/how-to-define-value-equality-for-a-type/ValueEqualityStruct/Program.cs":::
   
-For structs, the default implementation of <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> (which is the overridden version in <xref:System.ValueType?displayProperty=nameWithType>) performs a value equality check by using reflection to compare the values of every field in the type. When an implementer overrides the virtual `Equals` method in a struct, the purpose is to provide a more efficient means of performing the value equality check and optionally to base the comparison on some subset of the struct's field or properties.
+For structs, the default implementation of <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> (which is the overridden version in <xref:System.ValueType?displayProperty=nameWithType>) performs a value equality check by using reflection to compare the values of every field in the type. When an implementer overrides the virtual `Equals` method in a struct, the purpose is to provide a more efficient means of performing the value equality check and optionally to base the comparison on some subset of the struct's fields or properties.
   
 The [==](../../language-reference/operators/equality-operators.md#equality-operator-) and [!=](../../language-reference/operators/equality-operators.md#inequality-operator-) operators can't operate on a struct unless the struct explicitly overloads them.
 
 ## See also
 
 - [Equality comparisons](equality-comparisons.md)
-- [C# programming guide](../index.md)

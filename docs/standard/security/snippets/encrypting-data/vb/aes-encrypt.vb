@@ -29,8 +29,9 @@ Module Module1
                     ' it with the Aes class.
                     Using cryptoStream As New CryptoStream(fileStream, aes.CreateEncryptor(), CryptoStreamMode.Write)
 
-                        ' Create a StreamWriter for easy writing to the
-                        ' file stream.
+                        ' By default, the StreamWriter uses UTF-8 encoding.
+                        ' To change the text encoding, pass the desired encoding as the second parameter.
+                        ' For example, New StreamWriter(cryptoStream, Encoding.Unicode).
                         Using sWriter As New StreamWriter(cryptoStream)
 
                             'Write to the stream.

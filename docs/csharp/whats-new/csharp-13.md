@@ -51,7 +51,7 @@ You can read the details of the changes in the [proposal specification](~/_cshar
 The implicit "from the end" index operator, `^`, is now allowed in an object initializer expression. For example, you can now initialize an array in an object initializer as shown in the following code:
 
 ```csharp
-var v = new S()
+var countdown = new TimerRemaining()
 {
     buffer =
     {
@@ -69,7 +69,7 @@ var v = new S()
 };
 ```
 
-In versions before C# 13, the `^` operator can't be used in an object initializer. You need to index the elements from the front.
+The preceding example creates an array that counts down from 9 to 0. In versions before C# 13, the `^` operator can't be used in an object initializer. You need to index the elements from the front.
 
 ## See also
 

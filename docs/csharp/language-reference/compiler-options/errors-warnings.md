@@ -87,7 +87,7 @@ All warning messages are instead reported as errors. The build process halts (no
 
 ## WarningsAsErrors and WarningsNotAsErrors
 
-The **WarningsAsErrors** and **WarningsNotAsErrors** options override the **TreatWarningsAsErrors** option for a list of warnings. This option can be used with all *CS* warnings. The "CS" prefix is optional. You can use either the number, or "CS" followed by the error or warning number. For other elements that affect warnings, see the [Common MSBuild properties](/visualstudio/msbuild/common-msbuild-project-properties). In addition to the list of warning IDs, the string `nullable` treats all warnings related to nullability as errors.
+The **WarningsAsErrors** and **WarningsNotAsErrors** options override the **TreatWarningsAsErrors** option for a list of warnings. This option can be used with all *CS* warnings. The "CS" prefix is optional. You can use either the number, or "CS" followed by the error or warning number. For other elements that affect warnings, see the [Common MSBuild properties](/visualstudio/msbuild/common-msbuild-project-properties). In addition to the list of warning IDs, you can also specify the string `nullable`, which treats all warnings related to nullability as errors.
 
 Enable warnings 0219, 0168, and all nullable warnings as errors:
 
@@ -105,7 +105,7 @@ You use **WarningsAsErrors** to configure a set of warnings as errors. Use **War
 
 ## NoWarn
 
-The **NoWarn** option lets you suppress the compiler from displaying one or more warnings, where `warningnumber1`, `warningnumber2` are warning numbers that you want the compiler to suppress. Separate multiple warning numbers with a comma. You can use `nullable` to disable all warnings related to nullability.
+The **NoWarn** option lets you suppress the compiler from displaying one or more warnings, where `warningnumber1`, `warningnumber2` are warning numbers that you want the compiler to suppress. Separate multiple warning numbers with a comma. You can specify `nullable` to disable all warnings related to nullability.
 
 ```xml
 <NoWarn>warningnumber1,warningnumber2</NoWarn>

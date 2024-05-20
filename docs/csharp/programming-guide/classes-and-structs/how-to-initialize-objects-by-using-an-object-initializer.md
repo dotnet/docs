@@ -20,15 +20,15 @@ You must use an object initializer if you're defining an anonymous type. For mor
 
 The following example shows how to initialize a new `StudentName` type by using object initializers. This example sets properties in the `StudentName` type:
   
-[!code-csharp[InitializerObjectExample](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/object-collection-initializers/HowToObjectInitializers.cs#HowToObjectInitializers)]  
+:::code language="csharp" source="snippets/object-collection-initializers/HowToObjectInitializers.cs" id="SnippetHowToObjectInitializers":::
 
 Object initializers can be used to set indexers in an object. The following example defines a `BaseballTeam` class that uses an indexer to get and set players at different positions. The initializer can assign players, based on the abbreviation for the position, or the number used for each position baseball scorecards:
 
-[!code-csharp[InitializerIndexerExample](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/object-collection-initializers/HowToIndexInitializer.cs#HowToIndexInitializer)]  
+:::code language="csharp" source="snippets/object-collection-initializers/HowToIndexInitializer.cs" id="SnippetHowToIndexInitializer":::
 
 The next example shows the order of execution of constructor and member initializations using constructor with and without parameter:
 
-[!code-csharp[ExecutionOrderExample](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/object-collection-initializers/HowToIndexInitializer.cs#ObjectInitializersExecutionOrder)]  
+:::code language="csharp" source="snippets/object-collection-initializers/ObjectInitializersExecutionOrder.cs" id="ObjectInitializersExecutionOrder":::
 
 ## See also
 

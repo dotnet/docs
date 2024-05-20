@@ -13,8 +13,11 @@ ms.assetid: 124e1a63-2a4b-4132-b269-3b6d8d3ef72d
 The `using` keyword has two major uses:
 
 - The [using statement](../statements/using.md) defines a scope at the end of which an object is disposed.
+
+ :::code language="csharp" source="snippets/using-statement.cs":::
 - The [using directive](using-directive.md) creates an alias for a namespace or imports types defined in other namespaces.
 
+ :::code language="csharp" source="snippets/using-directive.cs":::
 ## See also
 
 - [C# keywords](index.md)

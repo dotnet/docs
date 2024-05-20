@@ -79,9 +79,9 @@ As training continues, the model adds any new tokens in the training text to its
 - meow (9)
 - run (10)
 
-The semantic relationships between the tokens can be analyzed by using these token ID sequences. Multi-valued numeric vectors, known as [_embeddings_]<!-- (understanding-embeddings.md) -->, are used to represent these relationships. An embedding is assigned to each token based on how commonly it's used together with, or in similar contexts to, the other tokens.
+The semantic relationships between the tokens can be analyzed by using these token ID sequences. Multi-valued numeric vectors, known as [embeddings](embeddings.md), are used to represent these relationships. An embedding is assigned to each token based on how commonly it's used together with, or in similar contexts to, the other tokens.
 
-After it's trained, a model can calculate an embedding for a text that contains multiple tokens. The model tokenizes the text, then calculates an overall embeddings value based on the learned embeddings of the individual tokens. This technique can be used for semantic document searches or adding [memories](/semantic-kernel/memories/) to an AI.
+After it's trained, a model can calculate an embedding for text that contains multiple tokens. The model tokenizes the text, then calculates an overall embeddings value based on the learned embeddings of the individual tokens. This technique can be used for semantic document searches or adding [memories](/semantic-kernel/memories/) to an AI.
 
 During output generation, the model predicts a vector value for the next token in the sequence. The model then selects the next token from it's vocabulary based on this vector value. In practice, the model calculates multiple vectors by using various elements of the previous tokens' embeddings. The model then evaluates all potential tokens from these vectors and selects the most probable one to continue the sequence.
 

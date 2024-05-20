@@ -27,7 +27,7 @@ You use a *lambda expression* to create an anonymous function. Use the [lambda d
 
 To create a lambda expression, you specify input parameters (if any) on the left side of the lambda operator and an expression or a statement block on the other side.
 
-Any lambda expression can be converted to a [delegate](../builtin-types/reference-types.md#the-delegate-type) type. The the types of its parameters and return value define the delegate type to which a lambda expression can be converted. If a lambda expression doesn't return a value, it can be converted to one of the `Action` delegate types; otherwise, it can be converted to one of the `Func` delegate types. For example, a lambda expression that has two parameters and returns no value can be converted to an <xref:System.Action%602> delegate. A lambda expression that has one parameter and returns a value can be converted to a <xref:System.Func%602> delegate. In the following example, the lambda expression `x => x * x`, which specifies a parameter named `x` and returns the value of `x` squared, is assigned to a variable of a delegate type:
+Any lambda expression can be converted to a [delegate](../builtin-types/reference-types.md#the-delegate-type) type. The types of its parameters and return value define the delegate type to which a lambda expression can be converted. If a lambda expression doesn't return a value, it can be converted to one of the `Action` delegate types; otherwise, it can be converted to one of the `Func` delegate types. For example, a lambda expression that has two parameters and returns no value can be converted to an <xref:System.Action%602> delegate. A lambda expression that has one parameter and returns a value can be converted to a <xref:System.Func%602> delegate. In the following example, the lambda expression `x => x * x`, which specifies a parameter named `x` and returns the value of `x` squared, is assigned to a variable of a delegate type:
 
 :::code language="csharp" interactive="try-dotnet-method" source="snippets/lambda-expressions/Introduction.cs" id="SnippetDelegate":::
 
@@ -228,7 +228,7 @@ The general rules for type inference for lambdas are as follows:
 
 A lambda expression in itself doesn't have a type because the common type system has no intrinsic concept of "lambda expression." However, it's sometimes convenient to speak informally of the "type" of a lambda expression. That informal "type" refers to the delegate type or <xref:System.Linq.Expressions.Expression> type to which the lambda expression is converted.
 
-Beginning with C# 10, a lambda expression might have a *natural type*. Instead of forcing you to declare a delegate type, such as `Func<...>` or `Action<...>` for a lambda expression, the compiler can infer the delegate type from the lambda expression. For example, consider the following declaration:
+Beginning with C# 10, a lambda expression can have a *natural type*. Instead of forcing you to declare a delegate type, such as `Func<...>` or `Action<...>` for a lambda expression, the compiler can infer the delegate type from the lambda expression. For example, consider the following declaration:
 
 ```csharp
 var parse = (string s) => int.Parse(s);
@@ -319,7 +319,7 @@ You can apply the `static` modifier to a lambda expression to prevent unintentio
 
 :::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetStatic":::
 
-A static lambda can't capture local variables or instance state from enclosing scopes, but might reference static members and constant definitions.
+A static lambda can't capture local variables or instance state from enclosing scopes, but can reference static members and constant definitions.
 
 ## C# language specification
 

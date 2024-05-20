@@ -31,7 +31,7 @@ The following example defines a class named `Motorcycle` that contains five meth
 
 :::code language="csharp" source="snippets/methods/methods40.cs" id="snippet40":::
 
-The `Motorcycle` class includes an overloaded method, `Drive`. Two methods have the same name, but you must differentiate them by their parameter types.
+The `Motorcycle` class includes an overloaded method, `Drive`. Two methods have the same name, but are differentiated by their parameter types.
 
 ## Method invocation
 
@@ -101,7 +101,7 @@ Passing a reference-type parameter allows you to change the value of the referen
 
 Sometimes, the requirement that you specify the exact number of arguments to your method is restrictive. By using the `params` keyword to indicate that a parameter is a parameter collection, you allow your method to be called with a variable number of arguments. The parameter tagged with the `params` keyword must be a collection type, and it must be the last parameter in the method's parameter list.
 
-A caller can then invoke the method in either of four ways:
+A caller can then invoke the method in either of four ways for the `params` parameter:
 
 - By passing a collection of the appropriate type that contains the desired number of elements. The example uses a [collection expression](./language-reference/operators/collection-expressions.md) so the compiler creates an appropriate collection type.
 - By passing a comma-separated list of individual arguments of the appropriate type to the method. The compiler creates the appropriate collection type.

@@ -161,7 +161,7 @@ This initializer example calls <xref:System.Collections.Generic.Dictionary%602.A
 
 ## Object Initializers with collection read-only property initialization
 
-Some classes can have collection properties where the property is read-only, like the `Cats` property of `CatOwner` in the following case:
+Some classes might have collection properties where the property is read-only, like the `Cats` property of `CatOwner` in the following case:
 
 :::code language="csharp" source="./snippets/object-collection-initializers/BasicObjectInitializers.cs" id="CatOwnerDeclaration":::
 

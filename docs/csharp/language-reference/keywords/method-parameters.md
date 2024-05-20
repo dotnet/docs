@@ -199,11 +199,11 @@ No other parameters are permitted after the `params` keyword in a method declara
 
 The declared type of the `params` parameter must be a collection type. Recognized collection types are:
 
-- A single dimensional *array type* `T[]`, in which case the *element type* is `T`
-- A *span type*
+- A single dimensional *array type* `T[]`, in which case the *element type* is `T`.
+- A *span type*:
   - `System.Span<T>`
   - `System.ReadOnlySpan<T>`  
-  in which cases the *element type* is `T`
+  Here, the *element type* is `T`.
 - A *type* with an accessible *create method* with a corresponding *element type*.
 - A *struct* or *class type* that implements <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName> where:
   - The *type* has a constructor that can be invoked with no arguments, and the constructor is at least as accessible as the declaring member.
@@ -211,14 +211,14 @@ The declared type of the `params` parameter must be a collection type. Recognize
     - The method can be invoked with a single value argument.
     - If the method is generic, the type arguments can be inferred from the argument.
     - The method is at least as accessible as the declaring member.
-    In which case the *element type* is the *iteration type* of the *type*.
-- An *interface type*
+  Here, the *element type* is the *iteration type* of the *type*.
+- An *interface type*:
   - <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName>
   - <xref:System.Collections.Generic.IReadOnlyCollection%601?displayProperty=fullName>
   - <xref:System.Collections.Generic.IReadOnlyList%601?displayProperty=fullName>
   - <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>
   - <xref:System.Collections.Generic.IList%601?displayProperty=fullName>
-  in which cases the *element type* is `T`
+  Here, the *element type* is `T`.
 
 Before C# 13, the parameter must be a single dimensional array.
 

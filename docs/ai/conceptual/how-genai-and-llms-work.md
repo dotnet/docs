@@ -17,13 +17,13 @@ Generative AI is a type of artificial intelligence capable of creating original 
 
 All generative AI is built on top of models. These models are trained with large sets of data in the form of content, such as natural language, images, audio, and code. Generative AI models use the patterns identified in the training data to produce new, statistically similar content.
 
-The input provided by the user is used to by the AI model to build an output. The input is first parsed into a form of data that the model can understand. The model then uses that data to identify matching patterns from its training that it combines to build the final output. Generative AI models are designed to produce unique content, so they won't generate the same output for identical inputs.
+The input provided by the user is used by the AI model to build an output. The input is first parsed into a form of data that the model can understand. The model then uses that data to identify matching patterns from its training that it combines to build the final output. Generative AI models are designed to produce unique content, so they won't generate the same output for identical inputs.
 
 Generative AI applications that support natural language as an input or output utilize LLMs to do so. The LLM is used to perform NLP, which classifies the input text and determines its sentiment. That classification and sentiment analysis is used by the generative AI model to identify patterns and build the output. If the output is text, the LLM alone can be used to generate it. If the output is audio or images, additional models are used to provide the data and patterns for generating outputs in that format.
 
 ## Common uses of generative AI
 
-Generative AI applications support a variety of potential use cases and potential outputs.
+Generative AI applications support a variety of potential use cases and potential outputs, which are explored in the following sections.
 
 ### Natural language generation
 

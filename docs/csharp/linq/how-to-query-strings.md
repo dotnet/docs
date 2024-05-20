@@ -36,7 +36,7 @@ The following query sorts the lines based on the score of the first exam, stored
 
 The preceding query shows how you can manipulate strings by splitting them into fields, and querying the individual fields.
 
-## How to query for sentences that specific words
+## How to query for sentences with specific words
 
 The following example shows how to find sentences in a text file that contain matches for each of a specified set of words. Although the array of search terms is hard-coded, it could also be populated dynamically at run time. The query returns the sentences that contain the words "Historically," "data," and "integrated."
 

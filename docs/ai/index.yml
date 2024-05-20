@@ -1,0 +1,93 @@
+### YamlMime:Landing
+
+title: AI for .NET developers
+summary: Learn to use AI with .NET. Browse sample code, tutorials, quickstarts, conceptual articles, and more.
+
+metadata:
+  title: AI for .NET Developers
+  description: Samples, tutorials, and education for using AI with .NET
+  ms.topic: hub-page
+  ms.service: dotnet
+  ms.date: 05/13/2024
+  author: alexwolfmsft
+  ms.author: alexwolf
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | tutorial | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+
+  # Card 
+  - title: Get started
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Develop .NET applications
+            url: get-started/dotnet-ai-overview.md
+          - text: Explore the .NET AI ecosystem
+            url: get-started/dotnet-ai-overview.md
+          - text: Build an Azure AI chat app with .NET
+            url: quickstarts/get-started-azure-openai.md
+          - text: Summarize text using an Azure OpenAI chat app
+            url: quickstarts/quickstart-openai-summarize-text.md
+          - text: Generate images using Azure AI with .NET
+            url: quickstarts/quickstart-openai-generate-images.md
+
+  # Card
+  - title: Essential concepts
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: How generative AI and LLMs work
+            url: conceptual/how-genai-and-llms-work.md
+          - text: Understand tokens
+            url: conceptual/understanding-tokens.md
+          - text: Preserve semantic meaning with embeddings
+            url: conceptual/embeddings.md
+          - text: Semantic search with vector databases
+            url: conceptual/vector-databases.md
+          - text: Prompt engineering
+            url: conceptual/prompt-engineering-dotnet.md
+
+  # Card (Optional; Remove if not applicable.)
+  - title: Common tasks
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Authenticate App Service to Azure OpenAI
+            url: how-to/app-service-aoai-auth.md
+          - text: Authenticate App Service to a vector database
+            url: how-to/app-service-db-auth.md
+          - text: Use Redis with the Semantic Kernel SDK
+            url: how-to/use-redis-for-memory.md
+          - text: Use custom and local AI models with the Semantic Kernel SDK
+            url: how-to/work-with-local-models.md
+          - text: Work with content filtering
+            url: how-to/work-with-local-models.md
+
+  # Card (Optional; Remove if not applicable.)
+  - title: Tutorials
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Scale Azure OpenAI with Azure Container Apps
+            url: get-started-app-chat-scaling-with-azure-container-apps.md
+          - text: .NET enterprise chat sample using RAG
+            url: get-started-app-chat-template.md
+          - text: Implement RAG using vector search
+            url: tutorials/tutorial-ai-vector-search.md
+
+  # Card (Optional; Remove if not applicable.)
+  - title: Training
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Fundamentals of Azure OpenAI Service
+            url: /training/modules/explore-azure-openai
+          - text: Generate conversations Azure OpenAI completions
+            url: /training/modules/open-ai-dotnet-text-completions
+          - text: .NET enterprise chat sample using RAG
+            url: get-started-app-chat-template.md
+          - text: Develop AI agents using Azure OpenAI
+            url: /training/paths/develop-ai-agents-azure-open-ai-semantic-kernel-sdk

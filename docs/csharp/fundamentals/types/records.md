@@ -19,7 +19,7 @@ Consider using a record in place of a class or struct in the following scenarios
 
 ### Value equality
 
-For records, value equality means that two variables of a record type are equal if the types match and all property and field values match. For other reference types such as classes, equality means [reference equality](../../programming-guide/statements-expressions-operators/equality-comparisons.md#reference-equality). That is, two variables of a class type are equal if they refer to the same object. Methods and operators that determine equality of two record instances use value equality.
+For records, value equality means that two variables of a record type are equal if the types match and all property and field values compare equal. For other reference types such as classes, equality means [reference equality](../../programming-guide/statements-expressions-operators/equality-comparisons.md#reference-equality) by default, unless [value equality](../../programming-guide/statements-expressions-operators/how-to-define-value-equality-for-a-type.md) was implemented. That is, two variables of a class type are equal if they refer to the same object. Methods and operators that determine equality of two record instances use value equality.
 
 Not all data models work well with value equality. For example, [Entity Framework Core](/ef/core/) depends on reference equality to ensure that it uses only one instance of an entity type for what is conceptually one entity. For this reason, record types aren't appropriate for use as entity types in Entity Framework Core.
 

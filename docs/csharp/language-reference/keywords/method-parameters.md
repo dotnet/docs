@@ -204,7 +204,7 @@ The declared type of the `params` parameter must be a collection type. Recognize
   - `System.Span<T>`
   - `System.ReadOnlySpan<T>`  
   Here, the *element type* is `T`.
-- A *type* with an accessible *create method* with a corresponding *element type*.
+- A *type* with an accessible *create method* with a corresponding *element type*. The [*create method*](../operators/collection-expressions.md#collection-builder) is identified using the same attribute used for [collection expressions](../operators/collection-expressions.md). 
 - A *struct* or *class type* that implements <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName> where:
   - The *type* has a constructor that can be invoked with no arguments, and the constructor is at least as accessible as the declaring member.
   - The *type* has an instance (not an extension) method `Add` where:

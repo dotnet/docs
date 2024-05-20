@@ -54,6 +54,12 @@ Two new attributes make it possible to define [feature switches](https://github.
 
   When built with `<PublishAot>true</PublishAot>`, the call to `Feature.Implementation()` doesn't produce analyzer warning [IL3050](../../deploying/native-aot/warnings/il3050.md), and `Feature.Implementation` code is removed when publishing.
 
+## UnsafeAccessorAttribute supports generic parameters
+
+The <xref:System.Runtime.CompilerServices.UnsafeAccessorAttribute> feature allows unsafe access to type members that are unaccessible to the caller. This feature was designed in .NET 8 but implemented without support for generic parameters. .NET 9 adds support for generic parameters for CoreCLR and native AOT scenarios. The following code shows example usage.
+
+:::code language="csharp" source="../snippets/dotnet-9/csharp/UnsafeAccessor.cs":::
+
 ## Performance improvements
 
 The following performance improvements have been made for .NET 9:

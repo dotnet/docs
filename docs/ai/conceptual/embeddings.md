@@ -10,7 +10,7 @@ ms.date: 05/14/2024
 ---
 # Embeddings in .NET
 
-Embeddings are the way LLMs capture semantic meaning, they are numeric representations of non-numeric data that an LLM can use to determine relationships between concepts. You can use embeddings to help an AI model understand the meaning of inputs so that it can perform comparisons and transformations, such as summarizing text or creating images from text descriptions. LLMs can use embeddings immediately, and you can store embeddings in vector databases to provide semantic memory for LLMs as-needed.
+Embeddings are the way LLMs capture semantic meaning. They are numeric representations of non-numeric data that an LLM can use to determine relationships between concepts. You can use embeddings to help an AI model understand the meaning of inputs so that it can perform comparisons and transformations, such as summarizing text or creating images from text descriptions. LLMs can use embeddings immediately, and you can store embeddings in vector databases to provide semantic memory for LLMs as-needed.
 
 ## Use cases for embeddings
 
@@ -18,7 +18,7 @@ This section lists the main use cases for embeddings.
 
 ### Use your own data to improve completion relevance
 
-Use your own databases to generate embeddings for your data and integrate it with an LLM to make it available for completions. This use of embeddings is called [retrieval-augmented generation](rag.md).
+Use your own databases to generate embeddings for your data and integrate it with an LLM to make it available for completions. This use of embeddings is an important component of [retrieval-augmented generation](rag.md).
 
 ### Increase the amount of text you can fit in a prompt
 
@@ -46,7 +46,7 @@ Use embeddings to help a model create code from text or vice versa, by convertin
 
 ## Choose an embedding model
 
-You generate embeddings for your raw data by using an embedding model: an AI model that can encode a piece of non-numeric data into a vector (a long array of numbers). The model can also decode an embedding into non-numeric data that has the same or similar meaning as the original, raw data. There are many embedding models available for you to use, with OpenAI's text-embedding-ada-002 model being one of the common models that's used. For more examples, see the list of [Embedding models available on Azure OpenAI](/azure/ai-services/openai/concepts/models#embeddings).
+You generate embeddings for your raw data by using an AI embedding model, which can encode non-numeric data into a vector (a long array of numbers). The model can also decode an embedding into non-numeric data that has the same or similar meaning as the original, raw data. There are many embedding models available for you to use, with OpenAI's `text-embedding-ada-002` model being one of the common models that's used. For more examples, see the list of [Embedding models available on Azure OpenAI](/azure/ai-services/openai/concepts/models#embeddings).
 
 ### Store and process embeddings in a vector database
 

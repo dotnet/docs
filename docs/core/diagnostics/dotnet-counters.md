@@ -6,7 +6,9 @@ ms.topic: reference
 ---
 # Investigate performance counters (dotnet-counters)
 
-**This article applies to:** ✔️ `dotnet-counters` version 3.0.47001 and later versions
+**This article applies to:** ✔️ `dotnet-counters` version 3.0.47001 and later versions.
+
+Counters can be read from applications running .NET 5 or later.
 
 ## Install
 
@@ -101,15 +103,15 @@ dotnet-counters collect [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
 
   The name of the output file.
 
-- **`-- <command>` (for target applications running .NET 5 or later only)**
+- **`-- <command>`**
 
-  After the collection configuration parameters, the user can append `--` followed by a command to start a .NET application with at least a 5.0 runtime. `dotnet-counters` will launch a process with the provided command and collect the requested metrics. This is often useful to collect metrics for the application's startup path and can be used to diagnose or monitor issues that happen early before or shortly after the main entrypoint.
-
-  > [!NOTE]
-  > Using this option monitors the first .NET 5 process that communicates back to the tool, which means if your command launches multiple .NET applications, it will only collect the first app. Therefore, it is recommended you use this option on self-contained applications, or using the `dotnet exec <app.dll>` option.
+  After the collection configuration parameters, the user can append `--` followed by a command to start a .NET application. `dotnet-counters` will launch a process with the provided command and collect the requested metrics. This is often useful to collect metrics for the application's startup path and can be used to diagnose or monitor issues that happen early before or shortly after the main entrypoint.
 
   > [!NOTE]
-  > Launching a .NET executable via dotnet-counters will make its input/output to be redirected and you won't be able to interact with its stdin/stdout. Exiting the tool via CTRL+C or SIGTERM will safely end both the tool and the child process. If the child process exits before the tool, the tool will exit as well and the trace should be safely viewable. If you need to use stdin/stdout, you can use the `--diagnostic-port` option. See [Using diagnostic port](#using-diagnostic-port) for more information.
+  > Using this option monitors the first .NET process that communicates back to the tool, which means if your command launches multiple .NET applications, it will only collect the first app. Therefore, it is recommended you use this option on self-contained applications, or using the `dotnet exec <app.dll>` option.
+
+  > [!NOTE]
+  > Launching a .NET executable via dotnet-counters will redirect its input/output and you won't be able to interact with its stdin/stdout. Exiting the tool via CTRL+C or SIGTERM will safely end both the tool and the child process. If the child process exits before the tool, the tool will exit as well. If you need to use stdin/stdout, you can use the `--diagnostic-port` option. See [Using diagnostic port](#using-diagnostic-port) for more information.
 
 > [!NOTE]
 > On Linux and macOS, this command expects the target application and `dotnet-counters` to share the same `TMPDIR` environment variable. Otherwise, the command will time out.
@@ -215,15 +217,15 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
 
   A comma-separated list of counters. Counters can be specified `provider_name[:counter_name]`. If the `provider_name` is used without a qualifying list of counters, then all counters from the provider are shown. To discover provider and counter names, use the [dotnet-counters list](#dotnet-counters-list) command. For [EventCounters](event-counters.md), `provider_name` is the name of the EventSource and for [Meters](metrics.md), `provider_name` is the name of the Meter.
 
- **`-- <command>` (for target applications running .NET 5 or later only)**
+ **`-- <command>`**
 
-  After the collection configuration parameters, the user can append `--` followed by a command to start a .NET application with at least a 5.0 runtime. `dotnet-counters` will launch a process with the provided command and monitor the requested metrics. This is often useful to collect metrics for the application's startup path and can be used to diagnose or monitor issues that happen early before or shortly after the main entrypoint.
-
-  > [!NOTE]
-  > Using this option monitors the first .NET 5 process that communicates back to the tool, which means if your command launches multiple .NET applications, it will only collect the first app. Therefore, it is recommended you use this option on self-contained applications, or using the `dotnet exec <app.dll>` option.
+  After the collection configuration parameters, the user can append `--` followed by a command to start a .NET application. `dotnet-counters` will launch a process with the provided command and monitor the requested metrics. This is often useful to collect metrics for the application's startup path and can be used to diagnose or monitor issues that happen early before or shortly after the main entrypoint.
 
   > [!NOTE]
-  > Launching a .NET executable via dotnet-counters will make its input/output to be redirected and you won't be able to interact with its stdin/stdout. Exiting the tool via CTRL+C or SIGTERM will safely end both the tool and the child process. If the child process exits before the tool, the tool will exit as well. If you need to use stdin/stdout, you can use the `--diagnostic-port` option. See [Using diagnostic port](#using-diagnostic-port) for more information.
+  > Using this option monitors the first .NET process that communicates back to the tool, which means if your command launches multiple .NET applications, it will only collect the first app. Therefore, it is recommended you use this option on self-contained applications, or using the `dotnet exec <app.dll>` option.
+
+  > [!NOTE]
+  > Launching a .NET executable via dotnet-counters will redirect its input/output and you won't be able to interact with its stdin/stdout. Exiting the tool via CTRL+C or SIGTERM will safely end both the tool and the child process. If the child process exits before the tool, the tool will exit as well. If you need to use stdin/stdout, you can use the `--diagnostic-port` option. See [Using diagnostic port](#using-diagnostic-port) for more information.
 
 > [!NOTE]
 > On Linux and macOS, this command expects the target application and `dotnet-counters` to share the same `TMPDIR` environment variable.
@@ -381,10 +383,7 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
       current-requests        Current Requests
   ```
 
-- Launch `my-aspnet-server.exe` and monitor the # of assemblies loaded from its startup (.NET 5 or later only):
-
-  > [!IMPORTANT]
-  > This works for apps running .NET 5 or later only.
+- Launch `my-aspnet-server.exe` and monitor the # of assemblies loaded from its startup:
 
   ```dotnetcli
   > dotnet-counters monitor --counters System.Runtime[assembly-count] -- my-aspnet-server.exe
@@ -396,10 +395,7 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
       Number of Assemblies Loaded                   24
   ```
   
-- Launch `my-aspnet-server.exe` with `arg1` and `arg2` as command-line arguments and monitor its working set and GC heap size from its startup (.NET 5 or later only):
-
-  > [!IMPORTANT]
-  > This works for apps running .NET 5 or later only.
+- Launch `my-aspnet-server.exe` with `arg1` and `arg2` as command-line arguments and monitor its working set and GC heap size from its startup:
 
   ```dotnetcli
   > dotnet-counters monitor --counters System.Runtime[working-set,gc-heap-size] -- my-aspnet-server.exe arg1 arg2
@@ -438,10 +434,7 @@ Suppose you start a long-running app using the command ```dotnet run --configura
 
 ## Using diagnostic port
 
-  > [!IMPORTANT]
-  > This works for apps running .NET 5 or later only.
-
-[Diagnostic port](./diagnostic-port.md) is a runtime feature added in .NET 5 that allows you to start monitoring or collecting counters from app startup. To do this using `dotnet-counters`, you can either use `dotnet-counters <collect|monitor> -- <command>` as described in the examples above, or use the `--diagnostic-port` option.
+[Diagnostic port](./diagnostic-port.md) is a runtime feature that allows you to start monitoring or collecting counters from app startup. To do this using `dotnet-counters`, you can either use `dotnet-counters <collect|monitor> -- <command>` as described in the examples above, or use the `--diagnostic-port` option.
 
 Using `dotnet-counters <collect|monitor> -- <command>` to launch the application as a child process is the simplest way to quickly monitor it from its startup.
 

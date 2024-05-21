@@ -43,7 +43,7 @@ We recommend the following sequence of tutorials and articles for an introductio
 | Generate images | [Generate images using Azure AI with .NET](../quickstarts/quickstart-openai-generate-images.md) |
 | Train your own model |[ML.NET Tutorial](https://dotnet.microsoft.com/learn/ml-dotnet/get-started-tutorial/intro) |
 
-Browse the table of contents to learn more about the core concepts, starting with [How generative AI and LLMs work](../conceptual/how-genai-and-llms-work.md)
+Browse the table of contents to learn more about the core concepts, starting with [How generative AI and LLMs work](../conceptual/how-genai-and-llms-work.md).
 
 ## Next steps
 

@@ -2,7 +2,7 @@
 title: What's new in .NET 9
 description: Learn about the new .NET features introduced in .NET 9.
 titleSuffix: ""
-ms.date: 04/11/2024
+ms.date: 05/21/2024
 ms.topic: whats-new
 ---
 # What's new in .NET 9
@@ -12,8 +12,6 @@ Learn about the new features in .NET 9 and find links to further documentation.
 .NET 9, the successor to [.NET 8](../dotnet-8/overview.md), has a special focus on cloud-native apps and performance. It will be [supported for 18 months](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) as a standard-term support (STS) release. You can [download .NET 9 here](https://dotnet.microsoft.com/download/dotnet/9.0).
 
 New for .NET 9, the engineering team posts .NET 9 preview updates on [GitHub Discussions](https://github.com/dotnet/core/discussions/9234). That's a great place to ask questions and provide feedback about the release.
-
-This article has been updated for .NET 9 Preview 3.
 
 ## .NET runtime
 
@@ -26,6 +24,10 @@ The .NET 9 libraries include improvements to serialization, cryptography, LINQ, 
 ## .NET SDK
 
 The .NET 9 SDK includes improvements to the terminal logger, tool roll-forward, and unit testing. For more information, see [What's new in the SDK for .NET 9](sdk.md).
+
+## ML.NET
+
+ML.NET is an open-source, cross-platform machine learning framework for .NET developers that enables integration of custom machine learning models into .NET applications. The latest version, ML.NET 4.0, adds [additional tokenizer support](../../../machine-learning/whats-new/overview.md#additional-tokenizer-support) for tokenizers such as Tiktoken and models such as Llama and CodeGen.
 
 ## .NET Aspire
 

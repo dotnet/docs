@@ -168,7 +168,9 @@
         },
         "fileMetadata": {
             "uhfHeaderId": {
-                "docs/csharp/**/**.*": "MSDocsHeader-DotNetCSharp"
+                "docs/csharp/**/**.*": "MSDocsHeader-DotNetCSharp",
+                "_csharplang/**.*": "MSDocsHeader-DotNetCSharp",
+                "_csharpstandard/standard/*.md": "MSDocsHeader-DotNetCSharp"
             },
             "feedback_system": {
                 "docs/standard/design-guidelines/**/**.md": "None",

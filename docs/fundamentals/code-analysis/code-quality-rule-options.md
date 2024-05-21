@@ -215,13 +215,13 @@ This section lists some of the available options. To see the full list of availa
 
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
-| Boolean option to enable heuristically detecting of additional string formatting methods <br/>A method is considered a string formatting method if it has a `string format` parameter followed by a `params object[]` parameter. | `true` or `false` | `false` | [CA2241](quality-rules/ca2241.md) |
+| Boolean option to enable heuristic detection of additional string formatting methods.<br/>A method is considered a string formatting method if it has a `string format` parameter followed by a `params object[]` parameter. | `true` or `false` | `false` | [CA2241](quality-rules/ca2241.md) |
 
 ### unsafe_DllImportSearchPath_bits
 
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
-| Unsafe DllImportSearchPath bits when using DefaultDllImportSearchPaths attribute | Integer values of `System.Runtime.InteropServices.DllImportSearchPath` | `770` (i.e. `AssemblyDirectory \| UseDllDirectoryForDependencies \| ApplicationDirectory`) | [CA5393](quality-rules/ca5393.md) |
+| Configure which value of `DllImportSearchPath` is unsafe for the analysis | Integer values of `System.Runtime.InteropServices.DllImportSearchPath` | `770` (that is, `AssemblyDirectory \| UseDllDirectoryForDependencies \| ApplicationDirectory`) | [CA5393](quality-rules/ca5393.md) |
 
 ### exclude_aspnet_core_mvc_controllerbase
 
@@ -251,7 +251,7 @@ This section lists some of the available options. To see the full list of availa
 
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
-| Dispose analysis kind for IDisposable rules | - `AllPaths` - Track and report missing dispose violations on all paths (non-exception and exception paths). Additionally, also flag use of non-recommended dispose patterns that may cause potential dispose leaks.</br> - `AllPathsOnlyNotDisposed` - Track and report missing dispose violations on all paths (non-exception and exception paths). Do not flag use of non-recommended dispose patterns that may cause potential dispose leaks.</br> - `NonExceptionPaths` - Track and report missing dispose violations only on non-exception program paths. Additionally, also flag use of non-recommended dispose patterns that may cause potential dispose leaks.</br> - `NonExceptionPathsOnlyNotDisposed` - Track and report missing dispose violations only on non-exception program paths. Do not flag use of non-recommended dispose patterns that may cause potential dispose leaks. | NonExceptionPaths | [CA2000](quality-rules/ca2000.md) |
+| Specifies which paths to analyze for dispose violations | - `AllPaths` - Track and report missing dispose violations on all paths (non-exception and exception paths). Additionally, also flag use of non-recommended dispose patterns that might cause potential dispose leaks.</br> - `AllPathsOnlyNotDisposed` - Track and report missing dispose violations on all paths (non-exception and exception paths). Do not flag use of non-recommended dispose patterns that might cause potential dispose leaks.</br> - `NonExceptionPaths` - Track and report missing dispose violations only on non-exception program paths. Additionally, also flag use of non-recommended dispose patterns that might cause potential dispose leaks.</br> - `NonExceptionPathsOnlyNotDisposed` - Track and report missing dispose violations only on non-exception program paths. Do not flag use of non-recommended dispose patterns that might cause potential dispose leaks. | `NonExceptionPaths` | [CA2000](quality-rules/ca2000.md) |
 
 ### dispose_ownership_transfer_at_constructor
 
@@ -328,7 +328,7 @@ class Test
 
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
-| Do not prefix enum values with type name | - `AnyEnumValue` - The rule will be triggered if _any_ of the enum values starts with the enum type name.</br> - `AllEnumValues` - The rule will be triggered if _all_ of the enum values start with the enum type name.</br> - `Heuristic` - The rule will be triggered using the default FxCop heuristic (i.e. when at least 75% of the enum values start with the enum type name).</br> | `Heuristic` | [CA1712](quality-rules/ca1712.md) |
+| Specifies the threshold to trigger the enum values naming rule  | - `AnyEnumValue` - The rule is triggered if _any_ of the enum values starts with the enum type name.</br> - `AllEnumValues` - The rule is triggered if _all_ of the enum values start with the enum type name.</br> - `Heuristic` - The rule is triggered using the default FxCop heuristic (that is, when at least 75% of the enum values start with the enum type name).</br> | `Heuristic` | [CA1712](quality-rules/ca1712.md) |
 
 ### exclude_indirect_base_types
 
@@ -355,7 +355,7 @@ public class MyClass : MyBaseClass
 
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
-| Additional required suffixes | List (separated by `\|`) of type names with their required suffix (separated by `->`). Allowed type name formats:</br> - Type name only (includes all types with the name, regardless of the containing type or namespace).</br> - Fully qualified names in the symbol's documentation ID format with an optional `T:` prefix.| None | [CA1710](quality-rules/ca1710.md) |
+| Specifies additional required suffixes | List of type names (separated by `|`) with their required suffix (separated by `->`). Allowed type name formats:</br> - Type name only (includes all types with the name, regardless of the containing type or namespace).</br> - Fully qualified names in the symbol's documentation ID format with an optional `T:` prefix.| None | [CA1710](quality-rules/ca1710.md) |
 
 Examples:
 
@@ -369,7 +369,7 @@ Examples:
 
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
-| Additional required generic interfaces | List (separated by `\|`) of interface names with their required generic fully qualified interface (separated by `->`). Allowed interface formats:</br> - Interface name only (includes all interfaces with the name, regardless of the containing type or namespace).</br> - Fully qualified names in the symbol's documentation ID format with an optional `T:` prefix. | None | [CA1010](quality-rules/ca1010.md) |
+| Specifies additional required generic interfaces | List of interface names (separated by `|`) with their required generic fully qualified interface (separated by `->`). Allowed interface formats:</br> - Interface name only (includes all interfaces with the name, regardless of the containing type or namespace).</br> - Fully qualified names in the symbol's documentation ID format with an optional `T:` prefix. | None | [CA1010](quality-rules/ca1010.md) |
 
 Examples:
 
@@ -382,7 +382,7 @@ Examples:
 
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
-| Inheritance excluded type or namespace names | Names of types or namespaces (separated by `\|`), such that the type or type's namespace does not count in the inheritance hierarchy tree. Allowed type name formats:</br> - Type or namespace name (includes all types with the name, regardless of the containing type or namespace and all types whose namespace contains the name).</br> - Type or namespace name ending with a wildcard symbol (includes all types whose name starts with the given name, regardless of the containing type or namespace and all types whose namespace contains the name). </br> - | `N:System.*` (note that this value is always automatically added to the value provided)</br> - Fully qualified names in the symbol's documentation ID format with an optional `T:` prefix for types or `N:` prefix for namespaces.</br> - Fully qualified type or namespace name with an optional `T:` prefix for type or `N:` prefix for namespace and ending with the wildcard symbol (includes all types whose fully qualified name starts with the given suffix).| [CA1501](quality-rules/ca1501.md) |
+| Specifies types or namespaces to exclude from the inheritance hierarchy tree | Allowed type name formats:</br> - Type or namespace name (includes all types with the name, regardless of the containing type or namespace and all types whose namespace contains the name).</br> - Type or namespace name ending with a wildcard symbol (includes all types whose name starts with the given name, regardless of the containing type or namespace, and all types whose namespace contains the name).</br> - Fully qualified names in the symbol's documentation ID format with an optional `T:` prefix for types or `N:` prefix for namespaces.</br> - Fully qualified type or namespace name with an optional `T:` prefix for type or `N:` prefix for namespace and ending with the wildcard symbol (includes all types whose fully qualified name starts with the given suffix). | `N:System.*` (This value is always automatically added to the value provided) | [CA1501](quality-rules/ca1501.md) |
 
 Examples:
 
@@ -401,19 +401,19 @@ Examples:
 
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
-| Analyzed symbol kinds | One or more fields of enum Microsoft.CodeAnalysis.SymbolKind as a comma separated list. | `Namespace, NamedType, Method, Property, Event, Parameter` | [CA1716](quality-rules/ca1716.md) |
+| Specifies the symbol kinds to analyze | One or more fields of <xref:Microsoft.CodeAnalysis.SymbolKind> as a comma-separated list. | `Namespace, NamedType, Method, Property, Event, Parameter` | [CA1716](quality-rules/ca1716.md) |
 
 ### use_naming_heuristic
 
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
-| Use naming heuristic | `true` or `false` | `false` | [CA1303](quality-rules/ca1303.md) |
+| Configures whether parameters or property names containing `Text`, `Message`, or `Caption` trigger this rule | `true` or `false` | `false` | [CA1303](quality-rules/ca1303.md) |
 
 ### additional_use_results_methods
 
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
-| Additional use results methods | Names of additional methods (separated by `\|`). Allowed method name formats:</br> - Method name only (includes all methods with the name, regardless of the containing type or namespace).</br> - Fully qualified names in the symbol's documentation ID format with an optional `M:` prefix. | None | [CA1806](quality-rules/ca1806.md) |
+| Specifies additional custom APIs whose results must be used | Names of additional methods (separated by `|`). Allowed method name formats:</br> - Method name only (includes all methods with the name, regardless of the containing type or namespace).</br> - Fully qualified names in the symbol's documentation ID format with an optional `M:` prefix. | None | [CA1806](quality-rules/ca1806.md) |
 
 Examples:
 
@@ -428,25 +428,25 @@ Examples:
 
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
-| Allowed suffixes | List (separated by `\|`) of allowed suffixes. |  | [CA1711](quality-rules/ca1711.md) |
+| Specifies allowable suffixes | List (separated by `|`) of allowed suffixes. | None | [CA1711](quality-rules/ca1711.md) |
 
 ### enable_platform_analyzer_on_pre_net5_target
 
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
-| Enable platform compatibility analyzer for TFMs <= net5.0 | `true` or `false` | `false` | [CA1416](quality-rules/ca1416.md) |
+| Specifies whether to enable analysis for TFMs prior to .NET 5 | `true` or `false` | `false` | [CA1416](quality-rules/ca1416.md) |
 
 ### exclude_structs
 
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
-| Exclude structs | `true` or `false` | `false` | [CA1051](quality-rules/ca1051.md) |
+| Specifies whether to exclude structs from analysis | `true` or `false` | `false` | [CA1051](quality-rules/ca1051.md) |
 
 ### additional_enum_none_names
 
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
-| Additional enum `None` names | Names of additional enum None names (separated by `\|`). | empty | [CA1008](quality-rules/ca1008.md) |
+| Specifies additional allowable names for a zero-value enumeration field | List of additional names (separated by `|`). | None | [CA1008](quality-rules/ca1008.md) |
 
 Example:
 
@@ -459,7 +459,7 @@ dotnet_code_quality.CA1008.additional_enum_none_names = Never|Nothing
 
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
-| Enumeration methods | Fully qualified names of additional methods enumerating all parameters with IEnumerable type (separated by `\|`). | empty | [CA1851](quality-rules/ca1851.md) |
+| Specifies additional custom methods that enumerate an IEnumerable | Fully qualified names of additional methods (separated by `|`). | None | [CA1851](quality-rules/ca1851.md) |
 
 Example:
 
@@ -473,10 +473,10 @@ M:NS.Cls.SomeMethod``1(System.Collections.Generic.IEnumerable{System.Int32}) | M
 
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
-| This option is used to include customized methods like `Select` into the analysis scope. | Fully qualified names of additional methods accepting IEnumerable parameters and return a new IEnumerable type instance(separated by `\|`). By default, the IEnumerable type parameters of the Linq Chain method are considered not enumerated. This behavior could be overridden by combining using the `enumeration_methods` option. | empty | [CA1851](quality-rules/ca1851.md) |
+| Specifies additional customized LINQ chain methods (that is, methods take an `IEnumerable` argument and return a new `IEnumerable` instance) | Fully qualified names of additional methods (separated by `|`). | None | [CA1851](quality-rules/ca1851.md) |
 
 ### assume_method_enumerates_parameters
 
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
-| Assume method enumerates parameters | `true` or `false` | `false` | [CA1851](quality-rules/ca1851.md) |
+| Specifies whether to assume that customized methods enumerate their `IEnumerable` parameters | `true` or `false` | `false` | [CA1851](quality-rules/ca1851.md) |

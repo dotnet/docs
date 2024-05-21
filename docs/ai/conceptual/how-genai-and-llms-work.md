@@ -51,7 +51,7 @@ Some generative AI applications produce image outputs from natural language inpu
 - The artistic style to create the image in
 - References for generating similar images
 
-Image generation can create virtual avatars for online accounts, design logos for a business, or provide artistic inspiration for creators. For example, a user may input the request, *Create an image of an elephant eating a burger.*. A generative AI application might produce the following output:
+Image generation can create virtual avatars for online accounts, design logos for a business, or provide artistic inspiration for creators. For example, a user may input the request, *Create an image of an elephant eating a burger*. A generative AI application might produce the following output:
 
 :::image type="content" source="../media/how-genai-and-llms-work/generated-image.png" lightbox="../media/how-genai-and-llms-work/generated-image.png" alt-text="Example AI generated image of an elephant eating a hamburger.":::
 

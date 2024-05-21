@@ -99,7 +99,7 @@ public class MyClass
 }
 ```
 
-# Compiler Error CS0231
+## Compiler Error CS0231
 
 A params parameter must be the last parameter in a formal parameter list.
 

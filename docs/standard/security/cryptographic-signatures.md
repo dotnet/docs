@@ -104,8 +104,8 @@ The <xref:System.Security.Cryptography.RSA> instance is, in turn, passed to the 
 
 The following example illustrates this process. In this example, imagine that `sharedParameters`, `hash`, and `signedHash` are provided by a remote party. The remote party has signed `hash` using the `SHA256` algorithm to produce the digital signature `signedHash`. The <xref:System.Security.Cryptography.RSAPKCS1SignatureDeformatter.VerifySignature%2A?displayProperty=nameWithType> method verifies that the digital signature is valid and was used to sign `hash`.
 
-:::code language="vb" source="./snippets/cryptographic-signatures/vb/Program.vb":::
-:::code language="csharp" source="./snippets/cryptographic-signatures/csharp/Program.cs":::
+:::code language="csharp" source="./snippets/csharp/cryptographic-signatures/Program.cs":::
+:::code language="vb" source="./snippets/vb/cryptographic-signatures/Program.vb":::
 
 This code fragment displays "`The signature is valid`" if the signature is valid and "`The signature is not valid`" if it's not.
 

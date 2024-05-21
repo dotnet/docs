@@ -37,8 +37,8 @@ CryptoStream cryptStream = new CryptoStream(
 
 The following example shows the entire process of creating a stream, decrypting the stream, reading from the stream, and closing the streams. A file stream object is created that reads a file named *TestData.txt*. The file stream is then decrypted using the **CryptoStream** class and the **Aes** class. This example specifies key value that is used in the symmetric encryption example for [Encrypting Data](encrypting-data.md). It does not show the code needed to encrypt and transfer these values.
 
-:::code language="csharp" source="snippets/decrypting-data/csharp/aes-decrypt.cs":::
-:::code language="vb" source="snippets/decrypting-data/vb/aes-decrypt.vb":::
+:::code language="csharp" source="snippets/csharp/decrypting-data/aes-decrypt.cs":::
+:::code language="vb" source="snippets/vb/decrypting-data/aes-decrypt.vb":::
 
 The preceding example uses the same key, and algorithm used in the symmetric encryption example for [Encrypting Data](encrypting-data.md). It decrypts the *TestData.txt* file that is created by that example and displays the original text on the console.
 

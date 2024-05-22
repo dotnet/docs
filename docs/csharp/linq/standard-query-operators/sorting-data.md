@@ -1,5 +1,5 @@
 ---
-title: "Sorting Data (C#)"
+title: "Sorting Data"
 description: Learn about sort operations and the standard query operator methods that perform sort operations in LINQ in C#.  
 ms.date: 01/22/2024
 ---
@@ -73,4 +73,4 @@ The equivalent query written using method syntax is shown in the following code:
 
 - <xref:System.Linq>
 - [orderby clause](../../language-reference/keywords/orderby-clause.md)
-- [How to sort or filter text data by any word or field (LINQ) (C#)](../../programming-guide/concepts/linq//how-to-sort-or-filter-text-data-by-any-word-or-field-linq.md)
+- [How to sort or filter text data by any word or field (LINQ) (C#)](../how-to-query-strings.md)

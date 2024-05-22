@@ -156,6 +156,8 @@ To run a test project in CI add one step for each test executable that you wish 
 
 ## Options
 
+The list below described only the platform options. To see the specific options brought by each extension, either refer to the extension documentation page or use the `--help` option.
+
 - **`--diagnostic`**
 
 Enables the diagnostic logging. The default log level is `Trace`. The file is written in the output directory with the following name format, `log_[MMddHHssfff].diag`.
@@ -198,6 +200,10 @@ This feature is used to understand extensions that would be registering the same
 - **`--list-tests`**
 
 List available tests. Tests will not be executed.
+
+- **`--minimum-expected-tests`**
+
+Specifies the minimum number of tests that are expected to run. By default, at least one test is expected to run.
 
 - **`--results-directory`**
 

@@ -1,9 +1,9 @@
 ---
 title: Install .NET on Debian
-description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Debian.
+description: Learn about which versions of .NET SDK and .NET Runtime are supported, and how to install .NET on Debian.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/14/2023
+ms.date: 05/14/2024
 ms.custom: linux-related-content
 ---
 
@@ -19,11 +19,11 @@ This article describes how to install .NET on Debian. When a Debian version fall
 
 The following table is a list of currently supported .NET releases and the versions of Debian they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Debian reaches end-of-life](https://wiki.debian.org/DebianReleases).
 
-| Debian  | .NET      |
-|---------|-----------|
-| 12      | 8, 7, 6   |
-| 11      | 8, 7, 6   |
-| 10      | 7, 6      |
+| Debian  | .NET   |
+|---------|--------|
+| 12      | 8, 6   |
+| 11      | 8, 6   |
+| 10      | 6      |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 

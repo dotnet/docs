@@ -1,6 +1,6 @@
 ---
 description: "using directive - C# Reference"
-title: "using directive - C# Reference"
+title: "using directive"
 ms.date: 08/19/2021
 f1_keywords:
   - "using_CSharpKeyword"
@@ -159,16 +159,6 @@ The following example shows how to define a `using` directive and a `using` alia
 :::code language="csharp" source="./snippets/csrefKeywordsNamespace2.cs" id="Snippet9":::
 
 Beginning with C# 12, you can create aliases for types that were previously restricted, including [tuple types](../builtin-types/value-tuples.md#tuple-field-names), pointer types, and other unsafe types. For more information on the updated rules, see the [feature spec](~/_csharplang/proposals/csharp-12.0/using-alias-types.md).
-
-## How to use the Visual Basic `My` namespace
-
-The <xref:Microsoft.VisualBasic.MyServices> namespace (`My` in Visual Basic) provides easy and intuitive access to a number of .NET classes, enabling you to write code that interacts with the computer, application, settings, resources, and so on. Although originally designed for use with Visual Basic, the `MyServices` namespace can be used in C# applications.
-
-For more information about using the `MyServices` namespace from Visual Basic, see [Development with My](../../../visual-basic/developing-apps/development-with-my/index.md).
-
-You need to add a reference to the *Microsoft.VisualBasic.dll* assembly in your project. Not all the classes in the `MyServices` namespace can be called from a C# application: for example, the <xref:Microsoft.VisualBasic.MyServices.FileSystemProxy> class is not compatible. In this particular case, the static methods that are part of <xref:Microsoft.VisualBasic.FileIO.FileSystem>, which are also contained in VisualBasic.dll, can be used instead. For example, here is how to use one such method to duplicate a directory:
-
-:::code language="csharp" source="./snippets/Namespaces3.cs" id="Snippet20":::
 
 ## C# language specification
 

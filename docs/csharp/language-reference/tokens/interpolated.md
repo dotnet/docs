@@ -36,7 +36,7 @@ Elements in square brackets are optional. The following table describes each ele
 
 | Element | Description |
 |--|--|
-| `interpolationExpression` | The expression that produces a result to be formatted. String representation of `null` is <xref:System.String.Empty?displayProperty=nameWithType>. |
+| `interpolationExpression` | The expression that produces a result to be formatted. When the expression is `null`, the output is the empty string (<xref:System.String.Empty?displayProperty=nameWithType>). |
 | `alignment` | The constant expression whose value defines the minimum number of characters in the string representation of the expression result. If positive, the string representation is right-aligned; if negative, it's left-aligned. For more information, see the [Alignment component](../../../standard/base-types/composite-formatting.md#alignment-component) section of the [Composite formatting](../../../standard/base-types/composite-formatting.md) article. |
 | `formatString` | A format string that is supported by the type of the expression result. For more information, see the [Format string component](../../../standard/base-types/composite-formatting.md#format-string-component) section of the [Composite formatting](../../../standard/base-types/composite-formatting.md) article. |
 

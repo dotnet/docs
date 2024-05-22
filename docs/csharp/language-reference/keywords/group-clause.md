@@ -1,6 +1,6 @@
 ---
 description: "group clause - C# Reference"
-title: "group clause - C# Reference"
+title: "group clause"
 ms.date: 07/20/2015
 f1_keywords: 
   - "group"
@@ -48,7 +48,7 @@ The following example shows the use of a bool value for a key to divide the resu
 
 ### Grouping by numeric range
 
-The next example uses an expression to create numeric group keys that represent a percentile range. Note the use of [let](let-clause.md) as a convenient location to store a method call result, so that you don't have to call the method two times in the `group` clause. For more information about how to safely use methods in query expressions, see [Handle exceptions in query expressions](../../linq/handle-exceptions-in-query-expressions.md).
+The next example uses an expression to create numeric group keys that represent a percentile range. Note the use of [let](let-clause.md) as a convenient location to store a method call result, so that you don't have to call the method two times in the `group` clause. For more information about how to safely use methods in query expressions, see [Handle exceptions in query expressions](../../linq/get-started/write-linq-queries.md).
 
 [!code-csharp[cscsrefQueryKeywords#15](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsCsrefQueryKeywords/CS/Group.cs#15)]
 
@@ -60,7 +60,7 @@ Use a composite key when you want to group elements according to more than one k
 group person by new {name = person.surname, city = person.city};
 ```
 
-Use a named type if you must pass the query variable to another method. Create a special class using auto-implemented properties for the keys, and then override the <xref:System.Object.Equals%2A> and <xref:System.Object.GetHashCode%2A> methods. You can also use a struct, in which case you do not strictly have to override those methods. For more information see [How to implement a lightweight class with auto-implemented properties](../../programming-guide/classes-and-structs/how-to-implement-a-lightweight-class-with-auto-implemented-properties.md) and [How to query for duplicate files in a directory tree](../../programming-guide/concepts/linq/how-to-query-for-duplicate-files-in-a-directory-tree-linq.md). The latter article has a code example that demonstrates how to use a composite key with a named type.
+Use a named type if you must pass the query variable to another method. Create a special class using auto-implemented properties for the keys, and then override the <xref:System.Object.Equals%2A> and <xref:System.Object.GetHashCode%2A> methods. You can also use a struct, in which case you do not strictly have to override those methods. For more information see [How to implement a lightweight class with auto-implemented properties](../../programming-guide/classes-and-structs/how-to-implement-a-lightweight-class-with-auto-implemented-properties.md) and [How to query for duplicate files in a directory tree](../../linq/how-to-query-files-and-directories.md). The latter article has a code example that demonstrates how to use a composite key with a named type.
 
 ## Example 1
 

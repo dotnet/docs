@@ -1,6 +1,6 @@
 ---
 description: Value types vs reference types, kinds of value types, and the built-in value types in C#
-title: "Value types - C# reference"
+title: "Value types"
 ms.date: 01/22/2020
 f1_keywords: 
   - "cs.valuetypes"

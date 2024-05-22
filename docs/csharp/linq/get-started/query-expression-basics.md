@@ -1,5 +1,5 @@
 ---
-title: Query expression basics (LINQ in C#)
+title: Query expression basics (LINQ)
 description: Introduces concepts related to query expressions
 ms.date: 03/06/2024
 ---

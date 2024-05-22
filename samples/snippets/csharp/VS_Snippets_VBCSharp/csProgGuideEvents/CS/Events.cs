@@ -177,8 +177,6 @@ namespace BaseClassEvents
 //--------------------------------------------------------------------------------------
 
 //<Snippet2>
-using System;
-
 namespace DotNetEvents
 {
     // Define a class to hold custom event info
@@ -196,7 +194,7 @@ namespace DotNetEvents
     class Publisher
     {
         // Declare the event using EventHandler<T>
-        public event EventHandler<CustomEventArgs> RaiseCustomEvent;
+        public event EventHandler<CustomEventArgs>? RaiseCustomEvent;
 
         public void DoSomething()
         {
@@ -213,7 +211,7 @@ namespace DotNetEvents
             // Make a temporary copy of the event to avoid possibility of
             // a race condition if the last subscriber unsubscribes
             // immediately after the null check and before the event is raised.
-            EventHandler<CustomEventArgs> raiseEvent = RaiseCustomEvent;
+            EventHandler<CustomEventArgs>? raiseEvent = RaiseCustomEvent;
 
             // Event will be null if there are no subscribers
             if (raiseEvent != null)
@@ -241,7 +239,7 @@ namespace DotNetEvents
         }
 
         // Define what actions to take when the event is raised.
-        void HandleCustomEvent(object sender, CustomEventArgs e)
+        void HandleCustomEvent(object? sender, CustomEventArgs e)
         {
             Console.WriteLine($"{_id} received this message: {e.Message}");
         }

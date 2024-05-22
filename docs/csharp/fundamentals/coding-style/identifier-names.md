@@ -1,5 +1,5 @@
 ---
-title: "C# identifier names - rules and conventions"
+title: "Identifier names - rules and conventions"
 description: "Learn the rules for valid identifier names in the C# programming language. In addition, learn the common naming conventions used by the .NET runtime team and the .NET docs team."
 ms.date: 11/27/2023
 ---

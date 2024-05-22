@@ -156,7 +156,16 @@ items:
       - name: .NET 9
         items:
           - name: What's new
-            href: ../core/whats-new/dotnet-9/overview.md
+            items:
+              - name: Overview
+                href: ../core/whats-new/dotnet-9/overview.md
+                displayName: whats new, what's new
+              - name: Runtime
+                href: ../core/whats-new/dotnet-9/runtime.md
+              - name: Libraries
+                href: ../core/whats-new/dotnet-9/libraries.md
+              - name: SDK
+                href: ../core/whats-new/dotnet-9/sdk.md
           - name: Breaking changes
             href: ../core/compatibility/9.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: .NET 8
@@ -1441,12 +1450,14 @@ items:
                 items:
                   - name: The AssemblyBuilder class
                     href: runtime-libraries/system-reflection-emit-assemblybuilder.md
-                  - name: The MethodBuilder class
-                    href: runtime-libraries/system-reflection-emit-methodbuilder.md
-                  - name: The TypeBuilder class
-                    href: runtime-libraries/system-reflection-emit-typebuilder.md
                   - name: The DynamicMethod class
                     href: runtime-libraries/system-reflection-emit-dynamicmethod.md
+                  - name: The MethodBuilder class
+                    href: runtime-libraries/system-reflection-emit-methodbuilder.md
+                  - name: The PersistedAssemblyBuilder class
+                    href: runtime-libraries/system-reflection-emit-persistedassemblybuilder.md
+                  - name: The TypeBuilder class
+                    href: runtime-libraries/system-reflection-emit-typebuilder.md
           - name: Metadata and self-describing components
             items:
               - name: Overview

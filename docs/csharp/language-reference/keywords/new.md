@@ -1,6 +1,6 @@
 ---
 description: "new - C# Reference"
-title: "new - C# Reference"
+title: "new keyword"
 ms.date: 01/02/2024
 f1_keywords:
   - "new"

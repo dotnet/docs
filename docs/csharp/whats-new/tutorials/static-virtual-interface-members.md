@@ -1,5 +1,5 @@
 ---
-title: Explore static virtual members in interfaces
+title: Explore static virtual members in C# interfaces
 description: This advanced tutorial demonstrates scenarios for operators and other static members in interfaces.
 ms.date: 07/08/2022
 ms.subservice: advanced-concepts

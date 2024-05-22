@@ -10,17 +10,18 @@ dev_langs:
 
 [!INCLUDE [context](includes/context.md)]
 
-The <xref:System.Text.RegularExpressions.Regex> class represents .NET's regular expression engine. It can be used to quickly parse large amounts of text to find specific character patterns; to extract, edit, replace, or delete text substrings; and to add the extracted strings to a collection to generate a report.
+The <xref:System.Text.RegularExpressions.Regex> class represents .NET's regular expression engine. You can use this class to:
+
+- Quickly parse large amounts of text to find specific character patterns.
+- Extract, edit, replace, or delete text substrings.
+- Add the extracted strings to a collection to generate a report.
 
 > [!NOTE]
-> If you want to validate a string by determining whether it conforms to a particular pattern, you can use the <xref:System.Configuration.RegexStringValidator?displayProperty=nameWithType> class.
+> If you want to validate a string by determining whether it conforms to a particular regular expression pattern, you can use the <xref:System.Configuration.RegexStringValidator?displayProperty=nameWithType> class.
 
-To use regular expressions, you define the pattern that you want to identify in a text stream by using the syntax documented in [Regular Expression Language - Quick Reference](../../standard/base-types/regular-expression-language-quick-reference.md). Next, you can optionally instantiate a <xref:System.Text.RegularExpressions.Regex> object. Finally, you call a method that performs some operation, such as replacing text that matches the regular expression pattern, or identifying a pattern match.
+To use regular expressions, you define the pattern that you want to identify in a text stream by using the syntax documented in [Regular expression language - quick reference](../../standard/base-types/regular-expression-language-quick-reference.md). Next, you can optionally instantiate a <xref:System.Text.RegularExpressions.Regex> object. Finally, you call a method that performs some operation, such as replacing text that matches the regular expression pattern, or identifying a pattern match.
 
-> [!NOTE]
-> For some common regular expression patterns, see [Regular Expression Examples](/dotnet/standard/base-types/regular-expression-examples). There are also a number of online libraries of regular expression patterns, such as the one at [Regular-Expressions.info](https://www.regular-expressions.info/examples.html).
-
-For more information about the regular expression language, see [Regular Expression Language - Quick Reference](../../standard/base-types/regular-expression-language-quick-reference.md) or download and print one of these brochures:
+For more information about the regular expression language, see [Regular expression language - quick reference](../../standard/base-types/regular-expression-language-quick-reference.md) or download and print one of these brochures:
 
 [Quick Reference in Word (.docx) format](https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.docx)
 [Quick Reference in PDF (.pdf) format](https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.pdf)
@@ -70,14 +71,12 @@ Whether you decide to instantiate a <xref:System.Text.RegularExpressions.Regex> 
 In addition to its pattern-matching methods, the <xref:System.Text.RegularExpressions.Regex> class includes several special-purpose methods:
 
 - The <xref:System.Text.RegularExpressions.Regex.Escape%2A> method escapes any characters that may be interpreted as regular expression operators in a regular expression or input string.
-
 - The <xref:System.Text.RegularExpressions.Regex.Unescape%2A> method removes these escape characters.
-
 - The <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A> method creates an assembly that contains predefined regular expressions. .NET contains examples of these special-purpose assemblies in the <xref:System.Web.RegularExpressions?displayProperty=nameWithType> namespace.
 
 ## Define a time-out value
 
-.NET supports a full-featured regular expression language that provides substantial power and flexibility in pattern matching. However, the power and flexibility come at a cost: the risk of poor performance. Regular expressions that perform poorly are surprisingly easy to create. In some cases, regular expression operations that rely on excessive backtracking can appear to stop responding when they process text that nearly matches the regular expression pattern. For more information about the .NET Regular Expression engine, see [Details of Regular Expression Behavior](../../standard/base-types/details-of-regular-expression-behavior.md). For more information about excessive backtracking, see [Backtracking](../../standard/base-types/backtracking-in-regular-expressions.md).
+.NET supports a full-featured regular expression language that provides substantial power and flexibility in pattern matching. However, the power and flexibility come at a cost: the risk of poor performance. Regular expressions that perform poorly are surprisingly easy to create. In some cases, regular expression operations that rely on excessive backtracking can appear to stop responding when they process text that nearly matches the regular expression pattern. For more information about the .NET Regular Expression engine, see [Details of regular expression behavior](../../standard/base-types/details-of-regular-expression-behavior.md). For more information about excessive backtracking, see [Backtracking](../../standard/base-types/backtracking-in-regular-expressions.md).
 
 Starting with .NET Framework 4.5, you can define a time-out interval for regular expression matches to limit excessive backtracking. Depending on the regular expression pattern and the input text, the execution time may exceed the specified time-out interval, but it will not spend more time backtracking than the specified time-out interval. If the regular expression engine times out, it throws a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception. In most cases, this prevents the regular expression engine from wasting processing power by trying to match text that nearly matches the regular expression pattern. It also could indicate, however, that the time-out interval has been set too low, or that the current machine load has caused an overall degradation in performance.
 
@@ -85,43 +84,42 @@ How you handle the exception depends on the cause of the exception. If the excep
 
 You can set a time-out interval by calling the <xref:System.Text.RegularExpressions.Regex.%23ctor(System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan)> constructor when you instantiate a regular expression object. For static methods, you can set a time-out interval by calling an overload of a matching method that has a `matchTimeout` parameter. If you do not set a time-out value explicitly, the default time-out value is determined as follows:
 
-- By using the application-wide time-out value, if one exists. This can be any time-out value that applies to the application domain in which the <xref:System.Text.RegularExpressions.Regex> object is instantiated or the static method call is made. You can set the application-wide time-out value by calling the <xref:System.AppDomain.SetData%2A?displayProperty=nameWithType> method to assign the string representation of a <xref:System.TimeSpan> value to the "REGEX_DEFAULT_MATCH_TIMEOUT" property.
-
+- By using the application-wide time-out value, if one exists. Set the application-wide time-out value by calling the <xref:System.AppDomain.SetData%2A?displayProperty=nameWithType> method to assign the string representation of a <xref:System.TimeSpan> value to the `REGEX_DEFAULT_MATCH_TIMEOUT` property.
 - By using the value <xref:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout>, if no application-wide time-out value has been set.
 
 > [!IMPORTANT]
-> We recommend that you set a time-out value in all regular expression pattern-matching operations. For more information, see [Best Practices for Regular Expressions](/dotnet/standard/base-types/best-practices).
+> We recommend that you set a time-out value in all regular expression pattern-matching operations. For more information, see [Best practices for regular expressions](../../standard/base-types/best-practices-regex.md).
 
 ## Examples
 
 The following example uses a regular expression to check for repeated occurrences of words in a string. The regular expression `\b(?<word>\w+)\s+(\k<word>)\b` can be interpreted as shown in the following table.
 
-|Pattern|Description|
-|-------------|-----------------|
-|`\b`|Start the match at a word boundary.|
-|`(?<word>\w+)`|Match one or more word characters up to a word boundary. Name this captured group `word`.|
-|`\s+`|Match one or more white-space characters.|
-|`(\k<word>)`|Match the captured group that is named `word`.|
-|`\b`|Match a word boundary.|
+| Pattern        | Description                                                                               |
+|----------------|-------------------------------------------------------------------------------------------|
+| `\b`           | Start the match at a word boundary.                                                       |
+| `(?<word>\w+)` | Match one or more word characters up to a word boundary. Name this captured group `word`. |
+| `\s+`          | Match one or more white-space characters.                                                 |
+| `(\k<word>)`   | Match the captured group that's named `word`.                                             |
+| `\b`           | Match a word boundary.                                                                    |
 
 :::code language="csharp" source="./snippets/System.Text.RegularExpressions/Regex/Overview/csharp/words.cs" interactive="try-dotnet" id="Snippet0":::
 :::code language="vb" source="./snippets/System.Text.RegularExpressions/Regex/Overview/vb/words.vb" id="Snippet0":::
 
-The following example illustrates the use of a regular expression to check whether a string either represents a currency value or has the correct format to represent a currency value. In this case, the regular expression is built dynamically from the <xref:System.Globalization.NumberFormatInfo.CurrencyDecimalSeparator%2A?displayProperty=nameWithType>, <xref:System.Globalization.NumberFormatInfo.CurrencyDecimalDigits%2A>, <xref:System.Globalization.NumberFormatInfo.CurrencySymbol%2A?displayProperty=nameWithType>, <xref:System.Globalization.NumberFormatInfo.NegativeSign%2A?displayProperty=nameWithType>, and <xref:System.Globalization.NumberFormatInfo.PositiveSign%2A?displayProperty=nameWithType> properties for the en-US culture. The resulting regular expression is `^\s*[\+-]?\s?\$?\s?(\d*\.?\d{2}?){1}$`. This regular expression can be interpreted as shown in the following table.
+The next example illustrates the use of a regular expression to check whether a string either represents a currency value or has the correct format to represent a currency value. In this case, the regular expression is built dynamically from the <xref:System.Globalization.NumberFormatInfo.CurrencyDecimalSeparator%2A?displayProperty=nameWithType>, <xref:System.Globalization.NumberFormatInfo.CurrencyDecimalDigits%2A>, <xref:System.Globalization.NumberFormatInfo.CurrencySymbol%2A?displayProperty=nameWithType>, <xref:System.Globalization.NumberFormatInfo.NegativeSign%2A?displayProperty=nameWithType>, and <xref:System.Globalization.NumberFormatInfo.PositiveSign%2A?displayProperty=nameWithType> properties for the en-US culture. The resulting regular expression is `^\s*[\+-]?\s?\$?\s?(\d*\.?\d{2}?){1}$`. This regular expression can be interpreted as shown in the following table.
 
-|Pattern|Description|
-|-------------|-----------------|
-|`^`|Start at the beginning of the string.|
-|`\s*`|Match zero or more white-space characters.|
-|`[\+-]?`|Match zero or one occurrence of either the positive sign or the negative sign.|
-|`\s?`|Match zero or one white-space character.|
-|`\$?`|Match zero or one occurrence of the dollar sign.|
-|`\s?`|Match zero or one white-space character.|
-|`\d*`|Match zero or more decimal digits.|
-|`\.?`|Match zero or one decimal point symbol.|
-|`(\d{2})?`|Capturing group 1: Match two decimal digits zero or one time.|
-|`(\d*\.?(\d{2})?){1}`|Match the pattern of integral and fractional digits separated by a decimal point symbol at least one time.|
-|`$`|Match the end of the string.|
+| Pattern    | Description                                                                    |
+|------------|--------------------------------------------------------------------------------|
+| `^`        | Start at the beginning of the string.                                          |
+| `\s*`      | Match zero or more white-space characters.                                     |
+| `[\+-]?`   | Match zero or one occurrence of either the positive sign or the negative sign. |
+| `\s?`      | Match zero or one white-space character.                                       |
+| `\$?`      | Match zero or one occurrence of the dollar sign.                               |
+| `\s?`      | Match zero or one white-space character.                                       |
+| `\d*`      | Match zero or more decimal digits.                                             |
+| `\.?`      | Match zero or one decimal point symbol.                                        |
+| `(\d{2})?` | Capturing group 1: Match two decimal digits zero or one time.                  |
+| `(\d*\.?(\d{2})?){1}` | Match the pattern of integral and fractional digits separated by a decimal point symbol at least one time. |
+| `$`        | Match the end of the string.                                                   |
 
 In this case, the regular expression assumes that a valid currency string does not contain group separator symbols, and that it has either no fractional digits or the number of fractional digits defined by the specified culture's <xref:System.Globalization.NumberFormatInfo.CurrencyDecimalDigits> property.
 

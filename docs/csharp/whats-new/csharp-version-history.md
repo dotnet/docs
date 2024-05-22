@@ -1,5 +1,5 @@
 ---
-title: The history of C# - C# Guide
+title: The history of C#
 description: Learn how the C# language has changed over its many releases. Learn when different features were introduced in the language.
 author: erikdietrich
 ms.date: 03/06/2024
@@ -20,7 +20,7 @@ This article provides a history of each major release of the C# language. The C#
 The following features were added in C# 12:
 
 - [Primary constructors](./csharp-12.md#primary-constructors) - You can create primary constructors in any `class` or `struct` type.
-- [Collection expressions](./csharp-12.md#collection-expressions) - A new syntax to specify collection expressions, including the spread operator, (`..`), to expand any collection.
+- [Collection expressions](./csharp-12.md#collection-expressions) - A new syntax to specify collection expressions, including the spread element, (`..e`), to expand any collection.
 - [Inline arrays](./csharp-12.md#inline-arrays) - Inline arrays enable you to create an array of fixed size in a `struct` type.
 - [Optional parameters in lambda expressions](./csharp-12.md#default-lambda-parameters) - You can define default values for parameters on lambda expressions.
 - [`ref readonly` parameters](./csharp-12.md#ref-readonly-parameters) - `ref readonly` parameters enables more clarity for APIs that might be using `ref` parameters or `in` parameters.
@@ -290,7 +290,7 @@ C# version 7.0 was released with Visual Studio 2017. This version has some evolu
 Other features included:
 
 - [Discards](../fundamentals/functional/discards.md)
-- Binary Literals and Digit Separators
+- [Binary Literals and Digit Separators](../language-reference/builtin-types/integral-numeric-types.md#integer-literals)
 - [Throw expressions](../language-reference/statements/exception-handling-statements.md#the-throw-expression)
 
 All of these features offer new capabilities for developers and the opportunity to write cleaner code than ever. A highlight is condensing the declaration of variables to use with the `out` keyword and by allowing multiple return values via tuple. .NET Core now targets any operating system and has its eyes firmly on the cloud and on portability. These new capabilities certainly occupy the language designers' thoughts and time, in addition to coming up with new features.

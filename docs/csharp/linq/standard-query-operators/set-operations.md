@@ -1,5 +1,5 @@
 ---
-title: "Set operations (C#)"
+title: "Set operations"
 description: Learn about set operations and the standard query operator methods that perform set operations in LINQ in C#.
 ms.date: 01/22/2024
 ---
@@ -90,5 +90,4 @@ In the preceding C# code:
 ## See also
 
 - <xref:System.Linq>
-- [How to combine and compare string collections (LINQ) (C#)](../../programming-guide/concepts/linq/how-to-combine-and-compare-string-collections-linq.md)
-- [How to find the set difference between two lists (LINQ) (C#)](../../programming-guide/concepts/linq/how-to-find-the-set-difference-between-two-lists-linq.md)
+- [How to find the set difference between two lists (LINQ) (C#)](../how-to-query-collections.md)

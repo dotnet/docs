@@ -1,6 +1,6 @@
 ---
 description: "C# Compiler Options for errors and warnings. These options suppress or enable warnings, and control warnings as errors."
-title: "C# Compiler Options - errors and warnings"
+title: "Compiler Options - errors and warnings"
 ms.date: 10/30/2023
 f1_keywords: 
   - "cs.build.options"
@@ -87,25 +87,25 @@ All warning messages are instead reported as errors. The build process halts (no
 
 ## WarningsAsErrors and WarningsNotAsErrors
 
-The **WarningsAsErrors** and **WarningsNotAsErrors** options override the **TreatWarningsAsErrors** option for a list of warnings. This option can be used with all *CS* warnings. The "CS" prefix is optional. You can use either the number, or "CS" followed by the error or warning number. For other elements that affect warnings, see the [Common MSBuild properties](/visualstudio/msbuild/common-msbuild-project-properties).
+The **WarningsAsErrors** and **WarningsNotAsErrors** options override the **TreatWarningsAsErrors** option for a list of warnings. This option can be used with all *CS* warnings. The "CS" prefix is optional. You can use either the number, or "CS" followed by the error or warning number. For other elements that affect warnings, see the [Common MSBuild properties](/visualstudio/msbuild/common-msbuild-project-properties). In addition to the list of warning IDs, you can also specify the string `nullable`, which treats all warnings related to nullability as errors.
 
-Enable warnings 0219 and 0168 as errors:
+Enable warnings 0219, 0168, and all nullable warnings as errors:
 
 ```xml
-<WarningsAsErrors>0219,CS0168</WarningsAsErrors>
+<WarningsAsErrors>0219,CS0168,nullable</WarningsAsErrors>
 ```
 
 Disable the same warnings as errors:
 
 ```xml
-<WarningsNotAsErrors>0219,CS0168</WarningsNotAsErrors>
+<WarningsNotAsErrors>0219,CS0168,nullable</WarningsNotAsErrors>
 ```
 
 You use **WarningsAsErrors** to configure a set of warnings as errors. Use **WarningsNotAsErrors** to configure a set of warnings that should not be errors when you've set all warnings as errors.
 
 ## NoWarn
 
-The **NoWarn** option lets you suppress the compiler from displaying one or more warnings, where `warningnumber1`, `warningnumber2` are warning numbers that you want the compiler to suppress. Separate multiple warning numbers with a comma.
+The **NoWarn** option lets you suppress the compiler from displaying one or more warnings, where `warningnumber1`, `warningnumber2` are warning numbers that you want the compiler to suppress. Separate multiple warning numbers with a comma. You can specify `nullable` to disable all warnings related to nullability.
 
 ```xml
 <NoWarn>warningnumber1,warningnumber2</NoWarn>

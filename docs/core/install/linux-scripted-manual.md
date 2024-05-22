@@ -3,7 +3,7 @@ title: Install .NET on Linux without using a package manager
 description: Demonstrates how to install the .NET SDK and the .NET Runtime on Linux without a package manager. Use the install script or manually extract the binaries.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/14/2023
+ms.date: 05/14/2024
 ms.custom: linux-related-content
 ---
 
@@ -122,7 +122,6 @@ As an alternative to the package managers, you can download and manually install
 Download a **binary** release for either the SDK or the runtime from one of the following sites. The .NET SDK includes the corresponding runtime:
 
 - ✔️ [.NET 8 downloads](https://dotnet.microsoft.com/download/dotnet/8.0)
-- ✔️ [.NET 7 downloads](https://dotnet.microsoft.com/download/dotnet/7.0)
 - ✔️ [.NET 6 downloads](https://dotnet.microsoft.com/download/dotnet/6.0)
 - [All .NET Core downloads](https://dotnet.microsoft.com/download/dotnet)
 

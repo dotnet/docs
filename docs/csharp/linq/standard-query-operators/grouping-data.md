@@ -1,5 +1,5 @@
 ---
-title: "Grouping Data (C#)"
+title: "Grouping Data"
 description: Grouping puts data into groups of elements that share an attribute. Learn about the standard query operator methods in LINQ in C# that group data elements.
 ms.date: 02/16/2024
 ---
@@ -125,5 +125,4 @@ The query in the preceding snippet can also be written using method syntax. The 
 - <xref:System.Linq.Enumerable.GroupBy%2A>
 - <xref:System.Linq.IGrouping%602>
 - [group clause](../../language-reference/keywords/group-clause.md)
-- [How to group files by extension (LINQ) (C#)](../../programming-guide/concepts/linq/how-to-group-files-by-extension-linq.md)
-- [How to split a file into many files by using groups (LINQ) (C#)](../../programming-guide/concepts/linq/how-to-split-a-file-into-many-files-by-using-groups-linq.md)
+- [How to split a file into many files by using groups (LINQ) (C#)](../how-to-query-files-and-directories.md)

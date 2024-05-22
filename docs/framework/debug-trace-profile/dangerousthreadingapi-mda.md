@@ -30,7 +30,7 @@ The `dangerousThreadingAPI` managed debugging assistant (MDA) is activated when 
   
 ## Resolution  
 
- Avoid designs that require the use of <xref:System.Threading.Thread.Suspend%2A> and <xref:System.Threading.Thread.Resume%2A>. For cooperation between threads, use synchronization primitives such as <xref:System.Threading.Monitor>, <xref:System.Threading.ReaderWriterLock>, <xref:System.Threading.Mutex>, or the C# `lock` statement. If you must use these methods, reduce the window of time and minimize the amount of code that executes while the thread is in a suspended state.  
+ Avoid designs that require the use of <xref:System.Threading.Thread.Suspend%2A> and <xref:System.Threading.Thread.Resume%2A>. For cooperation between threads, use synchronization primitives such as <xref:System.Threading.Lock>, <xref:System.Threading.Monitor>, <xref:System.Threading.ReaderWriterLock>, <xref:System.Threading.Mutex>, or the C# `lock` statement. If you must use these methods, reduce the window of time and minimize the amount of code that executes while the thread is in a suspended state.  
   
 ## Effect on the Runtime  
 

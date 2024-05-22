@@ -1,8 +1,9 @@
 ---
-title: What's new in C# 10 - C# Guide
+title: What's new in C# 10
 description: Get an overview of the new features available in C# 10.
 ms.date: 11/08/2021
 ms.custom: UpdateFrequency1
+ms.topic: whats-new
 ---
 # What's new in C# 10
 

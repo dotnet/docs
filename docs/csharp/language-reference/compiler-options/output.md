@@ -1,6 +1,6 @@
 ---
 description: "C# Compiler Options that control compiler output. These options control the assembly generation from a compilation."
-title: "C# Compiler Options - Output options"
+title: "Compiler Options - Output options"
 ms.date: 03/12/2021
 f1_keywords: 
   - "cs.build.options"

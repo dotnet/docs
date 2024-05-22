@@ -1,5 +1,5 @@
 ---
-title: "Quantifier Operations (C#)"
+title: "Quantifier Operations"
 titleSuffix: LINQ
 description: Learn about quantifier operations in LINQ. These methods, `All`, `Any`, and `Contains`, return a Boolean value indicating whether some or all elements in a sequence satisfy a condition.
 ms.date: 02/14/2024
@@ -39,5 +39,5 @@ The following example uses the `Contains` to find students that scored exactly 9
 ## See also
 
 - <xref:System.Linq>
-- [Dynamically specify predicate filters at run time](../dynamically-specify-predicate-filters-at-runtime.md)
-- [How to query for sentences that contain a specified set of words (LINQ) (C#)](../../programming-guide/concepts/linq/how-to-query-for-sentences-that-contain-a-specified-set-of-words-linq.md)
+- [Dynamically specify predicate filters at run time](../get-started/write-linq-queries.md)
+- [How to query for sentences that contain a specified set of words (LINQ) (C#)](../how-to-query-strings.md)

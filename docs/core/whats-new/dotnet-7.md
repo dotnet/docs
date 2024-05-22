@@ -2,7 +2,7 @@
 title: What's new in .NET 7
 description: Learn about the new features introduced in .NET 7.
 ms.date: 11/08/2022
-ms.topic: overview
+ms.topic: whats-new
 ms.author: gewarren
 author: gewarren
 ---
@@ -11,8 +11,6 @@ author: gewarren
 .NET 7 is the successor to [.NET 6](dotnet-6.md) and focuses on being unified, modern, simple, and *fast*. .NET 7 will be [supported for 18 months](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) as a standard-term support (STS) release (previously known as a *current* release).
 
 This article lists the new features of .NET 7 and provides links to more detailed information on each.
-
-To find all the .NET articles that have been updated for .NET 7, see [.NET docs: What's new for the .NET 7 release](../../whats-new/dotnet-7-docs.md).
 
 ## Performance
 

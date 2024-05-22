@@ -148,17 +148,15 @@ Environment variables that add .NET to system path, such as the `PATH` variable,
 
 Visual Studio installs its own copy of .NET separate from other copies of .NET. Different versions of Visual Studio support different versions of .NET. The latest version of Visual Studio always supports the latest version of .NET.
 
-### Install
+> [!div class="button"]
+> [Download Visual Studio Installer](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2022)
 
-Visual Studio Installer can install and configure Visual Studio. Some Visual Studio workloads include .NET, such as **ASP.NET and web development** and **.NET Multi-platform App UI development**. Specific versions of .NET can be installed through the **Individual Components** tab.
+Visual Studio Installer installs and configures Visual Studio. Some Visual Studio workloads include .NET, such as **ASP.NET and web development** and **.NET Multi-platform App UI development**. Specific versions of .NET can be installed through the **Individual Components** tab.
 
 The Visual Studio documentation provides instructions on how to:
 
 - [Install Visual Studio](/visualstudio/install/install-visual-studio?view=vs-2022).
 - [Configure Visual Studio workloads](/visualstudio/install/modify-visual-studio?view=vs-2022).
-
-> [!div class="button"]
-> [Download Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2022)
 
 ### .NET Versions and Visual Studio
 

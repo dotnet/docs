@@ -149,11 +149,11 @@ This pattern enables the C# compiler to determine the containing type for the ov
 ```csharp
 public interface IAdditionSubtraction<T> where T : IAdditionSubtraction<T>
 {
-    abstract static IAdditionSubtraction<T> operator +(
+    static abstract IAdditionSubtraction<T> operator +(
         IAdditionSubtraction<T> left,
         IAdditionSubtraction<T> right);
 
-    abstract static IAdditionSubtraction<T> operator -(
+    static abstract IAdditionSubtraction<T> operator -(
         IAdditionSubtraction<T> left,
         IAdditionSubtraction<T> right);
 }

@@ -279,8 +279,8 @@ namespace Generics
     // <SelfConstraint>
     public interface IAdditionSubtraction<T> where T : IAdditionSubtraction<T>
     {
-        abstract static T operator +(T left, T right);
-        abstract static T operator -(T left, T right);
+        static abstract T operator +(T left, T right);
+        static abstract T operator -(T left, T right);
     }
     // </SelfConstraint>
 }

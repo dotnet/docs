@@ -92,9 +92,6 @@ This section lists some of the available options. To see the full list of availa
 - [dispose_analysis_kind](#dispose_analysis_kind)
 - [dispose_ownership_transfer_at_constructor](#dispose_ownership_transfer_at_constructor)
 - [dispose_ownership_transfer_at_method_call](#dispose_ownership_transfer_at_method_call)
-- [points_to_analysis_kind](#points_to_analysis_kind)
-- [copy_analysis](#copy_analysis)
-- [sufficient_IterationCount_for_weak_KDF_algorithm](#sufficient_iterationcount_for_weak_kdf_algorithm)
 - [enum_values_prefix_trigger](#enum_values_prefix_trigger)
 - [exclude_indirect_base_types](#exclude_indirect_base_types)
 - [additional_required_suffixes](#additional_required_suffixes)
@@ -243,24 +240,6 @@ This section lists some of the available options. To see the full list of availa
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
 | Configure dispose ownership transfer for disposable objects passed as arguments to method calls | `true` or `false` | `false` | [CA2000](quality-rules/ca2000.md) |
-
-### points_to_analysis_kind
-
-| Description | Allowable values | Default value | Configurable rules |
-| - | - | - | - |
-| Points to analysis kind for DFA rules based on PointsToAnalysis | - `None` - PointsToAnalysis is disabled.</br> - `PartialWithoutTrackingFieldsAndProperties` - Partial analysis that does not track PointsToData for fields and properties for improved performance.</br> - `Complete` - Complete analysis that also tracks PointsToData for fields and properties. | _Specific to each configurable rule_ | All DFA rules |
-
-### copy_analysis
-
-| Description | Allowable values | Default value | Configurable rules |
-| - | - | - | - |
-| Configure execution of Copy analysis (tracks value and reference copies) | `true` or `false` | _Specific to each configurable rule_ (`true` for most rules) |  |
-
-### sufficient_IterationCount_for_weak_KDF_algorithm
-
-| Description | Allowable values | Default value | Configurable rules |
-| - | - | - | - |
-| Configure sufficient IterationCount when using weak KDF algorithm | integral values | _Specific to each configurable rule_ (`100000` for most rules) |  |
 
 ### enum_values_prefix_trigger
 

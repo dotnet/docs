@@ -257,13 +257,13 @@ This section lists some of the available options. To see the full list of availa
 
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
-| Specifies additional required suffixes | List of type names (separated by `|`) with their required suffix (separated by `->`). Allowed type name formats:</br> - Type name only (includes all types with the name, regardless of the containing type or namespace).</br> - Fully qualified names in the symbol's documentation ID format with an optional `T:` prefix.| None | [CA1710](quality-rules/ca1710.md) |
+| Specifies additional required suffixes | List of type names (separated by `\|`) with their required suffix (separated by `->`). Allowed type name formats:</br> - Type name only (includes all types with the name, regardless of the containing type or namespace).</br> - Fully qualified names in the symbol's documentation ID format with an optional `T:` prefix.| None | [CA1710](quality-rules/ca1710.md) |
 
 ### additional_required_generic_interfaces
 
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
-| Specifies additional required generic interfaces | List of interface names (separated by `|`) with their required generic fully qualified interface (separated by `->`). Allowed interface formats:</br> - Interface name only (includes all interfaces with the name, regardless of the containing type or namespace).</br> - Fully qualified names in the symbol's documentation ID format with an optional `T:` prefix. | None | [CA1010](quality-rules/ca1010.md) |
+| Specifies additional required generic interfaces | List of interface names (separated by `\|`) with their required generic fully qualified interface (separated by `->`). Allowed interface formats:</br> - Interface name only (includes all interfaces with the name, regardless of the containing type or namespace).</br> - Fully qualified names in the symbol's documentation ID format with an optional `T:` prefix. | None | [CA1010](quality-rules/ca1010.md) |
 
 Examples:
 
@@ -294,13 +294,13 @@ Examples:
 
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
-| Specifies additional custom APIs whose results must be used | Names of additional methods (separated by `|`). Allowed method name formats:</br> - Method name only (includes all methods with the name, regardless of the containing type or namespace).</br> - Fully qualified names in the symbol's documentation ID format with an optional `M:` prefix. | None | [CA1806](quality-rules/ca1806.md) |
+| Specifies additional custom APIs whose results must be used | Names of additional methods (separated by `\|`). Allowed method name formats:</br> - Method name only (includes all methods with the name, regardless of the containing type or namespace).</br> - Fully qualified names in the symbol's documentation ID format with an optional `M:` prefix. | None | [CA1806](quality-rules/ca1806.md) |
 
 ### allowed_suffixes
 
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
-| Specifies allowable suffixes | List (separated by `|`) of allowed suffixes. | None | [CA1711](quality-rules/ca1711.md) |
+| Specifies allowable suffixes | List (separated by `\|`) of allowed suffixes. | None | [CA1711](quality-rules/ca1711.md) |
 
 ### enable_platform_analyzer_on_pre_net5_target
 
@@ -318,19 +318,19 @@ Examples:
 
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
-| Specifies additional allowable names for a zero-value enumeration field | List of additional names (separated by `|`). | None | [CA1008](quality-rules/ca1008.md) |
+| Specifies additional allowable names for a zero-value enumeration field | List of additional names (separated by `\|`). | None | [CA1008](quality-rules/ca1008.md) |
 
 ### enumeration_methods
 
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
-| Specifies additional custom methods that enumerate an IEnumerable | Fully qualified names of additional methods (separated by `|`). | None | [CA1851](quality-rules/ca1851.md) |
+| Specifies additional custom methods that enumerate an IEnumerable | Fully qualified names of additional methods (separated by `\|`). | None | [CA1851](quality-rules/ca1851.md) |
 
 ### linq_chain_methods
 
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
-| Specifies additional customized LINQ chain methods (that is, methods take an `IEnumerable` argument and return a new `IEnumerable` instance) | Fully qualified names of additional methods (separated by `|`). | None | [CA1851](quality-rules/ca1851.md) |
+| Specifies additional customized LINQ chain methods (that is, methods take an `IEnumerable` argument and return a new `IEnumerable` instance) | Fully qualified names of additional methods (separated by `\|`). | None | [CA1851](quality-rules/ca1851.md) |
 
 ### assume_method_enumerates_parameters
 

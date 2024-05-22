@@ -128,6 +128,12 @@ A method that implements an interface must include the `params` modifier if and 
 
 You must use the `params` modifier. You can't apply the equivalent attributes, either <xref:System.ParamArrayAttribute?displayProperty=nameWithType> or <xref:System.Runtime.CompilerServices.ParamCollectionAttribute?displayProperty=nameWithType>.
 
+The compiler generates one of the final three errors in the preceding list when the code generated to create the collection type is invalid:
+
+- The compiler emits **CS9223** when the code emitted to create the collection also contains a params collection of the same type. Typically, the `Add` method takes a `params` collection of the same type.
+- The compiler emits **CS9224** when the `Create` method for the collection type is less accessible than the method that takes the `params` parameter of the collection type.
+- The compiler emits **CS9225** when the collection type has a required member and the parameterless constructor doesn't initialize that member and have the <xref:System.Diagnostics.CodeAnalysis.SetsRequiredMembersAttribute?displayProperty=nameWithType> on the parameterless constructor.
+
 ## See also
 
 - [Extension Methods](../../programming-guide/classes-and-structs/extension-methods.md)

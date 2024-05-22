@@ -229,7 +229,7 @@ updates:
         patterns:
           - "*" # Prefer a single PR per solution update.
   - package-ecosystem: "nuget"
-    directory: "/docs/standard/security/snippets/csharp" #cs-round-trip-encryption.sln
+    directory: "/docs/standard/security/snippets" #cs-round-trip-encryption.sln
     schedule:
       interval: "weekly"
       day: "wednesday"
@@ -240,7 +240,7 @@ updates:
         patterns:
           - "*" # Prefer a single PR per solution update.
   - package-ecosystem: "nuget"
-    directory: "/docs/standard/security/snippets/vb" #vb-rounbd-trip-encryption.sln
+    directory: "/docs/standard/security/snippets" #vb-rounbd-trip-encryption.sln
     schedule:
       interval: "weekly"
       day: "wednesday"

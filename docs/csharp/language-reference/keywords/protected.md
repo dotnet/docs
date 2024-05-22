@@ -1,6 +1,6 @@
 ---
 description: "protected keyword - C# Reference"
-title: "protected keyword - C# Reference"
+title: "protected keyword"
 ms.date: 07/20/2015
 f1_keywords:
   - "protected"

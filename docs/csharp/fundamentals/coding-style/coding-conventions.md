@@ -1,5 +1,5 @@
 ---
-title: ".NET documentation C# Coding Conventions"
+title: ".NET Coding Conventions"
 description: Learn about commonly used coding conventions in C#. Coding conventions create a consistent look to the code and facilitate copying, changing, and maintaining the code. This article also includes the docs repo coding guidelines
 ms.date: 07/27/2023
 helpviewer_keyword:

@@ -1,5 +1,5 @@
 ---
-title: "Sorry, we don't have specifics on this C# error"
+title: "Sorry, we don't have specifics on this error"
 description: "List of possible resources for compiler errors and warnings that haven't been documented yet."
 ms.date: 12/18/2023
 f1_keywords:
@@ -651,4 +651,4 @@ Provides a QA website for questions about and issues with Visual C#.
 
 - [C# Reference](../language-reference/index.yml)
 - [Visual Studio feedback options](/visualstudio/ide/feedback-options)
-- [Additional Resources for Visual C# Programmers](../tour-of-csharp/index.md)
+- [Additional Resources for Visual C# Programmers](../tour-of-csharp/overview.md)

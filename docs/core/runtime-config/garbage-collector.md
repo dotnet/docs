@@ -709,13 +709,23 @@ Project file:
 
 ## Standalone GC
 
-- Specifies the name of a GC native library that the runtime loads in place of the default GC implementation. This native library needs to reside in the same directory as the .NET runtime (**coreclr.dll** on Windows, **libcoreclr.so** on Linux).
+To use a standalone garbage collector instead of the default GC implementation, you can specify either the *path* (in .NET 9 and later versions) or the *name* of a GC native library.
+
+- Specifies the full path of a GC native library that the runtime loads in place of the default GC implementation. To be secure, this location should be protected from potentially malicious tampering.
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
-| **runtimeconfig.json** | N/A | N/A | N/A |
-| **Environment variable** | `COMPlus_GCName` | *string_path* | .NET Core 2.0 |
-| **Environment variable** | `DOTNET_GCName` | *string_path* | .NET 6 |
+| **runtimeconfig.json** | `System.GC.Path` | *string_name* | .NET 9 |
+| **Environment variable** | `DOTNET_GCPath` | *string_path* | .NET 9 |
+
+- Specifies the name of a GC native library that the runtime loads in place of the default GC implementation. This native library needs to reside in the same directory as the assembly that contains your app's `Main` method. If the native module is not found there, then it must reside in the same directory as the .NET runtime (*coreclr.dll* on Windows, *libcoreclr.so* on Linux, or *libcoreclr.dylib* on OSX).
+- This configuration setting is ignored if `DOTNET_GCPath` is specified.
+
+| | Setting name | Values | Version introduced |
+| - | - | - | - |
+| **runtimeconfig.json** | `System.GC.Name` | *string_name* | .NET 7 |
+| **Environment variable** | `COMPlus_GCName` | *string_name* | .NET Core 2.0 |
+| **Environment variable** | `DOTNET_GCName` | *string_name* | .NET 6 |
 
 ## Conserve memory
 

@@ -1,5 +1,5 @@
 ---
-title: "Attributes interpreted by the C# compiler: Global attributes"
+title: "Attributes interpreted by the compiler: Global attributes"
 ms.date: 12/16/2020
 description: Attributes provide metadata the compiler uses to understand more semantics of your program
 ---

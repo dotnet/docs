@@ -1,1 +1,1 @@
-﻿TiktokenExample.RunIt();
+﻿Tiktoken.RunIt();

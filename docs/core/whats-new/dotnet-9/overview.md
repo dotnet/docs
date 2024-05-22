@@ -2,7 +2,7 @@
 title: What's new in .NET 9
 description: Learn about the new .NET features introduced in .NET 9.
 titleSuffix: ""
-ms.date: 04/11/2024
+ms.date: 05/21/2024
 ms.topic: whats-new
 ---
 # What's new in .NET 9
@@ -13,11 +13,9 @@ Learn about the new features in .NET 9 and find links to further documentation.
 
 New for .NET 9, the engineering team posts .NET 9 preview updates on [GitHub Discussions](https://github.com/dotnet/core/discussions/9234). That's a great place to ask questions and provide feedback about the release.
 
-This article has been updated for .NET 9 Preview 3.
-
 ## .NET runtime
 
-The .NET 9 runtime includes performance improvements, including faster exception handling, inlining improvements for Native AOT, and loop and PGO improvements. For more information, see [What's new in the .NET 9 runtime](runtime.md).
+The .NET 9 runtime includes performance improvements, including faster exception handling, inlining improvements, and loop and PGO improvements. For more information, see [What's new in the .NET 9 runtime](runtime.md).
 
 ## .NET libraries
 
@@ -27,9 +25,13 @@ The .NET 9 libraries include improvements to serialization, cryptography, LINQ, 
 
 The .NET 9 SDK includes improvements to the terminal logger, tool roll-forward, and unit testing. For more information, see [What's new in the SDK for .NET 9](sdk.md).
 
+## ML.NET
+
+ML.NET is an open-source, cross-platform machine learning framework for .NET developers that enables integration of custom machine learning models into .NET applications. The latest version, ML.NET 4.0, adds [additional tokenizer support](../../../machine-learning/whats-new/overview.md#additional-tokenizer-support) for tokenizers such as Tiktoken and models such as Llama and CodeGen.
+
 ## .NET Aspire
 
-.NET Aspire is an opinionated, cloud-ready stack for building observable, production ready, distributed applications.​ .NET Aspire is delivered through a collection of NuGet packages that handle specific cloud-native concerns, and is available in preview for .NET 9. For more information, see [.NET Aspire (Preview)](/dotnet/aspire).
+.NET Aspire is an opinionated, cloud-ready stack for building observable, production ready, distributed applications.​ .NET Aspire is delivered through a collection of NuGet packages that handle specific cloud-native concerns, and is available in preview for .NET 9. For more information, see [.NET Aspire](/dotnet/aspire).
 
 ## ASP.NET Core
 

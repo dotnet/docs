@@ -1,5 +1,5 @@
 ---
-title: "Generics and Arrays - C# Programming Guide"
+title: "Generics and Arrays"
 description: Learn about generics and arrays in C# programming. See code examples and view additional available resources.
 ms.date: 07/20/2015
 helpviewer_keywords: 

@@ -1,5 +1,5 @@
 ---
-title: A tour of C# - Tips for Python Developers
+title: Tips for Python Developers
 description: New to C#, but know Python? Here's a roadmap of what's familiar, features in C# that aren't in Python, and alternatives for Python features that aren't in C#.
 ms.date: 04/03/2024
 ---

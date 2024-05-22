@@ -1,6 +1,6 @@
 ---
 description: "select clause - C# Reference"
-title: "select clause - C# Reference"
+title: "select clause"
 ms.date: 07/20/2015
 f1_keywords: 
   - "select_CSharpKeyword"

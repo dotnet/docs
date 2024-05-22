@@ -1,6 +1,6 @@
 ---
 description: "using directive - C# Reference"
-title: "using directive - C# Reference"
+title: "using directive"
 ms.date: 08/19/2021
 f1_keywords:
   - "using_CSharpKeyword"

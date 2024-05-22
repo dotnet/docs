@@ -1,5 +1,5 @@
 ---
-title: Properties in C#
+title: Overview of properties
 description: Learn about C# properties, which include features for validation, computed values, lazy evaluation, and property changed notifications.
 ms.subservice: fundamentals
 ms.date: 07/20/2022

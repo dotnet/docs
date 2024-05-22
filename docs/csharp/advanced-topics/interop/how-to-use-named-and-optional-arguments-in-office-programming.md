@@ -1,5 +1,5 @@
 ---
-title: "How to use C# named and optional arguments in Office programming"
+title: "How to use named and optional arguments in Office programming"
 description: Learn how to use named arguments and optional arguments to facilitate access to COM interfaces such as the Microsoft Office automation APIs.
 ms.date: 02/16/2023
 helpviewer_keywords: 

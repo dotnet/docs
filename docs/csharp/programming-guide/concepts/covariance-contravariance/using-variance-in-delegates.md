@@ -1,5 +1,5 @@
 ---
-title: "Using Variance in Delegates (C#)"
+title: "Using Variance in Delegates"
 description: Learn how to use variance in delegates using the included covariance and contravariance code examples.
 ms.date: 07/20/2015
 ms.assetid: 1638c95d-dc8b-40c1-972c-c2dcf84be55e

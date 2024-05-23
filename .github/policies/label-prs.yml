@@ -50,18 +50,6 @@ configuration:
           comment: "Approved; this PR will merge when all status checks pass."
       - addLabel:
           label: ':octocat: auto-merge'
-    - description: Label PRs from Dotnet Policy Service
-      if:
-      - payloadType: Pull_Request
-      - isActivitySender:
-          user: dotnet-policy-service
-          issueAuthor: False
-      then:
-      - approvePullRequest:
-          comment: "Approved; this PR will merge when all status checks pass."
-      - addLabel:
-          label: ':octocat: auto-merge'
-      triggerOnOwnActions: true
     - description: Label PRs with okr-health
       if:
       - payloadType: Pull_Request

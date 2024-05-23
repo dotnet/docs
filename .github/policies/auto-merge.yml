@@ -20,7 +20,6 @@ configuration:
       - enableAutoMerge:
           mergeMethod: Squash
     - description: Auto-merge PRs to live with title "Merge main into live"
-      triggerOnOwnActions: true
       if:
       - payloadType: Pull_Request
       - isAction:
@@ -34,7 +33,6 @@ configuration:
       - enableAutoMerge:
           mergeMethod: Merge
     - description: Auto-merge PRs to live labeled with auto-merge
-      triggerOnOwnActions: true
       if:
       - payloadType: Pull_Request
       - labelAdded:

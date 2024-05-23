@@ -3,7 +3,7 @@ title: Install .NET on Alpine
 description: Learn about which versions of .NET SDK and .NET Runtime are supported, and how to install .NET on Alpine.
 author: adegeo
 ms.author: adegeo
-ms.date: 05/14/2024
+ms.date: 05/22/2024
 ms.custom: linux-related-content
 ---
 
@@ -39,11 +39,10 @@ The following table is a list of currently supported .NET releases and the versi
 
 | Alpine | Supported Version | Available in Package Manager |
 |--------|-------------------|------------------------------|
+| 3.20   | 8.0, 6.0          | 8.0, 6.0                     |
 | 3.19   | 8.0, 6.0          | 7.0, 6.0                     |
 | 3.18   | 8.0, 6.0          | 7.0, 6.0                     |
 | 3.17   | 8.0, 6.0          | 7.0, 6.0                     |
-| 3.16   | 6.0               | 6.0                          |
-| 3.15   | 6.0               | None                         |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
@@ -53,10 +52,10 @@ The following table is a list of currently supported .NET releases and the archi
 
 | Architecture     | .NET 6           | .NET 8  |
 |------------------|------------------|---------|
-| x86_64           | 3.16, 3.17, 3.18 | 3.17, 3.18 |
+| x86_64           | 3.16, 3.17, 3.18, 3.19, 3.20 | 3.17, 3.18, 3.19, 3.20 |
 | x86              | None             | None       |
-| aarch64          | 3.16, 3.17, 3.18 | 3.17, 3.18 |
-| armv7            | 3.16, 3.17, 3.18 | 3.17, 3.18 |
+| aarch64          | 3.16, 3.17, 3.18, 3.19, 3.20 | 3.17, 3.18, 3.19, 3.20 |
+| armv7            | 3.16, 3.17, 3.18, 3.19, 3.20 | 3.17, 3.18, 3.19, 3.20 |
 | armhf            | None             | None |
 | s390x            | 3.17             | 3.17 |
 | ppc64le          | None             | None |

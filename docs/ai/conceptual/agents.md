@@ -40,7 +40,7 @@ For example, you can use instructions to tell an agent that it is helping people
 prompt = $"""
     <message role="system">
     You are a friendly assistant helping people with emails.
-    When you decide to peform an action, explain your decision and then perform the action.
+    When you decide to perform an action, explain your decision and then perform the action.
     </message>
 """
 ```

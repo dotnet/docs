@@ -49,7 +49,7 @@ prompt = $"""
 
 You use [plugins](/semantic-kernel/agents/plugins/?tabs=Csharp) to do things an LLM can't do alone, such as retrieving data from external data sources or completing tasks in the real world.
 
-For example, an LLM can't send an email, so to add that function to a chat app, you'd need to create a plugin. To process text from the emails, you could use [core plugins](/semantic-kernel/agents/plugins/out-of-the-box-plugins?tabs=Csharp#core-plugins), such as the [ConversationSummaryPlugin](/dotnet/api/microsoft.semantickernel.plugins.core.conversationsummaryplugin?view=semantic-kernel-dotnet).
+For example, an LLM can't send an email, so to add that function to a chat app, you'd need to create a plugin. To process text from the emails, you could use [core plugins](/semantic-kernel/agents/plugins/out-of-the-box-plugins?tabs=Csharp#core-plugins), such as the <xref:Microsoft.SemanticKernel.Plugins.Core.ConversationSummaryPlugin>.
 
 Make sure you clearly document the functions in your plugins&mdash;planners use this information to determine what functions are available.
 

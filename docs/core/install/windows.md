@@ -158,6 +158,8 @@ The Visual Studio documentation provides instructions on how to:
 - [Install Visual Studio](/visualstudio/install/install-visual-studio?view=vs-2022).
 - [Configure Visual Studio workloads](/visualstudio/install/modify-visual-studio?view=vs-2022).
 
+:::image type="content" source="media/windows/vs-workloads.png" alt-text="A screenshot that shows Visual Studio Installer with the .NET Desktop workload highlighted with a red box.":::
+
 ### .NET Versions and Visual Studio
 
 If you're using Visual Studio to develop .NET apps, the following table describes the minimum required version of Visual Studio based on the target .NET SDK version.

@@ -20,3 +20,4 @@ Identifier | Name | Description
 [MSTEST0020](mstest0020.md) | PreferConstructorOverTestInitializeAnalyzer | Prefer constructors over TestInitialize methods
 [MSTEST0021](mstest0021.md) | PreferDisposeOverTestCleanupAnalyzer | Prefer Dispose over TestCleanup methods
 [MSTEST0022](mstest0022.md) | PreferTestCleanupOverDisposeAnalyzer | Prefer TestCleanup over Dispose methods
+[MSTEST0025](mstest0025.md) | PreferAssertFailOverAlwaysFalseConditionsAnalyzer | Use 'Assert.Fail' instead of an always-failing assert

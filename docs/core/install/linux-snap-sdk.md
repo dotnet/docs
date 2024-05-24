@@ -128,10 +128,10 @@ Try the following steps to fix the issue:
 01. Try to symbolic link the snap `dotnet` executable to the location that the program is looking for.
 
     Two common paths the `dotnet` command is looking for are:
-    
+
     - `/usr/local/bin/dotnet`
-    - `/usr/share/dotnet`.
-    
+    - `/usr/share/dotnet`
+
     Use the following command to create a symbolic link to the snap package:
 
     ```bash

@@ -41,8 +41,6 @@ In the reflection area, the new <xref:System.Reflection.Emit.PersistedAssemblyBu
 
 The <xref:System.TimeSpan> class includes new `From*` methods that let you create a `TimeSpan` object from an `int` (instead of a `double`). These methods help to avoid errors caused by inherent imprecision in floating-point calculations.
 
-In diagnostics, the new <xref:System.Diagnostics.Activity.AddLink(System.Diagnostics.ActivityLink)?displayProperty=nameWithType> API lets you link an <xref:System.Diagnostics.Activity> object to other tracing contexts after it's created. Previously, you could only link a tracing `Activity` to other tracing contexts when you created it.
-
 For more information, see [What's new in the .NET 9 libraries](libraries.md).
 
 ## .NET SDK

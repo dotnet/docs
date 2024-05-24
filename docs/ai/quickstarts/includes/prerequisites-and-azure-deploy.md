@@ -29,7 +29,7 @@ Ensure that you follow the [Prerequisites](#prerequisites) to have access to Azu
 
 ## Troubleshoot
 
-On Windows, you might get the following errosr message after running `azd up`:
+On Windows, you might get the following error messages after running `azd up`:
 
 > *postprovision.ps1 is not digitally signed. The script will not execute on the system*
 

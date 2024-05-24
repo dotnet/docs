@@ -13,7 +13,7 @@ ms.custom: linux-related-content
 
 This article describes how to install the .NET Runtime snap package. .NET Runtime snap packages are provided by and maintained by Canonical. Snaps are a great alternative to the package manager built into your Linux distribution.
 
-A snap is a bundle of an app and its dependencies that works without modification across many different Linux distributions. Snaps are discoverable and installable from the Snap Store. For more information about Snap, see [Getting started with Snap](https://snapcraft.io/docs/getting-started).
+A snap is a bundle of an app and its dependencies that works across many different Linux distributions. Snaps are discoverable and installable from the Snap Store. For more information about Snap, see [Getting started with Snap](https://snapcraft.io/docs/getting-started).
 
 > [!CAUTION]
 > Snap installations of .NET may have problems running [.NET tools](../tools/global-tools.md). If you wish to use .NET tools, we recommend that you install .NET using the [`dotnet-install` script](linux-scripted-manual.md#scripted-install) or the package manager for the particular Linux distribution.
@@ -31,7 +31,16 @@ It's possible your Linux distribution already includes snap. Try running `snap` 
 
 ## 1. Install the runtime
 
-Snap packages for the .NET Runtime are each published under their own package identifier. The following table lists the package identifiers:
+The following steps install the .NET 8 runtime snap package:
+
+01. Open a terminal.
+01. Use `snap install` to install the .NET Runtime snap package. For example, the following command installs the .NET 8 runtime.
+
+    ```bash
+    sudo snap install dotnet-runtime-80
+    ```
+
+Each .NET Runtime is published as an individual snap package. The following table lists the packages:
 
 | .NET version                                      | Snap package        | .NET version supported by Microsoft |
 |---------------------------------------------------|---------------------|-----|
@@ -44,16 +53,9 @@ Snap packages for the .NET Runtime are each published under their own package id
 | [2.2](https://snapcraft.io/dotnet-runtime-22)     | `dotnet-runtime-22` | No  |
 | [2.1](https://snapcraft.io/dotnet-runtime-21)     | `dotnet-runtime-21` | No  |
 
-01. Open a terminal.
-01. Use `snap install` to install the .NET Runtime snap package. For example, the following command installs .NET 8 Runtime.
-
-    ```bash
-    sudo snap install dotnet-runtime-80
-    ```
-
 ## 2. Enable the dotnet command
 
-When the .NET Runtime snap package is installed, the `dotnet` command isn't automatically configured. Use the `snap alias` command to use the `dotnet` command from the terminal. The command is formatted as: `sudo snap alias {package}.{command} {alias}`. The following example maps the `dotnet` alias:
+When the .NET runtime snap package is installed, the `dotnet` command isn't automatically configured. Use the `snap alias` command to use the `dotnet` command from the terminal. The command is formatted as: `sudo snap alias {package}.{command} {alias}`. The following example maps the `dotnet` command:
 
 ```bash
 sudo snap alias dotnet-runtime-80.dotnet dotnet
@@ -86,7 +88,7 @@ Edit the appropriate source file for your shell and add `export DOTNET_ROOT=/sna
 
 ### The dotnet terminal command doesn't work
 
-Snap packages can map an alias to a command provided by the package. By default, the .NET SDK snap packages create an alias for the `dotnet` command, but the .NET Runtime packages don't. To map the `dotnet` alias, use the following command:
+Snap packages can map an alias to a command provided by the package. The .NET Runtime snap packages don't automatically lias the `dotnet` command. To alias the `dotnet` command to the snap package, use the following command:
 
 ```bash
 sudo snap alias dotnet-runtime-80.dotnet dotnet

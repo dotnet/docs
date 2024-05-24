@@ -13,7 +13,7 @@ ms.custom: linux-related-content
 
 This article describes how to install the .NET SDK snap package. .NET SDK snap packages are provided by and maintained by Canonical. Snaps are a great alternative to the package manager built into your Linux distribution.
 
-A snap is a bundle of an app and its dependencies that works without modification across many different Linux distributions. Snaps are discoverable and installable from the Snap Store. For more information about Snap, see [Getting started with Snap](https://snapcraft.io/docs/getting-started).
+A snap is a bundle of an app and its dependencies that works across many different Linux distributions. Snaps are discoverable and installable from the Snap Store. For more information about Snap, see [Getting started with Snap](https://snapcraft.io/docs/getting-started).
 
 > [!CAUTION]
 > Snap installations of .NET may have problems running [.NET tools](../tools/global-tools.md). If you wish to use .NET tools, we recommend that you install .NET using the [`dotnet-install` script](linux-scripted-manual.md#scripted-install) or the package manager for the particular Linux distribution.
@@ -35,10 +35,24 @@ It's possible your Linux distribution already includes snap. Try running `snap` 
 
 ## 1. Install the SDK
 
-> [!div class="button"]
-> [Snap Package - dotnet-sdk](https://snapcraft.io/dotnet-sdk)
+Snap packages for the .NET SDK are all published under the same identifier: `dotnet-sdk`. A specific version of the SDK can be installed by specifying the channel. The SDK includes both the ASP.NET Core and .NET runtime, versioned to the SDK.
 
-Snap packages for the .NET SDK are all published under the same identifier: `dotnet-sdk`. A specific version of the SDK can be installed by specifying the channel. The SDK includes both the ASP.NET Core and .NET runtime, versioned to the SDK. The following table lists the package channels:
+> [!TIP]
+> The [Snapcraft .NET SDK package page](https://snapcraft.io/dotnet-sdk) includes distribution-specific instructions on how to install Snapcraft and .NET.
+
+01. Open a terminal.
+01. Use `snap install` to install the .NET SDK snap package. For example, the following command installs the `latest/stable` channel, which is the default.
+
+    ```bash
+    sudo snap install dotnet-sdk --classic
+    ```
+
+    - The `--classic` parameter is required.
+    - Use the `--channel` parameter to specify which version to install. If this parameter is omitted, `latest/stable` is used. For example, `--channel 8.0/stable` installs .NET SDK 8.0.
+
+The `dotnet` snap alias is automatically created and mapped to the snap package's `dotnet` command.
+
+The following table lists the package channels you can install:
 
 | .NET version | Snap package channel  |
 |--------------|--------------------------|
@@ -48,21 +62,6 @@ Snap packages for the .NET SDK are all published under the same identifier: `dot
 | 5            | `5.0/stable` (out of support) |
 | 3.1          | `3.1/stable` (out of support) |
 | 2.1          | `2.1/stable` (out of support) |
-
-> [!TIP]
-> The [Snapcraft Package page](https://snapcraft.io/dotnet-sdk) includes distribution-specific instructions on how to install Snapcraft and .NET.
-
-01. Open a terminal.
-01. Use `snap install` to install the .NET SDK snap package. For example, the following command installs the `latest/stable` channel, which is the default.
-
-    ```bash
-    sudo snap install dotnet-sdk --classic --channel=7.0
-    ```
-
-    - The `--classic` parameter is required.
-    - Use the `--channel` parameter to specify which version to install. If this parameter is omitted, `latest/stable` is used.
-
-The `dotnet` snap alias is automatically created and mapped to the snap package's `dotnet` command.
 
 ## 2. Export the install location
 
@@ -93,7 +92,7 @@ Edit the appropriate source file for your shell and add `export DOTNET_ROOT=/sna
 
 ### The dotnet terminal command doesn't work
 
-Snap packages can map an alias to a command provided by the package. By default, the .NET SDK snap packages create an alias for the `dotnet` command. To map the `dotnet` alias, use the following command:
+Snap packages can map an alias to a command provided by the package. By default, the .NET SDK snap packages create an alias for the `dotnet` command. If the alias wasn't created or was previously removed, the following command shows how to map the alias:
 
 ```bash
 sudo snap alias dotnet-sdk.dotnet dotnet
@@ -123,7 +122,7 @@ It's common for other apps, such as a code IDE or an extension in Visual Studio 
 
 Try the following steps to fix the issue:
 
-01. Making sure that you [export the `DOTNET_ROOT` environment variable permanently](#export-the-environment-variable-permanently), or at least that it's exported to the app that's trying to discover the SDK.
+01. Making sure that you [export the `DOTNET_ROOT` environment variable permanently](#export-the-environment-variable-permanently).
 
 01. Try to symbolic link the snap `dotnet` executable to the location that the program is looking for.
 

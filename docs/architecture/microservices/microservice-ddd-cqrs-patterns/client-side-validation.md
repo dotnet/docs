@@ -21,14 +21,6 @@ The implementation of client-side validation depends on what kind of client appl
 
 ## Additional resources
 
-### Validation in Xamarin mobile apps
-
-- **Validate Text Input and Show Errors** \
-  [https://developer.xamarin.com/recipes/ios/standard\_controls/text\_field/validate\_input/](https://developer.xamarin.com/recipes/ios/standard_controls/text_field/validate_input/)
-
-- **Validation Callback** \
-  <https://developer.xamarin.com/samples/xamarin-forms/XAML/ValidationCallback/>
-
 ### Validation in ASP.NET Core apps
 
 - **Rick Anderson. Adding validation** \

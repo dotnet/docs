@@ -46,9 +46,3 @@ You can install .NET manually in the following ways:
 - [Scripted install](linux-scripted-manual.md#scripted-install)
 
 You may need to install [.NET dependencies](https://github.com/dotnet/core/blob/main/release-notes/8.0/linux-packages.md) if you install .NET manually.
-
-## Next steps
-
-- [How to check if .NET is already installed](how-to-detect-installed-versions.md?pivots=os-linux).
-- [Tutorial: Create a new app with Visual Studio Code](../tutorials/with-visual-studio-code.md).
-- [Tutorial: Containerize a .NET app](../docker/build-container.md).

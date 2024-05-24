@@ -27,7 +27,7 @@ A snap is a bundle of an app and its dependencies that works across many differe
 - Linux distribution that supports snap.
 - `snapd` the snap daemon.
 
-It's possible your Linux distribution already includes snap. Try running `snap` from a terminal. For a list of supported Linux distributions, and instructions on how to install snap, see [Installing `snapd`](https://snapcraft.io/docs/installing-snapd).
+Your Linux distribution might already include snap. Try running `snap` from a terminal to see if the command works. For a list of supported Linux distributions, and instructions on how to install snap, see [Installing `snapd`](https://snapcraft.io/docs/installing-snapd).
 
 ## .NET releases
 

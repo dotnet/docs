@@ -13,7 +13,7 @@ This article describes new features and performance improvements in the .NET run
 
 Two new attributes make it possible to define [feature switches](https://github.com/dotnet/designs/blob/main/accepted/2020/feature-switch.md) that the .NET libraries (and you) can use to toggle areas of functionality. If a feature isn't supported, the unsupported (and thus unused) features are removed when trimming or compiling with Native AOT, which keeps the app size smaller.
 
-- `FeatureSwitchDefinitionAttribute` <!--xref:System.Diagnostics.CodeAnalysis.FeatureSwitchDefinitionAttribute--> is used to treat a feature-switch property as a constant when trimming, and dead code that's guarded by the switch can be removed:
+- <xref:System.Diagnostics.CodeAnalysis.FeatureSwitchDefinitionAttribute> is used to treat a feature-switch property as a constant when trimming, and dead code that's guarded by the switch can be removed:
 
   ```csharp
   if (Feature.IsSupported)
@@ -36,7 +36,7 @@ Two new attributes make it possible to define [feature switches](https://github.
   </ItemGroup>
   ```
 
-- `FeatureGuardAttribute` <!--xref:System.Diagnostics.CodeAnalysis.FeatureGuardAttribute--> is used to treat a feature-switch property as a guard for code annotated with <xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute>, <xref:System.Diagnostics.CodeAnalysis.RequiresAssemblyFilesAttribute>, or <xref:System.Diagnostics.CodeAnalysis.RequiresDynamicCodeAttribute>. For example:
+- <xref:System.Diagnostics.CodeAnalysis.FeatureGuardAttribute> is used to treat a feature-switch property as a guard for code annotated with <xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute>, <xref:System.Diagnostics.CodeAnalysis.RequiresAssemblyFilesAttribute>, or <xref:System.Diagnostics.CodeAnalysis.RequiresDynamicCodeAttribute>. For example:
 
   ```csharp
   if (Feature.IsSupported)

@@ -99,6 +99,8 @@ items:
                     href: ../../core/testing/mstest-analyzers/mstest0021.md
                   - name: MSTEST0022
                     href: ../../core/testing/mstest-analyzers/mstest0022.md
+                  - name: MSTEST0025
+                    href: ../../core/testing/mstest-analyzers/mstest0025.md
               - name: Performance
                 items:
                   - name: Overview
@@ -137,6 +139,8 @@ items:
                     href: ../../core/testing/mstest-analyzers/mstest0023.md
                   - name: MSTEST0024
                     href: ../../core/testing/mstest-analyzers/mstest0024.md
+                  - name: MSTEST0026
+                    href: ../../core/testing/mstest-analyzers/mstest0026.md
       - name: Microsoft Testing Platform
         items:
           - name: Overview
@@ -165,6 +169,8 @@ items:
             href: ../../core/testing/unit-testing-platform-exit-codes.md
           - name: Integration with dotnet test
             href: ../../core/testing/unit-testing-platform-integration-dotnet-test.md
+          - name: Testing platform SDK
+            href: https://github.com/microsoft/testfx/blob/main/docs/testingplatform/Index.md
       - name: Run selective unit tests
         href: ../../core/testing/selective-unit-tests.md
       - name: Order unit tests

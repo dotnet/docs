@@ -21,11 +21,13 @@ items:
   items:
   - name: How generative AI and LLMs work
     href: conceptual/how-genai-and-llms-work.md
+  - name: How agents and copilots work with LLMs
+    href: conceptual/agents.md
   - name: Understand tokens
     href: conceptual/understanding-tokens.md
   - name: Preserve semantic meaning with embeddings
     href: conceptual/embeddings.md
-  - name: Vector databases support semantic memory  
+  - name: Vector databases support semantic memory
     href: conceptual/vector-databases.md
   - name: Prompt engineering
     href: conceptual/prompt-engineering-dotnet.md
@@ -59,3 +61,7 @@ items:
     href: tutorials/tutorial-ai-vector-search.md
   - name: Scale Azure OpenAI with Azure Container Apps
     href: get-started-app-chat-scaling-with-azure-container-apps.md
+- name: Reference
+  items:
+  - name: Ecosystem tools and SDKs
+    href: dotnet-ai-ecosystem.md

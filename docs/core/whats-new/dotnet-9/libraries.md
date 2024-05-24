@@ -86,9 +86,9 @@ KMAC is available on Linux with OpenSSL 3.0 or later, and on Windows 11 Build 26
 
 ### Persisted assemblies
 
-In .NET Core versions and .NET 5-8, support for building an assembly and emitting reflection metadata for dynamically created types was limited to a runnable <xref:System.Reflection.Emit.AssemblyBuilder>. The lack of support for *saving* an assembly was often a blocker for customers migrating from .NET Framework to .NET. .NET 9 adds a new type, `PersistedAssemblyBuilder` <!--<xref:System.Reflection.Emit.AssemblyBuilder.PersistedAssemblyBuilder>-->, that you can use to save an emitted assembly.
+In .NET Core versions and .NET 5-8, support for building an assembly and emitting reflection metadata for dynamically created types was limited to a runnable <xref:System.Reflection.Emit.AssemblyBuilder>. The lack of support for *saving* an assembly was often a blocker for customers migrating from .NET Framework to .NET. .NET 9 adds a new type, <xref:System.Reflection.Emit.PersistedAssemblyBuilder>, that you can use to save an emitted assembly.
 
-To create a `PersistedAssemblyBuilder` instance, call its constructor and pass the assembly name, the core assembly, `System.Private.CoreLib`, to reference base runtime types, and optional custom attributes. After you emit all members to the assembly, call the `PersistedAssemblyBuilder.Save(string assemblyFileName)` <!--<xref:System.Reflection.Emit.AssemblyBuilder.PersistedAssemblyBuilder.Save(System.String)>--> method to create an assembly with default settings. If you want to set the entry point or other options, you can call `PersistedAssemblyBuilder.GenerateMetadata(System.Reflection.Metadata.BlobBuilder,System.Reflection.Metadata.BlobBuilder)` <!--<xref:System.Reflection.Emit.AssemblyBuilder.PersistedAssemblyBuilder.GenerateMetadata(System.Reflection.Metadata.BlobBuilder,System.Reflection.Metadata.BlobBuilder)>--> and use the metadata it returns to save the assembly. The following code shows an example of creating a persisted assembly and setting the entry point.
+To create a `PersistedAssemblyBuilder` instance, call its constructor and pass the assembly name, the core assembly, `System.Private.CoreLib`, to reference base runtime types, and optional custom attributes. After you emit all members to the assembly, call the <xref:System.Reflection.Emit.PersistedAssemblyBuilder.Save(System.String)?displayProperty=nameWithType> method to create an assembly with default settings. If you want to set the entry point or other options, you can call <xref:System.Reflection.Emit.PersistedAssemblyBuilder.GenerateMetadata%2A?displayProperty=nameWithType> and use the metadata it returns to save the assembly. The following code shows an example of creating a persisted assembly and setting the entry point.
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Reflection.cs" id="SaveAssembly":::
 
@@ -109,11 +109,3 @@ The following code shows an example of calling the `double` and one of the new i
 ### `ActivatorUtilities.CreateInstance` constructor
 
 The constructor resolution for <xref:Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance%2A?displayProperty=nameWithType> has changed in .NET 9. Previously, a constructor that was explicitly marked using the <xref:Microsoft.Extensions.DependencyInjection.ActivatorUtilitiesConstructorAttribute> attribute might not be called, depending on the ordering of constructors and the number of constructor parameters. The logic has changed in .NET 9 such that a constructor that has the attribute is always called.
-
-## Diagnostics
-
-### New Activity.AddLink method
-
-Previously, you could only link a tracing <xref:System.Diagnostics.Activity> to other tracing contexts when you [created the `Activity`](xref:System.Diagnostics.ActivitySource.CreateActivity(System.String,System.Diagnostics.ActivityKind,System.Diagnostics.ActivityContext,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}},System.Collections.Generic.IEnumerable{System.Diagnostics.ActivityLink},System.Diagnostics.ActivityIdFormat)?displayProperty=nameWithType). New in .NET 9, the `Activity.AddLink(System.Diagnostics.ActivityLink)` <!--<xref:System.Diagnostics.Activity.AddLink(System.Diagnostics.ActivityLink)>--> API lets you link an `Activity` object to other tracing contexts after it's created. This change aligns with the [OpenTelemetry specifications](https://github.com/open-telemetry/opentelemetry-specification/blob/6360b49d20ae451b28f7ba0be168ed9a799ac9e1/specification/trace/api.md?plain=1#L804) as well.
-
-:::code language="csharp" source="../snippets/dotnet-9/csharp/Diagnostics.cs" id="AddLink":::

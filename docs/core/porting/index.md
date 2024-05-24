@@ -141,14 +141,6 @@ The `try-convert` tool is a .NET global tool that can convert a project or entir
 
 For more information, see the [`try-convert` GitHub repository](https://github.com/dotnet/try-convert).
 
-### .NET Portability Analyzer
-
-The .NET Portability Analyzer is a tool that analyzes assemblies and provides a detailed portability report. It reports .NET APIs that are missing in the applications or libraries to be ported on your specified targeted .NET platforms.
-
-To use the .NET Portability Analyzer in Visual Studio, install the [extension from the marketplace](https://marketplace.visualstudio.com/items?itemName=ConnieYau.NETPortabilityAnalyzer).
-
-For more information, see [The .NET Portability Analyzer](../../standard/analyzers/portability-analyzer.md).
-
 ### Platform compatibility analyzer
 
 The [Platform compatibility analyzer](../../standard/analyzers/platform-compat-analyzer.md) analyzes whether or not you're using an API that throws a <xref:System.PlatformNotSupportedException> at run time. Although finding one of these APIs is unlikely if you're moving from .NET Framework 4.7.2 or higher, it's good to check. For more information about APIs that throw exceptions on .NET, see [APIs that always throw exceptions on .NET Core](../compatibility/unsupported-apis.md).

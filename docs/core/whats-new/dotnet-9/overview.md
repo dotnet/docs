@@ -15,7 +15,7 @@ New for .NET 9, the engineering team posts .NET 9 preview updates on [GitHub Dis
 
 ## .NET runtime
 
-The .NET 9 runtime includes a new attribute model for feature switches with trimming support. The new attributes make it possible to define [feature switches](https://github.com/dotnet/designs/blob/main/accepted/2020/feature-switch.md) that the libraries can use to toggle areas of functionality.
+The .NET 9 runtime includes a new attribute model for feature switches with trimming support. The new attributes make it possible to define [feature switches](https://github.com/dotnet/designs/blob/main/accepted/2020/feature-switch.md) that libraries can use to toggle areas of functionality.
 
 The runtime also includes numerous performance improvements in the following areas:
 
@@ -29,15 +29,15 @@ For more information, see [What's new in the .NET 9 runtime](runtime.md).
 
 ## .NET libraries
 
-<xref:System.Text.Json> has new options that let you customize the indentation character and indentation size of written JSON. It also includes a new <xref:System.Text.Json.JsonSerializerOptions.Web?displayProperty=nameWithType> singleton that makes it easier to serialize using web defaults.
+<xref:System.Text.Json> has new options that let you customize the indentation character and size of written JSON. It also includes a new <xref:System.Text.Json.JsonSerializerOptions.Web?displayProperty=nameWithType> singleton that makes it easier to serialize using web defaults.
 
 In LINQ, the new methods <xref:System.Linq.Enumerable.CountBy%2A> and <xref:System.Linq.Enumerable.AggregateBy%2A> make it possible to aggregate state by key without needing to allocate intermediate groupings via <xref:System.Linq.Enumerable.GroupBy%2A>.
 
-For collection types, the <xref:System.Collections.Generic.PriorityQueue%602?displayProperty=fullName> collection type includes a new <xref:System.Collections.Generic.PriorityQueue%602.Remove(%600,%600@,%601@,System.Collections.Generic.IEqualityComparer{%600})> method that you can use to *update* the priority of an item in the queue.
+For collection types, the <xref:System.Collections.Generic.PriorityQueue%602?displayProperty=fullName> type includes a new <xref:System.Collections.Generic.PriorityQueue%602.Remove(%600,%600@,%601@,System.Collections.Generic.IEqualityComparer{%600})> method that you can use to *update* the priority of an item in the queue.
 
 For cryptography, .NET 9 adds a new one-shot hash method on the <xref:System.Security.Cryptography.CryptographicOperations> type. It also adds new classes that use the KMAC algorithm.
 
-In the reflection area, the new <xref:System.Reflection.Emit.PersistedAssemblyBuilder> type lets you *save* an emitted assembly. This new class also includes PDB support, meaning you can emit symbol info and use it to debug a generated assembly.
+For reflection, the new <xref:System.Reflection.Emit.PersistedAssemblyBuilder> type lets you *save* an emitted assembly. This new class also includes PDB support, meaning you can emit symbol info and use it to debug a generated assembly.
 
 The <xref:System.TimeSpan> class includes new `From*` methods that let you create a `TimeSpan` object from an `int` (instead of a `double`). These methods help to avoid errors caused by inherent imprecision in floating-point calculations.
 
@@ -45,13 +45,17 @@ For more information, see [What's new in the .NET 9 libraries](libraries.md).
 
 ## .NET SDK
 
-The .NET 9 SDK includes improvements to unit testing, including better integration with MSBuild that allows you to run tests in parallel. For tools, a new option for [`dotnet tool install`](../../tools/dotnet-tool-install.md) lets *users* decide whether a tool is allowed to run on a newer .NET runtime version than the version the tool targets. Also, the terminal logger is now enabled by default and also has improved usability, including summarizing the total count of failures and warnings at the end of a build.
+The .NET 9 SDK includes improvements to unit testing, including better integration with MSBuild that allows you to run tests in parallel.
+
+For tools, a new option for [`dotnet tool install`](../../tools/dotnet-tool-install.md) lets users (instead of tool authors) decide whether a tool is allowed to run on a newer .NET runtime version than the version the tool targets.
+
+The terminal logger is now enabled by default and also has improved usability. For example, the total count of failures and warnings is now summarized at the end of a build.
 
 For more information, see [What's new in the SDK for .NET 9](sdk.md).
 
 ## ML.NET
 
-ML.NET is an open-source, cross-platform machine learning framework for .NET developers that enables integration of custom machine learning models into .NET applications. The latest version, ML.NET 4.0, adds [additional tokenizer support](../../../machine-learning/whats-new/overview.md#additional-tokenizer-support) for tokenizers such as Tiktoken and models such as Llama and CodeGen.
+ML.NET is an open-source, cross-platform framework that enables integration of custom machine-learning models into .NET applications. The latest version, ML.NET 4.0, adds [additional tokenizer support](../../../machine-learning/whats-new/overview.md#additional-tokenizer-support) for tokenizers such as Tiktoken and models such as Llama and CodeGen. <!--Add info about `Tensor<T>` here and in what's new for ML.NET.-->
 
 ## .NET Aspire
 
@@ -63,7 +67,7 @@ ASP.NET Core includes improvements to Blazor, SignalR, minimal APIs, OpenAPI, an
 
 ## .NET MAUI
 
-The focus of .NET Multi-platform App UI (.NET MAUI) in .NET 9 is to improve product quality. For more information about that and the new features, see [What's new in .NET MAUI for .NET 9](/dotnet/maui/whats-new/dotnet-9).
+The focus of .NET Multi-platform App UI (.NET MAUI) in .NET 9 is to improve product quality. For more information about that and new features, see [What's new in .NET MAUI for .NET 9](/dotnet/maui/whats-new/dotnet-9).
 
 ## EF Core
 

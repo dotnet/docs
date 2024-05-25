@@ -121,7 +121,8 @@ When you install with a package manager, these libraries are installed for you. 
 - libicu63 (for 10.x)
 - libicu67 (for 11.x)
 - libicu72 (for 12.x)
-- libssl1.1
+- libssl1.1 (for 10.x and 11.x)
+- libssl3 (for 12.x)
 - libstdc++6
 - zlib1g
 

@@ -114,14 +114,33 @@ If you're using a Debian version prior to 12, try the following commands:
 
 When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you'll need to make sure these libraries are installed:
 
+### 10.x
+
 - libc6
-- libgcc1 (for 10.x)
-- libgcc-s1 (for 11.x and 12.x)
+- libgcc1
 - libgssapi-krb5-2
-- libicu63 (for 10.x)
-- libicu67 (for 11.x)
-- libicu72 (for 12.x)
+- libicu63
 - libssl1.1
+- libstdc++6
+- zlib1g
+
+### 11.x
+
+- libc6
+- libgcc-s1
+- libgssapi-krb5-2
+- libicu67
+- libssl1.1
+- libstdc++6
+- zlib1g
+
+### 12.x
+
+- libc6
+- libgcc-s1
+- libgssapi-krb5-2
+- libicu72
+- libssl3
 - libstdc++6
 - zlib1g
 

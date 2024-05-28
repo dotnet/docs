@@ -39,6 +39,21 @@ configuration:
       then:
       - addLabel:
           label: community-contribution
+    - description: Label main to live PRs
+      triggerOnOwnActions: true
+      if:
+      - payloadType: Pull_Request
+      - isAction:
+          action: Opened
+      - isActivitySender:
+          user: dotnet-policy-service
+          issueAuthor: False
+      - titleContains:
+          pattern: Merge main into live
+          isRegex: False
+      then:
+      - addLabel:
+          label: ':octocat: auto-merge'
     - description: Label PRs from the Azure SDK bot
       if:
       - payloadType: Pull_Request

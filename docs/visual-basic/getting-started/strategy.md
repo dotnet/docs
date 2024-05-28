@@ -7,7 +7,7 @@ ms.date: 02/06/2023
 
 The following statements define the .NET team's strategy in making decisions about the evolution of Visual Basic.
 
-[!INCLUDE [visual-basic](../../../includes/Visual Basic-strategy.md)]
+[!INCLUDE [visual-basic](../../../includes/vb-strategy.md)]
 
 ## How strategy guides Visual Basic evolution
 

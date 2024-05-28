@@ -16,7 +16,7 @@ The following table summarizes the binary arithmetic operators that are availabl
 |`+` (addition, plus)|Unchecked. Possible overflow condition when numbers are added together and the sum exceeds the maximum absolute value supported by the type.|
 |`-` (subtraction, minus)|Unchecked. Possible underflow condition when unsigned types are subtracted, or when floating-point values are too small to be represented by the type.|
 |`*` (multiplication, times)|Unchecked. Possible overflow condition when numbers are multiplied and the product exceeds the maximum absolute value supported by the type.|
-|`/` (division, divided by)|Division by zero causes a <xref:System.DivideByZeroException> for integral types. For floating-point types, division by zero gives you the special floating-point values `+Infinity` or `-Infinity`. There is also a possible underflow condition when a floating-point number is too small to be represented by the type.|
+|`/` (division, divided by)|Division by zero causes a <xref:System.DivideByZeroException> for integral types. For floating-point types, division by zero gives you the special floating-point values `infinity` or `-infinity`. There is also a possible underflow condition when a floating-point number is too small to be represented by the type.|
 |`%` (remainder, rem)|Returns the remainder of a division operation. The sign of the result is the same as the sign of the first operand.|
 |`**` (exponentiation, to the power of)|Possible overflow condition when the result exceeds the maximum absolute value for the type.<br /><br />The exponentiation operator works only with floating-point types.|
 

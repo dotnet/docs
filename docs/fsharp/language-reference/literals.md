@@ -109,3 +109,31 @@ let valueAsBits = 0b1101_1110_1010_1101_1011_1110_1110_1111
 
 let exampleSSN = 123_45_6789
 ```
+
+## Special floating-point infinity values
+
+Both the `float` and `single` floating-point numeric types have associated special values representing positive and negative infinity.
+
+| F# value                    | F# type  | Corresponding .NET value              |
+| --------------------------- | -------- | ------------------------------------- |
+| `infinity` or `+infinity`   | `float`  | <xref:System.Double.PositiveInfinity> |
+| `-infinity`                 | `float`  | <xref:System.Double.NegativeInfinity> |
+| `infinityf` or `+infinityf` | `single` | <xref:System.Single.PositiveInfinity> |
+| `-infinityf`                | `single` | <xref:System.Single.NegativeInfinity> |
+
+These values can be used directly or are returned when dividing by a floating-point zero or a number too small to be represented by the given type. For example:
+
+```console
+> 1.0/0.0;;
+val it: float = infinity
+
+> 1.0/(-0.0);;
+val it: float = -infinity
+
+> 1.0/0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001
+;;
+val it: float = infinity
+```

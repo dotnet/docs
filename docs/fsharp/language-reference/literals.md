@@ -23,9 +23,9 @@ The following table shows the literal types in F#. Characters that represent dig
 |unativeint|native pointer as an unsigned natural number|un|`0x00002D3Fun`|
 |int64|signed 64-bit integer|L|`86L`|
 |uint64|unsigned 64-bit natural number|UL|`86UL`|
-|single, float32|32-bit floating point number|F or f|`4.14F` or `4.14f`|
+|single, float32|32-bit floating point number|F or f|`4.14F` or `4.14f` or `infinityf` or `-infinityf`|
 |||lf|`0x00000000lf`|
-|float; double|64-bit floating point number|none|`4.14` or `2.3E+32` or `2.3e+32`|
+|float; double|64-bit floating point number|none|`4.14` or `2.3E+32` or `2.3e+32` or `infinity` or `-infinity`|
 |||LF|`0x0000000000000000LF`|
 |bigint|integer not limited to 64-bit representation|I|`9999999999999999999999999999I`|
 |decimal|fractional number represented as a fixed point or rational number|M or m|`0.7833M` or `0.7833m`|

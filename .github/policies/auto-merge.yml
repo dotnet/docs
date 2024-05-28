@@ -19,26 +19,29 @@ configuration:
       then:
       - enableAutoMerge:
           mergeMethod: Squash
-    - description: Auto-merge PRs to live with title "Merge main into live"
-      triggerOnOwnActions: true
-      if:
-      - payloadType: Pull_Request
-      - isAction:
-          action: Opened
-      - titleContains:
-          pattern: Merge main into live
-          isRegex: False
-      - targetsBranch:
-          branch: live
-      then:
-      - enableAutoMerge:
-          mergeMethod: Merge
     - description: Auto-merge PRs to live labeled with auto-merge
       triggerOnOwnActions: true
       if:
       - payloadType: Pull_Request
       - labelAdded:
           label: ':octocat: auto-merge'
+      - targetsBranch:
+          branch: live
+      then:
+      - enableAutoMerge:
+          mergeMethod: Merge
+    - description: Auto-merge PRs to live with title "Merge main into live"
+      triggerOnOwnActions: true
+      if:
+      - payloadType: Pull_Request
+      - isAction:
+          action: Opened
+      - isActivitySender:
+          user: dotnet-policy-service
+          issueAuthor: False
+      - titleContains:
+          pattern: Merge main into live
+          isRegex: False
       - targetsBranch:
           branch: live
       then:
@@ -51,3 +54,4 @@ configuration:
           label: ':octocat: auto-merge'
       then:
       - disableAutoMerge
+

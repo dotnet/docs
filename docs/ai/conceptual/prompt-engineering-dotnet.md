@@ -13,7 +13,7 @@ ms.date: 04/10/2024
 
 This article covers GPT prompt engineering for .NET, including Semantic Kernel and Azure OpenAI.
 
-GPT models from OpenAI are prompt-based: they respond to user input text (a prompt) with the most likely series of words to follow (a completion). The completion format in earlier GPT models is text generated in response to a prompt, producing a more free-form interaction. Newer GPT models produce a chat completion in message form, with messages based on roles (system, user, assistant) and chat history to preserve conversations.
+GPT models from OpenAI are prompt-based, meaning they respond to user input text (a prompt) with the most likely series of words to follow (a completion). The completion format in earlier GPT models is text generated in response to a prompt, producing a more free-form interaction. Newer GPT models produce a chat completion in message form, with messages based on roles (system, user, assistant) and chat history to preserve conversations.
 
 Consider this text generation example where *prompt* is the user input and *completion* is the model output:
 
@@ -23,9 +23,9 @@ Prompt:
 Completion:
 _"Pedro Lascurain."_
 
-Looks right, but what if your app is supposed to help U.S. history students? Pedro Lascurain's 45-minute term is the shortest term for any president, but he served Mexico&mdash;the students are probably looking for _"William Henry Harrsion."_ Clearly, the app could be more helpful to its intended users if you gave it some context.
+Looks right, but what if your app is supposed to help U.S. history students? Pedro Lascurain's 45-minute term is the shortest term for any president, but he served Mexico&mdash;the students are probably looking for *"William Henry Harrsion"*. Clearly, the app could be more helpful to its intended users if you gave it some context.
 
-That's the basic idea of prompt engineering: you add context to the prompt to help the model produce better completions. You can do this by giving the model [*instructions*](#use-instructions-to-tell-the-model-what-to-do), [*examples*](#examples-show-the-model-what-to-do), and [*cues*](#cues).
+The basic idea of prompt engineering: you add context to the prompt to help the model produce better completions. You can do this by giving the model [*instructions*](#use-instructions-to-tell-the-model-what-to-do), [*examples*](#examples-show-the-model-what-to-do), and [*cues*](#cues).
 
 GPT models that support text generation don't require any specific format, but you should organize your prompts so it's clear what's an instruction and what's an example. GPT models that support chat-based apps use three roles to organize completions: a system role that controls the chat, a user role to represent user input, and an assistant role for responding to users. You divide your prompts into messages for each role:
 
@@ -51,7 +51,7 @@ Because they're open-ended, directives are more flexible than imperatives:
 - Instructions usually work better when you use them with examples. However, because imperatives are unambiguous commands, models don't need examples to understand them (though you might use an example to show the model how to format responses). Because a directive doesn't tell the model exactly what to do, each example can help the model work better.
 - It's usually better to break down a difficult instruction into a series of steps, which you can do with a sequence of directives. You should also tell the model to output the result of each step, so that you can easily make granular adjustments. Although you can break down the instruction into steps yourself, it's easier to just tell the model to do it, and to output the result of each step. This approach is called *chain of thought prompting*.
 
-### Primary content and supporting content add context to instructions
+### Primary and supporting content add context to instructions
 
 You can add content to add more context to instructions.
 

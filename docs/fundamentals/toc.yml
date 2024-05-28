@@ -45,6 +45,12 @@ items:
                 href: ../core/install/linux-sles.md
               - name: Installation script & binaries
                 href: ../core/install/linux-scripted-manual.md
+              - name: Install with Snap
+                items:
+                  - name: Runtime
+                    href: ../core/install/linux-snap-runtime.md
+                  - name: SDK
+                    href: ../core/install/linux-snap-sdk.md
           - name: Upgrade to a new .NET version
             href: ../core/install/upgrade.md
           - name: Remove outdated runtimes and SDKs

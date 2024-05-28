@@ -1,8 +1,8 @@
 ---
-title: "Tutorial: Evaluate an LLM's Prompt Completions"
+title: "Tutorial: Evaluate an LLM's prompt completions"
 description: "Evaluate the coherence, relevance, and groundedness of an LLM's prompt completions using Azure OpenAI and the Semantic Kernel SDK for .NET."
 author: haywoodsloan
-ms.topic: tutorial 
+ms.topic: tutorial
 ms.date: 05/08/2024
 
 #customer intent: As a .NET developer, I want to evaluate an LLM's prompt completions using .NET so that I can choose an LLM for my .NET application that fits my use case.
@@ -128,11 +128,11 @@ Once you've curated the question-answer pairs, the evaluation application can us
 
 1. Select **List of QAs from a file**, then press <kbd>Enter</kbd>.
 
-    :::image type="content" source="../media/llm-eval/eval-app-test-scenario.png" lightbox="../media/llm-eval/eval-app-test-scenario.png" alt-text="Scenario selection step of the Evaluation Application":::
+    :::image type="content" source="../media/llm-eval/eval-app-test-scenario.png" lightbox="../media/llm-eval/eval-app-test-scenario.png" alt-text="List of steps of the Evaluation Application with 'List of QAs from a file' selected":::
 
 1. The evaluation results are printed in a table format.
 
-    :::image type="content" source="../media/llm-eval/eval-app-test-output.png" lightbox="../media/llm-eval/eval-app-test-output.png" alt-text="Scenario selection step of the Evaluation Application":::
+    :::image type="content" source="../media/llm-eval/eval-app-test-output.png" lightbox="../media/llm-eval/eval-app-test-output.png" alt-text="Table showing the output of the Evaluation Application":::
 
 ## 5 - Review the evaluation results
 

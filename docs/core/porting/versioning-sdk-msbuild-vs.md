@@ -34,13 +34,14 @@ The support timeframe for the SDK typically matches that of the Visual Studio ve
 | 6.0.2xx          | 17.1               | Feb '22      | May '22   |
 | 6.0.3xx          | 17.2<sup>3</sup>   | May '22      | Oct '23   |
 | 6.0.4xx          | 17.3               | Aug '22      | Nov '24<sup>2</sup>   |
-| 7.0.1xx          | 17.4               | Nov '22      | May '24<sup>1</sup>   |
+| 7.0.1xx          | 17.4               | Nov '22      | May '24   |
 | 7.0.2xx          | 17.5<sup>3</sup>   | Feb '23      | May '23   |
 | 7.0.3xx          | 17.6               | May '23      | May '24   |
-| 7.0.4xx          | 17.7               | Aug '23      | May '24<sup>2</sup>   |
-| 8.0.1xx          | 17.8               | Nov '23      | TBD       |
-| 8.0.2xx          | 17.9<sup>3</sup>   | Feb '24      | TBD       |
+| 7.0.4xx          | 17.7               | Aug '23      | May '24   |
+| 8.0.1xx          | 17.8               | Nov '23      | Nov '25<sup>1</sup>    |
+| 8.0.2xx          | 17.9<sup>3</sup>   | Feb '24      | May '24   |
 | 8.0.3xx          | 17.10              | May '24      | TBD       |
+| 8.0.4xx          | 17.11              | Aug '24      | Nov '25<sup>2</sup>       |
 
 > [!NOTE]
 > Targeting `net6.0` is officially supported in Visual Studio 17.0+ only.
@@ -78,6 +79,7 @@ Starting with .NET SDK 7.0.100 and .NET SDK 6.0.300, a policy has been put into 
 | 8.0.100 | 17.8 | 17.7 | Net7.0 | Net8.0 |
 | 8.0.200 | 17.9 | 17.8 | Net8.0 | Net8.0 |
 | 8.0.300 | 17.10 | 17.8 | Net8.0 | Net8.0 |
+| 8.0.400 | 17.11 | 17.8 | Net8.0 | Net8.0 |
 
 > [!NOTE]
 > The table depicts how these versioning rules will be applied going forward, starting with .NET SDK 7.0.100 and .NET SDK 6.0.300. It also depicts how the policy would have applied to previously shipped versions of the .NET SDK, had it been in place then. However, the requirements for previous versions of the SDK don't change&mdash;that is, the minimum required version of Visual Studio for .NET SDK 6.0.100 or 6.0.200 remains 16.10.
@@ -95,6 +97,9 @@ Major versions of the .NET SDK are typically released within a few days of a Vis
 | 9.0.100 Preview 1 | 17.10 Preview 1 |
 | 9.0.100 Preview 2 | 17.10 Preview 2 |
 | 9.0.100 Preview 3 | 17.10 Preview 3 |
+| 9.0.100 Preview 4 | 17.11 Preview 1 |
+| 9.0.100 Preview 5 | 17.11 Preview 2 |
+| 9.0.100 Preview 6 | 17.11 Preview 3 |
 
 ## Reference
 

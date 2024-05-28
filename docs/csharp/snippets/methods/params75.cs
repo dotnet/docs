@@ -4,7 +4,7 @@ static class ParamsExample
     static void Main()
     {
         string fromArray = GetVowels(["apple", "banana", "pear"]);
-        Console.WriteLine($"Vowels from array: '{fromArray}'");
+        Console.WriteLine($"Vowels from collection expression: '{fromArray}'");
 
         string fromMultipleArguments = GetVowels("apple", "banana", "pear");
         Console.WriteLine($"Vowels from multiple arguments: '{fromMultipleArguments}'");
@@ -16,9 +16,9 @@ static class ParamsExample
         Console.WriteLine($"Vowels from no value: '{fromNoValue}'");
     }
 
-    static string GetVowels(params string[]? input)
+    static string GetVowels(params IEnumerable<string>? input)
     {
-        if (input == null || input.Length == 0)
+        if (input == null || !input.Any())
         {
             return string.Empty;
         }

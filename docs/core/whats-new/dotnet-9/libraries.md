@@ -2,12 +2,12 @@
 title: What's new in .NET libraries for .NET 9
 description: Learn about the new .NET libraries features introduced in .NET 9.
 titleSuffix: ""
-ms.date: 04/11/2024
+ms.date: 05/21/2024
 ms.topic: whats-new
 ---
 # What's new in .NET libraries for .NET 9
 
-This article describes new features in the .NET libraries for .NET 9. It's been updated for .NET 9 Preview 3.
+This article describes new features in the .NET libraries for .NET 9. It's been updated for .NET 9 Preview 4.
 
 ## Serialization
 
@@ -84,13 +84,19 @@ KMAC is available on Linux with OpenSSL 3.0 or later, and on Windows 11 Build 26
 
 ## Reflection
 
-In .NET Core versions and .NET 5-8, support for building an assembly and emitting reflection metadata for dynamically created types was limited to a runnable <xref:System.Reflection.Emit.AssemblyBuilder>. The lack of support for *saving* an assembly was often a blocker for customers migrating from .NET Framework to .NET. .NET 9 adds a new type, `PersistedAssemblyBuilder` <!--<xref:System.Reflection.Emit.AssemblyBuilder.PersistedAssemblyBuilder>-->, that you can use to save an emitted assembly.
+### Persisted assemblies
 
-To create a `PersistedAssemblyBuilder` instance, call its constructor and pass the assembly name, the core assembly, `System.Private.CoreLib`, to reference base runtime types, and optional custom attributes. After you emit all members to the assembly, call the `PersistedAssemblyBuilder.Save(string assemblyFileName)` <!--<xref:System.Reflection.Emit.AssemblyBuilder.PersistedAssemblyBuilder.Save(System.String)>--> method to create an assembly with default settings. If you want to set the entry point or other options, you can call `PersistedAssemblyBuilder.GenerateMetadata(System.Reflection.Metadata.BlobBuilder,System.Reflection.Metadata.BlobBuilder)` <!--<xref:System.Reflection.Emit.AssemblyBuilder.PersistedAssemblyBuilder.GenerateMetadata(System.Reflection.Metadata.BlobBuilder,System.Reflection.Metadata.BlobBuilder)>--> and use the metadata it returns to save the assembly. The following code shows an example of creating a persisted assembly and setting the entry point.
+In .NET Core versions and .NET 5-8, support for building an assembly and emitting reflection metadata for dynamically created types was limited to a runnable <xref:System.Reflection.Emit.AssemblyBuilder>. The lack of support for *saving* an assembly was often a blocker for customers migrating from .NET Framework to .NET. .NET 9 adds a new type, <xref:System.Reflection.Emit.PersistedAssemblyBuilder>, that you can use to save an emitted assembly.
+
+To create a `PersistedAssemblyBuilder` instance, call its constructor and pass the assembly name, the core assembly, `System.Private.CoreLib`, to reference base runtime types, and optional custom attributes. After you emit all members to the assembly, call the <xref:System.Reflection.Emit.PersistedAssemblyBuilder.Save(System.String)?displayProperty=nameWithType> method to create an assembly with default settings. If you want to set the entry point or other options, you can call <xref:System.Reflection.Emit.PersistedAssemblyBuilder.GenerateMetadata%2A?displayProperty=nameWithType> and use the metadata it returns to save the assembly. The following code shows an example of creating a persisted assembly and setting the entry point.
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Reflection.cs" id="SaveAssembly":::
 
-## New TimeSpan.From\* overloads
+The new <xref:System.Reflection.Emit.PersistedAssemblyBuilder> class includes PDB support. You can emit symbol info and use it to debug a generated assembly. The API has a similar shape to the .NET Framework implementation. For more information, see [Emit symbols and generate PDB](../../../fundamentals/runtime-libraries/system-reflection-emit-persistedassemblybuilder.md#emit-symbols-and-generate-pdb).
+
+## Date and time
+
+### New TimeSpan.From\* overloads
 
 The <xref:System.TimeSpan> class offers several `From*` methods that let you create a `TimeSpan` object using a `double`. However, since `double` is a binary-based floating-point format, [inherent imprecision can lead to errors](https://github.com/dotnet/runtime/issues/93890). For instance, `TimeSpan.FromSeconds(101.832)` might not precisely represent `101 seconds, 832 milliseconds`, but rather approximately `101 seconds, 831.9999999999936335370875895023345947265625 milliseconds`. This discrepancy has caused frequent confusion, and it's also not the most efficient way to represent such data. To address this, .NET 9 adds new overloads that let you create `TimeSpan` objects from integers. There are new overloads from `FromDays`, `FromHours`, `FromMinutes`, `FromSeconds`, `FromMilliseconds`, and `FromMicroseconds`.
 
@@ -98,6 +104,8 @@ The following code shows an example of calling the `double` and one of the new i
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/TimeSpan.cs" id="TimeSpan.From":::
 
-## `ActivatorUtilities.CreateInstance` constructor
+## Dependency injection
+
+### `ActivatorUtilities.CreateInstance` constructor
 
 The constructor resolution for <xref:Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance%2A?displayProperty=nameWithType> has changed in .NET 9. Previously, a constructor that was explicitly marked using the <xref:Microsoft.Extensions.DependencyInjection.ActivatorUtilitiesConstructorAttribute> attribute might not be called, depending on the ordering of constructors and the number of constructor parameters. The logic has changed in .NET 9 such that a constructor that has the attribute is always called.

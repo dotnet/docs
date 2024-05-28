@@ -8,7 +8,9 @@ where:
 configuration:
   resourceManagementConfiguration:
     eventResponderTasks:
-    - if:
+    - description: Auto-squash-merge PRs to main labeled with auto-merge
+      triggerOnOwnActions: true
+      if:
       - payloadType: Pull_Request
       - labelAdded:
           label: ':octocat: auto-merge'
@@ -17,9 +19,23 @@ configuration:
       then:
       - enableAutoMerge:
           mergeMethod: Squash
+    - description: Auto-merge PRs to live with title "Merge main into live"
       triggerOnOwnActions: true
-      description: Auto-squash-merge PRs to main labeled with auto-merge
-    - if:
+      if:
+      - payloadType: Pull_Request
+      - isAction:
+          action: Opened
+      - titleContains:
+          pattern: Merge main into live
+          isRegex: False
+      - targetsBranch:
+          branch: live
+      then:
+      - enableAutoMerge:
+          mergeMethod: Merge
+    - description: Auto-merge PRs to live labeled with auto-merge
+      triggerOnOwnActions: true
+      if:
       - payloadType: Pull_Request
       - labelAdded:
           label: ':octocat: auto-merge'
@@ -28,12 +44,10 @@ configuration:
       then:
       - enableAutoMerge:
           mergeMethod: Merge
-      triggerOnOwnActions: true
-      description: Auto-merge PRs to live labeled with auto-merge
-    - if:
+    - description: Don't auto-merge PRs with auto-merge label removed
+      if:
       - payloadType: Pull_Request
       - labelRemoved:
           label: ':octocat: auto-merge'
       then:
       - disableAutoMerge
-      description: Don't auto-merge PRs with auto-merge label removed

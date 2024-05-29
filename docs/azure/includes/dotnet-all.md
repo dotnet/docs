@@ -461,7 +461,7 @@
 | Functions Extensions - Cosmos DB Mongo | NuGet [1.0.2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.CosmosDb.Mongo/1.0.2) |  |  |
 | Functions Extensions - Dapr | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Dapr/1.0.0) |  |  |
 | Functions Extensions - Dapr Core | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Extensions.Dapr.Core/1.0.0) |  |  |
-| Functions Extensions - HTTP AspNet Core | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore/1.3.0) |  |  |
+| Functions Extensions - HTTP AspNet Core | NuGet [1.3.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore/1.3.1) |  |  |
 | Functions Extensions - Redis | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Redis/1.0.0) |  |  |
 | Functions Extensions - Redis | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Redis/1.0.0) |  |  |
 | Functions Extensions - Worker Extentions | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Dapr/1.0.0) |  |  |

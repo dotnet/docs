@@ -2,7 +2,7 @@
 title: ".NET regular expression source generators"
 description: Learn how to use regular expression source generators to optimize the performance of matching algorithms in .NET.
 ms.topic: conceptual
-ms.date: 04/19/2024
+ms.date: 05/29/2024
 author: IEvangelist
 ms.author: dapine
 zone_pivot_groups: dotnet-version-7-8
@@ -78,7 +78,7 @@ You can set breakpoints in it, you can step through it, and you can use it as a 
 
 ## Inside the source-generated files
 
-With .NET 7, both the source generator and `RegexCompiler` were almost entirely rewritten, fundamentally changing the structure of the generated code. This approach has been extended to handle all constructs (with one caveat), and both `RegexCompiler` and the source generator still map mostly 1:1 with each other, following the new approach. Consider the source generator output for one of the primary functions from the `(a|bc)d` expression:
+With .NET 7, both the source generator and `RegexCompiler` were almost entirely rewritten, fundamentally changing the structure of the generated code. This approach has been extended to handle all constructs (with one caveat), and both `RegexCompiler` and the source generator still map mostly 1:1 with each other, following the new approach. Consider the source generator output for one of the primary functions from the `abc|def` expression:
 
 :::zone pivot="dotnet-8-0"
 

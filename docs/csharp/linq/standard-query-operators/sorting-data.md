@@ -1,11 +1,13 @@
 ---
 title: "Sorting Data"
 description: Learn about sort operations and the standard query operator methods that perform sort operations in LINQ in C#.  
-ms.date: 01/22/2024
+ms.date: 05/29/2024
 ---
 # Sorting Data (C#)
 
 A sorting operation orders the elements of a sequence based on one or more attributes. The first sort criterion performs a primary sort on the elements. By specifying a second sort criterion, you can sort the elements within each primary sort group.
+
+[!INCLUDE [Prerequisites](../includes/linq-syntax.md)]
 
 The following illustration shows the results of an alphabetical sort operation on a sequence of characters:
 

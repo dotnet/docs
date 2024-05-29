@@ -1,11 +1,13 @@
 ---
 title: "Converting Data Types"
 description: Conversion methods change the type of input objects. See conversion operations in LINQ queries in C#, such as Enumerable.AsEnumerable and Enumerable.OfType.
-ms.date: 02/14/2024
+ms.date: 05/29/2024
 ---
 # Converting Data Types (C#)
 
 Conversion methods change the type of input objects.
+
+[!INCLUDE [Prerequisites](../includes/linq-syntax.md)]
 
 Conversion operations in LINQ queries are useful in various applications. Following are some examples:
 

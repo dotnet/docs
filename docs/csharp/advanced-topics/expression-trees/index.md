@@ -24,8 +24,6 @@ You can have the C# or Visual Basic compiler create an expression tree for you b
 
 When a lambda expression is assigned to a variable of type <xref:System.Linq.Expressions.Expression%601>, the compiler emits code to build an expression tree that represents the lambda expression.
 
-The C# compiler generates expression trees only from expression lambdas (or single-line lambdas). It can't parse statement lambdas (or multi-line lambdas). For more information about lambda expressions in C#, see [Lambda Expressions](../../language-reference/operators/lambda-expressions.md).
-
 The following code examples demonstrate how to have the C# compiler create an expression tree that represents the lambda expression `num => num < 5`.
 
 ```csharp
@@ -39,6 +37,8 @@ Expression trees are  immutable. If you want to modify an expression tree, you m
 Once you build an expression tree, you [execute the code represented by the expression tree](expression-trees-execution.md).
 
 ## Limitations
+
+The C# compiler generates expression trees only from expression lambdas (or single-line lambdas). It can't parse statement lambdas (or multi-line lambdas). For more information about lambda expressions in C#, see [Lambda Expressions](../../language-reference/operators/lambda-expressions.md).
 
 There are some newer C# language elements that don't translate well into expression trees. Expression trees can't contain `await` expressions, or `async` lambda expressions. Many of the features added in C# 6 and later don't appear exactly as written in expression trees. Instead, newer features are exposed in expression trees in the equivalent, earlier syntax, where possible. Other constructs aren't available. It means that code that interprets expression trees works the same when new language features are introduced. However, even with these limitations, expression trees do enable you to create dynamic algorithms that rely on interpreting and modifying code that is represented as a data structure. It enables rich libraries such as Entity Framework to accomplish what they do.
 

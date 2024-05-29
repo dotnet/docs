@@ -35,7 +35,7 @@ You can download the redistributable packages and language packs for .NET Framew
 
 - .NET Framework 4.5 and later versions are built incrementally on .NET Framework 4. When you install .NET Framework 4.5 or later versions on a system that has .NET Framework 4 installed, the version 4 assemblies are replaced with newer versions.
 
-- If you are referencing a Microsoft [out-of-band package](../get-started/net-framework-and-out-of-band-releases.md) in your app, the assembly will be included in the app package.
+- If you are referencing a Microsoft [out-of-band package](../get-started/out-of-band-releases.md) in your app, the assembly will be included in the app package.
 
 - You must have administrator privileges to install .NET Framework 4.5 or later versions.
 

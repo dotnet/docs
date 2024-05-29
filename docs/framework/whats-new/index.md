@@ -30,7 +30,7 @@ This article summarizes key new features and improvements in the following versi
 This article does not provide comprehensive information about each new feature and is subject to change. For general information about .NET Framework, see [Getting Started](../get-started/index.md). For supported platforms, see [System Requirements](../get-started/system-requirements.md). For download links and installation instructions, see [Installation Guide](../install/guide-for-developers.md).
 
 > [!NOTE]
-> The .NET Framework team also releases features out of band, using NuGet, to expand platform support and introduce new functionality, such as immutable collections and SIMD-enabled vector types. For more information, see [Additional Class Libraries and APIs](../additional-apis/index.md) and [.NET Framework and Out-of-Band Releases](../get-started/net-framework-and-out-of-band-releases.md).
+> The .NET Framework team also releases features out of band, using NuGet, to expand platform support and introduce new functionality, such as immutable collections and SIMD-enabled vector types. For more information, see [Additional Class Libraries and APIs](../additional-apis/index.md) and [.NET Framework and Out-of-Band Releases](../get-started/out-of-band-releases.md).
 > See a [complete list of NuGet packages](https://www.nuget.org/profiles/dotnetframework) for .NET Framework.
 
 <a name="v481"></a>
@@ -2186,7 +2186,7 @@ The Portable Class Library project in Visual Studio 2012 (and later versions) en
 
 ## See also
 
-- [The .NET Framework and Out-of-Band Releases](../get-started/net-framework-and-out-of-band-releases.md)
+- [The .NET Framework and Out-of-Band Releases](../get-started/out-of-band-releases.md)
 - [What's new in accessibility in .NET Framework](whats-new-in-accessibility.md)
 - [What's New in Visual Studio 2019](/visualstudio/ide/whats-new-visual-studio-2019)
 - [ASP.NET](/aspnet)

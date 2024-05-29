@@ -24,7 +24,7 @@ The following class binds to the `"MyCustomSettingsSection"` configuration secti
 
 :::code source="snippets/configuration/console-validation-gen/SettingsOptions.cs":::
 
-In the preceding `SettingsOptions` class, the `ConfigurationSectionName` property contains the name of the configuration section to bind to. In this scenario, the options object provides the name of its configuration section. The use of the following data annotation attributes are used:
+In the preceding `SettingsOptions` class, the `ConfigurationSectionName` property contains the name of the configuration section to bind to. In this scenario, the options object provides the name of its configuration section. The following data annotation attributes are used:
 
 - <xref:System.ComponentModel.DataAnnotations.RequiredAttribute>: Specifies that the property is required.
 - <xref:System.ComponentModel.DataAnnotations.RegularExpressionAttribute>: Specifies that the property value must match the specified regular expression pattern.

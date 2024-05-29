@@ -1,18 +1,18 @@
 ---
 title: "Expression Trees"
 description: Learn about expression trees. See how to compile and run code represented by these data structures, where each node is an expression.
-ms.date: 03/07/2023
+ms.date: 05/29/2024
 ms.custom: updateeachrelease
 ---
 # Expression Trees
 
 *Expression trees* represent code in a tree-like data structure, where each node is an expression, for example, a method call or a binary operation such as `x < y`.
 
-If you have used LINQ, you have experience with a rich library where the `Func` types are part of the API set. (If you aren't familiar with LINQ, you probably want to read [the LINQ tutorial](/dotnet/csharp/linq/) and the article about [lambda expressions](../../language-reference/operators/lambda-expressions.md) before this one.) Expression Trees provide richer interaction with the arguments that are functions.
+If you used LINQ, you have experience with a rich library where the `Func` types are part of the API set. (If you aren't familiar with LINQ, you probably want to read [the LINQ tutorial](/dotnet/csharp/linq/) and the article about [lambda expressions](../../language-reference/operators/lambda-expressions.md) before this one.) Expression Trees provide richer interaction with the arguments that are functions.
 
 You write function arguments, typically using Lambda Expressions, when you create LINQ queries. In a typical LINQ query, those function arguments are transformed into a delegate the compiler creates.
 
-You've likely already written code that uses Expression trees. Entity Framework's LINQ APIs accept Expression trees as the arguments for the LINQ Query Expression Pattern. That enables [Entity Framework](/ef/) to translate the query you wrote in C# into SQL that executes in the database engine. Another example is [Moq](https://github.com/Moq/moq), which is a popular mocking framework for .NET.
+You already write code that uses Expression trees. Entity Framework's LINQ APIs accept Expression trees as the arguments for the LINQ Query Expression Pattern. That enables [Entity Framework](/ef/) to translate the query you wrote in C# into SQL that executes in the database engine. Another example is [Moq](https://github.com/Moq/moq), which is a popular mocking framework for .NET.
 
 When you want to have a richer interaction, you need to use *Expression Trees*. Expression Trees represent code as a structure that you examine, modify, or execute. These tools give you the power to manipulate code during run time. You write code that examines running algorithms, or injects new capabilities. In more advanced scenarios, you modify running algorithms and even translate C# expressions into another form for execution in another environment.
 
@@ -44,7 +44,7 @@ There are some newer C# language elements that don't translate well into express
 
 Expression trees won't support new expression node types. It would be a breaking change for all libraries interpreting expression trees to introduce new node types. The following list includes most C# language elements that can't be used:
 
-- [Conditional methods](../../language-reference/preprocessor-directives.md#conditional-compilation) that have been removed
+- [Conditional methods](../../language-reference/preprocessor-directives.md#conditional-compilation) removed from the output
 - [`base` access](../../language-reference/keywords/base.md)
 - Method group expressions, including [*address-of* (`&`)](../../language-reference/operators/pointer-related-operators.md) a method group, and anonymous method expressions
 - References to [local functions](../../programming-guide/classes-and-structs/local-functions.md)
@@ -59,10 +59,10 @@ Expression trees won't support new expression node types. It would be a breaking
 - Lambda expressions that have [attributes](../../language-reference/operators/lambda-expressions.md#attributes)
 - [Interpolated strings](../../language-reference/tokens/interpolated.md)
 - UTF-8 string conversions or [UTF-8 string literals](../../language-reference/builtin-types/reference-types.md#utf-8-string-literals)
-- Method invocations using [variable arguments](../../language-reference/keywords/method-parameters.md#params-modifier), [named arguments or optional arguments](../../programming-guide/classes-and-structs/named-and-optional-arguments.md)
+- Method invocations using [variable arguments](../../language-reference/keywords/method-parameters.md#params-modifier), [named arguments, or optional arguments](../../programming-guide/classes-and-structs/named-and-optional-arguments.md)
 - Expressions using <xref:System.Index?displayProperty=nameWithType> or <xref:System.Range?displayProperty=nameWithType>, [index "from end" (`^`) operator](../../language-reference/operators/member-access-operators.md#index-from-end-operator-) or [range expressions (`..`)](../../language-reference/operators/member-access-operators.md#range-operator-)
 - [`async` lambda expressions or `await` expressions](../../language-reference/operators/lambda-expressions.md#async-lambdas), including [`await foreach` and `await using`](../../language-reference/operators/await.md#asynchronous-streams-and-disposables)
 - [Tuple literals, tuple conversions, tuple `==` or `!=`, or `with` expressions](../../language-reference/builtin-types/value-tuples.md)
-- [Discards (`_`)](../../fundamentals/functional/discards.md), [deconstructing assignment](../../fundamentals/functional/deconstruct.md), [pattern matching `is` operator or the pattern matching `switch` expression](../../language-reference/operators/patterns.md)
+- [Discards (`_`)](../../fundamentals/functional/discards.md), [deconstructing assignment](../../fundamentals/functional/deconstruct.md), [pattern matching `is` operator, or the pattern matching `switch` expression](../../language-reference/operators/patterns.md)
 - COM call with `ref` omitted on the arguments
 - [`ref`](../../language-reference/keywords/ref.md), [`in`](../../language-reference/keywords/method-parameters.md#in-parameter-modifier) or [`out`](../../language-reference/keywords/method-parameters.md#out-parameter-modifier) parameters, `ref` return values, `out` arguments, or any values of [`ref struct` type](../../language-reference/builtin-types/ref-struct.md)

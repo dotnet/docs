@@ -12,6 +12,8 @@ ms.assetid: 8a18e5c2-d41d-49ef-abcb-7c27e2469433
 ---
 # Working with Assemblies and the Global Assembly Cache
 
+[!INCLUDE [net-framework-specific](../includes/net-framework-specific.md)]
+
 If you intend to share an assembly among several applications, you can install it into the global assembly cache. Each computer where the common language runtime is installed has this machine-wide code cache. The global assembly cache stores assemblies specifically designated to be shared by several applications on the computer. An assembly must have a strong name to be installed in the global assembly cache.
 
 > [!NOTE]

@@ -30,7 +30,7 @@ If NuGet Package Manager is installed, you can browse and add references to NuGe
 
 4. In the right pane, use the **Search** box to locate the package you would like to use. Some Microsoft packages are identified by the Microsoft .NET Framework logo, and all identify Microsoft as the publisher.
 
-![The NuGet Package Manager.](./media/the-net-framework-and-out-of-band-releases/nuget-package-manager-dialog.png)
+![The NuGet Package Manager.](./media/net-framework-and-out-of-band-releases/nuget-package-manager-dialog.png)
 
 As mentioned previously, when you deploy an app that uses an OOB package, the OOB assemblies will ship with your app package.
 

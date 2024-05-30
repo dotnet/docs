@@ -6,7 +6,7 @@ no-loc: [MAUI]
 ms.date: 06/28/2022
 ---
 
-# Configuration management
+# Application Settings Management
 
 [!INCLUDE [download-alert](includes/download-alert.md)]
 

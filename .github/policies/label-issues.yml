@@ -22,22 +22,26 @@ configuration:
       actions:
       - addLabel:
           label: okr-health
+
     eventResponderTasks:
-    - if:
+    - description: Add in-pr label to issues
+      if:
       - payloadType: Pull_Request
       then:
       - inPrLabel:
           label: in-pr
-      description: Add in-pr label to issues
-    - if:
+
+    - description: Synchronize OKR and release labels from PRs to closing issues
+      if:
       - payloadType: Pull_Request
       then:
       - labelSync:
           pattern: okr-
       - labelSync:
           pattern: ':checkered_flag: Release'
-      description: Synchronize OKR and release labels from PRs to closing issues
-    - if:
+
+    - description: Label issues with okr-freshness (event-based)
+      if:
       - payloadType: Issues
       - or:
         - titleContains:
@@ -52,4 +56,19 @@ configuration:
       then:
       - addLabel:
           label: okr-freshness
-      description: Label issues with okr-freshness (event-based)
+
+    - description: Label typo issues
+      if:
+      - payloadType: Issues
+      - isAction:
+          action: Opened
+      - titleContains:
+          pattern: (T|t)ypo
+          isRegex: True
+      then:
+      - addLabel:
+          label: doc-bug
+      - addLabel:
+          label: help wanted
+      - addLabel:
+          label: good first issue

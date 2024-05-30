@@ -1,0 +1,41 @@
+schedules:
+- cron: 0 6 * * Mon,Wed,Fri
+  displayName: Run Mon, Wed, and Friday at 10 pm PST (6 am UTC)
+  always: false
+  branches:
+    include:
+    - main
+
+jobs:
+- job: MergeBranches
+  pool:
+    vmImage: 'ubuntu-latest'
+  steps:
+  - checkout: self
+    persistCredentials: true
+  - script: |
+      git config --global user.name "Genevieve Warren"
+      git config --global user.email "gewarren@users.noreply.github.com"
+
+      git remote add public https://github.com/dotnet/docs.git
+
+      git checkout main
+      git pull origin main
+
+      git fetch public live
+      git merge FETCH_HEAD --no-commit --strategy-option theirs
+
+      CONFLICTS=$(git ls-files -u | wc -l)
+      if [ "$CONFLICTS" -gt 0 ] ; then
+         echo "Merge conflict when merging public live to main"
+         git merge --abort
+         exit 1
+      else
+         echo "Merge OK"
+         git reset HEAD .openpublishing.publish.config.json
+         git reset HEAD .github/CODEOWNERS
+         git reset HEAD .github/dependabot.yml
+         git commit -m "Merge public live into main"
+         git push origin main
+      fi
+    displayName: 'Merge public live branch to main'

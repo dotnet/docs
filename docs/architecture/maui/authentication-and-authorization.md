@@ -3,7 +3,7 @@ title: Authentication and Authorization
 description: Providing security and identity management for .NET MAUI application
 author: michaelstonis
 no-loc: [MAUI]
-ms.date: 07/12/2022
+ms.date: 05/30/2024
 ---
 
 # Authentication and Authorization

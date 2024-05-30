@@ -3,7 +3,7 @@ title: Validation
 description: Provide feedback and checks to ensure data is correct at runtime
 author: michaelstonis
 no-loc: [MAUI]
-ms.date: 07/09/2022
+ms.date: 05/30/2024
 ---
 
 # Validation

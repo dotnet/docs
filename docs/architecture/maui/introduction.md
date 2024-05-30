@@ -3,7 +3,7 @@ title: Introduction to .NET MAUI
 description: Introduction to enterprise architecture for .NET MAUI
 author: michaelstonis
 no-loc: [MAUI]
-ms.date: 06/18/2022
+ms.date: 05/30/2024
 ---
 
 # Introduction to .NET MAUI
@@ -43,10 +43,10 @@ This guide provides guidance on these issues, and focuses on the core patterns a
 
 ## Sample application
 
-This guide includes a sample application, eShopOnContainers, that's an online store that includes the following functionality:
+This guide includes a sample application, eShop, that's an online store that includes the following functionality:
 
 - Authenticating and authorizing against a backend service.
-- Browsing a catalog of shirts, coffee mugs, and other marketing items.
+- Browsing a catalog of items.
 - Filtering the catalog.
 - Ordering items from the catalog.
 - Viewing the user's order history.
@@ -56,7 +56,7 @@ This guide includes a sample application, eShopOnContainers, that's an online st
 
 Below is a high-level overview of the architecture of the sample application.
 
-![eShopOnContainers high-level architecture](./media/high-level-architecture-diagram.png)
+![eShop high-level architecture](./media/high-level-architecture-diagram.png)
 
 The sample application ships with three client apps:
 

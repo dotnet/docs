@@ -3,7 +3,7 @@ title: Navigation
 description: Managing Navigation in a .NET MAUI Application
 author: michaelstonis
 no-loc: [MAUI]
-ms.date: 07/01/2022
+ms.date: 05/30/2024
 ---
 
 # Navigation

@@ -3,7 +3,7 @@ title: Model-View-ViewModel
 description: Overview of the Model-View-ViewModel pattern used by .NET MAUI
 author: michaelstonis
 no-loc: [MAUI]
-ms.date: 07/01/2022
+ms.date: 05/30/2024
 ---
 
 # Model-View-ViewModel (MVVM)

@@ -3,7 +3,7 @@ title: A preface to enterprise architecture for MAUI applications
 description: Guidance for what the book will cover, reference materials, and how to approach the book.
 author: michaelstonis
 no-loc: [MAUI]
-ms.date: 06/18/2022
+ms.date: 05/30/2024
 ---
 
 # Purpose

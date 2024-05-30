@@ -3,7 +3,7 @@ title: Dependency Injection
 description: Patterns for building flexible, decoupled, and testable applications
 author: michaelstonis
 no-loc: [MAUI]
-ms.date: 07/10/2022
+ms.date: 05/30/2024
 ---
 
 # Dependency injection

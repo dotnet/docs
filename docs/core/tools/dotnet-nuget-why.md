@@ -44,15 +44,7 @@ The `dotnet nuget why` command shows the dependency graph for a particular packa
 
 ## Examples
 
-- Show the dependency graph for the package "System.Text.Json" for a given project:
-
-    ```dotnetcli
-    dotnet nuget why .\DotnetNuGetWhyPackage.csproj System.Text.Json
-    ```
-
-    ![Example: Project](media/dotnet-nuget-why/dotnet-nuget-why-project.png)
-
-- Show the dependency graph for the package "System.Text.Json" for a solution with multiple projects:
+- Show the dependency graph for the package "System.Text.Json" for a given solution:
 
     ```dotnetcli
     dotnet nuget why .\DotnetNuGetWhyPackage.sln System.Text.Json
@@ -60,10 +52,14 @@ The `dotnet nuget why` command shows the dependency graph for a particular packa
 
     ![Example: Solution with multiple projects](media/dotnet-nuget-why/dotnet-nuget-why-solution-with-multiple-projects.png)
 
+- Show the dependency graph for the package "System.Text.Json" for a single project:
+
+    ```dotnetcli
+    dotnet nuget why .\DotnetNuGetWhyPackage.csproj System.Text.Json
+    ```
+
 - Show the dependency graph for the package "System.Text.Json" for a project targeting a specific framework:
 
     ```dotnetcli
     dotnet nuget why .\DotnetNuGetWhyPackage.csproj System.Text.Json --framework net6.0
     ```
-
-    ![Example: Project with framework](media/dotnet-nuget-why/dotnet-nuget-why-solution-with-framework-option.png)

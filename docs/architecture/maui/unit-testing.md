@@ -126,28 +126,33 @@ This unit test invokes the `InitializeAsync` method of the `OrderViewModel` clas
 
 ## Testing message-based communication
 
-View models that use the `MessagingCenter` class to communicate between loosely-coupled classes can be unit tested by subscribing to the message being sent by the code under test, as demonstrated in the following code example:
+View models that use the `WeakReferenceMessenger` class to communicate between loosely-coupled classes can be unit tested by subscribing to the message being sent by the code under test, as demonstrated in the following code example:
 
 ```csharp
 [Fact]
-public void AddCatalogItemCommandSendsAddProductMessageTest()
+public async Task AddCatalogItemCommandSendsAddProductMessageTest()
 {
-    var messageReceived = false;
-    var catalogService = new CatalogMockService();
-    var catalogViewModel = new CatalogViewModel(catalogService);
+    bool messageReceived = false;
 
-    MessagingCenter.Subscribe<CatalogViewModel, CatalogItem>(
-        this, MessageKeys.AddProduct, (sender, arg) =>
-    {
-        messageReceived = true;
-    });
-    catalogViewModel.AddCatalogItemCommand.Execute(null);
+    var catalogItemViewModel = new CatalogItemViewModel(_appEnvironmentService, _navigationService);
 
-    Assert.True(messageReceived);
+    catalogItemViewModel.CatalogItem = new CatalogItem {Id = 123, Name = "test", Price = 1.23m,};
+
+    WeakReferenceMessenger.Default
+        .Register<CatalogItemViewModelTests, ProductCountChangedMessage>(
+            this,
+            (_, message) =>
+            {
+                messageReceived = true;
+            });
+
+    await catalogItemViewModel.AddCatalogItemCommand.ExecuteUntilComplete();
+
+    Assert.True(messageReceived);
 }
 ```
 
-This unit test checks that the `CatalogViewModel` publishes the `AddProduct` message in response to its `AddCatalogItemCommand` being executed. Because the `MessagingCenter` class supports multicast message subscriptions, the unit test can subscribe to the `AddProduct` message and execute a callback delegate in response to receiving it. This callback delegate, specified as a lambda expression, sets a boolean field that's used by the `Assert` statement to verify the behavior of the test.
+This unit test checks that the `CatalogViewModel` publishes the `AddProduct` message in response to its `AddCatalogItemCommand` being executed. Because the `WeakReferenceMessenger` class supports multicast message subscriptions, the unit test can subscribe to the `AddProduct` message and execute a callback delegate in response to receiving it. This callback delegate, specified as a lambda expression, sets a boolean field that's used by the `Assert` statement to verify the behavior of the test.
 
 ## Testing exception handling
 

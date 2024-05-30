@@ -266,7 +266,7 @@ public string CreateAuthorizationRequest()
 }
 ```
 
-This method creates the URI for IdentityServer's [authorization endpoint](https://identityserver4.readthedocs.io/en/latest/endpoints/authorize.html) with the required parameters. The authorization endpoint is at `/connect/authorize` on port 5105 of the base endpoint exposed as a user setting. For more information about user settings, see [Configuration Management](configuration-management.md).
+This method creates the URI for IdentityServer's [authorization endpoint](https://identityserver4.readthedocs.io/en/latest/endpoints/authorize.html) with the required parameters. The authorization endpoint is at `/connect/authorize` on port 5105 of the base endpoint exposed as a user setting. For more information about user settings, see [Configuration Management](app-settings-management.md).
 
 > [!NOTE]
 > The attack surface of the eShopOnContainers multi-platform app is reduced by implementing the Proof Key for Code Exchange (PKCE) extension to OAuth. PKCE protects the authorization code from being used if it's intercepted. This is achieved by the client generating a secret verifier, a hash of which is passed in the authorization request, and which is presented unhashed when redeeming the authorization code. For more information about PKCE, see [Proof Key for Code Exchange by OAuth Public Clients](https://tools.ietf.org/html/rfc7636) on the Internet Engineering Task Force web site.
@@ -308,14 +308,14 @@ private async Task NavigateAsync(string url)
 }
 ```
 
-This method parses the authentication response contained in the return URI, and provided that a valid authorization code is present, it makes a request to IdentityServer's [token endpoint](https://identityserver4.readthedocs.io/en/latest/endpoints/token.html), passing the authorization code, the PKCE secret verifier, and other required parameters. The token endpoint is at `/connect/token` on port 5105 of the base endpoint exposed as a user setting. For more information about user settings, see [Configuration management](configuration-management.md)).
+This method parses the authentication response contained in the return URI, and provided that a valid authorization code is present, it makes a request to IdentityServer's [token endpoint](https://identityserver4.readthedocs.io/en/latest/endpoints/token.html), passing the authorization code, the PKCE secret verifier, and other required parameters. The token endpoint is at `/connect/token` on port 5105 of the base endpoint exposed as a user setting. For more information about user settings, see [Configuration management](app-settings-management.md)).
 
 > [!TIP]
 > Make sure to validate return URIs. Although the eShopOnContainers multi-platform app doesn't validate the return URI, the best practice is to validate that the return URI refers to a known location in order to prevent open-redirect attacks.
 
 If the token endpoint receives a valid authorization code and PKCE secret verifier, it responds with an access token, identity token, and refresh token. The access token (which allows access to API resources) and identity token are stored as application settings, and page navigation is performed. Therefore, the overall effect in the eShopOnContainers multi-platform app is this: provided that users are able to successfully authenticate with IdentityServer, they are navigated to the `//Main/Catalog` route, which is a `TabbedPage` that displays the `CatalogView` as its selected tab.
 
-For information about page navigation, see [Navigation](navigation.md). For information about how WebView navigation causes a view model method to be executed, see [Invoking navigation using behaviors](navigation.md#invoking-navigation-using-behaviors). For information about application settings, see [Configuration management](configuration-management.md).
+For information about page navigation, see [Navigation](navigation.md). For information about how WebView navigation causes a view model method to be executed, see [Invoking navigation using behaviors](navigation.md#invoking-navigation-using-behaviors). For information about application settings, see [Configuration management](app-settings-management.md).
 
 > [!NOTE]
 > The eShopOnContainers also allows a mock sign in when the app is configured to use mock services in the `SettingsView`. In this mode, the app doesn't communicate with IdentityServer, instead allowing the user to sign in using any credentials.
@@ -342,7 +342,7 @@ private void Logout()
 }
 ```
 
-This method invokes the `CreateLogoutRequest` method in the `IdentityService` class, passing the identity token retrieved from application settings as a parameter. For more information about application settings, see [Configuration management](configuration-management.md). The following code example shows the `CreateLogoutRequest` method:
+This method invokes the `CreateLogoutRequest` method in the `IdentityService` class, passing the identity token retrieved from application settings as a parameter. For more information about application settings, see [Configuration management](app-settings-management.md). The following code example shows the `CreateLogoutRequest` method:
 
 ```csharp
 public string CreateLogoutRequest(string token)
@@ -381,7 +381,7 @@ private async Task NavigateAsync(string url)
 
 This method clears both the identity token and the access token from application settings. It sets the `IsLogin` property to false, which causes the `WebView` on the `LoginView` page to become invisible. Finally, the `LoginUrl` property is set to the URI of IdentityServer's [authorization endpoint](https://identityserver4.readthedocs.io/en/latest/endpoints/authorize.html), with the required parameters, in preparation for the next time the user initiates a sign-in.
 
-For information about page navigation, see [Navigation](navigation.md). For information about how `WebView` navigation causes a view model method to be executed, see [Invoking navigation using behaviors](navigation.md#invoking-navigation-using-behaviors). For information about application settings, see [Configuration management](configuration-management.md).
+For information about page navigation, see [Navigation](navigation.md). For information about how `WebView` navigation causes a view model method to be executed, see [Invoking navigation using behaviors](navigation.md#invoking-navigation-using-behaviors). For information about application settings, see [Configuration management](app-settings-management.md).
 
 > [!NOTE]
 > The eShopOnContainers also allows a mock sign-out when the app is configured to use mock services in the `SettingsView`. In this mode, the app doesn't communicate with IdentityServer, and instead clears any stored tokens from application settings.

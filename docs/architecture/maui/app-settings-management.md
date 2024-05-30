@@ -1,5 +1,5 @@
 ---
-title: Configuration Management
+title: Application Settings Management
 description: Managing persistent configurations in .NET MAUI
 author: michaelstonis
 no-loc: [MAUI]

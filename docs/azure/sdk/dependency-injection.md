@@ -62,7 +62,7 @@ In the preceding code:
 
 ## Use the registered clients
 
-With the clients registered, as described in the [Register clients and subclients](#register-clients-and-subclients) section, you can now use them. In the following example, [constructor injection](../../core/extensions/dependency-injection.md#constructor-injection-behavior) is used to obtain the Blob Storage client in an ASP.NET Core API controller:
+With the clients registered, as described in the [Register clients and subclients](#register-clients-and-subclients) section, you can now use them. In the following example, [constructor injection](../../core/extensions/dependency-injection.md#constructor-injection-behavior) is used to obtain the Blob Storage client and a factory for Service Bus sender subclients in an ASP.NET Core API controller:
 
 ```csharp
 [ApiController]
@@ -70,10 +70,14 @@ With the clients registered, as described in the [Register clients and subclient
 public class MyApiController : ControllerBase
 {
     private readonly BlobServiceClient _blobServiceClient;
+    private readonly ServiceBusSender _serviceBusSender;
   
-    public MyApiController(BlobServiceClient blobServiceClient)
+    public MyApiController(
+        BlobServiceClient blobServiceClient,
+        IAzureClientFactory<ServiceBusSender> senderFactory)
     {
         _blobServiceClient = blobServiceClient;
+        _serviceBusSender = senderFactory.CreateClient("myQueueName");
     }
   
     [HttpGet]

@@ -140,7 +140,7 @@ To set up a simple polling mechanism, use the <xref:System.Timers.Timer?displayP
    public void OnTimer(object sender, ElapsedEventArgs args)
    {
        // TODO: Insert monitoring activities here.
-       eventLog1.WriteEntry("Monitoring the System", EventLogEntryType.Information, eventId++);
+       _eventLog1.WriteEntry("Monitoring the System", EventLogEntryType.Information, eventId++);
    }
    ```
 

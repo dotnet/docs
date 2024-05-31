@@ -13,6 +13,6 @@ Enable .NET Framework 3.5 through the **Add Roles and Features Wizard**.
 1. Search for **Add Roles and Features Wizard** and open it.
 1. Navigate through the wizard until you reach **Features**.
 1. Select **.NET Framework 3.5 Features** in the list.
-1. Finally, select **Install** to start installing .NET Framework 3.5. 
+1. Finally, select **Install** to start installing .NET Framework 3.5.
 
 :::image type="content" source="../media/includes-server-35/features.png" alt-text="The Add Roles and Features Wizard dialog box from Windows Server. .NET Framework 3.5 Features is selected.":::

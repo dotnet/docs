@@ -1,12 +1,14 @@
 ---
 title: "Join Operations"
 description: A join of two data sources associates objects with objects that share an attribute across data sources. Learn about join methods in the LINQ framework in C#.
-ms.date: 02/16/2024
+ms.date: 05/29/2024
 no-loc: [Join, GroupJoin]
 ---
 # Join Operations in LINQ
 
 A *join* of two data sources is the association of objects in one data source with objects that share a common attribute in another data source.
+
+[!INCLUDE [Prerequisites](../includes/linq-syntax.md)]
 
 Joining is an important operation in queries that target data sources whose relationships to each other can't be followed directly. In object-oriented programming, joining could mean a correlation between objects that isn't modeled, such as the backwards direction of a one-way relationship. An example of a one-way relationship is a `Student` class that has a property of type `Department` that represents the major, but the `Department` class doesn't have a property that is a collection of `Student` objects. If you have a list of `Department` objects and you want to find all the students in each department, you could use a join operation to find them.
 

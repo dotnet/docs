@@ -1,13 +1,15 @@
 ---
 title: "Grouping Data"
 description: Grouping puts data into groups of elements that share an attribute. Learn about the standard query operator methods in LINQ in C# that group data elements.
-ms.date: 02/16/2024
+ms.date: 05/29/2024
 ---
 # Grouping Data (C#)
 
 Grouping refers to the operation of putting data into groups so that the elements in each group share a common attribute. The following illustration shows the results of grouping a sequence of characters. The key for each group is the character.
 
 :::image type="content" source="./media/grouping-data/linq-group-operation.png" alt-text="Diagram that shows a LINQ Grouping operation":::
+
+[!INCLUDE [Prerequisites](../includes/linq-syntax.md)]
 
 The standard query operator methods that group data elements are listed in the following table.
 

@@ -1,11 +1,13 @@
 ---
 title: "Filtering Data with LINQ"
 description: Filtering, also known as selection, restricts results based on a condition. Learn about the standard query operator methods in LINQ in C# that perform filtering.
-ms.date: 02/14/2024
+ms.date: 05/29/2024
 ---
 # Filtering Data in C# with LINQ
 
 Filtering refers to the operation of restricting the result set to contain only those elements that satisfy a specified condition. It's also referred to as *selecting* elements that match the specified condition.
+
+[!INCLUDE [Prerequisites](../includes/linq-syntax.md)]
 
 The following illustration shows the results of filtering a sequence of characters. The predicate for the filtering operation specifies that the character must be 'A'.
 

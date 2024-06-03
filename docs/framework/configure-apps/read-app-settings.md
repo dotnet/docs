@@ -7,6 +7,8 @@ ms.date: 03/10/2022
 ---
 # How to: Read application settings
 
+[!INCLUDE [net-framework-specific](../includes/net-framework-specific.md)]
+
 This article shows you how to add a simple setting to an *App.config* file in a .NET Framework app, and then read the value programmatically. Instead of just reading a single value, you can read an entire section or the entire file. For more examples and information, see the <xref:System.Configuration.ConfigurationManager> docs.
 
 ## Add the App.config file

@@ -13,11 +13,11 @@ ms.assetid: 6c61b4ec-c6df-4651-80f1-4854f8b14dde
 
 # Managed Extensibility Framework (MEF)
 
-This topic provides an overview of the Managed Extensibility Framework that was introduced in the .NET Framework 4.
+This article provides an overview of the Managed Extensibility Framework that was introduced in .NET Framework 4.
 
 ## What is MEF?
 
-The Managed Extensibility Framework or MEF is a library for creating lightweight, and extensible applications. It allows application developers to discover and use extensions with no configuration required. It also lets extension developers easily encapsulate code and avoid fragile hard dependencies. MEF not only allows extensions to be reused within applications, but across applications as well.
+The Managed Extensibility Framework (MEF) is a library for creating lightweight and extensible applications. It allows application developers to discover and use extensions with no configuration required. It also lets extension developers easily encapsulate code and avoid fragile hard dependencies. MEF not only allows extensions to be reused within applications, but across applications as well.
 
 ## The problem of extensibility
 

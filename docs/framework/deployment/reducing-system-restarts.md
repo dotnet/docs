@@ -10,6 +10,8 @@ ms.assetid: 7aa8cb72-dee9-4716-ac54-b17b9ae8218f
 ---
 # Reducing System Restarts During .NET Framework 4.5 Installations
 
+[!INCLUDE [net-framework-specific](../includes/net-framework-specific.md)]
+
 The .NET Framework 4.5 installer uses the [Restart Manager](/windows/win32/rstmgr/about-restart-manager) to prevent system restarts whenever possible during installation. If your app setup program installs the .NET Framework, it can interface with the Restart Manager to take advantage of this feature. For more information, see [How to: Get Progress from the .NET Framework 4.5 Installer](how-to-get-progress-from-the-dotnet-installer.md).
 
 ## Reasons for a Restart

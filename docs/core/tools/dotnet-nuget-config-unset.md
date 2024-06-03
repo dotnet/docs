@@ -30,7 +30,6 @@ The `dotnet nuget config unset` unsets the values for NuGet configuration settin
   
   The key of the settings that are to be removed.
 
-
 ## Options
 
 - **`--configfile <FILE>`**

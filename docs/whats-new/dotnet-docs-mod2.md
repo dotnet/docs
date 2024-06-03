@@ -1,99 +1,115 @@
 ---
-title: ".NET docs: What's new for February 2024"
-description: "What's new in the .NET docs for February 2024."
-ms.custom: February-2024
-ms.date: 03/01/2024
+title: ".NET docs: What's new for May 2024"
+description: "What's new in the .NET docs for May 2024."
+ms.custom: May-2024
+ms.date: 06/01/2024
 ---
 
-# .NET docs: What's new for February 2024
+# .NET docs: What's new for May 2024
 
-Welcome to what's new in the .NET docs for February 2024. This article lists some of the major changes to docs during this period.
-
-## .NET breaking changes
-
-### New articles
-
-- [Duplicate output for -getItem, -getProperty, and -getTargetResult](../core/compatibility/sdk/8.0/getx-duplicate-output.md)
-- [Certificates checked before loading remote images in PictureBox](../core/compatibility/windows-forms/8.0/picturebox-remote-image.md)
-- [InMemoryDirectoryInfo prepends rootDir to files](../core/compatibility/core-libraries/9.0/inmemorydirinfo-prepends-rootdir.md)
-- [Drive's current directory path enumeration](../core/compatibility/core-libraries/8.0/drive-current-dir-paths.md)
-- [.user file imported in outer builds](../core/compatibility/sdk/8.0/user-file.md)
-- [Inline array struct size limit is enforced](../core/compatibility/core-libraries/9.0/inlinearray-size.md)
+Welcome to what's new in the .NET docs for May 2024. This article lists some of the major changes to docs during this period.
 
 ## .NET fundamentals
 
 ### New articles
 
-- [MSTEST0008: TestInitialize method should have valid layout](../core/testing/mstest-analyzers/mstest0008.md)
-- [MSTEST0009: TestCleanup method should have valid layout](../core/testing/mstest-analyzers/mstest0009.md)
-- [MSTEST0010: ClassInitialize method should have valid layout](../core/testing/mstest-analyzers/mstest0010.md)
-- [MSTEST0011: ClassCleanup method should have valid layout](../core/testing/mstest-analyzers/mstest0011.md)
-- [MSTEST0012: AssemblyInitialize method should have valid layout](../core/testing/mstest-analyzers/mstest0012.md)
-- [MSTEST0013: AssemblyCleanup method should have valid layout](../core/testing/mstest-analyzers/mstest0013.md)
-- [CA2263: Prefer generic overload when type is known](../fundamentals/code-analysis/quality-rules/ca2263.md)
-- [MSTest SDK overview](../core/testing/unit-testing-mstest-sdk.md)
-- [What's new in containers for .NET 8](../core/whats-new/dotnet-8/containers.md)
-- [What's new in .NET 8](../core/whats-new/dotnet-8/overview.md)
-- [What's new in the SDK and tooling for .NET 8](../core/whats-new/dotnet-8/sdk.md)
-- [What's new in .NET 9](../core/whats-new/dotnet-9/overview.md)
-- [MSTEST0007: Use test attributes only on test methods](../core/testing/mstest-analyzers/mstest0007.md)
-- [CA2262: Set 'MaxResponseHeadersLength' properly](../fundamentals/code-analysis/quality-rules/ca2262.md)
+- [Building native libraries](../core/deploying/native-aot/libraries.md)
+- [Install .NET Runtime with Snap](../core/install/linux-snap-runtime.md)
+- [Install .NET SDK with Snap](../core/install/linux-snap-sdk.md)
+- [Microsoft Testing Platform diagnostics overview](../core/testing/unit-testing-platform-diagnostics.md)
+- [MSTEST0025: Use 'Assert.Fail' instead of an always-failing assert](../core/testing/mstest-analyzers/mstest0025.md)
+- [MSTEST0026: Avoid conditional access in assertions](../core/testing/mstest-analyzers/mstest0026.md)
+- [NUnit runner overview](../core/testing/unit-testing-nunit-runner-intro.md)
+- [Persisted dynamic assemblies in .NET](../fundamentals/runtime-libraries/system-reflection-emit-persistedassemblybuilder.md)
+- [SYSLIB0054: Thread.VolatileRead and Thread.VolatileWrite are obsolete](../fundamentals/syslib-diagnostics/syslib0054.md)
+- [SYSLIB0055: AdvSimd.ShiftRightLogicalRoundedNarrowingSaturate\* methods with signed parameters are obsolete](../fundamentals/syslib-diagnostics/syslib0055.md)
 
 ### Updated articles
 
-- [System.Reflection.Emit.AssemblyBuilder class](../fundamentals/runtime-libraries/system-reflection-emit-assemblybuilder.md) - Update AssemblyBuilder.md with persistable AssemblyBuilder info
-- [What's new in the .NET 8 runtime](../core/whats-new/dotnet-8/runtime.md) - Split up what's new in .NET 8 by SDK/runtime
+- [Best practices for exceptions](../standard/exceptions/best-practices-for-exceptions.md) - Refresh exceptions best practices
 
 ## C# language
 
 ### New articles
 
-- [Resolve errors and warnings related to assembly references](../csharp/language-reference/compiler-messages/assembly-references.md)
-- [new (C# Reference)](../csharp/language-reference/keywords/new.md)
+- [C# docs - get started, tutorials, reference.](../csharp/tour-of-csharp/index.yml)
+- [C# language versioning](../csharp/language-reference/language-versioning.md)
+- [Errors and warnings related to the `lock` statement and thread synchronization](../csharp/language-reference/compiler-messages/lock-semantics.md)
+- [Errors and warnings related to the `params` modifier on method parameters](../csharp/language-reference/compiler-messages/params-arrays.md)
+- [Feature specifications](../csharp/specification/feature-spec-overview.md)
+
+## AI in .NET
+
+### New articles
+
+- [AI for .NET Developers](../ai/index.yml)
+- [Authenticate and authorize App Service to a vector database](../ai/how-to/app-service-db-auth.md)
+- [Authenticate and authorize App Service to Azure OpenAI using Microsoft Entra and the Semantic Kernel SDK](../ai/how-to/app-service-aoai-auth.md)
+- [Chain of thought prompting](../ai/conceptual/chain-of-thought-prompting.md)
+- [Develop .NET applications with AI features](../ai/get-started/dotnet-ai-overview.md)
+- [Embeddings in .NET](../ai/conceptual/embeddings.md)
+- [How agents and copilots work with LLMs](../ai/conceptual/agents.md)
+- [How generative AI and LLMs work](../ai/conceptual/how-genai-and-llms-work.md)
+- [Implement Azure OpenAI with RAG using vector search in a .NET app](../ai/tutorials/tutorial-ai-vector-search.md)
+- [Prompt engineering in .NET](../ai/conceptual/prompt-engineering-dotnet.md)
+- [Retrieval-augmented generation (RAG) provides LLM knowledge](../ai/conceptual/rag.md)
+- [Tutorial: Evaluate an LLM's prompt completions](../ai/tutorials/llm-eval.md)
+- [Understand OpenAI function calling](../ai/conceptual/understanding-openai-functions.md)
+- [Understanding tokens](../ai/conceptual/understanding-tokens.md)
+- [Use custom and local AI models with the Semantic Kernel SDK](../ai/how-to/work-with-local-models.md)
+- [Use Redis for memory storage with the Semantic Kernel SDK](../ai/how-to/use-redis-for-memory.md)
+- [Vector databases for .NET + AI](../ai/conceptual/vector-databases.md)
+- [Work with OpenAI content filtering in a .NET app](../ai/how-to/content-filtering.md)
+- [Zero-shot and few-shot learning](../ai/conceptual/zero-shot-learning.md)
 
 ## ML.NET
 
 ### New articles
 
-- [How to format data for Named Entity Recognition (NER)](../machine-learning/how-to-guides/ner-dataset-guide.md)
-
-## Home
-
-### Updated articles
-
-- [.NET documentation](index.yml) - Split up what's new in .NET 8 by SDK/runtime
+- [Tutorial: Categorize an image in ML.NET from Custom Vision ONNX model](../machine-learning/tutorials/object-detection-custom-vision-onnx.md)
 
 ## .NET Framework
 
-### Updated articles
+### New articles
 
-- [Security protocols](../framework/wcf/feature-details/security-protocols.md) - Fix broken links
-- [Web Services Protocols Supported by System-Provided Interoperability Bindings](../framework/wcf/feature-details/web-services-protocols-supported-by-system-provided-interoperability-bindings.md) - Fix broken links
+- [April 2024 cumulative update preview](../framework/release-notes/2024/04-23-april-preview-cumulative-update.md)
+- [Install .NET Framework on Windows Server 2019](../framework/install/on-server-2019.md)
+- [May 2024 security and quality rollup](../framework/release-notes/2024/05-14-may-security-and-quality-rollup.md)
 
 ## Community contributors
 
 The following people contributed to the .NET docs during this period. Thank you! Learn how to contribute by following the links under "Get involved" in the [what's new landing page](index.yml).
 
-- [BartoszKlonowski](https://github.com/BartoszKlonowski) - Bartosz Klonowski ![4 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-4-green)
-- [Rageking8](https://github.com/Rageking8) -  ![3 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-3-green)
-- [timdeschryver](https://github.com/timdeschryver) - Tim Deschryver ![3 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-3-green)
-- [mpidash](https://github.com/mpidash) - Mario Pistrich ![2 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-2-green)
-- [benbristow](https://github.com/benbristow) - Ben Bristow ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [CollinAlpert](https://github.com/CollinAlpert) - Collin Alpert ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [hassanyahya400](https://github.com/hassanyahya400) - Hassan Yahya ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [IlyaCk](https://github.com/IlyaCk) -  ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [kengorman](https://github.com/kengorman) -  ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [martincostello](https://github.com/martincostello) - Martin Costello ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [michaelmcneilnet](https://github.com/michaelmcneilnet) - Michael McNeil ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [Mikoleusz](https://github.com/Mikoleusz) -  ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [OQJAV](https://github.com/OQJAV) - Anton Ermolinsky ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [pedrobsaila](https://github.com/pedrobsaila) - Badre BSAILA ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [preardon](https://github.com/preardon) - Paul Reardon ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [Progman2002](https://github.com/Progman2002) -  ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [rcollina](https://github.com/rcollina) - rcollina ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [rextor92](https://github.com/rextor92) - Daniel Tsvetkov ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [Saibamen](https://github.com/Saibamen) - Adam Stachowicz ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [tanvirx64](https://github.com/tanvirx64) - Tanvir Ahmed ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [ti777777](https://github.com/ti777777) -  ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [TortillaZHawaii](https://github.com/TortillaZHawaii) - Dawid Wysocki ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [xtqqczze](https://github.com/xtqqczze) -  ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [benjsmyth](https://github.com/benjsmyth) - Ben ![2 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-2-green)
+- [bigboybamo](https://github.com/bigboybamo) - Olabamiji Oyetubo ![2 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-2-green)
+- [gabbersepp](https://github.com/gabbersepp) - Josef Biehler ![2 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-2-green)
+- [jwood803](https://github.com/jwood803) - Jon Wood ![2 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-2-green)
+- [rextor92](https://github.com/rextor92) - Daniel Tsvetkov ![2 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-2-green)
+- [timdeschryver](https://github.com/timdeschryver) - Tim Deschryver ![2 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-2-green)
+- [angelobelchior](https://github.com/angelobelchior) - Angelo Belchior ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [Asivaprasadam](https://github.com/Asivaprasadam) - Arjun Sivaprasadam ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [azhar1999](https://github.com/azhar1999) -  ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [BartoszKlonowski](https://github.com/BartoszKlonowski) - Bartosz Klonowski ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [bmitc](https://github.com/bmitc) -  ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [dipendrakshah](https://github.com/dipendrakshah) - Dipendra Shah ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [EngincanV](https://github.com/EngincanV) - Engincan VESKE ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [eskimotherapy](https://github.com/eskimotherapy) - Kimo ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [Flash0ver](https://github.com/Flash0ver) - Stefan Pölz ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [goswinr](https://github.com/goswinr) - Goswin Rothenthal ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [hakenr](https://github.com/hakenr) - Robert Haken ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [iainelder](https://github.com/iainelder) - Iain Samuel McLean Elder ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [ledjon-behluli](https://github.com/ledjon-behluli) - Ledjon Behluli ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [lplath](https://github.com/lplath) -  ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [LukasLic](https://github.com/LukasLic) - Lukáš Licek ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [michaelstonis](https://github.com/michaelstonis) - Michael Stonis ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [mrudat](https://github.com/mrudat) - Martin Rudat ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [mulu-ken](https://github.com/mulu-ken) - Muluken Mamo ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [paulloz](https://github.com/paulloz) - Paul Joannon ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [rhires](https://github.com/rhires) -  ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [RyanThomas73](https://github.com/RyanThomas73) - Ryan Thomas ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [serpent5](https://github.com/serpent5) - Kirk Larkin ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [Suchiman](https://github.com/Suchiman) - Robin Sue ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [teo-tsirpanis](https://github.com/teo-tsirpanis) - Theodore Tsirpanis ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [tkmsaaaam](https://github.com/tkmsaaaam) - Takamasa Matsui ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [yochie](https://github.com/yochie) - yochie ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [Youssef1313](https://github.com/Youssef1313) - Youssef Victor ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)

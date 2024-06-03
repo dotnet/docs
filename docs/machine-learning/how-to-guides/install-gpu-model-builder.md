@@ -49,6 +49,7 @@ However, if local GPUs or Azure are not an option for you, these scenarios also 
 1. Select **Advanced display**. Your GPU’s make and model should be shown under **Display information**.
 
 ***Check GPU from Task Manager***
+
 1. Right-click on the Windows start menu icon and select **Task Manager**.
 1. Select **Performance**.
 1. In the last pane of the tab, choose **GPU**. If this option is available, it will likely be at the bottom of the list.

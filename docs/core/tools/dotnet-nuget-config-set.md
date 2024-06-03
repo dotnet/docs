@@ -22,7 +22,7 @@ dotnet nuget config set -h|--help
 
 ## Description
 
-The `dotnet nuget config set` 
+The `dotnet nuget config set` sets the values for NuGet configuration settings that will be applied from the config section.
 
 ## Arguments
 
@@ -44,13 +44,13 @@ The `dotnet nuget config set`
 
 ## Examples
 
-* Set's the `repositoryPath` configuration value `c:\installed_packages` to the current directory:
+* Sets the `repositoryPath` configuration value `c:\installed_packages` to the current directory:
 
   ```dotnetcli
   dotnet nuget config set repositoryPath "c:\installed_packages"
   ```
 
-* Set's the `repositoryPath` configuration value `c:\installed_packages` to the specified configuration file:
+* Sets the `repositoryPath` configuration value `c:\installed_packages` to the specified configuration file:
 
   ```dotnetcli
   dotnet nuget config set repositoryPath "c:\installed_packages" --configfile "C:/nugte.config"

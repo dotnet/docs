@@ -36,13 +36,13 @@ The `dotnet nuget config get` Gets the NuGet configuration settings that will be
 
 ## Options
 
-* **`--show-path`**
- 
-Indicate that the NuGet configuration file path will be shown beside the configuration settings.
+* **`--show-path`** 
+
+  Indicate that the NuGet configuration file path will be shown beside the configuration settings.
 
 * **`--working-directory <DIRECTORY>`**
-
-Specifies the directory to start from when listing configuration files. If not specified, the current directory is used.
+ 
+  Specifies the directory to start from when listing configuration files. If not specified, the current directory is used.
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 

@@ -22,14 +22,13 @@ dotnet nuget config paths -h|--help
 
 ## Description
 
-The `dotnet nuget config paths` Lists the paths to all NuGet configuration files that will be applied when invoking NuGet command in a specific directory.
-
+The `dotnet nuget config paths` Lists the paths to all NuGet configuration files that will be applied when invoking NuGet commands in a specific directory.
 
 ## Options
 
 * **`--working-directory <DIRECTORY>`**
 
-Specifies the directory to start from when listing configuration files. If not specified, the current directory is used.
+  Specifies the directory to start from when listing configuration files. If not specified, the current directory is used.
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 

@@ -22,7 +22,7 @@ dotnet nuget config unset -h|--help
 
 ## Description
 
-The `dotnet nuget config unset` 
+The `dotnet nuget config unset` unsets the values for NuGet configuration settings that will be applied from the config section.
 
 ## Arguments
 
@@ -40,12 +40,6 @@ The `dotnet nuget config unset`
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
 ## Examples
-
-* Removes's the `repositoryPath` config value from the current directory:
-
-  ```dotnetcli
-  dotnet nuget config unset repositoryPath
-  ```
 
 * Removes's the `repositoryPath` config value from the specified configuration file:
 

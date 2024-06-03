@@ -51,7 +51,7 @@ Our application will use the `Preferences` class need to implement the `ISetting
 public sealed class SettingsService : ISettingsService
 {
     private const string AccessToken = "access_token";
-    private const string AccessTokenDefault = string.Empty;
+    private const string AccessTokenDefault = "";
 
     private const string IdUseMocks = "use_mocks";
     private const bool UseMocksDefault = true;

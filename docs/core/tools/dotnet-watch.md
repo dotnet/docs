@@ -60,7 +60,7 @@ As an alternative to disabling response compression, manually add the browser re
 
 - **`<forwarded arguments>`**
 
-  Arguments provided after a double dash (` -- `) are passed to the child `dotnet` process. If you're running `dotnet watch run`, these a`rguments are options for [dotnet run](dotnet-run.md). If you're running `dotnet watch test`, these arguments are options for [dotnet test](dotnet-test.md).
+  Arguments provided after a double dash (` -- `) are passed to the child `dotnet` process. If you're running `dotnet watch run`, these arguments are options for [dotnet run](dotnet-run.md). If you're running `dotnet watch test`, these arguments are options for [dotnet test](dotnet-test.md).
 
 ## Options
 

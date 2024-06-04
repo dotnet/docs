@@ -112,4 +112,4 @@ These APIs support the product infrastructure and are not intended or supported 
 
 ## See also
 
-* [.NET Framework and Out-of-Band Releases](../get-started/the-net-framework-and-out-of-band-releases.md)
+* [.NET Framework and Out-of-Band Releases](../get-started/out-of-band-releases.md)

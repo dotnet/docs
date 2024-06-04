@@ -39,7 +39,8 @@ configuration:
       then:
       - addLabel:
           label: community-contribution
-    - description: Label main to live PRs
+
+    - description: Label publish PRs from the dotnet-policy-service bot
       triggerOnOwnActions: true
       if:
       - payloadType: Pull_Request

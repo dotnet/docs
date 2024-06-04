@@ -1,7 +1,7 @@
 ---
 title: "Task-based asynchronous programming - .NET"
 description: In this article, learn about task-based asynchronous programming through the Task Parallel Library (TPL) in .NET.
-ms.date: 01/11/2023
+ms.date: 06/03/2024
 ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"
@@ -94,7 +94,7 @@ Every task receives an integer ID that uniquely identifies it in an application 
 
 Most APIs that create tasks provide overloads that accept a <xref:System.Threading.Tasks.TaskCreationOptions> parameter. By specifying one or more of these options, you tell the task scheduler how to schedule the task on the thread pool. Options might be combined by using a bitwise **OR** operation.
 
-The following example shows a task that has the <xref:System.Threading.Tasks.TaskCreationOptions.LongRunning> and <xref:System.Threading.Tasks.TaskContinuationOptions.PreferFairness> options:
+The following example shows a task that has the <xref:System.Threading.Tasks.TaskCreationOptions.LongRunning> and <xref:System.Threading.Tasks.TaskCreationOptions.PreferFairness> options:
 
 [!code-csharp[TPL_TaskIntro#03](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_taskintro/cs/taskintro.cs#03)]
 [!code-vb[TPL_TaskIntro#03](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_taskintro/vb/tpl_intro.vb#03)]

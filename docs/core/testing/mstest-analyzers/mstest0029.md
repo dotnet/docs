@@ -16,10 +16,10 @@ ms.author: enjieid
 | Property                            | Value                                        |
 |-------------------------------------|----------------------------------------------|
 | **Rule ID**                         | MSTEST0029                                   |
-| **Title**                           | Public method should be test method            |
+| **Title**                           | Public method should be test method          |
 | **Category**                        | Design                                       |
 | **Fix is breaking or non-breaking** | Non-breaking                                 |
-| **Enabled by default**              | No                                          |
+| **Enabled by default**              | No                                           |
 | **Default severity**                | Info                                         |
 | **Introduced in version**           | 3.5.0                                        |
 

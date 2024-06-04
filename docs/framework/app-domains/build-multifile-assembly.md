@@ -22,6 +22,8 @@ ms.assetid: 261c5583-8a76-412d-bda7-9b8ee3b131e5
 ---
 # How to: Build a multifile assembly
 
+[!INCLUDE [net-framework-specific](../includes/net-framework-specific.md)]
+
 This article explains how to create a multifile assembly and provides code that illustrates each step in the procedure.
 
 > [!NOTE]

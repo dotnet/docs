@@ -39,7 +39,7 @@ C:\Program.cs
 
 ## New behavior
 
-Running the same code snippet in .NET 9 and later versions produces output without a separator character in each path.
+Running the same code snippet in .NET 8 and later versions produces output without a separator character in each path.
 
 ```output
 Full path of "C:" is C:\Users\myalias\consoleapps\Program.

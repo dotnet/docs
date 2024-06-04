@@ -11,6 +11,8 @@ ms.assetid: 7d90ea7a-150f-4f97-98a7-f9c26541b9a3
 
 # Making an image easier to debug in .NET
 
+[!INCLUDE [net-framework-specific](../includes/net-framework-specific.md)]
+
 When compiling unmanaged code, you can configure an executable image for debugging by setting IDE switches or command-line options. For example, you can use the /**Zi** command-line option in Visual C++ to ask it to emit debug symbol files (file extension .pdb). Similarly, the /**Od** command-line option tells the compiler to disable optimization. The resulting code runs more slowly, but it's easier to debug, should this be necessary.
 
 When compiling .NET Framework managed code, compilers such as Visual C++, Visual Basic, and C# compile their source program into common intermediate language (CIL). CIL is then JIT-compiled, just before execution, into native machine code. As with unmanaged code, you can configure an executable image for debugging by setting IDE switches or command-line options. You can also configure the JIT compilation for debugging in much the same way.

@@ -1,7 +1,7 @@
 ---
 title: dotnet watch command
 description: The dotnet watch command is a file watcher that runs a dotnet command when changes in source code are detected.
-ms.date: 11/09/2022
+ms.date: 06/03/2024
 ---
 # dotnet watch
 
@@ -50,11 +50,15 @@ As an alternative to disabling response compression, manually add the browser re
 
 ## Arguments
 
-- **`command`**
+- **`<command>`**
 
-  `dotnet watch` can run any command that is dispatched via the `dotnet` executable, such as built-in CLI commands and global tools. If you can run `dotnet <command>`, you can run `dotnet watch <command>`. If the child command isn't specified, the default is `run` for `dotnet run`.
+  In .NET 7 SDK and earlier, `dotnet watch` can run any command that is dispatched via the `dotnet` executable, such as built-in CLI commands and global tools. If you can run `dotnet <command>`, you can run `dotnet watch <command>`.
 
-- **`forwarded arguments`**
+  In .NET 8 SDK and later, `dotnet watch` can run `dotnet run`, `dotnet build`, or `dotnet test`. Specify `run`, `build`, or `test` for `<command>`.
+
+  If the child command isn't specified, the default is `run` for `dotnet run`.
+
+- **`<forwarded arguments>`**
 
   Arguments provided after a double dash (` -- `) are passed to the child `dotnet` process. If you're running `dotnet watch run`, these arguments are options for [dotnet run](dotnet-run.md). If you're running `dotnet watch test`, these arguments are options for [dotnet test](dotnet-test.md).
 

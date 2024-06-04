@@ -312,12 +312,9 @@ with the distributed trace.
 
 OpenTelemetry allows each Activity to report a
 [Status](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/trace/api.md#set-status)
-that represents the pass/fail result of the work. .NET does not currently have a strongly typed API for this purpose but
-there is an established convention using Tags:
+that represents the pass/fail result of the work. .NET have a strongly typed API for this purpose:
 
-- `otel.status_code` is the Tag name used to store `StatusCode`. Values for the StatusCode tag must be one of the
-strings "UNSET", "OK", or "ERROR", which correspond respectively to the enums `Unset`, `Ok`, and `Error` from StatusCode.
-- `otel.status_description` is the Tag name used to store the optional `Description`
+Values for the ActivityStatusCode respectively to the enums `Unset`, `Ok`, and `Error`.
 
 Update DoSomeWork() to set status:
 
@@ -334,8 +331,7 @@ Update DoSomeWork() to set status:
                 activity?.AddEvent(new ActivityEvent("Done now"));
 
                 // Pretend something went wrong
-                activity?.SetTag("otel.status_code", "ERROR");
-                activity?.SetTag("otel.status_description", "Use this text give more information about the error");
+                activity?.SetStatus(ActivityStatusCode.Error, "Use this text give more information about the error");
             }
         }
 ```

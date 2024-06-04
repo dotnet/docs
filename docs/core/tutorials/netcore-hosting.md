@@ -17,7 +17,7 @@ This article gives an overview of the steps necessary to start the .NET runtime 
 
 Because hosts are native applications, this tutorial covers constructing a C++ application to host .NET. You will need a C++ development environment (such as that provided by [Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)).
 
-You will also need to build a .NET component to test the host with, so you should install the [.NET SDK](https://dotnet.microsoft.com/download). It includes the necessary headers and libraries to link with. As an example, on Windows with the .Net 8 SDK the files can be found in `C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Host.win-x64\8.0.4\runtimes\win-x64\native`.
+You will also need to build a .NET component to test the host with, so you should install the [.NET SDK](https://dotnet.microsoft.com/download). It includes the necessary headers and libraries to link with. As an example, on Windows with the .NET 8 SDK the files can be found in `C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Host.win-x64\8.0.4\runtimes\win-x64\native`.
 
 ## Hosting APIs
 
@@ -59,7 +59,7 @@ These files can be found at the following locations:
 * <https://github.com/dotnet/runtime/blob/main/src/native/corehost/coreclr_delegates.h>
 * <https://github.com/dotnet/runtime/blob/main/src/native/corehost/hostfxr.h>
 
-Or, if you have for example installed the .Net 8 SDK on Windows:
+Or, if you have installed the .NET 8 SDK on Windows:
 
 * `C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Host.win-x64\8.0.4\runtimes\win-x64\native`
 

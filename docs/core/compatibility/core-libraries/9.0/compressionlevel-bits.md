@@ -13,7 +13,7 @@ The [ZIP file specification](https://pkware.cachefly.net/webdocs/APPNOTE/APPNOTE
 
 Previously, .NET preserved the general-purpose bits for every <xref:System.IO.Compression.ZipArchiveEntry> already in a <xref:System.IO.Compression.ZipArchive> when it was loaded and new entries were added. However, calling <xref:System.IO.Compression.ZipArchive.CreateEntry(System.String,System.IO.Compression.CompressionLevel)?displayProperty=nameWithType> always resulted in bits 1 & 2 being left at a default value of `0`, even if a <xref:System.IO.Compression.CompressionLevel> other than <xref:System.IO.Compression.CompressionLevel.Optimal?displayProperty=nameWithType> was used.
 
-This behavior had a downstream effect: calling <xref:System.IO.Packaging.Package.CreatePart(System.Uri,System.String,System.IO.Packaging.CompressionOption)?displayProperty=nameWithType> with any <xref:System.IO.Compression.CompressionOption> resulted in bits 1 & 2 being left unset (and thus the <xref:System.IO.Packaging.CompressionOption> was always persisted to the ZIP file as <xref:System.IO.Packaging.CompressionOption.Normal?displayProperty=nameWithType>).
+This behavior had a downstream effect: calling <xref:System.IO.Packaging.Package.CreatePart(System.Uri,System.String,System.IO.Packaging.CompressionOption)?displayProperty=nameWithType> with any <xref:System.IO.Packaging.CompressionOption> resulted in bits 1 & 2 being left unset (and thus the <xref:System.IO.Packaging.CompressionOption> was always persisted to the ZIP file as <xref:System.IO.Packaging.CompressionOption.Normal?displayProperty=nameWithType>).
 
 ## New behavior
 

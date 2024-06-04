@@ -62,14 +62,14 @@ Testing models and view models from MVVM applications is identical to testing an
 
 Don't be tempted to make a unit test exercise more than one aspect of the unit's behavior. Doing so leads to tests that are difficult to read and update. It can also lead to confusion when interpreting a failure.
 
-The eShopOnContainers multi-platform app uses [xUnit](https://xunit.net/) to perform unit testing, which supports two different types of unit tests:
+The eShop multi-platform app uses [xUnit](https://xunit.net/) to perform unit testing, which supports two different types of unit tests:
 
 | Testing Type | Attribute | Description                                                  |
 |--------------|-----------|--------------------------------------------------------------|
 | Facts        | `Fact`    | Tests that are always true, which test invariant conditions. |
 | Theories     | `Theory`  | Tests that are only true for a particular set of data.       |
 
-The unit tests included with the eShopOnContainers multi-platform app are fact tests, so each unit test method is decorated with the `Fact` attribute.
+The unit tests included with the eShop multi-platform app are fact tests, so each unit test method is decorated with the `Fact` attribute.
 
 ## Testing asynchronous functionality
 

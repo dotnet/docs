@@ -18,10 +18,10 @@ User settings are the customizable settings of an app that affect the app's beha
 
 ## Creating a Settings Interface
 
-While the preferences manager can be used directly in your application, it does come with the drawback of making your application tightly coupled to the preferences manager implementation. This coupling means that creating unit tests or extending the functionality of preferences management will be limited since your application will not have a direct way to intercept the behavior. To address this concern, an interface can be created to work as a proxy for preferences management. The interface will allow us to supply an implementation that fits our needs. For example, when writing a unit test, we may want to set specific settings, and the interface will give us an easy way to consistently set this data for the test. The following code example shows the `ISettingsService` interface in the eShopOnContainers multi-platform app:
+While the preferences manager can be used directly in your application, it does come with the drawback of making your application tightly coupled to the preferences manager implementation. This coupling means that creating unit tests or extending the functionality of preferences management will be limited since your application will not have a direct way to intercept the behavior. To address this concern, an interface can be created to work as a proxy for preferences management. The interface will allow us to supply an implementation that fits our needs. For example, when writing a unit test, we may want to set specific settings, and the interface will give us an easy way to consistently set this data for the test. The following code example shows the `ISettingsService` interface in the eShop multi-platform app:
 
 ```csharp
-namespace eShopOnContainers.Services.Settings;
+namespace eShop.Services.Settings;
 
 public interface ISettingsService
 {
@@ -45,7 +45,7 @@ public interface ISettingsService
 > [!TIP]
 > Preferences is meant for storing relatively small data. If you need to store larger or more complex data, consider using a local database or filesystem to store the data.
 
-Our application will use the `Preferences` class need to implement the `ISettingsService` interface. The code below shows how the eShopOnContainers multi-platform app's `SettingsService` implements the `AuthTokenAccess` and `UseMocks` properties:
+Our application will use the `Preferences` class need to implement the `ISettingsService` interface. The code below shows how the eShop multi-platform app's `SettingsService` implements the `AuthTokenAccess` and `UseMocks` properties:
 
 ```csharp
 public sealed class SettingsService : ISettingsService
@@ -74,9 +74,9 @@ Each setting consists of a private key, a private default value, and a public pr
 
 ## Data binding to user settings
 
-In the eShopOnContainers multi-platform app, the `SettingsView` exposes multiple settings the user can configure at runtime. These settings include allowing configuration of whether the app should retrieve data from microservices deployed as Docker containers or whether the app should retrieve data from mock services that don't require an internet connection. When retrieving data from containerized microservices, a base endpoint URL for the microservices must be specified. The image below shows the SettingsView when the user has chosen to retrieve data from containerized microservices.
+In the eShop multi-platform app, the `SettingsView` exposes multiple settings the user can configure at runtime. These settings include allowing configuration of whether the app should retrieve data from microservices deployed as Docker containers or whether the app should retrieve data from mock services that don't require an internet connection. When retrieving data from containerized microservices, a base endpoint URL for the microservices must be specified. The image below shows the SettingsView when the user has chosen to retrieve data from containerized microservices.
 
-![User settings exposed by the eShopOnContainers multi-platform app.](./media/endpoint_settings.png)
+![User settings exposed by the eShop multi-platform app.](./media/endpoint_settings.png)
 
 Data binding can be used to retrieve and set settings exposed by the `ISettingService` interface. This is achieved by controls on the view binding to view model properties that in turn access properties in the `ISettingService` interface and raising a property changed notification if the value has changed.
 

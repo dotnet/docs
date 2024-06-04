@@ -314,7 +314,7 @@ OpenTelemetry allows each Activity to report a
 [Status](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/trace/api.md#set-status)
 that represents the pass/fail result of the work. .NET has a strongly-typed API for this purpose:
 
-Values for the ActivityStatusCode respectively to the enums `Unset`, `Ok`, and `Error`.
+The <xref:System.Diagnostics.ActivityStatusCode> values are represented as either, `Unset`, `Ok`, and `Error`.
 
 Update DoSomeWork() to set status:
 

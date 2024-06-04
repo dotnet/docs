@@ -23,7 +23,7 @@ description: Learn how to use a custom version of the native SQLite library.
 
 For example, to use the unofficial, open-source build of `SQLCipher` use the following commands.
 
-### [.NET Core CLI](#tab/netcore-cli)
+### [.NET CLI](#tab/net-cli)
 
 ```dotnetcli
 dotnet add package Microsoft.Data.Sqlite.Core
@@ -54,7 +54,7 @@ When not relying on a bundle, you can use the available providers of SQLite with
 
 To use the `sqlite3` provider use the following commands:
 
-### [.NET Core CLI](#tab/netcore-cli)
+### [.NET CLI](#tab/net-cli)
 
 ```dotnetcli
 dotnet add package Microsoft.Data.Sqlite.Core

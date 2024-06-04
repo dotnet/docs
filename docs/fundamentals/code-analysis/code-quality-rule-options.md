@@ -167,31 +167,31 @@ This section lists some of the available options. To see the full list of availa
 
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
-| Names of null-check validation methods that validate that arguments passed to the method are non-null | Allowed method name formats (separated by `|`):<br/> - Method name only (includes all methods with the name, regardless of the containing type or namespace)<br/> - Fully qualified names in the symbol's [documentation ID format](/dotnet/csharp/language-reference/language-specification/documentation-comments#id-string-format), with an optional `M:` prefix | None | [CA1062](quality-rules/ca1062.md) |
+| Names of null-check validation methods that validate that arguments passed to the method are non-null | Allowed method name formats (separated by \|):<br/> - Method name only (includes all methods with the name, regardless of the containing type or namespace)<br/> - Fully qualified names in the symbol's [documentation ID format](/dotnet/csharp/language-reference/language-specification/documentation-comments#id-string-format), with an optional `M:` prefix | None | [CA1062](quality-rules/ca1062.md) |
 
 ### additional_string_formatting_methods
 
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
-| Names of additional string formatting methods | Allowed method name formats (separated by `|`):<br/> - Method name only (includes all methods with the name, regardless of the containing type or namespace)<br/> - Fully qualified names in the symbol's [documentation ID format](/dotnet/csharp/language-reference/language-specification/documentation-comments#id-string-format), with an optional `M:` prefix | None | [CA2241](quality-rules/ca2241.md) |
+| Names of additional string formatting methods | Allowed method name formats (separated by \|):<br/> - Method name only (includes all methods with the name, regardless of the containing type or namespace)<br/> - Fully qualified names in the symbol's [documentation ID format](/dotnet/csharp/language-reference/language-specification/documentation-comments#id-string-format), with an optional `M:` prefix | None | [CA2241](quality-rules/ca2241.md) |
 
 ### excluded_type_names_with_derived_types
 
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
-| Names of types, such that the type and all its derived types are excluded for analysis | Allowed symbol name formats (separated by `|`):<br/> - Type name only (includes all types with the name, regardless of the containing type or namespace)<br/> - Fully qualified names in the symbol's [documentation ID format](/dotnet/csharp/language-reference/language-specification/documentation-comments#id-string-format), with an optional `T:` prefix | None | [CA1001](quality-rules/ca1001.md) [CA1054](quality-rules/ca1054.md) [CA1055](quality-rules/ca1055.md) [CA1056](quality-rules/ca1056.md) [CA1062](quality-rules/ca1062.md) [CA1068](quality-rules/ca1068.md) [CA1303](quality-rules/ca1303.md) [CA1304](quality-rules/ca1304.md) [CA1305](quality-rules/ca1305.md) [CA1508](quality-rules/ca1508.md) [CA2000](quality-rules/ca2000.md) [CA2100](quality-rules/ca2100.md) [CA2301](quality-rules/ca2301.md) [CA2302](quality-rules/ca2302.md) [CA2311](quality-rules/ca2311.md) [CA2312](quality-rules/ca2312.md) [CA2321](quality-rules/ca2321.md) [CA2322](quality-rules/ca2322.md) [CA2327](quality-rules/ca2327.md) [CA2328](quality-rules/ca2328.md) [CA2329](quality-rules/ca2329.md) [CA2330](quality-rules/ca2330.md) [CA3001](quality-rules/ca3001.md) [CA3002](quality-rules/ca3002.md) [CA3003](quality-rules/ca3003.md) [CA3004](quality-rules/ca3004.md) [CA3005](quality-rules/ca3005.md) [CA3006](quality-rules/ca3006.md) [CA3007](quality-rules/ca3007.md) [CA3008](quality-rules/ca3008.md) [CA3009](quality-rules/ca3009.md) [CA3010](quality-rules/ca3010.md) [CA3011](quality-rules/ca3011.md) [CA3012](quality-rules/ca3012.md) [CA5361](quality-rules/ca5361.md) [CA5376](quality-rules/ca5376.md) [CA5377](quality-rules/ca5377.md) [CA5378](quality-rules/ca5378.md) [CA5380](quality-rules/ca5380.md) [CA5381](quality-rules/ca5381.md) [CA5382](quality-rules/ca5382.md) [CA5383](quality-rules/ca5383.md) [CA5384](quality-rules/ca5384.md) [CA5387](quality-rules/ca5387.md) [CA5388](quality-rules/ca5388.md) [CA5389](quality-rules/ca5389.md) [CA5390](quality-rules/ca5390.md) [CA5399](quality-rules/ca5399.md) [CA5400](quality-rules/ca5400.md) |
+| Names of types, such that the type and all its derived types are excluded for analysis | Allowed symbol name formats (separated by \|):<br/> - Type name only (includes all types with the name, regardless of the containing type or namespace)<br/> - Fully qualified names in the symbol's [documentation ID format](/dotnet/csharp/language-reference/language-specification/documentation-comments#id-string-format), with an optional `T:` prefix | None | [CA1001](quality-rules/ca1001.md) [CA1054](quality-rules/ca1054.md) [CA1055](quality-rules/ca1055.md) [CA1056](quality-rules/ca1056.md) [CA1062](quality-rules/ca1062.md) [CA1068](quality-rules/ca1068.md) [CA1303](quality-rules/ca1303.md) [CA1304](quality-rules/ca1304.md) [CA1305](quality-rules/ca1305.md) [CA1508](quality-rules/ca1508.md) [CA2000](quality-rules/ca2000.md) [CA2100](quality-rules/ca2100.md) [CA2301](quality-rules/ca2301.md) [CA2302](quality-rules/ca2302.md) [CA2311](quality-rules/ca2311.md) [CA2312](quality-rules/ca2312.md) [CA2321](quality-rules/ca2321.md) [CA2322](quality-rules/ca2322.md) [CA2327](quality-rules/ca2327.md) [CA2328](quality-rules/ca2328.md) [CA2329](quality-rules/ca2329.md) [CA2330](quality-rules/ca2330.md) [CA3001](quality-rules/ca3001.md) [CA3002](quality-rules/ca3002.md) [CA3003](quality-rules/ca3003.md) [CA3004](quality-rules/ca3004.md) [CA3005](quality-rules/ca3005.md) [CA3006](quality-rules/ca3006.md) [CA3007](quality-rules/ca3007.md) [CA3008](quality-rules/ca3008.md) [CA3009](quality-rules/ca3009.md) [CA3010](quality-rules/ca3010.md) [CA3011](quality-rules/ca3011.md) [CA3012](quality-rules/ca3012.md) [CA5361](quality-rules/ca5361.md) [CA5376](quality-rules/ca5376.md) [CA5377](quality-rules/ca5377.md) [CA5378](quality-rules/ca5378.md) [CA5380](quality-rules/ca5380.md) [CA5381](quality-rules/ca5381.md) [CA5382](quality-rules/ca5382.md) [CA5383](quality-rules/ca5383.md) [CA5384](quality-rules/ca5384.md) [CA5387](quality-rules/ca5387.md) [CA5388](quality-rules/ca5388.md) [CA5389](quality-rules/ca5389.md) [CA5390](quality-rules/ca5390.md) [CA5399](quality-rules/ca5399.md) [CA5400](quality-rules/ca5400.md) |
 
 ### excluded_symbol_names
 
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
-| Names of symbols that are excluded for analysis | Allowed symbol name formats (separated by `|`):<br/> - Symbol name only (includes all symbols with the name, regardless of the containing type or namespace)<br/> - Fully qualified names in the symbol's [documentation ID format](/dotnet/csharp/language-reference/language-specification/documentation-comments#id-string-format). Each symbol name requires a symbol kind prefix, such as `M:` prefix for methods, `T:` prefix for types, and `N:` prefix for namespaces.<br/> - `.ctor` for constructors and `.cctor` for static constructors | None | [CA1001](quality-rules/ca1001.md) [CA1054](quality-rules/ca1054.md) [CA1055](quality-rules/ca1055.md) [CA1056](quality-rules/ca1056.md) [CA1062](quality-rules/ca1062.md) [CA1068](quality-rules/ca1068.md) [CA1303](quality-rules/ca1303.md) [CA1304](quality-rules/ca1304.md) [CA1305](quality-rules/ca1305.md) [CA1508](quality-rules/ca1508.md) [CA2000](quality-rules/ca2000.md) [CA2100](quality-rules/ca2100.md) [CA2301](quality-rules/ca2301.md) [CA2302](quality-rules/ca2302.md) [CA2311](quality-rules/ca2311.md) [CA2312](quality-rules/ca2312.md) [CA2321](quality-rules/ca2321.md) [CA2322](quality-rules/ca2322.md) [CA2327](quality-rules/ca2327.md) [CA2328](quality-rules/ca2328.md) [CA2329](quality-rules/ca2329.md) [CA2330](quality-rules/ca2330.md) [CA3001](quality-rules/ca3001.md) [CA3002](quality-rules/ca3002.md) [CA3003](quality-rules/ca3003.md) [CA3004](quality-rules/ca3004.md) [CA3005](quality-rules/ca3005.md) [CA3006](quality-rules/ca3006.md) [CA3007](quality-rules/ca3007.md) [CA3008](quality-rules/ca3008.md) [CA3009](quality-rules/ca3009.md) [CA3010](quality-rules/ca3010.md) [CA3011](quality-rules/ca3011.md) [CA3012](quality-rules/ca3012.md) [CA5361](quality-rules/ca5361.md) [CA5376](quality-rules/ca5376.md) [CA5377](quality-rules/ca5377.md) [CA5378](quality-rules/ca5378.md) [CA5380](quality-rules/ca5380.md) [CA5381](quality-rules/ca5381.md) [CA5382](quality-rules/ca5382.md) [CA5383](quality-rules/ca5383.md) [CA5384](quality-rules/ca5384.md) [CA5387](quality-rules/ca5387.md) [CA5388](quality-rules/ca5388.md) [CA5389](quality-rules/ca5389.md) [CA5390](quality-rules/ca5390.md) [CA5399](quality-rules/ca5399.md) [CA5400](quality-rules/ca5400.md) |
+| Names of symbols that are excluded for analysis | Allowed symbol name formats (separated by \|):<br/> - Symbol name only (includes all symbols with the name, regardless of the containing type or namespace)<br/> - Fully qualified names in the symbol's [documentation ID format](/dotnet/csharp/language-reference/language-specification/documentation-comments#id-string-format). Each symbol name requires a symbol kind prefix, such as `M:` prefix for methods, `T:` prefix for types, and `N:` prefix for namespaces.<br/> - `.ctor` for constructors and `.cctor` for static constructors | None | [CA1001](quality-rules/ca1001.md) [CA1054](quality-rules/ca1054.md) [CA1055](quality-rules/ca1055.md) [CA1056](quality-rules/ca1056.md) [CA1062](quality-rules/ca1062.md) [CA1068](quality-rules/ca1068.md) [CA1303](quality-rules/ca1303.md) [CA1304](quality-rules/ca1304.md) [CA1305](quality-rules/ca1305.md) [CA1508](quality-rules/ca1508.md) [CA2000](quality-rules/ca2000.md) [CA2100](quality-rules/ca2100.md) [CA2301](quality-rules/ca2301.md) [CA2302](quality-rules/ca2302.md) [CA2311](quality-rules/ca2311.md) [CA2312](quality-rules/ca2312.md) [CA2321](quality-rules/ca2321.md) [CA2322](quality-rules/ca2322.md) [CA2327](quality-rules/ca2327.md) [CA2328](quality-rules/ca2328.md) [CA2329](quality-rules/ca2329.md) [CA2330](quality-rules/ca2330.md) [CA3001](quality-rules/ca3001.md) [CA3002](quality-rules/ca3002.md) [CA3003](quality-rules/ca3003.md) [CA3004](quality-rules/ca3004.md) [CA3005](quality-rules/ca3005.md) [CA3006](quality-rules/ca3006.md) [CA3007](quality-rules/ca3007.md) [CA3008](quality-rules/ca3008.md) [CA3009](quality-rules/ca3009.md) [CA3010](quality-rules/ca3010.md) [CA3011](quality-rules/ca3011.md) [CA3012](quality-rules/ca3012.md) [CA5361](quality-rules/ca5361.md) [CA5376](quality-rules/ca5376.md) [CA5377](quality-rules/ca5377.md) [CA5378](quality-rules/ca5378.md) [CA5380](quality-rules/ca5380.md) [CA5381](quality-rules/ca5381.md) [CA5382](quality-rules/ca5382.md) [CA5383](quality-rules/ca5383.md) [CA5384](quality-rules/ca5384.md) [CA5387](quality-rules/ca5387.md) [CA5388](quality-rules/ca5388.md) [CA5389](quality-rules/ca5389.md) [CA5390](quality-rules/ca5390.md) [CA5399](quality-rules/ca5399.md) [CA5400](quality-rules/ca5400.md) |
 
 ### disallowed_symbol_names
 
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
-| Names of symbols that are disallowed in the context of the analysis | Allowed symbol name formats (separated by `|`):<br/> - Symbol name only (includes all symbols with the name, regardless of the containing type or namespace)<br/> - Fully qualified names in the symbol's [documentation ID format](/dotnet/csharp/language-reference/language-specification/documentation-comments#id-string-format). Each symbol name requires a symbol kind prefix, such as `M:` prefix for methods, `T:` prefix for types, and `N:` prefix for namespaces.<br/> - `.ctor` for constructors and `.cctor` for static constructors | None | [CA1031](quality-rules/ca1031.md) |
+| Names of symbols that are disallowed in the context of the analysis | Allowed symbol name formats (separated by \|):<br/> - Symbol name only (includes all symbols with the name, regardless of the containing type or namespace)<br/> - Fully qualified names in the symbol's [documentation ID format](/dotnet/csharp/language-reference/language-specification/documentation-comments#id-string-format). Each symbol name requires a symbol kind prefix, such as `M:` prefix for methods, `T:` prefix for types, and `N:` prefix for namespaces.<br/> - `.ctor` for constructors and `.cctor` for static constructors | None | [CA1031](quality-rules/ca1031.md) |
 
 ### exclude_ordefault_methods
 
@@ -213,9 +213,11 @@ This section lists some of the available options. To see the full list of availa
 
 ### unsafe_DllImportSearchPath_bits
 
+<!-- markdownlint-disable MD056 -->
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
 | Configure which value of `DllImportSearchPath` is unsafe for the analysis | Integer values of `System.Runtime.InteropServices.DllImportSearchPath` | `770` (that is, `AssemblyDirectory | UseDllDirectoryForDependencies | ApplicationDirectory`) | [CA5393](quality-rules/ca5393.md) |
+<!-- markdownlint-enable MD056 -->
 
 ### exclude_aspnet_core_mvc_controllerbase
 
@@ -257,13 +259,13 @@ This section lists some of the available options. To see the full list of availa
 
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
-| Specifies additional required suffixes | List of type names (separated by `|`) with their required suffix (separated by `->`). Allowed type name formats:</br> - Type name only (includes all types with the name, regardless of the containing type or namespace).</br> - Fully qualified names in the symbol's documentation ID format with an optional `T:` prefix.| None | [CA1710](quality-rules/ca1710.md) |
+| Specifies additional required suffixes | List of type names (separated by \|) with their required suffix (separated by `->`). Allowed type name formats:</br> - Type name only (includes all types with the name, regardless of the containing type or namespace).</br> - Fully qualified names in the symbol's documentation ID format with an optional `T:` prefix.| None | [CA1710](quality-rules/ca1710.md) |
 
 ### additional_required_generic_interfaces
 
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
-| Specifies additional required generic interfaces | List of interface names (separated by `|`) with their required generic fully qualified interface (separated by `->`). Allowed interface formats:</br> - Interface name only (includes all interfaces with the name, regardless of the containing type or namespace).</br> - Fully qualified names in the symbol's documentation ID format with an optional `T:` prefix. | None | [CA1010](quality-rules/ca1010.md) |
+| Specifies additional required generic interfaces | List of interface names (separated by \|) with their required generic fully qualified interface (separated by `->`). Allowed interface formats:</br> - Interface name only (includes all interfaces with the name, regardless of the containing type or namespace).</br> - Fully qualified names in the symbol's documentation ID format with an optional `T:` prefix. | None | [CA1010](quality-rules/ca1010.md) |
 
 Examples:
 
@@ -294,13 +296,13 @@ Examples:
 
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
-| Specifies additional custom APIs whose results must be used | Names of additional methods (separated by `|`). Allowed method name formats:</br> - Method name only (includes all methods with the name, regardless of the containing type or namespace).</br> - Fully qualified names in the symbol's documentation ID format with an optional `M:` prefix. | None | [CA1806](quality-rules/ca1806.md) |
+| Specifies additional custom APIs whose results must be used | Names of additional methods (separated by \|). Allowed method name formats:</br> - Method name only (includes all methods with the name, regardless of the containing type or namespace).</br> - Fully qualified names in the symbol's documentation ID format with an optional `M:` prefix. | None | [CA1806](quality-rules/ca1806.md) |
 
 ### allowed_suffixes
 
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
-| Specifies allowable suffixes | List (separated by `|`) of allowed suffixes. | None | [CA1711](quality-rules/ca1711.md) |
+| Specifies allowable suffixes | List (separated by \|) of allowed suffixes. | None | [CA1711](quality-rules/ca1711.md) |
 
 ### enable_platform_analyzer_on_pre_net5_target
 
@@ -318,19 +320,19 @@ Examples:
 
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
-| Specifies additional allowable names for a zero-value enumeration field | List of additional names (separated by `|`). | None | [CA1008](quality-rules/ca1008.md) |
+| Specifies additional allowable names for a zero-value enumeration field | List of additional names (separated by \|). | None | [CA1008](quality-rules/ca1008.md) |
 
 ### enumeration_methods
 
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
-| Specifies additional custom methods that enumerate an IEnumerable | Fully qualified names of additional methods (separated by `|`). | None | [CA1851](quality-rules/ca1851.md) |
+| Specifies additional custom methods that enumerate an IEnumerable | Fully qualified names of additional methods (separated by \|). | None | [CA1851](quality-rules/ca1851.md) |
 
 ### linq_chain_methods
 
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
-| Specifies additional customized LINQ chain methods (that is, methods take an `IEnumerable` argument and return a new `IEnumerable` instance) | Fully qualified names of additional methods (separated by `|`). | None | [CA1851](quality-rules/ca1851.md) |
+| Specifies additional customized LINQ chain methods (that is, methods take an `IEnumerable` argument and return a new `IEnumerable` instance) | Fully qualified names of additional methods (separated by \|). | None | [CA1851](quality-rules/ca1851.md) |
 
 ### assume_method_enumerates_parameters
 

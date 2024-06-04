@@ -12,6 +12,8 @@ ms.assetid: 88fb1a17-6ac9-4b57-8028-193aec1f727c
 ---
 # Redirecting assembly versions
 
+[!INCLUDE [net-framework-specific](../includes/net-framework-specific.md)]
+
 You can redirect compile-time binding references to .NET Framework assemblies, third-party assemblies, or your own app's assemblies. You can redirect your app to use a different version of an assembly in a number of ways: through publisher policy, through an app configuration file; or through the machine configuration file. This article discusses how assembly binding works in .NET Framework and how it can be configured.
 
 > [!TIP]

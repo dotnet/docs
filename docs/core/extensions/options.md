@@ -3,7 +3,7 @@ title: Options pattern
 author: IEvangelist
 description: Learn the options pattern to represent groups of related settings in .NET apps. The options pattern uses classes to provide strongly-typed access to settings.
 ms.author: dapine
-ms.date: 01/24/2024
+ms.date: 06/03/2024
 ---
 
 # Options pattern in .NET
@@ -221,7 +221,7 @@ builder.Services.Configure<Features>(
 The following code displays the named options:
 
 ```csharp
-public class sealed Service
+public sealed class Service
 {
     private readonly Features _personalizeFeature;
     private readonly Features _weatherStationFeature;

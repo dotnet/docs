@@ -3,7 +3,7 @@ title: Application Settings Management
 description: Managing persistent configurations in .NET MAUI
 author: michaelstonis
 no-loc: [MAUI]
-ms.date: 06/28/2022
+ms.date: 05/30/2024
 ---
 
 # Application Settings Management

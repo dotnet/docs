@@ -3,7 +3,7 @@ title: Accessing Remote Data
 description: Communicating with Web APIs in .NET MAUI
 author: michaelstonis
 no-loc: [MAUI]
-ms.date: 07/12/2022
+ms.date: 05/30/2024
 ---
 
 # Accessing Remote Data

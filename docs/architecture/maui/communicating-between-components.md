@@ -3,7 +3,7 @@ title: Communicating Between Components
 description: Providing loosely-coupled messaging for a .NET MAUI application
 author: michaelstonis
 no-loc: [MAUI]
-ms.date: 03/02/2023
+ms.date: 05/30/2024
 ---
 
 # Communicating between loosely coupled components

@@ -3,7 +3,7 @@ title: Containerized Microservices
 description: Strategies for developing scalable back-end architecture
 author: michaelstonis
 no-loc: [MAUI]
-ms.date: 06/29/2022
+ms.date: 05/30/2024
 ---
 
 # Containerized Microservices

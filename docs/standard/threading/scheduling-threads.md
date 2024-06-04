@@ -45,35 +45,22 @@ public class ThreadPriorityExample
 
     public void RunMultipleThreadsOnDifferentPriorities()
     {
-        Thread t0 = new Thread(() => { new ThreadWithCallback(Callback).Process(); });
-        Thread t1 = new Thread(() => { new ThreadWithCallback(Callback).Process(); });
-        Thread t2 = new Thread(() => { new ThreadWithCallback(Callback).Process(); });
-        Thread t3 = new Thread(() => { new ThreadWithCallback(Callback).Process(); });
-        Thread t4 = new Thread(() => { new ThreadWithCallback(Callback).Process(); });
-        Thread t5 = new Thread(() => { new ThreadWithCallback(Callback).Process(); });
-        Thread t6 = new Thread(() => { new ThreadWithCallback(Callback).Process(); });
-        Thread t7 = new Thread(() => { new ThreadWithCallback(Callback).Process(); });
-        Thread t8 = new Thread(() => { new ThreadWithCallback(Callback).Process(); });
+        var threadsList = new List<Thread>(9);
 
-        t0.Priority = ThreadPriority.Lowest;
-        t1.Priority = ThreadPriority.BelowNormal;
-        t2.Priority = ThreadPriority.Normal;
-        t3.Priority = ThreadPriority.AboveNormal;
-        t4.Priority = ThreadPriority.Highest;
-        t5.Priority = ThreadPriority.Highest;
-        t6.Priority = ThreadPriority.Highest;
-        t7.Priority = ThreadPriority.Highest;
-        t8.Priority = ThreadPriority.Highest;
+        // Initialize 9 threads. 5 with Highest priority, and the first 4 from Lowest to Normal range.
+        for (int i = 0; i < 9; i++)
+        {
+            var thread = new Thread(() => { new ThreadWithCallback(Callback).Process(); });
 
-        t0.Start();
-        t1.Start();
-        t2.Start();
-        t3.Start();
-        t4.Start();
-        t5.Start();
-        t6.Start();
-        t7.Start();
-        t8.Start();
+            if (i > 3)
+                thread.Priority = ThreadPriority.Highest;
+            else
+                thread.Priority = (ThreadPriority)i;
+
+            threadsList.Add(thread);
+        }
+
+        threadsList.ForEach(thread => thread.Start());
     }
 
     public void Callback(ThreadPriority threadPriority)

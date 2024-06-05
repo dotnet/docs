@@ -2,7 +2,7 @@
 title: Add distributed tracing instrumentation - .NET
 description: A tutorial to instrument distributed traces in .NET applications
 ms.topic: tutorial
-ms.date: 03/14/2021
+ms.date: 06/05/2024
 ---
 
 # Adding distributed tracing instrumentation
@@ -132,7 +132,7 @@ namespace Sample.DistributedTracing
 
         static async Task Main(string[] args)
         {
-            ...
+            // ...
 ```
 
 #### Best practices
@@ -163,14 +163,14 @@ Use the ActivitySource object to Start and Stop Activity objects around meaningf
 DoSomeWork() with the code shown here:
 
 ```csharp
-        static async Task DoSomeWork(string foo, int bar)
-        {
-            using (Activity activity = source.StartActivity("SomeWork"))
-            {
-                await StepOne();
-                await StepTwo();
-            }
-        }
+static async Task DoSomeWork(string foo, int bar)
+{
+    using (Activity activity = source.StartActivity("SomeWork"))
+    {
+        await StepOne();
+        await StepTwo();
+    }
+}
 ```
 
 Running the app now shows the new Activity being logged:
@@ -195,27 +195,23 @@ the created Activity object after executing the block. Disposing the Activity ob
 doesn't need to explicitly call <xref:System.Diagnostics.Activity.Stop?displayProperty=nameWithType>.
 That simplifies the coding pattern.
 
-- <xref:System.Diagnostics.ActivitySource.StartActivity%2A?displayProperty=nameWithType> internally determines if
-there are any listeners recording the Activity. If there are no registered listeners or there are listeners that
-are not interested, `StartActivity()` will return `null` and avoid creating the Activity object. This
-is a performance optimization so that the code pattern can still be used in functions that are called frequently.
+- <xref:System.Diagnostics.ActivitySource.StartActivity%2A?displayProperty=nameWithType> internally determines if there are any listeners recording the Activity. If there are no registered listeners or there are listeners that are not interested, `StartActivity()` will return `null` and avoid creating the Activity object. This is a performance optimization so that the code pattern can still be used in functions that are called frequently.
 
 ## Optional: Populate tags
 
-Activities support key-value data called Tags, commonly used to store any parameters of the work that
-may be useful for diagnostics. Update DoSomeWork() to include them:
+Activities support key-value data called Tags, commonly used to store any parameters of the work that may be useful for diagnostics. Update `DoSomeWork()` to include them:
 
 ```csharp
-        static async Task DoSomeWork(string foo, int bar)
-        {
-            using (Activity activity = source.StartActivity("SomeWork"))
-            {
-                activity?.SetTag("foo", foo);
-                activity?.SetTag("bar", bar);
-                await StepOne();
-                await StepTwo();
-            }
-        }
+static async Task DoSomeWork(string foo, int bar)
+{
+    using (Activity activity = source.StartActivity("SomeWork"))
+    {
+        activity?.SetTag("foo", foo);
+        activity?.SetTag("bar", bar);
+        await StepOne();
+        await StepTwo();
+    }
+}
 ```
 
 ```dotnetcli
@@ -265,18 +261,18 @@ Events are timestamped messages that can attach an arbitrary stream of additiona
 some events to the Activity:
 
 ```csharp
-        static async Task DoSomeWork(string foo, int bar)
-        {
-            using (Activity activity = source.StartActivity("SomeWork"))
-            {
-                activity?.SetTag("foo", foo);
-                activity?.SetTag("bar", bar);
-                await StepOne();
-                activity?.AddEvent(new ActivityEvent("Part way there"));
-                await StepTwo();
-                activity?.AddEvent(new ActivityEvent("Done now"));
-            }
-        }
+static async Task DoSomeWork(string foo, int bar)
+{
+    using (Activity activity = source.StartActivity("SomeWork"))
+    {
+        activity?.SetTag("foo", foo);
+        activity?.SetTag("bar", bar);
+        await StepOne();
+        activity?.AddEvent(new ActivityEvent("Part way there"));
+        await StepTwo();
+        activity?.AddEvent(new ActivityEvent("Done now"));
+    }
+}
 ```
 
 ```dotnetcli
@@ -319,21 +315,21 @@ The <xref:System.Diagnostics.ActivityStatusCode> values are represented as eithe
 Update DoSomeWork() to set status:
 
 ```csharp
-        static async Task DoSomeWork(string foo, int bar)
-        {
-            using (Activity activity = source.StartActivity("SomeWork"))
-            {
-                activity?.SetTag("foo", foo);
-                activity?.SetTag("bar", bar);
-                await StepOne();
-                activity?.AddEvent(new ActivityEvent("Part way there"));
-                await StepTwo();
-                activity?.AddEvent(new ActivityEvent("Done now"));
+static async Task DoSomeWork(string foo, int bar)
+{
+    using (Activity activity = source.StartActivity("SomeWork"))
+    {
+        activity?.SetTag("foo", foo);
+        activity?.SetTag("bar", bar);
+        await StepOne();
+        activity?.AddEvent(new ActivityEvent("Part way there"));
+        await StepTwo();
+        activity?.AddEvent(new ActivityEvent("Done now"));
 
-                // Pretend something went wrong
-                activity?.SetStatus(ActivityStatusCode.Error, "Use this text give more information about the error");
-            }
-        }
+        // Pretend something went wrong
+        activity?.SetStatus(ActivityStatusCode.Error, "Use this text give more information about the error");
+    }
+}
 ```
 
 ## Optional: Add additional Activities
@@ -347,21 +343,21 @@ verbose traces, so it's not recommended.
 Update StepOne and StepTwo to add more tracing around these separate steps:
 
 ```csharp
-        static async Task StepOne()
-        {
-            using (Activity activity = source.StartActivity("StepOne"))
-            {
-                await Task.Delay(500);
-            }
-        }
+static async Task StepOne()
+{
+    using (Activity activity = source.StartActivity("StepOne"))
+    {
+        await Task.Delay(500);
+    }
+}
 
-        static async Task StepTwo()
-        {
-            using (Activity activity = source.StartActivity("StepTwo"))
-            {
-                await Task.Delay(1000);
-            }
-        }
+static async Task StepTwo()
+{
+    using (Activity activity = source.StartActivity("StepTwo"))
+    {
+        await Task.Delay(1000);
+    }
+}
 ```
 
 ```dotnetcli

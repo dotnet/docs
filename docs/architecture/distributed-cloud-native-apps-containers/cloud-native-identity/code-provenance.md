@@ -26,10 +26,6 @@ Code provenance is particularly effective in mitigating risks posed by well-inte
 
 A Provenance Report categorizes code into several buckets, such as brand new code, code less than two weeks old, and code more than two years old¹. These classifications help teams understand the amount of churn, the necessity of rewriting legacy code, and the efforts made to modernize and pay down technical debt.
 
-## Conclusion
-
-Code provenance is not just about tracing the history of code; it's about building a future where software is secure, reliable, and trustworthy. As we continue to depend more on digital solutions, the role of code provenance will only become more critical. It is the silent guardian of the digital realm, ensuring that the code that powers our world is as robust and secure as the infrastructure it runs on.
-
 >[!div class="step-by-step"]
 >[Previous](code-security.md)
 >[Next](azure-security.md)

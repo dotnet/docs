@@ -27,10 +27,6 @@ The software supply chain is a complex network of developers, vendors, and third
 5. **Secure third-party components**: Ensure that all external code and libraries are from reputable sources and are up-to-date.
 6. **Educate and train staff**: A well-informed team is crucial in maintaining a secure development environment.
 
-## Conclusion
-
-As cyber threats continue to evolve, the importance of code security and a secure supply chain cannot be overstated. Organizations must adopt a proactive approach, implementing robust security measures and fostering a culture of continuous improvement. By doing so, they can protect their assets, maintain customer trust, and stay ahead in the fight against cybercrime.
-
 >[!div class="step-by-step"]
 >[Previous](security-concepts.md)
 >[Next](code-provenance.md)

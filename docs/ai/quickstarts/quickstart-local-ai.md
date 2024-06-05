@@ -8,9 +8,9 @@ author: alexwolfmsft
 ms.author: alexwolf
 ---
 
-# Connect to a local AI using .NET and Semantic Kernel
+# Connect to a local AI model using .NET and Semantic Kernel
 
-Local AI models provide powerful and flexible options for building AI solutions. In this quickstart, you'll explore how to setup and connect to a local AI model using .NET and the Semantic Kernel SDK. For this example, you'll run the local AI model using Ollama.
+Local AI models provide powerful and flexible options for building AI solutions. In this quickstart, you'll explore how to set up and connect to a local AI model using .NET and the Semantic Kernel SDK. For this example, you'll run the local AI model using Ollama.
 
 ## Prerequisites
 

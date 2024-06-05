@@ -43,7 +43,7 @@ A second technique involves comparing the difference between two floating-point 
 :::code language="vb" source="./snippets/System/Double/Equals/vb/equalsabs1.vb" id="Snippet1":::
 
 > [!NOTE]
-> For some values, you might consider them equal even when there *is* a possible floating-point value between the integer representations. For example, consider the double values `0.39` and `1.69 - .3` (which is calculated as `0.3899999999999999`). On a little-endian computer, the integer representations of these values are `4600697235336603894` and `4600697235336603892`, respectively. The difference between the integer values is `2`, meaning there *is* a possible floating-point value between `0.39` and `1.69 - .3`.
+> For some values, you might consider them equal even when there *is* a possible floating-point value between the integer representations. For example, consider the double values `0.39` and `1.69 - 1.3` (which is calculated as `0.3899999999999999`). On a little-endian computer, the integer representations of these values are `4600697235336603894` and `4600697235336603892`, respectively. The difference between the integer values is `2`, meaning there *is* a possible floating-point value between `0.39` and `1.69 - 1.3`.
 
 ### Version differences
 

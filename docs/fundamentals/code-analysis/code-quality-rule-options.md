@@ -25,8 +25,8 @@ Each refining option can be configured for all rules, for a category of rules (f
 
 The syntax for configuring an option for *all* rules is as follows:
 
-|Syntax|Example|
-|-|-|
+| Syntax                                             | Example                                    |
+|----------------------------------------------------|--------------------------------------------|
 | dotnet_code_quality.\<OptionName> = \<OptionValue> | `dotnet_code_quality.api_surface = public` |
 
 The values for `<OptionName>` are listed under [Options](#options).
@@ -35,8 +35,8 @@ The values for `<OptionName>` are listed under [Options](#options).
 
 The syntax for configuring an option for a [*category* of rules](categories.md) is as follows:
 
-|Syntax|Example|
-|-|-|
+| Syntax                                                          | Example                                           |
+|-----------------------------------------------------------------|---------------------------------------------------|
 | dotnet_code_quality.\<RuleCategory>.\<OptionName> = OptionValue | `dotnet_code_quality.Naming.api_surface = public` |
 
 The following table lists the available values for `<RuleCategory>`.
@@ -65,8 +65,8 @@ The following table lists the available values for `<RuleCategory>`.
 
 The syntax for configuring an option for a *specific* rule is as follows:
 
-|Syntax|Example|
-|-|-|
+| Syntax                                                       | Example                                           |
+|--------------------------------------------------------------|---------------------------------------------------|
 | dotnet_code_quality.\<RuleId>.\<OptionName> = \<OptionValue> | `dotnet_code_quality.CA1040.api_surface = public` |
 
 ## Options

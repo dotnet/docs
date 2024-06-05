@@ -68,7 +68,7 @@ For example, to create a Visual Basic "Hello World" application, do the followin
 
    The command creates a project file with a `.vbproj` file extension, along with a Visual Basic source code file named *Program.vb*. This file contains the source code to write the string "Hello World!" to the console window.
 
-1. Enter the command `dotnet run`. The [.NET Core CLI](../tools/index.md) automatically compiles and executes the application, which displays the message "Hello World!" in the console window.
+1. Enter the command `dotnet run`. The [.NET CLI](../tools/index.md) automatically compiles and executes the application, which displays the message "Hello World!" in the console window.
 
 ### Support for C# 7.1
 

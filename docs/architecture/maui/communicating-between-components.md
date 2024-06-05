@@ -21,9 +21,6 @@ The MVVM Toolkit `IMessenger` interface describes the publish-subscribe pattern,
 > [!NOTE]
 > The MVVM Toolkit Messenger is part of the `CommunityToolkit.Mvvm` package. For information on how to add the package to your project, see [Introduction to the MVVM Toolkit](/dotnet/communitytoolkit/mvvm/) on the Microsoft Developer Center.
 
-> [!WARNING]
-> .NET MAUI contains a built-in `MessagingCenter` class which is no longer recommended for use and should be transitioned to the MVVM Toolkit Messenger.
-
 The `IMessenger` interface allows for multicast publish-subscribe functionality. This means that there can be multiple publishers that publish a single message, and there can be multiple subscribers listening to the same message. The image below illustrates this relationship:
 
 ![Multicast publish-subscribe functionality.](./media/messaging-center.png)

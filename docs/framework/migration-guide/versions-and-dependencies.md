@@ -361,7 +361,7 @@ To determine the installed .NET version, use `Release` DWORD 378389. For more in
 
 > [!NOTE]
 >
-> - .NET Framework must be enabled on this operating system through [Control Panel (for Windows) or the Server Manager (for Windows Server)](../install/dotnet-35-windows.md#enable-the-net-framework-35-in-control-panel).
+> - .NET Framework must be enabled on this operating system through [Control Panel (for Windows) or the Server Manager (for Windows Server)](../install/dotnet-35-windows.md#enable-net-framework-35-in-control-panel).
 > - In general, you should not uninstall any versions of .NET Framework that are installed on your computer, because an application you use may depend on a specific version and may break if that version is removed. You can load multiple versions of .NET Framework on a single computer at the same time. This means that you can install .NET Framework without having to uninstall previous versions. For more information, see [Getting Started](../get-started/index.md).
 
 ## Remarks for version 4.5 and later

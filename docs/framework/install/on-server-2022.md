@@ -17,9 +17,7 @@ ms.date: 05/15/2024
 
 ## .NET Framework 3.5
 
-Follow the instructions to install [.NET Framework 3.5 on Server 2022](dotnet-35-windows.md).
-
-.NET Framework 3.5 supports apps built for .NET Framework 1.0 through 3.5.
+[!INCLUDE [server-35](includes/server-35.md)]
 
 ## See also
 

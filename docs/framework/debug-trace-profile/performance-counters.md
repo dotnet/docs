@@ -11,6 +11,8 @@ ms.assetid: 06a4ae8c-eeb2-4d5a-817e-b1b95c0653e1
 ---
 # Performance counters in .NET Framework
 
+[!INCLUDE [net-framework-specific](../includes/net-framework-specific.md)]
+
 This article provides a list of performance counters you can find in the [Windows Performance Monitor](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc749249(v=ws.11)).
 
 ## Exception performance counters

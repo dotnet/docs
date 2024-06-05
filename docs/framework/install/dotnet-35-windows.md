@@ -3,11 +3,11 @@ title: Install .NET Framework 3.5 on Windows 11, 10, 8.1, 8
 description: Learn how to install the .NET Framework 3.5 on Windows 11, Windows 10, Windows 8.1, and Windows 8.
 ms.date: 10/06/2021
 ---
-# Install the .NET Framework 3.5 on Windows 11, Windows 10, Windows 8.1, and Windows 8
+# Install .NET Framework 3.5 on Windows 11, Windows 10, Windows 8.1, and Windows 8
 
 You may need the .NET Framework 3.5 to run an app on Windows 11, Windows 10, Windows 8.1, and Windows 8. You can also use these instructions for earlier Windows versions.
 
-## Install the .NET Framework 3.5 on Demand
+## Install .NET Framework 3.5 on Demand
 
 You may see the following configuration dialog if you try to run an app that requires .NET Framework 3.5. Choose **Install this feature** to enable .NET Framework 3.5. This option requires an Internet connection.
 
@@ -17,7 +17,7 @@ You may see the following configuration dialog if you try to run an app that req
 
 The .NET Framework is created by Microsoft and provides an environment for running applications. There are different versions available. Many companies develop their apps to run using the .NET Framework, and these apps target a specific version. If you see this pop-up, you're trying to run an application that requires .NET Framework version 3.5, but that version is not installed on your system.
 
-## Enable the .NET Framework 3.5 in Control Panel
+## Enable .NET Framework 3.5 in Control Panel
 
 You can enable the .NET Framework 3.5 through the Windows Control Panel. This option requires an Internet connection.
 
@@ -33,7 +33,7 @@ You can enable the .NET Framework 3.5 through the Windows Control Panel. This op
 
 For Windows versions prior to Windows 10, the .NET Framework 3.5 SP1 offline installer is available on the [.NET Framework 3.5 SP1 Download page](https://dotnet.microsoft.com/download/dotnet-framework/net35-sp1?wt.mc_id=install-docs).
 
-## Troubleshoot the installation of the .NET Framework 3.5
+## Troubleshoot the installation
 
 During installation, you may encounter error 0x800f0906, 0x800f0907, 0x800f081f, or 0x800F0922, in which case refer to [.NET Framework 3.5 installation error: 0x800f0906, 0x800f0907, or 0x800f081f](https://support.microsoft.com/help/2734782/net-framework-3-5-installation-error-0x800f0906--0x800f081f--0x800f09) to see how to resolve these issues.
 

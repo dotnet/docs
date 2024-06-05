@@ -41,13 +41,21 @@ However, if local GPUs or Azure are not an option for you, these scenarios also 
 
 **How do I know what GPU I have?**
 
-1. Right-click on desktop
-1. If you see "NVIDIA Control Panel" or "NVIDIA Display" in the pop-up window, you have an NVIDIA GPU
-1. Click on "NVIDIA Control Panel" or "NVIDIA Display" in the pop-up window
-1. Look at "Graphics Card Information"
-1. You will see the name of your NVIDIA GPU
+***Check GPU from Settings***
 
-**I don't see NVIDIA Control Panel (or it fails to open) but I know I have an NVIDIA GPU.**
+1. Right-click on the Windows start menu icon and select **Settings**.
+1. Select **Settings** > **System**
+1. Select **Display** and scroll down to **Related settings**.
+1. Select **Advanced display**. Your GPU’s make and model should be shown under **Display information**.
+
+***Check GPU from Task Manager***
+
+1. Right-click on the Windows start menu icon and select **Task Manager**.
+1. Select **Performance**.
+1. In the last pane of the tab, choose **GPU**. If this option is available, it will likely be at the bottom of the list.
+1. In the top right corner of the GPU selection, information about your computer’s GPU will be visible.
+
+**I don't see my GPU in Settings or Task Manager but I know I have an NVIDIA GPU.**
 
 1. Open Device Manager
 1. Look at Display adapters

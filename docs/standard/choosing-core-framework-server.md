@@ -10,7 +10,7 @@ There are two supported [.NET implementations](glossary.md#implementation-of-net
 
 | Implementation | Included versions |
 | - | - |
-| .NET | .NET Core 1.0 - 3.1, .NET 5, and later versions of .NET. |
+| .NET | .NET Core 1.0 - 3.1 </br> .NET 5 and later versions |
 | .NET Framework | .NET Framework 1.0 - 4.8 |
 
 Both share many of the same components, and you can share code across the two. However, there are fundamental differences between the two, and your choice depends on what you want to accomplish. This article provides guidance on when to use each.

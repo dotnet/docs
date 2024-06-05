@@ -37,4 +37,4 @@ Ensure that the public method is a test method (marked with `[TestMethod]`).
 
 ## When to suppress warnings
 
-Do not suppress a warning from this rule. If you ignore this rule, public method won't consider as test.
+Do not suppress a warning from this rule. If you ignore this rule, the public method won't be considered as a test method.

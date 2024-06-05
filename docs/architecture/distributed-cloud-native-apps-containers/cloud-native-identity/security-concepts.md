@@ -26,9 +26,6 @@ REST is an architectural style for designing networked applications. It relies o
 
 Secret management refers to the tools and methods for managing digital authentication credentials (secrets), including passwords, keys, APIs, and tokens. In cloud environments, secret management is critical as it ensures that secrets are stored, transmitted, and used securely, without exposing them to unauthorized entities. Effective secret management systems help in rotating, controlling, and auditing secrets throughout their lifecycle.
 
-**Conclusion**
-
-The integration of SSL/TLS, RESTful services, and robust secret management practices is essential for maintaining the integrity and confidentiality of data in the cloud. As cloud technologies evolve, so too must the security measures that protect them, ensuring that data remains safe from unauthorized access and cyber threats.
 
 >[!div class="step-by-step"]
 >[Previous](identity.md)

@@ -1,6 +1,6 @@
 ---
-title: Quickstart - Connect to a local AI using .NET and Semantic Kernel
-description: Set up a local AI model and connect to it using a .NET consle app and the Semantic Kernel SDK
+title: Quickstart - Connect to and chat with a local AI using .NET and Semantic Kernel
+description: Set up a local AI model and chat with it using a .NET consle app and the Semantic Kernel SDK
 ms.date: 06/04/2024
 ms.topic: quickstart
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
@@ -8,14 +8,14 @@ author: alexwolfmsft
 ms.author: alexwolf
 ---
 
-# Connect to a local AI model using .NET and Semantic Kernel
+# Chat with a local AI model using .NET and Semantic Kernel
 
 Local AI models provide powerful and flexible options for building AI solutions. In this quickstart, you'll explore how to set up and connect to a local AI model using .NET and the Semantic Kernel SDK. For this example, you'll run the local AI model using Ollama.
 
 ## Prerequisites
 
 * [Install .NET 8.0](https://dotnet.microsoft.com/download) or higher
-* [Install Ollama](https://ollama.com/)
+* [Install Ollama](https://ollama.com/) locally on your device
 
 ## Run the local AI model
 
@@ -69,7 +69,7 @@ Complete the following steps to create a .NET console app that will connect to y
 
 The Semantic Kernel SDK provides many services and features to connect to AI models and manage interactions. In the steps ahead, you'll create a simple app that connects to the local AI and stores conversation history to improve the chat experience.
 
-1. Open the `Program.cs` file and replace the contents of the file with the following code:
+1. Open the _Program.cs_ file and replace the contents of the file with the following code:
 
     ```csharp
     using Microsoft.SemanticKernel;

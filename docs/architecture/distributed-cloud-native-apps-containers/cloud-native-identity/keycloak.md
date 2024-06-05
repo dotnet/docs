@@ -24,8 +24,8 @@ Keycloak adheres to standard protocols like OpenID Connect, OAuth 2.0, and SAML,
 Fine-Grained Authorization Services
 Beyond role-based authorization, Keycloak offers fine-grained authorization services, allowing administrators to define precise access policies for their services directly from the admin console.
 
-## Conclusion
-Keycloak represents a comprehensive solution for organizations seeking to implement robust, flexible, and user-friendly identity and access management. Its open-source nature, coupled with its extensive feature set, makes it an attractive option for businesses of all sizes aiming to bolster their security posture in an increasingly interconnected digital landscape.
+## References
+
 For more detailed information and the latest updates on Keycloak, you can visit their [official website](https://www.keycloak.org/).
 
 >[!div class="step-by-step"]

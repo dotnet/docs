@@ -14,7 +14,7 @@ This eBook provides guidance on building cross-platform enterprise apps using .N
 
 The guide provides architectural guidance for developing adaptable, maintainable, and testable .NET MAUI enterprise apps. Guidance is provided on how to implement MVVM, dependency injection, navigation, validation, and configuration management, while maintaining loose coupling. In addition, there's also guidance on performing authentication and authorization with IdentityServer, accessing data from containerized microservices, and unit testing.
 
-The guide comes with source code for the [eShop multi-platform app](https://github.com/dotnet-architecture/eShop/tree/main/src/Mobile), and source code for the [eShop reference app](https://github.com/dotnet-architecture/eShop). The eShop multi-platform app is a cross-platform enterprise app developed using .NET MAUI, which connects to a series of containerized microservices known as the eShop reference app. However, the eShop multi-platform app can be configured to consume data from mock services for those who wish to avoid deploying the containerized microservices.
+The guide comes with source code for the [eShop multi-platform app](https://github.com/dotnet/eShop/tree/main/src/ClientApp), and source code for the [eShop reference app](https://github.com/dotnet/eShop). The eShop multi-platform app is a cross-platform enterprise app developed using .NET MAUI, which connects to a series of containerized microservices known as the eShop reference app. However, the eShop multi-platform app can be configured to consume data from mock services for those who wish to avoid deploying the containerized microservices.
 
 ## What's left out of this guide's scope
 

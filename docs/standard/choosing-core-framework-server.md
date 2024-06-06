@@ -8,6 +8,11 @@ ms.custom: updateeachrelease
 
 There are two supported [.NET implementations](glossary.md#implementation-of-net) for building server-side apps: .NET and .NET Framework. **The latest .NET version (currently .NET 8) is the preferred version of .NET to use for server development.** The reasons to continue using .NET Framework are specific and limited.
 
+| Implementation | Included versions |
+| - | - |
+| .NET | .NET Core 1.0 - 3.1 </br> .NET 5 and later versions |
+| .NET Framework | .NET Framework 1.0 - 4.8 |
+
 ## Choose .NET
 
 .NET has the following advantages for server apps:

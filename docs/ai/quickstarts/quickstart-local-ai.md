@@ -16,6 +16,7 @@ Local AI models provide powerful and flexible options for building AI solutions.
 
 * [Install .NET 8.0](https://dotnet.microsoft.com/download) or higher
 * [Install Ollama](https://ollama.com/) locally on your device
+* [Visual Studio Code](https://code.visualstudio.com/) (optional)
 
 ## Run the local AI model
 
@@ -104,8 +105,12 @@ The Semantic Kernel SDK provides many services and features to connect to AI mod
             response += item.Content;
         }
         chatHistory.Add(new ChatMessageContent(AuthorRole.Assistant, response));
+        Console.WriteLine();
     }
     ```
+
+    > [!NOTE]
+    > The `#pragma warning disable SKEXP0010` line is included due to the experimental state of some Semantic Kernel SDK features.
 
     The preceding code accomplishes the following tasks:
     - Creates a `Kernel` object and uses it to retrieve a chat completion service.

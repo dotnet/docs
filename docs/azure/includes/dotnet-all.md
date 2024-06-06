@@ -498,7 +498,7 @@
 | Microsoft.Azure.Functions.Worker.Extensions.Storage.Queues | NuGet [5.4.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage.Queues/5.4.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Storage.Tables | NuGet [1.0.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage.Tables/1.0.0-preview1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Tables | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Tables/1.3.0) |  |  |
-| Microsoft.Azure.Functions.Worker.Extensions.Timer | NuGet [4.3.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Timer/4.3.0) |  |  |
+| Microsoft.Azure.Functions.Worker.Extensions.Timer | NuGet [4.3.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Timer/4.3.1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Warmup | NuGet [4.0.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Warmup/4.0.2) |  |  |
 | Microsoft.Azure.Functions.Worker.Grpc | NuGet [1.16.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Grpc/1.16.0) |  |  |
 | Microsoft.Azure.Functions.Worker.ItemTemplates | NuGet [4.0.3038](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates/4.0.3038) |  |  |

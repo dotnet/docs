@@ -61,7 +61,7 @@ public class Example
         char ch = Console.ReadKey().KeyChar;
         if (ch == 'c' || ch == 'C')
         {
-            await tokenSource.CancelAsync();
+            tokenSource.Cancel();
             Console.WriteLine("\nMain: Task cancellation requested.");
 
             // Optional: Observe the change in the Status property on the task.

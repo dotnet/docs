@@ -3,6 +3,7 @@ author: adegeo
 ms.author: adegeo
 ms.date: 11/14/2023
 ms.topic: include
+ms.custom: linux-related-content
 ---
 
 ### Install the SDK

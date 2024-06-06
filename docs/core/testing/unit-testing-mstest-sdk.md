@@ -192,8 +192,6 @@ By setting the property `EnablePlaywright` to `true` you can bring all dependenc
 
 When migrating an existing MSTest test project to MSTest SDK, start by replacing the `Sdk="Microsoft.NET.Sdk"` entry at the top of your test project with `Sdk="MSTest.Sdk/3.3.1"`
 
-`Sdk="MSTest.Sdk/3.3.1"`
-
 ```diff
 - Sdk="Microsoft.NET.Sdk"
 + Sdk="MSTest.Sdk"

@@ -3,7 +3,7 @@ title: Unit Testing
 description:  Learn how to provide application testing and improve code quality in .NET MAUI.
 author: michaelstonis
 no-loc: [MAUI]
-ms.date: 07/11/2022
+ms.date: 05/30/2024
 ---
 
 # Unit testing
@@ -62,14 +62,14 @@ Testing models and view models from MVVM applications is identical to testing an
 
 Don't be tempted to make a unit test exercise more than one aspect of the unit's behavior. Doing so leads to tests that are difficult to read and update. It can also lead to confusion when interpreting a failure.
 
-The eShopOnContainers multi-platform app uses [xUnit](https://xunit.net/) to perform unit testing, which supports two different types of unit tests:
+The eShop multi-platform app uses [xUnit](https://xunit.net/) to perform unit testing, which supports two different types of unit tests:
 
 | Testing Type | Attribute | Description                                                  |
 |--------------|-----------|--------------------------------------------------------------|
 | Facts        | `Fact`    | Tests that are always true, which test invariant conditions. |
 | Theories     | `Theory`  | Tests that are only true for a particular set of data.       |
 
-The unit tests included with the eShopOnContainers multi-platform app are fact tests, so each unit test method is decorated with the `Fact` attribute.
+The unit tests included with the eShop multi-platform app are fact tests, so each unit test method is decorated with the `Fact` attribute.
 
 ## Testing asynchronous functionality
 
@@ -126,33 +126,28 @@ This unit test invokes the `InitializeAsync` method of the `OrderViewModel` clas
 
 ## Testing message-based communication
 
-View models that use the `WeakReferenceMessenger` class to communicate between loosely-coupled classes can be unit tested by subscribing to the message being sent by the code under test, as demonstrated in the following code example:
+View models that use the `MessagingCenter` class to communicate between loosely coupled classes can be unit tested by subscribing to the message being sent by the code under test, as demonstrated in the following code example:
 
 ```csharp
 [Fact]
-public async Task AddCatalogItemCommandSendsAddProductMessageTest()
+public void AddCatalogItemCommandSendsAddProductMessageTest()
 {
-    bool messageReceived = false;
+    var messageReceived = false;
+    var catalogService = new CatalogMockService();
+    var catalogViewModel = new CatalogViewModel(catalogService);
 
-    var catalogItemViewModel = new CatalogItemViewModel(_appEnvironmentService, _navigationService);
+    MessagingCenter.Subscribe<CatalogViewModel, CatalogItem>(
+        this, MessageKeys.AddProduct, (sender, arg) =>
+    {
+        messageReceived = true;
+    });
+    catalogViewModel.AddCatalogItemCommand.Execute(null);
 
-    catalogItemViewModel.CatalogItem = new CatalogItem {Id = 123, Name = "test", Price = 1.23m,};
-
-    WeakReferenceMessenger.Default
-        .Register<CatalogItemViewModelTests, ProductCountChangedMessage>(
-            this,
-            (_, message) =>
-            {
-                messageReceived = true;
-            });
-
-    await catalogItemViewModel.AddCatalogItemCommand.ExecuteUntilComplete();
-
-    Assert.True(messageReceived);
+    Assert.True(messageReceived);
 }
 ```
 
-This unit test checks that the `CatalogViewModel` publishes the `AddProduct` message in response to its `AddCatalogItemCommand` being executed. Because the `WeakReferenceMessenger` class supports multicast message subscriptions, the unit test can subscribe to the `AddProduct` message and execute a callback delegate in response to receiving it. This callback delegate, specified as a lambda expression, sets a boolean field that's used by the `Assert` statement to verify the behavior of the test.
+This unit test checks that the `CatalogViewModel` publishes the `AddProduct` message in response to its `AddCatalogItemCommand` being executed. Because the `MessagingCenter` class supports multicast message subscriptions, the unit test can subscribe to the `AddProduct` message and execute a callback delegate in response to receiving it. This callback delegate, specified as a lambda expression, sets a boolean field that's used by the `Assert` statement to verify the behavior of the test.
 
 ## Testing exception handling
 

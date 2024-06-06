@@ -278,7 +278,7 @@ public class UserGrain : Grain, IUserGrain
 
 ### Failure modes for read operations
 
-Failures returned by the storage provider during the initial read of state data for that particular grain fails the activate operation for that grain; in such case, there won't* be any call to that grain's `OnActivateAsync` life cycle callback method. The original request to the grain, which caused the activation will be faulted back to the caller, the same way as any other failure during grain activation. Failures encountered by the storage provider when reading state data for a particular grain result in an exception from `ReadStateAsync` `Task`. The grain can choose to handle or ignore the `Task` exception, just like any other `Task` in Orleans.
+Failures returned by the storage provider during the initial read of state data for that particular grain fails the activate operation for that grain; in such case, there won't be any call to that grain's `OnActivateAsync` life cycle callback method. The original request to the grain, which caused the activation will be faulted back to the caller, the same way as any other failure during grain activation. Failures encountered by the storage provider when reading state data for a particular grain result in an exception from `ReadStateAsync` `Task`. The grain can choose to handle or ignore the `Task` exception, just like any other `Task` in Orleans.
 
 Any attempt to send a message to a grain that failed to load at silo startup time due to a missing/bad storage provider config returns the permanent error <xref:Orleans.Storage.BadProviderConfigException>.
 

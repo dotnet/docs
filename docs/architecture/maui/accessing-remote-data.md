@@ -6,7 +6,7 @@ no-loc: [MAUI]
 ms.date: 05/30/2024
 ---
 
-# Accessing Remote Data
+# Accessing remote data
 
 [!INCLUDE [download-alert](includes/download-alert.md)]
 

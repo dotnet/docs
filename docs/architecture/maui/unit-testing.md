@@ -126,7 +126,7 @@ This unit test invokes the `InitializeAsync` method of the `OrderViewModel` clas
 
 ## Testing message-based communication
 
-View models that use the `MessagingCenter` class to communicate between loosely-coupled classes can be unit tested by subscribing to the message being sent by the code under test, as demonstrated in the following code example:
+View models that use the `MessagingCenter` class to communicate between loosely coupled classes can be unit tested by subscribing to the message being sent by the code under test, as demonstrated in the following code example:
 
 ```csharp
 [Fact]

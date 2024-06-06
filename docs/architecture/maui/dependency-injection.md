@@ -136,7 +136,7 @@ public static MauiAppBuilder RegisterAppServices(this MauiAppBuilder mauiAppBuil
 Once all services have been registered, the `MauiAppBuilder.Build` method should be called to create our `MauiApp` and populate our dependency injection container with all the registered services.
 
 > [!IMPORTANT]
-> Once the `Build` method has been called, the dependency injection container will be immutable and no longer can be updated or modified. Ensure that all services that you will need within your application have been registered before the `Build` methodÍ.
+> Once the `Build` method has been called, the dependency injection container is immutable and can no longer be updated or modified. Ensure that all services that you need within your application have been registered before you call `Build`.
 
 ## Resolution
 

@@ -6,7 +6,7 @@ no-loc: [MAUI]
 ms.date: 05/30/2024
 ---
 
-# Authentication and Authorization
+# Authentication and authorization
 
 [!INCLUDE [download-alert](includes/download-alert.md)]
 

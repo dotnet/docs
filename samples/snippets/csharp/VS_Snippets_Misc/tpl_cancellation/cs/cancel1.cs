@@ -8,55 +8,61 @@ public class Example
 {
     public static async Task Main()
     {
-        var tokenSource = new CancellationTokenSource();
+        // Cancellation token source for cancellation. Make sure to dispose after use (which is done here through the using expression).
+        using var tokenSource = new CancellationTokenSource();
+
+        // The cancellation token will be used to communicate cancellation to tasks
         var token = tokenSource.Token;
+
+        Console.WriteLine("Main: Press any key to begin tasks...");
+        Console.ReadKey(true);
+        Console.WriteLine("Main: To terminate the example, press 'c' to cancel and exit...");
+        Console.WriteLine();
 
         // Store references to the tasks so that we can wait on them and
         // observe their status after cancellation.
-        Task t;
         var tasks = new ConcurrentBag<Task>();
 
-        Console.WriteLine("Press any key to begin tasks...");
-        Console.ReadKey(true);
-        Console.WriteLine("To terminate the example, press 'c' to cancel and exit...");
-        Console.WriteLine();
+        // Pass the token to the user delegate so it can cancel during execution,
+        // and also to the task so it can cancel before execution starts.
+        var cancellableTask = Task.Run(() => {
+            DoSomeWork(token);
+            Console.WriteLine("Cancellable: Task {0} ran to completion", Task.CurrentId);
+        }, token);
+        Console.WriteLine("Main: Cancellable Task {0} created", cancellableTask.Id);
+        tasks.Add(cancellableTask);
 
-        // Request cancellation of a single task when the token source is canceled.
-        // Pass the token to the user delegate, and also to the task so it can
-        // handle the exception correctly.
-        t = Task.Run(() => DoSomeWork(token), token);
-        Console.WriteLine("Task {0} executing", t.Id);
-        tasks.Add(t);
-
-        // Request cancellation of a task and its children. Note the token is passed
-        // to (1) the user delegate and (2) as the second argument to Task.Run, so
-        // that the task instance can correctly handle the OperationCanceledException.
-        t = Task.Run(() =>
+        var parentTask = Task.Run(() =>
         {
-            // Create some cancelable child tasks.
-            Task tc;
-            for (int i = 3; i <= 10; i++)
+            for (int i = 0; i <= 7; i++)
             {
+                // If cancellation was requested we don't need to start any more
+                // child tasks (that would immediately cancel) => break out of loop
+                if (token.IsCancellationRequested) break;
+
                 // For each child task, pass the same token
                 // to each user delegate and to Task.Run.
-                tc = Task.Run(() => DoSomeWork(token), token);
-                Console.WriteLine("Task {0} executing", tc.Id);
-                tasks.Add(tc);
-                // Pass the same token again to do work on the parent task.
-                // All will be signaled by the call to tokenSource.Cancel below.
-                DoSomeWork(token);
-            }
-        }, token);
+                var childTask = Task.Run(() => {
+                    DoSomeWork(token);
+                    Console.WriteLine("Child: Task {0} ran to completion", Task.CurrentId);
+                }, token);
+                Console.WriteLine("Parent: Task {0} created", childTask.Id);
+                tasks.Add(childTask);
 
-        Console.WriteLine("Task {0} executing", t.Id);
-        tasks.Add(t);
+                DoSomeWork(token, maxIterations: 1);
+            }
+
+            Console.WriteLine("Parent: Task {0} ran to completion", Task.CurrentId);
+        }, token);
+        Console.WriteLine("Main: Parent Task {0} created", parentTask.Id);
+        tasks.Add(parentTask);
 
         // Request cancellation from the UI thread.
         char ch = Console.ReadKey().KeyChar;
         if (ch == 'c' || ch == 'C')
         {
-            tokenSource.Cancel();
-            Console.WriteLine("\nTask cancellation requested.");
+            await tokenSource.CancelAsync();
+            Console.WriteLine("\nMain: Task cancellation requested.");
 
             // Optional: Observe the change in the Status property on the task.
             // It is not necessary to wait on tasks that have canceled. However,
@@ -68,33 +74,29 @@ public class Example
 
         try
         {
-            await Task.WhenAll(tasks.ToArray());
+            // Wait for all tasks before disposing the cancellation token source
+            await Task.WhenAll(tasks);
         }
         catch (OperationCanceledException)
         {
-            Console.WriteLine($"\n{nameof(OperationCanceledException)} thrown\n");
-        }
-        finally
-        {
-            tokenSource.Dispose();
+            Console.WriteLine($"\nMain: {nameof(OperationCanceledException)} thrown\n");
         }
 
         // Display status of all tasks.
         foreach (var task in tasks)
-            Console.WriteLine("Task {0} status is now {1}", task.Id, task.Status);
+        {
+            Console.WriteLine("Main: Task {0} status is now {1}", task.Id, task.Status);
+        }
     }
 
-    static void DoSomeWork(CancellationToken ct)
+    static void DoSomeWork(CancellationToken ct, int maxIterations = 10)
     {
         // Was cancellation already requested?
         if (ct.IsCancellationRequested)
         {
-            Console.WriteLine("Task {0} was cancelled before it got started.",
-                              Task.CurrentId);
+            Console.WriteLine("Task {0} was cancelled before it got started.", Task.CurrentId);
             ct.ThrowIfCancellationRequested();
         }
-
-        int maxIterations = 100;
 
         // NOTE!!! A "TaskCanceledException was unhandled
         // by user code" error will be raised here if "Just My Code"
@@ -110,37 +112,49 @@ public class Example
 
             if (ct.IsCancellationRequested)
             {
-                Console.WriteLine("Task {0} cancelled", Task.CurrentId);
+                Console.WriteLine("Task {0} work cancelled", Task.CurrentId);
                 ct.ThrowIfCancellationRequested();
             }
         }
     }
 }
 // The example displays output like the following:
-//       Press any key to begin tasks...
-//    To terminate the example, press 'c' to cancel and exit...
+//    Main: Press any key to begin tasks...
+//    Main: To terminate the example, press 'c' to cancel and exit...
 //
-//    Task 1 executing
-//    Task 2 executing
-//    Task 3 executing
-//    Task 4 executing
-//    Task 5 executing
-//    Task 6 executing
-//    Task 7 executing
-//    Task 8 executing
+//    Main: Cancellable Task 13 created
+//    Main: Parent Task 14 created
+//    Parent: Task 15 created
+//    Parent: Task 16 created
+//    Parent: Task 17 created
+//    Parent: Task 18 created
+//    Parent: Task 19 created
+//    Parent: Task 20 created
+//    Cancellable: Task 13 ran to completion
+//    Child: Task 15 ran to completion
+//    Parent: Task 21 created
+//    Child: Task 16 ran to completion
+//    Parent: Task 22 created
+//    Child: Task 17 ran to completion
 //    c
-//    Task cancellation requested.
-//    Task 2 cancelled
-//    Task 7 cancelled
+//    Main: Task cancellation requested.
+//    Task 20 work cancelled
+//    Task 21 work cancelled
+//    Task 22 work cancelled
+//    Task 18 work cancelled
+//    Task 14 work cancelled
+//    Task 19 work cancelled
 //
-//    OperationCanceledException thrown
+//    Main: OperationCanceledException thrown
 //
-//    Task 2 status is now Canceled
-//    Task 1 status is now RanToCompletion
-//    Task 8 status is now Canceled
-//    Task 7 status is now Canceled
-//    Task 6 status is now RanToCompletion
-//    Task 5 status is now RanToCompletion
-//    Task 4 status is now RanToCompletion
-//    Task 3 status is now RanToCompletion
+//    Main: Task 22 status is now Canceled
+//    Main: Task 21 status is now Canceled
+//    Main: Task 20 status is now Canceled
+//    Main: Task 19 status is now Canceled
+//    Main: Task 18 status is now Canceled
+//    Main: Task 17 status is now RanToCompletion
+//    Main: Task 16 status is now RanToCompletion
+//    Main: Task 15 status is now RanToCompletion
+//    Main: Task 14 status is now Canceled
+//    Main: Task 13 status is now RanToCompletion
 // </Snippet04>

@@ -81,13 +81,13 @@ The Semantic Kernel SDK provides many services and features to connect to AI mod
                         .AddOpenAIChatCompletion(
                             modelId: "phi3:mini",
                             endpoint: new Uri("http://localhost:11434"),
-                            apiKey: String.Empty)
+                            apiKey: "")
                         .Build();
     
     var aiChatService = kernel.GetRequiredService<IChatCompletionService>();
     var chatHistory = new ChatHistory();
     
-    while(true)
+    while (true)
     {
         // Get user prompt and add to chat history
         Console.WriteLine("Your prompt:");
@@ -96,8 +96,9 @@ The Semantic Kernel SDK provides many services and features to connect to AI mod
     
         // Stream the AI response and add to chat history
         Console.WriteLine("AI Response:");
-        var response = String.Empty;
-        await foreach(var item in aiChatService.GetStreamingChatMessageContentsAsync(chatHistory))
+        var response = "";
+        await foreach(var item in 
+            aiChatService.GetStreamingChatMessageContentsAsync(chatHistory))
         {
             Console.Write(item.Content);
             response += item.Content;

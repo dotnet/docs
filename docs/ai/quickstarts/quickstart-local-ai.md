@@ -112,6 +112,9 @@ The Semantic Kernel SDK provides many services and features to connect to AI mod
     - Retrieves a prompt from the user and stores it in the `ChatHistory`.
     - Sends the chat data to the AI model to generate a response.
 
+    > [!NOTE]
+    > Ollama runs on portal 11434 by default, which is why the AI model endpoint is set to `http://localhost:11434`.
+
 1. Run the app and enter a prompt into the console to receive a response from the AI, such as the following:
 
     ```output

@@ -3,11 +3,10 @@ title: "Authenticate and Authorize App Service to Azure OpenAI using Microsoft E
 description: "Learn how to authenticate and authorize your app service application to an Azure OpenAI resource by using Microsoft Entra managed identities and the Semantic Kernel SDK for .NET."
 author: haywoodsloan
 ms.topic: how-to
+ms.custom: devx-track-azurecli
 ms.date: 04/19/2024
 zone_pivot_groups: azure-interface
-
 #customer intent: As a .NET developer, I want authenticate and authorize my App Service to Azure OpenAI by using Microsoft Entra so that I can securely use AI in my .NET application.
-
 ---
 
 # Authenticate and authorize App Service to Azure OpenAI using Microsoft Entra and the Semantic Kernel SDK

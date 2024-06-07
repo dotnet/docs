@@ -66,7 +66,7 @@ To download the complete code for this example, see the [SimpleCalculator sample
 
 - Add a reference to the `System.ComponentModel.Composition` assembly, where MEF resides.
 
-- Open *Module1.vb* or *Program.cs* and add `Imports` or `using` statements for `System.ComponentModel.Composition` and `System.ComponentModel.Composition.Hosting`. These two namespaces contain MEF types you will need to develop an extensible application.
+- Open *Module1.vb* or *Program.cs* and add `Imports` or `using` directives for `System.ComponentModel.Composition` and `System.ComponentModel.Composition.Hosting`. These two namespaces contain MEF types you will need to develop an extensible application.
 
 - If you're using Visual Basic, add the `Public` keyword to the line that declares the `Module1` module.
 
@@ -439,7 +439,7 @@ catalog.Catalogs.Add(
 
 Replace the example path with the path to your Extensions directory. (This absolute path is for debugging purposes only. In a production application, you would use a relative path.) The <xref:System.ComponentModel.Composition.Hosting.DirectoryCatalog> will now add any parts found in any assemblies in the Extensions directory to the composition container.
 
-In the ExtendedOperations project, add references to SimpleCalculator and System.ComponentModel.Composition. In the ExtendedOperations class file, add an `Imports` or a `using` statement for System.ComponentModel.Composition. In Visual Basic, also add an `Imports` statement for SimpleCalculator. Then add the following class to the ExtendedOperations class file:
+In the `ExtendedOperations` project, add references to `SimpleCalculator` and `System.ComponentModel.Composition`. In the `ExtendedOperations` class file, add an `Imports` or a `using` directive for `System.ComponentModel.Composition`. In Visual Basic, also add an `Imports` statement for `SimpleCalculator`. Then add the following class to the `ExtendedOperations` class file:
 
 ```vb
 <Export(GetType(SimpleCalculator.IOperation))>

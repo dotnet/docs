@@ -113,8 +113,8 @@ Applications and libraries add distributed tracing instrumentation using the
 ### ActivitySource
 
 First create an instance of ActivitySource. ActivitySource provides APIs to create and
-start Activity objects. Add the static ActivitySource variable above Main() and
-`using System.Diagnostics;` to the using statements.
+start Activity objects. Add the static ActivitySource variable above `Main()` and
+`using System.Diagnostics;` to the using directives.
 
 ```csharp
 using OpenTelemetry;

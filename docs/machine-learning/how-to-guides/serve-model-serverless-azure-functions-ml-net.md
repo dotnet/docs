@@ -59,7 +59,7 @@ Create a class to predict sentiment. Add a new class to your project:
 
 1. In the **New Azure Function** dialog box, select **Http Trigger** and choose **Anonymous** from the Authorization level dropdown. Then, select the **OK** button.
 
-    The *AnalyzeSentiment.cs* file opens in the code editor. Add the following `using` statement to the top of *AnalyzeSentiment.cs*:
+    The *AnalyzeSentiment.cs* file opens in the code editor. Add the following `using` directive to the top of *AnalyzeSentiment.cs*:
 
     [!code-csharp [AnalyzeUsings](~/machinelearning-samples/samples/csharp/end-to-end-apps/ScalableMLModelOnAzureFunction/SentimentAnalysisFunctionsApp/AnalyzeSentiment.cs#L1-L11)]
 
@@ -81,7 +81,7 @@ You need to create some classes for your input data and predictions. Add a new c
 2. In Solution Explorer, right-click the *DataModels* directory, and then select **Add > Class**.
 3. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *SentimentData.cs*. Then, select the **Add** button.
 
-    The *SentimentData.cs* file opens in the code editor. Add the following using statement to the top of *SentimentData.cs*:
+    The *SentimentData.cs* file opens in the code editor. Add the following `using` directive to the top of *SentimentData.cs*:
 
     [!code-csharp [SentimentDataUsings](~/machinelearning-samples/samples/csharp/end-to-end-apps/ScalableMLModelOnAzureFunction/SentimentAnalysisFunctionsApp/DataModels/SentimentData.cs#L1)]
 
@@ -90,7 +90,7 @@ You need to create some classes for your input data and predictions. Add a new c
     [!code-csharp [SentimentData](~/machinelearning-samples/samples/csharp/end-to-end-apps/ScalableMLModelOnAzureFunction/SentimentAnalysisFunctionsApp/DataModels/SentimentData.cs#L5-L13)]
 
 4. In Solution Explorer, right-click the *DataModels* directory, and then select **Add > Class**.
-5. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *SentimentPrediction.cs*. Then, select the **Add** button. The *SentimentPrediction.cs* file opens in the code editor. Add the following using statement to the top of *SentimentPrediction.cs*:
+5. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *SentimentPrediction.cs*. Then, select the **Add** button. The *SentimentPrediction.cs* file opens in the code editor. Add the following `using` directive to the top of *SentimentPrediction.cs*:
 
     [!code-csharp [SentimentPredictionUsings](~/machinelearning-samples/samples/csharp/end-to-end-apps/ScalableMLModelOnAzureFunction/SentimentAnalysisFunctionsApp/DataModels/SentimentPrediction.cs#L1)]
 
@@ -108,11 +108,11 @@ The following link provides more information if you want to learn more about [de
 
 1. In **Solution Explorer**, right-click the project, and then select **Add** > **Class**.
 1. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *Startup.cs*. Then, select the **Add** button.
-1. Add the following using statements to the top of *Startup.cs*:
+1. Add the following `using` directives to the top of *Startup.cs*:
 
     [!code-csharp [StartupUsings](~/machinelearning-samples/samples/csharp/end-to-end-apps/ScalableMLModelOnAzureFunction/SentimentAnalysisFunctionsApp/Startup.cs#L1-L7)]
 
-1. Remove the existing code below the using statements and add the following code:
+1. Remove the existing code below the `using` directives and add the following code:
 
     ```csharp
     [assembly: FunctionsStartup(typeof(Startup))]

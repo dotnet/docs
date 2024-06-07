@@ -133,7 +133,7 @@ To make a single prediction, you have to create a <xref:Microsoft.ML.PredictionE
     1. Select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
 
 1. Open the *Program.cs* file in the *SentimentRazor* project.
-1. Add the following using statements to reference the *Microsoft.Extensions.ML* NuGet package and *SentimentRazorML.Model* project:
+1. Add the following `using` directives to reference the *Microsoft.Extensions.ML* NuGet package and *SentimentRazorML.Model* project:
 
     ```csharp
     using Microsoft.Extensions.ML;
@@ -151,7 +151,7 @@ To make a single prediction, you have to create a <xref:Microsoft.ML.PredictionE
 
 Predictions will be made inside the main page of the application. Therefore, a method that takes the user input and uses the <xref:Microsoft.Extensions.ML.PredictionEnginePool%602> to return a prediction needs to be added.
 
-1. Open the *Index.cshtml.cs* file located in the *Pages* directory and add the following using statements:
+1. Open the *Index.cshtml.cs* file located in the *Pages* directory and add the following `using` directives:
 
     ```csharp
     using Microsoft.Extensions.ML;

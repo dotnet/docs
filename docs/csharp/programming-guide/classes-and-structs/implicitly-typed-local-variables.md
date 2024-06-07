@@ -2,7 +2,7 @@
 title: "Implicitly typed local variables"
 description: The var keyword in C# instructs the compiler to infer the type of the variable from the expression on the right side of the initialization statement.
 ms.date: 07/20/2015
-helpviewer_keywords: 
+helpviewer_keywords:
   - "implicitly-typed local variables [C#]"
   - "var [C#]"
 ms.assetid: b9218fb2-ef5d-4814-8a8e-2bc29b0bbc9b
@@ -96,4 +96,4 @@ The use of `var` helps simplify your code, but its use should be restricted to c
 - [LINQ in C#](../../linq/index.md)
 - [LINQ (Language-Integrated Query)](../../linq/index.md)
 - [Iteration statements](../../language-reference/statements/iteration-statements.md)
-- [using statement](../../language-reference/statements/using.md)
+- [`using` statement](../../language-reference/statements/using.md)

@@ -45,7 +45,7 @@ using System.Collections.Generic;
 using System.Linq;
 ```
 
-If these three lines (`using` statements) aren't at the top of the file, our program will not compile.
+If these three lines (`using` directives) aren't at the top of the file, your program might not compile.
 
 Now that you have all of the references that you'll need, consider what constitutes a deck of cards. Commonly, a deck of playing cards has four suits, and each suit has thirteen values. Normally, you might consider creating a `Card` class right off the bat and populating a collection of `Card` objects by hand. With LINQ, you can be more concise than the usual way of dealing with creating a deck of cards. Instead of creating a `Card` class, you can create two sequences to represent suits and ranks, respectively. You'll create a really simple pair of [*iterator methods*](../iterators.md#enumeration-sources-with-iterator-methods) that will generate the ranks and suits as <xref:System.Collections.Generic.IEnumerable%601>s of strings:
 

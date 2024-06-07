@@ -108,7 +108,7 @@ XML documentation starts with `///`. When you create a new project, the template
 - The documentation must be well-formed XML. If the XML isn't well formed, the compiler generates a warning. The documentation file will contain a comment that says that an error was encountered.
 - Some of the recommended tags have special meanings:
   - The `<param>` tag is used to describe parameters. If used, the compiler verifies that the parameter exists and that all parameters are described in the documentation. If the verification fails, the compiler issues a warning.
-  - The `cref` attribute can be attached to any tag to reference a code element. The compiler verifies that this code element exists. If the verification fails, the compiler issues a warning. The compiler respects any `using` statements when it looks for a type described in the `cref` attribute.
+  - The `cref` attribute can be attached to any tag to reference a code element. The compiler verifies that this code element exists. If the verification fails, the compiler issues a warning. The compiler respects any `using` directives when it looks for a type described in the `cref` attribute.
   - The `<summary>` tag is used by IntelliSense inside Visual Studio to display additional information about a type or member.
     > [!NOTE]
     > The XML file does not provide full information about the type and members (for example, it does not contain any type information). To get full information about a type or member, use the documentation file together with reflection on the actual type or member.
@@ -295,15 +295,15 @@ The `<example>` tag lets you specify an example of how to use a method or other 
 
 ### \<inheritdoc>
 
-```xml  
+```xml
 <inheritdoc [cref=""] [path=""]/>
-```  
+```
 
 Inherit XML comments from base classes, interfaces, and similar methods. Using `inheritdoc` eliminates unwanted copying and pasting of duplicate XML comments and automatically keeps XML comments synchronized. Note that when you add the `<inheritdoc>` tag to a type, all members will inherit the comments as well.
 
 - `cref`:  Specify the member to inherit documentation from. Already defined tags on the current member are not overridden by the inherited ones.
 - `path`: The XPath expression query that will result in a node set to show. You can use this attribute to filter the tags to include or exclude from the inherited documentation.
-  
+
 Add your XML comments in base classes or interfaces and let inheritdoc copy the comments to implementing classes. Add your XML comments to your synchronous methods and let inheritdoc copy the comments to your asynchronous versions of the same methods. If you want to copy the comments from a specific member, you use the `cref` attribute to specify the member.
 
 ### \<include>

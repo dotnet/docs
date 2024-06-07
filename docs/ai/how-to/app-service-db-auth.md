@@ -3,11 +3,10 @@ title: "Authenticate and Authorize App Service to a Vector Database"
 description: "Learn how to authenticate and authorize your App Service .NET application to a vector database solution using Microsoft Entra managed identities, Key Vault, or app settings"
 author: haywoodsloan
 ms.topic: how-to
+ms.custom: devx-track-azurecli
 ms.date: 04/24/2024
 zone_pivot_groups: azure-interface
-
 #customer intent: As a .NET developer, I want authenticate and authorize my App Service to a vector database so that I can securely add memories to the AI in my .NET application.
-
 ---
 
 # Authenticate and authorize App Service to a vector database

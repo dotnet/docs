@@ -69,7 +69,7 @@ The eShop multi-platform app uses [MSTest](../../core/testing/unit-testing-with-
 | TestMethod      | `TestMethod` | Defines the actual test method to run..                      |
 | DataSource      | `DataSource` | Tests that are only true for a particular set of data.       |
 
-The unit tests included with the eShop multi-platform app are TestMethod, so each unit test method is decorated with the `TestMethod` attribute. In addition to MSTest there are several other testing frameworks available including [NUnit](../../core/testing/unit-testing-with-nunit.md) and [xUnit](../../core/testing/unit-testing-with-dotnet-test.md). 
+The unit tests included with the eShop multi-platform app are TestMethod, so each unit test method is decorated with the `TestMethod` attribute. In addition to MSTest there are several other testing frameworks available including [NUnit](../../core/testing/unit-testing-with-nunit.md) and [xUnit](../../core/testing/unit-testing-with-dotnet-test.md).
 
 ## Testing asynchronous functionality
 

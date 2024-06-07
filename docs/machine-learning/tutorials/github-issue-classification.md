@@ -58,7 +58,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 ### Create classes and define paths
 
-Add the following additional `using` statements to the top of the *Program.cs* file:
+Add the following additional `using` directives to the top of the *Program.cs* file:
 
 [!code-csharp[AddUsings](./snippets/github-issue-classification/csharp/Program.cs#AddUsings)]
 
@@ -71,7 +71,7 @@ Create three global fields to hold the paths to the recently downloaded files, a
 * `_trainingDataView` is the <xref:Microsoft.ML.IDataView> used to process the training dataset.
 * `_predEngine` is the <xref:Microsoft.ML.PredictionEngine%602> used for single predictions.
 
-Add the following code to the line directly below the using statements to specify those paths and the other variables:
+Add the following code to the line directly below the `using` directives to specify those paths and the other variables:
 
 [!code-csharp[DeclareGlobalVariables](./snippets/github-issue-classification/csharp/Program.cs#DeclareGlobalVariables)]
 
@@ -81,7 +81,7 @@ Create some classes for your input data and predictions. Add a new class to your
 
 1. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *GitHubIssueData.cs*. Then, select the **Add** button.
 
-   The *GitHubIssueData.cs* file opens in the code editor. Add the following `using` statement to the top of *GitHubIssueData.cs*:
+   The *GitHubIssueData.cs* file opens in the code editor. Add the following `using` directive to the top of *GitHubIssueData.cs*:
 
 [!code-csharp[AddUsings](./snippets/github-issue-classification/csharp/GitHubIssueData.cs#AddUsings)]
 

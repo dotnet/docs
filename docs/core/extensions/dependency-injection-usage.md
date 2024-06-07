@@ -100,8 +100,8 @@ Update *Program.cs* with the following code:
 
 Each `services.Add{LIFETIME}<{SERVICE}>` extension method adds (and potentially configures) services. We recommend that apps follow this convention. Don't place extension methods in the <xref:Microsoft.Extensions.DependencyInjection?displayProperty=fullName> namespace unless you're authoring an official Microsoft package. Extension methods that are defined within the `Microsoft.Extensions.DependencyInjection` namespace:
 
-- Are displayed in [IntelliSense](/visualstudio/ide/using-intellisense) without requiring additional `using` blocks.
-- Reduce the number of required `using` statements in the `Program` or `Startup` classes where these extension methods are typically called.
+- Are displayed in [IntelliSense](/visualstudio/ide/using-intellisense) without requiring additional `using` directives.
+- Reduce the number of required `using` directives in the `Program` or `Startup` classes where these extension methods are typically called.
 
 The app:
 

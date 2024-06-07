@@ -32,7 +32,7 @@ using Project = PC.MyCompany.Project;
 You can use the `global` modifier on a *using alias directive*.
 
 > [!NOTE]
-> The `using` keyword is also used to create *using statements*, which help ensure that <xref:System.IDisposable> objects such as files and fonts are handled correctly. For more information about the *using statement*, see [using statement](../statements/using.md).
+> The `using` keyword is also used to create *`using` statements*, which help ensure that <xref:System.IDisposable> objects such as files and fonts are handled correctly. For more information about the *`using` statement*, see [`using` statement](../statements/using.md).
 
 The scope of a `using` directive without the `global` modifier is the file in which it appears.
 

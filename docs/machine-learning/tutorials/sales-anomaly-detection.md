@@ -45,7 +45,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
     In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the Browse tab, search for **Microsoft.ML** and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed. Repeat these steps for **Microsoft.ML.TimeSeries**.
 
-5. Add the following `using` statements at the top of your *Program.cs* file:
+5. Add the following `using` directives at the top of your *Program.cs* file:
 
     [!code-csharp[AddUsings](./snippets/sales-anomaly-detection/csharp/Program.cs#AddUsings "Add necessary usings")]
 
@@ -81,7 +81,7 @@ Add a new class to your project:
 
    The *ProductSalesData.cs* file opens in the code editor.
 
-3. Add the following `using` statement to the top of *ProductSalesData.cs*:
+3. Add the following `using` directive to the top of *ProductSalesData.cs*:
 
    ```csharp
    using Microsoft.ML.Data;
@@ -100,7 +100,7 @@ Add a new class to your project:
     * `_dataPath` has the path to the dataset used to train the model.
     * `_docsize` has the number of records in dataset file. You'll use `_docSize` to calculate `pvalueHistoryLength`.
 
-6. Add the following code to the line right below the using statements to specify those paths:
+6. Add the following code to the line right below the `using` directives to specify those paths:
 
     [!code-csharp[Declare global variables](./snippets/sales-anomaly-detection/csharp/Program.cs#DeclareGlobalVariables "Declare global variables")]
 

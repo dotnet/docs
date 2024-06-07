@@ -12,7 +12,7 @@ The formatting options in this article apply to both C# and Visual Basic. These 
 
 ## Using directive options
 
-Use these options to customize how you want using directives to be sorted and grouped:
+Use these options to customize how you want `using` directives to be sorted and grouped:
 
 - [dotnet_sort_system_directives_first](#dotnet_sort_system_directives_first)
 - [dotnet_separate_import_directive_groups](#dotnet_separate_import_directive_groups)
@@ -36,7 +36,7 @@ dotnet_separate_import_directive_groups = true
 | **Option name**          | dotnet_sort_system_directives_first |                                                                                                  |
 | **Applicable languages** | C# and Visual Basic                 |                                                                                                  |
 | **Introduced version**   | Visual Studio 2017                  |                                                                                                  |
-| **Option values**        | `true`                              | Sort `System.*` `using` directives alphabetically, and place them before other using directives. |
+| **Option values**        | `true`                              | Sort `System.*` `using` directives alphabetically, and place them before other `using` directives. |
 |                          | `false`                             | Do not place `System.*` `using` directives before other `using` directives.                      |
 | **Default option value** | `true`                              |                                                                                                  |
 

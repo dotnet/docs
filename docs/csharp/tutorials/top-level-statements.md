@@ -104,13 +104,13 @@ This code answers the questions, but let's add one more feature. You'd like your
 
 :::code language="csharp" source="snippets/top-level-statements/UtilitiesPassOne.cs" ID="AnimationFirstPass":::
 
-You'll also need to add a `using` statement to the top of the source file:
+You'll also need to add a `using` directive to the top of the source file:
 
 ```csharp
 using System.Threading.Tasks;
 ```
 
-The `using` statements must be before any other statements in the file. Otherwise, it's a compiler error. You can run the program again and see the animation. That makes a better experience. Experiment with the length of the delay to match your taste.
+The `using` directives must be before any other statements in the file. Otherwise, it's a compiler error. You can run the program again and see the animation. That makes a better experience. Experiment with the length of the delay to match your taste.
 
 The preceding code creates a set of spinning lines separated by a space. Adding the `await` keyword instructs the compiler to generate the program entry point as a method that has the `async` modifier, and returns a <xref:System.Threading.Tasks.Task?displayProperty=nameWithType>. This program doesn't return a value, so the program entry point returns a `Task`. If your program returns an integer value, you would add a return statement to the end of your top-level statements. That return statement would specify the integer value to return. If your top-level statements include an `await` expression, the return type becomes <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType>.
 
@@ -206,7 +206,7 @@ Now you have a complete application, and you've refactored the reusable parts fo
 
 :::code language="csharp" source="snippets/top-level-statements/Program.cs":::
 
-The preceding example adds the call to `Utilities.ShowConsoleAnimation`, and adds an additional `using` statement.
+The preceding example adds the call to `Utilities.ShowConsoleAnimation`, and adds an additional `using` directive.
 
 ## Summary
 

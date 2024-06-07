@@ -56,11 +56,11 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 ### Create classes and define paths
 
-1. Add the following additional `using` statements to the top of the *Program.cs* file:
+1. Add the following additional `using` directives to the top of the *Program.cs* file:
 
    [!code-csharp[AddUsings](./snippets/sentiment-analysis/csharp/Program.cs#AddUsings "Add necessary usings")]
 
-1. Add the following code to the line right below the `using` statements, to create a field to hold the recently downloaded dataset file path:
+1. Add the following code to the line right below the `using` directives, to create a field to hold the recently downloaded dataset file path:
 
    [!code-csharp[Declare global variables](./snippets/sentiment-analysis/csharp/Program.cs#DeclareGlobalVariables "Declare global variables")]
 
@@ -70,7 +70,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
    - In the **Add New Item** dialog box, select **Class** and change the **Name** field to *SentimentData.cs*. Then, select the **Add** button.
 
-1. The *SentimentData.cs* file opens in the code editor. Add the following `using` statement to the top of *SentimentData.cs*:
+1. The *SentimentData.cs* file opens in the code editor. Add the following `using` directive to the top of *SentimentData.cs*:
 
    [!code-csharp[AddUsings](./snippets/sentiment-analysis/csharp/SentimentData.cs#AddUsings "Add necessary usings")]
 

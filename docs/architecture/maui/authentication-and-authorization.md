@@ -148,18 +148,18 @@ public static IEnumerable<Client> GetClients(Dictionary<string,string> clien
         // Omitted for brevity
         new Client
         {
-            ClientId = "xamarin",
-            ClientName = "eShop Xamarin OpenId Client",
+            ClientId = "maui",
+            ClientName = "eShop .NET MAUI OpenId Client",
             AllowedGrantTypes = GrantTypes.Hybrid,
             ClientSecrets =
             {
                 new Secret("secret".Sha256())
             },
-            RedirectUris = { clientsUrl["Xamarin"] },
+            RedirectUris = { clientsUrl["maui"] },
             RequireConsent = false,
             RequirePkce = true,
-            PostLogoutRedirectUris = { $"{clientsUrl["Xamarin"]}/Account/Redirecting" },
-            AllowedCorsOrigins = { "http://eshopxamarin" },
+            PostLogoutRedirectUris = { $"{clientsUrl["maui"]}/Account/Redirecting" },
+            AllowedCorsOrigins = { "http://eshopmaui" },
             AllowedScopes = new List<string>
             {
                 IdentityServerConstants.StandardScopes.OpenId,

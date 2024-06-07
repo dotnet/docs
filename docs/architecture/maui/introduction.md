@@ -58,13 +58,11 @@ Below is a high-level overview of the architecture of the sample application.
 
 ![eShop high-level architecture](./media/high-level-architecture-diagram.png)
 
-The sample application ships with three client apps:
+The sample application ships with:
 
-- An MVC application developed with ASP.NET Core.
-- A Single Page Application (SPA) developed with Angular 2 and Typescript. This approach for web applications avoids performing a round-trip to the server with each operation.
-- A multi-platform app developed with .NET MAUI, which supports iOS, Android, macOS via Mac Catalyst, and Windows 10/11.
-
-For information about the web applications, see [Architecting and Developing Modern Web Applications with ASP.NET Core and Microsoft Azure](https://aka.ms/WebAppEbook).
+- .NET Aspire App Hosting & Orchestration
+- An Blazor web application developed with ASP.NET Core.
+- A multi-platform app developed with .NET MAUI, which supports iOS, Android, macOS via Mac Catalyst, and Windows.
 
 The sample application includes the following backend services:
 
@@ -73,9 +71,7 @@ The sample application includes the following backend services:
 - An ordering microservice, which is a domain-driven service that uses domain-driven design patterns.
 - A basket microservice, which is a data-driven CRUD service that uses Redis Cache.
 
-These backend services are implemented as microservices using ASP.NET Core MVC, and are deployed as unique containers within a single Docker host. Collectively, these backend services are referred to as the eShop reference application. Client apps communicate with the backend services through a Representational State Transfer (REST) web interface. For more information about microservices and Docker, see [Containerized microservices](micro-services.md).
-
-For information about the implementation of the backend services, see [.NET Microservices: Architecture for Containerized .NET Applications](https://aka.ms/microservicesebook).
+These backend services are implemented as microservices using ASP.NET Core, and are deployed as unique containers with .NET Aspire. Collectively, these backend services are referred to as the eShop reference application. Client apps communicate with the backend services through a Representational State Transfer (REST) web interface. For more information about microservices and conainers, see [Containerized microservices](micro-services.md).
 
 ## Multi-Platform app
 
@@ -99,7 +95,7 @@ The eShop multi-platform app exercises the following .NET MAUI functionality:
 - Effects
 - Custom Controls
 
-For more information about this functionality, see the [.NET MAUI documentation](/dotnet/maui) on the Microsoft Developer Center, and [Creating multi-platform apps with .NET MAUI](https://aka.ms/mauiebook).
+For more information about this functionality, see the [.NET MAUI documentation](/dotnet/maui).
 
 In addition, unit tests are provided for some of the classes in the eShop multi-platform app.
 

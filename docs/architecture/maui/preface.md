@@ -18,9 +18,7 @@ The guide comes with source code for the [eShop multi-platform app](https://gith
 
 ## What's left out of this guide's scope
 
-This guide is aimed at readers who are already familiar with .NET MAUI. For a detailed introduction to .NET MAUI, see the [.NET MAUI documentation](/dotnet/maui/) on the Microsoft Developer Center, and [Creating multi-platform apps with .NET MAUI](https://aka.ms/mauiebook).
-
-The guide is complementary to [.NET Microservices: Architecture for Containerized .NET Applications](https://aka.ms/microservicesebook), which focuses on developing and deploying containerized microservices. Other guides worth reading include [Architecting and Developing Modern Web Applications with ASP.NET Core and Microsoft Azure](https://aka.ms/WebAppEbook), [Containerized Docker Application Lifecycle with Microsoft Platform and Tools](https://aka.ms/dockerlifecycleebook), and [Microsoft Platform and Tools for Mobile App Development](https://aka.ms/MobAppDev/StndPDF).
+This guide is aimed at readers who are already familiar with .NET MAUI. For a detailed introduction to .NET MAUI, see the [.NET MAUI documentation](/dotnet/maui/).
 
 ## Who should use this guide
 

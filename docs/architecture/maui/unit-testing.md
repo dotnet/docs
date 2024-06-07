@@ -62,21 +62,21 @@ Testing models and view models from MVVM applications is identical to testing an
 
 Don't be tempted to make a unit test exercise more than one aspect of the unit's behavior. Doing so leads to tests that are difficult to read and update. It can also lead to confusion when interpreting a failure.
 
-The eShop multi-platform app uses [xUnit](https://xunit.net/) to perform unit testing, which supports two different types of unit tests:
+The eShop multi-platform app uses [MsTest](https://learn.microsoft.com/en-us/visualstudio/test/using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests?view=vs-2022) to perform unit testing, which supports two different types of unit tests:
 
-| Testing Type | Attribute | Description                                                  |
-|--------------|-----------|--------------------------------------------------------------|
-| Facts        | `Fact`    | Tests that are always true, which test invariant conditions. |
-| Theories     | `Theory`  | Tests that are only true for a particular set of data.       |
+| Testing Type    | Attribute    | Description                                                  |
+|-----------------|--------------|--------------------------------------------------------------|
+| TestMethod      | `TestMethod` | Defines the actual test method to run..                      |
+| DataSource      | `DataSource` | Tests that are only true for a particular set of data.       |
 
-The unit tests included with the eShop multi-platform app are fact tests, so each unit test method is decorated with the `Fact` attribute.
+The unit tests included with the eShop multi-platform app are TestMethod, so each unit test method is decorated with the `TestMethod` attribute.
 
 ## Testing asynchronous functionality
 
 When implementing the MVVM pattern, view models usually invoke operations on services, often asynchronously. Tests for code that invokes these operations typically use mocks as replacements for the actual services. The following code example demonstrates testing asynchronous functionality by passing a mock service into a view model:
 
 ```csharp
-[Fact]
+[TestMethod]
 public async Task OrderPropertyIsNotNullAfterViewModelInitializationTest()
 {
     // Arrange
@@ -88,7 +88,7 @@ public async Task OrderPropertyIsNotNullAfterViewModelInitializationTest()
     await orderViewModel.InitializeAsync(order);
 
     // Assert
-    Assert.NotNull(orderViewModel.Order);
+    Assert.IsNotNull(orderViewModel.Order);
 }
 ```
 
@@ -103,7 +103,7 @@ Implementing the `INotifyPropertyChanged` interface allows views to react to cha
 Properties that can be updated directly by the unit test can be tested by attaching an event handler to the `PropertyChanged` event and checking whether the event is raised after setting a new value for the property. The following code example shows such a test:
 
 ```csharp
-[Fact]
+[TestMethod]
 public async Task SettingOrderPropertyShouldRaisePropertyChanged()
 {
     var invoked = false;
@@ -118,7 +118,7 @@ public async Task SettingOrderPropertyShouldRaisePropertyChanged()
     var order = await orderService.GetOrderAsync(1, GlobalSetting.Instance.AuthToken);
     await orderViewModel.InitializeAsync(order);
 
-    Assert.True(invoked);
+    Assert.IsTrue(invoked);
 }
 ```
 
@@ -129,7 +129,7 @@ This unit test invokes the `InitializeAsync` method of the `OrderViewModel` clas
 View models that use the `MessagingCenter` class to communicate between loosely coupled classes can be unit tested by subscribing to the message being sent by the code under test, as demonstrated in the following code example:
 
 ```csharp
-[Fact]
+[TestMethod]
 public void AddCatalogItemCommandSendsAddProductMessageTest()
 {
     var messageReceived = false;
@@ -143,7 +143,7 @@ public void AddCatalogItemCommandSendsAddProductMessageTest()
     });
     catalogViewModel.AddCatalogItemCommand.Execute(null);
 
-    Assert.True(messageReceived);
+    Assert.IsTrue(messageReceived);
 }
 ```
 
@@ -154,7 +154,7 @@ This unit test checks that the `CatalogViewModel` publishes the `AddProduct` mes
 Unit tests can also be written that check that specific exceptions are thrown for invalid actions or inputs, as demonstrated in the following code example:
 
 ```csharp
-[Fact]
+[TestMethod]
 public void InvalidEventNameShouldThrowArgumentExceptionText()
 {
     var behavior = new MockEventToCommandBehavior
@@ -179,7 +179,7 @@ There are two aspects to testing the validation implementation: testing that any
 Validation logic is usually simple to test, because it is typically a self-contained process where the output depends on the input. There should be tests on the results of invoking the `Validate` method on each property that has at least one associated validation rule, as demonstrated in the following code example:
 
 ```csharp
-[Fact]
+[TestMethod]
 public void CheckValidationPassesWhenBothPropertiesHaveDataTest()
 {
     var mockViewModel = new MockViewModel();
@@ -188,7 +188,7 @@ public void CheckValidationPassesWhenBothPropertiesHaveDataTest()
 
     var isValid = mockViewModel.Validate();
 
-    Assert.True(isValid);
+    Assert.IsTrue(isValid);
 }
 ```
 
@@ -197,7 +197,7 @@ This unit test checks that validation succeeds when the two `ValidatableObject<T
 As well as checking that validation succeeds, validation unit tests should also check the values of the `Value`, `IsValid`, and `Errors` property of each `ValidatableObject<T>` instance, to verify that the class performs as expected. The following code example demonstrates a unit test that does this:
 
 ```csharp
-[Fact]
+[TestMethod]
 public void CheckValidationFailsWhenOnlyForenameHasDataTest()
 {
     var mockViewModel = new MockViewModel();
@@ -205,13 +205,13 @@ public void CheckValidationFailsWhenOnlyForenameHasDataTest()
 
     bool isValid = mockViewModel.Validate();
 
-    Assert.False(isValid);
-    Assert.NotNull(mockViewModel.Forename.Value);
-    Assert.Null(mockViewModel.Surname.Value);
-    Assert.True(mockViewModel.Forename.IsValid);
-    Assert.False(mockViewModel.Surname.IsValid);
-    Assert.Empty(mockViewModel.Forename.Errors);
-    Assert.NotEmpty(mockViewModel.Surname.Errors);
+    Assert.IsFalse(isValid);
+    Assert.IsNotNull(mockViewModel.Forename.Value);
+    Assert.IsNull(mockViewModel.Surname.Value);
+    Assert.IsTrue(mockViewModel.Forename.IsValid);
+    Assert.IsFalse(mockViewModel.Surname.IsValid);
+    Assert.AreEqual(mockViewModel.Forename.Errors.Count(), 0);
+    Assert.AreNotEqual(mockViewModel.Surname.Errors.Count(), 0);
 }
 ```
 

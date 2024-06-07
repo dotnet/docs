@@ -1,8 +1,6 @@
-﻿'<SNIPPET1>
+﻿'<Snippet1>
 Imports System.IO
 Imports System.Security.AccessControl
-
-
 
 Module FileExample
 
@@ -13,13 +11,13 @@ Module FileExample
             Console.WriteLine("Adding access control entry for " & fileName)
 
             ' Add the access control entry to the file.
-            AddFileSecurity(fileName, "DomainName\AccountName", _
+            AddFileSecurity(fileName, "DomainName\AccountName",
                 FileSystemRights.ReadData, AccessControlType.Allow)
 
             Console.WriteLine("Removing access control entry from " & fileName)
 
             ' Remove the access control entry from the file.
-            RemoveFileSecurity(fileName, "DomainName\AccountName", _
+            RemoveFileSecurity(fileName, "DomainName\AccountName",
                 FileSystemRights.ReadData, AccessControlType.Allow)
 
             Console.WriteLine("Done.")
@@ -29,42 +27,37 @@ Module FileExample
 
     End Sub
 
-
     ' Adds an ACL entry on the specified file for the specified account.
-    Sub AddFileSecurity(ByVal fileName As String, ByVal account As String, _
+    Sub AddFileSecurity(ByVal fileName As String, ByVal account As String,
         ByVal rights As FileSystemRights, ByVal controlType As AccessControlType)
 
-        ' Get a FileSecurity object that represents the 
-        ' current security settings.
-        Dim fSecurity As FileSecurity = File.GetAccessControl(fileName)
+        Dim fileInfo As New FileInfo(fileName)
+        Dim fSecurity As FileSecurity = fileInfo.GetAccessControl()
 
         ' Add the FileSystemAccessRule to the security settings. 
-        Dim accessRule As FileSystemAccessRule = _
-            New FileSystemAccessRule(account, rights, controlType)
+        Dim accessRule As New FileSystemAccessRule(account, rights, controlType)
 
         fSecurity.AddAccessRule(accessRule)
 
         ' Set the new access settings.
-        File.SetAccessControl(fileName, fSecurity)
+        fileInfo.SetAccessControl(fSecurity)
 
     End Sub
 
-
     ' Removes an ACL entry on the specified file for the specified account.
-    Sub RemoveFileSecurity(ByVal fileName As String, ByVal account As String, _
+    Sub RemoveFileSecurity(ByVal fileName As String, ByVal account As String,
         ByVal rights As FileSystemRights, ByVal controlType As AccessControlType)
 
-        ' Get a FileSecurity object that represents the 
-        ' current security settings.
-        Dim fSecurity As FileSecurity = File.GetAccessControl(fileName)
+        Dim fileInfo As New FileInfo(fileName)
+        Dim fSecurity As FileSecurity = fileInfo.GetAccessControl()
 
         ' Remove the FileSystemAccessRule from the security settings. 
-        fSecurity.RemoveAccessRule(New FileSystemAccessRule(account, _
+        fSecurity.RemoveAccessRule(New FileSystemAccessRule(account,
             rights, controlType))
 
         ' Set the new access settings.
-        File.SetAccessControl(fileName, fSecurity)
+        fileInfo.SetAccessControl(fSecurity)
 
     End Sub
 End Module
-'</SNIPPET1>
+'</Snippet1>

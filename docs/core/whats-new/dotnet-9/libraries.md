@@ -2,12 +2,12 @@
 title: What's new in .NET libraries for .NET 9
 description: Learn about the new .NET libraries features introduced in .NET 9.
 titleSuffix: ""
-ms.date: 05/21/2024
+ms.date: 06/11/2024
 ms.topic: whats-new
 ---
 # What's new in .NET libraries for .NET 9
 
-This article describes new features in the .NET libraries for .NET 9. It's been updated for .NET 9 Preview 4.
+This article describes new features in the .NET libraries for .NET 9. It's been updated for .NET 9 Preview 5.
 
 ## Serialization
 
@@ -109,3 +109,11 @@ The following code shows an example of calling the `double` and one of the new i
 ### `ActivatorUtilities.CreateInstance` constructor
 
 The constructor resolution for <xref:Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance%2A?displayProperty=nameWithType> has changed in .NET 9. Previously, a constructor that was explicitly marked using the <xref:Microsoft.Extensions.DependencyInjection.ActivatorUtilitiesConstructorAttribute> attribute might not be called, depending on the ordering of constructors and the number of constructor parameters. The logic has changed in .NET 9 such that a constructor that has the attribute is always called.
+
+## Diagnostics
+
+### New Activity.AddLink method
+
+Previously, you could only link a tracing <xref:System.Diagnostics.Activity> to other tracing contexts when you [created the `Activity`](xref:System.Diagnostics.ActivitySource.CreateActivity(System.String,System.Diagnostics.ActivityKind,System.Diagnostics.ActivityContext,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}},System.Collections.Generic.IEnumerable{System.Diagnostics.ActivityLink},System.Diagnostics.ActivityIdFormat)?displayProperty=nameWithType). New in .NET 9, the `Activity.AddLink(System.Diagnostics.ActivityLink)` <!--<xref:System.Diagnostics.Activity.AddLink(System.Diagnostics.ActivityLink)>--> API lets you link an `Activity` object to other tracing contexts after it's created. This change aligns with the [OpenTelemetry specifications](https://github.com/open-telemetry/opentelemetry-specification/blob/6360b49d20ae451b28f7ba0be168ed9a799ac9e1/specification/trace/api.md?plain=1#L804) as well.
+
+:::code language="csharp" source="../snippets/dotnet-9/csharp/Diagnostics.cs" id="AddLink":::

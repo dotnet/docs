@@ -58,18 +58,18 @@ Testing models and view models from MVVM applications is identical to testing an
 
 > [!TIP]
 > Test one thing with each unit test. As the complexity of a test expands, it makes verification of that test more difficult. By limiting a unit test to a single concern, we can ensure that our tests are more repeatable, isolated, and have a smaller execution time. See
-[Unit testing best practices with .NET Core and .NET Standard](../../core/testing/unit-testing-best-practices.md) for more best practices.
+[Unit testing best practices with .NET](../../core/testing/unit-testing-best-practices.md) for more best practices.
 
 Don't be tempted to make a unit test exercise more than one aspect of the unit's behavior. Doing so leads to tests that are difficult to read and update. It can also lead to confusion when interpreting a failure.
 
-The eShop multi-platform app uses [MsTest](https://learn.microsoft.com/en-us/visualstudio/test/using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests?view=vs-2022) to perform unit testing, which supports two different types of unit tests:
+The eShop multi-platform app uses [MSTest](../../core/core/testing/unit-testing-with-mstest.md) to perform unit testing, which supports two different types of unit tests:
 
 | Testing Type    | Attribute    | Description                                                  |
 |-----------------|--------------|--------------------------------------------------------------|
 | TestMethod      | `TestMethod` | Defines the actual test method to run..                      |
 | DataSource      | `DataSource` | Tests that are only true for a particular set of data.       |
 
-The unit tests included with the eShop multi-platform app are TestMethod, so each unit test method is decorated with the `TestMethod` attribute.
+The unit tests included with the eShop multi-platform app are TestMethod, so each unit test method is decorated with the `TestMethod` attribute. In addition to MSTest there are several other testing frameworks available including [NUnit](../../core/core/testing/unit-testing-with-nunit.md) and [xUnit](../../core/core/testing/unit-testing-with-dotnet-test.md). 
 
 ## Testing asynchronous functionality
 

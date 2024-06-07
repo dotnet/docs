@@ -23,7 +23,7 @@ Right click on your project node in Visual Studio and select **Manage NuGet Pack
 
 Azure services are generally accessed using corresponding client classes from the SDK. These classes and your own custom services should be registered in the `Program.cs` file so they can be accessed via dependency injection throughout your app. Inside of `Program.cs`, follow the steps below to correctly setup your service and `DefaultAzureCredential`.
 
-1. Include the `Azure.Identity` and `Microsoft.Extensions.Azure` namespaces with a using directive.
+1. Include the `Azure.Identity` and `Microsoft.Extensions.Azure` namespaces with a `using` directive.
 1. Register the Azure service using relevant helper methods.
 1. Pass an instance of the `DefaultAzureCredential` object to the `UseCredential` method.
 

@@ -60,10 +60,10 @@ The sample application is available as an Azure Developer CLI template. Through 
 
     ```output
     Deploying services (azd deploy)
-    
+
       (✓) Done: Deploying service web
     - Endpoint: <https://[container-app-sub-domain].azurecontainerapps.io>
-    
+
     SUCCESS: Your application was provisioned and deployed to Azure in 5 minutes 0 seconds.
     ```
 
@@ -173,7 +173,7 @@ Prior to using the grain, you must install the corresponding `Microsoft.Orleans.
 
 The sample app is currently configured to create a localhost cluster and persist grains in-memory. When hosted in Azure, Orleans can be configured to use more scalable, centralized state using a data service in Azure.
 
-1. Add using directives for the `` and `` namespaces.
+1. Add the following `using` directives:
 
     ```csharp
     using Azure.Identity;
@@ -218,7 +218,7 @@ The sample app is currently configured to create a localhost cluster and persist
         {
             var endpoint = new Uri(builder.Configuration["AZURE_TABLE_STORAGE_ENDPOINT"]!);
             var credential = new DefaultAzureCredential();
-    
+
             siloBuilder
                 .UseAzureStorageClustering(options =>
                 {
@@ -266,7 +266,7 @@ The sample app is currently configured to create a localhost cluster and persist
         {
             var endpoint = builder.Configuration["AZURE_COSMOS_DB_NOSQL_ENDPOINT"]!;
             var credential = new DefaultAzureCredential();
-    
+
             siloBuilder
                 .UseCosmosClustering(options =>
                 {

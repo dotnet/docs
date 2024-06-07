@@ -31,7 +31,7 @@ Create a new .NET Core console application. You can create one by using the [`do
 
 ### Replace using directives
 
-Replace the existing using directives with these declarations:
+Replace the existing `using` directives with these declarations:
 
 ```csharp
 using System;

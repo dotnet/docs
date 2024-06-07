@@ -37,4 +37,4 @@ To add or remove access control list (ACL) entries from a file or directory, get
 You must specify a valid user or group account to run this example. The example uses a <xref:System.IO.FileInfo> object. Use the same procedure for the <xref:System.IO.DirectoryInfo> class.
 
 [!code-csharp[IO.File.GetAccessControl-SetAccessControl#1](./snippets/add-remove-acls/csharp/sample.cs#1)]
-[!code-vb[IO.File.GetAccessControl-SetAccessControl#1](./snippets/add-remove-acls/csharp/sample.vb#1)]
+[!code-vb[IO.File.GetAccessControl-SetAccessControl#1](./snippets/add-remove-acls/vb/sample.vb#1)]

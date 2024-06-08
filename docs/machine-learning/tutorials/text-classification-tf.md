@@ -59,13 +59,13 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 3. In Solution Explorer, right-click each of the files in the `sentiment_model` directory and subdirectory and select **Properties**. Under **Advanced**, change the value of **Copy to Output Directory** to **Copy if newer**.
 
-### Add using statements and global variables
+### Add `using` directives and global variables
 
-1. Add the following additional `using` statements to the top of the *Program.cs* file:
+1. Add the following additional `using` directives to the top of the *Program.cs* file:
 
    [!code-csharp[AddUsings](./snippets/text-classification-tf/csharp/Program.cs#AddUsings "Add necessary usings")]
 
-1. Create a global variable right after the using statements to hold the saved model file path.
+1. Create a global variable right after the `using` directives to hold the saved model file path.
 
    [!code-csharp[DeclareGlobalVariables](./snippets/text-classification-tf/csharp/Program.cs#DeclareGlobalVariables "Declare global variables")]
 

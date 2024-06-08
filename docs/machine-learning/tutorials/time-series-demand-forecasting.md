@@ -90,7 +90,7 @@ The following is a sample of the data:
 
 ### Create input and output classes
 
-1. Open *Program.cs* file and replace the existing `using` statements with the following:
+1. Open *Program.cs* file and replace the existing `using` directives with the following:
 
     [!code-csharp [ProgramUsings](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L1-L4)]
 
@@ -116,7 +116,7 @@ The following is a sample of the data:
 
 ### Define paths and initialize variables
 
-1. Below the using statements define variables to store the location of your data, connection string, and where to save the trained model.
+1. Below the `using` directives define variables to store the location of your data, connection string, and where to save the trained model.
 
     [!code-csharp [DefinePaths](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L6-L9)]
 

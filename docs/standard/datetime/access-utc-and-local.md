@@ -39,12 +39,6 @@ The following code uses the <xref:System.TimeZoneInfo.Local%2A?displayProperty=n
 
 You should always access the local time zone through the <xref:System.TimeZoneInfo.Local%2A?displayProperty=nameWithType> property rather than assigning the local time zone to a <xref:System.TimeZoneInfo> object variable. Similarly, you should always access Coordinated Universal Time through the <xref:System.TimeZoneInfo.Utc%2A?displayProperty=nameWithType> property rather than assigning the UTC zone to a <xref:System.TimeZoneInfo> object variable. This prevents the <xref:System.TimeZoneInfo> object variable from being invalidated by a call to the <xref:System.TimeZoneInfo.ClearCachedData%2A?displayProperty=nameWithType> method.
 
-## Compiling the code
-
-This example requires:
-
-- That the <xref:System> namespace be imported with the `using` statement (required in C# code).
-
 ## See also
 
 - [Dates, times, and time zones](index.md)

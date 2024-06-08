@@ -29,9 +29,9 @@ This tutorial requires the following:
 
 Create a new .NET Core console application. You can create one by using the [`dotnet new console`](../../core/tools/dotnet-new-sdk-templates.md#console) command or from [Visual Studio](/visualstudio/install/install-visual-studio). Open the *Program.cs* file in your favorite code editor.
 
-### Replace using statements
+### Replace using directives
 
-Replace the existing using statements with these declarations:
+Replace the existing `using` directives with these declarations:
 
 ```csharp
 using System;
@@ -100,7 +100,7 @@ static async Task Main()
         Console.WriteLine("\nENTER key pressed: cancelling downloads.\n");
         s_cts.Cancel();
     });
-    
+
     Task sumPageSizesTask = SumPageSizesAsync();
 
     Task finishedTask = await Task.WhenAny(new[] { cancelTask, sumPageSizesTask });
@@ -117,7 +117,7 @@ static async Task Main()
             Console.WriteLine("Download task has been cancelled.");
         }
     }
-        
+
     Console.WriteLine("Application ending.");
 }
 ```

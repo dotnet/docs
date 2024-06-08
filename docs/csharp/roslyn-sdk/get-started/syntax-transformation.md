@@ -28,7 +28,7 @@ Start Visual Studio, and create a new C# **Stand-Alone Code Analysis Tool** proj
 
 This project uses the <xref:Microsoft.CodeAnalysis.CSharp.SyntaxFactory?displayProperty=nameWithType> class methods to construct a <xref:Microsoft.CodeAnalysis.CSharp.Syntax.NameSyntax?displayProperty=nameWithType> representing the `System.Collections.Generic` namespace.
 
-Add the following using directive to the top of the `Program.cs`.
+Add the following `using` directive to the top of the `Program.cs`.
 
 [!code-csharp[import the SyntaxFactory class](../../../../samples/snippets/csharp/roslyn-sdk/SyntaxTransformationQuickStart/ConstructionCS/Program.cs#StaticUsings "import the Syntax Factory class and the System.Console class")]
 
@@ -92,7 +92,7 @@ Create a new C# **Stand-Alone Code Analysis Tool** project. In Visual Studio, ri
 
 The first step is to create a class that derives from <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxRewriter> to perform your transformations. Add a new class file to the project. In Visual Studio, choose **Project** > **Add Class...**. In the **Add New Item** dialog type `TypeInferenceRewriter.cs` as the filename.
 
-Add the following using directives to the `TypeInferenceRewriter.cs` file:
+Add the following `using` directives to the `TypeInferenceRewriter.cs` file:
 
 [!code-csharp[add necessary usings](../../../../samples/snippets/csharp/roslyn-sdk/SyntaxTransformationQuickStart/TransformationCS/TypeInferenceRewriter.cs#AddUsings "Add required usings")]
 

@@ -77,7 +77,7 @@ This topic outlines the basic steps required to create and dynamically update th
 
  Dynamic configuration of the Routing Service can only be performed in code by creating a new <xref:System.ServiceModel.Routing.RoutingConfiguration> and using <xref:System.ServiceModel.Routing.RoutingExtension.ApplyConfiguration%2A> to replace the current configuration.  For this example, the Routing Service is self-hosted within a console application. After the application has started, you can modify the routing configuration by entering ‘regular’ or ‘rounding’ at the console window to configure the destination endpoint that messages are routed to; regularCalc when ‘regular’ is entered, otherwise roundingCalc when ‘rounding’ is entered.
 
-1. The following using statements must be added in order to support the Routing Service.
+1. The following `using` directives must be added in order to support the Routing Service.
 
     ```csharp
     using System;

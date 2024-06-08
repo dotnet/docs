@@ -61,7 +61,7 @@ You need to create some classes to define the schema of your model input and out
 
 In your *Program.cs* file:
 
-1. Add the following using statements:
+1. Add the following `using` directives:
 
     ```csharp
     using Microsoft.ML.Data;
@@ -83,7 +83,7 @@ In your *Program.cs* file:
 
     **Model output**
 
-    Once the model evaluates the input, it outputs a prediction with three properties: `Sentiment`, `Probability`, and `Score`. In this case, the `Sentiment` is the predicted sentiment of the user comment and the `Probability` and `Score` are confidence measures for the prediction.  
+    Once the model evaluates the input, it outputs a prediction with three properties: `Sentiment`, `Probability`, and `Score`. In this case, the `Sentiment` is the predicted sentiment of the user comment and the `Probability` and `Score` are confidence measures for the prediction.
 
     ```csharp
     public class ModelOutput
@@ -143,7 +143,7 @@ var predictionHandler =
 app.MapPost("/predict", predictionHandler);
 ```
 
-The `/predict` endpoint accepts HTTP POST requests and uses the prediction engine pool to return a prediction using the provided input.  
+The `/predict` endpoint accepts HTTP POST requests and uses the prediction engine pool to return a prediction using the provided input.
 
 When finished, your *Program.cs* should look like the following:
 

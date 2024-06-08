@@ -81,7 +81,7 @@ The `TaxiTripFarePrediction` class represents predicted results. It has a single
 
 ### Define data and model paths
 
-Add the following additional `using` statements to the top of the *Program.cs* file:
+Add the following additional `using` directives to the top of the *Program.cs* file:
 
 [!code-csharp[AddUsings](./snippets/predict-prices/csharp/Program.cs#1 "Add necessary usings")]
 

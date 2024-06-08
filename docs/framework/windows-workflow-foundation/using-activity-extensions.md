@@ -8,11 +8,11 @@ ms.topic: "how-to"
 
 Activities can interact with workflow application extensions that allow the host to provide additional functionality that is not explicitly modeled in the workflow.  This topic describes how to create and use an extension to count the number of times the activity executes.
 
-### To use an activity extension to count executions
+## To use an activity extension to count executions
 
 1. Open Visual Studio 2010. Select **New**, **Project**. Under the **Visual C#** node, select **Workflow**.  Select **Workflow Console Application** from the list of templates. Name the project `Extensions`. Click **OK** to create the project.
 
-2. Add a `using` statement in the Program.cs file for the **System.Collections.Generic** namespace.
+2. Add a `using` directive in the Program.cs file for the **System.Collections.Generic** namespace.
 
     ```csharp
     using System.Collections.Generic;

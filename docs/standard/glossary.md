@@ -349,7 +349,7 @@ An [implementation of .NET](#implementation-of-net) that is used for building to
 
 A type of app someone is building. More generic than [app model](#app-model). For example, at the top of every .NET documentation page, including this one, is a drop-down list for **Workloads**, which lets you switch to documentation for **Web**, **Mobile**, **Cloud**, **Desktop**, and **Machine Learning \& Data**.
 
-In some contexts, *workload* refers to a collection of Visual Studio features that you can choose to install to support a particular type of app. For an example, see [Select a workload](../core/install/windows.md#select-a-workload).
+In some contexts, *workload* refers to a collection of Visual Studio features that you can choose to install to support a particular type of app. For an example, see [Configure Visual Studio workloads](/visualstudio/install/modify-visual-studio?view=vs-2022).
 
 ## See also
 

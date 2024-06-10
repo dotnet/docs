@@ -29,7 +29,7 @@ The installer script is automated to run at the start of the build to fetch and 
 > [!NOTE]
 > **Azure DevOps Services**
 >
-> When using the installer script, native dependencies aren't installed automatically. You must install the native dependencies if the operating system doesn't have them. For more information, see [.NET dependencies and requirements](../core/install/windows.md#dependencies).
+> When using the installer script, native dependencies aren't installed automatically. You must install the native dependencies if the operating system doesn't have them. For more information, see [Install .NET on Windows, Linux, and macOS](../core/install/index.yml).
 
 ## CI setup examples
 

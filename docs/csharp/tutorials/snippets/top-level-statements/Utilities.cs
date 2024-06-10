@@ -5,9 +5,9 @@ namespace MyNamespace;
 
 public static class Utilities
 {
+    // <Animation>
     public static async Task ShowConsoleAnimation()
     {
-        // <Animation>
         string[] animations = ["| -", "/ \\", "- |", "\\ /"];
         for (int i = 0; i < 20; i++)
         {
@@ -19,7 +19,7 @@ public static class Utilities
             }
         }
         Console.WriteLine();
-        // </Animation>
     }
+    // </Animation>
 }
 

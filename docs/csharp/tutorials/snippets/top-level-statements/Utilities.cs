@@ -7,19 +7,19 @@ public static class Utilities
 {
     public static async Task ShowConsoleAnimation()
     {
+        // <Animation>
         string[] animations = ["| -", "/ \\", "- |", "\\ /"];
         for (int i = 0; i < 20; i++)
         {
-            // <Animation>
             foreach (string s in animations)
             {
                 Console.Write(s);
                 await Task.Delay(50);
                 Console.Write("\b\b\b");
             }
-            // </Animation>
         }
         Console.WriteLine();
+        // </Animation>
     }
 }
 

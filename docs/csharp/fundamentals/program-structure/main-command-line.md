@@ -29,7 +29,7 @@ For more information, see [Top-level statements](top-level-statements.md).
 ## Overview
 
 - The `Main` method is the entry point of an executable program; it is where the program control starts and ends.
-- `Main` must be declared inside a class or struct.
+- `Main` must be declared inside a class or struct. The enclosing `class` can be `static`.
 - `Main` must be [`static`](../../language-reference/keywords/static.md).
 - `Main` can have a [`public`](../../language-reference/keywords/public.md), [`protected`](../../language-reference/keywords/protected.md), [`private`](../../language-reference/keywords/private.md), [`protected internal`](../../language-reference/keywords/protected-internal.md) and [`private protected`](../../language-reference/keywords/private-protected.md) access modifier. If not specified, it receives the default access of private.
 - `Main` can either have a `void`, `int`, `Task`, or `Task<int>` return type.

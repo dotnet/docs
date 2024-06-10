@@ -108,31 +108,7 @@ Execution succeeded
 Return value = 0
 ```
 
-### Async Main return values
-
-When you declare an `async` return value for `Main`, the compiler generates the boilerplate code for calling asynchronous methods in `Main`.  If you don't specify the `async` keyword, you need to write that code yourself, as shown in the following example. The code in the example ensures that your program runs until the asynchronous operation is completed:
-
-```csharp
-class AsyncMainReturnValTest
-{
-    public static void Main()
-    {
-        AsyncConsoleWork().GetAwaiter().GetResult();
-    }
-
-    private static async Task<int> AsyncConsoleWork()
-    {
-        // Main body here
-        return 0;
-    }
-}
-```
-
-This boilerplate code can be replaced by:
-
-:::code language="csharp" source="snippets/main-arguments/Program.cs" id="AsyncMain":::
-
-An advantage of declaring `Main` as `async` is that the compiler always generates the correct code.
+### Main return Task
 
 When the application entry point returns a `Task` or `Task<int>`, the compiler generates a new entry point that calls the entry point method declared in the application code. Assuming that this entry point is called `$GeneratedMain`, the compiler generates the following code for these entry points:
 
@@ -142,7 +118,44 @@ When the application entry point returns a `Task` or `Task<int>`, the compiler g
 - `static Task<int> Main(string[])` results in the compiler emitting the equivalent of `private static int $GeneratedMain(string[] args) => Main(args).GetAwaiter().GetResult();`
 
 > [!NOTE]
->If the examples used `async` modifier on the `Main` method, the compiler would generate the same code.
+>If `Main` include the `async` modifier, the compiler would generate the same code.
+
+For this example:
+```csharp
+class Program
+{
+    static async Task Main(string[] args)
+    {
+        await WorkAsync();
+    }
+
+    private static async Task WorkAsync()
+    {
+        // Some work here
+    }
+}
+```
+
+The compilater will generate the boilerplate code :
+```csharp
+class Program
+{
+    public static void $GeneratedMain()()
+    {
+        WorkAsync().GetAwaiter().GetResult();
+    }
+
+    static async Task Main(string[] args)
+    {
+        await WorkAsync();
+    }
+
+    private static async Task WorkAsync()
+    {
+        // Some work here
+    }
+}
+```
 
 ## Command-Line Arguments
 

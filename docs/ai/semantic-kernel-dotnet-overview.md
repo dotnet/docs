@@ -1,6 +1,6 @@
 ---
 title: Semantic Kernel overview for .NET
-description: Understand the Semantic Kernel SDK for .NET
+description: Learn how to add the Semantic Kernel SDK to your .NET projects and explore fundamental concepts
 ms.date: 06/07/2024
 ms.topic: quickstart
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
@@ -10,12 +10,17 @@ ms.author: alexwolf
 
 # Semantic Kernel overview for .NET
 
-In this article, you'll explore core concepts and capabilities of Semantic Kernel and why you might want to use it in your .NET apps. You'll also learn how to add Semantic Kernel to different types of projects and perform some initial configurations. You'll learn about the following topics:
+In this article, you'll explore core concepts and capabilities of [Semantic Kernel](https://learn.microsoft.com/en-us/semantic-kernel/overview/?tabs=Csharp) and why it's a powerful choice for working with AI in .NET application. You'll also learn how to add Semantic Kernel to different types of projects and perform setup configurations. You'll learn about the following topics:
 
 - How to add semantic kernel to your project
 - Semantic Kernel core concepts
 
-## Add Semantic Kernel to your project
+This sections ahead are primarily intended to serve as an introductory overview of Semantic Kernel specifically in the context of .NET. Visit the following resources for more extensive information and training about Semantic Kernel:
+
+- [Semantic Kernel documentation](https://learn.microsoft.com/en-us/semantic-kernel/overview/?tabs=Csharp)
+- [Semantic Kernel training]()
+
+## Add Semantic Kernel to a .NET project
 
 The Semantic Kernel SDK is available as a NuGet package for .NET and integrates with standard app configurations. Install the package using the following command:
 
@@ -25,38 +30,68 @@ dotnet add package Microsoft.SemanticKernel
 
 Semantic Kernel is implemented and accessed through a `Kernel` class created using a `KernelBuilder`. The `Kernel` holds services, data, and connections to orchestrate integrations between your code and AI models.
 
-The following code creates a `Kernel` object and registers an Azure OpenAI service with the provided settings in a .NET console app:
+Configure the Kernel in a .NET console app:
 
 ```csharp
 var builder = Kernel.CreateBuilder();
-builder.Services.AddAzureOpenAIChatCompletion(
-    "your-resource-name",
-    "your-endpoint",
-    "your-resource-key",
-    "deployment-model");
+
+// Add builder configurations
+
 var kernel = builder.Build();
 ```
 
-// aspnetcore config
+Configure the Kernel in an ASP.NET Core app:
+
+```csharp
+
+```
 
 ## Understand Semantic Kernel
 
-[Semantic Kernel](/semantic-kernel/overview/) is an open-source SDK that facilitates the integration of AI models with programming frameworks like .NET. Use it to interface with AI models running on Azure, OpenAI, Hugging Face, Ollama, and more. Semantic Kernel allows developers to easily apply AI models in their own applications without having to learn the intricacies of each model's API. The tool is built around several core concepts, which are explored :
+[Semantic Kernel](/semantic-kernel/overview/) is an open-source SDK that integrates LLMs like OpenAI, Azure OpenAI, and Hugging Face with conventional programming languages like C#, Python, and Java. Developers can create "plugins" to interface with the LLMs and perform all sorts of tasks. The Semantic Kernel SDK also provides built-in plugins that quickly enhance an application. Developers can easily apply AI models in their own applications without having to learn the intricacies of each model's API. Semantic Kernel SDK benefits enterprise developers in the following ways:
 
+- Streamlines integration through of AI capabilities into existing applications, providing a cohesive solution for enterprise products.
+- Minimizes the learning curve of working with different AI models or services by providing abstractions that reduce complexity.
+- Improves reliability by reducing the unpredictable behavior of prompts and responses from LLMs used directly. You can fine-tune prompts and plan tasks to create a controlled and predictable user experience.
+
+Semantic Kernel is built around several core concepts:
+
+- **Connections**: Interface with external AI services and data sources.
 - **Plugins**: Encapsulate functions that applications can use.
-- **Memory**: Abstracts and simplifies context management for AI apps.
 - **Planner**: Orchestrates execution plans and strategies based on user behavior.
+- **Memory**: Abstracts and simplifies context management for AI apps.
 
-The Kernel is used to implement several Semantic Kernel core concepts, which are explained in the following sections.
+These building blocks are explored in more detail in the following sections.
+
+### Connections
+
+The Semantic Kernel SDK offers a set of connectors that enable developers to integrate LLMs into their existing applications. These connectors serve as the bridge between the application code and the AI models. Semantic Kerenl handles many common connection concerns and challenges for you so you can focus on building your own workflows and features.
+
+The following code snippet creates a Kernel and adds a connection to an Azure OpenAI model:
+
+```csharp
+using Microsoft.SemanticKernel;
+
+// Create kernel
+var builder = Kernel.CreateBuilder();
+// Add a text or chat completion service using either:
+builder.Services.AddAzureOpenAIChatCompletion(
+"your-resource-name",
+"your-endpoint",
+"your-resource-key",
+"deployment-model");
+var kernel = builder.Build();
+```
 
 ### Plugins
 
-Semantic Kernel plugins encapsulate functions that applications can use. These plugins streamline tasks where LLMs are advantageous and efficiently combine them with more traditional C# methods. Plugin functions are generally categorized into two types:
+Semantic Kernel plugins encapsulate functions that applications can use. These plugins streamline tasks where LLMs are advantageous and efficiently combine them with more traditional C# methods. Plugin functions are generally categorized into two types, which are Semantic functions and Native functions.
 
-- **Semantic function** are essentially stored AI prompts that Semantic Kernel can customize and call as needed. These prompts can be templatized to use variables, custom prompt and completion  formatting, and more.
-- **Native functions** are C# methods that can be called by Semantic Kernel directly to manipulate or retrieve data, and perform any other operation that you can do in code that is better suited for traditional code instructions instead of LLM prompts.
+#### Semantic functions
 
-Semantic function example:
+Semantic functions are essentially stored AI prompts that Semantic Kernel can customize and call as needed. These prompts can be templatized to use variables, custom prompt and completion  formatting, and more.
+
+The following code snippet defines and registers a semantic function:
 
 ```csharp
 //Define semantic function inline
@@ -72,7 +107,11 @@ kernel.CreateSemanticFunction(
 );
 ```
 
-Native function example:
+#### Native functions
+
+Native functions are C# methods that can be called by Semantic Kernel directly to manipulate or retrieve data, and perform any other operation that you can do in code that is better suited for traditional code instructions instead of LLM prompts.
+
+The following code snippet defines and registers a native function:
 
 ```csharp
 // Define native function
@@ -96,20 +135,64 @@ NativeFunctions nativeFunctions = new NativeFunctions();
 kernel.ImportFunctions(nativeFunctions, plugInName);
 ```
 
-
 ### Planner
+
 The core of the Semantic Kernel stack is an AI orchestration layer that allows the seamless integration of AI models and plugins. This layer devises execution strategies from user requests and dynamically orchestrates Plugins to perform complex tasks with AI-assisted planning.
+
+Consider the following code snippet:
+
+```csharp
+string actionDefinition = "Read content from a local file and summarize the content.";
+
+SequentialPlanner sequentialPlanner = new SequentialPlanner(kernel);      
+
+string assetsFolder = @"../../assets";
+string fileName = Path.Combine(assetsFolder,"docs","06_SemanticKernel", "aci_documentation.txt");
+
+ContextVariables contextVariables = new ContextVariables();
+contextVariables.Add("fileName", fileName);
+
+var customPlan = await sequentialPlanner.CreatePlanAsync(actionDefinition);
+
+KernelResult kernelResult = await kernel.RunAsync(contextVariables, customPlan);
+
+Console.WriteLine($"Summarization: {kernelResult.GetValue<string>()}");
+```
+
+The preceding code creates an executable, sequential plan to read content from a local file and summarize the content. The plans sets up instructions to read the file is using a native function and then analyze it using an AI model. The native functions are ommitted for brevity.
 
 ### Memory
 
-**Connectors**
-The Semantic Kernel SDK offers a set of connectors that enable developers to integrate LLMs into their existing applications. These connectors serve as the bridge between the application code and the AI models.
+Semantic Kernel's Memory abstracts the embedding model and vector databases, simplifying context management for AI applications. Memory is agnostic to the underlying LLM or Vector DB, offering a uniform developer experience.
 
-## Implement Semantic Kernel in a .NET project
+Consider the following code snippet:
 
-The Semantic Kernel SDK is available as a NuGet package for .NET and integrates with standard app configurations. Install the package using the following command:
+```csharp
+var facts = new Dictionary<string,string>();
+facts.Add(
+    "1; Azure Machine Learning; https://docs.microsoft.com/en-us/azure/machine-learning/", 
+        @"Azure Machine Learning is a cloud service for accelerating and managing the machine learning project lifecycle. 
+        Machine learning professionals, data scientists, and engineers can use it in their day-to-day workflows"
+);
 
-```dotnetcli
-dotnet add package Microsoft.SemanticKernel
+facts.Add(
+    "2; Azure SQL Service; https://docs.microsoft.com/en-us/azure/azure-sql/", 
+        @"Azure SQL is a family of managed, secure, and intelligent products that use the SQL Server database 
+        engine in the Azure cloud."
+);
+
+string memoryCollectionName = "SummarizedAzureDocs";
+
+foreach (var fact in facts) {
+
+    await memoryBuilder.SaveReferenceAsync(
+        collection: memoryCollectionName,
+        description: fact.Key.Split(";")[1].Trim(),
+        text: fact.Value,
+        externalId: fact.Key.Split(";")[2].Trim(),
+        externalSourceName: "Azure Documenation"
+    );
+}
 ```
 
+The preceding code loads a set of facts into the Kernel's memory so that the data is available to use when interacting with AI models and orchestrating tasks.

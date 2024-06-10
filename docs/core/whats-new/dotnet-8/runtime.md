@@ -777,9 +777,7 @@ The new <xref:Microsoft.Extensions.Diagnostics.Metrics.Testing.MetricCollector%6
 
 The updated [System.Numerics.Tensors](https://www.nuget.org/packages/System.Numerics.Tensors) NuGet package includes APIs in the new <xref:System.Numerics.Tensors.TensorPrimitives> namespace that add support for tensor operations. The tensor primitives optimize data-intensive workloads like those of AI and machine learning.
 
-AI workloads like semantic search and retrieval-augmented generation (RAG) extend the natural language capabilities of large language models such as ChatGPT by augmenting prompts with relevant data. For these workloads, operations on vectors&mdash;like *cosine similarity* to find the most relevant data to answer a question&mdash;are crucial. The System.Numerics.Tensors.TensorPrimitives package provides APIs for vector operations, meaning you don't need to take an external dependency or write your own implementation.
-
-This package replaces the [System.Numerics.Tensors package](https://www.nuget.org/packages/System.Numerics.Tensors).
+AI workloads like semantic search and retrieval-augmented generation (RAG) extend the natural language capabilities of large language models, such as ChatGPT, by augmenting prompts with relevant data. For these workloads, operations on vectors&mdash;like *cosine similarity* to find the most relevant data to answer a question&mdash;are crucial. The System.Numerics.Tensors.TensorPrimitives package provides APIs for vector operations.
 
 For more information, see the [Announcing .NET 8 RC 2 blog post](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-rc2/).
 

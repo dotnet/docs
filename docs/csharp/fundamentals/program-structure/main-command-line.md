@@ -140,7 +140,7 @@ The compilater will generate the boilerplate code :
 ```csharp
 class Program
 {
-    public static void $GeneratedMain()()
+    public static void $GeneratedMain()
     {
         WorkAsync().GetAwaiter().GetResult();
     }
@@ -156,6 +156,9 @@ class Program
     }
 }
 ```
+
+> [!NOTE]
+> In fact, the generator will not generate the method with the name `$GeneratedMain`, but with a specific IL name.
 
 ## Command-Line Arguments
 

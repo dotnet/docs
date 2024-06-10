@@ -155,8 +155,8 @@ Visual Studio Installer installs and configures Visual Studio. Some Visual Studi
 
 The Visual Studio documentation provides instructions on how to:
 
-- [Install Visual Studio](/visualstudio/install/install-visual-studio?view=vs-2022).
-- [Configure Visual Studio workloads](/visualstudio/install/modify-visual-studio?view=vs-2022).
+- [Install Visual Studio](/visualstudio/install/install-visual-studio).
+- [Configure Visual Studio workloads](/visualstudio/install/modify-visual-studio).
 
 :::image type="content" source="media/windows/vs-workloads.png" alt-text="A screenshot that shows Visual Studio Installer with the .NET Desktop workload highlighted with a red box.":::
 

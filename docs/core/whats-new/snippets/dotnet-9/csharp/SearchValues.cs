@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Buffers;
 
-internal class SearchValues
+internal class SearchValuesExamples
 {
     // <SnippetSV>
     private static readonly SearchValues<string> s_animals =

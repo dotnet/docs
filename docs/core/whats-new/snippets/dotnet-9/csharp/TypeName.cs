@@ -8,16 +8,16 @@ internal class RestrictedSerializationBinder
     Dictionary<string, Type> AllowList { get; set; }
 
     RestrictedSerializationBinder(Type[] allowedTypes)
-        => AllowList = allowedTypes.ToDictionary(type => type.FullName);
+        => AllowList = allowedTypes.ToDictionary(type => type.FullName!);
 
-    Type GetType(ReadOnlySpan<char> untrustedInput)
+    Type? GetType(ReadOnlySpan<char> untrustedInput)
     {
-        if (!TypeName.TryParse(untrustedInput, out TypeName parsed))
+        if (!TypeName.TryParse(untrustedInput, out TypeName? parsed))
         {
             throw new InvalidOperationException($"Invalid type name: '{untrustedInput.ToString()}'");
         }
 
-        if (AllowList.TryGetValue(parsed.FullName, out Type type))
+        if (AllowList.TryGetValue(parsed.FullName, out Type? type))
         {
             return type;
         }

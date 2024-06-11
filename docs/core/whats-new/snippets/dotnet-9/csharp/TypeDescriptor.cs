@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 
-internal class TypeDescriptor
+internal class TypeDescriptorExamples
 {
     // <SnippetTypeDescriptor>
     public static void RunIt()
@@ -34,7 +34,7 @@ internal class TypeDescriptor
 
     public class ExampleClass
     {
-        public string Property1 { get; set; }
+        public string? Property1 { get; set; }
         public int Property2 { get; set; }
     }
     // </SnippetTypeDescriptor>

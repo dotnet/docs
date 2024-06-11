@@ -2,7 +2,7 @@
 using System.Net.Http;
 using System.Threading.Tasks;
 
-internal class Task
+internal class TaskExamples
 {
     public static async void RunIt()
     {

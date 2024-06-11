@@ -35,7 +35,6 @@ There are three different runtimes for Windows, which enable different types of 
 | **ASP.NET Core Runtime** | No                            | No                            | Yes                           |
 | **.NET SDK**             | Yes                           | Yes                           | Yes                           |
 
-
 To ensure that you can run all .NET apps on Windows, install both the ASP.NET Core Runtime and the .NET Desktop Runtime. The ASP.NET Core Runtime runs any web apps, and the .NET Desktop Runtime runs any desktop app, such as a Windows Presentation Foundation (WPF) or Windows Forms (WinForms) app.
 
 ## Choose how to install .NET
@@ -73,7 +72,7 @@ If you're unsure which method you should choose after reviewing the lists in the
 The following table is a list of currently supported .NET releases and the versions of Windows they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Windows reaches end-of-life](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).
 
 > [!TIP]
-> As a reminder, this table applies to modern .NET (as opposed to .NET Framework). .NET Framework downloads can be found [here](https://dotnet.microsoft.com/download/dotnet-framework).
+> As a reminder, this table applies to modern .NET (as opposed to .NET Framework). To install .NET Framework, see the [.NET Framework Installation guide](../../framework/install/index.md).
 
 Windows 10 versions end-of-service dates are segmented by edition. Only **Home**, **Pro**, **Pro Education**, and **Pro for Workstations** editions are considered in the following table. Check the [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet) for specific details.
 

@@ -10,15 +10,15 @@ ms.author: alexwolf
 
 # Semantic Kernel overview for .NET
 
-In this article, you'll explore the capabilities and core concepts of [Semantic Kernel](https://learn.microsoft.com/en-us/semantic-kernel/overview/?tabs=Csharp) and why it's a powerful choice for working with AI in .NET application. You'll learn about the following topics:
+In this article, you'll explore the capabilities and core concepts of [Semantic Kernel](/semantic-kernel/overview) and why it's a powerful choice for working with AI in .NET application. You'll learn about the following topics:
 
 - How to add semantic kernel to your project
 - Semantic Kernel core concepts
 
 This sections ahead serve as an introductory overview of Semantic Kernel specifically in the context of .NET. Visit the following resources for more extensive information and training about Semantic Kernel:
 
-- [Semantic Kernel documentation](https://learn.microsoft.com/en-us/semantic-kernel/overview/?tabs=Csharp)
-- [Semantic Kernel training]()
+- [Semantic Kernel documentation](/semantic-kernel/overview)
+- [Semantic Kernel training](/training/paths/develop-ai-agents-azure-open-ai-semantic-kernel-sdk/)
 
 ## Add Semantic Kernel to a .NET project
 
@@ -203,3 +203,7 @@ foreach (var fact in facts) {
 ```
 
 The preceding code loads a set of facts into memory so that the data is available to use when interacting with AI models and orchestrating tasks.
+
+>[!div class="step-by-step"]
+>[Quickstart - Summarize text with OpenAI](quickstarts/quickstart-openai-summarize-text.md.md)
+>[Quickstart - Chat with your data](quickstarts/quickstart-ai-chat-with-data.md)

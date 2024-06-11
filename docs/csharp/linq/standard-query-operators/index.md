@@ -13,7 +13,7 @@ Most of these methods operate on sequences, where a sequence is an object whose 
 
 The distinction between <xref:System.Collections.Generic.IEnumerable%601> and <xref:System.Linq.IQueryable%601> sequences determines how the query is executed at runtime.
 
-For `IEnumerable<T>`, the returned enumerable object captures the arguments that were passed to the method. The returned enumerable object captures the arguments that were passed to the method. When that object is enumerated, the logic of the query operator is employed and the query results are returned.
+For `IEnumerable<T>`, the returned enumerable object captures the arguments that were passed to the method. When that object is enumerated, the logic of the query operator is employed and the query results are returned.
 
 For `IQueryable<T>`, the query is translated into an [expression tree](../../advanced-topics/expression-trees/index.md). The expression tree can be translated to a native query when the data source can optimize the query. Libraries such as [Entity Framework](/ef/core/) translate LINQ queries into native SQL queries that execute at the database.
 

@@ -156,11 +156,11 @@ Microservices can be created upon any modern development platform.
 
 The Microsoft .NET platform is an excellent choice. Free and open source, it has many built-in features that simplify microservice development. .NET is cross-platform. Applications can be built and run on Windows, macOS, and most flavors of Linux.
 
-.NET is highly performant and has scored well in comparison to Node.js and other competing platforms. Interestingly, [TechEmpower](https://www.techempower.com/) conducted an extensive set of [performance benchmarks](https://www.techempower.com/benchmarks/#section=data-r17&hw=ph&test=plaintext) across many web application platforms and frameworks. .NET scored in the top 10 - well above Node.js and other competing platforms.
+.NET is highly performant and has scored well in comparison to Node.js and other competing platforms. Interestingly, [TechEmpower](https://www.techempower.com/) conducted an extensive set of [performance benchmarks](https://www.techempower.com/benchmarks/#section=data-r22&hw=ph&test=plaintext) across many web application platforms and frameworks. .NET scored in the top 3 - well above Node.js and other competing platforms.
 
-[.NET](https://github.com/dotnet/core) is maintained by Microsoft and the .NET community on GitHub.
+[.NET](https://github.com/dotnet/core) is maintained by Microsoft and the .NET community on [GitHub](https://github.com/dotnet).
 
-### Microservice challenges
+### Cloud-native challenges
 
 While distributed cloud-native microservices can provide immense agility and speed, they present many challenges:
 
@@ -190,24 +190,13 @@ How will your microservices securely store and manage secrets and sensitive conf
 
 Secrets are covered in detail [Cloud-native security](---TO DO---).
 
-### Manage Complexity with Dapr
+#### *Observability*
 
-[Dapr](https://dapr.io/) is a distributed, open-source application runtime. Through an architecture of pluggable components, it dramatically simplifies the *plumbing* behind distributed applications. It provides a **dynamic glue** that binds your application with pre-built infrastructure capabilities and components from the Dapr runtime.  Figure 1-5 shows Dapr from 20,000 feet.
+In cloud-native environments, where services are ephemeral and interactions complex, traditional monitoring tools often fall short. This necessitates advanced observability solutions that can handle high-velocity data, provide actionable insights, and support the diverse technology stack typical of microservices architectures.
 
-![Dapr at 20,000 feet](./media/dapr-high-level.png)
-**Figure 1-5**. Dapr at 20,000 feet.
+#### *Manageability*
 
-In the top row of the figure, note how Dapr provides [language-specific SDKs](https://docs.dapr.io/developing-applications/sdks/) for popular development platforms. Dapr v1 includes support for .NET, Go, Node.js, Python, PHP, Java, and JavaScript.
-
-While language-specific SDKs enhance the developer experience, Dapr is platform agnostic. Under the hood, Dapr's programming model exposes capabilities through standard HTTP/gRPC communication protocols. Any programming platform can call Dapr via its native HTTP and gRPC APIs.
-
-The blue boxes across the center of the figure represent the Dapr building blocks. Each exposes pre-built plumbing code for a distributed application capability that your application can consume.
-
-The components row represents a large set of pre-defined infrastructure components that your application can consume. Think of components as infrastructure code you don't have to write.
-
-The bottom row highlights the portability of Dapr and the diverse environments across which it can run.
-
-Looking ahead, Dapr has the potential to have a profound impact on cloud-native application development.
+Cloud-native apps demand robust automation for deployment, scaling, and recovery processes. The challenge lies in creating management tools that can adapt to rapid changes without human intervention, ensuring consistent performance and reliability. 
 
 ## Containers
 

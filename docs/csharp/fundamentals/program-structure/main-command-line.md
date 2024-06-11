@@ -121,6 +121,7 @@ When the application entry point returns a `Task` or `Task<int>`, the compiler g
 >If `Main` include the `async` modifier, the compiler would generate the same code.
 
 For this example:
+
 ```csharp
 class Program
 {

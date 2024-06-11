@@ -24,7 +24,7 @@ Unlike .NET Framework, .NET isn't installed and tied to your version of Windows.
 
 By default, .NET is installed to the _Program Files\\dotnet_ directory on your computer, unless the install method chooses a different directory.
 
-## Which runtime should you install
+## Choose the correct runtime
 
 There are three different runtimes for Windows, which enable different types of apps to run. The SDK includes all three runtimes. If you install a specific runtime, it might include other runtimes. The following table describes which runtime is included with a particular .NET installer:
 
@@ -35,13 +35,12 @@ There are three different runtimes for Windows, which enable different types of 
 | **ASP.NET Core Runtime** | No                            | No                            | Yes                           |
 | **.NET SDK**             | Yes                           | Yes                           | Yes                           |
 
-To ensure that you can run all .NET apps on Windows, install both the ASP.NET Core Runtime and the .NET Desktop Runtime.
 
-To run all .NET apps on Windows, you want both the ASP.NET Core Runtime to run any web apps, and .NET Desktop Runtime to run any desktop app such as a Windows Presentation Foundation (WPF) or Windows Forms (WinForms) app.
+To ensure that you can run all .NET apps on Windows, install both the ASP.NET Core Runtime and the .NET Desktop Runtime. The ASP.NET Core Runtime runs any web apps, and the .NET Desktop Runtime runs any desktop app, such as a Windows Presentation Foundation (WPF) or Windows Forms (WinForms) app.
 
 ## Choose how to install .NET
 
-There are different ways to install .NET and some products might manage their own version of .NET, such as Visual Studio. If you install .NET through software that manages its own version of .NET, you should also install the .NET runtime separately so that you can run .NET apps.
+There are different ways to install .NET, and some products, like Visual Studio, might manage their own version of .NET. If you install .NET through software that manages its own version of .NET, you should also install the .NET runtime separately so that you can run .NET apps.
 
 If you're unsure which method you should choose after reviewing the lists in the following sections, you probably want to use the [.NET Installer](#net-installer).
 
@@ -72,6 +71,9 @@ If you're unsure which method you should choose after reviewing the lists in the
 ## Supported versions
 
 The following table is a list of currently supported .NET releases and the versions of Windows they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Windows reaches end-of-life](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).
+
+> [!TIP]
+> As a reminder, this table applies to modern .NET (as opposed to .NET Framework). .NET Framework downloads can be found [here](https://dotnet.microsoft.com/download/dotnet-framework).
 
 Windows 10 versions end-of-service dates are segmented by edition. Only **Home**, **Pro**, **Pro Education**, and **Pro for Workstations** editions are considered in the following table. Check the [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet) for specific details.
 
@@ -185,7 +187,7 @@ For more information about, see [.NET SDK, MSBuild, and Visual Studio versioning
 
 ## Install with Visual Studio Code
 
-Visual Studio Code uses the versions of .NET already installed on your system. Remember, Visual Studio installs its own copy of .NET, so you must install .NET using either [.NET Installer](#net-installer) or [Windows Package Manager](#install-with-windows-package-manager-winget).
+Visual Studio Code uses the versions of .NET already installed on your system. Install .NET using either [.NET Installer](#net-installer) or [Windows Package Manager](#install-with-windows-package-manager-winget). Visual Studio installs its own copy of .NET that can't be used by Visual Studio Code.
 
 .NET apps are created in Visual Studio Code with the C# Dev Kit extension.
 
@@ -271,7 +273,7 @@ If you install the SDK, you don't need to install the corresponding runtime.
 
 ### Install the runtime
 
-There are different runtimes you can install. Refer to the [Which runtime should you install](#which-runtime-should-you-install) section to understand what's included with each runtime.
+There are different runtimes you can install. Refer to the [Choose the correct runtime](#choose-the-correct-runtime) section to understand what's included with each runtime.
 
 01. [Install WinGet](/windows/package-manager/winget/#install-winget).
 01. Open a terminal, such as **PowerShell** or **Command Prompt**.

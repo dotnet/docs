@@ -120,18 +120,14 @@ The following sections describe things you should consider when installing .NET 
 
 The following table describes which versions of .NET are supported on an Arm-based Windows PC:
 
-| .NET Version | Architecture | SDK | Runtime | [Path conflict](#path-conflicts) | Supported |
-|--------------|--------------|-----|---------|----------------------------------| --------- |
-| 8            | Arm64        | Yes | Yes     | No                               | ✔️       |
-| 8            | x64          | Yes | Yes     | No                               | ✔️       |
-| 7            | Arm64        | Yes | Yes     | No                               | ❌       |
-| 7            | x64          | Yes | Yes     | No                               | ❌       |
-| 6            | Arm64        | Yes | Yes     | No                               | ✔️       |
-| 6            | x64          | Yes | Yes     | No                               | ✔️       |
-| 5            | Arm64        | Yes | Yes     | [Yes](#path-conflicts)           | ❌       |
-| 5            | x64          | No  | Yes     | [Yes](#path-conflicts)           | ❌       |
+| .NET Version | SDK | Runtime | [Path conflict](#path-conflicts) | Supported |
+|--------------|-----|---------|----------------------------------| --------- |
+| 8            | Yes | Yes     | No                               | ✔️       |
+| 8            | Yes | Yes     | No                               | ✔️       |
+| 6            | Yes | Yes     | No                               | ✔️       |
+| 6            | Yes | Yes     | No                               | ✔️       |
 
-The x64 and Arm64 versions of the .NET SDK exist independently from each other. If a new version is released, each architecture install needs to be upgraded.
+The x86, x64, and Arm64 versions of the .NET SDK exist independently from each other. If a new version is released, each architecture install needs to be upgraded.
 
 ### Path differences
 

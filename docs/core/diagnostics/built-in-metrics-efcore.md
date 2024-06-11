@@ -26,7 +26,7 @@ The `Microsoft.EntityFrameworkCore` metrics report information about operations 
 | -------- | --------------- | ----------- | -------------- |
 | `microsoft.entityframeworkcore.active_dbcontexts` | ObservableUpDownCounter | `{dbcontext}` | Number of currently active `DbContext` instances. |
 
-Available starting in: .NET 9.0.
+Available starting in: Entity Framework Core 9.0.
 
 ##### Metric: `microsoft.entityframeworkcore.queries`
 
@@ -34,7 +34,7 @@ Available starting in: .NET 9.0.
 | -------- | --------------- | ----------- | -------------- |
 | `microsoft.entityframeworkcore.queries` | ObservableCounter | `{query}` | Cumulative count of queries executed. |
 
-Available starting in: .NET 9.0.
+Available starting in: Entity Framework Core 9.0.
 
 ##### Metric: `microsoft.entityframeworkcore.savechanges`
 
@@ -42,7 +42,7 @@ Available starting in: .NET 9.0.
 | -------- | --------------- | ----------- | -------------- |
 | `microsoft.entityframeworkcore.savechanges` | ObservableCounter | `{savechanges}` | Cumulative count of changes saved. |
 
-Available starting in: .NET 9.0.
+Available starting in: Entity Framework Core 9.0.
 
 ##### Metric: `microsoft.entityframeworkcore.compiled_query_cache_hit_rate`
 
@@ -50,7 +50,7 @@ Available starting in: .NET 9.0.
 | -------- | --------------- | ----------- | -------------- |
 | `microsoft.entityframeworkcore.compiled_query_cache_hit_rate` | ObservableGauge | `%` | Hit rate - since last observation - for the compiled query cache. |
 
-Available starting in: .NET 9.0.
+Available starting in: Entity Framework Core 9.0.
 
 ##### Metric: `microsoft.entityframeworkcore.execution_strategy_operation_failures`
 
@@ -58,7 +58,7 @@ Available starting in: .NET 9.0.
 | -------- | --------------- | ----------- | -------------- |
 | `microsoft.entityframeworkcore.execution_strategy_operation_failures` | ObservableCounter | `{failure}` | Cumulative number of failed operation executed by an `IExecutionStrategy`. |
 
-Available starting in: .NET 9.0.
+Available starting in: Entity Framework Core 9.0.
 
 ##### Metric: `microsoft.entityframeworkcore.optimistic_concurrency_failures`
 
@@ -66,4 +66,4 @@ Available starting in: .NET 9.0.
 | -------- | --------------- | ----------- | -------------- |
 | `microsoft.entityframeworkcore.optimistic_concurrency_failures` | ObservableCounter | `{failure}` | Cumulative number of optimistic concurrency failures. |
 
-Available starting in: .NET 9.0.
+Available starting in: Entity Framework Core 9.0.

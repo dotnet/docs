@@ -58,21 +58,21 @@ The preceding examples don't specify an access modifier, so it receives the defa
 
 You can return an `int` from the `Main` method by defining the method in one of the following ways:
 
-| `Main` method code             | `Main` declaration                           |
-|--------------------------------|----------------------------------------------|
-| No use of `args` or `await`    | `static int Main()`                          |
-| Uses `args`, no use of `await` | `static int Main(string[] args)`             |
-| No use of `args`, uses `await` | `static async Task<int> Main()`              |
-| Uses `args` and `await`        | `static async Task<int> Main(string[] args)` |
+| `Main` declaration                           | `Main` method code             |
+|----------------------------------------------|--------------------------------|
+| `static int Main()`                          | No use of `args` or `await`    |
+| `static int Main(string[] args)`             | Uses `args`, no use of `await` |
+| `static async Task<int> Main()`              | No use of `args`, uses `await` |
+| `static async Task<int> Main(string[] args)` | Uses `args` and `await`        |
 
 If the return value from `Main` is not used, returning `void` or `Task` allows for slightly simpler code.
 
-| `Main` method code             | `Main` declaration                      |
-|--------------------------------|-----------------------------------------|
-| No use of `args` or `await`    | `static void Main()`                    |
-| Uses `args`, no use of `await` | `static void Main(string[] args)`       |
-| No use of `args`, uses `await` | `static async Task Main()`              |
-| Uses `args` and `await`        | `static async Task Main(string[] args)` |
+| `Main` declaration                      | `Main` method code             |
+|-----------------------------------------|--------------------------------|
+| `static void Main()`                    | No use of `args` or `await`    |
+| `static void Main(string[] args)`       | Uses `args`, no use of `await` |
+| `static async Task Main()`              | No use of `args`, uses `await` |
+| `static async Task Main(string[] args)` | Uses `args` and `await`        |
 
 However, returning `int` or `Task<int>` enables the program to communicate status information to other programs or scripts that invoke the executable file.
 

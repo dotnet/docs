@@ -48,7 +48,7 @@ Available starting in: .NET 9.0.
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
-| `microsoft.entityframeworkcore.compiled_query_cache_hit_rate` | ObservableGauge | `%` | Hit rate for the compiled query cache. |
+| `microsoft.entityframeworkcore.compiled_query_cache_hit_rate` | ObservableGauge | `%` | Hit rate - since last observation - for the compiled query cache. |
 
 Available starting in: .NET 9.0.
 

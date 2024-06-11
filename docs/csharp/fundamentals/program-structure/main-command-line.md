@@ -14,7 +14,7 @@ helpviewer_keywords:
 ---
 # Main() and command-line arguments
 
-The `Main` method is the entry point of a C# application. (Libraries and services do not require a `Main` method as an entry point.) When the application is started, the `Main` method is the first method that is invoked.
+The `Main` method is the entry point of a C# application. When the application is started, the `Main` method is the first method that is invoked.
 
 There can only be one entry point in a C# program. If you have more than one class that has a `Main` method, you must compile your program with the **StartupObject** compiler option to specify which `Main` method to use as the entry point. For more information, see [**StartupObject** (C# Compiler Options)](../../language-reference/compiler-options/advanced.md#mainentrypoint-or-startupobject).
 

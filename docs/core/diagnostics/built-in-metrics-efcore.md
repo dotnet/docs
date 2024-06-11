@@ -16,7 +16,7 @@ The `Microsoft.EntityFrameworkCore` metrics report information about operations 
 - [`microsoft.entityframeworkcore.active_dbcontexts`](#metric-microsoftentityframeworkcoreactive_dbcontexts)
 - [`microsoft.entityframeworkcore.queries`](#metric-microsoftentityframeworkcorequeries)
 - [`microsoft.entityframeworkcore.savechanges`](#metric-microsoftentityframeworkcoresavechanges)
-- [`microsoft.entityframeworkcore.compiled_query_cache_hit_rate`](#metric-)
+- [`microsoft.entityframeworkcore.compiled_query_cache_hit_rate`](#metric-microsoftentityframeworkcorecompiled_query_cache_hit_rate)
 - [`microsoft.entityframeworkcore.execution_strategy_operation_failures`](#metric-microsoftentityframeworkcoreexecution_strategy_operation_failures)
 - [`microsoft.entityframeworkcore.optimistic_concurrency_failures`](#metric-microsoftentityframeworkcoreoptimistic_concurrency_failures)
 

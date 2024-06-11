@@ -24,14 +24,14 @@ This sections ahead serve as an introductory overview of Semantic Kernel specifi
 
 The Semantic Kernel SDK is available as a NuGet package for .NET and integrates with standard app configurations.
 
-Install the package using the following command:
+Install the [`Microsoft.SemanticKernel`](https://www.nuget.org/packages/Microsoft.SemanticKernel) package using the following command:
 
 ```dotnetcli
 dotnet add package Microsoft.SemanticKernel
 ```
 
 > [!NOTE]
-> Although `Microsoft.SemanticKernel` provides core features of Semantic Kernel, additional capabilities require you to install additional packages. For example, the `Microsoft.SemanticKernel.Plugins.Memory` package provides access memory related features.
+> Although `Microsoft.SemanticKernel` provides core features of Semantic Kernel, additional capabilities require you to install additional packages. For example, the [`Microsoft.SemanticKernel.Plugins.Memory`](https://www.nuget.org/packages/Microsoft.SemanticKernel.Plugins.Memory) package provides access memory related features. Visit the [Semantic Kernel documentation](/semantic-kernel/overview) for more information.
 
 Create and configure a `Kernel` instance using the `KernelBuilder` class to access and work with Semantic Kernel. The Kernel holds services, data, and connections to orchestrate integrations between your code and AI models.
 
@@ -151,11 +151,13 @@ kernel.ImportFunctions(nativeFunctions, plugInName);
 
 The core of the Semantic Kernel stack is an AI orchestration layer that allows the seamless integration of AI models and plugins. This layer devises execution strategies from user requests and dynamically orchestrates Plugins to perform complex tasks with AI-assisted planning.
 
-Consider the following code snippet:
+Consider the following psuedo code snippet:
 
 ```csharp
-string actionDefinition = "Read content from a local file and summarize the content.";
+// Native function definition and kernel configuration code omitted for brevity
 
+// Configure the plan
+string planDefinition = "Read content from a local file and summarize the content.";
 SequentialPlanner sequentialPlanner = new SequentialPlanner(kernel);      
 
 string assetsFolder = @"../../assets";
@@ -164,18 +166,19 @@ string fileName = Path.Combine(assetsFolder,"docs","06_SemanticKernel", "aci_doc
 ContextVariables contextVariables = new ContextVariables();
 contextVariables.Add("fileName", fileName);
 
-var customPlan = await sequentialPlanner.CreatePlanAsync(actionDefinition);
+var customPlan = await sequentialPlanner.CreatePlanAsync(planDefinition);
 
+// Execute the plan
 KernelResult kernelResult = await kernel.RunAsync(contextVariables, customPlan);
 
 Console.WriteLine($"Summarization: {kernelResult.GetValue<string>()}");
 ```
 
-The preceding code creates an executable, sequential plan to read content from a local file and summarize the content. The plans sets up instructions to read the file is using a native function and then analyze it using an AI model. The native functions are omitted for brevity.
+The preceding code creates an executable, sequential plan to read content from a local file and summarize the content. The plans sets up instructions to read the file is using a native function and then analyze it using an AI model.
 
 ### Memory
 
-Semantic Kernel's Memory provides abstractions over embedding models, vector databases, and other data to simplify context management for AI applications. Memory is agnostic to the underlying LLM or Vector DB, offering a uniform developer experience. You can configure memory to store data in a variety of sources or service, including Azure AI Search, Azure Cache for Redis, and more.
+Semantic Kernel's Memory provides abstractions over embedding models, vector databases, and other data to simplify context management for AI applications. Memory is agnostic to the underlying LLM or Vector DB, offering a uniform developer experience. You can configure memory features to store data in a variety of sources or service, including Azure AI Search, Azure Cache for Redis, and more.
 
 Consider the following code snippet:
 

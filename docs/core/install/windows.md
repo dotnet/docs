@@ -43,7 +43,7 @@ To run all .NET apps on Windows, you want both the ASP.NET Core Runtime to run a
 
 There are different ways to install .NET and some products might manage their own version of .NET, such as Visual Studio. If you install .NET through software that manages its own version of .NET, you should also install the .NET runtime separately so that you can run .NET apps.
 
-If you're unsure which method you should choose after reviewing the lists in the following sections, you probably want to use the [.NET Installer]().
+If you're unsure which method you should choose after reviewing the lists in the following sections, you probably want to use the [.NET Installer](#net-installer).
 
 ### Developers
 
@@ -261,7 +261,7 @@ The .NET WinGet packages are:
 
 If you install the SDK, you don't need to install the corresponding runtime.
 
-01. Install [WinGet through the Windows Store]().
+01. [Install WinGet](/windows/package-manager/winget/#install-winget).
 01. Open a terminal, such as PowerShell or `cmd.exe`.
 01. Run the `winget install` command and pass the name of the SDK package:
 
@@ -273,7 +273,7 @@ If you install the SDK, you don't need to install the corresponding runtime.
 
 There are different runtimes you can install. Refer to the [Which runtime should you install](#which-runtime-should-you-install) section to understand what's included with each runtime.
 
-01. Install [WinGet through the Windows Store]().
+01. [Install WinGet](/windows/package-manager/winget/#install-winget).
 01. Open a terminal, such as **PowerShell** or **Command Prompt**.
 01. Run the `winget install` command and pass the name of the SDK package:
 

@@ -73,7 +73,6 @@ To set the access level for a `class` or `struct` member, add the appropriate ke
 
 Finalizers can't have accessibility modifiers. Members of an `enum` type are always `public`, and no access modifiers can be applied.
 
-
 The `file` access modifier is allowed only on top-level (non-nested) type declarations.
 
 ## C# language specification

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Numerics.Tensors;
 
-internal class Serialization
+internal class Tensors
 {
     public static void RunIt()
     {

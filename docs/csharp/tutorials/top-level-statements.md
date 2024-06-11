@@ -198,7 +198,8 @@ The preceding code creates a local function inside your main method. That's stil
 
 A file that has top-level statements can also contain namespaces and types at the end of the file, after the top-level statements. But for this tutorial you put the animation method in a separate file to make it more readily reusable.
 
-Finally, you can clean the animation code to remove some duplication:
+Finally, you can clean the animation code to remove some duplication, by using `foreach` loop to iterate through set of animations elements defined in `animations` array.
+<br/>The full `ShowConsoleAnimation` method after refactor should look similar to the following:
 
 :::code language="csharp" source="snippets/top-level-statements/Utilities.cs" ID="Animation":::
 

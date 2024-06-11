@@ -180,14 +180,15 @@ Consider the following code snippet:
 var facts = new Dictionary<string,string>();
 facts.Add(
     "Azure Machine Learning; https://docs.microsoft.com/en-us/azure/machine-learning/", 
-     @"Azure Machine Learning is a cloud service for accelerating and managing the machine learning project lifecycle. 
-     Machine learning professionals, data scientists, and engineers can use it in their day-to-day workflows"
+    @"Azure Machine Learning is a cloud service for accelerating and 
+    managing the machine learning project lifecycle. Machine learning professionals, 
+    data scientists, and engineers can use it in their day-to-day workflows"
 );
 
 facts.Add(
     "Azure SQL Service; https://docs.microsoft.com/en-us/azure/azure-sql/", 
-     @"Azure SQL is a family of managed, secure, and intelligent products that use the SQL Server database 
-     engine in the Azure cloud."
+    @"Azure SQL is a family of managed, secure, and intelligent products
+    that use the SQL Server database engine in the Azure cloud."
 );
 
 string memoryCollectionName = "SummarizedAzureDocs";

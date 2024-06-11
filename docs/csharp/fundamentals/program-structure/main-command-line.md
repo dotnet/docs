@@ -49,7 +49,7 @@ static async Task Main(string[] args) { }
 static async Task<int> Main(string[] args) { }
 ```
 
-The preceding examples don't speicifed a access modifier, so it receives the default access of private. That's typical, but it possible to specify a other access modifier.
+The preceding examples don't specify an access modifier, so it receives the default access of private. That's typical, but it possible to specify a other access modifier.
 
 > [!TIP]
 > The addition of `async` and `Task`, `Task<int>` return types simplifies program code when console applications need to start and `await` asynchronous operations in `Main`.

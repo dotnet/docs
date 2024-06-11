@@ -10,12 +10,12 @@ ms.author: alexwolf
 
 # Semantic Kernel overview for .NET
 
-In this article, you'll explore [Semantic Kernel](/semantic-kernel/overview) core concepts and capabilities. You'll discover why Semantic Kernel is a powerful and recommended choice for working with AI in .NET application, and learn about the following topics:
+In this article, you'll explore [Semantic Kernel](/semantic-kernel/overview) core concepts and capabilities. You'll discover why Semantic Kernel is a powerful and recommended choice for working with AI in .NET applications, and learn about the following topics:
 
 - How to add semantic kernel to your project
 - Semantic Kernel core concepts
 
-This sections ahead serve as an introductory overview of Semantic Kernel specifically in the context of .NET. Visit the following resources for more comprehensive information and training about Semantic Kernel:
+The sections ahead serve as an introductory overview of Semantic Kernel specifically in the context of .NET. Visit the following resources for more comprehensive information and training about Semantic Kernel:
 
 - [Semantic Kernel documentation](/semantic-kernel/overview)
 - [Semantic Kernel training](/training/paths/develop-ai-agents-azure-open-ai-semantic-kernel-sdk/)
@@ -31,11 +31,11 @@ dotnet add package Microsoft.SemanticKernel
 ```
 
 > [!NOTE]
-> Although `Microsoft.SemanticKernel` provides core features of Semantic Kernel, additional capabilities require you to install additional packages. For example, the [`Microsoft.SemanticKernel.Plugins.Memory`](https://www.nuget.org/packages/Microsoft.SemanticKernel.Plugins.Memory) package provides access memory related features. Visit the [Semantic Kernel documentation](/semantic-kernel/overview) for more information.
+> Although `Microsoft.SemanticKernel` provides core features of Semantic Kernel, additional capabilities require you to install additional packages. For example, the [`Microsoft.SemanticKernel.Plugins.Memory`](https://www.nuget.org/packages/Microsoft.SemanticKernel.Plugins.Memory) package provides to access memory related features. Visit the [Semantic Kernel documentation](/semantic-kernel/overview) for more information.
 
-Create and configure a `Kernel` instance using the `KernelBuilder` class to access and work with Semantic Kernel. The Kernel holds services, data, and connections to orchestrate integrations between your code and AI models.
+Create and configure a `Kernel` instance using the `KernelBuilder` class to access and work with Semantic Kernel. The `Kernel` holds services, data, and connections to orchestrate integrations between your code and AI models.
 
-Configure the Kernel in a .NET console app:
+Configure the `Kernel` in a .NET console app:
 
 ```csharp
 var builder = Kernel.CreateBuilder();
@@ -79,7 +79,7 @@ These building blocks are explored in more detail in the following sections.
 
 The Semantic Kernel SDK includes a set of connectors that enable developers to integrate LLMs and other services into their existing applications. These connectors serve as the bridge between the application code and the AI models or services. Semantic Kernel handles many common connection concerns and challenges for you so you can focus on building your own workflows and features.
 
-The following code snippet creates a Kernel and adds a connection to an Azure OpenAI model:
+The following code snippet creates a `Kernel` and adds a connection to an Azure OpenAI model:
 
 ```csharp
 using Microsoft.SemanticKernel;

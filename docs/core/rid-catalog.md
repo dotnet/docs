@@ -106,7 +106,7 @@ The following list shows a small subset of the most common RIDs used for each OS
 - `win-x86`
 - `win-arm64`
 
-For more information, see [.NET dependencies and requirements](./install/windows.md#dependencies).
+For more information, see [Install .NET on Windows](install/windows.md#supported-versions).
 
 ### Linux RIDs
 

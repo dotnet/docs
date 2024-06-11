@@ -218,7 +218,7 @@ To use the .NET tensor APIs, install the [System.Numerics.Tensors](https://www.n
 The new `Tensor<T>` <!--xref:System.Numerics.Tensors.Tensor`1--> type expands the AI capabilities of the .NET libraries and runtime. This type:
 
 - Provides efficient interop with AI libraries like ML.NET, TorchSharp, and ONNX Runtime using zero copies where possible.
-- Builds on top of <xref:System.Numerics.TensorPrimitives> for efficient math operations.
+- Builds on top of <xref:System.Numerics.Tensors.TensorPrimitives> for efficient math operations.
 - Enables easy and efficient data manipulation by providing indexing and slicing operations.
 - Is not a replacement for existing AI and machine learning libraries. Instead, it's intended to provide a common set of APIs to reduce code duplication and dependencies, and to achieve better performance by using the latest runtime features.
 
@@ -228,9 +228,9 @@ The following codes shows some of the APIs included with the new `Tensor<T>` typ
 
 ### TensorPrimitives
 
-The `System.Numerics.Tensors` library includes the <xref:System.Numerics.TensorPrimitives> class, which provides static methods for performing numerical operations on spans of values. In .NET 9, the scope of methods exposed by <xref:System.Numerics.TensorPrimitives> has been significantly expanded, growing from 40 (in .NET 8) to almost 200 overloads. The surface area encompasses familiar numerical operations from types like <xref:System.Math> and <xref:System.MathF>. It also includes the generic math interfaces like <xref:System.Numerics.INumber%601>, except instead of processing an individual value, they process a span of values. Many operations have also been accelerated via SIMD-optimized implementations for .NET 9.
+The `System.Numerics.Tensors` library includes the <xref:System.Numerics.Tensors.TensorPrimitives> class, which provides static methods for performing numerical operations on spans of values. In .NET 9, the scope of methods exposed by <xref:System.Numerics.Tensors.TensorPrimitives> has been significantly expanded, growing from 40 (in .NET 8) to almost 200 overloads. The surface area encompasses familiar numerical operations from types like <xref:System.Math> and <xref:System.MathF>. It also includes the generic math interfaces like <xref:System.Numerics.INumber%601>, except instead of processing an individual value, they process a span of values. Many operations have also been accelerated via SIMD-optimized implementations for .NET 9.
 
-<xref:System.Numerics.TensorPrimitives> now exposes generic overloads for any type `T` that implements a certain interface. (The .NET 8 version only included overloads for manipulating spans of `float` values.) For example, the new <xref:System.Numerics.Tensors.TensorPrimitives.CosineSimilarity%60%601(System.ReadOnlySpan{%60%600},System.ReadOnlySpan{%60%600})> overload performs cosine similarity on two vectors of `float`, `double`, or `Half` values, or values of any other type that implements <xref:System.Numerics.IRootFunctions%601>.
+<xref:System.Numerics.Tensors.TensorPrimitives> now exposes generic overloads for any type `T` that implements a certain interface. (The .NET 8 version only included overloads for manipulating spans of `float` values.) For example, the new <xref:System.Numerics.Tensors.TensorPrimitives.CosineSimilarity%60%601(System.ReadOnlySpan{%60%600},System.ReadOnlySpan{%60%600})> overload performs cosine similarity on two vectors of `float`, `double`, or `Half` values, or values of any other type that implements <xref:System.Numerics.IRootFunctions%601>.
 
 Compare the precision of the cosine similarity operation on two vectors of type `float` versus `double`:
 

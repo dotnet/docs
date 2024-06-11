@@ -40,7 +40,7 @@ Configure the Kernel in a .NET console app:
 ```csharp
 var builder = Kernel.CreateBuilder();
 
-// Add builder configurations
+// Add builder configuration and services
 
 var kernel = builder.Build();
 ```
@@ -51,7 +51,7 @@ Configure the Kernel in an ASP.NET Core app:
 var builder = WebApplication.CreateBuilder();
 builder.Services.AddKernel();
 
-// Add builder configurations
+// Add builder configuration and services
 
 var app = builder.Build();
 ```
@@ -86,7 +86,8 @@ using Microsoft.SemanticKernel;
 
 // Create kernel
 var builder = Kernel.CreateBuilder();
-// Add a text or chat completion service using either:
+
+// Add a chat completion service:
 builder.Services.AddAzureOpenAIChatCompletion(
     "your-resource-name",
     "your-endpoint",
@@ -97,7 +98,7 @@ var kernel = builder.Build();
 
 ### Plugins
 
-Semantic Kernel plugins encapsulate standard language functions for applications and AI models to consume. You can create your own plugins or rely on plugins provided by the SDK. These plugins streamline tasks where AI models are advantageous and efficiently combine them with more traditional C# methods. Plugin functions are generally categorized into two types, which are semantic functions and native functions.
+Semantic Kernel [plugins](/semantic-kernel/agents/plugins) encapsulate standard language functions for applications and AI models to consume. You can create your own plugins or rely on plugins provided by the SDK. These plugins streamline tasks where AI models are advantageous and efficiently combine them with more traditional C# methods. Plugin functions are generally categorized into two types, which are semantic functions and native functions.
 
 #### Semantic functions
 
@@ -106,10 +107,11 @@ Semantic functions are essentially AI prompts defined in your code that Semantic
 The following code snippet defines and registers a semantic function:
 
 ```csharp
+var userInput = Console.ReadLine();
+
 //Define semantic function inline
-var input = Console.ReadLine();
 string skPrompt = @"Summarize the provided unstructured text in a sentence that is easy to understand.
-                    Text to summarize: {{$input}}";
+                    Text to summarize: {{$userInput}}";
 
 // Register the function
 kernel.CreateSemanticFunction(
@@ -135,7 +137,6 @@ public class NativeFunctions {
         string content = await File.ReadAllTextAsync(fileName); 
         if (content.Length <= maxSize) return content;
         return content.Substring(0, maxSize);
-
     }
 }
 
@@ -143,20 +144,20 @@ public class NativeFunctions {
 string plugInName = "NativeFunction";
 string functionName = "RetrieveLocalFile";
 
-NativeFunctions nativeFunctions = new NativeFunctions();
+var nativeFunctions = new NativeFunctions();
 kernel.ImportFunctions(nativeFunctions, plugInName);
 ```
 
 ### Planner
 
-The core of the Semantic Kernel stack is an AI orchestration layer that allows the seamless integration of AI models and plugins. This layer devises execution strategies from user requests and dynamically orchestrates Plugins to perform complex tasks with AI-assisted planning.
+The [planner](/semantic-kernel/agents/planners) is a core component of Semantic Kernel that provides AI orchestration to manage seamless integration between AI models and plugins. This layer devises execution strategies from user requests and dynamically orchestrates Plugins to perform complex tasks with AI-assisted planning.
 
 Consider the following psuedo code snippet:
 
 ```csharp
 // Native function definition and kernel configuration code omitted for brevity
 
-// Configure the plan
+// Configure and create the plan
 string planDefinition = "Read content from a local file and summarize the content.";
 SequentialPlanner sequentialPlanner = new SequentialPlanner(kernel);      
 
@@ -170,7 +171,6 @@ var customPlan = await sequentialPlanner.CreatePlanAsync(planDefinition);
 
 // Execute the plan
 KernelResult kernelResult = await kernel.RunAsync(contextVariables, customPlan);
-
 Console.WriteLine($"Summarization: {kernelResult.GetValue<string>()}");
 ```
 
@@ -178,7 +178,7 @@ The preceding code creates an executable, sequential plan to read content from a
 
 ### Memory
 
-Semantic Kernel's Memory provides abstractions over embedding models, vector databases, and other data to simplify context management for AI applications. Memory is agnostic to the underlying LLM or Vector DB, offering a uniform developer experience. You can configure memory features to store data in a variety of sources or service, including Azure AI Search, Azure Cache for Redis, and more.
+Semantic Kernel's [Memory](/semantic-kernel/memories) provides abstractions over embedding models, vector databases, and other data to simplify context management for AI applications. Memory is agnostic to the underlying LLM or Vector DB, offering a uniform developer experience. You can configure memory features to store data in a variety of sources or service, including Azure AI Search, Azure Cache for Redis, and more.
 
 Consider the following code snippet:
 
@@ -200,13 +200,12 @@ facts.Add(
 string memoryCollectionName = "SummarizedAzureDocs";
 
 foreach (var fact in facts) {
-
     await memoryBuilder.SaveReferenceAsync(
         collection: memoryCollectionName,
         description: fact.Key.Split(";")[1].Trim(),
         text: fact.Value,
         externalId: fact.Key.Split(";")[2].Trim(),
-        externalSourceName: "Azure Documenation"
+        externalSourceName: "Azure Documentation"
     );
 }
 ```

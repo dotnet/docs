@@ -30,6 +30,9 @@ Install the package using the following command:
 dotnet add package Microsoft.SemanticKernel
 ```
 
+> [!NOTE]
+> Although `Microsoft.SemanticKernel` provides core features of Semantic Kernel, additional capabilities require you to install additional packages. For example, the `Microsoft.SemanticKernel.Plugins.Memory` package provides access memory related features.
+
 Create and configure a `Kernel` instance using the `KernelBuilder` class to access and work with Semantic Kernel. The Kernel holds services, data, and connections to orchestrate integrations between your code and AI models.
 
 Configure the Kernel in a .NET console app:
@@ -59,7 +62,7 @@ var app = builder.Build();
 
 The Semantic Kernel SDK benefits enterprise developers in the following ways:
 
-- Streamlines integration through of AI capabilities into existing applications to enable a cohesive solution for enterprise products.
+- Streamlines integration of AI capabilities into existing applications to enable a cohesive solution for enterprise products.
 - Minimizes the learning curve of working with different AI models or services by providing abstractions that reduce complexity.
 - Improves reliability by reducing the unpredictable behavior of prompts and responses from AI models. You can fine-tune prompts and plan tasks to create a controlled and predictable user experience.
 
@@ -74,7 +77,7 @@ These building blocks are explored in more detail in the following sections.
 
 ### Connections
 
-The Semantic Kernel SDK includes a set of connectors that enable developers to integrate LLMs into their existing applications. These connectors serve as the bridge between the application code and the AI models. Semantic Kernel handles many common connection concerns and challenges for you so you can focus on building your own workflows and features.
+The Semantic Kernel SDK includes a set of connectors that enable developers to integrate LLMs and other services into their existing applications. These connectors serve as the bridge between the application code and the AI models or services. Semantic Kernel handles many common connection concerns and challenges for you so you can focus on building your own workflows and features.
 
 The following code snippet creates a Kernel and adds a connection to an Azure OpenAI model:
 
@@ -172,7 +175,7 @@ The preceding code creates an executable, sequential plan to read content from a
 
 ### Memory
 
-Semantic Kernel's Memory provides abstractions over embedding models, vector databases, and other data to simplify context management for AI applications. Memory is agnostic to the underlying LLM or Vector DB, offering a uniform developer experience.
+Semantic Kernel's Memory provides abstractions over embedding models, vector databases, and other data to simplify context management for AI applications. Memory is agnostic to the underlying LLM or Vector DB, offering a uniform developer experience. You can configure memory to store data in a variety of sources or service, including Azure AI Search, Azure Cache for Redis, and more.
 
 Consider the following code snippet:
 

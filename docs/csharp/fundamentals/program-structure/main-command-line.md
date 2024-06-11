@@ -31,7 +31,7 @@ For more information, see [Top-level statements](top-level-statements.md).
 - The `Main` method is the entry point of an executable program; it is where the program control starts and ends.
 - `Main` must be declared inside a class or struct. The enclosing `class` can be `static`.
 - `Main` must be [`static`](../../language-reference/keywords/static.md).
-- `Main` can have a [`public`](../../language-reference/keywords/public.md), [`protected`](../../language-reference/keywords/protected.md), [`private`](../../language-reference/keywords/private.md), [`protected internal`](../../language-reference/keywords/protected-internal.md) and [`private protected`](../../language-reference/keywords/private-protected.md) access modifier. If not specified, it receives the default access of private.
+- `Main` can have a [`public`](../../language-reference/keywords/public.md), [`protected`](../../language-reference/keywords/protected.md), [`private`](../../language-reference/keywords/private.md), [`protected internal`](../../language-reference/keywords/protected-internal.md) and [`private protected`](../../language-reference/keywords/private-protected.md) access modifier. If not specified, it receives the default access of `private`.
 - `Main` can either have a `void`, `int`, `Task`, or `Task<int>` return type.
 - If and only if `Main` returns a `Task` or `Task<int>`, the declaration of `Main` may include the [`async`](../../language-reference/keywords/async.md) modifier. This specifically excludes an `async void Main` method.
 - The `Main` method can be declared with or without a `string[]` parameter that contains command-line arguments. When using Visual Studio to create Windows applications, you can add the parameter manually or else use the <xref:System.Environment.GetCommandLineArgs> method to obtain the command-line arguments. Parameters are read as zero-indexed command-line arguments. Unlike C and C++, the name of the program is not treated as the first command-line argument in the `args` array, but it is the first element of the <xref:System.Environment.GetCommandLineArgs> method.
@@ -49,7 +49,7 @@ static async Task Main(string[] args) { }
 static async Task<int> Main(string[] args) { }
 ```
 
-The preceding examples don't specify an access modifier, so it receives the default access of private. That's typical, but it possible to specify a other access modifier.
+The preceding examples don't specify an access modifier, so they're implicitly `private` by default. That's typical, but it's possible to specify an explicit access modifier.
 
 > [!TIP]
 > The addition of `async` and `Task`, `Task<int>` return types simplifies program code when console applications need to start and `await` asynchronous operations in `Main`.

@@ -14,4 +14,4 @@ see the [EventCounters reference](available-counters.md) and [Windows Performanc
 - [.NET extensions metrics](built-in-metrics-diagnostics.md)
 - [ASP.NET Core Metrics](built-in-metrics-aspnetcore.md)
 - [System.Net Metrics](built-in-metrics-system-net.md)
-- [Entity Framework Core Metrics](../../../ef/core/logging-events-diagnostics/metrics)
+- [Entity Framework Core Metrics](/ef/core/logging-events-diagnostics/metrics)

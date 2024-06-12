@@ -110,7 +110,7 @@ Return value = 0
 
 ### Main return Task
 
-When the application entry point returns a `Task` or `Task<int>`, the application wait the returned task completes. So this `Main` :
+When the application entry point returns a `Task` or `Task<int>`, the application wait the returned task completes (either successfully or faulted). So this `Main` :
 
 ```csharp
 class Program

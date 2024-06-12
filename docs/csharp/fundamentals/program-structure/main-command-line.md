@@ -110,17 +110,7 @@ Return value = 0
 
 ### Main return Task
 
-When the application entry point returns a `Task` or `Task<int>`, the compiler generates a new entry point that calls the entry point method declared in the application code. Assuming that this entry point is called `$GeneratedMain`, the compiler generates the following code for these entry points:
-
-- `static Task Main()` results in the compiler emitting the equivalent of `private static void $GeneratedMain() => Main().GetAwaiter().GetResult();`
-- `static Task Main(string[])` results in the compiler emitting the equivalent of `private static void $GeneratedMain(string[] args) => Main(args).GetAwaiter().GetResult();`
-- `static Task<int> Main()` results in the compiler emitting the equivalent of `private static int $GeneratedMain() => Main().GetAwaiter().GetResult();`
-- `static Task<int> Main(string[])` results in the compiler emitting the equivalent of `private static int $GeneratedMain(string[] args) => Main(args).GetAwaiter().GetResult();`
-
-> [!NOTE]
->If `Main` include the `async` modifier, the compiler would generate the same code.
-
-For this example:
+When the application entry point returns a `Task` or `Task<int>`, the application wait the returned task completes. So this `Main` :
 
 ```csharp
 class Program
@@ -137,29 +127,22 @@ class Program
 }
 ```
 
-The compilater will generate the boilerplate code :
+Is similar to :
+
 ```csharp
 class Program
 {
-    public static void $GeneratedMain()
+    public static void Main(string[] args)
     {
         WorkAsync().GetAwaiter().GetResult();
     }
 
-    static async Task Main(string[] args)
-    {
-        await WorkAsync();
-    }
-
     private static async Task WorkAsync()
     {
         // Some work here
     }
 }
 ```
-
-> [!NOTE]
-> In fact, the generator will not generate the method with the name `$GeneratedMain`, but with a specific IL name.
 
 ## Command-Line Arguments
 

@@ -1,15 +1,13 @@
 ---
-title: Gateway patterns
-description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | Gateway patterns
+title: .NET Aspire Components 
+description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | .NET Aspire Components 
 author: 
 ms.date: 04/25/2024
 ---
 
-# Gateway patterns
+# .NET Aspire Components: Empowering Cloud-Native Applications
 
 [!INCLUDE [download-alert](../includes/download-alert.md)]
-
-# .NET Aspire Components: Empowering Cloud-Native Applications
 
 ![A diagram showing some example .NET Aspire components - and the NuGet package website.](media/aspire-components.png)
 

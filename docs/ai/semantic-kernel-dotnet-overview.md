@@ -10,12 +10,12 @@ ms.author: alexwolf
 
 # Semantic Kernel overview for .NET
 
-In this article, you'll explore [Semantic Kernel](/semantic-kernel/overview) core concepts and capabilities. You'll discover why Semantic Kernel is a powerful and recommended choice for working with AI in .NET applications, and learn about the following topics:
+In this article, you explore [Semantic Kernel](/semantic-kernel/overview) core concepts and capabilities. You discover why Semantic Kernel is a powerful and recommended choice for working with AI in .NET applications, and you learn:
 
 - How to add semantic kernel to your project
 - Semantic Kernel core concepts
 
-The sections ahead serve as an introductory overview of Semantic Kernel specifically in the context of .NET. Visit the following resources for more comprehensive information and training about Semantic Kernel:
+The sections ahead serve as an introductory overview of Semantic Kernel specifically in the context of .NET. For more comprehensive information and training about Semantic Kernel, see the following resources:
 
 - [Semantic Kernel documentation](/semantic-kernel/overview)
 - [Semantic Kernel training](/training/paths/develop-ai-agents-azure-open-ai-semantic-kernel-sdk/)
@@ -31,7 +31,7 @@ dotnet add package Microsoft.SemanticKernel
 ```
 
 > [!NOTE]
-> Although `Microsoft.SemanticKernel` provides core features of Semantic Kernel, additional capabilities require you to install additional packages. For example, the [`Microsoft.SemanticKernel.Plugins.Memory`](https://www.nuget.org/packages/Microsoft.SemanticKernel.Plugins.Memory) package provides to access memory related features. Visit the [Semantic Kernel documentation](/semantic-kernel/overview) for more information.
+> Although `Microsoft.SemanticKernel` provides core features of Semantic Kernel, additional capabilities require you to install additional packages. For example, the [`Microsoft.SemanticKernel.Plugins.Memory`](https://www.nuget.org/packages/Microsoft.SemanticKernel.Plugins.Memory) package provides to access memory related features. For more information, see the [Semantic Kernel documentation](/semantic-kernel/overview).
 
 Create and configure a `Kernel` instance using the `KernelBuilder` class to access and work with Semantic Kernel. The `Kernel` holds services, data, and connections to orchestrate integrations between your code and AI models.
 
@@ -98,18 +98,18 @@ var kernel = builder.Build();
 
 ### Plugins
 
-Semantic Kernel [plugins](/semantic-kernel/agents/plugins) encapsulate standard language functions for applications and AI models to consume. You can create your own plugins or rely on plugins provided by the SDK. These plugins streamline tasks where AI models are advantageous and efficiently combine them with more traditional C# methods. Plugin functions are generally categorized into two types, which are semantic functions and native functions.
+Semantic Kernel [plugins](/semantic-kernel/agents/plugins) encapsulate standard language functions for applications and AI models to consume. You can create your own plugins or rely on plugins provided by the SDK. These plugins streamline tasks where AI models are advantageous and efficiently combine them with more traditional C# methods. Plugin functions are generally categorized into two types: *semantic functions* and *native functions*.
 
 #### Semantic functions
 
-Semantic functions are essentially AI prompts defined in your code that Semantic Kernel can customize and call as needed. These prompts can be templatized to use variables, custom prompt and completion  formatting, and more.
+Semantic functions are essentially AI prompts defined in your code that Semantic Kernel can customize and call as needed. You can templatize these prompts to use variables, custom prompt and completion formatting, and more.
 
 The following code snippet defines and registers a semantic function:
 
 ```csharp
 var userInput = Console.ReadLine();
 
-//Define semantic function inline
+// Define semantic function inline.
 string skPrompt = @"Summarize the provided unstructured text in a sentence that is easy to understand.
                     Text to summarize: {{$userInput}}";
 
@@ -123,7 +123,7 @@ kernel.CreateSemanticFunction(
 
 #### Native functions
 
-Native functions are C# methods that Semantic Kernel can call directly to manipulate or retrieve data, and perform other operations that are better suited for traditional code instructions instead of LLM prompts.
+Native functions are C# methods that Semantic Kernel can call directly to manipulate or retrieve data. They perform operations that are better suited for traditional code instructions instead of LLM prompts.
 
 The following code snippet defines and registers a native function:
 
@@ -152,7 +152,7 @@ kernel.ImportFunctions(nativeFunctions, plugInName);
 
 The [planner](/semantic-kernel/agents/planners) is a core component of Semantic Kernel that provides AI orchestration to manage seamless integration between AI models and plugins. This layer devises execution strategies from user requests and dynamically orchestrates Plugins to perform complex tasks with AI-assisted planning.
 
-Consider the following psuedo code snippet:
+Consider the following pseudo-code snippet:
 
 ```csharp
 // Native function definition and kernel configuration code omitted for brevity
@@ -174,7 +174,7 @@ KernelResult kernelResult = await kernel.RunAsync(contextVariables, customPlan);
 Console.WriteLine($"Summarization: {kernelResult.GetValue<string>()}");
 ```
 
-The preceding code creates an executable, sequential plan to read content from a local file and summarize the content. The plans sets up instructions to read the file is using a native function and then analyze it using an AI model.
+The preceding code creates an executable, sequential plan to read content from a local file and summarize the content. The plan sets up instructions to read the file using a native function and then analyze it using an AI model.
 
 ### Memory
 

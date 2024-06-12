@@ -1,11 +1,11 @@
 ---
-title: Gateway patterns
-description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | Gateway patterns
+title: Observability & Dashboard 
+description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | Observability & Dashboard 
 author: 
 ms.date: 04/25/2024
 ---
 
-# Gateway patterns
+# Observability & Dashboard 
 
 [!INCLUDE [download-alert](../includes/download-alert.md)]
 

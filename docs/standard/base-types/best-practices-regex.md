@@ -39,7 +39,7 @@ The last text type is especially problematic for a regular expression that has b
 
 For example, consider a commonly used but problematic regular expression for validating the alias of an email address. The regular expression `^[0-9A-Z]([-.\w]*[0-9A-Z])*$` is written to process what is considered to be a valid email address. A valid email address consists of an alphanumeric character, followed by zero or more characters that can be alphanumeric, periods, or hyphens. The regular expression must end with an alphanumeric character. However, as the following example shows, although this regular expression handles valid input easily, its performance is inefficient when it's processing nearly valid input:
 
-[!code-csharp[Conceptual.RegularExpressions.BestPractices#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.bestpractices/cs/design2.cs#1)]
+[!code-csharp[Conceptual.RegularExpressions.BestPractices#1](./snippets/regex/csharp/design2.cs#1)]
 [!code-vb[Conceptual.RegularExpressions.BestPractices#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.bestpractices/vb/design2.vb#1)]
 
 As the output from the preceding example shows, the regular expression engine processes the valid email alias in about the same time interval regardless of its length. On the other hand, when the nearly valid email address has more than five characters, processing time approximately doubles for each extra character in the string. Therefore, a nearly valid 28-character string would take over an hour to process, and a nearly valid 33-character string would take nearly a day to process.
@@ -162,7 +162,7 @@ If you determine that backtracking isn't necessary, you can disable it in a coup
 - By setting the <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType> option (introduced in .NET 7). For more information, see [Nonbacktracking mode](regular-expression-options.md#nonbacktracking-mode).
 - By using the `(?>subexpression)` language element, known as an atomic group. The following example parses an input string by using two regular expressions. The first, `\b\p{Lu}\w*\b`, relies on backtracking. The second, `\b\p{Lu}(?>\w*)\b`, disables backtracking. As the output from the example shows, they both produce the same result:
 
-  [!code-csharp[Conceptual.RegularExpressions.BestPractices#10](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.bestpractices/cs/backtrack2.cs#10)]
+  [!code-csharp[Conceptual.RegularExpressions.BestPractices#10](./snippets/regex/csharp/backtrack2.cs#10)]
   [!code-vb[Conceptual.RegularExpressions.BestPractices#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.bestpractices/vb/backtrack2.vb#10)]
 
 In many cases, backtracking is essential for matching a regular expression pattern to input text. However, excessive backtracking can severely degrade performance and create the impression that an application has stopped responding. In particular, this problem arises when quantifiers are nested and the text that matches the outer subexpression is a subset of the text that matches the inner subexpression.
@@ -185,7 +185,7 @@ In these cases, you can optimize regular expression performance by removing the 
 
 The following example illustrates the use of this regular expression to match an array containing possible part numbers:
 
-[!code-csharp[Conceptual.RegularExpressions.BestPractices#11](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.bestpractices/cs/backtrack4.cs#11)]
+[!code-csharp[Conceptual.RegularExpressions.BestPractices#11](./snippets/regex/csharp/backtrack4.cs#11)]
 [!code-vb[Conceptual.RegularExpressions.BestPractices#11](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.bestpractices/vb/backtrack4.vb#11)]
 
 The regular expression language in .NET includes the following language elements that you can use to eliminate nested quantifiers. For more information, see [Grouping constructs](grouping-constructs-in-regular-expressions.md).
@@ -213,7 +213,7 @@ If you've defined a time-out interval and a match isn't found at the end of that
 
 The following example defines a `GetWordData` method that instantiates a regular expression with a time-out interval of 350 milliseconds to calculate the number of words and average number of characters in a word in a text document. If the matching operation times out, the time-out interval is increased by 350 milliseconds and the <xref:System.Text.RegularExpressions.Regex> object is reinstantiated. If the new time-out interval exceeds one second, the method rethrows the exception to the caller.
 
-[!code-csharp[Conceptual.RegularExpressions.BestPractices#12](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.bestpractices/cs/timeout1.cs#12)]
+[!code-csharp[Conceptual.RegularExpressions.BestPractices#12](./snippets/regex/csharp/timeout1.cs#12)]
 [!code-vb[Conceptual.RegularExpressions.BestPractices#12](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.bestpractices/vb/timeout1.vb#12)]
 
 ## Capture only when necessary
@@ -235,12 +235,12 @@ Often, grouping constructs are used in a regular expression only so that quantif
 
 As the following example shows, when a match is found, both the <xref:System.Text.RegularExpressions.GroupCollection> and <xref:System.Text.RegularExpressions.CaptureCollection> objects are populated with captures from the match. In this case, the capturing group `(\w+[;,]?\s?)` exists so that the `+` quantifier can be applied to it, which enables the regular expression pattern to match each word in a sentence. Otherwise, it would match the last word in a sentence.
 
-[!code-csharp[Conceptual.RegularExpressions.BestPractices#8](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.bestpractices/cs/group1.cs#8)]
+[!code-csharp[Conceptual.RegularExpressions.BestPractices#8](./snippets/regex/csharp/group1.cs#8)]
 [!code-vb[Conceptual.RegularExpressions.BestPractices#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.bestpractices/vb/group1.vb#8)]
 
 When you use subexpressions only to apply quantifiers to them and you aren't interested in the captured text, you should disable group captures. For example, the `(?:subexpression)` language element prevents the group to which it applies from capturing matched substrings. In the following example, the regular expression pattern from the previous example is changed to `\b(?:\w+[;,]?\s?)+[.?!]`. As the output shows, it prevents the regular expression engine from populating the <xref:System.Text.RegularExpressions.GroupCollection> and <xref:System.Text.RegularExpressions.CaptureCollection> collections:
 
-[!code-csharp[Conceptual.RegularExpressions.BestPractices#9](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.bestpractices/cs/group2.cs#9)]
+[!code-csharp[Conceptual.RegularExpressions.BestPractices#9](./snippets/regex/csharp/group2.cs#9)]
 [!code-vb[Conceptual.RegularExpressions.BestPractices#9](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.bestpractices/vb/group2.vb#9)]
 
 You can disable captures in one of the following ways:

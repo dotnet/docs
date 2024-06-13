@@ -183,11 +183,11 @@ This article describes the object model used in working with .NET regular expres
 
 - The `Match.Captures` property returns a <xref:System.Text.RegularExpressions.CaptureCollection> object that is of limited use. The collection is not populated for a <xref:System.Text.RegularExpressions.Match> object whose `Success` property is `false`. Otherwise, it contains a single <xref:System.Text.RegularExpressions.Capture> object that has the same information as the <xref:System.Text.RegularExpressions.Match> object.
 
- For more information about these objects, see [The Group Collection](#GroupCollection) and [The Capture Collection](#CaptureCollection) sections later in this topic.
+For more information about these objects, see [The `GroupCollection` class](#the-groupcollection-class) and [The `CaptureCollection` class](#the-capturecollection-class) sections later in this article.
 
- Two additional properties of the <xref:System.Text.RegularExpressions.Match> class provide information about the match. The `Match.Value` property returns the substring in the input string that matches the regular expression pattern. The `Match.Index` property returns the zero-based starting position of the matched string in the input string.
+Two additional properties of the <xref:System.Text.RegularExpressions.Match> class provide information about the match. The `Match.Value` property returns the substring in the input string that matches the regular expression pattern. The `Match.Index` property returns the zero-based starting position of the matched string in the input string.
 
- The <xref:System.Text.RegularExpressions.Match> class also has two pattern-matching methods:
+The <xref:System.Text.RegularExpressions.Match> class also has two pattern-matching methods:
 
 - The <xref:System.Text.RegularExpressions.Match.NextMatch%2A?displayProperty=nameWithType> method finds the match after the match represented by the current <xref:System.Text.RegularExpressions.Match> object, and returns a <xref:System.Text.RegularExpressions.Match> object that represents that match.
 

@@ -1,7 +1,7 @@
 ---
 title: Best Practices for Regular Expressions in .NET
 description: Learn how to create efficient, effective regular expressions in .NET.
-ms.date: 10/02/2023
+ms.date: 06/11/2024
 ms.custom: devdivchpfy22
 ms.topic: conceptual
 dev_langs:
@@ -54,10 +54,10 @@ To solve this problem, you can do the following:
 
 ## Handle object instantiation appropriately
 
-At the heart of .NET's regular expression object model, is the <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> class, which represents the regular expression engine. Often, the single greatest factor that affects regular expression performance is the way in which the <xref:System.Text.RegularExpressions.Regex> engine is used. Defining a regular expression involves tightly coupling the regular expression engine with a regular expression pattern. That coupling process, whether it involves instantiating a <xref:System.Text.RegularExpressions.Regex> object by passing its constructor a regular expression pattern or calling a static method by passing it the regular expression pattern and the string to be analyzed, is by necessity an expensive one.
+At the heart of .NET's regular expression object model is the <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> class, which represents the regular expression engine. Often, the single greatest factor that affects regular expression performance is the way in which the <xref:System.Text.RegularExpressions.Regex> engine is used. Defining a regular expression involves tightly coupling the regular expression engine with a regular expression pattern. That coupling process is expensive, whether it involves instantiating a <xref:System.Text.RegularExpressions.Regex> object by passing its constructor a regular expression pattern or calling a static method by passing it the regular expression pattern and the string to be analyzed.
 
 > [!NOTE]
-> For a detailed discussion of the performance implications of using interpreted and compiled regular expressions, see [Optimizing Regular Expression Performance, Part II: Taking Charge of Backtracking](/archive/blogs/bclteam/optimizing-regular-expression-performance-part-ii-taking-charge-of-backtracking-ron-petrusha) in the BCL Team blog.
+> For a detailed discussion of the performance implications of using interpreted and compiled regular expressions, see the blog post [Optimizing Regular Expression Performance, Part II: Taking Charge of Backtracking](/archive/blogs/bclteam/optimizing-regular-expression-performance-part-ii-taking-charge-of-backtracking-ron-petrusha).
 
 You can couple the regular expression engine with a particular regular expression pattern and then use the engine to match the text in several ways:
 
@@ -65,18 +65,18 @@ You can couple the regular expression engine with a particular regular expressio
 
 - You can instantiate a <xref:System.Text.RegularExpressions.Regex> object and call an instance pattern-matching method of an interpreted regular expression, which is the default method for binding the regular expression engine to a regular expression pattern. It results when a <xref:System.Text.RegularExpressions.Regex> object is instantiated without an `options` argument that includes the <xref:System.Text.RegularExpressions.RegexOptions.Compiled> flag.
 
+- You can instantiate a <xref:System.Text.RegularExpressions.Regex> object and call an instance pattern-matching method of a source-generated regular expression. This technique is recommended in most cases. To do so, place the <xref:System.Text.RegularExpressions.GeneratedRegexAttribute> attribute on a partial method that returns `Regex`.
+
 - You can instantiate a <xref:System.Text.RegularExpressions.Regex> object and call an instance pattern-matching method of a compiled regular expression. Regular expression objects represent compiled patterns when a <xref:System.Text.RegularExpressions.Regex> object is instantiated with an `options` argument that includes the <xref:System.Text.RegularExpressions.RegexOptions.Compiled> flag.
 
-- You can create a special-purpose <xref:System.Text.RegularExpressions.Regex> object that's tightly coupled with a particular regular expression pattern, compile it, and save it to a standalone assembly. You can call the <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A?displayProperty=nameWithType> method to compile and save it.
-
-The particular way in which you call regular expression matching methods can affect your application's performance. The following sections discuss when to use static method calls, interpreted regular expressions, and compiled regular expressions to improve your application's performance.
+The particular way in which you call regular expression matching methods can affect your application's performance. The following sections discuss when to use static method calls, source-generated regular expressions, interpreted regular expressions, and compiled regular expressions to improve your application's performance.
 
 > [!IMPORTANT]
-> The form of the method call (static, interpreted, compiled) affects performance if the same regular expression is used repeatedly in method calls, or if an application makes extensive use of regular expression objects.
+> The form of the method call (static, interpreted, source-generated, compiled) affects performance if the same regular expression is used repeatedly in method calls, or if an application makes extensive use of regular expression objects.
 
 ### Static regular expressions
 
-Static regular expression methods are recommended as an alternative to repeatedly instantiating a regular expression object with the same regular expression. Unlike regular expression patterns used by regular expression objects, either the operation codes or the compiled common intermediate language (CIL) from patterns used in static method calls is cached internally by the regular expression engine.
+Static regular expression methods are recommended as an alternative to repeatedly instantiating a regular expression object with the same regular expression. Unlike regular expression patterns used by regular expression objects, either the operation codes (opcodes) or the compiled common intermediate language (CIL) from patterns used in static method calls is cached internally by the regular expression engine.
 
 For example, an event handler frequently calls another method to validate user input. This example is reflected in the following code, in which a <xref:System.Windows.Forms.Button> control's <xref:System.Windows.Forms.Control.Click> event is used to call a method named `IsValidCurrency`, which checks whether the user has entered a currency symbol followed by at least one decimal digit.
 
@@ -100,58 +100,42 @@ By default, the last 15 most recently used static regular expression patterns ar
 
 The regular expression `\p{Sc}+\s*\d+` that's used in this example verifies that the input string has a currency symbol and at least one decimal digit. The pattern is defined as shown in the following table:
 
-|Pattern|Description|
-|-------------|-----------------|
-|`\p{Sc}+`|Matches one or more characters in the Unicode Symbol, Currency category.|
-|`\s*`|Matches zero or more white-space characters.|
-|`\d+`|Matches one or more decimal digits.|
+| Pattern   | Description                                                              |
+|-----------|--------------------------------------------------------------------------|
+| `\p{Sc}+` | Matches one or more characters in the Unicode Symbol, Currency category. |
+| `\s*`     | Matches zero or more white-space characters.                             |
+| `\d+`     | Matches one or more decimal digits.                                      |
 
-### Interpreted vs. compiled regular expressions
+### Interpreted vs. source-generated vs. compiled regular expressions
 
-Regular expression patterns that aren't bound to the regular expression engine through the specification of the <xref:System.Text.RegularExpressions.RegexOptions.Compiled> option are interpreted. When a regular expression object is instantiated, the regular expression engine converts the regular expression to a set of operation codes. When an instance method is called, the operation codes are converted to CIL and executed by the JIT compiler. Similarly, when a static regular expression method is called and the regular expression can't be found in the cache, the regular expression engine converts the regular expression to a set of operation codes and stores them in the cache. It then converts these operation codes to CIL so that the JIT compiler can execute them. Interpreted regular expressions reduce startup time at the cost of slower execution time. Because of this process, they're best used when the regular expression is used in a small number of method calls, or if the exact number of calls to regular expression methods is unknown but is expected to be small. As the number of method calls increases, the performance gain from reduced startup time is outstripped by the slower execution speed.
+Regular expression patterns that aren't bound to the regular expression engine through the specification of the <xref:System.Text.RegularExpressions.RegexOptions.Compiled> option are *interpreted*. When a regular expression object is instantiated, the regular expression engine converts the regular expression to a set of operation codes. When an instance method is called, the operation codes are converted to CIL and executed by the JIT compiler. Similarly, when a static regular expression method is called and the regular expression can't be found in the cache, the regular expression engine converts the regular expression to a set of operation codes and stores them in the cache. It then converts these operation codes to CIL so that the JIT compiler can execute them. Interpreted regular expressions reduce startup time at the cost of slower execution time. Because of this process, they're best used when the regular expression is used in a small number of method calls, or if the exact number of calls to regular expression methods is unknown but is expected to be small. As the number of method calls increases, the performance gain from reduced startup time is outstripped by the slower execution speed.
 
-Regular expression patterns that are bound to the regular expression engine through the specification of the <xref:System.Text.RegularExpressions.RegexOptions.Compiled> option are compiled. Therefore, when a regular expression object is instantiated, or when a static regular expression method is called and the regular expression can't be found in the cache, the regular expression engine converts the regular expression to an intermediary set of operation codes. These codes are then converted to CIL. When a method is called, the JIT compiler executes the CIL. In contrast to interpreted regular expressions, compiled regular expressions increase startup time but execute individual pattern-matching methods faster. As a result, the performance benefit that results from compiling the regular expression increases in proportion to the number of regular expression methods called.
+Regular expression patterns that are bound to the regular expression engine through the specification of the <xref:System.Text.RegularExpressions.RegexOptions.Compiled> option are *compiled*. Therefore, when a regular expression object is instantiated, or when a static regular expression method is called and the regular expression can't be found in the cache, the regular expression engine converts the regular expression to an intermediary set of operation codes. These codes are then converted to CIL. When a method is called, the JIT compiler executes the CIL. In contrast to interpreted regular expressions, compiled regular expressions increase startup time but execute individual pattern-matching methods faster. As a result, the performance benefit that results from compiling the regular expression increases in proportion to the number of regular expression methods called.
 
-To summarize, we recommend that you use interpreted regular expressions when you call regular expression methods with a specific regular expression relatively infrequently. You should use compiled regular expressions when you call regular expression methods with a specific regular expression relatively frequently. It's difficult to determine the exact threshold at which the slower execution speeds of interpreted regular expressions outweigh gains from their reduced startup time, or the threshold at which the slower startup times of compiled regular expressions outweigh gains from their faster execution speeds. It depends on various factors, including the complexity of the regular expression and the specific data that it processes. To determine whether interpreted or compiled regular expressions offer the best performance for your particular application scenario, you can use the <xref:System.Diagnostics.Stopwatch> class to compare their execution times.
+Regular expression patterns that are bound to the regular expression engine through the adornment of a `RegEx`-returning method with the <xref:System.Text.RegularExpressions.GeneratedRegexAttribute> attribute are *source generated*. The source generator, which plugs into the compiler, emits as C# code a custom `Regex`-derived implementation with logic similar to what `RegexOptions.Compiled` emits in CIL. You get all the throughput performance benefits of `RegexOptions.Compiled` (more, in fact) and the start-up benefits of `Regex.CompileToAssembly`, but without the complexity of `CompileToAssembly`. The source that's emitted is part of your project, which means it's also easily viewable and debuggable.
 
-The following example compares the performance of compiled and interpreted regular expressions when reading the first 10 sentences and when reading all the sentences in the text of Theodore Dreiser's *The Financier*. As the output from the example shows, when only 10 calls are made to regular expression matching methods, an interpreted regular expression offers better performance than a compiled regular expression. However, a compiled regular expression offers better performance when a large number of calls (in this case, over 13,000) are made.
+To summarize, we recommend that you:
 
-[!code-csharp[Conceptual.RegularExpressions.BestPractices#5](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.bestpractices/cs/compare1.cs#5)]
-[!code-vb[Conceptual.RegularExpressions.BestPractices#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.bestpractices/vb/compare1.vb#5)]
+- Use *interpreted* regular expressions when you call regular expression methods with a specific regular expression relatively infrequently.
+- Use *source-generated* regular expressions if you're using `Regex` in C# with arguments known at compile time, and you're using a specific regular expression relatively frequently.
+- Use *compiled* regular expressions when you call regular expression methods with a specific regular expression relatively frequently and you're using .NET 6 or an earlier version.
+
+It's difficult to determine the exact threshold at which the slower execution speeds of interpreted regular expressions outweigh gains from their reduced startup time, or the threshold at which the slower startup times of source-generated or compiled regular expressions outweigh gains from their faster execution speeds. It depends on various factors, including the complexity of the regular expression and the specific data that it processes. To determine which regular expressions offer the best performance for your particular application scenario, you can use the <xref:System.Diagnostics.Stopwatch> class to compare their execution times.
+
+The following example compares the performance of compiled, source-generated, and interpreted regular expressions when reading the first 10 sentences and when reading all the sentences in the text of Theodore Dreiser's *The Financier*. As the output from the example shows, when only 10 calls are made to regular expression matching methods, an interpreted or source-generated regular expression offers better performance than a compiled regular expression. However, a compiled regular expression offers better performance when a large number of calls (in this case, over 13,000) are made.
+
+[!code-csharp[Conceptual.RegularExpressions.BestPractices#5](./snippets/regex/csharp/compare1.cs#5)]
 
 The regular expression pattern used in the example, `\b(\w+((\r?\n)|,?\s))*\w+[.?:;!]`, is defined as shown in the following table:
 
-|Pattern|Description|
-|-------------|-----------------|
-|`\b`|Begin the match at a word boundary.|
-|`\w+`|Matches one or more word characters.|
+| Pattern | Description                          |
+|---------|--------------------------------------|
+| `\b`    | Begin the match at a word boundary.  |
+| `\w+`   | Matches one or more word characters. |
 |<code>(\r?\n)&#124;,?\s)</code>|Matches either zero or one carriage return followed by a newline character, or zero or one comma followed by a white-space character.|
 |<code>(\w+((\r?\n)&#124;,?\s))*</code>|Matches zero or more occurrences of one or more word characters that are followed either by zero or one carriage return and a newline character, or by zero or one comma followed by a white-space character.|
 |`\w+`|Matches one or more word characters.|
 |`[.?:;!]`|Matches a period, question mark, colon, semicolon, or exclamation point.|
-
-### Regular expressions: Compiled to an assembly
-
-.NET also enables you to create an assembly that contains compiled regular expressions. This capability moves the performance hit of regular expression compilation from run time to design time. However, it also involves some additional work. You must define the regular expressions in advance and compile them to an assembly. The compiler can then reference this assembly when compiling source code that uses the assembly's regular expressions. Each compiled regular expression in the assembly is represented by a class that derives from <xref:System.Text.RegularExpressions.Regex>.
-
-To compile regular expressions to an assembly, you call the <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%28System.Text.RegularExpressions.RegexCompilationInfo%5B%5D%2CSystem.Reflection.AssemblyName%29?displayProperty=nameWithType> method and pass it an array of <xref:System.Text.RegularExpressions.RegexCompilationInfo> objects and an <xref:System.Reflection.AssemblyName> object. The <xref:System.Text.RegularExpressions.RegexCompilationInfo> objects represent the regular expressions to be compiled, and the <xref:System.Reflection.AssemblyName> object that contains information about the assembly to be created.
-
-We recommend that you compile regular expressions to an assembly in the following situations:
-
-- If you're a component developer who wants to create a library of reusable regular expressions.
-- If you expect your regular expression's pattern-matching methods to be called an indeterminate number of times&mdash;anywhere from once or twice to thousands or tens of thousands of times. Unlike compiled or interpreted regular expressions, regular expressions that are compiled to separate assemblies offer performance that's consistent regardless of the number of method calls.
-
-If you're using compiled regular expressions to optimize performance, you shouldn't use reflection to create the assembly, load the regular expression engine, and execute its pattern-matching methods. Avoiding reflection requires that you don't build regular expression patterns dynamically, and that you specify any pattern-matching options, such as case-insensitive pattern matching, at the time the assembly is created. It also requires that you separate the code that creates the assembly from the code that uses the regular expression.
-
-The following example shows how to create an assembly that contains a compiled regular expression. It creates an assembly named `RegexLib.dll` with a single regular expression class, `SentencePattern`. This class contains the sentence-matching regular expression pattern used in the [Interpreted vs. Compiled Regular Expressions](#interpreted-vs-compiled-regular-expressions) section.
-
-[!code-csharp[Conceptual.RegularExpressions.BestPractices#6](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.bestpractices/cs/compile1.cs#6)]
-[!code-vb[Conceptual.RegularExpressions.BestPractices#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.bestpractices/vb/compile1.vb#6)]
-
-When the example is compiled to an executable and run, it creates an assembly named `RegexLib.dll`. A `Utilities.RegularExpressions.SentencePattern` class derived from <xref:System.Text.RegularExpressions.Regex> represents the regular expression. The following example then uses the compiled regular expression to extract the sentences from the text of Theodore Dreiser's *The Financier*:
-
-[!code-csharp[Conceptual.RegularExpressions.BestPractices#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.bestpractices/cs/compile2.cs#7)]
-[!code-vb[Conceptual.RegularExpressions.BestPractices#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.bestpractices/vb/compile2.vb#7)]
 
 ## Take charge of backtracking
 
@@ -164,12 +148,12 @@ Support for backtracking gives regular expressions power and flexibility. It als
 
 Often, applications pay a performance penalty for using backtracking even though backtracking isn't essential for a match. For example, the regular expression `\b\p{Lu}\w*\b` matches all words that begin with an uppercase character, as the following table shows:
 
-|Pattern|Description|
-|-|-|
-|`\b`|Begin the match at a word boundary.|
-|`\p{Lu}`|Matches an uppercase character.|
-|`\w*`|Matches zero or more word characters.|
-|`\b`|End the match at a word boundary.|
+| Pattern  | Description                           |
+|----------|---------------------------------------|
+| `\b`     | Begin the match at a word boundary.   |
+| `\p{Lu}` | Matches an uppercase character.       |
+| `\w*`    | Matches zero or more word characters. |
+| `\b`     | End the match at a word boundary.     |
 
 Because a word boundary isn't the same as, or a subset of, a word character, there's no possibility that the regular expression engine will cross a word boundary when matching word characters. Therefore for this regular expression, backtracking can never contribute to the overall success of any match. It can only degrade performance because the regular expression engine is forced to save its state for each successful preliminary match of a word character.
 
@@ -223,9 +207,7 @@ The regular expression time-out interval defines the period of time that the reg
 
 - Call a static pattern matching method, such as <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29?displayProperty=nameWithType> or <xref:System.Text.RegularExpressions.Regex.Replace%28System.String%2CSystem.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29?displayProperty=nameWithType>, that includes a `matchTimeout` parameter.
 
-- Call the constructor that has a parameter of type <xref:System.TimeSpan> for compiled regular expressions that are created by calling the <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A?displayProperty=nameWithType> method.
-
-- Set a process-wide or AppDomain-wide value with code such as `AppDomain.CurrentDomain.SetData("REGEX_DEFAULT_MATCH_TIMEOUT", TimeSpan.FromMilliseconds(100));`.
+- Set a process-wide or app domain-wide value with code such as `AppDomain.CurrentDomain.SetData("REGEX_DEFAULT_MATCH_TIMEOUT", TimeSpan.FromMilliseconds(100));`.
 
 If you've defined a time-out interval and a match isn't found at the end of that interval, the regular expression method throws a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception. In your exception handler, you can choose to retry the match with a longer time-out interval, abandon the match attempt and assume that there's no match, or abandon the match attempt and log the exception information for future analysis.
 
@@ -242,12 +224,12 @@ However, the use of these language elements has a cost. They cause the <xref:Sys
 
 Often, grouping constructs are used in a regular expression only so that quantifiers can be applied to them. The groups captured by these subexpressions aren't used later. For example, the regular expression `\b(\w+[;,]?\s?)+[.?!]` is designed to capture an entire sentence. The following table describes the language elements in this regular expression pattern and their effect on the <xref:System.Text.RegularExpressions.Match> object's <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=nameWithType> and <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=nameWithType> collections:
 
-|Pattern|Description|
-|-------------|-----------------|
-|`\b`|Begin the match at a word boundary.|
-|`\w+`|Matches one or more word characters.|
-|`[;,]?`|Matches zero or one comma or semicolon.|
-|`\s?`|Matches zero or one white-space character.|
+| Pattern | Description                                |
+|---------|--------------------------------------------|
+| `\b`    | Begin the match at a word boundary.        |
+| `\w+`   | Matches one or more word characters.       |
+| `[;,]?` | Matches zero or one comma or semicolon.    |
+| `\s?`   | Matches zero or one white-space character. |
 |`(\w+[;,]?\s?)+`|Matches one or more occurrences of one or more word characters followed by an optional comma or semicolon followed by an optional white-space character. This pattern defines the first capturing group, which is necessary so that the combination of multiple word characters (that is, a word) followed by an optional punctuation symbol will be repeated until the regular expression engine reaches the end of a sentence.|
 |`[.?!]`|Matches a period, question mark, or exclamation point.|
 
@@ -271,10 +253,20 @@ You can disable captures in one of the following ways:
 
 - Use the `n` option in the `(?imnsx:subexpression)` language element. This option disables all unnamed or implicit captures in `subexpression`. Captures by any unnamed or implicit nested capturing groups are disabled as well.
 
+## Thread safety
+
+The <xref:System.Text.RegularExpressions.Regex> class itself is thread safe and immutable (read-only). That is, `Regex` objects can be created on any thread and shared between threads; matching methods can be called from any thread and never alter any global state.
+
+However, result objects (`Match` and `MatchCollection`) returned by `Regex` should be used on a single thread. Although many of these objects are logically immutable, their implementations could delay computation of some results to improve performance, and as a result, callers must serialize access to them.
+
+If you have a need to share `Regex` result objects on multiple threads, these objects can be converted to thread-safe instances by calling their synchronized methods. With the exception of enumerators, all regular expression classes are thread safe or can be converted into thread-safe objects by a synchronized method.
+
+Enumerators are the only exception. You must serialize calls to collection enumerators. The rule is that if a collection can be enumerated on more than one thread simultaneously, you should synchronize enumerator methods on the root object of the collection traversed by the enumerator.
+
 ## Related articles
 
-|Title|Description|
-|-----------|-----------------|
+| Title | Description |
+|-------|-------------|
 |[Details of Regular Expression Behavior](details-of-regular-expression-behavior.md)|Examines the implementation of the regular expression engine in .NET. The article focuses on the flexibility of regular expressions and explains the developer's responsibility for ensuring the efficient and robust operation of the regular expression engine.|
 |[Backtracking](backtracking-in-regular-expressions.md)|Explains what backtracking is and how it affects regular expression performance, and examines language elements that provide alternatives to backtracking.|
 |[Regular Expression Language - Quick Reference](regular-expression-language-quick-reference.md)|Describes the elements of the regular expression language in .NET and provides links to detailed documentation for each language element.|

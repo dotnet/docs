@@ -1,7 +1,7 @@
 ---
 title: Debug a .NET console application using Visual Studio Code
 description: Learn how to debug a .NET console app using Visual Studio Code.
-ms.date: 08/30/2023
+ms.date: 06/13/2024
 zone_pivot_groups: dotnet-version
 ---
 # Tutorial: Debug a .NET console application using Visual Studio Code
@@ -38,20 +38,6 @@ A *breakpoint* temporarily interrupts the execution of the application before th
 
    :::image type="content" source="media/debugging-with-visual-studio-code/breakpoint-set-net6.png" alt-text="Breakpoint set":::
 
-## Set up for terminal input
-
-The breakpoint is located after a `Console.ReadLine` method call. The **Debug Console** doesn't accept terminal input for a running program. To handle terminal input while debugging, you can use the integrated terminal (one of the Visual Studio Code windows) or an external terminal. For this tutorial, you use the integrated terminal.
-
-1. The project folder contains a *.vscode* folder. Open the *launch.json* file that's in the *.vscode* folder.
-
-1. In *launch.json*, change the `console` setting from `internalConsole` to `integratedTerminal`:
-
-   ```json
-   "console": "integratedTerminal",
-   ```
-
-1. Save your changes.
-
 ## Start debugging
 
 1. Open the Debug view by selecting the Debugging icon on the left side menu.
@@ -62,11 +48,11 @@ The breakpoint is located after a `Console.ReadLine` method call. The **Debug Co
 
    :::image type="content" source="media/debugging-with-visual-studio-code/start-debugging.png" alt-text="Start debugging":::
 
-1. Select the **Terminal** tab to see the "What is your name?" prompt that the program displays before waiting for a response.
+1. Select the **Debug Console** tab to see the "What is your name?" prompt that the program displays before waiting for a response.
 
    :::image type="content" source="media/debugging-with-visual-studio-code/select-terminal-net6.png" alt-text="Select the Terminal tab":::
 
-1. Enter a string in the **Terminal** window in response to the prompt for a name, and then press <kbd>Enter</kbd>.
+1. Enter a string in the **Debug Console** window in response to the prompt for a name, and then press <kbd>Enter</kbd>.
 
    Program execution stops when it reaches the breakpoint and before the `Console.WriteLine` method runs. The **Locals** section of the **Variables** window displays the values of variables that are defined in the currently running method.
 
@@ -89,8 +75,6 @@ The **Debug Console** window lets you interact with the application you're debug
 1. Continue program execution by selecting the **Continue** button in the toolbar. Another way to continue is by pressing <kbd>F5</kbd>.
 
    :::image type="content" source="media/debugging-with-visual-studio-code/continue-debugging.png" alt-text="Continue debugging":::
-
-1. Select the **Terminal** tab again.
 
    The values displayed in the console window correspond to the changes you made in the **Debug Console**.
 
@@ -120,7 +104,7 @@ The program displays the string that the user enters. What happens if the user d
 
 1. Start the program with debugging by pressing <kbd>F5</kbd>.
 
-1. In the **Terminal** tab, press the <kbd>Enter</kbd> key when prompted to enter your name.
+1. In the **Debug Console** tab, press the <kbd>Enter</kbd> key when prompted to enter your name.
 
    Because the condition you specified (`name` is either `null` or <xref:System.String.Empty?displayProperty=nameWithType>) has been satisfied, program execution stops when it reaches the breakpoint and before the `Console.WriteLine` method runs.
 
@@ -134,7 +118,7 @@ The program displays the string that the user enters. What happens if the user d
 
 1. Select the **Continue** button on the toolbar to continue program execution.
 
-1. Select the **Terminal** tab, and press any key to exit the program and stop debugging.
+1. Press any key to exit the program and stop debugging.
 
 1. Clear the breakpoint by clicking on the dot in the left margin of the code window. Other ways to clear a breakpoint are by pressing <kbd>F9</kbd> or choosing **Run > Toggle Breakpoint** from the menu while the line of code is selected.
 
@@ -168,7 +152,7 @@ Visual Studio Code also allows you to step line by line through a program and mo
 
 1. Respond to the prompt by entering a string in the Terminal tab and pressing <kbd>Enter</kbd>.
 
-   The **Terminal** tab might not display the string you enter while you're entering it, but the <xref:System.Console.ReadLine%2A?displayProperty=nameWithType> method will capture your input.
+   The **Debug Console** tab might not display the string you enter while you're entering it, but the <xref:System.Console.ReadLine%2A?displayProperty=nameWithType> method will capture your input.
 
 1. Select **Run** > **Step Into** or press <kbd>F11</kbd>.
 
@@ -185,8 +169,6 @@ Visual Studio Code also allows you to step line by line through a program and mo
 1. Select **Run** > **Step Out** or press <kbd>Shift</kbd>+<kbd>F11</kbd>.
 
    :::image type="content" source="media/debugging-with-visual-studio-code/step-out.png" alt-text="Step-Out button":::
-
-1. Select the **Terminal** tab.
 
    The terminal displays "Press any key to exit..."
 
@@ -247,20 +229,6 @@ A *breakpoint* temporarily interrupts the execution of the application before th
 
    :::image type="content" source="media/debugging-with-visual-studio-code/breakpoint-set-net6.png" alt-text="Breakpoint set":::
 
-## Set up for terminal input
-
-The breakpoint is located after a `Console.ReadLine` method call. The **Debug Console** doesn't accept terminal input for a running program. To handle terminal input while debugging, you can use the integrated terminal (one of the Visual Studio Code windows) or an external terminal. For this tutorial, you use the integrated terminal.
-
-1. The project folder contains a *.vscode* folder. Open the *launch.json* file that's in the *.vscode* folder.
-
-1. In *launch.json*, change the `console` setting from `internalConsole` to `integratedTerminal`:
-
-   ```json
-   "console": "integratedTerminal",
-   ```
-
-1. Save your changes.
-
 ## Start debugging
 
 1. Open the Debug view by selecting the Debugging icon on the left side menu.
@@ -271,11 +239,11 @@ The breakpoint is located after a `Console.ReadLine` method call. The **Debug Co
 
    :::image type="content" source="media/debugging-with-visual-studio-code/start-debugging.png" alt-text="Start debugging":::
 
-1. Select the **Terminal** tab to see the "What is your name?" prompt that the program displays before waiting for a response.
+1. Select the **Debug Conosle** tab to see the "What is your name?" prompt that the program displays before waiting for a response.
 
    :::image type="content" source="media/debugging-with-visual-studio-code/select-terminal-net6.png" alt-text="Select the Terminal tab":::
 
-1. Enter a string in the **Terminal** window in response to the prompt for a name, and then press <kbd>Enter</kbd>.
+1. Enter a string in the **Debug Console** window in response to the prompt for a name, and then press <kbd>Enter</kbd>.
 
    Program execution stops when it reaches the breakpoint and before the `Console.WriteLine` method runs. The **Locals** section of the **Variables** window displays the values of variables that are defined in the currently running method.
 
@@ -298,8 +266,6 @@ The **Debug Console** window lets you interact with the application you're debug
 1. Continue program execution by selecting the **Continue** button in the toolbar. Another way to continue is by pressing <kbd>F5</kbd>.
 
    :::image type="content" source="media/debugging-with-visual-studio-code/continue-debugging.png" alt-text="Continue debugging":::
-
-1. Select the **Terminal** tab again.
 
    The values displayed in the console window correspond to the changes you made in the **Debug Console**.
 
@@ -329,7 +295,7 @@ The program displays the string that the user enters. What happens if the user d
 
 1. Start the program with debugging by pressing <kbd>F5</kbd>.
 
-1. In the **Terminal** tab, press the <kbd>Enter</kbd> key when prompted to enter your name.
+1. In the **Debug Console** tab, press the <kbd>Enter</kbd> key when prompted to enter your name.
 
    Because the condition you specified (`name` is either `null` or <xref:System.String.Empty?displayProperty=nameWithType>) has been satisfied, program execution stops when it reaches the breakpoint and before the `Console.WriteLine` method runs.
 
@@ -343,7 +309,7 @@ The program displays the string that the user enters. What happens if the user d
 
 1. Select the **Continue** button on the toolbar to continue program execution.
 
-1. Select the **Terminal** tab, and press any key to exit the program and stop debugging.
+1. Press any key to exit the program and stop debugging.
 
 1. Clear the breakpoint by clicking on the dot in the left margin of the code window. Other ways to clear a breakpoint are by pressing <kbd>F9</kbd> or choosing **Run > Toggle Breakpoint** from the menu while the line of code is selected.
 
@@ -377,7 +343,7 @@ Visual Studio Code also allows you to step line by line through a program and mo
 
 1. Respond to the prompt by entering a string in the Terminal tab and pressing <kbd>Enter</kbd>.
 
-   The **Terminal** tab might not display the string you enter while you're entering it, but the <xref:System.Console.ReadLine%2A?displayProperty=nameWithType> method will capture your input.
+   The **Debug Console** tab might not display the string you enter while you're entering it, but the <xref:System.Console.ReadLine%2A?displayProperty=nameWithType> method will capture your input.
 
 1. Select **Run** > **Step Into** or press <kbd>F11</kbd>.
 
@@ -456,20 +422,6 @@ A *breakpoint* temporarily interrupts the execution of the application before th
 
    :::image type="content" source="media/debugging-with-visual-studio-code/breakpoint-set-net6.png" alt-text="Breakpoint set":::
 
-## Set up for terminal input
-
-The breakpoint is located after a `Console.ReadLine` method call. The **Debug Console** doesn't accept terminal input for a running program. To handle terminal input while debugging, you can use the integrated terminal (one of the Visual Studio Code windows) or an external terminal. For this tutorial, you use the integrated terminal.
-
-1. Open *.vscode/launch.json*.
-
-1. Change the `console` setting from `internalConsole` to `integratedTerminal`:
-
-   ```json
-   "console": "integratedTerminal",
-   ```
-
-1. Save your changes.
-
 ## Start debugging
 
 1. Open the Debug view by selecting the Debugging icon on the left side menu.
@@ -480,11 +432,11 @@ The breakpoint is located after a `Console.ReadLine` method call. The **Debug Co
 
    :::image type="content" source="media/debugging-with-visual-studio-code/start-debugging.png" alt-text="Start debugging":::
 
-1. Select the **Terminal** tab to see the "What is your name?" prompt that the program displays before waiting for a response.
+1. Select the **Debug Console** tab to see the "What is your name?" prompt that the program displays before waiting for a response.
 
    :::image type="content" source="media/debugging-with-visual-studio-code/select-terminal-net6.png" alt-text="Select the Terminal tab":::
 
-1. Enter a string in the **Terminal** window in response to the prompt for a name, and then press <kbd>Enter</kbd>.
+1. Enter a string in the **Debug Console** window in response to the prompt for a name, and then press <kbd>Enter</kbd>.
 
    Program execution stops when it reaches the breakpoint and before the `Console.WriteLine` method runs. The **Locals** section of the **Variables** window displays the values of variables that are defined in the currently running method.
 
@@ -507,8 +459,6 @@ The **Debug Console** window lets you interact with the application you're debug
 1. Continue program execution by selecting the **Continue** button in the toolbar. Another way to continue is by pressing <kbd>F5</kbd>.
 
    :::image type="content" source="media/debugging-with-visual-studio-code/continue-debugging.png" alt-text="Continue debugging":::
-
-1. Select the **Terminal** tab again.
 
    The values displayed in the console window correspond to the changes you made in the **Debug Console**.
 
@@ -538,7 +488,7 @@ The program displays the string that the user enters. What happens if the user d
 
 1. Start the program with debugging by pressing <kbd>F5</kbd>.
 
-1. In the **Terminal** tab, press the <kbd>Enter</kbd> key when prompted to enter your name.
+1. In the **Debug Console** tab, press the <kbd>Enter</kbd> key when prompted to enter your name.
 
    Because the condition you specified (`name` is either `null` or <xref:System.String.Empty?displayProperty=nameWithType>) has been satisfied, program execution stops when it reaches the breakpoint and before the `Console.WriteLine` method runs.
 
@@ -552,7 +502,7 @@ The program displays the string that the user enters. What happens if the user d
 
 1. Select the **Continue** button on the toolbar to continue program execution.
 
-1. Select the **Terminal** tab, and press any key to exit the program and stop debugging.
+1. Press any key to exit the program and stop debugging.
 
 1. Clear the breakpoint by clicking on the dot in the left margin of the code window. Other ways to clear a breakpoint are by pressing <kbd>F9</kbd> or choosing **Run > Toggle Breakpoint** from the menu while the line of code is selected.
 
@@ -586,7 +536,7 @@ Visual Studio Code also allows you to step line by line through a program and mo
 
 1. Respond to the prompt by entering a string in the Terminal tab and pressing <kbd>Enter</kbd>.
 
-   The **Terminal** tab might not display the string you enter while you're entering it, but the <xref:System.Console.ReadLine%2A?displayProperty=nameWithType> method will capture your input.
+   The **Debug Console** tab might not display the string you enter while you're entering it, but the <xref:System.Console.ReadLine%2A?displayProperty=nameWithType> method will capture your input.
 
    The **Variables** window shows the value returned by the call to the <xref:System.Console.ReadLine%2A?displayProperty=nameWithType> method.
 
@@ -605,8 +555,6 @@ Visual Studio Code also allows you to step line by line through a program and mo
 1. Select **Run** > **Step Out** or press <kbd>Shift</kbd>+<kbd>F11</kbd>.
 
    :::image type="content" source="media/debugging-with-visual-studio-code/step-out.png" alt-text="Step-Out button":::
-
-1. Select the **Terminal** tab.
 
    The terminal displays "Press any key to exit..."
 

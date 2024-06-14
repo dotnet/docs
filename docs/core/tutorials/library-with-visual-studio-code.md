@@ -1,7 +1,7 @@
 ---
 title: Create a .NET class library using Visual Studio Code
 description: Learn how to create a .NET class library using Visual Studio Code.
-ms.date: 08/30/2023
+ms.date: 06/14/2024
 zone_pivot_groups: dotnet-version
 ---
 # Tutorial: Create a .NET class library using Visual Studio Code
@@ -16,74 +16,25 @@ When you create a class library, you can distribute it as a third-party componen
 
 ## Prerequisites
 
-* [Visual Studio Code](https://code.visualstudio.com/) with the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) installed.
-
-  If you have the [C# Dev Kit extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) installed, uninstall or disable it. It isn't used by this tutorial series.
+* [Visual Studio Code](https://code.visualstudio.com/) with [C# Dev Kit extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) installed.
 
   For information about how to install extensions on Visual Studio Code, see [VS Code Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery).
 
 * The [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0).
 
-## Create a solution
+## Create a class library project
 
-Start by creating a blank solution to put the class library project in. A solution serves as a container for one or more projects. You'll add additional, related projects to the same solution.
+Start by creating a .NET class library project named "StringLibrary" and an associated solution. A solution serves as a container for one or more projects. You'll add additional, related projects to the same solution.
 
 1. Start Visual Studio Code.
 
-1. Select **File** > **Open Folder** (**Open...** on macOS) from the main menu
+1. Go to the Explorer view and select **Create .NET Project**. Alternatively, you can bring up the Command Palette using Ctrl+Shift+P (Command+Shift+P on MacOS) and then type ".NET" and find and select the .NET: New Project command.
 
-1. In the **Open Folder** dialog, create a *ClassLibraryProjects* folder and click **Select Folder** (**Open** on macOS).
+1. After selecting the command, you'll need to choose the project template. Choose Class Library.
 
-1. Open the **Terminal** in Visual Studio Code by selecting **View** > **Terminal** from the main menu.
+1. Then select the location where you would like the new project to be created.
 
-   The **Terminal** opens with the command prompt in the *ClassLibraryProjects* folder.
-
-1. In the **Terminal**, enter the following command:
-
-   ```dotnetcli
-   dotnet new sln
-   ```
-
-   The terminal output looks like the following example:
-
-   ```output
-   The template "Solution File" was created successfully.
-   ```
-
-## Create a class library project
-
-Add a new .NET class library project named "StringLibrary" to the solution.
-
-1. In the terminal, run the following command to create the library project:
-
-   ```dotnetcli
-   dotnet new classlib -o StringLibrary
-   ```
-
-   The `-o` or `--output` command specifies the location to place the generated output.
-
-   The terminal output looks like the following example:
-
-   ```output
-   The template "Class library" was created successfully.
-   Processing post-creation actions...
-   Running 'dotnet restore' on StringLibrary\StringLibrary.csproj...
-     Determining projects to restore...
-     Restored C:\Projects\ClassLibraryProjects\StringLibrary\StringLibrary.csproj (in 328 ms).
-   Restore succeeded.
-   ```
-
-1. Run the following command to add the library project to the solution:
-
-   ```dotnetcli
-   dotnet sln add StringLibrary/StringLibrary.csproj
-   ```
-
-   The terminal output looks like the following example:
-
-   ```output
-   Project `StringLibrary\StringLibrary.csproj` added to the solution.
-   ```
+1. Give it the name **StringLibrary** and select **Create Project**.
 
 1. Check to make sure that the library targets .NET 8. In **Explorer**, open *StringLibrary/StringLibrary.csproj*.
 
@@ -109,11 +60,7 @@ Add a new .NET class library project named "StringLibrary" to the solution.
 
 1. Save the file.
 
-1. Run the following command to build the solution and verify that the project compiles without error.
-
-   ```dotnetcli
-   dotnet build
-   ```
+1. Right click on the project in **Solution Explorer** and right-click **Build** or open the Command Palette and select **.NET: Build** to build the solution and verify that the project compiles without error.
 
    The terminal output looks like the following example:
 
@@ -133,34 +80,11 @@ Add a new .NET class library project named "StringLibrary" to the solution.
 
 Add a console application that uses the class library. The app will prompt the user to enter a string and report whether the string begins with an uppercase character.
 
-1. In the terminal, run the following command to create the console app project:
+1. In the **Solution Explorer** select **New Project** or in the Command Palette select **.NET: New Project**.
 
-   ```dotnetcli
-   dotnet new console -o ShowCase
-   ```
+1. Select Console app.
 
-   The terminal output looks like the following example:
-
-   ```output
-   The template "Console Application" was created successfully.
-   Processing post-creation actions...
-   Running 'dotnet restore' on ShowCase\ShowCase.csproj...
-     Determining projects to restore...
-     Restored C:\Projects\ClassLibraryProjects\ShowCase\ShowCase.csproj (in 210 ms).
-   Restore succeeded.
-   ```
-
-1. Run the following command to add the console app project to the solution:
-
-   ```dotnetcli
-   dotnet sln add ShowCase/ShowCase.csproj
-   ```
-
-   The terminal output looks like the following example:
-
-   ```output
-   Project `ShowCase\ShowCase.csproj` added to the solution.
-   ```
+1. Give it the name **ShowCase**, select the default location and select **Create Project**.
 
 1. Open *ShowCase/Program.cs* and replace all of the code with the following code.
 
@@ -176,25 +100,17 @@ Add a console application that uses the class library. The app will prompt the u
 
 Initially, the new console app project doesn't have access to the class library. To allow it to call methods in the class library, create a project reference to the class library project.
 
-1. Run the following command:
+1. In **Solution Explorer** right click on the **ShowCase** project and select **Add Project Reference**.
 
-   ```dotnetcli
-   dotnet add ShowCase/ShowCase.csproj reference StringLibrary/StringLibrary.csproj
-   ```
-
-   The terminal output looks like the following example:
-
-   ```output
-   Reference `..\StringLibrary\StringLibrary.csproj` added to the project.
-   ```
+1. Select StringLibrary.
 
 ## Run the app
 
-1. Run the following command in the terminal:
+1. Select Run>Run without debugging.
 
-   ```dotnetcli
-   dotnet run --project ShowCase/ShowCase.csproj
-   ```
+1. Select C#.
+
+1. Select ShowCase.
 
 1. Try out the program by entering strings and pressing <kbd>Enter</kbd>, then press <kbd>Enter</kbd> to exit.
 
@@ -219,7 +135,7 @@ Initially, the new console app project doesn't have access to the class library.
 
 ## Next steps
 
-In this tutorial, you created a solution, added a library project, and added a console app project that uses the library. In the next tutorial, you add a unit test project to the solution.
+In this tutorial, created a library project, and added a console app project that uses the library. In the next tutorial, you add a unit test project to the solution.
 
 > [!div class="nextstepaction"]
 > [Test a .NET class library with .NET using Visual Studio Code](testing-library-with-visual-studio-code.md)
@@ -236,69 +152,22 @@ When you create a class library, you can distribute it as a third-party componen
 
 ## Prerequisites
 
-* [Visual Studio Code](https://code.visualstudio.com/) with the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) installed. For information about how to install extensions on Visual Studio Code, see [VS Code Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery).
+* [Visual Studio Code](https://code.visualstudio.com/) with [C# Dev Kit extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) installed. For information about how to install extensions on Visual Studio Code, see [VS Code Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery).
 * The [.NET 7 SDK](https://dotnet.microsoft.com/download/dotnet/7.0).
 
-## Create a solution
+## Create a class library project and solution
 
-Start by creating a blank solution to put the class library project in. A solution serves as a container for one or more projects. You'll add additional, related projects to the same solution.
+Start by creating a .NET class library project named "StringLibrary" and an associated solution. A solution serves as a container for one or more projects. You'll add additional, related projects to the same solution.
 
 1. Start Visual Studio Code.
 
-1. Select **File** > **Open Folder** (**Open...** on macOS) from the main menu
+1. Go to the Explorer view and select **Create .NET Project**. Alternatively, you can bring up the Command Palette using Ctrl+Shift+P (Command+Shift+P on MacOS) and then type ".NET" and find and select the .NET: New Project command.
 
-1. In the **Open Folder** dialog, create a *ClassLibraryProjects* folder and click **Select Folder** (**Open** on macOS).
+1. After selecting the command, you'll need to choose the project template. Choose Class Library.
 
-1. Open the **Terminal** in Visual Studio Code by selecting **View** > **Terminal** from the main menu.
+1. Then select the location where you would like the new project to be created.
 
-   The **Terminal** opens with the command prompt in the *ClassLibraryProjects* folder.
-
-1. In the **Terminal**, enter the following command:
-
-   ```dotnetcli
-   dotnet new sln
-   ```
-
-   The terminal output looks like the following example:
-
-   ```output
-   The template "Solution File" was created successfully.
-   ```
-
-## Create a class library project
-
-Add a new .NET class library project named "StringLibrary" to the solution.
-
-1. In the terminal, run the following command to create the library project:
-
-   ```dotnetcli
-   dotnet new classlib -o StringLibrary
-   ```
-
-   The `-o` or `--output` command specifies the location to place the generated output.
-
-   The terminal output looks like the following example:
-
-   ```output
-   The template "Class library" was created successfully.
-   Processing post-creation actions...
-   Running 'dotnet restore' on StringLibrary\StringLibrary.csproj...
-     Determining projects to restore...
-     Restored C:\Projects\ClassLibraryProjects\StringLibrary\StringLibrary.csproj (in 328 ms).
-   Restore succeeded.
-   ```
-
-1. Run the following command to add the library project to the solution:
-
-   ```dotnetcli
-   dotnet sln add StringLibrary/StringLibrary.csproj
-   ```
-
-   The terminal output looks like the following example:
-
-   ```output
-   Project `StringLibrary\StringLibrary.csproj` added to the solution.
-   ```
+1. Give it the name **StringLibrary**, select **Show all template options**, select **.NET 7** and select **Create Project**.
 
 1. Check to make sure that the library targets .NET 7. In **Explorer**, open *StringLibrary/StringLibrary.csproj*.
 
@@ -324,11 +193,7 @@ Add a new .NET class library project named "StringLibrary" to the solution.
 
 1. Save the file.
 
-1. Run the following command to build the solution and verify that the project compiles without error.
-
-   ```dotnetcli
-   dotnet build
-   ```
+1. Right click on the project in **Solution Explorer** and right-click **Build** or open the Command Palette and select **.NET: Build** to build the solution and verify that the project compiles without error.
 
    The terminal output looks like the following example:
 
@@ -348,34 +213,11 @@ Add a new .NET class library project named "StringLibrary" to the solution.
 
 Add a console application that uses the class library. The app will prompt the user to enter a string and report whether the string begins with an uppercase character.
 
-1. In the terminal, run the following command to create the console app project:
+1. In the **Solution Explorer** select **New Project** or in the Command Palette select **.NET: New Project**.
 
-   ```dotnetcli
-   dotnet new console -o ShowCase
-   ```
+1. Select Console app.
 
-   The terminal output looks like the following example:
-
-   ```output
-   The template "Console Application" was created successfully.
-   Processing post-creation actions...
-   Running 'dotnet restore' on ShowCase\ShowCase.csproj...
-     Determining projects to restore...
-     Restored C:\Projects\ClassLibraryProjects\ShowCase\ShowCase.csproj (in 210 ms).
-   Restore succeeded.
-   ```
-
-1. Run the following command to add the console app project to the solution:
-
-   ```dotnetcli
-   dotnet sln add ShowCase/ShowCase.csproj
-   ```
-
-   The terminal output looks like the following example:
-
-   ```output
-   Project `ShowCase\ShowCase.csproj` added to the solution.
-   ```
+1. Give it the name **ShowCase**, select the default location and select **Create Project**.
 
 1. Open *ShowCase/Program.cs* and replace all of the code with the following code.
 
@@ -391,25 +233,17 @@ Add a console application that uses the class library. The app will prompt the u
 
 Initially, the new console app project doesn't have access to the class library. To allow it to call methods in the class library, create a project reference to the class library project.
 
-1. Run the following command:
+1. In **Solution Explorer** right click on the **ShowCase** project and select **Add Project Reference**.
 
-   ```dotnetcli
-   dotnet add ShowCase/ShowCase.csproj reference StringLibrary/StringLibrary.csproj
-   ```
-
-   The terminal output looks like the following example:
-
-   ```output
-   Reference `..\StringLibrary\StringLibrary.csproj` added to the project.
-   ```
+1. Select StringLibrary.
 
 ## Run the app
 
-1. Run the following command in the terminal:
+1. Select Run>Run without debugging.
 
-   ```dotnetcli
-   dotnet run --project ShowCase/ShowCase.csproj
-   ```
+1. Select C#.
+
+1. Select ShowCase.
 
 1. Try out the program by entering strings and pressing <kbd>Enter</kbd>, then press <kbd>Enter</kbd> to exit.
 
@@ -451,71 +285,22 @@ When you create a class library, you can distribute it as a third-party componen
 
 ## Prerequisites
 
-* [Visual Studio Code](https://code.visualstudio.com/) with the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) installed. For information about how to install extensions on Visual Studio Code, see [VS Code Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery).
+* [Visual Studio Code](https://code.visualstudio.com/) with [C# Dev Kit extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) installed. For information about how to install extensions on Visual Studio Code, see [VS Code Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery).
 * The [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0).
 
-## Create a solution
+## Create a class library project and solution
 
-Start by creating a blank solution to put the class library project in. A solution serves as a container for one or more projects. You'll add additional, related projects to the same solution.
+Start by creating a .NET class library project named "StringLibrary" and an associated solution. A solution serves as a container for one or more projects. You'll add additional, related projects to the same solution.
 
 1. Start Visual Studio Code.
 
-1. Select **File** > **Open Folder** (**Open...** on macOS) from the main menu
+1. Go to the Explorer view and select **Create .NET Project**. Alternatively, you can bring up the Command Palette using Ctrl+Shift+P (Command+Shift+P on MacOS) and then type ".NET" and find and select the .NET: New Project command.
 
-1. In the **Open Folder** dialog, create a *ClassLibraryProjects* folder and click **Select Folder** (**Open** on macOS).
+1. After selecting the command, you'll need to choose the project template. Choose Class Library.
 
-1. Open the **Terminal** in Visual Studio Code by selecting **View** > **Terminal** from the main menu.
+1. Then select the location where you would like the new project to be created.
 
-   The **Terminal** opens with the command prompt in the *ClassLibraryProjects* folder.
-
-1. In the **Terminal**, enter the following command:
-
-   ```dotnetcli
-   dotnet new sln
-   ```
-
-   The terminal output looks like the following example:
-
-   ```output
-   The template "Solution File" was created successfully.
-   ```
-
-## Create a class library project
-
-Add a new .NET class library project named "StringLibrary" to the solution.
-
-1. In the terminal, run the following command to create the library project:
-
-   ```dotnetcli
-   dotnet new classlib -f net6.0 -o StringLibrary
-   ```
-
-   The `-f` or `--framework` command changes the default target framework to `net6.0` version.
-
-   The `-o` or `--output` command specifies the location to place the generated output.
-
-   The terminal output looks like the following example:
-
-   ```output
-   The template "Class library" was created successfully.
-   Processing post-creation actions...
-   Running 'dotnet restore' on StringLibrary\StringLibrary.csproj...
-     Determining projects to restore...
-     Restored C:\Projects\ClassLibraryProjects\StringLibrary\StringLibrary.csproj (in 328 ms).
-   Restore succeeded.
-   ```
-
-1. Run the following command to add the library project to the solution:
-
-   ```dotnetcli
-   dotnet sln add StringLibrary/StringLibrary.csproj
-   ```
-
-   The terminal output looks like the following example:
-
-   ```output
-   Project `StringLibrary\StringLibrary.csproj` added to the solution.
-   ```
+1. Give it the name **StringLibrary**, select **Show all template options**, select **.NET 7** and select **Create Project**.
 
 1. Check to make sure that the library targets .NET 6. In **Explorer**, open *StringLibrary/StringLibrary.csproj*.
 
@@ -541,11 +326,7 @@ Add a new .NET class library project named "StringLibrary" to the solution.
 
 1. Save the file.
 
-1. Run the following command to build the solution and verify that the project compiles without error.
-
-   ```dotnetcli
-   dotnet build
-   ```
+1. Right click on the project in **Solution Explorer** and right-click **Build** or open the Command Palette and select **.NET: Build** to build the solution and verify that the project compiles without error.
 
    The terminal output looks like the following example:
 
@@ -565,34 +346,11 @@ Add a new .NET class library project named "StringLibrary" to the solution.
 
 Add a console application that uses the class library. The app will prompt the user to enter a string and report whether the string begins with an uppercase character.
 
-1. In the terminal, run the following command to create the console app project:
+1. In the **Solution Explorer** select **New Project** or in the Command Palette select **.NET: New Project**.
 
-   ```dotnetcli
-   dotnet new console -f net6.0 -o ShowCase
-   ```
+1. Select Console app.
 
-   The terminal output looks like the following example:
-
-   ```output
-   The template "Console Application" was created successfully.
-   Processing post-creation actions...
-   Running 'dotnet restore' on ShowCase\ShowCase.csproj...
-     Determining projects to restore...
-     Restored C:\Projects\ClassLibraryProjects\ShowCase\ShowCase.csproj (in 210 ms).
-   Restore succeeded.
-   ```
-
-1. Run the following command to add the console app project to the solution:
-
-   ```dotnetcli
-   dotnet sln add ShowCase/ShowCase.csproj
-   ```
-
-   The terminal output looks like the following example:
-
-   ```output
-   Project `ShowCase\ShowCase.csproj` added to the solution.
-   ```
+1. Give it the name **ShowCase**, select the default location and select **Create Project**.
 
 1. Open *ShowCase/Program.cs* and replace all of the code with the following code.
 
@@ -608,25 +366,17 @@ Add a console application that uses the class library. The app will prompt the u
 
 Initially, the new console app project doesn't have access to the class library. To allow it to call methods in the class library, create a project reference to the class library project.
 
-1. Run the following command:
+1.  In **Solution Explorer** right click on the **ShowCase** project and select **Add Project Reference**.
 
-   ```dotnetcli
-   dotnet add ShowCase/ShowCase.csproj reference StringLibrary/StringLibrary.csproj
-   ```
-
-   The terminal output looks like the following example:
-
-   ```output
-   Reference `..\StringLibrary\StringLibrary.csproj` added to the project.
-   ```
+1. Select StringLibrary.
 
 ## Run the app
 
-1. Run the following command in the terminal:
+1. Select Run>Run without debugging.
 
-   ```dotnetcli
-   dotnet run --project ShowCase/ShowCase.csproj
-   ```
+1. Select C#.
+
+1. Select ShowCase.
 
 1. Try out the program by entering strings and pressing <kbd>Enter</kbd>, then press <kbd>Enter</kbd> to exit.
 

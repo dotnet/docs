@@ -1,7 +1,7 @@
 ---
 title: Test a .NET class library using Visual Studio Code
-description: Learn how to use Visual Studio Code and the .NET CLI to create and run a unit test project for a .NET class library.
-ms.date: 09/01/2023
+description: Learn how to use Visual Studio Code and run a unit test project for a .NET class library.
+ms.date: 06/14/2024
 zone_pivot_groups: dotnet-version
 ---
 # Tutorial: Test a .NET class library using Visual Studio Code
@@ -22,11 +22,9 @@ Unit tests provide automated software testing during your development and publis
 
 1. Open the `ClassLibraryProjects` solution you created in [Create a .NET class library using Visual Studio Code](library-with-visual-studio-code.md).
 
-1. Create a unit test project named "StringLibraryTest".
+1. From **Solution Explorer**, select **Add Project**, or from the Command Palette select **.NET: New Project**.
 
-   ```dotnetcli
-   dotnet new mstest -o StringLibraryTest
-   ```
+1. Select **MSTest Test Project**, name it "StringLibraryTest", select the default directory, and select **Create Project**.
 
    The project template creates a *UnitTest1.cs* file with the following code:
 
@@ -51,21 +49,13 @@ Unit tests provide automated software testing during your development and publis
 
    Each method tagged with [[TestMethod]](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute) in a test class tagged with [[TestClass]](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute) is run automatically when the unit test is invoked.
 
-1. Add the test project to the solution.
-
-   ```dotnetcli
-   dotnet sln add StringLibraryTest/StringLibraryTest.csproj
-   ```
-
 ## Add a project reference
 
 For the test project to work with the `StringLibrary` class, add a reference in the `StringLibraryTest` project to the `StringLibrary` project.
 
-1. Run the following command:
+1. From **Solution Explorer** right click on the 'StringLibraryTest' Project and select **Add Project Reference**.
 
-   ```dotnetcli
-   dotnet add StringLibraryTest/StringLibraryTest.csproj reference StringLibrary/StringLibrary.csproj
-   ```
+1. Select "StringLibrary".
 
 ## Add and run unit test methods
 
@@ -98,20 +88,13 @@ To create the test methods:
 
 1. Save your changes.
 
-1. Run the tests:
+## Build and Run your Tests
 
-   ```dotnetcli
-   dotnet test StringLibraryTest/StringLibraryTest.csproj
-   ```
+1. In **Solution Explorer**, right-click and select **Build** or from the Command Palette, select **.NET: Build**.
 
-   The terminal output shows that all tests passed.
+1. Select the **Testing** window, select **Run Tests** or from the Command Palette, select **Test: Run all Tests**.
 
-   ```output
-   Starting test execution, please wait...
-   A total of 1 test files matched the specified pattern.
-
-   Passed!  - Failed:     0, Passed:     3, Skipped:     0, Total:     3, Duration: 3 ms - StringLibraryTest.dll (net8.0)
-   ```
+   :::image type="content" source="media/testing-library-with-visual-studio-code/testingScreenshot.png" alt-text="Visual Studio Code Test Explorer":::
 
 ## Handle test failures
 
@@ -124,27 +107,15 @@ If you're doing test-driven development (TDD), you write tests first and they fa
                       "1234", ".", ";", " " };
    ```
 
-1. Run the tests:
+1. Run the tests by clicking on the green error next to the test in the editor.
 
-   ```dotnetcli
-   dotnet test StringLibraryTest/StringLibraryTest.csproj
-   ```
+   The output shows that the test fails, and it provides an error message for the failed test: "Assert.IsFalse failed. Expected for 'Error': false; actual: True". Because of the failure, no strings in the array after "Error" were tested.
 
-   The terminal output shows that one test fails, and it provides an error message for the failed test: "Assert.IsFalse failed. Expected for 'Error': false; actual: True". Because of the failure, no strings in the array after "Error" were tested.
+      :::image type="content" source="media/testing-library-with-visual-studio-code/failedTest.png" alt-text="Visual Studio Code Failed Test":::
 
-   ```output
-   Starting test execution, please wait...
-   A total of 1 test files matched the specified pattern.
-     Failed TestDoesNotStartWithUpper [28 ms]
-     Error Message:
-      Assert.IsFalse failed. Expected for 'Error': false; Actual: True
-     Stack Trace:
-        at StringLibraryTest.UnitTest1.TestDoesNotStartWithUpper() in C:\ClassLibraryProjects\StringLibraryTest\UnitTest1.cs:line 33
+1. Remove the string "Error" that you added in step.
 
-   Failed!  - Failed:     1, Passed:     2, Skipped:     0, Total:     3, Duration: 31 ms - StringLibraryTest.dll (net5.0)
-   ```
-
-1. Remove the string "Error" that you added in step 1. Rerun the test and the tests pass.
+1. Rerun the test and the tests pass.
 
 ## Test the Release version of the library
 
@@ -160,7 +131,7 @@ Now that the tests have all passed when running the Debug build of the library, 
 
 ## Debug tests
 
-If you're using Visual Studio Code as your IDE, you can use the same process shown in [Debug a .NET console application using Visual Studio Code](debugging-with-visual-studio-code.md) to debug code using your unit test project. Instead of starting the *ShowCase* app project, open *StringLibraryTest/UnitTest1.cs*, and select **Debug All Tests** between lines 7 and 8. If you're unable to find it, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette and enter **Reload Window**.
+If you're using Visual Studio Code as your IDE, you can use the same process shown in [Debug a .NET console application using Visual Studio Code](debugging-with-visual-studio-code.md) to debug code using your unit test project. Instead of starting the *ShowCase* app project, open *StringLibraryTest/UnitTest1.cs*, and select **Debug Tests in current file** between lines 7 and 8. If you're unable to find it, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette and enter **Reload Window**.
 
 Visual Studio Code starts the test project with the debugger attached. Execution will stop at any breakpoint you've added to the test project or the underlying library code.
 
@@ -208,11 +179,9 @@ Unit tests provide automated software testing during your development and publis
 
 1. Open the `ClassLibraryProjects` solution you created in [Create a .NET class library using Visual Studio Code](library-with-visual-studio-code.md).
 
-1. Create a unit test project named "StringLibraryTest".
+1. From **Solution Explorer**, select **Add Project**, or from the Command Palette select **.NET: New Project**.
 
-   ```dotnetcli
-   dotnet new mstest -o StringLibraryTest
-   ```
+1. Select **MSTest Test Project**, name it "StringLibraryTest", select the default directory, and select **Create Project**.
 
    The project template creates a UnitTest1.cs file with the following code:
 
@@ -240,21 +209,13 @@ Unit tests provide automated software testing during your development and publis
 
    Each method tagged with [[TestMethod]](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute) in a test class tagged with [[TestClass]](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute) is run automatically when the unit test is invoked.
 
-1. Add the test project to the solution.
-
-   ```dotnetcli
-   dotnet sln add StringLibraryTest/StringLibraryTest.csproj
-   ```
-
 ## Add a project reference
 
 For the test project to work with the `StringLibrary` class, add a reference in the `StringLibraryTest` project to the `StringLibrary` project.
 
-1. Run the following command:
+1. From **Solution Explorer** right click on the 'StringLibraryTest' Project and select **Add Project Reference**.
 
-   ```dotnetcli
-   dotnet add StringLibraryTest/StringLibraryTest.csproj reference StringLibrary/StringLibrary.csproj
-   ```
+1. Select "StringLibrary".
 
 ## Add and run unit test methods
 
@@ -287,20 +248,13 @@ To create the test methods:
 
 1. Save your changes.
 
-1. Run the tests:
+## Build and Run your Tests
 
-   ```dotnetcli
-   dotnet test StringLibraryTest/StringLibraryTest.csproj
-   ```
+1. In **Solution Explorer**, right-click and select **Build** or from the Command Palette, select **.NET: Build**.
 
-   The terminal output shows that all tests passed.
+1. Select the **Testing** window, select **Run Tests** or from the Command Palette, select **Test: Run all Tests**.
 
-   ```output
-   Starting test execution, please wait...
-   A total of 1 test files matched the specified pattern.
-
-   Passed!  - Failed:     0, Passed:     3, Skipped:     0, Total:     3, Duration: 3 ms - StringLibraryTest.dll (net7.0)
-   ```
+   :::image type="content" source="media/testing-library-with-visual-studio-code/testingScreenshot.png" alt-text="Visual Studio Code Test Explorer":::
 
 ## Handle test failures
 
@@ -313,25 +267,11 @@ If you're doing test-driven development (TDD), you write tests first and they fa
                       "1234", ".", ";", " " };
    ```
 
-1. Run the tests:
+1. Run the tests by clicking on the green error next to the test in the editor.
 
-   ```dotnetcli
-   dotnet test StringLibraryTest/StringLibraryTest.csproj
-   ```
+   The output shows that the test fails, and it provides an error message for the failed test: "Assert.IsFalse failed. Expected for 'Error': false; actual: True". Because of the failure, no strings in the array after "Error" were tested.
 
-   The terminal output shows that one test fails, and it provides an error message for the failed test: "Assert.IsFalse failed. Expected for 'Error': false; actual: True". Because of the failure, no strings in the array after "Error" were tested.
-
-   ```output
-   Starting test execution, please wait...
-   A total of 1 test files matched the specified pattern.
-     Failed TestDoesNotStartWithUpper [28 ms]
-     Error Message:
-      Assert.IsFalse failed. Expected for 'Error': false; Actual: True
-     Stack Trace:
-        at StringLibraryTest.UnitTest1.TestDoesNotStartWithUpper() in C:\ClassLibraryProjects\StringLibraryTest\UnitTest1.cs:line 33
-
-   Failed!  - Failed:     1, Passed:     2, Skipped:     0, Total:     3, Duration: 31 ms - StringLibraryTest.dll (net5.0)
-   ```
+      :::image type="content" source="media/testing-library-with-visual-studio-code/failedTest.png" alt-text="Visual Studio Code Failed Test":::
 
 1. Remove the string "Error" that you added in step 1. Rerun the test and the tests pass.
 
@@ -349,7 +289,7 @@ Now that the tests have all passed when running the Debug build of the library, 
 
 ## Debug tests
 
-If you're using Visual Studio Code as your IDE, you can use the same process shown in [Debug a .NET console application using Visual Studio Code](debugging-with-visual-studio-code.md) to debug code using your unit test project. Instead of starting the *ShowCase* app project, open *StringLibraryTest/UnitTest1.cs*, and select **Debug All Tests** between lines 7 and 8. If you're unable to find it, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette and enter **Reload Window**.
+If you're using Visual Studio Code as your IDE, you can use the same process shown in [Debug a .NET console application using Visual Studio Code](debugging-with-visual-studio-code.md) to debug code using your unit test project. Instead of starting the *ShowCase* app project, open *StringLibraryTest/UnitTest1.cs*, and select **Debug Tests in current file** between lines 7 and 8. If you're unable to find it, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette and enter **Reload Window**.
 
 Visual Studio Code starts the test project with the debugger attached. Execution will stop at any breakpoint you've added to the test project or the underlying library code.
 
@@ -392,15 +332,9 @@ Unit tests provide automated software testing during your development and publis
 
 1. Open the `ClassLibraryProjects` solution you created in [Create a .NET class library using Visual Studio Code](library-with-visual-studio-code.md).
 
-1. Create a unit test project named "StringLibraryTest".
+1. From **Solution Explorer**, select **Add Project**, or from the Command Palette select **.NET: New Project**.
 
-   ```dotnetcli
-   dotnet new mstest -f net6.0 -o StringLibraryTest
-   ```
-
-   The `-f net6.0` command changes the default target framework to `net6.0` version.
-
-   The `-o` or `--output` command specifies the location to place the generated output.
+1. Select **MSTest Test Project**, name it "StringLibraryTest", select the default directory, and select **Create Project**.
 
    The project template creates a UnitTest1.cs file with the following code:
 
@@ -428,21 +362,13 @@ Unit tests provide automated software testing during your development and publis
 
    Each method tagged with [[TestMethod]](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute) in a test class tagged with [[TestClass]](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute) is run automatically when the unit test is invoked.
 
-1. Add the test project to the solution.
-
-   ```dotnetcli
-   dotnet sln add StringLibraryTest/StringLibraryTest.csproj
-   ```
-
 ## Add a project reference
 
 For the test project to work with the `StringLibrary` class, add a reference in the `StringLibraryTest` project to the `StringLibrary` project.
 
-1. Run the following command:
+1. From **Solution Explorer** right click on the 'StringLibraryTest' Project and select **Add Project Reference**.
 
-   ```dotnetcli
-   dotnet add StringLibraryTest/StringLibraryTest.csproj reference StringLibrary/StringLibrary.csproj
-   ```
+1. Select "StringLibrary".
 
 ## Add and run unit test methods
 
@@ -475,20 +401,13 @@ To create the test methods:
 
 1. Save your changes.
 
-1. Run the tests:
+## Build and Run your Tests
 
-   ```dotnetcli
-   dotnet test StringLibraryTest/StringLibraryTest.csproj
-   ```
+1. In **Solution Explorer**, right-click and select **Build** or from the Command Palette, select **.NET: Build**.
 
-   The terminal output shows that all tests passed.
+1. Select the **Testing** window, select **Run Tests** or from the Command Palette, select **Test: Run all Tests**.
 
-   ```output
-   Starting test execution, please wait...
-   A total of 1 test files matched the specified pattern.
-
-   Passed!  - Failed:     0, Passed:     3, Skipped:     0, Total:     3, Duration: 3 ms - StringLibraryTest.dll (net6.0)
-   ```
+   :::image type="content" source="media/testing-library-with-visual-studio-code/testingScreenshot.png" alt-text="Visual Studio Code Test Explorer":::
 
 ## Handle test failures
 
@@ -501,25 +420,11 @@ If you're doing test-driven development (TDD), you write tests first and they fa
                       "1234", ".", ";", " " };
    ```
 
-1. Run the tests:
+1. Run the tests by clicking on the green error next to the test in the editor.
 
-   ```dotnetcli
-   dotnet test StringLibraryTest/StringLibraryTest.csproj
-   ```
+   The output shows that the test fails, and it provides an error message for the failed test: "Assert.IsFalse failed. Expected for 'Error': false; actual: True". Because of the failure, no strings in the array after "Error" were tested.
 
-   The terminal output shows that one test fails, and it provides an error message for the failed test: "Assert.IsFalse failed. Expected for 'Error': false; actual: True". Because of the failure, no strings in the array after "Error" were tested.
-
-   ```output
-   Starting test execution, please wait...
-   A total of 1 test files matched the specified pattern.
-     Failed TestDoesNotStartWithUpper [28 ms]
-     Error Message:
-      Assert.IsFalse failed. Expected for 'Error': false; Actual: True
-     Stack Trace:
-        at StringLibraryTest.UnitTest1.TestDoesNotStartWithUpper() in C:\ClassLibraryProjects\StringLibraryTest\UnitTest1.cs:line 33
-
-   Failed!  - Failed:     1, Passed:     2, Skipped:     0, Total:     3, Duration: 31 ms - StringLibraryTest.dll (net5.0)
-   ```
+      :::image type="content" source="media/testing-library-with-visual-studio-code/failedTest.png" alt-text="Visual Studio Code Failed Test":::
 
 1. Remove the string "Error" that you added in step 1. Rerun the test and the tests pass.
 
@@ -537,7 +442,7 @@ Now that the tests have all passed when running the Debug build of the library, 
 
 ## Debug tests
 
-If you're using Visual Studio Code as your IDE, you can use the same process shown in [Debug a .NET console application using Visual Studio Code](debugging-with-visual-studio-code.md) to debug code using your unit test project. Instead of starting the *ShowCase* app project, open *StringLibraryTest/UnitTest1.cs*, and select **Debug All Tests** between lines 7 and 8. If you're unable to find it, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette and enter **Reload Window**.
+If you're using Visual Studio Code as your IDE, you can use the same process shown in [Debug a .NET console application using Visual Studio Code](debugging-with-visual-studio-code.md) to debug code using your unit test project. Instead of starting the *ShowCase* app project, open *StringLibraryTest/UnitTest1.cs*, and select **Debug Tests in current file** between lines 7 and 8. If you're unable to find it, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette and enter **Reload Window**.
 
 Visual Studio Code starts the test project with the debugger attached. Execution will stop at any breakpoint you've added to the test project or the underlying library code.
 

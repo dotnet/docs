@@ -56,7 +56,7 @@ Create a .NET console app project named "HelloWorld".
 
 ## Run the app
 
-To run your app, select Run > Run without Debugging in the upper menu, or use the unassigned keyboard shortcut. To learn more about debugging your C# project, read the [debugging documentation](https://code.visualstudio.com/docs/csharp/debugging).
+To run your app, select Run > Run without Debugging in the upper menu, or use the keyboard shortcut (Ctrl+F5). If asked to select a debugger, select **C#**, then select **C#: Launch startup project HelloWorld**.
 
 The program displays "Hello, World!" and ends.
 
@@ -81,7 +81,7 @@ Enhance the application to prompt the user for their name and display it along w
    > [!IMPORTANT]
    > In Visual Studio Code, you have to explicitly save changes. Unlike Visual Studio, file changes are not automatically saved when you build and run an app.
 
-1. Select Run>Run without debugging. If asked to select a debugger, select **C#**, then select **C#: Launch startup project HelloWorld**.
+1. Select Run>Run without debugging. 
 
 1. Respond to the prompt by entering a name and pressing the <kbd>Enter</kbd> key.
 
@@ -154,7 +154,7 @@ Create a .NET console app project named "HelloWorld".
 
 ## Run the app
 
-To run your app, select Run > Run without Debugging in the upper menu, or use the unassigned keyboard shortcut. To learn more about debugging your C# project, read the [debugging documentation](https://code.visualstudio.com/docs/csharp/debugging).
+To run your app, select Run > Run without Debugging in the upper menu, or use the keyboard shortcut (Ctrl+F5). To learn more about debugging your C# project, read the [debugging documentation](https://code.visualstudio.com/docs/csharp/debugging).
 
 The program displays "Hello, World!" and ends.
 

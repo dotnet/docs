@@ -177,7 +177,7 @@ public override async Task OnActivateAsync(CancellationToken cancellationToken)
     var streamId = StreamId.Create("MyStreamNamespace", this.GetPrimaryKey());
     var stream = streamProvider.GetStream<string>(streamId);
 
-    await stream.SubscribeAsync(OnNextAsync)
+    await stream.SubscribeAsync(OnNextAsync);
 }
 ```
 
@@ -195,7 +195,7 @@ public override async Task OnActivateAsync()
         streamProvider.GetStream<string>(
             this.GetPrimaryKey(), "MyStreamNamespace");
 
-    await stream.SubscribeAsync(OnNextAsync)
+    await stream.SubscribeAsync(OnNextAsync);
 }
 ```
 

@@ -56,7 +56,7 @@ Create a .NET console app project named "HelloWorld".
 
 ## Run the app
 
-To run your app, select Run > Run without Debugging in the upper menu, or use the keyboard shortcut (Ctrl+F5). If asked to select a debugger, select **C#**, then select **C#: Launch startup project HelloWorld**.
+To run your app, select **Run** > **Run without Debugging** in the upper menu, or use the keyboard shortcut (Ctrl+F5). If asked to select a debugger, select **C#**, then select **C#: Launch startup project HelloWorld**.
 
 The program displays "Hello, World!" and ends.
 

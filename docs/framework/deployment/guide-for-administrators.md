@@ -9,6 +9,8 @@ ms.assetid: bee14036-0436-44e8-89f5-4bc61317977a
 ---
 # .NET Framework Deployment Guide for Administrators
 
+[!INCLUDE [net-framework-specific](../includes/net-framework-specific.md)]
+
 This step-by-step article describes how a system administrator can deploy .NET Framework 4.5 and its system dependencies across a network by using Microsoft Endpoint Configuration Manager. This article assumes that all target client computers meet the minimum requirements for .NET Framework. For a list of the software and hardware requirements for installing .NET Framework 4.5, see [System Requirements](../get-started/system-requirements.md).
 
 > [!NOTE]

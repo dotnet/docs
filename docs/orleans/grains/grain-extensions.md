@@ -41,10 +41,11 @@ public sealed class GrainDeactivateExtension : IGrainDeactivateExtension
         _context = context;
     }
 
-    public async Task Deactivate(string msg)
+    public Task Deactivate(string msg)
     {
         var reason = new DeactivationReason(DeactivationReasonCode.ApplicationRequested, msg);
-        await _context.DeactivateAsync(reason);
+        _context.Deactivate(reason);
+        return Task.CompletedTask;
     }
 }
 ```

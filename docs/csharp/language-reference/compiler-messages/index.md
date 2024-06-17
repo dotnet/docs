@@ -1,7 +1,7 @@
 ---
 description: "C# Compiler Errors"
 title: "Compiler messages"
-ms.date: 04/27/2021
+ms.date: 05/21/2024
 helpviewer_keywords: 
   - "C# language, compiler errors"
   - "Visual C# compiler, errors"

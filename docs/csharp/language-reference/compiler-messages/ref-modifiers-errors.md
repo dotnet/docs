@@ -185,7 +185,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS9096**](#ref-safety-violations): *Cannot ref-assign because source has a wider value escape scope than destination allowing assignment through source of values with narrower escapes scopes than destination.*
 - [**CS9101**](#unscoped-ref-restrictions): *UnscopedRefAttribute can only be applied to struct instance methods and properties, and cannot be applied to constructors or init-only members.*
 - [**CS9102**](#unscoped-ref-restrictions): *UnscopedRefAttribute cannot be applied to an interface implementation.*
-- [**CS9104**](#reference-variable-restrictions): *A using statement resource of type cannot be used in async methods or async lambda expressions.*
+- [**CS9104**](#reference-variable-restrictions): *A `using` statement resource of type cannot be used in async methods or async lambda expressions.*
 - [**CS9190**](#incorrect-syntax): *`readonly` modifier must be specified after `ref`.*
 - [**CS9199**](#reference-variable-restrictions): *A `ref readonly` parameter cannot have the Out attribute.*
 

@@ -41,12 +41,6 @@ Ordinarily, an ambiguous time is handled by calling the <xref:System.TimeZoneInf
 
 In this example, all references to the local time zone are made through the <xref:System.TimeZoneInfo.Local%2A?displayProperty=nameWithType> property; the local time zone is never assigned to an object variable. This is a recommended practice because a call to the <xref:System.TimeZoneInfo.ClearCachedData%2A?displayProperty=nameWithType> method invalidates any objects that the local time zone is assigned to.
 
-## Compiling the code
-
-This example requires:
-
-- That the <xref:System> namespace be imported with the `using` statement (required in C# code).
-
 ## See also
 
 - [Dates, times, and time zones](index.md)

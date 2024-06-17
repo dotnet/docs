@@ -27,7 +27,7 @@ f1_keywords:
   - "CS9133"
   - "CS9162"
   - "CS9163"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "CS0105"
   - "CS0138"
   - "CS0431"
@@ -154,7 +154,7 @@ In addition, if you define an alias named `global`, the compiler issues **CS0440
 
 ## Alias name conflicts
 
-You can declare an [alias](../keywords/using-directive.md#using-alias) to a namespace or a type with a using directive:
+You can declare an [alias](../keywords/using-directive.md#using-alias) to a namespace or a type with a `using` directive:
 
 :::code language="csharp" source="./snippets/UsingDirectives/Program.cs" id="UsingAlias":::
 
@@ -182,7 +182,7 @@ Beginning with C# 12, these restrictions are introduced:
    using InInt = in int;
    ```
 
-- An `unsafe` using directive must specify an alias, or a `static using`:
+- An `unsafe using` directive must specify an alias, or a `static using`:
 
    ```csharp
    // Elsewhere:

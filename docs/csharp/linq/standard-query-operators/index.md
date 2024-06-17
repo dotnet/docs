@@ -1,17 +1,19 @@
 ---
 title: "Standard Query Operators Overview"
 description: The LINQ standard query operators provide query capabilities including filtering, projection, aggregation, and sorting in C#.
-ms.date: 02/16/2024
+ms.date: 05/29/2024
 ---
 # Standard Query Operators Overview
 
 The *standard query operators* are the keywords and methods that form the LINQ pattern. The C# language defines [LINQ query keywords](../../language-reference/keywords/query-keywords.md) that you use for the most common query expression. The compiler translates expressions using these keywords to the equivalent method calls. The two forms are synonymous. Other methods that are part of the <xref:System.Linq?displayProperty=fullName> namespace don't have equivalent query keywords. In those cases, you must use the method syntax. This section covers all the query operator keywords. The runtime and other NuGet packages add more methods designed to work with LINQ queries each release. The most common methods, including those that have query keyword equivalents are covered in this section. For the full list of query methods supported by the .NET Runtime, see the <xref:System.Linq.Enumerable?displayProperty=fullName> API documentation. In addition to the methods covered here, this class contains methods for concatenating data sources, computing a single value from a data source, such as a sum, average, or other value.
 
+[!INCLUDE [Prerequisites](../includes/linq-syntax.md)]
+
 Most of these methods operate on sequences, where a sequence is an object whose type implements the <xref:System.Collections.Generic.IEnumerable%601> interface or the <xref:System.Linq.IQueryable%601> interface. The standard query operators provide query capabilities including filtering, projection, aggregation, sorting and more. The methods that make up each set are static members of the <xref:System.Linq.Enumerable> and <xref:System.Linq.Queryable> classes, respectively. They're defined as [*extension methods*](../../programming-guide/classes-and-structs/extension-methods.md) of the type that they operate on.
 
 The distinction between <xref:System.Collections.Generic.IEnumerable%601> and <xref:System.Linq.IQueryable%601> sequences determines how the query is executed at runtime.
 
-For `IEnumerable<T>`, the returned enumerable object captures the arguments that were passed to the method. The returned enumerable object captures the arguments that were passed to the method. When that object is enumerated, the logic of the query operator is employed and the query results are returned.
+For `IEnumerable<T>`, the returned enumerable object captures the arguments that were passed to the method. When that object is enumerated, the logic of the query operator is employed and the query results are returned.
 
 For `IQueryable<T>`, the query is translated into an [expression tree](../../advanced-topics/expression-trees/index.md). The expression tree can be translated to a native query when the data source can optimize the query. Libraries such as [Entity Framework](/ef/core/) translate LINQ queries into native SQL queries that execute at the database.
 

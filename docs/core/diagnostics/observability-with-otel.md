@@ -9,7 +9,7 @@ ms.topic: conceptual
 
 When you run an application, you want to know how well the app is performing and to detect potential problems before they become larger. You can do this by emitting telemetry data such as logs or metrics from your app, then monitoring and analyzing that data.
 
-## What is observability
+## What is observability?
 
 Observability in the context of a distributed system is the ability to monitor and analyze telemetry about the state of each component, to be able to observe changes in performance, and to diagnose why those changes occur. Unlike debugging, which is invasive and can affect the operation of the application, observability is intended to be transparent to the primary operation and have a small enough performance impact that it can be used continuously.
 
@@ -35,7 +35,7 @@ There are a few different ways to achieve observability in .NET applications:
 - Out-of-process using [EventPipe](./eventpipe.md). Tools such as [dotnet-monitor](./dotnet-monitor.md) can listen to logs and metrics and then process them without affecting any code.
 - [Using a startup hook](https://github.com/dotnet/runtime/blob/main/docs/design/features/host-startup-hook.md), assemblies can be injected into the process that can then collect instrumentation. An example of this approach is [OpenTelemetry .NET Automatic Instrumentation](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/blob/main/docs/README.md).
 
-## What is OpenTelemetry
+## What is OpenTelemetry?
 
 [OpenTelemetry](https://opentelemetry.io/) (OTel) is a cross-platform, open standard for collecting and emitting telemetry data. OpenTelemetry includes:
 
@@ -73,18 +73,18 @@ OpenTelemetry in .NET is implemented as a series of NuGet packages that form a c
 The following table describes the main packages.
 
 | Package Name | Description |
-| --- |  ---|
+|--------------|-------------|
 | [OpenTelemetry](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry/README.md) | Main library that provides the core OTEL functionality |
-| [OpenTelemetry.Instrumentation.AspNetCore](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Instrumentation.AspNetCore/README.md) | Instrumentation for ASP.NET Core and Kestrel |
-| [OpenTelemetry.Instrumentation.GrpcNetClient](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Instrumentation.GrpcNetClient/README.md) | Instrumentation for gRPC Client for tracking outbound gRPC calls  |
-| [OpenTelemetry.Instrumentation.Http](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Instrumentation.Http/README.md) | Instrumentation for `HttpClient` and `HttpWebRequest` to track outbound HTTP calls |
-| [OpenTelemetry.Instrumentation.SqlClient](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Instrumentation.SqlClient/README.md) | Instrumentation for `SqlClient` used to trace database operations |
+| [OpenTelemetry.Instrumentation.AspNetCore](https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/main/src/OpenTelemetry.Instrumentation.AspNetCore/README.md) | Instrumentation for ASP.NET Core and Kestrel |
+| [OpenTelemetry.Instrumentation.GrpcNetClient](https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/main/src/OpenTelemetry.Instrumentation.GrpcNetClient/README.md) | Instrumentation for gRPC Client for tracking outbound gRPC calls  |
+| [OpenTelemetry.Instrumentation.Http](https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/main/src/OpenTelemetry.Instrumentation.Http/README.md) | Instrumentation for `HttpClient` and `HttpWebRequest` to track outbound HTTP calls |
+| [OpenTelemetry.Instrumentation.SqlClient](https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/main/src/OpenTelemetry.Instrumentation.SqlClient/README.md) | Instrumentation for `SqlClient` used to trace database operations |
 | [OpenTelemetry.Exporter.Console](https://github.com/open-telemetry/opentelemetry-dotnet/tree/main/src/OpenTelemetry.Exporter.Console/README.md) |  Exporter for the console, commonly used to diagnose what telemetry is being exported |
 | [OpenTelemetry.Exporter.OpenTelemetryProtocol](https://github.com/open-telemetry/opentelemetry-dotnet/tree/main/src/OpenTelemetry.Exporter.OpenTelemetryProtocol/README.md) |  Exporter using the OTLP protocol |
 | [OpenTelemetry.Exporter.Prometheus.AspNetCore](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Exporter.Prometheus.AspNetCore/README.md) |  Exporter for Prometheus implemented using an ASP.NET Core endpoint |
 | [OpenTelemetry.Exporter.Zipkin](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Exporter.Zipkin/README.md) |  Exporter for Zipkin tracing |
 
-## Example: Use Prometheus, Grafana and Jaeger
+## Example: Use Prometheus, Grafana, and Jaeger
 
 This example uses Prometheus for metrics collection, Grafana for creating a dashboard, and Jaeger to show distributed tracing.
 
@@ -318,12 +318,12 @@ With Grafana, you can design sophisticated dashboards that will track any number
 
 Each metric in .NET can have additional dimensions, which are key-value pairs that can be used to partition the data. The ASP.NET metrics all feature a number of dimensions applicable to the counter. For example, the `current-requests` counter from `Microsoft.AspNetCore.Hosting` has the following dimensions:
 
-| Attribute | Type | Description | Examples | Presence |
-| --- | --- | --- | --- | --- |
-| `method` | `string` | HTTP request method. | `GET`; `POST`; `HEAD` | Always |
-| `scheme` | `string` | The URI scheme identifying the used protocol. | `http`; `https` | Always |
-| `host`| `string` | Name of the local HTTP server that received the request. | `localhost` | Always |
-| `port` | `int` | Port of the local HTTP server that received the request. | `8080` | Added if not default (80 for http or 443 for https) |
+| Attribute | Type     | Description                                              | Examples              | Presence |
+|-----------|----------|----------------------------------------------------------|-----------------------|----------|
+| `method`  | `string` | HTTP request method.                                     | `GET`; `POST`; `HEAD` | Always   |
+| `scheme`  | `string` | The URI scheme identifying the used protocol.            | `http`; `https`       | Always   |
+| `host`    | `string` | Name of the local HTTP server that received the request. | `localhost`           | Always   |
+| `port`    | `int`    | Port of the local HTTP server that received the request. | `8080`                | Added if not default (80 for http or 443 for https) |
 
 The graphs in Grafana are usually partitioned based on each unique combination of dimensions. The dimensions can be used in the Grafana queries to filter or aggregate the data. For example, if you graph `current_requests`, you'll see values partitioned based on each combination of dimensions. To filter based only on the host, add an operation of `Sum` and use `host` as the label value.
 

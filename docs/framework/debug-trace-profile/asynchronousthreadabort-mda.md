@@ -2,7 +2,7 @@
 title: "asynchronousThreadAbort MDA"
 description: Review how the asynchronousThreadAbort managed debugging assistant (MDA) is activated when a thread tries to put an asynchronous abort into another thread.
 ms.date: "03/30/2017"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "asynchronous thread aborts"
   - "AsynchronousThreadAbort MDA"
   - "managed debugging assistants (MDAs), asynchronous thread aborts"
@@ -11,6 +11,8 @@ helpviewer_keywords:
 ms.assetid: 9ebe40b2-d703-421e-8660-984acc42bfe0
 ---
 # asynchronousThreadAbort MDA
+
+[!INCLUDE [net-framework-specific](../includes/net-framework-specific.md)]
 
 The `asynchronousThreadAbort` managed debugging assistant (MDA) is activated when a thread attempts to introduce an asynchronous abort into another thread. Synchronous thread aborts do not activate the `asynchronousThreadAbort` MDA.
 

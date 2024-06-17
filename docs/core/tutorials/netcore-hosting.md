@@ -17,7 +17,7 @@ This article gives an overview of the steps necessary to start the .NET runtime 
 
 Because hosts are native applications, this tutorial covers constructing a C++ application to host .NET. You will need a C++ development environment (such as that provided by [Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)).
 
-You will also need to build a .NET component to test the host with, so you should install the [.NET SDK](https://dotnet.microsoft.com/download).
+You will also need to build a .NET component to test the host with, so you should install the [.NET SDK](https://dotnet.microsoft.com/download). It includes the necessary headers and libraries to link with. As an example, on Windows with the .NET 8 SDK the files can be found in `C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Host.win-x64\8.0.4\runtimes\win-x64\native`.
 
 ## Hosting APIs
 
@@ -31,7 +31,7 @@ A [sample host](https://github.com/dotnet/samples/tree/main/core/hosting) demons
 
 Keep in mind that the sample host is meant to be used for learning purposes, so it is light on error checking and designed to emphasize readability over efficiency.
 
-The following steps detail how to use the `nethost` and `hostfxr` libraries to start the .NET runtime in a native application and call into a managed static method. The [sample](https://github.com/dotnet/samples/tree/main/core/hosting/src) uses the `nethost` header and library installed with the .NET SDK and copies of the [`coreclr_delegates.h`](https://github.com/dotnet/runtime/blob/main/src/native/corehost/coreclr_delegates.h) and [`hostfxr.h`](https://github.com/dotnet/runtime/blob/main/src/native/corehost/hostfxr.h) files from the [dotnet/runtime](https://github.com/dotnet/runtime) repository.
+The following steps detail how to use the `nethost` and `hostfxr` libraries to start the .NET runtime in a native application and call into a managed static method. The [sample](https://github.com/dotnet/samples/tree/main/core/hosting/src) uses the `nethost` headers and library and the `coreclr_delegates.h` and `hostfxr.h` headers installed with the .NET SDK.
 
 ### Step 1 - Load `hostfxr` and get exported hosting functions
 
@@ -58,6 +58,10 @@ These files can be found at the following locations:
 * <https://github.com/dotnet/runtime/blob/main/src/native/corehost/nethost/nethost.h>
 * <https://github.com/dotnet/runtime/blob/main/src/native/corehost/coreclr_delegates.h>
 * <https://github.com/dotnet/runtime/blob/main/src/native/corehost/hostfxr.h>
+
+Or, if you have installed the .NET 8 SDK on Windows:
+
+* `C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Host.win-x64\8.0.4\runtimes\win-x64\native`
 
 ### Step 2 - Initialize and start the .NET runtime
 

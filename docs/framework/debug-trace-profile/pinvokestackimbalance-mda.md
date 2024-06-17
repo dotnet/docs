@@ -14,6 +14,8 @@ ms.assetid: 34ddc6bd-1675-4f35-86aa-de1645d5c631
 ---
 # PInvokeStackImbalance MDA
 
+[!INCLUDE [net-framework-specific](../includes/net-framework-specific.md)]
+
 The `PInvokeStackImbalance` managed debugging assistant (MDA) is activated when the CLR detects that the stack depth after a platform invoke call does not match the expected stack depth, given the calling convention specified in the <xref:System.Runtime.InteropServices.DllImportAttribute> attribute and the declaration of the parameters in the managed signature.
 
 The `PInvokeStackImbalance` MDA is implemented only for 32-bit x86 platforms.

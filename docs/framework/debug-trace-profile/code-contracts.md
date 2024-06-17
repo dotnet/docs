@@ -12,6 +12,8 @@ ms.assetid: 84526045-496f-489d-8517-a258cf76f040
 ---
 # Code contracts (.NET Framework)
 
+[!INCLUDE [net-framework-specific](../includes/net-framework-specific.md)]
+
 Code contracts provide a way to specify preconditions, postconditions, and object invariants in .NET Framework code. Preconditions are requirements that must be met when entering a method or property. Postconditions describe expectations at the time the method or property code exits. Object invariants describe the expected state for a class that is in a good state.
 
 > [!NOTE]

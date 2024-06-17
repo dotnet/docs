@@ -9,7 +9,7 @@ SQLite doesn't support encrypting database files by default. Instead, you need t
 
 ## Installation
 
-### [.NET Core CLI](#tab/netcore-cli)
+### [.NET CLI](#tab/net-cli)
 
 ```dotnetcli
 dotnet remove package Microsoft.Data.Sqlite

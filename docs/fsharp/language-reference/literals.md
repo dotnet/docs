@@ -1,7 +1,7 @@
 ---
 title: Literals
 description: Learn about the literal types in the F# programming language.
-ms.date: 08/15/2020
+ms.date: 05/28/2024
 ---
 # Literals
 
@@ -23,9 +23,9 @@ The following table shows the literal types in F#. Characters that represent dig
 |unativeint|native pointer as an unsigned natural number|un|`0x00002D3Fun`|
 |int64|signed 64-bit integer|L|`86L`|
 |uint64|unsigned 64-bit natural number|UL|`86UL`|
-|single, float32|32-bit floating point number|F or f|`4.14F` or `4.14f`|
+|single, float32|32-bit floating point number|F or f|`4.14F` or `4.14f` or `infinityf` or `-infinityf`|
 |||lf|`0x00000000lf`|
-|float; double|64-bit floating point number|none|`4.14` or `2.3E+32` or `2.3e+32`|
+|float; double|64-bit floating point number|none|`4.14` or `2.3E+32` or `2.3e+32` or `infinity` or `-infinity`|
 |||LF|`0x0000000000000000LF`|
 |bigint|integer not limited to 64-bit representation|I|`9999999999999999999999999999I`|
 |decimal|fractional number represented as a fixed point or rational number|M or m|`0.7833M` or `0.7833m`|
@@ -108,4 +108,32 @@ let value = 0xDEAD_BEEF
 let valueAsBits = 0b1101_1110_1010_1101_1011_1110_1110_1111
 
 let exampleSSN = 123_45_6789
+```
+
+## Special floating-point infinity values
+
+Both the `float` and `single` floating-point numeric types have associated special values representing positive and negative infinity.
+
+| F# value                    | F# type  | Corresponding .NET value              |
+| --------------------------- | -------- | ------------------------------------- |
+| `infinity` or `+infinity`   | `float`  | <xref:System.Double.PositiveInfinity> |
+| `-infinity`                 | `float`  | <xref:System.Double.NegativeInfinity> |
+| `infinityf` or `+infinityf` | `single` | <xref:System.Single.PositiveInfinity> |
+| `-infinityf`                | `single` | <xref:System.Single.NegativeInfinity> |
+
+These values can be used directly or are returned when dividing by a floating-point zero or a number too small to be represented by the given type. For example:
+
+```console
+> 1.0/0.0;;
+val it: float = infinity
+
+> 1.0/(-0.0);;
+val it: float = -infinity
+
+> 1.0/0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001
+;;
+val it: float = infinity
 ```

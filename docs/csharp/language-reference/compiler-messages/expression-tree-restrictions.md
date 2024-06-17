@@ -46,6 +46,7 @@ f1_keywords:
  - "CS8952"
  - "CS9170"
  - "CS9175"
+ - "CS9226"
 helpviewer_keywords:
  - "CS0765"
  - "CS0831"
@@ -92,6 +93,7 @@ helpviewer_keywords:
  - "CS8952"
  - "CS9170"
  - "CS9175"
+ - "CS9226"
 ms.date: 09/06/2023
 ---
 # Resolve errors and warnings generated from expressions prohibited in expression trees
@@ -146,6 +148,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - **CS8972** - *A lambda expression with attributes cannot be converted to an expression tree.*
 - **CS9170** - *An expression tree may not contain an inline array access or conversion.*
 - **CS9175** - *An expression tree may not contain a collection expression.*
+- **CS9226** - *An expression tree may not contain an expanded form of non-array params collection parameter.*
 
 ## Expression tree restrictions
 
@@ -177,6 +180,7 @@ The following expressions are prohibited:
 - Calls to methods that return by `ref` aren't allowed.
 - [static abstract interface members](../keywords/interface.md#static-abstract-and-virtual-members) can't be accessed.
 - [Inline arrays](../builtin-types/struct.md#inline-arrays).
+- The `params` modifier is allowed only on single-dimensional arrays. Other collection types aren't allowed.
 
 Other restrictions are:
 

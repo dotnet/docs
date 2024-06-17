@@ -321,7 +321,7 @@ await stream.WriteAsync(data, cancellationToken);
 await stream.WriteAsync(data, cancellationToken);
 
 // End the writing-side together with the last data.
-await stream.WriteAsync(data, endStream: true, cancellationToken);
+await stream.WriteAsync(data, completeWrites: true, cancellationToken);
 // Or separately.
 stream.CompleteWrites();
 

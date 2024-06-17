@@ -12,7 +12,7 @@ This tutorial shows how to create and run a .NET console application by using Vi
 
 ## Prerequisites
 
-* [Visual Studio Code](https://code.visualstudio.com/) with [C# Dev Kit extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) installed.
+* [Visual Studio Code](https://code.visualstudio.com/) with [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) installed.
 
   For information about how to install extensions on Visual Studio Code, see [VS Code Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery).
 
@@ -81,7 +81,7 @@ Enhance the application to prompt the user for their name and display it along w
    > [!IMPORTANT]
    > In Visual Studio Code, you have to explicitly save changes. Unlike Visual Studio, file changes are not automatically saved when you build and run an app.
 
-1. Select Run>Run without debugging.
+1. Select Run>Run without debugging. If asked to select a debugger, select **C#**, then select **C#: Launch startup project HelloWorld**.
 
 1. Respond to the prompt by entering a name and pressing the <kbd>Enter</kbd> key.
 

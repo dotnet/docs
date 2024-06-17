@@ -28,7 +28,7 @@ Create a .NET console app project named "HelloWorld".
 
 1. After selecting the command, you'll need to choose the project template. Choose Console App.
 
-1. Then select the location where you would like the new project to be created.
+1. Select the location where you would like the new project to be created.
 
 1. Give your new project a name, "HelloWorld".
 

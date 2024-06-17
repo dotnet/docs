@@ -108,41 +108,41 @@ Execution succeeded
 Return value = 0
 ```
 
-### Main return Task
+### Async Main return values
 
-When the application entry point returns a `Task` or `Task<int>`, the application wait the returned task completes (either successfully or faulted). So this `Main` :
+When you declare an `async` return value for `Main`, the compiler generates the boilerplate code for calling asynchronous methods in `Main`.  If you don't specify the `async` keyword, you need to write that code yourself, as shown in the following example. The code in the example ensures that your program runs until the asynchronous operation is completed:
 
 ```csharp
-class Program
+class AsyncMainReturnValTest
 {
-    static async Task Main(string[] args)
+    public static int Main()
     {
-        await WorkAsync();
+        return AsyncConsoleWork().GetAwaiter().GetResult();
     }
 
-    private static async Task WorkAsync()
+    private static async Task<int> AsyncConsoleWork()
     {
-        // Some work here
+        // Main body here
+        return 0;
     }
 }
 ```
 
-Is similar to :
+This boilerplate code can be replaced by:
 
-```csharp
-class Program
-{
-    public static void Main(string[] args)
-    {
-        WorkAsync().GetAwaiter().GetResult();
-    }
+:::code language="csharp" source="snippets/main-arguments/Program.cs" id="AsyncMain":::
 
-    private static async Task WorkAsync()
-    {
-        // Some work here
-    }
-}
-```
+An advantage of declaring `Main` as `async` is that the compiler always generates the correct code.
+
+When the application entry point returns a `Task` or `Task<int>`, the compiler generates a new entry point that calls the entry point method declared in the application code. Assuming that this entry point is called `$GeneratedMain`, the compiler generates the following code for these entry points:
+
+- `static Task Main()` results in the compiler emitting the equivalent of `private static void $GeneratedMain() => Main().GetAwaiter().GetResult();`
+- `static Task Main(string[])` results in the compiler emitting the equivalent of `private static void $GeneratedMain(string[] args) => Main(args).GetAwaiter().GetResult();`
+- `static Task<int> Main()` results in the compiler emitting the equivalent of `private static int $GeneratedMain() => Main().GetAwaiter().GetResult();`
+- `static Task<int> Main(string[])` results in the compiler emitting the equivalent of `private static int $GeneratedMain(string[] args) => Main(args).GetAwaiter().GetResult();`
+
+> [!NOTE]
+>If the examples used `async` modifier on the `Main` method, the compiler would generate the same code.
 
 ## Command-Line Arguments
 

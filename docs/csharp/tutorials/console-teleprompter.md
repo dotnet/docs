@@ -170,7 +170,7 @@ This requires you to change the `Main` method signature to:
 static async Task Main(string[] args)
 ```
 
-Learn more about the [`async Main` method](../fundamentals/program-structure/main-command-line.md#main-return-task) in our fundamentals section.
+Learn more about the [`async Main` method](../fundamentals/program-structure/main-command-line.md#async-main-return-values) in our fundamentals section.
 
 Next, you need to write the second asynchronous method to read from the Console and watch for the '<' (less than), '>' (greater than) and 'X' or 'x' keys. Here's the method you add for that task:
 

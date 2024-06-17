@@ -26,7 +26,7 @@ Create a .NET console app project named "HelloWorld".
 
 1. Go to the Explorer view and select **Create .NET Project**. Alternatively, you can bring up the Command Palette using Ctrl+Shift+P (Command+Shift+P on MacOS) and then type ".NET" and find and select the .NET: New Project command.
 
-1. After selecting the command, you'll need to choose the project template. Choose Console app.
+1. After selecting the command, you'll need to choose the project template. Choose Console App.
 
 1. Then select the location where you would like the new project to be created.
 

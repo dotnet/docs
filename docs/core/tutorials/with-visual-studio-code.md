@@ -81,7 +81,7 @@ Enhance the application to prompt the user for their name and display it along w
    > [!IMPORTANT]
    > In Visual Studio Code, you have to explicitly save changes. Unlike Visual Studio, file changes are not automatically saved when you build and run an app.
 
-1. Select Run>Run without debugging. 
+1. Select **Run**>**Run without debugging**.
 
 1. Respond to the prompt by entering a name and pressing the <kbd>Enter</kbd> key.
 

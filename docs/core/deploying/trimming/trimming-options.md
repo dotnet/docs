@@ -45,13 +45,13 @@ This setting also enables the trim-compatibility [Roslyn analyzer](#roslyn-analy
 
 Use the `TrimMode` property to set the trimming granularity to either `partial` or `full`. The default setting for console apps (and, starting in .NET 8, Web SDK apps) is `full`:
 
-```csharp
+```xml
 <TrimMode>full</TrimMode>
 ```
 
 To only trim assemblies that have opted-in to trimming, set the property to `partial`:
 
-```csharp
+```xml
 <TrimMode>partial</TrimMode>
 ```
 

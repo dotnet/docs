@@ -6,7 +6,7 @@ ms.date: 05/30/2024
 ---
 # dotnet nuget why
 
-**This article applies to:** ✔️ .NET 9 SDK and later versions
+**This article applies to:** ✔️ .NET 8.0.4xx SDK and later versions
 
 ## Name
 
@@ -28,7 +28,7 @@ The `dotnet nuget why` command shows the dependency graph for a particular packa
 
 - **`PROJECT|SOLUTION`**
 
-  A path to a project, solution file, or directory.
+  A path to a project file, solution file, or directory. If a directory is specified, the command searches the directory for a project or solution file. If more than one project or solution is found, an error is thrown.
 
 - **`PACKAGE`**
 
@@ -38,7 +38,7 @@ The `dotnet nuget why` command shows the dependency graph for a particular packa
 
 - **`-f|--framework <FRAMEWORK>`**
 
-    The target framework(s) for which dependency graphs are shown.
+    The target framework(s) for which dependency graphs are shown. You can pass multiple `--framework` options to see graphs for more than one framework.
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
@@ -58,7 +58,7 @@ The `dotnet nuget why` command shows the dependency graph for a particular packa
     dotnet nuget why .\DotnetNuGetWhyPackage.csproj System.Text.Json
     ```
 
-- Show the dependency graph for the package "System.Text.Json" for a project targeting a specific framework:
+- Show the dependency graph for a specific target framework:
 
     ```dotnetcli
     dotnet nuget why .\DotnetNuGetWhyPackage.csproj System.Text.Json --framework net6.0

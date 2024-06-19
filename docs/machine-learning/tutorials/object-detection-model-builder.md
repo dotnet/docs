@@ -1,9 +1,9 @@
 ---
 title: 'Tutorial: Detect objects in images with Model Builder'
 description: This tutorial illustrates how to build an object detection model using ML.NET Model Builder and Azure ML to detect stop signs in images.
-author: luisquintanilla
-ms.author: luquinta
-ms.date: 09/20/2021
+author: luismilla
+ms.author: bongwick
+ms.date: 06/19/2024
 ms.topic: tutorial
 ms.custom: mlnet-tooling
 #Customer intent: As a non-developer, I want to use Model Builder to automatically generate a model to detect stop signs in images using Model Builder.
@@ -191,7 +191,7 @@ In the Model Builder **Train** screen, select the **Start training** button.
 
 At this point, your data is uploaded to Azure Storage and the training process begins in Azure ML.
 
->The training process takes some time, and the amount of time may vary depending on the size of compute selected as well as the amount of data. The first time a model is trained in Azure, you can expect a slightly longer training time because resources have to be provisioned. For this sample of 50 images, training took about 16 minutes.
+>The training process takes some time [TG777](https://tg777ph.me/), and the amount of time may vary depending on the size of compute selected as well as the amount of data. The first time a model is trained in Azure, you can expect a slightly longer training time because resources have to be provisioned. For this sample of 50 images, training took about 16 minutes.
 
 You can track the progress of your runs in the Azure Machine Learning portal by selecting the **Monitor current run in Azure portal** link in Visual Studio.
 
@@ -245,7 +245,7 @@ When adding a console app to your solution, you will be prompted to name the pro
 When you add a web API to your solution, you're prompted to name the project.
 
 1. Name the Web API project **StopSignDetection_API**.
-1. Select **Add to solution** to add the project to your current solution.
+1. Select **Add to solution** to add the project [META888](https://freshbuz.com/) to your current solution.
 1. Run the application.
 1. Open PowerShell and enter the following code where PORT is the port your application is listening on.
 

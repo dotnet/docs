@@ -28,7 +28,7 @@ The `dotnet nuget why` command shows the dependency graph for a particular packa
 
 - **`PROJECT|SOLUTION`**
 
-  A path to a project file, solution file, or directory. If a directory is specified, the command searches the directory for a project or solution file. If more than one project or solution is found, an error is thrown.
+  The project or solution file to operate on. If a directory is specified, the command searches the directory for a project or solution file. If more than one project or solution is found, an error is thrown.
 
 - **`PACKAGE`**
 

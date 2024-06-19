@@ -32,7 +32,7 @@ The `dotnet nuget why` command shows the dependency graph for a particular packa
 
 - **`PACKAGE`**
 
-  The package name to lookup in the dependency graph.
+  The package name to look up in the dependency graph.
 
 ## Options
 

@@ -97,6 +97,7 @@ The following commands are installed by default:
 - [`nuget trust`](dotnet-nuget-trust.md) (Available since .NET 5 SDK)
 - [`nuget sign`](dotnet-nuget-sign.md) (Available since .NET 6 SDK)
 - [`package search`](dotnet-package-search.md) (Available since .NET 8.0.2xx SDK)
+- [`nuget why`](dotnet-nuget-why.md) (Available since .NET 8.0.4xx SDK)
 
 ### Workload management commands
 

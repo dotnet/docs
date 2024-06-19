@@ -14,7 +14,7 @@ The .NET SDK allows you to develop apps with .NET. If you install the .NET SDK, 
 sudo apk add dotnet8-sdk
 ```
 
-To learn how to use the .NET CLI, see [.NET CLI overview](../tools/index.md).
+To learn how to use the .NET CLI, see [.NET CLI overview](../../tools/index.md).
 
 ### Install the runtime
 
@@ -30,4 +30,4 @@ As an alternative to the ASP.NET Core Runtime, you can install the .NET Runtime,
 sudo apk add dotnet8-runtime
 ```
 
-To learn how to use the .NET CLI, see [.NET CLI overview](../tools/index.md).
+To learn how to use the .NET CLI, see [.NET CLI overview](../../tools/index.md).

@@ -15,7 +15,7 @@ sudo apt-get update && \
   sudo apt-get install -y dotnet-sdk-6.0
 ```
 
-To learn how to use the .NET CLI, see [.NET CLI overview](../tools/index.md).
+To learn how to use the .NET CLI, see [.NET CLI overview](../../tools/index.md).
 
 ### Install the Runtime
 
@@ -32,4 +32,4 @@ As an alternative to the ASP.NET Core Runtime, you can install the .NET Runtime,
 sudo apt-get install -y dotnet-runtime-6.0
 ```
 
-To learn how to use the .NET CLI, see [.NET CLI overview](../tools/index.md).
+To learn how to use the .NET CLI, see [.NET CLI overview](../../tools/index.md).

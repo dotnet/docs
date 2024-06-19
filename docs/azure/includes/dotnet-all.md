@@ -531,8 +531,8 @@
 | Hyak Common - Tracing Etw | NuGet [1.0.2](https://www.nuget.org/packages/Hyak.Common.Tracing.Etw/1.0.2) |  |  |
 | Hyak Common - Tracing Log4Net | NuGet [1.0.2](https://www.nuget.org/packages/Hyak.Common.Tracing.Log4Net/1.0.2) |  |  |
 | Microsoft.Azure.SignalR.Emulator | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Emulator/1.1.0)<br>NuGet [1.0.0-preview1-10809](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Emulator/1.0.0-preview1-10809) |  |  |
-| MSBuild | NuGet [0.25.0](https://www.nuget.org/packages/Microsoft.TypeSpec.MSBuild/0.25.0) |  |  |
-| ProviderHub Controller | NuGet [0.11.0](https://www.nuget.org/packages/Microsoft.TypeSpec.ProviderHub.Controller/0.11.0) |  |  |
-| ProviderHub Templates | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.TypeSpec.ProviderHub.Templates/1.3.0) |  |  |
+| MSBuild | NuGet [0.26.0](https://www.nuget.org/packages/Microsoft.TypeSpec.MSBuild/0.26.0) |  |  |
+| ProviderHub Controller | NuGet [0.12.0](https://www.nuget.org/packages/Microsoft.TypeSpec.ProviderHub.Controller/0.12.0) |  |  |
+| ProviderHub Templates | NuGet [1.4.0](https://www.nuget.org/packages/Microsoft.TypeSpec.ProviderHub.Templates/1.4.0) |  |  |
 | Template | NuGet [1.0.2-preview1](https://www.nuget.org/packages/Microsoft.Azure.Template/1.0.2-preview1) |  |  |
 | Test HttpRecorder | NuGet [1.13.3](https://www.nuget.org/packages/Microsoft.Azure.Test.HttpRecorder/1.13.3) |  | GitHub [1.13.3](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/mgmtcommon/TestFramework/Microsoft.Azure.Test.HttpRecorder) |

@@ -110,6 +110,33 @@ Substitute `dotnet-runtime-80` with the name of your runtime package.
 
 1. Save the file and restart the WSL2 instance through PowerShell. Use the `wsl.exe --shutdown` command.
 
+## 4. Use the .NET CLI
+
+Open a terminal and type `dotnet`.
+
+```dotnetcli
+dotnet
+```
+
+You'll see output similar to the following:
+
+```output
+Usage: dotnet [options]
+Usage: dotnet [path-to-application]
+
+Options:
+  -h|--help         Display help.
+  --info            Display .NET information.
+  --list-sdks       Display the installed SDKs.
+  --list-runtimes   Display the installed runtimes.
+
+path-to-application:
+  The path to an application .dll file to execute.
+```
+
+To learn how to use the .NET CLI, see [.NET CLI overview](../tools/index.md).
+
 ## Related content
 
+- [.NET CLI overview](../tools/index.md)
 - [How to enable TAB completion for the .NET CLI.](../tools/enable-tab-autocomplete.md)

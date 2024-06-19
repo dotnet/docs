@@ -83,6 +83,32 @@ You can edit your shell profile to permanently add the commands. There are many 
 
 Edit the appropriate source file for your shell and add `export DOTNET_ROOT=/snap/dotnet-sdk/current`.
 
+## 3. Use the .NET CLI
+
+Open a terminal and type `dotnet`.
+
+```dotnetcli
+dotnet
+```
+
+The following output is displayed:
+
+```output
+Usage: dotnet [options]
+Usage: dotnet [path-to-application]
+
+Options:
+  -h|--help         Display help.
+  --info            Display .NET information.
+  --list-sdks       Display the installed SDKs.
+  --list-runtimes   Display the installed runtimes.
+
+path-to-application:
+  The path to an application .dll file to execute.
+```
+
+To learn how to use the .NET CLI, see [.NET CLI overview](../tools/index.md).
+
 ## Troubleshooting
 
 - [The dotnet terminal command doesn't work](#the-dotnet-terminal-command-doesnt-work)
@@ -167,5 +193,6 @@ The certificate location varies by distribution. Here are the locations for the 
 
 ## Related content
 
+- [.NET CLI overview](../tools/index.md)
 - [How to enable TAB completion for the .NET CLI.](../tools/enable-tab-autocomplete.md)
 - [Tutorial: Create a console application with .NET SDK using Visual Studio Code](../tutorials/with-visual-studio-code.md)

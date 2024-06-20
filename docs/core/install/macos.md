@@ -230,6 +230,8 @@ The following command installs the ASP.NET Core runtime for maximum compatibilit
 ./dotnet-install.sh --channel 8.0 --runtime aspnetcore
 ```
 
+To learn how to use the .NET CLI, see [.NET CLI overview](../tools/index.md).
+
 ## Docker
 
 Containers provide a lightweight way to isolate your application from the rest of the host system. Containers on the same machine share just the kernel and use resources given to your application.

@@ -29,6 +29,8 @@ The Alpine package manager supports installing some versions of .NET. If the .NE
 - [Use the .NET install script.](linux-scripted-manual.md#scripted-install)
 - [Download and install .NET manually.](linux-scripted-manual.md#manual-install)
 
+To learn how to use the .NET CLI, see [.NET CLI overview](../tools/index.md).
+
 ## Install .NET 6
 
 [!INCLUDE [linux-apk-install-60](includes/linux-install-60-apk.md)]
@@ -105,5 +107,6 @@ apk add libgdiplus
 
 ## Next steps
 
+- [.NET CLI overview](../tools/index.md)
 - [How to enable TAB completion for the .NET CLI](../tools/enable-tab-autocomplete.md)
 - [Tutorial: Create a console application with .NET SDK using Visual Studio Code](../tutorials/with-visual-studio-code.md)

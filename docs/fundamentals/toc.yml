@@ -681,9 +681,6 @@ items:
           - name: Overview
             href: ../standard/base-types/regular-expressions.md
             displayName: regular expressions
-          - name: Source generation
-            href: ../standard/base-types/regular-expression-source-generators.md
-            displayName: regular expressions,advanced,design concepts,source generators,algorithmic reduction,regex
           - name: Language reference
             items:
               - name: Overview
@@ -708,11 +705,9 @@ items:
                 href: ../standard/base-types/regular-expression-options.md
               - name: Miscellaneous constructs
                 href: ../standard/base-types/miscellaneous-constructs-in-regular-expressions.md
-          - name: Best practices for regular expressions
-            href: ../standard/base-types/best-practices-regex.md
           - name: Regular expression object model
             href: ../standard/base-types/the-regular-expression-object-model.md
-          - name: Regular expression behavior
+          - name: Behavior and performance
             items:
               - name: Overview
                 href: ../standard/base-types/details-of-regular-expression-behavior.md
@@ -720,8 +715,11 @@ items:
                 href: ../standard/base-types/backtracking-in-regular-expressions.md
               - name: Compilation and reuse
                 href: ../standard/base-types/compilation-and-reuse-in-regular-expressions.md
-              - name: Thread safety
-                href: ../standard/base-types/thread-safety-in-regular-expressions.md
+              - name: Source generation
+                href: ../standard/base-types/regular-expression-source-generators.md
+                displayName: source generation,algorithmic reduction
+              - name: Best practices
+                href: ../standard/base-types/best-practices-regex.md
           - name: Examples
             items:
               - name: Scan for HREFs

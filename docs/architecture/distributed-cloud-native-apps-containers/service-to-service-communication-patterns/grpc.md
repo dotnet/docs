@@ -85,19 +85,15 @@ At the time, of this writing, gRPC is primarily used with backend services. Mode
 
 ## gRPC implementation
 
-The microservice reference architecture, [eShop on Containers](https://github.com/dotnet-architecture/eShopOnContainers), from Microsoft, shows how to implement gRPC services in .NET applications.
+The microservice reference architecture, [eShop Reference Application](https://github.com/dotnet/eShop), from Microsoft, shows how to implement gRPC services in .NET applications.
 
-![Backend architecture for eShop on Containers diagram](./media/eshop-with-aggregators.png)
+![Backend architecture for eShop application diagram](./media/eshop-architecture.png)
 
-**Figure 6-20**. Backend architecture for eShop on Containers
+**Figure 6-20**. Backend architecture for eShop application
 
-In the previous figure, note how eShop embraces the [Backend for Frontends pattern](/azure/architecture/patterns/backends-for-frontends) (BFF) by exposing multiple API gateways. We discussed the BFF pattern earlier in this chapter. Pay close attention to the Aggregator microservice (in gray) that sits between the Web-Shopping API Gateway and backend Shopping microservices. The Aggregator receives a single request from a client, dispatches it to various microservices, aggregates the results, and sends them back to the requesting client. Such operations typically require synchronous communication as to produce an immediate response. In eShop, backend calls from the Aggregator are performed using gRPC as shown in Figure 6-23.
+In the previous figure, note how eShop embraces the [Backend for Frontends pattern](https://learn.microsoft.com/azure/architecture/patterns/backends-for-frontends) (BFF) by exposing multiple API gateways.
 
-![gRPC in eShop on Containers diagram](./media/grpc-implementation.png)
-
-**Figure 6-21**. gRPC in eShop on Containers
-
-gRPC communication requires both client and server components. In the previous figure, note how the Shopping Aggregator implements a gRPC client. The client makes synchronous gRPC calls (in red) to backend microservices, each of which implement a gRPC server. Both the client and server take advantage of the built-in gRPC plumbing from the .NET SDK. Client-side *stubs* provide the plumbing to invoke remote gRPC calls. Server-side components provide gRPC plumbing that custom service classes can inherit and consume.
+gRPC communication requires both client and server components. The client makes synchronous gRPC calls to backend microservices, each of which implement a gRPC server. Both the client and server take advantage of the built-in gRPC plumbing from the .NET SDK. Client-side *stubs* provide the plumbing to invoke remote gRPC calls. Server-side components provide gRPC plumbing that custom service classes can inherit and consume.
 
 Microservices that expose both a RESTful API and gRPC communication require multiple endpoints to manage traffic. You would open an endpoint that listens for HTTP traffic for the RESTful calls and another for gRPC calls. The gRPC endpoint must be configured for the HTTP/2 protocol that is required for gRPC communication.
 

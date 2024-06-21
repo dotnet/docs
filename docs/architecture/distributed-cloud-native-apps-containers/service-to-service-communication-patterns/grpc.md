@@ -89,6 +89,8 @@ The microservice reference architecture, [eShop Reference Application](https://g
 
 ![Backend architecture for eShop application diagram](./media/eshop-architecture.png)
 
+The Eshop App Workshop adds gRPC as a worked example in the [Add shopping basket capabilities to the web site lab](https://github.com/dotnet-presentations/eshop-app-workshop/tree/main/labs/4-Add-Shopping-Basket)
+
 **Figure 6-20**. Backend architecture for eShop application
 
 In the previous figure, note how eShop embraces the [Backend for Frontends pattern](https://learn.microsoft.com/azure/architecture/patterns/backends-for-frontends) (BFF) by exposing multiple API gateways.

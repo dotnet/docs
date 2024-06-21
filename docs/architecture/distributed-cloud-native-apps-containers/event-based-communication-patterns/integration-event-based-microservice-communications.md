@@ -22,13 +22,11 @@ This section describes how you can implement this type of communication with .NE
 
 As noted in the architecture section, you can choose from multiple messaging technologies for implementing your abstract event bus. But these technologies are at different levels. For instance, RabbitMQ, a messaging broker transport, is at a lower level than commercial products like Azure Service Bus, NServiceBus, MassTransit, or Brighter. Most of these products can work on top of either RabbitMQ or Azure Service Bus. Your choice of product depends on how many features and how much out-of-the-box scalability you need for your application.
 
-For implementing just an event bus proof-of-concept for your development environment, as in the eShopOnContainers sample, a simple implementation on top of [RabbitMQ](https://www.rabbitmq.com/) running as a container might be enough. But for mission-critical and production systems that need high scalability, you might want to evaluate and use [Azure Service Bus](/azure/service-bus-messaging/).
-
-If you require high-level abstractions and richer features like [Sagas](https://docs.particular.net/nservicebus/sagas/) for long-running processes that make distributed development easier, other commercial and open-source service buses like [NServiceBus](/azure/service-bus-messaging/build-message-driven-apps-nservicebus), [MassTransit](https://masstransit.io/), and [Brighter](https://github.com/BrighterCommand/Brighter) are worth evaluating. In this case, the abstractions and API to use would usually be directly the ones provided by those high-level service buses instead of your own abstractions (like the [simple event bus abstractions provided at eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/BuildingBlocks/EventBus/EventBus/Abstractions/IEventBus.cs)). For that matter, you can research the [forked eShopOnContainers using NServiceBus](https://go.particular.net/eShopOnContainers) (additional derived sample implemented by Particular Software).
+For implementing just an event bus proof-of-concept for your development environment a simple implementation on top of [RabbitMQ](https://www.rabbitmq.com/) running as a container might be enough. But for mission-critical and production systems that need high scalability, you might want to evaluate and use [Azure Service Bus](/azure/service-bus-messaging/).
 
 Of course, you could always build your own service bus features on top of lower-level technologies like RabbitMQ and Docker, but the work needed to "reinvent the wheel" might be too costly for a custom enterprise application.
 
-To reiterate: the sample event bus abstractions and implementation showcased in the eShopOnContainers sample are intended to be used only as a proof of concept. Once you have decided that you want to have asynchronous and event-driven communication, as explained in the current section, you should choose the service bus product that best fits your needs for production.
+Once you have decided that you want to have asynchronous and event-driven communication, as explained in the current section, you should choose the service bus product that best fits your needs for production.
 
 ## Implementing the Azure Service Bus Component with .NET Aspire
 
@@ -132,7 +130,7 @@ public class ProductPriceChangedIntegrationEvent : IntegrationEvent
 
 The integration events can be defined at the application level of each microservice, so they are decoupled from other microservices, in a way comparable to how ViewModels are defined in the server and client. What is not recommended is sharing a common integration events library across multiple microservices; doing that would be coupling those microservices with a single event definition data library. You do not want to do that for the same reasons that you do not want to share a common domain model across multiple microservices: microservices must be completely autonomous. For more information, see this blog post on [the amount of data to put in events](https://particular.net/blog/putting-your-events-on-a-diet). Be careful not to take this too far, as this other blog post describes [the problem data deficient messages can produce](https://ardalis.com/data-deficient-messages/). Your design of your events should aim to be "just right" for the needs of their consumers.
 
-There are only a few kinds of libraries you should share across microservices. One is libraries that are final application blocks, like the [Event Bus client API](https://github.com/dotnet-architecture/eShopOnContainers/tree/main/src/BuildingBlocks/EventBus), as in eShopOnContainers. Another is libraries that constitute tools that could also be shared as NuGet components, like JSON serializers.
+There are only a few kinds of libraries you should share across microservices. One is libraries that are final application blocks, like the [Event Bus client API](https://github.com/dotnet/eShop/tree/main/src/EventBus), as in the eShop reference architecture. Another is libraries that constitute tools that could also be shared as NuGet components, like JSON serializers.
 
 ## The event bus
 
@@ -150,7 +148,7 @@ In the [Observer pattern](https://en.wikipedia.org/wiki/Observer_pattern), your 
 
 ### Publish/Subscribe (Pub/Sub) pattern
 
-The purpose of the [Publish/Subscribe pattern](/previous-versions/msp-n-p/ff649664(v=pandp.10)) is the same as the Observer pattern: you want to notify other services when certain events take place. But there is an important difference between the Observer and Pub/Sub patterns. In the observer pattern, the broadcast is performed directly from the observable to the observers, so they "know" each other. But when using a Pub/Sub pattern, there is a third component, called broker, or message broker or event bus, which is known by both the publisher and subscriber. Therefore, when using the Pub/Sub pattern the publisher and the subscribers are precisely decoupled thanks to the mentioned event bus or message broker.
+The purpose of the [Publish/Subscribe pattern](https://learn.microsoft.com/previous-versions/msp-n-p/ff649664(v=pandp.10)) is the same as the Observer pattern: you want to notify other services when certain events take place. But there is an important difference between the Observer and Pub/Sub patterns. In the observer pattern, the broadcast is performed directly from the observable to the observers, so they "know" each other. But when using a Pub/Sub pattern, there is a third component, called broker, or message broker or event bus, which is known by both the publisher and subscriber. Therefore, when using the Pub/Sub pattern the publisher and the subscribers are precisely decoupled thanks to the mentioned event bus or message broker.
 
 ### The middleman or event bus
 
@@ -208,12 +206,6 @@ Some production-ready messaging solutions:
 - **Azure Service Bus** \
   [https://learn.microsoft.com/azure/service-bus-messaging/](/azure/service-bus-messaging/)
   
-- **NServiceBus** \
-  <https://particular.net/nservicebus>
-  
-- **MassTransit** \
-  <https://masstransit-project.com/>
-
 > [!div class="step-by-step"]
 > [Previous](---TO DO---)
 > [Next](rabbitmq-event-bus-development-test-environment.md)

@@ -23,7 +23,7 @@ Completion: _"Pedro Lascurain."_
 
 The completion appears correct, but what if your app is supposed to help U.S. history students? Pedro Lascurain's 45-minute term is the shortest term for any president, but he served as the president of Mexico. The U.S. history students are probably looking for *"William Henry Harrison"*. Clearly, the app could be more helpful to its intended users if you gave it some context.
 
-Prompt engineering adds context to the prompt by providing [*instructions*](#use-instructions-to-tell-the-model-what-to-do), [*examples*](#examples-show-the-model-what-to-do), and [*cues*](#cues) to help the model produce better completions.
+Prompt engineering adds context to the prompt by providing [*instructions*](#use-instructions-to-improve-the-completion), [*examples*](#use-examples-to-guide-the-model), and [*cues*](#understand-cues) to help the model produce better completions.
 
 Models that support text generation often don't require any specific format, but you should organize your prompts so it's clear what's an instruction and what's an example. Models that support chat-based apps use three roles to organize completions: a system role that controls the chat, a user role to represent user input, and an assistant role for responding to users. Divide your prompts into messages for each role:
 
@@ -79,12 +79,12 @@ An example is text that shows the model how to respond by providing sample user 
 
 Like a normal GPT interaction, an example starts with a prompt. The example can optionally include a completion. A completion in an example doesn't have to include the verbatim response&mdash;it might just contain a formatted word, the first bullet in an unordered list, or something similar to indicate how each completion should start.  
 
-Examples are classified as [zero-shot learning](zero-shot-learning.md) or [few-shot learning](few-shot-learning.md) based on whether they contain verbatim completions.
+Examples are classified as [zero-shot learning](zero-shot-learning.md) or [few-shot learning](zero-shot-learning.md) based on whether they contain verbatim completions.
 
 - **Zero-shot learning** examples include a prompt with no verbatim completion. This approach tests a model's responses without giving it example data output. Zero-shot prompts can have completions that include cues, such as indicating the model should output an ordered list by including **"1."** as the completion.
 - **Few-shot learning** examples include several pairs of prompts with verbatim completions. Few-shot learning can change the model's behavior by adding to its existing knowledge.
 
-## Cues
+## Understand cues
 
 A cue is text that conveys the desired structure or format of output. Like an instruction, a cue isn't processed by the model as if it were user input. Like an example, a cue shows the model what you want instead of telling it what to do. You can add as many cues as you want, so you can iterate to get the result you want. Cues are used with an instruction or an example and should be at the end of the prompt.
 
@@ -168,7 +168,7 @@ The preceding code provides examples of the following concepts:
 
 You can also increase the power of your prompts with more advanced prompt engineering techniques that are covered in depth in their own articles.
 
-- LLMs have token input limits that constrain the amount of text you can fit in a prompt. Use [embeddings](embeddings.md) and [vector database solutions](vector-databases) to reduce the number of tokens you need to represent a given piece of text.
+- LLMs have token input limits that constrain the amount of text you can fit in a prompt. Use [embeddings](embeddings.md) and [vector database solutions](vector-databases.md) to reduce the number of tokens you need to represent a given piece of text.
 - LLMs aren't trained on your data unless you train them yourself, which can be costly and time-consuming. Use [retrieval augmented generation (RAG)](rag.md) to make your data available to an LLM without training it.
 
 ## Related content

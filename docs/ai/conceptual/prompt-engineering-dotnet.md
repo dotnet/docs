@@ -115,7 +115,7 @@ DOMESTIC POLICY
 
 ## Example prompt using .NET
 
-.NET provides various tools to prompt and chat with different AI models. Use [Semantic Kernel](../semantic-kernel-dotnet-overview.md) to connect to a wide variety of AI models and services, as well as other SDKs such as the official [OpenAI .NET library](https://www.nuget.org/packages/OpenAI-DotNet/). Semantic Kernel includes tools to author prompts with different roles and maintain chat history, as well as many other features.
+.NET provides various tools to prompt and chat with different AI models. Use [Semantic Kernel](../semantic-kernel-dotnet-overview.md) to connect to a wide variety of AI models and services, as well as other SDKs such as the official [OpenAI .NET library](https://www.nuget.org/packages/OpenAI-DotNet/). Semantic Kernel includes tools to create prompts with different roles and maintain chat history, as well as many other features.
 
 Consider the following code example:
 
@@ -159,9 +159,9 @@ while (true)
 
 The preceding code provides examples of the following concepts:
 
-- Creates a chat history service to prompt the AI model for completions based on author roles
-- Configures the AI with an `AuthorRole.System` message
-- Accepts user input to allow for different types of prompts in the context of an `AuthorRole.User`
+- Creates a chat history service to prompt the AI model for completions based on author roles.
+- Configures the AI with an `AuthorRole.System` message.
+- Accepts user input to allow for different types of prompts in the context of an `AuthorRole.User`.
 - Asynchronously streams the completion from the AI to provide a dynamic chat experience.
 
 ## Extend your prompt engineering techniques

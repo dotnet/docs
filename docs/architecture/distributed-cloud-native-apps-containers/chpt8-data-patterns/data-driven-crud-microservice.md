@@ -18,7 +18,7 @@ From a design point of view, this type of containerized microservice is very sim
 
 **Figure 6-4**. Internal design for simple CRUD microservices
 
-An example of this kind of simple data-drive service is the catalog microservice from the eShopOnContainers sample application. This type of service implements all its functionality in a single ASP.NET Core Web API project that includes classes for its data model, its business logic, and its data access code. It also stores its related data in a database running in SQL Server (as another container for dev/test purposes), but could also be any regular SQL Server host:
+An example of this kind of simple data-drive service is the catalog microservice from the eShop Reference Architecture sample application. This type of service implements all its functionality in a single ASP.NET Core Web API project that includes classes for its data model, its business logic, and its data access code. It also stores its related data in a database running in SQL Server (as another container for dev/test purposes), but could also be any regular SQL Server host:
 
 ![Diagram showing a data-driven/CRUD microservice container.](media/simple-data-driven-crud-microservice.png)
 
@@ -151,7 +151,7 @@ You can use the ASP.NET Core settings and add a ConnectionString property to you
 
 ```json
 {
-    "ConnectionString": "Server=tcp:127.0.0.1,5433;Initial Catalog=Microsoft.eShopOnContainers.Services.CatalogDb;User Id=sa;Password=[PLACEHOLDER]",
+    "ConnectionString": "Server=tcp:127.0.0.1,5433;Initial Catalog=Microsoft.eShop.Services.CatalogDb;User Id=sa;Password=[PLACEHOLDER]",
     "ExternalCatalogBaseUrl": "http://host.docker.internal:5101",
     "Logging": {
         "IncludeScopes": false,
@@ -174,7 +174,7 @@ From your docker-compose.yml or docker-compose.override.yml files, you can initi
 #
 catalog-api:
   environment:
-    - ConnectionString=Server=sqldata;Database=Microsoft.eShopOnContainers.Services.CatalogDb;User Id=sa;Password=[PLACEHOLDER]
+    - ConnectionString=Server=sqldata;Database=Microsoft.eShop.Services.CatalogDb;User Id=sa;Password=[PLACEHOLDER]
     # Additional environment variables for this service
   ports:
     - "5101:80"
@@ -196,7 +196,7 @@ Versioning enables a Web API to indicate the features and resources that it expo
 
 - Header versioning
 
-With URI versioning, as in the eShopOnContainers sample application, each time you modify the Web API or change the schema of resources, you add a version number to the URI for each resource. Existing URIs should continue to operate as before, returning resources that conform to the schema that matches the requested version.
+With URI versioning, as in the eShop sample application, each time you modify the Web API or change the schema of resources, you add a version number to the URI for each resource. Existing URIs should continue to operate as before, returning resources that conform to the schema that matches the requested version.
 
 As shown in the following code example, the version can be set by using the Route attribute in the Web API controller, which makes the version explicit in the URI (v1 in this case).
 
@@ -233,7 +233,7 @@ Dozens of products and [commercial tools](https://swagger.io/commercial-tools/) 
 
 There are several options to automate Swagger metadata generation for ASP.NET Core REST API applications, in the form of functional API help pages, based on *swagger-ui*.
 
-Probably the best known is [Swashbuckle](https://github.com/domaindrivendev/Swashbuckle.AspNetCore), which is currently used in [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers) and we'll cover in some detail in this guide.
+Probably the best known is [Swashbuckle](https://github.com/domaindrivendev/Swashbuckle.AspNetCore) which we'll cover in some detail in this guide.
 
 ### How to automate API Swagger metadata generation with the Swashbuckle NuGet package
 
@@ -291,7 +291,7 @@ You previously saw the generated UI created by Swashbuckle for a URL like `http:
 
 **Figure 6-9**. Swashbuckle UI testing the Catalog/Items API method
 
-The Swagger UI API detail shows a sample of the response and can be used to execute the real API, which is great for developer discovery. To see the Swagger JSON metadata generated from the eShopOnContainers microservice, make a request to `http://<your-root-url>/swagger/v1/swagger.json` using the [Visual Studio Code: REST Client extension](https://marketplace.visualstudio.com/items?itemName=humao.rest-client).
+The Swagger UI API detail shows a sample of the response and can be used to execute the real API, which is great for developer discovery.
 
 ### Additional resources
 

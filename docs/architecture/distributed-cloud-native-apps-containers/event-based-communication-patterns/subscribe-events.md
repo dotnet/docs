@@ -147,15 +147,13 @@ About the second approach: you use the EventLog table as a queue and always use 
 
 **Figure 7-23**. Atomicity when publishing events to the event bus with a worker microservice
 
-For simplicity, the eShopOnContainers sample uses the first approach (with no additional processes or checker microservices) plus the event bus. However, the eShopOnContainers sample is not handling all possible failure cases. In a real application deployed to the cloud, you must embrace the fact that issues will arise eventually, and you must implement that check and resend logic. Using the table as a queue can be more effective than the first approach if you have that table as a single source of events when publishing them (with the worker) through the event bus.
-
 ### Implementing atomicity when publishing integration events through the event bus
 
 The following code shows how you can create a single transaction involving multiple DbContext objects — one context related to the original data being updated, and the second context related to the IntegrationEventLog table.
 
 The transaction in the example code below will not be resilient if connections to the database have any issue at the time when the code is running. This can happen in cloud-based systems like Azure SQL DB, which might move databases across servers.
 
-For clarity, the following example shows the whole process in a single piece of code. However, the eShopOnContainers implementation is refactored and splits this logic into multiple classes so it's easier to maintain.
+For clarity, the following example shows the whole process in a single piece of code. However, most sutions would split this logic into multiple classes so it's easier to maintain.
 
 ```csharp
 // Update Product from the Catalog microservice

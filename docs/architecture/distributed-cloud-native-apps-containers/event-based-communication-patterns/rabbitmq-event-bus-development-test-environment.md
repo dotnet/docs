@@ -29,7 +29,7 @@ The RabbitMQ implementation of a sample dev/test event bus is boilerplate code. 
 
 ## Implementing a simple publish method with RabbitMQ
 
-The following code is a ***simplified*** version of an event bus implementation for RabbitMQ, to showcase the whole scenario. You don't really handle the connection this way. To see the full implementation, see the actual code in the [dotnet-architecture/eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers/blob/main/src/BuildingBlocks/EventBus/EventBusRabbitMQ/EventBusRabbitMQ.cs) repository.
+The following code is a ***simplified*** version of an event bus implementation for RabbitMQ, to showcase the whole scenario. You don't really handle the connection this way. To see the full implementation, see the actual code in the [eShop Reference Architecture](https://github.com/dotnet/eShop/blob/main/src/EventBusRabbitMQ/RabbitMQEventBus.cs) repository.
 
 ```csharp
 public class EventBusRabbitMQ : IEventBus, IDisposable
@@ -100,9 +100,9 @@ Each event type has a related channel to get events from RabbitMQ. You can then 
 
 The Subscribe method accepts an IIntegrationEventHandler object, which is like a callback method in the current microservice, plus its related IntegrationEvent object. The code then adds that event handler to the list of event handlers that each integration event type can have per client microservice. If the client code has not already been subscribed to the event, the code creates a channel for the event type so it can receive events in a push style from RabbitMQ when that event is published from any other service.
 
-As mentioned above, the event bus implemented in eShopOnContainers has only an educational purpose, since it only handles the main scenarios, so it's not ready for production.
+As mentioned above, the event bus implemented in eShop Reference Architecture has only an educational purpose, since it only handles the main scenarios, so it's not ready for production.
 
-For production scenarios check the additional resources below, specific for RabbitMQ, and the [Implementing event-based communication between microservices](./integration-event-based-microservice-communications.md#additional-resources) section.
+For production scenarios check the additional resources below, specific for RabbitMQ.
 
 ## Implementing RabitMQ with .NET Aspire
 

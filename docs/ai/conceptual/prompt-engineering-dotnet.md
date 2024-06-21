@@ -27,18 +27,18 @@ Prompt engineering adds context to the prompt by providing [*instructions*](#use
 
 Models that support text generation often don't require any specific format, but you should organize your prompts so it's clear what's an instruction and what's an example. Models that support chat-based apps use three roles to organize completions: a system role that controls the chat, a user role to represent user input, and an assistant role for responding to users. Divide your prompts into messages for each role:
 
-- [**System messages**](/azure/ai-services/openai/concepts/advanced-prompt-engineering?pivots=programming-language-chat-completions#system-message) give the model instructions about the assistant. A prompt can have only one system message, and it must be the first message.
-- **User messages** show examples or historical prompts, or contain instructions for the assistant. An example chat completion must have at least one user message.
-- **Assistant messages** show example or historical completions, and must contain a response to the preceding user message. Assistant messages aren't required, but if you include one it must be paired with a user message to form an example.
+- [*System messages*](/azure/ai-services/openai/concepts/advanced-prompt-engineering?pivots=programming-language-chat-completions#system-message) give the model instructions about the assistant. A prompt can have only one system message, and it must be the first message.
+- *User messages* include prompts from the user and show examples, historical prompts, or contain instructions for the assistant. An example chat completion must have at least one user message.
+- *Assistant messages* show example or historical completions, and must contain a response to the preceding user message. Assistant messages aren't required, but if you include one it must be paired with a user message to form an example.
 
 ## Use instructions to improve the completion
 
 An instruction is text that tells the model how to respond. An instruction can be a directive or an imperative:
 
-- _Directives_ tell the model how to behave, but aren't simple commands&mdash;think character setup for an improv actor: **"You're helping students learn about U.S. history, so talk about the U.S. unless they specifically ask about other countries."**
-- _Imperatives_ are unambiguous commands for the model to follow. **"Translate to Tagalog:"**
+- *Directives* tell the model how to behave, but aren't simple commands&mdash;think character setup for an improv actor: **"You're helping students learn about U.S. history, so talk about the U.S. unless they specifically ask about other countries."**
+- *Imperatives* are unambiguous commands for the model to follow. **"Translate to Tagalog:"**
 
-Because they're open-ended, directives are more flexible than imperatives:
+Directives are more open-ended and flexible than imperatives:
 
 - You can combine several directives in one instruction.
 - Instructions usually work better when you use them with examples. However, because imperatives are unambiguous commands, models don't need examples to understand them (though you might use an example to show the model how to format responses). Because a directive doesn't tell the model exactly what to do, each example can help the model work better.
@@ -54,7 +54,7 @@ You can provide content to add more context to instructions.
 
 Use labels with your instructional content to help the model figure out how to use it with the instruction. Don't worry too much about precision&mdash;labels don't have to match instructions exactly because the model will handle things like word form and capitalization.
 
-Suppose you use the instruction **"Summarize US Presidential accomplishments"** to produce a list. The model might organize and order it in any number of ways. But what if you want the list to group the accomplishments by a specific set of categories? You can adjust your instruction by appending **"&nbsp;grouped by category"** to it, but a model won't know which specific categories you want. Use supporting content to add that information to the instruction.
+Suppose you use the instruction **"Summarize US Presidential accomplishments"** to produce a list. The model might organize and order it in any number of ways. But what if you want the list to group the accomplishments by a specific set of categories? Use supporting content to add that information to the instruction.
 
 Adjust your instruction so the model groups by category, and append supporting content that specifies those categories:
 
@@ -77,7 +77,7 @@ John Adams ...' ///Text truncated
 
 An example is text that shows the model how to respond by providing sample user input and model output. The model uses examples to infer what to include in completions. Examples can come either before or after the instructions in an engineered prompt, but the two shouldn't be interspersed.
 
-Like a normal GPT interaction, an example starts with a prompt. The example can optionally include a completion. A completion in an example doesn't have to include the verbatim response&mdash;it might just contain a formatted word, the first bullet in an unordered list, or something similar to indicate how each completion should start.  
+An example starts with a prompt and can optionally include a completion. A completion in an example doesn't have to include the verbatim response&mdash;it might just contain a formatted word, the first bullet in an unordered list, or something similar to indicate how each completion should start.  
 
 Examples are classified as [zero-shot learning](zero-shot-learning.md) or [few-shot learning](zero-shot-learning.md) based on whether they contain verbatim completions.
 
@@ -164,7 +164,7 @@ The preceding code provides examples of the following concepts:
 - Accepts user input to allow for different types of prompts in the context of an `AuthorRole.User`
 - Asynchronously streams the completion from the AI to provide a dynamic chat experience.
 
-## Extend the reach of your prompt engineering techniques
+## Extend your prompt engineering techniques
 
 You can also increase the power of your prompts with more advanced prompt engineering techniques that are covered in depth in their own articles.
 

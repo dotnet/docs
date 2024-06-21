@@ -9,7 +9,7 @@ ms.date: 05/14/2024
 
 ---
 
-# Understanding tokens
+# Understand tokens
 
 Tokens are words, character sets, or combinations of words and punctuation that are used by large language models (LLMs) to decompose text into. Tokenization is the first step in training. The LLM analyzes the semantic relationships between tokens, such as how commonly they're used together or whether they're used in similar contexts. After training, the LLM uses those patterns and relationships to generate a sequence of output tokens based on the input sequence.
 

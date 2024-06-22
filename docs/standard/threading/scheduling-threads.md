@@ -18,7 +18,7 @@ Here is an example of the execution of 9 threads across all 5 priority levels fr
 
 The following code will output arbitrary results on each execution. But common sequence patters of priorities being ran could be observed after running multiple times and analyzing the outputs.
 
-:::code language="csharp" source="snippets/SchedulingThreads.cs":::
+:::code language="csharp" source="snippets/scheduling-threads/SchedulingThreads.cs":::
 
 ## See also
 

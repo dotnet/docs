@@ -219,6 +219,8 @@ The [download page](https://dotnet.microsoft.com/download/dotnet) for .NET provi
 
 1. Select **Install** and follow the instructions to install .NET.
 
+To learn how to use the .NET CLI, see [.NET CLI overview](../tools/index.md).
+
 ### Command-line options
 
 If you want to install .NET silently, such as in a production environment or to support continuous integration, use the following Windows Installer options:
@@ -266,6 +268,8 @@ If you install the SDK, you don't need to install the corresponding runtime.
     winget install Microsoft.DotNet.SDK.8
     ```
 
+To learn how to use the .NET CLI, see [.NET CLI overview](../tools/index.md).
+
 ### Install the runtime
 
 There are different runtimes you can install. Refer to the [Choose the correct runtime](#choose-the-correct-runtime) section to understand what's included with each runtime.
@@ -278,6 +282,8 @@ There are different runtimes you can install. Refer to the [Choose the correct r
     winget install Microsoft.DotNet.DesktopRuntime.8
     winget install Microsoft.DotNet.AspNetCore.8
     ```
+
+To learn how to use the .NET CLI, see [.NET CLI overview](../tools/index.md).
 
 ### Search for versions
 
@@ -332,6 +338,8 @@ The .NET Runtime is installed by providing the `-Runtime` switch.
     dotnet-install.ps1 -Runtime aspnetcore
     ```
 
+To learn how to use the .NET CLI, see [.NET CLI overview](../tools/index.md).
+
 ### Install the SDK
 
 If you install the SDK, you don't need to install the runtimes.
@@ -346,6 +354,8 @@ If you install the SDK, you don't need to install the runtimes.
 
     > [!NOTE]
     > The SDK is installed by omitting the `-Runtime` switch.
+
+To learn how to use the .NET CLI, see [.NET CLI overview](../tools/index.md).
 
 ## Validation
 
@@ -403,6 +413,7 @@ Install the Microsoft Visual C++ 2015-2019 Redistributable ([64-bit][vcc64] or [
 
 ## Related content
 
+- [.NET CLI overview](../tools/index.md)
 - [Upgrade to a new .NET version](upgrade.md).
 - [How to check if .NET is already installed](how-to-detect-installed-versions.md?pivots=os-windows).
 - [Tutorial: Hello World tutorial](../tutorials/with-visual-studio.md).

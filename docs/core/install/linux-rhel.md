@@ -88,6 +88,8 @@ Red Hat does not recommend permanently enabling `rh-dotnet60` because it may aff
 source scl_source enable rh-dotnet60
 ```
 
+To learn how to use the .NET CLI, see [.NET CLI overview](../tools/index.md).
+
 ### Install the runtime
 
 The .NET Runtime allows you to run apps that were made with .NET that didn't include the runtime. The commands below install the ASP.NET Core Runtime, which is the most compatible runtime for .NET Core. In your terminal, run the following commands.
@@ -121,6 +123,8 @@ sudo rpm -Uvh https://packages.microsoft.com/config/centos/8/packages-microsoft-
 sudo yum install dotnet-sdk-8.0
 ```
 
+To learn how to use the .NET CLI, see [.NET CLI overview](../tools/index.md).
+
 ## Dependencies
 
 [!INCLUDE [linux-rpm-install-dependencies](includes/linux-rpm-install-dependencies.md)]
@@ -139,5 +143,6 @@ For more information about solving these problems, see [Troubleshoot `fxr`, `lib
 
 ## Next steps
 
+- [.NET CLI overview](../tools/index.md)
 - [How to enable TAB completion for the .NET CLI](../tools/enable-tab-autocomplete.md)
 - [Tutorial: Create a console application with .NET SDK using Visual Studio Code](../tutorials/with-visual-studio-code.md)

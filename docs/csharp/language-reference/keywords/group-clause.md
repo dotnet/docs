@@ -80,6 +80,8 @@ This example shows how to perform additional logic on the groups after you have 
 
 At compile time, `group` clauses are translated into calls to the <xref:System.Linq.Enumerable.GroupBy%2A> method.
 
+Custom equality comparer is not supported in the syntax of `group` clause query. Use <xref:System.Linq.Enumerable.GroupBy%2A> method explicitly if you want to utilize <xref:System.Collections.IEqualityComparer> in your query.
+
 ## See also
 
 - <xref:System.Linq.IGrouping%602>

@@ -54,6 +54,8 @@ The .NET SDK allows you to develop apps with .NET. If you install the .NET SDK, 
 sudo yum install dotnet-sdk-6.0
 ```
 
+To learn how to use the .NET CLI, see [.NET CLI overview](../tools/index.md).
+
 ### Install the runtime
 
 The ASP.NET Core Runtime allows you to run apps that were made with .NET that didn't provide the runtime. The following command installs the ASP.NET Core Runtime, which is the most compatible runtime for .NET. In your terminal, run the following command:
@@ -67,6 +69,8 @@ As an alternative to the ASP.NET Core Runtime, you can install the .NET Runtime,
 ```bash
 sudo yum install dotnet-runtime-6.0
 ```
+
+To learn how to use the .NET CLI, see [.NET CLI overview](../tools/index.md).
 
 ## How to install other versions
 
@@ -94,5 +98,6 @@ For more information about solving these problems, see [Troubleshoot `fxr`, `lib
 
 ## Next steps
 
+- [.NET CLI overview](../tools/index.md)
 - [How to enable TAB completion for the .NET CLI](../tools/enable-tab-autocomplete.md)
 - [Tutorial: Create a console application with .NET SDK using Visual Studio Code](../tutorials/with-visual-studio-code.md)

@@ -80,26 +80,27 @@ Compare that text with the equivalent text in the sample on [JSON deserializatio
 
 | Escape sequence | Character name                   | Unicode encoding                                       |
 |-----------------|----------------------------------|--------------------------------------------------------|
-| \\'             | Single quote                     | 0x0027                                                 |
-| \\"             | Double quote                     | 0x0022                                                 |
-| \\\\            | Backslash                        | 0x005C                                                 |
-| \0              | Null                             | 0x0000                                                 |
-| \a              | Alert                            | 0x0007                                                 |
-| \b              | Backspace                        | 0x0008                                                 |
-| \f              | Form feed                        | 0x000C                                                 |
-| \n              | New line                         | 0x000A                                                 |
-| \r              | Carriage return                  | 0x000D                                                 |
-| \t              | Horizontal tab                   | 0x0009                                                 |
-| \v              | Vertical tab                     | 0x000B                                                 |
-| \u              | Unicode escape sequence (UTF-16) | `\uHHHH` (range: 0000 - FFFF; example: `\u00E7` = "ç") |
-| \U              |Unicode escape sequence (UTF-32)  |`\U00HHHHHH` (range: 000000 - 10FFFF; example: `\U0001F47D` = "&#x1F47D;")|
-| \x              |Unicode escape sequence similar to "\u" except with variable length|`\xH[H][H][H]` (range: 0 - FFFF; example: `\x00E7` or `\x0E7` or `\xE7` = "ç")|
+| `\'`            | Single quote                     | 0x0027                                                 |
+| `\"`            | Double quote                     | 0x0022                                                 |
+| `\\`            | Backslash                        | 0x005C                                                 |
+| `\0`            | Null                             | 0x0000                                                 |
+| `\a`            | Alert                            | 0x0007                                                 |
+| `\b`            | Backspace                        | 0x0008                                                 |
+| `\e`            | Escape                           | 0x001B                                                 |
+| `\f`            | Form feed                        | 0x000C                                                 |
+| `\n`            | New line                         | 0x000A                                                 |
+| `\r`            | Carriage return                  | 0x000D                                                 |
+| `\t`            | Horizontal tab                   | 0x0009                                                 |
+| `\v`            | Vertical tab                     | 0x000B                                                 |
+| `\u`            | Unicode escape sequence (UTF-16) | `\uHHHH` (range: 0000 - FFFF; example: `\u00E7` = "ç") |
+| `\U`            |Unicode escape sequence (UTF-32)  |`\U00HHHHHH` (range: 000000 - 10FFFF; example: `\U0001F47D` = "&#x1F47D;")|
+| `\x`            |Unicode escape sequence similar to "\u" except with variable length|`\xH[H][H][H]` (range: 0 - FFFF; example: `\x00E7` or `\x0E7` or `\xE7` = "ç")|
 
 > [!WARNING]
 > When using the `\x` escape sequence and specifying less than 4 hex digits, if the characters that immediately follow the escape sequence are valid hex digits (i.e. 0-9, A-F, and a-f), they will be interpreted as being part of the escape sequence. For example, `\xA1` produces "&#161;", which is code point U+00A1. However, if the next character is "A" or "a", then the escape sequence will instead be interpreted as being `\xA1A` and produce "&#x0A1A;", which is code point U+0A1A. In such cases, specifying all 4 hex digits (for example, `\x00A1`) prevents any possible misinterpretation.
 
 > [!NOTE]
-> At compile time, verbatim and raw strings are converted to ordinary strings with all the same escape sequences. Therefore, if you view a verbatim or raw string in the debugger watch window, you will see the escape characters that were added by the compiler, not the verbatim or raw version from your source code. For example, the verbatim string `@"C:\files.txt"` will appear in the watch window as `"C:\\\\files.txt"`.
+> At compile time, verbatim and raw strings are converted to ordinary strings with all the same escape sequences. Therefore, if you view a verbatim or raw string in the debugger watch window, you will see the escape characters that were added by the compiler, not the verbatim or raw version from your source code. For example, the verbatim string `@"C:\files.txt"` will appear in the watch window as `"C:\\files.txt"`.
 
 ## Format strings
 

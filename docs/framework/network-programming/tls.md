@@ -56,7 +56,7 @@ For more information see [TLS protocol version support in Schannel](/windows/win
 - For TLS 1.3, target .NET Framework 4.8 or later. ([here](#audit-your-code-and-make-code-changes) is how to check what is your `target framework`.)
 - Do not specify the TLS version explicitly. (i.e. don't use the method overloads of SslStream that take an explicit SslProtocols parameter.)
   - That way your code will let the OS decide on the TLS version.
-  - If you must set <xref:System.Net.HttpWebRequest.SslProtocols?displayProperty=nameWithType>, then set it to `SslProtocols.SystemDefault`. That will also use OS default.
+  - If you must set <xref:System.Net.ServicePointManager.SecurityProtocol?displayProperty=nameWithType>, then set it to <xref:System.Net.SecurityProtocolType.SystemDefault?displayProperty=nameWithType>. That will also use OS default.
   - If you must use the method overloads of SslStream that take an explicit SslProtocols parameter, then pass `SslProtocols.SystemDefault` as argument. That will also use OS default.
 - Perform a thorough code audit to verify you're not specifying a TLS or SSL version explicitly.
 

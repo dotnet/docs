@@ -8,14 +8,14 @@ ms.date: 06/21/2024
 
 # Fakes extension
 
-This extension provides suppoort to execute a test project that makes use of `Microsoft Fakes`.
+This extension provides support to execute a test project that makes use of `Microsoft Fakes`.
 
 [Microsoft Fakes](https://learn.microsoft.com/en-us/visualstudio/test/isolating-code-under-test-with-microsoft-fakes) allows you to better test your code by either generating `Stub`s (for instance creating a testable implementation of `INotifyPropertyChanged`) or by `Shim`ing methods and static methods (replacing the implementation of `File.Open` with a one you can control in your tests).
 
 > [!NOTE]
 > This extension requires a VS Enterprise installation with the minimum version of 17.11 preview 1 in order to work correctly.
 
-# Upgrading your project to the new extension
+## Upgrading your project to the new extension
 
 To use the new extension with an existing project, update the existing `Microsoft.QualityTools.Testing.Fakes` reference with `Microsoft.Testing.Extensions.Fakes`.
 

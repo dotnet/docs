@@ -53,28 +53,26 @@ For more information see [TLS protocol version support in Schannel](/windows/win
 
 ## Recommendations
 
-- For TLS 1.3, target .NET Framework 4.8 or later. ([here](#audit-your-code-and-make-code-changes) is how to check what is your `target framework`.)
-- Do not specify the TLS version explicitly. (i.e. don't use the method overloads of SslStream that take an explicit SslProtocols parameter.)
+- For TLS 1.3, target .NET Framework 4.8 or later. Check [Audit your code](#audit-your-code-and-make-code-changes) section how to verify your `target framework`.
+- Do not specify the TLS version explicitly, i.e. don't use the method overloads of `SslStream` that take an explicit `SslProtocols` parameter.
   - That way your code will let the OS decide on the TLS version.
   - If you must set <xref:System.Net.ServicePointManager.SecurityProtocol?displayProperty=nameWithType>, then set it to <xref:System.Net.SecurityProtocolType.SystemDefault?displayProperty=nameWithType>. That will also use OS default.
-  - If you must use the method overloads of SslStream that take an explicit SslProtocols parameter, then pass `SslProtocols.SystemDefault` as argument. That will also use OS default.
+  - If you must use the method overloads of `SslStream` that take an explicit `SslProtocols` parameter, then pass `SslProtocols.SystemDefault` as argument. That will also use OS default.
 - Perform a thorough code audit to verify you're not specifying a TLS or SSL version explicitly.
 
 > [!WARNING]
-> Do not use `SslProtocols.Default`. (because it sets TLS version to SSL3 and TLS1.0 which is obsoleted.)
+> Do not use `SslProtocols.Default`, because it sets TLS version to SSL3 and TLS 1.0 which are obsoleted.
 
 When your app lets the OS choose the TLS version:
 
-- It automatically takes advantage of new protocols added in the future.
-- The OS blocks protocols that are discovered not to be secure.
-
-The section [Audit your code and make code changes](#audit-your-code-and-make-code-changes) covers auditing and updating your code.
+- It automatically takes advantage of new TLS protocols added in the future.
+- The OS blocks protocols that are discovered not to be secure (e.g. SSL3 and TLS 1.0).
 
 This article explains how to enable the strongest security available for the version of .NET Framework that your app targets and runs on. When an app explicitly sets a security protocol and version, it opts out of any other alternative, and opts out of .NET Framework and OS default behavior. If you want your app to be able to negotiate a TLS 1.3 connection, explicitly setting to a lower TLS version prevents a TLS 1.3 connection.
 
-If you can't avoid specifying a protocol version explicitly, we strongly recommend that you specify TLS1.2 or TLS 1.3 (which is `currently considered secure`). For guidance on identifying and removing TLS 1.0 dependencies, download the [Solving the TLS 1.0 Problem](https://www.microsoft.com/download/details.aspx?id=55266) white paper.
+If you can't avoid specifying a protocol version explicitly, we strongly recommend that you specify TLS 1.2 or TLS 1.3 (which is `currently considered secure`). For guidance on identifying and removing TLS 1.0 dependencies, download the [Solving the TLS 1.0 Problem](https://www.microsoft.com/download/details.aspx?id=55266) white paper.
 
-WCF Supports TLS 1.2 as the default in .NET Framework 4.7. Starting with .NET Framework 4.7.1, WCF defaults to the operating system configured version. If an application is explicitly configured with `SslProtocols.None`, WCF uses the operating system default setting when using the NetTcp transport.
+WCF supports TLS 1.2 as the default in .NET Framework 4.7. Starting with .NET Framework 4.7.1, WCF defaults to the operating system configured version. If an application is explicitly configured with `SslProtocols.None`, WCF uses the operating system default setting when using the NetTcp transport.
 
 You can ask questions about this document in the GitHub issue [Transport Layer Security (TLS) best practices with the .NET Framework](https://github.com/dotnet/docs/issues/4675).
 
@@ -88,7 +86,7 @@ Use the following sections to verify you're not using a specific TLS or SSL vers
 
 ## If you must explicitly set a Security Protocol
 
-If you must explicitly set a security protocol instead of letting .NET or the OS pick the security protocol pick these protocols:
+If you must explicitly set a security protocol instead of letting .NET or the OS pick the security protocol, pick these protocols:
 
 - For .NET Framework 3.5: TLS 1.2
 - For .NET Framework 4.6.2 or later: TLS 1.3

@@ -2,7 +2,7 @@
 title: Application resiliency patterns
 description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | Application Resiliency Patterns
 author: 
-ms.date: 17/04/2024
+ms.date: 04/17/2024
 ---
 
 # Application resiliency patterns

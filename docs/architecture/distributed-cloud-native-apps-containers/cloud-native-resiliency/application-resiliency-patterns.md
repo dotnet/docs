@@ -9,7 +9,7 @@ ms.date: 17/04/2024
 
 [!INCLUDE [download-alert](../includes/download-alert.md)]
 
-The first line of defense is application resiliency.
+The first line of defense for your distributed application is resiliency.
 
 While you could invest considerable time writing your own resiliency framework, there's no need to with the latest releases of .NET. The .NET platform now includes a set of libraries that provide resiliency features out of the box. These libraries are built on top of the [Polly](https://github.com/App-vNext/Polly) library. Polly defines a number of resiliency strategies that you can use to make your applications more resilient to transient faults. These strategies include:
 

@@ -77,7 +77,8 @@
             {
                 "files": [
                     "Compiler Breaking Changes - DotNet 7.md",
-                    "Compiler Breaking Changes - DotNet 8.md"
+                    "Compiler Breaking Changes - DotNet 8.md",
+                    "Compiler Breaking Changes - DotNet 9.md"
                 ],
                 "src": "_roslyn/docs/compilers/CSharp",
                 "dest": "csharp/whats-new/breaking-changes",
@@ -493,6 +494,7 @@
                 "_csharplang/proposals/*.md": "05/15/2024",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 7.md": "11/08/2022",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 8.md": "09/26/2023",
+                "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 9.md": "06/26/2024",
                 "_vblang/spec/*.md": "07/21/2017"
             },
             "ms.subservice": {
@@ -662,6 +664,7 @@
                 "_csharplang/proposals/params-collections.md": "Params collections",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 7.md": "C# compiler breaking changes since C# 10",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 8.md": "C# compiler breaking changes since C# 11",
+                "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 9.md": "C# compiler breaking changes since C# 12",
                 "_vblang/spec/introduction.md": "Introduction",
                 "_vblang/spec/lexical-grammar.md": "Lexical grammar",
                 "_vblang/spec/preprocessing-directives.md": "Preprocessing directives",
@@ -777,6 +780,7 @@
                 "_csharplang/proposals/params-collections.md": "Allow the `params` modifier on collection types beyond arrays, including `IEnumerable` types.",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 7.md": "Learn about any breaking changes since the initial release of C# 10",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 8.md": "Learn about any breaking changes since the initial release of C# 11",
+                "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 9.md": "Learn about any breaking changes since the initial release of C# 12",
                 "_vblang/spec/introduction.md": "This chapter provides and introduction to the Visual Basic language.",
                 "_vblang/spec/lexical-grammar.md": "This chapter defines the lexical grammar for Visual Basic.",
                 "_vblang/spec/preprocessing-directives.md": "This chapter defines the preprocessing directives allowed in Visual Basic",

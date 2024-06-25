@@ -29,7 +29,8 @@ var catalog = builder.AddProject<Projects.CatalogService>("catalog");
 var basket = builder.AddProject<Projects.BasketService>("basket");
 var frontend = builder.AddProject<Projects.MyFrontend>("frontend")
     .WithReference(basket)
-    .WithReference(catalog);
+    .WithReference(catalog)
+    WithExternalHttpEndpoints();
 ```
 
 In this example:

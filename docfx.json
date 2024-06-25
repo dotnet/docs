@@ -840,6 +840,10 @@
                 "docs/framework/**/*.md": "UpdateFrequency5",
                 "docs/visual-basic/**/*.md": "UpdateFrequency5"
             },
+            "ms.collection": {
+                "docs/ai/**/**.md": "ce-skilling-ai-copilot",
+                "docs/ai/**/**.yml": "ce-skilling-ai-copilot"
+            },
             "no-loc": {
                 "**/**.md": [
                     "Orleans"

@@ -35,11 +35,16 @@ In a cloud-native environment, orchestrating various components within a distrib
 
      ```csharp
      var builder = DistributedApplication.CreateBuilder(args);
+     
      var cache = builder.AddRedis("cache");
+     
      var apiservice = builder.AddProject<Projects.AspireApp_ApiService>("apiservice");
+     
      builder.AddProject<Projects.AspireApp_Web>("webfrontend")
          .WithReference(cache)
-         .WithReference(apiservice);
+         .WithReference(apiservice)
+         .WithExternalHttpEndpoints();
+         
      builder.Build().Run();
      ```
 

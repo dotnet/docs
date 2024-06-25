@@ -55,7 +55,7 @@ To start, you could build your own API Gateway service. A quick search of GitHub
 
 For simple .NET cloud-native applications, you might consider the [Ocelot Gateway](https://github.com/ThreeMammals/Ocelot). Open source and created for .NET microservices, it's lightweight, fast, scalable. Like any API Gateway, its primary functionality is to forward incoming HTTP requests to downstream services. Additionally, it supports a wide variety of capabilities that are configurable in a .NET middleware pipeline.
 
-[YARP](https://github.com/microsoft/reverse-proxy) (Yet Another Reverse proxy) is another open source reverse proxy led by a group of Microsoft product teams. Downloadable as a NuGet package, YARP plugs into the ASP.NET framework as middleware and is highly customizable. You'll find YARP [well-documented](https://microsoft.github.io/reverse-proxy/articles/getting-started.html) with various usage examples.
+[YARP](https://github.com/microsoft/reverse-proxy) (Yet Another Reverse Proxy) is another open source reverse proxy led by a group of Microsoft product teams. Downloadable as a NuGet package, YARP plugs into the ASP.NET framework as middleware and is highly customizable. You'll find YARP [well-documented](https://microsoft.github.io/reverse-proxy/articles/getting-started.html) with various usage examples.
 
 For enterprise cloud-native applications, there are several managed Azure services that can help jump-start your efforts.
 

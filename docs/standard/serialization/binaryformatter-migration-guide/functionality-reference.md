@@ -60,7 +60,6 @@ And in this case `<Name>k__BackingField` is **the name of the member that `Binar
 
 [ISerializable](/dotnet/api/system.runtime.serialization.iserializable) interface comes with [GetObjectData(SerializationInfo info, StreamingContext context)](/dotnet/api/system.runtime.serialization.iserializable.getobjectdata) method that allows the users to control the names, by using one of the [SerializationInfo.AddValue](/dotnet/api/system.runtime.serialization.serializationinfo.addvalue) methods.
 
-
 ```cs
 // please note lack of any special attribute
 public void GetObjectData(SerializationInfo info, StreamingContext context)
@@ -70,7 +69,6 @@ public void GetObjectData(SerializationInfo info, StreamingContext context)
 ```
 
 If such customization has been applied, the information needs to be provided during deserialization as well. It's possible by using the **serialization constructor** where all values are read from `SerializationInfo` by using one of the `Get` methods it provides.
-
 
 ```cs
 private PropertySample(SerializationInfo info, StreamingContext context)

@@ -26,6 +26,7 @@ If you want to find out more details about our decision please read [BinaryForma
 Migrating from `BinaryFormatter` has to start with [choosing a different serializer](./choosing-a-serializer.md).
 
 The next questions that need to be answered are:
+
 - Was the data persisted anywhere? If so, is it possible to stop all the live services that consume the persisted data and migrate all of it at once?
 - Are there any public APIs that accept NRBF (.NET Remoting Binary Format) data? If so, can all the consumers provide the input in a different format?
 

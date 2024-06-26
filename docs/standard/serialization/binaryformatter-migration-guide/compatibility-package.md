@@ -28,5 +28,4 @@ All the .NET 9+ users who for some reason can not migrate away from `BinaryForma
 </ItemGroup>
 ```
 
-
 **It's unsafe and not recommended**.

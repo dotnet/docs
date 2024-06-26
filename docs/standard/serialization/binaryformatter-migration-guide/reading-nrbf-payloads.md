@@ -21,9 +21,10 @@ helpviewer_keywords:
 
 `NrbfDecoder` can read any payload that was serialized with `BinaryFormatter` and `FormatterTypeStyle.TypesAlways`. `FormatterTypeStyle.TypesAlways` is the default setting that forces BF to emit full type information and does not require any type loading when reading the payload. Which means that `FormatterTypeStyle.TypesWhenNeeded` is not supported.
 
-Only non-zero indexed arrays and types specific to remoting (which were never ported to .NET (Core)) are **not supported**. 
+Only non-zero indexed arrays and types specific to remoting (which were never ported to .NET (Core)) are **not supported**.
 
 `NrbfDecoder` is following these principles to read from **untrusted input**:
+
 - Treating every input as potentially hostile.
 - No type loading of any kind (to avoid remote code execution).
 - No recursion of any kind (to avoid unbound recursion, stack overflow and denial of service).
@@ -42,9 +43,10 @@ All `[Serializable]` types from [Quartz.NET](https://github.com/search?q=repo%3A
 
 ### Identifying BinaryFormatter payload
 
-`NrbfDecoder` provides two `StartsWithPayloadHeader` methods that allow to **check whether given stream or buffer starts with NRBF header**. 
+`NrbfDecoder` provides two `StartsWithPayloadHeader` methods that allow to **check whether given stream or buffer starts with NRBF header**.
 
 Using these methods is recommended for the period of migrating payloads persisted with `BinaryFormatter` to a [different serializer](./choosing-a-serializer.md):
+
 - Check if the payload read from storage is an [NRBF](/openspecs/windows_protocols/ms-nrbf/75b9fe09-be15-475f-85b8-ae7b7558cfe5) payload.
 - If so, read it with `NrbfDecoder`, serialize it back with a new serializer and overwrite the data in the storage.
 - If not, use the new serializer to deserialize the data.
@@ -68,8 +70,8 @@ static T Pseudocode<T>(Stream payload)
 }
 ```
 
-
 There is more than a dozen of different serialization [record types](/openspecs/windows_protocols/ms-nrbf/954a0657-b901-4813-9398-4ec732fe8b32), but this library provides a set of abstractions, so the users need to learn only a few of them:
+
 - `PrimitiveTypeRecord<T>` that describes all primitive types natively supported by the NRBF (`string`, `bool`, `byte`, `sbyte`, `char`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `float`, `double`, `decimal`, `TimeSpan` and `DateTime`) and exposes the value `Value` getter. `PrimitiveTypeRecord<T>` derives from non-generic `PrimitiveTypeRecord` which also exposes the raw value via `Value` property, but it's returned as `object` (which introduces boxing for value types).
 - `ClassRecord` that describes all `class` and `struct`  beside the forementioned  primitive types.
 - `SZArrayRecord<T>` that describes single-dimensional, zero-indexed array records, where `T` can be either a primitive type or a `ClassRecord`.
@@ -99,6 +101,7 @@ Beside `Decode`, the `NrbfDecoder` exposes a `DecodeClassRecord` method that ret
 The most important type that derives from `SerializationRecord` is `ClassRecord` which represents **all `class` and `struct` instances beside arrays and natively supported primitive types**. It allows to read all member names and values. It's recommended to read the [BinaryFormatter functionality reference](./functionality-reference.md) to understand what *member* is.
 
 The API it provides:
+
 - `MemberNames` property that gets the names of serialized members.
 - `HasMember` method that checks if member of given name was present in the payload. It was designed for handling versioning scenarios where given member could have been renamed.
 - A set of dedicated methods for retrieving primitive values of the provided member name: `GetString`, `GetBoolean`, `GetByte`, `GetSByte`, `GetChar`, `GetInt16`, `GetUInt16`, `GetInt32`, `GetUInt32`, `GetInt64`, `GetUInt64`, `GetSingle`, `GetDouble`, `GetDecimal`, `GetTimeSpan` and `GetDateTime`.
@@ -138,6 +141,7 @@ Sample output = new()
 #### ArrayRecord
 
 `ArrayRecord` defines the core behavior for NRBF array records and provides a base for derived classes. It provides two properties:
+
 - `Rank` which gets the rank of the array.
 - `Lengths` which get a buffer of integers that represent the number of elements in every dimension.
 
@@ -177,7 +181,6 @@ ComplexType3D[] output = records.Select(classRecord => new ComplexType3D()
 `SZArrayRecord<T>` defines the core behavior for NRBF single dimensional, zero-indexed array records and provides a base for derived classes. The `T` can be one of the natively supported primitive types or `ClassRecord`.
 
 It provides `Length` property and a `GetArray` overload that returns `T[]`.
-
 
 ```cs
 [Serializable]

@@ -54,22 +54,25 @@ It's not required to specify most popular collections or primitive types like `s
 ### JSON
 
 [System.Text.Json](../system-text-json/overview.md) is strict by default and avoids any guessing or interpretation on the caller's behalf, emphasizing deterministic behavior. The library is intentionally designed this way for performance and security. From the migration perspective, it's crucial to know the following facts:
+
 - By default, **fields aren't serialized**, but they can be [included on demand](../system-text-json/fields.md), which is a must-have for types that use fields that are not exposed by properties. The simplest solution that does not require modifying the types is to use the global setting to include fields.
+
 ```cs
 JsonSerializerOptions options = new()
 {
     IncludeFields = true
 };
 ```
+
 - By default, System.Text.Json **ignores private fields and properties**. You can enable use of a non-public accessor on a property by using the `[JsonInclude]` attribute. Including private fields requires some [non-trivial extra work](../system-text-json/custom-contracts.md#example-serialize-private-fields).
 - It **[can not deserialize readonly fields](/dotnet/api/system.text.json.jsonserializeroptions.ignorereadonlyfields?view#remarks)** or properties, but `[JsonConstructor]` attribute can be used to indicate that given constructor should be used to create instances of the type on deserialization. And obviously the constructor can set the readonly fields and properties.
 - It [supports serialization and deserialization of most built-in collections](../system-text-json/supported-collection-types.md). The exceptions:
-    - multi-dimensional arrays,
-    - `BitArray`,
-    - `LinkedList<T>`,
-    - `Dictionary<TKey, TValue>`, where `TKey` is not a primitive type,
-    - `BlockingCollection<T>` and `ConcurrentBag<T>`,
-    - most of the collections from [System.Collections.Specialized](../system-text-json/supported-collection-types.md#systemcollectionsspecialized-namespace) and [System.Collections.ObjectModel](../system-text-json/supported-collection-types.md#systemcollectionsobjectmodel-namespace) namespaces.
+  - multi-dimensional arrays,
+  - `BitArray`,
+  - `LinkedList<T>`,
+  - `Dictionary<TKey, TValue>`, where `TKey` is not a primitive type,
+  - `BlockingCollection<T>` and `ConcurrentBag<T>`,
+  - most of the collections from [System.Collections.Specialized](../system-text-json/supported-collection-types.md#systemcollectionsspecialized-namespace) and [System.Collections.ObjectModel](../system-text-json/supported-collection-types.md#systemcollectionsobjectmodel-namespace) namespaces.
 - Under [certain condtions](../system-text-json/supported-collection-types.md#custom-collections-with-deserialization-support), it supports serialization and deserialization of custom generic collections.
 - Other types [without built-in support](../system-text-json/migrate-from-newtonsoft.md#types-without-built-in-support) are: `DataSet`, `DataTable`, `DBNull`, `TimeZoneInfo`, `Type`, `ValueTuple`. However, you can write a custom converter to support these types.
 - It [supports polymorphic type hierarchy serialization and deserialization](../system-text-json/polymorphism.md) that have been explicitly opted in via the `[JsonDerivedType]` attribute or via custom resolver.

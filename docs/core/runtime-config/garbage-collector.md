@@ -711,6 +711,8 @@ Project file:
 
 To use a standalone garbage collector instead of the default GC implementation, you can specify either the *path* (in .NET 9 and later versions) or the *name* of a GC native library.
 
+#### Path
+
 - Specifies the full path of a GC native library that the runtime loads in place of the default GC implementation. To be secure, this location should be protected from potentially malicious tampering.
 
 | | Setting name | Values | Version introduced |
@@ -718,8 +720,21 @@ To use a standalone garbage collector instead of the default GC implementation, 
 | **runtimeconfig.json** | `System.GC.Path` | *string_name* | .NET 9 |
 | **Environment variable** | `DOTNET_GCPath` | *string_path* | .NET 9 |
 
-- Specifies the name of a GC native library that the runtime loads in place of the default GC implementation. This native library needs to reside in the same directory as the assembly that contains your app's `Main` method. If the native module is not found there, then it must reside in the same directory as the .NET runtime (*coreclr.dll* on Windows, *libcoreclr.so* on Linux, or *libcoreclr.dylib* on OSX).
-- This configuration setting is ignored if `DOTNET_GCPath` is specified.
+#### Name
+
+- Specifies the name of a GC native library that the runtime loads in place of the default GC implementation. The behavior changed in .NET 9 with the introduction of the GCPath config. In .NET 8 and prior -\
+\
+If only a name of the library is specified, the library has to reside in the same directory as the .NET runtime (*coreclr.dll* on Windows, *libcoreclr.so* on Linux, or *libcoreclr.dylib* on OSX).\
+\
+It can also be a relative path, e.g., on Windows if you specify "..\clrgc.dll", clrgc.dll will be loaded from the parent directory of the .NET runtime directory.\
+\
+In .NET 9 and later this specifies a file name only, no paths are allowed -\
+\
+The directory where the assembly that contains your app's `Main` method resides will be searched first for the name you specified.\
+\
+If not found, the .NET runtime directory will be searched for this name.
+
+- This configuration setting is ignored if the **Path** config is specified.
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |

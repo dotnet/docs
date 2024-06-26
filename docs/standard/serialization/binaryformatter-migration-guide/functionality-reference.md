@@ -58,7 +58,7 @@ internal class PropertySample
 
 And in this case `<Name>k__BackingField` is **the name of the member that `BinaryFormatter` uses in the serialized payload**. It's impossible to use `nameof` or any other C# operator to get this name.
 
-[ISerializable](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable) interface comes with [GetObjectData(SerializationInfo info, StreamingContext context)](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable.getobjectdata) method that allows the users to control the names, by using one of the [SerializationInfo.AddValue](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo.addvalue) methods.
+[ISerializable](/dotnet/api/system.runtime.serialization.iserializable) interface comes with [GetObjectData(SerializationInfo info, StreamingContext context)](/dotnet/api/system.runtime.serialization.iserializable.getobjectdata) method that allows the users to control the names, by using one of the [SerializationInfo.AddValue](/dotnet/api/system.runtime.serialization.serializationinfo.addvalue) methods.
 
 
 ```cs
@@ -83,8 +83,8 @@ private PropertySample(SerializationInfo info, StreamingContext context)
 
 ### Serialization Binder
 
-On top of that, it's recommended to use [SerializationBinder](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationbinder) to control class loading and mandate what class to load and therefore minimize security vulnerabilities (so only allowed types get loaded, even if the attacker modifies the payload to deserialize and load something else).
+On top of that, it's recommended to use [SerializationBinder](/dotnet/api/system.runtime.serialization.serializationbinder) to control class loading and mandate what class to load and therefore minimize security vulnerabilities (so only allowed types get loaded, even if the attacker modifies the payload to deserialize and load something else).
 
-Using this type requires inheriting from it and overriding the [Type BindToType(string assemblyName, string typeName)](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationbinder.bindtotype#system-runtime-serialization-serializationbinder-bindtotype(system-string-system-string)) method.
+Using this type requires inheriting from it and overriding the [Type BindToType(string assemblyName, string typeName)](/dotnet/api/system.runtime.serialization.serializationbinder.bindtotype#system-runtime-serialization-serializationbinder-bindtotype(system-string-system-string)) method.
 
 If given codebase uses custom type that derives from `SerializationBinder` it's likely that the list of serializable types is a **closed set**. If not, finding the list of all types that can get serialized and deserialized is going to require studying all the usages of `BinaryFormatter` in source code. **Knowing that list is crucial to determining how to move further with the migration**.

@@ -30,9 +30,3 @@ All the .NET 9+ users who for some reason can not migrate away from `BinaryForma
 
 
 **It's unsafe and not recommended**.
-
-### Improving security through allow lists
-
-To improve the security, the users who decided to keep using `BinaryFormatter` should implement a custom type that derives from `SerializationBinder` and allows only for specific, know types.
-
-A sample implementation can be found in the dotnet/runtime [test suite](https://github.com/dotnet/runtime/blob/5c53e8ec9ca1a06a31c45936d3058fd6b1dc5961/src/libraries/System.Reflection.Metadata/tests/Metadata/TypeNameParserSamples.cs#L17-L123), we are also discussing adding such binder to the package. Please [let us know](https://github.com/dotnet/runtime/issues/104037) if you like this idea.

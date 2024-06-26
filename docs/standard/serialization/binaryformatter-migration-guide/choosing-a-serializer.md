@@ -35,7 +35,7 @@ Choosing a serializer format boils down to two questions:
 
 ### XML
 
-The .NET base class libraries provide two XML serializers [XmlSerializer](https://learn.microsoft.com/en-us/dotnet/standard/serialization/introducing-xml-serialization) and [DataContractSerializer](https://learn.microsoft.com/dotnet/fundamentals/runtime-libraries/system-runtime-serialization-datacontractserializer). There are some subtle differences between these two, but for the purpose of the migration we are going to focus only on `DataContractSerializer`. Why? Because it **fully supports the serialization programming model that was used by the `BinaryFormatter`**. So all the types that are already marked as `[Serializable]` and/or implement `ISerializable` can be serialized with `DataContractSerializer`. Where is the catch? Known types must be specified up-front (that is why it's secure). So you need to know them and be able to get the `Type` **even for private types**.
+The .NET base class libraries provide two XML serializers [XmlSerializer](../introducing-xml-serialization) and [DataContractSerializer](../../../fundamentals/runtime-libraries/system-runtime-serialization-datacontractserializer.md). There are some subtle differences between these two, but for the purpose of the migration we are going to focus only on `DataContractSerializer`. Why? Because it **fully supports the serialization programming model that was used by the `BinaryFormatter`**. So all the types that are already marked as `[Serializable]` and/or implement `ISerializable` can be serialized with `DataContractSerializer`. Where is the catch? Known types must be specified up-front (that is why it's secure). So you need to know them and be able to get the `Type` **even for private types**.
 
 ```cs
 DataContractSerializer serializer = new(
@@ -47,35 +47,35 @@ DataContractSerializer serializer = new(
     });
 ```
 
-It's not required to specify most popular collections or primitive types like `string` or `DateTime` (the serializer has it's own default allowlist), but there are exceptions like `DateTimeOffset`. You can read about the supported types in the [dedicated doc](https://learn.microsoft.com/dotnet/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer).
+It's not required to specify most popular collections or primitive types like `string` or `DateTime` (the serializer has it's own default allowlist), but there are exceptions like `DateTimeOffset`. You can read about the supported types in the [dedicated doc](../../../framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md).
 
-[Partial trust](https://learn.microsoft.com/dotnet/framework/wcf/feature-details/partial-trust) is a Full .NET Framework feature that was not ported to .NET (Core). If your code runs on a Full .NET Framework and uses this feature, please read about the [limitations](https://learn.microsoft.com/dotnet/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer#limitations-of-using-certain-types-in-partial-trust-mode) that may apply to such scenario.
+[Partial trust](../../../framework/wcf/feature-details/partial-trust) is a Full .NET Framework feature that was not ported to .NET (Core). If your code runs on a Full .NET Framework and uses this feature, please read about the [limitations](../../../framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md#limitations-of-using-certain-types-in-partial-trust-mode) that may apply to such scenario.
 
 ### JSON
 
-[System.Text.Json](https://learn.microsoft.com/dotnet/standard/serialization/system-text-json/overview) is strict by default and avoids any guessing or interpretation on the caller's behalf, emphasizing deterministic behavior. The library is intentionally designed this way for performance and security. From the migration perspective, it's crucial to know the following facts:
-- By default, **fields aren't serialized**, but they can be [included on demand](https://learn.microsoft.com/dotnet/standard/serialization/system-text-json/fields), which is a must-have for types that use fields that are not exposed by properties. The simplest solution that does not require modifying the types is to use the global setting to include fields.
+[System.Text.Json](../system-text-json/overview) is strict by default and avoids any guessing or interpretation on the caller's behalf, emphasizing deterministic behavior. The library is intentionally designed this way for performance and security. From the migration perspective, it's crucial to know the following facts:
+- By default, **fields aren't serialized**, but they can be [included on demand](../system-text-json/fields), which is a must-have for types that use fields that are not exposed by properties. The simplest solution that does not require modifying the types is to use the global setting to include fields.
 ```cs
 JsonSerializerOptions options = new()
 {
     IncludeFields = true
 };
 ```
-- By default, System.Text.Json **ignores private fields and properties**. You can enable use of a non-public accessor on a property by using the `[JsonInclude]` attribute. Including private fields requires some [non-trivial extra work](https://learn.microsoft.com/dotnet/standard/serialization/system-text-json/custom-contracts#example-serialize-private-fields).
-- It **[can not deserialize readonly fields](https://learn.microsoft.com/dotnet/api/system.text.json.jsonserializeroptions.ignorereadonlyfields?view#remarks)** or properties, but `[JsonConstructor]` attribute can be used to indicate that given constructor should be used to create instances of the type on deserialization. And obviously the constructor can set the readonly fields and properties.
-- It [supports serialization and deserialization of most built-in collections](https://learn.microsoft.com/dotnet/standard/serialization/system-text-json/supported-collection-types). The exceptions:
+- By default, System.Text.Json **ignores private fields and properties**. You can enable use of a non-public accessor on a property by using the `[JsonInclude]` attribute. Including private fields requires some [non-trivial extra work](../system-text-json/custom-contracts#example-serialize-private-fields).
+- It **[can not deserialize readonly fields](/dotnet/api/system.text.json.jsonserializeroptions.ignorereadonlyfields?view#remarks)** or properties, but `[JsonConstructor]` attribute can be used to indicate that given constructor should be used to create instances of the type on deserialization. And obviously the constructor can set the readonly fields and properties.
+- It [supports serialization and deserialization of most built-in collections](../system-text-json/supported-collection-types). The exceptions:
     - multi-dimensional arrays,
     - `BitArray`,
     - `LinkedList<T>`,
     - `Dictionary<TKey, TValue>`, where `TKey` is not a primitive type,
     - `BlockingCollection<T>` and `ConcurrentBag<T>`,
-    - most of the collections from [System.Collections.Specialized](https://learn.microsoft.com/dotnet/standard/serialization/system-text-json/supported-collection-types#systemcollectionsspecialized-namespace) and [System.Collections.ObjectModel](https://learn.microsoft.com/dotnet/standard/serialization/system-text-json/supported-collection-types#systemcollectionsobjectmodel-namespace) namespaces.
-- Under [certain condtions](https://learn.microsoft.com/en-us/dotnet/standard/serialization/system-text-json/supported-collection-types#custom-collections-with-deserialization-support), it supports serialization and deserialization of custom generic collections.
-- Other types [without built-in support](https://learn.microsoft.com/dotnet/standard/serialization/system-text-json/migrate-from-newtonsoft?pivots=dotnet-9-0#types-without-built-in-support) are: `DataSet`, `DataTable`, `DBNull`, `TimeZoneInfo`, `Type`, `ValueTuple`. However, you can write a custom converter to support these types.
-- It [supports polymorphic type hierarchy serialization and deserialization](https://learn.microsoft.com/en-us/dotnet/standard/serialization/system-text-json/polymorphism) that have been explicitly opted in via the `[JsonDerivedType]` attribute or via custom resolver.
+    - most of the collections from [System.Collections.Specialized](../system-text-json/supported-collection-types#systemcollectionsspecialized-namespace) and [System.Collections.ObjectModel](../system-text-json/supported-collection-types#systemcollectionsobjectmodel-namespace) namespaces.
+- Under [certain condtions](../system-text-json/supported-collection-types#custom-collections-with-deserialization-support), it supports serialization and deserialization of custom generic collections.
+- Other types [without built-in support](../system-text-json/migrate-from-newtonsoft?pivots=dotnet-9-0#types-without-built-in-support) are: `DataSet`, `DataTable`, `DBNull`, `TimeZoneInfo`, `Type`, `ValueTuple`. However, you can write a custom converter to support these types.
+- It [supports polymorphic type hierarchy serialization and deserialization](../system-text-json/polymorphism) that have been explicitly opted in via the `[JsonDerivedType]` attribute or via custom resolver.
 - The `[JsonIgnore]` attribute on a property causes the property to be omitted from the JSON during serialization.
 - To preserve references and handle circular references in System.Text.Json, set `JsonSerializerOptions.ReferenceHandler` to `Preserve`.
-- To override the default behavior you can [write custom converters](https://learn.microsoft.com/dotnet/standard/serialization/system-text-json/converters-how-to).
+- To override the default behavior you can [write custom converters](../system-text-json/converters-how-to).
 
 ### Binary
 

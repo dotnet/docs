@@ -45,7 +45,7 @@ All `[Serializable]` types from [Quartz.NET](https://github.com/search?q=repo%3A
 `NrbfDecoder` provides two `StartsWithPayloadHeader` methods that allow to **check whether given stream or buffer starts with NRBF header**. 
 
 Using these methods is recommended for the period of migrating payloads persisted with `BinaryFormatter` to a [different serializer](./choosing-a-serializer.md):
-- Check if the payload read from storage is an [NRBF](https://learn.microsoft.com/openspecs/windows_protocols/ms-nrbf/75b9fe09-be15-475f-85b8-ae7b7558cfe5) payload.
+- Check if the payload read from storage is an [NRBF](/openspecs/windows_protocols/ms-nrbf/75b9fe09-be15-475f-85b8-ae7b7558cfe5) payload.
 - If so, read it with `NrbfDecoder`, serialize it back with a new serializer and overwrite the data in the storage.
 - If not, use the new serializer to deserialize the data.
 
@@ -69,7 +69,7 @@ static T Pseudocode<T>(Stream payload)
 ```
 
 
-There is more than a dozen of different serialization [record types](https://learn.microsoft.com/openspecs/windows_protocols/ms-nrbf/954a0657-b901-4813-9398-4ec732fe8b32), but this library provides a set of abstractions, so the users need to learn only a few of them:
+There is more than a dozen of different serialization [record types](/openspecs/windows_protocols/ms-nrbf/954a0657-b901-4813-9398-4ec732fe8b32), but this library provides a set of abstractions, so the users need to learn only a few of them:
 - `PrimitiveTypeRecord<T>` that describes all primitive types natively supported by the NRBF (`string`, `bool`, `byte`, `sbyte`, `char`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `float`, `double`, `decimal`, `TimeSpan` and `DateTime`) and exposes the value `Value` getter. `PrimitiveTypeRecord<T>` derives from non-generic `PrimitiveTypeRecord` which also exposes the raw value via `Value` property, but it's returned as `object` (which introduces boxing for value types).
 - `ClassRecord` that describes all `class` and `struct`  beside the forementioned  primitive types.
 - `SZArrayRecord<T>` that describes single-dimensional, zero-indexed array records, where `T` can be either a primitive type or a `ClassRecord`.

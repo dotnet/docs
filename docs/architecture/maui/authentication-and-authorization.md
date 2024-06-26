@@ -147,40 +147,33 @@ public static IEnumerable<Client> GetClients(Dictionary<string,string> clien
     return new List<Client>
     {
         // Omitted for brevity
-        new Client
-        {
-            ClientId = "maui",
-            ClientName = "eShop MAUI OpenId Client",
-            AllowedGrantTypes = GrantTypes.Code,
-            //Used to retrieve the access token on the back channel.
-            ClientSecrets =
-            {
-                new Secret("secret".Sha256())
-            },
-            RedirectUris = { configuration["MauiCallback"] },
-            RequireConsent = false,
-            RequirePkce = true,
-            PostLogoutRedirectUris =
-            {
-                $"{configuration["MauiCallback"]}/Account/Redirecting",
-            },
-            AllowedScopes = new List<string>
-            {
-                IdentityServerConstants.StandardScopes.OpenId,
-                IdentityServerConstants.StandardScopes.Profile,
-                IdentityServerConstants.StandardScopes.OfflineAccess,
-                "orders",
-                "basket",
-                "mobileshoppingagg",
-                "webhooks"
-            },
-            //Allow requesting refresh tokens for long lived API access
-            AllowOfflineAccess = true,
-            AllowAccessTokensViaBrowser = true,
-            AlwaysIncludeUserClaimsInIdToken = true,
-            AccessTokenLifetime = 60*60*2, // 2 hours
-            IdentityTokenLifetime= 60*60*2 // 2 hours
-        },
+        new Client
+        {
+            ClientId = "maui",
+            ClientName = "eShop .NET MAUI OpenId Client",
+            AllowedGrantTypes = GrantTypes.Hybrid,
+            ClientSecrets =
+            {
+                new Secret("secret".Sha256())
+            },
+            RedirectUris = { clientsUrl["maui"] },
+            RequireConsent = false,
+            RequirePkce = true,
+            PostLogoutRedirectUris = { $"{clientsUrl["maui"]}/Account/Redirecting" },
+            AllowedCorsOrigins = { "http://eshopmaui" },
+            AllowedScopes = new List<string>
+            {
+                IdentityServerConstants.StandardScopes.OpenId,
+                IdentityServerConstants.StandardScopes.Profile,
+                IdentityServerConstants.StandardScopes.OfflineAccess,
+                "orders",
+                "basket"
+            },
+            AllowOfflineAccess = true,
+            AllowAccessTokensViaBrowser = true,
+            AccessTokenLifetime = 60 * 60 * 2, // 2 hours
+            IdentityTokenLifetime = 60 * 60 * 2 // 2 hours
+        }
     };
 }
 ```

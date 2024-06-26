@@ -80,8 +80,6 @@ The architecture of the back-end services in the reference application is decomp
 
 Each microservice has its own database, allowing it to be fully decoupled from the other microservices. Where necessary, consistency between databases from different microservices is achieved using application-level events. For more information, see [Communication between microservices](#communication-between-microservices).
 
-For more information about the reference application, see [.NET Microservices: Architecture for Containerized .NET Applications](https://aka.ms/microservicesebook).
-
 ## Communication between client and microservices
 
 The eShop multi-platform app communicates with the containerized back-end microservices using _direct client-to-microservice_ communication, as shown below.
@@ -93,7 +91,7 @@ With direct client-to-microservice communication, the multi-platform app makes r
 > [!TIP]
 > Consider using API gateway communication.
 
-Direct client-to-microservice communication can have drawbacks when building a large and complex microservice-based application, but it's more than adequate for a small application. Consider using API gateway communication when designing a large microservice-based application with tens of microservices. For more information, see [.NET Microservices: Architecture for Containerized .NET Applications](https://aka.ms/microservicesebook).
+Direct client-to-microservice communication can have drawbacks when building a large and complex microservice-based application, but it's more than adequate for a small application. Consider using API gateway communication when designing a large microservice-based application with tens of microservices.
 
 ## Communication between microservices
 
@@ -116,11 +114,6 @@ The eShop event bus, implemented using RabbitMQ, provides one-to-many asynchrono
 ![One-to-many communication](./media/one-to-many-communication.png)
 
 This one-to-many communication approach uses events to implement business transactions that span multiple services, ensuring eventual consistency between the services. An eventual-consistent transaction consists of a series of distributed steps. Therefore, when the user-profile microservice receives the UpdateUser command, it updates the user's details in its database and publishes the UserUpdated event to the event bus. Both the basket microservice and the ordering microservice have subscribed to receive this event, and in response, update their buyer information in their respective databases.
-
-> [!NOTE]
-> The eShop event bus, implemented using RabbitMQ, is intended to be used only as a proof of concept. For production systems, alternative event bus implementations should be considered.
-
-For more information about the event bus implementation, see [.NET Microservices: Architecture for Containerized .NET Applications](https://aka.ms/microservicesebook).
 
 ## Summary
 

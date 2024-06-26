@@ -16,7 +16,7 @@ If you're using GitHub, the installation is straightforward. You can rely on Git
 
 Native installers are available for macOS, Linux, and Windows. The installers require admin (sudo) access to the build server. The advantage of using a native installer is that it installs all of the native dependencies required for the tooling to run. Native installers also provide a system-wide installation of the SDK.
 
-macOS users should use the PKG installers. On Linux, there's a choice of using a feed-based package manager, such as apt-get for Ubuntu or yum for CentOS, or using the packages themselves, DEB or RPM. On Windows, use the MSI installer.
+macOS users should use the PKG installers. On Linux, there's a choice of using a feed-based package manager, such as apt-get for Ubuntu or yum for CentOS Stream, or using the packages themselves, DEB or RPM. On Windows, use the MSI installer.
 
 The latest stable binaries are found at [.NET downloads](https://dotnet.microsoft.com/download). If you wish to use the latest (and potentially unstable) pre-release tooling, use the links provided at the [dotnet/installer GitHub repository](https://github.com/dotnet/installer#installers-and-binaries). For Linux distributions, `tar.gz` archives (also known as `tarballs`) are available; use the installation scripts within the archives to install .NET.
 

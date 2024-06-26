@@ -172,7 +172,7 @@ public static IEnumerable<Client> GetClients(Dictionary<string,string> clien
             AllowOfflineAccess = true,
             AllowAccessTokensViaBrowser = true,
             AccessTokenLifetime = 60 * 60 * 2, // 2 hours
-            IdentityTokenLifetime= 60 * 60 * 2 // 2 hours
+            IdentityTokenLifetime = 60 * 60 * 2 // 2 hours
         }
     };
 }

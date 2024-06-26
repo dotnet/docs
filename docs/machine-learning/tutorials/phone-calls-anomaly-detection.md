@@ -45,7 +45,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
     Repeat these steps for **Microsoft.ML.TimeSeries** version **1.5.2**.
 
-5. Add the following `using` statements at the top of your *Program.cs* file:
+5. Add the following `using` directives at the top of your *Program.cs* file:
 
     [!code-csharp[AddUsings](./snippets/phone-calls-anomaly-detection/csharp/Program.cs#AddUsings "Add necessary usings")]
 
@@ -83,7 +83,7 @@ Add a new class to your project:
 
    The *PhoneCallsData.cs* file opens in the code editor.
 
-3. Add the following `using` statement to the top of *PhoneCallsData.cs*:
+3. Add the following `using` directive to the top of *PhoneCallsData.cs*:
 
    ```csharp
    using Microsoft.ML.Data;
@@ -97,7 +97,7 @@ Add a new class to your project:
 
     `PhoneCallsPrediction` specifies the prediction data class. For SR-CNN detector, the prediction depends on the [detect mode](xref:Microsoft.ML.TimeSeries.SrCnnDetectMode) specified. In this sample, we select the `AnomalyAndMargin` mode. The output contains seven columns. In most cases, `IsAnomaly`, `ExpectedValue`, `UpperBoundary`, and `LowerBoundary` are informative enough. They tell you if a point is an anomaly, the expected value of the point and the lower / upper boundary region of the point.
 
-5. Add the following code to the line right below the using statements to specify the path to your data file:
+5. Add the following code to the line right below the `using` directives to specify the path to your data file:
 
     [!code-csharp[Declare global variables](./snippets/phone-calls-anomaly-detection/csharp/Program.cs#DeclareGlobalVariables "Declare global variables")]
 

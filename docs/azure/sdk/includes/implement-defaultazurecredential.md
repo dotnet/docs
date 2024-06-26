@@ -23,7 +23,7 @@ Right click on your project node in Visual Studio and select **Manage NuGet Pack
 
 Azure services are generally accessed using corresponding client classes from the SDK. These classes and your own custom services should be registered in the `Program.cs` file so they can be accessed via dependency injection throughout your app. Inside of `Program.cs`, follow the steps below to correctly setup your service and `DefaultAzureCredential`.
 
-1. Include the `Azure.Identity` and `Microsoft.Extensions.Azure` namespaces with a using statement.
+1. Include the `Azure.Identity` and `Microsoft.Extensions.Azure` namespaces with a `using` directive.
 1. Register the Azure service using relevant helper methods.
 1. Pass an instance of the `DefaultAzureCredential` object to the `UseCredential` method.
 
@@ -47,12 +47,12 @@ Alternatively, you can also utilize `DefaultAzureCredential` in your services mo
 using Azure.Identity;
 
 // Inside of Program.cs
-builder.Services.AddSingleton<BlobServiceClient>(x => 
+builder.Services.AddSingleton<BlobServiceClient>(x =>
     new BlobServiceClient(
         new Uri("https://<account-name>.blob.core.windows.net"),
         new DefaultAzureCredential()));
 ```
 
-When the above code is run on your local workstation during local development, it will look in the environment variables for an application service principal or at Visual Studio, VS Code, the Azure CLI, or Azure PowerShell for a set of developer credentials, either of which can be used to authenticate the app to Azure resources during local development.  
+When the above code is run on your local workstation during local development, it will look in the environment variables for an application service principal or at Visual Studio, VS Code, the Azure CLI, or Azure PowerShell for a set of developer credentials, either of which can be used to authenticate the app to Azure resources during local development.
 
 When deployed to Azure this same code can also authenticate your app to other Azure resources. `DefaultAzureCredential` can  retrieve environment settings and managed identity configurations to authenticate to other services automatically.

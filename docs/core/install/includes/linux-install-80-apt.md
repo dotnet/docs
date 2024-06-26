@@ -15,6 +15,8 @@ sudo apt-get update && \
   sudo apt-get install -y dotnet-sdk-8.0
 ```
 
+To learn how to use the .NET CLI, see [.NET CLI overview](../../tools/index.md).
+
 ### Install the runtime
 
 The ASP.NET Core Runtime allows you to run apps that were made with .NET that didn't provide the runtime. The following commands install the ASP.NET Core Runtime, which is the most compatible runtime for .NET. In your terminal, run the following commands:
@@ -29,3 +31,5 @@ As an alternative to the ASP.NET Core Runtime, you can install the .NET Runtime,
 ```bash
 sudo apt-get install -y dotnet-runtime-8.0
 ```
+
+To learn how to use the .NET CLI, see [.NET CLI overview](../../tools/index.md).

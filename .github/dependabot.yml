@@ -1340,17 +1340,6 @@ updates:
         patterns:
           - "*" # Prefer a single PR per project update.
   - package-ecosystem: "nuget"
-    directory: "/docs/core/extensions/snippets/http/namedandtyped" #namedandtyped.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-    groups:
-      # Group .NET updates together for projects.
-      dotnet:
-        patterns:
-          - "*" # Prefer a single PR per project update.
-  - package-ecosystem: "nuget"
     directory: "/docs/core/extensions/snippets/http/typed" #typed.csproj
     schedule:
       interval: "weekly"
@@ -2045,6 +2034,17 @@ updates:
           - "*" # Prefer a single PR per project update.
   - package-ecosystem: "nuget"
     directory: "/docs/fundamentals/runtime-libraries/snippets/System.Resources/ResourceReader/Overview/csharp" #Project.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+    groups:
+      # Group .NET updates together for projects.
+      dotnet:
+        patterns:
+          - "*" # Prefer a single PR per project update.
+  - package-ecosystem: "nuget"
+    directory: "/docs/machine-learning/how-to-guides/snippets/load-data-ml-net" #Project.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"

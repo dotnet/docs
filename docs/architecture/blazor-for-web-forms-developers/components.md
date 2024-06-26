@@ -269,7 +269,7 @@ public partial class Counter : System.Web.UI.UserControl
 }
 ```
 
-In Blazor, you can register handlers for DOM UI events directly using directive attributes of the form `@on{event}`. The `{event}` placeholder represents the name of the event. For example, you can listen for button clicks like this:
+In Blazor, you can register handlers for DOM UI events directly `using` directive attributes of the form `@on{event}`. The `{event}` placeholder represents the name of the event. For example, you can listen for button clicks like this:
 
 ```razor
 <button @onclick="OnClick">Click me!</button>

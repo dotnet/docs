@@ -2,7 +2,7 @@
 title: What's new in .NET 9
 description: Learn about the new .NET features introduced in .NET 9.
 titleSuffix: ""
-ms.date: 05/21/2024
+ms.date: 06/11/2024
 ms.topic: whats-new
 ---
 # What's new in .NET 9

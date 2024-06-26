@@ -4,7 +4,7 @@ title: "async keyword"
 ms.date: 05/22/2017
 f1_keywords:
   - "async_CSharpKeyword"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "async keyword [C#]"
   - "async method [C#]"
   - "async [C#]"
@@ -56,7 +56,7 @@ To run the code as a WPF app:
 To run the code as a Windows Store app:
 
 - Paste this code into the `MainPage` class in MainPage.xaml.cs.
-- Add using directives for System.Net.Http and System.Threading.Tasks.
+- Add `using` directives for System.Net.Http and System.Threading.Tasks.
 
 [!code-csharp[wpf-async](../../../../samples/snippets/csharp/language-reference/keywords/async/wpf/MainWindow.xaml.cs#1)]
 

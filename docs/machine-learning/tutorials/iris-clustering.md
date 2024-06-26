@@ -97,7 +97,7 @@ Go back to the *Program.cs* file and add two fields to hold the paths to the dat
 - `_dataPath` contains the path to the file with the data set used to train the model.
 - `_modelPath` contains the path to the file where the trained model is stored.
 
-Add the following code under the using statements to specify those paths:
+Add the following code under the `using` directives to specify those paths:
 
 [!code-csharp[Initialize paths](./snippets/iris-clustering/csharp/Program.cs#Paths)]
 

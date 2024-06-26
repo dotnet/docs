@@ -300,7 +300,7 @@ If you don't have your own data yet, try out one of these datasets:
 | Scenario | Example | Data | Label | Features |
 |----------|---------|------|-------|----------|
 |Classification|Predict sales anomalies|[product sales data](https://github.com/dotnet/machinelearning-samples/blob/main/samples/csharp/getting-started/AnomalyDetection_Sales/SpikeDetection/Data/product-sales.csv)|Product Sales|Month|
-||Predict sentiment of website comments|[website comment data](https://raw.githubusercontent.com/dotnet/machinelearning/main/test/data/wikipedia-detox-250-line-data.tsv)|Label (0 when negative sentiment, 1 when positive)|Comment, Year|
+||Predict sentiment of website comments|[website comment data](https://raw.githubusercontent.com/dotnet/machinelearning/main/test/data/wikipedia-detox-250-line-data.tsv)|Label (1 when negative sentiment, 0 when positive)|Comment, Year|
 ||Predict fraudulent credit card transactions|[credit card data](https://github.com/dotnet/machinelearning-samples/blob/main/samples/csharp/getting-started/BinaryClassification_CreditCardFraudDetection/CCFraudDetection.Trainer/assets/input/creditcardfraud-dataset.zip)|Class (1 when fraudulent, 0 otherwise)|Amount, V1-V28 (anonymized features)|
 ||Predict the type of issue in a GitHub repository|[GitHub issue data](https://github.com/dotnet/machinelearning-samples/blob/main/samples/csharp/end-to-end-apps/MulticlassClassification-GitHubLabeler/GitHubLabeler/Data/corefx-issues-train.tsv)|Area|Title, Description|
 |Value prediction|Predict taxi fare price|[taxi fare data](https://github.com/dotnet/machinelearning-samples/blob/main/datasets/taxi-fare-train.csv)|Fare|Trip time, distance|

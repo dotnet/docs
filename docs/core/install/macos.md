@@ -171,16 +171,14 @@ The following sections describe things you should consider when installing .NET 
 
 The following table describes which versions of .NET are supported on an Arm-based Mac:
 
-| .NET Version | Architecture | SDK | Runtime | [Path conflict](#path-conflicts) |
-|--------------|--------------|-----|---------|----------------------------------|
-| 8            | Arm64        | Yes | Yes     | No                               |
-| 8            | x64          | Yes | Yes     | No                               |
-| 7            | Arm64        | Yes | Yes     | No                               |
-| 7            | x64          | Yes | Yes     | No                               |
-| 6            | Arm64        | Yes | Yes     | No                               |
-| 6            | x64          | Yes | Yes     | No                               |
+| .NET Version | SDK | Runtime | [Path conflict](#path-conflicts) |
+|--------------|-----|---------|----------------------------------|
+| 8            | Yes | Yes     | No                               |
+| 8            | Yes | Yes     | No                               |
+| 6            | Yes | Yes     | No                               |
+| 6            | Yes | Yes     | No                               |
 
-Starting with .NET 6, the x64 and Arm64 versions of the .NET SDK exist independently from each other. If a new version is released, each install needs to be upgraded.
+The x64 and Arm64 versions of the .NET SDK exist independently from each other. If a new version is released, each install needs to be upgraded.
 
 ### Path differences
 
@@ -188,7 +186,7 @@ On an Arm-based Mac, all Arm64 versions of .NET are installed to the normal _/us
 
 ### Path conflicts
 
-Starting with .NET 6, the **x64** .NET SDK installs to its own directory, as described in the previous section. This allows the Arm64 and x64 versions of the .NET SDK to exist on the same machine. However, any **x64** SDK prior to .NET 6 isn't supported and installs to the same location as the Arm64 version, the _/usr/local/share/dotnet/_ folder. If you want to install an unsupported x64 SDK, you need to first uninstall the Arm64 version. The opposite is also true, you need to uninstall the unsupported x64 SDK to install the Arm64 version.
+The **x64** .NET SDK installs to its own directory, as described in the previous section. This allows the Arm64 and x64 versions of the .NET SDK to exist on the same machine. However, any **x64** SDK prior to .NET 6 isn't supported and installs to the same location as the Arm64 version, the _/usr/local/share/dotnet/_ folder. If you want to install an unsupported x64 SDK, you need to first uninstall the Arm64 version. The opposite is also true, you need to uninstall the unsupported x64 SDK to install the Arm64 version.
 
 ### Path variables
 
@@ -231,6 +229,8 @@ The following command installs the ASP.NET Core runtime for maximum compatibilit
 ```bash
 ./dotnet-install.sh --channel 8.0 --runtime aspnetcore
 ```
+
+To learn how to use the .NET CLI, see [.NET CLI overview](../tools/index.md).
 
 ## Docker
 

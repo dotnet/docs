@@ -144,9 +144,6 @@ sudo rm -rf /usr/local/share/dotnet/sdk/6.0.406
 
 The [.NET Uninstall Tool](../additional-tools/uninstall-tool.md) (`dotnet-core-uninstall`) lets you remove .NET SDKs and runtimes from a system. A collection of options is available to specify which versions should be uninstalled.
 
-> [!NOTE]
-> Currently, the .NET Uninstall Tool doesn't support .NET 8+. For more information about the release schedule of the tool, see [GitHub - dotnet-uninstall-tool Roadmap](https://github.com/dotnet/cli-lab/issues/279).
-
 ::: zone pivot="os-windows"
 
 ## Visual Studio dependency on .NET SDK versions

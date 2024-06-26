@@ -141,11 +141,11 @@ The training and testing images are located in the assets folders that you'll do
 
 ### Create classes and define paths
 
-1. Add the following additional `using` statements to the top of the *Program.cs* file:
+1. Add the following additional `using` directives to the top of the *Program.cs* file:
 
     [!code-csharp[AddUsings](./snippets/image-classification/csharp/Program.cs#AddUsings)]
 
-1. Add the following code to the line right below the using statements to specify the asset paths:
+1. Add the following code to the line right below the `using` directives to specify the asset paths:
 
     [!code-csharp[DeclareGlobalVariables](./snippets/image-classification/csharp/Program.cs#DeclareGlobalVariables)]
 

@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the repository
-        uses: actions/checkout@v4.1.5
+        uses: actions/checkout@v4.1.7
 
       - name: Validate
         uses: dotnet/docs-actions/actions/docs-verifier@main

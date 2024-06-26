@@ -217,11 +217,10 @@ public async override Task OnActivateAsync(CancellationToken cancellationToken)
     var stream = streamProvider.GetStream<string>(streamId);
 
     var subscriptionHandles = await stream.GetAllSubscriptionHandles();
-    if (!subscriptionHandles.IsNullOrEmpty())
+    foreach (var handle in subscriptionHandles)
     {
-        subscriptionHandles.ForEach(
-            async x => await x.ResumeAsync(OnNextAsync));
-    }
+       await handle.ResumeAsync(this);
+    } 
 }
 ```
 

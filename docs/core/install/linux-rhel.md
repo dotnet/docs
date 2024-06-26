@@ -28,11 +28,12 @@ The following table is a list of currently supported .NET releases on both RHEL 
 
 | Distribution           | .NET      |
 | ---------------------- | --------- |
-| RHEL 9 (9.1)           | 8.0, 6.0  |
-| RHEL 8 (8.7)           | 8.0, 6.0  |
-| RHEL 7                 | 6.0       |
-| CentOS Stream 9        | 8.0, 6.0  |
-| CentOS Stream 8        | 8.0, 6.0  |
+| [RHEL 9 (9.1)](#rhel-9)           | 8.0, 6.0  |
+| [RHEL 8 (8.7)](#rhel-8)           | 8.0, 6.0  |
+| [RHEL 7](#rhel-7--net-8)                 | 6.0       |
+| [CentOS Stream 9](#centos-stream-9)        | 8.0, 6.0  |
+| [CentOS Stream 8](#centos-stream-8)        | 8.0, 6.0  |
+| [CentOS Linux is no longer supported](#where-is-centos-linux) | |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
@@ -108,13 +109,13 @@ source scl_source enable rh-dotnet60
 
 As an alternative to the ASP.NET Core Runtime, you can install the .NET Runtime that doesn't include ASP.NET Core support: replace `rh-dotnet60-aspnetcore-runtime-6.0` in the preceding command with `rh-dotnet60-dotnet-runtime-6.0`.
 
-## CentOS Stream 9 ✔️
+## CentOS Stream 9
 
 .NET is included in the AppStream repositories for CentOS Stream 9.
 
 [!INCLUDE [linux-dnf-install-80](includes/linux-install-80-dnf.md)]
 
-## CentOS Stream 8 ✔️
+## CentOS Stream 8
 
 Use the Microsoft repository to install .NET:
 
@@ -124,6 +125,10 @@ sudo yum install dotnet-sdk-8.0
 ```
 
 To learn how to use the .NET CLI, see [.NET CLI overview](../tools/index.md).
+
+## Where is CentOS Linux
+
+.NET is no longer supported on CentOS Linux. As of June 30th, 2024, CentOS Linux reached end-of-life. For more information, see [End dates are coming for CentOS Stream 8 and CentOS Linux 7](https://blog.centos.org/2023/04/end-dates-are-coming-for-centos-stream-8-and-centos-linux-7/).
 
 ## Dependencies
 

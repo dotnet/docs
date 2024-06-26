@@ -22,7 +22,6 @@ This article describes how .NET is available on various Linux distributions. .NE
 .NET is available in [official package archives](https://github.com/dotnet/core/blob/main/linux.md) for various Linux distributions and [packages.microsoft.com](https://packages.microsoft.com/).
 
 - [Alpine](linux-alpine.md)
-- [CentOS](linux-centos.md)
 - [Debian](linux-debian.md)
 - [Fedora](linux-fedora.md)
 - [openSUSE](linux-opensuse.md)

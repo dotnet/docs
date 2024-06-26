@@ -722,7 +722,7 @@ To use a standalone garbage collector instead of the default GC implementation, 
 
 #### Name
 
-- Specifies the name of a GC native library that the runtime loads in place of the default GC implementation. The behavior changed in .NET 9 with the introduction of the GCPath config. In .NET 8 and prior -\
+- Specifies the name of a GC native library that the runtime loads in place of the default GC implementation. The behavior changed in .NET 9 with the introduction of the **Path** config. In .NET 8 and prior -\
 \
 If only a name of the library is specified, the library has to reside in the same directory as the .NET runtime (*coreclr.dll* on Windows, *libcoreclr.so* on Linux, or *libcoreclr.dylib* on OSX).\
 \

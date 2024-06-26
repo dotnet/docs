@@ -867,20 +867,8 @@ items:
                     href: ../standard/serialization/binaryformatter-migration-guide/overview.md
                   - name: Choosing a serializer
                     href: ../standard/serialization/binaryformatter-migration-guide/choosing-a-serializer.md
-                  - name: Migrating persisted payloads
-                    href: ../standard/serialization/binaryformatter-migration-guide/migrating-persisted-payloads.md
-                  - name: Migration samples
-                    items:
-                      - name: DataContractSerializer
-                        href: ../standard/serialization/binaryformatter-migration-guide/migration-datacontractserializer.md
-                      - name: System.Text.Json
-                        href: ../standard/serialization/binaryformatter-migration-guide/migration-systemtextjson.md
-                      - name: MessagePack
-                        href: ../standard/serialization/binaryformatter-migration-guide/migration-messagepack.md
-                  - name: WinForms applications
-                    href: ../standard/serialization/binaryformatter-migration-guide/winforms.md
-                  - name: WPF applications
-                    href: ../standard/serialization/binaryformatter-migration-guide/wpf.md
+                  - name: Reading NRBF payloads
+                    href: ../standard/serialization/binaryformatter-migration-guide/reading-nrbf-payloads.md
                   - name: Compatibility package
                     href: ../standard/serialization/binaryformatter-migration-guide/compatibility-package.md
                   - name: BinaryFormatter functionality reference

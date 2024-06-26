@@ -7,74 +7,91 @@ namespace SystemTextJsonSamples
     {
         public static void Run()
         {
-            var jsonString = @"{
-                ""Date"": ""2019-08-01T00:00:00-07:00"",
-                ""Temperature"": 25,
-                ""TemperatureRanges"": {
-                    ""Cold"": { ""High"": 20, ""Low"": -10 },
-                    ""Hot"": { ""High"": 60, ""Low"": 20 }
+            var jsonString = """
+            {
+                "Date": "2019-08-01T00:00:00-07:00",
+                "Temperature": 25,
+                "TemperatureRanges": {
+                    "Cold": { "High": 20, "Low": -10 },
+                    "Hot": { "High": 60, "Low": 20 }
                 },
-                ""Summary"": ""Hot"",
-            }";
+                "Summary": "Hot"
+            }
+            """u8;
 
-            byte[] bytes = Encoding.UTF8.GetBytes(jsonString);
-            var stream = new MemoryStream(bytes);
+            // The buffer size wouldn't typically be this small.
+            // This sample uses a small size to demonstrate
+            // refilling buffer given small payload.
+            const int SIZE = 64;
+            var searchText = "Summary"u8;
+            var foundTerm = false;
+            var stream = new MemoryStream(jsonString.ToArray());
+            Span<byte> buffer = new byte[SIZE];
+            int read = stream.Read(buffer);
 
-            var buffer = new byte[4096];
+            var reader = new Utf8JsonReader(buffer[0..read], isFinalBlock: read < SIZE, state: default);
+            Console.WriteLine($"String in buffer is: {Encoding.UTF8.GetString(buffer[..read])}");
 
-            // Fill the buffer.
-            // For this snippet, we're assuming the stream is open and has data.
-            // If it might be closed or empty, check if the return value is 0.
-            stream.Read(buffer);
-
-            // We set isFinalBlock to false since we expect more data in a subsequent read from the stream.
-            var reader = new Utf8JsonReader(buffer, isFinalBlock: false, state: default);
-            Console.WriteLine($"String in buffer is: {Encoding.UTF8.GetString(buffer)}");
-
-            // Search for "Summary" property name
-            while (reader.TokenType != JsonTokenType.PropertyName || !reader.ValueTextEquals("Summary"))
+            // Search for "Summary" property name.
+            while (reader.Read() || UpdateBuffer(stream, ref buffer, ref read, ref reader))
             {
-                if (!reader.Read())
+                if (reader.TokenType is JsonTokenType.PropertyName && reader.ValueTextEquals(searchText))
                 {
-                    // Not enough of the JSON is in the buffer to complete a read.
-                    GetMoreBytesFromStream(stream, ref buffer, ref reader);
+                    foundTerm = true;
+                }
+                else if (foundTerm && reader.TokenType is JsonTokenType.String)
+                {
+                    Console.WriteLine($"Found {Encoding.UTF8.GetString(searchText)} value: " +
+                        $"{reader.GetString()}");
+                    break;
                 }
             }
 
-            // Found the "Summary" property name.
-            Console.WriteLine($"String in buffer is: {Encoding.UTF8.GetString(buffer)}");
-            while (!reader.Read())
-            {
-                // Not enough of the JSON is in the buffer to complete a read.
-                GetMoreBytesFromStream(stream, ref buffer, ref reader);
-            }
-            // Display value of Summary property, that is, "Hot".
-            Console.WriteLine($"Got property value: {reader.GetString()}");
-        }
+            Console.WriteLine($"String in buffer is: {Encoding.UTF8.GetString(buffer[..read])}");
 
-        private static void GetMoreBytesFromStream(
-            MemoryStream stream, ref byte[] buffer, ref Utf8JsonReader reader)
-        {
-            int bytesRead;
-            if (reader.BytesConsumed < buffer.Length)
+            static bool UpdateBuffer(
+                MemoryStream stream,
+                ref Span<byte> buffer,
+                ref int read,
+                ref Utf8JsonReader reader)
             {
-                ReadOnlySpan<byte> leftover = buffer.AsSpan((int)reader.BytesConsumed);
+                var bytesConsumed = (int)reader.BytesConsumed;
+                var bufferStart = 0;
 
-                if (leftover.Length == buffer.Length)
+                if (bytesConsumed < buffer.Length)
                 {
-                    Array.Resize(ref buffer, buffer.Length * 2);
-                    Console.WriteLine($"Increased buffer size to {buffer.Length}");
+                    var leftOver = buffer[bytesConsumed..];
+                    leftOver.CopyTo(buffer);
+                    bufferStart = leftOver.Length;
                 }
 
-                leftover.CopyTo(buffer);
-                bytesRead = stream.Read(buffer.AsSpan(leftover.Length));
+                read = stream.Read(buffer[bufferStart..]);
+                var isFinal = read < bytesConsumed;
+                Console.WriteLine($"Updating buffer ... leftOver bytes: " +
+                    $"{bufferStart}; bytes read: {read}; isFinalBlock: {isFinal}");
+
+                if (read == 0)
+                {
+                    return false;
+                }
+
+                reader = new Utf8JsonReader(buffer, isFinalBlock: isFinal, reader.CurrentState);
+                return true;
             }
-            else
-            {
-                bytesRead = stream.Read(buffer);
+
+            /*
+            Produces this output:
+            String in buffer is: {
+                "Date": "2019-08-01T00:00:00-07:00",
+                "Temperature":
+            Updating buffer ... leftOver bytes: 0; bytes read: 64; isFinalBlock: False
+            Updating buffer ... leftOver bytes: 3; bytes read: 61; isFinalBlock: False
+            Updating buffer ... leftOver bytes: 0; bytes read: 26; isFinalBlock: True
+            Found Summary value: Hot
+            String in buffer is: ,
+                "Summary": "Hot",
             }
-            Console.WriteLine($"String in buffer is: {Encoding.UTF8.GetString(buffer)}");
-            reader = new Utf8JsonReader(buffer, isFinalBlock: bytesRead == 0, reader.CurrentState);
+            */
         }
     }
 }

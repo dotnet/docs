@@ -43,3 +43,4 @@ The following table outlines the updates in this release.
 | .NET Framework 3.5, 4.8.1 | [5039865](https://support.microsoft.com/kb/5039865) |
 
 The operating system row lists a KB which will be used for update offering purposes. When the operating system KB is offered, the applicability logic will determine the specific .NET Framework update(s) will be installed. Updates for individual .NET Framework versions will be installed based on the version of .NET Framework that is already present on the device. Because of this the operating system KB is not expected to be listed as installed updates on the device. The expected update to be installed are the .NET Framework specific version updates listed in the table above.
+

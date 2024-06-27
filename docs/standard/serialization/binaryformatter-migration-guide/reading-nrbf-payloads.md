@@ -19,14 +19,14 @@ helpviewer_keywords:
 
 `NrbfDecoder` is part of the new [System.Formats.Nrbf](https://www.nuget.org/packages/System.Formats.Nrbf) NuGet package. It targets not only .NET 9, but also older monikers like .NET Standard 2.0 and .NET Framework. Which **makes it possible for everyone who uses a supported version of .NET to migrate away from `BinaryFormatter`**.
 
-`NrbfDecoder` can read any payload that was serialized with `BinaryFormatter` and `FormatterTypeStyle.TypesAlways`. `FormatterTypeStyle.TypesAlways` is the default setting that forces BF to emit full type information and does not require any type loading when reading the payload. Which means that `FormatterTypeStyle.TypesWhenNeeded` is not supported.
+`NrbfDecoder` can read any payload that was serialized with `BinaryFormatter` using `FormatterTypeStyle.TypesAlways` (the default).
+`NrbfDecoder` cannot be used for the output of BinaryFormatter for any other `FormatterTypeStyle`.
 
 Only non-zero indexed arrays and types specific to remoting (which were never ported to .NET (Core)) are **not supported**.
 
-`NrbfDecoder` is following these principles to read from **untrusted input**:
+`NrbfDecoder` is designed to treat all input as untrusted. As such it has these principles:
 
-- Treating every input as potentially hostile.
-- No type loading of any kind (to avoid remote code execution).
+- No type loading of any kind (to avoid risks such as remote code execution).
 - No recursion of any kind (to avoid unbound recursion, stack overflow and denial of service).
 - No buffer pre-allocation based on size provided in the payload, if the payload is too small to contain the promised data (to avoid running out of memory and denial of service).
 - Decoding every part of the input only once (to perform the same amount of work as the potential attacker who created the payload).
@@ -39,7 +39,7 @@ Only non-zero indexed arrays and types specific to remoting (which were never po
 
 All `[Serializable]` types from [Quartz.NET](https://github.com/search?q=repo%3Aquartznet%2Fquartznet+%5BSerializable%5D+language%3AC%23&type=code&l=C%23) that can be persisted by the library itself are `sealed`, so there are no custom types that the users could create and the payload can contain only known types. They also provide public constructors, so it is possible to re-create these types based on the information read from payload.
 
-`SettingsPropertyValue` type from `System.Configuration.ConfigurationManager` library exposes an `object PropertyValue` that may internally use `BinaryFormatter` to serialize and deserialize any object that was stored in the configuration file. It could be used to store an integer, a custom type, a dictionary or literally anything.  Because of that, **it is impossible to migrate this library without introducing breaking changes to the API, as the payload can contain anything**.
+`SettingsPropertyValue` type from `System.Configuration.ConfigurationManager` library exposes an `object PropertyValue` that may internally use `BinaryFormatter` to serialize and deserialize any object that was stored in the configuration file. It could be used to store an integer, a custom type, a dictionary or literally anything.  Because of that, **it is impossible to migrate this library without introducing breaking changes to the API**.
 
 ### Identifying BinaryFormatter payload
 
@@ -55,7 +55,7 @@ Using these methods is recommended for the period of migrating payloads persiste
 
 The NRBF payload consists of serialization records that represent the serialized objects and their metadata. To read the whole payload and get the root object, the user needs to call the `Decode` method.
 
-The `Decode` method returns an `SerializationRecord` instance. `SerializationRecord` is an abstract class that represents the serialization record and provides three self-describing properties: `Id`, `RecordType` and `TypeName`. It exposes one method: `public bool TypeNameMatches(Type type)` which compares the type name read from the payload (and exposed via `TypeName` property) against the specified type. This method ignores assembly names, so the users don't need to worry about type forwarding and assembly versioning. It also does not consider member names or their types (because getting this information would require type loading).
+The `Decode` method returns a `SerializationRecord` instance. `SerializationRecord` is an abstract class that represents the serialization record and provides three self-describing properties: `Id`, `RecordType` and `TypeName`. It exposes one method: `public bool TypeNameMatches(Type type)` which compares the type name read from the payload (and exposed via `TypeName` property) against the specified type. This method ignores assembly names, so the users don't need to worry about type forwarding and assembly versioning. It also does not consider member names or their types (because getting this information would require type loading).
 
 ```cs
 using System.Formats.Nrbf;
@@ -70,10 +70,12 @@ static T Pseudocode<T>(Stream payload)
 }
 ```
 
-There is more than a dozen of different serialization [record types](/openspecs/windows_protocols/ms-nrbf/954a0657-b901-4813-9398-4ec732fe8b32), but this library provides a set of abstractions, so the users need to learn only a few of them:
+There are more than a dozen of different serialization [record types](/openspecs/windows_protocols/ms-nrbf/954a0657-b901-4813-9398-4ec732fe8b32), but this library provides a set of abstractions, so the users need to learn only a few of them:
 
-- `PrimitiveTypeRecord<T>` that describes all primitive types natively supported by the NRBF (`string`, `bool`, `byte`, `sbyte`, `char`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `float`, `double`, `decimal`, `TimeSpan` and `DateTime`) and exposes the value `Value` getter. `PrimitiveTypeRecord<T>` derives from non-generic `PrimitiveTypeRecord` which also exposes the raw value via `Value` property, but it's returned as `object` (which introduces boxing for value types).
-- `ClassRecord` that describes all `class` and `struct`  beside the forementioned  primitive types.
+- `PrimitiveTypeRecord<T>`: describes all primitive types natively supported by the NRBF (`string`, `bool`, `byte`, `sbyte`, `char`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `float`, `double`, `decimal`, `TimeSpan` and `DateTime`)
+  - exposes the value via the `Value` property.
+  - `PrimitiveTypeRecord<T>` derives from the non-generic `PrimitiveTypeRecord` which also exposes has a `Value` property, but on the base class it is returned as `object` (which introduces boxing for value types).
+- `ClassRecord`: describes all `class` and `struct` besides the aforementioned  primitive types.
 - `SZArrayRecord<T>` that describes single-dimensional, zero-indexed array records, where `T` can be either a primitive type or a `ClassRecord`.
 - `ArrayRecord` that describes all array records including jagged and multi-dimensional arrays.
 

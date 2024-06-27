@@ -55,7 +55,7 @@ It's not required to specify most popular collections or primitive types like `s
 
 [System.Text.Json](../system-text-json/overview.md) is strict by default and avoids any guessing or interpretation on the caller's behalf, emphasizing deterministic behavior. The library is intentionally designed this way for performance and security. From the migration perspective, it's crucial to know the following facts:
 
-- By default, **fields aren't serialized**, but they can be [included on demand](../system-text-json/fields.md), which is a must-have for types that use fields that are not exposed by properties. The simplest solution that does not require modifying the types is to use the global setting to include fields.
+- By default, **fields aren't serialized**, but they can be [included on demand](../system-text-json/fields.md). The simplest solution that does not require modifying the types is to use the global setting to include fields.
 
 ```cs
 JsonSerializerOptions options = new()
@@ -77,14 +77,14 @@ JsonSerializerOptions options = new()
 - Other types [without built-in support](../system-text-json/migrate-from-newtonsoft.md#types-without-built-in-support) are: `DataSet`, `DataTable`, `DBNull`, `TimeZoneInfo`, `Type`, `ValueTuple`. However, you can write a custom converter to support these types.
 - It [supports polymorphic type hierarchy serialization and deserialization](../system-text-json/polymorphism.md) that have been explicitly opted in via the `[JsonDerivedType]` attribute or via custom resolver.
 - The `[JsonIgnore]` attribute on a property causes the property to be omitted from the JSON during serialization.
-- To preserve references and handle circular references in System.Text.Json, set `JsonSerializerOptions.ReferenceHandler` to `Preserve`.
+- To preserve references and handle circular references in System.Text.Json, set `JsonSerializerOptions.ReferenceHandler` to `ReferenceHandler.Preserve`.
 - To override the default behavior you can [write custom converters](../system-text-json/converters-how-to.md).
 
 ### Binary
 
 .NET Team is deprecating the `BinaryFormatter`, but at the same time we currently have no plans to implement a new binary serializer. It puts us in a situation, where we can't recommend any serializer that we own. But luckily for all of us, the .NET Open Source Ecosystem provides many great binary serializers. Some of them:
 
-[protobuf-net](https://github.com/protobuf-net/protobuf-net) is "a contract based serializer for .NET code, that happens to write data in the _protocol buffers_ serialization format engineered by Google". Because protobuf-net is a cross-language protocol, it has some subtle issues with .NET-specific concepts like [nulls and empty arrays](https://stackoverflow.com/questions/21631428/protobuf-net-deserializes-empty-collection-to-null-when-the-collection-is-a-prop/21632160#21632160). Since this document is about a migration from `BinaryFormatter`, we can safely assume that we don't need cross-language support and the complexity it brings. That is why in this particular scenario of binary serialization, we recommend MessagePack.
+[protobuf-net](https://github.com/protobuf-net/protobuf-net) is "a contract based serializer for .NET code, that happens to write data in the _protocol buffers_ serialization format engineered by Google". Because _protocol buffers_ is a cross-language protocol, it has some subtle issues with .NET-specific concepts like [nulls and empty arrays](https://stackoverflow.com/questions/21631428/protobuf-net-deserializes-empty-collection-to-null-when-the-collection-is-a-prop/21632160#21632160). Since this document is about a migration from `BinaryFormatter`, we can safely assume that we don't need cross-language support and the complexity it brings. That is why in this particular scenario of binary serialization, we recommend MessagePack.
 
 MessagePack provides a highly efficient binary serialization format, resulting in smaller message sizes compared to JSON and XML. It's very [performant](https://github.com/MessagePack-CSharp/MessagePack-CSharp?tab=readme-ov-file#performance), ships with built-in support for LZ4 compression and a full set of general-purpose expressive data types:
 

@@ -31,6 +31,5 @@ All the .NET 9+ users who for some reason can not migrate away from `BinaryForma
 </ItemGroup>
 ```
 
-
 > [!WARNING]
 > It's unsafe and not recommended.

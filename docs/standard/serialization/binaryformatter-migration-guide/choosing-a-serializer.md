@@ -23,7 +23,7 @@ Choosing a serializer format boils down to two questions:
 | Feature                                        | BinaryFormatter | DataContractSerializer | System.Text.Json        | MessagePack              |
 |------------------------------------------------|-----------------|------------------------|-------------------------|--------------------------|
 | Compact binary representation                  | ✔️              | ❌                      | ❌                      |  ✔️                       |
-| Human readable                                 | ❌️              | ✔                      | ✔                      |  ❌                       |
+| Human readable                                 | ❌️              | ✔️                      | ✔️                      |  ❌️                       |
 | Performance                                    | ❌️              | ❌                      | ✔️                      |  ✔️✔️                     |
 | `[Serializable]` support                       | ✔️              | ✔️                      | ❌                      |  ❌                       |
 | Serializing public types                       | ✔️              | ✔️                      | ✔️                      |  ✔️                       |
@@ -53,7 +53,7 @@ It's not required to specify most popular collections or primitive types like `s
 
 ### JSON
 
-[System.Text.Json](../system-text-json/overview.md) is strict by default and avoids any guessing or interpretation on the caller's behalf, emphasizing deterministic behavior. The library is intentionally designed this way for performance and security. From the migration perspective, it's crucial to know the following facts:
+[System.Text.Json](../system-text-json/overview.md) defaults to emphasizing literal, deterministic behavior and avoids any guessing or interpretation on the caller's behalf. The library is intentionally designed this way for performance and security. From the migration perspective, it's crucial to know the following facts:
 
 - By default, **fields aren't serialized**, but they can be [included on demand](../system-text-json/fields.md). The simplest solution that does not require modifying the types is to use the global setting to include fields.
 
@@ -75,7 +75,7 @@ JsonSerializerOptions options = new()
   - most of the collections from [System.Collections.Specialized](../system-text-json/supported-collection-types.md#systemcollectionsspecialized-namespace) and [System.Collections.ObjectModel](../system-text-json/supported-collection-types.md#systemcollectionsobjectmodel-namespace) namespaces.
 - Under [certain condtions](../system-text-json/supported-collection-types.md#custom-collections-with-deserialization-support), it supports serialization and deserialization of custom generic collections.
 - Other types [without built-in support](../system-text-json/migrate-from-newtonsoft.md#types-without-built-in-support) are: `DataSet`, `DataTable`, `DBNull`, `TimeZoneInfo`, `Type`, `ValueTuple`. However, you can write a custom converter to support these types.
-- It [supports polymorphic type hierarchy serialization and deserialization](../system-text-json/polymorphism.md) that have been explicitly opted in via the `[JsonDerivedType]` attribute or via custom resolver.
+- It [supports polymorphic type hierarchy serialization and deserialization](../system-text-json/polymorphism.md) that have been explicitly opted in via the `[JsonDerivedType]` attribute or via custom converter.
 - The `[JsonIgnore]` attribute on a property causes the property to be omitted from the JSON during serialization.
 - To preserve references and handle circular references in System.Text.Json, set `JsonSerializerOptions.ReferenceHandler` to `ReferenceHandler.Preserve`.
 - To override the default behavior you can [write custom converters](../system-text-json/converters-how-to.md).
@@ -95,4 +95,6 @@ MessagePack provides a highly efficient binary serialization format, resulting i
 - `System.Runtime.Serialization` annotations can be used instead of MessagePack annotations. `[DataContract]` instead of`[MessagePackObject]`, `[DataMember]` instead of `[Key]` and `[IgnoreDataMember]` instead of `[IgnoreMember]`. It can be very useful if you want to avoid having dependency on MessagePack in the library that defines serializable types.
 - It supports readonly/immutable types and members. The serializer will try to use the public constructor with the best matched argument list. It can be specified in an explicit way by using `[SerializationConstructor]` attribute.
 - The serializer supports most frequently used built-in types and collections provided by the .NET base class libraries. You can find the full list in [official docs](https://github.com/MessagePack-CSharp/MessagePack-CSharp?tab=readme-ov-file#built-in-supported-types). It has [extension points](https://github.com/MessagePack-CSharp/MessagePack-CSharp?tab=readme-ov-file#extensions) that allow for customization.
-- The library provides [Typless API](https://github.com/MessagePack-CSharp/MessagePack-CSharp?tab=readme-ov-file#typeless) similar to `BinaryFormatter`, but it should not be used as it's not [secure](https://github.com/MessagePack-CSharp/MessagePack-CSharp?tab=readme-ov-file#security) and would defeat the purpose of migrating from `BinaryFormatter`.
+
+> [!WARNING]
+> Caution: MessagePack has API to allow for deserializing data without type restrictions. Per [MessagePack Security Notes](https://github.com/MessagePack-CSharp/MessagePack-CSharp?tab=readme-ov-file#security) these should be avoided.

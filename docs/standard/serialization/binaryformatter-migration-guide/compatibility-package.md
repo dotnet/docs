@@ -15,6 +15,9 @@ helpviewer_keywords:
 
 # Using the compatibility package
 
+> [!WARNING]
+> It's unsafe and not recommended.
+
 All the .NET 9+ users who for some reason can not migrate away from `BinaryFormatter` can just install the [System.Runtime.Serialization.Formatters](https://www.nuget.org/packages/System.Runtime.Serialization.Formatters) NuGet package and set the `System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization` AppContext switch to `true`.
 
 ```xml
@@ -28,4 +31,6 @@ All the .NET 9+ users who for some reason can not migrate away from `BinaryForma
 </ItemGroup>
 ```
 
-**It's unsafe and not recommended**.
+
+> [!WARNING]
+> It's unsafe and not recommended.

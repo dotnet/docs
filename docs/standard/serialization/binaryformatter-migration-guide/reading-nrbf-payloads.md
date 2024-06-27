@@ -17,7 +17,7 @@ helpviewer_keywords:
 
 ## NrbfDecoder
 
-`NrbfDecoder` is part of the new [System.Formats.Nrbf](https://www.nuget.org/packages/System.Formats.Nrbf) NuGet package. It targets not only .NET 9, but also older monikers like .NET Standard 2.0 and .NET Framework. Which **makes it possible for everyone who uses a supported version of .NET to migrate away from `BinaryFormatter`**.
+`NrbfDecoder` is part of the new [System.Formats.Nrbf](https://www.nuget.org/packages/System.Formats.Nrbf) NuGet package. It targets not only .NET 9, but also older monikers like .NET Standard 2.0 and .NET Framework. Which makes it possible for everyone who uses a supported version of .NET to migrate away from `BinaryFormatter`.
 
 `NrbfDecoder` can read any payload that was serialized with `BinaryFormatter` using `FormatterTypeStyle.TypesAlways` (the default).
 `NrbfDecoder` cannot be used for the output of BinaryFormatter for any other `FormatterTypeStyle`.
@@ -43,13 +43,41 @@ All `[Serializable]` types from [Quartz.NET](https://github.com/search?q=repo%3A
 
 ### Identifying BinaryFormatter payload
 
-`NrbfDecoder` provides two `StartsWithPayloadHeader` methods that allow to **check whether given stream or buffer starts with NRBF header**.
+`NrbfDecoder` provides two `StartsWithPayloadHeader` methods that allow to check whether given stream or buffer starts with NRBF header.
 
 Using these methods is recommended for the period of migrating payloads persisted with `BinaryFormatter` to a [different serializer](./choosing-a-serializer.md):
 
 - Check if the payload read from storage is an [NRBF](/openspecs/windows_protocols/ms-nrbf/75b9fe09-be15-475f-85b8-ae7b7558cfe5) payload.
 - If so, read it with `NrbfDecoder`, serialize it back with a new serializer and overwrite the data in the storage.
 - If not, use the new serializer to deserialize the data.
+
+```cs
+internal static T LoadFromFile<T>(string path)
+{
+    bool update = false;
+    T value;
+
+    using (FileStream stream = File.OpenRead(path))
+    {
+        if (NrbfDecoder.StartsWithPayloadHeader(stream))
+        {
+            value = LoadLegacyValue<T>(stream);
+            update = true;
+        }
+        else
+        {
+            value = LoadNewValue<T>(stream);
+        }
+    }
+
+    if (update)
+    {
+        File.WriteAllBytes(path, NewSerializer(value));
+    }
+
+    return value;
+}
+```
 
 ### Safely reading NRBF payloads
 
@@ -76,8 +104,8 @@ There are more than a dozen of different serialization [record types](/openspecs
   - exposes the value via the `Value` property.
   - `PrimitiveTypeRecord<T>` derives from the non-generic `PrimitiveTypeRecord` which also exposes has a `Value` property, but on the base class it is returned as `object` (which introduces boxing for value types).
 - `ClassRecord`: describes all `class` and `struct` besides the aforementioned  primitive types.
-- `SZArrayRecord<T>` that describes single-dimensional, zero-indexed array records, where `T` can be either a primitive type or a `ClassRecord`.
-- `ArrayRecord` that describes all array records including jagged and multi-dimensional arrays.
+- `SZArrayRecord<T>`: that describes single-dimensional, zero-indexed array records, where `T` can be either a primitive type or a `ClassRecord`.
+- `ArrayRecord`: that describes all array records including jagged and multi-dimensional arrays.
 
 ```cs
 SerializationRecord rootObject = NrbfDecoder.Decode(payload); // payload is a Stream

@@ -19,9 +19,11 @@ There are no new security improvements in this release. This update is cumulativ
 ### Quality and reliability improvements
 
 #### .NET fundamentals
+
 Addresses an issue with x509 certificate use under PPL in Azure AD 
 
 #### Winforms
+
 Addresses an issue with the size of memory leaks associated with AccessibleObjects held in memory due to ref-counting
 
 ## Known Issues in this Release

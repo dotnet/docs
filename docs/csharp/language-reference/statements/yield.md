@@ -1,7 +1,7 @@
 ---
 title: "yield statement - provide the next element in an iterator"
 description: "Use the yield statement in iterators to provide the next value or signal the end of an iteration"
-ms.date: 11/22/2022
+ms.date: 06/28/2024
 f1_keywords: 
   - "yield"
   - "yield_CSharpKeyword"
@@ -37,7 +37,7 @@ You can't use the `yield` statements in:
 
 - methods with [in](../keywords/method-parameters.md#in-parameter-modifier), [ref](../keywords/ref.md), or [out](../keywords/method-parameters.md#out-parameter-modifier) parameters
 - [lambda expressions](../operators/lambda-expressions.md) and [anonymous methods](../operators/delegate-operator.md)
-- methods that contain [unsafe blocks](../keywords/unsafe.md)
+- [unsafe blocks](../keywords/unsafe.md). Prior to C# 13, `yield` was invalid in any method with an `unsafe` block. Beginning with C# 13, you can use `yield` in methods with `unsafe` blocks, but not in the `unsafe` block.
 
 ## Execution of an iterator
 

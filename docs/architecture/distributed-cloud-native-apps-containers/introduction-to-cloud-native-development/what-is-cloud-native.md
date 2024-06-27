@@ -128,13 +128,9 @@ Built as a distributed set of small, independent services that interact through 
 
 - They compose together to form an application.
 
-Figure 1-4 contrasts a monolithic application approach with a microservices approach. Note how the monolith is composed of a layered architecture, which executes in a single process. It typically consumes a relational database. The microservice approach, however, segregates functionality into independent services, each with its own logic, state, and data. Each microservice hosts its own datastore.
+Contrast these characteristics with a monolithic application approach. A monolith is composed of a layered architecture, which executes in a single process. It typically consumes a relational database. By comparison the microservice approach segregates functionality into independent services, each with its own logic, state, and data. Each microservice hosts its own datastore.
 
-![Monolithic deployment versus microservices](./media/monolithic-vs-microservices.png)
-
-**Figure 1-4.** Monolithic versus microservices architecture
-
-Note how microservices promote the **Processes** principle from the [Twelve-Factor Application](https://12factor.net/), discussed earlier in the chapter.
+Note that microservices promote the **Processes** principle from the [Twelve-Factor Application](https://12factor.net/), discussed earlier in the chapter.
 
 > *Factor \#6  specifies "Each microservice should execute in its own process, isolated from other running services."*
 

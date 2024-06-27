@@ -29,7 +29,7 @@ Choosing a serializer format boils down to two questions:
 | Serializing public types                       | ✔️              | ✔️                      | ✔️                      |  ✔️                       |  ✔️                               |
 | Serializing non-public types                   | ✔️              | ✔️                      | ✔️                      |  ✔️ (resolver required)   |  ✔️                               |
 | Serializing fields                             | ✔️              | ✔️                      | ✔️ (opt in)             |  ✔️ (attribute required)  |  ✔️ (attribute required)          |
-| Serializing non-public fields                  | ✔️              | ✔️                      | ✔ (resolver required)  |  ✔ (resolver required)   |  ✔️ (attribute required)          |
+| Serializing non-public fields                  | ✔️              | ✔️                      | ✔️ (resolver required)  |  ✔️ (resolver required)   |  ✔️ (attribute required)          |
 | Serializing properties                         | ✔️<sup>*</sup>  | ✔️                      | ✔️                      |  ✔️ (attribute required)  |  ✔️ (attribute required)          |
 | Deserializing readonly members                 | ✔️              | ✔️                      | ✔️ (attribute required) |  ✔️                       |  ✔️ (parameterless ctor required) |
 | Polymorphic type hierarchy                     | ✔️              | ✔️                      | ✔️ (attribute required) |  ✔️ (attribute required)  |  ✔️ (attribute required)          |

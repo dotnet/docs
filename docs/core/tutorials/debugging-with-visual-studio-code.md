@@ -44,13 +44,13 @@ A *breakpoint* temporarily interrupts the execution of the application before th
 
    :::image type="content" source="media/debugging-with-visual-studio-code/select-debug-pane-net6.png" alt-text="Open the Debug tab in Visual Studio Code":::
 
-1. Select the green arrow at the top of the pane, next to **.NET Core Launch (console)**. Other ways to start the program in debugging mode are by pressing <kbd>F5</kbd> or choosing **Run** > **Start Debugging** from the menu.
+1. Select **Run and Debug**. If asked, select **C#** and then select **C#: Launch startup project**. Other ways to start the program in debugging mode are by pressing <kbd>F5</kbd> or choosing **Run** > **Start Debugging** from the menu.
 
    :::image type="content" source="media/debugging-with-visual-studio-code/start-debugging.png" alt-text="Start debugging":::
 
 1. Select the **Debug Console** tab to see the "What is your name?" prompt that the program displays before waiting for a response.
 
-   :::image type="content" source="media/debugging-with-visual-studio-code/select-terminal-net6.png" alt-text="Select the Terminal tab":::
+   :::image type="content" source="media/debugging-with-visual-studio-code/select-debug-console.png" alt-text="Select the Debug Console tab":::
 
 1. Enter a string in the **Debug Console** window in response to the prompt for a name, and then press <kbd>Enter</kbd>.
 

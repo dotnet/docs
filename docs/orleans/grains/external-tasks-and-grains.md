@@ -36,7 +36,7 @@ public async Task MyGrainMethod()
 {
     // Grab the grain's task scheduler
     var orleansTS = TaskScheduler.Current;
-    await TaskDelay(10_000);
+    await Task.Delay(10_000);
 
     // Current task scheduler did not change, the code after await is still running
     // in the same task scheduler.

@@ -9,10 +9,10 @@ ms.date: 06/27/2024
 
 # Authenticate to Azure AI Services using .NET
 
-Application requests to Azure AI Services must be authenticated. In this article you explore the options available to authenticate to Azure OpenAI and other AI services using .NET. Azure OpenAI and many other AI services offer two primary ways to authenticate apps and users:
+Application requests to Azure AI Services must be authenticated. In this article you explore the options available to authenticate to Azure OpenAI and other AI services using .NET. These concepts apply to the Semantic Kernel Sdk, as well SDKs from specific services such as Azure OpenAI. Most AI services offer two primary ways to authenticate apps and users:
 
-- **Key-based authentication** provides access to an Azure service using secret key values. These secrets are also known as API keys or access keys and are often included in connection strings.
-- **Microsoft Entra ID** provides a comprehensive identity and access management solution to ensure that the correct identities can have the correct level of access to different Azure resources.
+- **Key-based authentication** provides access to an Azure service using secret key values. These secrets are also known as API keys or access keys.
+- **Microsoft Entra ID** provides a comprehensive identity and access management solution to ensure that the correct identities have the correct level of access to different Azure resources.
 
 The sections ahead provide conceptual overviews for these two approaches, rather than detailed implementation steps. For more detailed information about connecting to Azure services, visit the following resources:
 
@@ -25,30 +25,30 @@ The sections ahead provide conceptual overviews for these two approaches, rather
 
 ## Explore key-based authentication
 
-Access keys allow you to authenticate to an AI service such as OpenAI using a secret key provided by the service. Retrieve the secret key using tools such as the Azure Portal or Azure CLI and use it to configure your app code to connect to the AI service:
+Access keys allow apps and tools to authenticate to an Azure AI service such as OpenAI using a secret key provided by the service. Retrieve the secret key using tools such as the Azure Portal or Azure CLI and use it to configure your app code to connect to the AI service:
 
 ```csharp
 builder.Services.AddAzureOpenAIChatCompletion(
     "deployment-model",
-    "your-endpoint",
-    "your-resource-key");
+    "service-endpoint",
+    "service-key");
 var kernel = builder.Build();
 ```
 
-Using access keys is a straightforward option, but this approach should be used with caution. Keys are not the recommended authentication option for the following reasons:
+Using keys is a straightforward option, but this approach should be used with caution. Keys are not the recommended authentication option for the following reasons:
 
-- Keys do not follow the principle of least privilege - they needlessly provide elevated permissions for a given task
-- Keys can accidentally be checked into source control or stored in unsafe locations
-- Keys can easily be shared or sent to parties who should not have access
-- Keys often require manual administration and rotation
+- Keys do not follow [the principle of least privilege](/entra/identity-platform/secure-least-privileged-access) - they needlessly provide elevated permissions for a given task.
+- Keys can accidentally be checked into source control or stored in unsafe locations.
+- Keys can easily be shared or sent to parties who should not have access.
+- Keys often require manual administration and rotation.
 
-For these reasons, consider using [Microsoft Entra ID](/#explore-microsoft-entra-id) for authentication, which is the recommended solution for most scenarios.
+Instead, consider using [Microsoft Entra ID](/#explore-microsoft-entra-id) for authentication, which is the recommended solution for most scenarios.
 
 ## Explore Microsoft Entra ID
 
 Microsoft Entra ID is a cloud-based identity and access management service that provides a vast set of features for different business and app scenarios. Microsoft Entra ID is the recommended solution to connect to Azure OpenAI and other AI services and provides the following benefits:
 
-- Key-less authentication using user or app identities.
+- Key-less authentication using [identities](/entra/fundamentals/identity-fundamental-concepts).
 - Role-based-access-control (RBAC) to assign identities the minimum required permissions.
 - Detects [different credentials across environments](/python/api/azure-identity/azure.identity.defaultazurecredential?view=azure-python) without requiring code changes.
 - Automatically handles administrative tasks.
@@ -57,12 +57,12 @@ The general flow to implement Entra ID authentication in your app generally incl
 
 - Local development:
     1. Authenticate to Azure using a local dev tool such as the Azure CLI or Visual Studio.
-    1. Configure your code to use the `Azure.Identity` client library and `DefaultAzureCredential` class.
+    1. Configure your code to use the [`Azure.Identity`](/dotnet/api/overview/azure/identity-readme) client library and `DefaultAzureCredential` class.
     1. Assign roles to the account you used to authenticate.
 
 - Azure hosted app:
-    1. Deploy the app to Azure after it has been configured to use `Azure.Identity`.
-    1. Assign a managed identity to the Azure hosted app.
+    1. Deploy the app to Azure after configuring it to use `Azure.Identity`.
+    1. Assign a [managed identity](/entra/identity/managed-identities-azure-resources/overview) to the Azure hosted app.
     1. Assign roles to the managed identity.
 
 Key steps of this workflow are explored in the following sections.
@@ -79,7 +79,7 @@ az login
 
 ### Configure the app code
 
-Use the `Azure.Identity` client library from the Azure SDK to implement Entra ID authentication in your code. The `Azure.Identity` libraries include the `DefaultAzureCredential` class, which automatically discovers available Azure credentials based on the current environment and tooling available. You can see the full set of supported environment credentials and the order in which they are searched in the [Azure SDK for .NET](/dotnet/api/azure.identity.defaultazurecredential) documentation.
+Use the [`Azure.Identity`](/dotnet/api/overview/azure/identity-readme) client library from the Azure SDK to implement Entra ID authentication in your code. The `Azure.Identity` libraries include the `DefaultAzureCredential` class, which automatically discovers available Azure credentials based on the current environment and tooling available. You can see the full set of supported environment credentials and the order in which they are searched in the [Azure SDK for .NET](/dotnet/api/azure.identity.defaultazurecredential) documentation.
 
 For example, configure Semantic Kernel to authenticate using `DefaultAzureCredential` using the following code:
 
@@ -93,13 +93,13 @@ Kernel kernel = Kernel
     .Build();
 ```
 
-`DefaultAzureCredential` enables apps to be promoted from local development to test environments to production without code changes. For example, during development `DefaultAzureCredential` can discover and use your local user credentials from Visual Studio or the Azure CLI to authenticate to the AI service. When the app is deployed to Azure, `DefaultAzureCredential` can use the managed identity that is assigned with your app.
+`DefaultAzureCredential` enables apps to be promoted from local development to test environments to production without code changes. For example, during development `DefaultAzureCredential` uses your local user credentials from Visual Studio or the Azure CLI to authenticate to the AI service. When the app is deployed to Azure, `DefaultAzureCredential` uses the managed identity that is assigned with your app.
 
 ### Assign roles to your identity
 
 [Azure role-based access control (Azure RBAC)](/azure/role-based-access-control) is a system that provides fine-grained access management of Azure resources. You'll need to assign a role to the security principal used by `DefaultAzureCredential` to connect to an Azure AI service, whether that's an individual user, group, service principal, or managed identity. Roles are a collection of permissions that allow the identity to perform various tasks, such as generate completions or create and delete resources.
 
-Assign roles such as **Cognitive Services OpenAI User** (role ID: '5e0bd9bd-7b93-4f28-af87-19fc36ad61bd') to the relevant identity using tools such as the Azure CLI, Bicep, or the Azure Portal. For example, use the `az role assignment create` command to assign a role using the Azure CLI:
+Assign roles such as **Cognitive Services OpenAI User** (role ID: `5e0bd9bd-7b93-4f28-af87-19fc36ad61bd`) to the relevant identity using tools such as the Azure CLI, Bicep, or the Azure Portal. For example, use the `az role assignment create` command to assign a role using the Azure CLI:
 
 ```azurecli
 az role assignment create \

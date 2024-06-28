@@ -41,6 +41,9 @@ Next, let's expand on retry and circuit breaker patterns.
 
 ### Retry pattern
 
+
+!TODO eShop rewrite with retry patterns - plus diagram.
+
 In a distributed cloud-native environment, calls to services and cloud resources can fail because of transient (short-lived) failures, which typically correct themselves after a brief period of time. Implementing a retry strategy helps a cloud-native service mitigate these scenarios.
 
 The [Retry pattern](/azure/architecture/patterns/retry) enables a service to retry a failed request operation a (configurable) number of times with an exponentially increasing wait time.

@@ -27,13 +27,9 @@ Also consider caching to avoid repetitive computations. If an operation transfor
 
 ## Caching architecture
 
+!TODO replace with Aspire cache approach
+
 Cloud native applications typically implement a distributed caching architecture. The cache is hosted as a cloud-based [backing service](./definition.md#backing-services), separate from the microservices. Figure 5-15 shows the architecture.
-
-![A diagram showing caching in a cloud native app.](media/caching-in-a-cloud-native-app.png)
-
-**Figure 5-15**: Caching in a cloud native app
-
-In the previous figure, note how the cache is independent of and shared by the microservices. In this scenario, the cache is invoked by the [API Gateway](./front-end-communication.md). As discussed in chapter 4, the gateway serves as a front end for all incoming requests. The distributed cache increases system responsiveness by returning cached data whenever possible. Additionally, separating the cache from the services allows the cache to scale up or out independently to meet increased traffic demands.
 
 The previous figure presents a common caching pattern known as the [cache-aside pattern](/azure/architecture/patterns/cache-aside). For an incoming request, you first query the cache (step \#1) for a response. If found, the data is returned immediately. If the data doesn't exist in the cache (known as a [cache miss](https://www.techopedia.com/definition/6308/cache-miss)), it's retrieved from a local database in a downstream service (step \#2). It's then written to the cache for future requests (step \#3), and returned to the caller. Care must be taken to periodically evict cached data so that the system remains timely and consistent.
 

@@ -32,7 +32,7 @@ Each agent has three core building blocks: a persona, plugins, and planners.
 
 ### Personas
 
-An agent's persona is its identity: any plugins and planners that the agent uses are tools, but the persona determines how it uses those tools. You use [instructions](prompt-engineering-dotnet.md#use-instructions-to-tell-the-model-what-to-do) in a prompt to establish an agent's persona.
+An agent's persona is its identity: any plugins and planners that the agent uses are tools, but the persona determines how it uses those tools. You use [instructions](prompt-engineering-dotnet.md#use-instructions-to-improve-the-completion) in a prompt to establish an agent's persona.
 
 For example, you can use instructions to tell an agent that it is helping people manage emails, and to explain its decisions as it makes them. Your prompt might look something like this:
 

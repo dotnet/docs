@@ -702,12 +702,16 @@
             "redirect_url": "/dotnet/core/install/windows"
         },
         {
+            "source_path_from_root": "/docs/core/install/linux-centos.md",
+            "redirect_url": "/dotnet/core/install/linux-rhel#where-is-centos-linux"
+        },
+        {
             "source_path_from_root": "/docs/core/install/linux-package-manager-centos7.md",
-            "redirect_url": "/dotnet/core/install/linux-centos"
+            "redirect_url": "/dotnet/core/install/linux-rhel#where-is-centos-linux"
         },
         {
             "source_path_from_root": "/docs/core/install/linux-package-manager-centos8.md",
-            "redirect_url": "/dotnet/core/install/linux-centos"
+            "redirect_url": "/dotnet/core/install/linux-rhel#where-is-centos-linux"
         },
         {
             "source_path_from_root": "/docs/core/install/linux-package-manager-debian10.md",

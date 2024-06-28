@@ -36,7 +36,6 @@ It's possible that when you install .NET, specific dependencies may not be insta
 
 - [Alpine](linux-alpine.md#dependencies)
 - [Debian](linux-debian.md#dependencies)
-- [CentOS](linux-centos.md#dependencies)
 - [Fedora](linux-fedora.md#dependencies)
 - [RHEL and CentOS Stream](linux-rhel.md#dependencies)
 - [SLES](linux-sles.md#dependencies)

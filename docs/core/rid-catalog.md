@@ -110,7 +110,7 @@ For more information, see [Install .NET on Windows](install/windows.md#supported
 
 ### Linux RIDs
 
-- `linux-x64` (Most desktop distributions like CentOS, Debian, Fedora, Ubuntu, and derivatives)
+- `linux-x64` (Most desktop distributions like CentOS Stream, Debian, Fedora, Ubuntu, and derivatives)
 - `linux-musl-x64` (Lightweight distributions using [musl](https://wiki.musl-libc.org/projects-using-musl.html) like Alpine Linux)
 - `linux-musl-arm64` (Used to build Docker images for 64-bit Arm v8 and minimalistic base images)
 - `linux-arm` (Linux distributions running on Arm like Raspbian on Raspberry Pi Model 2+)

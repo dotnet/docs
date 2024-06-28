@@ -13,6 +13,8 @@ ms.date: 17/04/2024
 
 *Your cloud-native applications must embrace the partial failures that will eventually occur. You must design your application to be resilient enough to recover from failures.*
 
+!TODO replace with eShop approach and diagram
+
 Resiliency is the ability of your system to react to failure and still remain functional. It's not about avoiding failure, but accepting failure and constructing your cloud-native services to recover from them. You want to return to a fully functioning state quickly as possible.
 
 Unlike traditional monolithic applications, where everything runs together in a single process, cloud-native systems embrace a distributed architecture:

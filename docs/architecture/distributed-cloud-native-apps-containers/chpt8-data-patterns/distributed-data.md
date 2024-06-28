@@ -84,19 +84,8 @@ In this figure, the *Update Inventory* operation has failed in the Inventory mic
 
 ## High volume data
 
-Large cloud-native applications often support high-volume data requirements. In these scenarios, traditional data storage techniques can cause bottlenecks. For complex systems that deploy on a large scale, both Command and Query Responsibility Segregation (CQRS) and Event Sourcing may improve application performance.  
+Large cloud-native applications often support high-volume data requirements. In these scenarios, traditional data storage techniques can cause bottlenecks. For complex systems that deploy on a large scale, Event Sourcing may improve application performance.  
 
-### CQRS
-
-[CQRS](/azure/architecture/patterns/cqrs), is an architectural pattern that can help maximize performance, scalability, and security. The pattern separates operations that read data from those operations that write data.
-
-A high volume data scenario can benefit from separate models and data tables for reads and writes. To improve performance, the read operation could query against a highly denormalized representation of the data to avoid expensive repetitive table joins and table locks. The *write* operation, known as a [command](/azure/architecture/guide/technology-choices/messaging#commands), would update against a fully normalized representation of the data that would guarantee consistency. You then need to implement a mechanism to keep both representations in sync. Typically, this can be done via [events](/azure/architecture/guide/technology-choices/messaging#events)
-
-![A diagram showing command and Query Responsibility Segregation.](media/cqrs-implementation.png)
-
-**Figure 5-7**. CQRS implementation
-
-Figure 5-7 shows an implementation of the CQRS pattern. Separate command and query models are implemented. Each data write operation is saved to the write store and then propagated to the read store. This separation enables reads and writes to scale independently. Implementing CQRS can improve application performance for cloud-native services. However, it does result in a more complex design.
 
 ### Event sourcing
 

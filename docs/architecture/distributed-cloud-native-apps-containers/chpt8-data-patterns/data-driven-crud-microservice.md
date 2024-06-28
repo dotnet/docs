@@ -10,6 +10,8 @@ ms.date: 03/04/2024
 
 This section outlines how to create a simple microservice that performs create, read, update, and delete (CRUD) operations on a data source.
 
+!TODO need to replace with new eShop approach - so didn;t update diagrams.
+
 ## Designing a simple CRUD microservice
 
 From a design point of view, this type of containerized microservice is very simple. Perhaps the problem to solve is simple, or perhaps the implementation is only a proof of concept.

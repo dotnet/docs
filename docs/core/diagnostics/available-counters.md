@@ -12,7 +12,7 @@ See the [well-known metrics reference](built-in-metrics.md) instead if you are w
 
 ## System.Runtime counters
 
-The following counters are published as part of .NET runtime (CoreCLR) and are maintained in the [`RuntimeEventSource.cs`](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Private.CoreLib/src/System/Diagnostics/Tracing/RuntimeEventSource.cs).
+The following counters are published as part of .NET runtime (CoreCLR) and are maintained in the [_RuntimeEventSource.cs_](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Private.CoreLib/src/System/Diagnostics/Tracing/RuntimeEventSource.cs).
 
 | Counter | Description | First available in |
 |--|--|--|
@@ -43,7 +43,7 @@ The following counters are published as part of .NET runtime (CoreCLR) and are m
 
 ## Microsoft.AspNetCore.Hosting counters
 
-The following counters are published as part of [ASP.NET Core](/aspnet/core) and are maintained in [`HostingEventSource.cs`](https://github.com/dotnet/aspnetcore/blob/main/src/Hosting/Hosting/src/Internal/HostingEventSource.cs).
+The following counters are published as part of [ASP.NET Core](/aspnet/core) and are maintained in [_HostingEventSource.cs_](https://github.com/dotnet/aspnetcore/blob/main/src/Hosting/Hosting/src/Internal/HostingEventSource.cs).
 
 | Counter | Description | First available in |
 |--|--|--|
@@ -54,7 +54,7 @@ The following counters are published as part of [ASP.NET Core](/aspnet/core) and
 
 ## Microsoft.AspNetCore.Http.Connections counters
 
-The following counters are published as part of [ASP.NET Core SignalR](/aspnet/core/signalr/introduction) and are maintained in [`HttpConnectionsEventSource.cs`](https://github.com/dotnet/aspnetcore/blob/main/src/SignalR/common/Http.Connections/src/Internal/HttpConnectionsEventSource.cs).
+The following counters are published as part of [ASP.NET Core SignalR](/aspnet/core/signalr/introduction) and are maintained in [_HttpConnectionsEventSource.cs_](https://github.com/dotnet/aspnetcore/blob/main/src/SignalR/common/Http.Connections/src/Internal/HttpConnectionsEventSource.cs).
 
 | Counter | Description | First available in |
 |--|--|--|
@@ -66,7 +66,7 @@ The following counters are published as part of [ASP.NET Core SignalR](/aspnet/c
 
 ## Microsoft-AspNetCore-Server-Kestrel counters
 
-The following counters are published as part of the [ASP.NET Core Kestrel web server](/aspnet/core/fundamentals/servers/kestrel) and are maintained in [`KestrelEventSource.cs`](https://github.com/dotnet/aspnetcore/blob/main/src/Servers/Kestrel/Core/src/Internal/Infrastructure/KestrelEventSource.cs).
+The following counters are published as part of the [ASP.NET Core Kestrel web server](/aspnet/core/fundamentals/servers/kestrel) and are maintained in [_KestrelEventSource.cs_](https://github.com/dotnet/aspnetcore/blob/main/src/Servers/Kestrel/Core/src/Internal/Infrastructure/KestrelEventSource.cs).
 
 | Counter | Description | First available in |
 |--|--|--|
@@ -101,7 +101,7 @@ The following counters are published by the HTTP stack and are maintained in [_H
 
 ## System.Net.NameResolution counters
 
-The following counters track metrics related to DNS lookups.
+The following counters track metrics related to DNS lookups and are mantained in [_NameResolutionTelemetry.cs_](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Net.NameResolution/src/System/Net/NameResolutionTelemetry.cs).
 
 | Counter | Description | First available in |
 |--|--|--|
@@ -111,7 +111,7 @@ The following counters track metrics related to DNS lookups.
 
 ## System.Net.Security counters
 
-The following counters track metrics related to the Transport Layer Security protocol.
+The following counters track metrics related to the Transport Layer Security protocol and are mantained in [_NetSecurityTelemetry.cs_](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Net.Security/src/System/Net/Security/NetSecurityTelemetry.cs).
 
 | Counter | Description | First available in |
 |--|--|--|
@@ -132,7 +132,7 @@ The following counters track metrics related to the Transport Layer Security pro
 
 ## System.Net.Sockets counters
 
-The following counters track metrics related to <xref:System.Net.Sockets.Socket>.
+The following counters track metrics related to <xref:System.Net.Sockets.Socket> and are mantained in [_SocketsTelemetry_](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Net.Sockets/src/System/Net/Sockets/SocketsTelemetry.cs).
 
 | Counter | Description | First available in |
 |--|--|--|

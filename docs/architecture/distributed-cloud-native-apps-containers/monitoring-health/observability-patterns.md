@@ -8,6 +8,8 @@ ms.date: 04/06/2022
 
 [!INCLUDE [download-alert](../includes/download-alert.md)]
 
+!TODO sorry didn't get to these images.  Need to create them.
+
 Just as patterns have been developed to aid in the layout of code in applications, there are patterns for operating applications in a reliable way. Three useful patterns in maintaining applications have emerged: **logging**, **monitoring**, and **alerts**.
 
 ## When to use logging

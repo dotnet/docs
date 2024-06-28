@@ -83,7 +83,7 @@ The following counters are published as part of the [ASP.NET Core Kestrel web se
 
 ## System.Net.Http counters
 
-The following counters are published by the HTTP stack and are mantained in  [`HttpTelemetry.AnyOS.cs`](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Net.Http/src/System/Net/Http/HttpTelemetry.AnyOS.cs).
+The following counters are published by the HTTP stack and are maintained in [_HttpTelemetry.AnyOS.cs_](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Net.Http/src/System/Net/Http/HttpTelemetry.AnyOS.cs).
 
 | Counter | Description | First available in |
 |--|--|--|

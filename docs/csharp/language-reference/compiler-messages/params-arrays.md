@@ -12,10 +12,6 @@ f1_keywords:
   - "CS1670"
   - "CS1751"
   - "CS9218"
-  - "CS9219"
-  - "CS9220"
-  - "CS9221"
-  - "CS9222"
   - "CS9223"
   - "CS9224"
   - "CS9225"
@@ -32,10 +28,6 @@ helpviewer_keywords:
   - "CS1670"
   - "CS1751"
   - "CS9218"
-  - "CS9219"
-  - "CS9220"
-  - "CS9221"
-  - "CS9222"
   - "CS9223"
   - "CS9224"
   - "CS9225"
@@ -60,18 +52,11 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS1670**](#method-declaration-rules): *`params` is not valid in this context*
 - [**CS1751**](#method-declaration-rules): *Cannot specify a default value for a parameter array.*
 - [**CS9218**](#parameter-and-argument-type-rules): *The type arguments for method cannot be inferred from the usage because an argument with dynamic type is used and the method has a non-array params collection parameter. Try specifying the type arguments explicitly.*
-- [**CS9219**](#parameter-and-argument-type-rules): *Ambiguity between expanded and normal forms of non-array params collection parameter of, the only corresponding argument has the type `dynamic`. Consider casting the dynamic argument.*
 - [**CS9223**](#other-params-errors): *Creation of params collection results in an infinite chain of invocation of constructor.*
 - [**CS9224**](#other-params-errors): *Method cannot be less visible than the member with params collection.*
 - [**CS9225**](#other-params-errors): *Constructor leaves required member uninitialized.*
 - [**CS9227**](#parameter-and-argument-type-rules): *Type does not contain a definition for a suitable instance `Add` method.*
 - [**CS9228**](#parameter-and-argument-type-rules): *Non-array params collection type must have an applicable constructor that can be called with no arguments.*
-
-In addition, the compiler might produce the following *warning* related to the `params` modifier on method parameters:
-
-- [**CS9220**](#parameter-and-argument-type-rules): *One or more overloads of method having non-array params collection parameter might be applicable only in expanded form which is not supported during dynamic dispatch.*
-- [**CS9221**](#parameter-and-argument-type-rules): *One or more indexer overloads having non-array params collection parameter might be applicable only in expanded form which is not supported during dynamic dispatch.*
-- [**CS9222**](#parameter-and-argument-type-rules): *One or more constructor overloads having non-array params collection parameter might be applicable only in expanded form which is not supported during dynamic dispatch.*
 
 ## Method declaration rules
 
@@ -98,16 +83,9 @@ In versions before C# 12, the `params` modifier can't be used on the parameter o
 The following errors indicate that the type of the parameter used with `params` is invalid:
 
 - **CS9218**: *The type arguments for method cannot be inferred from the usage because an argument with dynamic type is used and the method has a non-array params collection parameter. Try specifying the type arguments explicitly.*
-- **CS9219**: *Ambiguity between expanded and normal forms of non-array params collection parameter of, the only corresponding argument has the type 'dynamic'. Consider casting the dynamic argument.*
 - **CS0225**: *The params parameter must be a single-dimensional array or have a valid collection type*
 - **CS9227**: *Type does not contain a definition for a suitable instance `Add` method.*
 - **CS9228**: *Non-array params collection type must have an applicable constructor that can be called with no arguments.*
-
-The following warnings indicate that the one of the possible overloads might involve dynamic dispatch. The dynamic nature of the argument doesn't participate in overload resolution.
-
-- **CS9220**: *One or more overloads of method having non-array params collection parameter might be applicable only in expanded form which is not supported during dynamic dispatch.*
-- **CS9221**: *One or more indexer overloads having non-array params collection parameter might be applicable only in expanded form which is not supported during dynamic dispatch.*
-- **CS9222**: *One or more constructor overloads having non-array params collection parameter might be applicable only in expanded form which is not supported during dynamic dispatch.*
 
 In versions before C# 13, the `params` modifier is allowed on single-dimensional arrays only. No other types were valid.
 

@@ -11,5 +11,5 @@ ms.topic: include
     dotnet user-secrets init
     dotnet user-secrets set OpenAIKey <your-openai-key>
     ```
-    
+
     The sample now has the user-secrets configured and they can be tested.

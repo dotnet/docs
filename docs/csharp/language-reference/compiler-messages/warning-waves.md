@@ -1,7 +1,7 @@
 ---
 title: "Compiler warning waves"
 description: "C# warning waves are optional warnings that can be reported on code where previously a warning wouldn't have been reported. They represent practices that could be harmful, or potentially elements that may be breaking changes in the future."
-ms.date: 05/11/2022
+ms.date: 07/01/2024
 f1_keywords:
   - "CS7023"
   - "CS8073"
@@ -49,6 +49,8 @@ The `&` operator should not be used on parameters or local variables in async me
 The following code produces CS9123:
 
 :::code language="csharp" source="./snippets/WarningWaves/WaveEight.cs" id="NoAmpersand":::
+
+Beginning with C# 13, this code generates a compiler error.
 
 ## CS8981 - The type name only contains lower-cased ascii characters.
 

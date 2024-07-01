@@ -79,7 +79,7 @@ When you use these modifiers, they describe how the argument is used:
 - `ref readonly` means the method reads, but can't write the value of the argument. The argument *should* be passed by reference.
 - `in` means the method reads, but can't write the value of the argument. The argument will be passed by reference or through a temporary variable.
 
-Properties aren't variables. They're methods, and can't be passed to `ref` parameters. You can't use the previous parameter modifiers in the following kinds of methods:
+You can't use the previous parameter modifiers in the following kinds of methods:
 
 - Async methods, which you define by using the [async](async.md) modifier.
 - Iterator methods, which include a [yield return](../statements/yield.md) or `yield break` statement.
@@ -90,6 +90,8 @@ Properties aren't variables. They're methods, and can't be passed to `ref` param
 - The `ref` keyword can't be used on the first argument of an extension method when the argument isn't a `struct`, or a generic type not constrained to be a struct.
 - The `ref readonly` and `in` keywords can't be used unless the first argument is a `struct`.
 - The `ref readonly` and `in` keywords can't be used on any generic type, even when constrained to be a struct.
+
+Properties aren't variables. They're methods. Properties can't be arguments for `ref` parameters.
 
 ### `ref` parameter modifier
 

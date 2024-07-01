@@ -82,6 +82,8 @@ In C# 13, `async` methods can declare `ref` local variables, or local variables 
 
 This relaxed restriction enables the compiler to allow verifiably safe use of `ref` local variables and `ref struct` types in more places. You can safely use types like <xref:System.ReadOnlySpan%601?displayProperty=nameWithType> in these methods. The compiler tells you if you've violated safety rules.
 
+In the same fashion, C# 13 allows `unsafe` contexts in iterator methods, provided that no unsafe code appears in the same context as the `yield return` statements.
+
 ## See also
 
 - [What's new in .NET 9](../../core/whats-new/dotnet-9/overview.md)

@@ -52,7 +52,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 2. Copy the `yelp_labelled.txt` file into the *Data* directory you created.
 
-3. In Solution Explorer, right-click the `yelp_labeled.txt` file and select **Properties**. Under **Advanced**, change the value of **Copy to Output Directory** to **Copy if newer**.
+3. In Solution Explorer, right-click the `yelp_labelled.txt` file and select **Properties**. Under **Advanced**, change the value of **Copy to Output Directory** to **Copy if newer**.
 
 ### Create classes and define paths
 

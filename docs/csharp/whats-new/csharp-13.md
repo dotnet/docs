@@ -76,13 +76,13 @@ The preceding example creates an array that counts down from 9 to 0. In versions
 
 # `ref` and `unsafe` in iterators and `async` methods
 
-Prior to C# 13, iterator methods (methods that use `yield return`) and `async` methods couldn't declare local `ref` variables, nor could they have an `unsafe` context.
+Before C# 13, iterator methods (methods that use `yield return`) and `async` methods couldn't declare local `ref` variables, nor could they have an `unsafe` context.
 
 In C# 13, `async` methods can declare `ref` local variables, or local variables of a `ref struct` type. However, those variables can't be accessed across an `await` boundary. Neither can they be accessed across a `yield return` boundary.
 
-This relaxed restriction enables the compiler to allow verifiably safe use of `ref` local variables and `ref struct` types in more places. You can safely use types like <xref:System.ReadOnlySpan%601?displayProperty=nameWithType> in these methods. The compiler tells you if you've violated safety rules.
+This relaxed restriction enables the compiler to allow verifiably safe use of `ref` local variables and `ref struct` types in more places. You can safely use types like <xref:System.ReadOnlySpan%601?displayProperty=nameWithType> in these methods. The compiler tells you if you violate safety rules.
 
-In the same fashion, C# 13 allows `unsafe` contexts in iterator methods, provided that no unsafe code appears in the same context as the `yield return` statements.
+In the same fashion, C# 13 allows `unsafe` contexts in iterator methods, provided no unsafe code appears in the same context as the `yield return` statements.
 
 ## See also
 

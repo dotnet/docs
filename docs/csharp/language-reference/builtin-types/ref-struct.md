@@ -12,9 +12,9 @@ You can use the `ref` modifier in the declaration of a [structure type](struct.m
 - A `ref struct` can't implement interfaces.
 - A `ref struct` can't be boxed to <xref:System.ValueType?displayProperty=nameWithType> or <xref:System.Object?displayProperty=nameWithType>.
 - A `ref struct` can't be a type argument.
-- A `ref struct` variable can't be captured by a [lambda expression](../operators/lambda-expressions.md) or a [local function](../../programming-guide/classes-and-structs/local-functions.md).
-- A `ref struct` variable can't be used in the same block as the [`await`](../operators/await.md) expression in an [`async`](../keywords/async.md) method. Prior to C# 13, `ref struct` variables can't be used in an `async` method. However, you can use `ref struct` variables in synchronous methods, for example, in methods that return <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>.
-- Prior to C# 13, a `ref struct` variable can't be used in [iterators](../../iterators.md). Beginning with C# 13, `ref struct` types and `ref` locals may be used in iterators, provided they are not in code segments with the `yield return` statement.
+- A `ref struct` variable can't be captured in a [lambda expression](../operators/lambda-expressions.md) or a [local function](../../programming-guide/classes-and-structs/local-functions.md).
+- A `ref struct` variable can't be used in the same block as the [`await`](../operators/await.md) expression in an [`async`](../keywords/async.md) method. Before C# 13, `ref struct` variables can't be used in an `async` method. However, you can use `ref struct` variables in synchronous methods, for example, in methods that return <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>.
+- Before C# 13, a `ref struct` variable can't be used in [iterators](../../iterators.md). Beginning with C# 13, `ref struct` types and `ref` locals can be used in iterators, provided they aren't in code segments with the `yield return` statement.
 
 You can define a disposable `ref struct`. To do that, ensure that a `ref struct` fits the [disposable pattern](~/_csharplang/proposals/csharp-8.0/using.md#pattern-based-using). That is, it has an instance `Dispose` method, which is accessible, parameterless and has a `void` return type. You can use the [using statement or declaration](../statements/using.md) with an instance of a disposable `ref struct`.
 
@@ -34,13 +34,13 @@ Beginning with C# 11, you can declare a `ref` field in a `ref struct`, as the fo
 
 :::code language="csharp" source="snippets/shared/StructType.cs" id="SnippetRefField":::
 
-A `ref` field may have the `null` value. Use the <xref:System.Runtime.CompilerServices.Unsafe.IsNullRef%60%601(%60%600@)?displayProperty=nameWithType> method to determine if a `ref` field is `null`.
+A `ref` field can have the `null` value. Use the <xref:System.Runtime.CompilerServices.Unsafe.IsNullRef%60%601(%60%600@)?displayProperty=nameWithType> method to determine if a `ref` field is `null`.
 
 You can apply the `readonly` modifier to a `ref` field in the following ways:
 
 - `readonly ref`: You can [ref reassign](../operators/assignment-operator.md#ref-assignment) such a field with the `= ref` operator only inside a constructor or an [`init` accessor](../keywords/init.md). You can assign a value with the `=` operator at any point allowed by the field access modifier.
-- `ref readonly`: At any point, you cannot assign a value with the `=` operator to such a field. However, you can ref reassign a field with the `= ref` operator.
-- `readonly ref readonly`: You can only ref reassign such a field in a constructor or an `init` accessor. At any point, you cannot assign a value to the field.
+- `ref readonly`: At any point, you can't assign a value with the `=` operator to such a field. However, you can ref reassign a field with the `= ref` operator.
+- `readonly ref readonly`: You can only ref reassign such a field in a constructor or an `init` accessor. At any point, you can't assign a value to the field.
 
 The compiler ensures that a reference stored in a `ref` field doesn't outlive its referent.
 

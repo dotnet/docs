@@ -3,7 +3,7 @@ title: "Build resilient HTTP apps: Key development patterns"
 description: Learn how to build resilient HTTP apps using the Microsoft.Extensions.Http.Resilience NuGet package.
 author: IEvangelist
 ms.author: dapine
-ms.date: 10/20/2023
+ms.date: 07/01/2024
 ---
 
 # Build resilient HTTP apps: Key development patterns
@@ -81,13 +81,13 @@ The preceding code adds the standard resilience handler to the <xref:System.Net.
 
 The default configuration chains five resilience strategies in the following order (from the outermost to the innermost):
 
-| Order | Strategy | Description |
-|--:|--|--|
-| **1** | Rate limiter | The rate limiter pipeline limits the maximum number of concurrent requests being sent to the dependency. |
-| **2** | Total request timeout | The total request timeout pipeline applies an overall timeout to the execution, ensuring that the request, including retry attempts, doesn't exceed the configured limit. |
-| **3** | Retry | The retry pipeline retries the request in case the dependency is slow or returns a transient error. |
-| **4** | Circuit breaker | The circuit breaker blocks the execution if too many direct failures or timeouts are detected. |
-| **5** | Attempt timeout | The attempt timeout pipeline limits each request attempt duration and throws if it's exceeded. |
+| Order | Strategy | Description | Defaults |
+|--:|--|--|--|
+| **1** | Rate limiter | The rate limiter pipeline limits the maximum number of concurrent requests being sent to the dependency. | Queue: 1,000<br>Permit: 0 |
+| **2** | Total timeout | The total request timeout pipeline applies an overall timeout to the execution, ensuring that the request, including retry attempts, doesn't exceed the configured limit. | Total timeout: 30s |
+| **3** | Retry | The retry pipeline retries the request in case the dependency is slow or returns a transient error. | Max retries: 3<br>Backoff: Constant<br>Use jitter: `false`<br>Delay:2s |
+| **4** | Circuit breaker | The circuit breaker blocks the execution if too many direct failures or timeouts are detected. | Failure ratio: 10%<br>Min throughput: 100<br>Sampling duration: 30s<br>Break duration: 5s |
+| **5** | Attempt timeout | The attempt timeout pipeline limits each request attempt duration and throws if it's exceeded. | Attempt timeout: 10s |
 
 ## Add standard hedging handler
 
@@ -108,13 +108,13 @@ The standard hedging uses a pool of circuit breakers to ensure that unhealthy en
 
 The preceding code adds the standard hedging handler to the <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder>. The default configuration chains five resilience strategies in the following order (from the outermost to the innermost):
 
-| Order | Strategy | Description |
-|--:|--|--|
-| **1** | Total request timeout | The total request timeout pipeline applies an overall timeout to the execution, ensuring that the request, including hedging attempts, doesn't exceed the configured limit. |
-| **2** | Hedging | The hedging strategy executes the requests against multiple endpoints in case the dependency is slow or returns a transient error. Routing is options, by default it just hedges the URL provided by the original <xref:System.Net.Http.HttpRequestMessage>. |
-| **3** | Rate limiter (per endpoint) | The rate limiter pipeline limits the maximum number of concurrent requests being sent to the dependency. |
-| **4** | Circuit breaker (per endpoint) | The circuit breaker blocks the execution if too many direct failures or timeouts are detected. |
-| **5** | Attempt timeout (per endpoint) | The attempt timeout pipeline limits each request attempt duration and throws if it's exceeded. |
+| Order | Strategy | Description | Defaults |
+|--:|--|--|--|
+| **1** | Total request timeout | The total request timeout pipeline applies an overall timeout to the execution, ensuring that the request, including hedging attempts, doesn't exceed the configured limit. | Total timeout: 30s |
+| **2** | Hedging | The hedging strategy executes the requests against multiple endpoints in case the dependency is slow or returns a transient error. Routing is options, by default it just hedges the URL provided by the original <xref:System.Net.Http.HttpRequestMessage>. | Min attempts: 1<br>Max attempts: 10<br>Delay: 2s |
+| **3** | Rate limiter (per endpoint) | The rate limiter pipeline limits the maximum number of concurrent requests being sent to the dependency. | Queue: 1,000<br>Permit: 0 |
+| **4** | Circuit breaker (per endpoint) | The circuit breaker blocks the execution if too many direct failures or timeouts are detected. | Failure ratio: 10%<br>Min throughput: 100<br>Sampling duration: 30s<br>Break duration: 5s |
+| **5** | Attempt timeout (per endpoint) | The attempt timeout pipeline limits each request attempt duration and throws if it's exceeded. | Timeout: 10s |
 
 ### Customize hedging handler route selection
 

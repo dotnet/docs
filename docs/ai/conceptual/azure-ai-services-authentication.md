@@ -2,9 +2,8 @@
 title: Authenticate to Azure OpenAI using .NET
 description: Learn about the different options to authenticate to Azure OpenAI and other services using .NET
 author: alexwolfmsft
-ms.topic: concept-article
+ms.topic: conceptual
 ms.date: 06/27/2024
-
 ---
 
 # Authenticate to Azure AI Services using .NET
@@ -65,7 +64,7 @@ The workflow to implement Entra ID authentication in your app generally includes
     1. Assign a [managed identity](/entra/identity/managed-identities-azure-resources/overview) to the Azure hosted app.
     1. Assign Azure roles to the managed identity to enable access to the AI service.
 
-Key steps of this workflow are explored in the following sections.
+The key concepts of this workflow are explored in the following sections.
 
 ### Authenticate to Azure locally
 
@@ -93,11 +92,11 @@ Kernel kernel = Kernel
     .Build();
 ```
 
-`DefaultAzureCredential` enables apps to be promoted from local development to production without code changes. For example, during development `DefaultAzureCredential` uses your local user credentials from Visual Studio or the Azure CLI to authenticate to the AI service. When the app is deployed to Azure, `DefaultAzureCredential` uses the managed identity that is assigned with your app.
+`DefaultAzureCredential` enables apps to be promoted from local development to production without code changes. For example, during development `DefaultAzureCredential` uses your local user credentials from Visual Studio or the Azure CLI to authenticate to the AI service. When the app is deployed to Azure, `DefaultAzureCredential` uses the managed identity that is assigned to your app.
 
 ### Assign roles to your identity
 
-[Azure role-based access control (Azure RBAC)](/azure/role-based-access-control) is a system that provides fine-grained access management of Azure resources. You'll need to assign a role to the security principal used by `DefaultAzureCredential` to connect to an Azure AI service, whether that's an individual user, group, service principal, or managed identity. Azure roles are a collection of permissions that allow the identity to perform various tasks, such as generate completions or create and delete resources.
+[Azure role-based access control (Azure RBAC)](/azure/role-based-access-control) is a system that provides fine-grained access management of Azure resources. Assign a role to the security principal used by `DefaultAzureCredential` to connect to an Azure AI service, whether that's an individual user, group, service principal, or managed identity. Azure roles are a collection of permissions that allow the identity to perform various tasks, such as generate completions or create and delete resources.
 
 Assign roles such as **Cognitive Services OpenAI User** (role ID: `5e0bd9bd-7b93-4f28-af87-19fc36ad61bd`) to the relevant identity using tools such as the Azure CLI, Bicep, or the Azure Portal. For example, use the `az role assignment create` command to assign a role using the Azure CLI:
 

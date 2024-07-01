@@ -74,7 +74,7 @@ var countdown = new TimerRemaining()
 
 The preceding example creates an array that counts down from 9 to 0. In versions before C# 13, the `^` operator can't be used in an object initializer. You need to index the elements from the front.
 
-# `ref` and `unsafe` in iterators and `async` methods
+## `ref` and `unsafe` in iterators and `async` methods
 
 Before C# 13, iterator methods (methods that use `yield return`) and `async` methods couldn't declare local `ref` variables, nor could they have an `unsafe` context.
 

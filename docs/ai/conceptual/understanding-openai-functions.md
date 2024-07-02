@@ -2,7 +2,7 @@
 title: "Understanding OpenAI Function Calling"
 description: "Understand how function calling enables you to integrate external tools with your OpenAI application."
 author: haywoodsloan
-ms.topic: concept-article 
+ms.topic: concept-article
 ms.date: 05/14/2024
 
 #customer intent: As a .NET developer, I want to understand OpenAI function calling so that I can integrate external tools with AI completions in my .NET project.
@@ -11,7 +11,7 @@ ms.date: 05/14/2024
 
 # Understand OpenAI function calling
 
-Function calling is an OpenAI model feature that lets you describe functions and their arguments in prompts using JSON. Instead of invoking the function itself, the model returns a JSON output describing what functions should be called and the arguments to use.
+*Function calling* is an OpenAI model feature that lets you describe functions and their arguments in prompts using JSON. Instead of invoking the function itself, the model returns a JSON output describing what functions should be called and the arguments to use.
 
 Function calling simplifies how you connect external tools to your AI model. First, you specify each tool's functions to the model. Then the model decides which functions should be called, based on the prompt question. The model uses the function call results to build a more accurate and consistent response.
 

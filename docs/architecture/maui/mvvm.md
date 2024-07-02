@@ -169,9 +169,9 @@ Using a lambda expression in this way involves a small performance cost because 
 
 ## MVVM Frameworks
 
-The MVVM pattern is well established in .NET, and the community has created many frameworks which help ease this development. Each framework provides a different set of features, but it is standard for them to provide a common view model with an implementation of the `INotifyPropertyChanged` interface. Additional features of MVVM frameworks include custom commands, navigation helpers, dependency injection/service locator components, and UI platform integration. While it is not necessary to use these frameworks, they can speed up and standardize your development. The eShop multi-platform app uses [the .NET Community MVVM Toolkit](/windows/communitytoolkit/mvvm/introduction). When choosing a framework, you should consider your application's needs and your team's strengths. The list below includes some of the more common MVVM frameworks for .NET MAUI.
+The MVVM pattern is well established in .NET, and the community has created many frameworks which help ease this development. Each framework provides a different set of features, but it is standard for them to provide a common view model with an implementation of the `INotifyPropertyChanged` interface. Additional features of MVVM frameworks include custom commands, navigation helpers, dependency injection/service locator components, and UI platform integration. While it is not necessary to use these frameworks, they can speed up and standardize your development. The eShop multi-platform app uses [the .NET Community MVVM Toolkit](/dotnet/communitytoolkit/mvvm/introduction). When choosing a framework, you should consider your application's needs and your team's strengths. The list below includes some of the more common MVVM frameworks for .NET MAUI.
 
-- [.NET Community MVVM Toolkit](/windows/communitytoolkit/mvvm/introduction/)
+- [.NET Community MVVM Toolkit](/dotnet/communitytoolkit/mvvm/introduction/)
 - [ReactiveUI](https://www.reactiveui.net/)
 - [Prism Library](https://prismlibrary.com/)
 
@@ -199,7 +199,7 @@ Provided with .NET MAUI are the `Command` and `Command<T>` classes that implemen
 
 The `Command` or `Command<T>` constructor requires an Action callback object that's called when the `ICommand.Execute` method is invoked. The `CanExecute` method is an optional constructor parameter, and is a Func that returns a bool.
 
-The eShop multi-platform app uses the [RelayCommand](/windows/communitytoolkit/mvvm/relaycommand) and [AsyncRelayCommand](/windows/communitytoolkit/mvvm/asyncrelaycommand). The primary benefit for modern applications is that the `AsyncRelayCommand` provides better functionality for asynchronous operations.
+The eShop multi-platform app uses the [RelayCommand](/dotnet/communitytoolkit/mvvm/relaycommand) and [AsyncRelayCommand](/dotnet/communitytoolkit/mvvm/asyncrelaycommand). The primary benefit for modern applications is that the `AsyncRelayCommand` provides better functionality for asynchronous operations.
 
 The following code shows how a `Command` instance, which represents a register command, is constructed by specifying a delegate to the Register view model method:
 

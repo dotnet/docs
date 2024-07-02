@@ -5,6 +5,8 @@ items:
   href: get-started/dotnet-ai-overview.md
 - name: Learning resources and samples
   href: azure-ai-for-dotnet-developers.md
+- name: What is Semantic Kernel?
+  href: semantic-kernel-dotnet-overview.md
 - name: Quickstarts
   items:
   - name: Summarize text
@@ -55,7 +57,7 @@ items:
     href: how-to/content-filtering.md
 - name: Tutorials
   items:
-  - name: Get started with the .NET enterprise chat sample
+  - name: Get started with the chat using your data sample 
     href: get-started-app-chat-template.md
   - name: Evaluate LLM prompt completions
     href: tutorials/llm-eval.md

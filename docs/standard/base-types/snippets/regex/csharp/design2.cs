@@ -3,38 +3,40 @@ using System;
 using System.Diagnostics;
 using System.Text.RegularExpressions;
 
-public class Example
+public class DesignExample
 {
-   public static void Main()
-   {
-      Stopwatch sw;
-      string[] addresses = { "AAAAAAAAAAA@contoso.com",
+    public static void Main()
+    {
+        Stopwatch sw;
+        string[] addresses = { "AAAAAAAAAAA@contoso.com",
                              "AAAAAAAAAAaaaaaaaaaa!@contoso.com" };
-      // The following regular expression should not actually be used to
-      // validate an email address.
-      string pattern = @"^[0-9A-Z]([-.\w]*[0-9A-Z])*$";
-      string input;
+        // The following regular expression should not actually be used to
+        // validate an email address.
+        string pattern = @"^[0-9A-Z]([-.\w]*[0-9A-Z])*$";
+        string input;
 
-      foreach (var address in addresses) {
-         string mailBox = address.Substring(0, address.IndexOf("@"));
-         int index = 0;
-         for (int ctr = mailBox.Length - 1; ctr >= 0; ctr--) {
-            index++;
+        foreach (var address in addresses)
+        {
+            string mailBox = address.Substring(0, address.IndexOf("@"));
+            int index = 0;
+            for (int ctr = mailBox.Length - 1; ctr >= 0; ctr--)
+            {
+                index++;
 
-            input = mailBox.Substring(ctr, index);
-            sw = Stopwatch.StartNew();
-            Match m = Regex.Match(input, pattern, RegexOptions.IgnoreCase);
-            sw.Stop();
-            if (m.Success)
-               Console.WriteLine("{0,2}. Matched '{1,25}' in {2}",
-                                 index, m.Value, sw.Elapsed);
-            else
-               Console.WriteLine("{0,2}. Failed  '{1,25}' in {2}",
-                                 index, input, sw.Elapsed);
-         }
-         Console.WriteLine();
-      }
-   }
+                input = mailBox.Substring(ctr, index);
+                sw = Stopwatch.StartNew();
+                Match m = Regex.Match(input, pattern, RegexOptions.IgnoreCase);
+                sw.Stop();
+                if (m.Success)
+                    Console.WriteLine("{0,2}. Matched '{1,25}' in {2}",
+                                      index, m.Value, sw.Elapsed);
+                else
+                    Console.WriteLine("{0,2}. Failed  '{1,25}' in {2}",
+                                      index, input, sw.Elapsed);
+            }
+            Console.WriteLine();
+        }
+    }
 }
 
 // The example displays output similar to the following:

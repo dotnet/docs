@@ -36,7 +36,6 @@ It's possible that when you install .NET, specific dependencies may not be insta
 
 - [Alpine](linux-alpine.md#dependencies)
 - [Debian](linux-debian.md#dependencies)
-- [CentOS](linux-centos.md#dependencies)
 - [Fedora](linux-fedora.md#dependencies)
 - [RHEL and CentOS Stream](linux-rhel.md#dependencies)
 - [SLES](linux-sles.md#dependencies)
@@ -113,6 +112,8 @@ For more information, see [dotnet-install scripts reference](../tools/dotnet-ins
 
 To enable .NET on the command line, see [Set environment variables system-wide](#set-environment-variables-system-wide).
 
+To learn how to use the .NET CLI, see [.NET CLI overview](../tools/index.md).
+
 ## Manual install
 
 <!-- Note, this content is copied in macos.md. Any fixes should be applied there too, though content may be different -->
@@ -155,6 +156,8 @@ You can also install .NET to the home directory identified by the `HOME` variabl
 export DOTNET_ROOT=$HOME/.dotnet
 ```
 
+To learn how to use the .NET CLI, see [.NET CLI overview](../tools/index.md).
+
 ## Verify downloaded binaries
 
 [!INCLUDE [verify-download-intro](includes/verify-download-intro.md)]
@@ -189,5 +192,6 @@ Set the following two environment variables in your shell profile:
 
 ## Next steps
 
+- [.NET CLI overview](../tools/index.md)
 - [How to enable TAB completion for the .NET CLI](../tools/enable-tab-autocomplete.md)
 - [Tutorial: Create a console application with .NET SDK using Visual Studio Code](../tutorials/with-visual-studio-code.md)

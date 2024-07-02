@@ -62,7 +62,7 @@ For containers, [`FROM` statements](https://github.com/dotnet/dotnet-docker/blob
 
 The following Dockerfile example demonstrates pulling an ASP.NET Core 8.0 image.
 
-```dockerfile=
+```dockerfile
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
 ```
 

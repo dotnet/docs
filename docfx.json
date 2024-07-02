@@ -77,7 +77,8 @@
             {
                 "files": [
                     "Compiler Breaking Changes - DotNet 7.md",
-                    "Compiler Breaking Changes - DotNet 8.md"
+                    "Compiler Breaking Changes - DotNet 8.md",
+                    "Compiler Breaking Changes - DotNet 9.md"
                 ],
                 "src": "_roslyn/docs/compilers/CSharp",
                 "dest": "csharp/whats-new/breaking-changes",
@@ -490,9 +491,10 @@
                 "_csharplang/proposals/csharp-10.0/*.md": "08/07/2021",
                 "_csharplang/proposals/csharp-11.0/*.md": "09/30/2022",
                 "_csharplang/proposals/csharp-12.0/*.md": "08/15/2023",
-                "_csharplang/proposals/*.md": "05/15/2024",
+                "_csharplang/proposals/*.md": "06/28/2024",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 7.md": "11/08/2022",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 8.md": "09/26/2023",
+                "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 9.md": "06/26/2024",
                 "_vblang/spec/*.md": "07/21/2017"
             },
             "ms.subservice": {
@@ -660,8 +662,10 @@
                 "_csharplang/proposals/lock-object.md": "Obey lock object semantics for lock statements",
                 "_csharplang/proposals/method-group-natural-type-improvements.md": "Method group natural type improvements",
                 "_csharplang/proposals/params-collections.md": "Params collections",
+                "_csharplang/proposals/ref-unsafe-in-terators-async.md": "Allow ref and unsafe in iterators and async methods",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 7.md": "C# compiler breaking changes since C# 10",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 8.md": "C# compiler breaking changes since C# 11",
+                "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 9.md": "C# compiler breaking changes since C# 12",
                 "_vblang/spec/introduction.md": "Introduction",
                 "_vblang/spec/lexical-grammar.md": "Lexical grammar",
                 "_vblang/spec/preprocessing-directives.md": "Preprocessing directives",
@@ -775,8 +779,10 @@
                 "_csharplang/proposals/lock-object.md": "Special-case how `System.Threading.Lock` interacts with the `lock` keyword by calling its `EnterScope` method. Add static analysis warnings to prevent accidental misuse of the type where possible.",
                 "_csharplang/proposals/method-group-natural-type-improvements.md": "This proposal refines the determination of the natural type of a method group by considering candidates scope-by-scope and pruning at each scope.",
                 "_csharplang/proposals/params-collections.md": "Allow the `params` modifier on collection types beyond arrays, including `IEnumerable` types.",
+                "_csharplang/proposals/ref-unsafe-in-terators-async.md": "This proposal modifies restrictions to enable ref local variables and unsafe blocks in iterators and async methods",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 7.md": "Learn about any breaking changes since the initial release of C# 10",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 8.md": "Learn about any breaking changes since the initial release of C# 11",
+                "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 9.md": "Learn about any breaking changes since the initial release of C# 12",
                 "_vblang/spec/introduction.md": "This chapter provides and introduction to the Visual Basic language.",
                 "_vblang/spec/lexical-grammar.md": "This chapter defines the lexical grammar for Visual Basic.",
                 "_vblang/spec/preprocessing-directives.md": "This chapter defines the preprocessing directives allowed in Visual Basic",
@@ -839,6 +845,10 @@
                 "docs/ai/**/**.md": "build-2024-intelligent-apps",
                 "docs/framework/**/*.md": "UpdateFrequency5",
                 "docs/visual-basic/**/*.md": "UpdateFrequency5"
+            },
+            "ms.collection": {
+                "docs/ai/**/**.md": "ce-skilling-ai-copilot",
+                "docs/ai/**/**.yml": "ce-skilling-ai-copilot"
             },
             "no-loc": {
                 "**/**.md": [

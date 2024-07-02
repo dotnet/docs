@@ -13,7 +13,7 @@ zone_pivot_groups: openai-library
 # Get insight about your data from an .NET Azure AI chat app
 
 <!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="open-ai"
+:::zone target="docs" pivot="openai"
 <!-- markdownlint-enable MD044 -->
 
 Get started with Semantic Kernel and the `gpt-35-turbo` model, from a simple .NET 8.0 console application. Use the AI model to get analytics and information about your previous hikes. It consists of a simple console application, running locally, that will read the file `hikes.md` and send request to an Azure OpenAI service deployed in your Azure subscription and provide the result in the console. Follow these steps to provision Azure OpenAI and learn how to use Semantic Kernel.

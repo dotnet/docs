@@ -83,11 +83,24 @@ The default configuration chains five resilience strategies in the following ord
 
 | Order | Strategy | Description | Defaults |
 |--:|--|--|--|
-| **1** | Rate limiter | The rate limiter pipeline limits the maximum number of concurrent requests being sent to the dependency. | Queue: 1,000<br>Permit: 0 |
+| **1** | Rate limiter | The rate limiter pipeline limits the maximum number of concurrent requests being sent to the dependency. | Queue: `0`<br>Permit: `1_000` |
 | **2** | Total timeout | The total request timeout pipeline applies an overall timeout to the execution, ensuring that the request, including retry attempts, doesn't exceed the configured limit. | Total timeout: 30s |
-| **3** | Retry | The retry pipeline retries the request in case the dependency is slow or returns a transient error. | Max retries: 3<br>Backoff: Exponential<br>Use jitter: `true`<br>Delay:2s |
-| **4** | Circuit breaker | The circuit breaker blocks the execution if too many direct failures or timeouts are detected. | Failure ratio: 10%<br>Min throughput: 100<br>Sampling duration: 30s<br>Break duration: 5s |
+| **3** | Retry | The retry pipeline retries the request in case the dependency is slow or returns a transient error. | Max retries: `3`<br>Backoff: `Exponential`<br>Use jitter: `true`<br>Delay:2s |
+| **4** | Circuit breaker | The circuit breaker blocks the execution if too many direct failures or timeouts are detected. | Failure ratio: 10%<br>Min throughput: `100`<br>Sampling duration: 30s<br>Break duration: 5s |
 | **5** | Attempt timeout | The attempt timeout pipeline limits each request attempt duration and throws if it's exceeded. | Attempt timeout: 10s |
+
+#### Retries and circuit breakers
+
+The retry and circuit breaker strategies both handle a set of specific HTTP status codes and exceptions. Consider the following HTTP status codes:
+
+- HTTP 500 and above (Server errors)
+- HTTP 408 (Request timeout)
+- HTTP 429 (Too many requests)
+
+Additionally, these strategies handle the following exceptions:
+
+- `HttpRequestException`
+- `TimeoutRejectedException`
 
 ## Add standard hedging handler
 
@@ -111,9 +124,9 @@ The preceding code adds the standard hedging handler to the <xref:Microsoft.Exte
 | Order | Strategy | Description | Defaults |
 |--:|--|--|--|
 | **1** | Total request timeout | The total request timeout pipeline applies an overall timeout to the execution, ensuring that the request, including hedging attempts, doesn't exceed the configured limit. | Total timeout: 30s |
-| **2** | Hedging | The hedging strategy executes the requests against multiple endpoints in case the dependency is slow or returns a transient error. Routing is options, by default it just hedges the URL provided by the original <xref:System.Net.Http.HttpRequestMessage>. | Min attempts: 1<br>Max attempts: 10<br>Delay: 2s |
-| **3** | Rate limiter (per endpoint) | The rate limiter pipeline limits the maximum number of concurrent requests being sent to the dependency. | Queue: 1,000<br>Permit: 0 |
-| **4** | Circuit breaker (per endpoint) | The circuit breaker blocks the execution if too many direct failures or timeouts are detected. | Failure ratio: 10%<br>Min throughput: 100<br>Sampling duration: 30s<br>Break duration: 5s |
+| **2** | Hedging | The hedging strategy executes the requests against multiple endpoints in case the dependency is slow or returns a transient error. Routing is options, by default it just hedges the URL provided by the original <xref:System.Net.Http.HttpRequestMessage>. | Min attempts: `1`<br>Max attempts: `10`<br>Delay: 2s |
+| **3** | Rate limiter (per endpoint) | The rate limiter pipeline limits the maximum number of concurrent requests being sent to the dependency. | Queue: `0`<br>Permit: `1_000` |
+| **4** | Circuit breaker (per endpoint) | The circuit breaker blocks the execution if too many direct failures or timeouts are detected. | Failure ratio: 10%<br>Min throughput: `100`<br>Sampling duration: 30s<br>Break duration: 5s |
 | **5** | Attempt timeout (per endpoint) | The attempt timeout pipeline limits each request attempt duration and throws if it's exceeded. | Timeout: 10s |
 
 ### Customize hedging handler route selection

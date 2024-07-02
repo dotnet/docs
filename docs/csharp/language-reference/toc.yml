@@ -466,7 +466,9 @@ items:
       CS9198, CS9199, CS9200, CS9201
   - name: Iterator methods
     href: ./iterator-yield.md
-    displayName: yield return, yield break, CS9237, CS9238, CS9239
+    displayName: > 
+      yield return, yield break, 
+      CS1622, CS1624, CS1625, CS1626, CS1627, CS1629, CS1631, CS1637, CS4013, CS8154, CS8176, CS9237, CS9238, CS9239
   - name: Params modifier
     href: ./compiler-messages/params-arrays.md
     displayName: > 
@@ -1652,22 +1654,8 @@ items:
       href: ../misc/cs1619.md
     - name: CS1620
       href: ../misc/cs1620.md
-    - name: CS1622
-      href: ../misc/cs1622.md
-    - name: CS1624
-      href: ../misc/cs1624.md
-    - name: CS1625
-      href: ../misc/cs1625.md
-    - name: CS1626
-      href: ../misc/cs1626.md
-    - name: CS1627
-      href: ../misc/cs1627.md
-    - name: CS1629
-      href: ../misc/cs1629.md
     - name: CS1630
       href: ../misc/cs1630.md
-    - name: CS1631
-      href: ../misc/cs1631.md
     - name: CS1637
       href: ../misc/cs1637.md
     - name: CS1638
@@ -1916,8 +1904,6 @@ items:
       href: ./compiler-messages/cs4008.md
     - name: CS4009
       href: ../misc/CS4009.md
-    - name: CS4013
-      href: ./compiler-messages/cs4013.md
     - name: CS4032
       href: ./compiler-messages/cs4032.md
     - name: CS4033
@@ -1962,8 +1948,6 @@ items:
       href: ./compiler-messages/cs8151.md
     - name: CS8152
       href: ./compiler-messages/cs8152.md
-    - name: CS8154
-      href: ./compiler-messages/cs8154.md
     - name: CS8156
       href: ./compiler-messages/cs8156.md
     - name: CS8157
@@ -1990,8 +1974,6 @@ items:
       href: ./compiler-messages/cs8173.md
     - name: CS8174
       href: ./compiler-messages/cs8174.md
-    - name: CS8176
-      href: ./compiler-messages/cs8176.md
     - name: CS8177
       href: ./compiler-messages/cs8177.md
     - name: CS8178

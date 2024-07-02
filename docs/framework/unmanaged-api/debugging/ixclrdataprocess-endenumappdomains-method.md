@@ -1,23 +1,23 @@
 ---
-description: "Learn more about: IXCLRDataProcess::EndEnumMethodInstancesByAddress Method"
-title: "IXCLRDataProcess::EndEnumMethodInstancesByAddress Method"
-ms.date: "01/16/2019"
+description: "Learn more about: IXCLRDataProcess::EndEnumAppDomains Method"
+title: "IXCLRDataProcess::EndEnumAppDomains Method"
+ms.date: "07/02/2024"
 api.name:
-  - "IXCLRDataProcess::EndEnumMethodInstancesByAddress Method"
+  - "IXCLRDataProcess::EndEnumAppDomains Method"
 api.location:
   - "mscordacwks.dll"
 api.type:
   - "COM"
 f1.keywords:
-  - "IXCLRDataProcess::EndEnumMethodInstancesByAddress Method"
+  - "IXCLRDataProcess::EndEnumAppDomains Method"
 helpviewer.keywords:
-  - "IXCLRDataProcess::EndEnumMethodInstancesByAddress Method [.NET Framework debugging]"
+  - "IXCLRDataProcess::EndEnumAppDomains Method [.NET Framework debugging]"
 topic_type:
   - "apiref"
-author: "cshung"
-ms.author: "andrewau"
+author: "wmessmer"
+ms.author: "wmessmer"
 ---
-# IXCLRDataProcess::EndEnumMethodInstancesByAddress Method
+# IXCLRDataProcess::EndEnumAppDomains Method
 
 Releases the resources used by internal iterators used during instance enumeration.
 
@@ -26,7 +26,7 @@ Releases the resources used by internal iterators used during instance enumerati
 ## Syntax
 
 ```cpp
-HRESULT EndEnumMethodInstancesByAddress(
+HRESULT EndEnumAppDomains(
     [in] CLRDATA_ENUM handle
 );
 ```
@@ -34,11 +34,11 @@ HRESULT EndEnumMethodInstancesByAddress(
 ## Parameters
 
 `handle`\
-[out] A handle for enumerating the method instances.
+[out] A handle for enumerating the AppDomains.
 
 ## Remarks
 
-The provided method is part of the `IXCLRDataProcess` interface and corresponds to the 30th slot of the virtual method table.
+The provided method is part of the `IXCLRDataProcess` interface and corresponds to the 19th slot of the virtual method table.
 
 ## Requirements
 
@@ -49,6 +49,8 @@ The provided method is part of the `IXCLRDataProcess` interface and corresponds 
 
 ## See also
 
-- [CLRDataSourceType Enumeration](clrdatasourcetype-enumeration.md)
 - [Debugging](index.md)
 - [IXCLRDataProcess Interface](ixclrdataprocess-interface.md)
+- [IXCLRDataAppDomain Interface](ixclrdataappdomain-interface.md)
+- [IXCLRDataProcess::StartEnumAppDomains Method](ixclrdataprocess-startenumappdomains-method.md)
+- [IXCLRDataProcess::EnumAppDomain Method](ixclrdataprocess-enumappdomain-method.md)

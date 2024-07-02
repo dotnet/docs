@@ -1,52 +1,44 @@
 ---
-description: "Learn more about: IXCLRDataProcess::StartEnumMethodInstancesByAddress Method"
-title: "IXCLRDataProcess::StartEnumMethodInstancesByAddress Method"
-ms.date: "01/16/2019"
+description: "Learn more about: IXCLRDataProcess::StartEnumAppDomains Method"
+title: "IXCLRDataProcess::StartEnumAppDomains Method"
+ms.date: "07/02/2024"
 api.name:
-  - "IXCLRDataProcess::StartEnumMethodInstancesByAddress Method"
+  - "IXCLRDataProcess::StartEnumAppDomains Method"
 api.location:
   - "mscordacwks.dll"
 api.type:
   - "COM"
 f1.keywords:
-  - "IXCLRDataProcess::StartEnumMethodInstancesByAddress Method"
+  - "IXCLRDataProcess::StartEnumAppDomains Method"
 helpviewer.keywords:
-  - "IXCLRDataProcess::StartEnumMethodInstancesByAddress Method [.NET Framework debugging]"
+  - "IXCLRDataProcess::StartEnumAppDomains Method [.NET Framework debugging]"
 topic_type:
   - "apiref"
-author: "cshung"
-ms.author: "andrewau"
+author: "wmessmer"
+ms.author: "wmessmer"
 ---
-# IXCLRDataProcess::StartEnumMethodInstancesByAddress Method
+# IXCLRDataProcess::StartEnumAppDomains Method
 
-Provides a handle to enumerate the method instances of `AppDomain` starting at a given address.
+Provides a handle to enumerate the AppDomains within the process.
 
 [!INCLUDE[debugging-api-recommended-note](../../../../includes/debugging-api-recommended-note.md)]
 
 ## Syntax
 
 ```cpp
-HRESULT StartEnumMethodInstancesByAddress(
-    [in] CLRDATA_ADDRESS     address,
-    [in] IXCLRDataAppDomain *appDomain,
-    [out] CLRDATA_ENUM      *handle
+HRESULT StartEnumAppDomains(
+    [out] CLRDATA_ENUM *handle
 );
 ```
 
 ## Parameters
 
-`address`\
-[in] The address of the first method instance.
-
-`appDomain`\
-[in] The AppDomain of the method instances.
-
 `handle`\
-[out] A handle for enumerating the method instances.
+[out] A handle for enumerating the AppDomains.
 
 ## Remarks
 
-The provided method is part of the `IXCLRDataProcess` interface and corresponds to the 28th slot of the virtual method table.
+The provided method is part of the `IXCLRDataProcess` interface and corresponds to the 17th slot of the virtual method table.
 
 ## Requirements
 
@@ -57,6 +49,8 @@ The provided method is part of the `IXCLRDataProcess` interface and corresponds 
 
 ## See also
 
-- [CLRDataSourceType Enumeration](clrdatasourcetype-enumeration.md)
 - [Debugging](index.md)
 - [IXCLRDataProcess Interface](ixclrdataprocess-interface.md)
+- [IXCLRDataAppDomain Interface](ixclrdataappdomain-interface.md)
+- [IXCLRDataProcess::EnumAppDomain Method](ixclrdataprocess-enumappdomain-method.md)
+- [IXCLRDataProcess::EndEnumAppDomains Method](ixclrdataprocess-endenumappdomains-method.md)

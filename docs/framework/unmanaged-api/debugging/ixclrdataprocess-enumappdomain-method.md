@@ -1,58 +1,60 @@
 ---
-description: "Learn more about: IXCLRDataProcess::EnumMethodInstanceByAddress Method"
-title: "IXCLRDataProcess::EnumMethodInstanceByAddress Method"
-ms.date: "01/16/2019"
+description: "Learn more about: IXCLRDataProcess::EnumAppDomain Method"
+title: "IXCLRDataProcess::EnumAppDomain Method"
+ms.date: "07/02/2024"
 api.name:
-  - "IXCLRDataProcess::EnumMethodInstanceByAddress Method"
+  - "IXCLRDataProcess::EnumAppDomain Method"
 api.location:
   - "mscordacwks.dll"
 api.type:
   - "COM"
 f1.keywords:
-  - "IXCLRDataProcess::EnumMethodInstanceByAddress Method"
+  - "IXCLRDataProcess::EnumAppDomain Method"
 helpviewer.keywords:
-  - "IXCLRDataProcess::EnumMethodInstanceByAddress Method [.NET Framework debugging]"
+  - "IXCLRDataProcess::EnumAppDomain Method [.NET Framework debugging]"
 topic_type:
   - "apiref"
-author: "cshung"
-ms.author: "andrewau"
+author: "wmessmer"
+ms.author: "wmessmer"
 ---
-# IXCLRDataProcess::EnumMethodInstanceByAddress Method
+# IXCLRDataProcess::EnumAppDomain Method
 
-Enumerates the method instances of this process starting at an address offset.
+Enumerates the AppDomains of this process.
 
 [!INCLUDE[debugging-api-recommended-note](../../../../includes/debugging-api-recommended-note.md)]
 
 ## Syntax
 
 ```cpp
-HRESULT EnumMethodInstanceByAddress(
-    [in] CLRDATA_ENUM              *handle,
-    [out] IXCLRDataMethodInstance **method
+HRESULT EnumAppDomain(
+    [in] CLRDATA_ENUM *handle,
+    [out] IXCLRAppDomain **appDomain
 );
 ```
 
 ## Parameters
 
 `handle`\
-[in] A handle for enumerating the method instances.
+[in] A handle for enumerating the AppDomains.
 
-`mod`\
-[out] The enumerated method instance.
+`appDomain`\
+[out] The enumerated AppDomain.
 
 ## Remarks
 
-The provided method is part of the `IXCLRDataProcess` interface and corresponds to the 29th slot of the virtual method table.
+The provided method is part of the `IXCLRDataProcess` interface and corresponds to the 18th slot of the virtual method table.
 
 ## Requirements
 
-**Platforms:** See [System Requirements](../../get-started/system-requirements.md).
-**Header:** None
-**Library:** None
-**.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
+**Header:** None  
+**Library:** None  
+**.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
 ## See also
 
-- [CLRDataSourceType Enumeration](clrdatasourcetype-enumeration.md)
 - [Debugging](index.md)
 - [IXCLRDataProcess Interface](ixclrdataprocess-interface.md)
+- [IXCLRDataAppDomain Interface](ixclrdataappdomain-interface.md)
+- [IXCLRDataProcess::StartEnumAppDomains Method](ixclrdataprocess-startenumappdomains-method.md)
+- [IXCLRDataProcess::EndEnumAppDomains Method](ixclrdataprocess-endenumappdomains-method.md)

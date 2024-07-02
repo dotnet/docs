@@ -8,7 +8,7 @@ ms.date: 06/27/2024
 
 # Authenticate to Azure AI Services using .NET
 
-Application requests to Azure AI Services must be authenticated. In this article you explore the options available to authenticate to Azure OpenAI and other AI services using .NET. These concepts apply to the Semantic Kernel SDK, as well as SDKs from specific services such as Azure OpenAI. Most AI services offer two primary ways to authenticate apps and users:
+Application requests to Azure AI Services must be authenticated. In this article, you explore the options available to authenticate to Azure OpenAI and other AI services using .NET. These concepts apply to the Semantic Kernel SDK, as well as SDKs from specific services such as Azure OpenAI. Most AI services offer two primary ways to authenticate apps and users:
 
 - **Key-based authentication** provides access to an Azure service using secret key values. These secret values are sometimes known as API keys or access keys depending on the service.
 - **Microsoft Entra ID** provides a comprehensive identity and access management solution to ensure that the correct identities have the correct level of access to different Azure resources.
@@ -52,23 +52,23 @@ Microsoft Entra ID is a cloud-based identity and access management service that 
 - Detects [different credentials across environments](/python/api/azure-identity/azure.identity.defaultazurecredential?view=azure-python) without requiring code changes.
 - Automatically handles administrative maintenance tasks such as rotating underlying keys.
 
-The workflow to implement Entra ID authentication in your app generally includes the following:
+The workflow to implement Microsoft Entra authentication in your app generally includes the following:
 
 - Local development:
     1. Sign-in to Azure using a local dev tool such as the Azure CLI or Visual Studio.
     1. Configure your code to use the [`Azure.Identity`](/dotnet/api/overview/azure/identity-readme) client library and `DefaultAzureCredential` class.
     1. Assign Azure roles to the account you signed-in with to enable access to the AI service.
 
-- Azure hosted app:
+- Azure-hosted app:
     1. Deploy the app to Azure after configuring it to authenticate using the `Azure.Identity` client library.
-    1. Assign a [managed identity](/entra/identity/managed-identities-azure-resources/overview) to the Azure hosted app.
+    1. Assign a [managed identity](/entra/identity/managed-identities-azure-resources/overview) to the Azure-hosted app.
     1. Assign Azure roles to the managed identity to enable access to the AI service.
 
 The key concepts of this workflow are explored in the following sections.
 
 ### Authenticate to Azure locally
 
-When developing apps locally that connect to Azure AI Services, authenticate to Azure using a tool such as Visual Studio or the Azure CLI. Your local credentials can be discovered by the `Azure.Identity` client library and used to authenticate your app to Azure services, as described in the [configure the app code](/#configure-your-app-code) section.
+When developing apps locally that connect to Azure AI Services, authenticate to Azure using a tool such as Visual Studio or the Azure CLI. Your local credentials can be discovered by the `Azure.Identity` client library and used to authenticate your app to Azure services, as described in the [Configure the app code](/#configure-your-app-code) section.
 
 For example, to authenticate to Azure locally using the Azure CLI, run the following command:
 
@@ -78,7 +78,7 @@ az login
 
 ### Configure the app code
 
-Use the [`Azure.Identity`](/dotnet/api/overview/azure/identity-readme) client library from the Azure SDK to implement Entra ID authentication in your code. The `Azure.Identity` libraries include the `DefaultAzureCredential` class, which automatically discovers available Azure credentials based on the current environment and tooling available. Visit the [Azure SDK for .NET](/dotnet/api/azure.identity.defaultazurecredential) documentation for the full set of supported environment credentials and the order in which they are searched.
+Use the [`Azure.Identity`](/dotnet/api/overview/azure/identity-readme) client library from the Azure SDK to implement Microsoft Entra authentication in your code. The `Azure.Identity` libraries include the `DefaultAzureCredential` class, which automatically discovers available Azure credentials based on the current environment and tooling available. Visit the [Azure SDK for .NET](/dotnet/api/azure.identity.defaultazurecredential) documentation for the full set of supported environment credentials and the order in which they are searched.
 
 For example, configure Semantic Kernel to authenticate using `DefaultAzureCredential` using the following code:
 
@@ -116,7 +116,7 @@ Learn more about Azure RBAC using the following resources:
 
 ### Assign a managed identity to your app
 
-In most scenarios, Azure hosted applications should use a [managed identity](/entra/identity/managed-identities-azure-resources/overview) to connect to other services such as Azure OpenAI. Managed identities provide an automatically managed identity in Microsoft Entra ID for applications to use when connecting to resources that support Microsoft Entra authentication. `DefaultAzureCredential` discovers the identity associated with your app and uses it to authenticate to other Azure services.
+In most scenarios, Azure hosted applications should use a [managed identity](/entra/identity/managed-identities-azure-resources/overview) to connect to other services such as Azure OpenAI. Managed identities provide an fully managed identity in Microsoft Entra ID for applications to use when connecting to resources that support Microsoft Entra authentication. `DefaultAzureCredential` discovers the identity associated with your app and uses it to authenticate to other Azure services.
 
 There are two types of managed identities you can assign to your app:
 

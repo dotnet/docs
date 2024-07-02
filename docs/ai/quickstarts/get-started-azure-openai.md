@@ -13,7 +13,7 @@ zone_pivot_groups: openai-library
 # Build an AI chat app with .NET
 
 <!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="open-ai"
+:::zone target="docs" pivot="openai"
 <!-- markdownlint-enable MD044 -->
 
 Get started with Semantic Kernel by creating a simple .NET 8 console chat application. The application will run locally and use the OpenAI `gpt-3.5-turbo` model. Follow these steps to get access to OpenAI and learn how to use Semantic Kernel.
@@ -31,7 +31,7 @@ Get started with Semantic Kernel by creating a simple .NET 8 console chat applic
 ## Trying HikerAI sample
 
 <!-- markdownlint-disable MD029 MD044 -->
-:::zone target="docs" pivot="open-ai"
+:::zone target="docs" pivot="openai"
 
 1. From a terminal or command prompt, navigate to the `open-ai\02-HikerAI` directory.
 
@@ -60,7 +60,7 @@ If you get an error message, the Azure OpenAI resources may not have finished de
 <!-- markdownlint-enable MD029 MD044  -->
 
 <!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="open-ai"
+:::zone target="docs" pivot="openai"
 <!-- markdownlint-enable MD044 -->
 
 ## Understanding the code
@@ -87,7 +87,7 @@ Once the `OpenAIChatCompletionService` service is created, we provide more conte
 :::zone-end
 
 <!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="azure-open-ai"
+:::zone target="docs" pivot="azure-openai"
 <!-- markdownlint-enable MD044 -->
 
 ## Understanding the code
@@ -158,7 +158,7 @@ Console.WriteLine($"{chatHistory.Last().Role} >>> {chatHistory.Last().Content}")
 Customize the system prompt and user message to see how the model responds to help you find a hike that you'll like.
 
 <!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="azure-open-ai"
+:::zone target="docs" pivot="azure-openai"
 <!-- markdownlint-enable MD044 -->
 ## Clean up resources
 

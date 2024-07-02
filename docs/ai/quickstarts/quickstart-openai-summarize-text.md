@@ -13,7 +13,7 @@ zone_pivot_groups: openai-library
 # Summarize text using Azure AI chat app with .NET
 
 <!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="semantic-kernel"
+:::zone target="docs" pivot="openai"
 <!-- markdownlint-enable MD044 -->
 
 Get started with Semantic Kernel by creating a simple .NET 8 console chat application. The application will run locally and use the OpenAI `gpt-35-turbo` model deployed into an Azure OpenAI account. Follow these steps to provision Azure OpenAI and learn how to use Semantic Kernel.
@@ -21,7 +21,7 @@ Get started with Semantic Kernel by creating a simple .NET 8 console chat applic
 :::zone-end
 
 <!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="azure-openai-sdk"
+:::zone target="docs" pivot="azure-openai"
 <!-- markdownlint-enable MD044 -->
 
 Get started with the .NET Azure OpenAI SDK by creating a simple .NET 8 console chat application. The application will run locally and use the OpenAI `gpt-35-turbo` model deployed into an Azure OpenAI account. Follow these steps to provision Azure OpenAI and learn how to use the .NET Azure OpenAI SDK.
@@ -33,13 +33,13 @@ Get started with the .NET Azure OpenAI SDK by creating a simple .NET 8 console c
 ## Trying Hiking Benefits Summary sample
 
 <!-- markdownlint-disable MD029 MD044 -->
-:::zone target="docs" pivot="semantic-kernel"
+:::zone target="docs" pivot="openai"
 
 1. From a terminal or command prompt, navigate to the `semantic-kernel\01-HikeBenefitsSummary` directory.
 
 :::zone-end
 
-:::zone target="docs" pivot="azure-openai-sdk"
+:::zone target="docs" pivot="azure-openai"
 
 1. From a terminal or command prompt, navigate to the `azure-openai-sdk\01-HikeBenefitsSummary` directory.
 
@@ -55,7 +55,7 @@ Get started with the .NET Azure OpenAI SDK by creating a simple .NET 8 console c
 <!-- markdownlint-enable MD029 MD044  -->
 
 <!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="semantic-kernel"
+:::zone target="docs" pivot="openai"
 <!-- markdownlint-enable MD044 -->
 
 ## Understanding the code
@@ -111,7 +111,7 @@ Customize the text content of the file or the length of the summary to see the d
 :::zone-end
 
 <!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="azure-openai-sdk"
+:::zone target="docs" pivot="azure-openai"
 <!-- markdownlint-enable MD044 -->
 
 ## Understanding the code

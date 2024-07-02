@@ -13,14 +13,14 @@ zone_pivot_groups: openai-library
 # Get insight about your data from an .NET Azure AI chat app
 
 <!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="semantic-kernel"
+:::zone target="docs" pivot="open-ai"
 <!-- markdownlint-enable MD044 -->
 
 Get started with Semantic Kernel and the `gpt-35-turbo` model, from a simple .NET 8.0 console application. Use the AI model to get analytics and information about your previous hikes. It consists of a simple console application, running locally, that will read the file `hikes.md` and send request to an Azure OpenAI service deployed in your Azure subscription and provide the result in the console. Follow these steps to provision Azure OpenAI and learn how to use Semantic Kernel.
 :::zone-end
 
 <!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="azure-openai-sdk"
+:::zone target="docs" pivot="azure-openai"
 <!-- markdownlint-enable MD044 -->
 
 Get started with the .NET Azure OpenAI with a `gpt-35-turbo` model, from a simple .NET 8.0 console application. Use the AI model to get analytics and information about your previous hikes. It consists of a simple console application, running locally, that will read the file `hikes.md` and send request to an Azure OpenAI service deployed in your Azure subscription and provide the result in the console. Follow these steps to provision Azure OpenAI and learn how to use the .NET Azure OpenAI SDK.
@@ -32,13 +32,13 @@ Get started with the .NET Azure OpenAI with a `gpt-35-turbo` model, from a simpl
 ## Try "Chatting About My Previous Hikes" sample
 
 <!-- markdownlint-disable MD029 MD044 -->
-:::zone target="docs" pivot="semantic-kernel"
+:::zone target="docs" pivot="openai"
 
 1. From a terminal or command prompt, navigate to the `semantic-kernel\03-ChattingAboutMyHikes` directory.
 
 :::zone-end
 
-:::zone target="docs" pivot="azure-openai-sdk"
+:::zone target="docs" pivot="azure-openai"
 
 1. From a terminal or command prompt, navigate to the `azure-openai-sdk\03-ChattingAboutMyHikes` directory.
 
@@ -54,7 +54,7 @@ Get started with the .NET Azure OpenAI with a `gpt-35-turbo` model, from a simpl
 <!-- markdownlint-enable MD029 MD044  -->
 
 <!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="semantic-kernel"
+:::zone target="docs" pivot="openai"
 <!-- markdownlint-enable MD044 -->
 
 ## Explore the code
@@ -120,7 +120,7 @@ Customize the system prompt and change the request, asking for different questio
 :::zone-end
 
 <!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="azure-openai-sdk"
+:::zone target="docs" pivot="azure-openai"
 <!-- markdownlint-enable MD044 -->
 
 ## Explore the code

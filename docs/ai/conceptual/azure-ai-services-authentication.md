@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.date: 06/27/2024
 ---
 
-# Authenticate to Azure AI Services using .NET
+# Azure AI services authentication and authorization using .NET
 
 Application requests to Azure AI Services must be authenticated. In this article, you explore the options available to authenticate to Azure OpenAI and other AI services using .NET. These concepts apply to the Semantic Kernel SDK, as well as SDKs from specific services such as Azure OpenAI. Most AI services offer two primary ways to authenticate apps and users:
 
@@ -49,7 +49,7 @@ Microsoft Entra ID is a cloud-based identity and access management service that 
 
 - Key-less authentication using [identities](/entra/fundamentals/identity-fundamental-concepts).
 - Role-based-access-control (RBAC) to assign identities the minimum required permissions.
-- Detects [different credentials across environments](/python/api/azure-identity/azure.identity.defaultazurecredential?view=azure-python) without requiring code changes.
+- Detects [different credentials across environments](/dotnet/api/azure.identity.defaultazurecredential?view=azure-dotnet) without requiring code changes.
 - Automatically handles administrative maintenance tasks such as rotating underlying keys.
 
 The workflow to implement Microsoft Entra authentication in your app generally includes the following:

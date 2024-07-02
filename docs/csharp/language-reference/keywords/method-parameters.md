@@ -35,7 +35,7 @@ How an argument is passed, and whether it's a reference type or value type contr
   - If the method assigns the parameter to refer to a different object, those changes **aren't** visible from the caller.
   - If the method modifies the state of the object referred to by the parameter, those changes **are** visible from the caller.
 - When you pass a *value* type *by reference*:
-  - If the method assigns the parameter to refer to a different object, those changes **aren't** visible from the caller.
+  - If the method assigns the parameter to refer to a different object, those changes **are** visible from the caller.
   - If the method modifies the state of the object referred to by the parameter, those changes **are** visible from the caller.
 - When you pass a *reference* type *by reference*:
   - If the method assigns the parameter to refer to a different object, those changes **are** visible from the caller.

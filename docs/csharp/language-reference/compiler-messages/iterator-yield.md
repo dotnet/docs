@@ -40,24 +40,20 @@ There are numerous *errors* related to the `yield return` statement and iterator
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
 That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
  -->
-- [**CS1622**](#): *Cannot return a value from an iterator. Use the yield return statement to return a value, or yield break to end the iteration.*
-- [**CS1624**](#): *The body of 'accessor' cannot be an iterator block because 'type' is not an iterator interface type*
-- [**CS1625**](#): *Cannot yield in the body of a finally clause*
-- [**CS1626**](#): *Cannot yield a value in the body of a try block with a catch clause*
-- [**CS1627**](#): *Expression expected after yield return*
-- [**CS1629**](#): *Unsafe code may not appear in iterators*
-- [**CS1631**](#): *Cannot yield a value in the body of a catch clause*
-- [**CS1637**](#): *Iterators cannot have unsafe parameters or yield types*
-- [**CS4013**](#): *Instance of type cannot be used inside a nested function, query expression, iterator block or async method*
-- [**CS8154**](#): *The body cannot be an iterator block because it returns by reference*
-- [**CS8176**](#): *Iterators cannot have by-reference locals*
-- [**CS9237**](#): *'yield return' should not be used in the body of a lock statement*
-- [**CS9238**](#): *Cannot use 'yield return' in an 'unsafe' block*
-- [**CS9239**](#): *The `&` operator cannot be used on parameters or local variables in iterator methods.*
-
-In addition, the compiler might produce the following *warning* related to `lock` statements and thread synchronization:
-
-- [**CS9216**](#lock-warning): *A value of type `System.Threading.Lock` converted to a different type will use likely unintended monitor-based locking in `lock` statement.*
+- [**CS1622**](#compiler-error-cs1622): *Cannot return a value from an iterator. Use the yield return statement to return a value, or yield break to end the iteration.*
+- [**CS1624**](#compiler-error-cs1624): *The body of 'accessor' cannot be an iterator block because 'type' is not an iterator interface type*
+- [**CS1625**](#compiler-error-cs1625): *Cannot yield in the body of a finally clause*
+- [**CS1626**](#compiler-error-cs1626): *Cannot yield a value in the body of a try block with a catch clause*
+- [**CS1627**](#compiler-error-cs1627): *Expression expected after yield return*
+- [**CS1629**](#compiler-error-cs1629): *Unsafe code may not appear in iterators*
+- [**CS1631**](#compiler-error-cs1631): *Cannot yield a value in the body of a catch clause*
+- [**CS1637**](#compiler-error-cs1637): *Iterators cannot have unsafe parameters or yield types*
+- [**CS4013**](#compiler-error-cs4013): *Instance of type cannot be used inside a nested function, query expression, iterator block or async method*
+- [**CS8154**](#compiler-error-cs8154): *The body cannot be an iterator block because it returns by reference*
+- [**CS8176**](#compiler-error-cs8176): *Iterators cannot have by-reference locals*
+- [**CS9237**](#new-errors): *'yield return' should not be used in the body of a lock statement*
+- [**CS9238**](#new-errors): *Cannot use 'yield return' in an 'unsafe' block*
+- [**CS9239**](#new-errors): *The `&` operator cannot be used on parameters or local variables in iterator methods.*
 
 ## Compiler Error CS1622
 
@@ -232,7 +228,7 @@ class C
 }
 ```
 
-# Compiler Error CS1631
+## Compiler Error CS1631
 
 Cannot yield a value in the body of a catch clause
 
@@ -476,6 +472,7 @@ class C
     }
 }
 ```
+
 ## New errors
 
 - **CS9237**: *''yield return' should not be used in the body of a lock statement*

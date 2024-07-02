@@ -29,7 +29,7 @@ Type contaning `[TestMethod]` should be marked with `[TestClass]`, otherwise the
 
 ## Rule description
 
-Type contaning `[TestMethod]` which is not abstacted should be marked with `[TestClass]`, otherwise the test method will be silently ignored.
+MSTest considers test methods only on the context of a test class container (a class marked with [TestClass] or derived attribute) which could lead to some tests being silently ignored. If your class is supposed to represent common test behavior to be executed by children classes, it's recommended to mark the type as abstract to clarify the intent for other developers reading the code.
 
 ## How to fix violations
 
@@ -37,4 +37,4 @@ A non-abstract class contains test methods should be marked with '[TestClass]'.
 
 ## When to suppress warnings
 
-We do not recommend suppressing warnings from this rule, otherwise the test method will be silently ignored.
+It's safe to suppress the diagnostic if you are sure that your class is being inherited and that the tests declared on this class should only be run in the context of subclasses. Nonetheless, we recommend marking the class as abstract.

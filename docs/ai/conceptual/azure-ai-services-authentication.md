@@ -10,7 +10,7 @@ ms.date: 06/27/2024
 
 Application requests to Azure AI Services must be authenticated. In this article you explore the options available to authenticate to Azure OpenAI and other AI services using .NET. These concepts apply to the Semantic Kernel SDK, as well as SDKs from specific services such as Azure OpenAI. Most AI services offer two primary ways to authenticate apps and users:
 
-- **Key-based authentication** provides access to an Azure service using secret key values. These secrets are also called other terms such as API keys or access keys depending on the service.
+- **Key-based authentication** provides access to an Azure service using secret key values. These secret values are sometimes known as API keys or access keys depending on the service.
 - **Microsoft Entra ID** provides a comprehensive identity and access management solution to ensure that the correct identities have the correct level of access to different Azure resources.
 
 The sections ahead provide conceptual overviews for these two approaches, rather than detailed implementation steps. For more detailed information about connecting to Azure services, visit the following resources:
@@ -34,11 +34,11 @@ builder.Services.AddAzureOpenAIChatCompletion(
 var kernel = builder.Build();
 ```
 
-Using keys is a straightforward option, but this approach should be used with caution. Keys are not the recommended authentication option for the following reasons:
+Using keys is a straightforward option, but this approach should be used with caution. Keys aren't the recommended authentication option for the following reasons:
 
-- Keys do not follow [the principle of least privilege](/entra/identity-platform/secure-least-privileged-access) - they provide elevated permissions regardless of who uses them or for what task.
+- Keys don't follow [the principle of least privilege](/entra/identity-platform/secure-least-privileged-access)—they provide elevated permissions regardless of who uses them or for what task.
 - Keys can accidentally be checked into source control or stored in unsafe locations.
-- Keys can easily be shared with or sent to parties who should not have access.
+- Keys can easily be shared with or sent to parties who shouldn't have access.
 - Keys often require manual administration and rotation.
 
 Instead, consider using [Microsoft Entra ID](/#explore-microsoft-entra-id) for authentication, which is the recommended solution for most scenarios.
@@ -84,7 +84,7 @@ For example, configure Semantic Kernel to authenticate using `DefaultAzureCreden
 
 ```csharp
 Kernel kernel = Kernel
-.CreateBuilder()
+    .CreateBuilder()
     .AddAzureOpenAITextGeneration(
         "your-model",
         "your-endpoint",

@@ -55,7 +55,7 @@ Get started with Semantic Kernel by creating a simple .NET 8 console chat applic
 
 :::zone target="docs" pivot="azure-openai"
 If you get an error message, the Azure OpenAI resources may not have finished deploying. Wait a couple of minutes and try again.
-::::zone-end
+:::zone-end
 
 <!-- markdownlint-enable MD029 MD044  -->
 
@@ -84,7 +84,7 @@ OpenAIChatCompletionService service = new(model, key);
 
 Once the `OpenAIChatCompletionService` service is created, we provide more context to the model by adding a system prompt. This instructs the model how you'd like it to act during the conversation.
 
-::::zone-end
+:::zone-end
 
 <!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="azure-open-ai"
@@ -112,7 +112,7 @@ AzureOpenAIChatCompletionService service = new(deployment, endpoint, key);
 ```
 
 Once the `AzureOpenAIChatCompletionService` service is created, we provide more context to the model by adding a system prompt. This instructs the model how you'd like it to act during the conversation.
-::::zone-end
+:::zone-end
 
 ```csharp
 // Start the conversation with context for the AI model
@@ -168,7 +168,7 @@ When you no longer need the sample application or resources, remove the correspo
 azd down
 ```
 
-::::zone-end
+:::zone-end
 
 ## Next steps
 

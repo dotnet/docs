@@ -851,6 +851,10 @@
                 "docs/ai/**/**.yml": "ce-skilling-ai-copilot"
             },
             "no-loc": {
+                "docs/orleans/**/**.md": [
+                    "Grain",
+                    "Grains"
+                ],
                 "**/**.md": [
                     "Orleans"
                 ]

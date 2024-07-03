@@ -37,6 +37,28 @@ int length = message.Length; // dereferencing "message"
 
 When you dereference a variable whose value is `null`, the runtime throws a <xref:System.NullReferenceException?displayProperty=nameWithType>.
 
+Similarly warnings can be produced when `[]` notation is used on an indexer whose values were not initialized:
+
+```csharp
+using System;
+
+public class Collection<T>
+{
+    private T[] array = new T[100];
+    public T this[int index]
+    {
+        get => array[index];
+        set => array[index] = value;
+    }
+}
+
+public static void Main()
+{
+    Collection<int> c = default;
+    c[10] = 1;    // CS8602: Possible derefence of null
+}
+```
+
 You'll learn about:
 
 - The compiler's [null-state analysis](#null-state-analysis): how the compiler determines if an expression is not-null, or maybe-null.

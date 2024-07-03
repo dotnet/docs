@@ -1,7 +1,7 @@
 ---
 title: Backward compatibility guidelines
 description: Learn the backward compatibility guidelines in .NET Orleans.
-ms.date: 03/15/2022
+ms.date: 07/03/2024
 ---
 
 # Backward compatibility guidelines

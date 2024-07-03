@@ -1,7 +1,7 @@
 ---
 title: Typical configurations
 description: Learn about typical configurations in .NET Orleans.
-ms.date: 08/18/2023
+ms.date: 07/03/2024
 ---
 
 # Typical configurations

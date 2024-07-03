@@ -1,7 +1,7 @@
 ---
 title: Best practices in Orleans
 description: Learn some of the best practices in Orleans for .NET Orleans app development.
-ms.date: 01/18/2024
+ms.date: 07/03/2024
 ---
 
 # Best practices in Orleans

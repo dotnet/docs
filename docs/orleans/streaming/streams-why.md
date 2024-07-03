@@ -1,7 +1,7 @@
 ---
 title: Why streams in Orleans?
 description: Learn why you'd want to use streams in .NET Orleans.
-ms.date: 03/21/2022
+ms.date: 07/03/2024
 ---
 
 # Why streams in Orleans?

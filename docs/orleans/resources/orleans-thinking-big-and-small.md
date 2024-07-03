@@ -1,7 +1,7 @@
 ---
 title: Big and small thinking
 description: Learn how Orleans applies to both big and small distributed applications.
-ms.date: 03/21/2022
+ms.date: 07/03/2024
 ---
 
 # Big and small thinking

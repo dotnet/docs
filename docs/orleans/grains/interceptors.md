@@ -1,7 +1,7 @@
 ---
 title: Grain call filters
 description: Learn about grain call filter in .NET Orleans.
-ms.date: 03/16/2022
+ms.date: 07/03/2024
 ---
 
 # Grain call filters

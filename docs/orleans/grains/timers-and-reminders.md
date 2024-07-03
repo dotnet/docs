@@ -1,7 +1,7 @@
 ---
 title: Timers and reminders
 description: Learn how to use timers and reminders in .NET Orleans.
-ms.date: 08/28/2023
+ms.date: 07/03/2024
 ---
 
 # Timers and reminders

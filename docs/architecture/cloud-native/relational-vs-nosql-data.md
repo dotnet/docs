@@ -5,11 +5,11 @@ author: robvet
 ms.date: 04/06/2022
 ---
 
-# Relational vs. NoSQL data
+# SQL vs. NoSQL data
 
 [!INCLUDE [download-alert](includes/download-alert.md)]
 
-Relational and NoSQL are two types of database systems commonly implemented in cloud-native apps. They're built differently, store data differently, and accessed differently. In this section, we'll look at both. Later in this chapter, we'll look at an emerging database technology called *NewSQL*.
+Relational (SQL) and non-relational (NoSQL) are two types of database systems commonly implemented in cloud-native apps. They're built differently, store data differently, and accessed differently. In this section, we'll look at both. Later in this chapter, we'll look at an emerging database technology called *NewSQL*.
 
 *Relational databases* have been a prevalent technology for decades. They're mature, proven, and widely implemented. Competing database products, tooling, and expertise abound. Relational databases provide a store of related data tables. These tables have a fixed schema, use SQL (Structured Query Language) to manage data, and support ACID guarantees: atomicity, consistency, isolation and durability.
 

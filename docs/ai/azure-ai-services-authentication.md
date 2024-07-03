@@ -20,11 +20,11 @@ The sections ahead provide conceptual overviews for these two approaches, rather
 - [What is Azure RBAC?](/azure/role-based-access-control/overview)
 
 > [!NOTE]
-> The examples in this article focus primarily on connections to Azure OpenAI, but the same concepts and implementation steps directly apply to many other Azure AI Services as well.
+> The examples in this article focus primarily on connections to Azure OpenAI, but the same concepts and implementation steps directly apply to many other Azure AI services as well.
 
 ## Authentication using keys
 
-Access keys allow apps and tools to authenticate to an Azure AI service such as OpenAI using a secret key provided by the service. Retrieve the secret key using tools such as the Azure Portal or Azure CLI and use it to configure your app code to connect to the AI service:
+Access keys allow apps and tools to authenticate to an Azure AI service, such as Azure OpenAI, using a secret key provided by the service. Retrieve the secret key using tools such as the Azure portal or Azure CLI and use it to configure your app code to connect to the AI service:
 
 ```csharp
 builder.Services.AddAzureOpenAIChatCompletion(
@@ -34,12 +34,12 @@ builder.Services.AddAzureOpenAIChatCompletion(
 var kernel = builder.Build();
 ```
 
-Using keys is a straightforward option, but this approach should be used with caution. Keys aren't the recommended authentication option for the following reasons:
+Using keys is a straightforward option, but this approach should be used with caution. Keys aren't the recommended authentication option because they:
 
-- Keys don't follow [the principle of least privilege](/entra/identity-platform/secure-least-privileged-access)—they provide elevated permissions regardless of who uses them or for what task.
-- Keys can accidentally be checked into source control or stored in unsafe locations.
-- Keys can easily be shared with or sent to parties who shouldn't have access.
-- Keys often require manual administration and rotation.
+- Don't follow [the principle of least privilege](/entra/identity-platform/secure-least-privileged-access)—they provide elevated permissions regardless of who uses them or for what task.
+- Can accidentally be checked into source control or stored in unsafe locations.
+- Can easily be shared with or sent to parties who shouldn't have access.
+- Often require manual administration and rotation.
 
 Instead, consider using [Microsoft Entra ID](/#explore-microsoft-entra-id) for authentication, which is the recommended solution for most scenarios.
 
@@ -68,7 +68,7 @@ The key concepts of this workflow are explored in the following sections.
 
 ### Authenticate to Azure locally
 
-When developing apps locally that connect to Azure AI Services, authenticate to Azure using a tool such as Visual Studio or the Azure CLI. Your local credentials can be discovered by the `Azure.Identity` client library and used to authenticate your app to Azure services, as described in the [Configure the app code](/#configure-your-app-code) section.
+When developing apps locally that connect to Azure AI services, authenticate to Azure using a tool such as Visual Studio or the Azure CLI. Your local credentials can be discovered by the `Azure.Identity` client library and used to authenticate your app to Azure services, as described in the [Configure the app code](/#configure-your-app-code) section.
 
 For example, to authenticate to Azure locally using the Azure CLI, run the following command:
 
@@ -116,7 +116,7 @@ Learn more about Azure RBAC using the following resources:
 
 ### Assign a managed identity to your app
 
-In most scenarios, Azure hosted applications should use a [managed identity](/entra/identity/managed-identities-azure-resources/overview) to connect to other services such as Azure OpenAI. Managed identities provide an fully managed identity in Microsoft Entra ID for applications to use when connecting to resources that support Microsoft Entra authentication. `DefaultAzureCredential` discovers the identity associated with your app and uses it to authenticate to other Azure services.
+In most scenarios, Azure-hosted apps should use a [managed identity](/entra/identity/managed-identities-azure-resources/overview) to connect to other services such as Azure OpenAI. Managed identities provide a fully managed identity in Microsoft Entra ID for apps to use when connecting to resources that support Microsoft Entra authentication. `DefaultAzureCredential` discovers the identity associated with your app and uses it to authenticate to other Azure services.
 
 There are two types of managed identities you can assign to your app:
 

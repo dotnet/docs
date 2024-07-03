@@ -327,6 +327,8 @@ static async Task RunWatcherAsync()
 
             Console.WriteLine(
                 "Subscribed successfully. Press <Enter> to stop.");
+
+            Console.ReadLine(); 
         }
         catch (Exception e)
         {

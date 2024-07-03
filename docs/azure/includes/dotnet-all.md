@@ -511,7 +511,7 @@
 | Microsoft.Azure.Functions.Worker.Sdk.Generators | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk.Generators/1.3.0) |  |  |
 | Microsoft.Azure.WebJobs.CosmosDb.ChangeProcessor | NuGet [1.0.4](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.CosmosDb.ChangeProcessor/1.0.4) |  |  |
 | Microsoft.Azure.WebJobs.CosmosDb.Mongo | NuGet [1.0.4](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.CosmosDb.Mongo/1.0.4) |  |  |
-| Microsoft.Azure.WebJobs.Extensions.Kusto | NuGet [1.0.9-Preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Kusto/1.0.9-Preview) |  |  |
+| Microsoft.Azure.WebJobs.Extensions.Kusto | NuGet [1.0.10-Preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Kusto/1.0.10-Preview) |  |  |
 | Microsoft.Azure.WebJobs.Extensions.Rpc | NuGet [3.0.39](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Rpc/3.0.39) |  |  |
 | Microsoft.Azure.WebJobs.Rpc.Core | NuGet [3.0.39](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Rpc.Core/3.0.39) |  |  |
 | Service Bus - Message ID plugin | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.ServiceBus.MessageIdPlugin/2.0.0) |  |  |

@@ -1,25 +1,25 @@
 ---
-description: "Learn more about: IXCLRDataProcess::Request Method"
-title: "IXCLRDataProcess::Request Method"
+description: "Learn more about: IXCLRDataValue::Request Method"
+title: "IXCLRDataValue::Request Method"
 ms.date: "07/02/2024"
 api.name:
-  - "IXCLRDataProcess::Request Method"
+  - "IXCLRDataValue::Request Method"
 api.location:
   - "mscordacwks.dll"
 api.type:
   - "COM"
 f1.keywords:
-  - "IXCLRDataProcess::Request Method"
+  - "IXCLRDataValue::Request Method"
 helpviewer.keywords:
-  - "IXCLRDataProcess::Request Method [.NET Framework debugging]"
+  - "IXCLRDataValue::Request Method [.NET Framework debugging]"
 topic_type:
   - "apiref"
 author: "wmessmer"
 ms.author: "wmessmer"
 ---
-# IXCLRDataProcess::Request Method
+# IXCLRDataValue::Request Method
 
-Requests to populate the buffer given with the process's data.
+Requests to populate the buffer given with the value's data.
 
 [!INCLUDE[debugging-api-recommended-note](../../../../includes/debugging-api-recommended-note.md)]
 
@@ -59,7 +59,7 @@ Requests can be one of the following:
 
 ## Remarks
 
-The provided method is part of the `IXCLRDataProcess` interface and corresponds to the 34th slot of the virtual method table.
+The provided method is part of the `IXCLRDataValue` interface and corresponds to the 12th slot of the virtual method table.
 
 ## Requirements
 
@@ -71,4 +71,4 @@ The provided method is part of the `IXCLRDataProcess` interface and corresponds 
 ## See also
 
 - [Debugging](index.md)
-- [IXCLRDataProcess Interface](ixclrdataprocess-interface.md)
+- [IXCLRDataValue Interface](ixclrdatavalue-interface.md)

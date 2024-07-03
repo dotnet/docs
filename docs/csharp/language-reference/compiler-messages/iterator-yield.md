@@ -67,9 +67,9 @@ An iterator method must conform to several rules in C#. The compiler issues the 
 
 Your iterator method must follow the following rules:
 
-- An iterator method (using `yield return` and optionally `yield break`) can't also use a `return` statement to return a sequence. 
+- An iterator method (using `yield return` and optionally `yield break`) can't also use a `return` statement to return a sequence.
 - An iterator method must declare an *iterator interface type* as the return type. The *iterator interface types* are: <xref:System.Collections.IEnumerable>, <xref:System.Collections.Generic.IEnumerable%601>, <xref:System.Collections.IEnumerator>, <xref:System.Collections.Generic.IEnumerator%601>.
-- A `yield return` statement must include an expression to return as part of a sequence. `yield return;` isn't valid. 
+- A `yield return` statement must include an expression to return as part of a sequence. `yield return;` isn't valid.
 - An iterator method can't use unsafe types as parameters, such as pointers.
 - An iterator method can't `yield return` unsafe type, such as pointers.
 - An iterator method can't `yield return` by `ref`. You must return by value.

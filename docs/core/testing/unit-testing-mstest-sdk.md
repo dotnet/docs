@@ -64,6 +64,10 @@ When you `build` the project, all the needed components are restored and install
 
 You don't need anything else to build and run your tests and you can use the same tooling (for example, `dotnet test` or Visual Studio) used by a ["classic" MSTest project](./unit-testing-with-mstest.md).
 
+> [!IMPORTANT]
+> By switching to `MSTest.Sdk` you will fully opt-in to using [MSTest runner](./unit-testing-mstest-runner-intro.md) including with [`dotnet test`](./unit-testing-platform-integration-dotnet-test.md#dotnet-test---microsofttestingplatform-mode) which will require modifying your CI, local CLI calls and will impact the available entries of the `.runsettings`.
+> You can use `MSTest.Sdk` and still keep the old integrations and tools by switching the [runner](#select-the-runner).
+
 ## Select the runner
 
 By default, MSTest SDK relies on [MSTest runner](./unit-testing-mstest-runner-intro.md), but you can easily switch to [VSTest](/visualstudio/test/vstest-console-options) by adding the property `<UseVSTest>true</UseVSTest>`.
@@ -190,6 +194,8 @@ By setting the property `EnablePlaywright` to `true` you can bring all dependenc
 
 ## Migrating to MSTest SDK
 
+### Updating your project(s)
+
 When migrating an existing MSTest test project to MSTest SDK, start by replacing the `Sdk="Microsoft.NET.Sdk"` entry at the top of your test project with `Sdk="MSTest.Sdk/3.3.1"`
 
 ```diff
@@ -229,3 +235,18 @@ Removing default package references:
 ```
 
 Finally, based on the extensions profile you're using, you can also remove some of the `Microsoft.Testing.Extensions.*` packages.
+
+### Updating your CI
+
+Once you have updated your projects, if you are using `MSTest runner` (default) and if you rely on `dotnet test` to run your tests, you will have to update your CI configuration. Please refer to [dotnet test integration](./unit-testing-platform-integration-dotnet-test.md#dotnet-test---microsofttestingplatform-mode) guide to understand all the changes needed.
+
+Here is an example of update when using `DotNetCoreCLI` task in Azure DevOps:
+
+```diff
+\- task: DotNetCoreCLI@2
+  inputs:
+    command: 'test'
+    projects: '**/**.sln'
+-    arguments: '--configuration Release'
++    arguments: '--configuration Release -p:TestingPlatformCommandLineArguments="--report-trx --coverage"'
+```

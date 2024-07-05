@@ -209,7 +209,7 @@ The **nullable annotation context** determines the compiler's behavior. There ar
   - All new nullable warnings are enabled.
   - You can use the `?` suffix to declare a nullable reference type.
   - Reference type variables without the `?` suffix are non-nullable reference types.
-  - The null forgiving operator suppresses warnings for a possible assignment to `null`.
+  - The null forgiving operator suppresses warnings for a possible dereference of `null`.
 - *warnings*: The compiler performs all null analysis and emits warnings when code might dereference `null`.
   - All new nullable warnings are enabled.
   - Use of the `?` suffix to declare a nullable reference type produces a warning.
@@ -255,7 +255,7 @@ You can also use directives to set these same contexts anywhere in your source c
 - `#nullable restore warnings`: Restores the nullable warning context to the project settings.
 - `#nullable disable annotations`: Set the nullable annotation context to **disable**.
 - `#nullable enable annotations`: Set the nullable annotation context to **enable**.
-- `#nullable restore annotations`: Restores the annotation warning context to the project settings.
+- `#nullable restore annotations`: Restores the nullable annotation context to the project settings.
 
 For any line of code, you can set any of the following combinations:
 

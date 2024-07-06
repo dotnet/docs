@@ -120,6 +120,7 @@ The following example shows how to disallow the use of prerelease versions:
 ```
 
 The following example shows how to use the highest version installed that's greater or equal than the specified version. The JSON shown disallows any SDK version earlier than 7.0.200 and allows 7.0.200 or any later version, including 8.0.xxx.
+
 ```json
 {
   "sdk": {

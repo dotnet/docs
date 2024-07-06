@@ -194,7 +194,7 @@ The following rules apply when determining which version of the SDK to use:
 
 - The following warnings indicate that your project was compiled using a prerelease version of the .NET SDK:
 
-  > You are using a preview version of .NET. See: <https://aka.ms/dotnet-support-policy>
+  > You're using a preview version of .NET. See: <https://aka.ms/dotnet-support-policy>
 
   .NET SDK versions have a history and commitment of being high quality. However, if you don't want to use a prerelease version, check the different strategies you can use in the [allowPrerelease](#allowprerelease) section. For machines that have never had a .NET Core 3.0 or higher runtime or SDK installed, you need to create a *global.json* file and specify the exact version you want to use.
 

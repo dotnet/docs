@@ -248,5 +248,5 @@ Here is an example of update when using `DotNetCoreCLI` task in Azure DevOps:
     command: 'test'
     projects: '**/**.sln'
 -    arguments: '--configuration Release'
-+    arguments: '--configuration Release -p:TestingPlatformCommandLineArguments="--report-trx --coverage"'
++    arguments: '--configuration Release -p:TestingPlatformCommandLineArguments="--report-trx --results-directory $(Agent.TempDirectory) --coverage"'
 ```

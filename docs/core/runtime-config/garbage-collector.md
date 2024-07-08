@@ -680,7 +680,7 @@ Project file:
 
 [!INCLUDE [runtimehostconfigurationoption](includes/runtimehostconfigurationoption.md)]
 
-#### Examples
+### Examples
 
 *runtimeconfig.json* file:
 
@@ -709,32 +709,32 @@ Project file:
 
 ## Standalone GC
 
-To use a standalone garbage collector instead of the default GC implementation, you can specify either the *path* (in .NET 9 and later versions) or the *name* of a GC native library.
+To use a standalone garbage collector instead of the default GC implementation, you can specify either the *[path](#path)* (in .NET 9 and later versions) or the *[name](#name)* of a GC native library.
 
-#### Path
+### Path
 
 - Specifies the full path of a GC native library that the runtime loads in place of the default GC implementation. To be secure, this location should be protected from potentially malicious tampering.
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
-| **runtimeconfig.json** | `System.GC.Path` | *string_name* | .NET 9 |
+| **runtimeconfig.json** | `System.GC.Path` | *string_path* | .NET 9 |
 | **Environment variable** | `DOTNET_GCPath` | *string_path* | .NET 9 |
 
-#### Name
+### Name
 
-- Specifies the name of a GC native library that the runtime loads in place of the default GC implementation. The behavior changed in .NET 9 with the introduction of the **Path** config. In .NET 8 and prior -\
-\
-If only a name of the library is specified, the library has to reside in the same directory as the .NET runtime (*coreclr.dll* on Windows, *libcoreclr.so* on Linux, or *libcoreclr.dylib* on OSX).\
-\
-It can also be a relative path, e.g., on Windows if you specify "..\clrgc.dll", clrgc.dll will be loaded from the parent directory of the .NET runtime directory.\
-\
-In .NET 9 and later this specifies a file name only, no paths are allowed -\
-\
-The directory where the assembly that contains your app's `Main` method resides will be searched first for the name you specified.\
-\
-If not found, the .NET runtime directory will be searched for this name.
+- Specifies the name of a GC native library that the runtime loads in place of the default GC implementation. The behavior changed in .NET 9 with the introduction of the [Path](#path) config.
 
-- This configuration setting is ignored if the **Path** config is specified.
+  In .NET 8 and previous versions:
+
+  - If only a name of the library is specified, the library must reside in the same directory as the .NET runtime (*coreclr.dll* on Windows, *libcoreclr.so* on Linux, or *libcoreclr.dylib* on OSX).
+  - The value can also be a relative path, for example, if you specify "..\clrgc.dll" on Windows, *clrgc.dll* is loaded from the parent directory of the .NET runtime directory.
+
+  In .NET 9 and later versions, this value specifies a file name only (paths aren't allowed):
+
+  - .NET searches for the name you specify in the directory where the assembly that contains your app's `Main` method resides.
+  - If the file isn't found, the .NET runtime directory is searched.
+
+- This configuration setting is ignored if the [Path](#path) config is specified.
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |

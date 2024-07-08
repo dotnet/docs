@@ -95,7 +95,7 @@ The .NET Team would like to know which libraries are the most important to suppo
 
 ## Analyze non-NuGet dependencies
 
-You may have a dependency that isn't a NuGet package, such as a DLL in the file system. You can determine the portability of that dependency by using the [binary analysis](https://github.com/dotnet/upgrade-assistant/blob/main/docs/binary_analysis.md) functionality of the [.NET Upgrade Assistant](upgrade-assistant-overview.md).
+You may have a dependency that isn't a NuGet package, such as a DLL in the file system. You can determine the portability of that dependency with the CLI version of the [.NET Upgrade Assistant](upgrade-assistant-overview.md#upgrade-with-the-cli-tool) tool.
 
 ## Next steps
 

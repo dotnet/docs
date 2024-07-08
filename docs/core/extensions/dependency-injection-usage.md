@@ -3,7 +3,7 @@ title: Use dependency injection
 description: Learn how to use dependency injection in your .NET apps with this comprehensive tutorial. Follow along with this pragmatic guide to understand DI in C#.
 author: IEvangelist
 ms.author: dapine
-ms.date: 1/31/2024
+ms.date: 07/08/2024
 ms.topic: tutorial
 no-loc: [Transient, Scoped, Singleton, Example]
 ---
@@ -80,7 +80,7 @@ The example implementations all initialize their `Id` property with the result o
 
 :::code source="snippets/configuration/console-di/ExampleSingletonService.cs":::
 
-Each implementation is defined as `internal sealed` and implements its corresponding interface. For example, `ExampleSingletonService` implements `IExampleSingletonService`.
+Each implementation is defined as `internal sealed` and implements its corresponding interface. They're not required to be `internal` or `sealed`, however, it's common to treat implementations as `internal` to avoid leaking implementation types to external consumers. Furthermore, since each type will not be extended, it's marked as `sealed`.  For example, `ExampleSingletonService` implements `IExampleSingletonService`.
 
 ## Add a service that requires DI
 

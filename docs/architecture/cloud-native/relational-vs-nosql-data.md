@@ -41,7 +41,7 @@ As a way to understand the differences between these types of databases, conside
 
 The theorem states that distributed data systems will offer a trade-off between consistency, availability, and partition tolerance. And, that any database can only guarantee *two* of the three properties:
 
-- *Consistency.* Every node in the cluster responds with the most recent data, even if the system must block the request until all replicas update. If you query a "consistent system" for an item that is currently updating, you'll wait for that response until all replicas successfully update. However, you'll receive the most current data. Note that "consistency" as defined by CAP theorem is technically different from "consistency" as defined in ACID guarantees.
+- *Consistency.* Every node in the cluster responds with the most recent data, even if the system must block the request until all replicas update. If you query a "consistent system" for an item that is currently updating, you'll wait for that response until all replicas successfully update. However, you'll receive the most current data. It should be understood that the term "consistency" as it's used in the context of the CAP theorem has a technical meaning that is distinct from the way "consistency" is defined in the context of ACID guarantees.
 
 - *Availability.* Every request received by a non-failing node in the system must result in a response. Put it simply, if you query an "available system" for an item that is updating, you'll get the best possible answer the service can provide at that moment. But note that "availability" as defined by CAP theorem is technically different from "high availability" as it's conventionally known for distributed systems.
 

@@ -440,6 +440,30 @@ This section describes the unmanaged interfaces that handle the debugging of a p
  [ISOSDacInterface Interface](isosdacinterface-interface.md)\
  Provides helper methods to access data from `SOS`.
 
+ [IXCLRDataAppDomain Interface](ixclrdataappdomain-interface.md)\
+ Provides methods for querying information about an AppDomain.
+
+ [IXCLRDataExceptionNotification Interface](ixclrdataexceptionnotification-interface.md)\
+ Provides a set of callbacks to notify a caller about managed events.
+
+ [IXCLRDataExceptionNotification2 Interface](ixclrdataexceptionnotification2-interface.md)\
+ Provides a set of callbacks to notify a caller about managed events.
+
+ [IXCLRDataExceptionNotification3 Interface](ixclrdataexceptionnotification3-interface.md)\
+ Provides a set of callbacks to notify a caller about managed events.
+
+ [IXCLRDataExceptionNotification4 Interface](ixclrdataexceptionnotification4-interface.md)\
+ Provides a set of callbacks to notify a caller about managed events.
+
+ [IXCLRDataExceptionNotification5 Interface](ixclrdataexceptionnotification5-interface.md)\
+ Provides a set of callbacks to notify a caller about managed events.
+
+ [IXCLRDataExceptionState Interface](ixclrdataexceptionstate-interface.md)\
+ Provides methods for querying information about a managed exception.
+
+ [IXCLRDataFrame Interface](ixclrdataframe-interface.md)\
+ Provides methods for querying information about a stack frame
+
  [IXCLRDataMethodDefinition Interface](ixclrdatamethoddefinition-interface.md)\
  Provides methods for querying information about a method definition.
 
@@ -451,6 +475,23 @@ This section describes the unmanaged interfaces that handle the debugging of a p
 
  [IXCLRDataProcess Interface](ixclrdataprocess-interface.md)\
  Provides methods for querying information about a process.
+
+ [IXCLRDataStackWalk Interface](ixclrdatastackwalk-interface.md)\
+ Provides methods for walking the stack.
+
+ [IXCLRDataTask Interface](ixclrdatatask-interface.md)\
+ Provides methods for querying information about a managed task.
+
+ [IXCLRDataTypeDefinition Interface](ixclrdatatypedefinition-interface.md)\
+ Provides methods for querying information about a type definition.
+
+ [IXCLRDataTypeInstance Interface](ixclrdatatypeinstance-interface.md)\
+ Provides methods for querying information about a type instance.
+
+ [IXCLRDataValue Interface](ixclrdatavalue-interface.md)\
+ Provides methods for querying information about a managed value.
+
+
 
 ## Related Sections
 

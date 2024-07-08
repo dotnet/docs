@@ -32,6 +32,12 @@ The following methods are some of the methods available in the interface.
 | [StartEnumInstances](ixclrdatamethoddefinition-startenuminstances-method.md) | Provides a handle for the enumeration of method instances for a given `IXCLRDataAppDomain`. |
 | [EnumInstance](ixclrdatamethoddefinition-enuminstance-method.md)             | Enumerates the instances of this method definition.                                         |
 | [EndEnumInstances](ixclrdatamethoddefinition-endenuminstances-method.md)     | Releases the resources used by internal iterators used during instance enumeration.         |
+| [Request](ixclrdatamethoddefinition-request-method.md)                       | Requests to populate the buffer given with the method's data. |
+| [GetRepresentativeEntryAddress](ixclrdatamethoddefinition-getrepresentativeentryaddress-method.md)     | Gets the most representative start address of the native code for this method. |
+| [GetTokenAndScope](ixclrdatamethoddefinition-gettokenandscope-method.md)     | Gets the metadata token and scope of the method. |
+| [StartEnumExtents](ixclrdatamethoddefinition-startenumextents-method.md)     | Provides a handle for the enumeration of IL code regions associated with the method. |
+| [EnumExtent](ixclrdatamethoddefinition-enumextent-method.md)                 | Enumerates the IL code regions associated with this method. |
+| [EndEnumExtents](ixclrdatamethoddefinition-endenumextents-method.md)         | Releases the resources used by internal iterators used during IL code region enumeration. |
 
 ## Remarks
 

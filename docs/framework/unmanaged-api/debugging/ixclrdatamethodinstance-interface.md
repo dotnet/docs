@@ -29,6 +29,15 @@ Provides methods for querying information about a method instance.
 | ----------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
 | [GetILAddressMap](ixclrdatamethodinstance-getiladdressmap-method.md) | Gets the IL to address mapping information. |
 | [GetRepresentativeEntryAddress](ixclrdatamethodinstance-getrepresentativeentryaddress-method.md) | Gets the most representative entry point address for the native compilation of all the possible entry points for a method. |
+| [Request](ixclrdatamethodinstance-request-method.md) | Requests to populate the buffer given with the method instance's data. |
+| [StartEnumExtents](ixclrdatamethodinstance-startenumextents-method.md) | Provides a handle for the enumeration of native code regions associated with the method. |
+| [EnumExtent](ixclrdatamethodinstance-enumextent-method.md) | Enumerates the native code regions associated with the method. |
+| [EndEnumExtents](ixclrdatamethodinstance-endenumextent-method.md) | Releases the resources used by internal iterators used during native code range enumeration. |
+| [GetTokenAndScope](ixclrdatamethodinstance-gettokenandscope-method.md) | Gets the metadata token and scope of the method. |
+| [GetILOffsetsByAddress](ixclrdatamethodinstance-getiloffsetsbyaddress-method.md) | Gets the IL offset(s) corresponding to the given address for the method.. |
+| [GetAddressRangesByILOffset](ixclrdatamethodinstance-getaddressrangesbyiloffset-method.md) | Returns the native code address(es) which correspond to a given IL offset within the method. |
+| [GetDefinition](ixclrdatamethodinstance-getdefinition-method.md) | Gets the method definition which matches this method instance. |
+| [GetName](ixclrdatamethodinstance-getname-method.md) | Gets the fully qualified name for this method instance. |
 
 ## Remarks
 

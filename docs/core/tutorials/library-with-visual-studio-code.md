@@ -84,7 +84,7 @@ Start by creating a .NET class library project named "StringLibrary" and an asso
 
 Add a console application that uses the class library. The app will prompt the user to enter a string and report whether the string begins with an uppercase character.
 
-1. In the **Solution Explorer** select **New Project** or in the Command Palette select **.NET: New Project**.
+1. Right-click the solution in **Solution Explorer** and select **New Project**, or in the Command Palette select **.NET: New Project**.
 
 1. Select Console app.
 
@@ -110,7 +110,7 @@ Initially, the new console app project doesn't have access to the class library.
 
 ## Run the app
 
-1. Select Run>Run without debugging.
+1. Select **Run** > **Run without debugging**.
 
 1. Select C#.
 
@@ -139,7 +139,7 @@ Initially, the new console app project doesn't have access to the class library.
 
 ## Next steps
 
-In this tutorial, created a library project, and added a console app project that uses the library. In the next tutorial, you add a unit test project to the solution.
+In this tutorial, you created a library project and added a console app project that uses the library. In the next tutorial, you add a unit test project to the solution.
 
 > [!div class="nextstepaction"]
 > [Test a .NET class library with .NET using Visual Studio Code](testing-library-with-visual-studio-code.md)

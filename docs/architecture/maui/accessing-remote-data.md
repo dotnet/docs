@@ -296,7 +296,7 @@ Distributed applications, such as the eShop reference application, should provid
 - A shared cache, which can be accessed by multiple processes or machines.
 - A private cache, where data is held locally on the device running the app.
 
-The eShop multi-platform app uses a private cache, where data is held locally on the device that's running an instance of the app. For information about the cache used by the eShop reference application, see [.NET Microservices: Architecture for Containerized .NET Applications](https://aka.ms/microservicesebook).
+The eShop multi-platform app uses a private cache, where data is held locally on the device that's running an instance of the app.
 
 > [!TIP]
 > Think of the cache as a transient data store that could disappear at any time.
@@ -352,7 +352,7 @@ If a request still fails after a number of retries, it's better for the app to p
 
 Use a finite number of retries, or implement the [Circuit Breaker](/azure/architecture/patterns/circuit-breaker) pattern to allow a service to recover.
 
-The eShop reference application does implement the retry pattern. For more information, including a discussion of how to combine the retry pattern with the HttpClient class, see [.NET Microservices: Architecture for Containerized .NET Applications](https://aka.ms/microservicesebook).
+The eShop reference application does implement the retry pattern.
 
 For more information about the retry pattern, see the [Retry](/azure/architecture/patterns/retry) pattern on Microsoft Docs.
 
@@ -367,7 +367,7 @@ The circuit breaker pattern can prevent an app from repeatedly trying to execute
 
 A circuit breaker acts as a proxy for operations that might fail. The proxy should monitor the number of recent failures that have occurred, and use this information to decide whether to allow the operation to proceed, or to return an exception immediately.
 
-The eShop multi-platform app does not currently implement the circuit breaker pattern. However, the eShop does. For more information, see [.NET Microservices: Architecture for Containerized .NET Applications](https://aka.ms/microservicesebook).
+The eShop multi-platform app does not currently implement the circuit breaker pattern. However, the eShop does.
 
 > [!TIP]
 > Combine the retry and circuit breaker patterns.

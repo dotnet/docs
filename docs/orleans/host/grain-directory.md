@@ -23,7 +23,7 @@ You can configure which grain directory implementation to use on a per-grain typ
 
 We recommend always starting with the default one (built-in in-memory distributed directory). Even though it is eventually consistent and allows for occasional duplicate activation when the cluster is unstable, the built-in directory is self-sufficient with no external dependencies, doesn't require any configuration, and has been used in production the whole time.
 
-When you have some experience with Orleans and have a use case for grain directory a with stronger single-activation guarantee and/or want to minimize the number of grain that gets deactivated when a silo in the cluster shuts down, consider using a storage-based implementation of grain directory, such as the Redis implementation. Try using it for one or a few grain types first, starting with those that are long-lived and have a significant amount of state or an expensive initialization process.
+When you have some experience with Orleans and have a use case for a grain directory with stronger single-activation guarantee and/or want to minimize the number of grain that gets deactivated when a silo in the cluster shuts down, consider using a storage-based implementation of grain directory, such as the Redis implementation. Try using it for one or a few grain types first, starting with those that are long-lived and have a significant amount of state or an expensive initialization process.
 
 ## Configuration
 

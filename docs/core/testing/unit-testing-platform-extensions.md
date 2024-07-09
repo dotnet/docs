@@ -37,3 +37,7 @@ Extensions allowing to produce test report files that contains information about
 **[VSTest Bridge](./unit-testing-platform-extensions-vstest-bridge.md)**
 
 This extension provides a compatibility layer with VSTest allowing the test frameworks depending on it to continue supporting running in VSTest mode (`vstest.console.exe`, usual `dotnet test`, `VSTest task` on AzDo, Test Explorers of Visual Studio and Visual Studio Code...).
+
+**[Microsoft Fakes](./unit-testing-platform-extensions-fakes.md)**
+
+This extension provides support to execute a test project that makes use of `Microsoft Fakes`.

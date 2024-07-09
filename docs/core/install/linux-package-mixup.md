@@ -44,7 +44,6 @@ These errors usually occur when two Linux package repositories provide .NET pack
 
 - Alpine Linux
 - Arch
-- CentOS
 - CentOS Stream
 - Fedora
 - RHEL

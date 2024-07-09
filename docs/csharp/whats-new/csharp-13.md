@@ -13,12 +13,15 @@ C# 13 includes the following new features. You can try these features using the 
 - [New escape sequence - `\e`](#new-escape-sequence).
 - [Method group natural type improvements](#method-group-natural-type)
 - [Implicit indexer access in object initializers](#implicit-index-access)
+- [Enable `ref` locals and `unsafe` contexts in iterators and async methods](#ref-and-unsafe-in-iterators-and-async-methods)
 
 C# 13 is supported on **.NET 9**. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
 
 You can download the latest .NET 9 preview SDK from the [.NET downloads page](https://dotnet.microsoft.com/download). You can also download [Visual Studio 2022 - preview](https://visualstudio.microsoft.com/vs/), which includes the .NET 9 Preview SDK.
 
 New features are added to the "What's new in C#" page when they're available in public preview releases. The [working set](https://github.com/dotnet/roslyn/blob/main/docs/Language%20Feature%20Status.md#working-set) section of the [roslyn feature status page](https://github.com/dotnet/roslyn/blob/main/docs/Language%20Feature%20Status.md) tracks when upcoming features are merged into the main branch.
+
+You can find any breaking changes introduced in C# 13 in our article on [breaking changes](~/_roslyn/docs/compilers/CSharp/Compiler%20Breaking%20Changes%20-%20DotNet%209.md).
 
 [!INCLUDE [released-version-feedback](./includes/released-feedback.md)]
 
@@ -70,6 +73,16 @@ var countdown = new TimerRemaining()
 ```
 
 The preceding example creates an array that counts down from 9 to 0. In versions before C# 13, the `^` operator can't be used in an object initializer. You need to index the elements from the front.
+
+## `ref` and `unsafe` in iterators and `async` methods
+
+Before C# 13, iterator methods (methods that use `yield return`) and `async` methods couldn't declare local `ref` variables, nor could they have an `unsafe` context.
+
+In C# 13, `async` methods can declare `ref` local variables, or local variables of a `ref struct` type. However, those variables can't be accessed across an `await` boundary. Neither can they be accessed across a `yield return` boundary.
+
+This relaxed restriction enables the compiler to allow verifiably safe use of `ref` local variables and `ref struct` types in more places. You can safely use types like <xref:System.ReadOnlySpan%601?displayProperty=nameWithType> in these methods. The compiler tells you if you violate safety rules.
+
+In the same fashion, C# 13 allows `unsafe` contexts in iterator methods, provided no unsafe code appears in the same context as the `yield return` statements.
 
 ## See also
 

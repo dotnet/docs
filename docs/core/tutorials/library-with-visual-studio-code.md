@@ -60,7 +60,9 @@ Start by creating a .NET class library project named "StringLibrary" and an asso
 
 1. Save the file.
 
-1. Right click on the project in **Solution Explorer** and right-click **Build** or open the Command Palette and select **.NET: Build** to build the solution and verify that the project compiles without error.
+1. Expand **Solution Explorer** at the bottom of the **Explorer** view.
+
+1. Right click the solution in **Solution Explorer** and select **Build**, or open the Command Palette and select **.NET: Build** to build the solution and verify that the project compiles without error.
 
    The terminal output looks like the following example:
 

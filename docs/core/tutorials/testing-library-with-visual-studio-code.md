@@ -94,7 +94,7 @@ To create the test methods:
 
 1. Select the **Testing** window, select **Run Tests** or from the Command Palette, select **Test: Run all Tests**.
 
-   :::image type="content" source="media/testing-library-with-visual-studio-code/testingScreenshot.png" alt-text="Visual Studio Code Test Explorer":::
+   :::image type="content" source="testing-library-with-visual-studio-code/testingScreenshot.png" alt-text="Visual Studio Code Test Explorer":::
 
 ## Handle test failures
 

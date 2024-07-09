@@ -57,8 +57,6 @@ configuration:
       - isActivitySender:
           user: azure-sdk
       then:
-      - approvePullRequest:
-          comment: "Approved; this PR will merge when all status checks pass."
       - addLabel:
           label: ':octocat: auto-merge'
 

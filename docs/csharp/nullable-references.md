@@ -37,7 +37,7 @@ int length = message.Length; // dereferencing "message"
 
 When you dereference a variable whose value is `null`, the runtime throws a <xref:System.NullReferenceException?displayProperty=nameWithType>.
 
-Similarly warnings can be produced when `[]` notation is used on an indexer whose values were not initialized:
+Similarly warnings can be produced when `[]` notation is used to access a member of an object when the object is `null`:
 
 ```csharp
 using System;

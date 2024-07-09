@@ -49,7 +49,7 @@ The amount of memory available on the stack is limited. If you allocate too much
 
 - Avoid using `stackalloc` inside loops. Allocate the memory block outside a loop and reuse it inside the loop.
 
-The content of the newly allocated memory is undefined. You should initialize it, either with a `stackalloc` initializer, or a method like <xref:System.Span%601.Clear%2A?displayProperty=nameWithType> before the use.
+The content of the newly allocated memory is undefined. You should initialize it, either with a `stackalloc` initializer, or a method like <xref:System.Span%601.Clear%2A?displayProperty=nameWithType> before it's used.
 
 > [!IMPORTANT]
 > Not initializing memory allocated by `stackalloc` is an important difference from the `new` operator. Memory allocated using the `new` operator is initialized to the 0 bit pattern.

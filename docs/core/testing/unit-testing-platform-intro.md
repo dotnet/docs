@@ -209,6 +209,17 @@ Specifies the minimum number of tests that are expected to run. By default, at l
 
 The directory where the test results are going to be placed. If the specified directory doesn't exist, it's created. The default is `TestResults` in the directory that contains the test application.
 
+## MSBuild integration
+
+The NuGet package [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild) provides various integrations for `Microsoft.Testing.Platform` with MSBuild.
+
+- Support for `dotnet test`, see [dotnet test integration](./unit-testing-platform-integration-dotnet-test.md) for more information.
+- Support for `ProjectCapability` required by `Visual Studio` and `Visual Studio Code` Test Explorers.
+- Automatic generation of the entry point (`Main` method)
+
+> [!NOTE]
+> This integration works in a transitive way (a project that references another project referencing this package will behave as if it references the package) and can be disabled through the `IsTestingPlatformApplication` MSBuild property.
+
 ## See also
 
 - [Microsoft.Testing.Platform and VSTest comparison](unit-testing-platform-vs-vstest.md)

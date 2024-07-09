@@ -67,7 +67,9 @@ Orleans is not the best fit when:
 
     ```csharp
     var x = await bar.Foo();
+
     var y = DoSomething(x);
+
     return y;
     ```
 
@@ -75,11 +77,13 @@ Orleans is not the best fit when:
 
     ```csharp
     var tasks = new List<Task>();
+
     foreach (var grain in grains)
     {
         tasks.Add(grain.Foo());
     }
     await Task.WhenAll(tasks);
+
     DoMoreWork();
     ```
 
@@ -95,7 +99,7 @@ Orleans is not the best fit when:
   - Deadlock can occur due to call cycles.
     - Examples:
       - The grain calls itself.
-      - Grains A calls B while C is also calling A (A -> B -> C -> A).
+      - Grain A calls B which calls C which in turn is calling A (A -> B -> C -> A).
       - Grain A calls Grain B as Grain B is calling Grain A (A -> B -> A).
   - Timeouts are used to automatically break deadlocks.
   - <xref:Orleans.Concurrency.ReentrantAttribute> can be used to allow the grain class reentrant.

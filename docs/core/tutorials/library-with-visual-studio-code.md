@@ -36,6 +36,8 @@ Start by creating a .NET class library project named "StringLibrary" and an asso
 
 1. Give it the name **StringLibrary** and select **Create Project**.
 
+1. Press Enter at the prompt **Project will be created in \<path>**.
+
 1. Check to make sure that the library targets .NET 8. In **Explorer**, open *StringLibrary/StringLibrary.csproj*.
 
    The `TargetFramework` element shows that the project targets .NET 8.0.

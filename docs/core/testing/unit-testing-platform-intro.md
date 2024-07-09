@@ -211,11 +211,12 @@ The directory where the test results are going to be placed. If the specified di
 
 ## MSBuild integration
 
-The NuGet package [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild) provides various integrations for `Microsoft.Testing.Platform` with MSBuild.
+The NuGet package [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild) provides various integrations for `Microsoft.Testing.Platform` with MSBuild:
 
 - Support for `dotnet test`, see [dotnet test integration](./unit-testing-platform-integration-dotnet-test.md) for more information.
 - Support for `ProjectCapability` required by `Visual Studio` and `Visual Studio Code` Test Explorers.
 - Automatic generation of the entry point (`Main` method)
+- Automatic generation of the configuration file
 
 > [!NOTE]
 > This integration works in a transitive way (a project that references another project referencing this package will behave as if it references the package) and can be disabled through the `IsTestingPlatformApplication` MSBuild property.

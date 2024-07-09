@@ -37,7 +37,7 @@ const string connectionString = "YOUR_CONNECTION_STRING_HERE";
 var silo = new HostBuilder()
     .UseOrleans(builder =>
     {
-        .Configure<ClusterOptions>(options =>
+        builder.Configure<ClusterOptions>(options =>
         {
             options.ClusterId = "Cluster42";
             options.ServiceId = "MyAwesomeService";
@@ -54,15 +54,16 @@ Client configuration:
 
 ```csharp
 const string connectionString = "YOUR_CONNECTION_STRING_HERE";
-var client = new ClientBuilder()
-    .Configure<ClusterOptions>(options =>
-    {
-        options.ClusterId = "Cluster42";
-        options.ServiceId = "MyAwesomeService";
-    })
-    .UseAzureStorageClustering(
-        options => options.ConfigureTableServiceClient(connectionString))
-    .ConfigureLogging(builder => builder.SetMinimumLevel(LogLevel.Warning).AddConsole())
+
+using var host = Host.CreateDefaultBuilder(args)
+    .UseOrleansClient(clientBuilder =>
+        clientBuilder.Configure<ClusterOptions>(options =>
+        {
+            options.ClusterId = "Cluster42";
+            options.ServiceId = "MyAwesomeService";
+        })
+        .UseAzureStorageClustering(
+            options => options.ConfigureTableServiceClient(connectionString)))
     .Build();
 ```
 
@@ -77,7 +78,7 @@ const string connectionString = "YOUR_CONNECTION_STRING_HERE";
 var silo = new HostBuilder()
     .UseOrleans(builder =>
     {
-        .Configure<ClusterOptions>(options =>
+        builder.Configure<ClusterOptions>(options =>
         {
             options.ClusterId = "Cluster42";
             options.ServiceId = "MyAwesomeService";
@@ -97,18 +98,19 @@ Client configuration:
 
 ```csharp
 const string connectionString = "YOUR_CONNECTION_STRING_HERE";
-var client = new ClientBuilder()
-    .Configure<ClusterOptions>(options =>
-    {
-        options.ClusterId = "Cluster42";
-        options.ServiceId = "MyAwesomeService";
-    })
-    .UseAdoNetClustering(options =>
-    {
-      options.ConnectionString = connectionString;
-      options.Invariant = "System.Data.SqlClient";
-    })
-    .ConfigureLogging(builder => builder.SetMinimumLevel(LogLevel.Warning).AddConsole())
+
+using var host = Host.CreateDefaultBuilder(args)
+    .UseOrleansClient(clientBuilder =>
+        clientBuilder.Configure<ClusterOptions>(options =>
+        {
+            options.ClusterId = "Cluster42";
+            options.ServiceId = "MyAwesomeService";
+        })
+        .UseAdoNetClustering(options =>
+        {
+          options.ConnectionString = connectionString;
+          options.Invariant = "System.Data.SqlClient";
+        }))
     .Build();
 ```
 
@@ -146,13 +148,14 @@ var gateways = new IPEndPoint[]
     // ...
     new IPEndPoint(OTHER_SILO__IP_ADDRESS_N, 30_000),
 };
-var client = new ClientBuilder()
-    .UseStaticClustering(gateways)
-    .Configure<ClusterOptions>(options =>
-    {
-        options.ClusterId = "Cluster42";
-        options.ServiceId = "MyAwesomeService";
-    })
-    .ConfigureLogging(logging => logging.AddConsole())
+
+using var host = Host.CreateDefaultBuilder(args)
+    .UseOrleansClient(clientBuilder =>
+        clientBuilder.UseStaticClustering(gateways)
+            .Configure<ClusterOptions>(options =>
+            {
+                options.ClusterId = "Cluster42";
+                options.ServiceId = "MyAwesomeService";
+            }))
     .Build();
 ```

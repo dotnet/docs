@@ -111,7 +111,7 @@ If you're doing test-driven development (TDD), you write tests first and they fa
 
    The output shows that the test fails, and it provides an error message for the failed test: "Assert.IsFalse failed. Expected for 'Error': false; actual: True". Because of the failure, no strings in the array after "Error" were tested.
 
-      :::image type="content" source="media/testing-library-with-visual-studio-code/failedTest.png" alt-text="Visual Studio Code Failed Test":::
+      :::image type="content" source="testing-library-with-visual-studio-code/failedTest.png" alt-text="Visual Studio Code Failed Test":::
 
 1. Remove the string "Error" that you added in step.
 

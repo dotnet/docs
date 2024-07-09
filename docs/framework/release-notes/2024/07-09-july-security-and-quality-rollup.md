@@ -46,7 +46,7 @@ The following table outlines the updates in this release.
 | .NET Framework 3.5, 4.8.1 | [5039895](https://support.microsoft.com/kb/5039895) |
 | **Microsoft server operating system, version 22H2** | **[5041025](https://support.microsoft.com/kb/5041025)** |
 | .NET Framework 3.5, 4.8 | [5039889](https://support.microsoft.com/kb/5039889) |
-| .NET Framework 3.5, 4.8.1 | [5039907](https://support.microsoft.com/kb/5039907) || 
+| .NET Framework 3.5, 4.8.1 | [5039907](https://support.microsoft.com/kb/5039907) ||
 **Windows 11, version 21H2** | **[5037037](https://support.microsoft.com/kb/5037037)** |
 | .NET Framework 3.5, 4.8 | [5039887](https://support.microsoft.com/kb/5039887) |
 | .NET Framework 3.5, 4.8.1 | [5039906](https://support.microsoft.com/kb/5039906) |
@@ -82,7 +82,7 @@ The following table is for earlier Windows and Windows Server versions for Secur
 | .NET Framework 4.8 | [5039888](https://support.microsoft.com/kb/5039888) |
 | **Windows Server 2008 R2** | **[5041021](https://support.microsoft.com/kb/5041021)** |
 | .NET Framework 3.5.1 | [5039909](https://support.microsoft.com/kb/5039909) |
-| .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2 | [5039882](https://support.microsoft.com/kb/5039909) |
+| .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2 | [5039882](https://support.microsoft.com/kb/5039909)|
 | .NET Framework 4.8 |[5039891](https://support.microsoft.com/kb/5039891) |
 | **Windows Server 2008** | **[5041024](https://support.microsoft.com/kb/5041024)** |
 | .NET Framework 2.0, 3.0 | [5039911](https://support.microsoft.com/kb/5039911) |

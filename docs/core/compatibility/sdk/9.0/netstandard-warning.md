@@ -15,7 +15,7 @@ Previously, you could build a project that targeted .NET Standard 1.0 - .NET Sta
 
 Starting in .NET 9, if you build a project that targets .NET Standard 1.0 - .NET Standard 1.6, the following warning is emitted:
 
-> warning NETSDK1215: Targeting .NET Standard prior to 2.0 is no longer recommended. See https://aka.ms/dotnet/dotnet-standard-guidance for more details.4
+> warning NETSDK1215: Targeting .NET Standard prior to 2.0 is no longer recommended. See <https://aka.ms/dotnet/dotnet-standard-guidance> for more details.
 
 ## Version introduced
 

@@ -1,7 +1,7 @@
 ---
 title: Timers and reminders
 description: Learn how to use timers and reminders in .NET Orleans.
-ms.date: 08/28/2023
+ms.date: 07/03/2024
 ---
 
 # Timers and reminders
@@ -49,9 +49,7 @@ Reminders are similar to timers, with a few important differences:
 
 ## Configuration
 
-Reminders, being persistent, rely upon storage to function.
-You must specify which storage backing to use before the reminder subsystem functions.
-This is done by configuring one of the reminder providers via `Use{X}ReminderService` extension methods, where `X` is the name of the provider, for example, <xref:Orleans.Hosting.SiloHostBuilderReminderExtensions.UseAzureTableReminderService%2A>.
+Reminders, being persistent, rely upon storage to function. You must specify which storage backing to use before the reminder subsystem functions. This is done by configuring one of the reminder providers via `Use{X}ReminderService` extension methods, where `X` is the name of the provider, for example, <xref:Orleans.Hosting.SiloHostBuilderReminderExtensions.UseAzureTableReminderService%2A>.
 
 Azure Table configuration:
 
@@ -93,6 +91,9 @@ var silo = new HostBuilder()
     })
     .Build();
 ```
+
+> [!IMPORTANT]
+> If you have a heterogenous cluster, where the silos handle different grain types (implement different interfaces), every silo must add the configuration for Reminders, even if the silo itself doesn't handle any reminders.
 
 ## Reminder usage
 

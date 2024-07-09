@@ -1,7 +1,7 @@
 ---
 title: External tasks and grains
 description: Learn about external tasks and grains in .NET Orleans.
-ms.date: 03/16/2022
+ms.date: 07/03/2024
 ---
 
 # External tasks and grains

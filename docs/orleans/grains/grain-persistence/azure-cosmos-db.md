@@ -3,7 +3,7 @@ title: Azure Cosmos DB grain persistence
 description: Use the Azure Cosmos DB grain to persist Azure Cosmos DB for NoSQL data in a .NET Orleans application.
 ms.topic: conceptual
 ms.devlang: csharp
-ms.date: 10/03/2023
+ms.date: 07/03/2024
 ---
 
 # Azure Cosmos DB for NoSQL grain persistence

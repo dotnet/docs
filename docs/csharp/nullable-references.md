@@ -37,6 +37,28 @@ int length = message.Length; // dereferencing "message"
 
 When you dereference a variable whose value is `null`, the runtime throws a <xref:System.NullReferenceException?displayProperty=nameWithType>.
 
+Similarly warnings can be produced when `[]` notation is used to access a member of an object when the object is `null`:
+
+```csharp
+using System;
+
+public class Collection<T>
+{
+    private T[] array = new T[100];
+    public T this[int index]
+    {
+        get => array[index];
+        set => array[index] = value;
+    }
+}
+
+public static void Main()
+{
+    Collection<int> c = default;
+    c[10] = 1;    // CS8602: Possible derefence of null
+}
+```
+
 You'll learn about:
 
 - The compiler's [null-state analysis](#null-state-analysis): how the compiler determines if an expression is not-null, or maybe-null.
@@ -372,3 +394,4 @@ In the preceding example, the declaration of the array shows it holds non-nullab
 - [Unconstrained type parameter annotations](~/_csharplang/proposals/csharp-9.0/unconstrained-type-parameter-annotations.md)
 - [Intro to nullable references tutorial](tutorials/nullable-reference-types.md)
 - [**Nullable** (C# Compiler option)](language-reference/compiler-options/language.md#nullable)
+- [CS8602: Possible dereference of null warning](language-reference/compiler-messages/nullable-warnings.md#possible-dereference-of-null)

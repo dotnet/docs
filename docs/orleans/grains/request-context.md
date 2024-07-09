@@ -53,9 +53,9 @@ using Microsoft.Extensions.Logging;
 
 namespace Grains;
 
-public class HelloGrain(ILogger<HelloGrain> logger) : Grain, IHello
+public class HelloGrain(ILogger<HelloGrain> logger) : Grain, IHelloGrain
 {
-    ValueTask<string> IHello.SayHello(string greeting)
+    ValueTask<string> IHelloGrain.SayHello(string greeting)
     {
         _logger.LogInformation("""
             SayHello message received: greeting = "{Greeting}"
@@ -71,6 +71,11 @@ public class HelloGrain(ILogger<HelloGrain> logger) : Grain, IHello
             """);
     }
 }
+
+public interface IHelloGrain : IGrainWithStringKey
+{
+    ValueTask<string> SayHello(string greeting);
+}
 ```
 
 The `SayHello` method logs the incoming `greeting` parameter and then retrieves the trace id from the request context. If no trace id is found, the grain logs "No trace ID".
@@ -79,4 +84,32 @@ The `SayHello` method logs the incoming `greeting` parameter and then retrieves 
 
 The client is able to set the trace id in the request context before calling the `SayHello` method on the `HelloGrain`. The following client code demonstrates how to set a trace id in the request context and call the `SayHello` method on the `HelloGrain`:
 
-// TODO: Add client code example
+```csharp
+﻿using GrainInterfaces;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+
+using var host = Host.CreateDefaultBuilder(args)
+    .UseOrleansClient(clientBuilder =>
+        clientBuilder.UseLocalhostClustering())
+    .Build();
+
+await host.StartAsync();
+
+var client = host.Services.GetRequiredService<IClusterClient>();
+
+var grain = client.GetGrain<IHelloGrain>("friend");
+
+var id = "example-id-set-by-client";
+
+RequestContext.Set("TraceId", id);
+
+var message = await friend.SayHello("Good morning!");
+
+Console.WriteLine(message);
+// Output:
+//   TraceID: example-id-set-by-client
+//   Client said: "Good morning!", so HelloGrain says: Hello!
+```
+
+In this example, the client sets the trace id to "example-id-set-by-client" before calling the `SayHello` method on the `HelloGrain`. The grain retrieves the trace id from the request context and logs it.

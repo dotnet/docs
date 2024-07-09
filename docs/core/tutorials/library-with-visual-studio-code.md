@@ -366,7 +366,7 @@ Add a console application that uses the class library. The app will prompt the u
 
 Initially, the new console app project doesn't have access to the class library. To allow it to call methods in the class library, create a project reference to the class library project.
 
-1.  In **Solution Explorer** right click on the **ShowCase** project and select **Add Project Reference**.
+1. In **Solution Explorer** right click on the **ShowCase** project and select **Add Project Reference**.
 
 1. Select StringLibrary.
 

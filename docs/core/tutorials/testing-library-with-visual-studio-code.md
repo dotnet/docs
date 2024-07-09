@@ -22,7 +22,7 @@ Unit tests provide automated software testing during your development and publis
 
 1. Open the `ClassLibraryProjects` solution you created in [Create a .NET class library using Visual Studio Code](library-with-visual-studio-code.md).
 
-1. From **Solution Explorer**, select **Add Project**, or from the Command Palette select **.NET: New Project**.
+1. From **Solution Explorer**, select **New Project**, or from the Command Palette select **.NET: New Project**.
 
 1. Select **MSTest Test Project**, name it "StringLibraryTest", select the default directory, and select **Create Project**.
 

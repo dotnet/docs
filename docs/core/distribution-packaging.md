@@ -79,7 +79,7 @@ While there's a single host, most of the other components are in versioned direc
 
 - (3) **sdk/\<sdk version>** The SDK (also known as "the tooling") is a set of managed tools that are used to write and build .NET libraries and applications. The SDK includes the .NET CLI, the managed languages compilers, MSBuild, and associated build tasks and targets, NuGet, new project templates, and so on.
 
-- (4) **sdk-manifests/\<sdk feature band version>** The names and versions of the assets that an optional workload installation requires are maintained in workload manifests stored in this folder. The folder name is the feature band version of the SDK. So for an SDK version such as 7.0.102, this folder would still be named 7.0.100. When a workload is installed, the following folders are created as needed for the workload's assets: *metadata*, and *template-packs*. A distribution can create an empty */metadata/workloads/\<sdkfeatureband>/userlocal* file if workloads should be installed under a user path rather than in the *dotnet* folder. For more information, see GitHub issue [dotnet/installer#12104](https://github.com/dotnet/installer/issues/12104).
+- (4) **sdk-manifests/\<sdk feature band version>** The names and versions of the assets that an optional workload installation requires are maintained in workload manifests stored in this folder. The folder name is the feature band version of the SDK. So for an SDK version such as 7.0.102, this folder would still be named 7.0.100. When a workload is installed, the following folders are created as needed for the workload's assets: *metadata* and *template-packs*. A distribution can create an empty */metadata/workloads/\<sdkfeatureband>/userlocal* file if workloads should be installed under a user path rather than in the *dotnet* folder. For more information, see GitHub issue [dotnet/installer#12104](https://github.com/dotnet/installer/issues/12104).
 
 The **shared** folder contains frameworks. A shared framework provides a set of libraries at a central location so they can be used by different applications.
 
@@ -113,7 +113,7 @@ The **shared** folder contains frameworks. A shared framework provides a set of 
 
 The folders marked with `(*)` are used by multiple packages. Some package formats (for example, `rpm`) require special handling of such folders. The package maintainer must take care of this.
 
-Package files added to `library-packs` (20) can be packages that Microsoft does not distribute for the target platform. It may also be packages that Microsoft distributes and for which `library-packs` provides a package that was built from source to meet platform package distribution guidelines. The following packages are included by the .NET build:
+Package files added to `library-packs` (20) can be packages that Microsoft does not distribute for the target platform. The files can also be packages that Microsoft distributes and for which `library-packs` provides a package that was built from source to meet platform package distribution guidelines. The following packages are included by the .NET build:
 
 | Package name | Published by Microsoft | Needed for |
 |----|----|----|

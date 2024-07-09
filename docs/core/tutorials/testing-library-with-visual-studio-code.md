@@ -90,7 +90,7 @@ To create the test methods:
 
 ## Build and Run your Tests
 
-1. In **Solution Explorer**, right-click and select **Build** or from the Command Palette, select **.NET: Build**.
+1. In **Solution Explorer**, right-click the solution and select **Build** or from the Command Palette, select **.NET: Build**.
 
 1. Select the **Testing** window, select **Run Tests** or from the Command Palette, select **Test: Run all Tests**.
 

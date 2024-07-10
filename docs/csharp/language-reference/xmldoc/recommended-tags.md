@@ -212,7 +212,7 @@ The `<paramref>` tag gives you a way to indicate that a word in the code comment
 <exception cref="member">description</exception>
 ```
 
-- cref = "`member`": A reference to an exception that is available from the current compilation environment. The compiler checks that the given exception exists and translates `member` to the canonical element name in the output XML. `member` must appear within double quotation marks (" ").
+- cref = "`member`": A reference to an exception that is available from the current compilation environment. The compiler checks that the given exception exists and translates `member` to the canonical element name in the output XML. `member` must appear within quotation marks (").
 
 The `<exception>` tag lets you specify which exceptions can be thrown. This tag can be applied to definitions for methods, properties, events, and indexers.
 
@@ -315,7 +315,7 @@ Add your XML comments in base classes or interfaces and let inheritdoc copy the 
 - `filename`: The name of the XML file containing the documentation. The file name can be qualified with a path relative to the source code file. Enclose `filename` in single quotation marks (' ').
 - `tagpath`: The path of the tags in `filename` that leads to the tag `name`. Enclose the path in single quotation marks (' ').
 - `name`: The name specifier in the tag that precedes the comments; `name` will have an `id`.
-- `id`: The ID for the tag that precedes the comments. Enclose the ID in double quotation marks (" ").
+- `id`: The ID for the tag that precedes the comments. Enclose the ID in quotation marks (").
 
 The `<include>` tag lets you refer to comments in another file that describe the types and members in your source code. Including an external file is an alternative to placing documentation comments directly in your source code file. By putting the documentation in a separate file, you can apply source control to the documentation separately from the source code. One person can have the source code file checked out and someone else can have the documentation file checked out. The `<include>` tag uses the XML XPath syntax. Refer to XPath documentation for ways to customize your `<include>` use.
 
@@ -355,7 +355,7 @@ The XML output for this method is shown in the following example:
 <see langword="keyword"/>
 ```
 
-- `cref="member"`: A reference to a member or field that is available to be called from the current compilation environment. The compiler checks that the given code element exists and passes `member` to the element name in the output XML. Place *member* within double quotation marks (" "). You can provide different link text for a "cref", by using a separate closing tag.
+- `cref="member"`: A reference to a member or field that is available to be called from the current compilation environment. The compiler checks that the given code element exists and passes `member` to the element name in the output XML. Place *member* within quotation marks ("). You can provide different link text for a "cref", by using a separate closing tag.
 - `href="link"`: A clickable link to a given URL. For example, `<see href="https://github.com">GitHub</see>` produces a clickable link with text :::no-loc text="GitHub"::: that links to `https://github.com`.
 - `langword="keyword"`: A language keyword, such as `true` or one of the other valid [keywords](../keywords/index.md).
 
@@ -369,7 +369,7 @@ The `<see>` tag lets you specify a link from within text. Use [\<seealso>](#seea
 <seealso href="link">Link Text</seealso>
 ```
 
-- `cref="member"`: A reference to a member or field that is available to be called from the current compilation environment. The compiler checks that the given code element exists and passes `member` to the element name in the output XML. `member` must appear within double quotation marks (" ").
+- `cref="member"`: A reference to a member or field that is available to be called from the current compilation environment. The compiler checks that the given code element exists and passes `member` to the element name in the output XML. `member` must appear within quotation marks (").
 - `href="link"`: A clickable link to a given URL. For example, `<seealso href="https://github.com">GitHub</seealso>` produces a clickable link with text :::no-loc text="GitHub"::: that links to `https://github.com`.
 
 The `<seealso>` tag lets you specify the text that you might want to appear in a **See Also** section. Use [\<see>](#see) to specify a link from within text. You cannot nest the `seealso` tag inside the `summary` tag.

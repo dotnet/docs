@@ -19,6 +19,7 @@ This section contains the following subtopics:
 - [Simplified output paths](#simplified-output-paths)
 - ['dotnet workload clean' command](#dotnet-workload-clean-command)
 - ['dotnet publish' and 'dotnet pack' assets](#dotnet-publish-and-dotnet-pack-assets)
+- [`dotnet restore` security auditing](#dotnet-restore-security-auditing)
 - [Template engine](#template-engine)
 - [Source Link](#source-link)
 - [Source-build SDK](#source-build-sdk)

@@ -13,7 +13,7 @@ Previously, `dotnet restore` did not emit any security vulnerability warnings by
 
 ## New behavior
 
-If you're developing with the .NET 8 SDK or a later version, `dotnet restore` produces security vulnerability warnings by default for *all* restored projects. When you load a solution or project, or run a CI/CD script, this change may break your workflow if you have `<TreatWarningsAsErrors>` enabled.
+If you're developing with the .NET 8 SDK or a later version, `dotnet restore` produces security vulnerability warnings by default for *all* restored projects. When you load a solution or project, or run a CI/CD script, this change might break your workflow if you have `<TreatWarningsAsErrors>` enabled.
 
 ## Version introduced
 
@@ -25,7 +25,7 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
-In most cases when you restore a package, you want to know whether the restored package version contains any known security vulnerabilities. This functionality was added as it is a highly requested feature and security concerns continue to increase each year where known security issues can not be visible enough to taking immediate action.
+In most cases when you restore a package, you want to know whether the restored package version contains any known security vulnerabilities. This functionality was a highly requested feature. Security concerns continue to increase each year and some known security issues aren't visible enough to taking immediate action.
 
 ## Recommended action
 
@@ -39,4 +39,5 @@ In most cases when you restore a package, you want to know whether the restored 
 
 ## See also
 
+- [Audit for security vulnerabilities (`dotnet restore`)](../../../tools/dotnet-restore.md#audit-for-security-vulnerabilities)
 - [Auditing package dependencies for security vulnerabilities](/nuget/concepts/auditing-packages)

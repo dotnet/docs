@@ -192,7 +192,7 @@ The `<returns>` tag should be used in the comment for a method declaration to de
 <param name="name">description</param>
 ```
 
-- `name`: The name of a method parameter. Enclose the name in double quotation marks (" "). The names for parameters must match the API signature. If one or more parameter aren't covered, the compiler issues a warning. The compiler also issues a warning if the value of `name` doesn't match a formal parameter in the method declaration.
+- `name`: The name of a method parameter. Enclose the name in quotation marks ("). The names for parameters must match the API signature. If one or more parameter aren't covered, the compiler issues a warning. The compiler also issues a warning if the value of `name` doesn't match a formal parameter in the method declaration.
 
 The `<param>` tag should be used in the comment for a method declaration to describe one of the parameters for the method. To document multiple parameters, use multiple `<param>` tags. The text for the `<param>` tag is displayed in IntelliSense, the Object Browser, and the Code Comment Web Report.
 
@@ -202,7 +202,7 @@ The `<param>` tag should be used in the comment for a method declaration to desc
 <paramref name="name"/>
 ```
 
-- `name`: The name of the parameter to refer to. Enclose the name in double quotation marks (" ").
+- `name`: The name of the parameter to refer to. Enclose the name in quotation marks (").
 
 The `<paramref>` tag gives you a way to indicate that a word in the code comments, for example in a `<summary>` or `<remarks>` block refers to a parameter. The XML file can be processed to format this word in some distinct way, such as with a bold or italic font.
 
@@ -390,7 +390,7 @@ The `href` attribute means a reference to a web page. You can use it to directly
 <typeparam name="TResult">The type returned from this method</typeparam>
 ```
 
-- `TResult`: The name of the type parameter. Enclose the name in double quotation marks (" ").
+- `TResult`: The name of the type parameter. Enclose the name in quotation marks (").
 
 The `<typeparam>` tag should be used in the comment for a generic type or method declaration to describe a type parameter. Add a tag for each type parameter of the generic type or method. The text for the `<typeparam>` tag will be displayed in IntelliSense.
 
@@ -400,7 +400,7 @@ The `<typeparam>` tag should be used in the comment for a generic type or method
 <typeparamref name="TKey"/>
 ```
 
-- `TKey`: The name of the type parameter. Enclose the name in double quotation marks (" ").
+- `TKey`: The name of the type parameter. Enclose the name in quotation marks (").
 
 Use this tag to enable consumers of the documentation file to format the word in some distinct way, for example in italics.
 

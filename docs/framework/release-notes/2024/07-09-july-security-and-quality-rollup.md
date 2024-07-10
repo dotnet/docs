@@ -47,7 +47,7 @@ The following table outlines the updates in this release.
 | **Microsoft server operating system, version 22H2** | **[5041025](https://support.microsoft.com/kb/5041025)** |
 | .NET Framework 3.5, 4.8 | [5039889](https://support.microsoft.com/kb/5039889) |
 | .NET Framework 3.5, 4.8.1 | [5039907](https://support.microsoft.com/kb/5039907) |
-**Windows 11, version 21H2** | **[5037037](https://support.microsoft.com/kb/5037037)** |
+| **Windows 11, version 21H2** | **[5037037](https://support.microsoft.com/kb/5037037)** |
 | .NET Framework 3.5, 4.8 | [5039887](https://support.microsoft.com/kb/5039887) |
 | .NET Framework 3.5, 4.8.1 | [5039906](https://support.microsoft.com/kb/5039906) |
 | **Microsoft server operating system, version 21H2** | **[5041016](https://support.microsoft.com/kb/5041016)** |

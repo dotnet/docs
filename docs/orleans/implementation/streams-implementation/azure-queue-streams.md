@@ -1,7 +1,7 @@
 ---
 title: Azure Queue streams overview
 description: Explore the streaming implementation with Azure Queue in .NET Orleans.
-ms.date: 03/17/2022
+ms.date: 07/03/2024
 ---
 
 # Azure Queue streams overview

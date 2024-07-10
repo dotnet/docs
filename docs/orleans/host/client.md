@@ -1,7 +1,7 @@
 ---
 title: Orleans clients
 description: Learn how to write .NET Orleans clients.
-ms.date: 01/09/2024
+ms.date: 07/03/2024
 zone_pivot_groups: orleans-version
 ---
 

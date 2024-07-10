@@ -1,7 +1,7 @@
 ---
 title: 'Quickstart: Build your first Orleans app with ASP.NET Core'
 description: Learn how to use Orleans to build a scalable, distributed ASP.NET Core application
-ms.date: 01/09/2024
+ms.date: 07/03/2024
 ms.topic: quickstart
 ms.devlang: csharp
 ---

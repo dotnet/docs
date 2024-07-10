@@ -1,7 +1,7 @@
 ---
 title: Global single-instance grains
 description: Learn about global single-instance grains and coordination attributes in .NET Orleans.
-ms.date: 03/09/2022
+ms.date: 07/03/2024
 ---
 
 # Grain coordination attributes

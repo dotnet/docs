@@ -1,7 +1,7 @@
 ---
 title: Grain extensions
 description: Learn how to extend an Orleans Grain.
-ms.date: 05/08/2023
+ms.date: 07/03/2024
 ---
 
 # Grain extensions

@@ -1,7 +1,7 @@
 ---
 title: Deploy new version of grains
 description: Learn how to deploy new version of grains in .NET Orleans.
-ms.date: 03/16/2022
+ms.date: 07/03/2024
 ---
 
 # Deploy new version of grains

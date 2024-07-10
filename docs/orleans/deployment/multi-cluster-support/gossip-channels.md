@@ -1,7 +1,7 @@
 ---
 title: Multi-cluster communication
 description: Learn about multi-cluster communication in .NET Orleans.
-ms.date: 03/09/2022
+ms.date: 07/03/2024
 ---
 
 # Multi-cluster communication

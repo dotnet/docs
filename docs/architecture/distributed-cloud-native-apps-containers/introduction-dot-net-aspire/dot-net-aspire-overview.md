@@ -14,7 +14,7 @@ ms.date: 05/30/2024
 **Figure 3-1**. A summary of .NET Aspire.
 
 
-.NET Aspire is a cloud ready stack designed to accelerate development of cloud-native applications using .NET. Here's an overview:
+.NET Aspire is a cloud-ready stack designed to accelerate development of cloud-native applications using .NET. Here's an overview:
 
 - **Cloud-ready stack**: It's an opinionated framework that provides a set of tools and libraries for building distributed applications that are ready for deployment in the cloud. It is designed to take full advantage of cloud features such as scalability, resilience, and manageability.
 
@@ -32,7 +32,7 @@ ms.date: 05/30/2024
 
 - **Orchestration and components**: It provides features for orchestrating multi-project applications and their dependencies, along with standardized components for common services like databases and caching.
 
-- **Integrated tooling**: .NET Aspire comes with integrated tooling for popular development environments like Visual Studio and Visual Studio Code, as well as the dotnet CLI, making it easier to create and manage applications.
+- **Integrated tooling**: .NET Aspire comes with integrated tooling for popular development environments like Visual Studio and Visual Studio Code, as well as the .NET CLI, making it easier to create and manage applications.
 
 ![A diagram showing a summary of .NET Aspire. Cloud native observability, resiliency, scalability, and manageability.](media/aspire-cloud-native.png)
 

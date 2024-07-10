@@ -17,7 +17,7 @@ In the world of distributed applications, services often need to communicate wit
 
 ## Why Service Discovery Matters
 
-Imagine a microservices-based application with multiple components: authentication, catalog, basket, and frontend services. These services need to interact with each other, but their endpoints (such as different ports or URLs) can change dynamically. Service discovery helps address this challenge by providing a way for services to locate and communicate with one another.
+Imagine a microservices-based application with multiple components: authentication, catalog, basket, and frontend services. These services need to interact with each other, but their endpoints, such as different ports or URLs, can change dynamically. Service discovery helps address this challenge by providing a way for services to locate and communicate with one another.
 
 ## Implicit Service Discovery by Reference
 
@@ -33,13 +33,14 @@ var frontend = builder.AddProject<Projects.MyFrontend>("frontend")
     WithExternalHttpEndpoints();
 ```
 
-In this example:
-- The `frontend` project references both the `catalog` and `basket` projects.
-- The `.WithReference()` calls instruct the .NET Aspire application to pass service discovery information for the referenced projects (i.e., `catalog` and `basket`) into the `frontend` project.
+You'll find this code in the App Host project, usually in the _Program.cs_ file:
+
+- The `frontend` project receives references to both the `catalog` and `basket` projects.
+- The `.WithReference()` calls instruct the .NET Aspire application to pass service discovery information for the referenced projects (in this case `catalog` and `basket`) into the `frontend` project.
 
 ## Named Endpoints
 
-Some services expose multiple **named endpoints**. These endpoints can be resolved by specifying the endpoint name in the host portion of the HTTP request URI. The format is `scheme://_endpointName.serviceName`. For instance:
+To make it easier to locate services, services can expose multiple **named endpoints**. These endpoints can be resolved by specifying the endpoint name in the host portion of the HTTP request URI. The format is `scheme://_endpointName.serviceName`. For instance:
 
 ```csharp
 builder.Services.AddHttpClient<BasketServiceClient>(client =>
@@ -50,7 +51,7 @@ builder.Services.AddHttpClient<BasketServiceDashboardClient>(client =>
 
 In this example:
 - We configure two `HttpClient` classes—one for the core basket service and another for the basket service's dashboard.
-- The `_dashboard` endpoint is resolved via `https://_dashboard.basket`.
+- The `_dashboard` endpoint is resolved from the name `https://_dashboard.basket`.
 
 ## Configuration-Based Endpoint Resolver
 
@@ -59,15 +60,15 @@ With the configuration-based endpoint resolver, named endpoints can be specified
 ```json
 {
   "Services": {
-    "basket": "https://10.2.3.4:8080", // Default endpoint (requested via https://basket)
-    "dashboard": "https://10.2.3.4:9999" // "dashboard" endpoint (requested via https://_dashboard.basket)
+    "basket": "https://10.2.3.4:8080", // Default endpoint, reachable at https://basket
+    "dashboard": "https://10.2.3.4:9999" // "dashboard" endpoint, reachable at https://_dashboard.basket
   }
 }
 ```
 
 In this JSON:
-- The default endpoint resolves to `10.2.3.4:8080` when using `https://basket`.
-- The "dashboard" endpoint resolves to `10.2.3.4:9999` when requested via `https://_dashboard.basket`.
+- The default endpoint resolves the name `https://basket` to `10.2.3.4:8080`.
+- The "dashboard" endpoint resolves the name `https://_dashboard.basket` to `10.2.3.4:9999`.
 
 >[!div class="step-by-step"]
 >[Previous](orchestration.md)

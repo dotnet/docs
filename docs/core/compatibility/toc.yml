@@ -20,12 +20,16 @@ items:
         href: core-libraries/9.0/compressionlevel-bits.md
       - name: Creating type of array of System.Void not allowed
         href: core-libraries/9.0/type-instance.md
+      - name: "`Equals`/`GetHashCode` throw for `InlineArrayAttribute` types"
+        href: core-libraries/9.0/inlinearrayattribute.md
       - name: Inline array struct size limit is enforced
         href: core-libraries/9.0/inlinearray-size.md
       - name: InMemoryDirectoryInfo prepends rootDir to files
         href: core-libraries/9.0/inmemorydirinfo-prepends-rootdir.md
       - name: RuntimeHelpers.GetSubArray returns different type
         href: core-libraries/9.0/getsubarray-return.md
+      - name: Support for empty environment variables
+        href: core-libraries/9.0/empty-env-variable.md
     - name: Networking
       items:
       - name: HttpListenerRequest.UserAgent is nullable
@@ -1180,12 +1184,16 @@ items:
         href: core-libraries/9.0/compressionlevel-bits.md
       - name: Creating type of array of System.Void not allowed
         href: core-libraries/9.0/type-instance.md
+      - name: "`Equals`/`GetHashCode` throw for `InlineArrayAttribute` types"
+        href: core-libraries/9.0/inlinearrayattribute.md
       - name: Inline array struct size limit is enforced
         href: core-libraries/9.0/inlinearray-size.md
       - name: InMemoryDirectoryInfo prepends rootDir to files
         href: core-libraries/9.0/inmemorydirinfo-prepends-rootdir.md
       - name: RuntimeHelpers.GetSubArray returns different type
         href: core-libraries/9.0/getsubarray-return.md
+      - name: Support for empty environment variables
+        href: core-libraries/9.0/empty-env-variable.md
     - name: .NET 8
       items:
       - name: Activity operation name when null

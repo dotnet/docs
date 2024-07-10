@@ -24,7 +24,7 @@ This release contains the following quality and reliability improvements.
 
 #### .NET fundamentals
 
-Addresses an issue with x509 certificate use under PPL in Azure AD (*Applies to: .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2, 4.8, 4.8.1.*)
+Addresses an issue with x509 certificate use under PPL in Azure AD. (*Applies to: .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2, 4.8, 4.8.1.*)
 
 #### Winforms
 

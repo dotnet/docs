@@ -16,7 +16,7 @@ _Released July 9, 2024_
 
 #### CVE-2024-38081 – Remote code execution vulnerability
 
-This security update addresses a elevation of privilege vulnerability detailed in [CVE 2024-38081](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-38081).
+This security update addresses an elevation of privilege vulnerability detailed in [CVE 2024-38081](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-38081).
 
 ### Quality and reliability improvements
 

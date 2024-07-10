@@ -41,6 +41,6 @@ To set the environment variable to an empty value using <xref:System.Diagnostics
 
 ## Affected APIs
 
-- <xref:System.Environment.SetEnvironmentVariable(System.String,System.String)>
-- <xref:System.Diagnostics.ProcessStartInfo.Environment>
-- <xref:System.Diagnostics.ProcessStartInfo.EnvironmentVariables>
+- <xref:System.Environment.SetEnvironmentVariable(System.String,System.String)?displayProperty=fullName>
+- <xref:System.Diagnostics.ProcessStartInfo.Environment?displayProperty=fullName>
+- <xref:System.Diagnostics.ProcessStartInfo.EnvironmentVariables?displayProperty=fullName>

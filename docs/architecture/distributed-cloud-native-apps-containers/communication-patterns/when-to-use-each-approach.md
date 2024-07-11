@@ -20,7 +20,7 @@ The general approach for synchronous communication is as follows:
 - The client waits for the service to process the request and send back a response.
 - The client proceeds only after receiving the response.
 
-Example usecases include:
+Example use cases include:
 
 1. **Real-Time User Interactions**:
 
@@ -56,7 +56,7 @@ The general approach for asynchronous communication is as follows:
 - A client publishes messages to a queue or message broker.
 - Services that need to process the messages consume them from the queue.
 
-Example usecases include:
+Example use cases include:
 
 1. **Order Processing**:
 

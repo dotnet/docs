@@ -17,7 +17,7 @@ ms.author: enjieid
 |-------------------------------------|-----------------------------------------------------------------------------|
 | **Rule ID**                         | MSTEST0032                                                                  |
 | **Title**                           | Review or remove the assertion as its condition is known to be always true. |
-| **Category**                        | Design                                                                      |
+| **Category**                        | Usage                                                                      |
 | **Fix is breaking or non-breaking** | Non-breaking                                                                |
 | **Enabled by default**              | Yes                                                                         |
 | **Default severity**                | Info                                                                        |

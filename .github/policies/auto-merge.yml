@@ -19,6 +19,9 @@ configuration:
       then:
       - enableAutoMerge:
           mergeMethod: Squash
+      - approvePullRequest:
+          comment: "Approved; this PR will merge when all status checks pass."
+
     - description: Auto-merge PRs to live labeled with auto-merge
       triggerOnOwnActions: true
       if:

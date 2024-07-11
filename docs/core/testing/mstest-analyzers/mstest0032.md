@@ -8,8 +8,8 @@ f1_keywords:
 helpviewer_keywords:
 - PreferNotUsingAlwaysTrueAssertConditions
 - MSTEST0032
-author: Evangelink
-ms.author: amauryleve
+author: engyebrahim
+ms.author: enjieid
 ---
 # MSTEST0032: Use 'Assert.Fail' instead of an always-failing assert
 

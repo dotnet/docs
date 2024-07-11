@@ -1,0 +1,154 @@
+---
+title: Microsoft.Testing.Platform architecture overview
+description: Learn about how to extend Microsoft.Testing.Platform.
+author: MarcoRossignoli
+ms.author: mrossignoli
+ms.date: 07/11/2024
+---
+
+# Microsoft.Testing.Platform architecture
+
+Welcome to our new test platform! To help you get acquainted with its capabilities, we'll start with a simple example that demonstrates how to register and run a test. This foundational example will give you a solid understanding of the core functionality and how to get started quickly.
+
+[Step 1: Register and Run a simple test application](#step-1-register-and-run-a-simple-test-application)
+
+In this initial example, we will walk you through the basic steps to declare and run a test application. This straightforward approach ensures that you can immediately start using the platform with minimal setup.
+
+[Step 2: Extending the Platform](#step-2-extending-the-platform)
+
+After you've discovered how to create your first test application, we will explore an example of extension to cover partially the concepts surrounding the test application extensions.
+
+[Step 3: Comprehensive Overview of Extension Points](#step-3-comprehensive-overview-of-extension-points)
+
+Once you're comfortable with the basics, we'll delve into the various extension points. This will include:
+
+1. **Platform and Test Framework Capabilities**: Understanding the full range of capabilities provided by the platform and the test framework, allowing you to leverage them effectively.
+
+1. **Custom Test Framework**: How to write and register your custom test framework, enabling you to tailor the testing environment to your specific requirements.
+
+1. **In-Process and Out-of-Process Extensions**: Detailed instructions on how to write and register both in-process and out-of-process extensions, offering flexibility in how you extend the platform.
+
+1. **Order of Execution**: Clarifying the order of execution for the various extension points to ensure seamless integration and operation of your custom extensions.
+
+[Step 4: Available Services and Helpers](#step-4-available-services)
+
+Finally, we will provide an exhaustive list of the available services and helper functions within the platform. This section will serve as a reference to help you leverage all the tools at your disposal for creating robust and efficient test extensions.
+
+By following this structured approach, you will gain a comprehensive understanding of our test platform, from basic usage to advanced customization. Let's get started and explore the full potential of what our platform can offer!
+
+## Step 1: Register and Run a simple test application
+
+To introduce the architecture of the testing platform, we will use the classic console application (for Windows) as the host. The samples in this document are written in C#, but you can use the testing platform with any language that supports the .NET Ecma specification, and run on any OS supported by .NET. To use the platform, simply reference the `Microsoft.Testing.Platform.dll` assembly, which can be consumed through the official NuGet package available at <https://www.nuget.org/packages/Microsoft.Testing.Platform>.
+
+In a console project `Contoso.UnitTests.exe` the following `Main` method defines the entry point:
+
+```cs
+public static async Task<int> Main(string[] args)
+{
+    ITestApplicationBuilder testApplicationBuilder = await TestApplication.CreateBuilderAsync(args);
+    testApplicationBuilder.RegisterTestFramework(/* test framework registration factories */);
+    using ITestApplication testApplication = await testApplicationBuilder.BuildAsync();
+    return await testApplication.RunAsync();
+}
+```
+
+This code includes everything needed to execute a test session, except for registering a test framework such as MSTest through `RegisterTestFramework`. This code is shown and explained in later sections.
+
+Please also note that in a typical setup this code is automatically generated through MSBuild, and is not visible in your project. By typical setup we mean for example generating new project from .NET 9 `mstest` template via `dotnet new mstest`.
+
+When `Contoso.UnitTests.exe` application is started a standard Windows process is created, and the testing platform interacts with the registered testing framework to execute the testing session.
+
+A single process is created to carry out this work:
+
+```mermaid
+graph TD;
+    TestHost:'Contoso.UnitTests.exe';
+```
+
+The testing platform includes a built-in display device that writes the testing session information in the terminal, similar to:
+
+```bash
+Microsoft(R) Testing Platform Execution Command Line Tool
+Version: 1.1.0+8c0a8fd8e (UTC 2024/04/03)
+RuntimeInformation: win-x64 - .NET 9.0.0-preview.1.24080.9
+Copyright(c) Microsoft Corporation.  All rights reserved.
+Passed! - Failed: 0, Passed: 1, Skipped: 0, Total: 1, Duration: 5ms - Contoso.UnitTests.dll (win-x64 - .NET 9.0.0-preview.1.24080.9)
+```
+
+> [!NOTE]
+> The known exit codes returned by the `ITestApplication.RunAsync()` call are detailed in [platform exit codes](./unit-testing-platform-exit-codes.md).
+
+## Step 2: Extending the platform
+
+Test runs commonly collect code coverage information, or similar information to evaluate code quality. Such workloads may require configuration to be done before the test host process starts, for example setting environment variables.
+
+The testing platform accommodates this by having **out-of-process** extensions. When running with an out-of-process extensions, the testing platform will start multiple processes and it will manage them appropriately.
+
+The following example demonstrates how to register a code coverage feature using a **TestHostController** extension.
+
+```cs
+ITestApplicationBuilder testApplicationBuilder = await TestApplication.CreateBuilderAsync(args);
+testApplicationBuilder.RegisterTestFramework(/* test framework registration factories */);
+testApplicationBuilder.AddCodeCoverage();
+using ITestApplication testApplication = await testApplicationBuilder.BuildAsync();
+return await testApplication.RunAsync();
+```
+
+The `testApplicationBuilder.AddCodeCoverage();` internally uses the **TestHostController** extensibility point, which is an out-of-process extensibility point.
+
+```cs
+public static class TestApplicationBuilderExtensions
+{
+    public static ITestApplicationBuilder AddCodeCoverage(this ITestApplicationBuilder testApplicationBuilder)
+    {
+        testApplicationBuilder.TestHostControllers.AddEnvironmentVariableProvider(...);
+        ....
+        return testApplicationBuilder;
+    }
+}
+```
+
+The parameters for the api `AddEnvironmentVariableProvider` will be explained in later sections.
+
+When we run `Contoso.UnitTests.exe` this time, the testing platform detects that a `TestHostController` extension is registered. As a result, it starts another instance of the `Contoso.UnitTests.exe` process as a child process. This is done to properly set the environment variables as required by the extension registered with the `AddEnvironmentVariableProvider` API.
+
+The process layout looks like this:
+
+```mermaid
+graph TD;
+    TestHostController:'Contoso.UnitTests.exe'-->TestHost:'Contoso.UnitTests.exe;
+```
+
+> [!NOTE]
+> The provided example assumes a console application layout, which handles the start process correctly and propagates all command line arguments to the child process.
+> If you are using a different host, you need to ensure that the entry point code correctly forwards the process entry point (the "Main") to the appropriate code block.
+> The runtime simply starts itself with the same command line arguments.
+
+The above section provides a brief introduction to the architecture of the testing platform. The current extensibility points are divided into two categories:
+
+1. **In process** extensions can be accessed through the `TestHost` property of the test application builder. In process means that they will run in the same process as the test framework.
+
+    ```cs
+    ITestApplicationBuilder testApplicationBuilder = await TestApplication.CreateBuilderAsync(args);
+    testApplicationBuilder.RegisterTestFramework(/* test framework registration factories */);
+    testApplicationBuilder.TestHost.AddXXX(...);
+    ```
+
+    As observed, the most crucial extension point is the in-process *testing framework* (`RegisterTestFramework`), which is the only **mandatory** one.
+
+1. **Out of process** extensions can be accessed through the `TestHostControllers` property of the test application builder. These extensions run in a separate process from the test framework to "observe" it.
+
+    ```cs
+    ITestApplicationBuilder testApplicationBuilder = await TestApplication.CreateBuilderAsync(args);
+    testApplicationBuilder.TestHostControllers.AddXXX(...);
+    ```
+
+## Step 3: Comprehensive Overview of Extension points
+
+Let's start by getting familiar with the concept of [capabilities](./unit-testing-platform-architecture-capabilities.md) before diving into the various [extensions points](./unit-testing-platform-architecture-extensions.md).
+
+## Step 4: Available services
+
+The testing platform offers valuable services to both the testing framework and extension points. These services cater to common needs such as accessing the configuration, parsing and retrieving command-line arguments, obtaining the logging factory, and accessing the logging system, among others. `IServiceProvider` implements the [service locator pattern](https://en.wikipedia.org/wiki/Service_locator_pattern) for the testing platform.
+
+All the services, helpers and technical information about how to access and use these services is listed [here](./unit-testing-platform-architecture-services.md).

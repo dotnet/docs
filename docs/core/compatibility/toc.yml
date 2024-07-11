@@ -38,8 +38,12 @@ items:
       items:
       - name: "'dotnet workload' commands output change"
         href: sdk/9.0/dotnet-workload-output.md
+      - name: "'installer' repo version no longer documented"
+        href: sdk/9.0/productcommits-versions.md
       - name: Terminal logger is default
         href: sdk/9.0/terminal-logger.md
+      - name: Warning emitted for .NET Standard 1.x targets
+        href: sdk/9.0/netstandard-warning.md
     - name: Windows Forms
       items:
       - name: BindingSource.SortDescriptions doesn't return null
@@ -1626,8 +1630,12 @@ items:
       items:
       - name: "'dotnet workload' commands output change"
         href: sdk/9.0/dotnet-workload-output.md
+      - name: "'installer' repo version no longer documented"
+        href: sdk/9.0/productcommits-versions.md
       - name: Terminal logger is default
         href: sdk/9.0/terminal-logger.md
+      - name: Warning emitted for .NET Standard 1.x targets
+        href: sdk/9.0/netstandard-warning.md
     - name: .NET 8
       items:
       - name: CLI console output uses UTF-8

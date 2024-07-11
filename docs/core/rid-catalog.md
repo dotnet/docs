@@ -36,9 +36,9 @@ RIDs that represent concrete operating systems usually follow this pattern: `[os
 
 The RID graph or runtime fallback graph is a list of RIDs that are compatible with each other.
 
-These RIDs are defined in [PortableRuntimeIdentifierGraph.json](https://github.com/dotnet/sdk/blob/main/src/Layout/redist/PortableRuntimeIdentifierGraph.json) in the [`dotnet/sdk`](https://github.com/dotnet/sdk) repository. In this file, you can see that all RIDs, except for the base one, contain an `"#import"` statement. These statements indicate compatible RIDs.
+These RIDs are defined in [PortableRuntimeIdentifierGraph.json](https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.NETCore.Platforms/src/PortableRuntimeIdentifierGraph.json) in the [`dotnet/runtime`](https://github.com/dotnet/runtime) repository. In this file, you can see that all RIDs, except for the base one, contain an `"#import"` statement. These statements indicate compatible RIDs.
 
-Before .NET 8, version-specific and distro-specific RIDs were regularly added to the [Microsoft.NETCore.Platforms](https://www.nuget.org/packages/Microsoft.NETCore.Platforms/) package and the RID graph in the [*runtime.json*](https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.NETCore.Platforms/src/runtime.json) file, which is located in the `dotnet/runtime` repository. This graph is no longer updated and exists as a backwards compatibility option. Developers should [use RIDs that are non-version-specific and non-distro-specific](#using-rids).
+Before .NET 8, version-specific and distro-specific RIDs were regularly added to the [*runtime.json*](https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.NETCore.Platforms/src/runtime.json) file, which is located in the `dotnet/runtime` repository. This graph is no longer updated and exists as a backwards compatibility option. Developers should [use RIDs that are non-version-specific and non-distro-specific](#using-rids).
 
 When NuGet restores packages, it tries to find an exact match for the specified runtime.
 If an exact match is not found, NuGet walks back the graph until it finds the closest compatible system according to the RID graph.

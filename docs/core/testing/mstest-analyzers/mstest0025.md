@@ -39,7 +39,7 @@ Overall, using `Assert.Fail` promotes clarity, documentation, and maintainabilit
 
 ## How to fix violations
 
-Ensure that calls to `Assert.IsTrue`, `Assert.IsFalse`, `Assert.AreEqual`, `Assert.AreNotEqual` or `Assert.IsNotNull` are not producing always-failing conditions.
+Ensure that calls to `Assert.IsTrue`, `Assert.IsFalse`, `Assert.AreEqual`, `Assert.AreNotEqual`, `Assert.IsNull` or `Assert.IsNotNull` are not producing always-failing conditions.
 
 ## When to suppress warnings
 

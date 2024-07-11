@@ -22,9 +22,6 @@ body:
       description: What version of .NET introduced the breaking change?
       options:
         - .NET 8 GA
-        - .NET 9 Preview 1
-        - .NET 9 Preview 2
-        - .NET 9 Preview 3
         - .NET 9 Preview 4
         - .NET 9 Preview 5
         - .NET 9 Preview 6
@@ -56,9 +53,9 @@ body:
       label: Type of breaking change
       description: This information will be used to label the issue appropriately. [(How do I decide?)](https://learn.microsoft.com/dotnet/core/compatibility/categories)
       options:
-        - label: "**Binary incompatible**: Existing binaries may encounter a breaking change in behavior, such as failure to load or execute, and if so, require recompilation."
-        - label:  "**Source incompatible**: When recompiled using the new SDK or component or to target the new runtime, existing source code may require source changes to compile successfully."
-        - label:  "**Behavioral change**: Existing binaries may behave differently at run time."
+        - label: "**Binary incompatible**: Existing binaries might encounter a breaking change in behavior, such as failure to load or execute, and if so, require recompilation."
+        - label:  "**Source incompatible**: When recompiled using the new SDK or component or to target the new runtime, existing source code might require source changes to compile successfully."
+        - label:  "**Behavioral change**: Existing binaries might behave differently at run time."
   - type: textarea
     id: reason
     attributes:

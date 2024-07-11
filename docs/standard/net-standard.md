@@ -1,7 +1,7 @@
 ---
 title: .NET Standard
 description: Learn about .NET Standard, its versions, and the .NET implementations that support it.
-ms.date: 11/15/2023
+ms.date: 07/09/2024
 ms.service: dotnet
 ms.subservice: standard-library
 ms.custom: "updateeachrelease"
@@ -20,7 +20,10 @@ For information about choosing between .NET 5+ and .NET Standard, see [.NET 5+ a
 
 If you're targeting .NET Standard, we recommend you target .NET Standard 2.0, unless you need to support an earlier version. Most general-purpose libraries should not need APIs outside of .NET Standard 2.0, and .NET Framework doesn't support .NET Standard 2.1. .NET Standard 2.0 is supported by all modern platforms and is the recommended way to support multiple platforms with one target.
 
-If you need to support .NET Standard 1.x, we recommend that you *also* target .NET Standard 2.0. .NET Standard 1.x is distributed as a granular set of NuGet packages, which creates a large package dependency graph and results in developers downloading a lot of packages when building. For more information, see [Cross-platform targeting](library-guidance/cross-platform-targeting.md) and [.NET 5+ and .NET Standard](#net-5-and-net-standard) later in this article.
+If you need to support .NET Standard 1.x, we recommend that you *also* target .NET Standard 2.0. .NET Standard 1.x is distributed as a granular set of NuGet packages, which creates a large package dependency graph and results in a lot of packages being downloaded when the project is built. For more information, see [Cross-platform targeting](library-guidance/cross-platform-targeting.md) and [.NET 5+ and .NET Standard](#net-5-and-net-standard) later in this article.
+
+> [!NOTE]
+> Starting in .NET 9, a build warning is emitted if your project targets .NET Standard 1.x. For more information, see [Warning emitted for .NET Standard 1.x targets](../core/compatibility/sdk/9.0/netstandard-warning.md).
 
 ### .NET Standard versioning rules
 
@@ -85,7 +88,7 @@ If you only need to consume .NET Standard 2.0 libraries in your projects, you ca
 
 ## .NET 5+ and .NET Standard
 
-.NET 5, .NET 6, .NET 7, and .NET 8 are single products with a uniform set of capabilities and APIs that can be used for Windows desktop apps and cross-platform console apps, cloud services, and websites. The .NET 8 [TFMs](frameworks.md), for example, reflect this broad range of scenarios:
+.NET 5, .NET 6, .NET 7, .NET 8, and .NET 9 are single products with a uniform set of capabilities and APIs that can be used for Windows desktop apps and cross-platform console apps, cloud services, and websites. The .NET 8 [TFMs](frameworks.md), for example, reflect this broad range of scenarios:
 
 - `net8.0`
 
@@ -95,9 +98,12 @@ If you only need to consume .NET Standard 2.0 libraries in your projects, you ca
 
   This is an example of an [OS-specific TFM](frameworks.md#net-5-os-specific-tfms) that add OS-specific functionality to everything that `net8.0` refers to.
 
-### When to target net8.0 vs. netstandard
+### When to target `net8.0` vs. `netstandard`
 
-For existing code that targets `netstandard`, there's no need to change the TFM to `net8.0` or a later TFM. .NET 8 implements .NET Standard 2.1 and earlier. The only reason to retarget from .NET Standard to .NET 8+ would be to gain access to more runtime features, language features, or APIs. For example, in order to use C# 9, you need to target .NET 5 or a later version. You can multitarget .NET 8 and .NET Standard to get access to newer features and still have your library available to other .NET implementations.
+For existing code that targets .NET Standard 2.0 or later, there's no need to change the TFM to `net8.0` or a later TFM. .NET 8 implements .NET Standard 2.1 and earlier. The only reason to retarget from .NET Standard to .NET 8+ would be to gain access to more runtime features, language features, or APIs. For example, to use C# 9, you need to target .NET 5 or a later version. You can multitarget .NET 8 and .NET Standard to get access to newer features and still have your library available to other .NET implementations.
+
+> [!NOTE]
+> If your project targets .NET Standard 1.x, we recommend you retarget it to .NET Standard 2.0 or .NET 6+. For more information, see [Warning emitted for .NET Standard 1.x targets](../core/compatibility/sdk/9.0/netstandard-warning.md).
 
 Here are some guidelines for new code for .NET 5+:
 

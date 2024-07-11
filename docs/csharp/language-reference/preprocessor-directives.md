@@ -184,7 +184,7 @@ You use `#define` to define a symbol. When you use the symbol as the expression 
  ```
 
 > [!NOTE]
-> In C#, primitive constants should be defined using the `const` keyword. The `#define` directive cannot be used to declare constant values as is typically done in C and C++. You can also define constants in C# as static members of a class or struct, but be aware that static members are resolved at runtime, and thus not necessarily read-only. If you have several such constants, consider creating a separate "Constants" class to hold them.
+> In C#, primitive constants should be defined using the [`const`](keywords/const.md) keyword. A `const` declaration creates a `static` member that can't be modified at runtime. The `#define` directive can't be used to declare constant values as is typically done in C and C++. If you have several such constants, consider creating a separate "Constants" class to hold them.
 
 Symbols can be used to specify conditions for compilation. You can test for the symbol with either `#if` or `#elif`. You can also use the <xref:System.Diagnostics.ConditionalAttribute> to perform conditional compilation. You can define a symbol, but you can't assign a value to a symbol. The `#define` directive must appear in the file before you use any instructions that aren't also preprocessor directives. You can also define a symbol with the [**DefineConstants**](compiler-options/language.md#defineconstants) compiler option. You can undefine a symbol with `#undef`.
 

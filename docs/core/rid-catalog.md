@@ -82,7 +82,7 @@ There are some considerations about RIDs that you have to keep in mind when work
 
 ## Using RIDs
 
-To be able to use RIDs, you have to know which RIDs exist. For the latest and complete version, see the [PortableRuntimeIdentifierGraph.json](https://github.com/dotnet/sdk/blob/main/src/Layout/redist/PortableRuntimeIdentifierGraph.json) in the [`dotnet/sdk`](https://github.com/dotnet/sdk) repository.
+To be able to use RIDs, you have to know which RIDs exist. For the latest and complete version, see the [PortableRuntimeIdentifierGraph.json](https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.NETCore.Platforms/src/PortableRuntimeIdentifierGraph.json) in the [`dotnet/runtime`](https://github.com/dotnet/runtime) repository.
 
 RIDs that are considered 'portable'&mdash;that is, aren't tied to a specific version or OS distribution&mdash;are the recommended choice. This means that portable RIDs should be used for both [building a platform-specific application](./deploying/index.md#platform-specific-and-framework-dependent) and [creating a NuGet package with RID-specific assets](/nuget/create-packages/supporting-multiple-target-frameworks#architecture-specific-folders).
 
@@ -98,7 +98,7 @@ To get information about the platform, use <xref:System.OperatingSystem?displayP
 
 ## Known RIDs
 
-The following list shows a small subset of the most common RIDs used for each OS. For the latest and complete version, see the [PortableRuntimeIdentifierGraph.json](https://github.com/dotnet/sdk/blob/main/src/Layout/redist/PortableRuntimeIdentifierGraph.json) in the [`dotnet/sdk`](https://github.com/dotnet/sdk) repository.
+The following list shows a small subset of the most common RIDs used for each OS. For the latest and complete version, see the [PortableRuntimeIdentifierGraph.json](https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.NETCore.Platforms/src/PortableRuntimeIdentifierGraph.json) in the [`dotnet/runtime`](https://github.com/dotnet/runtime) repository.
 
 ### Windows RIDs
 

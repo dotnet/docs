@@ -52,7 +52,7 @@ As observed above, both the `capabilitiesFactory` and the `adapterFactory` suppl
 
 ## The `IConfiguration` service
 
-The `IConfiguration` interface can be retrieved using the [`IServiceProvider`](#services) and provides access to the configuration settings for the testing framework and any extension points. By default, these configurations are loaded from:
+The `IConfiguration` interface can be retrieved using the [`IServiceProvider`](#microsofttestingplatform-services) and provides access to the configuration settings for the testing framework and any extension points. By default, these configurations are loaded from:
 
 * Environment variables
 * A JSON file named `[assemblyName].testingplatformconfig.json` located near the entry point assembly.
@@ -145,7 +145,7 @@ public interface ICommandLineOptions
 }
 ```
 
-The `ICommandLineOptions` can be obtained through certain APIs, such as the [ICommandLineOptionsProvider](./unit-testing-platform-architecture-extensions.md#the-icommandlineoptionsprovider-extensions), or you can retrieve an instance of it from the [IServiceProvider](#services) via the extension method `serviceProvider.GetCommandLineOptions()`.
+The `ICommandLineOptions` can be obtained through certain APIs, such as the [ICommandLineOptionsProvider](./unit-testing-platform-architecture-extensions.md#the-icommandlineoptionsprovider-extensions), or you can retrieve an instance of it from the [IServiceProvider](#microsofttestingplatform-services) via the extension method `serviceProvider.GetCommandLineOptions()`.
 
 `ICommandLineOptions.IsOptionSet(string optionName)`: This method allows you to verify whether a specific option has been specified. When specifying the `optionName`, omit the `--` prefix. For example, if the user inputs `--myOption`, you should simply pass `myOption`.
 
@@ -164,7 +164,7 @@ The options you can choose from include:
 --diagnostic-verbosity                   Define the level of the verbosity for the --diagnostic. The available values are 'Trace', 'Debug', 'Information', 'Warning', 'Error', and 'Critical'
 ```
 
-From a coding standpoint, to log information, you need to obtain the `ILoggerFactory` from the [`IServiceProvider`](iserviceprovider.md).
+From a coding standpoint, to log information, you need to obtain the `ILoggerFactory` from the [`IServiceProvider`](#microsofttestingplatform-services).
 The `ILoggerFactory` API is as follows:
 
 ```cs
@@ -254,7 +254,7 @@ The message bus of the testing platform employs the publish-subscribe pattern, a
 
 The overarching structure of the shared bus is as follows:
 
-![bus](bus.png)
+![bus](./media/bus.png)
 
 As illustrated in the diagram, which includes an extensions and a test framework, there are two potential actions: pushing information to the bus or consuming information from the bus.
 
@@ -299,7 +299,7 @@ The most traditional example of an *output device* is the console output.
 > [!NOTE]
 > While the testing platform is engineered to support custom *output devices*, currently, this extension point is not available.
 
-To transmit data to the *output device*, you must obtain the `IOutputDevice` from the [`IServiceProvider`](#services).
+To transmit data to the *output device*, you must obtain the `IOutputDevice` from the [`IServiceProvider`](#microsofttestingplatform-services).
 The API consists of:
 
 ```cs

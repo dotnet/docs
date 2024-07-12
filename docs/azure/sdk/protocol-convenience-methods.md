@@ -58,7 +58,7 @@ The following code uses a `ContentSafetyClient` to call the `AnalyzeText` protoc
 // Create the client
 var safetyClient = new ContentSafetyClient(
     new Uri("content-safety-service-uri"),
-    new AzureKeyCredential("content-safety-key"));
+    new DefaultAzureCredential());
 
 // Create the message content
 RequestContent message = RequestContent.Create(new
@@ -74,7 +74,7 @@ Response response = safetyClient.AnalyzeText(
          ErrorOptions = ErrorOptions.NoThrow;
     });
 
-// Display the results
+// Display the response data
 using (StreamReader streamReader = new StreamReader(response.ContentStream))
 {
     Console.WriteLine(streamReader.ReadToEnd());
@@ -96,12 +96,12 @@ The following code uses a `ContentSafetyClient` to call the `AnalyzeText` conven
 // Create the client
 var safetyClient = new ContentSafetyClient(
     new Uri("content-safety-service-uri"),
-    new AzureKeyCredential("content-safety-key"));
+    new DefaultAzureCredential());
 
 // Call the convenience method
 AnalyzeTextResult result = safetyClient.AnalyzeText("What is Microsoft Azure?");
 
-// Print the results
+// Display the response data
 foreach (var item in result.CategoriesAnalysis)
 {
     Console.Write($"{item.Category}: ");
@@ -124,10 +124,12 @@ Some Azure client libraries depend directly on the `System.ClientModel` library.
 The following code uses a `ChatClient` to call the `CompleteChat` protocol method:
 
 ```csharp
+// Create the client
 OpenAIClient client = new("your-openai-key");
 ChatClient chatClient = client.GetChatClient("gpt-4");
 
-BinaryData input = BinaryData.FromBytes("""
+// Create the request prompt content
+BinaryData prompt = BinaryData.FromBytes("""
     {  
         "model": "gpt-4o",
         "messages": [
@@ -138,16 +140,18 @@ BinaryData input = BinaryData.FromBytes("""
         ]
     }
     """u8.ToArray());
-    
-using BinaryContent content = BinaryContent.Create(input);
+using BinaryContent content = BinaryContent.Create(prompt);
+
+// Send the request
 ClientResult result = chatClient.CompleteChat(
         content,
         new RequestOptions()
         { 
             ErrorOptions = ClientErrorBehaviors.NoThrow
         });
-BinaryData output = result.GetRawResponse().Content;
 
+// Retrieve and display the response data
+BinaryData output = result.GetRawResponse().Content;
 using JsonDocument outputAsJson = JsonDocument.Parse(output);
 string message = outputAsJson.RootElement
     .GetProperty("choices"u8)[0]
@@ -170,12 +174,15 @@ The preceding code demonstrates the following `System.ClientModel` protocol meth
 Consider the following code that uses a `ChatClient` to call the `CompleteChat` convenience method:
 
 ```csharp
+// Create the client
 OpenAIClient client = new("your-openai-key");
 ChatClient chatClient = client.GetChatClient("gpt-4");
 
+// Send the prompt
 ClientResult<ChatCompletion> completion
     = chatClient.CompleteChat("What is Azure?");
 
+// Display the response data
 Console.WriteLine($"{completion.Value.Role}: {completion.Value.Content}");
 ```
 

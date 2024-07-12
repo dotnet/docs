@@ -29,7 +29,7 @@ This rule raises a diagnostic when a call to an assertion produces an always-tru
 
 ## Rule description
 
-When you encounter an assertion that always passes (for example, `Assert.IsTrue(true)`), it is not obvious to someone reading the code why the assertion is there or what condition it's trying to check. This can lead to confusion and wasted time for developers who come across the code later on.
+When you encounter an assertion that always passes (for example, `Assert.IsTrue(true)`), it's not obvious to someone reading the code why the assertion is there or what condition it's trying to check. This can lead to confusion and wasted time for developers who come across the code later on.
 
 ## How to fix violations
 

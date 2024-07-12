@@ -1059,7 +1059,7 @@ Let's describe the api:
 
 `OnTestHostProcessStartedAsync`: This method is invoked immediately after the test host starts. This method offers an object that implements the `ITestHostProcessInformation` interface, which provides key details about the test host process result.
 > [!IMPORTANT]
-> The invocation of this method does not halt the test host's execution. If you need to pause it, you should register an [*in-process*](#microsofttestingplatform-extensions) extension such as [`ITestApplicationLifecycleCallbacks`](#the-itestapplicationlifecyclecallbacks-extensions) and synchronize it with the *out-of-process* extension.
+> The invocation of this method does not halt the test host's execution. If you need to pause it, you should register an [*in-process*](#microsofttestingplatform-extensibility) extension such as [`ITestApplicationLifecycleCallbacks`](#the-itestapplicationlifecyclecallbacks-extensions) and synchronize it with the *out-of-process* extension.
 
 `OnTestHostProcessExitedAsync`: This method is invoked when the test suite execution is complete. This method supplies an object that adheres to the `ITestHostProcessInformation` interface, which conveys crucial details about the outcome of the test host process.
 
@@ -1071,7 +1071,7 @@ The `ITestHostProcessInformation` interface provides the following details:
 
 ## Extensions execution order
 
-The testing platform consists of a [testing framework](#test-framework-extension) and any number of extensions that can operate [*in-process*](#microsofttestingplatform-extensions) or [*out-of-process*](#microsofttestingplatform-extensions). This document outlines the **sequence of calls** to all potential extensibility points to provide clarity on when a feature is anticipated to be invoked.
+The testing platform consists of a [testing framework](#test-framework-extension) and any number of extensions that can operate [*in-process*](#microsofttestingplatform-extensibility) or [*out-of-process*](#microsofttestingplatform-extensibility). This document outlines the **sequence of calls** to all potential extensibility points to provide clarity on when a feature is anticipated to be invoked.
 
 While a *sequence* could be used to depict this, we opt for a straightforward order of invocation calls, which allows for a more comprehensive commentary on the workflow.
 
@@ -1122,7 +1122,7 @@ public interface IAsyncCleanableExtension
 
 ### The CompositeExtensionFactory<T\>
 
-As outlined in the [extensions](#microsofttestingplatform-extensions) section, the testing platform enables you to implement interfaces to incorporate custom extensions both in and out of process.
+As outlined in the [extensions](#microsofttestingplatform-extensibility) section, the testing platform enables you to implement interfaces to incorporate custom extensions both in and out of process.
 
 Each interface addresses a particular feature, and according to .NET design, you implement this interface in a specific object. You can register the extension itself using the specific registration API `AddXXX` from the `TestHost` or `TestHostController` object from the `ITestApplicationBuilder` as detailed in the corresponding sections.
 

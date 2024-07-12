@@ -190,6 +190,12 @@ handle.Free();
 
 Don't forget that `GCHandle` needs to be explicitly freed to avoid memory leaks.
 
+### Advanced managed wrapper management
+
+Interop abstractions that rely upon managed object lifetime can be particularly difficult. There are broadly three approaches defined [here](../garbage-collection/unmanaged.md). Lifetime management for types that represent higher-level abstractions for native resources, that is "wrappers", should always consider deriving from `SafeHandle` first, implementing the [`IDisposable` pattern](../garbage-collection/implementing-dispose.md), and using Finalizers only as a last resort.
+
+Finalizers are notoriously difficult. One of the most common issues encountered by manager wrappers involves the Finalizer running while a member method is executing. To address this particular issue, inserting a `GC.KeepAlive(this)` at the end of the member method will ensure the wrapper's lifetime extends to at least the end of the member.
+
 ## Common Windows data types
 
 Here is a list of data types commonly used in Windows APIs and which C# types to use when calling into the Windows code.

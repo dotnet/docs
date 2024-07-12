@@ -175,8 +175,7 @@ ChatClient chatClient = client.GetChatClient("gpt-4");
 ClientResult<ChatCompletion> completion
     = chatClient.CompleteChat("What is Azure?");
 
-Console.WriteLine($"{completion.Value.Role}: {completion.Value.Content}");}
-}
+Console.WriteLine($"{completion.Value.Role}: {completion.Value.Content}");
 ```
 
 The preceding code demonstrates the following `System.ClientModel` convenience method patterns:

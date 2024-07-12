@@ -91,6 +91,14 @@ Previously, you could only link a tracing <xref:System.Diagnostics.Activity> to 
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Diagnostics.cs" id="AddLink":::
 
+## Metrics.Gauge instrument
+
+<xref:System.Diagnostics.Metrics> now provides the `Gauge` <!--<xref:<xref:System.Diagnostics.Metrics.Gauge>--> instrument according to the OpenTelemetry specification. The `Gauge` instrument is designed to record non-additive values when changes occur. For example, it can measure the background noise level, where summing the values from multiple rooms would be nonsensical. The `Gauge` instrument is a generic type that can record any value type, such as `int`, `double`, or `decimal`.
+
+The following example demonstrates using the the `Gauge` instrument.
+
+:::code language="csharp" source="../snippets/dotnet-9/csharp/Diagnostics.cs" id="Gauge":::
+
 ## LINQ
 
 New methods <xref:System.Linq.Enumerable.CountBy%2A> and <xref:System.Linq.Enumerable.AggregateBy%2A> have been introduced. These methods make it possible to aggregate state by key without needing to allocate intermediate groupings via <xref:System.Linq.Enumerable.GroupBy%2A>.
@@ -182,7 +190,15 @@ The new APIs are available from the [`System.Reflection.Metadata`](https://www.n
 
 ## Serialization
 
-In <xref:System.Text.Json>, .NET 9 has new options for serializing JSON and a new singleton that makes it easier to serialize using web defaults.
+In <xref:System.Text.Json>, .NET 9 includes the following updates:
+
+- [Indentation options](#indentation-options)
+- [Default web options singleton](#default-web-options-singleton)
+- [JsonSchemaExporter](#jsonschemaexporter)
+- [Respect nullable annotations](#respect-nullable-annotations)
+- [Require non-optional constructor parameters](#require-non-optional-constructor-parameters)
+- [Order JsonObject properties](#order-jsonobject-properties)
+- [Additional contract metadata APIs](#additional-contract-metadata-apis)
 
 ### Indentation options
 
@@ -190,11 +206,131 @@ In <xref:System.Text.Json>, .NET 9 has new options for serializing JSON and a ne
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Serialization.cs" id="Indentation":::
 
-### Default web options
+### Default web options singleton
 
 If you want to serialize with the [default options that ASP.NET Core uses](../../../standard/serialization/system-text-json/configure-options.md#web-defaults-for-jsonserializeroptions) for web apps, use the new <xref:System.Text.Json.JsonSerializerOptions.Web?displayProperty=nameWithType> singleton.
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Serialization.cs" id="Web":::
+
+### JsonSchemaExporter
+
+JSON is frequently used to represent types in method signatures as part of remote procedure&ndash;calling schemes. It's used, for example, as part of OpenAPI specifications, or as part of tool calling with AI services like those from OpenAI. Developers can serialize and deserialize .NET types as JSON using <xref:System.Text.Json>. But they also need to be able to get a JSON schema that describes the shape of the .NET type (that is, describes the shape of what would be serialized and what can be deserialized). <xref:System.Text.Json> now provides the `JsonSchemaExporter` <!--<xref:System.Text.Json.Schema.JsonSchemaExporter>--> type, which supports generating a JSON schema that represents a .NET type.
+
+The following code generates a JSON schema from a type.
+
+:::code language="csharp" source="../snippets/dotnet-9/csharp/Serialization.cs" id="Schema":::
+
+The type is defined as follows:
+
+:::code language="csharp" source="../snippets/dotnet-9/csharp/Serialization.cs" id="Book":::
+
+The generated schema is:
+
+```json
+{
+  "type": [
+    "object",
+    "null"
+  ],
+  "properties": {
+    "Title": {
+      "type": "string"
+    },
+    "Author": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "PublishYear": {
+      "type": "integer"
+    }
+  }
+}
+```
+
+### Respect nullable annotations
+
+<xref:System.Text.Json> now recognizes nullability annotations of properties and can be configured to enforce those during serialization and deserialization using the `RespectNullableAnnotations` <!--<xref:System.Text.Json.JsonSerializerOptions.RespectNullableAnnotations>--> flag.
+
+The following code shows how to set the option (the `Book` type definition is shown in the previous section):
+
+:::code language="csharp" source="../snippets/dotnet-9/csharp/Serialization.cs" id="RespectNullable":::
+
+You can also enable this setting globally using the `System.Text.Json.JsonSerializerOptions.RespectNullableAnnotations` feature switch in your project file (for example, *.csproj* file):
+
+```xml
+<ItemGroup>
+  <RuntimeHostConfigurationOption Include="System.Text.Json.JsonSerializerOptions.RespectNullableAnnotations" Value="true" />
+</ItemGroup>
+```
+
+You can configure nullability at an individual property level using the `JsonPropertyInfo.IsGetNullable` <!--<xref:System.Text.Json.Serialization.Metadata.JsonPropertyInfo.IsGetNullable>--> and `JsonPropertyInfo.IsSetNullable` <!--<xref:System.Text.Json.Serialization.Metadata.JsonPropertyInfo.IsSetNullable>--> properties.
+
+### Require non-optional constructor parameters
+
+Historically, <xref:System.Text.Json> has treated non-optional constructor parameters as optional when using constructor-based deserialization. You can change that behavior using the new `RespectRequiredConstructorParameters` <!--<xref:System.Text.Json.JsonSerializerOptions.RespectRequiredConstructorParameters>--> flag.
+
+The following code shows how to set the option:
+
+:::code language="csharp" source="../snippets/dotnet-9/csharp/Serialization.cs" id="RespectRequired":::
+
+The `MyPoco` type is defined as follows:
+
+:::code language="csharp" source="../snippets/dotnet-9/csharp/Serialization.cs" id="Poco":::
+
+You can also enable this setting globally using the `System.Text.Json.JsonSerializerOptions.RespectNullableAnnotations` feature switch in your project file (for example, *.csproj* file):
+
+```xml
+<ItemGroup>
+  <RuntimeHostConfigurationOption Include="System.Text.Json.JsonSerializerOptions.RespectRequiredConstructorParameters" Value="true" />
+</ItemGroup>
+```
+
+As with earlier versions of <xref:System.Text.Json>, you can configure whether individual properties are required using the <xref:System.Text.Json.Serialization.Metadata.JsonPropertyInfo.IsRequired?displayProperty=nameWithType> property.
+
+### Order JsonObject properties
+
+The <System.Json.JsonObject> type now exposes ordered dictionary&ndash;like APIs that enable explicit property order manipulation.
+
+:::code language="csharp" source="../snippets/dotnet-9/csharp/Serialization.cs" id="PropertyOrder":::
+
+### Additional contract metadata APIs
+
+The JSON contract API now exposes additional metadata including constructor metadata information and improved attribute provider support for the case of the source generator.
+
+The new APIs have the following shape:
+
+```csharp
+namespace System.Text.Json.Serialization.Metadata;
+
+public partial class JsonTypeInfo
+{
+    // Typically the ConstructorInfo of the active deserialization constructor.
+    public ICustomAttributeProvider? ConstructorAttributeProvider { get; }
+}
+
+public partial class JsonPropertyInfo
+{
+    public Type DeclaringType { get; }
+    // Typically the FieldInfo or PropertyInfo of the property.
+    public ICustomAttributeProvider? AttributeProvider { get; set; }
+    // The constructor parameter that has been associated with the current property.
+    public JsonParameterInfo? AssociatedParameter { get; }
+}
+
+public sealed class JsonParameterInfo
+{
+    public Type DeclaringType { get; }
+    public int Position { get; }
+    public Type ParameterType { get; }
+    public bool HasDefaultValue { get; }
+    public object? DefaultValue { get; }
+    public bool IsNullable { get; }
+    // Typically the ParameterInfo of the parameter.
+    public ICustomAttributeProvider? AttributeProvider { get; }
+}
+```
 
 ## Tensors for AI
 
@@ -338,3 +474,15 @@ Additional performance improvements have been made to many types in the <xref:Sy
 In some cases, this has resulted in a 2-5x speedup to core APIs including `Matrix4x4` multiplication, creation of <xref:System.Numerics.Plane> from a series of vertices, <xref:System.Numerics.Quaternion> concatenation, and computing the cross product of a <xref:System.Numerics.Vector3>.
 
 There's also constant folding support for the `SinCos` API, which computes both `Sin(x)` and `Cos(x)` in a single call, making it more efficient.
+
+## Logging source generator
+
+C# 12 introduced [primary constructors](../../../csharp/programming-guide/classes-and-structs/instance-constructors.md#primary-constructors), which allow you to define a constructor directly on the class declaration. The logging source generator now supports logging using classes that have a primary constructor.
+
+```csharp
+public partial class ClassWithPrimaryConstructor(ILogger logger)
+{
+    [LoggerMessage(0, LogLevel.Debug, "Test.")]
+    public partial void Test();
+}
+```

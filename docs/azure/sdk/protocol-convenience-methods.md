@@ -10,7 +10,7 @@ ms.date: 06/24/2024
 
 The Azure SDK client libraries provide an interface to Azure service REST APIs by translating method calls into underlying HTTP requests. In this article, you'll learn about the different types of methods exposed by the client libraries and explore their implementation differences.
 
-## Understand protocol methods and convenience methods
+## Understand protocol and convenience methods
 
 Azure SDK client libraries expose two different categories of methods to make requests to an Azure service:
 
@@ -18,18 +18,18 @@ Azure SDK client libraries expose two different categories of methods to make re
 
 - **Convenience methods** provide a convenience layer over the lower-level protocol layer to add support for the .NET type system and other benefits. Convenience methods accept primitives or C# model types as parameters and map them to the body of an underlying REST API request. These methods also handle various details of request and response management to allow developers to focus on sending and receiving data objects, instead of lower-level concerns.
 
-### Azure SDK client library dependency considerations
+### Azure SDK client library dependency patterns
 
-Protocol and convenience methods implement slightly different patterns based on the underlying dependency chain of the respective library. Azure SDK client libraries depend on one of two different lower-level libraries:
+Protocol and convenience methods implement slightly different patterns based on the underlying package dependency chain of the respective library. Azure SDK client libraries depend on one of two different lower-level libraries:
 
 - [**Azure.Core**](/dotnet/api/overview/azure/core-readme) provides shared primitives, abstractions, and helpers for building modern .NET Azure SDK client libraries. These libraries follow the [Azure SDK Design Guidelines for .NET](https://azure.github.io/azure-sdk/dotnet_introduction.html) and use package and namespace names prefixed with 'Azure', such as [`Azure.Storage.Blobs`](/dotnet/api/overview/azure/storage.blobs-readme).
 
 - [**System.ClientModel**](/dotnet/api/overview/azure/system.clientmodel-readme) is a lower-level library that provides shared primitives, abstractions, and helpers for .NET service client libraries. The `System.ClientModel` library is a general purpose toolset designed to help build libraries for a variety of platforms and services, whereas the `Azure.Core` library is specifically designed for building Azure client libraries.
 
 > [!NOTE]
-> The `Azure.Core` library itself also depends on the `System.ClientModel` for various service building blocks. In the context of this article, the key differentiator is whether a client library depends on `Azure.Core` or `System.ClientModel` directly, rather than through a nested dependency.
+> The `Azure.Core` library itself also depends on the `System.ClientModel` for various service building blocks. In the context of this article, the key differentiator for method patterns is whether a client library depends on `Azure.Core` or `System.ClientModel` directly, rather than through a nested dependency.
 
-The following table compares the differences between the request and response types used by protocol and convenience methods based on whether they depend on `Azure.Core` or `System.ClientModel`:
+The following table compares differences between some of the request and response types used by protocol and convenience methods based on whether they depend on `Azure.Core` or `System.ClientModel`:
 
 |Request or response concern  |Azure.Core  | System.ClientModel |
 |---------|---------|---------|
@@ -42,15 +42,17 @@ The following table compares the differences between the request and response ty
 
 The sections ahead provide implementation examples of these concepts.
 
-## Work with protocol methods
+## Protocol and convenience method examples
 
-The coding patterns and types used by client library protocol methods vary slightly depending on whether the library depends on `Azure.Core` or `System.ClientModel`. The differences primarily surface in the C# types used for handling request and response data.
+The coding patterns and types used by client library protocol methods vary slightly depending on whether the library depends on `Azure.Core` or `System.ClientModel`. The differences primarily influence the C# types used for handling request and response data.
 
-### Protocol methods from libraries that depend on Azure.Core
+### Libraries that depend on Azure.Core
 
 Many Azure SDK client libraries depend on `Azure.Core` library. For example, the [`Azure.AI.ContentSafety`](/dotnet/api/overview/azure/ai.contentsafety-readme) library depends on the `Azure.Core` library and provides a `ContentSafetyClient` class that exposes both protocol and convenience methods.
 
-Consider the following code that uses the `AnalyzeText` protocol method on the `ContentSafetyClient`:
+#### Work with protocol methods
+
+The following code uses a `ContentSafetyClient` to call the `AnalyzeText` protocol method:
 
 ```csharp
 // Create the client
@@ -79,34 +81,63 @@ using (StreamReader streamReader = new StreamReader(response.ContentStream))
 }
 ```
 
-The preceding code demonstrates the following protocol method concepts:
-    - Uses the `RequestContent` type as a  to supply data for the request body.
-    - Uses the `RequestContext` type to configure options.
-    - Returns data using the `Response` type.
-    - Reads the `ContentStream` to access the response data.
+The preceding code demonstrates the following protocol method patterns:
 
-### Protocol methods from libraries that depend on System.ClientModel
+- Uses the `RequestContent` type as a  to supply data for the request body.
+- Uses the `RequestContext` type to configure options.
+- Returns data using the `Response` type.
+- Reads the `ContentStream` to access the response data.
 
-Some Azure client libraries depend directly on the System.ClientModel. The [`OpenAI`](https://www.nuget.org/packages/OpenAI/2.0.0-beta.7) library depends on the `System.ClientModel` library and provides a `ChatClient` class that exposes both protocol and convenience methods.
+#### Work with convenience methods
 
-Consider the following code that uses the `CompleteChat` protocol method on the `ChatClient`:
+The following code uses a `ContentSafetyClient` to call the `AnalyzeText` convenience method:
+
+```csharp
+// Create the client
+var safetyClient = new ContentSafetyClient(
+    new Uri("content-safety-service-uri"),
+    new AzureKeyCredential("content-safety-key"));
+
+// Call the convenience method
+AnalyzeTextResult result2 = safetyClient.AnalyzeText("What is Microsoft Azure?");
+
+foreach (var item in result2.CategoriesAnalysis)
+{
+    Console.Write($"{item.Category}: ");
+    Console.Write(item.Severity);
+    Console.WriteLine();
+}
+```
+
+The preceding code demonstrates the following `Azure.Core` convenience method patterns:
+
+- Uses a standard C# primitive or model type as a parameter.
+- Returns a friendly C# type that represents the result of the operation.
+
+### Libraries that depend on System.ClientModel
+
+Some Azure client libraries depend directly on the `System.ClientModel` library. For example, the [`OpenAI`](https://www.nuget.org/packages/OpenAI/2.0.0-beta.7) library depends on the `System.ClientModel` library and provides a `ChatClient` class that exposes both protocol and convenience methods.
+
+#### Work with protocol methods
+
+The following code uses a `ChatClient` to call the `CompleteChat` protocol method:
 
 ```C#
 OpenAIClient client = new("your-openai-key");
 ChatClient chatClient = client.GetChatClient("gpt-4");
 
 BinaryData input = BinaryData.FromBytes("""
-{  
-    "model": "gpt-4o",
-    "messages": [
-       {
-           "role": "user",
-           "content": "What is Microsoft Azure?."
-       }
-    ]
-}
-"""u8.ToArray());
-
+    {  
+        "model": "gpt-4o",
+        "messages": [
+           {
+               "role": "user",
+               "content": "What is Microsoft Azure?."
+           }
+        ]
+    }
+    """u8.ToArray());
+    
 using BinaryContent content = BinaryContent.Create(input);
 ClientResult result = chatClient.CompleteChat(
         content,
@@ -127,47 +158,15 @@ Console.WriteLine(message);
 ```
 
 The preceding code demonstrates the following `System.ClientModel` protocol method patterns:
-    - Uses the `BinaryContent` type as a parameter to supply data for the request body.
-    - Uses the `RequestContext` type to configure request options.
-    - Returns data using the `ClientResult` type.
-    - Calls the `GetRawResponse` method to access the response data.
 
-## Work with convenience methods
+- Uses the `BinaryContent` type as a parameter to supply data for the request body.
+- Uses the `RequestContext` type to configure request options.
+- Returns data using the `ClientResult` type.
+- Calls the `GetRawResponse` method to access the response data.
 
-Convenience methods streamline the client library development experience by handling various lower-level concerns internally. They enable you to pass your data objects as parameters directly and automatically handle mapping that data to the request body. Convenience methods often act as wrappers around the lower-level protocol methods.
+#### Work with convenience methods
 
-### Convenience methods using libraries that depend on Azure.Core
-
-The `Azure.AI.ContentSafety` library depends on the `Azure.Core` library and provides a `ContentSafetyClient` class that exposes convenience methods.
-
-Consider the following code that uses the `AnalyzeText` protocol method on the `ContentSafetyClient`:
-
-```csharp
-// Create the client
-var safetyClient = new ContentSafetyClient(
-    new Uri("content-safety-service-uri"),
-    new AzureKeyCredential("content-safety-key"));
-
-// Call the convenience method
-AnalyzeTextResult result2 = safetyClient.AnalyzeText("What is Microsoft Azure?");
-
-foreach (var item in result2.CategoriesAnalysis)
-{
-    Console.Write($"{item.Category}: ");
-    Console.Write(item.Severity);
-    Console.WriteLine();
-}
-```
-
-The preceding code demonstrates the following `Azure.Core` convenience method patterns:
-    - Uses a standard C# primitive or model type as a parameter.
-    - Returns a friendly C# type that represents the result of the operation.
-
-### Convenience methods using libraries that depend on System.ClientModel
-
-The `OpenAI` library depends on the `System.ClientModel` library and provides a `ChatClient` class that exposes convenience methods.
-
-Consider the following code that uses the `CompleteChatStreamingAsync` convenience method on the `ChatClient`:
+Consider the following code that uses a `ChatClient` to call the `CompleteChat` convenience method:
 
 ```csharp
 OpenAIClient client = new("your-openai-key");
@@ -181,8 +180,9 @@ Console.WriteLine($"{completion.Value.Role}: {completion.Value.Content}");}
 ```
 
 The preceding code demonstrates the following `System.ClientModel` convenience method patterns:
-    - Uses a standard C# primitive or model type as a parameter.
-    - Returns a `ClientResult` type that represents the result of the operation.
+
+- Uses a standard C# primitive or model type as a parameter.
+- Returns a `ClientResult` type that represents the result of the operation.
 
 ## Protocol and convenience method usage guidance
 
@@ -195,3 +195,8 @@ Many Azure SDK client libraries provide the option to use either protocol or con
 - Protocol methods:
   - Provide access to lower-level types such as `RequestContext` and `RequestOptions` that are not available through convenience methods.
   - Enable access to features of the underlying REST APIs that convenience methods do not expose.
+
+## See also
+
+- [Understanding the Azure Core library for .NET](https://devblogs.microsoft.com/azure-sdk/understanding-the-azure-core-library-for-net/)
+- [System.ClientModel library for .NET](/dotnet/api/overview/azure/system.clientmodel-readme)

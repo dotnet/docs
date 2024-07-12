@@ -186,7 +186,7 @@ The preceding code demonstrates the following `System.ClientModel` convenience m
 
 ## Protocol and convenience method usage guidance
 
-Many Azure SDK client libraries provide the option to use either protocol or convenience methods, but in most scenarios developers should prioritize convenience methods. Convenience methods are designed to improve the development experience while still providing flexibility when authoring requests and handling responses. Consider the following criteria when deciding which type of method to use:
+Although the Azure SDK for .NET client libraries provide the option to use either protocol or convenience methods, in most scenarios developers should prioritize using convenience methods. Convenience methods are designed to improve the development experience and provide flexibility for authoring requests and handling responses. Consider the following criteria when deciding which type of method to use:
 
 - Convenience methods:
   - Enable you to work with more friendly method parameter and response types.

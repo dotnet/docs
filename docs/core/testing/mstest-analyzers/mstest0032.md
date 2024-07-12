@@ -37,4 +37,4 @@ Ensure that calls to `Assert.IsTrue`, `Assert.IsFalse`, `Assert.AreEqual`, `Asse
 
 ## When to suppress warnings
 
-We do not recommend suppressing warnings from this rule.
+It's _not_ recommended to suppress warnings from this rule.

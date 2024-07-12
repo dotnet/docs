@@ -2,12 +2,12 @@
 title: What's new in .NET libraries for .NET 9
 description: Learn about the new .NET libraries features introduced in .NET 9.
 titleSuffix: ""
-ms.date: 06/11/2024
+ms.date: 07/11/2024
 ms.topic: whats-new
 ---
 # What's new in .NET libraries for .NET 9
 
-This article describes new features in the .NET libraries for .NET 9. It's been updated for .NET 9 Preview 5.
+This article describes new features in the .NET libraries for .NET 9. It's been updated for .NET 9 Preview 6.
 
 ## Collections
 
@@ -29,9 +29,9 @@ This method unblocks users who want to implement graph algorithms in contexts wh
 
 <xref:System.ComponentModel> includes new opt-in trimmer-compatible APIs for describing components. Any application, especially self-contained trimmed applications, can use these new APIs to help support trimming scenarios.
 
-The primary API is the `public static void RegisterType<T>()` <!--<xref:System.ComponentModel.TypeDescriptor.RegisterType%01?displayProperty=nameWithType>--> method on the `TypeDescriptor` class. This method has the <xref:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembersAttribute> attribute so that the trimmer preserves members for that type. You should call this method once per type, and typically early on.
+The primary API is the <xref:System.ComponentModel.TypeDescriptor.RegisterType%601?displayProperty=nameWithType> method on the `TypeDescriptor` class. This method has the <xref:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembersAttribute> attribute so that the trimmer preserves members for that type. You should call this method once per type, and typically early on.
 
-The secondary APIs have a `FromRegisteredType` suffix, such as `TypeDescriptor.GetPropertiesFromRegisteredType(Type componentType)` <!--<xref:System.ComponentModel.TypeDescriptor.GetPropertiesFromRegisteredType(System.Type)?displayProperty=nameWithType>-->. Unlike their counterparts that don't have the `FromRegisteredType` suffix, these APIs don't have `[RequiresUnreferencedCode]` or `[DynamicallyAccessedMembers]` trimmer attributes. The lack of trimmer attributes helps consumers by no longer having to either:
+The secondary APIs have a `FromRegisteredType` suffix, such as <xref:System.ComponentModel.TypeDescriptor.GetPropertiesFromRegisteredType(System.Type)?displayProperty=nameWithType>. Unlike their counterparts that don't have the `FromRegisteredType` suffix, these APIs don't have `[RequiresUnreferencedCode]` or `[DynamicallyAccessedMembers]` trimmer attributes. The lack of trimmer attributes helps consumers by no longer having to either:
 
 - Suppress trimming warnings, which can be risky.
 - Propagate a strongly typed `Type` parameter to other methods, which can be cumbersome or infeasible.
@@ -87,7 +87,7 @@ The constructor resolution for <xref:Microsoft.Extensions.DependencyInjection.Ac
 
 ### New Activity.AddLink method
 
-Previously, you could only link a tracing <xref:System.Diagnostics.Activity> to other tracing contexts when you [created the `Activity`](xref:System.Diagnostics.ActivitySource.CreateActivity(System.String,System.Diagnostics.ActivityKind,System.Diagnostics.ActivityContext,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}},System.Collections.Generic.IEnumerable{System.Diagnostics.ActivityLink},System.Diagnostics.ActivityIdFormat)?displayProperty=nameWithType). New in .NET 9, the `Activity.AddLink(System.Diagnostics.ActivityLink)` <!--<xref:System.Diagnostics.Activity.AddLink(System.Diagnostics.ActivityLink)>--> API lets you link an `Activity` object to other tracing contexts after it's created. This change aligns with the [OpenTelemetry specifications](https://github.com/open-telemetry/opentelemetry-specification/blob/6360b49d20ae451b28f7ba0be168ed9a799ac9e1/specification/trace/api.md?plain=1#L804) as well.
+Previously, you could only link a tracing <xref:System.Diagnostics.Activity> to other tracing contexts when you [created the `Activity`](xref:System.Diagnostics.ActivitySource.CreateActivity(System.String,System.Diagnostics.ActivityKind,System.Diagnostics.ActivityContext,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}},System.Collections.Generic.IEnumerable{System.Diagnostics.ActivityLink},System.Diagnostics.ActivityIdFormat)?displayProperty=nameWithType). New in .NET 9, the <xref:System.Diagnostics.Activity.AddLink(System.Diagnostics.ActivityLink)> API lets you link an `Activity` object to other tracing contexts after it's created. This change aligns with the [OpenTelemetry specifications](https://github.com/open-telemetry/opentelemetry-specification/blob/6360b49d20ae451b28f7ba0be168ed9a799ac9e1/specification/trace/api.md?plain=1#L804) as well.
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Diagnostics.cs" id="AddLink":::
 
@@ -129,11 +129,7 @@ Starting in C# 13, you can use `params` with any argument that can be constructe
 
 .NET 9 now includes over 60 methods with a `params ReadOnlySpan<T>` parameter. Some are brand new overloads, and some are existing methods that already took a `ReadOnlySpan<T>` but now have that parameter marked with `params`. The net effect is if you upgrade to .NET 9 and recompile your code, you'll see performance improvements without making any code changes. That's because the compiler prefers to bind to span-based overloads than to the array-based overloads.
 
-For example, `String.Join` now includes the following overload <!--<xref:System.String.Join(System.String,System.ReadOnlySpan`1)?displayProperty=nameWithType>-->, which implements the new pattern:
-
-```csharp
-public static string Join(string? separator, params ReadOnlySpan<string?> value)
-```
+For example, `String.Join` now includes the following overload, which implements the new pattern: <xref:System.String.Join(System.String,System.ReadOnlySpan%601)?displayProperty=nameWithType>
 
 Now, a call like `string.Join(", ", "a", "b", "c")` is made without allocating an array to pass in the `"a"`, `"b"`, and `"c"` arguments.
 
@@ -161,7 +157,7 @@ The new <xref:System.Reflection.Emit.PersistedAssemblyBuilder> class includes PD
 
 ### Type-name parsing
 
-`TypeName` <!--<xref:System.Reflection.Metadata.TypeName>--> is a parser for ECMA-335 type names that provides much the same functionality as <xref:System.Type?displayProperty=fullName> but is decoupled from the runtime environment. Components like serializers and compilers need to parse and process type names. For example, the Native AOT compiler has switched to using `TypeName` <!--<xref:System.Reflection.Metadata.TypeName>-->.
+<xref:System.Reflection.Metadata.TypeName> is a parser for ECMA-335 type names that provides much the same functionality as <xref:System.Type?displayProperty=fullName> but is decoupled from the runtime environment. Components like serializers and compilers need to parse and process type names. For example, the Native AOT compiler has switched to using <xref:System.Reflection.Metadata.TypeName>.
 
 The new `TypeName` class provides:
 
@@ -174,7 +170,7 @@ The new `TypeName` class provides:
   - `IsByRef` and `IsPointer` for working with pointers and managed references.
   - `GetElementType()` for working with pointers, references, and arrays.
   - `IsNested` and `DeclaringType` for working with nested types.
-  - `AssemblyName`, which exposes the assembly name information via the new `AssemblyNameInfo` <!--<xref:System.Reflection.Metadata.AssemblyInfoName>--> class. In contrast to `AssemblyName`, the new type is *immutable*, and parsing culture names doesn't create instances of `CultureInfo`.
+  - `AssemblyName`, which exposes the assembly name information via the new <xref:System.Reflection.Metadata.AssemblyInfoName> class. In contrast to `AssemblyName`, the new type is *immutable*, and parsing culture names doesn't create instances of `CultureInfo`.
 
 Both `TypeName` and `AssemblyNameInfo` types are immutable and don't provide a way to check for equality (they don't implement `IEquatable`). Comparing assembly names is simple, but different scenarios need to compare only a subset of exposed information (`Name`, `Version`, `CultureName`, and `PublicKeyOrToken`).
 
@@ -215,7 +211,7 @@ To use the .NET tensor APIs, install the [System.Numerics.Tensors](https://www.n
 
 ### New Tensor\<T> type
 
-The new `Tensor<T>` <!--xref:System.Numerics.Tensors.Tensor`1--> type expands the AI capabilities of the .NET libraries and runtime. This type:
+The new <xref:System.Numerics.Tensors.Tensor%601> type expands the AI capabilities of the .NET libraries and runtime. This type:
 
 - Provides efficient interop with AI libraries like ML.NET, TorchSharp, and ONNX Runtime using zero copies where possible.
 - Builds on top of <xref:System.Numerics.Tensors.TensorPrimitives> for efficient math operations.
@@ -242,7 +238,7 @@ The threading APIs include improvements for iterating through tasks, and for pri
 
 ### `Task.WhenEach`
 
-A variety of helpful new APIs have been added for working with <xref:System.Threading.Tasks.Task%601> objects. The new `Task.WhenEach` <!--<xref:System.Threading.Tasks.Task.WhenEach?displayProperty=nameWithType>--> method lets you iterate through tasks as they complete using an `await foreach` statement. You no longer need to do things like repeatedly call <xref:System.Threading.Tasks.Task.WaitAny%2A?displayProperty=nameWithType> on a set of tasks to pick off the next one that completes.
+A variety of helpful new APIs have been added for working with <xref:System.Threading.Tasks.Task%601> objects. The new <xref:System.Threading.Tasks.Task.WhenEach?displayProperty=nameWithType> method lets you iterate through tasks as they complete using an `await foreach` statement. You no longer need to do things like repeatedly call <xref:System.Threading.Tasks.Task.WaitAny%2A?displayProperty=nameWithType> on a set of tasks to pick off the next one that completes.
 
 The following code makes multiple `HttpClient` calls and operates on their results as they complete.
 
@@ -250,8 +246,95 @@ The following code makes multiple `HttpClient` calls and operates on their resul
 
 ### Prioritized unbounded channel
 
-The <xref:System.Threading.Channels> namespace lets you create first-in-first-out (FIFO) channels using the <xref:System.Threading.Channels.Channel.CreateBounded%2A> and <xref:System.Threading.Channels.Channel.CreateUnbounded%2A> methods. With FIFO channels, elements are read from the channel in the order they were written to it. In .NET 9, the new `CreateUnboundedPrioritized<T>` <!--<xref:System.Threading.Channels.Channel.CreateUnboundedPrioritized%2A>--> method has been added, which orders the elements such that the next element read from the channel is the one deemed to be most important, according to either <xref:System.Collections.Generic.Comparer%601.Default?displayProperty=nameWithType> or a custom <xref:System.Collections.Generic.IComparer%601>.
+The <xref:System.Threading.Channels> namespace lets you create first-in-first-out (FIFO) channels using the <xref:System.Threading.Channels.Channel.CreateBounded%2A> and <xref:System.Threading.Channels.Channel.CreateUnbounded%2A> methods. With FIFO channels, elements are read from the channel in the order they were written to it. In .NET 9, the new <xref:System.Threading.Channels.Channel.CreateUnboundedPrioritized%2A> method has been added, which orders the elements such that the next element read from the channel is the one deemed to be most important, according to either <xref:System.Collections.Generic.Comparer%601.Default?displayProperty=nameWithType> or a custom <xref:System.Collections.Generic.IComparer%601>.
 
 The following example uses the new method to create a channel that outputs the numbers 1 through 5 in order, even though they're written to the channel in a different order.
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Channels.cs" id="Channel":::
+
+## System.Numerics
+
+The following changes have been made in the <xref:System.Numerics> namespace:
+
+- [BigInteger upper limit](#biginteger-upper-limit)
+- [`BigMul` APIs](#bigmul-apis)
+- [Vector conversion APIs](#vector-conversion-apis)
+- [Vector create APIs](#vector-create-apis)
+- [Additional acceleration](#additional-acceleration)
+
+### BigInteger upper limit
+
+<xref:System.Numerics.BigInteger> supports representing integer values of essentially arbitrary length. However, in practice, the length is constrained by limits of the underlying computer, such as available memory or how long it would take to compute a given expression. Additionally, there exist some APIs that fail given inputs that result in a value that's too large. Because of these limits, .NET 9 enforces a maximum length of `BigInteger`, which is that it can contain no more than `(2^31) - 1` (approximately 2.14 billion) bits. Such a number represents an almost 256 MB allocation and contains approximately 646.5 million digits. This new limit ensures that all APIs exposed are well behaved and consistent while still allowing numbers that are far beyond most usage scenarios.
+
+### `BigMul` APIs
+
+`BigMul` is an operation that produces the full product of two numbers. .NET 9 adds dedicated `BigMul` APIs on `int`, `long`, `uint`, and `ulong` whose return type is the next larger integer type than the parameter types.
+
+<!--
+
+The new APIs are:
+
+- <xref:System.Int32.BigMul(System.Int32,System.Int32)> (returns `long`)
+- <xref:System.Int64.BigMul(System.Int64,System.Int64)> (returns `Int128`)
+- <xref:System.UInt32.BigMul(System.UInt32,System.UInt32)> (returns `ulong`)
+- <xref:System.UInt64.BigMul(System.UInt64,System.UInt64)> (returns `UInt128`)
+
+-->
+
+### Vector conversion APIs
+
+.NET 9 adds dedicated extension APIs for converting between <xref:System.Numerics.Vector2>, <xref:System.Numerics.Vector3>, <xref:System.Numerics.Vector4>, <xref:System.Numerics.Quaternion>, and <xref:System.Numerics.Plane>.
+
+<!--
+
+The new APIs are as follows:
+
+- <xref:System.Numerics.Vector.AsPlane(System.Numerics.Vector4)>
+- <xref:System.Numerics.Vector.AsQuaternion(System.Numerics.Vector4)>
+- <xref:System.Numerics.Vector.AsVector2(System.Numerics.Vector4)>
+- <xref:System.Numerics.Vector.AsVector3(System.Numerics.Vector4)>
+- <xref:System.Numerics.Vector.AsVector4(System.Numerics.Plane)>
+- <xref:System.Numerics.Vector.AsVector4(System.Numerics.Quaternion)>
+- <xref:System.Numerics.Vector.AsVector4(System.Numerics.Vector2)>
+- <xref:System.Numerics.Vector.AsVector4(System.Numerics.Vector3)>
+- <xref:System.Numerics.Vector.AsVector4Unsafe(System.Numerics.Vector2)>
+- <xref:System.Numerics.Vector.AsVector4Unsafe(System.Numerics.Vector3)>
+
+-->
+
+For same-sized conversions, such as between `Vector4`, `Quaternion`, and `Plane`, these conversions are zero cost. The same can be said for narrowing conversions, such as from `Vector4` to `Vector2` or `Vector3`. For widening conversions, such as from `Vector2` or `Vector3` to `Vector4`, there is the normal API, which initializes new elements to 0, and an `Unsafe` suffixed API that leaves these new elements undefined and therefore can be zero cost.
+
+### Vector create APIs
+
+There are new `Create` APIs exposed for <xref:System.Numerics.Vector%601>, <xref:System.Numerics.Vector2>, <xref:System.Numerics.Vector3>, and <xref:System.Numerics.Vector4> that parity the equivalent APIs exposed for the hardware vector types exposed in the <xref:System.Runtime.Intrinsics> namespace.
+
+<!--
+
+The new APIs are as follows:
+
+- <xref:System.Numerics.Vector.Create%601(%601)>
+- <xref:System.Numerics.Vector.Create%601(System.ReadOnlySpan%601)>
+- <xref:System.Numerics.Vector2.Create(System.Single)>
+- <xref:System.Numerics.Vector2.Create(System.Single,System.Single)>
+- <xref:System.Numerics.Vector2.Create(System.ReadOnlySpan%601)>
+- <xref:System.Numerics.Vector3.Create(System.Single)>
+- <xref:System.Numerics.Vector3.Create(System.Numerics.Vector2,System.Single)>
+- <xref:System.Numerics.Vector3.Create(System.Single,System.Single,System.Single)>
+- <xref:System.Numerics.Vector3.Create(System.ReadOnlySpan%601)>
+- <xref:System.Numerics.Vector4.Create(System.Single)>
+- <xref:System.Numerics.Vector4.Create(System.Numerics.Vector2,System.Single,System.Single)>
+- <xref:System.Numerics.Vector4.Create(System.Numerics.Vector3,System.Single)>
+- <xref:System.Numerics.Vector4.Create(System.Single,System.Single,System.Single,System.Single)>
+- <xref:System.Numerics.Vector4.Create(System.ReadOnlySpan%601)>
+
+-->
+
+These APIs are primarily for convenience and overall consistency across .NET's SIMD-accelerated types.
+
+### Additional acceleration
+
+Additional performance improvements have been made to many types in the <xref:System.Numerics> namespace, including to <xref:System.Numerics.BigInteger>, <xref:System.Numerics.Vector2>, <xref:System.Numerics.Vector3>, <xref:System.Numerics.Vector4>, <xref:System.Numerics.Quaternion>, and <xref:System.Numerics.Plane>.
+
+In some cases, this has resulted in a 2-5x speedup to core APIs including `Matrix4x4` multiplication, creation of <xref:System.Numerics.Plane> from a series of vertices, <xref:System.Numerics.Quaternion> concatenation, and computing the cross product of a <xref:System.Numerics.Vector3>.
+
+There's also constant folding support for the `SinCos` API, which computes both `Sin(x)` and `Cos(x)` in a single call, making it more efficient.

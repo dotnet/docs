@@ -1,12 +1,12 @@
 ---
-title: Microsoft.Testing.Platform architecture overview
+title: Microsoft.Testing.Platform extensions architecture overview
 description: Learn about how to extend Microsoft.Testing.Platform.
 author: MarcoRossignoli
 ms.author: mrossignoli
 ms.date: 07/11/2024
 ---
 
-# Microsoft.Testing.Platform extensions
+# Microsoft.Testing.Platform extensibility
 
 The testing platform consists of a [testing framework](#test-framework-extension) and any number of [extensions](#other-extensibility-points) that can operate *in-process* or *out-of-process*.
 

@@ -1,6 +1,6 @@
 ---
-title: Microsoft.Testing.Platform architecture overview
-description: Learn about how to extend Microsoft.Testing.Platform.
+title: Microsoft.Testing.Platform services overview
+description: Learn about the Microsoft.Testing.Platform available services.
 author: MarcoRossignoli
 ms.author: mrossignoli
 ms.date: 07/11/2024

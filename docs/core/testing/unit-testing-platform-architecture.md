@@ -1,6 +1,6 @@
 ---
 title: Microsoft.Testing.Platform architecture overview
-description: Learn about how to extend Microsoft.Testing.Platform.
+description: Learn about Microsoft.Testing.Platform architecture.
 author: MarcoRossignoli
 ms.author: mrossignoli
 ms.date: 07/11/2024
@@ -9,6 +9,9 @@ ms.date: 07/11/2024
 # Microsoft.Testing.Platform architecture
 
 Welcome to our new test platform! To help you get acquainted with its capabilities, we'll start with a simple example that demonstrates how to register and run a test. This foundational example will give you a solid understanding of the core functionality and how to get started quickly.
+
+> [!NOTE]
+> You can use [this code](https://github.com/microsoft/testfx/tree/main/samples/public/TestingPlatformExamples) as a coded example of all the concepts that will be covered in this article.
 
 [Step 1: Register and Run a simple test application](#step-1-register-and-run-a-simple-test-application)
 

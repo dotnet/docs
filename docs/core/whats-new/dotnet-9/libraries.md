@@ -29,7 +29,7 @@ This method unblocks users who want to implement graph algorithms in contexts wh
 
 <xref:System.ComponentModel> includes new opt-in trimmer-compatible APIs for describing components. Any application, especially self-contained trimmed applications, can use these new APIs to help support trimming scenarios.
 
-The primary API is the <xref:System.ComponentModel.TypeDescriptor.RegisterType%601?displayProperty=nameWithType> method on the `TypeDescriptor` class. This method has the <xref:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembersAttribute> attribute so that the trimmer preserves members for that type. You should call this method once per type, and typically early on.
+The primary API is the <xref:System.ComponentModel.TypeDescriptor.RegisterType%2A?displayProperty=nameWithType> method on the `TypeDescriptor` class. This method has the <xref:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembersAttribute> attribute so that the trimmer preserves members for that type. You should call this method once per type, and typically early on.
 
 The secondary APIs have a `FromRegisteredType` suffix, such as <xref:System.ComponentModel.TypeDescriptor.GetPropertiesFromRegisteredType(System.Type)?displayProperty=nameWithType>. Unlike their counterparts that don't have the `FromRegisteredType` suffix, these APIs don't have `[RequiresUnreferencedCode]` or `[DynamicallyAccessedMembers]` trimmer attributes. The lack of trimmer attributes helps consumers by no longer having to either:
 
@@ -115,6 +115,18 @@ New methods <xref:System.Linq.Enumerable.CountBy%2A> and <xref:System.Linq.Enume
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Linq.cs" id="NewIndex":::
 
+## Logging source generator
+
+C# 12 introduced [primary constructors](../../../csharp/programming-guide/classes-and-structs/instance-constructors.md#primary-constructors), which allow you to define a constructor directly on the class declaration. The logging source generator now supports logging using classes that have a primary constructor.
+
+```csharp
+public partial class ClassWithPrimaryConstructor(ILogger logger)
+{
+    [LoggerMessage(0, LogLevel.Debug, "Test.")]
+    public partial void Test();
+}
+```
+
 ## Miscellaneous
 
 In this section, find information about:
@@ -137,7 +149,7 @@ Starting in C# 13, you can use `params` with any argument that can be constructe
 
 .NET 9 now includes over 60 methods with a `params ReadOnlySpan<T>` parameter. Some are brand new overloads, and some are existing methods that already took a `ReadOnlySpan<T>` but now have that parameter marked with `params`. The net effect is if you upgrade to .NET 9 and recompile your code, you'll see performance improvements without making any code changes. That's because the compiler prefers to bind to span-based overloads than to the array-based overloads.
 
-For example, `String.Join` now includes the following overload, which implements the new pattern: <xref:System.String.Join(System.String,System.ReadOnlySpan%601)?displayProperty=nameWithType>
+For example, `String.Join` now includes the following overload, which implements the new pattern: <xref:System.String.Join(System.String,System.ReadOnlySpan{System.String})?displayProperty=nameWithType>
 
 Now, a call like `string.Join(", ", "a", "b", "c")` is made without allocating an array to pass in the `"a"`, `"b"`, and `"c"` arguments.
 
@@ -178,7 +190,7 @@ The new `TypeName` class provides:
   - `IsByRef` and `IsPointer` for working with pointers and managed references.
   - `GetElementType()` for working with pointers, references, and arrays.
   - `IsNested` and `DeclaringType` for working with nested types.
-  - `AssemblyName`, which exposes the assembly name information via the new <xref:System.Reflection.Metadata.AssemblyInfoName> class. In contrast to `AssemblyName`, the new type is *immutable*, and parsing culture names doesn't create instances of `CultureInfo`.
+  - `AssemblyName`, which exposes the assembly name information via the new <xref:System.Reflection.Metadata.AssemblyNameInfo> class. In contrast to `AssemblyName`, the new type is *immutable*, and parsing culture names doesn't create instances of `CultureInfo`.
 
 Both `TypeName` and `AssemblyNameInfo` types are immutable and don't provide a way to check for equality (they don't implement `IEquatable`). Comparing assembly names is simple, but different scenarios need to compare only a subset of exposed information (`Name`, `Version`, `CultureName`, and `PublicKeyOrToken`).
 
@@ -187,6 +199,38 @@ The following code snippet shows some example usage.
 :::code language="csharp" source="../snippets/dotnet-9/csharp/TypeName.cs":::
 
 The new APIs are available from the [`System.Reflection.Metadata`](https://www.nuget.org/packages/System.Reflection.Metadata/) NuGet package, which can be used with down-level .NET versions.
+
+## Regular expressions
+
+<!--TODO-->
+
+### `[GeneratedRegex]` on properties
+
+.NET 7 introduced the `Regex` source generator and corresponding <xref:System.Text.RegularExpressions.GeneratedRegexAttribute> attribute.
+
+The following partial method will be source generated with all the code necessary to implement this `Regex`.
+
+:::code language="csharp" source="../snippets/dotnet-9/csharp/RegularExpressions.cs" id="GeneratedRegexMethod":::
+
+C# 13 supports partial *properties* in addition to partial methods, so starting in .NET 9 you can also use `[GeneratedRegex(...)]` on a property.
+
+The following partial property is the property equivalent of the previous example.
+
+:::code language="csharp" source="../snippets/dotnet-9/csharp/RegularExpressions.cs" id="GeneratedRegexProperty":::
+
+### `Regex.EnumerateSplits`
+
+The <xref:System.Text.RegularExpressions.Regex> class provides a <xref:System.Text.RegularExpressions.Regex.Split%2A> method, similar in concept to the <xref:System.String.Split?displayProperty=nameWithType> method. With `String.Split`, you supply one or more `char` or `string` separators, and the implementation splits the input text on those separators. With `Regex.Split`, instead of specifying the separator as a `char` or `string`, it's specified as a regular expression pattern.
+
+The following example demonstrates `Regex.Split`.
+
+:::code language="csharp" source="../snippets/dotnet-9/csharp/RegularExpressions.cs" id="RegexSplit":::
+
+However, `Regex.Split` only accepts a `string` as input and doesn't support input being provided as a `ReadOnlySpan<char>`. Also, it outputs the full set of splits as a `string[]`, which requires allocating both the `string` array to hold the results and a `string` for each split. In .NET 9, the new `EnumerateSplits` <!--<xref:System.Text.RegularExpressions.Regex.EnumerateSplits%2A>--> method enables performing the same operation, but with a span-based input and without incurring any allocation for the results. It accepts a `ReadOnlySpan<char>` and returns an enumerable of <xref:System.Range> objects that represent the results.
+
+The following example demonstrates `Regex.EnumerateSplits`, taking a `ReadOnlySpan<char>` as input.
+
+:::code language="csharp" source="../snippets/dotnet-9/csharp/RegularExpressions.cs" id="EnumerateSplits":::
 
 ## Serialization
 
@@ -332,62 +376,6 @@ public sealed class JsonParameterInfo
 }
 ```
 
-## Tensors for AI
-
-Tensors are the cornerstone data structure of artificial intelligence (AI). They can often be thought of as multidimensional arrays.
-
-Tensors are used to:
-
-- Represent and encode data such as text sequences (tokens), images, video, and audio.
-- Efficiently manipulate higher-dimensional data.
-- Efficiently apply computations on higher-dimensional data.
-- Store weight information and intermediate computations (in neural networks).
-
-To use the .NET tensor APIs, install the [System.Numerics.Tensors](https://www.nuget.org/packages/System.Numerics.Tensors/) NuGet package.
-
-### New Tensor\<T> type
-
-The new <xref:System.Numerics.Tensors.Tensor%601> type expands the AI capabilities of the .NET libraries and runtime. This type:
-
-- Provides efficient interop with AI libraries like ML.NET, TorchSharp, and ONNX Runtime using zero copies where possible.
-- Builds on top of <xref:System.Numerics.Tensors.TensorPrimitives> for efficient math operations.
-- Enables easy and efficient data manipulation by providing indexing and slicing operations.
-- Is not a replacement for existing AI and machine learning libraries. Instead, it's intended to provide a common set of APIs to reduce code duplication and dependencies, and to achieve better performance by using the latest runtime features.
-
-The following codes shows some of the APIs included with the new `Tensor<T>` type.
-
-:::code language="csharp" source="../snippets/dotnet-9/csharp/Tensors.cs" id="Tensor":::
-
-### TensorPrimitives
-
-The `System.Numerics.Tensors` library includes the <xref:System.Numerics.Tensors.TensorPrimitives> class, which provides static methods for performing numerical operations on spans of values. In .NET 9, the scope of methods exposed by <xref:System.Numerics.Tensors.TensorPrimitives> has been significantly expanded, growing from 40 (in .NET 8) to almost 200 overloads. The surface area encompasses familiar numerical operations from types like <xref:System.Math> and <xref:System.MathF>. It also includes the generic math interfaces like <xref:System.Numerics.INumber%601>, except instead of processing an individual value, they process a span of values. Many operations have also been accelerated via SIMD-optimized implementations for .NET 9.
-
-<xref:System.Numerics.Tensors.TensorPrimitives> now exposes generic overloads for any type `T` that implements a certain interface. (The .NET 8 version only included overloads for manipulating spans of `float` values.) For example, the new <xref:System.Numerics.Tensors.TensorPrimitives.CosineSimilarity%60%601(System.ReadOnlySpan{%60%600},System.ReadOnlySpan{%60%600})> overload performs cosine similarity on two vectors of `float`, `double`, or `Half` values, or values of any other type that implements <xref:System.Numerics.IRootFunctions%601>.
-
-Compare the precision of the cosine similarity operation on two vectors of type `float` versus `double`:
-
-:::code language="csharp" source="../snippets/dotnet-9/csharp/Tensors.cs" id="CosineSimilarity":::
-
-## Threading
-
-The threading APIs include improvements for iterating through tasks, and for prioritized channels, which can order their elements instead of being first-in-first-out (FIFO).
-
-### `Task.WhenEach`
-
-A variety of helpful new APIs have been added for working with <xref:System.Threading.Tasks.Task%601> objects. The new <xref:System.Threading.Tasks.Task.WhenEach?displayProperty=nameWithType> method lets you iterate through tasks as they complete using an `await foreach` statement. You no longer need to do things like repeatedly call <xref:System.Threading.Tasks.Task.WaitAny%2A?displayProperty=nameWithType> on a set of tasks to pick off the next one that completes.
-
-The following code makes multiple `HttpClient` calls and operates on their results as they complete.
-
-:::code language="csharp" source="../snippets/dotnet-9/csharp/Task.cs" id="TaskWhenEach":::
-
-### Prioritized unbounded channel
-
-The <xref:System.Threading.Channels> namespace lets you create first-in-first-out (FIFO) channels using the <xref:System.Threading.Channels.Channel.CreateBounded%2A> and <xref:System.Threading.Channels.Channel.CreateUnbounded%2A> methods. With FIFO channels, elements are read from the channel in the order they were written to it. In .NET 9, the new <xref:System.Threading.Channels.Channel.CreateUnboundedPrioritized%2A> method has been added, which orders the elements such that the next element read from the channel is the one deemed to be most important, according to either <xref:System.Collections.Generic.Comparer%601.Default?displayProperty=nameWithType> or a custom <xref:System.Collections.Generic.IComparer%601>.
-
-The following example uses the new method to create a channel that outputs the numbers 1 through 5 in order, even though they're written to the channel in a different order.
-
-:::code language="csharp" source="../snippets/dotnet-9/csharp/Channels.cs" id="Channel":::
-
 ## System.Numerics
 
 The following changes have been made in the <xref:System.Numerics> namespace:
@@ -475,14 +463,58 @@ In some cases, this has resulted in a 2-5x speedup to core APIs including `Matri
 
 There's also constant folding support for the `SinCos` API, which computes both `Sin(x)` and `Cos(x)` in a single call, making it more efficient.
 
-## Logging source generator
+## Tensors for AI
 
-C# 12 introduced [primary constructors](../../../csharp/programming-guide/classes-and-structs/instance-constructors.md#primary-constructors), which allow you to define a constructor directly on the class declaration. The logging source generator now supports logging using classes that have a primary constructor.
+Tensors are the cornerstone data structure of artificial intelligence (AI). They can often be thought of as multidimensional arrays.
 
-```csharp
-public partial class ClassWithPrimaryConstructor(ILogger logger)
-{
-    [LoggerMessage(0, LogLevel.Debug, "Test.")]
-    public partial void Test();
-}
-```
+Tensors are used to:
+
+- Represent and encode data such as text sequences (tokens), images, video, and audio.
+- Efficiently manipulate higher-dimensional data.
+- Efficiently apply computations on higher-dimensional data.
+- Store weight information and intermediate computations (in neural networks).
+
+To use the .NET tensor APIs, install the [System.Numerics.Tensors](https://www.nuget.org/packages/System.Numerics.Tensors/) NuGet package.
+
+### New Tensor\<T> type
+
+The new <xref:System.Numerics.Tensors.Tensor%601> type expands the AI capabilities of the .NET libraries and runtime. This type:
+
+- Provides efficient interop with AI libraries like ML.NET, TorchSharp, and ONNX Runtime using zero copies where possible.
+- Builds on top of <xref:System.Numerics.Tensors.TensorPrimitives> for efficient math operations.
+- Enables easy and efficient data manipulation by providing indexing and slicing operations.
+- Is not a replacement for existing AI and machine learning libraries. Instead, it's intended to provide a common set of APIs to reduce code duplication and dependencies, and to achieve better performance by using the latest runtime features.
+
+The following codes shows some of the APIs included with the new `Tensor<T>` type.
+
+:::code language="csharp" source="../snippets/dotnet-9/csharp/Tensors.cs" id="Tensor":::
+
+### TensorPrimitives
+
+The `System.Numerics.Tensors` library includes the <xref:System.Numerics.Tensors.TensorPrimitives> class, which provides static methods for performing numerical operations on spans of values. In .NET 9, the scope of methods exposed by <xref:System.Numerics.Tensors.TensorPrimitives> has been significantly expanded, growing from 40 (in .NET 8) to almost 200 overloads. The surface area encompasses familiar numerical operations from types like <xref:System.Math> and <xref:System.MathF>. It also includes the generic math interfaces like <xref:System.Numerics.INumber%601>, except instead of processing an individual value, they process a span of values. Many operations have also been accelerated via SIMD-optimized implementations for .NET 9.
+
+<xref:System.Numerics.Tensors.TensorPrimitives> now exposes generic overloads for any type `T` that implements a certain interface. (The .NET 8 version only included overloads for manipulating spans of `float` values.) For example, the new <xref:System.Numerics.Tensors.TensorPrimitives.CosineSimilarity%60%601(System.ReadOnlySpan{%60%600},System.ReadOnlySpan{%60%600})> overload performs cosine similarity on two vectors of `float`, `double`, or `Half` values, or values of any other type that implements <xref:System.Numerics.IRootFunctions%601>.
+
+Compare the precision of the cosine similarity operation on two vectors of type `float` versus `double`:
+
+:::code language="csharp" source="../snippets/dotnet-9/csharp/Tensors.cs" id="CosineSimilarity":::
+
+## Threading
+
+The threading APIs include improvements for iterating through tasks, and for prioritized channels, which can order their elements instead of being first-in-first-out (FIFO).
+
+### `Task.WhenEach`
+
+A variety of helpful new APIs have been added for working with <xref:System.Threading.Tasks.Task%601> objects. The new <xref:System.Threading.Tasks.Task.WhenEach%2A?displayProperty=nameWithType> method lets you iterate through tasks as they complete using an `await foreach` statement. You no longer need to do things like repeatedly call <xref:System.Threading.Tasks.Task.WaitAny%2A?displayProperty=nameWithType> on a set of tasks to pick off the next one that completes.
+
+The following code makes multiple `HttpClient` calls and operates on their results as they complete.
+
+:::code language="csharp" source="../snippets/dotnet-9/csharp/Task.cs" id="TaskWhenEach":::
+
+### Prioritized unbounded channel
+
+The <xref:System.Threading.Channels> namespace lets you create first-in-first-out (FIFO) channels using the <xref:System.Threading.Channels.Channel.CreateBounded%2A> and <xref:System.Threading.Channels.Channel.CreateUnbounded%2A> methods. With FIFO channels, elements are read from the channel in the order they were written to it. In .NET 9, the new <xref:System.Threading.Channels.Channel.CreateUnboundedPrioritized%2A> method has been added, which orders the elements such that the next element read from the channel is the one deemed to be most important, according to either <xref:System.Collections.Generic.Comparer%601.Default?displayProperty=nameWithType> or a custom <xref:System.Collections.Generic.IComparer%601>.
+
+The following example uses the new method to create a channel that outputs the numbers 1 through 5 in order, even though they're written to the channel in a different order.
+
+:::code language="csharp" source="../snippets/dotnet-9/csharp/Channels.cs" id="Channel":::

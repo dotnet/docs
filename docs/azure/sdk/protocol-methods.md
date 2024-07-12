@@ -82,7 +82,7 @@ The preceding code demonstrates the following protocol method concepts:
 
 The `OpenAI` library depends on the `System.ClientModel` library and provides a `ChatClient` class that exposes both protocol and convenience methods.
 
-Consider the following code that uses the `AnalyzeText` protocol method on the `ChatClient`:
+Consider the following code that uses the `CompleteChat` protocol method on the `ChatClient`:
 
 ```C#
 OpenAIClient client = new("your-openai-key");
@@ -152,16 +152,33 @@ The preceding code demonstrates the following `Azure.Core` convenience method pa
 
 ### Convenience methods using libraries that depend on System.ClientModel
 
-```csharp
-AsyncResultCollection<StreamingChatCompletionUpdate> updates
-    = chatClient.CompleteChatStreamingAsync("Say 'this is a test.'");
+The `OpenAI` library depends on the `System.ClientModel` library and provides a `ChatClient` class that exposes convenience methods.
 
-Console.WriteLine($"Assistant:");
-await foreach (StreamingChatCompletionUpdate update in updates)
-{
-    foreach (ChatMessageContentPart updatePart in update.ContentUpdate)
-    {
-        Console.Write(updatePart.Text);
-    }
+Consider the following code that uses the `CompleteChatStreamingAsync` convenience method on the `ChatClient`:
+
+```csharp
+OpenAIClient client = new("your-openai-key");
+ChatClient chatClient = client.GetChatClient("gpt-4");
+
+ClientResult<ChatCompletion> completion
+    = chatClient.CompleteChat("What is Azure?");
+
+Console.WriteLine($"{completion.Value.Role}: {completion.Value.Content}");}
 }
 ```
+
+The preceding code demonstrates the following `System.ClientModel` convenience method patterns:
+    - Uses a standard C# primitive or model type as a parameter.
+    - Returns a `ClientResult` type that represents the result of the operation.
+
+## Protocol and convenience method usage guidance
+
+Many Azure SDK client libraries provide the option to use either protocol or convenience methods, but in most scenarios developers should prioritize convenience methods. Convenience methods are designed to improve the development experience while still providing flexibility when authoring requests and handling responses. Consider the following criteria when deciding which type of method to use:
+
+- Convenience methods:
+  - Enable you to work with more friendly method parameter and response types.
+  - Handle various low-level concerns and optimizations for you.
+
+- Protocol methods:
+  - Provide access to lower-level types such as `RequestContext` and `RequestOptions` that are not available through convenience methods.
+  - Enable access to features of the underlying REST APIs that convenience methods do not expose.

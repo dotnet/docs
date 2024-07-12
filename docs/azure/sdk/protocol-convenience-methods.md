@@ -6,7 +6,7 @@ ms.custom: devx-track-dotnet, engagement-fy23, devx-track-arm-template
 ms.date: 06/24/2024
 ---
 
-# Azure SDK for .NET convenience and protocol methods overview
+# Azure SDK for .NET protocol and convenience methods overview
 
 The Azure SDK client libraries provide an interface to Azure service REST APIs by translating method calls into underlying HTTP requests. In this article, you'll learn about the different types of methods exposed by the client libraries and explore their implementation differences.
 

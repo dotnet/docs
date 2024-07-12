@@ -33,7 +33,7 @@ When you encounter an assertion that always passes (for example, `Assert.IsTrue(
 
 ## How to fix violations
 
-Ensure that calls to `Assert.IsTrue`, `Assert.IsFalse`, `Assert.AreEqual`, `Assert.AreNotEqual`, `Assert.IsNull` or `Assert.IsNotNull` are not producing always-true conditions.
+Ensure that calls to `Assert.IsTrue`, `Assert.IsFalse`, `Assert.AreEqual`, `Assert.AreNotEqual`, `Assert.IsNull` or `Assert.IsNotNull` aren't producing always-true conditions.
 
 ## When to suppress warnings
 

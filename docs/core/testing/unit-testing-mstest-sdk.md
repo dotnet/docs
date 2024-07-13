@@ -64,6 +64,10 @@ When you `build` the project, all the needed components are restored and install
 
 You don't need anything else to build and run your tests and you can use the same tooling (for example, `dotnet test` or Visual Studio) used by a ["classic" MSTest project](./unit-testing-with-mstest.md).
 
+> [!IMPORTANT]
+> By switching to the `MSTest.Sdk` you've fully opted-in to using the [MSTest runner](./unit-testing-mstest-runner-intro.md), including with [dotnet test](./unit-testing-platform-integration-dotnet-test.md#dotnet-test---microsofttestingplatform-mode) which requires modifying your CI, local CLI calls and also impacts the available entries of the _.runsettings_.
+> You can use `MSTest.Sdk` and still keep the old integrations and tools by instead switching the [runner](#select-the-runner).
+
 ## Select the runner
 
 By default, MSTest SDK relies on [MSTest runner](./unit-testing-mstest-runner-intro.md), but you can easily switch to [VSTest](/visualstudio/test/vstest-console-options) by adding the property `<UseVSTest>true</UseVSTest>`.
@@ -190,6 +194,10 @@ By setting the property `EnablePlaywright` to `true` you can bring all dependenc
 
 ## Migrating to MSTest SDK
 
+Consider the following steps that are required to migrate to the MSTest SDK.
+
+### Update your project(s)
+
 When migrating an existing MSTest test project to MSTest SDK, start by replacing the `Sdk="Microsoft.NET.Sdk"` entry at the top of your test project with `Sdk="MSTest.Sdk/3.3.1"`
 
 ```diff
@@ -229,3 +237,18 @@ Removing default package references:
 ```
 
 Finally, based on the extensions profile you're using, you can also remove some of the `Microsoft.Testing.Extensions.*` packages.
+
+### Update your CI
+
+Once you've updated your projects, if you're using `MSTest runner` (default) and if you rely on `dotnet test` to run your tests, you have to update your CI configuration. For more information, see [dotnet test integration](./unit-testing-platform-integration-dotnet-test.md#dotnet-test---microsofttestingplatform-mode) to guide your understanding of all the required changes.
+
+Here's an example update when using the `DotNetCoreCLI` task in Azure DevOps:
+
+```diff
+\- task: DotNetCoreCLI@2
+  inputs:
+    command: 'test'
+    projects: '**/**.sln'
+-    arguments: '--configuration Release'
++    arguments: '--configuration Release -p:TestingPlatformCommandLineArguments="--report-trx --results-directory $(Agent.TempDirectory) --coverage"'
+```

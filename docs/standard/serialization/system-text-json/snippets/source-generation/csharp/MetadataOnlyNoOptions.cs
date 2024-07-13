@@ -74,7 +74,7 @@ namespace MetadataOnlyNoOptions
             // </SerializeMetadataOnlyContext>
             Console.WriteLine(jsonString);
             // output:
-            //{"Date":"2019-08-01T00:00:00","TemperatureCelsius":0,"Summary":"Hot"}
+            //{"Date":"2019-08-01T00:00:00","TemperatureCelsius":25,"Summary":"Hot"}
         }
     }
 }

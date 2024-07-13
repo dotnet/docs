@@ -31,7 +31,7 @@ MSBuild includes a new feature that makes it easier to incorporate data from MSB
 |-----------------------------------|----------------------------------------------------------|
 | `--getProperty:<PROPERTYNAME>`    | Retrieves the MSBuild property with the specified name.  |
 | `--getItem:<ITEMTYPE>`            | Retrieves MSBuild items of the specified type.           |
-| `--getTargetResults:<TARGETNAME>` | Retrieves the outputs from running the specified target. |
+| `--getTargetResult:<TARGETNAME>` | Retrieves the outputs from running the specified target. |
 
 Values are written to the standard output. Multiple or complex values are output as JSON, as shown in the following examples.
 

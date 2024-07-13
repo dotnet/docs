@@ -1,7 +1,7 @@
 ---
 title: Compatible grains
 description: Learn about compatible grains in .NET Orleans.
-ms.date: 03/15/2022
+ms.date: 07/03/2024
 ---
 
 # Compatible grains

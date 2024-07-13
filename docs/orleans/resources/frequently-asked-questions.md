@@ -1,7 +1,7 @@
 ---
 title: Frequently asked questions
 description: Explore the frequently asked questions for .NET Orleans.
-ms.date: 03/21/2022
+ms.date: 07/03/2024
 ---
 
 # Frequently Asked Questions

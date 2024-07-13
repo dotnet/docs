@@ -20,12 +20,16 @@ items:
         href: core-libraries/9.0/compressionlevel-bits.md
       - name: Creating type of array of System.Void not allowed
         href: core-libraries/9.0/type-instance.md
+      - name: "`Equals`/`GetHashCode` throw for `InlineArrayAttribute` types"
+        href: core-libraries/9.0/inlinearrayattribute.md
       - name: Inline array struct size limit is enforced
         href: core-libraries/9.0/inlinearray-size.md
       - name: InMemoryDirectoryInfo prepends rootDir to files
         href: core-libraries/9.0/inmemorydirinfo-prepends-rootdir.md
       - name: RuntimeHelpers.GetSubArray returns different type
         href: core-libraries/9.0/getsubarray-return.md
+      - name: Support for empty environment variables
+        href: core-libraries/9.0/empty-env-variable.md
     - name: Networking
       items:
       - name: HttpListenerRequest.UserAgent is nullable
@@ -34,8 +38,12 @@ items:
       items:
       - name: "'dotnet workload' commands output change"
         href: sdk/9.0/dotnet-workload-output.md
+      - name: "'installer' repo version no longer documented"
+        href: sdk/9.0/productcommits-versions.md
       - name: Terminal logger is default
         href: sdk/9.0/terminal-logger.md
+      - name: Warning emitted for .NET Standard 1.x targets
+        href: sdk/9.0/netstandard-warning.md
     - name: Windows Forms
       items:
       - name: BindingSource.SortDescriptions doesn't return null
@@ -48,6 +56,8 @@ items:
         href: windows-forms/9.0/datagridviewrowaccessibleobject-name-row.md
       - name: No exception if DataGridView is null
         href: windows-forms/9.0/datagridviewheadercell-nre.md
+      - name: PictureBox raises HttpClient exceptions
+        href: windows-forms/9.0/httpclient-exceptions.md
     - name: WPF
       items:
       - name: "'GetXmlNamespaceMaps' type change"
@@ -1180,12 +1190,16 @@ items:
         href: core-libraries/9.0/compressionlevel-bits.md
       - name: Creating type of array of System.Void not allowed
         href: core-libraries/9.0/type-instance.md
+      - name: "`Equals`/`GetHashCode` throw for `InlineArrayAttribute` types"
+        href: core-libraries/9.0/inlinearrayattribute.md
       - name: Inline array struct size limit is enforced
         href: core-libraries/9.0/inlinearray-size.md
       - name: InMemoryDirectoryInfo prepends rootDir to files
         href: core-libraries/9.0/inmemorydirinfo-prepends-rootdir.md
       - name: RuntimeHelpers.GetSubArray returns different type
         href: core-libraries/9.0/getsubarray-return.md
+      - name: Support for empty environment variables
+        href: core-libraries/9.0/empty-env-variable.md
     - name: .NET 8
       items:
       - name: Activity operation name when null
@@ -1616,8 +1630,12 @@ items:
       items:
       - name: "'dotnet workload' commands output change"
         href: sdk/9.0/dotnet-workload-output.md
+      - name: "'installer' repo version no longer documented"
+        href: sdk/9.0/productcommits-versions.md
       - name: Terminal logger is default
         href: sdk/9.0/terminal-logger.md
+      - name: Warning emitted for .NET Standard 1.x targets
+        href: sdk/9.0/netstandard-warning.md
     - name: .NET 8
       items:
       - name: CLI console output uses UTF-8
@@ -1824,6 +1842,8 @@ items:
         href: windows-forms/9.0/datagridviewrowaccessibleobject-name-row.md
       - name: No exception if DataGridView is null
         href: windows-forms/9.0/datagridviewheadercell-nre.md
+      - name: PictureBox raises HttpClient exceptions
+        href: windows-forms/9.0/httpclient-exceptions.md
     - name: .NET 8
       items:
       - name: Anchor layout changes

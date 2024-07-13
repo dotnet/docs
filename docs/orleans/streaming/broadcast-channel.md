@@ -1,7 +1,7 @@
 ---
 title: Broadcast channels
 description: Learn how to work with Orleans broadcast channels.
-ms.date: 01/02/2023
+ms.date: 07/03/2024
 ---
 
 # Broadcast channels in Orleans

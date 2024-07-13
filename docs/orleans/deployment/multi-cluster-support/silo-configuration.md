@@ -1,7 +1,7 @@
 ---
 title: Silo configuration
 description: Learn about silo configuration in .NET Orleans.
-ms.date: 03/09/2022
+ms.date: 07/03/2024
 ---
 
 # Orleans silo configuration

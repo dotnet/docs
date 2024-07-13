@@ -1,7 +1,7 @@
 ---
 title: Scheduling overview
 description: Explore the scheduling overview in .NET Orleans.
-ms.date: 03/17/2022
+ms.date: 07/03/2024
 ---
 
 # Scheduling overview

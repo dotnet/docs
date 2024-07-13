@@ -23,6 +23,8 @@ The guidance in this section applies to all interop scenarios.
 - ✔️ CONSIDER using <xref:System.Buffers.ArrayPool%601?displayProperty=nameWithType> to pool your native array buffers.
 - ✔️ CONSIDER wrapping your P/Invoke declarations in a class with the same name and capitalization as your native library.
   - This allows your `[LibraryImport]` or `[DllImport]` attributes to use the C# `nameof` language feature to pass in the name of the native library and ensure that you didn't misspell the name of the native library.
+- ✔️ DO use `SafeHandle`s to manage lifetime of objects that encapsulate unmanaged resources - [details](../garbage-collection/unmanaged.md).
+- ❌ AVOID finalizers to manage lifetimes of objects that encapsulate unmanaged resources - [details](../garbage-collection/implementing-dispose.md).
 
 ## LibraryImport attribute settings
 
@@ -189,12 +191,6 @@ handle.Free();
 ```
 
 Don't forget that `GCHandle` needs to be explicitly freed to avoid memory leaks.
-
-### Advanced managed wrapper management
-
-Interop abstractions that rely upon managed object lifetime can be particularly difficult. There are broadly three approaches defined [here](../garbage-collection/unmanaged.md). Lifetime management for types that represent higher-level abstractions for native resources, that is "wrappers", should always consider deriving from `SafeHandle` first, implementing the [`IDisposable` pattern](../garbage-collection/implementing-dispose.md), and using Finalizers only as a last resort.
-
-Finalizers are notoriously difficult. One of the most common issues encountered by manager wrappers involves the Finalizer running while a member method is executing. To address this particular issue, inserting a `GC.KeepAlive(this)` at the end of the member method will ensure the wrapper's lifetime extends to at least the end of the member.
 
 ## Common Windows data types
 

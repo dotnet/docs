@@ -11,7 +11,7 @@ This article describes new features in the .NET libraries for .NET 9. It's been 
 
 ## Base64Url
 
-Base64 is an encoding scheme that translates arbitrary bytes into text composed of a specific set of 64 characters. It's a very common approach for transferring data and has long been supported via a variety of methods, such as with <xref:System.Convert.ToBase64String?displayProperty=nameWithType> or <xref:System.Buffers.Text.Base64.DecodeFromUtf8(ReadOnlySpan{Byte},System.Span{Byte},System.Int32,System.Int32,System.Boolean)?displayProperty=nameWithType>. However, some of the characters it uses makes it less than ideal for use in some circumstances you might otherwise want to use it, such as in query strings. In particular, the 64 characters that comprise the Base64 table include '+' and '/', both of which have their own meaning in URLs. This led to the creation of the Base64Url scheme, which is similar to Base64 but uses a slightly different set of characters that makes it appropriate for use in URLs contexts. .NET 9 includes the new `Base64Url` <!--<xref:System.Buffers.Text.Base64>--> class, which provides many helpful and optimized methods for encoding and decoding with `Base64Url` to and from a variety of data types.
+Base64 is an encoding scheme that translates arbitrary bytes into text composed of a specific set of 64 characters. It's a very common approach for transferring data and has long been supported via a variety of methods, such as with <xref:System.Convert.ToBase64String%2A?displayProperty=nameWithType> or <xref:System.Buffers.Text.Base64.DecodeFromUtf8(ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Int32,System.Int32,System.Boolean)?displayProperty=nameWithType>. However, some of the characters it uses makes it less than ideal for use in some circumstances you might otherwise want to use it, such as in query strings. In particular, the 64 characters that comprise the Base64 table include '+' and '/', both of which have their own meaning in URLs. This led to the creation of the Base64Url scheme, which is similar to Base64 but uses a slightly different set of characters that makes it appropriate for use in URLs contexts. .NET 9 includes the new `Base64Url` <!--<xref:System.Buffers.Text.Base64>--> class, which provides many helpful and optimized methods for encoding and decoding with `Base64Url` to and from a variety of data types.
 
 The following example demonstrates using the new class.
 
@@ -38,7 +38,7 @@ The following example demonstrates using `Dictionary<TKey, TValue>.GetAlternateL
 
 ### `OrderedDictionary<TKey, TValue>`
 
-In many scenarios, you might want to store key-value pairs in a way where order can be maintained (a list of key-value pairs) but where fast lookup by key is also supported (a dictionary of key-value pairs). Since the early days of .NET, the <xref:System.Collections.Generic.OrderedDictionary> type has supported this scenario, but only in a non-generic manner, with keys and values typed as `object`. .NET 9 introduces the long-requested `OrderedDictionary<TKey, TValue>` <!--<xref:System.Collections.Generic.OrderedDictionary%602>--> collection, which provides an efficient, generic type to support these scenarios.
+In many scenarios, you might want to store key-value pairs in a way where order can be maintained (a list of key-value pairs) but where fast lookup by key is also supported (a dictionary of key-value pairs). Since the early days of .NET, the <xref:System.Collections.Specialized.OrderedDictionary> type has supported this scenario, but only in a non-generic manner, with keys and values typed as `object`. .NET 9 introduces the long-requested `OrderedDictionary<TKey, TValue>` <!--<xref:System.Collections.Generic.OrderedDictionary%602>--> collection, which provides an efficient, generic type to support these scenarios.
 
 The following code uses the new class.
 
@@ -56,7 +56,7 @@ This method unblocks users who want to implement graph algorithms in contexts wh
 
 ### `ReadOnlySet<T>`
 
-It's often desirable to give out read-only views of collections. <xref:System.Collections.Generic.ReadOnlyCollection%601> lets you create a read-only wrapper around an arbitrary mutable <xref:System.Collections.Generic.IList%601>, and <xref:System.Collections.Generic.ReadOnlyDictionary%602> lets you create a read-only wrapper around an arbitrary mutable <xref:System.Collections.Generic.IDictionary%602>. However, past versions of .NET had no built-in support for doing the same with <xref:System.Collections.Generic.ISet%601>. .NET 9 introduces `ReadOnlySet<T>` <!--<xref:System.Collections.Generic.ReadOnlySet%601>--> to address this.
+It's often desirable to give out read-only views of collections. <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> lets you create a read-only wrapper around an arbitrary mutable <xref:System.Collections.Generic.IList%601>, and <xref:System.Collections.ObjectModel.ReadOnlyDictionary%602> lets you create a read-only wrapper around an arbitrary mutable <xref:System.Collections.Generic.IDictionary%602>. However, past versions of .NET had no built-in support for doing the same with <xref:System.Collections.Generic.ISet%601>. .NET 9 introduces `ReadOnlySet<T>` <!--<xref:System.Collections.Generic.ReadOnlySet%601>--> to address this.
 
 The new class enables the following usage pattern.
 
@@ -217,7 +217,7 @@ The networking area includes in the following updates in .NET 9:
 
 ### System.Net.ServerSentEvents
 
-Server-sent events (SSE) is a simple and popular protocol for streaming data from a server to a client. It's used, for example, by OpenAI as part of streaming generated text from its AI services. To simplify the consumption of SSE, the new `System.Net.ServerSentEvents` <xref:System.Net.ServerSentEvents> library provides a parser for easily ingesting server-sent events.
+Server-sent events (SSE) is a simple and popular protocol for streaming data from a server to a client. It's used, for example, by OpenAI as part of streaming generated text from its AI services. To simplify the consumption of SSE, the new `System.Net.ServerSentEvents` <!--<xref:System.Net.ServerSentEvents>--> library provides a parser for easily ingesting server-sent events.
 
 The following code demonstrates using the new class.
 
@@ -290,10 +290,7 @@ C# 13 supports partial *properties* in addition to partial methods, so starting 
 
 The following partial property is the property equivalent of the previous example.
 
-```csharp
-[GeneratedRegex(@"\b\w{5}\b")]
-private static partial Regex FiveCharWordProperty { get; }
-```
+:::code language="csharp" source="../snippets/dotnet-9/csharp/RegularExpressions.cs" id="GeneratedRegexProperty":::
 
 ### `Regex.EnumerateSplits`
 
@@ -471,7 +468,7 @@ ReadOnlySpan<char> text = ...;
 File.WriteAllText(filePath, text);
 ```
 
-New <xref:System.ReadOnlySpan.StartsWith%2A> and <xref:System.ReadOnlySpan.EndsWith%2A> extension methods have also been added for spans, making it easy to test whether a <xref:System.ReadOnlySpan%601> starts or ends with a specific `T` value.
+New `ReadOnlySpan.StartsWith` <!--<xref:System.ReadOnlySpan.StartsWith%2A>--> and `ReadOnlySpan.EndsWith` <!--<xref:System.ReadOnlySpan.EndsWith%2A>--> extension methods have also been added for spans, making it easy to test whether a <xref:System.ReadOnlySpan%601> starts or ends with a specific `T` value.
 
 The following code uses these new convenience APIs.
 
@@ -488,9 +485,9 @@ string result = string.Join(", ", "a", "b", "c");
 
 Prior to .NET 9, when you pass the values individually, the C# compiler emits code identical to the first call by producing an implicit array around the three arguments.
 
-Starting in C# 13, you can use `params` with any argument that can be constructed via a collection expression, including spans (<xref:System.Span%601> and <xref:System.ReadOnlySpan%601>). That's beneficial for a variety of reasons, including performance. The C# compiler can store the arguments on the stack, wrap a span around them, and pass that off to the method, which avoids the implicit array allocation that would have otherwise resulted.
+Starting in C# 13, you can use `params` with any argument that can be constructed via a collection expression, including spans (<xref:System.Span%601> and <xref:System.ReadOnlySpan%601>). That's beneficial for usability and performance. The C# compiler can store the arguments on the stack, wrap a span around them, and pass that off to the method, which avoids the implicit array allocation that would have otherwise resulted.
 
-.NET 9 now includes over 60 methods with a `params ReadOnlySpan<T>` parameter. Some are brand new overloads, and some are existing methods that already took a `ReadOnlySpan<T>` but now have that parameter marked with `params`. The net effect is if you upgrade to .NET 9 and recompile your code, you'll see performance improvements without making any code changes. That's because the compiler prefers to bind to span-based overloads than to the array-based overloads.
+.NET 9 includes over 60 methods with a `params ReadOnlySpan<T>` parameter. Some are brand new overloads, and some are existing methods that already took a `ReadOnlySpan<T>` but now have that parameter marked with `params`. The net effect is if you upgrade to .NET 9 and recompile your code, you'll see performance improvements without making any code changes. That's because the compiler prefers to bind to span-based overloads than to the array-based overloads.
 
 For example, `String.Join` now includes the following overload, which implements the new pattern: <xref:System.String.Join(System.String,System.ReadOnlySpan{System.String})?displayProperty=nameWithType>
 
@@ -512,7 +509,7 @@ The following changes have been made in the <xref:System.Numerics> namespace:
 
 ### `BigMul` APIs
 
-`BigMul` is an operation that produces the full product of two numbers. .NET 9 adds dedicated `BigMul` APIs on `int`, `long`, `uint`, and `ulong` whose return type is the next larger integer type than the parameter types.
+`BigMul` is an operation that produces the full product of two numbers. .NET 9 adds dedicated `BigMul` APIs on `int`, `long`, `uint`, and `ulong` whose return type is the next larger [integer type](../../../csharp/language-reference/builtin-types/integral-numeric-types.md) than the parameter types.
 
 <!--
 

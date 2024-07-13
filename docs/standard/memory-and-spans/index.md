@@ -10,7 +10,7 @@ helpviewer_keywords:
 ---
 # Memory-related and span types
 
-.NET includes a number of interrelated types that represent a contiguous, strongly typed region of arbitrary memory. These types are designed to allow the creation of algorithms that *avoid copying memory or allocating on the managed heap* more than necessary. Creating them (either via `Slice` or their constructors) does not involve duplicating the underlying buffers: only the relevant references and offsets, which represent the "view" of the wrapped memory, are updated. In high-performance code, spans are often used to avoid allocating strings unnecessarily.
+.NET includes a number of interrelated types that represent a contiguous, strongly typed region of arbitrary memory. These types are designed to allow the creation of algorithms that *avoid copying memory or allocating on the managed heap* more than necessary. Creating them (either via `Slice`, `AsSpan()`, a collection expression, or their constructors) does not involve duplicating the underlying buffers: only the relevant references and offsets, which represent the "view" of the wrapped memory, are updated. In high-performance code, spans are often used to avoid allocating strings unnecessarily.
 
 The types include:
 

@@ -9,8 +9,8 @@ internal partial class RegularExpressions
     // </GeneratedRegexMethod>
 
     // <GeneratedRegexProperty>
-    //[GeneratedRegex(@"\b\w{5}\b")]
-    //private static partial Regex FiveCharWordProperty { get; }
+    [GeneratedRegex(@"\b\w{5}\b")]
+    private static partial Regex FiveCharWordProperty { get; }
     // </GeneratedRegexProperty>
 
     public static void RunIt()

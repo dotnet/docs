@@ -25,7 +25,7 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
-In most cases when you restore a package, you want to know whether the restored package version contains any known security vulnerabilities. This functionality was a highly requested feature. Security concerns continue to increase each year and some known security issues aren't visible enough to taking immediate action.
+Many users want to know whether the packages they restore contain any known security vulnerabilities. This functionality was a highly requested feature. Security concerns continue to increase each year and some known security issues aren't visible enough to take immediate action.
 
 ## Recommended action
 

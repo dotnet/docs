@@ -130,7 +130,7 @@ Previously, you could only link a tracing <xref:System.Diagnostics.Activity> to 
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Diagnostics.cs" id="AddLink":::
 
-## Metrics.Gauge instrument
+### Metrics.Gauge instrument
 
 <xref:System.Diagnostics.Metrics> now provides the `Gauge` <!--<xref:<xref:System.Diagnostics.Metrics.Gauge>--> instrument according to the OpenTelemetry specification. The `Gauge` instrument is designed to record non-additive values when changes occur. For example, it can measure the background noise level, where summing the values from multiple rooms would be nonsensical. The `Gauge` instrument is a generic type that can record any value type, such as `int`, `double`, or `decimal`.
 

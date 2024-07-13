@@ -4,4 +4,5 @@
 //Serialization.RunIt3();
 //TimeSpan.RunIt();
 //Channels.RunIt();
-RegularExpressions.RunIt();
+//RegularExpressions.RunIt();
+Collections.RunIt();

@@ -1,18 +1,20 @@
 ---
-description: "Learn more about: Memory- and span-related types"
-title: "Memory and spans"
-ms.date: "10/03/2018"
+description: "Learn more about: Memory-related and span-related types"
+title: "Memory-related and span types"
+ms.date: 07/12/2024
 helpviewer_keywords:
   - "Memory<T>"
   - "Span<T>"
   - buffers"
   - "pipeline processing"
 ---
-# Memory- and span-related types
+# Memory-related and span types
 
-Starting with .NET Core 2.1, .NET includes a number of interrelated types that represent a contiguous, strongly typed region of arbitrary memory. These include:
+.NET includes a number of interrelated types that represent a contiguous, strongly typed region of arbitrary memory. These types are designed to allow the creation of algorithms that *avoid copying memory or allocating on the managed heap* more than necessary. Creating them (either via `Slice` or their constructors) does not involve duplicating the underlying buffers: only the relevant references and offsets, which represent the "view" of the wrapped memory, are updated. In high-performance code, spans are often used to avoid allocating strings unnecessarily.
 
-- <xref:System.Span%601?displayProperty=nameWithType>, a type that is used to access a contiguous region of memory. A <xref:System.Span%601> instance can be backed by an array of type `T`, a buffer allocated with [stackalloc](../../csharp/language-reference/operators/stackalloc.md), or a pointer to unmanaged memory. Because it has to be allocated on the stack, it has a number of restrictions. For example, a field in a class cannot be of type <xref:System.Span%601>, nor can span be used in asynchronous operations.
+The types include:
+
+- <xref:System.Span%601?displayProperty=nameWithType>, a type that's used to access a contiguous region of memory. A <xref:System.Span%601> instance can be backed by an array of type `T`, a buffer allocated with [stackalloc](../../csharp/language-reference/operators/stackalloc.md), or a pointer to unmanaged memory. Because it has to be allocated on the stack, it has a number of restrictions. For example, a field in a class cannot be of type <xref:System.Span%601>, nor can span be used in asynchronous operations.
 
 - <xref:System.ReadOnlySpan%601?displayProperty=nameWithType>, an immutable version of the <xref:System.Span%601> structure. Instances can be also backed by a <xref:System.String>.
 
@@ -30,16 +32,11 @@ Starting with .NET Core 2.1, .NET includes a number of interrelated types that r
 
 - <xref:System.MemoryExtensions?displayProperty=nameWithType>, a collection of extension methods for converting strings, arrays, and array segments to <xref:System.Memory%601> blocks.
 
-<xref:System.Span%601?displayProperty=nameWithType>, <xref:System.Memory%601?displayProperty=nameWithType>, and their readonly counterparts are designed to allow the creation of algorithms that avoid copying memory or allocating on the managed heap more than necessary. Creating them (either via `Slice` or their constructors) does not involve duplicating the underlying buffers: only the relevant references and offsets, which represent the "view" of the wrapped memory, are updated.
-
-> [!NOTE]
-> For earlier frameworks, <xref:System.Span%601> and <xref:System.Memory%601> are available in the [System.Memory NuGet package](https://www.nuget.org/packages/System.Memory/).
-
 For more information, see the <xref:System.Buffers?displayProperty=nameWithType> namespace.
 
 ## Working with memory and span
 
-Because the memory- and span-related types are typically used to store data in a processing pipeline, it is important that developers follow a set of best practices when using <xref:System.Span%601>, <xref:System.Memory%601>, and related types. These best practices are documented in [Memory\<T> and Span\<T> usage guidelines](memory-t-usage-guidelines.md).
+Because the memory-related and span-related types are typically used to store data in a processing pipeline, it's important that you follow a set of best practices when using <xref:System.Span%601>, <xref:System.Memory%601>, and related types. These best practices are documented in [Memory\<T> and Span\<T> usage guidelines](memory-t-usage-guidelines.md).
 
 ## See also
 

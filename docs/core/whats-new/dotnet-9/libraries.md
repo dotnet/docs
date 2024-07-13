@@ -9,9 +9,40 @@ ms.topic: whats-new
 
 This article describes new features in the .NET libraries for .NET 9. It's been updated for .NET 9 Preview 6.
 
+## Base64Url
+
+Base64 is an encoding scheme that translates arbitrary bytes into text composed of a specific set of 64 characters. It's a very common approach for transferring data and has long been supported via a variety of methods, such as with <xref:System.Convert.ToBase64String?displayProperty=nameWithType> or <xref:System.Buffers.Text.Base64.DecodeFromUtf8(ReadOnlySpan{Byte},System.Span{Byte},System.Int32,System.Int32,System.Boolean)?displayProperty=nameWithType>. However, some of the characters it uses makes it less than ideal for use in some circumstances you might otherwise want to use it, such as in query strings. In particular, the 64 characters that comprise the Base64 table include '+' and '/', both of which have their own meaning in URLs. This led to the creation of the Base64Url scheme, which is similar to Base64 but uses a slightly different set of characters that makes it appropriate for use in URLs contexts. .NET 9 includes the new `Base64Url` <!--<xref:System.Buffers.Text.Base64>--> class, which provides many helpful and optimized methods for encoding and decoding with `Base64Url` to and from a variety of data types.
+
+The following example demonstrates using the new class.
+
+```csharp
+ReadOnlySpan<byte> bytes = ...;
+string encoded = Base64Url.EncodeToString(bytes);
+```
+
 ## Collections
 
-The <xref:System.Collections.Generic.PriorityQueue%602> collection type in the <xref:System.Collections.Generic> namespace includes a new <xref:System.Collections.Generic.PriorityQueue%602.Remove(%600,%600@,%601@,System.Collections.Generic.IEqualityComparer{%600})> method that you can use to update the priority of an item in the queue.
+The collection types in .NET gain the following updates for .NET 9:
+
+- [Collection lookups with spans](#collection-lookups-with-spans)
+- [`OrderedDictionary<TKey, TValue>`](#ordereddictionarytkey-tvalue)
+- [PriorityQueue.Remove() method](#priorityqueueremove-method) lets you update the priority of an item in the queue.
+
+### Collection lookups with spans
+
+In high-performance code, spans are often used to avoid allocating strings unnecessarily, and lookup tables with types like <xref:System.Collections.Generic.Dictionary%602> and <xref:System.Collections.Generic.HashSet%601> are frequently used as caches. However, it's been challenging to use these types together, as there was no safe, built-in mechanism for doing lookups on these types with spans. Now with the new `allows ref struct` feature in C# 13 and new features on these collection types in .NET 9, it's possible to perform these kinds of lookups.
+
+The following example demonstrates using `Dictionary<TKey, TValue>.GetAlternateLookup` <!--<xref:System.Collections.Generic.Dictionary%602.GetAlternateLookup?displayProperty=nameWithType>-->.
+
+:::code language="csharp" source="../snippets/dotnet-9/csharp/Collections.cs" id="AlternateLookup":::
+
+### `OrderedDictionary<TKey, TValue>`
+
+In many scenarios, you might want to store key-value pairs in a way where order can be maintained (a list of key-value pairs) but where fast lookup by key is also supported (a dictionary of key-value pairs). Since the early days of .NET, the <xref:System.Collections.Generic.OrderedDictionary> type has supported this scenario, but only in a non-generic manner, with keys and values typed as `object`. .NET 9 introduces the long-requested `OrderedDictionary<TKey, TValue>` <!--<xref:System.Collections.Generic.OrderedDictionary%602>--> collection, which provides an efficient, generic type to support these scenarios.
+
+The following code uses the new class.
+
+:::code language="csharp" source="../snippets/dotnet-9/csharp/Collections.cs" id="OrderedDictionary":::
 
 ### PriorityQueue.Remove() method
 
@@ -22,6 +53,14 @@ While it's not possible to implement efficient $O(\log n)$ priority updates in t
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Collections.cs" id="UpdatePriority":::
 
 This method unblocks users who want to implement graph algorithms in contexts where asymptotic performance isn't a blocker. (Such contexts include education and prototyping.) For example, here's a [toy implementation of Dijkstra's algorithm](https://github.com/dotnet/runtime/blob/16cb41496d595e2568574cfe11c763d5e05136c9/src/libraries/System.Collections/tests/Generic/PriorityQueue/PriorityQueue.Tests.Dijkstra.cs#L46-L76) that uses the new API.
+
+### `ReadOnlySet<T>`
+
+It's often desirable to give out read-only views of collections. <xref:System.Collections.Generic.ReadOnlyCollection%601> lets you create a read-only wrapper around an arbitrary mutable <xref:System.Collections.Generic.IList%601>, and <xref:System.Collections.Generic.ReadOnlyDictionary%602> lets you create a read-only wrapper around an arbitrary mutable <xref:System.Collections.Generic.IDictionary%602>. However, past versions of .NET had no built-in support for doing the same with <xref:System.Collections.Generic.ISet%601>. .NET 9 introduces `ReadOnlySet<T>` <!--<xref:System.Collections.Generic.ReadOnlySet%601>--> to address this.
+
+The new class enables the following usage pattern.
+
+:::code language="csharp" source="../snippets/dotnet-9/csharp/Collections.cs" id="ReadOnlySet":::
 
 ## Component model
 
@@ -131,27 +170,28 @@ public partial class ClassWithPrimaryConstructor(ILogger logger)
 
 In this section, find information about:
 
-- [`params ReadOnlySpan<T>` overloads](#params-readonlyspant-overloads)
+- [`allows ref struct` used in libraries](#allows-ref-struct-used-in-libraries)
 - [`SearchValues` expansion](#searchvalues-expansion)
 
-### `params ReadOnlySpan<T>` overloads
+### `allows ref struct` used in libraries
 
-C# has always supported marking array parameters as [`params`](../../../csharp/language-reference/keywords/method-parameters.md#params-modifier). This keyword enables a simplified calling syntax. For example, the <xref:System.String.Join(System.String,System.String[])?displayProperty=nameWithType> method's second parameter is marked with `params`. You can call this overload with an array or by passing the values individually:
+C# 13 introduces the ability to constrain a generic parameter with `allows ref struct`, which tells the compiler and runtime that a `ref struct` can be used for that generic parameter. Many APIs that are compatible with this have now been annotated. For example, the <xref:System.String.Create%2A?displayProperty=nameWithType> method has an overload that lets you create a `string` by writing directly into its memory, represented as a span. This method has a `TState` argument that's passed from the caller into the delegate that does the actual writing.
+
+That `TState` type parameter on `String.Create` is now annotated with `allows ref struct`:
 
 ```csharp
-string result = string.Join(", ", new string[3] { "a", "b", "c" });
-string result = string.Join(", ", "a", "b", "c");
+public static string Create<TState>(int length, TState state, SpanAction<char, TState> action)
+    where TState : allows ref struct;
 ```
 
-Prior to .NET 9, when you pass the values individually, the C# compiler emits code identical to the first call by producing an implicit array around the three arguments.
+This annotation enables you to pass a span (or any other `ref struct`) as input to this method.
 
-Starting in C# 13, you can use `params` with any argument that can be constructed via a collection expression, including spans (<xref:System.Span%601> and <xref:System.ReadOnlySpan%601>). That's beneficial for a variety of reasons, including performance. The C# compiler can store the arguments on the stack, wrap a span around them, and pass that off to the method, which avoids the implicit array allocation that would have otherwise resulted.
+The following example shows a new <xref:System.String.ToLowerInvariant?displayProperty=nameWithType> overload that uses this capability.
 
-.NET 9 now includes over 60 methods with a `params ReadOnlySpan<T>` parameter. Some are brand new overloads, and some are existing methods that already took a `ReadOnlySpan<T>` but now have that parameter marked with `params`. The net effect is if you upgrade to .NET 9 and recompile your code, you'll see performance improvements without making any code changes. That's because the compiler prefers to bind to span-based overloads than to the array-based overloads.
-
-For example, `String.Join` now includes the following overload, which implements the new pattern: <xref:System.String.Join(System.String,System.ReadOnlySpan{System.String})?displayProperty=nameWithType>
-
-Now, a call like `string.Join(", ", "a", "b", "c")` is made without allocating an array to pass in the `"a"`, `"b"`, and `"c"` arguments.
+```csharp
+public static string ToLowerInvariant(ReadOnlySpan<char> input) =>
+    string.Create(span.Length, input, static (stringBuffer, input) => span.ToLowerInvariant(stringBuffer));
+```
 
 ### `SearchValues` expansion
 
@@ -163,7 +203,38 @@ The following example searches for multiple animal names within a string value, 
 
 This new capability has an optimized implementation that takes advantage of the SIMD support in the underlying platform. It also enables higher-level types to be optimized. For example, <xref:System.Text.RegularExpressions.Regex> now utilizes this functionality as part of its implementation.
 
+## Networking
+
+The networking area includes in the following updates in .NET 9:
+
+- [SocketsHttpHandler is default in HttpClientFactory](#socketshttphandler-is-default-in-httpclientfactory)
+- [System.Net.ServerSentEvents](#systemnetserversentevents)
+- [TLS resume with client certificates on Linux](#tls-resume-with-client-certificates-on-linux)
+
+### SocketsHttpHandler is default in HttpClientFactory
+
+`HttpClientFactory` creates <xref:System.Net.Http.HttpClient> objects backed by <xref:System.Net.Http.HttpClientHandler>, by default. `HttpClientHandler` is itself backed by <xref:System.Net.Http.SocketsHttpHandler>, which is much more configurable, including around connection lifetime management. `HttpClientFactory` now uses `SocketsHttpHandler` by default and configures it to set limits on its connection lifetimes to match that of the rotation lifetime specified in the factory.
+
+### System.Net.ServerSentEvents
+
+Server-sent events (SSE) is a simple and popular protocol for streaming data from a server to a client. It's used, for example, by OpenAI as part of streaming generated text from its AI services. To simplify the consumption of SSE, the new `System.Net.ServerSentEvents` <xref:System.Net.ServerSentEvents> library provides a parser for easily ingesting server-sent events.
+
+The following code demonstrates using the new class.
+
+:::code language="csharp" source="../snippets/dotnet-9/csharp/Networking.cs" id="SseParser":::
+
+### TLS resume with client certificates on Linux
+
+*TLS resume* is a feature of the TLS protocol that allows resuming previously established sessions to a server. Doing so avoids a few roundtrips and saves computational resources during TLS handshake.
+
+*TLS resume* has already been supported on Linux for SslStream connections without client certificates. .NET 9 adds support for TLS resume of mutually authenticated TLS connections, which are common in server-to-server scenarios. The feature is enabled automatically.
+
 ## Reflection
+
+The reflection area includes the following updates for .NET 9:
+
+- [Persisted assemblies](#persisted-assemblies)
+- [Type-name parsing](#type-name-parsing)
 
 ### Persisted assemblies
 
@@ -202,7 +273,10 @@ The new APIs are available from the [`System.Reflection.Metadata`](https://www.n
 
 ## Regular expressions
 
-<!--TODO-->
+For regular expressions, .NET 9 includes the following updates:
+
+- [`[GeneratedRegex]` on properties](#generatedregex-on-properties)
+- [`Regex.EnumerateSplits`](#regexenumeratesplits)
 
 ### `[GeneratedRegex]` on properties
 
@@ -216,11 +290,14 @@ C# 13 supports partial *properties* in addition to partial methods, so starting 
 
 The following partial property is the property equivalent of the previous example.
 
-:::code language="csharp" source="../snippets/dotnet-9/csharp/RegularExpressions.cs" id="GeneratedRegexProperty":::
+```csharp
+[GeneratedRegex(@"\b\w{5}\b")]
+private static partial Regex FiveCharWordProperty { get; }
+```
 
 ### `Regex.EnumerateSplits`
 
-The <xref:System.Text.RegularExpressions.Regex> class provides a <xref:System.Text.RegularExpressions.Regex.Split%2A> method, similar in concept to the <xref:System.String.Split?displayProperty=nameWithType> method. With `String.Split`, you supply one or more `char` or `string` separators, and the implementation splits the input text on those separators. With `Regex.Split`, instead of specifying the separator as a `char` or `string`, it's specified as a regular expression pattern.
+The <xref:System.Text.RegularExpressions.Regex> class provides a <xref:System.Text.RegularExpressions.Regex.Split%2A> method, similar in concept to the <xref:System.String.Split%2A?displayProperty=nameWithType> method. With `String.Split`, you supply one or more `char` or `string` separators, and the implementation splits the input text on those separators. With `Regex.Split`, instead of specifying the separator as a `char` or `string`, it's specified as a regular expression pattern.
 
 The following example demonstrates `Regex.Split`.
 
@@ -375,6 +452,49 @@ public sealed class JsonParameterInfo
     public ICustomAttributeProvider? AttributeProvider { get; }
 }
 ```
+
+## Spans
+
+In high-performance code, spans are often used to avoid allocating strings unnecessarily. <xref:System.Span%601> and <xref:System.ReadOnlySpan%601> continue to revolutionize how code is written in .NET, and every release more and more methods are added that operate on spans. .NET 9 includes the following span-related updates:
+
+- [File helpers](#file-helpers)
+- [`params ReadOnlySpan<T>` overloads](#params-readonlyspant-overloads)
+
+### File helpers
+
+The <xref:System.IO.File> class now has new helpers to easily and directly write `ReadOnlySpan<char>`/`ReadOnlySpan<byte>` and `ReadOnlyMemory<char>`/`ReadOnlyMemory<byte>` to files.
+
+The following code efficiently writes a `ReadOnlySpan<char>` to a file.
+
+```csharp
+ReadOnlySpan<char> text = ...;
+File.WriteAllText(filePath, text);
+```
+
+New <xref:System.ReadOnlySpan.StartsWith%2A> and <xref:System.ReadOnlySpan.EndsWith%2A> extension methods have also been added for spans, making it easy to test whether a <xref:System.ReadOnlySpan%601> starts or ends with a specific `T` value.
+
+The following code uses these new convenience APIs.
+
+:::code language="csharp" source="../snippets/dotnet-9/csharp/Spans.cs" id="StartsWith":::
+
+### `params ReadOnlySpan<T>` overloads
+
+C# has always supported marking array parameters as [`params`](../../../csharp/language-reference/keywords/method-parameters.md#params-modifier). This keyword enables a simplified calling syntax. For example, the <xref:System.String.Join(System.String,System.String[])?displayProperty=nameWithType> method's second parameter is marked with `params`. You can call this overload with an array or by passing the values individually:
+
+```csharp
+string result = string.Join(", ", new string[3] { "a", "b", "c" });
+string result = string.Join(", ", "a", "b", "c");
+```
+
+Prior to .NET 9, when you pass the values individually, the C# compiler emits code identical to the first call by producing an implicit array around the three arguments.
+
+Starting in C# 13, you can use `params` with any argument that can be constructed via a collection expression, including spans (<xref:System.Span%601> and <xref:System.ReadOnlySpan%601>). That's beneficial for a variety of reasons, including performance. The C# compiler can store the arguments on the stack, wrap a span around them, and pass that off to the method, which avoids the implicit array allocation that would have otherwise resulted.
+
+.NET 9 now includes over 60 methods with a `params ReadOnlySpan<T>` parameter. Some are brand new overloads, and some are existing methods that already took a `ReadOnlySpan<T>` but now have that parameter marked with `params`. The net effect is if you upgrade to .NET 9 and recompile your code, you'll see performance improvements without making any code changes. That's because the compiler prefers to bind to span-based overloads than to the array-based overloads.
+
+For example, `String.Join` now includes the following overload, which implements the new pattern: <xref:System.String.Join(System.String,System.ReadOnlySpan{System.String})?displayProperty=nameWithType>
+
+Now, a call like `string.Join(", ", "a", "b", "c")` is made without allocating an array to pass in the `"a"`, `"b"`, and `"c"` arguments.
 
 ## System.Numerics
 

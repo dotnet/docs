@@ -13,6 +13,7 @@ C# 13 includes the following new features. You can try these features using the 
 - [New escape sequence - `\e`](#new-escape-sequence).
 - [Method group natural type improvements](#method-group-natural-type)
 - [Implicit indexer access in object initializers](#implicit-index-access)
+- [Enable `ref` locals and `unsafe` contexts in iterators and async methods](#ref-and-unsafe-in-iterators-and-async-methods)
 
 C# 13 is supported on **.NET 9**. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
 
@@ -72,6 +73,16 @@ var countdown = new TimerRemaining()
 ```
 
 The preceding example creates an array that counts down from 9 to 0. In versions before C# 13, the `^` operator can't be used in an object initializer. You need to index the elements from the front.
+
+## `ref` and `unsafe` in iterators and `async` methods
+
+Before C# 13, iterator methods (methods that use `yield return`) and `async` methods couldn't declare local `ref` variables, nor could they have an `unsafe` context.
+
+In C# 13, `async` methods can declare `ref` local variables, or local variables of a `ref struct` type. However, those variables can't be accessed across an `await` boundary. Neither can they be accessed across a `yield return` boundary.
+
+This relaxed restriction enables the compiler to allow verifiably safe use of `ref` local variables and `ref struct` types in more places. You can safely use types like <xref:System.ReadOnlySpan%601?displayProperty=nameWithType> in these methods. The compiler tells you if you violate safety rules.
+
+In the same fashion, C# 13 allows `unsafe` contexts in iterator methods. However, all `yield return` and `yield break` statements must be in safe contexts.
 
 ## See also
 

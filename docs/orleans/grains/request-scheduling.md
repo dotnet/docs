@@ -1,7 +1,7 @@
 ---
 title: Request scheduling
 description: Learn about request scheduling in .NET Orleans.
-ms.date: 07/28/2023
+ms.date: 07/03/2024
 ---
 
 # Request scheduling

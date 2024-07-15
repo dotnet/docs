@@ -1,7 +1,7 @@
 ---
 title: Load balancing
 description: Learn how .NET Orleans manages load balancing.
-ms.date: 03/17/2022
+ms.date: 07/03/2024
 ---
 
 # Load balancing

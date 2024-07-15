@@ -1,7 +1,7 @@
 ---
 title: Custom grain storage sample project
 description: Explore a custom grain storage sample project written with .NET Orleans.
-ms.date: 02/27/2023
+ms.date: 07/03/2024
 zone_pivot_groups: orleans-version
 ---
 

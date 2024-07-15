@@ -1,7 +1,7 @@
 ---
 title: Orleans benefits
 description: Learn the many benefits of .NET Orleans.
-ms.date: 09/05/2023
+ms.date: 07/03/2024
 ---
 
 # Orleans benefits

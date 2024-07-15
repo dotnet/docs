@@ -8,7 +8,7 @@ ms.date: 06/24/2024
 
 # Azure SDK for .NET protocol and convenience methods overview
 
-The Azure SDK client libraries provide an interface to Azure service REST APIs by translating method calls into into messages sent via the respective service protocol. For REST API services, this means sending HTTP requests and converting the responses into runtime types. In this article, you'll learn about the different types of methods exposed by the client libraries and explore their implementation patterns.
+The Azure SDK client libraries provide an interface to Azure service REST APIs by translating method calls into messages sent via the respective service protocol. For REST API services, this means sending HTTP requests and converting the responses into runtime types. In this article, you'll learn about the different types of methods exposed by the client libraries and explore their implementation patterns.
 
 ## Understand protocol and convenience methods
 
@@ -22,7 +22,7 @@ The Azure SDK for .NET client libraries can expose two different categories of m
 
 Protocol and convenience methods implement slightly different patterns based on the underlying package dependency chain of the respective library. The Azure SDK for .NET client libraries depend on one of two different core libraries:
 
-- [**Azure.Core**](/dotnet/api/overview/azure/core-readme) provides shared primitives, abstractions, and helpers for building modern Azure SDK client libraries. These libraries follow the [Azure SDK Design Guidelines for .NET](https://azure.github.io/azure-sdk/dotnet_introduction.html) and use package and namespace names prefixed with 'Azure', such as [`Azure.Storage.Blobs`](/dotnet/api/overview/azure/storage.blobs-readme).
+- [**Azure.Core**](/dotnet/api/overview/azure/core-readme) provides shared primitives, abstractions, and helpers for building modern Azure SDK client libraries. These libraries follow the [Azure SDK Design Guidelines for .NET](https://azure.github.io/azure-sdk/dotnet_introduction.html) and use package names and namespaces prefixed with *Azure*, such as [`Azure.Storage.Blobs`](/dotnet/api/overview/azure/storage.blobs-readme).
 
 - [**System.ClientModel**](/dotnet/api/overview/azure/system.clientmodel-readme) is a core library that provides shared primitives, abstractions, and helpers for .NET service client libraries. The `System.ClientModel` library is a general purpose toolset designed to help build libraries for a variety of platforms and services, whereas the `Azure.Core` library is specifically designed for building Azure client libraries.
 
@@ -114,16 +114,17 @@ The preceding code demonstrates the following `System.ClientModel` convenience m
 
 Although the Azure SDK for .NET client libraries provide the option to use either protocol or convenience methods, prioritize using convenience methods in most scenarios. Convenience methods are designed to improve the development experience and provide flexibility for authoring requests and handling responses. However, both method types can be used in your app as needed. Consider the following criteria when deciding which type of method to use:
 
-- Convenience methods:
-  - Enable you to work with more friendly method parameter and response types.
-  - Handle various low-level concerns and optimizations for you.
+Convenience methods:
+- Enable you to work with more friendly method parameter and response types.
+- Handle various low-level concerns and optimizations for you.
 
-- Protocol methods:
-  - Provide access to lower-level types, such as `RequestContext` and `RequestOptions`, which aren't available through convenience methods.
-  - Enable access to features of the underlying REST APIs that convenience methods don't expose.
-  - Enable you to create your own convenience methods around service endpoints that don't already have convenience methods.
+Protocol methods:
+- Provide access to lower-level types, such as `RequestContext` and `RequestOptions`, which aren't available through convenience methods.
+- Enable access to features of the underlying REST APIs that convenience methods don't expose.
+- Enable you to create your own convenience methods around service endpoints that don't already have convenience methods.
 
 ## See also
 
 - [Understanding the Azure Core library for .NET](https://devblogs.microsoft.com/azure-sdk/understanding-the-azure-core-library-for-net/)
+- [Azure.Core library for .NET](/dotnet/api/overview/azure/core-readme)
 - [System.ClientModel library for .NET](/dotnet/api/overview/azure/system.clientmodel-readme)

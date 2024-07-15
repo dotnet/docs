@@ -8,7 +8,7 @@ ms.date: 06/24/2024
 
 # Azure SDK for .NET protocol and convenience methods overview
 
-The Azure SDK client libraries provide an interface to Azure service REST APIs by translating method calls into into messages sent via the service protocol. For REST API services, this means sending HTTP requests and turning the responses into runtime types. In this article, you'll learn about the different types of methods exposed by the client libraries and explore their implementation patterns.
+The Azure SDK client libraries provide an interface to Azure service REST APIs by translating method calls into into messages sent via the respective service protocol. For REST API services, this means sending HTTP requests and converting the responses into runtime types. In this article, you'll learn about the different types of methods exposed by the client libraries and explore their implementation patterns.
 
 ## Understand protocol and convenience methods
 
@@ -62,7 +62,7 @@ The preceding code demonstrates the following protocol method patterns:
 - Reads the `ContentStream` to access the response data.
 
 > [!NOTE]
-> The preceding code examples configure the `ClientErrorBehaviors.NoThrow` for the `RequestOptions`. This option prevents non-success service responses status codes from throwing an exception, which means the app code should manually handle the response status code checks.
+> The preceding code configures the `ClientErrorBehaviors.NoThrow` for the `RequestOptions`. This option prevents non-success service responses status codes from throwing an exception, which means the app code should manually handle the response status code checks.
 
 ### [Convenience method](#tab/convenience-methods)
 
@@ -95,7 +95,7 @@ The preceding code demonstrates the following `System.ClientModel` protocol meth
 - Calls the `GetRawResponse` method to access the response data.
 
 > [!NOTE]
-> The preceding code examples configure the `ClientErrorBehaviors.NoThrow` for the `RequestOptions`. This option prevents non-success service responses status codes from throwing an exception, which means the app code should manually handle the response status code checks.
+> The preceding code configures the `ClientErrorBehaviors.NoThrow` for the `RequestOptions`. This option prevents non-success service responses status codes from throwing an exception, which means the app code should manually handle the response status code checks.
 
 ### [Convenience method](#tab/convenience-methods)
 

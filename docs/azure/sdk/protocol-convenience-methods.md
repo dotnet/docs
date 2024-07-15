@@ -52,32 +52,7 @@ Many Azure SDK client libraries depend on the `Azure.Core` library. For example,
 
 The following code uses a `ContentSafetyClient` to call the `AnalyzeText` protocol method:
 
-```csharp
-// Create the client
-var safetyClient = new ContentSafetyClient(
-    new Uri("<content-safety-service-uri>"),
-    new DefaultAzureCredential());
-
-// Create the message content
-RequestContent message = RequestContent.Create(new
-    {
-        text = "What is Microsoft Azure?",
-    });
-
-// Call the protocol method
-Response response = safetyClient.AnalyzeText(
-    message, 
-    new RequestContext()
-    {
-         ErrorOptions = ErrorOptions.NoThrow;
-    });
-
-// Display the response data
-using (StreamReader streamReader = new StreamReader(response.ContentStream))
-{
-    Console.WriteLine(streamReader.ReadToEnd());
-}
-```
+:::code source="snippets/protocol-convenience-methods/AzureCoreProtocol/Program.cs":::
 
 The preceding code demonstrates the following protocol method patterns:
 
@@ -93,23 +68,7 @@ The preceding code demonstrates the following protocol method patterns:
 
 The following code uses a `ContentSafetyClient` to call the `AnalyzeText` convenience method:
 
-```csharp
-// Create the client
-var safetyClient = new ContentSafetyClient(
-    new Uri("content-safety-service-uri"),
-    new DefaultAzureCredential());
-
-// Call the convenience method
-AnalyzeTextResult result = safetyClient.AnalyzeText("What is Microsoft Azure?");
-
-// Display the response data
-foreach (var item in result.CategoriesAnalysis)
-{
-    Console.Write($"{item.Category}: ");
-    Console.Write(item.Severity);
-    Console.WriteLine();
-}
-```
+:::code source="snippets/protocol-convenience-methods/AzureCoreConvenience/Program.cs":::
 
 The preceding code demonstrates the following `Azure.Core` convenience method patterns:
 
@@ -126,44 +85,7 @@ Some client libraries that connect to non-Azure services use patterns similar to
 
 The following code uses a `ChatClient` to call the `CompleteChat` protocol method:
 
-```csharp
-// Create the client
-OpenAIClient client = new("your-openai-key");
-ChatClient chatClient = client.GetChatClient("gpt-4");
-
-// Create the request prompt content
-BinaryData prompt = BinaryData.FromBytes("""
-    {  
-        "model": "gpt-4o",
-        "messages": [
-           {
-               "role": "user",
-               "content": "What is Microsoft Azure?."
-           }
-        ]
-    }
-    """u8.ToArray());
-using BinaryContent content = BinaryContent.Create(prompt);
-
-// Send the request
-ClientResult result = chatClient.CompleteChat(
-        content,
-        new RequestOptions()
-        { 
-            ErrorOptions = ClientErrorBehaviors.NoThrow
-        });
-
-// Retrieve and display the response data
-BinaryData output = result.GetRawResponse().Content;
-using JsonDocument outputAsJson = JsonDocument.Parse(output);
-string message = outputAsJson.RootElement
-    .GetProperty("choices"u8)[0]
-    .GetProperty("message"u8)
-    .GetProperty("content"u8)
-    .GetString();
-
-Console.WriteLine(message);
-```
+:::code source="snippets/protocol-convenience-methods/SCMProtocol/Program.cs":::
 
 The preceding code demonstrates the following `System.ClientModel` protocol method patterns:
 
@@ -179,18 +101,7 @@ The preceding code demonstrates the following `System.ClientModel` protocol meth
 
 Consider the following code that uses a `ChatClient` to call the `CompleteChat` convenience method:
 
-```csharp
-// Create the client
-OpenAIClient client = new("your-openai-key");
-ChatClient chatClient = client.GetChatClient("gpt-4");
-
-// Send the prompt
-ClientResult<ChatCompletion> completion
-    = chatClient.CompleteChat("What is Azure?");
-
-// Display the response data
-Console.WriteLine($"{completion.Value.Role}: {completion.Value.Content}");
-```
+:::code source="snippets/protocol-convenience-methods/SCMConvenience/Program.cs":::
 
 The preceding code demonstrates the following `System.ClientModel` convenience method patterns:
 

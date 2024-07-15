@@ -28,7 +28,7 @@ Get started with the .NET Azure OpenAI SDK by creating a simple .NET 8 console c
 
 :::zone-end
 
-[!INCLUDE [download-alert](includes/prerequisites-and-azure-deploy.md)]
+[!INCLUDE [download-alert](includes/prerequisites-azure-openai.md)]
 
 ## Trying Generate Hiking Images sample
 

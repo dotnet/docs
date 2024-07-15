@@ -140,7 +140,7 @@ groups:
       title: "Other"
 - id: openai-library
   title: OpenAI Library
-  prompt: Choose a library for OpenAI
+  prompt: Choose a host service for OpenAI
   pivots:
     - id: openai
       title: OpenAI

@@ -27,7 +27,7 @@ Get started with the .NET Azure OpenAI with a `gpt-35-turbo` model, from a simpl
 
 :::zone-end
 
-[!INCLUDE [download-alert](includes/prerequisites-and-azure-deploy.md)]
+[!INCLUDE [download-alert](includes/prerequisites-azure-openai.md)]
 
 ## Try "Chatting About My Previous Hikes" sample
 

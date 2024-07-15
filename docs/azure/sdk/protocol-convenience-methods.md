@@ -52,7 +52,7 @@ Many Azure SDK client libraries depend on the `Azure.Core` library. For example,
 
 The following code uses a `ContentSafetyClient` to call the `AnalyzeText` protocol method:
 
-:::code source="snippets/protocol-convenience-methods/AzureCoreProtocol/Program.cs":::
+:::code source="snippets/protocol-convenience-methods/AzureCoreProtocol/Program.cs" highlight="18-20":::
 
 The preceding code demonstrates the following protocol method patterns:
 
@@ -68,7 +68,7 @@ The preceding code demonstrates the following protocol method patterns:
 
 The following code uses a `ContentSafetyClient` to call the `AnalyzeText` convenience method:
 
-:::code source="snippets/protocol-convenience-methods/AzureCoreConvenience/Program.cs":::
+:::code source="snippets/protocol-convenience-methods/AzureCoreConvenience/Program.cs" highlight="10":::
 
 The preceding code demonstrates the following `Azure.Core` convenience method patterns:
 
@@ -85,7 +85,7 @@ Some client libraries that connect to non-Azure services use patterns similar to
 
 The following code uses a `ChatClient` to call the `CompleteChat` protocol method:
 
-:::code source="snippets/protocol-convenience-methods/SCMProtocol/Program.cs":::
+:::code source="snippets/protocol-convenience-methods/SCMProtocol/Program.cs" highlight="26-31":::
 
 The preceding code demonstrates the following `System.ClientModel` protocol method patterns:
 
@@ -101,7 +101,7 @@ The preceding code demonstrates the following `System.ClientModel` protocol meth
 
 Consider the following code that uses a `ChatClient` to call the `CompleteChat` convenience method:
 
-:::code source="snippets/protocol-convenience-methods/SCMConvenience/Program.cs":::
+:::code source="snippets/protocol-convenience-methods/SCMConvenience/Program.cs" highlight="10,11":::
 
 The preceding code demonstrates the following `System.ClientModel` convenience method patterns:
 

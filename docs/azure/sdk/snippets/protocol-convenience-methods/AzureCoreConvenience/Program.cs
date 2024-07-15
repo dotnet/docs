@@ -10,7 +10,7 @@ var safetyClient = new ContentSafetyClient(
 AnalyzeTextResult result = safetyClient.AnalyzeText("What is Microsoft Azure?");
 
 // Display the results
-foreach (var item in result.CategoriesAnalysis)
+foreach (TextCategoriesAnalysis item in result.CategoriesAnalysis)
 {
     Console.WriteLine($"{item.Category}: {item.Severity}");
 }

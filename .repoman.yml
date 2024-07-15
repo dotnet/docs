@@ -53,6 +53,13 @@ issues:
       pass:
         - labels-add: ["source incompatible"]
 
+    # Temporary label to mark issues as updated for Quest. The label is instantly removed
+    - check:
+      - type: query
+        value: "length(Issue.labels[?name == ':world_map: mapQUEST']) != `0`"
+      pass:
+        - labels-remove: ["world_map: mapQUEST"]
+
   opened:
     # New issue opened, add Not Triaged  
     - labels-add: [":watch: Not Triaged"]

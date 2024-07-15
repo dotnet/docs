@@ -1,6 +1,6 @@
 ---
-title: Understand Azure SDK protocol methods
-description: Learn about the key differences between Azure SDK protocol methods and convenience methods
+title: Understand Azure SDK client library method types
+description: Learn about the key differences between Azure SDK client library protocol and convenience methods
 ms.topic: conceptual
 ms.custom: devx-track-dotnet, engagement-fy23, devx-track-arm-template
 ms.date: 06/24/2024
@@ -29,7 +29,7 @@ Protocol and convenience methods implement slightly different patterns based on 
 > [!NOTE]
 > The `Azure.Core` library itself also depends on the `System.ClientModel` for various service building blocks. In the context of this article, the key differentiator for method patterns is whether a client library depends on `Azure.Core` or `System.ClientModel` directly, rather than through a transitive dependency.
 
-The following table compares some of the request and response types used by protocol and convenience methods based on whether the library depend on `Azure.Core` or `System.ClientModel`:
+The following table compares some of the request and response types used by protocol and convenience methods based on whether the library depends on `Azure.Core` or `System.ClientModel`:
 
 |Request or response concern  |Azure.Core  | System.ClientModel |
 |---------|---------|---------|
@@ -42,7 +42,7 @@ The sections ahead provide implementation examples of these concepts.
 
 ## Protocol and convenience method examples
 
-The coding patterns and types used by client library protocol and convenience methods vary slightly based on whether the library depends on `Azure.Core` or `System.ClientModel`. The differences primarily influence the C# types used for handling request and response data.
+The coding patterns and types used by client library protocol and convenience methods vary slightly based on whether the library depends on `Azure.Core` or `System.ClientModel`. The differences primarily influence the .NET types used for handling request and response data.
 
 ### Libraries that depend on Azure.Core
 
@@ -55,7 +55,7 @@ The following code uses a `ContentSafetyClient` to call the `AnalyzeText` protoc
 ```csharp
 // Create the client
 var safetyClient = new ContentSafetyClient(
-    new Uri("content-safety-service-uri"),
+    new Uri("<content-safety-service-uri>"),
     new DefaultAzureCredential());
 
 // Create the message content

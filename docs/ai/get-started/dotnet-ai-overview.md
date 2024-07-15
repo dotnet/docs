@@ -36,7 +36,7 @@ We recommend the following sequence of tutorials and articles for an introductio
 
 |Scenario  |Tutorial  |
 |----------|----------|
-| Create a chat application | [Build an Azure AI chat app with .NET](../quickstarts/get-started-azure-openai.md)|
+| Create a chat application | [Build an Azure AI chat app with .NET](../quickstarts/get-started-openai.md)|
 | Summarize text | [Summarize text using Azure AI chat app with .NET](../quickstarts/quickstart-openai-summarize-text.md) |
 | Chat with your data     | [Get insight about your data from an .NET Azure AI chat app](../quickstarts/quickstart-ai-chat-with-data.md) |
 | Call .NET functions with AI | [Extend Azure AI using tools and execute a local function with .NET](../quickstarts/quickstart-azure-openai-tool.md) |
@@ -47,5 +47,5 @@ Browse the table of contents to learn more about the core concepts, starting wit
 
 ## Next steps
 
-- [Quickstart: Build an Azure AI chat app with .NET](../quickstarts/get-started-azure-openai.md)
+- [Quickstart: Build an Azure AI chat app with .NET](../quickstarts/get-started-openai.md)
 - [Video series: Machine Learning and AI with .NET](/shows/machine-learning-and-ai-with-dotnet-for-beginners)

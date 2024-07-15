@@ -1,7 +1,7 @@
 ---
 title: Quickstart - Build an AI chat app with .NET
 description: Create a simple chat app using Semantic Kernel with OpenAI or Azure OpenAI
-ms.date: 07/03/2024
+ms.date: 07/17/2024
 ms.topic: quickstart
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 author: fboucher
@@ -49,7 +49,7 @@ Get started with Semantic Kernel by creating a simple .NET 8 console chat applic
 
 :::zone-end
 
-1. It's now time to try the console application. Type in the following to run the app:
+2. It's now time to try the console application. Type in the following to run the app:
 
     ```dotnetcli
     dotnet run

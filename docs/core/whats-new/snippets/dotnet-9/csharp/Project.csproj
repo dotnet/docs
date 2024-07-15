@@ -10,6 +10,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.ML.Tokenizers" Version="0.21.1" />
     <PackageReference Include="System.Memory" Version="4.5.5" />
+    <PackageReference Include="System.Net.ServerSentEvents" Version="9.0.0-preview.6.24327.7" />
     <PackageReference Include="System.Numerics.Tensors" Version="9.0.0-preview.5.24306.7" />
   </ItemGroup>
 

@@ -6,9 +6,9 @@ ms.custom: "updateeachrelease"
 ---
 # Welcome to .NET
 
-Test link to bad /dotnet URL: [AllowAnonymous](/dotnet/api/microsoft.aspnetcore.allowanonymous)
-Test link to bad xref: [AllowAnonymous](xref:Microsoft.AspNetCore.AllowAnonymous)
-Test to valid API ref link obtained from URL copy/paste: [OptionsBuilder\<T>.Configure](/dotnet/api/microsoft.extensions.options.optionsbuilder-1.configure#microsoft-extensions-options-optionsbuilder-1-configure-5(system-action((-0-0-1-2-3-4))))
+Test link to bad /dotnet URL: [AllowAnonymous](/dotnet/api/microsoft.aspnetcore.allowanonymous)\
+Test link to bad xref: [AllowAnonymous](xref:Microsoft.AspNetCore.AllowAnonymous)\
+Test link to valid API ref link obtained from URL copy/paste: [OptionsBuilder\<T>.Configure](/dotnet/api/microsoft.extensions.options.optionsbuilder-1.configure#microsoft-extensions-options-optionsbuilder-1-configure-5(system-action((-0-0-1-2-3-4))))\
 
 See [Get started with .NET](core/get-started.md) to learn how to create .NET apps.
 

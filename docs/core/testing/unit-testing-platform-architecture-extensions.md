@@ -10,50 +10,50 @@ ms.date: 07/11/2024
 
 The testing platform consists of a [testing framework](#test-framework-extension) and any number of [extensions](#other-extensibility-points) that can operate *in-process* or *out-of-process*.
 
-As outlined in the [architecture](./unit-testing-platform-architecture.md) section, the testing platform is designed to accommodate a variety of scenarios and extensibility points. The primary and essential extension is undoubtedly the [testing framework](#test-framework-extension) that our tests will utilize. Failing to register it will result in a startup error. **The [testing framework](#test-framework-extension) is the sole mandatory extension required to execute a testing session.**
+As outlined in the [architecture](./unit-testing-platform-architecture.md) section, the testing platform is designed to accommodate a variety of scenarios and extensibility points. The primary and essential extension is undoubtedly the [testing framework](#test-framework-extension) that your tests will utilize. Failing to register this results in startup error. **The [testing framework](#test-framework-extension) is the sole mandatory extension required to execute a testing session.**
 
-To support scenarios such as generating test reports, code coverage, retrying failed tests, and other potential features, we need to provide a mechanism that allows other extensions to work in conjunction with the [testing framework](#test-framework-extension) to deliver these features not inherently provided by the [testing framework](#test-framework-extension) itself.
+To support scenarios such as generating test reports, code coverage, retrying failed tests, and other potential features, you need to provide a mechanism that allows other extensions to work in conjunction with the [testing framework](#test-framework-extension) to deliver these features not inherently provided by the [testing framework](#test-framework-extension) itself.
 
-In essence, the [testing framework](#test-framework-extension) is the primary extension that supplies information about each test that makes up our test suite. It reports whether a specific test has succeeded, failed, skipped, etc., and can provide additional information about each test, such as a human-readable name (referred to as the display name), the source file, and the line where our test begins, among other things.
+In essence, the [testing framework](#test-framework-extension) is the primary extension that supplies information about each test that makes up the test suite. It reports whether a specific test has succeeded, failed, skipped, and can provide additional information about each test, such as a human-readable name (referred to as the display name), the source file, and the line where our test begins, among other things.
 
-The extensibility point allows us to utilize the information provided by the [testing framework](#test-framework-extension) to generate new artifacts or enhance existing ones with additional features. A commonly used extension is the TRX report generator, which subscribes to the [TestNodeUpdateMessage](#the-testnodeupdatemessage-data) and generates an XML report file from it.
+The extensibility point enables the utilization of information provided by the [testing framework](#test-framework-extension) to generate new artifacts or to enhance existing ones with additional features. A commonly used extension is the TRX report generator, which subscribes to the [TestNodeUpdateMessage](#the-testnodeupdatemessage-data) and generates an XML report file from it.
 
 As discussed in the [architecture](./unit-testing-platform-architecture.md), there are certain extension points that *cannot* operate within the same process as the [testing framework](#test-framework-extension). The reasons typically include:
 
 * The need to modify the *environment variables* of the *test host*. Acting within the test host process itself is *too late*.
-* The requirement to *monitor* the process from the outside because the *test host*, where our tests and user code run, might have some *user code bugs* that render the process itself *unstable*, leading to potential *hangs* or *crashes*. In such cases, the extension would crash or hang along with the *test host* process.
+* The requirement to *monitor* the process from the outside because the *test host*, where tests and user code run, might have some *user code bugs* that render the process itself *unstable*, leading to potential *hangs* or *crashes*. In such cases, the extension would crash or hang along with the *test host* process.
 
-Due to the reasons mentioned above, the extension points are categorized into two types:
+Due to these reasons, the extension points are categorized into two types:
 
-* *In-process extensions*: These extensions operate within the same process as the [testing framework](#test-framework-extension).
+1. *In-process extensions*: These extensions operate within the same process as the [testing framework](#test-framework-extension).
 
-You can register *in-process extensions* via the `ITestApplicationBuilder.TestHost` property:
+    You can register *in-process extensions* via the `ITestApplicationBuilder.TestHost` property:
 
-```cs
-...
-ITestApplicationBuilder testApplicationBuilder = await TestApplication.CreateBuilderAsync(args);
-testApplicationBuilder.TestHost.AddXXX(...);
-...
-```
+    ```csharp
+    // ...
+    ITestApplicationBuilder builder = await TestApplication.CreateBuilderAsync(args);
+    builder.TestHost.AddXXX(...);
+    // ...
+    ```
 
-* *Out-of-process extensions*: These extensions function in a separate process, allowing them to monitor the test host without being influenced by the test host itself.
+1. *Out-of-process extensions*: These extensions function in a separate process, allowing them to monitor the test host without being influenced by the test host itself.
 
-You can register *out-of-process extensions* via the `ITestApplicationBuilder.TestHostControllers`.
+    You can register *out-of-process extensions* via the `ITestApplicationBuilder.TestHostControllers`.
 
-```cs
-ITestApplicationBuilder testApplicationBuilder = await TestApplication.CreateBuilderAsync(args);
-testApplicationBuilder.TestHostControllers.AddXXX(...);
-```
+    ```csharp
+    ITestApplicationBuilder builder = await TestApplication.CreateBuilderAsync(args);
+    builder.TestHostControllers.AddXXX(...);
+    ```
 
-Lastly, some extensions are designed to function in both scenarios. These common extensions behave identically in both *hosts*. You can register these extensions either through the *TestHost* and *TestHostController* interfaces or directly at the `ITestApplicationBuilder` level. An example of such an extension is the [ICommandLineOptionsProvider](#the-icommandlineoptionsprovider-extensions).
+    Lastly, some extensions are designed to function in both scenarios. These common extensions behave identically in both *hosts*. You can register these extensions either through the *TestHost* and *TestHostController* interfaces or directly at the `ITestApplicationBuilder` level. An example of such an extension is the [ICommandLineOptionsProvider](#the-icommandlineoptionsprovider-extensions).
 
 ## The `IExtension` interface
 
-The `IExtension` interface serves as the foundational interface for all extensibility points within the testing platform. It is primarily used to obtain descriptive information about the extension and, most importantly, to enable or disable the extension itself.
+The `IExtension` interface serves as the foundational interface for all extensibility points within the testing platform. It's primarily used to obtain descriptive information about the extension and, most importantly, to enable or disable the extension itself.
 
-Let's delve into the specifics:
+Consider the following `IExension` interface:
 
-```cs
+```csharp
 public interface IExtension
 {
     string Uid { get; }
@@ -64,27 +64,25 @@ public interface IExtension
 }
 ```
 
-`Uid`: This is the unique identifier for the extension. It's crucial to choose a unique value for this string to avoid conflicts with other extensions.
+* `Uid`: Represents the unique identifier for the extension. It's crucial to choose a unique value for this string to avoid conflicts with other extensions.
 
-`Version`: This represents the version of the interface. It MUST use [**semantic versioning**](https://semver.org/).
+* `Version`: Represents the version of the interface. Requires [**semantic versioning**](https://semver.org/).
 
-`DisplayName`: This is a user-friendly name that will appear in logs and when you request information using the `--info` command line option.
+* `DisplayName`: A user-friendly name representation that will appear in logs and when you request information using the `--info` command line option.
 
-`Description`: The description of the extension, will appear when you request information using the `--info` command line option.
+* `Description`: The description of the extension, that appears when you request information using the `--info` command line option.
 
-`IsEnabledAsync()`: This method is invoked by the testing platform when the extension is being instantiated. If the method returns false, the extension will be excluded.
-This method typically makes decisions based on the [configuration file](./unit-testing-platform-architecture-services.md#the-iconfiguration-service) file or some [custom command line options](./unit-testing-platform-architecture-services.md#the-icommandlineoptions-service). Users often specify `--customExtensionOption` in the command line to opt into the extension itself.
+* `IsEnabledAsync()`: This method is invoked by the testing platform when the extension is being instantiated. If the method returns `false`, the extension will be excluded. This method typically makes decisions based on the [configuration file](./unit-testing-platform-architecture-services.md#the-iconfiguration-service) or some [custom command line options](./unit-testing-platform-architecture-services.md#the-icommandlineoptions-service). Users often specify `--customExtensionOption` in the command line to opt into the extension itself.
 
 ## Test Framework extension
 
-### Registering a testing framework
+### Register a testing framework
 
-This section explains how to register the test framework to the testing platform.
-You can register only one testing framework per test application builder using the api `TestApplication.RegisterTestFramework` as shown [here](./unit-testing-platform-architecture.md)
+This section explains how to register the test framework with the testing platform. You register only one testing framework per test application builder using the `TestApplication.RegisterTestFramework` API as shown in [the testing platform architecture](./unit-testing-platform-architecture.md) documentation.
 
-The API's signature is as follows:
+The registration API is defined as follows:
 
-```cs
+```csharp
 ITestApplicationBuilder RegisterTestFramework(
     Func<IServiceProvider, ITestFrameworkCapabilities> capabilitiesFactory,
     Func<ITestFrameworkCapabilities, IServiceProvider, ITestFramework> adapterFactory);
@@ -96,15 +94,13 @@ The `RegisterTestFramework` API expects two factories:
 
     The [`ITestFrameworkCapabilities`](./unit-testing-platform-architecture-capabilities.md) interface is used to announce the capabilities supported by the testing framework to the platform and extensions. It allows the platform and extensions to interact correctly by implementing and supporting specific behaviors. For a better understanding of the [concept of capabilities](./unit-testing-platform-architecture-capabilities.md), refer to the respective section.
 
-2. `Func<ITestFrameworkCapabilities, IServiceProvider, ITestFramework>`: This is a lambda function that takes in an [ITestFrameworkCapabilities](./unit-testing-platform-architecture-capabilities.md) object, which is the instance returned by the `Func<IServiceProvider, ITestFrameworkCapabilities>`, and an [IServiceProvider](./unit-testing-platform-architecture-services.md#the-imessagebus-service) to provide access to platform services once more. The expected return object is one that implements the [ITestFramework](#test-framework-extension) interface. The ITestFramework serves as the execution engine that discovers and runs tests, and communicates the results back to the testing platform.
+1. `Func<ITestFrameworkCapabilities, IServiceProvider, ITestFramework>`: This is a delegate that takes in an [ITestFrameworkCapabilities](./unit-testing-platform-architecture-capabilities.md) object, which is the instance returned by the `Func<IServiceProvider, ITestFrameworkCapabilities>`, and an [IServiceProvider](./unit-testing-platform-architecture-services.md#the-imessagebus-service) to provide access to platform services once more. The expected return object is one that implements the [ITestFramework](#test-framework-extension) interface. The `ITestFramework` serves as the execution engine that discovers and runs tests, and then communicates the results back to the testing platform.
 
 The need for the platform to separate the creation of the [`ITestFrameworkCapabilities`](./unit-testing-platform-architecture-capabilities.md) and the creation of the [ITestFramework](#test-framework-extension) is an optimization to avoid creating the test framework if the supported capabilities are not sufficient to execute the current testing session.
 
-Below a sample of a test framework registration that returns empty capabilities.
+Consider the following user code example, which demonstrates a test framework registration that returns an empty capability set:
 
-User code:
-
-```cs
+```csharp
 internal class TestingFrameworkCapabilities : ITestFrameworkCapabilities
 {
     public IReadOnlyCollection<ITestFrameworkCapability> Capabilities => [];
@@ -114,9 +110,9 @@ internal class TestingFramework : ITestFramework
 {
    public TestingFramework(ITestFrameworkCapabilities capabilities, IServiceProvider serviceProvider)
    {
-     ...
+       // ...
    }
-   ...
+   // Omitted for brevity...
 }
 
 public static class TestingFrameworkExtensions
@@ -132,9 +128,9 @@ public static class TestingFrameworkExtensions
 ...
 ```
 
-Entry point with the registration:
+Now, consider the corresponding entry point of this example with the registration code:
 
-```cs
+```csharp
 var testApplicationBuilder = await TestApplication.CreateBuilderAsync(args);
 // Register the testing framework
 testApplicationBuilder.AddTestingFramework();
@@ -143,9 +139,9 @@ return await testApplication.RunAsync();
 ```
 
 > [!NOTE]
-> Returning empty [ITestFrameworkCapabilities](./unit-testing-platform-architecture-capabilities.md) should not prevent the execution of the test session. All test frameworks should be capable of discovering and running tests. The impact should be limited to extensions that may opt out if the test framework lacks a certain feature.
+> Returning empty [ITestFrameworkCapabilities](./unit-testing-platform-architecture-capabilities.md) shouldn't prevent the execution of the test session. All test frameworks should be capable of discovering and running tests. The impact should be limited to extensions that may opt-out if the test framework lacks a certain feature.
 
-### Creating a testing framework
+### Create a testing framework
 
 The `Microsoft.Testing.Platform.Extensions.TestFramework.ITestFramework` is implemented by extensions that provide a test framework:
 
@@ -158,11 +154,11 @@ public interface ITestFramework : IExtension
 }
 ```
 
-The `ITestFramework` interface inherits from the [IExtension](#the-iextension-interface) interface, which is an interface that all extension points inherit from. `IExtension` is used to retrieve the name and description of the extension. The `IExtension` also provides a way to dynamically enable or disable the extension in setup, through `Task<bool> IsEnabledAsync()`, please make sure that you return `true` from this method if you have no special needs.
+The `ITestFramework` interface inherits from the [IExtension](#the-iextension-interface) interface, which is an interface that all extension points inherit from. `IExtension` is used to retrieve the name and description of the extension. The `IExtension` also provides a way to dynamically enable or disable the extension in setup, through `Task<bool> IsEnabledAsync()`. Please make sure that you return `true` from this method if you have no special needs.
 
-#### CreateTestSessionAsync
+#### The `CreateTestSessionAsync` method
 
-The `CreateTestSessionAsync` is called at the start of the test session and is used to initialize the test framework. As we can see the api accepts a `CloseTestSessionContext` object and returns a `CloseTestSessionResult`.
+The `CreateTestSessionAsync` method is called at the start of the test session and is used to initialize the test framework. The API accepts a `CloseTestSessionContext` object and returns a `CloseTestSessionResult`.
 
 ```cs
 public sealed class CreateTestSessionContext : TestSessionContext
@@ -199,15 +195,15 @@ public sealed class CreateTestSessionResult
 }
 ```
 
-The `IsSuccess` can be used to indicate whether the session creation was successful. If it returns false, the test execution will be halted.
+The `IsSuccess` property is used to indicate whether the session creation was successful. When it returns `false`, the test execution is halted.
 
-#### CloseTestSessionAsync
+#### The `CloseTestSessionAsync` method
 
-The `CloseTestSessionAsync` mirrors the `CreateTestSessionAsync` in functionality, with the only difference being the object names. For more details, refer to the `CreateTestSessionAsync` section.
+The `CloseTestSessionAsync` method is juxtaposed to the `CreateTestSessionAsync` in functionality, with the only difference being the object names. For more information, see the `CreateTestSessionAsync` section.
 
-#### ExecuteRequestAsync
+#### The `ExecuteRequestAsync` method
 
-The `ExecuteRequestAsync` accepts an object of type `ExecuteRequestContext`. This object, as suggested by its name, holds the specifics about the action that the test framework is expected to perform.
+The `ExecuteRequestAsync` method accepts an object of type `ExecuteRequestContext`. This object, as suggested by its name, holds the specifics about the action that the test framework is expected to perform.
 The `ExecuteRequestContext` definition is:
 
 ```cs
@@ -243,7 +239,7 @@ sequenceDiagram
     ITestFramework-->>Testing platform: CloseTestSessionResult
 ```
 
-The diagram above illustrates that the testing platform issues 3 requests after creating the test framework instance. The test framework processes these requests and utilizes the `IMessageBus` service, which is included in the request itself, to deliver the result for each specific request. Once a particular request has been handled, the test framework invokes the `Complete()` method on it, indicating to the testing platform that the request has been fulfilled.
+The preceding diagram illustrates that the testing platform issues three requests after creating the test framework instance. The test framework processes these requests and utilizes the `IMessageBus` service, which is included in the request itself, to deliver the result for each specific request. Once a particular request has been handled, the test framework invokes the `Complete()` method on it, indicating to the testing platform that the request has been fulfilled.
 The testing platform monitors all dispatched requests. Once all requests have been fulfilled, it invokes `CloseTestSessionAsync` and disposes of the instance (if `IDisposable/IAsyncDisposable` is implemented).
 It's evident that the requests and their completions can overlap, enabling concurrent and asynchronous execution of requests.
 > [!NOTE]

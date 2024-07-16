@@ -19,8 +19,5 @@ Response response = safetyClient.AnalyzeText(
     prompt, 
     new RequestContext() { ErrorOptions = ErrorOptions.NoThrow});
 
-using (StreamReader streamReader = new StreamReader(response.ContentStream))
-{
-    // Display the results
-    Console.WriteLine(streamReader.ReadToEnd());
-}
+// Display the results
+Console.WriteLine(response.Content);

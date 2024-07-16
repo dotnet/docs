@@ -48,22 +48,6 @@ The coding patterns and types used by client library protocol and convenience me
 
 Many Azure SDK client libraries depend on the `Azure.Core` library. For example, the [`Azure.AI.ContentSafety`](/dotnet/api/overview/azure/ai.contentsafety-readme) library depends on the `Azure.Core` library and provides a `ContentSafetyClient` class that exposes both protocol and convenience methods.
 
-### [Protocol method](#tab/protocol-methods)
-
-The following code uses a `ContentSafetyClient` to call the `AnalyzeText` protocol method:
-
-:::code source="snippets/protocol-convenience-methods/AzureCoreProtocol/Program.cs" highlight="18-20":::
-
-The preceding code demonstrates the following protocol method patterns:
-
-- Uses the `RequestContent` type to supply data for the request body.
-- Uses the `RequestContext` type to configure request options.
-- Returns data using the `Response` type.
-- Reads the `ContentStream` to access the response data.
-
-> [!NOTE]
-> The preceding code configures the `ClientErrorBehaviors.NoThrow` for the `RequestOptions`. This option prevents non-success service responses status codes from throwing an exception, which means the app code should manually handle the response status code checks.
-
 ### [Convenience method](#tab/convenience-methods)
 
 The following code uses a `ContentSafetyClient` to call the `AnalyzeText` convenience method:
@@ -75,11 +59,38 @@ The preceding code demonstrates the following `Azure.Core` convenience method pa
 - Uses a standard C# primitive or model type as a parameter.
 - Returns a friendly C# type that represents the result of the operation.
 
+### [Protocol method](#tab/protocol-methods)
+
+The following code uses a `ContentSafetyClient` to call the `AnalyzeText` protocol method:
+
+:::code source="snippets/protocol-convenience-methods/AzureCoreProtocol/Program.cs" highlight="18-20":::
+
+The preceding code demonstrates the following protocol method patterns:
+
+- Uses the `RequestContent` type to supply data for the request body.
+- Uses the `RequestContext` type to configure request options.
+- Returns data using the `Response` type.
+- Reads `response.Content` to access the response data.
+
+> [!NOTE]
+> The preceding code configures the `ClientErrorBehaviors.NoThrow` for the `RequestOptions`. This option prevents non-success service responses status codes from throwing an exception, which means the app code should manually handle the response status code checks.
+
 ---
 
 ### Libraries that depend on System.ClientModel
 
 Some client libraries that connect to non-Azure services use patterns similar to the libraries that depend on `Azure.Core`. For example, the [`OpenAI`](https://www.nuget.org/packages/OpenAI/2.0.0-beta.7) library provides a client that connects to the OpenAI services. These libraries are based on a library called `System.ClientModel` that has patterns similar to `Azure.Core`.
+
+### [Convenience method](#tab/convenience-methods)
+
+Consider the following code that uses a `ChatClient` to call the `CompleteChat` convenience method:
+
+:::code source="snippets/protocol-convenience-methods/SCMConvenience/Program.cs" highlight="10,11":::
+
+The preceding code demonstrates the following `System.ClientModel` convenience method patterns:
+
+- Uses a standard C# primitive or model type as a parameter.
+- Returns a `ClientResult` type that represents the result of the operation.
 
 ### [Protocol method](#tab/protocol-methods)
 
@@ -96,18 +107,6 @@ The preceding code demonstrates the following `System.ClientModel` protocol meth
 
 > [!NOTE]
 > The preceding code configures the `ClientErrorBehaviors.NoThrow` for the `RequestOptions`. This option prevents non-success service responses status codes from throwing an exception, which means the app code should manually handle the response status code checks.
-
-### [Convenience method](#tab/convenience-methods)
-
-Consider the following code that uses a `ChatClient` to call the `CompleteChat` convenience method:
-
-:::code source="snippets/protocol-convenience-methods/SCMConvenience/Program.cs" highlight="10,11":::
-
-The preceding code demonstrates the following `System.ClientModel` convenience method patterns:
-
-- Uses a standard C# primitive or model type as a parameter.
-- Returns a `ClientResult` type that represents the result of the operation.
-
 ---
 
 ## Protocol and convenience method usage guidance

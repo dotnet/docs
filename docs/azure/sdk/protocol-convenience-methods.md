@@ -107,6 +107,7 @@ The preceding code demonstrates the following `System.ClientModel` protocol meth
 
 > [!NOTE]
 > The preceding code configures the `ClientErrorBehaviors.NoThrow` for the `RequestOptions`. This option prevents non-success service responses status codes from throwing an exception, which means the app code should manually handle the response status code checks.
+
 ---
 
 ## Protocol and convenience method usage guidance

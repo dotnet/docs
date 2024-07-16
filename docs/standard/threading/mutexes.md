@@ -12,6 +12,8 @@ ms.assetid: 9dd06e25-12c0-4a9e-855a-452dc83803e2
 
 # Mutexes
 
+Test link: <xref:System.Threading.Mutex?view=net7.0>
+
 You can use a <xref:System.Threading.Mutex> object to provide exclusive access to a resource. The <xref:System.Threading.Mutex> class uses more system resources than the <xref:System.Threading.Monitor> class, but it can be marshalled across application domain boundaries, it can be used with multiple waits, and it can be used to synchronize threads in different processes. For a comparison of managed synchronization mechanisms, see [Overview of Synchronization Primitives](overview-of-synchronization-primitives.md).
 
 For code examples, see the reference documentation for the <xref:System.Threading.Mutex.%23ctor%2A> constructors.

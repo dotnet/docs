@@ -37,7 +37,7 @@ Get started with Semantic Kernel by creating a simple .NET 8 console chat applic
 <!-- markdownlint-disable MD029 MD044 -->
 :::zone target="docs" pivot="openai"
 
-1. From a terminal or command prompt, navigate to the `open-ai\02-HikerAI` directory.
+1. From a terminal or command prompt, navigate to the `openai\02-HikerAI` directory.
 
 [!INCLUDE [download-alert](includes/set-openai-secrets.md)]
 
@@ -56,7 +56,7 @@ Get started with Semantic Kernel by creating a simple .NET 8 console chat applic
     ```
 
 :::zone target="docs" pivot="azure-openai"
-If you get an error message, the Azure OpenAI resources may not have finished deploying. Wait a couple of minutes and try again.
+    If you get an error message, the Azure OpenAI resources may not have finished deploying. Wait a couple of minutes and try again.
 :::zone-end
 
 <!-- markdownlint-enable MD029 MD044  -->

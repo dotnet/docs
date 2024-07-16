@@ -1,46 +1,49 @@
 ---
-title: Quickstart - Get insight about your data from an .NET Azure AI chat app
-description: Create a simple chat app using your data and Semantic Kernel or the .NET Azure OpenAI SDK.
-ms.date: 03/04/2024
+title: Quickstart - Get insight about your data from a .NET AI chat app
+description: Create a simple chat app using your data, Semantic Kernel, and OpenAI.
+ms.date: 07/17/2024
 ms.topic: quickstart
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 author: fboucher
 ms.author: frbouche
 zone_pivot_groups: openai-library
-# CustomerIntent: As a .NET developer new to Azure OpenAI, I want deploy and use sample code and data to interact to learn from the sample code.
+# CustomerIntent: As a .NET developer new to AI development with OpenAI, I want deploy and use sample code and data to interact to learn from the sample code.
 ---
 
-# Get insight about your data from an .NET Azure AI chat app
+# Get insight about your data from a .NET AI chat app
 
 <!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="openai"
 <!-- markdownlint-enable MD044 -->
 
-Get started with Semantic Kernel and the `gpt-35-turbo` model, from a simple .NET 8.0 console application. Use the AI model to get analytics and information about your previous hikes. It consists of a simple console application, running locally, that will read the file `hikes.md` and send request to an Azure OpenAI service deployed in your Azure subscription and provide the result in the console. Follow these steps to provision Azure OpenAI and learn how to use Semantic Kernel.
+Get started with AI development, using the `gpt-3.5-turbo` model from a simple .NET 8.0 console application. Use the AI model to get analytics and information about your previous hikes. It consists of a simple console application, running locally, that will read the file `hikes.md` and send request to the OpenAI service and provide the result in the console. Follow these steps to get access to OpenAI and learn how to use Semantic Kernel.
+
+[!INCLUDE [download-alert](includes/prerequisites-openai.md)]
 :::zone-end
 
 <!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="azure-openai"
 <!-- markdownlint-enable MD044 -->
 
-Get started with the .NET Azure OpenAI with a `gpt-35-turbo` model, from a simple .NET 8.0 console application. Use the AI model to get analytics and information about your previous hikes. It consists of a simple console application, running locally, that will read the file `hikes.md` and send request to an Azure OpenAI service deployed in your Azure subscription and provide the result in the console. Follow these steps to provision Azure OpenAI and learn how to use the .NET Azure OpenAI SDK.
-
-:::zone-end
+Get started with AI development, using the `gpt-35-turbo` model from a simple .NET 8.0 console application. Use the AI model to get analytics and information about your previous hikes. It consists of a simple console application, running locally, that will read the file `hikes.md` and send request to an Azure OpenAI service deployed in your Azure subscription and provide the result in the console. Follow these steps to provision Azure OpenAI and learn how to use the .NET Azure OpenAI SDK.
 
 [!INCLUDE [download-alert](includes/prerequisites-azure-openai.md)]
+:::zone-end
 
 ## Try "Chatting About My Previous Hikes" sample
 
 <!-- markdownlint-disable MD029 MD044 -->
 :::zone target="docs" pivot="openai"
 
-1. From a terminal or command prompt, navigate to the `semantic-kernel\03-ChattingAboutMyHikes` directory.
+1. From a terminal or command prompt, navigate to the `openai\03-ChattingAboutMyHikes` directory.
+
+    [!INCLUDE [download-alert](includes/set-openai-secrets.md)]
 
 :::zone-end
 
 :::zone target="docs" pivot="azure-openai"
 
-1. From a terminal or command prompt, navigate to the `azure-openai-sdk\03-ChattingAboutMyHikes` directory.
+1. From a terminal or command prompt, navigate to the `azure-openai\03-ChattingAboutMyHikes` directory.
 
 :::zone-end
 
@@ -50,15 +53,37 @@ Get started with the .NET Azure OpenAI with a `gpt-35-turbo` model, from a simpl
     dotnet run
     ```
 
+:::zone target="docs" pivot="azure-openai"
     If you get an error message the Azure OpenAI resources may not have finished deploying. Wait a couple of minutes and try again.
+:::zone-end
 <!-- markdownlint-enable MD029 MD044  -->
+
+## Explore the code
 
 <!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="openai"
 <!-- markdownlint-enable MD044 -->
+Our application uses the `Microsoft.SemanticKernel` package, which is available on [NuGet](https://www.nuget.org/packages/Microsoft.SemanticKernel), to send and receive requests to the OpenAI service.
 
-## Explore the code
+The entire application is contained within the **Program.cs** file. The first several lines of code set configuration values and gets the OpenAI Key that was previously set using the `dotnet user-secrets` command.
 
+```csharp
+var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
+string model = "gpt-3.5-turbo";
+string key = config["OpenAIKey"];
+```
+
+The `OpenAIChatCompletionService` service facilitates the requests and responses.
+
+```csharp
+// Create the OpenAI Chat Completion Service
+OpenAIChatCompletionService service = new(model, key);
+```
+
+Once the `OpenAIChatCompletionService` client is created, we read the content of the file `hikes.md` and use it to provide more context to the model by adding a system prompt. This instructs the model how you'd like it to act during the conversation.
+:::zone-end
+
+:::zone target="docs" pivot="azure-openai"
 Our application uses the `Microsoft.SemanticKernel` package, which is available on [NuGet](https://www.nuget.org/packages/Microsoft.SemanticKernel), to send and receive requests to an Azure OpenAI service deployed in Azure.
 
 The entire application is contained within the **Program.cs** file. The first several lines of code loads up secrets and configuration values that were set in the `dotnet user-secrets` for you during the application provisioning.
@@ -79,6 +104,7 @@ AzureOpenAIChatCompletionService service = new(deployment, endpoint, key);
 ```
 
 Once the `AzureOpenAIChatCompletionService` client is created, we read the content of the file `hikes.md` and use it to provide more context to the model by adding a system prompt. This instructs the model how you'd like it to act during the conversation.
+:::zone-end
 
 ```csharp
 // Provide context for the AI model
@@ -117,96 +143,7 @@ Console.WriteLine($"{chatHistory.Last().Role} >>> {chatHistory.Last().Content}")
 
 Customize the system prompt and change the request, asking for different questions (ex: How many times did you hiked when it was raining? How many times did you hiked in 2021? etc.) to see how the model responds.
 
-:::zone-end
-
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="azure-openai"
-<!-- markdownlint-enable MD044 -->
-
-## Explore the code
-
-Our application uses the `Azure.AI.OpenAI` client SDK, which is available on [NuGet](https://www.nuget.org/packages/Azure.AI.OpenAI), to send and receive requests to an Azure OpenAI service deployed in Azure.
-
-The entire application is contained within the **Program.cs** file. The first several lines of code loads up secrets and configuration values that were set in the `dotnet user-secrets` for you during the application provisioning.
-
-```csharp
-// == Retrieve the local secrets saved during the Azure deployment ==========
-var config = new ConfigurationBuilder()
-    .AddUserSecrets<Program>()
-    .Build();
-
-string openAIEndpoint = config["AZURE_OPENAI_ENDPOINT"];
-string openAIDeploymentName = config["AZURE_OPENAI_GPT_NAME"];
-string openAiKey = config["AZURE_OPENAI_KEY"];
-
-// == Creating the AIClient ==========
-var endpoint = new Uri(openAIEndpoint);
-var credentials = new AzureKeyCredential(openAiKey);
-```
-
-The `OpenAIClient` class facilitates the requests and responses. `ChatCompletionOptions` specifies parameters of how the model will respond.
-
-```csharp
-var openAIClient = new OpenAIClient(endpoint, credentials);
-
-var completionOptions = new ChatCompletionsOptions
-{
-    MaxTokens = 400,
-    Temperature = 1f,
-    FrequencyPenalty = 0.0f,
-    PresencePenalty = 0.0f,
-    NucleusSamplingFactor = 0.95f, // Top P
-    DeploymentName = openAIDeploymentName
-};
-```
-
-Once the `OpenAIClient` client is created, we read the content of the file `hikes.md` and use it to provide more context to the model by adding a system prompt. This instructs the model how you'd like it to act during the conversation.
-
-```csharp
-var systemPrompt = 
-"""
-You are upbeat and friendly. You introduce yourself when first saying hello. 
-Provide a short answer only based on the user hiking records below:  
-
-""" + markdown;
-
-completionOptions.Messages.Add(new ChatRequestSystemMessage(systemPrompt));
-```
-
-Then you can add a user message to the model by using the `ChatRequestUserMessage` class.
-
-To have the model generate a response based off the system prompt and the user request, use the `GetChatCompletionsAsync` function.
-
-```csharp
-string userGreeting = """
-Hi! 
-""";
-
-completionOptions.Messages.Add(new ChatRequestUserMessage(userGreeting));
-Console.WriteLine($"\n\nUser >>> {userGreeting}");
-
-ChatCompletions response = await openAIClient.GetChatCompletionsAsync(completionOptions);
-ChatResponseMessage assistantResponse = response.Choices[0].Message;
-Console.WriteLine($"\n\nAI >>> {assistantResponse.Content}");
-completionOptions.Messages.Add(new ChatRequestAssisstantMessage(assistantResponse.Content)); 
-```
-
-To maintain the chat history or context, make sure you add the response from the model as a `ChatRequestAssistantMessage`. It's time to make our user request about our data again using the `ChatRequestUserMessage` and `GetChatCompletionsAsync` function.
-
-```csharp
-var hikeRequest = 
-"""
-I would like to know the ration of hike I did in Canada compare to hikes done in other countries.
-""";
-
-Console.WriteLine($"\n\nUser >>> {hikeRequest}");
-completionOptions.Messages.Add(new ChatRequestUserMessage(hikeRequest));
-response = await openAIClient.GetChatCompletionsAsync(completionOptions);
-```
-
-Customize the system prompt and change the request, asking for different questions (ex: How many times did you hiked when it was raining? How many times did you hiked in 2021? etc.) to see how the model responds.
-
-:::zone-end
 
 ## Clean up resources
 
@@ -216,7 +153,9 @@ When you no longer need the sample application or resources, remove the correspo
 azd down
 ```
 
+:::zone-end
+
 ## Next steps
 
-- [Quickstart - Generate images using Azure AI with .NET](quickstart-openai-generate-images.md)
+- [Quickstart - Generate images using AI with .NET](quickstart-openai-generate-images.md)
 - [Generate text and conversations with .NET and Azure OpenAI Completions](/training/modules/open-ai-dotnet-text-completions/)

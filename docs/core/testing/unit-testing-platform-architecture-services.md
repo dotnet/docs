@@ -12,7 +12,7 @@ The testing platform offers valuable services to both the testing framework and 
 
 The `IServiceProvider` is derived directly from the base class library.
 
-```cs
+```csharp
 namespace System
 {
     public interface IServiceProvider
@@ -24,7 +24,7 @@ namespace System
 
 The testing platform offers handy extension methods to access well-known service objects. All these methods are housed in a static class within the `Microsoft.Testing.Platform.Services` namespace.
 
-```cs
+```csharp
 public static class ServiceProviderExtensions
 {
     public static TService GetRequiredService<TService>(this IServiceProvider provider)
@@ -42,7 +42,7 @@ Most of the registration factories exposed by extension points, which can be reg
 
 For example, we encountered it earlier when discussing [registering the testing framework](./unit-testing-platform-architecture-extensions.md#registering-a-testing-framework).
 
-```cs
+```csharp
 ITestApplicationBuilder RegisterTestFramework(
     Func<IServiceProvider, ITestFrameworkCapabilities> capabilitiesFactory,
     Func<ITestFrameworkCapabilities, IServiceProvider, ITestFramework> adapterFactory);
@@ -61,7 +61,7 @@ The `IConfiguration` interface can be retrieved using the [`IServiceProvider`](#
 
 The interface is a straightforward key-value pair of strings:
 
-```cs
+```csharp
 public interface IConfiguration
 {
     string? this[string key] { get; }
@@ -82,7 +82,7 @@ The JSON file follows a hierarchical structure. To access child properties, you 
 
 The code snippet would look something like this:
 
-```cs
+```csharp
 IServiceProvider serviceProvider = ...get the service provider...
 IConfiguration configuration = serviceProvider.GetConfiguration();
 if (configuration["CustomTestingFramework:DisableParallelism"] == bool.TrueString)
@@ -106,7 +106,7 @@ In the case of an array, such as:
 
 The syntax to access to the fist element ("ThreadPool") is:
 
-```cs
+```csharp
 IServiceProvider serviceProvider = ...get the service provider...
 IConfiguration configuration = serviceProvider.GetConfiguration();
 var fistElement = configuration["CustomTestingFramework:Engine:0"];
@@ -127,7 +127,7 @@ setx CustomTestingFramework__DisableParallelism=True
 
 You can choose not to use the environment variable configuration source when creating the `ITestApplicationBuilder`:
 
-```cs
+```csharp
 var testApplicationOptions = new TestApplicationOptions();
 testApplicationOptions.Configuration.ConfigurationSources.RegisterEnvironmentVariablesConfigurationSource = false;
 ITestApplicationBuilder testApplicationBuilder = await TestApplication.CreateBuilderAsync(args, testApplicationOptions);
@@ -137,7 +137,7 @@ ITestApplicationBuilder testApplicationBuilder = await TestApplication.CreateBui
 
 The `ICommandLineOptions` service is utilized to fetch details regarding the command-line options that the platform has parsed. The APIs available include:
 
-```cs
+```csharp
 public interface ICommandLineOptions
 {
     bool IsOptionSet(string optionName);
@@ -167,7 +167,7 @@ The options you can choose from include:
 From a coding standpoint, to log information, you need to obtain the `ILoggerFactory` from the [`IServiceProvider`](#microsofttestingplatform-services).
 The `ILoggerFactory` API is as follows:
 
-```cs
+```csharp
 public interface ILoggerFactory
 {
     ILogger CreateLogger(string categoryName);
@@ -181,7 +181,7 @@ public static class LoggerFactoryExtensions
 
 The logger factory allows you to create an `ILogger` object using the `CreateLogger` API. There's also a convenient API that accepts a generic argument, which will be used as the category name.
 
-```cs
+```csharp
 public interface ILogger
 {
     Task LogAsync<TState>(LogLevel logLevel, TState state, Exception? exception, Func<TState, Exception?, string> formatter);
@@ -216,7 +216,7 @@ public static class LoggingExtensions
 
 The `ILogger` object, which is created by the `ILoggerFactory`, offers APIs for logging information at various levels. These logging levels include:
 
-```cs
+```csharp
 public enum LogLevel
 {
     Trace,
@@ -231,7 +231,7 @@ public enum LogLevel
 
 Here's an example of how you might use the logging API:
 
-```cs
+```csharp
 ...
 IServiceProvider serviceProvider = ...get the service provider...
 ILoggerFactory loggerFactory = serviceProvider.GetLoggerFactory();
@@ -260,7 +260,7 @@ As illustrated in the diagram, which includes an extensions and a test framework
 
 The `IMessageBus` satisfied the *pushing action* to the bus and the api is:
 
-```cs
+```csharp
 public interface IMessageBus
 {
     Task PublishAsync(IDataProducer dataProducer, IData data);
@@ -302,7 +302,7 @@ The most traditional example of an *output device* is the console output.
 To transmit data to the *output device*, you must obtain the `IOutputDevice` from the [`IServiceProvider`](#microsofttestingplatform-services).
 The API consists of:
 
-```cs
+```csharp
 public interface IOutputDevice
 {
     Task DisplayAsync(IOutputDeviceDataProducer producer, IOutputDeviceData data);
@@ -322,7 +322,7 @@ The `IOutputDeviceData` serves as a placeholder interface. The concept behind `I
 
 The testing platform, by default, offers a traditional colored text model for the `IOutputDeviceData` object:
 
-```cs
+```csharp
 public class TextOutputDeviceData : IOutputDeviceData
 {
     public TextOutputDeviceData(string text)
@@ -344,7 +344,7 @@ public sealed class SystemConsoleColor : IColor
 
 Here's an example of how you might use the colored text with the *active* output device:
 
-```cs
+```csharp
 IServiceProvider serviceProvider = ...get the service provider...
 IOutputDevice outputDevice = serviceProvider.GetOutputDevice();
 await outputDevice.DisplayAsync(this, new FormattedTextOutputDeviceData($"TestingFramework version '{Version}' running tests with parallelism of {_dopValue}") { ForegroundColor = new SystemConsoleColor() { ConsoleColor = ConsoleColor.Green } });

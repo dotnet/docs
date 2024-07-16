@@ -45,7 +45,7 @@ To introduce the architecture of the testing platform, we will use the classic c
 
 In a console project `Contoso.UnitTests.exe` the following `Main` method defines the entry point:
 
-```cs
+```csharp
 public static async Task<int> Main(string[] args)
 {
     ITestApplicationBuilder testApplicationBuilder = await TestApplication.CreateBuilderAsync(args);
@@ -89,7 +89,7 @@ The testing platform accommodates this by having **out-of-process** extensions. 
 
 The following example demonstrates how to register a code coverage feature using a **TestHostController** extension.
 
-```cs
+```csharp
 ITestApplicationBuilder testApplicationBuilder = await TestApplication.CreateBuilderAsync(args);
 testApplicationBuilder.RegisterTestFramework(/* test framework registration factories */);
 testApplicationBuilder.AddCodeCoverage();
@@ -99,7 +99,7 @@ return await testApplication.RunAsync();
 
 The `testApplicationBuilder.AddCodeCoverage();` internally uses the **TestHostController** extensibility point, which is an out-of-process extensibility point.
 
-```cs
+```csharp
 public static class TestApplicationBuilderExtensions
 {
     public static ITestApplicationBuilder AddCodeCoverage(this ITestApplicationBuilder testApplicationBuilder)
@@ -131,7 +131,7 @@ The above section provides a brief introduction to the architecture of the testi
 
 1. **In process** extensions can be accessed through the `TestHost` property of the test application builder. In process means that they will run in the same process as the test framework.
 
-    ```cs
+    ```csharp
     ITestApplicationBuilder testApplicationBuilder = await TestApplication.CreateBuilderAsync(args);
     testApplicationBuilder.RegisterTestFramework(/* test framework registration factories */);
     testApplicationBuilder.TestHost.AddXXX(...);
@@ -141,7 +141,7 @@ The above section provides a brief introduction to the architecture of the testi
 
 1. **Out of process** extensions can be accessed through the `TestHostControllers` property of the test application builder. These extensions run in a separate process from the test framework to "observe" it.
 
-    ```cs
+    ```csharp
     ITestApplicationBuilder testApplicationBuilder = await TestApplication.CreateBuilderAsync(args);
     testApplicationBuilder.TestHostControllers.AddXXX(...);
     ```

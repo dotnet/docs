@@ -145,7 +145,7 @@ return await testApplication.RunAsync();
 
 The `Microsoft.Testing.Platform.Extensions.TestFramework.ITestFramework` is implemented by extensions that provide a test framework:
 
-```cs
+```csharp
 public interface ITestFramework : IExtension
 {
     Task<CreateTestSessionResult> CreateTestSessionAsync(CreateTestSessionContext context);
@@ -160,7 +160,7 @@ The `ITestFramework` interface inherits from the [IExtension](#the-iextension-in
 
 The `CreateTestSessionAsync` method is called at the start of the test session and is used to initialize the test framework. The API accepts a `CloseTestSessionContext` object and returns a `CloseTestSessionResult`.
 
-```cs
+```csharp
 public sealed class CreateTestSessionContext : TestSessionContext
 {
     public SessionUid SessionUid { get; }
@@ -186,7 +186,7 @@ The `CancellationToken` is used to halt the execution of `CreateTestSessionAsync
 
 The return object is a `CloseTestSessionResult`:
 
-```cs
+```csharp
 public sealed class CreateTestSessionResult
 {
     public string? WarningMessage { get; set; }
@@ -206,7 +206,7 @@ The `CloseTestSessionAsync` method is juxtaposed to the `CreateTestSessionAsync`
 The `ExecuteRequestAsync` method accepts an object of type `ExecuteRequestContext`. This object, as suggested by its name, holds the specifics about the action that the test framework is expected to perform.
 The `ExecuteRequestContext` definition is:
 
-```cs
+```csharp
 public sealed class ExecuteRequestContext
 {
     public IRequest Request { get; }
@@ -271,7 +271,7 @@ Before proceeding to the next section, it's crucial to thoroughly comprehend the
 
 The `TestSessionContext` is a shared property across all requests, providing information about the ongoing test session:
 
-```cs
+```csharp
 public class TestSessionContext
 {
     public SessionUid SessionUid { get; }
@@ -294,7 +294,7 @@ The `TestSessionContext` consists of the `SessionUid`, a unique identifier for t
 
 #### DiscoverTestExecutionRequest
 
-```cs
+```csharp
 public class DiscoverTestExecutionRequest
 {
     // Detailed in the custom section below
@@ -309,7 +309,7 @@ The `DiscoverTestExecutionRequest` instructs the test framework **to discover** 
 
 As outlined in the previous section, the property for a discovered test is `DiscoveredTestNodeStateProperty`. Here is a generic code snippet for reference:
 
-```cs
+```csharp
 ...
 var testNode = new TestNode()
 {
@@ -324,7 +324,7 @@ await context.MessageBus.PublishAsync(this, new TestNodeUpdateMessage(discoverTe
 
 #### RunTestExecutionRequest
 
-```cs
+```csharp
 public class RunTestExecutionRequest
 {
     // Detailed in the custom section below
@@ -339,7 +339,7 @@ The `RunTestExecutionRequest` instructs the test framework **to execute** the te
 
 Here is a generic code snippet for reference:
 
-```cs
+```csharp
 ...
 var skippedTestNode = new TestNode()
 {
@@ -383,7 +383,7 @@ await context.MessageBus.PublishAsync(this, new TestNodeUpdateMessage(runTestExe
 As mentioned in the [IMessageBus](./unit-testing-platform-architecture-services.md#the-imessagebus-service) section, before utilizing the message bus, you must specify the type of data you intend to supply. The testing platform has defined a well-known type, `TestNodeUpdateMessage`, to represent the concept of a *test update information*.
 This part of the document will explain how to utilize this payload data. Let's examine the surface:
 
-```cs
+```csharp
 public sealed class TestNodeUpdateMessage(SessionUid sessionUid, TestNode testNode, TestNodeUid? parentTestNodeUid = null)
 {
     public TestNode TestNode { get; }
@@ -439,7 +439,7 @@ The `PropertyBag` type is typically accessible in every `IData` and is utilized 
 
 Finally this section makes clear that you test framework implementation needs to implement the `IDataProducer` that produces `TestNodeUpdateMessage`s like in the sample below:
 
-```cs
+```csharp
 internal sealed class TestingFramework : ITestFramework, IDataProducer
 {
    ...
@@ -450,7 +450,7 @@ internal sealed class TestingFramework : ITestFramework, IDataProducer
 
 If your test adapter requires the publication of *files* during execution, you can find the recognized properties in this source file: <https://github.com/microsoft/testfx/blob/main/src/Platform/Microsoft.Testing.Platform/Messages/FileArtifacts.cs>. As you can see, you can provide file assets in a general manner or associate them with a specific `TestNode`. Remember, if you intend to push a `SessionFileArtifact`, you must declare it to the platform in advance, as shown below:
 
-```cs
+```csharp
 internal sealed class TestingFramework : ITestFramework, IDataProducer
 {
    ...
@@ -482,13 +482,13 @@ Optional properties, on the other hand, enhance the testing experience by provid
 
 ##### Generic information
 
-```cs
+```csharp
 public record KeyValuePairStringProperty(string Key, string Value) : IProperty;
 ```
 
 The `KeyValuePairStringProperty` stands for a general key/value pair data.
 
-```cs
+```csharp
 public record struct LinePosition(int Line, int Column);
 public record struct LinePositionSpan(LinePosition Start, LinePosition End);
 public abstract record FileLocationProperty(string FilePath, LinePositionSpan LineSpan) : IProperty;
@@ -497,7 +497,7 @@ public sealed record TestFileLocationProperty(string FilePath, LinePositionSpan 
 
 `TestFileLocationProperty` is used to pinpoint the location of the test within the source file. This is particularly useful when the initiator is an IDE like Visual Studio or Visual Studio Code.
 
-```cs
+```csharp
 public sealed record TestMethodIdentifierProperty(string AssemblyFullName, string Namespace, string TypeName, string MethodName, string[] ParameterTypeFullNames, string ReturnTypeFullName)
 ```
 
@@ -506,7 +506,7 @@ public sealed record TestMethodIdentifierProperty(string AssemblyFullName, strin
 > [!NOTE]
 > The data needed to create this property can be conveniently obtained using the .NET reflection feature, using types from the `System.Reflection` namespace.
 
-```cs
+```csharp
 public sealed record TestMetadataProperty(string Key, string Value)
 ```
 
@@ -514,7 +514,7 @@ public sealed record TestMetadataProperty(string Key, string Value)
 
 ##### Discovery information
 
-```cs
+```csharp
 public sealed record DiscoveredTestNodeStateProperty(string? Explanation = null)
 {
     public static DiscoveredTestNodeStateProperty CachedInstance { get; }
@@ -527,7 +527,7 @@ This property is **required**.
 
 ##### Execution information
 
-```cs
+```csharp
 public sealed record InProgressTestNodeStateProperty(string? Explanation = null)
 {
     public static InProgressTestNodeStateProperty CachedInstance { get; }
@@ -537,7 +537,7 @@ public sealed record InProgressTestNodeStateProperty(string? Explanation = null)
 The `InProgressTestNodeStateProperty` informs the testing platform that the `TestNode` has been scheduled for execution and is currently in progress.
 Take note of the handy cached value offered by the `CachedInstance` property.
 
-```cs
+```csharp
 public readonly record struct TimingInfo(DateTimeOffset StartTime, DateTimeOffset EndTime, TimeSpan Duration);
 public sealed record StepTimingInfo(string Id, string Description, TimingInfo Timing);
 
@@ -554,7 +554,7 @@ The `TimingProperty` is utilized to relay timing details about the `TestNode` ex
 
 ***One and only one*** of the following properties is **required** per `TestNode` and communicates the result of the `TestNode` to the testing platform.
 
-```cs
+```csharp
 public sealed record PassedTestNodeStateProperty(string? Explanation = null)
 {
     public static PassedTestNodeStateProperty CachedInstance { get; }
@@ -564,7 +564,7 @@ public sealed record PassedTestNodeStateProperty(string? Explanation = null)
 `PassedTestNodeStateProperty` informs the testing platform that this `TestNode` is passed.
 Take note of the handy cached value offered by the `CachedInstance` property.
 
-```cs
+```csharp
 public sealed record SkippedTestNodeStateProperty(string? Explanation = null)
 {
     public static SkippedTestNodeStateProperty CachedInstance { get; }
@@ -574,7 +574,7 @@ public sealed record SkippedTestNodeStateProperty(string? Explanation = null)
 `SkippedTestNodeStateProperty` informs the testing platform that this `TestNode` was skipped.
 Take note of the handy cached value offered by the `CachedInstance` property.
 
-```cs
+```csharp
 public sealed record FailedTestNodeStateProperty
 {
     public FailedTestNodeStateProperty(string explanation)
@@ -585,7 +585,7 @@ public sealed record FailedTestNodeStateProperty
 
 `FailedTestNodeStateProperty` informs the testing platform that this `TestNode` is failed after an assertion.
 
-```cs
+```csharp
 public sealed record ErrorTestNodeStateProperty
 {
     public ErrorTestNodeStateProperty(string explanation)
@@ -596,7 +596,7 @@ public sealed record ErrorTestNodeStateProperty
 
 `ErrorTestNodeStateProperty` informs the testing platform that this `TestNode` has failed. This type of failure is different from the `FailedTestNodeStateProperty`, which is used for assertion failures. For example, you can report issues like test initialization errors with `ErrorTestNodeStateProperty`.
 
-```cs
+```csharp
 public sealed record TimeoutTestNodeStateProperty
 {
     public TimeoutTestNodeStateProperty(string explanation)
@@ -608,7 +608,7 @@ public sealed record TimeoutTestNodeStateProperty
 
 `TimeoutTestNodeStateProperty` informs the testing platform that this `TestNode` is failed for a timeout reason. You can report the timeout using the `Timeout` property.
 
-```cs
+```csharp
 public sealed record CancelledTestNodeStateProperty
 {
     public CancelledTestNodeStateProperty(string explanation)
@@ -628,7 +628,7 @@ public sealed record CancelledTestNodeStateProperty
 
 As discussed in the [architecture](./unit-testing-platform-architecture.md) section, the initial step involves creating the `ITestApplicationBuilder` to register the testing framework and extensions with it.
 
-```cs
+```csharp
 ...
 var testApplicationBuilder = await TestApplication.CreateBuilderAsync(args);
 ...
@@ -642,7 +642,7 @@ Arguments **must be prefixed** with a double dash `--`. For example, `--filter`.
 
 If a component such as a testing framework or an extension point wishes to offer custom command-line options, it can do so by implementing the `ICommandLineOptionsProvider` interface. This implementation can then be registered with the `ITestApplicationBuilder` via the registration factory of the `CommandLine` property, as shown:
 
-```cs
+```csharp
 ...
 testApplicationBuilder.CommandLine.AddProvider(() => new CustomCommandLineOptions());
 ...
@@ -650,7 +650,7 @@ testApplicationBuilder.CommandLine.AddProvider(() => new CustomCommandLineOption
 
 In the example provided, `CustomCommandLineOptions` is an implementation of the `ICommandLineOptionsProvider` interface, This interface comprises the following members and data types:
 
-```cs
+```csharp
 public interface ICommandLineOptionsProvider : IExtension
 {
     IReadOnlyCollection<CommandLineOption> GetCommandLineOptions();
@@ -713,7 +713,7 @@ For examples, refer to the [System.CommandLine arity table](https://learn.micros
 For instance, if we have a parameter named `--dop` that represents the degree of parallelism for our custom testing framework, a user might input `--dop 0`. In this scenario, the value 0 would be invalid because we anticipate a degree of parallelism of 1 or more. By using `ValidateOptionArgumentsAsync`, we can perform upfront validation and return an error message if necessary.
 A possible implementation for the sample above could be:
 
-```cs
+```csharp
     public Task<ValidationResult> ValidateOptionArgumentsAsync(CommandLineOption commandOption, string[] arguments)
     {
         if (commandOption.Name == "dop")
@@ -733,7 +733,7 @@ A possible implementation for the sample above could be:
 For example, let's say our testing framework has the capability to generate a test result report and save it to a file. This feature is accessed using the `--generatereport` option, and the filename is specified with `--reportfilename myfile.rep`. In this scenario, if a user only provides the `--generatereport` option without specifying a filename, the validation should fail because the report cannot be generated without a filename.
 A possible implementation for the sample above could be:
 
-```cs
+```csharp
     public Task<ValidationResult> ValidateCommandLineOptionsAsync(ICommandLineOptions commandLineOptions)
     {
         bool generateReportEnabled = commandLineOptions.IsOptionSet(GenerateReportOption);
@@ -753,7 +753,7 @@ The `ITestSessionLifeTimeHandler` is an *in-process* extension that enables the 
 
 To register a custom `ITestSessionLifeTimeHandler`, utilize the following API:
 
-```cs
+```csharp
 ITestApplicationBuilder testApplicationBuilder = await TestApplication.CreateBuilderAsync(args);
 ...
 testApplicationBuilder.TestHost.AddTestSessionLifetimeHandle(serviceProvider => new CustomTestSessionLifeTimeHandler());
@@ -767,7 +767,7 @@ The factory utilizes the [IServiceProvider](./unit-testing-platform-architecture
 
 The `ITestSessionLifeTimeHandler` interface includes the following methods:
 
-```cs
+```csharp
 public interface ITestSessionLifetimeHandler : ITestHostExtension
 {
     Task OnTestSessionStartingAsync(SessionUid sessionUid, CancellationToken cancellationToken);
@@ -802,7 +802,7 @@ The `ITestApplicationLifecycleCallbacks` is an *in-process* extension that enabl
 
 To register a custom `ITestApplicationLifecycleCallbacks`, utilize the following api:
 
-```cs
+```csharp
 ITestApplicationBuilder testApplicationBuilder = await TestApplication.CreateBuilderAsync(args);
 ...
 testApplicationBuilder.TestHost.AddTestApplicationLifecycleCallbacks(serviceProvider
@@ -817,7 +817,7 @@ The factory utilizes the [IServiceProvider](./unit-testing-platform-architecture
 
 The `ITestApplicationLifecycleCallbacks` interface includes the following methods:
 
-```cs
+```csharp
 public interface ITestApplicationLifecycleCallbacks : ITestHostExtension
 {
     Task BeforeRunAsync(CancellationToken cancellationToken);
@@ -847,7 +847,7 @@ The `IDataConsumer` is an *in-process* extension capable of subscribing to and r
 
 To register a custom `IDataConsumer`, utilize the following api:
 
-```cs
+```csharp
 ITestApplicationBuilder testApplicationBuilder = await TestApplication.CreateBuilderAsync(args);
 ...
 testApplicationBuilder.TestHost.AddDataConsumer(serviceProvider
@@ -862,7 +862,7 @@ The factory utilizes the [IServiceProvider](./unit-testing-platform-architecture
 
 The `IDataConsumer` interface includes the following methods:
 
-```cs
+```csharp
 public interface IDataConsumer : ITestHostExtension
 {
     Type[] DataTypesConsumed { get; }
@@ -884,7 +884,7 @@ The `IDataConsumer` is a type of `ITestHostExtension`, which serves as a base fo
 
 A sample implementation of a consumer that wants to elaborate the [`TestNodeUpdateMessage`](#the-testnodeupdatemessage-data) produced by a [testing framework](#test-framework-extension) could be:
 
-```cs
+```csharp
 internal class CustomDataConsumer : IDataConsumer, IOutputDeviceDataProducer
 {
     public Type[] DataTypesConsumed => new[] { typeof(TestNodeUpdateMessage) };
@@ -944,7 +944,7 @@ The `ITestHostEnvironmentVariableProvider` is an *out-of-process* extension that
 
 To register a custom `ITestHostEnvironmentVariableProvider`, utilize the following API:
 
-```cs
+```csharp
 ITestApplicationBuilder testApplicationBuilder = await TestApplication.CreateBuilderAsync(args);
 ...
 testApplicationBuilder.TestHostControllers.AddEnvironmentVariableProvider(serviceProvider =>
@@ -959,7 +959,7 @@ The factory utilizes the [IServiceProvider](./unit-testing-platform-architecture
 
 The `ITestHostEnvironmentVariableProvider` interface includes the following methods and types:
 
-```cs
+```csharp
 public interface ITestHostEnvironmentVariableProvider : ITestHostControllersExtension, IExtension
 {
     Task UpdateAsync(IEnvironmentVariables environmentVariables);
@@ -1016,7 +1016,7 @@ The `ITestHostProcessLifetimeHandler` is an *out-of-process* extension that allo
 
 To register a custom `ITestHostProcessLifetimeHandler`, utilize the following API:
 
-```cs
+```csharp
 ITestApplicationBuilder testApplicationBuilder = await TestApplication.CreateBuilderAsync(args);
 ...
 testApplicationBuilder.TestHostControllers.AddProcessLifetimeHandler(serviceProvider =>
@@ -1031,7 +1031,7 @@ The factory utilizes the [IServiceProvider](./unit-testing-platform-architecture
 
 The `ITestHostProcessLifetimeHandler` interface includes the following methods:
 
-```cs
+```csharp
 public interface ITestHostProcessLifetimeHandler : ITestHostControllersExtension
 {
     Task BeforeTestHostProcessStartAsync(CancellationToken cancellationToken);
@@ -1095,7 +1095,7 @@ The creation of the testing framework and extensions through factories adheres t
 
 Therefore, the testing platform provides a method to initialize an extension using the async/await pattern through a simple interface. For symmetry, it also offers an async interface for cleanup that extensions can implement seamlessly.
 
-```cs
+```csharp
 public interface IAsyncInitializableExtension
 {
     Task InitializeAsync();
@@ -1130,7 +1130,7 @@ For instance, consider a type that implements both `ITestSessionLifetimeHandler`
 
 What you should do is to normally implement the interfaces:
 
-```cs
+```csharp
 internal class CustomExtension : ITestSessionLifetimeHandler, IDataConsumer, ...
 {
    ...
@@ -1139,7 +1139,7 @@ internal class CustomExtension : ITestSessionLifetimeHandler, IDataConsumer, ...
 
 Once you've created the `CompositeExtensionFactory<CustomExtension>` for your type, you can register it with both the `IDataConsumer` and `ITestSessionLifetimeHandler` APIs, which offer an overload for the `CompositeExtensionFactory<T>`:
 
-```cs
+```csharp
 ITestApplicationBuilder testApplicationBuilder = await TestApplication.CreateBuilderAsync(args);
 ...
 CompositeExtensionFactory<CustomExtension> compositeExtensionFactory = new(serviceProvider => new CustomExtension());

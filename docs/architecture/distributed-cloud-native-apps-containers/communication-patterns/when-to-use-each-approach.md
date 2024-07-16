@@ -49,7 +49,7 @@ There are many ways to implement synchronous communication, two common approache
 
 ## Asynchronous Communication
 
-Asynchronous communication decouples services by allowing the sender to proceed without waiting for a response. Messages are typically queued and processed later.
+Asynchronous communication decouples services by allowing the sender to proceed without waiting for a response. Messages are typically queued and processed later. Some messaging systems enable single messages to be distributed to multiple receivers.
 
 The general approach for asynchronous communication is as follows:
 
@@ -68,10 +68,12 @@ Example use cases include:
    - **Use Case**: Generating reports or performing data analysis.
    - **How**: The client service sends a message to a queue, and a worker service processes the message creating the report and delivering it asynchronously.
 
-There are many ways to implement asynchronous communication, two approaches are:
+There are many ways to implement asynchronous communication. Some popular technologies are:
 
 - **RabbitMQ**: A popular message broker that supports various messaging patterns.
 - **Apache Kafka**: A scalable messaging system that can be used for asynchronous messaging.
+- **Azure Service Bus**: A versatile message queue and distribution system hosted in the cloud.
+- **Azure Storage Queues**: A simple message queue manager hosted in the cloud.
 
 **Pros**:
 
@@ -106,6 +108,7 @@ There are many ways to implement asynchronous communication, two approaches are:
 
 - **gRPC**: Supports streaming communication via server-side, client-side, and bidirectional streaming.
 - **WebSockets**: Provides full-duplex communication channels over a single TCP connection.
+- **Apache Kafka**: Kafka includes a streaming API in addition to asynchronous communications.
 
 **Pros**:
 
@@ -123,9 +126,9 @@ When deciding between synchronous, asynchronous, and streaming communication pat
 
 1. **Latency Requirements**
 
-   - **Low Latency**: Use synchronous communication for immediate feedback (e.g., HTTP, gRPC unary calls).
-   - **Moderate to High Latency**: Use asynchronous communication to decouple processing times (e.g., RabbitMQ, Kafka).
-   - **Continuous, Real-Time**: Use streaming for real-time data flows (e.g., Kafka, gRPC streaming, WebSockets).
+   - **Low Latency**: Use synchronous communication for immediate feedback (e.g. HTTP, gRPC unary calls).
+   - **Moderate to High Latency**: Use asynchronous communication to decouple processing times (e.g. RabbitMQ, Kafka, Azure Service Bus).
+   - **Continuous, Real-Time**: Use streaming for real-time data flows (e.g. Kafka, gRPC streaming, WebSockets).
 
 1. **Coupling and Scalability**
 
@@ -139,7 +142,17 @@ When deciding between synchronous, asynchronous, and streaming communication pat
    - **Decoupling**: Asynchronous communication requires message brokers and additional handling for eventual consistency.
    - **Real-Time Needs**: Streaming requires managing continuous data flows and maintaining high performance.
 
-Understanding the strengths and limitations of each communication pattern is crucial for designing robust, scalable, and efficient microservice architectures. Synchronous communication is simple and provides immediate responses but tightly couples services. Asynchronous communication decouples services, enhancing scalability and fault tolerance but introduces complexity. Streaming communication supports real-time data processing, ideal for continuous data flows, but requires significant resources and management. By carefully evaluating the requirements and constraints of your system, you can choose the appropriate communication pattern to meet your architectural goals.
+Understanding the strengths and limitations of each communication pattern is crucial for designing robust, scalable, and efficient microservice architectures. By carefully evaluating the requirements and constraints of your system, you can choose the appropriate communication pattern to meet your architectural goals.
+
+## Messaging in .NET Aspire
+
+If you choose to use the .NET Aspire stack to build your cloud-native app, synchronous communications must still be implemented with HTTP, HTTPS, or gRPC calls. 
+
+For asynchronous communications, .NET Aspire has components that help you work with queues in Azure Storage, RabbitMQ, Azure Service Bus, Apache Kafka, and NATS. You create these backing services in the App Host project, and pass them to each microservice that uses them. In the microservices, you can use dependency injection to obtain objects that store and retrieve messages from queues in your preferred service.
+
+For streaming communications, use the .NET Aspire Apache Kafka component.
+
+Using .NET Aspire components also helps to improve resiliency. Some components can automatically retry requests that have failed, and you can configure timeouts for these retries.
 
 In the next chapter we'll explore in more detail service to service communication patterns.
 

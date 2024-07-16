@@ -6,7 +6,8 @@ ms.custom: "updateeachrelease"
 ---
 # Welcome to .NET
 
-Test link to bad URL: [AllowAnonymous](/dotnet/api/microsoft.aspnetcore.allowanonymous)
+Test link to bad /dotnet URL: [AllowAnonymous](/dotnet/api/microsoft.aspnetcore.allowanonymous)
+Test link to bad xref: [AllowAnonymous](xref:Microsoft.AspNetCore.AllowAnonymous)
 
 See [Get started with .NET](core/get-started.md) to learn how to create .NET apps.
 

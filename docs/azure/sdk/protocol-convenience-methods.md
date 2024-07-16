@@ -62,7 +62,7 @@ The preceding code demonstrates the following protocol method patterns:
 - Reads the `ContentStream` to access the response data.
 
 > [!NOTE]
-> The preceding code configures the `ClientErrorBehaviors.NoThrow` for the `RequestOptions`. This option prevents non-success service responses status codes from throwing an exception, which means the app code should manually handle the response status code checks.
+> The preceding code configures the `ClientErrorBehaviors.NoThrow` for the `RequestOptions`. This option prevents protocol methods from throwing an exception when the response status code does not correspond to a successful service response, which means the app code should manually handle the response status code checks.
 
 ### [Convenience method](#tab/convenience-methods)
 

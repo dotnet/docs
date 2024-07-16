@@ -8,7 +8,7 @@ ms.date: 06/24/2024
 
 # Azure SDK for .NET protocol and convenience methods overview
 
-The Azure SDK client libraries provide an interface to Azure service REST APIs by translating method calls into messages sent via the respective service protocol. For REST API services, this means sending HTTP requests and converting the responses into runtime types. In this article, you'll learn about the different types of methods exposed by the client libraries and explore their implementation patterns.
+The Azure SDK client libraries provide an interface to Azure services by translating method calls into messages sent via the respective service protocol. For REST API services, this means sending HTTP requests and converting the responses into runtime types. In this article, you'll learn about the different types of methods exposed by the client libraries and explore their implementation patterns.
 
 ## Understand protocol and convenience methods
 
@@ -27,7 +27,7 @@ Protocol and convenience methods implement slightly different patterns based on 
 - [**System.ClientModel**](/dotnet/api/overview/azure/system.clientmodel-readme) is a core library that provides shared primitives, abstractions, and helpers for .NET service client libraries. The `System.ClientModel` library is a general purpose toolset designed to help build libraries for a variety of platforms and services, whereas the `Azure.Core` library is specifically designed for building Azure client libraries.
 
 > [!NOTE]
-> The `Azure.Core` library itself also depends on `System.ClientModel` for various service building blocks. In the context of this article, the key differentiator for method patterns is whether a client library depends on `Azure.Core` or `System.ClientModel` directly, rather than through a transitive dependency.
+> The `Azure.Core` library itself also depends on `System.ClientModel` for various client building blocks. In the context of this article, the key differentiator for method patterns is whether a client library depends on `Azure.Core` or `System.ClientModel` directly, rather than through a transitive dependency.
 
 The following table compares some of the request and response types used by protocol and convenience methods, based on whether the library depends on `Azure.Core` or `System.ClientModel`:
 

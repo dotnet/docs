@@ -15,7 +15,7 @@ So far in this book, we've focused on [REST-based](/azure/architecture/best-prac
 
 gRPC is a modern, high-performance framework that evolves the age-old [remote procedure call (RPC)](https://en.wikipedia.org/wiki/Remote_procedure_call) protocol. At the application level, gRPC streamlines messaging between clients and back-end services. Originating from Google, gRPC is open source and part of the  [Cloud Native Computing Foundation (CNCF)](https://www.cncf.io/) ecosystem of cloud-native offerings. CNCF considers gRPC an [incubating project](https://github.com/cncf/toc/blob/main/process/graduation_criteria.md). Incubating means end users are using the technology in production applications, and the project has a healthy number of contributors.
 
-A typical gRPC client app will expose a local, in-process function that implements a business operation. Under the covers, that local function invokes another function on a remote machine. What appears to be a local call essentially becomes a transparent out-of-process call to a remote service. The RPC plumbing abstracts the point-to-point networking communication, serialization, and execution between computers.
+A typical gRPC client app will expose a local, in-process function that implements a business operation. Under the covers, that local function invokes another function on a remote machine. What appears to be a local call essentially becomes a transparent out-of-process call to a remote service. The gRPC plumbing abstracts the point-to-point networking communication, serialization, and execution between computers.
 
 In cloud-native applications, developers often work across programming languages, frameworks, and technologies. This *interoperability* complicates message contracts and the plumbing required for cross-platform communication.  gRPC provides a "uniform horizontal layer" that abstracts these concerns. Developers code in their native platform focused on business functionality, while gRPC handles communication plumbing.
 
@@ -89,9 +89,9 @@ The microservice reference architecture, [eShop Reference Application](https://g
 
 ![Backend architecture for eShop application diagram](./media/eshop-architecture.png)
 
-The Eshop App Workshop adds gRPC as a worked example in the [Add shopping basket capabilities to the web site lab](https://github.com/dotnet-presentations/eshop-app-workshop/tree/main/labs/4-Add-Shopping-Basket)
-
 **Figure 6-20**. Backend architecture for eShop application
+
+The eShop App Workshop adds gRPC as a worked example in the [Add shopping basket capabilities to the web site lab](https://github.com/dotnet-presentations/eshop-app-workshop/tree/main/labs/4-Add-Shopping-Basket)
 
 In the previous figure, note how eShop embraces the [Backend for Frontends pattern](https://learn.microsoft.com/azure/architecture/patterns/backends-for-frontends) (BFF) by exposing multiple API gateways.
 
@@ -100,6 +100,19 @@ gRPC communication requires both client and server components. The client makes 
 Microservices that expose both a RESTful API and gRPC communication require multiple endpoints to manage traffic. You would open an endpoint that listens for HTTP traffic for the RESTful calls and another for gRPC calls. The gRPC endpoint must be configured for the HTTP/2 protocol that is required for gRPC communication.
 
 While we strive to decouple microservices with asynchronous communication patterns, some operations require direct calls. gRPC should be the primary choice for direct synchronous communication between microservices. Its high-performance communication protocol, based on HTTP/2 and protocol buffers, make it a perfect choice.
+
+## gRPC in .NET Aspire
+
+If you have a gRPC server in a .NET Aspire solution and you want to call it from other microservices, you can use the `AddGrpcClient` extension method to create a gRPC client in the App Host and then pass it to the microservices that use it:
+
+```csharp
+builder.Services.AddGrpcClient<CatalogApiHttpClientProvider>(
+    static client=> client.BaseAddress = new("https://catalogapi"))
+    .ConfigurePrimaryHttpMessageHandler(
+    () => new GrpcWebHandler(new HttpClientHandler()));
+```
+
+In the microservices, get the gRPC client from dependency injection and use it to send messages to the gRPC server microservice.
 
 ## Looking ahead
 

@@ -9,6 +9,7 @@ f1_keywords:
   - "classconstraint_CSharpKeyword"
   - "structconstraint_CSharpKeyword"
   - "enumconstraint_CSharpKeyword"
+  - "allows_CsharpKeyword"
 helpviewer_keywords:
   - "where (generic type constraint) [C#]"
 ---
@@ -58,7 +59,13 @@ The `where` clause may also include a constructor constraint, `new()`. That cons
 
 :::code language="csharp" source="snippets/GenericWhereConstraints.cs" ID="Snippet5":::
 
-The `new()` constraint appears last in the `where` clause. The `new()` constraint can't be combined with the `struct` or `unmanaged` constraints. All types satisfying those constraints must have an accessible parameterless constructor, making the `new()` constraint redundant.
+The `new()` constraint appears last in the `where` clause, unless it is followed by the `allows ref struct` anti-constraint. The `new()` constraint can't be combined with the `struct` or `unmanaged` constraints. All types satisfying those constraints must have an accessible parameterless constructor, making the `new()` constraint redundant.
+
+This anti-constraint declares that the type argument for `T` can be a `ref struct` type. For example:
+
+:::code language="csharp" source="snippets/GenericWhereConstraints.cs" ID="SnippetRefStruct":::
+
+The generic type or method must obey ref safety rules for any instance of `T` because it might be a `ref struct`. The `allows ref struct` clause can't be combined with the `class` or `class?` constraint. The `allows ref struct` anti-constraint must follow all constraints for that type argument.
 
 With multiple type parameters, use one `where` clause for each type parameter, for example:
 

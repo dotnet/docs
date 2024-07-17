@@ -9,14 +9,12 @@ You can use the `ref` modifier in the declaration of a [structure type](struct.m
 
 - A `ref struct` can't be the element type of an array.
 - A `ref struct` can't be a declared type of a field of a class or a non-`ref struct`.
-- A `ref struct` can't implement interfaces.
 - A `ref struct` can't be boxed to <xref:System.ValueType?displayProperty=nameWithType> or <xref:System.Object?displayProperty=nameWithType>.
-- A `ref struct` can't be a type argument.
 - A `ref struct` variable can't be captured in a [lambda expression](../operators/lambda-expressions.md) or a [local function](../../programming-guide/classes-and-structs/local-functions.md).
 - Before C# 13,`ref struct` variables can't be used in an `async` method. Beginning with C# 13, a `ref struct` variable can't be used in the same block as the [`await`](../operators/await.md) expression in an [`async`](../keywords/async.md) method. However, you can use `ref struct` variables in synchronous methods, for example, in methods that return <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>.
 - Before C# 13, a `ref struct` variable can't be used in [iterators](../../iterators.md). Beginning with C# 13, `ref struct` types and `ref` locals can be used in iterators, provided they aren't in code segments with the `yield return` statement.
-
-You can define a disposable `ref struct`. To do that, ensure that a `ref struct` fits the [disposable pattern](~/_csharplang/proposals/csharp-8.0/using.md#pattern-based-using). That is, it has an instance `Dispose` method, which is accessible, parameterless and has a `void` return type. You can use the [using statement or declaration](../statements/using.md) with an instance of a disposable `ref struct`.
+- Before C# 13, a `ref struct` can't implement interfaces. Beginning with C# 13, a `ref` struct can implement interfaces, but must adhere to the [ref safety](~/_csharpstandard/standard/structs.md#1623-ref-modifier) rules. For example, a `ref struct` type can't be converted to the interface type because that requires a boxing conversion.
+- Before C# 13, a `ref struct` can't be a type argument. Beginning with C# 13, a `ref struct` can be the type argument when the type parameter specifies the `allows ref struct` in its `where` clause.
 
 Typically, you define a `ref struct` type when you need a type that also includes data members of `ref struct` types:
 
@@ -57,6 +55,28 @@ public readonly ref struct Span<T>
 ```
 
 The `Span<T>` type stores a reference through which it accesses the contiguous elements in memory. The use of a reference enables a `Span<T>` instance to avoid copying the storage it refers to.
+
+## The disposable pattern
+
+You can define a disposable `ref struct`. To do that, ensure that a `ref struct` fits the [disposable pattern](~/_csharplang/proposals/csharp-8.0/using.md#pattern-based-using). That is, it has an instance `Dispose` method, which is accessible, parameterless and has a `void` return type. You can use the [using statement or declaration](../statements/using.md) with an instance of a disposable `ref struct`.
+
+Beginning with C# 13, you can also implement the <xref:System.IDisposable?displayName=nameWithType> on `ref struct` types. However, overload resolution prefers the disposable pattern to the interface method. Only if a suitable `Dispose` method isn't found will an `IDisposable.Dispose` method be chosen.
+
+## Restrictions for `ref struct` types that implement an interface
+
+These restrictions ensure that a `ref struct` type that implements an interface obeys the necessary [ref safety](~/_csharpstandard/standard/structs.md#1623-ref-modifier) rules.
+
+- A `ref struct` can't be converted to an instance of an interface it implements. This includes the implicit conversion when you use a `ref struct` type as an argument when the parameter is an interface type. The conversion results in a boxing conversion, which violates ref safety.
+- A `ref struct` that implements an interface *must* implement all interface members. The `ref struct` must implement members where the interface includes a default implementation.
+
+The compiler enforces these restrictions. If you write `ref struct` types that implement interfaces, each new update may include new [default interface members](../keywords/interface.md#default-interface-members). Until you provide an implementation for these new methods, your application won't compile.
+
+> [!IMPORTANT]
+> A `ref struct` that implements an interface includes the potential for later source-breaking and binary-breaking changes. The break occurs if a `ref struct` implements an interface defined in another assembly, and that assembly provides an update which adds default members to that interface.
+>
+> The source-break happens when you recompile the `ref struct`: It must implement the new member, even though there is a default implementation.
+>
+> The binary-break happens if you upgrade the external assembly without recompiling the `ref struct` type *and* the updated code calls the default implementation of the new method. The runtime throws an exception when the default member is accessed.
 
 ## C# language specification
 

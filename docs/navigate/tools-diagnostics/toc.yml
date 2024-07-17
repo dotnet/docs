@@ -146,12 +146,8 @@ items:
             items:
               - name: dotnet nuget delete
                 href: ../../core/tools/dotnet-nuget-delete.md
-              - name: dotnet nuget get
-                href: ../../core/tools/dotnet-nuget-get.md
               - name: dotnet nuget locals
                 href: ../../core/tools/dotnet-nuget-locals.md
-              - name: dotnet nuget paths
-                href: ../../core/tools/dotnet-nuget-paths.md
               - name: dotnet nuget push
                 href: ../../core/tools/dotnet-nuget-push.md
               - name: dotnet nuget add source
@@ -170,14 +166,20 @@ items:
                 href: ../../core/tools/dotnet-nuget-verify.md
               - name: dotnet nuget trust
                 href: ../../core/tools/dotnet-nuget-trust.md
-              - name: dotnet nuget set
-                href: ../../core/tools/dotnet-nuget-set.md
-              - name: dotnet nuget unset
-                href: ../../core/tools/dotnet-nuget-unset.md
               - name: dotnet nuget sign
                 href: ../../core/tools/dotnet-nuget-sign.md
               - name: dotnet nuget why
                 href: ../../core/tools/dotnet-nuget-why.md
+          - name: dotnet nuget config
+            items:
+              - name: dotnet nuget config get
+                href: ../../core/tools/dotnet-nuget-config-get.md
+              - name: dotnet nuget config set
+                href: ../../core/tools/dotnet-nuget-config-set.md
+              - name: dotnet nuget config unset
+                href: ../../core/tools/dotnet-nuget-config-unset.md
+              - name: dotnet nuget config paths
+                href: ../../core/tools/dotnet-nuget-config-paths.md
           - name: dotnet pack
             href: ../../core/tools/dotnet-pack.md
           - name: dotnet package search

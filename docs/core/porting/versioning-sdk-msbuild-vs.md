@@ -22,7 +22,7 @@ The support timeframe for the SDK typically matches that of the Visual Studio ve
 
 <!-- markdownlint-disable MD033 -->
 <details>
-<summary>Out of support .NET versions</summary>
+<summary>Expand to see out-of-support .NET versions</summary>
 
 | SDK version | MSBuild/Visual Studio version | Ship date | Lifecycle |
 |-------------|-------------------------------|-----------|-----------|
@@ -41,6 +41,8 @@ The support timeframe for the SDK typically matches that of the Visual Studio ve
 
 </details>
 <!-- markdownlint-enable MD033 -->
+
+### Supported .NET versions
 
 | SDK version | MSBuild/Visual Studio version | Ship date | Lifecycle           |
 |-------------|-------------------------------|-----------|---------------------|

@@ -2197,3 +2197,5733 @@ updates:
       dotnet:
         patterns:
           - "*" # Prefer a single PR per project update.
+
+  - package-ecosystem: docker
+    directory: /.devcontainer
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/azure/sdk/snippets/dependency-injection/HostApplicationBuilder
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/azure/sdk/snippets/dependency-injection/HostBuilder
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/azure/sdk/snippets/dependency-injection/WebApplicationBuilder
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/core/compatibility/core-libraries/6.0/snippets
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/core/deploying/snippets/deploy-with-vs/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/core/deploying/snippets/deploy-with-vs/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/core/deploying/snippets/deploy-with-vs/xml
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/core/deploying/trimming/snippets/ConsoleApp1
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/core/deploying/trimming/snippets/MyLibrary
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/core/deploying/trimming/snippets/MyTestLib6app
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/core/diagnostics/snippets/EventCounters
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/core/diagnostics/snippets/diagnosticsource/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /docs/core/docker/snippets/7.0/App
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/core/docker/snippets/7.0/App
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /docs/core/docker/snippets/8.0/App
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/core/docker/snippets/8.0/App
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/core/extensions/snippets/channels
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/core/extensions/snippets/http/http3
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/core/extensions/snippets/http/scopeworkaround
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/core/extensions/snippets/http/shared
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/core/extensions/snippets/logging/minimal-web-open-telemetry
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/core/extensions/snippets/logging/minimal-web
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /docs/core/extensions/snippets/workers/background-service
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /docs/core/extensions/snippets/workers/cloud-service
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/core/testing/snippets/unit-testing-using-mstest/csharp/PrimeService
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/core/tutorials/snippets/library-with-visual-studio-6-0/csharp/ShowCase
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/core/tutorials/snippets/library-with-visual-studio-6-0/csharp/StringLibrary
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/core/tutorials/snippets/library-with-visual-studio/csharp/ShowCase
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/core/tutorials/snippets/library-with-visual-studio/csharp/StringLibrary
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/core/tutorials/snippets/library-with-visual-studio/vb/ShowCase
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/core/tutorials/snippets/library-with-visual-studio/vb/StringLibrary
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/core/tutorials/snippets/with-visual-studio-6-0/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/core/tutorials/snippets/with-visual-studio/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/core/tutorials/snippets/with-visual-studio/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/core/whats-new/snippets/dotnet-8/csharp/WebSDK
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/core/whats-new/snippets/dotnet-core-2-1/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/core/whats-new/snippets/dotnet-core-2-1/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/core/whats-new/snippets/dotnet-core-3-0/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/advanced-topics/expression-trees/snippets
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/advanced-topics/interface-implementation/snippets/default-interface-members-versions/finished/customer-relationship
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/advanced-topics/interface-implementation/snippets/default-interface-members-versions/starter/customer-relationship
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/advanced-topics/interface-implementation/snippets/mixins-with-default-interface-methods
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/advanced-topics/interop/snippets/ExampleComClass
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/advanced-topics/interop/snippets/IndexedProperties
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/advanced-topics/interop/snippets/NamedAndOptional
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/advanced-topics/interop/snippets/OfficeInterop
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/advanced-topics/interop/snippets/OfficeWalkthrough
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/advanced-topics/interop/snippets/WinSound
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/advanced-topics/interop/snippets/dynamic-walkthrough
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/advanced-topics/interop/snippets/using-dynamic
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/advanced-topics/performance/snippets/ref-safety
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/advanced-topics/performance/snippets/ref-tutorial/IntruderAlert-finished
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/advanced-topics/performance/snippets/ref-tutorial/IntruderAlert-starter
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/advanced-topics/reflection-and-attributes/snippets/conceptual
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/advanced-topics/reflection-and-attributes/snippets/tutorial
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/asynchronous-programming/snippets/access-web
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/asynchronous-programming/snippets/async-return-types
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/asynchronous-programming/snippets/cancel-task-after-period-of-time
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/asynchronous-programming/snippets/cancel-tasks
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/asynchronous-programming/snippets/file-access
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/asynchronous-programming/snippets/index/AsyncBreakfast-V2
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/asynchronous-programming/snippets/index/AsyncBreakfast-V3
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/asynchronous-programming/snippets/index/AsyncBreakfast-final
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/asynchronous-programming/snippets/index/AsyncBreakfast-starter
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/asynchronous-programming/snippets/multiple-tasks-6-0
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/fundamentals/coding-style/snippets/coding-conventions
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/fundamentals/exceptions/snippets/exceptions
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/fundamentals/functional/snippets/deconstructing-tuples
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/fundamentals/functional/snippets/discards
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/fundamentals/functional/snippets/patterns
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/fundamentals/object-oriented/snippets/inheritance
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/fundamentals/object-oriented/snippets/objects
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/fundamentals/program-structure/snippets/main-arguments
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/fundamentals/program-structure/snippets/main-command-line
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/fundamentals/program-structure/snippets/structure
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/fundamentals/program-structure/snippets/top-level-statements-1
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/fundamentals/program-structure/snippets/top-level-statements-2
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/fundamentals/program-structure/snippets/top-level-statements-3
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/fundamentals/program-structure/snippets/top-level-statements-4
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/fundamentals/program-structure/snippets/top-level-statements-5
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/fundamentals/program-structure/snippets/toplevel-structure
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/fundamentals/tutorials/snippets/command-line-arguments
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/fundamentals/tutorials/snippets/inheritance
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/fundamentals/tutorials/snippets/introduction-to-classes
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/fundamentals/tutorials/snippets/object-oriented-programming
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/fundamentals/tutorials/snippets/patterns/finished/toll-calculator
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/fundamentals/tutorials/snippets/patterns/start/toll-calculator
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/fundamentals/tutorials/snippets/safelycast/asandis
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/fundamentals/tutorials/snippets/safelycast/nullablepatternmatching
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/fundamentals/tutorials/snippets/safelycast/patternmatching
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/fundamentals/types/snippets/anonymous-types
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/fundamentals/types/snippets/classes
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/fundamentals/types/snippets/generics
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/fundamentals/types/snippets/interfaces
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/fundamentals/types/snippets/namespaces
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/fundamentals/types/snippets/records
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/language-reference/attributes/snippets
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/language-reference/builtin-types/snippets/shared
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/language-reference/compiler-messages/snippets/ImportedTypes
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/language-reference/compiler-messages/snippets/UsingDirectives
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/language-reference/compiler-messages/snippets/WarningWaves
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/language-reference/compiler-messages/snippets/array-warnings
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/language-reference/compiler-messages/snippets/pattern-matching-warnings
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/language-reference/operators/snippets/lambda-expressions
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/language-reference/operators/snippets/patterns
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/language-reference/operators/snippets/with-expression
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/language-reference/snippets/unsafe-code
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/language-reference/statements/snippets/checked-and-unchecked
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/language-reference/statements/snippets/declarations
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/language-reference/statements/snippets/exception-handling-statements
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/language-reference/statements/snippets/fixed
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/language-reference/statements/snippets/iteration-statements
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/language-reference/statements/snippets/jump-statements
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/language-reference/statements/snippets/lock
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/language-reference/statements/snippets/selection-statements
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/language-reference/statements/snippets/using
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/language-reference/statements/snippets/yield
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/language-reference/tokens/snippets
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/language-reference/xmldoc/snippets/xmldoc
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/linq/get-started/snippets/SnippetApp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/linq/get-started/snippets/WalkthroughWritingLinqQueries
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/linq/snippets/HowToCollections
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/linq/snippets/HowToExtend
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/linq/snippets/HowToFilesAndDirectories
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/linq/snippets/HowToStrings
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/linq/snippets/linq-index
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/linq/standard-query-operators/snippets/standard-query-operators
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/programming-guide/classes-and-structs/snippets/NamedAndOptional
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/programming-guide/classes-and-structs/snippets/classes-and-structs/methods
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/programming-guide/classes-and-structs/snippets/constants
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/programming-guide/classes-and-structs/snippets/constructors
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/programming-guide/classes-and-structs/snippets/fields
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/programming-guide/classes-and-structs/snippets/finalizers
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/programming-guide/classes-and-structs/snippets/how-to-declare-and-use-read-write-properties
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/programming-guide/classes-and-structs/snippets/how-to-define-constants
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/programming-guide/classes-and-structs/snippets/how-to-write-a-copy-constructor
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/programming-guide/classes-and-structs/snippets/instance-constructors/coords
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/programming-guide/classes-and-structs/snippets/instance-constructors/person
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/programming-guide/classes-and-structs/snippets/instance-constructors/shapes
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/programming-guide/classes-and-structs/snippets/instance-constructors/widgets
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/programming-guide/classes-and-structs/snippets/local-functions
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/programming-guide/classes-and-structs/snippets/methods
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/programming-guide/classes-and-structs/snippets/object-collection-initializers
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/programming-guide/classes-and-structs/snippets/partial-classes-and-methods
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/programming-guide/classes-and-structs/snippets/private-constructors
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/programming-guide/classes-and-structs/snippets/properties
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/programming-guide/classes-and-structs/snippets/static-classes-and-static-class-members
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/programming-guide/classes-and-structs/snippets/static-constructors
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/programming-guide/classes-and-structs/snippets/using-constructors
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/programming-guide/generics/snippets
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/programming-guide/indexers/snippets/DayOfWeekIndexers
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/programming-guide/indexers/snippets/StringIndexers
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/programming-guide/indexers/snippets/Temperatures
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/programming-guide/statements-expressions-operators/snippets/how-to-define-value-equality-for-a-type/ValueEqualityClass
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/programming-guide/statements-expressions-operators/snippets/how-to-define-value-equality-for-a-type/ValueEqualityStruct
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/programming-guide/statements-expressions-operators/snippets/how-to-test-for-reference-equality-identity
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/programming-guide/strings/snippets
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/programming-guide/types/snippets/index
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/roslyn-sdk/snippets/source-generators/ConsoleApp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/roslyn-sdk/tutorials/snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.Package
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/snippets/iterators
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/snippets/methods
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/snippets/properties
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/tour-of-csharp/snippets/shared
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/tutorials/snippets/NullableIntroduction
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/tutorials/snippets/RangesIndexes
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/tutorials/snippets/StringInterpolation
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/tutorials/snippets/WebAPIClient
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/tutorials/snippets/record-types
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/tutorials/snippets/top-level-statements
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/whats-new/snippets/whats-new-csharp9
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/whats-new/tutorials/snippets/interpolated-string-handler
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/whats-new/tutorials/snippets/pattern-objects
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/csharp/whats-new/tutorials/snippets/staticinterfaces
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /docs/devops/snippets/create-dotnet-github-action
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/code-analysis/quality-rules/snippets/csharp/extra-rules
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/code-analysis/quality-rules/snippets/csharp/netfx
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/code-analysis/quality-rules/snippets/vb/extra-rules
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/code-analysis/quality-rules/snippets/vb/netfx
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/networking/snippets/httpclient
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/networking/snippets/internal-diag-telemetry
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/networking/snippets/misc
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/networking/snippets/shared
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/networking/snippets/socket/socket-client
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/networking/snippets/socket/socket-server
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/networking/snippets/tcp/tcp-client
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/networking/snippets/tcp/tcp-listener
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Collections.Generic/List/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Collections.Generic/ListT/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Data/DataTable/Overview/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Data/DataTable/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Diagnostics.Tracing/EventSource/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Diagnostics.Tracing/EventSource/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Drawing.Drawing2D/Matrix/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Drawing.Drawing2D/Matrix/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Dynamic/ExpandoObject/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Dynamic/ExpandoObject/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Globalization/CultureInfo/CurrentCulture/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Globalization/CultureInfo/CurrentCulture/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Globalization/CultureInfo/CurrentUICulture/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Globalization/CultureInfo/CurrentUICulture/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Globalization/CultureInfo/InvariantCulture/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Globalization/CultureInfo/InvariantCulture/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Globalization/CultureInfo/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Globalization/DateTimeFormatInfo/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Globalization/NumberFormatInfo/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Globalization/RegionInfo/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Numerics/BigInteger/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Numerics/BigInteger/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Numerics/Complex/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Numerics/Complex/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Resources/CurrentCulture/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Resources/MissingManifestResourceException/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Resources/MissingManifestResourceException/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Resources/NeutralResourcesLanguageAttribute/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Resources/NeutralResourcesLanguageAttribute/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Resources/ResourceManager/.ctor/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Resources/ResourceManager/.ctor/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Resources/ResourceManager/GetObject/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Resources/ResourceManager/GetObject/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Resources/ResourceManager/GetString/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Resources/ResourceManager/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Resources/ResourceManager/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Resources/ResourceReader/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Runtime.CompilerServices/InternalsVisibleToAttribute/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Runtime.CompilerServices/InternalsVisibleToAttribute/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Runtime.CompilerServices/RuntimeHelpers/GetHashCode/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Runtime.CompilerServices/RuntimeHelpers/GetHashCode/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Runtime.InteropServices/ICustomMarshaler/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Runtime.InteropServices/ICustomMarshaler/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Runtime.Versioning/ComponentGuaranteesAttribute/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Runtime.Versioning/ComponentGuaranteesAttribute/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Text.RegularExpressions/Regex/Match/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Text.RegularExpressions/Regex/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Text.RegularExpressions/Regex/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Text/Encoding/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Text/Encoding/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Text/RegularExpressions/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Text/Rune/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Text/StringBuilder/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Text/StringBuilder/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Threading.Tasks/Task/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Threading.Tasks/Task/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Threading.Tasks/TaskScheduler/FromCurrentSynchronizationContext/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Threading.Tasks/TaskScheduler/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Threading/Monitor/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Threading/Monitor/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Threading/ReaderWriterLockSlim/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Threading/ReaderWriterLockSlim/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Threading/Thread/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Threading/Thread/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Xml.Schema/XmlSchemaSet/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Xml/XmlDocument/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Xml/XmlDocument/Overview/vb/Non-WinForms
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Xml/XmlDocument/Overview/vb/WinForms
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Xml/XmlLinkedNode/csharp/PreviousSibling
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Xml/XmlParserContext/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Xml/XmlReader/Create/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Xml/XmlReader/Create/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Xml/XmlReader/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Xml/XmlReader/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Xml/XmlReaderSettings/ValidationType/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Xml/XmlResolver/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Xml/XmlResolver/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Xml/XmlSecureResolver/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Xml/XmlSecureResolver/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Xml/XmlWriter/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System.Xml/XmlWriter/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/AppContext/Overview/csharp/V1
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/AppContext/Overview/csharp/V2
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/AppContext/Overview/csharp/V3
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/AppContext/Overview/vb/V1
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/AppContext/Overview/vb/V2
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/AppContext/Overview/vb/V3
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Boolean/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Boolean/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Byte/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Byte/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Char/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Char/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Console/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Console/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Convert/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Convert/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Convert/ToInt32/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Convert/ToInt64/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/DateTime/FromBinary/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/DateTime/FromBinary/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/DateTime/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/DateTime/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Decimal/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Decimal/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Delegate/CreateDelegate/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Delegate/CreateDelegate/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Double/CompareTo/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Double/CompareTo/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Double/Epsilon/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Double/Epsilon/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Double/Equals/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Double/Equals/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Double/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Double/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Enum/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Enum/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Exception/HelpLink/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Exception/HelpLink/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Exception/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Exception/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/FlagsAttribute/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/FlagsAttribute/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/FormatException/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/IDisposable/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/IDisposable/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Int32/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Int32/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Int64/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Int64/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/InvalidCastException/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/InvalidCastException/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/InvalidOperationException/Overview/csharp/Other
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/InvalidOperationException/Overview/csharp/WPF1
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/InvalidOperationException/Overview/csharp/WPF2
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/InvalidOperationException/Overview/csharp/WinForms
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/InvalidOperationException/Overview/vb/Other
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/InvalidOperationException/Overview/vb/WinForms
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/NotSupportedException/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/NotSupportedException/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Object/Equals/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Object/Equals/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Object/Finalize/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Object/Finalize/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Object/GetHashCode/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Object/GetHashCode/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Object/ToString/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Object/ToString/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Random/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Random/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Single/CompareTo/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Single/CompareTo/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Single/Epsilon/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Single/Epsilon/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Single/Equals/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Single/Equals/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Single/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Single/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Span/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Span/Slice/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/String/.ctor/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/String/.ctor/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/String/Format/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/String/Format/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/String/Intern/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/String/Intern/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/String/IsNullOrEmpty/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/String/IsNullOrEmpty/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/String/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/String/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/TimeSpan/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/TimeSpan/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/TimeSpan/Parse/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/TimeSpan/Parse/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/TimeSpan/TryParse/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/TimeSpan/TryParse/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Type/GetType/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Type/MakeGenericType/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Type/MakeGenericType/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Type/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Type/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/TypeInitializationException/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/TypeInitializationException/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Version/Overview/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/fundamentals/runtime-libraries/snippets/System/Version/Overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/machine-learning/whats-new/snippets/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/orleans/grains/snippets/transactions/Client
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/orleans/grains/snippets/transactions/Grains
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/orleans/grains/snippets/transactions/Server
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/orleans/host/snippets
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/orleans/implementation/snippets/testing/orleans-testing/Sample.OrleansTesting
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/orleans/quickstarts/snippets/url-shortener/orleansurlshortener
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/orleans/streaming/snippets/broadcastchannel/BroadcastChannel.Client
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/orleans/streaming/snippets/broadcastchannel/BroadcastChannel.GrainInterfaces
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/orleans/streaming/snippets/broadcastchannel/BroadcastChannel.Silo
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/orleans/tutorials-and-samples/snippets/custom-grain-storage
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/orleans/tutorials-and-samples/snippets/minimal/Client
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/orleans/tutorials-and-samples/snippets/minimal/GrainInterfaces
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/orleans/tutorials-and-samples/snippets/minimal/Grains
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/orleans/tutorials-and-samples/snippets/minimal/Silo
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/assembly/snippets/identify/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/assembly/snippets/identify/visual-basic
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/assembly/snippets/inspect-contents-using-metadataloadcontext
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/assembly/snippets/type-forwarders/before/Common
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/assembly/snippets/type-forwarders/before/Consumer
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/assembly/snippets/type-forwarders/before/Utility
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/asynchronous-programming-patterns/snippets/component-that-supports-the-event-based-asynchronous-pattern/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/asynchronous-programming-patterns/snippets/component-that-supports-the-event-based-asynchronous-pattern/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/base-types/snippets/best-practices-display-data/csharp/formattable
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/base-types/snippets/best-practices-display-data/csharp/tostring
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/base-types/snippets/best-practices-display-data/vb/formattable
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/base-types/snippets/best-practices-display-data/vb/tostring
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/base-types/snippets/best-practices-strings/csharp/comparison1
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/base-types/snippets/best-practices-strings/csharp/comparison2
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/base-types/snippets/best-practices-strings/csharp/comparison3
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/base-types/snippets/best-practices-strings/csharp/embeddednulls1
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/base-types/snippets/best-practices-strings/csharp/embeddednulls2
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/base-types/snippets/best-practices-strings/csharp/explicitargs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/base-types/snippets/best-practices-strings/csharp/indirect1
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/base-types/snippets/best-practices-strings/csharp/stringcomparer
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/base-types/snippets/best-practices-strings/csharp/turkish
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/base-types/snippets/best-practices-strings/vb/comparison1
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/base-types/snippets/best-practices-strings/vb/comparison2
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/base-types/snippets/best-practices-strings/vb/comparison3
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/base-types/snippets/best-practices-strings/vb/embeddednulls1
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/base-types/snippets/best-practices-strings/vb/embeddednulls2
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/base-types/snippets/best-practices-strings/vb/explicitargs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/base-types/snippets/best-practices-strings/vb/indirect1
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/base-types/snippets/best-practices-strings/vb/stringcomparer
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/base-types/snippets/best-practices-strings/vb/turkish
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/base-types/snippets/character-encoding-introduction/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/base-types/snippets/composite-formatting/framework/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/base-types/snippets/composite-formatting/framework/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/base-types/snippets/composite-formatting/net/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/base-types/snippets/composite-formatting/net/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/base-types/snippets/how-to-display-milliseconds-in-date-and-time-values/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/base-types/snippets/how-to-display-milliseconds-in-date-and-time-values/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/base-types/snippets/how-to-verify-that-strings-are-in-valid-email-format/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/base-types/snippets/how-to-verify-that-strings-are-in-valid-email-format/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/base-types/snippets/parse-strings/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/base-types/snippets/parse-strings/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/base-types/snippets/regex-backtracking/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/base-types/snippets/regex-backtracking/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/base-types/snippets/regex/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/base-types/snippets/regular-expression-example-scanning-for-hrefs/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/base-types/snippets/regular-expression-example-scanning-for-hrefs/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/commandline/snippets/customize-help/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/commandline/snippets/define-commands/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/commandline/snippets/dependency-injection/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/commandline/snippets/get-started-tutorial/csharp/Stage1
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/commandline/snippets/get-started-tutorial/csharp/Stage2
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/commandline/snippets/get-started-tutorial/csharp/Stage3
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/commandline/snippets/handle-termination/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/commandline/snippets/model-binding/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/commandline/snippets/tab-completion/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/commandline/snippets/use-middleware/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/datetime/snippets/how-to-use-dateonly-timeonly/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/datetime/snippets/how-to-use-dateonly-timeonly/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/datetime/snippets/instantiating-a-datetimeoffset-object/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/datetime/snippets/instantiating-a-datetimeoffset-object/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/datetime/snippets/system-text-json-support/csharp/computing-with-jsondocument-error
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/datetime/snippets/system-text-json-support/csharp/computing-with-jsondocument-valid
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/datetime/snippets/system-text-json-support/csharp/custom-reading-with-utf8jsonreader
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/datetime/snippets/system-text-json-support/csharp/custom-writing-with-utf8jsonwriter
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/datetime/snippets/system-text-json-support/csharp/datetime-converter-examples/example1
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/datetime/snippets/system-text-json-support/csharp/datetime-converter-examples/example2
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/datetime/snippets/system-text-json-support/csharp/datetime-converter-examples/example3
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/datetime/snippets/system-text-json-support/csharp/deserializing-with-jsonserializer-error
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/datetime/snippets/system-text-json-support/csharp/deserializing-with-jsonserializer-valid
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/datetime/snippets/system-text-json-support/csharp/reading-with-utf8jsonreader-error
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/datetime/snippets/system-text-json-support/csharp/reading-with-utf8jsonreader-valid
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/datetime/snippets/system-text-json-support/csharp/serializing-with-jsonserializer
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/datetime/snippets/system-text-json-support/csharp/writing-with-utf8jsonwriter
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/datetime/snippets/timezone-concepts
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/events/snippets/observables
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/exceptions/snippets/best-practices/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/exceptions/snippets/how-to-use-finally-blocks/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/exceptions/snippets/how-to-use-specific-exceptions-in-a-catch-block/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/exceptions/snippets/how-to-use-specific-exceptions-in-a-catch-block/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/exceptions/snippets/how-to-use-the-try-catch-block-to-catch-exceptions/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/exceptions/snippets/how-to-use-the-try-catch-block-to-catch-exceptions/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/garbage-collection/snippets/dispose-async
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/io/snippets/add-remove-acls/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/io/snippets/add-remove-acls/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/io/snippets/how-to-copy-directories/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/io/snippets/how-to-copy-directories/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/io/snippets/how-to-read-text-from-a-file/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/io/snippets/how-to-read-text-from-a-file/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/io/snippets/how-to-use-named-pipes-for-network-interprocess-communication/csharp/NamedPipeClientStream_ImpersonationSample
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/io/snippets/how-to-use-named-pipes-for-network-interprocess-communication/csharp/NamedPipeServerStream_ImpersonationSample
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/io/snippets/how-to-use-named-pipes-for-network-interprocess-communication/vb/NamedPipeClientStream_ImpersonationSample
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/io/snippets/how-to-use-named-pipes-for-network-interprocess-communication/vb/NamedPipeServerStream_ImpersonationSample
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/io/snippets/pipelines_1
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/io/snippets/pipelines_2
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/parallel-programming/snippets/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/parallel-programming/snippets/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/security/snippets/cryptographic-signatures/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/security/snippets/cryptographic-signatures/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/security/snippets/decrypting-data/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/security/snippets/decrypting-data/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/security/snippets/encrypting-data/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/security/snippets/encrypting-data/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/security/snippets/replacing-a-principal-object/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/security/snippets/replacing-a-principal-object/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/serialization/snippets/binaryformatter-event-source/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/serialization/system-text-json/snippets/configure-options/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/serialization/system-text-json/snippets/converters-how-to/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/serialization/system-text-json/snippets/custom-contracts
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/serialization/system-text-json/snippets/how-to-6-0/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/serialization/system-text-json/snippets/how-to-contd/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/serialization/system-text-json/snippets/how-to-contd/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/serialization/system-text-json/snippets/how-to/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/serialization/system-text-json/snippets/how-to/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/serialization/system-text-json/snippets/populate-properties
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/serialization/system-text-json/snippets/source-generation/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/serialization/system-text-json/snippets/supported-collection-types/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/serialization/system-text-json/snippets/use-dom-utf8jsonreader-utf8jsonwriter/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/standard/threading/snippets/scheduling-threads
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/visual-basic/developing-apps/programming/drives-directories-files/snippets/how-to-rename-a-file
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/visual-basic/language-reference/statements/snippets/for-each-next-statement/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/visual-basic/language-reference/statements/snippets/try-catch-finally-statement/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/visual-basic/programming-guide/concepts/linq/snippets
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /docs/visual-basic/programming-guide/language-features/procedures/snippets/how-to-call-an-event-handler
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/core/testing/unit-testing-best-practices/csharp/after
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/core/testing/unit-testing-best-practices/csharp/before
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/core/testing/unit-testing-best-practices/csharp/unit-testing-best-practices
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/core/testing/unit-testing-using-dotnet-test/csharp/PrimeService.Tests
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/core/testing/unit-testing-using-dotnet-test/csharp/PrimeService
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/core/testing/unit-testing-using-nunit/csharp/PrimeService.Tests
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/core/testing/unit-testing-using-nunit/csharp/PrimeService
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/core/testing/unit-testing-vb-mstest/vb/PrimeService.Tests
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/core/testing/unit-testing-vb-mstest/vb/PrimeService
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/core/testing/unit-testing-vb-nunit/vb/PrimeService.Tests
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/core/testing/unit-testing-vb-nunit/vb/PrimeService
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/core/tutorials/creating-app-with-plugin-support/csharp/AppWithPlugin
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/core/tutorials/creating-app-with-plugin-support/csharp/HelloPlugin
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/core/tutorials/creating-app-with-plugin-support/csharp/PluginBase
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/core/tutorials/netcore-hosting/csharp/HostWithHostFxr/src/DotNetLib
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/core/tutorials/netcore-hosting/csharp/HostWithHostFxr/src/NativeHost
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/core/tutorials/testing-with-cli/csharp/src/NewTypes
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/core/tutorials/testing-with-cli/csharp/test/NewTypesTests
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlDataAdapter.SqlDataAdapter Example/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DP Custom CopyToDataTable Examples/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DP DataView Samples/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DP DataViewWinForms Sample/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks BulkCopy.Single/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks ConnectionStringSettings.RetrieveFromConfig/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks ConnectionStringSettings.RetrieveFromConfigByName/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks ConnectionStringSettings.RetrieveFromConfigByProvider/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks ConnectionStrings.Encrypt/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks ConnectionStringsWeb.Encrypt/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks Data.AcceptRejectRule/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks Data.DataTableAdd/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks Data.DataTableNavigation/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks Data.DataTableRelation/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks DataSet.Merge/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks DataSet.MergeAcceptChanges/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks DataTable.CreateDataReader/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks DataTable.Events/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks DataTableReader.NextResult/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks DbProviderFactories.DbCommand/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks DbProviderFactories.DbCommandData/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks DbProviderFactories.DbDataAdapter/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks DbProviderFactories.DbDataAdapterModify/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks DbProviderFactories.GetFactory/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks DbProviderFactories/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks LargeValueType.Param/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks LargeValueType.Photo/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks OleDb.JetAutonumberMerge/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SampleApp.Odbc/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SampleApp.OleDb/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SampleApp.Oracle/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SampleApp.SqlClient/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SnapshotIsolation.Demo/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SnapshotIsolation.DemoUpdate/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlBulkCopy.ColumnMappingOrdersDetails/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlBulkCopy.DefaultTransaction/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlBulkCopy.InternalTransaction/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlBulkCopy.SqlTransaction/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlClient.CAS/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlClient.DataAdapterUpdate/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlClient.GetSchemaTable/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlClient.GetXmlDataReader/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlClient.HasRows/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlClient.MergeIdentity/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlClient.NextResult/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlClient.RetrieveIdentityStoredProcedure/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlClient.SprocIdentityReturn/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlClient.StoredProcedure/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlCommand.ExecuteScalar/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlConnectionStringBuilder.UserNamePwd/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlNotification.Perms/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlTransaction.Local/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlTypes.CompareNulls/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlTypes.GetTypeAW/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlTypes.Guid/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlTypes.IsNull/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_certificatevalidationdifferences/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_collection_types_in_data_contracts/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_controlserviceinstancing/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_createsecuresession/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_createstatefulsct/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_creatests/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_customauthmgr/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_customauthpol/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_custombinding/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_custombindingsauthmode/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_customcertificatevalidator/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_customclaim/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_customclaimcomparison/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_customcredentials/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_customfederationbinding/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_customtoken/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_customtokenauthenticator/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_customtokenprovider/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_customx509token/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_dataarchitecture/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_datacontract/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_datacontractenumerations/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_datacontractnames/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_datacontractversioning/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_delegation/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_federatedclient/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_federatedservice/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_federation/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_federationbinding/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_findclaimsperf/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_fourcerts/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_howtocheckformexrequestsinauthorization/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_howtosecureendpoint/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_howtosetcustomclientidentity/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_identity/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_impersonationanddelegation/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_knowntypeattribute/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_maxclockskew/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_programmingsecurity/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_protectionlevel/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_schemaimportexport/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_securewindowsservice/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_securewithcertificate/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_securitybestpractices/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_settingsecuritymode/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_signatureconfirmation/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_simpleimpersonation/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_standalonedatacontractserializer/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_supportingcredential/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_tcpclient/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_unsecuredservice/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_workingwithcertificates/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/c_xmlserializer/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/cfx_selfhost4/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/cfx_wf_gettingstarted/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/datacontractattribute/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/datamemberattribute/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/s_customauthentication/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/s_dualhttp/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/trustedsubsystems/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CFX/tx_enlist/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/ADCreateDomain/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/AppDomain_Setup/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/Asynchronous_File_IO_async/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/Conceptual.Interop.PInvoke/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/Conceptual.Threading.Resuming/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/CryptoWalkThru/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/Cryptography.SmartCardCSP/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/DPAPI-HowTO/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/DynamicMethodHowTo/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/Exception.Throwing/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Custom/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/Formatting.Enum/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/Formatting.HowTo.Calendar/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/Formatting.HowTo.NumericValue/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/Formatting.HowTo.PadNumber/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/Formatting.HowTo.RoundTrip/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/Formatting.Numeric.Standard/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/GCNotification/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/HookUpDelegate/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/HowToDecryptXMLElementAsymmetric/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/HowToDecryptXMLElementX509/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/HowToEncryptXMLElementAsymmetric/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/HowToEncryptXMLElementSymmetric/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/HowToEncryptXMLElementX509/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/HowToGeneric/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/HowToSignXMLDocumentRSA/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/HowToVerifyXMLDocumentRSA/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/IO.Compression.GZip1/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/RegularExpressions.Classes/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/RegularExpressions.Examples.ChangeDateFormats/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/RegularExpressions.Examples.StripChars/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/RegularExpressions.Quantifiers.Greedy/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/RegularExpressions.Quantifiers/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/Strings.ChangingCase/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/Strings.Creating/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/TimeZone2.Serialization/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/appcompat.ignoreemptykeysequences/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/appcompat.sslprotocols/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/cocontrasimpleaction/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/cocontrasimpleienum/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/cocontravariancedelegates/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/cocontravariancedelegatesgenrelaxed/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/cocontravarianceinclrgenerici/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/cocontravarianceinclrgenerici2/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/conceptual.cancellation.callback/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/conceptual.choosingdates/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/conceptual.conversion/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/conceptual.disposable/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/conceptual.formatting.overview/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/conceptual.generics.overview/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/conceptual.globalization/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/conceptual.isolatedstorage/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/conceptual.localizability/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/conceptual.observerdesign.howto/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/conceptual.parallel.for/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/conceptual.perfcounters.inprosxs/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.bestpractices/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.design/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.locating/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.packaging/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.textfiles/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/conceptual.string.parse/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/conceptual.strings.cultureinsensitivecomparison/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/conceptual.types.dynamic/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/conceptual.types.enum/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/conceptual.types.members.fields/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/contractexample/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/dg_exceptionDesign/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/eventsoverview/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/formatting.numeric.custom/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/generatingahash/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/listupdates/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/memorymappedfiles.memorymappedfile.createfromfile/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/memorymappedfiles.memorymappedfile.openexisting/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/regularexpressions.language.escapes/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/string.breakingchanges/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/throwunobservedtaskexceptions/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/timespan.breakingchanges/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/tools.certmgr/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/tracesourceexample1/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/tracesourceexample2/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/verifyingahash/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/whatsnew.461.crypto/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR/whatsnew.casting/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR_System/System.Runtime.BypassNGenAttribute/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Conceptual.Formatting/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTimeOffset.Conceptual.Conversions/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.DebuggerBrowsableAttribute/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR_System/system.ICustomFormatter.Format/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeClientStream_Sample/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeServerStream_Sample/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StreamReader/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Principal.WindowsBuiltInRole Example/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR_System/system.String.GetHashCode/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.Timer/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.CreateTimeZone/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.Serialization.1/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.Serialization.2/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR_System/system.X.ToString-and-Culture/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR_System/system.appdomain.firstchanceexception_howto/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR_System/system.appdomain.firstchanceexception_howto_simple/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.textinfo.totitlecase/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR_System/system.idisposable/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR_System/system.io.directory.enumeratefiles/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR_System/system.io.directoryinfo.enumeratedirectories/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR_System/system.io.enumdirs1/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR_System/system.io.memorymappedfiles_ipc_a/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR_System/system.io.memorymappedfiles_ipc_b/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR_System/system.io.memorymappedfiles_ipc_x/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR_System/system.reflectionwinstoreapp/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR_System/system.text.regularexpressions.regex.ctor/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.parallel/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/DLinqAdoNet/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/DLinqCRUDOps/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/DLinqCascadeWorkaround/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/DLinqCommunicatingWithDatabase/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/DLinqCompositeKeys/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/DLinqCustomize/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/DLinqDataBinding/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/DLinqDebuggingSupport/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/DLinqGettingStarted/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/DLinqLocalMethodCall/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/DLinqMismatch/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/DLinqObjectIdentity/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/DLinqObjectModel/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/DLinqOverrideDefault/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/DLinqOverrideDefaultSproc/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/DLinqQueryConcepts/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/DLinqQueryExamples/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/DLinqQuerying/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/DLinqSQOTranslation/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/DLinqSerialization/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/DLinqSprox/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/DLinqSubmittingChanges/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/DLinqUDFS/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/DLinqWalk1ACS/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/DLinqWalk1CS/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/DLinqWalk2CS/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/DLinqWalk3CS/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/DLinqWalk4CS/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/DP L2E Conceptual Examples/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/DP L2E Examples/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/DP L2E Materialization Example/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/DP ObjectServices Concepts/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/PsciSample/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/XML_Migration/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/XPathNavigatorMethods/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/XSLT_NodeFrag/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/XSLT_Param/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/XSLT_Script/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/XmlDocumentValidation.Load/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/XmlDocumentValidation.Validate/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/XmlSchemaCreateExample/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/XmlSchemaEditExample1/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/XmlSchemaEditExample2/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/XmlSchemaImportExample/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/XmlSchemaInferenceExamples/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/XmlSchemaReadWriteExample/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/XmlSchemaSetOverall Example/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/XmlSchemaTraverseExample/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/XmlSchemaValidatorExamples/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/XslCompiledTransform.Load/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/XslCompiledTransform.Transform2/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/dp conceptualmodelfunctions/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/dp l2e arraysandlistsinqueries/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/dp l2e canonicalandstorefunctions/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/dp l2e maptodbfunction/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/dp l2e methods on objectcontext/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/l2s_querycache/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/system.data.linq.conflictmodeenumeration/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/system.data.linq.dataloadoptions/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/system.data.linq.mapping.updatecheck/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/system.data.linq.memberchangeconflict/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/system.data.linq.objectchangeconflict/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/system.data.linq.refreshmode/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/system.data.linq.table/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Data/xpathextensionfunctions/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Misc/cancellation/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Misc/cds_barrier/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Misc/cds_countdownevent/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Misc/cds_spinlock/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Misc/cds_spinwait/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Misc/fromasync/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Misc/plinq/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Misc/tpl_cancellation/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Misc/tpl_denychildattach/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Misc/tpl_exceptions/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Misc/tpl_parallel/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Misc/tpl_partitioners/cs/00
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Misc/tpl_partitioners/cs/01
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Misc/tpl_taskintro/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Misc/tpl_unwrap/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_cancellationwinforms/cs/cancellationwinforms
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_compositeimages/cs/compositeimages
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_degreeofparallelism/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_executionblocks/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_nongreedyjoin/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_overview/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_palindromes/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_producerconsumer/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_readwrite/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_receiveany/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_slidingwindowblock/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_writerreaderswinforms/cs/writerreaderswinforms
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Remoting/HowToChunkSerializedData/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_VBCSharp/CsCsrefQueryKeywords/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_VBCSharp/CsProgGuideTypes/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDelegates/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideEvents/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideExtensionMethods/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideGenerics/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideLINQ/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideProperties/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStatements/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsAccess/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsContextual/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsLiteral/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsOperator/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsTypes/CS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_VBCSharp/vblinkcompilercs/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Wpf/Highlighter/CSharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Wpf/InvokePatternApp/CSharp/InvokePatternApp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Wpf/InvokePatternApp/CSharp/Target
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Wpf/StringReaderWriter
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Wpf/UIAAutomationID_snip/CSharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Wpf/UIAFocusTracker_snip/CSharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Wpf/UIAFragmentProvider_snip/CSharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Wpf/UIAProvider_snip/CSharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Wpf/UIATableItemPattern_snip/CSharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/VS_Snippets_Wpf/WindowMove/CSharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/buffers
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/delegates-and-events
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/events
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/getting-started/console-linq
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/how-to/conversions
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/how-to/strings
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/interfaces
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/language-reference/keywords/async/wpf
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/language-reference/keywords/volatile
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/objectoriented
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/programming-guide/classes-and-structs/ExpressionBodiedMembers
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/programming-guide/string-to-number/convert
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/programming-guide/string-to-number/parse-tryparse
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/programming-guide/string-to-number/parse-tryparse2
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/roslyn-sdk/SemanticQuickStart
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/roslyn-sdk/SyntaxQuickStart/HelloSyntaxTree
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/roslyn-sdk/SyntaxQuickStart/SyntaxWalker
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/roslyn-sdk/SyntaxTransformationQuickStart/ConstructionCS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/roslyn-sdk/SyntaxTransformationQuickStart/TransformationCS
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/versioning/new
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/versioning/override
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/csharp/xunit-test
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/standard/assembly/unloading
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/standard/async/async-and-await/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/standard/buffers/memory-t/owner-using
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/standard/buffers/memory-t/owner
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/standard/buffers/memory-t/ownerless
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/standard/buffers/memory-t/task-returning-async
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/standard/buffers/memory-t/task-returning
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/standard/buffers/memory-t/task-returning2
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/standard/buffers/memory-t/void-returning
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/standard/data/sqlite/AggregateFunctionSample
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/standard/data/sqlite/AsyncSample
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/standard/data/sqlite/BackupSample
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/standard/data/sqlite/BatchingSample
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/standard/data/sqlite/BulkInsertSample
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/standard/data/sqlite/CollationSample
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/standard/data/sqlite/DapperSample
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/standard/data/sqlite/DateAndTimeSample
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/standard/data/sqlite/DeferredTransactionSample
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/standard/data/sqlite/DirtyReadSample
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/standard/data/sqlite/EncryptionSample
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/standard/data/sqlite/ExtensionsSample
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/standard/data/sqlite/HelloWorldSample
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/standard/data/sqlite/InteropSample
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/standard/data/sqlite/RegularExpressionSample
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/standard/data/sqlite/ResultMetadataSample
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/standard/data/sqlite/SavepointSample
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/standard/data/sqlite/ScalarFunctionSample
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/standard/data/sqlite/SqliteProviderSample
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/standard/data/sqlite/StreamingSample
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/standard/data/sqlite/SystemLibrarySample
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/standard/datetime/calendars/current-era/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/standard/datetime/calendars/current-era/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/standard/datetime/calendars/gannen/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/standard/datetime/calendars/gannen/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/standard/datetime/calendars/gregorian/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/standard/datetime/calendars/gregorian/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/standard/datetime/calendars/relaxed-range/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/standard/datetime/calendars/relaxed-range/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/standard/datetime/calendars/specify-era/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/standard/datetime/calendars/specify-era/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/standard/interop/pinvoke/import-resolver
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/standard/io/file-names/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/standard/io/file-names/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/standard/io/io-exceptions/cs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/standard/io/io-exceptions/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP Custom CopyToDataTable Examples/VB
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP DataView Samples/VB
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP DataViewWinForms Sample/VB
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/VB
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_certificatevalidationdifferences/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_collection_types_in_data_contracts/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_controlserviceinstancing/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_createsecuresession/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_createstatefulsct/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_creatests/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_customauthmgr/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_customauthpol/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_custombinding/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_custombindingsauthmode/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_customcertificatevalidator/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_customclaim/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_customclaimcomparison/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_customcredentials/vb/client
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_customcredentials/vb/service
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_customfederationbinding/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_customtoken/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_customtokenauthenticator/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_customtokenprovider/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_customx509token/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_dataarchitecture/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_datacontract/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_datacontractenumerations/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_datacontractversioning/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_delegation/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_federatedclient/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_federatedservice/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_federation/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_federationbinding/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_findclaimsperf/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_fourcerts/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_howtocheckformexrequestsinauthorization/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_howtosecureendpoint/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_howtosetcustomclientidentity/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_identity/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_impersonationanddelegation/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_knowntypeattribute/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_maxclockskew/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_programmingsecurity/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_protectionlevel/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_schemaimportexport/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_securewindowsservice/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_securewithcertificate/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_securitybestpractices/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_settingsecuritymode/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_signatureconfirmation/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_simpleimpersonation/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_standalonedatacontractserializer/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_tcpclient/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_unsecuredservice/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/c_xmlserializer/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/cfx_selfhost4/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/cfx_wf_gettingstarted/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/datacontractattribute/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/s_dualhttp/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/serializationguidelines/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/trustedsubsystems/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CFX/x509accessible/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CLR/CryptoWalkThru/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.SmartCardCSP/VB
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CLR/Exception.Throwing/VB
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Custom/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Enum/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.HowTo.RoundTrip/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CLR/HookUpDelegate/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CLR/HowToDecryptXMLElementAsymmetric/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CLR/HowToDecryptXMLElementX509/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CLR/HowToEncryptXMLElementAsymmetric/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CLR/HowToEncryptXMLElementSymmetric/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CLR/HowToEncryptXMLElementX509/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CLR/HowToGeneric/VB
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CLR/HowToSignXMLDocumentRSA/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CLR/HowToVerifyXMLDocumentRSA/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CLR/TimeZone2.Serialization/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.cancellation.callback/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.conversion/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.disposable/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.formatting.overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.generics.overview/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.globalization/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.observerdesign.howto/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.observerdesignpattern/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.locating/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CLR/formatting.numeric.custom/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CLR/generatingahash
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CLR/verifyingahash/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CLR_System/system.idisposable/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_CLR_System/system.reflectionwinstoreapp/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Data/DLinqAdoNet/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Data/DLinqCRUDOps/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Data/DLinqCascadeWorkaround/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Data/DLinqCommunicatingWithDatabase/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Data/DLinqCompositeKeys/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Data/DLinqCustomize/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Data/DLinqDataBinding/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Data/DLinqDebuggingSupport/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Data/DLinqGettingStarted/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Data/DLinqLocalMethodCall/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Data/DLinqMismatch/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Data/DLinqObjectIdentity/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Data/DLinqObjectModel/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Data/DLinqOverrideDefault/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Data/DLinqOverrideDefaultSproc/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryConcepts/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Data/DLinqQuerying/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Data/DLinqSQOTranslation/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Data/DLinqSerialization/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Data/DLinqSprox/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Data/DLinqSubmittingChanges/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Data/DLinqUDFS/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Data/DLinqWalk1AVB/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Data/DLinqWalk1VB/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Data/DLinqWalk2VB/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Data/DLinqWalk3VB/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Data/DLinqWalk4VB/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Conceptual Examples/VB
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Examples/VB
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Materialization Example/VB
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Data/DP ObjectServices Concepts/VB
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Data/dp conceptualmodelfunctions/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Data/dp entityservices concepts/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Data/dp l2e arraysandlistsinqueries/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Data/dp l2e canonicalandstorefunctions/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Data/dp l2e maptodbfunction/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Data/dp l2e methods on objectcontext/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Data/l2s_querycache/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Data/system.data.linq.conflictmodeenumeration/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Data/system.data.linq.dataloadoptions/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Data/system.data.linq.mapping.updatecheck/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Data/system.data.linq.memberchangeconflict/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Data/system.data.linq.objectchangeconflict/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Data/system.data.linq.refreshmode/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Data/system.data.linq.table/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Misc/cancellation/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Misc/fromasync/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Misc/plinq/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Misc/tpl_cancellation/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Misc/tpl_parallel/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Misc/tpl_partitioners/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Misc/tpl_taskintro/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_cancellationwinforms/vb/cancellationwinforms
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_readwrite/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_writerreaderswinforms/vb/writerreaderswinforms
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Remoting/HowToChunkSerializedData/VB
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQHowTos/VB
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQtoSQLHowTos/VB
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDateProperties/VB
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrExtensionMethods/VB
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrInterop/VB
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrIteratorWalkthrough/VB
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplicationLog/VB
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyResources/VB
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyWebService/VB
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrRelaxedDelegates/VB
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyApplicationLogFiltering/VB
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnWalkthroughDeclaringAndRaisingEvents/VB
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVersHelp60Controls/VB
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXmlSamples2/VB
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_VBCSharp/csasyncmethod/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_VBCSharp/csofficewalkthrough/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_VBCSharp/vbdynamicwalkthrough/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_VBCSharp/vbdynamicwalkthroughironpython/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_VBCSharp/vblinkcompiler/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_VBCSharp/vbvbalrlinecontinuation/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_VBCSharp/vbvbalrwithstatement/vb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Wpf/Highlighter/VisualBasic
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Wpf/InvokePatternApp/VisualBasic/InvokePatternClient
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Wpf/StringReaderWriter
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Wpf/UIAAutomationID_snip/VisualBasic
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Wpf/UIAFocusTracker_snip/VisualBasic
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Wpf/UIAFragmentProvider_snip/VisualBasic
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Wpf/UIATableItemPattern_snip/VisualBasic
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Wpf/UIATextPattern_snip/VisualBasic
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/VS_Snippets_Wpf/WindowMove/VisualBasic
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/how-to/conversions
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/language-reference/error-messages/bc30451
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/language-reference/error-messages/bc30456
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/programming-guide/dynamic-linq-expression-trees
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/programming-guide/language-features/data-types/named-tuples
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/programming-guide/language-features/data-types/tuples
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /samples/snippets/visualbasic/programming-guide/language-features/passing-named-arguments
+    schedule:
+      interval: daily

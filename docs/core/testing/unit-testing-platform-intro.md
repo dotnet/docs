@@ -16,7 +16,7 @@ Microsoft.Testing.Platform is a lightweight and portable alternative to [VSTest]
 
 This new testing platform is built on the .NET Developer Experience Testing team experience and aims at addressing the challenges encountered since the release of .NET Core in 2016. While there is a high level of compatibility between the .NET Framework and the .NET Core/.NET, some key features like the plugin system and the new possible form factors of .NET compilations have made it complex to evolve or fully support the new runtime feature with the current [VSTest platform](https://github.com/microsoft/vstest) architecture.
 
-The main driving factors for the evolution of the new testing platform are:
+The main driving factors for the evolution of the new testing platform are detailed in the following:
 
 * **Determinism**: Ensuring that running the same tests in different contexts (local, CI) will produce the same result. The new runtime does not rely on reflection or any other dynamic .NET runtime feature to coordinate a test run.
 
@@ -24,7 +24,7 @@ The main driving factors for the evolution of the new testing platform are:
 
 * **Compile-time registration of extensions**: Extensions, such as test frameworks and in/out-of-process extensions, are registered during compile-time to ensure determinism and to facilitate detection of inconsistencies.
 
-* **0 dependencies**: The core of the platform is a single .NET assembly, `Microsoft.Testing.Platform.dll`, which has no dependencies other than the supported runtimes.
+* **Zero dependencies**: The core of the platform is a single .NET assembly, `Microsoft.Testing.Platform.dll`, which has no dependencies other than the supported runtimes.
 
 * **Hostable**: The test runtime can be hosted in any .NET application. While a console application is commonly used to run tests, you can create a test application in any type of .NET application. This allows you to run tests within special contexts, such as devices or browsers, where there may be limitations.
 

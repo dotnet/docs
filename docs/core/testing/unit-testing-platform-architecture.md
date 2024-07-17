@@ -11,19 +11,19 @@ ms.date: 07/11/2024
 Welcome to our new test platform! To help you get acquainted with its capabilities, we'll start with a simple example that demonstrates how to register and run a test. This foundational example will give you a solid understanding of the core functionality and how to get started quickly.
 
 > [!NOTE]
-> You can use [this code](https://github.com/microsoft/testfx/tree/main/samples/public/TestingPlatformExamples) as a coded example of all the concepts that will be covered in this article.
+> All of the concepts in this article are exemplified in the Microsoft Test Framework repository as a complete sample. For more information, see the [Sample code](https://github.com/microsoft/testfx/tree/main/samples/public/TestingPlatformExamples).
 
 [Step 1: Register and Run a simple test application](#step-1-register-and-run-a-simple-test-application)
 
-In this initial example, we will walk you through the basic steps to declare and run a test application. This straightforward approach ensures that you can immediately start using the platform with minimal setup.
+In this initial example, you walk through the basic steps to declare and run a test application. This straightforward approach ensures that you can immediately start using the platform with minimal setup.
 
 [Step 2: Extending the Platform](#step-2-extending-the-platform)
 
-After you've discovered how to create your first test application, we will explore an example of extension to cover partially the concepts surrounding the test application extensions.
+After you've discovered how to create your first test application, you explore an example of extension to cover partially the concepts surrounding the test application extensions.
 
 [Step 3: Comprehensive Overview of Extension Points](#step-3-comprehensive-overview-of-extension-points)
 
-Once you're comfortable with the basics, we'll delve into the various extension points. This will include:
+Once you're comfortable with the basics, you delve into the various extension points. This will include:
 
 1. **Platform and Test Framework Capabilities**: Understanding the full range of capabilities provided by the platform and the test framework, allowing you to leverage them effectively.
 
@@ -35,7 +35,7 @@ Once you're comfortable with the basics, we'll delve into the various extension 
 
 [Step 4: Available Services and Helpers](#step-4-available-services)
 
-Finally, we will provide an exhaustive list of the available services and helper functions within the platform. This section will serve as a reference to help you leverage all the tools at your disposal for creating robust and efficient test extensions.
+Finally, you review an exhaustive list of the available services and helper functions within the platform. This section will serve as a reference to help you leverage all the tools at your disposal for creating robust and efficient test extensions.
 
 By following this structured approach, you will gain a comprehensive understanding of our test platform, from basic usage to advanced customization. Let's get started and explore the full potential of what our platform can offer!
 
@@ -48,10 +48,13 @@ In a console project `Contoso.UnitTests.exe` the following `Main` method defines
 ```csharp
 public static async Task<int> Main(string[] args)
 {
-    ITestApplicationBuilder testApplicationBuilder = await TestApplication.CreateBuilderAsync(args);
-    testApplicationBuilder.RegisterTestFramework(/* test framework registration factories */);
-    using ITestApplication testApplication = await testApplicationBuilder.BuildAsync();
-    return await testApplication.RunAsync();
+    ITestApplicationBuilder builder = await TestApplication.CreateBuilderAsync(args);
+    
+    builder.RegisterTestFramework();
+    
+    using ITestApplication testApp = await builder.BuildAsync();
+    
+    return await testApp.RunAsync();
 }
 ```
 
@@ -83,30 +86,37 @@ Passed! - Failed: 0, Passed: 1, Skipped: 0, Total: 1, Duration: 5ms - Contoso.Un
 
 ## Step 2: Extending the platform
 
-Test runs commonly collect code coverage information, or similar information to evaluate code quality. Such workloads may require configuration to be done before the test host process starts, for example setting environment variables.
+Test runs commonly collect code coverage information, or similar information to evaluate code quality. Such workloads may require configuration before the test host process starts, for example setting environment variables.
 
 The testing platform accommodates this by having **out-of-process** extensions. When running with an out-of-process extensions, the testing platform will start multiple processes and it will manage them appropriately.
 
 The following example demonstrates how to register a code coverage feature using a **TestHostController** extension.
 
 ```csharp
-ITestApplicationBuilder testApplicationBuilder = await TestApplication.CreateBuilderAsync(args);
-testApplicationBuilder.RegisterTestFramework(/* test framework registration factories */);
-testApplicationBuilder.AddCodeCoverage();
-using ITestApplication testApplication = await testApplicationBuilder.BuildAsync();
-return await testApplication.RunAsync();
+ITestApplicationBuilder builder = await TestApplication.CreateBuilderAsync(args);
+
+builder.RegisterTestFramework();
+builder.AddCodeCoverage();
+
+using ITestApplication testApp = await builder.BuildAsync();
+
+return await testApp.RunAsync();
 ```
 
-The `testApplicationBuilder.AddCodeCoverage();` internally uses the **TestHostController** extensibility point, which is an out-of-process extensibility point.
+The `builder.AddCodeCoverage();` internally uses the `TestHostController` extensibility point, which is an out-of-process extensibility point.
 
 ```csharp
 public static class TestApplicationBuilderExtensions
 {
-    public static ITestApplicationBuilder AddCodeCoverage(this ITestApplicationBuilder testApplicationBuilder)
+    public static ITestApplicationBuilder AddCodeCoverage(
+        this ITestApplicationBuilder builder)
     {
-        testApplicationBuilder.TestHostControllers.AddEnvironmentVariableProvider(...);
-        ....
-        return testApplicationBuilder;
+        builder.TestHostControllers
+               .AddEnvironmentVariableProvider(/* ... */);
+        
+        // ...
+        
+        return builder;
     }
 }
 ```
@@ -132,9 +142,11 @@ The above section provides a brief introduction to the architecture of the testi
 1. **In process** extensions can be accessed through the `TestHost` property of the test application builder. In process means that they will run in the same process as the test framework.
 
     ```csharp
-    ITestApplicationBuilder testApplicationBuilder = await TestApplication.CreateBuilderAsync(args);
-    testApplicationBuilder.RegisterTestFramework(/* test framework registration factories */);
-    testApplicationBuilder.TestHost.AddXXX(...);
+    ITestApplicationBuilder builder = await TestApplication.CreateBuilderAsync(args);
+    
+    builder.RegisterTestFramework();
+    
+    builder.TestHost.AddXXX(/* ... */);
     ```
 
     As observed, the most crucial extension point is the in-process *testing framework* (`RegisterTestFramework`), which is the only **mandatory** one.
@@ -142,8 +154,9 @@ The above section provides a brief introduction to the architecture of the testi
 1. **Out of process** extensions can be accessed through the `TestHostControllers` property of the test application builder. These extensions run in a separate process from the test framework to "observe" it.
 
     ```csharp
-    ITestApplicationBuilder testApplicationBuilder = await TestApplication.CreateBuilderAsync(args);
-    testApplicationBuilder.TestHostControllers.AddXXX(...);
+    ITestApplicationBuilder builder = await TestApplication.CreateBuilderAsync(args);
+    
+    builder.TestHostControllers.AddXXX(/* ... */);
     ```
 
 ## Step 3: Comprehensive Overview of Extension points
@@ -152,6 +165,6 @@ Let's start by getting familiar with the concept of [capabilities](./unit-testin
 
 ## Step 4: Available services
 
-The testing platform offers valuable services to both the testing framework and extension points. These services cater to common needs such as accessing the configuration, parsing and retrieving command-line arguments, obtaining the logging factory, and accessing the logging system, among others. `IServiceProvider` implements the [service locator pattern](https://en.wikipedia.org/wiki/Service_locator_pattern) for the testing platform.
+The testing platform offers valuable services to both the testing framework and extension points. These services cater to common needs such as accessing the configuration, parsing and retrieving command-line arguments, obtaining the logging factory, and accessing the logging system, among others. `IServiceProvider` implements the _service locator pattern_ for the testing platform.
 
 All the services, helpers and technical information about how to access and use these services is listed [here](./unit-testing-platform-architecture-services.md).

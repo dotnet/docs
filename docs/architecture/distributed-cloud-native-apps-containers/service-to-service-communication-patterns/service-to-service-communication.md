@@ -9,15 +9,15 @@ ms.date: 04/25/2024
 
 [!INCLUDE [download-alert](../includes/download-alert.md)]
 
-Moving from the front-end client, we now address back-end microservices communicate with each other.
+Moving from the front-end client, we now address how back-end microservices communicate with each other.
 
-When constructing a cloud-native application, you'll want to be sensitive to how back-end services communicate with each other. Ideally, the less inter-service communication, the better. However, avoidance isn't always possible as back-end services often rely on one another to complete an operation.
+Ideally, the less inter-service communication, the better. However, avoidance isn't always possible as back-end services often rely on one another to complete an operation.
 
 There are several widely accepted approaches to implementing cross-service communication. The *type of communication interaction* will often determine the best approach.
 
 Consider the following interaction types:
 
-- *Query* – when a calling microservice requires a response from a called microservice, such as, "Hey, give me the buyer information for a given customer Id."
+- *Query* – when a calling microservice requires a response from a called microservice, such as, "Hey, give me the buyer information for a given customer ID."
 
 - *Command* – when the calling microservice needs another microservice to execute an action but doesn't require a response, such as, "Hey, just ship this order."
 
@@ -33,7 +33,7 @@ Many times, one microservice might need to *query* another, requiring an immedia
 
 One option for implementing this scenario is for the calling back-end microservice to make direct HTTP requests to the microservices it needs to query.
 
-> ![Direct HTTP communication diagram](../media/direct-http-communication.png)
+> ![Direct HTTP communication diagram](media/direct-http-communication.png)
 
 **Figure 6-7**. Direct HTTP communication
 
@@ -41,7 +41,7 @@ While direct HTTP calls between microservices are relatively simple to implement
 
 Executing an infrequent request that makes a single direct HTTP call to another microservice might be acceptable for some systems. However, high-volume calls that invoke direct HTTP calls to multiple microservices aren't advisable. They can increase latency and negatively impact the performance, scalability, and availability of your system. Even worse, a long series of direct HTTP communication can lead to deep and complex chains of synchronous microservices calls:
 
-> ![Chaining HTTP queries diagram](../media/chaining-http-queries.png)
+> ![Chaining HTTP queries diagram](media/chaining-http-queries.png)
 
 **Figure 6-8**. Chaining HTTP queries
 
@@ -57,7 +57,7 @@ A popular option for removing microservice coupling is the [Materialized View pa
 
 Another option for eliminating microservice-to-microservice coupling is an [Aggregator microservice](https://devblogs.microsoft.com/cesardelatorre/designing-and-implementing-api-gateways-with-ocelot-in-a-microservices-and-container-based-architecture/).
 
-> ![Aggregator service diagram](../media/aggregator-service.png)
+> ![Aggregator service diagram](media/aggregator-service.png)
 
 **Figure 6-9**. Aggregator microservice
 
@@ -65,9 +65,9 @@ The pattern isolates an operation that makes calls to multiple back-end microser
 
 ### Request/Reply Pattern
 
-Another approach for decoupling synchronous HTTP messages is a [Request-Reply Pattern](https://www.enterpriseintegrationpatterns.com/patterns/messaging/RequestReply.html), which uses queuing communication. Communication using a queue is always a one-way channel, with a producer sending the message and consumer receiving it. With this pattern, both a request queue and response queue are implemented.
+Another approach for decoupling synchronous HTTP messages is a [Request-Reply pattern](https://www.enterpriseintegrationpatterns.com/patterns/messaging/RequestReply.html), which uses queuing communication. Communication using a queue is always a one-way channel, with a producer sending the message and consumer receiving it. With this pattern, both a request queue and response queue are implemented.
 
-> ![Request-reply pattern diagram](../media/request-reply-pattern.png)
+> ![Request-reply pattern diagram](media/request-reply-pattern.png)
 
 **Figure 6-10**. Request-reply pattern
 
@@ -77,39 +77,37 @@ Here, the message producer creates a query-based message that contains a unique 
 
 Another type of communication interaction is a *command*. A microservice may need another microservice to perform an action. The Ordering microservice may need the Shipping microservice to create a shipment for an approved order. In Figure 6-11, one microservice, called a Producer, sends a message to another microservice, the Consumer, commanding it to do something.
 
-> ![Command interaction with a queue diagram](../media/command-interaction-with-queue.png)
+> ![Command interaction with a queue diagram](media/command-interaction-with-queue.png)
 
 **Figure 6-11**. Command interaction with a queue
 
-Most often, the Producer doesn't require a response and can *fire-and-forget* the message. If a reply is needed, the Consumer sends a separate message back to Producer on another channel. A command message is best sent asynchronously with a message queue. supported by a lightweight message broker. In the previous diagram, note how a queue separates and decouples both services.
+Most often, the Producer doesn't require a response and can *fire-and-forget* the message. If a reply is needed, the Consumer sends a separate message back to Producer on another channel. A command message is best sent asynchronously with a message queue, supported by a lightweight message broker. In the previous diagram, note how a queue separates and decouples both services.
 
-A message queue is an intermediary construct through which a producer and consumer pass a message. Queues implement an asynchronous, point-to-point messaging pattern. The Producer knows where a command needs to be sent and routes appropriately. The queue guarantees that a message is processed by exactly one of the consumer instances that are reading from the channel. In this scenario, either the producer or consumer service can scale out without affecting the other. As well, technologies can be disparate on each side, meaning that we might have a Java microservice calling a [Golang](https://golang.org) microservice.
+A message queue is an intermediary construct through which a producer and consumer pass a message. Queues implement an asynchronous, point-to-point messaging pattern. The Producer knows where a command needs to be sent and routes appropriately. The queue guarantees that a message is processed by exactly one of the consumer instances that are reading from the channel. In this scenario, either the producer or consumer service can scale out without affecting the other. As well, technologies can be disparate on each side. For example, a Java microservice could call a [Golang](https://golang.org) microservice.
 
 In chapter 1, we talked about *backing services*. Backing services are ancillary resources upon which cloud-native systems depend. Message queues are backing services. The Azure cloud supports two types of message queues that your cloud-native systems can consume to implement command messaging: Azure Storage Queues and Azure Service Bus Queues.
 
 ### Azure Storage Queues
 
-Azure storage queues offer a simple queueing infrastructure that is fast, affordable, and backed by Azure storage accounts.
+Azure Storage queues offer a simple queueing infrastructure that is fast, affordable, and backed by Azure Storage accounts.
 
 [Azure Storage Queues](/azure/storage/queues/storage-queues-introduction) feature a REST-based queuing mechanism with reliable and persistent messaging. They provide a minimal feature set, but are inexpensive and store millions of messages. Their capacity ranges up to 500 TB. A single message can be up to 64 KB in size.
 
 You can access messages from anywhere in the world via authenticated calls using HTTP or HTTPS. Storage queues can scale out to large numbers of concurrent clients to handle traffic spikes.
 
-That said, there are limitations with the service:
+There are a few limitations with the service to be aware of:
 
 - Message order isn't guaranteed.
-
 - A message can only persist for seven days before it's automatically removed.
-
 - Support for state management, duplicate detection, or transactions isn't available.
 
-> ![Storage queue hierarchy diagram](../media/storage-queue-hierarchy.png)
+> ![Storage queue hierarchy diagram](media/storage-queue-hierarchy.png)
 
-**Figure 6-12**. The hierarchy of an Azure Storage Queue
+**Figure 6-12**. The hierarchy of an Azure Storage queue
 
 In the previous figure, note how storage queues store their messages in the underlying Azure Storage account.
 
-For developers, Microsoft provides several client and server-side libraries for Storage queue processing. Most major platforms are supported including .NET, Java, JavaScript, Ruby, Python, and Go. Developers should never communicate directly with these libraries. Doing so will tightly couple your microservice code to the Azure Storage Queue service. It's a better practice to insulate the implementation details of the API. Introduce an intermediation layer, or intermediate API, that exposes generic operations and encapsulates the concrete library. This loose coupling enables you to swap out one queuing service for another without having to make changes to the mainline service code.
+For developers, Microsoft provides several client and server-side libraries for storage queue processing. Most major platforms are supported including .NET, Java, JavaScript, Ruby, Python, and Go. Developers should never communicate directly with these libraries. Doing so will tightly couple your microservice code to the Azure Storage Queue service. It's a better practice to insulate the implementation details of the API. Introduce an intermediation layer, or intermediate API, that exposes generic operations and encapsulates the concrete library. This loose coupling enables you to swap out one queuing service for another without having to make changes to the mainline service code.
 
 Azure Storage queues are an economical option to implement command messaging in your cloud-native applications. Especially when a queue size will exceed 80 GB, or a simple feature set is acceptable. You only pay for the storage of the messages; there are no fixed hourly charges.
 
@@ -127,9 +125,9 @@ Two more enterprise features are partitioning and sessions. A conventional Servi
 
 [Service Bus Sessions](https://codingcanvas.com/azure-service-bus-sessions/) provide a way to group-related messages. Imagine a workflow scenario where messages must be processed together and the operation completed at the end. To take advantage, sessions must be explicitly enabled for the queue and each related messaged must contain the same session ID.
 
-However, there are some important caveats: Service Bus queues size is limited to 80 GB, which is much smaller than what's available from store queues. Additionally, Service Bus queues incur a base cost and charge per operation.
+However, there are some important caveats: Service Bus queue size is limited to 80 GB, which is much smaller than what's available from Azure Storage queues. Additionally, Service Bus queues incur a base cost and charge per operation.
 
-> ![Service Bus queue diagram](../media/service-bus-queue.png)
+> ![Service Bus queue diagram](media/service-bus-queue.png)
 
 **Figure 6-13**. The high-level architecture of a Service Bus queue
 
@@ -145,7 +143,7 @@ Eventing is a two-step process. For a given state change, a microservice publish
 
 Figure 6-14 shows a shopping basket microservice publishing an event with two other microservices subscribing to it.
 
-> ![Event-Driven messaging diagram](../media/event-driven-messaging.png)
+> ![Event-Driven messaging diagram](media/event-driven-messaging.png)
 
 **Figure 6-14**. Event-Driven messaging
 
@@ -154,7 +152,7 @@ Note the *event bus* component that sits in the middle of the communication chan
 With eventing, we move from queuing technology to *topics*. A [topic](/azure/service-bus-messaging/service-bus-dotnet-how-to-use-topics-subscriptions) is similar to a queue, but supports a one-to-many messaging pattern. One microservice publishes a message. Multiple subscribing microservices can choose to receive and act upon that message. Figure 6-16 shows a topic architecture.
 
 > [!div class="mx-imgBorder"]
-> ![Topic architecture diagram](../media/topic-architecture.png)
+> ![Topic architecture diagram](media/topic-architecture.png)
 
 In the previous figure, publishers send messages to the topic. At the end, subscribers receive messages from subscriptions. In the middle, the topic forwards messages to subscriptions based on a set of rules, shown in dark blue boxes. Rules act as a filter that forward specific messages to a subscription. Here, a "GetPrice" event would be sent to the price and logging subscriptions as the logging subscription has chosen to receive all messages.  A "GetInformation" event would be sent to the information and logging subscriptions.
 
@@ -184,7 +182,7 @@ A sweet spot for Event Grid is its deep integration into the fabric of Azure inf
 
 When publishing and subscribing to native events from Azure resources, no coding is required. With simple configuration, you can integrate events from one Azure resource to another leveraging built-in plumbing for Topics and Subscriptions.
 
-> ![Event Grid anatomy diagram](../media/event-grid-anatomy.png)
+> ![Event Grid anatomy diagram](media/event-grid-anatomy.png)
 
 **Figure 6-15**. Event Grid anatomy
 
@@ -198,27 +196,41 @@ Event Grid is a fully managed serverless cloud service. It dynamically scales ba
 
 ### Streaming messages in the Azure cloud
 
-Azure Service Bus and Event Grid provide great support for applications that expose single, discrete events like a new document has been inserted into a Cosmos DB. But, what if your cloud-native system needs to process a *stream of related events*? [Event streams](/archive/msdn-magazine/2015/february/microsoft-azure-the-rise-of-event-stream-oriented-systems) are more complex. They're typically time-ordered, interrelated, and must be processed as a group.
+Azure Service Bus and Event Grid provide great support for applications that expose single, discrete events. For example, when a new document has been inserted into a Cosmos DB table. But what if your cloud-native system needs to process a *stream of related events*? [Event streams](/archive/msdn-magazine/2015/february/microsoft-azure-the-rise-of-event-stream-oriented-systems) are more complex. They're typically time-ordered, interrelated, and must be processed as a group.
 
 [Azure Event Hub](https://azure.microsoft.com/services/event-hubs/) is a data streaming platform and event ingestion service that collects, transforms, and stores events. It's fine-tuned to capture streaming data, such as continuous event notifications emitted from a telemetry context. The service is highly scalable and can store and [process millions of events per second](/azure/event-hubs/event-hubs-about). Shown in Figure 6-16, it's often a front door for an event pipeline, decoupling ingest stream from event consumption.
 
-> ![Azure Event Hub diagram](../media/azure-event-hub.png)
+> ![Azure Event Hub diagram](media/azure-event-hub.png)
 
 **Figure 6-16**. Azure Event Hub
 
-Event Hub supports low latency and configurable time retention. Unlike queues and topics, Event Hubs keep event data after it's been read by a consumer. This feature enables other data analytic services, both internal and external, to replay the data for further analysis. Events stored in event hub are only deleted upon expiration of the retention period, which is one day by default, but configurable.
+Event Hub supports low latency and configurable time retention. Unlike queues and topics, Event Hubs keep event data after it's been read by a consumer. This feature enables other data analytic services, both internal and external, to replay the data for further analysis. Events stored in Event Hub are only deleted upon expiration of the retention period, which is one day by default, but configurable.
 
 Event Hub supports common event publishing protocols including HTTPS and AMQP. It also supports Kafka 1.0. [Existing Kafka applications can communicate with Event Hub](/azure/event-hubs/event-hubs-for-kafka-ecosystem-overview) using the Kafka protocol providing an alternative to managing large Kafka clusters. Many open-source cloud-native systems embrace Kafka.
 
 Event Hubs implements message streaming through a [partitioned consumer model](/azure/event-hubs/event-hubs-features) in which each consumer only reads a specific subset, or partition, of the message stream. This pattern enables tremendous horizontal scale for event processing and provides other stream-focused features that are unavailable in queues and topics. A partition is an ordered sequence of events that is held in an event hub. As newer events arrive, they're added to the end of this sequence.
 
-> ![Event Hub partitioning diagram](../media/event-hub-partitioning.png)
+> ![Event Hub partitioning diagram](media/event-hub-partitioning.png)
 
 **Figure 6-17**. Event Hub partitioning
 
 Instead of reading from the same resource, each consumer group reads across a subset, or partition, of the message stream.
 
 For cloud-native applications that must stream large numbers of events, Azure Event Hub can be a robust and affordable solution.
+
+## Service-to-service communications in .NET Aspire
+
+When you build a cloud-native app using the .NET Aspire stack, service discovery is much easier and managed by code in the App Host project. The stack includes many components that support service-to-service communications. At the time of writing, these include:
+
+- Apache Kafka.
+- Azure Storage Queues.
+- Azure Event Hubs.
+- Azure Service Bus.
+- RabbitMQ.
+
+.NET Aspire makes it easier to manage and discover these services for your entire solution. You create and manage them in the centralized App Host project and pass them to microservices that use them. In the microservices, you can easiy obtain objects to work with them using dependency injection. For example, if you're working with Azure Service Bus, you get a instance of the `ServiceBusClient` class to use for interacting with queues and topics.
+
+However, the code that sends and retrieves messages will be similar, whether you use .NET Aspire or not.
 
 >[!div class="step-by-step"]
 >[Previous](front-end-client-communication.md)

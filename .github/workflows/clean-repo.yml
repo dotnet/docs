@@ -5,6 +5,9 @@ on:
     - cron: "0 1 1 * *" # Runs at 01:00, on day 1 of the month
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   clean-repo:
     runs-on: ubuntu-latest
@@ -14,12 +17,17 @@ jobs:
       pull-requests: write
 
     steps:
-      - uses: actions/checkout@v4.1.7
+      - name: Harden Runner
+        uses: step-security/harden-runner@17d0e2bd7d51742c71671bd19fa12bdc9d40a3d6 # v2.8.1
+        with:
+          egress-policy: audit
+
+      - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
 
       # Call clean repo
       - name: Clean repo
         id: clean-repo-step
-        uses: dotnet/docs-tools/cleanrepo/CleanRepo@main
+        uses: dotnet/docs-tools/cleanrepo/CleanRepo@5e8bcc78465d45a7544bba56509a1a69922b6a5a # main
         with:
           docfx_directory: '.'
           articles_directory: 'docs'

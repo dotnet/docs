@@ -5,7 +5,7 @@ using System.ClientModel.Primitives;
 using System.Text.Json;
 
 // Create the client
-OpenAIClient client = new("your-openai-api-key");
+OpenAIClient client = new("<your-openai-api-key>");
 ChatClient chatClient = client.GetChatClient("gpt-4");
 
 // Create the request content

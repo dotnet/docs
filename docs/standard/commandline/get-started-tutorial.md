@@ -93,8 +93,10 @@ You can use any of the following ways to test while developing a command-line ap
 * Use `dotnet run` and pass option values to the app instead of to the `run` command by including them after `--`, as in the following example:
 
   ```dotnetcli
-  dotnet run -- --file scl.runtimeconfig.json
+  dotnet run -- --file bin/Debug/net6.0/scl.runtimeconfig.json
   ```
+
+> The working directory is the csproj folder, so the relative path to `scl.runtimeconfig.json` is from the csproj folder.
 
   In .NET 7.0.100 SDK Preview, you can use the `commandLineArgs` of a *launchSettings.json* file by running the command `dotnet run --launch-profile <profilename>`.
 

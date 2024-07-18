@@ -32,6 +32,16 @@ Get started with AI by creating a simple .NET 8 console chat application. The ap
 
 :::zone-end
 
+## Get the sample project
+
+[!INCLUDE [clone-sample-repo](includes/clone-sample-repo.md)]
+
+:::zone target="docs" pivot="azure-openai"
+
+[!INCLUDE [deploy-azd](includes/deploy-azd.md)]
+
+:::zone-end
+
 ## Try the the Hiking Images sample
 
 <!-- markdownlint-disable MD029 MD044 -->
@@ -39,9 +49,18 @@ Get started with AI by creating a simple .NET 8 console chat application. The ap
 
 1. Clone the repository: [dotnet/ai-samples](https://github.com/dotnet/ai-samples)
 
-1. From a terminal or command prompt, navigate to the `openai\05-HikeImages` directory.
+1. Run the following commands to configure your OpenAI API key as a secret for the sample app:
 
-    [!INCLUDE [download-alert](includes/set-openai-secrets.md)]
+    ```bash
+    dotnet user-secrets init
+    dotnet user-secrets set OpenAIKey <your-openai-key>
+    ```
+
+1. Use the `dotnet run` command to run the app:
+
+    ```dotnetcli
+    dotnet run
+    ```
 
 :::zone-end
 
@@ -49,17 +68,16 @@ Get started with AI by creating a simple .NET 8 console chat application. The ap
 
 1. From a terminal or command prompt, navigate to the `azure-openai\05-HikeImages` directory.
 
-:::zone-end
-
-2. It's now time to try the console application. Type in the following to run the app:
+2. Use the `dotnet run` command to run the app:
 
     ```dotnetcli
     dotnet run
     ```
 
-    :::zone target="docs" pivot="azure-openai"
-    If you get an error message the Azure OpenAI resources may not have finished deploying. Wait a couple of minutes and try again.
-    :::zone-end
+> [!NOTE]
+> If you get an error message, the Azure OpenAI resources may not have finished deploying. Wait a couple of minutes and try again.
+
+:::zone-end
 <!-- markdownlint-enable MD029 MD044  -->
 
 ## Explore the code
@@ -128,6 +146,8 @@ When you no longer need the sample application or resources, remove the correspo
 ```azdeveloper
 azd down
 ```
+
+[!INCLUDE [troubleshoot](includes/troubleshoot.md)]
 
 :::zone-end
 

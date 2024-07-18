@@ -32,16 +32,35 @@ Get started with AI by creating a simple .NET 8 console chat application to summ
 
 :::zone-end
 
+## Get the sample project
+
+[!INCLUDE [clone-sample-repo](includes/clone-sample-repo.md)]
+
+:::zone target="docs" pivot="azure-openai"
+
+[!INCLUDE [deploy-azd](includes/deploy-azd.md)]
+
+:::zone-end
+
 ## Try the Hiking Benefits Summary sample
 
 <!-- markdownlint-disable MD029 MD044 -->
 :::zone target="docs" pivot="openai"
 
-1. Clone the repository: [dotnet/ai-samples](https://github.com/dotnet/ai-samples)
-
 1. From a terminal or command prompt, navigate to the `openai\01-HikeBenefitsSummary` directory.
 
-    [!INCLUDE [download-alert](includes/set-openai-secrets.md)]
+1. Run the following commands to configure your OpenAI API key as a secret for the sample app:
+
+    ```bash
+    dotnet user-secrets init
+    dotnet user-secrets set OpenAIKey <your-openai-key>
+    ```
+
+1. Use the `dotnet run` command to run the app:
+
+    ```dotnetcli
+    dotnet run
+    ```
 
 :::zone-end
 
@@ -49,17 +68,16 @@ Get started with AI by creating a simple .NET 8 console chat application to summ
 
 1. From a terminal or command prompt, navigate to the `azure-openai\01-HikeBenefitsSummary` directory.
 
-:::zone-end
-
-2. It's now time to try the console application. Type in the following to run the app:
+2. Use the `dotnet run` command to run the app:
 
     ```dotnetcli
     dotnet run
     ```
 
-    :::zone target="docs" pivot="azure-openai"
-    If you get an error message the Azure OpenAI resources may not have finished deploying. Wait a couple of minutes and try again.
-    :::zone-end
+> [!NOTE]
+> If you get an error message, the Azure OpenAI resources may not have finished deploying. Wait a couple of minutes and try again.
+
+:::zone-end
 
 ## Explore the code
 
@@ -127,7 +145,8 @@ Use the `InvokePromptAsync` function to have the model generate a response based
 
 ```csharp
 // Submit the prompt and print out the response
-string response = await kernel.InvokePromptAsync<string>(prompt, new(new OpenAIPromptExecutionSettings() { MaxTokens = 400 }));
+string response = await kernel.InvokePromptAsync<string>(
+    prompt, new(new OpenAIPromptExecutionSettings() { MaxTokens = 400 }));
 Console.WriteLine($"assistant >>> {response}");
 ```
 
@@ -143,7 +162,10 @@ When you no longer need the sample application or resources, remove the correspo
 azd down
 ```
 
+[!INCLUDE [troubleshoot](includes/troubleshoot.md)]
+
 :::zone-end
+
 
 ## Next steps
 

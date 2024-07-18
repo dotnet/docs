@@ -32,16 +32,35 @@ Get started with Semantic Kernel by creating a simple .NET 8 console chat applic
 
 :::zone-end
 
+## Get the sample project
+
+[!INCLUDE [clone-sample-repo](includes/clone-sample-repo.md)]
+
+:::zone target="docs" pivot="azure-openai"
+
+[!INCLUDE [deploy-azd](includes/deploy-azd.md)]
+
+:::zone-end
+
 ## Try the HikerAI sample
 
 <!-- markdownlint-disable MD029 MD044 -->
 :::zone target="docs" pivot="openai"
 
-1. Clone the repository: [dotnet/ai-samples](https://github.com/dotnet/ai-samples)
-
 1. From a terminal or command prompt, navigate to the `openai\02-HikerAI` directory.
 
-    [!INCLUDE [download-alert](includes/set-openai-secrets.md)]
+1. Run the following commands to configure your OpenAI API key as a secret for the sample app:
+
+    ```bash
+    dotnet user-secrets init
+    dotnet user-secrets set OpenAIKey <your-openai-key>
+    ```
+
+1. Use the `dotnet run` command to run the app:
+
+    ```dotnetcli
+    dotnet run
+    ```
 
 :::zone-end
 
@@ -49,23 +68,16 @@ Get started with Semantic Kernel by creating a simple .NET 8 console chat applic
 
 1. From a terminal or command prompt, navigate to the `azure-openai\02-HikerAI` directory.
 
-:::zone-end
-
-2. Use the following to run the app:
+2. Use the `dotnet run` command to run the app:
 
     ```dotnetcli
     dotnet run
     ```
 
-    :::zone target="docs" pivot="azure-openai"
-    If you get an error message, the Azure OpenAI resources may not have finished deploying. Wait a couple of minutes and try again.
-    :::zone-end
+> [!NOTE]
+> If you get an error message, the Azure OpenAI resources may not have finished deploying. Wait a couple of minutes and try again.
 
-<!-- markdownlint-enable MD029 MD044  -->
-
-<!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="openai"
-<!-- markdownlint-enable MD044 -->
+:::zone-end
 
 ## Explore the code
 
@@ -122,15 +134,17 @@ Add a system prompt to provide more context to the model, which influences model
 ```csharp
 // Start the conversation with context for the AI model
 ChatHistory chatHistory = new("""
-    You are a hiking enthusiast who helps people discover fun hikes in their area. You are upbeat and friendly. 
-    You introduce yourself when first saying hello. When helping people out, you always ask them 
-    for this information to inform the hiking recommendation you provide:
+    You are a hiking enthusiast who helps people discover fun hikes in their area. 
+    You are upbeat and friendly. You introduce yourself when first saying hello.
+    When helping people out, you always ask them for this information
+    to inform the hiking recommendation you provide:
 
     1. Where they are located
     2. What hiking intensity they are looking for
 
-    You will then provide three suggestions for nearby hikes that vary in length after you get that information. 
-    You will also share an interesting fact about the local nature on the hikes when making a recommendation.
+    You will then provide three suggestions for nearby hikes that vary in length
+    after you get that information. You will also share an interesting fact about
+    the local nature on the hikes when making a recommendation.
     """);
 ```
 
@@ -172,7 +186,10 @@ Remove the corresponding deployment and all resources when you no longer need th
 azd down
 ```
 
+[!INCLUDE [troubleshoot](includes/troubleshoot.md)]
+
 :::zone-end
+
 
 ## Next steps
 

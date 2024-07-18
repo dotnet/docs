@@ -35,12 +35,12 @@ Windows now incorporates a preinstalled [icu.dll](/windows/win32/intl/internatio
 
 The following table shows which versions of .NET are capable of loading the ICU library across different Windows client and server versions:
 
-.NET version| Windows version
----|---
-.NET 5 or .NET 6|Windows client 10 version 1903 or later
-.NET 5 or .NET 6|Windows Server 2022 or later
-.NET 7 or later|Windows client 10 version 1703 or later
-.NET 7 or later|Windows Server 2019 or later
+| .NET version     | Windows version                         |
+|------------------|-----------------------------------------|
+| .NET 5 or .NET 6 | Windows client 10 version 1903 or later |
+| .NET 5 or .NET 6 | Windows Server 2022 or later            |
+| .NET 7 or later  | Windows client 10 version 1703 or later |
+| .NET 7 or later  | Windows Server 2019 or later            |
 
 > [!NOTE]
 > .NET 7 and later versions have the capability to load ICU on older Windows versions, in contrast to .NET 6 and .NET 5.
@@ -120,26 +120,26 @@ Console.WriteLine(foo.StartsWith('\0'));
 > False
 > ```
 
-To avoid this behavior, use the `char` parameter overload or `StringComparison.Oridinal`.
+To avoid this behavior, use the `char` parameter overload or `StringComparison.Ordinal`.
 
 #### TimeZoneInfo.FindSystemTimeZoneById
 
 ICU provides the flexibility to create <xref:System.TimeZoneInfo> instances using [IANA](https://www.iana.org/time-zones) time zone IDs, even when the application is running on Windows. Similarly, you can create <xref:System.TimeZoneInfo> instances with Windows time zone IDs, even when running on non-Windows platforms. However, it's important to note that this functionality isn't available when using [NLS mode](#use-nls-instead-of-icu) or [globalization invariant mode](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md).
 
-#### ICU dependent APIs
+#### ICU-dependent APIs
 
 .NET introduced APIs that are dependent on ICU. These APIs can succeed only when using ICU. Here are some examples:
 
 - <xref:System.TimeZoneInfo.TryConvertIanaIdToWindowsId(System.String,System.String@)>
 - <xref:System.TimeZoneInfo.TryConvertWindowsIdToIanaId%2A>
 
-On the Windows versions listed in the [ICU on Windows](#icu-on-windows) section table, the mentioned APIs will consistently succeed. However, on older versions of Windows, these APIs will consistently fail. In such cases, you can enable the [app-local ICU](#app-local-icu) feature to ensure the success of these APIs. On non-Windows platforms, these APIs will always succeed regardless of the version.
+On the Windows versions listed in the [ICU on Windows](#icu-on-windows) section table, the mentioned APIs succeed. However, on older versions of Windows, these APIs fail. In such cases, you can enable the [app-local ICU](#app-local-icu) feature to ensure the success of these APIs. On non-Windows platforms, these APIs always succeed regardless of the version.
 
 In addition, it's crucial for apps to ensure that they're not running in [globalization invariant mode](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md) or [NLS mode](#use-nls-instead-of-icu) to guarantee the success of these APIs.
 
 ### Use NLS instead of ICU
 
-Using ICU instead of NLS might result in behavioral differences with some globalization-related operations. To revert back to using NLS, a developer can opt out of the ICU implementation. Applications can enable NLS mode in any of the following ways:
+Using ICU instead of NLS might result in behavioral differences with some globalization-related operations. To revert back to using NLS, you can opt out of the ICU implementation. Applications can enable NLS mode in any of the following ways:
 
 - In the project file:
 

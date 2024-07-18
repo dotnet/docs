@@ -124,7 +124,7 @@ The `AzureOpenAIChatCompletionService` service facilitates the requests and resp
 AzureOpenAIChatCompletionService service = new(deployment, endpoint, key);
 ```
 
-Once the `AzureOpenAIChatCompletionService` client is created, we read the content of the file `hikes.md` and use it to provide more context to the model by adding a system prompt. This instructs the model how you'd like it to act during the conversation.
+Once the `OpenAIChatCompletionService` client is created, the app reads the content of the file `hikes.md` and uses it to provide more context to the model by adding a system prompt. This influences model behavior and the generated completions during the conversation.
 :::zone-end
 
 ```csharp
@@ -138,9 +138,7 @@ ChatHistory chatHistory = new($"""
 Console.WriteLine($"{chatHistory.Last().Role} >>> {chatHistory.Last().Content}");
 ```
 
-Then you can add a user message to the model by using the `AddUserMessage` function.
-
-To have the model generate a response based off the system prompt and the user request, use the `GetChatMessageContentAsync` function.
+Add a user prompt to the model by using the `AddUserMessage` function.Call the `GetChatMessageContentAsync` function to instruct the model to generate a response based off the system and user prompts.
 
 ```csharp
 // Start the conversation
@@ -154,12 +152,12 @@ chatHistory.Add(
 Console.WriteLine($"{chatHistory.Last().Role} >>> {chatHistory.Last().Content}");
 ```
 
-To maintain the chat history or context, make sure you add the response from the model to the `chatHistory`. It's time to make our user request about our data again using the `AddUserMessage` and `GetChatMessageContentAsync` function.
+To maintain the chat history or context, add the response from the model to the `chatHistory`.
 
 ```csharp
 // Continue the conversation with a question.
 chatHistory.AddUserMessage(
-    "I would like to know the ratio of the hikesI've done in Canada compared to other countries.");
+    "I would like to know the ratio of the hikes I've done in Canada compared to other countries.");
 Console.WriteLine($"{chatHistory.Last().Role} >>> {chatHistory.Last().Content}");
 
 chatHistory.Add(await service.GetChatMessageContentAsync(

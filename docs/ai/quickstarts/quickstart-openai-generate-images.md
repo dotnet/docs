@@ -12,9 +12,7 @@ zone_pivot_groups: openai-library
 
 # Generate images using AI with .NET
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="openai"
-<!-- markdownlint-enable MD044 -->
 
 Get started with AI by creating a simple .NET 8 console chat application. The application will run locally and use the OpenAI `dall-e-3` model to generate postal card images so you can invite your friends for a hike! Follow these steps to get access to OpenAI and learn how to use Semantic Kernel.
 
@@ -22,9 +20,7 @@ Get started with AI by creating a simple .NET 8 console chat application. The ap
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="azure-openai"
-<!-- markdownlint-enable MD044 -->
 
 Get started with AI by creating a simple .NET 8 console chat application. The application will run locally and use the OpenAI `dall-e-3` model to generate postal card images so you can invite your friends for a hike! Follow these steps to provision Azure OpenAI and learn how to use the .NET Azure OpenAI SDK.
 
@@ -44,7 +40,6 @@ Get started with AI by creating a simple .NET 8 console chat application. The ap
 
 ## Try the the Hiking Images sample
 
-<!-- markdownlint-disable MD029 MD044 -->
 :::zone target="docs" pivot="openai"
 
 1. Clone the repository: [dotnet/ai-samples](https://github.com/dotnet/ai-samples)
@@ -78,15 +73,13 @@ Get started with AI by creating a simple .NET 8 console chat application. The ap
     > If you get an error message, the Azure OpenAI resources may not have finished deploying. Wait a couple of minutes and try again.
 
 :::zone-end
-<!-- markdownlint-enable MD029 MD044  -->
 
 ## Explore the code
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="openai"
 The application uses the [`Microsoft.SemanticKernel`](https://www.nuget.org/packages/Microsoft.SemanticKernel) package to send and receive requests to the OpenAI service.
 
-The entire application is contained within the **Program.cs** file. The first several lines of code set configuration values and gets the OpenAI Key that was previously set using the `dotnet user-secrets` command.
+The **Program.cs** file contains all of the app code. The first several lines of code set configuration values and get the OpenAI Key that was previously set using the `dotnet user-secrets` command.
 
 ```csharp
 var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
@@ -102,13 +95,13 @@ OpenAITextToImageService textToImageService = new(key, null);
 :::zone-end
 
 :::zone target="docs" pivot="azure-openai"
-<!-- markdownlint-enable MD044 -->
+
 The application uses the [`Microsoft.SemanticKernel`](https://www.nuget.org/packages/Microsoft.SemanticKernel) package to send and receive requests to the Azure OpenAI service.
 
 The entire application is contained within the _Program.cs_ file. The first several lines of code load secrets and configuration values that were set in the `dotnet user-secrets` for you during the application provisioning.
 
 ```csharp
-// == Retrieve the local secrets saved during the Azure deployment ==========
+// Retrieve the local secrets saved during the Azure deployment
 var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
 string endpoint = config["AZURE_OPENAI_ENDPOINT"];
 string deployment = config["AZURE_OPENAI_GPT_NAME"];
@@ -123,7 +116,9 @@ AzureOpenAITextToImageService textToImageService = new(deployment, endpoint, key
 
 :::zone-end
 
-Once the `textToImageService` service is created, provide more context to the model by adding a system prompt. A good prompt to generate images requires a clear description: what is in the images, specific color to use, style (drawing, painting, realistic or cartoony). The model will use this prompt to generate the image. To have the model generate a response based off the user request, use the `GenerateImageAsync` function, and specify the size and quality.
+Provide context and instructions to the model by adding a system prompt. A good prompt to generate images requires a clear description: what is in the image, the specific color to use, style (drawing, painting, realistic or cartoony). 
+
+Use the `GenerateImageAsync` function to have the model generate a response based off the user request and specify the size and quality.
 
 ```csharp
 // Generate the image

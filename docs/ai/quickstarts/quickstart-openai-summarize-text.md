@@ -12,9 +12,7 @@ zone_pivot_groups: openai-library
 
 # Summarize text using AI chat app with .NET
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="openai"
-<!-- markdownlint-enable MD044 -->
 
 Get started with AI by creating a simple .NET 8 console chat application to summarize text. The application runs locally and uses the OpenAI `gpt-3.5-turbo` model. Follow these steps to get access to OpenAI and learn how to use Semantic Kernel.
 
@@ -22,9 +20,7 @@ Get started with AI by creating a simple .NET 8 console chat application to summ
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="azure-openai"
-<!-- markdownlint-enable MD044 -->
 
 Get started with AI by creating a simple .NET 8 console chat application to summarize text. The app runs locally and connects to the OpenAI `gpt-35-turbo` model deployed into Azure OpenAI. Follow these steps to provision the Azure OpenAI service and learn how to use Semantic Kernel.
 
@@ -44,7 +40,6 @@ Get started with AI by creating a simple .NET 8 console chat application to summ
 
 ## Try the Hiking Benefits Summary sample
 
-<!-- markdownlint-disable MD029 MD044 -->
 :::zone target="docs" pivot="openai"
 
 1. From a terminal or command prompt, navigate to the `openai\01-HikeBenefitsSummary` directory.
@@ -81,13 +76,11 @@ Get started with AI by creating a simple .NET 8 console chat application to summ
 
 ## Explore the code
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="openai"
-<!-- markdownlint-enable MD044 -->
 
 The app uses the [`Microsoft.SemanticKernel`](https://www.nuget.org/packages/Microsoft.SemanticKernel) package to send and receive requests to the OpenAI service.
 
-The entire application is contained within the **Program.cs** file. The first several lines of code set configuration values and gets the OpenAI Key that was previously set using the `dotnet user-secrets` command.
+The **Program.cs** file contains all of the app code. The first several lines of code set configuration values and get the OpenAI Key that was previously set using the `dotnet user-secrets` command.
 
 ```csharp
 var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
@@ -109,10 +102,10 @@ Kernel kernel = Kernel.CreateBuilder()
 :::zone target="docs" pivot="azure-openai"
 The application uses the [`Microsoft.SemanticKernel`](https://www.nuget.org/packages/Microsoft.SemanticKernel) package to send and receive requests to the Azure OpenAI service.
 
-The entire application is contained within the **Program.cs** file. The first several lines of code retrieve secrets and configuration values that were set in the `dotnet user-secrets` for you during the application provisioning.
+The **Program.cs** file contains all of the app code. The first several lines of code load secrets and configuration values that were set in the `dotnet user-secrets` for you during the application provisioning.
 
 ```csharp
-// == Retrieve the local secrets saved during the Azure deployment ==========
+// Retrieve the local secrets saved during the Azure deployment
 var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
 string endpoint = config["AZURE_OPENAI_ENDPOINT"];
 string deployment = config["AZURE_OPENAI_GPT_NAME"];
@@ -130,7 +123,7 @@ Kernel kernel = Kernel.CreateBuilder()
 
 :::zone-end
 
-Once the `Kernel` is created, read the contents of the file `benefits.md` and create a `prompt` to ask the the model to summarize that text.
+Once the `Kernel` is created, the app code reads the `benefits.md` file content and uses it to create a `prompt` for model. The prompt instructs the model to summarize the text.
 
 ```csharp
 // Create and print out the prompt
@@ -141,7 +134,7 @@ string prompt = $"""
 Console.WriteLine($"user >>> {prompt}");
 ```
 
-Use the `InvokePromptAsync` function to have the model generate a response based on the `prompt` value.
+The `InvokePromptAsync` function sends the `prompt` to the model to generate a response.
 
 ```csharp
 // Submit the prompt and print out the response

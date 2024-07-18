@@ -33,7 +33,7 @@ Dependency injection is a design pattern that allows you to remove hard-coded de
 The abstractions for DI in .NET are defined in the [Microsoft.Extensions.DependencyInjection.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.DependencyInjection.Abstractions) NuGet package:
 
 - <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>: Defines a contract for a collection of service descriptors.
-- <xref:Microsoft.Extensions.DependencyInjection.IServiceProvider>: Defines a mechanism for retrieving a service object.
+- <xref:System.IServiceProvider>: Defines a mechanism for retrieving a service object.
 - <xref:Microsoft.Extensions.DependencyInjection.ServiceDescriptor>: Describes a service with its service type, implementation, and lifetime.
 
 In .NET, DI is managed by adding services and configuring them in an `IServiceCollection`. After services are registered, as `IServiceProvider` instance is built by calling the <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider%2A> method. The `IServiceProvider` acts as a container of all the registered services, and it's used to resolve services.

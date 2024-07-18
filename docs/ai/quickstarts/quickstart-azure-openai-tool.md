@@ -55,9 +55,9 @@ Get started with AI by creating a simple .NET 8 console chat application. The ap
     dotnet run
     ```
 
-:::zone target="docs" pivot="azure-openai"
+    :::zone target="docs" pivot="azure-openai"
     If you get an error message the Azure OpenAI resources may not have finished deploying. Wait a couple of minutes and try again.
-:::zone-end
+    :::zone-end
 <!-- markdownlint-enable MD029 MD044  -->
 
 ## Understand the code

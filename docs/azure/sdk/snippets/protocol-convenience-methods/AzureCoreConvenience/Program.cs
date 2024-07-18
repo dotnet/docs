@@ -2,7 +2,7 @@
 using Azure.Identity;
 
 // Create the client
-var safetyClient = new ContentSafetyClient(
+ContentSafetyClient safetyClient = new(
     new Uri("https://contentsafetyai.cognitiveservices.azure.com/"),
     new DefaultAzureCredential());
 

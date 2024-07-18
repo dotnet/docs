@@ -12,7 +12,7 @@ The Azure SDK client libraries provide an interface to Azure services by transla
 
 ## Understand protocol and convenience methods
 
-The Azure SDK for .NET client libraries can expose two different categories of methods to make requests to an Azure service:
+An Azure SDK for .NET client library can expose two different categories of methods to make requests to an Azure service:
 
 - **Protocol methods** provide a thin wrapper around the underlying REST API for a corresponding Azure service. These methods map primitive input parameters to HTTP request values and return a raw HTTP response object.
 
@@ -20,7 +20,7 @@ The Azure SDK for .NET client libraries can expose two different categories of m
 
 ### Azure SDK client library dependency patterns
 
-Protocol and convenience methods implement slightly different patterns based on the underlying package dependency chain of the respective library. The Azure SDK for .NET client libraries depend on one of two different core libraries:
+Protocol and convenience methods implement slightly different patterns based on the underlying package dependency chain of the respective library. An Azure SDK for .NET client library depends on one of two different foundational libraries:
 
 - [**Azure.Core**](/dotnet/api/overview/azure/core-readme) provides shared primitives, abstractions, and helpers for building modern Azure SDK client libraries. These libraries follow the [Azure SDK Design Guidelines for .NET](https://azure.github.io/azure-sdk/dotnet_introduction.html) and use package names and namespaces prefixed with *Azure*, such as [`Azure.Storage.Blobs`](/dotnet/api/overview/azure/storage.blobs-readme).
 
@@ -46,7 +46,7 @@ The coding patterns and types used by client library protocol and convenience me
 
 ### Libraries that depend on Azure.Core
 
-Many Azure SDK client libraries depend on the `Azure.Core` library. For example, the [`Azure.AI.ContentSafety`](/dotnet/api/overview/azure/ai.contentsafety-readme) library depends on the `Azure.Core` library and provides a `ContentSafetyClient` class that exposes both protocol and convenience methods.
+Azure SDK client libraries adhering to the [latest design guidelines](https://azure.github.io/azure-sdk/general_introduction.html) depend on the `Azure.Core` library. For example, the [`Azure.AI.ContentSafety`](/dotnet/api/overview/azure/ai.contentsafety-readme) library depends on the `Azure.Core` library and provides a `ContentSafetyClient` class that exposes both protocol and convenience methods.
 
 ### [Convenience method](#tab/convenience-methods)
 
@@ -106,7 +106,7 @@ The preceding code demonstrates the following `System.ClientModel` protocol meth
 - Calls the `GetRawResponse` method to access the response data.
 
 > [!NOTE]
-> The preceding code configures the `ClientErrorBehaviors.NoThrow` for the `RequestOptions`. This option prevents non-success service responses status codes from throwing an exception, which means the app code should manually handle the response status code checks.
+> The preceding code configures the [ClientErrorBehaviors.NoThrow](/dotnet/api/system.clientmodel.primitives.clienterrorbehaviors) behavior for the `RequestOptions`. This option prevents non-success service responses status codes from throwing an exception, which means the app code should manually handle the response status code checks.
 
 ---
 

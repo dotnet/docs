@@ -8,7 +8,7 @@ ChatClient chatClient = client.GetChatClient("gpt-4");
 
 // Call the convenience method
 ChatCompletion completion
-    = chatClient.CompleteChat("What is Azure?");
+    = chatClient.CompleteChat("What is Microsoft Azure?");
 
 // Display the results
 Console.WriteLine($"{completion.Role}: {completion.Content}");

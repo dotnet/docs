@@ -1,3 +1,10 @@
+---
+author: jmatthiesen
+ms.author: jomatthi
+ms.date: 07/03/2024
+ms.topic: include
+---
+
 ## Troubleshoot
 
 On Windows, you might get the following error messages after running `azd up`:

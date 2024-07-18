@@ -190,7 +190,6 @@ azd down
 
 :::zone-end
 
-
 ## Next steps
 
 - [Quickstart - Get insight about your data from .NET AI chat app](quickstart-ai-chat-with-data.md)

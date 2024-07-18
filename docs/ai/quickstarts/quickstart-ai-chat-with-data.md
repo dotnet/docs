@@ -184,7 +184,6 @@ azd down
 
 :::zone-end
 
-
 ## Next steps
 
 - [Quickstart - Generate images using AI with .NET](quickstart-openai-generate-images.md)

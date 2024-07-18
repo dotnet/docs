@@ -166,7 +166,6 @@ azd down
 
 :::zone-end
 
-
 ## Next steps
 
 - [Quickstart - Build an AI chat app with .NET](get-started-openai.md)

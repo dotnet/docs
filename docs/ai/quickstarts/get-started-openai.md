@@ -32,7 +32,7 @@ Get started with Semantic Kernel by creating a simple .NET 8 console chat applic
 
 :::zone-end
 
-## Trying HikerAI sample
+## Try the HikerAI sample
 
 <!-- markdownlint-disable MD029 MD044 -->
 :::zone target="docs" pivot="openai"
@@ -69,9 +69,9 @@ Get started with Semantic Kernel by creating a simple .NET 8 console chat applic
 
 ## Explore the code
 
-The application uses the [`Microsoft.SemanticKernel`](https://www.nuget.org/packages/Microsoft.SemanticKernel) package to send and receive requests to the OpenAI service.
+The app uses the [`Microsoft.SemanticKernel`](https://www.nuget.org/packages/Microsoft.SemanticKernel) package to send and receive requests to the OpenAI service.
 
-The entire application is contained within the **Program.cs** file. The first several lines of code set configuration values and gets the OpenAI Key that was previously set using the `dotnet user-secrets` command.
+The app code is contained within the **Program.cs** file. The first several lines of code set configuration values and gets the OpenAI Key that was previously set using the `dotnet user-secrets` command.
 
 ```csharp
 var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
@@ -145,7 +145,8 @@ chatHistory.AddUserMessage("Hi! Apparently you can help me find a hike that I wi
 Console.WriteLine($"{chatHistory.Last().Role} >>> {chatHistory.Last().Content}");
 
 // Get response
-var response = await service.GetChatMessageContentAsync(chatHistory, new OpenAIPromptExecutionSettings() { MaxTokens = 400 });
+var response = await service.GetChatMessageContentAsync(
+    chatHistory, new OpenAIPromptExecutionSettings() { MaxTokens = 400 });
 ```
 
 Add the response from the mode to maintain the chat history.

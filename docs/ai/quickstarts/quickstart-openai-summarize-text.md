@@ -16,7 +16,7 @@ zone_pivot_groups: openai-library
 :::zone target="docs" pivot="openai"
 <!-- markdownlint-enable MD044 -->
 
-Get started with AI by creating a simple .NET 8 console chat application to summarize text. The application will run locally and use the OpenAI `gpt-3.5-turbo` model. Follow these steps to get access to OpenAI and learn how to use Semantic Kernel.
+Get started with AI by creating a simple .NET 8 console chat application to summarize text. The application runs locally and uses the OpenAI `gpt-3.5-turbo` model. Follow these steps to get access to OpenAI and learn how to use Semantic Kernel.
 
 [!INCLUDE [download-alert](includes/prerequisites-openai.md)]
 
@@ -26,13 +26,13 @@ Get started with AI by creating a simple .NET 8 console chat application to summ
 :::zone target="docs" pivot="azure-openai"
 <!-- markdownlint-enable MD044 -->
 
-Get started with AI by creating a simple .NET 8 console chat application to summarize text. The application will run locally and connect to the OpenAI `gpt-35-turbo` model deployed into Azure OpenAI. Follow these steps to provision Azure OpenAI and learn how to use Semantic Kernel.
+Get started with AI by creating a simple .NET 8 console chat application to summarize text. The app runs locally and connects to the OpenAI `gpt-35-turbo` model deployed into Azure OpenAI. Follow these steps to provision the Azure OpenAI service and learn how to use Semantic Kernel.
 
 [!INCLUDE [download-alert](includes/prerequisites-azure-openai.md)]
 
 :::zone-end
 
-## Trying Hiking Benefits Summary sample
+## Try the Hiking Benefits Summary sample
 
 <!-- markdownlint-disable MD029 MD044 -->
 :::zone target="docs" pivot="openai"
@@ -91,7 +91,7 @@ Kernel kernel = Kernel.CreateBuilder()
 :::zone target="docs" pivot="azure-openai"
 The application uses the [`Microsoft.SemanticKernel`](https://www.nuget.org/packages/Microsoft.SemanticKernel) package to send and receive requests to the Azure OpenAI service.
 
-The entire application is contained within the **Program.cs** file. The first several lines of code loads up secrets and configuration values that were set in the `dotnet user-secrets` for you during the application provisioning.
+The entire application is contained within the **Program.cs** file. The first several lines of code retrieve secrets and configuration values that were set in the `dotnet user-secrets` for you during the application provisioning.
 
 ```csharp
 // == Retrieve the local secrets saved during the Azure deployment ==========
@@ -123,7 +123,7 @@ string prompt = $"""
 Console.WriteLine($"user >>> {prompt}");
 ```
 
-To have the model generate a response based off `prompt`, use the `InvokePromptAsync` function.
+Use the `InvokePromptAsync` function to have the model generate a response based on the `prompt` value.
 
 ```csharp
 // Submit the prompt and print out the response

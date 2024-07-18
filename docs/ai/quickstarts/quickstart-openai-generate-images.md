@@ -32,7 +32,7 @@ Get started with AI by creating a simple .NET 8 console chat application. The ap
 
 :::zone-end
 
-## Trying the Hiking Images sample
+## Try the the Hiking Images sample
 
 <!-- markdownlint-disable MD029 MD044 -->
 :::zone target="docs" pivot="openai"

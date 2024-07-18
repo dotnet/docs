@@ -30,7 +30,7 @@ Get started with AI development, using the `gpt-35-turbo` model from a simple .N
 [!INCLUDE [download-alert](includes/prerequisites-azure-openai.md)]
 :::zone-end
 
-## Try "Chatting About My Previous Hikes" sample
+## Try the "Chatting About My Previous Hikes" sample
 
 <!-- markdownlint-disable MD029 MD044 -->
 :::zone target="docs" pivot="openai"
@@ -128,7 +128,10 @@ To have the model generate a response based off the system prompt and the user r
 chatHistory.AddUserMessage("Hi!");
 Console.WriteLine($"{chatHistory.Last().Role} >>> {chatHistory.Last().Content}");
 
-chatHistory.Add(await service.GetChatMessageContentAsync(chatHistory, new OpenAIPromptExecutionSettings() { MaxTokens = 400 }));
+chatHistory.Add(
+    await service.GetChatMessageContentAsync(
+        chatHistory,
+        new OpenAIPromptExecutionSettings() { MaxTokens = 400 }));
 Console.WriteLine($"{chatHistory.Last().Role} >>> {chatHistory.Last().Content}");
 ```
 
@@ -136,10 +139,13 @@ To maintain the chat history or context, make sure you add the response from the
 
 ```csharp
 // Continue the conversation with a question.
-chatHistory.AddUserMessage("I would like to know the ratio of the hikes I've done in Canada compared to other countries.");
+chatHistory.AddUserMessage(
+    "I would like to know the ratio of the hikesI've done in Canada compared to other countries.");
 Console.WriteLine($"{chatHistory.Last().Role} >>> {chatHistory.Last().Content}");
 
-chatHistory.Add(await service.GetChatMessageContentAsync(chatHistory, new OpenAIPromptExecutionSettings() { MaxTokens = 400 }));
+chatHistory.Add(await service.GetChatMessageContentAsync(
+    chatHistory,
+    new OpenAIPromptExecutionSettings() { MaxTokens = 400 }));
 Console.WriteLine($"{chatHistory.Last().Role} >>> {chatHistory.Last().Content}");
 ```
 

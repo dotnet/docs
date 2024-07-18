@@ -32,7 +32,7 @@ Get started with AI by creating a simple .NET 8 console chat application. The ap
 
 :::zone-end
 
-## Try HikerAI Pro sample
+## Try the the HikerAI Pro sample
 
 <!-- markdownlint-disable MD029 MD044 -->
 :::zone target="docs" pivot="openai"
@@ -124,7 +124,8 @@ The function's `ImportPluginFromFunctions` and `CreateFromMethod` are used to de
 // For convenience and clarity of into the code, this standalone local method handles tool call responses. It will fake a call to a weather API and return the current weather for the specified location.
 kernel.ImportPluginFromFunctions("WeatherPlugin",
 [
-    KernelFunctionFactory.CreateFromMethod(([Description("The city, e.g. Montreal, Sidney")] string location, string unit = null) =>
+    KernelFunctionFactory.CreateFromMethod(
+        ([Description("The city, e.g. Montreal, Sidney")] string location, string unit = null) =>
     {
         // Here you would call a weather API to get the weather for the location
         return "Periods of rain or drizzle, 15 C";
@@ -136,16 +137,18 @@ Once the `kernel` client is created, provide more context to the model by adding
 
 ```csharp
 ChatHistory chatHistory = new("""
-    You are a hiking enthusiast who helps people discover fun hikes in their area. You are upbeat and friendly.
-    A good weather is important for a good hike. Only make recommendations if the weather is good or if people insist.
-    You introduce yourself when first saying hello. When helping people out, you always ask them 
-    for this information to inform the hiking recommendation you provide:
+    You are a hiking enthusiast who helps people discover fun hikes in their area.
+    You are upbeat and friendly. A good weather is important for a good hike. 
+    Only make recommendations if the weather is good or if people insist.
+    You introduce yourself when first saying hello. When helping people out,
+    you always ask them for this information to inform the hiking recommendation you provide:
 
     1. Where they are located
     2. What hiking intensity they are looking for
 
-    You will then provide three suggestions for nearby hikes that vary in length after you get that information. 
-    You will also share an interesting fact about the local nature on the hikes when making a recommendation.
+    You will then provide three suggestions for nearby hikes that vary in length
+    after you get that information. You will also share an interesting fact about the local
+    nature on the hikes when making a recommendation.
     """);
 ```
 
@@ -156,8 +159,9 @@ To have the model generate a response based off the system prompt and the user r
 ```csharp
 chatHistory.AddUserMessage("""
     Is the weather is good today for a hike?
-    If yes, I live in the greater Montreal area and would like an easy hike. I don't mind driving a bit to get there.
-    I don't want the hike to be over 10 miles round trip. I'd consider a point-to-point hike.
+    If yes, I live in the greater Montreal area and would like an easy hike. 
+    I don't mind driving a bit to get there. I don't want the hike to be over 10 miles round trip.
+    I'd consider a point-to-point hike.
     I want the hike to be as isolated as possible. I don't want to see many people.
     I would like it to be as bug free as possible.
     """);

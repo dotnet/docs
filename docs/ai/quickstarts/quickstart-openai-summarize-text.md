@@ -74,8 +74,8 @@ Get started with AI by creating a simple .NET 8 console chat application to summ
     dotnet run
     ```
 
-> [!NOTE]
-> If you get an error message, the Azure OpenAI resources may not have finished deploying. Wait a couple of minutes and try again.
+    > [!TIP]
+    > If you get an error message, the Azure OpenAI resources may not have finished deploying. Wait a couple of minutes and try again.
 
 :::zone-end
 

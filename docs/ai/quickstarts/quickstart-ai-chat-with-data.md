@@ -72,8 +72,8 @@ Get started with AI development, using the `gpt-35-turbo` model from a simple .N
     dotnet run
     ```
 
-> [!NOTE]
-> If you get an error message, the Azure OpenAI resources may not have finished deploying. Wait a couple of minutes and try again.
+    > [!TIP]
+    > If you get an error message, the Azure OpenAI resources may not have finished deploying. Wait a couple of minutes and try again.
 
 :::zone-end
 

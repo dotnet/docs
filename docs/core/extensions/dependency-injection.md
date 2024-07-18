@@ -446,6 +446,7 @@ public class ExampleService
 
 ## See also
 
+- [Understand dependency injection basics in .NET](dependency-injection-basics.md)
 - [Use dependency injection in .NET](dependency-injection-usage.md)
 - [Dependency injection guidelines](dependency-injection-guidelines.md)
 - [Dependency injection in ASP.NET Core](/aspnet/core/fundamentals/dependency-injection)

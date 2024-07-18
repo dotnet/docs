@@ -214,4 +214,5 @@ In the preceding code, `Bar` is retrieved within an <xref:Microsoft.Extensions.D
 ## See also
 
 - [Dependency injection in .NET](dependency-injection.md)
+- [Understand dependency injection basics in .NET](dependency-injection-basics.md)
 - [Tutorial: Use dependency injection in .NET](dependency-injection-usage.md)

@@ -38,7 +38,7 @@ The abstractions for DI in .NET are defined in the [Microsoft.Extensions.Depende
 
 In .NET, DI is managed by adding services and configuring them in an `IServiceCollection`. After services are registered, as `IServiceProvider` instance is built by calling the `BuildServiceProvider` method. The `IServiceProvider` acts as a container of all the registered services, and it's used to resolve services.
 
-## Create services
+## Create example services
 
 Not all services are created equally. Some services require a new instance each time that the service container gets them (_transient_), while others should be shared across requests (_scoped_) or for the entire lifetime of the app (_singleton_). For more information on service lifetimes, see [Service lifetimes](dependency-injection.md#service-lifetimes).
 
@@ -100,6 +100,15 @@ All of these services are registered as singletons, although for this sample, it
 
 > [!IMPORTANT]
 > In this contrived example, the service lifetimes don't matter, but in a real-world application, you should carefully consider the lifetime of each service.
+
+## Run the sample app
+
+To run the sample app, either press <kbd>F5</kbd> in Visual Studio, Visual Studio Code, or run the `dotnet run` command in the terminal. When the app completes, you should see the following output:
+
+```console
+Hello, David!
+Goodbye, David!
+```
 
 ### Service descriptors
 

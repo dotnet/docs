@@ -118,7 +118,7 @@ The most commonly used APIs for adding services to the `ServiceCollection` are l
 - `AddTransient<TService>`
 - `AddScoped<TService>`
 
-These methods are convenience methods that create a `ServiceDescriptor` instance and add it to the `ServiceCollection`. The `ServiceDescriptor` class is a simple class that describes a service with its service type, implementation, and lifetime.
+These methods are convenience methods that create a `ServiceDescriptor` instance and add it to the `ServiceCollection`. The `ServiceDescriptor` is a simple class that describes a service with its service type, implementation type, and lifetime. It can also desribe implementation factories and instances.
 
 For each of the services that you registered in the `ServiceCollection`, you could instead call the `Add` method with a `ServiceDescriptor` instance directly. Consider the following examples:
 

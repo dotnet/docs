@@ -96,7 +96,7 @@ You can use any of the following ways to test while developing a command-line ap
   dotnet run -- --file bin/Debug/net6.0/scl.runtimeconfig.json
   ```
 
-> The working directory is the csproj folder, so the relative path to `scl.runtimeconfig.json` is from the csproj folder.
+The working directory is the project folder (the folder that has the .csproj  file), so the relative path to `scl.runtimeconfig.json` is from the project folder.
 
   In .NET 7.0.100 SDK Preview, you can use the `commandLineArgs` of a *launchSettings.json* file by running the command `dotnet run --launch-profile <profilename>`.
 

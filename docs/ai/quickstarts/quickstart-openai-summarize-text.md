@@ -65,7 +65,7 @@ Get started with AI by creating a simple .NET 8 console chat application to summ
 :::zone target="docs" pivot="openai"
 <!-- markdownlint-enable MD044 -->
 
-Our application uses the `Microsoft.SemanticKernel` package, which is available on [NuGet](https://www.nuget.org/packages/Microsoft.SemanticKernel), to send and receive requests to the OpenAI service.
+The app uses the [`Microsoft.SemanticKernel`](https://www.nuget.org/packages/Microsoft.SemanticKernel) package to send and receive requests to the OpenAI service.
 
 The entire application is contained within the **Program.cs** file. The first several lines of code set configuration values and gets the OpenAI Key that was previously set using the `dotnet user-secrets` command.
 
@@ -87,7 +87,7 @@ Kernel kernel = Kernel.CreateBuilder()
 :::zone-end
 
 :::zone target="docs" pivot="azure-openai"
-Our application uses the `Microsoft.SemanticKernel` package, which is available on [NuGet](https://www.nuget.org/packages/Microsoft.SemanticKernel), to send and receive requests to an Azure OpenAI service deployed in Azure.
+The application uses the [`Microsoft.SemanticKernel`](https://www.nuget.org/packages/Microsoft.SemanticKernel) package to send and receive requests to the Azure OpenAI service.
 
 The entire application is contained within the **Program.cs** file. The first several lines of code loads up secrets and configuration values that were set in the `dotnet user-secrets` for you during the application provisioning.
 
@@ -110,7 +110,7 @@ Kernel kernel = Kernel.CreateBuilder()
 
 :::zone-end
 
-Once the `Kernel` is created, we read the contents of the file `benefits.md` and create a `prompt` to ask the the model to summarize that text.
+Once the `Kernel` is created, read the contents of the file `benefits.md` and create a `prompt` to ask the the model to summarize that text.
 
 ```csharp
 // Create and print out the prompt

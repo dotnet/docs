@@ -64,7 +64,7 @@ Get started with AI by creating a simple .NET 8 console chat application. The ap
 
 <!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="openai"
-Our application uses the `Microsoft.SemanticKernel` package, which is available on [NuGet](https://www.nuget.org/packages/Microsoft.SemanticKernel), to send and receive requests to the OpenAI service.
+The application uses the [`Microsoft.SemanticKernel`](https://www.nuget.org/packages/Microsoft.SemanticKernel) package to send and receive requests to the OpenAI service.
 
 The entire application is contained within the **Program.cs** file. The first several lines of code set configuration values and gets the OpenAI Key that was previously set using the `dotnet user-secrets` command.
 
@@ -83,7 +83,7 @@ OpenAITextToImageService textToImageService = new(key, null);
 
 :::zone target="docs" pivot="azure-openai"
 <!-- markdownlint-enable MD044 -->
-Our application uses the `Microsoft.SemanticKernel` package, which is available on [NuGet](https://www.nuget.org/packages/Microsoft.SemanticKernel), to send and receive requests to an Azure OpenAI service deployed in Azure.
+The application uses the [`Microsoft.SemanticKernel`](https://www.nuget.org/packages/Microsoft.SemanticKernel) package to send and receive requests to the Azure OpenAI service.
 
 The entire application is contained within the _Program.cs_ file. The first several lines of code load secrets and configuration values that were set in the `dotnet user-secrets` for you during the application provisioning.
 
@@ -103,7 +103,7 @@ AzureOpenAITextToImageService textToImageService = new(deployment, endpoint, key
 
 :::zone-end
 
-Once the `textToImageService` service is created, we we provide more context to the model by adding a system prompt. A good prompt to generate images requires a clear description: what is in the images, specific color to use, style (drawing, painting, realistic or cartoony). The model will use this prompt to generate the image. To have the model generate a response based off the user request, use the `GenerateImageAsync` function, and specify the size and quality.
+Once the `textToImageService` service is created, provide more context to the model by adding a system prompt. A good prompt to generate images requires a clear description: what is in the images, specific color to use, style (drawing, painting, realistic or cartoony). The model will use this prompt to generate the image. To have the model generate a response based off the user request, use the `GenerateImageAsync` function, and specify the size and quality.
 
 ```csharp
 // Generate the image

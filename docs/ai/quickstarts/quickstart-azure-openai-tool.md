@@ -65,7 +65,7 @@ Get started with AI by creating a simple .NET 8 console chat application. The ap
 <!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="openai"
 
-Our application uses the `Microsoft.SemanticKernel` package, which is available on [NuGet](https://www.nuget.org/packages/Microsoft.SemanticKernel), to send and receive requests to the OpenAI service.
+The application uses the [`Microsoft.SemanticKernel`](https://www.nuget.org/packages/Microsoft.SemanticKernel) package to send and receive requests to the OpenAI service.
 
 The entire application is contained within the **Program.cs** file. The first several lines of code set configuration values and gets the OpenAI Key that was previously set using the `dotnet user-secrets` command.
 
@@ -91,7 +91,7 @@ Kernel kernel = b
 :::zone target="docs" pivot="azure-openai"
 <!-- markdownlint-enable MD044 -->
 
-Our application uses the `Microsoft.SemanticKernel` package, which is available on [NuGet](https://www.nuget.org/packages/Microsoft.SemanticKernel), to send and receive requests to an Azure OpenAI service deployed in Azure.
+The application uses the [`Microsoft.SemanticKernel`](https://www.nuget.org/packages/Microsoft.SemanticKernel) package to send and receive requests to the OpenAI service.
 
 The entire application is contained within the **Program.cs** file. The first several lines of code loads up secrets and configuration values that were set in the `dotnet user-secrets` for you during the application provisioning.
 
@@ -130,7 +130,7 @@ kernel.ImportPluginFromFunctions("WeatherPlugin",
 ]);
 ```
 
-Once the `kernel` client is created, we provide more context to the model by adding a system prompt. This instructs the model how you'd like it to act during the conversation. Note how the weather is emphasized in the system prompt.
+Once the `kernel` client is created, provide more context to the model by adding a system prompt. This instructs the model how you'd like it to act during the conversation. Note how the weather is emphasized in the system prompt.
 
 ```csharp
 ChatHistory chatHistory = new("""

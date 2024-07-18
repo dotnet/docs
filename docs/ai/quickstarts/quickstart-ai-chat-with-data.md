@@ -63,7 +63,7 @@ Get started with AI development, using the `gpt-35-turbo` model from a simple .N
 <!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="openai"
 <!-- markdownlint-enable MD044 -->
-Our application uses the `Microsoft.SemanticKernel` package, which is available on [NuGet](https://www.nuget.org/packages/Microsoft.SemanticKernel), to send and receive requests to the OpenAI service.
+The application uses the [`Microsoft.SemanticKernel`](https://www.nuget.org/packages/Microsoft.SemanticKernel) package to send and receive requests to an OpenAI service.
 
 The entire application is contained within the **Program.cs** file. The first several lines of code set configuration values and gets the OpenAI Key that was previously set using the `dotnet user-secrets` command.
 
@@ -80,11 +80,11 @@ The `OpenAIChatCompletionService` service facilitates the requests and responses
 OpenAIChatCompletionService service = new(model, key);
 ```
 
-Once the `OpenAIChatCompletionService` client is created, we read the content of the file `hikes.md` and use it to provide more context to the model by adding a system prompt. This instructs the model how you'd like it to act during the conversation.
+Once the `OpenAIChatCompletionService` client is created, the app reads the content of the file `hikes.md` and uses it to provide more context to the model by adding a system prompt. This influences model behavior and the generated completions during the conversation.
 :::zone-end
 
 :::zone target="docs" pivot="azure-openai"
-Our application uses the `Microsoft.SemanticKernel` package, which is available on [NuGet](https://www.nuget.org/packages/Microsoft.SemanticKernel), to send and receive requests to an Azure OpenAI service deployed in Azure.
+The application uses the [`Microsoft.SemanticKernel`](https://www.nuget.org/packages/Microsoft.SemanticKernel) package to send and receive requests to an Azure OpenAI service deployed in Azure.
 
 The entire application is contained within the **Program.cs** file. The first several lines of code loads up secrets and configuration values that were set in the `dotnet user-secrets` for you during the application provisioning.
 

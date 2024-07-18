@@ -1,6 +1,6 @@
 ---
 title: Quickstart - Build an AI chat app with .NET
-description: Create a simple chat app using Semantic Kernel with OpenAI or Azure OpenAI
+description: Create a simple AI powered chat app using Semantic Kernel SDK for .NET and the OpenAI or Azure OpenAI SDKs
 ms.date: 07/17/2024
 ms.topic: quickstart
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
@@ -39,7 +39,7 @@ Get started with Semantic Kernel by creating a simple .NET 8 console chat applic
 
 1. From a terminal or command prompt, navigate to the `openai\02-HikerAI` directory.
 
-[!INCLUDE [download-alert](includes/set-openai-secrets.md)]
+    [!INCLUDE [download-alert](includes/set-openai-secrets.md)]
 
 :::zone-end
 
@@ -67,7 +67,7 @@ Get started with Semantic Kernel by creating a simple .NET 8 console chat applic
 
 ## Understanding the code
 
-Our application uses the `Microsoft.SemanticKernel` package, which is available on [NuGet](https://www.nuget.org/packages/Microsoft.SemanticKernel), to send and receive requests to the OpenAI service.
+The application uses the [`Microsoft.SemanticKernel`](https://www.nuget.org/packages/Microsoft.SemanticKernel) package to send and receive requests to the OpenAI service.
 
 The entire application is contained within the **Program.cs** file. The first several lines of code set configuration values and gets the OpenAI Key that was previously set using the `dotnet user-secrets` command.
 
@@ -84,7 +84,7 @@ The `OpenAIChatCompletionService` service facilitates the requests and responses
 OpenAIChatCompletionService service = new(model, key);
 ```
 
-Once the `OpenAIChatCompletionService` service is created, we provide more context to the model by adding a system prompt. This instructs the model how you'd like it to act during the conversation.
+Provide more context to the model by adding a system prompt, which influences model behavior and the generated completions during the conversation.
 
 :::zone-end
 
@@ -94,12 +94,12 @@ Once the `OpenAIChatCompletionService` service is created, we provide more conte
 
 ## Understanding the code
 
-Our application uses the `Microsoft.SemanticKernel` package, which is available on [NuGet](https://www.nuget.org/packages/Microsoft.SemanticKernel), to send and receive requests to an Azure OpenAI service deployed in Azure.
+The application uses the [`Microsoft.SemanticKernel`](https://www.nuget.org/packages/Microsoft.SemanticKernel) package to send and receive requests to an Azure OpenAI service deployed in Azure.
 
-The entire application is contained within the **Program.cs** file. The first several lines of code loads up secrets and configuration values that were set in the `dotnet user-secrets` for you during the application provisioning.
+The entire application is contained within the **Program.cs** file. The first several lines of code retrieves the secrets and configuration values that were set in the `dotnet user-secrets` for you during the application provisioning.
 
 ```csharp
-// == Retrieve the local secrets saved during the Azure deployment ==========
+// Retrieve the local secrets saved during the Azure deployment
 var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
 string endpoint = config["AZURE_OPENAI_ENDPOINT"];
 string deployment = config["AZURE_OPENAI_GPT_NAME"];
@@ -109,11 +109,12 @@ string key = config["AZURE_OPENAI_KEY"];
 The `AzureOpenAIChatCompletionService` service facilitates the requests and responses.
 
 ```csharp
-// == Create the Azure OpenAI Chat Completion Service  ==========
+// Create the Azure OpenAI Chat Completion Service
 AzureOpenAIChatCompletionService service = new(deployment, endpoint, key);
 ```
 
-Once the `AzureOpenAIChatCompletionService` service is created, we provide more context to the model by adding a system prompt. This instructs the model how you'd like it to act during the conversation.
+Add a system prompt to provide more context to the model, which influences model behavior and the generated completions during the conversation.
+
 :::zone-end
 
 ```csharp
@@ -131,9 +132,7 @@ ChatHistory chatHistory = new("""
     """);
 ```
 
-Then you can add a user message to the model by using the `AddUserMessage` function.
-
-To have the model generate a response based off the system prompt and the user request, use the `GetChatMessageContentAsync` function.
+Add a user message to the chat history using the `AddUserMessage` function. Use the `GetChatMessageContentAsync` function to instruct the model to generate a response based off the system prompt and the user request.
 
 ```csharp
 
@@ -147,7 +146,7 @@ Console.WriteLine($"{chatHistory.Last().Role} >>> {chatHistory.Last().Content}")
 var response = await service.GetChatMessageContentAsync(chatHistory, new OpenAIPromptExecutionSettings() { MaxTokens = 400 });
 ```
 
-To maintain the chat history, make sure you add the response from the model.
+Add the response from the mode to maintain the chat history.
 
 ```csharp
 // Add response to chat history
@@ -164,7 +163,7 @@ Customize the system prompt and user message to see how the model responds to he
 <!-- markdownlint-enable MD044 -->
 ## Clean up resources
 
-When you no longer need the sample application or resources, remove the corresponding deployment and all resources.
+Remove the corresponding deployment and all resources when you no longer need the sample application or resources.
 
 ```azdeveloper
 azd down

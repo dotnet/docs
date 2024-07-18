@@ -17,5 +17,5 @@ Ensure that you follow the [Prerequisites](#prerequisites) to have access to Azu
    azd up
    ```
 
-  > [!NOTE]
-  > If you encounter an error during the `azd up` deployment, visit the [troubleshooting](#troubleshoot) section.
+    > [!NOTE]
+    > If you encounter an error during the `azd up` deployment, visit the [troubleshooting](#troubleshoot) section.

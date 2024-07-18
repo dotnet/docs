@@ -123,7 +123,7 @@ Protocol methods:
 
 - Provide access to lower-level types, such as `RequestContext` and `RequestOptions`, which aren't available through convenience methods.
 - Enable access to features of the underlying REST APIs that convenience methods don't expose.
-- Enable you to create your own convenience methods around service endpoints that don't already have convenience methods.
+- Enable you to create your own convenience methods around service endpoints that don't already have convenience methods. This approach requires understanding the service's REST API documentation to handle requests and responses correctly.
 
 ## See also
 

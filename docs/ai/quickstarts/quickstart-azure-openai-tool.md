@@ -37,6 +37,8 @@ Get started with AI by creating a simple .NET 8 console chat application. The ap
 <!-- markdownlint-disable MD029 MD044 -->
 :::zone target="docs" pivot="openai"
 
+1. Clone the repository: [dotnet/ai-samples](https://github.com/dotnet/ai-samples)
+
 1. From a terminal or command prompt, navigate to the `openai\04-HikerAIPro` directory.
 
     [!INCLUDE [download-alert](includes/set-openai-secrets.md)]

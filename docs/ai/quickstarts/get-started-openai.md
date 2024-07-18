@@ -37,6 +37,8 @@ Get started with Semantic Kernel by creating a simple .NET 8 console chat applic
 <!-- markdownlint-disable MD029 MD044 -->
 :::zone target="docs" pivot="openai"
 
+1. Clone the repository: [dotnet/ai-samples](https://github.com/dotnet/ai-samples)
+
 1. From a terminal or command prompt, navigate to the `openai\02-HikerAI` directory.
 
     [!INCLUDE [download-alert](includes/set-openai-secrets.md)]
@@ -49,7 +51,7 @@ Get started with Semantic Kernel by creating a simple .NET 8 console chat applic
 
 :::zone-end
 
-2. It's now time to try the console application. Type in the following to run the app:
+2. Use the following to run the app:
 
     ```dotnetcli
     dotnet run
@@ -65,7 +67,7 @@ Get started with Semantic Kernel by creating a simple .NET 8 console chat applic
 :::zone target="docs" pivot="openai"
 <!-- markdownlint-enable MD044 -->
 
-## Understanding the code
+## Explore the code
 
 The application uses the [`Microsoft.SemanticKernel`](https://www.nuget.org/packages/Microsoft.SemanticKernel) package to send and receive requests to the OpenAI service.
 

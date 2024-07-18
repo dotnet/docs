@@ -35,6 +35,8 @@ Get started with AI development, using the `gpt-35-turbo` model from a simple .N
 <!-- markdownlint-disable MD029 MD044 -->
 :::zone target="docs" pivot="openai"
 
+1. Clone the repository: [dotnet/ai-samples](https://github.com/dotnet/ai-samples)
+
 1. From a terminal or command prompt, navigate to the `openai\03-ChattingAboutMyHikes` directory.
 
     [!INCLUDE [download-alert](includes/set-openai-secrets.md)]

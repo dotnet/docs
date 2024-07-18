@@ -9,7 +9,7 @@ no-loc: [Transient, Scoped, Singleton, Example]
 
 # Understand dependency injection basics in .NET
 
-In this article, you create a .NET console app that manually creates a `ServiceCollection` and corresponding `ServiceProvider`. You learn how to register services and resolve them using dependency injection (DI). This article uses the [Microsoft.Extensions.DependencyInjection](https://www.nuget.org/packages/Microsoft.Extensions.DependencyInjection) NuGet package to demonstrate the basics of DI in .NET.
+In this article, you create a .NET console app that manually creates a <xref:Microsoft.Extensions.DependencyInjection.ServiceCollection> and corresponding <xref:Microsoft.Extensions.DependencyInjection.ServiceProvider>. You learn how to register services and resolve them using dependency injection (DI). This article uses the [Microsoft.Extensions.DependencyInjection](https://www.nuget.org/packages/Microsoft.Extensions.DependencyInjection) NuGet package to demonstrate the basics of DI in .NET.
 
 > [!NOTE]
 > This article doesn't take advantage of the [Generic Host](generic-host.md) features. For a more comprehensive guide, see [Use dependency injection in .NET](dependency-injection-usage.md).
@@ -22,7 +22,7 @@ To get started, create a new .NET console application named **DI.Basics**. Some 
 - [Visual Studio Code](https://code.visualstudio.com/) and the [C# Dev Kit extension's](https://code.visualstudio.com/docs/csharp/project-management): **Solution Explorer** menu option.
 - [.NET CLI: `dotnet new console`](/dotnet/core/tools/dotnet-new-sdk-templates#console) command in the terminal.
 
-You need to add the package reference to the [Microsoft.Extensions.DependencyInjection](https://www.nuget.org/packages/Microsoft.Extensions.DependencyInjection) in the project file. Regardless of the approach, ensure the project resembles the following XML:
+You need to add the package reference to the [Microsoft.Extensions.DependencyInjection](https://www.nuget.org/packages/Microsoft.Extensions.DependencyInjection) in the project file. Regardless of the approach, ensure the project resembles the following XML of the _DI.Basics.csproj_ file:
 
 :::code language="XML" source="snippets/di/di-basics/di-basics.csproj":::
 
@@ -32,11 +32,11 @@ Dependency injection is a design pattern that allows you to remove hard-coded de
 
 The abstractions for DI in .NET are defined in the [Microsoft.Extensions.DependencyInjection.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.DependencyInjection.Abstractions) NuGet package:
 
-- `IServiceCollection`: Defines a contract for a collection of service descriptors.
-- `IServiceProvider`: Defines a mechanism for retrieving a service object.
-- `ServiceDescriptor`: Describes a service with its service type, implementation, and lifetime.
+- <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>: Defines a contract for a collection of service descriptors.
+- <xref:Microsoft.Extensions.DependencyInjection.IServiceProvider>: Defines a mechanism for retrieving a service object.
+- <xref:Microsoft.Extensions.DependencyInjection.ServiceDescriptor>: Describes a service with its service type, implementation, and lifetime.
 
-In .NET, DI is managed by adding services and configuring them in an `IServiceCollection`. After services are registered, as `IServiceProvider` instance is built by calling the `BuildServiceProvider` method. The `IServiceProvider` acts as a container of all the registered services, and it's used to resolve services.
+In .NET, DI is managed by adding services and configuring them in an `IServiceCollection`. After services are registered, as `IServiceProvider` instance is built by calling the <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider%2A> method. The `IServiceProvider` acts as a container of all the registered services, and it's used to resolve services.
 
 ## Create example services
 
@@ -118,7 +118,7 @@ The most commonly used APIs for adding services to the `ServiceCollection` are l
 - `AddTransient<TService>`
 - `AddScoped<TService>`
 
-These methods are convenience methods that create a `ServiceDescriptor` instance and add it to the `ServiceCollection`. The `ServiceDescriptor` is a simple class that describes a service with its service type, implementation type, and lifetime. It can also desribe implementation factories and instances.
+These methods are convenience methods that create a <xref:Microsoft.Extensions.DependencyInjection.ServiceDescriptor> instance and add it to the `ServiceCollection`. The `ServiceDescriptor` is a simple class that describes a service with its service type, implementation type, and lifetime. It can also desribe implementation factories and instances.
 
 For each of the services that you registered in the `ServiceCollection`, you could instead call the `Add` method with a `ServiceDescriptor` instance directly. Consider the following examples:
 

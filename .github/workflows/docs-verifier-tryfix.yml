@@ -3,6 +3,9 @@ on:
   issue_comment:
     types: [created]
 
+permissions:
+  contents: read
+
 jobs:
   tryfix:
     if: github.event.issue.pull_request != '' && contains(github.event.comment.body, '/tryfix')
@@ -13,6 +16,11 @@ jobs:
       IS_TRY_FIX: true # differentiates /tryfix from the validation-only run.
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@17d0e2bd7d51742c71671bd19fa12bdc9d40a3d6 # v2.8.1
+        with:
+          egress-policy: audit
+
       - uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea
         id: get-pr
         with:
@@ -30,14 +38,14 @@ jobs:
               core.setFailed(`Request failed with error ${err}`)
             }
       - name: Checkout the repository
-        uses: actions/checkout@v4.1.7
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
 
       - name: Checkout Pull Request
         run: |
           hub pr checkout ${{ github.event.issue.number }}
 
       - name: Tryfix
-        uses: dotnet/docs-actions/actions/docs-verifier@main
+        uses: dotnet/docs-actions/actions/docs-verifier@5e8bcc78465d45a7544bba56509a1a69922b6a5a # main
 
       - name: Push changes
         run: |

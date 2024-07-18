@@ -397,7 +397,7 @@ The `MyPoco` type is defined as follows:
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Serialization.cs" id="Poco":::
 
-You can also enable this setting globally using the `System.Text.Json.JsonSerializerOptions.RespectNullableAnnotations` feature switch in your project file (for example, *.csproj* file):
+You can also enable this setting globally using the `System.Text.Json.JsonSerializerOptions.RespectRequiredConstructorParameters` feature switch in your project file (for example, *.csproj* file):
 
 ```xml
 <ItemGroup>

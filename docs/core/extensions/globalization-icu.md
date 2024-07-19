@@ -133,7 +133,6 @@ The <xref:System.Globalization.DateTimeFormatInfo.GetShortestDayName(System.DayO
 - In .NET Core 3.1 and earlier versions on Windows, these day-of-week abbreviations consisted of two characters, for example, "Su".
 - In .NET 5 and later versions, these day-of-week abbreviations consist of only one character, for example, "S".
 
-
 #### ICU-dependent APIs
 
 .NET introduced APIs that are dependent on ICU. These APIs can succeed only when using ICU. Here are some examples:

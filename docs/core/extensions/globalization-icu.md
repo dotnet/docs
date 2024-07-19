@@ -126,6 +126,14 @@ To avoid this behavior, use the `char` parameter overload or `StringComparison.O
 
 ICU provides the flexibility to create <xref:System.TimeZoneInfo> instances using [IANA](https://www.iana.org/time-zones) time zone IDs, even when the application is running on Windows. Similarly, you can create <xref:System.TimeZoneInfo> instances with Windows time zone IDs, even when running on non-Windows platforms. However, it's important to note that this functionality isn't available when using [NLS mode](#use-nls-instead-of-icu) or [globalization invariant mode](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md).
 
+#### Day-of-week abbreviations
+
+The <xref:System.Globalization.DateTimeFormatInfo.GetShortestDayName(System.DayOfWeek)?displayProperty=nameWithType> method obtains the shortest abbreviated day name for a specified day of the week.
+
+- In .NET Core 3.1 and earlier versions on Windows, these day-of-week abbreviations consisted of two characters, for example, "Su".
+- In .NET 5 and later versions, these day-of-week abbreviations consist of only one character, for example, "S".
+
+
 #### ICU-dependent APIs
 
 .NET introduced APIs that are dependent on ICU. These APIs can succeed only when using ICU. Here are some examples:

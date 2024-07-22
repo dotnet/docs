@@ -9,17 +9,15 @@ ms.date: 05/15/2024
 
 [!INCLUDE [download-alert](../includes/download-alert.md)]
 
-Another day, at the office, working on "the next big thing."
+Another day at the office, diligently working on "the next big thing."
 
-Your cellphone rings. It's your friendly recruiter - the one who calls daily with exciting new opportunities.
+Your cellphone rings. It's your recruiter, the one who regularly contacts you with enticing new opportunities.
 
-But this time it's different: Start-up, equity, and plenty of funding.
+However, this time it is different: a start-up with equity and substantial funding. The mention of cloud computing, microservices, and cutting-edge technology compels you to consider the offer seriously.
 
-The mention of the cloud, microservices, and cutting-edge technology pushes you over the edge.
+A few weeks later, you find yourself employed, participating in a design session, and architecting a major eCommerce application. You're going to compete with the leading eCommerce platforms.
 
-Fast forward a few weeks and you're now a new employee in a design session architecting a major eCommerce application. You're going to compete with the leading eCommerce sites.
-
-How will you build it?
+How will you approach this challenge?
 
 If you follow the guidance from past 15 years, you'll most likely build the system shown in Figure 1.1.
 
@@ -27,25 +25,25 @@ If you follow the guidance from past 15 years, you'll most likely build the syst
 
 **Figure 1-1**. Traditional monolithic design
 
-You construct a large core application containing all of your domain logic. It includes modules such as Identity, Catalog, Ordering, and more. They directly communicate with each other within a single server process. The modules share a large relational database. The core exposes functionality via an HTML interface and a mobile app.
+You construct a large core application containing all of your domain logic. It includes modules such as Identity, Catalog, Ordering, and more. They directly communicate with each other within a single server process. The modules share a large relational database. The core exposes functionality through an HTML  usere interface and a mobile app.
 
-Congratulations!  You just created a monolithic application.
+Congratulations! You've created a monolithic application.
 
-Not all is bad. Monoliths offer some distinct advantages. For example, they're straightforward to...
+This isn't a bad app. Monoliths offer some distinct advantages. For example, they're easy to:
 
 - build
 - test
 - deploy
 - troubleshoot
-- vertically scale
+- scale vertically
 
-Many successful apps that exist today were created as monoliths. The app is a hit and continues to evolve, iteration after iteration, adding more functionality.
+Many successful apps that exist today were created as monoliths. Your app is a hit and continues to evolve, iteration after iteration, adding more functionality.
 
-At some point, however, you begin to feel uncomfortable. You find yourself losing control of the application. As time goes on, the feeling becomes more intense, and you eventually enter a state known as the `Fear Cycle`:
+At some point, however, as the app continues to grow and develop you begin to feel uncomfortable. You find yourself losing control of the application. As time goes on, the feeling becomes more intense, and you eventually enter a state known as the `Fear Cycle`:
 
 - The app has become so overwhelmingly complicated that no single person understands it.
-- You fear making changes - each change has unintended and costly side effects.
-- New features/fixes become tricky, time-consuming, and expensive to implement.
+- You fear making changes because each change has unintended and costly side effects.
+- New features or fixes become tricky, time-consuming, and expensive to implement.
 - Each release becomes as small as possible and requires a full deployment of the entire application.
 - One unstable component can crash the entire system.
 - New technologies and frameworks aren't an option.
@@ -53,7 +51,7 @@ At some point, however, you begin to feel uncomfortable. You find yourself losin
 - Architectural erosion sets in as the code base deteriorates with never-ending "quick fixes."
 - Finally, the _consultants_ come in and tell you to rewrite it.
 
-Sound familiar?
+Does this scenario sound familiar?
 
 Many organizations have addressed this monolithic fear cycle by adopting a cloud-native approach to building systems. Figure 1-2 shows the same system built applying cloud-native techniques and practices.
 
@@ -61,21 +59,21 @@ Many organizations have addressed this monolithic fear cycle by adopting a cloud
 
 **Figure 1-2**. Cloud-native design
 
-Note how the application is decomposed across a set of small isolated microservices. Each service is self-contained and encapsulates its own code, data, and dependencies. Each is deployed in a software container and managed by a container orchestrator. Instead of a large relational database, each service owns it own datastore, the type of which vary based upon the data needs. Note how some services depend on a relational database, but other on NoSQL databases. One service stores its state in a distributed cache. Note how all traffic routes through an API Gateway service that is responsible for routing traffic to the core back-end services and enforcing many cross-cutting concerns. Most importantly, the application takes full advantage of the scalability, availability, and resiliency features found in modern cloud platforms.
+Note how the application is decomposed across a set of small isolated microservices. Each service is self-contained and encapsulates its own code, data, and dependencies. Each is deployed in a software container and managed by a container orchestrator. Instead of a large relational database, each service owns its own datastore, the type of which varies based upon the data needs. Note how some services depend on a relational database but others on NoSQL databases. One service stores its state in a distributed cache. Note how all traffic routes through an API Gateway service that's responsible for routing traffic to the core back-end services and enforcing many cross-cutting concerns. Most importantly, the application takes full advantage of the scalability, availability, and resiliency features found in modern cloud platforms.
 
 ### Cloud-native computing
 
-Hmm... We just used the term, _Cloud Native_. Your first thought might be, "What exactly does that mean?" Another industry buzzword concocted by software vendors to market more stuff?
+We just used the term, _cloud native_. You might be wondering if that's a meaningful term, or just another industry buzzword concocted by software vendors to sell more product.
 
-Fortunately it's far different, and hopefully this book will help convince you.
+Actually, _cloud native_ is a clear and specific term that describes a flexible way to write large scale web applications that won't evolve into a fear cycle.
 
 Within a short time, cloud native has become a driving trend in the software industry. It's a new way to construct large, complex systems. The approach takes full advantage of modern software development practices, technologies, and cloud infrastructure. Cloud native changes the way you design, implement, deploy, and operationalize systems.
 
-Unlike the continuous hype that drives our industry, cloud native is _for-real_. Consider the [Cloud Native Computing Foundation](https://www.cncf.io/) (CNCF), a consortium of over 400 major corporations. Its charter is to make cloud-native computing ubiquitous across technology and cloud stacks. As one of the most influential open-source groups, it hosts many of the fastest-growing open source-projects in GitHub. These projects include [Kubernetes](https://kubernetes.io/), [Prometheus](https://prometheus.io/), [Helm](https://helm.sh/), [Envoy](https://www.envoyproxy.io/), and [gRPC](https://grpc.io/).
+Unlike much of the continuous hype that drives our industry, cloud native is a serious new approach to architecture. Consider the [Cloud Native Computing Foundation](https://www.cncf.io/) (CNCF), a consortium of over 400 major corporations. Its charter is to make cloud-native computing ubiquitous across technology and cloud stacks. As one of the most influential open-source groups, it hosts many of the fastest-growing open-source projects in GitHub. These projects include [Kubernetes](https://kubernetes.io/), [Prometheus](https://prometheus.io/), [Helm](https://helm.sh/), [Envoy](https://www.envoyproxy.io/), and [gRPC](https://grpc.io/).
 
-The CNCF fosters an ecosystem of open-source and vendor-neutrality. Following that lead, this book presents cloud-native principles, patterns, and best practices that are technology agnostic. At the same time, we discuss the services and infrastructure available in the Microsoft Azure cloud for constructing cloud-native systems.
+The CNCF fosters an ecosystem of open-source code and vendor-neutrality. Following that lead, this book presents cloud-native principles, patterns, and best practices that are technology agnostic. At the same time, we discuss the services and infrastructure available in the Microsoft Azure cloud for constructing cloud-native systems and we show how Microsoft's new .NET Azure stack eases your build.
 
-So, what exactly is Cloud Native? Sit back, relax, and let us help you explore this new world.
+So, what exactly is cloud native? Let's explore this new world.
 
 >[!div class="step-by-step"]
 >[Previous](..TODO..)

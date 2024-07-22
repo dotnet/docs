@@ -116,7 +116,7 @@ AzureOpenAITextToImageService textToImageService = new(deployment, endpoint, key
 
 :::zone-end
 
-Provide context and instructions to the model by adding a system prompt. A good prompt to generate images requires a clear description: what is in the image, the specific color to use, style (drawing, painting, realistic or cartoony). 
+Provide context and instructions to the model by adding a system prompt. A good prompt to generate images requires a clear description: what is in the image, the specific color to use, style (drawing, painting, realistic or cartoony).
 
 Use the `GenerateImageAsync` function to have the model generate a response based off the user request and specify the size and quality.
 

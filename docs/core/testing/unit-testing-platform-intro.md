@@ -14,7 +14,7 @@ Microsoft.Testing.Platform is a lightweight and portable alternative to [VSTest]
 
 ## Microsoft.Testing.Platform pillars
 
-This new testing platform is built on the .NET Developer Experience Testing team experience and aims at addressing the challenges encountered since the release of .NET Core in 2016. While there is a high level of compatibility between the .NET Framework and the .NET Core/.NET, some key features like the plugin system and the new possible form factors of .NET compilations have made it complex to evolve or fully support the new runtime feature with the current [VSTest platform](https://github.com/microsoft/vstest) architecture.
+This new testing platform is built on the .NET Developer Experience Testing team's experience and aims to address the challenges encountered since the release of .NET Core in 2016. While there's a high level of compatibility between the .NET Framework and the .NET Core/.NET, some key features like the plugin-system and the new possible form factors of .NET compilations have made it complex to evolve or fully support the new runtime feature with the current [VSTest platform](https://github.com/microsoft/vstest) architecture.
 
 The main driving factors for the evolution of the new testing platform are detailed in the following:
 

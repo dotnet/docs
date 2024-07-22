@@ -388,8 +388,8 @@ Each Windows service has a registry entry under the **HKEY_LOCAL_MACHINE\SYSTEM\
 
 1. Select **Program.cs**, or **MyNewService.Designer.vb**, then choose **View Code** from the shortcut menu. In the `Main` method, change the code to add an input parameter and pass it to the service constructor:
 
-   [!code-csharp[VbRadconService](./snippets/MyNewService/csharp/Program-add-parameter.cs#1?highlight=6,11)]
-   [!code-vb[VbRadconService](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRadconService/VB/MyNewService.Designer-add-parameter.vb?highlight=1-2)]
+   [!code-csharp[VbRadconService](./snippets/MyNewService/csharp/Program-add-parameter.cs#1)]
+   [!code-vb[VbRadconService](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRadconService/VB/MyNewService.Designer-add-parameter.vb)]
 
 1. To specify the command-line arguments, add the following code to the `ProjectInstaller` class in **ProjectInstaller.cs**, or **ProjectInstaller.vb**:
 

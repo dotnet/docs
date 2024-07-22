@@ -37,4 +37,4 @@ Use `ClassCleanupBehavior.EndOfClass` with the `[ClassCleanup]`.
 
 ## When to suppress warnings
 
-It`s _not_ recommended to suppress warnings from this rule as you can use instead `[AssemblyCleanup]`.
+It's _not_ recommended to suppress warnings from this rule as you can use instead `[AssemblyCleanup]`.

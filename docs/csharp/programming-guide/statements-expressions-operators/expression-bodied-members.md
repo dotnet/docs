@@ -57,6 +57,14 @@ You can use expression body definitions to implement property `get` and `set` ac
 
 For more information about properties, see [Properties (C# Programming Guide)](../classes-and-structs/properties.md).
 
+## Events
+
+Similarly, event `add` and `remove` accessors may be expression-bodied:
+
+[!code-csharp[expression-bodied-event-add-remove](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/ExpressionBodiedMembers/expr-bodied-event.cs#1)]
+
+For more information about events, see [Events (C# Programming Guide)](../events/index.md).
+
 ## Constructors
 
 An expression body definition for a constructor typically consists of a single assignment expression or a method call that handles the constructor's arguments or initializes instance state.

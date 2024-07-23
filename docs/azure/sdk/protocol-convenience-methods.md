@@ -63,7 +63,7 @@ The preceding code demonstrates the following `Azure.Core` convenience method pa
 
 The following code uses a `ContentSafetyClient` to call the `AnalyzeText` protocol method:
 
-:::code source="snippets/protocol-convenience-methods/AzureCoreProtocol/Program.cs" highlight="18-20":::
+:::code source="snippets/protocol-convenience-methods/AzureCoreProtocol/Program.cs" highlight="18-23":::
 
 The preceding code demonstrates the following protocol method patterns:
 

@@ -30,6 +30,12 @@ ClientResult result = chatClient.CompleteChat(
             ErrorOptions = ClientErrorBehaviors.NoThrow
         });
 
+// Any non-200 response code from CompleteChat endpoint isn't considered a success response.
+if (result.Status != 200) 
+{
+    throw new RequestFailedException(response); 
+}
+
 // Display the results
 BinaryData output = result.GetRawResponse().Content;
 

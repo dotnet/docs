@@ -51,7 +51,9 @@ public class MyTestClass
 
 The [TestMethod](<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute>) attribute is used inside a `TestClass` to define the actual test method to run.
 
-The method should be an instance method defined as `public void` or `public Task` (optionally `async`) and be parameterless.
+The method should be an instance `public` method defined as `void`, `Task`, or `ValueTask` (starting with MSTest v3.3). It can optionally be `async` but should not be `async void`.
+
+The method should have zero parameters, unless it is used with `[DataRow]`, `[DynamicData]` or similar attribute that provides test case data to the test method.
 
 **Example**
 

@@ -63,7 +63,7 @@ configuration:
     - description: Label PRs from dependabot/dependabot[bot]
       if:
       - payloadType: Pull_Request
-        or:
+      - or:
         - isActivitySender:
             user: dependabot
         - isActivitySender:

@@ -17,7 +17,7 @@ MSTest uses custom attributes to identify and customize tests.
 To help provide a clearer overview of the testing framework, this section organizes the members of the <xref:Microsoft.VisualStudio.TestTools.UnitTesting> namespace into groups of related functionality.
 
 > [!NOTE]
-> Attribute elements, whose names end with "Attribute", can be used with or without "Attribute" at the end. Attributes that have parameterless constructor, can be written with or without parenthesis. 
+> Attribute elements, whose names end with "Attribute", can be used with or without "Attribute" at the end. Attributes that have parameterless constructor, can be written with or without parenthesis.
 > The following code examples work identically:
 >
 > `[TestClass()]`

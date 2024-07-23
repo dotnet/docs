@@ -61,21 +61,21 @@
 /docs/azure/includes/ @dotnet/docs
 
 # Azure SDK catch-all entry
-/docs/azure/sdk/ @jsquire @pallavit @alexwolfmsft
+/docs/azure/sdk/ @jsquire @pallavit @alexwolfmsft @CamSoper
 
 # Azure SDK authentication topics
 /docs/azure/sdk/authentication/ @christothes @schaabs
 
 # Azure SDK miscellaneous topics
-/docs/azure/sdk/azure-sdk-configure-proxy.md @annelo-msft @christothes @JoshLove-msft @KrzysztofCwalina @jsquire @alexwolfmsft
-/docs/azure/sdk/azure-sdk-for-net.md @jsquire @pallavit @alexwolfmsft
-/docs/azure/sdk/dependency-injection.md @JoshLove-msft @jsquire @alexwolfmsft
-/docs/azure/sdk/logging.md @annelo-msft @christothes @JoshLove-msft @KrzysztofCwalina @jsquire @alexwolfmsft
-/docs/azure/sdk/packages.md @jsquire @pallavit @alexwolfmsft
-/docs/azure/sdk/pagination.md @annelo-msft @christothes @JoshLove-msft @KrzysztofCwalina @jsquire @alexwolfmsft
-/docs/azure/sdk/resource-management.md @ArthurMa1978 @m-nash @alexwolfmsft
-/docs/azure/sdk/thread-safety.md @annelo-msft @christothes @JoshLove-msft @KrzysztofCwalina @jsquire @alexwolfmsft
-/docs/azure/sdk/unit-testing-mocking.md @annelo-msft @christothes @JoshLove-msft @KrzysztofCwalina @jsquire @alexwolfmsft
+/docs/azure/sdk/azure-sdk-configure-proxy.md @annelo-msft @christothes @JoshLove-msft @KrzysztofCwalina @jsquire @alexwolfmsft @CamSoper
+/docs/azure/sdk/azure-sdk-for-net.md @jsquire @pallavit @alexwolfmsft @CamSoper
+/docs/azure/sdk/dependency-injection.md @JoshLove-msft @jsquire @alexwolfmsft @CamSoper
+/docs/azure/sdk/logging.md @annelo-msft @christothes @JoshLove-msft @KrzysztofCwalina @jsquire @alexwolfmsft @CamSoper
+/docs/azure/sdk/packages.md @jsquire @pallavit @alexwolfmsft @CamSoper
+/docs/azure/sdk/pagination.md @annelo-msft @christothes @JoshLove-msft @KrzysztofCwalina @jsquire @alexwolfmsft @CamSoper
+/docs/azure/sdk/resource-management.md @ArthurMa1978 @m-nash @alexwolfmsft @CamSoper
+/docs/azure/sdk/thread-safety.md @annelo-msft @christothes @JoshLove-msft @KrzysztofCwalina @jsquire @alexwolfmsft @CamSoper
+/docs/azure/sdk/unit-testing-mocking.md @annelo-msft @christothes @JoshLove-msft @KrzysztofCwalina @jsquire @alexwolfmsft @CamSoper
 
 # IoT Guide
 /docs/iot/ @CamSoper

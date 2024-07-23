@@ -42,7 +42,7 @@ Get started with AI by creating a simple .NET 8 console chat application. The ap
 
 :::zone-end
 
-## Try the the HikerAI Pro sample
+## Try the the hiker pro sample
 
 <!-- markdownlint-disable MD029 MD044 -->
 :::zone target="docs" pivot="openai"

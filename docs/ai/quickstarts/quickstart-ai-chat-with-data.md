@@ -16,7 +16,7 @@ zone_pivot_groups: openai-library
 :::zone target="docs" pivot="openai"
 <!-- markdownlint-enable MD044 -->
 
-Get started with AI development, using the `gpt-3.5-turbo` model from a simple .NET 8.0 console application. Use the AI model to get analytics and information about your previous hikes. It consists of a simple console application, running locally, that will read the file `hikes.md` and send request to the OpenAI service and provide the result in the console. Follow these steps to get access to OpenAI and learn how to use Semantic Kernel.
+Get started with AI development using a .NET 8.0 console app to connect to an OpenAI `gpt-3.5-turbo` model. You'll connect to the AI model using [Semantic Kernel](../semantic-kernel-dotnet-overview.md) to analyze hiking data and provide insights.
 
 [!INCLUDE [download-alert](includes/prerequisites-openai.md)]
 :::zone-end
@@ -25,7 +25,7 @@ Get started with AI development, using the `gpt-3.5-turbo` model from a simple .
 :::zone target="docs" pivot="azure-openai"
 <!-- markdownlint-enable MD044 -->
 
-Get started with AI development, using the `gpt-35-turbo` model from a simple .NET 8.0 console application. Use the AI model to get analytics and information about your previous hikes. It consists of a simple console application, running locally, that will read the file `hikes.md` and send request to an Azure OpenAI service deployed in your Azure subscription and provide the result in the console. Follow these steps to provision Azure OpenAI and learn how to use the .NET Azure OpenAI SDK.
+Get started with AI development using a .NET 8.0 console app to connect to an OpenAI `gpt-3.5-turbo` model deployed on Azure. You'll connect to the AI model using [Semantic Kernel](../semantic-kernel-dotnet-overview.md) to analyze hiking data and provide insights.
 
 [!INCLUDE [download-alert](includes/prerequisites-azure-openai.md)]
 :::zone-end
@@ -40,7 +40,7 @@ Get started with AI development, using the `gpt-35-turbo` model from a simple .N
 
 :::zone-end
 
-## Try the "Chatting About My Previous Hikes" sample
+## Try the hiking chat sample
 
 <!-- markdownlint-disable MD029 MD044 -->
 :::zone target="docs" pivot="openai"
@@ -105,6 +105,7 @@ Once the `OpenAIChatCompletionService` client is created, the app reads the cont
 :::zone-end
 
 :::zone target="docs" pivot="azure-openai"
+
 The application uses the [`Microsoft.SemanticKernel`](https://www.nuget.org/packages/Microsoft.SemanticKernel) package to send and receive requests to an Azure OpenAI service deployed in Azure.
 
 The entire application is contained within the **Program.cs** file. The first several lines of code loads up secrets and configuration values that were set in the `dotnet user-secrets` for you during the application provisioning.
@@ -138,7 +139,7 @@ ChatHistory chatHistory = new($"""
 Console.WriteLine($"{chatHistory.Last().Role} >>> {chatHistory.Last().Content}");
 ```
 
-Add a user prompt to the model by using the `AddUserMessage` function.Call the `GetChatMessageContentAsync` function to instruct the model to generate a response based off the system and user prompts.
+The following code adds a user prompt to the model using the `AddUserMessage` function. The `GetChatMessageContentAsync` function instructs the model to generate a response based off the system and user prompts.
 
 ```csharp
 // Start the conversation
@@ -148,25 +149,36 @@ Console.WriteLine($"{chatHistory.Last().Role} >>> {chatHistory.Last().Content}")
 chatHistory.Add(
     await service.GetChatMessageContentAsync(
         chatHistory,
-        new OpenAIPromptExecutionSettings() { MaxTokens = 400 }));
+        new OpenAIPromptExecutionSettings()
+        { 
+            MaxTokens = 400 
+        }));
 Console.WriteLine($"{chatHistory.Last().Role} >>> {chatHistory.Last().Content}");
 ```
 
-To maintain the chat history or context, add the response from the model to the `chatHistory`.
+The app adds the response from the model to the `chatHistory` to maintain the chat history or context.
 
 ```csharp
 // Continue the conversation with a question.
 chatHistory.AddUserMessage(
     "I would like to know the ratio of the hikes I've done in Canada compared to other countries.");
+
 Console.WriteLine($"{chatHistory.Last().Role} >>> {chatHistory.Last().Content}");
 
 chatHistory.Add(await service.GetChatMessageContentAsync(
     chatHistory,
-    new OpenAIPromptExecutionSettings() { MaxTokens = 400 }));
+    new OpenAIPromptExecutionSettings()
+    { 
+        MaxTokens = 400 
+    }));
+
 Console.WriteLine($"{chatHistory.Last().Role} >>> {chatHistory.Last().Content}");
 ```
 
-Customize the system prompt and change the request, asking for different questions (ex: How many times did you hiked when it was raining? How many times did you hiked in 2021? etc.) to see how the model responds.
+Customize the system prompt or user prompt to provide different questions and context to see how the models responds:
+
+- How many times did I hike when it was raining?
+- How many times did I hike in 2021?
 
 :::zone target="docs" pivot="azure-openai"
 

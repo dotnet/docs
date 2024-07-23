@@ -16,7 +16,7 @@ zone_pivot_groups: openai-library
 :::zone target="docs" pivot="openai"
 <!-- markdownlint-enable MD044 -->
 
-Get started with Semantic Kernel by creating a simple .NET 8 console chat application. The application will run locally and use the OpenAI `gpt-3.5-turbo` model. Follow these steps to get access to OpenAI and learn how to use Semantic Kernel.
+Get started with OpenAI and [Semantic Kernel](../semantic-kernel-dotnet-overview.md) by creating a simple .NET 8.0 console chat application. The application will run locally and use the OpenAI `gpt-3.5-turbo` model. Follow these steps to get access to OpenAI and learn how to use Semantic Kernel.
 
 [!INCLUDE [download-alert](includes/prerequisites-openai.md)]
 
@@ -26,7 +26,7 @@ Get started with Semantic Kernel by creating a simple .NET 8 console chat applic
 :::zone target="docs" pivot="azure-openai"
 <!-- markdownlint-enable MD044 -->
 
-Get started with Semantic Kernel by creating a simple .NET 8 console chat application. The application will run locally and connect to the OpenAI `gpt-35-turbo` model deployed into Azure OpenAI. Follow these steps to provision Azure OpenAI and learn how to use Semantic Kernel.
+Get started with OpenAI and [Semantic Kernel](../semantic-kernel-dotnet-overview.md) by creating a simple .NET 8.0 console chat application. The application will run locally and connect to the OpenAI `gpt-35-turbo` model deployed into Azure OpenAI. Follow these steps to provision Azure OpenAI and learn how to use Semantic Kernel.
 
 [!INCLUDE [download-alert](includes/prerequisites-azure-openai.md)]
 

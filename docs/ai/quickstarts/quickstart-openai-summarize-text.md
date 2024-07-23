@@ -14,7 +14,7 @@ zone_pivot_groups: openai-library
 
 :::zone target="docs" pivot="openai"
 
-Get started with AI by creating a simple .NET 8 console chat application to summarize text. The application runs locally and uses the OpenAI `gpt-3.5-turbo` model. Follow these steps to get access to OpenAI and learn how to use Semantic Kernel.
+Get started with AI by creating a simple .NET 8.0 console chat application to summarize text. The application runs locally and uses the OpenAI `gpt-3.5-turbo` model. Follow these steps to get access to OpenAI and learn how to use Semantic Kernel.
 
 [!INCLUDE [download-alert](includes/prerequisites-openai.md)]
 
@@ -22,7 +22,7 @@ Get started with AI by creating a simple .NET 8 console chat application to summ
 
 :::zone target="docs" pivot="azure-openai"
 
-Get started with AI by creating a simple .NET 8 console chat application to summarize text. The app runs locally and connects to the OpenAI `gpt-35-turbo` model deployed into Azure OpenAI. Follow these steps to provision the Azure OpenAI service and learn how to use Semantic Kernel.
+Get started with AI by creating a simple .NET 8.0 console chat application to summarize text. The app runs locally and connects to the OpenAI `gpt-35-turbo` model deployed into Azure OpenAI. Follow these steps to provision the Azure OpenAI service and learn how to use Semantic Kernel.
 
 [!INCLUDE [download-alert](includes/prerequisites-azure-openai.md)]
 
@@ -38,7 +38,7 @@ Get started with AI by creating a simple .NET 8 console chat application to summ
 
 :::zone-end
 
-## Try the Hiking Benefits Summary sample
+## Try the hiking benefits sample
 
 :::zone target="docs" pivot="openai"
 
@@ -88,7 +88,7 @@ string model = "gpt-3.5-turbo";
 string key = config["OpenAIKey"];
 ```
 
-The `Kernel` class facilitates the requests and responses with the help of `AddOpenAIChatCompletion` service.
+The `Kernel` class facilitates the requests and responses and registers an `OpenAIChatCompletion` service.
 
 ```csharp
 // Create a Kernel containing the OpenAI Chat Completion Service
@@ -112,7 +112,7 @@ string deployment = config["AZURE_OPENAI_GPT_NAME"];
 string key = config["AZURE_OPENAI_KEY"];
 ```
 
-The `Kernel` class facilitates the requests and responses with the help of `AddAzureOpenAIChatCompletion` service.
+The `Kernel` class facilitates the requests and responses and registers an `OpenAIChatCompletion` service.
 
 ```csharp
 // Create a Kernel containing the Azure OpenAI Chat Completion Service
@@ -123,7 +123,7 @@ Kernel kernel = Kernel.CreateBuilder()
 
 :::zone-end
 
-Once the `Kernel` is created, the app code reads the `benefits.md` file content and uses it to create a `prompt` for model. The prompt instructs the model to summarize the text.
+Once the `Kernel` is created, the app code reads the `benefits.md` file content and uses it to create a `prompt` for model. The prompt instructs the model to summarize the file text content.
 
 ```csharp
 // Create and print out the prompt
@@ -139,7 +139,12 @@ The `InvokePromptAsync` function sends the `prompt` to the model to generate a r
 ```csharp
 // Submit the prompt and print out the response
 string response = await kernel.InvokePromptAsync<string>(
-    prompt, new(new OpenAIPromptExecutionSettings() { MaxTokens = 400 }));
+    prompt,
+    new(new OpenAIPromptExecutionSettings() 
+        { 
+            MaxTokens = 400 
+        })
+    );
 Console.WriteLine($"assistant >>> {response}");
 ```
 

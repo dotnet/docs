@@ -38,7 +38,7 @@ Get started with AI by creating a simple .NET 8 console chat application. The ap
 
 :::zone-end
 
-## Try the the Hiking Images sample
+## Try the the hiking images sample
 
 :::zone target="docs" pivot="openai"
 

@@ -9,7 +9,7 @@ In previous versions, when a <xref:Microsoft.Extensions.Hosting.BackgroundServic
 
 ## Change description
 
-In previous .NET versions, when an exception is thrown from a <xref:Microsoft.Extensions.Hosting.BackgroundService.ExecuteAsync(System.Threading.CancellationToken)?displayProperty=nameWithType> override, the host continues to run, and no message is logged.
+In previous .NET versions, when an exception is thrown from a <xref:Microsoft.Extensions.Hosting.BackgroundService.ExecuteAsync(System.Threading.CancellationToken)?displayProperty=nameWithType> override, the exception is lost and the service appears unresponsive. The host continues to run, and no message is logged.
 
 Starting in .NET 6, when an exception is thrown from a <xref:Microsoft.Extensions.Hosting.BackgroundService.ExecuteAsync(System.Threading.CancellationToken)?displayProperty=nameWithType> override, the exception is logged to the current <xref:Microsoft.Extensions.Logging.ILogger>. By default, the host is stopped when an unhandled exception is encountered.
 

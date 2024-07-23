@@ -79,6 +79,8 @@ Get started with Semantic Kernel by creating a simple .NET 8 console chat applic
 
 :::zone-end
 
+:::zone target="docs" pivot="openai"
+
 ## Explore the code
 
 The app uses the [`Microsoft.SemanticKernel`](https://www.nuget.org/packages/Microsoft.SemanticKernel) package to send and receive requests to the OpenAI service.
@@ -98,15 +100,13 @@ The `OpenAIChatCompletionService` service facilitates the requests and responses
 OpenAIChatCompletionService service = new(model, key);
 ```
 
-Provide more context to the model by adding a system prompt, which influences model behavior and the generated completions during the conversation.
-
 :::zone-end
 
 <!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="azure-openai"
 <!-- markdownlint-enable MD044 -->
 
-## Understanding the code
+## Explore the code
 
 The application uses the [`Microsoft.SemanticKernel`](https://www.nuget.org/packages/Microsoft.SemanticKernel) package to send and receive requests to an Azure OpenAI service deployed in Azure.
 
@@ -127,9 +127,9 @@ The `AzureOpenAIChatCompletionService` service facilitates the requests and resp
 AzureOpenAIChatCompletionService service = new(deployment, endpoint, key);
 ```
 
-Add a system prompt to provide more context to the model, which influences model behavior and the generated completions during the conversation.
-
 :::zone-end
+
+Add a system prompt to provide more context to the model, which influences model behavior and the generated completions during the conversation.
 
 ```csharp
 // Start the conversation with context for the AI model

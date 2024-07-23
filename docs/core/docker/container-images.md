@@ -91,38 +91,36 @@ All of the official Microsoft images for .NET are published to the [microsoft-do
 
 _.NET stable image repositories:_
 
-| Image repository | Image |
-|--|--|
-| [aspnet](https://hub.docker.com/_/microsoft-dotnet-aspnet) | `mcr.microsoft.com/dotnet/aspnet` |
-| [monitor](https://hub.docker.com/_/microsoft-dotnet-monitor) | `mcr.microsoft.com/dotnet/monitor` |
-| [monitor-base](https://hub.docker.com/_/microsoft-dotnet-monitor-base) | `mcr.microsoft.com/dotnet/monitor/base` |
+| Image repository                                                       | Image                                   |
+|------------------------------------------------------------------------|-----------------------------------------|
+| [aspnet](https://hub.docker.com/_/microsoft-dotnet-aspnet)             | `mcr.microsoft.com/dotnet/aspnet`       |
+| [monitor](https://hub.docker.com/_/microsoft-dotnet-monitor)           | `mcr.microsoft.com/dotnet/monitor`      |
 | [runtime-deps](https://hub.docker.com/_/microsoft-dotnet-runtime-deps) | `mcr.microsoft.com/dotnet/runtime-deps` |
-| [runtime](https://hub.docker.com/_/microsoft-dotnet-runtime) | `mcr.microsoft.com/dotnet/runtime` |
-| [samples](https://hub.docker.com/_/microsoft-dotnet-samples) | `mcr.microsoft.com/dotnet/samples` |
-| [sdk](https://hub.docker.com/_/microsoft-dotnet-sdk) | `mcr.microsoft.com/dotnet/sdk` |
+| [runtime](https://hub.docker.com/_/microsoft-dotnet-runtime)           | `mcr.microsoft.com/dotnet/runtime`      |
+| [samples](https://hub.docker.com/_/microsoft-dotnet-samples)           | `mcr.microsoft.com/dotnet/samples`      |
+| [sdk](https://hub.docker.com/_/microsoft-dotnet-sdk)                   | `mcr.microsoft.com/dotnet/sdk`          |
 
 _.NET nightly image repositories:_
 
-| Image repository | Image |
-|--|--|
-| [nightly](https://hub.docker.com/_/microsoft-dotnet-nightly) | `mcr.microsoft.com/dotnet/nightly` |
-| [nightly-aspnet](https://hub.docker.com/_/microsoft-dotnet-nightly-aspnet) | `mcr.microsoft.com/dotnet/nightly/aspnet` |
-| [nightly-monitor-base](https://hub.docker.com/_/microsoft-dotnet-nightly-monitor-base) | `mcr.microsoft.com/dotnet/nightly/monitor/base` |
+| Image repository                                                             | Image                                      |
+|------------------------------------------------------------------------------|--------------------------------------------|
+| [nightly](https://hub.docker.com/_/microsoft-dotnet-nightly)                 | `mcr.microsoft.com/dotnet/nightly`         |
+| [nightly-aspnet](https://hub.docker.com/_/microsoft-dotnet-nightly-aspnet)   | `mcr.microsoft.com/dotnet/nightly/aspnet`  |
 | [nightly-monitor](https://hub.docker.com/_/microsoft-dotnet-nightly-monitor) | `mcr.microsoft.com/dotnet/nightly/monitor` |
 | [nightly-runtime-deps](https://hub.docker.com/_/microsoft-dotnet-nightly-runtime-deps) | `mcr.microsoft.com/dotnet/nightly/runtime-deps` |
 | [nightly-runtime](https://hub.docker.com/_/microsoft-dotnet-nightly-runtime) | `mcr.microsoft.com/dotnet/nightly/runtime` |
-| [nightly-sdk](https://hub.docker.com/_/microsoft-dotnet-nightly-sdk) | `mcr.microsoft.com/dotnet/nightly/sdk` |
+| [nightly-sdk](https://hub.docker.com/_/microsoft-dotnet-nightly-sdk)         | `mcr.microsoft.com/dotnet/nightly/sdk`     |
 
 _.NET Framework image repositories:_
 
-| Image repository | Image |
-|--|--|
-| [framework](https://hub.docker.com/_/microsoft-dotnet-framework) | `mcr.microsoft.com/dotnet/framework` |
-| [framework-aspnet](https://hub.docker.com/_/microsoft-dotnet-framework-aspnet) | `mcr.microsoft.com/dotnet/framework/aspnet` |
+| Image repository                                                                 | Image                                        |
+|----------------------------------------------------------------------------------|----------------------------------------------|
+| [framework](https://hub.docker.com/_/microsoft-dotnet-framework)                 | `mcr.microsoft.com/dotnet/framework`         |
+| [framework-aspnet](https://hub.docker.com/_/microsoft-dotnet-framework-aspnet)   | `mcr.microsoft.com/dotnet/framework/aspnet`  |
 | [framework-runtime](https://hub.docker.com/_/microsoft-dotnet-framework-runtime) | `mcr.microsoft.com/dotnet/framework/runtime` |
 | [framework-samples](https://hub.docker.com/_/microsoft-dotnet-framework-samples) | `mcr.microsoft.com/dotnet/framework/samples` |
-| [framework-sdk](https://hub.docker.com/_/microsoft-dotnet-framework-sdk) | `mcr.microsoft.com/dotnet/framework/sdk` |
-| [framework-wcf](https://hub.docker.com/_/microsoft-dotnet-framework-wcf) | `mcr.microsoft.com/dotnet/framework/wcf` |
+| [framework-sdk](https://hub.docker.com/_/microsoft-dotnet-framework-sdk)         | `mcr.microsoft.com/dotnet/framework/sdk`     |
+| [framework-wcf](https://hub.docker.com/_/microsoft-dotnet-framework-wcf)         | `mcr.microsoft.com/dotnet/framework/wcf`     |
 
 ## See also
 

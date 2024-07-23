@@ -30,10 +30,12 @@ ClientResult result = chatClient.CompleteChat(
             ErrorOptions = ClientErrorBehaviors.NoThrow
         });
 
+PipelineResponse response = result.GetRawResponse();
+
 // Any non-200 response code from CompleteChat endpoint isn't considered a success response.
-if (result.Status != 200) 
+if (response.Status != 200)
 {
-    throw new RequestFailedException(response); 
+    throw new ClientResultException(response);
 }
 
 // Display the results

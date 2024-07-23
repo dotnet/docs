@@ -175,10 +175,12 @@ chatHistory.Add(await service.GetChatMessageContentAsync(
 Console.WriteLine($"{chatHistory.Last().Role} >>> {chatHistory.Last().Content}");
 ```
 
-Customize the system prompt or user prompt to provide different questions and context to see how the models responds:
+Customize the system or user prompts to provide different questions and context:
 
 - How many times did I hike when it was raining?
 - How many times did I hike in 2021?
+
+The model generates a relevant response to each prompt based on your inputs.
 
 :::zone target="docs" pivot="azure-openai"
 

@@ -122,7 +122,7 @@ string deployment = config["AZURE_OPENAI_GPT_NAME"];
 string key = config["AZURE_OPENAI_KEY"];
 ```
 
-The `Kernel` class facilitates the requests and responses with the help of `AddAzureOpenAIChatCompletion` service.
+The `Kernel` class facilitates the requests and responses with the help of `AzureOpenAIChatCompletion` service.
 
 ```csharp
 // Create a Kernel containing the Azure OpenAI Chat Completion Service
@@ -135,7 +135,7 @@ Kernel kernel = b
 
 :::zone-end
 
-The function's `ImportPluginFromFunctions` and `CreateFromMethod` are used to define the local function that will be called by the model.
+The function's `ImportPluginFromFunctions` and `CreateFromMethod` define the local function that will be called by the model.
 
 ```csharp
 // Add a new plugin with a local .NET function that should be available to the AI model
@@ -151,7 +151,7 @@ kernel.ImportPluginFromFunctions("WeatherPlugin",
 ]);
 ```
 
-Once the `kernel` client is created, provide more context to the model by adding a system prompt. This instructs the model how you'd like it to act during the conversation. Note how the weather is emphasized in the system prompt.
+Once the `kernel` client is created, the code uses a system prompt to provide context and influence the completion tone and content. Note how the weather is emphasized in the system prompt.
 
 ```csharp
 ChatHistory chatHistory = new("""
@@ -170,9 +170,7 @@ ChatHistory chatHistory = new("""
     """);
 ```
 
-Then you can add a user message to the model by using the `AddUserMessage` functon.
-
-To have the model generate a response based off the system prompt and the user request, use the `GetChatMessageContentAsync` function.
+The app also adds a user message to the model using the `AddUserMessage` function. The `GetChatMessageContentAsync` function sends the chat history to the model to generate a response based off the system and user prompts.
 
 ```csharp
 chatHistory.AddUserMessage("""
@@ -186,7 +184,13 @@ chatHistory.AddUserMessage("""
 
 Console.WriteLine($"{chatHistory.Last().Role} >>> {chatHistory.Last().Content}");
 
-chatHistory.Add(await service.GetChatMessageContentAsync(chatHistory, new OpenAIPromptExecutionSettings() { MaxTokens = 400 }));
+chatHistory.Add(await service.GetChatMessageContentAsync(
+    chatHistory, 
+    new OpenAIPromptExecutionSettings()
+    { 
+        MaxTokens = 400 
+    }));
+
 Console.WriteLine($"{chatHistory.Last().Role} >>> {chatHistory.Last().Content}");
 ```
 

@@ -17,7 +17,8 @@ MSTest uses custom attributes to identify and customize tests.
 To help provide a clearer overview of the testing framework, this section organizes the members of the <xref:Microsoft.VisualStudio.TestTools.UnitTesting> namespace into groups of related functionality.
 
 > [!NOTE]
-> Attribute elements, whose names end with "Attribute", can be used either with or without "Attribute" on the end and for parameterless constructors with or without parenthesis. For example, the following code examples function identically:
+> Attribute elements, whose names end with "Attribute", can be used with or without "Attribute" at the end. Attributes that have parameterless constructor, can be written with or without parenthesis. 
+> The following code examples work identically:
 >
 > `[TestClass()]`
 >
@@ -35,7 +36,7 @@ Every test class must have the `TestClass` attribute, and every test method must
 
 The [TestClass](<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute>) attribute marks a class that contains tests and, optionally, initialize or cleanup methods.
 
-This attribute can be extended to update or extend the behavior.
+This attribute can be extended to change or extend the default behavior.
 
 Example:
 
@@ -90,7 +91,7 @@ Use the following elements to set up data-driven tests. For more information, se
 
 #### DataRow
 
-The `DataRowAttribute` allows you to provide inline data used when invoking the test method. It can appear one or multiple times on a test method. It should be combined with `TestMethodAttribute` or `DataTestMethodAttribute`.
+The `DataRowAttribute` allows you to run the same test method with multiple different inputs. It can appear one or multiple times on a test method. It should be combined with `TestMethodAttribute` or `DataTestMethodAttribute`.
 
 The number and types of arguments must exactly match the test method signature.
 
@@ -188,7 +189,7 @@ public class TestClass
 
 ### Attributes used to provide initialization and cleanups
 
-A method decorated with one of the following attributes is called at the moment you specify. For more information, see [Anatomy of a unit test](/previous-versions/ms182517(v=vs.110)).
+Setup and cleanup that is common to multiple tests can be extracted to a separate method, and marked with one of the attributes listed below, to run it at appropriate time, for example before every test. For more information, see [Anatomy of a unit test](/previous-versions/ms182517(v=vs.110)).
 
 #### Assembly level
 
@@ -234,7 +235,7 @@ public class MyOtherTestClass
 
 It's possible to control the inheritance behavior: only for current class using `InheritanceBehavior.None` or for all derived classes using `InheritanceBehavior.BeforeEachDerivedClass`.
 
-It's also possible to configure whether the class cleanup should be run at the end of the class or at the end of the assembly (No longer supported starting from MSTest v4 as EndOfClass is the default and only [class cleanup](<xref:Microsoft.VisualStudio.TestTools.UnitTesting.ClassCleanupAttribute>) behavior).
+It's also possible to configure whether the class cleanup should be run at the end of the class or at the end of the assembly.
 
 The methods marked with these attributes should be defined as `static void` or `static Task`, in a `TestClass`, and appear only once. The initialize part requires one argument of type [TestContext](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext) and the cleanup no argument.
 

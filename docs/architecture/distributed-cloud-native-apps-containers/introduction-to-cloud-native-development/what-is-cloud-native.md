@@ -332,6 +332,24 @@ Applying these practices, organizations have radically evolved how they ship sof
 
 Infrastructure as code and deployment automation, along with GitHub and Azure DevOps are discussed in detail in [DevOps](./devops.md).
 
+## How does .NET Aspire help?
+
+You should understand that you can develop cloud-native systems using many different languages and technology stacks. You don't have to use .NET and you don't have to use .NET Aspire. However, as we're starting to understand, a cloud-native app that uses microservices, containers, and backing services is complex to write and you have to overcome several technical challenges.
+
+.NET Aspire helps by solving many of the difficulties common to all cloud-native apps.
+
+You can either start by creating a new solution based on one of the .NET Aspire templates or add .NET Aspire orchestration to an existing solution. In such a solution:
+
+- Each microservice is a .NET project and will be run in a container. During development, containers are run in Docker Desktop or Podman on your local computer. You can deploy containers to Docker hosts, Kubernetes clusters, or other container orchestrators.
+- Observability is built-in with support for the OpenTelemetry SDK. You can observe the behavior of your app in the .NET Aspire dashboard or send the data to other tools.
+- You can connect to a range of backing services by using .NET Aspire components. There are components for common message brokers, database systems, secrets stores, and caches. Each component includes resiliency enabled by default.
+
+> *You don't have to use Azure to host a .NET Aspire solution. However, Azure Container Apps (ACA) or Azure Kubernetes Service (AKS) are scalable and robust choices and .NET Aspire includes several built-in components that work with Azure products, such as Azure Service Bus and Azure Cosmos DB.*
+
+.NET Aspire is an opinionated stack - that means that it imposes a particular style of solution on you. If you disagree, there are other possible approaches but you'll have to code them yourself. A software architect who's already built cloud-native systems may find that disagreeable but for others who can adapt to the .NET Aspire way, the convenience of .NET Aspire is worth it.
+
+We'll learn about .NET Aspire in more detail throughout this book.
+
 >[!div class="step-by-step"]
 >[Previous](introduction-to-cloud-native-applications.md)
 >[Next](candidate-apps-for-cloud-native.md)

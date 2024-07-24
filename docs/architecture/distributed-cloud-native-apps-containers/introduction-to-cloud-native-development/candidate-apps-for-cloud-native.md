@@ -53,7 +53,7 @@ The right migration strategy depends on organizational priorities and the system
 
 ## Summary
 
-In this chapter, we introduced cloud-native computing. We provided a definition along with the key capabilities that drive a cloud-native application. We looked at the types of applications that might justify this investment and effort.
+In this chapter, we introduced cloud-native computing. We provided a definition along with the key capabilities that drive a cloud-native application. We looked at the types of applications that might justify this investment and effort. We've also had a introduction to the new .NET Aspire stack, which can help ease cloud-native development for .NET 8 and later solutions.
 
 With the introduction behind, we now dive into a much more detailed look at cloud native.
 

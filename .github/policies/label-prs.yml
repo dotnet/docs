@@ -60,6 +60,18 @@ configuration:
           - addLabel:
               label: ":octocat: auto-merge"
 
+      - description: Label PRs from dependabot/dependabot[bot]
+        if:
+          - payloadType: Pull_Request
+          - or:
+            - isActivitySender:
+                user: dependabot
+            - isActivitySender:
+                user: dependabot[bot]
+        then:
+          - addLabel:
+              label: ":octocat: auto-merge"
+
       - description: Label PRs with okr-quality
         if:
           - payloadType: Pull_Request

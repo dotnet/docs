@@ -39,5 +39,5 @@ namespace HttpClientExtensionMethods
 //Id: 1
 //Name: Tyler King
 //Username: Tyler
-//Email: Tyler @contoso.com
+//Email: Tyler@contoso.com
 //Success - Created

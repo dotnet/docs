@@ -180,6 +180,16 @@ items:
                 href: ../../core/tools/dotnet-nuget-sign.md
               - name: dotnet nuget why
                 href: ../../core/tools/dotnet-nuget-why.md
+          - name: dotnet nuget config
+            items:
+              - name: dotnet nuget config get
+                href: ../../core/tools/dotnet-nuget-config-get.md
+              - name: dotnet nuget config set
+                href: ../../core/tools/dotnet-nuget-config-set.md
+              - name: dotnet nuget config unset
+                href: ../../core/tools/dotnet-nuget-config-unset.md
+              - name: dotnet nuget config paths
+                href: ../../core/tools/dotnet-nuget-config-paths.md
           - name: dotnet pack
             href: ../../core/tools/dotnet-pack.md
           - name: dotnet package search

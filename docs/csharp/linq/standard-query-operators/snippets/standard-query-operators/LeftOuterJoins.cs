@@ -38,7 +38,7 @@ public class LeftOuterJoins
         // <LeftOuterJoinMethod>
         var query = students.GroupJoin(departments, student => student.DepartmentID, department => department.ID,
             (student, departmentList) => new { student, subgroup = departmentList.AsQueryable() })
-            .SelectMany(joinedSet => joinedSet.subgroup, (student, department) => new
+            .SelectMany(joinedSet => joinedSet.subgroup.DefaultIfEmpty(), (student, department) => new
             {
                 student.student.FirstName,
                 student.student.LastName,

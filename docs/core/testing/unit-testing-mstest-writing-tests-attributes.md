@@ -193,7 +193,7 @@ Setup and cleanup that is common to multiple tests can be extracted to a separat
 
 [AssemblyInitialize](<xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssemblyInitializeAttribute>) is called right after your assembly is loaded and [AssemblyCleanup](<xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssemblyCleanupAttribute>) is called right before your assembly is unloaded.
 
-The methods marked with these attributes should be defined as `static void` or `static Task`, in a `TestClass`, and appear only once. The initialize part requires one argument of type [TestContext](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext) and the cleanup no argument.
+The methods marked with these attributes should be defined as `static void`, `static Task` or `static ValueTask` (starting with MSTest v3.3), in a `TestClass`, and appear only once. The initialize part requires one argument of type [TestContext](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext) and the cleanup no argument.
 
 ```csharp
 [TestClass]
@@ -235,7 +235,7 @@ It's possible to control the inheritance behavior: only for current class using 
 
 It's also possible to configure whether the class cleanup should be run at the end of the class or at the end of the assembly.
 
-The methods marked with these attributes should be defined as `static void` or `static Task`, in a `TestClass`, and appear only once. The initialize part requires one argument of type [TestContext](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext) and the cleanup no argument.
+The methods marked with these attributes should be defined as `static void`, `static Task` or `static ValueTask` (starting with MSTest v3.3), in a `TestClass`, and appear only once. The initialize part requires one argument of type [TestContext](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext) and the cleanup no argument.
 
 ```csharp
 [TestClass]
@@ -277,7 +277,7 @@ The `TestInitialize` is similar to the class constructor but is usually more sui
 
 The `TestCleanup` is similar to the class `Dispose` (or `DisposeAsync`) but is usually more suitable for long or async cleanups. The `TestCleanup` is always called just before the `DisposeAsync`/`Dispose` and called for each test (including each data row of data-driven tests).
 
-The methods marked with these attributes should be defined as `void` or `Task`, in a `TestClass`, be parameterless, and appear one or multiple times.
+The methods marked with these attributes should be defined as `void`, `Task` or `ValueTask` (starting with MSTest v3.3), in a `TestClass`, be parameterless, and appear one or multiple times.
 
 ```csharp
 [TestClass]
@@ -386,21 +386,21 @@ public class UnitTest1
 }
 ```
 
-> [!NOTE]
+> [!WARNING]
 > We do not recommend the usage of this attribute for copying files to the deployment directory.
 
 ### ExpectedExceptionAttribute
 
 The MSTest framework introduced <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute> for marking a test method to expect an exception of a specific type. The test will pass if the expected exception is thrown and the exception message matches the expected message.
 
-> [!NOTE]
+> [!WARNING]
 > This attribute exists for backward compatibility and is not recommended for new tests. Instead, use the [Assert.ThrowsException]<xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException> method.
 
 ## Metadata attributes
 
 The following attributes and the values assigned to them appear in the `Visual Studio` **Properties** window for a particular test method. These attributes aren't meant to be accessed through the code of the test. Instead, they affect the ways the test is used or run, either by you through the IDE of Visual Studio, or by the Visual Studio test engine. For example, some of these attributes appear as columns in the **Test Manager** window and **Test Results** window, which means that you can use them to group and sort tests and test results. One such attribute is <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>, which you use to add arbitrary metadata to tests.
 
-For example, you could use it to store the name of a "test pass" that this test covers, by marking the test with `[TestProperty("TestPass", "Accessibility")]`. Or, you could use it to store an indicator of the kind of test It's with `[TestProperty("TestKind", "Localization")]`. The property you create by using this attribute, and the property value you assign, are both displayed in the Visual Studio **Properties** window under the heading **Test specific**.
+For example, you could use it to store the name of a "test pass" that this test covers, by marking the test with `[TestProperty("Feature", "Accessibility")]`. Or, you could use it to store an indicator of the kind of test It's with `[TestProperty("ProductMilestone", "42")]`. The property you create by using this attribute, and the property value you assign, are both displayed in the Visual Studio **Properties** window under the heading **Test specific**.
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute>
 

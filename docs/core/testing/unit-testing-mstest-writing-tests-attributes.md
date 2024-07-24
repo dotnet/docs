@@ -317,7 +317,7 @@ The following attributes can be used to modify the way tests are executed.
 
 ### TimeoutAttribute
 
-The [Timeout](<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TimeoutAttribute>) attribute can be used to specify the maximum time in milliseconds (strictly positive) that a test method is allowed to run. If the test method runs longer than the specified time, the test will be aborted and marked as failed.
+The [Timeout](<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TimeoutAttribute>) attribute can be used to specify the maximum time in milliseconds that a test method is allowed to run. If the test method runs longer than the specified time, the test will be aborted and marked as failed.
 
 This attribute can be applied to any test method or any fixture method (initialization and cleanup methods). It is also possible to specify the timeout globally for either all test methods or all test fixture methods by using the [timeout properties of the runsettings file](./unit-testing-mstest-configure.md#mstest-element).
 
@@ -325,18 +325,19 @@ This attribute can be applied to any test method or any fixture method (initiali
 > The timeout is not guaranteed to be precise. The test will be aborted after the specified time has passed, but it may take a few milliseconds longer.
 
 When using the timeout feature, a separate thread/task is created to run the test method. The main thread/task is responsible for monitoring the timeout and unobserving the method thread/task if the timeout is reached.
-Starting with MSTest 3.6, it is possible to specify `CooperativeCancellation` property on the attribute (or globally through runsettings) to enable cooperative cancellation. In this mode, the method is responsible for checking the cancellation token and aborting the test if it is signaled as you would do in any normal .NET method. This mode is more performant and allows for more precise control over the cancellation process.
+
+Starting with MSTest 3.6, it is possible to specify `CooperativeCancellation` property on the attribute (or globally through runsettings) to enable cooperative cancellation. In this mode, the method is responsible for checking the cancellation token and aborting the test if it is signaled as you would do in a typical `async` method. This mode is more performant and allows for more precise control over the cancellation process. This mode can be applied to both async and sync methods.
 
 ### STATestClassAttribute
 
-When applied to a test class, the `[STATestClass]` attribute indicates that all test methods (and the `[ClassInitialize]` and `[ClassCleanup]` methods) in the class should be run in a single-threaded apartment (STA). This attribute is useful when the test methods interact with COM objects that require an STA.
+When applied to a test class, the `[STATestClass]` attribute indicates that all test methods (and the `[ClassInitialize]` and `[ClassCleanup]` methods) in the class should be run in a single-threaded apartment (STA). This attribute is useful when the test methods interact with COM objects that require STA.
 
 > [!NOTE]
 > This is only supported on Windows.
 
 ### STATestMethodAttribute
 
-When applied to a test method, the `[STATestMethod]` attribute indicates that the test method should be run in a single-threaded apartment (STA). This attribute is useful when the test method interacts with COM objects that require an STA.
+When applied to a test method, the `[STATestMethod]` attribute indicates that the test method should be run in a single-threaded apartment (STA). This attribute is useful when the test method interacts with COM objects that require STA.
 
 > [!NOTE]
 > This is only supported on Windows.
@@ -345,7 +346,7 @@ When applied to a test method, the `[STATestMethod]` attribute indicates that th
 
 By default, MSTest runs tests in a sequential order. The [Parallelize](<xref:Microsoft.VisualStudio.TestTools.UnitTesting.ParallelizeAttribute>) attribute can be used to run tests in parallel. This is an assembly level attribute. You can specify if the parallelism should be at **class level** (multiple classes can be run in parallel but tests in a given class are run sequentially) or at **method level**.
 
-It is also possible to specify the maximum number of threads to use for parallel execution. A value of 0 (default value) means that the number of threads is equal to the number of processors on the machine.
+It is also possible to specify the maximum number of threads to use for parallel execution. A value of 0 (default value) means that the number of threads is equal to the number of logical processors on the machine.
 
 It is also possible to specify the parallelism through the [parallelization properties of the runsettings file](./unit-testing-mstest-configure.md#mstest-element).
 

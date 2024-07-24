@@ -59,7 +59,7 @@ For more information about properties, see [Properties (C# Programming Guide)](.
 
 ## Events
 
-Similarly, event `add` and `remove` accessors may be expression-bodied:
+Similarly, event `add` and `remove` accessors can be expression-bodied:
 
 [!code-csharp[expression-bodied-event-add-remove](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/ExpressionBodiedMembers/expr-bodied-event.cs#1)]
 

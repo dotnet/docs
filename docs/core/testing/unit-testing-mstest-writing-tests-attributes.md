@@ -6,7 +6,7 @@ ms.author: amauryleve
 ms.date: 07/24/2024
 ---
 
-# Attributes
+# MSTest Attributes
 
 MSTest uses custom attributes to identify and customize tests.
 

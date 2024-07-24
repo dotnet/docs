@@ -12,7 +12,7 @@ MSTest functionality is split into multiple NuGet packages:
 
 - [MSTest.TestFramework](https://www.nuget.org/packages/MSTest.TestFramework): Contains the attributes and classes that are used to define MSTest tests.
 - [MSTest.TestAdapter](https://www.nuget.org/packages/MSTest.TestAdapter): Contains the test adapter that discovers and runs MSTest tests.
-- [MSTest.Analyzer](https://www.nuget.org/packages/MSTest.Analyzer): Contains the analyzer that helps you write high-quality tests.
+- [MSTest.Analyzers](https://www.nuget.org/packages/MSTest.Analyzers): Contains the analyzers that helps you write high-quality tests.
 
 We recommend that you don't install these packages directly into your test projects. Instead, you should install either:
 

@@ -327,9 +327,6 @@ services:
 - **Connect a MongoDB application to Azure Cosmos DB**  \
   [https://learn.microsoft.com/azure/cosmos-db/connect-mongodb-account](/azure/cosmos-db/connect-mongodb-account)
 
-- **The Cosmos DB Emulator Docker image (Windows Container)**  \
-  <https://hub.docker.com/r/microsoft/azure-cosmosdb-emulator/>
-
 - **The MongoDB Docker image (Linux and Windows Container)**  \
   <https://hub.docker.com/_/mongo/>
 

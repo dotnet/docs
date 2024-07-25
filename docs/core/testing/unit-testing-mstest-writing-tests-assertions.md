@@ -6,7 +6,7 @@ ms.author: amauryleve
 ms.date: 07/24/2024
 ---
 
-# MSTest Assertions
+# MSTest assertions
 
 Use the `Assert` classes of the <xref:Microsoft.VisualStudio.TestTools.UnitTesting> namespace to verify specific functionality. A test method exercises the code of a method in your application's code, but it reports the correctness of the code's behavior only if you include `Assert` statements.
 

@@ -1,12 +1,12 @@
 ---
-title: MSTest writing tests
-description: Learn about how to write tests using MSTest.
+title: Write tests with MSTest
+description: Learn how to write tests using MSTest.
 author: Evangelink
 ms.author: amauryleve
 ms.date: 07/18/2024
 ---
 
-# Writing tests with MSTest
+# Write tests with MSTest
 
 In this article, you will learn about the APIs and conventions used by MSTest to help you write and shape your tests.
 

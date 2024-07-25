@@ -13,8 +13,7 @@ MSTest uses custom attributes to identify and customize tests.
 To help provide a clearer overview of the testing framework, this section organizes the members of the <xref:Microsoft.VisualStudio.TestTools.UnitTesting> namespace into groups of related functionality.
 
 > [!NOTE]
-> Attribute elements, whose names end with "Attribute", can be used with or without "Attribute" at the end. Attributes that have parameterless constructor, can be written with or without parenthesis.
-> The following code examples work identically:
+> Attributes, whose names end with "Attribute", can be used with or without "Attribute" at the end. Attributes that have parameterless constructor, can be written with or without parenthesis. The following code examples work identically:
 >
 > `[TestClass()]`
 >
@@ -28,7 +27,7 @@ To help provide a clearer overview of the testing framework, this section organi
 
 Every test class must have the `TestClass` attribute, and every test method must have the `TestMethod` attribute. For more information, see [Anatomy of a unit test](https://learn.microsoft.com/previous-versions/ms182517(v=vs.110)).
 
-### TestClassAttribute
+### `TestClassAttribute`
 
 The [TestClass](<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute>) attribute marks a class that contains tests and, optionally, initialize or cleanup methods.
 
@@ -49,9 +48,9 @@ The [TestMethod](<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAt
 
 The method should be an instance `public` method defined as `void`, `Task`, or `ValueTask` (starting with MSTest v3.3). It can optionally be `async` but should not be `async void`.
 
-The method should have zero parameters, unless it is used with `[DataRow]`, `[DynamicData]` or similar attribute that provides test case data to the test method.
+The method should have zero parameters, unless it's used with `[DataRow]`, `[DynamicData]` or similar attribute that provides test case data to the test method.
 
-**Example**
+Consider the following example test class:
 
 ```csharp
 [TestClass]
@@ -79,21 +78,16 @@ public class MyTestClass
 
 Use the following elements to set up data-driven tests. For more information, see [Create a data-driven unit test](/visualstudio/test/how-to-create-a-data-driven-unit-test.md) and [Use a configuration file to define a data source](/visualstudio/test/walkthrough-using-a-configuration-file-to-define-a-data-source.md).
 
-- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataTestMethodAttribute>
-
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataRowAttribute>
-
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataTestMethodAttribute>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DynamicDataAttribute>
 
-- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>
-
-### DataRow
+### `DataRowAttribute`
 
 The `DataRowAttribute` allows you to run the same test method with multiple different inputs. It can appear one or multiple times on a test method. It should be combined with `TestMethodAttribute` or `DataTestMethodAttribute`.
 
-The number and types of arguments must exactly match the test method signature.
-
-Examples of valid calls:
+The number and types of arguments must exactly match the test method signature. Consider the following example of a valid test class demonstrating the `DataRow` attribute usage with inline arguments that align to test method parameters:
 
 ```csharp
 [TestClass]
@@ -101,23 +95,36 @@ public class TestClass
 {
     [TestMethod]
     [DataRow(1, "message", true, 2.0)]
-    public void TestMethod1(int i, string s, bool b, float f) {}
+    public void TestMethod1(int i, string s, bool b, float f)
+    {
+        // Omitted for brevity.
+    }
     
     [TestMethod]
     [DataRow(new string[] { "line1", "line2" })]
-    public void TestMethod2(string[] lines) {}
+    public void TestMethod2(string[] lines)
+    {
+        // Omitted for brevity.
+    }
 
     [TestMethod]
     [DataRow(null)]
-    public void TestMethod3(object o) {}
+    public void TestMethod3(object o)
+    {
+        // Omitted for brevity.
+    }
 
     [TestMethod]
     [DataRow(new string[] { "line1", "line2" }, new string[] { "line1.", "line2." })]
-    public void TestMethod4(string[] input, string[] expectedOutput) {}
+    public void TestMethod4(string[] input, string[] expectedOutput)
+    {
+        // Omitted for brevity.
+    }
 }
 ```
 
-Note that you can also use the `params` feature to capture multiple inputs of the `DataRow`.
+> [!NOTE]
+> You can also use the `params` feature to capture multiple inputs of the `DataRow`.
 
 ```csharp
 [TestClass]
@@ -151,10 +158,10 @@ public class TestClass
 
 > [!NOTE]
 > Starting with MSTest v3, when you want to pass exactly 2 arrays, you no longer need to wrap the second array in an object array.
-> Before:
-> [DataRow(new string[] { "a" }, new object[] { new string[] { "b" } })]
-> In v3 onward:
-> [DataRow(new string[] { "a" }, new string[] { "b" })]
+> _Before:_
+> `[DataRow(new string[] { "a" }, new object[] { new string[] { "b" } })]`
+> _Staring with v3:_
+> `[DataRow(new string[] { "a" }, new string[] { "b" })]`
 
 You can modify the display name used in Visual Studio and loggers for each instance of `DataRowAttribute` by setting the `DisplayName` property.
 
@@ -163,7 +170,7 @@ You can modify the display name used in Visual Studio and loggers for each insta
 public class TestClass
 {
     [TestMethod]
-    [DataRow(1, 2, DisplayName= "Functional Case FC100.1")]
+    [DataRow(1, 2, DisplayName = "Functional Case FC100.1")]
     public void TestMethod(int i, int j) {}
 }
 ```
@@ -315,7 +322,7 @@ public class MyOtherTestClass
 
 The following attributes can be used to modify the way tests are executed.
 
-### TimeoutAttribute
+### `TimeoutAttribute`
 
 The [Timeout](<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TimeoutAttribute>) attribute can be used to specify the maximum time in milliseconds that a test method is allowed to run. If the test method runs longer than the specified time, the test will be aborted and marked as failed.
 
@@ -328,29 +335,29 @@ When using the timeout feature, a separate thread/task is created to run the tes
 
 Starting with MSTest 3.6, it is possible to specify `CooperativeCancellation` property on the attribute (or globally through runsettings) to enable cooperative cancellation. In this mode, the method is responsible for checking the cancellation token and aborting the test if it is signaled as you would do in a typical `async` method. This mode is more performant and allows for more precise control over the cancellation process. This mode can be applied to both async and sync methods.
 
-### STATestClassAttribute
+### `STATestClassAttribute`
 
 When applied to a test class, the `[STATestClass]` attribute indicates that all test methods (and the `[ClassInitialize]` and `[ClassCleanup]` methods) in the class should be run in a single-threaded apartment (STA). This attribute is useful when the test methods interact with COM objects that require STA.
 
 > [!NOTE]
 > This is only supported on Windows.
 
-### STATestMethodAttribute
+### `STATestMethodAttribute`
 
 When applied to a test method, the `[STATestMethod]` attribute indicates that the test method should be run in a single-threaded apartment (STA). This attribute is useful when the test method interacts with COM objects that require STA.
 
 > [!NOTE]
 > This is only supported on Windows.
 
-### ParallelizeAttribute
+### `ParallelizeAttribute`
 
 By default, MSTest runs tests in a sequential order. The [Parallelize](<xref:Microsoft.VisualStudio.TestTools.UnitTesting.ParallelizeAttribute>) attribute can be used to run tests in parallel. This is an assembly level attribute. You can specify if the parallelism should be at **class level** (multiple classes can be run in parallel but tests in a given class are run sequentially) or at **method level**.
 
-It is also possible to specify the maximum number of threads to use for parallel execution. A value of 0 (default value) means that the number of threads is equal to the number of logical processors on the machine.
+It's also possible to specify the maximum number of threads to use for parallel execution. A value of `0` (default value) means that the number of threads is equal to the number of logical processors on the machine.
 
 It is also possible to specify the parallelism through the [parallelization properties of the runsettings file](./unit-testing-mstest-configure.md#mstest-element).
 
-### DoNotParallelizeAttribute
+### `DoNotParallelizeAttribute`
 
 The [DoNotParallelize](<xref:Microsoft.VisualStudio.TestTools.UnitTesting.DoNotParallelizeAttribute>) attribute can be used to prevent parallel execution of tests in a given assembly. This attribute can be applied at the assembly level, class level or method level.
 
@@ -359,7 +366,7 @@ The [DoNotParallelize](<xref:Microsoft.VisualStudio.TestTools.UnitTesting.DoNotP
 
 ## Utilities attributes
 
-### DeploymentItemAttribute
+### `DeploymentItemAttribute`
 
 The MSTest framework introduced <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DeploymentItemAttribute> for copying files or folders specified as deployment items to the deployment directory (without adding a custom output path the copied files will be in TestResults folder inside the project folder). The deployment directory is where all the deployment items are present along with test project DLL.
 
@@ -389,7 +396,7 @@ public class UnitTest1
 > [!WARNING]
 > We do not recommend the usage of this attribute for copying files to the deployment directory.
 
-### ExpectedExceptionAttribute
+### `ExpectedExceptionAttribute`
 
 The MSTest framework introduced <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute> for marking a test method to expect an exception of a specific type. The test will pass if the expected exception is thrown and the exception message matches the expected message.
 
@@ -403,21 +410,14 @@ The following attributes and the values assigned to them appear in the `Visual S
 For example, you could use it to store the name of a "test pass" that this test covers, by marking the test with `[TestProperty("Feature", "Accessibility")]`. Or, you could use it to store an indicator of the kind of test It's with `[TestProperty("ProductMilestone", "42")]`. The property you create by using this attribute, and the property value you assign, are both displayed in the Visual Studio **Properties** window under the heading **Test specific**.
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute>
-
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.IgnoreAttribute>
-
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>
-
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>
-
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>
-
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>
-
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.WorkItemAttribute>
 
 The attributes below relate the test method that they decorate to entities in the project hierarchy of a `Team Foundation Server` team project:
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.CssIterationAttribute>
-
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.CssProjectStructureAttribute>

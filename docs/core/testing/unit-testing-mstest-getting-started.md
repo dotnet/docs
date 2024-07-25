@@ -1,12 +1,12 @@
 ---
-title: Getting started with MSTest
+title: Get started with MSTest
 description: Learn about how to install MSTest.
 author: Evangelink
 ms.author: amauryleve
 ms.date: 07/24/2024
 ---
 
-# Getting started
+# Get started with MSTest
 
 MSTest functionality is split into multiple NuGet packages:
 

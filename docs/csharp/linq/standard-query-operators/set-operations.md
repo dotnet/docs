@@ -7,7 +7,10 @@ ms.date: 05/29/2024
 
 Set operations in LINQ refer to query operations that produce a result set based on the presence or absence of equivalent elements within the same or separate collections.
 
+
 [!INCLUDE [Prerequisites](../includes/linq-syntax.md)]
+
+[!Include [Common Data Source] (../includes/linq-common-data-source.md)]
 
 | Method names | Description | C# query expression syntax | More information |
 |--|--|--|--|

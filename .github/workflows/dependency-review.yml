@@ -7,7 +7,7 @@
 #
 # Source repository: https://github.com/actions/dependency-review-action
 name: 'Dependency Review'
-on: [pull_request]
+on: [pull_request_target]
 
 permissions:
   contents: read

@@ -1,5 +1,9 @@
 name: MSDocs build verifier
-on: pull_request
+on: pull_request_target
+
+permissions:
+  contents: read
+
 env:
   GITHUB_PR_NUMBER: ${{ github.event.pull_request.number }}
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

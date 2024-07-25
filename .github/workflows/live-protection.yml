@@ -1,5 +1,8 @@
 on: [pull_request_target]
 
+permissions:
+  contents: read
+
 jobs:
   comment:
     runs-on: ubuntu-latest

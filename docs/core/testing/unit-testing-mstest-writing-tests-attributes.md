@@ -25,7 +25,7 @@ To help provide a clearer overview of the testing framework, this section organi
 
 ## Attributes used to identify test classes and methods
 
-Every test class must have the `TestClass` attribute, and every test method must have the `TestMethod` attribute. For more information, see [Anatomy of a unit test](https://learn.microsoft.com/previous-versions/ms182517(v=vs.110)).
+Every test class must have the `TestClass` attribute, and every test method must have the `TestMethod` attribute.
 
 ### `TestClassAttribute`
 

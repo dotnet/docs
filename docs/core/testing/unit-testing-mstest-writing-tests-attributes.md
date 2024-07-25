@@ -42,7 +42,7 @@ public class MyTestClass
 }
 ```
 
-### TestMethodAttribute
+### `TestMethodAttribute`
 
 The [TestMethod](<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute>) attribute is used inside a `TestClass` to define the actual test method to run.
 

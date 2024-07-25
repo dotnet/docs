@@ -73,7 +73,7 @@ The resulting output will have a `ProjectName.dll`, `ProjectName.deps.json`, `Pr
 
 Open an elevated command prompt and run `regsvr32 ProjectName.comhost.dll`. That will register all of your exposed .NET objects with COM.
 
-If users are intending to [embed a type library (TLB)](#embed_tlb), it is recommended to also define functions using [`ComRegisterFunctionAttribute`](/dotnet/api/system.runtime.interopservices.comregisterfunctionattribute) and [`ComUnregisterFunctionAttribute`](/dotnet/api/system.runtime.interopservices.comunregisterfunctionattribute). These function can be used to register/unregister the TLB for the COM server. See the [`OutOfProcCOM`](https://github.com/dotnet/samples/tree/main/core/extensions/OutOfProcCOM) sample for a complete example.
+If you intend to [embed a type library (TLB)](#embed_tlb), it's recommended to also define functions using [`ComRegisterFunctionAttribute`](/dotnet/api/system.runtime.interopservices.comregisterfunctionattribute) and [`ComUnregisterFunctionAttribute`](/dotnet/api/system.runtime.interopservices.comunregisterfunctionattribute). These functions can be used to register and unregister the TLB for the COM server. For a complete example, see the [`OutOfProcCOM`](https://github.com/dotnet/samples/tree/main/core/extensions/OutOfProcCOM) sample.
 
 ## Enabling RegFree COM
 

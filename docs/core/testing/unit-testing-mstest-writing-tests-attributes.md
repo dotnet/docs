@@ -63,7 +63,6 @@ public class MyTestClass
 }
 ```
 
-
 ## Attributes used for data-driven testing
 
 Use the following elements to set up data-driven tests. For more information, see [Create a data-driven unit test](/visualstudio/test/how-to-create-a-data-driven-unit-test.md) and [Use a configuration file to define a data source](/visualstudio/test/walkthrough-using-a-configuration-file-to-define-a-data-source.md).

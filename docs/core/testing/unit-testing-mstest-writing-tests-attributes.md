@@ -63,16 +63,6 @@ public class MyTestClass
 }
 ```
 
-```csharp
-[TestClass]
-public class MyTestClass
-{
-    [TestMethod]
-    public async Task TestMethod()
-    {
-    }
-}
-```
 
 ## Attributes used for data-driven testing
 

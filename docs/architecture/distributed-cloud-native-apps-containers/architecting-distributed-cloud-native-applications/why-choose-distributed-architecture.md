@@ -1,11 +1,11 @@
 ---
-title: Architecting Distributed Cloud-Native Applications
-description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | Architecting Distributed Cloud-Native Applications
+title: Architecting distributed cloud-native applications
+description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | Architecting distributed cloud-native applications
 author: 
 ms.date: 04/06/2022
 ---
 
-# Architecting Distributed Cloud-Native Applications
+# Architecting distributed cloud-native applications
 
 [!INCLUDE [download-alert](../includes/download-alert.md)]
 

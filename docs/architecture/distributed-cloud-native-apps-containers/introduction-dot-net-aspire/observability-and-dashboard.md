@@ -1,33 +1,33 @@
 ---
-title: Observability & Dashboard 
-description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | Observability & Dashboard 
+title: Observability and dashboard 
+description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | Observability and dashboard 
 author: 
 ms.date: 04/25/2024
 ---
 
-# Observability & Dashboard 
+# Observability and dashboard 
 
 [!INCLUDE [download-alert](../includes/download-alert.md)]
 
-![A diagram and screenshot of the .NET Aspire Dashboard.](media/Dashboard.png)
+![A diagram and screenshot of the .NET Aspire dashboard.](media/dashboard.png)
 
-**Figure 3-6**. The .NET Aspire Dashboard and its features.
+**Figure 3-6**. The .NET Aspire dashboard and its features.
 
 The **.NET Aspire Dashboard** is a stand alone tool developers can use with their .NET Aspire projects. Here's what you need to know:
 
-1. **Purpose and Features**:
+1. **Purpose and features**:
 
    - The dashboard provides a sophisticated interface for comprehensive app monitoring and inspection.
    - It allows you to track various aspects of your app in real-time, including logs, traces, and environment configurations.
    - Purpose-built to enhance the local development experience, it offers an insightful overview of your app's state and structure.
 
-1. **Integration with .NET Aspire Projects**:
+1. **Integration with .NET Aspire projects**:
 
-   - The dashboard is seamlessly integrated into the .NET Aspire AppHost.
+   - The dashboard is seamlessly integrated into the .NET Aspire app host.
    - During development, it automatically launches when you start your project.
    - It displays the app's resources and telemetry, helping you understand your app's behavior and performance.
 
-1. **Standalone Mode**:
+1. **Standalone mode**:
 
    - The .NET Aspire dashboard can also be used standalone, independent of the rest of .NET Aspire.
    - It ships as a Docker image, providing a great UI for viewing telemetry.
@@ -46,7 +46,7 @@ The **.NET Aspire Dashboard** is a stand alone tool developers can use with thei
 
    - The frontend is built using Microsoft's Fluent UI Blazor component library.
    - Apps communicate with the dashboard using the OpenTelemetry Protocol (OTLP).
-   - A resource server provides information about app resources (e.g., resource listing, console logs, command execution).
+   - A resource server provides information about app resources. This information includes resource lists, console logs, and command execution.
    - The dashboard communicates via gRPC to the resource server.
 
 1. **Security**:

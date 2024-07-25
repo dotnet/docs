@@ -18,8 +18,8 @@ ms.date: 05/30/2024
 
 - **Cloud-ready stack**: It's an opinionated framework that provides a set of tools and libraries for building distributed applications that are ready for deployment in the cloud. It is designed to take full advantage of cloud features such as scalability, resilience, and manageability.
 
-- **Scalable**: .NET Aspire can be utilized by all sizes of project. .NET Aspire can be deployed in standalone mode to provide the .NET Aspire dashboard without any other .NET Aspire functionality or the need for Internet connectivity. Furthermore, .NET Aspire can scale up to a multi-cloud distributed microservices architecture.
-  
+- **Scalable**: .NET Aspire can be utilized by all sizes of project. .NET Aspire can be deployed in standalone mode to provide the .NET Aspire dashboard without any other .NET Aspire functionality or the need for Internet connectivity. From that small size, .NET Aspire can scale up to a multi-cloud distributed microservices architecture.
+
 - **Observable and production-ready**: .NET Aspire focuses on creating applications that are easy to monitor and ready for production environments, ensuring high reliability and performance.
 
 - **Microservices architecture**: It encourages the use of microservices, which are small, loosely coupled services that work together to form a complete application. This approach allows for easier scaling and maintenance.

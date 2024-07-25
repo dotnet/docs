@@ -52,5 +52,4 @@ MSTest assertions are divided into the following classes:
 You can generate a test for a private method. This generation creates a private accessor class, which instantiates an object of the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.PrivateObject> class. The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.PrivateObject> class is a wrapper class that uses reflection as part of the private accessor process. The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.PrivateType> class is similar, but is used for calling private static methods instead of calling private instance methods.
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.PrivateObject>
-
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.PrivateType>

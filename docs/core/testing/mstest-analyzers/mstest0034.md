@@ -13,15 +13,15 @@ ms.author: enjieid
 ---
 # MSTEST0034: Use `ClassCleanupBehavior.EndOfClass` with the `[ClassCleanup]`.
 
-| Property                            | Value                                                                       |
-|-------------------------------------|-----------------------------------------------------------------------------|
-| **Rule ID**                         | MSTEST0034                                                                  |
-| **Title**                           | Use `ClassCleanupBehavior.EndOfClass` with the `[ClassCleanup]`.            |
-| **Category**                        | Usage                                                                       |
-| **Fix is breaking or non-breaking** | Non-breaking                                                                |
-| **Enabled by default**              | Yes                                                                         |
-| **Default severity**                | Info                                                                        |
-| **Introduced in version**           | 3.6.0                                                                       |
+| Property                            | Value                                                            |
+|-------------------------------------|------------------------------------------------------------------|
+| **Rule ID**                         | MSTEST0034                                                       |
+| **Title**                           | Use `ClassCleanupBehavior.EndOfClass` with the `[ClassCleanup]`. |
+| **Category**                        | Usage                                                            |
+| **Fix is breaking or non-breaking** | Non-breaking                                                     |
+| **Enabled by default**              | Yes                                                              |
+| **Default severity**                | Info                                                             |
+| **Introduced in version**           | 3.6.0                                                            |
 
 ## Cause
 

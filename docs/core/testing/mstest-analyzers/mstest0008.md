@@ -42,10 +42,10 @@ Methods marked with `[TestInitialize]` should follow the following layout to be 
 
 The type declaring these methods should also respect the following rules:
 
-- the type should be a class
-- the class should be `public` or `internal` (if the test project is using the `[DiscoverInternals]` attribute)
-- the class should not be `static`
-- if the class is sealed, it should be marked with `[TestClass]` (or a derived attribute)
+- The type should be a `class`.
+- The `class` should be `public` or `internal` (if the test project is using the `[DiscoverInternals]` attribute).
+- The `class` shouldn't be `static`.
+- If the `class` is `sealed`, it should be marked with `[TestClass]` (or a derived attribute).
 
 ## How to fix violations
 

@@ -28,7 +28,12 @@ An interface can be a member of a namespace or a class. An interface declaration
 
 ## Default interface members
 
-These preceding member declarations typically don't contain a body. An interface member may declare a body. Member bodies in an interface are the *default implementation*. Members with bodies permit the interface to provide a "default" implementation for classes and structs that don't provide an overriding implementation. An interface may include:
+These preceding member declarations typically don't contain a body. An interface member may declare a body. Member bodies in an interface are the *default implementation*. Members with bodies permit the interface to provide a "default" implementation for classes and structs that don't provide an overriding implementation.
+
+> [!IMPORTANT]
+> Adding default interfaces members forces any `ref struct` that implements the interface to add an explicit declaration of that method.
+
+An interface may include:
 
 - [Constants](const.md)
 - [Operators](../operators/operator-overloading.md)

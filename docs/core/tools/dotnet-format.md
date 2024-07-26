@@ -21,7 +21,7 @@ dotnet format -h|--help
 
 ## Description
 
-`dotnet format` is a code formatter that applies style preferences to a project or solution. Preferences will be read from an *.editorconfig* file, if present, otherwise a default set of preferences will be used. For more information, see the [EditorConfig documentation](../../fundamentals/code-analysis/configuration-files.md#editorconfig).
+`dotnet format` is a code formatter that applies style preferences and static analysis recommendations to a project or solution. Preferences will be read from an *.editorconfig* file, if present, otherwise a default set of preferences will be used. For more information, see the [EditorConfig documentation](../../fundamentals/code-analysis/configuration-files.md#editorconfig).
 
 ## Arguments
 

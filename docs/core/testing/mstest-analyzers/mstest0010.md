@@ -39,7 +39,7 @@ Methods marked with `[ClassInitialize]` should follow the following layout to be
 - it should not be generic
 - it should take one parameter of type `TestContext`
 - return type should be `void`, `Task` or `ValueTask`
-- 'InheritanceBehavior.BeforeEachDerivedClass' attribute parameter should be specified if the class is 'abstract'.
+- `InheritanceBehavior.BeforeEachDerivedClass` attribute parameter should be specified if the class is `abstract`.
 
 [!INCLUDE [test-class-rules](includes/test-class-rules.md)]
 

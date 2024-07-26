@@ -37,8 +37,7 @@ Only non-zero indexed arrays and types specific to remoting (which were never po
 `NrbfDecoder` is useful only when the list of serialized types is a known, closed set. To put it another way, you need to know up front what you want to read, because you also need to create instances of those types and populate them with data that was read from the payload. Consider two opposite examples:
 
 - All `[Serializable]` types from [Quartz.NET](https://github.com/search?q=repo%3Aquartznet%2Fquartznet+%5BSerializable%5D+language%3AC%23&type=code&l=C%23) that can be persisted by the library itself are `sealed`. So there are no custom types that users could create, and the payload can contain only known types. The types also provide public constructors, so it's possible to recreate these types based on the information read from the payload.
-
-The `SettingsPropertyValue` type from the `System.Configuration.ConfigurationManager` library exposes an `object PropertyValue` that might internally use `BinaryFormatter` to serialize and deserialize any object that was stored in the configuration file. It could be used to store an integer, a custom type, a dictionary, or literally anything.  Because of that, **it's impossible to migrate this library without introducing breaking changes to the API**.
+- The `SettingsPropertyValue` type from the `System.Configuration.ConfigurationManager` library exposes an `object PropertyValue` that might internally use `BinaryFormatter` to serialize and deserialize any object that was stored in the configuration file. It could be used to store an integer, a custom type, a dictionary, or literally anything.  Because of that, **it's impossible to migrate this library without introducing breaking changes to the API**.
 
 ### Identify BinaryFormatter payload
 

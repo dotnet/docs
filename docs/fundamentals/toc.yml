@@ -867,6 +867,14 @@ items:
                     href: ../standard/serialization/binaryformatter-migration-guide/overview.md
                   - name: Choosing a serializer
                     href: ../standard/serialization/binaryformatter-migration-guide/choosing-a-serializer.md
+                  - name: Migration to DataContractSerializer
+                    href: ../standard/serialization/binaryformatter-migration-guide/migration-to-data-contract-serializer.md
+                  - name: Migration to System.Text.Json
+                    href: ../standard/serialization/binaryformatter-migration-guide/migration-to-system-text-json.md
+                  - name: Migration to MessagePack
+                    href: ../standard/serialization/binaryformatter-migration-guide/migration-to-message-pack.md
+                  - name: Migration to protobuf-net
+                    href: ../standard/serialization/binaryformatter-migration-guide/migration-to-protobuf-net.md
                   - name: Reading NRBF payloads
                     href: ../standard/serialization/binaryformatter-migration-guide/reading-nrbf-payloads.md
                   - name: Compatibility package

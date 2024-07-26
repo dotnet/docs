@@ -25,11 +25,11 @@ ms.author: enjieid
 
 ## Cause
 
-A Public method should be a test method.
+A `public` method should be a test method.
 
 ## Rule description
 
-A Public method should be a test method (marked with `[TestMethod]`).
+A `public` method of a class marked with `[TestClass]` should be a test method (marked with `[TestMethod]`). The rule ignores methods that are marked with `[TestInitialize]`, or `[TestCleanup]` attributes.
 
 ## How to fix violations
 

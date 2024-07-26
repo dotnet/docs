@@ -40,6 +40,10 @@ Methods marked with `[AssemblyInitialize]` should follow the following layout to
 - it should take one parameter of type `TestContext`
 - return type should be `void`, `Task` or `ValueTask`
 
+[!INCLUDE [test-class-rules](includes/test-class-rules.md)]
+
+- the class should not be generic
+
 ## How to fix violations
 
 Ensure that the method matches the layout described above.

@@ -40,6 +40,10 @@ Methods marked with `[ClassCleanup]` should follow the following layout to be va
 - it should not take any parameter
 - return type should be `void`, `Task` or `ValueTask`
 
+[!INCLUDE [test-class-rules](includes/test-class-rules.md)]
+
+- the class should not be generic
+
 ## How to fix violations
 
 Ensure that the method matches the layout described above.

@@ -25,7 +25,7 @@ ms.author: enjieid
 
 ## Cause
 
-Type contaning `[TestMethod]` should be marked with `[TestClass]`, otherwise the test method will be silently ignored.
+Type containing `[TestMethod]` should be marked with `[TestClass]`, otherwise the test method will be silently ignored.
 
 ## Rule description
 

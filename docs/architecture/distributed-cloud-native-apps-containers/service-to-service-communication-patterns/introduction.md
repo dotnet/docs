@@ -1,15 +1,15 @@
 ---
-title: Introduction to cloud-native service to service communication patterns 
-description: Cloud-native service to service communication patterns | Introduction to cloud-native service to service communication patterns
+title: Introduction to cloud-native service-to-service communication patterns 
+description: Cloud-native service-to-service communication patterns | Introduction to cloud-native service-to-service communication patterns
 author: 
 ms.date: 04/25/2024
 ---
 
-# Introduction to cloud-native service to service communication patterns
+# Introduction to cloud-native service-to-service communication patterns
 
 [!INCLUDE [download-alert](../includes/download-alert.md)]
 
-In this chapter, we will discuss cloud-native communication patterns. Initially we will discover how front-end clients communicate with back-end microservices, before talking about API gateway platforms and real-time communication. We will then look at how microservices communicate with other back-end services and we will look at both synchronous HTTP communication and asynchronous messaging across services. We will cover gRPC, an upcoming technology in the cloud-native world. Finally, we will introduce a new and rapidly evolving concept called service mesh, which can streamline microservice communication.
+This chapter is about cloud-native communication patterns. Initially we'll discover how clients and microservices locate other services in the application. Then we'll discuss how clients communicate with back-end microservices and how microservices best communicate between themselves. We'll also investigate the gRPC protocol in more detail and introduce service meshes, which can streamline microservice communication.
 
 >[!div class="step-by-step"]
 >[Previous](---TO DO---)

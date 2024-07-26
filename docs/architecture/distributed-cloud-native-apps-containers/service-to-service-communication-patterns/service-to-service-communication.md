@@ -17,11 +17,11 @@ There are several widely accepted approaches to implementing cross-service commu
 
 Consider the following interaction types:
 
-- *Query* – when a calling microservice requires a response from a called microservice, such as, "Hey, give me the buyer information for a given customer ID."
+- *Query* – when a calling microservice requires a response from a called microservice, such as, "I need the buyer information for a given customer ID."
 
-- *Command* – when the calling microservice needs another microservice to execute an action but doesn't require a response, such as, "Hey, just ship this order."
+- *Command* – when the calling microservice needs another microservice to execute an action but doesn't require a response, such as, "Ship this order."
 
-- *Event* – when a microservice, called the publisher, raises an event that state has changed or an action has occurred. Other microservices, called subscribers, who are interested, can react to the event appropriately. The publisher and the subscribers aren't aware of each other.
+- *Event* – when a microservice, called the publisher, raises an event that state has changed or an action has occurred, such as "An order was shipped.". Other microservices, called subscribers, who are interested, can react to the event appropriately. The publisher and the subscribers aren't aware of each other.
 
 Microservice systems typically use a combination of these interaction types when executing operations that require cross-service interaction. Let's take a close look at each and how you might implement them.
 

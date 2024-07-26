@@ -9,7 +9,7 @@ ms.date: 04/25/2024
 
 [!INCLUDE [download-alert](../includes/download-alert.md)]
 
-## What is Service Discovery?
+## What is service discovery?
 
 Service discovery refers to the process by which services dynamically locate and connect to each other. As your application scales and evolves, the IP addresses and endpoints of components and services change dynamically. Service discovery ensures that these components can find each other without hardcoding IP addresses or relying on static configurations.
 

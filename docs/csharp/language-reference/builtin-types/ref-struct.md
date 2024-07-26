@@ -1,7 +1,7 @@
 ---
 title: "ref struct types"
 description: Learn about the ref struct type in C#
-ms.date: 06/28/2024
+ms.date: 07/26/2024
 ---
 # `ref` structure types (C# reference)
 
@@ -60,16 +60,16 @@ The `Span<T>` type stores a reference through which it accesses the contiguous e
 
 You can define a disposable `ref struct`. To do that, ensure that a `ref struct` fits the [disposable pattern](~/_csharplang/proposals/csharp-8.0/using.md#pattern-based-using). That is, it has an instance `Dispose` method, which is accessible, parameterless and has a `void` return type. You can use the [using statement or declaration](../statements/using.md) with an instance of a disposable `ref struct`.
 
-Beginning with C# 13, you can also implement the <xref:System.IDisposable?displayName=nameWithType> on `ref struct` types. However, overload resolution prefers the disposable pattern to the interface method. Only if a suitable `Dispose` method isn't found will an `IDisposable.Dispose` method be chosen.
+Beginning with C# 13, you can also implement the <xref:System.IDisposable?displayName=nameWithType> on `ref struct` types. However, overload resolution prefers the disposable pattern to the interface method. The compiler resolves to an `IDisposable.Dispose` method only whan a suitable `Dispose` method isn't found.
 
 ## Restrictions for `ref struct` types that implement an interface
 
 These restrictions ensure that a `ref struct` type that implements an interface obeys the necessary [ref safety](~/_csharpstandard/standard/structs.md#1623-ref-modifier) rules.
 
-- A `ref struct` can't be converted to an instance of an interface it implements. This includes the implicit conversion when you use a `ref struct` type as an argument when the parameter is an interface type. The conversion results in a boxing conversion, which violates ref safety.
+- A `ref struct` can't be converted to an instance of an interface it implements. This restriction includes the implicit conversion when you use a `ref struct` type as an argument when the parameter is an interface type. The conversion results in a boxing conversion, which violates ref safety.
 - A `ref struct` that implements an interface *must* implement all interface members. The `ref struct` must implement members where the interface includes a default implementation.
 
-The compiler enforces these restrictions. If you write `ref struct` types that implement interfaces, each new update may include new [default interface members](../keywords/interface.md#default-interface-members). Until you provide an implementation for these new methods, your application won't compile.
+The compiler enforces these restrictions. If you write `ref struct` types that implement interfaces, each new update might include new [default interface members](../keywords/interface.md#default-interface-members). Until you provide an implementation for these new methods, your application won't compile.
 
 > [!IMPORTANT]
 > A `ref struct` that implements an interface includes the potential for later source-breaking and binary-breaking changes. The break occurs if a `ref struct` implements an interface defined in another assembly, and that assembly provides an update which adds default members to that interface.

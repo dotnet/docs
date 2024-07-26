@@ -1,7 +1,7 @@
 ---
 title: "Constraints on type parameters"
 description: Learn about constraints on type parameters. Constraints tell the compiler what capabilities a type argument must have.
-ms.date: 03/11/2024
+ms.date: 07/26/2024
 f1_keywords:
   - "defaultconstraint_CSharpKeyword"
   - "notnull_CSharpKeyword"
@@ -35,7 +35,7 @@ Constraints inform the compiler about the capabilities a type argument must have
 Some constraints are mutually exclusive, and some constraints must be in a specified order:
 
 - You can apply at most one of the `struct`, `class`, `class?`, `notnull`, and `unmanaged` constraints. If you supply any of these constraints, it must be the first constraint specified for that type parameter.
-- The base class constraint, (`where T : Base` or `where T : Base?`), can't be combined with any of the constraints `struct`, `class`, `class?`, `notnull`, or `unmanaged`.
+- The base class constraint (`where T : Base` or `where T : Base?`) can't be combined with any of the constraints `struct`, `class`, `class?`, `notnull`, or `unmanaged`.
 - You can apply at most one base class constraint, in either form. If you want to support the nullable base type, use `Base?`.
 - You can't name both the non-nullable and nullable form of an interface as a constraint.
 - The `new()` constraint can't be combined with the `struct` or `unmanaged` constraint. If you specify the `new()` constraint, it must be the last constraint for that type parameter. Anti-constraints, if applicable, can follow the `new()` constraint.
@@ -121,11 +121,11 @@ You can use <xref:System.Delegate?displayProperty=nameWithType> or <xref:System.
 
 :::code language="csharp" source="./snippets/GenericWhereConstraints.cs" id="Snippet16":::
 
-You can use the above method to combine delegates that are the same type:
+You can use the preceding method to combine delegates that are the same type:
 
 :::code language="csharp" source="./snippets/GenericWhereConstraints.cs" id="Snippet17":::
 
-If you uncomment the last line, it won't compile. Both `first` and `test` are delegate types, but they're different delegate types.
+If you uncomment the last line, it doesn't compile. Both `first` and `test` are delegate types, but they're different delegate types.
 
 ## Enum constraints
 

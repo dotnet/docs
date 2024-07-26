@@ -56,7 +56,7 @@ public interface I1
 
 public interface I2 : I1
 {
-    void M2;
+    void M2();
 }
 
 public class C : I2

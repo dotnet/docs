@@ -40,7 +40,7 @@ The `dotnet nuget add source` command adds a new package source to your NuGet co
 
 - **`--allow-insecure-connections`**
   
-  Allows HTTP connections for adding or updating packages. This method is not secure.
+  Allows HTTP connections for adding or updating packages. This method is not secure. Available since .NET 9 SDK.
   
 - **`-n|--name <SOURCE_NAME>`**
 

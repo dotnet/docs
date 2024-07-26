@@ -25,7 +25,7 @@ ms.author: enjieid
 
 ## Cause
 
-This rule raises a diagnostic when `ClassCleanupBehavior.EndOfClass` isn't seted with the `[ClassCleanup]`.
+This rule raises a diagnostic when `ClassCleanupBehavior.EndOfClass` isn't set with the `[ClassCleanup]`.
 
 ## Rule description
 

@@ -13,7 +13,7 @@ ms.date: 06/27/2024
 .NET Framework 4.8 is the last supported version of .NET Framework for Windows Server 2019.
 
 > [!div class="button"]
-> [Download .NET Framework 4.8.1](https://dotnet.microsoft.com/download/dotnet-framework/net481)
+> [Download .NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48)
 
 ## .NET Framework 3.5
 

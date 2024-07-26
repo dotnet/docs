@@ -40,12 +40,7 @@ Methods marked with `[TestCleanup]` should follow the following layout to be val
 - it should not take any parameter
 - return type should be `void`, `Task` or `ValueTask`
 
-The type declaring these methods should also respect the following rules:
-
-- the type should be a class
-- the class should be `public` or `internal` (if the test project is using the `[DiscoverInternals]` attribute)
-- the class should not be `static`
-- if the class is sealed, it should be marked with `[TestClass]` (or a derived attribute)
+[!INCLUDE [test-class-rules](includes/test-class-rules.md)]
 
 ## How to fix violations
 

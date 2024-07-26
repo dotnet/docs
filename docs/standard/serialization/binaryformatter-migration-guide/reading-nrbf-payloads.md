@@ -5,7 +5,6 @@ ms.date: 5/31/2024
 no-loc: [BinaryFormatter, Serialization]
 dev_langs:
   - CSharp
-  - VB
 helpviewer_keywords:
   - "BinaryFormatter"
   - "serializing objects"
@@ -13,11 +12,11 @@ helpviewer_keywords:
   - "objects, serializing"
 ---
 
-# Reading NRBF payloads
+# Read NRBF payloads
 
 ## NrbfDecoder
 
-`NrbfDecoder` is part of the new [System.Formats.Nrbf](https://www.nuget.org/packages/System.Formats.Nrbf) NuGet package. It targets not only .NET 9, but also older monikers like .NET Standard 2.0 and .NET Framework. Which makes it possible for everyone who uses a supported version of .NET to migrate away from `BinaryFormatter`.
+`NrbfDecoder` is part of the new [System.Formats.Nrbf](https://www.nuget.org/packages/System.Formats.Nrbf) NuGet package. It targets not only .NET 9, but also older monikers like .NET Standard 2.0 and .NET Framework. That multi-targeting makes it possible for everyone who uses a supported version of .NET to migrate away from `BinaryFormatter`.
 
 `NrbfDecoder` can read any payload that was serialized with `BinaryFormatter` using `FormatterTypeStyle.TypesAlways` (the default).
 `NrbfDecoder` cannot be used for the output of BinaryFormatter for any other `FormatterTypeStyle`.
@@ -27,31 +26,31 @@ Only non-zero indexed arrays and types specific to remoting (which were never po
 `NrbfDecoder` is designed to treat all input as untrusted. As such it has these principles:
 
 - No type loading of any kind (to avoid risks such as remote code execution).
-- No recursion of any kind (to avoid unbound recursion, stack overflow and denial of service).
+- No recursion of any kind (to avoid unbound recursion, stack overflow, and denial of service).
 - No buffer pre-allocation based on size provided in the payload, if the payload is too small to contain the promised data (to avoid running out of memory and denial of service).
-- Decoding every part of the input only once (to perform the same amount of work as the potential attacker who created the payload).
-- Using collision-resistant randomized hashing to store records referenced by other records (to avoid running out of memory for dictionary backed by an array which size depends on the number of hash code collisions).
+- Decode every part of the input only once (to perform the same amount of work as the potential attacker who created the payload).
+- Use collision-resistant randomized hashing to store records referenced by other records (to avoid running out of memory for dictionary backed by an array whose size depends on the number of hash-code collisions).
 - Only primitive types can be instantiated in an implicit way. Arrays can be instantiated on demand. Other types are never instantiated.
 
-### Deserializing a closed set of types
+### Deserialize a closed set of types
 
-`NrbfDecoder` is mostly useful only when the list of serialized types is a known, closed set. Or put it otherwise, you need to know up front what you want to read, because at the end of the day you also need to create instances of these types and populate them with data that was read from the payload. Let's consider two opposite examples.
+`NrbfDecoder` is useful only when the list of serialized types is a known, closed set. To put it another way, you need to know up front what you want to read, because you also need to create instances of those types and populate them with data that was read from the payload. Consider two opposite examples:
 
-All `[Serializable]` types from [Quartz.NET](https://github.com/search?q=repo%3Aquartznet%2Fquartznet+%5BSerializable%5D+language%3AC%23&type=code&l=C%23) that can be persisted by the library itself are `sealed`, so there are no custom types that the users could create and the payload can contain only known types. They also provide public constructors, so it is possible to re-create these types based on the information read from payload.
+- All `[Serializable]` types from [Quartz.NET](https://github.com/search?q=repo%3Aquartznet%2Fquartznet+%5BSerializable%5D+language%3AC%23&type=code&l=C%23) that can be persisted by the library itself are `sealed`. So there are no custom types that users could create, and the payload can contain only known types. The types also provide public constructors, so it's possible to recreate these types based on the information read from the payload.
 
-`SettingsPropertyValue` type from `System.Configuration.ConfigurationManager` library exposes an `object PropertyValue` that may internally use `BinaryFormatter` to serialize and deserialize any object that was stored in the configuration file. It could be used to store an integer, a custom type, a dictionary or literally anything.  Because of that, **it is impossible to migrate this library without introducing breaking changes to the API**.
+The `SettingsPropertyValue` type from the `System.Configuration.ConfigurationManager` library exposes an `object PropertyValue` that might internally use `BinaryFormatter` to serialize and deserialize any object that was stored in the configuration file. It could be used to store an integer, a custom type, a dictionary, or literally anything.  Because of that, **it's impossible to migrate this library without introducing breaking changes to the API**.
 
-### Identifying BinaryFormatter payload
+### Identify BinaryFormatter payload
 
-`NrbfDecoder` provides two `StartsWithPayloadHeader` methods that allow to check whether given stream or buffer starts with NRBF header.
+`NrbfDecoder` provides two `StartsWithPayloadHeader` methods that let you check whether a given stream or buffer starts with the NRBF header.
 
-Using these methods is recommended for the period of migrating payloads persisted with `BinaryFormatter` to a [different serializer](./choosing-a-serializer.md):
+It's recommended to use these methods when you're migrating payloads persisted with `BinaryFormatter` to a [different serializer](./choosing-a-serializer.md):
 
 - Check if the payload read from storage is an [NRBF](/openspecs/windows_protocols/ms-nrbf/75b9fe09-be15-475f-85b8-ae7b7558cfe5) payload.
-- If so, read it with `NrbfDecoder`, serialize it back with a new serializer and overwrite the data in the storage.
+- If so, read it with `NrbfDecoder`, serialize it back with a new serializer, and overwrite the data in the storage.
 - If not, use the new serializer to deserialize the data.
 
-```cs
+```csharp
 internal static T LoadFromFile<T>(string path)
 {
     bool update = false;
@@ -79,13 +78,13 @@ internal static T LoadFromFile<T>(string path)
 }
 ```
 
-### Safely reading NRBF payloads
+### Safely read NRBF payloads
 
-The NRBF payload consists of serialization records that represent the serialized objects and their metadata. To read the whole payload and get the root object, the user needs to call the `Decode` method.
+The NRBF payload consists of serialization records that represent the serialized objects and their metadata. To read the whole payload and get the root object, you need to call the `Decode` method.
 
-The `Decode` method returns a `SerializationRecord` instance. `SerializationRecord` is an abstract class that represents the serialization record and provides three self-describing properties: `Id`, `RecordType` and `TypeName`. It exposes one method: `public bool TypeNameMatches(Type type)` which compares the type name read from the payload (and exposed via `TypeName` property) against the specified type. This method ignores assembly names, so the users don't need to worry about type forwarding and assembly versioning. It also does not consider member names or their types (because getting this information would require type loading).
+The `Decode` method returns a `SerializationRecord` instance. `SerializationRecord` is an abstract class that represents the serialization record and provides three self-describing properties: `Id`, `RecordType`, and `TypeName`. It exposes one method, `public bool TypeNameMatches(Type type)`, which compares the type name read from the payload (and exposed via `TypeName` property) against the specified type. This method ignores assembly names, so users don't need to worry about type forwarding and assembly versioning. It also does not consider member names or their types (because getting this information would require type loading).
 
-```cs
+```csharp
 using System.Formats.Nrbf;
 
 static T Pseudocode<T>(Stream payload)
@@ -98,16 +97,16 @@ static T Pseudocode<T>(Stream payload)
 }
 ```
 
-There are more than a dozen of different serialization [record types](/openspecs/windows_protocols/ms-nrbf/954a0657-b901-4813-9398-4ec732fe8b32), but this library provides a set of abstractions, so the users need to learn only a few of them:
+There are more than a dozen different serialization [record types](/openspecs/windows_protocols/ms-nrbf/954a0657-b901-4813-9398-4ec732fe8b32). This library provides a set of abstractions, so you only need to learn a few of them:
 
-- `PrimitiveTypeRecord<T>`: describes all primitive types natively supported by the NRBF (`string`, `bool`, `byte`, `sbyte`, `char`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `float`, `double`, `decimal`, `TimeSpan` and `DateTime`)
-  - exposes the value via the `Value` property.
-  - `PrimitiveTypeRecord<T>` derives from the non-generic `PrimitiveTypeRecord` which also exposes has a `Value` property, but on the base class it is returned as `object` (which introduces boxing for value types).
+- `PrimitiveTypeRecord<T>`: describes all primitive types natively supported by the NRBF (`string`, `bool`, `byte`, `sbyte`, `char`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `float`, `double`, `decimal`, `TimeSpan`, and `DateTime`).
+  - Exposes the value via the `Value` property.
+  - `PrimitiveTypeRecord<T>` derives from the non-generic `PrimitiveTypeRecord`, which also exposes a `Value` property. But on the base class, the value is returned as `object` (which introduces boxing for value types).
 - `ClassRecord`: describes all `class` and `struct` besides the aforementioned  primitive types.
-- `SZArrayRecord<T>`: that describes single-dimensional, zero-indexed array records, where `T` can be either a primitive type or a `ClassRecord`.
-- `ArrayRecord`: that describes all array records including jagged and multi-dimensional arrays.
+- `SZArrayRecord<T>`: describes single-dimensional, zero-indexed array records, where `T` can be either a primitive type or a `ClassRecord`.
+- `ArrayRecord`: describes all array records, including jagged and multi-dimensional arrays.
 
-```cs
+```csharp
 SerializationRecord rootObject = NrbfDecoder.Decode(payload); // payload is a Stream
 
 if (rootObject is PrimitiveTypeRecord primitiveRecord)
@@ -128,7 +127,7 @@ Beside `Decode`, the `NrbfDecoder` exposes a `DecodeClassRecord` method that ret
 
 #### ClassRecord
 
-The most important type that derives from `SerializationRecord` is `ClassRecord` which represents **all `class` and `struct` instances beside arrays and natively supported primitive types**. It allows to read all member names and values. It's recommended to read the [BinaryFormatter functionality reference](./functionality-reference.md) to understand what *member* is.
+The most important type that derives from `SerializationRecord` is `ClassRecord`, which represents **all `class` and `struct` instances beside arrays and natively supported primitive types**. It allows you to read all member names and values. To understand what *member* is, see the [BinaryFormatter functionality reference](./functionality-reference.md).
 
 The API it provides:
 
@@ -138,9 +137,9 @@ The API it provides:
 - `GetClassRecord` and `GetArrayRecord` methods to retrieve instance of given record types.
 - `GetSerializationRecord` to retrieve any serialization record and `GetRawValue` to retrieve any serialization record or a raw primitive value.
 
-Let's see it in action:
+The following code snippet shows `ClassRecord` in action:
 
-```cs
+```csharp
 [Serializable]
 public class Sample
 {
@@ -175,11 +174,11 @@ Sample output = new()
 - `Rank` which gets the rank of the array.
 - `Lengths` which get a buffer of integers that represent the number of elements in every dimension.
 
-And one method: `GetArray`. When used for the fist time, it allocates an array and fills it with the data provided in the serialized records (in case of the natively supported primitive types like `string` or `int`) or the serialized records themselves in case of arrays of complex types.
+It also provides one method: `GetArray`. When used for the first time, it allocates an array and fills it with the data provided in the serialized records (in case of the natively supported primitive types like `string` or `int`) or the serialized records themselves (in case of arrays of complex types).
 
-`GetArray` requires a mandatory argument that specifies the type of the expected array. Example: if the record should be a 2D array of integers the `expectedArrayType` must be provided as `typeof(int[,])` and the returned array is also `int[,]`:
+`GetArray` requires a mandatory argument that specifies the type of the expected array. For example, if the record should be a 2D array of integers, the `expectedArrayType` must be provided as `typeof(int[,])` and the returned array is also `int[,]`:
 
-```cs
+```csharp
 ArrayRecord arrayRecord = (ArrayRecord)NrbfDecoder.Decode(stream);
 int[,] array2d = (int[,])arrayRecord.GetArray(typeof(int[,]));
 ```
@@ -188,7 +187,7 @@ If there is a type mismatch (example: the attacker has provided a payload with a
 
 `NrbfDecoder` does not load or instantiate any custom types, so in case of arrays of complex types, it returns an array of `ClassRecord`.
 
-```cs
+```csharp
 [Serializable]
 public class ComplexType3D
 {
@@ -212,7 +211,7 @@ ComplexType3D[] output = records.Select(classRecord => new ComplexType3D()
 
 It provides `Length` property and a `GetArray` overload that returns `T[]`.
 
-```cs
+```csharp
 [Serializable]
 public class PrimitiveArrayFields
 {

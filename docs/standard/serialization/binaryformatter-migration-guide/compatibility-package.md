@@ -3,9 +3,6 @@ title: "BinaryFormatter Migration Guide: Compatibility Package"
 description: "Using the BinaryFormatter compatibility package."
 ms.date: 5/31/2024
 no-loc: [BinaryFormatter, Serialization]
-dev_langs:
-  - CSharp
-  - VB
 helpviewer_keywords:
   - "BinaryFormatter"
   - "serializing objects"
@@ -16,9 +13,9 @@ helpviewer_keywords:
 # Using the compatibility package
 
 > [!WARNING]
-> It's unsafe and not recommended.
+> The compatibility package is unsafe and not recommended.
 
-All the .NET 9+ users who for some reason can not migrate away from `BinaryFormatter` can just install the [System.Runtime.Serialization.Formatters](https://www.nuget.org/packages/System.Runtime.Serialization.Formatters) NuGet package and set the `System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization` AppContext switch to `true`.
+.NET 9+ users who can't migrate away from `BinaryFormatter` can install the [System.Runtime.Serialization.Formatters](https://www.nuget.org/packages/System.Runtime.Serialization.Formatters) NuGet package and set the `System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization` AppContext switch to `true`.
 
 ```xml
 <PropertyGroup>
@@ -32,4 +29,4 @@ All the .NET 9+ users who for some reason can not migrate away from `BinaryForma
 ```
 
 > [!WARNING]
-> It's unsafe and not recommended.
+> The compatibility package is unsafe and not recommended.

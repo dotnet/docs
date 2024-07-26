@@ -3,8 +3,6 @@ title: "BinaryFormatter Migration Guide: Choosing a serializer"
 description: "Compare the capabilities and trade-offs of serializers to choose a replacement for BinaryFormatter."
 ms.date: 5/31/2024
 no-loc: [BinaryFormatter, Serialization]
-dev_langs:
-  - CSharp
 helpviewer_keywords:
   - "BinaryFormatter"
   - "serializing objects"

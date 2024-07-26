@@ -3,8 +3,6 @@ title: "BinaryFormatter Migration Guide: Migration to MessagePack"
 description: "Describe the capabilities and limitations of MessagePack serializer."
 ms.date: 5/31/2024
 no-loc: [BinaryFormatter, Serialization]
-dev_langs:
-  - CSharp
 helpviewer_keywords:
   - "BinaryFormatter"
   - "serializing objects"

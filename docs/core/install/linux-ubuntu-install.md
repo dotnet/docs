@@ -3,7 +3,7 @@ title: Install .NET on Ubuntu
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Ubuntu. .NET is usually installed through APT.
 author: adegeo
 ms.author: adegeo
-ms.date: 05/14/2024
+ms.date: 07/29/2024
 ms.custom: linux-related-content
 zone_pivot_groups: ubuntu-install-set-one
 ---
@@ -32,8 +32,6 @@ The following versions of .NET are supported or available for Ubuntu 24.04:
 |-------------------------|--------------------------------------|----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
 | 8.0, 6.0                | 8.0                                  | 7.0, 6.0                                                                                                 |None                                                                                         |
 
-<!--CULLED until the packages are available in the MS feed [!INCLUDE [linux-ubuntu-feed-sdk-note](includes/linux-ubuntu-feed-sdk-note.md)]-->
-
 When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support, .NET is no longer supported with that version.
 
 # [.NET 8](#tab/dotnet8)
@@ -42,7 +40,7 @@ When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support,
 
 # [.NET 6](#tab/dotnet6)
 
-.NET 6 isn't available in the built-in Ubuntu 24.04 feed. [Register the Ubuntu .NET backports package repository](linux-ubuntu.md#register-the-ubuntu-net-backports-package-repository) and use that feed to install .NET through APT.
+.NET 6 isn't available in the built-in Ubuntu 24.04 feed, but is available in the Ubuntu .NET backports package repository. For more information, see [Register the Ubuntu .NET backports package repository](linux-ubuntu.md#register-the-ubuntu-net-backports-package-repository). After the repository is registered, use the following sections to install .NET.
 
 [!INCLUDE [linux-apt-install-60](includes/linux-install-60-apt.md)]
 

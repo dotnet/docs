@@ -11,6 +11,9 @@ ms.date: 03/20/2020
 
 `dotnet nuget add source` - Add a NuGet source.
 
+> [!NOTE]
+> Use package sources that you trust.
+
 ## Synopsis
 
 ```dotnetcli
@@ -33,6 +36,9 @@ The `dotnet nuget add source` command adds a new package source to your NuGet co
 - **`PACKAGE_SOURCE_PATH`**
 
   Path to the package source.
+
+  > [!NOTE]
+  > Use package sources that you trust.
 
 ## Options
 

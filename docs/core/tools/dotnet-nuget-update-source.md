@@ -11,6 +11,9 @@ ms.date: 03/20/2020
 
 `dotnet nuget update source` - Update a NuGet source.
 
+> [!NOTE]
+> Use package sources that you trust.
+
 ## Synopsis
 
 ```dotnetcli
@@ -46,6 +49,9 @@ The `dotnet nuget update source` command updates an existing source in your NuGe
 - **`-s|--source <SOURCE>`**
 
   Path to the package source.
+
+  > [!NOTE]
+  > Use package sources that you trust.
 
 - **`--store-password-in-clear-text`**
 

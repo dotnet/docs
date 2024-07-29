@@ -15,7 +15,7 @@ In the following example, class `ImplementationClass` must implement a method na
 
 For more information and examples, see [Interfaces](../../fundamentals/types/interfaces.md).
 
-A top-level interface, one declared in a namespace but not nested inside another type, can be declared `public` or `internal`. The default is `internal`. Nested interface declarations, those nested inside another type, can be declared using any access modifier.
+A top-level interface, one declared in a namespace but not nested inside another type, can be declared `public` or `internal`. The default is `internal`. Nested interface declarations, those declared inside another type, can be declared using any access modifier.
 
 Interface members without an implementation can't include an access modifier. Members with a default implementation can include any access modifier.
 
@@ -35,7 +35,7 @@ An interface can be a member of a namespace or a class. An interface declaration
 These preceding member declarations typically don't contain a body. An interface member may declare a body. Member bodies in an interface are the *default implementation*. Members with bodies permit the interface to provide a "default" implementation for classes and structs that don't provide an overriding implementation.
 
 > [!IMPORTANT]
-> Adding default interfaces members forces any `ref struct` that implements the interface to add an explicit declaration of that method.
+> Adding default interfaces members forces any `ref struct` that implements the interface to add an explicit declaration of that member.
 
 An interface may include:
 

@@ -40,7 +40,7 @@ Some constraints are mutually exclusive, and some constraints must be in a speci
 - You can't name both the non-nullable and nullable form of an interface as a constraint.
 - The `new()` constraint can't be combined with the `struct` or `unmanaged` constraint. If you specify the `new()` constraint, it must be the last constraint for that type parameter. Anti-constraints, if applicable, can follow the `new()` constraint.
 - The `default` constraint can be applied only on override or explicit interface implementations. It can't be combined with either the `struct` or `class` constraints.
-- The `allows ref struct` clause can't be combined with the `class` or `class?` constraint.
+- The `allows ref struct` anti-constraint can't be combined with the `class` or `class?` constraint.
 - The `allows ref struct` anti-constraint must follow all constraints for that type parameter.
 
 ## Why use constraints
@@ -176,7 +176,7 @@ The `allows ref struct` anti-constraint declares that the corresponding type arg
 The `allows ref struct` clause isn't inherited. In the following code:
 
 ```csharp
-class C<T, S>
+class SomeClass<T, S>
     where T : allows ref struct
     where S : T
 {

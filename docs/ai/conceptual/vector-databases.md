@@ -47,7 +47,7 @@ Other benefits of the RAG pattern include:
 
 ## Available vector database solutions
 
-[!INCLUDE [vector-databases](includes/vector-databases.md)]
+[!INCLUDE [vector-databases](../includes/vector-databases.md)]
 
 ## Related content
 

@@ -2,7 +2,7 @@ name: "rebase required"
 
 on:
   push:
-  pull_request_target:
+  pull_request:
     types: [synchronize]
 
 permissions:

@@ -37,8 +37,8 @@ The `dotnet nuget add source` command adds a new package source to your NuGet co
 
   Path to the package source.
 
-  > [!NOTE]
-  > Use package sources that you trust.
+> [!NOTE]
+> Use package sources that you trust.
 
 ## Options
 

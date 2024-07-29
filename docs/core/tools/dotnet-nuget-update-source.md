@@ -50,8 +50,8 @@ The `dotnet nuget update source` command updates an existing source in your NuGe
 
   Path to the package source.
 
-  > [!NOTE]
-  > Use package sources that you trust.
+> [!NOTE]
+> Use package sources that you trust.
 
 - **`--store-password-in-clear-text`**
 

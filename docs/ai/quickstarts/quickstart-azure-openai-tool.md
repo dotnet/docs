@@ -75,7 +75,7 @@ Get started with AI by creating a simple .NET 8 console chat application. The ap
     ```
 
     > [!TIP]
-    > If you get an error message, the Azure OpenAI resources may not have finished deploying. Wait a couple of minutes and try again.
+    > If you get an error message, the Azure OpenAI resources might not have finished deploying. Wait a couple of minutes and try again.
 
 :::zone-end
 <!-- markdownlint-enable MD029 MD044  -->
@@ -87,7 +87,7 @@ Get started with AI by creating a simple .NET 8 console chat application. The ap
 
 The application uses the [`Microsoft.SemanticKernel`](https://www.nuget.org/packages/Microsoft.SemanticKernel) package to send and receive requests to the OpenAI service.
 
-The entire application is contained within the **Program.cs** file. The first several lines of code set configuration values and gets the OpenAI Key that was previously set using the `dotnet user-secrets` command.
+The entire application is contained within the **Program.cs** file. The first several lines of code set configuration values and get the OpenAI Key that was previously set using the `dotnet user-secrets` command.
 
 ```csharp
 var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
@@ -135,7 +135,7 @@ Kernel kernel = b
 
 :::zone-end
 
-The function's `ImportPluginFromFunctions` and `CreateFromMethod` define the local function that will be called by the model.
+The functions `ImportPluginFromFunctions` and `CreateFromMethod` define the local function that will be called by the model.
 
 ```csharp
 // Add a new plugin with a local .NET function that should be available to the AI model
@@ -156,7 +156,7 @@ Once the `kernel` client is created, the code uses a system prompt to provide co
 ```csharp
 ChatHistory chatHistory = new("""
     You are a hiking enthusiast who helps people discover fun hikes in their area.
-    You are upbeat and friendly. A good weather is important for a good hike. 
+    You are upbeat and friendly. Good weather is important for a good hike. 
     Only make recommendations if the weather is good or if people insist.
     You introduce yourself when first saying hello. When helping people out,
     you always ask them for this information to inform the hiking recommendation you provide:

@@ -21,7 +21,7 @@ The .NET ecosystem provides many powerful tools, libraries, and services to deve
 - Minimizes the learning curve of working with different AI models or services by providing abstractions that reduce complexity.
 - Improves reliability by reducing the unpredictable behavior of prompts and responses from AI models. You can fine-tune prompts and plan tasks to create a controlled and predictable user experience.
 
-Visit the [Semantic Kernel documentation](https://learn.microsoft.com/en-us/semantic-kernel/overview/) for more information.
+Visit the [Semantic Kernel documentation](/semantic-kernel/overview/) for more information.
 
 ## .NET SDKs for building AI apps
 
@@ -57,7 +57,7 @@ For example, you can use [Ollama](https://ollama.com/) to run various AI models 
 
 | Model | Description |
 | --- | --- |
-| [phi3 models](https://azure.microsoft.com/en-us/products/phi-3) | A family of powerful, small language models (SLMs) with groundbreaking performance at low cost and low latency. |
+| [phi3 models](https://azure.microsoft.com/products/phi-3) | A family of powerful, small language models (SLMs) with groundbreaking performance at low cost and low latency. |
 | [orca models](https://www.microsoft.com/en-us/research/project/orca/) | Research models in tasks such as reasoning over user given data, reading comprehension, math problem solving and text summarization. |
 
 > [!NOTE]

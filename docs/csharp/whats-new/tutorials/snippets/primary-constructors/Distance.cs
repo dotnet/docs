@@ -3,8 +3,8 @@
     // <ReadonlyStruct>
     public readonly struct Distance(double dx, double dy)
     {
-        public readonly double Magnitude { get; } = Math.Sqrt(dx * dx + dy * dy);
-        public readonly double Direction { get; } = Math.Atan2(dy, dx);
+        public double Magnitude { get; } = Math.Sqrt(dx * dx + dy * dy);
+        public double Direction { get; } = Math.Atan2(dy, dx);
     }
     // </ReadonlyStruct>
 }
@@ -14,9 +14,9 @@ namespace Lowered
     // <StructOneLowered>
     public readonly struct Distance
     {
-        public readonly double Magnitude { get; }
+        public double Magnitude { get; }
 
-        public readonly double Direction { get; }
+        public double Direction { get; }
 
         public Distance(double dx, double dy)
         {
@@ -32,8 +32,8 @@ namespace StructTwo
     // <MutableStruct>
     public struct Distance(double dx, double dy)
     {
-        public readonly double Magnitude => Math.Sqrt(dx * dx + dy * dy);
-        public readonly double Direction => Math.Atan2(dy, dx);
+        public double Magnitude => Math.Sqrt(dx * dx + dy * dy);
+        public double Direction => Math.Atan2(dy, dx);
 
         public void Translate(double deltaX, double deltaY)
         {
@@ -54,8 +54,8 @@ namespace LoweredMutable
         private double __unspeakable_dx;
         private double __unspeakable_dy;
 
-        public readonly double Magnitude => Math.Sqrt(__unspeakable_dx * __unspeakable_dx + __unspeakable_dy * __unspeakable_dy);
-        public readonly double Direction => Math.Atan2(__unspeakable_dy, __unspeakable_dx);
+        public double Magnitude => Math.Sqrt(__unspeakable_dx * __unspeakable_dx + __unspeakable_dy * __unspeakable_dy);
+        public double Direction => Math.Atan2(__unspeakable_dy, __unspeakable_dx);
 
         public void Translate(double deltaX, double deltaY)
         {

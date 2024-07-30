@@ -8,14 +8,14 @@ ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 
 # Overview of the .NET + AI ecosystem
 
-Many powerful tools, libraries, and services are available for .NET to develop generative AI applications. .NET supports both cloud and local AI models, many different SDKs, vector database services, and other tools to help you build intelligent apps of varying size and scale.
+The .NET ecosystem provides many powerful tools, libraries, and services to develop AI applications. .NET supports both cloud and local AI model connections, many different SDKs for various AI and vector database services, and other tools to help you build intelligent apps of varying scope and complexity.
 
 > [!IMPORTANT]
-> Not all of the SDKs and services presented in this doc are maintained by Microsoft. When considering an SDK, be sure to evaluate its quality, licensing, and support to ensure they meet your requirements. Also make sure you review each SDK's documentation for detailed version compatibility information.
+> Not all of the SDKs and services presented in this doc are maintained by Microsoft. When considering an SDK, be sure to evaluate its quality, licensing, support and compatibility to ensure they meet your requirements.
 
 ## Semantic Kernel for .NET
 
-[Semantic Kernel](semantic-kernel-dotnet-overview.md) is an open-source SDK that provides AI integration and orchestration capabilities in your .NET apps. It is generally the recommended AI orchestration tool for .NET apps that use one or more AI services in combination with other APIs or web services, data stores, custom code and beyond. The Semantic Kernel SDK benefits enterprise developers in the following ways:
+[Semantic Kernel](semantic-kernel-dotnet-overview.md) is an open-source SDK that provides AI integration and orchestration capabilities in your .NET apps. This SDK is generally the recommended AI orchestration tool for .NET apps that use one or more AI services in combination with other APIs or web services, data stores, custom code and beyond. Semantic Kernel benefits enterprise developers in the following ways:
 
 - Streamlines integration of AI capabilities into existing applications to enable a cohesive solution for enterprise products.
 - Minimizes the learning curve of working with different AI models or services by providing abstractions that reduce complexity.
@@ -25,7 +25,7 @@ Visit the [Semantic Kernel documentation](https://learn.microsoft.com/en-us/sema
 
 ## .NET SDKs for building AI apps
 
-Many different SDKs are available for .NET to build apps with AI capabilities depending on the target platform or AI model.
+Many different SDKs are available for .NET to build apps with AI capabilities depending on the target platform or AI model. OpenAI models offer powerful generative AI capabilities, while other Azure AI Services provide intelligent solutions for a variety of specific scenarios.
 
 ### .NET SDKs for OpenAI Models
 
@@ -37,13 +37,12 @@ Many different SDKs are available for .NET to build apps with AI capabilities de
 
 ### .NET SDKs for Azure AI Services
 
-Azure offers many other AI services for specific application features and workflows. Most of these services provide a .NET SDK so you can integrate their functionality into your apps. Visit the [Azure AI Services](/azure/ai-services/what-are-ai-services) documentation for a complete list of available services and learning resources. Some of the most commonly used services include the following:
+Azure offers many other AI services for specific application features and workflows. Most of these services provide a .NET SDK to integrate their functionality into custom apps. Visit the [Azure AI Services](/azure/ai-services/what-are-ai-services) documentation for a complete list of available services and learning resources. Some of the most commonly used services include the following:
 
 | Service | Description |
 | --- | --- |
 | [Azure AI Search](/azure/search/) | Bring AI-powered cloud search to your mobile and web apps. |
 | [Azure AI Content Safety](/azure/ai-services/content-safety/) | An AI service that detects unwanted contents. |
-| [Azure AI Custom Vision](/azure/ai-services/custom-vision-service/) | Customize image recognition for your business. |
 | [Azure AI Document Intelligence](/azure/ai-services/document-intelligence/) | Turn documents into intelligent data-driven solutions. |
 | [Azure AI Language](/azure/ai-services/language-service/) | Build apps with industry-leading natural language understanding capabilities. |
 | [Azure AI Speech](/azure/ai-services/speech-service/) | Speech to text, text to speech, translation, and speaker recognition. |

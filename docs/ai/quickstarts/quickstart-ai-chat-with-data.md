@@ -16,7 +16,7 @@ zone_pivot_groups: openai-library
 :::zone target="docs" pivot="openai"
 <!-- markdownlint-enable MD044 -->
 
-Get started with AI development using a .NET 8.0 console app to connect to an OpenAI `gpt-3.5-turbo` model. You'll connect to the AI model using [Semantic Kernel](../semantic-kernel-dotnet-overview.md) to analyze hiking data and provide insights.
+Get started with AI development using a .NET 8 console app to connect to an OpenAI `gpt-3.5-turbo` model. You'll connect to the AI model using [Semantic Kernel](../semantic-kernel-dotnet-overview.md) to analyze hiking data and provide insights.
 
 [!INCLUDE [download-alert](includes/prerequisites-openai.md)]
 :::zone-end
@@ -25,7 +25,7 @@ Get started with AI development using a .NET 8.0 console app to connect to an Op
 :::zone target="docs" pivot="azure-openai"
 <!-- markdownlint-enable MD044 -->
 
-Get started with AI development using a .NET 8.0 console app to connect to an OpenAI `gpt-3.5-turbo` model deployed on Azure. You'll connect to the AI model using [Semantic Kernel](../semantic-kernel-dotnet-overview.md) to analyze hiking data and provide insights.
+Get started with AI development using a .NET 8 console app to connect to an OpenAI `gpt-3.5-turbo` model deployed on Azure. You'll connect to the AI model using [Semantic Kernel](../semantic-kernel-dotnet-overview.md) to analyze hiking data and provide insights.
 
 [!INCLUDE [download-alert](includes/prerequisites-azure-openai.md)]
 :::zone-end
@@ -73,7 +73,7 @@ Get started with AI development using a .NET 8.0 console app to connect to an Op
     ```
 
     > [!TIP]
-    > If you get an error message, the Azure OpenAI resources may not have finished deploying. Wait a couple of minutes and try again.
+    > If you get an error message, the Azure OpenAI resources might not have finished deploying. Wait a couple of minutes and try again.
 
 :::zone-end
 

@@ -16,7 +16,7 @@ zone_pivot_groups: openai-library
 :::zone target="docs" pivot="openai"
 <!-- markdownlint-enable MD044 -->
 
-Get started with OpenAI and [Semantic Kernel](../semantic-kernel-dotnet-overview.md) by creating a simple .NET 8.0 console chat application. The application will run locally and use the OpenAI `gpt-3.5-turbo` model. Follow these steps to get access to OpenAI and learn how to use Semantic Kernel.
+Get started with OpenAI and [Semantic Kernel](../semantic-kernel-dotnet-overview.md) by creating a simple .NET 8 console chat application. The application will run locally and use the OpenAI `gpt-3.5-turbo` model. Follow these steps to get access to OpenAI and learn how to use Semantic Kernel.
 
 [!INCLUDE [download-alert](includes/prerequisites-openai.md)]
 
@@ -26,7 +26,7 @@ Get started with OpenAI and [Semantic Kernel](../semantic-kernel-dotnet-overview
 :::zone target="docs" pivot="azure-openai"
 <!-- markdownlint-enable MD044 -->
 
-Get started with OpenAI and [Semantic Kernel](../semantic-kernel-dotnet-overview.md) by creating a simple .NET 8.0 console chat application. The application will run locally and connect to the OpenAI `gpt-35-turbo` model deployed into Azure OpenAI. Follow these steps to provision Azure OpenAI and learn how to use Semantic Kernel.
+Get started with OpenAI and [Semantic Kernel](../semantic-kernel-dotnet-overview.md) by creating a simple .NET 8 console chat application. The application will run locally and connect to the OpenAI `gpt-35-turbo` model deployed into Azure OpenAI. Follow these steps to provision Azure OpenAI and learn how to use Semantic Kernel.
 
 [!INCLUDE [download-alert](includes/prerequisites-azure-openai.md)]
 
@@ -75,7 +75,7 @@ Get started with OpenAI and [Semantic Kernel](../semantic-kernel-dotnet-overview
     ```
 
     > [!TIP]
-    > If you get an error message, the Azure OpenAI resources may not have finished deploying. Wait a couple of minutes and try again.
+    > If you get an error message, the Azure OpenAI resources might not have finished deploying. Wait a couple of minutes and try again.
 
 :::zone-end
 
@@ -85,7 +85,7 @@ Get started with OpenAI and [Semantic Kernel](../semantic-kernel-dotnet-overview
 
 The app uses the [`Microsoft.SemanticKernel`](https://www.nuget.org/packages/Microsoft.SemanticKernel) package to send and receive requests to the OpenAI service.
 
-The app code is contained within the **Program.cs** file. The first several lines of code set configuration values and gets the OpenAI Key that was previously set using the `dotnet user-secrets` command.
+The app code is contained within the **Program.cs** file. The first several lines of code set configuration values and get the OpenAI Key that was previously set using the `dotnet user-secrets` command.
 
 ```csharp
 var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
@@ -110,7 +110,7 @@ OpenAIChatCompletionService service = new(model, key);
 
 The application uses the [`Microsoft.SemanticKernel`](https://www.nuget.org/packages/Microsoft.SemanticKernel) package to send and receive requests to an Azure OpenAI service deployed in Azure.
 
-The entire application is contained within the **Program.cs** file. The first several lines of code retrieves the secrets and configuration values that were set in the `dotnet user-secrets` for you during the application provisioning.
+The entire application is contained within the **Program.cs** file. The first several lines of code retrieve the secrets and configuration values that were set in the `dotnet user-secrets` for you during the application provisioning.
 
 ```csharp
 // Retrieve the local secrets saved during the Azure deployment

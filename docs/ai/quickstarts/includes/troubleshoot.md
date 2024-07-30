@@ -32,4 +32,4 @@ The script **postprovision.ps1** is executed to set the .NET user secrets used i
 .\infra\post-script\postprovision.ps1
 ```
 
-The .NET AI apps now have the user-secrets configured and they can be tested.
+The .NET AI apps now have the user secrets configured and they can be tested.

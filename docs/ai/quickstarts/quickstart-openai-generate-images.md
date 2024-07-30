@@ -70,7 +70,7 @@ Get started with AI by creating a simple .NET 8 console chat application. The ap
     ```
 
     > [!TIP]
-    > If you get an error message, the Azure OpenAI resources may not have finished deploying. Wait a couple of minutes and try again.
+    > If you get an error message, the Azure OpenAI resources might not have finished deploying. Wait a couple of minutes and try again.
 
 :::zone-end
 
@@ -124,7 +124,7 @@ The `GenerateImageAsync` function instructs the model to generate a response bas
 ```csharp
 // Generate the image
 string imageUrl = await textToImageService.GenerateImageAsync("""
-    A postal card with an happy hiker waving and a beautiful mountain in the background.
+    A postal card with a happy hiker waving and a beautiful mountain in the background.
     There is a trail visible in the foreground.
     The postal card has text in red saying: 'You are invited for a hike!'
     """, 1024, 1024);

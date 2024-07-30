@@ -11,11 +11,11 @@ ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 The .NET ecosystem provides many powerful tools, libraries, and services to develop AI applications. .NET supports both cloud and local AI model connections, many different SDKs for various AI and vector database services, and other tools to help you build intelligent apps of varying scope and complexity.
 
 > [!IMPORTANT]
-> Not all of the SDKs and services presented in this doc are maintained by Microsoft. When considering an SDK, be sure to evaluate its quality, licensing, support and compatibility to ensure they meet your requirements.
+> Not all of the SDKs and services presented in this doc are maintained by Microsoft. When considering an SDK, make sure to evaluate its quality, licensing, support and compatibility to ensure they meet your requirements.
 
 ## Semantic Kernel for .NET
 
-[Semantic Kernel](semantic-kernel-dotnet-overview.md) is an open-source SDK that provides AI integration and orchestration capabilities in your .NET apps. This SDK is generally the recommended AI orchestration tool for .NET apps that use one or more AI services in combination with other APIs or web services, data stores, custom code and beyond. Semantic Kernel benefits enterprise developers in the following ways:
+[Semantic Kernel](semantic-kernel-dotnet-overview.md) is an open-source SDK that enables AI integration and orchestration capabilities in your .NET apps. This SDK is generally the recommended AI orchestration tool for .NET apps that use one or more AI services in combination with other APIs or web services, data stores, custom code and beyond. Semantic Kernel benefits enterprise developers in the following ways:
 
 - Streamlines integration of AI capabilities into existing applications to enable a cohesive solution for enterprise products.
 - Minimizes the learning curve of working with different AI models or services by providing abstractions that reduce complexity.
@@ -37,16 +37,16 @@ Many different SDKs are available for .NET to build apps with AI capabilities de
 
 ### .NET SDKs for Azure AI Services
 
-Azure offers many other AI services for specific application features and workflows. Most of these services provide a .NET SDK to integrate their functionality into custom apps. Visit the [Azure AI Services](/azure/ai-services/what-are-ai-services) documentation for a complete list of available services and learning resources. Some of the most commonly used services include the following:
+Azure offers many other AI services to build specific application capabilities and workflows. Most of these services provide a .NET SDK to integrate their functionality into custom apps. Visit the [Azure AI Services](/azure/ai-services/what-are-ai-services) documentation for a complete list of available services and learning resources. Some of the most commonly used services include the following:
 
 | Service | Description |
 | --- | --- |
 | [Azure AI Search](/azure/search/) | Bring AI-powered cloud search to your mobile and web apps. |
-| [Azure AI Content Safety](/azure/ai-services/content-safety/) | An AI service that detects unwanted contents. |
+| [Azure AI Content Safety](/azure/ai-services/content-safety/) | Detect unwanted or offensive content. |
 | [Azure AI Document Intelligence](/azure/ai-services/document-intelligence/) | Turn documents into intelligent data-driven solutions. |
 | [Azure AI Language](/azure/ai-services/language-service/) | Build apps with industry-leading natural language understanding capabilities. |
 | [Azure AI Speech](/azure/ai-services/speech-service/) | Speech to text, text to speech, translation, and speaker recognition. |
-| [Azure AI Translator](/azure/ai-services/translator/) | Use AI-powered translation technology to translate more than 100 in-use, at-risk, and endangered languages and dialects. |
+| [Azure AI Translator](/azure/ai-services/translator/) | AI-powered translation technology with support for more than 100 languages and dialects. |
 | [Azure AI Vision](/azure/ai-services/computer-vision/) | Analyze content in images and videos. |
 
 ## Develop with local AI models

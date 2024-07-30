@@ -32,7 +32,6 @@ f1_keywords:
   - "CS8332"
   - "CS8337"
   - "CS8338"
-  - "CS8345"
   - "CS8351"
   - "CS8373"
   - "CS8374"
@@ -98,7 +97,6 @@ helpviewer_keywords:
   - "CS8332"
   - "CS8337"
   - "CS8338"
-  - "CS8345"
   - "CS8351"
   - "CS8373"
   - "CS8374"
@@ -172,7 +170,6 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS8332**](#writable-reference-variables-require-a-writable-referent): *Cannot assign to a member of variable or use it as the right hand side of a `ref` assignment because it is a readonly variable*
 - [**CS8337**](#reference-variable-restrictions): *The first parameter of a '`ref`' extension method must be a value type or a generic type constrained to struct.*
 - [**CS8338**](#reference-variable-restrictions): *The first '`in`' or '`ref readonly`' parameter of the extension method must be a concrete (non-generic) value type.*
-- [**CS8345**](#ref-safety-violations): *Field or auto-implemented property cannot be of type unless it is an instance member of a `ref struct`.*
 - [**CS8351**](#ref-safety-violations): *Branches of a `ref` conditional operator cannot refer to variables with incompatible declaration scopes*
 - [**CS8373**](#incorrect-syntax): *The left-hand side of a `ref` assignment must be a ref variable.*
 - [**CS8374**](#ref-safety-violations): *Cannot ref-assign source has a narrower escape scope than destination.*

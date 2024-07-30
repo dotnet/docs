@@ -1,11 +1,11 @@
 ---
-title: "Breaking change: Altered UnsafeAccessor support for non-open generics"
-description: Learn about the .NET 9 breaking change in core .NET libraries where support for UnsafeAccessor with non-open generics has been altered.
+title: "Breaking change: Altered UnsafeAccessor support for closed generics"
+description: Learn about the .NET 9 breaking change in core .NET libraries where support for UnsafeAccessor with closed generics has been altered.
 ms.date: 07/29/2024
 ---
-# Altered UnsafeAccessor support for non-open generics
+# Altered UnsafeAccessor support for closed generics
 
-.NET 8 introduced the <xref:System.Runtime.CompilerServices.UnsafeAccessorAttribute> attribute, which permits access to non-visible members of types (AKA "fast private reflection"). Support for generics in .NET 8 wasn't added due to time constraints. However, in CoreCLR and native AOT, some very narrow and unsupported scenarios involving non-open generic types *did work*. These scenarios should have been blocked, but inadvertently weren't. New restrictions have been added in .NET 9.
+.NET 8 introduced the <xref:System.Runtime.CompilerServices.UnsafeAccessorAttribute> attribute, which permits access to non-visible members of types (AKA "fast private reflection"). Support for generics in .NET 8 wasn't added due to time constraints. However, in CoreCLR and native AOT, some very narrow and unsupported scenarios involving closed generic types *did work*. These scenarios should have been blocked, but inadvertently weren't. New restrictions have been added in .NET 9.
 
 For more information and examples, see the [remarks for UnsafeAccessorAttribute](xref:System.Runtime.CompilerServices.UnsafeAccessorAttribute#remarks).
 
@@ -20,7 +20,7 @@ extern static void CtorAsMethod(List<int> c);
 
 ## New behavior
 
-Starting in .NET 9, the fully supported and documented way to consume generic types is to ensure type parameters match type parameters and method parameters match method parameters. These restrictions are necessary because the runtime performs a strict metadata signature match.
+Starting in .NET 9, the fully supported and documented way to consume generic types is to ensure type parameters of `extern static` methods match the type parameters of the private methods, and method parameters of `extern static` methods match the method parameters of the private methods. These restrictions are necessary because the runtime performs a strict metadata signature match.
 
 ```csharp
 class Accessor<T>

@@ -23,6 +23,8 @@ The guidance in this section applies to all interop scenarios.
 - ✔️ CONSIDER using <xref:System.Buffers.ArrayPool%601?displayProperty=nameWithType> to pool your native array buffers.
 - ✔️ CONSIDER wrapping your P/Invoke declarations in a class with the same name and capitalization as your native library.
   - This allows your `[LibraryImport]` or `[DllImport]` attributes to use the C# `nameof` language feature to pass in the name of the native library and ensure that you didn't misspell the name of the native library.
+- ✔️ DO use `SafeHandle` handles to manage lifetime of objects that encapsulate unmanaged resources. For more information, see [Cleaning up unmanaged resources](../garbage-collection/unmanaged.md).
+- ❌ AVOID finalizers to manage lifetime of objects that encapsulate unmanaged resources. For more information, see [Implement a Dispose method](../garbage-collection/implementing-dispose.md).
 
 ## LibraryImport attribute settings
 

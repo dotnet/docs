@@ -3,7 +3,7 @@ title: Trimming options
 description: Learn how to control trimming of self-contained apps.
 author: sbomer
 ms.author: svbomer
-ms.date: 08/10/2023
+ms.date: 06/26/2024
 ms.topic: reference
 zone_pivot_groups: dotnet-version
 ---
@@ -45,13 +45,13 @@ This setting also enables the trim-compatibility [Roslyn analyzer](#roslyn-analy
 
 Use the `TrimMode` property to set the trimming granularity to either `partial` or `full`. The default setting for console apps (and, starting in .NET 8, Web SDK apps) is `full`:
 
-```csharp
+```xml
 <TrimMode>full</TrimMode>
 ```
 
 To only trim assemblies that have opted-in to trimming, set the property to `partial`:
 
-```csharp
+```xml
 <TrimMode>partial</TrimMode>
 ```
 
@@ -233,6 +233,10 @@ Several feature areas of the framework libraries come with trimmer directives th
 - `<MetadataUpdaterSupport>false</MetadataUpdaterSupport>`
 
   Remove metadata update-specific logic related to hot reload.
+
+- `<MetricsSupport>false</MetricsSupport>`
+
+  Removes support for System.Diagnostics.Metrics instrumentation.
 
 - `<StackTraceSupport>false</StackTraceSupport>` (.NET 8+)
 

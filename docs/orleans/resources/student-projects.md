@@ -1,7 +1,7 @@
 ---
 title: Student projects
 description: Learn how the Orleans team encourages students to build distributed applications.
-ms.date: 03/21/2022
+ms.date: 07/03/2024
 ---
 
 # Student projects

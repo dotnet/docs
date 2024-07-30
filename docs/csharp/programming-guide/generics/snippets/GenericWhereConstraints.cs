@@ -133,9 +133,14 @@ namespace Generics
     }
 
     // <Snippet10>
-    class EmployeeList<T> where T : Employee, System.Collections.Generic.IList<T>, IDisposable, new()
+    class EmployeeList<T> where T : notnull, Employee, IComparable<T>, new()
     {
         // ...
+        public void AddDefault()
+        {
+            T t = new T();
+            // ...
+        }
     }
     // </Snippet10>
 

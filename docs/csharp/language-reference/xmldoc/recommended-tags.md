@@ -192,7 +192,7 @@ The `<returns>` tag should be used in the comment for a method declaration to de
 <param name="name">description</param>
 ```
 
-- `name`: The name of a method parameter. Enclose the name in double quotation marks (" "). The names for parameters must match the API signature. If one or more parameter aren't covered, the compiler issues a warning. The compiler also issues a warning if the value of `name` doesn't match a formal parameter in the method declaration.
+- `name`: The name of a method parameter. Enclose the name in quotation marks ("). The names for parameters must match the API signature. If one or more parameter aren't covered, the compiler issues a warning. The compiler also issues a warning if the value of `name` doesn't match a formal parameter in the method declaration.
 
 The `<param>` tag should be used in the comment for a method declaration to describe one of the parameters for the method. To document multiple parameters, use multiple `<param>` tags. The text for the `<param>` tag is displayed in IntelliSense, the Object Browser, and the Code Comment Web Report.
 
@@ -202,7 +202,7 @@ The `<param>` tag should be used in the comment for a method declaration to desc
 <paramref name="name"/>
 ```
 
-- `name`: The name of the parameter to refer to. Enclose the name in double quotation marks (" ").
+- `name`: The name of the parameter to refer to. Enclose the name in quotation marks (").
 
 The `<paramref>` tag gives you a way to indicate that a word in the code comments, for example in a `<summary>` or `<remarks>` block refers to a parameter. The XML file can be processed to format this word in some distinct way, such as with a bold or italic font.
 
@@ -212,7 +212,7 @@ The `<paramref>` tag gives you a way to indicate that a word in the code comment
 <exception cref="member">description</exception>
 ```
 
-- cref = "`member`": A reference to an exception that is available from the current compilation environment. The compiler checks that the given exception exists and translates `member` to the canonical element name in the output XML. `member` must appear within double quotation marks (" ").
+- cref = "`member`": A reference to an exception that is available from the current compilation environment. The compiler checks that the given exception exists and translates `member` to the canonical element name in the output XML. `member` must appear within quotation marks (").
 
 The `<exception>` tag lets you specify which exceptions can be thrown. This tag can be applied to definitions for methods, properties, events, and indexers.
 
@@ -256,7 +256,19 @@ The `<para>` tag is for use inside a tag, such as [\<summary>](#summary), [\<rem
 </list>
 ```
 
-The `<listheader>` block is used to define the heading row of either a table or definition list. When defining a table, you only need to supply an entry for `term` in the heading. Each item in the list is specified with an `<item>` block. When creating a definition list, you'll need to specify both `term` and `description`. However, for a table, bulleted list, or numbered list, you only need to supply an entry for `description`. A list or table can have as many `<item>` blocks as needed.
+The `<listheader>` block is used to define the heading row of either a table or definition list.
+
+When defining a table:
+
+* You only need to supply an entry for `term` in the heading.
+* Each item in the list is specified with an `<item>` block. For each `item`, you will only need to supply an entry for `description`.
+
+When creating a definition list:
+
+* You must supply an entry for `term` in the heading.
+* Each item in the list is specified with an `<item>` block. Each `item` must contain both a `term` and `description`.
+
+A list or table can have as many `<item>` blocks as needed.
 
 ### \<c>
 
@@ -315,7 +327,7 @@ Add your XML comments in base classes or interfaces and let inheritdoc copy the 
 - `filename`: The name of the XML file containing the documentation. The file name can be qualified with a path relative to the source code file. Enclose `filename` in single quotation marks (' ').
 - `tagpath`: The path of the tags in `filename` that leads to the tag `name`. Enclose the path in single quotation marks (' ').
 - `name`: The name specifier in the tag that precedes the comments; `name` will have an `id`.
-- `id`: The ID for the tag that precedes the comments. Enclose the ID in double quotation marks (" ").
+- `id`: The ID for the tag that precedes the comments. Enclose the ID in quotation marks (").
 
 The `<include>` tag lets you refer to comments in another file that describe the types and members in your source code. Including an external file is an alternative to placing documentation comments directly in your source code file. By putting the documentation in a separate file, you can apply source control to the documentation separately from the source code. One person can have the source code file checked out and someone else can have the documentation file checked out. The `<include>` tag uses the XML XPath syntax. Refer to XPath documentation for ways to customize your `<include>` use.
 
@@ -355,7 +367,7 @@ The XML output for this method is shown in the following example:
 <see langword="keyword"/>
 ```
 
-- `cref="member"`: A reference to a member or field that is available to be called from the current compilation environment. The compiler checks that the given code element exists and passes `member` to the element name in the output XML. Place *member* within double quotation marks (" "). You can provide different link text for a "cref", by using a separate closing tag.
+- `cref="member"`: A reference to a member or field that is available to be called from the current compilation environment. The compiler checks that the given code element exists and passes `member` to the element name in the output XML. Place *member* within quotation marks ("). You can provide different link text for a "cref", by using a separate closing tag.
 - `href="link"`: A clickable link to a given URL. For example, `<see href="https://github.com">GitHub</see>` produces a clickable link with text :::no-loc text="GitHub"::: that links to `https://github.com`.
 - `langword="keyword"`: A language keyword, such as `true` or one of the other valid [keywords](../keywords/index.md).
 
@@ -369,7 +381,7 @@ The `<see>` tag lets you specify a link from within text. Use [\<seealso>](#seea
 <seealso href="link">Link Text</seealso>
 ```
 
-- `cref="member"`: A reference to a member or field that is available to be called from the current compilation environment. The compiler checks that the given code element exists and passes `member` to the element name in the output XML. `member` must appear within double quotation marks (" ").
+- `cref="member"`: A reference to a member or field that is available to be called from the current compilation environment. The compiler checks that the given code element exists and passes `member` to the element name in the output XML. `member` must appear within quotation marks (").
 - `href="link"`: A clickable link to a given URL. For example, `<seealso href="https://github.com">GitHub</seealso>` produces a clickable link with text :::no-loc text="GitHub"::: that links to `https://github.com`.
 
 The `<seealso>` tag lets you specify the text that you might want to appear in a **See Also** section. Use [\<see>](#see) to specify a link from within text. You cannot nest the `seealso` tag inside the `summary` tag.
@@ -390,7 +402,7 @@ The `href` attribute means a reference to a web page. You can use it to directly
 <typeparam name="TResult">The type returned from this method</typeparam>
 ```
 
-- `TResult`: The name of the type parameter. Enclose the name in double quotation marks (" ").
+- `TResult`: The name of the type parameter. Enclose the name in quotation marks (").
 
 The `<typeparam>` tag should be used in the comment for a generic type or method declaration to describe a type parameter. Add a tag for each type parameter of the generic type or method. The text for the `<typeparam>` tag will be displayed in IntelliSense.
 
@@ -400,7 +412,7 @@ The `<typeparam>` tag should be used in the comment for a generic type or method
 <typeparamref name="TKey"/>
 ```
 
-- `TKey`: The name of the type parameter. Enclose the name in double quotation marks (" ").
+- `TKey`: The name of the type parameter. Enclose the name in quotation marks (").
 
 Use this tag to enable consumers of the documentation file to format the word in some distinct way, for example in italics.
 

@@ -9,6 +9,9 @@ on:
     # Schedule for five minutes after the hour, every hour
     - cron: '5 * * * *'
 
+permissions:
+  contents: read
+
 jobs:
   noResponse:
     permissions:
@@ -16,6 +19,11 @@ jobs:
       pull-requests: write
     runs-on: ubuntu-latest
     steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@0d381219ddf674d61a7572ddd19d7941e271515c # v2.9.0
+        with:
+          egress-policy: audit
+
       - uses: lee-dohm/no-response@9bb0a4b5e6a45046f00353d5de7d90fb8bd773bb
         with:
           token: ${{ github.token }}

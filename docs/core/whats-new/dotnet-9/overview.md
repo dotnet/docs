@@ -2,7 +2,7 @@
 title: What's new in .NET 9
 description: Learn about the new .NET features introduced in .NET 9.
 titleSuffix: ""
-ms.date: 06/11/2024
+ms.date: 07/10/2024
 ms.topic: whats-new
 ---
 # What's new in .NET 9
@@ -23,7 +23,13 @@ The runtime also includes numerous performance improvements in the following are
 - Inlining improvements
 - PGO improvements: Type checks and casts
 - Arm64 vectorization in .NET libraries
+- Arm64 code generation
 - Faster exceptions
+- Code layout
+- Reduced address exposure
+- AVX10v1 support
+- Hardware intrinsic code generation
+- Constant folding for floating point and SIMD operations
 
 For more information, see [What's new in the .NET 9 runtime](runtime.md).
 
@@ -47,9 +53,11 @@ For more information, see [What's new in the .NET 9 libraries](libraries.md).
 
 The .NET 9 SDK includes improvements to unit testing, including better integration with MSBuild that allows you to run tests in parallel.
 
-For tools, a new option for [`dotnet tool install`](../../tools/dotnet-tool-install.md) lets users (instead of tool authors) decide whether a tool is allowed to run on a newer .NET runtime version than the version the tool targets.
+For tools, a new option for [`dotnet tool install`](../../tools/dotnet-tool-install.md) lets users (instead of tool authors) decide whether a tool is allowed to run on a newer .NET runtime version than the version the tool targets. And NuGet security audits run on both direct and transitive package references, by default.
 
 The terminal logger is now enabled by default and also has improved usability. For example, the total count of failures and warnings is now summarized at the end of a build.
+
+Finally, new MSBuild script analyzers are available.
 
 For more information, see [What's new in the SDK for .NET 9](sdk.md).
 

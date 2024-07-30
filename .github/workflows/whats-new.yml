@@ -10,6 +10,9 @@ on:
         required: true
         default: "Manual run"
 
+permissions:
+  contents: read
+
 jobs:
   create-what-is-new:
     runs-on: ubuntu-latest
@@ -19,7 +22,12 @@ jobs:
       pull-requests: write
 
     steps:
-      - uses: actions/checkout@v4.1.7
+      - name: Harden Runner
+        uses: step-security/harden-runner@0d381219ddf674d61a7572ddd19d7941e271515c # v2.9.0
+        with:
+          egress-policy: audit
+
+      - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
 
       - name: "Print manual run reason"
         if: ${{ github.event_name == 'workflow_dispatch' }}
@@ -28,13 +36,13 @@ jobs:
 
       - name: Azure OpenID Connect
         id: azure-oidc-auth
-        uses: dotnet/docs-tools/.github/actions/oidc-auth-flow@main
+        uses: dotnet/docs-tools/.github/actions/oidc-auth-flow@5e8bcc78465d45a7544bba56509a1a69922b6a5a # main
         with:
           client-id: ${{ secrets.CLIENT_ID }}
           tenant-id: ${{ secrets.TENANT_ID }}
           audience: ${{ secrets.OSMP_API_AUDIENCE }}
      
-      - uses: dotnet/docs-tools/WhatsNew.Cli@main
+      - uses: dotnet/docs-tools/WhatsNew.Cli@5e8bcc78465d45a7544bba56509a1a69922b6a5a # main
         env:
           GitHubKey: ${{ secrets.GITHUB_TOKEN }}
           AZURE_ACCESS_TOKEN: ${{ steps.azure-oidc-auth.outputs.access-token }}

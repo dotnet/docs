@@ -3,7 +3,7 @@ title: Options pattern
 author: IEvangelist
 description: Learn the options pattern to represent groups of related settings in .NET apps. The options pattern uses classes to provide strongly-typed access to settings.
 ms.author: dapine
-ms.date: 06/03/2024
+ms.date: 07/18/2024
 ---
 
 # Options pattern in .NET
@@ -112,7 +112,7 @@ In the preceding code, changes to the JSON configuration file after the app has 
 
 ### Options interfaces benefits
 
-Using a generic wrapper type gives you the ability to decouple the lifetime of the option from the DI container. The <xref:Microsoft.Extensions.Options.IOptions%601.Value?displayProperty=nameWithType> interface provides a layer of abstraction, including generic constraints, on your options type. This provides the following benefits:
+Using a generic wrapper type gives you the ability to decouple the lifetime of the option from the dependency injection (DI) container. The <xref:Microsoft.Extensions.Options.IOptions%601.Value?displayProperty=nameWithType> interface provides a layer of abstraction, including generic constraints, on your options type. This provides the following benefits:
 
 - The evaluation of the `T` configuration instance is deferred to the accessing of <xref:Microsoft.Extensions.Options.IOptions%601.Value?displayProperty=nameWithType>, rather than when it is injected. This is important because you can consume the `T` option from various places and choose the lifetime semantics without changing anything about `T`.
 - When registering options of type `T`, you do not need to explicitly register the `T` type. This is a convenience when you're [authoring a library](options-library-authors.md) with simple defaults, and you don't want to force the caller to register options into the DI container with a specific lifetime.
@@ -244,7 +244,7 @@ All options are named instances. <xref:Microsoft.Extensions.Options.IConfigureOp
 
 ## Use DI services to configure options
 
-Services can be accessed from dependency injection while configuring options in two ways:
+When you're configuring options, you can use [dependency injection](dependency-injection.md) to access registered services, and use them to configure options. This is useful when you need to access services to configure options. Services can be accessed from DI while configuring options in two ways:
 
 - Pass a configuration delegate to [Configure](xref:Microsoft.Extensions.Options.OptionsBuilder%601.Configure%2A) on [OptionsBuilder\<TOptions>](xref:Microsoft.Extensions.Options.OptionsBuilder%601). `OptionsBuilder<TOptions>` provides overloads of [Configure](xref:Microsoft.Extensions.Options.OptionsBuilder%601.Configure%2A) that allow use of up to five services to configure options:
 
@@ -258,7 +258,7 @@ Services can be accessed from dependency injection while configuring options in 
 
 - Create a type that implements <xref:Microsoft.Extensions.Options.IConfigureOptions%601> or <xref:Microsoft.Extensions.Options.IConfigureNamedOptions%601> and register the type as a service.
 
-We recommend passing a configuration delegate to [Configure](xref:Microsoft.Extensions.Options.OptionsBuilder%601.Configure%2A), since creating a service is more complex. Creating a type is equivalent to what the framework does when calling [Configure](xref:Microsoft.Extensions.Options.OptionsBuilder%601.Configure%2A). Calling [Configure](xref:Microsoft.Extensions.Options.OptionsBuilder%601.Configure%2A) registers a transient generic <xref:Microsoft.Extensions.Options.IConfigureNamedOptions%601>, which has a constructor that accepts the generic service types specified.
+It's recommended to pass a configuration delegate to [Configure](xref:Microsoft.Extensions.Options.OptionsBuilder%601.Configure%2A), since creating a service is more complex. Creating a type is equivalent to what the framework does when calling [Configure](xref:Microsoft.Extensions.Options.OptionsBuilder%601.Configure%2A). Calling [Configure](xref:Microsoft.Extensions.Options.OptionsBuilder%601.Configure%2A) registers a transient generic <xref:Microsoft.Extensions.Options.IConfigureNamedOptions%601>, which has a constructor that accepts the generic service types specified.
 
 ## Options validation
 

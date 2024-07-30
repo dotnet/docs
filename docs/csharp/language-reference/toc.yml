@@ -437,7 +437,7 @@ items:
       CS0171, CS0188, CS0843, CS8904, CS1738, CS8022, CS8023, CS8024, CS8025, CS8026, CS8058, CS8059, CS8107, CS8192, CS8302,
       CS8303, CS8304, CS8305, CS8306, CS8314, CS8320, CS8370, CS8371, CS8400, CS8401, CS8511, CS8627, CS8630, CS8652, CS8703,
       CS8704, CS8706, CS8773, CS8912, CS8919, CS8929, CS8936, CS8957, CS8967, CS9014, CS9015, CS9016, CS9017, CS9058, CS9064,
-      CS9103, CS9171, CS9194, CS9202, CS9204
+      CS9103, CS9171, CS9194, CS9202, CS9204, CS9240
   - name: Assembly references
     href: ./compiler-messages/assembly-references.md
     displayName: >
@@ -464,6 +464,11 @@ items:
       CS8351, CS8373, CS8374, CS8388, CS8977, CS9072, CS9077, CS9078, CS9079, CS9085, CS9086, CS9087, CS9089, CS9091, CS9092,
       CS9093, CS9094, CS9095, CS9096, CS9097, CS9101, CS9102, CS9104, CS9190, CS9191, CS9192, CS9193, CS9195, CS9196, CS9197,
       CS9198, CS9199, CS9200, CS9201
+  - name: "`ref struct` types"
+    href: ./compiler-messages/ref-struct-errors.md
+    displayName: > 
+      ref struct,
+      CS8343, CS8344, CS9241, CS9242, CS9243, CS9244, CS9245, CS9246, CS9247
   - name: Iterator methods
     href: ./compiler-messages/iterator-yield.md
     displayName: > 

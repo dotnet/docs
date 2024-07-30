@@ -183,8 +183,8 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS9078**](#ref-safety-violations): *Cannot return by reference a member of parameter through a `ref` parameter; it can only be returned in a return statement*
 - [**CS9079**](#ref-safety-violations): *Cannot ref-assign because source can only escape the current method through a return statement.*
 - [**CS9096**](#ref-safety-violations): *Cannot ref-assign because source has a wider value escape scope than destination allowing assignment through source of values with narrower escapes scopes than destination.*
-- [**CS9101**](#unscoped-ref-restrictions): *UnscopedRefAttribute can only be applied to struct instance methods and properties, and cannot be applied to constructors or init-only members.*
-- [**CS9102**](#unscoped-ref-restrictions): *UnscopedRefAttribute cannot be applied to an interface implementation.*
+- [**CS9101**](#unscoped-ref-restrictions): *UnscopedRefAttribute can only be applied to struct or virtual interface instance methods and properties, and cannot be applied to constructors or init-only members.*
+- [**CS9102**](#unscoped-ref-restrictions): *UnscopedRefAttribute cannot be applied to an interface implementation  because implemented member doesn't have this attribute.*
 - [**CS9104**](#reference-variable-restrictions): *A `using` statement resource of type cannot be used in async methods or async lambda expressions.*
 - [**CS9190**](#incorrect-syntax): *`readonly` modifier must be specified after `ref`.*
 - [**CS9199**](#reference-variable-restrictions): *A `ref readonly` parameter cannot have the Out attribute.*
@@ -285,8 +285,8 @@ To fix the error, remove the reference variable where it isn't allowed:
 
 The `unscoped` qualifier on `ref` parameters isn't allowed in some locations:
 
-- **CS9101**:  *UnscopedRefAttribute can only be applied to struct instance methods and properties, and cannot be applied to constructors or  or init-only members.*
-- **CS9102**:  *UnscopedRefAttribute cannot be applied to an interface implementation.*
+- **CS9101**:  *UnscopedRefAttribute can only be applied to struct instance or virtual interface methods and properties, and cannot be applied to constructors or  or init-only members.*
+- **CS9102**:  *UnscopedRefAttribute cannot be applied to an interface implementation because implemented member doesn't have this attribute..*
 
 You must remove the `unscoped` modifier on the parameter declaration that caused the error.
 

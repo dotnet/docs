@@ -183,6 +183,8 @@ items:
       href: ../../../_csharplang/proposals/csharp-8.0/nested-stackalloc.md
     - name: Lock object semantics
       href: ../../../_csharplang/proposals/lock-object.md
+    - name: Allow `ref` and `unsafe`
+      href: ../../../_csharplang/proposals/ref-unsafe-in-iterators-async.md 
   - name: Namespaces
     items:
     - name: File scoped namespaces
@@ -221,6 +223,8 @@ items:
       href: ../../../_csharplang/proposals/csharp-8.0/default-interface-methods.md
     - name: Static abstracts in interfaces
       href: ../../../_csharplang/proposals/csharp-11.0/static-abstracts-in-interfaces.md
+    - name: Allow ref struct interfaces
+      href: ../../../_csharplang/proposals/ref-struct-interfaces.md
   - name: Attributes
     items:
     - name: Generic attributes

@@ -8,7 +8,7 @@ where:
 configuration:
   resourceManagementConfiguration:
     eventResponderTasks:
-    - description: Auto-squash-merge PRs to main labeled with auto-merge
+    - description: Approve and auto-squash-merge PRs to main labeled with 'auto-merge'
       triggerOnOwnActions: true
       if:
       - payloadType: Pull_Request
@@ -19,8 +19,10 @@ configuration:
       then:
       - enableAutoMerge:
           mergeMethod: Squash
+      - approvePullRequest:
+          comment: "Approved; this PR will merge when all status checks pass."
 
-    - description: Auto-merge PRs to live labeled with auto-merge
+    - description: Auto-merge PRs to live labeled with 'auto-merge'
       triggerOnOwnActions: true
       if:
       - payloadType: Pull_Request
@@ -32,7 +34,7 @@ configuration:
       - enableAutoMerge:
           mergeMethod: Merge
 
-    - description: Don't auto-merge PRs with auto-merge label removed
+    - description: Don't auto-merge PRs with 'auto-merge' label removed
       if:
       - payloadType: Pull_Request
       - labelRemoved:

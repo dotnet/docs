@@ -27,7 +27,7 @@ When installed, .NET consists of several components that are laid out as follows
 │   └── <sdk version>            (3)
 ├── sdk-manifests                (4)              (*)
 │   └── <sdk feature band version>
-├── library-packs                (4)              (*)
+├── library-packs                (20)             (*)
 ├── metadata                     (4)              (*)
 │   └── workloads
 │       └── <sdk feature band version>
@@ -45,8 +45,10 @@ When installed, .NET consists of several components that are laid out as follows
 │   │   └── <netstandard version>        (15)
 │   ├── Microsoft.NETCore.App.Runtime.<rid>       (*)
 │   │   └── <runtime version>            (18)
-│   └── Microsoft.AspNetCore.App.Runtime.<rid>    (*)
-│       └── <aspnetcore version>         (18)
+│   ├── Microsoft.AspNetCore.App.Runtime.<rid>    (*)
+│   │   └── <aspnetcore version>         (18)
+│   └── runtime.<rid>.Microsoft.DotNet.ILCompiler (*)
+│       └── <runtime version>            (19)
 ├── shared                                        (*)
 │   ├── Microsoft.NETCore.App                     (*)
 │   │   └── <runtime version>     (5)
@@ -77,7 +79,7 @@ While there's a single host, most of the other components are in versioned direc
 
 - (3) **sdk/\<sdk version>** The SDK (also known as "the tooling") is a set of managed tools that are used to write and build .NET libraries and applications. The SDK includes the .NET CLI, the managed languages compilers, MSBuild, and associated build tasks and targets, NuGet, new project templates, and so on.
 
-- (4) **sdk-manifests/\<sdk feature band version>** The names and versions of the assets that an optional workload installation requires are maintained in workload manifests stored in this folder. The folder name is the feature band version of the SDK. So for an SDK version such as 7.0.102, this folder would still be named 7.0.100. When a workload is installed, the following folders are created as needed for the workload's assets: *library-packs*, *metadata*, and *template-packs*. A distribution can create an empty */metadata/workloads/\<sdkfeatureband>/userlocal* file if workloads should be installed under a user path rather than in the *dotnet* folder. For more information, see GitHub issue [dotnet/installer#12104](https://github.com/dotnet/installer/issues/12104).
+- (4) **sdk-manifests/\<sdk feature band version>** The names and versions of the assets that an optional workload installation requires are maintained in workload manifests stored in this folder. The folder name is the feature band version of the SDK. So for an SDK version such as 7.0.102, this folder would still be named 7.0.100. When a workload is installed, the following folders are created as needed for the workload's assets: *metadata* and *template-packs*. A distribution can create an empty */metadata/workloads/\<sdkfeatureband>/userlocal* file if workloads should be installed under a user path rather than in the *dotnet* folder. For more information, see GitHub issue [dotnet/installer#12104](https://github.com/dotnet/installer/issues/12104).
 
 The **shared** folder contains frameworks. A shared framework provides a set of libraries at a central location so they can be used by different applications.
 
@@ -105,7 +107,17 @@ The **shared** folder contains frameworks. A shared framework provides a set of 
 
 - (18) **Microsoft.NETCore.App.Runtime.\<rid>/\<runtime version>,Microsoft.AspNetCore.App.Runtime.\<rid>/\<aspnetcore version>** These files enable building self-contained applications. These directories contain symbolic links to files in (2), (5) and (6).
 
+- (19) **runtime.\<rid>.Microsoft.DotNet.ILCompiler/\<runtime version>** These files enable building NativeAOT applications for the target platform.
+
+- (20) **library-packs** contains NuGet package files. The SDK is configured to use this folder as a NuGet source. The list of NuGet packages provided by a .NET build is described below.
+
 The folders marked with `(*)` are used by multiple packages. Some package formats (for example, `rpm`) require special handling of such folders. The package maintainer must take care of this.
+
+Package files added to `library-packs` (20) can be packages that Microsoft does not distribute for the target platform. The files can also be packages that Microsoft distributes and for which `library-packs` provides a package that was built from source to meet platform package distribution guidelines. The following packages are included by the .NET build:
+
+| Package name | Published by Microsoft | Needed for |
+|----|----|----|
+| `Microsoft.DotNet.ILCompiler.<version>.nupkg`<br>`Microsoft.NET.ILLink.Tasks.<version>.nupkg` | &#x2611; | NativeAOT |
 
 ## Recommended packages
 
@@ -121,8 +133,14 @@ The following lists the recommended packages:
 - `dotnet-sdk-[major].[minor]` - Installs the latest SDK for specific runtime
   - **Version:** \<sdk version>
   - **Example:** dotnet-sdk-7.0
-  - **Contains:** (3),(4),(18)
+  - **Contains:** (3),(4),(18),(20)
   - **Dependencies:** `dotnet-runtime-[major].[minor]`, `aspnetcore-runtime-[major].[minor]`, `dotnet-targeting-pack-[major].[minor]`, `aspnetcore-targeting-pack-[major].[minor]`, `netstandard-targeting-pack-[netstandard_major].[netstandard_minor]`, `dotnet-apphost-pack-[major].[minor]`, `dotnet-templates-[major].[minor]`
+
+- `dotnet-sdk-aot-[major].[minor]` - Installs the SDK components for platform NativeAOT
+  - **Version:** \<sdk version>
+  - **Example:** dotnet-sdk-aot-9.0
+  - **Contains:** (19)
+  - **Dependencies:** `dotnet-sdk-[major].[minor]`, _compiler toolchain and developer packages for libraries that the .NET runtime depends on_
 
 - `aspnetcore-runtime-[major].[minor]` - Installs a specific ASP.NET Core runtime
   - **Version:** \<aspnetcore runtime version>

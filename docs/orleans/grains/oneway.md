@@ -1,7 +1,7 @@
 ---
 title: One-way requests
 description: Learn about one-way requests in .NET Orleans.
-ms.date: 06/26/2023
+ms.date: 07/03/2024
 ---
 
 # One-way requests

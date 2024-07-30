@@ -1,4 +1,4 @@
-revision: 3
+revision: 4
 schema-version: 1
 owner-ms-alias: adegeo
 
@@ -34,7 +34,7 @@ issues:
       fail:
         - check:
           - type: query
-            value: "length(Issue.labels[?name == ':pushpin: seQUESTered' || name == ':world_map: reQUEST' || name == 'training-module']) != `0`"
+            value: "length(Issue.labels[?name == ':pushpin: seQUESTered' || name == ':world_map: reQUEST' || name == 'training-module' || name == 'video-content']) != `0`"
           pass:
             - labels-remove: [":watch: Not Triaged"]
           fail:
@@ -52,6 +52,13 @@ issues:
           value: "contains(Issue.body, '- [x] **Source incompatible**') == `true` || contains(Issue.body, '- [X] **Source incompatible**') == `true`"
       pass:
         - labels-add: ["source incompatible"]
+
+    # Temporary label to mark issues as updated for Quest. The label is instantly removed
+    - check:
+      - type: query
+        value: "length(Issue.labels[?name == ':world_map: mapQUEST']) != `0`"
+      pass:
+        - labels-remove: ["world_map: mapQUEST"]
 
   opened:
     # New issue opened, add Not Triaged  

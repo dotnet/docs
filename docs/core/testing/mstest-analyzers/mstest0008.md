@@ -40,6 +40,8 @@ Methods marked with `[TestInitialize]` should follow the following layout to be 
 - it should not take any parameter
 - return type should be `void`, `Task` or `ValueTask`
 
+[!INCLUDE [test-class-rules](includes/test-class-rules.md)]
+
 ## How to fix violations
 
 Ensure that the method matches the layout described above.

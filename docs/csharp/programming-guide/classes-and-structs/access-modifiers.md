@@ -41,7 +41,7 @@ When one declaration of a [partial class or partial method](./partial-classes-an
 
 ## Class and struct accessibility
 
-Classes and structs declared directly within a namespace (aren't nested within other classes or structs) can be either `public` or `internal`. `internal` is the default if no access modifier is specified.
+Classes and structs declared directly within a namespace (aren't nested within other classes or structs) can have `public`, `internal` or `file` access. `internal` is the default if no access modifier is specified.
 
 Struct members, including nested classes and structs, can be declared `public`, `internal`, or `private`. Class members, including nested classes and structs, can be `public`, `protected internal`, `protected`, `internal`, `private protected`, or `private`. Class and struct members,  including nested classes and structs, have `private` access by default.
 

@@ -16,6 +16,9 @@ on:
       - ".github/workflows/markdownlint.yml"
       - ".github/workflows/markdownlint-problem-matcher.json"
 
+permissions:
+  contents: read
+
 jobs:
   lint:
     runs-on: ubuntu-latest
@@ -23,7 +26,12 @@ jobs:
       statuses: write
 
     steps:
-      - uses: actions/checkout@v4.1.7
+      - name: Harden Runner
+        uses: step-security/harden-runner@0d381219ddf674d61a7572ddd19d7941e271515c # v2.9.0
+        with:
+          egress-policy: audit
+
+      - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
       - name: Use Node.js
         uses: actions/setup-node@eff380dfbcf941bf8832e4acb788cebe13dfd758
         with:

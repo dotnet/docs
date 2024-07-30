@@ -20,7 +20,7 @@ extern static void CtorAsMethod(List<int> c);
 
 ## New behavior
 
-Starting in .NET 9, the fully supported and documented way to consume generic types is to ensure type parameters of `extern static` methods match the type parameters of the private methods, and method parameters of `extern static` methods match the method parameters of the private methods. These restrictions are necessary because the runtime performs a strict metadata signature match.
+Starting in .NET 9, the fully supported and documented way to consume generic types is to ensure the type parameters of an `extern static` method match the type parameters of the private method, and the method parameters of an `extern static` method match the method parameters of the private method. These restrictions are necessary because the runtime performs a strict metadata signature match.
 
 ```csharp
 class Accessor<T>

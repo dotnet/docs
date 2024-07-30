@@ -27,14 +27,7 @@ Today, you can use .NET to access models built by OpenAI, using either the Azure
 
 ## Connect your data using vector stores
 
-To increase relevancy and tailor AI applications for your own data, you'll likely need to work with a vector store. Many services provide a native SDK for .NET, which you can use directly. You can also use Semantic Kernel, which provides an extensible component model that allows you to try different vector stores without needing to learn each SDK.
-
-| NuGet package | Supported vector store | Maintainer or vendor | Link to docs |
-|---------------|------------------------|----------------------|--------------|
-| [Microsoft.SemanticKernel](https://www.nuget.org/packages/Microsoft.SemanticKernel/) | [Supported vector stores](/semantic-kernel/memories/vector-db#available-connectors-to-vector-databases) | [Semantic Kernel](https://github.com/microsoft/semantic-kernel) (Microsoft) | [Semantic Kernel: What is a vector database](/semantic-kernel/memories/vector-db) |
-| [Azure.Search.Documents](https://www.nuget.org/packages/Azure.Search.Documents/) | Azure AI Search | [Azure SDK for .NET](https://github.com/Azure/azure-sdk-for-net) (Microsoft) | [Azure AI Search client library for .NET](/dotnet/api/overview/azure/search.documents-readme) |
-| [Milvus.Client](https://www.nuget.org/packages/Milvus.Client) | Milvus Vector Database | [Milvus](https://milvus.io/) | [Install Milvus C# SDK](https://milvus.io/docs/v2.2.x/install-csharp.md) |
-| [Qdrant.Client](https://www.nuget.org/packages/Qdrant.Client) | Qdrant Vector Database | [Qdrant](https://qdrant.tech) | [Qdrant .NET SDK](https://github.com/qdrant/qdrant-dotnet) |
+[!INCLUDE [vector-databases](includes/vector-databases.md)]
 
 ## Other options
 

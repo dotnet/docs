@@ -31,7 +31,7 @@ jobs:
     steps:
     # Checkout the repository for the PR
     - name: Harden Runner
-      uses: step-security/harden-runner@17d0e2bd7d51742c71671bd19fa12bdc9d40a3d6 # v2.8.1
+      uses: step-security/harden-runner@0d381219ddf674d61a7572ddd19d7941e271515c # v2.9.0
       with:
         egress-policy: audit
 
@@ -60,5 +60,7 @@ jobs:
     - name: Run snippets 5000 for PR
       env:
         GitHubKey: ${{ secrets.GITHUB_TOKEN }}
+        ExtensionsCodeTriggers: .cs;.vb;.fs;.xaml;.razor;.cshtml;.vbhtml;.sln;.csproj;.fsproj;.vbproj;.proj
+        ExtensionsProjects: .sln;.csproj;.fsproj;.vbproj;.proj
       run: |
         dotnet run --project docs-tools/snippets5000/Snippets5000/Snippets5000.csproj -- --sourcepath "${{ github.workspace }}" --pullrequest ${{ github.event.number }} --owner ${{ github.repository_owner }} --repo ${{ github.event.repository.name }}

@@ -56,11 +56,19 @@ By default, VSTest is used to run `Microsoft.Testing.Platform` tests. You can en
 </Project>
 ```
 
-In this mode, additional parameters to the run aren't provided directly through the command line. They need to be provided as an MSBuild property named `TestingPlatformCommandLineArguments`:
+In this mode, you can supply extra parameters that will be utilized to call the testing application as follows:
 
-```dotnetcli
-dotnet test -p:TestingPlatformCommandLineArguments=" --minimum-expected-tests 10 "
-```
+1. Beginning with `Microsoft.Testing.Platform` version 1.4 (included with MSTest version 3.6), options can be added after the double dash `--`:
+
+    ```dotnetcli
+    dotnet test -- --minimum-expected-tests 10
+    ```
+
+1. By using the `TestingPlatformCommandLineArguments` MSBuild property:
+
+    ```dotnetcli
+    dotnet test -p:TestingPlatformCommandLineArguments=" --minimum-expected-tests 10 "
+    ```
 
 ## Additional MSBuild options
 

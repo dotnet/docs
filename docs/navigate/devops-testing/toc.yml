@@ -63,18 +63,36 @@ items:
         items:
           - name: Overview
             href: ../../core/testing/unit-testing-mstest-intro.md
-          - name: C# unit testing
-            href: ../../core/testing/unit-testing-with-mstest.md
-          - name: F# unit testing
-            href: ../../core/testing/unit-testing-fsharp-with-mstest.md
-          - name: VB unit testing
-            href: ../../core/testing/unit-testing-visual-basic-with-mstest.md
-          - name: MSTest SDK
-            href: ../../core/testing/unit-testing-mstest-sdk.md
-          - name: MSTest runner
-            href: ../../core/testing/unit-testing-mstest-runner-intro.md
-          - name: Configure MSTest
-            href: ../../core/testing/unit-testing-mstest-configure.md
+          - name: Getting started
+            items:
+              - name: Overview
+                href: ../../core/testing/unit-testing-mstest-getting-started.md
+              - name: MSTest SDK
+                href: ../../core/testing/unit-testing-mstest-sdk.md
+          - name: Writing tests
+            items:
+              - name: Overview
+                href: ../../core/testing/unit-testing-mstest-writing-tests.md
+              - name: Examples
+                items:
+                - name: C# example
+                  href: ../../core/testing/unit-testing-with-mstest.md
+                - name: F# example
+                  href: ../../core/testing/unit-testing-fsharp-with-mstest.md
+                - name: VB example
+                  href: ../../core/testing/unit-testing-visual-basic-with-mstest.md
+              - name: Attributes
+                href: ../../core/testing/unit-testing-mstest-writing-tests-attributes.md
+              - name: Assertions
+                href: ../../core/testing/unit-testing-mstest-writing-tests-assertions.md
+          - name: Running tests
+            items:
+              - name: Overview
+                href: ../../core/testing/unit-testing-mstest-running-tests.md
+              - name: MSTest runner
+                href: ../../core/testing/unit-testing-mstest-runner-intro.md
+              - name: Configure MSTest
+                href: ../../core/testing/unit-testing-mstest-configure.md
           - name: Code analysis
             items:
               - name: Overview

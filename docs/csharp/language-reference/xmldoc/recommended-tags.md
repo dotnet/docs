@@ -256,7 +256,19 @@ The `<para>` tag is for use inside a tag, such as [\<summary>](#summary), [\<rem
 </list>
 ```
 
-The `<listheader>` block is used to define the heading row of either a table or definition list. When defining a table, you only need to supply an entry for `term` in the heading. Each item in the list is specified with an `<item>` block. When creating a definition list, you'll need to specify both `term` and `description`. However, for a table, bulleted list, or numbered list, you only need to supply an entry for `description`. A list or table can have as many `<item>` blocks as needed.
+The `<listheader>` block is used to define the heading row of either a table or definition list.
+
+When defining a table:
+
+* You only need to supply an entry for `term` in the heading.
+* Each item in the list is specified with an `<item>` block. For each `item`, you will only need to supply an entry for `description`.
+
+When creating a definition list:
+
+* You must supply an entry for `term` in the heading.
+* Each item in the list is specified with an `<item>` block. Each `item` must contain both a `term` and `description`.
+
+A list or table can have as many `<item>` blocks as needed.
 
 ### \<c>
 

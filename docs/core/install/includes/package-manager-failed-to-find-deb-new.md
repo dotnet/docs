@@ -7,7 +7,7 @@ ms.custom: linux-related-content
 ---
 
 ```bash
-# Define the OS version, name, and codename
+# Get OS version info which adds the $ID and $VERSION_ID variables
 source /etc/os-release
 
 # Download the Microsoft keys

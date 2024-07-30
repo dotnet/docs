@@ -1,7 +1,7 @@
 ---
 title: What's new in C# 13
 description: Get an overview of the new features in C# 13. Follow the release of new preview features as .NET 9 and C# 13 previews are released.
-ms.date: 05/17/2024
+ms.date: 07/26/2024
 ms.topic: whats-new
 ---
 # What's new in C# 13
@@ -14,6 +14,8 @@ C# 13 includes the following new features. You can try these features using the 
 - [Method group natural type improvements](#method-group-natural-type)
 - [Implicit indexer access in object initializers](#implicit-index-access)
 - [Enable `ref` locals and `unsafe` contexts in iterators and async methods](#ref-and-unsafe-in-iterators-and-async-methods)
+- [Enable `ref struct` types to implement interfaces](#ref-struct-interfaces).
+- [Allow ref struct types](#allows-ref-struct) as arguments for type parameters in generics.
 
 C# 13 is supported on **.NET 9**. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
 
@@ -43,7 +45,7 @@ You can use `\e` as a [character literal](~/_csharpstandard/standard/lexical-str
 
 ## Method group natural type
 
-This feature makes small optimizations to overload resolution involving method groups. The previous behavior was for the compiler to construct the full set of candidate methods for a method group. If a natural type was needed, the natural type was determined from the full set of candidate methods.
+This feature makes small optimizations to overload resolution involving method groups. A *method groups* is a method and all overloads with the same name. The previous behavior was for the compiler to construct the full set of candidate methods for a method group. If a natural type was needed, the natural type was determined from the full set of candidate methods.
 
 The new behavior is to prune the set of candidate methods at each scope, removing those candidate methods that aren't applicable. Typically, the removed methods are generic methods with the wrong arity, or constraints that aren't satisfied. The process continues to the next outer scope only if no candidate methods are found. This process more closely follows the general algorithm for overload resolution. If all candidate methods found at a given scope don't match, the method group doesn't have a natural type.
 
@@ -83,6 +85,16 @@ In C# 13, `async` methods can declare `ref` local variables, or local variables 
 This relaxed restriction enables the compiler to allow verifiably safe use of `ref` local variables and `ref struct` types in more places. You can safely use types like <xref:System.ReadOnlySpan%601?displayProperty=nameWithType> in these methods. The compiler tells you if you violate safety rules.
 
 In the same fashion, C# 13 allows `unsafe` contexts in iterator methods. However, all `yield return` and `yield break` statements must be in safe contexts.
+
+## `ref struct` interfaces
+
+Prior to C# 13, `ref struct` types weren't allowed to implement interfaces. Beginning with C# 13, they can. To ensure ref safety rules, a `ref struct` type can't be converted to an interface type. That is a boxing conversion, and could violate ref safety. Learn more in the updates on [`ref struct` types](../language-reference/builtin-types/ref-struct.md#restrictions-for-ref-struct-types-that-implement-an-interface).
+
+## `allows ref struct`
+
+Prior to C# 13, `ref struct` types couldn't be declared as the type argument for a generic type or method. Now, generic type declarations can add an anti-constraint, `allows ref struct`. This anti-constraint declares that the type argument supplied for that type parameter can be a `ref struct` type. The compiler enforces ref safety rules on all instances of that type parameter.
+
+This enables types such as <xref:System.Span%601?displayProperty=nameWithType> and <xref:System.ReadOnlySpan%601?displayProperty=nameWithType> to be used with generic algorithms, where applicable. You can learn more in the updates for [`where`](../language-reference/keywords/where-generic-type-constraint.md) and the programming guide article on [generic constraints](../programming-guide/generics/constraints-on-type-parameters.md).
 
 ## See also
 

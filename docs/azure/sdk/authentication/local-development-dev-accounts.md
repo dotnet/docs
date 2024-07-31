@@ -122,7 +122,7 @@ For information on assigning permissions at the resource or subscription level u
 
 Next you need to sign in to Azure using one of several .NET tooling options. The account you authenticate should also exist in the Microsoft Entra group you created and configured earlier.
 
-### [Visual Studio](#tab/sign-in-visual-studio)
+### [Visual Studio](#tab/visual-studio)
 
 On the top menu of Visual Studio, navigate to **Tools** > **Options** to open the options dialog. In the search bar in the upper left, type *Azure* to filter the options. Under the **Azure Service Authentication**, choose **Account Selection**.
 

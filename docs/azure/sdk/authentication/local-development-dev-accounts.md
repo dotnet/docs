@@ -3,7 +3,7 @@ title: Authenticate .NET apps to Azure services during local development using d
 description: This article describes how to authenticate your application to Azure services when using the Azure SDK for .NET during local development using developer accounts.
 ms.topic: how-to
 ms.custom: devx-track-dotnet, engagement-fy23, devx-track-azurecli
-ms.date: 2/28/2023
+ms.date: 07/31/2024
 ---
 
 # Authenticate .NET apps to Azure services during local development using developer accounts
@@ -130,28 +130,25 @@ Select the drop-down menu under **Choose an account** and choose to add a Micros
 
 :::image type="content" source="../media/visual-studio-sign-in.png" alt-text="A screenshot showing how to sign in to Azure using Visual Studio.":::
 
-### [VS Code Azure Tools extension](#tab/sign-in-vscode)
+### [Azure CLI](#tab/azure-cli)
 
-For an app to use the developer credentials from VS Code, the [VS Code Azure Tools extension must be installed](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack) in VS Code.
-
-> [!div class="nextstepaction"]
-> [Install the Azure Tools extensions for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack)
-
-On the left-hand panel, you'll see an Azure icon. Select this icon, and a control panel for Azure services will appear. Choose **Sign in to Azure...** under any service to complete the authentication process for the Azure tools in Visual Studio Code.
-
-:::image type="content" source="../media/vs-code-azure-login-small.png" alt-text="Screenshot of the Visual Studio Code showing how to sign-in the Azure tools to Azure." lightbox="../media/vs-code-azure-login.png":::
-
-### [Azure CLI](#tab/sign-in-azure-cli)
-
-Open a terminal on your developer workstation and sign-in to Azure from the [Azure CLI](/cli/azure/what-is-azure-cli):
+Open a terminal on your developer workstation and sign in to Azure from the [Azure CLI](/cli/azure/what-is-azure-cli):
 
 ```azurecli
 az login
 ```
 
-### [Azure PowerShell](#tab/sign-in-azure-powershell)
+### [Azure Developer CLI](#tab/azure-developer-cli)
 
-Open a terminal on your developer workstation and sign-in to Azure from [Azure PowerShell](/powershell/azure/what-is-azure-powershell):
+Open a terminal on your developer workstation and sign in to Azure from the [Azure Developer CLI](/azure/developer/azure-developer-cli/overview):
+
+```azdeveloper
+azd auth login
+```
+
+### [Azure PowerShell](#tab/azure-powershell)
+
+Open a terminal on your developer workstation and sign in to Azure from [Azure PowerShell](/powershell/azure/what-is-azure-powershell):
 
 ```azurepowershell
 Connect-AzAccount

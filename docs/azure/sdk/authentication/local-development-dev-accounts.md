@@ -118,17 +118,20 @@ For information on assigning permissions at the resource or subscription level u
 
 ---
 
-## 3 - Sign-in to Azure using .NET tooling
+## 3 - Sign in to Azure using developer tooling
 
-Next you need to sign in to Azure using one of several .NET tooling options. The account you authenticate should also exist in the Microsoft Entra group you created and configured earlier.
+Next you need to sign in to Azure using one of several developer tooling options. The account you authenticate should also exist in the Microsoft Entra group you created and configured earlier.
 
 ### [Visual Studio](#tab/visual-studio)
 
-On the top menu of Visual Studio, navigate to **Tools** > **Options** to open the options dialog. In the search bar in the upper left, type *Azure* to filter the options. Under the **Azure Service Authentication**, choose **Account Selection**.
+1. Navigate to **Tools** > **Options** to open the options dialog.
+1. In the **Search Options** box at the top, type *Azure* to filter the available options.
+1. Under **Azure Service Authentication**, choose **Account Selection**.
+1. Select the drop-down menu under **Choose an account** and choose to add a Microsoft Account. A window will open prompting you to pick an account. Enter the credentials for your desired Azure account, and then select the confirmation.
 
-Select the drop-down menu under **Choose an account** and choose to add a Microsoft Account. A window will open prompting you to pick an account. Enter the credentials for your desired Azure account, and then select the confirmation.
+    :::image type="content" source="../media/visual-studio-sign-in.png" alt-text="A screenshot showing how to sign in to Azure using Visual Studio.":::
 
-:::image type="content" source="../media/visual-studio-sign-in.png" alt-text="A screenshot showing how to sign in to Azure using Visual Studio.":::
+1. Select **OK** to close the options dialog.
 
 ### [Azure CLI](#tab/azure-cli)
 

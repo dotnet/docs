@@ -8,7 +8,7 @@ ms.date: 07/30/2024
 
 The existing [MSBuild documentation](/visualstudio/msbuild/common-msbuild-project-properties) says that specifying `DebugSymbols=false` on the command line means that program database (*.pdb*) files aren't generated. However, that wasn't true before .NET 8. The behavior has been updated such that setting `DebugSymbols` to `false` now suppresses PDB generation by changing `DebugType` to `None`.
 
-If you currently have a script that includes `-p:DebugSymbols=false`, you might expect PDBs to be created. If you upgrade to .NET 8 or a later version, that behavior will change.
+If you currently have a script where you expect PDBs to be created, and the behavior changes when you upgrade to .NET 8 or a later version, check if the script includes `-p:DebugSymbols=false`.
 
 ## Previous behavior
 

@@ -1,7 +1,7 @@
 ---
 title: "Strings"
 description: Learn about strings in C# programming. See information on declaring and initializing strings, the immutability of string objects, and string escape sequences.
-ms.date: 03/15/2024
+ms.date: 07/31/2024
 helpviewer_keywords:
   - "C# language, strings"
   - "strings [C#]"
@@ -13,7 +13,7 @@ A string is an object of type <xref:System.String> whose value is text. Internal
 
 ## string vs. System.String
 
-In C#, the `string` keyword is an alias for <xref:System.String>; therefore, `String` and `string` are equivalent. It's recommended to use the provided alias `string` as it works even without `using System;`. The `String` class provides many methods for safely creating, manipulating, and comparing strings. In addition, the C# language overloads some operators to simplify common string operations. For more information about the keyword, see [string](../../language-reference/builtin-types/reference-types.md). For more information about the type and its methods, see <xref:System.String>.
+In C#, the `string` keyword is an alias for <xref:System.String>; therefore, `String` and `string` are equivalent. Use the provided alias `string` as it works even without `using System;`. The `String` class provides many methods for safely creating, manipulating, and comparing strings. In addition, the C# language overloads some operators to simplify common string operations. For more information about the keyword, see [string](../../language-reference/builtin-types/reference-types.md). For more information about the type and its methods, see <xref:System.String>.
 
 ## Declaring and initializing strings
 
@@ -23,7 +23,7 @@ You can declare and initialize strings in various ways, as shown in the followin
 
 You don't use the [new](../../language-reference/operators/new-operator.md) operator to create a string object except when initializing the string with an array of chars.
 
-Initialize a string with the <xref:System.String.Empty> constant value to create a new <xref:System.String> object whose string is of zero length. The string literal representation of a zero-length string is "". By initializing strings with the <xref:System.String.Empty> value instead of [null](../../language-reference/keywords/null.md), you can reduce the chances of a <xref:System.NullReferenceException> occurring. Use the static <xref:System.String.IsNullOrEmpty%28System.String%29> method to verify the value of a string before you try to access it.
+Initialize a string with the <xref:System.String.Empty> constant value to create a new <xref:System.String> object whose string is of zero length. The string literal representation of a zero-length string is `""`. By initializing strings with the <xref:System.String.Empty> value instead of [null](../../language-reference/keywords/null.md), you can reduce the chances of a <xref:System.NullReferenceException> occurring. Use the static <xref:System.String.IsNullOrEmpty%28System.String%29> method to verify the value of a string before you try to access it.
 
 ## Immutability of strings
 
@@ -53,7 +53,7 @@ For more information about how to create new strings that are based on modificat
 
 Beginning with C# 11, you can use *raw string literals* to more easily create strings that are multi-line, or use any characters requiring escape sequences. *Raw string literals* remove the need to ever use escape sequences. You can write the string, including whitespace formatting, how you want it to appear in output. A *raw string literal*:
 
-- Starts and ends with a sequence of at least three double quote characters (`"""`). You're allowed more than three consecutive characters to start and end the sequence in order to support string literals that contain three (or more) repeated quote characters.
+- Starts and ends with a sequence of at least three double quote characters (`"""`). You can use more than three consecutive characters to start and end the sequence. You can embed string literals that contain three (or more) repeated quote characters.
 - Single line raw string literals require the opening and closing quote characters on the same line.
 - Multi-line raw string literals require both opening and closing quote characters on their own line.
 - In multi-line raw string literals, any whitespace to the left of the closing quotes is removed from all lines of the raw string literal.
@@ -70,11 +70,9 @@ The following examples demonstrate the compiler errors reported based on these r
 
 The first two examples are invalid because multiline raw string literals require the opening and closing quote sequence on its own line. The third example is invalid because the text is outdented from the closing quote sequence.
 
-You should consider raw string literals when you're generating text that includes characters that require [escape sequences](#string-escape-sequences) when using quoted string literals or verbatim string literals. Raw string literals are easier for you and others to read because it will more closely resemble the output text. For example, consider the following code that includes a string of formatted JSON:
+You should consider raw string literals when you're generating text that includes characters that require [escape sequences](#string-escape-sequences) when using quoted string literals or verbatim string literals. Raw string literals are easier for you and others to read because it more closely resembles the output text. For example, consider the following code that includes a string of formatted JSON:
 
 :::code language="csharp" source="./snippets/StringLiterals.cs" id="JSONString":::
-
-Compare that text with the equivalent text in the sample on [JSON deserialization](../../../standard/serialization/system-text-json/deserialization.md), which doesn't make use of this new feature.
 
 ### String escape sequences
 
@@ -108,7 +106,7 @@ A format string is a string whose contents are determined dynamically at run tim
 
 ### String interpolation
 
-[*Interpolated strings*](../../language-reference/tokens/interpolated.md) are identified by the `$` special character and include interpolated expressions in braces. If you're new to string interpolation, see the [String interpolation - C# interactive tutorial](../../tutorials/exploration/interpolated-strings.yml) for a quick overview.
+You declare [*Interpolated strings*](../../language-reference/tokens/interpolated.md) with the `$` special character. An interpolated string includes interpolated expressions in braces. If you're new to string interpolation, see the [String interpolation - C# interactive tutorial](../../tutorials/exploration/interpolated-strings.yml) for a quick overview.
 
 Use string interpolation to improve the readability and maintainability of your code. String interpolation achieves the same results as the `String.Format` method, but improves ease of use and inline clarity.
 
@@ -130,7 +128,7 @@ To interpret escape sequences literally, use a [verbatim](../../language-referen
 
 ### Composite formatting
 
-The <xref:System.String.Format%2A?displayProperty=nameWithType> utilizes placeholders in braces to create a format string. This example results in similar output to the string interpolation method used above.
+The <xref:System.String.Format%2A?displayProperty=nameWithType> utilizes placeholders in braces to create a format string. This example results in similar output to the string interpolation method used in the preceding sample.
 
 :::code language="csharp" source="./snippets/StringInterpolation.cs" id="StringFormat":::
 

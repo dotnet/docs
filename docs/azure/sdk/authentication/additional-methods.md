@@ -55,7 +55,7 @@ This method authenticates an application using previous-collected credentials an
 
 > [!IMPORTANT]
 > This method of authentication is discouraged because it's less secure than other flows. Also, this method isn't interactive and is therefore **incompatible with any form of multi-factor authentication or consent prompting.** The application must already have consent from the user or a directory administrator.
-> 
+>
 > Furthermore, this method authenticates only work and school accounts; Microsoft accounts aren't supported. For more information, see [Sign up your organization to use Microsoft Entra ID](/entra/fundamentals/sign-up-organization).
 
 ```csharp

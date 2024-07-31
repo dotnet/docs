@@ -9,20 +9,21 @@ AI applications often use data vector databases and services to improve relevanc
 
 Semantic Kernel provides connectors for the following vector databases and services:
 
-- [Vector Database in Azure Cosmos DB for NoSQL](https://github.com/microsoft/semantic-kernel/tree/main/dotnet/src/Connectors/Connectors.Memory.AzureCosmosDBNoSQL)
-- [Vector Database in vCore-based Azure Cosmos DB for MongoDB](https://github.com/microsoft/semantic-kernel/tree/main/dotnet/src/Connectors/Connectors.Memory.AzureCosmosDBMongoDB)
-- [Azure AI Search](https://github.com/microsoft/semantic-kernel/tree/main/dotnet/src/Connectors/Connectors.Memory.AzureAISearch)
-- [Azure PostgreSQL Server](https://github.com/microsoft/semantic-kernel/tree/main/dotnet/src/Connectors/Connectors.Memory.Postgres)
-- [Azure SQL Database](https://github.com/kbeaugrand/SemanticKernel.Connectors.Memory.SqlServer)
-- [Chroma](https://github.com/microsoft/semantic-kernel/tree/main/dotnet/src/Connectors/Connectors.Memory.Chroma)
-- [DuckDB](https://github.com/microsoft/semantic-kernel/tree/main/dotnet/src/Connectors/Connectors.Memory.DuckDB)
-- [Milvus](https://github.com/microsoft/semantic-kernel/tree/main/dotnet/src/Connectors/Connectors.Memory.Milvus)
-- [MongoDB Atlas Vector Search](https://github.com/microsoft/semantic-kernel/tree/main/dotnet/src/Connectors/Connectors.Memory.MongoDB)
-- [Pinecone](https://github.com/microsoft/semantic-kernel/tree/main/dotnet/src/Connectors/Connectors.Memory.Pinecone)
-- [Postgres](https://github.com/microsoft/semantic-kernel/tree/main/dotnet/src/Connectors/Connectors.Memory.Postgres)
-- [Qdrant](https://github.com/microsoft/semantic-kernel/tree/main/dotnet/src/Connectors/Connectors.Memory.Qdrant)
-- [Redis](https://github.com/microsoft/semantic-kernel/tree/main/dotnet/src/Connectors/Connectors.Memory.Redis)
-- [Sqlite](https://github.com/microsoft/semantic-kernel/tree/main/dotnet/src/Connectors/Connectors.Memory.Sqlite)
-- [Weaviate](https://github.com/microsoft/semantic-kernel/tree/main/dotnet/src/Connectors/Connectors.Memory.Weaviate)
+|Vector service                  | Semantic Kernel connector                                                                                                                      | .NET SDK                                                                                   |
+|------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
+|Azure AI Search               | [Microsoft.SemanticKernel.Connectors.AzureAISearch](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.AzureAISearch)        | [Azure.Search.Documents](https://www.nuget.org/packages/Azure.Search.Documents/)        |
+|Azure Cosmos DB for NoSQL     | [Microsoft.SemanticKernel.Connectors.AzureCosmosDBNoSQL](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.AzureAISearch)        | [Microsoft.Azure.Cosmos](https://www.nuget.org/packages/Microsoft.Azure.Cosmos/)        |
+|Azure Cosmos DB for MongoDB   | [Microsoft.SemanticKernel.Connectors.AzureCosmosDBMongoDB](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.AzureAISearch)        | [MongoDb.Driver](https://www.nuget.org/packages/MongoDB.Driver)        |
+|Azure PostgreSQL Server       | [Microsoft.SemanticKernel.Connectors.Postgres](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.Postgres)                  | [Npgsql](https://www.nuget.org/packages/Npgsql/)        | 
+|Azure SQL Database            | [Microsoft.SemanticKernel.Connectors.SqlServer](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.SqlServer)                | [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient)        |
+|Chroma                        | [Microsoft.SemanticKernel.Connectors.Chroma](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.Chroma)                        | NA        |
+|DuckDB                        | [Microsoft.SemanticKernel.Connectors.DuckDB](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.DuckDB)                        | [DuckDB.NET.Data.Full](https://www.nuget.org/packages/DuckDB.NET.Data.Full)        |
+|Milvus                        | [Microsoft.SemanticKernel.Connectors.Milvus](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.Milvus)                    | [Milvus.Client](https://www.nuget.org/packages/Milvus.Client)         |
+|MongoDB Atlas Vector Search   | [Microsoft.SemanticKernel.Connectors.MongoDB](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.MongoDB)                 | NA       |
+|Pinecone                      | [Microsoft.SemanticKernel.Connectors.Pinecone](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.Pinecone)            | [REST API](https://docs.pinecone.io/reference/api/introduction)       |
+|Postgres                      | [Microsoft.SemanticKernel.Connectors.Postgres](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.Postgres)            | [Npgsql](https://www.nuget.org/packages/Npgsql/)        |
+|Qdrant                        | [Microsoft.SemanticKernel.Connectors.Qdrant](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.Qdrant)               | [Qdrant.Client](https://www.nuget.org/packages/Qdrant.Client)         |
+|Redis                         | [Microsoft.SemanticKernel.Connectors.Redis](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.Redis)                    |  [StackExchange.Redis](https://www.nuget.org/packages/StackExchange.Redis)       |
+|Weaviate                      | [Microsoft.SemanticKernel.Connectors.Weaviate](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.Weaviate)            | [REST API](https://weaviate.io/developers/weaviate/api/rest)       |
 
  Visit the documentation for each respective service to discover .NET SDK and API support.

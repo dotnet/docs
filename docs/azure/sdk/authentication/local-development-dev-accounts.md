@@ -26,6 +26,17 @@ Since there are almost always multiple developers who work on an application, it
 
 If you have an existing Microsoft Entra group for your development team, you can use that group. Otherwise, complete the following steps to create a Microsoft Entra group.
 
+### [Azure portal](#tab/azure-portal)
+
+| Instructions    | Screenshot |
+|:----------------|-----------:|
+| [!INCLUDE [Create app group step 1](<../includes/local-dev-accounts-app-group-azure-portal-1.md>)] | :::image type="content" source="../media/local-dev-accounts-app-group-azure-portal-1-240px.png" alt-text="A screenshot showing how to use the top search bar in the Azure portal to search for and navigate to the Microsoft Entra ID page." lightbox="../media/local-dev-accounts-app-group-azure-portal-1.png"::: |
+| [!INCLUDE [Create app group step 2](<../includes/local-dev-accounts-app-group-azure-portal-2.md>)] | :::image type="content" source="../media/local-dev-accounts-app-group-azure-portal-2-240px.png" alt-text="A screenshot showing the location of the Groups menu item in the left-hand menu of the Microsoft Entra ID Default Directory page." lightbox="../media/local-dev-accounts-app-group-azure-portal-2.png"::: |
+| [!INCLUDE [Create app group step 3](<../includes/local-dev-accounts-app-group-azure-portal-3.md>)] | :::image type="content" source="../media/local-dev-accounts-app-group-azure-portal-3-240px.png" alt-text="A screenshot showing the location of the New Group button in the All groups page." lightbox="../media/local-dev-accounts-app-group-azure-portal-3.png"::: |
+| [!INCLUDE [Create app group step 4](<../includes/local-dev-accounts-app-group-azure-portal-4.md>)] | :::image type="content" source="../media/local-dev-accounts-app-group-azure-portal-4-240px.png" alt-text="A screenshot showing how to create a new Microsoft Entra group. The location of the link to select to add members to this group is highlighted." lightbox="../media/local-dev-accounts-app-group-azure-portal-4.png"::: |
+| [!INCLUDE [Create app group step 5](<../includes/local-dev-accounts-app-group-azure-portal-5.md>)] | :::image type="content" source="../media/local-dev-accounts-app-group-azure-portal-5-240px.png" alt-text="A screenshot of the Add members dialog box showing how to select developer accounts to be included in the group." lightbox="../media/local-dev-accounts-app-group-azure-portal-5.png"::: |
+| [!INCLUDE [Create app group step 6](<../includes/local-dev-accounts-app-group-azure-portal-6.md>)] | :::image type="content" source="../media/local-dev-accounts-app-group-azure-portal-6-240px.png" alt-text="A screenshot of the New Group page showing how to complete the process by selecting the Create button." lightbox="../media/local-dev-accounts-app-group-azure-portal-6.png"::: |
+
 ### [Azure CLI](#tab/azure-cli)
 
 The [az ad group create](/cli/azure/ad/group#az-ad-group-create) command is used to create groups in Microsoft Entra ID. The `--display-name` and `--mail-nickname` parameters are required. The name given to the group should be based on the name of the application. It's also useful to include a phrase like 'local-dev' in the name of the group to indicate the purpose of the group.
@@ -55,17 +66,6 @@ az ad group member add \
     --group <group-name> \
     --member-id <object-id>
 ```
-
-### [Azure portal](#tab/azure-portal)
-
-| Instructions    | Screenshot |
-|:----------------|-----------:|
-| [!INCLUDE [Create app group step 1](<../includes/local-dev-accounts-app-group-azure-portal-1.md>)] | :::image type="content" source="../media/local-dev-accounts-app-group-azure-portal-1-240px.png" alt-text="A screenshot showing how to use the top search bar in the Azure portal to search for and navigate to the Microsoft Entra ID page." lightbox="../media/local-dev-accounts-app-group-azure-portal-1.png"::: |
-| [!INCLUDE [Create app group step 2](<../includes/local-dev-accounts-app-group-azure-portal-2.md>)] | :::image type="content" source="../media/local-dev-accounts-app-group-azure-portal-2-240px.png" alt-text="A screenshot showing the location of the Groups menu item in the left-hand menu of the Microsoft Entra ID Default Directory page." lightbox="../media/local-dev-accounts-app-group-azure-portal-2.png"::: |
-| [!INCLUDE [Create app group step 3](<../includes/local-dev-accounts-app-group-azure-portal-3.md>)] | :::image type="content" source="../media/local-dev-accounts-app-group-azure-portal-3-240px.png" alt-text="A screenshot showing the location of the New Group button in the All groups page." lightbox="../media/local-dev-accounts-app-group-azure-portal-3.png"::: |
-| [!INCLUDE [Create app group step 4](<../includes/local-dev-accounts-app-group-azure-portal-4.md>)] | :::image type="content" source="../media/local-dev-accounts-app-group-azure-portal-4-240px.png" alt-text="A screenshot showing how to create a new Microsoft Entra group. The location of the link to select to add members to this group is highlighted." lightbox="../media/local-dev-accounts-app-group-azure-portal-4.png"::: |
-| [!INCLUDE [Create app group step 5](<../includes/local-dev-accounts-app-group-azure-portal-5.md>)] | :::image type="content" source="../media/local-dev-accounts-app-group-azure-portal-5-240px.png" alt-text="A screenshot of the Add members dialog box showing how to select developer accounts to be included in the group." lightbox="../media/local-dev-accounts-app-group-azure-portal-5.png"::: |
-| [!INCLUDE [Create app group step 6](<../includes/local-dev-accounts-app-group-azure-portal-6.md>)] | :::image type="content" source="../media/local-dev-accounts-app-group-azure-portal-6-240px.png" alt-text="A screenshot of the New Group page showing how to complete the process by selecting the Create button." lightbox="../media/local-dev-accounts-app-group-azure-portal-6.png"::: |
 
 ---
 

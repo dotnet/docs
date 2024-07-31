@@ -97,12 +97,12 @@ public class Singleton
 
     private Singleton()
     { 
-        Console.WriteLine("Executes before static constructor.")
+        Console.WriteLine("Executes before static constructor.");
     }
 
     static Singleton()
     { 
-        Console.WriteLine("Executes after instance constructor.")
+        Console.WriteLine("Executes after instance constructor.");
     }
 
     public static Singleton Instance => instance;

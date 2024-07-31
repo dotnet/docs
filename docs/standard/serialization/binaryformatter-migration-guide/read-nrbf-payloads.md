@@ -1,5 +1,5 @@
 ---
-title: "BinaryFormatter Migration Guide: Reading NRBF Payloads"
+title: "BinaryFormatter Migration Guide: Read NRBF Payloads"
 description: "Reading the payloads that were created using BinaryFormatter."
 ms.date: 5/31/2024
 no-loc: [BinaryFormatter, Serialization]

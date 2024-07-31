@@ -3,7 +3,7 @@ title: Display text on an LCD
 description: Learn how to display characters on a liquid crystal display with the .NET IoT Libraries.
 author: camsoper
 ms.author: casoper
-ms.date: 12/05/2022
+ms.date: 07/31/2024
 ms.topic: tutorial
 ---
 <!--markdownlint-disable DOCSMD011 -->

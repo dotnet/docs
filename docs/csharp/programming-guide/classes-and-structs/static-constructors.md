@@ -1,7 +1,7 @@
 ---
 title: "Static Constructors"
 description: A static constructor in C# initializes static data or performs an action done only once. It runs before the first instance is created or static members are referenced.
-ms.date: 10/24/2023
+ms.date: 07/31/2024
 helpviewer_keywords: 
   - "static constructors [C#]"
   - "constructors [C#], static"
@@ -19,6 +19,11 @@ There are several actions that are part of static initialization. Those actions 
 1. *Base type static field initializers run*. Static field initializers starting with the direct base through each base type to <xref:System.Object?displayProperty=fullName>.
 1. *Base static constructors run*. Any static constructors, starting with <xref:System.Object.%23ctor%2A?displayProperty=nameWithType> through each base class to the direct base class.
 1. *The static constructor runs*. The static constructor for the type runs.
+
+> [!IMPORTANT]
+> There is one important exception to the rule that a static constructor runs before any instance is created. If a static field initializer creates an instance of the type, that initializer runs (including the instance constructor) before the static constructor runs. This is most common in the *singleton pattern* as shown in the following example:
+>
+> :::code language="csharp" source="./snippets/static-constructors/Program.cs" id="Singleton":::
 
 A [module initializer](../../language-reference/attributes/general.md#moduleinitializer-attribute) can be an alternative to a static constructor. For more information, see the [specification for module initializers](~/_csharplang/proposals/csharp-9.0/module-initializers.md).
 
@@ -38,7 +43,7 @@ Static constructors have the following properties:
 - A field declared as `static readonly` may only be assigned as part of its declaration or in a static constructor. When an explicit static constructor isn't required, initialize static fields at declaration rather than through a static constructor for better runtime optimization.
 - The runtime calls a static constructor no more than once in a single application domain. That call is made in a locked region based on the specific type of the class. No additional locking mechanisms are needed in the body of a static constructor. To avoid the risk of deadlocks, don't block the current thread in static constructors and initializers. For example, don't wait on tasks, threads, wait handles or events, don't acquire locks, and don't execute blocking parallel operations such as parallel loops, `Parallel.Invoke` and Parallel LINQ queries.
 
-> [!Note]
+> [!NOTE]
 > Though not directly accessible, the presence of an explicit static constructor should be documented to assist with troubleshooting initialization exceptions.
 
 ### Usage

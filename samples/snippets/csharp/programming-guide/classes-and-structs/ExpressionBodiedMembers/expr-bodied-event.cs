@@ -27,7 +27,7 @@ public class ObservableNum(int _value)
 }
 // </Snippet1>
 
-public class Example
+public class ExpressionExample
 {
    public static void Main()
    {

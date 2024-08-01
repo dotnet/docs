@@ -1,0 +1,21 @@
+name: Stale issues
+description: Close needs-more-info issues that haven't had a response in 14 days
+resource: repository
+where:
+configuration:
+    resourceManagementConfiguration:
+        scheduledSearches:
+          - frequencies:
+            - daily:
+                time: 12:00
+            filters:
+              - isIssue
+              - isOpen
+              - hasLabel:
+                  label: needs-more-info
+              - noActivitySince:
+                  days: 14
+            actions:
+              - addReply:
+                  reply: This issue has been automatically closed due to no response from the original author. Feel free to reopen it if you have more information that can help us investigate the issue further.
+              - closeIssue

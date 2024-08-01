@@ -3,7 +3,7 @@ title: Dependency injection basics
 description: Learn how to use dependency injection (DI) in your .NET apps with this simple example. Follow along with this pragmatic guide to understand DI basics in C#.
 author: IEvangelist
 ms.author: dapine
-ms.date: 07/18/2024
+ms.date: 07/30/2024
 no-loc: [Transient, Scoped, Singleton, Example]
 ---
 
@@ -36,7 +36,7 @@ The abstractions for DI in .NET are defined in the [Microsoft.Extensions.Depende
 - <xref:System.IServiceProvider>: Defines a mechanism for retrieving a service object.
 - <xref:Microsoft.Extensions.DependencyInjection.ServiceDescriptor>: Describes a service with its service type, implementation, and lifetime.
 
-In .NET, DI is managed by adding services and configuring them in an `IServiceCollection`. After services are registered, as `IServiceProvider` instance is built by calling the <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider%2A> method. The `IServiceProvider` acts as a container of all the registered services, and it's used to resolve services.
+In .NET, DI is managed by adding services and configuring them in an `IServiceCollection`. After services are registered, an `IServiceProvider` instance is built by calling the <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider%2A> method. The `IServiceProvider` acts as a container of all the registered services, and it's used to resolve services.
 
 ## Create example services
 

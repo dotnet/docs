@@ -31,7 +31,7 @@ You can enable managed identity to be used for an Azure resource using either th
 
 | Instructions    | Screenshot |
 |:----------------|-----------:|
-| [!INCLUDE [Enable managed identity step 1](<../includes/enable-managed-identity-azure-portal-1.md>)] | :::image type="content" source="../media/enable-managed-identity-azure-portal-1-240px.png" alt-text="A screenshot showing how to use the top search bar in the Azure portal to locate and navigate to a resource in Azure." lightbox="../media/enable-managed-identity-azure-portal-1.png"::: |
+| [!INCLUDE [Enable managed identity step 1](<../includes/enable-managed-identity-azure-portal-1.md>)] | :::image type="content" source="../media/enable-managed-identity-azure-portal-1-240px.png" alt-text="A screenshot showing how to use the top search bar in the Azure portal to locate and navigate to an Azure resource." lightbox="../media/enable-managed-identity-azure-portal-1.png"::: |
 | [!INCLUDE [Enable managed identity step 2](<../includes/enable-managed-identity-azure-portal-2.md>)] | :::image type="content" source="../media/enable-managed-identity-azure-portal-2-240px.png" alt-text="A screenshot showing the location of the Identity menu item in the left-hand menu for an Azure resource." lightbox="../media/enable-managed-identity-azure-portal-2.png"::: |
 | [!INCLUDE [Enable managed identity step 3](<../includes/enable-managed-identity-azure-portal-3.md>)] | :::image type="content" source="../media/enable-managed-identity-azure-portal-3-240px.png" alt-text="A screenshot showing how to enable managed identity for an Azure resource on the resource's Identity page." lightbox="../media/enable-managed-identity-azure-portal-3.png"::: |
 

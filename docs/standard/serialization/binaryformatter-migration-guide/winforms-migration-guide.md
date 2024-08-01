@@ -46,7 +46,7 @@ If your clipboard scenario does not involve the types above, `BinaryFormatter` w
 
 ## Drag/Drop
 
-If your drag/drop scenario involves types that are not intrinsically handled during serialization/deserialization, `BinaryFormatter` would be used when [`Control.DoDragDrop`](https://learn.microsoft.com/dotnet/api/system.windows.forms.control.dodragdrop) is called, and the item is dragged out of process and when `DataObject.GetData`(https://learn.microsoft.com/dotnet/api/system.windows.dataobject.getdata) is called to retrieve your type that has been dragged out of process. With the `BinaryFormatter` removal, developers will now see a string about `BinaryFormatter` being removed upon dropping the dragged item in another process when a drag operation starts with types that are not intrinsically handled.
+If your drag/drop scenario involves types that are not intrinsically handled during serialization/deserialization, `BinaryFormatter` would be used when [`Control.DoDragDrop`](https://learn.microsoft.com/dotnet/api/system.windows.forms.control.dodragdrop) is called, and the item is dragged out of process and when [`DataObject.GetData`](https://learn.microsoft.com/dotnet/api/system.windows.dataobject.getdata) is called to retrieve your type that has been dragged out of process. With the `BinaryFormatter` removal, developers will now see a string about `BinaryFormatter` being removed upon dropping the dragged item in another process when a drag operation starts with types that are not intrinsically handled.
 
 ## The WinForms Designer
 

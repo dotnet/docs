@@ -12,7 +12,14 @@ When creating cloud applications, developers need to debug and test applications
 
 :::image type="content" source="../media/local-dev-dev-accounts-overview.png" alt-text="A diagram showing an app running in local development using a developer tool identity to connect to Azure resources.":::
 
-For an app to authenticate to Azure during local development using the developer's Azure credentials, the developer must be signed-in to Azure from the VS Code Azure Tools extension, the Azure CLI, or Azure PowerShell.  The Azure SDK for .NET is able to detect that the developer is signed-in from one of these tools and then obtain the necessary credentials from the credentials cache to authenticate the app to Azure as the signed-in user.
+For an app to authenticate to Azure during local development using the developer's Azure credentials, the developer must be signed in to Azure from one of the following developer tools:
+
+- Visual Studio
+- Azure CLI
+- Azure Developer CLI
+- Azure PowerShell
+
+The Azure Identity library is able to detect that the developer is signed in from one of these tools. The library can then obtain the Microsoft Entra access token via the tool to authenticate the app to Azure as the signed-in user.
 
 This approach is easiest to set up for a development team since it takes advantage of the developers' existing Azure accounts. However, a developer's account will likely have more permissions than required by the application, therefore exceeding the permissions the app will run with in production. As an alternative, you can [create application service principals to use during local development](./local-development-service-principal.md) which can be scoped to have only the access needed by the app.
 
@@ -39,7 +46,7 @@ If you have an existing Microsoft Entra group for your development team, you can
 
 ### [Azure CLI](#tab/azure-cli)
 
-The [az ad group create](/cli/azure/ad/group#az-ad-group-create) command is used to create groups in Microsoft Entra ID. The `--display-name` and `--mail-nickname` parameters are required. The name given to the group should be based on the name of the application. It's also useful to include a phrase like 'local-dev' in the name of the group to indicate the purpose of the group.
+The [az ad group create](/cli/azure/ad/group#az-ad-group-create) command is used to create groups in Microsoft Entra ID. The `--display-name` and `--mail-nickname` parameters are required. The name given to the group should be based on the app's name. It's also useful to include a phrase like 'local-dev' in the group name to indicate the group's purpose.
 
 ```azurecli
 az ad group create \
@@ -50,7 +57,7 @@ az ad group create \
 
 Copy the value of the `id` property in the output of the command. This is the object ID for the group. You need it in later steps. You can also use the [az ad group show](/cli/azure/ad/group#az-ad-group-show) command to retrieve this property.
 
-To add members to the group, you need the object ID of the Azure user. Use the [az ad user list](/cli/azure/ad/sp#az-ad-user-list) to list the available service principals. The `--filter` parameter command accepts OData-style filters and can be used to filter the list on the display name of the user as shown. The `--query` parameter limits the output to columns of interest.
+To add members to the group, you need the object ID of the Azure user. Use the [az ad user list](/cli/azure/ad/sp#az-ad-user-list) command to list the available service principals. The `--filter` parameter command accepts OData-style filters and can be used to filter the list on the display name of the user as shown. The `--query` parameter limits the output to columns of interest.
 
 ```azurecli
 az ad user list \
@@ -59,7 +66,7 @@ az ad user list \
     --output table
 ```
 
-The [az ad group member add](/cli/azure/ad/group/member#az-ad-group-member-add) command can then be used to add members to groups:
+The [az ad group member add](/cli/azure/ad/group/member#az-ad-group-member-add) command can then be used to add members to a group:
 
 ```azurecli
 az ad group member add \
@@ -90,15 +97,16 @@ Next, you need to determine what roles (permissions) your app needs on what reso
 
 ### [Azure CLI](#tab/azure-cli)
 
-An application service principal is assigned a role in Azure using the [az role assignment create](/cli/azure/role/assignment) command.
+An application service principal is assigned a role in Azure using the [az role assignment create](/cli/azure/role/assignment) command:
 
 ```azurecli
-az role assignment create --assignee "{appId}" \
+az role assignment create \
+    --assignee "{appId}" \
     --role "{roleName}" \
     --resource-group "{resourceGroupName}"
 ```
 
-To get the role names that a service principal can be assigned to, use the [az role definition list](/cli/azure/role/definition#az-role-definition-list) command.
+To get the role names that a service principal can be assigned to, use the [az role definition list](/cli/azure/role/definition#az-role-definition-list) command:
 
 ```azurecli
 az role definition list \
@@ -106,10 +114,11 @@ az role definition list \
     --output table
 ```
 
-For example, to allow the application service principal with the appId of `00000000-0000-0000-0000-000000000000` read, write, and delete access to Azure Storage blob containers and data to all storage accounts in the *msdocs-dotnet-sdk-auth-example* resource group, you would assign the application service principal to the *Storage Blob Data Contributor* role using the following command.
+For example, to allow the application service principal with the appId of `00000000-0000-0000-0000-000000000000` read, write, and delete access to Azure Storage blob containers and data to all storage accounts in the *msdocs-dotnet-sdk-auth-example* resource group, you would assign the application service principal to the *Storage Blob Data Contributor* role using the following command:
 
 ```azurecli
-az role assignment create --assignee "00000000-0000-0000-0000-000000000000" \
+az role assignment create \
+    --assignee "00000000-0000-0000-0000-000000000000" \
     --role "Storage Blob Data Contributor" \
     --resource-group "msdocs-dotnet-sdk-auth-example"
 ```

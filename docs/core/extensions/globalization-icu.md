@@ -50,16 +50,16 @@ The following table shows which versions of .NET are capable of loading the ICU 
 
 ### Behavioral differences
 
-If you upgrade your app to target .NET 5 or later, you might see changes in your app even if you don't realize you're using globalization facilities. This section lists several behavioral changes you might see, but there are others too.
+If you upgrade your app to target .NET 5 or later, you might see changes in your app even if you don't realize you're using globalization facilities. The following section lists some behavioral changes you might experience.
 
-#### String Sorting and System.Globalization.CompareOptions
+#### String sorting and `System.Globalization.CompareOptions`
 
 `CompareOptions` is the options enumeration which can be passed to `String.Compare` to influence how two strings are compared.
 
 Comparing strings for equality and determining their sort order differs between NLS and ICU. In particular:
 
-- The default string sort order is different, so this will be apparent even if you do not use `CompareOptions` directly. When using ICU, the `None` default option performs the same as `StringSort`. `StringSort` sorts non-alphanumeric characters before alphanumeric ones (so "bill's" sorts before "bills", for example). To restore the previous `None` functionality, you must use the NLS-based implementation.
-- The default handling of ligature characters differs. Under NLS, ligatures and their non-ligature counterparts (for example, "oeuf" and "œuf") are considered equal, but this is not the case with ICU under .NET. This is because of a different collation strength between the two implementations. To restore the NLS behaviour when using ICU, you can use the `IgnoreNonSpace` `CompareOptions` value.
+- The default string sort order is different, so this will be apparent even if you don't use `CompareOptions` directly. When using ICU, the `None` default option performs the same as `StringSort`. `StringSort` sorts non-alphanumeric characters before alphanumeric ones (so "bill's" sorts before "bills", for example). To restore the previous `None` functionality, you must use the NLS-based implementation.
+- The default handling of ligature characters differs. Under NLS, ligatures and their non-ligature counterparts (for example, "oeuf" and "œuf") are considered equal, but this isn't the case with ICU in .NET. This is because of a different collation strength between the two implementations. To restore the NLS behavior when using ICU, use the `CompareOptions.IgnoreNonSpace` value.
 
 #### String.IndexOf
 

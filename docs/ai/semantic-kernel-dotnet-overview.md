@@ -10,7 +10,7 @@ ms.author: alexwolf
 
 # Semantic Kernel overview for .NET
 
-In this article, you explore [Semantic Kernel](/semantic-kernel/overview) core concepts and capabilities. You discover why Semantic Kernel is a powerful and recommended choice for working with AI in .NET applications, and you learn:
+In this article, you explore [Semantic Kernel](/semantic-kernel/overview) core concepts and capabilities. Semantic Kernel is a powerful and recommended choice for working with AI in .NET applications. In the sections ahead, you learn:
 
 - How to add semantic kernel to your project
 - Semantic Kernel core concepts

@@ -25,8 +25,8 @@ using Azure.Identity;
 using Azure.Storage.Blobs;
 
 var client = new BlobServiceClient(
-        new Uri("https://<storage-account-name>.blob.core.windows.net"),
-        new InteractiveBrowserCredential());
+    new Uri("https://<storage-account-name>.blob.core.windows.net"),
+    new InteractiveBrowserCredential());
 
 foreach (var blobItem in client.GetBlobContainers())
 {
@@ -51,7 +51,7 @@ Device code authentication in a development environment enables the application 
 
 ## Authentication with a username and password
 
-This method authenticates an application using previous-collected credentials and the [`UsernamePasswordCredential`](/dotnet/api/azure.identity.usernamepasswordcredential) object.
+This method authenticates an application using previously collected credentials and the [UsernamePasswordCredential](/dotnet/api/azure.identity.usernamepasswordcredential) object.
 
 > [!IMPORTANT]
 > This method of authentication is discouraged because it's less secure than other flows. Also, this method isn't interactive and is therefore **incompatible with any form of multi-factor authentication or consent prompting.** The application must already have consent from the user or a directory administrator.
@@ -68,8 +68,8 @@ var username = Environment.GetEnvironmentVariable("AZURE_USERNAME");
 var password = Environment.GetEnvironmentVariable("AZURE_PASSWORD");
 
 var client = new BlobServiceClient(
-        new Uri("https://<storage-account-name>.blob.core.windows.net"),
-        new UsernamePasswordCredential(username, password, tenantId, clientId));
+    new Uri("https://<storage-account-name>.blob.core.windows.net"),
+    new UsernamePasswordCredential(username, password, tenantId, clientId));
 
 foreach (var blobItem in client.GetBlobContainers())
 {

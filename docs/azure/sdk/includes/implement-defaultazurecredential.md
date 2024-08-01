@@ -6,7 +6,7 @@ ms.date: 07/31/2024
 
 The order and locations in which `DefaultAzureCredential` looks for credentials is found at [DefaultAzureCredential](/dotnet/api/overview/azure/identity-readme?view=azure-dotnet&preserve-view=true#defaultazurecredential).
 
-To implement `DefaultAzureCredential`, add the [Azure.Identity](/dotnet/api/azure.identity) and optionally the [Microsoft.Extensions.Azure](/dotnet/api/microsoft.extensions.azure) packages to your application. You can do this using either the command line or the NuGet Package Manager.
+To use `DefaultAzureCredential`, add the [Azure.Identity](/dotnet/api/azure.identity) and optionally the [Microsoft.Extensions.Azure](/dotnet/api/microsoft.extensions.azure) packages to your application:
 
 ### [Command Line](#tab/command-line)
 
@@ -25,10 +25,10 @@ Right-click your project in Visual Studio's **Solution Explorer** window and sel
 
 ---
 
-Azure services are accessed using specialized client classes from the various Azure SDK client libraries. These classes and your own custom services should be registered so they can be accessed via dependency injection throughout your app. Inside of `Program.cs`, follow these steps to set register a client class and `DefaultAzureCredential`:
+Azure services are accessed using specialized client classes from the various Azure SDK client libraries. These classes and your own custom services should be registered so they can be accessed via dependency injection throughout your app. In `Program.cs`, complete the following steps to register a client class and `DefaultAzureCredential`:
 
 1. Include the `Azure.Identity` and `Microsoft.Extensions.Azure` namespaces via `using` directives.
-1. Register the Azure service client using relevant helper methods.
+1. Register the Azure service client using the corresponding `Add`-prefixed extension method.
 1. Pass an instance of `DefaultAzureCredential` to the `UseCredential` method.
 
 For example:

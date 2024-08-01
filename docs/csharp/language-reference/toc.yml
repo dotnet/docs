@@ -466,17 +466,17 @@ items:
       CS9199, CS9200, CS9201
   - name: "`ref struct` types"
     href: ./compiler-messages/ref-struct-errors.md
-    displayName: > 
+    displayName: >
       ref struct,
       CS8343, CS8344, CS8345, CS9048, CS9050, CS9059, CS9241, CS9242, CS9243, CS9244, CS9245, CS9246, CS9247
   - name: Iterator methods
     href: ./compiler-messages/iterator-yield.md
-    displayName: > 
-      yield return, yield break, 
+    displayName: >
+      yield return, yield break,
       CS1622, CS1624, CS1625, CS1626, CS1627, CS1629, CS1631, CS1637, CS4013, CS8154, CS8176, CS9237, CS9238, CS9239
   - name: Params modifier
     href: ./compiler-messages/params-arrays.md
-    displayName: > 
+    displayName: >
       CS0225, CS0231, CS0466, CS0674, CS0758, CS1104, CS1611, CS1670, CS1751, CS9218, CS9223, CS9224, CS9225, CS9227, CS9228
   - name: Nullable warnings
     href: ./compiler-messages/nullable-warnings.md
@@ -1662,7 +1662,7 @@ items:
     - name: CS1630
       href: ../misc/cs1630.md
     - name: CS1637
-      href: /dotnet/csharp/language-reference/compiler-messages/iterator-yield
+      href: ./compiler-messages/iterator-yield.md
     - name: CS1638
       href: ../misc/cs1638.md
     - name: CS1639

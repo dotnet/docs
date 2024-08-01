@@ -122,7 +122,7 @@ For information on assigning permissions at the resource or subscription level u
 
 Next, sign in to Azure using one of several developer tools. The account you authenticate should also exist in the Microsoft Entra group you created and configured earlier.
 
-### [Visual Studio](#tab/visual-studio)
+### [Visual Studio](#tab/sign-in-visual-studio)
 
 1. Navigate to **Tools** > **Options** to open the options dialog.
 1. In the **Search Options** box at the top, type *Azure* to filter the available options.
@@ -133,7 +133,7 @@ Next, sign in to Azure using one of several developer tools. The account you aut
 
 1. Select **OK** to close the options dialog.
 
-### [Azure CLI](#tab/azure-cli)
+### [Azure CLI](#tab/sign-in-azure-cli)
 
 Open a terminal on your developer workstation and sign in to Azure from the [Azure CLI](/cli/azure/what-is-azure-cli):
 
@@ -141,7 +141,7 @@ Open a terminal on your developer workstation and sign in to Azure from the [Azu
 az login
 ```
 
-### [Azure Developer CLI](#tab/azure-developer-cli)
+### [Azure Developer CLI](#tab/sign-in-azure-developer-cli)
 
 Open a terminal on your developer workstation and sign in to Azure from the [Azure Developer CLI](/azure/developer/azure-developer-cli/overview):
 
@@ -149,7 +149,7 @@ Open a terminal on your developer workstation and sign in to Azure from the [Azu
 azd auth login
 ```
 
-### [Azure PowerShell](#tab/azure-powershell)
+### [Azure PowerShell](#tab/sign-in-azure-powershell)
 
 Open a terminal on your developer workstation and sign in to Azure from [Azure PowerShell](/powershell/azure/what-is-azure-powershell):
 

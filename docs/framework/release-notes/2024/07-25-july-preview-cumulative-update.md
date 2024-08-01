@@ -26,13 +26,13 @@ Addresses an issue with bypass serialization binder with binary formatter mutati
 
 Addresses an issue to remove meta tags information referencing "Recreational Software Advisory Council" and the content-rating schema from ASP.NET WebForms SmartNavigation feature
 
-Addresses an issue .NET Framework interation with Visual Studio to avoid conflicts between design-time and debug/runtime compilation of some .NET Framework ASP.NET project that could result in slowed developer experience for large projects
+Addresses an issue with .NET Framework interaction with Visual Studio. The fix avoids conflicts between design-time and debug or run-time compilation of some .NET Framework ASP.NET projects that could result in slowed developer experience for large projects.
 
 #### .NET libraries
 
 Addresses an issue to update zlib file to latest version
 
-## Known Issues in this Release
+## Known issues in this release
 
 This release contains no known issues.
 

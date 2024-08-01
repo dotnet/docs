@@ -53,7 +53,7 @@ For more information about how to create new strings that are based on modificat
 
 Beginning with C# 11, you can use *raw string literals* to more easily create strings that are multi-line, or use any characters requiring escape sequences. *Raw string literals* remove the need to ever use escape sequences. You can write the string, including whitespace formatting, how you want it to appear in output. A *raw string literal*:
 
-- Starts and ends with a sequence of at least three double quote characters (`"""`). You can use more than three consecutive characters to start and end the sequence. You can embed string literals that contain three (or more) repeated quote characters.
+- Starts and ends with a sequence of at least three double quote characters (`"""`). You can use more than three consecutive characters to start and end the sequence to support string literals that contain three (or more) repeated quote characters.
 - Single line raw string literals require the opening and closing quote characters on the same line.
 - Multi-line raw string literals require both opening and closing quote characters on their own line.
 - In multi-line raw string literals, any whitespace to the left of the closing quotes is removed from all lines of the raw string literal.

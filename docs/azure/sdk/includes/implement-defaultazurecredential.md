@@ -27,9 +27,9 @@ Right-click your project in Visual Studio's **Solution Explorer** window and sel
 
 Azure services are accessed using specialized client classes from the various Azure SDK client libraries. These classes and your own custom services should be registered so they can be accessed via dependency injection throughout your app. Inside of `Program.cs`, follow these steps to set register a client class and `DefaultAzureCredential`:
 
-1. Include the `Azure.Identity` and `Microsoft.Extensions.Azure` namespaces with a `using` directive.
+1. Include the `Azure.Identity` and `Microsoft.Extensions.Azure` namespaces via `using` directives.
 1. Register the Azure service client using relevant helper methods.
-1. Pass an instance of the `DefaultAzureCredential` object to the `UseCredential` method.
+1. Pass an instance of `DefaultAzureCredential` to the `UseCredential` method.
 
 For example:
 

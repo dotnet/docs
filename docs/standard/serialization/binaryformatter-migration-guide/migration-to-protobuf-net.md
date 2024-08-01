@@ -31,6 +31,11 @@ helpviewer_keywords:
    - For derived types, apply `[ProtoInclude(...)]` to their base types (see the example below).
    - For every type that declares any constructor that accepts parameters, add a parameterless constructor. Leave a comment that explains the protobuf-net requirement (so nobody removes it by accident).
    - Mark all the members (fields and properties) that you wish to serialize with `[ProtoMember(int identifier)]`. All identifiers must be unique within a single type, but the same numbers can be re-used in sub-types if inheritance is enabled.
+6. For types that you can't modify:
+   - For types provided by the .NET itself, you can use `ProtoBuf.Meta.RuntimeTypeModel.Default.CanSerialize(Type type)` API to check if they are natively supported by protobuf-net.
+   - You can create dedicated data transfer objects (DTO) and map them accordingly (you could use implicit cast operator for that).
+   - Use the `RuntimeTypeModel` API to define everything that the attributes allow for.
+7. Replace the usage of `BinaryFormatter` with `ProtoBuf.Serializer`.
 
 ```diff
 -[Serializable]
@@ -50,10 +55,3 @@ public class Point2D : Point1D
     public int Y { get; set; }
 }
 ```
-
-6. For types that you can't modify:
-   - For types provided by the .NET itself, you can use `ProtoBuf.Meta.RuntimeTypeModel.Default.CanSerialize(Type type)` API to check if they are natively supported by protobuf-net.
-   - You can create dedicated data transfer objects (DTO) and map them accordingly (you could use implicit cast operator for that).
-
-   - Use the `RuntimeTypeModel` API to define everything that the attributes allow for.
-7. Replace the usage of `BinaryFormatter` with `ProtoBuf.Serializer`.

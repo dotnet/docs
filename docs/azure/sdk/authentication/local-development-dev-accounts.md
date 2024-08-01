@@ -1,6 +1,6 @@
 ---
-title: Authenticate .NET apps to Azure services during local development using developer accounts
-description: This article describes how to authenticate your application to Azure services when using the Azure SDK for .NET during local development using developer accounts.
+title: Authenticate .NET apps to Azure using developer accounts
+description: Learn how to authenticate your application to Azure services when using the Azure SDK for .NET during local development using developer accounts.
 ms.topic: how-to
 ms.custom: devx-track-dotnet, engagement-fy23, devx-track-azurecli
 ms.date: 07/31/2024
@@ -10,7 +10,7 @@ ms.date: 07/31/2024
 
 When creating cloud applications, developers need to debug and test applications on their local workstation. When an application is run on a developer's workstation during local development, it still must authenticate to any Azure services used by the app. This article covers how to use a developer's Azure credentials to authenticate the app to Azure during local development.
 
-:::image type="content" source="../media/local-dev-dev-accounts-overview.png" alt-text="A diagram showing how an app running in local developer will obtain the application service principal from a .env file and then use that identity to connect to Azure resources.":::
+:::image type="content" source="../media/local-dev-dev-accounts-overview.png" alt-text="A diagram showing an app running in local development using a developer tool identity to connect to Azure resources.":::
 
 For an app to authenticate to Azure during local development using the developer's Azure credentials, the developer must be signed-in to Azure from the VS Code Azure Tools extension, the Azure CLI, or Azure PowerShell.  The Azure SDK for .NET is able to detect that the developer is signed-in from one of these tools and then obtain the necessary credentials from the credentials cache to authenticate the app to Azure as the signed-in user.
 
@@ -120,7 +120,7 @@ For information on assigning permissions at the resource or subscription level u
 
 ## 3 - Sign in to Azure using developer tooling
 
-Next you need to sign in to Azure using one of several developer tooling options. The account you authenticate should also exist in the Microsoft Entra group you created and configured earlier.
+Next, sign in to Azure using one of several developer tools. The account you authenticate should also exist in the Microsoft Entra group you created and configured earlier.
 
 ### [Visual Studio](#tab/visual-studio)
 

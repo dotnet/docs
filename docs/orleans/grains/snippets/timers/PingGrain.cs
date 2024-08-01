@@ -1,5 +1,4 @@
-﻿using Orleans.Runtime;
-using Orleans.Timers;
+﻿using Orleans.Timers;
 
 namespace Timers;
 
@@ -19,9 +18,9 @@ public sealed class PingGrain : IGrainBase, IPingGrain, IDisposable
         IGrainContext grainContext)
     {
         // Register timer
-        timerRegistry.RegisterTimer(
+        timerRegistry.RegisterGrainTimer(
             grainContext,
-            asyncCallback: static async state =>
+            callback: static async (state, cancellationToken) =>
             {
                 // Omitted for brevity...
                 // Use state
@@ -29,8 +28,11 @@ public sealed class PingGrain : IGrainBase, IPingGrain, IDisposable
                 await Task.CompletedTask;
             },
             state: this,
-            dueTime: TimeSpan.FromSeconds(3),
-            period: TimeSpan.FromSeconds(10));
+            options: new GrainTimerCreationOptions
+            {
+                DueTime = TimeSpan.FromSeconds(3),
+                Period = TimeSpan.FromSeconds(10)
+            });
 
         _reminderRegistry = reminderRegistry;
 

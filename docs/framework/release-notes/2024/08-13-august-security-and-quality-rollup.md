@@ -20,7 +20,7 @@ This security update addresses an elevation of privilege vulnerability detailed 
 
 #### Defense in depth vulnerability
 
-This security update addresses an issue with serializatoin binders in BinaryFormatter.
+This security update addresses an issue with serialization binders in BinaryFormatter.
 
 ### Quality and reliability improvements
 
@@ -30,7 +30,7 @@ This release contains the following quality and reliability improvements.
 
 Addresses an issue to render WU automation ListView sub items. (*Applies to: .NET Framework 4.8, 4.8.1.*)
 Addresses an issue with bypass serialization binder with binary formatter mutations. (*Applies to: .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2, 4.8, 4.8.1.*)
-Addresses an issue to remove meta tags information referencing "Recreational Software Advisory Council" and the content-rating scheema from ASP.NET WebForms SmartNavigation feature. (*Applies to: .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2, 4.8, 4.8.1.*)
+Addresses an issue to remove meta tags information referencing "Recreational Software Advisory Council" and the content-rating schema from ASP.NET WebForms SmartNavigation feature. (*Applies to: .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2, 4.8, 4.8.1.*)
 Addresses an issue with .NET Framework interaction with Visual Studio.  The fix avoids conflicts between design-time compilation of some .NET Framework ASP.NET projects that could result in slowed developer experience for large projects. (*Applies to: .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2, 4.8, 4.8.1.*)
 
 #### .NET libraries
@@ -96,4 +96,4 @@ The following table is for earlier Windows and Windows Server versions for Secur
 | .NET Framework 3.5 SP1 | [5040673](https://support.microsoft.com/kb/5040673) |
 | .NET Framework 4.6.2 | [5041926](https://support.microsoft.com/kb/5041926) |
 
-The operating system rows list a KB that's used for update-offering purposes. When the operating system KB is offered, the applicability logic determines the specific .NET Framework updates that will be installed. Updates for individual .NET Framework versions are installed based on the version of .NET Framework that's already present on the device. Because of this, the operating system KB is not expected to be listed as an installed update on the device. The expected updates to be installed are the .NET Framework&ndash;specific version updates listed in the preceding table.
+The operating system rows list a KB that's used for update-offering purposes. When the operating system KB is offered, the applicability logic determines the specific .NET Framework updates that will be installed. Updates for individual .NET Framework versions are installed based on the version of .NET Framework that's already present on the device. Because of this, the operating system KB is not expected to be listed as an installed update on the device. The expected updates to be installed are the .NET Framework specific version updates listed in the preceding table.

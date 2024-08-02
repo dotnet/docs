@@ -8,7 +8,7 @@ ms.date: 07/31/2024
 
 # Authenticate .NET apps to Azure services during local development using developer accounts
 
-When creating cloud applications, developers need to debug and test applications on their local workstation. When an application is run on a developer's workstation during local development, it still must authenticate to any Azure services used by the app. This article covers how to use a developer's Azure credentials to authenticate the app to Azure during local development.
+Developers need to debug and test cloud apps on their local workstations. When an app runs on a developer's workstation during local development, it must still authenticate to any Azure services used by the app. This article covers how to use a developer's Azure credentials to authenticate the app to Azure during local development.
 
 :::image type="content" source="../media/local-dev-dev-accounts-overview.png" alt-text="A diagram showing an app running in local development using a developer tool identity to connect to Azure resources.":::
 
@@ -21,15 +21,15 @@ For an app to authenticate to Azure during local development using the developer
 
 The Azure Identity library can detect that the developer is signed in from one of these tools. The library can then obtain the Microsoft Entra access token via the tool to authenticate the app to Azure as the signed-in user.
 
-This approach is easiest to set up for a development team since it takes advantage of the developers' existing Azure accounts. However, a developer's account will likely have more permissions than required by the application, therefore exceeding the permissions the app will run with in production. As an alternative, you can [create application service principals to use during local development](./local-development-service-principal.md) which can be scoped to have only the access needed by the app.
+This approach is easiest to set up for a development team since it takes advantage of the developers' existing Azure accounts. However, a developer's account likely has more permissions than required by the app, therefore exceeding the permissions the app runs with in production. As an alternative, you can [create application service principals to use during local development](./local-development-service-principal.md), which can be scoped to have only the access needed by the app.
 
 ## 1 - Create Microsoft Entra group for local development
 
-Since there are almost always multiple developers who work on an application, it's recommended to first create a Microsoft Entra group to encapsulate the roles (permissions) the app needs in local development. This approach offers the following advantages:
+Since there are almost always multiple developers who work on an app, a Microsoft Entra group is recommended to encapsulate the roles (permissions) the app needs in local development. This approach offers the following advantages:
 
 - Every developer is assured to have the same roles assigned since roles are assigned at the group level.
-- If a new role is needed for the app, it only needs to be added to the Microsoft Entra group for the app.
-- If a new developer joins the team, they simply must be added to the correct Microsoft Entra group to get the correct permissions to work on the app.
+- If a new role is needed for the app, it only needs to be added to the group for the app.
+- If a new developer joins the team, they gain the necessary permissions to work on the app after being added to the group.
 
 If you have an existing Microsoft Entra group for your development team, you can use that group. Otherwise, complete the following steps to create a Microsoft Entra group.
 
@@ -55,7 +55,7 @@ az ad group create \
     --description <group-description>
 ```
 
-Copy the value of the `id` property in the output of the command. This is the object ID for the group. You need it in later steps. You can also use the [az ad group show](/cli/azure/ad/group#az-ad-group-show) command to retrieve this property.
+Copy the value of the `id` property in the output of the command. This `id` property represents the group's object ID. You need it in later steps. You can also use the [az ad group show](/cli/azure/ad/group#az-ad-group-show) command to retrieve this property.
 
 To add members to the group, you need the object ID of the Azure user. Use the [az ad user list](/cli/azure/ad/sp#az-ad-user-list) command to list the available service principals. The `--filter` parameter command accepts OData-style filters and can be used to filter the list on the display name of the user as shown. The `--query` parameter limits the output to columns of interest.
 
@@ -81,7 +81,7 @@ az ad group member add \
 
 ## 2 - Assign roles to the Microsoft Entra group
 
-Next, you need to determine what roles (permissions) your app needs on what resources and assign those roles to your app. In this example, the roles will be assigned to the Microsoft Entra group created in step 1. Roles can be assigned a role at a resource, resource group, or subscription scope. This example will show how to assign roles at the resource group scope since most applications group all their Azure resources into a single resource group.
+Next, determine what roles (permissions) your app needs on what resources and assign those roles to your app. In this example, the roles are assigned to the Microsoft Entra group created in step 1. Groups can be assigned a role at a resource, resource group, or subscription scope. This example shows how to assign roles at the resource group, scope since most apps group all their Azure resources into a single resource group.
 
 ### [Azure portal](#tab/azure-portal)
 
@@ -136,7 +136,7 @@ Next, sign in to Azure using one of several developer tools. The account you aut
 1. Navigate to **Tools** > **Options** to open the options dialog.
 1. In the **Search Options** box at the top, type *Azure* to filter the available options.
 1. Under **Azure Service Authentication**, choose **Account Selection**.
-1. Select the drop-down menu under **Choose an account** and choose to add a Microsoft Account. A window will open prompting you to pick an account. Enter the credentials for your desired Azure account, and then select the confirmation.
+1. Select the drop-down menu under **Choose an account** and choose to add a Microsoft Account. A window opens, prompting you to pick an account. Enter the credentials for your desired Azure account, and then select the confirmation.
 
     :::image type="content" source="../media/visual-studio-sign-in.png" alt-text="A screenshot showing how to sign in to Azure using Visual Studio.":::
 

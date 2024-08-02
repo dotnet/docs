@@ -1,5 +1,5 @@
 ---
-title: `[DeploymentItem]` can be specified only on test class or test method."
+title: "`[DeploymentItem]` can be specified only on test class or test method."
 description: "Learn about code analysis rule MSTEST0035: `[DeploymentItem]` can be specified only on test class or test method."
 ms.date: 08/02/2024
 f1_keywords:
@@ -33,7 +33,7 @@ With using  `[DeploymentItem]`, without putting it on test class or test method 
 
 ## How to fix violations
 
-`[DeploymentItem]` can be specified only on test class or test method.
+Ensure the attribute `[DeploymentItem]` is specified on a test class or a test method, otherwise remove the attribute.
 
 ## When to suppress warnings
 

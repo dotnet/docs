@@ -3,6 +3,8 @@ items:
   href: index.yml
 - name: Overview
   href: get-started/dotnet-ai-overview.md
+- name: Ecosystem tools and SDKs
+  href: dotnet-ai-ecosystem.md
 - name: Learning resources and samples
   href: azure-ai-for-dotnet-developers.md
 - name: What is Semantic Kernel?
@@ -67,7 +69,3 @@ items:
     href: tutorials/tutorial-ai-vector-search.md
   - name: Scale Azure OpenAI with Azure Container Apps
     href: get-started-app-chat-scaling-with-azure-container-apps.md
-- name: Reference
-  items:
-  - name: Ecosystem tools and SDKs
-    href: dotnet-ai-ecosystem.md

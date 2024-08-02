@@ -20,10 +20,6 @@ jobs:
       with:
         egress-policy: audit
 
-    - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
-      with:
-        ref: ${{ github.event.pull_request.head.sha }}
-
     - uses: dotnet/docs-tools/actions/status-checker@5e8bcc78465d45a7544bba56509a1a69922b6a5a # main
       with:
         repo_token: ${{ secrets.GITHUB_TOKEN }}

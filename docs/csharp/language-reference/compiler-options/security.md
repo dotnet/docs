@@ -21,6 +21,9 @@ The following options control compiler security options. The new MSBuild syntax 
 - **KeyContainer** / `-keycontainer`: Specify a strong name key container.
 - **HighEntropyVA** / `-highentropyva`: Enable high-entropy Address Space Layout Randomization (ASLR)
 
+> [!NOTE]
+> Refer to [Compiler options](index.md#how-to-set-options) for more information on configuring these options for your project.
+
 ## PublicSign
 
 This option causes the compiler to apply a public key but doesn't actually sign the assembly. The **PublicSign** option also sets a bit in the assembly that tells the runtime that the file is signed.

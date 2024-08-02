@@ -8,7 +8,7 @@ ms.date: 07/31/2024
 
 # Additional methods to authenticate to Azure resources from .NET apps
 
-This article lists additional methods apps may use to authenticate to Azure resources. The methods on this page are less commonly used; when possible, we encourage you to use one of the methods outlined in [authenticating .NET apps to Azure using the Azure SDK overview](./index.md).
+This article lists additional methods apps may use to authenticate to Azure resources. The methods on this page are less commonly used; when possible, use one of the methods outlined in [authenticating .NET apps to Azure using the Azure SDK overview](./index.md).
 
 ## Interactive browser authentication
 

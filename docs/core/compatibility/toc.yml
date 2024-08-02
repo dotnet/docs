@@ -32,6 +32,10 @@ items:
         href: core-libraries/9.0/getsubarray-return.md
       - name: Support for empty environment variables
         href: core-libraries/9.0/empty-env-variable.md
+    - name: Cryptography
+      items:
+      - name: Some X509Certificate2 and X509Certificate constructors are obsolete
+        href: cryptography/9.0/x509-certificates.md
     - name: Networking
       items:
       - name: HttpListenerRequest.UserAgent is nullable
@@ -1396,6 +1400,10 @@ items:
       href: corefx.md
   - name: Cryptography
     items:
+    - name: .NET 9
+      items:
+      - name: Some X509Certificate2 and X509Certificate constructors are obsolete
+        href: cryptography/9.0/x509-certificates.md
     - name: .NET 8
       items:
       - name: AesGcm authentication tag size on macOS

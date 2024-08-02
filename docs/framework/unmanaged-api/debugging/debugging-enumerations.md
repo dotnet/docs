@@ -16,9 +16,48 @@ This section describes the unmanaged enumerations that the debugging API uses.
  [CLR_DEBUGGING_PROCESS_FLAGS Enumeration](clr-debugging-process-flags-enumeration.md)\
  Provides values that are used by the [ICLRDebugging::OpenVirtualProcess](iclrdebugging-openvirtualprocess-method.md) method.
 
+ [CLRDataAddressType Enumeration](clrdataaddresstype-enumeration.md)\
+ Indicates the type of data contained at a given address by the [IXCLRDataProcess::GetAddressType](ixclrdataprocess-getaddresstype-method.md)
+
+ [CLRDataByNameFlag Enumeration](clrdatabynameflag-enumeration.md)\
+ Indicates how names should match in a search.
+
+ [CLRDataDetailedFrameType Enumeration](clrdatadetailedframetype-enumeration.md)\
+ Describes a type of frame in the call stack in detail from the [IXCLRDataStackWalk::GetFrameType](ixclrdatastackwalk-getframetype-method.md) method.
+
  [CLRDataEnumMemoryFlags Enumeration](clrdataenummemoryflags-enumeration.md)\
  Indicates which memory regions a call to the [ICLRDataEnumMemoryRegions::EnumMemoryRegions](iclrdataenummemoryregions-enummemoryregions-method.md) method should include.
 
+ [CLRDataExceptionSameFlag Enumeration](clrdataexceptionsameflag-enumeration.md)\
+ Indicates how exception states should match against system records.
+
+ [CLRDataFieldFlag Enumeration](clrdatafieldflag-enumeration.md)\
+ Indicates various attributes of a field.
+
+ [CLRDataFollowStubInFlag Enumeration](clrdatafollowstubinflag-enumeration.md)\
+ A set of flags passed to [IXCLRDataProcess::FollowStub](ixclrdataprocess-followstub-method.md) and [IXCLRDataProcess::FollowStub2](ixclrdataprocess-followstub2-method.md) that define how to follow the stub.
+
+ [CLRDataFollowStubOutFlag Enumeration](clrdatafollowstuboutflag-enumeration.md)\
+ A set of flags returned from [IXCLRDataProcess::FollowStub](ixclrdataprocess-followstub-method.md) and [IXCLRDataProcess::FollowStub2](ixclrdataprocess-followstub2-method.md) that indicate the result of following a stub.
+
+ [CLRDataMethodCodeNotification Enumeration](clrdatamethodcodenotification-enumeration.md)\
+ Indicates the type of notifications pertaining to method instance code which should be delivered.  Used in calls to [IXCLRDataProcess::SetCodeNotifications](ixclrdataprocess-setcodenotifications-method.md) and [IXCLRDataProcess::SetAllCodeNotifications](ixclrdataprocess-setallcodenotificaitons).
+
+ [CLRDataModuleExtentType Enumeration](clrdatamoduleextenttype-enumeration.md)\
+ Indicates the type of memory region associated with a module via [IXCLRDataModule::EnumExtent](ixclrdatamodule-enumextent-method.md).
+
+ [CLRDataOtherNotifyFlag Enumeration](clrdataothernotifyflag-enumeration.md)\
+ Indicates the type of notifications which should be delivered.  Used in calls to [IXCLRDataProcess::SetOtherNotifications](ixclrdataprocess-setothernotifications-method.md).
+
+ [CLRDataSimpleFrameType Enumeraiton](clrdatasimpleframetype-enumeration.md)\
+ Describes a type of frame in the call stack from [IXCLRDataStackWalk::GetFrameType](ixclrdatastackwalk-getframetype-method.md).
+ 
+ [CLRDataSourceType Enumeration](clrdatasourcetype-enumeration.md)\
+ Provides values that are used by the CLRDATA_IL_ADDRESS_MAP structure.
+
+ [CLRDataValueFlag Enumeration](clrdatavalueflag-enumeration.md)\
+ Indicates various attributes of a value.
+ 
  [COR_PUB_ENUMPROCESS Enumeration](cor-pub-enumprocess-enumeration.md)\
  Identifies the type of process to be enumerated.
 
@@ -132,9 +171,6 @@ This section describes the unmanaged enumerations that the debugging API uses.
 
  [WriteableMetadataUpdateMode Enumeration](writeablemetadataupdatemode-enumeration.md)\
  Provides values that specify whether in-memory updates to metadata are visible to a debugger.
-
- [ClrDataSourceType Enumeration](clrdatasourcetype-enumeration.md)\
- Provides values that are used by the CLRDATA_IL_ADDRESS_MAP structure.
 
 ## Related Sections
 

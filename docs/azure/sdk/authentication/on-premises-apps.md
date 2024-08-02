@@ -1,16 +1,16 @@
 ---
 title: Authenticate to Azure resources from .NET apps hosted on-premises
-description: This article describes how to authenticate your application to Azure services when using the Azure SDK for .NET in on-premises hosted applications. 
+description: This article describes how to authenticate your application to Azure services when using the Azure SDK for .NET in on-premises hosted apps. 
 ms.topic: how-to
 ms.custom: devx-track-dotnet, engagement-fy23
-ms.date: 2/28/2023
+ms.date: 08/02/2024
 ---
 
 # Authenticate to Azure resources from .NET apps hosted on-premises
 
-Apps hosted outside of Azure (for example on-premises or at a third-party data center) should use an application service principal to authenticate to Azure when accessing Azure resources.  Application service principal objects are created using the app registration process in Azure.  When an application service principal is created, a client ID and client secret will be generated for your app.  The client ID, client secret, and your tenant ID are then stored in environment variables so they can be used by the Azure SDK for .NET to authenticate your app to Azure at runtime.
+Apps hosted outside of Azure (for example, on-premises or at a third-party data center) should use an application service principal to authenticate to Azure when accessing Azure resources. Application service principal objects are created using the app registration process in Azure. When an application service principal is created, a client ID and client secret will be generated for your app. The client ID, client secret, and your tenant ID are then stored in environment variables so they can be used by the Azure Identity library to authenticate your app to Azure at runtime.
 
-A different app registration should be created for each environment the app is hosted in.  This allows environment specific resource permissions to be configured for each service principal and make sure an app deployed to one environment does not talk to Azure resources that are part of another environment.
+A different app registration should be created for each environment the app is hosted in. This allows environment specific resource permissions to be configured for each service principal and make sure an app deployed to one environment doesn't talk to Azure resources that are part of another environment.
 
 ## 1 - Register the application in Azure
 
@@ -67,7 +67,7 @@ Next, you need to determine what roles (permissions) your app needs on what reso
 
 ### [Azure CLI](#tab/azure-cli)
 
-A service principal is assigned a role in Azure using the [az role assignment create](/cli/azure/role/assignment#az-role-assignment-create) command.
+A service principal is assigned a role in Azure using the [az role assignment create](/cli/azure/role/assignment#az-role-assignment-create) command:
 
 ```azurecli
 az role assignment create --assignee "{appId}" \
@@ -75,7 +75,7 @@ az role assignment create --assignee "{appId}" \
     --resource-group "{resourceGroupName}"
 ```
 
-To get the role names that a service principal can be assigned to, use the [az role definition list](/cli/azure/role/definition#az-role-definition-list) command.
+To get the role names to which a service principal can be assigned, use the [az role definition list](/cli/azure/role/definition#az-role-definition-list) command:
 
 ```azurecli
 az role definition list \
@@ -83,7 +83,7 @@ az role definition list \
     --output table
 ```
 
-For example, to allow the service principal with the appId of `00000000-0000-0000-0000-000000000000` read, write, and delete access to Azure Storage blob containers and data to all storage accounts in the *msdocs-dotnet-sdk-auth-example* resource group, you would assign the application service principal to the *Storage Blob Data Contributor* role using the following command.
+For example, to allow the service principal with the `appId` of `00000000-0000-0000-0000-000000000000` read, write, and delete access to Azure Storage blob containers and data to all storage accounts in the *msdocs-dotnet-sdk-auth-example* resource group, assign the application service principal to the *Storage Blob Data Contributor* role using the following command:
 
 ```azurecli
 az role assignment create --assignee "00000000-0000-0000-0000-000000000000" \
@@ -91,7 +91,7 @@ az role assignment create --assignee "00000000-0000-0000-0000-000000000000" \
     --resource-group "msdocs-dotnet-sdk-auth-example"
 ```
 
-For information on assigning permissions at the resource or subscription level using the Azure CLI, see the article [Assign Azure roles using the Azure CLI](/azure/role-based-access-control/role-assignments-cli).
+For information on assigning permissions at the resource or subscription level using the Azure CLI, see [Assign Azure roles using the Azure CLI](/azure/role-based-access-control/role-assignments-cli).
 
 ---
 
@@ -107,7 +107,7 @@ Regardless of which approach you choose, you will need to configure the followin
 
 ### [IIS](#tab/iis-app-pool)
 
-If your app is hosted in IIS it is recommended that you set environment variables per app pool to isolate settings between applications.
+If your app is hosted in IIS, it's recommended that you set environment variables per app pool to isolate settings between apps.
 
 ```bash
 appcmd.exe set config -section:system.applicationHost/applicationPools /+"[name='Contoso'].environmentVariables.[name='ASPNETCORE_ENVIRONMENT',value='Production']" /commit:apphost
@@ -116,7 +116,7 @@ appcmd.exe set config -section:system.applicationHost/applicationPools /+"[name=
 appcmd.exe set config -section:system.applicationHost/applicationPools /+"[name='Contoso'].environmentVariables.[name='AZURE_CLIENT_SECRET',value='=abcdefghijklmnopqrstuvwxyz']" /commit:apphost
 ```
 
-You can also configure these settings directly using the `applicationPools` element inside of the `applicationHost.config` file.
+You can also configure these settings directly using the `applicationPools` element inside of the `applicationHost.config` file:
 
 ```xml
 <applicationPools>
@@ -133,7 +133,7 @@ You can also configure these settings directly using the `applicationPools` elem
 
 ### [Windows](#tab/windows)
 
-You can set environment variables for Windows from the command line. However, when using this approach the values are accessible to all applications running on that operating system and may cause conflicts if you are not careful. Environment variables can be set at either user or system level.
+You can set environment variables for Windows from the command line. However, when using this approach the values are accessible to all apps running on that operating system and may cause conflicts if you aren't careful. Environment variables can be set at either the user or system level.
 
 ```bash
 # Set user environment variables
@@ -149,7 +149,7 @@ setx AZURE_TENANT_ID "11111111-1111-1111-1111-111111111111" /m
 setx AZURE_CLIENT_SECRET "=abcdefghijklmnopqrstuvwxyz" /m
 ```
 
-You can also use PowerShell to set environment variables at either the user or machine level.
+You can also use PowerShell to set environment variables at either the user or machine level:
 
 ```powershell
 # Set user environment variables
@@ -167,6 +167,6 @@ You can also use PowerShell to set environment variables at either the user or m
 
 ---
 
-## 4 - Implement DefaultAzureCredential in application
+## 4 - Implement DefaultAzureCredential in your application
 
-[!INCLUDE [Implement Default Azure Credentials](<../includes/implement-defaultazurecredential.md>)]
+[!INCLUDE [Implement DefaultAzureCredential](<../includes/implement-defaultazurecredential.md>)]

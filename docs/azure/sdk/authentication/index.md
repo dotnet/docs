@@ -18,9 +18,11 @@ The specific type of token-based authentication an app should use to authenticat
 
 :::image type="content" source="../media/dotnet-sdk-auth-strategy.png" alt-text="A diagram showing the recommended token-based authentication strategies for an app depending on where it's running." :::
 
-- **When a developer is running an app during local development**, the app can authenticate to Azure using either an application service principal for local development or by using the developer's Azure credentials. Each option is discussed in more detail at [authentication during local development](#authentication-during-local-development).
-- **When an app is hosted on Azure**, the app should authenticate to Azure resources using a managed identity. This option is discussed in more detail at [authentication in server environments](#authentication-in-server-environments).
-- **When an app is hosted and deployed on-premises**, the app should authenticate to Azure resources using an application service principal. This option is discussed in more detail at [authentication in server environments](#authentication-in-server-environments).
+When an app is:
+
+- **Running locally during development**, the app can authenticate to Azure using either an application service principal for local development or by using the developer's Azure credentials. Each option is discussed in more detail at [authentication during local development](#authentication-during-local-development).
+- **Hosted on Azure**, the app should authenticate to Azure resources using a managed identity. This option is discussed in more detail at [authentication in server environments](#authentication-in-server-environments).
+- **Hosted and deployed on-premises**, the app should authenticate to Azure resources using an application service principal. This option is discussed in more detail at [authentication in server environments](#authentication-in-server-environments).
 
 ### DefaultAzureCredential
 
@@ -73,7 +75,7 @@ The order and locations in which `DefaultAzureCredential` looks for credentials 
 | Workload Identity             | If the app is deployed to an Azure host with Workload Identity enabled, `DefaultAzureCredential` will authenticate that account. |
 | Managed Identity              | If the app is deployed to an Azure host with Managed Identity enabled, `DefaultAzureCredential` will authenticate the app to Azure using that Managed Identity. Authentication using a Managed Identity is discussed in the [Authentication in server environments](#authentication-in-server-environments) section of this document.<br><br>This method is only available when the app is hosted in Azure using a service like Azure App Service, Azure Functions, or Azure Virtual Machines. |
 | Visual Studio            | If the developer has authenticated to Azure by logging into Visual Studio, `DefaultAzureCredential` will authenticate the app to Azure using that same account. |
-| Azure CLI                     | If a developer has authenticated to Azure using Azure CLI's `az login` command, `DefaultAzureCredential` will authenticate the app to Azure using that same account. |
-| Azure PowerShell              | If a developer has authenticated to Azure using Azure PowerShell's `Connect-AzAccount` cmdlet, `DefaultAzureCredential` will authenticate the app to Azure using that same account.            |
+| Azure CLI                     | If the developer has authenticated to Azure using Azure CLI's `az login` command, `DefaultAzureCredential` will authenticate the app to Azure using that same account. |
+| Azure PowerShell              | If the developer has authenticated to Azure using Azure PowerShell's `Connect-AzAccount` cmdlet, `DefaultAzureCredential` will authenticate the app to Azure using that same account.            |
 | Azure Developer CLI           | If the developer has authenticated to Azure using Azure Developer CLI's `azd auth login` command, `DefaultAzureCredential` will authenticate with that account. |
 | Interactive                   | If enabled, `DefaultAzureCredential` will interactively authenticate the developer via the current system's default browser. By default, this option is disabled. |

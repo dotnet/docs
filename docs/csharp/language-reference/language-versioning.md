@@ -2,7 +2,7 @@
 title: Language versioning
 description: Learn about how the C# language version is determined based on your project and the reasons behind that choice.
 ms.custom: "updateeachrelease"
-ms.date: 10/30/2023
+ms.date: 08/02/2024
 ---
 
 # C# language versioning

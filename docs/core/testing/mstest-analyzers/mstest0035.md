@@ -1,5 +1,5 @@
 ---
-title: "`[DeploymentItem]` can be specified only on test class or test method."
+title: "[DeploymentItem] can be specified only on test class or test method."
 description: "Learn about code analysis rule MSTEST0035: `[DeploymentItem]` can be specified only on test class or test method."
 ms.date: 08/02/2024
 f1_keywords:

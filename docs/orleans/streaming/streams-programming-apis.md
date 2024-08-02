@@ -164,7 +164,7 @@ Below are the guidelines on how to write the subscription logic for various case
 
 **Implicit subscriptions:**
 
-For implicit subscriptions, the grain still needs to subscribe to attach the processing logic. This can be done in the consumer grain by implementing the `IStreamSubscriptionObserver` and `IAsyncObserver<T>` interfaces, allowing, for the grain to activate separately from subscribing. To subscribe to the stream, the grain creates a handle and calls `await handle.ResumeAsync(this)` in its `OnSubscribed(...)` method.
+For implicit subscriptions, the grain still needs to subscribe to attach the processing logic. This can be done in the consumer grain by implementing the `IStreamSubscriptionObserver` and `IAsyncObserver<T>` interfaces, allowing the grain to activate separately from subscribing. To subscribe to the stream, the grain creates a handle and calls `await handle.ResumeAsync(this)` in its `OnSubscribed(...)` method.
 
 To process messages, the `IAsyncObserver<T>.OnNextAsync(...)` method is implemented to receive stream data and a sequence token. Alternatively, the `ResumeAsync` method may take a set of delegates representing the methods of the `IAsyncObserver<T>` interface, `onNextAsync`, `onErrorAsync`, and `onCompletedAsync`.
 

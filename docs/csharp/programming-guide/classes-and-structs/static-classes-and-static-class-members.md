@@ -1,5 +1,5 @@
 ---
-title: "Static Classes and Static Class Members - C# Programming Guide"
+title: "Static Classes and Static Class Members"
 description: Static classes can't be instantiated in C#. You access the members of a static class by using the class name itself.
 ms.date: 03/15/2024
 helpviewer_keywords:

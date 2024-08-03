@@ -1,7 +1,7 @@
 ---
 title: "$ - string interpolation - format string output"
 description: String interpolation using the `$` token provides a more readable and convenient syntax to format string output than traditional string composite formatting.
-ms.date: 08/28/2023
+ms.date: 07/31/2024
 f1_keywords:
     - "$_CSharpKeyword"
     - "$"
@@ -14,7 +14,7 @@ author: pkulikov
 
 # String interpolation using `$`
 
-The `$` character identifies a string literal as an _interpolated string_. An interpolated string is a string literal that might contain _interpolation expressions_. When an interpolated string is resolved to a result string, items with interpolation expressions are replaced by the string representations of the expression results.
+The `$` character identifies a string literal as an _interpolated string_. An interpolated string is a string literal that might contain _interpolation expressions_. When an interpolated string is resolved to a result string, the compiler replaces items with interpolation expressions by the string representations of the expression results.
 
 String interpolation provides a more readable, convenient syntax to format strings. It's easier to read than [string composite formatting](../../../standard/base-types/composite-formatting.md). The following example uses both features to produce the same output:
 
@@ -36,11 +36,11 @@ Elements in square brackets are optional. The following table describes each ele
 
 | Element | Description |
 |--|--|
-| `interpolationExpression` | The expression that produces a result to be formatted. String representation of `null` is <xref:System.String.Empty?displayProperty=nameWithType>. |
-| `alignment` | The constant expression whose value defines the minimum number of characters in the string representation of the expression result. If positive, the string representation is right-aligned; if negative, it's left-aligned. For more information, see the [Alignment component](../../../standard/base-types/composite-formatting.md#alignment-component) section of the [Composite formatting](../../../standard/base-types/composite-formatting.md) article. |
-| `formatString` | A format string that is supported by the type of the expression result. For more information, see the [Format string component](../../../standard/base-types/composite-formatting.md#format-string-component) section of the [Composite formatting](../../../standard/base-types/composite-formatting.md) article. |
+| `interpolationExpression` | The expression that produces a result to be formatted. When the expression is `null`, the output is the empty string (<xref:System.String.Empty?displayProperty=nameWithType>). |
+| `alignment` | The constant expression whose value defines the minimum number of characters in the string representation of the expression result. If positive, the string representation is right-aligned; if negative, left-aligned. For more information, see the [Alignment component](../../../standard/base-types/composite-formatting.md#alignment-component) section of the [Composite formatting](../../../standard/base-types/composite-formatting.md) article. |
+| `formatString` | A format string supported by the type of the expression result. For more information, see the [Format string component](../../../standard/base-types/composite-formatting.md#format-string-component) section of the [Composite formatting](../../../standard/base-types/composite-formatting.md) article. |
 
-The following example uses optional formatting components described above:
+The following example uses optional formatting components described in the preceding table:
 
 :::code language="csharp" interactive="try-dotnet-method" source="./snippets/string-interpolation.cs" id="AlignAndSpecifyFormat":::
 
@@ -58,19 +58,19 @@ To embed `{` and `}` characters in the result string, start an interpolated raw 
 
 :::code language="csharp" source="./snippets/string-interpolation.cs" id="InterpolatedRawStringLiteralWithBraces":::
 
-In the preceding example, an interpolated raw string literal starts with two `$` characters. That's why you need to put every interpolation expression between double braces, `{{` and `}}`. A single brace is embedded into a result string. If you need to embed repeated `{` or `}` characters into a result string, use an appropriately greater number of `$` characters to designate an interpolated raw string literal.
+In the preceding example, an interpolated raw string literal starts with two `$` characters. You need to put every interpolation expression between double braces (`{{` and `}}`). A single brace is embedded into a result string. If you need to embed repeated `{` or `}` characters into a result string, use an appropriately greater number of `$` characters to designate an interpolated raw string literal. If the string literal has more repeated braces than the number of `$` characters, the `{` and `}` characters are grouped from inside to outside. In the preceding example, the literal `The point {{{X}}, {{Y}}}` interprets `{{X}}` and `{{Y}}` as interpolated expressions. The outer `{` and `}` are included verbatim in the output string.
 
 ## Special characters
 
 To include a brace, "{" or "}", in the text produced by an interpolated string, use two braces, "{{" or "}}". For more information, see the [Escaping braces](../../../standard/base-types/composite-formatting.md#escaping-braces) section of the [Composite formatting](../../../standard/base-types/composite-formatting.md) article.
 
-As the colon (":") has special meaning in an interpolation expression item, to use a [conditional operator](../operators/conditional-operator.md) in an interpolation expression, enclose that expression in parentheses.
+As the colon (":") has special meaning in an interpolation expression item, to use a [conditional operator](../operators/conditional-operator.md) in an interpolation expression. Enclose that expression in parentheses.
 
 The following example shows how to include a brace in a result string. It also shows how to use a conditional operator:
 
 :::code language="csharp" interactive="try-dotnet-method" source="./snippets/string-interpolation.cs" id="BraceAndConditional":::
 
-An interpolated [verbatim](verbatim.md) string starts with the both `$` and `@` characters. You can use `$` and `@` in any order: both `$@"..."` and `@$"..."` are valid interpolated verbatim strings. For more information about verbatim strings, see the [string](../builtin-types/reference-types.md) and [verbatim identifier](verbatim.md) articles.
+An interpolated [verbatim](verbatim.md) string starts with both the `$` and `@` characters. You can use `$` and `@` in any order: both `$@"..."` and `@$"..."` are valid interpolated verbatim strings. For more information about verbatim strings, see the [string](../builtin-types/reference-types.md) and [verbatim identifier](verbatim.md) articles.
 
 ## Culture-specific formatting
 
@@ -97,7 +97,7 @@ Beginning with C# 10 and .NET 6, the compiler checks if an interpolated string i
 > [!NOTE]
 > One side effect of interpolated string handlers is that a custom handler, including <xref:System.Runtime.CompilerServices.DefaultInterpolatedStringHandler?displayProperty=nameWithType>, may not evaluate all the interpolation expressions within the interpolated string under all conditions. That means side effects of those expressions may not occur.
 
-Prior to C# 10, if an interpolated string has the type `string`, it's typically transformed into a <xref:System.String.Format%2A?displayProperty=nameWithType> method call. The compiler may replace <xref:System.String.Format%2A?displayProperty=nameWithType> with <xref:System.String.Concat%2A?displayProperty=nameWithType> if the analyzed behavior would be equivalent to concatenation.
+Before C# 10, if an interpolated string has the type `string`, it's typically transformed into a <xref:System.String.Format%2A?displayProperty=nameWithType> method call. The compiler can replace <xref:System.String.Format%2A?displayProperty=nameWithType> with <xref:System.String.Concat%2A?displayProperty=nameWithType> if the analyzed behavior would be equivalent to concatenation.
 
 If an interpolated string has the type <xref:System.IFormattable> or <xref:System.FormattableString>, the compiler generates a call to the <xref:System.Runtime.CompilerServices.FormattableStringFactory.Create%2A?displayProperty=nameWithType> method.
 

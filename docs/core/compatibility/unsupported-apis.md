@@ -166,6 +166,7 @@ This article organizes the affected APIs by namespace.
 | - | - |
 | <xref:System.Reflection.Assembly.CodeBase?displayProperty=nameWithType> | All |
 | <xref:System.Reflection.Assembly.EscapedCodeBase?displayProperty=nameWithType> | All |
+| <xref:System.Reflection.Assembly.LoadFrom(System.String,System.Byte[],System.Configuration.Assemblies.AssemblyHashAlgorithm)?displayProperty=nameWithType> | All |
 | <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A?displayProperty=nameWithType> | All |
 | <xref:System.Reflection.Assembly.ReflectionOnlyLoadFrom(System.String)?displayProperty=nameWithType> | All |
 | <xref:System.Reflection.AssemblyName.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=nameWithType> | All |

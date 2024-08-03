@@ -1,6 +1,6 @@
 ---
-title: "Attributes interpreted by the C# compiler: Global attributes"
-ms.date: 12/16/2020
+title: "Attributes interpreted by the compiler: Global attributes"
+ms.date: 07/26/2024
 description: Attributes provide metadata the compiler uses to understand more semantics of your program
 ---
 # Assembly level attributes interpreted by the C# compiler
@@ -29,11 +29,11 @@ The following table shows the identity attributes.
 |---------------|-------------|
 |<xref:System.Reflection.AssemblyVersionAttribute>|Specifies the version of an assembly.|
 |<xref:System.Reflection.AssemblyCultureAttribute>|Specifies which culture the assembly supports.|
-|<xref:System.Reflection.AssemblyFlagsAttribute>|Specifies whether an assembly supports side-by-side execution on the same computer, in the same process, or in the same application domain.|
+|<xref:System.Reflection.AssemblyFlagsAttribute>|Specifies a bitwise combination of flags for an assembly, describing just-in-time (JIT) compiler options, whether the assembly is retargetable, and whether it has a full or tokenized public key. |
 
 ## Informational attributes
 
-You use informational attributes to provide additional company or product information for an assembly. The following table shows the informational attributes defined in the <xref:System.Reflection?displayProperty=nameWithType> namespace.
+You use informational attributes to provide more company or product information for an assembly. The following table shows the informational attributes defined in the <xref:System.Reflection?displayProperty=nameWithType> namespace.
 
 |Attribute|Purpose|
 |---------------|-------------|

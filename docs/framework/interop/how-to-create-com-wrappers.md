@@ -31,41 +31,41 @@ In Visual Studio, you can add the COM wrapper as a reference to your project.
 
      In **Solution Explorer**, note that the COM component is added to the References folder in your project.
 
-You can now write code to access the COM object. You can begin by declaring the object, such as with an `Imports` statement for Visual Basic or a `Using` statement for C#.
+You can now write code to access the COM object. You can begin by declaring the object, such as with an `Imports` statement for Visual Basic or a `Using` directive for C#.
 
 > [!NOTE]
 > If you want to program Microsoft Office components, first install the [Microsoft Office Primary Interop Assemblies Redistributable](https://www.microsoft.com/Download/details.aspx?id=3508).
-  
-### To create a runtime callable wrapper using .NET Framework tools  
-  
-- Run the [Tlbimp.exe (Type Library Importer)](../tools/tlbimp-exe-type-library-importer.md) tool.  
-  
- This tool creates an assembly that contains run-time metadata for the types defined in the original type library.  
-  
-## Wrap Managed Objects in a Native Application  
-  
-### To create a COM callable wrapper using Visual Studio  
-  
-1. Create a Class Library project for the managed class that you want to run in native code. The class must have a parameterless constructor.  
-  
-     Verify that you have a complete four-part version number for your assembly in the AssemblyInfo file. This number is required for maintaining versioning in the Windows registry. For more information about version numbers, see [Assembly Versioning](../../standard/assembly/versioning.md).  
-  
-2. On the **Project** menu, click **Properties**.  
-  
-3. Click the **Compile** tab.  
-  
-4. Select the **Register for COM interop** check box.  
-  
- When you build the project, the assembly is automatically registered for COM interop. If you are building a native application in Visual Studio, you can use the assembly by clicking **Add Reference** on the **Project** menu.  
-  
-### To create a COM callable wrapper using .NET Framework tools  
-  
-Run the [Regasm.exe (Assembly Registration Tool)](../tools/regasm-exe-assembly-registration-tool.md) tool.  
-  
-This tool reads the assembly metadata and adds the necessary entries to the registry. As a result, COM clients can create .NET Framework classes transparently. You can use the assembly as if it were a native COM class.  
-  
-You can run Regasm.exe on an assembly located in any directory, and then run the [Gacutil.exe (Global Assembly Cache Tool)](../tools/gacutil-exe-gac-tool.md) to move it to the global assembly cache. Moving the assembly does not invalidate location registry entries, because the global assembly cache is always examined if the assembly is not found elsewhere.  
-  
+
+### To create a runtime callable wrapper using .NET Framework tools
+
+- Run the [Tlbimp.exe (Type Library Importer)](../tools/tlbimp-exe-type-library-importer.md) tool.
+
+ This tool creates an assembly that contains run-time metadata for the types defined in the original type library.
+
+## Wrap Managed Objects in a Native Application
+
+### To create a COM callable wrapper using Visual Studio
+
+1. Create a Class Library project for the managed class that you want to run in native code. The class must have a parameterless constructor.
+
+     Verify that you have a complete four-part version number for your assembly in the AssemblyInfo file. This number is required for maintaining versioning in the Windows registry. For more information about version numbers, see [Assembly Versioning](../../standard/assembly/versioning.md).
+
+2. On the **Project** menu, click **Properties**.
+
+3. Click the **Compile** tab.
+
+4. Select the **Register for COM interop** check box.
+
+ When you build the project, the assembly is automatically registered for COM interop. If you are building a native application in Visual Studio, you can use the assembly by clicking **Add Reference** on the **Project** menu.
+
+### To create a COM callable wrapper using .NET Framework tools
+
+Run the [Regasm.exe (Assembly Registration Tool)](../tools/regasm-exe-assembly-registration-tool.md) tool.
+
+This tool reads the assembly metadata and adds the necessary entries to the registry. As a result, COM clients can create .NET Framework classes transparently. You can use the assembly as if it were a native COM class.
+
+You can run Regasm.exe on an assembly located in any directory, and then run the [Gacutil.exe (Global Assembly Cache Tool)](../tools/gacutil-exe-gac-tool.md) to move it to the global assembly cache. Moving the assembly does not invalidate location registry entries, because the global assembly cache is always examined if the assembly is not found elsewhere.
+
 ## See also
 
 - [Runtime Callable Wrapper](../../standard/native-interop/runtime-callable-wrapper.md)

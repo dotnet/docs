@@ -1,14 +1,23 @@
 ---
 title: Orleans overview
 description: An introduction to .NET Orleans.
-ms.date: 05/10/2022
+ms.date: 07/03/2024
 ---
 
 # Microsoft Orleans
 
-Orleans is a cross-platform framework for building robust, scalable distributed applications. Distributed applications are defined as apps that span more than a single process, often beyond hardware boundaries using peer-to-peer communication. Orleans scales from a single on-premises server to hundreds to thousands of distributed, highly available applications in the cloud. Orleans extends familiar concepts and C# idioms to multi-server environments. Orleans is designed to scale elastically. When a host joins a cluster, it can accept new activations. When a host leaves the cluster, either because of scale down or a machine failure, the previous activations on that host will be reactivated on the remaining hosts as needed. An Orleans cluster can be scaled down to a single host. The same properties that enable elastic scalability also enable fault tolerance. The cluster automatically detects and quickly recovers from failures.
+Orleans:
 
-One of the primary design objectives of Orleans is to simplify the complexities of distributed application development by providing a common set of patterns and APIs. Developers familiar with single-server application development can easily transition to building resilient, scalable cloud-native services and other distributed applications using Orleans. For this reason, Orleans has often been referred to as "Distributed .NET" and is the framework of choice when building cloud-native apps. Orleans runs anywhere that .NET is supported. This includes hosting on Linux, Windows, and macOS. Orleans apps can be deployed to Kubernetes, virtual machines, and PaaS services such as [Azure App Service](/azure/app-service/overview) and [Azure Container Apps](/azure/container-apps/overview).
+* Is a cross-platform framework for building robust, scalable distributed apps. Distributed apps are defined as apps that span more than a single process, often beyond hardware boundaries using peer-to-peer communication.
+* Scales from a single on-premises server to thousands of distributed, highly available apps in the cloud.
+* Extends familiar concepts and C# idioms to multi-server environments.
+* Is designed to scale elastically. When a host joins a cluster, it can accept new activations. When a host leaves the cluster, the previous activations on that host will be reactivated on the remaining hosts as needed. A host may leave a cluster because of scale down or a machine failure.  An Orleans cluster can be scaled down to a single host. The same properties that enable elastic scalability enable fault tolerance. The cluster automatically detects and quickly recovers from failures.
+* Simplifies the complexities of distributed app development by providing a common set of patterns and APIs.
+* Enables developers familiar with single-server app development to transition to building resilient, scalable cloud-native services and distributed apps.
+* Is sometimes called "Distributed .NET".
+* Is the framework of choice when building cloud-native apps.
+* Runs anywhere that .NET is supported. This includes hosting on Linux, Windows, and macOS.
+* Apps can be deployed to Kubernetes, virtual machines, and PaaS services such as [Azure App Service](/azure/app-service/overview) and [Azure Container Apps](/azure/container-apps/overview).
 
 ## The "Actor Model"
 
@@ -17,7 +26,7 @@ Orleans is based on the "actor model". The actor model originated in the early 1
 > [!NOTE]
 > Actors are purely logical entities that _always_ exist, virtually. An actor cannot be explicitly created nor destroyed, and its virtual existence is unaffected by the failure of a server that executes it. Since actors always exist, they are always addressable.
 
-This is a novel approach to building a new generation of distributed applications for the Cloud era. The Orleans programming model tames the complexity inherent to highly parallel distributed applications _without_ restricting capabilities or imposing constraints on the developer.
+This is a novel approach to building a new generation of distributed apps for the Cloud era. The Orleans programming model tames the complexity inherent to highly parallel distributed apps _without_ restricting capabilities or imposing constraints on the developer.
 
 For more information, see [Orleans: Virtual Actors](https://www.microsoft.com/research/project/orleans-virtual-actors) via Microsoft Research. A virtual actor is represented as an Orleans grain.
 

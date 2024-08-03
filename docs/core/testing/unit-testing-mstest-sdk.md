@@ -17,7 +17,7 @@ It's possible to build a MSTest app without this SDK, however, the MSTest SDK is
 
 The MSTest SDK discovers and runs your tests using the [MSTest runner](./unit-testing-mstest-runner-intro.md).
 
-How to use the `MSTest.Sdk` in a project:
+You can enable `MSTest.Sdk` in a project by simply updating the `Sdk` attribute of the `Project` node of your project:
 
 ```xml
 <Project Sdk="MSTest.Sdk/3.3.1">
@@ -33,15 +33,44 @@ How to use the `MSTest.Sdk` in a project:
 
 > [!NOTE]
 > `/3.3.1` is given as example as it's the first version providing the SDK but it can be replaced with any newer version.
-> Alternatively, you can set the SDK version at solution level using the _global.json_. For more information, see [Use MSBuild project SDKs](/visualstudio/msbuild/how-to-use-project-sdk?#how-project-sdks-are-resolved).
+
+To simplify handling of versions we recommend setting the SDK version at solution level using the _global.json_. For example, your project file would look like:
+
+```xml
+<Project Sdk="MSTest.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+    </PropertyGroup>
+
+    <!-- references to the code to test -->
+
+</Project>
+```
+
+Then, you would have a _global.json_ file that specifies the `MSTest.Sdk` version as follows:
+
+```json
+{
+    "msbuild-sdks": {
+        "MSTest.Sdk": "3.3.1"
+    }
+}
+```
+
+For more information, see [Use MSBuild project SDKs](/visualstudio/msbuild/how-to-use-project-sdk#how-project-sdks-are-resolved).
 
 When you `build` the project, all the needed components are restored and installed using the standard NuGet workflow set by your project.
 
 You don't need anything else to build and run your tests and you can use the same tooling (for example, `dotnet test` or Visual Studio) used by a ["classic" MSTest project](./unit-testing-with-mstest.md).
 
+> [!IMPORTANT]
+> By switching to the `MSTest.Sdk` you've fully opted-in to using the [MSTest runner](./unit-testing-mstest-runner-intro.md), including with [dotnet test](./unit-testing-platform-integration-dotnet-test.md#dotnet-test---microsofttestingplatform-mode) which requires modifying your CI, local CLI calls and also impacts the available entries of the _.runsettings_.
+> You can use `MSTest.Sdk` and still keep the old integrations and tools by instead switching the [runner](#select-the-runner).
+
 ## Select the runner
 
-By default, MSTest SDK relies on MSTest runner, but you can easily switch to VSTest by adding the property `<UseVSTest>true</UseVSTest>`.
+By default, MSTest SDK relies on [MSTest runner](./unit-testing-mstest-runner-intro.md), but you can easily switch to [VSTest](/visualstudio/test/vstest-console-options) by adding the property `<UseVSTest>true</UseVSTest>`.
 
 ## Extend MSTest runner
 
@@ -115,15 +144,75 @@ Or to disable an extension that is coming from the selected profile. In this cas
 </Project>
 ```
 
+## Features
+
+Outside of the selection of the runner and runner specific extensions, `MSTest.Sdk` also provides additional features to simplify and enhance your testing experience.
+
+### .NET Aspire
+
+.NET Aspire is an opinionated, cloud ready stack for building observable, production ready, distributed applications. .NET Aspire is delivered through a collection of NuGet packages that handle specific cloud-native concerns. For more information, see the [.NET Aspire docs](/dotnet/aspire/get-started/aspire-overview).
+
+> [!NOTE]
+> This feature is available from MSTest.Sdk 3.4.0
+
+By setting the property `EnableAspireTesting` to `true` you can bring all dependencies and default usings you would need for testing with `Aspire` and `MSTest`.
+
+```xml
+<Project Sdk="MSTest.Sdk/3.4.0">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <EnableAspireTesting>true</EnableAspireTesting>
+    </PropertyGroup>
+
+    <!-- references to the code to test -->
+
+</Project>
+```
+
+### Playwright
+
+Playwright enables reliable end-to-end testing for modern web apps. For more information, see the official [Playwright docs](https://playwright.dev/dotnet/docs/intro).
+
+> [!NOTE]
+> This feature is available from MSTest.Sdk 3.4.0
+
+By setting the property `EnablePlaywright` to `true` you can bring all dependencies and default usings you would need for testing with `Playwright` and `MSTest`.
+
+```xml
+<Project Sdk="MSTest.Sdk/3.4.0">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <EnablePlaywright>true</EnablePlaywright>
+    </PropertyGroup>
+
+    <!-- references to the code to test -->
+
+</Project>
+```
+
 ## Migrating to MSTest SDK
+
+Consider the following steps that are required to migrate to the MSTest SDK.
+
+### Update your project(s)
 
 When migrating an existing MSTest test project to MSTest SDK, start by replacing the `Sdk="Microsoft.NET.Sdk"` entry at the top of your test project with `Sdk="MSTest.Sdk/3.3.1"`
 
-`Sdk="MSTest.Sdk/3.3.1"`
-
 ```diff
 - Sdk="Microsoft.NET.Sdk"
-+ Sdk="MSTest.Sdk/3.3.1"
++ Sdk="MSTest.Sdk"
+```
+
+Add the version to your `global.json`:
+
+```json
+{
+    "msbuild-sdks": {
+        "MSTest.Sdk": "3.3.1"
+    }
+}
 ```
 
 You can then start simplifying your project.
@@ -148,3 +237,18 @@ Removing default package references:
 ```
 
 Finally, based on the extensions profile you're using, you can also remove some of the `Microsoft.Testing.Extensions.*` packages.
+
+### Update your CI
+
+Once you've updated your projects, if you're using `MSTest runner` (default) and if you rely on `dotnet test` to run your tests, you have to update your CI configuration. For more information, see [dotnet test integration](./unit-testing-platform-integration-dotnet-test.md#dotnet-test---microsofttestingplatform-mode) to guide your understanding of all the required changes.
+
+Here's an example update when using the `DotNetCoreCLI` task in Azure DevOps:
+
+```diff
+\- task: DotNetCoreCLI@2
+  inputs:
+    command: 'test'
+    projects: '**/**.sln'
+-    arguments: '--configuration Release'
++    arguments: '--configuration Release -p:TestingPlatformCommandLineArguments="--report-trx --results-directory $(Agent.TempDirectory) --coverage"'
+```

@@ -21,66 +21,76 @@ items:
         href: ../../core/sdk/artifacts-output.md
       - name: Error messages
         items:
-          - name: List of all SDK errors
-            href: ../../core/tools/sdk-errors/index.md
-          - name: NETSDK1004
-            href: ../../core/tools/sdk-errors/netsdk1004.md
-          - name: NETSDK1005 and NETSDK1047
-            href: ../../core/tools/sdk-errors/netsdk1005.md
-          - name: NETSDK1013
-            href: ../../core/tools/sdk-errors/netsdk1013.md
-          - name: NETSDK1022
-            href: ../../core/tools/sdk-errors/netsdk1022.md
-          - name: NETSDK1045
-            href: ../../core/tools/sdk-errors/netsdk1045.md
-          - name: NETSDK1059
-            href: ../../core/tools/sdk-errors/netsdk1059.md
-          - name: NETSDK1064
-            href: ../../core/tools/sdk-errors/netsdk1064.md
-          - name: NETSDK1071
-            href: ../../core/tools/sdk-errors/netsdk1071.md
-          - name: NETSDK1073
-            href: ../../core/tools/sdk-errors/netsdk1073.md
-          - name: NETSDK1079
-            href: ../../core/tools/sdk-errors/netsdk1079.md
-          - name: NETSDK1080
-            href: ../../core/tools/sdk-errors/netsdk1080.md
-          - name: NETSDK1082
-            href: ../../core/tools/sdk-errors/netsdk1082.md
-          - name: NETSDK1083
-            href: ../../core/tools/sdk-errors/netsdk1083.md
-          - name: NETSDK1100
-            href: ../../core/tools/sdk-errors/netsdk1100.md
-          - name: NETSDK1112
-            href: ../../core/tools/sdk-errors/netsdk1112.md
-          - name: NETSDK1130
-            href: ../../core/tools/sdk-errors/netsdk1130.md
-          - name: NETSDK1135
-            href: ../../core/tools/sdk-errors/netsdk1135.md
-          - name: NETSDK1136
-            href: ../../core/tools/sdk-errors/netsdk1136.md
-          - name: NETSDK1137
-            href: ../../core/tools/sdk-errors/netsdk1137.md
-          - name: NETSDK1138
-            href: ../../core/tools/sdk-errors/netsdk1138.md
-          - name: NETSDK1141
-            href: ../../core/tools/sdk-errors/netsdk1141.md
-          - name: NETSDK1145
-            href: ../../core/tools/sdk-errors/netsdk1145.md
-          - name: NETSDK1147
-            href: ../../core/tools/sdk-errors/netsdk1147.md
-          - name: NETSDK1149
-            href: ../../core/tools/sdk-errors/netsdk1149.md
-          - name: NETSDK1174
-            href: ../../core/tools/sdk-errors/netsdk1174.md
-          - name: NETSDK1182
-            href: ../../core/tools/sdk-errors/netsdk1182.md
-          - name: NETSDK1195
-            href: ../../core/tools/sdk-errors/netsdk1195.md
-          - name: NETSDK1202
-            href: ../../core/tools/sdk-errors/netsdk1202.md
-          - name: NETSDK1206
-            href: ../../core/tools/sdk-errors/netsdk1206.md
+          - name: NETSDK errors
+            items:
+            - name: List of NETSDK errors
+              href: ../../core/tools/sdk-errors/index.md
+            - name: NETSDK1004
+              href: ../../core/tools/sdk-errors/netsdk1004.md
+            - name: NETSDK1005 and NETSDK1047
+              href: ../../core/tools/sdk-errors/netsdk1005.md
+            - name: NETSDK1013
+              href: ../../core/tools/sdk-errors/netsdk1013.md
+            - name: NETSDK1022
+              href: ../../core/tools/sdk-errors/netsdk1022.md
+            - name: NETSDK1045
+              href: ../../core/tools/sdk-errors/netsdk1045.md
+            - name: NETSDK1059
+              href: ../../core/tools/sdk-errors/netsdk1059.md
+            - name: NETSDK1064
+              href: ../../core/tools/sdk-errors/netsdk1064.md
+            - name: NETSDK1071
+              href: ../../core/tools/sdk-errors/netsdk1071.md
+            - name: NETSDK1073
+              href: ../../core/tools/sdk-errors/netsdk1073.md
+            - name: NETSDK1079
+              href: ../../core/tools/sdk-errors/netsdk1079.md
+            - name: NETSDK1080
+              href: ../../core/tools/sdk-errors/netsdk1080.md
+            - name: NETSDK1082
+              href: ../../core/tools/sdk-errors/netsdk1082.md
+            - name: NETSDK1083
+              href: ../../core/tools/sdk-errors/netsdk1083.md
+            - name: NETSDK1100
+              href: ../../core/tools/sdk-errors/netsdk1100.md
+            - name: NETSDK1112
+              href: ../../core/tools/sdk-errors/netsdk1112.md
+            - name: NETSDK1130
+              href: ../../core/tools/sdk-errors/netsdk1130.md
+            - name: NETSDK1135
+              href: ../../core/tools/sdk-errors/netsdk1135.md
+            - name: NETSDK1136
+              href: ../../core/tools/sdk-errors/netsdk1136.md
+            - name: NETSDK1137
+              href: ../../core/tools/sdk-errors/netsdk1137.md
+            - name: NETSDK1138
+              href: ../../core/tools/sdk-errors/netsdk1138.md
+            - name: NETSDK1141
+              href: ../../core/tools/sdk-errors/netsdk1141.md
+            - name: NETSDK1145
+              href: ../../core/tools/sdk-errors/netsdk1145.md
+            - name: NETSDK1147
+              href: ../../core/tools/sdk-errors/netsdk1147.md
+            - name: NETSDK1149
+              href: ../../core/tools/sdk-errors/netsdk1149.md
+            - name: NETSDK1174
+              href: ../../core/tools/sdk-errors/netsdk1174.md
+            - name: NETSDK1182
+              href: ../../core/tools/sdk-errors/netsdk1182.md
+            - name: NETSDK1195
+              href: ../../core/tools/sdk-errors/netsdk1195.md
+            - name: NETSDK1202
+              href: ../../core/tools/sdk-errors/netsdk1202.md
+            - name: NETSDK1206
+              href: ../../core/tools/sdk-errors/netsdk1206.md
+          - name: BuildCheck rules
+            items:
+            - name: Index of rules
+              href: ../../core/tools/buildcheck-rules/index.md
+            - name: BC0101
+              href: ../../core/tools/buildcheck-rules/bc0101.md
+            - name: BC0102
+              href: ../../core/tools/buildcheck-rules/bc0102.md
   - name: .NET CLI
     items:
       - name: Overview
@@ -168,6 +178,18 @@ items:
                 href: ../../core/tools/dotnet-nuget-trust.md
               - name: dotnet nuget sign
                 href: ../../core/tools/dotnet-nuget-sign.md
+              - name: dotnet nuget why
+                href: ../../core/tools/dotnet-nuget-why.md
+          - name: dotnet nuget config
+            items:
+              - name: dotnet nuget config get
+                href: ../../core/tools/dotnet-nuget-config-get.md
+              - name: dotnet nuget config set
+                href: ../../core/tools/dotnet-nuget-config-set.md
+              - name: dotnet nuget config unset
+                href: ../../core/tools/dotnet-nuget-config-unset.md
+              - name: dotnet nuget config paths
+                href: ../../core/tools/dotnet-nuget-config-paths.md
           - name: dotnet pack
             href: ../../core/tools/dotnet-pack.md
           - name: dotnet package search
@@ -1748,6 +1770,10 @@ items:
             href: ../../fundamentals/syslib-diagnostics/syslib0052.md
           - name: SYSLIB0053
             href: ../../fundamentals/syslib-diagnostics/syslib0053.md
+          - name: SYSLIB0054
+            href: ../../fundamentals/syslib-diagnostics/syslib0054.md
+          - name: SYSLIB0055
+            href: ../../fundamentals/syslib-diagnostics/syslib0055.md
       - name: Source-generated code
         items:
           - name: Overview

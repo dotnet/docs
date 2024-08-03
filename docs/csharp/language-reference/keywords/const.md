@@ -1,6 +1,6 @@
 ---
 description: "const keyword - C# Reference"
-title: "const keyword - C# Reference"
+title: "const keyword"
 ms.date: 06/20/2021
 f1_keywords: 
   - "const_CSharpKeyword"
@@ -24,8 +24,7 @@ Beginning with C# 10, [interpolated strings](../tokens/interpolated.md) may be c
 ```csharp
 const string Language = "C#";
 const string Platform = ".NET";
-const string Version = "10.0";
-const string FullProductName = $"{Platform} - Language: {Language} Version: {Version}";
+const string FullProductName = $"{Platform} - Language: {Language}";
 ```
 
 ## Remarks

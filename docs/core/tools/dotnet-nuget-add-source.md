@@ -16,7 +16,7 @@ ms.date: 03/20/2020
 ```dotnetcli
 dotnet nuget add source <PACKAGE_SOURCE_PATH> [--name <SOURCE_NAME>] [--username <USER>]
     [--password <PASSWORD>] [--store-password-in-clear-text]
-    [--valid-authentication-types <TYPES>] [--configfile <FILE>]
+    [--valid-authentication-types <TYPES>] [--configfile <FILE>] [--allow-insecure-connections]
 
 dotnet nuget add source -h|--help
 ```
@@ -38,6 +38,10 @@ The `dotnet nuget add source` command adds a new package source to your NuGet co
 
 [!INCLUDE [configfile](../../../includes/cli-configfile.md)]
 
+- **`--allow-insecure-connections`**
+  
+  Allows HTTP connections for adding or updating packages. This method is not secure. Available since .NET 9 SDK.
+  
 - **`-n|--name <SOURCE_NAME>`**
 
   Name of the source.

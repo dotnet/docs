@@ -35,7 +35,7 @@ This topic explains how to implement a discovery proxy. For more information abo
 
 1. Add a new code file to your project and name it DiscoveryProxy.cs.
 
-2. Add the following `using` statements to DiscoveryProxy.cs.
+2. Add the following `using` directives to DiscoveryProxy.cs.
 
     ```csharp
     using System;
@@ -323,7 +323,7 @@ The OnBegin.. / OnEnd.. methods provide the logic for the subsequent discovery o
 
 2. Create a new code file called AsyncResult.cs.
 
-3. Add the following `using` statements to AsyncResult.cs.
+3. Add the following `using` directives to AsyncResult.cs.
 
     ```csharp
     using System;
@@ -482,7 +482,7 @@ The OnBegin.. / OnEnd.. methods provide the logic for the subsequent discovery o
 
 1. Open the Program.cs file in the DiscoveryProxyExample project.
 
-2. Add the following `using` statements.
+2. Add the following `using` directives.
 
     ```csharp
     using System;

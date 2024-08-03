@@ -3,7 +3,7 @@ title: Communicating Between Components
 description: Providing loosely-coupled messaging for a .NET MAUI application
 author: michaelstonis
 no-loc: [MAUI]
-ms.date: 03/02/2023
+ms.date: 05/30/2024
 ---
 
 # Communicating between loosely coupled components
@@ -22,7 +22,7 @@ The MVVM Toolkit `IMessenger` interface describes the publish-subscribe pattern,
 > The MVVM Toolkit Messenger is part of the `CommunityToolkit.Mvvm` package. For information on how to add the package to your project, see [Introduction to the MVVM Toolkit](/dotnet/communitytoolkit/mvvm/) on the Microsoft Developer Center.
 
 > [!WARNING]
-> .NET MAUI contains a built-in `MessagingCenter` class which is no longer recommended for use and should be transitioned to the MVVM Toolkit Messenger.
+> .NET MAUI contains a built-in `MessagingCenter` class that's no longer recommended for use. Use the MVVM Toolkit Messenger instead.
 
 The `IMessenger` interface allows for multicast publish-subscribe functionality. This means that there can be multiple publishers that publish a single message, and there can be multiple subscribers listening to the same message. The image below illustrates this relationship:
 
@@ -33,9 +33,9 @@ There are two implementations of the `IMessenger` interface that come with the `
 > [!NOTE]
 > While the `IMessenger` interface permits communication between loosely-coupled classes, it does not offer the only architectural solution to this issue. For example, communication between a view model and a view can also be achieved by the binding engine and through property change notifications. In addition, communication between two view models can also be achieved by passing data during navigation.
 
-The eShopOnContainers multi-platform app uses the `WeakReferenceMessenger` class to communicate between loosely coupled components. The app defines a single message named `AddProductMessage`. The `AddProductMessage` is published by the `CatalogViewModel` class when an item is added to the shopping basket. In return, the `CatalogView` class subscribes to the message and uses this to highlight the product adds with animation in response.
+The eShop multi-platform app uses the `WeakReferenceMessenger` class to communicate between loosely coupled components. The app defines a single message named `AddProductMessage`. The `AddProductMessage` is published by the `CatalogViewModel` class when an item is added to the shopping basket. In return, the `CatalogView` class subscribes to the message and uses this to highlight the product adds with animation in response.
 
-In the eShopOnContainers multi-platform app, `WeakReferenceMessenger` is used to update the UI in response to an action occurring in another class. Therefore, messages are published from the thread that the class is executing on, with subscribers receiving the message on the same thread.
+In the eShop multi-platform app, `WeakReferenceMessenger` is used to update the UI in response to an action occurring in another class. Therefore, messages are published from the thread that the class is executing on, with subscribers receiving the message on the same thread.
 
 > [!TIP]
 > Marshal to the UI or main thread when performing UI updates. If updates to user interfaces are not made on this thread, it can cause the application to crash or become unstable.
@@ -46,7 +46,7 @@ For more information about `Messenger`, see [Messenger](/dotnet/communitytoolkit
 
 ## Defining a message
 
-`IMessenger` messages are custom objects that provide custom payloads. The following code example shows the `AddProductMessage` message defined within the eShopOnContainers multi-platform app:
+`IMessenger` messages are custom objects that provide custom payloads. The following code example shows the `AddProductMessage` message defined within the eShop multi-platform app:
 
 ```csharp
 public class AddProductMessage : ValueChangedMessage<int>
@@ -73,7 +73,7 @@ The `Send` method will publish the message, and its payload data, using a fire-a
 
 ## Subscribing to a message
 
-Subscribers can register to receive a message using one of the `IMessenger.Register<T>` overloads. The following code example demonstrates how the eShopOnContainers multi-platform app subscribes to, and processes, the `AddProductMessage` message:
+Subscribers can register to receive a message using one of the `IMessenger.Register<T>` overloads. The following code example demonstrates how the eShop multi-platform app subscribes to, and processes, the `AddProductMessage` message:
 
 ```csharp
 WeakReferenceMessenger.Default

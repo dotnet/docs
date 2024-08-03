@@ -43,28 +43,8 @@
       href: ./migration/vm.md
     - name: Migrate a SQL Server database to Azure
       href: ./migration/sql.md
-- name: Azure AI apps 
-  items: 
-  - name: Develop with Azure AI services
-    href: ../ai/azure-ai-for-dotnet-developers.md
-  - name: Quickstarts
-    items:
-      - name: Summarize text
-        href: ../ai/quickstarts/quickstart-openai-summarize-text.md
-      - name: Build a chat app
-        href: ../ai/quickstarts/get-started-azure-openai.md
-      - name: Create an app to chat about your data
-        href: ../ai/quickstarts/quickstart-ai-chat-with-data.md
-      - name: Execute a local .NET function
-        href: ../ai/quickstarts/quickstart-azure-openai-tool.md
-      - name: Generate images
-        href: ../ai/quickstarts/quickstart-openai-generate-images.md
-  - name: Get started with the .NET enterprise chat sample
-    href: ../ai/get-started-app-chat-template.md
-  - name: Scale Azure OpenAI with Azure Container apps
-    href: ../ai/get-started-app-chat-scaling-with-azure-container-apps.md
-  - name: .NET + AI ecosystem
-    href: ../ai/dotnet-ai-ecosystem.md
+- name: Azure AI for .NET
+  href: ../ai/get-started/dotnet-ai-overview.md
 - name: Azure SDK for .NET
   items:
     - name: What is the Azure SDK for .NET?
@@ -101,6 +81,8 @@
       href: ./sdk/unit-testing-mocking.md
     - name: Configure a proxy server
       href: ./sdk/azure-sdk-configure-proxy.md
+    - name: Library method types
+      href: ./sdk/protocol-convenience-methods.md
     - name: Packages list
       href: ./sdk/packages.md
     - name: SDK example

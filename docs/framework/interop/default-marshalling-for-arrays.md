@@ -321,12 +321,12 @@ void New(long [][][] ar );
 
 ```vb
 Sub New1( ar As System.Array )
-Sub New2( <MarshalAs(UnmanagedType.Safe array)> ar As System.Array )
+Sub New2( <MarshalAs(UnmanagedType.SafeArray)> ar As System.Array )
 ```
 
 ```csharp
 void New1( System.Array ar );
-void New2( [MarshalAs(UnmanagedType.Safe array)] System.Array ar );
+void New2( [MarshalAs(UnmanagedType.SafeArray)] System.Array ar );
 ```
 
 #### Unmanaged signature

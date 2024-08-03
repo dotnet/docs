@@ -1,6 +1,6 @@
 ---
-title: "BinaryFormatter Migration Guide: Read NRBF Payloads"
-description: "Reading the payloads that were created using BinaryFormatter."
+title: "BinaryFormatter migration guide: Read BinaryFormatter (NRBF) payloads"
+description: "Safely read payloads created by BinaryFormatter in '.NET Remoting: Binary Format (NRBF).'"
 ms.date: 5/31/2024
 no-loc: [BinaryFormatter, Serialization]
 dev_langs:
@@ -12,16 +12,17 @@ helpviewer_keywords:
   - "objects, serializing"
 ---
 
-# Read NRBF payloads
+# Read BinaryFormatter (NRBF) payloads
+
+BinaryFormatter used the '[.NET Remoting: Binary Format](/openspecs/windows_protocols/ms-nrbf/)' for serialization. This format is known by its abbreviation of MS-NRBF or just NRBF. A common challenge involved in migrating from BinaryFormatter is dealing with BinaryFormatter payloads persisted to storage as reading these payloads previously required BinaryFormatter. Some systems need to retain the ability to read these payloads for gradual migrations to new serializers while avoiding a reference to BinaryFormatter itself.
+
+As part of .NET 9, a new `NrbfDecoder` class was introduced to decode NRBF payloads without performing _deserialization_ of the payload. This API can safely be used to decode trusted or untrusted payloads without any of the risks that BinaryFormatter deserialization carries. However, `NrbfDecoder` merely decodes the data into structures an application can further process. Care must be taken when using `NrbfDecoder` to safely load the data into the appropriate instances.
 
 ## NrbfDecoder
 
 `NrbfDecoder` is part of the new [System.Formats.Nrbf](https://www.nuget.org/packages/System.Formats.Nrbf) NuGet package. It targets not only .NET 9, but also older monikers like .NET Standard 2.0 and .NET Framework. That multi-targeting makes it possible for everyone who uses a supported version of .NET to migrate away from `BinaryFormatter`.
 
-`NrbfDecoder` can read any payload that was serialized with `BinaryFormatter` using `FormatterTypeStyle.TypesAlways` (the default).
-`NrbfDecoder` cannot be used for the output of BinaryFormatter for any other `FormatterTypeStyle`.
-
-Only non-zero indexed arrays and types specific to remoting (which were never ported to .NET (Core)) are **not supported**.
+`NrbfDecoder` can read payloads that were serialized with `BinaryFormatter` using `FormatterTypeStyle.TypesAlways` (the default). `NrbfDecoder` cannot be used for the output of BinaryFormatter for any other `FormatterTypeStyle`.
 
 `NrbfDecoder` is designed to treat all input as untrusted. As such it has these principles:
 
@@ -32,6 +33,8 @@ Only non-zero indexed arrays and types specific to remoting (which were never po
 - Use collision-resistant randomized hashing to store records referenced by other records (to avoid running out of memory for dictionary backed by an array whose size depends on the number of hash-code collisions).
 - Only primitive types can be instantiated in an implicit way. Arrays can be instantiated on demand. Other types are never instantiated.
 
+When using `NrbfDecoder`, it is important not to reintroduce those capabilities in general-purpose code as doing so would negate these safeguards.
+
 ### Deserialize a closed set of types
 
 `NrbfDecoder` is useful only when the list of serialized types is a known, closed set. To put it another way, you need to know up front what you want to read, because you also need to create instances of those types and populate them with data that was read from the payload. Consider two opposite examples:
@@ -39,13 +42,13 @@ Only non-zero indexed arrays and types specific to remoting (which were never po
 - All `[Serializable]` types from [Quartz.NET](https://github.com/search?q=repo%3Aquartznet%2Fquartznet+%5BSerializable%5D+language%3AC%23&type=code&l=C%23) that can be persisted by the library itself are `sealed`. So there are no custom types that users could create, and the payload can contain only known types. The types also provide public constructors, so it's possible to recreate these types based on the information read from the payload.
 - The `SettingsPropertyValue` type from the `System.Configuration.ConfigurationManager` library exposes an `object PropertyValue` that might internally use `BinaryFormatter` to serialize and deserialize any object that was stored in the configuration file. It could be used to store an integer, a custom type, a dictionary, or literally anything.  Because of that, **it's impossible to migrate this library without introducing breaking changes to the API**.
 
-### Identify BinaryFormatter payload
+### Identify NRBF payloads
 
 `NrbfDecoder` provides two `StartsWithPayloadHeader` methods that let you check whether a given stream or buffer starts with the NRBF header.
 
 It's recommended to use these methods when you're migrating payloads persisted with `BinaryFormatter` to a [different serializer](./choosing-a-serializer.md):
 
-- Check if the payload read from storage is an [NRBF](/openspecs/windows_protocols/ms-nrbf/75b9fe09-be15-475f-85b8-ae7b7558cfe5) payload.
+- Check if the payload read from storage is an [NRBF](/openspecs/windows_protocols/ms-nrbf/) payload.
 - If so, read it with `NrbfDecoder`, serialize it back with a new serializer, and overwrite the data in the storage.
 - If not, use the new serializer to deserialize the data.
 
@@ -96,7 +99,7 @@ static T Pseudocode<T>(Stream payload)
 }
 ```
 
-There are more than a dozen different serialization [record types](/openspecs/windows_protocols/ms-nrbf/954a0657-b901-4813-9398-4ec732fe8b32). This library provides a set of abstractions, so you only need to learn a few of them:
+There are more than a dozen different serialization [record types](/openspecs/windows_protocols/ms-nrbf/). This library provides a set of abstractions, so you only need to learn a few of them:
 
 - `PrimitiveTypeRecord<T>`: describes all primitive types natively supported by the NRBF (`string`, `bool`, `byte`, `sbyte`, `char`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `float`, `double`, `decimal`, `TimeSpan`, and `DateTime`).
   - Exposes the value via the `Value` property.
@@ -203,6 +206,8 @@ ComplexType3D[] output = records.Select(classRecord => new ComplexType3D()
 }).ToArray();
 
 ```
+
+.NET Framework supported non-zero indexed arrays within NRBF payloads, but this support was never ported to .NET (Core). `NrbfDecoder` therefore does not support decoding non-zero indexed arrays.
 
 #### SZArrayRecord
 

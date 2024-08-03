@@ -1,7 +1,7 @@
 ---
-title: "await operator - asynchronously wait for a task to complete "
+title: "await operator - asynchronously wait for a task to complete"
 description: "The C# `await` operator asynchronously suspends evaluation of the enclosing `async` method."
-ms.date: 11/29/2022
+ms.date: 07/01/2024
 f1_keywords: 
   - "await_CSharpKeyword"
 helpviewer_keywords: 
@@ -23,7 +23,7 @@ The preceding example uses the [async `Main` method](../../fundamentals/program-
 > [!NOTE]
 > For an introduction to asynchronous programming, see [Asynchronous programming with async and await](../../asynchronous-programming/index.md). Asynchronous programming with `async` and `await` follows the [task-based asynchronous pattern](../../../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md).
 
-You can use the `await` operator only in a method, [lambda expression](lambda-expressions.md), or [anonymous method](delegate-operator.md) that is modified by the [async](../keywords/async.md) keyword. Within an async method, you can't use the `await` operator in the body of a synchronous function, inside the block of a [lock statement](../statements/lock.md), and in an [unsafe](../keywords/unsafe.md) context.
+You can use the `await` operator only in a method, [lambda expression](lambda-expressions.md), or [anonymous method](delegate-operator.md) that is modified by the [async](../keywords/async.md) keyword. Within an async method, you can't use the `await` operator in the body of a synchronous local function, inside the block of a [lock statement](../statements/lock.md), and in an [unsafe](../keywords/unsafe.md) context.
 
 The operand of the `await` operator is usually of one of the following .NET types: <xref:System.Threading.Tasks.Task>, <xref:System.Threading.Tasks.Task%601>, <xref:System.Threading.Tasks.ValueTask>, or <xref:System.Threading.Tasks.ValueTask%601>. However, any awaitable expression can be the operand of the `await` operator. For more information, see the [Awaitable expressions](~/_csharpstandard/standard/expressions.md#12982-awaitable-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 

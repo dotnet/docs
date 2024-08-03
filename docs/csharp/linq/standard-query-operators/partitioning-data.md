@@ -1,11 +1,13 @@
 ---
-title: "Partitioning data (C#)"
+title: "Partitioning data"
 description: Learn how to partition data in LINQ. View an illustration showing the results of partitioning operations.
-ms.date: 02/14/2024
+ms.date: 05/29/2024
 ---
 # Partitioning data (C#)
 
 Partitioning in LINQ refers to the operation of dividing an input sequence into two sections, without rearranging the elements, and then returning one of the sections.
+
+[!INCLUDE [Prerequisites](../includes/linq-syntax.md)]
 
 The following illustration shows the results of three different partitioning operations on a sequence of characters. The first operation returns the first three elements in the sequence. The second operation skips the first three elements and returns the remaining elements. The third operation skips the first two elements in the sequence and returns the next three elements.
 

@@ -3,7 +3,7 @@ title: MVVM Toolkit Features
 description: Helper components to simplify app development and maintenance
 author: michaelstonis
 no-loc: [MAUI]
-ms.date: 03/10/2023
+ms.date: 05/30/2024
 ---
 
 # MVVM Toolkit Features

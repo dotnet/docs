@@ -1,7 +1,7 @@
 ---
 title: "Member access and null-conditional operators and expressions:"
 description: "C# operators that you use to access type members or null-conditionally access type members. These operators include the dot operator - `.`, indexers - `[`, `]`, `^` and `..`, and invocation - `(`, `)`."
-ms.date: 03/07/2024
+ms.date: 07/31/2024
 author: pkulikov
 f1_keywords:
   - "._CSharpKeyword"
@@ -58,7 +58,7 @@ You use the `.` token to access a member of a namespace or a type, as the follow
 
   Use a [`using` directive](../keywords/using-directive.md) to make the use of qualified names optional.
 
-- Use `.` to access [type members](../../fundamentals/object-oriented/index.md#members), static and non-static, as the following code shows:
+- Use `.` to access [type members](../../fundamentals/object-oriented/index.md#members), static and nonstatic, as the following code shows:
 
  :::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="TypeMemberAccess" interactive="try-dotnet-method":::
 
@@ -66,7 +66,7 @@ You can also use `.` to access an [extension method](../../programming-guide/cla
 
 ## Indexer operator []
 
-Square brackets, `[]`, are typically used for array, indexer, or pointer element access.
+Square brackets, `[]`, are typically used for array, indexer, or pointer element access. Beginning with C# 12, `[]` encloses a [collection expression](./collection-expressions.md).
 
 ### Array access
 
@@ -92,7 +92,7 @@ For more information about indexers, see [Indexers](../../programming-guide/inde
 
 ### Other usages of []
 
-For information about pointer element access, see the [Pointer element access operator []](pointer-related-operators.md#pointer-element-access-operator-) section of the [Pointer related operators](pointer-related-operators.md) article.
+For information about pointer element access, see the [Pointer element access operator []](pointer-related-operators.md#pointer-element-access-operator-) section of the [Pointer related operators](pointer-related-operators.md) article. For information about collection expressions, see the [collection expressions](./collection-expressions.md) article.
 
 You also use square brackets to specify [attributes](/dotnet/csharp/advanced-topics/reflection-and-attributes):
 
@@ -103,7 +103,7 @@ void TraceMethod() {}
 
 ## Null-conditional operators `?.` and `?[]`
 
-A null-conditional operator applies a [member access](#member-access-expression-) (`?.`) or [element access](#indexer-operator-) (`?[]`) operation to its operand only if that operand evaluates to non-null; otherwise, it returns `null`. That is:
+A null-conditional operator applies a [member access](#member-access-expression-) (`?.`) or [element access](#indexer-operator-) (`?[]`) operation to its operand only if that operand evaluates to non-null; otherwise, it returns `null`. In other words:
 
 - If `a` evaluates to `null`, the result of `a?.x` or `a?[x]` is `null`.
 - If `a` evaluates to non-null, the result of `a?.x` or `a?[x]` is the same as the result of `a.x` or `a[x]`, respectively.
@@ -232,7 +232,7 @@ The following example demonstrates the effect of using all the ranges presented 
 
 For more information, see [Indices and ranges](../../tutorials/ranges-indexes.md).
 
-The `..` token is also used as the [spread operator](./collection-expressions.md#spread-element) in a collection expression.
+The `..` token is also used for the [spread element](./collection-expressions.md#spread-element) in a collection expression.
 
 ## Operator overloadability
 

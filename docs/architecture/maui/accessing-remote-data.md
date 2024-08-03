@@ -3,7 +3,7 @@ title: Accessing Remote Data
 description: Communicating with Web APIs in .NET MAUI
 author: michaelstonis
 no-loc: [MAUI]
-ms.date: 07/12/2022
+ms.date: 05/30/2024
 ---
 
 # Accessing remote data
@@ -33,11 +33,11 @@ For more information about REST, see [API design](/azure/architecture/best-pract
 
 ## Consuming RESTful APIs
 
-The eShopOnContainers multi-platform app uses the Model-View-ViewModel (MVVM) pattern, and the model elements of the pattern represent the domain entities used in the app. The controller and repository classes in the eShopOnContainers reference application accept and return many of these model objects. Therefore, they are used as data transfer objects (DTOs) that hold all the data that is passed between the app and the containerized microservices. The main benefit of using DTOs to pass data to and receive data from a web service is that by transmitting more data in a single remote call, the app can reduce the number of remote calls that need to be made.
+The eShop multi-platform app uses the Model-View-ViewModel (MVVM) pattern, and the model elements of the pattern represent the domain entities used in the app. The controller and repository classes in the eShop reference application accept and return many of these model objects. Therefore, they are used as data transfer objects (DTOs) that hold all the data that is passed between the app and the containerized microservices. The main benefit of using DTOs to pass data to and receive data from a web service is that by transmitting more data in a single remote call, the app can reduce the number of remote calls that need to be made.
 
 ## Making web requests
 
-The eShopOnContainers multi-platform app uses the `HttpClient` class to make requests over HTTP, with JSON being used as the media type. This class provides functionality for asynchronously sending HTTP requests and receiving HTTP responses from a URI identified resource. The HttpResponseMessage class represents an HTTP response message received from a REST API after an HTTP request has been made. It contains information about the response, including the status code, headers, and any body. The HttpContent class represents the HTTP body and content headers, such as Content-Type and Content-Encoding. The content can be read using any of the `ReadAs` methods, such as `ReadAsStringAsync` and `ReadAsByteArrayAsync`, depending on the format of the data.
+The eShop multi-platform app uses the `HttpClient` class to make requests over HTTP, with JSON being used as the media type. This class provides functionality for asynchronously sending HTTP requests and receiving HTTP responses from a URI identified resource. The HttpResponseMessage class represents an HTTP response message received from a REST API after an HTTP request has been made. It contains information about the response, including the status code, headers, and any body. The HttpContent class represents the HTTP body and content headers, such as Content-Type and Content-Encoding. The content can be read using any of the `ReadAs` methods, such as `ReadAsStringAsync` and `ReadAsByteArrayAsync`, depending on the format of the data.
 
 ## Making a GET request
 
@@ -291,12 +291,12 @@ The most common form of caching is read-through caching, where an app retrieves 
 
 This data can be added to the cache on demand the first time it is retrieved by an app. This means that the app needs to fetch the data only once from the data store, and that subsequent access can be satisfied by using the cache.
 
-Distributed applications, such as the eShopOnContainers reference application, should provide either or both of the following caches:
+Distributed applications, such as the eShop reference application, should provide either or both of the following caches:
 
 - A shared cache, which can be accessed by multiple processes or machines.
 - A private cache, where data is held locally on the device running the app.
 
-The eShopOnContainers multi-platform app uses a private cache, where data is held locally on the device that's running an instance of the app. For information about the cache used by the eShopOnContainers reference application, see [.NET Microservices: Architecture for Containerized .NET Applications](https://aka.ms/microservicesebook).
+The eShop multi-platform app uses a private cache, where data is held locally on the device that's running an instance of the app.
 
 > [!TIP]
 > Think of the cache as a transient data store that could disappear at any time.
@@ -318,7 +318,7 @@ It's also possible that a cache might fill up if data is allowed to remain for t
 
 ## Caching images
 
-The eShopOnContainers multi-platform app consumes remote product images that benefit from being cached. These images are displayed by the Image control. The .NET MAUI Image control supports caching of downloaded images which has caching enabled by default, and will store the image locally for 24 hours. In addition, the expiration time can be configured with the CacheValidity property. For more information, see [Downloaded Image Caching](/dotnet/maui/user-interface/controls/image#image-caching) on the Microsoft Developer Center.
+The eShop multi-platform app consumes remote product images that benefit from being cached. These images are displayed by the Image control. The .NET MAUI Image control supports caching of downloaded images which has caching enabled by default, and will store the image locally for 24 hours. In addition, the expiration time can be configured with the CacheValidity property. For more information, see [Downloaded Image Caching](/dotnet/maui/user-interface/controls/image#image-caching) on the Microsoft Developer Center.
 
 ## Increasing resilience
 
@@ -352,7 +352,7 @@ If a request still fails after a number of retries, it's better for the app to p
 
 Use a finite number of retries, or implement the [Circuit Breaker](/azure/architecture/patterns/circuit-breaker) pattern to allow a service to recover.
 
-The eShopOnContainers reference application does implement the retry pattern. For more information, including a discussion of how to combine the retry pattern with the HttpClient class, see [.NET Microservices: Architecture for Containerized .NET Applications](https://aka.ms/microservicesebook).
+The eShop reference application does implement the retry pattern.
 
 For more information about the retry pattern, see the [Retry](/azure/architecture/patterns/retry) pattern on Microsoft Docs.
 
@@ -367,7 +367,7 @@ The circuit breaker pattern can prevent an app from repeatedly trying to execute
 
 A circuit breaker acts as a proxy for operations that might fail. The proxy should monitor the number of recent failures that have occurred, and use this information to decide whether to allow the operation to proceed, or to return an exception immediately.
 
-The eShopOnContainers multi-platform app does not currently implement the circuit breaker pattern. However, the eShopOnContainers does. For more information, see [.NET Microservices: Architecture for Containerized .NET Applications](https://aka.ms/microservicesebook).
+The eShop multi-platform app does not currently implement the circuit breaker pattern. However, the eShop does.
 
 > [!TIP]
 > Combine the retry and circuit breaker patterns.

@@ -7,18 +7,37 @@ items:
         tocHref: /dotnet/
         topicHref: /dotnet/index
         items:
+          - name: API browser
+            tocHref: /dotnet/api/
+            topicHref: /dotnet/api/index
           - name: C#
             tocHref: /dotnet/csharp/
             topicHref: /dotnet/csharp/index
+          - name: F#
+            tocHref: /dotnet/fsharp/
+            topicHref: /dotnet/fsharp/index
+          - name: Visual Basic
+            tocHref: /dotnet/visual-basic/
+            topicHref: /dotnet/visual-basic/index
+          - name: AI
+            tocHref: /dotnet/ai/
+            topicHref: /dotnet/ai/index
           - name: Azure
             tocHref: /dotnet/azure/
             topicHref: /dotnet/azure/index
-          - name: .NET Aspire (Preview)
+          - name: .NET Aspire
             tocHref: /dotnet/aspire/
             topicHref: /dotnet/aspire/index
           - name: Orleans
             tocHref: /dotnet/orleans/
             topicHref: /dotnet/orleans/index
+          - name: .NET Framework
+            tocHref: /dotnet/framework/
+            topicHref: /dotnet/framework/index
+            items:
+              - name: Unmanaged API reference
+                tocHref: /dotnet/framework/unmanaged-api/
+                topicHref: /dotnet/framework/unmanaged-api/
           - name: .NET architecture
             tocHref: /dotnet/architecture/
             topicHref: /dotnet/architecture/index
@@ -38,4 +57,3 @@ items:
               - name: Enterprise Application Patterns Using .NET MAUI
                 tocHref: /dotnet/architecture/maui/
                 topicHref: /dotnet/architecture/maui/index
- 

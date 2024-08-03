@@ -1,5 +1,5 @@
 ---
-title: Overview of the .NET + AI Ecosystem
+title: Overview of the .NET + AI ecosystem
 description: This article provides an overview of the ecosystem of SDKs and tools available to .NET developers integrating AI into their applications.
 ms.date: 04/04/2024
 ms.topic: overview
@@ -8,33 +8,64 @@ ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 
 # Overview of the .NET + AI ecosystem
 
-.NET can be used with many different libraries and tools that support the development of generative AI applications. This page includes a summary of the services and tools you might need to use in your applications, with links to learn more about each of them.
-
-> [!NOTE]
-> We recommend using the [Semantic Kernel SDK](/semantic-kernel/overview/) to orchestrate your calls to large language models (LLMs) and manage interactions with the various services mentioned here. Semantic Kernel makes it easy to work with different services without having to learn a different API for each one.
+The .NET ecosystem provides many powerful tools, libraries, and services to develop AI applications. .NET supports both cloud and local AI model connections, many different SDKs for various AI and vector database services, and other tools to help you build intelligent apps of varying scope and complexity.
 
 > [!IMPORTANT]
-> These SDKs and tools are built by a variety of sources. Not all SDKs are maintained by Microsoft. When considering an SDK, be sure to evaluate its quality, licensing, and support to ensure they meet your requirements. Also make sure you review each SDK's documentation for detailed version compatibility information.
+> Not all of the SDKs and services presented in this doc are maintained by Microsoft. When considering an SDK, make sure to evaluate its quality, licensing, support, and compatibility to ensure they meet your requirements.
 
-## Working with models
+## Semantic Kernel for .NET
 
-Today, you can use .NET to access models built by OpenAI, using either the Azure OpenAI SDK or the Semantic Kernel. These models can be hosted by OpenAI or in Azure using the Azure AI services. Preview support is coming soon in Semantic Kernel to work with other models, and you can experiment today using open-source SDKs created by the .NET developer community.
+[Semantic Kernel](semantic-kernel-dotnet-overview.md) is an open-source SDK that enables AI integration and orchestration capabilities in your .NET apps. This SDK is generally the recommended AI orchestration tool for .NET apps that use one or more AI services in combination with other APIs or web services, data stores, and custom code. Semantic Kernel benefits enterprise developers in the following ways:
 
-| NuGet package                                                                          | Supported models                                                                                                                                | Maintainer or vendor                                                                                         | Link to docs |
-|----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| [Microsoft.SemanticKernel](https://www.nuget.org/packages/Microsoft.SemanticKernel/)   | [OpenAI models](https://platform.openai.com/docs/models/overview)<br/>[Azure OpenAI supported models](/azure/ai-services/openai/concepts/models)                   | [Semantic Kernel](https://github.com/microsoft/semantic-kernel) (Microsoft)                                 | [Semantic Kernel documentation](/semantic-kernel/)     |
-| [Azure OpenAI SDK](https://www.nuget.org/packages/Azure.AI.OpenAI/)                    | [Azure OpenAI supported models](/azure/ai-services/openai/concepts/models)                                     | [Azure SDK for .NET](https://github.com/Azure/azure-sdk-for-net) (Microsoft)                                | [Azure OpenAI services documentation](/azure/ai-services/openai/)                                               |
+- Streamlines integration of AI capabilities into existing applications to enable a cohesive solution for enterprise products.
+- Minimizes the learning curve of working with different AI models or services by providing abstractions that reduce complexity.
+- Improves reliability by reducing the unpredictable behavior of prompts and responses from AI models. You can fine-tune prompts and plan tasks to create a controlled and predictable user experience.
 
-## Connect your data using vector stores
+For more information, see the [Semantic Kernel documentation](/semantic-kernel/overview/).
 
-To increase relevancy and tailor AI applications for your own data, you'll likely need to work with a vector store. Many services provide a native SDK for .NET, which you can use directly. You can also use Semantic Kernel, which provides an extensible component model that allows you to try different vector stores without needing to learn each SDK.
+## .NET SDKs for building AI apps
 
-| NuGet package                                                                          | Supported vector store            | Maintainer or vendor                                                                                         | Link to docs |
-|----------------------------------------------------------------------------------------|-----------------------------------|-------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| [Microsoft.SemanticKernel](https://www.nuget.org/packages/Microsoft.SemanticKernel/)   | [Supported vector stores](/semantic-kernel/memories/vector-db#available-connectors-to-vector-databases)        | [Semantic Kernel](https://github.com/microsoft/semantic-kernel) (Microsoft)                                 | [Semantic Kernel: What is a vector database](/semantic-kernel/memories/vector-db)     |
-| [Azure.Search.Documents](https://www.nuget.org/packages/Azure.Search.Documents/)       | Azure AI Search                   | [Azure SDK for .NET](https://github.com/Azure/azure-sdk-for-net) (Microsoft)                                | [Azure AI Search client library for .NET](/dotnet/api/overview/azure/search.documents-readme)     |
-| [Milvus.Client](https://www.nuget.org/packages/Milvus.Client)                          | Milvus Vector Database            | [Milvus](https://milvus.io/)                                                                                | [Install Milvus C# SDK](https://milvus.io/docs/v2.2.x/install-csharp.md)                                                           |
-| [Qdrant.Client](https://www.nuget.org/packages/Qdrant.Client)                          | Qdrant Vector Database            | [Qdrant](https://qdrant.tech)                                                                               | [Qdrant .NET SDK](https://github.com/qdrant/qdrant-dotnet)                                                                   |
+Many different SDKs are available for .NET to build apps with AI capabilities depending on the target platform or AI model. OpenAI models offer powerful generative AI capabilities, while other Azure AI Services provide intelligent solutions for a variety of specific scenarios.
+
+### .NET SDKs for OpenAI models
+
+| NuGet package | Supported models | Maintainer or vendor | Documentation |
+|---------------|------------------|----------------------|--------------|
+| [Microsoft.SemanticKernel](https://www.nuget.org/packages/Microsoft.SemanticKernel/) | [OpenAI models](https://platform.openai.com/docs/models/overview)<br/>[Azure OpenAI supported models](/azure/ai-services/openai/concepts/models) | [Semantic Kernel](https://github.com/microsoft/semantic-kernel) (Microsoft) | [Semantic Kernel documentation](/semantic-kernel/) |
+| [Azure OpenAI SDK](https://www.nuget.org/packages/Azure.AI.OpenAI/) | [Azure OpenAI supported models](/azure/ai-services/openai/concepts/models) | [Azure SDK for .NET](https://github.com/Azure/azure-sdk-for-net) (Microsoft) | [Azure OpenAI services documentation](/azure/ai-services/openai/) |
+| [OpenAI SDK](https://www.nuget.org/packages/OpenAI/) | [OpenAI supported models](https://platform.openai.com/docs/models) | [OpenAI SDK for .NET](https://github.com/openai/openai-dotnet) (OpenAI) | [OpenAI services documentation](https://platform.openai.com/docs/overview) |
+
+### .NET SDKs for Azure AI Services
+
+Azure offers many other AI services to build specific application capabilities and workflows. Most of these services provide a .NET SDK to integrate their functionality into custom apps. Some of the most commonly used services are shown in the following table. For a complete list of available services and learning resources, see the [Azure AI Services](/azure/ai-services/what-are-ai-services) documentation.
+
+| Service | Description |
+| --- | --- |
+| [Azure AI Search](/azure/search/) | Bring AI-powered cloud search to your mobile and web apps. |
+| [Azure AI Content Safety](/azure/ai-services/content-safety/) | Detect unwanted or offensive content. |
+| [Azure AI Document Intelligence](/azure/ai-services/document-intelligence/) | Turn documents into intelligent data-driven solutions. |
+| [Azure AI Language](/azure/ai-services/language-service/) | Build apps with industry-leading natural language understanding capabilities. |
+| [Azure AI Speech](/azure/ai-services/speech-service/) | Speech to text, text to speech, translation, and speaker recognition. |
+| [Azure AI Translator](/azure/ai-services/translator/) | AI-powered translation technology with support for more than 100 languages and dialects. |
+| [Azure AI Vision](/azure/ai-services/computer-vision/) | Analyze content in images and videos. |
+
+## Develop with local AI models
+
+.NET apps can also connect to local AI models for many different development scenarios. [Semantic Kernel](https://github.com/microsoft/semantic-kernel) is the recommended tool to connect to local models using .NET. Semantic Kernel can connect to many different models hosted across a variety of platforms and abstracts away lower-level implementation details.
+
+For example, you can use [Ollama](https://ollama.com/) to [connect to local AI models with .NET](quickstarts/quickstart-local-ai.md), including several Small Language Models (Slms) developed by Microsoft:
+
+| Model | Description |
+| --- | --- |
+| [phi3 models](https://azure.microsoft.com/products/phi-3) | A family of powerful small language models (SLMs) with groundbreaking performance at low cost and low latency. |
+| [orca models](https://www.microsoft.com/en-us/research/project/orca/) | Research models in tasks such as reasoning over user given data, reading comprehension, math problem solving, and text summarization. |
+
+> [!NOTE]
+> The preceding SLMs can also be hosted on other services such as Azure.
+
+## Connect to vector databases and services
+
+[!INCLUDE [vector-databases](includes/vector-databases.md)]
 
 ## Other options
 

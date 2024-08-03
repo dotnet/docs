@@ -1,7 +1,7 @@
 ---
 title: Serialization of immutable types in Orleans
 description: Learn how .NET Orleans handles type immutability in the context of serialization.
-ms.date: 4/17/2023
+ms.date: 07/03/2024
 ---
 
 # Serialization of immutable types in Orleans

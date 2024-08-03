@@ -3,7 +3,7 @@ title: .NET Generic Host
 author: IEvangelist
 description: Learn about the .NET Generic Host, which is responsible for app startup and lifetime management.
 ms.author: dapine
-ms.date: 03/26/2024
+ms.date: 05/22/2024
 ---
 
 # .NET Generic Host
@@ -126,6 +126,14 @@ When you call either <xref:Microsoft.Extensions.Hosting.IHostBuilder.Build?displ
 - [IHostApplicationLifetime](#ihostapplicationlifetime)
 - [IHostLifetime](#ihostlifetime)
 - [IHostEnvironment](#ihostenvironment)
+
+## Additional scenario-based host builders
+
+If you're building for the web or writing a distributed application, you might need to use a different host builder. Consider the following list of additional host builders:
+
+- <xref:Aspire.Hosting.DistributedApplicationBuilder>: A builder for creating distributed apps. For more information, see [.NET Aspire](/dotnet/aspire).
+- <xref:Microsoft.AspNetCore.Builder.WebApplicationBuilder>: A builder for web applications and services. For more information, see [ASP.NET Core](/aspnet/core).
+- <xref:Microsoft.AspNetCore.Hosting.WebHostBuilder>: A builder for `IWebHost`. For more information, see [ASP.NET Core web host](/aspnet/core/fundamentals/host/web-host).
 
 ## `IHostApplicationLifetime`
 

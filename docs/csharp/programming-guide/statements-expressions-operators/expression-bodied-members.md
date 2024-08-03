@@ -1,5 +1,5 @@
 ---
-title: "Expression-bodied members - C# Programming Guide"
+title: "Expression-bodied members"
 description: Learn about expression-bodied members. See code examples that use expression body definition for properties, constructors, finalizers, and more.
 ms.date: 02/06/2019
 helpviewer_keywords:
@@ -56,6 +56,14 @@ You can use expression body definitions to implement property `get` and `set` ac
 [!code-csharp[expression-bodied-property-get-set](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/ExpressionBodiedMembers/expr-bodied-ctor.cs#1)]
 
 For more information about properties, see [Properties (C# Programming Guide)](../classes-and-structs/properties.md).
+
+## Events
+
+Similarly, event `add` and `remove` accessors can be expression-bodied:
+
+[!code-csharp[expression-bodied-event-add-remove](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/ExpressionBodiedMembers/expr-bodied-event.cs#1)]
+
+For more information about events, see [Events (C# Programming Guide)](../events/index.md).
 
 ## Constructors
 

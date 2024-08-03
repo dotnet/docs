@@ -3,7 +3,7 @@ title: Logging in C#
 author: IEvangelist
 description: Learn about app logging provided by the Microsoft.Extensions.Logging NuGet package in C#.
 ms.author: dapine
-ms.date: 03/14/2024
+ms.date: 07/17/2024
 ---
 
 # Logging in C# and .NET
@@ -12,7 +12,12 @@ ms.date: 03/14/2024
 
 ## Get started
 
-This first example shows the basics, but it's only suitable for a trivial console app. In the next section you see how to improve the code considering scale, performance, configuration and typical programming patterns.
+This first example shows the basics, but it's only suitable for a trivial console app. This sample console app relies on the following NuGet packages:
+
+- [Microsoft.Extensions.Logging](https://www.nuget.org/packages/Microsoft.Extensions.Logging)
+- [Microsoft.Extensions.Logging.Console](https://www.nuget.org/packages/Microsoft.Extensions.Logging.Console)
+
+In the next section you see how to improve the code considering scale, performance, configuration and typical programming patterns.
 
 :::code language="csharp" source="snippets/logging/getting-started/Program.cs":::
 
@@ -328,7 +333,7 @@ The following table lists the <xref:Microsoft.Extensions.Logging.LogLevel> value
 
 In the previous table, the `LogLevel` is listed from lowest to highest severity.
 
-The [Log](xref:Microsoft.Extensions.Logging.LoggerExtensions) method's first parameter, <xref:Microsoft.Extensions.Logging.LogLevel>, indicates the severity of the log. Rather than calling `Log(LogLevel, ...)`, most developers call the [Log{LogLevel}](xref:Microsoft.Extensions.Logging.LoggerExtensions) extension methods. The `Log{LogLevel}` extension methods [call the Log method and specify the LogLevel](https://github.com/dotnet/extensions/blob/release/3.1/src/Logging/Logging.Abstractions/src/LoggerExtensions.cs). For example, the following two logging calls are functionally equivalent and produce the same log:
+The [Log](xref:Microsoft.Extensions.Logging.LoggerExtensions) method's first parameter, <xref:Microsoft.Extensions.Logging.LogLevel>, indicates the severity of the log. Rather than calling `Log(LogLevel, ...)`, most developers call the [Log{LogLevel}](xref:Microsoft.Extensions.Logging.LoggerExtensions) extension methods. The `Log{LogLevel}` extension methods call the `Log` method and specify the `LogLevel`. For example, the following two logging calls are functionally equivalent and produce the same log:
 
 ```csharp
 public void LogDetails()

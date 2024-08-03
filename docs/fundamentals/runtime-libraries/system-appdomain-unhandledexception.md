@@ -7,7 +7,7 @@ ms.date: 01/24/2024
 
 [!INCLUDE [context](includes/context.md)]
 
-The <xref:System.AppDomain.UnhandledException> event provides notification of uncaught exceptions. It allows the application to log information about the exception before the system default handler reports the exception to the user and terminates the application. If sufficient information about the state of the application is available, other actions may be undertaken - such as saving program data for later recovery. Caution is advised, because program data can become corrupted when exceptions are not handled.
+The <xref:System.AppDomain.UnhandledException> event provides notification of uncaught exceptions. It allows the application to log information about the exception before the system default handler reports the exception to the user and terminates the application. If sufficient information about the state of the application is available, other actions may be undertaken - such as saving program data for later recovery. Caution is advised, because program data can become corrupted when exceptions are not handled. The handler will also be running while holding locks held when the exception was thrown, so care should be taken to avoid waiting on other resources which could introduce deadlocks.
 
 This event can be handled in any application domain. However, the event is not necessarily raised in the application domain where the exception occurred. An exception is unhandled only if the entire stack for the thread has been unwound without finding an applicable exception handler, so the first place the event can be raised is in the application domain where the thread originated.
 

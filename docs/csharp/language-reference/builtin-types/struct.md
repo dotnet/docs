@@ -1,5 +1,5 @@
 ---
-title: "Structure types - C# reference"
+title: "Structure types"
 description: Learn about the struct type in C#
 ms.date: 04/05/2023
 f1_keywords:

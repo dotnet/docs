@@ -1,5 +1,5 @@
 ---
-title: "How to use C# named and optional arguments in Office programming"
+title: "How to use named and optional arguments in Office programming"
 description: Learn how to use named arguments and optional arguments to facilitate access to COM interfaces such as the Microsoft Office automation APIs.
 ms.date: 02/16/2023
 helpviewer_keywords: 
@@ -54,7 +54,7 @@ Press <kbd>CTRL</kbd>+<kbd>F5</kbd> to run the project. A Word document appears 
 
 ## Change the text to a table
   
-Use the `ConvertToTable` method to enclose the text in a table. The method has 16 optional parameters. IntelliSense encloses optional parameters in brackets, as shown in the following illustration.
+Use the `ConvertToTable` method to enclose the text in a table. The method has 16 optional parameters. IntelliSense encloses optional parameters in brackets, as shown in the following illustration. The default values of `Type.Missing` are the simple name for `System.Type.Missing`.
 
 ![List of parameters for ConvertToTable method](./media/how-to-use-named-and-optional-arguments-in-office-programming/convert-table-parameters.png)
 

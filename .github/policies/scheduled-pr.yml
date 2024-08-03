@@ -1,9 +1,7 @@
-id:
-name: GitOps.PullRequestIssueManagement
-description: GitOps.PullRequestIssueManagement primitive
-owner:
+name: GitOps.PullRequestIssueManagement - Scheduled PRs
+description: Creates pull requests on a schedule
 resource: repository
-disabled: false
+
 where:
 configuration:
   resourceManagementConfiguration:

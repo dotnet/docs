@@ -1,7 +1,7 @@
 ---
 title: Version selector strategy
 description: Learn how to use the version selector strategy in .NET Orleans.
-ms.date: 03/16/2022
+ms.date: 07/03/2024
 ---
 
 # Version selector strategy

@@ -10,6 +10,9 @@ on:
         description: "The issue number to manually test"
         required: true
 
+permissions:
+  contents: read
+
 jobs:
   import:
     if: |
@@ -22,22 +25,36 @@ jobs:
     permissions:
       issues: write
       pull-requests: write
+      id-token: write
 
     steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@0d381219ddf674d61a7572ddd19d7941e271515c # v2.9.0
+        with:
+          egress-policy: audit
+
       - name: "Print manual run reason"
         if: ${{ github.event_name == 'workflow_dispatch' }}
         run: |
           echo "Reason: ${{ github.event.inputs.reason }}"
           echo "Issue number: ${{ github.event.inputs.issue }}"
 
+      - name: Azure OpenID Connect
+        id: azure-oidc-auth
+        uses: dotnet/docs-tools/.github/actions/oidc-auth-flow@5e8bcc78465d45a7544bba56509a1a69922b6a5a # main
+        with:
+          client-id: ${{ secrets.CLIENT_ID }}
+          tenant-id: ${{ secrets.TENANT_ID }}
+          audience: ${{ secrets.OSMP_API_AUDIENCE }}
+
       # This step occurs when ran manually, passing the manual issue number input
       - name: manual-sequester
         if: ${{ github.event_name == 'workflow_dispatch' }}
         id: manual-sequester
-        uses: dotnet/docs-tools/actions/sequester@main
+        uses: dotnet/docs-tools/actions/sequester@5e8bcc78465d45a7544bba56509a1a69922b6a5a # main
         env:
           ImportOptions__ApiKeys__GitHubToken: ${{ secrets.GITHUB_TOKEN }}
-          ImportOptions__ApiKeys__OSPOKey: ${{ secrets.OSPO_KEY }}
+          ImportOptions__ApiKeys__AzureAccessToken: ${{ steps.azure-oidc-auth.outputs.access-token }}
           ImportOptions__ApiKeys__QuestKey: ${{ secrets.QUEST_KEY }}
           ImportOptions__ApiKeys__SequesterPrivateKey: ${{ secrets.SEQUESTER_PRIVATEKEY }}
           ImportOptions__ApiKeys__SequesterAppID: ${{ secrets.SEQUESTER_APPID }}
@@ -50,10 +67,10 @@ jobs:
       - name: auto-sequester
         if: ${{ github.event_name != 'workflow_dispatch' }}
         id: auto-sequester
-        uses: dotnet/docs-tools/actions/sequester@main
+        uses: dotnet/docs-tools/actions/sequester@5e8bcc78465d45a7544bba56509a1a69922b6a5a # main
         env:
           ImportOptions__ApiKeys__GitHubToken: ${{ secrets.GITHUB_TOKEN }}
-          ImportOptions__ApiKeys__OSPOKey: ${{ secrets.OSPO_KEY }}
+          ImportOptions__ApiKeys__AzureAccessToken: ${{ steps.azure-oidc-auth.outputs.access-token }}
           ImportOptions__ApiKeys__QuestKey: ${{ secrets.QUEST_KEY }}
           ImportOptions__ApiKeys__SequesterPrivateKey: ${{ secrets.SEQUESTER_PRIVATEKEY }}
           ImportOptions__ApiKeys__SequesterAppID: ${{ secrets.SEQUESTER_APPID }}
@@ -61,4 +78,3 @@ jobs:
           org: ${{ github.repository_owner }}
           repo: ${{ github.repository }}
           issue: ${{ github.event.issue.number }}
-          

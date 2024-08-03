@@ -1,7 +1,7 @@
 ---
 title: Run an Orleans application
 description: Learn how to run an Orleans app in .NET.
-ms.date: 12/07/2022
+ms.date: 07/03/2024
 ---
 
 # Orleans application

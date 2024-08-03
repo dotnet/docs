@@ -46,7 +46,7 @@ public unsafe class MyClass
     /// <param name="num">Describe parameter.</param>
     /// <param name="ptr">Describe parameter.</param>
     /// <returns>Describe return value.</returns>
-    public int SomeMethod(string str, ref int nm, void* ptr) { return 1; }
+    public int SomeMethod(string str, ref int num, void* ptr) { return 1; }
 
     /// <summary>
     /// Enter description for method AnotherMethod.

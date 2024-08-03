@@ -1,5 +1,5 @@
 ---
-title: "BinaryFormatter Migration Guide: Functionality Reference"
+title: "BinaryFormatter migration guide: Functionality reference"
 description: "A reference for BinaryFormatter's functionality that may need to be considered during migrations."
 ms.date: 5/31/2024
 no-loc: [BinaryFormatter, Serialization, WinForms]

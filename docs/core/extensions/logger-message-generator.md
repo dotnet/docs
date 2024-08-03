@@ -1,7 +1,7 @@
 ---
 title: Compile-time logging source generation
 description: Learn how to use the LoggerMessageAttribute and compile-time source generation for logging in .NET.
-ms.date: 10/11/2023
+ms.date: 06/21/2024
 ---
 
 # Compile-time logging source generation
@@ -59,6 +59,21 @@ public partial class InstanceLoggingExample
     public partial void CouldNotOpenSocket(string hostName);
 }
 ```
+
+Starting with .NET 9, the logging method can additionally get the logger from an `ILogger` primary constructor parameter in the containing class.
+
+```csharp
+public partial class InstanceLoggingExample(ILogger logger)
+{
+    [LoggerMessage(
+        EventId = 0,
+        Level = LogLevel.Critical,
+        Message = "Could not open socket to `{HostName}`")]
+    public partial void CouldNotOpenSocket(string hostName);
+}
+```
+
+If there is both an `ILogger` field and a primary constructor parameter, the logging method will get the logger from the field.
 
 Sometimes, the log level needs to be dynamic rather than statically built into the code. You can do this by omitting the log level from the attribute and instead requiring it as a parameter to the logging method.
 

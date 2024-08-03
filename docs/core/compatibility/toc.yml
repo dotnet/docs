@@ -14,16 +14,24 @@ items:
         href: aspnet-core/9.0/key-resolution.md
     - name: Core .NET libraries
       items:
+      - name: Adding a ZipArchiveEntry sets header general-purpose bit flags
+        href: core-libraries/9.0/compressionlevel-bits.md
+      - name: Altered UnsafeAccessor support for non-open generics
+        href: core-libraries/9.0/unsafeaccessor-generics.md
       - name: API obsoletions with custom diagnostic IDs
         href: core-libraries/9.0/obsolete-apis-with-custom-diagnostics.md
       - name: Creating type of array of System.Void not allowed
         href: core-libraries/9.0/type-instance.md
+      - name: "`Equals`/`GetHashCode` throw for `InlineArrayAttribute` types"
+        href: core-libraries/9.0/inlinearrayattribute.md
       - name: Inline array struct size limit is enforced
         href: core-libraries/9.0/inlinearray-size.md
       - name: InMemoryDirectoryInfo prepends rootDir to files
         href: core-libraries/9.0/inmemorydirinfo-prepends-rootdir.md
       - name: RuntimeHelpers.GetSubArray returns different type
         href: core-libraries/9.0/getsubarray-return.md
+      - name: Support for empty environment variables
+        href: core-libraries/9.0/empty-env-variable.md
     - name: Networking
       items:
       - name: HttpListenerRequest.UserAgent is nullable
@@ -32,8 +40,12 @@ items:
       items:
       - name: "'dotnet workload' commands output change"
         href: sdk/9.0/dotnet-workload-output.md
+      - name: "'installer' repo version no longer documented"
+        href: sdk/9.0/productcommits-versions.md
       - name: Terminal logger is default
         href: sdk/9.0/terminal-logger.md
+      - name: Warning emitted for .NET Standard 1.x targets
+        href: sdk/9.0/netstandard-warning.md
     - name: Windows Forms
       items:
       - name: BindingSource.SortDescriptions doesn't return null
@@ -46,6 +58,8 @@ items:
         href: windows-forms/9.0/datagridviewrowaccessibleobject-name-row.md
       - name: No exception if DataGridView is null
         href: windows-forms/9.0/datagridviewheadercell-nre.md
+      - name: PictureBox raises HttpClient exceptions
+        href: windows-forms/9.0/httpclient-exceptions.md
     - name: WPF
       items:
       - name: "'GetXmlNamespaceMaps' type change"
@@ -216,6 +230,8 @@ items:
         href: sdk/8.0/arch-option.md
       - name: SDK uses a smaller RID graph
         href: sdk/8.0/rid-graph.md
+      - name: Setting DebugSymbols to false disables PDB generation
+        href: sdk/8.0/debugsymbols.md
       - name: Source Link included in the .NET SDK
         href: sdk/8.0/source-link.md
       - name: Trimming can't be used with .NET Standard or .NET Framework
@@ -240,6 +256,8 @@ items:
         href: windows-forms/8.0/anchor-layout.md
       - name: Certs checked before loading remote images in PictureBox
         href: windows-forms/8.0/picturebox-remote-image.md
+      - name: DateTimePicker.Text is empty string
+        href: windows-forms/8.0/datetimepicker-text.md
       - name: DefaultValueAttribute removed from some properties
         href: windows-forms/8.0/defaultvalueattribute-removal.md
       - name: ExceptionCollection ctor throws ArgumentException
@@ -1159,7 +1177,7 @@ items:
       - name: Default ASP.NET Core port changed to 8080
         href: containers/8.0/aspnet-port.md
       - name: Kerberos package removed from Alpine and Debian images
-        href: containers/8.0/krb5-libs-package.md        
+        href: containers/8.0/krb5-libs-package.md
       - name: libintl package removed from Alpine images
         href: containers/8.0/libintl-package.md
       - name: Multi-platform container tags are Linux-only
@@ -1170,14 +1188,24 @@ items:
     items:
     - name: .NET 9
       items:
+      - name: Adding a ZipArchiveEntry sets header general-purpose bit flags
+        href: core-libraries/9.0/compressionlevel-bits.md
+      - name: Altered UnsafeAccessor support for non-open generics
+        href: core-libraries/9.0/unsafeaccessor-generics.md
+      - name: API obsoletions with custom diagnostic IDs
+        href: core-libraries/9.0/obsolete-apis-with-custom-diagnostics.md
       - name: Creating type of array of System.Void not allowed
         href: core-libraries/9.0/type-instance.md
+      - name: "`Equals`/`GetHashCode` throw for `InlineArrayAttribute` types"
+        href: core-libraries/9.0/inlinearrayattribute.md
       - name: Inline array struct size limit is enforced
         href: core-libraries/9.0/inlinearray-size.md
       - name: InMemoryDirectoryInfo prepends rootDir to files
         href: core-libraries/9.0/inmemorydirinfo-prepends-rootdir.md
       - name: RuntimeHelpers.GetSubArray returns different type
         href: core-libraries/9.0/getsubarray-return.md
+      - name: Support for empty environment variables
+        href: core-libraries/9.0/empty-env-variable.md
     - name: .NET 8
       items:
       - name: Activity operation name when null
@@ -1608,8 +1636,12 @@ items:
       items:
       - name: "'dotnet workload' commands output change"
         href: sdk/9.0/dotnet-workload-output.md
+      - name: "'installer' repo version no longer documented"
+        href: sdk/9.0/productcommits-versions.md
       - name: Terminal logger is default
         href: sdk/9.0/terminal-logger.md
+      - name: Warning emitted for .NET Standard 1.x targets
+        href: sdk/9.0/netstandard-warning.md
     - name: .NET 8
       items:
       - name: CLI console output uses UTF-8
@@ -1638,6 +1670,8 @@ items:
         href: sdk/8.0/arch-option.md
       - name: SDK uses a smaller RID graph
         href: sdk/8.0/rid-graph.md
+      - name: Setting DebugSymbols to false disables PDB generation
+        href: sdk/8.0/debugsymbols.md
       - name: Source Link included in the .NET SDK
         href: sdk/8.0/source-link.md
       - name: Trimming can't be used with .NET Standard or .NET Framework
@@ -1816,12 +1850,16 @@ items:
         href: windows-forms/9.0/datagridviewrowaccessibleobject-name-row.md
       - name: No exception if DataGridView is null
         href: windows-forms/9.0/datagridviewheadercell-nre.md
+      - name: PictureBox raises HttpClient exceptions
+        href: windows-forms/9.0/httpclient-exceptions.md
     - name: .NET 8
       items:
       - name: Anchor layout changes
         href: windows-forms/8.0/anchor-layout.md
       - name: Certs checked before loading remote images in PictureBox
         href: windows-forms/8.0/picturebox-remote-image.md
+      - name: DateTimePicker.Text is empty string
+        href: windows-forms/8.0/datetimepicker-text.md
       - name: DefaultValueAttribute removed from some properties
         href: windows-forms/8.0/defaultvalueattribute-removal.md
       - name: ExceptionCollection ctor throws ArgumentException

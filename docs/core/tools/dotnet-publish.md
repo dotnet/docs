@@ -15,6 +15,7 @@ ms.date: 04/04/2024
 
 ```dotnetcli
 dotnet publish [<PROJECT>|<SOLUTION>] [-a|--arch <ARCHITECTURE>]
+    [--artifacts-path <ARTIFACTS_DIR>]
     [-c|--configuration <CONFIGURATION>] [--disable-build-servers]
     [-f|--framework <FRAMEWORK>] [--force] [--interactive]
     [--manifest <PATH_TO_MANIFEST_FILE>] [--no-build] [--no-dependencies]
@@ -124,6 +125,8 @@ For more information, see the following resources:
 ## Options
 
 [!INCLUDE [arch](../../../includes/cli-arch.md)]
+
+[!INCLUDE [artifacts-path](../../../includes/cli-artifacts-path.md)]
 
 [!INCLUDE [configuration](../../../includes/cli-configuration-publish-pack.md)]
 
@@ -250,7 +253,7 @@ For more information, see the following resources:
 - Publish the project in the current directory, for a specific runtime and target framework:
 
   ```dotnetcli
-  dotnet publish --framework netcoreapp3.1 --runtime osx-x64
+  dotnet publish --framework net8.0 --runtime osx-x64
   ```
 
 - Publish the specified project file:

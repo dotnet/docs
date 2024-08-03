@@ -1,5 +1,5 @@
 ---
-title: A tour of C# - Tips for JavaScript and TypeScript Developers
+title: Tips for JavaScript and TypeScript Developers
 description: "New to C#, but know JavaScript or TypeScript? Here's a roadmap of what's familiar, features in C# that aren't in JavaScript or TypeScript, and alternatives for features you use that aren't in C#"
 ms.date: 04/03/2024
 ---
@@ -11,7 +11,7 @@ C#, TypeScript and JavaScript are all members of the C family of languages. The 
 1. ***The `=>` token***: All languages support lightweight function definitions. In C#, they're referred to as [*lambda expressions*](../language-reference/operators/lambda-expressions.md), in JavaScript, they're typically called *arrow functions*.
 1. ***Function hierarchies***: All three languages support [local functions](../programming-guide/classes-and-structs/local-functions.md), which are functions defined in other functions.
 1. ***Async / Await***: All three languages share the same `async` and `await` keywords for asynchronous programming.
-1. ***garbage collection***: All three languages rely on a garbage collector for automatic memory management.
+1. ***Garbage collection***: All three languages rely on a garbage collector for automatic memory management.
 1. ***Event model***: C#'s [`event`](../events-overview.md) syntax is similar to JavaScript's model for document object model (DOM) events.
 1. ***Package manager***: [NuGet](https://nuget.org) is the most common package manager for C# and .NET, similar to npm for JavaScript applications. C# libraries are delivered in [assemblies](../../standard/assembly/index.md).
 

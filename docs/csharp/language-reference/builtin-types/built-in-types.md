@@ -1,5 +1,5 @@
 ---
-title: "Built-in types - C# reference"
+title: "Built-in types"
 description: "Learn C# built-in value and reference types"
 ms.date: 03/15/2021
 helpviewer_keywords:

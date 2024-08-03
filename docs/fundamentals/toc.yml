@@ -866,15 +866,15 @@ items:
               - name: BinaryFormatter migration guide
                 items:
                   - name: Overview
-                    href: ../standard/serialization/binaryformatter-migration-guide/overview.md
+                    href: ../standard/serialization/binaryformatter-migration-guide/index.md
                   - name: Choose a serializer
                     href: ../standard/serialization/binaryformatter-migration-guide/choose-a-serializer.md
                   - name: Migration to DataContractSerializer
-                    href: ../standard/serialization/binaryformatter-migration-guide/migration-to-data-contract-serializer.md
+                    href: ../standard/serialization/binaryformatter-migration-guide/migration-to-datacontractserializer.md
                   - name: Migration to System.Text.Json
                     href: ../standard/serialization/binaryformatter-migration-guide/migration-to-system-text-json.md
                   - name: Migration to MessagePack
-                    href: ../standard/serialization/binaryformatter-migration-guide/migration-to-message-pack.md
+                    href: ../standard/serialization/binaryformatter-migration-guide/migration-to-messagepack.md
                   - name: Migration to protobuf-net
                     href: ../standard/serialization/binaryformatter-migration-guide/migration-to-protobuf-net.md
                   - name: Read NRBF payloads

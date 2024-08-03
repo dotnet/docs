@@ -1,6 +1,6 @@
 ---
-title: "BinaryFormatter migration guide: Migrate to MessagePack"
-description: "Migrate from BinaryFormatter to MessagePack."
+title: "BinaryFormatter migration guide: Migrate to MessagePack (binary)"
+description: "Migrate from BinaryFormatter to MessagePack for binary serialization."
 ms.date: 5/31/2024
 no-loc: [BinaryFormatter, Serialization]
 helpviewer_keywords:
@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "objects, serializing"
 ---
 
-# Migrate to MessagePack
+# Migrate to MessagePack (binary)
 
 MessagePack provides a highly efficient binary serialization format, resulting in smaller message sizes compared to JSON and XML. It's [performant](https://github.com/MessagePack-CSharp/MessagePack-CSharp?tab=readme-ov-file#performance) and ships with built-in support for LZ4 compression and a full set of general-purpose expressive data types:
 

@@ -12,22 +12,64 @@ helpviewer_keywords:
 
 # Choose a serializer
 
-Choosing a serializer format boils down to two questions:
+There is no drop-in replacement for BinaryFormatter, but there are several serializers recommended for serializing .NET types. Regardless of which serializer you choose, changes will be needed for integration with the new serializer. During these migrations, it's important to consider the trade-offs between coercing the new serializer to handle existing types with as few changes as possible vs. refactoring types to enable idiomatic serialization with the chosen serializer. Once a serializer is chosen, its documentation should be studied for best practices.
 
-1. Is compact binary representation important for your scenario? If so, you need to switch to a different binary serializer. .NET open-source ecosystem provides many great binary serializers and we recommend two of them: [MessagePack](./migration-to-message-pack.md) and [protobuf-net](./migration-to-protobuf-net.md). If compact binary representation is not a must have, you can consider using JSON and XML serialization. For XML, we recommend [DataContractSerializer](./migration-to-data-contract-serializer.md) and for JSON the [System.Text.Json](./migration-to-system-text-json.md).
-2. Can you modify the types that are being serialized by annotating them with attributes, adding new constructors, making the types public and changing fields to properties? If not, using the modern serializers might require more work (like implementing custom converters or resolvers).
+If a binary serialization format is not a requirement, you can consider using JSON or XML serialization formats.
 
-| Feature                                        | BinaryFormatter | DataContractSerializer | System.Text.Json        | MessagePack              | protobuf-net                      |
-|------------------------------------------------|-----------------|------------------------|-------------------------|--------------------------|-----------------------------------|
-| Compact binary representation                  | ✔️              | ❌                      | ❌                      |  ✔️                       |  ✔️                               |
-| Human readable                                 | ❌️              | ✔️                      | ✔️                      |  ❌️                       |  ❌️                               |
-| Performance                                    | ❌️              | ❌                      | ✔️                      |  ✔️                       |  ✔️                               |
-| `[Serializable]` support                       | ✔️              | ✔️                      | ❌                      |  ❌                       |  ❌                               |
-| Serializing public types                       | ✔️              | ✔️                      | ✔️                      |  ✔️                       |  ✔️                               |
-| Serializing non-public types                   | ✔️              | ✔️                      | ✔️                      |  ✔️ (resolver required)   |  ✔️                               |
-| Serializing fields                             | ✔️              | ✔️                      | ✔️ (opt in)             |  ✔️ (attribute required)  |  ✔️ (attribute required)          |
-| Serializing non-public fields                  | ✔️              | ✔️                      | ✔️ (resolver required)  |  ✔️ (resolver required)   |  ✔️ (attribute required)          |
-| Serializing properties                         | ✔️<sup>*</sup>  | ✔️                      | ✔️                      |  ✔️ (attribute required)  |  ✔️ (attribute required)          |
-| Deserializing readonly members                 | ✔️              | ✔️                      | ✔️ (attribute required) |  ✔️                       |  ✔️ (parameterless ctor required) |
-| Polymorphic type hierarchy                     | ✔️              | ✔️                      | ✔️ (attribute required) |  ✔️ (attribute required)  |  ✔️ (attribute required)          |
-| AOT support                                    | ❌️              | ❌                      | ✔️                      |  ✔️                       |  ❌ (planned)                     |
+1. JSON using [System.Text.Json](./migrate-to-system-text-json.md)
+2. XML using [`System.Runtime.Serialization.DataContractSerializer`](./migrate-to-datacontractserializer.md)
+
+The .NET open-source ecosystem provides many great binary serializers. If a compact binary representation is important for your scenarios, the following serialization formats and serializers are recommended:
+
+1. [MessagePack](https://msgpack.org/) using [MessagePack for C#](./migrate-to-messagepack.md)
+2. [Protocol Buffers](https://protobuf.dev/) using [protobuf-net](./migrate-to-protobuf-net.md)
+
+Whether you have control to change the API shape of the serialized type will influence your direction and approach to serialization. Migration to these serializers may be more straightforward with the ability to annotate types with new attributes, add new constructors, make types/members public, and change fields to properties. Without that ability, using modern serializers might require implementation of custom converters or resolvers.
+
+| Feature                                        | BinaryFormatter  | System.Text.Json        | DataContractSerializer | MessagePack for C#       | protobuf-net                      |
+|------------------------------------------------|------------------|-------------------------|------------------------|--------------------------|-----------------------------------|
+| Serialization format                           | binary           | JSON                    | XML                    | binary (MessagePack)     | binary (Protocol Buffers)         |
+| Compact representation                         | ✔️              | ❌                      | ❌                    | ✔️                       | ✔️                               |
+| Human-readable                                 | ❌️              | ✔️                      | ✔️                    | ❌️                       | ❌️                               |
+| Cross-platform format                          | ❌️              | ✔️                      | ❌️                    | ✔️                       | ✔️                               |
+| Performance                                    | ❌️              | ✔️                      | ❌                    | ✔️                       | ✔️                               |
+| `[Serializable]` attribute support             | ✔️              | ❌                      | ✔️                    | ❌                       | ❌                               |
+| Serializing public types                       | ✔️              | ✔️                      | ✔️                    | ✔️                       | ✔️                               |
+| Serializing non-public types                   | ✔️              | ✔️                      | ✔️                    | ✔️ (resolver required)   | ✔️                               |
+| Serializing fields                             | ✔️              | ✔️ (opt in)             | ✔️                    | ✔️ (attribute required)  | ✔️ (attribute required)          |
+| Serializing non-public fields                  | ✔️              | ✔️ (resolver required)  | ✔️                    | ✔️ (resolver required)   | ✔️ (attribute required)          |
+| Serializing properties                         | ✔️<sup>*</sup>  | ✔️                      | ✔️                    | ✔️ (attribute required)  | ✔️ (attribute required)          |
+| Deserializing readonly members                 | ✔️              | ✔️ (attribute required) | ✔️                    | ✔️                       | ✔️ (parameterless ctor required) |
+| Polymorphic type hierarchy                     | ✔️              | ✔️ (attribute required) | ✔️                    | ✔️ (attribute required)  | ✔️ (attribute required)          |
+| AOT support                                    | ❌️              | ✔️                      | ❌                    | ✔️                       | ❌ (planned)                     |
+
+## JSON using System.Text.Json
+
+The [`System.Text.Json`](../system-text-json/overview.md) library is a modern serializer that emphasizes security, high performance, and low memory allocation for the JavaScript Object Notation (JSON) format. JSON is human-readable and has broad cross-platform support. While text-based format is not as compact as binary formats, it can be significantly reduced in size through compression.
+
+Serialization excludes non-public and readonly members unless specifically handled through attributes and constructors. System.Text.Json also supports [custom serialization and deserialization](../system-text-json/custom-contracts.md) for more control over how types are converted into JSON and vice versa. System.Text.Json does not support the `[Serializable]` attribute.
+
+[Migrate to System.Text.Json](./migrate-to-system-text-json.md).
+
+## XML using System.Runtime.Serialization.DataContractSerializer
+
+`DataContractSerializer` was introduced in .NET Framework 3.0 and is used to serialize and deserialize data sent in Windows Communication Foundation (WCF) messages. `DataContractSerializer` is an XML serializer that **fully supports the serialization programming model that was used by the `BinaryFormatter`**. It requires the known types to be specified up-front (but most .NET collections and primitive types are on a default allow-list and don't need to be specified). It's the serializer that requires the least amount of effort to migrate to.
+
+While `DataContractSerializer` carries those functional benefits when migrating from BinaryFormatter, it is not as performant as the other choices, nor does it use a cross-platform format.
+
+[Migrate to DataContractSerializer](./migrate-to-datacontractserializer.md).
+
+> [!NOTE]
+> Do not confuse `DataContractSerializer` with [`NetDataContractSerializer`](/dotnet/api/system.runtime.serialization.netdatacontractserializer). `NetDataContractSerializer` is also identified as a [dangerous serializer](../binaryformatter-security-guide#dangerous-alternatives).
+
+## Binary using MessagePack for C#
+
+MessagePack uses a highly efficient binary serialization format, resulting in smaller message sizes compared to JSON and XML. It's performant and ships with built-in LZ4 compression. The open-source [MessagePack for C#](https://github.com/MessagePack-CSharp/MessagePack-CSharp) library works best when all serializable public types and members are annotated with dedicated attributes. It does not serialize non-public types and members by default, but it can be customized. It supports read-only types and members by trying to select the best matching constructor. The constructor can be specified explicitly by using the `[SerializationConstructor]` attribute.
+
+[Migrate to MessagePack](./migrate-to-messagepack.md).
+
+## Binary using protobuf-net
+
+The protobuf-net library is a contract based serializer for .NET code that uses the binary "protocol buffers" serialization format. The API follows typical .NET patterns and is broadly comparable to `XmlSerializer` and `DataContractSerializer`. This popular library is also feature-rich and can handle non-public types and fields, but many scenarios do require applying attributes to members.
+
+[Migrate to protobuf-net](./migrate-to-protobuf-net.md).

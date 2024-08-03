@@ -1,6 +1,6 @@
 ---
-title: "BinaryFormatter migration guide: Migrate to protobuf-net"
-description: "Migrate from BinaryFormatter to protobuf-net."
+title: "BinaryFormatter migration guide: Migrate to protobuf-net (binary)"
+description: "Migrate from BinaryFormatter to protobuf-net for binary serialization."
 ms.date: 5/31/2024
 no-loc: [BinaryFormatter, Serialization]
 helpviewer_keywords:
@@ -10,9 +10,9 @@ helpviewer_keywords:
   - "objects, serializing"
 ---
 
-# Migrate to protobuf-net
+# Migrate to protobuf-net (binary)
 
-[protobuf-net](https://github.com/protobuf-net/protobuf-net) is a contract-based serializer for .NET code that writes data in the _protocol buffers_ serialization format engineered by Google.
+[protobuf-net](https://github.com/protobuf-net/protobuf-net) is a contract-based serializer for .NET code that writes data in the binary _protocol buffers_ serialization format engineered by Google.
 
 - By default, both public and non-public types are serializable. Every type needs to provide a parameterless constructor.
 - protobuf-net requires each serializable type to be annotated with `[ProtoContract]` attribute.

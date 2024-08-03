@@ -64,7 +64,7 @@ While `DataContractSerializer` carries those functional benefits when migrating 
 
 ## Binary using MessagePack for C#
 
-MessagePack uses a highly efficient binary serialization format, resulting in smaller message sizes compared to JSON and XML. It's performant and ships with built-in LZ4 compression. The open-source [MessagePack for C#](https://github.com/MessagePack-CSharp/MessagePack-CSharp) library works best when all serializable public types and members are annotated with dedicated attributes. It does not serialize non-public types and members by default, but it can be customized. It supports read-only types and members by trying to select the best matching constructor. The constructor can be specified explicitly by using the `[SerializationConstructor]` attribute.
+MessagePack is a compact binary serialization format, resulting in smaller message sizes compared to JSON and XML. The open source [MessagePack for C#](https://github.com/MessagePack-CSharp/MessagePack-CSharp) library is highly performant and offers built-in super-fast LZ4 compression for an even smaller data size. It works best when data types are annotated with either DataContractSerializer or the library's own attributes. It can be configured to support AOT environments, non-public types and members, and read-only types and members.
 
 [Migrate to MessagePack](./migrate-to-messagepack.md).
 

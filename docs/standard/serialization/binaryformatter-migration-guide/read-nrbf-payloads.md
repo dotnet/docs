@@ -14,7 +14,7 @@ helpviewer_keywords:
 
 # Read BinaryFormatter (NRBF) payloads
 
-BinaryFormatter used the '[.NET Remoting: Binary Format](/openspecs/windows_protocols/ms-nrbf/)' for serialization. This format is known by its abbreviation of MS-NRBF or just NRBF. A common challenge involved in migrating from BinaryFormatter is dealing with BinaryFormatter payloads persisted to storage as reading these payloads previously required BinaryFormatter. Some systems need to retain the ability to read these payloads for gradual migrations to new serializers while avoiding a reference to BinaryFormatter itself.
+BinaryFormatter used the [.NET Remoting: Binary Format](/openspecs/windows_protocols/ms-nrbf/) for serialization. This format is known by its abbreviation of MS-NRBF or just NRBF. A common challenge involved in migrating from BinaryFormatter is dealing with BinaryFormatter payloads persisted to storage as reading these payloads previously required BinaryFormatter. Some systems need to retain the ability to read these payloads for gradual migrations to new serializers while avoiding a reference to BinaryFormatter itself.
 
 As part of .NET 9, a new `NrbfDecoder` class was introduced to decode NRBF payloads without performing _deserialization_ of the payload. This API can safely be used to decode trusted or untrusted payloads without any of the risks that BinaryFormatter deserialization carries. However, `NrbfDecoder` merely decodes the data into structures an application can further process. Care must be taken when using `NrbfDecoder` to safely load the data into the appropriate instances.
 
@@ -44,9 +44,7 @@ When using `NrbfDecoder`, it is important not to reintroduce those capabilities 
 
 ### Identify NRBF payloads
 
-`NrbfDecoder` provides two `StartsWithPayloadHeader` methods that let you check whether a given stream or buffer starts with the NRBF header.
-
-It's recommended to use these methods when you're migrating payloads persisted with `BinaryFormatter` to a [different serializer](./choosing-a-serializer.md):
+`NrbfDecoder` provides two `StartsWithPayloadHeader` methods that let you check whether a given stream or buffer starts with the NRBF header. It's recommended to use these methods when you're migrating payloads persisted with `BinaryFormatter` to a [different serializer](./choosing-a-serializer.md):
 
 - Check if the payload read from storage is an [NRBF](/openspecs/windows_protocols/ms-nrbf/) payload.
 - If so, read it with `NrbfDecoder`, serialize it back with a new serializer, and overwrite the data in the storage.
@@ -105,8 +103,8 @@ There are more than a dozen different serialization [record types](/openspecs/wi
   - Exposes the value via the `Value` property.
   - `PrimitiveTypeRecord<T>` derives from the non-generic `PrimitiveTypeRecord`, which also exposes a `Value` property. But on the base class, the value is returned as `object` (which introduces boxing for value types).
 - `ClassRecord`: describes all `class` and `struct` besides the aforementioned  primitive types.
-- `SZArrayRecord<T>`: describes single-dimensional, zero-indexed array records, where `T` can be either a primitive type or a `ClassRecord`.
 - `ArrayRecord`: describes all array records, including jagged and multi-dimensional arrays.
+- `SZArrayRecord<T>`: describes single-dimensional, zero-indexed array records, where `T` can be either a primitive type or a `ClassRecord`.
 
 ```csharp
 SerializationRecord rootObject = NrbfDecoder.Decode(payload); // payload is a Stream

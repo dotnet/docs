@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "objects, serializing"
 ---
 
-# Using the compatibility package
+# BinaryFormatter compatibility package
 
 > [!WARNING]
 > The compatibility package is unsafe and not recommended.

@@ -1,6 +1,6 @@
 ---
-title: "BinaryFormatter Migration Guide: Migration to DataContractSerializer"
-description: "Describe the capabilities and limitations of DataContractSerializer."
+title: "BinaryFormatter migration guide: Migrate to DataContractSerializer"
+description: "Migrate from BinaryFormatter to DataContractSerializer."
 ms.date: 5/31/2024
 no-loc: [BinaryFormatter, Serialization]
 dev_langs:
@@ -13,7 +13,7 @@ helpviewer_keywords:
   - "objects, serializing"
 ---
 
-# Migration to DataContractSerializer
+# Migrate to DataContractSerializer
 
 The .NET base class libraries provide two XML serializers: [XmlSerializer](../introducing-xml-serialization.md) and [DataContractSerializer](../../../fundamentals/runtime-libraries/system-runtime-serialization-datacontractserializer.md). There are some subtle differences between these two, but for the purpose of the migration, this section focuses only on `DataContractSerializer`. Why? Because it **fully supports the serialization programming model that was used by `BinaryFormatter`**. All the types that are already marked as `[Serializable]` or implement `ISerializable` can be serialized with `DataContractSerializer`. Where is the catch? Known types must be specified up front (that's why it's secure). You need to know them and be able to get the `Type`, **even for private types**.
 

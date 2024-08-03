@@ -1,6 +1,6 @@
 ---
-title: "BinaryFormatter Migration Guide: Migration to System.Text.Json"
-description: "Describe the capabilities and limitations of System.Text.Json serializer."
+title: "BinaryFormatter migration guide: Migrate to System.Text.Json"
+description: "Migrate from BinaryFormatter to System.Text.Json."
 ms.date: 5/31/2024
 no-loc: [BinaryFormatter, Serialization, System.Text.Json]
 dev_langs:
@@ -13,7 +13,7 @@ helpviewer_keywords:
   - "objects, serializing"
 ---
 
-# Migration to System.Text.Json
+# Migrate to System.Text.Json
 
 [System.Text.Json](../system-text-json/overview.md) defaults to emphasizing literal, deterministic behavior and avoids any guessing or interpretation on the caller's behalf. The library is intentionally designed this way for performance and security. From the migration perspective, it's crucial to know the following facts:
 

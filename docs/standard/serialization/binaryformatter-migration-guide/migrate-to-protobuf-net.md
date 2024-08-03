@@ -1,6 +1,6 @@
 ---
-title: "BinaryFormatter Migration Guide: Migration to protobuf-net"
-description: "Describe the capabilities and limitations of protobuf-net serializer."
+title: "BinaryFormatter migration guide: Migrate to protobuf-net"
+description: "Migrate from BinaryFormatter to protobuf-net."
 ms.date: 5/31/2024
 no-loc: [BinaryFormatter, Serialization]
 helpviewer_keywords:
@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "objects, serializing"
 ---
 
-# Migration to protobuf-net
+# Migrate to protobuf-net
 
 [protobuf-net](https://github.com/protobuf-net/protobuf-net) is a contract-based serializer for .NET code that writes data in the _protocol buffers_ serialization format engineered by Google.
 

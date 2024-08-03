@@ -1,5 +1,5 @@
 ---
-title: "BinaryFormatter Migration Guide: Compatibility Package"
+title: "BinaryFormatter migration guide: Compatibility Package"
 description: "Using the BinaryFormatter compatibility package."
 ms.date: 5/31/2024
 no-loc: [BinaryFormatter, Serialization]

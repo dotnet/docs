@@ -1,5 +1,5 @@
 ---
-title: "BinaryFormatter Migration Guide: WinForms Migration Guide"
+title: "BinaryFormatter migration guide: WinForms applications"
 description: "Learn about the effects of the deprecation and removal of BinaryFormatter from .NET on Windows Forms and how to migrate."
 ms.date: 7/31/2024
 no-loc: [BinaryFormatter, WinForms]
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "WinForms"
 ---
 
-# Window Forms migration guide for BinaryFormatter
+# Windows Forms migration guide for BinaryFormatter
 
 ## BinaryFormatter removal
 
@@ -79,7 +79,7 @@ For types that aren't intrinsically handled during serialization into resources 
 
 ## Compatibility workaround (not recommended)
 
-For users who cannot migrate away from `BinaryFormatter` for whatever reason, `BinaryFormatter` can be added back for compatibility. For more information, see [BinaryFormatter Migration Guide: Compatibility Package](compatibility-package.md).
+For users who cannot migrate away from `BinaryFormatter` for whatever reason, `BinaryFormatter` can be added back for compatibility. For more information, see [BinaryFormatter migration guide: Compatibility Package](compatibility-package.md).
 
 > [!CAUTION]
 > BinaryFormatter is dangerous and not recommended as it puts consuming apps at risk for attacks such as denial of service, which can render the app unresponsive and or unexpectedly terminate it. For more information about the risks `BinaryFormatter` poses, see [Deserialization risks in use of BinaryFormatter and related types](../binaryformatter-security-guide.md).

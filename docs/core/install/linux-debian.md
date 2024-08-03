@@ -1,9 +1,9 @@
 ---
 title: Install .NET on Debian
-description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Debian.
+description: Learn about which versions of .NET SDK and .NET Runtime are supported, and how to install .NET on Debian.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/14/2023
+ms.date: 05/14/2024
 ms.custom: linux-related-content
 ---
 
@@ -19,11 +19,11 @@ This article describes how to install .NET on Debian. When a Debian version fall
 
 The following table is a list of currently supported .NET releases and the versions of Debian they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Debian reaches end-of-life](https://wiki.debian.org/DebianReleases).
 
-| Debian  | .NET      |
-|---------|-----------|
-| 12      | 8, 7, 6   |
-| 11      | 8, 7, 6   |
-| 10      | 7, 6      |
+| Debian  | .NET   |
+|---------|--------|
+| 12      | 8, 6   |
+| 11      | 8, 6   |
+| 10      | 6      |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
@@ -114,14 +114,33 @@ If you're using a Debian version prior to 12, try the following commands:
 
 When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you'll need to make sure these libraries are installed:
 
+### 10.x
+
 - libc6
-- libgcc1 (for 10.x)
-- libgcc-s1 (for 11.x and 12.x)
+- libgcc1
 - libgssapi-krb5-2
-- libicu63 (for 10.x)
-- libicu67 (for 11.x)
-- libicu72 (for 12.x)
+- libicu63
 - libssl1.1
+- libstdc++6
+- zlib1g
+
+### 11.x
+
+- libc6
+- libgcc-s1
+- libgssapi-krb5-2
+- libicu67
+- libssl1.1
+- libstdc++6
+- zlib1g
+
+### 12.x
+
+- libc6
+- libgcc-s1
+- libgssapi-krb5-2
+- libicu72
+- libssl3
 - libstdc++6
 - zlib1g
 
@@ -137,5 +156,6 @@ You can install a recent version of *libgdiplus* by [adding the Mono repository 
 
 ## Next steps
 
+- [.NET CLI overview](../tools/index.md)
 - [How to enable TAB completion for the .NET CLI](../tools/enable-tab-autocomplete.md)
 - [Tutorial: Create a console application with .NET SDK using Visual Studio Code](../tutorials/with-visual-studio-code.md)

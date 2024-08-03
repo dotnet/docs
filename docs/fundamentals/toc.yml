@@ -29,8 +29,6 @@ items:
                     href: ../core/install/linux-ubuntu-install.md
               - name: Alpine
                 href: ../core/install/linux-alpine.md
-              - name: CentOS
-                href: ../core/install/linux-centos.md
               - name: CentOS Stream
                 href: ../core/install/linux-rhel.md#supported-distributions
               - name: Debian
@@ -45,6 +43,12 @@ items:
                 href: ../core/install/linux-sles.md
               - name: Installation script & binaries
                 href: ../core/install/linux-scripted-manual.md
+              - name: Install with Snap
+                items:
+                  - name: Runtime
+                    href: ../core/install/linux-snap-runtime.md
+                  - name: SDK
+                    href: ../core/install/linux-snap-sdk.md
           - name: Upgrade to a new .NET version
             href: ../core/install/upgrade.md
           - name: Remove outdated runtimes and SDKs
@@ -675,9 +679,6 @@ items:
           - name: Overview
             href: ../standard/base-types/regular-expressions.md
             displayName: regular expressions
-          - name: Source generation
-            href: ../standard/base-types/regular-expression-source-generators.md
-            displayName: regular expressions,advanced,design concepts,source generators,algorithmic reduction,regex
           - name: Language reference
             items:
               - name: Overview
@@ -702,11 +703,9 @@ items:
                 href: ../standard/base-types/regular-expression-options.md
               - name: Miscellaneous constructs
                 href: ../standard/base-types/miscellaneous-constructs-in-regular-expressions.md
-          - name: Best practices for regular expressions
-            href: ../standard/base-types/best-practices-regex.md
           - name: Regular expression object model
             href: ../standard/base-types/the-regular-expression-object-model.md
-          - name: Regular expression behavior
+          - name: Behavior and performance
             items:
               - name: Overview
                 href: ../standard/base-types/details-of-regular-expression-behavior.md
@@ -714,8 +713,11 @@ items:
                 href: ../standard/base-types/backtracking-in-regular-expressions.md
               - name: Compilation and reuse
                 href: ../standard/base-types/compilation-and-reuse-in-regular-expressions.md
-              - name: Thread safety
-                href: ../standard/base-types/thread-safety-in-regular-expressions.md
+              - name: Source generation
+                href: ../standard/base-types/regular-expression-source-generators.md
+                displayName: source generation,algorithmic reduction
+              - name: Best practices
+                href: ../standard/base-types/best-practices-regex.md
           - name: Examples
             items:
               - name: Scan for HREFs
@@ -1013,6 +1015,9 @@ items:
           - name: Overview
             href: ../core/extensions/dependency-injection.md
             displayName: dependency injection,di,ioc,ioc container,dependency container,inversion of control
+          - name: Dependency injection basics
+            href: ../core/extensions/dependency-injection-basics.md
+            displayName: dependency injection basics,di basics,ioc basics,ioc container basics,dependency container basics,inversion of control basics
           - name: Use dependency injection
             href: ../core/extensions/dependency-injection-usage.md
             displayName: use dependency injection,di,di examples,ioc,ioc container,dependency container,inversion of control
@@ -1474,12 +1479,14 @@ items:
                 items:
                   - name: The AssemblyBuilder class
                     href: runtime-libraries/system-reflection-emit-assemblybuilder.md
-                  - name: The MethodBuilder class
-                    href: runtime-libraries/system-reflection-emit-methodbuilder.md
-                  - name: The TypeBuilder class
-                    href: runtime-libraries/system-reflection-emit-typebuilder.md
                   - name: The DynamicMethod class
                     href: runtime-libraries/system-reflection-emit-dynamicmethod.md
+                  - name: The MethodBuilder class
+                    href: runtime-libraries/system-reflection-emit-methodbuilder.md
+                  - name: The PersistedAssemblyBuilder class
+                    href: runtime-libraries/system-reflection-emit-persistedassemblybuilder.md
+                  - name: The TypeBuilder class
+                    href: runtime-libraries/system-reflection-emit-typebuilder.md
           - name: Metadata and self-describing components
             items:
               - name: Overview

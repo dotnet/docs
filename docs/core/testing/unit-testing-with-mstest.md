@@ -65,14 +65,12 @@ Make the *PrimeService.Tests* directory the current directory and create a new p
 
 ```xml
 <ItemGroup>
-  <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.7.1" />
-  <PackageReference Include="MSTest.TestAdapter" Version="2.1.1" />
-  <PackageReference Include="MSTest.TestFramework" Version="2.1.1" />
-  <PackageReference Include="coverlet.collector" Version="1.3.0" />
+  <PackageReference Include="MSTest" Version="3.2.0" />
+  <PackageReference Include="Microsoft.Testing.Extensions.CodeCoverage" Version="17.10.1" />
 </ItemGroup>
 ```
 
-The test project requires other packages to create and run unit tests. `dotnet new` in the previous step added the MSTest SDK, the MSTest test framework, the MSTest runner, and coverlet for code coverage reporting.
+The test project requires other packages to create and run unit tests. `dotnet new` in the previous step added the necessary MSTest packages and tools for code coverage reporting.
 
 Add the `PrimeService` class library as another dependency to the project. Use the [`dotnet add reference`](../tools/dotnet-add-reference.md) command:
 

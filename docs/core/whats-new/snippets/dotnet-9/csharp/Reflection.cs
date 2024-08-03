@@ -53,9 +53,9 @@ internal class Reflection
     public static void UseAssembly(string assemblyPath)
     {
         Assembly assembly = Assembly.LoadFrom(assemblyPath);
-        Type type = assembly.GetType("MyType");
-        MethodInfo method = type.GetMethod("SumMethod");
-        Console.WriteLine(method.Invoke(null, [5, 10]));
+        Type? type = assembly.GetType("MyType");
+        MethodInfo? method = type?.GetMethod("SumMethod");
+        Console.WriteLine(method?.Invoke(null, [5, 10]));
     }
     // </SaveAssembly>
 }

@@ -1,6 +1,6 @@
 ---
 description: "Learn the different C# preprocessor directives that control conditional compilation, warnings, nullable analysis, and more"
-title: "C# preprocessor directives"
+title: "Preprocessor directives"
 ms.date: 01/30/2023
 f1_keywords:
   - "cs.preprocessor"
@@ -88,12 +88,12 @@ The following code is compiled when `MYTEST` is **not** defined:
 
 You can use the operators [`==` (equality)](operators/equality-operators.md#equality-operator-) and [`!=` (inequality)](operators/equality-operators.md#inequality-operator-) to test for the [`bool`](builtin-types/bool.md) values `true` or `false`. `true` means the symbol is defined. The statement `#if DEBUG` has the same meaning as `#if (DEBUG == true)`. You can use the [`&&` (and)](operators/boolean-logical-operators.md#conditional-logical-and-operator-), [`||` (or)](operators/boolean-logical-operators.md#conditional-logical-or-operator-), and [`!` (not)](operators/boolean-logical-operators.md#logical-negation-operator-) operators to evaluate whether multiple symbols have been defined. You can also group symbols and operators with parentheses.
 
-The following is a complex directive that allows your code to take advantage of newer .NET features while remaining backward compatible.  For example, imagine that you're using a NuGet package in your code, but the package only supports .NET 6 and up, as well as .NET Standard 2.0 and up:
+The following is a complex directive that allows your code to take advantage of newer .NET features while remaining backward compatible. For example, imagine that you're using a NuGet package in your code, but the package only supports .NET 6 and up, as well as .NET Standard 2.0 and up:
 
 ```csharp
 #if (NET6_0_OR_GREATER || NETSTANDARD2_0_OR_GREATER)
     Console.WriteLine("Using .NET 6+ or .NET Standard 2+ code.");
-#elif
+#else
     Console.WriteLine("Using older code that doesn't support the above .NET versions.");
 #endif
 ```
@@ -184,7 +184,7 @@ You use `#define` to define a symbol. When you use the symbol as the expression 
  ```
 
 > [!NOTE]
-> The `#define` directive cannot be used to declare constant values as is typically done in C and C++. Constants in C# are best defined as static members of a class or struct. If you have several such constants, consider creating a separate "Constants" class to hold them.
+> In C#, primitive constants should be defined using the [`const`](keywords/const.md) keyword. A `const` declaration creates a `static` member that can't be modified at runtime. The `#define` directive can't be used to declare constant values as is typically done in C and C++. If you have several such constants, consider creating a separate "Constants" class to hold them.
 
 Symbols can be used to specify conditions for compilation. You can test for the symbol with either `#if` or `#elif`. You can also use the <xref:System.Diagnostics.ConditionalAttribute> to perform conditional compilation. You can define a symbol, but you can't assign a value to a symbol. The `#define` directive must appear in the file before you use any instructions that aren't also preprocessor directives. You can also define a symbol with the [**DefineConstants**](compiler-options/language.md#defineconstants) compiler option. You can undefine a symbol with `#undef`.
 

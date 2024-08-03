@@ -1,5 +1,5 @@
 ---
-title: "Sorry, we don't have specifics on this C# error"
+title: "Sorry, we don't have specifics on this error"
 description: "List of possible resources for compiler errors and warnings that haven't been documented yet."
 ms.date: 12/18/2023
 f1_keywords:
@@ -304,8 +304,6 @@ f1_keywords:
   - "CS8340"
   - "CS8341"
   - "CS8342"
-  - "CS8343"
-  - "CS8344"
   - "CS8346"
   - "CS8347"
   - "CS8348"
@@ -584,7 +582,6 @@ f1_keywords:
   - "CS9045"
   - "CS9046"
   - "CS9047"
-  - "CS9048"
   - "CS9049"
   - "CS9051"
   - "CS9052"
@@ -592,7 +589,6 @@ f1_keywords:
   - "CS9054"
   - "CS9056"
   - "CS9057"
-  - "CS9059"
   - "CS9060"
   - "CS9061"
   - "CS9062"
@@ -651,4 +647,4 @@ Provides a QA website for questions about and issues with Visual C#.
 
 - [C# Reference](../language-reference/index.yml)
 - [Visual Studio feedback options](/visualstudio/ide/feedback-options)
-- [Additional Resources for Visual C# Programmers](../tour-of-csharp/index.md)
+- [Additional Resources for Visual C# Programmers](../tour-of-csharp/overview.md)

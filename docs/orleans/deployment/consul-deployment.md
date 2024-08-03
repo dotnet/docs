@@ -1,7 +1,7 @@
 ---
 title: Use Consul as a membership provider
 description: Learn how to use Consul as a membership provider in .NET Orleans.
-ms.date: 05/12/2023
+ms.date: 07/03/2024
 ---
 
 # Use Consul as a membership provider

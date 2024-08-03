@@ -58,7 +58,7 @@ There are several ways to approach recommendation problems, such as recommending
 
     In **Solution Explorer**, right-click the project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the **Browse** tab, search for **Microsoft.ML**, select the package in the list, and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed. Repeat these steps for **Microsoft.ML.Recommender**.
 
-5. Add the following `using` statements at the top of your *Program.cs* file:
+5. Add the following `using` directives at the top of your *Program.cs* file:
 
     [!code-csharp[UsingStatements](./snippets/movie-recommendation/csharp/Program.cs#UsingStatements "Add necessary usings")]
 
@@ -119,7 +119,7 @@ Add a new class to your project:
 
 2. In the **Add New Item dialog box**, select **Class** and change the **Name** field to *MovieRatingData.cs*. Then, select the **Add** button.
 
-The *MovieRatingData.cs* file opens in the code editor. Add the following `using` statement to the top of *MovieRatingData.cs*:
+The *MovieRatingData.cs* file opens in the code editor. Add the following `using` directive to the top of *MovieRatingData.cs*:
 
 ```csharp
 using Microsoft.ML.Data;

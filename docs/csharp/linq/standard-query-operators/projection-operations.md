@@ -1,11 +1,13 @@
 ---
 title: "Projection operations in LINQ"
 description: Learn about projection operations. These operations transform an object into a new form that often consists only of properties used later.
-ms.date: 02/14/2024
+ms.date: 05/29/2024
 ---
 # Projection operations (C#)
 
 Projection refers to the operation of transforming an object into a new form that often consists only of those properties subsequently used. By using projection, you can construct a new type that is built from each object. You can project a property and perform a mathematical function on it. You can also project the original object without changing it.
+
+[!INCLUDE [Prerequisites](../includes/linq-syntax.md)]
 
 The standard query operator methods that perform projection are listed in the following section.
 
@@ -100,5 +102,5 @@ The following example compares the behavior of `Select` and `SelectMany`. The co
 
 - <xref:System.Linq>
 - [select clause](../../language-reference/keywords/select-clause.md)
-- [How to populate object collections from multiple sources (LINQ) (C#)](../../programming-guide/concepts/linq/how-to-populate-object-collections-from-multiple-sources-linq.md)
-- [How to split a file into many files by using groups (LINQ) (C#)](../../programming-guide/concepts/linq/how-to-split-a-file-into-many-files-by-using-groups-linq.md)
+- [How to populate object collections from multiple sources (LINQ) (C#)](../how-to-query-collections.md)
+- [How to split a file into many files by using groups (LINQ) (C#)](../how-to-query-files-and-directories.md)

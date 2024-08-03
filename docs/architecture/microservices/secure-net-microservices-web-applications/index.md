@@ -35,7 +35,7 @@ The primary mechanism in ASP.NET Core for identifying an application's users is 
 > [!TIP]
 > ASP.NET Core 2.1 and later provides [ASP.NET Core Identity](/aspnet/core/security/authentication/identity) as a [Razor Class Library](/aspnet/core/razor-pages/ui-class), so you won't see much of the necessary code in your project, as was the case for previous versions. For details on how to customize the Identity code to suit your needs, see [Scaffold Identity in ASP.NET Core projects](/aspnet/core/security/authentication/scaffold-identity).
 
-The following code is taken from the ASP.NET Core Web Application MVC 3.1 project template with individual user account authentication selected. It shows how to configure ASP.NET Core Identity using Entity Framework Core in the _Program.cs_ file.
+The following code is taken from the ASP.NET Core Web Application MVC project template with individual user account authentication selected. It shows how to configure ASP.NET Core Identity using Entity Framework Core in the _Program.cs_ file.
 
 ```csharp
 //...

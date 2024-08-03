@@ -1,5 +1,5 @@
 ---
-title: "Nullable value types - C# reference"
+title: "Nullable value types"
 description: Learn about C# nullable value types and how to use them
 ms.date: 11/04/2019
 helpviewer_keywords: 

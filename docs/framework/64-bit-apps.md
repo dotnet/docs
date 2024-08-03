@@ -8,13 +8,13 @@ helpviewer_keywords:
   - "64-bit programming [C++]"
 ms.assetid: fd4026bc-2c3d-4b27-86dc-ec5e96018181
 ---
-# 64-bit Applications
+# 64-bit applications
 
 When you compile an application, you can specify that it should run on a Windows 64-bit operating system either as a native application or under WOW64 (Windows 32-bit on Windows 64-bit). WOW64 is a compatibility environment that enables a 32-bit application to run on a 64-bit system. WOW64 is included in all 64-bit versions of the Windows operating system.
 
-## Running 32-bit vs. 64-bit Applications on Windows
+## Running 32-bit vs. 64-bit applications on Windows
 
- All applications that are built on the .NET Framework 1.0 or 1.1 are treated as 32-bit applications on a 64-bit operating system and are always executed under WOW64 and the 32-bit common language runtime (CLR). 32-bit applications that are built on the .NET Framework 4 or later versions also run under WOW64 on 64-bit systems.
+32-bit applications that are built on .NET Framework 4 or later versions run under WOW64 on 64-bit systems.
 
  Visual Studio installs the 32-bit version of the CLR on an x86 computer, and both the 32-bit version and the appropriate 64-bit version of the CLR on a 64-bit Windows computer. (Because Visual Studio is a 32-bit application, when it is installed on a 64-bit system, it runs under WOW64.)
 
@@ -26,11 +26,8 @@ When you compile an application, you can specify that it should run on a Windows
  Many assemblies run identically on both the 32-bit CLR and the 64-bit CLR. However, some programs may behave differently, depending on the CLR, if they contain one or more of the following:
 
 - Structures that contain members that change size depending on the platform (for example, any pointer type).
-
 - Pointer arithmetic that includes constant sizes.
-
 - Incorrect platform invoke or COM declarations that use `Int32` for handles instead of `IntPtr`.
-
 - Code that casts `IntPtr` to `Int32`.
 
  For more information about how to port a 32-bit application to run on the 64-bit CLR, see [Migrating 32-bit Managed Code to 64-bit](/previous-versions/dotnet/articles/ms973190(v=msdn.10)).

@@ -1,6 +1,6 @@
 ---
 description: "new constraint - C# Reference"
-title: "new constraint - C# Reference"
+title: "new constraint"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "new constraint keyword [C#]"

@@ -1,32 +1,34 @@
 ---
 title: Visual Basic language strategy
-description: We will ensure Visual Basic remains a straightforward and approachable language with a stable design. The core libraries of .NET (such as the BCL) will support VB and many of the improvements to the .NET Runtime and libraries will automatically benefit VB.
+description: Learn about the .NET team's strategy for development and maintenance of the Visual Basic programming language.
 ms.date: 02/06/2023
 ---
 # Annotated Visual Basic language strategy
 
+The following statements define the .NET team's strategy in making decisions about the evolution of Visual Basic.
+
 [!INCLUDE [visual-basic](../../../includes/vb-strategy.md)]
 
-## How strategy guides Visual Basic
+## How strategy guides Visual Basic evolution
 
-The Visual Basic strategy guides our decisions about VB evolution, and these annotations provide insight into how we think about key statements.
+These annotations provide insight into how the .NET team thinks about key statements.
 
 > "Visual Basic remains a straightforward and approachable language"
 
-Visual Basic’s natural language syntax enables programmers and non-programmers to read code and engage in meaningful discussions. Many people embrace the design of Visual Basic, and we do not plan to change that design.
+Visual Basic's natural language syntax enables programmers and non-programmers to read code and engage in meaningful discussions. Many people embrace the design of Visual Basic, and that design won't change.
 
 > "language with a stable design"
 
-The Visual Basic design allows programmers to build solid applications today and to understand code written across a long period of time without stylistic changes.
+The design of Visual Basic allows programmers to build solid applications today and to understand code written across a long period of time without stylistic changes.
 
-> "VB will generally adopt a consumption-only approach and avoid new syntax"
+> "Visual Basic will generally adopt a consumption-only approach and avoid new syntax"
 
-New features in the .NET runtime and C# sometimes require language changes to implement. We will maximize interop by supporting many of these features and maximize stability with a consumption only approach. A consumption only approach means Visual Basic code can access .NET APIs and types built on new .NET runtime features, but Visual Basic won’t add syntax to define types that use those features. This allows new features to benefit Visual Basic users with little or no syntax changes.
+New features in the .NET runtime and C# sometimes require language changes to implement. The .NET team will maximize interop by supporting many of these features and maximize stability with a consumption-only approach. A consumption-only approach means Visual Basic code can access .NET APIs and types built on new .NET runtime features, but the language won't add syntax to define types that use those features. This approach allows new features to benefit Visual Basic users with little or no syntax changes.
 
 > "We will continue to invest in the experience in Visual Studio"
 
-We will continue to improve the Visual Studio experience for Visual Basic developers, such as providing analyzers, code fixes and IDE productivity features.
+The .NET team will continue to improve the Visual Studio experience for Visual Basic developers, such as providing analyzers, code fixers, and IDE productivity features.
 
-> "in core VB scenarios"
+> "in core Visual Basic scenarios"
 
-We will focus on existing scenarios supported by VB and do not anticipate adding support for new workloads, such as web front ends or cross-platform UI frameworks
+The .NET team will focus on existing scenarios supported by Visual Basic. It's unlikely that support for new workloads, such as web front ends or cross-platform UI frameworks, will be added.

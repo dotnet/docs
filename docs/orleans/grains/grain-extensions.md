@@ -1,7 +1,7 @@
 ---
 title: Grain extensions
 description: Learn how to extend an Orleans Grain.
-ms.date: 05/08/2023
+ms.date: 07/03/2024
 ---
 
 # Grain extensions
@@ -41,10 +41,11 @@ public sealed class GrainDeactivateExtension : IGrainDeactivateExtension
         _context = context;
     }
 
-    public async Task Deactivate(string msg)
+    public Task Deactivate(string msg)
     {
         var reason = new DeactivationReason(DeactivationReasonCode.ApplicationRequested, msg);
-        await _context.DeactivateAsync(reason);
+        _context.Deactivate(reason);
+        return Task.CompletedTask;
     }
 }
 ```

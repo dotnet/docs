@@ -1,9 +1,9 @@
 ---
 title: Upgrade to a new .NET version
-description: Learn how to upgrade an app to a new .NET version.
-ms.topic: how-to
-ms.date: 03/25/2024
+description: Learn how to upgrade an app to a new .NET version. Upgrade .NET when the current version goes out of support or when you want to use new features of .NET.
+ms.date: 05/14/2024
 ---
+
 # Upgrade to a new .NET version
 
 New .NET versions are [released each year](https://github.com/dotnet/core/blob/main/releases.md). Many developers start the upgrade process as soon as the new version is available, while others wait until the version they are using is no longer supported. The upgrade process has multiple aspects to consider.
@@ -62,7 +62,7 @@ For containers, [`FROM` statements](https://github.com/dotnet/dotnet-docker/blob
 
 The following Dockerfile example demonstrates pulling an ASP.NET Core 8.0 image.
 
-```dockerfile=
+```dockerfile
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
 ```
 

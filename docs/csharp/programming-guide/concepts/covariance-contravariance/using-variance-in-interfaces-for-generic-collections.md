@@ -1,5 +1,5 @@
 ---
-title: "Using Variance in Interfaces for Generic Collections (C#)"
+title: "Using Variance in Interfaces for Generic Collections"
 description: Learn how to use covariant and contravariant interfaces for generic collections. See examples of converting and comparing generic collections.
 ms.date: 07/20/2015
 ms.assetid: a44f0708-10fa-4c76-82cd-daa6e6b31e8e

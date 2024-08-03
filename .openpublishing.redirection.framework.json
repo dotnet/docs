@@ -953,6 +953,10 @@
             "redirect_url": "/dotnet/framework"
         },
         {
+            "source_path_from_root": "/docs/framework/get-started/the-net-framework-and-out-of-band-releases.md",
+            "redirect_url": "/dotnet/framework/get-started/out-of-band-releases"
+        },
+        {
             "source_path_from_root": "/docs/framework/get-started/net-core-and-open-source.md",
             "redirect_url": "/dotnet/core/introduction"
         },
@@ -1957,6 +1961,11 @@
         {
             "source_path_from_root": "/docs/framework/reflection-and-codedom/viewing-type-information.md",
             "redirect_url": "/dotnet/fundamentals/reflection/viewing-type-information"
+        },
+        {
+            "source_path_from_root": "/docs/framework/release-notes/2024/04-april-security-and-quality-rollup.md",
+            "redirect_url": "/dotnet/framework/release-notes/2024/04-09-april-security-and-quality-rollup",
+            "redirect_document_id": true
         },
         {
             "source_path_from_root": "/docs/framework/resources/creating-resource-files-for-desktop-apps.md",

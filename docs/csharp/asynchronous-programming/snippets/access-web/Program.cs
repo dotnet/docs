@@ -11,7 +11,7 @@ class AccessWeb
     // <ControlFlow>
     public async Task<int> GetUrlContentLengthAsync()
     {
-        var client = new HttpClient();
+        using var client = new HttpClient();
 
         Task<string> getStringTask =
             client.GetStringAsync("https://learn.microsoft.com/dotnet");

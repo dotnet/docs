@@ -1,5 +1,5 @@
 ---
-title: "Access Modifiers - C# Programming Guide"
+title: "Access Modifiers"
 description: All types and type members in C# have an accessibility level that controls whether they can be used from other code. Review this list of access modifiers.
 ms.date: 04/11/2024
 helpviewer_keywords:
@@ -41,7 +41,7 @@ When one declaration of a [partial class or partial method](./partial-classes-an
 
 ## Class and struct accessibility
 
-Classes and structs declared directly within a namespace (aren't nested within other classes or structs) can be either `public` or `internal`. `internal` is the default if no access modifier is specified.
+Classes and structs declared directly within a namespace (aren't nested within other classes or structs) can have `public`, `internal` or `file` access. `internal` is the default if no access modifier is specified.
 
 Struct members, including nested classes and structs, can be declared `public`, `internal`, or `private`. Class members, including nested classes and structs, can be `public`, `protected internal`, `protected`, `internal`, `private protected`, or `private`. Class and struct members,  including nested classes and structs, have `private` access by default.
 
@@ -72,6 +72,8 @@ To set the access level for a `class` or `struct` member, add the appropriate ke
 [!code-csharp[MethodAccess](~/samples/snippets/csharp/objectoriented/accessmodifiers.cs#MethodAccess)]
 
 Finalizers can't have accessibility modifiers. Members of an `enum` type are always `public`, and no access modifiers can be applied.
+
+The `file` access modifier is allowed only on top-level (non-nested) type declarations.
 
 ## C# language specification
 

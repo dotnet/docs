@@ -14,14 +14,14 @@ ms.date: 07/12/2021
 ## Synopsis
 
 ```dotnetcli
-dotnet format [options] [<PROJECT | SOLUTION>]
+dotnet format [<PROJECT | SOLUTION>] [command] [options]
 
 dotnet format -h|--help
 ```
 
 ## Description
 
-`dotnet format` is a code formatter that applies style preferences to a project or solution. Preferences will be read from an *.editorconfig* file, if present, otherwise a default set of preferences will be used. For more information, see the [EditorConfig documentation](../../fundamentals/code-analysis/configuration-files.md#editorconfig).
+`dotnet format` is a code formatter that applies style preferences and static analysis recommendations to a project or solution. Preferences will be read from an *.editorconfig* file, if present, otherwise a default set of preferences will be used. For more information, see the [EditorConfig documentation](../../fundamentals/code-analysis/configuration-files.md#editorconfig).
 
 ## Arguments
 
@@ -85,7 +85,7 @@ None of the options below are required for the `dotnet format` command to succee
 
 #### Description
 
-The `dotnet format whitespace` subcommand will only run formatting rules associated with whitespace formatting. For a complete list of possible formatting options that you can specify in your *.editorconfig* file, see the [C# formatting options](../../fundamentals/code-analysis/style-rules/csharp-formatting-options.md).
+The `dotnet format whitespace` subcommand only runs formatting rules associated with whitespace formatting. For a complete list of possible formatting options that you can specify in your *.editorconfig* file, see the [C# formatting options](../../fundamentals/code-analysis/style-rules/csharp-formatting-options.md).
 
 #### Options
 
@@ -99,7 +99,7 @@ The `dotnet format whitespace` subcommand will only run formatting rules associa
 
 #### Description
 
-The `dotnet format style` subcommand will only run formatting rule associated with code style formatting. For a complete list of formatting options that you can specify in your `editorconfig` file, see [Code style rules](../../fundamentals/code-analysis/style-rules/index.md).
+The `dotnet format style` subcommand only runs formatting rules associated with code style formatting. For a complete list of formatting options that you can specify in your `editorconfig` file, see [Code style rules](../../fundamentals/code-analysis/style-rules/index.md).
 
 #### Options
 
@@ -117,7 +117,7 @@ The `dotnet format style` subcommand will only run formatting rule associated wi
 
 #### Description
 
-The `dotnet format analyzers` subcommand will only run formatting rule associated with analyzers. For a list of analyzer rules that you can specify in your `editorconfig` file, see [Code style rules](../../fundamentals/code-analysis/style-rules/index.md).
+The `dotnet format analyzers` subcommand only runs formatting rules associated with analyzers. For a list of analyzer rules that you can specify in your `editorconfig` file, see [Code style rules](../../fundamentals/code-analysis/style-rules/index.md).
 
 ##### Options
 

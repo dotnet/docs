@@ -1,431 +1,433 @@
 items:
 - name: C# language reference
+  href: index.yml
+- name: Language version
   items:
   - name: Overview
-    displayName: language reference
-    href: ./index.yml
-  - name: Configure language version
+    href: ./language-versioning.md
+    displayName: language version
+  - name: Configure
     href: ./configure-language-version.md
-  - name: Types
-    items:
-    - name: Value types
-      items:
-      - name: Overview
-        href: ./builtin-types/value-types.md
-        displayName: "value types, simple types"
-      - name: Integral numeric types
-        href: ./builtin-types/integral-numeric-types.md
-        displayName: sbyte, byte, short, ushort, int, uint, nint, nuint, long, ulong, integer, literal
-      - name: Floating-point numeric types
-        href: ./builtin-types/floating-point-numeric-types.md
-        displayName: float, decimal, double, rational, real, literal
-      - name: Built-in numeric conversions
-        href: ./builtin-types/numeric-conversions.md
-      - name: bool
-        href: ./builtin-types/bool.md
-        displayName: "Boolean, true, false"
-      - name: char
-        href: ./builtin-types/char.md
-        displayName: "Unicode, character, UTF-16"
-      - name: Enumeration types
-        href: ./builtin-types/enum.md
-        displayName: "enum, bit flags, bit field"
-      - name: Struct types
-        href: ./builtin-types/struct.md
-        displayName: "struct type, readonly struct, ref struct, readonly ref struct"
-      - name: Ref struct types
-        href: ./builtin-types/ref-struct.md
-        displayName: "ref struct, readonly ref struct"
-      - name: Tuple types
-        href: ./builtin-types/value-tuples.md
-        displayName: "value tuples, ValueTuple"
-      - name: Nullable value types
-        href: ./builtin-types/nullable-value-types.md
-        displayName: "? token, ? symbol"
-    - name: Reference types
-      items:
-      - name: Features of reference types
-        href: ./keywords/reference-types.md
-      - name: Built-in reference types
-        displayName: object, delegate, dynamic, string
-        href: ./builtin-types/reference-types.md
-      - name: record
-        href: ./builtin-types/record.md
-      - name: class
-        href: ./keywords/class.md
-      - name: interface
-        href: ./keywords/interface.md
-      - name: Nullable reference types
-        href: ./builtin-types/nullable-reference-types.md
-        displayName: "? token, ? symbol"
-      - name: Collections and arrays
-        items:
-        - name: Collections
-          href: ./builtin-types/collections.md
-        - name: Arrays
-          href: ./builtin-types/arrays.md
-    - name: void
-      href: ./builtin-types/void.md
-    - name: Built-in types
-      href: ./builtin-types/built-in-types.md
-    - name: Unmanaged types
-      href: ./builtin-types/unmanaged-types.md
-    - name: Default values
-      href: ./builtin-types/default-values.md
-  - name: Keywords
+- name: Types
+  items:
+  - name: Value types
     items:
     - name: Overview
-      displayName: keywords, contextual keywords
-      href: ./keywords/index.md
-    - name: Modifiers
+      href: ./builtin-types/value-types.md
+      displayName: "value types, simple types"
+    - name: Integral numeric types
+      href: ./builtin-types/integral-numeric-types.md
+      displayName: sbyte, byte, short, ushort, int, uint, nint, nuint, long, ulong, integer, literal
+    - name: Floating-point numeric types
+      href: ./builtin-types/floating-point-numeric-types.md
+      displayName: float, decimal, double, rational, real, literal
+    - name: Built-in numeric conversions
+      href: ./builtin-types/numeric-conversions.md
+    - name: bool
+      href: ./builtin-types/bool.md
+      displayName: "Boolean, true, false"
+    - name: char
+      href: ./builtin-types/char.md
+      displayName: "Unicode, character, UTF-16"
+    - name: Enumeration types
+      href: ./builtin-types/enum.md
+      displayName: "enum, bit flags, bit field"
+    - name: Struct types
+      href: ./builtin-types/struct.md
+      displayName: "struct type, readonly struct, ref struct, readonly ref struct"
+    - name: Ref struct types
+      href: ./builtin-types/ref-struct.md
+      displayName: "ref struct, readonly ref struct"
+    - name: Tuple types
+      href: ./builtin-types/value-tuples.md
+      displayName: "value tuples, ValueTuple"
+    - name: Nullable value types
+      href: ./builtin-types/nullable-value-types.md
+      displayName: "? token, ? symbol"
+  - name: Reference types
+    items:
+    - name: Features of reference types
+      href: ./keywords/reference-types.md
+    - name: Built-in reference types
+      displayName: object, delegate, dynamic, string
+      href: ./builtin-types/reference-types.md
+    - name: record
+      href: ./builtin-types/record.md
+    - name: class
+      href: ./keywords/class.md
+    - name: interface
+      href: ./keywords/interface.md
+    - name: Nullable reference types
+      href: ./builtin-types/nullable-reference-types.md
+      displayName: "? token, ? symbol"
+    - name: Collections and arrays
       items:
-      - name: Access modifiers
-        items:
-        - name: Quick reference
-          href: ./keywords/access-modifiers.md
-        - name: Accessibility levels
-          href: ./keywords/accessibility-levels.md
-        - name: Accessibility domain
-          href: ./keywords/accessibility-domain.md
-        - name: Restrictions on using accessibility levels
-          href: ./keywords/restrictions-on-using-accessibility-levels.md
-        - name: internal
-          href: ./keywords/internal.md
-        - name: private
-          href: ./keywords/private.md
-        - name: protected
-          href: ./keywords/protected.md
-        - name: public
-          href: ./keywords/public.md
-        - name: protected internal
-          href: ./keywords/protected-internal.md
-        - name: private protected
-          href: ./keywords/private-protected.md
-        - name: file
-          href: ./keywords/file.md
-      - name: abstract
-        href: ./keywords/abstract.md
-      - name: async
-        href: ./keywords/async.md
-        displayName: await
-      - name: const
-        href: ./keywords/const.md
-      - name: event
-        href: ./keywords/event.md
-      - name: extern
-        href: ./keywords/extern.md
-      - name: in (generic modifier)
-        href: ./keywords/in-generic-modifier.md
-      - name: new (member modifier)
-        href: ./keywords/new-modifier.md
-      - name: out (generic modifier)
-        href: ./keywords/out-generic-modifier.md
-      - name: override
-        href: ./keywords/override.md
-      - name: readonly
-        href: ./keywords/readonly.md
-      - name: sealed
-        href: ./keywords/sealed.md
-      - name: static
-        href: ./keywords/static.md
-      - name: unsafe
-        href: ./keywords/unsafe.md
-      - name: virtual
-        href: ./keywords/virtual.md
-      - name: volatile
-        href: ./keywords/volatile.md
-    - name: Statement Keywords
-      href: ./keywords/statement-keywords.md
-    - name: Method Parameters
-      displayName: ref, in, out, params, reference parameter, value parameter, ref readonly
-      href: ./keywords/method-parameters.md
-    - name: Namespace Keywords
-      items:
-      - name: namespace
-        href: ./keywords/namespace.md
-      - name: using directive
-        href: ./keywords/using-directive.md
-      - name: extern alias
-        href: ./keywords/extern-alias.md
-    - name: Generic Type Constraint Keywords
-      items:
-        - name: new constraint
-          href: ./keywords/new-constraint.md
-        - name: where
-          href: ./keywords/where-generic-type-constraint.md
-    - name: Access Keywords
-      items:
-      - name: base
-        href: ./keywords/base.md
-      - name: this
-        href: ./keywords/this.md
-    - name: Literal Keywords
-      items:
-      - name: "null"
-        href: ./keywords/null.md
-      - name: "true and false"
-        href: ./builtin-types/bool.md
-      - name: default
-        href: ./keywords/default.md
-    - name: Contextual Keywords
-      items:
-      - name: add
-        href: ./keywords/add.md
-      - name: get
-        href: ./keywords/get.md
-      - name: init
-        href: ./keywords/init.md
-      - name: partial (type)
-        href: ./keywords/partial-type.md
-      - name: partial (method)
-        href: ./keywords/partial-method.md
-      - name: remove
-        href: ./keywords/remove.md
-      - name: required
-        href: ./keywords/required.md
-      - name: set
-        href: ./keywords/set.md
-      - name: when (filter condition)
-        href: ./keywords/when.md
-      - name: value
-        href: ./keywords/value.md
-    - name: Query Keywords
+      - name: Collections
+        href: ./builtin-types/collections.md
+      - name: Arrays
+        href: ./builtin-types/arrays.md
+  - name: void
+    href: ./builtin-types/void.md
+  - name: Built-in types
+    href: ./builtin-types/built-in-types.md
+  - name: Unmanaged types
+    href: ./builtin-types/unmanaged-types.md
+  - name: Default values
+    href: ./builtin-types/default-values.md
+- name: Keywords
+  items:
+  - name: Overview
+    displayName: keywords, contextual keywords
+    href: ./keywords/index.md
+  - name: Modifiers
+    items:
+    - name: Access modifiers
       items:
       - name: Quick reference
-        displayName: query keywords
-        href: ./keywords/query-keywords.md
-      - name: from clause
-        href: ./keywords/from-clause.md
-      - name: where clause
-        href: ./keywords/where-clause.md
-      - name: select clause
-        href: ./keywords/select-clause.md
-      - name: group clause
-        href: ./keywords/group-clause.md
-      - name: into
-        href: ./keywords/into.md
-      - name: orderby clause
-        href: ./keywords/orderby-clause.md
-      - name: join clause
-        href: ./keywords/join-clause.md
-      - name: let clause
-        href: ./keywords/let-clause.md
-      - name: ascending
-        href: ./keywords/ascending.md
-      - name: descending
-        href: ./keywords/descending.md
-      - name: "on"
-        href: ./keywords/on.md
-      - name: equals
-        href: ./keywords/equals.md
-      - name: by
-        href: ./keywords/by.md
-      - name: in
-        href: ./keywords/in.md
-  - name: Operators and expressions
+        href: ./keywords/access-modifiers.md
+      - name: Accessibility levels
+        href: ./keywords/accessibility-levels.md
+      - name: Accessibility domain
+        href: ./keywords/accessibility-domain.md
+      - name: Restrictions on using accessibility levels
+        href: ./keywords/restrictions-on-using-accessibility-levels.md
+      - name: internal
+        href: ./keywords/internal.md
+      - name: private
+        href: ./keywords/private.md
+      - name: protected
+        href: ./keywords/protected.md
+      - name: public
+        href: ./keywords/public.md
+      - name: protected internal
+        href: ./keywords/protected-internal.md
+      - name: private protected
+        href: ./keywords/private-protected.md
+      - name: file
+        href: ./keywords/file.md
+    - name: abstract
+      href: ./keywords/abstract.md
+    - name: async
+      href: ./keywords/async.md
+      displayName: await
+    - name: const
+      href: ./keywords/const.md
+    - name: event
+      href: ./keywords/event.md
+    - name: extern
+      href: ./keywords/extern.md
+    - name: in (generic modifier)
+      href: ./keywords/in-generic-modifier.md
+    - name: new (member modifier)
+      href: ./keywords/new-modifier.md
+    - name: out (generic modifier)
+      href: ./keywords/out-generic-modifier.md
+    - name: override
+      href: ./keywords/override.md
+    - name: readonly
+      href: ./keywords/readonly.md
+    - name: sealed
+      href: ./keywords/sealed.md
+    - name: static
+      href: ./keywords/static.md
+    - name: unsafe
+      href: ./keywords/unsafe.md
+    - name: virtual
+      href: ./keywords/virtual.md
+    - name: volatile
+      href: ./keywords/volatile.md
+  - name: Statement Keywords
+    href: ./keywords/statement-keywords.md
+  - name: Method Parameters
+    displayName: ref, in, out, params, reference parameter, value parameter, ref readonly
+    href: ./keywords/method-parameters.md
+  - name: Namespace Keywords
     items:
-    - name: Overview
-      href: ./operators/index.md
-      displayName: operator precedence, operator associativity, expressions
-    - name: Arithmetic operators
-      href: ./operators/arithmetic-operators.md
-      displayName: ++, --, +, -, *, /, %, +=, -=, *=, /=, %=, checked, unchecked
-    - name: Boolean logical operators
-      href: ./operators/boolean-logical-operators.md
-      displayName: "!, &&, ||, &, |, ^, &=, |=, ^=, AND, XOR, OR"
-    - name: Bitwise and shift operators
-      href: ./operators/bitwise-and-shift-operators.md
-      displayName: "~, &, |, ^, <<, >>, &=, |=, ^=, <<=, >>=, AND, XOR, OR"
-    - name: Collection expressions
-      displayName: Collection literal, ".. token", ".. symbol", "[] token", "[] symbol"
-      href: ./operators/collection-expressions.md
-    - name: Equality operators
-      href: ./operators/equality-operators.md
-      displayName: ==, !=
-    - name: Comparison operators
-      href: ./operators/comparison-operators.md
-      displayName: ">, <, >=, <=, greater, less"
-    - name: Member access and null-conditional operators and expressions
-      href: ./operators/member-access-operators.md
-      displayName: "., [], ?., ?[], (), indexer, null-conditional, Elvis, invocation, ^, index from end, hat, .., range"
-    - name: Type-testing operators and cast expression
-      href: ./operators/type-testing-and-cast.md
-      displayName: "is operator, is keyword, as operator, as keyword, typeof, (), explicit, conversion"
-    - name: User-defined conversion operators
-      href: ./operators/user-defined-conversion-operators.md
-      displayName: implicit, explicit
-    - name: Pointer-related operators
-      href: ./operators/pointer-related-operators.md
-      displayName: "&, *, ->, [], +, -, ++, --, ==, !=, <, >, <=, >=, dereference, address-of, indirection"
-    - name: Assignment operators
-      href: ./operators/assignment-operator.md
-      displayName: "=, ref, compound"
-    - name: Lambda expressions
-      href: ./operators/lambda-expressions.md
-      displayName: anonymous functions
-    - name: Patterns
-      href: ./operators/patterns.md
-      displayName: pattern matching, and keyword, or keyword, not keyword, pattern reference
-    - name: + and += operators
-      href: ./operators/addition-operator.md
-      displayName: string concatenation, delegate combination, event subscription
-    - name: "- and -= operators"
-      href: ./operators/subtraction-operator.md
-      displayName: delegate removal, event unsubscription
-    - name: "?: operator"
-      href: ./operators/conditional-operator.md
-      displayName: conditional, ternary, ref
-    - name: "! (null-forgiving) operator"
-      href: ./operators/null-forgiving.md
-      displayName: nullable reference, null-forgiveness, null suppression
-    - name: "?? and ??= operators"
-      href: ./operators/null-coalescing-operator.md
-      displayName: null-coalescing, assignment
-    - name: => operator
-      href: ./operators/lambda-operator.md
-      displayName: lambda, expression body definition
-    - name: ":: operator"
-      href: ./operators/namespace-alias-qualifier.md
-      displayName: "namespace alias qualifier, global namespace"
-    - name: await operator
-      href: ./operators/await.md
-      displayName: async
-    - name: default value expressions
-      href: ./operators/default.md
-      displayName: default value, default operator, default literal, type default
-    - name: delegate operator
-      href: ./operators/delegate-operator.md
-      displayName: anonymous
-    - name: is operator
-      href: ./operators/is.md
-      displayName: pattern matching
-    - name: nameof expression
-      href: ./operators/nameof.md
-      displayName: nameof operator
-    - name: new operator
-      href: ./operators/new-operator.md
-      displayName: constructor
-    - name: sizeof operator
-      href: ./operators/sizeof.md
-    - name: stackalloc expression
-      href: ./operators/stackalloc.md
-      displayName: stack allocation, span, stackalloc operator
-    - name: switch expression
-      href: ./operators/switch-expression.md
-      displayName: pattern matching, patterns, when
-    - name: true and false operators
-      href: ./operators/true-false-operators.md
-    - name: with expression
-      href: ./operators/with-expression.md
-      displayName: "records, copy"
-    - name: Operator overloading
-      href: ./operators/operator-overloading.md
-  - name: Statements
+    - name: namespace
+      href: ./keywords/namespace.md
+    - name: using directive
+      href: ./keywords/using-directive.md
+    - name: extern alias
+      href: ./keywords/extern-alias.md
+  - name: Generic Type Constraint Keywords
     items:
-    - name: Declaration statements
-      displayName: var, ref, const, local, by-reference
-      href: ./statements/declarations.md
-    - name: Exception-handling statements
-      displayName: throw, try, catch, finally, when, error, fault
-      href: ./statements/exception-handling-statements.md
-    - name: Iteration statements
-      displayName: for, foreach, do, while, loop
-      href: ./statements/iteration-statements.md
-    - name: Selection statements
-      displayName: if, else, switch, case, when
-      href: ./statements/selection-statements.md
-    - name: Jump statements
-      displayName: break, continue, goto, return
-      href: ./statements/jump-statements.md
-    - name: checked and unchecked statements
-      displayName: overflow checking
-      href: ./statements/checked-and-unchecked.md
-    - name: fixed statement
-      displayName: pin, pinned
-      href: ./statements/fixed.md
-    - name: lock statement
-      displayName: thread synchronization, monitor
-      href: ./statements/lock.md
-    - name: using statement
-      displayName: dispose, disposable, await using, using declaration
-      href: ./statements/using.md
-    - name: yield statement
-      displayName: iterator, yield break, yield return
-      href: ./statements/yield.md
-  - name: Special characters
+      - name: new constraint
+        href: ./keywords/new-constraint.md
+      - name: where
+        href: ./keywords/where-generic-type-constraint.md
+  - name: Access Keywords
     items:
-    - name: Overview
-      displayName: special characters
-      href: ./tokens/index.md
-    - name: Comments
-      displayName: /* */, //
-      href: ./tokens/comments.md
-    - name: $ -- string interpolation
-      href: ./tokens/interpolated.md
-    - name: "@ -- verbatim identifier"
-      href: ./tokens/verbatim.md
-    - name: "\"\"\" -- raw string literal"
-      href: ./tokens/raw-string.md
-  - name: Attributes read by the compiler
+    - name: base
+      href: ./keywords/base.md
+    - name: this
+      href: ./keywords/this.md
+  - name: Literal Keywords
     items:
-    - name: Global attributes
-      displayName: AssemblyName, AssemblyVersion, AssemblyCulture, AssemblyFlags, AssemblyProduct, AssemblyTrademark, AssemblyInformationalVersion, AssemblyCompany, AssemblyCopyright, AssemblyFileVersion, CLSCompliant, AssemblyTitle, AssemblyDescription, AssemblyConfiguration, AssemblyDefaultAlias
-      href: ./attributes/global.md
-    - name: Caller information
-      displayName: CallerFilePath, CallerLineNumber, CallerMemberName
-      href: ./attributes/caller-information.md
-    - name: Nullable static analysis
-      displayName: AllowNull, DisallowNull, MaybeNull, NotNull, MaybeNullWhen, NotNullWhen, NotNullIfNotNull, DoesNotReturn, DoesNotReturnIf
-      href: ./attributes/nullable-analysis.md
-    - name: Miscellaneous
-      displayName: Conditional, Obsolete, Experimental, SetsRequiredMembers, AttributeUsage, ModuleInitializer, SkipLocalsInit, module initializer
-      href: ./attributes/general.md
-  - name: Unsafe code and pointers
-    displayName: unsafe code, pointers, fixed size buffer, function pointer
-    href: ./unsafe-code.md
-  - name: Preprocessor directives
-    href: ./preprocessor-directives.md
-    displayName: \#if, \#else, \#elif, \#endif, \#define, \#undef, \#warning, \#error, \#line, \#nullable, \#region, \#endregion, \#pragma, warning, checksum
-  - name: Compiler options
+    - name: "null"
+      href: ./keywords/null.md
+    - name: "true and false"
+      href: ./builtin-types/bool.md
+    - name: default
+      href: ./keywords/default.md
+  - name: Contextual Keywords
     items:
-    - name: Overview
-      href: ./compiler-options/index.md
-    - name: Language options
-      displayName: CheckForOverflowUnderflow, checked, AllowUnsafeBlocks, unsafe, DefineConstants, define, LangVersion, langversion, Nullable, nullable
-      href: ./compiler-options/language.md
-    - name: Output options
-      displayName: DocumentationFile, doc, OutputAssembly, out, PlatformTarget, platform, ProduceReferenceAssembly, refout, TargetType, target,
-      href: ./compiler-options/output.md
-    - name: Input options
-      displayName: References, reference, references, AddModules, addmodule, EmbedInteropTypes, link
-      href: ./compiler-options/inputs.md
-    - name: Error and warning options
-      displayName: WarningLevel, warn, TreatWarningsAsErrors, warnaserror, WarningsAsErrors, WarningsNotAsErrors, DisabledWarnings, nowarn, CodeAnalysisRuleSet, ruleset, ErrorLog, errorlog, ReportAnalyzer, reportanalyzer
-      href: ./compiler-options/errors-warnings.md
-    - name: Code generation options
-      displayName: DebugType, debug, Optimize, optimize, Deterministic, deterministic, ProduceOnlyReferenceAssembly, refonly
-      href: ./compiler-options/code-generation.md
-    - name: Security options
-      displayName: DelaySign, delaysign, KeyFile, keyfile, KeyContainer, keycontainer, PublicSign, publicsign, highentropyva, HighEntropyVA
-      href: ./compiler-options/security.md
-    - name: Resources options
-      displayName: Win32Resource, win32res, Win32Icon, win32icon, Win32Manifest, win32manifest, NoWin32Manifest, nowin32manifest, Resources, resource, LinkResources
-      href: ./compiler-options/resources.md
-    - name: Miscellaneous options
-      displayName: ResponseFiles, @, NoLogo, nologo, NoConfig, noconfig
-      href: ./compiler-options/miscellaneous.md
-    - name: Advanced options
-      displayName: MainEntryPoint, StartupObject, main, PdbFile, pdb, PathMap, pathmap, ApplicationConfiguration, appconfig, AdditionalLibPaths, lib, GenerateFullPaths, fullpath, PreferredUILang, preferreduilang, BaseAddress, baseaddress, ChecksumAlgorithm, checksumalgorithm, CodePage, codepage, Utf8Output, utf8output, FileAlignment, filealign, ErrorEndLocation, errorendlocation, NoStandardLib, nostdlib, SubsystemVersion, subsystemversion, ModuleAssemblyName, moduleassemblyname
-      href: ./compiler-options/advanced.md
-  - name: XML documentation comments
+    - name: add
+      href: ./keywords/add.md
+    - name: get
+      href: ./keywords/get.md
+    - name: init
+      href: ./keywords/init.md
+    - name: partial (type)
+      href: ./keywords/partial-type.md
+    - name: partial (method)
+      href: ./keywords/partial-method.md
+    - name: remove
+      href: ./keywords/remove.md
+    - name: required
+      href: ./keywords/required.md
+    - name: set
+      href: ./keywords/set.md
+    - name: when (filter condition)
+      href: ./keywords/when.md
+    - name: value
+      href: ./keywords/value.md
+  - name: Query Keywords
     items:
-    - name: Generate API documentation
-      href: ./xmldoc/index.md
-      displayName: xml documentation comments
-    - name: Recommended tags
-      href: ./xmldoc/recommended-tags.md
-    - name: Examples
-      href: ./xmldoc/examples.md
+    - name: Quick reference
+      displayName: query keywords
+      href: ./keywords/query-keywords.md
+    - name: from clause
+      href: ./keywords/from-clause.md
+    - name: where clause
+      href: ./keywords/where-clause.md
+    - name: select clause
+      href: ./keywords/select-clause.md
+    - name: group clause
+      href: ./keywords/group-clause.md
+    - name: into
+      href: ./keywords/into.md
+    - name: orderby clause
+      href: ./keywords/orderby-clause.md
+    - name: join clause
+      href: ./keywords/join-clause.md
+    - name: let clause
+      href: ./keywords/let-clause.md
+    - name: ascending
+      href: ./keywords/ascending.md
+    - name: descending
+      href: ./keywords/descending.md
+    - name: "on"
+      href: ./keywords/on.md
+    - name: equals
+      href: ./keywords/equals.md
+    - name: by
+      href: ./keywords/by.md
+    - name: in
+      href: ./keywords/in.md
+- name: Operators and expressions
+  items:
+  - name: Overview
+    href: ./operators/index.md
+    displayName: operator precedence, operator associativity, expressions
+  - name: Arithmetic operators
+    href: ./operators/arithmetic-operators.md
+    displayName: ++, --, +, -, *, /, %, +=, -=, *=, /=, %=, checked, unchecked
+  - name: Boolean logical operators
+    href: ./operators/boolean-logical-operators.md
+    displayName: "!, &&, ||, &, |, ^, &=, |=, ^=, AND, XOR, OR"
+  - name: Bitwise and shift operators
+    href: ./operators/bitwise-and-shift-operators.md
+    displayName: "~, &, |, ^, <<, >>, &=, |=, ^=, <<=, >>=, AND, XOR, OR"
+  - name: Collection expressions
+    displayName: Collection literal, ".. token", ".. symbol", "[] token", "[] symbol"
+    href: ./operators/collection-expressions.md
+  - name: Equality operators
+    href: ./operators/equality-operators.md
+    displayName: ==, !=
+  - name: Comparison operators
+    href: ./operators/comparison-operators.md
+    displayName: ">, <, >=, <=, greater, less"
+  - name: Member access and null-conditional operators and expressions
+    href: ./operators/member-access-operators.md
+    displayName: "., [], ?., ?[], (), indexer, null-conditional, Elvis, invocation, ^, index from end, hat, .., range"
+  - name: Type-testing operators and cast expression
+    href: ./operators/type-testing-and-cast.md
+    displayName: "is operator, is keyword, as operator, as keyword, typeof, (), explicit, conversion"
+  - name: User-defined conversion operators
+    href: ./operators/user-defined-conversion-operators.md
+    displayName: implicit, explicit
+  - name: Pointer-related operators
+    href: ./operators/pointer-related-operators.md
+    displayName: "&, *, ->, [], +, -, ++, --, ==, !=, <, >, <=, >=, dereference, address-of, indirection"
+  - name: Assignment operators
+    href: ./operators/assignment-operator.md
+    displayName: "=, ref, compound"
+  - name: Lambda expressions
+    href: ./operators/lambda-expressions.md
+    displayName: anonymous functions
+  - name: Patterns
+    href: ./operators/patterns.md
+    displayName: pattern matching, and keyword, or keyword, not keyword, pattern reference
+  - name: + and += operators
+    href: ./operators/addition-operator.md
+    displayName: string concatenation, delegate combination, event subscription
+  - name: "- and -= operators"
+    href: ./operators/subtraction-operator.md
+    displayName: delegate removal, event unsubscription
+  - name: "?: operator"
+    href: ./operators/conditional-operator.md
+    displayName: conditional, ternary, ref
+  - name: "! (null-forgiving) operator"
+    href: ./operators/null-forgiving.md
+    displayName: nullable reference, null-forgiveness, null suppression
+  - name: "?? and ??= operators"
+    href: ./operators/null-coalescing-operator.md
+    displayName: null-coalescing, assignment
+  - name: => operator
+    href: ./operators/lambda-operator.md
+    displayName: lambda, expression body definition
+  - name: ":: operator"
+    href: ./operators/namespace-alias-qualifier.md
+    displayName: "namespace alias qualifier, global namespace"
+  - name: await operator
+    href: ./operators/await.md
+    displayName: async
+  - name: default value expressions
+    href: ./operators/default.md
+    displayName: default value, default operator, default literal, type default
+  - name: delegate operator
+    href: ./operators/delegate-operator.md
+    displayName: anonymous
+  - name: is operator
+    href: ./operators/is.md
+    displayName: pattern matching
+  - name: nameof expression
+    href: ./operators/nameof.md
+    displayName: nameof operator
+  - name: new operator
+    href: ./operators/new-operator.md
+    displayName: constructor
+  - name: sizeof operator
+    href: ./operators/sizeof.md
+  - name: stackalloc expression
+    href: ./operators/stackalloc.md
+    displayName: stack allocation, span, stackalloc operator
+  - name: switch expression
+    href: ./operators/switch-expression.md
+    displayName: pattern matching, patterns, when
+  - name: true and false operators
+    href: ./operators/true-false-operators.md
+  - name: with expression
+    href: ./operators/with-expression.md
+    displayName: "records, copy"
+  - name: Operator overloading
+    href: ./operators/operator-overloading.md
+- name: Statements
+  items:
+  - name: Declaration statements
+    displayName: var, ref, const, local, by-reference
+    href: ./statements/declarations.md
+  - name: Exception-handling statements
+    displayName: throw, try, catch, finally, when, error, fault
+    href: ./statements/exception-handling-statements.md
+  - name: Iteration statements
+    displayName: for, foreach, do, while, loop
+    href: ./statements/iteration-statements.md
+  - name: Selection statements
+    displayName: if, else, switch, case, when
+    href: ./statements/selection-statements.md
+  - name: Jump statements
+    displayName: break, continue, goto, return
+    href: ./statements/jump-statements.md
+  - name: checked and unchecked statements
+    displayName: overflow checking
+    href: ./statements/checked-and-unchecked.md
+  - name: fixed statement
+    displayName: pin, pinned
+    href: ./statements/fixed.md
+  - name: lock statement
+    displayName: thread synchronization, monitor
+    href: ./statements/lock.md
+  - name: using statement
+    displayName: dispose, disposable, await using, using declaration
+    href: ./statements/using.md
+  - name: yield statement
+    displayName: iterator, yield break, yield return
+    href: ./statements/yield.md
+- name: Special characters
+  items:
+  - name: Overview
+    displayName: special characters
+    href: ./tokens/index.md
+  - name: Comments
+    displayName: /* */, //
+    href: ./tokens/comments.md
+  - name: $ -- string interpolation
+    href: ./tokens/interpolated.md
+  - name: "@ -- verbatim identifier"
+    href: ./tokens/verbatim.md
+  - name: "\"\"\" -- raw string literal"
+    href: ./tokens/raw-string.md
+- name: Attributes read by the compiler
+  items:
+  - name: Global attributes
+    displayName: AssemblyName, AssemblyVersion, AssemblyCulture, AssemblyFlags, AssemblyProduct, AssemblyTrademark, AssemblyInformationalVersion, AssemblyCompany, AssemblyCopyright, AssemblyFileVersion, CLSCompliant, AssemblyTitle, AssemblyDescription, AssemblyConfiguration, AssemblyDefaultAlias
+    href: ./attributes/global.md
+  - name: Caller information
+    displayName: CallerFilePath, CallerLineNumber, CallerMemberName
+    href: ./attributes/caller-information.md
+  - name: Nullable static analysis
+    displayName: AllowNull, DisallowNull, MaybeNull, NotNull, MaybeNullWhen, NotNullWhen, NotNullIfNotNull, DoesNotReturn, DoesNotReturnIf
+    href: ./attributes/nullable-analysis.md
+  - name: Miscellaneous
+    displayName: Conditional, Obsolete, Experimental, SetsRequiredMembers, AttributeUsage, ModuleInitializer, SkipLocalsInit, module initializer
+    href: ./attributes/general.md
+- name: Unsafe code and pointers
+  displayName: unsafe code, pointers, fixed size buffer, function pointer
+  href: ./unsafe-code.md
+- name: Preprocessor directives
+  href: ./preprocessor-directives.md
+  displayName: \#if, \#else, \#elif, \#endif, \#define, \#undef, \#warning, \#error, \#line, \#nullable, \#region, \#endregion, \#pragma, warning, checksum
+- name: Compiler options
+  items:
+  - name: Overview
+    href: ./compiler-options/index.md
+  - name: Language options
+    displayName: CheckForOverflowUnderflow, checked, AllowUnsafeBlocks, unsafe, DefineConstants, define, LangVersion, langversion, Nullable, nullable
+    href: ./compiler-options/language.md
+  - name: Output options
+    displayName: DocumentationFile, doc, OutputAssembly, out, PlatformTarget, platform, ProduceReferenceAssembly, refout, TargetType, target,
+    href: ./compiler-options/output.md
+  - name: Input options
+    displayName: References, reference, references, AddModules, addmodule, EmbedInteropTypes, link
+    href: ./compiler-options/inputs.md
+  - name: Error and warning options
+    displayName: WarningLevel, warn, TreatWarningsAsErrors, warnaserror, WarningsAsErrors, WarningsNotAsErrors, DisabledWarnings, nowarn, CodeAnalysisRuleSet, ruleset, ErrorLog, errorlog, ReportAnalyzer, reportanalyzer
+    href: ./compiler-options/errors-warnings.md
+  - name: Code generation options
+    displayName: DebugType, debug, Optimize, optimize, Deterministic, deterministic, ProduceOnlyReferenceAssembly, refonly
+    href: ./compiler-options/code-generation.md
+  - name: Security options
+    displayName: DelaySign, delaysign, KeyFile, keyfile, KeyContainer, keycontainer, PublicSign, publicsign, highentropyva, HighEntropyVA
+    href: ./compiler-options/security.md
+  - name: Resources options
+    displayName: Win32Resource, win32res, Win32Icon, win32icon, Win32Manifest, win32manifest, NoWin32Manifest, nowin32manifest, Resources, resource, LinkResources
+    href: ./compiler-options/resources.md
+  - name: Miscellaneous options
+    displayName: ResponseFiles, @, NoLogo, nologo, NoConfig, noconfig
+    href: ./compiler-options/miscellaneous.md
+  - name: Advanced options
+    displayName: MainEntryPoint, StartupObject, main, PdbFile, pdb, PathMap, pathmap, ApplicationConfiguration, appconfig, AdditionalLibPaths, lib, GenerateFullPaths, fullpath, PreferredUILang, preferreduilang, BaseAddress, baseaddress, ChecksumAlgorithm, checksumalgorithm, CodePage, codepage, Utf8Output, utf8output, FileAlignment, filealign, ErrorEndLocation, errorendlocation, NoStandardLib, nostdlib, SubsystemVersion, subsystemversion, ModuleAssemblyName, moduleassemblyname
+    href: ./compiler-options/advanced.md
+- name: XML documentation comments
+  items:
+  - name: Generate API documentation
+    href: ./xmldoc/index.md
+    displayName: xml documentation comments
+  - name: Recommended tags
+    href: ./xmldoc/recommended-tags.md
+  - name: Examples
+    href: ./xmldoc/examples.md
 - name: C# compiler messages
   href: ./compiler-messages/index.md
   items:
@@ -435,7 +437,7 @@ items:
       CS0171, CS0188, CS0843, CS8904, CS1738, CS8022, CS8023, CS8024, CS8025, CS8026, CS8058, CS8059, CS8107, CS8192, CS8302,
       CS8303, CS8304, CS8305, CS8306, CS8314, CS8320, CS8370, CS8371, CS8400, CS8401, CS8511, CS8627, CS8630, CS8652, CS8703,
       CS8704, CS8706, CS8773, CS8912, CS8919, CS8929, CS8936, CS8957, CS8967, CS9014, CS9015, CS9016, CS9017, CS9058, CS9064,
-      CS9103, CS9171, CS9194, CS9202, CS9204
+      CS9103, CS9171, CS9194, CS9202, CS9204, CS9240
   - name: Assembly references
     href: ./compiler-messages/assembly-references.md
     displayName: >
@@ -458,10 +460,24 @@ items:
     displayName: >
       ref safety,
       CS0192, CS0199, CS0206, CS0631, CS0767, CS1510, CS1605, CS1623, CS1649, CS1651, CS1655, CS1657, CS1741, CS1939, CS1988,
-      CS7084, CS8166, CS8167, CS8168, CS8169. CS8325, CS8326, CS8327, CS8329, CS8330, CS8331, CS8332, CS8337, CS8338, CS8345,
-      CS8351, CS8373, CS8374, CS8388, CS8977, CS9072, CS9077, CS9078, CS9079, CS9085, CS9086, CS9087, CS9089, CS9091, CS9092,
-      CS9093, CS9094, CS9095, CS9096, CS9097, CS9101, CS9102, CS9104, CS9190, CS9191, CS9192, CS9193, CS9195, CS9196, CS9197,
-      CS9198, CS9199, CS9200, CS9201
+      CS7084, CS8166, CS8167, CS8168, CS8169. CS8325, CS8326, CS8327, CS8329, CS8330, CS8331, CS8332, CS8337, CS8338, CS8351,
+      CS8373, CS8374, CS8388, CS8977, CS9072, CS9077, CS9078, CS9079, CS9085, CS9086, CS9087, CS9089, CS9091, CS9092, CS9093,
+      CS9094, CS9095, CS9096, CS9097, CS9101, CS9102, CS9104, CS9190, CS9191, CS9192, CS9193, CS9195, CS9196, CS9197, CS9198,
+      CS9199, CS9200, CS9201
+  - name: "`ref struct` types"
+    href: ./compiler-messages/ref-struct-errors.md
+    displayName: >
+      ref struct,
+      CS8343, CS8344, CS8345, CS9048, CS9050, CS9059, CS9241, CS9242, CS9243, CS9244, CS9245, CS9246, CS9247
+  - name: Iterator methods
+    href: ./compiler-messages/iterator-yield.md
+    displayName: >
+      yield return, yield break,
+      CS1622, CS1624, CS1625, CS1626, CS1627, CS1629, CS1631, CS1637, CS4013, CS8154, CS8176, CS9237, CS9238, CS9239
+  - name: Params modifier
+    href: ./compiler-messages/params-arrays.md
+    displayName: >
+      CS0225, CS0231, CS0466, CS0674, CS0758, CS1104, CS1611, CS1670, CS1751, CS9218, CS9223, CS9224, CS9225, CS9227, CS9228
   - name: Nullable warnings
     href: ./compiler-messages/nullable-warnings.md
     displayName: >
@@ -505,6 +521,9 @@ items:
   - name: static abstract interface members
     href: ./compiler-messages/static-abstract-interfaces.md
     displayName: CS8920, CS8921, CS8922, CS8923, CS8924, CS8925, CS8926, CS8928, CS8930, 8931, 8932
+  - name: Thread synchronization
+    href: ./compiler-messages/lock-semantics.md
+    displayName: CS0185, CS9216, CS9217
   - name: Warning waves
     href: ./compiler-messages/warning-waves.md
     displayName: >
@@ -762,8 +781,6 @@ items:
       href: ../misc/cs0180.md
     - name: CS0181
       href: ./compiler-messages/cs0181.md
-    - name: CS0185
-      href: ../misc/cs0185.md
     - name: CS0186
       href: ../misc/cs0186.md
     - name: CS0191
@@ -810,8 +827,6 @@ items:
       href: ../misc/cs0220.md
     - name: CS0221
       href: ../misc/cs0221.md
-    - name: CS0225
-      href: ../misc/cs0225.md
     - name: CS0226
       href: ../misc/cs0226.md
     - name: CS0227
@@ -822,8 +837,6 @@ items:
       href: ./compiler-messages/cs0229.md
     - name: CS0230
       href: ../misc/cs0230.md
-    - name: CS0231
-      href: ../misc/cs0231.md
     - name: CS0233
       href: ./compiler-messages/cs0233.md
     - name: CS0236
@@ -1004,8 +1017,6 @@ items:
       href: ../misc/cs0462.md
     - name: CS0463
       href: ../misc/cs0463.md
-    - name: CS0466
-      href: ../misc/cs0466.md
     - name: CS0468
       href: ../misc/cs0468.md
     - name: CS0470
@@ -1218,8 +1229,6 @@ items:
       href: ../misc/cs0670.md
     - name: CS0673
       href: ../misc/cs0673.md
-    - name: CS0674
-      href: ../misc/cs0674.md
     - name: CS0677
       href: ../misc/cs0677.md
     - name: CS0678
@@ -1338,8 +1347,6 @@ items:
       href: ../misc/cs0756.md
     - name: CS0757
       href: ../misc/cs0757.md
-    - name: CS0758
-      href: ../misc/cs0758.md
     - name: CS0759
       href: ../misc/cs0759.md
     - name: CS0761
@@ -1484,8 +1491,6 @@ items:
       href: ../misc/cs1102.md
     - name: CS1103
       href: ../misc/cs1103.md
-    - name: CS1104
-      href: ../misc/cs1104.md
     - name: CS1105
       href: ../misc/cs1105.md
     - name: CS1106
@@ -1638,8 +1643,6 @@ items:
       href: ../misc/cs1608.md
     - name: CS1609
       href: ../misc/cs1609.md
-    - name: CS1611
-      href: ../misc/cs1611.md
     - name: CS1612
       href: ./compiler-messages/cs1612.md
     - name: CS1613
@@ -1656,24 +1659,10 @@ items:
       href: ../misc/cs1619.md
     - name: CS1620
       href: ../misc/cs1620.md
-    - name: CS1622
-      href: ../misc/cs1622.md
-    - name: CS1624
-      href: ../misc/cs1624.md
-    - name: CS1625
-      href: ../misc/cs1625.md
-    - name: CS1626
-      href: ../misc/cs1626.md
-    - name: CS1627
-      href: ../misc/cs1627.md
-    - name: CS1629
-      href: ../misc/cs1629.md
     - name: CS1630
       href: ../misc/cs1630.md
-    - name: CS1631
-      href: ../misc/cs1631.md
     - name: CS1637
-      href: ../misc/cs1637.md
+      href: ./compiler-messages/iterator-yield.md
     - name: CS1638
       href: ../misc/cs1638.md
     - name: CS1639
@@ -1716,8 +1705,6 @@ items:
       href: ../misc/cs1666.md
     - name: CS1667
       href: ../misc/cs1667.md
-    - name: CS1670
-      href: ../misc/cs1670.md
     - name: CS1671
       href: ../misc/cs1671.md
     - name: CS1672
@@ -1786,8 +1773,6 @@ items:
       href: ./compiler-messages/cs1737.md
     - name: CS1750
       href: ./compiler-messages/cs1750.md
-    - name: CS1751
-      href: ./compiler-messages/cs1751.md
     - name: CS1763
       href: ./compiler-messages/cs1763.md
     - name: CS1900
@@ -1924,8 +1909,6 @@ items:
       href: ./compiler-messages/cs4008.md
     - name: CS4009
       href: ../misc/CS4009.md
-    - name: CS4013
-      href: ./compiler-messages/cs4013.md
     - name: CS4032
       href: ./compiler-messages/cs4032.md
     - name: CS4033
@@ -1970,8 +1953,6 @@ items:
       href: ./compiler-messages/cs8151.md
     - name: CS8152
       href: ./compiler-messages/cs8152.md
-    - name: CS8154
-      href: ./compiler-messages/cs8154.md
     - name: CS8156
       href: ./compiler-messages/cs8156.md
     - name: CS8157
@@ -1998,8 +1979,6 @@ items:
       href: ./compiler-messages/cs8173.md
     - name: CS8174
       href: ./compiler-messages/cs8174.md
-    - name: CS8176
-      href: ./compiler-messages/cs8176.md
     - name: CS8177
       href: ./compiler-messages/cs8177.md
     - name: CS8178
@@ -2038,8 +2017,6 @@ items:
       href: ./compiler-messages/CS8817.md
     - name: CS9043
       href: ./compiler-messages/cs9043.md
-    - name: CS9050
-      href: ./compiler-messages/cs9050.md
   - name: Level 1 warning messages
     items:
     - name: CS0183
@@ -2344,3 +2321,9 @@ items:
       href: ./compiler-messages/cs1610.md
     - name: CS1712
       href: ../misc/cs1712.md
+- name: Other C# documentation
+  items:
+  - name: C# conceptual docs
+    href: ../tour-of-csharp/index.yml
+  - name: C# specification
+    href: ../specification/index.yml

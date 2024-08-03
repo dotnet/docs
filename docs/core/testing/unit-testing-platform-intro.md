@@ -15,7 +15,7 @@ Microsoft.Testing.Platform is a lightweight and portable alternative to [VSTest]
 ## Supported test frameworks
 
 * MSTest. In MSTest, the support of `Microsoft.Testing.Platform` is done via [MSTest runner](unit-testing-mstest-runner-intro.md).
-* NUnit: work in progress, for more information, see [Microsoft Testing Platform for NUnit](https://github.com/nunit/nunit3-vs-adapter/issues/1152).
+* NUnit. In NUnit, the support of `Microsoft.Testing.Platform` is done via [NUnit runner](unit-testing-nunit-runner-intro.md).
 * xUnit: work in progress, for more information, see [Microsoft Testing Platform for xUnit](https://github.com/xunit/visualstudio.xunit/issues/402).
 
 ## Run and debug tests
@@ -208,6 +208,18 @@ Specifies the minimum number of tests that are expected to run. By default, at l
 - **`--results-directory`**
 
 The directory where the test results are going to be placed. If the specified directory doesn't exist, it's created. The default is `TestResults` in the directory that contains the test application.
+
+## MSBuild integration
+
+The NuGet package [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild) provides various integrations for `Microsoft.Testing.Platform` with MSBuild:
+
+- Support for `dotnet test`, see [dotnet test integration](./unit-testing-platform-integration-dotnet-test.md) for more information.
+- Support for `ProjectCapability` required by `Visual Studio` and `Visual Studio Code` Test Explorers.
+- Automatic generation of the entry point (`Main` method)
+- Automatic generation of the configuration file
+
+> [!NOTE]
+> This integration works in a transitive way (a project that references another project referencing this package will behave as if it references the package) and can be disabled through the `IsTestingPlatformApplication` MSBuild property.
 
 ## See also
 

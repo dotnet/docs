@@ -24,7 +24,7 @@ var v = new { Amount = 108, Message = "Hello" };
 Console.WriteLine(v.Amount + v.Message);
 ```
 
-Anonymous types typically are used in the [`select`](../../language-reference/keywords/select-clause.md) clause of a query expression to return a subset of the properties from each object in the source sequence. For more information about queries, see [LINQ in C#](../../linq/index.md).
+Anonymous types are typically used in the [`select`](../../language-reference/keywords/select-clause.md) clause of a query expression to return a subset of the properties from each object in the source sequence. For more information about queries, see [LINQ in C#](../../linq/index.md).
 
 Anonymous types contain one or more public read-only properties. No other kinds of class members, such as methods or events, are valid. The expression that is used to initialize a property cannot be `null`, an anonymous function, or a pointer type.
 
@@ -37,7 +37,7 @@ If you don't specify member names in the anonymous type, the compiler gives the 
 > [!TIP]
 > You can use .NET style rule [IDE0037](../../../fundamentals/code-analysis/style-rules/ide0037.md) to enforce whether inferred or explicit member names are preferred.
 
-It is also possible to define a field by object of another type: class, struct or even another anonymous type. It is done by using the variable holding this object just like in the following example, where two anonymous types are created using already instantiated user-defined types. In both cases the `product` field in the anonymous type `shipment` and `shipmentWithBonus` will be of type `Product` containing it's default values of each field. And the `bonus` field will be of anonymous type created by the compiler.
+It is also possible to define a field by object of another type: class, struct or even another anonymous type. It is done by using the variable holding this object just like in the following example, where two anonymous types are created using already instantiated user-defined types. In both cases the `product` field in the anonymous type `shipment` and `shipmentWithBonus` will be of type `Product` containing its default values of each field. And the `bonus` field will be of anonymous type created by the compiler.
 
 :::code language="csharp" source="snippets/anonymous-types/Program.cs" ID="snippet03":::
 

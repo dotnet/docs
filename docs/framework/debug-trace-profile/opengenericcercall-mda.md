@@ -2,7 +2,7 @@
 title: "openGenericCERCall MDA"
 description: See the openGenericCERCall managed debugging assistant, which may activate if CER code doesn't run when a thread aborts or when an application domain unloads.
 ms.date: "03/30/2017"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "MDAs (managed debugging assistants), CER calls"
   - "open generic CER calls"
   - "constrained execution regions"
@@ -13,6 +13,8 @@ helpviewer_keywords:
 ms.assetid: da3e4ff3-2e67-4668-9720-fa776c97407e
 ---
 # openGenericCERCall MDA
+
+[!INCLUDE [net-framework-specific](../includes/net-framework-specific.md)]
 
 The `openGenericCERCall` managed debugging assistant is activated to warn that a constrained execution region (CER) graph with generic type variables at the root method is being processed at JIT-compilation or native image generation time and at least one of the generic type variables is an object reference type.
 
@@ -41,7 +43,7 @@ This MDA has no effect on the CLR.
 ## Output
 
 The following is a sample of output from this MDA:
-  
+
  ```output
  Method 'GenericMethodWithCer', which contains at least one constrained execution region, cannot be prepared automatically since it has one or more unbound generic type parameters.
  The caller must ensure this method is prepared explicitly at run time prior to execution.
@@ -57,7 +59,7 @@ The following is a sample of output from this MDA:
     <openGenericCERCall/>
   </assistants>
 </mdaConfig>
-```  
+```
 
 ## Example
 

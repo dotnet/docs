@@ -3,6 +3,7 @@ author: adegeo
 ms.author: adegeo
 ms.date: 10/26/2021
 ms.topic: include
+ms.custom: linux-related-content
 ---
 
 ### Install the SDK
@@ -13,6 +14,8 @@ The .NET SDK allows you to develop apps with .NET. If you install the .NET SDK, 
 sudo apt-get update && \
   sudo apt-get install -y dotnet-sdk-6.0
 ```
+
+To learn how to use the .NET CLI, see [.NET CLI overview](../../tools/index.md).
 
 ### Install the Runtime
 
@@ -28,3 +31,5 @@ As an alternative to the ASP.NET Core Runtime, you can install the .NET Runtime,
 ```bash
 sudo apt-get install -y dotnet-runtime-6.0
 ```
+
+To learn how to use the .NET CLI, see [.NET CLI overview](../../tools/index.md).

@@ -1,5 +1,5 @@
 ---
-title: "Variance in Delegates (C#)"
+title: "Variance in Delegates"
 description: Learn how the variance support in .NET allows you to match method signatures with delegate types in all delegates.
 ms.date: 07/20/2015
 ms.assetid: 19de89d2-8224-4406-8964-2965b732b890

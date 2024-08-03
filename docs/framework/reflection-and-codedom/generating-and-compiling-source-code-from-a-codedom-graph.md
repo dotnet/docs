@@ -28,7 +28,7 @@ helpviewer_keywords:
   - "CodeDOM, graphs"
 ms.assetid: 6c864c8e-6dd3-4a65-ace0-36879d9a9c42
 ---
-# Generate and compile source code from a CodeDOM fraph
+# Generate and compile source code from a CodeDOM graph
 
 The <xref:System.CodeDom.Compiler> namespace provides interfaces for generating source code from CodeDOM object graphs and for managing compilation with supported compilers. A code provider can produce source code in a particular programming language according to a CodeDOM graph. A class that derives from <xref:System.CodeDom.Compiler.CodeDomProvider> can typically provide methods for generating and compiling code for the language the provider supports.
 

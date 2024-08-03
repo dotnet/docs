@@ -1,5 +1,5 @@
 ---
-title: "The C# type system"
+title: "The type system"
 description: Learn about creating types in C#, such as tuples, records, value types, and reference types.
 ms.date: 11/14/2023
 helpviewer_keywords:

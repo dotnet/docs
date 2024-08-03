@@ -1,5 +1,5 @@
 ---
-title: "Generics in the runtime - C# Programming Guide"
+title: "Generics in the runtime"
 description: Learn about generic types in the runtime. See code examples and view additional available resources.
 ms.date: 07/20/2015
 helpviewer_keywords:

@@ -40,6 +40,14 @@ Methods marked with `[AssemblyInitialize]` should follow the following layout to
 - it should take one parameter of type `TestContext`
 - return type should be `void`, `Task` or `ValueTask`
 
+The type declaring these methods should also respect the following rules:
+
+- The type should be a class.
+- The class should be public or internal (if the test project is using the [DiscoverInternals] attribute).
+- The class shouldn't be static.
+- The class should be marked with [TestClass] (or a derived attribute)
+- the class should not be generic
+
 ## How to fix violations
 
 Ensure that the method matches the layout described above.

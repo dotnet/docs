@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.ML.Tokenizers;
 
-internal class TiktokenExample
+internal class Tiktoken
 {
     public static void RunIt()
     {

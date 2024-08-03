@@ -1,5 +1,5 @@
 ---
-title: "Attributes interpreted by the C# compiler: Nullable static analysis"
+title: "Attributes interpreted by the compiler: Nullable static analysis"
 ms.date: 05/20/2022
 description: Learn about attributes that are interpreted by the compiler to provide better static analysis for nullable and non-nullable reference types.
 ---
@@ -138,9 +138,6 @@ bool IsNullOrEmpty([NotNullWhen(false)] string? value)
 That informs the compiler that any code where the return value is `false` doesn't need null checks. The addition of the attribute informs the compiler's static analysis that `IsNullOrEmpty` performs the necessary null check: when it returns `false`, the argument isn't `null`.
 
 :::code language="csharp" source="snippets/NullableAttributes.cs" ID="NullCheckExample" :::
-
-> [!NOTE]
-> The preceding example is only valid in C# 11 and later. Starting with C# 11, the [`nameof` expression](../operators/nameof.md) can reference parameter and type parameter names when used in an attribute applied to a method. In C# 10 and earlier, you need to use a string literal instead of the `nameof` expression.
 
 The <xref:System.String.IsNullOrEmpty(System.String)?DisplayProperty=nameWithType> method will be annotated as shown above for .NET Core 3.0. You may have similar methods in your codebase that check the state of objects for null values. The compiler won't recognize custom null check methods, and you'll need to add the annotations yourself. When you add the attribute, the compiler's static analysis knows when the tested variable has been null checked.
 

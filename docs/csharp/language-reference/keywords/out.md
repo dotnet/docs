@@ -1,6 +1,6 @@
 ---
 description: "out keyword - C# Reference"
-title: "out keyword - C# Reference"
+title: "out keyword"
 ms.date: 03/01/2017
 f1_keywords: 
   - "out_CSharpKeyword"
@@ -25,7 +25,7 @@ The `out` keyword is especially useful when a method needs to return more than o
     {
         double radiusValue = 3.92781;
         //Calculate the circumference and area of a circle, returning the results to Main().
-        CalculateCircumferenceAndArea(radiusValue, out double circumferenceResult, out areaResult);
+        CalculateCircumferenceAndArea(radiusValue, out double circumferenceResult, out var areaResult);
         System.Console.WriteLine($"Circumference of a circle with a radius of {radiusValue} is {circumferenceResult}.");
         System.Console.WriteLine($"Are of a circle with a radius of {radiusValue} is {areaResult}.");
         Console.ReadLine();

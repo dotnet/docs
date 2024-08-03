@@ -2,12 +2,12 @@
 title: What's new in the SDK for .NET 9
 description: Learn about the new .NET SDK features introduced in .NET 9.
 titleSuffix: ""
-ms.date: 04/11/2024
+ms.date: 07/10/2024
 ms.topic: whats-new
 ---
 # What's new in the SDK for .NET 9
 
-This article describes new features in the .NET SDK for .NET 9. It's been updated for .NET 9 Preview 3.
+This article describes new features in the .NET SDK for .NET 9. It's been updated for .NET 9 Preview 6.
 
 ## Unit testing
 
@@ -29,7 +29,33 @@ For more information about the terminal logger, see [dotnet build options](../..
 
 A new option for [`dotnet tool install`](../../tools/dotnet-tool-install.md) lets *users* decide how .NET tools should be run. When you install a tool via `dotnet tool install`, or when you run tool via [`dotnet tool run <toolname>`](../../tools/dotnet-tool-run.md), you can specify a new flag called `--allow-roll-forward`. This option configures the tool with roll-forward mode `Major`. This mode allows the tool to run on a newer major version of .NET if the matching .NET version is not available. This feature helps early adopters use .NET tools without tool authors having to change any code.
 
-## Terminal logger usability
+## Terminal logger
+
+The terminal logger is now [enabled by default](#enabled-by-default) and also has [improved usability](#usability).
+
+### Enabled by default
+
+Starting in .NET 9, the default experience for all .NET CLI commands that use MSBuild is terminal logger, the enhanced logging experience that was released in .NET 8. This new output uses the capabilities of modern terminals to provide functionality like:
+
+- Clickable links
+- Duration timers for MSBuild tasks
+- Color coding of warning and error messages
+
+The output is more condensed and usable than the existing MSBuild console logger.
+
+The new logger attempts to auto-detect if it can be used, but you can also manually control whether terminal logger is used. Specify the `--tl:off` command-line option to disable terminal logger for a specific command. Or, to disable terminal logger more broadly, set the `MSBUILDTERMINALLOGGER` environment variable to `off`.
+
+The set of commands that uses terminal logger by default is:
+
+- `build`
+- `clean`
+- `msbuild`
+- `pack`
+- `publish`
+- `restore`
+- `test`
+
+### Usability
 
 The terminal logger now summarizes the total count of failures and warnings at the end of a build. It also shows errors that contain newlines. (For more information about the terminal logger, see ['dotnet build' options](../../tools/dotnet-build.md#options), specifically the `--tl` option.)
 
@@ -83,3 +109,20 @@ Build succeeded with 3 warning(s) in 0.8s
 The message lines of the warning no longer have the repeated project and location information that clutter the display. In addition, the build summary shows how many warnings (and errors, if there are any) were generated during the build.
 
 If you have feedback about the terminal logger, you can provide it in the [MSBuild repository](https://github.com/dotnet/msbuild/issues).
+
+## NuGet security audits
+
+Starting in .NET 8, `dotnet restore` [audits NuGet package references for known vulnerabilities](../../tools/dotnet-restore.md#audit-for-security-vulnerabilities). In .NET 9, the default mode has changed from auditing only *direct* package references to auditing both *direct* and *transitive* package references.
+
+## MSBuild script analyzers ("BuildChecks")
+
+.NET 9 introduces a feature that helps guard against defects and regressions in your build scripts. To run the build-check analyzers, add the `/analyze` flag to any command that invokes MSBuild. For example, `dotnet build myapp.sln /analyze` builds the `myapp` solution and runs all configured build checks.
+
+The following two BuildCheck rules are run:
+
+- [BC0101](../../tools/buildcheck-rules/bc0101.md)
+- [BC0102](../../tools/buildcheck-rules/bc0102.md)
+
+When a problem is detected, a diagnostic is produced in the build output for the project that contains the issue.
+
+For more information, see the [design documentation](https://github.com/dotnet/msbuild/blob/main/documentation/specs/proposed/BuildCheck.md).

@@ -14,7 +14,7 @@ Console.WriteLine(IsShiftedFileValid()
 
 // Output:
 //   Decrypted file is valid
-//<TestCode>
+//</TestCode>
 
 //<WriteShiftedFile>
 void WriteShiftedFile()

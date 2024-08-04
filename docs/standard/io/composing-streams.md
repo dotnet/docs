@@ -43,6 +43,7 @@ The following code reads the text from one file, transforms it, then writes it t
 > Before considering this code, know that the `CipherStream` is a user-defined type. The code for this class is provided at the end of this article in the [CipherStream class](#cipherstream-class) section.
 
 :::code language="csharp" source="./snippets/composing-streams/csharp/Program.cs" id="WriteShiftedFile":::
+:::code language="vb" source="./snippets/composing-streams/vb/Program.vb" id="WriteShiftedFile":::
 
 The previous code starts with two <xref:System.IO.FileStream> objects. The first `FileStream`, assigned to the `inputBaseStream` variable, reads the contents of a text file. Next, another stream is created, a `CipherStream` assigned to the `encryptStream` variable, which wraps the `inputBaseStream`. Now, `inputBaseStream` is the base stream for `encryptStream`.
 
@@ -53,6 +54,7 @@ As each byte is read from `encryptStream`, it's pulled from the base stream (the
 This code reverses the encryption performed by the previous code:
 
 :::code language="csharp" source="./snippets/composing-streams/csharp/Program.cs" id="ReadShiftedFile":::
+:::code language="vb" source="./snippets/composing-streams/vb/Program.vb" id="ReadShiftedFile":::
 
 The previous code has two <xref:System.IO.FileStream>. The first is a stream to read the encrypted file contents of _shifted.txt_. This stream is assigned to the `inputBaseStream` variable. Next, the `outputBaseStream` variable points to the output stream, the _unshifted.txt_ file. Finally, the `CipherStream` object does the decryption and wraps the output stream. This stream is assigned to the `unencryptStream` variable.
 
@@ -63,10 +65,12 @@ As each byte is read from `inputBaseStream`, it's written to `encryptStream`. Th
 The two previous examples performed two file operations. First, the contents of the _data.txt_ file was encrypted and saved to the _shifted.txt_ file. And second, the encrypted contents were read from the _shifted.txt_ file, decrypted, and saved to the _unshifted.txt_ file. Therefore, the _data.txt_ file and _unshifted.txt_ file should be exactly the same. The following code compares those files for equality:
 
 :::code language="csharp" source="./snippets/composing-streams/csharp/Program.cs" id="ValidateFile":::
+:::code language="vb" source="./snippets/composing-streams/vb/Program.vb" id="ValidateFile":::
 
 The following code runs this entire encrypt-decrypt process:
 
 :::code language="csharp" source="./snippets/composing-streams/csharp/Program.cs" id="TestCode":::
+:::code language="vb" source="./snippets/composing-streams/vb/Program.vb" id="TestCode":::
 
 ### CipherStream class
 
@@ -76,6 +80,7 @@ The following snippet provides the `CipherStream` class, which uses a basic shif
 > The encryption used in this example is a very basic and unsecure encryption. It's not meant to actually encrypt data for use, but is provided to demonstrate altering data through stream composition.
 
 :::code language="csharp" source="./snippets/composing-streams/csharp/CipherStream.cs":::
+:::code language="vb" source="./snippets/composing-streams/vb/CipherStream.vb":::
 
 ## See also
 

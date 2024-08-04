@@ -21,51 +21,50 @@ public class CipherStream : Stream
         set => _wrappedBaseStream.Position = value;
     }
 
-    public static CipherStream CreateForRead(Stream stream)
+    public static CipherStream CreateForRead(Stream baseStream)
     {
-        CipherStream cipherStream = new CipherStream(stream)
+        return new CipherStream(baseStream)
         {
             _readable = true,
             _writable = false
         };
-
-        return cipherStream;
     }
 
-    public static CipherStream CreateForWrite(Stream stream)
+    public static CipherStream CreateForWrite(Stream baseStream)
     {
-        CipherStream cipherStream = new CipherStream(stream)
+        return new CipherStream(baseStream)
         {
             _readable = false,
             _writable = true
         };
-
-        return cipherStream;
     }
 
-    private CipherStream(Stream stream) =>
-        _wrappedBaseStream = stream;
+    private CipherStream(Stream baseStream) =>
+        _wrappedBaseStream = baseStream;
 
     public override int Read(byte[] buffer, int offset, int count)
     {
         if (!_readable) throw new NotSupportedException();
         if (count == 0) return 0;
 
+        int returnCounter = 0;
+
         for (int i = 0; i < count; i++)
         {
             int value = _wrappedBaseStream.ReadByte();
 
             if (value == -1)
-                return 0;
+                return returnCounter;
 
             value += ENCODING_OFFSET;
             if (value > byte.MaxValue)
-                value = value - byte.MaxValue;
+                value -= byte.MaxValue;
 
             buffer[i + offset] = Convert.ToByte(value);
+            returnCounter++;
         }
 
-        return count;
+        return returnCounter;
     }
 
     public override void Write(byte[] buffer, int offset, int count)

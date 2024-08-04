@@ -20,9 +20,9 @@ Console.WriteLine(IsShiftedFileValid()
 void WriteShiftedFile()
 {
     // Create the base streams for the input and output files
-    using FileStream inputBaseStream = System.IO.File.OpenRead("data.txt");
+    using FileStream inputBaseStream = File.OpenRead("data.txt");
     using CipherStream encryptStream = CipherStream.CreateForRead(inputBaseStream);
-    using FileStream outputBaseStream = System.IO.File.Open("shifted.txt", FileMode.Create, FileAccess.Write);
+    using FileStream outputBaseStream = File.Open("shifted.txt", FileMode.Create, FileAccess.Write);
 
     int intValue;
 
@@ -43,8 +43,8 @@ void ReadShiftedFile()
     int intValue;
 
     // Create the base streams for the input and output files
-    using FileStream inputBaseStream = System.IO.File.OpenRead("shifted.txt");
-    using FileStream outputBaseStream = System.IO.File.Open("unshifted.txt", FileMode.Create, FileAccess.Write);
+    using FileStream inputBaseStream = File.OpenRead("shifted.txt");
+    using FileStream outputBaseStream = File.Open("unshifted.txt", FileMode.Create, FileAccess.Write);
     using CipherStream unencryptStream = CipherStream.CreateForWrite(outputBaseStream);
 
     // Read byte from inputBaseStream through the encryptStream (shifted bytes into normal bytes)
@@ -62,10 +62,10 @@ void ReadShiftedFile()
 bool IsShiftedFileValid()
 {
     // Read the shifted file
-    string originalText = System.IO.File.ReadAllText("data.txt");
+    string originalText = File.ReadAllText("data.txt");
 
     // Read the shifted file
-    string shiftedText = System.IO.File.ReadAllText("unshifted.txt");
+    string shiftedText = File.ReadAllText("unshifted.txt");
 
     // Check if the decrypted file is valid
     return shiftedText == originalText;

@@ -14,8 +14,6 @@ The .NET Uninstall tool automates removing .NET SDKs and runtimes from your syst
 > [!div class="nextstepaction"]
 > [Download .NET Uninstall Tool from GitHub](https://aka.ms/dotnet-core-uninstall-tool)
 
-The tool supports Windows and macOS. Linux is currently not supported.
-
 ## Limitations
 
 ::: zone pivot="os-windows"
@@ -51,7 +49,7 @@ To install the tool, perform the following steps:
 ::: zone pivot="os-macos"
 
 01. Download the _dotnet-core-uninstall.tar.gz_ tarball from the [the GitHub releases page](https://aka.ms/dotnet-core-uninstall-tool).
-01. Run the following shell script to create home directory named _dotnet-core-uninstall_ and extract the downloaded file to that directory:
+01. Run the following shell script to extract the tarball to a directory named _dotnet-core-uninstall_ in your home directory:
 
     ```bash
     mkdir -p ~/dotnet-core-uninstall

@@ -1,1 +1,1 @@
-On the Certificates & secrets page, select **+ New client secret**.
+On the **Certificates & secrets** page, select **+ New client secret**.

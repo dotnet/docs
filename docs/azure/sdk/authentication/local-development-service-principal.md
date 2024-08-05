@@ -65,7 +65,7 @@ Copy this output into a temporary file in a text editor, as you'll need these va
 
 ---
 
-## 2 - Create a Microsoft Entra group for local development
+## 2 - Create Microsoft Entra group for local development
 
 Since there are typically multiple developers who work on an app, it's recommended to create a Microsoft Entra group to encapsulate the roles (permissions) the app needs in local development rather than assigning the roles to individual service principal objects. This approach offers the following advantages:
 

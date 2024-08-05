@@ -16,9 +16,9 @@ The .NET Uninstall tool automates removing .NET SDKs and runtimes from your syst
 
 The tool supports Windows and macOS. Linux is currently not supported.
 
-::: zone pivot="os-windows"
+## Limitations
 
-## Windows
+::: zone pivot="os-windows"
 
 The tool can only uninstall .NET SDKs and runtimes that were installed using one of the following methods:
 
@@ -28,8 +28,6 @@ The tool can only uninstall .NET SDKs and runtimes that were installed using one
 ::: zone-end
 
 ::: zone pivot="os-macos"
-
-## macOS
 
 The tool can only uninstall SDKs and runtimes located in the _/usr/local/share/dotnet_ folder.
 
@@ -41,22 +39,44 @@ Because of these limitations, the tool might not be able to uninstall all of the
 
 You can download .NET Uninstall Tool from [the tool's releases page](https://aka.ms/dotnet-core-uninstall-tool) and find the source code at the [dotnet/cli-lab](https://github.com/dotnet/cli-lab) GitHub repository.
 
-> [!NOTE]
-> The tool requires administrative privileges to uninstall .NET SDKs and runtimes. Therefore, it should be installed in a write-protected directory such as _C:\Program Files_ on Windows or _/usr/local/bin_ on macOS. For more information, see [Elevated access for dotnet commands](../tools/elevated-access.md).
+To install the tool, perform the following steps:
 
 ::: zone pivot="os-windows"
 
-## Uninstall the tool
-
-1. Open **Add or Remove Programs**.
-2. Search for `Microsoft .NET SDK Uninstall Tool`.
-3. Select **Uninstall**.
+1. Download the _dotnet-core-uninstall-\*.msi_ installer from the [the GitHub releases page](https://aka.ms/dotnet-core-uninstall-tool).
+1. Run the installer.
 
 ::: zone-end
 
 ::: zone pivot="os-macos"
 
+01. Download the _dotnet-core-uninstall.tar.gz_ tarball from the [the GitHub releases page](https://aka.ms/dotnet-core-uninstall-tool).
+01. Run the following shell script to create home directory named _dotnet-core-uninstall_ and extract the downloaded file to that directory:
+
+    ```bash
+    mkdir -p ~/dotnet-core-uninstall
+    tar -zxf dotnet-core-uninstall.tar.gz -C ~/dotnet-core-uninstall
+    ```
+
+::: zone-end
+
+> [!IMPORTANT]
+> The tool requires administrative privileges to uninstall .NET SDKs and runtimes. Therefore, it should be installed in a write-protected directory such as _C:\Program Files_ on Windows or _/usr/local/bin_ on macOS. For more information, see [Elevated access for dotnet commands](../tools/elevated-access.md).
+
 ## Uninstall the tool
+
+::: zone pivot="os-windows"
+
+To uninstall the tool, perform the following steps:
+
+1. Open the Start menu.
+1. Search for **Add or Remove Programs** and open it.
+1. Search for `Microsoft .NET SDK Uninstall Tool`.
+1. Select **Uninstall**.
+
+::: zone-end
+
+::: zone pivot="os-macos"
 
 If you extracted the _dotnet-core-uninstall.tar.gz_ tarball, delete the extracted files.
 

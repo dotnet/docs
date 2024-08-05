@@ -362,6 +362,14 @@ Specifies a directory to which a single-file application is extracted before it 
 
 For more information, see [Single-file executables](../whats-new/dotnet-core-3-0.md#single-file-executables).
 
+### `DOTNET_CLI_HOME`
+
+Specifies the location that supporting files for .NET CLI commands should be written to. For example:
+
+* User-writable paths for workload packs, manifests, and other supporting data.
+* First-run sentinel/lock files for aspects of the .NET CLI's first-run migrations and notification experiences.
+* The default .NET local tool installation location.
+
 ### `DOTNET_CLI_CONTEXT_*`
 
 - `DOTNET_CLI_CONTEXT_VERBOSE`: To enable a verbose context, set to `true`.

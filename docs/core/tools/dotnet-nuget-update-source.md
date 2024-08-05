@@ -11,6 +11,9 @@ ms.date: 03/20/2020
 
 `dotnet nuget update source` - Update a NuGet source.
 
+> [!NOTE]
+> Use package sources that you trust.
+
 ## Synopsis
 
 ```dotnetcli

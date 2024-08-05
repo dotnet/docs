@@ -12,7 +12,7 @@ helpviewer_keywords:
 
 ## BinaryFormatter removal
 
-Starting in .NET 9, `BinaryFormatter` has moved to a separate, unsupported NuGet package due to its known [security risks](../binaryformatter-security-guide.md). For more information about the risks `BinaryFormatter` poses and the reason for its removal, see [BinaryFormatter migration guide](overview.md). With BinaryFormatter’s removal, it's expected that many Windows Forms applications will be impacted, and you'll need to take action to complete your migration to .NET 9 or a later version.
+Starting in .NET 9, `BinaryFormatter` has moved to a separate, unsupported NuGet package due to its known [security risks](../binaryformatter-security-guide.md). For more information about the risks `BinaryFormatter` poses and the reason for its removal, see [BinaryFormatter migration guide](index.md). With BinaryFormatter’s removal, it's expected that many Windows Forms applications will be impacted, and you'll need to take action to complete your migration to .NET 9 or a later version.
 
 ## How BinaryFormatter affects Windows Forms
 

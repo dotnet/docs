@@ -60,7 +60,7 @@ While `DataContractSerializer` carries those functional benefits when migrating 
 [Migrate to DataContractSerializer](./migrate-to-datacontractserializer.md).
 
 > [!NOTE]
-> Do not confuse `DataContractSerializer` with [`NetDataContractSerializer`](/dotnet/api/system.runtime.serialization.netdatacontractserializer). `NetDataContractSerializer` is also identified as a [dangerous serializer](../binaryformatter-security-guide#dangerous-alternatives).
+> Do not confuse `DataContractSerializer` with [`NetDataContractSerializer`](/dotnet/api/system.runtime.serialization.netdatacontractserializer). `NetDataContractSerializer` is also identified as a [dangerous serializer](../binaryformatter-security-guide.md#dangerous-alternatives).
 
 ## Binary using MessagePack for C#
 

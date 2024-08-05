@@ -44,7 +44,7 @@ When using `NrbfDecoder`, it is important not to reintroduce those capabilities 
 
 ### Identify NRBF payloads
 
-`NrbfDecoder` provides two `StartsWithPayloadHeader` methods that let you check whether a given stream or buffer starts with the NRBF header. It's recommended to use these methods when you're migrating payloads persisted with `BinaryFormatter` to a [different serializer](./choosing-a-serializer.md):
+`NrbfDecoder` provides two `StartsWithPayloadHeader` methods that let you check whether a given stream or buffer starts with the NRBF header. It's recommended to use these methods when you're migrating payloads persisted with `BinaryFormatter` to a [different serializer](./choose-a-serializer.md):
 
 - Check if the payload read from storage is an [NRBF](/openspecs/windows_protocols/ms-nrbf/) payload.
 - If so, read it with `NrbfDecoder`, serialize it back with a new serializer, and overwrite the data in the storage.

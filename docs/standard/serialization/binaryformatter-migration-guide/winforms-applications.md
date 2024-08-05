@@ -52,7 +52,9 @@ All standard OLE [`DataFormats`](/dotnet/api/system.windows.forms.dataformats#fi
 
 If your drag-and-drop scenario involves types that aren't intrinsically handled during serialization and deserialization, BinaryFormatter is used when [`Control.DoDragDrop`](/dotnet/api/system.windows.forms.control.dodragdrop) is called, and when [`DataObject.GetData`](/dotnet/api/system.windows.dataobject.getdata) is called to retrieve a type that's been dragged out of process. With the BinaryFormatter removal, you'll now see a string about BinaryFormatter being removed when you drop a dragged item in another process for drag-and-drop operations with types that aren't intrinsically handled.
 
-### The Windows Forms Designer
+### Resources (ResX)
+
+#### The Windows Forms Designer
 
 The Windows Forms Out-Of-Process Designer also uses `BinaryFormatter` internally for ResX serialization and deserialization.
 
@@ -63,10 +65,14 @@ Types and properties might participate in serialization without you realizing du
 - That property is not attributed with `DesignerSerializationVisibility(false)`.
 - That property does not have a DefaultValueAttribute.
 - That property does not have a respective `bool ShouldSerialize[PropertyName]` method that returns `false` at the time of the CodeDOM serialization process. (Note: the method can have `private` scope.)
-- That property does not have a [`DesignerSerializer`](https://learn.microsoft.com/dotnet/api/microsoft.visualstudio.modeling.dsldefinition.designerserializer?view=visualstudiosdk-2019)
+- That property does not have a [`DesignerSerializer`](/dotnet/api/microsoft.visualstudio.modeling.dsldefinition.designerserializer)
 
 If these statements are true, the Designer determines if that property’s type has a type converter. If it does, the Designer uses the type converter to serialize the property content. Otherwise, it uses BinaryFormatter to serialize the content into the resource file.
 Windows Forms has added analyzers along with code fixes to help bring awareness to this type of behavior where BinaryFormatter serialization might be occurring without the developer’s knowledge.
+
+#### Loading resource during runtime
+
+Types that had been previously serialized into resource files via `BinaryFormatter` will continue to deserialize as expected without the need for `BinaryFormatter` as the content of ResX files are considered trusted data. In the rare case that deserialization cannot occur without `BinaryFormatter`, it can be added back for compatibility. See [BinaryFormatter migration guide: Compatibility Package](compatibility-package.md) for details. Note that an extra step of setting `System.Resources.Extensions.UseBinaryFormatter` app context switch to `true` is required to use `BinaryFormatter` for resources.
 
 ## Migrate away from BinaryFormatter
 
@@ -76,9 +82,10 @@ If types that aren't intrinsically handled during serialization and deserializat
 
 For types that aren't intrinsically handled that are used in clipboard and drag-and-drop operations, it's recommended that you format those types as a `byte[]` or `string` payload before passing the data to clipboard or drag-and-drop APIs. Using JSON is one way to achieve this. You'll need to make adjustments to handle receiving a JSON formatted type just as adjustments have been made to place JSON formatted types on clipboard or drag-and-drop operations. For more information on how to serialize and deserialize the type with JSON, see [How to write .NET objects as JSON (serialize)](../system-text-json/how-to.md).
 
-### Designer scenarios
+### Loading and saving resources during design time
 
-For types that aren't intrinsically handled during serialization into resources or code, such as in the case of the Designer with ResX and CodeDom serialization scenarios, the prescribed way of migrating away from BinaryFormatter is to ensure a `TypeConverter` is registered for the type or property that's participating in serialization. This way, during serialization and deserialization, the `TypeConverter` is used in lieu of where `BinaryFormatter` was once used. For more information on implementing a type converter, see [`TypeConverter` Class](/dotnet/api/system.componentmodel.typeconverter#notes-to-inheritors)
+For types that aren't intrinsically handled during serialization into resources, such as in the case of the Designer with ResX scenarios, the prescribed way of migrating away from BinaryFormatter is to ensure a `TypeConverter` is registered for the type or property that's participating in serialization. This way, during serialization and deserialization, the `TypeConverter` is used in lieu of where `BinaryFormatter` was once used. For more information on implementing a type converter, see [`TypeConverter` Class](/dotnet/api/system.componentmodel.typeconverter#notes-to-inheritors)
+
 
 ## Compatibility workaround (not recommended)
 

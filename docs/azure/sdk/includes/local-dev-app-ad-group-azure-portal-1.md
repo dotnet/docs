@@ -1,1 +1,5 @@
-Navigate to the Azure Active Directory page in the Azure portal by typing *Azure Active Directory* into the search box at the top of the page and then selecting *Azure Active Directory* from under services.
+---
+ms.topic: include
+ms.date: 08/05/2024
+---
+Navigate to the Microsoft Entra ID page in the Azure portal by typing *Microsoft Entra ID* into the search box at the top of the page. Select **Microsoft Entra ID** under the **Services** section.

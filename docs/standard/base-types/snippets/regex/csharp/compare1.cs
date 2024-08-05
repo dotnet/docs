@@ -20,10 +20,6 @@ internal static partial class CompareExample
         Match match;
         int ctr;
 
-        //StreamReader inFile = new(@".\Dreiser_TheFinancier.txt");
-        //string input = inFile.ReadToEnd();
-        //inFile.Close();
-
         string text =
                 await s_client.GetStringAsync("https://www.gutenberg.org/cache/epub/1840/pg1840.txt");
 
@@ -123,7 +119,7 @@ internal static partial class CompareExample
 
         return;
     }
-    /* The example displays the following output:
+    /* The example displays output similar to the following:
 
        10 Sentences with Interpreted Regex:
            10 matches in 00:00:00.0050027

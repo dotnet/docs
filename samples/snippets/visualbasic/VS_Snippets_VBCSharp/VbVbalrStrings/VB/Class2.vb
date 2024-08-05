@@ -1,4 +1,4 @@
-﻿Option Explicit On 
+﻿Option Explicit On
 Option Strict On
 
 Class Class0bb85ddaa37f4a9799b48b344c5437be
@@ -10,10 +10,10 @@ Class Class0bb85ddaa37f4a9799b48b344c5437be
         ' <snippet35>
         Dim StrArray() As String = {"ABCDEFG", "HIJKLMNOP"}
         Dim FindThisString As String = "JKL"
-        
+
         For Each Str As String In StrArray
             If Str.Contains(FindThisString) Then
-                MsgBox("Found " & FindThisString & " at index " & 
+                MsgBox("Found " & FindThisString & " at index " &
                   Str.IndexOf(FindThisString))
             End If
         Next
@@ -42,7 +42,7 @@ Class Class0bb85ddaa37f4a9799b48b344c5437be
 
     Public Sub Method45()
         ' <snippet45>
-        Dim aString As String = String.Copy("A literal string")
+        Dim equal As Boolean = (String.Compare("Hello", "Goodbye") = 0)
         ' </snippet45>
     End Sub
 
@@ -50,7 +50,7 @@ Class Class0bb85ddaa37f4a9799b48b344c5437be
         ' <snippet46>
         Dim aString As String = "A String"
         Dim bString As String
-    
+
         ' Assign "String" to bString.
         bString = aString.Substring(2, 6)
         ' </snippet46>
@@ -60,13 +60,13 @@ Class Class0bb85ddaa37f4a9799b48b344c5437be
         ' <snippet47>
         Dim MyString As String = "This is my string"
         Dim stringLength As Integer
-    
+
         ' Explicitly set the string to Nothing.
         MyString = Nothing
-    
+
         ' stringLength = 0
         stringLength = Len(MyString)
-    
+
         ' This line, however, causes an exception to be thrown.
         stringLength = MyString.Length
         ' </snippet47>
@@ -85,7 +85,7 @@ Class Class0bb85ddaa37f4a9799b48b344c5437be
         ' <snippet49>
         Dim myString As String = "ABCDE"
         Dim myChar As Char
-    
+
         ' Assign "D" to myChar.
         myChar = myString.Chars(3)
         ' </snippet49>
@@ -95,7 +95,7 @@ Class Class0bb85ddaa37f4a9799b48b344c5437be
         ' <snippet50>
         Dim myString As String = "ABCDE"
         Dim myInteger As Integer
-    
+
         ' Assign 3 to myInteger.
         myInteger = myString.IndexOf("D")
         ' </snippet50>
@@ -108,7 +108,7 @@ Class Class0bb85ddaa37f4a9799b48b344c5437be
         Dim cString As String = "C"
         Dim dString As String = "D"
         Dim myString As String
-    
+
         ' Assign "ABCD" to myString.
         myString = String.Concat(aString, bString, cString, dString)
         ' </snippet51>
@@ -118,16 +118,16 @@ Class Class0bb85ddaa37f4a9799b48b344c5437be
         ' <snippet52>
         Dim myString As String = "UpPeR oR LoWeR cAsE"
         Dim newString As String
-    
+
         ' newString = "UPPER OR LOWER CASE"
         newString = UCase(myString)
-    
+
         ' newString = "upper or lower case"
         newString = LCase(myString)
-    
+
         ' newString = "UPPER OR LOWER CASE"
         newString = myString.ToUpper
-    
+
         ' newString = "upper or lower case"
         newString = myString.ToLower
         ' </snippet52>
@@ -135,14 +135,14 @@ Class Class0bb85ddaa37f4a9799b48b344c5437be
 
     Public Sub Method53()
         ' <snippet53>
-        Dim spaceString As String = 
+        Dim spaceString As String =
             "        This string will have the spaces removed        "
         Dim oneString As String
         Dim twoString As String
-    
+
         ' This removes all trailing and leading spaces.
         oneString = spaceString.Trim
-    
+
         ' This also removes all trailing and leading spaces.
         twoString = Trim(spaceString)
         ' </snippet53>
@@ -161,10 +161,10 @@ Class Class0bb85ddaa37f4a9799b48b344c5437be
         Dim aString As String = "This is My Str@o@o@ing"
         Dim myString As String
         Dim anotherString As String
-    
+
         ' myString = "This is My String"
         myString = aString.Remove(14, 5)
-    
+
         ' anotherString = "This is Another String"
         anotherString = myString.Replace("My", "Another")
         ' </snippet55>
@@ -174,7 +174,7 @@ Class Class0bb85ddaa37f4a9799b48b344c5437be
         ' <snippet56>
         Dim aString As String = "This is My Stng"
         Dim myString As String
-    
+
         ' Results in a value of "This is My String".
         myString = aString.Insert(13, "ri")
         ' </snippet56>
@@ -203,13 +203,13 @@ Class Class0bb85ddaa37f4a9799b48b344c5437be
         ' <snippet59>
         Dim aString As String = "Left Center Right"
         Dim rString, lString, mString As String
-    
+
         ' rString = "Right"
         rString = Mid(aString, 13)
-    
+
         ' lString = "Left"
         lString = Mid(aString, 1, 4)
-    
+
         ' mString = "Center"
         mString = Mid(aString, 6, 6)
         ' </snippet59>
@@ -219,7 +219,7 @@ Class Class0bb85ddaa37f4a9799b48b344c5437be
         ' <snippet60>
         Dim aString As String = "Left Center Right"
         Dim subString As String
-    
+
         ' subString = "Center"
         subString = aString.Substring(5, 6)
         ' </snippet60>
@@ -257,11 +257,11 @@ Class Class0bb85ddaa37f4a9799b48b344c5437be
         Dim OneString As String
         Dim TwoString As String
         OneString = "one, two, three, four, five"
-    
+
         ' Evaluates to "two".
         TwoString = OneString.Substring(5, 3)
         OneString = "1"
-    
+
         ' Evaluates to "11".
         TwoString = OneString & "1"
         ' </snippet64>
@@ -285,7 +285,7 @@ Class Class0bb85ddaa37f4a9799b48b344c5437be
         ' <snippet67>
         Dim myString As String = "ABCDE"
         Dim myChar As Char
-    
+
         ' The value of myChar is "D".
         myChar = myString.Chars(3)
         ' </snippet67>
@@ -330,7 +330,7 @@ Class Class0bb85ddaa37f4a9799b48b344c5437be
     ' d0dc8317-9ab3-4324-99f7-3f5788c0e72a
     ' How to: Convert an Array of Bytes into a String in Visual Basic
     ' <snippet72>
-    Private Function UnicodeBytesToString( 
+    Private Function UnicodeBytesToString(
         ByVal bytes() As Byte) As String
 
         Return System.Text.Encoding.Unicode.GetString(bytes)
@@ -342,8 +342,8 @@ Class Class0bb85ddaa37f4a9799b48b344c5437be
     Public Sub Method73()
         ' <snippet73>
         Dim MyString As String
-        MyString = "This is the first line of my string." & VbCrLf & 
-                   "This is the second line of my string." & VbCrLf & 
+        MyString = "This is the first line of my string." & VbCrLf &
+                   "This is the second line of my string." & VbCrLf &
                    "This is the third line of my string."
         ' </snippet73>
     End Sub
@@ -351,7 +351,7 @@ Class Class0bb85ddaa37f4a9799b48b344c5437be
     ' f477d35c-a3fc-4a30-b1d4-cd0d353aae1d
     ' How to: Convert Strings into an Array of Bytes in Visual Basic
     ' <snippet74>
-    Private Function UnicodeStringToBytes( 
+    Private Function UnicodeStringToBytes(
         ByVal str As String) As Byte()
 
         Return System.Text.Encoding.Unicode.GetBytes(str)

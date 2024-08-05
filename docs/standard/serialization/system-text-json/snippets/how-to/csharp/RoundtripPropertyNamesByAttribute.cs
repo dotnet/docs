@@ -7,8 +7,8 @@ namespace SystemTextJsonSamples
         public static void Run()
         {
             string jsonString;
-            WeatherForecastWithPropertyNameAttribute weatherForecast =
-                WeatherForecastFactories.CreateWeatherForecastWithPropertyNameAttribute();
+            WeatherForecastWithPropertyName weatherForecast =
+                WeatherForecastFactories.CreateWeatherForecastWithPropertyName();
             weatherForecast.DisplayPropertyValues();
 
             // <Serialize>
@@ -21,7 +21,7 @@ namespace SystemTextJsonSamples
             Console.WriteLine($"JSON output:\n{jsonString}\n");
 
             // <Deserialize>
-            weatherForecast = JsonSerializer.Deserialize<WeatherForecastWithPropertyNameAttribute>(jsonString)!;
+            weatherForecast = JsonSerializer.Deserialize<WeatherForecastWithPropertyName>(jsonString)!;
             weatherForecast.DisplayPropertyValues();
             // </Deserialize>
         }

@@ -1,3 +1,7 @@
+---
+ms.topic: include
+ms.date: 08/02/2024
+---
 In the Azure portal:
 
    1. Enter *app registrations* in the search bar at the top of the Azure portal.

@@ -36,7 +36,7 @@ Sign in to the [Azure portal](https://portal.azure.com/) and follow these steps.
 az ad sp create-for-rbac --name <app-name>
 ```
 
-The output of the command will be similar to the following.  Make note of these values or keep this window open as you will need these values in the next step and will not be able to view the password (client secret) value again.
+The output of the command will be similar to the following. Make note of these values or keep this window open as you will need these values in the next step and will not be able to view the password (client secret) value again.
 
 ```json
 {
@@ -51,7 +51,7 @@ The output of the command will be similar to the following.  Make note of these 
 
 ## 2 - Assign roles to the application service principal
 
-Next, you need to determine what roles (permissions) your app needs on what resources and assign those roles to your app. Roles can be assigned a role at a resource, resource group, or subscription scope.  This example will show how to assign roles for the service principal at the resource group scope since most applications group all their Azure resources into a single resource group.
+Next, you need to determine what roles (permissions) your app needs on what resources and assign those roles to your app. Roles can be assigned a role at a resource, resource group, or subscription scope. This example shows how to assign roles for the service principal at the resource group scope, since most apps group all their Azure resources into a single resource group.
 
 ### [Azure portal](#tab/azure-portal)
 
@@ -61,8 +61,8 @@ Next, you need to determine what roles (permissions) your app needs on what reso
 | [!INCLUDE [Assign service principal to role step 2](<../includes/assign-service-principal-to-role-azure-portal-2.md>)] | :::image type="content" source="../media/assign-service-principal-to-role-azure-portal-2-240px.png" lightbox="../media/assign-service-principal-to-role-azure-portal-2.png" alt-text="A screenshot of the resource group page showing the location of the Access control (IAM) menu item." ::: |
 | [!INCLUDE [Assign service principal to role step 3](<../includes/assign-service-principal-to-role-azure-portal-3.md>)] | :::image type="content" source="../media/assign-service-principal-to-role-azure-portal-3-240px.png" lightbox="../media/assign-service-principal-to-role-azure-portal-3.png" alt-text="A screenshot showing how to navigate to the role assignments tab and the location of the button used to add role assignments to a resource group." ::: |
 | [!INCLUDE [Assign service principal to role step 4](<../includes/assign-service-principal-to-role-azure-portal-4.md>)] | :::image type="content" source="../media/assign-service-principal-to-role-azure-portal-4-240px.png" lightbox="../media/assign-service-principal-to-role-azure-portal-4.png" alt-text="A screenshot showing how to filter and select role assignments to be added to the resource group." ::: |
-| [!INCLUDE [Assign service principal to role step 5](<../includes/assign-service-principal-to-role-azure-portal-5.md>)] | :::image type="content" source="../media/assign-service-principal-to-role-azure-portal-5-240px.png" lightbox="../media/assign-service-principal-to-role-azure-portal-5.png" alt-text="A screenshot showing the radio button to select to assign a role to an Azure AD group and the link used to select the group to assign the role to." ::: |
-| [!INCLUDE [Assign service principal to role step 6](<../includes/assign-service-principal-to-role-azure-portal-6.md>)] | :::image type="content" source="../media/assign-service-principal-to-role-azure-portal-6-240px.png" lightbox="../media/assign-service-principal-to-role-azure-portal-6.png" alt-text="A screenshot showing how to filter for and select the Azure AD group for the application in the Select members dialog box." ::: |
+| [!INCLUDE [Assign service principal to role step 5](<../includes/assign-service-principal-to-role-azure-portal-5.md>)] | :::image type="content" source="../media/assign-service-principal-to-role-azure-portal-5-240px.png" lightbox="../media/assign-service-principal-to-role-azure-portal-5.png" alt-text="A screenshot showing the radio button to select to assign a role to a Microsoft Entra group and the link used to select the group to assign the role to." ::: |
+| [!INCLUDE [Assign service principal to role step 6](<../includes/assign-service-principal-to-role-azure-portal-6.md>)] | :::image type="content" source="../media/assign-service-principal-to-role-azure-portal-6-240px.png" lightbox="../media/assign-service-principal-to-role-azure-portal-6.png" alt-text="A screenshot showing how to filter for and select the Microsoft Entra group for the application in the Select members dialog box." ::: |
 | [!INCLUDE [Assign service principal to role step 7](<../includes/assign-service-principal-to-role-azure-portal-7.md>)] | :::image type="content" source="../media/assign-service-principal-to-role-azure-portal-7-240px.png" lightbox="../media/assign-service-principal-to-role-azure-portal-7.png" alt-text="A screenshot showing the completed Add role assignment page and the location of the Review + assign button used to complete the process." ::: |
 
 ### [Azure CLI](#tab/azure-cli)
@@ -99,7 +99,7 @@ For information on assigning permissions at the resource or subscription level u
 
 The `DefaultAzureCredential` object will look for service principal credentials in a set of environment variables at runtime. There are multiple ways to configure environment variables when working with .NET depending on your tooling and environment.
 
-Regardless of which approach you choose, you will need to configure the following environment variables when working with a service principal.
+Regardless of which approach you choose, configure the following environment variables when working with a service principal:
 
 - `AZURE_CLIENT_ID` &rarr; The app ID value.
 - `AZURE_TENANT_ID` &rarr; The tenant ID value.

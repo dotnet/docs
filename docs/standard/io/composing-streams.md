@@ -40,14 +40,19 @@ The following example reads data from a file, encrypts it, and then writes the e
 The following code reads the text from one file, transforms it, then writes it to another file.
 
 > [!TIP]
-> Before considering this code, know that the `CipherStream` is a user-defined type. The code for this class is provided at the end of this article in the [CipherStream class](#cipherstream-class) section.
+> Before reviewing this code, know that the `CipherStream` is a user-defined type. The code for this class is provided in the [CipherStream class](#cipherstream-class) section.
 
 :::code language="csharp" source="./snippets/composing-streams/csharp/Program.cs" id="WriteShiftedFile":::
 :::code language="vb" source="./snippets/composing-streams/vb/Program.vb" id="WriteShiftedFile":::
 
-The previous code starts with two <xref:System.IO.FileStream> objects. The first `FileStream`, assigned to the `inputBaseStream` variable, reads the contents of a text file. Next, another stream is created, a `CipherStream` assigned to the `encryptStream` variable, which wraps the `inputBaseStream`. Now, `inputBaseStream` is the base stream for `encryptStream`.
+Consider the following aspects about the previous code:
 
-As each byte is read from `encryptStream`, it's pulled from the base stream (the file stream), transformed, and then returned. The returned byte is then written to the output text file (_shifted.txt_), represented by the `outputBaseStream` variable.
+- There are two <xref:System.IO.FileStream> objects.
+  - The first `FileStream` (`inputBaseStream` variable) object reads the contents of the _data.txt_ file. This is the **input** data stream.
+  - The second `FileStream` (`outputBaseStream` variable) object writes incoming data to the _shifted.txt_ file. This is the **output** data stream.
+- The `CipherStream` (`encryptStream` variable) object wraps the `inputBaseStream`, making `inputBaseStream` the base stream for `encryptStream`.
+
+The input stream could be read from directly, writing the data to the output stream, but that wouldn't transform the data. Instead, the `encryptStream` input stream wrapper is used to read the data. As the data is read from `encryptStream`, it pulls from the `inputBaseStream` base stream, transforms it, and returns it. The returned data is written to `outputBaseStream`, which writes the data to the _shifted.txt_ file.
 
 ### Reading the transformed data for decryption
 
@@ -56,13 +61,18 @@ This code reverses the encryption performed by the previous code:
 :::code language="csharp" source="./snippets/composing-streams/csharp/Program.cs" id="ReadShiftedFile":::
 :::code language="vb" source="./snippets/composing-streams/vb/Program.vb" id="ReadShiftedFile":::
 
-The previous code has two <xref:System.IO.FileStream>. The first is a stream to read the encrypted file contents of _shifted.txt_. This stream is assigned to the `inputBaseStream` variable. Next, the `outputBaseStream` variable points to the output stream, the _unshifted.txt_ file. Finally, the `CipherStream` object does the decryption and wraps the output stream. This stream is assigned to the `unencryptStream` variable.
+Consider the following aspects about the previous code:
 
-As each byte is read from `inputBaseStream`, it's written to `encryptStream`. The `CipherStream` transforms the data, writing it to the base stream, which is the output text file (_unshifted.txt_).
+- There are two <xref:System.IO.FileStream> objects.
+  - The first `FileStream` (`inputBaseStream` variable) object reads the contents of the _shifted.txt_ file. This is the **input** data stream.
+  - The second `FileStream` (`outputBaseStream` variable) object writes incoming data to the _unshifted.txt_ file. This is the **output** data stream.
+- The `CipherStream` (`unencryptStream` variable) object wraps the `outputBaseStream`, making `outputBaseStream` the base stream for `unencryptStream`.
+
+Here, the code is slightly different from the previous example. Instead of wrapping the input stream, `unencryptStream` wraps the output stream. As the data is read from `inputBaseStream` input stream, it's sent to the `unencryptStream` output stream wrapper. When `unencryptStream` receives data, it transforms it and then writes the data to the `outputBaseStream` base stream. The `outputBaseStream` output stream writes the data to the _unshifted.txt_ file.
 
 ### Validating the transformed data
 
-The two previous examples performed two file operations. First, the contents of the _data.txt_ file was encrypted and saved to the _shifted.txt_ file. And second, the encrypted contents were read from the _shifted.txt_ file, decrypted, and saved to the _unshifted.txt_ file. Therefore, the _data.txt_ file and _unshifted.txt_ file should be exactly the same. The following code compares those files for equality:
+The two previous examples performed two operations on the data. First, the contents of the _data.txt_ file was encrypted and saved to the _shifted.txt_ file. And second, the encrypted contents of the _shifted.txt_ file were decrypted and saved to the _unshifted.txt_ file. Therefore, the _data.txt_ file and _unshifted.txt_ file should be exactly the same. The following code compares those files for equality:
 
 :::code language="csharp" source="./snippets/composing-streams/csharp/Program.cs" id="ValidateFile":::
 :::code language="vb" source="./snippets/composing-streams/vb/Program.vb" id="ValidateFile":::

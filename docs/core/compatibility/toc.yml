@@ -54,6 +54,10 @@ items:
         href: sdk/9.0/terminal-logger.md
       - name: Warning emitted for .NET Standard 1.x targets
         href: sdk/9.0/netstandard-warning.md
+    - name: Serialization
+      items:
+      - name: BinaryFormatter is unusable
+        href: serialization/9.0/binaryformatter-removal.md
     - name: Windows Forms
       items:
       - name: BindingSource.SortDescriptions doesn't return null
@@ -1786,6 +1790,10 @@ items:
         href: core-libraries/5.0/utf-7-code-paths-obsolete.md
   - name: Serialization
     items:
+    - name: .NET 9
+      items:
+      - name: BinaryFormatter is unusable
+        href: serialization/9.0/binaryformatter-removal.md
     - name: .NET 8
       items:
       - name: BinaryFormatter disabled for most projects

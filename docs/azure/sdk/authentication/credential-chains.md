@@ -5,6 +5,8 @@ ms.topic: conceptual
 ms.date: 08/06/2024
 ---
 
+# Credential chains in the Azure Identity library for .NET
+
 The Azure Identity library provides *credentials*&mdash;public classes derived from the [TokenCredential](/dotnet/api/azure.core.tokencredential?view=azure-dotnet&preserve-view=true) class. A credential represents a distinct authentication flow for acquiring an access token from Microsoft Entra ID. These credentials can be chained together to form an ordered sequence of mechanisms for attempting to authenticate.
 
 At runtime, the credential chain attempts to authenticate using the first credential. If that credential fails to acquire an access token, the next credential in the sequence is attempted, and so on, until an access token is successfully obtained. In this way, your app can use different credentials in different environments without writing environment-specific code.
@@ -49,7 +51,7 @@ In the preceding code sample, `EnvironmentCredential` and `WorkloadIdentityCrede
 
 The preceding code sample creates a custom credential chain. `ManagedIdentityCredential` is attempted first, followed by `VisualStudioCredential`, if necessary. In graphical form, the chain looks like this:
 
-:::image type="content" source="../media/credential-chains/ChainedTokenCredentialAuthFlow.svg" alt-text="ChainedTokenCredential" lightbox="../media/credential-chains/ChainedTokenCredentialAuthFlow.svg":::
+:::image type="content" source="../media/credential-chains/ChainedTokenCredentialAuthFlow.svg" alt-text="ChainedTokenCredential":::
 
 > [!TIP]
 > As a recommendation, optimize credential ordering in `ChainedTokenCredential` for your production environment.

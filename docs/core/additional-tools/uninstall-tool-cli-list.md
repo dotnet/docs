@@ -12,7 +12,7 @@ zone_pivot_groups: operating-systems-set-three
 
 ## Name
 
-`dotnet-core-uninstall list` - List .NET SDKs or Runtimes that can be removed with this tool.
+`dotnet-core-uninstall list` - List .NET SDKs or runtimes that can be removed with this tool.
 
 ## Synopsis
 

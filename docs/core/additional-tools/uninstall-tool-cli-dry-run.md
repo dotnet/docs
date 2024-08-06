@@ -55,11 +55,11 @@ The `dotnet-core-uninstall list` command simulates .NET SDK and runtime removal.
 
 **`TARGET`**
 
-  The specified type you want to uninstall. Valid options are listed in the [Options - TARGET](#options---target) section.
+  The type you want to uninstall. Valid options are listed in the [Options - TARGET](#options---target) section.
 
 **`VERSION`**
 
-  The specified version to uninstall. You can list several versions separated by a space. Response files are also supported.
+  The version to uninstall. You can list several versions separated by a space. Response files are also supported.
 
   > [!TIP]
   > Response files are an alternative to placing all the versions on the command line. They're text files, typically with a *\*.rsp* extension, and each version is listed on a separate line. To specify a response file for the `VERSION` argument, use the \@ character immediately followed by the response file name.

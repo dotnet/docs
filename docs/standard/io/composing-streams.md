@@ -1,6 +1,6 @@
 ---
 title: Transform data by composing streams
-description: "Learn about how stream composition can transform data. Data passing through the stream is automatically altered."
+description: "Learn how stream composition can transform data. Data passing through the stream is automatically altered."
 #ms.topic: concept-article (for a future work item that rewrites this article in this format)
 ms.date: 08/02/2024
 dev_langs: 

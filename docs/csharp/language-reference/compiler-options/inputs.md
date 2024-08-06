@@ -17,6 +17,9 @@ The following options control compiler inputs. The new MSBuild syntax is shown i
 - **AddModules** / `-addmodule`: Add a module (created with `target:module` to this assembly.)
 - **EmbedInteropTypes** / `-link`: Embed metadata from the specified interop assembly files.
 
+> [!NOTE]
+> Refer to [Compiler options](index.md#how-to-set-options) for more information on configuring these options for your project.
+
 ## References
 
 The **References** option causes the compiler to import [public](../keywords/public.md) type information in the specified file into the current project, enabling you to reference metadata from the specified assembly files.

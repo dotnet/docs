@@ -186,6 +186,20 @@ interface IDerived : IBase
 
 Note that an interface with the `GeneratedComInterface` attribute can only inherit from one base interface that has the `GeneratedComInterface` attribute.
 
+#### Derived interfaces across assembly boundaries
+
+In .NET 8, defining an interface with the `GeneratedComInterface` attribute that derives from a `GeneratedComInterface`-attributed interface defined in another assembly is not supported.
+
+In .NET 9 and newer, this scenario is supported only for specific scenarios:
+
+- The base interface type must be compiled targeting the same target framework as the derived type.
+- The base interface type must not shadow any members of its base interface, if it has one.
+
+Additionally, any changes to any generated virtual method offsets in the base interface chain defined in another assembly will not be accounted for in the derived interfaces until the project is rebuilt.
+
+> [!NOTE]
+> In .NET 9 and newer, a warning is emitted when inheriting generated COM interfaces across assembly boundaries to inform you about the restrictions and pitfalls of using this feature. This warning can be disabled to acknowlege the limitations and inherit across assembly boundaries.
+
 ### Marshal APIs
 
 Some APIs in <xref:System.Runtime.InteropServices.Marshal> are not compatible with source-generated COM. Replace these methods with their corresponding methods on a `ComWrappers` implementation.

@@ -21,8 +21,8 @@ This article applies to the following .NET implementations:
 * .NET Core 2.1 - 3.1
 * .NET 5 and later
 
-> [!WARNING]
-> The <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> type is dangerous and is ***not*** recommended for data processing. Applications should stop using `BinaryFormatter` as soon as possible, even if they believe the data they're processing to be trustworthy. `BinaryFormatter` is insecure and can't be made secure.
+> [!CAUTION]
+> The <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> type is dangerous and is ***not*** recommended for data processing. Applications [should stop using `BinaryFormatter`](../serialization/binaryformatter-migration-guide/index.md) as soon as possible, even if they believe the data they're processing to be trustworthy. `BinaryFormatter` is insecure and can't be made secure.
 
 ## Deserialization vulnerabilities
 

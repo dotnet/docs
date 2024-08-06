@@ -67,7 +67,7 @@ The preceding code sample creates a tailored credential chain comprised of two c
 :::image type="content" source="../media/mermaidjs/ChainedTokenCredentialAuthFlow.svg" alt-text="ChainedTokenCredential":::
 
 > [!TIP]
-> As a recommendation, optimize credential ordering in `ChainedTokenCredential` for your production environment.
+> For improved performance, optimize credential ordering in `ChainedTokenCredential` for your production environment.
 
 ## Usage guidance for DefaultAzureCredential
 

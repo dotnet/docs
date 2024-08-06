@@ -26,14 +26,14 @@ All standard OLE DataFormats in [`System.Windows.Forms.DataFormats`](/dotnet/api
 
 ### Drag-and-drop feature
 
-TODO
+If your drag-and-drop scenario involves types that aren't intrinsically handled during serialization and deserialization, `BinaryFormatter` is used when [`System.Windows.Forms.Control.DoDragDrop`](/dotnet/api/system.windows.forms.control.dodragdrop) or [`System.Windows.DragDrop.DoDragDrop`](/dotnet/api/system.windows.forms.dataobject.getdata) is called and the data has been dragged out of process. `BinaryFormatter` is also used when [`System.Windows.Forms.DataObject.GetData`](/dotnet/api/system.windows.dataobject.getdata) or [`System.Windows.DataObject.GetData`](/dotnet/api/system.windows.dataobject.getdata) is called to retrieve the data that originated from another process if the type isn't intrinsically handled. With the BinaryFormatter removal, you'll now see a string about BinaryFormatter being removed when you attempt retrieve the data that has originated from another process for types that aren't intrinsically handled.
 
 ## Migrating away from BinaryFormatter
 
 ### Clipboard and drag-and-drop
 
-For types that aren't intrinsically handled that are used in clipboard and drag-and-drop operations, it's recommended that you format those types as a `byte[]` or `string` payload before passing the data to clipboard or drag-and-drop APIs. Using JSON is one way to achieve this. You'll need to make adjustments to handle receiving a JSON formatted type just as adjustments have been made to place JSON formatted types on clipboard or drag-and-drop operations. For more information on how to serialize and deserialize the type with JSON, see [How to write .NET objects as JSON (serialize)](../system-text-json/how-to.md).
+For types that aren't intrinsically handled that are used in clipboard and drag-and-drop operations, it's recommended that you format those types as a `byte[]` or `string` payload before passing the data to clipboard or drag-and-drop APIs. Using JSON is one way to achieve this. You'll need to make adjustments to handle receiving a JSON formatted type similar to adjustments made to place JSON formatted types on clipboard or drag-and-drop operations. For more information on how to serialize and deserialize the type with JSON, see [How to write .NET objects as JSON (serialize)](../system-text-json/how-to.md).
 
 ## Issues
 
-If you experience unexpected behavior with your Windows Forms or WPF app regarding BinaryFormatter serialization or deserializing, please file an issue at [github.com/dotnet/winforms](https://github.com/dotnet/winforms/issues) or [github.com/dotnet/wpf](https://github.com/dotnet/wpf/issues).
+If you experience unexpected behavior with your Windows Forms or WPF app regarding BinaryFormatter serialization or deserializing, please file an issue at [github.com/dotnet/winforms](https://github.com/dotnet/winforms/issues) or [github.com/dotnet/wpf](https://github.com/dotnet/wpf/issues) respectively.

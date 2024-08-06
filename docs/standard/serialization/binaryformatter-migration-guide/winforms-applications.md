@@ -45,13 +45,9 @@ Windows Forms also supports the following additional types:
 - `Bitmap`
 - `ImageListStreamer`
 
-### Clipboard
+### OLE scenarios
 
-For information about the effects BinaryFormatter removal has on OLE scenarios such as clipboard as well as migration guidance see [Windows Forms and Windows Presentation Foundation BinaryFormatter OLE guidance](./winforms-wpf-ole-guidance.md).
-
-### Drag-and-drop feature
-
-If your drag-and-drop scenario involves types that aren't intrinsically handled during serialization and deserialization, BinaryFormatter is used when [`Control.DoDragDrop`](/dotnet/api/system.windows.forms.control.dodragdrop) is called, and when [`DataObject.GetData`](/dotnet/api/system.windows.dataobject.getdata) is called to retrieve a type that's been dragged out of process. With the BinaryFormatter removal, you'll now see a string about BinaryFormatter being removed when you drop a dragged item in another process for drag-and-drop operations with types that aren't intrinsically handled.
+For information about the effects BinaryFormatter removal has on OLE scenarios such as clipboard and drag-and-drop as well as migration guidance see [Windows Forms and Windows Presentation Foundation BinaryFormatter OLE guidance](./winforms-wpf-ole-guidance.md).
 
 ### Resources (ResX)
 
@@ -78,6 +74,10 @@ Types that had been previously serialized into resource files via `BinaryFormatt
 ## Migrate away from BinaryFormatter
 
 If types that aren't intrinsically handled during serialization and deserialization are used in the affected scenarios, you'll need to take action to complete migration to .NET 9 or a later version.
+
+### OLE scenarios
+
+See [Windows Forms and Windows Presentation Foundation BinaryFormatter OLE guidance](./winforms-wpf-ole-guidance.md) for more information on how to migrate away from BinaryFormatter in scenarios such as clipboard and drag-and-drop.
 
 ### Loading and saving resources during design time
 

@@ -1,22 +1,22 @@
 ---
 title: "BinaryFormatter migration guide: WinForms and WPF OLE guidance"
-description: "Learn about the effects of the deprecation and removal of BinaryFormatter from .NET on clipboard and drag-and-drop operations in Windows Forms and Windows Presentation Framework."
+description: "Learn about the effects of the deprecation and removal of BinaryFormatter from .NET on clipboard and drag-and-drop operations in Windows Forms and Windows Presentation Foundation."
 ms.date: 7/31/2024
-no-loc: [BinaryFormatter, Windows Forms, WPF, Windows Presentation Framework, OLE]
+no-loc: [BinaryFormatter, Windows Forms, WPF, Windows Presentation Foundation, OLE]
 helpviewer_keywords:
   - "BinaryFormatter"
   - "WinForms"
   - "Windows Forms"
   - "WPF"
-  - "Windows Presentation Framework"
+  - "Windows Presentation Foundation"
   - "Clipboard"
   - "Drag-and-drop"
   - "OLE"
 ---
 
-# Windows Forms and Windows Presentation Framework BinaryFormatter OLE guidance
+# Windows Forms and Windows Presentation Foundation BinaryFormatter OLE guidance
 
-This document outlines the effects the BinaryFormatter removal has on OLE scenarios in Windows Forms and Windows Presentation Framework (WPF). For information about the effects of BinaryFormatter removal in Windows Forms in general see [Windows Forms migration guide for BinaryFormatter](./winforms-applications.md). For information about the effects of BinaryFormatter removal in WPF in general see [WPF Migration Guide – Binary Formatter](./wpf-applications.md).
+This document outlines the effects the BinaryFormatter removal has on OLE scenarios in Windows Forms and Windows Presentation Foundation (WPF). For information about the effects of BinaryFormatter removal in Windows Forms in general see [Windows Forms migration guide for BinaryFormatter](./winforms-applications.md). For information about the effects of BinaryFormatter removal in WPF in general see [WPF Migration Guide – Binary Formatter](./wpf-applications.md).
 
 ## BinaryFormatter in OLE scenarios
 
@@ -26,6 +26,7 @@ All standard OLE DataFormats in [`System.Windows.Forms.DataFormats`](/dotnet/api
 
 ### Drag-and-drop feature
 
+TODO
 
 ## Migrating away from BinaryFormatter
 

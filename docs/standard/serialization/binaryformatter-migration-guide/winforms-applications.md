@@ -47,7 +47,7 @@ Windows Forms also supports the following additional types:
 
 ### Clipboard
 
-For information about the effects BinaryFormatter removal has on OLE scenarios such as clipboard as well as migration guidance see [Windows Forms and Windows Presentation Framework BinaryFormatter OLE guidance](./winforms-wpf-ole-guidance.md).
+For information about the effects BinaryFormatter removal has on OLE scenarios such as clipboard as well as migration guidance see [Windows Forms and Windows Presentation Foundation BinaryFormatter OLE guidance](./winforms-wpf-ole-guidance.md).
 
 ### Drag-and-drop feature
 
@@ -82,7 +82,6 @@ If types that aren't intrinsically handled during serialization and deserializat
 ### Loading and saving resources during design time
 
 For types that aren't intrinsically handled during serialization into resources, such as in the case of the Designer with ResX scenarios, the prescribed way of migrating away from BinaryFormatter is to ensure a `TypeConverter` is registered for the type or property that's participating in serialization. This way, during serialization and deserialization, the `TypeConverter` is used in lieu of where `BinaryFormatter` was once used. For more information on implementing a type converter, see [`TypeConverter` Class](/dotnet/api/system.componentmodel.typeconverter#notes-to-inheritors)
-
 
 ## Compatibility workaround (not recommended)
 

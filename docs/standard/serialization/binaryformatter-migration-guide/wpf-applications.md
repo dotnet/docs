@@ -32,15 +32,17 @@ Primitive types include:
 - `double` 
 - `int` 
 - `sbyte` 
-- `single` 
+- `float` 
 - `TimeSpan` 
 - `DateTime` 
 - `uint` 
 - `string` 
 - `nint` 
 - `nuint` 
-- `long` 
-- `ulong` 
+- `long`
+- `ulong`
+- `short`
+- `ushort` 
 
 Additional types include: 
 - `PointF` 

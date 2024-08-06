@@ -132,7 +132,6 @@ When you create comparison expressions, the following operators are allowed:
 - \>
 - \<=
 - \>=
-- \>
 - =
 - `IN`
 - `LIKE`

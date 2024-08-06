@@ -2,10 +2,11 @@
 title: "BinaryFormatter migration guide: WinForms applications"
 description: "Learn about the effects of the deprecation and removal of BinaryFormatter from .NET on Windows Forms and how to migrate."
 ms.date: 7/31/2024
-no-loc: [BinaryFormatter, WinForms]
+no-loc: [BinaryFormatter, Windows Forms, WinForms]
 helpviewer_keywords:
   - "BinaryFormatter"
   - "WinForms"
+  - "Windows Forms"
 ---
 
 # Windows Forms migration guide for BinaryFormatter
@@ -46,7 +47,7 @@ Windows Forms also supports the following additional types:
 
 ### Clipboard
 
-All standard OLE [`DataFormats`](/dotnet/api/system.windows.forms.dataformats#fields) don't go through BinaryFormatter, except for `DataFormats.Serializable` and any custom format. If you're using `DataFormats.Serializable` or a custom format, BinaryFormatter is used if your clipboard scenario involves types that aren't intrinsically handled when [`Clipboard.SetData`](/dotnet/api/system.windows.forms.clipboard.setdata) is called with your type and when [`Clipboard.GetData`](/dotnet/api/system.windows.forms.clipboard.getdata) is called to get your type. BinaryFormatter is also used if [`Clipboard.SetDataObject(object, copy: true)`](/dotnet/api/system.windows.forms.clipboard.setdataobject) is called. With the BinaryFormatter removal, you won't see an exception when setting the data on the clipboard if BinaryFormatter was needed. Instead, you'll see a string about BinaryFormatter being removed when you attempt to get the type that isn't intrinsically handled from the clipboard.
+For information about the effects BinaryFormatter removal has on OLE scenarios such as clipboard as well as migration guidance see [Windows Forms and Windows Presentation Framework BinaryFormatter OLE guidance](./winforms-wpf-ole-guidance.md).
 
 ### Drag-and-drop feature
 
@@ -77,10 +78,6 @@ Types that had been previously serialized into resource files via `BinaryFormatt
 ## Migrate away from BinaryFormatter
 
 If types that aren't intrinsically handled during serialization and deserialization are used in the affected scenarios, you'll need to take action to complete migration to .NET 9 or a later version.
-
-### Clipboard and drag-and-drop
-
-For types that aren't intrinsically handled that are used in clipboard and drag-and-drop operations, it's recommended that you format those types as a `byte[]` or `string` payload before passing the data to clipboard or drag-and-drop APIs. Using JSON is one way to achieve this. You'll need to make adjustments to handle receiving a JSON formatted type just as adjustments have been made to place JSON formatted types on clipboard or drag-and-drop operations. For more information on how to serialize and deserialize the type with JSON, see [How to write .NET objects as JSON (serialize)](../system-text-json/how-to.md).
 
 ### Loading and saving resources during design time
 

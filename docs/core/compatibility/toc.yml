@@ -12,6 +12,8 @@ items:
       items:
       - name: DefaultKeyResolution.ShouldGenerateNewKey has altered meaning
         href: aspnet-core/9.0/key-resolution.md
+      - name: HostBuilder enables ValidateOnBuild/ValidateScopes in development environment
+        href: aspnet-core/9.0/hostbuilder-validation.md
     - name: Core .NET libraries
       items:
       - name: Adding a ZipArchiveEntry sets header general-purpose bit flags
@@ -958,6 +960,8 @@ items:
       items:
       - name: DefaultKeyResolution.ShouldGenerateNewKey has altered meaning
         href: aspnet-core/9.0/key-resolution.md
+      - name: HostBuilder enables ValidateOnBuild/ValidateScopes in development environment
+        href: aspnet-core/9.0/hostbuilder-validation.md
     - name: .NET 8
       items:
       - name: ConcurrencyLimiterMiddleware is obsolete

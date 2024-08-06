@@ -16,16 +16,9 @@
 }%%
 
 flowchart LR;
-    subgraph CREDENTIALS;
-        direction LR;
-        C(Managed Identity):::deployed --> D(Visual Studio):::developer;
-    end;
+    C(Managed Identity):::deployed --> D(Visual Studio):::developer;
 
     %% Define styles for credential type boxes
     classDef deployed fill:#95C37E, stroke:#71AD4C;
     classDef developer fill:#F5AF6F, stroke:#EB7C39;
-
-    %% Add API ref links to credential type boxes
-    click C "https://learn.microsoft.com/dotnet/api/azure.identity.managedidentitycredential?view=azure-dotnet" _blank;
-    click D "https://learn.microsoft.com/dotnet/api/azure.identity.visualstudiocredential?view=azure-dotnet" _blank;
 ```

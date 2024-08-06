@@ -33,9 +33,9 @@ These examples use a plain-text file named _data.txt_. This file should contain 
 The following example reads data from a file, encrypts it, and then writes the encrypted data to another file. Stream composition is used to transform the data using a basic shifting cipher. Each byte that passes through the stream has its value changed by **80**.
 
 > [!WARNING]
-> The encryption used in this example is a very basic and unsecure encryption. It's not meant to actually encrypt data for use, but is provided to demonstrate altering data through stream composition.
+> The encryption used in this example is basic and unsecure. It's not meant to actually encrypt data for use, but is provided to demonstrate altering data through stream composition.
 
-### Reading the source data for encryption
+### Read the source data for encryption
 
 The following code reads the text from one file, transforms it, then writes it to another file.
 
@@ -47,14 +47,14 @@ The following code reads the text from one file, transforms it, then writes it t
 
 Consider the following aspects about the previous code:
 
-- There are two <xref:System.IO.FileStream> objects.
+- There are two <xref:System.IO.FileStream> objects:
   - The first `FileStream` (`inputBaseStream` variable) object reads the contents of the _data.txt_ file. This is the **input** data stream.
   - The second `FileStream` (`outputBaseStream` variable) object writes incoming data to the _shifted.txt_ file. This is the **output** data stream.
 - The `CipherStream` (`encryptStream` variable) object wraps the `inputBaseStream`, making `inputBaseStream` the base stream for `encryptStream`.
 
 The input stream could be read from directly, writing the data to the output stream, but that wouldn't transform the data. Instead, the `encryptStream` input stream wrapper is used to read the data. As the data is read from `encryptStream`, it pulls from the `inputBaseStream` base stream, transforms it, and returns it. The returned data is written to `outputBaseStream`, which writes the data to the _shifted.txt_ file.
 
-### Reading the transformed data for decryption
+### Read the transformed data for decryption
 
 This code reverses the encryption performed by the previous code:
 
@@ -63,14 +63,14 @@ This code reverses the encryption performed by the previous code:
 
 Consider the following aspects about the previous code:
 
-- There are two <xref:System.IO.FileStream> objects.
+- There are two <xref:System.IO.FileStream> objects:
   - The first `FileStream` (`inputBaseStream` variable) object reads the contents of the _shifted.txt_ file. This is the **input** data stream.
   - The second `FileStream` (`outputBaseStream` variable) object writes incoming data to the _unshifted.txt_ file. This is the **output** data stream.
 - The `CipherStream` (`unencryptStream` variable) object wraps the `outputBaseStream`, making `outputBaseStream` the base stream for `unencryptStream`.
 
 Here, the code is slightly different from the previous example. Instead of wrapping the input stream, `unencryptStream` wraps the output stream. As the data is read from `inputBaseStream` input stream, it's sent to the `unencryptStream` output stream wrapper. When `unencryptStream` receives data, it transforms it and then writes the data to the `outputBaseStream` base stream. The `outputBaseStream` output stream writes the data to the _unshifted.txt_ file.
 
-### Validating the transformed data
+### Validate the transformed data
 
 The two previous examples performed two operations on the data. First, the contents of the _data.txt_ file was encrypted and saved to the _shifted.txt_ file. And second, the encrypted contents of the _shifted.txt_ file were decrypted and saved to the _unshifted.txt_ file. Therefore, the _data.txt_ file and _unshifted.txt_ file should be exactly the same. The following code compares those files for equality:
 
@@ -87,7 +87,7 @@ The following code runs this entire encrypt-decrypt process:
 The following snippet provides the `CipherStream` class, which uses a basic shifting cipher to encrypt and decrypt bytes. This class inherits from <xref:System.IO.Stream> and supports either reading or writing data.
 
 > [!WARNING]
-> The encryption used in this example is a very basic and unsecure encryption. It's not meant to actually encrypt data for use, but is provided to demonstrate altering data through stream composition.
+> The encryption used in this example is basic and unsecure. It's not meant to actually encrypt data for use, but is provided to demonstrate altering data through stream composition.
 
 :::code language="csharp" source="./snippets/composing-streams/csharp/CipherStream.cs":::
 :::code language="vb" source="./snippets/composing-streams/vb/CipherStream.vb":::

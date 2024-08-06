@@ -188,17 +188,17 @@ Note that an interface with the `GeneratedComInterface` attribute can only inher
 
 #### Derived interfaces across assembly boundaries
 
-In .NET 8, defining an interface with the `GeneratedComInterface` attribute that derives from a `GeneratedComInterface`-attributed interface defined in another assembly is not supported.
+In .NET 8, it isn't supported to define an interface with the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute> attribute that derives from a `GeneratedComInterface`-attributed interface that's defined in another assembly.
 
-In .NET 9 and newer, this scenario is supported only for specific scenarios:
+In .NET 9 and later versions, this scenario is supported with the following restrictions:
 
 - The base interface type must be compiled targeting the same target framework as the derived type.
 - The base interface type must not shadow any members of its base interface, if it has one.
 
-Additionally, any changes to any generated virtual method offsets in the base interface chain defined in another assembly will not be accounted for in the derived interfaces until the project is rebuilt.
+Additionally, any changes to any generated virtual method offsets in the base interface chain defined in another assembly won't be accounted for in the derived interfaces until the project is rebuilt.
 
 > [!NOTE]
-> In .NET 9 and newer, a warning is emitted when inheriting generated COM interfaces across assembly boundaries to inform you about the restrictions and pitfalls of using this feature. This warning can be disabled to acknowlege the limitations and inherit across assembly boundaries.
+> In .NET 9 and later versions, a warning is emitted when inheriting generated COM interfaces across assembly boundaries to inform you about the restrictions and pitfalls of using this feature. You can disable this warning to acknowledge the limitations and inherit across assembly boundaries.
 
 ### Marshal APIs
 

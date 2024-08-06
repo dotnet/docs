@@ -9,7 +9,9 @@ ms.date: 08/06/2024
 
 The Azure Identity library provides *credentials*&mdash;public classes derived from the [TokenCredential](/dotnet/api/azure.core.tokencredential?view=azure-dotnet&preserve-view=true) class. A credential represents a distinct authentication flow for acquiring an access token from Microsoft Entra ID. These credentials can be chained together to form an ordered sequence of mechanisms for attempting to authenticate.
 
-At runtime, the credential chain attempts to authenticate using the first credential. If that credential fails to acquire an access token, the next credential in the sequence is attempted, and so on, until an access token is successfully obtained. In this way, your app can use different credentials in different environments without writing environment-specific code.
+At runtime, the credential chain attempts to authenticate using the first credential. If that credential fails to acquire an access token, the next credential in the sequence is attempted, and so on, until an access token is successfully obtained. In this way, your app can use different credentials in different environments without writing environment-specific code like this:
+
+:::code language="csharp" source="../snippets/authentication/Program.cs" id="snippet_NoChain":::
 
 There are two different philosophies to credential chaining:
 
@@ -33,6 +35,10 @@ The order in which `DefaultAzureCredential` attempts credentials follows:
 1. **Azure Developer CLI** - If the developer authenticated to Azure using Azure Developer CLI's `azd auth login` command, authenticate with that account.
 1. **Interactive** - If enabled, interactively authenticate the developer via the current system's default browser. By default, this credential is disabled.
 
+In its simplest form, you can use the parameterless version of `DefaultAzureCredential` as follows:
+
+:::code language="csharp" source="../snippets/authentication/Program.cs" id="snippet_Dac":::
+
 ### How to customize DefaultAzureCredential
 
 To remove a credential from `DefaultAzureCredential`, use the corresponding `Exclude`-prefixed property in [DefaultAzureCredentialOptions](/dotnet/api/azure.identity.defaultazurecredentialoptions?view=azure-dotnet&preserve-view=true#properties). For example:
@@ -49,9 +55,13 @@ In the preceding code sample, `EnvironmentCredential` and `WorkloadIdentityCrede
 
 :::code language="csharp" source="../snippets/authentication/Program.cs" id="snippet_Ctc":::
 
-The preceding code sample creates a custom credential chain. `ManagedIdentityCredential` is attempted first, followed by `VisualStudioCredential`, if necessary. In graphical form, the chain looks like this:
+The preceding code sample creates a custom credential chain comprised of two credentials. `ManagedIdentityCredential` is attempted first, followed by `VisualStudioCredential`, if necessary. In graphical form, the chain looks like this:
 
 :::image type="content" source="../media/credential-chains/ChainedTokenCredentialAuthFlow.svg" alt-text="ChainedTokenCredential":::
 
 > [!TIP]
 > As a recommendation, optimize credential ordering in `ChainedTokenCredential` for your production environment.
+
+## Pitfalls of DefaultAzureCredential
+
+TODO

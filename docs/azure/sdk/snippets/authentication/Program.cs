@@ -1,4 +1,5 @@
 ﻿#region snippet_UseCredential
+using Azure.Core;
 using Azure.Identity;
 using Microsoft.Extensions.Azure;
 
@@ -8,7 +9,9 @@ builder.Services.AddAzureClients(clientBuilder =>
 {
     clientBuilder.AddBlobServiceClient(
         new Uri("https://<account-name>.blob.core.windows.net"));
+    #region snippet_Dac
     clientBuilder.UseCredential(new DefaultAzureCredential());
+    #endregion
 
     #region snippet_DacExcludes
     clientBuilder.UseCredential(new DefaultAzureCredential(
@@ -31,6 +34,20 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+
+#region snippet_NoChain
+TokenCredential credential;
+
+if (app.Environment.IsProduction() || app.Environment.IsStaging())
+{
+    credential = new ManagedIdentityCredential();
+}
+else
+{
+    // local development environment
+    credential = new VisualStudioCredential();
+}
+#endregion
 
 if (app.Environment.IsDevelopment())
 {

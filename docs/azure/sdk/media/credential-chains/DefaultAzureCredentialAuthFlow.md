@@ -18,12 +18,12 @@
 flowchart LR;
     subgraph CREDENTIAL TYPES;
         direction LR;
-        Deployed(Deployed service):::deployed ~~~ Developer(Developer):::developer ~~~ Interactive(Interactive):::interactive;
+        Deployed(Deployed service fa:fa-cloud):::deployed ~~~ Developer(Developer fa:fa-toolbox):::developer ~~~ Interactive(Interactive fa:fa-arrow-pointer):::interactive;
     end;
 
     subgraph CREDENTIALS;
         direction LR;
-        A(Environment):::deployed --> B(Workload Identity):::deployed --> C(Managed Identity):::deployed --> D(Visual Studio):::developer --> E(VS Code):::developer --> F(Azure CLI):::developer --> G(Azure PowerShell):::developer --> H(Azure Developer CLI):::developer --> I(Interactive browser):::interactive;
+        A(Environment fa:fa-cloud):::deployed --> B(Workload Identity fa:fa-cloud):::deployed --> C(Managed Identity fa:fa-cloud):::deployed --> D(Visual Studio fa:fa-toolbox):::developer --> E(Azure CLI fa:fa-toolbox):::developer --> F(Azure PowerShell fa:fa-toolbox):::developer --> G(Azure Developer CLI fa:fa-toolbox):::developer --> H(Interactive browser fa:fa-arrow-pointer):::interactive;
     end;
 
     %% Define styles for credential type boxes
@@ -36,9 +36,8 @@ flowchart LR;
     click B "https://learn.microsoft.com/dotnet/api/azure.identity.workloadidentitycredential?view=azure-dotnet" _blank;
     click C "https://learn.microsoft.com/dotnet/api/azure.identity.managedidentitycredential?view=azure-dotnet" _blank;
     click D "https://learn.microsoft.com/dotnet/api/azure.identity.visualstudiocredential?view=azure-dotnet" _blank;
-    click E "https://learn.microsoft.com/dotnet/api/azure.identity.visualstudiocodecredential?view=azure-dotnet" _blank;
-    click F "https://learn.microsoft.com/dotnet/api/azure.identity.azureclicredential?view=azure-dotnet" _blank;
-    click G "https://learn.microsoft.com/dotnet/api/azure.identity.azurepowershellcredential?view=azure-dotnet" _blank;
-    click H "https://learn.microsoft.com/dotnet/api/azure.identity.azuredeveloperclicredential?view=azure-dotnet" _blank
-    click I "https://learn.microsoft.com/dotnet/api/azure.identity.interactivebrowsercredential?view=azure-dotnet" _blank;
+    click E "https://learn.microsoft.com/dotnet/api/azure.identity.azureclicredential?view=azure-dotnet" _blank;
+    click F "https://learn.microsoft.com/dotnet/api/azure.identity.azurepowershellcredential?view=azure-dotnet" _blank;
+    click G "https://learn.microsoft.com/dotnet/api/azure.identity.azuredeveloperclicredential?view=azure-dotnet" _blank
+    click H "https://learn.microsoft.com/dotnet/api/azure.identity.interactivebrowsercredential?view=azure-dotnet" _blank;
 ```

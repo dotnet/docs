@@ -30,14 +30,17 @@ There are two different philosophies to credential chaining:
 
 The order in which `DefaultAzureCredential` attempts credentials follows:
 
-1. **Environment** - Reads a collection of environment variables to determine if an application service principal (application user) is configured for the app. If so, `DefaultAzureCredential` uses these values to authenticate the app to Azure. This method is most often used in server environments but can also be used when developing locally.
-1. **Workload Identity** - If the app is deployed to an Azure host with Workload Identity enabled, authenticate that account.
-1. **Managed Identity** - If the app is deployed to an Azure host with Managed Identity enabled, authenticate the app to Azure using that Managed Identity.
-1. **Visual Studio** - If the developer authenticated to Azure by logging into Visual Studio, authenticate the app to Azure using that same account.
-1. **Azure CLI** - If the developer authenticated to Azure using Azure CLI's `az login` command, authenticate the app to Azure using that same account.
-1. **Azure PowerShell** - If the developer authenticated to Azure using Azure PowerShell's `Connect-AzAccount` cmdlet, authenticate the app to Azure using that same account.
-1. **Azure Developer CLI** - If the developer authenticated to Azure using Azure Developer CLI's `azd auth login` command, authenticate with that account.
-1. **Interactive** - If enabled, interactively authenticate the developer via the current system's default browser. By default, this credential is disabled.
+
+| Order | Credential          | Description | Enabled by default? |
+|-------|---------------------|-------------|---------------------|
+| 1     | Environment         |Reads a collection of environment variables to determine if an application service principal (application user) is configured for the app. If so, `DefaultAzureCredential` uses these values to authenticate the app to Azure. This method is most often used in server environments but can also be used when developing locally.             | Yes                 |
+| 2     | Workload Identity   |If the app is deployed to an Azure host with Workload Identity enabled, authenticate that account.             | Yes                 |
+| 3     | Managed Identity    |If the app is deployed to an Azure host with Managed Identity enabled, authenticate the app to Azure using that Managed Identity.             | Yes                 |
+| 4     | Visual Studio       |If the developer authenticated to Azure by logging into Visual Studio, authenticate the app to Azure using that same account.             | Yes                 |
+| 5     | Azure CLI           |If the developer authenticated to Azure using Azure CLI's `az login` command, authenticate the app to Azure using that same account.             | Yes                 |
+| 6     | Azure PowerShell    |If the developer authenticated to Azure using Azure PowerShell's `Connect-AzAccount` cmdlet, authenticate the app to Azure using that same account.             | Yes                 |
+| 7     | Azure Developer CLI |If the developer authenticated to Azure using Azure Developer CLI's `azd auth login` command, authenticate with that account.             | Yes                 |
+| 8     | Interactive         |If enabled, interactively authenticate the developer via the current system's default browser. By default, this credential is disabled.             | No                  |
 
 In its simplest form, you can use the parameterless version of `DefaultAzureCredential` as follows:
 

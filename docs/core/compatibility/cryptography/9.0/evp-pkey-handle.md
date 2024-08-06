@@ -17,7 +17,7 @@ Along with work to enable OpenSSL providers support, a change was made to the <x
 
 ## Version introduced
 
-.NET 8 Preview 7
+.NET 9 Preview 7
 
 ## Type of breaking change
 

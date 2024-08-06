@@ -17,7 +17,7 @@ Affected APIs will receive an obsolete compilation warning with ID [SYSLIB0057](
 
 ## Version introduced
 
-.NET 8 Preview 7
+.NET 9 Preview 7
 
 ## Type of breaking change
 

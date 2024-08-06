@@ -20,9 +20,9 @@ There are two different philosophies to credential chaining:
 
 :::image type="content" source="../media/credential-chains/DefaultAzureCredentialAuthFlow.svg" alt-text="DefaultAzureCredential" lightbox="../media/credential-chains/DefaultAzureCredentialAuthFlow.svg":::
 
-The order and locations in which `DefaultAzureCredential` looks for credentials is found at [DefaultAzureCredential](/dotnet/api/overview/azure/identity-readme?view=azure-dotnet&preserve-view=true#defaultazurecredential).
+The order in which `DefaultAzureCredential` attempts credentials follows:
 
-1. **Environment** - Reads a collection of environment variables to determine if an application service principal (application user) is configured for the app. If so, `DefaultAzureCredential` uses these values to authenticate the app to Azure.<br><br>This method is most often used in server environments but can also be used when developing locally.
+1. **Environment** - Reads a collection of environment variables to determine if an application service principal (application user) is configured for the app. If so, `DefaultAzureCredential` uses these values to authenticate the app to Azure. This method is most often used in server environments but can also be used when developing locally.
 1. **Workload Identity** - If the app is deployed to an Azure host with Workload Identity enabled, authenticate that account.
 1. **Managed Identity** - If the app is deployed to an Azure host with Managed Identity enabled, authenticate the app to Azure using that Managed Identity.
 1. **Visual Studio** - If the developer authenticated to Azure by logging into Visual Studio, authenticate the app to Azure using that same account.
@@ -31,11 +31,11 @@ The order and locations in which `DefaultAzureCredential` looks for credentials 
 1. **Azure Developer CLI** - If the developer authenticated to Azure using Azure Developer CLI's `azd auth login` command, authenticate with that account.
 1. **Interactive** - If enabled, interactively authenticate the developer via the current system's default browser. By default, this credential is disabled.
 
-### Customize DefaultAzureCredential
+### How to customize DefaultAzureCredential
 
 To remove a credential from `DefaultAzureCredential`, use the corresponding `Exclude`-prefixed property in [DefaultAzureCredentialOptions](/dotnet/api/azure.identity.defaultazurecredentialoptions?view=azure-dotnet&preserve-view=true#properties). For example:
 
-:::code language="csharp" source="snippets/authentication/Program.cs" id="snippet_DacExcludes":::
+:::code language="csharp" source="../snippets/authentication/Program.cs" id="snippet_DacExcludes":::
 
 In the preceding code sample, `EnvironmentCredential` and `WorkloadIdentityCredential` are removed from the credential chain. As a result, the first credential to be attempted is `ManagedIdentityCredential`. The modified chain looks like this:
 
@@ -45,7 +45,7 @@ In the preceding code sample, `EnvironmentCredential` and `WorkloadIdentityCrede
 
 [ChainedTokenCredential](/dotnet/api/azure.identity.chainedtokencredential?view=azure-dotnet&preserve-view=true) is an empty chain to which you add credentials to suit your app's needs. For example:
 
-:::code language="csharp" source="snippets/authentication/Program.cs" id="snippet_Ctc":::
+:::code language="csharp" source="../snippets/authentication/Program.cs" id="snippet_Ctc":::
 
 The preceding code sample creates a custom credential chain. `ManagedIdentityCredential` is attempted first, followed by `VisualStudioCredential`, if necessary. In graphical form, the chain looks like this:
 

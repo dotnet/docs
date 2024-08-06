@@ -33,6 +33,10 @@ For more details about the decision, see the [BinaryFormatter is being removed i
 
 ## Migration topics
 
+Migrating away from BinaryFormatter usually means [choosing a different serializer](#choose-a-serializer). However, that's usually only doable if you control both the producer and consumer of the encoded data. In case you don't control the producer, you can also move to our [new API for reading BinaryFormatter payloads](#read-binaryformatter-nrbf-payloads) without instantiating any of the encoded types.
+
+Both options are explored below.
+
 ### Choose a serializer
 
 The first step of migrating from `BinaryFormatter` is to [choose a serializer](./choose-a-serializer.md) to use in its place. Depending on your specific needs, the .NET team recommends migrations to four different serializers.

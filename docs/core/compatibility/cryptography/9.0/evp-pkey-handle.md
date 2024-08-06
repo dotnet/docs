@@ -34,7 +34,7 @@ Avoid modifications of `EVP_PKEY` passed in to .NET APIs. If you can't avoid mod
 ## Affected APIs
 
 - <xref:System.Security.Cryptography.SafeEvpPKeyHandle.DuplicateHandle?displayProperty=fullName>
-- <xref:System.Security.Cryptography.ECDsaOpenSsl%23ctor(System.Security.Cryptography.SafeEvpPKeyHandle)>
-- <xref:System.Security.Cryptography.RSAOpenSsl%23ctor(System.Security.Cryptography.SafeEvpPKeyHandle)>
+- <xref:System.Security.Cryptography.ECDsaOpenSsl.%23ctor(System.Security.Cryptography.SafeEvpPKeyHandle)>
+- <xref:System.Security.Cryptography.RSAOpenSsl.%23ctor(System.Security.Cryptography.SafeEvpPKeyHandle)>
 
 Every API that accepts an <Xref:System.Security.Cryptography.RSA> or <Xref:System.Security.Cryptography.ECDsa> instance that originates from <xref:System.Security.Cryptography.SafeEvpPKeyHandle> is also affected.

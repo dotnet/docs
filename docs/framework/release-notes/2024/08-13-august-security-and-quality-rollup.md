@@ -14,7 +14,7 @@ _Released August 13, 2024_
 
 ### Security improvements
 
-#### CVE-2024-29187 - Elevation of Privilege vulnerability
+#### CVE-2024-29187 - Elevation of privilege vulnerability
 
 This security update addresses an elevation of privilege vulnerability detailed in [CVE 2024-29187](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-29187).
 

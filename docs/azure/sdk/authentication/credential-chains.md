@@ -7,7 +7,7 @@ ms.date: 08/06/2024
 
 # Credential chains in the Azure Identity library for .NET
 
-The Azure Identity library provides *credentials*&mdash;public classes derived from the [TokenCredential](/dotnet/api/azure.core.tokencredential?view=azure-dotnet&preserve-view=true) class. A credential represents a distinct authentication flow for acquiring an access token from Microsoft Entra ID. These credentials can be chained together to form an ordered sequence of authentication mechanisms to be attempted.
+The Azure Identity library provides *credentials*&mdash;public classes derived from the Azure Core library's [TokenCredential](/dotnet/api/azure.core.tokencredential?view=azure-dotnet&preserve-view=true) class. A credential represents a distinct authentication flow for acquiring an access token from Microsoft Entra ID. These credentials can be chained together to form an ordered sequence of authentication mechanisms to be attempted.
 
 ## How a chained credential works
 
@@ -17,13 +17,14 @@ At runtime, a credential chain attempts to authenticate using the sequence's fir
 
 ## Why to use a chained credential
 
-With a chained credential, your app can:
+A chained credential can offer the following benefits:
 
-- Use different credentials in different environments without writing environment-specific code like this:
+- **Environment-aware**: It automatically selects the most appropriate credential based on the environment in which the app is running. Without it, you'd have write code like this:
 
     :::code language="csharp" source="../snippets/authentication/Program.cs" id="snippet_NoChain":::
 
-- Benefit from a more resilient authentication solution. When one credential fails, the next one in line is attempted. There's no need to write this retry logic yourself.
+- **Seamless transition**: Your app can move from local development to your staging or production environment without changing authentication code.
+- **Improved resiliency**: It includes a fallback mechanism that moves to the next credential when the prior fails to acquire an access token.
 
 ## How to choose a chained credential
 

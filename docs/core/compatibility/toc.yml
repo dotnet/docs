@@ -40,6 +40,10 @@ items:
         href: cryptography/9.0/evp-pkey-handle.md
       - name: Some X509Certificate2 and X509Certificate constructors are obsolete
         href: cryptography/9.0/x509-certificates.md
+    - name: Deployment
+      items:
+      - name: Deprecated desktop Windows/macOS/Linux MonoVM runtime packages
+        href: deployment/9.0/monovm-packages.md
     - name: Networking
       items:
       - name: HttpListenerRequest.UserAgent is nullable
@@ -1446,6 +1450,10 @@ items:
         href: cryptography.md
   - name: Deployment
     items:
+    - name: .NET 9
+      items:
+      - name: Deprecated desktop Windows/macOS/Linux MonoVM runtime packages
+        href: deployment/9.0/monovm-packages.md
     - name: .NET 8
       items:
       - name: Host determines RID-specific assets

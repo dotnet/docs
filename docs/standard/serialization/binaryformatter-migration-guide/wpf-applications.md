@@ -12,7 +12,7 @@ helpviewer_keywords:
 
 ## BinaryFormatter removal
 
-Starting with .NET 9, `BinaryFormatter` is no longer supported due to its known [security risks](../binaryformatter-security-guide.md) and its APIs always throw an exception for all project types, including WPF apps. For more information about the risks BinaryFormatter poses and the decision on its removal, see the [BinaryFormatter migration guide](index.md).
+Starting with .NET 9, `BinaryFormatter` is no longer supported due to its known [security risks](../binaryformatter-security-guide.md) and its APIs always throw an exception for all project types, including WPF apps. For more information about the risks BinaryFormatter poses and the reason for its removal, see the [BinaryFormatter migration guide](index.md).
 
 With BinaryFormatter’s removal, it's expected that many WPF applications will be impacted, and you'll need to take action to complete your migration to .NET 9 or a later version.
 

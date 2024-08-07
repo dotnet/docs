@@ -7,7 +7,7 @@ ms.date: 08/06/2024
 
 # Credential chains in the Azure Identity library for .NET
 
-The Azure Identity library provides *credentials*&mdash;public classes derived from the [TokenCredential](/dotnet/api/azure.core.tokencredential?view=azure-dotnet&preserve-view=true) class. A credential represents a distinct authentication flow for acquiring an access token from Microsoft Entra ID. These credentials can be chained together to form an ordered sequence of mechanisms for attempting to authenticate.
+The Azure Identity library provides *credentials*&mdash;public classes derived from the [TokenCredential](/dotnet/api/azure.core.tokencredential?view=azure-dotnet&preserve-view=true) class. A credential represents a distinct authentication flow for acquiring an access token from Microsoft Entra ID. These credentials can be chained together to form an ordered sequence of authentication mechanisms to be attempted.
 
 ## Why to use a chained credential
 
@@ -17,14 +17,14 @@ At runtime, the credential chain attempts to authenticate using the first creden
 
 ## How to choose a chained credential
 
-There are two different philosophies to credential chaining:
+There are two disparate philosophies to credential chaining:
 
 - **"Tear down" a chain** - Start with a preconfigured chain and exclude what you don't need. For this approach, see the [DefaultAzureCredential overview](#defaultazurecredential-overview) section.
 - **"Build up" a chain** - Start with an empty chain and include only what you need. For this approach, see the [ChainedTokenCredential overview](#chainedtokencredential-overview) section.
 
 ## DefaultAzureCredential overview
 
-[DefaultAzureCredential](/dotnet/api/azure.identity.defaultazurecredential?view=azure-dotnet&preserve-view=true) is an opinionated, preconfigured chain of credentials. It's designed to support all environments, along with the most common authentication flows and developer tools. In graphical form, it looks like this:
+[DefaultAzureCredential](/dotnet/api/azure.identity.defaultazurecredential?view=azure-dotnet&preserve-view=true) is an opinionated, preconfigured chain of credentials. It's designed to support all environments, along with the most common authentication flows and developer tools. In graphical form, the underlying chain looks like this:
 
 :::image type="content" source="../media/mermaidjs/DefaultAzureCredentialAuthFlow.svg" alt-text="DefaultAzureCredential" lightbox="../media/mermaidjs/DefaultAzureCredentialAuthFlow.svg":::
 
@@ -88,6 +88,6 @@ The preceding code sample creates a tailored credential chain comprised of two c
 
 Here's why:
 
-- **Debugging challenges** - When authentication fails, it can be challenging to debug and identify the offending credential. You need to [enable logging](../logging.md) to see the list of credentials attempted and the success/failure status of each.
+- **Debugging challenges** - When authentication fails, it can be challenging to debug and identify the offending credential. You must [enable logging](../logging.md) to see the progression from one credential to the next and the success/failure status of each.
 - **Performance overhead** - The process of sequentially trying multiple credentials can introduce performance overhead. For example, when running on a local development machine, Managed Identity is unavailable. Consequently, `ManagedIdentityCredential` always fails in the local development environment, unless explicitly disabled via its corresponding `Exclude`-prefixed property.
-- **Unpredictable behavior** - `DefaultAzureCredential` checks for the presence of certain environment variables. It's possible that someone could change these environment variables on the host machine and therefore alter the behavior of `DefaultAzureCredential` at runtime.
+- **Unpredictable behavior** - `DefaultAzureCredential` checks for the presence of certain environment variables. It's possible that someone could add or modify these environment variables at the system level on the host machine. Those changes apply globally and therefore alter the behavior of `DefaultAzureCredential` at runtime in any app running on that machine.

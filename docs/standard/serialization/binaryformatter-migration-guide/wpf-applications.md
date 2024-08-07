@@ -88,4 +88,5 @@ Ref: [DataStream.cs](https://github.com/dotnet/wpf/blob/4e977f5fe8c73094ee5826db
 > BinaryFormatter is dangerous and not recommended as it puts consuming apps at risk for attacks such as denial of service (DoS), information disclosure, or remote code execution. For more information about the risks `BinaryFormatter` poses, see [Deserialization risks in use of BinaryFormatter and related types](../binaryFormatter-security-guide.md).
 
 ### Issues
+
 If you experience unexpected behavior with your WPF application regarding `BinaryFormatter`, please file an issue at [dotnet/wpf/issues](https://github.com/dotnet/wpf/issues).

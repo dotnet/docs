@@ -28,6 +28,9 @@ The following options control how the compiler reports errors and warnings. The 
 - **ErrorLog** / `-errorlog`: Specify a file to log all compiler and analyzer diagnostics.
 - **ReportAnalyzer** / `-reportanalyzer`:  Report additional analyzer information, such as execution time.
 
+> [!NOTE]
+> Refer to [Compiler options](index.md#how-to-set-options) for more information on configuring these options for your project.
+
 ## WarningLevel
 
 The **WarningLevel** option specifies the warning level for the compiler to display.

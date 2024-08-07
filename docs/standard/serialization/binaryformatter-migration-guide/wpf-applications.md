@@ -64,9 +64,9 @@ Additionally, if you encounter an exception that states "Data stored in clipboar
 
 Ref: [DataObject.cs](https://github.com/dotnet/wpf/blob/4e977f5fe8c73094ee5826dbfa7a0f37c3bf0e33/src/Microsoft.DotNet.Wpf/src/PresentationCore/System/Windows/dataobject.cs)
 
-### Drag/Drop
+### Drag-and-drop feature
 
-In drag/drop any UI element or Content element can participate, for an event is raised which is defined in [DragDrop.cs](https://github.com/dotnet/wpf/blob/0354a597996adae43b12efc72bd705f76d4ba497/src/Microsoft.DotNet.Wpf/src/PresentationCore/System/Windows/DragDrop.cs). In the Drag/Drop operation a `DataObject` is used to store the data and to Get/Set data we call `GetData()`/`SetData()`. In this scenario if the type involved is not intrinsically handled during serialization/deserialization, `BinaryFormatter` is used.
+Any UI element or content can participate in drag-and-drop, and an event is raised as defined in [DragDrop.cs](https://github.com/dotnet/wpf/blob/0354a597996adae43b12efc72bd705f76d4ba497/src/Microsoft.DotNet.Wpf/src/PresentationCore/System/Windows/DragDrop.cs). In the drag-and-drop operation a `DataObject` is used to store the data and to Get/Set data we call `GetData()`/`SetData()`. In this scenario if the type involved is not intrinsically handled during serialization/deserialization, `BinaryFormatter` is used.
 
 With `BinaryFormatter` removed, developers will now encounter an exception indicating that `BinaryFormatter` has been removed.
 

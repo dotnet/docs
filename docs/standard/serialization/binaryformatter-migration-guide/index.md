@@ -15,7 +15,7 @@ helpviewer_keywords:
 > [!CAUTION]
 > We strongly recommend against using BinaryFormatter due to the [associated security risks](#whats-the-risk-in-using-binaryformatter). Existing users [should migrate away from BinaryFormatter](#migration-topics).
 
-Starting with .NET 9, we no longer ship a supported implementation of BinaryFormatter. The APIs are still present, but their implementation always throws an exception, regardless of project type. Hence, setting the existing backwards compatibility flag is no longer sufficient to use BinaryFormatter.
+Starting with .NET 9, we no longer include an implementation of BinaryFormatter in the runtime. The APIs are still present, but their implementation always throws an exception, regardless of project type. Hence, setting the existing backwards compatibility flag is no longer sufficient to use BinaryFormatter.
 
 You have two options to address that:
 

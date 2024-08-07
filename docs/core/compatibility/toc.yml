@@ -56,7 +56,7 @@ items:
         href: sdk/9.0/netstandard-warning.md
     - name: Serialization
       items:
-      - name: BinaryFormatter is unusable
+      - name: BinaryFormatter always throws
         href: serialization/9.0/binaryformatter-removal.md
     - name: Windows Forms
       items:
@@ -1792,7 +1792,7 @@ items:
     items:
     - name: .NET 9
       items:
-      - name: BinaryFormatter is unusable
+      - name: BinaryFormatter always throws
         href: serialization/9.0/binaryformatter-removal.md
     - name: .NET 8
       items:

@@ -1,9 +1,9 @@
 ---
-title: "Breaking change: In-box BinaryFormatter is unusable"
-description: Learn about the .NET 9 breaking change in serialization where the in-box BinaryFormatter implementation throws exceptions and can't be used successfully.
+title: "Breaking change: In-box BinaryFormatter implementation removed and always throws"
+description: Learn about the .NET 9 breaking change in serialization where the in-box BinaryFormatter implementation was removed and always throws exceptions.
 ms.date: 08/06/2024
 ---
-# In-box BinaryFormatter is unusable
+# In-box BinaryFormatter implementation removed and always throws
 
 The "in box" <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> implementation now throws exceptions at run time in all cases. This is the final stage of the [BinaryFormatter obsoletion plan](https://github.com/dotnet/designs/blob/main/accepted/2020/better-obsoletion/binaryformatter-obsoletion.md).
 

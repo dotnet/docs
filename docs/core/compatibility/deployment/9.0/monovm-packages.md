@@ -45,7 +45,7 @@ There is no official .NET scenario that aligns with these desktop MonoVM runtime
 
 ## Recommended action
 
-If your application publish relies on these packages, we recommend staying on .NET 8 LTS while  you migrate the application to the default desktop runtime NuGet packages. Each of these platforms has a corresponding runtime NuGet package.
+If your application publish relies on these packages, we recommend staying on .NET 8 LTS while you migrate the application to the default desktop runtime NuGet packages. Each of these platforms has a corresponding runtime NuGet package.
 
 ## Affected APIs
 

@@ -39,7 +39,7 @@ The order in which `DefaultAzureCredential` attempts credentials follows.
 | 5     | [Azure CLI][az-cred]           |If the developer authenticated to Azure using Azure CLI's `az login` command, authenticate the app to Azure using that same account.             | Yes                 |
 | 6     | [Azure PowerShell][pwsh-cred]    |If the developer authenticated to Azure using Azure PowerShell's `Connect-AzAccount` cmdlet, authenticate the app to Azure using that same account.             | Yes                 |
 | 7     | [Azure Developer CLI][azd-cred] |If the developer authenticated to Azure using Azure Developer CLI's `azd auth login` command, authenticate with that account.             | Yes                 |
-| 8     | [Interactive][int-cred]         |If enabled, interactively authenticate the developer via the current system's default browser. By default, this credential is disabled.             | No                  |
+| 8     | [Interactive browser][int-cred]         |If enabled, interactively authenticate the developer via the current system's default browser. By default, this credential is disabled.             | No                  |
 
 [env-cred]: /dotnet/api/azure.identity.environmentcredential?view=azure-dotnet&preserve-view=true
 [wi-cred]: /dotnet/api/azure.identity.workloadidentitycredential?view=azure-dotnet&preserve-view=true

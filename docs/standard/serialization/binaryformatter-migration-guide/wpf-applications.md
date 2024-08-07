@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "WPF"
 ---
 
-# WPF migration guide for BinaryFormatter
+# Windows Presentation Foundation(WPF) migration guide for BinaryFormatter
 
 ## BinaryFormatter removal
 
@@ -18,7 +18,7 @@ With BinaryFormatter’s removal, it's expected that many WPF applications will 
 
 ## How BinaryFormatter affects WPF
 
-Prior to .NET 9, Windows Presentation Foundation (WPF) used `BinaryFormatter` to serialize and deserialize data for scenarios such clipboard, drag-and-drop, and to store data for Avalon Binding in Journal. Starting with .NET 9, WPF and Windows Forms use a subset of the `BinaryFormatter` implementation internally for these scenarios. While BinaryFormatter's risks cannot be addressed in general-purpose serialization/deserialization, measures have been taken to mitigate the risks in these very specific use cases with a known set of types. A fall-back to `BinaryFormatter` is still in place for unknown or unsupported types, which will throw exceptions unless migration steps are taken in the application.
+Prior to .NET 9, Windows Presentation Foundation (WPF) used `BinaryFormatter` to serialize and deserialize data for scenarios such clipboard, drag-and-drop, and load/store state in Journal. Starting with .NET 9, WPF and Windows Forms use a subset of the `BinaryFormatter` implementation internally for these scenarios. While BinaryFormatter's risks cannot be addressed in general-purpose serialization/deserialization, measures have been taken to mitigate the risks in these very specific use cases with a known set of types. A fall-back to `BinaryFormatter` is still in place for unknown or unsupported types, which will throw exceptions unless migration steps are taken in the application.
 
 WPF and WinForms apps both handle the following types, along with arrays and lists of these types. Clipboard, drag-and-drop, and Avalon Binding in Journal will continue to work with these types without any migration steps needed.
 
@@ -43,32 +43,11 @@ WPF and WinForms apps both handle the following types, along with arrays and lis
 - `PointF`
 - `RectangleF`
 
-### Clipboard
+### OLE Scenarios
+For information about the effects BinaryFormatter removal has on OLE scenarios such as clipboard and drag-and-drop as well as migration guidance see [Windows Forms and Windows Presentation Foundation BinaryFormatter OLE guidance](./winforms-wpf-ole-guidance.md).
 
-`BinaryFormatter` is used in WPF apps if you're using a clipboard to copy or paste the data into the application, or to set or get data from a `DataObject` or using drag-and-drop.
+You can refer to the function where we have used `BinaryFormatter` as fallback to read/save object to handle: [SaveObjectToHandle](https://github.com/dotnet/wpf/blob/0354a597996adae43b12efc72bd705f76d4ba497/src/Microsoft.DotNet.Wpf/src/PresentationCore/System/Windows/dataobject.cs#L1677) and [ReadObjectFromHandle](https://github.com/dotnet/wpf/blob/0354a597996adae43b12efc72bd705f76d4ba497/src/Microsoft.DotNet.Wpf/src/PresentationCore/System/Windows/dataobject.cs#L3051) for OLE scenarios
 
-If the [data format](/dotnet/api/system.windows.dataformats) is included in the following list, it doesn't require using `BinaryFormatter` to handle:
-
-- `Stream`
-- `Text`, `Rtf`, `OemText`, `CommaSeparatedValue`
-- `UnicodeText`
-- `FileDrop`
-- `FileName`
-- `BitmapSource`
-
-However, if the type is serializable and not included in the previous list of types that are handled by the new implementation, `BinaryFormatter` is used. In scenarios where `BinaryFormatter` is used, its removal will result in a run-time exception that indicates that `BinaryFormatter` has been removed.
-
-You can refer to the function where we have used `BinaryFormatter` as fallback to read/save object to handle: [SaveObjectToHandle](https://github.com/dotnet/wpf/blob/0354a597996adae43b12efc72bd705f76d4ba497/src/Microsoft.DotNet.Wpf/src/PresentationCore/System/Windows/dataobject.cs#L1677) and [ReadObjectFromHandle](https://github.com/dotnet/wpf/blob/0354a597996adae43b12efc72bd705f76d4ba497/src/Microsoft.DotNet.Wpf/src/PresentationCore/System/Windows/dataobject.cs#L3051)
-
-Additionally, if you encounter an exception that states "Data stored in clipboard is invalid," it might be because `BinaryFormatter` was used to save the data.
-
-Ref: [DataObject.cs](https://github.com/dotnet/wpf/blob/4e977f5fe8c73094ee5826dbfa7a0f37c3bf0e33/src/Microsoft.DotNet.Wpf/src/PresentationCore/System/Windows/dataobject.cs)
-
-### Drag-and-drop feature
-
-Any UI element or content can participate in drag-and-drop, and an event is raised as defined in [DragDrop.cs](https://github.com/dotnet/wpf/blob/0354a597996adae43b12efc72bd705f76d4ba497/src/Microsoft.DotNet.Wpf/src/PresentationCore/System/Windows/DragDrop.cs). In the drag-and-drop operation a `DataObject` is used to store the data and to Get/Set data we call `GetData()`/`SetData()`. In this scenario if the type involved is not intrinsically handled during serialization/deserialization, `BinaryFormatter` is used.
-
-With `BinaryFormatter` removed, developers will now encounter an exception indicating that `BinaryFormatter` has been removed.
 
 ### Journaling
 
@@ -76,7 +55,7 @@ In the case when we need to store or load a state while managing the navigation 
 
 To load/save we call [LoadSubStreams](https://github.com/dotnet/wpf/blob/0354a597996adae43b12efc72bd705f76d4ba497/src/Microsoft.DotNet.Wpf/src/PresentationFramework/MS/Internal/DataStreams.cs#L244)/ [SaveSubStreams](https://github.com/dotnet/wpf/blob/0354a597996adae43b12efc72bd705f76d4ba497/src/Microsoft.DotNet.Wpf/src/PresentationFramework/MS/Internal/DataStreams.cs#L86) of `DataStream` class. If the element used in not part of know type handled by the new implementation, it will use `BinaryFormatter`.
 
-When a developer navigates through JournalEntry using `Navigate`,`GoForward`,or `GoBack`, the node's data is loaded or saved to a stream. If the type involved is not intrinsically handled during serialization/deserialization, `BinaryFormatter` is used.
+When a developer navigates through JournalEntry using `Navigate`,`GoForward`,or `GoBack`, the node's data is loaded or saved to a stream to save the state. If the type involved is not intrinsically handled during serialization/deserialization, `BinaryFormatter` is used.
 
 Ref: [DataStream.cs](https://github.com/dotnet/wpf/blob/4e977f5fe8c73094ee5826dbfa7a0f37c3bf0e33/src/Microsoft.DotNet.Wpf/src/PresentationFramework/MS/Internal/DataStreams.cs)
 

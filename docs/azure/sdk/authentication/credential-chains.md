@@ -29,7 +29,7 @@ There are two different philosophies to credential chaining:
 :::image type="content" source="../media/mermaidjs/DefaultAzureCredentialAuthFlow.svg" alt-text="DefaultAzureCredential" lightbox="../media/mermaidjs/DefaultAzureCredentialAuthFlow.svg":::
 
 The order in which `DefaultAzureCredential` attempts credentials follows.
-    
+
 | Order | Credential          | Description | Enabled by default? |
 |-------|---------------------|-------------|---------------------|
 | 1     | [Environment][env-cred]         |Reads a collection of environment variables to determine if an application service principal (application user) is configured for the app. If so, `DefaultAzureCredential` uses these values to authenticate the app to Azure. This method is most often used in server environments but can also be used when developing locally.             | Yes                 |
@@ -39,7 +39,7 @@ The order in which `DefaultAzureCredential` attempts credentials follows.
 | 5     | [Azure CLI][az-cred]           |If the developer authenticated to Azure using Azure CLI's `az login` command, authenticate the app to Azure using that same account.             | Yes                 |
 | 6     | [Azure PowerShell][pwsh-cred]    |If the developer authenticated to Azure using Azure PowerShell's `Connect-AzAccount` cmdlet, authenticate the app to Azure using that same account.             | Yes                 |
 | 7     | [Azure Developer CLI][azd-cred] |If the developer authenticated to Azure using Azure Developer CLI's `azd auth login` command, authenticate with that account.             | Yes                 |
-| 8     | [Interactive browser][int-cred]         |If enabled, interactively authenticate the developer via the current system's default browser. By default, this credential is disabled.             | No                  |
+| 8     | [Interactive browser][int-cred]         |If enabled, interactively authenticate the developer via the current system's default browser.             | No                  |
 
 [env-cred]: /dotnet/api/azure.identity.environmentcredential?view=azure-dotnet&preserve-view=true
 [wi-cred]: /dotnet/api/azure.identity.workloadidentitycredential?view=azure-dotnet&preserve-view=true

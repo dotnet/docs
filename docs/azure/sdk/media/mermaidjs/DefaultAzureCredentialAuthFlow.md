@@ -21,7 +21,7 @@ flowchart LR;
 
     subgraph CREDENTIAL TYPES;
         direction LR;
-        Deployed(Deployed service):::deployed ~~~ Developer(Developer):::developer ~~~ Interactive(Interactive):::interactive;
+        Deployed(Deployed service):::deployed ~~~ Developer(Developer tool):::developer ~~~ Interactive(Interactive):::interactive;
     end;
 
     subgraph CREDENTIALS;

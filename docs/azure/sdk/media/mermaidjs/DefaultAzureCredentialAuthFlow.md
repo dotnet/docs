@@ -16,8 +16,8 @@
 }%%
 
 flowchart LR;
-    accTitle: DefaultAzureCredential authentication flow
-    accDescr: Flowchart showing the credential chain implemented by DefaultAzureCredential
+    accTitle: DefaultAzureCredential authentication flow;
+    accDescr: Flowchart showing the credential chain implemented by DefaultAzureCredential;
 
     subgraph CREDENTIAL TYPES;
         direction LR;

@@ -9,11 +9,21 @@ ms.date: 08/06/2024
 
 The Azure Identity library provides *credentials*&mdash;public classes derived from the [TokenCredential](/dotnet/api/azure.core.tokencredential?view=azure-dotnet&preserve-view=true) class. A credential represents a distinct authentication flow for acquiring an access token from Microsoft Entra ID. These credentials can be chained together to form an ordered sequence of authentication mechanisms to be attempted.
 
+## How a chained credential works
+
+At runtime, a credential chain attempts to authenticate using the sequence's first credential. If that credential fails to acquire an access token, the next credential in the sequence is attempted, and so on, until an access token is successfully obtained. The following sequence diagram illustrates this behavior:
+
+:::image type="content" source="../media/mermaidjs/ChainSequence.svg" alt-text="Credential chain sequence diagram" lightbox="../media/mermaidjs/ChainSequence.svg":::
+
 ## Why to use a chained credential
 
-At runtime, the credential chain attempts to authenticate using the first credential. If that credential fails to acquire an access token, the next credential in the sequence is attempted, and so on, until an access token is successfully obtained. In this way, your app can use different credentials in different environments without writing environment-specific code like this:
+With a chained credential, your app can:
 
-:::code language="csharp" source="../snippets/authentication/Program.cs" id="snippet_NoChain":::
+- Use different credentials in different environments without writing environment-specific code like this:
+
+    :::code language="csharp" source="../snippets/authentication/Program.cs" id="snippet_NoChain":::
+
+- Benefit from a more resilient authentication solution. When one credential fails, the next one in line is attempted. There's no need to write this retry logic yourself.
 
 ## How to choose a chained credential
 

@@ -86,4 +86,4 @@ It's recommended to use [SerializationBinder](/dotnet/api/system.runtime.seriali
 
 Using this type requires inheriting from it and overriding the [Type BindToType(string assemblyName, string typeName)](/dotnet/api/system.runtime.serialization.serializationbinder.bindtotype#system-runtime-serialization-serializationbinder-bindtotype(system-string-system-string)) method.
 
-If your code uses a custom type that derives from `SerializationBinder`, it's likely that the list of serializable types is a **closed set**. If not, finding the list of all types that can get serialized and deserialized requires studying all the usages of `BinaryFormatter` in source code. **Knowing that list is crucial to determining how to move forward with the migration.**
+Ideally the list of serializable types is closed set because it means you know which types can be instantiated which will help reduce security vulnerabilities. 

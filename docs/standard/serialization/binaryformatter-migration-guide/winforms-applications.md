@@ -59,14 +59,14 @@ For information about the effects BinaryFormatter removal has on OLE scenarios s
 
 The Windows Forms Out-Of-Process Designer also uses `BinaryFormatter` internally for ResX serialization and deserialization.
 
-Types and properties might participate in serialization without you realizing due to the standard behavior of the Windows Forms Designer. One way that BinaryFormatter is used that you might not be aware of is when a `public` property on a <xref:System.ComponentModel.IComponent> is introduced and that component is populated or that property is edited at design time. It's likely that that data gets serialized into resource files. Consider the following conditions:
+Types and properties might participate in serialization without you realizing due to the standard behavior of the Windows Forms Designer. One way that BinaryFormatter is used that you might not be aware of is when a `public` property on a <xref:System.ComponentModel.IComponent> is introduced and that property is populated or edited at design time. That property is serialized into resource files under the following conditions:
 
 - A public property contains data at the time when a `Form` in the Designer is saved.
 - That property is not read-only.
 - That property is not attributed with `DesignerSerializationVisibility(false)`.
 - That property does not have a DefaultValueAttribute.
 - That property does not have a respective `bool ShouldSerialize[PropertyName]` method that returns `false` at the time of the CodeDOM serialization process. (Note: the method can have `private` scope.)
-- That property does not have a [`DesignerSerializer`](/dotnet/api/microsoft.visualstudio.modeling.dsldefinition.designerserializer)
+- That property is a type that does not have a [`DesignerSerializer`](/dotnet/api/microsoft.visualstudio.modeling.dsldefinition.designerserializer)
 
 If these statements are true, the Designer determines if that property's type has a type converter. If it does, the Designer uses the type converter to serialize the property content. Otherwise, it uses BinaryFormatter to serialize the content into the resource file. Windows Forms has added analyzers along with code fixes to help bring awareness to this type of behavior where BinaryFormatter serialization might be occurring without the developer's knowledge.
 

@@ -1,5 +1,5 @@
 ---
-title: Credential chains in the Azure Identity library
+title: Credential chains in the Azure Identity library for .NET
 description: 'This article describes the Azure Identity library's DefaultAzureCredential and ChainedTokenCredential classes.'
 ms.topic: conceptual
 ms.date: 08/06/2024

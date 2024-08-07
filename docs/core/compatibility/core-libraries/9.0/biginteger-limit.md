@@ -9,7 +9,10 @@ ms.date: 08/06/2024
 
 ## Previous behavior
 
-Previously, you could assign a value with any length to a <xref:System.Numerics.BigInteger> variable.
+Previously, you could assign a value with a length up to `Array.MaxLength * 32` bits to a <xref:System.Numerics.BigInteger> variable.
+
+> [!NOTE]
+> Typical machines would hit an <xref:System.OutOfMemoryException> far before this limit could ever be reached.
 
 ## New behavior
 

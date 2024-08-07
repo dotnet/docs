@@ -161,7 +161,7 @@ Sample output = new()
         Text = rootRecord
             .GetClassRecord(nameof(Sample.ClassInstance))!
             .GetString(nameof(Sample.Text))
-    }  
+    }
 };
 ```
 

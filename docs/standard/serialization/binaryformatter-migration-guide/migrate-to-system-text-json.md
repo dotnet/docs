@@ -19,7 +19,7 @@ The [`System.Text.Json`](../system-text-json/overview.md) library defaults to em
 
 When migrating from BinaryFormatter to `System.Text.Json`, it's crucial to note the following behaviors and options:
 
-- By default, **fields are not serialized or deserialized** by `System.Text.Json`, but they can be [annotated for serialization](../system-text-json/fields.md). Alternatively, `JsonSerializerOptions.IncludeFields` can be cautiously set to `true` to include all fields for the types being serialized.
+- By default, **fields are not serialized or deserialized** by `System.Text.Json`, but they can be [annotated for serialization](../system-text-json/fields.md). Alternatively, `JsonSerializerOptions.IncludeFields` can be cautiously set to `true` to include all public fields for the types being serialized.
 
   ```csharp
   JsonSerializerOptions options = new()

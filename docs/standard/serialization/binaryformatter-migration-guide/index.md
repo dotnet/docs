@@ -56,6 +56,10 @@ In these scenarios and others, it becomes necessary to retain support for readin
 
 Windows Forms and WPF applications might require additional changes. See [Windows Forms applications](./winforms-applications.md), [WPF applications](./wpf-applications.md), and [WinForms/WPF clipboard and drag/drop guidance](./winforms-wpf-ole-guidance.md) for further migration guidance.
 
+### Migrate managed resources (ResX)
+
+The most common resource types (such as strings and icons) will work without BinaryFormatter. For custom types, you need to bring in BinaryFormatter and enable a compatibility switch, see [Loading resource during runtime](./winforms-applications.md#loading-resource-during-runtime).
+
 ### Use the compatibility package
 
 For scenarios where a migration away from BinaryFormatter cannot be accomplished at the time of upgrading to .NET 9, an unsupported compatibility package is available. The [System.Runtime.Serialization.Formatters](https://www.nuget.org/packages/System.Runtime.Serialization.Formatters) NuGet package contains the functioning implementation of BinaryFormatter, including its vulnerabilities and risks.

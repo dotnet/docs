@@ -52,7 +52,7 @@ Serialization excludes non-public and readonly members unless specifically handl
 
 ## XML using DataContractSerializer
 
-[`System.Runtime.Serialization.DataContractSerializer`](/dotnet/api/system.runtime.serialization.datacontractserializer) was introduced in .NET Framework 3.0 and is used to serialize and deserialize data sent in Windows Communication Foundation (WCF) messages. `DataContractSerializer` is an XML serializer that **fully supports the serialization programming model that was used by the `BinaryFormatter`**. It requires the known types to be specified up-front (but most .NET collections and primitive types are on a default allow-list and don't need to be specified). It's the serializer that requires the least amount of effort to migrate to.
+[`System.Runtime.Serialization.DataContractSerializer`](/dotnet/api/system.runtime.serialization.datacontractserializer) was introduced in .NET Framework 3.0 and is used to serialize and deserialize data sent in Windows Communication Foundation (WCF) messages. `DataContractSerializer` is an XML serializer that **fully supports the serialization programming model that was used by the `BinaryFormatter`**, which means it honors the `[Serializable]` attribute and implementation of `ISerializable`. Hence, it's the serializer that requires the least amount of effort to migrate to. It does, however, require the known types to be specified up-front (but most .NET collections and primitive types are on a default allow-list and don't need to be specified).
 
 While `DataContractSerializer` carries those functional benefits when migrating from BinaryFormatter, it is not as modern or performant as the other choices.
 

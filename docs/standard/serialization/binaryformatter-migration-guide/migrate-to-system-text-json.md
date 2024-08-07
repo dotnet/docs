@@ -17,7 +17,7 @@ helpviewer_keywords:
 
 [System.Text.Json](../system-text-json/overview.md) defaults to emphasizing literal, deterministic behavior and avoids any guessing or interpretation on the caller's behalf. The library is intentionally designed this way for security and performance. From the migration perspective, it's crucial to know the following facts:
 
-- By default, **fields are not serialized or deserialized**, but they can be [annotated for serialization](../system-text-json/fields.md), or `JsonSerializerOptions.IncludeFields` can be cautiously set to `true` to include all fields.
+- By default, **fields are not serialized or deserialized**, but they can be [annotated for serialization](../system-text-json/fields.md), or `JsonSerializerOptions.IncludeFields` can be cautiously set to `true` to include all public fields.
 
   ```csharp
   JsonSerializerOptions options = new()
@@ -30,11 +30,10 @@ helpviewer_keywords:
 
 - System.Text.Json **[cannot deserialize read-only fields](/dotnet/api/system.text.json.jsonserializeroptions.ignorereadonlyfields?view#remarks)** or properties, but the `[JsonConstructor]` attribute can be used to indicate that the specified constructor should be used to create instances of the type on deserialization. The constructor can set the read-only fields and properties.
 
-- It [supports serialization and deserialization of most built-in collections](../system-text-json/supported-collection-types.md). The exceptions:
+- It [supports serialization and deserialization of most built-in collections](../system-text-json/supported-collection-types.md), with a few notable exceptions:
   - multi-dimensional arrays,
   - `BitArray`,
   - `LinkedList<T>`,
-  - `Dictionary<TKey, TValue>`, where `TKey` is not a primitive type,
   - `BlockingCollection<T>` and `ConcurrentBag<T>`,
   - most of the collections from [System.Collections.Specialized](../system-text-json/supported-collection-types.md#systemcollectionsspecialized-namespace) and [System.Collections.ObjectModel](../system-text-json/supported-collection-types.md#systemcollectionsobjectmodel-namespace) namespaces.
 

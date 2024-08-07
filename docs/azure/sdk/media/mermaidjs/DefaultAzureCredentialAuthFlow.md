@@ -16,14 +16,17 @@
 }%%
 
 flowchart LR;
+    accTitle: DefaultAzureCredential authentication flow
+    accDescr: Flowchart showing the credential chain implemented by DefaultAzureCredential
+
     subgraph CREDENTIAL TYPES;
         direction LR;
-        Deployed(Deployed service fa:fa-cloud):::deployed ~~~ Developer(Developer fa:fa-toolbox):::developer ~~~ Interactive(Interactive fa:fa-arrow-pointer):::interactive;
+        Deployed(Deployed service):::deployed ~~~ Developer(Developer):::developer ~~~ Interactive(Interactive):::interactive;
     end;
 
     subgraph CREDENTIALS;
         direction LR;
-        A(Environment fa:fa-cloud):::deployed --> B(Workload Identity fa:fa-cloud):::deployed --> C(Managed Identity fa:fa-cloud):::deployed --> D(Visual Studio fa:fa-toolbox):::developer --> E(Azure CLI fa:fa-toolbox):::developer --> F(Azure PowerShell fa:fa-toolbox):::developer --> G(Azure Developer CLI fa:fa-toolbox):::developer --> H(Interactive browser fa:fa-arrow-pointer):::interactive;
+        A(Environment):::deployed --> B(Workload Identity):::deployed --> C(Managed Identity):::deployed --> D(Visual Studio):::developer --> E(Azure CLI):::developer --> F(Azure PowerShell):::developer --> G(Azure Developer CLI):::developer --> H(Interactive browser):::interactive;
     end;
 
     %% Define styles for credential type boxes

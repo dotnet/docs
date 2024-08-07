@@ -9,7 +9,7 @@ ms.date: 08/06/2024
 
 The Azure Identity library provides *credentials*&mdash;public classes derived from the [TokenCredential](/dotnet/api/azure.core.tokencredential?view=azure-dotnet&preserve-view=true) class. A credential represents a distinct authentication flow for acquiring an access token from Microsoft Entra ID. These credentials can be chained together to form an ordered sequence of mechanisms for attempting to authenticate.
 
-# Why to use a chained credential
+## Why to use a chained credential
 
 At runtime, the credential chain attempts to authenticate using the first credential. If that credential fails to acquire an access token, the next credential in the sequence is attempted, and so on, until an access token is successfully obtained. In this way, your app can use different credentials in different environments without writing environment-specific code like this:
 
@@ -28,8 +28,7 @@ There are two different philosophies to credential chaining:
 
 :::image type="content" source="../media/mermaidjs/DefaultAzureCredentialAuthFlow.svg" alt-text="DefaultAzureCredential" lightbox="../media/mermaidjs/DefaultAzureCredentialAuthFlow.svg":::
 
-The order in which `DefaultAzureCredential` attempts credentials follows:
-
+The order in which `DefaultAzureCredential` attempts credentials follows.
 
 | Order | Credential          | Description | Enabled by default? |
 |-------|---------------------|-------------|---------------------|
@@ -54,7 +53,7 @@ To remove a credential from `DefaultAzureCredential`, use the corresponding `Exc
 
 In the preceding code sample, `EnvironmentCredential` and `WorkloadIdentityCredential` are removed from the credential chain. As a result, the first credential to be attempted is `ManagedIdentityCredential`. The modified chain looks like this:
 
-:::image type="content" source="../media/mermaidjs/DefaultAzureCredentialExcludes.svg" alt-text="DefaultAzureCredential using Excludes properties" lightbox="../media/mermaidjs/DefaultAzureCredentialExcludes.svg":::
+:::image type="content" source="../media/mermaidjs/DefaultAzureCredentialExcludes.svg" alt-text="DefaultAzureCredential using Excludes properties":::
 
 ## ChainedTokenCredential overview
 

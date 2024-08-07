@@ -44,10 +44,10 @@ WPF and WinForms apps both handle the following types, along with arrays and lis
 - `RectangleF`
 
 ### OLE Scenarios
+
 For information about the effects BinaryFormatter removal has on OLE scenarios such as clipboard and drag-and-drop as well as migration guidance see [Windows Forms and Windows Presentation Foundation BinaryFormatter OLE guidance](./winforms-wpf-ole-guidance.md).
 
 You can refer to the function where we have used `BinaryFormatter` as fallback to read/save object to handle: [SaveObjectToHandle](https://github.com/dotnet/wpf/blob/0354a597996adae43b12efc72bd705f76d4ba497/src/Microsoft.DotNet.Wpf/src/PresentationCore/System/Windows/dataobject.cs#L1677) and [ReadObjectFromHandle](https://github.com/dotnet/wpf/blob/0354a597996adae43b12efc72bd705f76d4ba497/src/Microsoft.DotNet.Wpf/src/PresentationCore/System/Windows/dataobject.cs#L3051) for OLE scenarios
-
 
 ### Journaling
 
@@ -68,4 +68,4 @@ Ref: [DataStream.cs](https://github.com/dotnet/wpf/blob/4e977f5fe8c73094ee5826db
 
 ### Issues
 
-If you experience unexpected behavior with your WPF application regarding `BinaryFormatter`, please file an issue at [dotnet/wpf/issues](https://github.com/dotnet/wpf/issues).
+If you experience unexpected behavior with your WPF application regarding `BinaryFormatter`, please file an issue at [dotnet/wpf/issues](https://github.com/dotnet/wpf/issues) and indicate that the issue is related to the removal of BinaryFormatter.

@@ -95,4 +95,4 @@ For types that aren't intrinsically handled during serialization into resources,
 
 ## Issues
 
-If you experience unexpected behavior with your Windows Forms app regarding BinaryFormatter serialization or deserializing, please file an issue at [github.com/dotnet/winforms](https://github.com/dotnet/winforms/issues).
+If you experience unexpected behavior with your Windows Forms app regarding BinaryFormatter serialization or deserializing, please file an issue at [github.com/dotnet/winforms](https://github.com/dotnet/winforms/issues) and indicate that the issue is related to the removal of BinaryFormatter.

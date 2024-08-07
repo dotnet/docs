@@ -29,7 +29,9 @@ Any deserializer, binary or text, that allows its input to carry information abo
 
 Due to the known risks of using BinaryFormatter, the functionality was excluded from .NET Core 1.0. But without a clear migration path to using something safer, customer demand led to BinaryFormatter being included in .NET Core 1.1. Since then, the .NET team has been on the path to removing BinaryFormatter, slowly turning it off by default in multiple project types but letting consumers opt-in via flags if still needed for backward compatibility.
 
-For more details about the decision, see the [BinaryFormatter is being removed in .NET 9](https://github.com/dotnet/announcements/issues/293) announcement. If you want to share feedback, leave a comment in [the discussion issue](https://github.com/dotnet/runtime/issues/98245).
+For more details about the decision, see the [BinaryFormatter is being removed in .NET 9](https://github.com/dotnet/announcements/issues/293) announcement.
+
+If you experience issues related to BinaryFormatter's removal not addressed in this migration guide, please file an issue at [github.com/dotnet/runtime](https://github.com/dotnet/runtime/issues) and indicate that the issue is related to the removal of BinaryFormatter.
 
 ## Migration topics
 

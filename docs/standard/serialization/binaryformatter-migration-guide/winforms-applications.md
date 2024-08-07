@@ -13,11 +13,15 @@ helpviewer_keywords:
 
 ## BinaryFormatter removal
 
-Starting in .NET 9, `BinaryFormatter` has moved to a separate, unsupported NuGet package due to its known [security risks](../binaryformatter-security-guide.md). For more information about the risks `BinaryFormatter` poses and the reason for its removal, see [BinaryFormatter migration guide](index.md). With BinaryFormatter’s removal, it's expected that many Windows Forms applications will be impacted, and you'll need to take action to complete your migration to .NET 9 or a later version.
+Starting with .NET 9, `BinaryFormatter` is no longer supported due to its known [security risks](../binaryformatter-security-guide.md) and its APIs always throw an exception for all project types, including Windows Forms apps. For more information about the risks BinaryFormatter poses and the decision on its removal, see the [BinaryFormatter migration guide](index.md).
+
+With BinaryFormatter's removal, it's expected that many Windows Forms applications will be impacted, and you'll need to take action to complete your migration to .NET 9 or a later version.
 
 ## How BinaryFormatter affects Windows Forms
 
-Windows Forms itself has and still contains `BinaryFormatter` code internally for scenarios such as clipboard, drag-and-drop, and storing or loading resources at design time. However, measures have been taken to mitigate the usage of BinaryFormatter behind the scenes for common types, including common collections. Usage of these types in clipboard and drag-and-drop scenarios will continue to work without using BinaryFormatter and without any gesture from the developer. Common types include the following:
+Prior to .NET 9, Windows Forms used `BinaryFormatter` to serialize and deserialize data for scenarios such clipboard, drag-and-drop, and storing or loading resources at design time. Starting with .NET 9, Windows Forms and WPF use a subset of the `BinaryFormatter` implementation internally for these scenarios. While BinaryFormatter's risks cannot be addressed in general-purpose serialization/deserialization, measures have been taken to mitigate the risks in these very specific use cases with a known set of types. A fall-back to `BinaryFormatter` is still in place for unknown or unsupported types, which will throw exceptions unless migration steps are taken in the application.
+
+Windows Forms and WPF apps both handle the following types, along with arrays and lists of these types. Clipboard, drag-and-drop, and design-time resources will continue to work with these types without any migration steps needed.
 
 - `bool`
 - `byte`
@@ -37,11 +41,11 @@ Windows Forms itself has and still contains `BinaryFormatter` code internally fo
 - `ulong`
 - `short`
 - `ushort`
+- `PointF`
+- `RectangleF`
 
 Windows Forms also supports the following additional types:
 
-- `PointF`
-- `RectangleF`
 - `Bitmap`
 - `ImageListStreamer`
 
@@ -64,12 +68,11 @@ Types and properties might participate in serialization without you realizing du
 - That property does not have a respective `bool ShouldSerialize[PropertyName]` method that returns `false` at the time of the CodeDOM serialization process. (Note: the method can have `private` scope.)
 - That property does not have a [`DesignerSerializer`](/dotnet/api/microsoft.visualstudio.modeling.dsldefinition.designerserializer)
 
-If these statements are true, the Designer determines if that property’s type has a type converter. If it does, the Designer uses the type converter to serialize the property content. Otherwise, it uses BinaryFormatter to serialize the content into the resource file.
-Windows Forms has added analyzers along with code fixes to help bring awareness to this type of behavior where BinaryFormatter serialization might be occurring without the developer’s knowledge.
+If these statements are true, the Designer determines if that property's type has a type converter. If it does, the Designer uses the type converter to serialize the property content. Otherwise, it uses BinaryFormatter to serialize the content into the resource file. Windows Forms has added analyzers along with code fixes to help bring awareness to this type of behavior where BinaryFormatter serialization might be occurring without the developer's knowledge.
 
 #### Loading resource during runtime
 
-Types that had been previously serialized into resource files via `BinaryFormatter` will continue to deserialize as expected without the need for `BinaryFormatter` as the content of ResX files are considered trusted data. In the rare case that deserialization cannot occur without `BinaryFormatter`, it can be added back for compatibility. See [BinaryFormatter migration guide: Compatibility Package](compatibility-package.md) for details. Note that an extra step of setting `System.Resources.Extensions.UseBinaryFormatter` app context switch to `true` is required to use `BinaryFormatter` for resources.
+Types that had been previously serialized into resource files via `BinaryFormatter` will continue to deserialize as expected without the need for `BinaryFormatter` as the content of ResX files are considered trusted data. In the rare case that deserialization cannot occur without `BinaryFormatter`, it can be added back with an unsupported compatibility package. See [BinaryFormatter migration guide: Compatibility Package](compatibility-package.md) for details. Note that an extra step of setting `System.Resources.Extensions.UseBinaryFormatter` app context switch to `true` is required to use `BinaryFormatter` for resources.
 
 ## Migrate away from BinaryFormatter
 
@@ -81,14 +84,14 @@ See [Windows Forms and Windows Presentation Foundation BinaryFormatter OLE guida
 
 ### Loading and saving resources during design time
 
-For types that aren't intrinsically handled during serialization into resources, such as in the case of the Designer with ResX scenarios, the prescribed way of migrating away from BinaryFormatter is to ensure a `TypeConverter` is registered for the type or property that's participating in serialization. This way, during serialization and deserialization, the `TypeConverter` is used in lieu of where `BinaryFormatter` was once used. For more information on implementing a type converter, see [`TypeConverter` Class](/dotnet/api/system.componentmodel.typeconverter#notes-to-inheritors)
+For types that aren't intrinsically handled during serialization into resources, such as in the case of the Designer with ResX scenarios, the prescribed way of migrating away from BinaryFormatter is to ensure a `TypeConverter` is registered for the type or property that's participating in serialization. This way, during serialization and deserialization, the `TypeConverter` is used in lieu of where `BinaryFormatter` was once used. For more information on implementing a type converter, see [`TypeConverter` Class](/dotnet/api/system.componentmodel.typeconverter#notes-to-inheritors).
 
 ## Compatibility workaround (not recommended)
 
-For users who cannot migrate away from `BinaryFormatter` for whatever reason, `BinaryFormatter` can be added back for compatibility. For more information, see [BinaryFormatter migration guide: Compatibility Package](compatibility-package.md).
+.NET 9 users who can't migrate away from `BinaryFormatter` can install an unsupported compatibility package. For more information, see [BinaryFormatter migration guide: Compatibility Package](compatibility-package.md).
 
 > [!CAUTION]
-> BinaryFormatter is dangerous and not recommended as it puts consuming apps at risk for running untrusted code from an unknown source. For more information about the risks BinaryFormatter poses, see [Deserialization risks in use of BinaryFormatter and related types](../binaryformatter-security-guide.md).
+> BinaryFormatter is dangerous and not recommended as it puts consuming apps at risk for attacks such as denial of service (DoS), information disclosure, or remote code execution. For more information about the risks `BinaryFormatter` poses, see [Deserialization risks in use of BinaryFormatter and related types](../binaryFormatter-security-guide.md).
 
 ## Issues
 

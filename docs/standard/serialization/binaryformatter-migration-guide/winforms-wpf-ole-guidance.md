@@ -16,7 +16,7 @@ helpviewer_keywords:
 
 # Windows Forms and Windows Presentation Foundation BinaryFormatter OLE guidance
 
-This document outlines the effects the BinaryFormatter removal has on OLE scenarios in Windows Forms and Windows Presentation Foundation (WPF). For information about the effects of BinaryFormatter removal in Windows Forms in general see [Windows Forms migration guide for BinaryFormatter](./winforms-applications.md). For information about the effects of BinaryFormatter removal in WPF in general see [WPF Migration Guide – Binary Formatter](./wpf-applications.md).
+This document outlines the effects the BinaryFormatter removal has on OLE scenarios in Windows Forms and Windows Presentation Foundation (WPF). For information about the effects of BinaryFormatter removal in Windows Forms in general see [Windows Forms migration guide for BinaryFormatter](./winforms-applications.md). For information about the effects of BinaryFormatter removal in WPF in general see [WPF migration guide for BinaryFormatter](./wpf-applications.md).
 
 ## BinaryFormatter in OLE scenarios
 

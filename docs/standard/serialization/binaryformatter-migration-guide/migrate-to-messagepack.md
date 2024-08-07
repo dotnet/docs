@@ -12,7 +12,9 @@ helpviewer_keywords:
 
 # Migrate to MessagePack (binary)
 
-MessagePack provides a highly efficient binary serialization format, resulting in smaller message sizes compared to JSON and XML. It's [performant](https://github.com/MessagePack-CSharp/MessagePack-CSharp?tab=readme-ov-file#performance) and ships with built-in support for LZ4 compression and a full set of general-purpose expressive data types:
+[MessagePack](https://msgpack.org/) is a compact binary serialization format, resulting in smaller message sizes compared to JSON and XML. The open source [MessagePack for C#](https://github.com/MessagePack-CSharp/MessagePack-CSharp) library is highly performant and offers built-in super-fast LZ4 compression for an even smaller data size. It works best when data types are annotated with either `DataContractSerializer` or the library's own attributes. It can be configured to support AOT environments, non-public types and members, and read-only types and members.
+
+Some behaviors and features of MessagePack for C# will be notable during migrations from BinaryFormatter, especially if changes to the serialized types' APIs cannot be made or need to be minimized.
 
 - By default, only public types are serializable. Private and internal structs and classes can be serialized only when `StandardResolverAllowPrivate.Options` is provided as an argument to `MessagePackSerializer.Serialize` and `MessagePackSerializer.Deserialize` methods.
 - MessagePack requires each serializable type to be annotated with the `[MessagePackObject]` attribute. It's possible to avoid that by using the [ContractlessStandardResolver](https://github.com/MessagePack-CSharp/MessagePack-CSharp?tab=readme-ov-file#object-serialization), but it might cause issues with versioning in the future.

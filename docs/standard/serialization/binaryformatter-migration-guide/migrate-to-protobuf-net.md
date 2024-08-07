@@ -12,7 +12,9 @@ helpviewer_keywords:
 
 # Migrate to protobuf-net (binary)
 
-[protobuf-net](https://github.com/protobuf-net/protobuf-net) is a contract-based serializer for .NET code that writes data in the binary _protocol buffers_ serialization format engineered by Google.
+The [protobuf-net](https://github.com/protobuf-net/protobuf-net) library is a contract-based serializer for .NET that uses the binary [Protocol Buffers](https://protobuf.dev) serialization format. The API follows typical .NET patterns and is broadly comparable to `XmlSerializer` and `DataContractSerializer`.
+
+Some behaviors and features of protobuf-net will be notable during migrations from BinaryFormatter, and many scenarios require applying attributes to members.
 
 - By default, both public and non-public types are serializable, with the serializer expecting a parameterless constructor.
 - protobuf-net requires each serializable type to be annotated with `[ProtoContract]` attribute; this attribute can optionally specify the `SkipConstructor = true` property, which *removes* the need for any particular constructor.
@@ -20,7 +22,7 @@ helpviewer_keywords:
 - [Inheritance](https://github.com/protobuf-net/protobuf-net?tab=readme-ov-file#inheritance) must be explicitly declared via `[ProtoInclude(...)]` attribute on each type with known subtypes.
 - Read-only fields are supported by default.
 - Alternatively, some non-attributed tuple-like types are recognized by *constructor pattern*; a type with a constructor that has parameters that match (by name) all of the declared public members will be interpreted as a tuple, and the parameter order will be used to infer the identifier for that member.
-- The use of the `protobuf-net.BuildTools` design-time package is highly recommended; this offers compile-time warnings of common errors.
+- The use of the [`protobuf-net.BuildTools`](https://protobuf-net.github.io/protobuf-net/build_tools) design-time package is highly recommended; this offers compile-time warnings of common errors.
 
 ## Step by step migration
 

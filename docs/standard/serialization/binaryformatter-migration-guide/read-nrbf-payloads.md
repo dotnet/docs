@@ -20,9 +20,7 @@ As part of .NET 9, a new `NrbfDecoder` class was introduced to decode NRBF paylo
 
 ## NrbfDecoder
 
-`NrbfDecoder` is part of the new [System.Formats.Nrbf](https://www.nuget.org/packages/System.Formats.Nrbf) NuGet package. It targets not only .NET 9, but also older monikers like .NET Standard 2.0 and .NET Framework. That multi-targeting makes it possible for everyone who uses a supported version of .NET to migrate away from `BinaryFormatter`.
-
-`NrbfDecoder` can read payloads that were serialized with `BinaryFormatter` using `FormatterTypeStyle.TypesAlways` (the default). `NrbfDecoder` cannot be used for the output of BinaryFormatter for any other `FormatterTypeStyle`.
+`NrbfDecoder` is part of the new [System.Formats.Nrbf](https://www.nuget.org/packages/System.Formats.Nrbf) NuGet package. It targets not only .NET 9, but also older monikers like .NET Standard 2.0 and .NET Framework. That multi-targeting makes it possible for everyone who uses a supported version of .NET to migrate away from `BinaryFormatter`. `NrbfDecoder` can read payloads that were serialized with `BinaryFormatter` using `FormatterTypeStyle.TypesAlways` (the default).
 
 `NrbfDecoder` is designed to treat all input as untrusted. As such it has these principles:
 

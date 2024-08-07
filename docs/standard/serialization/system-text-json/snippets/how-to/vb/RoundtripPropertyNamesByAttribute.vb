@@ -6,7 +6,7 @@ Namespace SystemTextJsonSamples
 
         Public Shared Sub Run()
             Dim jsonString As String
-            Dim weatherForecast As WeatherForecastWithPropertyNameAttribute = WeatherForecastFactories.CreateWeatherForecastWithPropertyNameAttribute()
+            Dim weatherForecast As WeatherForecastWithPropertyName = WeatherForecastFactories.CreateWeatherForecastWithPropertyName()
             weatherForecast.DisplayPropertyValues()
 
             ' <Serialize>
@@ -18,7 +18,7 @@ Namespace SystemTextJsonSamples
             Console.WriteLine($"JSON output:{jsonString}")
 
             ' <Deserialize>
-            weatherForecast = JsonSerializer.Deserialize(Of WeatherForecastWithPropertyNameAttribute)(jsonString)
+            weatherForecast = JsonSerializer.Deserialize(Of WeatherForecastWithPropertyName)(jsonString)
             weatherForecast.DisplayPropertyValues()
             ' </Deserialize>
         End Sub

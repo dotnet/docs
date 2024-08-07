@@ -12,6 +12,8 @@ items:
       items:
       - name: DefaultKeyResolution.ShouldGenerateNewKey has altered meaning
         href: aspnet-core/9.0/key-resolution.md
+      - name: HostBuilder enables ValidateOnBuild/ValidateScopes in development environment
+        href: aspnet-core/9.0/hostbuilder-validation.md
     - name: Core .NET libraries
       items:
       - name: Adding a ZipArchiveEntry sets header general-purpose bit flags
@@ -32,6 +34,12 @@ items:
         href: core-libraries/9.0/getsubarray-return.md
       - name: Support for empty environment variables
         href: core-libraries/9.0/empty-env-variable.md
+    - name: Cryptography
+      items:
+      - name: SafeEvpPKeyHandle.DuplicateHandle up-refs the handle
+        href: cryptography/9.0/evp-pkey-handle.md
+      - name: Some X509Certificate2 and X509Certificate constructors are obsolete
+        href: cryptography/9.0/x509-certificates.md
     - name: Deployment
       items:
       - name: Deprecated desktop Windows/macOS/Linux MonoVM runtime packages
@@ -962,6 +970,8 @@ items:
       items:
       - name: DefaultKeyResolution.ShouldGenerateNewKey has altered meaning
         href: aspnet-core/9.0/key-resolution.md
+      - name: HostBuilder enables ValidateOnBuild/ValidateScopes in development environment
+        href: aspnet-core/9.0/hostbuilder-validation.md
     - name: .NET 8
       items:
       - name: ConcurrencyLimiterMiddleware is obsolete
@@ -1400,6 +1410,12 @@ items:
       href: corefx.md
   - name: Cryptography
     items:
+    - name: .NET 9
+      items:
+      - name: SafeEvpPKeyHandle.DuplicateHandle up-refs the handle
+        href: cryptography/9.0/evp-pkey-handle.md
+      - name: Some X509Certificate2 and X509Certificate constructors are obsolete
+        href: cryptography/9.0/x509-certificates.md
     - name: .NET 8
       items:
       - name: AesGcm authentication tag size on macOS

@@ -46,4 +46,4 @@ When migrating from BinaryFormatter to `System.Text.Json`, it's crucial to note 
 
 - To preserve references and handle circular references in `System.Text.Json`, set `JsonSerializerOptions.ReferenceHandler` to `ReferenceHandler.Preserve`.
 
-- Serialization can be extensively customized with [custom contracts](../system-text-json/custom-contracts), unblocking many scenarios while minimizing changes to serialized types.
+- Serialization can be extensively customized with [custom contracts](../system-text-json/custom-contracts.md), unblocking many scenarios while minimizing changes to serialized types.

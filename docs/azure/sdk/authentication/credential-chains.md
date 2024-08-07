@@ -24,7 +24,7 @@ There are two different philosophies to credential chaining:
 
 ## DefaultAzureCredential overview
 
-[DefaultAzureCredential](/dotnet/api/azure.identity.defaultazurecredential?view=azure-dotnet&preserve-view=true) is an opinionated, preconfigured chain of credentials. In graphical form, it looks like this:
+[DefaultAzureCredential](/dotnet/api/azure.identity.defaultazurecredential?view=azure-dotnet&preserve-view=true) is an opinionated, preconfigured chain of credentials. It's designed to support all environments, along with the most common authentication flows and developer tools. In graphical form, it looks like this:
 
 :::image type="content" source="../media/mermaidjs/DefaultAzureCredentialAuthFlow.svg" alt-text="DefaultAzureCredential" lightbox="../media/mermaidjs/DefaultAzureCredentialAuthFlow.svg":::
 

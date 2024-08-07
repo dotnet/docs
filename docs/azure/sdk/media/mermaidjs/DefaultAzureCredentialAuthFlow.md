@@ -30,9 +30,9 @@ flowchart LR;
     end;
 
     %% Define styles for credential type boxes
-    classDef deployed fill:#95C37E, stroke:#71AD4C;
-    classDef developer fill:#F5AF6F, stroke:#EB7C39;
-    classDef interactive fill:#A5A5A5, stroke:#828282;
+    classDef deployed fill:#95C37E, stroke:#71AD4C, stroke-width:2px;
+    classDef developer fill:#F5AF6F, stroke:#EB7C39, stroke-width:2px;
+    classDef interactive fill:#A5A5A5, stroke:#828282, stroke-dasharray:5 5, stroke-width:2px;
 
     %% Add API ref links to credential type boxes
     click A "https://learn.microsoft.com/dotnet/api/azure.identity.environmentcredential?view=azure-dotnet" _blank;

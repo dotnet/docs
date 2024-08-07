@@ -64,6 +64,8 @@ In the preceding code sample, `EnvironmentCredential` and `WorkloadIdentityCrede
 
 :::image type="content" source="../media/mermaidjs/DefaultAzureCredentialExcludes.svg" alt-text="DefaultAzureCredential using Excludes properties":::
 
+Note `InteractiveBrowserCredential` is excluded by default and therefore isn't shown in the preceding diagram.
+
 ## ChainedTokenCredential overview
 
 [ChainedTokenCredential](/dotnet/api/azure.identity.chainedtokencredential?view=azure-dotnet&preserve-view=true) is an empty chain to which you add credentials to suit your app's needs. For example:

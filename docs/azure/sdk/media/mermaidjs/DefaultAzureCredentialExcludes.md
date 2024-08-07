@@ -16,10 +16,9 @@
 }%%
 
 flowchart LR;
-    C(Managed Identity):::deployed --> D(Visual Studio):::developer --> E(Azure CLI):::developer --> F(Azure PowerShell):::developer --> G(Azure Developer CLI):::developer --> H(Interactive browser):::interactive;
+    C(Managed Identity):::deployed --> D(Visual Studio):::developer --> E(Azure CLI):::developer --> F(Azure PowerShell):::developer --> G(Azure Developer CLI):::developer;
 
     %% Define styles for credential type boxes
-    classDef deployed fill:#95C37E, stroke:#71AD4C;
-    classDef developer fill:#F5AF6F, stroke:#EB7C39;
-    classDef interactive fill:#A5A5A5, stroke:#828282;
+    classDef deployed fill:#95C37E, stroke:#71AD4C, stroke-width:2px;
+    classDef developer fill:#F5AF6F, stroke:#EB7C39, stroke-width:2px;
 ```

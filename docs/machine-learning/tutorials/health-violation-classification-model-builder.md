@@ -1,6 +1,7 @@
 ---
 title: 'Tutorial: Classify health violations with Model Builder'
 description: This tutorial illustrates how to build a multiclass classification model using ML.NET Model Builder to classify restaurant health violation severity in San Francisco.
+author: luisquintanilla
 ms.author: luquinta
 ms.date: 11/10/2022
 ms.topic: tutorial
@@ -159,7 +160,7 @@ When adding a web API to your solution, you will be prompted to name the project
     Invoke-RestMethod "https://localhost:<PORT>/predict" -Method Post -Body ($body | ConvertTo-Json) -ContentType "application/json"
     ```
 
-1. If successful, the output should look similar to the text below. The output has the predicted **RiskCategory** as *Moderate Risk* and it has the scores of each of the input labels - *Low Risk*, *High Risk*, and *Moderate Risk*.
+1. If successful, the output should look similar to the text below. The output has the predicted **RiskCategory** as _Moderate Risk_ and it has the scores of each of the input labels - _Low Risk_, _High Risk_, and _Moderate Risk_.
 
     ```powershell
     prediction    score

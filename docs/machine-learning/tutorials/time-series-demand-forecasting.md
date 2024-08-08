@@ -5,6 +5,7 @@ ms.date: 03/07/2022
 ms.topic: tutorial
 ms.custom: mvc
 ms.author: luquinta
+author: luisquintanilla
 #Customer intent: As a developer, I want to forecast demand for a product using time series analysis.
 ---
 
@@ -24,7 +25,7 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-* [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/) with the ".NET Desktop Development" workload installed.
+- [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/) with the ".NET Desktop Development" workload installed.
 
 ## Time series forecasting sample overview
 
@@ -65,9 +66,9 @@ The algorithm used in this tutorial is [Singular Spectrum Analysis(SSA)](http://
 
 The original dataset contains several columns corresponding to seasonality and weather. For brevity and because the algorithm used in this tutorial only requires the values from a single numerical column, the original dataset has been condensed to include only the following columns:
 
-* **dteday**: The date of the observation.
-* **year**: The encoded year of the observation (0=2011, 1=2012).
-* **cnt**: The total number of bike rentals for that day.
+- **dteday**: The date of the observation.
+- **year**: The encoded year of the observation (0=2011, 1=2012).
+- **cnt**: The total number of bike rentals for that day.
 
 The original dataset is mapped to a database table with the following schema in a SQL Server database.
 
@@ -99,9 +100,9 @@ The following is a sample of the data:
 
     The `ModelInput` class contains the following columns:
 
-    * **RentalDate**: The date of the observation.
-    * **Year**: The encoded year of the observation (0=2011, 1=2012).
-    * **TotalRentals**: The total number of bike rentals for that day.
+    - **RentalDate**: The date of the observation.
+    - **Year**: The encoded year of the observation (0=2011, 1=2012).
+    - **TotalRentals**: The total number of bike rentals for that day.
 
 1. Create `ModelOutput` class below the newly created `ModelInput` class.
 
@@ -109,9 +110,9 @@ The following is a sample of the data:
 
     The `ModelOutput` class contains the following columns:
 
-    * **ForecastedRentals**: The predicted values for the forecasted period.
-    * **LowerBoundRentals**: The predicted minimum values for the forecasted period.
-    * **UpperBoundRentals**: The predicted maximum values for the forecasted period.
+    - **ForecastedRentals**: The predicted values for the forecasted period.
+    - **LowerBoundRentals**: The predicted minimum values for the forecasted period.
+    - **UpperBoundRentals**: The predicted maximum values for the forecasted period.
 
 ### Define paths and initialize variables
 
@@ -200,8 +201,8 @@ Evaluate how well the model performs by forecasting next year's data and compari
 
     To evaluate performance, the following metrics are used:
 
-    * **Mean Absolute Error**: Measures how close predictions are to the actual value. This value ranges between 0 and infinity. The closer to 0, the better the quality of the model.
-    * **Root Mean Squared Error**: Summarizes the error in the model. This value ranges between 0 and infinity. The closer to 0, the better the quality of the model.
+    - **Mean Absolute Error**: Measures how close predictions are to the actual value. This value ranges between 0 and infinity. The closer to 0, the better the quality of the model.
+    - **Root Mean Squared Error**: Summarizes the error in the model. This value ranges between 0 and infinity. The closer to 0, the better the quality of the model.
 
 1. Output the metrics to the console.
 
@@ -287,5 +288,5 @@ You can find the source code for this tutorial at the [dotnet/machinelearning-sa
 
 ## Next steps
 
-* [Machine learning tasks in ML.NET](../resources/tasks.md)
-* [Improve model accuracy](../resources/improve-machine-learning-model-ml-net.md)
+- [Machine learning tasks in ML.NET](../resources/tasks.md)
+- [Improve model accuracy](../resources/improve-machine-learning-model-ml-net.md)

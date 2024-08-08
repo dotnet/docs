@@ -2,6 +2,7 @@
 title: "How-To: Improve your ML.NET model"
 description: Learn how to improve your ML.NET model
 ms.date: 03/11/2022
+author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc
 ms.topic: how-to

@@ -1,6 +1,7 @@
 ---
 title: 'Tutorial: Train an image classification model in Azure using Model Builder'
 description: Learn how to train an image classification model to recognize land use from satellite images in Azure using Model Builder
+author: luisquintanilla
 ms.author: luquinta
 ms.date: 10/05/2021
 ms.topic: tutorial

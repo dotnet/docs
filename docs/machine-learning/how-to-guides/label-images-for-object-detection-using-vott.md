@@ -2,6 +2,7 @@
 title: Label images for object detection
 description: How to use VoTT to label images for object detection in Model Builder
 ms.date: 07/25/2021
+author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc,how-to
 ms.topic: how-to

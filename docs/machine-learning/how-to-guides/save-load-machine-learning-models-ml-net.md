@@ -2,6 +2,7 @@
 title: Save and load trained models
 description: Learn how to save and load trained models
 ms.date: 12/15/2021
+author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc, how-to
 ms.topic: how-to

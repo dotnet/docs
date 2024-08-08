@@ -2,6 +2,7 @@
 title: How to install GPU support in Model Builder
 description: Learn how to install GPU support in Model Builder
 ms.date: 02/28/2023
+author: luisquintanilla
 ms.author: luquinta
 ms.topic: how-to
 #Customer intent: As a developer, I want to learn how to install GPU support for Model Builder
@@ -36,7 +37,7 @@ Deep learning scenarios tend to run faster on GPUs.
 
 Some scenarios like image classification support training on Azure GPU VMs.
 
-However, if local GPUs or Azure are not an option for you, these scenarios also run on CPU. Note however that training times are significantly longer.
+However, if local GPUs or Azure are not an option for you, these scenarios also run on CPU. Note however that training times are significantly longer.  
 
 **How do I know what GPU I have?**
 

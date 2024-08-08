@@ -33,7 +33,7 @@ If your code uses `BinaryFormatter`, you should select a new serialization forma
 
 If you judge the risk of `BinaryFormatter` acceptable for your use cases and you're committed to using a class that can't be made secure, you'll still be able to use `BinaryFormatter` through a separate, unsupported NuGet package.
 
-When more detailed information is available, a link will be added here.
+For more information including guidance on alternative serializers, refer to the [BinaryFormatter migration guide](/dotnet/standard/serialization/binaryformatter-migration-guide/index.md).
 
 ## Affected APIs
 

@@ -21,8 +21,11 @@ This article applies to the following .NET implementations:
 * .NET Core 2.1 - 3.1
 * .NET 5 and later
 
-> [!WARNING]
-> The <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> type is dangerous and is ***not*** recommended for data processing. Applications should stop using `BinaryFormatter` as soon as possible, even if they believe the data they're processing to be trustworthy. `BinaryFormatter` is insecure and can't be made secure.
+> [!CAUTION]
+> The <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> type is dangerous and is ***not*** recommended for data processing. Applications [should stop using `BinaryFormatter`](../serialization/binaryformatter-migration-guide/index.md) as soon as possible, even if they believe the data they're processing to be trustworthy. `BinaryFormatter` is insecure and can't be made secure.
+
+> [!NOTE]
+> Starting in .NET 9, the in-box <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> implementation throws exceptions on use, even with the settings that previously enabled its use. Those settings are also removed. Refer to the [BinaryFormatter migration guide](./binaryformatter-migration-guide/index.md) for more information.
 
 ## Deserialization vulnerabilities
 
@@ -81,6 +84,7 @@ Another scenario is where the data file is stored in cloud storage and automatic
 
 ## See also
 
+* [BinaryFormatter migration guide](./binaryformatter-migration-guide/index.md)
 * [Binary serialization](/previous-versions/dotnet/fundamentals/serialization/binary/binary-serialization)
 * [YSoSerial.Net](https://github.com/pwntester/ysoserial.net) for research into how adversaries attack apps that utilize `BinaryFormatter`.
 * General background on deserialization vulnerabilities:

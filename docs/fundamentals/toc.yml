@@ -863,6 +863,32 @@ items:
                     href: ../standard/serialization/xml-schema-definition-tool-xsd-exe.md
           - name: Binary serialization
             items:
+              - name: BinaryFormatter migration guide
+                items:
+                  - name: Overview
+                    href: ../standard/serialization/binaryformatter-migration-guide/index.md
+                  - name: Choose a serializer
+                    href: ../standard/serialization/binaryformatter-migration-guide/choose-a-serializer.md
+                  - name: Migrate to System.Text.Json (JSON)
+                    href: ../standard/serialization/binaryformatter-migration-guide/migrate-to-system-text-json.md
+                  - name: Migrate to DataContractSerializer (XML)
+                    href: ../standard/serialization/binaryformatter-migration-guide/migrate-to-datacontractserializer.md
+                  - name: Migrate to MessagePack (binary)
+                    href: ../standard/serialization/binaryformatter-migration-guide/migrate-to-messagepack.md
+                  - name: Migrate to protobuf-net (binary)
+                    href: ../standard/serialization/binaryformatter-migration-guide/migrate-to-protobuf-net.md
+                  - name: Read BinaryFormatter (NRBF) payloads
+                    href: ../standard/serialization/binaryformatter-migration-guide/read-nrbf-payloads.md
+                  - name: Compatibility package
+                    href: ../standard/serialization/binaryformatter-migration-guide/compatibility-package.md
+                  - name: BinaryFormatter functionality reference
+                    href: ../standard/serialization/binaryformatter-migration-guide/functionality-reference.md
+                  - name: Windows Forms apps
+                    href: ../standard/serialization/binaryformatter-migration-guide/winforms-applications.md
+                  - name: WPF apps
+                    href: ../standard/serialization/binaryformatter-migration-guide/wpf-applications.md
+                  - name: Clipboard and drag-and-drop guidance
+                    href: ../standard/serialization/binaryformatter-migration-guide/winforms-wpf-ole-guidance.md
               - name: BinaryFormatter security guide
                 href: ../standard/serialization/binaryformatter-security-guide.md
               - name: BinaryFormatter event source

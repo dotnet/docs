@@ -1,13 +1,17 @@
+// <SnippetUsings>
 using Microsoft.ML;
 using Microsoft.ML.Vision;
 using static Microsoft.ML.DataOperationsCatalog;
+// </SnippetUsings>
 
+// <SnippetContext>
 var projectDirectory = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "../../../"));
 var assetsRelativePath = Path.Combine(projectDirectory, "Assets");
 
 MLContext mlContext = new();
+// </SnippetContext>
 
-// You must unzip assets.zip before training.
+// <SnippetSplit>
 IEnumerable<ImageData> images = LoadImagesFromDirectory(folder: assetsRelativePath, useFolderNameAsLabel: true);
 
 IDataView imageData = mlContext.Data.LoadFromEnumerable(images);
@@ -32,7 +36,9 @@ TrainTestData validationTestSplit = mlContext.Data.TrainTestSplit(trainSplit.Tes
 IDataView trainSet = trainSplit.TrainSet;
 IDataView validationSet = validationTestSplit.TrainSet;
 IDataView testSet = validationTestSplit.TestSet;
+// </SnippetSplit>
 
+// <SnippetTrain>
 var classifierOptions = new ImageClassificationTrainer.Options()
 {
     FeatureColumnName = "Image",
@@ -49,11 +55,17 @@ var trainingPipeline = mlContext.MulticlassClassification.Trainers.ImageClassifi
     .Append(mlContext.Transforms.Conversion.MapKeyToValue("PredictedLabel"));
 
 ITransformer trainedModel = trainingPipeline.Fit(trainSet);
+// </SnippetTrain>
 
+// <SnippetSingle>
 ClassifySingleImage(mlContext, testSet, trainedModel);
+// </SnippetSingle>
 
+// <SnippetMultiple>
 ClassifyImages(mlContext, testSet, trainedModel);
+// </SnippetMultiple>
 
+// <SnippetClassifySingle>
 static void ClassifySingleImage(MLContext mlContext, IDataView data, ITransformer trainedModel)
 {
     PredictionEngine<ModelInput, ModelOutput> predictionEngine = mlContext.Model.CreatePredictionEngine<ModelInput, ModelOutput>(trainedModel);
@@ -65,7 +77,9 @@ static void ClassifySingleImage(MLContext mlContext, IDataView data, ITransforme
     Console.WriteLine("Classifying single image");
     OutputPrediction(prediction);
 }
+// </SnippetClassifySingle>
 
+// <SnippetClassifyMultiple>
 static void ClassifyImages(MLContext mlContext, IDataView data, ITransformer trainedModel)
 {
     IDataView predictionData = trainedModel.Transform(data);
@@ -78,13 +92,17 @@ static void ClassifyImages(MLContext mlContext, IDataView data, ITransformer tra
         OutputPrediction(prediction);
     }
 }
+// </SnippetClassifyMultiple>
 
+// <SnippetOutput>
 static void OutputPrediction(ModelOutput prediction)
 {
     string? imageName = Path.GetFileName(prediction.ImagePath);
     Console.WriteLine($"Image: {imageName} | Actual Value: {prediction.Label} | Predicted Value: {prediction.PredictedLabel}");
 }
+// </SnippetOutput>
 
+// <SnippetLoadImages>
 static IEnumerable<ImageData> LoadImagesFromDirectory(string folder, bool useFolderNameAsLabel = true)
 {
     var files = Directory.GetFiles(folder, "*",
@@ -118,13 +136,17 @@ static IEnumerable<ImageData> LoadImagesFromDirectory(string folder, bool useFol
         };
     }
 }
+// </SnippetLoadImages>
 
+// <SnippetImageData>
 class ImageData
 {
     public string? ImagePath { get; set; }
     public string? Label { get; set; }
 }
+// </SnippetImageData>
 
+// <SnippetModelInput>
 class ModelInput
 {
     public byte[]? Image { get; set; }
@@ -132,10 +154,13 @@ class ModelInput
     public string? ImagePath { get; set; }
     public string? Label { get; set; }
 }
+// </SnippetModelInput>
 
+// <SnippetModelOutput>
 class ModelOutput
 {
     public string? ImagePath { get; set; }
     public string? Label { get; set; }
     public string? PredictedLabel { get; set; }
 }
+// </SnippetModelOutput>

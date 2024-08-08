@@ -123,11 +123,11 @@ In this tutorial, only bridge deck images are used.
 
 1. Open the *Program.cs* file and replace the existing content with the following `using` directives:
 
-   :::code language="csharp" source="snippets/api-transfer-learning/csharp/Program.cs" highlight="1-3":::
+   :::code language="csharp" source="snippets/api-transfer-learning/csharp/Program.cs" id="SnippetUsings":::
 
 1. Create a class called `ImageData`. This class is used to represent the initially loaded data.
 
-   :::code language="csharp" source="snippets/api-transfer-learning/csharp/Program.cs" highlight="122-126":::
+   :::code language="csharp" source="snippets/api-transfer-learning/csharp/Program.cs" id="SnippetImageData":::
 
     `ImageData` contains the following properties:
 
@@ -138,7 +138,7 @@ In this tutorial, only bridge deck images are used.
 
    1. Below the `ImageData` class, define the schema of your input data in a new class called `ModelInput`.
 
-      :::code language="csharp" source="snippets/api-transfer-learning/csharp/Program.cs" highlight="128-134":::
+      :::code language="csharp" source="snippets/api-transfer-learning/csharp/Program.cs" id="SnippetModelInput":::
 
       `ModelInput` contains the following properties:
 
@@ -151,7 +151,7 @@ In this tutorial, only bridge deck images are used.
 
    1. Then, below the `ModelInput` class, define the schema of your output data in a new class called `ModelOutput`.
 
-      :::code language="csharp" source="snippets/api-transfer-learning/csharp/Program.cs" highlight="136-141":::
+      :::code language="csharp" source="snippets/api-transfer-learning/csharp/Program.cs" id="SnippetModelOutput":::
 
       `ModelOutput` contains the following properties:
 
@@ -170,7 +170,7 @@ In this tutorial, only bridge deck images are used.
 
      The [MLContext](xref:Microsoft.ML.MLContext) class is a starting point for all ML.NET operations, and initializing mlContext creates a new ML.NET environment that can be shared across the model creation workflow objects. It's similar, conceptually, to `DbContext` in Entity Framework.
 
-   :::code language="csharp" source="snippets/api-transfer-learning/csharp/Program.cs" highlight="5-8":::
+   :::code language="csharp" source="snippets/api-transfer-learning/csharp/Program.cs" id="SnippetContext":::
 
 ## Load the data
 
@@ -178,7 +178,7 @@ In this tutorial, only bridge deck images are used.
 
 The images are stored in two subdirectories. Before loading the data, it needs to be formatted into a list of `ImageData` objects. To do so, create the `LoadImagesFromDirectory` method:
 
-:::code language="csharp" source="snippets/api-transfer-learning/csharp/Program.cs" highlight="88-120":::
+:::code language="csharp" source="snippets/api-transfer-learning/csharp/Program.cs" id="SnippetLoadImages":::
 
 The `LoadImagesFromDirectory` method:
 
@@ -191,7 +191,7 @@ The `LoadImagesFromDirectory` method:
 
 Add the following code after the line where you create the new instance of `MLContext`.
 
-:::code language="csharp" source="snippets/api-transfer-learning/csharp/Program.cs" highlight="10-340":::
+:::code language="csharp" source="snippets/api-transfer-learning/csharp/Program.cs" id="SnippetSplit":::
 
 The previous code:
 
@@ -214,7 +214,7 @@ The previous code:
 
 Model training consists of two steps. First, Image Classification API is used to train the model. Then, the encoded labels in the `PredictedLabel` column are converted back to their original categorical value using the `MapKeyToValue` transform.
 
-:::code language="csharp" source="snippets/api-transfer-learning/csharp/Program.cs" highlight="36-51":::
+:::code language="csharp" source="snippets/api-transfer-learning/csharp/Program.cs" id="SnippetTrain":::
 
 The previous code:
 
@@ -238,13 +238,13 @@ Now that you've trained the model, it's time to use it to classify images.
 
 Create a new utility method called `OutputPrediction` to display prediction information in the console.
 
-:::code language="csharp" source="snippets/api-transfer-learning/csharp/Program.cs" highlight="82-86":::
+:::code language="csharp" source="snippets/api-transfer-learning/csharp/Program.cs" id="SnippetOutput":::
 
 ### Classify a single image
 
 1. Create a method called `ClassifySingleImage` to make and output a single image prediction.
 
-   :::code language="csharp" source="snippets/api-transfer-learning/csharp/Program.cs" highlight="57-67":::
+   :::code language="csharp" source="snippets/api-transfer-learning/csharp/Program.cs" id="SnippetClassifySingle":::
 
    The `ClassifySingleImage` method:
 
@@ -255,13 +255,13 @@ Create a new utility method called `OutputPrediction` to display prediction info
 
 1. Call `ClassifySingleImage` after you call the `Fit` method using the test set of images.
 
-   :::code language="csharp" source="snippets/api-transfer-learning/csharp/Program.cs" highlight="53":::
+   :::code language="csharp" source="snippets/api-transfer-learning/csharp/Program.cs" id="SnippetSingle":::
 
 ### Classify multiple images
 
 1. Create a method called `ClassifyImages` to make and output multiple image predictions.
 
-   :::code language="csharp" source="snippets/api-transfer-learning/csharp/Program.cs" highlight="69-80":::
+   :::code language="csharp" source="snippets/api-transfer-learning/csharp/Program.cs" id="SnippetClassifyMultiple":::
 
    The `ClassifyImages` method:
 
@@ -271,7 +271,7 @@ Create a new utility method called `OutputPrediction` to display prediction info
 
 1. Call `ClassifyImages` after you call the `ClassifySingleImage()` method using the test set of images.
 
-   :::code language="csharp" source="snippets/api-transfer-learning/csharp/Program.cs" highlight="55":::
+   :::code language="csharp" source="snippets/api-transfer-learning/csharp/Program.cs" id="SnippetMultiple":::
 
 ## Run the application
 

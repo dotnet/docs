@@ -2,7 +2,6 @@
 title: Retrain a model
 description: Learn how to retrain a model in ML.NET
 ms.date: 11/02/2021
-author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc, how-to
 ms.topic: how-to

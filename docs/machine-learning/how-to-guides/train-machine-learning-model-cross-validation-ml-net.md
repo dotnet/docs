@@ -2,7 +2,6 @@
 title: Train a machine learning model using cross validation
 description: Learn how to use cross validation to build more robust machine learning models in ML.NET. Cross-validation is a training and model evaluation technique that splits the data into several partitions and trains multiple algorithms on these partitions.
 ms.date: 10/05/2021
-author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc,how-to,title-hack-0625
 ms.topic: how-to

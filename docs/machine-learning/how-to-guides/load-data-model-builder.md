@@ -2,7 +2,6 @@
 title: Load training data for Model Builder
 description: Learn how to load training data from a SQL Server database or a file for use in one of the Model Builder scenarios for ML.NET.
 ms.date: 09/20/2021
-author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc, how-to, mlnet-tooling
 ms.topic: how-to
@@ -36,7 +35,7 @@ You can load text or numeric data from a file into Model Builder. It accepts com
 1. Choose a category in the **Column to predict (Label)** dropdown.
 
     > [!NOTE]
-    > **(Optional) data classification scenarios**: If the data type of your label column (the value in the "Column to predict (Label)" dropdown) is set to Boolean (True/False), a binary classification algorithm is used in your model training pipeline. Otherwise, a multiclass classification trainer is used. Use **Advanced data options** to modify the data type for your label column and inform Model Builder which type of trainer it should use for your data.  
+    > **(Optional) data classification scenarios**: If the data type of your label column (the value in the "Column to predict (Label)" dropdown) is set to Boolean (True/False), a binary classification algorithm is used in your model training pipeline. Otherwise, a multiclass classification trainer is used. Use **Advanced data options** to modify the data type for your label column and inform Model Builder which type of trainer it should use for your data.
 
 1. Update the data in the **Advanced data options** link to set column settings or to update the data formatting.
 

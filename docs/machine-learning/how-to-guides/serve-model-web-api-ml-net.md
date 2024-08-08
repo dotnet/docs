@@ -2,7 +2,6 @@
 title: Deploy a model in an ASP.NET Core Web API
 description: Serve an ML.NET sentiment analysis machine learning model using an ASP.NET Core Web API
 ms.date: 03/02/2023
-author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc,how-to
 ms.topic: how-to

@@ -1,7 +1,6 @@
 ---
 title: 'Tutorial: Predict prices using regression with Model Builder'
 description: This tutorial illustrates how to build a regression model using ML.NET Model Builder to predict prices, specifically, New York City taxi fares.
-author: luisquintanilla
 ms.author: luquinta
 ms.date: 09/20/2021
 ms.topic: tutorial

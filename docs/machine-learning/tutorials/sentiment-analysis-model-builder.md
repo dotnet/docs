@@ -2,7 +2,6 @@
 title: 'Tutorial: Analyze sentiment - Text Classification'
 description: This tutorial shows you how to create a Razor Pages application that classifies sentiment from website comments and takes the appropriate action. The classification uses the Text Classification scenario in the Model Builder Visual Studio extension.
 ms.date: 11/10/2022
-author: luisquintanilla
 ms.author: luquinta
 ms.topic: tutorial
 ms.custom: mvc,mlnet-tooling

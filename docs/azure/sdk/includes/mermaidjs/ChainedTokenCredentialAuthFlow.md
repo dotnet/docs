@@ -8,7 +8,9 @@ ms.date: 08/07/2024
 %% =======================
 %% 1. Install mermaid CLI v10.9.1 (see https://github.com/mermaid-js/mermaid-cli/blob/master/README.md):
 %%    npm i -g @mermaid-js/mermaid-cli@10.9.1
-%% 2. Run command: mmdc -i ChainedTokenCredentialAuthFlow.md -o ChainedTokenCredentialAuthFlow.svg
+%% 2. Run commands:
+%%    mmdc -i ChainedTokenCredentialAuthFlow.md -o ../../media/mermaidjs/ChainedTokenCredentialAuthFlow-inline.svg
+%%    mmdc -i ChainedTokenCredentialAuthFlow.md -o ../../media/mermaidjs/ChainedTokenCredentialAuthFlow-expanded.png
 
 %%{
   init: {

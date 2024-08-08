@@ -13,7 +13,7 @@ The Azure Identity library provides *credentials*&mdash;public classes derived f
 
 At runtime, a credential chain attempts to authenticate using the sequence's first credential. If that credential fails to acquire an access token, the next credential in the sequence is attempted, and so on, until an access token is successfully obtained. The following sequence diagram illustrates this behavior:
 
-:::image type="content" source="../media/mermaidjs/ChainSequence.svg" alt-text="Credential chain sequence diagram" lightbox="../media/mermaidjs/ChainSequence.svg":::
+:::image type="content" source="../media/mermaidjs/ChainSequence-inline.svg" alt-text="Credential chain sequence diagram" lightbox="../media/mermaidjs/ChainSequence-expanded.png":::
 
 ## Why to use a chained credential
 
@@ -37,7 +37,7 @@ There are two disparate philosophies to credential chaining:
 
 [DefaultAzureCredential](/dotnet/api/azure.identity.defaultazurecredential?view=azure-dotnet&preserve-view=true) is an opinionated, preconfigured chain of credentials. It's designed to support all environments, along with the most common authentication flows and developer tools. In graphical form, the underlying chain looks like this:
 
-:::image type="content" source="../media/mermaidjs/DefaultAzureCredentialAuthFlow.svg" alt-text="DefaultAzureCredential" lightbox="../media/mermaidjs/DefaultAzureCredentialAuthFlow.svg":::
+:::image type="content" source="../media/mermaidjs/DefaultAzureCredentialAuthFlow-inline.svg" alt-text="DefaultAzureCredential" lightbox="../media/mermaidjs/DefaultAzureCredentialAuthFlow-expanded.png":::
 
 The order in which `DefaultAzureCredential` attempts credentials follows.
 

@@ -51,6 +51,7 @@ Get started with AI by creating a simple .NET 8.0 console chat application to su
     ```bash
     dotnet user-secrets init
     dotnet user-secrets set OpenAIKey <your-openai-key>
+    ```
 
 # [Azure Portal](#tab/azure-portal)
 
@@ -63,6 +64,7 @@ Get started with AI by creating a simple .NET 8.0 console chat application to su
     ```bash
     dotnet user-secrets init
     dotnet user-secrets set OpenAIKey <your-openai-key>
+    ```
 
 ---
 

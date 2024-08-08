@@ -48,7 +48,7 @@ Get started with OpenAI and [Semantic Kernel](../semantic-kernel-dotnet-overview
 
 1. To provision an Azure OpenAI service and model using the Azure CLI, complete the steps in the [Create and deploy an Azure OpenAI Service resource](/azure/ai-services/openai/how-to/create-resource?pivots=cli) article.
 
-1. From a terminal or command prompt, navigate to the `openai\02-HikerAI` directory.
+1. From a terminal or command prompt, navigate to the `src\quickstarts\azure-openai\02-HikerAI` directory.
 
 1. Run the following commands to configure your OpenAI API key as a secret for the sample app:
 
@@ -60,7 +60,7 @@ Get started with OpenAI and [Semantic Kernel](../semantic-kernel-dotnet-overview
 
 1. To provision an Azure OpenAI service and model using the Azure portal, complete the steps in the [Create and deploy an Azure OpenAI Service resource](/azure/ai-services/openai/how-to/create-resource?pivots=web-portal) article.
 
-1. From a terminal or command prompt, navigate to the `openai\02-HikerAI` directory.
+1. From a terminal or command prompt, navigate to the `src\quickstarts\azure-openai\02-HikerAI` directory.
 
 1. Run the following commands to configure your OpenAI API key as a secret for the sample app:
 

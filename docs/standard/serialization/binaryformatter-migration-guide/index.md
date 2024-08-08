@@ -27,7 +27,7 @@ You have two options to address that:
 
 Any deserializer, binary or text, that allows its input to carry information about the objects to be created is a security problem waiting to happen. There is a common weakness enumeration (CWE) that describes the issue: [CWE-502 "Deserialization of Untrusted Data"](https://cwe.mitre.org/data/definitions/502.html). BinaryFormatter, included in the the initial release of .NET Framework in 2002, is such a deserializer. We also cover this in the [BinaryFormater security guide](../binaryformatter-security-guide.md).
 
-Due to the known risks of using BinaryFormatter, the functionality was excluded from .NET Core 1.0. But without a clear migration path to using something safer, customer demand led to BinaryFormatter being included in .NET Core 1.1. Since then, the .NET team has been on the path to removing BinaryFormatter, slowly turning it off by default in multiple project types but letting consumers opt-in via flags if still needed for backward compatibility.
+Due to the known risks of using BinaryFormatter, the functionality was excluded from .NET Core 1.0. But without a clear migration path to using something safer, customer demand led to BinaryFormatter being included in .NET Core 2.0. Since then, the .NET team has been on the path to removing BinaryFormatter, slowly turning it off by default in multiple project types but letting consumers opt-in via flags if still needed for backward compatibility.
 
 For more details about the decision, see the [BinaryFormatter is being removed in .NET 9](https://github.com/dotnet/announcements/issues/293) announcement.
 

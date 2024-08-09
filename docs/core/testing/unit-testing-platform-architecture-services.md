@@ -291,7 +291,7 @@ The message bus of the testing platform employs the _publish-subscribe pattern_.
 
 The overarching structure of the shared bus is as follows:
 
-![bus](./media/bus.png)
+:::image type="content" source="./media/message-bus.png" lightbox="./media/message-bus.png" alt-text="A picture representing the interactions of the various extensions with the message bus.":::
 
 As illustrated in the diagram, which includes an extensions and a test framework, there are two potential actions: pushing information to the bus or consuming information from the bus.
 

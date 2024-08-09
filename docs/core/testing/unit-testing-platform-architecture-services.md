@@ -345,9 +345,20 @@ public sealed class SystemConsoleColor : IColor
 Here's an example of how you might use the colored text with the *active* output device:
 
 ```csharp
-IServiceProvider serviceProvider = ...get the service provider...
-IOutputDevice outputDevice = serviceProvider.GetOutputDevice();
-await outputDevice.DisplayAsync(this, new FormattedTextOutputDeviceData($"TestingFramework version '{Version}' running tests with parallelism of {_dopValue}") { ForegroundColor = new SystemConsoleColor() { ConsoleColor = ConsoleColor.Green } });
+IServiceProvider provider = null; // Get the service provider...
+
+IOutputDevice outputDevice = provider.GetOutputDevice();
+
+await outputDevice.DisplayAsync(
+    this, 
+    new FormattedTextOutputDeviceData(
+        $"TestingFramework version '{Version}' running tests with parallelism of {_dopValue}")
+    {
+        ForegroundColor = new SystemConsoleColor
+        {
+            ConsoleColor = ConsoleColor.Green
+        }
+    });
 ```
 
 Beyond the standard use of colored text, the main advantage of `IOutputDevice` and `IOutputDeviceData` is that the *output device* is entirely independent and unknown to the user. This allows for the development of complex user interfaces. For example, it's entirely feasible to implement a *real-time* web application that displays the progress of tests.

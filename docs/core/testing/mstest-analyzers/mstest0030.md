@@ -22,6 +22,7 @@ ms.author: enjieid
 | **Enabled by default**              | Yes                                                                |
 | **Default severity**                | Info                                                               |
 | **Introduced in version**           | 3.5.0                                                              |
+| **There is a code fix**             | No                                                                 |
 
 ## Cause
 

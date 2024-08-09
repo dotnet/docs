@@ -2,7 +2,7 @@
 title: "Breaking change: .NET 9 obsoletions with custom IDs"
 titleSuffix: ""
 description: Learn about the .NET 9 breaking change in core .NET libraries where some APIs have been marked as obsolete with a custom diagnostic ID.
-ms.date: 08/01/2024
+ms.date: 08/07/2024
 ---
 # API obsoletions with non-default diagnostic IDs (.NET 9)
 
@@ -19,6 +19,7 @@ The following table lists the custom diagnostic IDs and their corresponding warn
 | [SYSLIB0009](../../../../fundamentals/syslib-diagnostics/syslib0009.md) | <xref:System.Net.AuthenticationManager> is not supported. Methods will no-op or throw <xref:System.PlatformNotSupportedException>. | Warning |
 | [SYSLIB0054](../../../../fundamentals/syslib-diagnostics/syslib0054.md) | <xref:System.Threading.Thread.VolatileRead%2A?displayProperty=nameWithType> and <xref:System.Threading.Thread.VolatileWrite%2A?displayProperty=nameWithType> are obsolete. Use <xref:System.Threading.Volatile.Read%2A?displayProperty=nameWithType> or <xref:System.Threading.Volatile.Write%2A?displayProperty=nameWithType> instead. | Warning |
 | [SYSLIB0055](../../../../fundamentals/syslib-diagnostics/syslib0055.md) | `AdvSimd.ShiftRightLogicalRoundedNarrowingSaturate*` methods with signed parameters are obsolete. Use the unsigned overloads instead. | Warning |
+| [SYSLIB0056](../../../../fundamentals/syslib-diagnostics/syslib0056.md) | `Assembly.LoadFrom` with a custom `AssemblyHashAlgorithm` is obsolete. Use overloads without an `AssemblyHashAlgorithm`. | Warning |
 | [SYSLIB0057](../../../../fundamentals/syslib-diagnostics/syslib0057.md) | `X509Certificate2` and `X509Certificate` constructors for binary and file content are obsolete. | Warning |
 
 ## Version introduced
@@ -57,6 +58,10 @@ These obsoletions can affect [source compatibility](../../categories.md#source-c
 - <xref:System.Runtime.Intrinsics.Arm.AdvSimd.ShiftRightLogicalRoundedNarrowingSaturateUpper(System.Runtime.Intrinsics.Vector64{System.SByte},System.Runtime.Intrinsics.Vector128{System.Int16},System.Byte)?displayProperty=fullName>
 - <xref:System.Runtime.Intrinsics.Arm.AdvSimd.ShiftRightLogicalRoundedNarrowingSaturateUpper(System.Runtime.Intrinsics.Vector64{System.Int16},System.Runtime.Intrinsics.Vector128{System.Int32},System.Byte)?displayProperty=fullName>
 - <xref:System.Runtime.Intrinsics.Arm.AdvSimd.ShiftRightLogicalRoundedNarrowingSaturateUpper(System.Runtime.Intrinsics.Vector64{System.Int32},System.Runtime.Intrinsics.Vector128{System.Int64},System.Byte)?displayProperty=fullName>
+
+### SYSLIB0056
+
+- <xref:System.Reflection.Assembly.LoadFrom(System.String,System.Byte[],System.Configuration.Assemblies.AssemblyHashAlgorithm)>
 
 ### SYSLIB0057
 

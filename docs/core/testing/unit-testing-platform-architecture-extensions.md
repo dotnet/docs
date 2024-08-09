@@ -76,6 +76,8 @@ public interface IExtension
 
 ## Test Framework extension
 
+The test framework is the primary extension that provides the testing platform with the ability to discover and execute tests. The test framework is responsible for communicating the results of the tests back to the testing platform. The test framework is the only mandatory extension required to execute a testing session.
+
 ### Register a testing framework
 
 This section explains how to register the test framework with the testing platform. You register only one testing framework per test application builder using the `TestApplication.RegisterTestFramework` API as shown in [the testing platform architecture](./unit-testing-platform-architecture.md) documentation.

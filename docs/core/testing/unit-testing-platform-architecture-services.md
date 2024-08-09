@@ -366,8 +366,7 @@ IOutputDevice outputDevice = provider.GetOutputDevice();
 
 await outputDevice.DisplayAsync(
     this, 
-    new FormattedTextOutputDeviceData(
-        $"TestingFramework version '{Version}' running tests with parallelism of {_dopValue}")
+    new FormattedTextOutputDeviceData($"TestingFramework version '{Version}' running tests with parallelism of {_dopValue}")
     {
         ForegroundColor = new SystemConsoleColor
         {

@@ -149,10 +149,10 @@ Strength reduction is a compiler optimization where an operation is replaced wit
 
 ```al
 add ecx, dword ptr [rax+4*rdx+0x10]
-inc rdx
+inc edx
 ```
 
-These instructions correspond to the expressions `sum += nums[i]` and `i++`, respectively. `ecx` contains the value of `sum`, `rax` contains the base address of `nums`, and `rdx` contains the value of `i`. To compute the address of `nums[i]`, the index in `rdx` is **multiplied** by four (the size of an integer). This offset is then **added** to the base address in `rax`, plus some padding. (After the integer at `nums[i]` is read, it's added to `ecx` and the index in `rdx` is incremented.) In other words, each array access requires a multiplication *and* an addition operation.
+These instructions correspond to the expressions `sum += nums[i]` and `i++`, respectively. `rcx` (`ecx` holds the lower 32 bits of this register) contains the value of `sum`, `rax` contains the base address of `nums`, and `rdx` contains the value of `i`. To compute the address of `nums[i]`, the index in `rdx` is **multiplied** by four (the size of an integer). This offset is then **added** to the base address in `rax`, plus some padding. (After the integer at `nums[i]` is read, it's added to `rcx` and the index in `rdx` is incremented.) In other words, each array access requires a multiplication *and* an addition operation.
 
 Multiplication is more expensive than addition, and replacing the former with the latter is a classic motivation for strength reduction. To avoid the computation of the element's address on each memory access, you could rewrite the example to access the integers in `nums` using a pointer rather than an index variable:
 
@@ -179,7 +179,7 @@ add ecx, dword ptr [rdx]
 add rdx, 4
 ```
 
-`ecx` still holds the value of `sum`, but `rdx` now holds the address pointed to by `p`, so accessing elements in `nums` just requires us to dereference `rdx`. All the multiplication and addition from the first example has been replaced by a single `add` instruction to move the pointer forward.
+`rcx` (`ecx` holds the lower 32 bits of this register) still holds the value of `sum`, but `rdx` now holds the address pointed to by `p`, so accessing elements in `nums` just requires us to dereference `rdx`. All the multiplication and addition from the first example has been replaced by a single `add` instruction to move the pointer forward.
 
 In .NET 9, the JIT compiler *automatically* transforms the first indexing pattern into the second without requiring you to rewrite any code.
 

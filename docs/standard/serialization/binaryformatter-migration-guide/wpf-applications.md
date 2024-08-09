@@ -1,5 +1,5 @@
 ---
-title: "BinaryFormatter migration guide: WPF applications"
+title: "BinaryFormatter migration guide: WPF apps"
 description: "Learn about the effects of the deprecation and removal of BinaryFormatter from .NET on WPF and how to migrate."
 ms.date: 8/05/2024
 no-loc: [BinaryFormatter, WPF]

@@ -1,5 +1,5 @@
 ---
-title: "BinaryFormatter migration guide: WinForms applications"
+title: "BinaryFormatter migration guide: WinForms apps"
 description: "Learn about the effects of the deprecation and removal of BinaryFormatter from .NET on Windows Forms and how to migrate."
 ms.date: 7/31/2024
 no-loc: [BinaryFormatter, Windows Forms, WinForms]

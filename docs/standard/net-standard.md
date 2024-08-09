@@ -146,6 +146,25 @@ Here are some problems with .NET Standard that help explain why .NET 5 and later
 - Use `netstandard2.0` to share code between .NET Framework and all other implementations of .NET.
 - Use `netstandard2.1` to share code between Mono, Xamarin, and .NET Core 3.x.
 
+### Use Cases for .NET Standard
+.NET Standard is a formal specification of .NET APIs that are intended to be available on all .NET implementations. It provides a way to create libraries that can be shared across different .NET platforms, enhancing code reuse and maintainability.These use cases illustrate the versatility and practicality of targeting .NET Standard for various development scenarios. Here are some common use cases for .NET Standard:
+
+- #### Cross-Platform Libraries
+You have a library that needs to be used in applications targeting different platforms, such as .NET Core, .NET Framework, and Xamarin. For example a logging library that can be used in a web application (ASP.NET Core), a desktop application (WPF on .NET Framework), and a mobile application (Xamarin).
+
+- #### Shared Business Logic
+You have business logic that needs to be shared between different parts of an application, such as a web service and a desktop client. For example a validation library used in both a backend API (ASP.NET Core) and a frontend application (WPF on .NET Framework).
+
+- #### Plugin or Extension Frameworks
+You are developing a plugin or extension framework that needs to support multiple host applications built on different .NET implementations. For example a plugin system for a cross-platform application where plugins are built as .NET Standard libraries to ensure compatibility with both the .NET Core and .NET Framework versions of the host application.
+
+- #### Legacy Application Modernization
+You are modernizing a legacy .NET Framework application and want to gradually migrate to .NET Core or .NET 5+. For example a extracting reusable components from a .NET Framework application into .NET Standard libraries to facilitate migration to .NET Core.
+
+- #### Library Distribution
+You are developing a library intended for distribution via NuGet and want to ensure it can be used by the widest possible audience. For example a utility library that targets .NET Standard to maximize compatibility with different .NET implementations used by consumers of the library.
+
+
 ## See also
 
 - [.NET Standard versions (source)](https://github.com/dotnet/standard/blob/v2.1.0/docs/versions.md)

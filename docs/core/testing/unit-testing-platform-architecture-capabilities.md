@@ -77,10 +77,10 @@ The hypothetical code fragment inside the extension could be something like:
 
 ```csharp
 IServiceProvider provider = null; // TODO: Get IServiceProvider.
-ITestFrameworkCapabilities capabilities = serviceProvider.GetRequiredService<ITestFrameworkCapabilities>();
+var capabilities = serviceProvider.GetRequiredService<ITestFrameworkCapabilities>();
 
 // Utilize the `GetCapability` API to search for the specific capability to query.
-IDisableParallelismCapability? capability = capabilities.GetCapability<IDisableParallelismCapability>();
+var capability = capabilities.GetCapability<IDisableParallelismCapability>();
 if (capability is null)
 {
     // Capability not supported...

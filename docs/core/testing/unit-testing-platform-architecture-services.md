@@ -27,14 +27,28 @@ The testing platform offers handy extension methods to access well-known service
 ```csharp
 public static class ServiceProviderExtensions
 {
-    public static TService GetRequiredService<TService>(this IServiceProvider provider)
-    public static TService? GetService<TService>(this IServiceProvider provider)
-    public static IMessageBus GetMessageBus(this IServiceProvider serviceProvider)
-    public static IConfiguration GetConfiguration(this IServiceProvider serviceProvider)
-    public static ICommandLineOptions GetCommandLineOptions(this IServiceProvider serviceProvider)
-    public static ILoggerFactory GetLoggerFactory(this IServiceProvider serviceProvider)
-    public static IOutputDevice GetOutputDevice(this IServiceProvider serviceProvider)
-    ...and more
+    public static TService GetRequiredService<TService>(
+        this IServiceProvider provider)
+
+    public static TService? GetService<TService>(
+        this IServiceProvider provider)
+
+    public static IMessageBus GetMessageBus(
+        this IServiceProvider serviceProvider)
+
+    public static IConfiguration GetConfiguration(
+        this IServiceProvider serviceProvider)
+
+    public static ICommandLineOptions GetCommandLineOptions(
+        this IServiceProvider serviceProvider)
+
+    public static ILoggerFactory GetLoggerFactory(
+        this IServiceProvider serviceProvider)
+
+    public static IOutputDevice GetOutputDevice(
+        this IServiceProvider serviceProvider)
+
+    // ... and more
 }
 ```
 
@@ -83,7 +97,7 @@ The code snippet would look something like this:
 ```csharp
 IServiceProvider serviceProvider = null; // Get the service provider...
 
-IConfiguration configuration = serviceProvider.GetConfiguration();
+var configuration = serviceProvider.GetConfiguration();
 
 if (bool.TryParse(configuration["CustomTestingFramework:DisableParallelism"], out var value) && value is true)
 {
@@ -109,7 +123,7 @@ The syntax to access to the fist element ("ThreadPool") is:
 ```csharp
 IServiceProvider serviceProvider = null; // Get the service provider...
 
-IConfiguration configuration = serviceProvider.GetConfiguration();
+var configuration = serviceProvider.GetConfiguration();
 
 var fistElement = configuration["CustomTestingFramework:Engine:0"];
 ```
@@ -134,7 +148,7 @@ var options = new TestApplicationOptions();
 
 options.Configuration.ConfigurationSources.RegisterEnvironmentVariablesConfigurationSource = false;
 
-ITestApplicationBuilder builder = await TestApplication.CreateBuilderAsync(args, options);
+var builder = await TestApplication.CreateBuilderAsync(args, options);
 ```
 
 ## The `ICommandLineOptions` service
@@ -147,7 +161,8 @@ public interface ICommandLineOptions
     bool IsOptionSet(string optionName);
 
     bool TryGetOptionArgumentList(
-        string optionName, out string[]? arguments);
+        string optionName, 
+        out string[]? arguments);
 }
 ```
 
@@ -190,8 +205,18 @@ The logger factory allows you to create an `ILogger` object using the `CreateLog
 ```csharp
 public interface ILogger
 {
-    Task LogAsync<TState>(LogLevel logLevel, TState state, Exception? exception, Func<TState, Exception?, string> formatter);
-    void Log<TState>(LogLevel logLevel, TState state, Exception? exception, Func<TState, Exception?, string> formatter);
+    Task LogAsync<TState>(
+        LogLevel logLevel, 
+        TState state, 
+        Exception? exception, 
+        Func<TState, Exception?, string> formatter);
+
+    void Log<TState>(
+        LogLevel logLevel,
+        TState state, 
+        Exception? exception, 
+        Func<TState, Exception?, string> formatter);
+
     bool IsEnabled(LogLevel logLevel);
 }
 
@@ -201,22 +226,22 @@ public interface ILogger<out TCategoryName> : ILogger
 
 public static class LoggingExtensions
 {
-    public static Task LogTraceAsync(this ILogger logger, string message);
-    public static Task LogDebugAsync(this ILogger logger, string message);
-    public static Task LogInformationAsync(this ILogger logger, string message);
-    public static Task LogWarningAsync(this ILogger logger, string message);
-    public static Task LogErrorAsync(this ILogger logger, string message);
-    public static Task LogErrorAsync(this ILogger logger, string message, Exception ex);
-    public static Task LogErrorAsync(this ILogger logger, Exception ex);
     public static Task LogCriticalAsync(this ILogger logger, string message);
-    public static void LogTrace(this ILogger logger, string message);
-    public static void LogDebug(this ILogger logger, string message);
-    public static void LogInformation(this ILogger logger, string message);
-    public static void LogWarning(this ILogger logger, string message);
-    public static void LogError(this ILogger logger, string message);
-    public static void LogError(this ILogger logger, string message, Exception ex);
-    public static void LogError(this ILogger logger, Exception ex);
+    public static Task LogDebugAsync(this ILogger logger, string message);
+    public static Task LogErrorAsync(this ILogger logger, Exception ex);
+    public static Task LogErrorAsync(this ILogger logger, string message, Exception ex);
+    public static Task LogErrorAsync(this ILogger logger, string message);
+    public static Task LogInformationAsync(this ILogger logger, string message);
+    public static Task LogTraceAsync(this ILogger logger, string message);
+    public static Task LogWarningAsync(this ILogger logger, string message);
     public static void LogCritical(this ILogger logger, string message);
+    public static void LogDebug(this ILogger logger, string message);
+    public static void LogError(this ILogger logger, Exception ex);
+    public static void LogError(this ILogger logger, string message, Exception ex);
+    public static void LogError(this ILogger logger, string message);
+    public static void LogInformation(this ILogger logger, string message);
+    public static void LogTrace(this ILogger logger, string message);
+    public static void LogWarning(this ILogger logger, string message);
 }
 ```
 
@@ -231,7 +256,7 @@ public enum LogLevel
     Warning,
     Error,
     Critical,
-    None
+    None,
 }
 ```
 
@@ -241,9 +266,9 @@ Here's an example of how you might use the logging API:
 ...
 IServiceProvider provider = null; // Get the service provider...
 
-ILoggerFactory factory = provider.GetLoggerFactory();
+var factory = provider.GetLoggerFactory();
 
-ILogger<TestingFramework> logger = factory.CreateLogger<TestingFramework>();
+var logger = factory.CreateLogger<TestingFramework>();
 
 // ...
 
@@ -275,7 +300,9 @@ The `IMessageBus` satisfied the *pushing action* to the bus and the API is:
 ```csharp
 public interface IMessageBus
 {
-    Task PublishAsync(IDataProducer dataProducer, IData data);
+    Task PublishAsync(
+        IDataProducer dataProducer, 
+        IData data);
 }
 
 public interface IDataProducer : IExtension
@@ -319,7 +346,9 @@ The API consists of:
 ```csharp
 public interface IOutputDevice
 {
-    Task DisplayAsync(IOutputDeviceDataProducer producer, IOutputDeviceData data);
+    Task DisplayAsync(
+        IOutputDeviceDataProducer producer, 
+        IOutputDeviceData data);
 }
 
 public interface IOutputDeviceDataProducer : IExtension
@@ -362,7 +391,7 @@ Here's an example of how you might use the colored text with the *active* output
 ```csharp
 IServiceProvider provider = null; // Get the service provider...
 
-IOutputDevice outputDevice = provider.GetOutputDevice();
+var outputDevice = provider.GetOutputDevice();
 
 await outputDevice.DisplayAsync(
     this, 

@@ -31,7 +31,7 @@ Due to these reasons, the extension points are categorized into two types:
 
     ```csharp
     // ...
-    ITestApplicationBuilder builder = await TestApplication.CreateBuilderAsync(args);
+    var builder = await TestApplication.CreateBuilderAsync(args);
     builder.TestHost.AddXXX(...);
     // ...
     ```
@@ -41,7 +41,7 @@ Due to these reasons, the extension points are categorized into two types:
     You can register *out-of-process extensions* via the `ITestApplicationBuilder.TestHostControllers`.
 
     ```csharp
-    ITestApplicationBuilder builder = await TestApplication.CreateBuilderAsync(args);
+    var builder = await TestApplication.CreateBuilderAsync(args);
     builder.TestHostControllers.AddXXX(...);
     ```
 
@@ -517,20 +517,25 @@ Optional properties, on the other hand, enhance the testing experience by provid
 
 ```csharp
 public record KeyValuePairStringProperty(
-    string Key, string Value) : IProperty;
+    string Key, 
+    string Value) 
+        : IProperty;
 ```
 
 The `KeyValuePairStringProperty` stands for a general key/value pair data.
 
 ```csharp
 public record struct LinePosition(
-    int Line, int Column);
+    int Line, 
+    int Column);
 
 public record struct LinePositionSpan(
-    LinePosition Start, LinePosition End);
+    LinePosition Start, 
+    LinePosition End);
 
 public abstract record FileLocationProperty(
-    string FilePath, LinePositionSpan LineSpan) 
+    string FilePath, 
+    LinePositionSpan LineSpan) 
         : IProperty;
 
 public sealed record TestFileLocationProperty(
@@ -558,7 +563,8 @@ public sealed record TestMethodIdentifierProperty(
 
 ```csharp
 public sealed record TestMetadataProperty(
-    string Key, string Value)
+    string Key, 
+    string Value)
 ```
 
 `TestMetadataProperty` is utilized to convey the characteristics or *traits* of a `TestNode`.
@@ -591,14 +597,33 @@ The `InProgressTestNodeStateProperty` informs the testing platform that the `Tes
 Take note of the handy cached value offered by the `CachedInstance` property.
 
 ```csharp
-public readonly record struct TimingInfo(DateTimeOffset StartTime, DateTimeOffset EndTime, TimeSpan Duration);
-public sealed record StepTimingInfo(string Id, string Description, TimingInfo Timing);
+public readonly record struct TimingInfo(
+    DateTimeOffset StartTime, 
+    DateTimeOffset EndTime, 
+    TimeSpan Duration);
+
+public sealed record StepTimingInfo(
+    string Id, 
+    string Description, 
+    TimingInfo Timing);
 
 public sealed record TimingProperty : IProperty
 {
     public TimingProperty(TimingInfo globalTiming)
-    public TimingProperty(TimingInfo globalTiming, StepTimingInfo[] stepTimings)
+        : this(globalTiming, [])
+    {
+    }
+
+    public TimingProperty(
+        TimingInfo globalTiming, 
+        StepTimingInfo[] stepTimings)
+    {
+        GlobalTiming = globalTiming;
+        StepTimings = stepTimings;
+    }
+
     public TimingInfo GlobalTiming { get; }
+
     public StepTimingInfo[] StepTimings { get; }
 }
 ```
@@ -609,9 +634,11 @@ The `TimingProperty` is utilized to relay timing details about the `TestNode` ex
 
 ```csharp
 public sealed record PassedTestNodeStateProperty(
-    string? Explanation = null)
+    string? Explanation = null) 
+        : TestNodeStateProperty(Explanation)
 {
-    public static PassedTestNodeStateProperty CachedInstance { get; }
+    public static PassedTestNodeStateProperty CachedInstance 
+        { get; } = new PassedTestNodeStateProperty();
 }
 ```
 
@@ -620,9 +647,11 @@ Take note of the handy cached value offered by the `CachedInstance` property.
 
 ```csharp
 public sealed record SkippedTestNodeStateProperty(
-    string? Explanation = null)
+    string? Explanation = null) 
+        : TestNodeStateProperty(Explanation)
 {
-    public static SkippedTestNodeStateProperty CachedInstance { get; }
+    public static SkippedTestNodeStateProperty CachedInstance 
+        { get; } =  new SkippedTestNodeStateProperty();
 }
 ```
 
@@ -630,10 +659,26 @@ public sealed record SkippedTestNodeStateProperty(
 Take note of the handy cached value offered by the `CachedInstance` property.
 
 ```csharp
-public sealed record FailedTestNodeStateProperty
+public sealed record FailedTestNodeStateProperty : TestNodeStateProperty
 {
+    public FailedTestNodeStateProperty()
+        : base(default(string))
+    {
+    }
+
     public FailedTestNodeStateProperty(string explanation)
-    public FailedTestNodeStateProperty(Exception exception, string? explanation = null)
+        : base(explanation)
+    {
+    }
+
+    public FailedTestNodeStateProperty(
+        Exception exception, 
+        string? explanation = null)
+        : base(explanation ?? exception.Message)
+    {
+        Exception = exception;
+    }
+
     public Exception? Exception { get; }
 }
 ```
@@ -641,10 +686,26 @@ public sealed record FailedTestNodeStateProperty
 `FailedTestNodeStateProperty` informs the testing platform that this `TestNode` is failed after an assertion.
 
 ```csharp
-public sealed record ErrorTestNodeStateProperty
+public sealed record ErrorTestNodeStateProperty : TestNodeStateProperty
 {
+    public ErrorTestNodeStateProperty()
+        : base(default(string))
+    {
+    }
+
     public ErrorTestNodeStateProperty(string explanation)
-    public ErrorTestNodeStateProperty(Exception exception, string? explanation = null)
+        : base(explanation)
+    {
+    }
+
+    public ErrorTestNodeStateProperty(
+        Exception exception, 
+        string? explanation = null)
+            : base(explanation ?? exception.Message)
+    {
+        Exception = exception;
+    }
+
     public Exception? Exception { get; }
 }
 ```
@@ -652,11 +713,28 @@ public sealed record ErrorTestNodeStateProperty
 `ErrorTestNodeStateProperty` informs the testing platform that this `TestNode` has failed. This type of failure is different from the `FailedTestNodeStateProperty`, which is used for assertion failures. For example, you can report issues like test initialization errors with `ErrorTestNodeStateProperty`.
 
 ```csharp
-public sealed record TimeoutTestNodeStateProperty
+public sealed record TimeoutTestNodeStateProperty : TestNodeStateProperty
 {
+    public TimeoutTestNodeStateProperty()
+        : base(default(string))
+    {
+    }
+
     public TimeoutTestNodeStateProperty(string explanation)
-    public TimeoutTestNodeStateProperty(Exception exception, string? explanation = null)
+        : base(explanation)
+    {
+    }
+
+    public TimeoutTestNodeStateProperty(
+        Exception exception, 
+        string? explanation = null)
+            : base(explanation ?? exception.Message)
+    {
+        Exception = exception;
+    }
+
     public Exception? Exception { get; }
+
     public TimeSpan? Timeout { get; init; }
 }
 ```
@@ -664,10 +742,26 @@ public sealed record TimeoutTestNodeStateProperty
 `TimeoutTestNodeStateProperty` informs the testing platform that this `TestNode` is failed for a timeout reason. You can report the timeout using the `Timeout` property.
 
 ```csharp
-public sealed record CancelledTestNodeStateProperty
+public sealed record CancelledTestNodeStateProperty : TestNodeStateProperty
 {
+    public CancelledTestNodeStateProperty()
+        : base(default(string))
+    {
+    }
+
     public CancelledTestNodeStateProperty(string explanation)
-    public CancelledTestNodeStateProperty(Exception exception, string? explanation = null)
+        : base(explanation)
+    {
+    }
+
+    public CancelledTestNodeStateProperty(
+        Exception exception, 
+        string? explanation = null)
+        : base(explanation ?? exception.Message)
+    {
+        Exception = exception;
+    }
+
     public Exception? Exception { get; }
 }
 ```
@@ -675,6 +769,8 @@ public sealed record CancelledTestNodeStateProperty
 `CancelledTestNodeStateProperty` informs the testing platform that this `TestNode` has failed due to cancellation.
 
 ## Other extensibility points
+
+The testing platform provides additional extensibility points that allow you to customize the behavior of the platform and the test framework. These extensibility points are optional and can be used to enhance the testing experience.
 
 ### The `ICommandLineOptionsProvider` extensions
 
@@ -706,23 +802,32 @@ In the example provided, `CustomCommandLineOptions` is an implementation of the 
 public interface ICommandLineOptionsProvider : IExtension
 {
     IReadOnlyCollection<CommandLineOption> GetCommandLineOptions();
-    Task<ValidationResult> ValidateOptionArgumentsAsync(CommandLineOption commandOption, string[] arguments);
-    Task<ValidationResult> ValidateCommandLineOptionsAsync(ICommandLineOptions commandLineOptions);
+
+    Task<ValidationResult> ValidateOptionArgumentsAsync(
+        CommandLineOption commandOption, 
+        string[] arguments);
+
+    Task<ValidationResult> ValidateCommandLineOptionsAsync(
+        ICommandLineOptions commandLineOptions);
 }
 
 public sealed class CommandLineOption
 {
-    public CommandLineOption(string name, string description, ArgumentArity arity, bool isHidden)
     public string Name { get; }
     public string Description { get; }
     public ArgumentArity Arity { get; }
     public bool IsHidden { get; }
+
+    // ...
 }
 
 public interface ICommandLineOptions
 {
     bool IsOptionSet(string optionName);
-    bool TryGetOptionArgumentList(string optionName, out string[]? arguments);
+
+    bool TryGetOptionArgumentList(
+        string optionName, 
+        out string[]? arguments);
 }
 ```
 
@@ -760,18 +865,20 @@ For instance, if you have a parameter named `--dop` that represents the degree o
 A possible implementation for the sample above could be:
 
 ```csharp
-    public Task<ValidationResult> ValidateOptionArgumentsAsync(CommandLineOption commandOption, string[] arguments)
+public Task<ValidationResult> ValidateOptionArgumentsAsync(
+    CommandLineOption commandOption, 
+    string[] arguments)
+{
+    if (commandOption.Name == "dop")
     {
-        if (commandOption.Name == "dop")
+        if (!int.TryParse(arguments[0], out int dopValue) || dopValue <= 0)
         {
-            if (!int.TryParse(arguments[0], out int dopValue) || dopValue <= 0)
-            {
-                return ValidationResult.InvalidTask("--dop must be a positive integer");
-            }
+            return ValidationResult.InvalidTask("--dop must be a positive integer");
         }
-
-        return ValidationResult.ValidTask;
     }
+
+    return ValidationResult.ValidTask;
+}
 ```
 
 `ICommandLineOptionsProvider.ValidateCommandLineOptionsAsync`: This method is called as last one and allows to do global coherency check.
@@ -780,15 +887,15 @@ For example, let's say our testing framework has the capability to generate a te
 A possible implementation for the sample above could be:
 
 ```csharp
-    public Task<ValidationResult> ValidateCommandLineOptionsAsync(ICommandLineOptions commandLineOptions)
-    {
-        bool generateReportEnabled = commandLineOptions.IsOptionSet(GenerateReportOption);
-        bool reportFileName = commandLineOptions.TryGetOptionArgumentList(ReportFilenameOption, out string[]? _);
+public Task<ValidationResult> ValidateCommandLineOptionsAsync(ICommandLineOptions commandLineOptions)
+{
+    bool generateReportEnabled = commandLineOptions.IsOptionSet(GenerateReportOption);
+    bool reportFileName = commandLineOptions.TryGetOptionArgumentList(ReportFilenameOption, out string[]? _);
 
-        return (generateReportEnabled || reportFileName) && !(generateReportEnabled && reportFileName)
-            ? ValidationResult.InvalidTask("Both `--generatereport` and `--reportfilename` need to be provided simultaneously.")
-            : ValidationResult.ValidTask;
-    }
+    return (generateReportEnabled || reportFileName) && !(generateReportEnabled && reportFileName)
+        ? ValidationResult.InvalidTask("Both `--generatereport` and `--reportfilename` need to be provided simultaneously.")
+        : ValidationResult.ValidTask;
+}
 ```
 
 Please note that the `ValidateCommandLineOptionsAsync` method provides the [`ICommandLineOptions`](./unit-testing-platform-architecture-services.md#the-icommandlineoptions-service) service, which is used to fetch the argument information parsed by the platform itself.
@@ -800,7 +907,7 @@ The `ITestSessionLifeTimeHandler` is an *in-process* extension that enables the 
 To register a custom `ITestSessionLifeTimeHandler`, utilize the following API:
 
 ```csharp
-ITestApplicationBuilder builder = await TestApplication.CreateBuilderAsync(args);
+var builder = await TestApplication.CreateBuilderAsync(args);
 
 // ...
 
@@ -818,13 +925,18 @@ The `ITestSessionLifeTimeHandler` interface includes the following methods:
 ```csharp
 public interface ITestSessionLifetimeHandler : ITestHostExtension
 {
-    Task OnTestSessionStartingAsync(SessionUid sessionUid, CancellationToken cancellationToken);
-    Task OnTestSessionFinishingAsync(SessionUid sessionUid, CancellationToken cancellationToken);
+    Task OnTestSessionStartingAsync(
+        SessionUid sessionUid, 
+        CancellationToken cancellationToken);
+
+    Task OnTestSessionFinishingAsync(
+        SessionUid sessionUid, 
+        CancellationToken cancellationToken);
 }
 
 public readonly struct SessionUid(string value)
 {
-    public string Value { get; }
+    public string Value { get; } = value;
 }
 
 public interface ITestHostExtension : IExtension
@@ -851,7 +963,7 @@ The `ITestApplicationLifecycleCallbacks` is an *in-process* extension that enabl
 To register a custom `ITestApplicationLifecycleCallbacks`, utilize the following api:
 
 ```csharp
-ITestApplicationBuilder builder = await TestApplication.CreateBuilderAsync(args);
+var builder = await TestApplication.CreateBuilderAsync(args);
 
 // ...
 
@@ -871,7 +983,10 @@ The `ITestApplicationLifecycleCallbacks` interface includes the following method
 public interface ITestApplicationLifecycleCallbacks : ITestHostExtension
 {
     Task BeforeRunAsync(CancellationToken cancellationToken);
-    Task AfterRunAsync(int exitCode, CancellationToken cancellation);
+
+    Task AfterRunAsync(
+        int exitCode, 
+        CancellationToken cancellation);
 }
 
 public interface ITestHostExtension : IExtension
@@ -898,7 +1013,7 @@ The `IDataConsumer` is an *in-process* extension capable of subscribing to and r
 To register a custom `IDataConsumer`, utilize the following api:
 
 ```csharp
-ITestApplicationBuilder builder = await TestApplication.CreateBuilderAsync(args);
+var builder = await TestApplication.CreateBuilderAsync(args);
 
 // ...
 
@@ -917,7 +1032,11 @@ The `IDataConsumer` interface includes the following methods:
 public interface IDataConsumer : ITestHostExtension
 {
     Type[] DataTypesConsumed { get; }
-    Task ConsumeAsync(IDataProducer dataProducer, IData value, CancellationToken cancellationToken);
+
+    Task ConsumeAsync(
+        IDataProducer dataProducer, 
+        IData value, 
+        CancellationToken cancellationToken);
 }
 
 public interface IData
@@ -940,13 +1059,14 @@ internal class CustomDataConsumer : IDataConsumer, IOutputDeviceDataProducer
 {
     public Type[] DataTypesConsumed => new[] { typeof(TestNodeUpdateMessage) };
     ...
-    public Task ConsumeAsync(IDataProducer dataProducer, IData value, CancellationToken cancellationToken)
+    public Task ConsumeAsync(
+        IDataProducer dataProducer, 
+        IData value, 
+        CancellationToken cancellationToken)
     {
         var testNodeUpdateMessage = (TestNodeUpdateMessage)value;
 
-        TestNodeStateProperty nodeState = testNodeUpdateMessage.TestNode.Properties.Single<TestNodeStateProperty>();
-
-        switch (nodeState)
+        switch (testNodeUpdateMessage.TestNode.Properties.Single<TestNodeStateProperty>())
         {
             case InProgressTestNodeStateProperty _:
                 {
@@ -996,7 +1116,7 @@ The `ITestHostEnvironmentVariableProvider` is an *out-of-process* extension that
 To register a custom `ITestHostEnvironmentVariableProvider`, utilize the following API:
 
 ```csharp
-ITestApplicationBuilder builder = await TestApplication.CreateBuilderAsync(args);
+var builder = await TestApplication.CreateBuilderAsync(args);
 
 // ...
 
@@ -1015,7 +1135,9 @@ The `ITestHostEnvironmentVariableProvider` interface includes the following meth
 public interface ITestHostEnvironmentVariableProvider : ITestHostControllersExtension, IExtension
 {
     Task UpdateAsync(IEnvironmentVariables environmentVariables);
-    Task<ValidationResult> ValidateTestHostEnvironmentVariablesAsync(IReadOnlyEnvironmentVariables environmentVariables);
+
+    Task<ValidationResult> ValidateTestHostEnvironmentVariablesAsync(
+        IReadOnlyEnvironmentVariables environmentVariables);
 }
 
 public interface IEnvironmentVariables : IReadOnlyEnvironmentVariables
@@ -1026,13 +1148,21 @@ public interface IEnvironmentVariables : IReadOnlyEnvironmentVariables
 
 public interface IReadOnlyEnvironmentVariables
 {
-    bool TryGetVariable(string variable, [NotNullWhen(true)] out OwnedEnvironmentVariable? environmentVariable);
+    bool TryGetVariable(
+        string variable, 
+        [NotNullWhen(true)] out OwnedEnvironmentVariable? environmentVariable);
 }
 
 public sealed class OwnedEnvironmentVariable : EnvironmentVariable
 {
     public IExtension Owner { get; }
-    public OwnedEnvironmentVariable(IExtension owner, string variable, string? value, bool isSecret, bool isLocked);
+
+    public OwnedEnvironmentVariable(
+        IExtension owner, 
+        string variable, 
+        string? value, 
+        bool isSecret, 
+        bool isLocked);
 }
 
 public class EnvironmentVariable
@@ -1069,7 +1199,7 @@ The `ITestHostProcessLifetimeHandler` is an *out-of-process* extension that allo
 To register a custom `ITestHostProcessLifetimeHandler`, utilize the following API:
 
 ```csharp
-ITestApplicationBuilder builder = await TestApplication.CreateBuilderAsync(args);
+var builder = await TestApplication.CreateBuilderAsync(args);
 
 // ...
 
@@ -1088,8 +1218,14 @@ The `ITestHostProcessLifetimeHandler` interface includes the following methods:
 public interface ITestHostProcessLifetimeHandler : ITestHostControllersExtension
 {
     Task BeforeTestHostProcessStartAsync(CancellationToken cancellationToken);
-    Task OnTestHostProcessStartedAsync(ITestHostProcessInformation testHostProcessInformation, CancellationToken cancellation);
-    Task OnTestHostProcessExitedAsync(ITestHostProcessInformation testHostProcessInformation, CancellationToken cancellation);
+
+    Task OnTestHostProcessStartedAsync(
+        ITestHostProcessInformation testHostProcessInformation, 
+        CancellationToken cancellation);
+
+    Task OnTestHostProcessExitedAsync(
+        ITestHostProcessInformation testHostProcessInformation, 
+        CancellationToken cancellation);
 }
 
 public interface ITestHostProcessInformation
@@ -1139,6 +1275,8 @@ The testing platform consists of a [testing framework](#test-framework-extension
 1. Out-of-process cleanup, involves calling dispose and [IAsyncCleanableExtension](#asynchronous-initialization-and-cleanup-of-extensions) on all extension points.
 
 ## Extensions helpers
+
+The testing platform provides a set of helper classes and interfaces to simplify the implementation of extensions. These helpers are designed to streamline the development process and ensure that the extension adheres to the platform's standards.
 
 ### Asynchronous initialization and cleanup of extensions
 
@@ -1191,14 +1329,13 @@ internal class CustomExtension : ITestSessionLifetimeHandler, IDataConsumer, ...
 Once you've created the `CompositeExtensionFactory<CustomExtension>` for your type, you can register it with both the `IDataConsumer` and `ITestSessionLifetimeHandler` APIs, which offer an overload for the `CompositeExtensionFactory<T>`:
 
 ```csharp
-ITestApplicationBuilder builder = await TestApplication.CreateBuilderAsync(args);
+var builder = await TestApplication.CreateBuilderAsync(args);
 
 // ...
 
-CompositeExtensionFactory<CustomExtension> factory = new(serviceProvider => new CustomExtension());
+var factory = new CompositeExtensionFactory<CustomExtension>(serviceProvider => new CustomExtension());
 
 builder.TestHost.AddTestSessionLifetimeHandle(factory);
-
 builder.TestHost.AddDataConsumer(factory);
 ```
 

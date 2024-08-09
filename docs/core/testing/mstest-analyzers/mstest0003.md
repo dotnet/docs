@@ -41,6 +41,7 @@ Test methods (methods marked with the `[TestMethod]` attribute) should follow th
 - they should return `void` or `Task`
 - they should not be `async void`
 - they should not be a special method (constructor, finalizer, operator...)
+- the type declaring this method should be public
 
 ## How to fix violations
 

@@ -16,7 +16,7 @@ helpviewer_keywords:
 
 BinaryFormatter used the [.NET Remoting: Binary Format](/openspecs/windows_protocols/ms-nrbf/) for serialization. This format is known by its abbreviation of MS-NRBF or just NRBF. A common challenge involved in migrating from BinaryFormatter is dealing with BinaryFormatter payloads persisted to storage as reading these payloads previously required BinaryFormatter. Some systems need to retain the ability to read these payloads for gradual migrations to new serializers while avoiding a reference to BinaryFormatter itself.
 
-As part of .NET 9, a new `NrbfDecoder` class was introduced to decode NRBF payloads without performing _deserialization_ of the payload. This API can safely be used to decode trusted or untrusted payloads without any of the risks that BinaryFormatter deserialization carries. However, `NrbfDecoder` merely decodes the data into structures an application can further process. Care must be taken when using `NrbfDecoder` to safely load the data into the appropriate instances.
+As part of .NET 9, a new [`NrbfDecoder`](/dotnet/api/system.formats.nrbf.nrbfdecoder) class was introduced to decode NRBF payloads without performing _deserialization_ of the payload. This API can safely be used to decode trusted or untrusted payloads without any of the risks that BinaryFormatter deserialization carries. However, `NrbfDecoder` merely decodes the data into structures an application can further process. Care must be taken when using `NrbfDecoder` to safely load the data into the appropriate instances.
 
 ## NrbfDecoder
 
@@ -42,10 +42,10 @@ When using `NrbfDecoder`, it is important not to reintroduce those capabilities 
 
 ### Identify NRBF payloads
 
-`NrbfDecoder` provides two `StartsWithPayloadHeader` methods that let you check whether a given stream or buffer starts with the NRBF header. It's recommended to use these methods when you're migrating payloads persisted with `BinaryFormatter` to a [different serializer](./choose-a-serializer.md):
+`NrbfDecoder` provides two [`StartsWithPayloadHeader`](/dotnet/api/system.formats.nrbf.nrbfdecoder.startswithpayloadheader) methods that let you check whether a given stream or buffer starts with the NRBF header. It's recommended to use these methods when you're migrating payloads persisted with `BinaryFormatter` to a [different serializer](./choose-a-serializer.md):
 
-- Check if the payload read from storage is an [NRBF](/openspecs/windows_protocols/ms-nrbf/) payload.
-- If so, read it with `NrbfDecoder`, serialize it back with a new serializer, and overwrite the data in the storage.
+- Check if the payload read from storage is an [NRBF](/openspecs/windows_protocols/ms-nrbf/) payload with [`NrbfDecoder.StartsWithPayloadHeader`](/dotnet/api/system.formats.nrbf.nrbfdecoder.startswithpayloadheader).
+- If so, read it with [`NrbfDecoder.Decode`](/dotnet/api/system.formats.nrbf.nrbfdecoder.decode), serialize it back with a new serializer, and overwrite the data in the storage.
 - If not, use the new serializer to deserialize the data.
 
 ```csharp
@@ -80,7 +80,7 @@ internal static T LoadFromFile<T>(string path)
 
 The NRBF payload consists of serialization records that represent the serialized objects and their metadata. To read the whole payload and get the root object, you need to call the `Decode` method.
 
-The `Decode` method returns a `SerializationRecord` instance. `SerializationRecord` is an abstract class that represents the serialization record and provides three self-describing properties: `Id`, `RecordType`, and `TypeName`. It exposes one method, `public bool TypeNameMatches(Type type)`, which compares the type name read from the payload (and exposed via `TypeName` property) against the specified type. This method ignores assembly names, so users don't need to worry about type forwarding and assembly versioning. It also does not consider member names or their types (because getting this information would require type loading).
+The `Decode` method returns a [`SerializationRecord`](/dotnet/api/system.formats.nrbf.serializationrecord) instance. `SerializationRecord` is an abstract class that represents the serialization record and provides three self-describing properties: `Id`, `RecordType`, and `TypeName`. It exposes one method, `public bool TypeNameMatches(Type type)`, which compares the type name read from the payload (and exposed via `TypeName` property) against the specified type. This method ignores assembly names, so users don't need to worry about type forwarding and assembly versioning. It also does not consider member names or their types (because getting this information would require type loading).
 
 ```csharp
 using System.Formats.Nrbf;
@@ -97,12 +97,12 @@ static T Pseudocode<T>(Stream payload)
 
 There are more than a dozen different serialization [record types](/openspecs/windows_protocols/ms-nrbf/). This library provides a set of abstractions, so you only need to learn a few of them:
 
-- `PrimitiveTypeRecord<T>`: describes all primitive types natively supported by the NRBF (`string`, `bool`, `byte`, `sbyte`, `char`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `float`, `double`, `decimal`, `TimeSpan`, and `DateTime`).
+- [`PrimitiveTypeRecord<T>`](/dotnet/api/system.formats.nrbf.primitivetyperecord-1): describes all primitive types natively supported by the NRBF (`string`, `bool`, `byte`, `sbyte`, `char`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `float`, `double`, `decimal`, `TimeSpan`, and `DateTime`).
   - Exposes the value via the `Value` property.
-  - `PrimitiveTypeRecord<T>` derives from the non-generic `PrimitiveTypeRecord`, which also exposes a `Value` property. But on the base class, the value is returned as `object` (which introduces boxing for value types).
-- `ClassRecord`: describes all `class` and `struct` besides the aforementioned  primitive types.
-- `ArrayRecord`: describes all array records, including jagged and multi-dimensional arrays.
-- `SZArrayRecord<T>`: describes single-dimensional, zero-indexed array records, where `T` can be either a primitive type or a `ClassRecord`.
+  - `PrimitiveTypeRecord<T>` derives from the non-generic [`PrimitiveTypeRecord`](/dotnet/api/system.formats.nrbf.primitivetyperecord), which also exposes a `Value` property. But on the base class, the value is returned as `object` (which introduces boxing for value types).
+- [`ClassRecord`](/dotnet/api/system.formats.nrbf.classrecord): describes all `class` and `struct` besides the aforementioned  primitive types.
+- [`ArrayRecord`](/dotnet/api/system.formats.nrbf.arrayrecord): describes all array records, including jagged and multi-dimensional arrays.
+- [`SZArrayRecord<T>`](/dotnet/api/system.formats.nrbf.szarrayrecord-1): describes single-dimensional, zero-indexed array records, where `T` can be either a primitive type or a `ClassRecord`.
 
 ```csharp
 SerializationRecord rootObject = NrbfDecoder.Decode(payload); // payload is a Stream
@@ -121,7 +121,7 @@ else if (rootObject is SZArrayRecord<byte> arrayOfBytes)
 }
 ```
 
-Beside `Decode`, the `NrbfDecoder` exposes a `DecodeClassRecord` method that returns `ClassRecord` (or throws).
+Beside `Decode`, the `NrbfDecoder` exposes a [`DecodeClassRecord`](/dotnet/api/system.formats.nrbf.nrbfdecoder.decodeclassrecord) method that returns `ClassRecord` (or throws).
 
 #### ClassRecord
 

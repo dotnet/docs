@@ -12,13 +12,13 @@ helpviewer_keywords:
 
 ## BinaryFormatter removal
 
-Starting with .NET 9, `BinaryFormatter` is no longer supported due to its known [security risks](/docs/standard/serialization/binaryformatter-security-guide.md) and its APIs always throw an exception for all project types, including WPF apps. For more information about the risks BinaryFormatter poses and the reason for its removal, see the [BinaryFormatter migration guide](index.md).
+Starting with .NET 9, `BinaryFormatter` is no longer supported due to its known [security risks](/docs/standard/serialization/binaryformatter-security-guide.md) and its APIs always throw a [`PlatformNotSupportedException`](/dotnet/api/system.platformnotsupportedexception) for all project types, including WPF apps. For more information about the risks BinaryFormatter poses and the reason for its removal, see the [BinaryFormatter migration guide](index.md).
 
 With BinaryFormatter’s removal, it's expected that many WPF applications will be impacted, and you'll need to take action to complete your migration to .NET 9 or a later version.
 
 ## How BinaryFormatter affects WPF
 
-Prior to .NET 9, Windows Presentation Foundation (WPF) used `BinaryFormatter` to serialize and deserialize data for scenarios such clipboard, drag-and-drop, and load/store state in Journal. Starting with .NET 9, WPF and Windows Forms use a subset of the `BinaryFormatter` implementation internally for these scenarios. While BinaryFormatter's risks cannot be addressed in general-purpose serialization/deserialization, measures have been taken to mitigate the risks in these very specific use cases with a known set of types. A fall-back to `BinaryFormatter` is still in place for unknown or unsupported types, which will throw exceptions unless migration steps are taken in the application.
+Prior to .NET 9, Windows Presentation Foundation (WPF) used `BinaryFormatter` to serialize and deserialize data for scenarios such clipboard, drag-and-drop, and load/store state in Journal. Starting with .NET 9, WPF and Windows Forms use a subset of the `BinaryFormatter` implementation internally for these scenarios. While BinaryFormatter's risks cannot be addressed in general-purpose serialization/deserialization, measures have been taken to mitigate the risks in these very specific use cases with a known set of types. A fall-back to `BinaryFormatter` is still in place for unknown or unsupported types, which will throw a [`PlatformNotSupportedException`](/dotnet/api/system.platformnotsupportedexception) unless migration steps are taken in the application.
 
 WPF and WinForms apps both handle the following types, along with arrays and lists of these types. Clipboard, drag-and-drop, and Avalon Binding in Journal will continue to work with these types without any migration steps needed.
 

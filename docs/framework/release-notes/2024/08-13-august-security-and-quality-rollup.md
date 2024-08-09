@@ -28,7 +28,7 @@ This release contains the following quality and reliability improvements.
 
 #### .NET fundamentals
 
-Addresses an issue to render WU automation ListView sub items. (*Applies to: .NET Framework 4.8, 4.8.1.*)
+Addresses an issue to render ListView sub items. (*Applies to: .NET Framework 4.8, 4.8.1.*)
 Addresses an issue with bypass serialization binder with binary formatter mutations. (*Applies to: .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2, 4.8, 4.8.1.*)
 Addresses an issue to remove meta tags information referencing "Recreational Software Advisory Council" and the content-rating schema from ASP.NET WebForms SmartNavigation feature. (*Applies to: .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2, 4.8, 4.8.1.*)
 Addresses an issue with .NET Framework interaction with Visual Studio.  The fix avoids conflicts between design-time compilation of some .NET Framework ASP.NET projects that could result in slowed developer experience for large projects. (*Applies to: .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2, 4.8, 4.8.1.*)

@@ -22,7 +22,7 @@ ms.author: amauryleve
 
 ## Suppressor description
 
-Suppress the [VSTHRD200: Use Async suffix for async methods]([../../../csharp/language-reference/compiler-messages/nullable-warnings.md#nonnullable-reference-not-initialized](https://github.com/microsoft/vs-threading/blob/main/doc/analyzers/VSTHRD200.md)) diagnostic for all test methods as they are not required to follow the naming convention.
+Suppress the [VSTHRD200: Use Async suffix for async methods](https://github.com/microsoft/vs-threading/blob/main/doc/analyzers/VSTHRD200.md) diagnostic for all test methods as they are not required to follow the naming convention.
 
 ## When to disable suppressor
 

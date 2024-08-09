@@ -2,16 +2,16 @@
 title: What's new in .NET libraries for .NET 9
 description: Learn about the new .NET libraries features introduced in .NET 9.
 titleSuffix: ""
-ms.date: 07/11/2024
+ms.date: 08/09/2024
 ms.topic: whats-new
 ---
 # What's new in .NET libraries for .NET 9
 
-This article describes new features in the .NET libraries for .NET 9. It's been updated for .NET 9 Preview 6.
+This article describes new features in the .NET libraries for .NET 9. It's been updated for .NET 9 Preview 7.
 
 ## Base64Url
 
-Base64 is an encoding scheme that translates arbitrary bytes into text composed of a specific set of 64 characters. It's a very common approach for transferring data and has long been supported via a variety of methods, such as with <xref:System.Convert.ToBase64String%2A?displayProperty=nameWithType> or <xref:System.Buffers.Text.Base64.DecodeFromUtf8(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Int32@,System.Int32@,System.Boolean)?displayProperty=nameWithType>. However, some of the characters it uses makes it less than ideal for use in some circumstances you might otherwise want to use it, such as in query strings. In particular, the 64 characters that comprise the Base64 table include '+' and '/', both of which have their own meaning in URLs. This led to the creation of the Base64Url scheme, which is similar to Base64 but uses a slightly different set of characters that makes it appropriate for use in URLs contexts. .NET 9 includes the new `Base64Url` <!--<xref:System.Buffers.Text.Base64>--> class, which provides many helpful and optimized methods for encoding and decoding with `Base64Url` to and from a variety of data types.
+Base64 is an encoding scheme that translates arbitrary bytes into text composed of a specific set of 64 characters. It's a very common approach for transferring data and has long been supported via a variety of methods, such as with <xref:System.Convert.ToBase64String%2A?displayProperty=nameWithType> or <xref:System.Buffers.Text.Base64.DecodeFromUtf8(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Int32@,System.Int32@,System.Boolean)?displayProperty=nameWithType>. However, some of the characters it uses makes it less than ideal for use in some circumstances you might otherwise want to use it, such as in query strings. In particular, the 64 characters that comprise the Base64 table include '+' and '/', both of which have their own meaning in URLs. This led to the creation of the Base64Url scheme, which is similar to Base64 but uses a slightly different set of characters that makes it appropriate for use in URLs contexts. .NET 9 includes the new <xref:System.Buffers.Text.Base64> class, which provides many helpful and optimized methods for encoding and decoding with `Base64Url` to and from a variety of data types.
 
 The following example demonstrates using the new class.
 
@@ -32,13 +32,13 @@ The collection types in .NET gain the following updates for .NET 9:
 
 In high-performance code, spans are often used to avoid allocating strings unnecessarily, and lookup tables with types like <xref:System.Collections.Generic.Dictionary%602> and <xref:System.Collections.Generic.HashSet%601> are frequently used as caches. However, it's been challenging to use these types together, as there was no safe, built-in mechanism for doing lookups on these types with spans. Now with the new `allows ref struct` feature in C# 13 and new features on these collection types in .NET 9, it's possible to perform these kinds of lookups.
 
-The following example demonstrates using `Dictionary<TKey, TValue>.GetAlternateLookup` <!--<xref:System.Collections.Generic.Dictionary%602.GetAlternateLookup?displayProperty=nameWithType>-->.
+The following example demonstrates using <xref:System.Collections.Generic.Dictionary%602.GetAlternateLookup?displayProperty=nameWithType>.
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Collections.cs" id="AlternateLookup":::
 
 ### `OrderedDictionary<TKey, TValue>`
 
-In many scenarios, you might want to store key-value pairs in a way where order can be maintained (a list of key-value pairs) but where fast lookup by key is also supported (a dictionary of key-value pairs). Since the early days of .NET, the <xref:System.Collections.Specialized.OrderedDictionary> type has supported this scenario, but only in a non-generic manner, with keys and values typed as `object`. .NET 9 introduces the long-requested `OrderedDictionary<TKey, TValue>` <!--<xref:System.Collections.Generic.OrderedDictionary%602>--> collection, which provides an efficient, generic type to support these scenarios.
+In many scenarios, you might want to store key-value pairs in a way where order can be maintained (a list of key-value pairs) but where fast lookup by key is also supported (a dictionary of key-value pairs). Since the early days of .NET, the <xref:System.Collections.Specialized.OrderedDictionary> type has supported this scenario, but only in a non-generic manner, with keys and values typed as <xref:System.Collections.Generic.OrderedDictionary%602> collection, which provides an efficient, generic type to support these scenarios.
 
 The following code uses the new class.
 
@@ -56,7 +56,7 @@ This method unblocks users who want to implement graph algorithms in contexts wh
 
 ### `ReadOnlySet<T>`
 
-It's often desirable to give out read-only views of collections. <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> lets you create a read-only wrapper around an arbitrary mutable <xref:System.Collections.Generic.IList%601>, and <xref:System.Collections.ObjectModel.ReadOnlyDictionary%602> lets you create a read-only wrapper around an arbitrary mutable <xref:System.Collections.Generic.IDictionary%602>. However, past versions of .NET had no built-in support for doing the same with <xref:System.Collections.Generic.ISet%601>. .NET 9 introduces `ReadOnlySet<T>` <!--<xref:System.Collections.Generic.ReadOnlySet%601>--> to address this.
+It's often desirable to give out read-only views of collections. <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> lets you create a read-only wrapper around an arbitrary mutable <xref:System.Collections.Generic.IList%601>, and <xref:System.Collections.ObjectModel.ReadOnlyDictionary%602> lets you create a read-only wrapper around an arbitrary mutable <xref:System.Collections.Generic.IDictionary%602>. However, past versions of .NET had no built-in support for doing the same with <xref:System.Collections.Generic.ISet%601>. .NET 9 introduces <xref:System.Collections.Generic.ReadOnlySet%601> to address this.
 
 The new class enables the following usage pattern.
 
@@ -132,7 +132,7 @@ Previously, you could only link a tracing <xref:System.Diagnostics.Activity> to 
 
 ### Metrics.Gauge instrument
 
-<xref:System.Diagnostics.Metrics> now provides the `Gauge` <!--<xref:<xref:System.Diagnostics.Metrics.Gauge>--> instrument according to the OpenTelemetry specification. The `Gauge` instrument is designed to record non-additive values when changes occur. For example, it can measure the background noise level, where summing the values from multiple rooms would be nonsensical. The `Gauge` instrument is a generic type that can record any value type, such as `int`, `double`, or `decimal`.
+<xref:System.Diagnostics.Metrics> now provides the <xref:<xref:System.Diagnostics.Metrics.Gauge> instrument according to the OpenTelemetry specification. The `Gauge` instrument is designed to record non-additive values when changes occur. For example, it can measure the background noise level, where summing the values from multiple rooms would be nonsensical. The `Gauge` instrument is a generic type that can record any value type, such as `int`, `double`, or `decimal`.
 
 The following example demonstrates using the the `Gauge` instrument.
 
@@ -217,7 +217,7 @@ The networking area includes in the following updates in .NET 9:
 
 ### System.Net.ServerSentEvents
 
-Server-sent events (SSE) is a simple and popular protocol for streaming data from a server to a client. It's used, for example, by OpenAI as part of streaming generated text from its AI services. To simplify the consumption of SSE, the new `System.Net.ServerSentEvents` <!--<xref:System.Net.ServerSentEvents>--> library provides a parser for easily ingesting server-sent events.
+Server-sent events (SSE) is a simple and popular protocol for streaming data from a server to a client. It's used, for example, by OpenAI as part of streaming generated text from its AI services. To simplify the consumption of SSE, the new <xref:System.Net.ServerSentEvents> library provides a parser for easily ingesting server-sent events.
 
 The following code demonstrates using the new class.
 
@@ -300,7 +300,7 @@ The following example demonstrates `Regex.Split`.
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/RegularExpressions.cs" id="RegexSplit":::
 
-However, `Regex.Split` only accepts a `string` as input and doesn't support input being provided as a `ReadOnlySpan<char>`. Also, it outputs the full set of splits as a `string[]`, which requires allocating both the `string` array to hold the results and a `string` for each split. In .NET 9, the new `EnumerateSplits` <!--<xref:System.Text.RegularExpressions.Regex.EnumerateSplits%2A>--> method enables performing the same operation, but with a span-based input and without incurring any allocation for the results. It accepts a `ReadOnlySpan<char>` and returns an enumerable of <xref:System.Range> objects that represent the results.
+However, `Regex.Split` only accepts a `string` as input and doesn't support input being provided as a `ReadOnlySpan<char>`. Also, it outputs the full set of splits as a `string[]`, which requires allocating both the `string` array to hold the results and a `string` for each split. In .NET 9, the new <xref:System.Text.RegularExpressions.Regex.EnumerateSplits%2A> method enables performing the same operation, but with a span-based input and without incurring any allocation for the results. It accepts a `ReadOnlySpan<char>` and returns an enumerable of <xref:System.Range> objects that represent the results.
 
 The following example demonstrates `Regex.EnumerateSplits`, taking a `ReadOnlySpan<char>` as input.
 
@@ -332,7 +332,7 @@ If you want to serialize with the [default options that ASP.NET Core uses](../..
 
 ### JsonSchemaExporter
 
-JSON is frequently used to represent types in method signatures as part of remote procedure&ndash;calling schemes. It's used, for example, as part of OpenAPI specifications, or as part of tool calling with AI services like those from OpenAI. Developers can serialize and deserialize .NET types as JSON using <xref:System.Text.Json>. But they also need to be able to get a JSON schema that describes the shape of the .NET type (that is, describes the shape of what would be serialized and what can be deserialized). <xref:System.Text.Json> now provides the `JsonSchemaExporter` <!--<xref:System.Text.Json.Schema.JsonSchemaExporter>--> type, which supports generating a JSON schema that represents a .NET type.
+JSON is frequently used to represent types in method signatures as part of remote procedure&ndash;calling schemes. It's used, for example, as part of OpenAPI specifications, or as part of tool calling with AI services like those from OpenAI. Developers can serialize and deserialize .NET types as JSON using <xref:System.Text.Json>. But they also need to be able to get a JSON schema that describes the shape of the .NET type (that is, describes the shape of what would be serialized and what can be deserialized). <xref:System.Text.Json> now provides the <xref:System.Text.Json.Schema.JsonSchemaExporter> type, which supports generating a JSON schema that represents a .NET type.
 
 The following code generates a JSON schema from a type.
 
@@ -369,7 +369,7 @@ The generated schema is:
 
 ### Respect nullable annotations
 
-<xref:System.Text.Json> now recognizes nullability annotations of properties and can be configured to enforce those during serialization and deserialization using the `RespectNullableAnnotations` <!--<xref:System.Text.Json.JsonSerializerOptions.RespectNullableAnnotations>--> flag.
+<xref:System.Text.Json> now recognizes nullability annotations of properties and can be configured to enforce those during serialization and deserialization using the <xref:System.Text.Json.JsonSerializerOptions.RespectNullableAnnotations> flag.
 
 The following code shows how to set the option (the `Book` type definition is shown in the previous section):
 
@@ -383,11 +383,11 @@ You can also enable this setting globally using the `System.Text.Json.JsonSerial
 </ItemGroup>
 ```
 
-You can configure nullability at an individual property level using the `JsonPropertyInfo.IsGetNullable` <!--<xref:System.Text.Json.Serialization.Metadata.JsonPropertyInfo.IsGetNullable>--> and `JsonPropertyInfo.IsSetNullable` <!--<xref:System.Text.Json.Serialization.Metadata.JsonPropertyInfo.IsSetNullable>--> properties.
+You can configure nullability at an individual property level using the <xref:System.Text.Json.Serialization.Metadata.JsonPropertyInfo.IsGetNullable> and <xref:System.Text.Json.Serialization.Metadata.JsonPropertyInfo.IsSetNullable> properties.
 
 ### Require non-optional constructor parameters
 
-Historically, <xref:System.Text.Json> has treated non-optional constructor parameters as optional when using constructor-based deserialization. You can change that behavior using the new `RespectRequiredConstructorParameters` <!--<xref:System.Text.Json.JsonSerializerOptions.RespectRequiredConstructorParameters>--> flag.
+Historically, <xref:System.Text.Json> has treated non-optional constructor parameters as optional when using constructor-based deserialization. You can change that behavior using the new <xref:System.Text.Json.JsonSerializerOptions.RespectRequiredConstructorParameters> flag.
 
 The following code shows how to set the option:
 
@@ -468,7 +468,7 @@ ReadOnlySpan<char> text = ...;
 File.WriteAllText(filePath, text);
 ```
 
-New `ReadOnlySpan.StartsWith` <!--<xref:System.ReadOnlySpan.StartsWith%2A>--> and `ReadOnlySpan.EndsWith` <!--<xref:System.ReadOnlySpan.EndsWith%2A>--> extension methods have also been added for spans, making it easy to test whether a <xref:System.ReadOnlySpan%601> starts or ends with a specific `T` value.
+New <xref:System.ReadOnlySpan.StartsWith%2A> and <xref:System.ReadOnlySpan.EndsWith%2A> extension methods have also been added for spans, making it easy to test whether a <xref:System.ReadOnlySpan%601> starts or ends with a specific `T` value.
 
 The following code uses these new convenience APIs.
 

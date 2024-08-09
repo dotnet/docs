@@ -315,7 +315,7 @@ When the address of a local variable is used, the JIT compiler must take extra p
 
 ### AVX10v1 support
 
-New APIs have been added for AVX10, which is a new SIMD instruction set from Intel. You can accelerate your .NET applications on AVX10-enabled hardware with vectorized operations using the new `System.Runtime.Intrinsics.X86.Avx10v1` <!--<xref:System.Runtime.Intrinsics.X86.Avx10v1>--> APIs.
+New APIs have been added for AVX10, which is a new SIMD instruction set from Intel. You can accelerate your .NET applications on AVX10-enabled hardware with vectorized operations using the new <xref:System.Runtime.Intrinsics.X86.Avx10v1> APIs.
 
 ### Hardware intrinsic code generation
 
@@ -350,7 +350,7 @@ The use of `size` in the call to `Sse2.ShiftRightLogical128BitLane` can be subst
 
 ### Arm64 SVE support
 
-.NET 9 introduces experimental support for the Scalable Vector Extension (SVE), a SIMD instruction set for ARM64 CPUs. .NET already supported the NEON instruction set, so on NEON-capable hardware, your applications can leverage 128-bit vector registers. SVE supports flexible vector lengths all the way up to 2048 bits, unlocking more data processing per instruction. In .NET 9, <xref:System.Numerics.Vector%601> is 128 bits wide when targeting SVE, and future work will enable scaling of its width to match the target machine's vector register size. You can accelerate your .NET applications on SVE-capable hardware using the new `System.Runtime.Intrinsics.Arm.Sve` <!--System.Runtime.Intrinsics.Arm.Sve--> APIs.
+.NET 9 introduces experimental support for the Scalable Vector Extension (SVE), a SIMD instruction set for ARM64 CPUs. .NET already supported the NEON instruction set, so on NEON-capable hardware, your applications can leverage 128-bit vector registers. SVE supports flexible vector lengths all the way up to 2048 bits, unlocking more data processing per instruction. In .NET 9, <xref:System.Numerics.Vector%601> is 128 bits wide when targeting SVE, and future work will enable scaling of its width to match the target machine's vector register size. You can accelerate your .NET applications on SVE-capable hardware using the new `System.Runtime.Intrinsics.Arm.Sve` <!--<xref:System.Runtime.Intrinsics.Arm.Sve>--> APIs.
 
 > [!NOTE]
 > SVE support in .NET 9 is experimental. The APIs under `System.Runtime.Intrinsics.Arm.Sve` are marked with <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute>, which means they're subject to change in future releases. Additionally, debugger stepping and breakpoints through SVE-generated code might not function properly, resulting in application crashes or corruption of data.

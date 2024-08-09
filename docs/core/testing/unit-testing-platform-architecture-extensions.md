@@ -90,7 +90,7 @@ ITestApplicationBuilder RegisterTestFramework(
 
 The `RegisterTestFramework` API expects two factories:
 
-1. `Func<IServiceProvider, ITestFrameworkCapabilities>`: This is a lambda function that accepts an object implementing the [`IServiceProvider`](./unit-testing-platform-architecture-services.md) interface and returns an object implementing the [`ITestFrameworkCapabilities`](./unit-testing-platform-architecture-capabilities.md) interface. The [`IServiceProvider`](./unit-testing-platform-architecture-services.md#the-imessagebus-service) provides access to platform services such as configurations, loggers, command line arguments, etc.
+1. `Func<IServiceProvider, ITestFrameworkCapabilities>`: This is a delegate that accepts an object implementing the [`IServiceProvider`](./unit-testing-platform-architecture-services.md) interface and returns an object implementing the [`ITestFrameworkCapabilities`](./unit-testing-platform-architecture-capabilities.md) interface. The [`IServiceProvider`](./unit-testing-platform-architecture-services.md#the-imessagebus-service) provides access to platform services such as configurations, loggers, and command line arguments.
 
     The [`ITestFrameworkCapabilities`](./unit-testing-platform-architecture-capabilities.md) interface is used to announce the capabilities supported by the testing framework to the platform and extensions. It allows the platform and extensions to interact correctly by implementing and supporting specific behaviors. For a better understanding of the [concept of capabilities](./unit-testing-platform-architecture-capabilities.md), refer to the respective section.
 

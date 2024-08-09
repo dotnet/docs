@@ -22,6 +22,8 @@ items:
         href: core-libraries/9.0/unsafeaccessor-generics.md
       - name: API obsoletions with custom diagnostic IDs
         href: core-libraries/9.0/obsolete-apis-with-custom-diagnostics.md
+      - name: BigInteger maximum length
+        href: core-libraries/9.0/biginteger-limit.md
       - name: Creating type of array of System.Void not allowed
         href: core-libraries/9.0/type-instance.md
       - name: "`Equals`/`GetHashCode` throw for `InlineArrayAttribute` types"
@@ -58,6 +60,10 @@ items:
         href: sdk/9.0/terminal-logger.md
       - name: Warning emitted for .NET Standard 1.x targets
         href: sdk/9.0/netstandard-warning.md
+    - name: Serialization
+      items:
+      - name: BinaryFormatter always throws
+        href: serialization/9.0/binaryformatter-removal.md
     - name: Windows Forms
       items:
       - name: BindingSource.SortDescriptions doesn't return null
@@ -126,6 +132,8 @@ items:
         href: core-libraries/8.0/decodefromutf8-whitespace.md
       - name: Boolean-backed enum type support removed
         href: core-libraries/8.0/bool-backed-enum.md
+      - name: Complex.ToString format changed to `<a; b>`
+        href: core-libraries/8.0/complex-format.md
       - name: Drive's current directory path enumeration
         href: core-libraries/8.0/drive-current-dir-paths.md
       - name: Enumerable.Sum throws new OverflowException for some inputs
@@ -1208,6 +1216,8 @@ items:
         href: core-libraries/9.0/unsafeaccessor-generics.md
       - name: API obsoletions with custom diagnostic IDs
         href: core-libraries/9.0/obsolete-apis-with-custom-diagnostics.md
+      - name: BigInteger maximum length
+        href: core-libraries/9.0/biginteger-limit.md
       - name: Creating type of array of System.Void not allowed
         href: core-libraries/9.0/type-instance.md
       - name: "`Equals`/`GetHashCode` throw for `InlineArrayAttribute` types"
@@ -1234,6 +1244,8 @@ items:
         href: core-libraries/8.0/decodefromutf8-whitespace.md
       - name: Boolean-backed enum type support removed
         href: core-libraries/8.0/bool-backed-enum.md
+      - name: Complex.ToString format changed to `<a; b>`
+        href: core-libraries/8.0/complex-format.md
       - name: Drive's current directory path enumeration
         href: core-libraries/8.0/drive-current-dir-paths.md
       - name: Enumerable.Sum throws new OverflowException for some inputs
@@ -1794,6 +1806,10 @@ items:
         href: core-libraries/5.0/utf-7-code-paths-obsolete.md
   - name: Serialization
     items:
+    - name: .NET 9
+      items:
+      - name: BinaryFormatter always throws
+        href: serialization/9.0/binaryformatter-removal.md
     - name: .NET 8
       items:
       - name: BinaryFormatter disabled for most projects

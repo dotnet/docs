@@ -38,9 +38,7 @@ public static class ServiceProviderExtensions
 }
 ```
 
-Most of the registration factories exposed by extension points, which can be registered using the `ITestApplicationBuilder` during the setup of the testing application, provide access to the `IServiceProvider`.
-
-For more information, see [registering the testing framework](./unit-testing-platform-architecture-extensions.md#registering-a-testing-framework).
+Most of the registration factories exposed by extension points provide access to the `IServiceProvider`: For example, when [registering the testing framework](./unit-testing-platform-architecture-extensions.md#registering-a-testing-framework), the `IServiceProvider` is passed as a parameter to the factory method.
 
 ```csharp
 ITestApplicationBuilder RegisterTestFramework(
@@ -300,7 +298,7 @@ Consider the following details about the parameters:
 
 This approach facilitates the evolution of the information exchange process, preventing breaking changes when an extension is unfamiliar with new data. **It allows different versions of extensions and the test framework to operate in harmony, based on their mutual understanding**.
 
-The opposite end of the bus is what we refer to as a [consumer](./unit-testing-platform-architecture-extensions.md#the-idataconsumer-extensions), which is subscribed to a specific type of data and can thus consume it.
+The opposite end of the bus is referred to as a [consumer](./unit-testing-platform-architecture-extensions.md#the-idataconsumer-extensions), which is subscribed to a specific type of data and can thus consume it.
 
 > [!IMPORTANT]
 > Always use *await* the call to `PublishAsync`. If you don't, the `IData` might not be processed correctly by the testing platform and extensions, which could lead to subtle bugs. It's only after you've returned from the *await* that you can be assured that the `IData` has been queued for processing on the message bus. Regardless of the extension point you're working on, ensure that you've awaited all `PublishAsync` calls before exiting the extension. For example, if you're implementing the [`testing framework`](./unit-testing-platform-architecture-extensions.md#creating-a-testing-framework), you should not call `Complete` on the [requests](./unit-testing-platform-architecture-extensions.md#handling-requests) until you've awaited all `PublishAsync` calls for that specific request.

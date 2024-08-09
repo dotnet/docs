@@ -216,7 +216,7 @@ public sealed class ExecuteRequestContext
 }
 ```
 
-`IRequest`: This is the base interface for any type of request. We should think about the test framework as an **in-process stateful server** where the lifecycle is:
+`IRequest`: This is the base interface for any type of request. You should think about the test framework as an **in-process stateful server** where the lifecycle is:
 
 ```mermaid
 sequenceDiagram
@@ -456,7 +456,7 @@ public interface IProperty
 }
 ```
 
-* `TestNodeUpdateMessage`: The `TestNodeUpdateMessage` consists of two properties: a `TestNode`, which we will discuss in this section, and a `ParentTestNodeUid`. The `ParentTestNodeUid` indicates that a test may have a parent test, introducing the concept of a **test tree** where `TestNode`s can be arranged in relation to each other. This structure allows for future enhancements and features based on the *tree* relationship between the nodes. If your test framework doesn't require a test tree structure, you can opt not to use it and simply set it to null, resulting in a straightforward flat list of `TestNode`s.
+* `TestNodeUpdateMessage`: The `TestNodeUpdateMessage` consists of two properties: a `TestNode` and a `ParentTestNodeUid`. The `ParentTestNodeUid` indicates that a test may have a parent test, introducing the concept of a **test tree** where `TestNode`s can be arranged in relation to each other. This structure allows for future enhancements and features based on the *tree* relationship between the nodes. If your test framework doesn't require a test tree structure, you can opt not to use it and simply set it to null, resulting in a straightforward flat list of `TestNode`s.
 
 * `TestNode`: The `TestNode` is composed of three properties, one of which is the `Uid` of type `TestNodeUid`. This `Uid` serves as the **UNIQUE STABLE ID** for the node. The term **UNIQUE STABLE ID** implies that the same `TestNode` should maintain an **IDENTICAL** `Uid` across different runs and operating systems. The `TestNodeUid` is an **arbitrary opaque string** that the testing platform accepts as is.
 
@@ -516,7 +516,7 @@ In this segment, we'll elucidate the various well-known `IProperty` options and 
 
 If you're looking for a comprehensive list of well-known properties, you can find it [here](https://github.com/microsoft/testfx/blob/main/src/Platform/Microsoft.Testing.Platform/Messages/TestNodeProperties.cs). If you notice that a property description is missing, please don't hesitate to file an issue.
 
-We can divide the properties in:
+These properties can be divided in the following categories:
 
 1. [*Generic information*](#generic-information): Properties that can be included in any kind of request.
 1. [*Discovery information*](#discovery-information): Properties that are supplied during a `DiscoverTestExecutionRequest` discovery request.
@@ -778,7 +778,8 @@ For examples, refer to the [System.CommandLine arity table](https://learn.micros
 
 `ICommandLineOptionsProvider.ValidateOptionArgumentsAsync`: This method is employed to *validate* the argument provided by the user.
 
-For instance, if we have a parameter named `--dop` that represents the degree of parallelism for our custom testing framework, a user might input `--dop 0`. In this scenario, the value 0 would be invalid because we anticipate a degree of parallelism of 1 or more. By using `ValidateOptionArgumentsAsync`, we can perform upfront validation and return an error message if necessary.
+For instance, if you have a parameter named `--dop` that represents the degree of parallelism for our custom testing framework, a user might input `--dop 0`. In this scenario, the value `0` would be invalid because it is expected to have a degree of parallelism of `1` or more. By using `ValidateOptionArgumentsAsync`, you can perform upfront validation and return an error message if necessary.
+
 A possible implementation for the sample above could be:
 
 ```csharp
@@ -1002,7 +1003,7 @@ internal class CustomDataConsumer : IDataConsumer, IOutputDeviceDataProducer
 Finally, the API takes a `CancellationToken` which the extension is expected to honor.
 
 > [!IMPORTANT]
-> It's crucial to process the payload directly within the `ConsumeAsync` method. The [IMessageBus](./unit-testing-platform-architecture-services.md#the-imessagebus-service) can manage both synchronous and asynchronous processing, coordinating the execution with the [testing framework](#test-framework-extension). Although the consumption process is entirely asynchronous and doesn't block the [IMessageBus.Push](./unit-testing-platform-architecture-services.md#the-imessagebus-service) at the time of writing, this is an implementation detail that may change in the future due to feature requirements. However, we aim to maintain this interface's simplicity and ensure that this method is always called once, eliminating the need for complex synchronization. Additionally, we automatically manage the scalability of the consumers.
+> It's crucial to process the payload directly within the `ConsumeAsync` method. The [IMessageBus](./unit-testing-platform-architecture-services.md#the-imessagebus-service) can manage both synchronous and asynchronous processing, coordinating the execution with the [testing framework](#test-framework-extension). Although the consumption process is entirely asynchronous and doesn't block the [IMessageBus.Push](./unit-testing-platform-architecture-services.md#the-imessagebus-service) at the time of writing, this is an implementation detail that may change in the future due to future requirements. However, the platform ensures that this method is always called once, eliminating the need for complex synchronization, as well as managing the scalability of the consumers.
 
 <!-- avoid "No space in block quote" block quotes follow each other -->
 
@@ -1142,9 +1143,7 @@ The `ITestHostProcessInformation` interface provides the following details:
 
 ## Extensions execution order
 
-The testing platform consists of a [testing framework](#test-framework-extension) and any number of extensions that can operate [*in-process*](#microsofttestingplatform-extensibility) or [*out-of-process*](#microsofttestingplatform-extensibility). This document outlines the **sequence of calls** to all potential extensibility points to provide clarity on when a feature is anticipated to be invoked.
-
-While a *sequence* could be used to depict this, we opt for a straightforward order of invocation calls, which allows for a more comprehensive commentary on the workflow.
+The testing platform consists of a [testing framework](#test-framework-extension) and any number of extensions that can operate [*in-process*](#microsofttestingplatform-extensibility) or [*out-of-process*](#microsofttestingplatform-extensibility). This document outlines the **sequence of calls** to all potential extensibility points to provide clarity on when a feature is anticipated to be invoked:
 
 1. [ITestHostEnvironmentVariableProvider.UpdateAsync](#the-itesthostenvironmentvariableprovider-extensions) : Out-of-process
 1. [ITestHostEnvironmentVariableProvider.ValidateTestHostEnvironmentVariablesAsync](#the-itesthostenvironmentvariableprovider-extensions) : Out-of-process

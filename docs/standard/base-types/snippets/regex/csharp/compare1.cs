@@ -121,18 +121,18 @@ internal static partial class CompareExample
     }
     /* The example displays output similar to the following:
 
-         10 Sentences with Interpreted Regex:
-            10 matches in 00:00:00.0104920
-         10 Sentences with Compiled Regex:
-            10 matches in 00:00:00.0234604
-         10 Sentences with Source-generated Regex:
-            10 matches in 00:00:00.0060982
-         All Sentences with Interpreted Regex:
-            3,427 matches in 00:00:00.1745455
-         All Sentences with Compiled Regex:
-            3,427 matches in 00:00:00.0575488
-         All Sentences with Source-generated Regex:
-            3,427 matches in 00:00:00.2698670
+       10 Sentences with Interpreted Regex:
+           10 matches in 00:00:00.0104920
+       10 Sentences with Compiled Regex:
+           10 matches in 00:00:00.0234604
+       10 Sentences with Source-generated Regex:
+           10 matches in 00:00:00.0060982
+       All Sentences with Interpreted Regex:
+           3,427 matches in 00:00:00.1745455
+       All Sentences with Compiled Regex:
+           3,427 matches in 00:00:00.0575488
+       All Sentences with Source-generated Regex:
+           3,427 matches in 00:00:00.2698670
     */
     // </Snippet5>
 }

@@ -13,7 +13,7 @@ helpviewer_keywords:
 
 ## BinaryFormatter removal
 
-Starting with .NET 9, `BinaryFormatter` is no longer supported due to its known [security risks](/docs/standard/serialization/binaryformatter-security-guide.md) and its APIs always throw a [`PlatformNotSupportedException`](/dotnet/api/system.platformnotsupportedexception) for all project types, including Windows Forms apps. For more information about the risks BinaryFormatter poses and the reason for its removal, see the [BinaryFormatter migration guide](index.md).
+Starting with .NET 9, `BinaryFormatter` is no longer supported due to its known [security risks](/standard/serialization/binaryformatter-security-guide.md) and its APIs always throw a [`PlatformNotSupportedException`](/dotnet/api/system.platformnotsupportedexception) for all project types, including Windows Forms apps. For more information about the risks BinaryFormatter poses and the reason for its removal, see the [BinaryFormatter migration guide](index.md).
 
 With BinaryFormatter's removal, it's expected that many Windows Forms applications will be impacted, and you'll need to take action to complete your migration to .NET 9 or a later version.
 
@@ -91,7 +91,7 @@ For types that aren't intrinsically handled during serialization into resources,
 .NET 9 users who can't migrate away from `BinaryFormatter` can install an unsupported compatibility package. For more information, see [BinaryFormatter migration guide: Compatibility Package](compatibility-package.md).
 
 > [!CAUTION]
-> BinaryFormatter is dangerous and not recommended as it puts consuming apps at risk for attacks such as denial of service (DoS), information disclosure, or remote code execution. For more information about the risks `BinaryFormatter` poses, see [Deserialization risks in use of BinaryFormatter and related types](/docs/standard/serialization/binaryformatter-security-guide.md).
+> BinaryFormatter is dangerous and not recommended as it puts consuming apps at risk for attacks such as denial of service (DoS), information disclosure, or remote code execution. For more information about the risks `BinaryFormatter` poses, see [Deserialization risks in use of BinaryFormatter and related types](/standard/serialization/binaryformatter-security-guide.md).
 
 ## Issues
 

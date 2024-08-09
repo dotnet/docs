@@ -40,7 +40,7 @@ public static class ServiceProviderExtensions
 
 Most of the registration factories exposed by extension points, which can be registered using the `ITestApplicationBuilder` during the setup of the testing application, provide access to the `IServiceProvider`.
 
-For example, we encountered it earlier when discussing [registering the testing framework](./unit-testing-platform-architecture-extensions.md#registering-a-testing-framework).
+For more information, see [registering the testing framework](./unit-testing-platform-architecture-extensions.md#registering-a-testing-framework).
 
 ```csharp
 ITestApplicationBuilder RegisterTestFramework(
@@ -48,7 +48,7 @@ ITestApplicationBuilder RegisterTestFramework(
     Func<ITestFrameworkCapabilities, IServiceProvider, ITestFramework> adapterFactory);
 ```
 
-As observed above, both the `capabilitiesFactory` and the `adapterFactory` supply the `IServiceProvider` as a parameter.
+In the preceding code, both the `capabilitiesFactory` and the `adapterFactory` supply the `IServiceProvider` as a parameter.
 
 ## The `IConfiguration` service
 
@@ -83,11 +83,13 @@ The JSON file follows a hierarchical structure. To access child properties, you 
 The code snippet would look something like this:
 
 ```csharp
-IServiceProvider serviceProvider = ...get the service provider...
+IServiceProvider serviceProvider = null; // Get the service provider...
+
 IConfiguration configuration = serviceProvider.GetConfiguration();
-if (configuration["CustomTestingFramework:DisableParallelism"] == bool.TrueString)
+
+if (bool.TryParse(configuration["CustomTestingFramework:DisableParallelism"], out var value) && value is true)
 {
-  ...
+    // ...
 }
 ```
 
@@ -107,8 +109,10 @@ In the case of an array, such as:
 The syntax to access to the fist element ("ThreadPool") is:
 
 ```csharp
-IServiceProvider serviceProvider = ...get the service provider...
+IServiceProvider serviceProvider = null; // Get the service provider...
+
 IConfiguration configuration = serviceProvider.GetConfiguration();
+
 var fistElement = configuration["CustomTestingFramework:Engine:0"];
 ```
 
@@ -128,9 +132,11 @@ setx CustomTestingFramework__DisableParallelism=True
 You can choose not to use the environment variable configuration source when creating the `ITestApplicationBuilder`:
 
 ```csharp
-var testApplicationOptions = new TestApplicationOptions();
-testApplicationOptions.Configuration.ConfigurationSources.RegisterEnvironmentVariablesConfigurationSource = false;
-ITestApplicationBuilder testApplicationBuilder = await TestApplication.CreateBuilderAsync(args, testApplicationOptions);
+var options = new TestApplicationOptions();
+
+options.Configuration.ConfigurationSources.RegisterEnvironmentVariablesConfigurationSource = false;
+
+ITestApplicationBuilder builder = await TestApplication.CreateBuilderAsync(args, options);
 ```
 
 ## The `ICommandLineOptions` service
@@ -141,7 +147,9 @@ The `ICommandLineOptions` service is utilized to fetch details regarding the com
 public interface ICommandLineOptions
 {
     bool IsOptionSet(string optionName);
-    bool TryGetOptionArgumentList(string optionName, out string[]? arguments);
+
+    bool TryGetOptionArgumentList(
+        string optionName, out string[]? arguments);
 }
 ```
 
@@ -233,15 +241,21 @@ Here's an example of how you might use the logging API:
 
 ```csharp
 ...
-IServiceProvider serviceProvider = ...get the service provider...
-ILoggerFactory loggerFactory = serviceProvider.GetLoggerFactory();
-ILogger<TestingFramework> logger = loggerFactory.CreateLogger<TestingFramework>();
-...
-if (_logger.IsEnabled(LogLevel.Information))
+IServiceProvider provider = null; // Get the service provider...
+
+ILoggerFactory factory = provider.GetLoggerFactory();
+
+ILogger<TestingFramework> logger = factory.CreateLogger<TestingFramework>();
+
+// ...
+
+if (logger.IsEnabled(LogLevel.Information))
 {
-    await _logger.LogInformationAsync($"Executing request of type '{context.Request}'");
+    await logger.LogInformationAsync(
+        $"Executing request of type '{context.Request}'");
 }
-...
+
+// ...
 ```
 
 Keep in mind that to prevent unnecessary allocation, you should check if the level is *enabled* using the `ILogger.IsEnabled(LogLevel)` API.
@@ -250,7 +264,7 @@ Keep in mind that to prevent unnecessary allocation, you should check if the lev
 
 The message bus service is the central mechanism that facilitates information exchange between the test framework and its extensions.
 
-The message bus of the testing platform employs the publish-subscribe pattern, as described here: <https://wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern>.
+The message bus of the testing platform employs the _publish-subscribe pattern_.
 
 The overarching structure of the shared bus is as follows:
 
@@ -258,7 +272,7 @@ The overarching structure of the shared bus is as follows:
 
 As illustrated in the diagram, which includes an extensions and a test framework, there are two potential actions: pushing information to the bus or consuming information from the bus.
 
-The `IMessageBus` satisfied the *pushing action* to the bus and the api is:
+The `IMessageBus` satisfied the *pushing action* to the bus and the API is:
 
 ```csharp
 public interface IMessageBus
@@ -278,11 +292,12 @@ public interface IData
 }
 ```
 
-Let's discuss the parameters:
+Consider the following details about the parameters:
 
 * `IDataProducer`: The `IDataProducer` communicates to the message bus the `Type` of information it can supply and establishes ownership through inheritance from the base interface [IExtension](./unit-testing-platform-architecture-extensions.md#the-iextension-interface). This implies that you can't indiscriminately push data to the message bus; you must declare the data type produced in advance. If you push unexpected data, an exception will be triggered.
 
 * `IData`: This interface serves as a placeholder where you only need to provide descriptive details such as the name and a description. The interface doesn't reveal much about the data's nature, which is intentional. It implies that the test framework and extensions can push any type of data to the bus, and this data can be consumed by any registered extension or the test framework itself.
+
 This approach facilitates the evolution of the information exchange process, preventing breaking changes when an extension is unfamiliar with new data. **It allows different versions of extensions and the test framework to operate in harmony, based on their mutual understanding**.
 
 The opposite end of the bus is what we refer to as a [consumer](./unit-testing-platform-architecture-extensions.md#the-idataconsumer-extensions), which is subscribed to a specific type of data and can thus consume it.
@@ -300,6 +315,7 @@ The most traditional example of an *output device* is the console output.
 > While the testing platform is engineered to support custom *output devices*, currently, this extension point is not available.
 
 To transmit data to the *output device*, you must obtain the `IOutputDevice` from the [`IServiceProvider`](#microsofttestingplatform-services).
+
 The API consists of:
 
 ```csharp
@@ -318,6 +334,7 @@ public interface IOutputDeviceData
 ```
 
 The `IOutputDeviceDataProducer` extends the [`IExtension`](./unit-testing-platform-architecture-extensions.md#the-iextension-interface) and provides information about the sender to the *output device*.
+
 The `IOutputDeviceData` serves as a placeholder interface. The concept behind `IOutputDevice` is to accommodate more intricate information than just colored text. For instance, it could be a complex object that can be graphically represented.
 
 The testing platform, by default, offers a traditional colored text model for the `IOutputDeviceData` object:

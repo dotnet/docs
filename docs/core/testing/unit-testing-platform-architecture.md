@@ -67,10 +67,8 @@ When `Contoso.UnitTests.exe` application is started a standard Windows process i
 
 A single process is created to carry out this work:
 
-```mermaid
-graph TD;
-    TestHost:'Contoso.UnitTests.exe';
-```
+<!-- https://mermaid.live/edit#pako:eNoljrEOwjAMRH-l8tKl6gekIx1YmChbFqsxNILYVeJIoKr_jgs3nZ7udLfBLIHAwSPjujTTOHhuTBMVPUtR156EVYr0N4560NLTm9oBOkiUE8Zg5e0oedCFEnlwZgPmpwfPu-Wwqlw_PIPTXKmDugZUGiPaZgJ3x1cxSiGq5Mv_ze_U_gUJMzS- -->
+:::image type="content" source="./media/platform-testhost.png" lightbox="./media/platform-testhost.png" alt-text="A diagram representing the test host process.":::
 
 The testing platform includes a built-in display device that writes the testing session information in the terminal, similar to:
 
@@ -128,10 +126,8 @@ When running `Contoso.UnitTests.exe` this time, the testing platform detects tha
 
 The process layout looks like this:
 
-```mermaid
-graph TD;
-    TestHostController:'Contoso.UnitTests.exe'-->TestHost:'Contoso.UnitTests.exe;
-```
+<!-- https://mermaid.live/edit#pako:eNp1j7EOwjAMRH-l8tKl7QekEgsdWJgoWxarMTSiiSvHlUBV_50UxMhNp_OT7rzCwI7AwF1wHou-a20ssnpKeuKkR44qPE0kptw9J26u0et-Tw09qazrww_-g7RQQSAJ6F0uWvcCCzpSIAsmW4fysGDjljlclC-vOIBRWaiCZXao1HnM-wKYG04pp-S8spy_yz8PbG9VG0VP -->
+:::image type="content" source="./media/platform-testhostcontroller-testhost.png" lightbox="./media/platform-testhostcontroller-testhost.png" alt-text="A diagram representing the process layout of the test host and test host controller.":::
 
 > [!NOTE]
 > The provided example assumes a console application layout, which handles the start process correctly and propagates all command line arguments to the child process.

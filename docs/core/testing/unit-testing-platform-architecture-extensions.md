@@ -220,26 +220,8 @@ public sealed class ExecuteRequestContext
 
 `IRequest`: This is the base interface for any type of request. You should think about the test framework as an **in-process stateful server** where the lifecycle is:
 
-```mermaid
-sequenceDiagram
-    Testing platform->>ITestFramework: adapterFactory() from 'RegisterTestFramework'
-    ITestFramework-->>Testing platform: 
-    Testing platform->>ITestFramework: CreateTestSessionAsync(CreateTestSessionContext)
-    ITestFramework-->>Testing platform: CreateTestSessionResult
-    Testing platform->>ITestFramework: ExecuteRequestAsync(ExecuteRequestContext_1)
-    Testing platform->>ITestFramework: ExecuteRequestAsync(ExecuteRequestContext_2)
-    ITestFramework->>IMessageBus: PublishAsync() for ExecuteRequestContext_1
-    Testing platform->>ITestFramework: ExecuteRequestAsync(ExecuteRequestContext_3)
-    ITestFramework->>IMessageBus: PublishAsync() for ExecuteRequestContext_3
-    ITestFramework->>IMessageBus: PublishAsync() for ExecuteRequestContext_2
-    ITestFramework->>IMessageBus: PublishAsync() for ExecuteRequestContext_2
-    ITestFramework->>IMessageBus: PublishAsync() for ...
-    ITestFramework->>ExecuteRequestContext_1: Complete()
-    ITestFramework->>ExecuteRequestContext_3: Complete()
-    ITestFramework->>ExecuteRequestContext_2: Complete()
-    Testing platform->>ITestFramework: CloseTestSessionAsync(CloseTestSessionContext)
-    ITestFramework-->>Testing platform: CloseTestSessionResult
-```
+<!-- https://mermaid.live/edit#pako:eNrNlE9rwkAQxb_KshcT0ED1loPQ2go9CEV7DJRtMsbF7G66O0sV8bt30tiD0UAUhe7xMfPbt3_m7XhqMuAxd_DlQafwLEVuhUo0o_UODqXOWVkIXBqrBuPxa6VNqQK-jV3HTGSiRLBTkaKx2yBkS2sU680hl470o-peTT1GDAja3CdmnfefWBAIlbgA56TRj26r0-BEnhiNsMGwu4UTxBycL7Czs5cNpB5hXl2sw9rWsXbw9PEQ3gE6PH9UQs7oOCKHJ-9i9uY_C-lWNYgez1jW4vEOFke3tTi6KW34L2hRFLV0tjwT_VujygIQgvCiztHVncPTzi6DWxh3Zm4b6hVj2yDUU8v7XIFVQmaUdbuKlnBcgYKEU9jwTNh1whO9pzrh0SzIC4_ReuhzX2aUA4dc_BMhk5R3szo7fyN0_wNX3-gh -->
+:::image type="content" source="./media/test-framework-sequence-diagram.png" lightbox="./media/test-framework-sequence-diagram.png" alt-text="A sequence diagram representing the lifecycle of the test framework.":::
 
 The preceding diagram illustrates that the testing platform issues three requests after creating the test framework instance. The test framework processes these requests and utilizes the `IMessageBus` service, which is included in the request itself, to deliver the result for each specific request. Once a particular request has been handled, the test framework invokes the `Complete()` method on it, indicating to the testing platform that the request has been fulfilled.
 The testing platform monitors all dispatched requests. Once all requests have been fulfilled, it invokes `CloseTestSessionAsync` and disposes of the instance (if `IDisposable/IAsyncDisposable` is implemented).
@@ -748,15 +730,8 @@ As observed, the `ICommandLineOptionsProvider` extends the [`IExtension`](#the-i
 
 The order of execution of the `ICommandLineOptionsProvider` is:
 
-```mermaid
-sequenceDiagram
-    Testing platform->>ICommandLineOptionsProvider: GetCommandLineOptions()
-    ICommandLineOptionsProvider-->>Testing platform: returns the list of `CommandLineOption`
-    Testing platform->>ICommandLineOptionsProvider: ValidateOptionArgumentsAsync(CommandLineOption commandOption, string[] arguments) validate every option argument
-    ICommandLineOptionsProvider-->>Testing platform: returns a `ValidationResult` indicating success or failure.
-    Testing platform->>ICommandLineOptionsProvider: ValidateCommandLineOptionsAsync(ICommandLineOptions commandLineOptions) Ensure the consistency of all arguments in unison.
-    ICommandLineOptionsProvider-->>Testing platform: returns a `ValidationResult` indicating success or failure.
-```
+<!-- https://mermaid.live/edit#pako:eNq9U1FLAzEM_iuhTxts-wH3MBgqIiiKii-ecKXNZrFNZ9oOxth_N9vdoXjigwP71Cb5viRfmp0y0aKqVML3gmTw3OkV61ATyHnElB2tYO11XkYO0_n86iyGoMleO8LbdXaR0h3HjbPIFVxiHrpH45bsF-RUiL_nqoAxF6YE-RXBu5QhLqEZkDR_K_VJe2d17hwLXpWAlNMibcmMBkAwraV9TSBllmTPL6B74Bg2HSPgBnkLsQX2ASdqoKHpKhbMPabicwOOrDP6iEjFGEwJIsNSO18YZ6fpMoxppfkB3IvzxTSGC0pSxHF2RgwyPvld28MItfefskkPUMilSLP_V0hNVEAO2llZgN0hf62k4IC1quRqNb_Vqqa9xOmS44P0r6rMBSeqrA8idcvSG9G6HPmmXajjXu0_ABqpPds -->
+:::image type="content" source="./media/icommandlineoptionsprovider-sequence-diagram.png" lightbox="./media/icommandlineoptionsprovider-sequence-diagram.png" alt-text="A diagram representing the order of execution of the 'ICommandLineOptionsProvider' interface.":::
 
 Let's examine the apis and their mean:
 

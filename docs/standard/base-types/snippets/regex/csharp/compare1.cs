@@ -21,7 +21,7 @@ internal static partial class CompareExample
         int ctr;
 
         string text =
-                await s_client.GetStringAsync("https://www.gutenberg.org/cache/epub/1840/pg1840.txt");
+                await s_client.GetStringAsync("https://www.gutenberg.org/cache/epub/64197/pg64197.txt");
 
         // Read first ten sentences with interpreted regex.
         Console.WriteLine("10 Sentences with Interpreted Regex:");
@@ -121,18 +121,18 @@ internal static partial class CompareExample
     }
     /* The example displays output similar to the following:
 
-       10 Sentences with Interpreted Regex:
-           10 matches in 00:00:00.0050027
-       10 Sentences with Compiled Regex:
-           10 matches in 00:00:00.0181372
-       10 Sentences with Source-generated Regex:
-           10 matches in 00:00:00.0049145
-       All Sentences with Interpreted Regex:
-           13,682 matches in 00:00:00.1588303
-       All Sentences with Compiled Regex:
-           13,682 matches in 00:00:00.0859949
-       All Sentences with Source-generated Regex:
-           13,682 matches in 00:00:00.2794411
+         10 Sentences with Interpreted Regex:
+            10 matches in 00:00:00.0104920
+         10 Sentences with Compiled Regex:
+            10 matches in 00:00:00.0234604
+         10 Sentences with Source-generated Regex:
+            10 matches in 00:00:00.0060982
+         All Sentences with Interpreted Regex:
+            3,427 matches in 00:00:00.1745455
+         All Sentences with Compiled Regex:
+            3,427 matches in 00:00:00.0575488
+         All Sentences with Source-generated Regex:
+            3,427 matches in 00:00:00.2698670
     */
     // </Snippet5>
 }

@@ -60,6 +60,14 @@ The <xref:System.Runtime.CompilerServices.UnsafeAccessorAttribute> feature allow
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/UnsafeAccessor.cs":::
 
+## Garbage collection
+
+## Dynamic adaptation to application sizes (DATAS)
+
+Dynamic adaptation to application sizes (DATAS) is now enabled by default. It aims to adapt to application memory requirements, meaning the application heap size should be roughly proportional to the long-lived data size. DATAS was introduced as an opt-in feature in .NET 8 and has been significantly updated and improved in .NET 9.
+
+For more information, see [Dynamic adaptation to application sizes (DATAS)](../../../standard/garbage-collection/datas.md).
+
 ## Performance improvements
 
 The following performance improvements have been made for .NET 9:

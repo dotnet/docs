@@ -1,7 +1,7 @@
 ---
 title: Garbage collector config settings
 description: Learn about run-time settings for configuring how the garbage collector manages memory for .NET apps.
-ms.date: 04/20/2022
+ms.date: 08/09/2024
 ---
 # Runtime configuration options for garbage collection
 
@@ -771,3 +771,16 @@ Example *app.config* file:
 
 > [!TIP]
 > Experiment with different numbers to see which value works best for you. Start with a value between 5 and 7.
+
+## Dynamic adaptation to application sizes (DATAS)
+
+- Configures the garbage collector to use DATAS. DATAS adapts to application memory requirements, meaning the app heap size should be roughly proportional to the long-lived data size.
+- Enabled by default starting in .NET 9.
+
+|                          | Setting name               | Values    | Version introduced |
+|--------------------------|----------------------------|-----------|--------------------|
+| **runtimeconfig.json**   | `System.GC.DynamicAdaptationMode` | `1` - enabled<br/> `0` - disabled | .NET 8 |
+| **Environment variable** | `DOTNET_GCDynamicAdaptationMode`  | `1` - enabled<br/> `0` - disabled | .NET 8 |
+| **MSBuild property** | `GarbageCollectionAdaptationMode` | `1` - enabled<br/> `0` - disabled | .NET 8 |
+
+[!INCLUDE [runtimehostconfigurationoption](includes/runtimehostconfigurationoption.md)]

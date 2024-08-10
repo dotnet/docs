@@ -27,6 +27,7 @@ The collection types in .NET gain the following updates for .NET 9:
 - [Collection lookups with spans](#collection-lookups-with-spans)
 - [`OrderedDictionary<TKey, TValue>`](#ordereddictionarytkey-tvalue)
 - [PriorityQueue.Remove() method](#priorityqueueremove-method) lets you update the priority of an item in the queue.
+- [`ReadOnlySet<T>`](#readonlysett)
 
 ### Collection lookups with spans
 
@@ -106,6 +107,76 @@ KMAC is available on Linux with OpenSSL 3.0 or later, and on Windows 11 Build 26
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Cryptography.cs" id="Kmac":::
 
+### AES-GCM and ChaChaPoly1305 algorithms enabled for iOS/tvOS/MacCatalyst
+
+<xref:System.Security.Cryptography.AesGcm.IsSupported> and `ChaChaPoly1305.IsSupported` now return true when running on iOS 13+, tvOS 13+, and Mac Catalyst.
+
+As with macOS, <xref:System.Security.Cryptography.AesGcm> on these environments only supports 16-byte (128-bit) tag values.
+
+### X.509 certificate loading
+
+Since .NET Framework 2.0, the way to load a certificate has been `new X509Certificate2(bytes)`. There have also been other patterns, such as `new X509Certificate2(bytes, password, flags)`, `new X509Certificate2(path)`, `new X509Certificate2(path, password, flags)`, and `X509Certificate2Collection.Import(bytes, password, flags)` (and its overloads).
+
+Those methods all used content-sniffing to figure out if the input was something it could handle, and then loaded it if it could. For some callers, this strategy was very convenient. But it also has some problems:
+
+- Not every file format works on every OS.
+- It's a protocol deviation.
+- It's a source of security issues.
+
+.NET 9 introduces a new `X509CertificateLoader` <!--<xref:System.Security.Cryptography.X509CertificateLoader>--> class, which has a "one method, one purpose" design. In its initial version, it only supports two of the five formats that the <xref:System.Security.Cryptography.X509Certificate2> constructor supported. Those are the two formats that worked on all operation systems.
+
+### OpenSSL providers support
+
+.NET 8 introduced the OpenSSL-specific APIs <xref:System.Security.Cryptography.SafeEvpPKeyHandle.OpenPrivateKeyFromEngine> and <xref:System.Security.Cryptography.SafeEvpPKeyHandle.OpenPublicKeyFromEngine>. They enable interacting with OpenSSL [`ENGINE` components](https://github.com/openssl/openssl/blob/master/README-ENGINES.md) and use hardware security modules (HSM), for example.
+
+.NET 9 introduces `SafeEvpPKeyHandle.OpenKeyFromProvider`<!--<xref:System.Security.Cryptography.SafeEvpPKeyHandle.OpenKeyFromProvider>-->, which enables using [OpenSSL providers](https://docs.openssl.org/master/man7/provider/) and interacting with providers such as `tpm2` or `pkcs11`.
+
+Some distros have [removed `ENGINE` support](https://github.com/dotnet/runtime/issues/104775) since it is now deprecated.
+
+The following snippet shows basic usage:
+
+```csharp
+byte[] data = ...;
+
+// Refer to your provider documentation, for example, https://github.com/tpm2-software/tpm2-openssl/tree/master.
+using (SafeEvpPKeyHandle priKeyHandle = SafeEvpPKeyHandle.OpenKeyFromProvider("tpm2", "handle:0x81000007"))
+using (ECDsa ecdsaPri = new ECDsaOpenSsl(priKeyHandle))
+{
+    byte[] signature = ecdsaPri.SignData(data, HashAlgorithmName.SHA256);
+    // Do stuff with signature created by TPM.
+}
+```
+
+There are some performance improvements during the TLS handshake as well as improvements to interactions with RSA private keys that use `ENGINE` components.
+
+### Windows CNG virtualization-based security
+
+Windows 11 has added new APIs to help secure Windows keys with [virtualization-based security (VBS)](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/advancing-key-protection-in-windows-using-vbs/ba-p/4050988). With this new capability, keys can be protected from admin-level key theft attacks with negligible effect on performance, reliability, or scale.
+
+.NET 9 has added matching `CngKeyCreationOptions` <!--<xref:System.Security.Cryptography.CngKeyCreationOptions>--> flags. The following three flags were added:
+
+- `CngKeyCreationOptions.PreferVbs` matching `NCRYPT_PREFER_VBS_FLAG`
+- `CngKeyCreationOptions.RequireVbs` matching `NCRYPT_REQUIRE_VBS_FLAG`
+- `CngKeyCreationOptions.UsePerBootKey` matching `NCRYPT_USE_PER_BOOT_KEY_FLAG`
+
+The following snippet demonstrates how to use one of the flags:
+
+```csharp
+using System.Security.Cryptography;
+
+CngKeyCreationParameters cngCreationParams = new()
+{
+    Provider = CngProvider.MicrosoftSoftwareKeyStorageProvider,
+    KeyCreationOptions = CngKeyCreationOptions.RequireVbs | CngKeyCreationOptions.OverwriteExistingKey,
+};
+
+using (CngKey key = CngKey.Create(CngAlgorithm.ECDsaP256, "myKey", cngCreationParams))
+using (ECDsaCng ecdsa = new ECDsaCng(key))
+{
+    // Do stuff with the key.
+}
+```
+
 ## Date and time
 
 ### New TimeSpan.From\* overloads
@@ -123,6 +194,29 @@ The following code shows an example of calling the `double` and one of the new i
 The constructor resolution for <xref:Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance%2A?displayProperty=nameWithType> has changed in .NET 9. Previously, a constructor that was explicitly marked using the <xref:Microsoft.Extensions.DependencyInjection.ActivatorUtilitiesConstructorAttribute> attribute might not be called, depending on the ordering of constructors and the number of constructor parameters. The logic has changed in .NET 9 such that a constructor that has the attribute is always called.
 
 ## Diagnostics
+
+### Debug.Assert reports assert condition by default
+
+<xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType> is commonly used to help validate conditions that are expected to always be true. Failure typically indicates a bug in the code. There are many overloads of <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType>, the simplest of which just accepts a condition:
+
+```csharp
+Debug.Assert(a > 0 && b > 0);
+```
+
+The assert fails if the condition is false. Historically, however, such asserts were void of any information about what condition failed. Starting in .NET 9, if no message is explicitly provided by the user, the assert will contain the textual representation of the condition. For example, for the previous assert example, rather than getting a message like:
+
+```console
+Process terminated. Assertion failed.
+   at Program.SomeMethod(Int32 a, Int32 b)
+```
+
+The message would now be:
+
+```console
+Process terminated. Assertion failed.
+a > 0 && b > 0
+   at Program.SomeMethod(Int32 a, Int32 b)
+```
 
 ### New Activity.AddLink method
 
@@ -493,6 +587,43 @@ For example, `String.Join` now includes the following overload, which implements
 
 Now, a call like `string.Join(", ", "a", "b", "c")` is made without allocating an array to pass in the `"a"`, `"b"`, and `"c"` arguments.
 
+### Enumerate over ReadOnlySpan\<char>.Split() segments
+
+`string.Split` is a convenient method for quickly partitioning a string with one or more supplied separators. For code focused on performance, however, the allocation profile of `string.Split` can be prohibitive, because it allocates a string for each parsed component and a `string[]` to store them all. It also doesn't work with spans, so if you have a `ReadOnlySpan<char>`, you're forced to allocate yet another string when you convert it to a string to be able to call `string.Split` on it.
+
+In .NET 8, a set of `Split` and `SplitAny` methods were introduced for `ReadOnlySpan<char>`. Rather than returning a new `string[]`, these methods accept a destination `Span<Range>` into which the bounding indices for each component are written. This makes the operation fully allocation-free. These methods are appropriate to use when the number of ranges is both known and small.
+
+In .NET 9, new overloads of `Split` and `SplitAny` have been added to allow incrementally parsing a `ReadOnlySpan<T>` with an *a priori* unknown number of segments. The new methods enable enumerating through each segment, which is similarly represented as a `Range` that can be used to slice into the original span.
+
+```csharp
+public static bool ListContainsItem(ReadOnlySpan<char> span, string item)
+{
+    foreach (Range segment in span.Split(','))
+    {
+        if (span[segment].SequenceEquals(item))
+        {
+            return true;
+        }
+    }
+
+    return false;
+}
+```
+
+## System.Guid
+
+<xref:System.Guid.NewGuid> creates a `Guid` filled mostly with cryptographically secure random data, following the UUID Version 4 specification in RFC 9562. That same RFC also defines other versions, including Version 7, which "features a time-ordered value field derived from the widely implemented and well-known Unix Epoch timestamp source". In other words, much of the data is still random, but some of it is reserved for data based on a timestamp, which enables these values to have a natural sort order. In .NET 9, you can create a `Guid` according to Version 7 via the new `Guid.CreateVersion7()` <!--<xref:System.Guid.CreateVersion7?displayProperty=nameWithType>--> and `Guid.CreateVersion7(DateTimeOffset timestamp)`  <!--<xref:System.Guid.CreateVersion7(System.DateTimeOffset)?displayProperty=nameWithType>--> methods. You can also use the new `Version` <!--<xref:System.Guid.Version>--> property to retrieve a `Guid` object's version field.
+
+## System.IO
+
+### Compression
+
+<xref:System.IO.Compression> features like <xref:System.IO.Compression.ZipArchive>, <xref:System.IO.Compression.DeflateStream>, <xref:System.IO.Compression.GZipStream>, and <xref:System.IO.Compression.ZLibStream> are all based primarily on the zlib library. Starting in .NET 9, these features instead all use zlib-ng, a library that yields more consistent and efficient processing across a wider array of operating systems and hardware.
+
+### Support for XPS documents from XPS virtual printer
+
+XPS documents coming from a V4 XPS virtual printer previously couldn't be opened using the <xref:System.IO.Packaging> library, due to lack of support for handling *.piece* files. This gap has been addressed in .NET 9.
+
 ## System.Numerics
 
 The following changes have been made in the <xref:System.Numerics> namespace:
@@ -606,6 +737,9 @@ The following codes shows some of the APIs included with the new `Tensor<T>` typ
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Tensors.cs" id="Tensor":::
 
+> [!NOTE]
+> This API is marked as [experimental](../../../fundamentals/apicompat/preview-apis.md#experimentalattribute) for .NET 9.
+
 ### TensorPrimitives
 
 The `System.Numerics.Tensors` library includes the <xref:System.Numerics.Tensors.TensorPrimitives> class, which provides static methods for performing numerical operations on spans of values. In .NET 9, the scope of methods exposed by <xref:System.Numerics.Tensors.TensorPrimitives> has been significantly expanded, growing from 40 (in .NET 8) to almost 200 overloads. The surface area encompasses familiar numerical operations from types like <xref:System.Math> and <xref:System.MathF>. It also includes the generic math interfaces like <xref:System.Numerics.INumber%601>, except instead of processing an individual value, they process a span of values. Many operations have also been accelerated via SIMD-optimized implementations for .NET 9.
@@ -618,7 +752,7 @@ Compare the precision of the cosine similarity operation on two vectors of type 
 
 ## Threading
 
-The threading APIs include improvements for iterating through tasks, and for prioritized channels, which can order their elements instead of being first-in-first-out (FIFO).
+The threading APIs include improvements for iterating through tasks, for prioritized channels, which can order their elements instead of being first-in-first-out (FIFO), and `Interlocked.CompareExchange` for more types.
 
 ### `Task.WhenEach`
 
@@ -635,3 +769,7 @@ The <xref:System.Threading.Channels> namespace lets you create first-in-first-ou
 The following example uses the new method to create a channel that outputs the numbers 1 through 5 in order, even though they're written to the channel in a different order.
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Channels.cs" id="Channel":::
+
+### Interlocked.CompareExchange for more types
+
+In previous versions of .NET, <xref:System.Threading.Interlocked.Exchange%2A?displayProperty=nameWithType> and <xref:System.Threading.Interlocked.CompareExchange%2A?displayProperty=nameWithType> had overloads for working with `int`, `uint`, `long`, `ulong`, `nint`, `nuint`, `float`, `double`, and `object`, as well as a generic overload for working with any reference type `T`. In .NET 9, there are new overloads for atomically working with `byte`, `sbyte`, `short`, and `ushort`. Also, the generic constraint on the generic `Interlocked.Exchange<T>` and `Interlocked.CompareExchange<T>` overloads has been removed, so those methods are no longer constrained to only work with reference types. They can now work with any primitive type, which includes all of the aforementioned types as well as `bool` and `char`, as well as any `enum` type.

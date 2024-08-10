@@ -63,9 +63,7 @@ The new class enables the following usage pattern.
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Collections.cs" id="ReadOnlySet":::
 
-## Component model
-
-### `TypeDescriptor` trimming support
+## Component model - `TypeDescriptor` trimming support
 
 <xref:System.ComponentModel> includes new opt-in trimmer-compatible APIs for describing components. Any application, especially self-contained trimmed applications, can use these new APIs to help support trimming scenarios.
 
@@ -82,7 +80,13 @@ For more information, see the [API proposal](https://github.com/dotnet/runtime/i
 
 ## Cryptography
 
-For cryptography, .NET 9 adds a new one-shot hash method on the <xref:System.Security.Cryptography.CryptographicOperations> type. It also adds new classes that use the KMAC algorithm.
+- [CryptographicOperations.HashData() method](#cryptographicoperationshashdata-method)
+- [KMAC algorithm](#kmac-algorithm)
+- [AES-GCM and ChaChaPoly1305 algorithms enabled for iOS/tvOS/MacCatalyst](#aes-gcm-and-chachapoly1305-algorithms-enabled-for-iostvosmaccatalyst)
+- [X.509 certificate loading](#x509-certificate-loading)
+- [OpenSSL providers support](#openssl-providers-support)
+- [Windows CNG virtualization-based security](#windows-cng-virtualization-based-security)
+-
 
 ### CryptographicOperations.HashData() method
 
@@ -177,9 +181,7 @@ using (ECDsaCng ecdsa = new ECDsaCng(key))
 }
 ```
 
-## Date and time
-
-### New TimeSpan.From\* overloads
+## Date and time - new TimeSpan.From\* overloads
 
 The <xref:System.TimeSpan> class offers several `From*` methods that let you create a `TimeSpan` object using a `double`. However, since `double` is a binary-based floating-point format, [inherent imprecision can lead to errors](https://github.com/dotnet/runtime/issues/93890). For instance, `TimeSpan.FromSeconds(101.832)` might not precisely represent `101 seconds, 832 milliseconds`, but rather approximately `101 seconds, 831.9999999999936335370875895023345947265625 milliseconds`. This discrepancy has caused frequent confusion, and it's also not the most efficient way to represent such data. To address this, .NET 9 adds new overloads that let you create `TimeSpan` objects from integers. There are new overloads from `FromDays`, `FromHours`, `FromMinutes`, `FromSeconds`, `FromMilliseconds`, and `FromMicroseconds`.
 
@@ -187,13 +189,15 @@ The following code shows an example of calling the `double` and one of the new i
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/TimeSpan.cs" id="TimeSpan.From":::
 
-## Dependency injection
-
-### `ActivatorUtilities.CreateInstance` constructor
+## Dependency injection - `ActivatorUtilities.CreateInstance` constructor
 
 The constructor resolution for <xref:Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance%2A?displayProperty=nameWithType> has changed in .NET 9. Previously, a constructor that was explicitly marked using the <xref:Microsoft.Extensions.DependencyInjection.ActivatorUtilitiesConstructorAttribute> attribute might not be called, depending on the ordering of constructors and the number of constructor parameters. The logic has changed in .NET 9 such that a constructor that has the attribute is always called.
 
 ## Diagnostics
+
+- [Debug.Assert reports assert condition by default](#debugassert-reports-assert-condition-by-default)
+- [New Activity.AddLink method](#new-activityaddlink-method)
+- [Metrics.Gauge instrument](#metricsgauge-instrument)
 
 ### Debug.Assert reports assert condition by default
 
@@ -299,8 +303,6 @@ This new capability has an optimized implementation that takes advantage of the 
 
 ## Networking
 
-The networking area includes in the following updates in .NET 9:
-
 - [SocketsHttpHandler is default in HttpClientFactory](#socketshttphandler-is-default-in-httpclientfactory)
 - [System.Net.ServerSentEvents](#systemnetserversentevents)
 - [TLS resume with client certificates on Linux](#tls-resume-with-client-certificates-on-linux)
@@ -324,8 +326,6 @@ The following code demonstrates using the new class.
 *TLS resume* has already been supported on Linux for SslStream connections without client certificates. .NET 9 adds support for TLS resume of mutually authenticated TLS connections, which are common in server-to-server scenarios. The feature is enabled automatically.
 
 ## Reflection
-
-The reflection area includes the following updates for .NET 9:
 
 - [Persisted assemblies](#persisted-assemblies)
 - [Type-name parsing](#type-name-parsing)
@@ -367,8 +367,6 @@ The new APIs are available from the [`System.Reflection.Metadata`](https://www.n
 
 ## Regular expressions
 
-For regular expressions, .NET 9 includes the following updates:
-
 - [`[GeneratedRegex]` on properties](#generatedregex-on-properties)
 - [`Regex.EnumerateSplits`](#regexenumeratesplits)
 
@@ -400,9 +398,7 @@ The following example demonstrates `Regex.EnumerateSplits`, taking a `ReadOnlySp
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/RegularExpressions.cs" id="EnumerateSplits":::
 
-## Serialization
-
-In <xref:System.Text.Json>, .NET 9 includes the following updates:
+## Serialization (System.Text.Json)
 
 - [Indentation options](#indentation-options)
 - [Default web options singleton](#default-web-options-singleton)
@@ -550,6 +546,7 @@ In high-performance code, spans are often used to avoid allocating strings unnec
 
 - [File helpers](#file-helpers)
 - [`params ReadOnlySpan<T>` overloads](#params-readonlyspant-overloads)
+- [Enumerate over ReadOnlySpan\<char>.Split() segments](#enumerate-over-readonlyspancharsplit-segments)
 
 ### File helpers
 
@@ -616,17 +613,18 @@ public static bool ListContainsItem(ReadOnlySpan<char> span, string item)
 
 ## System.IO
 
+- [Compression](#compression)
+- [XPS documents from XPS virtual printer](#xps-documents-from-xps-virtual-printer)
+
 ### Compression
 
 <xref:System.IO.Compression> features like <xref:System.IO.Compression.ZipArchive>, <xref:System.IO.Compression.DeflateStream>, <xref:System.IO.Compression.GZipStream>, and <xref:System.IO.Compression.ZLibStream> are all based primarily on the zlib library. Starting in .NET 9, these features instead all use zlib-ng, a library that yields more consistent and efficient processing across a wider array of operating systems and hardware.
 
-### Support for XPS documents from XPS virtual printer
+### XPS documents from XPS virtual printer
 
 XPS documents coming from a V4 XPS virtual printer previously couldn't be opened using the <xref:System.IO.Packaging> library, due to lack of support for handling *.piece* files. This gap has been addressed in .NET 9.
 
 ## System.Numerics
-
-The following changes have been made in the <xref:System.Numerics> namespace:
 
 - [BigInteger upper limit](#biginteger-upper-limit)
 - [`BigMul` APIs](#bigmul-apis)
@@ -642,8 +640,6 @@ The following changes have been made in the <xref:System.Numerics> namespace:
 
 `BigMul` is an operation that produces the full product of two numbers. .NET 9 adds dedicated `BigMul` APIs on `int`, `long`, `uint`, and `ulong` whose return type is the next larger [integer type](../../../csharp/language-reference/builtin-types/integral-numeric-types.md) than the parameter types.
 
-<!--
-
 The new APIs are:
 
 - <xref:System.Int32.BigMul(System.Int32,System.Int32)> (returns `long`)
@@ -651,13 +647,9 @@ The new APIs are:
 - <xref:System.UInt32.BigMul(System.UInt32,System.UInt32)> (returns `ulong`)
 - <xref:System.UInt64.BigMul(System.UInt64,System.UInt64)> (returns `UInt128`)
 
--->
-
 ### Vector conversion APIs
 
 .NET 9 adds dedicated extension APIs for converting between <xref:System.Numerics.Vector2>, <xref:System.Numerics.Vector3>, <xref:System.Numerics.Vector4>, <xref:System.Numerics.Quaternion>, and <xref:System.Numerics.Plane>.
-
-<!--
 
 The new APIs are as follows:
 
@@ -672,15 +664,11 @@ The new APIs are as follows:
 - <xref:System.Numerics.Vector.AsVector4Unsafe(System.Numerics.Vector2)>
 - <xref:System.Numerics.Vector.AsVector4Unsafe(System.Numerics.Vector3)>
 
--->
-
 For same-sized conversions, such as between `Vector4`, `Quaternion`, and `Plane`, these conversions are zero cost. The same can be said for narrowing conversions, such as from `Vector4` to `Vector2` or `Vector3`. For widening conversions, such as from `Vector2` or `Vector3` to `Vector4`, there is the normal API, which initializes new elements to 0, and an `Unsafe` suffixed API that leaves these new elements undefined and therefore can be zero cost.
 
 ### Vector create APIs
 
 There are new `Create` APIs exposed for <xref:System.Numerics.Vector%601>, <xref:System.Numerics.Vector2>, <xref:System.Numerics.Vector3>, and <xref:System.Numerics.Vector4> that parity the equivalent APIs exposed for the hardware vector types exposed in the <xref:System.Runtime.Intrinsics> namespace.
-
-<!--
 
 The new APIs are as follows:
 
@@ -698,8 +686,6 @@ The new APIs are as follows:
 - <xref:System.Numerics.Vector4.Create(System.Numerics.Vector3,System.Single)>
 - <xref:System.Numerics.Vector4.Create(System.Single,System.Single,System.Single,System.Single)>
 - <xref:System.Numerics.Vector4.Create(System.ReadOnlySpan%601)>
-
--->
 
 These APIs are primarily for convenience and overall consistency across .NET's SIMD-accelerated types.
 

@@ -24,6 +24,11 @@ dotnet nuget why -h|--help
 
 The `dotnet nuget why` command shows the dependency graph for a particular package for a given project or solution.
 
+Starting from the .NET 9 SDK, it's possible to pass a NuGet assets file in place of the project file, in order to use the command with projects that can't be restored with the .NET SDK.
+First, restore the project in Visual Studio, or `msbuild.exe`.
+By default the assets file is in the project's `obj\` directory, but you can find the location with `msbuild.exe path\to\project.proj -getProperty:ProjectAssetsFile`.
+Finally, run `dotnet nuget why path\to\project.assets.json SomePackage`.
+
 ## Arguments
 
 - **`PROJECT|SOLUTION`**

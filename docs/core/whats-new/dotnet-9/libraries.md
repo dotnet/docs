@@ -31,7 +31,7 @@ The collection types in .NET gain the following updates for .NET 9:
 
 ### Collection lookups with spans
 
-In high-performance code, spans are often used to avoid allocating strings unnecessarily, and lookup tables with types like <xref:System.Collections.Generic.Dictionary%602> and <xref:System.Collections.Generic.HashSet%601> are frequently used as caches. However, it's been challenging to use these types together, as there was no safe, built-in mechanism for doing lookups on these types with spans. Now with the new `allows ref struct` feature in C# 13 and new features on these collection types in .NET 9, it's possible to perform these kinds of lookups.
+In high-performance code, spans are often used to avoid allocating strings unnecessarily, and lookup tables with types like <xref:System.Collections.Generic.Dictionary%602> and <xref:System.Collections.Generic.HashSet%601> are frequently used as caches. However, there has been no safe, built-in mechanism for doing lookups on these collection types with spans. With the new `allows ref struct` feature in C# 13 and new features on these collection types in .NET 9, it's now possible to perform these kinds of lookups.
 
 The following example demonstrates using <xref:System.Collections.Generic.Dictionary%602.GetAlternateLookup?displayProperty=nameWithType>.
 
@@ -57,7 +57,7 @@ This method unblocks users who want to implement graph algorithms in contexts wh
 
 ### `ReadOnlySet<T>`
 
-It's often desirable to give out read-only views of collections. <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> lets you create a read-only wrapper around an arbitrary mutable <xref:System.Collections.Generic.IList%601>, and <xref:System.Collections.ObjectModel.ReadOnlyDictionary%602> lets you create a read-only wrapper around an arbitrary mutable <xref:System.Collections.Generic.IDictionary%602>. However, past versions of .NET had no built-in support for doing the same with <xref:System.Collections.Generic.ISet%601>. .NET 9 introduces <xref:System.Collections.Generic.ReadOnlySet%601> to address this.
+It's often desirable to give out read-only views of collections. <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> lets you create a read-only wrapper around an arbitrary mutable <xref:System.Collections.Generic.IList%601>, and <xref:System.Collections.ObjectModel.ReadOnlyDictionary%602> lets you create a read-only wrapper around an arbitrary mutable <xref:System.Collections.Generic.IDictionary%602>. However, past versions of .NET had no built-in support for doing the same with <xref:System.Collections.Generic.ISet%601>. .NET 9 introduces <xref:System.Collections.ObjectModel.ReadOnlySet%601> to address this.
 
 The new class enables the following usage pattern.
 
@@ -127,11 +127,11 @@ Those methods all used content-sniffing to figure out if the input was something
 - It's a protocol deviation.
 - It's a source of security issues.
 
-.NET 9 introduces a new `X509CertificateLoader` <!--<xref:System.Security.Cryptography.X509CertificateLoader>--> class, which has a "one method, one purpose" design. In its initial version, it only supports two of the five formats that the <xref:System.Security.Cryptography.X509Certificate2> constructor supported. Those are the two formats that worked on all operation systems.
+.NET 9 introduces a new `X509CertificateLoader` <!--<xref:System.Security.Cryptography.X509CertificateLoader>--> class, which has a "one method, one purpose" design. In its initial version, it only supports two of the five formats that the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> constructor supported. Those are the two formats that worked on all operation systems.
 
 ### OpenSSL providers support
 
-.NET 8 introduced the OpenSSL-specific APIs <xref:System.Security.Cryptography.SafeEvpPKeyHandle.OpenPrivateKeyFromEngine> and <xref:System.Security.Cryptography.SafeEvpPKeyHandle.OpenPublicKeyFromEngine>. They enable interacting with OpenSSL [`ENGINE` components](https://github.com/openssl/openssl/blob/master/README-ENGINES.md) and use hardware security modules (HSM), for example.
+.NET 8 introduced the OpenSSL-specific APIs <xref:System.Security.Cryptography.SafeEvpPKeyHandle.OpenPrivateKeyFromEngine(System.String,System.String)> and <xref:System.Security.Cryptography.SafeEvpPKeyHandle.OpenPublicKeyFromEngine(System.String,System.String)>. They enable interacting with OpenSSL [`ENGINE` components](https://github.com/openssl/openssl/blob/master/README-ENGINES.md) and use hardware security modules (HSM), for example.
 
 .NET 9 introduces `SafeEvpPKeyHandle.OpenKeyFromProvider`<!--<xref:System.Security.Cryptography.SafeEvpPKeyHandle.OpenKeyFromProvider>-->, which enables using [OpenSSL providers](https://docs.openssl.org/master/man7/provider/) and interacting with providers such as `tpm2` or `pkcs11`.
 
@@ -230,7 +230,7 @@ Previously, you could only link a tracing <xref:System.Diagnostics.Activity> to 
 
 ### Metrics.Gauge instrument
 
-<xref:System.Diagnostics.Metrics> now provides the <xref:<xref:System.Diagnostics.Metrics.Gauge> instrument according to the OpenTelemetry specification. The `Gauge` instrument is designed to record non-additive values when changes occur. For example, it can measure the background noise level, where summing the values from multiple rooms would be nonsensical. The `Gauge` instrument is a generic type that can record any value type, such as `int`, `double`, or `decimal`.
+<xref:System.Diagnostics.Metrics> now provides the <xref:System.Diagnostics.Metrics.Gauge> instrument according to the OpenTelemetry specification. The `Gauge` instrument is designed to record non-additive values when changes occur. For example, it can measure the background noise level, where summing the values from multiple rooms would be nonsensical. The `Gauge` instrument is a generic type that can record any value type, such as `int`, `double`, or `decimal`.
 
 The following example demonstrates using the the `Gauge` instrument.
 
@@ -559,7 +559,7 @@ ReadOnlySpan<char> text = ...;
 File.WriteAllText(filePath, text);
 ```
 
-New <xref:System.ReadOnlySpan.StartsWith%2A> and <xref:System.ReadOnlySpan.EndsWith%2A> extension methods have also been added for spans, making it easy to test whether a <xref:System.ReadOnlySpan%601> starts or ends with a specific `T` value.
+New <xref:System.MemoryExtensions.StartsWith%60%601(System.ReadOnlySpan{%60%601},%60%601)> and <xref:xref:System.MemoryExtensions.EndsWith%60%601(System.ReadOnlySpan{%60%601},%60%601)> extension methods have also been added for spans, making it easy to test whether a <xref:System.ReadOnlySpan%601> starts or ends with a specific `T` value.
 
 The following code uses these new convenience APIs.
 
@@ -668,24 +668,14 @@ For same-sized conversions, such as between `Vector4`, `Quaternion`, and `Plane`
 
 ### Vector create APIs
 
-There are new `Create` APIs exposed for <xref:System.Numerics.Vector%601>, <xref:System.Numerics.Vector2>, <xref:System.Numerics.Vector3>, and <xref:System.Numerics.Vector4> that parity the equivalent APIs exposed for the hardware vector types exposed in the <xref:System.Runtime.Intrinsics> namespace.
+There are new `Create` APIs exposed for <xref:System.Numerics.Vector>, <xref:System.Numerics.Vector2>, <xref:System.Numerics.Vector3>, and <xref:System.Numerics.Vector4> that parity the equivalent APIs exposed for the hardware vector types exposed in the <xref:System.Runtime.Intrinsics> namespace.
 
-The new APIs are as follows:
+For more information about the new APIs, see:
 
-- <xref:System.Numerics.Vector.Create%601(%601)>
-- <xref:System.Numerics.Vector.Create%601(System.ReadOnlySpan%601)>
-- <xref:System.Numerics.Vector2.Create(System.Single)>
-- <xref:System.Numerics.Vector2.Create(System.Single,System.Single)>
-- <xref:System.Numerics.Vector2.Create(System.ReadOnlySpan%601)>
-- <xref:System.Numerics.Vector3.Create(System.Single)>
-- <xref:System.Numerics.Vector3.Create(System.Numerics.Vector2,System.Single)>
-- <xref:System.Numerics.Vector3.Create(System.Single,System.Single,System.Single)>
-- <xref:System.Numerics.Vector3.Create(System.ReadOnlySpan%601)>
-- <xref:System.Numerics.Vector4.Create(System.Single)>
-- <xref:System.Numerics.Vector4.Create(System.Numerics.Vector2,System.Single,System.Single)>
-- <xref:System.Numerics.Vector4.Create(System.Numerics.Vector3,System.Single)>
-- <xref:System.Numerics.Vector4.Create(System.Single,System.Single,System.Single,System.Single)>
-- <xref:System.Numerics.Vector4.Create(System.ReadOnlySpan%601)>
+- <xref:System.Numerics.Vector.Create%2A?displayProperty=nameWithType>
+- <xref:System.Numerics.Vector2.Create%2A?displayProperty=nameWithType>
+- <xref:System.Numerics.Vector3.Create%2A?displayProperty=nameWithType>
+- <xref:System.Numerics.Vector4.Create%2A?displayProperty=nameWithType>
 
 These APIs are primarily for convenience and overall consistency across .NET's SIMD-accelerated types.
 

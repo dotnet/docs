@@ -19,19 +19,19 @@ At runtime, a credential chain attempts to authenticate using the sequence's fir
 
 A chained credential can offer the following benefits:
 
-- **Environment-aware**: It automatically selects the most appropriate credential based on the environment in which the app is running. Without it, you'd have write code like this:
+- **Environment awareness**: It automatically selects the most appropriate credential based on the environment in which the app is running. Without it, you'd have write code like this:
 
     :::code language="csharp" source="../snippets/authentication/Program.cs" id="snippet_NoChain":::
 
-- **Seamless transition**: Your app can move from local development to your staging or production environment without changing authentication code.
+- **Seamless transitions**: Your app can move from local development to your staging or production environment without changing authentication code.
 - **Improved resiliency**: It includes a fallback mechanism that moves to the next credential when the prior fails to acquire an access token.
 
 ## How to choose a chained credential
 
 There are two disparate philosophies to credential chaining:
 
-- **"Tear down" a chain** - Start with a preconfigured chain and exclude what you don't need. For this approach, see the [DefaultAzureCredential overview](#defaultazurecredential-overview) section.
-- **"Build up" a chain** - Start with an empty chain and include only what you need. For this approach, see the [ChainedTokenCredential overview](#chainedtokencredential-overview) section.
+- **"Tear down" a chain**: Start with a preconfigured chain and exclude what you don't need. For this approach, see the [DefaultAzureCredential overview](#defaultazurecredential-overview) section.
+- **"Build up" a chain**: Start with an empty chain and include only what you need. For this approach, see the [ChainedTokenCredential overview](#chainedtokencredential-overview) section.
 
 ## DefaultAzureCredential overview
 
@@ -99,6 +99,6 @@ The preceding code sample creates a tailored credential chain comprised of two c
 
 Here's why:
 
-- **Debugging challenges** - When authentication fails, it can be challenging to debug and identify the offending credential. You must [enable logging](../logging.md) to see the progression from one credential to the next and the success/failure status of each.
-- **Performance overhead** - The process of sequentially trying multiple credentials can introduce performance overhead. For example, when running on a local development machine, Managed Identity is unavailable. Consequently, `ManagedIdentityCredential` always fails in the local development environment, unless explicitly disabled via its corresponding `Exclude`-prefixed property.
-- **Unpredictable behavior** - `DefaultAzureCredential` checks for the presence of certain environment variables. It's possible that someone could add or modify these environment variables at the system level on the host machine. Those changes apply globally and therefore alter the behavior of `DefaultAzureCredential` at runtime in any app running on that machine.
+- **Debugging challenges**: When authentication fails, it can be challenging to debug and identify the offending credential. You must [enable logging](../logging.md) to see the progression from one credential to the next and the success/failure status of each.
+- **Performance overhead**: The process of sequentially trying multiple credentials can introduce performance overhead. For example, when running on a local development machine, managed identity is unavailable. Consequently, `ManagedIdentityCredential` always fails in the local development environment, unless explicitly disabled via its corresponding `Exclude`-prefixed property.
+- **Unpredictable behavior**: `DefaultAzureCredential` checks for the presence of certain environment variables. It's possible that someone could add or modify these environment variables at the system level on the host machine. Those changes apply globally and therefore alter the behavior of `DefaultAzureCredential` at runtime in any app running on that machine.

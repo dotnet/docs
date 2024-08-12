@@ -559,7 +559,7 @@ ReadOnlySpan<char> text = ...;
 File.WriteAllText(filePath, text);
 ```
 
-New <xref:System.MemoryExtensions.StartsWith%60%601(System.ReadOnlySpan{%60%600},%60%600)> and <xref:xref:System.MemoryExtensions.EndsWith%60%601(System.ReadOnlySpan{%60%600},%60%600)> extension methods have also been added for spans, making it easy to test whether a <xref:System.ReadOnlySpan%601> starts or ends with a specific `T` value.
+New <xref:System.MemoryExtensions.StartsWith%60%601(System.ReadOnlySpan{%60%600},%60%600)> and <xref:System.MemoryExtensions.EndsWith%60%601(System.ReadOnlySpan{%60%600},%60%600)> extension methods have also been added for spans, making it easy to test whether a <xref:System.ReadOnlySpan%601> starts or ends with a specific `T` value.
 
 The following code uses these new convenience APIs.
 

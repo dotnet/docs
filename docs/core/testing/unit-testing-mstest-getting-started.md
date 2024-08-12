@@ -18,6 +18,6 @@ We recommend that you don't install these packages directly into your test proje
 
 - [MSTest.Sdk](https://www.nuget.org/packages/MSTest.Sdk): A [MSBuild project SDK](/visualstudio/msbuild/how-to-use-project-sdk) that includes all the recommended packages and greatly simplifies all the boilerplate configuration. Although this is shipped as a NuGet package, it's not intended to be installed as a regular package dependency, instead you should modify the `Sdk` part of your project (e.g. `<Project Sdk="MSTest.Sdk">` or `<Project Sdk="MSTest.Sdk/X.Y.Z">` where `X.Y.Z` is MSTest version). For more information, please refer to [MSTest SDK overview](./unit-testing-mstest-sdk.md).
 
-- the [MSTest](https://www.nuget.org/packages/MSTest) NuGet package, which includes all recommended packages: `MSTest.TestFramework`, `MSTest.TestAdapter`, `MSTest.Analyzer` and `Microsoft.NET.Test.Sdk`.
+- the [MSTest](https://www.nuget.org/packages/MSTest) NuGet package, which includes all recommended packages: `MSTest.TestFramework`, `MSTest.TestAdapter`, `MSTest.Analyzers` and `Microsoft.NET.Test.Sdk`.
 
 If you are creating a test infrastructure project that is intended to be used as a helper by multiple test projects, you should install the `MSTest.TestFramework` and `MSTest.Analyzers` packages directly into that project.

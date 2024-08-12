@@ -18,7 +18,7 @@ BinaryFormatter used the [.NET Remoting: Binary Format](/openspecs/windows_proto
 
 As part of .NET 9, a new `NrbfDecoder` class was introduced to decode NRBF payloads without performing _deserialization_ of the payload. This API can safely be used to decode trusted or untrusted payloads without any of the risks that BinaryFormatter deserialization carries. However, `NrbfDecoder` merely decodes the data into structures an application can further process. Care must be taken when using `NrbfDecoder` to safely load the data into the appropriate instances.
 
-You can think of `NrbfDecoder` as being the equivalent of using a JSON/XML reader without the deserializer.
+You can think of <xref:System.Formats.Nrbf.NrbfDecoder> as being the equivalent of using a JSON/XML reader without the deserializer.
 
 ## NrbfDecoder
 

@@ -90,12 +90,15 @@ The following performance improvements have been made for .NET 9:
 
 Improving code generation for loops is a priority for .NET 9. The following improvements are now available:
 
-- [Induction variable widening](#induction-variable-widening)
+- [Induction-variable widening](#induction-variable-widening)
 - [Post-indexed addressing](#post-indexed-addressing-on-arm64)
 - [Strength reduction](#strength-reduction)
 - [Loop counter variable direction](#loop-counter-variable-direction)
 
-#### Induction variable widening
+> [!NOTE]
+> Induction-variable widening and post-indexed addressing are similar: they both optimize memory accesses with loop-index variables. However, they take different approaches since Arm64 offers a CPU capability and x64 doesn't. Induction-variable widening was implemented for x64 due to differences in CPU/ISA capability and needs.
+
+#### Induction-variable widening
 
 The 64-bit compiler features a new optimization called *induction variable (IV) widening*.
 
@@ -149,11 +152,23 @@ Here's what the updated assembly looks like:
 ldr w0, [x1], #0x04
 ```
 
-The `#0x04` at the end means the address in `x1` is incremented by four bytes after it's used to load an integer into `w0`. The 64-bit compiler now uses post-indexed addressing when generating Arm64 code. While x64 doesn't support post-indexed addressing, [induction variable widening](#induction-variable-widening) is similarly useful for optimizing memory accesses with loop-index variables.
+The `#0x04` at the end means the address in `x1` is incremented by four bytes after it's used to load an integer into `w0`. The 64-bit compiler now uses post-indexed addressing when generating Arm64 code.
 
 #### Strength reduction
 
-Strength reduction is a compiler optimization where an operation is replaced with a faster, logically equivalent operation. This technique is especially useful for optimizing loops. Consider the example `for` loop code shown in the [previous section](#post-indexed-addressing-on-arm64). The following x64 assembly code shows a snippet of the code that's generated for the loop's body:
+Strength reduction is a compiler optimization where an operation is replaced with a faster, logically equivalent operation. This technique is especially useful for optimizing loops. Consider the idiomatic `for` loop:
+
+```csharp
+int sum = 0;
+int[] nums = [0..12];
+
+for (int i = 0; i < nums.Length; i++)
+{
+    sum += nums[i];
+}
+```
+
+The following x64 assembly code shows a snippet of the code that's generated for the loop's body:
 
 ```al
 add ecx, dword ptr [rax+4*rdx+0x10]

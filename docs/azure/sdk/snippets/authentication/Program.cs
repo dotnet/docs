@@ -19,6 +19,7 @@ builder.Services.AddAzureClients(clientBuilder =>
         {
             ExcludeEnvironmentCredential = true,
             ExcludeWorkloadIdentityCredential = true,
+            ManagedIdentityClientId = "<user-assigned-client-id>",
         }));
     #endregion
 

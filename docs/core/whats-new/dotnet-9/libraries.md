@@ -230,7 +230,7 @@ Previously, you could only link a tracing <xref:System.Diagnostics.Activity> to 
 
 ### Metrics.Gauge instrument
 
-<xref:System.Diagnostics.Metrics> now provides the <xref:System.Diagnostics.Metrics.Gauge> instrument according to the OpenTelemetry specification. The `Gauge` instrument is designed to record non-additive values when changes occur. For example, it can measure the background noise level, where summing the values from multiple rooms would be nonsensical. The `Gauge` instrument is a generic type that can record any value type, such as `int`, `double`, or `decimal`.
+<xref:System.Diagnostics.Metrics> now provides the <xref:System.Diagnostics.Metrics.Gauge%601> instrument according to the OpenTelemetry specification. The `Gauge` instrument is designed to record non-additive values when changes occur. For example, it can measure the background noise level, where summing the values from multiple rooms would be nonsensical. The `Gauge` instrument is a generic type that can record any value type, such as `int`, `double`, or `decimal`.
 
 The following example demonstrates using the the `Gauge` instrument.
 
@@ -559,7 +559,7 @@ ReadOnlySpan<char> text = ...;
 File.WriteAllText(filePath, text);
 ```
 
-New <xref:System.MemoryExtensions.StartsWith%60%601(System.ReadOnlySpan{%60%601},%60%601)> and <xref:xref:System.MemoryExtensions.EndsWith%60%601(System.ReadOnlySpan{%60%601},%60%601)> extension methods have also been added for spans, making it easy to test whether a <xref:System.ReadOnlySpan%601> starts or ends with a specific `T` value.
+New <xref:System.MemoryExtensions.StartsWith%60%601(System.ReadOnlySpan{%60%600},%60%600)> and <xref:xref:System.MemoryExtensions.EndsWith%60%601(System.ReadOnlySpan{%60%600},%60%600)> extension methods have also been added for spans, making it easy to test whether a <xref:System.ReadOnlySpan%601> starts or ends with a specific `T` value.
 
 The following code uses these new convenience APIs.
 

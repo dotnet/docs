@@ -82,7 +82,6 @@ The NRBF payload consists of serialization records that represent the serialized
 
 The <xref:System.Formats.Nrbf.NrbfDecoder.Decode> method returns a <xref:System.Formats.Nrbf.SerializationRecord> instance. <xref:System.Formats.Nrbf.SerializationRecord> is an abstract class that represents the serialization record and provides three self-describing properties: <xref:System.Formats.Nrbf.SerializationRecord.Id>, <xref:System.Formats.Nrbf.SerializationRecord.RecordType>, and <xref:System.Formats.Nrbf.SerializationRecord.TypeName>. It exposes one method, <xref:System.Formats.Nrbf.SerializationRecord.TypeNameMatches>, which compares the type name read from the payload (and exposed via <xref:System.Formats.Nrbf.SerializationRecord.TypeName> property) against the specified type. This method ignores assembly names, so users don't need to worry about type forwarding and assembly versioning. It also does not consider member names or their types (because getting this information would require type loading).
 
-
 ```csharp
 using System.Formats.Nrbf;
 

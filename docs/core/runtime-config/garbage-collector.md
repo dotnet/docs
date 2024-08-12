@@ -779,8 +779,8 @@ Example *app.config* file:
 
 |                          | Setting name               | Values    | Version introduced |
 |--------------------------|----------------------------|-----------|--------------------|
-| **runtimeconfig.json**   | `System.GC.DynamicAdaptationMode` | `1` - enabled<br/> `0` - disabled | .NET 8 |
 | **Environment variable** | `DOTNET_GCDynamicAdaptationMode`  | `1` - enabled<br/> `0` - disabled | .NET 8 |
 | **MSBuild property** | `GarbageCollectionAdaptationMode` | `1` - enabled<br/> `0` - disabled | .NET 8 |
+| **runtimeconfig.json**   | `System.GC.DynamicAdaptationMode` | `1` - enabled<br/> `0` - disabled | .NET 8 |
 
 [!INCLUDE [runtimehostconfigurationoption](includes/runtimehostconfigurationoption.md)]

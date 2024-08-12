@@ -139,7 +139,7 @@ ldr w0, [x1]
 add x1, x1, #4
 ```
 
-`ldr w0, [x1]` loads the integer at the memory address in `x1` into `w0`; this corresponds to the access of `nums[i]` in the source code. Then, `add x1, x1, #4` increases the address in `x1` by four bytes, moving to the next integer in `nums`. This instruction corresponds to the `i++` operation executed at the end of each iteration.
+`ldr w0, [x1]` loads the integer at the memory address in `x1` into `w0`; this corresponds to the access of `nums[i]` in the source code. Then, `add x1, x1, #4` increases the address in `x1` by four bytes (the size of an integer), moving to the next integer in `nums`. This instruction corresponds to the `i++` operation executed at the end of each iteration.
 
 Arm64 supports post-indexed addressing, where the "index" register is automatically incremented after its address is used. This means that two instructions can be combined into one, making the loop more efficient. The CPU only needs to decode one instruction instead of two, and the loop's code is now more cache-friendly.
 
@@ -323,7 +323,7 @@ When the address of a local variable is used, the JIT compiler must take extra p
 
 ### AVX10v1 support
 
-New APIs have been added for AVX10, which is a new SIMD instruction set from Intel. You can accelerate your .NET applications on AVX10-enabled hardware with vectorized operations using the new <xref:System.Runtime.Intrinsics.X86.Avx10v1> APIs.
+New APIs have been added for [AVX10](https://en.wikipedia.org/wiki/Advanced_Vector_Extensions#AVX10), which is a new SIMD instruction set from Intel. You can accelerate your .NET applications on AVX10-enabled hardware with vectorized operations using the new <xref:System.Runtime.Intrinsics.X86.Avx10v1> APIs.
 
 ### Hardware intrinsic code generation
 
@@ -358,7 +358,7 @@ The use of `size` in the call to `Sse2.ShiftRightLogical128BitLane` can be subst
 
 ### Arm64 SVE support
 
-.NET 9 introduces experimental support for the Scalable Vector Extension (SVE), a SIMD instruction set for ARM64 CPUs. .NET already supported the NEON instruction set, so on NEON-capable hardware, your applications can leverage 128-bit vector registers. SVE supports flexible vector lengths all the way up to 2048 bits, unlocking more data processing per instruction. In .NET 9, <xref:System.Numerics.Vector%601> is 128 bits wide when targeting SVE, and future work will enable scaling of its width to match the target machine's vector register size. You can accelerate your .NET applications on SVE-capable hardware using the new `System.Runtime.Intrinsics.Arm.Sve` <!--<xref:System.Runtime.Intrinsics.Arm.Sve>--> APIs.
+.NET 9 introduces experimental support for the [Scalable Vector Extension (SVE)](https://en.wikipedia.org/wiki/AArch64#Scalable_Vector_Extension_(SVE)), a SIMD instruction set for ARM64 CPUs. .NET already supported the NEON instruction set, so on [NEON](https://en.wikipedia.org/wiki/ARM_architecture_family#Advanced_SIMD_(Neon))-capable hardware, your applications can leverage 128-bit vector registers. SVE supports flexible vector lengths all the way up to 2048 bits, unlocking more data processing per instruction. In .NET 9, <xref:System.Numerics.Vector%601> is 128 bits wide when targeting SVE, and future work will enable scaling of its width to match the target machine's vector register size. You can accelerate your .NET applications on SVE-capable hardware using the new `System.Runtime.Intrinsics.Arm.Sve` <!--<xref:System.Runtime.Intrinsics.Arm.Sve>--> APIs.
 
 > [!NOTE]
 > SVE support in .NET 9 is experimental. The APIs under `System.Runtime.Intrinsics.Arm.Sve` are marked with <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute>, which means they're subject to change in future releases. Additionally, debugger stepping and breakpoints through SVE-generated code might not function properly, resulting in application crashes or corruption of data.

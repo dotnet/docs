@@ -115,7 +115,7 @@ KMAC is available on Linux with OpenSSL 3.0 or later, and on Windows 11 Build 26
 
 <xref:System.Security.Cryptography.AesGcm.IsSupported> and `ChaChaPoly1305.IsSupported` now return true when running on iOS 13+, tvOS 13+, and Mac Catalyst.
 
-As with macOS, <xref:System.Security.Cryptography.AesGcm> on these environments only supports 16-byte (128-bit) tag values.
+<xref:System.Security.Cryptography.AesGcm> only supports 16-byte (128-bit) tag values on Apple operating systems.
 
 ### X.509 certificate loading
 
@@ -609,7 +609,7 @@ public static bool ListContainsItem(ReadOnlySpan<char> span, string item)
 
 ## System.Guid
 
-<xref:System.Guid.NewGuid> creates a `Guid` filled mostly with cryptographically secure random data, following the UUID Version 4 specification in RFC 9562. That same RFC also defines other versions, including Version 7, which "features a time-ordered value field derived from the widely implemented and well-known Unix Epoch timestamp source". In other words, much of the data is still random, but some of it is reserved for data based on a timestamp, which enables these values to have a natural sort order. In .NET 9, you can create a `Guid` according to Version 7 via the new `Guid.CreateVersion7()` <!--<xref:System.Guid.CreateVersion7?displayProperty=nameWithType>--> and `Guid.CreateVersion7(DateTimeOffset timestamp)`  <!--<xref:System.Guid.CreateVersion7(System.DateTimeOffset)?displayProperty=nameWithType>--> methods. You can also use the new `Version` <!--<xref:System.Guid.Version>--> property to retrieve a `Guid` object's version field.
+<xref:System.Guid.NewGuid> creates a `Guid` filled mostly with [cryptographically secure random data](https://www.rfc-editor.org/rfc/rfc9562#section-6.9), following the UUID Version 4 specification in RFC 9562. That same RFC also defines other versions, including Version 7, which "features a time-ordered value field derived from the widely implemented and well-known Unix Epoch timestamp source". In other words, much of the data is still random, but some of it is reserved for data based on a timestamp, which enables these values to have a natural sort order. In .NET 9, you can create a `Guid` according to Version 7 via the new `Guid.CreateVersion7()` <!--<xref:System.Guid.CreateVersion7?displayProperty=nameWithType>--> and `Guid.CreateVersion7(DateTimeOffset timestamp)`  <!--<xref:System.Guid.CreateVersion7(System.DateTimeOffset)?displayProperty=nameWithType>--> methods. You can also use the new `Version` <!--<xref:System.Guid.Version>--> property to retrieve a `Guid` object's version field.
 
 ## System.IO
 
@@ -618,7 +618,7 @@ public static bool ListContainsItem(ReadOnlySpan<char> span, string item)
 
 ### Compression
 
-<xref:System.IO.Compression> features like <xref:System.IO.Compression.ZipArchive>, <xref:System.IO.Compression.DeflateStream>, <xref:System.IO.Compression.GZipStream>, and <xref:System.IO.Compression.ZLibStream> are all based primarily on the zlib library. Starting in .NET 9, these features instead all use zlib-ng, a library that yields more consistent and efficient processing across a wider array of operating systems and hardware.
+<xref:System.IO.Compression> features like <xref:System.IO.Compression.ZipArchive>, <xref:System.IO.Compression.DeflateStream>, <xref:System.IO.Compression.GZipStream>, and <xref:System.IO.Compression.ZLibStream> are all based primarily on the zlib library. Starting in .NET 9, these features instead all use [zlib-ng](https://github.com/zlib-ng/zlib-ng), a library that yields more consistent and efficient processing across a wider array of operating systems and hardware.
 
 ### XPS documents from XPS virtual printer
 

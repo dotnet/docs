@@ -83,7 +83,7 @@ Note `InteractiveBrowserCredential` is excluded by default and therefore isn't s
 
 :::code language="csharp" source="../snippets/authentication/Program.cs" id="snippet_Ctc":::
 
-The preceding code sample creates a tailored credential chain comprised of two credentials. `ManagedIdentityCredential` is attempted first, followed by `VisualStudioCredential`, if necessary. In graphical form, the chain looks like this:
+The preceding code sample creates a tailored credential chain comprised of two credentials. The user-assigned managed identity variant of `ManagedIdentityCredential` is attempted first, followed by `VisualStudioCredential`, if necessary. In graphical form, the chain looks like this:
 
 :::image type="content" source="../media/mermaidjs/ChainedTokenCredentialAuthFlow.svg" alt-text="ChainedTokenCredential":::
 

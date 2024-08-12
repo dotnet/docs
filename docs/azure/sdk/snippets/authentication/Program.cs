@@ -24,7 +24,7 @@ builder.Services.AddAzureClients(clientBuilder =>
 
     #region snippet_Ctc
     clientBuilder.UseCredential(new ChainedTokenCredential(
-        new ManagedIdentityCredential(),
+        new ManagedIdentityCredential(clientId: "<user-assigned-client-id>"),
         new VisualStudioCredential()));
     #endregion
 });

@@ -58,7 +58,7 @@ internal class PropertySample
 
 In this case, `<Name>k__BackingField` is **the name of the member that `BinaryFormatter` uses in the serialized payload**. It's not possible to use `nameof` or any other C# operator to get this name.
 
-The <xref:System.Runtime.Serialization.ISerializable> interface comes with <xref:System.Runtime.Serialization.ISerializable.GetObjectData> method that allows the users to control the names, by using one of the <xref:System.Runtime.Serialization.SerializationInfo.AddValue?displayProperty=nameAndType> methods.
+The <xref:System.Runtime.Serialization.ISerializable> interface comes with <xref:System.Runtime.Serialization.ISerializable.GetObjectData*> method that allows the users to control the names, by using one of the <xref:System.Runtime.Serialization.SerializationInfo.AddValue*?displayProperty=nameAndType> methods.
 
 ```csharp
 // Note lack of any special attribute.
@@ -84,6 +84,6 @@ private PropertySample(SerializationInfo info, StreamingContext context)
 
 It's recommended to use <xref:System.Runtime.Serialization.SerializationBinder> to control class loading and mandate what class to load. That minimizes security vulnerabilities (so only allowed types get loaded, even if the attacker modifies the payload to deserialize and load something else).
 
-Using this type requires inheriting from it and overriding the <xref:System.Runtime.Serialization.SerializationBinder.BindToType> method.
+Using this type requires inheriting from it and overriding the <xref:System.Runtime.Serialization.SerializationBinder.BindToType*> method.
 
 Ideally the list of serializable types is closed set because it means you know which types can be instantiated which will help reduce security vulnerabilities.

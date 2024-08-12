@@ -66,7 +66,7 @@ Types and properties might participate in serialization without you realizing du
 - That property is not attributed with `[DesignerSerializationVisibility(false)]`.
 - That property does not have a <xref:System.ComponentModel.DefaultValueAttribute>.
 - That property does not have a respective `bool ShouldSerialize[PropertyName]` method that returns `false` at the time of the CodeDOM serialization process. (Note: the method can have `private` scope.)
-- That property is a type that does not have a <xref:Microsoft.Visualstudio.Modeling.DslDefinition.DesignerSerializer>
+- That property is a type that does not have a <xref:Microsoft.VisualStudio.Modeling.DslDefinition.DesignerSerializer>
 
 If these statements are true, the Designer determines if that property's type has a type converter. If it does, the Designer uses the type converter to serialize the property content. Otherwise, it uses BinaryFormatter to serialize the content into the resource file. Windows Forms has added analyzers along with code fixes to help bring awareness to this type of behavior where BinaryFormatter serialization might be occurring without the developer's knowledge.
 

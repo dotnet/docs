@@ -42,10 +42,10 @@ When using [NrbfDecoder], it is important not to reintroduce those capabilities 
 
 ### Identify NRBF payloads
 
-[NrbfDecoder] provides two <xref:System.Formats.Nrbf.NrbfDecoder.StartsWithPayloadHeader> methods that let you check whether a given stream or buffer starts with the NRBF header. It's recommended to use these methods when you're migrating payloads persisted with [BinaryFormatter] to a [different serializer](./choose-a-serializer.md):
+[NrbfDecoder] provides two <xref:System.Formats.Nrbf.NrbfDecoder.StartsWithPayloadHeader*> methods that let you check whether a given stream or buffer starts with the NRBF header. It's recommended to use these methods when you're migrating payloads persisted with [BinaryFormatter] to a [different serializer](./choose-a-serializer.md):
 
-- Check if the payload read from storage is an [NRBF](/openspecs/windows_protocols/ms-nrbf/) payload with <xref:System.Formats.Nrbf.NrbfDecoder.StartsWithPayloadHeader?displayProperty=nameWithType>.
-- If so, read it with <xref:System.Formats.Nrbf.NrbfDecoder.Decode?displayProperty=nameWithType>, serialize it back with a new serializer, and overwrite the data in the storage.
+- Check if the payload read from storage is an [NRBF](/openspecs/windows_protocols/ms-nrbf/) payload with <xref:System.Formats.Nrbf.NrbfDecoder.StartsWithPayloadHeader*?displayProperty=nameWithType>.
+- If so, read it with <xref:System.Formats.Nrbf.NrbfDecoder.Decode*?displayProperty=nameWithType>, serialize it back with a new serializer, and overwrite the data in the storage.
 - If not, use the new serializer to deserialize the data.
 
 ```csharp
@@ -78,9 +78,9 @@ internal static T LoadFromFile<T>(string path)
 
 ### Safely read NRBF payloads
 
-The NRBF payload consists of serialization records that represent the serialized objects and their metadata. To read the whole payload and get the root object, you need to call the <xref:System.Formats.Nrbf.NrbfDecoder.Decode> method.
+The NRBF payload consists of serialization records that represent the serialized objects and their metadata. To read the whole payload and get the root object, you need to call the <xref:System.Formats.Nrbf.NrbfDecoder.Decode*> method.
 
-The <xref:System.Formats.Nrbf.NrbfDecoder.Decode> method returns a <xref:System.Formats.Nrbf.SerializationRecord> instance. <xref:System.Formats.Nrbf.SerializationRecord> is an abstract class that represents the serialization record and provides three self-describing properties: <xref:System.Formats.Nrbf.SerializationRecord.Id>, <xref:System.Formats.Nrbf.SerializationRecord.RecordType>, and <xref:System.Formats.Nrbf.SerializationRecord.TypeName>. It exposes one method, <xref:System.Formats.Nrbf.SerializationRecord.TypeNameMatches>, which compares the type name read from the payload (and exposed via <xref:System.Formats.Nrbf.SerializationRecord.TypeName> property) against the specified type. This method ignores assembly names, so users don't need to worry about type forwarding and assembly versioning. It also does not consider member names or their types (because getting this information would require type loading).
+The <xref:System.Formats.Nrbf.NrbfDecoder.Decode*> method returns a <xref:System.Formats.Nrbf.SerializationRecord> instance. <xref:System.Formats.Nrbf.SerializationRecord> is an abstract class that represents the serialization record and provides three self-describing properties: <xref:System.Formats.Nrbf.SerializationRecord.Id>, <xref:System.Formats.Nrbf.SerializationRecord.RecordType>, and <xref:System.Formats.Nrbf.SerializationRecord.TypeName>. It exposes one method, <xref:System.Formats.Nrbf.SerializationRecord.TypeNameMatches*>, which compares the type name read from the payload (and exposed via <xref:System.Formats.Nrbf.SerializationRecord.TypeName> property) against the specified type. This method ignores assembly names, so users don't need to worry about type forwarding and assembly versioning. It also does not consider member names or their types (because getting this information would require type loading).
 
 ```csharp
 using System.Formats.Nrbf;
@@ -121,7 +121,7 @@ else if (rootObject is SZArrayRecord<byte> arrayOfBytes)
 }
 ```
 
-Beside <xref:System.Formats.Nrbf.NrbfDecoder.Decode>, the [NrbfDecoder] exposes a <xref:System.Formats.Nrbf.NrbfDecoder.DecodeClassRecord> method that returns <xref:System.Formats.Nrbf.ClassRecord> (or throws).
+Beside <xref:System.Formats.Nrbf.NrbfDecoder.Decode*>, the [NrbfDecoder] exposes a <xref:System.Formats.Nrbf.NrbfDecoder.DecodeClassRecord*> method that returns <xref:System.Formats.Nrbf.ClassRecord> (or throws).
 
 #### ClassRecord
 
@@ -130,10 +130,10 @@ The most important type that derives from <xref:System.Formats.Nrbf.Serializatio
 The API it provides:
 
 - <xref:System.Formats.Nrbf.ClassRecord.MemberNames> property that gets the names of serialized members.
-- <xref:System.Formats.Nrbf.ClassRecord.HasMember> method that checks if member of given name was present in the payload. It was designed for handling versioning scenarios where given member could have been renamed.
-- A set of dedicated methods for retrieving primitive values of the provided member name: <xref:System.Formats.Nrbf.ClassRecord.GetString>, <xref:System.Formats.Nrbf.ClassRecord.GetBoolean>, <xref:System.Formats.Nrbf.ClassRecord.GetByte>, <xref:System.Formats.Nrbf.ClassRecord.GetSByte>, <xref:System.Formats.Nrbf.ClassRecord.GetChar>, <xref:System.Formats.Nrbf.ClassRecord.GetInt16>, <xref:System.Formats.Nrbf.ClassRecord.GetUInt16>, <xref:System.Formats.Nrbf.ClassRecord.GetInt32>, <xref:System.Formats.Nrbf.ClassRecord.GetUInt32>, <xref:System.Formats.Nrbf.ClassRecord.GetInt64>, <xref:System.Formats.Nrbf.ClassRecord.GetUInt64>, <xref:System.Formats.Nrbf.ClassRecord.GetSingle>, <xref:System.Formats.Nrbf.ClassRecord.GetDouble>, <xref:System.Formats.Nrbf.ClassRecord.GetDecimal>, <xref:System.Formats.Nrbf.ClassRecord.GetTimeSpan>, and <xref:System.Formats.Nrbf.ClassRecord.GetDateTime>.
-- <xref:System.Formats.Nrbf.ClassRecord.GetClassRecord> and <xref:System.Formats.Nrbf.ClassRecord.GetArrayRecord> methods to retrieve instance of given record types.
-- <xref:System.Formats.Nrbf.ClassRecord.GetSerializationRecord> to retrieve any serialization record and <<xref:System.Formats.Nrbf.ClassRecord.GetRawValue> to retrieve any serialization record or a raw primitive value.
+- <xref:System.Formats.Nrbf.ClassRecord.HasMember*> method that checks if member of given name was present in the payload. It was designed for handling versioning scenarios where given member could have been renamed.
+- A set of dedicated methods for retrieving primitive values of the provided member name: <xref:System.Formats.Nrbf.ClassRecord.GetString*>, <xref:System.Formats.Nrbf.ClassRecord.GetBoolean*>, <xref:System.Formats.Nrbf.ClassRecord.GetByte*>, <xref:System.Formats.Nrbf.ClassRecord.GetSByte*>, <xref:System.Formats.Nrbf.ClassRecord.GetChar*>, <xref:System.Formats.Nrbf.ClassRecord.GetInt16*>, <xref:System.Formats.Nrbf.ClassRecord.GetUInt16*>, <xref:System.Formats.Nrbf.ClassRecord.GetInt32*>, <xref:System.Formats.Nrbf.ClassRecord.GetUInt32*>, <xref:System.Formats.Nrbf.ClassRecord.GetInt64*>, <xref:System.Formats.Nrbf.ClassRecord.GetUInt64*>, <xref:System.Formats.Nrbf.ClassRecord.GetSingle*>, <xref:System.Formats.Nrbf.ClassRecord.GetDouble*>, <xref:System.Formats.Nrbf.ClassRecord.GetDecimal*>, <xref:System.Formats.Nrbf.ClassRecord.GetTimeSpan*>, and <xref:System.Formats.Nrbf.ClassRecord.GetDateTime*>.
+- <xref:System.Formats.Nrbf.ClassRecord.GetClassRecord*> and <xref:System.Formats.Nrbf.ClassRecord.GetArrayRecord*> methods to retrieve instance of given record types.
+- <xref:System.Formats.Nrbf.ClassRecord.GetSerializationRecord*> to retrieve any serialization record and <<xref:System.Formats.Nrbf.ClassRecord.GetRawValue*> to retrieve any serialization record or a raw primitive value.
 
 The following code snippet shows <xref:System.Formats.Nrbf.ClassRecord> in action:
 
@@ -172,9 +172,9 @@ Sample output = new()
 - <xref:System.Formats.Nrbf.ArrayRecord.Rank> which gets the rank of the array.
 - <xref:System.Formats.Nrbf.ArrayRecord.Lengths> which get a buffer of integers that represent the number of elements in every dimension.
 
-It also provides one method: <xref:System.Formats.Nrbf.ArrayRecord.GetArray>. When used for the first time, it allocates an array and fills it with the data provided in the serialized records (in case of the natively supported primitive types like `string` or `int`) or the serialized records themselves (in case of arrays of complex types).
+It also provides one method: <xref:System.Formats.Nrbf.ArrayRecord.GetArray*>. When used for the first time, it allocates an array and fills it with the data provided in the serialized records (in case of the natively supported primitive types like `string` or `int`) or the serialized records themselves (in case of arrays of complex types).
 
-<xref:System.Formats.Nrbf.ArrayRecord.GetArray> requires a mandatory argument that specifies the type of the expected array. For example, if the record should be a 2D array of integers, the `expectedArrayType` must be provided as `typeof(int[,])` and the returned array is also `int[,]`:
+<xref:System.Formats.Nrbf.ArrayRecord.GetArray*> requires a mandatory argument that specifies the type of the expected array. For example, if the record should be a 2D array of integers, the `expectedArrayType` must be provided as `typeof(int[,])` and the returned array is also `int[,]`:
 
 ```csharp
 ArrayRecord arrayRecord = (ArrayRecord)NrbfDecoder.Decode(stream);
@@ -209,7 +209,7 @@ ComplexType3D[] output = records.Select(classRecord => new ComplexType3D()
 
 `SZArrayRecord<T>` defines the core behavior for NRBF single dimensional, zero-indexed array records and provides a base for derived classes. The `T` can be one of the natively supported primitive types or <xref:System.Formats.Nrbf.ClassRecord>.
 
-It provides a <xref:System.Formats.Nrbf.SZArrayRecord%601.Length> property and a <xref:System.Formats.Nrbf.SZArrayRecord%601.GetArray> overload that returns `T[]`.
+It provides a <xref:System.Formats.Nrbf.SZArrayRecord%601.Length> property and a <xref:System.Formats.Nrbf.SZArrayRecord%601.GetArray*> overload that returns `T[]`.
 
 ```csharp
 [Serializable]

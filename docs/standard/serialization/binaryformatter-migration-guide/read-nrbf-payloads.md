@@ -18,6 +18,8 @@ helpviewer_keywords:
 
 As part of .NET 9, a new [NrbfDecoder] class was introduced to decode NRBF payloads without performing _deserialization_ of the payload. This API can safely be used to decode trusted or untrusted payloads without any of the risks that [BinaryFormatter] deserialization carries. However, [NrbfDecoder] merely decodes the data into structures an application can further process. Care must be taken when using [NrbfDecoder] to safely load the data into the appropriate instances.
 
+You can think of <xref:System.Formats.Nrbf.NrbfDecoder> as being the equivalent of using a JSON/XML reader without the deserializer.
+
 ## NrbfDecoder
 
 [NrbfDecoder] is part of the new [System.Formats.Nrbf](https://www.nuget.org/packages/System.Formats.Nrbf) NuGet package. It targets not only .NET 9, but also older monikers like .NET Standard 2.0 and .NET Framework. That multi-targeting makes it possible for everyone who uses a supported version of .NET to migrate away from [BinaryFormatter]. [NrbfDecoder] can read payloads that were serialized with [BinaryFormatter] using <xref:System.Runtime.Serialization.Formatters.FormatterTypeStyle.TypesAlways?displayProperty=nameWithType> (the default).

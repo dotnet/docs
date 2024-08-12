@@ -15,7 +15,7 @@ helpviewer_keywords:
 > [!CAUTION]
 > We strongly recommend against using BinaryFormatter due to the [associated security risks](#whats-the-risk-in-using-binaryformatter). Existing users [should migrate away from BinaryFormatter](#migration-topics).
 
-Starting with .NET 9, we no longer include an implementation of BinaryFormatter in the runtime. The APIs are still present, but their implementation always throws an exception, regardless of project type. Hence, setting the existing backwards compatibility flag is no longer sufficient to use BinaryFormatter.
+Starting with .NET 9, we no longer include an implementation of BinaryFormatter in the runtime. The APIs are still present, but their implementation always throws a <xref:System.PlatformNotSupportedException>, regardless of project type. Hence, setting the existing backwards compatibility flag is no longer sufficient to use BinaryFormatter.
 
 You have two options to address that:
 
@@ -56,7 +56,7 @@ In these scenarios and others, it becomes necessary to retain support for readin
 
 ### Migrate Windows Forms and WPF applications
 
-Windows Forms and WPF applications might require additional changes. See [Windows Forms applications](./winforms-applications.md), [WPF applications](./wpf-applications.md), and [WinForms/WPF clipboard and drag/drop guidance](./winforms-wpf-ole-guidance.md) for further migration guidance.
+Windows Forms and WPF applications might require additional changes. See [Windows Forms apps](./winforms-applications.md), [WPF apps](./wpf-applications.md), and [WinForms/WPF clipboard and drag-and-drop guidance](./winforms-wpf-ole-guidance.md) for further migration guidance.
 
 ### Migrate managed resources (ResX)
 

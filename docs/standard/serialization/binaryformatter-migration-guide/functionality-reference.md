@@ -14,9 +14,9 @@ helpviewer_keywords:
 
 # BinaryFormatter functionality reference
 
-The `BinaryFormatter` was first introduced with the initial release of .NET Framework in 2002. To understand how to replace usage of BinaryFormatter, it helps to know how BinaryFormatter works.
+The <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> was first introduced with the initial release of .NET Framework in 2002. To understand how to replace usage of BinaryFormatter, it helps to know how BinaryFormatter works.
 
-`BinaryFormatter` can serialize any instance of any type that's annotated with `[Serializable]` or implements the `ISerializable` interface.
+<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> can serialize any instance of any type that's annotated with `[Serializable]` or implements the <xref:System.Runtime.Serialization.ISerializable> interface.
 
 ## Member names
 
@@ -58,7 +58,7 @@ internal class PropertySample
 
 In this case, `<Name>k__BackingField` is **the name of the member that `BinaryFormatter` uses in the serialized payload**. It's not possible to use `nameof` or any other C# operator to get this name.
 
-The [ISerializable](/dotnet/api/system.runtime.serialization.iserializable) interface comes with [GetObjectData(SerializationInfo info, StreamingContext context)](/dotnet/api/system.runtime.serialization.iserializable.getobjectdata) method that allows the users to control the names, by using one of the [SerializationInfo.AddValue](/dotnet/api/system.runtime.serialization.serializationinfo.addvalue) methods.
+The <xref:System.Runtime.Serialization.ISerializable> interface comes with <xref:System.Runtime.Serialization.ISerializable.GetObjectData*> method that allows the users to control the names, by using one of the <xref:System.Runtime.Serialization.SerializationInfo.AddValue*?displayProperty=nameAndType> methods.
 
 ```csharp
 // Note lack of any special attribute.
@@ -68,7 +68,7 @@ public void GetObjectData(SerializationInfo info, StreamingContext context)
 }
 ```
 
-If such customization has been applied, the information needs to be provided during deserialization as well. That's possible by using the **serialization constructor**, where all values are read from `SerializationInfo` with one of the `Get` methods it provides.
+If such customization has been applied, the information needs to be provided during deserialization as well. That's possible by using the **serialization constructor**, where all values are read from <xref:System.Runtime.Serialization.SerializationInfo> with one of the `Get` methods it provides.
 
 ```csharp
 private PropertySample(SerializationInfo info, StreamingContext context)
@@ -82,8 +82,8 @@ private PropertySample(SerializationInfo info, StreamingContext context)
 
 ## Serialization binder
 
-It's recommended to use [SerializationBinder](/dotnet/api/system.runtime.serialization.serializationbinder) to control class loading and mandate what class to load. That minimizes security vulnerabilities (so only allowed types get loaded, even if the attacker modifies the payload to deserialize and load something else).
+It's recommended to use <xref:System.Runtime.Serialization.SerializationBinder> to control class loading and mandate what class to load. That minimizes security vulnerabilities (so only allowed types get loaded, even if the attacker modifies the payload to deserialize and load something else).
 
-Using this type requires inheriting from it and overriding the [Type BindToType(string assemblyName, string typeName)](/dotnet/api/system.runtime.serialization.serializationbinder.bindtotype#system-runtime-serialization-serializationbinder-bindtotype(system-string-system-string)) method.
+Using this type requires inheriting from it and overriding the <xref:System.Runtime.Serialization.SerializationBinder.BindToType*> method.
 
 Ideally the list of serializable types is closed set because it means you know which types can be instantiated which will help reduce security vulnerabilities.

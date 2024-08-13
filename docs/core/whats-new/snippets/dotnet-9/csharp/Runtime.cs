@@ -35,7 +35,7 @@ class Runtime
     }
     // </SnippetWhileLoop>
 
-    // </SnippetAdvance>
+    // <SnippetAdvance>
     class Body { public double x, y, z, vx, vy, vz, mass; }
 
     static void Advance(double dt, Body[] bodies)

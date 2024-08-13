@@ -88,7 +88,7 @@ The preceding code sample creates a tailored credential chain comprised of two c
 :::image type="content" source="../media/mermaidjs/ChainedTokenCredentialAuthFlow.svg" alt-text="ChainedTokenCredential":::
 
 > [!TIP]
-> For improved performance, optimize credential ordering in `ChainedTokenCredential` for your production environment.
+> For improved performance, optimize credential ordering in `ChainedTokenCredential` for your production environment. Credentials intended for use in the local development environment should be added last.
 
 ## Usage guidance for DefaultAzureCredential
 
@@ -109,6 +109,8 @@ To diagnose an unexpected issue or to understand what a chained credential is do
 
 :::code language="csharp" source="../snippets/authentication/credential-chains/Program.cs" id="snippet_FilteredLogging":::
 
-For illustration purposes, assume the parameterless form of `DefaultAzureCredential` was used. The next time the app runs, notice the following pertinent entries in the output:
+For illustration purposes, assume the parameterless form of `DefaultAzureCredential` was used to authenticate a request to a Log Analytics workspace. The next time the app runs, notice the following pertinent entries in the output:
 
-:::code language="output" source="../snippets/authentication/credential-chains/dac-logs.txt" highlight="10":::
+:::code language="output" source="../snippets/authentication/credential-chains/dac-logs.txt":::
+
+The `DefaultAzureCredential credential selected:`-prefixed entry indicates the credential that was selected&mdash;`VisualStudioCredential` in this case.

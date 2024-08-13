@@ -11,7 +11,7 @@ ms.assetid: 27320743-a22e-4c7b-b0b3-53afe3607334
 ---
 # partial type (C# Reference)
 
-Partial type definitions allow for the definition of a class, struct, interface, or record to be split into multiple files.
+Partial type definitions allow for the definition of a class, struct, interface, or record to be split into multiple definitions that can be in different files on the same project.
 
 In *File1.cs*:
 

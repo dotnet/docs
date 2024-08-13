@@ -11,7 +11,7 @@ ms.date: 08/02/2024
 ---
 # .NET SDK workload sets
 
-A workload set provides a single version number that represents a group of .NET SDK workloads. This enables you to install and update a combination of workload versions that ship at the same time and are known to work together. Workload sets are published to nuget.org with each release of the .NET SDK, under the package ID `Microsoft.NET.Workloads.<feature band>`
+A *workload set* provides a single version number that represents a group of .NET SDK workloads. This version number enables you to install and update a combination of workload versions that ship at the same time and are known to work together. Workload sets are published to nuget.org with each release of the .NET SDK, under the package ID `Microsoft.NET.Workloads.<feature band>`
 
 Here are some ways you can use workload sets:
 

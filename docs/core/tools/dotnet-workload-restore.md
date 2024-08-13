@@ -59,9 +59,7 @@ For more information about the `dotnet workload` commands, see the [dotnet workl
 
 [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
-- **`--version <VERSION>`**
-
-  The workload set version to update to. Available since 8.0.400 SDK. For more information, see [.NET SDK workload sets](dotnet-workload-sets.md).
+[!INCLUDE [version](../../../includes/cli-version.md)]
 
 ## Example
 

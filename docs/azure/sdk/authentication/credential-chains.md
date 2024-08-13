@@ -79,11 +79,11 @@ Note `InteractiveBrowserCredential` is excluded by default and therefore isn't s
 
 As more `Exclude`-prefixed properties are set, the advantages of using `DefaultAzureCredential` diminish. In such cases, `ChainedTokenCredential` is a better choice and requires less code. To illustrate, these two code samples behave the same way:
 
-### [DefaultAzureCredential]()
+### [DefaultAzureCredential](#tab/dac)
 
 :::code language="csharp" source="../snippets/authentication/credential-chains/Program.cs" id="snippet_DacEquivalents":::
 
-### [ChainedTokenCredential]()
+### [ChainedTokenCredential](#tab/ctc)
 
 :::code language="csharp" source="../snippets/authentication/credential-chains/Program.cs" id="snippet_CtcEquivalents":::
 

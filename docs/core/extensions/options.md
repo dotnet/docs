@@ -3,7 +3,7 @@ title: Options pattern
 author: IEvangelist
 description: Learn the options pattern to represent groups of related settings in .NET apps. The options pattern uses classes to provide strongly-typed access to settings.
 ms.author: dapine
-ms.date: 07/18/2024
+ms.date: 08/13/2024
 ---
 
 # Options pattern in .NET
@@ -143,6 +143,14 @@ builder.Services
 In the preceding code, the `Configure<TOptions>` method is used to register a configuration instance that `TOptions` will bind against, and updates the options when the configuration changes.
 
 ## IOptionsMonitor
+
+The `IOptionsMonitor` type supports change notifications and enables scenarios where your app may need to respond to configuration source changes dynamically. This is useful when you need to react to changes in configuration data after the app has started. Change notifications are only supported for file-system based configuration providers, such as the following:
+
+- [Microsoft.Extensions.Configuration.Ini](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Ini)
+- [Microsoft.Extensions.Configuration.Json](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Json)
+- [Microsoft.Extensions.Configuration.KeyPerFile](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.KeyPerFile)
+- [Microsoft.Extensions.Configuration.UserSecrets](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.UserSecrets)
+- [Microsoft.Extensions.Configuration.Xml](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Xml)
 
 To use the options monitor, options objects are configured in the same way from a configuration section.
 

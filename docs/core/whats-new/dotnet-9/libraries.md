@@ -2,16 +2,16 @@
 title: What's new in .NET libraries for .NET 9
 description: Learn about the new .NET libraries features introduced in .NET 9.
 titleSuffix: ""
-ms.date: 07/11/2024
+ms.date: 08/09/2024
 ms.topic: whats-new
 ---
 # What's new in .NET libraries for .NET 9
 
-This article describes new features in the .NET libraries for .NET 9. It's been updated for .NET 9 Preview 6.
+This article describes new features in the .NET libraries for .NET 9. It's been updated for .NET 9 Preview 7.
 
 ## Base64Url
 
-Base64 is an encoding scheme that translates arbitrary bytes into text composed of a specific set of 64 characters. It's a very common approach for transferring data and has long been supported via a variety of methods, such as with <xref:System.Convert.ToBase64String%2A?displayProperty=nameWithType> or <xref:System.Buffers.Text.Base64.DecodeFromUtf8(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Int32@,System.Int32@,System.Boolean)?displayProperty=nameWithType>. However, some of the characters it uses makes it less than ideal for use in some circumstances you might otherwise want to use it, such as in query strings. In particular, the 64 characters that comprise the Base64 table include '+' and '/', both of which have their own meaning in URLs. This led to the creation of the Base64Url scheme, which is similar to Base64 but uses a slightly different set of characters that makes it appropriate for use in URLs contexts. .NET 9 includes the new `Base64Url` <!--<xref:System.Buffers.Text.Base64>--> class, which provides many helpful and optimized methods for encoding and decoding with `Base64Url` to and from a variety of data types.
+Base64 is an encoding scheme that translates arbitrary bytes into text composed of a specific set of 64 characters. It's a very common approach for transferring data and has long been supported via a variety of methods, such as with <xref:System.Convert.ToBase64String%2A?displayProperty=nameWithType> or <xref:System.Buffers.Text.Base64.DecodeFromUtf8(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Int32@,System.Int32@,System.Boolean)?displayProperty=nameWithType>. However, some of the characters it uses makes it less than ideal for use in some circumstances you might otherwise want to use it, such as in query strings. In particular, the 64 characters that comprise the Base64 table include '+' and '/', both of which have their own meaning in URLs. This led to the creation of the Base64Url scheme, which is similar to Base64 but uses a slightly different set of characters that makes it appropriate for use in URLs contexts. .NET 9 includes the new <xref:System.Buffers.Text.Base64> class, which provides many helpful and optimized methods for encoding and decoding with `Base64Url` to and from a variety of data types.
 
 The following example demonstrates using the new class.
 
@@ -27,18 +27,19 @@ The collection types in .NET gain the following updates for .NET 9:
 - [Collection lookups with spans](#collection-lookups-with-spans)
 - [`OrderedDictionary<TKey, TValue>`](#ordereddictionarytkey-tvalue)
 - [PriorityQueue.Remove() method](#priorityqueueremove-method) lets you update the priority of an item in the queue.
+- [`ReadOnlySet<T>`](#readonlysett)
 
 ### Collection lookups with spans
 
-In high-performance code, spans are often used to avoid allocating strings unnecessarily, and lookup tables with types like <xref:System.Collections.Generic.Dictionary%602> and <xref:System.Collections.Generic.HashSet%601> are frequently used as caches. However, it's been challenging to use these types together, as there was no safe, built-in mechanism for doing lookups on these types with spans. Now with the new `allows ref struct` feature in C# 13 and new features on these collection types in .NET 9, it's possible to perform these kinds of lookups.
+In high-performance code, spans are often used to avoid allocating strings unnecessarily, and lookup tables with types like <xref:System.Collections.Generic.Dictionary%602> and <xref:System.Collections.Generic.HashSet%601> are frequently used as caches. However, there has been no safe, built-in mechanism for doing lookups on these collection types with spans. With the new `allows ref struct` feature in C# 13 and new features on these collection types in .NET 9, it's now possible to perform these kinds of lookups.
 
-The following example demonstrates using `Dictionary<TKey, TValue>.GetAlternateLookup` <!--<xref:System.Collections.Generic.Dictionary%602.GetAlternateLookup?displayProperty=nameWithType>-->.
+The following example demonstrates using `Dictionary<TKey,TValue>.GetAlternateLookup()` <!--<xref:System.Collections.Generic.Dictionary%602.GetAlternateLookup?displayProperty=nameWithType>-->.
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Collections.cs" id="AlternateLookup":::
 
 ### `OrderedDictionary<TKey, TValue>`
 
-In many scenarios, you might want to store key-value pairs in a way where order can be maintained (a list of key-value pairs) but where fast lookup by key is also supported (a dictionary of key-value pairs). Since the early days of .NET, the <xref:System.Collections.Specialized.OrderedDictionary> type has supported this scenario, but only in a non-generic manner, with keys and values typed as `object`. .NET 9 introduces the long-requested `OrderedDictionary<TKey, TValue>` <!--<xref:System.Collections.Generic.OrderedDictionary%602>--> collection, which provides an efficient, generic type to support these scenarios.
+In many scenarios, you might want to store key-value pairs in a way where order can be maintained (a list of key-value pairs) but where fast lookup by key is also supported (a dictionary of key-value pairs). Since the early days of .NET, the <xref:System.Collections.Specialized.OrderedDictionary> type has supported this scenario, but only in a non-generic manner, with keys and values typed as <xref:System.Collections.Generic.OrderedDictionary%602> collection, which provides an efficient, generic type to support these scenarios.
 
 The following code uses the new class.
 
@@ -56,15 +57,13 @@ This method unblocks users who want to implement graph algorithms in contexts wh
 
 ### `ReadOnlySet<T>`
 
-It's often desirable to give out read-only views of collections. <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> lets you create a read-only wrapper around an arbitrary mutable <xref:System.Collections.Generic.IList%601>, and <xref:System.Collections.ObjectModel.ReadOnlyDictionary%602> lets you create a read-only wrapper around an arbitrary mutable <xref:System.Collections.Generic.IDictionary%602>. However, past versions of .NET had no built-in support for doing the same with <xref:System.Collections.Generic.ISet%601>. .NET 9 introduces `ReadOnlySet<T>` <!--<xref:System.Collections.Generic.ReadOnlySet%601>--> to address this.
+It's often desirable to give out read-only views of collections. <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> lets you create a read-only wrapper around an arbitrary mutable <xref:System.Collections.Generic.IList%601>, and <xref:System.Collections.ObjectModel.ReadOnlyDictionary%602> lets you create a read-only wrapper around an arbitrary mutable <xref:System.Collections.Generic.IDictionary%602>. However, past versions of .NET had no built-in support for doing the same with <xref:System.Collections.Generic.ISet%601>. .NET 9 introduces <xref:System.Collections.ObjectModel.ReadOnlySet%601> to address this.
 
 The new class enables the following usage pattern.
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Collections.cs" id="ReadOnlySet":::
 
-## Component model
-
-### `TypeDescriptor` trimming support
+## Component model - `TypeDescriptor` trimming support
 
 <xref:System.ComponentModel> includes new opt-in trimmer-compatible APIs for describing components. Any application, especially self-contained trimmed applications, can use these new APIs to help support trimming scenarios.
 
@@ -81,7 +80,13 @@ For more information, see the [API proposal](https://github.com/dotnet/runtime/i
 
 ## Cryptography
 
-For cryptography, .NET 9 adds a new one-shot hash method on the <xref:System.Security.Cryptography.CryptographicOperations> type. It also adds new classes that use the KMAC algorithm.
+- [CryptographicOperations.HashData() method](#cryptographicoperationshashdata-method)
+- [KMAC algorithm](#kmac-algorithm)
+- [AES-GCM and ChaChaPoly1305 algorithms enabled for iOS/tvOS/MacCatalyst](#aes-gcm-and-chachapoly1305-algorithms-enabled-for-iostvosmaccatalyst)
+- [X.509 certificate loading](#x509-certificate-loading)
+- [OpenSSL providers support](#openssl-providers-support)
+- [Windows CNG virtualization-based security](#windows-cng-virtualization-based-security)
+-
 
 ### CryptographicOperations.HashData() method
 
@@ -106,9 +111,77 @@ KMAC is available on Linux with OpenSSL 3.0 or later, and on Windows 11 Build 26
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Cryptography.cs" id="Kmac":::
 
-## Date and time
+### AES-GCM and ChaChaPoly1305 algorithms enabled for iOS/tvOS/MacCatalyst
 
-### New TimeSpan.From\* overloads
+<xref:System.Security.Cryptography.AesGcm.IsSupported> and `ChaChaPoly1305.IsSupported` now return true when running on iOS 13+, tvOS 13+, and Mac Catalyst.
+
+<xref:System.Security.Cryptography.AesGcm> only supports 16-byte (128-bit) tag values on Apple operating systems.
+
+### X.509 certificate loading
+
+Since .NET Framework 2.0, the way to load a certificate has been `new X509Certificate2(bytes)`. There have also been other patterns, such as `new X509Certificate2(bytes, password, flags)`, `new X509Certificate2(path)`, `new X509Certificate2(path, password, flags)`, and `X509Certificate2Collection.Import(bytes, password, flags)` (and its overloads).
+
+Those methods all used content-sniffing to figure out if the input was something it could handle, and then loaded it if it could. For some callers, this strategy was very convenient. But it also has some problems:
+
+- Not every file format works on every OS.
+- It's a protocol deviation.
+- It's a source of security issues.
+
+.NET 9 introduces a new `X509CertificateLoader` <!--<xref:System.Security.Cryptography.X509CertificateLoader>--> class, which has a "one method, one purpose" design. In its initial version, it only supports two of the five formats that the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> constructor supported. Those are the two formats that worked on all operation systems.
+
+### OpenSSL providers support
+
+.NET 8 introduced the OpenSSL-specific APIs <xref:System.Security.Cryptography.SafeEvpPKeyHandle.OpenPrivateKeyFromEngine(System.String,System.String)> and <xref:System.Security.Cryptography.SafeEvpPKeyHandle.OpenPublicKeyFromEngine(System.String,System.String)>. They enable interacting with OpenSSL [`ENGINE` components](https://github.com/openssl/openssl/blob/master/README-ENGINES.md) and use hardware security modules (HSM), for example.
+
+.NET 9 introduces `SafeEvpPKeyHandle.OpenKeyFromProvider`<!--<xref:System.Security.Cryptography.SafeEvpPKeyHandle.OpenKeyFromProvider>-->, which enables using [OpenSSL providers](https://docs.openssl.org/master/man7/provider/) and interacting with providers such as `tpm2` or `pkcs11`.
+
+Some distros have [removed `ENGINE` support](https://github.com/dotnet/runtime/issues/104775) since it is now deprecated.
+
+The following snippet shows basic usage:
+
+```csharp
+byte[] data = [ /* example data */ ];
+
+// Refer to your provider documentation, for example, https://github.com/tpm2-software/tpm2-openssl/tree/master.
+using (SafeEvpPKeyHandle priKeyHandle = SafeEvpPKeyHandle.OpenKeyFromProvider("tpm2", "handle:0x81000007"))
+using (ECDsa ecdsaPri = new ECDsaOpenSsl(priKeyHandle))
+{
+    byte[] signature = ecdsaPri.SignData(data, HashAlgorithmName.SHA256);
+    // Do stuff with signature created by TPM.
+}
+```
+
+There are some performance improvements during the TLS handshake as well as improvements to interactions with RSA private keys that use `ENGINE` components.
+
+### Windows CNG virtualization-based security
+
+Windows 11 has added new APIs to help secure Windows keys with [virtualization-based security (VBS)](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/advancing-key-protection-in-windows-using-vbs/ba-p/4050988). With this new capability, keys can be protected from admin-level key theft attacks with negligible effect on performance, reliability, or scale.
+
+.NET 9 has added matching `CngKeyCreationOptions` <!--<xref:System.Security.Cryptography.CngKeyCreationOptions>--> flags. The following three flags were added:
+
+- `CngKeyCreationOptions.PreferVbs` matching `NCRYPT_PREFER_VBS_FLAG`
+- `CngKeyCreationOptions.RequireVbs` matching `NCRYPT_REQUIRE_VBS_FLAG`
+- `CngKeyCreationOptions.UsePerBootKey` matching `NCRYPT_USE_PER_BOOT_KEY_FLAG`
+
+The following snippet demonstrates how to use one of the flags:
+
+```csharp
+using System.Security.Cryptography;
+
+CngKeyCreationParameters cngCreationParams = new()
+{
+    Provider = CngProvider.MicrosoftSoftwareKeyStorageProvider,
+    KeyCreationOptions = CngKeyCreationOptions.RequireVbs | CngKeyCreationOptions.OverwriteExistingKey,
+};
+
+using (CngKey key = CngKey.Create(CngAlgorithm.ECDsaP256, "myKey", cngCreationParams))
+using (ECDsaCng ecdsa = new ECDsaCng(key))
+{
+    // Do stuff with the key.
+}
+```
+
+## Date and time - new TimeSpan.From\* overloads
 
 The <xref:System.TimeSpan> class offers several `From*` methods that let you create a `TimeSpan` object using a `double`. However, since `double` is a binary-based floating-point format, [inherent imprecision can lead to errors](https://github.com/dotnet/runtime/issues/93890). For instance, `TimeSpan.FromSeconds(101.832)` might not precisely represent `101 seconds, 832 milliseconds`, but rather approximately `101 seconds, 831.9999999999936335370875895023345947265625 milliseconds`. This discrepancy has caused frequent confusion, and it's also not the most efficient way to represent such data. To address this, .NET 9 adds new overloads that let you create `TimeSpan` objects from integers. There are new overloads from `FromDays`, `FromHours`, `FromMinutes`, `FromSeconds`, `FromMilliseconds`, and `FromMicroseconds`.
 
@@ -116,13 +189,38 @@ The following code shows an example of calling the `double` and one of the new i
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/TimeSpan.cs" id="TimeSpan.From":::
 
-## Dependency injection
-
-### `ActivatorUtilities.CreateInstance` constructor
+## Dependency injection - `ActivatorUtilities.CreateInstance` constructor
 
 The constructor resolution for <xref:Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance%2A?displayProperty=nameWithType> has changed in .NET 9. Previously, a constructor that was explicitly marked using the <xref:Microsoft.Extensions.DependencyInjection.ActivatorUtilitiesConstructorAttribute> attribute might not be called, depending on the ordering of constructors and the number of constructor parameters. The logic has changed in .NET 9 such that a constructor that has the attribute is always called.
 
 ## Diagnostics
+
+- [Debug.Assert reports assert condition by default](#debugassert-reports-assert-condition-by-default)
+- [New Activity.AddLink method](#new-activityaddlink-method)
+- [Metrics.Gauge instrument](#metricsgauge-instrument)
+
+### Debug.Assert reports assert condition by default
+
+<xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType> is commonly used to help validate conditions that are expected to always be true. Failure typically indicates a bug in the code. There are many overloads of <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType>, the simplest of which just accepts a condition:
+
+```csharp
+Debug.Assert(a > 0 && b > 0);
+```
+
+The assert fails if the condition is false. Historically, however, such asserts were void of any information about what condition failed. Starting in .NET 9, if no message is explicitly provided by the user, the assert will contain the textual representation of the condition. For example, for the previous assert example, rather than getting a message like:
+
+```console
+Process terminated. Assertion failed.
+   at Program.SomeMethod(Int32 a, Int32 b)
+```
+
+The message would now be:
+
+```console
+Process terminated. Assertion failed.
+a > 0 && b > 0
+   at Program.SomeMethod(Int32 a, Int32 b)
+```
 
 ### New Activity.AddLink method
 
@@ -132,7 +230,7 @@ Previously, you could only link a tracing <xref:System.Diagnostics.Activity> to 
 
 ### Metrics.Gauge instrument
 
-<xref:System.Diagnostics.Metrics> now provides the `Gauge` <!--<xref:<xref:System.Diagnostics.Metrics.Gauge>--> instrument according to the OpenTelemetry specification. The `Gauge` instrument is designed to record non-additive values when changes occur. For example, it can measure the background noise level, where summing the values from multiple rooms would be nonsensical. The `Gauge` instrument is a generic type that can record any value type, such as `int`, `double`, or `decimal`.
+<xref:System.Diagnostics.Metrics> now provides the <xref:System.Diagnostics.Metrics.Gauge%601> instrument according to the OpenTelemetry specification. The `Gauge` instrument is designed to record non-additive values when changes occur. For example, it can measure the background noise level, where summing the values from multiple rooms would be nonsensical. The `Gauge` instrument is a generic type that can record any value type, such as `int`, `double`, or `decimal`.
 
 The following example demonstrates using the the `Gauge` instrument.
 
@@ -205,8 +303,6 @@ This new capability has an optimized implementation that takes advantage of the 
 
 ## Networking
 
-The networking area includes in the following updates in .NET 9:
-
 - [SocketsHttpHandler is default in HttpClientFactory](#socketshttphandler-is-default-in-httpclientfactory)
 - [System.Net.ServerSentEvents](#systemnetserversentevents)
 - [TLS resume with client certificates on Linux](#tls-resume-with-client-certificates-on-linux)
@@ -217,7 +313,7 @@ The networking area includes in the following updates in .NET 9:
 
 ### System.Net.ServerSentEvents
 
-Server-sent events (SSE) is a simple and popular protocol for streaming data from a server to a client. It's used, for example, by OpenAI as part of streaming generated text from its AI services. To simplify the consumption of SSE, the new `System.Net.ServerSentEvents` <!--<xref:System.Net.ServerSentEvents>--> library provides a parser for easily ingesting server-sent events.
+Server-sent events (SSE) is a simple and popular protocol for streaming data from a server to a client. It's used, for example, by OpenAI as part of streaming generated text from its AI services. To simplify the consumption of SSE, the new <xref:System.Net.ServerSentEvents> library provides a parser for easily ingesting server-sent events.
 
 The following code demonstrates using the new class.
 
@@ -230,8 +326,6 @@ The following code demonstrates using the new class.
 *TLS resume* has already been supported on Linux for SslStream connections without client certificates. .NET 9 adds support for TLS resume of mutually authenticated TLS connections, which are common in server-to-server scenarios. The feature is enabled automatically.
 
 ## Reflection
-
-The reflection area includes the following updates for .NET 9:
 
 - [Persisted assemblies](#persisted-assemblies)
 - [Type-name parsing](#type-name-parsing)
@@ -273,8 +367,6 @@ The new APIs are available from the [`System.Reflection.Metadata`](https://www.n
 
 ## Regular expressions
 
-For regular expressions, .NET 9 includes the following updates:
-
 - [`[GeneratedRegex]` on properties](#generatedregex-on-properties)
 - [`Regex.EnumerateSplits`](#regexenumeratesplits)
 
@@ -300,15 +392,13 @@ The following example demonstrates `Regex.Split`.
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/RegularExpressions.cs" id="RegexSplit":::
 
-However, `Regex.Split` only accepts a `string` as input and doesn't support input being provided as a `ReadOnlySpan<char>`. Also, it outputs the full set of splits as a `string[]`, which requires allocating both the `string` array to hold the results and a `string` for each split. In .NET 9, the new `EnumerateSplits` <!--<xref:System.Text.RegularExpressions.Regex.EnumerateSplits%2A>--> method enables performing the same operation, but with a span-based input and without incurring any allocation for the results. It accepts a `ReadOnlySpan<char>` and returns an enumerable of <xref:System.Range> objects that represent the results.
+However, `Regex.Split` only accepts a `string` as input and doesn't support input being provided as a `ReadOnlySpan<char>`. Also, it outputs the full set of splits as a `string[]`, which requires allocating both the `string` array to hold the results and a `string` for each split. In .NET 9, the new <xref:System.Text.RegularExpressions.Regex.EnumerateSplits%2A> method enables performing the same operation, but with a span-based input and without incurring any allocation for the results. It accepts a `ReadOnlySpan<char>` and returns an enumerable of <xref:System.Range> objects that represent the results.
 
 The following example demonstrates `Regex.EnumerateSplits`, taking a `ReadOnlySpan<char>` as input.
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/RegularExpressions.cs" id="EnumerateSplits":::
 
-## Serialization
-
-In <xref:System.Text.Json>, .NET 9 includes the following updates:
+## Serialization (System.Text.Json)
 
 - [Indentation options](#indentation-options)
 - [Default web options singleton](#default-web-options-singleton)
@@ -332,7 +422,7 @@ If you want to serialize with the [default options that ASP.NET Core uses](../..
 
 ### JsonSchemaExporter
 
-JSON is frequently used to represent types in method signatures as part of remote procedure&ndash;calling schemes. It's used, for example, as part of OpenAPI specifications, or as part of tool calling with AI services like those from OpenAI. Developers can serialize and deserialize .NET types as JSON using <xref:System.Text.Json>. But they also need to be able to get a JSON schema that describes the shape of the .NET type (that is, describes the shape of what would be serialized and what can be deserialized). <xref:System.Text.Json> now provides the `JsonSchemaExporter` <!--<xref:System.Text.Json.Schema.JsonSchemaExporter>--> type, which supports generating a JSON schema that represents a .NET type.
+JSON is frequently used to represent types in method signatures as part of remote procedure&ndash;calling schemes. It's used, for example, as part of OpenAPI specifications, or as part of tool calling with AI services like those from OpenAI. Developers can serialize and deserialize .NET types as JSON using <xref:System.Text.Json>. But they also need to be able to get a JSON schema that describes the shape of the .NET type (that is, describes the shape of what would be serialized and what can be deserialized). <xref:System.Text.Json> now provides the <xref:System.Text.Json.Schema.JsonSchemaExporter> type, which supports generating a JSON schema that represents a .NET type.
 
 The following code generates a JSON schema from a type.
 
@@ -369,7 +459,7 @@ The generated schema is:
 
 ### Respect nullable annotations
 
-<xref:System.Text.Json> now recognizes nullability annotations of properties and can be configured to enforce those during serialization and deserialization using the `RespectNullableAnnotations` <!--<xref:System.Text.Json.JsonSerializerOptions.RespectNullableAnnotations>--> flag.
+<xref:System.Text.Json> now recognizes nullability annotations of properties and can be configured to enforce those during serialization and deserialization using the <xref:System.Text.Json.JsonSerializerOptions.RespectNullableAnnotations> flag.
 
 The following code shows how to set the option (the `Book` type definition is shown in the previous section):
 
@@ -383,11 +473,11 @@ You can also enable this setting globally using the `System.Text.Json.JsonSerial
 </ItemGroup>
 ```
 
-You can configure nullability at an individual property level using the `JsonPropertyInfo.IsGetNullable` <!--<xref:System.Text.Json.Serialization.Metadata.JsonPropertyInfo.IsGetNullable>--> and `JsonPropertyInfo.IsSetNullable` <!--<xref:System.Text.Json.Serialization.Metadata.JsonPropertyInfo.IsSetNullable>--> properties.
+You can configure nullability at an individual property level using the <xref:System.Text.Json.Serialization.Metadata.JsonPropertyInfo.IsGetNullable> and <xref:System.Text.Json.Serialization.Metadata.JsonPropertyInfo.IsSetNullable> properties.
 
 ### Require non-optional constructor parameters
 
-Historically, <xref:System.Text.Json> has treated non-optional constructor parameters as optional when using constructor-based deserialization. You can change that behavior using the new `RespectRequiredConstructorParameters` <!--<xref:System.Text.Json.JsonSerializerOptions.RespectRequiredConstructorParameters>--> flag.
+Historically, <xref:System.Text.Json> has treated non-optional constructor parameters as optional when using constructor-based deserialization. You can change that behavior using the new <xref:System.Text.Json.JsonSerializerOptions.RespectRequiredConstructorParameters> flag.
 
 The following code shows how to set the option:
 
@@ -456,6 +546,7 @@ In high-performance code, spans are often used to avoid allocating strings unnec
 
 - [File helpers](#file-helpers)
 - [`params ReadOnlySpan<T>` overloads](#params-readonlyspant-overloads)
+- [Enumerate over ReadOnlySpan\<char>.Split() segments](#enumerate-over-readonlyspancharsplit-segments)
 
 ### File helpers
 
@@ -468,7 +559,7 @@ ReadOnlySpan<char> text = ...;
 File.WriteAllText(filePath, text);
 ```
 
-New `ReadOnlySpan.StartsWith` <!--<xref:System.ReadOnlySpan.StartsWith%2A>--> and `ReadOnlySpan.EndsWith` <!--<xref:System.ReadOnlySpan.EndsWith%2A>--> extension methods have also been added for spans, making it easy to test whether a <xref:System.ReadOnlySpan%601> starts or ends with a specific `T` value.
+New <xref:System.MemoryExtensions.StartsWith%60%601(System.ReadOnlySpan{%60%600},%60%600)> and <xref:System.MemoryExtensions.EndsWith%60%601(System.ReadOnlySpan{%60%600},%60%600)> extension methods have also been added for spans, making it easy to test whether a <xref:System.ReadOnlySpan%601> starts or ends with a specific `T` value.
 
 The following code uses these new convenience APIs.
 
@@ -493,9 +584,47 @@ For example, `String.Join` now includes the following overload, which implements
 
 Now, a call like `string.Join(", ", "a", "b", "c")` is made without allocating an array to pass in the `"a"`, `"b"`, and `"c"` arguments.
 
-## System.Numerics
+### Enumerate over ReadOnlySpan\<char>.Split() segments
 
-The following changes have been made in the <xref:System.Numerics> namespace:
+`string.Split` is a convenient method for quickly partitioning a string with one or more supplied separators. For code focused on performance, however, the allocation profile of `string.Split` can be prohibitive, because it allocates a string for each parsed component and a `string[]` to store them all. It also doesn't work with spans, so if you have a `ReadOnlySpan<char>`, you're forced to allocate yet another string when you convert it to a string to be able to call `string.Split` on it.
+
+In .NET 8, a set of `Split` and `SplitAny` methods were introduced for `ReadOnlySpan<char>`. Rather than returning a new `string[]`, these methods accept a destination `Span<Range>` into which the bounding indices for each component are written. This makes the operation fully allocation-free. These methods are appropriate to use when the number of ranges is both known and small.
+
+In .NET 9, new overloads of `Split` and `SplitAny` have been added to allow incrementally parsing a `ReadOnlySpan<T>` with an *a priori* unknown number of segments. The new methods enable enumerating through each segment, which is similarly represented as a `Range` that can be used to slice into the original span.
+
+```csharp
+public static bool ListContainsItem(ReadOnlySpan<char> span, string item)
+{
+    foreach (Range segment in span.Split(','))
+    {
+        if (span[segment].SequenceEquals(item))
+        {
+            return true;
+        }
+    }
+
+    return false;
+}
+```
+
+## System.Guid
+
+<xref:System.Guid.NewGuid> creates a `Guid` filled mostly with [cryptographically secure random data](https://www.rfc-editor.org/rfc/rfc9562#section-6.9), following the UUID Version 4 specification in RFC 9562. That same RFC also defines other versions, including Version 7, which "features a time-ordered value field derived from the widely implemented and well-known Unix Epoch timestamp source". In other words, much of the data is still random, but some of it is reserved for data based on a timestamp, which enables these values to have a natural sort order. In .NET 9, you can create a `Guid` according to Version 7 via the new `Guid.CreateVersion7()` <!--<xref:System.Guid.CreateVersion7?displayProperty=nameWithType>--> and `Guid.CreateVersion7(DateTimeOffset timestamp)`  <!--<xref:System.Guid.CreateVersion7(System.DateTimeOffset)?displayProperty=nameWithType>--> methods. You can also use the new `Version` <!--<xref:System.Guid.Version>--> property to retrieve a `Guid` object's version field.
+
+## System.IO
+
+- [Compression](#compression)
+- [XPS documents from XPS virtual printer](#xps-documents-from-xps-virtual-printer)
+
+### Compression
+
+<xref:System.IO.Compression> features like <xref:System.IO.Compression.ZipArchive>, <xref:System.IO.Compression.DeflateStream>, <xref:System.IO.Compression.GZipStream>, and <xref:System.IO.Compression.ZLibStream> are all based primarily on the zlib library. Starting in .NET 9, these features instead all use [zlib-ng](https://github.com/zlib-ng/zlib-ng), a library that yields more consistent and efficient processing across a wider array of operating systems and hardware.
+
+### XPS documents from XPS virtual printer
+
+XPS documents coming from a V4 XPS virtual printer previously couldn't be opened using the <xref:System.IO.Packaging> library, due to lack of support for handling *.piece* files. This gap has been addressed in .NET 9.
+
+## System.Numerics
 
 - [BigInteger upper limit](#biginteger-upper-limit)
 - [`BigMul` APIs](#bigmul-apis)
@@ -511,8 +640,6 @@ The following changes have been made in the <xref:System.Numerics> namespace:
 
 `BigMul` is an operation that produces the full product of two numbers. .NET 9 adds dedicated `BigMul` APIs on `int`, `long`, `uint`, and `ulong` whose return type is the next larger [integer type](../../../csharp/language-reference/builtin-types/integral-numeric-types.md) than the parameter types.
 
-<!--
-
 The new APIs are:
 
 - <xref:System.Int32.BigMul(System.Int32,System.Int32)> (returns `long`)
@@ -520,13 +647,9 @@ The new APIs are:
 - <xref:System.UInt32.BigMul(System.UInt32,System.UInt32)> (returns `ulong`)
 - <xref:System.UInt64.BigMul(System.UInt64,System.UInt64)> (returns `UInt128`)
 
--->
-
 ### Vector conversion APIs
 
 .NET 9 adds dedicated extension APIs for converting between <xref:System.Numerics.Vector2>, <xref:System.Numerics.Vector3>, <xref:System.Numerics.Vector4>, <xref:System.Numerics.Quaternion>, and <xref:System.Numerics.Plane>.
-
-<!--
 
 The new APIs are as follows:
 
@@ -541,34 +664,18 @@ The new APIs are as follows:
 - <xref:System.Numerics.Vector.AsVector4Unsafe(System.Numerics.Vector2)>
 - <xref:System.Numerics.Vector.AsVector4Unsafe(System.Numerics.Vector3)>
 
--->
-
 For same-sized conversions, such as between `Vector4`, `Quaternion`, and `Plane`, these conversions are zero cost. The same can be said for narrowing conversions, such as from `Vector4` to `Vector2` or `Vector3`. For widening conversions, such as from `Vector2` or `Vector3` to `Vector4`, there is the normal API, which initializes new elements to 0, and an `Unsafe` suffixed API that leaves these new elements undefined and therefore can be zero cost.
 
 ### Vector create APIs
 
-There are new `Create` APIs exposed for <xref:System.Numerics.Vector%601>, <xref:System.Numerics.Vector2>, <xref:System.Numerics.Vector3>, and <xref:System.Numerics.Vector4> that parity the equivalent APIs exposed for the hardware vector types exposed in the <xref:System.Runtime.Intrinsics> namespace.
+There are new `Create` APIs exposed for <xref:System.Numerics.Vector>, <xref:System.Numerics.Vector2>, <xref:System.Numerics.Vector3>, and <xref:System.Numerics.Vector4> that parity the equivalent APIs exposed for the hardware vector types exposed in the <xref:System.Runtime.Intrinsics> namespace.
 
-<!--
+For more information about the new APIs, see:
 
-The new APIs are as follows:
-
-- <xref:System.Numerics.Vector.Create%601(%601)>
-- <xref:System.Numerics.Vector.Create%601(System.ReadOnlySpan%601)>
-- <xref:System.Numerics.Vector2.Create(System.Single)>
-- <xref:System.Numerics.Vector2.Create(System.Single,System.Single)>
-- <xref:System.Numerics.Vector2.Create(System.ReadOnlySpan%601)>
-- <xref:System.Numerics.Vector3.Create(System.Single)>
-- <xref:System.Numerics.Vector3.Create(System.Numerics.Vector2,System.Single)>
-- <xref:System.Numerics.Vector3.Create(System.Single,System.Single,System.Single)>
-- <xref:System.Numerics.Vector3.Create(System.ReadOnlySpan%601)>
-- <xref:System.Numerics.Vector4.Create(System.Single)>
-- <xref:System.Numerics.Vector4.Create(System.Numerics.Vector2,System.Single,System.Single)>
-- <xref:System.Numerics.Vector4.Create(System.Numerics.Vector3,System.Single)>
-- <xref:System.Numerics.Vector4.Create(System.Single,System.Single,System.Single,System.Single)>
-- <xref:System.Numerics.Vector4.Create(System.ReadOnlySpan%601)>
-
--->
+- <xref:System.Numerics.Vector.Create%2A?displayProperty=nameWithType>
+- <xref:System.Numerics.Vector2.Create%2A?displayProperty=nameWithType>
+- <xref:System.Numerics.Vector3.Create%2A?displayProperty=nameWithType>
+- <xref:System.Numerics.Vector4.Create%2A?displayProperty=nameWithType>
 
 These APIs are primarily for convenience and overall consistency across .NET's SIMD-accelerated types.
 
@@ -606,6 +713,9 @@ The following codes shows some of the APIs included with the new `Tensor<T>` typ
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Tensors.cs" id="Tensor":::
 
+> [!NOTE]
+> This API is marked as [experimental](../../../fundamentals/apicompat/preview-apis.md#experimentalattribute) for .NET 9.
+
 ### TensorPrimitives
 
 The `System.Numerics.Tensors` library includes the <xref:System.Numerics.Tensors.TensorPrimitives> class, which provides static methods for performing numerical operations on spans of values. In .NET 9, the scope of methods exposed by <xref:System.Numerics.Tensors.TensorPrimitives> has been significantly expanded, growing from 40 (in .NET 8) to almost 200 overloads. The surface area encompasses familiar numerical operations from types like <xref:System.Math> and <xref:System.MathF>. It also includes the generic math interfaces like <xref:System.Numerics.INumber%601>, except instead of processing an individual value, they process a span of values. Many operations have also been accelerated via SIMD-optimized implementations for .NET 9.
@@ -618,7 +728,7 @@ Compare the precision of the cosine similarity operation on two vectors of type 
 
 ## Threading
 
-The threading APIs include improvements for iterating through tasks, and for prioritized channels, which can order their elements instead of being first-in-first-out (FIFO).
+The threading APIs include improvements for iterating through tasks, for prioritized channels, which can order their elements instead of being first-in-first-out (FIFO), and `Interlocked.CompareExchange` for more types.
 
 ### `Task.WhenEach`
 
@@ -635,3 +745,7 @@ The <xref:System.Threading.Channels> namespace lets you create first-in-first-ou
 The following example uses the new method to create a channel that outputs the numbers 1 through 5 in order, even though they're written to the channel in a different order.
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Channels.cs" id="Channel":::
+
+### Interlocked.CompareExchange for more types
+
+In previous versions of .NET, <xref:System.Threading.Interlocked.Exchange%2A?displayProperty=nameWithType> and <xref:System.Threading.Interlocked.CompareExchange%2A?displayProperty=nameWithType> had overloads for working with `int`, `uint`, `long`, `ulong`, `nint`, `nuint`, `float`, `double`, and `object`, as well as a generic overload for working with any reference type `T`. In .NET 9, there are new overloads for atomically working with `byte`, `sbyte`, `short`, and `ushort`. Also, the generic constraint on the generic `Interlocked.Exchange<T>` and `Interlocked.CompareExchange<T>` overloads has been removed, so those methods are no longer constrained to only work with reference types. They can now work with any primitive type, which includes all of the aforementioned types as well as `bool` and `char`, as well as any `enum` type.

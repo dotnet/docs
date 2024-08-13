@@ -2,12 +2,12 @@
 title: What's new in .NET 9 runtime
 description: Learn about the new .NET features introduced in the .NET 9 runtime.
 titleSuffix: ""
-ms.date: 07/11/2024
+ms.date: 08/08/2024
 ms.topic: whats-new
 ---
 # What's new in the .NET 9 runtime
 
-This article describes new features and performance improvements in the .NET runtime for .NET 9. It's been updated for .NET 9 Preview 6.
+This article describes new features and performance improvements in the .NET runtime for .NET 9. It's been updated for .NET 9 Preview 7.
 
 ## Attribute model for feature switches with trimming support
 
@@ -56,9 +56,15 @@ Two new attributes make it possible to define [feature switches](https://github.
 
 ## UnsafeAccessorAttribute supports generic parameters
 
-The <xref:System.Runtime.CompilerServices.UnsafeAccessorAttribute> feature allows unsafe access to type members that are unaccessible to the caller. This feature was designed in .NET 8 but implemented without support for generic parameters. .NET 9 adds support for generic parameters for CoreCLR and native AOT scenarios. The following code shows example usage.
+The <xref:System.Runtime.CompilerServices.UnsafeAccessorAttribute> feature allows unsafe access to type members that are inaccessible to the caller. This feature was designed in .NET 8 but implemented without support for generic parameters. .NET 9 adds support for generic parameters for CoreCLR and native AOT scenarios. The following code shows example usage.
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/UnsafeAccessor.cs":::
+
+## Garbage collection
+
+Dynamic adaptation to application sizes (DATAS) is now enabled by default. It aims to adapt to application memory requirements, meaning the application heap size should be roughly proportional to the long-lived data size. DATAS was introduced as an opt-in feature in .NET 8 and has been significantly updated and improved in .NET 9.
+
+For more information, see [Dynamic adaptation to application sizes (DATAS)](../../../standard/garbage-collection/datas.md).
 
 ## Performance improvements
 
@@ -75,15 +81,22 @@ The following performance improvements have been made for .NET 9:
 - [AVX10v1 support](#avx10v1-support)
 - [Hardware intrinsic code generation](#hardware-intrinsic-code-generation)
 - [Constant folding for floating point and SIMD operations](#constant-folding-for-floating-point-and-simd-operations)
+- [Arm64 SVE support](#arm64-sve-support)
+- [Object stack allocation for boxes](#object-stack-allocation-for-boxes)
 
 ### Loop optimizations
 
 Improving code generation for loops is a priority for .NET 9. The following improvements are now available:
 
-- [Induction variable widening](#induction-variable-widening)
+- [Induction-variable widening](#induction-variable-widening)
+- [Post-indexed addressing](#post-indexed-addressing-on-arm64)
+- [Strength reduction](#strength-reduction)
 - [Loop counter variable direction](#loop-counter-variable-direction)
 
-#### Induction variable widening
+> [!NOTE]
+> Induction-variable widening and post-indexed addressing are similar: they both optimize memory accesses with loop-index variables. However, they take different approaches since Arm64 offers a CPU capability and x64 doesn't. Induction-variable widening was implemented for x64 due to differences in CPU/ISA capability and needs.
+
+#### Induction-variable widening
 
 The 64-bit compiler features a new optimization called *induction variable (IV) widening*.
 
@@ -91,31 +104,75 @@ An IV is a variable whose value changes as the containing loop iterates. In the 
 
 Consider the following example that iterates through an array:
 
-```csharp
-static int Sum(int[] arr)
-{
-    int sum = 0;
-    for (int i = 0; i < arr.Length; i++)
-    {
-        sum += arr[i];
-    }
-
-    return sum;
-}
-```
+:::code language="csharp" source="../snippets/dotnet-9/csharp/Runtime.cs" id="ForLoop":::
 
 The index variable, `i`, is 4 bytes in size. At the assembly level, 64-bit registers are typically used to hold array indices on x64, and in previous .NET versions, the compiler generated code that zero-extended `i` to 8 bytes for the array access, but continued to treat `i` as a 4-byte integer elsewhere. However, extending `i` to 8 bytes requires an additional instruction on x64. With IV widening, the 64-bit JIT compiler now widens `i` to 8 bytes throughout the loop, omitting the zero extension. Looping over arrays is very common, and the benefits of this instruction removal quickly add up.
 
+#### Post-indexed addressing on Arm64
+
+Index variables are frequently used to read sequential regions of memory. Consider the idiomatic `for` loop:
+
+:::code language="csharp" source="../snippets/dotnet-9/csharp/Runtime.cs" id="ForLoop":::
+
+For each iteration of the loop, the index variable `i` is used to read an integer in `nums`, and then `i` is incremented. In Arm64 assembly, these two operations look as follows:
+
+```al
+ldr w0, [x1]
+add x1, x1, #4
+```
+
+`ldr w0, [x1]` loads the integer at the memory address in `x1` into `w0`; this corresponds to the access of `nums[i]` in the source code. Then, `add x1, x1, #4` increases the address in `x1` by four bytes (the size of an integer), moving to the next integer in `nums`. This instruction corresponds to the `i++` operation executed at the end of each iteration.
+
+Arm64 supports post-indexed addressing, where the "index" register is automatically incremented after its address is used. This means that two instructions can be combined into one, making the loop more efficient. The CPU only needs to decode one instruction instead of two, and the loop's code is now more cache-friendly.
+
+Here's what the updated assembly looks like:
+
+```al
+ldr w0, [x1], #0x04
+```
+
+The `#0x04` at the end means the address in `x1` is incremented by four bytes after it's used to load an integer into `w0`. The 64-bit compiler now uses post-indexed addressing when generating Arm64 code.
+
+#### Strength reduction
+
+Strength reduction is a compiler optimization where an operation is replaced with a faster, logically equivalent operation. This technique is especially useful for optimizing loops. Consider the idiomatic `for` loop:
+
+:::code language="csharp" source="../snippets/dotnet-9/csharp/Runtime.cs" id="ForLoop":::
+
+The following x64 assembly code shows a snippet of the code that's generated for the loop's body:
+
+```al
+add ecx, dword ptr [rax+4*rdx+0x10]
+inc edx
+```
+
+These instructions correspond to the expressions `sum += nums[i]` and `i++`, respectively. `rcx` (`ecx` holds the lower 32 bits of this register) contains the value of `sum`, `rax` contains the base address of `nums`, and `rdx` contains the value of `i`. To compute the address of `nums[i]`, the index in `rdx` is **multiplied** by four (the size of an integer). This offset is then **added** to the base address in `rax`, plus some padding. (After the integer at `nums[i]` is read, it's added to `rcx` and the index in `rdx` is incremented.) In other words, each array access requires a multiplication *and* an addition operation.
+
+Multiplication is more expensive than addition, and replacing the former with the latter is a classic motivation for strength reduction. To avoid the computation of the element's address on each memory access, you could rewrite the example to access the integers in `nums` using a pointer rather than an index variable:
+
+:::code language="csharp" source="../snippets/dotnet-9/csharp/Runtime.cs" id="WhileLoop":::
+
+The source code is more complicated, but it's logically equivalent to the initial implementation. Also, the assembly looks better:
+
+```al
+add ecx, dword ptr [rdx]
+add rdx, 4
+```
+
+`rcx` (`ecx` holds the lower 32 bits of this register) still holds the value of `sum`, but `rdx` now holds the address pointed to by `p`, so accessing elements in `nums` just requires us to dereference `rdx`. All the multiplication and addition from the first example has been replaced by a single `add` instruction to move the pointer forward.
+
+In .NET 9, the JIT compiler *automatically* transforms the first indexing pattern into the second without requiring you to rewrite any code.
+
 #### Loop counter variable direction
 
-The JIT compiler now recognizes when the direction of a loop's counter variable can be flipped without affecting the program's behavior, and does the transformation.
+The 64-bit compiler now recognizes when the direction of a loop's counter variable can be flipped without affecting the program's behavior, and then performs the transformation.
 
 In the idiomatic `for (int i = ...)` pattern, the counter variable typically increases. Consider the following example:
 
 ```csharp
 for (int i = 0; i < 100; i++)
 {
-    Foo();
+    DoSomething();
 }
 ```
 
@@ -124,7 +181,7 @@ However, on many architectures, it's more performant to decrement the loop's cou
 ``` csharp
 for (int i = 100; i > 0; i--)
 {
-    Foo();
+    DoSomething();
 }
 ```
 
@@ -187,19 +244,7 @@ The `str` instruction stores data from a single register to memory, while the `s
 
 For example, consider the following snippet:
 
-```csharp
-class Body { public double x, y, z, vx, vy, vz, mass; }
-
-static void Advance(double dt, Body[] bodies)
-{
-    foreach (Body b in bodies)
-    {
-        b.x += dt * b.vx;
-        b.y += dt * b.vy;
-        b.z += dt * b.vz;
-    }
-}
-```
+:::code language="csharp" source="../snippets/dotnet-9/csharp/Runtime.cs" id="Advance":::
 
 The values of `b.x`, `b.y`, and `b.z` are updated in the loop body. At the assembly level, each member could be stored with a `str` instruction; or using `stp`, two of the stores (`b.x` and `b.y`, or `b.y` and `b.z`, because these pairs are contiguous in memory) can be handled with one instruction. To use the `stp` instruction to store to `b.x` and `b.y` simultaneously, the compiler also needs to determine that the computations `b.x + (dt * b.vx)` and `b.y + (dt * b.vy)` are independent of one another and can be performed before storing to `b.x` and `b.y`.
 
@@ -238,7 +283,7 @@ When the address of a local variable is used, the JIT compiler must take extra p
 
 ### AVX10v1 support
 
-New APIs have been added for AVX10, which is a new SIMD instruction set from Intel. You can accelerate your .NET applications on AVX10-enabled hardware with vectorized operations using the new `System.Runtime.Intrinsics.X86.Avx10v1` <!--<xref:System.Runtime.Intrinsics.X86.Avx10v1>--> APIs.
+New APIs have been added for [AVX10](https://en.wikipedia.org/wiki/Advanced_Vector_Extensions#AVX10), which is a new SIMD instruction set from Intel. You can accelerate your .NET applications on AVX10-enabled hardware with vectorized operations using the new <xref:System.Runtime.Intrinsics.X86.Avx10v1> APIs.
 
 ### Hardware intrinsic code generation
 
@@ -246,15 +291,7 @@ Many hardware intrinsic APIs expect users to pass constant values for certain pa
 
 Consider the following example:
 
-```csharp
-static byte Test1()
-{
-    Vector128<byte> v = Vector128<byte>.Zero;
-    byte size = 1;
-    v = Sse2.ShiftRightLogical128BitLane(v, size);
-    return Sse41.Extract(v, 0);
-}
-```
+:::code language="csharp" source="../snippets/dotnet-9/csharp/Runtime.cs" id="Test1":::
 
 The use of `size` in the call to `Sse2.ShiftRightLogical128BitLane` can be substituted with the constant 1, and under normal circumstances, the JIT compiler is already capable of this substitution optimization. But when determining whether to generate the accelerated or fallback code for `Sse2.ShiftRightLogical128BitLane`, the compiler detects that a variable is being passed instead of a constant and prematurely decides against "intrinsifying" the call. Starting in .NET 9, the compiler recognizes more cases like this and substitutes the variable argument with its constant value, thus generating the accelerated code.
 
@@ -270,3 +307,56 @@ The use of `size` in the call to `Sse2.ShiftRightLogical128BitLane` can be subst
   - `x + Vector<T>.Zero` is now folded into `x`.
   - `x & Vector<T>.Zero` is now folded into `Vector<T>.Zero`.
   - `x & Vector<T>.AllBitsSet` is now folded into `x`.
+
+### Arm64 SVE support
+
+.NET 9 introduces experimental support for the [Scalable Vector Extension (SVE)](https://en.wikipedia.org/wiki/AArch64#Scalable_Vector_Extension_(SVE)), a SIMD instruction set for ARM64 CPUs. .NET already supported the NEON instruction set, so on [NEON](https://en.wikipedia.org/wiki/ARM_architecture_family#Advanced_SIMD_(Neon))-capable hardware, your applications can leverage 128-bit vector registers. SVE supports flexible vector lengths all the way up to 2048 bits, unlocking more data processing per instruction. In .NET 9, <xref:System.Numerics.Vector%601> is 128 bits wide when targeting SVE, and future work will enable scaling of its width to match the target machine's vector register size. You can accelerate your .NET applications on SVE-capable hardware using the new `System.Runtime.Intrinsics.Arm.Sve` <!--<xref:System.Runtime.Intrinsics.Arm.Sve>--> APIs.
+
+> [!NOTE]
+> SVE support in .NET 9 is experimental. The APIs under `System.Runtime.Intrinsics.Arm.Sve` are marked with <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute>, which means they're subject to change in future releases. Additionally, debugger stepping and breakpoints through SVE-generated code might not function properly, resulting in application crashes or corruption of data.
+
+### Object stack allocation for boxes
+
+Value types, such as `int` and `struct`, are typically allocated on the stack instead of the heap. However, to enable various code patterns, they're frequently "boxed" into objects.
+
+Consider the following snippet:
+
+:::code language="csharp" source="../snippets/dotnet-9/csharp/Runtime.cs" id="Compare":::
+
+`Compare` is conveniently written such that if you wanted to compare other types, like strings or `double` values, you could reuse the same implementation. But in this example, it also has the performance drawback of requiring any value types that are passed to it to be *boxed*.
+
+The x64 assembly code generated for `Main` is as follows:
+
+```al
+push     rbx
+sub      rsp, 32
+mov      rcx, 0x7FFB9F8074D0      ; System.Int32
+call     CORINFO_HELP_NEWSFAST
+mov      rbx, rax
+mov      dword ptr [rbx+0x08], 3
+mov      rcx, 0x7FFB9F8074D0      ; System.Int32
+call     CORINFO_HELP_NEWSFAST
+mov      dword ptr [rax+0x08], 4
+add      rbx, 8
+mov      ecx, dword ptr [rbx]
+cmp      ecx, dword ptr [rax+0x08]
+sete     al
+movzx    rax, al
+xor      ecx, ecx
+mov      edx, 100
+test     eax, eax
+mov      eax, edx
+cmovne   eax, ecx
+add      rsp, 32
+pop      rbx
+ret
+```
+
+The calls to `CORINFO_HELP_NEWSFAST` are the heap allocations for the boxed integer arguments. Also, notice that there isn't any call to `Compare`; the compiler decided to inline it into `Main`. This inlining means the boxes never "escape." In other words, throughout the execution of `Compare`, it knows `x` and `y` are actually integers, and they can be safely unboxed them without affecting the comparison logic.
+
+Starting in .NET 9, the 64-bit compiler allocates unescaped boxes on the stack, which unlocks several other optimizations. In this example, not only does the compiler avoid the heap allocations, but it also evaluates the expressions `x.Equals(y)` and `result ? 0 : 100` at compile time. Here's the updated assembly:
+
+```al
+mov      eax, 100
+ret
+```

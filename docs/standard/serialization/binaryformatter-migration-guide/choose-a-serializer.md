@@ -52,14 +52,14 @@ Serialization excludes non-public and readonly members unless specifically handl
 
 ## XML using DataContractSerializer
 
-[`System.Runtime.Serialization.DataContractSerializer`](/dotnet/api/system.runtime.serialization.datacontractserializer) was introduced in .NET Framework 3.0 and is used to serialize and deserialize data sent in Windows Communication Foundation (WCF) messages. `DataContractSerializer` is an XML serializer that **fully supports the serialization programming model that was used by the `BinaryFormatter`**, which means it honors the `[Serializable]` attribute and implementation of `ISerializable`. Hence, it's the serializer that requires the least amount of effort to migrate to. It does, however, require the known types to be specified up-front (but most .NET collections and primitive types are on a default allow-list and don't need to be specified).
+<xref:System.Runtime.Serialization.DataContractSerializer> was introduced in .NET Framework 3.0 and is used to serialize and deserialize data sent in Windows Communication Foundation (WCF) messages. <xref:System.Runtime.Serialization.DataContractSerializer> is an XML serializer that **fully supports the serialization programming model that was used by the `BinaryFormatter`**, which means it honors the `[Serializable]` attribute and implementation of <xref:System.Runtime.Serialization.ISerializable>. Hence, it's the serializer that requires the least amount of effort to migrate to. It does, however, require the known types to be specified up-front (but most .NET collections and primitive types are on a default allow-list and don't need to be specified).
 
 While `DataContractSerializer` carries those functional benefits when migrating from BinaryFormatter, it is not as modern or performant as the other choices.
 
 [Migrate to DataContractSerializer (XML)](./migrate-to-datacontractserializer.md).
 
 > [!NOTE]
-> Do not confuse `DataContractSerializer` with [`NetDataContractSerializer`](/dotnet/api/system.runtime.serialization.netdatacontractserializer). `NetDataContractSerializer` is also identified as a [dangerous serializer](../binaryformatter-security-guide.md#dangerous-alternatives).
+> Do not confuse <xref:System.Runtime.Serialization.DataContractSerializer> with <xref:System.Runtime.Serialization.NetDataContractSerializer>. <xref:System.Runtime.Serialization.NetDataContractSerializer> is also identified as a [dangerous serializer](../binaryformatter-security-guide.md#dangerous-alternatives).
 
 ## Binary using MessagePack
 

@@ -56,13 +56,11 @@ Two new attributes make it possible to define [feature switches](https://github.
 
 ## UnsafeAccessorAttribute supports generic parameters
 
-The <xref:System.Runtime.CompilerServices.UnsafeAccessorAttribute> feature allows unsafe access to type members that are unaccessible to the caller. This feature was designed in .NET 8 but implemented without support for generic parameters. .NET 9 adds support for generic parameters for CoreCLR and native AOT scenarios. The following code shows example usage.
+The <xref:System.Runtime.CompilerServices.UnsafeAccessorAttribute> feature allows unsafe access to type members that are inaccessible to the caller. This feature was designed in .NET 8 but implemented without support for generic parameters. .NET 9 adds support for generic parameters for CoreCLR and native AOT scenarios. The following code shows example usage.
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/UnsafeAccessor.cs":::
 
 ## Garbage collection
-
-## Dynamic adaptation to application sizes (DATAS)
 
 Dynamic adaptation to application sizes (DATAS) is now enabled by default. It aims to adapt to application memory requirements, meaning the application heap size should be roughly proportional to the long-lived data size. DATAS was introduced as an opt-in feature in .NET 8 and has been significantly updated and improved in .NET 9.
 
@@ -106,18 +104,7 @@ An IV is a variable whose value changes as the containing loop iterates. In the 
 
 Consider the following example that iterates through an array:
 
-```csharp
-static int Sum(int[] arr)
-{
-    int sum = 0;
-    for (int i = 0; i < arr.Length; i++)
-    {
-        sum += arr[i];
-    }
-
-    return sum;
-}
-```
+:::code language="csharp" source="../snippets/dotnet-9/csharp/Runtime.cs" id="ForLoop":::
 
 The index variable, `i`, is 4 bytes in size. At the assembly level, 64-bit registers are typically used to hold array indices on x64, and in previous .NET versions, the compiler generated code that zero-extended `i` to 8 bytes for the array access, but continued to treat `i` as a 4-byte integer elsewhere. However, extending `i` to 8 bytes requires an additional instruction on x64. With IV widening, the 64-bit JIT compiler now widens `i` to 8 bytes throughout the loop, omitting the zero extension. Looping over arrays is very common, and the benefits of this instruction removal quickly add up.
 
@@ -125,15 +112,7 @@ The index variable, `i`, is 4 bytes in size. At the assembly level, 64-bit regis
 
 Index variables are frequently used to read sequential regions of memory. Consider the idiomatic `for` loop:
 
-```csharp
-int sum = 0;
-int[] nums = [0..12];
-
-for (int i = 0; i < nums.Length; i++)
-{
-    sum += nums[i];
-}
-```
+:::code language="csharp" source="../snippets/dotnet-9/csharp/Runtime.cs" id="ForLoop":::
 
 For each iteration of the loop, the index variable `i` is used to read an integer in `nums`, and then `i` is incremented. In Arm64 assembly, these two operations look as follows:
 
@@ -158,15 +137,7 @@ The `#0x04` at the end means the address in `x1` is incremented by four bytes af
 
 Strength reduction is a compiler optimization where an operation is replaced with a faster, logically equivalent operation. This technique is especially useful for optimizing loops. Consider the idiomatic `for` loop:
 
-```csharp
-int sum = 0;
-int[] nums = [0..12];
-
-for (int i = 0; i < nums.Length; i++)
-{
-    sum += nums[i];
-}
-```
+:::code language="csharp" source="../snippets/dotnet-9/csharp/Runtime.cs" id="ForLoop":::
 
 The following x64 assembly code shows a snippet of the code that's generated for the loop's body:
 
@@ -179,21 +150,7 @@ These instructions correspond to the expressions `sum += nums[i]` and `i++`, res
 
 Multiplication is more expensive than addition, and replacing the former with the latter is a classic motivation for strength reduction. To avoid the computation of the element's address on each memory access, you could rewrite the example to access the integers in `nums` using a pointer rather than an index variable:
 
-```csharp
-static int Sum(Span<int> nums)
-{
-    int sum = 0;
-    ref int p = ref MemoryMarshal.GetReference(nums);
-    ref int end = ref Unsafe.Add(ref p, nums.Length);
-    while (Unsafe.IsAddressLessThan(ref p, ref end))
-    {
-        sum += p;
-        p = ref Unsafe.Add(ref p, 1);
-    }
-
-    return sum;
-}
-```
+:::code language="csharp" source="../snippets/dotnet-9/csharp/Runtime.cs" id="WhileLoop":::
 
 The source code is more complicated, but it's logically equivalent to the initial implementation. Also, the assembly looks better:
 
@@ -215,7 +172,7 @@ In the idiomatic `for (int i = ...)` pattern, the counter variable typically inc
 ```csharp
 for (int i = 0; i < 100; i++)
 {
-    Foo();
+    DoSomething();
 }
 ```
 
@@ -224,7 +181,7 @@ However, on many architectures, it's more performant to decrement the loop's cou
 ``` csharp
 for (int i = 100; i > 0; i--)
 {
-    Foo();
+    DoSomething();
 }
 ```
 
@@ -287,19 +244,7 @@ The `str` instruction stores data from a single register to memory, while the `s
 
 For example, consider the following snippet:
 
-```csharp
-class Body { public double x, y, z, vx, vy, vz, mass; }
-
-static void Advance(double dt, Body[] bodies)
-{
-    foreach (Body b in bodies)
-    {
-        b.x += dt * b.vx;
-        b.y += dt * b.vy;
-        b.z += dt * b.vz;
-    }
-}
-```
+:::code language="csharp" source="../snippets/dotnet-9/csharp/Runtime.cs" id="Advance":::
 
 The values of `b.x`, `b.y`, and `b.z` are updated in the loop body. At the assembly level, each member could be stored with a `str` instruction; or using `stp`, two of the stores (`b.x` and `b.y`, or `b.y` and `b.z`, because these pairs are contiguous in memory) can be handled with one instruction. To use the `stp` instruction to store to `b.x` and `b.y` simultaneously, the compiler also needs to determine that the computations `b.x + (dt * b.vx)` and `b.y + (dt * b.vy)` are independent of one another and can be performed before storing to `b.x` and `b.y`.
 
@@ -346,15 +291,7 @@ Many hardware intrinsic APIs expect users to pass constant values for certain pa
 
 Consider the following example:
 
-```csharp
-static byte Test1()
-{
-    Vector128<byte> v = Vector128<byte>.Zero;
-    byte size = 1;
-    v = Sse2.ShiftRightLogical128BitLane(v, size);
-    return Sse41.Extract(v, 0);
-}
-```
+:::code language="csharp" source="../snippets/dotnet-9/csharp/Runtime.cs" id="Test1":::
 
 The use of `size` in the call to `Sse2.ShiftRightLogical128BitLane` can be substituted with the constant 1, and under normal circumstances, the JIT compiler is already capable of this substitution optimization. But when determining whether to generate the accelerated or fallback code for `Sse2.ShiftRightLogical128BitLane`, the compiler detects that a variable is being passed instead of a constant and prematurely decides against "intrinsifying" the call. Starting in .NET 9, the compiler recognizes more cases like this and substitutes the variable argument with its constant value, thus generating the accelerated code.
 
@@ -384,23 +321,7 @@ Value types, such as `int` and `struct`, are typically allocated on the stack in
 
 Consider the following snippet:
 
-```csharp
-static bool Compare(object? x, object? y)
-{
-    if ((x == null) || (y == null))
-    {
-        return x == y;
-    }
-
-    return x.Equals(y);
-}
-
-public static int Main()
-{
-    bool result = Compare(3, 4);
-    return result ? 0 : 100;
-}
-```
+:::code language="csharp" source="../snippets/dotnet-9/csharp/Runtime.cs" id="Compare":::
 
 `Compare` is conveniently written such that if you wanted to compare other types, like strings or `double` values, you could reuse the same implementation. But in this example, it also has the performance drawback of requiring any value types that are passed to it to be *boxed*.
 

@@ -61,6 +61,25 @@ else
 }
 #endregion snippet_NoChain
 
+#region snippet_DacEquivalents
+credential = new DefaultAzureCredential(
+    new DefaultAzureCredentialOptions
+    {
+        ExcludeEnvironmentCredential = true,
+        ExcludeWorkloadIdentityCredential = true,
+        ExcludeAzureCliCredential = true,
+        ExcludeAzurePowerShellCredential = true,
+        ExcludeAzureDeveloperCliCredential = true,
+        ManagedIdentityClientId = userAssignedClientId
+    });
+#endregion
+
+#region snippet_CtcEquivalents
+credential = new ChainedTokenCredential(
+    new ManagedIdentityCredential(clientId: userAssignedClientId),
+    new VisualStudioCredential());
+#endregion
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

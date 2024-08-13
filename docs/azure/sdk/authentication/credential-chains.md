@@ -103,7 +103,7 @@ Here's why:
 - **Performance overhead**: The process of sequentially trying multiple credentials can introduce performance overhead. For example, when running on a local development machine, managed identity is unavailable. Consequently, `ManagedIdentityCredential` always fails in the local development environment, unless explicitly disabled via its corresponding `Exclude`-prefixed property.
 - **Unpredictable behavior**: `DefaultAzureCredential` checks for the presence of certain environment variables. It's possible that someone could add or modify these environment variables at the system level on the host machine. Those changes apply globally and therefore alter the behavior of `DefaultAzureCredential` at runtime in any app running on that machine.
 
-### Debug a chained credential
+## Debug a chained credential
 
 To diagnose an unexpected issue or to understand what a chained credential is doing, [enable logging](../logging.md) in your app. Optionally, filter the logs to only those events emitted from the Azure Identity library. For example:
 

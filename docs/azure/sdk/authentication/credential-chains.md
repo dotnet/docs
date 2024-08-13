@@ -109,8 +109,11 @@ To diagnose an unexpected issue or to understand what a chained credential is do
 
 :::code language="csharp" source="../snippets/authentication/credential-chains/Program.cs" id="snippet_FilteredLogging":::
 
-For illustration purposes, assume the parameterless form of `DefaultAzureCredential` was used to authenticate a request to a Log Analytics workspace. The next time the app runs, notice the following pertinent entries in the output:
+For illustration purposes, assume the parameterless form of `DefaultAzureCredential` was used to authenticate a request to a Log Analytics workspace. The app ran in the local development environment, and Visual Studio was authenticated to an Azure account. The next time the app ran, the following pertinent entries appeared in the output:
 
 :::code language="output" source="../snippets/authentication/credential-chains/dac-logs.txt":::
 
-The `DefaultAzureCredential credential selected:`-prefixed entry indicates the credential that was selected&mdash;`VisualStudioCredential` in this case.
+In the preceding output, notice that:
+
+- `EnvironmentCredential`, `WorkloadIdentityCredential`, and `ManagedIdentityCredential` each failed to acquire a Microsoft Entra access token, in that order.
+- The `DefaultAzureCredential credential selected:`-prefixed entry indicates the credential that was selected&mdash;`VisualStudioCredential` in this case. Since `VisualStudioCredential` succeeded, no credentials beyond it were used.

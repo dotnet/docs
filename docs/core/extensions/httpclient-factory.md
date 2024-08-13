@@ -3,7 +3,7 @@ title: Use the IHttpClientFactory
 description: Learn how to use the HttpClient and IHttpClientFactory implementations with dependency injection in your .NET workloads.
 author: IEvangelist
 ms.author: dapine
-ms.date: 05/19/2023
+ms.date: 08/13/2024
 ---
 
 # IHttpClientFactory with .NET
@@ -20,7 +20,7 @@ With modern application development principles driving best practices, the <xref
 
 ## The `IHttpClientFactory` type
 
-All of the sample source code in this article relies on the [`Microsoft.Extensions.Http`](https://www.nuget.org/packages/microsoft.extensions.http) NuGet package. Additionally, HTTP `GET` requests are made to the free [{JSON} Placeholder](https://jsonplaceholder.typicode.com/) API to get user `Todo` objects.
+All of the sample source code provided in this article requires the installation of the [`Microsoft.Extensions.Http`](https://www.nuget.org/packages/microsoft.extensions.http) NuGet package. Furthermore, the code examples demonstrate the usage of HTTP `GET` requests to retrieve user `Todo` objects from the free [{JSON} Placeholder](https://jsonplaceholder.typicode.com/) API.
 
 When you call any of the <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%2A> extension methods, you're adding the `IHttpClientFactory` and related services to the <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>. The `IHttpClientFactory` type offers the following benefits:
 

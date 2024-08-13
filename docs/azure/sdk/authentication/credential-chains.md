@@ -2,7 +2,7 @@
 title: 'Credential chains in the Azure Identity library for .NET'
 description: 'This article describes the DefaultAzureCredential and ChainedTokenCredential classes in the Azure Identity library.'
 ms.topic: conceptual
-ms.date: 08/06/2024
+ms.date: 08/13/2024
 ---
 
 # Credential chains in the Azure Identity library for .NET
@@ -92,13 +92,23 @@ The preceding code sample creates a tailored credential chain comprised of two c
 
 ## Usage guidance for DefaultAzureCredential
 
-`DefaultAzureCredential` is undoubtedly the easiest way to get started with the Azure Identity library, but with that convenience comes tradeoffs. Once you deploy your app to Azure, you should understand your app's authentication requirements. For that reason, strongly consider moving from `DefaultAzureCredential` to one of the following solutions:
+`DefaultAzureCredential` is undoubtedly the easiest way to get started with the Azure Identity library, but with that convenience comes tradeoffs. Once you deploy your app to Azure, you should understand the app's authentication requirements. For that reason, strongly consider moving from `DefaultAzureCredential` to one of the following solutions:
 
 - A specific `TokenCredential` implementation, such as `ManagedIdentityCredential`. See the [**Derived** list](/dotnet/api/azure.core.tokencredential?view=azure-dotnet&preserve-view=true#definition) for options.
 - A pared-down `ChainedTokenCredential` implementation optimized for the Azure environment in which your app runs.
 
 Here's why:
 
-- **Debugging challenges**: When authentication fails, it can be challenging to debug and identify the offending credential. You must [enable logging](../logging.md) to see the progression from one credential to the next and the success/failure status of each.
+- **Debugging challenges**: When authentication fails, it can be challenging to debug and identify the offending credential. You must enable logging to see the progression from one credential to the next and the success/failure status of each. For more information, see [Debug a chained credential](#debug-a-chained-credential).
 - **Performance overhead**: The process of sequentially trying multiple credentials can introduce performance overhead. For example, when running on a local development machine, managed identity is unavailable. Consequently, `ManagedIdentityCredential` always fails in the local development environment, unless explicitly disabled via its corresponding `Exclude`-prefixed property.
 - **Unpredictable behavior**: `DefaultAzureCredential` checks for the presence of certain environment variables. It's possible that someone could add or modify these environment variables at the system level on the host machine. Those changes apply globally and therefore alter the behavior of `DefaultAzureCredential` at runtime in any app running on that machine.
+
+### Debug a chained credential
+
+To diagnose an unexpected issue or to understand what a chained credential is doing, [enable logging](../logging.md) in your app. Optionally, filter the logs to only those events emitted from the Azure Identity library. For example:
+
+:::code language="csharp" source="../snippets/authentication/credential-chains/Program.cs" id="snippet_FilteredLogging":::
+
+For illustration purposes, assume the parameterless form of `DefaultAzureCredential` was used. The next time the app runs, notice the following pertinent entries in the output:
+
+:::code language="output" source="../snippets/authentication/credential-chains/dac-logs.txt" highlight="10":::

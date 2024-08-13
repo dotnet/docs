@@ -1,9 +1,21 @@
-﻿using Azure.Core;
+﻿using System.Diagnostics.Tracing;
+using Azure.Core;
+using Azure.Core.Diagnostics;
 using Azure.Identity;
 using Microsoft.Extensions.Azure;
 
 var userAssignedClientId = "<user-assigned-client-id>";
 var builder = WebApplication.CreateBuilder(args);
+
+#region snippet_FilteredLogging
+using AzureEventSourceListener listener = new((args, message) =>
+{
+    if (args.EventSource.Name == "Azure-Identity")
+    {
+        Console.WriteLine(message);
+    }
+}, EventLevel.LogAlways);
+#endregion snippet_FilteredLogging
 
 builder.Services.AddAzureClients(clientBuilder =>
 {
@@ -11,7 +23,7 @@ builder.Services.AddAzureClients(clientBuilder =>
         new Uri("https://<account-name>.blob.core.windows.net"));
     #region snippet_Dac
     clientBuilder.UseCredential(new DefaultAzureCredential());
-    #endregion
+    #endregion snippet_Dac
 
     #region snippet_DacExcludes
     clientBuilder.UseCredential(new DefaultAzureCredential(
@@ -21,13 +33,13 @@ builder.Services.AddAzureClients(clientBuilder =>
             ExcludeWorkloadIdentityCredential = true,
             ManagedIdentityClientId = userAssignedClientId,
         }));
-    #endregion
+    #endregion snippet_DacExcludes
 
     #region snippet_Ctc
     clientBuilder.UseCredential(new ChainedTokenCredential(
         new ManagedIdentityCredential(clientId: userAssignedClientId),
         new VisualStudioCredential()));
-    #endregion
+    #endregion snippet_Ctc
 });
 
 builder.Services.AddEndpointsApiExplorer();
@@ -47,7 +59,7 @@ else
     // local development environment
     credential = new VisualStudioCredential();
 }
-#endregion
+#endregion snippet_NoChain
 
 if (app.Environment.IsDevelopment())
 {

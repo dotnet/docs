@@ -77,7 +77,7 @@ In the preceding code sample, `EnvironmentCredential` and `WorkloadIdentityCrede
 
 Note `InteractiveBrowserCredential` is excluded by default and therefore isn't shown in the preceding diagram.
 
-As more `Exclude`-prefixed properties are set, the advantages of using `DefaultAzureCredential` diminish. In such cases, `ChainedTokenCredential` is a better choice and requires less code. To illustrate, these two code samples behave the same way:
+As more `Exclude`-prefixed properties are set to `true`, the advantages of using `DefaultAzureCredential` diminish. In such cases, `ChainedTokenCredential` is a better choice and requires less code. To illustrate, these two code samples behave the same way:
 
 ### [DefaultAzureCredential](#tab/dac)
 

@@ -18,10 +18,6 @@ _Released August 13, 2024_
 
 This security update addresses an elevation of privilege vulnerability detailed in [CVE 2024-29187](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-29187).
 
-#### Defense in depth vulnerability
-
-This security update addresses an issue with serialization binders in BinaryFormatter.
-
 ### Quality and reliability improvements
 
 This release contains the following quality and reliability improvements.

@@ -20,6 +20,14 @@ groups:
     title: Ubuntu
   - id: os-linux-other
     title: Other
+- id: operating-systems-set-three
+  title: Operating System
+  prompt: Choose an operating system
+  pivots:
+  - id: os-windows
+    title: Windows
+  - id: os-macos
+    title: macOS
 - id: unit-testing-framework-set-one
   title: Unit testing framework
   prompt: Choose a unit testing framework

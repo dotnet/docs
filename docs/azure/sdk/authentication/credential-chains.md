@@ -19,12 +19,12 @@ At runtime, a credential chain attempts to authenticate using the sequence's fir
 
 A chained credential can offer the following benefits:
 
-- **Environment awareness**: It automatically selects the most appropriate credential based on the environment in which the app is running. Without it, you'd have write code like this:
+- **Environment awareness**: Automatically selects the most appropriate credential based on the environment in which the app is running. Without it, you'd have write code like this:
 
-    :::code language="csharp" source="../snippets/authentication/Program.cs" id="snippet_NoChain":::
+    :::code language="csharp" source="../snippets/authentication/credential-chains/Program.cs" id="snippet_NoChain":::
 
 - **Seamless transitions**: Your app can move from local development to your staging or production environment without changing authentication code.
-- **Improved resiliency**: It includes a fallback mechanism that moves to the next credential when the prior fails to acquire an access token.
+- **Improved resiliency**: Includes a fallback mechanism that moves to the next credential when the prior fails to acquire an access token.
 
 ## How to choose a chained credential
 
@@ -63,13 +63,13 @@ The order in which `DefaultAzureCredential` attempts credentials follows.
 
 In its simplest form, you can use the parameterless version of `DefaultAzureCredential` as follows:
 
-:::code language="csharp" source="../snippets/authentication/Program.cs" id="snippet_Dac":::
+:::code language="csharp" source="../snippets/authentication/credential-chains/Program.cs" id="snippet_Dac":::
 
 ### How to customize DefaultAzureCredential
 
 To remove a credential from `DefaultAzureCredential`, use the corresponding `Exclude`-prefixed property in [DefaultAzureCredentialOptions](/dotnet/api/azure.identity.defaultazurecredentialoptions?view=azure-dotnet&preserve-view=true#properties). For example:
 
-:::code language="csharp" source="../snippets/authentication/Program.cs" id="snippet_DacExcludes" highlight="4-5":::
+:::code language="csharp" source="../snippets/authentication/credential-chains/Program.cs" id="snippet_DacExcludes" highlight="4-5":::
 
 In the preceding code sample, `EnvironmentCredential` and `WorkloadIdentityCredential` are removed from the credential chain. As a result, the first credential to be attempted is `ManagedIdentityCredential`. The modified chain looks like this:
 
@@ -81,7 +81,7 @@ Note `InteractiveBrowserCredential` is excluded by default and therefore isn't s
 
 [ChainedTokenCredential](/dotnet/api/azure.identity.chainedtokencredential?view=azure-dotnet&preserve-view=true) is an empty chain to which you add credentials to suit your app's needs. For example:
 
-:::code language="csharp" source="../snippets/authentication/Program.cs" id="snippet_Ctc":::
+:::code language="csharp" source="../snippets/authentication/credential-chains/Program.cs" id="snippet_Ctc":::
 
 The preceding code sample creates a tailored credential chain comprised of two credentials. The user-assigned managed identity variant of `ManagedIdentityCredential` is attempted first, followed by `VisualStudioCredential`, if necessary. In graphical form, the chain looks like this:
 

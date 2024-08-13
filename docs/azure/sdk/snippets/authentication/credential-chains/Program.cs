@@ -1,8 +1,8 @@
-﻿#region snippet_UseCredential
-using Azure.Core;
+﻿using Azure.Core;
 using Azure.Identity;
 using Microsoft.Extensions.Azure;
 
+var userAssignedClientId = "<user-assigned-client-id>";
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddAzureClients(clientBuilder =>
@@ -19,17 +19,16 @@ builder.Services.AddAzureClients(clientBuilder =>
         {
             ExcludeEnvironmentCredential = true,
             ExcludeWorkloadIdentityCredential = true,
-            ManagedIdentityClientId = "<user-assigned-client-id>",
+            ManagedIdentityClientId = userAssignedClientId,
         }));
     #endregion
 
     #region snippet_Ctc
     clientBuilder.UseCredential(new ChainedTokenCredential(
-        new ManagedIdentityCredential(clientId: "<user-assigned-client-id>"),
+        new ManagedIdentityCredential(clientId: userAssignedClientId),
         new VisualStudioCredential()));
     #endregion
 });
-#endregion
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -41,7 +40,7 @@ TokenCredential credential;
 
 if (app.Environment.IsProduction() || app.Environment.IsStaging())
 {
-    credential = new ManagedIdentityCredential();
+    credential = new ManagedIdentityCredential(clientId: userAssignedClientId);
 }
 else
 {

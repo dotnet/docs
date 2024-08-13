@@ -20,7 +20,7 @@ To get started, create a new .NET console application named **DI.Basics**. Some 
 
 - [Visual Studio: **File > New > Project**](/visualstudio/get-started/csharp/tutorial-console) menu.
 - [Visual Studio Code](https://code.visualstudio.com/) and the [C# Dev Kit extension's](https://code.visualstudio.com/docs/csharp/project-management): **Solution Explorer** menu option.
-- [.NET CLI: `dotnet new console`](/dotnet/core/tools/dotnet-new-sdk-templates#console) command in the terminal.
+- [.NET CLI: `dotnet new console`](../tools/dotnet-new-sdk-templates.md#console) command in the terminal.
 
 You need to add the package reference to the [Microsoft.Extensions.DependencyInjection](https://www.nuget.org/packages/Microsoft.Extensions.DependencyInjection) in the project file. Regardless of the approach, ensure the project resembles the following XML of the _DI.Basics.csproj_ file:
 

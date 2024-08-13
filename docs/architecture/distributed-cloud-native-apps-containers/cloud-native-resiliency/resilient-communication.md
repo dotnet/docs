@@ -11,17 +11,17 @@ ms.date: 04/06/2022
 
 Throughout this book, we've embraced a microservice-based architectural approach. While such an architecture provides important benefits, it presents many challenges:
 
-- *Out-of-process network communication.* Each microservice communicates over a network protocol that introduces network congestion, latency, and transient faults.
+- **Out-of-process network communication.** Each microservice communicates over a network protocol that introduces network congestion, latency, and transient faults.
 
-- *Service discovery.* How do microservices discover and communicate with each other when running across a cluster of machines with their own IP addresses and ports?
+- **Service discovery.** How do microservices discover and communicate with each other when running across a cluster of machines with their own IP addresses and ports?
 
-- *Resiliency.* How do you manage short-lived failures and keep the system stable?
+- **Resiliency.** How do you manage short-lived failures and keep the system stable?
 
-- *Load balancing.* How does inbound traffic get distributed across multiple instances of a microservice?
+- **Load balancing.** How does inbound traffic get distributed across multiple instances of a microservice?
 
-- *Security.* How are security concerns such as transport-level encryption and certificate management enforced?
+- **Security.** How are security concerns such as transport-level encryption and certificate management enforced?
 
-- *Distributed Monitoring.* - How do you correlate and capture traceability and monitoring for a single request across multiple consuming microservices?
+- **Distributed monitoring.** - How do you correlate and capture traceability and monitoring for a single request across multiple consuming microservices?
 
 You can address these concerns with different libraries and frameworks, but the implementation can be expensive, complex, and time-consuming. You also end up with infrastructure concerns coupled to business logic.
 
@@ -47,15 +47,15 @@ If an instance is unresponsive or fails, the mesh will retry the request on anot
 
 ## Istio and Envoy
 
-While a few service mesh options currently exist, [Istio](https://istio.io/docs/concepts/what-is-istio/) is the most popular at the time of this writing. Istio is a joint venture from IBM, Google, and Lyft. It's an open-source offering that can be integrated into a new or existing distributed application. The technology provides a consistent and complete solution to secure, connect, and monitor microservices. Its features include:
+While a few service mesh options currently exist, [Istio](https://istio.io/docs/concepts/what-is-istio/) is the most popular at the time of writing. Istio is a joint venture from IBM, Google, and Lyft. It's an open-source offering that can be integrated into a new or existing distributed application. The technology provides a consistent and complete solution to secure, connect, and monitor microservices. Its features include:
 
 - Secure service-to-service communication in a cluster with strong identity-based authentication and authorization.
-- Automatic load balancing for HTTP, [gRPC](https://grpc.io/), WebSocket, and TCP traffic.
+- Automatic load balancing for HTTP, [gRPC](https://grpc.io/), WebSockets, and TCP traffic.
 - Fine-grained control of traffic behavior with rich routing rules, retries, failovers, and fault injection.
 - A pluggable policy layer and configuration API supporting access controls, rate limits, and quotas.
 - Automatic metrics, logs, and traces for all traffic within a cluster, including cluster ingress and egress.
 
-A key component for an Istio implementation is a proxy service entitled the [Envoy proxy](https://www.envoyproxy.io/docs/envoy/latest/intro/what_is_envoy). It runs alongside each service and provides a platform-agnostic foundation for the following features:
+A key component for an Istio implementation is a proxy service called the [Envoy proxy](https://www.envoyproxy.io/docs/envoy/latest/intro/what_is_envoy). It runs alongside each service and provides a platform-agnostic foundation for the following features:
 
 - Dynamic service discovery.
 - Load balancing.

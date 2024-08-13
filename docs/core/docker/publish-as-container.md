@@ -1,7 +1,7 @@
 ---
 title: Containerize an app with dotnet publish
 description: In this tutorial, you'll learn how to containerize a .NET application with dotnet publish command and without the use of a Dockerfile.
-ms.date: 03/27/2024
+ms.date: 08/13/2024
 ms.topic: tutorial
 zone_pivot_groups: dotnet-version-7-8
 ---
@@ -175,9 +175,6 @@ The preceding .NET CLI command publishes the app as a container:
 > ..\build\Microsoft.NET.Build.Containers.targets(66,9): error MSB4018:
 >    The "CreateNewImage" task failed unexpectedly. [..\Worker\DotNet.ContainerImage.csproj]
 > ```
-
-> [!TIP]
-> Depending on the type of app you're containerizing, the command-line switches (options) might vary. For example, the `/t:PublishContainer` argument is only required for non-web .NET apps, such as `console` and `worker` templates. For web templates, replace the `/t:PublishContainer` argument with `-p:PublishProfile=DefaultContainer`. For more information, see [.NET SDK container builds, issue #141](https://github.com/dotnet/sdk-container-builds/issues/141).
 
 The command produces output similar to the example output:
 

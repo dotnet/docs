@@ -140,7 +140,7 @@ Some distros have [removed `ENGINE` support](https://github.com/dotnet/runtime/i
 The following snippet shows basic usage:
 
 ```csharp
-byte[] data = ...;
+byte[] data = [ /* example data */ ];
 
 // Refer to your provider documentation, for example, https://github.com/tpm2-software/tpm2-openssl/tree/master.
 using (SafeEvpPKeyHandle priKeyHandle = SafeEvpPKeyHandle.OpenKeyFromProvider("tpm2", "handle:0x81000007"))

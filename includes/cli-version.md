@@ -6,4 +6,4 @@ ms.topic: include
 ---
 - **`--version`**
 
-  The workload set version to install or update to. Available since 8.0.400 SDK. For more information, see [.NET SDK workload sets](dotnet-workload-sets.md).
+  The workload set version to install or update to. Available since 8.0.400 SDK. For more information, see [.NET SDK workload sets](../docs/core/tools/dotnet-workload-sets.md).

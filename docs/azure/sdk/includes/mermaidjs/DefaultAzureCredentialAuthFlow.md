@@ -8,9 +8,7 @@ ms.date: 08/07/2024
 %% =======================
 %% 1. Install mermaid CLI v10.9.1 (see https://github.com/mermaid-js/mermaid-cli/blob/master/README.md):
 %%    npm i -g @mermaid-js/mermaid-cli@10.9.1
-%% 2. Run commands:
-%%    mmdc -i DefaultAzureCredentialAuthFlow.md -o ../../media/mermaidjs/DefaultAzureCredentialAuthFlow-inline.svg
-%%    mmdc -i DefaultAzureCredentialAuthFlow.md -o ../../media/mermaidjs/DefaultAzureCredentialAuthFlow-expanded.png
+%% 2. Run command: mmdc -i DefaultAzureCredentialAuthFlow.md -o ../../media/mermaidjs/DefaultAzureCredentialAuthFlow.svg
 
 %%{
   init: {

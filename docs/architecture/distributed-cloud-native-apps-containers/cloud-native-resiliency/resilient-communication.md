@@ -1,6 +1,6 @@
 ---
 title: Resilient communication
-description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | Resilient Communication
+description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | Resilient communication
 author: 
 ms.date: 04/06/2022
 ---

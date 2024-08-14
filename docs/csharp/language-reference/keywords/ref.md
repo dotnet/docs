@@ -17,6 +17,9 @@ You use the `ref` keyword in the following contexts:
 :::code language="csharp" source="./snippets/PassParameters.cs" id="PassByValueOrReference":::
 
 - In a method signature, to return a value to the caller by reference. For more information, see [`ref return`](../statements/jump-statements.md#ref-returns).
+
+:::code language="csharp" source="../statements/snippets/jump-statements/ReturnStatement.cs" id="RefReturn":::
+
 - In a declaration of a local variable, to declare a [reference variable](../statements/declarations.md#reference-variables).
 - As the part of a [conditional ref expression](../operators/conditional-operator.md#conditional-ref-expression) or a [ref assignment operator](../operators/assignment-operator.md#ref-assignment).
 - In a `struct` declaration, to declare a `ref struct`. For more information, see the [`ref` structure types](../builtin-types/ref-struct.md) article.

@@ -63,12 +63,17 @@ To make an HTTP request, you call any of the following APIs:
 > Making HTTP requests is considered network I/O-bound work. While there is a synchronous <xref:System.Net.Http.HttpClient.Send%2A?displayProperty=nameWithType> method, it is recommended to use the asynchronous APIs instead, unless you have good reason not to.
 
 > [!NOTE]
-> While targeting ANDROID devices (such as using MAUI), YOU MUST ADD 'android:usesCleartextTraffic="true"' to '<application></application>' in 'AndroidManifest.xml' to allow clear text traffic (such as HTTP request) which is disabled by default due to Android security policy. Sample setting are as follows. Or you can create a network security config file to enable it on Android 7.0 (API 24) and higher ([More Details in](https://learn.microsoft.com/en-us/dotnet/maui/data-cloud/local-web-services?view=net-maui-8.0 "Connect to local web services from Android emulators and iOS simulators")``).
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
-	<application android:usesCleartextTraffic="true"></application>
-```
+> While targeting Android devices (such as with .NET MAUI development), you must add `android:usesCleartextTraffic="true"` to `<application></application>` in _AndroidManifest.xml_. This enables clear-text traffic, such as HTTP requests, which is otherwise disabled by default due to Android security policies. Consider the following example XML settings:
+>
+> ```xml
+> <?xml version="1.0" encoding="utf-8"?>
+> <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+>   <application android:usesCleartextTraffic="true"></application>
+>   <!-- omitted for brevity -->
+> </manifest>
+> ```
+>
+> For more information, see [Enable clear-text network traffic for the localhost domain](/dotnet/maui/data-cloud/local-web-services?view=net-maui-8.0#enable-clear-text-network-traffic-for-the-localhost-domain).
 
 ### HTTP content
 

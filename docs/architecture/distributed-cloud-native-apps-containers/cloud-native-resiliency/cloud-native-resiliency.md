@@ -5,15 +5,9 @@ author:
 ms.date: 17/04/2024
 ---
 
-<!-- TODO update figure references -->
-
-# Cloud-native resiliency
-
 [!INCLUDE [download-alert](../includes/download-alert.md)]
 
 Your cloud-native applications must embrace the partial failures that will inevitably occur. You apps should continue working when limited failures occur and recover quickly from more serious events. In cloud-native applications, where there are multiple microservices and backing services running in different containers and potentially in different locations, failures can be more common, even if you're using platforms with robust Service Level Aggreements (SLAs).
-
-!TODO replace with eShop approach and diagram
 
 Resiliency is the ability of your system to react to failure and still remain functional. It's not about avoiding failure, but accepting failure and constructing your cloud-native services to recover from them. You want to return to a fully functioning state as quickly as possible.
 

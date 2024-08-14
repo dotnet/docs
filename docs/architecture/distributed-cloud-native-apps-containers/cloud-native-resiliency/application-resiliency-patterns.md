@@ -33,15 +33,13 @@ Note that these resiliency strategies apply to request messages, whether the com
 | 503 | Service unavailable |
 | 504 | Gateway timeout |
 
-Not all 400 and 500 status codes should be retried. For example, a 403 status code indicates that the requested operation is forbidden. The caller isn't authorized and won't be permitted to successfully complete the operation no matter how many times they retry. 
+Not all 400 and 500 status codes should be retried. For example, a 403 status code indicates that the requested operation is forbidden. The caller isn't authorized and won't be permitted to successfully complete the operation no matter how many times they retry.
 
 Take care to retry only those operations caused by temporary failures that might respond on subsequent attempts.
 
 Next, let's expand on the retry and circuit breaker patterns.
 
 ### Retry pattern
-
-!TODO eShop rewrite with retry patterns - plus diagram.
 
 In a distributed cloud-native environment, calls to services and cloud resources can fail because of transient (short-lived) failures, which correct themselves after a brief period. Implementing a retry strategy helps a cloud-native service mitigate these scenarios.
 

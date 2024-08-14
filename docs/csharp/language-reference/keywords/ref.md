@@ -39,3 +39,12 @@ ref int aliasOfvariable = ref variable;
 :::code language="csharp" source="../builtin-types/snippets/shared/StructType.cs" id="SnippetRefField":::
 
 - In a generic type declaration to specify that a type parameter [`allows ref struct`](../../programming-guide/generics/constraints-on-type-parameters.md#allows-ref-struct) types.
+
+```csharp
+class SomeClass<T, S>
+    where T : allows ref struct
+    where S : T
+{
+    // etc
+}
+```

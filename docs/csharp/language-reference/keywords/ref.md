@@ -31,5 +31,8 @@ ref int aliasOfvariable = ref variable;
 :::code language="csharp" source="../operators/snippets/shared/AssignmentOperator.cs" id="SnippetRefAssignment":::
 
 - In a `struct` declaration, to declare a `ref struct`. For more information, see the [`ref` structure types](../builtin-types/ref-struct.md) article.
+
+:::code language="csharp" source="../builtin-types/snippets/shared/StructType.cs" id="SnippetRefStruct":::
+  
 - In a `ref struct` definition, to declare a `ref` field. For more information, see the [`ref` fields](../builtin-types/ref-struct.md#ref-fields) section of the [`ref` structure types](../builtin-types/ref-struct.md) article.
 - In a generic type declaration to specify that a type parameter [`allows ref struct`](../../programming-guide/generics/constraints-on-type-parameters.md#allows-ref-struct) types.

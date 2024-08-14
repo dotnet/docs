@@ -12,20 +12,40 @@ items:
       items:
       - name: DefaultKeyResolution.ShouldGenerateNewKey has altered meaning
         href: aspnet-core/9.0/key-resolution.md
+      - name: HostBuilder enables ValidateOnBuild/ValidateScopes in development environment
+        href: aspnet-core/9.0/hostbuilder-validation.md
     - name: Core .NET libraries
       items:
-      - name: API obsoletions with custom diagnostic IDs
-        href: core-libraries/9.0/obsolete-apis-with-custom-diagnostics.md
       - name: Adding a ZipArchiveEntry sets header general-purpose bit flags
         href: core-libraries/9.0/compressionlevel-bits.md
+      - name: Altered UnsafeAccessor support for non-open generics
+        href: core-libraries/9.0/unsafeaccessor-generics.md
+      - name: API obsoletions with custom diagnostic IDs
+        href: core-libraries/9.0/obsolete-apis-with-custom-diagnostics.md
+      - name: BigInteger maximum length
+        href: core-libraries/9.0/biginteger-limit.md
       - name: Creating type of array of System.Void not allowed
         href: core-libraries/9.0/type-instance.md
+      - name: "`Equals`/`GetHashCode` throw for `InlineArrayAttribute` types"
+        href: core-libraries/9.0/inlinearrayattribute.md
       - name: Inline array struct size limit is enforced
         href: core-libraries/9.0/inlinearray-size.md
       - name: InMemoryDirectoryInfo prepends rootDir to files
         href: core-libraries/9.0/inmemorydirinfo-prepends-rootdir.md
       - name: RuntimeHelpers.GetSubArray returns different type
         href: core-libraries/9.0/getsubarray-return.md
+      - name: Support for empty environment variables
+        href: core-libraries/9.0/empty-env-variable.md
+    - name: Cryptography
+      items:
+      - name: SafeEvpPKeyHandle.DuplicateHandle up-refs the handle
+        href: cryptography/9.0/evp-pkey-handle.md
+      - name: Some X509Certificate2 and X509Certificate constructors are obsolete
+        href: cryptography/9.0/x509-certificates.md
+    - name: Deployment
+      items:
+      - name: Deprecated desktop Windows/macOS/Linux MonoVM runtime packages
+        href: deployment/9.0/monovm-packages.md
     - name: Networking
       items:
       - name: HttpListenerRequest.UserAgent is nullable
@@ -34,8 +54,16 @@ items:
       items:
       - name: "'dotnet workload' commands output change"
         href: sdk/9.0/dotnet-workload-output.md
+      - name: "'installer' repo version no longer documented"
+        href: sdk/9.0/productcommits-versions.md
       - name: Terminal logger is default
         href: sdk/9.0/terminal-logger.md
+      - name: Warning emitted for .NET Standard 1.x targets
+        href: sdk/9.0/netstandard-warning.md
+    - name: Serialization
+      items:
+      - name: BinaryFormatter always throws
+        href: serialization/9.0/binaryformatter-removal.md
     - name: Windows Forms
       items:
       - name: BindingSource.SortDescriptions doesn't return null
@@ -48,6 +76,8 @@ items:
         href: windows-forms/9.0/datagridviewrowaccessibleobject-name-row.md
       - name: No exception if DataGridView is null
         href: windows-forms/9.0/datagridviewheadercell-nre.md
+      - name: PictureBox raises HttpClient exceptions
+        href: windows-forms/9.0/httpclient-exceptions.md
     - name: WPF
       items:
       - name: "'GetXmlNamespaceMaps' type change"
@@ -102,6 +132,8 @@ items:
         href: core-libraries/8.0/decodefromutf8-whitespace.md
       - name: Boolean-backed enum type support removed
         href: core-libraries/8.0/bool-backed-enum.md
+      - name: Complex.ToString format changed to `<a; b>`
+        href: core-libraries/8.0/complex-format.md
       - name: Drive's current directory path enumeration
         href: core-libraries/8.0/drive-current-dir-paths.md
       - name: Enumerable.Sum throws new OverflowException for some inputs
@@ -218,6 +250,8 @@ items:
         href: sdk/8.0/arch-option.md
       - name: SDK uses a smaller RID graph
         href: sdk/8.0/rid-graph.md
+      - name: Setting DebugSymbols to false disables PDB generation
+        href: sdk/8.0/debugsymbols.md
       - name: Source Link included in the .NET SDK
         href: sdk/8.0/source-link.md
       - name: Trimming can't be used with .NET Standard or .NET Framework
@@ -944,6 +978,8 @@ items:
       items:
       - name: DefaultKeyResolution.ShouldGenerateNewKey has altered meaning
         href: aspnet-core/9.0/key-resolution.md
+      - name: HostBuilder enables ValidateOnBuild/ValidateScopes in development environment
+        href: aspnet-core/9.0/hostbuilder-validation.md
     - name: .NET 8
       items:
       - name: ConcurrencyLimiterMiddleware is obsolete
@@ -1174,18 +1210,26 @@ items:
     items:
     - name: .NET 9
       items:
-      - name: API obsoletions with custom diagnostic IDs
-        href: core-libraries/9.0/obsolete-apis-with-custom-diagnostics.md
       - name: Adding a ZipArchiveEntry sets header general-purpose bit flags
         href: core-libraries/9.0/compressionlevel-bits.md
+      - name: Altered UnsafeAccessor support for non-open generics
+        href: core-libraries/9.0/unsafeaccessor-generics.md
+      - name: API obsoletions with custom diagnostic IDs
+        href: core-libraries/9.0/obsolete-apis-with-custom-diagnostics.md
+      - name: BigInteger maximum length
+        href: core-libraries/9.0/biginteger-limit.md
       - name: Creating type of array of System.Void not allowed
         href: core-libraries/9.0/type-instance.md
+      - name: "`Equals`/`GetHashCode` throw for `InlineArrayAttribute` types"
+        href: core-libraries/9.0/inlinearrayattribute.md
       - name: Inline array struct size limit is enforced
         href: core-libraries/9.0/inlinearray-size.md
       - name: InMemoryDirectoryInfo prepends rootDir to files
         href: core-libraries/9.0/inmemorydirinfo-prepends-rootdir.md
       - name: RuntimeHelpers.GetSubArray returns different type
         href: core-libraries/9.0/getsubarray-return.md
+      - name: Support for empty environment variables
+        href: core-libraries/9.0/empty-env-variable.md
     - name: .NET 8
       items:
       - name: Activity operation name when null
@@ -1200,6 +1244,8 @@ items:
         href: core-libraries/8.0/decodefromutf8-whitespace.md
       - name: Boolean-backed enum type support removed
         href: core-libraries/8.0/bool-backed-enum.md
+      - name: Complex.ToString format changed to `<a; b>`
+        href: core-libraries/8.0/complex-format.md
       - name: Drive's current directory path enumeration
         href: core-libraries/8.0/drive-current-dir-paths.md
       - name: Enumerable.Sum throws new OverflowException for some inputs
@@ -1376,6 +1422,12 @@ items:
       href: corefx.md
   - name: Cryptography
     items:
+    - name: .NET 9
+      items:
+      - name: SafeEvpPKeyHandle.DuplicateHandle up-refs the handle
+        href: cryptography/9.0/evp-pkey-handle.md
+      - name: Some X509Certificate2 and X509Certificate constructors are obsolete
+        href: cryptography/9.0/x509-certificates.md
     - name: .NET 8
       items:
       - name: AesGcm authentication tag size on macOS
@@ -1410,6 +1462,10 @@ items:
         href: cryptography.md
   - name: Deployment
     items:
+    - name: .NET 9
+      items:
+      - name: Deprecated desktop Windows/macOS/Linux MonoVM runtime packages
+        href: deployment/9.0/monovm-packages.md
     - name: .NET 8
       items:
       - name: Host determines RID-specific assets
@@ -1616,8 +1672,12 @@ items:
       items:
       - name: "'dotnet workload' commands output change"
         href: sdk/9.0/dotnet-workload-output.md
+      - name: "'installer' repo version no longer documented"
+        href: sdk/9.0/productcommits-versions.md
       - name: Terminal logger is default
         href: sdk/9.0/terminal-logger.md
+      - name: Warning emitted for .NET Standard 1.x targets
+        href: sdk/9.0/netstandard-warning.md
     - name: .NET 8
       items:
       - name: CLI console output uses UTF-8
@@ -1646,6 +1706,8 @@ items:
         href: sdk/8.0/arch-option.md
       - name: SDK uses a smaller RID graph
         href: sdk/8.0/rid-graph.md
+      - name: Setting DebugSymbols to false disables PDB generation
+        href: sdk/8.0/debugsymbols.md
       - name: Source Link included in the .NET SDK
         href: sdk/8.0/source-link.md
       - name: Trimming can't be used with .NET Standard or .NET Framework
@@ -1744,6 +1806,10 @@ items:
         href: core-libraries/5.0/utf-7-code-paths-obsolete.md
   - name: Serialization
     items:
+    - name: .NET 9
+      items:
+      - name: BinaryFormatter always throws
+        href: serialization/9.0/binaryformatter-removal.md
     - name: .NET 8
       items:
       - name: BinaryFormatter disabled for most projects
@@ -1824,6 +1890,8 @@ items:
         href: windows-forms/9.0/datagridviewrowaccessibleobject-name-row.md
       - name: No exception if DataGridView is null
         href: windows-forms/9.0/datagridviewheadercell-nre.md
+      - name: PictureBox raises HttpClient exceptions
+        href: windows-forms/9.0/httpclient-exceptions.md
     - name: .NET 8
       items:
       - name: Anchor layout changes

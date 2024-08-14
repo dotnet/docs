@@ -1,7 +1,7 @@
 ---
 title: Shut down Orleans silos
 description: Learn how to shut down .NET Orleans silos.
-ms.date: 11/01/2022
+ms.date: 07/03/2024
 ---
 
 # Shut down Orleans silos

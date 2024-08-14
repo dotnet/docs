@@ -17,7 +17,7 @@ Raw string literals can span multiple lines:
 
 The following rules govern the interpretation of a multi-line raw string literal:
 
-- Both opening and closing quote characters must be on their own line.
+- The opening quotes must be the last non-comment token on its respective line, and the closing quote must be the first non-comment token on its respective line.
 - Any whitespace to the left of the closing quotes is removed from all lines of the raw string literal.
 - Whitespace following the opening quote on the same line is ignored.
 - Whitespace only lines following the opening quote are included in the string literal.

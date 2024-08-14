@@ -1,4 +1,4 @@
-revision: 3
+revision: 4
 schema-version: 1
 owner-ms-alias: adegeo
 
@@ -17,6 +17,13 @@ issues:
   unlabeled: "labeled"
   
   labeled:
+
+    # Temporary label to mark issues as updated for Quest. The label is instantly removed
+    - check:
+        - type: query
+          value: "length(Issue.labels[?name == ':world_map: mapQUEST']) != `0`"
+      pass:
+        - labels-remove: [":world_map: mapQUEST"]
 
     # Handle issues with /svc /subsvc labels from label bot
     # Manages the Not Triaged label for issues missing/having an org category issue

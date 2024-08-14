@@ -22,10 +22,11 @@ ms.author: enjieid
 | **Enabled by default**              | Yes                                                                |
 | **Default severity**                | Info                                                               |
 | **Introduced in version**           | 3.5.0                                                              |
+| **There is a code fix**             | No                                                                 |
 
 ## Cause
 
-Type contaning `[TestMethod]` should be marked with `[TestClass]`, otherwise the test method will be silently ignored.
+Type containing `[TestMethod]` should be marked with `[TestClass]`, otherwise the test method will be silently ignored.
 
 ## Rule description
 

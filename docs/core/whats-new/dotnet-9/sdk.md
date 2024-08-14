@@ -2,12 +2,12 @@
 title: What's new in the SDK for .NET 9
 description: Learn about the new .NET SDK features introduced in .NET 9.
 titleSuffix: ""
-ms.date: 06/11/2024
+ms.date: 07/10/2024
 ms.topic: whats-new
 ---
 # What's new in the SDK for .NET 9
 
-This article describes new features in the .NET SDK for .NET 9. It's been updated for .NET 9 Preview 5.
+This article describes new features in the .NET SDK for .NET 9. It's been updated for .NET 9 Preview 6.
 
 ## Unit testing
 
@@ -109,3 +109,20 @@ Build succeeded with 3 warning(s) in 0.8s
 The message lines of the warning no longer have the repeated project and location information that clutter the display. In addition, the build summary shows how many warnings (and errors, if there are any) were generated during the build.
 
 If you have feedback about the terminal logger, you can provide it in the [MSBuild repository](https://github.com/dotnet/msbuild/issues).
+
+## NuGet security audits
+
+Starting in .NET 8, `dotnet restore` [audits NuGet package references for known vulnerabilities](../../tools/dotnet-restore.md#audit-for-security-vulnerabilities). In .NET 9, the default mode has changed from auditing only *direct* package references to auditing both *direct* and *transitive* package references.
+
+## MSBuild script analyzers ("BuildChecks")
+
+.NET 9 introduces a feature that helps guard against defects and regressions in your build scripts. To run the build-check analyzers, add the `/analyze` flag to any command that invokes MSBuild. For example, `dotnet build myapp.sln /analyze` builds the `myapp` solution and runs all configured build checks.
+
+The following two BuildCheck rules are run:
+
+- [BC0101](../../tools/buildcheck-rules/bc0101.md)
+- [BC0102](../../tools/buildcheck-rules/bc0102.md)
+
+When a problem is detected, a diagnostic is produced in the build output for the project that contains the issue.
+
+For more information, see the [design documentation](https://github.com/dotnet/msbuild/blob/main/documentation/specs/proposed/BuildCheck.md).

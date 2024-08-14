@@ -88,3 +88,24 @@ class TestBus
     72 is starting its route 31.00 minutes after global start time 3:57 PM.
 */
 //</Snippet2>
+
+// <Singleton>
+public class Singleton
+{
+    // Static field initializer calls instance constructor.
+    private static Singleton instance = new Singleton();
+
+    private Singleton()
+    { 
+        Console.WriteLine("Executes before static constructor.");
+    }
+
+    static Singleton()
+    { 
+        Console.WriteLine("Executes after instance constructor.");
+    }
+
+    public static Singleton Instance => instance;
+}
+// </Singleton>
+

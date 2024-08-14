@@ -107,6 +107,7 @@ dotnet dev-certs https --trust
 Configure application secrets, for the certificate:
 
 ```console
+dotnet user-secrets -p aspnetapp\aspnetapp.csproj init
 dotnet user-secrets -p aspnetapp\aspnetapp.csproj set "Kestrel:Certificates:Development:Password" "crypticpassword"
 ```
 

@@ -20,7 +20,7 @@
             "ParentNodeId": 233465
         },
         {
-            "Label": "okr-health",
+            "Label": "okr-quality",
             "ParentNodeId": 237266
         },
         {
@@ -30,6 +30,18 @@
         {
             "Label": "dotnet-csharp/svc",
             "ParentNodeId": 227484
+        },
+        {
+            "Label": "sfi-ropc",
+            "ParentNodeId": 271716
+        },
+        {
+            "Label": "sfi-admin",
+            "ParentNodeId": 271716
+        },
+        {
+            "Label": "sfi-images",
+            "ParentNodeId": 286370
         }
     ],
     "DefaultParentNode": 227485,
@@ -37,6 +49,10 @@
         {
             "Label": ":checkered_flag: Release: .NET 9",
             "Tag": "new-feature"
+        },
+        {
+            "Label": "okr-curation",
+            "Tag": "content-curation"
         }
     ]
 }

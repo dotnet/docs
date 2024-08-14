@@ -1,7 +1,7 @@
 ---
 title: ADO.NET grain persistence
 description: Learn about ADO.NET grain persistence in .NET Orleans.
-ms.date: 03/15/2022
+ms.date: 07/03/2024
 ---
 
 # ADO.NET grain persistence

@@ -1,7 +1,7 @@
 ---
 title: Orleans streaming APIs
 description: Learn about the available streaming APIs for .NET Orleans.
-ms.date: 01/09/2024
+ms.date: 07/03/2024
 zone_pivot_groups: orleans-version
 ---
 

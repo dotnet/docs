@@ -15,11 +15,11 @@ At runtime, a credential chain attempts to authenticate using the sequence's fir
 
 :::image type="content" source="../media/mermaidjs/ChainSequence.svg" alt-text="Credential chain sequence diagram":::
 
-## Why to use a chained credential
+## Why use credential chains
 
 A chained credential can offer the following benefits:
 
-- **Environment awareness**: Automatically selects the most appropriate credential based on the environment in which the app is running. Without it, you'd have write code like this:
+- **Environment awareness**: Automatically selects the most appropriate credential based on the environment in which the app is running. Without it, you'd have to write code like this:
 
     :::code language="csharp" source="../snippets/authentication/credential-chains/Program.cs" id="snippet_NoChain":::
 
@@ -77,7 +77,7 @@ In the preceding code sample, `EnvironmentCredential` and `WorkloadIdentityCrede
 
 Note `InteractiveBrowserCredential` is excluded by default and therefore isn't shown in the preceding diagram.
 
-As more `Exclude`-prefixed properties are set to `true`, the advantages of using `DefaultAzureCredential` diminish. In such cases, `ChainedTokenCredential` is a better choice and requires less code. To illustrate, these two code samples behave the same way:
+As more `Exclude`-prefixed properties are set to `true` (credential exclusions are configured), the advantages of using `DefaultAzureCredential` diminish. In such cases, `ChainedTokenCredential` is a better choice and requires less code. To illustrate, these two code samples behave the same way:
 
 ### [DefaultAzureCredential](#tab/dac)
 

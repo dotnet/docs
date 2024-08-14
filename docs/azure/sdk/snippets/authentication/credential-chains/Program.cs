@@ -10,7 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 #region snippet_FilteredLogging
 using AzureEventSourceListener listener = new((args, message) =>
 {
-    if (args.EventSource.Name == "Azure-Identity")
+    if (args is { EventSource.Name: "Azure-Identity" })
     {
         Console.WriteLine(message);
     }

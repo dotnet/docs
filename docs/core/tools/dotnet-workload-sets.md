@@ -117,16 +117,6 @@ If you don't specify the workload set version in global.json, you can use the `-
 
 In manifests update mode, `restore` installs or updates workloads to the latest version of each individual workload.
 
-## Ignore workload sets
-
-To install, or update to, the latest version of each individual workload available on the configured feeds, select and use manifests update mode by running the workload `config` command:
-
-```dotnetcli
-dotnet workload config --update-mode manifests
-```
-
-In .NET 8.0.4xx SDK, manifests mode is the default. You need to select manifests mode explicitly only if you earlier explicitly selected workload set update mode.
-
 ## Check the update mode and version
 
 To see the current update mode, run the `config` command with the `--update-mode` option without an argument. For example:
@@ -158,6 +148,16 @@ dotnet workload --version
 ```output
 9.0.100-manifests.cf958b56
 ```
+
+## Ignore workload sets
+
+To install, or update to, the latest version of each individual workload available on the configured feeds, select and use manifests update mode by running the workload `config` command:
+
+```dotnetcli
+dotnet workload config --update-mode manifests
+```
+
+In .NET 8.0.4xx SDK, manifests mode is the default. You need to select manifests mode explicitly only if you earlier explicitly selected workload set update mode.
 
 ## Related content
 

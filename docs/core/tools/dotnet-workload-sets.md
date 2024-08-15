@@ -82,7 +82,7 @@ To update installed workloads to the latest workload set version available on th
    dotnet workload update
    ```
 
-   This command updates workloads to the latest workload set version, unless you have specified the workload set version in global.json.
+   In workload set update mode, this command updates workloads to the latest workload set version, unless you have specified the workload set version in global.json.
 
 ## Update to a workload set version
 
@@ -118,7 +118,7 @@ In manifests update mode, `restore` installs or updates workloads to the latest 
 
 ## Check the update mode and version
 
-To see the current update mode, run the `config` command with the `--update-mode` option without an argument. For example:
+To see the current update mode, run the `config` command with the `--update-mode` option without an argument. The mode is either workload-set` or `manifests`. For example:
 
 ```dotnetcli
 dotnet workload config --update-mode
@@ -160,6 +160,6 @@ In .NET 8.0.4xx SDK, manifests mode is the default. You need to select manifests
 
 ## Related content
 
-[dotnet workload command](dotnet-workload.md)
-[dotnet workload install](dotnet-workload-install.md)
-[dotnet workload update](dotnet-workload-update.md)
+* [dotnet workload command](dotnet-workload.md)
+* [dotnet workload install](dotnet-workload-install.md)
+* [dotnet workload update](dotnet-workload-update.md)

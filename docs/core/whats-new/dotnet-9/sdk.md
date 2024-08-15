@@ -1,13 +1,13 @@
 ---
 title: What's new in the SDK for .NET 9
-description: Learn about the new .NET SDK features introduced in .NET 9.
+description: Learn about the new .NET SDK features introduced in .NET 9, including for unit testing, terminal logger, tool roll-forward, and build script analyzers.
 titleSuffix: ""
-ms.date: 07/10/2024
+ms.date: 08/15/2024
 ms.topic: whats-new
 ---
 # What's new in the SDK for .NET 9
 
-This article describes new features in the .NET SDK for .NET 9. It's been updated for .NET 9 Preview 6.
+This article describes new features in the .NET SDK for .NET 9. It's been updated for .NET 9 Preview 7.
 
 ## Unit testing
 
@@ -126,3 +126,62 @@ The following two BuildCheck rules are run:
 When a problem is detected, a diagnostic is produced in the build output for the project that contains the issue.
 
 For more information, see the [design documentation](https://github.com/dotnet/msbuild/blob/main/documentation/specs/BuildCheck/BuildCheck.md).
+
+## Analyzer mismatch
+
+Many users install the .NET SDK and Visual Studio at different cadences. While this flexibility is desirable, it can lead to problems for tooling that needs to interop between the two environments. One example of this kind of tooling is Roslyn Analyzers. Analyzer authors have to code for specific versions of Roslyn, but which versions are available and which is used by a given build is sometimes unclear.
+
+This kind of version mismatch between the .NET SDK and MSBuild is referred to as a *torn SDK*. When you're in this state, you might see errors like this:
+
+> CSC : warning CS9057: The analyzer assembly '..\dotnet\sdk\8.0.200\Sdks\Microsoft.NET.Sdk.Razor\source-generators\Microsoft.CodeAnalysis.Razor.Compiler.SourceGenerators.dll' references version '4.9.0.0' of the compiler, which is newer than the currently running version '4.8.0.0'.
+
+.NET 9 can detect and automatically adjust for this problem scenario. The SDK's MSBuild logic embeds the version of MSBuild it shipped with, and that information can be used to detect when the SDK is running in an environment with a different version. When that happens, the SDK inserts an implicit download of a support package called Microsoft.Net.Sdk.Compilers.Toolset that ensures a consistent analyzer experience.
+
+## Workload sets
+
+*Workload sets* is an SDK feature intended to give users more control over the workloads they install and the cadence of change of those workloads. In previous versions, workloads would periodically be updated as new versions of individual workloads were released onto any configured NuGet feeds. Now, *all* of your workloads will stay at a specific, single version until you make an explicit update gesture.
+
+You can see what mode your SDK installation is in by running `dotnet workload --info`:
+
+```dotnetcli
+> dotnet workload --info
+Workload version: 9.0.100-manifests.400dd185
+Configured to use loose manifests when installing new manifests.
+ [aspire]
+   Installation Source: VS 17.10.35027.167, VS 17.11.35111.106
+   Manifest Version:    8.0.2/8.0.100
+   Manifest Path:       C:\Program Files\dotnet\sdk-manifests\8.0.100\microsoft.net.sdk.aspire\8.0.2\WorkloadManifest.json
+   Install Type:              Msi
+```
+
+In this example, the SDK installation is in 'manifest' mode, where updates are installed as they're available. To opt into the new mode, add a `--version` option to a `dotnet workload install` or `dotnet workload update` command. You can also explicitly control your mode of operation using the new `dotnet workload config` command:
+
+```dotnetcli
+> dotnet workload config --update-mode workload-set
+Successfully updated workload install mode to use workload-set.
+```
+
+If you need to change back for any reason, you can run the same command with `manifests` instead of `workload-set`. You can also use `dotnet workload config --update-mode` to check the current mode of operation.
+
+<!-- Add link to ../../tools/dotnet-workload-sets.md -->
+
+## Containers
+
+- [Publishing support for insecure registries](#publishing-support-for-insecure-registries)
+- [Environment variable naming](#environment-variable-naming)
+
+### Publishing support for insecure registries
+
+The SDK's built-in container publishing support can publish images to container registries. Until .NET 9, those registries were required to be secured&mdash;for the .NET SDK to work, they needed HTTPS support and valid certificates. Container engines can usually be configured to work with insecure registries as well, that is, registries that don't have TLS configured, or have TLS configured with a certificate that's invalid. This is a valid use case, but our tooling didn't support this mode of communication.
+
+Starting in .NET 9, the SDK can communicate with insecure registries.
+
+Requirements (depending on your environment):
+
+- Configure the Docker CLI to mark a registry as insecure.
+- Configure Podman to mark a registry as insecure.
+- Use the `DOTNET_CONTAINER_INSECURE_REGISTRIES` environment variable to pass a semicolon-delimited list of registry domains to treat as insecure.
+
+### Environment variable naming
+
+Environment variables that the container publish tooling uses to control some of the finer aspects of registry communication and security now start with the prefix `DOTNET` instead of `SDK`. The `SDK` prefix will continue to be supported in the near term.

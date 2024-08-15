@@ -20,6 +20,10 @@ ReadOnlySpan<byte> bytes = ...;
 string encoded = Base64Url.EncodeToString(bytes);
 ```
 
+## BinaryFormatter
+
+.NET 9 removes  <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> from the .NET runtime. The APIs are still present, but their implementations always throw an exception, regardless of project type. For more information about the removal and your options if you're affected, see [BinaryFormatter migration guide](../../../standard/serialization/binaryformatter-migration-guide/index.md).
+
 ## Collections
 
 The collection types in .NET gain the following updates for .NET 9:

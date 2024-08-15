@@ -15,8 +15,7 @@ ms.date: 08/02/2024
 
 The *workload sets* feature provides a version number that represents a group of .NET SDK workloads. The [install](dotnet-workload-install.md), [update](dotnet-workload-update.md), and [restore](dotnet-workload-restore.md) commands use this number in *workload set update mode* to provide the following benefits:
 
-* You control the cadence of change for installed workload versions. The alternative mode of operation without using workload sets is called *loose manifests update mode*. In this mode, workloads are updated automatically as new versions of individual workloads are released onto any configured NuGet feeds. In workload set update mode, workloads stay at a specific workload set version until you explicitly change that version. This mode of operation provides the following benefits:
-
+* You control the cadence of change for installed workload versions. The alternative mode of operation without using workload sets is called *loose manifests update mode*. In this mode, workloads are updated automatically as new versions of individual workloads are released onto any configured NuGet feeds. In workload set update mode, workloads stay at a specific workload set version until you explicitly change that version.
 * You can install and update a combination of workload versions that ship at the same time and are known to work together.
 * You can ensure that everyone on your team is always working on the same workload versions.
 * You don't have to use a rollback file to specify what workload version you want to be on.

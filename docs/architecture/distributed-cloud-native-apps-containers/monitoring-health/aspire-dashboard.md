@@ -8,11 +8,11 @@ ms.date: 04/06/2022
 
 [!INCLUDE [download-alert](../includes/download-alert.md)]
 
-You can use the .NET Aspire dashboard as your development and test watchdog to monitor the various aspects of your .NET app. This includes detailed information about logs, traces, and environment configuration. All in real-time.
+You can use the .NET Aspire dashboard as your development and test watchdog to monitor the various aspects of your .NET cloud-native app. This includes detailed information about logs, traces, and environment configuration in real-time.
 
 The dashboard is available after you add .NET Aspire to your solution. The dashboard launches automatically alongside your other services when you start your solution. On initial launch, it shows the .NET Aspire app's resources:
 
-![A screenshot of the dashboard.](media/aspire-dashboard-projects.png)
+![A screenshot of the .NET Aspire dashboard.](media/aspire-dashboard-projects.png)
 
 **Figure 10-9**. The .NET Aspire dashboard.
 
@@ -26,11 +26,11 @@ There are five main sections in the dashboard:
 
 ## Standalone mode
 
-You can also launch the dashboard in standalone mode, to use it with any .NET app that you've added OpenTelemetry instrumentation too. That's because it's made available as a Docker image.
+You can also launch the dashboard in standalone mode, to use it with any .NET app that you've added OpenTelemetry instrumentation to. That's because it's made available as a Docker image.
 
 The standalone dashboard is meant to be used during development or as a short-term diagnostic tool. The reason is that the dashboard persists telemetry in-memory, so data isn't persisted between restarts.
 
-Data shown in the dashboard can potentially be sensitive. For instance, configuration can include secrets in environment variables,  telemetry can show sensitive runtime information, and more.
+Data shown in the dashboard can potentially be sensitive. For instance, configuration can include secrets in environment variables, telemetry can show sensitive runtime information, and more.
 
 To block untrusted services or apps from sending unauthorized or malicious telemetry to your dashboard, your OpenTelemetry endpoint is automatically secured when you use the dashboard as part of the .NET Aspire stack. However, when using standalone mode, you'll need to configure this yourself by running the following command:
 

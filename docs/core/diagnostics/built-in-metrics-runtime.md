@@ -48,7 +48,7 @@ Available starting in: .NET 9.0.
 |---|---|---|---|---|
 | `dotnet.gc.heap.generation` | string | Name of the maximum managed heap generation being collected. | `gen0`; `gen1`; `gen2` | Always |
 
-The .NET GC is a generational garbage collector. Each time the garbage collector runs it uses heuristics to select a maximum generation and then collects objects in all generations up to the selected maximum. For example a `gen1` collection collects all objects in generations 0 and 1. A `gen2` collection collects all objects in generations 0, 1, and 2. For more information about the .NET GC and generational garbage collection see the [.NET Garbage collection guide](/standard/garbage-collection/fundamentals.md#generations).
+The .NET GC is a generational garbage collector. Each time the garbage collector runs, it uses heuristics to select a maximum generation and then collects objects in all generations up to the selected maximum. For example, a `gen1` collection collects all objects in generations 0 and 1. A `gen2` collection collects all objects in generations 0, 1, and 2. For more information about the .NET GC and generational garbage collection, see the [.NET garbage collection guide](../../standard/garbage-collection/fundamentals.md#generations).
 
 Available starting in: .NET 9.0.
 
@@ -56,9 +56,9 @@ Available starting in: .NET 9.0.
 
 | Name | Instrument Type | Unit (UCUM) | Description |
 | ---- | --------------- | ----------- | ----------- |
-| `dotnet.gc.heap.total_allocated` | Counter | `By` | The *approximate* number of bytes allocated on the managed GC heap since the process has started. The returned value does not include any native allocations. |
+| `dotnet.gc.heap.total_allocated` | Counter | `By` | The *approximate* number of bytes allocated on the managed GC heap since the process started. The returned value does not include any native allocations. |
 
-This metric reports the same values as calling <xref:System.GC.GetTotalAllocatedBytes%2A?displayProperty=nameWithType>. For more information about the .NET GC see the [.NET Garbage collection guide](/standard/garbage-collection/fundamentals.md).
+This metric reports the same values as calling <xref:System.GC.GetTotalAllocatedBytes%2A?displayProperty=nameWithType>. For more information about the .NET GC, see the [.NET garbage collection guide](../../standard/garbage-collection/fundamentals.md).
 
 Available starting in: .NET 9.0.
 
@@ -68,7 +68,7 @@ Available starting in: .NET 9.0.
 | ---- | --------------- | ----------- | ----------- |
 | `dotnet.gc.last_collection.memory.committed_size` | UpDownCounter | `By` | The amount of committed virtual memory in use by the .NET GC, as observed during the latest garbage collection. |
 
-This metric reports the same values as calling <xref:System.GCMemoryInfo.TotalCommittedBytes?displayProperty=nameWithType>. Committed virtual memory may be larger than the heap size because it includes both memory for storing existing objects (the heap size) and some extra memory that is ready to handle newly allocated objects in the future. For more information about the .NET GC see the [.NET Garbage collection guide](/standard/garbage-collection/fundamentals.md).
+This metric reports the same values as calling <xref:System.GCMemoryInfo.TotalCommittedBytes?displayProperty=nameWithType>. Committed virtual memory may be larger than the heap size because it includes both memory for storing existing objects (the heap size) and some extra memory that is ready to handle newly allocated objects in the future. For more information about the .NET GC, see the [.NET garbage collection guide](../../standard/garbage-collection/fundamentals.md).
 
 Available starting in: .NET 9.0.
 
@@ -84,10 +84,10 @@ Available starting in: .NET 9.0.
 
 The .NET GC divides the heap into generations. In addition to the standard numbered generations, the GC also puts some objects into two special generations:
 
-- Large Object Heap (loh) stores .NET objects that are very large compared to typical objects.
-- Pinned Object Heap (poh) stores objects allocated using the <xref:System.GC.AllocateArray%2A?displayProperty=nameWithType> API when the `pinned` parameter is true.
+- Large object heap (LOH) stores .NET objects that are very large compared to typical objects.
+- Pinned object heap (POH) stores objects allocated using the <xref:System.GC.AllocateArray%2A?displayProperty=nameWithType> API when the `pinned` parameter is true.
 
-Both of these special generations are collected during `gen2` GC collections. For more information about the .NET GC see the [.NET Garbage collection guide](/standard/garbage-collection/fundamentals.md).
+Both of these special generations are collected during `gen2` GC collections. For more information about the .NET GC, see the [.NET Garbage collection guide](../../standard/garbage-collection/fundamentals.md).
 
 Available starting in: .NET 9.0.
 
@@ -99,7 +99,7 @@ Available starting in: .NET 9.0.
 
 This metric reports the same values as calling <xref:System.GCGenerationInfo.FragmentationAfterBytes?displayProperty=nameWithType>.
 
-When .NET objects are allocated, initially they tend to be layed out contiguously in memory. However if some of those objects are later collected by the GC this creates gaps of unused memory between the live objects that remain. These gaps represent the portion of the GC heap that is not currently being used to store objects, often called "fragmentation."  The GC can reuse the fragmentation bytes in the future for new object allocations if the object size is small enough to fit in one of the gaps. The GC can also perform a special compacting garbage collection that moves remaining live objects next to each other as long as the objects haven't been pinned in place.
+When .NET objects are allocated, initially they tend to be laid out contiguously in memory. However, if some of those objects are later collected by the GC, this creates gaps of unused memory between the live objects that remain. These gaps represent the portion of the GC heap that's not currently being used to store objects, often called "fragmentation."  The GC can reuse the fragmentation bytes in the future for new object allocations if the object size is small enough to fit in one of the gaps. The GC can also perform a special compacting garbage collection that moves remaining live objects next to each other as long as the objects haven't been pinned in place.
 
 For more information about how the .NET GC works, analyzing GC performance, and what role fragmentation plays, see [.NET memory performance analysis](https://github.com/Maoni0/mem-doc/blob/master/doc/.NETMemoryPerformanceAnalysis.md).
 
@@ -109,11 +109,11 @@ Available starting in: .NET 9.0.
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
-| `dotnet.gc.pause.time` | Counter | `s` | The total amount of time paused in GC since the process has started. |
+| `dotnet.gc.pause.time` | Counter | `s` | The total amount of time paused in GC since the process started. |
 
 This metric reports the same values as calling <xref:System.GC.GetTotalPauseDuration?displayProperty=nameWithType>.
 
-Each time the .NET GC does a collection it needs to briefly pause all threads running managed code to determine which objects are still referenced. This metric reports the sum of all these pause times since the process began. This can be used to determine what fraction of time threads spend paused for GC vs. the time they are able to run managed code.
+Each time the .NET GC does a collection it needs to briefly pause all threads running managed code to determine which objects are still referenced. This metric reports the sum of all these pause times since the process began. You can use this metric to determine what fraction of time threads spend paused for GC versus the time they're able to run managed code.
 
 Available starting in: .NET 9.0.
 
@@ -121,13 +121,13 @@ Available starting in: .NET 9.0.
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
-| `dotnet.jit.compiled_il.size` | Counter | `By` | Count of bytes of intermediate language that have been compiled since the process has started. |
+| `dotnet.jit.compiled_il.size` | Counter | `By` | Count of bytes of intermediate language that have been compiled since the process started. |
 
 This metric reports the same values as calling <xref:System.Runtime.JitInfo.GetCompiledILBytes%2A?displayProperty=nameWithType>.
 
-Managed code is initally compiled from a high level language like C#, VB, or F# into [Intermediate language](/standard/managed-code.md#intermediate-language--execution) (IL) when a .NET application is built. Then when the program is run the .NET just-in-time (JIT) compiler converts the IL into machine code.
+When you build a .NET app, managed code is initially compiled from a high-level language like C#, VB, or F# into [Intermediate language](../../standard/managed-code.md#intermediate-language--execution) (IL). Then when the program is run, the .NET just-in-time (JIT) compiler converts the IL into machine code.
 
-Since JIT compilation occurs the first time a method runs most JIT compilation tends to occur during application startup. Reducing the amount of IL that is JIT compiled can improve application startup time.
+Since JIT compilation occurs the first time a method runs, most JIT compilation tends to occur during application startup. Reducing the amount of IL that is JIT compiled can improve application startup time.
 
 Available starting in: .NET 9.0.
 
@@ -135,13 +135,13 @@ Available starting in: .NET 9.0.
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
-| `dotnet.jit.compiled_methods` | Counter | `{method}` | The number of times the JIT compiler (re)compiled methods since the process has started. |
+| `dotnet.jit.compiled_methods` | Counter | `{method}` | The number of times the JIT compiler (re)compiled methods since the process started. |
 
 This metric reports the same values as calling <xref:System.Runtime.JitInfo.GetCompiledMethodCount%2A?displayProperty=nameWithType>.
 
-Managed code is initally compiled from a high level language like C#, VB, or F# into [Intermediate language](/standard/managed-code.md#intermediate-language--execution) (IL) when a .NET application is built. Then when the program is run the .NET just-in-time (JIT) compiler converts the IL into machine code.
+When you build a .NET app, managed code is initially compiled from a high-level language like C#, VB, or F# into [Intermediate language](../../standard/managed-code.md#intermediate-language--execution) (IL). Then when the program is run, the .NET just-in-time (JIT) compiler converts the IL into machine code.
 
-Since JIT compilation occurs the first time a method runs most JIT compilation tends to occur during application startup. Reducing the number of methods that need to be JIT compiled can improve application startup time.
+Since JIT compilation occurs the first time a method runs, most JIT compilation tends to occur during application startup. Reducing the number of methods that need to be JIT compiled can improve application startup time.
 
 Available starting in: .NET 9.0.
 
@@ -149,13 +149,13 @@ Available starting in: .NET 9.0.
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
-| `dotnet.jit.compilation.time` | Counter | `s` | The amount of time the JIT compiler has spent compiling methods since the process has started. |
+| `dotnet.jit.compilation.time` | Counter | `s` | The amount of time the JIT compiler has spent compiling methods since the process started. |
 
 This metric reports the same values as calling <xref:System.Runtime.JitInfo.GetCompilationTime%2A?displayProperty=nameWithType>.
 
-Managed code is initally compiled from a high level language like C#, VB, or F# into [Intermediate language](/standard/managed-code.md#intermediate-language--execution) (IL) when a .NET application is built. Then when the program is run the .NET just-in-time (JIT) compiler converts the IL into machine code.
+When you build a .NET app, managed code is initially compiled from a high-level language like C#, VB, or F# into [Intermediate language](../../standard/managed-code.md#intermediate-language--execution) (IL). Then when the program is run, the .NET just-in-time (JIT) compiler converts the IL into machine code.
 
-Since JIT compilation occurs the first time a method runs most JIT compilation tends to occur during application startup. Reducing the time spent JIT compiling can improve application startup time.
+Since JIT compilation occurs the first time a method runs, most JIT compilation tends to occur during application startup. Reducing the time spent JIT compiling can improve application startup time.
 
 Available starting in: .NET 9.0.
 
@@ -167,7 +167,7 @@ Available starting in: .NET 9.0.
 
 This metric reports the same values as calling <xref:System.Threading.ThreadPool.ThreadCount?displayProperty=nameWithType>.
 
-.NET uses a [Threadpool](/standard/threading/the-managed-thread-pool.md) to schedule work items onto other threads. This metric provides the number of worker threads currently managed by that threadpool.
+.NET uses a [thread pool](../../standard/threading/the-managed-thread-pool.md) to schedule work items onto other threads. This metric provides the number of worker threads currently managed by that thread pool.
 
 Available starting in: .NET 9.0.
 
@@ -175,11 +175,11 @@ Available starting in: .NET 9.0.
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
-| `dotnet.thread_pool.work_item.count` | Counter | `{work_item}` | The number of work items that the thread pool has completed since the process has started. |
+| `dotnet.thread_pool.work_item.count` | Counter | `{work_item}` | The number of work items that the thread pool has completed since the process started. |
 
 This metric reports the same values as calling <xref:System.Threading.ThreadPool.CompletedWorkItemCount?displayProperty=nameWithType>.
 
-.NET uses a [Threadpool](/standard/threading/the-managed-thread-pool.md) to schedule work items onto other threads. This metric provides the number of work items that have been executed by the threadpool threads.
+.NET uses a [thread pool](../../standard/threading/the-managed-thread-pool.md) to schedule work items onto other threads. This metric provides the number of work items that have been executed by the thread pool threads.
 
 Available starting in: .NET 9.0.
 
@@ -191,7 +191,7 @@ Available starting in: .NET 9.0.
 
 This metric reports the same values as calling <xref:System.Threading.ThreadPool.PendingWorkItemCount?displayProperty=nameWithType>.
 
-.NET uses a [Threadpool](/standard/threading/the-managed-thread-pool.md) to schedule work items onto other threads. This metric provides the number of work items that are currently queued to be executed by one of the threadpool threads.
+.NET uses a [thread pool](../../standard/threading/the-managed-thread-pool.md) to schedule work items onto other threads. This metric provides the number of work items that are currently queued to be executed by one of the thread pool threads.
 
 Available starting in: .NET 9.0.
 
@@ -199,11 +199,11 @@ Available starting in: .NET 9.0.
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
-| `dotnet.monitor.lock_contentions` | Counter | `{contention}` | The number of times there was contention when trying to acquire a monitor lock since the process has started. |
+| `dotnet.monitor.lock_contentions` | Counter | `{contention}` | The number of times there was contention when trying to acquire a monitor lock since the process started. |
 
 This metric reports the same values as calling <xref:System.Threading.Monitor.LockContentionCount?displayProperty=nameWithType>.
 
-.NET supports using any managed object as a lock, either using APIs such as <xref:System.Threading.Monitor.Enter%2A?displayProperty=nameWithType> or using the [lock statement](/csharp/language-reference/statements/lock.md). If one thread is already holding a lock while a 2nd thread tries to acquire it at the same time, this is called lock contention.
+.NET supports using any managed object as a lock, either with APIs such as <xref:System.Threading.Monitor.Enter%2A?displayProperty=nameWithType> or with the [lock statement](../../csharp/language-reference/statements/lock.md). If one thread already holds a lock while a second thread tries to acquire it, this is called _lock contention_.
 
 Available starting in: .NET 9.0.
 

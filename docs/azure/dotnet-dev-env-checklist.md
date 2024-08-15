@@ -40,7 +40,7 @@ These additional tools are designed to make you more productive when working wit
 * [Install Azure PowerShell](/powershell/azure/install-az-ps) if you plan on using PowerShell scripts to create and manage Azure resources.
 * [Install Azure Developer CLI](/azure/developer/azure-developer-cli/overview) if you plan on using the Developer CLI to streamline development workflows.
 * [Install Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/) to upload, download, and manage data in Azure storage resources including blobs, queues, tables, and CosmosDB.
-* [Install Azure Data Studio](/sql/azure-data-studio/download-azure-data-studio) if you are working with Azure SQL. Azure Data Studio also supports other database options such as MySQL, PostgreSQL, and Azure Cosmos DB through extensions.
+* [Install Azure Data Studio](/sql/azure-data-studio/download-azure-data-studio) if you are working with Azure SQL. Azure Data Studio extensions also provide support for other database options such as MySQL, PostgreSQL, and Azure Cosmos DB.
 
 ## Bookmark the following sites
 

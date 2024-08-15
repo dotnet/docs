@@ -37,7 +37,7 @@ Azure Storage Explorer is a free, GUI tool for managing storage resources and da
 
 ## Azure Data Studio
 
-Azure Data Studio is a cross-platform database tool for accessing both on-premises and cloud databases. It allows you to edit and execute SQL queries in addition to charting and visualizing result sets. It supports all versions of SQL Server from SQL Server 2014 and later and Azure SQL. Azure Data studio also supports other databases such as MySQL and Azure Cosmos DB through extensions. If you plan to work with Azure SQL, download and install Azure Data Studio.
+Azure Data Studio is a cross-platform database tool for accessing both on-premises and cloud databases. It allows you to edit and execute SQL queries in addition to charting and visualizing result sets. It supports all versions of SQL Server from SQL Server 2014 and later and Azure SQL. Azure Data Studio extensions also provide support for other database options such as MySQL, PostgreSQL, and Azure Cosmos DB. If you plan to work with Azure SQL, download and install Azure Data Studio.
 
 > [!div class="nextstepaction"]
 > [Download Azure Data Studio](/sql/azure-data-studio/download-azure-data-studio)

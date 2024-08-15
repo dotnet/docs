@@ -131,11 +131,11 @@ For more information, see the [design documentation](https://github.com/dotnet/m
 
 Many users install the .NET SDK and Visual Studio at different cadences. While this flexibility is desirable, it can lead to problems for tooling that needs to interop between the two environments. One example of this kind of tooling is Roslyn Analyzers. Analyzer authors have to code for specific versions of Roslyn, but which versions are available and which is used by a given build is sometimes unclear.
 
-This kind of version mismatch between the .NET SDK and MSBuild is referred to as a *torn SDK*. When you're in this torn state, you might see errors like this:
+This kind of version mismatch between the .NET SDK and MSBuild is referred to as a *torn SDK*. When you're in this state, you might see errors like this:
 
 > CSC : warning CS9057: The analyzer assembly '..\dotnet\sdk\8.0.200\Sdks\Microsoft.NET.Sdk.Razor\source-generators\Microsoft.CodeAnalysis.Razor.Compiler.SourceGenerators.dll' references version '4.9.0.0' of the compiler, which is newer than the currently running version '4.8.0.0'.
 
-.NET 9 can detect and automatically adjust for this torn state. The SDK's MSBuild logic embeds the version of MSBuild it shipped with, and that information can be used to detect when the SDK is running in an environment with a different version. When that happens, the SDK inserts an implicit download of a support package called Microsoft.Net.Sdk.Compilers.Toolset that ensures a consistent analyzer experience.
+.NET 9 can detect and automatically adjust for this problem scenario. The SDK's MSBuild logic embeds the version of MSBuild it shipped with, and that information can be used to detect when the SDK is running in an environment with a different version. When that happens, the SDK inserts an implicit download of a support package called Microsoft.Net.Sdk.Compilers.Toolset that ensures a consistent analyzer experience.
 
 ## Workload sets
 

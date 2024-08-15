@@ -17,7 +17,7 @@ New for .NET 9, the engineering team posts .NET 9 preview updates on [GitHub Dis
 
 The .NET 9 runtime includes a new attribute model for feature switches with trimming support. The new attributes make it possible to define [feature switches](https://github.com/dotnet/designs/blob/main/accepted/2020/feature-switch.md) that libraries can use to toggle areas of functionality.
 
-Garbage collection includes a *dynamic adaptation to application size* feature.
+Garbage collection includes a *dynamic adaptation to application size* feature that's used by default instead of Server GC.
 
 The runtime also includes numerous performance improvements, including loop optimizations, inlining, and Arm64 vectorization and code generation.
 

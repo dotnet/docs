@@ -75,7 +75,7 @@ To update installed workloads to the latest workload set version available on th
    ```
 
    The preceding command is necessary only if you are currently in manifests update mode. If that isn't known, [check the current update mode](#check-the-update-mode-and-version). Workload set update mode is the default starting in .NET 9 SDK.
-[Check the update mode and version](#check-the-update-mode-and-version)
+
 1. ```dotnetcli
    dotnet workload update
    ```
@@ -87,7 +87,7 @@ To update installed workloads to the latest workload set version available on th
 To specify a workload set version to update to, use the `--version` option of the `update` command. For example:
 
 ```dotnetcli
-dotnet workload update --version 9.0.100-preview.7.24407.1
+dotnet workload update --version 8.0.400
 ```
 
 In both cases, workload set update mode will be selected if it wasn't already selected.

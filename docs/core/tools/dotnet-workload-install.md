@@ -27,12 +27,12 @@ dotnet workload install -?|-h|--help
 
 The `dotnet workload install` command installs one or more *optional workloads*. Optional workloads can be installed on top of the .NET SDK to provide support for various application types, such as [.NET MAUI](/dotnet/maui/what-is-maui) and [Blazor WebAssembly AOT](https://devblogs.microsoft.com/aspnet/asp-net-core-updates-in-net-6-preview-4/#blazor-webassembly-ahead-of-time-aot-compilation).
 
-When the command is in workload set install mode,  workload versions installed are:
+When the command is in workload-set update mode, workload versions installed:
 
-* From the latest workload set or a specified workload set version.
+* Are from the latest workload set or a specified workload-set version.
 * Might not be the latest version available of each individual workload.
 
-For more information, see [.NET SDK workload sets](dotnet-workload-sets.md). Workload set install mode is available since 8.0.400 SDK.
+For more information, see [.NET SDK workload sets](dotnet-workload-sets.md). workload-set install mode is available since 8.0.400 SDK.
 
 Use [dotnet workload search](dotnet-workload-search.md) to learn what workloads are available to install.
 

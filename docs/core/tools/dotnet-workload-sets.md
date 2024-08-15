@@ -39,6 +39,7 @@ And you can still choose to install or update to the latest version of each indi
   In 8.0.400 SDK, the `dotnet workload` commands are in workload set update mode only when it's explicitly selected. Starting in [.NET 9 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/9.0), `dotnet workload` commands are in workload set update mode by default.
 
 ## "Pin" the install command
+<!--If this heading changes, update the link in \docs\includes\cli-version.md-->
 
 A `dotnet workload install` command with the `--version` option "pins" the `install` command in workload set update mode with the specified workload set version. The command no longer automatically installs the newest workload based on loose manifests. For example:
 
@@ -57,11 +58,11 @@ A `dotnet workload install` command with the `--version` option "pins" the `inst
    dotnet workload install maui-ios
    ```
 
-   This command installs the workload set version `9.0.100-preview.7.24407.1`, since the precedingnstall command example pinned that workload set.
+   This command installs the workload set version `9.0.100-preview.7.24407.1`, since the preceding `install` command example pinned that workload set.
 
 Using `--version` with either `install` or `update` pins `install` to the specified version, but `update` is only pinned to workload set update mode, not to a workload set version. If you then run `dotnet workload update` without the `--version` option, the `update` command:
 
-* Updates wworkloads to the latest available workload set version.
+* Updates workloads to the latest available workload set version.
 * "Unpins" the `install` command.
 * Stays in workload set update mode.
 

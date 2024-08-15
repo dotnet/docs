@@ -125,4 +125,4 @@ The following two BuildCheck rules are run:
 
 When a problem is detected, a diagnostic is produced in the build output for the project that contains the issue.
 
-For more information, see the [design documentation](https://github.com/dotnet/msbuild/blob/main/documentation/specs/proposed/BuildCheck.md).
+For more information, see the [design documentation](https://github.com/dotnet/msbuild/blob/main/documentation/specs/BuildCheck/BuildCheck.md).

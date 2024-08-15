@@ -38,3 +38,12 @@ System.Console.Write(student.Name);  // the get accessor is invoked here
 //</SetAccessor>
 
 HidingExample.TestHiding.Test();
+
+var initOnly = new VersionNinePoint1.Person();
+
+// <SnippetInitialize>
+var aPerson = new VersionNinePoint2.Person("John");
+aPerson = new VersionNinePoint2.Person{ FirstName = "John"};
+// Error CS9035: Required member `Person.FirstName` must be set:
+//aPerson2 = new VersionNinePoint2.Person();
+// </SnippetInitialize>

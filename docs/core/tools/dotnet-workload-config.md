@@ -1,7 +1,7 @@
 ---
 title: dotnet workload config command
 description: "The `dotnet workload config` command selects workload set update mode or manifests update mode. It can also display the currently selected update mode."
-ms.date: 09/10/2021
+ms.date: 08/15/2024
 ---
 # dotnet workload config
 
@@ -9,7 +9,7 @@ ms.date: 09/10/2021
 
 ## Name
 
-`dotnet workload config` - Enables or disables workload set update mode.
+`dotnet workload config` - Enables or disables workload-set update mode.
 
 ## Synopsis
 
@@ -30,17 +30,17 @@ For more information about the `dotnet workload config` command, see [.NET SDK w
 
 - **`--update-mode [<workload-set>|<manifests>]`**
 
-  Controls whether updates look for workload set versions or workload versions. To display the current mode, specify this option without an argument. For more information, see [.NET SDK workload sets](dotnet-workload-sets.md).
+  Controls whether updates look for workload-set versions or workload versions. To display the current mode, specify this option without an argument. For more information, see [.NET SDK workload sets](dotnet-workload-sets.md).
 
 ## Examples
 
-- Enable workload set update mode:
+- Enable workload-set update mode:
 
   ```dotnetcli
   dotnet workload config --update-mode workload-set
   ```
 
-- Disable workload set update mode:
+- Disable workload-set update mode:
 
   ```dotnetcli
   dotnet workload config --update-mode manifests

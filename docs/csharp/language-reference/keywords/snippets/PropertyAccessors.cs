@@ -7,7 +7,7 @@ class TimePeriod
 
     public double Seconds
     {
-        get { return _seconds }
+        get { return _seconds; }
         set
         {
             if (value < 0)

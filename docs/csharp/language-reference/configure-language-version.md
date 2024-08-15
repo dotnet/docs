@@ -42,9 +42,9 @@ To configure multiple projects, you can create a *Directory.Build.props* file, t
 </Project>
 ```
 
-## C# language version reference
-
 Builds in all subdirectories of the directory containing that file now use the preview C# version. For more information, see [Customize your build](/visualstudio/msbuild/customize-your-build).
+
+## C# language version reference
 
 The following table shows all current C# language versions. Older compilers might not understand every value. If you install the latest .NET SDK, you have access to everything listed.
 

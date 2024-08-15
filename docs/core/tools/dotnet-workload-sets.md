@@ -130,6 +130,10 @@ To see the current update mode, run the `config` command with the `--update-mode
 dotnet workload config --update-mode
 ```
 
+```output
+workload-set
+```
+
 To see the current workload set version, run `dotnet workload --version`.  If a workload set is installed, you see a version such as 9.0.100-preview.7.24407.1 or 8.0.401. For example:
 
 ```dotnetcli

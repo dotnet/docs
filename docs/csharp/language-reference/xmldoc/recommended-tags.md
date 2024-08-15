@@ -1,7 +1,7 @@
 ---
-title: "Recommended XML documentation tags for a class and its members"
-description: This article provides the syntax and definitions for recommended tags for XML documentation.
-ms.date: 07/12/2021
+title: "Recommended XML documentation tags"
+description: This article provides the syntax and definitions for recommended tags on types, and their members for XML documentation.
+ms.date: 08/15/2024
 f1_keywords:
   - "<summary>"
   - "summary"
@@ -101,18 +101,18 @@ What follows are some recommendations, general use case scenarios, and things th
 - Private members can also be documented using XML comments. However, it exposes the inner (potentially confidential) workings of your library.
 - At a bare minimum, types and their members should have a `<summary>` tag.
 - Documentation text should be written using complete sentences ending with full stops.
-- Partial classes are fully supported, and documentation information will be concatenated into a single entry for each type.
+- Partial classes are fully supported, and documentation information is concatenated into a single entry for each type. If both declarations of a partial member have documentation comments, the comments on the implementing declaration are written to the output XML.
 
 XML documentation starts with `///`. When you create a new project, the templates put some starter `///` lines in for you. The processing of these comments has some restrictions:
 
-- The documentation must be well-formed XML. If the XML isn't well formed, the compiler generates a warning. The documentation file will contain a comment that says that an error was encountered.
+- The documentation must be well-formed XML. If the XML isn't well formed, the compiler generates a warning. The documentation file contains a comment that says that an error was encountered.
 - Some of the recommended tags have special meanings:
   - The `<param>` tag is used to describe parameters. If used, the compiler verifies that the parameter exists and that all parameters are described in the documentation. If the verification fails, the compiler issues a warning.
   - The `cref` attribute can be attached to any tag to reference a code element. The compiler verifies that this code element exists. If the verification fails, the compiler issues a warning. The compiler respects any `using` directives when it looks for a type described in the `cref` attribute.
   - The `<summary>` tag is used by IntelliSense inside Visual Studio to display additional information about a type or member.
     > [!NOTE]
     > The XML file does not provide full information about the type and members (for example, it does not contain any type information). To get full information about a type or member, use the documentation file together with reflection on the actual type or member.
-- Developers are free to create their own set of tags. The compiler will copy these to the output file.
+- Developers are free to create their own set of tags. The compiler copies these tags to the output file.
 
 Some of the recommended tags can be used on any language element. Others have more specialized usage. Finally, some of the tags are used to format text in your documentation. This article describes the recommended tags organized by their use.
 
@@ -174,7 +174,7 @@ description
 </remarks>
 ```
 
-The `<remarks>` tag is used to add information about a type or a type member, supplementing the information specified with [\<summary>](#summary). This information is displayed in the Object Browser window. This tag may include more lengthy explanations. You may find that using `CDATA` sections for markdown make writing it more convenient. Tools such as [docfx](https://dotnet.github.io/docfx/) process the markdown text in `CDATA` sections.
+The `<remarks>` tag is used to add information about a type or a type member, supplementing the information specified with [\<summary>](#summary). This information is displayed in the Object Browser window. This tag can include more lengthy explanations. You might find that using `CDATA` sections for markdown make writing it more convenient. Tools such as [docfx](https://dotnet.github.io/docfx/) process the markdown text in `CDATA` sections.
 
 ## Document members
 
@@ -192,7 +192,7 @@ The `<returns>` tag should be used in the comment for a method declaration to de
 <param name="name">description</param>
 ```
 
-- `name`: The name of a method parameter. Enclose the name in quotation marks ("). The names for parameters must match the API signature. If one or more parameter aren't covered, the compiler issues a warning. The compiler also issues a warning if the value of `name` doesn't match a formal parameter in the method declaration.
+- `name`: The name of a method parameter. Enclose the name in quotation marks ("). The names for parameters must match the API signature. If one or more parameters aren't covered, the compiler issues a warning. The compiler also issues a warning if the value of `name` doesn't match a formal parameter in the method declaration.
 
 The `<param>` tag should be used in the comment for a method declaration to describe one of the parameters for the method. To document multiple parameters, use multiple `<param>` tags. The text for the `<param>` tag is displayed in IntelliSense, the Object Browser, and the Code Comment Web Report.
 
@@ -261,7 +261,7 @@ The `<listheader>` block is used to define the heading row of either a table or 
 When defining a table:
 
 * You only need to supply an entry for `term` in the heading.
-* Each item in the list is specified with an `<item>` block. For each `item`, you will only need to supply an entry for `description`.
+* Each item in the list is specified with an `<item>` block. For each `item`, you only need to supply an entry for `description`.
 
 When creating a definition list:
 
@@ -311,10 +311,10 @@ The `<example>` tag lets you specify an example of how to use a method or other 
 <inheritdoc [cref=""] [path=""]/>
 ```
 
-Inherit XML comments from base classes, interfaces, and similar methods. Using `inheritdoc` eliminates unwanted copying and pasting of duplicate XML comments and automatically keeps XML comments synchronized. Note that when you add the `<inheritdoc>` tag to a type, all members will inherit the comments as well.
+Inherit XML comments from base classes, interfaces, and similar methods. Using `inheritdoc` eliminates unwanted copying and pasting of duplicate XML comments and automatically keeps XML comments synchronized. When you add the `<inheritdoc>` tag to a type, all members inherit the comments as well.
 
-- `cref`:  Specify the member to inherit documentation from. Already defined tags on the current member are not overridden by the inherited ones.
-- `path`: The XPath expression query that will result in a node set to show. You can use this attribute to filter the tags to include or exclude from the inherited documentation.
+- `cref`:  Specify the member to inherit documentation from. Already defined tags on the current member aren't overridden by the inherited ones.
+- `path`: The XPath expression query that results in a node set to show. You can use this attribute to filter the tags to include or exclude from the inherited documentation.
 
 Add your XML comments in base classes or interfaces and let inheritdoc copy the comments to implementing classes. Add your XML comments to your synchronous methods and let inheritdoc copy the comments to your asynchronous versions of the same methods. If you want to copy the comments from a specific member, you use the `cref` attribute to specify the member.
 
@@ -326,7 +326,7 @@ Add your XML comments in base classes or interfaces and let inheritdoc copy the 
 
 - `filename`: The name of the XML file containing the documentation. The file name can be qualified with a path relative to the source code file. Enclose `filename` in single quotation marks (' ').
 - `tagpath`: The path of the tags in `filename` that leads to the tag `name`. Enclose the path in single quotation marks (' ').
-- `name`: The name specifier in the tag that precedes the comments; `name` will have an `id`.
+- `name`: The name specifier in the tag that precedes the comments; `name` has an `id`.
 - `id`: The ID for the tag that precedes the comments. Enclose the ID in quotation marks (").
 
 The `<include>` tag lets you refer to comments in another file that describe the types and members in your source code. Including an external file is an alternative to placing documentation comments directly in your source code file. By putting the documentation in a separate file, you can apply source control to the documentation separately from the source code. One person can have the source code file checked out and someone else can have the documentation file checked out. The `<include>` tag uses the XML XPath syntax. Refer to XPath documentation for ways to customize your `<include>` use.
@@ -371,7 +371,7 @@ The XML output for this method is shown in the following example:
 - `href="link"`: A clickable link to a given URL. For example, `<see href="https://github.com">GitHub</see>` produces a clickable link with text :::no-loc text="GitHub"::: that links to `https://github.com`.
 - `langword="keyword"`: A language keyword, such as `true` or one of the other valid [keywords](../keywords/index.md).
 
-The `<see>` tag lets you specify a link from within text. Use [\<seealso>](#seealso) to indicate that text should be placed in a See Also section. Use the [cref attribute](#cref-attribute) to create internal hyperlinks to documentation pages for code elements. You include the type parameters to specify a reference to a generic type or method, such as `cref="IDictionary{T, U}"`. Also, ``href`` is a valid attribute that will function as a hyperlink.
+The `<see>` tag lets you specify a link from within text. Use [\<seealso>](#seealso) to indicate that text should be placed in a See Also section. Use the [cref attribute](#cref-attribute) to create internal hyperlinks to documentation pages for code elements. You include the type parameters to specify a reference to a generic type or method, such as `cref="IDictionary{T, U}"`. Also, ``href`` is a valid attribute that functions as a hyperlink.
 
 ### \<seealso>
 
@@ -384,7 +384,7 @@ The `<see>` tag lets you specify a link from within text. Use [\<seealso>](#seea
 - `cref="member"`: A reference to a member or field that is available to be called from the current compilation environment. The compiler checks that the given code element exists and passes `member` to the element name in the output XML. `member` must appear within quotation marks (").
 - `href="link"`: A clickable link to a given URL. For example, `<seealso href="https://github.com">GitHub</seealso>` produces a clickable link with text :::no-loc text="GitHub"::: that links to `https://github.com`.
 
-The `<seealso>` tag lets you specify the text that you might want to appear in a **See Also** section. Use [\<see>](#see) to specify a link from within text. You cannot nest the `seealso` tag inside the `summary` tag.
+The `<seealso>` tag lets you specify the text that you might want to appear in a **See Also** section. Use [\<see>](#see) to specify a link from within text. You can't nest the `seealso` tag inside the `summary` tag.
 
 ### cref attribute
 
@@ -404,7 +404,7 @@ The `href` attribute means a reference to a web page. You can use it to directly
 
 - `TResult`: The name of the type parameter. Enclose the name in quotation marks (").
 
-The `<typeparam>` tag should be used in the comment for a generic type or method declaration to describe a type parameter. Add a tag for each type parameter of the generic type or method. The text for the `<typeparam>` tag will be displayed in IntelliSense.
+The `<typeparam>` tag should be used in the comment for a generic type or method declaration to describe a type parameter. Add a tag for each type parameter of the generic type or method. The text for the `<typeparam>` tag is displayed in IntelliSense.
 
 ### \<typeparamref>
 
@@ -418,7 +418,7 @@ Use this tag to enable consumers of the documentation file to format the word in
 
 ### User-defined tags
 
-All the tags outlined above represent those tags that are recognized by the C# compiler. However, a user is free to define their own tags.
+All the tags outlined in this article represent those tags recognized by the C# compiler. However, a user is free to define their own tags.
 Tools like Sandcastle bring support for extra tags like [\<event>](https://ewsoftware.github.io/XMLCommentsGuide/html/81bf7ad3-45dc-452f-90d5-87ce2494a182.htm) and [\<note>](https://ewsoftware.github.io/XMLCommentsGuide/html/4302a60f-e4f4-4b8d-a451-5f453c4ebd46.htm),
 and even support [documenting namespaces](https://ewsoftware.github.io/XMLCommentsGuide/html/BD91FAD4-188D-4697-A654-7C07FD47EF31.htm).
 Custom or in-house documentation generation tools can also be used with the standard tags, and multiple output formats from HTML to PDF can be supported.

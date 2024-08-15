@@ -78,6 +78,10 @@ namespace csrefKeywordsContextual
         }
 
     }
+    interface IDrawingObject
+    {
+        event EventHandler OnDraw;
+    }
 
     //<Snippet15>
     class Events : IDrawingObject

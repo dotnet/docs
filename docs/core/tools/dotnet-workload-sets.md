@@ -41,10 +41,12 @@ And you can still choose to install or update to the latest version of each indi
 ## "Pin" the install command
 <!--If this heading changes, update the link in \docs\includes\cli-version.md-->
 
-A `dotnet workload install` command with the `--version` option "pins" the `install` command in workload set update mode with the specified workload set version. The command no longer automatically installs the newest workload based on loose manifests. For example:
+A `dotnet workload install` command with the `--version` option "pins" the `install` command in workload set update mode with the specified workload set version. 
+<!--todo: install without --version in workload set update mode pins to latest workload set?-->
+The command no longer automatically installs the newest workload based on loose manifests. For example:
 
 1. ```dotnetcli
-   dotnet workload install aspire --version 9.0.100-preview.7.24407.1
+   dotnet workload install aspire --version 9.0.100-preview.7.24414.1
    ```
 
    When this command runs:
@@ -58,7 +60,7 @@ A `dotnet workload install` command with the `--version` option "pins" the `inst
    dotnet workload install maui-ios
    ```
 
-   This command installs the workload set version `9.0.100-preview.7.24407.1`, since the preceding `install` command example pinned that workload set.
+   This command installs the workload set version `9.0.100-preview.7.24414.1`, since the preceding `install` command example pinned that workload set.
 
 Using `--version` with either `install` or `update` pins `install` to the specified version, but `update` is only pinned to workload set update mode, not to a workload set version. If you then run `dotnet workload update` without the `--version` option, the `update` command:
 
@@ -90,7 +92,7 @@ To specify a workload set version to update to, use the `--version` option of th
 dotnet workload update --version 8.0.400
 ```
 
-In both cases, workload set update mode will be selected if it wasn't already selected.
+Workload set update mode will be selected if it wasn't already selected.
 
 ## Restore workloads using global.json
 
@@ -99,18 +101,18 @@ Create a `global.json` file to specify the workload set version for the restore 
 ```json
 {
   "sdk": {
-    "workloadVersion": "9.0.100-preview.7.24407.1"
+    "workloadVersion": "9.0.100-preview.7.24414.1"
   }
 }
 ```
 
 With the current directory in the same repository, `dotnet workload restore` installs workloads for the specified workload set version. If you don't have a global.json file, and you're in workload set update mode, the `restore` command installs the workload set version that was established when you switched from manifests update mode to workload sets update mode.
-<!--what about if it's SDK 9 so you defaulted to workload set update mode, and you never established a workload set version -- does it go for latest available then?-->
+<!--todo:what about if it's SDK 9 so you defaulted to workload set update mode, and you never established a workload set version -- does it go for latest available then?-->
+<!--todo:if you're in manifests update mode, you stay in that mode and it doesn't seem to do a workload set update(?)-->
 
-The `--version` option for specifying workload set version is also available for the `restore` comand.
-<!--I assume that would override the global.json setting?-->
+If you don't specify the workload set version in global.json, you can use the `--version` option with the `restore` comand. In that case, the `restore` command selects workload set update mode before it restores workloads to the specified workload set version.
 
-In manifests update mode, `restore` updates workloads to the latest version of each individual workload.
+In manifests update mode, `restore` installs or updates workloads to the latest version of each individual workload.
 
 ## Ignore workload sets
 
@@ -134,14 +136,14 @@ dotnet workload config --update-mode
 workload-set
 ```
 
-To see the current workload set version, run `dotnet workload --version`.  If a workload set is installed, you see a version such as 9.0.100-preview.7.24407.1 or 8.0.401. For example:
+To see the current workload set version, run `dotnet workload --version`.  If a workload set is installed, you see a version such as 9.0.100-preview.7.24414.1 or 8.0.401. For example:
 
 ```dotnetcli
 dotnet workload --version
 ```
 
 ```output
-9.0.100-preview.7.24407.1
+9.0.100-preview.7.24414.1
 ```
 
 If there is no workload set version, you see a version in the form of `<feature band>-manifests.<hash>`. For example:

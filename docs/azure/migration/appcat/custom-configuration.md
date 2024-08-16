@@ -1,6 +1,6 @@
 ---
-title: Azure migrate application and code assessment for .NET installation
-description: Learn how to install Azure migrate application and code assessment for .NET
+title:  How to customize analysis through run configs
+description: Learn how to customize analysis through run configs for the Azure migrate application and code assessment for .NET
 ms.topic: conceptual
 ms.date: 08/16/2024
 ---
@@ -19,12 +19,12 @@ Provide a json run config file to manage and scope the rules and analyzers:
 
 ## How to provide run config
 
-# [CLI](#tab/cli)
+## [CLI](#tab/cli)
 
 - **Interactive mode** - Select `Yes` when the CLI asks if you want to provide run config, and then enter the path to the run config file.
 - **Non-interactive mode** - Provide the `-c` or `--config` argument, which allows you to provide the path to the run config json.
 
-# [Visual Studio](#tab/visual-studio)
+## [Visual Studio](#tab/visual-studio)
 
 - During the step that allows you to edit analysis settings, select the **Browse** button to locate and specify a run config json file.
 

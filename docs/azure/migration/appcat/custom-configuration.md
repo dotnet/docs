@@ -91,9 +91,9 @@ Consider the following sample run config:
 
 - **Analyzers** disables or adds new analyzers.
 
-# Examples for common scenarios
+## Examples for common scenarios
 
-## Add new rule
+### Add new rule
 
 ```
 {
@@ -108,7 +108,7 @@ Consider the following sample run config:
 }
 ```
 
-## Modify existing rule
+### Modify existing rule
 
 ```
 {
@@ -121,7 +121,7 @@ Consider the following sample run config:
 }
 ```
 
-## Disable existing rule
+### Disable existing rule
 
 ```
 {
@@ -134,7 +134,7 @@ Consider the following sample run config:
 }
 ```
 
-## Disable existing analyzer
+### Disable existing analyzer
 
 ```
 {
@@ -147,7 +147,7 @@ Consider the following sample run config:
 }
 ```
 
-## Add new analyzer for some existing or new rule
+### Add new analyzer for some existing or new rule
 
 ```
 {

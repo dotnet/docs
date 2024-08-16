@@ -1,173 +1,55 @@
-﻿using System.ComponentModel;
-using System.Diagnostics.CodeAnalysis;
-
-namespace properties
-{
-
-// <ExpressionBodiedProperty>
-public class Person
-{
-    private string _firstName;
-    private string _lastName;
-
-    public Person(string first, string last)
-    {
-        _firstName = first;
-        _lastName = last;
-    }
-
-    public string Name => $"{_firstName} {_lastName}";
-}
-// </ExpressionBodiedProperty>
-
-// <UsingEmployeeExample>
-class Employee
-{
-    private string _name;  // the name field
-    public string Name => _name;     // the Name property
-}
-// </UsingEmployeeExample>
-
-// <ManageExample>
-class Manager
-{
-    private string _name;
-    public string Name => _name != null ? _name : "NA";
-}
-// </ManageExample>
-
-//<StudentExample>
-class Student
-{
-    private string _name;  // the name field
-    public string Name    // the Name property
-    {
-        get => _name;
-        set => _name = value;
-    }
-}
-//</StudentExample>
-}
+﻿using System.Diagnostics.CodeAnalysis;
 
 namespace VersionOne
 {
-    // <Snippet1>
+    // <Field>
     public class Person
     {
         public string? FirstName;
 
         // Omitted for brevity.
     }
-    // </Snippet1>
+    // </Field>
 }
 
 namespace VersionTwo
 {
-    // <Snippet2>
+    // <AutoImplemented>
     public class Person
     {
         public string? FirstName { get; set; }
 
         // Omitted for brevity.
     }
-    // </Snippet2>
+    // </AutoImplemented>
 }
 
 namespace VersionThree
 {
-    // <Snippet3>
+    // <Initializer>
     public class Person
     {
         public string FirstName { get; set; } = string.Empty;
 
         // Omitted for brevity.
     }
-    // </Snippet3>
+    // </Initializer>
 }
 namespace VersionFour
 {
-    // <Snippet4>
-    public class Person
-    {
-        public string? FirstName
-        {
-            get { return _firstName; }
-            set { _firstName = value; }
-        }
-        private string? _firstName;
-
-        // Omitted for brevity.
-    }
-    // </Snippet4>
-}
-namespace VersionFive
-{
-    // <Snippet5>
-    public class Person
-    {
-        public string? FirstName
-        {
-            get => _firstName;
-            set => _firstName = value;
-        }
-        private string? _firstName;
-
-        // Omitted for brevity.
-    }
-    // </Snippet5>
-}
-
-namespace VersionSix
-{
-    // <Snippet6>
-    public class Person
-    {
-        public string? FirstName
-        {
-            get => _firstName;
-            set
-            {
-                if (string.IsNullOrWhiteSpace(value))
-                    throw new ArgumentException("First name must not be blank");
-                _firstName = value;
-            }
-        }
-        private string? _firstName;
-
-        // Omitted for brevity.
-    }
-    // </Snippet6>
-}
-namespace VersionSeven
-{
-    // <Snippet7>
-    public class Person
-    {
-        public string? FirstName
-        {
-            get => _firstName;
-            set => _firstName = (!string.IsNullOrWhiteSpace(value)) ? value : throw new ArgumentException("First name must not be blank");
-        }
-        private string? _firstName;
-
-        // Omitted for brevity.
-    }
-    // </Snippet7>
-}
-namespace VersionEight
-{
-    // <Snippet8>
+    // <AccessorModifiers>
     public class Person
     {
         public string? FirstName { get; private set; }
 
         // Omitted for brevity.
     }
-    // </Snippet8>
+    // </AccessorModifiers>
 }
-namespace VersionNine
+
+namespace VersionFive
 {
-    // <Snippet9>
+    // <Readonly>
     public class Person
     {
         public Person(string firstName) => FirstName = firstName;
@@ -176,11 +58,11 @@ namespace VersionNine
 
         // Omitted for brevity.
     }
-    // </Snippet9>
+    // </Readonly>
 }
-namespace VersionNinePoint1
+namespace VersionSix
 {
-    // <Snippet9.1>
+    // <InitOnly>
     public class Person
     {
         public Person() { }
@@ -190,11 +72,11 @@ namespace VersionNinePoint1
 
         // Omitted for brevity.
     }
-    // </Snippet9.1>
+    // </InitOnly>
 }
-namespace VersionNinePoint2
+namespace VersionSeven
 {
-    // <Snippet9.2>
+    // <Required>
     public class Person
     {
         public Person() { }
@@ -206,42 +88,48 @@ namespace VersionNinePoint2
 
         // Omitted for brevity.
     }
-    // </Snippet9.2>
+    // </Required>
 }
-namespace VersionTen
+
+namespace VersionEight
 {
-    // <Snippet10>
+    // <ExpressionBodiedProperty>
     public class Person
     {
-        public string? FirstName { get; set; }
+        public Person() { }
 
-        public string? LastName { get; set; }
+        [SetsRequiredMembers]
+        public Person(string firstName, string lastName)
+        {
+            FirstName = firstName;
+            LastName = lastName;
+        }
 
-        public string FullName { get { return $"{FirstName} {LastName}"; } }
+        public required string FirstName { get; init; }
+        public required string LastName { get; init; }
+
+        public string Name => $"{FirstName} {LastName}";
+
+        // Omitted for brevity.
     }
-    // </Snippet10>
+    // </ExpressionBodiedProperty>
 }
-namespace VersionEleven
+namespace VersionNine
 {
-    // <Snippet11>
+    // <CachedBackingStore>
     public class Person
     {
-        public string? FirstName { get; set; }
+        public Person() { }
 
-        public string? LastName { get; set; }
+        [SetsRequiredMembers]
+        public Person(string firstName, string lastName)
+        {
+            FirstName = firstName;
+            LastName = lastName;
+        }
 
-        public string FullName => $"{FirstName} {LastName}";
-    }
-    // </Snippet11>
-}
-namespace VersionTwelve
-{
-    // <Snippet12>
-    public class Person
-    {
-        public string? FirstName { get; set; }
-
-        public string? LastName { get; set; }
+        public required string FirstName { get; init; }
+        public required string LastName { get; init; }
 
         private string? _fullName;
         public string FullName
@@ -254,11 +142,11 @@ namespace VersionTwelve
             }
         }
     }
-    // </Snippet12>
+    // </CachedBackingStore>
 }
-namespace VersionThirteen
+namespace VersionTen
 {
-    // <Snippet13>
+    // <UseBackingFields>
     public class Person
     {
         private string? _firstName;
@@ -294,47 +182,37 @@ namespace VersionThirteen
             }
         }
     }
-    // </Snippet13>
+    // </UseBackingFields>
 }
-namespace VersionFourteen
+
+namespace properties
 {
-    // <Snippet14>
-    public class Person
-    {
-        public string? FirstName { get; set; }
 
-        public string? LastName { get; set; }
-
-        [field:NonSerialized]
-        public int Id { get; set; }
-
-        public string FullName => $"{FirstName} {LastName}";
-    }
-    // </Snippet14>
+    // <UsingEmployeeExample>
+    class Employee
+{
+    private string _name;  // the name field
+    public string Name => _name;     // the Name property
 }
-namespace VersionFifteen
-{
-    // <Snippet15>
-    public class Person : INotifyPropertyChanged
-    {
-        public string? FirstName
-        {
-            get => _firstName;
-            set
-            {
-                if (string.IsNullOrWhiteSpace(value))
-                    throw new ArgumentException("First name must not be blank");
-                if (value != _firstName)
-                {
-                    _firstName = value;
-                    PropertyChanged?.Invoke(this,
-                        new PropertyChangedEventArgs(nameof(FirstName)));
-                }
-            }
-        }
-        private string? _firstName;
+// </UsingEmployeeExample>
 
-        public event PropertyChangedEventHandler? PropertyChanged;
+// <ManageExample>
+class Manager
+{
+    private string _name;
+    public string Name => _name != null ? _name : "NA";
+}
+// </ManageExample>
+
+//<StudentExample>
+class Student
+{
+    private string _name;  // the name field
+    public string Name    // the Name property
+    {
+        get => _name;
+        set => _name = value;
     }
-    // </Snippet15>
+}
+//</StudentExample>
 }

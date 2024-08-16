@@ -837,7 +837,7 @@ API Controller with or without read/write actions.
 - **`--roll-forward <ROLL_FORWARD_POLICY>`**
 
   The roll-forward policy to use when selecting an SDK version, either as a fallback when a specific SDK version is missing or as a directive to use a later version.
-  See [global-json](global-json.md)
+  For more information, see [global-json](global-json.md#rollforward).
 
 ## `editorconfig`
 

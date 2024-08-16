@@ -1,13 +1,13 @@
 ---
 title: .NET container images
-description: Learn about the various .NET container images available on Docker Hub.
+description: Learn about the various .NET container images available on Docker Hub and how they're used for different scenarios.
 ms.date: 09/22/2023
 ms.custom: linux-related-content
 ---
 
 # .NET container images
 
-.NET provides various container images for different scenarios. This article describes the different types of images and how they're used. For more information about official images, see the [Docker Hub: Microsoft .NET](https://hub.docker.com/_/microsoft-dotnet) repository.
+.NET provides various container images for different scenarios. This article describes the different types of images and how they're used.
 
 ## Tagging scheme
 

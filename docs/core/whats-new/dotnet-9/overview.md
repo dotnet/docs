@@ -1,8 +1,8 @@
 ---
 title: What's new in .NET 9
-description: Learn about the new .NET features introduced in .NET 9.
+description: Learn about the new .NET features introduced in .NET 9 for the runtime, libraries, and SDK. Also find links to what's new in other areas, such as ASP.NET Core.
 titleSuffix: ""
-ms.date: 07/10/2024
+ms.date: 08/15/2024
 ms.topic: whats-new
 ---
 # What's new in .NET 9
@@ -17,19 +17,9 @@ New for .NET 9, the engineering team posts .NET 9 preview updates on [GitHub Dis
 
 The .NET 9 runtime includes a new attribute model for feature switches with trimming support. The new attributes make it possible to define [feature switches](https://github.com/dotnet/designs/blob/main/accepted/2020/feature-switch.md) that libraries can use to toggle areas of functionality.
 
-The runtime also includes numerous performance improvements in the following areas:
+Garbage collection includes a *dynamic adaptation to application size* feature that's used by default instead of Server GC.
 
-- Loop optimizations
-- Inlining improvements
-- PGO improvements: Type checks and casts
-- Arm64 vectorization in .NET libraries
-- Arm64 code generation
-- Faster exceptions
-- Code layout
-- Reduced address exposure
-- AVX10v1 support
-- Hardware intrinsic code generation
-- Constant folding for floating point and SIMD operations
+The runtime also includes numerous performance improvements, including loop optimizations, inlining, and Arm64 vectorization and code generation.
 
 For more information, see [What's new in the .NET 9 runtime](runtime.md).
 
@@ -51,13 +41,7 @@ For more information, see [What's new in the .NET 9 libraries](libraries.md).
 
 ## .NET SDK
 
-The .NET 9 SDK includes improvements to unit testing, including better integration with MSBuild that allows you to run tests in parallel.
-
-For tools, a new option for [`dotnet tool install`](../../tools/dotnet-tool-install.md) lets users (instead of tool authors) decide whether a tool is allowed to run on a newer .NET runtime version than the version the tool targets. And NuGet security audits run on both direct and transitive package references, by default.
-
-The terminal logger is now enabled by default and also has improved usability. For example, the total count of failures and warnings is now summarized at the end of a build.
-
-Finally, new MSBuild script analyzers are available.
+The .NET 9 SDK introduces *workload sets*, where all of your workloads stay at a single, specific version until explicitly updated. Unit testing has better MSBuild integration that allows you to run tests in parallel. For tools, a new option for [`dotnet tool install`](../../tools/dotnet-tool-install.md) lets users (instead of tool authors) decide whether a tool is allowed to run on a newer .NET runtime version than the version the tool targets. NuGet security audits run on both direct and transitive package references, by default. The terminal logger is now enabled by default and also has improved usability. For example, the total count of failures and warnings is now summarized at the end of a build. New MSBuild script analyzers are available. The SDK can detect and adjust for version mismatches between the .NET SDK and MSBuild.
 
 For more information, see [What's new in the SDK for .NET 9](sdk.md).
 

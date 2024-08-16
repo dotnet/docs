@@ -158,11 +158,11 @@ docker-compose -f docker-compose.yml -f docker-compose-test.override.yml down
 
 #### Production deployments
 
-You can also use Compose to deploy to a remote Docker Engine. A typical case is to deploy to a single Docker host instance (like a production VM or server provisioned with [Docker Machine](https://docs.docker.com/machine/overview/)).
+You can also use Compose to deploy to a remote Docker Engine. A typical case is to deploy to a single Docker host instance.
 
-If you are using any other orchestrator (Azure Service Fabric, Kubernetes, etc.), you might need to add setup and metadata configuration settings like those in docker-compose.yml, but in the format required by the other orchestrator.
+If you're using any other orchestrator (for example, Azure Service Fabric or Kubernetes), you might need to add setup and metadata configuration settings like those in docker-compose.yml, but in the format required by the other orchestrator.
 
-In any case, docker-compose is a convenient tool and metadata format for development, testing and production workflows, although the production workflow might vary on the orchestrator you are using.
+In any case, docker-compose is a convenient tool and metadata format for development, testing, and production workflows, although the production workflow might vary on the orchestrator you are using.
 
 ### Using multiple docker-compose files to handle several environments
 
@@ -447,18 +447,16 @@ In the container and microservices model, you are constantly starting containers
 
 The .NET team has been doing important work to make .NET and ASP.NET Core a container-optimized framework. Not only is .NET a lightweight framework with a small memory footprint; the team has focused on optimized Docker images for three main scenarios and published them in the Docker Hub registry at *dotnet/*, beginning with version 2.1:
 
-1. **Development**: The priority is the ability to quickly iterate and debug changes, and where size is secondary.
+- **Development**: The priority is the ability to quickly iterate and debug changes, and where size is secondary.
+- **Build**: The priority is compiling the application, and the image includes binaries and other dependencies to optimize binaries.
+- **Production**: The focus is fast deploying and starting of containers, so these images are limited to the binaries and content needed to run the application.
 
-2. **Build**: The priority is compiling the application, and the image includes binaries and other dependencies to optimize binaries.
+The .NET team provides four basic variants in [dotnet/](../net-core-net-framework-containers/official-net-docker-images.md):
 
-3. **Production**: The focus is fast deploying and starting of containers, so these images are limited to the binaries and content needed to run the application.
-
-The .NET team provides four basic variants in [dotnet/](https://hub.docker.com/_/microsoft-dotnet/) (at Docker Hub):
-
-1. **sdk**: for development and build scenarios
-1. **aspnet**: for ASP.NET production scenarios
-1. **runtime**: for .NET production scenarios
-1. **runtime-deps**: for production scenarios of [self-contained applications](../../../core/deploying/index.md#publish-self-contained)
+- **sdk**: for development and build scenarios
+- **aspnet**: for ASP.NET production scenarios
+- **runtime**: for .NET production scenarios
+- **runtime-deps**: for production scenarios of [self-contained applications](../../../core/deploying/index.md#publish-self-contained)
 
 For faster startup, runtime images also automatically set aspnetcore\_urls to port 80 and use Ngen to create a native image cache of assemblies.
 

@@ -62,6 +62,19 @@ To make an HTTP request, you call any of the following APIs:
 > [!WARNING]
 > Making HTTP requests is considered network I/O-bound work. While there is a synchronous <xref:System.Net.Http.HttpClient.Send%2A?displayProperty=nameWithType> method, it is recommended to use the asynchronous APIs instead, unless you have good reason not to.
 
+> [!NOTE]
+> While targeting Android devices (such as with .NET MAUI development), you must add `android:usesCleartextTraffic="true"` to `<application></application>` in _AndroidManifest.xml_. This enables clear-text traffic, such as HTTP requests, which is otherwise disabled by default due to Android security policies. Consider the following example XML settings:
+>
+> ```xml
+> <?xml version="1.0" encoding="utf-8"?>
+> <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+>   <application android:usesCleartextTraffic="true"></application>
+>   <!-- omitted for brevity -->
+> </manifest>
+> ```
+>
+> For more information, see [Enable clear-text network traffic for the localhost domain](/dotnet/maui/data-cloud/local-web-services?view=net-maui-8.0#enable-clear-text-network-traffic-for-the-localhost-domain).
+
 ### HTTP content
 
 The <xref:System.Net.Http.HttpContent> type is used to represent an HTTP entity body and corresponding content headers. For HTTP methods (or request methods) that require a body, `POST`, `PUT`, and `PATCH`, you use the <xref:System.Net.Http.HttpContent> class to specify the body of the request. Most examples show how to prepare the  <xref:System.Net.Http.StringContent> subclass with a JSON payload, but other subclasses exist for different [content (MIME) types](https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/MIME_types).

@@ -38,7 +38,7 @@ Example:
 ```csharp
 [TestClass]
 public class MyTestClass
-{    
+{
 }
 ```
 
@@ -65,7 +65,7 @@ public class MyTestClass
 
 ## Attributes used for data-driven testing
 
-Use the following elements to set up data-driven tests. For more information, see [Create a data-driven unit test](/visualstudio/test/how-to-create-a-data-driven-unit-test.md) and [Use a configuration file to define a data source](/visualstudio/test/walkthrough-using-a-configuration-file-to-define-a-data-source.md).
+Use the following elements to set up data-driven tests. For more information, see [Create a data-driven unit test](/visualstudio/test/how-to-create-a-data-driven-unit-test) and [Use a configuration file to define a data source](/visualstudio/test/walkthrough-using-a-configuration-file-to-define-a-data-source).
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataRowAttribute>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>
@@ -88,7 +88,7 @@ public class TestClass
     {
         // Omitted for brevity.
     }
-    
+
     [TestMethod]
     [DataRow(new string[] { "line1", "line2" })]
     public void TestMethod2(string[] lines)
@@ -368,7 +368,7 @@ And here you can see its [constructors](<xref:Microsoft.VisualStudio.TestTools.U
 **Example**
 
 ```csharp
-[TestClass] 
+[TestClass]
 [DeploymentItem(@"C:\classLevelDepItem.xml")]   // Copy file using some absolute path
 public class UnitTest1
 {

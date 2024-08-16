@@ -319,8 +319,19 @@ items:
     items:
       - name: Overview
         href: ../../core/additional-tools/index.md
-      - name: .NET uninstall tool
-        href: ../../core/additional-tools/uninstall-tool.md
+      - name: .NET Uninstall Tool
+        items:
+        - name: Overview
+          href: ../../core/additional-tools/uninstall-tool-overview.md
+        - name: Command reference
+          expanded: true
+          items:
+          - name: dotnet-core-uninstall list
+            href: ../../core/additional-tools/uninstall-tool-cli-list.md
+          - name: dotnet-core-uninstall dry-run
+            href: ../../core/additional-tools/uninstall-tool-cli-dry-run.md
+          - name: dotnet-core-uninstall remove
+            href: ../../core/additional-tools/uninstall-tool-cli-remove.md
       - name: .NET install tool for extension authors
         href: ../../core/additional-tools/vscode-dotnet-runtime.md
       - name: Generate self-signed certificates
@@ -371,6 +382,8 @@ items:
         items:
         - name: Overview
           href: ../../core/diagnostics/built-in-metrics.md
+        - name: .NET runtime metrics
+          href: ../../core/diagnostics/built-in-metrics-runtime.md
         - name: .NET extensions metrics
           href: ../../core/diagnostics/built-in-metrics-diagnostics.md
         - name: ASP.NET Core metrics
@@ -1774,6 +1787,10 @@ items:
             href: ../../fundamentals/syslib-diagnostics/syslib0054.md
           - name: SYSLIB0055
             href: ../../fundamentals/syslib-diagnostics/syslib0055.md
+          - name: SYSLIB0056
+            href: ../../fundamentals/syslib-diagnostics/syslib0056.md
+          - name: SYSLIB0057
+            href: ../../fundamentals/syslib-diagnostics/syslib0057.md
       - name: Source-generated code
         items:
           - name: Overview

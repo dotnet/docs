@@ -21,12 +21,14 @@ Provide a json run config file to manage and scope the rules and analyzers:
 
 ## [CLI](#tab/cli)
 
-- **Interactive mode** - Select `Yes` when the CLI asks if you want to provide run config, and then enter the path to the run config file.
-- **Non-interactive mode** - Provide the `-c` or `--config` argument, which allows you to provide the path to the run config json.
+The Azure migrate application and code assessment tool enables you to [Analyze applications with the .NET CLI](dotnet-cli.md). While using the CLI, there are two options to provide a run config:
+
+- **Interactive mode**: When the CLI asks if you want to provide run config, select `Yes` and then enter the path to the run config file.
+- **Non-interactive mode**: Provide the `-c` or `--config` argument, which allows you to provide the path to the run config json.
 
 ## [Visual Studio](#tab/visual-studio)
 
-- During the step that allows you to edit analysis settings, select the **Browse** button to locate and specify a run config json file.
+The Azure migrate application and code assessment tool enables you to [Analyze applications with Visual Studio](visual-studio.md). During the step that allows you to edit analysis settings, select the **Browse** button to locate and select a run config json file.
 
 ---
 
@@ -95,7 +97,7 @@ Consider the following sample run config:
 
 ### Add new rule
 
-```
+```json
 {
   "rules": [
     {
@@ -123,7 +125,7 @@ Consider the following sample run config:
 
 ### Disable existing rule
 
-```
+```json
 {
   "rules": [
     {
@@ -136,7 +138,7 @@ Consider the following sample run config:
 
 ### Disable existing analyzer
 
-```
+```json
 {
   "analyzers": [
     {
@@ -149,7 +151,7 @@ Consider the following sample run config:
 
 ### Add new analyzer for some existing or new rule
 
-```
+```json
 {
   "analyzers": [
     {

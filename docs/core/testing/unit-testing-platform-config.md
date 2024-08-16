@@ -8,7 +8,7 @@ ms.date: 08/15/2024
 
 # Microsoft.Testing.Platform configuration settings
 
-Microsoft.Testing.Platform supports the use of configuration files and environment variables to configure the behavior of the test platform. This document describes the configuration settings that can be used to configure the test platform.
+Microsoft.Testing.Platform supports the use of configuration files and environment variables to configure the behavior of the test platform. This article describes the configuration settings that you can use to configure the test platform.
 
 ## testconfig.json
 
@@ -27,7 +27,7 @@ The *testconfig.json* file has the following structure:
 
 The platform will automatically detect and load the *[appname].testconfig.json* file located in the output directory of the test project (close to the executable).
 
-When using [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild), you can simply create a *testconfig.json* file that will be automatically renamed as *[appname].testconfig.json* and moved in the output directory of the test project.
+When using [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild), you can simply create a *testconfig.json* file that will be automatically renamed to *[appname].testconfig.json* and moved to the output directory of the test project.
 
 > [!NOTE]
 > The *[appname].testconfig.json* file will get overwritten on subsequent builds.

@@ -1,6 +1,6 @@
 ---
 title: Cloud-native security
-description: Architecting Cloud Native .NET Apps for Azure | cloud-native security
+description: Architecting Cloud Native .NET Apps for Azure | Cloud-native security
 ms.date: 04/06/2022
 ---
 
@@ -8,9 +8,9 @@ ms.date: 04/06/2022
 
 [!INCLUDE [download-alert](includes/download-alert.md)]
 
-Not a day goes by where the news doesn't contain some story about a company being hacked or somehow losing their customers' data. Even countries/regions aren't immune to the problems created by treating security as an afterthought. For years, companies have treated the security of customer data and, in fact, their entire networks as something of a "nice to have". Windows servers were left unpatched, ancient versions of PHP kept running, and databases left wide open to the world.
+Not a day goes by without the news of a company being hacked or somehow losing their customers' data. Even countries and large jurisdictions aren't immune to the problems created by treating security as an afterthought. For years, companies have treated the security of customer data and, in fact, of their entire networks as something of a "nice to have". Windows servers were left unpatched, ancient versions of PHP kept running, and databases left wide open to the world.
 
-However, there are starting to be real-world consequences for not maintaining a security mindset when building and deploying applications. Many companies learned the hard way what can happen when servers and desktops aren't patched during the 2017 outbreak of [NotPetya](https://www.wired.com/story/notpetya-cyberattack-ukraine-russia-code-crashed-the-world/). The cost of these attacks has easily reached into the billions, with some estimates putting the losses from this single attack at 10 billion US dollars.
+However, real-world consequences are now almost inevitable for not maintaining a security mindset when building and deploying applications. Many companies learned the hard way what can happen when servers and desktops aren't patched during the 2017 outbreak of [NotPetya](https://www.wired.com/story/notpetya-cyberattack-ukraine-russia-code-crashed-the-world/). The cost of these attacks has easily reached into the billions, with some estimates putting the losses from this single attack at 10 billion US dollars.
 
 Even governments aren't immune to hacking incidents. The city of Baltimore was held ransom by [criminals](https://www.vox.com/recode/2019/5/21/18634505/baltimore-ransom-robbinhood-mayor-jack-young-hackers) making it impossible for citizens to pay their bills or use city services.
 

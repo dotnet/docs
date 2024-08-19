@@ -17,7 +17,7 @@ Starting in .NET 8, a build error is issued if your code uses any type derived f
 
 > Usage of unsecure BinaryFormatter during serialization of custom event type 'MyCustomBuildEventArgs'. This will be deprecated soon. Please use Extended*EventArgs instead. More info: <https://aka.ms/msbuild/eventargs>
 
-Starting from Visual Studio 17.10 same behavior applies to builds in Visual Studio.
+Starting from Visual Studio version 17.10, the same behavior applies to builds in Visual Studio.
 
 ## Version introduced
 

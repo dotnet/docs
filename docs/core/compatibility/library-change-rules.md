@@ -86,7 +86,7 @@ Changes in this category modify the public surface area of a type. Most of the c
 
 ### Members
 
-- ✔️ **ALLOWED: Expanding the visibility of a member that is not [virtual](../../csharp/language-reference/keywords/sealed.md)**
+- ✔️ **ALLOWED: Expanding the visibility of a member that is not [virtual](../../csharp/language-reference/keywords/virtual.md)**
 
 - ✔️ **ALLOWED: Adding an abstract member to a public type that has no *accessible* (public or protected) constructors, or the type is [sealed](../../csharp/language-reference/keywords/sealed.md)**
 
@@ -314,7 +314,7 @@ Changes in this category modify the public surface area of a type. Most of the c
 
 - ❌ **DISALLOWED: Changing a [struct](../../csharp/language-reference/builtin-types/struct.md) to a [class](../../csharp/language-reference/keywords/class.md) and vice versa**
 
-- ❌ **DISALLOWED: Adding the [checked](../../csharp/language-reference/keywords/virtual.md) keyword to a code block**
+- ❌ **DISALLOWED: Adding the [checked](../../csharp/language-reference/statements/checked-and-unchecked.md) keyword to a code block**
 
    This change may cause code that previously executed to throw an <xref:System.OverflowException> and is unacceptable.
 

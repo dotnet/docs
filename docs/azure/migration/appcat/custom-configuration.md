@@ -1,13 +1,13 @@
 ---
 title:  How to customize analysis through run configs
-description: Learn how to customize analysis through run configs for the Azure migrate application and code assessment for .NET
+description: Learn how to customize analysis through run configs for the Azure Migrate application and code assessment for .NET
 ms.topic: conceptual
 ms.date: 08/16/2024
 ---
 
 # How to customize analysis through run configs
 
-The Azure migrate application and code assessment tool supports custom analysis using run configs. Before the tool runs an analysis, it discovers all available rules and analyzers and then uses the ones that match current project's traits. However, some results might be too noisy for some applications.
+The Azure Migrate application and code assessment tool supports custom analysis using run configs. Before the tool runs an analysis, it discovers all available rules and analyzers and then uses the ones that match current project's traits. However, some results might be too noisy for some applications.
 
 Provide a json run config file to manage and scope the rules and analyzers:
 
@@ -21,14 +21,14 @@ Provide a json run config file to manage and scope the rules and analyzers:
 
 ## [CLI](#tab/cli)
 
-The Azure migrate application and code assessment tool enables you to [Analyze applications with the .NET CLI](dotnet-cli.md). While using the CLI, there are two options to provide a run config:
+The Azure Migrate application and code assessment tool enables you to [Analyze applications with the .NET CLI](dotnet-cli.md). While using the CLI, there are two options to provide a run config:
 
 - **Interactive mode**: When the CLI asks if you want to provide run config, select `Yes` and then enter the path to the run config file.
 - **Non-interactive mode**: Provide the `-c` or `--config` argument, which allows you to provide the path to the run config json.
 
 ## [Visual Studio](#tab/visual-studio)
 
-The Azure migrate application and code assessment tool enables you to [Analyze applications with Visual Studio](visual-studio.md). During the step that allows you to edit analysis settings, select the **Browse** button to locate and select a run config json file.
+The Azure Migrate application and code assessment tool enables you to [Analyze applications with Visual Studio](visual-studio.md). During the step that allows you to edit analysis settings, select the **Browse** button to locate and select a run config json file.
 
 ---
 

@@ -112,7 +112,7 @@ Consider the following sample run config:
 
 ### Modify existing rule
 
-```
+```json
 {
   "rules": [
     {

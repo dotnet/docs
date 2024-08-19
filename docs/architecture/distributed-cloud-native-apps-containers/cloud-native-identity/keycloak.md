@@ -32,6 +32,20 @@ Keycloak adheres to standard protocols like OpenID Connect, OAuth 2.0, and SAML,
 
 Beyond role-based authorization, Keycloak offers fine-grained authorization services, allowing administrators to define precise access policies for their services directly from the administration console.
 
+## Keycloak and .NET Aspire
+
+The .NET Aspire stack includes a built-in component to help you interact with Keycloak. As with other .NET Aspire components, you create a Keycloak backing service in the .NET Aspire app host project, and then pass it to the microservices that authenticate users. 
+
+In each of those microservices, you can add authentication types and configure their options to identify users. For example, this code adds JSON Web Token (JWT) bearer authentication:
+
+```csharp
+builder.Services.AddAuthentication()
+                .AddKeycloakJwtBearer("keycloak", realm: "eShop", options =>
+                {
+                    options.Audience = "customers.api";
+                });
+```
+
 ## References
 
 For more detailed information and the latest updates on Keycloak, you can visit their [official website](https://www.keycloak.org/).

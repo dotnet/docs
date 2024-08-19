@@ -16,7 +16,7 @@ Even governments aren't immune to hacking incidents. The city of Baltimore was h
 
 There has also been an increase in legislation that mandates certain data protections for personal data. In Europe, GDPR has been in effect since 2018 and, in the same year, California created their own version called the California Consumer Privacy Act (CCPA), which came into effect January 1, 2020. The fines under GDPR can be so punishing as to put companies out of business. Google has already been fined 50 million Euros for violations, but that's just a drop in the ocean compared with the potential fines.
 
-In short, security is serious business.
+In short, security is serious business. Cloud native apps have their own security challenges. For example, if a user is authenticated by one microservice, how do you authorize them to access other microservices.
 
 In this chapter you will learn about identity, authorization, and authentication, how security is provided on-premises and in the cloud, as well as about security products, both from Microsoft and third-party open-source providers.
 

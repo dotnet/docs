@@ -1095,6 +1095,9 @@ items:
               - name: HTTP client guidelines
                 href: networking/http/httpclient-guidelines.md
                 displayName: networking, httpclient
+              - name: Migration from HttpWebRequest to HttpClient
+                href: networking/http/httpclient-migrate-from-httpwebrequest.md
+                displayName: networking,http,httpclient,migrate,httpwebrequest
               - name: Make HTTP requests
                 href: networking/http/httpclient.md
                 displayName: networking,http,web services,client

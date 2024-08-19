@@ -116,9 +116,9 @@ Starting in .NET 8, `dotnet restore` [audits NuGet package references for known 
 
 ## MSBuild script analyzers ("BuildChecks")
 
-.NET 9 introduces a feature that helps guard against defects and regressions in your build scripts. To run the build-check analyzers, add the `/analyze` flag to any command that invokes MSBuild. For example, `dotnet build myapp.sln /analyze` builds the `myapp` solution and runs all configured build checks.
+.NET 9 introduces a feature that helps guard against defects and regressions in your build scripts. To run the build-checks, add the `/check` flag to any command that invokes MSBuild. For example, `dotnet build myapp.sln /check` builds the `myapp` solution and runs all configured build checks.
 
-The following two BuildCheck rules are run:
+Small number of initial checks are added inbox with .NET SDK 9.0 (see [BuildCheck codes](https://github.com/dotnet/msbuild/blob/main/documentation/specs/BuildCheck/Codes.md)). For example:
 
 - [BC0101](../../tools/buildcheck-rules/bc0101.md)
 - [BC0102](../../tools/buildcheck-rules/bc0102.md)

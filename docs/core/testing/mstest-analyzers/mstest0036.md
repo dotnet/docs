@@ -1,4 +1,3 @@
-
 ---
 title: "Do not use shadowing inside test class."
 description: "Learn about code analysis rule MSTEST0036: Do not use shadowing inside test class."

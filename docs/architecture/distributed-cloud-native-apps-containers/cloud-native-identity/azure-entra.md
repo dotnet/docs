@@ -15,6 +15,7 @@ Microsoft Entra ID also helps customers access internal resources such as apps o
 ## References
 
 - [What is Microsoft Entra ID?](https://learn.microsoft.com/en-us/entra/fundamentals/whatis)
+
 >[!div class="step-by-step"]
 >[Previous](authentication-authorization.md)
 >[Next](identityserver.md)

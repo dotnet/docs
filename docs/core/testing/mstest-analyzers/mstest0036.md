@@ -20,7 +20,7 @@ ms.author: enjieid
 | **Category**                        | Design                                                                 |
 | **Fix is breaking or non-breaking** | Non-breaking                                                           |
 | **Enabled by default**              | Yes                                                                    |
-| **Default severity**                | Warning                                                                   |
+| **Default severity**                | Warning                                                                |
 | **Introduced in version**           | 3.6.0                                                                  |
 | **There is a code fix**             | No                                                                     |
 

@@ -22,7 +22,7 @@ The following example shows how to use the <xref:System.Text.Json.Utf8JsonReader
 :::code language="csharp" source="snippets/how-to/csharp/Utf8ReaderFromBytes.cs" id="Deserialize":::
 :::code language="vb" source="snippets/how-to/vb/Utf8ReaderFromBytes.vb" id="Deserialize":::
 
-The preceding code assumes that the jsonUtf8Bytes variable is a byte array that contains valid JSON, encoded as UTF-8.
+The preceding code assumes that the `jsonUtf8Bytes` variable is a byte array that contains valid JSON, encoded as UTF-8.
 
 ## Filter data using `Utf8JsonReader`
 

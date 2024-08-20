@@ -291,7 +291,7 @@ The JSON value could not be converted to System.String.
 
 With [Visual Studio 2022 version 17.8 or later](/visualstudio/releases/2022/release-notes), you can try [GitHub Copilot Chat in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-chat) to migrate your `Newtonsoft.Json` code to use `System.Text.Json`.
 
-:::image type="content" source="./media/migrate-newtonsoft-json-using-github-copilot.gif" alt-text="Animated screenshot that shows using GitHub Copilot Chat in Visual Studio to migrate Newtonsoft.json to System.Text.Json." lightbox="./media/migrate-newtonsoft-json-using-github-copilot.gif":::
+:::image type="content" source="./media/migrate-newtonsoft-json-using-github-copilot.gif" alt-text="Animated screenshot that shows using GitHub Copilot Chat in Visual Studio to migrate from newtonsoft" lightbox="./media/migrate-newtonsoft-json-using-github-copilot.gif":::
 
 ## Scenarios using JsonSerializer
 

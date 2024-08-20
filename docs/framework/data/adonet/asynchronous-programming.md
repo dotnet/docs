@@ -1,33 +1,41 @@
 ---
 title: "Asynchronous Programming"
-description: Learn about asynchronous programming in .NET Framework Data Provider for SQL Server, including enhancements introduced in .NET Framework 4.5.
+description: Learn about asynchronous programming in the .NET Framework Data Provider for SQL Server, including enhancements introduced in .NET Framework 4.5.
 ms.date: "10/18/2018"
+ms.assetid: 85da7447-7125-426e-aa5f-438a290d1f77
 ---
 
-# Asynchronous programming
+# Asynchronous Programming
 
-This article discusses support for asynchronous programming in .NET Framework Data Provider for SQL Server (SqlClient), including enhancements made to support asynchronous programming functionality that was introduced in .NET Framework 4.5.
+This topic discusses support for asynchronous programming in the .NET Framework Data Provider for SQL Server (SqlClient) including enhancements made to support asynchronous programming functionality that was introduced in .NET Framework 4.5.
 
-## Legacy asynchronous programming
+## Legacy Asynchronous Programming
 
 Prior to .NET Framework 4.5, asynchronous programming with SqlClient was done with the following methods and the `Asynchronous Processing=true` connection property:
 
-- <xref:System.Data.SqlClient.SqlCommand.BeginExecuteNonQuery%2A?displayProperty=nameWithType>
-- <xref:System.Data.SqlClient.SqlCommand.BeginExecuteReader%2A?displayProperty=nameWithType>
-- <xref:System.Data.SqlClient.SqlCommand.BeginExecuteXmlReader%2A?displayProperty=nameWithType>
+1. <xref:System.Data.SqlClient.SqlCommand.BeginExecuteNonQuery%2A?displayProperty=nameWithType>
+
+2. <xref:System.Data.SqlClient.SqlCommand.BeginExecuteReader%2A?displayProperty=nameWithType>
+
+3. <xref:System.Data.SqlClient.SqlCommand.BeginExecuteXmlReader%2A?displayProperty=nameWithType>
 
 This functionality remains in SqlClient in .NET Framework 4.5.
 
 > [!TIP]
 > Beginning in .NET Framework 4.5, these legacy methods no longer require `Asynchronous Processing=true` in the connection string.
 
-## Asynchronous programming features added in .NET Framework 4.5
+## Asynchronous Programming Features Added in .NET Framework 4.5
 
-The asynchronous programming feature provides a simple technique to make code asynchronous. For more information about the asynchronous programming feature that was introduced in .NET Framework 4.5, see:
+The new asynchronous programming feature provides a simple technique to make code asynchronous.
+
+For more information about the asynchronous programming feature that was introduced in .NET Framework 4.5, see:
 
 - [Asynchronous programming in C#](../../../csharp/asynchronous-programming/index.md)
+
 - [Asynchronous Programming with Async and Await (Visual Basic)](../../../visual-basic/programming-guide/concepts/async/index.md)
+
 - [Using SqlDataReader’s new async methods in .NET Framework 4.5 (Part 1)](/archive/blogs/adonet/using-sqldatareaders-new-async-methods-in-net-4-5)
+
 - [Using SqlDataReader’s new async methods in .NET Framework 4.5 (Part 2)](/archive/blogs/adonet/using-sqldatareaders-new-async-methods-in-net-4-5-part-2-examples)
 
 When your user interface is unresponsive or your server does not scale, it is likely that you need your code to be more asynchronous. Writing asynchronous code has traditionally involved installing a callback (also called continuation) to express the logic that occurs after the asynchronous operation finishes. This complicates the structure of asynchronous code as compared with synchronous code.
@@ -39,36 +47,52 @@ The `async` modifier specifies that a method is asynchronous. When calling an `a
 > [!WARNING]
 > Asynchronous calls are not supported if an application also uses the `Context Connection` connection string keyword.
 
-Calling an `async` method does not allocate any additional threads. It might use the existing I/O completion thread briefly at the end.
+Calling an `async` method does not allocate any additional threads. It may use the existing I/O completion thread briefly at the end.
 
 The following methods were added in .NET Framework 4.5 to support asynchronous programming:
 
 - <xref:System.Data.Common.DbConnection.OpenAsync%2A?displayProperty=nameWithType>
+
 - <xref:System.Data.Common.DbCommand.ExecuteDbDataReaderAsync%2A?displayProperty=nameWithType>
+
 - <xref:System.Data.Common.DbCommand.ExecuteNonQueryAsync%2A?displayProperty=nameWithType>
+
 - <xref:System.Data.Common.DbCommand.ExecuteReaderAsync%2A?displayProperty=nameWithType>
+
 - <xref:System.Data.Common.DbCommand.ExecuteScalarAsync%2A?displayProperty=nameWithType>
+
 - <xref:System.Data.Common.DbDataReader.GetFieldValueAsync%2A>
+
 - <xref:System.Data.Common.DbDataReader.IsDBNullAsync%2A>
+
 - <xref:System.Data.Common.DbDataReader.NextResultAsync%2A?displayProperty=nameWithType>
+
 - <xref:System.Data.Common.DbDataReader.ReadAsync%2A?displayProperty=nameWithType>
+
 - <xref:System.Data.SqlClient.SqlConnection.OpenAsync%2A?displayProperty=nameWithType>
+
 - <xref:System.Data.SqlClient.SqlCommand.ExecuteNonQueryAsync%2A?displayProperty=nameWithType>
+
 - <xref:System.Data.SqlClient.SqlCommand.ExecuteReaderAsync%2A?displayProperty=nameWithType>
+
 - <xref:System.Data.SqlClient.SqlCommand.ExecuteScalarAsync%2A?displayProperty=nameWithType>
+
 - <xref:System.Data.SqlClient.SqlCommand.ExecuteXmlReaderAsync%2A?displayProperty=nameWithType>
+
 - <xref:System.Data.SqlClient.SqlDataReader.NextResultAsync%2A?displayProperty=nameWithType>
+
 - <xref:System.Data.SqlClient.SqlDataReader.ReadAsync%2A?displayProperty=nameWithType>
+
 - <xref:System.Data.SqlClient.SqlBulkCopy.WriteToServerAsync%2A?displayProperty=nameWithType>
 
  Other asynchronous members were added to support [SqlClient Streaming Support](sqlclient-streaming-support.md).
 
 > [!TIP]
-> The newer asynchronous methods don't require `Asynchronous Processing=true` in the connection string.
+> The new asynchronous methods don't require `Asynchronous Processing=true` in the connection string.
 
-### Synchronous to asynchronous connection open
+### Synchronous to Asynchronous Connection Open
 
-You can upgrade an older application to use the newer asynchronous feature. For example, assume an application has a synchronous connection algorithm and blocks the UI thread every time it connects to the database and, once connected, the application calls a stored procedure that signals other users of the one who just signed in.
+You can upgrade an existing application to use the new asynchronous feature. For example, assume an application has a synchronous connection algorithm and blocks the UI thread every time it connects to the database and, once connected, the application calls a stored procedure that signals other users of the one who just signed in.
 
 ```csharp
 using SqlConnection conn = new SqlConnection("…");
@@ -81,7 +105,7 @@ using SqlConnection conn = new SqlConnection("…");
 }
 ```
 
-When converted to use the newer asynchronous functionality, the program would look like:
+When converted to use the new asynchronous functionality, the program would look like:
 
 ```csharp
 using System;
@@ -399,13 +423,16 @@ namespace SqlBulkCopyAsyncCodeSample {
             [pubdate] [datetime] NOT NULL)";
 
       // Replace the connection string if needed, for instance to connect to SQL Express: @"Server=(local)\SQLEXPRESS;Database=Demo;Integrated Security=true"
+      // static string connectionString = @"Server=(localdb)\V11.0;Database=Demo";
       static string connectionString = @"Server=(local);Database=Demo;Integrated Security=true";
 
+      // static string odbcConnectionString = @"Driver={SQL Server};Server=(localdb)\V11.0;UID=oledb;Pwd=[PLACEHOLDER];Database=Demo";
       static string odbcConnectionString = @"Driver={SQL Server};Server=(local);Database=Demo;Integrated Security=true";
 
+      // static string marsConnectionString = @"Server=(localdb)\V11.0;Database=Demo;MultipleActiveResultSets=true;";
       static string marsConnectionString = @"Server=(local);Database=Demo;MultipleActiveResultSets=true;Integrated Security=true";
 
-      // Replace the Server name with your actual SQL Azure server name and User ID/Password
+      // Replace the Server name with your actual sql azure server name and User ID/Password
       static string azureConnectionString = @"Server=SqlAzure;User ID=myUserID;Password=myPassword;Database=Demo";
 
       static void Main(string[] args) {
@@ -607,7 +634,7 @@ namespace SqlBulkCopyAsyncCodeSample {
 }
 ```
 
-## Asynchronously use multiple commands with MARS
+## Asynchronously Using Multiple Commands with MARS
 
 The example opens a single connection to the **AdventureWorks** database. Using a <xref:System.Data.SqlClient.SqlCommand> object, a <xref:System.Data.SqlClient.SqlDataReader> is created. As the reader is used, a second <xref:System.Data.SqlClient.SqlDataReader> is opened, using data from the first <xref:System.Data.SqlClient.SqlDataReader> as input to the WHERE clause for the second reader.
 
@@ -678,7 +705,7 @@ class Class1 {
 }
 ```
 
-## Asynchronously read and update data with MARS
+## Asynchronously Reading and Updating Data with MARS
 
 MARS allows a connection to be used for both read operations and data manipulation language (DML) operations with more than one pending operation. This feature eliminates the need for an application to deal with connection-busy errors. In addition, MARS can replace the user of server-side cursors, which generally consume more resources. Finally, because multiple operations can operate on a single connection, they can share the same transaction context, eliminating the need to use **sp_getbindtoken** and **sp_bindsession** system stored procedures.
 

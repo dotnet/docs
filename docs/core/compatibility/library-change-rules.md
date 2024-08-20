@@ -314,7 +314,7 @@ Changes in this category modify the public surface area of a type. Most of the c
 
 - ❌ **DISALLOWED: Changing a [struct](../../csharp/language-reference/builtin-types/struct.md) to a [class](../../csharp/language-reference/keywords/class.md) and vice versa**
 
-- ❌ **DISALLOWED: Adding the [checked](../../csharp/language-reference/statements/checked-and-unchecked.md) keyword to a code block**
+- ❌ **DISALLOWED: Adding the [checked](../../csharp/language-reference/statements/checked-and-unchecked.md) statement to a code block**
 
    This change may cause code that previously executed to throw an <xref:System.OverflowException> and is unacceptable.
 

@@ -316,7 +316,7 @@ Changes in this category modify the public surface area of a type. Most of the c
 
 - ❌ **DISALLOWED: Adding the [checked](../../csharp/language-reference/statements/checked-and-unchecked.md) statement to a code block**
 
-   This change may cause code that previously executed to throw an <xref:System.OverflowException> and is unacceptable.
+   This change might cause code that previously executed to throw an <xref:System.OverflowException> and is unacceptable.
 
 - ❌ **DISALLOWED: Removing [params](../../csharp/language-reference/keywords/method-parameters.md#params-modifier) from a parameter**
 

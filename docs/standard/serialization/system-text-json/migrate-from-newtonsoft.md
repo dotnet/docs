@@ -289,9 +289,11 @@ The JSON value could not be converted to System.String.
 
 ## Migrate to System.Text.Json using GitHub Copilot Chat for Visual Studio
 
-With [Visual Studio 2022 version 17.8 or later](/visualstudio/releases/2022/release-notes), you can try [GitHub Copilot Chat in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-chat) to migrate your `Newtonsoft.Json` code to use `System.Text.Json`.
+With [Visual Studio 2022 version 17.8 or later](/visualstudio/releases/2022/release-notes), you can use [GitHub Copilot Chat in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-chat) to help migrate your `Newtonsoft.Json` code to use `System.Text.Json`. Submit your question and the code to convert as a prompt to copilot chat, as follows.
 
 :::image type="content" source="./media/migrate-newtonsoft-json-using-github-copilot.gif" alt-text="Animated screenshot that shows using GitHub Copilot Chat in Visual Studio to migrate from newtonsoft" lightbox="./media/migrate-newtonsoft-json-using-github-copilot.gif":::
+
+See [tips to improve Copilot chat results](/visualstudio/ide/copilot-chat-context) to learn how to use chat features, such as, slash commands, references, and threads to get better answers with scoped context in Copilot Chat.
 
 ## Scenarios using JsonSerializer
 

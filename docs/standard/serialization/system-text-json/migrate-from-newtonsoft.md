@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "serialization"
   - "objects, serializing"
 ms.topic: how-to
+ms.collection: ce-skilling-ai-copilot
 ---
 
 # Migrate from Newtonsoft.Json to System.Text.Json
@@ -29,6 +30,16 @@ We're investing in adding the features that are most often requested. If your ap
 Most of this article is about how to use the <xref:System.Text.Json.JsonSerializer> API, but it also includes guidance on how to use the <xref:System.Text.Json.JsonDocument> (which represents the Document Object Model or DOM), <xref:System.Text.Json.Utf8JsonReader>, and <xref:System.Text.Json.Utf8JsonWriter> types.
 
 In Visual Basic, you can't use <xref:System.Text.Json.Utf8JsonReader>, which also means you can't write custom converters. Most of the workarounds presented here require that you write custom converters. You can write a custom converter in C# and register it in a Visual Basic project. For more information, see [Visual Basic support](visual-basic-support.md).
+
+## Assistance from GitHub Copilot
+
+You can get coding help from GitHub Copilot to convert your code right within your IDE.
+
+If you're using [Visual Studio 2022 version 17.8 or later](/visualstudio/releases/2022/release-notes), you can try the AI-driven [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states) to help migrate your `Newtonsoft.Json` code to use `System.Text.Json`. Submit your question and the code to convert as a prompt in the copilot chat window, as in the following example.
+
+:::image type="content" source="./media/migrate-newtonsoft-json-using-github-copilot.gif" alt-text="Animated screenshot that shows using GitHub Copilot Chat in Visual Studio to migrate from newtonsoft" lightbox="./media/migrate-newtonsoft-json-using-github-copilot.gif":::
+
+You can further use chat features, such as [slash commands, references, and threads](/visualstudio/ide/copilot-chat-context), to set intent and get better answers with scoped context.
 
 ## Table of differences
 
@@ -286,14 +297,6 @@ public class ExampleClass
 ```output
 The JSON value could not be converted to System.String.
 ```
-
-## Assistance from GitHub Copilot in Visual Studio
-
-If you're using [Visual Studio 2022 version 17.8 or later](/visualstudio/releases/2022/release-notes), you can try the AI-driven [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states) to help migrate your `Newtonsoft.Json` code to use `System.Text.Json`. Submit your question and the code to convert as a prompt in the copilot chat window, as in the following example.
-
-:::image type="content" source="./media/migrate-newtonsoft-json-using-github-copilot.gif" alt-text="Animated screenshot that shows using GitHub Copilot Chat in Visual Studio to migrate from newtonsoft" lightbox="./media/migrate-newtonsoft-json-using-github-copilot.gif":::
-
-GitHub Copilot provides you coding assisstance right within the IDE. You can further use chat features, such as [slash commands, references, and threads](/visualstudio/ide/copilot-chat-context), to set intent and get better answers with scoped context.
 
 ## Scenarios using JsonSerializer
 

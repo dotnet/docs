@@ -293,7 +293,7 @@ If you're using [Visual Studio 2022 version 17.8 or later](/visualstudio/release
 
 :::image type="content" source="./media/migrate-newtonsoft-json-using-github-copilot.gif" alt-text="Animated screenshot that shows using GitHub Copilot Chat in Visual Studio to migrate from newtonsoft" lightbox="./media/migrate-newtonsoft-json-using-github-copilot.gif":::
 
-GitHub Copilot provides you coding assisstance right within the IDE. You can further use chat features, such as, [slash commands, references, and threads](/visualstudio/ide/copilot-chat-context) to set intent and get better answers with scoped context.
+GitHub Copilot provides you coding assisstance right within the IDE. You can further use chat features, such as [slash commands, references, and threads](/visualstudio/ide/copilot-chat-context), to set intent and get better answers with scoped context.
 
 ## Scenarios using JsonSerializer
 

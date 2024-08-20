@@ -287,13 +287,13 @@ public class ExampleClass
 The JSON value could not be converted to System.String.
 ```
 
-## Migrate to System.Text.Json using GitHub Copilot Chat for Visual Studio
+## Assisstance from GitHub Copilot in Visual Studio
 
-With [Visual Studio 2022 version 17.8 or later](/visualstudio/releases/2022/release-notes), you can use [GitHub Copilot Chat in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-chat) to help migrate your `Newtonsoft.Json` code to use `System.Text.Json`. Submit your question and the code to convert as a prompt to copilot chat, as follows.
+If you're using [Visual Studio 2022 version 17.8 or later](/visualstudio/releases/2022/release-notes), you can try the AI-driven [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states) to help migrate your `Newtonsoft.Json` code to use `System.Text.Json`. Submit your question and the code to convert as a prompt in the copilot chat window, as in the following example.
 
 :::image type="content" source="./media/migrate-newtonsoft-json-using-github-copilot.gif" alt-text="Animated screenshot that shows using GitHub Copilot Chat in Visual Studio to migrate from newtonsoft" lightbox="./media/migrate-newtonsoft-json-using-github-copilot.gif":::
 
-See [tips to improve Copilot chat results](/visualstudio/ide/copilot-chat-context) to learn how to use chat features, such as, slash commands, references, and threads to get better answers with scoped context in Copilot Chat.
+GitHub Copilot provides you coding assisstance right within the IDE. You can further use chat features, such as, [slash commands, references, and threads](/visualstudio/ide/copilot-chat-context) to set intent and get better answers with scoped context.
 
 ## Scenarios using JsonSerializer
 

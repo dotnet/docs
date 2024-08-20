@@ -1,12 +1,12 @@
 ---
 title: What's new in C# 13
 description: Get an overview of the new features in C# 13. Follow the release of new preview features as .NET 9 and C# 13 previews are released.
-ms.date: 07/26/2024
+ms.date: 08/20/2024
 ms.topic: whats-new
 ---
 # What's new in C# 13
 
-C# 13 includes the following new features. You can try these features using the latest [Visual Studio 2022](https://visualstudio.microsoft.com/vs/preview/) version or the [.NET 9 Preview SDK](https://dotnet.microsoft.com/download/dotnet).
+C# 13 includes the following new features. You can try these features using the latest [Visual Studio 2022](https://visualstudio.microsoft.com/vs/preview/) version or the [.NET 9 Preview SDK](https://dotnet.microsoft.com/download/dotnet):
 
 - [`params` collections](#params-collections)
 - [New `lock` type and semantics](#new-lock-object).
@@ -16,6 +16,7 @@ C# 13 includes the following new features. You can try these features using the 
 - [Enable `ref` locals and `unsafe` contexts in iterators and async methods](#ref-and-unsafe-in-iterators-and-async-methods)
 - [Enable `ref struct` types to implement interfaces](#ref-struct-interfaces).
 - [Allow ref struct types](#allows-ref-struct) as arguments for type parameters in generics.
+- [Partial properties and indexers](#more-partial-members) are now allowed in `partial` types.
 
 C# 13 is supported on **.NET 9**. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
 
@@ -88,13 +89,17 @@ In the same fashion, C# 13 allows `unsafe` contexts in iterator methods. However
 
 ## `ref struct` interfaces
 
-Prior to C# 13, `ref struct` types weren't allowed to implement interfaces. Beginning with C# 13, they can. To ensure ref safety rules, a `ref struct` type can't be converted to an interface type. That is a boxing conversion, and could violate ref safety. Learn more in the updates on [`ref struct` types](../language-reference/builtin-types/ref-struct.md#restrictions-for-ref-struct-types-that-implement-an-interface).
+Before C# 13, `ref struct` types weren't allowed to implement interfaces. Beginning with C# 13, they can. To ensure ref safety rules, a `ref struct` type can't be converted to an interface type. That is a boxing conversion, and could violate ref safety. Learn more in the updates on [`ref struct` types](../language-reference/builtin-types/ref-struct.md#restrictions-for-ref-struct-types-that-implement-an-interface).
 
 ## `allows ref struct`
 
-Prior to C# 13, `ref struct` types couldn't be declared as the type argument for a generic type or method. Now, generic type declarations can add an anti-constraint, `allows ref struct`. This anti-constraint declares that the type argument supplied for that type parameter can be a `ref struct` type. The compiler enforces ref safety rules on all instances of that type parameter.
+Before C# 13, `ref struct` types couldn't be declared as the type argument for a generic type or method. Now, generic type declarations can add an anti-constraint, `allows ref struct`. This anti-constraint declares that the type argument supplied for that type parameter can be a `ref struct` type. The compiler enforces ref safety rules on all instances of that type parameter.
 
 This enables types such as <xref:System.Span%601?displayProperty=nameWithType> and <xref:System.ReadOnlySpan%601?displayProperty=nameWithType> to be used with generic algorithms, where applicable. You can learn more in the updates for [`where`](../language-reference/keywords/where-generic-type-constraint.md) and the programming guide article on [generic constraints](../programming-guide/generics/constraints-on-type-parameters.md).
+
+## More partial members
+
+You can declare `partial` properties and `partial` indexers in C# 13. Partial properties and indexers generally follow the same rules as `partial` methods: you create one *declaring declaration* and one *implementing declaration*. The signatures of the two declarations must match. One restriction is that you can't use an auto-property declaration for a partial property. Properties that don't declare a body are considered the *declaring declaration*. You can learn more in the article on [partial members](../language-reference/keywords/partial-member.md).
 
 ## See also
 

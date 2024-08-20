@@ -23,6 +23,9 @@ The `System.Text.Json` namespace provides functionality for serializing to and d
 * .NET Framework 4.6.2 and later versions
 * .NET Core 2.0, 2.1, and 2.2
 
+>[!TIP]
+>Use AI assistance to [migrate from `Newtonsoft.Json` with GitHub Copilot](#github-copilot). 
+
 `System.Text.Json` focuses primarily on performance, security, and standards compliance. It has some key differences in default behavior and doesn't aim to have feature parity with `Newtonsoft.Json`. For some scenarios, `System.Text.Json` currently has no built-in functionality, but there are recommended workarounds. For other scenarios, workarounds are impractical.
 
 We're investing in adding the features that are most often requested. If your application depends on a missing feature, consider [filing an issue](https://github.com/dotnet/runtime/issues/new) in the dotnet/runtime GitHub repository to find out if support for your scenario can be added.
@@ -31,7 +34,7 @@ Most of this article is about how to use the <xref:System.Text.Json.JsonSerializ
 
 In Visual Basic, you can't use <xref:System.Text.Json.Utf8JsonReader>, which also means you can't write custom converters. Most of the workarounds presented here require that you write custom converters. You can write a custom converter in C# and register it in a Visual Basic project. For more information, see [Visual Basic support](visual-basic-support.md).
 
-## Use GitHub Copilot to migrate from Newtonsoft.Json
+## <a name="github-copilot"></a>Use GitHub Copilot to migrate from Newtonsoft.Json
 
 You can get coding help from GitHub Copilot to convert your code right within your IDE.
 

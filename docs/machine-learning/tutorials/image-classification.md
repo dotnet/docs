@@ -69,7 +69,7 @@ This tutorial uses the TensorFlow [Inception](https://storage.googleapis.com/dow
 
 Because the `Inception model` has already been pre-trained on thousands of different images, internally it contains the [image features](https://en.wikipedia.org/wiki/Feature_(computer_vision)) needed for image identification. We can make use of these internal image features in the model to train a new model with far fewer classes.
 
-As shown in the following diagram, you add a reference to the ML.NET NuGet packages in your .NET Core or .NET Framework applications. Under the covers, ML.NET includes and references the native `TensorFlow` library that allows you to write code that loads an existing trained `TensorFlow` model file.
+As shown in the following diagram, you add a reference to the ML.NET NuGet packages in your .NET or .NET Framework applications. Under the covers, ML.NET includes and references the native `TensorFlow` library that allows you to write code that loads an existing trained `TensorFlow` model file.
 
 ![TensorFlow transform ML.NET Arch diagram](./media/image-classification/tensorflow-mlnet.png)
 
@@ -85,7 +85,7 @@ See [Deep learning vs. machine learning](/azure/machine-learning/concept-deep-le
 
 ### Data
 
-There are two data sources: the `.tsv` file, and the image files.  The `tags.tsv` file contains two columns: the first one is defined as `ImagePath` and the second one is the `Label` corresponding to the image. The following example file doesn't have a header row, and looks like this:
+There are two data sources: the `.tsv` file, and the image files. The `tags.tsv` file contains two columns: the first one is defined as `ImagePath` and the second one is the `Label` corresponding to the image. The following example file doesn't have a header row, and looks like this:
 
 <!-- markdownlint-disable MD010 -->
 ```tsv
@@ -141,11 +141,11 @@ The training and testing images are located in the assets folders that you'll do
 
 ### Create classes and define paths
 
-1. Add the following additional `using` statements to the top of the *Program.cs* file:
+1. Add the following additional `using` directives to the top of the *Program.cs* file:
 
     [!code-csharp[AddUsings](./snippets/image-classification/csharp/Program.cs#AddUsings)]
 
-1. Add the following code to the line right below the using statements to specify the asset paths:
+1. Add the following code to the line right below the `using` directives to specify the asset paths:
 
     [!code-csharp[DeclareGlobalVariables](./snippets/image-classification/csharp/Program.cs#DeclareGlobalVariables)]
 
@@ -171,7 +171,7 @@ The training and testing images are located in the assets folders that you'll do
 
 ### Initialize variables
 
-1. Initialize the `mlContext` variable with a new instance of `MLContext`.  Replace the `Console.WriteLine("Hello World!")` line with the following code:
+1. Initialize the `mlContext` variable with a new instance of `MLContext`. Replace the `Console.WriteLine("Hello World!")` line with the following code:
 
     [!code-csharp[CreateMLContext](./snippets/image-classification/csharp/Program.cs#CreateMLContext)]
 
@@ -321,7 +321,7 @@ An ML.NET model pipeline is a chain of estimators. No execution happens during p
 
     [!code-csharp[SaveModel](./snippets/image-classification/csharp/Program.cs#ReturnModel)]
 
-## Run the application!
+## Run the application
 
 1. Add the call to `GenerateModel` after the creation of the <xref:Microsoft.ML.MLContext> class:
 

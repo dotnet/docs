@@ -6,49 +6,69 @@ resource: repository
 disabled: false
 where:
 configuration:
-  resourceManagementConfiguration:
-    scheduledSearches:
-    - description: Label doc-bug issues with okr-health (scheduled search)
-      frequencies:
-      - hourly:
-          hour: 3
-      filters:
-      - isIssue
-      - isOpen
-      - hasLabel:
-          label: doc-bug
-      - isNotLabeledWith:
-          label: okr-health
-      actions:
-      - addLabel:
-          label: okr-health
-    eventResponderTasks:
-    - if:
-      - payloadType: Pull_Request
-      then:
-      - inPrLabel:
-          label: in-pr
-      description: Add in-pr label to issues
-    - if:
-      - payloadType: Pull_Request
-      then:
-      - labelSync:
-          pattern: okr-
-      - labelSync:
-          pattern: ':checkered_flag: Release'
-      description: Synchronize OKR and release labels from PRs to closing issues
-    - if:
-      - payloadType: Issues
-      - or:
-        - hasLabel:
-            label: doc-bug
-        - titleContains:
-            pattern: freshness
-            isRegex: False
-        - titleContains:
-            pattern: out( |-)of( |-)date
-            isRegex: True
-      then:
-      - addLabel:
-          label: okr-health
-      description: Label issues with okr-health (event-based)
+    resourceManagementConfiguration:
+        scheduledSearches:
+            - description: Label doc-bug issues with okr-quality (scheduled search)
+              frequencies:
+                  - hourly:
+                        hour: 3
+              filters:
+                  - isIssue
+                  - isOpen
+                  - hasLabel:
+                        label: doc-bug
+                  - isNotLabeledWith:
+                        label: okr-quality
+              actions:
+                  - addLabel:
+                        label: okr-quality
+
+        eventResponderTasks:
+            - description: Add in-pr label to issues
+              if:
+                  - payloadType: Pull_Request
+              then:
+                  - inPrLabel:
+                        label: in-pr
+
+            - description: Synchronize OKR and release labels from PRs to closing issues
+              if:
+                  - payloadType: Pull_Request
+              then:
+                  - labelSync:
+                        pattern: okr-
+                  - labelSync:
+                        pattern: ":checkered_flag: Release"
+
+            - description: Label issues with okr-freshness (event-based)
+              if:
+                  - payloadType: Issues
+                  - or:
+                        - titleContains:
+                              pattern: freshness
+                              isRegex: False
+                        - titleContains:
+                              pattern: out( |-)of( |-)date
+                              isRegex: True
+                        - titleContains:
+                              pattern: stale
+                              isRegex: False
+              then:
+                  - addLabel:
+                        label: okr-freshness
+
+            - description: Label typo issues
+              if:
+                  - payloadType: Issues
+                  - isAction:
+                        action: Opened
+                  - titleContains:
+                        pattern: (T|t)ypo
+                        isRegex: True
+              then:
+                  - addLabel:
+                        label: doc-bug
+                  - addLabel:
+                        label: help wanted
+                  - addLabel:
+                        label: good first issue

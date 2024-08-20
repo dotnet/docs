@@ -1,99 +1,170 @@
 ---
-title: Quickstart - Generate images using Azure AI with .NET
-description: Create a simple app using the .NET Azure OpenAI SDK to generate postal card images.
-ms.date: 03/04/2024
+title: Quickstart - Generate images using AI with .NET
+description: Create a simple app using OpenAI to generate postal card images.
+ms.date: 07/17/2024
 ms.topic: quickstart
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 author: fboucher
 ms.author: frbouche
+zone_pivot_groups: openai-library
 # CustomerIntent: As a .NET developer new to Azure OpenAI, I want deploy and use sample code to interact to learn how to generate images from the sample code.
 ---
 
-# Generate images using Azure AI with .NET
+# Generate images using AI with .NET
 
-Get started with the .NET Azure OpenAI SDK by creating a simple .NET 8 console chat application. The application will run locally and use the OpenAI `dell-e-3` model to generate postal card and invite your friends for a hike! Follow these steps to provision Azure OpenAI and learn how to use the .NET Azure OpenAI SDK.
+:::zone target="docs" pivot="openai"
 
-[!INCLUDE [download-alert](includes/prerequisites-and-azure-deploy.md)]
+Get started with AI by creating a simple .NET 8 console chat application. The application will run locally and use the OpenAI `dall-e-3` model to generate postal card images so you can invite your friends for a hike! Follow these steps to get access to OpenAI and learn how to use Semantic Kernel.
 
-## Trying Generate Hiking Images sample
+[!INCLUDE [download-alert](includes/prerequisites-openai.md)]
 
-1. From a terminal or command prompt, navigate to the `05-HikeImages` directory.
-2. It's now time to try the console application. Type in the following to run the app:
+:::zone-end
+
+:::zone target="docs" pivot="azure-openai"
+
+Get started with AI by creating a simple .NET 8 console chat application. The application will run locally and use the OpenAI `dall-e-3` model to generate postal card images so you can invite your friends for a hike! Follow these steps to provision Azure OpenAI and learn how to use the .NET Azure OpenAI SDK.
+
+[!INCLUDE [download-alert](includes/prerequisites-azure-openai.md)]
+
+:::zone-end
+
+## Get the sample project
+
+[!INCLUDE [clone-sample-repo](includes/clone-sample-repo.md)]
+
+:::zone target="docs" pivot="azure-openai"
+
+## Create the Azure OpenAI service
+
+# [Azure Developer CLI](#tab/azd)
+
+[!INCLUDE [deploy-azd](includes/deploy-azd.md)]
+
+# [Azure CLI](#tab/azure-cli)
+
+1. To provision an Azure OpenAI service and model using the Azure CLI, complete the steps in the [Create and deploy an Azure OpenAI Service resource](/azure/ai-services/openai/how-to/create-resource?pivots=cli) article.
+
+1. From a terminal or command prompt, navigate to the `src\quickstarts\azure-openai\05-HikeImages` directory.
+
+1. Run the following commands to configure your OpenAI API key as a secret for the sample app:
+
+    ```bash
+    dotnet user-secrets init
+    dotnet user-secrets set OpenAIKey <your-openai-key>
+
+# [Azure Portal](#tab/azure-portal)
+
+1. To provision an Azure OpenAI service and model using the Azure portal, complete the steps in the [Create and deploy an Azure OpenAI Service resource](/azure/ai-services/openai/how-to/create-resource?pivots=web-portal) article.
+
+1. From a terminal or command prompt, navigate to the `src\quickstarts\azure-openai\05-HikeImages` directory.
+
+1. Run the following commands to configure your OpenAI API key as a secret for the sample app:
+
+    ```bash
+    dotnet user-secrets init
+    dotnet user-secrets set OpenAIKey <your-openai-key>
+
+---
+
+:::zone-end
+
+## Try the the hiking images sample
+
+:::zone target="docs" pivot="openai"
+
+1. Clone the repository: [dotnet/ai-samples](https://github.com/dotnet/ai-samples)
+
+1. Run the following commands to configure your OpenAI API key as a secret for the sample app:
+
+    ```bash
+    dotnet user-secrets init
+    dotnet user-secrets set OpenAIKey <your-openai-key>
+    ```
+
+1. Use the `dotnet run` command to run the app:
 
     ```dotnetcli
     dotnet run
     ```
 
-    If you get an error message the Azure OpenAI resources may not have finished deploying. Wait a couple of minutes and try again.
+:::zone-end
 
-## Understanding the code
+:::zone target="docs" pivot="azure-openai"
 
-Our application uses the `Azure.AI.OpenAI` client SDK, which is available on [NuGet](https://www.nuget.org/packages/Azure.AI.OpenAI), to send and receive requests to an Azure OpenAI service deployed in Azure.
+1. From a terminal or command prompt, navigate to the `azure-openai\05-HikeImages` directory.
 
-The `OpenAIClient` class facilitates the requests and responses. `ChatCompletionOptions` specifies parameters of how the model will respond.
+2. Use the `dotnet run` command to run the app:
+
+    ```dotnetcli
+    dotnet run
+    ```
+
+    > [!TIP]
+    > If you get an error message, the Azure OpenAI resources might not have finished deploying. Wait a couple of minutes and try again.
+
+:::zone-end
+
+## Explore the code
+
+:::zone target="docs" pivot="openai"
+
+The application uses the [`Microsoft.SemanticKernel`](https://www.nuget.org/packages/Microsoft.SemanticKernel) package to send and receive requests to the OpenAI service.
+
+The _Program.cs_ file contains all of the app code. The first several lines of code set configuration values and get the OpenAI Key that was previously set using the `dotnet user-secrets` command.
 
 ```csharp
-var openAIClient = new OpenAIClient(endpoint, credentials);
-
-var completionOptions = new ChatCompletionsOptions
-{
-    MaxTokens = 400,
-    Temperature = 1f,
-    FrequencyPenalty = 0.0f,
-    PresencePenalty = 0.0f,
-    NucleusSamplingFactor = 0.95f, // Top P
-    DeploymentName = openAIDeploymentName
-};
+var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
+string key = config["OpenAIKey"];
 ```
 
-The entire application is contained within the _Program.cs_ file. The first several lines of code load secrets and configuration values that were set in the `dotnet user-secrets` for you during the application provisioning.
+The `OpenAITextToImageService` service facilitates the requests and responses.
 
 ```csharp
-// == Retrieve the local secrets saved during the Azure deployment ==========
-var config = new ConfigurationBuilder()
-    .AddUserSecrets<Program>()
-    .Build();
-
-string openAIEndpoint = config["AZURE_OPENAI_ENDPOINT"];
-string openAIDeploymentName = config["AZURE_OPENAI_GPT_NAME"];
-string openAiKey = config["AZURE_OPENAI_KEY"];
-
-// == Creating the AIClient ==========
-var endpoint = new Uri(openAIEndpoint);
-var credentials = new AzureKeyCredential(openAiKey);
+OpenAITextToImageService textToImageService = new(key, null);
 ```
 
-Once the `OpenAIClient` client is created, we we provide more context to the model by adding a system prompt. A good prompt to generate images requires a clear description: what is in the images, specific color to use, style (drawing, painting, realistic or cartoony). The model will use this prompt to generate the image.
+:::zone-end
+
+:::zone target="docs" pivot="azure-openai"
+
+The application uses the [`Microsoft.SemanticKernel`](https://www.nuget.org/packages/Microsoft.SemanticKernel) package to send and receive requests to the Azure OpenAI service.
+
+The _Program.cs_ file contains all of the app code. The first several lines of code load secrets and configuration values that were set in the `dotnet user-secrets` for you during the application provisioning.
 
 ```csharp
-string imagePrompt = """
-A postal card with an happy hiker waving, there a beautiful mountain in the background.
-There is a trail visible in the foreground. 
-The postal card has text in red saying: 'You are invited for a hike!'
-""";
+// Retrieve the local secrets saved during the Azure deployment
+var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
+string endpoint = config["AZURE_OPENAI_ENDPOINT"];
+string deployment = config["AZURE_OPENAI_GPT_NAME"];
+string key = config["AZURE_OPENAI_KEY"];
 ```
 
-To have the model generate a response based off the user request, use the `GetImageGenerationsAsync` function, and specify the size and quality.
+The `AzureOpenAITextToImageService` service facilitates the requests and responses.
 
 ```csharp
-Response<ImageGenerations> response = await openAIClient.GetImageGenerationsAsync(
-    new ImageGenerationOptions()
-    {
-        DeploymentName = openAIDalleName,
-        Prompt = imagePrompt,
-        Size = ImageSize.Size1024x1024,
-        Quality = ImageGenerationQuality.Standard
-    });
+AzureOpenAITextToImageService textToImageService = new(deployment, endpoint, key, null);
+```
 
-ImageGenerationData generatedImage = response.Value.Data[0];
-if (!string.IsNullOrEmpty(generatedImage.RevisedPrompt))
-{
-    Console.WriteLine($"\n\nInput prompt automatically revised to:\n {generatedImage.RevisedPrompt}");
-}
-Console.WriteLine($"\n\nThe generated image is ready at:\n {generatedImage.Url.AbsoluteUri}");
+:::zone-end
+
+Provide context and instructions to the model by adding a system prompt. A good image generation prompt requires a clear description of what the image is, which colors to use, the intended style, and other descriptors.
+
+The `GenerateImageAsync` function instructs the model to generate a response based on the user prompt and image size and quality configurations.
+
+```csharp
+// Generate the image
+string imageUrl = await textToImageService.GenerateImageAsync("""
+    A postal card with a happy hiker waving and a beautiful mountain in the background.
+    There is a trail visible in the foreground.
+    The postal card has text in red saying: 'You are invited for a hike!'
+    """, 1024, 1024);
+
+Console.WriteLine($"The generated image is ready at:\n{imageUrl}");
 ```
 
 Customize the prompt to personalize the images generated by the model.
+
+:::zone target="docs" pivot="azure-openai"
 
 ## Clean up resources
 
@@ -103,7 +174,11 @@ When you no longer need the sample application or resources, remove the correspo
 azd down
 ```
 
+[!INCLUDE [troubleshoot](includes/troubleshoot.md)]
+
+:::zone-end
+
 ## Next steps
 
-- [Quickstart - Summarize text using Azure AI chat app with .NET](quickstart-openai-summarize-text.md)
+- [Quickstart - Summarize text using an AI chat app with .NET](quickstart-openai-summarize-text.md)
 - [Generate text and conversations with .NET and Azure OpenAI Completions](/training/modules/open-ai-dotnet-text-completions/)

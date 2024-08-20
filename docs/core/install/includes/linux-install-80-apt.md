@@ -3,6 +3,7 @@ author: adegeo
 ms.author: adegeo
 ms.date: 11/14/2023
 ms.topic: include
+ms.custom: linux-related-content
 ---
 
 ### Install the SDK
@@ -14,8 +15,7 @@ sudo apt-get update && \
   sudo apt-get install -y dotnet-sdk-8.0
 ```
 
-> [!IMPORTANT]
-> If you receive an error message similar to **Unable to locate package dotnet-sdk-8.0**, see the [troubleshooting](#troubleshooting) section.
+To learn how to use the .NET CLI, see [.NET CLI overview](../../tools/index.md).
 
 ### Install the runtime
 
@@ -26,11 +26,10 @@ sudo apt-get update && \
   sudo apt-get install -y aspnetcore-runtime-8.0
 ```
 
-> [!IMPORTANT]
-> If you receive an error message similar to **Unable to locate package aspnetcore-runtime-8.0**, see the [troubleshooting](#troubleshooting) section.
-
 As an alternative to the ASP.NET Core Runtime, you can install the .NET Runtime, which doesn't include ASP.NET Core support: replace `aspnetcore-runtime-8.0` in the previous command with `dotnet-runtime-8.0`:
 
 ```bash
 sudo apt-get install -y dotnet-runtime-8.0
 ```
+
+To learn how to use the .NET CLI, see [.NET CLI overview](../../tools/index.md).

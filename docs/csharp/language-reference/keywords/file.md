@@ -1,6 +1,6 @@
 ---
 description: "file modifier: Declare types whose scope is the file in which it's declared"
-title: "file keyword - C# Reference"
+title: "file keyword"
 ms.date: 09/15/2022
 f1_keywords: 
   - "file_CSharpKeyword"
@@ -40,7 +40,6 @@ For more information, see [Declared accessibility](~/_csharpstandard/standard/ba
 
 ## See also
 
-- [C# Reference](../index.md)
 - [C# Keywords](index.md)
 - [Access Modifiers](access-modifiers.md)
 - [Accessibility Levels](accessibility-levels.md)

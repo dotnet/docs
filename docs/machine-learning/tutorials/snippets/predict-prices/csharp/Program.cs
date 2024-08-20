@@ -82,7 +82,7 @@ void Evaluate(MLContext mlContext, ITransformer model)
     Console.WriteLine($"*       RSquared Score:      {metrics.RSquared:0.##}");
     // </Snippet18>
     // <Snippet19>
-    Console.WriteLine($"*       Root Mean Squared Error:      {metrics.RootMeanSquaredError:#.##}");
+    Console.WriteLine($"*       Root Mean Squared Error:      {metrics.RootMeanSquaredError:0.##}");
     // </Snippet19>
     Console.WriteLine($"*************************************************");
 }

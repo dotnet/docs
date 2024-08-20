@@ -11,7 +11,7 @@ Collections provide a flexible way to work with groups of objects. You can class
 
 - **Element access**: Every collection can be enumerated to access each element in order. Some collections access elements by *index*, the element's position in an ordered collection. The most common example is <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>. Other collections access elements by *key*, where a *value* is associated with a single *key*. The most common example is <xref:System.Collections.Generic.Dictionary%602?displayProperty=nameWithType>. You choose between these collection types based on how your app accesses elements.
 - **Performance profile**: Every collection has different performance profiles for actions like adding an element, finding an element, or removing an element. You can pick a collection type based on the operations used most in your app.
-- **Grow and shrink dynamically**: Most collections supporting adding or removing elements dynamically. Notably, <xref:System.Array>, <xref:System.Span%601?displayProperty=nameWithType>, and <xref:System.Memory%601?displayProperty=nameWithType> don't.
+- **Grow and shrink dynamically**: Most collections support adding or removing elements dynamically. Notably, <xref:System.Array>, <xref:System.Span%601?displayProperty=nameWithType>, and <xref:System.Memory%601?displayProperty=nameWithType> don't.
 
 In addition to those characteristics, the runtime provides specialized collections that prevent adding or removing elements or modifying the elements of the collection. Other specialized collections provide safety for concurrent access in multi-threaded apps.
 

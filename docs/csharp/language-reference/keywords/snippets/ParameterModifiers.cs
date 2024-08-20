@@ -86,5 +86,65 @@ internal class ParameterModifiers
             Inside the method, the first element is: -3
             After calling the method, the first element is: -3        */
         // </ParameterPassingExamples>
+
+        TryParamsCalls();
     }
+
+    //<ParamsModifierExamples>
+    public static void ParamsModifierExample(params int[] list)
+    {
+        for (int i = 0; i < list.Length; i++)
+        {
+            System.Console.Write(list[i] + " ");
+        }
+        System.Console.WriteLine();
+    }
+
+    public static void ParamsModifierObjectExample(params object[] list)
+    {
+        for (int i = 0; i < list.Length; i++)
+        {
+            System.Console.Write(list[i] + " ");
+        }
+        System.Console.WriteLine();
+    }
+
+    public static void TryParamsCalls()
+    {
+        // You can send a comma-separated list of arguments of the
+        // specified type.
+        ParamsModifierExample(1, 2, 3, 4);
+        ParamsModifierObjectExample(1, 'a', "test");
+
+        // A params parameter accepts zero or more arguments.
+        // The following calling statement displays only a blank line.
+        ParamsModifierObjectExample();
+
+        // An array argument can be passed, as long as the array
+        // type matches the parameter type of the method being called.
+        int[] myIntArray = { 5, 6, 7, 8, 9 };
+        ParamsModifierExample(myIntArray);
+
+        object[] myObjArray = { 2, 'b', "test", "again" };
+        ParamsModifierObjectExample(myObjArray);
+
+        // The following call causes a compiler error because the object
+        // array cannot be converted into an integer array.
+        //ParamsModifierExample(myObjArray);
+
+        // The following call does not cause an error, but the entire
+        // integer array becomes the first element of the params array.
+        ParamsModifierObjectExample(myIntArray);
+    }
+    /*
+    Output:
+        1 2 3 4
+        1 a test
+
+        5 6 7 8 9
+        2 b test again
+        System.Int32[]
+    */
+    //</ParamsModifierExamples>
+
 }

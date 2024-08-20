@@ -24,7 +24,7 @@ For simple communication across processes, consider inter-process communication 
 
 Across machines, use a network-based solution as an alternative. Preferably, use a low-overhead plain text protocol, such as HTTP. The [Kestrel web server](/aspnet/core/fundamentals/servers/kestrel), which is the web server used by ASP.NET Core, is an option here. Also, consider using <xref:System.Net.Sockets> for network-based, cross-machine scenarios. StreamJsonRpc, mentioned earlier, can be used for JSON or binary (via MessagePack) communication over web sockets.
 
-For more messaging options, see [.NET Open Source Developer Projects: Messaging](https://github.com/Microsoft/dotnet/blob/master/dotnet-developer-projects.md#messaging).
+For more messaging options, see [.NET Open Source Developer Projects: Messaging](https://github.com/Microsoft/dotnet/blob/main/dotnet-developer-projects.md#messaging).
 
 Because remoting is not supported, calls to `BeginInvoke()` and `EndInvoke()` on delegate objects will throw `PlatformNotSupportedException`. For more information, see [Migrating Delegate BeginInvoke Calls For .NET Core](https://devblogs.microsoft.com/dotnet/migrating-delegate-begininvoke-calls-for-net-core/).
 
@@ -59,9 +59,9 @@ Windows Workflow Foundation (WF) is not supported in .NET 6+. For an alternative
 - <xref:System.Reflection.Emit.AssemblyBuilderAccess.RunAndSave>
 - <xref:System.Reflection.Emit.AssemblyBuilderAccess.Save>
 
-In .NET 9, a persisted `AssemblyBuilder` was implemented and the <xref:System.Reflection.Emit.AssemblyBuilder.Save%2A?displayProperty=nameWithType> method was added back to the reflection emit library. To learn more about how to use this API, see [System.Reflection.Emit.AssemblyBuilder class](../../fundamentals/runtime-libraries/system-reflection-emit-assemblybuilder.md#persistable-dynamic-assemblies-in-net-core).
+In .NET 9, a `PersistedAssemblyBuilder` was implemented and the <xref:System.Reflection.Emit.AssemblyBuilder.Save%2A?displayProperty=nameWithType> method was added back to the reflection emit library. To learn more about how to use this API, see [System.Reflection.Emit.PersistedAssemblyBuilder class](../../fundamentals/runtime-libraries/system-reflection-emit-persistedassemblybuilder.md).
 
-For more information, see [dotnet/runtime issue 15704](https://github.com/dotnet/runtime/issues/15704).
+For more information about the different AssemblyBuilder implementations in .NET, see [System.Reflection.Emit.AssemblyBuilder class](../../fundamentals/runtime-libraries/system-reflection-emit-assemblybuilder.md)
 
 ## Loading multi-module assemblies
 

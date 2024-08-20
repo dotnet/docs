@@ -11,6 +11,8 @@ ms.assetid: 06a4ae8c-eeb2-4d5a-817e-b1b95c0653e1
 ---
 # Performance counters in .NET Framework
 
+[!INCLUDE [net-framework-specific](../includes/net-framework-specific.md)]
+
 This article provides a list of performance counters you can find in the [Windows Performance Monitor](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc749249(v=ws.11)).
 
 ## Exception performance counters
@@ -43,12 +45,12 @@ The *.NET CLR JIT* category includes counters that provide information about cod
 
 |Performance counter|Description|
 |-------------------------|-----------------|
-|**# of IL Bytes JITted**|Displays the total number of Microsoft intermediate language (MSIL) bytes compiled by the just-in-time (JIT) compiler since the application started. This counter is equivalent to the **Total # of IL Bytes Jitted** counter.|
+|**# of IL Bytes JITted**|Displays the total number of common intermediate language (CIL) bytes compiled by the just-in-time (JIT) compiler since the application started. This counter is equivalent to the **Total # of IL Bytes Jitted** counter.|
 |**# of Methods JITted**|Displays the total number of methods JIT-compiled since the application started. This counter does not include pre-JIT-compiled methods.|
 |**% Time in Jit**|Displays the percentage of elapsed time spent in JIT compilation since the last JIT compilation phase. This counter is updated at the end of every JIT compilation phase. A JIT compilation phase occurs when a method and its dependencies are compiled.|
-|**IL Bytes Jitted / sec**|Displays the number of MSIL bytes that are JIT-compiled per second. This counter is not an average over time; it displays the difference between the values observed in the last two samples divided by the duration of the sample interval.|
-|**Standard Jit Failures**|Displays the peak number of methods the JIT compiler has failed to compile since the application started. This failure can occur if the MSIL cannot be verified or if there is an internal error in the JIT compiler.|
-|**Total # of IL Bytes Jitted**|Displays the total MSIL bytes JIT-compiled since the application started. This counter is equivalent to the **# of IL Bytes Jitted** counter.|
+|**IL Bytes Jitted / sec**|Displays the number of CIL bytes that are JIT-compiled per second. This counter is not an average over time; it displays the difference between the values observed in the last two samples divided by the duration of the sample interval.|
+|**Standard Jit Failures**|Displays the peak number of methods the JIT compiler has failed to compile since the application started. This failure can occur if the CIL cannot be verified or if there is an internal error in the JIT compiler.|
+|**Total # of IL Bytes Jitted**|Displays the total CIL bytes JIT-compiled since the application started. This counter is equivalent to the **# of IL Bytes Jitted** counter.|
 
 ## Loading performance counters
 

@@ -112,7 +112,7 @@ Now that you have a general understanding of what ONNX is and how Tiny YOLOv2 wo
 
 ### Create classes and define paths
 
-Open the *Program.cs* file and add the following additional `using` statements to the top of the file:
+Open the *Program.cs* file and add the following additional `using` directives to the top of the file:
 
 [!code-csharp [ProgramUsings](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L1-L6)]
 
@@ -122,7 +122,7 @@ Next, define the paths of the various assets.
 
     [!code-csharp [GetAbsolutePath](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L55-L63)]
 
-1. Then, below the using statements, create fields to store the location of your assets.
+1. Then, below the `using` directives, create fields to store the location of your assets.
 
     [!code-csharp [AssetDefinition](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L8-L12)]
 
@@ -135,7 +135,7 @@ Create your input data class in the newly created *DataStructures* directory.
 1. In **Solution Explorer**, right-click the *DataStructures* directory, and then select **Add** > **New Item**.
 1. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *ImageNetData.cs*. Then, select the **Add** button.
 
-    The *ImageNetData.cs* file opens in the code editor. Add the following `using` statement to the top of *ImageNetData.cs*:
+    The *ImageNetData.cs* file opens in the code editor. Add the following `using` directive to the top of *ImageNetData.cs*:
 
     [!code-csharp [ImageNetDataUsings](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/DataStructures/ImageNetData.cs#L1-L4)]
 
@@ -155,7 +155,7 @@ Create your prediction class in the *DataStructures* directory.
 1. In **Solution Explorer**, right-click the *DataStructures* directory, and then select **Add** > **New Item**.
 1. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *ImageNetPrediction.cs*. Then, select the **Add** button.
 
-    The *ImageNetPrediction.cs* file opens in the code editor. Add the following `using` statement to the top of *ImageNetPrediction.cs*:
+    The *ImageNetPrediction.cs* file opens in the code editor. Add the following `using` directive to the top of *ImageNetPrediction.cs*:
 
     [!code-csharp [ImageNetPredictionUsings](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/DataStructures/ImageNetPrediction.cs#L1)]
 
@@ -203,7 +203,7 @@ The data output by the model contains coordinates and dimensions of the bounding
 1. In **Solution Explorer**, right-click the *YoloParser* directory, and then select **Add** > **New Item**.
 1. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *DimensionsBase.cs*. Then, select the **Add** button.
 
-    The *DimensionsBase.cs* file opens in the code editor. Remove all `using` statements and existing class definition.
+    The *DimensionsBase.cs* file opens in the code editor. Remove all `using` directives and existing class definition.
 
     Add the following code for the `DimensionsBase` class to the *DimensionsBase.cs* file:
 
@@ -221,7 +221,7 @@ Next, create a class for your bounding boxes.
 1. In **Solution Explorer**, right-click the *YoloParser* directory, and then select **Add** > **New Item**.
 1. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *YoloBoundingBox.cs*. Then, select the **Add** button.
 
-    The *YoloBoundingBox.cs* file opens in the code editor. Add the following `using` statement to the top of *YoloBoundingBox.cs*:
+    The *YoloBoundingBox.cs* file opens in the code editor. Add the following `using` directive to the top of *YoloBoundingBox.cs*:
 
     [!code-csharp [YoloBoundingBoxUsings](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/YoloBoundingBox.cs#L1)]
 
@@ -248,7 +248,7 @@ Now that the classes for dimensions and bounding boxes are created, it's time to
 1. In **Solution Explorer**, right-click the *YoloParser* directory, and then select **Add** > **New Item**.
 1. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *YoloOutputParser.cs*. Then, select the **Add** button.
 
-    The *YoloOutputParser.cs* file opens in the code editor. Add the following `using` statements to the top of *YoloOutputParser.cs*:
+    The *YoloOutputParser.cs* file opens in the code editor. Add the following `using` directives to the top of *YoloOutputParser.cs*:
 
     [!code-csharp [YoloParserUsings](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/YoloOutputParser.cs#L1-L4)]
 
@@ -453,7 +453,7 @@ Just like with post-processing, there are a few steps in the scoring steps. To h
 1. In **Solution Explorer**, right-click the project, and then select **Add** > **New Item**.
 1. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *OnnxModelScorer.cs*. Then, select the **Add** button.
 
-    The *OnnxModelScorer.cs* file opens in the code editor. Add the following `using` statements to the top of *OnnxModelScorer.cs*:
+    The *OnnxModelScorer.cs* file opens in the code editor. Add the following `using` directives to the top of *OnnxModelScorer.cs*:
 
     [!code-csharp [ScorerUsings](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/OnnxModelScorer.cs#L1-L7)]
 

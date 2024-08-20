@@ -1,14 +1,14 @@
 ---
 title: Containerize an app with dotnet publish
-description: In this tutorial, you'll learn how to containerize a .NET application with dotnet publish.
-ms.date: 01/16/2024
+description: In this tutorial, you'll learn how to containerize a .NET application with dotnet publish command and without the use of a Dockerfile.
+ms.date: 08/13/2024
 ms.topic: tutorial
 zone_pivot_groups: dotnet-version-7-8
 ---
 
 # Containerize a .NET app with dotnet publish
 
-Containers have many features and benefits, such as being an immutable infrastructure, providing a portable architecture, and enabling scalability. The image can be used to create containers for your local development environment, private cloud, or public cloud. In this tutorial, you'll learn how to containerize a .NET application using the [dotnet publish](../tools/dotnet-publish.md) command.
+Containers have many features and benefits, such as being an immutable infrastructure, providing a portable architecture, and enabling scalability. The image can be used to create containers for your local development environment, private cloud, or public cloud. In this tutorial, you learn how to containerize a .NET application using the [dotnet publish](../tools/dotnet-publish.md) command without the use of a Dockerfile. Additionally, you explore how to configure the container image and execution, and how to clean up resources.
 
 ## Prerequisites
 
@@ -83,11 +83,28 @@ Attempting to cancel the build...
 
 The worker template loops indefinitely. Use the cancel command <kbd>Ctrl+C</kbd> to stop it.
 
-:::zone pivot="dotnet-7-0"
+:::zone pivot="dotnet-7-0,dotnet-8-0"
 
 ## Add NuGet package
 
-The [Microsoft.NET.Build.Containers](https://www.nuget.org/packages/Microsoft.NET.Build.Containers) NuGet package is currently required to publish non-web projects as a container. To add the `Microsoft.NET.Build.Containers` NuGet package to the worker template, run the following [dotnet add package](../tools/dotnet-add-package.md) command:
+Starting with .NET SDK version 8.0.200, the `PublishContainer` target is available for every project. To avoid depending on the `Microsoft.NET.Build.Containers` NuGet package, ensure that you're using the latest .NET SDK version. Additionally, your project file needs to have `IsPublishable` set to `true` and enable SDK container support.
+
+> [!IMPORTANT]
+> By default, the `IsPublishable` property is set to `true` for `console`, `webapp`, and `worker` templates.
+
+To enable SDK container support, set the `EnableSdkContainerSupport` property to `true` in your project file.
+
+```xml
+<PropertyGroup>
+  <IsPublishable>true</IsPublishable>
+  <EnableSdkContainerSupport>true</EnableSdkContainerSupport>
+</PropertyGroup>
+```
+
+:::zone-end
+:::zone pivot="dotnet-7-0"
+
+You need to reference the required [Microsoft.NET.Build.Containers](https://www.nuget.org/packages/Microsoft.NET.Build.Containers) NuGet package to publish non-web projects as a container. To add the `Microsoft.NET.Build.Containers` NuGet package to the worker template, run the following [dotnet add package](../tools/dotnet-add-package.md) command:
 
 ```dotnetcli
 dotnet add package Microsoft.NET.Build.Containers
@@ -125,6 +142,20 @@ For more information, see [ContainerImageName](#containerimagename).
 
 To publish the .NET app as a container, use the following [dotnet publish](../tools/dotnet-publish.md) command:
 
+:::zone pivot="dotnet-8-0"
+
+```dotnetcli
+dotnet publish --os linux --arch x64 /t:PublishContainer
+```
+
+The preceding .NET CLI command publishes the app as a container:
+
+- Targeting Linux as the OS (`--os linux`).
+- Specifying an x64 architecture (`--arch x64`).
+
+:::zone-end
+:::zone pivot="dotnet-7-0"
+
 ```dotnetcli
 dotnet publish --os linux --arch x64 /t:PublishContainer -c Release
 ```
@@ -135,6 +166,8 @@ The preceding .NET CLI command publishes the app as a container:
 - Specifying an x64 architecture (`--arch x64`).
 - Using the release configuration (`-c Release`).
 
+:::zone-end
+
 > [!IMPORTANT]
 > To build the container locally, you must have the Docker daemon running. If it isn't running when you attempt to publish the app as a container, you'll experience an error similar to the following:
 >
@@ -142,9 +175,6 @@ The preceding .NET CLI command publishes the app as a container:
 > ..\build\Microsoft.NET.Build.Containers.targets(66,9): error MSB4018:
 >    The "CreateNewImage" task failed unexpectedly. [..\Worker\DotNet.ContainerImage.csproj]
 > ```
-
-> [!TIP]
-> Depending on the type of app you're containerizing, the command-line switches (options) might vary. For example, the `/t:PublishContainer` argument is only required for non-web .NET apps, such as `console` and `worker` templates. For web templates, replace the `/t:PublishContainer` argument with `-p:PublishProfile=DefaultContainer`. For more information, see [.NET SDK container builds, issue #141](https://github.com/dotnet/sdk-container-builds/issues/141).
 
 The command produces output similar to the example output:
 
@@ -259,6 +289,14 @@ If you set a value here, you should set the fully qualified name of the image to
     <ContainerBaseImage>mcr.microsoft.com/dotnet/runtime:8.0</ContainerBaseImage>
 </PropertyGroup>
 ```
+
+Starting with .NET SDK version 8.0.200, the `ContainerBaseImage` inference has been improved to optimize the size and security:
+
+- Targeting the `linux-musl-x64` or `linux-musl-arm64` Runtime Identifiers, automatically chooses the `alpine` image variants to ensure your project runs:
+  - If the project uses `PublishAot=true` then the `nightly/runtime-deps` `jammy-chiseled-aot` variant of the base image for best size and security.
+  - If the project uses `InvariantGlobalization=false` then the `-extra` variants is used to ensure localization still works.
+
+For more information regarding the image variants sizes and characteristics, see [.NET 8.0 Container Image Size Report](https://github.com/dotnet/dotnet-docker/blob/main/documentation/sample-image-size-report.md).
 
 :::zone-end
 :::zone pivot="dotnet-7-0"
@@ -580,7 +618,7 @@ The app command instruction configuration helps control the way the `ContainerEn
 
 ### `ContainerUser`
 
-The user configuration property controls the default user that the container runs as. This is often used to run the container as a nonroot user, which is a best practice for security. There are a few constraints for this configuration to be aware of:
+The user configuration property controls the default user that the container runs as. This is often used to run the container as a non-root user, which is a best practice for security. There are a few constraints for this configuration to be aware of:
 
 - It can take various forms—username, linux user ids, group name, linux group id, `username:groupname`, and other ID variants.
 - There's no verification that the user or group specified exists on the image.
@@ -601,6 +639,20 @@ The default value of this field varies by project TFM and target operating syste
 
 > [!TIP]
 > The `APP_UID` environment variable is used to set user information in your container. This value can come from environment variables defined in your base image (like that Microsoft .NET images do), or you can set it yourself via the `ContainerEnvironmentVariable` syntax.
+
+To configure your app to run as a root user, set the `ContainerUser` property to `root`. In your project file, add the following:
+
+```xml
+<PropertyGroup>
+  <ContainerUser>root</ContainerUser>
+</PropertyGroup>
+```
+
+Alternatively, you can set this value when calling `dotnet publish` from the command line:
+
+```dotnetcli
+dotnet publish -p ContainerUser=root
+```
 
 :::zone-end
 :::zone pivot="dotnet-7-0"
@@ -673,8 +725,8 @@ docker images
 Consider the following example output:
 
 ```console
-REPOSITORY            TAG       IMAGE ID       CREATED          SIZE
-dotnet-worker-image   1.0.0     25aeb97a2e21   12 seconds ago   191MB
+REPOSITORY             TAG       IMAGE ID       CREATED          SIZE
+dotnet-worker-image    1.0.0     25aeb97a2e21   12 seconds ago   191MB
 ```
 
 > [!TIP]

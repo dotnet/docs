@@ -23,7 +23,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 ## Prerequisites
 
-- [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/) with the ".NET Desktop Development" workload installed.
+* [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/) with the ".NET Desktop Development" workload installed.
 
 ## Setup
 
@@ -59,13 +59,13 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 3. In Solution Explorer, right-click each of the files in the `sentiment_model` directory and subdirectory and select **Properties**. Under **Advanced**, change the value of **Copy to Output Directory** to **Copy if newer**.
 
-### Add using statements and global variables
+### Add `using` directives and global variables
 
-1. Add the following additional `using` statements to the top of the *Program.cs* file:
+1. Add the following additional `using` directives to the top of the *Program.cs* file:
 
    [!code-csharp[AddUsings](./snippets/text-classification-tf/csharp/Program.cs#AddUsings "Add necessary usings")]
 
-1. Create a global variable right after the using statements to hold the saved model file path.
+1. Create a global variable right after the `using` directives to hold the saved model file path.
 
    [!code-csharp[DeclareGlobalVariables](./snippets/text-classification-tf/csharp/Program.cs#DeclareGlobalVariables "Declare global variables")]
 
@@ -100,15 +100,15 @@ The variable length feature array is then resized to a fixed length of 600. This
 
     [!code-csharp[VariableLengthFeatures](./snippets/text-classification-tf/csharp/Program.cs#VariableLengthFeatures "Declare variable length features type")]
 
-    The `VariableLengthFeatures` property has a [VectorType](xref:Microsoft.ML.Data.VectorTypeAttribute.%23ctor%2A) attribute to designate it as a vector.  All of the vector elements must be the same type. In data sets with a large number of columns, loading multiple columns as a single vector reduces the number of data passes when you apply data transformations.
+    The `VariableLengthFeatures` property has a [VectorType](xref:Microsoft.ML.Data.VectorTypeAttribute.%23ctor%2A) attribute to designate it as a vector. All of the vector elements must be the same type. In data sets with a large number of columns, loading multiple columns as a single vector reduces the number of data passes when you apply data transformations.
 
-    This class is used in the `ResizeFeatures` action. The names of its properties (in this case only one) are used to indicate which columns in the DataView can be used as the _input_ to the custom mapping action.
+    This class is used in the `ResizeFeatures` action. The names of its properties (in this case only one) are used to indicate which columns in the DataView can be used as the *input* to the custom mapping action.
 
 1. Create a class for the fixed length features, after the `VariableLength` class:
 
     [!code-csharp[FixedLengthFeatures](./snippets/text-classification-tf/csharp/Program.cs#FixedLengthFeatures)]
 
-    This class is used in the `ResizeFeatures` action. The names of its properties (in this case only one) are used to indicate which columns in the DataView can be used as the _output_ of the custom mapping action.
+    This class is used in the `ResizeFeatures` action. The names of its properties (in this case only one) are used to indicate which columns in the DataView can be used as the *output* of the custom mapping action.
 
     Note that the name of the property `Features` is determined by the TensorFlow model. You cannot change this property name.
 

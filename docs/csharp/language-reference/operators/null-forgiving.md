@@ -1,5 +1,5 @@
 ---
-title: "! (null-forgiving) operator - C# reference"
+title: "! (null-forgiving) operator"
 description: "Learn about the C# null-forgiving, or null-suppression, operator that is used to declare that an expression of a reference type isn't null."
 ms.date: 11/28/2022
 f1_keywords:
@@ -45,6 +45,5 @@ For more information, see [The null-forgiving operator](~/_csharplang/proposals/
 ## See also
 
 - [Remove unnecessary suppression operator (style rule IDE0080)](../../../fundamentals/code-analysis/style-rules/ide0080.md)
-- [C# reference](../index.md)
 - [C# operators and expressions](index.md)
 - [Tutorial: Design with nullable reference types](../../tutorials/nullable-reference-types.md)

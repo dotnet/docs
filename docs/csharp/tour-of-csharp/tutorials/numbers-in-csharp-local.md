@@ -1,5 +1,5 @@
 ---
-title: Numbers in C# - Introduction to C# tutorial
+title: Work with Numbers - Introductory tutorial
 description: Learn C# by exploring numeric types, their uses, properties, and methods.
 ms.date: 03/23/2022
 ---

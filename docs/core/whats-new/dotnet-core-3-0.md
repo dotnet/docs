@@ -3,6 +3,7 @@ title: What's new in .NET Core 3.0
 description: Learn about the new features found in .NET Core 3.0.
 dev_langs:
   - "csharp"
+ms.custom: linux-related-content
 author: adegeo
 ms.author: adegeo
 ms.date: 01/27/2020
@@ -381,9 +382,6 @@ The GPIO packages include APIs for *GPIO*, *SPI*, *I2C*, and *PWM* devices. The 
 - Improved security because of the removal of various obsolete and insecure cryptographic algorithms.
 
 When available, .NET Core 3.0 uses **OpenSSL 1.1.1**, **OpenSSL 1.1.0**, or **OpenSSL 1.0.2** on a Linux system. When **OpenSSL 1.1.1** is available, both <xref:System.Net.Security.SslStream?displayProperty=nameWithType> and <xref:System.Net.Http.HttpClient?displayProperty=nameWithType> types will use **TLS 1.3** (assuming both the client and server support **TLS 1.3**).
-
-> [!IMPORTANT]
-> Windows and macOS do not yet support **TLS 1.3**.
 
 The following C# 8.0 example demonstrates .NET Core 3.0 on Ubuntu 18.10 connecting to <https://www.cloudflare.com>:
 

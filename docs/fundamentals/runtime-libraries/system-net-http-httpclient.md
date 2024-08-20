@@ -79,7 +79,7 @@ If this change is undesirable, on Windows you can continue to use <xref:System.N
 
 ## Configure behavior using runtime configuration options
 
-Certain aspects of <xref:System.Net.Http.HttpClient>'s behavior are customizable through [Runtime configuration options](/dotnet/core/run-time-config/networking). However, the behavior of these switches differs through .NET versions. For example, in .NET Core 2.1 - 3.1, you can configure whether <xref:System.Net.Http.SocketsHttpHandler> is used by default, but that option is no longer available starting in .NET 5.0.
+Certain aspects of <xref:System.Net.Http.HttpClient>'s behavior are customizable through [Runtime configuration options](/dotnet/core/run-time-config/networking). However, the behavior of these switches differs through .NET versions. For example, in .NET Core 2.1 - 3.1, you can configure whether <xref:System.Net.Http.SocketsHttpHandler> is used by default, but that option is no longer available starting in .NET 5.
 
 ## Connection pooling
 

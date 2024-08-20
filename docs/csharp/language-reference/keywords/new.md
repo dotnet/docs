@@ -1,6 +1,6 @@
 ---
 description: "new - C# Reference"
-title: "new - C# Reference"
+title: "new keyword"
 ms.date: 01/02/2024
 f1_keywords:
   - "new"
@@ -20,4 +20,3 @@ The `new` keyword is used as:
 ## See also
 
 - [C# Keywords](index.md)
-- [C# Reference](../index.md)

@@ -4,6 +4,7 @@ description: Learn about how to troubleshoot strange .NET package errors on Linu
 author: omajid
 ms.author: adegeo
 ms.date: 03/01/2023
+ms.custom: linux-related-content
 no-loc: ['usr','lib64','share','dotnet','libhostfxr.so', 'fxr', 'FrameworkList.xml', 'System.IO.FileNotFoundException']
 zone_pivot_groups: operating-systems-set-two
 ---
@@ -43,7 +44,6 @@ These errors usually occur when two Linux package repositories provide .NET pack
 
 - Alpine Linux
 - Arch
-- CentOS
 - CentOS Stream
 - Fedora
 - RHEL
@@ -189,21 +189,44 @@ Configure your package manager to ignore the .NET packages from the distribution
     touch /etc/apt/preferences
     ```
 
-01. Open `/etc/apt/preferences` in an editor and add the following settings, which prevents packages that start with `dotnet`, `aspnetcore`, or `netstandard` from being sourced from the distribution's repository.
+01. Open `/etc/apt/preferences` in an editor and add an apt preferences fragement to prevent packages that start with `dotnet`, `aspnetcore`, or `netstandard` from being sourced from the distribution's repository.
 
-    ```bash
+    ```
     Package: dotnet* aspnet* netstandard*
     Pin: origin "<your-package-source>"
-    Pin-Priority: -10
+    Pin-Priority: -10    
     ```
 
-    Make sure to replace `<your-package-source>` with your distribution's package source, for example, on Ubuntu you may use `archive.ubuntu.com` in the US.
+    Make sure to replace `<your-package-source>` with your distribution's package source.
+
+    Your distribution may have more than one package source.
+
+    For example, on Ubuntu in the US, you may need to use one fragment for `archive.ubuntu.com` and another for `security.ubuntu.com`. Separate each fragment with a blank line like this:
+
+    ```
+    Package: dotnet* aspnet* netstandard*
+    Pin: origin "archive.ubuntu.com"
+    Pin-Priority: -10
+
+    Package: dotnet* aspnet* netstandard*
+    Pin: origin "security.ubuntu.com"
+    Pin-Priority: -10
+    ```
 
     > [!TIP]
     > Use the `apt-cache policy` command to find the source:
     >
     > ```bash
-    > apt-cache policy '~ndotnet.*' | grep -v microsoft | grep '/ubuntu' | grep updates | cut -d"/" -f3 | sort -u
+    > apt-cache policy '?name(dotnet.*)' | grep -v microsoft | grep '/ubuntu' | cut -d"/" -f3 | sort -u
+    > ```
+
+    > [!TIP]
+    > If you registered the [Ubuntu .NET backports package repository](linux-ubuntu.md#ubuntu-net-backports-package-repository) you should [unregister the Ubuntu .NET backports package repository](linux-ubuntu.md#unregister-the-ubuntu-net-backports-package-repository) instead of configuring your package manager to ignore the contained .NET packages. Otherwise your package manager pulls the package index from this repository, just to ignore it, because the repository only contains .NET packages. This effectively slows down updating your local package index every time you call `apt update`.
+    >
+    > Use the `apt-cache policy` command to check if you registered the Ubuntu .NET backports package repository:
+    >
+    > ```bash
+    > apt-cache policy '?name(dotnet.*)' | grep 'ppa.launchpadcontent.net/dotnet/backports' | sort -u
     > ```
 
 01. Reinstall .NET from the Microsoft package feed. For more information, see [Install .NET on Linux](linux.md). If using Ubuntu, see [My Ubuntu distribution doesn't include the .NET version I want, or I need an out-of-support .NET version](linux-ubuntu.md#my-ubuntu-distribution-doesnt-include-the-net-version-i-want-or-i-need-an-out-of-support-net-version).
@@ -240,6 +263,7 @@ Many other users have reported these problems. The following is a list of those 
   - [Core #4605: cannot run "dotnet new console"](https://github.com/dotnet/core/issues/4605)
   - [Core #4644: Cannot install .NET Core SDK 2.1 on Fedora 32](https://github.com/dotnet/core/issues/4655)
   - [Runtime #49375: After updating to 5.0.200-1 using package manager, it appears that no sdks are installed](https://github.com/dotnet/runtime/issues/49375)
+  - [Installer #16438: The application '--version' does not exist](https://github.com/dotnet/installer/issues/16438)
 
 ## See also
 

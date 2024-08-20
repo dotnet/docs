@@ -10,32 +10,49 @@ on:
         required: true
         default: "Manual run"
 
+permissions:
+  contents: read
+
 jobs:
   create-what-is-new:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      id-token: write
       pull-requests: write
 
     steps:
-      - uses: actions/checkout@v4.1.1
+      - name: Harden Runner
+        uses: step-security/harden-runner@5c7944e73c4c2a096b17a9cb74d65b6c2bbafbde # v2.9.1
+        with:
+          egress-policy: audit
+
+      - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
 
       - name: "Print manual run reason"
         if: ${{ github.event_name == 'workflow_dispatch' }}
         run: |
           echo "Reason: ${{ github.event.inputs.reason }}"
 
-      - uses: dotnet/docs-tools/WhatsNew.Cli@main
+      - name: Azure OpenID Connect
+        id: azure-oidc-auth
+        uses: dotnet/docs-tools/.github/actions/oidc-auth-flow@5e8bcc78465d45a7544bba56509a1a69922b6a5a # main
+        with:
+          client-id: ${{ secrets.CLIENT_ID }}
+          tenant-id: ${{ secrets.TENANT_ID }}
+          audience: ${{ secrets.OSMP_API_AUDIENCE }}
+     
+      - uses: dotnet/docs-tools/WhatsNew.Cli@5e8bcc78465d45a7544bba56509a1a69922b6a5a # main
         env:
           GitHubKey: ${{ secrets.GITHUB_TOKEN }}
-          OspoKey: ${{ secrets.OSPO_KEY }}
+          AZURE_ACCESS_TOKEN: ${{ steps.azure-oidc-auth.outputs.access-token }}
         with:
           owner: dotnet
           repo: docs
           savedir: './docs/whats-new'
 
       - name: create-pull-request
-        uses: peter-evans/create-pull-request@70a41aba780001da0a30141984ae2a0c95d8704e
+        uses: peter-evans/create-pull-request@c5a7806660adbe173f04e3e038b0ccdcd758773c
         with:
           branch: create-whatsnew-pull-request/patch
           title: "What's new article"

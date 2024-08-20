@@ -1,6 +1,6 @@
 ---
 description: "C# Compiler Options. Learn the options that control the behavior of the C# compiler."
-title: "C# Compiler Options"
+title: "Compiler Options"
 ms.date: 09/01/2021
 f1_keywords: 
   - "cs.build.options"

@@ -1,5 +1,5 @@
 ---
-title: "C# operators and expressions - List all C# operators and expression"
+title: "Operators and expressions - List all operators and expression"
 description: "Learn the C# operators and expressions, operator precedence, and operator associativity."
 ms.date: 11/28/2022
 f1_keywords: 
@@ -130,6 +130,5 @@ For more information, see the following sections of the [C# language specificati
 
 ## See also
 
-- [C# reference](../index.md)
 - [Operator overloading](operator-overloading.md)
 - [Expression trees](../../advanced-topics/expression-trees/index.md)

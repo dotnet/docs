@@ -19,7 +19,7 @@ Namespace ParallelExample
             Console.WriteLine($"Classical foreach loop | Total prime numbers : {primeNumbersFromForeach.Count} | Time Taken : {watch.ElapsedMilliseconds} ms.")
             Console.WriteLine($"Parallel.ForEach loop  | Total prime numbers : {primeNumbersFromParallelForeach.Count} | Time Taken : {watchForParallel.ElapsedMilliseconds} ms.")
 
-            Console.WriteLine("Press any key to exit.")
+            Console.WriteLine("Press 'Enter' to exit.")
             Console.ReadLine()
         End Sub
 

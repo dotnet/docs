@@ -145,10 +145,10 @@ Each template may have additional options defined. For more information, see [.N
   dotnet new xunit
   ```
 
-- Create a *global.json* in the current directory setting the SDK version to 3.1.101:
+- Create a *global.json* in the current directory setting the SDK version to 8.0.101:
 
   ```dotnetcli
-  dotnet new globaljson --sdk-version 3.1.101
+  dotnet new globaljson --sdk-version 8.0.101 --roll-forward latestFeature
   ```
 
 - Show help for the C# console application template:

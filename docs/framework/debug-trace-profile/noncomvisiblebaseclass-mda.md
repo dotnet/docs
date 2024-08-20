@@ -2,7 +2,7 @@
 title: "nonComVisibleBaseClass MDA"
 description: See the nonComVisibleBaseClass managed debugging assistant (MDA), which is invoked on QueryInterface calls from native code failing with COR_E_INVALIDOPERATION.
 ms.date: "03/30/2017"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "visible classes"
   - "managed debugging assistants (MDAs), COM visible classes"
   - "nonComVisibleBaseClass MDA"
@@ -13,46 +13,48 @@ ms.assetid: 9ec1af27-604b-477e-9ee2-e833eb10d3ce
 ---
 # nonComVisibleBaseClass MDA
 
-The `nonComVisibleBaseClass` managed debugging assistant (MDA) is activated when a `QueryInterface` call is made by native or unmanaged code on the COM callable wrapper (CCW) of a COM-visible managed class that derives from a base class that is not COM visible.  The `QueryInterface` call causes the MDA to activate only in cases where call requests the class interface or default `IDispatch` of the COM-visible managed class.  The MDA is not activated when the `QueryInterface` is for an explicit interface that has the <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> attribute applied and is explicitly implemented by the COM-visible class.  
-  
-## Symptoms  
+[!INCLUDE [net-framework-specific](../includes/net-framework-specific.md)]
 
- A `QueryInterface` call made from native code that is failing with a COR_E_INVALIDOPERATION HRESULT.  The HRESULT might be due to the runtime disallowing `QueryInterface` calls that would cause the activation of this MDA.  
-  
-## Cause  
+The `nonComVisibleBaseClass` managed debugging assistant (MDA) is activated when a `QueryInterface` call is made by native or unmanaged code on the COM callable wrapper (CCW) of a COM-visible managed class that derives from a base class that is not COM visible.  The `QueryInterface` call causes the MDA to activate only in cases where call requests the class interface or default `IDispatch` of the COM-visible managed class.  The MDA is not activated when the `QueryInterface` is for an explicit interface that has the <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> attribute applied and is explicitly implemented by the COM-visible class.
 
- The runtime cannot allow `QueryInterface` calls for the class interface or default `IDispatch` interface of a COM-visible class that derives from a class that is not COM-visible because of potential versioning problems.  For example, if any public members were added to the base class that is not COM-visible, existing COM clients using the derived class could potentially break because the vtable of the derived class, which contains the base class members, would be altered by such a change.  Explicit interfaces exposed to COM do not have this problem because they do not include the base members of interfaces in the vtable.  
-  
-## Resolution  
+## Symptoms
 
- Do not expose the class interface. Define an explicit interface and apply the <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> attribute to it.  
-  
-## Effect on the Runtime  
+ A `QueryInterface` call made from native code that is failing with a COR_E_INVALIDOPERATION HRESULT.  The HRESULT might be due to the runtime disallowing `QueryInterface` calls that would cause the activation of this MDA.
 
- This MDA has no effect on the CLR.  
-  
-## Output  
+## Cause
 
- The following is an example message for a `QueryInterface` call on a COM-visible class `Derived` that derives from a non-COM-visible class `Base`.  
-  
+ The runtime cannot allow `QueryInterface` calls for the class interface or default `IDispatch` interface of a COM-visible class that derives from a class that is not COM-visible because of potential versioning problems.  For example, if any public members were added to the base class that is not COM-visible, existing COM clients using the derived class could potentially break because the vtable of the derived class, which contains the base class members, would be altered by such a change.  Explicit interfaces exposed to COM do not have this problem because they do not include the base members of interfaces in the vtable.
+
+## Resolution
+
+ Do not expose the class interface. Define an explicit interface and apply the <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> attribute to it.
+
+## Effect on the Runtime
+
+ This MDA has no effect on the CLR.
+
+## Output
+
+ The following is an example message for a `QueryInterface` call on a COM-visible class `Derived` that derives from a non-COM-visible class `Base`.
+
 ```output
 A QueryInterface call was made requesting the class interface of COM
 visible managed class 'Derived'. However since this class derives from
 non COM visible class 'Base', the QueryInterface call will fail. This
 is done to prevent the non COM visible base class from being
 constrained by the COM versioning rules.
-```  
-  
-## Configuration  
-  
-```xml  
-<mdaConfig>  
-  <assistants>  
-    <nonComVisibleBaseClass />  
-  </assistants>  
-</mdaConfig>  
-```  
-  
+```
+
+## Configuration
+
+```xml
+<mdaConfig>
+  <assistants>
+    <nonComVisibleBaseClass />
+  </assistants>
+</mdaConfig>
+```
+
 ## See also
 
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>

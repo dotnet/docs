@@ -3,7 +3,7 @@ title: Dependency injection guidelines
 description: Discover effective dependency injection guidelines and best practices for developing .NET apps. Deepen your understanding of inversion of control.
 author: IEvangelist
 ms.author: dapine
-ms.date: 02/28/2024
+ms.date: 07/18/2024
 ms.topic: conceptual
 ---
 
@@ -214,4 +214,5 @@ In the preceding code, `Bar` is retrieved within an <xref:Microsoft.Extensions.D
 ## See also
 
 - [Dependency injection in .NET](dependency-injection.md)
+- [Understand dependency injection basics in .NET](dependency-injection-basics.md)
 - [Tutorial: Use dependency injection in .NET](dependency-injection-usage.md)

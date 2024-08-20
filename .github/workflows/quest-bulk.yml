@@ -8,30 +8,52 @@ on:
         description: "The reason for running the bulk import workflow"
         required: true
         default: "Initial import into Quest (Azure DevOps)"
+      duration:
+        description: "The duration of the query, in days, to search for issues. Defaults to 5 days."
+        required: false
+        default: "5"
+
+permissions:
+  contents: read
 
 jobs:
   bulk-import:
     runs-on: ubuntu-latest
     permissions:
       issues: write
+      pull-requests: write
+      id-token: write
     if: ${{ github.repository_owner == 'dotnet' }}
     steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@5c7944e73c4c2a096b17a9cb74d65b6c2bbafbde # v2.9.1
+        with:
+          egress-policy: audit
+
       - name: "Print manual bulk import run reason"
         if: ${{ github.event_name == 'workflow_dispatch' }}
         run: |
           echo "Reason: ${{ github.event.inputs.reason }}"
 
+      - name: Azure OpenID Connect
+        id: azure-oidc-auth
+        uses: dotnet/docs-tools/.github/actions/oidc-auth-flow@5e8bcc78465d45a7544bba56509a1a69922b6a5a # main
+        with:
+          client-id: ${{ secrets.CLIENT_ID }}
+          tenant-id: ${{ secrets.TENANT_ID }}
+          audience: ${{ secrets.OSMP_API_AUDIENCE }}
+     
       - name: bulk-sequester
         id: bulk-sequester
-        uses: dotnet/docs-tools/actions/sequester@main
+        uses: dotnet/docs-tools/actions/sequester@5e8bcc78465d45a7544bba56509a1a69922b6a5a # main
         env:
           ImportOptions__ApiKeys__GitHubToken: ${{ secrets.GITHUB_TOKEN }}
-          ImportOptions__ApiKeys__OSPOKey: ${{ secrets.OSPO_KEY }}
           ImportOptions__ApiKeys__QuestKey: ${{ secrets.QUEST_KEY }}
+          ImportOptions__ApiKeys__AzureAccessToken: ${{ steps.azure-oidc-auth.outputs.access-token }}
           ImportOptions__ApiKeys__SequesterPrivateKey: ${{ secrets.SEQUESTER_PRIVATEKEY }}
           ImportOptions__ApiKeys__SequesterAppID: ${{ secrets.SEQUESTER_APPID }}
-          
         with:
           org: ${{ github.repository_owner }}
           repo: ${{ github.repository }}
           issue: '-1'
+          duration: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.duration || 5 }}

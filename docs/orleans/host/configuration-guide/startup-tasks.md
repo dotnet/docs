@@ -1,7 +1,7 @@
 ---
 title: Startup tasks
 description: Learn how to configure and manage startup tasks in .NET Orleans.
-ms.date: 03/16/2022
+ms.date: 07/03/2024
 ---
 
 # Startup tasks

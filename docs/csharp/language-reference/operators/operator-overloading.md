@@ -57,7 +57,6 @@ For more information, see the following sections of the [C# language specificati
 
 ## See also
 
-- [C# reference](../index.md)
 - [C# operators and expressions](index.md)
 - [User-defined conversion operators](user-defined-conversion-operators.md)
 - [Design guidelines - Operator overloads](../../../standard/design-guidelines/operator-overloads.md)

@@ -1,7 +1,7 @@
 ---
 title: 'Quickstart: Build your first Orleans app with ASP.NET Core'
 description: Learn how to use Orleans to build a scalable, distributed ASP.NET Core application
-ms.date: 01/09/2024
+ms.date: 08/14/2024
 ms.topic: quickstart
 ms.devlang: csharp
 ---
@@ -47,7 +47,7 @@ At the end of the quickstart, you have an app that creates and handles redirects
 
 1. Inside Visual Studio Code, open the [integrated terminal](https://code.visualstudio.com/docs/editor/integrated-terminal).
 
-1. Change directories (`cd`) directory that will contain the project.
+1. Change to the directory (`cd`) that will contain the project.
 1. Run the following commands:
 
    ```dotnetcli

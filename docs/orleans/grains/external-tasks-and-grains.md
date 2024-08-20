@@ -1,7 +1,7 @@
 ---
 title: External tasks and grains
 description: Learn about external tasks and grains in .NET Orleans.
-ms.date: 03/16/2022
+ms.date: 07/03/2024
 ---
 
 # External tasks and grains
@@ -36,7 +36,7 @@ public async Task MyGrainMethod()
 {
     // Grab the grain's task scheduler
     var orleansTS = TaskScheduler.Current;
-    await TaskDelay(10_000);
+    await Task.Delay(10_000);
 
     // Current task scheduler did not change, the code after await is still running
     // in the same task scheduler.

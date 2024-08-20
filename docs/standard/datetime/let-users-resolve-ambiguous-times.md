@@ -2,7 +2,7 @@
 description: "Learn more about: How to: Let users resolve ambiguous times"
 title: "How to: Let users resolve ambiguous times"
 ms.date: "04/10/2017"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "time zones [.NET], ambiguous time"
   - "ambiguous time [.NET]"
 ms.topic: how-to
@@ -35,18 +35,12 @@ This topic shows how to let a user resolve an ambiguous time.
 
 The following example prompts the user to enter a date and time and, if it is ambiguous, lets the user select the UTC time that the ambiguous time maps to.
 
-[!code-csharp[System.TimeZone2.Concepts#11](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.Concepts/CS/TimeZone2Concepts.cs#11)]
+[!code-csharp[System.TimeZone2.Concepts#11](./snippets/timezone-concepts/TimeZone2Concepts.cs#11)]
 [!code-vb[System.TimeZone2.Concepts#11](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.Concepts/VB/TimeZone2Concepts.vb#11)]
 
 The core of the example code uses an array of <xref:System.TimeSpan> objects to indicate possible offsets of the ambiguous time from UTC. However, these offsets are unlikely to be meaningful to the user. To clarify the meaning of the offsets, the code also notes whether an offset represents the local time zone's standard time or its daylight saving time. The code determines which time is standard and which time is daylight by comparing the offset with the value of the <xref:System.TimeZoneInfo.BaseUtcOffset%2A> property. This property indicates the difference between the UTC and the time zone's standard time.
 
 In this example, all references to the local time zone are made through the <xref:System.TimeZoneInfo.Local%2A?displayProperty=nameWithType> property; the local time zone is never assigned to an object variable. This is a recommended practice because a call to the <xref:System.TimeZoneInfo.ClearCachedData%2A?displayProperty=nameWithType> method invalidates any objects that the local time zone is assigned to.
-
-## Compiling the code
-
-This example requires:
-
-- That the <xref:System> namespace be imported with the `using` statement (required in C# code).
 
 ## See also
 

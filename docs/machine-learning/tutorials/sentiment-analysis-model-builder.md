@@ -58,7 +58,7 @@ Each row in the *wikipedia-detox-250-line-data.tsv* dataset represents a differe
 
 When first adding a machine learning model to the solution it will prompt you to create an `mbconfig` file. The `mbconfig` file keeps track of everything you do in Model Builder to allow you to reopen the session.
 
-1. In **Solution Explorer**, right-click the *SentimentRazor* project, and select **Add** > **Machine Learning Model...**.
+1. In **Solution Explorer**, right-click the *SentimentRazor* project, and select **Add** > **Machine Learning Model**.
 1. In the dialog, name the Model Builder project **SentimentAnalysis.mbconfig**, and select **Add**.
 
 ## Choose a scenario
@@ -106,7 +106,7 @@ The machine learning task used to train the sentiment analysis model in this tut
 
 The result of the training step will be one model that has the best performance. In the evaluate step of the Model Builder tool, the output section will contain the trainer used by the best-performing model in the as well as evaluation metrics.
 
-If you're not satisfied with your evaluation metrics, some easy ways to try to improve model performance are to use more data.  
+If you're not satisfied with your evaluation metrics, some easy ways to try to improve model performance are to use more data.
 
 Otherwise, select the **Next step** button to move to the *Consume* step in Model Builder.
 
@@ -133,7 +133,7 @@ To make a single prediction, you have to create a <xref:Microsoft.ML.PredictionE
     1. Select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
 
 1. Open the *Program.cs* file in the *SentimentRazor* project.
-1. Add the following using statements to reference the *Microsoft.Extensions.ML* NuGet package and *SentimentRazorML.Model* project:
+1. Add the following `using` directives to reference the *Microsoft.Extensions.ML* NuGet package and *SentimentRazorML.Model* project:
 
     ```csharp
     using Microsoft.Extensions.ML;
@@ -151,7 +151,7 @@ To make a single prediction, you have to create a <xref:Microsoft.ML.PredictionE
 
 Predictions will be made inside the main page of the application. Therefore, a method that takes the user input and uses the <xref:Microsoft.Extensions.ML.PredictionEnginePool%602> to return a prediction needs to be added.
 
-1. Open the *Index.cshtml.cs* file located in the *Pages* directory and add the following using statements:
+1. Open the *Index.cshtml.cs* file located in the *Pages* directory and add the following `using` directives:
 
     ```csharp
     using Microsoft.Extensions.ML;
@@ -229,16 +229,16 @@ The results returned by the `OnGetAnalyzeSentiment` will be dynamically displaye
     @{
         ViewData["Title"] = "Home page";
     }
-    
+
     <div class="text-center">
         <h2>Live Sentiment</h2>
-    
+
         <p><textarea id="Message" cols="45" placeholder="Type any text like a short review"></textarea></p>
-    
+
         <div class="sentiment">
             <h4>Your sentiment is...</h4>
             <p>😡 😐 😍</p>
-    
+
             <div class="marker">
                 <div id="markerPosition" style="left: 45%;">
                     <div>▲</div>
@@ -246,7 +246,7 @@ The results returned by the `OnGetAnalyzeSentiment` will be dynamically displaye
                 </div>
             </div>
         </div>
-    </div>    
+    </div>
     ```
 
 1. Next, add css styling code to the end of the *site.css* page in the *wwwroot\css* directory:
@@ -262,37 +262,37 @@ The results returned by the `OnGetAnalyzeSentiment` will be dynamically displaye
         padding-bottom: 0;
         border-radius: 1rem;
     }
-    
+
     .sentiment h4 {
         font-size: 16px;
         text-align: center;
         margin: 0;
         padding: 0;
     }
-    
+
     .sentiment p {
         font-size: 50px;
     }
-    
+
     .sentiment .marker {
         position: relative;
         left: 22px;
         width: calc(100% - 68px);
     }
-    
+
     .sentiment .marker > div {
         transition: 0.3s ease-in-out;
         position: absolute;
         margin-left: -30px;
         text-align: center;
     }
-    
+
     .sentiment .marker > div > div {
         font-size: 50px;
         line-height: 20px;
         color: green;
     }
-    
+
     .sentiment .marker > div label {
         font-size: 30px;
         color: gray;
@@ -339,15 +339,15 @@ The results returned by the `OnGetAnalyzeSentiment` will be dynamically displaye
                             break;
                         default:
                             updateMarker(45.0, "Neutral");
-                    }    
+                    }
                 });
-        }        
+        }
         ```
 
     1. Finally, register the event handler and bind it to the `textarea` element with the `id=Message` attribute.
 
         ```javascript
-        $("#Message").on('change input paste', updateSentiment)        
+        $("#Message").on('change input paste', updateSentiment)
         ```
 
 ## Run the application

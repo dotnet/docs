@@ -1,5 +1,5 @@
 ---
-title: "How to subscribe to and unsubscribe from events - C# Programming Guide"
+title: "How to subscribe to and unsubscribe from events"
 description: Learn how to subscribe to and unsubscribe from events. Subscribe to events using the Visual Studio IDE, programmatically, or using an anonymous method.
 ms.topic: how-to
 ms.date: 07/20/2015
@@ -93,6 +93,6 @@ You cannot easily unsubscribe from an event if you used an anonymous function to
 
 - [Events](./index.md)
 - [event](../../language-reference/keywords/event.md)
-- [How to publish events that conform to .NET Guidelines](./how-to-publish-events-that-conform-to-net-framework-guidelines.md)
+- [How to publish events that conform to .NET Guidelines](/dotnet/standard/events)
 - [- and -= operators](../../language-reference/operators/subtraction-operator.md)
 - [+ and += operators](../../language-reference/operators/addition-operator.md)

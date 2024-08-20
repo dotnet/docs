@@ -327,7 +327,7 @@ summarize the distribution differently or offer more configuration options.
   ```csharp
   using System;
   using System.Diagnostics.Metrics;
-  
+
   class Program
   {
       // BEWARE! Static initializers only run when code in a running method refers to a static variable.
@@ -336,7 +336,7 @@ summarize the distribution differently or offer more configuration options.
       static Meter s_meter = new Meter("HatCo.Store");
       static ObservableCounter<int> s_coatsSold = s_meter.CreateObservableCounter<int>("hatco.store.coats_sold", () => s_rand.Next(1,10));
       static Random s_rand = new Random();
-  
+
       static void Main(string[] args)
       {
           Console.ReadLine();
@@ -502,8 +502,7 @@ Press p to pause, r to resume, q to quit.
 
 ### Best practices
 
-- Although the API allows any object to be used as the tag value, numeric types and strings are anticipated by collection tools. Other types may or may not be
-  supported by a given collection tool.
+- Although the API allows any object to be used as the tag value, numeric types and strings are anticipated by collection tools. Other types may or may not be supported by a given collection tool.
 
 - We recommend tag names follow the [OpenTelemetry naming guidelines](https://github.com/open-telemetry/semantic-conventions/blob/main/docs/general/metrics.md#general-guidelines),
   which use lowercase dotted hierarchal names with '_' characters to separate multiple words in the same element. If tag names are reused in different metrics or other telemetry

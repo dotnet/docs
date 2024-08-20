@@ -25,24 +25,10 @@ items:
                 items:
                   - name: Overview
                     href: ../core/install/linux-ubuntu.md
-                  - name: "23.10"
-                    href: ../core/install/linux-ubuntu-2310.md
-                  - name: "23.04"
-                    href: ../core/install/linux-ubuntu-2304.md
-                  - name: "22.10"
-                    href: ../core/install/linux-ubuntu-2210.md
-                  - name: "22.04"
-                    href: ../core/install/linux-ubuntu-2204.md
-                  - name: "20.04"
-                    href: ../core/install/linux-ubuntu-2004.md
-                  - name: "18.04"
-                    href: ../core/install/linux-ubuntu-1804.md
-                  - name: "16.04"
-                    href: ../core/install/linux-ubuntu-1604.md
+                  - name: Install
+                    href: ../core/install/linux-ubuntu-install.md
               - name: Alpine
                 href: ../core/install/linux-alpine.md
-              - name: CentOS
-                href: ../core/install/linux-centos.md
               - name: CentOS Stream
                 href: ../core/install/linux-rhel.md#supported-distributions
               - name: Debian
@@ -57,6 +43,14 @@ items:
                 href: ../core/install/linux-sles.md
               - name: Installation script & binaries
                 href: ../core/install/linux-scripted-manual.md
+              - name: Install with Snap
+                items:
+                  - name: Runtime
+                    href: ../core/install/linux-snap-runtime.md
+                  - name: SDK
+                    href: ../core/install/linux-snap-sdk.md
+          - name: Upgrade to a new .NET version
+            href: ../core/install/upgrade.md
           - name: Remove outdated runtimes and SDKs
             href: ../core/install/remove-runtime-sdk-versions.md
           - name: Manage .NET templates
@@ -166,7 +160,16 @@ items:
       - name: .NET 9
         items:
           - name: What's new
-            href: ../core/whats-new/dotnet-9/overview.md
+            items:
+              - name: Overview
+                href: ../core/whats-new/dotnet-9/overview.md
+                displayName: whats new, what's new
+              - name: Runtime
+                href: ../core/whats-new/dotnet-9/runtime.md
+              - name: Libraries
+                href: ../core/whats-new/dotnet-9/libraries.md
+              - name: SDK
+                href: ../core/whats-new/dotnet-9/sdk.md
           - name: Breaking changes
             href: ../core/compatibility/9.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: .NET 8
@@ -676,9 +679,6 @@ items:
           - name: Overview
             href: ../standard/base-types/regular-expressions.md
             displayName: regular expressions
-          - name: Source generation
-            href: ../standard/base-types/regular-expression-source-generators.md
-            displayName: regular expressions,advanced,design concepts,source generators,algorithmic reduction,regex
           - name: Language reference
             items:
               - name: Overview
@@ -703,11 +703,9 @@ items:
                 href: ../standard/base-types/regular-expression-options.md
               - name: Miscellaneous constructs
                 href: ../standard/base-types/miscellaneous-constructs-in-regular-expressions.md
-          - name: Best practices for regular expressions
-            href: ../standard/base-types/best-practices-regex.md
           - name: Regular expression object model
             href: ../standard/base-types/the-regular-expression-object-model.md
-          - name: Regular expression behavior
+          - name: Behavior and performance
             items:
               - name: Overview
                 href: ../standard/base-types/details-of-regular-expression-behavior.md
@@ -715,8 +713,11 @@ items:
                 href: ../standard/base-types/backtracking-in-regular-expressions.md
               - name: Compilation and reuse
                 href: ../standard/base-types/compilation-and-reuse-in-regular-expressions.md
-              - name: Thread safety
-                href: ../standard/base-types/thread-safety-in-regular-expressions.md
+              - name: Source generation
+                href: ../standard/base-types/regular-expression-source-generators.md
+                displayName: source generation,algorithmic reduction
+              - name: Best practices
+                href: ../standard/base-types/best-practices-regex.md
           - name: Examples
             items:
               - name: Scan for HREFs
@@ -862,6 +863,32 @@ items:
                     href: ../standard/serialization/xml-schema-definition-tool-xsd-exe.md
           - name: Binary serialization
             items:
+              - name: BinaryFormatter migration guide
+                items:
+                  - name: Overview
+                    href: ../standard/serialization/binaryformatter-migration-guide/index.md
+                  - name: Choose a serializer
+                    href: ../standard/serialization/binaryformatter-migration-guide/choose-a-serializer.md
+                  - name: Migrate to System.Text.Json (JSON)
+                    href: ../standard/serialization/binaryformatter-migration-guide/migrate-to-system-text-json.md
+                  - name: Migrate to DataContractSerializer (XML)
+                    href: ../standard/serialization/binaryformatter-migration-guide/migrate-to-datacontractserializer.md
+                  - name: Migrate to MessagePack (binary)
+                    href: ../standard/serialization/binaryformatter-migration-guide/migrate-to-messagepack.md
+                  - name: Migrate to protobuf-net (binary)
+                    href: ../standard/serialization/binaryformatter-migration-guide/migrate-to-protobuf-net.md
+                  - name: Read BinaryFormatter (NRBF) payloads
+                    href: ../standard/serialization/binaryformatter-migration-guide/read-nrbf-payloads.md
+                  - name: Compatibility package
+                    href: ../standard/serialization/binaryformatter-migration-guide/compatibility-package.md
+                  - name: BinaryFormatter functionality reference
+                    href: ../standard/serialization/binaryformatter-migration-guide/functionality-reference.md
+                  - name: Windows Forms apps
+                    href: ../standard/serialization/binaryformatter-migration-guide/winforms-applications.md
+                  - name: WPF apps
+                    href: ../standard/serialization/binaryformatter-migration-guide/wpf-applications.md
+                  - name: Clipboard and drag-and-drop guidance
+                    href: ../standard/serialization/binaryformatter-migration-guide/winforms-wpf-ole-guidance.md
               - name: BinaryFormatter security guide
                 href: ../standard/serialization/binaryformatter-security-guide.md
               - name: BinaryFormatter event source
@@ -990,6 +1017,9 @@ items:
           - name: Overview
             href: ../core/extensions/dependency-injection.md
             displayName: dependency injection,di,ioc,ioc container,dependency container,inversion of control
+          - name: Dependency injection basics
+            href: ../core/extensions/dependency-injection-basics.md
+            displayName: dependency injection basics,di basics,ioc basics,ioc container basics,dependency container basics,inversion of control basics
           - name: Use dependency injection
             href: ../core/extensions/dependency-injection-usage.md
             displayName: use dependency injection,di,di examples,ioc,ioc container,dependency container,inversion of control
@@ -1317,8 +1347,8 @@ items:
         href: runtime-libraries/system-runtime-loader-assemblyloadcontext.md
       - name: The ProcessStartInfo class
         items:
-          - name: UseShellExecute method
-        href: runtime-libraries/system-diagnostics-processstartinfo-useshellexecute.md
+          - name: UseShellExecute property
+            href: runtime-libraries/system-diagnostics-processstartinfo-useshellexecute.md
       - name: The Environment class
         items:
           - name: GetEnvironmentVariable method
@@ -1410,20 +1440,59 @@ items:
             href: ../standard/assembly/embed-types-visual-studio.md
           - name: Inspect assembly contents using MetadataLoadContext
             href: ../standard/assembly/inspect-contents-using-metadataloadcontext.md
-      - name: Metadata and self-describing components
+      - name: Reflection
         items:
           - name: Overview
-            href: ../standard/metadata-and-self-describing-components.md
-          - name: Supplemental API remarks
+            href: reflection/reflection.md
+          - name: View type information
+            href: reflection/viewing-type-information.md
+          - name: Reflection and generic types
+            href: reflection/reflection-and-generic-types.md
+          - name: Dynamically load and use types
+            href: reflection/dynamically-loading-and-using-types.md
+          - name: Access custom attributes
+            href: reflection/accessing-custom-attributes.md
+          - name: Specify fully qualified type names
+            href: reflection/specifying-fully-qualified-type-names.md
+          - name: How-tos
             items:
-              - name: The AssemblyBuilder class
-                href: runtime-libraries/system-reflection-emit-assemblybuilder.md
-              - name: The MethodBuilder class
-                href: runtime-libraries/system-reflection-emit-methodbuilder.md
-              - name: The TypeBuilder class
-                href: runtime-libraries/system-reflection-emit-typebuilder.md
-              - name: The DynamicMethod class
-                href: runtime-libraries/system-reflection-emit-dynamicmethod.md
+              - name: Examine and instantiate generic types with reflection
+                href: reflection/how-to-examine-and-instantiate-generic-types-with-reflection.md
+              - name: Get type and member information by using reflection
+                href: reflection/get-type-member-information.md
+              - name: Hook up a delegate using reflection
+                href: reflection/how-to-hook-up-a-delegate-using-reflection.md
+          - name: Emit dynamic methods and assemblies
+            items:
+              - name: Overview
+                href: reflection/emitting-dynamic-methods-and-assemblies.md
+                displayName: reflection emit
+              - name: How-tos
+                items:
+                  - name: Define and execute dynamic methods
+                    href: reflection/how-to-define-and-execute-dynamic-methods.md
+                  - name: Define a generic type with reflection emit
+                    href: reflection/how-to-define-a-generic-type-with-reflection-emit.md
+                  - name: Define a generic method with reflection emit
+                    href: reflection/how-to-define-a-generic-method-with-reflection-emit.md
+              - name: Collectible assemblies for dynamic type generation
+                href: reflection/collectible-assemblies.md
+              - name: Supplemental API remarks
+                items:
+                  - name: The AssemblyBuilder class
+                    href: runtime-libraries/system-reflection-emit-assemblybuilder.md
+                  - name: The DynamicMethod class
+                    href: runtime-libraries/system-reflection-emit-dynamicmethod.md
+                  - name: The MethodBuilder class
+                    href: runtime-libraries/system-reflection-emit-methodbuilder.md
+                  - name: The PersistedAssemblyBuilder class
+                    href: runtime-libraries/system-reflection-emit-persistedassemblybuilder.md
+                  - name: The TypeBuilder class
+                    href: runtime-libraries/system-reflection-emit-typebuilder.md
+          - name: Metadata and self-describing components
+            items:
+              - name: Overview
+                href: ../standard/metadata-and-self-describing-components.md
               - name: The DebugDirectoryEntryType enum
                 href: runtime-libraries/system-reflection-portableexecutable-debugdirectoryentrytype.md
       - name: Dependency loading

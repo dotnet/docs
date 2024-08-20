@@ -14,7 +14,7 @@ Attributes have the following properties:
 - Attributes can accept arguments in the same way as methods and properties.
 - Your program can examine its own metadata or the metadata in other programs by using reflection.
 
-Reflection provides objects (of type <xref:System.Type>) that describe assemblies, modules, and types. You can use reflection to dynamically create an instance of a type, bind the type to an existing object, or get the type from an existing object and invoke its methods or access its fields and properties. If you're using attributes in your code, reflection enables you to access them. For more information, see [Attributes](../../../standard/attributes/index.md).
+[Reflection](../../../fundamentals/reflection/reflection.md) provides objects (of type <xref:System.Type>) that describe assemblies, modules, and types. You can use reflection to dynamically create an instance of a type, bind the type to an existing object, or get the type from an existing object and invoke its methods or access its fields and properties. If you're using attributes in your code, reflection enables you to access them. For more information, see [Attributes](../../../standard/attributes/index.md).
 
 Here's a simple example of reflection using the <xref:System.Object.GetType> method - inherited by all types from the `Object` base class - to obtain the type of a variable:
 
@@ -136,17 +136,17 @@ Reflection is useful in the following situations:
 - When you have to access attributes in your program's metadata. For more information, see [Retrieving Information Stored in Attributes](../../../standard/attributes/retrieving-information-stored-in-attributes.md).
 - For examining and instantiating types in an assembly.
 - For building new types at run time. Use classes in <xref:System.Reflection.Emit>.
-- For performing late binding, accessing methods on types created at run time. See the article [Dynamically Loading and Using Types](../../../framework/reflection-and-codedom/dynamically-loading-and-using-types.md).
+- For performing late binding, accessing methods on types created at run time. See the article [Dynamically Loading and Using Types](../../../fundamentals/reflection/dynamically-loading-and-using-types.md).
 
 ## Related sections
 
 For more information:
 
-- [Common Attributes (C#)](../../language-reference/attributes/global.md)  
-- [Caller Information (C#)](../../language-reference/attributes/caller-information.md)  
+- [Common Attributes (C#)](../../language-reference/attributes/global.md)
+- [Caller Information (C#)](../../language-reference/attributes/caller-information.md)
 - [Attributes](../../../standard/attributes/index.md)
-- [Reflection](../../../framework/reflection-and-codedom/reflection.md)
-- [Viewing Type Information](../../../framework/reflection-and-codedom/viewing-type-information.md)
-- [Reflection and Generic Types](../../../framework/reflection-and-codedom/reflection-and-generic-types.md)
+- [Reflection](../../../fundamentals/reflection/reflection.md)
+- [View Type Information](../../../fundamentals/reflection/viewing-type-information.md)
+- [Reflection and Generic Types](../../../fundamentals/reflection/reflection-and-generic-types.md)
 - <xref:System.Reflection.Emit>
 - [Retrieving Information Stored in Attributes](../../../standard/attributes/retrieving-information-stored-in-attributes.md)

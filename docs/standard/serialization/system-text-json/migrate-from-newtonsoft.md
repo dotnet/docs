@@ -16,10 +16,10 @@ ms.topic: how-to
 
 This article shows how to migrate from [Newtonsoft.Json](https://www.newtonsoft.com/json) to <xref:System.Text.Json?displayProperty=fullName>.
 
-The `System.Text.Json` namespace provides functionality for serializing to and deserializing from JavaScript Object Notation (JSON). The `System.Text.Json` library is included in the runtime for [.NET Core 3.1](https://dotnet.microsoft.com/download/dotnet/3.1) and later versions. For other target frameworks, install the [System.Text.Json](https://www.nuget.org/packages/System.Text.Json) NuGet package. The package supports:
+The `System.Text.Json` namespace provides functionality for serializing to and deserializing from JavaScript Object Notation (JSON). The `System.Text.Json` library is included in the runtime for .NET Core 3.1 and later versions. For other target frameworks, install the [System.Text.Json](https://www.nuget.org/packages/System.Text.Json) NuGet package. The package supports:
 
 * .NET Standard 2.0 and later versions
-* .NET Framework 4.7.2 and later versions
+* .NET Framework 4.6.2 and later versions
 * .NET Core 2.0, 2.1, and 2.2
 
 `System.Text.Json` focuses primarily on performance, security, and standards compliance. It has some key differences in default behavior and doesn't aim to have feature parity with `Newtonsoft.Json`. For some scenarios, `System.Text.Json` currently has no built-in functionality, but there are recommended workarounds. For other scenarios, workarounds are impractical.
@@ -50,7 +50,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | Allow comments                                        | ✔️ [ReadCommentHandling global setting](#comments) |
 | Allow trailing commas                                 | ✔️ [AllowTrailingCommas global setting](#trailing-commas) |
 | Custom converter registration                         | ✔️ [Order of precedence differs](#converter-registration-precedence) |
-| No maximum depth by default                           | ✔️ [Default maximum depth 64, configurable](#maximum-depth) |
+| Default maximum depth 64, configurable                | ✔️ [Default maximum depth 64, configurable](#maximum-depth) |
 | `PreserveReferencesHandling` global setting           | ✔️ [ReferenceHandling global setting](#preserve-object-references-and-handle-loops) |
 | Serialize or deserialize numbers in quotes            | ✔️ [NumberHandling global setting, [JsonNumberHandling] attribute](#allow-or-write-numbers-in-quotes) |
 | Deserialize to immutable classes and structs          | ✔️ [JsonConstructor, C# 9 Records](#deserialize-to-immutable-classes-and-structs) |
@@ -99,7 +99,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | Allow comments                                        | ✔️ [ReadCommentHandling global setting](#comments) |
 | Allow trailing commas                                 | ✔️ [AllowTrailingCommas global setting](#trailing-commas) |
 | Custom converter registration                         | ✔️ [Order of precedence differs](#converter-registration-precedence) |
-| No maximum depth by default                           | ✔️ [Default maximum depth 64, configurable](#maximum-depth) |
+| Default maximum depth 64, configurable                | ✔️ [Default maximum depth 64, configurable](#maximum-depth) |
 | `PreserveReferencesHandling` global setting           | ✔️ [ReferenceHandling global setting](#preserve-object-references-and-handle-loops) |
 | Serialize or deserialize numbers in quotes            | ✔️ [NumberHandling global setting, [JsonNumberHandling] attribute](#allow-or-write-numbers-in-quotes) |
 | Deserialize to immutable classes and structs          | ✔️ [JsonConstructor, C# 9 Records](#deserialize-to-immutable-classes-and-structs) |
@@ -149,7 +149,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | Allow comments                                        | ✔️ [ReadCommentHandling global setting](#comments) |
 | Allow trailing commas                                 | ✔️ [AllowTrailingCommas global setting](#trailing-commas) |
 | Custom converter registration                         | ✔️ [Order of precedence differs](#converter-registration-precedence) |
-| No maximum depth by default                           | ✔️ [Default maximum depth 64, configurable](#maximum-depth) |
+| Default maximum depth 64, configurable                | ✔️ [Default maximum depth 64, configurable](#maximum-depth) |
 | `PreserveReferencesHandling` global setting           | ✔️ [ReferenceHandling global setting](#preserve-object-references-and-handle-loops) |
 | Serialize or deserialize numbers in quotes            | ✔️ [NumberHandling global setting, [JsonNumberHandling] attribute](#allow-or-write-numbers-in-quotes) |
 | Deserialize to immutable classes and structs          | ✔️ [JsonConstructor, C# 9 Records](#deserialize-to-immutable-classes-and-structs) |
@@ -351,7 +351,7 @@ To preserve references and handle circular references in <xref:System.Text.Json?
 
 The `ReferenceHandler.IgnoreCycles` option has behavior similar to Newtonsoft.Json `ReferenceLoopHandling.Ignore`. One difference is that the System.Text.Json implementation replaces reference loops with the `null` JSON token instead of ignoring the object reference. For more information, see [Ignore circular references](preserve-references.md#ignore-circular-references).
 
-Like the Newtonsoft.Json [ReferenceResolver](https://www.newtonsoft.com/json/help/html/P_Newtonsoft_Json_JsonSerializer_ReferenceResolver.htm), the <xref:System.Text.Json.Serialization.ReferenceResolver?displayProperty=fullName> class defines the behavior of preserving references on serialization and deserialization. Create a derived class to specify custom behavior. For an example, see [GuidReferenceResolver](https://github.com/dotnet/docs/blob/main/docs/standard/serialization/system-text-json/snippets/how-to-5-0/csharp/GuidReferenceResolverExample.cs).
+Like the Newtonsoft.Json [ReferenceResolver](https://www.newtonsoft.com/json/help/html/P_Newtonsoft_Json_JsonSerializer_ReferenceResolver.htm), the <xref:System.Text.Json.Serialization.ReferenceResolver?displayProperty=fullName> class defines the behavior of preserving references on serialization and deserialization. Create a derived class to specify custom behavior. For an example, see [GuidReferenceResolver](https://github.com/dotnet/docs/blob/main/docs/standard/serialization/system-text-json/snippets/how-to-contd/csharp/GuidReferenceResolverExample.cs).
 
 Some related `Newtonsoft.Json` features aren't supported:
 
@@ -548,9 +548,9 @@ The required properties converter would require additional logic if you need to 
 
 <xref:System.Text.Json?displayProperty=fullName> supports ISO 8601-1:2019, including the RFC 3339 profile. This format is widely adopted, unambiguous, and makes round trips precisely. To use any other format, create a custom converter. For example, the following converters serialize and deserialize JSON that uses Unix epoch format with or without a time zone offset (values such as `/Date(1590863400000-0700)/` or `/Date(1590863400000)/`):
 
-:::code language="csharp" source="snippets/how-to-5-0/csharp/CustomConverterUnixEpochDate.cs" id="ConverterOnly":::
+:::code language="csharp" source="snippets/how-to-contd/csharp/CustomConverterUnixEpochDate.cs" id="ConverterOnly":::
 
-:::code language="csharp" source="snippets/how-to-5-0/csharp/CustomConverterUnixEpochDateNoZone.cs" id="ConverterOnly":::
+:::code language="csharp" source="snippets/how-to-contd/csharp/CustomConverterUnixEpochDateNoZone.cs" id="ConverterOnly":::
 
 For more information, see [DateTime and DateTimeOffset support in System.Text.Json](../../datetime/system-text-json-support.md).
 

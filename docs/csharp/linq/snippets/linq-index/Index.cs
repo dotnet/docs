@@ -1,6 +1,6 @@
 ﻿namespace LinqSamples;
 
-public static class Index
+public static class IndexClass
 {
     public static void Intro()
     {

@@ -130,17 +130,6 @@ updates:
         patterns:
           - "*" # Prefer a single PR per solution update.
   - package-ecosystem: "nuget"
-    directory: "/docs/csharp/programming-guide/concepts/linq/snippets" #linq-snippets.sln
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-    groups:
-      # Group .NET updates together for solutions.
-      dotnet:
-        patterns:
-          - "*" # Prefer a single PR per solution update.
-  - package-ecosystem: "nuget"
     directory: "/docs/csharp/roslyn-sdk/snippets/source-generators" #source-generators.sln
     schedule:
       interval: "weekly"
@@ -240,28 +229,6 @@ updates:
         patterns:
           - "*" # Prefer a single PR per solution update.
   - package-ecosystem: "nuget"
-    directory: "/docs/standard/security/snippets" #cs-round-trip-encryption.sln
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-    groups:
-      # Group .NET updates together for solutions.
-      dotnet:
-        patterns:
-          - "*" # Prefer a single PR per solution update.
-  - package-ecosystem: "nuget"
-    directory: "/docs/standard/security/snippets" #vb-rounbd-trip-encryption.sln
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-    groups:
-      # Group .NET updates together for solutions.
-      dotnet:
-        patterns:
-          - "*" # Prefer a single PR per solution update.
-  - package-ecosystem: "nuget"
     directory: "/samples/snippets/core/testing/unit-testing-best-practices/csharp" #unit-testing-best-practices.sln
     schedule:
       interval: "weekly"
@@ -329,17 +296,6 @@ updates:
           - "*" # Prefer a single PR per solution update.
   - package-ecosystem: "nuget"
     directory: "/samples/snippets/core/tutorials/netcore-hosting/csharp/HostWithHostFxr" #HostWithHostFxr.sln
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-    groups:
-      # Group .NET updates together for solutions.
-      dotnet:
-        patterns:
-          - "*" # Prefer a single PR per solution update.
-  - package-ecosystem: "nuget"
-    directory: "/samples/snippets/csharp/concepts/linq" #LinqSamples.sln
     schedule:
       interval: "weekly"
       day: "wednesday"
@@ -823,6 +779,50 @@ updates:
         patterns:
           - "*" # Prefer a single PR per solution update.
   - package-ecosystem: "nuget"
+    directory: "/docs/ai/how-to/snippets/content-filtering" #AIContentFiltering.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+    groups:
+      # Group .NET updates together for projects.
+      dotnet:
+        patterns:
+          - "*" # Prefer a single PR per project update.
+  - package-ecosystem: "nuget"
+    directory: "/docs/ai/how-to/snippets/semantic-kernel" #semantic-kernel.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+    groups:
+      # Group .NET updates together for projects.
+      dotnet:
+        patterns:
+          - "*" # Prefer a single PR per project update.
+  - package-ecosystem: "nuget"
+    directory: "/docs/ai/tutorials/snippets/llm-eval" #llm-eval.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+    groups:
+      # Group .NET updates together for projects.
+      dotnet:
+        patterns:
+          - "*" # Prefer a single PR per project update.
+  - package-ecosystem: "nuget"
+    directory: "/docs/azure/sdk/snippets/authentication/credential-chains" #AuthenticationSampleApp.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+    groups:
+      # Group .NET updates together for projects.
+      dotnet:
+        patterns:
+          - "*" # Prefer a single PR per project update.
+  - package-ecosystem: "nuget"
     directory: "/docs/azure/sdk/snippets/logging" #LoggingSampleApp.csproj
     schedule:
       interval: "weekly"
@@ -835,6 +835,50 @@ updates:
           - "*" # Prefer a single PR per project update.
   - package-ecosystem: "nuget"
     directory: "/docs/azure/sdk/snippets/pagination" #pagination.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+    groups:
+      # Group .NET updates together for projects.
+      dotnet:
+        patterns:
+          - "*" # Prefer a single PR per project update.
+  - package-ecosystem: "nuget"
+    directory: "/docs/azure/sdk/snippets/protocol-convenience-methods/AzureCoreConvenience" #AzureCoreConvenience.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+    groups:
+      # Group .NET updates together for projects.
+      dotnet:
+        patterns:
+          - "*" # Prefer a single PR per project update.
+  - package-ecosystem: "nuget"
+    directory: "/docs/azure/sdk/snippets/protocol-convenience-methods/AzureCoreProtocol" #AzureCoreProtocol.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+    groups:
+      # Group .NET updates together for projects.
+      dotnet:
+        patterns:
+          - "*" # Prefer a single PR per project update.
+  - package-ecosystem: "nuget"
+    directory: "/docs/azure/sdk/snippets/protocol-convenience-methods/SCMConvenience" #SCMConvenience.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+    groups:
+      # Group .NET updates together for projects.
+      dotnet:
+        patterns:
+          - "*" # Prefer a single PR per project update.
+  - package-ecosystem: "nuget"
+    directory: "/docs/azure/sdk/snippets/protocol-convenience-methods/SCMProtocol" #SCMProtocol.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
@@ -1296,6 +1340,17 @@ updates:
         patterns:
           - "*" # Prefer a single PR per project update.
   - package-ecosystem: "nuget"
+    directory: "/docs/core/extensions/snippets/di/di-basics" #di-basics.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+    groups:
+      # Group .NET updates together for projects.
+      dotnet:
+        patterns:
+          - "*" # Prefer a single PR per project update.
+  - package-ecosystem: "nuget"
     directory: "/docs/core/extensions/snippets/fileglobbing/example" #example.csproj
     schedule:
       interval: "weekly"
@@ -1747,6 +1802,17 @@ updates:
         patterns:
           - "*" # Prefer a single PR per project update.
   - package-ecosystem: "nuget"
+    directory: "/docs/core/whats-new/snippets/dotnet-9/csharp" #Project.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+    groups:
+      # Group .NET updates together for projects.
+      dotnet:
+        patterns:
+          - "*" # Prefer a single PR per project update.
+  - package-ecosystem: "nuget"
     directory: "/docs/csharp/advanced-topics/interop/snippets/dynamic-iron-python-walkthrough" #ironpythonsample.csproj
     schedule:
       interval: "weekly"
@@ -1814,6 +1880,17 @@ updates:
           - "*" # Prefer a single PR per project update.
   - package-ecosystem: "nuget"
     directory: "/docs/csharp/language-reference/operators/snippets/shared" #operators.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+    groups:
+      # Group .NET updates together for projects.
+      dotnet:
+        patterns:
+          - "*" # Prefer a single PR per project update.
+  - package-ecosystem: "nuget"
+    directory: "/docs/csharp/linq/snippets/HowToBuildDynamicQueries" #HowToBuildDynamicQueries.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
@@ -1923,6 +2000,17 @@ updates:
         patterns:
           - "*" # Prefer a single PR per project update.
   - package-ecosystem: "nuget"
+    directory: "/docs/framework/windows-services/snippets/MyNewService/csharp" #Project.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+    groups:
+      # Group .NET updates together for projects.
+      dotnet:
+        patterns:
+          - "*" # Prefer a single PR per project update.
+  - package-ecosystem: "nuget"
     directory: "/docs/fundamentals/code-analysis/quality-rules/snippets/csharp/all-rules" #all-rules.csproj
     schedule:
       interval: "weekly"
@@ -2000,7 +2088,40 @@ updates:
         patterns:
           - "*" # Prefer a single PR per project update.
   - package-ecosystem: "nuget"
+    directory: "/docs/fundamentals/runtime-libraries/snippets/System.Reflection.Emit/PersistedAssemblyBuilder/Overview/csharp" #Project.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+    groups:
+      # Group .NET updates together for projects.
+      dotnet:
+        patterns:
+          - "*" # Prefer a single PR per project update.
+  - package-ecosystem: "nuget"
     directory: "/docs/fundamentals/runtime-libraries/snippets/System.Resources/ResourceReader/Overview/csharp" #Project.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+    groups:
+      # Group .NET updates together for projects.
+      dotnet:
+        patterns:
+          - "*" # Prefer a single PR per project update.
+  - package-ecosystem: "nuget"
+    directory: "/docs/machine-learning/how-to-guides/snippets/load-data-ml-net" #Project.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+    groups:
+      # Group .NET updates together for projects.
+      dotnet:
+        patterns:
+          - "*" # Prefer a single PR per project update.
+  - package-ecosystem: "nuget"
+    directory: "/docs/machine-learning/tutorials/snippets/api-transfer-learning/csharp" #Project.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
@@ -2067,127 +2188,6 @@ updates:
           - "*" # Prefer a single PR per project update.
   - package-ecosystem: "nuget"
     directory: "/docs/machine-learning/tutorials/snippets/predict-prices/csharp" #TaxiFarePrediction.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-    groups:
-      # Group .NET updates together for projects.
-      dotnet:
-        patterns:
-          - "*" # Prefer a single PR per project update.
-  - package-ecosystem: "nuget"
-    directory: "/docs/machine-learning/tutorials/snippets/sales-anomaly-detection/csharp" #ProductSalesAnomalyDetection.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-    groups:
-      # Group .NET updates together for projects.
-      dotnet:
-        patterns:
-          - "*" # Prefer a single PR per project update.
-  - package-ecosystem: "nuget"
-    directory: "/docs/machine-learning/tutorials/snippets/sentiment-analysis/csharp" #SentimentAnalysis.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-    groups:
-      # Group .NET updates together for projects.
-      dotnet:
-        patterns:
-          - "*" # Prefer a single PR per project update.
-  - package-ecosystem: "nuget"
-    directory: "/docs/machine-learning/tutorials/snippets/text-classification-tf/csharp" #TextClassificationTF.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-    groups:
-      # Group .NET updates together for projects.
-      dotnet:
-        patterns:
-          - "*" # Prefer a single PR per project update.
-  - package-ecosystem: "nuget"
-    directory: "/docs/orleans/deployment/snippets/consul/Silo" #Silo.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-    groups:
-      # Group .NET updates together for projects.
-      dotnet:
-        patterns:
-          - "*" # Prefer a single PR per project update.
-  - package-ecosystem: "nuget"
-    directory: "/docs/orleans/deployment/snippets/service-fabric/stateless" #Orleans.ServiceFabric.Stateless.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-    groups:
-      # Group .NET updates together for projects.
-      dotnet:
-        patterns:
-          - "*" # Prefer a single PR per project update.
-  - package-ecosystem: "nuget"
-    directory: "/docs/orleans/grains/snippets/timers" #Timers.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-    groups:
-      # Group .NET updates together for projects.
-      dotnet:
-        patterns:
-          - "*" # Prefer a single PR per project update.
-  - package-ecosystem: "nuget"
-    directory: "/docs/orleans/grains/snippets/transactions/Abstractions" #Abstractions.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-    groups:
-      # Group .NET updates together for projects.
-      dotnet:
-        patterns:
-          - "*" # Prefer a single PR per project update.
-  - package-ecosystem: "nuget"
-    directory: "/docs/orleans/grains/snippets/transactions/Client" #Client.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-    groups:
-      # Group .NET updates together for projects.
-      dotnet:
-        patterns:
-          - "*" # Prefer a single PR per project update.
-  - package-ecosystem: "nuget"
-    directory: "/docs/orleans/grains/snippets/transactions/Server" #Server.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-    groups:
-      # Group .NET updates together for projects.
-      dotnet:
-        patterns:
-          - "*" # Prefer a single PR per project update.
-  - package-ecosystem: "nuget"
-    directory: "/docs/orleans/host/snippets" #Client.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-    groups:
-      # Group .NET updates together for projects.
-      dotnet:
-        patterns:
-          - "*" # Prefer a single PR per project update.
-  - package-ecosystem: "nuget"
-    directory: "/docs/orleans/implementation/snippets/testing/orleans-testing/Sample.OrleansTesting" #Sample.OrleansTesting.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"

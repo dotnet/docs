@@ -91,7 +91,7 @@ The parameter is useful for handling polymorphic cases and when using generics t
 You can use fast UTF-8-based parsing and formatting methods in your converter logic if your input <xref:System.DateTime> or <xref:System.DateTimeOffset>
 text representations are compliant with one of the "R", "l", "O", or "G"
  [standard date and time format strings](../base-types/standard-date-and-time-format-strings.md),
-or you want to write according to one of these formats. This approach is much faster than using s`DateTime(Offset).Parse` and `DateTime(Offset).ToString`.
+or you want to write according to one of these formats. This approach is much faster than using `DateTime(Offset).Parse` and `DateTime(Offset).ToString`.
 
 The following example shows a custom converter that serializes and deserializes <xref:System.DateTime> values according to
  [the "R" standard format](../base-types/standard-date-and-time-format-strings.md#the-rfc1123-r-r-format-specifier):
@@ -116,9 +116,9 @@ the converter successfully parses the data using <xref:System.DateTime.Parse(Sys
 
 The following converters handle Unix epoch format with or without a time zone offset (values such as `/Date(1590863400000-0700)/` or `/Date(1590863400000)/`):
 
-:::code language="csharp" source="../serialization/system-text-json/snippets/how-to-5-0/csharp/CustomConverterUnixEpochDate.cs" id="ConverterOnly":::
+:::code language="csharp" source="../serialization/system-text-json/snippets/how-to-contd/csharp/CustomConverterUnixEpochDate.cs" id="ConverterOnly":::
 
-:::code language="csharp" source="../serialization/system-text-json/snippets/how-to-5-0/csharp/CustomConverterUnixEpochDateNoZone.cs" id="ConverterOnly":::
+:::code language="csharp" source="../serialization/system-text-json/snippets/how-to-contd/csharp/CustomConverterUnixEpochDateNoZone.cs" id="ConverterOnly":::
 
 ### When using <xref:System.Text.Json.Utf8JsonWriter>
 

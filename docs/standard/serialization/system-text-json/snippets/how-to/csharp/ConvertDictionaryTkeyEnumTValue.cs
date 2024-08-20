@@ -26,7 +26,10 @@ namespace SystemTextJsonSamples
             // <Deserialize>
             var deserializeOptions = new JsonSerializerOptions();
             deserializeOptions.Converters.Add(new DictionaryTKeyEnumTValueConverter());
-            weatherForecast = JsonSerializer.Deserialize<WeatherForecastWithEnumDictionary>(jsonString, deserializeOptions);
+            weatherForecast = JsonSerializer.Deserialize<WeatherForecastWithEnumDictionary>(
+                jsonString,
+                deserializeOptions
+                );
             // </Deserialize>
             weatherForecast!.DisplayPropertyValues();
         }

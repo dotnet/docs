@@ -3,7 +3,7 @@ title: Dependency injection
 description: Learn how to use dependency injection within your .NET apps. Discover how to registration services, define service lifetimes, and express dependencies in C#.
 author: IEvangelist
 ms.author: dapine
-ms.date: 01/25/2024
+ms.date: 07/18/2024
 ms.topic: overview
 ---
 
@@ -110,18 +110,14 @@ With dependency injection terminology, a service:
 The framework provides a robust logging system. The `IMessageWriter` implementations shown in the preceding examples were written to demonstrate basic DI, not to implement logging. Most apps shouldn't need to write loggers. The following code demonstrates using the default logging, which only requires the `Worker` to be registered as a hosted service <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%2A>:
 
 ```csharp
-public class Worker : BackgroundService
+public sealed class Worker(ILogger<Worker> logger) : BackgroundService
 {
-    private readonly ILogger<Worker> _logger;
-
-    public Worker(ILogger<Worker> logger) =>
-        _logger = logger;
-
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
         while (!stoppingToken.IsCancellationRequested)
         {
-            _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
+            logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
+
             await Task.Delay(1_000, stoppingToken);
         }
     }
@@ -234,17 +230,17 @@ The following table lists a small sample of these framework-registered services:
 
 Services can be registered with one of the following lifetimes:
 
-- Transient
-- Scoped
-- Singleton
+- [Transient](#transient)
+- [Scoped](#scoped)
+- [Singleton](#singleton)
 
 The following sections describe each of the preceding lifetimes. Choose an appropriate lifetime for each registered service.
 
 ### Transient
 
-Transient lifetime services are created each time they're requested from the service container. This lifetime works best for lightweight, stateless services. Register transient services with <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddTransient%2A>.
+Transient lifetime services are created each time they're requested from the service container. To register a service as _transient_, call <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddTransient%2A>.
 
-In apps that process requests, transient services are disposed at the end of the request.
+In apps that process requests, transient services are disposed at the end of the request. This lifetime incurs per/request allocations, as services are resolved and constructed every time. For more information, see [Dependency Injection Guidelines: IDisposable guidance for transient and shared instances](dependency-injection-guidelines.md#idisposable-guidance-for-transient-and-shared-instances).
 
 ### Scoped
 
@@ -289,7 +285,19 @@ The framework provides service registration extension methods that are useful in
 
 For more information on type disposal, see the [Disposal of services](dependency-injection-guidelines.md#disposal-of-services) section.
 
-Registering a service with only an implementation type is equivalent to registering that service with the same implementation and service type. This is why multiple implementations of a service cannot be registered using the methods that don't take an explicit service type. These methods can register multiple *instances* of a service, but they will all have the same *implementation* type.
+Registering a service with only an implementation type is equivalent to registering that service with the same implementation and service type. For example, consider the following code:
+
+```csharp
+services.AddSingleton<ExampleService>();
+```
+
+This is equivalent to registering the service with both the service and implementation of the same types:
+
+```csharp
+services.AddSingleton<ExampleService, ExampleService>();
+```
+
+This equivalency is why multiple implementations of a service can't be registered using the methods that don't take an explicit service type. These methods can register multiple *instances* of a service, but they will all have the same *implementation* type.
 
 Any of the above service registration methods can be used to register multiple service instances of the same service type. In the following example, `AddSingleton` is called twice with `IMessageWriter` as the service type. The second call to `AddSingleton` overrides the previous one when resolved as `IMessageWriter` and adds to the previous one when multiple services are resolved via `IEnumerable<IMessageWriter>`. Services appear in the order they were registered when resolved via `IEnumerable<{SERVICE}>`.
 
@@ -438,6 +446,7 @@ public class ExampleService
 
 ## See also
 
+- [Understand dependency injection basics in .NET](dependency-injection-basics.md)
 - [Use dependency injection in .NET](dependency-injection-usage.md)
 - [Dependency injection guidelines](dependency-injection-guidelines.md)
 - [Dependency injection in ASP.NET Core](/aspnet/core/fundamentals/dependency-injection)

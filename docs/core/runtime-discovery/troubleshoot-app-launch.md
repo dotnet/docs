@@ -2,6 +2,7 @@
 title: Troubleshoot app launch failures
 description: Learn about common reasons for app launch failures and possible solutions.
 ms.topic: troubleshooting
+ms.custom: linux-related-content
 ms.date: 03/29/2023
 zone_pivot_groups: operating-systems-set-one
 ---
@@ -206,7 +207,7 @@ If you encounter an error stating that running scripts is disabled, you may need
 Set-ExecutionPolicy Bypass -Scope Process
 ```
 
-For more information on installation using the script, see [Install with PowerShell automation](../install/windows.md#install-with-powershell-automation).
+For more information on installation using the script, see [Install with PowerShell automation](../install/windows.md#install-with-powershell).
 ::: zone-end
 
 ::: zone pivot="os-linux"
@@ -244,7 +245,7 @@ For more information on installation using the script, see [Install with bash au
 You can download a binary archive of .NET from the [download page](https://dotnet.microsoft.com/download/dotnet). From the **Binaries** column of the runtime download, download the binary release matching the required architecture. Extract the downloaded archive to the ".NET location" specified in the error message.
 
 ::: zone pivot="os-windows"
-For more information about manual installation, see [Install .NET on Windows](../install/windows.md#install-with-powershell-automation)
+For more information about manual installation, see [Install .NET on Windows](../install/windows.md#install-with-powershell)
 ::: zone-end
 
 ::: zone pivot="os-linux"

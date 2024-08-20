@@ -2,7 +2,7 @@
 title: Obsolete features in .NET 5+
 titleSuffix: ""
 description: Learn about APIs that are marked as obsolete in .NET 5 and later versions that produce SYSLIB compiler warnings.
-ms.date: 06/08/2023
+ms.date: 08/07/2024
 ---
 
 # Obsolete features in .NET 5+
@@ -29,7 +29,7 @@ The following table provides an index to the `SYSLIB0XXX` obsoletions in .NET 5+
 | [SYSLIB0006](syslib0006.md) | Warning | <xref:System.Threading.Thread.Abort?displayProperty=nameWithType> is not supported and throws <xref:System.PlatformNotSupportedException>. |
 | [SYSLIB0007](syslib0007.md) | Warning | The default implementation of this cryptography algorithm is not supported. |
 | [SYSLIB0008](syslib0008.md) | Warning | The <xref:System.Runtime.CompilerServices.DebugInfoGenerator.CreatePdbGenerator> API is not supported and throws <xref:System.PlatformNotSupportedException>. |
-| [SYSLIB0009](syslib0009.md) | Warning | The <xref:System.Net.AuthenticationManager.Authenticate%2A?displayProperty=nameWithType> and <xref:System.Net.AuthenticationManager.PreAuthenticate%2A?displayProperty=nameWithType> methods are not supported and throw <xref:System.PlatformNotSupportedException>. |
+| [SYSLIB0009](syslib0009.md) | Warning | <xref:System.Net.AuthenticationManager> is not supported. Methods will no-op or throw <xref:System.PlatformNotSupportedException>. |
 | [SYSLIB0010](syslib0010.md) | Warning | Some remoting APIs are not supported and throw <xref:System.PlatformNotSupportedException>. |
 | [SYSLIB0011](syslib0011.md) | Warning | <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> serialization is obsolete and should not be used. |
 | [SYSLIB0012](syslib0012.md) | Warning | <xref:System.Reflection.Assembly.CodeBase?displayProperty=nameWithType> and <xref:System.Reflection.Assembly.EscapedCodeBase?displayProperty=nameWithType> are only included for .NET Framework compatibility. Use <xref:System.Reflection.Assembly.Location?displayProperty=nameWithType> instead. |
@@ -74,6 +74,10 @@ The following table provides an index to the `SYSLIB0XXX` obsoletions in .NET 5+
 | [SYSLIB0051](syslib0051.md) | Warning | APIs that support obsolete formatter-based serialization are obsolete. They should not be called or extended by application code. |
 | [SYSLIB0052](syslib0052.md) | Warning | APIs that support obsolete mechanisms for Regex extensibility are obsolete. |
 | [SYSLIB0053](syslib0053.md) | Warning | <xref:System.Security.Cryptography.AesGcm> should indicate the required tag size for encryption and decryption. Use a constructor that accepts the tag size. |
+| [SYSLIB0054](syslib0054.md) | Warning | <xref:System.Threading.Thread.VolatileRead%2A?displayProperty=nameWithType> and <xref:System.Threading.Thread.VolatileWrite%2A?displayProperty=nameWithType> are obsolete. Use <xref:System.Threading.Volatile.Read%2A?displayProperty=nameWithType> or <xref:System.Threading.Volatile.Write%2A?displayProperty=nameWithType> instead. |
+| [SYSLIB0055](syslib0055.md) | Warning | `AdvSimd.ShiftRightLogicalRoundedNarrowingSaturate*` methods with signed parameters are obsolete. Use the unsigned overloads instead. |
+| [SYSLIB0056](syslib0056.md) | Warning | `Assembly.LoadFrom` with a custom `AssemblyHashAlgorithm` is obsolete. Use overloads without an `AssemblyHashAlgorithm`. |
+| [SYSLIB0057](syslib0057.md) | Warning | `X509Certificate2` and `X509Certificate` constructors for binary and file content are obsolete. |
 
 ## Suppress warnings
 

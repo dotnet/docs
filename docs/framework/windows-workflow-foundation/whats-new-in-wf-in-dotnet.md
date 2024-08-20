@@ -2,7 +2,7 @@
 title: "What's New in Windows Workflow Foundation in .NET Framework 4.5"
 description: Windows Workflow Foundation in .NET Framework 4.5 introduces many new features, such as new activities, designer capabilities, and workflow development models.
 ms.date: "03/30/2017"
-ms.topic: "reference"
+ms.topic: whats-new
 ---
 
 # What's New in Windows Workflow Foundation in .NET Framework 4.5

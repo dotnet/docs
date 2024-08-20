@@ -142,6 +142,9 @@ The following table list all the code-style rules by ID and [options](../code-st
 > | [IDE1005](ide1005.md) | Use conditional delegate call | [csharp_style_conditional_delegate_call](ide1005.md#csharp_style_conditional_delegate_call) |
 > | [IDE1006](naming-rules.md) | Naming styles | |
 
+> [!NOTE]
+> There are some rules that only surface in the Visual Studio IDE, and these regard JSON and regular expression pattern strings. For more information, see [JSON001](/visualstudio/ide/reference/json001), [JSON002](/visualstudio/ide/reference/json002), and [RE0001](/visualstudio/ide/reference/re0001).
+
 ## Legend
 
 The following table shows the type of information that's provided for each rule in the reference documentation.

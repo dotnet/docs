@@ -1,6 +1,6 @@
 ---
 description: "protected keyword - C# Reference"
-title: "protected keyword - C# Reference"
+title: "protected keyword"
 ms.date: 07/20/2015
 f1_keywords:
   - "protected"
@@ -48,7 +48,6 @@ For more information, see [Declared accessibility](~/_csharpstandard/standard/ba
 
 ## See also
 
-- [C# Reference](../index.md)
 - [C# Keywords](index.md)
 - [Access Modifiers](access-modifiers.md)
 - [Accessibility Levels](accessibility-levels.md)

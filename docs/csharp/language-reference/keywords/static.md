@@ -1,6 +1,6 @@
 ---
 description: "static modifier - C# Reference"
-title: "static modifier - C# Reference"
+title: "static modifier"
 ms.date: 09/25/2020
 f1_keywords: 
   - "static"
@@ -66,7 +66,6 @@ This example shows that you can initialize a `static` field by using another `st
 
 ## See also
 
-- [C# Reference](../index.md)
 - [C# Keywords](index.md)
 - [Modifiers](index.md)
 - [using static directive](using-directive.md)

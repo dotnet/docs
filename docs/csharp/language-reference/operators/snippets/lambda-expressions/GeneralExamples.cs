@@ -52,7 +52,7 @@ namespace lambda_expressions
             // </SnippetDefaultParameters>
 
             // <SnippetParamsArray>
-            var sum = (params int[] values) =>
+            var sum = (params IEnumerable<int> values) =>
             {
                 int sum = 0;
                 foreach (var value in values) 
@@ -73,6 +73,7 @@ namespace lambda_expressions
         // <DelegateDeclarations>
         delegate int IncrementByDelegate(int source, int increment = 1);
         delegate int SumDelegate(params int[] values);
+        delegate int SumCollectionDelegate(params IEnumerable<int> values);
         // </DelegateDeclarations>
 
     }

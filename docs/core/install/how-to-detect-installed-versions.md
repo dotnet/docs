@@ -4,7 +4,7 @@ description: Learn how to list which versions of .NET are installed on your comp
 author: adegeo
 ms.author: adegeo
 ms.date: 11/15/2023
-ms.custom: "updateeachrelease"
+ms.custom: updateeachrelease, linux-related-content
 zone_pivot_groups: operating-systems-set-one
 ---
 

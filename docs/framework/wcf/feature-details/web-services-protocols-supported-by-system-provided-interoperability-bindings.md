@@ -1,12 +1,11 @@
 ---
-description: "Learn more about: Web Services Protocols Supported by System-Provided Interoperability Bindings"
 title: "Web Services Protocols Supported by System-Provided Interoperability Bindings"
+description: "Learn more about: Web Services Protocols Supported by System-Provided Interoperability Bindings"
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "WS-protocols"
   - "Web services protocols"
   - "Windows Communication Foundation, Web service protocols"
-ms.assetid: 1f7fc4ff-30fe-4e46-adda-91caad3b06c6
 ---
 # Web Services Protocols Supported by System-Provided Interoperability Bindings
 
@@ -81,7 +80,7 @@ Windows Communication Foundation (WCF) is built to interoperate with Web service
 </wsFederationHttpBinding>
 ```
 
- For more information, see [Federation](federation.md) .
+ For more information, see [Federation](federation.md).
 
 ## System-Provided Metadata Bindings
 

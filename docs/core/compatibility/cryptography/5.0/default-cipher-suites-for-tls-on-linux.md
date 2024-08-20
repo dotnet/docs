@@ -2,6 +2,7 @@
 title: "Breaking change: Default TLS cipher suites for .NET on Linux"
 description: Learn about the breaking change in .NET 5 where .NET, on Linux, now respects the OpenSSL configuration for default cipher suites when doing TLS/SSL.
 ms.date: 12/01/2022
+ms.custom: linux-related-content
 ---
 # Default TLS cipher suites for .NET on Linux
 
@@ -99,7 +100,7 @@ The new defaults are likely to work when communicating with modern clients or se
   CipherString = ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES256-SHA384:ECDHE-RSA-AES128-SHA256
   ```
 
-On the Red Hat Enterprise Linux, CentOS, and Fedora distributions, .NET applications default to the cipher suites permitted by the system-wide cryptographic policies. On these distributions, use the crypto-policies configuration instead of changing the OpenSSL configuration file.
+On the Red Hat Enterprise Linux, CentOS Stream, and Fedora distributions, .NET applications default to the cipher suites permitted by the system-wide cryptographic policies. On these distributions, use the crypto-policies configuration instead of changing the OpenSSL configuration file.
 
 ## Affected APIs
 

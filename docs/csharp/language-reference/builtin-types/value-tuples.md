@@ -1,5 +1,5 @@
 ---
-title: "Tuple types - C# reference"
+title: "Tuple types"
 description: "C# tuples: lightweight data structures that you can use to group loosely related data elements. Tuples introduce a type that contains multiple public members."
 ms.date: 04/24/2023
 helpviewer_keywords:
@@ -164,7 +164,6 @@ For more information, see:
 
 ## See also
 
-- [C# reference](../index.md)
 - [Value types](value-types.md)
 - [Choosing between anonymous and tuple types](../../../standard/base-types/choosing-between-anonymous-and-tuple.md)
 - <xref:System.ValueTuple?displayProperty=nameWithType>

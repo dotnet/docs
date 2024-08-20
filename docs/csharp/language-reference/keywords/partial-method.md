@@ -1,6 +1,6 @@
 ---
 description: "partial method - C# Reference"
-title: "partial method - C# Reference"
+title: "partial method"
 ms.date: 03/23/2021
 f1_keywords: 
   - "partialmethod_CSharpKeyword"
@@ -45,5 +45,4 @@ For more information, see [Partial Classes and Methods](../../programming-guide/
 
 ## See also
 
-- [C# Reference](../index.md)
 - [partial type](partial-type.md)

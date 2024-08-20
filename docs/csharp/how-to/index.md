@@ -1,5 +1,5 @@
 ---
-title: How to articles (C# Guide)
+title: How to articles 
 description: A collection of quick tips and short, focused code samples
 ms.topic: conceptual
 ms.date: 12/20/2017
@@ -92,7 +92,7 @@ Events provide a mechanism to publish or subscribe to notifications.
 
 - [Subscribe and unsubscribe from events](../programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md).
 - [Implement events declared in interfaces](../programming-guide/events/how-to-implement-interface-events.md).
-- [Conform to .NET guidelines when your code publishes events](../programming-guide/events/how-to-publish-events-that-conform-to-net-framework-guidelines.md).
+- [Conform to .NET guidelines when your code publishes events](/dotnet/standard/events).
 - [Raise events defined in base classes from derived classes](../programming-guide/events/how-to-raise-base-class-events-in-derived-classes.md).
 - [Implement custom event accessors](../programming-guide/events/how-to-implement-custom-event-accessors.md).
 
@@ -102,19 +102,17 @@ LINQ enables you to write code to query any data source that supports the
 LINQ query expression pattern. These articles help you understand the pattern
 and work with different data sources.
 
-- [Query a collection](../programming-guide/concepts/linq/how-to-query-an-arraylist-with-linq.md).
+- [Query a collection](../linq/how-to-query-collections.md).
 - [Use `var` in query expressions](../programming-guide/classes-and-structs/how-to-use-implicitly-typed-local-variables-and-arrays-in-a-query-expression.md).
 - [Return subsets of element properties from a query](../programming-guide/classes-and-structs/how-to-return-subsets-of-element-properties-in-a-query.md).
 - [Write queries with complex filtering](../../standard/linq/write-queries-complex-filtering.md).
 - [Sort elements of a data source](../../standard/linq/sort-elements.md).
 - [Sort elements on multiple keys](../../standard/linq/sort-elements-multiple-keys.md).
 - [Control the type of a projection](../../standard/linq/control-type-projection.md).
-- [Count occurrences of a value in a source sequence](../programming-guide/concepts/linq/how-to-count-occurrences-of-a-word-in-a-string-linq.md).
+- [Count occurrences of a value in a source sequence](../linq/how-to-query-strings.md).
 - [Calculate intermediate values](../../standard/linq/calculate-intermediate-values.md).
-- [Merge data from multiple sources](../programming-guide/concepts/linq/how-to-populate-object-collections-from-multiple-sources-linq.md).
-- [Find the set difference between two sequences](../programming-guide/concepts/linq/how-to-find-the-set-difference-between-two-lists-linq.md).
 - [Debug empty query results](../../standard/linq/debug-empty-query-results-sets.md).
-- [Add custom methods to LINQ queries](../programming-guide/concepts/linq/how-to-add-custom-methods-for-linq-queries.md).
+- [Add custom methods to LINQ queries](../linq/how-to-extend-linq.md).
 
 ## Multiple threads and async processing
 

@@ -1,5 +1,5 @@
 ---
-title: "Default values of C# types - C# reference"
+title: "Default values of built in types"
 description: "Learn the default values of C# types such as bool, char, int, float, double and more."
 ms.date: 09/28/2021
 helpviewer_keywords: 
@@ -60,5 +60,4 @@ For more information, see the following sections of the [C# language specificati
 
 ## See also
 
-- [C# reference](../index.md)
 - [Constructors](../../programming-guide/classes-and-structs/constructors.md)

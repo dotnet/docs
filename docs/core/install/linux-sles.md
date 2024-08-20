@@ -1,9 +1,10 @@
 ---
 title: Install .NET on SLES
-description: Demonstrates the various ways to install .NET SDK and .NET Runtime on SLES.
+description: Learn about which versions of .NET SDK and .NET Runtime are supported, and how to install .NET on SLES.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/14/2023
+ms.date: 05/14/2024
+ms.custom: linux-related-content
 ---
 
 # Install the .NET SDK or the .NET Runtime on SLES
@@ -18,8 +19,8 @@ The following table is a list of currently supported .NET releases on both SLES 
 
 | SLES   | .NET |
 |--------|------|
-| 15     | 8, 7, 6 |
-| 12 SP5 | 8, 7, 6 |
+| 15     | 8.0, 6.0 |
+| 12 SP5 | 8.0, 6.0 |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
@@ -93,5 +94,6 @@ For more information about the dependencies, see [Self-contained Linux apps](htt
 
 ## Next steps
 
+- [.NET CLI overview](../tools/index.md)
 - [How to enable TAB completion for the .NET CLI](../tools/enable-tab-autocomplete.md)
 - [Tutorial: Create a console application with .NET SDK using Visual Studio Code](../tutorials/with-visual-studio-code.md)

@@ -1,6 +1,6 @@
 ---
 description: "value contextual keyword - C# Reference"
-title: "value contextual keyword - C# Reference"
+title: "value contextual keyword"
 ms.date: 07/20/2015
 f1_keywords: 
   - "value_CSharpKeyword"
@@ -22,5 +22,4 @@ For more information, see the [Properties](../../programming-guide/classes-and-s
 
 ## See also
 
-- [C# Reference](../index.md)
 - [C# Keywords](index.md)

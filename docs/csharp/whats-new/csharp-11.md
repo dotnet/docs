@@ -1,8 +1,9 @@
 ---
-title: What's new in C# 11 - C# Guide
+title: What's new in C# 11
 description: Get an overview of the new features added in C# 11.
-ms.date: 11/21/2022
+ms.date: 03/15/2024
 ms.custom: UpdateFrequency1
+ms.topic: whats-new
 ---
 # What's new in C# 11
 

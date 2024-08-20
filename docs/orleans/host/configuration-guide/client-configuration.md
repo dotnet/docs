@@ -1,7 +1,7 @@
 ---
 title: Client configuration
 description: Learn about client configurations in .NET Orleans.
-ms.date: 01/17/2023
+ms.date: 07/03/2024
 zone_pivot_groups: orleans-version
 ---
 

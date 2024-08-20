@@ -11,7 +11,7 @@ Microsoft.Data.Sqlite is a lightweight [ADO.NET](../../../framework/data/adonet/
 
 The latest stable version is available on [NuGet](https://www.nuget.org/packages/Microsoft.Data.Sqlite).
 
-### [.NET Core CLI](#tab/netcore-cli)
+### [.NET CLI](#tab/net-cli)
 
 ```dotnetcli
 dotnet add package Microsoft.Data.Sqlite

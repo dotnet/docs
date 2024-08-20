@@ -1,6 +1,6 @@
 ---
 description: "Statement keywords - C# Reference"
-title: "Statement keywords - C# Reference"
+title: "Statement keywords"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "keywords [C#], statements"
@@ -24,6 +24,5 @@ Statements are program instructions. Except as described in the topics reference
 
 ## See also
 
-- [C# Reference](../index.md)
 - [Statements](../../programming-guide/statements-expressions-operators/statements.md)
 - [C# Keywords](index.md)

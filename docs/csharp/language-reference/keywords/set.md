@@ -1,6 +1,6 @@
 ---
 description: "set keyword - C# Reference"
-title: "set keyword - C# Reference"
+title: "set keyword"
 ms.date: 03/10/2017
 f1_keywords: 
   - "set"
@@ -31,6 +31,5 @@ For simple cases in which a property's `get` and `set` accessors perform no othe
 
 ## See also
 
-- [C# Reference](../index.md)
 - [C# Keywords](index.md)
 - [Properties](../../programming-guide/classes-and-structs/properties.md)

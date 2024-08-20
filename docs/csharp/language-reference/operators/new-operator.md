@@ -4,7 +4,7 @@ description: "The C# new operator is used to create a optionally initialize a ne
 ms.date: 11/28/2022
 f1_keywords:
  - new_CSharpKeyword
-helpviewer_keywords: 
+helpviewer_keywords:
   - "new operator keyword [C#]"
 ms.assetid: a212b697-a79b-4105-9923-1f7b108036e8
 ---
@@ -54,7 +54,7 @@ To create an instance of an [anonymous type](../../fundamentals/types/anonymous-
 
 You don't have to destroy earlier created type instances. Instances of both reference and value types are destroyed automatically. Instances of value types are destroyed as soon as the context that contains them is destroyed. Instances of reference types are destroyed by the [garbage collector](../../../standard/garbage-collection/index.md) at some unspecified time after the last reference to them is removed.
 
-For type instances that contain unmanaged resources, for example, a file handle, it's recommended to employ deterministic clean-up to ensure that the resources they contain are released as soon as possible. For more information, see the <xref:System.IDisposable?displayProperty=nameWithType> API reference and the [using statement](../statements/using.md) article.
+For type instances that contain unmanaged resources, for example, a file handle, it's recommended to employ deterministic clean-up to ensure that the resources they contain are released as soon as possible. For more information, see the <xref:System.IDisposable?displayProperty=nameWithType> API reference and the [`using` statement](../statements/using.md) article.
 
 ## Operator overloadability
 
@@ -68,6 +68,5 @@ For more information about a target-typed `new` expression, see the [feature pro
 
 ## See also
 
-- [C# reference](../index.md)
 - [C# operators and expressions](index.md)
 - [Object and collection initializers](../../programming-guide/classes-and-structs/object-and-collection-initializers.md)

@@ -54,7 +54,7 @@ These errors occur in three places in your code:
 
 ## Errors in interface declaration
 
-The following errors might occur when you declare an interface with `static abstact` or `static virtual` members:
+The following errors might occur when you declare an interface with `static abstract` or `static virtual` members:
 
 - **CS8921**: *The parameter of a unary operator must be the containing type, or its type parameter constrained to it.*
 - **CS8922**: *The parameter type for `++` or `--` operator must be the containing type, or its type parameter constrained to it.*
@@ -65,7 +65,7 @@ The following errors might occur when you declare an interface with `static abst
 
 All these rules are extensions of the rules for declaring overloaded operators. The distinction is that the parameter can be either the interface type, or the interface's type parameter if that type parameter is constrained to implement the interface for its type. For binary operators, only one parameter must satisfy this rule.
 
-For example, `Inumber<T>` can declare an `T operator++(T)` because `T` is constrained to implement `INumber<T>`.
+For example, `INumber<T>` can declare an `T operator++(T)` because `T` is constrained to implement `INumber<T>`.
 
 To fix these errors, ensure that the parameters of any operators defined in the interface obey these rules. You can learn more in the language reference article on [static abstract members in interfaces](../keywords/interface.md#static-abstract-and-virtual-members) or in the tutorial to [explore static abstract interface members](../../whats-new/tutorials/static-virtual-interface-members.md).
 
@@ -81,7 +81,7 @@ These errors all indicate that you declared the method that implements a static 
 
 ## Errors calling static abstract interface members
 
-The following errors might occur when you attempt to call a member defined as a static abstract or static virtual member of an interface:
+The following errors might occur when you attempt to call a member defined as a `static abstract` or `static virtual` member of an interface:
 
 - **CS8920**: *The interface cannot be used as type argument. Static member does not have a most specific implementation in the interface.*
 - **CS8926**: *A static virtual or abstract interface member can be accessed only on a type parameter.*

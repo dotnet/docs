@@ -51,7 +51,12 @@
                     "csharp-9.0/*.md",
                     "csharp-10.0/*.md",
                     "csharp-11.0/*.md",
-                    "csharp-12.0/*.md"
+                    "csharp-12.0/*.md",
+                    "lock-object.md",
+                    "method-group-natural-type-improvements.md",
+                    "params-collections.md",
+                    "ref-struct-interfaces.md",
+                    "ref-unsafe-in-iterators-async.md"
                 ],
                 "src": "_csharplang/proposals",
                 "dest": "csharp/language-reference/proposals",
@@ -66,6 +71,7 @@
                     "csharp-8.0/notnull-constraint.md",
                     "csharp-8.0/obsolete-accessor.md",
                     "csharp-8.0/shadowing-in-nested-functions.md",
+                    "csharp-8.0/static-local-functions.md",
                     "csharp-8.0/unconstrained-null-coalescing.md",
                     "csharp-8.0/nullable-reference-types-specification.md"
                 ]
@@ -73,7 +79,8 @@
             {
                 "files": [
                     "Compiler Breaking Changes - DotNet 7.md",
-                    "Compiler Breaking Changes - DotNet 8.md"
+                    "Compiler Breaking Changes - DotNet 8.md",
+                    "Compiler Breaking Changes - DotNet 9.md"
                 ],
                 "src": "_roslyn/docs/compilers/CSharp",
                 "dest": "csharp/whats-new/breaking-changes",
@@ -163,6 +170,11 @@
             }
         },
         "fileMetadata": {
+            "uhfHeaderId": {
+                "docs/csharp/**/**.*": "MSDocsHeader-DotNetCSharp",
+                "_csharplang/**.*": "MSDocsHeader-DotNetCSharp",
+                "_csharpstandard/standard/*.md": "MSDocsHeader-DotNetCSharp"
+            },
             "feedback_system": {
                 "docs/standard/design-guidelines/**/**.md": "None",
                 "docs/framework/data/adonet/**/**.md": "None",
@@ -171,7 +183,7 @@
                 "docs/framework/wcf/**/**.md": "None"
             },
             "open_source_feedback_issueUrl": {
-                "_csharplang/**.*": "https://github.com/dotnet/charplang/issues/new?template=docs-feedback.yml",
+                "_csharplang/**.*": "https://github.com/dotnet/csharplang/issues/new?template=docs-feedback.yml",
                 "_csharpstandard/standard/*.md": "https://github.com/dotnet/csharpstandard/issues/new?template=docs-feedback.yml"
             },
             "open_source_feedback_productName": {
@@ -284,6 +296,7 @@
                 "docs/windows-workflow-foundation/3*.md": "error-reference",
                 "docs/windows-workflow-foundation/4*.md": "error-reference",
                 "docs/windows-workflow-foundation/5*.md": "error-reference",
+                "docs/whats-new/**/*.md": "whats-new",
                 "includes/**/**.md": "include"
             },
             "dev_langs": {
@@ -307,7 +320,6 @@
                 "docs/architecture/modernize-desktop/**/**.md": "OliaG",
                 "docs/core/**/**.md": "gewarren",
                 "docs/core/compatibility/**/**.md": "gewarren",
-                "docs/core/compatibility/aspnet-core/**/**.md": "serpent5",
                 "docs/core/deploying/**/**.md": "adegeo",
                 "docs/core/diagnostics/**/**.md": "tommcdon",
                 "docs/core/extensions/**/**.md": "IEvangelist",
@@ -319,7 +331,7 @@
                 "docs/core/tools/**/**.md": "tdykstra",
                 "docs/core/tutorials/**/**.md": "tdykstra",
                 "docs/core/versions/**/**.md": "billwagner",
-                "docs/core/whats-new/**/**.md": "adegeo",
+                "docs/core/whats-new/**/**.md": "gewarren",
                 "docs/csharp/**/*.*": "billwagner",
                 "docs/framework/**/**.md": "gewarren",
                 "docs/framework/additional-apis/pos-for-net/**/**.md": "TerryWarwick",
@@ -327,7 +339,7 @@
                 "docs/framework/configure-apps/file-schema/network/**/**.md": "karelz",
                 "docs/framework/configure-apps/file-schema/wcf/**/**.md": "HongGit",
                 "docs/framework/configure-apps/file-schema/winforms/**/**.md": "adegeo",
-                "docs/framework/data/**/**.md": "mcleblanc",
+                "docs/framework/data/**/**.md": "cmastr",
                 "docs/framework/deployment/**/**.md": "adegeo",
                 "docs/framework/get-started/**/**.md": "gewarren",
                 "docs/framework/install/**/**.md": "adegeo",
@@ -391,6 +403,7 @@
                 "_csharpstandard/**/*.md": "wiwagn",
                 "_roslyn/docs/compilers/CSharp/*.md": "wiwagn",
                 "_vblang/spec/*.md": "wiwagn",
+                "docs/ai/**/*.*": "alexwolf",
                 "docs/architecture/**/**.md": "jamont",
                 "docs/architecture/grpc-for-wcf-developers/**/**.md": "jamesnk",
                 "docs/architecture/modernize-desktop/**/**.md": "oliag",
@@ -410,7 +423,7 @@
                 "docs/core/tools/**/**.md": "tdykstra",
                 "docs/core/tutorials/**/**.md": "tdykstra",
                 "docs/core/versions/**/**.md": "wiwagn",
-                "docs/core/whats-new/**/**.md": "adegeo",
+                "docs/core/whats-new/**/**.md": "gewarren",
                 "docs/csharp/**/*.*": "wiwagn",
                 "docs/framework/**/**.md": "dotnetcontent",
                 "docs/framework/app-domains/**/**.md": "gewarren",
@@ -479,8 +492,10 @@
                 "_csharplang/proposals/csharp-10.0/*.md": "08/07/2021",
                 "_csharplang/proposals/csharp-11.0/*.md": "09/30/2022",
                 "_csharplang/proposals/csharp-12.0/*.md": "08/15/2023",
+                "_csharplang/proposals/*.md": "07/16/2024",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 7.md": "11/08/2022",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 8.md": "09/26/2023",
+                "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 9.md": "06/26/2024",
                 "_vblang/spec/*.md": "07/21/2017"
             },
             "ms.subservice": {
@@ -488,6 +503,7 @@
                 "_csharpstandard/**/*.md": "lang-spec",
                 "_roslyn/docs/compilers/CSharp/*.md": "whats-new",
                 "_vblang/spec/*.md": "vb-spec",
+                "docs/ai/**/**.md": "intelligent-apps",
                 "docs/architecture/blazor-for-web-forms-developers/**/**.md": "blazor",
                 "docs/architecture/cloud-native/**/**.md": "cloud-native",
                 "docs/architecture/containerized-lifecycle/**/**.md": "containerized-lifecycle",
@@ -589,7 +605,6 @@
                 "_csharplang/proposals/csharp-8.0/using.md": "Pattern based using and using declarations",
                 "_csharplang/proposals/csharp-8.0/null-coalescing-assignment.md": "Null coalescing assignment",
                 "_csharplang/proposals/csharp-8.0/readonly-instance-members.md": "Readonly instance members",
-                "_csharplang/proposals/csharp-8.0/static-local-functions.md": "Static local functions",
                 "_csharplang/proposals/csharp-8.0/nested-stackalloc.md": "Nested stackalloc expressions",
                 "_csharplang/proposals/csharp-9.0/covariant-returns.md": "Covariant return types",
                 "_csharplang/proposals/csharp-9.0/extending-partial-methods.md": "Extending partial methods",
@@ -645,8 +660,14 @@
                 "_csharplang/proposals/csharp-12.0/collection-expressions.md": "Collection expressions",
                 "_csharplang/proposals/csharp-12.0/experimental-attribute.md": "Experimental attribute",
                 "_csharplang/proposals/csharp-12.0/ref-readonly-parameters.md": "Ref readonly parameters",
+                "_csharplang/proposals/lock-object.md": "Obey lock object semantics for lock statements",
+                "_csharplang/proposals/method-group-natural-type-improvements.md": "Method group natural type improvements",
+                "_csharplang/proposals/params-collections.md": "Params collections",
+                "_csharplang/proposals/ref-unsafe-in-iterators-async.md": "Allow ref and unsafe in iterators and async methods",
+                "_csharplang/proposals/ref-struct-interfaces.md": "Allow ref struct types to implement some interfaces",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 7.md": "C# compiler breaking changes since C# 10",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 8.md": "C# compiler breaking changes since C# 11",
+                "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 9.md": "C# compiler breaking changes since C# 12",
                 "_vblang/spec/introduction.md": "Introduction",
                 "_vblang/spec/lexical-grammar.md": "Lexical grammar",
                 "_vblang/spec/preprocessing-directives.md": "Preprocessing directives",
@@ -702,7 +723,6 @@
                 "_csharplang/proposals/csharp-8.0/using.md": "This feature specification supports pattern based using and using declarations to simplify resource cleanup.",
                 "_csharplang/proposals/csharp-8.0/null-coalescing-assignment.md": "This feature specification describes the syntax to support null coalescing assignment expressions using the '??=' operator.",
                 "_csharplang/proposals/csharp-8.0/readonly-instance-members.md": "This feature specification describes the syntax for declaring and using readonly instance members.",
-                "_csharplang/proposals/csharp-8.0/static-local-functions.md": "This feature specification describes static local functions, which are local functions that cannot access variables in the enclosing scope.",
                 "_csharplang/proposals/csharp-8.0/nested-stackalloc.md": "This feature specification describes nested stackalloc expressions, which provides nested arrays of stackalloc storage.",
                 "_csharplang/proposals/csharp-9.0/covariant-returns.md": "This feature specification describes covariant return types, where overriding member declarations can return a type derived from the overridden member declaration.",
                 "_csharplang/proposals/csharp-9.0/extending-partial-methods.md": "This feature specification describes extensions to partial methods. These extensions enable source generators to create or call partial methods.",
@@ -758,8 +778,14 @@
                 "_csharplang/proposals/csharp-12.0/collection-expressions.md": "Collection expressions provide a concise syntax to initialize collections by defining elements or embedded collections as the source of the new collection's elements.",
                 "_csharplang/proposals/csharp-12.0/experimental-attribute.md": "Use the ExperimentalAttribute attribute to indicate APIs that aren't stable.",
                 "_csharplang/proposals/csharp-12.0/ref-readonly-parameters.md": "Ref readonly parameters enforce that arguments are passed by references, where `in` parameters allow the compiler some flexibiility.",
+                "_csharplang/proposals/lock-object.md": "Special-case how `System.Threading.Lock` interacts with the `lock` keyword by calling its `EnterScope` method. Add static analysis warnings to prevent accidental misuse of the type where possible.",
+                "_csharplang/proposals/method-group-natural-type-improvements.md": "This proposal refines the determination of the natural type of a method group by considering candidates scope-by-scope and pruning at each scope.",
+                "_csharplang/proposals/params-collections.md": "Allow the `params` modifier on collection types beyond arrays, including `IEnumerable` types.",
+                "_csharplang/proposals/ref-unsafe-in-iterators-async.md": "This proposal modifies restrictions to enable ref local variables and unsafe blocks in iterators and async methods",
+                "_csharplang/proposals/ref-struct-interfaces.md": "This proposal provides features that enable interface authors to allow `ref struct` types to implement a particular interface",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 7.md": "Learn about any breaking changes since the initial release of C# 10",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 8.md": "Learn about any breaking changes since the initial release of C# 11",
+                "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 9.md": "Learn about any breaking changes since the initial release of C# 12",
                 "_vblang/spec/introduction.md": "This chapter provides and introduction to the Visual Basic language.",
                 "_vblang/spec/lexical-grammar.md": "This chapter defines the lexical grammar for Visual Basic.",
                 "_vblang/spec/preprocessing-directives.md": "This chapter defines the preprocessing directives allowed in Visual Basic",
@@ -775,7 +801,7 @@
                 "_vblang/spec/overload-resolution.md": "This chapter describes the rules that govern overload resolution when multiple members have the same name."
             },
             "titleSuffix": {
-                "docs/**/**.md": ".NET",
+                "docs/**/*.md": ".NET",
                 "_csharpstandard/standard/*.md": "C# language specification",
                 "_csharplang/proposals/csharp-8.0/*.md": "C# feature specifications",
                 "_csharplang/proposals/csharp-9.0/*.md": "C# feature specifications",
@@ -783,14 +809,14 @@
                 "_csharplang/proposals/csharp-11.0/*.md": "C# feature specifications",
                 "_csharplang/proposals/csharp-12.0/*.md": "C# feature specifications",
                 "_csharplang/proposals/*.md": "C# feature specifications (preview)",
-                "docs/framework/**/**.md": ".NET Framework",
-                "docs/framework/data/adonet/**/**.md": "ADO.NET",
-                "docs/framework/wcf/**/**.md": "WCF",
-                "docs/framework/winforms/**/**.md": "Windows Forms",
-                "docs/framework/wpf/**/**.md": "WPF",
-                "docs/fsharp/tutorials/**/**.md": "F#",
-                "docs/fsharp/language-reference/**/**.md": "F#",
-                "docs/fundamentals/**/**.md": ".NET",
+                "docs/framework/**/*.md": ".NET Framework",
+                "docs/framework/data/adonet/**/*.md": "ADO.NET",
+                "docs/framework/wcf/**/*.md": "WCF",
+                "docs/framework/winforms/**/*.md": "Windows Forms",
+                "docs/framework/wpf/**/*.md": "WPF",
+                "docs/fsharp/tutorials/**/*.md": "F#",
+                "docs/fsharp/language-reference/**/*.md": "F#",
+                "docs/fundamentals/**/*.md": ".NET",
                 "docs/core/additional-tools/**.md": ".NET",
                 "docs/core/build/**.md": ".NET",
                 "docs/core/install/**.md": ".NET",
@@ -806,20 +832,32 @@
                 "docs/core/tools/**.md": ".NET CLI",
                 "docs/core/tutorials/**.md": ".NET",
                 "docs/core/versions/**.md": ".NET",
-                "docs/csharp/**/**.md": "C#",
-                "docs/machine-learning/**/**.md": "ML.NET",
-                "docs/standard/data/sqlite/**/**.md": "Microsoft.Data.Sqlite",
-                "docs/standard/design-guidelines/**/**.md": "Framework Design Guidelines",
-                "docs/visual-basic/**/**.md": "Visual Basic"
+                "docs/csharp/**/*.md": "C#",
+                "docs/csharp/language-reference/**/*.md": "C# reference",
+                "docs/csharp/tour-of-csharp/**/*.md": "A tour of C#",
+                "docs/csharp/whats-new/**/*.md": "",
+                "docs/machine-learning/**/*.md": "ML.NET",
+                "docs/standard/data/sqlite/**/*.md": "Microsoft.Data.Sqlite",
+                "docs/standard/design-guidelines/**/*.md": "Framework Design Guidelines",
+                "docs/visual-basic/**/*.md": "Visual Basic"
             },
             "open_to_public_contributors": {
                 "docs/standard/design-guidelines/**.md": false
             },
             "ms.custom": {
+                "docs/ai/**/**.md": "build-2024-intelligent-apps",
                 "docs/framework/**/*.md": "UpdateFrequency5",
                 "docs/visual-basic/**/*.md": "UpdateFrequency5"
             },
+            "ms.collection": {
+                "docs/ai/**/**.md": "ce-skilling-ai-copilot",
+                "docs/ai/**/**.yml": "ce-skilling-ai-copilot"
+            },
             "no-loc": {
+                "docs/orleans/**/**.md": [
+                    "Grain",
+                    "Grains"
+                ],
                 "**/**.md": [
                     "Orleans"
                 ]

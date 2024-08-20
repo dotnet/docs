@@ -1,7 +1,8 @@
 ---
-title: What's new in C# 12 - C# Guide
+title: What's new in C# 12
 description: Get an overview of the new features in C# 12.
-ms.date: 10/26/2023
+ms.date: 03/19/2024
+ms.topic: whats-new
 ---
 # What's new in C# 12
 
@@ -17,6 +18,12 @@ C# 12 includes the following new features. You can try these features using the 
 
 - [Interceptors](#interceptors) - *Preview feature* Introduced in Visual Studio 2022 version 17.7 Preview 3.
 
+C# 12 is supported on **.NET 8**. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
+
+You can download the latest .NET 8 SDK from the [.NET downloads page](https://dotnet.microsoft.com/download). You can also download [Visual Studio 2022](https://visualstudio.microsoft.com/vs/), which includes the .NET 8 SDK.
+
+[!INCLUDE [released-version-feedback](./includes/released-feedback.md)]
+
 ## Primary constructors
 
 You can now create primary constructors in any `class` and `struct`. Primary constructors are no longer restricted to `record` types. Primary constructor parameters are in scope for the entire body of the class. To ensure that all primary constructor parameters are definitely assigned, all explicitly declared constructors must call the primary constructor using `this()` syntax. Adding a primary constructor to a `class` prevents the compiler from declaring an implicit parameterless constructor. In a `struct`, the implicit parameterless constructor initializes all fields, including primary constructor parameters to the 0-bit pattern.
@@ -27,7 +34,7 @@ You can learn more about primary constructors in the tutorial for [exploring pri
 
 ## Collection expressions
 
-Collection expressions introduce a new terse syntax to create common collection values. Inlining other collections into these values is possible using a spread operator `..`.
+Collection expressions introduce a new terse syntax to create common collection values. Inlining other collections into these values is possible using a spread element `..e`.
 
 Several collection-like types can be created without requiring external BCL support.  These types are:
 
@@ -57,7 +64,7 @@ int[] row2 = [7, 8, 9];
 int[][] twoDFromVariables = [row0, row1, row2];
 ```
 
-The *spread operator*, `..` in a collection expression replaces its argument with the elements from that collection. The argument must be a collection type. The following examples show how the spread operator works:
+The *spread element*, `..e` in a collection expression adds all the elements in that expression. The argument must be a collection type. The following examples show how the spread element works:
 
 ```csharp
 int[] row0 = [1, 2, 3];
@@ -72,7 +79,7 @@ foreach (var element in single)
 // 1, 2, 3, 4, 5, 6, 7, 8, 9,
 ```
 
-The operand of a spread operator is an expression that can be enumerated. The spread operator evaluates each element of the enumerations expression.
+The spread element evaluates each element of the enumerations expression. Each element is included in the output collection.
 
 You can use collection expressions anywhere you need a collection of elements. They can specify the initial value for a collection or be passed as arguments to methods that take collection types. You can learn more about collection expressions in the [language reference article on collection expressions](../language-reference/operators/collection-expressions.md) or the [feature specification](~/_csharplang/proposals/csharp-12.0/collection-expressions.md).
 
@@ -96,7 +103,7 @@ You can learn more about default parameters on lambda expressions in the article
 
 ## Alias any type
 
-You can use the `using` alias directive to alias any type, not just named types. That means you can create semantic aliases for tuple types, array types, pointer types, or other unsafe types. For more information, see the [feature specification](~/_csharplang/proposals/csharp-12.0/using-alias-types.md).
+You can use the `using` alias directive to alias any type, not just named types. That means you can create semantic aliases for tuple types, array types, pointer types, or other unsafe types. For more information, see the [feature specification](~/_csharplang/proposals/csharp-12.0/using-alias-types.md). For an example refactoring walkthrough, see [Refactor your code using alias any type on the .NET blog](https://devblogs.microsoft.com/dotnet/refactor-your-code-using-alias-any-type/).
 
 ## Inline arrays
 

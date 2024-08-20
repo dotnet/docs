@@ -20,7 +20,7 @@ For more information about package validation, see [Package validation](package-
 
 ## Strict mode
 
-By default, the validation performs *compatibility* checks. However, you can also opt into *strict mode*. In strict mode, where the validation performs *equality* checks. Equality means that no API additions or assembly changes, even compatible ones, have been made.
+By default, the validation performs *compatibility* checks. However, you can also opt into *strict mode*. In strict mode, the validation performs *equality* checks. Equality means that no API additions or assembly changes, even compatible ones, have been made.
 
 The use cases for strict mode include the following:
 

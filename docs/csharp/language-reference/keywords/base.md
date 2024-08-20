@@ -1,5 +1,5 @@
 ---
-title: "base keyword - C# Reference"
+title: "base keyword"
 description: Learn about the base keyword, which is used to access members of the base class from within a derived class in C#.
 ms.date: 07/20/2015
 f1_keywords: 
@@ -44,6 +44,5 @@ This example shows how to specify the base-class constructor called when creatin
 
 ## See also
 
-- [C# Reference](../index.md)
 - [C# Keywords](./index.md)
 - [this](./this.md)

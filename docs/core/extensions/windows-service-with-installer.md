@@ -73,7 +73,7 @@ dotnet add App.WindowsService.csproj package CliWrap
 
 For more information, see [dotnet add package](../tools/dotnet-add-package.md).
 
-With `CliWrap` installed, open the _Program.cs_ file of the `App.WindowsService` project. After the `using` statements, but before the `IHost` is created, add the following code:
+With `CliWrap` installed, open the _Program.cs_ file of the `App.WindowsService` project. After the `using` directives, but before the `IHost` is created, add the following code:
 
 ```csharp
 using CliWrap;
@@ -86,7 +86,7 @@ if (args is { Length: 1 })
     {
         string executablePath =
             Path.Combine(AppContext.BaseDirectory, "App.WindowsService.exe");
-    
+
         if (args[0] is "/Install")
         {
             await Cli.Wrap("sc")
@@ -98,7 +98,7 @@ if (args is { Length: 1 })
             await Cli.Wrap("sc")
                 .WithArguments(new[] { "stop", ServiceName })
                 .ExecuteAsync();
-    
+
             await Cli.Wrap("sc")
                 .WithArguments(new[] { "delete", ServiceName })
                 .ExecuteAsync();
@@ -181,13 +181,13 @@ After the project reference has been added, configure the _Package.wxs_ file. Op
              Version="$(Version)"
              UpgradeCode="$(var.UpgradeCode)"
              Compressed="true">
-        
+
         <!-- Allow upgrades and prevent downgrades -->
         <MajorUpgrade DowngradeErrorMessage="A later version of [ProductName] is already installed. Setup will now exit." />
 
         <!-- Define the directory structure -->
         <Directory Id="TARGETDIR" Name="SourceDir">
-            <Directory Id="ProgramFilesFolder">
+            <Directory Id="ProgramFiles64Folder">
 
                 <!-- Create a folder inside program files -->
                 <Directory Id="ROOTDIRECTORY" Name="$(var.Manufacturer)">
@@ -204,7 +204,7 @@ After the project reference has been added, configure the _Package.wxs_ file. Op
 
             <!-- Create a single component which is the App.WindowsService.exe file -->
             <Component Id="ServiceExecutable" Bitness="always64">
-                
+
                 <!-- Copies the App.WindowsService.exe file using the
                      project reference preprocessor variables -->
                 <File Id="App.WindowsService.exe"

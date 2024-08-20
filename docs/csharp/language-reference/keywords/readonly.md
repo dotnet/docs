@@ -1,6 +1,6 @@
 ---
 description: "readonly keyword - C# Reference"
-title: "readonly keyword - C# Reference"
+title: "readonly keyword"
 ms.date: 01/09/2024
 f1_keywords:
   - "readonly_CSharpKeyword"
@@ -105,7 +105,6 @@ You can also see the language specification proposals:
 ## See also
 
 - [Add readonly modifier (style rule IDE0044)](../../../fundamentals/code-analysis/style-rules/ide0044.md)
-- [C# Reference](../index.md)
 - [C# Keywords](index.md)
 - [Modifiers](index.md)
 - [const](const.md)

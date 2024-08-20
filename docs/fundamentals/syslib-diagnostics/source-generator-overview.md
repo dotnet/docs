@@ -46,7 +46,7 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 | SYSLIB1024 | Logging method argument uses unsupported `out` parameter modifier |
 | SYSLIB1025 | Multiple logging methods cannot use the same event name within a class |
 | SYSLIB1026 | C# language version not supported by the logging source generator. |
-| SYSLIB1027 | (Reserved for logging.) |
+| SYSLIB1027 | Primary constructor parameter of type Microsoft.Extensions.Logging.ILogger is hidden by a field |
 | SYSLIB1028 | (Reserved for logging.) |
 | SYSLIB1029 | (Reserved for logging.) |
 | [SYSLIB1030][1030] | The `System.Text.Json` source generator did not generate serialization metadata for type |

@@ -82,7 +82,7 @@ Notice that the `ExtensionData` property name doesn't appear in the JSON. This b
 
 The following example shows a round trip from JSON to a deserialized object and back to JSON:
 
-:::code language="csharp" source="snippets/how-to/csharp/RoundtripExtensionData.cs" highlight="13-14":::
+:::code language="csharp" source="snippets/how-to/csharp/RoundtripExtensionData.cs" highlight="11-12":::
 
 ## Deserialize into JsonElement or JsonNode
 

@@ -5,21 +5,28 @@ on:
     - cron: "0 1 1 * *" # Runs at 01:00, on day 1 of the month
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   clean-repo:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      issues: write
       pull-requests: write
 
     steps:
-      - uses: actions/checkout@v4.1.1
+      - name: Harden Runner
+        uses: step-security/harden-runner@5c7944e73c4c2a096b17a9cb74d65b6c2bbafbde # v2.9.1
+        with:
+          egress-policy: audit
+
+      - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
 
       # Call clean repo
       - name: Clean repo
         id: clean-repo-step
-        uses: dotnet/docs-tools/cleanrepo/CleanRepo@main
+        uses: dotnet/docs-tools/cleanrepo@2a815a6c0976e888a49264f513dc230008b4a1f2
         with:
           docfx_directory: '.'
           articles_directory: 'docs'
@@ -39,7 +46,7 @@ jobs:
         
       # Create the PR for the work done by the "clean repo" tool
       - name: create-pull-request
-        uses: peter-evans/create-pull-request@70a41aba780001da0a30141984ae2a0c95d8704e
+        uses: peter-evans/create-pull-request@c5a7806660adbe173f04e3e038b0ccdcd758773c
         with:
           branch: create-cleanrepo-pull-request/patch
           title: "Monthly chores: Automated repo cleanup"

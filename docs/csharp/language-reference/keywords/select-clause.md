@@ -1,6 +1,6 @@
 ---
 description: "select clause - C# Reference"
-title: "select clause - C# Reference"
+title: "select clause"
 ms.date: 07/20/2015
 f1_keywords: 
   - "select_CSharpKeyword"
@@ -34,7 +34,6 @@ At compile time, the `select` clause is translated to a method call to the <xref
 
 ## See also
 
-- [C# Reference](../index.md)
 - [Query Keywords (LINQ)](query-keywords.md)
 - [from clause](from-clause.md)
 - [partial (Method) (C# Reference)](partial-method.md)

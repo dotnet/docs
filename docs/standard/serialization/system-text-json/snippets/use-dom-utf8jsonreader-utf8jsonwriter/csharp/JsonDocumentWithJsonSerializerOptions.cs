@@ -1,6 +1,4 @@
-﻿using System.Text;
-using System.Text.Json;
-using System.Text.Json.Nodes;
+﻿using System.Text.Json;
 using System.Text.Json.Serialization;
 
 namespace JsonDocumentWithJsonSerializerOptions;
@@ -9,7 +7,7 @@ public class Program
 {
     public static void Main()
     {
-        Person person = new Person { Name = "Nancy" };
+        Person person = new() { Name = "Nancy" };
 
         // Default serialization - Address property included with null token.
         // Output: {"Name":"Nancy","Address":null}
@@ -28,7 +26,7 @@ public class Program
         // Ignore null properties doesn't work when serializing JsonDocument instance
         // by using JsonSerializer.
         // Output: {"Name":"Nancy","Address":null}
-        var personJsonDocument = JsonSerializer.Deserialize<JsonDocument>(personJsonWithNull);
+        JsonDocument? personJsonDocument = JsonSerializer.Deserialize<JsonDocument>(personJsonWithNull);
         personJsonWithNull = JsonSerializer.Serialize(personJsonDocument, options);
         Console.WriteLine(personJsonWithNull);
     }
@@ -36,7 +34,6 @@ public class Program
 public class Person
 {
     public string? Name { get; set; }
-
     public string? Address { get; set; }
 }
 

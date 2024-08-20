@@ -1,7 +1,7 @@
 ---
 description: "Use the `interface` keyword to define contracts that any implementing type must support. Interfaces provide the means to create common behavior among a set of unrelated types."
-title: "interface - C# Reference"
-ms.date: 07/08/2022
+title: "interface keyword"
+ms.date: 07/26/2024
 f1_keywords: 
   - "interface_CSharpKeyword"
 helpviewer_keywords: 
@@ -14,6 +14,10 @@ An interface defines a contract. Any [`class`](class.md), [`record`](../builtin-
 In the following example, class `ImplementationClass` must implement a method named `SampleMethod` that has no parameters and returns `void`.
 
 For more information and examples, see [Interfaces](../../fundamentals/types/interfaces.md).
+
+A top-level interface, one declared in a namespace but not nested inside another type, can be declared `public` or `internal`. The default is `internal`. Nested interface declarations, those declared inside another type, can be declared using any access modifier.
+
+Interface members without an implementation can't include an access modifier. Members with a default implementation can include any access modifier.
 
 ## Example interface
 
@@ -28,7 +32,12 @@ An interface can be a member of a namespace or a class. An interface declaration
 
 ## Default interface members
 
-These preceding member declarations typically don't contain a body. An interface member may declare a body. Member bodies in an interface are the *default implementation*. Members with bodies permit the interface to provide a "default" implementation for classes and structs that don't provide an overriding implementation. An interface may include:
+These preceding member declarations typically don't contain a body. An interface member may declare a body. Member bodies in an interface are the *default implementation*. Members with bodies permit the interface to provide a "default" implementation for classes and structs that don't provide an overriding implementation.
+
+> [!IMPORTANT]
+> Adding default interfaces members forces any `ref struct` that implements the interface to add an explicit declaration of that member.
+
+An interface may include:
 
 - [Constants](const.md)
 - [Operators](../operators/operator-overloading.md)
@@ -58,7 +67,11 @@ public interface INamed
 }
 ```
 
-An interface can inherit from one or more base interfaces. When an interface [overrides a method](override.md) implemented in a base interface, it must use the [explicit interface implementation](../../programming-guide/interfaces/explicit-interface-implementation.md) syntax.
+An interface can inherit from one or more base interfaces. When an interface inherits from another interface, a type implementing the derived interface must implement all the members in the base interfaces as well as those declared in the derived interface, as shown in the following code:
+
+:::code language="csharp" source="./snippets/DefineTypes.cs" id="SnippetDerivedInterfaces":::
+
+When an interface [overrides a method](override.md) implemented in a base interface, it must use the [explicit interface implementation](../../programming-guide/interfaces/explicit-interface-implementation.md) syntax.
 
 When a base type list contains a base class and interfaces, the base class must come first in the list.
 
@@ -78,7 +91,6 @@ For more information, see the [Interfaces](~/_csharpstandard/standard/interfaces
 
 ## See also
 
-- [C# Reference](../index.md)
 - [C# Keywords](index.md)
 - [Reference Types](reference-types.md)
 - [Interfaces](../../fundamentals/types/interfaces.md)

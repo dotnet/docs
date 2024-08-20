@@ -8,7 +8,7 @@ ms.custom: mvc, title-hack-0516
 ---
 # Tutorial: Categorize support issues using multiclass classification with ML.NET
 
-This sample tutorial illustrates using ML.NET to create a GitHub issue classifier to train a model that classifies and predicts the Area label for a GitHub issue via a .NET Core console application using C# in Visual Studio.
+This sample tutorial illustrates using ML.NET to create a GitHub issue classifier to train a model that classifies and predicts the Area label for a GitHub issue via a .NET console application using C# in Visual Studio.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
@@ -58,7 +58,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 ### Create classes and define paths
 
-Add the following additional `using` statements to the top of the *Program.cs* file:
+Add the following additional `using` directives to the top of the *Program.cs* file:
 
 [!code-csharp[AddUsings](./snippets/github-issue-classification/csharp/Program.cs#AddUsings)]
 
@@ -71,7 +71,7 @@ Create three global fields to hold the paths to the recently downloaded files, a
 * `_trainingDataView` is the <xref:Microsoft.ML.IDataView> used to process the training dataset.
 * `_predEngine` is the <xref:Microsoft.ML.PredictionEngine%602> used for single predictions.
 
-Add the following code to the line directly below the using statements to specify those paths and the other variables:
+Add the following code to the line directly below the `using` directives to specify those paths and the other variables:
 
 [!code-csharp[DeclareGlobalVariables](./snippets/github-issue-classification/csharp/Program.cs#DeclareGlobalVariables)]
 
@@ -81,7 +81,7 @@ Create some classes for your input data and predictions. Add a new class to your
 
 1. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *GitHubIssueData.cs*. Then, select the **Add** button.
 
-   The *GitHubIssueData.cs* file opens in the code editor. Add the following `using` statement to the top of *GitHubIssueData.cs*:
+   The *GitHubIssueData.cs* file opens in the code editor. Add the following `using` directive to the top of *GitHubIssueData.cs*:
 
 [!code-csharp[AddUsings](./snippets/github-issue-classification/csharp/GitHubIssueData.cs#AddUsings)]
 
@@ -226,7 +226,7 @@ Use the [Predict()](xref:Microsoft.ML.PredictionEngine%602.Predict%2A) function 
 
 ### Use the model: prediction results
 
-Display `GitHubIssue` and corresponding `Area` label prediction in order to share the results and act on them accordingly.  Create a display for the results using the following <xref:System.Console.WriteLine?displayProperty=nameWithType> code:
+Display `GitHubIssue` and corresponding `Area` label prediction in order to share the results and act on them accordingly. Create a display for the results using the following <xref:System.Console.WriteLine?displayProperty=nameWithType> code:
 
 [!code-csharp[OutputPrediction](./snippets/github-issue-classification/csharp/Program.cs#OutputPrediction)]
 
@@ -270,7 +270,7 @@ Notice the use of the [Transform()](xref:Microsoft.ML.ITransformer.Transform%2A)
 
 The following metrics are evaluated for multiclass classification:
 
-* Micro Accuracy - Every sample-class pair contributes equally to the accuracy metric.  You want Micro Accuracy to be as close to one as possible.
+* Micro Accuracy - Every sample-class pair contributes equally to the accuracy metric. You want Micro Accuracy to be as close to one as possible.
 
 * Macro Accuracy - Every class contributes equally to the accuracy metric. Minority classes are given equal weight as the larger classes. You want Macro Accuracy to be as close to one as possible.
 

@@ -15,6 +15,7 @@ ms.date: 11/27/2023
 
 ```dotnetcli
 dotnet build [<PROJECT>|<SOLUTION>] [-a|--arch <ARCHITECTURE>]
+    [--artifacts-path <ARTIFACTS_DIR>]
     [-c|--configuration <CONFIGURATION>] [-f|--framework <FRAMEWORK>]
     [--disable-build-servers]
     [--force] [--interactive] [--no-dependencies] [--no-incremental]
@@ -83,6 +84,8 @@ The project or solution file to build. If a project or solution file isn't speci
 ## Options
 
 [!INCLUDE [arch](../../../includes/cli-arch.md)]
+
+[!INCLUDE [artifacts-path](../../../includes/cli-artifacts-path.md)]
 
 [!INCLUDE [configuration](../../../includes/cli-configuration.md)]
 

@@ -1,7 +1,7 @@
 ---
-title: "Access Modifiers - C# Programming Guide"
+title: "Access Modifiers"
 description: All types and type members in C# have an accessibility level that controls whether they can be used from other code. Review this list of access modifiers.
-ms.date: 03/08/2024
+ms.date: 04/11/2024
 helpviewer_keywords:
   - "C# Language, access modifiers"
   - "access modifiers [C#], about"
@@ -16,18 +16,20 @@ All types and type members have an accessibility level. The accessibility level 
 - [internal](../../language-reference/keywords/internal.md): Only code in the same assembly can access this type or member.
 - [protected internal](../../language-reference/keywords/protected-internal.md): Only code in the same assembly *or* in a derived class in another assembly can access this type or member.
 - [private protected](../../language-reference/keywords/private-protected.md): Only code in the same assembly *and* in the same class or a derived class can access the type or member.
+- [file](../../language-reference/keywords/file.md): Only code in the same file can access the type or member.
 
 The [`record`](../../language-reference/builtin-types/record.md) modifier on a type causes the compiler to synthesize extra members. The `record` modifier doesn't affect the default accessibility for either a `record class` or a `record struct`.
 
 ## Summary table
 
-| Caller's location                      | `public` | `protected internal` | `protected` | `internal` | `private protected` | `private` |
-| -------------------------------------- | :------: | :------------------: | :---------: | :--------: | :-----------------: | :-------: |
-| Within the class                       |    ✔️️     |          ✔️           |      ✔️      |     ✔️      |          ✔️          |     ✔️     |
-| Derived class (same assembly)          |    ✔️     |          ✔️           |      ✔️      |     ✔️      |          ✔️          |     ❌     |
-| Non-derived class (same assembly)      |    ✔️     |          ✔️           |      ❌      |     ✔️      |          ❌          |     ❌     |
-| Derived class (different assembly)     |    ✔️     |          ✔️           |      ✔️      |     ❌      |          ❌          |     ❌     |
-| Non-derived class (different assembly) |    ✔️     |          ❌           |      ❌      |     ❌      |          ❌          |     ❌     |
+| Caller's location | `public` | `protected internal` | `protected` | `internal` | `private protected` | `private` | `file` |
+|--|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| Within the file | ✔️️ | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
+| Within the class | ✔️️ | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ❌ |
+| Derived class (same assembly) | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ❌ | ❌ |
+| Non-derived class (same assembly) | ✔️ | ✔️ | ❌ | ✔️ | ❌ | ❌ | ❌ |
+| Derived class (different assembly) | ✔️ | ✔️ | ✔️ | ❌ | ❌ | ❌ | ❌ |
+| Non-derived class (different assembly) | ✔️ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 
 The following examples demonstrate how to specify access modifiers on a type and member:
 
@@ -39,7 +41,7 @@ When one declaration of a [partial class or partial method](./partial-classes-an
 
 ## Class and struct accessibility
 
-Classes and structs declared directly within a namespace (aren't nested within other classes or structs) can be either `public` or `internal`. `internal` is the default if no access modifier is specified.
+Classes and structs declared directly within a namespace (aren't nested within other classes or structs) can have `public`, `internal` or `file` access. `internal` is the default if no access modifier is specified.
 
 Struct members, including nested classes and structs, can be declared `public`, `internal`, or `private`. Class members, including nested classes and structs, can be `public`, `protected internal`, `protected`, `internal`, `private protected`, or `private`. Class and struct members,  including nested classes and structs, have `private` access by default.
 
@@ -70,6 +72,8 @@ To set the access level for a `class` or `struct` member, add the appropriate ke
 [!code-csharp[MethodAccess](~/samples/snippets/csharp/objectoriented/accessmodifiers.cs#MethodAccess)]
 
 Finalizers can't have accessibility modifiers. Members of an `enum` type are always `public`, and no access modifiers can be applied.
+
+The `file` access modifier is allowed only on top-level (non-nested) type declarations.
 
 ## C# language specification
 

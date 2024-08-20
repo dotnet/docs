@@ -45,7 +45,7 @@ However, if you were down-casting one of the affected `SecurityToken` properties
 
   ```csharp
   service.Configure<JwtBearerOptions>(JwtBearerDefaults.AuthenticationScheme, options => {
-      options.Events.TokenValidated = (context) => {
+      options.Events.OnTokenValidated = (context) => {
           // Replace your cast to JwtSecurityToken.
           JsonWebToken token = context.SecurityToken as JsonWebToken;
           // Do something ...
@@ -58,7 +58,7 @@ However, if you were down-casting one of the affected `SecurityToken` properties
   ```csharp
   service.Configure<JwtBearerOptions>(JwtBearerDefaults.AuthenticationScheme,  options => {
       options.UseSecurityTokenValidators = true;
-      options.Events.TokenValidated = (context) => {
+      options.Events.OnTokenValidated = (context) => {
           // As you were doing before
           JwtSecurityToken token = context.SecurityToken as JwtSecurityToken;
           // Do something ...

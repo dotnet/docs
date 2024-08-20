@@ -1,9 +1,10 @@
 ---
 title: Install .NET on Alpine
-description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Alpine.
+description: Learn about which versions of .NET SDK and .NET Runtime are supported, and how to install .NET on Alpine.
 author: adegeo
 ms.author: adegeo
-ms.date: 01/09/2024
+ms.date: 05/22/2024
+ms.custom: linux-related-content
 ---
 
 # Install the .NET SDK or the .NET Runtime on Alpine
@@ -23,14 +24,12 @@ The Alpine package manager supports installing some versions of .NET. If the .NE
 
 ## Install .NET 8
 
-.NET 8 isn't yet available in the official Alpine package repository. Use one of the following ways to install .NET 8:
+.NET 8 isn't yet available in the default branch of the Alpine package repository. Use the `edge` branch to install .NET 8. Alternatively, use one of the following ways to install .NET 8:
 
 - [Use the .NET install script.](linux-scripted-manual.md#scripted-install)
 - [Download and install .NET manually.](linux-scripted-manual.md#manual-install)
 
-## Install .NET 7
-
-[!INCLUDE [linux-apk-install-70](includes/linux-install-70-apk.md)]
+To learn how to use the .NET CLI, see [.NET CLI overview](../tools/index.md).
 
 ## Install .NET 6
 
@@ -40,12 +39,12 @@ The Alpine package manager supports installing some versions of .NET. If the .NE
 
 The following table is a list of currently supported .NET releases and the versions of Alpine they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Alpine reaches end-of-life](https://alpinelinux.org/releases/).
 
-| Alpine | Supported Version  | Available in Package Manager |
-|--------|--------------------| -----------------------------|
-| 3.18   | .NET 8.0, .NET 7.0, .NET 6.0 | .NET 7.0, .NET 6.0 |
-| 3.17   | .NET 8.0, .NET 7.0, .NET 6.0 | .NET 7.0, .NET 6.0 |
-| 3.16   | .NET 7.0, .NET 6.0 | .NET 6.0 |
-| 3.15   | .NET 7.0, .NET 6.0 | None |
+| Alpine | Supported Version | Available in Package Manager |
+|--------|-------------------|------------------------------|
+| 3.20   | 8.0, 6.0          | 8.0, 6.0                     |
+| 3.19   | 8.0, 6.0          | 7.0, 6.0                     |
+| 3.18   | 8.0, 6.0          | 7.0, 6.0                     |
+| 3.17   | 8.0, 6.0          | 7.0, 6.0                     |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
@@ -53,16 +52,16 @@ The following table is a list of currently supported .NET releases and the versi
 
 The following table is a list of currently supported .NET releases and the architecture of Alpine they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the architecture of [Alpine is supported#](https://alpinelinux.org/releases/). Note that only `x86_64`, `armv7`, `aarch64` is officially supported by Microsoft. Other architectures are supported by the distribution maintainers, and can be installed using the `apk` package manager.
 
-| Architecture     | .NET 6           | .NET 7  | .NET 8  |
-|------------------|------------------|---------|---------|
-| x86_64           | 3.16, 3.17, 3.18 | 3.17, 3.18 | 3.17, 3.18 |
-| x86              | None             | None       | None       |
-| aarch64          | 3.16, 3.17, 3.18 | 3.17, 3.18 | 3.17, 3.18 |
-| armv7            | 3.16, 3.17, 3.18 | 3.17, 3.18 | 3.17, 3.18 |
-| armhf            | None             | None | None |
-| s390x            | 3.17             | 3.17 | 3.17 |
-| ppc64le          | None             | None | None |
-| riscv64          | None             | None | None |
+| Architecture     | .NET 6           | .NET 8  |
+|------------------|------------------|---------|
+| x86_64           | 3.16, 3.17, 3.18, 3.19, 3.20 | 3.17, 3.18, 3.19, 3.20 |
+| x86              | None             | None       |
+| aarch64          | 3.16, 3.17, 3.18, 3.19, 3.20 | 3.17, 3.18, 3.19, 3.20 |
+| armv7            | 3.16, 3.17, 3.18, 3.19, 3.20 | 3.17, 3.18, 3.19, 3.20 |
+| armhf            | None             | None |
+| s390x            | 3.17             | 3.17 |
+| ppc64le          | None             | None |
+| riscv64          | None             | None |
 
 ## Install preview versions
 
@@ -76,25 +75,31 @@ The following table is a list of currently supported .NET releases and the archi
 
 When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you'll need to make sure these libraries are installed:
 
+### 3.18+
+
+- ca-certificates-bundle
+- libgcc
+- libssl3
+- libstdc++
+- zlib
+- libgdiplus (if the .NET app requires the *System.Drawing.Common* assembly)
+
+### 3.15 - 3.17
+
 - icu-libs
 - krb5-libs
 - libgcc
-- libgdiplus (if the .NET app requires the *System.Drawing.Common* assembly)
 - libintl
-- libssl1.1 (for 3.14.x and older)
-- libssl3 (for 3.15.x and newer)
+- libssl3
 - libstdc++
 - zlib
+- libgdiplus (if the .NET app requires the *System.Drawing.Common* assembly)
 
-To install the needed requirements, run the following command:
-
-```bash
-apk add bash icu-libs krb5-libs libgcc libintl libssl1.1 libstdc++ zlib
-```
+Use the `apk add` command to install the dependencies.
 
 [!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
 
-To install libgdiplus on Alpine 3.16 or later, run:
+To install `libgdiplus`, run:
 
 ```bash
 apk add libgdiplus
@@ -102,5 +107,6 @@ apk add libgdiplus
 
 ## Next steps
 
+- [.NET CLI overview](../tools/index.md)
 - [How to enable TAB completion for the .NET CLI](../tools/enable-tab-autocomplete.md)
 - [Tutorial: Create a console application with .NET SDK using Visual Studio Code](../tutorials/with-visual-studio-code.md)

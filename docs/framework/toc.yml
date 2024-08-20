@@ -8,7 +8,7 @@ items:
   - name: Overview
     href: get-started/index.md
   - name: Out-of-band releases
-    href: get-started/the-net-framework-and-out-of-band-releases.md
+    href: get-started/out-of-band-releases.md
   - name: System requirements
     href: get-started/system-requirements.md
 - name: Installation guide
@@ -21,14 +21,16 @@ items:
     items:
     - name: Windows 11
       href: install/on-windows-11.md
-    - name: Windows Server 2022
-      href: install/on-server-2022.md
     - name: Windows 10 and Windows Server 2016
       href: install/on-windows-10.md
     - name: Windows 8.1 and Windows Server 2012 R2
       href: install/on-windows-8-1.md
     - name: Windows 8 and Windows Server 2012
       href: install/on-windows-8.md
+    - name: Windows Server 2022
+      href: install/on-server-2022.md
+    - name: Windows Server 2019
+      href: install/on-server-2019.md
   - name: Repair .NET framework
     href: install/repair.md
   - name: Troubleshoot
@@ -667,6 +669,22 @@ items:
       href: /dotnet/api/?view=point-of-service-1.14&preserve-view=true
 - name: What's new and obsolete
   items:
+  - name: Release notes
+    items:
+    - name: April 2024 security and quality rollup
+      href: release-notes/2024/04-09-april-security-and-quality-rollup.md
+    - name: April 2024 cumulative update preview
+      href: release-notes/2024/04-23-april-preview-cumulative-update.md
+    - name: May 2024 security and quality rollup
+      href: release-notes/2024/05-14-may-security-and-quality-rollup.md
+    - name: June 2024 cumulative update preview
+      href: release-notes/2024/06-25-june-preview-cumulative-update.md
+    - name: July 2024 security and quality rollup
+      href: release-notes/2024/07-09-july-security-and-quality-rollup.md
+    - name: July 2024 cumulative update preview
+      href: release-notes/2024/07-25-july-preview-cumulative-update.md
+    - name: August 2024 security and quality rollup
+      href: release-notes/2024/08-13-august-security-and-quality-rollup.md
   - name: What's new
     href: whats-new/index.md
   - name: What's new in accessibility

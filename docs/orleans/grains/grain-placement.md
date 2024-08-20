@@ -1,7 +1,7 @@
 ---
 title: Grain placement
 description: Learn about grain placements in .NET Orleans.
-ms.date: 02/23/2023
+ms.date: 07/03/2024
 ---
 
 # Grain placement
@@ -28,7 +28,7 @@ This placement strategy is configured by adding the <xref:Orleans.Placement.Hash
 
 ## Activation-count-based placement
 
-This placement strategy intends to place new grain activations on the least heavily loaded server based on the number of recently busy grains. It includes a mechanism in which all servers periodically publish their total activation count to all other servers. The placement director then selects a server that is predicted to have the fewest activations by examining the most recently reported activation count and a making prediction of the current activation count based upon the recent activation count made by the placement director on the current server. The director selects several servers at random when making this prediction, in an attempt to avoid multiple separate servers overloading the same server. By default, two servers are selected at random, but this value is configurable via <xref:Orleans.Configuration.ActivationCountBasedPlacementOptions>.
+This placement strategy intends to place new grain activations on the least heavily loaded server based on the number of recently busy grains. It includes a mechanism in which all servers periodically publish their total activation count to all other servers. The placement director then selects a server that is predicted to have the fewest activations by examining the most recently reported activation count and predicts the current activation count based on the recent activation count made by the placement director on the current server. The director selects several servers at random when making this prediction, to avoid multiple separate servers overloading the same server. By default, two servers are selected randomly, but this value is configurable via <xref:Orleans.Configuration.ActivationCountBasedPlacementOptions>.
 
 This algorithm is based on the thesis [*The Power of Two Choices in Randomized Load Balancing* by Michael David Mitzenmacher](https://www.eecs.harvard.edu/~michaelm/postscripts/mythesis.pdf), and is also used in Nginx for distributed load balancing, as described in the article [*NGINX and the "Power of Two Choices" Load-Balancing Algorithm*](https://www.nginx.com/blog/nginx-power-of-two-choices-load-balancing-algorithm/).
 
@@ -43,6 +43,18 @@ This placement strategy is configured by adding the <xref:Orleans.Concurrency.St
 ## Silo-role based placement
 
 A deterministic placement strategy that places grains on silos with a specific role. This placement strategy is configured by adding the <xref:Orleans.Placement.SiloRoleBasedPlacementAttribute> to a grain.
+
+## Resource-optimized placement
+
+The resource-optimized placement strategy attempts to optimize cluster resources by balancing grain activations across silos based on available memory and CPU usage. It assigns weights to runtime statistics to prioritize different resources and calculates a normalized score for each silo. The silo with the lowest score is chosen for placing the upcoming activation. Normalization ensures that each property contributes proportionally to the overall score. Weights can be adjusted via the <xref:Orleans.Configuration.ResourceOptimizedPlacementOptions> based on user-specific requirements and priorities for different resources.
+
+Additionally, this placement strategy exposes an option to build a stronger *preference* to the local silo (*the one which got the request for making a new placement*) to be picked as the target for the activation. This is controlled via the `LocalSiloPreferenceMargin` property which is part of the options.
+
+Also, an [*online*](https://en.wikipedia.org/wiki/Online_algorithm), [*adaptive*](https://en.wikipedia.org/wiki/Adaptive_algorithm) algorithm provides a smoothing effect which avoids rapid signal drops by transforming it into a polynomial-like decay process. This is especially important for CPU usage, and overall contributes to avoiding resource saturation on the silos, especially newly joined once.
+
+This algorithm is based on: [*Resource-based placement with cooperative dual-mode Kalman filtering*](https://www.ledjonbehluli.com/posts/orleans_resource_placement_kalman/)
+
+This placement strategy is configured by adding the <xref:Orleans.Placement.ResourceOptimizedPlacementAttribute> to a grain.
 
 ## Choose a placement strategy
 

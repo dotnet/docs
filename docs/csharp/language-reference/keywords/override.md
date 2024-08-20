@@ -1,6 +1,6 @@
 ---
 description: "override modifier - C# Reference"
-title: "override modifier - C# Reference"
+title: "override modifier"
 ms.date: 10/22/2020
 f1_keywords: 
   - "override"
@@ -43,7 +43,6 @@ For more information about covariant return types, see the [feature proposal not
 
 ## See also
 
-- [C# reference](../index.md)
 - [Inheritance](../../fundamentals/object-oriented/inheritance.md)
 - [C# keywords](index.md)
 - [Modifiers](index.md)

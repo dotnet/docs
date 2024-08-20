@@ -1,6 +1,6 @@
 ---
 description: "unsafe keyword - C# Reference"
-title: "unsafe keyword - C# Reference"
+title: "unsafe keyword"
 ms.date: 07/20/2015
 f1_keywords:
   - "unsafe_CSharpKeyword"
@@ -49,7 +49,6 @@ For more information, see [Unsafe code](~/_csharpstandard/standard/unsafe-code.m
 
 ## See also
 
-- [C# reference](../index.md)
 - [C# keywords](index.md)
 - [`fixed` statement](../statements/fixed.md)
 - [Unsafe code, pointer types, and function pointers](../unsafe-code.md)

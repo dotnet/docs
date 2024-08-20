@@ -1,7 +1,7 @@
 ---
 title: External links for .NET Orleans
 description: Explore external links for .NET Orleans.
-ms.date: 03/21/2022
+ms.date: 07/03/2024
 ---
 
 # External links for .NET Orleans

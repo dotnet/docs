@@ -6,7 +6,7 @@ Namespace SystemTextJsonSamples
 
         Public Shared Sub Run()
             Dim jsonString As String
-            Dim weatherForecast As WeatherForecastWithPropertyNameAttribute = WeatherForecastFactories.CreateWeatherForecastWithPropertyNameAttribute()
+            Dim weatherForecast As WeatherForecastWithPropertyName = WeatherForecastFactories.CreateWeatherForecastWithPropertyName()
             weatherForecast.DisplayPropertyValues()
 
             ' <Serialize>
@@ -22,7 +22,7 @@ Namespace SystemTextJsonSamples
             Dim deserializeOptions As JsonSerializerOptions = New JsonSerializerOptions With {
                 .PropertyNamingPolicy = JsonNamingPolicy.CamelCase
             }
-            weatherForecast = JsonSerializer.Deserialize(Of WeatherForecastWithPropertyNameAttribute)(
+            weatherForecast = JsonSerializer.Deserialize(Of WeatherForecastWithPropertyName)(
                     jsonString, deserializeOptions)
             ' </Deserialize>
             weatherForecast.DisplayPropertyValues()

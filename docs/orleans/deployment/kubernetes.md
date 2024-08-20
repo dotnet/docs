@@ -1,7 +1,7 @@
 ---
 title: Kubernetes hosting
 description: Learn how to host an Orleans app with Kubernetes.
-ms.date: 03/09/2022
+ms.date: 07/03/2024
 ---
 
 # Kubernetes hosting

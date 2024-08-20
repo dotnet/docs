@@ -8,15 +8,17 @@ namespace SystemTextJsonSamples
         public static void Run()
         {
             string jsonString =
-@"{
-  ""Date"": ""2019-08-01T00:00:00-07:00"",
-  ""TemperatureCelsius"": 25,
-  ""Summary"": null
-}";
+                """
+                {
+                  "Date": "2019-08-01T00:00:00-07:00",
+                  "TemperatureCelsius": 25,
+                  "Summary": null
+                }
+                """;
             Console.WriteLine($"JSON input:\n{jsonString}\n");
 
             // Deserialize default behavior
-            var weatherForecast = JsonSerializer.Deserialize<WeatherForecastWithDefault>(jsonString)!;
+            WeatherForecastWithDefault weatherForecast = JsonSerializer.Deserialize<WeatherForecastWithDefault>(jsonString)!;
             weatherForecast.DisplayPropertyValues();
 
             // <Deserialize>

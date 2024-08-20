@@ -1,6 +1,6 @@
 ---
 description: "Advanced C# Compiler Options. These options are used in advanced scenarios."
-title: "C# Compiler Options - advanced scenarios"
+title: "Compiler Options - advanced scenarios"
 ms.date: 03/12/2021
 f1_keywords:
   - "cs.build.options"
@@ -84,6 +84,9 @@ The **PdbFile** compiler option specifies the name and location of the debug sym
 When you specify [**DebugType**](code-generation.md#debugtype), the compiler creates a *.pdb* file in the same directory where the compiler creates the output file (.exe or .dll). The *.pdb* file has the same base file name as the name of the output file. **PdbFile** allows you to specify a nondefault file name and location for the .pdb file. This compiler option can't be set in the Visual Studio development environment, nor can it be changed programmatically.
 
 ## PathMap
+
+> [!NOTE]
+Specifying **PathMap** will prevent breakpoints from working in local debug builds. Only set **PathMap** for production or [continuous integration builds](../../../core/project-sdk/msbuild-props.md#continuousintegrationbuild).
 
 The **PathMap** compiler option specifies how to map physical paths to source path names output by the compiler. This option maps each physical path on the machine where the compiler runs to a corresponding path that should be written in the output files. In the following example, `path1` is the full path to the source files in the current environment, and `sourcePath1` is the source path substituted for `path1` in any output files. To specify multiple mapped source paths, separate each with a comma.
 

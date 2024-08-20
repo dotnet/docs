@@ -1,7 +1,7 @@
 ---
 title: dotnet pack command
 description: The dotnet pack command creates NuGet packages for your .NET project.
-ms.date: 11/27/2023
+ms.date: 04/04/2024
 ---
 # dotnet pack
 
@@ -14,8 +14,9 @@ ms.date: 11/27/2023
 ## Synopsis
 
 ```dotnetcli
-dotnet pack [<PROJECT>|<SOLUTION>] [-c|--configuration <CONFIGURATION>]
-    [--force] [--include-source] [--include-symbols] [--interactive]
+dotnet pack [<PROJECT>|<SOLUTION>] [--artifacts-path <ARTIFACTS_DIR>]
+    [-c|--configuration <CONFIGURATION>] [--force]
+    [--include-source] [--include-symbols] [--interactive]
     [--no-build] [--no-dependencies] [--no-restore] [--nologo]
     [-o|--output <OUTPUT_DIRECTORY>] [--runtime <RUNTIME_IDENTIFIER>]
     [-s|--serviceable] [--tl:[auto|on|off]] [-v|--verbosity <LEVEL>]
@@ -59,7 +60,9 @@ You can provide MSBuild properties to the `dotnet pack` command for the packing 
 
 ## Options
 
-[!INCLUDE [configuration](../../../includes/cli-configuration.md)]
+[!INCLUDE [artifacts-path](../../../includes/cli-artifacts-path.md)]
+
+[!INCLUDE [configuration](../../../includes/cli-configuration-publish-pack.md)]
 
 - **`--force`**
 

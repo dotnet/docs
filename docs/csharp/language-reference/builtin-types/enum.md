@@ -1,5 +1,5 @@
 ---
-title: "Enumeration types - C# reference"
+title: "Enumeration types"
 description: "Learn about C# enumeration types that represent a choice or a combination of choices"
 ms.date: 12/13/2019
 f1_keywords:
@@ -81,7 +81,6 @@ For more information, see the following sections of the [C# language specificati
 
 ## See also
 
-- [C# reference](../index.md)
 - [Enumeration format strings](../../../standard/base-types/enumeration-format-strings.md)
 - [Design guidelines - Enum design](../../../standard/design-guidelines/enum.md)
 - [Design guidelines - Enum naming conventions](../../../standard/design-guidelines/names-of-classes-structs-and-interfaces.md#naming-enumerations)

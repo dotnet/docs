@@ -1,12 +1,11 @@
 ---
-description: "Learn more about: Debugging Enumerations"
 title: "Debugging Enumerations"
+description: "Learn more about: Debugging Enumerations"
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "debugging enumerations [.NET Framework]"
   - "unmanaged enumerations [.NET Framework], debugging"
   - "enumerations [.NET Framework debugging]"
-ms.assetid: 3af9f584-f1b4-4154-aeaa-8fce7c9f8b50
 ---
 # Debugging Enumerations
 
@@ -26,7 +25,7 @@ This section describes the unmanaged enumerations that the debugging API uses.
  [CorDebugBlockingReason Enumeration](cordebugblockingreason-enumeration.md)\
  Specifies the reasons why a thread may become blocked on a given object.
 
- CorDebugChainReason
+ [CorDebugChainReason Enumeration](cordebugchainreason-enumeration.md)\
  Indicates the reason or reasons for the initiation of a call chain.
 
  [CorDebugCodeInvokeKind Enumeration](cordebugcodeinvokekind-enumeration.md)\
@@ -35,7 +34,7 @@ This section describes the unmanaged enumerations that the debugging API uses.
  [CorDebugCodeInvokePurpose Enumeration](cordebugcodeinvokepurpose-enumeration.md)\
  Describes why an exported function calls managed code.
 
- CorDebugCreateProcessFlags
+ [CorDebugCreateProcessFlags Enumeration](cordebugcreateprocessflags-enumeration.md)\
  Provides additional debugging options that can be used in a call to the [ICorDebug::CreateProcess](icordebug-createprocess-method.md) method.
 
  [CorDebugDebugEventKind Enumeration](cordebugdebugeventkind-enumeration.md)\
@@ -44,13 +43,13 @@ This section describes the unmanaged enumerations that the debugging API uses.
  [CorDebugDecodeEventFlagsWindows Enumeration](cordebugdecodeeventflagswindows-enumeration.md)\
  Provides additional information about debug events on the Windows platform.
 
- CorDebugExceptionCallbackType
+ [CorDebugExceptionCallbackType Enumeration](cordebugexceptioncallbacktype-enumeration.md)\
  Indicates the type of callback that is made from an [ICorDebugManagedCallback2::Exception](icordebugmanagedcallback2-exception-method.md) event.
 
  [CorDebugExceptionFlags Enumeration](cordebugexceptionflags-enumeration.md)\
  Provides additional information about an exception.
 
- CorDebugExceptionUnwindCallbackType
+ [CorDebugExceptionUnwindCallbackType Enumeration](cordebugexceptionunwindcallbacktype-enumeration.md)\
  Indicates the event that is being signaled by the callback during the unwind phase.
 
  [CorDebugGCType Enumeration](cordebuggctype-enumeration.md)\
@@ -59,19 +58,19 @@ This section describes the unmanaged enumerations that the debugging API uses.
  [CorDebugGenerationTypes Enumeration](cordebuggenerationtypes-enumeration.md)\
  Specifies the generation of a region of memory on the managed heap.
 
- CorDebugHandleType
+ [CorDebugHandleType Enumeration](cordebughandletype-enumeration.md)\
  Indicates the handle type.
 
  [CorDebugIlToNativeMappingTypes Enumeration](cordebugiltonativemappingtypes-enumeration.md)\
  Indicates whether a particular range of native instructions corresponds to a special code region.
 
- CorDebugIntercept
+ [CorDebugIntercept Enumeration](cordebugintercept-enumeration.md)\
  Indicates the types of code that can be stepped into.
 
  [CorDebugInterfaceVersion Enumeration](cordebuginterfaceversion-enumeration.md)\
  Specifies either a version of the .NET Framework, or the version of the .NET Framework in which an interface was introduced.
 
- CorDebugInternalFrameType
+ [CorDebugInternalFrameType Enumeration](cordebuginternalframetype-enumeration.md)\
  Identifies the type of stack frame.
 
  [CorDebugJITCompilerFlags Enumeration](cordebugjitcompilerflags-enumeration.md)\
@@ -80,7 +79,7 @@ This section describes the unmanaged enumerations that the debugging API uses.
  [CorDebugJITCompilerFlagsDeprecated Enumeration](cordebugjitcompilerflagsdeprecated-enumeration.md)\
  Obsolete. Use the `CORDEBUG_JIT_DEFAULT` member of the [CorDebugJITCompilerFlags](cordebugjitcompilerflags-enumeration.md) enumeration instead.
 
- CorDebugMappingResult
+ [CorDebugMappingResult Enumeration](cordebugmappingresult-enumeration.md)\
  Provides the details of how the value of the instruction pointer (IP) was obtained.
 
  [CorDebugMDAFlags Enumeration](cordebugmdaflags-enumeration.md)\
@@ -95,7 +94,7 @@ This section describes the unmanaged enumerations that the debugging API uses.
  [CorDebugRecordFormat Enumeration](cordebugrecordformat-enumeration.md)\
  Describes the format of the data in a byte array that contains information about a native exception debug event.
 
- CorDebugRegister
+ [CorDebugRegister Enumeration](cordebugregister-enumeration.md)\
  Specifies the registers associated with a given processor architecture.
 
  [CorDebugSetContextFlag Enumeration](cordebugsetcontextflag-enumeration.md)\
@@ -104,16 +103,16 @@ This section describes the unmanaged enumerations that the debugging API uses.
  [CorDebugStateChange Enumeration](cordebugstatechange-enumeration.md)\
  Describes the amount of cached data that must be discarded based on changes to the process.
 
- CorDebugStepReason
+ [CorDebugStepReason Enumeration](cordebugstepreason-enumeration.md)\
  Indicates the outcome of an individual step.
 
- CorDebugThreadState
+ [CorDebugThreadState Enumeration](cordebugthreadstate-enumeration.md)\
  Specifies the state of a thread for debugging.
 
- \>CorDebugUnmappedStop
+ [CorDebugUnmappedStop Enumeration](cordebugunmappedstop-enumeration.md)\
  Specifies the type of unmapped code that can trigger a halt in code execution by the stepper.
 
- CorDebugUserState
+ [CorDebugUserState Enumeration](cordebuguserstate-enumeration.md)\
  Indicates the user state of a thread.
 
  [CorGCReferenceType Enumeration](corgcreferencetype-enumeration.md)\
@@ -139,10 +138,10 @@ This section describes the unmanaged enumerations that the debugging API uses.
 
 ## Related Sections
 
- [Debugging Coclasses](debugging-coclasses.md)\
+ [Debugging Coclasses](debugging-coclasses.md)
 
- [Debugging Interfaces](debugging-interfaces.md)\
+ [Debugging Interfaces](debugging-interfaces.md)
 
- [Debugging Global Static Functions](debugging-global-static-functions.md)\
+ [Debugging Global Static Functions](debugging-global-static-functions.md)
 
- [Debugging Structures](debugging-structures.md)\
+ [Debugging Structures](debugging-structures.md)

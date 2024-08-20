@@ -1,6 +1,6 @@
 ---
 description: "abstract - C# Reference"
-title: "abstract - C# Reference"
+title: "abstract keyword"
 ms.date: 07/20/2015
 f1_keywords: 
   - "abstract"
@@ -81,7 +81,6 @@ You will get an error saying that the compiler cannot create an instance of the 
   
 ## See also
 
-- [C# Reference](../index.md)
 - [Modifiers](index.md)
 - [virtual](./virtual.md)
 - [override](./override.md)

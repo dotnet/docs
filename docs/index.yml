@@ -44,7 +44,7 @@ highlightedContent:
       itemType: overview
       url: azure/index.yml
     # Card
-    - title: .NET Aspire (Preview)
+    - title: .NET Aspire
       itemType: overview
       url: /dotnet/aspire
     # Card
@@ -309,7 +309,7 @@ additionalContent:
             - url: azure/index.yml
               text: Azure for .NET developers
             - url: /dotnet/aspire
-              text: .NET Aspire (Preview)
+              text: .NET Aspire
             - url: ./azure/migration/app-service.md?preserve-view=true&view=azure-dotnet
               text: Migrate on-premises .NET web apps or services
             - url: ./azure/key-azure-services.md
@@ -319,8 +319,18 @@ additionalContent:
             - url: fsharp/using-fsharp-on-azure/deploying-and-managing.md
               text: Deploying Azure Resources with F#
         # Card
-        - title: Machine learning and AI
+        - title: AI and machine learning
           links:
+            - url: ai/index.yml
+              text: AI for .NET developers
+            - url: ai/quickstarts/get-started-openai.md
+              text: Build a chat app
+            - url: ai/conceptual/prompt-engineering-dotnet.md
+              text: Understand prompt engineering
+            - url: ai/tutorials/tutorial-ai-vector-search.md
+              text: Implement RAG using vector search
+            - url: ai/get-started-app-chat-template.md
+              text: Get started with the .NET enterprise chat sample
             - url: machine-learning/index.yml
               text: Build custom AI solutions with ML.NET
             - url: /azure/cognitive-services/
@@ -378,7 +388,7 @@ additionalContent:
         # Card
         - title: "C# language reference"
           summary: C# language reference and specification
-          url: csharp/language-reference/index.md
+          url: csharp/language-reference/index.yml
         # Card
         - title: "F# language reference"
           summary: F# language reference

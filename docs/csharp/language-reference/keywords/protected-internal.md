@@ -1,6 +1,6 @@
 ---
 description: "protected internal - C# Reference"
-title: "protected internal - C# Reference"
+title: "protected internal keyword"
 ms.date: 11/15/2017
 f1_keywords:
   - "protectedinternal_CSharpKeyword"
@@ -106,7 +106,6 @@ class DerivedClassDifferentAssembly : BaseClass
 
 ## See also
 
-- [C# Reference](../index.md)
 - [C# Keywords](index.md)
 - [Access Modifiers](access-modifiers.md)
 - [Accessibility Levels](accessibility-levels.md)

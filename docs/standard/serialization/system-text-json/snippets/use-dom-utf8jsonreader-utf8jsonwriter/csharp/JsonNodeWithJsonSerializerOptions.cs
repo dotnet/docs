@@ -9,7 +9,7 @@ public class Program
 {
     public static void Main()
     {
-        Person person = new Person { Name = "Nancy" };
+        Person person = new() { Name = "Nancy" };
 
         // Default serialization - Address property included with null token.
         // Output: {"Name":"Nancy","Address":null}
@@ -28,7 +28,7 @@ public class Program
         // Ignore null properties doesn't work when serializing JsonNode instance
         // by using JsonSerializer.
         // Output: {"Name":"Nancy","Address":null}
-        var personJsonNode = JsonSerializer.Deserialize<JsonNode>(personJsonWithNull);
+        JsonNode? personJsonNode = JsonSerializer.Deserialize<JsonNode>(personJsonWithNull);
         personJsonWithNull = JsonSerializer.Serialize(personJsonNode, options);
         Console.WriteLine(personJsonWithNull);
 
@@ -49,6 +49,7 @@ public class Program
         Console.WriteLine(personJsonWithNull);
     }
 }
+
 public class Person
 {
     public string? Name { get; set; }

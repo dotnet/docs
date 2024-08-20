@@ -1,7 +1,7 @@
 ---
 title: .NET Framework & Windows OS versions
 description: Learn about key features in each version of .NET Framework, including underlying CLR versions and versions installed by the Windows operating system.
-ms.date: 07/31/2023
+ms.date: 04/24/2024
 helpviewer_keywords:
   - "versions, .NET Framework"
 ---
@@ -53,17 +53,17 @@ Jump to:
 
 - [New features](../whats-new/index.md#whats-new-in-net-framework-481)
 - New accessibility features
-- [Release notes](https://github.com/Microsoft/dotnet/tree/master/releases/net481/README.md)
+- [Release notes](https://github.com/Microsoft/dotnet/tree/main/releases/net481/README.md)
 
-| | Versions |
-|-|-|
-|**CLR**|4|
-|**Windows**|✔️ September 2022 Release (Version 22621)<br/> ➕ 11 October 2021 Release (Version 22000)<br/>➕ 10 November 2021 Update<br/>➕ 10 May 2021 Update<br/>➕ 10 October 2020 Update<br/>|
-|**Windows Server**|➕ Windows Server 2022<br/>|
+|                    | Versions              |
+|--------------------|-----------------------|
+| **CLR**            | 4                     |
+| **Windows**        | ✔️ October 2023 Release (Version 22631)<br/> ✔️ September 2022 Release (Version 22621)<br/> ➕ 11 October 2021 Release (Version 22000)<br/>➕ 10 November 2021 Update<br/>➕ 10 May 2021 Update<br/>➕ 10 October 2020 Update<br/>|
+| **Windows Server** | ➕ Windows Server 2022 |
 
 To determine the installed .NET version, use the following `Release` DWORD:
 
-- 533320 (Windows 11 September 2022 Release)
+- 533320 (Windows 11 September 2022 Release and Windows 11 October 2023 Release)
 - 533325 (all other OS versions)
 
 For more information, see [instructions](how-to-determine-which-versions-are-installed.md).
@@ -72,11 +72,11 @@ For more information, see [instructions](how-to-determine-which-versions-are-ins
 
 - [New features](../whats-new/index.md#whats-new-in-net-framework-48)
 - [New in accessibility](../whats-new/whats-new-in-accessibility.md#whats-new-in-accessibility-in-net-framework-48)
-- [Release notes](https://github.com/Microsoft/dotnet/tree/master/releases/net48/README.md)
+- [Release notes](https://github.com/Microsoft/dotnet/tree/main/releases/net48/README.md)
 
-| | Versions |
-|-|-|
-|**CLR**|4|
+|         | Versions |
+|---------|----------|
+| **CLR** | 4        |
 |**Windows**|✔️ 11 October 2021 Release (Version 22000)<br/>✔️ 10 November 2021 Update<br/>✔️ 10 May 2021 Update<br/>✔️ 10 October 2020 Update<br/>✔️ 10 May 2020 Update<br/>✔️ 10 November 2019 Update<br/>✔️ 10 May 2019 Update<br/>➕ 10 October 2018 Update (Version 1809)<br/>➕ 10 April 2018 Update (Version 1803)<br/>➕ 10 Fall Creators Update (Version 1709)<br/>➕ 10 Creators Update (Version 1703)<br/>➕ 10 Anniversary Update (Version 1607)<br/>➕ 8.1<br/>➕7|
 |**Windows Server**|✔️ Windows Server 2022<br/>➕ Windows Server 2019<br/>➕ Windows Server, version 1809<br/>➕ Windows Server, version 1803<br/>➕ 2016<br/>➕ 2012 R2<br/>➕ 2012<br/>➕ 2008 R2 SP1|
 
@@ -93,16 +93,16 @@ For more information, see [instructions](how-to-determine-which-versions-are-ins
 
 - [New features](../whats-new/index.md#whats-new-in-net-framework-472)
 - [New in accessibility](../whats-new/whats-new-in-accessibility.md#whats-new-in-accessibility-in-net-framework-472)
-- [Release notes](https://github.com/Microsoft/dotnet/tree/master/releases/net472/README.md)
+- [Release notes](https://github.com/Microsoft/dotnet/tree/main/releases/net472/README.md)
 
-| | Versions |
-|-|-|
-|**CLR**|4|
-|**Included in Visual Studio**|2019<sup>1</sup>|
+|                               | Versions |
+|-------------------------------|----------|
+| **CLR**                       | 4        |
+| **Included in Visual Studio** | 2019†    |
 |**Windows**|✔️ 10 October 2018 Update (Version 1809)<br/>✔️ 10 April 2018 Update (Version 1803)<br/>➕ 10 Fall Creators Update (Version 1709)<br/>➕ 10 Creators Update (Version 1703)<br/>➕ 10 Anniversary Update (Version 1607)<br/>➕ 8.1<br/>➕7|
 |**Windows Server**|✔️ Windows Server 2019<br/>✔️ Windows Server, version 1809<br/>✔️ Windows Server, version 1803<br/>➕ Windows Server, version 1709<br/>➕ 2016<br/>➕ 2012 R2<br/>➕ 2012<br/>➕ 2008 R2 SP1|
 
-<sup>1</sup> Requires installing the **.NET desktop development**, **ASP.NET and web development**, **Azure development**, **Office/SharePoint development**, **Mobile development with .NET**, or **.NET Core cross-platform development** workloads.
+†Requires installing the **.NET desktop development**, **ASP.NET and web development**, **Azure development**, **Office/SharePoint development**, **Mobile development with .NET**, or **.NET Core cross-platform development** workloads.
 
 To determine the installed .NET version, use the following `Release` DWORD:
 
@@ -116,11 +116,11 @@ For more information, see [instructions](how-to-determine-which-versions-are-ins
 
 - [New features](../whats-new/index.md#whats-new-in-net-framework-471)
 - [New in accessibility](../whats-new/whats-new-in-accessibility.md#whats-new-in-accessibility-in-net-framework-471)
-- [Release notes](https://github.com/Microsoft/dotnet/tree/master/releases/net471/README.md)
+- [Release notes](https://github.com/Microsoft/dotnet/tree/main/releases/net471/README.md)
 
-| | Versions |
-|-|-|
-|**CLR**|4|
+|         | Versions |
+|---------|----------|
+| **CLR** | 4        |
 |**Windows**|✔️ 10 Fall Creators Update (Version 1709)<br/>➕ 10 Creators Update (Version 1703)<br/>➕ 10 Anniversary Update (Version 1607)<br/>➕ 8.1<br/>➕7|
 |**Windows Server**|➕ Windows Server, version 1803<br/>✔️ Windows Server, version 1709<br/>➕ 2016<br/>➕ 2012 R2<br/>➕ 2012<br/>➕ 2008 R2 SP1|
 
@@ -134,7 +134,7 @@ For more information, see [instructions](how-to-determine-which-versions-are-ins
 ### .NET Framework 4.7
 
 - [New features](../whats-new/index.md#whats-new-in-net-framework-47)
-- [Release notes](https://github.com/Microsoft/dotnet/tree/master/releases/net47/README.md)
+- [Release notes](https://github.com/Microsoft/dotnet/tree/main/releases/net47/README.md)
 
 |                    | Versions                                                                                              |
 |--------------------|-------------------------------------------------------------------------------------------------------|
@@ -152,7 +152,7 @@ For more information, see [instructions](how-to-determine-which-versions-are-ins
 ### .NET Framework 4.6.2
 
 - [New features](../whats-new/index.md#whats-new-in-net-framework-462)
-- [Release notes](https://github.com/Microsoft/dotnet/tree/master/releases/net462/README.md)
+- [Release notes](https://github.com/Microsoft/dotnet/tree/main/releases/net462/README.md)
 
 |                    | Versions                                                                                                   |
 |--------------------|------------------------------------------------------------------------------------------------------------|
@@ -170,7 +170,7 @@ For more information, see [instructions](how-to-determine-which-versions-are-ins
 ### .NET Framework 4.6.1
 
 - [New features](../whats-new/index.md#whats-new-in-net-framework-461)
-- [Release notes](https://github.com/Microsoft/dotnet/tree/master/releases/net461/README.md)
+- [Release notes](https://github.com/Microsoft/dotnet/tree/main/releases/net461/README.md)
 
 |                                       | Versions                                                                  |
 |---------------------------------------|---------------------------------------------------------------------------|
@@ -191,7 +191,7 @@ For more information, see [instructions](how-to-determine-which-versions-are-ins
 ### .NET Framework 4.6
 
 - [New features](../whats-new/index.md#whats-new-in-net-2015)
-- [Release notes](https://github.com/Microsoft/dotnet/tree/master/releases/net46/README.md)
+- [Release notes](https://github.com/Microsoft/dotnet/tree/main/releases/net46/README.md)
 
 |                                       | Versions                                                 |
 |---------------------------------------|----------------------------------------------------------|
@@ -210,7 +210,7 @@ For more information, see [instructions](how-to-determine-which-versions-are-ins
 ### .NET Framework 4.5.2
 
 - [New features](../whats-new/index.md#whats-new-in-net-framework-452)
-- [Release notes](https://github.com/Microsoft/dotnet/tree/master/releases/net452/README.md)
+- [Release notes](https://github.com/Microsoft/dotnet/tree/main/releases/net452/README.md)
 
 |                    | Versions                                                 |
 |--------------------|----------------------------------------------------------|
@@ -223,7 +223,7 @@ To determine the installed .NET version, use `Release` DWORD 379893. For more in
 ### .NET Framework 4.5.1
 
 - [New features](../whats-new/index.md#whats-new-in-net-framework-451)
-- [Release notes](https://github.com/Microsoft/dotnet/tree/master/releases/net451/README.md)
+- [Release notes](https://github.com/Microsoft/dotnet/tree/main/releases/net451/README.md)
 
 |                                       | Versions                                                       |
 |---------------------------------------|----------------------------------------------------------------|
@@ -244,7 +244,7 @@ For more information, see [instructions](how-to-determine-which-versions-are-ins
 ### .NET Framework 4.5
 
 - [New features](../whats-new/index.md#whats-new-in-net-framework-45)
-- [Release notes](https://github.com/Microsoft/dotnet/tree/master/releases/net45/README.md)
+- [Release notes](https://github.com/Microsoft/dotnet/tree/main/releases/net45/README.md)
 
 |                                       | Versions                                  |
 |---------------------------------------|-------------------------------------------|
@@ -361,7 +361,7 @@ To determine the installed .NET version, use `Release` DWORD 378389. For more in
 
 > [!NOTE]
 >
-> - .NET Framework must be enabled on this operating system through [Control Panel (for Windows) or the Server Manager (for Windows Server)](../install/dotnet-35-windows.md#enable-the-net-framework-35-in-control-panel).
+> - .NET Framework must be enabled on this operating system through [Control Panel (for Windows) or the Server Manager (for Windows Server)](../install/dotnet-35-windows.md#enable-net-framework-35-in-control-panel).
 > - In general, you should not uninstall any versions of .NET Framework that are installed on your computer, because an application you use may depend on a specific version and may break if that version is removed. You can load multiple versions of .NET Framework on a single computer at the same time. This means that you can install .NET Framework without having to uninstall previous versions. For more information, see [Getting Started](../get-started/index.md).
 
 ## Remarks for version 4.5 and later

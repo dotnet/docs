@@ -3,10 +3,10 @@ title: Containerized Microservices
 description: Strategies for developing scalable back-end architecture
 author: michaelstonis
 no-loc: [MAUI]
-ms.date: 06/29/2022
+ms.date: 05/30/2024
 ---
 
-# Containerized Microservices
+# Containerized microservices
 
 [!INCLUDE [download-alert](includes/download-alert.md)]
 
@@ -72,19 +72,17 @@ The key concepts when creating and working with containers are:
 
 Enterprises are increasingly adopting containers when implementing microservice-based applications, and Docker has become the standard container implementation that has been adopted by most software platforms and cloud vendors.
 
-The eShopOnContainers reference application uses Docker to host four containerized back-end microservices, as illustrated in the diagram below.
+The eShop reference application uses Docker to host four containerized back-end microservices, as illustrated in the diagram below.
 
-![eShopOnContainers reference application back-end microservices.](./media/microservices-reference-backend.png)
+![eShop reference application back-end microservices.](./media/microservices-reference-backend.png)
 
 The architecture of the back-end services in the reference application is decomposed into multiple autonomous sub-systems in the form of collaborating microservices and containers. Each microservice provides a single area of functionality: an identity service, a catalog service, an ordering service, and a basket service.
 
 Each microservice has its own database, allowing it to be fully decoupled from the other microservices. Where necessary, consistency between databases from different microservices is achieved using application-level events. For more information, see [Communication between microservices](#communication-between-microservices).
 
-For more information about the reference application, see [.NET Microservices: Architecture for Containerized .NET Applications](https://aka.ms/microservicesebook).
-
 ## Communication between client and microservices
 
-The eShopOnContainers multi-platform app communicates with the containerized back-end microservices using _direct client-to-microservice_ communication, as shown below.
+The eShop multi-platform app communicates with the containerized back-end microservices using _direct client-to-microservice_ communication, as shown below.
 
 ![Direct client-to-microservice communication.](./media/direct-client-to-microservice-communication.png)
 
@@ -93,7 +91,7 @@ With direct client-to-microservice communication, the multi-platform app makes r
 > [!TIP]
 > Consider using API gateway communication.
 
-Direct client-to-microservice communication can have drawbacks when building a large and complex microservice-based application, but it's more than adequate for a small application. Consider using API gateway communication when designing a large microservice-based application with tens of microservices. For more information, see [.NET Microservices: Architecture for Containerized .NET Applications](https://aka.ms/microservicesebook).
+Direct client-to-microservice communication can have drawbacks when building a large and complex microservice-based application, but it's more than adequate for a small application. Consider using API gateway communication when designing a large microservice-based application with tens of microservices.
 
 ## Communication between microservices
 
@@ -107,20 +105,15 @@ An event bus allows publish-subscribe communication between microservices withou
 
 ![Publish-subscribe with an event bus.](./media/publish-subscribe-with-event-bus.png)
 
-From an application perspective, the event bus is simply a publish-subscribe channel exposed via an interface. However, the way the event bus is implemented can vary. For example, an event bus implementation could use RabbitMQ, Azure Service Bus, or other service buses such as NServiceBus and MassTransit. The diagram below shows how an event bus is used in the eShopOnContainers reference application.
+From an application perspective, the event bus is simply a publish-subscribe channel exposed via an interface. However, the way the event bus is implemented can vary. For example, an event bus implementation could use RabbitMQ, Azure Service Bus, or other service buses such as NServiceBus and MassTransit. The diagram below shows how an event bus is used in the eShop reference application.
 
 ![Asynchronous event-driven communication in the reference application.](./media/asynchronous-event-driven-communication.png)
 
-The eShopOnContainers event bus, implemented using RabbitMQ, provides one-to-many asynchronous publish-subscribe functionality. This means that after publishing an event, there can be multiple subscribers listening for the same event. The diagram below illustrates this relationship.
+The eShop event bus, implemented using RabbitMQ, provides one-to-many asynchronous publish-subscribe functionality. This means that after publishing an event, there can be multiple subscribers listening for the same event. The diagram below illustrates this relationship.
 
 ![One-to-many communication](./media/one-to-many-communication.png)
 
 This one-to-many communication approach uses events to implement business transactions that span multiple services, ensuring eventual consistency between the services. An eventual-consistent transaction consists of a series of distributed steps. Therefore, when the user-profile microservice receives the UpdateUser command, it updates the user's details in its database and publishes the UserUpdated event to the event bus. Both the basket microservice and the ordering microservice have subscribed to receive this event, and in response, update their buyer information in their respective databases.
-
-> [!NOTE]
-> The eShopOnContainers event bus, implemented using RabbitMQ, is intended to be used only as a proof of concept. For production systems, alternative event bus implementations should be considered.
-
-For more information about the event bus implementation, see [.NET Microservices: Architecture for Containerized .NET Applications](https://aka.ms/microservicesebook).
 
 ## Summary
 

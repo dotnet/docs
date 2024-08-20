@@ -7,11 +7,11 @@ ms.date: 12/31/2023
 
 [!INCLUDE [context](includes/context.md)]
 
-A dynamic assembly is an assembly that is created using the Reflection Emit APIs. A dynamic assembly can reference types defined in another dynamic or static assembly. You can use <xref:System.Reflection.Emit.AssemblyBuilder> to generate dynamic assemblies in memory and execute their code during the same application run. .NET 9 added a fully managed implementation for reflection emit that allows you save the assembly into a file. In .NET Framework, you can do both&mdash;run the dynamic assembly and save it to a file. The dynamic assembly created for saving is called a *persistable* assembly, while the regular memory-only assembly is called *transient*. In .NET Framework, a dynamic assembly can consist of one or more dynamic modules. In .NET Core and .NET 5+, a dynamic assembly can only consist of one dynamic module.
+A dynamic assembly is an assembly that is created using the Reflection Emit APIs. A dynamic assembly can reference types defined in another dynamic or static assembly. You can use <xref:System.Reflection.Emit.AssemblyBuilder> to generate dynamic assemblies in memory and execute their code during the same application run. In .NET 9 we added a new [PersistedAssemblyBuilder](system-reflection-emit-persistedassemblybuilder.md)  with fully managed implementation of reflection emit that allows you save the assembly into a file. In .NET Framework, you can do both&mdash;run the dynamic assembly and save it to a file. The dynamic assembly created for saving is called a *persisted* assembly, while the regular memory-only assembly is called *transient* or *runnable*. In .NET Framework, a dynamic assembly can consist of one or more dynamic modules. In .NET Core and .NET 5+, a dynamic assembly can only consist of one dynamic module.
 
 The way you create an <xref:System.Reflection.Emit.AssemblyBuilder> instance differs for each implementation, but further steps for defining a module, type, method, or enum, and for writing IL, are quite similar.
 
-## Runnable dynamic assemblies in .NET Core
+## Runnable dynamic assemblies in .NET
 
 To get a runnable <xref:System.Reflection.Emit.AssemblyBuilder> object, use the <xref:System.Reflection.Emit.AssemblyBuilder.DefineDynamicAssembly%2A?displayProperty=nameWithType> method.
 Dynamic assemblies can be created using one of the following access modes:
@@ -49,56 +49,11 @@ public void CreateAndRunAssembly(string assemblyPath)
 }
 ```
 
-## Persistable dynamic assemblies in .NET Core
+## Persisted dynamic assemblies in .NET
 
-The <xref:System.Reflection.Emit.AssemblyBuilder.Save%2A?displayProperty=nameWithType> API wasn't originally ported to .NET (Core) because the implementation depended heavily on Windows-specific native code that also wasn't ported. However, because you could only *run* a generated assembly and not *save* it, it was difficult to debug these in-memory assemblies. Other advantages of saving a dynamic assembly to a file are:
+The new <xref:System.Reflection.Emit.PersistedAssemblyBuilder> type derived from the <xref:System.Reflection.Emit.AssemblyBuilder> and allows save the dynamic assemblies in .NET Core, check the usage scenarios and examples from [PersistedAssemblyBuilder](system-reflection-emit-persistedassemblybuilder.md) page.
 
-- You can verify the generated assembly with tools such as ILVerify, or decompile and manually examine it with tools such as ILSpy.
-- The saved assembly can be shared or loaded directly, which can decrease application startup time.
-
-.NET 9 adds a fully managed `Reflection.Emit` implementation that supports saving. This implementation has no dependency on the pre-existing, runtime-specific `Reflection.Emit` implementation. That is, now there are two different implementations. The assemblies generated with the new managed implementation can be saved. To run the assembly, first save it into a memory stream or a file, then load it back.
-
-To create a persistable `AssemblyBuilder` instance, use the static factory method <xref:System.Reflection.Emit.AssemblyBuilder.DefinePersistedAssembly(System.Reflection.AssemblyName,System.Reflection.Assembly,System.Collections.Generic.IEnumerable{System.Reflection.Emit.CustomAttributeBuilder})?displayProperty=nameWithType>. The `coreAssembly` parameter is used to resolve base runtime types and can be used for resolving reference assembly versioning.
-
-- If `Reflection.Emit` is used to generate an assembly that targets a specific TFM, open the reference assemblies for the given TFM using `MetadataLoadContext` and use the value of the [MetadataLoadContext.CoreAssembly](xref:System.Reflection.MetadataLoadContext.CoreAssembly) property for `coreAssembly`. This value allows the generator to run on one .NET runtime version and target a different .NET runtime version.
-
-- If `Reflection.Emit` is used to generate an assembly that's only going to be executed on the same runtime version as the runtime version that the compiler is running on (typically in-proc), the core assembly can be `typeof(object).Assembly`. The reference assemblies aren't necessary in this case.
-
-The following example demonstrates how to create and save an assembly to a stream and run it:
-
-```csharp
-public void CreateSaveAndRunAssembly(string assemblyPath)
-{
-    AssemblyBuilder ab = AssemblyBuilder.DefinePersistedAssembly(new AssemblyName("MyAssembly"), typeof(object).Assembly);
-    ModuleBuilder mob = ab.DefineDynamicModule("MyModule");
-    TypeBuilder tb = mob.DefineType("MyType", TypeAttributes.Public | TypeAttributes.Class);
-    MethodBuilder meb = tb.DefineMethod("SumMethod", MethodAttributes.Public | MethodAttributes.Static,
-                                                                   typeof(int), new Type[] {typeof(int), typeof(int)});
-    ILGenerator il = meb.GetILGenerator();
-    il.Emit(OpCodes.Ldarg_0);
-    il.Emit(OpCodes.Ldarg_1);
-    il.Emit(OpCodes.Add);
-    il.Emit(OpCodes.Ret);
-
-    tb.CreateType();
-
-    using var stream = new MemoryStream();
-    ab.Save(stream);  // or pass filename to save into a file
-    stream.Seek(0, SeekOrigin.Begin);
-    Assembly assembly = AssemblyLoadContext.Default.LoadFromStream(stream);
-    MethodInfo method = assembly.GetType("MyType").GetMethod("SumMethod");
-    Console.WriteLine(method.Invoke(null, new object[] { 5, 10 }));
-}
-```
-
-> [!NOTE]
-> The metadata tokens for all members are populated on the <xref:System.Reflection.Emit.AssemblyBuilder.Save%2A> operation. Don't use the tokens of a generated type and its members before saving, as they'll have default values or throw exceptions. It's safe to use tokens for types that are referenced, not generated.
->
-> Some APIs that aren't important for emitting an assembly aren't implemented; for example, `GetCustomAttributes()` is not implemented. With the runtime implementation, you were able to use those APIs after creating the type. For the persisted `AssemblyBuilder`, they throw `NotSupportedException` or `NotImplementedException`. If you have a scenario that requires those APIs, file an issue in the [dotnet/runtime repo](https://github.com/dotnet/runtime).
-
-For an alternative way to generate assembly files, see <xref:System.Reflection.Metadata.Ecma335.MetadataBuilder>.
-
-## Persistable dynamic assemblies in .NET Framework
+## Persisted dynamic assemblies in .NET Framework
 
 In .NET Framework, dynamic assemblies and modules can be saved to files. To support this feature, the <xref:System.Reflection.Emit.AssemblyBuilderAccess> enumeration declares two additional fields: <xref:System.Reflection.Emit.AssemblyBuilderAccess.Save> and <xref:System.Reflection.Emit.AssemblyBuilderAccess.RunAndSave>.
 

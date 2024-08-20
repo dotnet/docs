@@ -1,5 +1,5 @@
 ---
-title: Iterate through collections in C#
+title: Iterate through collections
 description: Learn how to use an iterator to step through collections like lists and arrays. Iterators are consumed from client code using a foreach statement or LINQ query.
 ms.date: 08/14/2018
 ms.assetid: c93f6dd4-e72a-4a06-be1c-a98b3255b734
@@ -329,7 +329,7 @@ In C#, `yield` is not a reserved word and has special meaning only when it is us
 
 Although you write an iterator as a method, the compiler translates it into a nested class that is, in effect, a state machine. This class keeps track of the position of the iterator as long the `foreach` loop in the client code continues.
 
-To see what the compiler does, you can use the Ildasm.exe tool to view the Microsoft intermediate language code that's generated for an iterator method.
+To see what the compiler does, you can use the Ildasm.exe tool to view the common intermediate language code that's generated for an iterator method.
 
 When you create an iterator for a [class](../../language-reference/keywords/class.md) or [struct](../../language-reference/builtin-types/struct.md), you don't have to implement the whole <xref:System.Collections.IEnumerator> interface. When the compiler detects the iterator, it automatically generates the `Current`, `MoveNext`, and `Dispose` methods of the <xref:System.Collections.IEnumerator> or <xref:System.Collections.Generic.IEnumerator%601> interface.
 

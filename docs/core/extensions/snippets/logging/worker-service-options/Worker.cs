@@ -9,23 +9,26 @@ public sealed class Worker(
     protected override async Task ExecuteAsync(
         CancellationToken stoppingToken)
     {
-        using IDisposable? scope = logger.ProcessingWorkScope(DateTime.Now);
-        while (!stoppingToken.IsCancellationRequested)
+        using (IDisposable? scope = logger.ProcessingWorkScope(DateTime.Now))
         {
-            WorkItem? nextItem = priorityQueue.ProcessNextHighestPriority();
-            try
+            while (!stoppingToken.IsCancellationRequested)
             {
-                if (nextItem is not null)
+                try
                 {
-                    logger.PriorityItemProcessed(nextItem);
-                }
-            }
-            catch (Exception ex)
-            {
-                logger.FailedToProcessWorkItem(ex);
-            }
+                    WorkItem? nextItem = priorityQueue.ProcessNextHighestPriority();
 
-            await Task.Delay(1_000, stoppingToken);
+                    if (nextItem is not null)
+                    {
+                        logger.PriorityItemProcessed(nextItem);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    logger.FailedToProcessWorkItem(ex);
+                }
+
+                await Task.Delay(1_000, stoppingToken);
+            }
         }
     }
 }

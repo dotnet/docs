@@ -191,15 +191,15 @@ See [EventPipe environment variables](../diagnostics/eventpipe.md#trace-using-en
 
 ## .NET SDK and CLI environment variables
 
-### `DOTNET_ROOT`, `DOTNET_ROOT(x86)`
+### `DOTNET_ROOT`, `DOTNET_ROOT(x86)`, `DOTNET_ROOT_X86`, `DOTNET_ROOT_X64`
 
-Specifies the location of the .NET runtimes, if they are not installed in the default location. The default location on Windows is `C:\Program Files\dotnet`. The default location on macOS is `/usr/local/share/dotnet`. The default location on Linux varies depending on distro and installment method. The default location on Ubuntu 22.04 is `/usr/share/dotnet` (when installed from `packages.microsoft.com`) or `/usr/lib/dotnet` (when installed from Jammy feed). For more information, see the following resources:
+Specifies the location of the .NET runtimes, if they are not installed in the default location. The default location on Windows is `C:\Program Files\dotnet`. The default location on macOS is `/usr/local/share/dotnet`. The default location for the x64 runtimes on an arm64 OS is under an x64 subfolder (so `C:\Program Files\dotnet\x64` on windows and `/usr/local/share/dotnet/x64` on macOS. The default location on Linux varies depending on distro and installment method. The default location on Ubuntu 22.04 is `/usr/share/dotnet` (when installed from `packages.microsoft.com`) or `/usr/lib/dotnet` (when installed from Jammy feed). For more information, see the following resources:
 
 - [Troubleshoot app launch failures](../runtime-discovery/troubleshoot-app-launch.md?pivots=os-linux)
 - GitHub issue [dotnet/core#7699](https://github.com/dotnet/core/issues/7699)
 - GitHub issue [dotnet/runtime#79237](https://github.com/dotnet/runtime/issues/79237)
 
-This environment variable is used only when running apps via generated executables (apphosts). `DOTNET_ROOT(x86)` is used instead when running a 32-bit executable on a 64-bit OS.
+This environment variable is used only when running apps via generated executables (apphosts). `DOTNET_ROOT(x86)` is used instead when running a 32-bit executable on a 64-bit OS. `DOTNET_ROOT_X64` is used instead when running a 64-bit executable on an ARM64 OS.
 
 ### `DOTNET_HOST_PATH`
 
@@ -361,6 +361,14 @@ List of assemblies to load and execute startup hooks from.
 Specifies a directory to which a single-file application is extracted before it is executed.
 
 For more information, see [Single-file executables](../whats-new/dotnet-core-3-0.md#single-file-executables).
+
+### `DOTNET_CLI_HOME`
+
+Specifies the location that supporting files for .NET CLI commands should be written to. For example:
+
+* User-writable paths for workload packs, manifests, and other supporting data.
+* First-run sentinel/lock files for aspects of the .NET CLI's first-run migrations and notification experiences.
+* The default .NET local tool installation location.
 
 ### `DOTNET_CLI_CONTEXT_*`
 

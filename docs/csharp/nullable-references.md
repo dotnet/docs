@@ -37,6 +37,28 @@ int length = message.Length; // dereferencing "message"
 
 When you dereference a variable whose value is `null`, the runtime throws a <xref:System.NullReferenceException?displayProperty=nameWithType>.
 
+Similarly warnings can be produced when `[]` notation is used to access a member of an object when the object is `null`:
+
+```csharp
+using System;
+
+public class Collection<T>
+{
+    private T[] array = new T[100];
+    public T this[int index]
+    {
+        get => array[index];
+        set => array[index] = value;
+    }
+}
+
+public static void Main()
+{
+    Collection<int> c = default;
+    c[10] = 1;    // CS8602: Possible derefence of null
+}
+```
+
 You'll learn about:
 
 - The compiler's [null-state analysis](#null-state-analysis): how the compiler determines if an expression is not-null, or maybe-null.
@@ -166,7 +188,7 @@ name!.Length;
 
 Nullable reference types and nullable value types provide a similar semantic concept: A variable can represent a value or object, or that variable might be `null`. However, nullable reference types and nullable value types are implemented differently: nullable value types are implemented using <xref:System.Nullable%601?displayProperty=nameWithType>, and nullable reference types are implemented by attributes read by the compiler. For example, `string?` and `string` are both represented by the same type: <xref:System.String?displayProperty=nameWithType>. However, `int?` and `int` are represented by `System.Nullable<System.Int32>` and <xref:System.Int32?displayProperty=nameWithType>, respectively.
 
-Nullable reference types are a compile time feature. That means it's possible for callers to ignore warnings, intentionally use `null` as an argument to a method expecting a non nullable reference. Library authors should include runtime checks against null argument values. The <xref:System.ArgumentNullException.ThrowIfNull%2A?displayProperty=nameWithType> is the preferred option for checking a parameter against null at run time.
+Nullable reference types are a compile time feature. That means it's possible for callers to ignore warnings, intentionally use `null` as an argument to a method expecting a non nullable reference. Library authors should include run-time checks against null argument values. The <xref:System.ArgumentNullException.ThrowIfNull%2A?displayProperty=nameWithType> is the preferred option for checking a parameter against null at run time.
 
 > [!IMPORTANT]
 > Enabling nullable annotations can change how Entity Framework Core determines if a data member is required. You can learn more details in the article on [Entity Framework Core Fundamentals: Working with Nullable Reference Types](/ef/core/miscellaneous/nullable-reference-types).
@@ -209,7 +231,7 @@ The **nullable annotation context** determines the compiler's behavior. There ar
   - All new nullable warnings are enabled.
   - You can use the `?` suffix to declare a nullable reference type.
   - Reference type variables without the `?` suffix are non-nullable reference types.
-  - The null forgiving operator suppresses warnings for a possible assignment to `null`.
+  - The null forgiving operator suppresses warnings for a possible dereference of `null`.
 - *warnings*: The compiler performs all null analysis and emits warnings when code might dereference `null`.
   - All new nullable warnings are enabled.
   - Use of the `?` suffix to declare a nullable reference type produces a warning.
@@ -255,7 +277,7 @@ You can also use directives to set these same contexts anywhere in your source c
 - `#nullable restore warnings`: Restores the nullable warning context to the project settings.
 - `#nullable disable annotations`: Set the nullable annotation context to **disable**.
 - `#nullable enable annotations`: Set the nullable annotation context to **enable**.
-- `#nullable restore annotations`: Restores the annotation warning context to the project settings.
+- `#nullable restore annotations`: Restores the nullable annotation context to the project settings.
 
 For any line of code, you can set any of the following combinations:
 
@@ -372,3 +394,4 @@ In the preceding example, the declaration of the array shows it holds non-nullab
 - [Unconstrained type parameter annotations](~/_csharplang/proposals/csharp-9.0/unconstrained-type-parameter-annotations.md)
 - [Intro to nullable references tutorial](tutorials/nullable-reference-types.md)
 - [**Nullable** (C# Compiler option)](language-reference/compiler-options/language.md#nullable)
+- [CS8602: Possible dereference of null warning](language-reference/compiler-messages/nullable-warnings.md#possible-dereference-of-null)

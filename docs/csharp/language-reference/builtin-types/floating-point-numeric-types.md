@@ -1,5 +1,5 @@
 ---
-title: "Floating-point numeric types - C# reference"
+title: "Floating-point numeric types"
 description: "Learn about the built-in C# floating-point types: float, double, and decimal"
 ms.date: 02/04/2021
 f1_keywords:
@@ -113,7 +113,6 @@ For more information, see the following sections of the [C# language specificati
 
 ## See also
 
-- [C# reference](../index.md)
 - [Value types](value-types.md)
 - [Integral types](integral-numeric-types.md)
 - [Standard numeric format strings](../../../standard/base-types/standard-numeric-format-strings.md)

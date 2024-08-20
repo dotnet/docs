@@ -1,7 +1,7 @@
 ---
-title: "Constraints on type parameters - C# Programming Guide"
+title: "Constraints on type parameters"
 description: Learn about constraints on type parameters. Constraints tell the compiler what capabilities a type argument must have.
-ms.date: 03/11/2024
+ms.date: 07/26/2024
 f1_keywords:
   - "defaultconstraint_CSharpKeyword"
   - "notnull_CSharpKeyword"
@@ -30,15 +30,18 @@ Constraints inform the compiler about the capabilities a type argument must have
 |`where T :` *\<interface name>?*|The type argument must be or implement the specified interface. Multiple interface constraints can be specified. The constraining interface can also be generic. In a nullable context, `T` can be a nullable reference type, a non-nullable reference type, or a value type. `T` can't be a nullable value type.|
 |`where T : U`|The type argument supplied for `T` must be or derive from the argument supplied for `U`. In a nullable context, if `U` is a non-nullable reference type, `T` must be a non-nullable reference type. If `U` is a nullable reference type, `T` can be either nullable or non-nullable. |
 |`where T : default`|This constraint resolves the ambiguity when you need to specify an unconstrained type parameter when you override a method or provide an explicit interface implementation. The `default` constraint implies the base method without either the `class` or `struct` constraint. For more information, see the [`default` constraint](~/_csharplang/proposals/csharp-9.0/unconstrained-type-parameter-annotations.md#default-constraint) spec proposal.|
+|`where T : allows ref struct`|This anti-constraint declares that the type argument for `T` can be a `ref struct` type. The generic type or method must obey ref safety rules for any instance of `T` because it might be a `ref struct`.|
 
 Some constraints are mutually exclusive, and some constraints must be in a specified order:
 
 - You can apply at most one of the `struct`, `class`, `class?`, `notnull`, and `unmanaged` constraints. If you supply any of these constraints, it must be the first constraint specified for that type parameter.
-- The base class constraint, (`where T : Base` or `where T : Base?`), can't be combined with any of the constraints `struct`, `class`, `class?`, `notnull`, or `unmanaged`.
+- The base class constraint (`where T : Base` or `where T : Base?`) can't be combined with any of the constraints `struct`, `class`, `class?`, `notnull`, or `unmanaged`.
 - You can apply at most one base class constraint, in either form. If you want to support the nullable base type, use `Base?`.
 - You can't name both the non-nullable and nullable form of an interface as a constraint.
-- The `new()` constraint can't be combined with the `struct` or `unmanaged` constraint. If you specify the `new()` constraint, it must be the last constraint for that type parameter.
+- The `new()` constraint can't be combined with the `struct` or `unmanaged` constraint. If you specify the `new()` constraint, it must be the last constraint for that type parameter. Anti-constraints, if applicable, can follow the `new()` constraint.
 - The `default` constraint can be applied only on override or explicit interface implementations. It can't be combined with either the `struct` or `class` constraints.
+- The `allows ref struct` anti-constraint can't be combined with the `class` or `class?` constraint.
+- The `allows ref struct` anti-constraint must follow all constraints for that type parameter.
 
 ## Why use constraints
 
@@ -118,11 +121,11 @@ You can use <xref:System.Delegate?displayProperty=nameWithType> or <xref:System.
 
 :::code language="csharp" source="./snippets/GenericWhereConstraints.cs" id="Snippet16":::
 
-You can use the above method to combine delegates that are the same type:
+You can use the preceding method to combine delegates that are the same type:
 
 :::code language="csharp" source="./snippets/GenericWhereConstraints.cs" id="Snippet17":::
 
-If you uncomment the last line, it won't compile. Both `first` and `test` are delegate types, but they're different delegate types.
+If you uncomment the last line, it doesn't compile. Both `first` and `test` are delegate types, but they're different delegate types.
 
 ## Enum constraints
 
@@ -149,17 +152,61 @@ This pattern enables the C# compiler to determine the containing type for the ov
 ```csharp
 public interface IAdditionSubtraction<T> where T : IAdditionSubtraction<T>
 {
-    public abstract static IAdditionSubtraction<T> operator +(
+    static abstract IAdditionSubtraction<T> operator +(
         IAdditionSubtraction<T> left,
         IAdditionSubtraction<T> right);
 
-    public abstract static IAdditionSubtraction<T> operator -(
+    static abstract IAdditionSubtraction<T> operator -(
         IAdditionSubtraction<T> left,
         IAdditionSubtraction<T> right);
 }
 ```
 
 The preceding syntax would require implementers to use [explicit interface implementation](../interfaces/explicit-interface-implementation.md) for those methods. Providing the extra constraint enables the interface to define the operators in terms of the type parameters. Types that implement the interface can implicitly implement the interface methods.
+
+## Allows ref struct
+
+The `allows ref struct` anti-constraint declares that the corresponding type argument can be a [`ref struct`](../../language-reference/builtin-types/ref-struct.md) type. Instances of that type parameter must obey the following rules:
+
+- It can't be boxed.
+- It participates in [ref safety rules](~/_csharpstandard/standard/structs.md#16412-safe-context-constraint).
+- Instances can't be used where a `ref struct` type isn't allowed, such as `static` fields.
+- Instances can be marked with the `scoped` modifier.
+
+The `allows ref struct` clause isn't inherited. In the following code:
+
+```csharp
+class SomeClass<T, S>
+    where T : allows ref struct
+    where S : T
+{
+    // etc
+}
+```
+
+The argument for `S` can't be a `ref struct` because `S` doesn't have the `allows ref struct` clause.
+
+A type parameter that has the `allows ref struct` clause can't be used as a type argument unless the corresponding type parameter also has the `allows ref struct` clause. This rule is demonstrated in the following example:
+
+```csharp
+public class Allow<T> where T : allows ref struct
+{
+
+}
+
+public class Disallow<T>
+{
+}
+
+public class Example<T> where T : allows ref struct
+{
+    private Allow<T> fieldOne; // Allowed. T is allowed to be a ref struct
+
+    private Disallow<T> fieldTwo; // Error. T is not allowed to be a ref struct
+}
+```
+
+The preceding sample shows that a type argument that might be a `ref struct` type can't be substituted for a type parameter that can't be a `ref struct` type.
 
 ## See also
 

@@ -1,6 +1,6 @@
 ---
 description: "in - C# Reference"
-title: "in - C# Reference"
+title: "in keyword"
 ms.date: 02/06/2018
 f1_keywords: 
   - "in"
@@ -22,4 +22,3 @@ The `in` keyword is used in the following contexts:
 ## See also
 
 - [C# Keywords](index.md)
-- [C# Reference](../index.md)

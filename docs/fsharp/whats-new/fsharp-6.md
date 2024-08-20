@@ -2,6 +2,7 @@
 title: What's new in F# 6 - F# Guide
 description: Get an overview of the new features available in F# 6.
 ms.date: 10/13/2021
+ms.topic: whats-new
 ---
 # What's new in F# 6
 
@@ -62,7 +63,7 @@ F# 6 allows the syntax `expr[idx]` for indexing and slicing collections.
 
 Up to and including F# 5, F# has used `expr.[idx]` as indexing syntax. Allowing the use of `expr[idx]` is based on repeated feedback from those learning F# or seeing F# for the first time that the use of dot-notation indexing comes across as an unnecessary divergence from standard industry practice.
 
-This is not a breaking change because by default, no warnings are emitted on the use of `expr.[idx]`. However, some informational messages that suggest code clarifications are emitted. You can optionally activate further informational messages as well. For example, you can activate an optional informational warning (`/warnon:3566`) to start reporting uses of the `expr.[idx]` notation. For more information, see [Indexer Notation]( https://aka.ms/fsharp-index-notation).
+This is not a breaking change because by default, no warnings are emitted on the use of `expr.[idx]`. However, some informational messages that suggest code clarifications are emitted. You can optionally activate further informational messages as well. For example, you can activate an optional informational warning (`/warnon:3366`) to start reporting uses of the `expr.[idx]` notation. For more information, see [Indexer Notation]( https://aka.ms/fsharp-index-notation).
 
 In new code, we recommend the systematic use of `expr[idx]` as the indexing syntax.
 

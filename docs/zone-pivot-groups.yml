@@ -20,6 +20,14 @@ groups:
     title: Ubuntu
   - id: os-linux-other
     title: Other
+- id: operating-systems-set-three
+  title: Operating System
+  prompt: Choose an operating system
+  pivots:
+  - id: os-windows
+    title: Windows
+  - id: os-macos
+    title: macOS
 - id: unit-testing-framework-set-one
   title: Unit testing framework
   prompt: Choose a unit testing framework
@@ -104,6 +112,14 @@ groups:
       title: Azure CLI
     - id: azure-bicep
       title: Azure Bicep
+- id: azure-interface
+  title: Azure interface
+  prompt: Choose an Azure interface
+  pivots:
+    - id: azure-portal
+      title: Azure Portal
+    - id: azure-cli
+      title: Azure CLI
 - id: code-language
   title: Code language
   prompt: Choose a code language
@@ -112,3 +128,29 @@ groups:
       title: C# and Visual Basic
     - id: lang-fsharp
       title: F#
+- id: ubuntu-install-set-one
+  title: Ubuntu Version
+  prompt: Choose the Ubuntu distribution version
+  pivots:
+    - id: os-linux-ubuntu-2404
+      title: "24.04"
+    - id: os-linux-ubuntu-2310
+      title: "23.10"
+    - id: os-linux-ubuntu-2204
+      title: "22.04"
+    - id: os-linux-ubuntu-2004
+      title: "20.04"
+    - id: os-linux-ubuntu-1804
+      title: "18.04"
+    - id: os-linux-ubuntu-1604
+      title: "16.04"
+    - id: os-linux-ubuntu-other
+      title: "Other"
+- id: openai-library
+  title: OpenAI Library
+  prompt: Choose a host service for OpenAI
+  pivots:
+    - id: openai
+      title: OpenAI
+    - id: azure-openai
+      title: Azure OpenAI

@@ -1,5 +1,5 @@
 ---
-title: "Interface Properties - C# Programming Guide"
+title: "Interface Properties"
 description: Properties can be declared on an interface in C#. This example declares an interface property accessor.
 ms.date: 07/29/2022
 helpviewer_keywords: 

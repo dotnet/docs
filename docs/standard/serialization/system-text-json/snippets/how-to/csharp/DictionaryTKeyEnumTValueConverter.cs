@@ -25,15 +25,16 @@ namespace SystemTextJsonSamples
             Type type,
             JsonSerializerOptions options)
         {
-            Type keyType = type.GetGenericArguments()[0];
-            Type valueType = type.GetGenericArguments()[1];
+            Type[] typeArguments = type.GetGenericArguments();
+            Type keyType = typeArguments[0];
+            Type valueType = typeArguments[1];
 
             JsonConverter converter = (JsonConverter)Activator.CreateInstance(
                 typeof(DictionaryEnumConverterInner<,>).MakeGenericType(
-                    new Type[] { keyType, valueType }),
+                    [keyType, valueType]),
                 BindingFlags.Instance | BindingFlags.Public,
                 binder: null,
-                args: new object[] { options },
+                args: [options],
                 culture: null)!;
 
             return converter;
@@ -112,7 +113,7 @@ namespace SystemTextJsonSamples
 
                 foreach ((TKey key, TValue value) in dictionary)
                 {
-                    var propertyName = key.ToString();
+                    string propertyName = key.ToString();
                     writer.WritePropertyName
                         (options.PropertyNamingPolicy?.ConvertName(propertyName) ?? propertyName);
 

@@ -45,3 +45,5 @@ The following table shows all the values you can use for `DOTNET_DbgMiniDumpType
 |2|`Heap`|A large and relatively comprehensive dump containing module lists, thread lists, all stacks, exception information, handle information, and all memory except for mapped images.|
 |3|`Triage`|Same as `Mini`, but removes personal user information, such as paths and passwords.|
 |4|`Full`|The largest dump containing all memory including the module images.|
+
+Only full dumps are supported by the single-file and Native AOT app models.

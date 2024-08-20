@@ -1,6 +1,6 @@
 ---
 title: ".NET 7 breaking change: Time fields on symbolic links"
-description: Learn about the .NET 7 breaking change in core .NET libraries where updating CreationTime[Utc], LastAccessTime[Utc], and LastWriteTime[Utc] on a symbolic link no longer affects the target .
+description: Learn about the .NET 7 breaking change in core .NET libraries where updating CreationTime[Utc], LastAccessTime[Utc], and LastWriteTime[Utc] on a symbolic link no longer affects the target.
 ms.date: 10/04/2022
 ---
 # Time fields on symbolic links

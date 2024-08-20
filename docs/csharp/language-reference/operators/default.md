@@ -41,7 +41,6 @@ For more information, see the [Default value expressions](~/_csharpstandard/stan
 
 ## See also
 
-- [C# reference](../index.md)
 - [C# operators and expressions](index.md)
 - [Default values of C# types](../builtin-types/default-values.md)
 - [Generics in .NET](../../../standard/generics/index.md)

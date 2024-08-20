@@ -45,7 +45,7 @@ The bash script also reads PowerShell switches, so you can use PowerShell switch
 
 The `dotnet-install` scripts perform a non-admin installation of the .NET SDK, which includes the .NET CLI and the shared runtime. There are two scripts:
 
-* A PowerShell script that works on Windows. For installation instructions, see [Install on Windows](../install/windows.md#install-with-powershell-automation).
+* A PowerShell script that works on Windows. For installation instructions, see [Install on Windows](../install/windows.md#install-with-powershell).
 * A bash script that works on Linux/macOS. For installation instructions, see [Install on Linux](../install/linux-scripted-manual.md#scripted-install) and [Install on macOS](../install/macos.md#install-with-bash-automation).
 
 > [!NOTE]
@@ -85,7 +85,7 @@ By default, the script adds the install location to the $PATH for the current se
 > [!IMPORTANT]
 > The script doesn't add the install location to the user's `PATH` environment variable, you must manually add it.
 
-Before running the script, install the required [dependencies](../install/windows.md#dependencies).
+Before running the script, make sure that your operating system is supported. For more information, see [Install .NET on Windows, Linux, and macOS](../install/index.yml).
 
 You can install a specific version using the `-Version|--version` argument. The version must be specified as a three-part version number, such as `2.1.0`. If the version isn't specified, the script installs the `latest` version.
 
@@ -95,7 +95,7 @@ The install scripts do not update the registry on Windows. They just download th
 
 - **`-Architecture|--architecture <ARCHITECTURE>`**
 
-  Architecture of the .NET binaries to install. Possible values are `<auto>`, `amd64`, `x64`, `x86`, `arm64`, `arm`, `s390x`, and `ppc64le`. The default value is `<auto>`, which represents the currently running OS architecture.
+  Architecture of the .NET binaries to install. Possible values are `<auto>`, `amd64`, `x64`, `x86`, `arm64`, `arm`, `s390x`, `ppc64le`, and `riscv64`. The default value is `<auto>`, which represents the currently running OS architecture.
 
 - **`-AzureFeed|--azure-feed`**
 
@@ -107,8 +107,8 @@ The install scripts do not update the registry on Windows. They just download th
 
   - `STS`: The most recent Standard Term Support release.
   - `LTS`: The most recent Long Term Support release.
-  - Two-part version in A.B format, representing a specific release (for example, `3.1` or `6.0`).
-  - Three-part version in A.B.Cxx format, representing a specific SDK release (for example, 6.0.1xx or 6.0.2xx). Available since the 5.0 release.
+  - Two-part version in A.B format, representing a specific release (for example, `3.1` or `8.0`).
+  - Three-part version in A.B.Cxx format, representing a specific SDK release (for example, 8.0.1xx or 8.0.2xx). Available since the 5.0 release.
 
   The `version` parameter overrides the `channel` parameter when any version other than `latest` is used.
 
@@ -165,7 +165,7 @@ The install scripts do not update the registry on Windows. They just download th
   * `validated`: Builds that have had some internal testing done on them but are not yet released as preview or GA. This quality level is not intended for public use.
   * `preview`: The monthly public releases of the next version of .NET, intended for public use. Not recommended for production use. Intended to allow users to experiment and test the new major version before release.
   * `GA`: The final stable releases of the .NET SDK and Runtime. Intended for public use as well as production support.
-  
+
   The `--quality` option works only in combination with `--channel`, but is not applicable for the `STS` and `LTS` channels and will be ignored if one of those channels is used.
 
   For an SDK installation, use a `channel` value that is in `A.B` or `A.B.Cxx` format.

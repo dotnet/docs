@@ -30,7 +30,7 @@ For more information about the `dotnet workload config` command, see [.NET SDK w
 
 - **`--update-mode [<workload-set>|<manifests>]`**
 
-  Controls whether updates look for workload-set versions or workload versions. To display the current mode, specify this option without an argument. For more information, see [.NET SDK workload sets](dotnet-workload-sets.md).
+  Controls whether updates look for workload set versions or individual manifest versions. To display the current mode, specify this option without an argument. For more information, see [.NET SDK workload sets](dotnet-workload-sets.md).
 
 ## Examples
 

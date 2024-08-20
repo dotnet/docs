@@ -29,8 +29,8 @@ The `dotnet workload install` command installs one or more *optional workloads*.
 
 When the command is in workload-set update mode, workload versions installed:
 
-* Are from the latest workload set or a specified workload-set version.
-* Might not be the latest version available of each individual workload.
+* Are from the latest workload set or a workload set version specified in a global.json or --version option.
+* Might not be the latest version available of each individual workload. For example, the `install` command won't install a newer workload set if you previously used the `--version` flag.
 
 For more information, see [.NET SDK workload sets](dotnet-workload-sets.md). workload-set install mode is available since 8.0.400 SDK.
 

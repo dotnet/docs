@@ -148,7 +148,7 @@ dotnet workload --version
 
 ## Workload-set release cadence
 
-Workload sets are published to nuget.org with each release of the .NET SDK, under the package ID `Microsoft.NET.Workloads.<feature band>`. If, for example, you're using an 8.0.4xx SDK, the best workload set to choose is an 8.0.4xx workload set.
+Workload sets are published to nuget.org with each release of the .NET SDK, under the package ID `Microsoft.NET.Workloads.<feature band>`. If, for example, you're using an 8.0.4xx SDK, the best workload set to choose is the same 8.0.4xx version of workload set.
 
 ## Ignore workload sets
 

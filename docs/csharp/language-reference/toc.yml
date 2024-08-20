@@ -476,7 +476,9 @@ items:
       CS1622, CS1624, CS1625, CS1626, CS1627, CS1629, CS1631, CS1637, CS4013, CS8154, CS8176, CS9237, CS9238, CS9239
   - name: Partial declarations
     href: ./compiler-messages/partial-declarations.md
-    displayName: CS9248, CS9249, CS9250, CS9251, CS9252, CS9253, CS9254, CS9255, CS9256, CS9257
+    displayName: > 
+      CS0750, CS0751, CS0754, CS0763, CS0764, CS8142, CS8663, CS8799, CS8800, CS8818, CS8988, CS9248, CS9249, CS9250,
+      CS9251, CS9252, CS9253, CS9254, CS9255, CS9256, CS9257
   - name: Params modifier
     href: ./compiler-messages/params-arrays.md
     displayName: >
@@ -1334,16 +1336,10 @@ items:
       href: ../misc/cs0745.md
     - name: CS0746
       href: ../misc/cs0746.md
-    - name: CS0750
-      href: ../misc/cs0750.md
-    - name: CS0751
-      href: ../misc/cs0751.md
     - name: CS0752
       href: ../misc/cs0752.md
     - name: CS0753
       href: ../misc/cs0753.md
-    - name: CS0754
-      href: ../misc/cs0754.md
     - name: CS0755
       href: ../misc/cs0755.md
     - name: CS0756
@@ -1356,10 +1352,6 @@ items:
       href: ../misc/cs0761.md
     - name: CS0762
       href: ../misc/cs0762.md
-    - name: CS0763
-      href: ../misc/cs0763.md
-    - name: CS0764
-      href: ../misc/cs0764.md
     - name: CS0766
       href: ../misc/cs0766.md
     - name: CS0811

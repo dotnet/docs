@@ -17,7 +17,7 @@ ms.author: enjieid
 |-------------------------------------|------------------------------------------------------------------------|
 | **Rule ID**                         | MSTEST0036                                                             |
 | **Title**                           | Do not use shadowing inside test class.                                |
-| **Category**                        | Design                                                                  |
+| **Category**                        | Design                                                                 |
 | **Fix is breaking or non-breaking** | Non-breaking                                                           |
 | **Enabled by default**              | Yes                                                                    |
 | **Default severity**                | Warning                                                                   |

@@ -1125,10 +1125,10 @@ Dynamic update provides a mechanism for workflow application developers to updat
     const string connectionString = "Server=.\\SQLEXPRESS;Initial Catalog=WF45GettingStartedTutorial;Integrated Security=SSPI";
     ```
 
-   [!INCLUDE [managed-identities](../includes/managed-identities.md)]
+    [!INCLUDE [managed-identities](../includes/managed-identities.md)]
 
-   > [!NOTE]
-   > Depending on your edition of SQL Server, the connection string server name might be different.
+    > [!NOTE]
+    > Depending on your edition of SQL Server, the connection string server name might be different.
 
 16. Add the following `GetIDs` method to the `Program` class (or `Module1`). This method returns a list of persisted workflow instance ids.
 
@@ -1383,7 +1383,7 @@ Dynamic update provides a mechanism for workflow application developers to updat
 
 20. Right-click **ApplyDynamicUpdate** in **Solution Explorer** and choose **Set as StartUp Project**.
 
-21. Press CTRL+SHIFT+B to build the solution, and then press CTRL+F5 to run the `ApplyDynamicUpdate` application and update the persisted workflow instances. You should see output similar to the following. The version 1.0.0.0 workflows are updated to version 1.5.0.0, while the version 2.0.0.0 workflows are not updated.
+21. Press Ctrl+Shift+B to build the solution, and then press Ctrl+F5 to run the `ApplyDynamicUpdate` application and update the persisted workflow instances. You should see output similar to the following. The version 1.0.0.0 workflows are updated to version 1.5.0.0, while the version 2.0.0.0 workflows are not updated.
 
     **Inspecting: StateMachineNumberGuessWorkflow; Version=1.0.0.0**\
     **Updated to: StateMachineNumberGuessWorkflow; Version=1.5.0.0**\

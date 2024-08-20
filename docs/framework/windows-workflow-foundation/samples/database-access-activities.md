@@ -1,5 +1,5 @@
 ---
-description: "Learn more about database access activities, which allow you to access a database within a workflow to retrieve or modify information.
+description: "Learn more about database access activities, which allow you to access a database within a workflow to retrieve or modify information."
 title: "Database Access Activities"
 ms.date: "03/30/2017"
 ---
@@ -19,7 +19,7 @@ This class performs its work asynchronously (it derives from <xref:System.Activi
 
 The connection information can be configured by setting a provider invariant name (`ProviderName`) and the connection string (`ConnectionString`) or just using a connection string configuration name (`ConfigFileSectionName`) from the application configuration file.
 
-[!INCLUDE [managed-identities](../includes/managed-identities.md)]
+[!INCLUDE [managed-identities](../../includes/managed-identities.md)]
 
 The query to be executed is configured in its `Sql` property and the parameters are passed through the `Parameters` collection.
 
@@ -69,7 +69,7 @@ Public class DbUpdate: AsyncCodeActivity
 | Parameters       | Collection of the parameters of the SQL query.                                                               |
 | AffectedRecords  | Number of records affected by the last operation.                                                            |
 
-[!INCLUDE [managed-identities](../includes/managed-identities.md)]
+[!INCLUDE [managed-identities](../../includes/managed-identities.md)]
 
 ## DbQueryScalar
 
@@ -79,7 +79,7 @@ This class performs its work asynchronously (it derives from <xref:System.Activi
 
 The connection information can be configured by setting a provider invariant name (`ProviderName`) and the connection string (`ConnectionString`) or just using a connection string configuration name (`ConfigFileSectionName`) from the application configuration file.
 
-[!INCLUDE [managed-identities](../includes/managed-identities.md)]
+[!INCLUDE [managed-identities](../../includes/managed-identities.md)]
 
 The query to be executed is configured in its `Sql` property and the parameters are passed through the `Parameters` collection.
 
@@ -127,7 +127,7 @@ public class DbQueryScalar<TResult> : AsyncCodeActivity<TResult>
 | Parameters       | Collection of the parameters of the SQL query.                                                               |
 | Result           | Scalar that is obtained after the query is executed. This argument is of type `TResult`.                     |
 
-[!INCLUDE [managed-identities](../includes/managed-identities.md)]
+[!INCLUDE [managed-identities](../../includes/managed-identities.md)]
 
 ## DbQuery
 
@@ -135,7 +135,7 @@ Executes a query that retrieves a list of objects. After the query is executed, 
 
 The connection information can be configured by setting a provider invariant name (`ProviderName`) and the connection string (`ConnectionString`) or just using a connection string configuration name (`ConfigFileSectionName`) from the application configuration file.
 
-[!INCLUDE [managed-identities](../includes/managed-identities.md)]
+[!INCLUDE [managed-identities](../../includes/managed-identities.md)]
 
 The query to be executed is configured in its `Sql` property and the parameters are passed through the `Parameters` collection.
 
@@ -193,7 +193,7 @@ public class DbQuery<TResult> : AsyncCodeActivity<IList<TResult>> where TResult 
 | MapperFunc       | Mapping function (<xref:System.Activities.ActivityFunc%601><`DbDataReader`, `TResult`>) that takes a record in the `DataReader` obtained as result of executing the query and returns an instance of an object of type `TResult` to be added to the `Result` collection.<br /><br /> In this case, the mapping is done in multiple pulses of execution. This function can be serialized to XAML and authored declaratively (any existing activity can participate in the mapping). |
 | Result           | List of objects obtained as result of executing the query and executing the mapping function for each record in the `DataReader`. |
 
-[!INCLUDE [managed-identities](../includes/managed-identities.md)]
+[!INCLUDE [managed-identities](../../includes/managed-identities.md)]
 
 ## DbQueryDataSet
 
@@ -201,7 +201,7 @@ Executes a query that returns a <xref:System.Data.DataSet>. This class performs 
 
 The connection information can be configured by setting a provider invariant name (`ProviderName`) and the connection string (`ConnectionString`) or just using a connection string configuration name (`ConfigFileSectionName`) from the application configuration file.
 
-[!INCLUDE [managed-identities](../includes/managed-identities.md)]
+[!INCLUDE [managed-identities](../../includes/managed-identities.md)]
 
 The query to be executed is configured in its `Sql` property and the parameters are passed through the `Parameters` collection.
 
@@ -249,7 +249,7 @@ public class DbQueryDataSet : AsyncCodeActivity<DataSet>
 | Parameters       | Collection of the parameters of the SQL query.                                                               |
 | Result           | <xref:System.Data.DataSet> that is obtained after the query is executed.                                     |
 
-[!INCLUDE [managed-identities](../includes/managed-identities.md)]
+[!INCLUDE [managed-identities](../../includes/managed-identities.md)]
 
 ## Configure connection information
 
@@ -288,7 +288,7 @@ All DbActivities share the same configuration parameters. They can be configured
   };
   ```
 
-[!INCLUDE [managed-identities](../includes/managed-identities.md)]
+[!INCLUDE [managed-identities](../../includes/managed-identities.md)]
 
 ## Run this sample
 

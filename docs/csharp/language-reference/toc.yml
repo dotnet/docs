@@ -474,6 +474,9 @@ items:
     displayName: >
       yield return, yield break,
       CS1622, CS1624, CS1625, CS1626, CS1627, CS1629, CS1631, CS1637, CS4013, CS8154, CS8176, CS9237, CS9238, CS9239
+  - name: Partial declarations
+    href: ./compiler-messages/partial-declarations.md
+    displayName: CS9248, CS9249, CS9250, CS9251, CS9252, CS9253, CS9254, CS9255, CS9256, CS9257
   - name: Params modifier
     href: ./compiler-messages/params-arrays.md
     displayName: >

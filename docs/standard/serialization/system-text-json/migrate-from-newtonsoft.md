@@ -287,7 +287,7 @@ public class ExampleClass
 The JSON value could not be converted to System.String.
 ```
 
-## Assisstance from GitHub Copilot in Visual Studio
+## Assistance from GitHub Copilot in Visual Studio
 
 If you're using [Visual Studio 2022 version 17.8 or later](/visualstudio/releases/2022/release-notes), you can try the AI-driven [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states) to help migrate your `Newtonsoft.Json` code to use `System.Text.Json`. Submit your question and the code to convert as a prompt in the copilot chat window, as in the following example.
 

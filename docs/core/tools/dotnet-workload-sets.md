@@ -108,9 +108,9 @@ Create a `global.json` file to specify the workload set version for a repository
 
 With the current directory in the same repository and the CLI in workload set update mode, the `install`, `update`, and `restore` commands install workloads for the specified workload set version. If you don't have a global.json file, and you're in workload set update mode, the `restore` command installs the workload set version that was established when you switched from manifests update mode to workload sets update mode.
 If you're using SDK 9, you defaulted to workload set update mode, and you might not have established a workload-set version. In that case, `restore` installs the latest workload set available on the configured feeds.
-<!--todo:if you're in manifests update mode, you stay in that mode and it doesn't seem to do a workload set update, i.e., it seems to ignore global.json(?)-->
 
-If you specify the workload set version in global.json, you can't use the `--version` option to specify the workload set version. To use the `--version` option in that case, run the command outside of the path containing the global.json file.
+If you have a workload-set version in the global.json file, the workload commands are in workload-set mode even if you haven't run the `config` command or used `--version`. The global.json file overrides those.
+To use the `--version` option in that case, run the command outside of the path containing the global.json file.
 
 If you don't specify the workload set version in global.json, you can use the `--version` option with the `restore` comand. In that case, the `restore` command selects workload set update mode before it restores workloads to the specified workload set version.
 

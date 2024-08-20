@@ -20,8 +20,6 @@ The *workload sets* feature provides a version number that represents a group of
 * You can ensure that everyone on your team is always working on the same workload versions.
 * You don't have to use a rollback file to specify what workload version you want to be on.
 
-<!--Workload sets are published to nuget.org with each release of the .NET SDK, under the package ID `Microsoft.NET.Workloads.<feature band>`-->
-
 Here are some ways you can use workload sets:
 
 * "Pin" the `install` command to a specific workload-set version.
@@ -147,6 +145,10 @@ dotnet workload --version
 ```output
 9.0.100-manifests.cf958b56
 ```
+
+## Workload-set release cadence
+
+Workload sets are published to nuget.org with each release of the .NET SDK, under the package ID `Microsoft.NET.Workloads.<feature band>`. If, for example, you're using an 8.0.4xx SDK, the best workload set to choose is an 8.0.4xx workload set.
 
 ## Ignore workload sets
 

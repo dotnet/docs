@@ -31,7 +31,7 @@ Most of this article is about how to use the <xref:System.Text.Json.JsonSerializ
 
 In Visual Basic, you can't use <xref:System.Text.Json.Utf8JsonReader>, which also means you can't write custom converters. Most of the workarounds presented here require that you write custom converters. You can write a custom converter in C# and register it in a Visual Basic project. For more information, see [Visual Basic support](visual-basic-support.md).
 
-## Assistance from GitHub Copilot
+## Use GitHub Copilot to migrate from Newtonsoft.Json
 
 You can get coding help from GitHub Copilot to convert your code right within your IDE.
 

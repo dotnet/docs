@@ -58,68 +58,68 @@ To use WAM and the default system account in your app:
 
 1. Get the handle of the parent window to which the WAM account picker window should be docked.
 
-# [WinForms](#tab/winforms)
-
-```csharp
-// Form1.cs
-private void button1_Click(object sender, EventArgs e)
-{
-    var hWnd = this.Handle;
-}
-```
-
-### [WPF](#tab/wpf)
-
-```csharp
-// MainWindow.xaml.cs
-private void Button_Click(object sender, RoutedEventArgs e)
-{
-    var wih = new System.Windows.Interop.WindowInteropHelper(this);
-    var windowHandle = wih.Handle;
-}
-```
-
-### [WinUI 3](#tab/winui3)
-
-```csharp
-// MainWindow.xaml.cs
-private async void myButton_Click(object sender, RoutedEventArgs e)
-{
-    var windowHandle = WinRT.Interop.WindowNative.GetWindowHandle(this);
-}
-```
-
-### [Console](#tab/console)
-
-```csharp
-// Program.cs
-[DllImport("user32.dll", ExactSpelling = true)]
-static extern IntPtr GetAncestor(IntPtr hwnd, GetAncestorFlags flags);
-
-[DllImport("kernel32.dll")]
-static extern IntPtr GetConsoleWindow();
-
-IntPtr GetConsoleOrTerminalWindow()
-{
-    IntPtr consoleHandle = GetConsoleWindow();
-    IntPtr handle = GetAncestor(consoleHandle, GetAncestorFlags.GetRootOwner );
+    ### [WinForms](#tab/winforms)
     
-    return handle;
-}
-
-enum GetAncestorFlags
-{   
-    GetParent = 1,
-    GetRoot = 2,
-    GetRootOwner = 3
-}
-```
-
----
-
-> [!NOTE]
-> Visit the [Parent window handles](/entra/msal/dotnet/acquiring-tokens/desktop-mobile/wam#parent-window-handles) and [Retrieve a window handle](/windows/apps/develop/ui-input/retrieve-hwnd) articles for more information about working with window handle context.
-
+    ```csharp
+    // Form1.cs
+    private void button1_Click(object sender, EventArgs e)
+    {
+        var hWnd = this.Handle;
+    }
+    ```
+    
+    ### [WPF](#tab/wpf)
+    
+    ```csharp
+    // MainWindow.xaml.cs
+    private void Button_Click(object sender, RoutedEventArgs e)
+    {
+        var wih = new System.Windows.Interop.WindowInteropHelper(this);
+        var windowHandle = wih.Handle;
+    }
+    ```
+    
+    ### [WinUI 3](#tab/winui3)
+    
+    ```csharp
+    // MainWindow.xaml.cs
+    private async void myButton_Click(object sender, RoutedEventArgs e)
+    {
+        var windowHandle = WinRT.Interop.WindowNative.GetWindowHandle(this);
+    }
+    ```
+    
+    ### [Console](#tab/console)
+    
+    ```csharp
+    // Program.cs
+    [DllImport("user32.dll", ExactSpelling = true)]
+    static extern IntPtr GetAncestor(IntPtr hwnd, GetAncestorFlags flags);
+    
+    [DllImport("kernel32.dll")]
+    static extern IntPtr GetConsoleWindow();
+    
+    IntPtr GetConsoleOrTerminalWindow()
+    {
+        IntPtr consoleHandle = GetConsoleWindow();
+        IntPtr handle = GetAncestor(consoleHandle, GetAncestorFlags.GetRootOwner );
+        
+        return handle;
+    }
+    
+    enum GetAncestorFlags
+    {   
+        GetParent = 1,
+        GetRoot = 2,
+        GetRootOwner = 3
+    }
+    ```
+    
+    ---
+    
+    > [!NOTE]
+    > Visit the [Parent window handles](/entra/msal/dotnet/acquiring-tokens/desktop-mobile/wam#parent-window-handles) and [Retrieve a window handle](/windows/apps/develop/ui-input/retrieve-hwnd) articles for more information about working with window handle context.
+    
 1. Create an instance of `InteractiveBrowserCredential` in your app. The credential requires the handle of the parent window that's requesting the authentication flow. On Windows, the handle is an integer value that uniquely identifies the window. Optionally, set the `UseDefaultBrokerAccount` option to `true` to enable silent brokered authentication, which will automatically select the default account.
 
     ```csharp

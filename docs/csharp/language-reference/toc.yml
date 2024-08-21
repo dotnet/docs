@@ -477,8 +477,9 @@ items:
   - name: Partial declarations
     href: ./compiler-messages/partial-declarations.md
     displayName: > 
-      CS0750, CS0751, CS0754, CS0763, CS0764, CS8142, CS8663, CS8799, CS8800, CS8818, CS8988, CS9248, CS9249, CS9250,
-      CS9251, CS9252, CS9253, CS9254, CS9255, CS9256, CS9257
+      CS0260, CS0261, CS0262, CS0263, CS0264, CS0265, CS0267, CS0282, CS0501, CS0750, CS0751, CS0754, CS0755, CS0756, CS0757,
+      CS0759, CS0761, CS0762, CS0763, CS0764, CS1067, CS8142, CS8663, CS8795, CS8796, CS8797, CS8798, CS8799, CS8800, CS8817,
+      CS8818, CS8863, CS8988, CS9248, CS9249, CS9250, CS9251, CS9252, CS9253, CS9254, CS9255, CS9256, CS9257
   - name: Params modifier
     href: ./compiler-messages/params-arrays.md
     displayName: >
@@ -870,22 +871,8 @@ items:
       href: ../misc/cs0254.md
     - name: CS0255
       href: ../misc/cs0255.md
-    - name: CS0260
-      href: ./compiler-messages/cs0260.md
-    - name: CS0261
-      href: ../misc/cs0261.md
-    - name: CS0262
-      href: ../misc/cs0262.md
-    - name: CS0263
-      href: ../misc/cs0263.md
-    - name: CS0264
-      href: ../misc/cs0264.md
-    - name: CS0265
-      href: ../misc/cs0265.md
     - name: CS0266
       href: ./compiler-messages/cs0266.md
-    - name: CS0267
-      href: ../misc/cs0267.md
     - name: CS0268
       href: ../misc/cs0268.md
     - name: CS0269
@@ -1032,8 +1019,6 @@ items:
       href: ../misc/cs0473.md
     - name: CS0500
       href: ../misc/cs0500.md
-    - name: CS0501
-      href: ../misc/cs0501.md
     - name: CS0502
       href: ../misc/cs0502.md
     - name: CS0503
@@ -1340,18 +1325,8 @@ items:
       href: ../misc/cs0752.md
     - name: CS0753
       href: ../misc/cs0753.md
-    - name: CS0755
-      href: ../misc/cs0755.md
-    - name: CS0756
-      href: ../misc/cs0756.md
     - name: CS0757
       href: ../misc/cs0757.md
-    - name: CS0759
-      href: ../misc/cs0759.md
-    - name: CS0761
-      href: ../misc/cs0761.md
-    - name: CS0762
-      href: ../misc/cs0762.md
     - name: CS0766
       href: ../misc/cs0766.md
     - name: CS0811
@@ -1476,8 +1451,6 @@ items:
       href: ./compiler-messages/cs1063.md
     - name: CS1065
       href: ./compiler-messages/cs1065.md
-    - name: CS1067
-      href: ./compiler-messages/cs1067.md
     - name: CS1100
       href: ../misc/cs1100.md
     - name: CS1101
@@ -2008,8 +1981,6 @@ items:
       href: ./compiler-messages/cs8812.md
     - name: CS8515
       href: ./compiler-messages/cs8515.md
-    - name: CS8817
-      href: ./compiler-messages/CS8817.md
     - name: CS9043
       href: ./compiler-messages/cs9043.md
   - name: Level 1 warning messages
@@ -2262,8 +2233,6 @@ items:
       href: ../misc/cs0169.md
     - name: CS0219
       href: ../misc/cs0219.md
-    - name: CS0282
-      href: ../misc/cs0282.md
     - name: CS0414
       href: ../misc/cs0414.md
     - name: CS0419

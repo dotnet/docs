@@ -133,6 +133,8 @@ foreach (var m in type.GetMethods())
 }
 ```
 
+#### Requirements on parameters, generic parameters, and fields
+
 In the previous example, the real problem is `Console.ReadLine()`. Because *any* type could be read, the trimmer has no way to know if you need methods on `System.DateTime` or `System.Guid` or any other type. On the other hand, the following code would be fine:
 
 ```csharp
@@ -218,9 +220,40 @@ void Method3(
 
 Now there are no warnings because the trimmer knows which members might be accessed via runtime reflection (public methods) and on which types (`System.DateTime`), and it preserves them. It's best practice to add annotations so the trimmer knows what to preserve.
 
-Warnings produced by these extra requirements are automatically suppressed if the affected code is in a method with `RequiresUnreferencedCode`.
+#### Fulfilling a requirement with a value returned from Object.GetType()
 
-Unlike `RequiresUnreferencedCode`, which simply reports the incompatibility, adding `DynamicallyAccessedMembers` makes the code compatible with trimming.
+Another problematic pattern for the trimmer is to call `GetType()` on an object and use reflection on the returned `System.Type` object.
+
+```csharp
+void ReflectOverInstanceOfType(MyClass c)
+{
+    Type t = c.GetType();
+    t.GetMethods(); // IL2075: 'this' argument does not satisfy 'DynamicallyAccessedMemberTypes.PublicMethods' in call to 'System.Type.GetMethods()'. The return value of method 'System.Object.GetType()' does not have matching annotations.
+}
+```
+
+The trimmer warns in this scenario because it can't guarantee that the public methods accessible from `MyClass` will be kept. One way to silence this warning is to add `[DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicMethods)]` to the definition of `MyClass`.
+
+```csharp
+[DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicMethods)]
+class MyClass
+{
+    public void MyMethod()
+    {
+        ...
+    }
+}
+```
+
+This will inform the trimmer that code in the application might reflect over `MyClass`. The trimmer will keep all the `DynamicallyAccessedMemberTypes` declared on `MyClass` (in this case public methods), as well as all `DynamicallyAccessedMemberTypes` on all accessible members on base classes, but not on derived classes.
+
+#### Considerations when using DynamicallyAccessedMembersAttribute
+
+Unlike `RequiresUnreferencedCode`, which simply reports the incompatibility, adding `DynamicallyAccessedMembersAttribute` makes the code compatible with trimming.
+
+Using `DynamicallyAccessedMembersAttribute` tells the trimmer to unconditionally keep all the specified `DynamicallyAccessedMemberTypes`. This means it can lead to much larger applications than necessary if not used carefully. Be sure to use only the minimum `DynamicallyAccessedMemberTypes` necessary, and avoid using <xref:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.All> whenever possible.
+
+Warnings produced by the extra requirements created by `DynamicallyAccessedMembersAttribute` are automatically suppressed if the affected code is in a method with `RequiresUnreferencedCode`.
 
 ### Suppressing trimmer warnings
 

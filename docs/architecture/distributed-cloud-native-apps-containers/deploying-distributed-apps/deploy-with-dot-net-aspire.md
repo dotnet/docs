@@ -9,7 +9,7 @@ ms.date: 06/12/2024
 
 [!INCLUDE [download-alert](../includes/download-alert.md)]
 
-Deploying distributed applications is a complex process that involves various steps and considerations to ensure that the application runs smoothly across different environments. The introduction of .NET Aspire has streamlined this process significantly, offering a more efficient and reliable way to deploy distributed apps. However, it's also possible to deploy these applications without .NET Aspire, and you should continue to use conventional methods for existing applications because the configuration and testing of deployment has already been done.
+Deploying distributed applications is a complex process that involves various steps and considerations to ensure that the application runs smoothly across different environments. The introduction of .NET Aspire has streamlined this process significantly, offering a more efficient and reliable way to deploy cloud-native apps. However, it's also possible to deploy these applications without .NET Aspire, and you should continue to use conventional methods for existing applications because the configuration and testing of deployment has already been done.
 
 ## Without .NET Aspire
 
@@ -21,11 +21,11 @@ For existing applications you should continue to use conventional methods becaus
 
 ## With .NET Aspire
 
-.NET Aspire simplifies the deployment of distributed apps by providing a cloud-agnostic framework that supports various platforms. It offers a deployment manifest that describes the structure of applications and the necessary properties for deployment, such as environment variables⁶. This manifest enables deployment tools from Microsoft and other cloud providers to understand and manage the application effectively.
+.NET Aspire simplifies the deployment of distributed apps by providing a cloud-agnostic framework that supports various platforms. It offers a deployment manifest that describes the structure of applications and the necessary properties for deployment, such as environment variables. This manifest enables deployment tools from Microsoft and other cloud providers to understand and manage the application effectively.
 
-For instance, deploying to Azure Container Apps is made easier with .NET Aspire. The Azure Developer CLI (AZD) has been extended to support .NET Aspire applications, allowing developers to provision and deploy resources on Azure with ease. Additionally, .NET Aspire apps are designed to emit telemetry using OpenTelemetry, which can be directed to Azure Monitor or Application Insights for monitoring and analysis.
+For instance, deploying to Azure Container Apps is made easier with .NET Aspire. The Azure Developer CLI (`azd.exe`) has been extended to support .NET Aspire applications, allowing developers to provision and deploy resources on Azure with ease. Additionally, .NET Aspire apps are designed to emit telemetry using OpenTelemetry, which can be directed to Azure Monitor or Application Insights for monitoring and analysis.
 
-When deploying to Kubernetes, .NET Aspire applications require mapping the JSON manifest to a Kubernetes YML manifest file. This can be done using the Aspir8 tool, which generates the necessary Kubernetes manifests based on the .NET Aspire app host manifest.
+When deploying to Kubernetes, .NET Aspire applications require mapping the JSON manifest to a Kubernetes YML manifest file. This can be done using the **Aspir8** tool, which generates the necessary Kubernetes manifests based on the .NET Aspire app host manifest.
 
 In conclusion, while .NET Aspire offers a more automated and error-free deployment experience, it is still possible to deploy distributed applications without it. The choice between using .NET Aspire or not depends on the specific needs of the project, the expertise of the development team, and the desired level of control over the deployment process.
 

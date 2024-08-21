@@ -245,7 +245,7 @@ class MyClass
 }
 ```
 
-This will inform the trimmer that code in the application might reflect over `MyClass`. The trimmer will keep all the `DynamicallyAccessedMemberTypes` declared on `MyClass` (in this case public methods), as well as all `DynamicallyAccessedMemberTypes` on all accessible members on base classes, but not on derived classes.
+This will inform the trimmer that code in the application might reflect over `MyClass`. The trimmer will keep all the `DynamicallyAccessedMemberTypes` declared on `MyClass` (in this case public methods) and on any derived classes.
 
 #### Considerations when using DynamicallyAccessedMembersAttribute
 

@@ -20,16 +20,16 @@ ADO.NET 2.0 introduced expanded support for performance counters that includes s
 | `HardDisconnectsPerSecond` | The number of disconnects per second that are being made to a database server. |
 |`NumberOfActiveConnectionPoolGroups`|The number of unique connection pool groups that are active. This counter is controlled by the number of unique connection strings that are found in the AppDomain.|
 |`NumberOfActiveConnectionPools`|The total number of connection pools.|
-|`NumberOfActiveConnections`|The number of active connections that are currently in use. **Note:**  This performance counter is not enabled by default. To enable this performance counter, see [Activating Off-By-Default Counters](#ActivatingOffByDefault).|
-|`NumberOfFreeConnections`|The number of connections available for use in the connection pools. **Note:**  This performance counter is not enabled by default. To enable this performance counter, see [Activating Off-By-Default Counters](#ActivatingOffByDefault).|
+|`NumberOfActiveConnections`|The number of active connections that are currently in use. **Note:**  This performance counter is not enabled by default. To enable this performance counter, see [Activating Off-By-Default Counters](#activating-off-by-default-counters).|
+|`NumberOfFreeConnections`|The number of connections available for use in the connection pools. **Note:**  This performance counter is not enabled by default. To enable this performance counter, see [Activating Off-By-Default Counters](#activating-off-by-default-counters).|
 |`NumberOfInactiveConnectionPoolGroups`|The number of unique connection pool groups that are marked for pruning. This counter is controlled by the number of unique connection strings that are found in the AppDomain.|
 |`NumberOfInactiveConnectionPools`|The number of inactive connection pools that have not had any recent activity and are waiting to be disposed.|
 |`NumberOfNonPooledConnections`|The number of active connections that are not pooled.|
 |`NumberOfPooledConnections`|The number of active connections that are being managed by the connection pooling infrastructure.|
 |`NumberOfReclaimedConnections`|The number of connections that have been reclaimed through garbage collection where `Close` or `Dispose` was not called by the application. Not explicitly closing or disposing connections hurts performance.|
 |`NumberOfStasisConnections`|The number of connections currently awaiting completion of an action and which are therefore unavailable for use by your application.|
-|`SoftConnectsPerSecond`|The number of active connections being pulled from the connection pool. **Note:**  This performance counter is not enabled by default. To enable this performance counter, see [Activating Off-By-Default Counters](#ActivatingOffByDefault).|
-|`SoftDisconnectsPerSecond`|The number of active connections that are being returned to the connection pool. **Note:**  This performance counter is not enabled by default. To enable this performance counter, see [Activating Off-By-Default Counters](#ActivatingOffByDefault).|
+|`SoftConnectsPerSecond`|The number of active connections being pulled from the connection pool. **Note:**  This performance counter is not enabled by default. To enable this performance counter, see [Activating Off-By-Default Counters](#activating-off-by-default-counters).|
+|`SoftDisconnectsPerSecond`|The number of active connections that are being returned to the connection pool. **Note:**  This performance counter is not enabled by default. To enable this performance counter, see [Activating Off-By-Default Counters](#activating-off-by-default-counters).|
 
 ### Connection Pool Groups and Connection Pools
 

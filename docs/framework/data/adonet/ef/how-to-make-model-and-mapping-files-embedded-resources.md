@@ -29,4 +29,3 @@ Entity Framework enables you to deploy model and mapping files as embedded resou
 ## See also
 
 - [Modeling and Mapping](modeling-and-mapping.md)
-- [How to: Build an EntityConnection Connection String](how-to-build-an-entityconnection-connection-string.md)

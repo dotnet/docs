@@ -58,16 +58,16 @@ To use WAM and the default system account in your app:
 
 1. Get the handle of the parent window to which the WAM account picker window should be docked.
 
-> [!NOTE]
-> This example shows how to get the window handle for a Windows Forms app. Visit the [Parent window handles](/entra/msal/dotnet/acquiring-tokens/desktop-mobile/wam#parent-window-handles) and [Retrieve a window handle](/windows/apps/develop/ui-input/retrieve-hwnd) articles for more information about retrieving window context for other types of apps.
+    ```csharp
+    // Form1.cs
+    private async void testBrokeredAuth_Click(object sender, EventArgs e)
+    {
+        IntPtr windowHandle = this.Handle;
+    }
+    ```
 
-```csharp
-// Form1.cs
-private async void testBrokeredAuth_Click(object sender, EventArgs e)
-{
-    IntPtr windowHandle = this.Handle;
-}
-```
+    > [!NOTE]
+    > This example shows how to get the window handle for a Windows Forms app. Visit the [Parent window handles](/entra/msal/dotnet/acquiring-tokens/desktop-mobile/wam#parent-window-handles) and [Retrieve a window handle](/windows/apps/develop/ui-input/retrieve-hwnd) articles for more information about retrieving window context for other types of apps.
 
 1. Create an instance of `InteractiveBrowserCredential` in your app. The credential requires the handle of the parent window that's requesting the authentication flow. On Windows, the handle is an integer value that uniquely identifies the window. Optionally, set the `UseDefaultBrokerAccount` option to `true` to enable silent brokered authentication, which will automatically select the default account.
 

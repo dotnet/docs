@@ -833,6 +833,11 @@ API Controller with or without read/write actions.
 - **`--sdk-version <VERSION_NUMBER>`**
 
   Specifies the version of the .NET SDK to use in the *global.json* file.
+  
+- **`--roll-forward <ROLL_FORWARD_POLICY>`**
+
+  The roll-forward policy to use when selecting an SDK version, either as a fallback when a specific SDK version is missing or as a directive to use a later version.
+  For more information, see [global-json](global-json.md#rollforward).
 
 ## `editorconfig`
 

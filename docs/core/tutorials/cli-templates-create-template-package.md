@@ -232,7 +232,7 @@ working
 
 The _content_ folder has two folders: _extensions_ and _consoleasync_.
 
-In your terminal, from the _working_ folder, run the `dotnet pack` command. This command builds the project and creates a NuGet package in the _working\bin\Debug_ folder, as indicated by the following output:
+In your terminal, from the _working_ folder, run the `dotnet pack` command. This command builds the project and creates a NuGet package in the _working\bin\Release_ folder, as indicated by the following output:
 
 ```output
 MSBuild version 17.8.0-preview-23367-03+0ff2a83e9 for .NET

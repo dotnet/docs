@@ -172,7 +172,7 @@ To install additional .NET SDK versions on your machine, visit the [Download .NE
 You can create a new *global.json* file in the current directory by executing the [dotnet new](dotnet-new.md) command, similar to the following example:
 
 ```dotnetcli
-dotnet new globaljson --sdk-version 8.0.302
+dotnet new globaljson --sdk-version 8.0.302 --roll-forward latestFeature
 ```
 
 ## Matching rules

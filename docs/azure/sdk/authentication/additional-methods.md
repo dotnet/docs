@@ -36,6 +36,109 @@ foreach (var blobItem in client.GetBlobContainers())
 
 For more exact control, such as setting redirect URIs, you can supply specific arguments to `InteractiveBrowserCredential` such as `redirect_uri`.
 
+### Authenticate the default system account via WAM
+
+Many people always sign in to Windows with the same user account and, therefore, only ever want to authenticate using that account. Web Account Manager (WAM) is a broker service that allows apps to request OAuth tokens from identity providers, such as Microsoft Entra ID, in a seamless fashion. With it, identity providers can natively plug into the OS and provide the service to other apps to streamline the login process. WAM also supports a silent login process that automatically uses a default account so the user does not have to repeatedly select it.
+
+To enable sign-in using WAM and the default system account:
+
+1. Install the following NuGet packages:
+
+    ```dotnetcli
+    dotnet add package Azure.Identity
+    dotnet add package Azure.Identity.Broker
+    ```
+
+2. Get the handle of the parent window to which the WAM account picker window should be docked:
+
+    ### [WinForms](#tab/winforms)
+
+    ```csharp
+    private async void testBrokeredAuth_Click(object sender, EventArgs e)
+    {
+        IntPtr windowHandle = this.Handle;
+    
+        // code omitted for brevity
+    }
+    ```
+
+    ### [WPF](#tab/wpf)
+
+    ```csharp
+    // MainWindow.xaml.cs
+    private void Button_Click(object sender, RoutedEventArgs e)
+    {
+        var wih = new System.Windows.Interop.WindowInteropHelper(this);
+        var windowHandle = wih.Handle;
+    }
+    ```
+
+    ### [WinUI 3](#tab/winui3)
+
+    ```csharp
+    // MainWindow.xaml.cs
+    private async void myButton_Click(object sender, RoutedEventArgs e)
+    {
+        // Retrieve the window handle (HWND) of the current WinUI 3 window.
+        var windowHandle = WinRT.Interop.WindowNative.GetWindowHandle(this);
+    }
+    ```
+
+    ### [Console](#tab/console)
+
+    ```csharp
+    [DllImport("user32.dll", ExactSpelling = true)]
+    static extern IntPtr GetAncestor(IntPtr hwnd, GetAncestorFlags flags);
+    
+    [DllImport("kernel32.dll")]
+    static extern IntPtr GetConsoleWindow();
+    
+    // This is your window handle!
+    IntPtr GetConsoleOrTerminalWindow()
+    {
+        IntPtr consoleHandle = GetConsoleWindow();
+        IntPtr handle = GetAncestor(consoleHandle, GetAncestorFlags.GetRootOwner );
+        
+        return handle;
+    }
+
+    enum GetAncestorFlags
+    {   
+        GetParent = 1,
+        GetRoot = 2,
+        /// <summary>
+        /// Retrieves the owned root window by walking the chain of parent and owner windows returned by GetParent.
+        /// </summary>
+        GetRootOwner = 3
+    }
+    ```
+
+    ---
+
+    > [!NOTE]
+    > Visit the [Parent window handles](/entra/msal/dotnet/acquiring-tokens/desktop-mobile/wam#parent-window-handles) and [Retrieve a window handle](/windows/apps/develop/ui-input/retrieve-hwnd) articles for more information about retrieving the parent window handle.
+
+3. Create a broker-enabled instance of `InteractiveBrowserCredential` in your app. The credential requires the handle of the parent window that's requesting the authentication flow. On Windows, the handle is an integer value that uniquely identifies the window.
+
+    The following example shows how to enable sign-in with the default system account:
+
+    ```csharp
+    using Azure.Identity;
+    using Azure.Identity.Broker;
+    
+    // code omitted for brevity
+    
+    // Get the window handle using the selected approach in step 2
+    IntPtr windowHandle = GetForegroundWindow(); 
+    InteractiveBrowserCredential credential = new(
+        new InteractiveBrowserCredentialBrokerOptions(windowHandle)
+    );
+    ```
+
+4. Use the broker-enabled `InteractiveBrowserCredential` instance.
+
+Once you opt into this behavior, the credential type attempts to sign in by asking the underlying Microsoft Authentication Library (MSAL) to perform the sign-in for the default system account. If the sign-in fails, the credential type falls back to displaying the account picker dialog, from which the user can select the appropriate account.
+
 ## Device code authentication
 
 This method interactively authenticates a user on devices with limited UI (typically devices without a keyboard):

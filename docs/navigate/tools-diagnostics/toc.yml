@@ -359,7 +359,15 @@ items:
     - name: ILogger Logging
       href: ../../core/extensions/logging.md
     - name: Observability with OpenTelemetry
-      href: ../../core/diagnostics/observability-with-otel.md
+      items:
+      - name: Overview
+        href: ../../core/diagnostics/observability-with-otel.md
+      - name: Example: Use OpenTelemetry with OTLP and the standalone Aspire Dashboard
+        href: ../../core/diagnostics/observability-OTLP-example.md
+      - name: Example: Use OpenTelemetry with Prometheus, Grafana, and Jaeger
+        href: ../../core/diagnostics/observability-PrGrJa-example.md
+      - name:  Example: Use OpenTelemetry with Azure Monitor and Application Insights
+        href: ../../core/diagnostics/observability-applicationinsights.md
     - name: Resource monitoring
       href: ../../core/diagnostics/diagnostic-resource-monitoring.md
       displayName: resource monitoring,

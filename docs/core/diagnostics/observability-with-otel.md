@@ -104,9 +104,9 @@ The Aspire Dashboard is designed to bring telemetry observation to the local deb
 
 For more details on Aspire see:
 
-- [Aspire Overview](https://learn.microsoft.com/dotnet/aspire/get-started/aspire-overview)
-- [Telemetry in Aspire](https://learn.microsoft.com/dotnet/aspire/fundamentals/telemetry)
-- [Aspire Dashboard](https://learn.microsoft.com/dotnet/aspire/fundamentals/dashboard/explore)
+- [Aspire Overview](/dotnet/aspire/get-started/aspire-overview)
+- [Telemetry in Aspire](/dotnet/aspire/fundamentals/telemetry)
+- [Aspire Dashboard](/dotnet/aspire/fundamentals/dashboard/explore)
 
 ### Reusing Service Defaults project without Aspire Orchestration
 

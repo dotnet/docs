@@ -11,7 +11,7 @@ This is one of a series of examples to illustrate [.NET observability with OpenT
 
 In addition to being a standard part of .NET Aspire, the Aspire Dashboard is available as a [standalone docker container](/dotnet/aspire/fundamentals/dashboard/standalone?tabs=powershell), which provides an OTLP endpoint telemetry can be sent to, and it will visualize the logs, metrics and traces. Using the dashboard in this way has no dependency on Aspire, it will visualize telemetry from any application sending it telemetry via OTLP. It works equally well for applications written in Java, GoLang, Python etc. provided that they can send their telemetry to an OTLP endpoint.
 
-Using the Aspire Dashboard has less configuration and moving than using Open Source solutions such as [Prometheus, Grafana and Jaeger](./observability-PrGrJa-example.md), but unlike those toolsthe Aspire Dashboard is intended as a developer visualization tool, and not for production monitoring like those tools.
+Using the Aspire Dashboard has less configuration and moving than using Open Source solutions such as [Prometheus, Grafana and Jaeger](./observability-PrGrJa-example.md), but unlike those tools, the Aspire Dashboard is intended as a developer visualization tool, and not for production monitoring.
 
 ## 1. Create the project
 
@@ -23,18 +23,22 @@ dotnet new web
 
 ## 2. Add metrics and activity definitions
 
-The following code defines a new metric (`greetings.count`) for the number of times the API has been called, and a new activity source (`OtPrGrYa.Example`).
+The following code defines a new metric (`greetings.count`) for the number of times the API has been called, and a new activity source (`Otel.Example`).
 
 :::code language="csharp" source="snippets/OTLP-Example/csharp/Program.cs" id="Snippet_CustomMetrics":::
 
 ## 3. Create an API endpoint
 
+Insert the following between `builder.Build();` and `app.Run()`
+
 :::code language="csharp" source="snippets/OTLP-Example/csharp/Program.cs" id="Snippet_MapGet":::
+
+Insert the following function at the bottom of the file:
 
 :::code language="csharp" source="snippets/OTLP-Example/csharp/Program.cs" id="Snippet_SendGreeting":::
 
 > [!Note]
-> The API definition does not use anything specific to OpenTelemetry. It uses the .NET APIs for observability.
+> The endpoint definition does not use anything specific to OpenTelemetry. It uses the .NET APIs for observability.
 
 ## 4. Reference the OpenTelemetry packages
 
@@ -53,6 +57,8 @@ Use the NuGet Package Manager or command line to add the following NuGet package
 > Use the latest versions, as the OTel APIs are constantly evolving.
 
 ## 5. Configure OpenTelemetry with the correct providers
+
+Insert the following code before `builder.Build();`:
 
 :::code language="csharp" source="snippets/OTLP-Example/csharp/Program.cs" id="Snippet_OTEL":::
 
@@ -75,7 +81,8 @@ The OTLP exporter can be configured via APIs in code, but its more common to con
 
 You can add additional environment variables for the [.NET OTLP Exporter](https://github.com/open-telemetry/opentelemetry-dotnet/tree/main/src/OpenTelemetry.Exporter.OpenTelemetryProtocol#exporter-configuration) or common OTel variables such as `OTEL_RESOURCE_ATTRIBUTES` to define [resource attributes](https://opentelemetry.io/docs/concepts/resources/).
 
-Note: A common gotcha is to mix up `AppSettings.json` and `AppSettings.Development.json`, if the latter is present it will be used when you F5 from Visual Studio and any settings in 'AppSettings.json` will be ignored.
+> [!Note]
+> A common gotcha is to mix up `AppSettings.json` and `AppSettings.Development.json`, if the latter is present it will be used when you F5 from Visual Studio and any settings in 'AppSettings.json` will be ignored.
 
 ## 7. Start the Aspire Dashboard container
 
@@ -93,7 +100,7 @@ Data displayed in the dashboard can be sensitive. By default, the dashboard is s
 
 [![Aspire Dashboard](./media/aspire-dashboard-auth.png)]
 
-Copy the url shown, and replace `0.0.0.0` with `localhost`, eg `http://localhost:18888/login?t=123456780abcdef123456780` and open that in your browser, or you can also paste the key after `t=` when the login dialog is shown. The token will change each time you start the container.
+Copy the url shown, and replace `0.0.0.0` with `localhost`, eg `http://localhost:18888/login?t=123456780abcdef123456780` and open that in your browser, or you can also paste the key after `/login?t=` when the login dialog is shown. The token will change each time you start the container.
 
 ## 8. Run the project
 
@@ -121,7 +128,7 @@ The logs are shown in the dashboard as structured logs - any properties you set 
 
 ### 8.2 Viewing the metrics
 
-The aspire dashboard shows metrics on a per resource basis (a resource being the OTel way of talking about sources of telemetry such as a process). When a resource is selected, the dashboard will enumerate each metric that has been sent to its OTLP endpoint by the resource. The list of metrics is dynamic, and will be updated as new metrics are received.
+The Aspire dashboard shows metrics on a per resource basis (a resource being the OTel way of talking about sources of telemetry such as a process). When a resource is selected, the dashboard will enumerate each metric that has been sent to its OTLP endpoint by the resource. The list of metrics is dynamic, and will be updated as new metrics are received.
 
 [![Metrics in standalone dashboard](./media/aspire-dashboard-metrics-thumb.png)](./media/aspire-dashboard-metrics.png#lightbox)
 
@@ -133,7 +140,7 @@ The view for the metrics will depend on the type of metric that is being used:
 
 ### 8.3 Viewing the tracing
 
-The tracing view will show a list of traces - each trace is a set of activites that share the same TraceId. Work is tracked with spans which represent a unit of work. Processing an ASP.NET request will create a span. Making an HttpClient request will be a span. By tracking the span's parent a heiarchy of spans can be visualized. By collecting spans from a each resource (process) we track the work that happens across a series of services. Http requests have a header which is used to pass the traceId and parent spanId to the next service. Each resource needs to collect telemetry and send it to the same collector. It will then aggregate and present a hierarchy of the spans.
+The tracing view will show a list of traces - each trace is a set of activites that share the same traceId. Work is tracked with spans which represent a unit of work. Processing an ASP.NET request will create a span. Making an HttpClient request will be a span. By tracking the span's parent a heiarchy of spans can be visualized. By collecting spans from a each resource (process) we track the work that happens across a series of services. Http requests have a header which is used to pass the traceId and parent spanId to the next service. Each resource needs to collect telemetry and send it to the same collector. It will then aggregate and present a hierarchy of the spans.
 
 [![Traces in standalone dashboard](./media/aspire-dashboard-traces-thumb.png)](./media/aspire-dashboard-traces.png#lightbox)
 
@@ -141,4 +148,4 @@ The dashboard will show a list of traces with summary information. Whenever span
 
 [![Spans in standalone dashboard](./media/aspire-dashboard-spans-thumb.png)](./media/aspire-dashboard-spans.png#lightbox)
 
-Selecting a span will show its details including any properties on the span.
+Selecting a span will show its details including any properties on the span, such as the `greeting` tag we set in [step 3](#3-create-an-api-endpoint).

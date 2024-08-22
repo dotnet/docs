@@ -43,7 +43,6 @@ otel.WithMetrics(metrics =>
     // Metrics provides by ASP.NET Core in .NET 8
     metrics.AddMeter("Microsoft.AspNetCore.Hosting");
     metrics.AddMeter("Microsoft.AspNetCore.Server.Kestrel");
-   // metrics.AddConsoleExporter();
 });
 
 // Add Tracing for ASP.NET Core and our custom ActivitySource and export via OTLP
@@ -53,7 +52,6 @@ otel.WithTracing(tracing =>
     tracing.AddHttpClientInstrumentation();
     tracing.AddSource(greeterActivitySource.Name);
 });
-
 
 // Export OpenTelemetry data via OTLP, using env vars for the configuration
 var OtlpEndpoint = builder.Configuration["OTEL_EXPORTER_OTLP_ENDPOINT"];

@@ -54,7 +54,7 @@ And the following element:
 <root type="number">42</root>
 ```
 
-Both have a mapping to JSON. The <`root`> element is the Root JSON Element in both cases.
+Both have a mapping to JSON. The `<root>` element is the Root JSON Element in both cases.
 
 Furthermore, in the case of a DII, the following should be considered:
 

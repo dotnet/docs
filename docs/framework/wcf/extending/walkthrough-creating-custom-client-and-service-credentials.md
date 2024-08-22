@@ -108,9 +108,9 @@ Once you have the configuration handler class, it can be integrated into the WCF
 
 #### To register and use a custom client credentials configuration handler in the application configuration
 
-1. Add an <`extensions`> element and a <`behaviorExtensions`> element to the configuration file.
+1. Add an `<extensions>` element and a `<behaviorExtensions>` element to the configuration file.
 
-2. Add an <`add`> element to the <`behaviorExtensions`> element and set the `name` attribute to an appropriate value.
+2. Add an `<add>` element to the `<behaviorExtensions>` element and set the `name` attribute to an appropriate value.
 
 3. Set the `type` attribute to the fully-qualified type name. Also include the assembly name and other assembly attributes.
 
@@ -124,7 +124,7 @@ Once you have the configuration handler class, it can be integrated into the WCF
     </system.serviceModel>
     ```
 
-4. After registering your configuration handler, the custom credentials element can be used inside the same configuration file instead of the system-provided <`clientCredentials`> element. You can use both the system-provided properties and any new properties that you have added to your configuration handler implementation. The following example sets the value of a custom property using the `creditCardNumber` attribute.
+4. After registering your configuration handler, the custom credentials element can be used inside the same configuration file instead of the system-provided `<clientCredentials>` element. You can use both the system-provided properties and any new properties that you have added to your configuration handler implementation. The following example sets the value of a custom property using the `creditCardNumber` attribute.
 
     ```xml
     <behaviors>

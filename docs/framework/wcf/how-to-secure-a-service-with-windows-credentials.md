@@ -1,6 +1,6 @@
 ---
 title: "How to: Secure a Service with Windows Credentials"
-description: Learn how to enable transport security on a WCF service that resides in a Windows domain and is called by clients in the same domain. 
+description: Learn how to enable transport security on a WCF service that resides in a Windows domain and is called by clients in the same domain.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"
@@ -103,11 +103,11 @@ If you do not already have a service defined, see [Designing and Implementing Se
 
 1. Add a [\<wsHttpBinding>](../configure-apps/file-schema/wcf/wshttpbinding.md) element to the [\<bindings>](../configure-apps/file-schema/wcf/bindings.md) element section of the configuration file.
 
-2. Add a <`binding`> element to the <`WSHttpBinding`> element and set the `configurationName` attribute to a value appropriate to your application.
+2. Add a `<binding>` element to the `<WSHttpBinding>` element and set the `configurationName` attribute to a value appropriate to your application.
 
-3. Add a <`security`> element and set the `mode` attribute to Message.
+3. Add a `<security>` element and set the `mode` attribute to Message.
 
-4. Add a <`message`> element and set the `clientCredentialType` attribute to Windows.
+4. Add a `<message>` element and set the `clientCredentialType` attribute to Windows.
 
 5. In the service's configuration file, replace the `<bindings>` section with the following code. If you do not already have a service configuration file, see [Using Bindings to Configure Services and Clients](using-bindings-to-configure-services-and-clients.md).
 

@@ -20,7 +20,7 @@ If you prefer to browse the source code, see the [order .NET Core unit tests](/s
 
 ## Order alphabetically
 
-With MSTest, tests are automatically ordered by their test name.
+With MSTest, tests are automatically ordered by their test name under Test Explorer (Visual Studio or Visual Studio Code). No special ordering is applied when running tests outside of Test Explorer.
 
 > [!NOTE]
 > A test named `Test14` will run before `Test2` even though the number  `2` is less than `14`. This is because test name ordering uses the text name of the test.

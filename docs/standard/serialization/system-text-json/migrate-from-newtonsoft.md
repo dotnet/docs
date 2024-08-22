@@ -40,6 +40,52 @@ You can get coding help from GitHub Copilot to convert your code right within yo
 
 If you're using [Visual Studio 2022 version 17.8 or later](/visualstudio/releases/2022/release-notes), you can try the AI-driven [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states) to help migrate your `Newtonsoft.Json` code to use `System.Text.Json`. Submit your question and the code to convert as a prompt in the copilot chat window, as in the following example.
 
+**Example prompt for Copilot Chat**
+```
+convert following code to use System.Text.Json
+Product product = new Product();
+
+product.Name = "Apple";
+product.ExpiryDate = new DateTime(2008, 12, 28);
+product.Price = 3.99M;
+product.Sizes = new string[] { "Small", "Medium", "Large" };
+
+string output = JsonConvert.SerializeObject(product);
+Console.WriteLine(output);
+```
+
+**Copilot Chat's response**
+```output
+To convert the code to use System.Text.Json, you can use the JsonSerializer class. Here's the updated code:
+using System;
+using System.Text.Json;
+
+public class Product
+{
+    public string Name { get; set; }
+    public DateTime ExpiryDate { get; set; }
+    public decimal Price { get; set; }
+    public string[] Sizes { get; set; }
+}
+
+public class Program
+{
+    public static void Main()
+    {
+        Product product = new Product();
+
+        product.Name = "Apple";
+        product.ExpiryDate = new DateTime(2008, 12, 28);
+        product.Price = 3.99M;
+        product.Sizes = new string[] { "Small", "Medium", "Large" };
+
+        string output = JsonSerializer.Serialize(product);
+        Console.WriteLine(output);
+    }
+}
+This code uses System.Text.Json.JsonSerializer.Serialize to convert the Product object to a JSON string.
+```
+
 :::image type="content" source="./media/migrate-newtonsoft-json-using-github-copilot.gif" alt-text="Animated screenshot that shows using GitHub Copilot Chat in Visual Studio to migrate from newtonsoft" lightbox="./media/migrate-newtonsoft-json-using-github-copilot.gif":::
 
 You can further use chat features, such as [slash commands, references, and threads](/visualstudio/ide/copilot-chat-context), to set intent and get better answers with scoped context.

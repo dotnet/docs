@@ -24,7 +24,7 @@ Public Class Form1
 
         contactDataGridView.DataSource = contactBindingSource
 
-        ' Create a LinqDataView from a LINQ to DataSet query and bind it 
+        ' Create a LinqDataView from a LINQ to DataSet query and bind it
         ' to the Windows forms control.
         Dim contactQuery = _
             From row In dataSet.Tables("Contact").AsEnumerable() _
@@ -48,8 +48,7 @@ Public Class Form1
             dataSet.Locale = CultureInfo.InvariantCulture
 
             ' Create the connection string for the AdventureWorks sample database.
-            Dim connectionString As String = "Data Source=localhost;Initial Catalog=AdventureWorks;" _
-                    & "Integrated Security=true;"
+            Dim connectionString As String = "..."
 
             ' Create the command strings for querying the Contact table.
             Dim contactSelectCommand As String = "SELECT ContactID, Title, FirstName, LastName, EmailAddress, Phone FROM Person.Contact"

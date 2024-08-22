@@ -1,21 +1,19 @@
 ---
-description: "Learn more about: Filling a DataSet Using One or More REF CURSORs"
+description: "Learn more about filling a DataSet using one or more REF CURSORs by studying a Visual Basic code example."
 title: "Filling a DataSet Using One or More REF CURSORs"
 ms.date: "03/30/2017"
 dev_langs:
   - "vb"
-ms.assetid: 99863e79-5b00-467e-a105-4ffa42de3ff7
 ---
-# Filling a DataSet Using One or More REF CURSORs
+# Fill a DataSet Using One or More REF CURSORs
 
-This Microsoft Visual Basic example executes a PL/SQL stored procedure that returns two REF CURSOR parameters, and fills a <xref:System.Data.DataSet> with the rows that are returned.
+This Visual Basic example executes a PL/SQL stored procedure that returns two REF CURSOR parameters, and fills a <xref:System.Data.DataSet> with the rows that are returned.
 
 ```vb
 Private Sub Button1_Click(ByVal sender As Object, _
   ByVal e As System.EventArgs) Handles Button1.Click
 
-  Dim connString As New String(_
-    "Data Source=Oracle9i;User ID=scott;Password=[PLACEHOLDER];")
+  Dim connString As New String("...")
   Dim ds As New DataSet()
     Using conn As New OracleConnection(connString)
     Dim cmd As New OracleCommand()

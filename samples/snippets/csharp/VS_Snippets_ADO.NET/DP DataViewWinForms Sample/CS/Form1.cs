@@ -50,8 +50,7 @@ namespace DataViewWinFormsSample
                 };
 
                 // Create the connection string for the AdventureWorks sample database.
-                const string connectionString = "Data Source=localhost;Initial Catalog=AdventureWorks;"
-                    + "Integrated Security=true;";
+                const string connectionString = "...";
 
                 // Create the command strings for querying the Contact table.
                 const string contactSelectCommand = "SELECT ContactID, Title, FirstName, LastName, EmailAddress, Phone FROM Person.Contact";

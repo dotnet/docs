@@ -1,17 +1,16 @@
 ---
-description: "Learn more about: Service Transaction Behavior"
+description: "Learn more about a sample that demonstrates the use of a client-coordinated transaction and other settings to control service transaction behavior."
 title: "Service Transaction Behavior"
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "Service Transaction Behavior Sample [Windows Communication Foundation]"
-ms.assetid: 1a9842a3-e84d-427c-b6ac-6999cbbc2612
 ---
 # Service Transaction Behavior
 
-The [Transactions sample](https://github.com/dotnet/samples/tree/main/framework/wcf/Basic/Services/Behaviors/Transactions) demonstrates the use of a client-coordinated transaction and the settings of ServiceBehaviorAttribute and OperationBehaviorAttribute to control service transaction behavior. This sample is based on the [Getting Started](getting-started-sample.md) that implements a calculator service, but is extended to maintain a server log of the performed operations in a database table and a stateful running total for the calculator operations. Persisted writes to the server log table are dependent upon the outcome of a client coordinated transaction - if the client transaction does not complete, the Web service transaction ensures that the updates to the database are not committed.
+The [Transactions sample](https://github.com/dotnet/samples/tree/main/framework/wcf/Basic/Services/Behaviors/Transactions) demonstrates the use of a client-coordinated transaction and the settings of ServiceBehaviorAttribute and OperationBehaviorAttribute to control service transaction behavior. This sample is based on the [Getting Started sample](getting-started-sample.md) that implements a calculator service, but is extended to maintain a server log of the performed operations in a database table and a stateful running total for the calculator operations. Persisted writes to the server log table are dependent upon the outcome of a client coordinated transaction - if the client transaction does not complete, the Web service transaction ensures that the updates to the database are not committed.
 
 > [!NOTE]
-> The setup procedure and build instructions for this sample are located at the end of this topic.
+> The setup procedure and build instructions for this sample are located at the end of this article.
 
 The contract for the service defines that all of the operations require a transaction to be flowed with requests:
 
@@ -200,7 +199,7 @@ The result of any of these is that none of the operations performed within that 
 > [!NOTE]
 > As part of the build process the database file is copied to the bin folder. You must look at that copy of the database file to observe the rows that are persisted to the log rather than the file that is included in the Visual Studio project.
 
-### To set up, build, and run the sample
+## To set up, build, and run the sample
 
 1. Ensure that you have installed SQL Server 2005 Express Edition or SQL Server 2005. In the service's App.config file, the database `connectionString` may be set or the database interactions may be disabled by setting the appSettings `usingSql` value to `false`.
 
@@ -210,7 +209,7 @@ The result of any of these is that none of the operations performed within that 
 
 If you run the sample across machines, you must configure the Microsoft Distributed Transaction Coordinator (MSDTC) to enable network transaction flow and use the WsatConfig.exe tool to enable Windows Communication Foundation (WCF) transactions network support.
 
-### To configure the Microsoft Distributed Transaction Coordinator (MSDTC) to support running the sample across machines
+## To configure the Microsoft Distributed Transaction Coordinator (MSDTC) to support running the sample across machines
 
 1. On the service machine, configure MSDTC to allow incoming network transactions.
 

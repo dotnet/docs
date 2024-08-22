@@ -723,7 +723,7 @@ In .NET Framework 4.7 and earlier versions, ASP.NET allowed developers to store 
 </system.web>
 ```
 
-<a name="v47"></a>
+[!INCLUDE [managed-identities](../includes/managed-identities.md)]
 
 ## What's new in .NET Framework 4.7
 

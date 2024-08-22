@@ -1,5 +1,5 @@
 ---
-title: Example: Use OpenTelemetry with OTLP and the standalone Aspire Dashboard
+title: "Example: Use OpenTelemetry with OTLP and the standalone Aspire Dashboard"
 description: An introduction to observing .NET apps with OpenTelemetry
 ms.date: 6/14/2023
 ms.topic: conceptual
@@ -9,7 +9,7 @@ ms.topic: conceptual
 
 This is one of a series of examples to illustrate [.NET observability with OpenTelemetry](./observability-with-otel.md).
 
-In addition to being a standard part of .NET Aspire, the Aspire Dashboard is available as a [standalone docker container](https://learn.microsoft.com/dotnet/aspire/fundamentals/dashboard/standalone?tabs=powershell), which provides an OTLP endpoint telemetry can be sent to, and it will visualize the logs, metrics and traces. Using the dashboard in this way has no dependency on Aspire, it will visualize telemetry from any application sending it telemetry via OTLP. It works equally well for applications written in Java, GoLang, Python etc. provided that they can send their telemetry to an OTLP endpoint.
+In addition to being a standard part of .NET Aspire, the Aspire Dashboard is available as a [standalone docker container](../../aspire/fundamentals/dashboard/standalone?tabs=powershell), which provides an OTLP endpoint telemetry can be sent to, and it will visualize the logs, metrics and traces. Using the dashboard in this way has no dependency on Aspire, it will visualize telemetry from any application sending it telemetry via OTLP. It works equally well for applications written in Java, GoLang, Python etc. provided that they can send their telemetry to an OTLP endpoint.
 
 Using the Aspire Dashboard has less configuration and moving than using Open Source solutions such as [Prometheus, Grafana and Jaeger](./observability-PrGrJa-example.md), but unlike those toolsthe Aspire Dashboard is intended as a developer visualization tool, and not for production monitoring like those tools.
 
@@ -57,6 +57,7 @@ Use the NuGet Package Manager or command line to add the following NuGet package
 :::code language="csharp" source="snippets/OTLP-Example/csharp/Program.cs" id="Snippet_OTEL":::
 
 This code sets up OpenTelemetry with the different sources of telemetry:
+
 - It adds a OTel provider to ILogger to collect log records.
 - It sets up metrics, registering instrumentation providers and Meters for ASP.NET and our custom Meter.
 - It sets up tracing, registering instrumentation providers and our custom ActivitySource.
@@ -67,8 +68,11 @@ It then registers the OTLP exporter using env vars for its configuration.
 
 The OTLP exporter can be configured via APIs in code, but its more common to configure it via environment variables. Add the following to `AppSettings.Development.json`
 
-    "OTEL_EXPORTER_OTLP_ENDPOINT": "http://localhost:4317",
-    "OTEL_SERVICE_NAME": "OTLP-Example"
+``` josn
+"OTEL_EXPORTER_OTLP_ENDPOINT": "http://localhost:4317",
+"OTEL_SERVICE_NAME": "OTLP-Example"
+```
+
 
 You can add additional environment variables for the [.NET OTLP Exporter](https://github.com/open-telemetry/opentelemetry-dotnet/tree/main/src/OpenTelemetry.Exporter.OpenTelemetryProtocol#exporter-configuration) or common OTel variables such as `OTEL_RESOURCE_ATTRIBUTES` to define [resource attributes](https://opentelemetry.io/docs/concepts/resources/).
 
@@ -100,7 +104,7 @@ Run the project and then access the API with the browser or curl.
 curl -k http://localhost:7275
 ```
 
-Each time you request the page, it will increment the count for the number of greetings that have been made. 
+Each time you request the page, it will increment the count for the number of greetings that have been made.
 
 ### 8.1 Log output
 
@@ -124,10 +128,10 @@ The aspire dashboard shows metrics on a per resource basis (a resource being the
 [![Metrics in standalone dashboard](./media/aspire-dashboard-metrics-thumb.png)](./media/aspire-dashboard-metrics.png#lightbox)
 
 The view for the metrics will depend on the type of metric that is being used:
-- Counters will be shown directly. 
+
+- Counters will be shown directly.
 - Histograms which track a value per request, such as a timespan or bytes sent per request, are collected into a series of buckets. The dashboard will graph the P50, P90 and P99 percentiles. Histogram results can include exemplars, which are individual datapoints together with the trace/spanId for that request. These will be shown as dots on the graph. Selecting one will navigate to the respective trace so you can see what happened to cause that value. This is useful for diagnosing outliers.
 - Metrics can include dimensions, which are key/value pairs associated with individual values. The values are aggregated per dimension. Using the dropdowns in the view you can filter the results to look at specific dimensions, such as only `GET` requests, or those for a specific URL route in ASP.NET.
-
 
 ### 8.3 Viewing the tracing
 
@@ -135,7 +139,7 @@ The tracing view will show a list of traces - each trace is a set of activites t
 
 [![Traces in standalone dashboard](./media/aspire-dashboard-traces-thumb.png)](./media/aspire-dashboard-traces.png#lightbox)
 
-The dashboard will show a list of traces with summary information. Whenever spans with a new traceId are seen, they will get a row in the table. Clicking view will show all the spans in the trace. 
+The dashboard will show a list of traces with summary information. Whenever spans with a new traceId are seen, they will get a row in the table. Clicking view will show all the spans in the trace.
 
 [![Spans in standalone dashboard](./media/aspire-dashboard-spans-thumb.png)](./media/aspire-dashboard-spans.png#lightbox)
 

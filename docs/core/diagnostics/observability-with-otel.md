@@ -87,13 +87,14 @@ The following table describes the main packages.
 ## Examples
 
 This topic is continued with a couple of example walkthroughs for using OpenTelemetry in .NET:
+
 - [Example: Use OTLP and the standalone Aspire Dashboard](./observability-OTLP-example.md)
 - [Example: Use OpenTelemetry with Azure Monitor and Application Insights](./overservability-applicationinsights.md)
 - [Example: Use OpenTelemetry with Prometheus, Grafana, and Jaeger](./observability-PrGrJa-example.md)
 
 ## OpenTelemetry in .NET Aspire
 
-Aspire is a set of extensions to .NET to make it easy to create and work with distributed applications. One of the benefits of using Aspire is that telemetry is built in, using the .NET OpenTelemetry libraries. The default project templates for Aspire contain a `ServiceDefaults` project, part of which is to setup and configure OTel. The Service Defaults project is referenced and initialized by each service in an Aspire solution. 
+Aspire is a set of extensions to .NET to make it easy to create and work with distributed applications. One of the benefits of using Aspire is that telemetry is built in, using the .NET OpenTelemetry libraries. The default project templates for Aspire contain a `ServiceDefaults` project, part of which is to setup and configure OTel. The Service Defaults project is referenced and initialized by each service in an Aspire solution.
 
 The Service Defaults project template includes the OTel SDK, ASP.NET, HttpClient and Runtime Instrumentation packages, and those are configured in the [`Extensions.cs`](https://github.com/dotnet/aspire/blob/main/src/Aspire.ProjectTemplates/templates/aspire-servicedefaults/Extensions.cs) file.  For exporting telemetry Aspire includes the OTLP exporter by default so that it can provide telemetry visualization using the Aspire Dashboard.
 
@@ -108,12 +109,13 @@ For more details on Aspire see:
 
 ### Reusing Service Defaults project without Aspire Orchestration
 
-Probably the easiest way to configure OTel for ASP.NET projects is to use the Aspire Service Defaults project, even if not using the rest of Aspire such as the AppHost for orchestration. The Service Defaults project is available as a project template via Visual Studio or `dotnet new`. It configures OTel and sets up the OTLP exporter. You can then use the [OTel environment variables](https://github.com/open-telemetry/opentelemetry-dotnet/tree/main/src/OpenTelemetry.Exporter.OpenTelemetryProtocol#exporter-configuration) to configure the OTLP endpoint to send telemetry to, and provide the resource properties for the application. 
+Probably the easiest way to configure OTel for ASP.NET projects is to use the Aspire Service Defaults project, even if not using the rest of Aspire such as the AppHost for orchestration. The Service Defaults project is available as a project template via Visual Studio or `dotnet new`. It configures OTel and sets up the OTLP exporter. You can then use the [OTel environment variables](https://github.com/open-telemetry/opentelemetry-dotnet/tree/main/src/OpenTelemetry.Exporter.OpenTelemetryProtocol#exporter-configuration) to configure the OTLP endpoint to send telemetry to, and provide the resource properties for the application.
 
 The steps to use ServiceDefaults outside Aspire are:
+
 - Add the ServiceDefaults project to the solution using Add New Project in Visual Studio, or use `dotnet new aspire-servicedefaults --output ServiceDefaults`
 - Reference the ServiceDefaults project from your ASP.NET application. In Visual Studio use "Add -> Project Reference" and select the ServiceDefaults project"
-- Call its OpenTelemetry setup function as part of your application builder initialization. 
+- Call its OpenTelemetry setup function as part of your application builder initialization.
 
 ``` csharp
 var builder = WebApplication.CreateBuilder(args);
@@ -127,6 +129,7 @@ app.Run();
 ```
 
 Note: service Defaults can setup the following additional functionality if required via `AddServiceDefaults()` or the specific functions:
+
 - Health checks with `/health` and `/alive` endpoints
 - Service discovery which will be a no-op without the rest of Aspire
 - Configuring reslience for HttpClient which will retry the request in the case of failures

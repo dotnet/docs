@@ -1,5 +1,5 @@
 ---
-title: Example: Use OpenTelemetry with Prometheus, Grafana, and Jaeger
+title: "Example: Use OpenTelemetry with Prometheus, Grafana, and Jaeger"
 description: An introduction to observing .NET apps with OpenTelemetry
 ms.date: 6/14/2023
 ms.topic: conceptual
@@ -32,7 +32,7 @@ The following code defines a new metric (`greetings.count`) for the number of ti
 > [!Note]
 > The API definition does not use anything specific to OpenTelemetry. It uses the .NET APIs for observability.
 
-# 4. Reference the OpenTelemetry packages
+## 4. Reference the OpenTelemetry packages
 
 Use the NuGet Package Manager or command line to add the following NuGet packages:
 

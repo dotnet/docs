@@ -396,7 +396,7 @@ namespace SqlBulkCopyAsyncCodeSample {
             [notes] [varchar](200) NULL,
             [pubdate] [datetime] NOT NULL)";
 
-      static string connectionString = "..."";
+      static string connectionString = "...";
 
       static void Main(string[] args) {
          SynchronousSqlBulkCopy();

@@ -9,8 +9,6 @@ ms.date: 08/02/2024
 
 #customer intent: As a developer using optional workloads, I want to keep my workload versions in sync so that I can avoid conflicts betwween versions. I also want to avoid unexpected workload updates, so that I can avoid disruptions in development.
 ---
-<!--https://aka.ms/patterns-feedback-->
-
 # .NET SDK workload sets
 
 The *workload sets* feature provides a version number that represents a group of .NET SDK workloads. The [install](dotnet-workload-install.md), [update](dotnet-workload-update.md), and [restore](dotnet-workload-restore.md) commands use this number in *workload-set update mode* to provide the following benefits:
@@ -39,7 +37,6 @@ And you can still choose to install, update, or restore to the latest version of
 ## "Pin" the install command
 
 A `dotnet workload install` command with the `--version` option "pins" the `install` command in workload set update mode with the specified workload set version.
-<!--todo: install without --version in workload set update mode pins to latest workload set?-->
 The command no longer automatically installs the newest workload based on loose manifests. For example:
 
 1. ```dotnetcli
@@ -148,7 +145,7 @@ dotnet workload --version
 
 ## Workload-set release cadence
 
-Workload sets are published to nuget.org with each release of the .NET SDK, under the package ID `Microsoft.NET.Workloads.<feature band>`. For a stable version of the SDK, we plan on always having a matching workload-set version. So 8.0.400 SDK can install an 8.0.400 workload set, 401 can install a 401 set. In general, we recommend that you install the matching workload set for a stable SDK. For preview releases, find the corresponding workload-set version in the package's README tab. For example: see [this README tab.](https://www.nuget.org/packages/Microsoft.NET.Workloads.9.0.100-preview.7/9.100.0-preview.7.24414.1#readme-body-tab).
+Workload sets are published to nuget.org with each release of the .NET SDK, under the package ID `Microsoft.NET.Workloads.<feature band>`. For a stable version of the SDK, we plan on always having a matching workload-set version. So 8.0.400 SDK can install an 8.0.400 workload set, 401 can install a 401 set. In general, we recommend that you install the matching workload set for a stable SDK. For preview releases, find the corresponding workload-set version in the package's README tab. For example, see [the README tab for the .NET 9 Preview 7 package](https://www.nuget.org/packages/Microsoft.NET.Workloads.9.0.100-preview.7/9.100.0-preview.7.24414.1#readme-body-tab).
 
 ## Ignore workload sets
 

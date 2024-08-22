@@ -9,7 +9,7 @@ helpviewer_keywords:
 ---
 # Partial member (C# Reference)
 
-A partial member has one *declaring declaration* and often one *implementing declaration*. The *declaring declaration* doesn't include a body. The *implementing declaration* provides the body of the member. Partial members enable class designers to provide member hooks, similar to event handlers, that developers can decide to implement or not. If the developer doesn't supply an implementing declaration, the compiler removes the declaring declaration at compile time. The following conditions apply to partial members:
+A partial member has one *declaring declaration* and often one *implementing declaration*. The *declaring declaration* doesn't include a body. The *implementing declaration* provides the body of the member. Partial members enable class designers to provide member hooks, similar to event handlers, that developers can decide to implement or not. Partial types and members provide a way for human developers to write part of a type while tools write other parts of the type. If the developer doesn't supply an optional implementing declaration, the compiler can remove the declaring declaration at compile time. The following conditions apply to partial members:
 
 - Declarations must begin with the contextual keyword [partial](../../language-reference/keywords/partial-type.md).
 - Signatures in both parts of the partial type must match.

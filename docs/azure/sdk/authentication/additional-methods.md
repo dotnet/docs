@@ -110,8 +110,8 @@ private void button1_Click(object sender, EventArgs e)
     var credential = new InteractiveBrowserCredential(
         new InteractiveBrowserCredentialBrokerOptions(windowHandle));
 
-    // To authenticate and authorize with an app, substitute the
-    // <app_id> and <tenant_id> placeholders with the values for your app and tenant.
+    // To authenticate and authorize with an app, substitute
+    // your-tenant-id and your-client-id with the values for your app and tenant.
     // var credential = new InteractiveBrowserCredential(
     //    new InteractiveBrowserCredentialBrokerOptions(windowHandle)
     //        { 

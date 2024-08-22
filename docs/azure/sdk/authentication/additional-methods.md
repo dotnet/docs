@@ -102,25 +102,34 @@ The following example demonstrates using an [`InteractiveBrowserCredential`](/do
 using Azure.Identity;
 using Azure.Identity.Broker;
 
-private void button1_Click(object sender, EventArgs e)
-{
-    IntPtr windowHandle = this.Handle;
-
-    // To authenticate and authorize with an app, use the following line to get a credential and
-    // substitute the <app_id> and <tenant_id> placeholders with the values for your app and tenant.
-    // credential = InteractiveBrowserBrokerCredential(parent_window_handle=current_window_handle, client_id=<app_id>, tenant_id=<tenant_id>)
-    var credential = new InteractiveBrowserCredential(
-                        new InteractiveBrowserCredentialBrokerOptions(windowHandle));
-
-    var client = new BlobServiceClient(
-                        new Uri("https://<storage-account-name>.blob.core.windows.net/"),
-                        credential
-                );
-
-    // Prompt for credentials appears on first use of the client
-    foreach(var container in client.GetBlobContainers())
+    private void button1_Click(object sender, EventArgs e)
     {
-        Console.WriteLine(container.Name);
+        // Get the handle of the current window
+        IntPtr windowHandle = this.Handle;
+
+        var credential = new InteractiveBrowserCredential(
+            new InteractiveBrowserCredentialBrokerOptions(windowHandle));
+
+        // To authenticate and authorize with an app, substitute the
+        // <app_id> and <tenant_id> placeholders with the values for your app and tenant.
+        // var credential = new InteractiveBrowserCredential(
+        //    new InteractiveBrowserCredentialBrokerOptions(windowHandle)
+        //        { 
+        //            TenantId = "your-tenant-id",
+        //            ClientId = "your-client-id"
+        //        }
+        // );
+
+        var client = new BlobServiceClient(
+            new Uri("https://<storage-account-name>.blob.core.windows.net/"),
+            credential
+        );
+
+        // Prompt for credentials appears on first use of the client
+        foreach (var container in client.GetBlobContainers())
+        {
+            Console.WriteLine(container.Name);
+        }
     }
 }
 ```
@@ -141,30 +150,15 @@ The following example shows how to enable sign-in with the default system accoun
 using Azure.Identity;
 using Azure.Identity.Broker;
 
-// code omitted for brevity
-private async void testBrokeredAuth_Click(object sender, EventArgs e)
-{
-    IntPtr windowHandle = this.Handle;
+IntPtr windowHandle = this.Handle;
 
-    // To authenticate and authorize with an app, use the following line to get a credential and
-    // substitute the <app_id> and <tenant_id> placeholders with the values for your app and tenant.
-    // credential = InteractiveBrowserCredential(parent_window_handle=current_window_handle, client_id=<app_id>, tenant_id=<tenant_id>)
-    var credential = new InteractiveBrowserCredential(
-        new InteractiveBrowserCredentialBrokerOptions(windowHandle)
-        {
-            // Enable silent brokered authentication using the default account
-            UseDefaultBrokerAccount = true,
-        }
-    );
-
-    var client = new BlobServiceClient(new Uri("https://<storage-account-name>.blob.core.windows.net/"), credential);
-
-    // Prompt for credentials appears on first use of the client
-    foreach(var container in client.GetBlobContainers())
+var credential = new InteractiveBrowserCredential(
+    new InteractiveBrowserCredentialBrokerOptions(windowHandle)
     {
-        Console.WriteLine(container.Name);
+        // Enable silent brokered authentication using the default account
+        UseDefaultBrokerAccount = true,
     }
-}
+);
 ```
 
 Once you opt into this behavior, the credential type attempts to sign in by asking the underlying Microsoft Authentication Library (MSAL) to perform the sign-in for the default system account. If the sign-in fails, the credential type falls back to displaying the account picker dialog, from which the user can select the appropriate account.

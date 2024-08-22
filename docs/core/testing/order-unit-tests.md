@@ -20,7 +20,7 @@ If you prefer to browse the source code, see the [order .NET Core unit tests](/s
 
 ## Order alphabetically
 
-MSTest discovers tests in the same order in which they are defined in the test class. 
+MSTest discovers tests in the same order in which they are defined in the test class.
 
 When running through Test Explorer (in Visual Studio, or in Visual Studio Code), the tests are ordered in alphabetical order based on their test name.
 

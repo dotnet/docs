@@ -118,7 +118,7 @@ The next example illustrates the use of a regular expression to check whether a 
 | `\d*`      | Match zero or more decimal digits.                                             |
 | `\.?`      | Match zero or one decimal point symbol.                                        |
 | `(\d{2})?` | Capturing group 1: Match two decimal digits zero or one time.                  |
-| `(\d*\.?(\d{2})?){1}` | Match the pattern of integral and fractional digits separated by a decimal point symbol at least one time. |
+| `(\d*\.?(\d{2})?){1}` | Match the pattern of integral and fractional digits separated by a decimal point symbol exactly once. |
 | `$`        | Match the end of the string.                                                   |
 
 In this case, the regular expression assumes that a valid currency string does not contain group separator symbols, and that it has either no fractional digits or the number of fractional digits defined by the specified culture's <xref:System.Globalization.NumberFormatInfo.CurrencyDecimalDigits> property.

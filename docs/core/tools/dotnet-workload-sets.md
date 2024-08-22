@@ -32,7 +32,7 @@ And you can still choose to install, update, or restore to the latest version of
 
 * [.NET 8.0.400 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later.
 
-  In 8.0.400 SDK, the `dotnet workload` commands are in workload-set update mode only when it's explicitly selected.
+  In 8.0.400 SDK, the `dotnet workload` commands are in workload-set update mode only when it's explicitly selected. <!--Starting in [.NET 9 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/9.0), `dotnet workload` commands are in workload-set update mode by default.-->
 
 ## "Pin" the install command
 
@@ -42,6 +42,8 @@ The command no longer automatically installs the newest workload based on loose 
 To "pin" the `install` command:
 
 1. [Choose a workload-set version](#choose-a-workload-set-version). For example, `9.0.100-preview.7.24414.1`.
+
+1. [Choose a workload](dotnet-workload-search.md). For example, `aspire`.
 
 1. ```dotnetcli
    dotnet workload install aspire --version 9.0.100-preview.7.24414.1
@@ -55,7 +57,7 @@ To "pin" the `install` command:
    * It installs the manifest version of the workload.
    * It stays in workload-set update mode when it's done.
 
-1. Choose a workload to install, such as `maui-ios`.
+1. Choose another workload to install, such as `maui-ios`.
 
 1. ```dotnetcli
    dotnet workload install maui-ios

@@ -152,6 +152,8 @@ The following example shows how to enable sign-in with the default system accoun
 using Azure.Identity;
 using Azure.Identity.Broker;
 
+// App code omitted for brevity
+
 IntPtr windowHandle = this.Handle;
 
 var credential = new InteractiveBrowserCredential(

@@ -135,61 +135,37 @@ The following screenshot shows the user sign-in experience:
 
 Many people always sign in to Windows with the same user account and, therefore, only ever want to authenticate using that account. WAM and `InteractiveBrowserCredential` also support a silent login process that automatically uses a default account so the user does not have to repeatedly select it.
 
-To use WAM and the default system account in your app:
+The following example shows how to enable sign-in with the default system account:
 
-1. Add the [Azure.Identity](https://www.nuget.org/packages/Azure.Identity) and [Azure.Identity.Broker](https://www.nuget.org/packages/Azure.Identity.Broker) NuGet packages to your project.
+```csharp
+using Azure.Identity;
+using Azure.Identity.Broker;
 
-    ```dotnetcli
-    dotnet add package Azure.Identity
-    dotnet add package Azure.Identity.Broker
-    ```
+// code omitted for brevity
+private async void testBrokeredAuth_Click(object sender, EventArgs e)
+{
+    IntPtr windowHandle = this.Handle;
 
-1. Get the handle of the parent window to which the WAM account picker window should be docked.
-
-    ```csharp
-    // Form1.cs
-    private async void testBrokeredAuth_Click(object sender, EventArgs e)
-    {
-        IntPtr windowHandle = this.Handle;
-    }
-    ```
-
-    > [!NOTE]
-    > This example shows how to get the window handle for a Windows Forms app. Visit the [Parent window handles](/entra/msal/dotnet/acquiring-tokens/desktop-mobile/wam#parent-window-handles) and [Retrieve a window handle](/windows/apps/develop/ui-input/retrieve-hwnd) articles for more information about retrieving window context for other types of apps.
-
-1. Create an instance of `InteractiveBrowserCredential` in your app. The credential requires the handle of the parent window that's requesting the authentication flow. On Windows, the handle is an integer value that uniquely identifies the window. Optionally, set the `UseDefaultBrokerAccount` option to `true` to enable silent brokered authentication, which will automatically select the default account.
-
-    ```csharp
-    using Azure.Identity;
-    using Azure.Identity.Broker;
-    
-    // code omitted for brevity
-    private async void testBrokeredAuth_Click(object sender, EventArgs e)
-    {
-        IntPtr windowHandle = this.Handle;
-    
-        // To authenticate and authorize with an app, use the following line to get a credential and
-        // substitute the <app_id> and <tenant_id> placeholders with the values for your app and tenant.
-        // credential = InteractiveBrowserCredential(parent_window_handle=current_window_handle, client_id=<app_id>, tenant_id=<tenant_id>)
-        var credential = new InteractiveBrowserCredential(
-            new InteractiveBrowserCredentialBrokerOptions(windowHandle)
-            {
-                // Enable silent brokered authentication using the default account
-                UseDefaultBrokerAccount = true,
-            }
-        );
-
-        var client = new BlobServiceClient(new Uri("https://<storage-account-name>.blob.core.windows.net/"), credential);
-    
-        // Prompt for credentials appears on first use of the client
-        foreach(var container in client.GetBlobContainers())
+    // To authenticate and authorize with an app, use the following line to get a credential and
+    // substitute the <app_id> and <tenant_id> placeholders with the values for your app and tenant.
+    // credential = InteractiveBrowserCredential(parent_window_handle=current_window_handle, client_id=<app_id>, tenant_id=<tenant_id>)
+    var credential = new InteractiveBrowserCredential(
+        new InteractiveBrowserCredentialBrokerOptions(windowHandle)
         {
-            Console.WriteLine(container.Name);
+            // Enable silent brokered authentication using the default account
+            UseDefaultBrokerAccount = true,
         }
-    }
-    ```
+    );
 
-1. Use the broker-enabled `InteractiveBrowserCredential` instance.
+    var client = new BlobServiceClient(new Uri("https://<storage-account-name>.blob.core.windows.net/"), credential);
+
+    // Prompt for credentials appears on first use of the client
+    foreach(var container in client.GetBlobContainers())
+    {
+        Console.WriteLine(container.Name);
+    }
+}
+```
 
 Once you opt into this behavior, the credential type attempts to sign in by asking the underlying Microsoft Authentication Library (MSAL) to perform the sign-in for the default system account. If the sign-in fails, the credential type falls back to displaying the account picker dialog, from which the user can select the appropriate account.
 

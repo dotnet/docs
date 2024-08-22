@@ -19,7 +19,7 @@ This article summarizes key new features and improvements in the following versi
 - [.NET Framework 4.8](#v48)
 - [.NET Framework 4.7.2](#v472)
 - [.NET Framework 4.7.1](#v471)
-- [.NET Framework 4.7](#whats-new-in-net-framework-47-1)
+- [.NET Framework 4.7](#whats-new-in-net-framework-47)
 - [.NET Framework 4.6.2](#v462)
 - [.NET Framework 4.6.1](#v461)
 - [.NET 2015 and .NET Framework 4.6](#v46)

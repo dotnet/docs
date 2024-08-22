@@ -18,9 +18,9 @@ Interactive browser authentication enables the application for all operations al
 
 ### Enable applications for interactive browser authentication
 
-Perform the following steps to enable the application to authenticate through the interactive browser flow. These steps also work for [device code authentication](#device-code-authentication) described later. This process is only necessary only if you are using `InteractiveBrowserCredential` in your code.
+Perform the following steps to enable the application to authenticate through the interactive browser flow. These steps also work for the [device code authentication](#device-code-authentication) flow described later. This process is only necessary if you are using `InteractiveBrowserCredential` in your code.
 
-1. On the [Azure portal](https://portal.azure.com), navigate to Microsoft Entra ID and select **App registrations** on the left-hand menu.
+1. On the [Azure portal](https://portal.azure.com), navigate to Microsoft Entra ID and select **App registrations** on the left navigation.
 1. Select the registration for your app, then select **Authentication**.
 1. Under **Advanced settings**, select **Yes** for **Allow public client flows**.
 1. Select **Save** to apply the changes.
@@ -29,7 +29,7 @@ Perform the following steps to enable the application to authenticate through th
     > [!IMPORTANT]
     > You must also be the admin of your tenant to grant consent to your application when you sign in for the first time.
 
-If you can't configure the device code flow option on your Active Directory, your application might need to be multitenant. To make this change, navigate to the **Authentication** panel, select **Accounts in any organizational directory** (under **Supported account types**), and then select **Yes** for **Allow public client flows**.
+If you can't configure the device code flow option, your application might need to be multitenant. To make this change, navigate to the **Authentication** panel, select **Accounts in any organizational directory** (under **Supported account types**), and then select **Yes** for **Allow public client flows**.
 
 ### Example using InteractiveBrowserCredential
 
@@ -74,7 +74,7 @@ Perform the following steps to enable the application to authenticate through th
 1. Select the registration for your app, then select **Authentication**.
 1. Add the WAM redirect URI to your app registration via a platform configuration:
     1. Under **Platform configurations**, select **+ Add a platform**.
-    1. Under **Configure platforms**, select the tile for your application type (platform) to configure its settings; For example, **mobile and desktop applications**.
+    1. Under **Configure platforms**, select the tile for your application type (platform) to configure its settings, such as **mobile and desktop applications**.
     1. In **Custom redirect URIs**, enter the WAM redirect URI:
 
         ```text
@@ -96,43 +96,45 @@ Perform the following steps to enable the application to authenticate through th
 
 ### Example using InteractiveBrowserCredential
 
-The following example demonstrates using an [`InteractiveBrowserCredential`](/dotnet/api/azure.identity.interactivebrowsercredential?view=azure-dotnet) to authenticate with the [`BlobServiceClient`](/dotnet/api/azure.storage.blobs.blobserviceclient):
+The following example demonstrates using an [`InteractiveBrowserCredential`](/dotnet/api/azure.identity.interactivebrowsercredential?view=azure-dotnet) in a Windows Forms app to authenticate with the [`BlobServiceClient`](/dotnet/api/azure.storage.blobs.blobserviceclient):
 
 ```csharp
 using Azure.Identity;
 using Azure.Identity.Broker;
 
-    private void button1_Click(object sender, EventArgs e)
+private void button1_Click(object sender, EventArgs e)
+{
+    // Get the handle of the current window
+    IntPtr windowHandle = this.Handle;
+
+    var credential = new InteractiveBrowserCredential(
+        new InteractiveBrowserCredentialBrokerOptions(windowHandle));
+
+    // To authenticate and authorize with an app, substitute the
+    // <app_id> and <tenant_id> placeholders with the values for your app and tenant.
+    // var credential = new InteractiveBrowserCredential(
+    //    new InteractiveBrowserCredentialBrokerOptions(windowHandle)
+    //        { 
+    //            TenantId = "your-tenant-id",
+    //            ClientId = "your-client-id"
+    //        }
+    // );
+
+    var client = new BlobServiceClient(
+        new Uri("https://<storage-account-name>.blob.core.windows.net/"),
+        credential
+    );
+
+    // Prompt for credentials appears on first use of the client
+    foreach (var container in client.GetBlobContainers())
     {
-        // Get the handle of the current window
-        IntPtr windowHandle = this.Handle;
-
-        var credential = new InteractiveBrowserCredential(
-            new InteractiveBrowserCredentialBrokerOptions(windowHandle));
-
-        // To authenticate and authorize with an app, substitute the
-        // <app_id> and <tenant_id> placeholders with the values for your app and tenant.
-        // var credential = new InteractiveBrowserCredential(
-        //    new InteractiveBrowserCredentialBrokerOptions(windowHandle)
-        //        { 
-        //            TenantId = "your-tenant-id",
-        //            ClientId = "your-client-id"
-        //        }
-        // );
-
-        var client = new BlobServiceClient(
-            new Uri("https://<storage-account-name>.blob.core.windows.net/"),
-            credential
-        );
-
-        // Prompt for credentials appears on first use of the client
-        foreach (var container in client.GetBlobContainers())
-        {
-            Console.WriteLine(container.Name);
-        }
+        Console.WriteLine(container.Name);
     }
 }
 ```
+
+> [!NOTE]
+> Visit the [Parent window handles](/entra/msal/dotnet/acquiring-tokens/desktop-mobile/wam#parent-window-handles) and [Retrieve a window handle](/windows/apps/develop/ui-input/retrieve-hwnd) articles for more information about retrieving window handles.
 
 For the code to run successfully, your user account must be assigned an Azure role on the storage account that allows access to blob containers such as **Storage Account Data Contributor**. If an app is specified, it must have API permissions set for **user_impersonation Access Azure Storage** (step 6 in the previous section). This API permission allows the app to access Azure storage on behalf of the signed-in user after consent is granted during sign-in.
 

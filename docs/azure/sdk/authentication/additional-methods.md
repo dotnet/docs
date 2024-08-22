@@ -111,12 +111,12 @@ private void button1_Click(object sender, EventArgs e)
         new InteractiveBrowserCredentialBrokerOptions(windowHandle));
 
     // To authenticate and authorize with an app, substitute
-    // your-tenant-id and your-client-id with the values for your app and tenant.
+    // <tenant-id> and <client-id> with the values for your app and tenant.
     // var credential = new InteractiveBrowserCredential(
     //    new InteractiveBrowserCredentialBrokerOptions(windowHandle)
     //        { 
-    //            TenantId = "your-tenant-id",
-    //            ClientId = "your-client-id"
+    //            TenantId = "<tenant-id>",
+    //            ClientId = "<client-id>"
     //        }
     // );
 

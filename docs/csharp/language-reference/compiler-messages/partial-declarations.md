@@ -191,7 +191,7 @@ partial class C : B2
 
 Partial declarations of 'type' must have the same type parameter names in the same order
 
-This error occurs if you are defining a generic type in partial declarations and the type parameters are not consistent in name or order throughout all of the partial declarations. To get rid of this error, check the type parameters for each partial declaration and make sure the same name and order of parameters is used. For more information, see [Partial types](../keywords/partial-type.md) and [Generic Type Parameters](../programming-guide/generics/generic-type-parameters.md).
+This error occurs if you are defining a generic type in partial declarations and the type parameters are not consistent in name or order throughout all of the partial declarations. To get rid of this error, check the type parameters for each partial declaration and make sure the same name and order of parameters is used. For more information, see [Partial types](../keywords/partial-type.md) and [Generic Type Parameters](../../programming-guide/generics/generic-type-parameters.md).
 
 The following example generates CS0264.
 
@@ -211,7 +211,7 @@ partial class MyClass <MyType>
 
 Partial declarations of 'type' have inconsistent constraints for type parameter 'type parameter'
 
-This error happens when you define a generic class as a partial class, so that its partial definitions occur in more than one place, and the constraints on the generic type are inconsistent or different in two or more places. If you specify the constraints in more than one place, they must all be identical. The easiest solution is to specify the constraints in one place, and omit them everywhere else. For more information, see [Partial types](../keywords/partial-type.md) and [Constraints on Type Parameters](../programming-guide/generics/constraints-on-type-parameters.md).
+This error happens when you define a generic class as a partial class, so that its partial definitions occur in more than one place, and the constraints on the generic type are inconsistent or different in two or more places. If you specify the constraints in more than one place, they must all be identical. The easiest solution is to specify the constraints in one place, and omit them everywhere else. For more information, see [Partial types](../keywords/partial-type.md) and [Constraints on Type Parameters](../../programming-guide/generics/constraints-on-type-parameters.md).
 
 The following code generates error CS0265.
 
@@ -291,9 +291,9 @@ In C#, methods/functions that are a part of a class must have a "body", or imple
 
 There are exceptions to this rule:
 
-- When the method is marked `abstract` as an [Abstract Method](../language-reference/keywords/abstract.md)
-- When the method is marked `extern` as an [External Method](../language-reference/keywords/extern.md)
-- When the method is marked `partial` as a [Partial Method](../language-reference/keywords/partial-method.md)
+- When the method is marked `abstract` as an [Abstract Method](../../language-reference/keywords/abstract.md)
+- When the method is marked `extern` as an [External Method](../../language-reference/keywords/extern.md)
+- When the method is marked `partial` as a [Partial Method](../../language-reference/keywords/partial-method.md)
 
 The following sample generates CS0501:
 
@@ -314,7 +314,7 @@ public class MyClass
 ```
 
 > [!NOTE]
-> When defining a method body with brackets, do not add a semicolon. Doing so will trigger [compiler error CS1597](./cs1597.md).
+> When defining a method body with brackets, do not add a semicolon. Doing so will trigger [compiler error CS1597](../../misc//cs1597.md).
 
 Or, using an appropriate keyword, such as defining an `abstract` method:
 
@@ -379,7 +379,7 @@ public partial class C:Base
 
 A partial member must be declared in a partial class or partial struct
 
-It is not possible to declare a [partial](../language-reference/keywords/partial-method.md) method unless it is encapsulated inside a partial class or partial struct.
+It is not possible to declare a [partial](../../language-reference/keywords/partial-method.md) method unless it is encapsulated inside a partial class or partial struct.
 
 Either remove the `partial` modifier from the method and provide an implementation, or else add the `partial` modifier to the enclosing class or struct.
 
@@ -734,6 +734,7 @@ public partial class PartialClass
     public partial void PartialMethod();
 }
 ```
+
 Add an implementation in another partial class:
 
 ```csharp

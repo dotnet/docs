@@ -161,7 +161,7 @@ var credential = new InteractiveBrowserCredential(
 );
 ```
 
-Once you opt into this behavior, the credential type attempts to sign in by asking the underlying Microsoft Authentication Library (MSAL) to perform the sign-in for the default system account. If the sign-in fails, the credential type falls back to displaying the account picker dialog, from which the user can select the appropriate account.
+Once you opt into this behavior, the credential attempts to sign in by asking the underlying Microsoft Authentication Library (MSAL) to perform the sign-in for the default system account. If the sign-in fails, the credential falls back to displaying the account picker dialog, from which the user can select the appropriate account.
 
 ## Device code authentication
 

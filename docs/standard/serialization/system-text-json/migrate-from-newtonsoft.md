@@ -41,12 +41,13 @@ You can get coding help from GitHub Copilot to convert your code right within yo
 If you're using [Visual Studio 2022 version 17.8 or later](/visualstudio/releases/2022/release-notes), you can try the AI-driven [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states) to help migrate your `Newtonsoft.Json` code to use `System.Text.Json`. Submit your question and the code to convert as a prompt in the copilot chat window, as in the following example.
 
 **Example prompt for Copilot Chat**
+
 ```
 convert following code to use System.Text.Json
 Product product = new Product();
 
 product.Name = "Apple";
-product.ExpiryDate = new DateTime(2008, 12, 28);
+product.ExpiryDate = new DateTime(2024, 08, 08);
 product.Price = 3.99M;
 product.Sizes = new string[] { "Small", "Medium", "Large" };
 
@@ -54,7 +55,8 @@ string output = JsonConvert.SerializeObject(product);
 Console.WriteLine(output);
 ```
 
-**Copilot Chat's response**
+**Sample Copilot Chat response**
+
 ```output
 To convert the code to use System.Text.Json, you can use the JsonSerializer class. Here's the updated code:
 using System;
@@ -75,7 +77,7 @@ public class Program
         Product product = new Product();
 
         product.Name = "Apple";
-        product.ExpiryDate = new DateTime(2008, 12, 28);
+        product.ExpiryDate = new DateTime(2024, 08, 08);
         product.Price = 3.99M;
         product.Sizes = new string[] { "Small", "Medium", "Large" };
 

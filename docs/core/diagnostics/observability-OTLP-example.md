@@ -9,7 +9,7 @@ ms.topic: conceptual
 
 This is one of a series of examples to illustrate [.NET observability with OpenTelemetry](./observability-with-otel.md).
 
-In addition to being a standard part of .NET Aspire, the Aspire Dashboard is available as a [standalone docker container](../../aspire/fundamentals/dashboard/standalone?tabs=powershell), which provides an OTLP endpoint telemetry can be sent to, and it will visualize the logs, metrics and traces. Using the dashboard in this way has no dependency on Aspire, it will visualize telemetry from any application sending it telemetry via OTLP. It works equally well for applications written in Java, GoLang, Python etc. provided that they can send their telemetry to an OTLP endpoint.
+In addition to being a standard part of .NET Aspire, the Aspire Dashboard is available as a [standalone docker container](/dotnet/aspire/fundamentals/dashboard/standalone?tabs=powershell), which provides an OTLP endpoint telemetry can be sent to, and it will visualize the logs, metrics and traces. Using the dashboard in this way has no dependency on Aspire, it will visualize telemetry from any application sending it telemetry via OTLP. It works equally well for applications written in Java, GoLang, Python etc. provided that they can send their telemetry to an OTLP endpoint.
 
 Using the Aspire Dashboard has less configuration and moving than using Open Source solutions such as [Prometheus, Grafana and Jaeger](./observability-PrGrJa-example.md), but unlike those toolsthe Aspire Dashboard is intended as a developer visualization tool, and not for production monitoring like those tools.
 
@@ -73,7 +73,6 @@ The OTLP exporter can be configured via APIs in code, but its more common to con
 "OTEL_SERVICE_NAME": "OTLP-Example"
 ```
 
-
 You can add additional environment variables for the [.NET OTLP Exporter](https://github.com/open-telemetry/opentelemetry-dotnet/tree/main/src/OpenTelemetry.Exporter.OpenTelemetryProtocol#exporter-configuration) or common OTel variables such as `OTEL_RESOURCE_ATTRIBUTES` to define [resource attributes](https://opentelemetry.io/docs/concepts/resources/).
 
 Note: A common gotcha is to mix up `AppSettings.json` and `AppSettings.Development.json`, if the latter is present it will be used when you F5 from Visual Studio and any settings in 'AppSettings.json` will be ignored.
@@ -119,7 +118,6 @@ There are a couple of options for how logs can be egressed from .NET:
 The logs are shown in the dashboard as structured logs - any properties you set in the log message are extracted as fields in the log record.
 
 [![Logs in standalone dashboard](./media/aspire-dashboard-logs-thumb.png)](./media/aspire-dashboard-logs.png#lightbox)
-
 
 ### 8.2 Viewing the metrics
 

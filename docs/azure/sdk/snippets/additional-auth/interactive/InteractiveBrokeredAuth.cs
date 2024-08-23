@@ -19,7 +19,7 @@ namespace InteractiveBrokeredAuthSample
             var credential = new InteractiveBrowserCredential(
                 new InteractiveBrowserCredentialBrokerOptions(windowHandle));
 
-            // To authenticate and authorize with an app, substitute the
+            // To authenticate and authorize with an Entra ID app registration, substitute the
             // <app_id> and <tenant_id> placeholders with the values for your app and tenant.
             // var credential = new InteractiveBrowserCredential(
             //    new InteractiveBrowserCredentialBrokerOptions(windowHandle)

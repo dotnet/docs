@@ -9,7 +9,7 @@ This article describes how to configure the SQL Workflow Instance Store feature 
 
 ## To Configure the SQL Workflow Instance Store in Configuration
 
-1. The properties of the SQL workflow instance store can be configured through the <xref:System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior>, a service behavior that allows you to change the settings through XML configuration. The following configuration example shows how to configure the SQL workflow instance store by using the <`sqlWorkflowInstanceStore`> behavior element in a configuration file.
+1. The properties of the SQL workflow instance store can be configured through the <xref:System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior>, a service behavior that allows you to change the settings through XML configuration. The following configuration example shows how to configure the SQL workflow instance store by using the `<sqlWorkflowInstanceStore>` behavior element in a configuration file.
 
     ```xml
     <serviceBehaviors>
@@ -26,7 +26,7 @@ This article describes how to configure the SQL Workflow Instance Store feature 
     </serviceBehaviors>
     ```
 
-     For more information about how to configure the SQL workflow instance store, see [How to: Enable SQL Persistence for Workflows and Workflow Services](../../windows-workflow-foundation/how-to-enable-sql-persistence-for-workflows-and-workflow-services.md). For more information about the individual settings for the <`sqlWorkflowInstanceStore`> behavior element, see [SQL Workflow Instance Store](../../windows-workflow-foundation/sql-workflow-instance-store.md).
+     For more information about how to configure the SQL workflow instance store, see [How to: Enable SQL Persistence for Workflows and Workflow Services](../../windows-workflow-foundation/how-to-enable-sql-persistence-for-workflows-and-workflow-services.md). For more information about the individual settings for the `<sqlWorkflowInstanceStore>` behavior element, see [SQL Workflow Instance Store](../../windows-workflow-foundation/sql-workflow-instance-store.md).
 
     > [!NOTE]
     > The preceding configuration example uses simplified configuration. For more information, see [Simplified Configuration](../simplified-configuration.md)

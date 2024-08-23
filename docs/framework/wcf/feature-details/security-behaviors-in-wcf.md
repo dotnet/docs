@@ -134,7 +134,7 @@ This article focuses on configuring the following behaviors related to security 
 
 #### \<issuerChannelBehaviors>
 
- Use the [\<issuerChannelBehaviors>](../../configure-apps/file-schema/wcf/issuerchannelbehaviors-element.md) to add WCF client behaviors used when communicating with a security token service. Define client behaviors in the [\<endpointBehaviors>](../../configure-apps/file-schema/wcf/endpointbehaviors.md) section. To use a defined behavior, add an <`add`> element to the `<issuerChannelBehaviors>` element with two attributes. Set the `issuerAddress` to the URL of the security token service and set the `behaviorConfiguration` attribute to the name of the defined endpoint behavior, as shown in the following example.
+ Use the [\<issuerChannelBehaviors>](../../configure-apps/file-schema/wcf/issuerchannelbehaviors-element.md) to add WCF client behaviors used when communicating with a security token service. Define client behaviors in the [\<endpointBehaviors>](../../configure-apps/file-schema/wcf/endpointbehaviors.md) section. To use a defined behavior, add an `<add>` element to the `<issuerChannelBehaviors>` element with two attributes. Set the `issuerAddress` to the URL of the security token service and set the `behaviorConfiguration` attribute to the name of the defined endpoint behavior, as shown in the following example.
 
 ```xml
 <clientCredentials>

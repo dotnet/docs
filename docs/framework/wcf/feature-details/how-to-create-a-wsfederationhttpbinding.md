@@ -2,10 +2,10 @@
 description: "Learn more about: How to: Create a WSFederationHttpBinding"
 title: "How to: Create a WSFederationHttpBinding"
 ms.date: "03/30/2017"
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "WCF, federation"
   - "federation"
 ms.assetid: e54897d7-aa6c-46ec-a278-b2430c8c2e10
@@ -90,7 +90,7 @@ In Windows Communication Foundation (WCF), the <xref:System.ServiceModel.WSFeder
 
 14. Specify the binding created in the previous step by setting the `binding` and `bindingConfiguration` attributes of the `<issuer>` element.
 
-15. Not used on the client; optional on the service. Create an `<issuerMetadata>` element as a child of the <`message`> element. Then, in an `address` attribute on the `<issuerMetadata>` element, specify the address at which the security token service is to publish its metadata. Optionally, add an `<identity>` child element and specify the identity of the security token service.
+15. Not used on the client; optional on the service. Create an `<issuerMetadata>` element as a child of the `<message>` element. Then, in an `address` attribute on the `<issuerMetadata>` element, specify the address at which the security token service is to publish its metadata. Optionally, add an `<identity>` child element and specify the identity of the security token service.
 
 16. Optional on both the client and the service. Add a `<claimTypeRequirements>` element as a child of the `<message>` element. Specify required and optional claims that the service relies on by adding [\<add>](../../configure-apps/file-schema/wcf/add-of-claimtyperequirements.md) elements to the `<claimTypeRequirements>` element and specifying the claim type with the `claimType` attribute. Specify whether a given claim is required or optional by setting the `isOptional` attribute.
 

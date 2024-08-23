@@ -13,13 +13,13 @@ The role provider feature uses a SQL Server database to store user information. 
 
 ## Configure the role provider
 
-1. In the Web.config file, under the <`system.web`> element, add a <`roleManager`> element and set its `enabled` attribute to `true`.
+1. In the Web.config file, under the `<system.web>` element, add a `<roleManager>` element and set its `enabled` attribute to `true`.
 
 2. Set the `defaultProvider` attribute to `SqlRoleProvider`.
 
-3. As a child to the <`roleManager`> element, add a <`providers`> element.
+3. As a child to the `<roleManager>` element, add a `<providers>` element.
 
-4. As a child to the <`providers`> element, add an <`add`> element with the following attributes set to appropriate values: `name`, `type`, `connectionStringName`, and `applicationName`, as shown in the following example.
+4. As a child to the `<providers>` element, add an `<add>` element with the following attributes set to appropriate values: `name`, `type`, `connectionStringName`, and `applicationName`, as shown in the following example.
 
     ```xml
     <!-- Configure the Sql Role Provider. -->
@@ -38,13 +38,13 @@ The role provider feature uses a SQL Server database to store user information. 
 
 1. In the Web.config file, add a [\<system.serviceModel>](../../configure-apps/file-schema/wcf/system-servicemodel.md) element.
 
-2. Add a [\<behaviors>](../../configure-apps/file-schema/wcf/behaviors.md) element to the <`system.ServiceModel`> element.
+2. Add a [\<behaviors>](../../configure-apps/file-schema/wcf/behaviors.md) element to the `<system.ServiceModel>` element.
 
-3. Add a [\<serviceBehaviors>](../../configure-apps/file-schema/wcf/servicebehaviors.md) to the <`behaviors`> element.
+3. Add a [\<serviceBehaviors>](../../configure-apps/file-schema/wcf/servicebehaviors.md) to the `<behaviors>` element.
 
 4. Add a [\<behavior>](../../configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md) element and set the `name` attribute to an appropriate value.
 
-5. Add a [\<serviceAuthorization>](../../configure-apps/file-schema/wcf/serviceauthorization-element.md) to the <`behavior`> element.
+5. Add a [\<serviceAuthorization>](../../configure-apps/file-schema/wcf/serviceauthorization-element.md) to the `<behavior>` element.
 
 6. Set the `principalPermissionMode` attribute to `UseAspNetRoles`.
 

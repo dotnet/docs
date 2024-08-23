@@ -53,9 +53,9 @@ For more exact control, such as setting redirect URIs, you can supply specific a
 
 ## Interactive brokered authentication
 
-This method interactively authenticates an application through [`InteractiveBrowserCredential`](/dotnet/api/azure.identity.interactivebrowsercredential?view=azure-dotnet) by collecting user credentials using the system authentication broker. A system authentication broker is an app running on a user's machine that manages the authentication handshakes and token maintenance for all connected accounts. Currently, only the Windows authentication broker, Web Account Manager (WAM), is supported. Users on macOS and Linux will be authenticated through a browser.
+This method interactively authenticates an application through [`InteractiveBrowserCredential`](/dotnet/api/azure.identity.interactivebrowsercredential?view=azure-dotnet) by collecting user credentials using the system authentication broker. A system authentication broker is an app running on a user's machine that manages the authentication handshakes and token maintenance for all connected accounts. Currently, only the Windows authentication broker, Web Account Manager (WAM), is supported. Users on macOS and Linux will be authenticated through the non-brokered interactive browser flow.
 
-WAM enables identity providers such as Microsoft Entra ID to natively plug into the OS and provide the service to other apps to streamline the login process. WAM offers the following benefits:
+WAM enables identity providers such as Microsoft Entra ID to natively plug into the OS and provide the service to other apps to provide a more secure login process. WAM offers the following benefits:
 
 - **Feature support**: Apps can access OS-level and service-level capabilities, including Windows Hello, conditional access policies, and FIDO keys.
 - **Streamlined single sign-on**: Apps can use the built-in account picker, allowing the user to select an existing account instead of repeatedly entering the same credentials.

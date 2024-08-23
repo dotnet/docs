@@ -1,8 +1,7 @@
 ---
-description: "Learn more about: How to: Use the ASP.NET Authorization Manager Role Provider with a Service"
-title: "How to: Use the ASP.NET Authorization Manager Role Provider with a Service"
+description: "Learn how to use the ASP.NET Authorization Manager Role Provider with a Service"
+title: "Use the ASP.NET Authorization Manager Role Provider with a Service"
 ms.date: "03/30/2017"
-ms.assetid: f21deb81-91ef-49ef-94d6-494785143271
 ---
 # How to: Use the ASP.NET Authorization Manager Role Provider with a Service
 
@@ -25,7 +24,7 @@ When ASP.NET hosts a Web service, you can integrate Authorization Manager into t
 </system.web>
 ```
 
- For more information about integrating an ASP.NET role provider with a WCF application, see [How to: Use the ASP.NET Role Provider with a Service](how-to-use-the-aspnet-role-provider-with-a-service.md). For more information about using Authorization Manager with ASP.NET, see [How to: Use Authorization Manager (AzMan) with ASP.NET 2.0](/previous-versions/msp-n-p/ff649313(v=pandp.10)).
+ For more information about integrating an ASP.NET role provider with a WCF application, see [How to: Use the ASP.NET Role Provider with a Service](how-to-use-the-aspnet-role-provider-with-a-service.md).
 
 ## See also
 

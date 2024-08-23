@@ -2,23 +2,20 @@
 description: "Learn more about: Security Behaviors in WCF"
 title: "Security Behaviors in WCF"
 ms.date: "03/30/2017"
-ms.assetid: 513232c0-39fd-4409-bda6-5ebd5e0ea7b0
 ---
 # Security Behaviors in WCF
 
-In Windows Communication Foundation (WCF), behaviors modify run-time behavior at the service level or at the endpoint level. (For more information about behaviors in general, see [Specifying Service Run-Time Behavior](../specifying-service-run-time-behavior.md).) *Security behaviors* allow control over credentials, authentication, authorization, and auditing logs. You can use behaviors either by programming or through configuration. This topic focuses on configuring the following behaviors related to security functions:
+In Windows Communication Foundation (WCF), behaviors modify run-time behavior at the service level or at the endpoint level. (For more information about behaviors in general, see [Specifying Service Run-Time Behavior](../specifying-service-run-time-behavior.md).) *Security behaviors* allow control over credentials, authentication, authorization, and auditing logs. You can use behaviors either by programming or through configuration.
 
-- [\<serviceCredentials>](../../configure-apps/file-schema/wcf/servicecredentials.md).
+This article focuses on configuring the following behaviors related to security functions:
 
-- [\<clientCredentials>](../../configure-apps/file-schema/wcf/clientcredentials.md).
+- [\<serviceCredentials>](../../configure-apps/file-schema/wcf/servicecredentials.md)
+- [\<clientCredentials>](../../configure-apps/file-schema/wcf/clientcredentials.md)
+- [\<serviceAuthorization>](../../configure-apps/file-schema/wcf/serviceauthorization-element.md)
+- [\<serviceSecurityAudit>](../../configure-apps/file-schema/wcf/servicesecurityaudit.md)
+- [\<serviceMetadata>](../../configure-apps/file-schema/wcf/servicemetadata.md), which also enables you to specify a secure endpoint that clients can access for metadata
 
-- [\<serviceAuthorization>](../../configure-apps/file-schema/wcf/serviceauthorization-element.md).
-
-- [\<serviceSecurityAudit>](../../configure-apps/file-schema/wcf/servicesecurityaudit.md).
-
-- [\<serviceMetadata>](../../configure-apps/file-schema/wcf/servicemetadata.md), which also enables you to specify a secure endpoint that clients can access for metadata.
-
-## Setting Credentials with Behaviors
+## Set Credentials with Behaviors
 
  Use the [\<serviceCredentials>](../../configure-apps/file-schema/wcf/servicecredentials.md) and [\<clientCredentials>](../../configure-apps/file-schema/wcf/clientcredentials.md) to set credential values for a service or client. The underlying binding configuration determines whether a credential has to be set. For example, if the security mode is set to `None`, both clients and services do not authenticate each other and require no credentials of any type.
 
@@ -88,7 +85,7 @@ In Windows Communication Foundation (WCF), behaviors modify run-time behavior at
 
  For more information about using this configuration element, see [How to: Configure Credentials on a Federation Service](how-to-configure-credentials-on-a-federation-service.md).
 
-#### Allowing Anonymous CardSpace Users
+#### Allow Anonymous CardSpace Users
 
  Setting the `AllowUntrustedRsaIssuers` attribute of the `<IssuedTokenAuthentication>` element to `true` explicitly allows any client to present a self-issued token signed with an arbitrary RSA key pair. The issuer is *untrusted* because the key has no issuer data associated with it. A CardSpace user can create a self-issued card that includes self-provided claims of identity. Use this capability with caution. To use this feature, think of the RSA public key as a more secure password that should be stored in a database along with a user name. Before allowing a client access to the service, verify the client-presented RSA public key by comparing it with the stored public key for the presented user name. This presumes that you have established a registration process whereby users can register their user names and associate them with the self-issued RSA public keys.
 
@@ -202,7 +199,7 @@ In Windows Communication Foundation (WCF), behaviors modify run-time behavior at
 </behaviors>
 ```
 
-## Configuring Security Audits
+## Configure Security Audits
 
  Use the [\<serviceSecurityAudit>](../../configure-apps/file-schema/wcf/servicesecurityaudit.md) to specify the log written to, and what types of events to log. For more information, see [Auditing](auditing-security-events.md).
 

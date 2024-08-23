@@ -48,9 +48,7 @@ WAM enables identity providers such as Microsoft Entra ID to natively plug into 
 - **Enhanced security**: Bug fixes and enhancements ship with Windows.
 - **Token protection**: Refresh tokens are device-bound, and apps can acquire device-bound access tokens.
 
-Personal Microsoft accounts and work or school accounts are supported. If a supported version of Windows is used, the default browser-based UI is replaced with a smoother authentication experience, similar to Windows built-in apps.
-
-Interactive brokered authentication enables the application for all operations allowed by the interactive login credentials.
+Interactive brokered authentication enables the application for all operations allowed by the interactive login credentials. Personal Microsoft accounts and work or school accounts are supported. If a supported version of Windows is used, the default browser-based UI is replaced with a smoother authentication experience, similar to Windows built-in apps.
 
 ### Enable applications for interactive brokered authentication
 
@@ -118,7 +116,7 @@ For more information, see [Microsoft identity platform and the OAuth 2.0 device 
 
 Device code authentication in a development environment enables the application for all operations allowed by the interactive login credentials. As a result, if you're the owner or administrator of your subscription, your code has inherent access to most resources in that subscription without having to assign any specific permissions. However, you can use this method with a specific client ID, rather than the default, for which you can assign specific permissions.
 
-## Authentication with a username and password
+## Username and password authentication
 
 This method authenticates an application using previously collected credentials and the [UsernamePasswordCredential](/dotnet/api/azure.identity.usernamepasswordcredential) object.
 

@@ -94,7 +94,7 @@ This topic is continued with a couple of example walkthroughs for using OpenTele
 
 ## OpenTelemetry in .NET Aspire
 
-[Aspire](/dotnet/aspire/get-started/aspire-overview) is a set of extensions to .NET to make it easy to create and work with distributed applications. One of the benefits of using Aspire is that telemetry is built in, using the .NET OpenTelemetry libraries. The default project templates for Aspire contain a `ServiceDefaults` project, part of which is to setup and configure OTel. The Service Defaults project is referenced and initialized by each service in an Aspire solution.
+[Aspire](/dotnet/aspire/get-started/aspire-overview) is a set of extensions to .NET to make it easy to create and work with distributed applications. One of the benefits of using Aspire is that telemetry is built in, using the OpenTelemetry libraries for .NET. The default project templates for Aspire contain a `ServiceDefaults` project, part of which is to setup and configure OTel. The Service Defaults project is referenced and initialized by each service in an Aspire solution.
 
 The Service Defaults project template includes the OTel SDK, ASP.NET, HttpClient and Runtime Instrumentation packages, and those are configured in the [`Extensions.cs`](https://github.com/dotnet/aspire/blob/main/src/Aspire.ProjectTemplates/templates/aspire-servicedefaults/Extensions.cs) file.  For exporting telemetry Aspire includes the OTLP exporter by default so that it can provide telemetry visualization using the Aspire Dashboard.
 

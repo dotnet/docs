@@ -28,7 +28,7 @@ There are other features in C# that aren't in Java. You'll see features like [`a
 
 There are also some similar features between C# and Java that have subtle but important differences:
 
-1. [***Properties***](../properties.md) and [***Indexers***](../indexers.md): Both properties and indexers (treating a class like an array or dictionary) have language support. In Java, they're naming conventions for methods starting with `get` and `set`.
+1. [***Properties***](../programming-guide/classes-and-structs/properties.md) and [***Indexers***](/dotnet/csharp/programming-guide/indexers): Both properties and indexers (treating a class like an array or dictionary) have language support. In Java, they're naming conventions for methods starting with `get` and `set`.
 1. [***Records***](../fundamentals/types/records.md): In C#, records can be either `class` (reference) or `struct` (value) types. C# records can be immutable, but aren't required to be immutable.
 1. [***Tuples***](../language-reference/builtin-types/value-tuples.md) have different syntax in C# and Java.
 1. [***Attributes***](../language-reference/attributes/general.md) are similar to Java annotations.

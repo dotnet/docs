@@ -1,7 +1,7 @@
 ---
 title: "Using Properties"
 description: These examples illustrate using properties in C#. See how the get and set accessors implement read and write access and find out about uses for properties.
-ms.date: 03/15/2024
+ms.date: 08/20/2024
 helpviewer_keywords: 
   - "set accessor [C#]"
   - "get accessor [C#]"
@@ -105,5 +105,6 @@ In this example, two classes, `Cube` and `Square`, implement an abstract class, 
 ## See also
 
 - [Properties](properties.md)
-- [Interface Properties](interface-properties.md)
-- [Auto-Implemented Properties](auto-implemented-properties.md)
+- [Interface properties](interface-properties.md)
+- [Auto-implemented properties](auto-implemented-properties.md)
+- [Partial properties](../../language-reference/keywords/partial-member.md)

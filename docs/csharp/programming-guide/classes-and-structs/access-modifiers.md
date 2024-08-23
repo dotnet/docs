@@ -1,7 +1,7 @@
 ---
 title: "Access Modifiers"
 description: All types and type members in C# have an accessibility level that controls whether they can be used from other code. Review this list of access modifiers.
-ms.date: 04/11/2024
+ms.date: 08/20/2024
 helpviewer_keywords:
   - "C# Language, access modifiers"
   - "access modifiers [C#], about"
@@ -37,7 +37,7 @@ The following examples demonstrate how to specify access modifiers on a type and
 
 Not all access modifiers are valid for all types or members in all contexts. In some cases, the accessibility of the containing type constrains the accessibility of its members.
 
-When one declaration of a [partial class or partial method](./partial-classes-and-methods.md) doesn't declare its accessibility, it has the accessibility of the other declaration. The compiler generates an error if multiple declarations for the partial class or method declare different accessibilities.
+Multiple declarations of a [partial class or partial member](./partial-classes-and-methods.md) must have the same accessibility. If one declaration of the partial class or member doesn't include an access modifier, the other declarations can't declare an access modifier. The compiler generates an error if multiple declarations for the partial class or method declare different accessibilities.
 
 ## Class and struct accessibility
 

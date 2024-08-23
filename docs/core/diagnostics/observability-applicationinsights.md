@@ -23,7 +23,7 @@ Take the same project from [Step 5](./observability-OTLP-example.md#5-configure-
 </ItemGroup>
 ```
 
-> [!Note]
+> [!NOTE]
 > Replace the version with the latest available
 
 ## 2. Setup the exporter
@@ -44,7 +44,7 @@ Application Insights identifies which instance to use to store and process data 
 
 [![Connection String in Azure Portal](./media/portal_ui.thumb.png)](./media/portal_ui.png#lightbox)
 
-If you're using Azure App Service, this connection string is automatically passed to the application as an environment variable. For other services or when running locally, you need to pass it using the `APPLICATIONINSIGHTS_CONNECTION_STRING` environment variable or in `appsettings.json`. For running locally, it's easiest to add the value to `appsettings.development.json`:
+If you're using Azure App Service, this connection string is automatically passed to the application as an environment variable. For other services or when running locally, you need to pass it using the `APPLICATIONINSIGHTS_CONNECTION_STRING` environment variable or in _appsettings.json_. For running locally, it's easiest to add the value to _appsettings.development.json_:
 
 ```json
 "AzureMonitor": {

@@ -9,15 +9,15 @@ ms.topic: conceptual
 
 This is one of a series of examples to illustrate [.NET observability with OpenTelemetry](./observability-with-otel.md).
 
-In addition to being a standard part of .NET Aspire, the Aspire Dashboard is available as a [standalone docker container](/dotnet/aspire/fundamentals/dashboard/standalone?tabs=powershell), which provides an OTLP endpoint telemetry can be sent to, and it will visualize the logs, metrics and traces. Using the dashboard in this way has no dependency on Aspire, it will visualize telemetry from any application sending it telemetry via OTLP. It works equally well for applications written in Java, GoLang, Python etc. provided that they can send their telemetry to an OTLP endpoint.
+In addition to being a standard part of .NET Aspire, the Aspire Dashboard is available as a [standalone docker container](/dotnet/aspire/fundamentals/dashboard/standalone?tabs=powershell), which provides an OTLP endpoint telemetry can be sent to, and it will visualize the logs, metrics and traces. Using the dashboard in this way has no dependency on .NET Aspire, it will visualize telemetry from any application sending it telemetry via OTLP. It works equally well for applications written in Java, GoLang, Python etc. provided that they can send their telemetry to an OTLP endpoint.
 
-Using the Aspire Dashboard has less configuration and moving pieces than using Open Source solutions such as [Prometheus, Grafana and Jaeger](./observability-PrGrJa-example.md), but unlike those tools, the Aspire Dashboard is intended as a developer visualization tool, and not for production monitoring.
+Using the Aspire Dashboard has less configuration and setup steps than using Open Source solutions such as [Prometheus, Grafana and Jaeger](./observability-PrGrJa-example.md), but unlike those tools, the Aspire Dashboard is intended as a developer visualization tool, and not for production monitoring.
 
 ## 1. Create the project
 
 Create a simple web API project by using the **ASP.NET Core Empty** template in Visual Studio or the following .NET CLI command:
 
-``` shell
+``` dotnetcli
 dotnet new web
 ```
 
@@ -72,7 +72,7 @@ It then registers the OTLP exporter using env vars for its configuration.
 
 ## 6. Configure OTLP Environment variables
 
-The OTLP exporter can be configured via APIs in code, but its more common to configure it via environment variables. Add the following to `AppSettings.Development.json`
+The OTLP exporter can be configured via APIs in code, but its more common to configure it via environment variables. Add the following to _AppSettings.Development.json_
 
 ``` josn
 "OTEL_EXPORTER_OTLP_ENDPOINT": "http://localhost:4317",
@@ -82,7 +82,7 @@ The OTLP exporter can be configured via APIs in code, but its more common to con
 You can add additional environment variables for the [.NET OTLP Exporter](https://github.com/open-telemetry/opentelemetry-dotnet/tree/main/src/OpenTelemetry.Exporter.OpenTelemetryProtocol#exporter-configuration) or common OTel variables such as `OTEL_RESOURCE_ATTRIBUTES` to define [resource attributes](https://opentelemetry.io/docs/concepts/resources/).
 
 > [!Note]
-> A common gotcha is to mix up `AppSettings.json` and `AppSettings.Development.json`, if the latter is present it will be used when you F5 from Visual Studio and any settings in 'AppSettings.json` will be ignored.
+> A common gotcha is to mix up _AppSettings.json_ and _AppSettings.Development.json_, if the latter is present it will be used when you F5 from Visual Studio and any settings in _AppSettings.json_ will be ignored.
 
 ## 7. Start the Aspire Dashboard container
 
@@ -106,7 +106,7 @@ Copy the url shown, and replace `0.0.0.0` with `localhost`, eg `http://localhost
 
 Run the project and then access the API with the browser or curl.
 
-``` shell
+``` dotnetcli
 curl -k http://localhost:7275
 ```
 

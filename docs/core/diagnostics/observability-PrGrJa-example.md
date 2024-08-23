@@ -13,7 +13,7 @@ This example uses Prometheus for metrics collection, Grafana for creating a dash
 
 Create a simple web API project by using the **ASP.NET Core Empty** template in Visual Studio or the following .NET CLI command:
 
-``` shell
+``` dotnetcli
 dotnet new web
 ```
 
@@ -65,7 +65,7 @@ The code uses the Prometheus exporter for metrics, which uses ASP.NET Core to ho
 
 Run the project and then access the API with the browser or curl.
 
-``` shell
+``` dotnetcli
 curl -k http://localhost:7275
 ```
 
@@ -85,7 +85,7 @@ There are a couple of options for how logs can be egressed from .NET:
 
 You can access the metrics using the `/metrics` endpoint.
 
-``` shell
+``` dotnetcli
 curl -k https://localhost:7275/
 Hello World!
 
@@ -108,7 +108,7 @@ The metrics output is a snapshot of the metrics at the time the endpoint is requ
 
 If you look at the console for the server, you'll see the output from the console trace exporter, which outputs the information in a human readable format. This should show two activities, one from your custom `ActivitySource`, and the other from ASP.NET Core:
 
-``` shell
+``` dotnetcli
 Activity.TraceId:            2e00dd5e258d33fe691b965607b91d18
 Activity.SpanId:             3b7a891f55b97f1a
 Activity.TraceFlags:         Recorded
@@ -161,7 +161,7 @@ In a later stage, you'll feed this data into Jaeger to visualize the distributed
 
 Prometheus is a metrics collection, aggregation, and time-series database system. You configure it with the metric endpoints for each service and it periodically scrapes the values and stores them in its time-series database. You can then analyze and process them as needed.
 
-The metrics data that's exposed in Prometheus format is a point-in-time snapshot of the process's metrics. Each time a request is made to the metrics endpoint, it will report the current values. While current values are interesting, they become more valuable when compared to historical values to see trends and detect if values are anomalous. Commonly, services have usage spikes based on the time of day or world events, such a shopping spree on Black Friday. By comparing the values against historical trends, you can detect if they are abnormal, or if a metric is slowly getting worse over time.
+The metrics data that's exposed in Prometheus format is a point-in-time snapshot of the process's metrics. Each time a request is made to the metrics endpoint, it will report the current values. While current values are interesting, they become more valuable when compared to historical values to see trends and detect if values are anomalous. Commonly, services have usage spikes based on the time of day or world events, such as a holiday shopping spree. By comparing the values against historical trends, you can detect if they are abnormal, or if a metric is slowly getting worse over time.
 
 The process doesn't store any history of these metric snapshots. Adding that capability to the process could be resource intensive. Also, in a distributed system you commonly have multiple instances of each node, so you want to be able to collect the metrics from all of them and then aggregate and compare with their historical values.
 
@@ -171,7 +171,7 @@ Download Prometheus for your platform from [https://prometheus.io/download/](htt
 
 Look at the top of the output of your running server to get the port number for the **http** endpoint. For example:
 
-``` shell
+``` dotnetcli
 info: Microsoft.Hosting.Lifetime[14]
       Now listening on: https://localhost:7275
 info: Microsoft.Hosting.Lifetime[14]
@@ -195,7 +195,7 @@ Modify the Prometheus YAML configuration file to specify the port for your HTTP 
 
 Start Prometheus, and look in the output for the port it's running on, typically 9090:
 
-``` shell
+``` dotnetcli
 >prometheus.exe
 ...
 ts=2023-06-16T05:29:02.789Z caller=web.go:562 level=info component=web msg="Start listening for connections" address=0.0.0.0:9090
@@ -260,7 +260,7 @@ Download the latest binary distribution archive of Jaeger for your platform from
 
 Then, extract the download to a local location that's easy to access. Run the *jaeger-all-in-one(.exe)* executable:
 
-``` shell
+``` dotnetcli
 ./jaeger-all-in-one --collector.otlp.enabled
 ```
 
@@ -284,7 +284,7 @@ Now, you should be able to see the Jaeger UI at `http://localhost:16686/` from a
 
 [![Jaeger query for traces](./media/jaeger-search-results.thumb.png)](./media/jaeger-search-results.png#lightbox)
 
-To see a list of traces, select `OTel-Prometheus-grafana-Jaeger` from the **Service** dropdown. Selecting a trace should show a gant chart of the activities as part of that trace. Clicking on each of the operations shows more details about the activity.
+To see a list of traces, select `OTel-Prometheus-grafana-Jaeger` from the **Service** dropdown. Selecting a trace should show a gantt chart of the activities as part of that trace. Clicking on each of the operations shows more details about the activity.
 
 [![Jaeger Operation Details](./media/jaeger-activity-details.thumb.png)](./media/jaeger-activity-details.png#lightbox)
 

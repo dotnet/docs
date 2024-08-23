@@ -20,7 +20,7 @@ Interactive browser authentication enables the application for all operations al
 
 Perform the following steps to enable the application to authenticate through the interactive browser flow. These steps also work for the [device code authentication](#device-code-authentication) flow described later. This process is only necessary if you are using `InteractiveBrowserCredential` in your code.
 
-1. On the [Azure portal](https://portal.azure.com), navigate to Microsoft Entra ID and select **App registrations** on the left navigation.
+1. In the [Azure portal](https://portal.azure.com), navigate to **Microsoft Entra ID** and select **App registrations** on the left navigation.
 1. Select the registration for your app, then select **Authentication**.
 1. Under **Advanced settings**, select **Yes** for **Allow public client flows**.
 1. Select **Save** to apply the changes.
@@ -54,18 +54,18 @@ Interactive brokered authentication enables the application for all operations a
 
 Perform the following steps to enable the application to authenticate through the interactive broker flow.
 
-1. On the [Azure portal](https://portal.azure.com), navigate to Microsoft Entra ID and select **App registrations** on the left-hand menu.
+1. On the [Azure portal](https://portal.azure.com), navigate to **Microsoft Entra ID** and select **App registrations** on the left-hand menu.
 1. Select the registration for your app, then select **Authentication**.
 1. Add the WAM redirect URI to your app registration via a platform configuration:
     1. Under **Platform configurations**, select **+ Add a platform**.
     1. Under **Configure platforms**, select the tile for your application type (platform) to configure its settings, such as **mobile and desktop applications**.
-    1. In **Custom redirect URIs**, enter the WAM redirect URI:
+    1. In **Custom redirect URIs**, enter the following WAM redirect URI:
 
         ```text
         ms-appx-web://microsoft.aad.brokerplugin/{client_id}
         ```
 
-         The `{client_id}` placeholder must be replaced with the Application (client) ID listed on the Overview pane of the app registration.
+         The `{client_id}` placeholder must be replaced with the **Application (client) ID** listed on the **Overview** pane of the app registration.
 
     1. Select **Configure**.
 
@@ -95,7 +95,7 @@ The following screenshot shows the user sign-in experience:
 
 ### Authenticate the default system account via WAM
 
-Many people always sign in to Windows with the same user account and, therefore, only ever want to authenticate using that account. WAM and `InteractiveBrowserCredential` also support a silent login process that automatically uses a default account so the user does not have to repeatedly select it.
+Many people always sign in to Windows with the same user account and, therefore, only ever want to authenticate using that account. WAM and `InteractiveBrowserCredential` also support a silent login process that automatically uses a default account so the user doesn't have to repeatedly select it.
 
 The following example shows how to enable sign-in with the default system account:
 

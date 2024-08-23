@@ -33,7 +33,7 @@ Perform the following steps to enable the application to authenticate through th
 
 The following example demonstrates using an [`InteractiveBrowserCredential`](/dotnet/api/azure.identity.interactivebrowsercredential) to authenticate with the [`BlobServiceClient`](/dotnet/api/azure.storage.blobs.blobserviceclient):
 
-:::code language="csharp" source="snippets/additional-auth/InteractiveBrokeredAuth.cs" highlight="15-17":::
+:::code language="csharp" source="../snippets/additional-auth/InteractiveBrowserAuth.cs" highlight="15-17":::
 
 For more exact control, such as setting redirect URIs, you can supply specific arguments to `InteractiveBrowserCredential` such as `redirect_uri`.
 
@@ -84,7 +84,7 @@ Perform the following steps to enable the application to authenticate through th
 
 The following example demonstrates using an [`InteractiveBrowserCredential`](/dotnet/api/azure.identity.interactivebrowsercredential?view=azure-dotnet) in a Windows Forms app to authenticate with the [`BlobServiceClient`](/dotnet/api/azure.storage.blobs.blobserviceclient):
 
-:::code language="csharp" source="snippets/additional-auth/InteractiveBrokeredAuth.cs" highlight="16-20":::
+:::code language="csharp" source="../snippets/additional-auth/InteractiveBrokeredAuth.cs" highlight="16-20":::
 
 > [!NOTE]
 > Visit the [Parent window handles](/entra/msal/dotnet/acquiring-tokens/desktop-mobile/wam#parent-window-handles) and [Retrieve a window handle](/windows/apps/develop/ui-input/retrieve-hwnd) articles for more information about retrieving window handles.
@@ -101,7 +101,7 @@ Many people always sign in to Windows with the same user account and, therefore,
 
 The following example shows how to enable sign-in with the default system account:
 
-:::code language="csharp" source="snippets/additional-auth/SilentBrokeredAuth.cs" highlight="16-24":::
+:::code language="csharp" source="../snippets/additional-auth/SilentBrokeredAuth.cs" highlight="16-24":::
 
 Once you opt into this behavior, the credential attempts to sign in by asking the underlying Microsoft Authentication Library (MSAL) to perform the sign-in for the default system account. If the sign-in fails, the credential falls back to displaying the account picker dialog, from which the user can select the appropriate account.
 

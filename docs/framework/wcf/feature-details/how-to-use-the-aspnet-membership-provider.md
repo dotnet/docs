@@ -6,7 +6,6 @@ helpviewer_keywords:
   - "WCF and ASP.NET"
   - "WCF, authorization"
   - "WCF, security"
-ms.assetid: 322c56e0-938f-4f19-a981-7b6530045b90
 ---
 # How to: Use the ASP.NET Membership Provider
 
@@ -21,7 +20,7 @@ Windows Communication Foundation (WCF) developers can take advantage of these fe
 > [!NOTE]
 > WCF does not provide methods to populate the database with user name/password combinations or other user information.
 
-### To configure the membership provider
+## To configure the membership provider
 
 1. In the Web.config file, under the <`system.web`> element, create a <`membership`> element.
 
@@ -52,7 +51,7 @@ Windows Communication Foundation (WCF) developers can take advantage of these fe
     </membership>
     ```
 
-### To configure service security to accept the user name/password combination
+## To configure service security to accept the user name/password combination
 
 1. In the configuration file, under the [\<system.serviceModel>](../../configure-apps/file-schema/wcf/system-servicemodel.md) element, add a [\<bindings>](../../configure-apps/file-schema/wcf/bindings.md) element.
 
@@ -79,7 +78,7 @@ Windows Communication Foundation (WCF) developers can take advantage of these fe
     </system.serviceModel>
     ```
 
-### To configure a service to use the membership provider
+## To configure a service to use the membership provider
 
 1. As a child to the `<system.serviceModel>` element, add a [\<behaviors>](../../configure-apps/file-schema/wcf/behaviors.md) element
 

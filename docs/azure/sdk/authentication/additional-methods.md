@@ -29,25 +29,11 @@ Perform the following steps to enable the application to authenticate through th
     > [!IMPORTANT]
     > You must also be the admin of your tenant to grant consent to your application when you sign in for the first time.
 
-If you can't configure the device code flow option, your application might need to be multitenant. To make this change, navigate to the **Authentication** panel, select **Accounts in any organizational directory** (under **Supported account types**), and then select **Yes** for **Allow public client flows**.
-
 ### Example using InteractiveBrowserCredential
 
 The following example demonstrates using an [`InteractiveBrowserCredential`](/dotnet/api/azure.identity.interactivebrowsercredential) to authenticate with the [`BlobServiceClient`](/dotnet/api/azure.storage.blobs.blobserviceclient):
 
-```csharp
-using Azure.Identity;
-using Azure.Storage.Blobs;
-
-var client = new BlobServiceClient(
-    new Uri("https://<storage-account-name>.blob.core.windows.net"),
-    new InteractiveBrowserCredential());
-
-foreach (var blobItem in client.GetBlobContainers())
-{
-    Console.WriteLine(blobItem.Name);
-}
-```
+:::code language="csharp" source="snippets/additional-auth/InteractiveBrokeredAuth.cs" highlight="15-17":::
 
 For more exact control, such as setting redirect URIs, you can supply specific arguments to `InteractiveBrowserCredential` such as `redirect_uri`.
 
@@ -64,7 +50,7 @@ WAM enables identity providers such as Microsoft Entra ID to natively plug into 
 
 Personal Microsoft accounts and work or school accounts are supported. If a supported version of Windows is used, the default browser-based UI is replaced with a smoother authentication experience, similar to Windows built-in apps.
 
-Interactive brokered authentication enables the application for all operations allowed by the interactive login credentials. As a result, if you're the owner or administrator of your subscription, your code has inherent access to most resources in that subscription without having to assign any specific permissions.
+Interactive brokered authentication enables the application for all operations allowed by the interactive login credentials.
 
 ### Enable applications for interactive brokered authentication
 
@@ -98,40 +84,7 @@ Perform the following steps to enable the application to authenticate through th
 
 The following example demonstrates using an [`InteractiveBrowserCredential`](/dotnet/api/azure.identity.interactivebrowsercredential?view=azure-dotnet) in a Windows Forms app to authenticate with the [`BlobServiceClient`](/dotnet/api/azure.storage.blobs.blobserviceclient):
 
-```csharp
-using Azure.Identity;
-using Azure.Identity.Broker;
-
-private void button1_Click(object sender, EventArgs e)
-{
-    // Get the handle of the current window
-    IntPtr windowHandle = this.Handle;
-
-    var credential = new InteractiveBrowserCredential(
-        new InteractiveBrowserCredentialBrokerOptions(windowHandle));
-
-    // To authenticate and authorize with an app, substitute
-    // <tenant-id> and <client-id> with the values for your app and tenant.
-    // var credential = new InteractiveBrowserCredential(
-    //    new InteractiveBrowserCredentialBrokerOptions(windowHandle)
-    //        { 
-    //            TenantId = "<tenant-id>",
-    //            ClientId = "<client-id>"
-    //        }
-    // );
-
-    var client = new BlobServiceClient(
-        new Uri("https://<storage-account-name>.blob.core.windows.net/"),
-        credential
-    );
-
-    // Prompt for credentials appears on first use of the client
-    foreach (var container in client.GetBlobContainers())
-    {
-        Console.WriteLine(container.Name);
-    }
-}
-```
+:::code language="csharp" source="snippets/additional-auth/InteractiveBrokeredAuth.cs" highlight="16-20":::
 
 > [!NOTE]
 > Visit the [Parent window handles](/entra/msal/dotnet/acquiring-tokens/desktop-mobile/wam#parent-window-handles) and [Retrieve a window handle](/windows/apps/develop/ui-input/retrieve-hwnd) articles for more information about retrieving window handles.
@@ -148,22 +101,7 @@ Many people always sign in to Windows with the same user account and, therefore,
 
 The following example shows how to enable sign-in with the default system account:
 
-```csharp
-using Azure.Identity;
-using Azure.Identity.Broker;
-
-// App code omitted for brevity
-
-IntPtr windowHandle = this.Handle;
-
-var credential = new InteractiveBrowserCredential(
-    new InteractiveBrowserCredentialBrokerOptions(windowHandle)
-    {
-        // Enable silent brokered authentication using the default account
-        UseDefaultBrokerAccount = true,
-    }
-);
-```
+:::code language="csharp" source="snippets/additional-auth/SilentBrokeredAuth.cs" highlight="16-24":::
 
 Once you opt into this behavior, the credential attempts to sign in by asking the underlying Microsoft Authentication Library (MSAL) to perform the sign-in for the default system account. If the sign-in fails, the credential falls back to displaying the account picker dialog, from which the user can select the appropriate account.
 

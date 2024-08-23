@@ -161,10 +161,11 @@ Your partial type declaration can cause the compiler to emit the following warni
 
 For any partial type, the `partial` keyword must immediately precede `class`, `record`, `struct`, or `interface`. The compiler emits an error if it appears in any other order. In addition:
 
-- All declarations of a partial type must match in terms of the type (`class`, `struct`, `record class`, `record struct`, `readonly struct` or `readonly record struct`). - All declarations must include the `partial` modifier.
-- The declarations for a generic partial type must include the same type parameters names in the same order.
+- All declarations of a partial type must match in terms of the type (`class`, `struct`, `record class`, `record struct`, `readonly struct`, or `readonly record struct`).
+- All declarations must include the `partial` modifier.
+- The declarations for a generic partial type must include the same type parameters in the same order.
 
-Some parts of the declaration aren't required to be repeated on all declarations for a type. However, if these elements are repeated on multiple `partial` declarations they must match:
+Some parts of the declaration aren't required to be repeated on all declarations for a type. However, if these elements are repeated on multiple `partial` declarations, they must match:
 
 - Any access modifiers, such as `public`.
 - Any base class or implemented interfaces.
@@ -206,7 +207,7 @@ Partial members have two declarations. The declaration without an implementation
 - **CS8798**: *Partial method must have accessibility modifiers because it has a '`virtual`', '`override`', '`sealed`', '`new`', or '`extern`' modifier.*
 - **CS8817**: *Both partial method declarations must have the same return type.*
 
-Certain `partial` method declarations don't require an *implementing declaration*. If the member returns `void`, doesn't declare any access modifiers (including the default `private` modifier), and doesn't include any of the `virtual`, `override`, `sealed`, or `new` modifiers. Otherwise, any partial method must include both the declaring and implementing declarations.
+Certain `partial` method declarations don't require an *implementing declaration*. That is, if the member returns `void`, doesn't declare any access modifiers (including the default `private` modifier), and doesn't include any of the `virtual`, `override`, `sealed`, or `new` modifiers. Otherwise, any partial method must include both the declaring and implementing declarations.
 
 When a partial method includes an implementing declaration, both declarations must be identical. Exactly one implementing declaration can be defined.
 

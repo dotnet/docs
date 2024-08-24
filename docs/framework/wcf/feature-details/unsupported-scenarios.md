@@ -28,7 +28,7 @@ WCF does not support impersonation and an <xref:System.InvalidOperationException
 
  The state-based SCT can only be created using a custom binding. For more information, see [How to: Create a Security Context Token for a Secure Session](how-to-create-a-security-context-token-for-a-secure-session.md).) In code, the token is enabled by creating a security binding element (either <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> or <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement>) using the <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateSspiNegotiationBindingElement%28System.Boolean%29?displayProperty=nameWithType> or the <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateSecureConversationBindingElement%28System.ServiceModel.Channels.SecurityBindingElement%2CSystem.Boolean%29?displayProperty=nameWithType> method and setting the `requireCancellation` parameter to `false`. The parameter refers to the caching of the SCT. Setting the value to `false` enables the state-based SCT feature.
 
- Alternatively, in configuration, the token is enabled by creating a <`customBinding`>, then adding a <`security`> element, and setting the `authenticationMode` attribute to SecureConversation and the `requireSecurityContextCancellation` attribute to `true`.
+ Alternatively, in configuration, the token is enabled by creating a `<customBinding>`, then adding a `<security>` element, and setting the `authenticationMode` attribute to SecureConversation and the `requireSecurityContextCancellation` attribute to `true`.
 
 > [!NOTE]
 > The preceding requirements are specific. For example, the <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateKerberosBindingElement%2A> creates a binding element that results in a Windows identity, but does not establish an SCT. Therefore, you can use it with the `Required` option on Windows XP.
@@ -82,7 +82,7 @@ FIPS-compliant AES encryption does not work in duplex callbacks under identifica
 
 WCF does not support the following combination of settings because they can prevent client authentication from occurring:
 
-- ASP.NET Impersonation is enabled. This is done in the Web.config file by setting the `impersonate` attribute of the <`identity`> element to `true`.
+- ASP.NET Impersonation is enabled. This is done in the Web.config file by setting the `impersonate` attribute of the `<identity>` element to `true`.
 
 - ASP.NET compatibility mode is enabled by setting the `aspNetCompatibilityEnabled` attribute of the [\<serviceHostingEnvironment>](../../configure-apps/file-schema/wcf/servicehostingenvironment.md) to `true`.
 

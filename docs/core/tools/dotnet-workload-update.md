@@ -29,7 +29,7 @@ dotnet workload update -?|-h|--help
 
 The `dotnet workload update` command updates all installed workloads to the newest available versions. It queries Nuget.org for updated workload manifests. It then updates local manifests, downloads new versions of the installed workloads, and removes all old versions of each workload.
 
-When the command is in workload set mode, workloads are updated according to the workload set version, not the latest version of each individual workload. For more information, see [.NET SDK workload sets](dotnet-workload-sets.md). Workload set mode is available since 8.0.400 SDK.
+When the command is in `workload-set` update mode, workloads are updated according to the workload-set version, not the latest version of each individual workload. For more information, see [.NET SDK workload sets](dotnet-workload-sets.md). `workload-set` mode is available since 8.0.400 SDK.
 
 For more information about the `dotnet workload` commands, see the [dotnet workload install](dotnet-workload-install.md#description) command.
 

@@ -25,10 +25,10 @@ On the other hand, there are potential disadvantages to consider when using QUIC
 
 ## QUIC in .NET
 
-The QUIC implementation was introduced in .NET 5 as the `System.Net.Quic` library. However, up until .NET 7.0 the library was strictly internal and served only as an implementation of HTTP/3. With .NET 7, the library was made public thus exposing its APIs.
+The QUIC implementation was introduced in .NET 5 as the `System.Net.Quic` library. However, up until .NET 7 the library was strictly internal and served only as an implementation of HTTP/3. With .NET 7, the library was made public thus exposing its APIs.
 
 > [!NOTE]
-> In .NET 7.0, the APIs are published as [preview features](https://github.com/dotnet/designs/blob/main/accepted/2021/preview-features/preview-features.md).
+> In .NET 7+, the APIs are published as [preview features](https://github.com/dotnet/designs/blob/main/accepted/2021/preview-features/preview-features.md).
 
 From the implementation perspective, `System.Net.Quic` depends on [MsQuic](https://github.com/microsoft/msquic), the native implementation of QUIC protocol. As a result, `System.Net.Quic` platform support and dependencies are inherited from MsQuic and documented in the [Platform dependencies](#platform-dependencies) section. In short, the MsQuic library is shipped as part of .NET for Windows. But for Linux, you must manually install `libmsquic` via an appropriate package manager. For the other platforms, it's still possible to build MsQuic manually, whether against SChannel or OpenSSL, and use it with `System.Net.Quic`. However, these scenarios are not part of our testing matrix and unforeseen problems might occur.
 
@@ -161,8 +161,8 @@ var serverConnectionOptions = new QuicServerConnectionOptions
     // Same options as for server side SslStream.
     ServerAuthenticationOptions = new SslServerAuthenticationOptions
     {
-        // List of supported application protocols, must be the same or subset of QuicListenerOptions.ApplicationProtocols.
-        ApplicationProtocols = new List<SslApplicationProtocol>() { "protocol-name" },
+        // Specify the application protocols that the server supports. This list must be a subset of the protocols specified in QuicListenerOptions.ApplicationProtocols.
+        ApplicationProtocols = new List<SslApplicationProtocol>() { new SslApplicationProtocol("protocol-name") },
         // Server certificate, it can also be provided via ServerCertificateContext or ServerCertificateSelectionCallback.
         ServerCertificate = serverCertificate
     }
@@ -171,10 +171,10 @@ var serverConnectionOptions = new QuicServerConnectionOptions
 // Initialize, configure the listener and start listening.
 var listener = await QuicListener.ListenAsync(new QuicListenerOptions
 {
-    // Listening endpoint, port 0 means any port.
-    ListenEndPoint = new IPEndPoint(IPAddress.Loopback, 0),
+    // Define the endpoint on which the server will listen for incoming connections. The port number 12345 can be replaced with any valid port number as needed.
+    ListenEndPoint = new IPEndPoint(IPAddress.IPv6Any, 12345),
     // List of all supported application protocols by this listener.
-    ApplicationProtocols = new List<SslApplicationProtocol>() { "protocol-name" },
+    ApplicationProtocols = new List<SslApplicationProtocol>() { new SslApplicationProtocol("protocol-name") },
     // Callback to provide options for the incoming connections, it gets called once per each connection.
     ConnectionOptionsCallback = (_, _, _) => ValueTask.FromResult(serverConnectionOptions)
 });
@@ -235,7 +235,9 @@ var clientConnectionOptions = new QuicClientConnectionOptions
     ClientAuthenticationOptions = new SslClientAuthenticationOptions
     {
         // List of supported application protocols.
-        ApplicationProtocols = new List<SslApplicationProtocol>() { "protocol-name" }
+        ApplicationProtocols = new List<SslApplicationProtocol>() { new SslApplicationProtocol("protocol-name") },
+        // The name of the server the client is trying to connect to. Used for server certificate validation.
+        TargetHost = ""
     }
 };
 
@@ -245,6 +247,9 @@ var connection = await QuicConnection.ConnectAsync(clientConnectionOptions);
 Console.WriteLine($"Connected {connection.LocalEndPoint} --> {connection.RemoteEndPoint}");
 
 // Open a bidirectional (can both read and write) outbound stream.
+// Opening a stream reserves it but does not notify the peer or send any data. If you don't send data, the peer
+// won't be informed about the stream, which can cause AcceptInboundStreamAsync() to hang. To avoid this, ensure
+// you send data on the stream to properly initiate communication.
 var outgoingStream = await connection.OpenOutboundStreamAsync(QuicStreamType.Bidirectional);
 
 // Work with the outgoing stream ...
@@ -265,7 +270,10 @@ await connection.CloseAsync(0x0C);
 await connection.DisposeAsync();
 ```
 
-or more information about how the `QuicConnection` was designed, see the [API proposal](https://github.com/dotnet/runtime/issues/68902).
+> [!NOTE]
+> Opening a stream only reserves it without sending any data. This approach is designed to optimize network usage by avoiding the transmission of nearly empty frames. Since the peer is not notified until actual data is sent, the stream remains inactive from the peer's perspective. If you don't send data, the peer won't recognize the stream, which can cause `AcceptInboundStreamAsync()` to hang as it waits for a meaningful stream. To ensure proper communication, you need to send data after opening the stream.
+
+for more information about how the `QuicConnection` was designed, see the [API proposal](https://github.com/dotnet/runtime/issues/68902).
 
 ### `QuicStream`
 

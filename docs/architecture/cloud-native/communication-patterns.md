@@ -23,7 +23,7 @@ A cluster groups a pool of virtual machines together to form a highly available 
 
 **Figure 4-1**. A Kubernetes cluster in Azure
 
-Across the cluster, microservices communicate with each other through APIs and messaging technologies.
+Across the cluster, [microservices](/azure/architecture/microservices/) communicate with each other through APIs and [messaging technologies](/azure/service-bus-messaging/compare-messaging-services).
 
 While they provide many benefits, microservices are no free lunch. Local in-process method calls between components are now replaced with network calls. Each microservice must communicate over a network protocol, which adds complexity to your system:
 

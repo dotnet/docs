@@ -184,11 +184,11 @@ Developers should be aware that `ServicePointManager` is a static class, meaning
 | `CloseConnectionGroup` | No equivalent | No workaround |
 | `SetTcpKeepAlive` | No direct equivalent API | See <xref:System.Net.Http.SocketsHttpHandler.ConnectCallback>. |
 
-### Usage of ConnectCallback
+## Usage of ConnectCallback
 
 The `ConnectCallback` property in `SocketsHttpHandler` allows developers to customize the process of establishing a TCP connection. This can be useful for scenarios where you need to control DNS resolution or apply specific socket options on the connection. By using `ConnectCallback`, you can intercept and modify the connection process before it is used by `HttpClient`.
 
-#### Example: Binding IP Address to Socket
+### Example: Binding IP Address to Socket
 
 In the old approach using `HttpWebRequest`, you might have used custom logic to bind a specific IP address to a socket. Here's how you can achieve similar functionality using `HttpClient` and `ConnectCallback`:
 
@@ -224,7 +224,7 @@ var client = new HttpClient(handler);
 var response = await client.GetAsync(uri);
 ```
 
-#### Example: Applying Specific Socket Options
+### Example: Applying Specific Socket Options
 
 If you need to apply specific socket options, such as enabling TCP keep-alive, you can use `ConnectCallback` to configure the socket before it is used by `HttpClient`. In fact, `ConnectCallback` is more flexible to configure socket options.
 
@@ -269,11 +269,11 @@ var client = new HttpClient(handler);
 var response = await client.GetAsync(uri);
 ```
 
-### Usage of Certificate Related Properties in HttpClient
+## Usage of Certificate Related Properties in HttpClient
 
 When working with `HttpClient`, you may need to handle client certificates for various purposes, such as custom validation of server certificates or fetching the server certificate. `HttpClient` provides several properties and options to manage certificates effectively.
 
-#### Example: Enabling CRL Check with SocketsHttpHandler
+### Example: Enabling CRL Check with SocketsHttpHandler
 
 The `CheckCertificateRevocationList` property in `SocketsHttpHandler` allows developers to enable or disable the check for certificate revocation lists (CRL) during SSL/TLS handshake. Enabling this property ensures that the client verifies whether the server's certificate has been revoked, enhancing the security of the connection.
 
@@ -300,7 +300,7 @@ var client = new HttpClient(handler);
 var response = await client.GetAsync(uri);
 ```
 
-#### Example: Fetch Certificate
+### Example: Fetch Certificate
 
 To fetch the certificate from the RemoteCertificateValidationCallback in HttpClient, you can use the ServerCertificateCustomValidationCallback property of HttpClientHandler or SocketsHttpHandler. This callback allows you to inspect the server's certificate during the SSL/TLS handshake.
 

@@ -137,7 +137,7 @@ Developers should be aware that `ServicePointManager` is a static class, meaning
 
 | <xref:System.Net.ServicePointManager> Old API | New API | Notes |
 |---------|----------------------|-------|
-| `CheckCertificateRevocationList` | <xref:System.Net.Http.SocketsHttpHandler.SslOptions>.CertificateRevocationCheckMode | See: `Example: Enabling CRL Check with SocketsHttpHandler`. |
+| `CheckCertificateRevocationList` | <xref:System.Net.Http.SocketsHttpHandler.SslOptions>.CertificateRevocationCheckMode | See: [Example: Enabling CRL Check with SocketsHttpHandler](#example-enabling-crl-check-with-socketshttphandler). |
 | `DefaultConnectionLimit` | <xref:System.Net.Http.SocketsHttpHandler.MaxConnectionsPerServer> | TODO |
 | `DnsRefreshTimeout` | No equivalent API | See: `Example: Enabling Dns Round Robin`. |
 | `EnableDnsRoundRobin` | No equivalent API | See: `Example: Enabling Dns Round Robin`. |

@@ -29,7 +29,7 @@ The following code defines a new metric (`greetings.count`) for the number of ti
 
 :::code language="csharp" source="snippets/OTel-Prometheus-Grafana-Jaeger/csharp/Program.cs" id="Snippet_SendGreeting":::
 
-> [!Note]
+> [!NOTE]
 > The API definition does not use anything specific to OpenTelemetry. It uses the .NET APIs for observability.
 
 ## 4. Reference the OpenTelemetry packages
@@ -48,7 +48,7 @@ Use the NuGet Package Manager or command line to add the following NuGet package
 </ItemGroup>
 ```
 
-> [!Note]
+> [!NOTE]
 > Use the latest versions, as the OTel APIs are constantly evolving.
 
 ## 5. Configure OpenTelemetry with the correct providers

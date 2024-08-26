@@ -37,7 +37,7 @@ Insert the following function at the bottom of the file:
 
 :::code language="csharp" source="snippets/OTLP-Example/csharp/Program.cs" id="Snippet_SendGreeting":::
 
-> [!Note]
+> [!NOTE]
 > The endpoint definition does not use anything specific to OpenTelemetry. It uses the .NET APIs for observability.
 
 ## 4. Reference the OpenTelemetry packages
@@ -53,7 +53,7 @@ Use the NuGet Package Manager or command line to add the following NuGet package
   </ItemGroup>
 ```
 
-> [!Note]
+> [!NOTE]
 > Use the latest versions, as the OTel APIs are constantly evolving.
 
 ## 5. Configure OpenTelemetry with the correct providers
@@ -81,7 +81,7 @@ The OTLP exporter can be configured via APIs in code, but its more common to con
 
 You can add additional environment variables for the [.NET OTLP Exporter](https://github.com/open-telemetry/opentelemetry-dotnet/tree/main/src/OpenTelemetry.Exporter.OpenTelemetryProtocol#exporter-configuration) or common OTel variables such as `OTEL_RESOURCE_ATTRIBUTES` to define [resource attributes](https://opentelemetry.io/docs/concepts/resources/).
 
-> [!Note]
+> [!NOTE]
 > A common gotcha is to mix up _AppSettings.json_ and _AppSettings.Development.json_, if the latter is present it will be used when you F5 from Visual Studio and any settings in _AppSettings.json_ will be ignored.
 
 ## 7. Start the Aspire Dashboard container

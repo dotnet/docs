@@ -94,11 +94,11 @@ This topic is continued with a couple of example walkthroughs for using OpenTele
 
 ## OpenTelemetry in .NET Aspire
 
-[.NET Aspire](/dotnet/aspire/get-started/aspire-overview) is a set of extensions to .NET to make it easy to create and work with distributed applications. One of the benefits of using Aspire is that telemetry is built in, using the OpenTelemetry libraries for .NET. The default project templates for Aspire contain a `ServiceDefaults` project, part of which is to setup and configure OTel. The Service Defaults project is referenced and initialized by each service in an Aspire solution.
+[.NET Aspire](/dotnet/aspire/get-started/aspire-overview) is a set of extensions to .NET to make it easy to create and work with distributed applications. One of the benefits of using .NET Aspire is that telemetry is built in, using the OpenTelemetry libraries for .NET. The default project templates for .NET Aspire contain a `ServiceDefaults` project, part of which is to setup and configure OTel. The Service Defaults project is referenced and initialized by each service in a .NET Aspire solution.
 
 The Service Defaults project template includes the OTel SDK, ASP.NET, HttpClient and Runtime Instrumentation packages, and those are configured in the [`Extensions.cs`](https://github.com/dotnet/aspire/blob/main/src/Aspire.ProjectTemplates/templates/aspire-servicedefaults/Extensions.cs) file.  For exporting telemetry .NET Aspire includes the OTLP exporter by default so that it can provide telemetry visualization using the Aspire Dashboard.
 
-The Aspire Dashboard is designed to bring telemetry observation to the local debug cycle, which enables developers to not only ensure that the applications are producing telemetry, but also use that telemetry to diagnose those applications locally. Being able to observe the calls between services is proving to be just as useful at debug time as in production. The Aspire dashboard is launched automatically when you F5 the `AppHost` Project from Visual Studio or `dotnet run` the `AppHost` project.
+The Aspire Dashboard is designed to bring telemetry observation to the local debug cycle, which enables developers to not only ensure that the applications are producing telemetry, but also use that telemetry to diagnose those applications locally. Being able to observe the calls between services is proving to be just as useful at debug time as in production. The .NET Aspire dashboard is launched automatically when you F5 the `AppHost` Project from Visual Studio or `dotnet run` the `AppHost` project.
 
 [![Aspire Dashboard](./media/aspire-dashboard-thumb.png)](./media/aspire-dashboard.png#lightbox)
 
@@ -114,8 +114,8 @@ Probably the easiest way to configure OTel for ASP.NET projects is to use the As
 
 The steps to use _ServiceDefaults_ outside .NET Aspire are:
 
-- Add the ServiceDefaults project to the solution using Add New Project in Visual Studio, or use `dotnet new aspire-servicedefaults --output ServiceDefaults`
-- Reference the ServiceDefaults project from your ASP.NET application. In Visual Studio use "Add -> Project Reference" and select the ServiceDefaults project"
+- Add the _ServiceDefaults_ project to the solution using Add New Project in Visual Studio, or use `dotnet new aspire-servicedefaults --output ServiceDefaults`
+- Reference the _ServiceDefaults_ project from your ASP.NET application. In Visual Studio use "Add -> Project Reference" and select the _ServiceDefaults_ project"
 - Call its OpenTelemetry setup function as part of your application builder initialization.
 
 ``` csharp
@@ -129,7 +129,7 @@ app.MapGet("/", () => "Hello World!");
 app.Run();
 ```
 
-Note: Service Defaults can setup the following additional functionality if required via `AddServiceDefaults()` or the specific functions:
+Service Defaults can setup the following additional functionality if required via `AddServiceDefaults()` or the specific functions:
 
 - Health checks with `/health` and `/alive` endpoints
 - Service discovery which will be a no-op without the rest of .NET Aspire

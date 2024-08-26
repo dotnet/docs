@@ -20,10 +20,10 @@ interface IFoo
 }
 
 [DllImport("MyComObjectProvider.dll")]
-static nint GetPointerToComInterface();
+static nint GetPointerToComInterface(); // C definition - IUnknown* GetPointerToComInterface();
 
 [DllImport("MyComObjectProvider.dll")]
-static void GivePointerToComInterface(nint comObject);
+static void GivePointerToComInterface(nint comObject); // C definition - void GivePointerToComInterface(IUnknown* pUnk);
 
 // Use the system to create a Runtime Callable Wrapper to use in managed code
 nint ptr = GetPointerToComInterface();
@@ -68,10 +68,10 @@ At compile time, the generator creates an implementation of the ComWrappers API,
 
 ```csharp
 [LibraryImport("MyComObjectProvider.dll")]
-static nint GetPointerToComInterface();
+static nint GetPointerToComInterface();  // C definition - IUnknown* GetPointerToComInterface();
 
 [LibraryImport("MyComObjectProvider.dll")]
-static void GivePointerToComInterface(nint comObject);
+static void GivePointerToComInterface(nint comObject); // C definition - void GivePointerToComInterface(IUnknown* pUnk);
 
 // Use the ComWrappers API to create a Runtime Callable Wrapper to use in managed code
 ComWrappers cw = new StrategyBasedComWrappers();

@@ -17,6 +17,9 @@ The following options control miscellaneous compiler behavior. The new MSBuild s
 - **NoLogo** / `-nologo` : Suppress compiler copyright message.
 - **NoConfig** / `-noconfig` : Don't auto include *CSC.RSP* file.
 
+> [!NOTE]
+> Refer to [Compiler options](index.md#how-to-set-options) for more information on configuring these options for your project.
+
 ## ResponseFiles
 
 The **ResponseFiles** option lets you specify a file that contains compiler options and source code files to compile.

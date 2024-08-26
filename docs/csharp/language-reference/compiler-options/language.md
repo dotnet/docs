@@ -21,6 +21,9 @@ The following options control how the compiler interprets language features. The
 - **LangVersion** / `-langversion`: Specify language version such as `default` (latest major version), or `latest` (latest version, including minor versions).
 - **Nullable** / `-nullable`: Enable nullable context, or nullable warnings.
 
+> [!NOTE]
+> Refer to [Compiler options](index.md#how-to-set-options) for more information on configuring these options for your project.
+
 ## CheckForOverflowUnderflow
 
 The **CheckForOverflowUnderflow** option controls the default overflow-checking context that defines the program behavior if integer arithmetic overflows.

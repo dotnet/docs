@@ -10,16 +10,19 @@ helpviewer_keywords:
   - "JSON deserialization"
   - "deserializing objects"
   - "deserialization"
-ms.topic: how-to
+ms.topic: concept-article
+#customer intent: As a developer, I want to learn how to use System.Text.Json to deserialize JSON data.
 ---
 
 # How to read JSON as .NET objects (deserialize)
 
-This article shows how to use the <xref:System.Text.Json?displayProperty=fullName> namespace to serialize to and deserialize from JavaScript Object Notation (JSON). If you're porting existing code from `Newtonsoft.Json`, see [How to migrate to `System.Text.Json`](migrate-from-newtonsoft.md).
+This article shows how to use the <xref:System.Text.Json?displayProperty=fullName> namespace to deserialize from JavaScript Object Notation (JSON). If you're porting existing code from `Newtonsoft.Json`, see [How to migrate to `System.Text.Json`](migrate-from-newtonsoft.md).
 
 A common way to deserialize JSON is to have (or create) a .NET class with properties and fields that represent one or more of the JSON properties. Then, to deserialize from a string or a file, call the <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> method. For the generic overloads, the generic type parameter is the .NET class. For the non-generic overloads, you pass the type of the class as a method parameter. You can deserialize either synchronously or asynchronously.
 
 Any JSON properties that aren't represented in your class are ignored [by default](missing-members.md). Also, if any properties on the type are [required](required-properties.md) but not present in the JSON payload, deserialization will fail.
+
+## Examples
 
 The following example shows how to deserialize a JSON string:
 

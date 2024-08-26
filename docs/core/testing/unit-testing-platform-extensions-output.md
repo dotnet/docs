@@ -24,7 +24,6 @@ There are two output modes available:
 - Normal, the output contains the banner, reports full failures of tests, warning messages and writes summary of the run.
 - Detailed, the same as `Normal` but it also reports `Passed` tests.
 
-
 ### ANSI
 
 Internally there are 2 different output formatters that are auto-detecting the terminal capability to handle [ANSI escape codes](https://learn.microsoft.com/windows/console/console-virtual-terminal-sequences).

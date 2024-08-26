@@ -329,14 +329,14 @@ Starting with MSTest 3.6, it is possible to specify `CooperativeCancellation` pr
 When applied to a test class, the `[STATestClass]` attribute indicates that all test methods (and the `[ClassInitialize]` and `[ClassCleanup]` methods) in the class should be run in a single-threaded apartment (STA). This attribute is useful when the test methods interact with COM objects that require STA.
 
 > [!NOTE]
-> This is only supported on Windows.
+> This is only supported on Windows and in version 3.6 and later.
 
 ### `STATestMethodAttribute`
 
 When applied to a test method, the `[STATestMethod]` attribute indicates that the test method should be run in a single-threaded apartment (STA). This attribute is useful when the test method interacts with COM objects that require STA.
 
 > [!NOTE]
-> This is only supported on Windows.
+> This is only supported on Windows and in version 3.6 and later.
 
 ### `ParallelizeAttribute`
 

@@ -19,10 +19,10 @@ interface IFoo
     void Method(int i);
 }
 
-[DllImport("MyComObjectProvider.dll")]
+[DllImport("MyComObjectProvider")]
 static nint GetPointerToComInterface(); // C definition - IUnknown* GetPointerToComInterface();
 
-[DllImport("MyComObjectProvider.dll")]
+[DllImport("MyComObjectProvider")]
 static void GivePointerToComInterface(nint comObject); // C definition - void GivePointerToComInterface(IUnknown* pUnk);
 
 // Use the system to create a Runtime Callable Wrapper to use in managed code
@@ -67,22 +67,22 @@ internal partial class Foo : IFoo
 At compile time, the generator creates an implementation of the ComWrappers API, and you can use the <xref:System.Runtime.InteropServices.Marshalling.StrategyBasedComWrappers> type or a custom derived type to consume or expose the COM interface.
 
 ```csharp
-[LibraryImport("MyComObjectProvider.dll")]
-static nint GetPointerToComInterface();  // C definition - IUnknown* GetPointerToComInterface();
+[LibraryImport("MyComObjectProvider")]
+private static partial nint GetPointerToComInterface(); // C definition - IUnknown* GetPointerToComInterface();
 
-[LibraryImport("MyComObjectProvider.dll")]
-static void GivePointerToComInterface(nint comObject); // C definition - void GivePointerToComInterface(IUnknown* pUnk);
+[LibraryImport("MyComObjectProvider")]
+private static partial void GivePointerToComInterface(nint comObject); // C definition - void GivePointerToComInterface(IUnknown* pUnk);
 
 // Use the ComWrappers API to create a Runtime Callable Wrapper to use in managed code
 ComWrappers cw = new StrategyBasedComWrappers();
 nint ptr = GetPointerToComInterface();
-IFoo foo = (IFoo)cw.GetOrCreateObjectForComInterface(ptr);
+IFoo foo = (IFoo)cw.GetOrCreateObjectForComInstance(ptr, CreateObjectFlags.None);
 foo.Method(0);
 ...
 // Use the system to create a COM Callable Wrapper to pass to unmanaged code
 ComWrappers cw = new StrategyBasedComWrappers();
 Foo foo = new();
-nint ptr = cw.GetOrCreateComInterfaceForObject(foo);
+nint ptr = cw.GetOrCreateComInterfaceForObject(foo, CreateComInterfaceFlags.None);
 GivePointerToComInterface(ptr);
 ```
 

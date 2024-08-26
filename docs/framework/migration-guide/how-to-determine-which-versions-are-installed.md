@@ -133,7 +133,7 @@ The following examples check the value of the **Release** entry to determine whe
 1. Use the <xref:Microsoft.Win32.RegistryKey.OpenBaseKey%2A?displayProperty=nameWithType> and <xref:Microsoft.Win32.RegistryKey.OpenSubKey%2A?displayProperty=nameWithType> methods to access the **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\NET Framework Setup\\NDP\\v4\\Full** subkey in the Windows registry.
 
    > [!IMPORTANT]
-   > If the app you're running is 32-bit and running in 64-bit Windows, the registry paths will be different than previously listed. The 64-bit registry is available in the **HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\** subkey. For example, the registry subkey for .NET Framework 4.5 is **HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\Microsoft\\NET Framework Setup\\NDP\\v4\\Full**.
+   > If the app you're running is 32-bit and running in 64-bit Windows, the registry paths will be different than previously listed. The 32-bit registry is available in the **HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\** subkey. For example, the registry subkey for .NET Framework 4.5 is **HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\Microsoft\\NET Framework Setup\\NDP\\v4\\Full**.
 
 1. Check the **Release** REG_DWORD value to determine the installed version. To be forward-compatible, check for a value greater than or equal to the value listed in the [.NET Framework version table](#version_table).
 
@@ -202,7 +202,7 @@ Each version of .NET Framework from 1.1 to 4.0 is listed as a subkey at **HKEY_L
 | 4.0 Full Profile   | **HKLM\\Software\\Microsoft\\NET Framework Setup\\NDP\\v4\\Full**    | **Install** REG_DWORD equals `1` |
 
 > [!IMPORTANT]
-> If the app you're running is 32-bit and running in 64-bit Windows, the registry paths will be different than previously listed. The 64-bit registry is available in the **HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\** subkey. For example, the registry subkey for .NET Framework 3.5 is **HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\Microsoft\\NET Framework Setup\\NDP\\v3.5**.
+> If the app you're running is 32-bit and running in 64-bit Windows, the registry paths will be different than previously listed. The 32-bit registry is available in the **HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\** subkey. For example, the registry subkey for .NET Framework 3.5 is **HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\Microsoft\\NET Framework Setup\\NDP\\v3.5**.
 
 Notice that the registry path to the .NET Framework 1.0 subkey is different from the others.
 
@@ -223,7 +223,7 @@ Notice that the registry path to the .NET Framework 1.0 subkey is different from
 Use the <xref:Microsoft.Win32.RegistryKey?displayProperty=nameWithType> class to access the **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\NET Framework Setup\\NDP** subkey in the Windows registry.
 
 > [!IMPORTANT]
-> If the app you're running is 32-bit and running in 64-bit Windows, the registry paths will be different than previously listed. The 64-bit registry is available in the **HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\** subkey. For example, the registry subkey for .NET Framework 3.5 is **HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\Microsoft\\NET Framework Setup\\NDP\\v3.5**.
+> If the app you're running is 32-bit and running in 64-bit Windows, the registry paths will be different than previously listed. The 32-bit registry is available in the **HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\** subkey. For example, the registry subkey for .NET Framework 3.5 is **HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\Microsoft\\NET Framework Setup\\NDP\\v3.5**.
 
 The following example finds the versions of .NET Framework 1-4 that are installed:
 

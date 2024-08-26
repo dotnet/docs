@@ -18,11 +18,13 @@ It comes built-in with Microsoft.Testing.Platform, and offers ANSI and non-ANSI 
 
 ### Output modes
 
-![Output with 1 failed test and a summary](./media/test-output-and-summary.png)
 There are two output modes available:
 
 - `Normal`, the output contains the banner, reports full failures of tests, warning messages and writes summary of the run.
+  ![Output with 1 failed test and a summary](./media/test-output-and-summary.png)
+
 - `Detailed`, the same as `Normal` but it also reports `Passed` tests.
+  ![Output with 1 failed, and 1 passed test and a summary](./media/test-output-and-summary-with-passed.png)
 
 ### ANSI
 

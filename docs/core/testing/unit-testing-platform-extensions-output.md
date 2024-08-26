@@ -27,7 +27,7 @@ There are two output modes available:
 
 ### ANSI
 
-Internally there are 2 different output formatters that are auto-detecting the terminal capability to handle [ANSI escape codes](https://learn.microsoft.com/en-us/windows/console/console-virtual-terminal-sequences).
+Internally there are 2 different output formatters that are auto-detecting the terminal capability to handle [ANSI escape codes](https://learn.microsoft.com/windows/console/console-virtual-terminal-sequences).
 
 - The ANSI formatter is used when the terminal is capable of rendering the escape codes.
 - The non-ANSI formatter is used when the terminal cannot handle the escape codes, or when `--no-ansi` is used, or when output is redirected.

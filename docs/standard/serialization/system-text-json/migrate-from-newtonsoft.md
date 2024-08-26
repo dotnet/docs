@@ -90,7 +90,8 @@ This code uses System.Text.Json.JsonSerializer.Serialize to convert the Product 
 
 :::image type="content" source="./media/migrate-newtonsoft-json-using-github-copilot.gif" alt-text="Animated screenshot that shows using GitHub Copilot Chat in Visual Studio to migrate from newtonsoft" lightbox="./media/migrate-newtonsoft-json-using-github-copilot.gif":::
 
-You can use chat features, such as [slash commands, references, and threads](/visualstudio/ide/copilot-chat-context), to set intent and get better answers with scoped context. For example, if your code file `filename` is open in the IDE, you can [reference the file](/visualstudio/ide/copilot-chat-context#reference-a-file) in your prompt to Copilot Chat with "convert #<filename> to use `System.Text.Json`" or [reference the solution](/visualstudio/ide/copilot-chat-context#reference-the-entire-solution) with "convert @workspace to use `System.Text.Json`" in the chat window or in inline chat.
+You can use chat features, such as [slash commands, references, and threads](/visualstudio/ide/copilot-chat-context), to set intent and get better answers with scoped context.
+For example, if your code file `filename` is open in the IDE, you can [reference the file](/visualstudio/ide/copilot-chat-context#reference-a-file) in your prompt to Copilot Chat with "convert `#filename` to use `System.Text.Json`" or [reference the solution](/visualstudio/ide/copilot-chat-context#reference-the-entire-solution) with "convert `@workspace` to use `System.Text.Json`" in the chat window or in inline chat.
 
 ## Table of differences
 

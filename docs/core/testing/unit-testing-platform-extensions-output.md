@@ -1,9 +1,9 @@
 ---
-title: Microsoft.Testing.Platform policy extensions
-description: Learn about the various Microsoft.Testing.Platform policy extensions and how to use them.
-author: evangelink
-ms.author: amauryleve
-ms.date: 04/10/2024
+title: Microsoft.Testing.Platform output extensions
+description: Learn about the various Microsoft.Testing.Platform output extensions and how to use them.
+author: nohwnd
+ms.author: jajares
+ms.date: 08/26/2024
 ---
 
 # Output extensions

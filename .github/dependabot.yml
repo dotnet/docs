@@ -812,6 +812,28 @@ updates:
         patterns:
           - "*" # Prefer a single PR per project update.
   - package-ecosystem: "nuget"
+    directory: "/docs/azure/sdk/snippets/additional-auth/interactive" #InteractiveBrokeredAuthSample.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+    groups:
+      # Group .NET updates together for projects.
+      dotnet:
+        patterns:
+          - "*" # Prefer a single PR per project update.
+  - package-ecosystem: "nuget"
+    directory: "/docs/azure/sdk/snippets/additional-auth/username-password" #UsernamePassword.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+    groups:
+      # Group .NET updates together for projects.
+      dotnet:
+        patterns:
+          - "*" # Prefer a single PR per project update.
+  - package-ecosystem: "nuget"
     directory: "/docs/azure/sdk/snippets/authentication/credential-chains" #AuthenticationSampleApp.csproj
     schedule:
       interval: "weekly"
@@ -2166,28 +2188,6 @@ updates:
           - "*" # Prefer a single PR per project update.
   - package-ecosystem: "nuget"
     directory: "/docs/machine-learning/tutorials/snippets/movie-recommendation/csharp" #MovieRecommendation.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-    groups:
-      # Group .NET updates together for projects.
-      dotnet:
-        patterns:
-          - "*" # Prefer a single PR per project update.
-  - package-ecosystem: "nuget"
-    directory: "/docs/machine-learning/tutorials/snippets/phone-calls-anomaly-detection/csharp" #PhoneCallsAnomalyDetection.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-    groups:
-      # Group .NET updates together for projects.
-      dotnet:
-        patterns:
-          - "*" # Prefer a single PR per project update.
-  - package-ecosystem: "nuget"
-    directory: "/docs/machine-learning/tutorials/snippets/predict-prices/csharp" #TaxiFarePrediction.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"

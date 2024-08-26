@@ -14,15 +14,15 @@ This article list and explains all `Microsoft Testing Platform` extensions relat
 
 Terminal test reporter is the default implementation of status and progress reporting to the terminal (console).
 
-It comes built-in with Testing.Platform, and offers ANSI and non-ANSI mode, and progress indicator.
+It comes built-in with Microsoft.Testing.Platform, and offers ANSI and non-ANSI mode, and progress indicator.
 
 ### Output modes
 
 ![Output with 1 failed test and a summary](./media/test-output-and-summary.png)
 There are two output modes available:
 
-- Normal, the output contains the banner, reports full failures of tests, warning messages and writes summary of the run.
-- Detailed, the same as `Normal` but it also reports `Passed` tests.
+- `Normal`, the output contains the banner, reports full failures of tests, warning messages and writes summary of the run.
+- `Detailed`, the same as `Normal` but it also reports `Passed` tests.
 
 ### ANSI
 

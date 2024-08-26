@@ -87,7 +87,7 @@ using HttpResponseMessage responseMessage = await client.PostAsync(uri, new Stri
 | `AuthenticationLevel` | No direct equivalent API | See: `Example: Mutual Authentication`. |
 | `AutomaticDecompression` | <xref:System.Net.Http.SocketsHttpHandler.AutomaticDecompression> | See: `Examples: Setting SocketsHttpHandler properties`. |
 | `CachePolicy` | No direct equivalent API | See: `Example: Apply CachePolicy Headers`. |
-| `ClientCertificates` | <xref:System.Net.Http.SocketsHttpHandler.SslOptions>.ClientCertificates | See: `Example: Usage of Certificate Related Properties in HttpClient`. |
+| `ClientCertificates` | <xref:System.Net.Http.SocketsHttpHandler.SslOptions>.<xref:System.Net.Security.SslClientAuthenticationOptions.ClientCertificates> | See: `Example: Usage of Certificate Related Properties in HttpClient`. |
 | `Connection` | <xref:System.Net.Http.Headers.HttpRequestHeaders.Connection> | See: `Examples: Set Request Headers`. |
 | `ConnectionGroupName` | No equivalent API | TODO |
 | `ContentLength` | <xref:System.Net.Http.Headers.HttpContentHeaders.ContentLength> | TODO |
@@ -120,7 +120,7 @@ using HttpResponseMessage responseMessage = await client.PostAsync(uri, new Stri
 | `Referer` | <xref:System.Net.Http.Headers.HttpRequestHeaders.Referrer> | See: `Examples: Set Request Headers`. |
 | `RequestUri` | <xref:System.Net.Http.HttpRequestMessage.RequestUri> | See: `Examples: Usage of HttpRequestMessage and properties`. |
 | `SendChunked` | <xref:System.Net.Http.Headers.HttpRequestHeaders.TransferEncodingChunked> | See: `Examples: Set Request Headers`. |
-| `ServerCertificateValidationCallback` | <xref:System.Net.Http.SocketsHttpHandler.SslOptions>.RemoteCertificateValidationCallback | See: `Examples: Setting SocketsHttpHandler properties`. |
+| `ServerCertificateValidationCallback` | <xref:System.Net.Http.SocketsHttpHandler.SslOptions>.<xref:System.Net.Security.SslClientAuthenticationOptions.RemoteCertificateValidationCallback> | See: `Examples: Setting SocketsHttpHandler properties`. |
 | `ServicePoint` | No equivalent API | `ServicePoint` is not part of `HttpClient`. |
 | `SupportsCookieContainer` | No equivalent API | This is always `true`. |
 | `Timeout` | <xref:System.Net.Http.HttpClient.Timeout> |  |
@@ -137,7 +137,7 @@ Developers should be aware that `ServicePointManager` is a static class, meaning
 
 | <xref:System.Net.ServicePointManager> Old API | New API | Notes |
 |---------|----------------------|-------|
-| `CheckCertificateRevocationList` | <xref:System.Net.Http.SocketsHttpHandler.SslOptions>.CertificateRevocationCheckMode | See: [Example: Enabling CRL Check with SocketsHttpHandler](#example-enabling-crl-check-with-socketshttphandler). |
+| `CheckCertificateRevocationList` | <xref:System.Net.Http.SocketsHttpHandler.SslOptions>.<xref:System.Net.Security.SslClientAuthenticationOptions.CertificateRevocationCheckMode> | See: [Example: Enabling CRL Check with SocketsHttpHandler](#example-enabling-crl-check-with-socketshttphandler). |
 | `DefaultConnectionLimit` | <xref:System.Net.Http.SocketsHttpHandler.MaxConnectionsPerServer> | TODO |
 | `DnsRefreshTimeout` | No equivalent API | See: `Example: Enabling Dns Round Robin`. |
 | `EnableDnsRoundRobin` | No equivalent API | See: `Example: Enabling Dns Round Robin`. |
@@ -146,8 +146,8 @@ Developers should be aware that `ServicePointManager` is a static class, meaning
 | `MaxServicePointIdleTime` | <xref:System.Net.Http.SocketsHttpHandler.PooledConnectionIdleTimeout> | TODO |
 | `MaxServicePoints` | No equivalent API | `ServicePoint` is not part of `HttpClient`. |
 | `ReusePort` | No direct equivalent API | See <xref:System.Net.Http.SocketsHttpHandler.ConnectCallback>. |
-| `SecurityProtocol` | <xref:System.Net.Http.SocketsHttpHandler.SslOptions>.EnabledSslProtocols | TODO |
-| `ServerCertificateValidationCallback` | <xref:System.Net.Http.SocketsHttpHandler.SslOptions>.RemoteCertificateValidationCallback | Both of them are <xref:System.Net.Security.RemoteCertificateValidationCallback> |
+| `SecurityProtocol` | <xref:System.Net.Http.SocketsHttpHandler.SslOptions>.<xref:System.Net.Security.SslClientAuthenticationOptions.EnabledSslProtocols> | TODO |
+| `ServerCertificateValidationCallback` | <xref:System.Net.Http.SocketsHttpHandler.SslOptions>.<xref:System.Net.Security.SslClientAuthenticationOptions.RemoteCertificateValidationCallback> | Both of them are <xref:System.Net.Security.RemoteCertificateValidationCallback> |
 | `UseNagleAlgorithm` | No direct equivalent API | See <xref:System.Net.Http.SocketsHttpHandler.ConnectCallback>. |
 
 ### <xref:System.Net.ServicePointManager> Method Mapping

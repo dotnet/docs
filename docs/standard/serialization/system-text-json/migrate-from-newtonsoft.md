@@ -2,7 +2,7 @@
 title: "Migrate from Newtonsoft.Json to System.Text.Json - .NET"
 description: "Learn about the differences between Newtonsoft.Json and System.Text.Json and how to migrate to System.Text.Json."
 no-loc: [System.Text.Json, Newtonsoft.Json]
-ms.date: 08/23/2024
+ms.date: 08/26/2024
 zone_pivot_groups: dotnet-preview-version
 helpviewer_keywords:
   - "JSON serialization"
@@ -36,7 +36,7 @@ In Visual Basic, you can't use <xref:System.Text.Json.Utf8JsonReader>, which als
 
 ## <a name="github-copilot"></a>Use GitHub Copilot to migrate from Newtonsoft.Json
 
-You can get coding help from GitHub Copilot to convert your code right within your IDE.
+You can get coding help from GitHub Copilot to convert your code within your IDE.
 
 If you're using [Visual Studio 2022 version 17.8 or later](/visualstudio/releases/2022/release-notes), you can try the AI-driven [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states) to help migrate your `Newtonsoft.Json` code to use `System.Text.Json`. Submit your question and the code to convert as a prompt in the copilot chat window, as in the following example.
 
@@ -90,7 +90,7 @@ This code uses System.Text.Json.JsonSerializer.Serialize to convert the Product 
 
 :::image type="content" source="./media/migrate-newtonsoft-json-using-github-copilot.gif" alt-text="Animated screenshot that shows using GitHub Copilot Chat in Visual Studio to migrate from newtonsoft" lightbox="./media/migrate-newtonsoft-json-using-github-copilot.gif":::
 
-You can further use chat features, such as [slash commands, references, and threads](/visualstudio/ide/copilot-chat-context), to set intent and get better answers with scoped context.
+You can use chat features, such as [slash commands, references, and threads](/visualstudio/ide/copilot-chat-context), to set intent and get better answers with scoped context. For example, if your code file `filename` is open in the IDE, you can [reference the file](/visualstudio/ide/copilot-chat-context.md#reference-a-file) in your prompt to Copilot Chat with "convert #<filename> to use `System.Text.Json`" or [reference the solution](/visualstudio/ide/copilot-chat-context.md#reference-the-entire-solution) with "convert @workspace to use `System.Text.Json`" in the chat window or in inline chat.
 
 ## Table of differences
 

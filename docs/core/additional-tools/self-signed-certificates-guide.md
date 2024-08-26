@@ -1,6 +1,6 @@
 ---
 title: Generate Self-Signed Certificates Overview
-description: An overview of the Microsoft dotnet dev-certs tool that adds functionality for .NET and ASP.NET Core projects, and other options for using self-signed certificates.
+description: An overview of the dotnet dev-certs tool that adds functionality for .NET and ASP.NET Core projects, and other options for using self-signed certificates.
 author: angee
 ms.date: 12/06/2021
 ---
@@ -69,8 +69,7 @@ Make sure the `aspnetapp.csproj` includes the appropriate target framework:
 ```
 
 > [!NOTE]
-> If you want to use `dotnet publish` parameters to *trim* the deployment, make sure that the appropriate dependencies are included for supporting SSL certificates.
-Update the [dotnet-docker\samples\aspnetapp\aspnetapp.csproj](https://github.com/dotnet/dotnet-docker/blob/main/samples/aspnetapp/aspnetapp/aspnetapp.csproj) file to ensure that the appropriate assemblies are included in the container. For reference, check how to update the .csproj file to [support SSL certificates](../deploying/trimming/trim-self-contained.md) when using trimming for self-contained deployments.
+> If you want to use `dotnet publish` parameters to *trim* the deployment, make sure that the appropriate dependencies are included for supporting SSL certificates. Update the [dotnet-docker\samples\aspnetapp\aspnetapp.csproj](https://github.com/dotnet/dotnet-docker/blob/main/samples/aspnetapp/aspnetapp/aspnetapp.csproj) file to ensure that the appropriate assemblies are included in the container. For reference, check how to update the .csproj file to [support SSL certificates](../deploying/trimming/trim-self-contained.md) when using trimming for self-contained deployments.
 
 Make sure you're pointing to the sample app.
 
@@ -102,7 +101,7 @@ dotnet dev-certs https --trust
 ```
 
 > [!NOTE]
-> The certificate name, in this case *aspnetapp*.pfx must match the project assembly name. `crypticpassword` is used as a stand-in for a password of your own choosing. If console returns "A valid HTTPS certificate is already present.", a trusted certificate already exists in your store. It can be exported using MMC Console.
+> The certificate name, in this case *aspnetapp*.pfx, must match the project assembly name. `crypticpassword` is used as a stand-in for a password of your own choosing. If console returns "A valid HTTPS certificate is already present.", a trusted certificate already exists in your store. It can be exported using MMC Console.
 
 Configure application secrets, for the certificate:
 
@@ -265,4 +264,4 @@ Get-ChildItem $certKeyPath | Remove-Item
 
 ## See also
 
-- [dotnet dev-certs](../tools/dotnet-dev-certs.md)
+* [dotnet dev-certs](../tools/dotnet-dev-certs.md)

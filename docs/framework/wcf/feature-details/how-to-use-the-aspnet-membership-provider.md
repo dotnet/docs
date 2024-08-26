@@ -6,7 +6,6 @@ helpviewer_keywords:
   - "WCF and ASP.NET"
   - "WCF, authorization"
   - "WCF, security"
-ms.assetid: 322c56e0-938f-4f19-a981-7b6530045b90
 ---
 # How to: Use the ASP.NET Membership Provider
 
@@ -21,15 +20,15 @@ Windows Communication Foundation (WCF) developers can take advantage of these fe
 > [!NOTE]
 > WCF does not provide methods to populate the database with user name/password combinations or other user information.
 
-### To configure the membership provider
+## To configure the membership provider
 
-1. In the Web.config file, under the <`system.web`> element, create a <`membership`> element.
+1. In the Web.config file, under the `<system.web>` element, create a `<membership>` element.
 
 2. Under the `<membership>` element, create a `<providers>` element.
 
-3. As a child to the <`providers`> element, add a `<clear />` element to flush the collection of providers.
+3. As a child to the `<providers>` element, add a `<clear />` element to flush the collection of providers.
 
-4. Under the `<clear />` element, create an <`add`> element with the following attributes set to appropriate values: `name`, `type`, `connectionStringName`, `applicationName`, `enablePasswordRetrieval`, `enablePasswordReset`, `requiresQuestionAndAnswer`, `requiresUniqueEmail`, and `passwordFormat`. The `name` attribute is used later as a value in the configuration file. The following example sets it to `SqlMembershipProvider`.
+4. Under the `<clear />` element, create an `<add>` element with the following attributes set to appropriate values: `name`, `type`, `connectionStringName`, `applicationName`, `enablePasswordRetrieval`, `enablePasswordReset`, `requiresQuestionAndAnswer`, `requiresUniqueEmail`, and `passwordFormat`. The `name` attribute is used later as a value in the configuration file. The following example sets it to `SqlMembershipProvider`.
 
     The following example shows the configuration section.
 
@@ -52,7 +51,7 @@ Windows Communication Foundation (WCF) developers can take advantage of these fe
     </membership>
     ```
 
-### To configure service security to accept the user name/password combination
+## To configure service security to accept the user name/password combination
 
 1. In the configuration file, under the [\<system.serviceModel>](../../configure-apps/file-schema/wcf/system-servicemodel.md) element, add a [\<bindings>](../../configure-apps/file-schema/wcf/bindings.md) element.
 
@@ -60,7 +59,7 @@ Windows Communication Foundation (WCF) developers can take advantage of these fe
 
 3. Set the `mode` attribute of the `<security>` element to `Message`.
 
-4. Set the `clientCredentialType` attribute of the <`message`> element to `UserName`. This specifies that a user name/password pair will be used as the client's credential.
+4. Set the `clientCredentialType` attribute of the `<message>` element to `UserName`. This specifies that a user name/password pair will be used as the client's credential.
 
     The following example shows the configuration code for the binding.
 
@@ -79,15 +78,15 @@ Windows Communication Foundation (WCF) developers can take advantage of these fe
     </system.serviceModel>
     ```
 
-### To configure a service to use the membership provider
+## To configure a service to use the membership provider
 
 1. As a child to the `<system.serviceModel>` element, add a [\<behaviors>](../../configure-apps/file-schema/wcf/behaviors.md) element
 
-2. Add a [\<serviceBehaviors>](../../configure-apps/file-schema/wcf/servicebehaviors.md) to the <`behaviors`> element.
+2. Add a [\<serviceBehaviors>](../../configure-apps/file-schema/wcf/servicebehaviors.md) to the `<behaviors>` element.
 
 3. Add a [\<behavior>](../../configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md) and set the `name` attribute to an appropriate value.
 
-4. Add a [\<serviceCredentials>](../../configure-apps/file-schema/wcf/servicecredentials.md) to the <`behavior`> element.
+4. Add a [\<serviceCredentials>](../../configure-apps/file-schema/wcf/servicecredentials.md) to the `<behavior>` element.
 
 5. Add a [\<userNameAuthentication>](../../configure-apps/file-schema/wcf/usernameauthentication.md) to the `<serviceCredentials>` element.
 

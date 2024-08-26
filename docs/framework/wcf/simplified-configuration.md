@@ -9,7 +9,7 @@ Configuring Windows Communication Foundation (WCF) services can be a complex tas
 
 ## Simplified Configuration
 
- In WCF service configuration files, the <`system.serviceModel`> section contains a <`service`> element for each service hosted. The <`service`> element contains a collection of <`endpoint`> elements that specify the endpoints exposed for each service and optionally a set of service behaviors. The <`endpoint`> elements specify the address, binding, and contract exposed by the endpoint, and optionally binding configuration and endpoint behaviors. The <`system.serviceModel`> section also contains a <`behaviors`> element that allows you to specify service or endpoint behaviors. The following example shows the <`system.serviceModel`> section of a configuration file.
+ In WCF service configuration files, the `<system.serviceModel>` section contains a `<service>` element for each service hosted. The `<service>` element contains a collection of `<endpoint>` elements that specify the endpoints exposed for each service and optionally a set of service behaviors. The `<endpoint>` elements specify the address, binding, and contract exposed by the endpoint, and optionally binding configuration and endpoint behaviors. The `<system.serviceModel>` section also contains a `<behaviors>` element that allows you to specify service or endpoint behaviors. The following example shows the `<system.serviceModel>` section of a configuration file.
 
 ```xml
 <system.serviceModel>
@@ -42,7 +42,7 @@ Configuring Windows Communication Foundation (WCF) services can be a complex tas
 </system.serviceModel>
 ```
 
- [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] makes configuring a WCF service easier by removing the requirement for the <`service`> element. If you do not add a <`service`>  section or add any endpoints in a <`service`> section and your service does not programmatically define any endpoints, then a set of default endpoints are automatically added to your service, one for each service base address and for each contract implemented by your service. In each of these endpoints, the endpoint address corresponds to the base address, the binding is determined by the base address scheme and the contract is the one implemented by your service. If you do not need to specify any endpoints or service behaviors or make any binding setting changes, you do not need to specify a service configuration file at all. If a service implements two contracts and the host enables both HTTP and TCP transports the service host creates four default endpoints, one for each contract using each transport. To create default endpoints the service host must know what bindings to use. These settings are specified in a <`protocolMappings`> section within the <`system.serviceModel`> section. The <`protocolMappings`> section contains a list of transport protocol schemes mapped to binding types. The service host uses the base addresses passed to it to determine which binding to use. The following example uses the <`protocolMappings`> element.
+ .NET Framework 4.6.1 makes configuring a WCF service easier by removing the requirement for the `<service>` element. If you do not add a `<service>`  section or add any endpoints in a `<service>` section and your service does not programmatically define any endpoints, then a set of default endpoints are automatically added to your service, one for each service base address and for each contract implemented by your service. In each of these endpoints, the endpoint address corresponds to the base address, the binding is determined by the base address scheme and the contract is the one implemented by your service. If you do not need to specify any endpoints or service behaviors or make any binding setting changes, you do not need to specify a service configuration file at all. If a service implements two contracts and the host enables both HTTP and TCP transports the service host creates four default endpoints, one for each contract using each transport. To create default endpoints the service host must know what bindings to use. These settings are specified in a `<protocolMappings>` section within the `<system.serviceModel>` section. The `<protocolMappings>` section contains a list of transport protocol schemes mapped to binding types. The service host uses the base addresses passed to it to determine which binding to use. The following example uses the `<protocolMappings>` element.
 
 > [!WARNING]
 > Changing default configuration elements, such as bindings or behaviors, might affect services defined in lower levels of the configuration hierarchy, since they might be using these default bindings and behaviors. Thus, whoever changes default bindings and behaviors needs to be aware that these changes might affect other services in the hierarchy.
@@ -61,9 +61,9 @@ Configuring Windows Communication Foundation (WCF) services can be a complex tas
 
  In the previous example, an endpoint with a base address that starts with the "http" scheme uses the <xref:System.ServiceModel.BasicHttpBinding>. An endpoint with a base address that starts with the "net.tcp" scheme uses the <xref:System.ServiceModel.NetTcpBinding>. You can override settings in a local App.config or Web.config file.
 
- Each element within the <`protocolMappings`> section must specify a scheme and a binding. Optionally it can specify a `bindingConfiguration` attribute that specifies a binding configuration within the <`bindings`> section of the configuration file. If no `bindingConfiguration` is specified, the anonymous binding configuration of the appropriate binding type is used.
+ Each element within the `<protocolMappings>` section must specify a scheme and a binding. Optionally it can specify a `bindingConfiguration` attribute that specifies a binding configuration within the `<bindings>` section of the configuration file. If no `bindingConfiguration` is specified, the anonymous binding configuration of the appropriate binding type is used.
 
- Service behaviors are configured for the default endpoints by using anonymous <`behavior`> sections within <`serviceBehaviors`> sections. Any unnamed <`behavior`> elements within <`serviceBehaviors`> are used to configure service behaviors. For example, the following configuration file enables service metadata publishing for all services within the host.
+ Service behaviors are configured for the default endpoints by using anonymous `<behavior>` sections within `<serviceBehaviors>` sections. Any unnamed `<behavior>` elements within `<serviceBehaviors>` are used to configure service behaviors. For example, the following configuration file enables service metadata publishing for all services within the host.
 
 ```xml
 <system.serviceModel>
@@ -78,7 +78,7 @@ Configuring Windows Communication Foundation (WCF) services can be a complex tas
  </system.serviceModel>
 ```
 
- Endpoint behaviors are configured by using anonymous <`behavior`> sections within <`serviceBehaviors`> sections.
+ Endpoint behaviors are configured by using anonymous `<behavior>` sections within `<serviceBehaviors>` sections.
 
  The following example is a configuration file equivalent to the one at the beginning of this topic that uses the simplified configuration model.
 

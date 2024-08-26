@@ -1,24 +1,25 @@
 ---
-description: "Learn more about: Create a Long-running Workflow Service"
+description: "Learn more about creating a long-running workflow service, which might go idle waiting for additional information."
 title: "Creating a Long-running Workflow Service"
 ms.date: "03/30/2017"
-ms.assetid: 4c39bd04-5b8a-4562-a343-2c63c2821345
 ---
-# Create a Long-running Workflow Service
+# Create a long-running workflow service
 
-This topic describes how to create a long-running workflow service. Long running workflow services may run for long periods of time. At some point the workflow may go idle waiting for some additional information. When this occurs the workflow is persisted to a SQL database and is removed from memory. When the additional information becomes available the workflow instance is loaded back into memory and continues executing.  In this scenario you are implementing a very simplified ordering system.  The client sends an initial message to the workflow service to start the order. It returns an order ID to the client. At this point the workflow service is waiting for another message from the client and goes into the idle state and is persisted to a SQL Server database.  When the client sends the next message to order an item, the workflow service is loaded back into memory and finishes processing the order. In the code sample it returns a string stating the item has been added to the order. The code sample is not meant to be a real world application of the technology, but rather a simple sample that illustrates long running workflow services. This topic assumes you know how to create Visual Studio 2012 projects and solutions.
+This article describes how to create a long-running workflow service, which can run for long periods of time. At some point the workflow might go idle waiting for additional information. When this occurs the workflow is persisted to a SQL database and is removed from memory. When the additional information becomes available, the workflow instance is loaded back into memory and continues executing.
+
+In this scenario, you're implementing a simplified ordering system. The client sends an initial message to the workflow service to start the order. It returns an order ID to the client. At this point the workflow service is waiting for another message from the client and goes into the idle state and is persisted to a SQL Server database. When the client sends the next message to order an item, the workflow service is loaded back into memory and finishes processing the order.
+
+In the code sample, it returns a string stating the item has been added to the order. The code sample is not meant to be a real world application of the technology, but rather a simple sample that illustrates long running workflow services.
 
 ## Prerequisites
 
 You must have the following software installed to use this walkthrough:
 
 1. Microsoft SQL Server 2008
-
 2. Visual Studio 2012
+3. Microsoft .NET Framework 4.6.1
 
-3. Microsoft  [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)]
-
-4. You are familiar with WCF and Visual Studio 2012 and know how to create projects/solutions.
+You must also be familiar with WCF and Visual Studio 2012 and know how to create projects/solutions.
 
 ## Set up the SQL Database
 
@@ -26,7 +27,7 @@ You must have the following software installed to use this walkthrough:
 
 2. Click the **Connect** button to log on to the SQL Server instance
 
-3. Right click **Databases** in the tree view and select **New Database..** to create a new database called `SQLPersistenceStore`.
+3. Right click **Databases** in the tree view and select **New Database** to create a new database called `SQLPersistenceStore`.
 
 4. Run the SqlWorkflowInstanceStoreSchema.sql script file located in the C:\Windows\Microsoft.NET\Framework\v4.0\SQL\en directory on the SQLPersistenceStore database to set up the needed database schemas.
 
@@ -70,7 +71,7 @@ You must have the following software installed to use this walkthrough:
 
         The DisplayName property sets the name displayed for the Receive activity in the designer. The ServiceContractName and OperationName properties specify the name of the service contract and operation that are implemented by the Receive activity. For more information about how contracts are used in Workflow services see [Using Contracts in Workflow](using-contracts-in-workflow.md).
 
-    2. Click the **Define...** link in the **ReceiveStartOrder** activity and set the properties shown in the following illustration.  Notice that the **Parameters** radio button is selected, a parameter named `p_customerName` is bound to the `customerName` variable. This configures the **Receive** activity to receive some data and bind that data to local variables.
+    2. Click the **Define** link in the **ReceiveStartOrder** activity and set the properties shown in the following illustration. Notice that the **Parameters** radio button is selected, a parameter named `p_customerName` is bound to the `customerName` variable. This configures the **Receive** activity to receive some data and bind that data to local variables.
 
         ![Setting the data received by the Receive activity](./media/creating-a-long-running-workflow-service/set-properties-for-receive-content.png "Set the properties for data received by the Receive activity.")
 
@@ -78,7 +79,7 @@ You must have the following software installed to use this walkthrough:
 
         ![Setting the properties of the SendReply activity](./media/creating-a-long-running-workflow-service/set-properties-for-reply-activities.png "SetReplyProperties")
 
-    4. Click the **Define...** link in the **SendReplyToStartOrder** activity and set the properties shown in the following illustration. Notice that the **Parameters** radio button is selected; a parameter named `p_orderId` is bound to the `orderId` variable. This setting specifies that the SendReplyToStartOrder activity will return a value of type string to the caller.
+    4. Click the **Define** link in the **SendReplyToStartOrder** activity and set the properties shown in the following illustration. Notice that the **Parameters** radio button is selected; a parameter named `p_orderId` is bound to the `orderId` variable. This setting specifies that the SendReplyToStartOrder activity will return a value of type string to the caller.
 
         ![Configuring the SendReply activity content data](./media/creating-a-long-running-workflow-service/setreplycontent-for-sendreplytostartorder-activity.png "Configure setting for SetReplyToStartOrder activity.")
 
@@ -88,7 +89,7 @@ You must have the following software installed to use this walkthrough:
 
         This creates a new order ID and places the value in the orderId variable.
 
-    6. Select the **ReplyToStartOrder** activity. In the properties window click the ellipsis button for **CorrelationInitializers**. Select the **Add initializer** link, enter `orderIdHandle` in the Initializer text box, select Query correlation initializer for the Correlation type, and select p_orderId under the XPATH Queries dropdown box. These settings are shown in the following illustration. Click **OK**.  This initializes a correlation between the client and this instance of the workflow service. When a message containing this order ID is received it is routed to this instance of the workflow service.
+    6. Select the **ReplyToStartOrder** activity. In the properties window click the ellipsis button for **CorrelationInitializers**. Select the **Add initializer** link, enter `orderIdHandle` in the Initializer text box, select Query correlation initializer for the Correlation type, and select p_orderId under the XPATH Queries dropdown box. These settings are shown in the following illustration. Click **OK**. This initializes a correlation between the client and this instance of the workflow service. When a message containing this order ID is received it is routed to this instance of the workflow service.
 
         ![Adding a correlation initializer](./media/creating-a-long-running-workflow-service/add-correlationinitializers.png "Add a correlation initializer.")
 
@@ -107,7 +108,7 @@ You must have the following software installed to use this walkthrough:
         > [!NOTE]
         > Don't forget to change **ServiceContractName** field with `../IAddItem`.
 
-    3. Click the **Define...** link in the **ReceiveAddItem** activity and add the parameters shown in the following illustration:This configures the receive activity to accept two parameters, the order ID and the ID of the item being ordered.
+    3. Click the **Define** link in the **ReceiveAddItem** activity and add the parameters shown in the following illustration:This configures the receive activity to accept two parameters, the order ID and the ID of the item being ordered.
 
         ![Specifying parameters for the second receive](./media/creating-a-long-running-workflow-service/add-receive-two-parameters.png "Configure the receive activity to receive two parameters.")
 
@@ -129,19 +130,16 @@ You must have the following software installed to use this walkthrough:
 
             ![Setting the SendReply activity properties](./media/creating-a-long-running-workflow-service/send-reply-activity-property.png "Set the SendReply activity property.")
 
-        4. Click the **Define ...** link in the **SetReplyToAddItem** activity and configure it as shown in the following illustration. This configures the **SendReplyToAddItem** activity to return the value in the `orderResult` variable.
+        4. Click the **Define** link in the **SetReplyToAddItem** activity and configure it as shown in the following illustration. This configures the **SendReplyToAddItem** activity to return the value in the `orderResult` variable.
 
             ![Setting the data binding for the SendReply activity](./media/creating-a-long-running-workflow-service/set-property-for-sendreplytoadditem.gif "Set property for SendReplyToAddItem activity.")
 
-8. Open the web.config file and add the following elements in the \<behavior> section to enable workflow persistence.
+8. Open the web.config file and add the following elements in the \<behavior> section to enable workflow persistence. (Make sure to complete the connection string.)
 
     ```xml
-    <sqlWorkflowInstanceStore connectionString="Data Source=your-machine\SQLExpress;Initial Catalog=SQLPersistenceStore;Integrated Security=True;Asynchronous Processing=True" instanceEncodingOption="None" instanceCompletionAction="DeleteAll" instanceLockedExceptionAction="BasicRetry" hostLockRenewalPeriod="00:00:30" runnableInstancesDetectionPeriod="00:00:02" />
+    <sqlWorkflowInstanceStore connectionString="...;Asynchronous Processing=True" instanceEncodingOption="None" instanceCompletionAction="DeleteAll" instanceLockedExceptionAction="BasicRetry" hostLockRenewalPeriod="00:00:30" runnableInstancesDetectionPeriod="00:00:02" />
               <workflowIdle timeToUnload="0"/>
     ```
-
-    > [!WARNING]
-    > Make sure to replace your host and SQL server instance name in the previous code snippet.
 
 9. Build the solution.
 
@@ -192,7 +190,7 @@ You must have the following software installed to use this walkthrough:
 
 6. To verify that the workflow service has been persisted, start the SQL Server Management Studio by going to the **Start** menu, Selecting **All Programs**, **Microsoft SQL Server 2008**, **SQL Server Management Studio**.
 
-    1. In the left hand pane expand, **Databases**, **SQLPersistenceStore**, **Views** and right click **System.Activities.DurableInstancing.Instances** and select **Select Top 1000 Rows**. In the **Results** pane verify you see at least one instance listed. There may be other instances from prior runs if an exception occurred while running. You can delete existing rows by right clicking **System.Activities.DurableInstancing.Instances** and selecting **Edit Top 200 rows**, pressing the **Execute** button, selecting all rows in the results pane and selecting **delete**.  To verify the instance displayed in the database is the instance your application created, verify the instances view is empty prior to running the client. Once the client is running re-run the query (Select Top 1000 Rows) and verify a new instance has been added.
+    1. In the left hand pane expand, **Databases**, **SQLPersistenceStore**, **Views** and right click **System.Activities.DurableInstancing.Instances** and select **Select Top 1000 Rows**. In the **Results** pane verify you see at least one instance listed. There may be other instances from prior runs if an exception occurred while running. You can delete existing rows by right clicking **System.Activities.DurableInstancing.Instances** and selecting **Edit Top 200 rows**, pressing the **Execute** button, selecting all rows in the results pane and selecting **delete**. To verify the instance displayed in the database is the instance your application created, verify the instances view is empty prior to running the client. Once the client is running re-run the query (Select Top 1000 Rows) and verify a new instance has been added.
 
 7. Press enter to send the add item message to the workflow service. The client will display the following text:
 

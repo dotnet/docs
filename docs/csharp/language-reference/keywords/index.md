@@ -1,7 +1,7 @@
 ---
-description: "C# Keywords"
-title: "Keywords"
-ms.date: 09/15/2022
+description: "C# Keywords: Find the reference material for the predefined keywords and contextual keywords defined in the C# language."
+title: "C# Keywords and contextual keywords"
+ms.date: 08/14/2024
 f1_keywords: 
   - "cs.keywords"
 helpviewer_keywords:
@@ -146,7 +146,7 @@ A contextual keyword is used to provide a specific meaning in the code, but it i
         [`or`](../operators/patterns.md#logical-patterns)  
         [`orderby`](orderby-clause.md)  
         [`partial` (type)](partial-type.md)  
-        [`partial` (method)](partial-method.md)  
+        [`partial` (member)](partial-member.md)  
         [`record`](../../fundamentals/types/records.md)  
         [`remove`](remove.md)  
         [`required`](required.md)  

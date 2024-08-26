@@ -1,13 +1,12 @@
 ---
-description: "Learn more about: ASP.NET Applications Using Wait Handles"
+description: "Learn more about ASP.NET applications using wait handles. The Wait models provide a more flexible way of processing multiple asynchronous operations."
 title: "ASP.NET Applications Using Wait Handles"
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: f588597a-49de-4206-8463-4ef377e112ff
 ---
-# ASP.NET Applications Using Wait Handles
+# ASP.NET applications using wait handles
 
 The callback and polling models for handling asynchronous operations are useful when your application is processing only one asynchronous operation at a time. The Wait models provide a more flexible way of processing multiple asynchronous operations. There are two Wait models, named for the <xref:System.Threading.WaitHandle> methods used to implement them: the Wait (Any) model and the Wait (All) model.
 
@@ -40,8 +39,7 @@ Imports System.Threading
         ' If you have not included "Asynchronous Processing=true"
         ' in the connection string, the command will not be able
         ' to execute asynchronously.
-        Return "Data Source=(local);Integrated Security=SSPI;" & _
-          "Initial Catalog=AdventureWorks;" & _
+        Return "..." & _
           "Asynchronous Processing=true"
     End Function
 
@@ -178,9 +176,7 @@ string GetConnectionString()
      //  in the connection string, the command will not be able
      //  to execute asynchronously.
 {
-     return "Data Source=(local);Integrated Security=SSPI;" +
-          "Initial Catalog=AdventureWorks;" +
-          "Asynchronous Processing=true";
+     return "/* Rest of connection string */" + "Asynchronous Processing=true";
 }
 void Button1_Click(object sender, System.EventArgs e)
 {
@@ -334,8 +330,7 @@ Imports System.Threading
         ' If you have not included "Asynchronous Processing=true"
         ' in the connection string, the command will not be able
         ' to execute asynchronously.
-        Return "Data Source=(local);Integrated Security=SSPI;" & _
-          "Initial Catalog=AdventureWorks;" & _
+        Return "..." & _
           "Asynchronous Processing=true"
     End Function
     Sub Button1_Click( _
@@ -462,8 +457,7 @@ string GetConnectionString()
     //  in the connection string, the command will not be able
     //  to execute asynchronously.
 {
-    return "Data Source=(local);Integrated Security=SSPI;" +
-        "Initial Catalog=AdventureWorks;" +
+    return "..." +
         "Asynchronous Processing=true";
 }
 void Button1_Click(object sender, System.EventArgs e)

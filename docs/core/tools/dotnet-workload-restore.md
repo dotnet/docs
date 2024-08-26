@@ -17,8 +17,8 @@ ms.date: 09/10/2021
 dotnet workload restore [<PROJECT | SOLUTION>]
     [--configfile <FILE>] [--disable-parallel]
     [--ignore-failed-sources] [--include-previews] [--interactive]
-    [--no-cache] [--skip-manifest-update]
-    [-s|--source <SOURCE>] [--temp-dir <PATH>] [-v|--verbosity <LEVEL>]
+    [--no-cache] [--skip-manifest-update] [-s|--source <SOURCE>] 
+    [--temp-dir <PATH>] [-v|--verbosity <LEVEL>] [--version <VERSION>]
 
 dotnet workload restore -?|-h|--help
 ```
@@ -58,6 +58,8 @@ For more information about the `dotnet workload` commands, see the [dotnet workl
 [!INCLUDE [temp-dir](../../../includes/cli-temp-dir.md)]
 
 [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
+
+[!INCLUDE [version](../../../includes/cli-version.md)]
 
 ## Example
 

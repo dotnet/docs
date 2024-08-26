@@ -44,7 +44,7 @@ The ADO.NET Entity Framework provides several benefits to an existing applicatio
 
 3. Define the connection string.
 
-     The Entity Framework uses a specially formatted connection string when executing queries against a conceptual model. This connection string encapsulates information about the model and mapping files and the connection to the data source. For more information, see [How to: Define the Connection String](how-to-define-the-connection-string.md).
+     The Entity Framework uses a specially formatted connection string when executing queries against a conceptual model. This connection string encapsulates information about the model and mapping files and the connection to the data source.
 
 4. Configure the Visual Studio project.
 

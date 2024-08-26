@@ -17,8 +17,8 @@ ms.date: 09/10/2021
 dotnet workload install <WORKLOAD_ID>...
     [--configfile <FILE>] [--disable-parallel]
     [--ignore-failed-sources] [--include-previews] [--interactive]
-    [--no-cache] [--skip-manifest-update]
-    [--source <SOURCE>] [--temp-dir <PATH>] [-v|--verbosity <LEVEL>]
+    [--no-cache] [--skip-manifest-update] [--source <SOURCE>]
+    [--temp-dir <PATH>] [-v|--verbosity <LEVEL>] [--version <VERSION>]
 
 dotnet workload install -?|-h|--help
 ```
@@ -26,6 +26,13 @@ dotnet workload install -?|-h|--help
 ## Description
 
 The `dotnet workload install` command installs one or more *optional workloads*. Optional workloads can be installed on top of the .NET SDK to provide support for various application types, such as [.NET MAUI](/dotnet/maui/what-is-maui) and [Blazor WebAssembly AOT](https://devblogs.microsoft.com/aspnet/asp-net-core-updates-in-net-6-preview-4/#blazor-webassembly-ahead-of-time-aot-compilation).
+
+When the command is in `workload-set` update mode, workload versions installed:
+
+* Are from the latest workload set or a workload set version specified in a global.json or `--version` option.
+* Might not be the latest version available of each individual workload. For example, the `install` command won't install a newer workload set if you previously used the `--version` flag.
+
+For more information, see [.NET SDK workload sets](dotnet-workload-sets.md). `workload-set` update mode is available since 8.0.400 SDK.
 
 Use [dotnet workload search](dotnet-workload-search.md) to learn what workloads are available to install.
 
@@ -87,6 +94,8 @@ The `dotnet workload update` command also downloads advertising manifests. The d
 [!INCLUDE [temp-dir](../../../includes/cli-temp-dir.md)]
 
 [!INCLUDE [verbosity](../../../includes/cli-verbosity-packages.md)]
+
+[!INCLUDE [version](../../../includes/cli-version.md)]
 
 ## Examples
 

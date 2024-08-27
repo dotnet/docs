@@ -70,7 +70,7 @@ The preceding code demonstrates the following protocol method patterns:
 - Uses the `RequestContent` type to supply data for the request body.
 - Uses the `RequestContext` type to configure request options.
 - Returns data using the `Response` type.
-- Reads [dynamic](../../csharp/advanced-topics/interop/using-type-dynamic.md) content from the response data.
+- Reads content from the response data into a [dynamic](../../csharp/advanced-topics/interop/using-type-dynamic.md) type using <xref:Azure.AzureCoreExtensions.ToDynamicFromJson%2A>.
 
 > [!NOTE]
 > The preceding code configures the `ClientErrorBehaviors.NoThrow` for the `RequestOptions`. This option prevents non-success service responses status codes from throwing an exception, which means the app code should manually handle the response status code checks.

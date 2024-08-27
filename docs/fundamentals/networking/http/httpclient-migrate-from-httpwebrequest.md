@@ -87,7 +87,7 @@ using HttpResponseMessage responseMessage = await client.PostAsync(uri, new Stri
 | `AuthenticationLevel` | No direct equivalent API | See: [Example: Enabling Mutual Authentication](#example-enabling-mutual-authentication). |
 | `AutomaticDecompression` | <xref:System.Net.Http.SocketsHttpHandler.AutomaticDecompression> | See: [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
 | `CachePolicy` | No direct equivalent API | See: [Example: Apply CachePolicy Headers](#example-apply-cachepolicy-headers). |
-| `ClientCertificates` | <xref:System.Net.Http.SocketsHttpHandler.SslOptions>.<xref:System.Net.Security.SslClientAuthenticationOptions.ClientCertificates> | See: [Usage of Certificate Related Properties in HttpClient](#usage-of-certificate-related-properties-in-httpclient). |
+| `ClientCertificates` | <xref:System.Net.Http.SocketsHttpHandler.SslOptions>.<xref:System.Net.Security.SslClientAuthenticationOptions.ClientCertificates> | See: [Usage of Certificate Related Properties in HttpClient](#usage-of-certificate-and-tls-related-properties-in-httpclient). |
 | `Connection` | <xref:System.Net.Http.Headers.HttpRequestHeaders.Connection> | See: [Example: Set Request Headers](#example-set-request-headers). |
 | `ConnectionGroupName` | No equivalent API | TODO |
 | `ContentLength` | <xref:System.Net.Http.Headers.HttpContentHeaders.ContentLength> | TODO |

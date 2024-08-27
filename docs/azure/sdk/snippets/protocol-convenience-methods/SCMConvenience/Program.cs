@@ -6,8 +6,7 @@ ChatClient client = new(
     credential: Environment.GetEnvironmentVariable("OPENAI_API_KEY")!);
 
 // Call the convenience method
-ChatCompletion completion =
-    client.CompleteChat("What is Microsoft Azure?");
+ChatCompletion completion = client.CompleteChat("What is Microsoft Azure?");
 
 // Display the results
 Console.WriteLine($"[{completion.Role}]: {completion}");

@@ -5,7 +5,7 @@ using Azure.Core.Serialization;
 using Azure.Identity;
 
 // Create the client
-ContentSafetyClient safetyClient = new(
+ContentSafetyClient client = new(
     new Uri("https://contentsafetyai.cognitiveservices.azure.com/"),
     new DefaultAzureCredential());
 
@@ -16,7 +16,7 @@ RequestContent prompt = RequestContent.Create(new
 });
 
 // Call the protocol method
-Response response = safetyClient.AnalyzeText(
+Response response = client.AnalyzeText(
     prompt,
     new RequestContext
     {

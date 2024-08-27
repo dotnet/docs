@@ -27,9 +27,12 @@ To write JSON to a string or to a file, call the <xref:System.Text.Json.JsonSeri
 
 ## Use GitHub Copilot to serialize to JSON
 
-You can get coding help from GitHub Copilot to serialize to JSON in .NET.
+You can get coding help from GitHub Copilot within your IDE, such as Visual Studio Code or Visual Studio, to serialize to JSON in .NET.
 
-If you're using [Visual Studio 2022 version 17.8 or later](/visualstudio/releases/2022/release-notes), you can try the AI-driven [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states) to generate code to use `System.Text.Json` to serialize to JSON. Submit your question as a prompt in the copilot chat window, as in the following example.
+If you're using [Visual Studio 2022 version 17.8 or later](/visualstudio/releases/2022/release-notes), you can try the AI-driven [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states) to generate sample code to use `System.Text.Json` to serialize to JSON. Submit your question as a prompt in the copilot chat window, as in the following example.
+
+>[!NOTE]
+>GitHub Copilot is powered by AI, so surprises and mistakes are possible. Make sure to verify any generated code or suggestions. For more information about the general use of GitHub Copilot, product impact, human oversight, and privacy, see [GitHub Copilot FAQs](https://github.com/features/copilot#faq).
 
 **Example prompt for Copilot Chat**
 
@@ -82,7 +85,7 @@ public class Program
 This code defines a `Person` class, creates an instance of it, and then serializes it to a JSON string using `JsonSerializer.Serialize`. The resulting JSON string is then printed to the console.
 ```
 
-:::image type="content" source="./media/serialize-json-using-github-copilot.gif" alt-text="Animated screenshot that shows using GitHub Copilot Chat in Visual Studio to serialize JSON" lightbox="./media/serialize-json-using-github-copilot.gif":::
+Note that your results might be different from what is shown in the sample responses. AI models are non-deterministic, which means that they can return different responses when asked the same question. This might be due to additional learning and adaption over time, language variation, changes in context, such as your chat history, and more.
 
 You can use chat features, such as [slash commands, references, and threads](/visualstudio/ide/copilot-chat-context), to set intent and get better answers with scoped context.
 
@@ -164,3 +167,8 @@ To pretty-print the JSON output, set <xref:System.Text.Json.JsonSerializerOption
 
 > [!TIP]
 > If you use `JsonSerializerOptions` repeatedly with the same options, don't create a new `JsonSerializerOptions` instance each time you use it. Reuse the same instance for every call. For more information, see [Reuse JsonSerializerOptions instances](configure-options.md#reuse-jsonserializeroptions-instances).
+
+## Related content
+[GitHub Copilot Trust Center](https://resources.github.com/copilot-trust-center/)
+[GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states)
+[GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview)

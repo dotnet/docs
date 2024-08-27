@@ -40,6 +40,9 @@ You can get coding help from GitHub Copilot to convert your code within your IDE
 
 If you're using [Visual Studio 2022 version 17.8 or later](/visualstudio/releases/2022/release-notes), you can try the AI-driven [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states) to help migrate your `Newtonsoft.Json` code to use `System.Text.Json`. Submit your question and the code to convert as a prompt in the copilot chat window, as in the following example.
 
+>[!NOTE]
+>GitHub Copilot is powered by AI, so surprises and mistakes are possible. Make sure to verify any generated code or suggestions. For more information about the general use of GitHub Copilot, product impact, human oversight, and privacy, see [GitHub Copilot FAQs](https://github.com/features/copilot#faq).
+
 **Example prompt for Copilot Chat**
 
 ```
@@ -87,6 +90,8 @@ public class Program
 }
 This code uses System.Text.Json.JsonSerializer.Serialize to convert the Product object to a JSON string.
 ```
+
+Note that your results might be different from what is shown in these sample responses. AI models are non-deterministic, which means that they can return different responses when asked the same question. This might be due to additional learning and adaption over time, language variation, changes in context, such as your chat history, and more.
 
 :::image type="content" source="./media/migrate-newtonsoft-json-using-github-copilot.gif" alt-text="Animated screenshot that shows using GitHub Copilot Chat in Visual Studio to migrate from newtonsoft" lightbox="./media/migrate-newtonsoft-json-using-github-copilot.gif":::
 
@@ -893,3 +898,6 @@ Newtonsoft parses `NaN`, `Infinity`, and `-Infinity` JSON string tokens. With Sy
 
 * [System.Text.Json overview](overview.md)
 * [How to serialize and deserialize JSON](how-to.md)
+* [GitHub Copilot Trust Center](https://resources.github.com/copilot-trust-center/)
+* [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states)
+* [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview)

@@ -27,7 +27,7 @@ To write JSON to a string or to a file, call the <xref:System.Text.Json.JsonSeri
 
 ## Use GitHub Copilot to serialize to JSON
 
-You can get coding help from GitHub Copilot within your IDE, such as Visual Studio or VS Code, to serialize to JSON in .NET.
+You can use GitHub Copilot in your IDE to generate code that uses `System.Text.Json` to serialize to JSON.
 
 If you're using [Visual Studio 2022 version 17.8 or later](/visualstudio/releases/2022/release-notes), you can try the AI-driven [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states) to generate sample code to use `System.Text.Json` to serialize to JSON. Submit your question as a prompt in the copilot chat window, as in the following example. You can also submit prompts using [inline chat](/visualstudio/ide/visual-studio-github-copilot-chat#ask-questions-in-the-inline-chat-view) in the editor window itself.
 
@@ -37,13 +37,14 @@ If you're using [Visual Studio 2022 version 17.8 or later](/visualstudio/release
 **Example prompt for Copilot Chat**
 
 ```
-Generate sample code to use `System.Text.Json` to serialize JSON to a string. Show sample output.
+Generate code to use `System.Text.Json` to serialize an object to a JSON string. The object has the following fields: FirstName (string), Lastname (string), Age (int). Show sample output
 ```
 
 **Sample Copilot Chat response**
 
 ```output
-Sure! Below is an example of how to use System.Text.Json to serialize an object to a JSON string in C#.
+Sure! Below is an example of how to use System.Text.Json to serialize an object with the specified fields to a JSON string in C#:
+to a JSON string in C#.
 
 using System;
 using System.Text.Json;

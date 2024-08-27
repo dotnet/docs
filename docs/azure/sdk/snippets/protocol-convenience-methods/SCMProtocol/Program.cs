@@ -1,17 +1,17 @@
-﻿using OpenAI;
-using OpenAI.Chat;
+﻿using OpenAI.Chat;
 using System.ClientModel;
 using System.ClientModel.Primitives;
 using System.Text.Json;
 
 // Create the client
-OpenAIClient client = new("<your-openai-api-key>");
-ChatClient chatClient = client.GetChatClient("gpt-4");
+ChatClient client = new(
+    model: "gpt-4o-mini",
+    credential: Environment.GetEnvironmentVariable("OPENAI_API_KEY")!);
 
 // Create the request content
 BinaryData input = BinaryData.FromBytes("""
     {
-        "model": "gpt-4o",
+        "model": "gpt-4o-mini",
         "messages": [
            {
                "role": "user",
@@ -23,12 +23,12 @@ BinaryData input = BinaryData.FromBytes("""
 using BinaryContent content = BinaryContent.Create(input);
 
 // Call the protocol method
-ClientResult result = chatClient.CompleteChat(
-        content,
-        new RequestOptions
-        {
-            ErrorOptions = ClientErrorBehaviors.NoThrow
-        });
+ClientResult result = client.CompleteChat(
+    content,
+    new RequestOptions
+    {
+        ErrorOptions = ClientErrorBehaviors.NoThrow,
+    });
 
 PipelineResponse response = result.GetRawResponse();
 
@@ -38,14 +38,12 @@ if (response.Status != 200)
     throw new ClientResultException(response);
 }
 
-// Display the results
 BinaryData output = result.GetRawResponse().Content;
-
 using JsonDocument outputAsJson = JsonDocument.Parse(output);
-string message = outputAsJson.RootElement
+JsonElement messageElement = outputAsJson.RootElement
     .GetProperty("choices"u8)[0]
-    .GetProperty("message"u8)
-    .GetProperty("content"u8)
-    .GetString();
+    .GetProperty("message"u8);
 
-Console.WriteLine(message);
+// Display the results
+Console.WriteLine($@"[{messageElement.GetProperty("role"u8)}]:
+    {messageElement.GetProperty("content"u8)}");

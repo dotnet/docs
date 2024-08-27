@@ -34,7 +34,7 @@ The following table compares some of the request and response types used by prot
 | Request or response concern   | Azure.Core                       | System.ClientModel                                    |
 |-------------------------------|----------------------------------|-------------------------------------------------------|
 | Request body                  | <xref:Azure.Core.RequestContent> | <xref:System.ClientModel.BinaryContent>               |
-| Advanced options              | <xref:Azure.Core.RequestContext> | <xref:System.ClientModel.Primitives.RequestOptions>   |
+| Advanced options              | <xref:Azure.RequestContext>      | <xref:System.ClientModel.Primitives.RequestOptions>   |
 | Raw HTTP Response             | <xref:Azure.Response>            | <xref:System.ClientModel.Primitives.PipelineResponse> |
 | Return type with output model | <xref:Azure.Response%601>        | <xref:System.ClientModel.ClientResult%601>            |
 

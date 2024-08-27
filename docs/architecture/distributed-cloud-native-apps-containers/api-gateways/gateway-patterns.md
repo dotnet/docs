@@ -9,8 +9,6 @@ ms.date: 04/25/2024
 
 [!INCLUDE [download-alert](../includes/download-alert.md)]
 
-!TODO - sorry couldn't get these done in time. Should be easy to refresh from my powerpoint.
-
 In a cloud-native system, front-end clients (mobile, web, and desktop applications) require a communication channel to interact with independent back-end microservices.
 
 How can you satisfy this need?

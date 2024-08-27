@@ -86,7 +86,7 @@ using HttpResponseMessage responseMessage = await client.PostAsync(uri, new Stri
 | `AllowWriteStreamBuffering` | No direct equivalent API | See: [Example: Write Buffering](#example-write-buffering). |
 | `AuthenticationLevel` | No direct equivalent API | See: [Example: Enabling Mutual Authentication](#example-enabling-mutual-authentication). |
 | `AutomaticDecompression` | <xref:System.Net.Http.SocketsHttpHandler.AutomaticDecompression> | See: [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
-| `CachePolicy` | No direct equivalent API | See: `Example: Apply CachePolicy Headers`. |
+| `CachePolicy` | No direct equivalent API | See: [Example: Apply CachePolicy Headers](#example-apply-cachepolicy-headers). |
 | `ClientCertificates` | <xref:System.Net.Http.SocketsHttpHandler.SslOptions>.<xref:System.Net.Security.SslClientAuthenticationOptions.ClientCertificates> | See: [Usage of Certificate Related Properties in HttpClient](#usage-of-certificate-related-properties-in-httpclient). |
 | `Connection` | <xref:System.Net.Http.Headers.HttpRequestHeaders.Connection> | See: [Example: Set Request Headers](#example-set-request-headers). |
 | `ConnectionGroupName` | No equivalent API | TODO |
@@ -97,7 +97,7 @@ using HttpResponseMessage responseMessage = await client.PostAsync(uri, new Stri
 | `CookieContainer` | <xref:System.Net.Http.SocketsHttpHandler.CookieContainer> | See: [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
 | `Credentials` | <xref:System.Net.Http.SocketsHttpHandler.Credentials> | See: [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
 | `Date` | <xref:System.Net.Http.Headers.HttpRequestHeaders.Date> | See: [Example: Set Request Headers](#example-set-request-headers). |
-| `DefaultCachePolicy` | No direct equivalent API | See: `Example: Apply CachePolicy Headers`. |
+| `DefaultCachePolicy` | No direct equivalent API | See: [Example: Apply CachePolicy Headers](#example-apply-cachepolicy-headers). |
 | `DefaultMaximumErrorResponseLength` | TODO | TODO |
 | `DefaultMaximumResponseHeadersLength` | No equivalent API | <xref:System.Net.Http.SocketsHttpHandler.MaxResponseHeadersLength> can be used instead. |
 | `DefaultWebProxy` | No equivalent API | <xref:System.Net.Http.SocketsHttpHandler.Proxy> can be used instead. |
@@ -440,6 +440,10 @@ TODO:
 TODO:
 
 ### Example: Set Request Headers
+
+TODO:
+
+### Example: Apply CachePolicy Headers
 
 TODO:
 

@@ -85,7 +85,7 @@ Some client libraries that connect to non-Azure services use patterns similar to
 
 Consider the following code that uses a `ChatClient` to call the `CompleteChat` convenience method:
 
-:::code source="snippets/protocol-convenience-methods/SCMConvenience/Program.cs" highlight="10,11":::
+:::code source="snippets/protocol-convenience-methods/SCMConvenience/Program.cs" highlight="9":::
 
 The preceding code demonstrates the following `System.ClientModel` convenience method patterns:
 

@@ -1,9 +1,9 @@
 ---
 title: Understand Azure SDK client library method types
-description: Learn about the key differences between Azure SDK client library protocol and convenience methods
+description: Learn about the key differences between Azure SDK client library protocol and convenience methods.
 ms.topic: conceptual
 ms.custom: devx-track-dotnet, engagement-fy23, devx-track-arm-template
-ms.date: 06/24/2024
+ms.date: 08/26/2024
 ---
 
 # Azure SDK for .NET protocol and convenience methods overview
@@ -24,19 +24,19 @@ Protocol and convenience methods implement slightly different patterns based on 
 
 - [**Azure.Core**](/dotnet/api/overview/azure/core-readme) provides shared primitives, abstractions, and helpers for building modern Azure SDK client libraries. These libraries follow the [Azure SDK Design Guidelines for .NET](https://azure.github.io/azure-sdk/dotnet_introduction.html) and use package names and namespaces prefixed with *Azure*, such as [`Azure.Storage.Blobs`](/dotnet/api/overview/azure/storage.blobs-readme).
 
-- [**System.ClientModel**](/dotnet/api/overview/azure/system.clientmodel-readme) is a core library that provides shared primitives, abstractions, and helpers for .NET service client libraries. The `System.ClientModel` library is a general purpose toolset designed to help build libraries for a variety of platforms and services, whereas the `Azure.Core` library is specifically designed for building Azure client libraries.
+- [**System.ClientModel**](/dotnet/api/overview/azure/system.clientmodel-readme) is a core library that provides shared primitives, abstractions, and helpers for .NET service client libraries. The `System.ClientModel` library is a general purpose toolset designed to help build libraries for various platforms and services, whereas the `Azure.Core` library is specifically designed for building Azure client libraries.
 
 > [!NOTE]
 > The `Azure.Core` library itself also depends on `System.ClientModel` for various client building blocks. In the context of this article, the key differentiator for method patterns is whether a client library depends on `Azure.Core` or `System.ClientModel` directly, rather than through a transitive dependency.
 
-The following table compares some of the request and response types used by protocol and convenience methods, based on whether the library depends on `Azure.Core` or `System.ClientModel`:
+The following table compares some of the request and response types used by protocol and convenience methods, based on whether the library depends on `Azure.Core` or `System.ClientModel`.
 
-|Request or response concern  |Azure.Core  | System.ClientModel |
-|---------|---------|---------|
-|Request body     | [`RequestContent`](/dotnet/api/azure.core.requestcontent)         | [`BinaryContent`](/dotnet/api/system.clientmodel.binarycontent)         |
-|Advanced options     | [`RequestContext`](/dotnet/api/azure.requestcontext)         | [`RequestOptions`](/dotnet/api/system.clientmodel.primitives.requestoptions)         |
-|Raw HTTP Response     | [`Response`](/dotnet/api/azure.response)         | [`PipelineResponse`](/dotnet/api/system.clientmodel.primitives.pipelineresponse)         |
-|Return type with output model     | [`Response<T>`](/dotnet/api/azure.response-1)         | [`ClientResult<T>`](/dotnet/api/system.clientmodel.clientresult-1)         |
+| Request or response concern   | Azure.Core                       | System.ClientModel                                    |
+|-------------------------------|----------------------------------|-------------------------------------------------------|
+| Request body                  | <xref:Azure.Core.RequestContent> | <xref:System.ClientModel.BinaryContent>               |
+| Advanced options              | <xref:Azure.Core.RequestContext> | <xref:System.ClientModel.Primitives.RequestOptions>   |
+| Raw HTTP Response             | <xref:Azure.Response>            | <xref:System.ClientModel.Primitives.PipelineResponse> |
+| Return type with output model | <xref:Azure.Response%601>        | <xref:System.ClientModel.ClientResult%601>            |
 
 The sections ahead provide implementation examples of these concepts.
 
@@ -70,7 +70,7 @@ The preceding code demonstrates the following protocol method patterns:
 - Uses the `RequestContent` type to supply data for the request body.
 - Uses the `RequestContext` type to configure request options.
 - Returns data using the `Response` type.
-- Reads `response.Content` to access the response data.
+- Reads [dynamic](../../csharp/advanced-topics/interop/using-type-dynamic.md) content from the response data.
 
 > [!NOTE]
 > The preceding code configures the `ClientErrorBehaviors.NoThrow` for the `RequestOptions`. This option prevents non-success service responses status codes from throwing an exception, which means the app code should manually handle the response status code checks.
@@ -79,7 +79,7 @@ The preceding code demonstrates the following protocol method patterns:
 
 ### Libraries that depend on System.ClientModel
 
-Some client libraries that connect to non-Azure services use patterns similar to the libraries that depend on `Azure.Core`. For example, the [`OpenAI`](https://www.nuget.org/packages/OpenAI/2.0.0-beta.7) library provides a client that connects to the OpenAI services. These libraries are based on a library called `System.ClientModel` that has patterns similar to `Azure.Core`.
+Some client libraries that connect to non-Azure services use patterns similar to the libraries that depend on `Azure.Core`. For example, the [`OpenAI`](https://www.nuget.org/packages/OpenAI) library provides a client that connects to the OpenAI services. These libraries are based on a library called `System.ClientModel` that has patterns similar to `Azure.Core`.
 
 ### [Convenience method](#tab/convenience-methods)
 
@@ -112,7 +112,7 @@ The preceding code demonstrates the following `System.ClientModel` protocol meth
 
 ## Protocol and convenience method usage guidance
 
-Although the Azure SDK for .NET client libraries provide the option to use either protocol or convenience methods, prioritize using convenience methods in most scenarios. Convenience methods are designed to improve the development experience and provide flexibility for authoring requests and handling responses. However, both method types can be used in your app as needed. Consider the following criteria when deciding which type of method to use:
+Although the Azure SDK for .NET client libraries provide the option to use either protocol or convenience methods, prioritize using convenience methods in most scenarios. Convenience methods are designed to improve the development experience and provide flexibility for authoring requests and handling responses. However, both method types can be used in your app as needed. Consider the following criteria when deciding which type of method to use.
 
 Convenience methods:
 

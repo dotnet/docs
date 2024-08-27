@@ -10,12 +10,12 @@ ChatClient chatClient = client.GetChatClient("gpt-4");
 
 // Create the request content
 BinaryData input = BinaryData.FromBytes("""
-    {  
+    {
         "model": "gpt-4o",
         "messages": [
            {
                "role": "user",
-               "content": "What is Microsoft Azure?."
+               "content": "What is Microsoft Azure?"
            }
         ]
     }
@@ -25,7 +25,7 @@ using BinaryContent content = BinaryContent.Create(input);
 // Call the protocol method
 ClientResult result = chatClient.CompleteChat(
         content,
-        new RequestOptions()
+        new RequestOptions
         {
             ErrorOptions = ClientErrorBehaviors.NoThrow
         });

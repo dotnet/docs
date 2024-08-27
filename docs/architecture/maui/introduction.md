@@ -71,7 +71,7 @@ The sample application includes the following backend services:
 - An ordering microservice, which is a domain-driven service that uses domain-driven design patterns.
 - A basket microservice, which is a data-driven CRUD service that uses Redis Cache.
 
-These backend services are implemented as microservices using ASP.NET Core, and are deployed as unique containers with .NET Aspire. Collectively, these backend services are referred to as the eShop reference application. Client apps communicate with the backend services through a Representational State Transfer (REST) web interface. For more information about microservices and conainers, see [Containerized microservices](micro-services.md).
+These backend services are implemented as microservices using ASP.NET Core, and are deployed as unique containers with .NET Aspire. Collectively, these backend services are referred to as the eShop reference application. Client apps communicate with the backend services through a Representational State Transfer (REST) web interface. For more information about microservices and containers, see [Containerized microservices](micro-services.md).
 
 ## Multi-Platform app
 

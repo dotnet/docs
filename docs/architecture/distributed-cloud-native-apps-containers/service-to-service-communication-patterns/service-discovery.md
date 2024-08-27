@@ -60,4 +60,4 @@ var frontend = builder.AddProject<Projects.Frontend>("frontend")
 
 >[!div class="step-by-step"]
 >[Previous](introduction.md)
->[Next](front-end-client-communication.md)
+>[Next](service-to-service-communication.md)

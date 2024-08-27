@@ -233,5 +233,5 @@ When you build a cloud-native app using the .NET Aspire stack, service discovery
 However, the code that sends and retrieves messages will be similar, whether you use .NET Aspire or not.
 
 >[!div class="step-by-step"]
->[Previous](front-end-client-communication.md)
+>[Previous](service-discovery.md)
 >[Next](grpc.md)

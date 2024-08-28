@@ -1,13 +1,13 @@
 ---
 title: .NET container images
 description: Learn about the various .NET container images available on Docker Hub and how they're used for different scenarios.
-ms.date: 09/22/2023
+ms.date: 08/28/2024
 ms.custom: linux-related-content
 ---
 
 # .NET container images
 
-.NET provides various container images for different scenarios. This article describes the different types of images and how they're used.
+.NET provides various container images for different scenarios. This article describes the different types of images and how they're used. For more information about official images, see the [Docker Hub: Microsoft .NET](https://hub.docker.com/_/microsoft-dotnet) repository.
 
 ## Tagging scheme
 
@@ -93,23 +93,24 @@ _.NET stable image repositories:_
 
 | Image repository                                                       | Image                                   |
 |------------------------------------------------------------------------|-----------------------------------------|
-| [aspnet](https://hub.docker.com/_/microsoft-dotnet-aspnet)             | `mcr.microsoft.com/dotnet/aspnet`       |
-| [monitor](https://hub.docker.com/_/microsoft-dotnet-monitor)           | `mcr.microsoft.com/dotnet/monitor`      |
-| [runtime-deps](https://hub.docker.com/_/microsoft-dotnet-runtime-deps) | `mcr.microsoft.com/dotnet/runtime-deps` |
-| [runtime](https://hub.docker.com/_/microsoft-dotnet-runtime)           | `mcr.microsoft.com/dotnet/runtime`      |
-| [samples](https://hub.docker.com/_/microsoft-dotnet-samples)           | `mcr.microsoft.com/dotnet/samples`      |
 | [sdk](https://hub.docker.com/_/microsoft-dotnet-sdk)                   | `mcr.microsoft.com/dotnet/sdk`          |
+| [aspnet](https://hub.docker.com/_/microsoft-dotnet-aspnet)             | `mcr.microsoft.com/dotnet/aspnet`       |
+| [runtime](https://hub.docker.com/_/microsoft-dotnet-runtime)           | `mcr.microsoft.com/dotnet/runtime`      |
+| [runtime-deps](https://hub.docker.com/_/microsoft-dotnet-runtime-deps) | `mcr.microsoft.com/dotnet/runtime-deps` |
+| [monitor](https://hub.docker.com/_/microsoft-dotnet-monitor)           | `mcr.microsoft.com/dotnet/monitor`      |
+| [aspire-dashboard](https://hub.docker.com/r/microsoft/dotnet-aspire-dashboard/) | `mcr.microsoft.com/dotnet/aspire-dashboard` |
+| [samples](https://hub.docker.com/_/microsoft-dotnet-samples)           | `mcr.microsoft.com/dotnet/samples`      |
 
 _.NET nightly image repositories:_
 
 | Image repository                                                             | Image                                      |
 |------------------------------------------------------------------------------|--------------------------------------------|
-| [nightly](https://hub.docker.com/_/microsoft-dotnet-nightly)                 | `mcr.microsoft.com/dotnet/nightly`         |
 | [nightly-aspnet](https://hub.docker.com/_/microsoft-dotnet-nightly-aspnet)   | `mcr.microsoft.com/dotnet/nightly/aspnet`  |
 | [nightly-monitor](https://hub.docker.com/_/microsoft-dotnet-nightly-monitor) | `mcr.microsoft.com/dotnet/nightly/monitor` |
 | [nightly-runtime-deps](https://hub.docker.com/_/microsoft-dotnet-nightly-runtime-deps) | `mcr.microsoft.com/dotnet/nightly/runtime-deps` |
 | [nightly-runtime](https://hub.docker.com/_/microsoft-dotnet-nightly-runtime) | `mcr.microsoft.com/dotnet/nightly/runtime` |
 | [nightly-sdk](https://hub.docker.com/_/microsoft-dotnet-nightly-sdk)         | `mcr.microsoft.com/dotnet/nightly/sdk`     |
+| [nightly-aspire-dashboard](https://hub.docker.com/r/microsoft/dotnet-nightly-aspire-dashboard/) | `mcr.microsoft.com/dotnet/nightly/aspire-dashboard` |
 
 _.NET Framework image repositories:_
 

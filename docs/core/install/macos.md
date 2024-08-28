@@ -236,7 +236,7 @@ To learn how to use the .NET CLI, see [.NET CLI overview](../tools/index.md).
 
 Containers provide a lightweight way to isolate your application from the rest of the host system. Containers on the same machine share just the kernel and use resources given to your application.
 
-.NET can run in a Docker container. Official .NET Docker images are published to the Microsoft Container Registry (MCR).
+.NET can run in a Docker container. Official .NET Docker images are published to the Microsoft Container Registry (MCR) and are discoverable at the [Microsoft .NET Docker Hub repository](https://hub.docker.com/_/microsoft-dotnet/).
 
 Microsoft provides images that are tailored for specific scenarios. Each repository contains images for different combinations of the .NET (SDK or Runtime) and OS that you can use. For example, the [ASP.NET Core repository](https://hub.docker.com/_/microsoft-dotnet-aspnet) provides images that are built for running ASP.NET Core apps in production.
 

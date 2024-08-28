@@ -65,7 +65,7 @@ Available starting in: .NET 8.0.
 The `Microsoft.Extensions.Diagnostics.ResourceMonitoring` metrics report resource information from [resource monitoring](diagnostic-resource-monitoring.md):
 
 - [`container.cpu.limit.utilization`](#metric-containercpulimitutilization)
-- [`container.cpu.request.utilization`](#metric-containercpurequesttutilization)
+- [`container.cpu.request.utilization`](#metric-containercpurequestutilization)
 - [`container.memory.limit.utilization`](#metric-containermemorylimitutilization)
 - [`process.cpu.utilization`](#metric-processcpuutilization)
 - [`dotnet.process.memory.virtual.utilization`](#metric-dotnetprocessmemoryvirtualutilization)

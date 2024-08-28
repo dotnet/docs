@@ -181,7 +181,7 @@ if ($version) {
 
 This example follows the recommended practice for version checking:
 
-- It checks whether the value of the **Release** entry is *greater than or equal to* the value of the known release keys.
+- It checks whether the value of the **Release** entry is *greater than or equal to* the value of the known release values.
 - It checks in order from most recent version to earliest version.
 
 ### .NET Framework 1.0-4.0

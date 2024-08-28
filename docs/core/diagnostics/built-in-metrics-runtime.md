@@ -10,7 +10,10 @@ ms.date: 11/02/2023
 This article describes the built-in metrics for .NET runtime libraries that are produced using the
 <xref:System.Diagnostics.Metrics?displayProperty=nameWithType> API. For a listing of metrics based on the older [EventCounters](event-counters.md) API, see [Available counters](available-counters.md).
 
-## `System.Runtime`
+> [!TIP]
+> For more information about how to collect and report these metrics, see [Collecting Metrics](metrics-collection.md).
+
+## Meter: `System.Runtime`
 
 The `System.Runtime` Meter reports measurements from the GC, JIT, AssemblyLoader, Threadpool, and exception handling portions of the .NET runtime as well as some CPU and memory metrics from the OS. These metrics are available automatically for all .NET apps.
 

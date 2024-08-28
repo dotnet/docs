@@ -10,7 +10,10 @@ ms.date: 11/02/2023
 This article describes the built-in metrics for diagnostic .NET extensions libraries that are produced using the
 <xref:System.Diagnostics.Metrics?displayProperty=nameWithType> API. For a listing of metrics based on the older [EventCounters](event-counters.md) API, see [Available counters](available-counters.md).
 
-## `Microsoft.Extensions.Diagnostics.HealthChecks`
+> [!TIP]
+> For more information about how to collect and report these metrics, see [Collecting Metrics](metrics-collection.md).
+
+## Meter: `Microsoft.Extensions.Diagnostics.HealthChecks`
 
 The `Microsoft.Extensions.Diagnostics.HealthChecks` metrics report health check information from [.NET health checks](diagnostic-health-checks.md):
 
@@ -60,7 +63,7 @@ Available starting in: .NET 8.0.
 
 Available starting in: .NET 8.0.
 
-## `Microsoft.Extensions.Diagnostics.ResourceMonitoring`
+## Meter: `Microsoft.Extensions.Diagnostics.ResourceMonitoring`
 
 The `Microsoft.Extensions.Diagnostics.ResourceMonitoring` metrics report resource information from [resource monitoring](diagnostic-resource-monitoring.md):
 

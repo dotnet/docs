@@ -13,7 +13,7 @@ This article describes the networking metrics built-in for <xref:System.Net> pro
 > [!TIP]
 > For more information about how to collect, report, enrich, and test System.Net metrics, see [Networking metrics in .NET](../../fundamentals/networking/telemetry/metrics.md).
 
-## `System.Net.NameResolution`
+## Meter: `System.Net.NameResolution`
 
 The `System.Net.NameResolution` metrics report DNS name resolution from <xref:System.Net.Dns>:
 
@@ -48,7 +48,7 @@ When using OpenTelemetry, the default buckets for this metric are set to [ 0.005
 
 Available starting in: .NET 8
 
-## `System.Net.Http`
+## Meter: `System.Net.Http`
 
 The `System.Net.Http` metrics report HTTP request and connection information from <xref:System.Net.Http>:
 

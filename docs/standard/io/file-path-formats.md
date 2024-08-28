@@ -133,7 +133,7 @@ The type of the path determines whether or not a current directory is applied in
 
 If the path is a legacy DOS device such as `CON`, `COM1`, or `LPT1`, it is converted into a device path by prepending `\\.\` and returned.
 
-A path that begins with a legacy device name is always interpreted as a legacy device by the <xref:System.IO.Path.GetFullPath(System.String)?displayProperty=nameWithType> method. For example, the DOS device path for `CON.TXT` is `\\.\CON`, and the DOS device path for `COM1.TXT\file1.txt` is `\\.\COM1`.
+Prior to Windows 11, a path that begins with a legacy device name is always interpreted as a legacy device by the <xref:System.IO.Path.GetFullPath(System.String)?displayProperty=nameWithType> method. For example, the DOS device path for `CON.TXT` is `\\.\CON`, and the DOS device path for `COM1.TXT\file1.txt` is `\\.\COM1`. Because this no longer applies with Windows 11, specify the full path to the legacy DOS device, such as `\\.\CON`.
 
 ### Apply the current directory
 
@@ -151,6 +151,9 @@ If the path starts with something other than a separator, the current drive and 
 ### Canonicalize separators
 
 All forward slashes (`/`) are converted into the standard Windows separator, the back slash (`\`). If they are present, a series of slashes that follow the first two slashes are collapsed into a single slash.
+
+> [!NOTE]
+> Starting with .NET 8 on Unix-based operating systems, the runtime no longer converts back slash (`\`) characters to directory separators (forward slashes `/`). For more information, see [Backslash mapping in Unix file paths](../../core/compatibility/core-libraries/8.0/file-path-backslash.md).
 
 ### Evaluate relative components
 

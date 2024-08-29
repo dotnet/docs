@@ -64,6 +64,9 @@ Available starting in: .NET 8.0.
 
 The `Microsoft.Extensions.Diagnostics.ResourceMonitoring` metrics report resource information from [resource monitoring](diagnostic-resource-monitoring.md):
 
+- [`container.cpu.limit.utilization`](#metric-containercpulimitutilization)
+- [`container.cpu.request.utilization`](#metric-containercpurequestutilization)
+- [`container.memory.limit.utilization`](#metric-containermemorylimitutilization)
 - [`process.cpu.utilization`](#metric-processcpuutilization)
 - [`dotnet.process.memory.virtual.utilization`](#metric-dotnetprocessmemoryvirtualutilization)
 - [`system.network.connections`](#metric-systemnetworkconnections)
@@ -71,9 +74,37 @@ The `Microsoft.Extensions.Diagnostics.ResourceMonitoring` metrics report resourc
 > [!NOTE]
 > Metrics emitted by the `Microsoft.Extensions.Diagnostics.ResourceMonitoring` meter are in experimental stage. This means that there could be breaking changes to them.
 
-##### Metric: `process.cpu.utilization`
+##### Metric: `container.cpu.limit.utilization`
 
-The instrument is available only on Linux.
+The instrument is only available on a system running on containers both on Windows and Linux.
+
+| Name | Instrument Type | Unit (UCUM) | Description |
+| ---- | --------------- | ----------- | ----------- |
+| `container.cpu.limit.utilization` | ObservableGauge | `1` | The CPU consumption of the running containerized application relative to resource limit in range `[0, 1]`. |
+
+Available starting in: .NET 8.8.0.
+
+##### Metric: `container.cpu.request.utilization`
+
+The instrument is only available on a system running on containers on Linux.
+
+| Name | Instrument Type | Unit (UCUM) | Description |
+| ---- | --------------- | ----------- | ----------- |
+| `container.cpu.request.utilization` | ObservableGauge | `1` | The CPU consumption of the running containerized application relative to resource request in range `[0, 1]`. |
+
+Available starting in: .NET 8.8.0.
+
+##### Metric: `container.memory.limit.utilization`
+
+The instrument is only available on a system running on containers both on Windows and Linux.
+
+| Name | Instrument Type | Unit (UCUM) | Description |
+| ---- | --------------- | ----------- | ----------- |
+| `container.memory.limit.utilization` | ObservableGauge | `1` | The memory consumption of the running containerized application relative to resource limit in range `[0, 1]`. |
+
+Available starting in: .NET 8.8.0.
+
+##### Metric: `process.cpu.utilization`
 
 | Name | Instrument Type | Unit (UCUM) | Description |
 | ---- | --------------- | ----------- | ----------- |
@@ -83,8 +114,6 @@ Available starting in: .NET 8.0.
 
 ##### Metric: `dotnet.process.memory.virtual.utilization`
 
-The instrument is available only on Linux.
-
 | Name | Instrument Type | Unit (UCUM) | Description |
 | ---- | --------------- | ----------- | ----------- |
 | `dotnet.process.memory.virtual.utilization` | ObservableGauge | `1` | The memory consumption of the running application in range `[0, 1]`. |
@@ -92,8 +121,6 @@ The instrument is available only on Linux.
 Available starting in: .NET 8.0.
 
 ##### Metric: `system.network.connections`
-
-The instrument is available only on Windows.
 
 | Name | Instrument Type | Unit (UCUM) | Description |
 | ---- | --------------- | ----------- | ----------- |

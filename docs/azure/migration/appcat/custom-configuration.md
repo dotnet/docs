@@ -4,7 +4,7 @@ description: Learn how to include a JSON file to configure your code assessment
 ms.topic: conceptual
 ms.date: 08/02/2024
 author: mckennabarlow
-ms.author: mckennabarlow
+ms.author: mcbarlow
 ---
 # How to customize analysis with run config
 

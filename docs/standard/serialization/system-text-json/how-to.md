@@ -169,6 +169,6 @@ To pretty-print the JSON output, set <xref:System.Text.Json.JsonSerializerOption
 
 ## Related content
 
-[GitHub Copilot Trust Center](https://resources.github.com/copilot-trust-center/)
-[GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states)
-[GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview)
+* [GitHub Copilot Trust Center](https://resources.github.com/copilot-trust-center/)
+* [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states)
+* [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview)

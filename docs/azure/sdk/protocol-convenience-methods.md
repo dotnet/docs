@@ -122,8 +122,8 @@ PipelineResponse response = result.GetRawResponse();
 - Console.WriteLine($@"[{message.GetProperty("role"u8)}]:
 -     {message.GetProperty("content"u8)}");
 
-+ dynamic chatResponse = response.Content.ToDynamicFromJson();
-+ var message = chatResponse.choices[0].message;
++ dynamic output = response.Content.ToDynamicFromJson();
++ var message = output.choices[0].message;
 + Console.WriteLine($"[{message.role}] {message.content}");
 ```
 

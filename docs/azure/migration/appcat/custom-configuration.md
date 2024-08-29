@@ -10,15 +10,15 @@ ms.author: mckennabarlow
 
 ## Overview
 
-Before running an analysis we discover all rules and analyzers provided to AppCAT and then use all that match current project's `traits`. However some results could be too noisy for some applications.
+Before running an analysis, AppCAT discovers all rules and analyzers provided to it and then uses that information to match the project's `traits`. However, the analysis results can be overly verbose when using the default configuration.
 
-To control/scope rules and/or analyzers used, you can provide a json run config file which would allow you to:
+To control/scope rules and/or analyzers used, you can provide a JSON run configuration file. This allows you to:
 
-- change default settings to include or exclude some binaries
-- disable existing specific rules or specific analyzers
-- change properties in existing rules
-- add new rules
-- add new analyzers for existing or new rules
+- Change default settings to include or exclude some binaries.
+- Disable existing specific rules or specific analyzers.
+- Change properties in existing rules.
+- Add new rules.
+- Add new analyzers for existing or new rules.
 
 ## How to provide run config
 

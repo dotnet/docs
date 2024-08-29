@@ -100,7 +100,15 @@ In addition, the compiler validates the <xref:System.Runtime.CompilerServices.In
 
 In most cases, an inline array can be accessed like an array, both to read and write values. In addition, you can use the [range](../operators/member-access-operators.md#range-operator-) and [index](../operators/member-access-operators.md#indexer-access) operators.
 
-There are minimal restrictions on the type of the single field. It can't be a pointer type, but it can be any reference type, or any value type. You can use inline arrays with almost any C# data structure.
+There are minimal restrictions on the type of the single field of an inline array. It can't be a pointer type:
+
+:::code language="csharp" source="snippets/shared/StructType.cs" id="DeclareInlineArrayWithPointer":::
+
+but it can be any reference type, or any value type:
+
+:::code language="csharp" source="snippets/shared/StructType.cs" id="DeclareInlineArrayWithReferenceType":::
+
+You can use inline arrays with almost any C# data structure.
 
 Inline arrays are an advanced language feature. They're intended for high-performance scenarios where an inline, contiguous block of elements is faster than other alternative data structures. You can learn more about inline arrays from the [feature speclet](~/_csharplang/proposals/csharp-12.0/inline-arrays.md)
 
@@ -176,3 +184,4 @@ For more information about `struct` features, see the following feature proposal
 - [The C# type system](../../fundamentals/types/index.md)
 - [Design guidelines - Choosing between class and struct](../../../standard/design-guidelines/choosing-between-class-and-struct.md)
 - [Design guidelines - Struct design](../../../standard/design-guidelines/struct.md)
+- [Resolve errors and warnings with inline array declarations](../../language-reference/compiler-messages/inline-array-errors.md)

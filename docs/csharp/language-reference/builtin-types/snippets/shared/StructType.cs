@@ -269,5 +269,21 @@
             private char _firstElement;
         }
         // </DeclareInlineArray>
+
+        // <DeclareInlineArrayWithPointer>
+        [System.Runtime.CompilerServices.InlineArray(10)]
+        public struct CharBufferWithPointer
+        {
+            private unsafe char* _pointerElement;    // CS9184
+        }
+        // </DeclareInlineArrayWithPointer>
+
+        // <DeclareInlineArrayWithReferenceType>
+        [System.Runtime.CompilerServices.InlineArray(10)]
+        public struct CharBufferWithReferenceType
+        {
+            private string _referenceElement;
+        }
+        // </DeclareInlineArrayWithReferenceType>
     }
 }

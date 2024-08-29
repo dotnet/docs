@@ -2,12 +2,12 @@
 using Azure.Identity;
 
 // Create the client
-ContentSafetyClient safetyClient = new(
+ContentSafetyClient client = new(
     new Uri("https://contentsafetyai.cognitiveservices.azure.com/"),
     new DefaultAzureCredential());
 
 // Call the convenience method
-AnalyzeTextResult result = safetyClient.AnalyzeText("What is Microsoft Azure?");
+AnalyzeTextResult result = client.AnalyzeText("What is Microsoft Azure?");
 
 // Display the results
 foreach (TextCategoriesAnalysis item in result.CategoriesAnalysis)

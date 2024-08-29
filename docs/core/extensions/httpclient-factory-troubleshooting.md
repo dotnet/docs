@@ -22,7 +22,7 @@ You can hit a problem if you need to access any scoped service, for example, `Ht
 
 As a result of this limitation:
 
-- Any data cached "externally" in a scoped service will NOT be available within the `HttpMessageHandler`.
+- Any data cached "externally" in a scoped service will **not** be available within the `HttpMessageHandler`.
 - Any data cached "internally" within the `HttpMessageHandler` or its scoped dependencies **can** be observed from multiple application DI scopes (for example, from different incoming requests) as they can share the same handler.
 
 Consider the following recommendations to help alleviate this known limitation:
@@ -35,7 +35,7 @@ Consider the following recommendations to help alleviate this known limitation:
 
 To pass arbitrary information alongside the `HttpRequestMessage`, you can use the <xref:System.Net.Http.HttpRequestMessage.Options?displayProperty=nameWithType> property.
 
-✔️ CONSIDER encapsulating all the scope-related (for example, authentication) logic in a separate `DelegatingHandler` that's NOT created by the `IHttpClientFactory`, and use it to wrap the `IHttpClientFactory`-created handler.
+✔️ CONSIDER encapsulating all the scope-related (for example, authentication) logic in a separate `DelegatingHandler` that's **not** created by the `IHttpClientFactory`, and use it to wrap the `IHttpClientFactory`-created handler.
 
 To create just an `HttpMessageHandler` without `HttpClient`, call <xref:System.Net.Http.IHttpMessageHandlerFactory.CreateHandler%2A?displayProperty=nameWithType> for any registered _named client_. In that case, you will need to create an `HttpClient` instance yourself using the combined handler. You can find a fully runnable example for this workaround on [GitHub](https://github.com/dotnet/docs/tree/main/docs/core/extensions/snippets/http/scopeworkaround).
 
@@ -43,7 +43,7 @@ For more information, see the [Message Handler Scopes in IHttpClientFactory](htt
 
 ## `HttpClient` doesn't respect DNS changes
 
-Even if `IHttpClientFactory` is used, it is still possible to hit the stale DNS problem. This can usually happen if an `HttpClient` instance gets captured in a `Singleton` service, or, in general, stored somewhere for a period of time that's longer than the specified `HandlerLifetime`. `HttpClient` will also get captured if the respective _typed client_ is captured by a singleton.
+Even if `IHttpClientFactory` is used, it's still possible to hit the stale DNS problem. This can usually happen if an `HttpClient` instance gets captured in a `Singleton` service, or, in general, stored somewhere for a period of time that's longer than the specified `HandlerLifetime`. `HttpClient` will also get captured if the respective _typed client_ is captured by a singleton.
 
 ❌ DO NOT cache `HttpClient` instances created by `IHttpClientFactory` for prolonged periods of time.
 
@@ -63,7 +63,7 @@ For more information, see the [`HttpClient` lifetime management](httpclient-fact
 
 ## `HttpClient` uses too many sockets
 
-Even if `IHttpClientFactory` is used, it is still possible to hit the socket exhaustion issue with a specific usage scenario. By default, `HttpClient` doesn't limit the number of concurrent requests. If a large number of HTTP/1.1 requests are started concurrently at the same time, each of them will end up triggering a new HTTP connection attempt, because there is no free connection in the pool and no limit is set.
+Even if `IHttpClientFactory` is used, it's still possible to hit the socket exhaustion issue with a specific usage scenario. By default, `HttpClient` doesn't limit the number of concurrent requests. If a large number of HTTP/1.1 requests are started concurrently at the same time, each of them will end up triggering a new HTTP connection attempt, because there is no free connection in the pool and no limit is set.
 
 ❌ DO NOT start a large number of HTTP/1.1 requests concurrently at the same time without specifying the limits.
 

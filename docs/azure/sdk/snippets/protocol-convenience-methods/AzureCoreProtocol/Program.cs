@@ -30,6 +30,8 @@ if (response.Status != 200)
     throw new RequestFailedException(response);
 }
 
+// With this dynamic instance, you can use response content like a convenience model. As convenience APIs are added
+// to the library, this approach helps you evolve code from protocol to convenience with minimal code changes.
 dynamic content = response.Content.ToDynamicFromJson(JsonPropertyNames.CamelCase);
 
 // Display the results

@@ -3,7 +3,7 @@ title: Understand Azure SDK client library method types
 description: Learn about the key differences between Azure SDK client library protocol and convenience methods.
 ms.topic: conceptual
 ms.custom: devx-track-dotnet, engagement-fy23, devx-track-arm-template
-ms.date: 08/26/2024
+ms.date: 08/29/2024
 ---
 
 # Azure SDK for .NET protocol and convenience methods overview
@@ -70,7 +70,7 @@ The preceding code demonstrates the following protocol method patterns:
 - Uses the `RequestContent` type to supply data for the request body.
 - Uses the `RequestContext` type to configure request options.
 - Returns data using the `Response` type.
-- Reads content from the response data into a [dynamic](../../csharp/advanced-topics/interop/using-type-dynamic.md) type using <xref:Azure.AzureCoreExtensions.ToDynamicFromJson%2A>.
+- Reads content from the response data into a [dynamic](../../csharp/advanced-topics/interop/using-type-dynamic.md) type using <xref:Azure.AzureCoreExtensions.ToDynamicFromJson%2A>. For more information, see [Announcing dynamic JSON in the Azure Core library for .NET](https://devblogs.microsoft.com/azure-sdk/dynamic-json-in-azure-core/).
 
 > [!NOTE]
 > The preceding code configures the `ClientErrorBehaviors.NoThrow` for the `RequestOptions`. This option prevents non-success service responses status codes from throwing an exception, which means the app code should manually handle the response status code checks.
@@ -103,10 +103,30 @@ The preceding code demonstrates the following `System.ClientModel` protocol meth
 - Uses the `BinaryContent` type as a parameter to supply data for the request body.
 - Uses the `RequestContext` type to configure request options.
 - Returns data using the `ClientResult` type.
-- Calls the `GetRawResponse` method to access the response data.
+- Calls the <xref:System.ClientModel.ClientResult.GetRawResponse%2A> method to access the response data.
 
 > [!NOTE]
 > The preceding code configures the [ClientErrorBehaviors.NoThrow](/dotnet/api/system.clientmodel.primitives.clienterrorbehaviors) behavior for the `RequestOptions`. This option prevents non-success service responses status codes from throwing an exception, which means the app code should manually handle the response status code checks.
+
+A `System.ClientModel`-based response can be processed like a convenience model, if you take a dependency on `Azure.Core`. The following diff shows this alternative approach, which follows the same approach demonstrated in the **Protocol method** tab of [Libraries that depend on Azure.Core](#libraries-that-depend-on-azurecore).
+
+```diff
+PipelineResponse response = result.GetRawResponse();
+
+- BinaryData output = result.GetRawResponse().Content;
+- using JsonDocument outputAsJson = JsonDocument.Parse(output);
+- JsonElement message = outputAsJson.RootElement
+-     .GetProperty("choices"u8)[0]
+-     .GetProperty("message"u8);
+
+- Console.WriteLine($@"[{message.GetProperty("role"u8)}]:
+-     {message.GetProperty("content"u8)}");
+
++ dynamic output = response.Content.ToDynamicFromJson(
++     JsonPropertyNames.CamelCase);
++ var message = output.Choices[0].Message;
++ Console.WriteLine($"[{message.Role}]: {message.Content}");
+```
 
 ---
 

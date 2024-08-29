@@ -20,18 +20,18 @@ To control/scope rules and/or analyzers used, you can provide a JSON run configu
 - Add new rules.
 - Add new analyzers for existing or new rules.
 
-## How to provide run config
+## How to provide a JSON run configuration
 
-For CLI:
+### Using the CLI
 
-- in the interactive mode CLI will ask if you want to provide run config and then if you said yes, asks to type/paste path to the run config file.
-- in non-interactive mode there is new argument `-c|--config` which allows to provide the path to the run config json.
+- **Interactive mode**: The CLI will ask if you want to provide run configuration. Upon selecting *yes*, it prompts the user to type/paste the path to the run configuration file.
+- **Non-interactive mode**: Use the `-c|--config` argument. This allows you to provide the path to the JSON run configuration.
 
-For VS:
+### Using Visual Studio
 
-- at the step where we allow to edit analysis settings we added a text box and `Browse` button to let you specify a run config json.
+- When editing analysis settings, use the UI to specify JSON run configuration.
 
-After analysis is done, run config is stored in the report and re-used if user opens report again and refreshes.
+After analysis is done, run configuration is stored in the report. The configuration is re-used if the user reopens the report and refreshes.
 
 ## Run config schema
 

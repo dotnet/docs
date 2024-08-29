@@ -451,7 +451,7 @@ The .NET team has been doing important work to make .NET and ASP.NET Core a cont
 - **Build**: The priority is compiling the application, and the image includes binaries and other dependencies to optimize binaries.
 - **Production**: The focus is fast deploying and starting of containers, so these images are limited to the binaries and content needed to run the application.
 
-The .NET team provides four basic variants in [dotnet/](../net-core-net-framework-containers/official-net-docker-images.md):
+The .NET team provides some basic variants in [dotnet/](https://hub.docker.com/r/microsoft/dotnet), for example:
 
 - **sdk**: for development and build scenarios
 - **aspnet**: for ASP.NET production scenarios

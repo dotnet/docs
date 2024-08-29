@@ -13,7 +13,7 @@ Docker provides a great [overview](https://docs.docker.com/engine/docker-overvie
 
 ## .NET images
 
-Official .NET container images are published to the [Microsoft Artifact Registry](https://mcr.microsoft.com/). There are [runtime images](https://mcr.microsoft.com/product/dotnet/aspnet/) for production and [SDK images](https://mcr.microsoft.com/product/dotnet/sdk/) for building your code, for Linux (Alpine, Debian, Ubuntu, Mariner) and Windows. For more information, see [.NET container images](container-images.md).
+Official .NET container images are published to the [Microsoft Artifact Registry](https://mcr.microsoft.com/) and are discoverable on the [Docker Hub](https://hub.docker.com/_/microsoft-dotnet/). There are [runtime images](https://mcr.microsoft.com/product/dotnet/aspnet/) for production and [SDK images](https://mcr.microsoft.com/product/dotnet/sdk/) for building your code, for Linux (Alpine, Debian, Ubuntu, Mariner) and Windows. For more information, see [.NET container images](container-images.md).
 
 .NET images are regularly updated whenever a new .NET patch is published or when an operating system base image is updated.
 

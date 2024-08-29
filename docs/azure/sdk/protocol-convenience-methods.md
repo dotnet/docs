@@ -122,9 +122,10 @@ PipelineResponse response = result.GetRawResponse();
 - Console.WriteLine($@"[{message.GetProperty("role"u8)}]:
 -     {message.GetProperty("content"u8)}");
 
-+ dynamic output = response.Content.ToDynamicFromJson();
-+ var message = output.choices[0].message;
-+ Console.WriteLine($"[{message.role}] {message.content}");
++ dynamic output = response.Content.ToDynamicFromJson(
++     JsonPropertyNames.CamelCase);
++ var message = output.Choices[0].Message;
++ Console.WriteLine($"[{message.Role}]: {message.Content}");
 ```
 
 ---

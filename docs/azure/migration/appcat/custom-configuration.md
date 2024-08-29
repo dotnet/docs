@@ -87,11 +87,11 @@ Here is a sample run config:
 
 ```
 
-`Settings` section contains globing includes or excludes applied to filter in or out binaries that are going to be analyzed. It probably makes sense to run binary analysis once to see any red flags, however results for binaries are pretty verbose. Some findings could indeed flag a real problem inside binary dependency application is using without realizing it. However others could be (although valid) but in code paths not used by the application and could be ignored. To avoid being overwhelmed by amount of results for binaries, users could include only ones they really interested in instead of scanning all of them.
+Looking at the JSON objects contained in the preceding example:
 
-`Rules` section contains rules definitions which could override existing rules' properties, disable existing rule or even define new ones.
-
-`Analyzers` section contains analyzers, which similarly to rules could be disabled or new analyzers could be added.
+- `analysis.settings` contains global includes or excludes. These include and exclude binaries to be analyzed. It's recommended to run binary analysis once to see any red flags, but results for binaries tend to be verbose. Some of the results could flag problems inside dependencies your application is consuming. Other results could be valid problems in your app, but located in unused code paths. These can be ignored to reduce the verbosity of the results.
+- `analysis.rules` contains rules definitions. These definitions override or disable existing rules, as well as define new rules.
+- `analysis.analyzers` contains analyzers. Similarly to the rules definitions, these can be disabled, overridden, or added on to.
 
 ## Examples for common scenarios
 

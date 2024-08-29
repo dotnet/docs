@@ -30,7 +30,7 @@ To write JSON to a string or to a file, call the <xref:System.Text.Json.JsonSeri
 
 You can use GitHub Copilot in your IDE to generate code that uses `System.Text.Json` to serialize to JSON.
 
-If you're using [Visual Studio 2022 version 17.8 or later](/visualstudio/releases/2022/release-notes), you can try the AI-driven [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states) to generate code to use `System.Text.Json` to serialize to JSON. Submit your question as a prompt in the copilot chat window, as in the following example. You can also submit prompts using [inline chat](/visualstudio/ide/visual-studio-github-copilot-chat#ask-questions-in-the-inline-chat-view) in the editor window itself.
+If you're using [Visual Studio 2022 version 17.8 or later](/visualstudio/releases/2022/release-notes), you can try the AI-driven [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states) to generate code that uses `System.Text.Json` to serialize to JSON. Submit your question as a prompt in the Copilot chat window, as in the following example. You can also submit prompts using [inline chat](/visualstudio/ide/visual-studio-github-copilot-chat#ask-questions-in-the-inline-chat-view) in the editor window itself.
 
 >[!NOTE]
 >GitHub Copilot is powered by AI, so surprises and mistakes are possible. Make sure to verify any generated code or suggestions. For more information about the general use of GitHub Copilot, product impact, human oversight, and privacy, see [GitHub Copilot FAQs](https://github.com/features/copilot#faq).
@@ -47,7 +47,6 @@ You can customize the prompt to use object fields that suit your requirements.
 
 ```output
 Sure! Below is an example of how to use System.Text.Json to serialize an object with the specified fields to a JSON string in C#:
-to a JSON string in C#.
 
 using System;
 using System.Text.Json;
@@ -169,6 +168,7 @@ To pretty-print the JSON output, set <xref:System.Text.Json.JsonSerializerOption
 > If you use `JsonSerializerOptions` repeatedly with the same options, don't create a new `JsonSerializerOptions` instance each time you use it. Reuse the same instance for every call. For more information, see [Reuse JsonSerializerOptions instances](configure-options.md#reuse-jsonserializeroptions-instances).
 
 ## Related content
+
 [GitHub Copilot Trust Center](https://resources.github.com/copilot-trust-center/)
 [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states)
 [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview)

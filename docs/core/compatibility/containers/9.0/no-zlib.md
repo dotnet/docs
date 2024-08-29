@@ -13,7 +13,7 @@ In previous .NET versions, .NET container images installed the latest version of
 
 ## New behavior
 
-.NET 9 container images no longer install `zlib`. In addition, `zlib` is no longer updated in images where it's already installed from the base image.
+Starting in .NET 9, container images no longer install `zlib`. In addition, `zlib` is no longer updated in images where it's already installed from the base image.
 
 ## Version introduced
 

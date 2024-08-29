@@ -40,10 +40,10 @@ if (response.Status != 200)
 
 BinaryData output = result.GetRawResponse().Content;
 using JsonDocument outputAsJson = JsonDocument.Parse(output);
-JsonElement messageElement = outputAsJson.RootElement
+JsonElement message = outputAsJson.RootElement
     .GetProperty("choices"u8)[0]
     .GetProperty("message"u8);
 
 // Display the results
-Console.WriteLine($@"[{messageElement.GetProperty("role"u8)}]:
-    {messageElement.GetProperty("content"u8)}");
+Console.WriteLine($@"[{message.GetProperty("role"u8)}]:
+    {message.GetProperty("content"u8)}");

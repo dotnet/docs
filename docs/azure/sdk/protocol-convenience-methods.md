@@ -108,7 +108,7 @@ The preceding code demonstrates the following `System.ClientModel` protocol meth
 > [!NOTE]
 > The preceding code configures the [ClientErrorBehaviors.NoThrow](/dotnet/api/system.clientmodel.primitives.clienterrorbehaviors) behavior for the `RequestOptions`. This option prevents non-success service responses status codes from throwing an exception, which means the app code should manually handle the response status code checks.
 
-A `System.ClientModel`-based response can be processed like a convenience model, if you take a dependency on `Azure.Core`. The following diff shows this alternative approach:
+A `System.ClientModel`-based response can be processed like a convenience model, if you take a dependency on `Azure.Core`. The following diff shows this alternative approach, which follows the same approach demonstrated in the **Protocol method** tab of [Libraries that depend on Azure.Core](#libraries-that-depend-on-azurecore).
 
 ```diff
 PipelineResponse response = result.GetRawResponse();

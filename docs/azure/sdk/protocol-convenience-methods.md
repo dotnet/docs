@@ -113,9 +113,8 @@ A `System.ClientModel`-based response can be processed like a convenience model,
 ```diff
 PipelineResponse response = result.GetRawResponse();
 
-- using JsonDocument outputAsJson = 
--     JsonDocument.Parse(response.Content);
-- JsonElement message = outputAsJson.RootElement
+- using JsonDocument output = JsonDocument.Parse(response.Content);
+- JsonElement message = output.RootElement
 -     .GetProperty("choices"u8)[0]
 -     .GetProperty("message"u8);
 

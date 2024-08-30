@@ -38,9 +38,8 @@ if (response.Status != 200)
     throw new ClientResultException(response);
 }
 
-using JsonDocument outputAsJson =
-    JsonDocument.Parse(response.Content);
-JsonElement message = outputAsJson.RootElement
+using JsonDocument output = JsonDocument.Parse(response.Content);
+JsonElement message = output.RootElement
     .GetProperty("choices"u8)[0]
     .GetProperty("message"u8);
 

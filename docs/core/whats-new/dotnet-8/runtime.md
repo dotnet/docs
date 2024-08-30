@@ -65,7 +65,7 @@ The API can throw an <xref:System.InvalidOperationException> if the hard limit i
 
 ## Globalization for mobile apps
 
-Mobile apps on iOS, tvOS, and MacCatalyst can opt into a new *hybrid* globalization mode that uses a lighter ICU bundle. In hybrid mode, globalization data is partially pulled from the ICU bundle and partially from calls into Native APIs. Hybrid mode serves all the [locales supported by mobile](https://github.com/dotnet/icu/blob/dotnet/main/icu-filters/icudt_mobile.json).
+Mobile apps on iOS, tvOS, and MacCatalyst can opt in to a new *hybrid* globalization mode that uses a lighter ICU bundle. In hybrid mode, globalization data is partially pulled from the ICU bundle and partially from calls into Native APIs. Hybrid mode serves all the [locales supported by mobile](https://github.com/dotnet/icu/blob/dotnet/main/icu-filters/icudt_mobile.json).
 
 Hybrid mode is most suitable for apps that can't work in invariant globalization mode and that use cultures that were trimmed from ICU data on mobile. You can also use it when you want to load a smaller ICU data file. (The *icudt_hybrid.dat* file is 34.5 % smaller than the default ICU data file *icudt.dat*.)
 
@@ -275,7 +275,7 @@ For more information, see [Use a built-in naming policy](../../../standard/seria
 
 You can now deserialize onto read-only fields or properties (that is, those that don't have a `set` accessor).
 
-To opt into this support globally, set a new option, <xref:System.Text.Json.JsonSerializerOptions.PreferredObjectCreationHandling>, to <xref:System.Text.Json.Serialization.JsonObjectCreationHandling.Populate?displayProperty=nameWithType>. If compatibility is a concern, you can also enable the functionality more granularly by placing the `[JsonObjectCreationHandling(JsonObjectCreationHandling.Populate)]` attribute on specific types whose properties are to be populated, or on individual properties.
+To opt in to this support globally, set a new option, <xref:System.Text.Json.JsonSerializerOptions.PreferredObjectCreationHandling>, to <xref:System.Text.Json.Serialization.JsonObjectCreationHandling.Populate?displayProperty=nameWithType>. If compatibility is a concern, you can also enable the functionality more granularly by placing the `[JsonObjectCreationHandling(JsonObjectCreationHandling.Populate)]` attribute on specific types whose properties are to be populated, or on individual properties.
 
 For example, consider the following code that deserializes into a `CustomerInfo` type that has two read-only properties.
 

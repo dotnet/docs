@@ -493,7 +493,7 @@ Console.WriteLine(json)
 
 ### Handle unknown derived types
 
-To handle unknown derived types, you must opt into such support using an annotation on the base type. Consider the following type hierarchy:
+To handle unknown derived types, you must opt in to such support using an annotation on the base type. Consider the following type hierarchy:
 
 ```csharp
 [JsonDerivedType(typeof(ThreeDimensionalPoint))]

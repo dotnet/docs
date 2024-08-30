@@ -27,7 +27,7 @@ The `out` keyword is especially useful when a method needs to return more than o
         //Calculate the circumference and area of a circle, returning the results to Main().
         CalculateCircumferenceAndArea(radiusValue, out double circumferenceResult, out var areaResult);
         System.Console.WriteLine($"Circumference of a circle with a radius of {radiusValue} is {circumferenceResult}.");
-        System.Console.WriteLine($"Are of a circle with a radius of {radiusValue} is {areaResult}.");
+        System.Console.WriteLine($"Area of a circle with a radius of {radiusValue} is {areaResult}.");
         Console.ReadLine();
     }
 

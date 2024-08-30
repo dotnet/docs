@@ -1440,7 +1440,7 @@ The `AppHostDotNetSearch` property configures how [the native executable](../dep
 </PropertyGroup>
 ```
 
-The following table list valid values. Multiple values can be specified, separated by semi-colons.
+The following table lists valid values. You can specify multiple values, separated by semi-colons.
 
 | Value | Meaning |
 | --- | --- |
@@ -1453,7 +1453,7 @@ This property was introduced in .NET 9.
 
 ### AppHostRelativeDotNet
 
-The `AppHostRelativeDotNet` allows specifying a relative path for the app executable to look for the .NET install when it is [configured to do so](#apphostdotnetsearch). Setting the `AppHostRelativeDotNet` property implies that [`AppHostDotNetSearch`](#apphostdotnetsearch) is `AppRelative`. This property only impacts the executable produced on publish, not build.
+The `AppHostRelativeDotNet` property allows specifying a relative path for the app executable to look for the .NET installation when it's [configured to do so](#apphostdotnetsearch). Setting the `AppHostRelativeDotNet` property implies that [`AppHostDotNetSearch`](#apphostdotnetsearch) is `AppRelative`. This property only impacts the executable produced on publish, not build.
 
 ```xml
 <PropertyGroup>

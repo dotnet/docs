@@ -72,8 +72,8 @@ The preceding code demonstrates the following `Azure.Core`-based protocol method
     > The preceding code configures the [ErrorOptions.NoThrow](/dotnet/api/azure.erroroptions) behavior. This option prevents non-success service responses status codes from throwing an exception, which means the app code should manually handle the response status code checks.
 
 1. Handle the response by reading:
-	1. The HTTP status code from the `Response` object to determine whether success or error.
-	1. Data from the `Response` object's content into a [dynamic](../../csharp/advanced-topics/interop/using-type-dynamic.md) type using <xref:Azure.AzureCoreExtensions.ToDynamicFromJson%2A>. For more information, see [Announcing dynamic JSON in the Azure Core library for .NET](https://devblogs.microsoft.com/azure-sdk/dynamic-json-in-azure-core/).
+  1. The HTTP status code from the `Response` object to determine whether success or error.
+  1. Data from the `Response` object's content into a [dynamic](../../csharp/advanced-topics/interop/using-type-dynamic.md) type using <xref:Azure.AzureCoreExtensions.ToDynamicFromJson%2A>. For more information, see [Announcing dynamic JSON in the Azure Core library for .NET](https://devblogs.microsoft.com/azure-sdk/dynamic-json-in-azure-core/).
 
 ---
 

@@ -38,8 +38,8 @@ if (response.Status != 200)
     throw new ClientResultException(response);
 }
 
-BinaryData output = result.GetRawResponse().Content;
-using JsonDocument outputAsJson = JsonDocument.Parse(output);
+using JsonDocument outputAsJson =
+    JsonDocument.Parse(response.Content);
 JsonElement message = outputAsJson.RootElement
     .GetProperty("choices"u8)[0]
     .GetProperty("message"u8);

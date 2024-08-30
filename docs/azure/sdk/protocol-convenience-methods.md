@@ -65,10 +65,10 @@ The following code uses a `ContentSafetyClient` to call the `AnalyzeText` protoc
 
 The preceding code demonstrates the following `Azure.Core` protocol method patterns:
 
-1. Create the request, using a `RequestContent` object for the request body.
-1. Invoke the protocol method, using a `RequestContext` object to configure request options.
-1. Handle the response by reading:
-    - The HTTP status code from the `Response` object to determine whether success or failure.
+1. **Create the request**, using a `RequestContent` object for the request body.
+1. **Invoke the protocol method**, using a `RequestContext` object to configure request options.
+1. **Handle the response** by reading:
+    - The HTTP status code from the `Response` object to determine success or failure.
     - Data from the `Response` object's content into a [dynamic](../../csharp/advanced-topics/interop/using-type-dynamic.md) type using <xref:Azure.AzureCoreExtensions.ToDynamicFromJson%2A>. For more information, see [Announcing dynamic JSON in the Azure Core library for .NET](https://devblogs.microsoft.com/azure-sdk/dynamic-json-in-azure-core/).
 
 > [!NOTE]
@@ -99,10 +99,10 @@ The following code uses a `ChatClient` to call the `CompleteChat` protocol metho
 
 The preceding code demonstrates the following `System.ClientModel` protocol method patterns:
 
-1. Create the request, using a `BinaryContent` object for the request body.
-1. Invoke the protocol method, using a `RequestOptions` object to configure request options.
-1. Handle the response by reading:
-    - The HTTP status code from the `PipelineResponse` object to determine whether success or failure.
+1. **Create the request**, using a `BinaryContent` object for the request body.
+1. **Invoke the protocol method**, using a `RequestOptions` object to configure request options.
+1. **Handle the response** by reading:
+    - The HTTP status code from the `PipelineResponse` object to determine success or failure.
     - Data from the `PipelineResponse` object's content using `System.Text.Json` APIs.
 
 > [!NOTE]

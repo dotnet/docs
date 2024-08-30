@@ -253,3 +253,7 @@ Here's an example update when using the `DotNetCoreCLI` task in Azure DevOps:
 -    arguments: '--configuration Release'
 +    arguments: '--configuration Release -p:TestingPlatformCommandLineArguments="--report-trx --results-directory $(Agent.TempDirectory) --coverage"'
 ```
+
+## See also
+
+- [Test project&ndash;related properties](../project-sdk/msbuild-props.md#test-projectndashrelated-properties)

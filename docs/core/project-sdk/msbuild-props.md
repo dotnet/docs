@@ -1445,7 +1445,7 @@ The following MSBuild properties are documented in this section:
 The `IsTestProject` property signifies that a project is a test project. When this property is set to `true`, validation to check if the project references a self-contained executable is disabled. That's because test projects have an `OutputType` of `Exe` but usually call APIs in a referenced executable rather than trying to run. In addition, if a project references a project where `IsTestProject` is set to `true`, the test project isn't validated as an executable reference.
 
 > [!NOTE]
-> If your project specifies the [MSTest SDK](../testing/unit-testing-mstest-sdk.md), you don't need to set this property.
+> If your project specifies the [MSTest SDK](../testing/unit-testing-mstest-sdk.md), you don't need to set this property. It's set automatically.
 
 ### IsTestingPlatformApplication
 
@@ -1475,31 +1475,45 @@ For more information, see [Playwright](../testing/unit-testing-mstest-sdk.md#pla
 
 ### EnableMSTestRunner
 
-The `EnableMSTestRunner` property ...
+The `EnableMSTestRunner` property enables or disables the use of the [MSTest runner](../testing/unit-testing-mstest-runner-intro.md). The MSTest runner is a lightweight and portable alternative to VSTest.
+
+> [!NOTE]
+> If your project specifies the [MSTest SDK](../testing/unit-testing-mstest-sdk.md), you don't need to set this property. It's set automatically.
 
 ### EnableNUnitRunner
 
-The `EnableNUnitRunner` property ...
+The `EnableNUnitRunner` property enables or disables the use of the [NUnit runner](../testing/unit-testing-nunit-runner-intro.md). The NUnit runner is a lightweight and portable alternative to VSTest.
 
 ### GenerateTestingPlatformEntryPoint
 
-The `GenerateTestingPlatformEntryPoint` property ...
+Setting the `GenerateTestingPlatformEntryPoint` property to `false` disables the automatic generation of the program entry point in a test project. You might want to set this property to `false` when you manually define an entry point, or when you reference a test project from an executable that also has an entry point.
+
+For more information, see [error CS8892](../testing/unit-testing-platform-faq.md#error-cs8892-method-testingplatformentrypointmainstring-will-not-be-used-as-an-entry-point-because-a-synchronous-entry-point-programmainstring-was-found).
 
 ### TestingPlatformCaptureOutput
 
-The `TestingPlatformCaptureOutput` property ...
+The `TestingPlatformCaptureOutput` property controls whether all console output that a test executable writes is captured and hidden from the user when you use `dotnet test` to run `Microsoft.Testing.Platform` tests. By default, the console output is hidden. This output includes the banner, version information, and formatted test information. Set this property to `false` to show this information together with MSBuild output.
+
+For more information, see [Show complete platform output](../testing/unit-testing-platform-integration-dotnet-test.md#show-complete-platform-output).
 
 ### TestingPlatformCommandLineArguments
 
-The `TestingPlatformCommandLineArguments` property ...
+The `TestingPlatformCaptureOutput` property lets you specify command-line arguments to the test app when you use `dotnet test` to run `Microsoft.Testing.Platform` tests. The following project file snippet shows an example.
+
+```xml
+<PropertyGroup>
+  ...
+  <TestingPlatformCommandLineArguments>--minimum-expected-tests 10</TestingPlatformCommandLineArguments>
+</PropertyGroup>
+```
 
 ### TestingPlatformDotnetTestSupport
 
-The `TestingPlatformDotnetTestSupport` property ...
+The `TestingPlatformDotnetTestSupport` property lets you specify whether VSTest is used when you use `dotnet test` to run tests. If you set this property to `true`, VSTest is disabled and all `Microsoft.Testing.Platform` tests are run directly.
 
 ### TestingPlatformShowTestsFailure
 
-The `TestingPlatformShowTestsFailure` property ...
+The `TestingPlatformShowTestsFailure` property lets you control whether a single failure or all errors in a failed test are reported when you use `dotnet test` to run tests. By default, test failures are summarized into a _.log_ file, and a single failure per test project is reported to MSBuild. To show errors per failed test, set this property to `true` in your project file.
 
 ### TestingExtensionsProfile
 

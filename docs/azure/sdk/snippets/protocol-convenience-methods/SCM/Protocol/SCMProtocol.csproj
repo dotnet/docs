@@ -8,8 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Azure.AI.ContentSafety" Version="1.0.0" />
-    <PackageReference Include="Azure.Identity" Version="1.12.0" />
+    <PackageReference Include="OpenAI" />
   </ItemGroup>
 
 </Project>

@@ -1400,7 +1400,7 @@ The following properties are used for launching an app with the [`dotnet run`](.
 
 ### RunArguments
 
-The `RunArguments` property defines the arguments that are passed to the app when it is run.
+The `RunArguments` property defines the arguments that are passed to the app when it's run.
 
 ```xml
 <PropertyGroup>
@@ -1420,6 +1420,28 @@ The `RunWorkingDirectory` property defines the working directory for the applica
   <RunWorkingDirectory>c:\temp</RunWorkingDirectory>
 </PropertyGroup>
 ```
+
+## Test project&ndash;related properties
+
+The following MSBuild properties are documented in this section:
+
+...
+
+### IsTestProject
+### IsTestingPlatformApplication
+### EnableMicrosoftTestingExtensionsCodeCoverage
+### EnableMicrosoftTestingExtensionsCrashDump
+### EnableAspireTesting
+### EnablePlaywright
+### EnableMSTestRunner
+### EnableNUnitRunner
+### GenerateTestingPlatformEntryPoint
+### TestingPlatformCaptureOutput
+### TestingPlatformCommandLineArguments
+### TestingPlatformDotnetTestSupport
+### TestingPlatformShowTestsFailure
+### TestingExtensionsProfile
+### UseVSTest
 
 ## Hosting-related properties
 

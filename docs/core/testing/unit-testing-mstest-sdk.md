@@ -8,10 +8,9 @@ ms.date: 02/13/2024
 
 # MSTest SDK overview
 
-[MSTest.Sdk](https://www.nuget.org/packages/MSTest.Sdk) is a [MSBuild project SDK](/visualstudio/msbuild/how-to-use-project-sdk) for building MSTest apps.
-It's possible to build a MSTest app without this SDK, however, the MSTest SDK is:
+Introduced in .NET 9, [MSTest.Sdk](https://www.nuget.org/packages/MSTest.Sdk) is a [MSBuild project SDK](/visualstudio/msbuild/how-to-use-project-sdk) for building MSTest apps. It's possible to build a MSTest app without this SDK, however, the MSTest SDK is:
 
-* Tailored towards providing a first-class experience for testing with MSTest
+* Tailored towards providing a first-class experience for testing with MSTest.
 * The recommended target for most users.
 * Easy to configure for other users.
 
@@ -32,9 +31,9 @@ You can enable `MSTest.Sdk` in a project by simply updating the `Sdk` attribute 
 ```
 
 > [!NOTE]
-> `/3.3.1` is given as example as it's the first version providing the SDK but it can be replaced with any newer version.
+> `/3.3.1` is given as example as it's the first version of the SDK, but it can be replaced with any newer version.
 
-To simplify handling of versions we recommend setting the SDK version at solution level using the _global.json_. For example, your project file would look like:
+To simplify handling of versions, we recommend setting the SDK version at solution level using the _global.json_ file. For example, your project file would look like:
 
 ```xml
 <Project Sdk="MSTest.Sdk">
@@ -48,7 +47,7 @@ To simplify handling of versions we recommend setting the SDK version at solutio
 </Project>
 ```
 
-Then, you would have a _global.json_ file that specifies the `MSTest.Sdk` version as follows:
+Then, specify the `MSTest.Sdk` version in the _global.json_ file as follows:
 
 ```json
 {
@@ -65,7 +64,7 @@ When you `build` the project, all the needed components are restored and install
 You don't need anything else to build and run your tests and you can use the same tooling (for example, `dotnet test` or Visual Studio) used by a ["classic" MSTest project](./unit-testing-with-mstest.md).
 
 > [!IMPORTANT]
-> By switching to the `MSTest.Sdk` you've fully opted-in to using the [MSTest runner](./unit-testing-mstest-runner-intro.md), including with [dotnet test](./unit-testing-platform-integration-dotnet-test.md#dotnet-test---microsofttestingplatform-mode) which requires modifying your CI, local CLI calls and also impacts the available entries of the _.runsettings_.
+> By switching to the `MSTest.Sdk`, you opt in to using the [MSTest runner](./unit-testing-mstest-runner-intro.md), including with [dotnet test](./unit-testing-platform-integration-dotnet-test.md#dotnet-test---microsofttestingplatform-mode) which requires modifying your CI, local CLI calls and also impacts the available entries of the _.runsettings_.
 > You can use `MSTest.Sdk` and still keep the old integrations and tools by instead switching the [runner](#select-the-runner).
 
 ## Select the runner
@@ -150,12 +149,12 @@ Outside of the selection of the runner and runner specific extensions, `MSTest.S
 
 ### .NET Aspire
 
-.NET Aspire is an opinionated, cloud ready stack for building observable, production ready, distributed applications. .NET Aspire is delivered through a collection of NuGet packages that handle specific cloud-native concerns. For more information, see the [.NET Aspire docs](/dotnet/aspire/get-started/aspire-overview).
+.NET Aspire is an opinionated, cloud-ready stack for building observable, production ready, distributed applications. .NET Aspire is delivered through a collection of NuGet packages that handle specific cloud-native concerns. For more information, see the [.NET Aspire docs](/dotnet/aspire/get-started/aspire-overview).
 
 > [!NOTE]
 > This feature is available from MSTest.Sdk 3.4.0
 
-By setting the property `EnableAspireTesting` to `true` you can bring all dependencies and default usings you would need for testing with `Aspire` and `MSTest`.
+By setting the property `EnableAspireTesting` to `true`, you can bring all dependencies and default `using` directives you would need for testing with `Aspire` and `MSTest`.
 
 ```xml
 <Project Sdk="MSTest.Sdk/3.4.0">
@@ -177,7 +176,7 @@ Playwright enables reliable end-to-end testing for modern web apps. For more inf
 > [!NOTE]
 > This feature is available from MSTest.Sdk 3.4.0
 
-By setting the property `EnablePlaywright` to `true` you can bring all dependencies and default usings you would need for testing with `Playwright` and `MSTest`.
+By setting the property `EnablePlaywright` to `true` you can bring all dependencies and default `using` directives you would need for testing with `Playwright` and `MSTest`.
 
 ```xml
 <Project Sdk="MSTest.Sdk/3.4.0">
@@ -217,7 +216,7 @@ Add the version to your `global.json`:
 
 You can then start simplifying your project.
 
-Removing default properties:
+Remove default properties:
 
 ```diff
 - <EnableMSTestRunner>true</EnableMSTestRunner>
@@ -226,7 +225,7 @@ Removing default properties:
 - <IsTestProject>true</IsTestProject>
 ```
 
-Removing default package references:
+Remove default package references:
 
 ```diff
 - <PackageReference Include="MSTest"

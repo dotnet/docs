@@ -63,7 +63,7 @@ The following code uses a `ContentSafetyClient` to call the `AnalyzeText` protoc
 
 :::code source="snippets/protocol-convenience-methods/AzureCore/Protocol/Program.cs" highlight="19-24":::
 
-The preceding code demonstrates the following `Azure.Core`-based protocol method patterns:
+The preceding code demonstrates the following `Azure.Core` protocol method patterns:
 
 1. Create the request, using a `RequestContent` object for the request body.
 1. Invoke the protocol method, using a `RequestContext` object to configure request options.

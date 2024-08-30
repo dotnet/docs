@@ -32,8 +32,8 @@ The following table compares some of the request and response types used by prot
 | Request or response concern   | Azure.Core                       | System.ClientModel                                    |
 |-------------------------------|----------------------------------|-------------------------------------------------------|
 | Request body                  | <xref:Azure.Core.RequestContent> | <xref:System.ClientModel.BinaryContent>               |
-| Advanced options              | <xref:Azure.RequestContext>      | <xref:System.ClientModel.Primitives.RequestOptions>   |
-| Raw HTTP Response             | <xref:Azure.Response>            | <xref:System.ClientModel.Primitives.PipelineResponse> |
+| Advanced request options      | <xref:Azure.RequestContext>      | <xref:System.ClientModel.Primitives.RequestOptions>   |
+| Raw HTTP response             | <xref:Azure.Response>            | <xref:System.ClientModel.Primitives.PipelineResponse> |
 | Return type with output model | <xref:Azure.Response%601>        | <xref:System.ClientModel.ClientResult%601>            |
 
 The sections ahead provide implementation examples of these concepts.
@@ -68,7 +68,7 @@ The preceding code demonstrates the following `Azure.Core` protocol method patte
 1. Create the request, using a `RequestContent` object for the request body.
 1. Invoke the protocol method, using a `RequestContext` object to configure request options.
 1. Handle the response by reading:
-    - The HTTP status code from the `Response` object to determine whether success or error.
+    - The HTTP status code from the `Response` object to determine whether success or failure.
     - Data from the `Response` object's content into a [dynamic](../../csharp/advanced-topics/interop/using-type-dynamic.md) type using <xref:Azure.AzureCoreExtensions.ToDynamicFromJson%2A>. For more information, see [Announcing dynamic JSON in the Azure Core library for .NET](https://devblogs.microsoft.com/azure-sdk/dynamic-json-in-azure-core/).
 
 > [!NOTE]
@@ -99,10 +99,11 @@ The following code uses a `ChatClient` to call the `CompleteChat` protocol metho
 
 The preceding code demonstrates the following `System.ClientModel` protocol method patterns:
 
-- Uses the `BinaryContent` type as a parameter to supply data for the request body.
-- Uses the `RequestContext` type to configure request options.
-- Returns data using the `ClientResult` type.
-- Calls the <xref:System.ClientModel.ClientResult.GetRawResponse%2A> method to access the response data.
+1. Create the request, using a `BinaryContent` object for the request body.
+1. Invoke the protocol method, using a `RequestOptions` object to configure request options.
+1. Handle the response by reading:
+    - The HTTP status code from the `PipelineResponse` object to determine whether success or failure.
+    - Data from the `PipelineResponse` object's content using `System.Text.Json` APIs.
 
 > [!NOTE]
 > The preceding code configures the [ClientErrorBehaviors.NoThrow](/dotnet/api/system.clientmodel.primitives.clienterrorbehaviors) behavior for the `RequestOptions`. This option prevents non-success service responses status codes from throwing an exception, which means the app code should manually handle the response status code checks.
@@ -112,8 +113,8 @@ A `System.ClientModel`-based response can be processed like a convenience model,
 ```diff
 PipelineResponse response = result.GetRawResponse();
 
-- BinaryData output = result.GetRawResponse().Content;
-- using JsonDocument outputAsJson = JsonDocument.Parse(output);
+- using JsonDocument outputAsJson = 
+-     JsonDocument.Parse(response.Content);
 - JsonElement message = outputAsJson.RootElement
 -     .GetProperty("choices"u8)[0]
 -     .GetProperty("message"u8);

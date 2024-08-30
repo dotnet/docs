@@ -22,7 +22,7 @@ ms.assetid: d2bf6123-7b0c-4e60-87ad-a39a1c3eb2e0
 The Code Access Security (CAS) Policy tool (Caspol.exe) enables users and administrators to modify security policy for the machine policy level, the user policy level, and the enterprise policy level.
 
 > [!IMPORTANT]
-> Starting with .NET Framework 4, Caspol.exe does not affect CAS policy unless the [\<legacyCasPolicy> element](../configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md) is set to `true`. Any settings shown or modified by CasPol.exe will only affect applications that opt into using CAS policy.
+> Starting with .NET Framework 4, Caspol.exe does not affect CAS policy unless the [\<legacyCasPolicy> element](../configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md) is set to `true`. Any settings shown or modified by CasPol.exe will only affect applications that opt in to using CAS policy.
 
 [!INCLUDE [cas-deprecated](../../../includes/cas-deprecated.md)]
 

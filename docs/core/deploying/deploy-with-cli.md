@@ -37,7 +37,7 @@ If you want to target more than one framework, you can set the `<TargetFramework
 
 The default **BUILD-CONFIGURATION** mode is **Debug** unless changed with the `-c` parameter.
 
-The default output directory of the [`dotnet publish`](../tools/dotnet-publish.md) command is `./bin/<BUILD-CONFIGURATION>/<TFM>/publish/`. For example, `dotnet publish -c Release -f net8.0` publishes to `./bin/Release/net8.0/publish/`. However, you can opt into a simplified output path and folder structure for all build outputs. For more information, see [Artifacts output layout](../sdk/artifacts-output.md).
+The default output directory of the [`dotnet publish`](../tools/dotnet-publish.md) command is `./bin/<BUILD-CONFIGURATION>/<TFM>/publish/`. For example, `dotnet publish -c Release -f net8.0` publishes to `./bin/Release/net8.0/publish/`. However, you can opt in to a simplified output path and folder structure for all build outputs. For more information, see [Artifacts output layout](../sdk/artifacts-output.md).
 
 ### Native dependencies
 

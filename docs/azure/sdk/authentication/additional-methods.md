@@ -1,6 +1,6 @@
 ---
 title: Additional methods to authenticate to Azure from .NET apps
-description: This article describes additional, less common methods you can use to authenticate your .NET app to Azure resources. 
+description: This article describes additional, less common methods you can use to authenticate your .NET app to Azure resources.
 ms.topic: how-to
 ms.custom: devx-track-dotnet, engagement-fy23
 ms.date: 08/15/2024
@@ -101,7 +101,7 @@ The following example shows how to enable sign-in with the default system accoun
 
 :::code language="csharp" source="../snippets/authentication/additional-auth/interactive/SilentBrokeredAuth.cs" highlight="16-24":::
 
-Once you opt into this behavior, the credential attempts to sign in by asking the underlying Microsoft Authentication Library (MSAL) to perform the sign-in for the default system account. If the sign-in fails, the credential falls back to displaying the account picker dialog, from which the user can select the appropriate account.
+Once you opt in to this behavior, the credential attempts to sign in by asking the underlying Microsoft Authentication Library (MSAL) to perform the sign-in for the default system account. If the sign-in fails, the credential falls back to displaying the account picker dialog, from which the user can select the appropriate account.
 
 ## Device code authentication
 

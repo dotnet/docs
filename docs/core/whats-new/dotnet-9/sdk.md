@@ -151,7 +151,7 @@ Configured to use loose manifests when installing new manifests.
    Install Type:              Msi
 ```
 
-In this example, the SDK installation is in 'manifest' mode, where updates are installed as they're available. To opt into the new mode, add a `--version` option to a `dotnet workload install` or `dotnet workload update` command. You can also explicitly control your mode of operation using the new `dotnet workload config` command:
+In this example, the SDK installation is in 'manifest' mode, where updates are installed as they're available. To opt in to the new mode, add a `--version` option to a `dotnet workload install` or `dotnet workload update` command. You can also explicitly control your mode of operation using the new `dotnet workload config` command:
 
 ```dotnetcli
 > dotnet workload config --update-mode workload-set

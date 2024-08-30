@@ -8,13 +8,13 @@ ms.date: 08/26/2024
 
 # Output extensions
 
-This article list and explains all `Microsoft Testing Platform` extensions related to the terminal output.
+This article list and explains all **Microsoft Testing Platform** extensions related to the terminal output.
 
 ## Terminal test reporter
 
 Terminal test reporter is the default implementation of status and progress reporting to the terminal (console).
 
-It comes built-in with Microsoft.Testing.Platform, and offers ANSI and non-ANSI mode, and progress indicator.
+It comes built-in with **Microsoft.Testing.Platform**, and offers ANSI and non-ANSI mode, and progress indicator.
 
 ### Output modes
 

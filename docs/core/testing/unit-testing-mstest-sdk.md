@@ -64,18 +64,20 @@ When you `build` the project, all the needed components are restored and install
 You don't need anything else to build and run your tests and you can use the same tooling (for example, `dotnet test` or Visual Studio) used by a ["classic" MSTest project](./unit-testing-with-mstest.md).
 
 > [!IMPORTANT]
-> By switching to the `MSTest.Sdk`, you opt in to using the [MSTest runner](./unit-testing-mstest-runner-intro.md), including with [dotnet test](./unit-testing-platform-integration-dotnet-test.md#dotnet-test---microsofttestingplatform-mode) which requires modifying your CI, local CLI calls and also impacts the available entries of the _.runsettings_.
-> You can use `MSTest.Sdk` and still keep the old integrations and tools by instead switching the [runner](#select-the-runner).
+> By switching to the `MSTest.Sdk`, you opt in to using the [MSTest runner](./unit-testing-mstest-runner-intro.md), including with [dotnet test](./unit-testing-platform-integration-dotnet-test.md#dotnet-test---microsofttestingplatform-mode). That requires modifying your CI and local CLI calls, and also impacts the available entries of the _.runsettings_. You can use `MSTest.Sdk` and still keep the old integrations and tools by instead switching the [runner](#select-the-runner).
 
 ## Select the runner
 
-By default, MSTest SDK relies on [MSTest runner](./unit-testing-mstest-runner-intro.md), but you can easily switch to [VSTest](/visualstudio/test/vstest-console-options) by adding the property `<UseVSTest>true</UseVSTest>`.
+By default, MSTest SDK relies on [MSTest runner](./unit-testing-mstest-runner-intro.md), but you can switch to [VSTest](/visualstudio/test/vstest-console-options) by adding the property `<UseVSTest>true</UseVSTest>`.
 
 ## Extend MSTest runner
 
-You can customize `MSTest runner` experience through a set of [NuGet package extensions](./unit-testing-platform-extensions.md). To simplify and improve this experience, MSTest SDK introduces two features.
+You can customize `MSTest runner` experience through a set of [NuGet package extensions](./unit-testing-platform-extensions.md). To simplify and improve this experience, MSTest SDK introduces two features:
 
-### MSTest Runner profile
+- [MSTest runner profile](#mstest-runner-profile)
+- [Enable or disable extensions](#enable-or-disable-extensions)
+
+### MSTest runner profile
 
 The concept of *profiles* allows you to select the default set of configurations and extensions that will be applied to your test project.
 
@@ -119,16 +121,16 @@ For example, to enable the crash dump extension (NuGet package [Microsoft.Testin
 </Project>
 ```
 
-This page lists all [extensions](./unit-testing-platform-extensions.md) available.
+For a list of all available extensions, see [Microsoft.Testing.Platform extensions](./unit-testing-platform-extensions.md).
 
 > [!WARNING]
-> Please review the licensing terms for each extension as they may vary.
+> It's important to review the licensing terms for each extension as they might vary.
 
 Enabled and disabled extensions are combined with the extensions provided by your selected extension profile.
 
-This can be used to enable an additional extension on top of the implicit `Default` profile (as seen in the previous CrashDumpExtension example).
+This property pattern can be used to enable an additional extension on top of the implicit `Default` profile (as seen in the previous CrashDumpExtension example).
 
-Or to disable an extension that is coming from the selected profile. In this case disabling `MS Code Coverage` extension by setting `<EnableMicrosoftTestingExtensionsCodeCoverage>false</EnableMicrosoftTestingExtensionsCodeCoverage>`:
+You can also disable an extension that's coming from the selected profile. For example, disable the `MS Code Coverage` extension by setting `<EnableMicrosoftTestingExtensionsCodeCoverage>false</EnableMicrosoftTestingExtensionsCodeCoverage>`:
 
 ```xml
 <Project Sdk="MSTest.Sdk/3.3.1">
@@ -145,16 +147,16 @@ Or to disable an extension that is coming from the selected profile. In this cas
 
 ## Features
 
-Outside of the selection of the runner and runner specific extensions, `MSTest.Sdk` also provides additional features to simplify and enhance your testing experience.
+Outside of the selection of the runner and runner-specific extensions, `MSTest.Sdk` also provides additional features to simplify and enhance your testing experience.
 
-### .NET Aspire
+### Test with .NET Aspire
 
 .NET Aspire is an opinionated, cloud-ready stack for building observable, production ready, distributed applications. .NET Aspire is delivered through a collection of NuGet packages that handle specific cloud-native concerns. For more information, see the [.NET Aspire docs](/dotnet/aspire/get-started/aspire-overview).
 
 > [!NOTE]
 > This feature is available from MSTest.Sdk 3.4.0
 
-By setting the property `EnableAspireTesting` to `true`, you can bring all dependencies and default `using` directives you would need for testing with `Aspire` and `MSTest`.
+By setting the property `EnableAspireTesting` to `true`, you can bring all dependencies and default `using` directives you need for testing with `Aspire` and `MSTest`.
 
 ```xml
 <Project Sdk="MSTest.Sdk/3.4.0">
@@ -176,7 +178,7 @@ Playwright enables reliable end-to-end testing for modern web apps. For more inf
 > [!NOTE]
 > This feature is available from MSTest.Sdk 3.4.0
 
-By setting the property `EnablePlaywright` to `true` you can bring all dependencies and default `using` directives you would need for testing with `Playwright` and `MSTest`.
+By setting the property `EnablePlaywright` to `true` you can bring in all the dependencies and default `using` directives you need for testing with `Playwright` and `MSTest`.
 
 ```xml
 <Project Sdk="MSTest.Sdk/3.4.0">
@@ -191,11 +193,11 @@ By setting the property `EnablePlaywright` to `true` you can bring all dependenc
 </Project>
 ```
 
-## Migrating to MSTest SDK
+## Migrate to MSTest SDK
 
 Consider the following steps that are required to migrate to the MSTest SDK.
 
-### Update your project(s)
+### Update your project
 
 When migrating an existing MSTest test project to MSTest SDK, start by replacing the `Sdk="Microsoft.NET.Sdk"` entry at the top of your test project with `Sdk="MSTest.Sdk/3.3.1"`
 
@@ -239,7 +241,7 @@ Finally, based on the extensions profile you're using, you can also remove some 
 
 ### Update your CI
 
-Once you've updated your projects, if you're using `MSTest runner` (default) and if you rely on `dotnet test` to run your tests, you have to update your CI configuration. For more information, see [dotnet test integration](./unit-testing-platform-integration-dotnet-test.md#dotnet-test---microsofttestingplatform-mode) to guide your understanding of all the required changes.
+Once you've updated your projects, if you're using `MSTest runner` (default) and if you rely on `dotnet test` to run your tests, you must update your CI configuration. For more information and to guide your understanding of all the required changes, see [dotnet test integration](./unit-testing-platform-integration-dotnet-test.md#dotnet-test---microsofttestingplatform-mode).
 
 Here's an example update when using the `DotNetCoreCLI` task in Azure DevOps:
 

@@ -21,7 +21,7 @@ The following SDKs are available:
 | `Microsoft.NET.Sdk.Razor`  | The .NET [Razor SDK](/aspnet/core/razor-pages/sdk)      | <https://github.com/dotnet/aspnetcore> |
 | `Microsoft.NET.Sdk.BlazorWebAssembly` | The .NET [Blazor WebAssembly SDK](/aspnet/core/blazor#blazor-webassembly) | <https://github.com/dotnet/aspnetcore> |
 | `Microsoft.NET.Sdk.Worker` | The .NET [Worker Service](../extensions/workers.md) SDK |                                        |
-| `MSTest.Sdk`               | The MSTest SDK                                          |                                        |
+| `MSTest.Sdk`               | The [MSTest SDK](../testing/unit-testing-mstest-sdk)    | <https://github.com/microsoft/testfx>  |
 
 The .NET SDK is the base SDK for .NET. The other SDKs reference the .NET SDK, and projects that are associated with the other SDKs have all the .NET SDK properties available to them. The Web SDK, for example, depends on both the .NET SDK and the Razor SDK.
 

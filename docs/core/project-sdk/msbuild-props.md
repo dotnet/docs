@@ -1425,23 +1425,97 @@ The `RunWorkingDirectory` property defines the working directory for the applica
 
 The following MSBuild properties are documented in this section:
 
-...
+- [IsTestProject](#istestproject)
+- [IsTestingPlatformApplication](#istestingplatformapplication)
+- [Enable\[NugetPackageNameWithoutDots\]](#enablenugetpackagenamewithoutdots)
+- [EnableAspireTesting](#enableaspiretesting)
+- [EnablePlaywright](#enableplaywright)
+- [EnableMSTestRunner](#enablemstestrunner)
+- [EnableNUnitRunner](#enablenunitrunner)
+- [GenerateTestingPlatformEntryPoint](#generatetestingplatformentrypoint)
+- [TestingPlatformCaptureOutput](#testingplatformcaptureoutput)
+- [TestingPlatformCommandLineArguments](#testingplatformcommandlinearguments)
+- [TestingPlatformDotnetTestSupport](#testingplatformdotnettestsupport)
+- [TestingPlatformShowTestsFailure](#testingplatformshowtestsfailure)
+- [TestingExtensionsProfile](#testingextensionsprofile)
+- [UseVSTest](#usevstest)
 
 ### IsTestProject
+
+The `IsTestProject` property signifies that a project is a test project. When this property is set to `true`, validation to check if the project references a self-contained executable is disabled. That's because test projects have an `OutputType` of `Exe` but usually call APIs in a referenced executable rather than trying to run. In addition, if a project references a project where `IsTestProject` is set to `true`, the test project isn't validated as an executable reference.
+
+> [!NOTE]
+> If your project specifies the [MSTest SDK](../testing/unit-testing-mstest-sdk.md), you don't need to set this property.
+
 ### IsTestingPlatformApplication
-### EnableMicrosoftTestingExtensionsCodeCoverage
-### EnableMicrosoftTestingExtensionsCrashDump
+
+Setting the `IsTestingPlatformApplication` property to `false` disables the transitive dependency to the [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild) package. A *transitive dependency* is when a project that references another project that references a given package behaves as if *it* references the package. You'd typically set this property to `false` in a non-test project that references a test project.
+
+For more information, see [error CS8892](../testing/unit-testing-platform-faq.md#error-cs8892-method-testingplatformentrypointmainstring-will-not-be-used-as-an-entry-point-because-a-synchronous-entry-point-programmainstring-was-found).
+
+### Enable\[NugetPackageNameWithoutDots\]
+
+Use a property with the pattern `Enable[NugetPackageNameWithoutDots]` to enable or disable Microsoft.Testing.Platform extensions.
+
+For example, to enable the crash dump extension (NuGet package [Microsoft.Testing.Extensions.CrashDump](https://www.nuget.org/packages/Microsoft.Testing.Extensions.CrashDump)), set the `EnableMicrosoftTestingExtensionsCrashDump` to `true`.
+
+For more information, see [Enable or disable extensions](../testing/unit-testing-mstest-sdk.md#enable-or-disable-extensions).
+
 ### EnableAspireTesting
+
+When you use the [MSTest project SDK](../testing/unit-testing-mstest-sdk.md), you can use the `EnableAspireTesting` property to bring in all the dependencies and default `using` directives you need for testing with `Aspire` and `MSTest`.
+
+For more information, see [Test with .NET Aspire](../testing/unit-testing-mstest-sdk.md#net-aspire).
+
 ### EnablePlaywright
+
+When you use the [MSTest project SDK](../testing/unit-testing-mstest-sdk.md), you can use the `EnablePlaywright` property to bring in all the dependencies and default `using` directives you need for testing with `Playwright` and `MSTest`.
+
+For more information, see [Playwright](../testing/unit-testing-mstest-sdk.md#playwright).
+
 ### EnableMSTestRunner
+
+The `EnableMSTestRunner` property ...
+
 ### EnableNUnitRunner
+
+The `EnableNUnitRunner` property ...
+
 ### GenerateTestingPlatformEntryPoint
+
+The `GenerateTestingPlatformEntryPoint` property ...
+
 ### TestingPlatformCaptureOutput
+
+The `TestingPlatformCaptureOutput` property ...
+
 ### TestingPlatformCommandLineArguments
+
+The `TestingPlatformCommandLineArguments` property ...
+
 ### TestingPlatformDotnetTestSupport
+
+The `TestingPlatformDotnetTestSupport` property ...
+
 ### TestingPlatformShowTestsFailure
+
+The `TestingPlatformShowTestsFailure` property ...
+
 ### TestingExtensionsProfile
+
+When you use the [MSTest project SDK](../testing/unit-testing-mstest-sdk.md), the `TestingExtensionsProfile` property lets you select a profile to use. The following table shows the allowable values.
+
+| Value          | Description                                                                                   |
+|----------------|-----------------------------------------------------------------------------------------------|
+| `Default`      | Enables the recommended extensions for this version of MSTest.SDK.                            |
+| `None`         | No extensions are enabled.                                                                    |
+| `AllMicrosoft` | Enable all extensions shipped by Microsoft (including extensions with a restrictive license). |
+
+For more information, see [MSTest runner profile](../testing/unit-testing-mstest-sdk.md#mstest-runner-profile).
+
 ### UseVSTest
+
+Set the `UseVSTest` property to `true` to switch from the MSTest runner to the [VSTest](/visualstudio/test/vstest-console-options) runner when using the [MSTest project SDK](../testing/unit-testing-mstest-sdk.md).
 
 ## Hosting-related properties
 

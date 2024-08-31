@@ -171,7 +171,7 @@ By setting the property `EnableAspireTesting` to `true`, you can bring all depen
 </Project>
 ```
 
-### Playwright
+### Test with Playwright
 
 Playwright enables reliable end-to-end testing for modern web apps. For more information, see the official [Playwright docs](https://playwright.dev/dotnet/docs/intro).
 
@@ -256,4 +256,4 @@ Here's an example update when using the `DotNetCoreCLI` task in Azure DevOps:
 
 ## See also
 
-- [Test project&ndash;related properties](../project-sdk/msbuild-props.md#test-projectndashrelated-properties)
+- [Test project&ndash;related properties](../project-sdk/msbuild-props.md#test-projectrelated-properties)

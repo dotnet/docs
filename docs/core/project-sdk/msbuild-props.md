@@ -1465,13 +1465,13 @@ For more information, see [Enable or disable extensions](../testing/unit-testing
 
 When you use the [MSTest project SDK](../testing/unit-testing-mstest-sdk.md), you can use the `EnableAspireTesting` property to bring in all the dependencies and default `using` directives you need for testing with `Aspire` and `MSTest`.
 
-For more information, see [Test with .NET Aspire](../testing/unit-testing-mstest-sdk.md#net-aspire).
+For more information, see [Test with .NET Aspire](../testing/unit-testing-mstest-sdk.md#test-with-net-aspire).
 
 ### EnablePlaywright
 
 When you use the [MSTest project SDK](../testing/unit-testing-mstest-sdk.md), you can use the `EnablePlaywright` property to bring in all the dependencies and default `using` directives you need for testing with `Playwright` and `MSTest`.
 
-For more information, see [Playwright](../testing/unit-testing-mstest-sdk.md#playwright).
+For more information, see [Playwright](../testing/unit-testing-mstest-sdk.md#test-with-playwright).
 
 ### EnableMSTestRunner
 

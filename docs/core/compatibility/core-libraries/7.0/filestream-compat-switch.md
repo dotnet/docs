@@ -9,7 +9,7 @@ The `AppContext` switch `System.IO.UseNet5CompatFileStream` and the ability to u
 
 ## Previous behavior
 
-The legacy `FileStream` implementation was available and you could opt into it by using the `UseNet5CompatFileStream` switch or the `DOTNET_SYSTEM_IO_USENET5COMPATFILESTREAM` environment variable.
+The legacy `FileStream` implementation was available and you could opt in to it by using the `UseNet5CompatFileStream` switch or the `DOTNET_SYSTEM_IO_USENET5COMPATFILESTREAM` environment variable.
 
 ## New behavior
 
@@ -29,7 +29,7 @@ The `UseNet5CompatFileStream` switch and `DOTNET_SYSTEM_IO_USENET5COMPATFILESTRE
 
 ## Recommended action
 
-If you're currently using the switch (or the `DOTNET_SYSTEM_IO_USENET5COMPATFILESTREAM` environment variable) to opt into legacy code and are upgrading to .NET 7, the switch will no longer have any effect and you should remove it.
+If you're currently using the switch (or the `DOTNET_SYSTEM_IO_USENET5COMPATFILESTREAM` environment variable) to opt in to legacy code and are upgrading to .NET 7, the switch will no longer have any effect and you should remove it.
 
 ## Affected APIs
 

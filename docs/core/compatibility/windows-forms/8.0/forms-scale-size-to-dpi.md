@@ -15,7 +15,7 @@ Top-level forms in Windows Forms now scale their <xref:System.Windows.Forms.Form
 
 In .NET 8, the <xref:System.Windows.Forms.Form.MinimumSize> and <xref:System.Windows.Forms.Form.MaximumSize> values for top-level forms remained constant regardless of the application DPI mode and the DPI of the monitor where the form is rendered. This sometimes resulted in scaling limitations of the top-level form.
 
-You can also opt into this behavior in .NET 7. To opt in, set the `System.Windows.Forms.ScaleTopLevelFormMinMaxSizeForDpi` runtime configuration option described in the [Recommended action](#recommended-action) section.
+You can also opt in to this behavior in .NET 7. To opt in, set the `System.Windows.Forms.ScaleTopLevelFormMinMaxSizeForDpi` runtime configuration option described in the [Recommended action](#recommended-action) section.
 
 ## New behavior
 

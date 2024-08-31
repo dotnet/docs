@@ -207,8 +207,8 @@ Specifies the absolute path to a `dotnet` host (`dotnet.exe` on Windows, `dotnet
 
 Tools that invoke `dotnet` during an SDK command should use the following algorithm to locate it:
 
-* if `DOTNET_HOST_PATH` is set, use that value directly
-* otherwise, rely on `dotnet` via the system's `PATH`
+- if `DOTNET_HOST_PATH` is set, use that value directly
+- otherwise, rely on `dotnet` via the system's `PATH`
 
 > [!NOTE]
 > `DOTNET_HOST_PATH` is not a general solution for locating the `dotnet` host. It is only intended to be used by tools that are invoked by the .NET SDK.
@@ -217,7 +217,7 @@ Tools that invoke `dotnet` during an SDK command should use the following algori
 
 The [dotnet run](dotnet-run.md) command sets this variable to the selected launch profile.
 
-Given the following *launchSettings.json* file:
+Given the following _launchSettings.json_ file:
 
 ```json
 {
@@ -232,7 +232,7 @@ Given the following *launchSettings.json* file:
 }
 ```
 
-And the following *Program.cs* file:
+And the following _Program.cs_ file:
 
 ```csharp
 var value = Environment.GetEnvironmentVariable("DOTNET_LAUNCH_PROFILE");
@@ -241,21 +241,21 @@ Console.WriteLine($"DOTNET_LAUNCH_PROFILE={value}");
 
 The following scenarios produce the output shown:
 
-* Launch profile specified and exists
+- Launch profile specified and exists
 
   ```dotnetcli
   $ dotnet run --launch-profile First
   DOTNET_LAUNCH_PROFILE=First
   ```
 
-* Launch profile not specified, first one selected
+- Launch profile not specified, first one selected
 
   ```dotnetcli
   $ dotnet run
   DOTNET_LAUNCH_PROFILE=First
   ```
 
-* Launch profile specified but does not exist
+- Launch profile specified but does not exist
 
   ```dotnetcli
   $ dotnet run --launch-profile Third
@@ -264,8 +264,8 @@ The following scenarios produce the output shown:
   DOTNET_LAUNCH_PROFILE=
   ```
 
-* Launch with no profile
-  
+- Launch with no profile
+
   ```dotnetcli
   $ dotnet run --no-launch-profile
   DOTNET_LAUNCH_PROFILE=
@@ -297,7 +297,7 @@ Specifies whether to add global tools to the `PATH` environment variable. The de
 
 ### `DOTNET_CLI_TELEMETRY_OPTOUT`
 
-Specifies whether data about the .NET tools usage is collected and sent to Microsoft. Set to `true` to opt-out of the telemetry feature (values `true`, `1`, or `yes` accepted). Otherwise, set to `false` to opt into the telemetry features (values `false`, `0`, or `no` accepted). If not set, the default is `false` and the telemetry feature is active.
+Specifies whether data about the .NET tools usage is collected and sent to Microsoft. Set to `true` to opt-out of the telemetry feature (values `true`, `1`, or `yes` accepted). Otherwise, set to `false` to opt in to the telemetry features (values `false`, `0`, or `no` accepted). If not set, the default is `false` and the telemetry feature is active.
 
 ### `DOTNET_SKIP_FIRST_TIME_EXPERIENCE`
 
@@ -366,9 +366,9 @@ For more information, see [Single-file executables](../whats-new/dotnet-core-3-0
 
 Specifies the location that supporting files for .NET CLI commands should be written to. For example:
 
-* User-writable paths for workload packs, manifests, and other supporting data.
-* First-run sentinel/lock files for aspects of the .NET CLI's first-run migrations and notification experiences.
-* The default .NET local tool installation location.
+- User-writable paths for workload packs, manifests, and other supporting data.
+- First-run sentinel/lock files for aspects of the .NET CLI's first-run migrations and notification experiences.
+- The default .NET local tool installation location.
 
 ### `DOTNET_CLI_CONTEXT_*`
 

@@ -14,6 +14,10 @@ items:
         href: aspnet-core/9.0/key-resolution.md
       - name: HostBuilder enables ValidateOnBuild/ValidateScopes in development environment
         href: aspnet-core/9.0/hostbuilder-validation.md
+    - name: Containers
+      items:
+      - name: .NET 9 container images no longer install zlib
+        href: containers/9.0/no-zlib.md
     - name: Core .NET libraries
       items:
       - name: Adding a ZipArchiveEntry sets header general-purpose bit flags
@@ -1184,12 +1188,10 @@ items:
         href: configuration/7.0/diagnostics-config-section.md
   - name: Containers
     items:
-    - name: .NET 6
+    - name: .NET 9
       items:
-      - name: Default console logger formatting in container images
-        href: containers/6.0/console-formatter-default.md
-      - name: Other breaking changes
-        href: https://github.com/dotnet/dotnet-docker/discussions/3699
+      - name: .NET 9 container images no longer install zlib
+        href: containers/9.0/no-zlib.md
     - name: .NET 8
       items:
       - name: "'ca-certificates' removed from Alpine images"
@@ -1206,6 +1208,12 @@ items:
         href: containers/8.0/multi-platform-tags.md
       - name: New 'app' user in Linux images
         href: containers/8.0/app-user.md
+    - name: .NET 6
+      items:
+      - name: Default console logger formatting in container images
+        href: containers/6.0/console-formatter-default.md
+      - name: Other breaking changes
+        href: https://github.com/dotnet/dotnet-docker/discussions/3699
   - name: Core .NET libraries
     items:
     - name: .NET 9

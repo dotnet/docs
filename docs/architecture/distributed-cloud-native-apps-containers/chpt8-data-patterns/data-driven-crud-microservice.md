@@ -307,5 +307,5 @@ The Swagger UI API detail shows a sample of the response and can be used to exec
   [https://learn.microsoft.com/aspnet/core/tutorials/getting-started-with-nswag](/aspnet/core/tutorials/getting-started-with-nswag)
 
 > [!div class="step-by-step"]
-> [Previous](microservice-application-design.md)
-> [Next](multi-container-applications-docker-compose.md)
+> [Previous](azure-caching.md)
+> [Next](TODO)

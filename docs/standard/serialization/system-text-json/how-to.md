@@ -50,6 +50,8 @@ The preceding examples use type inference for the type being serialized. An over
 :::code language="csharp" source="snippets/how-to/csharp/SerializeWithGenericParameter.cs" highlight="23":::
 :::code language="vb" source="snippets/how-to/vb/RoundtripToString.vb" id="SerializeWithGenericParameter":::
 
+You can also use GitHub Copilot to generate serialization code for you. For instructions, see the [Use GitHub Copliot](#use-github-copilot-to-serialize-to-json) section in this article.
+
 ## Serialization behavior
 
 * By default, all public properties are serialized. You can [specify properties to ignore](ignore-properties.md). You can also include [private members](immutability.md#non-public-members-and-property-accessors).

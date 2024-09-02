@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "objects, serializing"
 ms.topic: how-to
 ms.collection: ce-skilling-ai-copilot
+ms.custom: vs-copilot-horizontal
 ---
 
 # Migrate from Newtonsoft.Json to System.Text.Json
@@ -58,7 +59,7 @@ string output = JsonConvert.SerializeObject(product);
 Console.WriteLine(output);
 ```
 
-**Sample Copilot Chat response**
+**Example Copilot Chat response**
 
 ```output
 To convert the code to use System.Text.Json, you can use the JsonSerializer class. Here's the updated code:
@@ -91,7 +92,7 @@ public class Program
 This code uses System.Text.Json.JsonSerializer.Serialize to convert the Product object to a JSON string.
 ```
 
-Note that your results might be different from what is shown in these sample responses. AI models are non-deterministic, which means that they can return different responses when asked the same question. This might be due to additional learning and adaption over time, language variation, changes in context, such as your chat history, and more.
+Note that your results might be different from what is shown in these example responses. AI models are non-deterministic, which means that they can return different responses when asked the same question. This might be due to additional learning and adaption over time, language variation, changes in context, such as your chat history, and more.
 
 :::image type="content" source="./media/migrate-newtonsoft-json-using-github-copilot.gif" alt-text="Animated screenshot that shows using GitHub Copilot Chat in Visual Studio to migrate from newtonsoft" lightbox="./media/migrate-newtonsoft-json-using-github-copilot.gif":::
 

@@ -114,14 +114,14 @@ Index variables are frequently used to read sequential regions of memory. Consid
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Runtime.cs" id="ForLoop":::
 
-For each iteration of the loop, the index variable `i` is used to read an integer in `nums`, and then `i` is incremented. In Arm64 assembly, these two operations look as follows:
+For each iteration of the loop, the index variable `i` is used to read an integer in `arr`, and then `i` is incremented. In Arm64 assembly, these two operations look as follows:
 
 ```al
 ldr w0, [x1]
 add x1, x1, #4
 ```
 
-`ldr w0, [x1]` loads the integer at the memory address in `x1` into `w0`; this corresponds to the access of `nums[i]` in the source code. Then, `add x1, x1, #4` increases the address in `x1` by four bytes (the size of an integer), moving to the next integer in `nums`. This instruction corresponds to the `i++` operation executed at the end of each iteration.
+`ldr w0, [x1]` loads the integer at the memory address in `x1` into `w0`; this corresponds to the access of `arr[i]` in the source code. Then, `add x1, x1, #4` increases the address in `x1` by four bytes (the size of an integer), moving to the next integer in `arr`. This instruction corresponds to the `i++` operation executed at the end of each iteration.
 
 Arm64 supports post-indexed addressing, where the "index" register is automatically incremented after its address is used. This means that two instructions can be combined into one, making the loop more efficient. The CPU only needs to decode one instruction instead of two, and the loop's code is now more cache-friendly.
 
@@ -146,9 +146,9 @@ add ecx, dword ptr [rax+4*rdx+0x10]
 inc edx
 ```
 
-These instructions correspond to the expressions `sum += nums[i]` and `i++`, respectively. `rcx` (`ecx` holds the lower 32 bits of this register) contains the value of `sum`, `rax` contains the base address of `nums`, and `rdx` contains the value of `i`. To compute the address of `nums[i]`, the index in `rdx` is **multiplied** by four (the size of an integer). This offset is then **added** to the base address in `rax`, plus some padding. (After the integer at `nums[i]` is read, it's added to `rcx` and the index in `rdx` is incremented.) In other words, each array access requires a multiplication *and* an addition operation.
+These instructions correspond to the expressions `sum += arr[i]` and `i++`, respectively. `rcx` (`ecx` holds the lower 32 bits of this register) contains the value of `sum`, `rax` contains the base address of `arr`, and `rdx` contains the value of `i`. To compute the address of `arr[i]`, the index in `rdx` is **multiplied** by four (the size of an integer). This offset is then **added** to the base address in `rax`, plus some padding. (After the integer at `arr[i]` is read, it's added to `rcx` and the index in `rdx` is incremented.) In other words, each array access requires a multiplication *and* an addition operation.
 
-Multiplication is more expensive than addition, and replacing the former with the latter is a classic motivation for strength reduction. To avoid the computation of the element's address on each memory access, you could rewrite the example to access the integers in `nums` using a pointer rather than an index variable:
+Multiplication is more expensive than addition, and replacing the former with the latter is a classic motivation for strength reduction. To avoid the computation of the element's address on each memory access, you could rewrite the example to access the integers in `arr` using a pointer rather than an index variable:
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Runtime.cs" id="WhileLoop":::
 

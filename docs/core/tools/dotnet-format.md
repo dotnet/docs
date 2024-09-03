@@ -105,7 +105,7 @@ The `dotnet format style` subcommand only runs formatting rules associated with 
 
 * **`--diagnostics <DIAGNOSTICS>`**
 
-  A space-separated list of diagnostic IDs to use as a filter when fixing code style or third-party issues. Default value is whichever IDs are listed in the *.editorconfig* file. For a list of built-in analyzer rule IDs that you can specify, see the [list of IDs for code-analysis style rules](../../fundamentals/code-analysis/style-rules/index.md).
+  A space-separated list of diagnostic IDs to use as a filter when fixing code style issues. Default value is whichever IDs are listed in the *.editorconfig* file. For a list of built-in code style analyzer rule IDs that you can specify, see the [list of IDs for code-analysis style rules](../../fundamentals/code-analysis/style-rules/index.md). 
 
 * **`--severity`**
 
@@ -113,17 +113,17 @@ The `dotnet format style` subcommand only runs formatting rules associated with 
 
 ### Analyzers
 
-`dotnet format analyzers` - Formats code to match `editorconfig` settings for analyzers.
+`dotnet format analyzers` - Formats code to match `editorconfig` settings for analyzers (excluding code style rules).
 
 #### Description
 
-The `dotnet format analyzers` subcommand only runs formatting rules associated with analyzers. For a list of analyzer rules that you can specify in your `editorconfig` file, see [Code style rules](../../fundamentals/code-analysis/style-rules/index.md).
+The `dotnet format analyzers` subcommand only runs formatting rules associated with analyzers. For a list of analyzer rules that you can specify in your `editorconfig` file, see [Quality rules](../../fundamentals/code-analysis/quality-rules/index.md).
 
 ##### Options
 
 * **`--diagnostics <DIAGNOSTICS>`**
 
-  A space-separated list of diagnostic IDs to use as a filter when fixing code style or third-party issues. Default value is whichever IDs are listed in the *.editorconfig* file. For a list of built-in analyzer rule IDs that you can specify, see the [list of IDs for code-analysis style rules](../../fundamentals/code-analysis/style-rules/index.md).
+  A space-separated list of diagnostic IDs to use as a filter when fixing non code style issues. Default value is whichever IDs are listed in the *.editorconfig* file. For a list of built-in analyzer rule IDs that you can specify, see the [list of IDs for quality rules](../../fundamentals/code-analysis/quality-rules/index.md). For third-party analyzers please refer to their documentation.
 
 * **`--severity`**
 
@@ -154,3 +154,28 @@ The `dotnet format analyzers` subcommand only runs formatting rules associated w
   ```dotnetcli
   dotnet format --include ./src/ ./tests/ --exclude ./src/submodule-a/
   ```
+* Fix a specific **code style** issue:  
+
+  ```dotnetcli
+  dotnet format style --diagnostics IDExxxx --severity info
+  ```
+
+* Fix all **code style** issues that has severity `info`, `warning` or `error`:
+
+  ```dotnetcli
+  dotnet format style --severity info
+  ```
+
+* Fix a specific (non code style) analyzer issue:
+
+  ```dotnetcli  
+  dotnet format analyzers --diagnostics CAxxxx --severity warn
+  ```
+
+* Fix all non code style issues that has severity `info`, `warning` or `error`:  
+
+  ```dotnetcli  
+  dotnet format analyzers --severity info
+  ```  
+
+

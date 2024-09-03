@@ -154,6 +154,7 @@ The `dotnet format analyzers` subcommand only runs formatting rules associated w
   ```dotnetcli
   dotnet format --include ./src/ ./tests/ --exclude ./src/submodule-a/
   ```
+
 * Fix a specific **code style** issue:  
 
   ```dotnetcli

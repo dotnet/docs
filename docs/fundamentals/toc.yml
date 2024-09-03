@@ -1101,6 +1101,9 @@ items:
               - name: HTTP client factory
                 href: ../core/extensions/httpclient-factory.md
                 displayName: networking,httpclient,http,dependency injection,client,factory,named client,named httpclient,typed client,typed httpclient
+              - name: HTTP client factory troubleshooting
+                href: ../core/extensions/httpclient-factory-troubleshooting.md
+                displayName: httpclient,http,client,factory,named client,named httpclient,typed client,typed httpclient
               - name: Build resilient HTTP apps
                 href: ../core/resilience/http-resilience.md
                 displayName: resilience,transient fault handling,http,httpclient,recovery,polly

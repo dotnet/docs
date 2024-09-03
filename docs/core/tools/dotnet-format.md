@@ -105,7 +105,7 @@ The `dotnet format style` subcommand only runs formatting rules associated with 
 
 * **`--diagnostics <DIAGNOSTICS>`**
 
-  A space-separated list of diagnostic IDs to use as a filter when fixing code style issues. Default value is whichever IDs are listed in the *.editorconfig* file. For a list of built-in code style analyzer rule IDs that you can specify, see the [list of IDs for code-analysis style rules](../../fundamentals/code-analysis/style-rules/index.md). 
+  A space-separated list of diagnostic IDs to use as a filter when fixing code style issues. Default value is whichever IDs are listed in the *.editorconfig* file. For a list of built-in code style analyzer rule IDs that you can specify, see the [list of IDs for code-analysis style rules](../../fundamentals/code-analysis/style-rules/index.md).
 
 * **`--severity`**
 
@@ -123,7 +123,7 @@ The `dotnet format analyzers` subcommand only runs formatting rules associated w
 
 * **`--diagnostics <DIAGNOSTICS>`**
 
-  A space-separated list of diagnostic IDs to use as a filter when fixing non code style issues. Default value is whichever IDs are listed in the *.editorconfig* file. For a list of built-in analyzer rule IDs that you can specify, see the [list of IDs for quality rules](../../fundamentals/code-analysis/quality-rules/index.md). For third-party analyzers please refer to their documentation.
+  A space-separated list of diagnostic IDs to use as a filter when fixing non code style issues. Default value is whichever IDs are listed in the *.editorconfig* file. For a list of built-in analyzer rule IDs that you can specify, see the [list of IDs for quality rules](../../fundamentals/code-analysis/quality-rules/index.md). For third-party analyzers refer to their documentation.
 
 * **`--severity`**
 
@@ -157,10 +157,10 @@ The `dotnet format analyzers` subcommand only runs formatting rules associated w
 * Fix a specific **code style** issue:  
 
   ```dotnetcli
-  dotnet format style --diagnostics IDExxxx --severity info
+  dotnet format style --diagnostics IDE0005 --severity info
   ```
 
-* Fix all **code style** issues that has severity `info`, `warning` or `error`:
+* Fix all **code style** issues that have severity `info`, `warning` or `error`:
 
   ```dotnetcli
   dotnet format style --severity info
@@ -169,13 +169,11 @@ The `dotnet format analyzers` subcommand only runs formatting rules associated w
 * Fix a specific (non code style) analyzer issue:
 
   ```dotnetcli  
-  dotnet format analyzers --diagnostics CAxxxx --severity warn
+  dotnet format analyzers --diagnostics CA1831 --severity warn
   ```
 
-* Fix all non code style issues that has severity `info`, `warning` or `error`:  
+* Fix all non code style issues that have severity `info`, `warning` or `error`:  
 
   ```dotnetcli  
   dotnet format analyzers --severity info
   ```  
-
-

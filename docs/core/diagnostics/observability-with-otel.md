@@ -88,9 +88,9 @@ The following table describes the main packages.
 
 This topic is continued with a couple of example walkthroughs for using OpenTelemetry in .NET:
 
-- [Example: Use OTLP and the standalone Aspire Dashboard](./observability-OTLP-example.md)
+- [Example: Use OTLP and the standalone Aspire Dashboard](./observability-otlp-example.md)
 - [Example: Use OpenTelemetry with Azure Monitor and Application Insights](./observability-applicationinsights.md)
-- [Example: Use OpenTelemetry with Prometheus, Grafana, and Jaeger](./observability-PrGrJa-example.md)
+- [Example: Use OpenTelemetry with Prometheus, Grafana, and Jaeger](./observability-prgrja-example.md)
 
 ## OpenTelemetry in .NET Aspire
 
@@ -112,10 +112,10 @@ For more details on .NET Aspire see:
 
 Probably the easiest way to configure OTel for ASP.NET projects is to use the Aspire Service Defaults project, even if not using the rest of .NET Aspire such as the AppHost for orchestration. The Service Defaults project is available as a project template via Visual Studio or `dotnet new`. It configures OTel and sets up the OTLP exporter. You can then use the [OTel environment variables](https://github.com/open-telemetry/opentelemetry-dotnet/tree/main/src/OpenTelemetry.Exporter.OpenTelemetryProtocol#exporter-configuration) to configure the OTLP endpoint to send telemetry to, and provide the resource properties for the application.
 
-The steps to use _ServiceDefaults_ outside .NET Aspire are:
+The steps to use *ServiceDefaults* outside .NET Aspire are:
 
-- Add the _ServiceDefaults_ project to the solution using Add New Project in Visual Studio, or use `dotnet new aspire-servicedefaults --output ServiceDefaults`
-- Reference the _ServiceDefaults_ project from your ASP.NET application. In Visual Studio use "Add -> Project Reference" and select the _ServiceDefaults_ project"
+- Add the *ServiceDefaults* project to the solution using Add New Project in Visual Studio, or use `dotnet new aspire-servicedefaults --output ServiceDefaults`
+- Reference the *ServiceDefaults* project from your ASP.NET application. In Visual Studio use "Add -> Project Reference" and select the *ServiceDefaults* project"
 - Call its OpenTelemetry setup function as part of your application builder initialization.
 
 ``` csharp

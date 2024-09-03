@@ -136,7 +136,7 @@ This kind of version mismatch between the .NET SDK and MSBuild is referred to as
 
 ## Workload sets
 
-*Workload sets* is an SDK feature intended to give users more control over the workloads they install and the cadence of change of those workloads. In previous versions, workloads would periodically be updated as new versions of individual workloads were released onto any configured NuGet feeds. Now, *all* of your workloads will stay at a specific, single version until you make an explicit update gesture.
+*Workload sets* is an SDK feature intended to give users more control over the workloads they install and the cadence of change of those workloads. In previous versions, workloads were periodically updated as new versions of individual workloads were released onto any configured NuGet feeds. Now, *all* of your workloads stay at a specific, single version until you make an explicit update gesture.
 
 You can see what mode your SDK installation is in by running `dotnet workload --info`:
 
@@ -160,7 +160,7 @@ Successfully updated workload install mode to use workload-set.
 
 If you need to change back for any reason, you can run the same command with `manifests` instead of `workload-set`. You can also use `dotnet workload config --update-mode` to check the current mode of operation.
 
-<!-- Add link to ../../tools/dotnet-workload-sets.md -->
+For more information, see [.NET SDK workload sets](../../tools/dotnet-workload-sets.md).
 
 ## Containers
 

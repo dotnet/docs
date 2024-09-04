@@ -7,7 +7,7 @@ ms.date: 09/03/2024
 
 Floating point-to-integer conversions now have *saturating* behavior on x86 and x64 machines. Saturating behavior means that if the converted value is too small or large for target type, the value is set to the minimum or maximum value, respectively, for that type.
 
-Additionally, the `ConvertToIntegerNative<TInteger>` methods on [Single](xref:System.Single.ConvertToIntegerNative`1(System.Single)), [Double](xref:System.Double.ConvertToIntegerNative`1(System.Double)), and [Half](xref:System.Half.ConvertToIntegerNative`1(System.Half)) now have *platform-specific* behavior. This behavior is not guaranteed to match the previous behavior (which was already non-deterministic), but rather does whatever is most efficient for the native platform. In most cases, however, the behavior matches the previous behavior.
+Additionally, the `ConvertToIntegerNative<TInteger>` methods on [Single](xref:System.Single.ConvertToIntegerNative``1(System.Single)), [Double](xref:System.Double.ConvertToIntegerNative``1(System.Double)), and [Half](xref:System.Half.ConvertToIntegerNative``1(System.Half)) now have *platform-specific* behavior. This behavior is not guaranteed to match the previous behavior (which was already non-deterministic), but rather does whatever is most efficient for the native platform. In most cases, however, the behavior matches the previous behavior.
 
 ## Previous behavior
 
@@ -62,9 +62,9 @@ If you relied on the values shown in the [Previous behavior](#previous-behavior)
 
 ## Affected APIs
 
-- <xref:System.Half.ConvertToIntegerNative`1(System.Half)>
-- <xref:System.Single.ConvertToIntegerNative`1(System.Single)>
-- <xref:System.Double.ConvertToIntegerNative`1(System.Double)>
+- <xref:System.Half.ConvertToIntegerNative``1(System.Half)>
+- <xref:System.Single.ConvertToIntegerNative``1(System.Single)>
+- <xref:System.Double.ConvertToIntegerNative``1(System.Double)>
 - All explicit and implicit casts from floating point to integer:
 
   - `(int)val` where `val` is a `float` or `double`

@@ -13,9 +13,9 @@ There are many commercial Application Performance Management (APM) systems avail
 
 To make the ASP.NET experience with Azure Monitor easier, a wrapper package (called a Distro in OTel parlance) is provided that does most of the heavy lifting of configuring OpenTelemetry.
 
-This example is based off the [OTLP walkthrough](./observability-OTLP-example.md). Follow the steps 1-5 to create the application code using the OTLP exporter. In this example, we will extend the code to send data to Application Insights.
+This example is based off the [OTLP walkthrough](./observability-otlp-example.md). Follow the steps 1-5 to create the application code using the OTLP exporter. In this example, we will extend the code to send data to Application Insights.
 
-Take the same project from [Step 5](./observability-OTLP-example.md#5-configure-opentelemetry-with-the-correct-providers) and add the following NuGet package:
+Take the same project from [Step 5](./observability-otlp-example.md#5-configure-opentelemetry-with-the-correct-providers) and add the following NuGet package:
 
 ``` xml
 <ItemGroup>

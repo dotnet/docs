@@ -503,7 +503,7 @@ As with earlier versions of <xref:System.Text.Json>, you can configure whether i
 
 ### Order JsonObject properties
 
-The <System.Json.JsonObject> type now exposes ordered dictionary&ndash;like APIs that enable explicit property order manipulation.
+The <xref:System.Json.JsonObject> type now exposes ordered dictionary&ndash;like APIs that enable explicit property order manipulation.
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Serialization.cs" id="PropertyOrder":::
 

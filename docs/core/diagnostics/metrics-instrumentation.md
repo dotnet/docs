@@ -2,7 +2,7 @@
 title: Creating Metrics
 description: How to add new metrics to a .NET library or application
 ms.topic: tutorial
-ms.date: 10/31/2023
+ms.date: 08/27/2024
 ---
 
 # Creating metrics
@@ -213,6 +213,8 @@ Types of instruments currently available:
   the current total. For example, if a collection tool updates every three seconds, then the callback function will also be invoked every three seconds. Whatever value is returned by
   the callback will be shown in the collection tool unchanged as the total.
 
+- **Gauge** (<xref:System.Diagnostics.Metrics.Meter.CreateGauge%2A>) - This instrument allows the caller to set the current value of the metric using the <xref:System.Diagnostics.Metrics.Gauge%601.Record%2A> method. The value can be updated at any time by invoking the method again and a metric collection tool will display whatever value was most recently set.
+
 - **ObservableGauge** (<xref:System.Diagnostics.Metrics.Meter.CreateObservableGauge%2A>) - This instrument allows the caller to provide a callback where the measured value
   is passed through directly as the metric. Each time the collection tool updates, the callback is invoked, and whatever value is returned by the callback is displayed in
   the tool.
@@ -280,7 +282,7 @@ class Program
             s_ordersPending = s_rand.Next(0, 20);
 
             // Last we pretend that we measured how long it took to do the transaction (for example we could time it with Stopwatch)
-            s_orderProcessingTime.Record(s_rand.Next(0.005, 0.015));
+            s_orderProcessingTime.Record(s_rand.Next(5, 15)/1000.0);
         }
     }
 }
@@ -293,20 +295,19 @@ Run the new process and use dotnet-counters as before in a second shell to view 
 Press p to pause, r to resume, q to quit.
     Status: Running
 
+Name                                                  Current Value
 [HatCo.Store]
-    hatco.store.coats_sold (Count / 1 sec)                                27
-    hatco.store.hats_sold (Count / 1 sec)                                 36
+    hatco.store.coats_sold (Count)                        8,181    
+    hatco.store.hats_sold (Count)                           548    
     hatco.store.order_processing_time
-        Percentile=50                                                      0.012
-        Percentile=95                                                      0.014
-        Percentile=99                                                      0.014
-    hatco.store.orders_pending                                             5
+        Percentile
+        50                                                    0.012    
+        95                                                    0.013   
+        99                                                    0.013
+    hatco.store.orders_pending                                9    
 ```
 
-This example uses some randomly generated numbers so your values will vary a bit. You can see that `hatco.store.hats_sold` (the Counter) and
-`hatco.store.coats_sold` (the ObservableCounter) both show up as a rate. The ObservableGauge, `hatco.store.orders_pending`, appears
-as an absolute value. Dotnet-counters renders Histogram instruments as three percentile statistics (50th, 95th, and 99th) but other tools may
-summarize the distribution differently or offer more configuration options.
+This example uses some randomly generated numbers so your values will vary a bit. Dotnet-counters renders Histogram instruments as three percentile statistics (50th, 95th, and 99th) but other tools might summarize the distribution differently or offer more configuration options.
 
 ### Best practices
 
@@ -380,8 +381,9 @@ Run the new process and use dotnet-counters as before in a second shell to view 
 Press p to pause, r to resume, q to quit.
     Status: Running
 
+Name                                                       Current Value
 [HatCo.Store]
-    hatco.store.hats_sold ({hats} / 1 sec)                                40
+    hatco.store.hats_sold ({hats})                                40
 ```
 
 dotnet-counters doesn't currently use the description text in the UI, but it does show the unit when it is provided. In this case, you see "{hats}"
@@ -392,7 +394,7 @@ has replaced the generic term "Count" that is visible in previous descriptions.
 - .NET APIs allow any string to be used as the unit, but we recommend using [UCUM](https://ucum.org/), an international standard for unit names. The curly
 braces around "{hats}" is part of the UCUM standard, indicating that it is a descriptive annotation rather than a unit name with a standardized meaning like seconds or bytes.
 
-- The unit specified in the constructor should describe the units appropriate for an individual measurement. This will sometimes differ from the units on the final metric. In this example, each measurement is a number of hats, so "{hats}" is the appropriate unit to pass in the constructor. The collection tool calculated a rate and derived on its own that the appropriate unit for the calculated metric is {hats}/sec.
+- The unit specified in the constructor should describe the units appropriate for an individual measurement. This will sometimes differ from the units on the final reported metric. In this example, each measurement is a number of hats, so "{hats}" is the appropriate unit to pass in the constructor. The collection tool could have calculated the rate of change and derived on its own that the appropriate unit for the calculated rate metric is {hats}/sec.
 
 - When recording measurements of time, prefer units of seconds recorded as a floating point or double value.
 
@@ -407,8 +409,8 @@ Counter and Histogram tags can be specified in overloads of the <xref:System.Dia
 
 ```csharp
 s_hatsSold.Add(2,
-               new KeyValuePair<string, object>("product.color", "red"),
-               new KeyValuePair<string, object>("product.size", 12));
+               new KeyValuePair<string, object?>("product.color", "red"),
+               new KeyValuePair<string, object?>("product.size", 12));
 ```
 
 Replace the code of `Program.cs` and rerun the app and dotnet-counters as before:
@@ -432,11 +434,11 @@ class Program
             // Pretend our store has a transaction, every 100ms, that sells two size 12 red hats, and one size 19 blue hat.
             Thread.Sleep(100);
             s_hatsSold.Add(2,
-                           new KeyValuePair<string,object>("product.color", "red"),
-                           new KeyValuePair<string,object>("product.size", 12));
+                           new KeyValuePair<string,object?>("product.color", "red"),
+                           new KeyValuePair<string,object?>("product.size", 12));
             s_hatsSold.Add(1,
-                           new KeyValuePair<string,object>("product.color", "blue"),
-                           new KeyValuePair<string,object>("product.size", 19));
+                           new KeyValuePair<string,object?>("product.color", "blue"),
+                           new KeyValuePair<string,object?>("product.size", 19));
         }
     }
 }
@@ -448,11 +450,12 @@ Dotnet-counters now shows a basic categorization:
 Press p to pause, r to resume, q to quit.
     Status: Running
 
+Name                                                  Current Value
 [HatCo.Store]
-    hatco.store.hats_sold (Count / 1 sec)
-        product.color=blue,product.size=19                                 9
-        product.color=red,product.size=12                                 18
-
+    hatco.store.hats_sold (Count)
+        product.color product.size
+        blue          19                                     73
+        red           12                                    146    
 ```
 
 For ObservableCounter and ObservableGauge, tagged measurements can be provided in the callback passed to the constructor:
@@ -479,9 +482,9 @@ class Program
         return new Measurement<int>[]
         {
             // pretend these measurements were read from a real queue somewhere
-            new Measurement<int>(6, new KeyValuePair<string,object>("customer.country", "Italy")),
-            new Measurement<int>(3, new KeyValuePair<string,object>("customer.country", "Spain")),
-            new Measurement<int>(1, new KeyValuePair<string,object>("customer.country", "Mexico")),
+            new Measurement<int>(6, new KeyValuePair<string,object?>("customer.country", "Italy")),
+            new Measurement<int>(3, new KeyValuePair<string,object?>("customer.country", "Spain")),
+            new Measurement<int>(1, new KeyValuePair<string,object?>("customer.country", "Mexico")),
         };
     }
 }
@@ -493,11 +496,13 @@ When run with dotnet-counters as before, the result is:
 Press p to pause, r to resume, q to quit.
     Status: Running
 
+Name                                                  Current Value
 [HatCo.Store]
     hatco.store.orders_pending
-        customer.country=Italy                                             6
-        customer.country=Mexico                                            1
-        customer.country=Spain                                             3
+        customer.country
+        Italy                                                 6
+        Mexico                                                1
+        Spain                                                 3    
 ```
 
 ### Best practices

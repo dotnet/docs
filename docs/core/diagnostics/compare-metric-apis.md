@@ -7,24 +7,9 @@ ms.date: 11/04/2021
 # Metric APIs comparison
 
 When adding new metric instrumentation to a .NET app or library, there are various different APIs to choose from. This article
-will help you understand what is available and some of the tradeoffs involved.
-
-There are two major categories of APIs, vendor-neutral and vendor-specific.
-Vendor-specific APIs have the advantage that the vendor can iterate their designs quickly, add specialized features, and achieve
-tight integration between their instrumentation APIs and their backend systems. As an example, if you instrumented your app with
-metric APIs provided by  [Application Insights](/azure/azure-monitor/app/app-insights-overview), then
-you would expect to find well-integrated functionality and all of Application Insight's latest features when working with their
-analysis tools. However the library or app would also now be coupled to this vendor and changing to a different one in the future
-would require rewriting the instrumentation. For libraries, this coupling can be particularly problematic because the library
-developer might use one vendor's API and the app developer that references the library wants to work with a different vendor.
-To resolve this coupling issue, vendor-neutral options provide a standardized API façade and extensibility
-points to route data to various vendor backend systems depending on configuration. However, vendor-neutral APIs may provide
-fewer capabilities, and you're still constrained to pick a vendor that has integrated with the façade's extensibility
-mechanism.
+will help you understand the options.
 
 ## .NET APIs
-
-Over .NET's 20+ year history, we've iterated a few times on the design for metric APIs, all of which are supported and vendor-neutral:
 
 ### System.Diagnostics.Metrics
 
@@ -44,7 +29,7 @@ Although this API was designed to work well with OpenTelemetry and its growing e
 
 ### PerformanceCounter
 
-<xref:System.Diagnostics.PerformanceCounter?displayProperty=nameWithType> APIs are the oldest metric APIs. They're only supported on Windows and provide
+<xref:System.Diagnostics.PerformanceCounter?displayProperty=nameWithType> APIs are the oldest .NET metric APIs. They're only supported on Windows and provide
 a managed wrapper for Windows OS [Performance Counter](/windows/win32/perfctrs/performance-counters-portal)
 technology. They are available in all supported versions of .NET.
 
@@ -56,9 +41,8 @@ For more information, see [Performance counters in .NET Framework](../../framewo
 
 ### EventCounters
 
-The [EventCounters](event-counters.md) API came next after `PerformanceCounters`. This API aimed to provide a uniform
-cross-platform experience. The APIs are available by targeting .NET Core 3.1+, and a small subset is available on .NET Framework 4.7.1
-and later. These APIs are fully supported and are actively used by key .NET libraries, but they
+The [EventCounters](event-counters.md) were the first .NET APIs to support a cross-platform metrics experience. The APIs are available by targeting .NET Core 3.1+, and a small subset is available on .NET Framework 4.7.1
+and later. These APIs are fully supported and still used by key .NET libraries, but they
 have less functionality than the newer <xref:System.Diagnostics.Metrics?displayProperty=nameWithType> APIs. EventCounters are able to report
 rates of change and averages, but do not support histograms and percentiles. There is also no support for multi-dimensional metrics. Custom
 tooling is possible via the <xref:System.Diagnostics.Tracing.EventListener> API, though it is not strongly typed, only gives
@@ -67,8 +51,7 @@ access to the aggregated values, and has limitations when using more than one li
 [dotnet-counters](dotnet-counters.md), and [dotnet-monitor](https://devblogs.microsoft.com/dotnet/introducing-dotnet-monitor/). For third-party
 tool support, check the vendor or project documentation to see if it's available.
 
-The .NET team doesn't expect to make substantial new investments on this API going forward, but as with `PerformanceCounters`, the API remains
-actively supported for all current and future users.
+The .NET team doesn't expect to make new investments on this API going forward, but as with `PerformanceCounters`, the API remains supported for all current and future users.
 
 ## Third-party APIs
 

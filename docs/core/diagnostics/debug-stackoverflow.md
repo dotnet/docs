@@ -2,7 +2,7 @@
 title: Debugging StackOverflow errors
 description: Learn how to diagnose StackOverflow exceptions
 ms.topic: tutorial
-ms.date: 12/22/2020
+ms.date: 8/22/2024
 ---
 # Debug StackOverflow errors
 
@@ -30,13 +30,19 @@ The `Main` method will continuously call itself until there is no more stack spa
 ````
 > dotnet run
 Stack overflow.
+   at temp.Program.Main(System.String[])
+   at temp.Program.Main(System.String[])
+   at temp.Program.Main(System.String[])
+   at temp.Program.Main(System.String[])
+   at temp.Program.Main(System.String[])
+   at temp.Program.Main(System.String[])
+   <this output repeats many more times>
 ````
 
-> [!NOTE]
-> On .NET 5 and later, the callstack is output to the console.
+Often just seeing this callstack is enough to identify the problematic repeating method and locate the source code logic that is causing the recursive calls. However if the problem is still unclear you can debug further.
 
 > [!NOTE]
-> This article describes how to debug a stack overflow with lldb. If you are running on Windows, we suggest debugging the app with [Visual Studio](/visualstudio/debugger/what-is-debugging) or [Visual Studio Code](https://code.visualstudio.com/Docs/editor/debugging).
+> This article describes how to debug a stack overflow with lldb on Linux. If you are running on Windows, we suggest debugging the app with [Visual Studio](/visualstudio/debugger/what-is-debugging) or [Visual Studio Code](https://code.visualstudio.com/Docs/editor/debugging).
 
 ## Example
 
@@ -97,7 +103,7 @@ Stack overflow.
     Source file:  /temp/Program.cs @ 9
     ````
 
-5. Go look at the indicated method temp.Program.Main(System.String[]) and source "/temp/Program.cs @ 9" to see if you can figure out what you did wrong. If it still wasn't clear you could add logging in that area of the code.
+5. Go look at the indicated method temp.Program.Main(System.String[]) and source "/temp/Program.cs @ 9" to see if you can figure out what you did wrong. If it still wasn't clear you could use further debugger commands to inspect the current state of the process or add logging in that area of the code.
 
 ## See Also
 

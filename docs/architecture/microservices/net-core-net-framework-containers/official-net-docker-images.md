@@ -26,7 +26,7 @@ Why multiple images? When developing, building, and running containerized applic
 
 During development, what is important is how fast you can iterate changes, and the ability to debug the changes. The size of the image isn't as important as the ability to make changes to your code and see the changes quickly. Some tools and "build-agent containers", use the development .NET image (*mcr.microsoft.com/dotnet/sdk:8.0*) during development and build process. When building inside a Docker container, the important aspects are the elements that are needed to compile your app. This includes the compiler and any other .NET dependencies.
 
-Another great option is Development Containers -- prebuilt development environments that are ready to use without worrying about dependencies and configurations.  They are also easy to customize to include additional tools or dependencies. They provide a consistent and reproducible setup that's easy to share with your team.
+Another great option is development containers. These containers are prebuilt development environments that are ready to use&mdash;you don't have to worry about dependencies and configurations. They are also easy to customize to include additional tools or dependencies. Development containers provide a consistent and reproducible setup that's easy to share with your team.
 Development containers conform to the [Development Container Specification], and many popular developer tools, including Visual Studio Code and GitHub Codespaces, support them.
 The .NET dev containers are based on the .NET SDK image and include the .NET SDK, runtime,
 and other tools you need to develop .NET applications.

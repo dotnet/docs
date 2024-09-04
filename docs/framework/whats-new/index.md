@@ -709,19 +709,7 @@ ASP.NET processes requests in a predefined pipeline that includes 23 events. ASP
 
 **SHA-2 hash options for ASP.NET forms authentication credentials**
 
-In .NET Framework 4.7 and earlier versions, ASP.NET allowed developers to store user credentials with hashed passwords in configuration files using either MD5 or SHA1. Starting with .NET Framework 4.7.1, ASP.NET also supports new secure SHA-2 hash options such as SHA256, SHA384, and SHA512. SHA1 remains the default, and a non-default hash algorithm can be defined in the web configuration file. For example:
-
-```xml
-<system.web>
-    <authentication mode="Forms">
-        <forms loginUrl="~/login.aspx">
-          <credentials passwordFormat="SHA512">
-            <user name="jdoe" password="6D003E98EA1C7F04ABF8FCB375388907B7F3EE06F278DB966BE960E7CBBD103DF30CA6D61F7E7FD981B2E4E3A64D43C836A4BEDCA165C33B163E6BCDC538A664" />
-          </credentials>
-        </forms>
-    </authentication>
-</system.web>
-```
+In .NET Framework 4.7 and earlier versions, ASP.NET allowed developers to store user credentials with hashed passwords in configuration files using either MD5 or SHA1. Starting with .NET Framework 4.7.1, ASP.NET also supports new secure SHA-2 hash options such as SHA256, SHA384, and SHA512. SHA1 remains the default, and a non-default hash algorithm can be defined in the web configuration file.
 
 [!INCLUDE [managed-identities](../includes/managed-identities.md)]
 

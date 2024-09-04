@@ -58,8 +58,6 @@ internal partial class ReadOnlyCollections
     // </ReadOnlySet>
 
     // <AlternateLookup>
-    private readonly Dictionary<string, int> _wordCounts = new(StringComparer.OrdinalIgnoreCase);
-
     private static Dictionary<string, int> CountWords(ReadOnlySpan<char> input)
     {
         Dictionary<string, int> wordCounts = new(StringComparer.OrdinalIgnoreCase);

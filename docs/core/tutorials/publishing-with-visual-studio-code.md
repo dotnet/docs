@@ -29,10 +29,10 @@ The .NET CLI is used to publish the app, so you can follow this tutorial with a 
 1. Run the following command:
 
    ```dotnetcli
-   dotnet publish --configuration Release
+   dotnet publish
    ```
 
-   The default build configuration is *Debug*, so this command specifies the *Release* build configuration. The output from the Release build configuration has minimal symbolic debug information and is fully optimized.
+   The default build configuration is *Release*, which is appropriate for a deployed site running in producction. The output from the Release build configuration has minimal symbolic debug information and is fully optimized.
 
    The command output is similar to the following example:
 

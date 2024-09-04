@@ -1,12 +1,15 @@
 ---
 title: EventCounters in .NET Core
 description: In this article, you'll learn what EventCounters are, how to implement them, and how to consume them.
-ms.date: 08/07/2020
+ms.date: 08/27/2024
 ---
 
 # EventCounters in .NET
 
 **This article applies to: ✔️** .NET Core 3.0 SDK and later versions
+
+  > [!NOTE]
+  > For developing new .NET projects Microsoft recommends using the newer [System.Diagnostics.Metrics](metrics-instrumentation.md) APIs instead. The System.Diagnostics.Metrics APIs offer increased functionality, standardization and integration with a broader ecosystem of tools. See [the metrics API comparison](compare-metric-apis.md) for more information.
 
 EventCounters are .NET APIs used for lightweight, cross-platform, and near real-time performance metric collection. EventCounters were added as a cross-platform alternative to the "performance counters" of .NET Framework on Windows. In this article, you'll learn what EventCounters are, how to implement them, and how to consume them.
 
@@ -168,16 +171,6 @@ There are two primary ways of consuming EventCounters: in-proc and out-of-proc. 
 ### Consume out-of-proc
 
 Consuming EventCounters out-of-proc is a common approach. You can use [dotnet-counters](dotnet-counters.md) to consume them in a cross-platform manner via an EventPipe. The `dotnet-counters` tool is a cross-platform dotnet CLI global tool that can be used to monitor the counter values. To find out how to use `dotnet-counters` to monitor your counters, see [dotnet-counters](dotnet-counters.md), or work through the [Measure performance using EventCounters](event-counter-perf.md) tutorial.
-
-#### dotnet-trace
-
-The `dotnet-trace` tool can be used to consume the counter data through an EventPipe. Here is an example using `dotnet-trace` to collect counter data.
-
-```console
-dotnet-trace collect --process-id <pid> Sample.EventCounter.Minimal:0:0:EventCounterIntervalSec=1
-```
-
-For more information on how to collect counter values over time, see the [dotnet-trace](dotnet-trace.md#use-dotnet-trace-to-collect-counter-values-over-time) documentation.
 
 #### Azure Application Insights
 

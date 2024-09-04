@@ -307,7 +307,7 @@ Name                                                  Current Value
     hatco.store.orders_pending                                9    
 ```
 
-This example uses some randomly generated numbers so your values will vary a bit. Dotnet-counters renders Histogram instruments as three percentile statistics (50th, 95th, and 99th) but other tools may summarize the distribution differently or offer more configuration options.
+This example uses some randomly generated numbers so your values will vary a bit. Dotnet-counters renders Histogram instruments as three percentile statistics (50th, 95th, and 99th) but other tools might summarize the distribution differently or offer more configuration options.
 
 ### Best practices
 

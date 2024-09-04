@@ -8,7 +8,7 @@ ms.date: 4/29/2022
 Code can be instrumented to produce a log, which serves as a record of interesting events that occurred while the program was running. To understand the application's behavior, logs can be reviewed. .NET has accumulated several different logging APIs over its history and this article will help you understand what options are available.
 
 > [!NOTE]
-> Sometimes logging is also refered to as 'tracing', including in some of the older Windows and .NET APIs. In recent years 'tracing' is more commonly used as an abbreviation for [Distributed tracing](./distributed-tracing.md) but that isn't the meaning in this article.
+> Sometimes logging is also referred to as 'tracing', including in some of the older Windows and .NET APIs. In recent years, 'tracing' is more commonly used as an abbreviation for [Distributed tracing](./distributed-tracing.md), but that isn't the meaning in this article.
 
 ## .NET logging APIs
 

@@ -122,7 +122,7 @@ If you're using [Visual Studio 2022 version 17.8 or later](/visualstudio/release
 Generate code to use `System.Text.Json` to serialize an object to a JSON string. The object contains the following fields: FirstName (string), Lastname (string), Age (int). Provide example output.
 ```
 
-You can customize the prompt to use object fields that suit your requirements. 
+You can customize the prompt to use object fields that suit your requirements.
 
 You can use chat features, such as [slash commands, references to files, methods, or classes, and threads](/visualstudio/ide/copilot-chat-context), to set intent and get better answers with scoped context. For an existing class in a project open in the IDE, you can prompt GitHub Copilot with `/generate code to serialize #Classname in #Filename to JSON`
 

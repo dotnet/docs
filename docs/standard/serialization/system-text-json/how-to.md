@@ -165,7 +165,8 @@ This code defines a `Person` class, creates an instance of it, and then serializ
 
 When Copilot returns a code block, the response includes options to copy the code, insert the code into a new file, or preview the code output.
 
-Note that your results might be different from what is shown in the example responses. AI models are non-deterministic, which means that they can return different responses when asked the same question. This might be due to additional learning and adaption over time, language variation, changes in context, such as your chat history, and more.
+> [!NOTE]
+> Your results might be different from what's shown in the example responses. AI models are non-deterministic, which means that they can return different responses when asked the same question. This might be due to additional learning and adaption over time, language variation, changes in context, such as your chat history, and more.
 
 :::image type="content" source="./media/serialize-json-using-github-copilot.gif" alt-text="Animated screenshot that shows using GitHub Copilot Chat in Visual Studio to serialize an object to a JSON string." lightbox="./media/serialize-json-using-github-copilot.gif":::
 

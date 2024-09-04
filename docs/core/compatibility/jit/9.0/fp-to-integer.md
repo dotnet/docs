@@ -5,9 +5,7 @@ ms.date: 09/03/2024
 ---
 # Floating point-to-integer conversions are saturating
 
-Floating point-to-integer conversions now have *saturating* behavior on x86 and x64 machines. Saturating behavior means that if the converted value is too small or large for target type, the value is set to the minimum or maximum value, respectively, for that type.
-
-Additionally, the `ConvertToIntegerNative<TInteger>` methods on [Single](xref:System.Single.ConvertToIntegerNative``1(System.Single)), [Double](xref:System.Double.ConvertToIntegerNative``1(System.Double)), and [Half](xref:System.Half.ConvertToIntegerNative``1(System.Half)) now have *platform-specific* behavior. This behavior is not guaranteed to match the previous behavior (which was already non-deterministic), but rather does whatever is most efficient for the native platform. In most cases, however, the behavior matches the previous behavior.
+Floating point-to-integer conversions now have *saturating* behavior on x86 and x64 machines. Saturating behavior means that if the converted value is too small or large for the target type, the value is set to the minimum or maximum value, respectively, for that type.
 
 ## Previous behavior
 
@@ -54,24 +52,25 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
-This change was made to standardize all floating point-to-integer conversions to have saturating behavior.
+This change was made to standardize all floating point-to-integer conversions to have saturating behavior and to make the behavior deterministic.
 
 ## Recommended action
 
 If you relied on the values shown in the [Previous behavior](#previous-behavior) section to be returned from the conversion, even if they were incorrect, update your code to expect the values shown in the [New behavior](#new-behavior) section.
 
+If the performance overhead of the new behavior is undesirable for your scenario, you can use the new `ConvertToIntegerNative<TInteger>` methods on [Single](xref:System.Single.ConvertToIntegerNative``1(System.Single)), [Double](xref:System.Double.ConvertToIntegerNative``1(System.Double)), and [Half](xref:System.Half.ConvertToIntegerNative``1(System.Half)) instead, which are fast. In most cases, the behavior of these methods matches the previous floating point-to-integer conversion behavior. However, these methods have *platform-specific* behavior that's **not guaranteed to match the previous conversion behavior** (which was already non-deterministic). Instead, these methods do whatever is most efficient for the native platform. Notably, the result isn't guaranteed for values that are outside of the representable range of the `TInteger` type.
+
+In the uncommon case where you need performance and a strict guarantee of matching the previous conversion behavior, you can use the platform-specific hardware intrinsics. For example, you can use [Sse.ConvertToInt32(Vector128.CreateScalar(val))](xref:System.Runtime.Intrinsics.X86.Sse.ConvertToInt32(Vector128`1)) to handle `(int)val` for `float`. You must check `if (Sse.IsSupported)` prior to use. Using these intrinsics is tricky, however, because other target platforms (such Arm64) already produce different results.
+
 ## Affected APIs
 
-- <xref:System.Half.ConvertToIntegerNative``1(System.Half)>
-- <xref:System.Single.ConvertToIntegerNative``1(System.Single)>
-- <xref:System.Double.ConvertToIntegerNative``1(System.Double)>
-- All explicit and implicit casts from floating point to integer:
+All explicit and implicit casts from floating point to integer:
 
-  - `(int)val` where `val` is a `float` or `double`
-  - `Vector.ConvertToInt32(Vector<float> val)`
-  - `(long)val` where `val` is a `float` or `double`
-  - `Vector.ConvertToInt64(Vector<double> val)`
-  - `(uint)val` where `val` is a `float` or `double`
-  - `Vector.ConvertToUInt32(Vector<float> val)`
-  - `(ulong)val` where `val` is a `float` or `double`
-  - `Vector.ConvertToUInt64(Vector<double> val)`
+- `(int)val` where `val` is a `float` or `double`
+- `Vector.ConvertToInt32(Vector<float> val)`
+- `(long)val` where `val` is a `float` or `double`
+- `Vector.ConvertToInt64(Vector<double> val)`
+- `(uint)val` where `val` is a `float` or `double`
+- `Vector.ConvertToUInt32(Vector<float> val)`
+- `(ulong)val` where `val` is a `float` or `double`
+- `Vector.ConvertToUInt64(Vector<double> val)`

@@ -13,7 +13,7 @@ This article describes the built-in metrics for diagnostic .NET extensions libra
 > [!TIP]
 > For more information about how to collect and report these metrics, see [Collecting Metrics](metrics-collection.md).
 
-## Meter: `Microsoft.Extensions.Diagnostics.HealthChecks`
+## `Microsoft.Extensions.Diagnostics.HealthChecks`
 
 The `Microsoft.Extensions.Diagnostics.HealthChecks` metrics report health check information from [.NET health checks](diagnostic-health-checks.md):
 
@@ -63,7 +63,7 @@ Available starting in: .NET 8.0.
 
 Available starting in: .NET 8.0.
 
-## Meter: `Microsoft.Extensions.Diagnostics.ResourceMonitoring`
+## `Microsoft.Extensions.Diagnostics.ResourceMonitoring`
 
 The `Microsoft.Extensions.Diagnostics.ResourceMonitoring` metrics report resource information from [resource monitoring](diagnostic-resource-monitoring.md):
 

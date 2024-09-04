@@ -14,7 +14,7 @@ see [here](available-counters.md).
 > [!TIP]
 > For more information about how to collect, report, enrich, and test ASP.NET Core metrics, see [Using ASP.NET Core metrics](/aspnet/core/log-mon/metrics/metrics).
 
-## Meter: `Microsoft.AspNetCore.Hosting`
+## `Microsoft.AspNetCore.Hosting`
 
 The `Microsoft.AspNetCore.Hosting` metrics report high-level information about HTTP requests received by ASP.NET Core:
 
@@ -66,7 +66,7 @@ Available starting in: .NET 8.0.
 
 Available starting in: .NET 8.0.
 
-## Meter: `Microsoft.AspNetCore.Routing`
+## `Microsoft.AspNetCore.Routing`
 
 The `Microsoft.AspNetCore.Routing` metrics report information about [routing HTTP requests](/aspnet/core/fundamentals/routing) to ASP.NET Core endpoints:
 
@@ -86,7 +86,7 @@ The `Microsoft.AspNetCore.Routing` metrics report information about [routing HTT
 
 Available starting in: .NET 8.0.
 
-## Meter: `Microsoft.AspNetCore.Diagnostics`
+## `Microsoft.AspNetCore.Diagnostics`
 
 The `Microsoft.AspNetCore.Diagnostics` metrics report diagnostics information from [ASP.NET Core error handling middleware](/aspnet/core/fundamentals/error-handling):
 
@@ -106,7 +106,7 @@ The `Microsoft.AspNetCore.Diagnostics` metrics report diagnostics information fr
 
 Available starting in: .NET 8.0.
 
-## Meter: `Microsoft.AspNetCore.RateLimiting`
+## `Microsoft.AspNetCore.RateLimiting`
 
 The `Microsoft.AspNetCore.RateLimiting` metrics report rate limiting information from [ASP.NET Core rate-limiting middleware](/aspnet/core/performance/rate-limit):
 
@@ -178,7 +178,7 @@ Available starting in: .NET 8.0.
 
 Available starting in: .NET 8.0.
 
-## Meter: `Microsoft.AspNetCore.HeaderParsing`
+## `Microsoft.AspNetCore.HeaderParsing`
 
 The `Microsoft.AspNetCore.HeaderParsing` metrics report information about [ASP.NET Core header parsing](https://www.nuget.org/packages/Microsoft.AspNetCore.HeaderParsing):
 
@@ -213,7 +213,7 @@ The metric is emitted only for HTTP request header parsers that support caching.
 
 Available starting in: .NET 8.0.
 
-## Meter: `Microsoft.AspNetCore.Server.Kestrel`
+## `Microsoft.AspNetCore.Server.Kestrel`
 
 The `Microsoft.AspNetCore.Server.Kestrel` metrics report HTTP connection information from [ASP.NET Core Kestrel web server](/aspnet/core/fundamentals/servers/kestrel):
 

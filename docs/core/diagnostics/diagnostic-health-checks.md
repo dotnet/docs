@@ -14,7 +14,7 @@ The following heath check status results are possible:
 - <xref:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus.Degraded?displayProperty=nameWithType>
 - <xref:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus.Unhealthy?displayProperty=nameWithType>
 
-In addition, health checks often report various diagnostic metrics. For more information, see [Diagnostic Metrics: `Microsoft.Extensions.Diagnostics.HealthChecks`](built-in-metrics-diagnostics.md#meter-microsoftextensionsdiagnosticshealthchecks).
+In addition, health checks often report various diagnostic metrics. For more information, see [Diagnostic Metrics: `Microsoft.Extensions.Diagnostics.HealthChecks`](built-in-metrics-diagnostics.md#microsoftextensionsdiagnosticshealthchecks).
 
 ## Resource utilization health checks
 

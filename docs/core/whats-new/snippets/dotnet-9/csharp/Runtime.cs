@@ -7,12 +7,12 @@ using System.Runtime.Intrinsics;
 class Runtime
 {
     // <SnippetForLoop>
-    static int Sum(int[] arr)
+    static int Sum(int[] nums)
     {
         int sum = 0;
-        for (int i = 0; i < arr.Length; i++)
+        for (int i = 0; i < nums.Length; i++)
         {
-            sum += arr[i];
+            sum += nums[i];
         }
 
         return sum;

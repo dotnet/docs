@@ -707,24 +707,6 @@ ASP.NET processes requests in a predefined pipeline that includes 23 events. ASP
 
 .NET Framework 4.7.1 includes a new method, <xref:System.Web.HttpCookie.TryParse%2A?displayProperty=nameWithType>, that provides a standardized way to create an <xref:System.Web.HttpCookie> object from a string and accurately assign cookie values such as expiration date and path. For more information, see "ASP.NET HttpCookie parsing" in the [.NET Framework 4.7.1 ASP.NET and Configuration Features](https://devblogs.microsoft.com/dotnet/net-framework-4-7-1-asp-net-and-configuration-features/) blog post.
 
-**SHA-2 hash options for ASP.NET forms authentication credentials**
-
-In .NET Framework 4.7 and earlier versions, ASP.NET allowed developers to store user credentials with hashed passwords in configuration files using either MD5 or SHA1. Starting with .NET Framework 4.7.1, ASP.NET also supports new secure SHA-2 hash options such as SHA256, SHA384, and SHA512. SHA1 remains the default, and a non-default hash algorithm can be defined in the web configuration file. For example:
-
-```xml
-<system.web>
-    <authentication mode="Forms">
-        <forms loginUrl="~/login.aspx">
-          <credentials passwordFormat="SHA512">
-            <user name="jdoe" password="6D003E98EA1C7F04ABF8FCB375388907B7F3EE06F278DB966BE960E7CBBD103DF30CA6D61F7E7FD981B2E4E3A64D43C836A4BEDCA165C33B163E6BCDC538A664" />
-          </credentials>
-        </forms>
-    </authentication>
-</system.web>
-```
-
-[!INCLUDE [managed-identities](../includes/managed-identities.md)]
-
 ## What's new in .NET Framework 4.7
 
 .NET Framework 4.7 includes new features in the following areas:

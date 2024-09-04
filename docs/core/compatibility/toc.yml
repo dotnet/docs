@@ -50,6 +50,10 @@ items:
       items:
       - name: Deprecated desktop Windows/macOS/Linux MonoVM runtime packages
         href: deployment/9.0/monovm-packages.md
+    - name: JIT compiler
+      items:
+      - name: Floating point to integer conversions are saturating
+        href: jit/9.0/fp-to-integer.md
     - name: Networking
       items:
       - name: HttpListenerRequest.UserAgent is nullable
@@ -1612,6 +1616,10 @@ items:
         href: interop/5.0/function-suffix-pinvoke.md
   - name: JIT compiler
     items:
+    - name: .NET 9
+      items:
+      - name: Floating point to integer conversions are saturating
+        href: jit/9.0/fp-to-integer.md
     - name: .NET 6
       items:
       - name: Call argument coercion

@@ -22,7 +22,7 @@ This article assumes you have a working familiarity with cryptography in .NET. F
 
 All hash algorithm and hash-based message authentication (HMAC) classes, including the `*Managed` classes, defer to the OS libraries with the exception of .NET on Browser WASM. In Browser WASM, SHA-1, SHA-2-256, SHA-2-384, SHA-2-512 and the HMAC equivalents are implemented using managed code.
 
-|Algorithm                  |Windo ws                |Linux                       |macOS|iOS, tvOS, MacCatalyst|Android|Browser|
+|Algorithm                  |Windows                 |Linux                       |macOS|iOS, tvOS, MacCatalyst|Android|Browser|
 |---------------------------|------------------------|----------------------------|-----|----------------------|-------|-------|
 |MD5                        | ✔️                     | ✔️                        |✔️   |✔️                    |✔️     |❌     |
 |SHA-1                      | ✔️                     | ✔️                        |✔️   |✔️                    |✔️     |✔️     |

@@ -68,6 +68,7 @@ typedef enum CLRDataFieldFlag {
 |`CLRDATA_FIELD_FROM_STATIC`|0x800|The field is from a static declaration.|
 |`CLRDATA_FIELD_ALL_LOCATIONS`|0xe00|Bitwise or of all field locations.  Such can be used in various enumeration methods.|
 |`CLRDATA_FIELD_ALL_FIELDS`|0xeff|Bitwise or of all field flags.  Such can be used in various enumeration methods.|
+
 ## Remarks
 
 This enumeration lives inside the runtime and is not exposed through any headers or library files. To use it, define the enumeration as specified above.

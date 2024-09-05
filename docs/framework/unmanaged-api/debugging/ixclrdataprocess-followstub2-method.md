@@ -57,7 +57,7 @@ HRESULT FollowStub(
 [out] The next execution address determined from following the stub.
 
 `outBuffer`\
-[out] An opaque data buffer used internally to maintain the state of walking a chain of stubs.  
+[out] An opaque data buffer used internally to maintain the state of walking a chain of stubs.
 
 `outFlags`\
 [out] A set of flags describing the result of following the stub.  This is a value of the `CLRDataFollowStubOutFlag` enumeration.  If the value is `CLRDATA_FOLLOW_STUB_INTERMEDIATE` (0), the result is an intermediate step in following the stub and the caller can call FollowStub again.  If the value is `CLRDATA_FOLLOW_STUB_EXIT` (1), this is the end of the stub chain and the `outAddr` is the execution address at the end of the chain.
@@ -70,10 +70,10 @@ The provided method is part of the `IXCLRDataProcess` interface and corresponds 
 
 ## Requirements
 
-**Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
-**Header:** None  
-**Library:** None  
-**.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).
+**Header:** None
+**Library:** None
+**.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]
 
 ## See also
 

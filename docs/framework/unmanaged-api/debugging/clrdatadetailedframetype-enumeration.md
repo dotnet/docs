@@ -2,17 +2,17 @@
 description: "Learn more about: CLRDataDetailedFrameType Enumeration"
 title: "CLRDataDetailedFrameType Enumeration"
 ms.date: "07/03/2024"
-api_name: 
+api_name:
   - "CLRDataDetailedFrameType"
-api_location: 
+api_location:
   - "mscordacwks.dll"
-api_type: 
+api_type:
   - "COM"
-f1_keywords: 
+f1_keywords:
   - "CLRDataDetailedFrameType"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "CLRDataDetailedFrameType enumeration [.NET Framework debugging]"
-topic_type: 
+topic_type:
   - "apiref"
 author: "wmessmer"
 ms.author: "wmessmer"
@@ -20,11 +20,11 @@ ms.author: "wmessmer"
 # CLRDataDetailedFrameType Enumeration
 
 Describes a type of frame in the call stack in detail.
-  
-## Syntax  
-  
-```cpp  
-typedef enum CLRDataDetailedFrameType {  
+
+## Syntax
+
+```cpp
+typedef enum CLRDataDetailedFrameType {
     CLRDATA_DETFRAME_UNRECOGNIZED,
     CLRDATA_DETFRAME_UNKNOWN_STUB,
     CLRDATA_DETFRAME_CLASS_INIT,
@@ -41,10 +41,10 @@ typedef enum CLRDataDetailedFrameType {
     CLRDATA_DETFRAME_CONTEXT_SWITCH,
     CLRDATA_DETFRAME_FUNC_EVAL,
     CLRDATA_DETFRAME_FINALLY
-} CLRDataDetailedFrameType;  
-```  
-  
-## Members  
+} CLRDataDetailedFrameType;
+```
+
+## Members
 
 |Member|Value|Description|
 |------------|-----------------|-----------------|
@@ -65,17 +65,17 @@ typedef enum CLRDataDetailedFrameType {
 |`CLRDATA_DETFRAME_FUNC_EVAL`|14|The frame is a function evaluation.|
 |`CLRDATA_DETFRAME_FINALLY`|15|The frame corresponds to a finally block.|
 
-## Remarks  
+## Remarks
 
 This enumeration lives inside the runtime and is not exposed through any headers or library files. To use it, define the enumeration as specified above.
 
-## Requirements  
+## Requirements
 
-**Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
-**Header:** None  
-**Library:** None  
-**.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
-  
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).
+**Header:** None
+**Library:** None
+**.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]
+
 ## See also
 
 - [Debugging Enumerations](debugging-enumerations.md)

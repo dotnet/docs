@@ -38,6 +38,7 @@ typedef enum CLRDataMethodCodeNotification {
 |`CLRDATA_METHNOTIFY_NONE`|0|No method notification.|
 |`CLRDATA_METHNOTIFY_GENERATED`|1|Notification should occur on code generation for the method.|
 |`CLRDATA_METHNOTIFY_DISCARDED`|2|Notification should occur on discarding code for the method.|
+
 ## Remarks
 
 This enumeration lives inside the runtime and is not exposed through any headers or library files. To use it, define the enumeration as specified above.

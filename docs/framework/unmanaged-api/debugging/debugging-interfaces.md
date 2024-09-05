@@ -491,8 +491,6 @@ This section describes the unmanaged interfaces that handle the debugging of a p
  [IXCLRDataValue Interface](ixclrdatavalue-interface.md)\
  Provides methods for querying information about a managed value.
 
-
-
 ## Related Sections
 
  [Debugging Coclasses](debugging-coclasses.md)\

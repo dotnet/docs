@@ -34,6 +34,7 @@ typedef enum CLRDataFollowStubInFlag {
 |Member|Value|Description|
 |------------|-----------------|-----------------|
 |`CLRDATA_FOLLOW_STUB_DEFAULT`|0x00000000|Default follow flag.  `inFlags` for the various FollowStub methods must be set to this value.|
+
 ## Remarks
 
 This enumeration lives inside the runtime and is not exposed through any headers or library files. To use it, define the enumeration as specified above.

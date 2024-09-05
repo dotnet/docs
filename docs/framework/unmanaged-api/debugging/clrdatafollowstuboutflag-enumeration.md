@@ -36,6 +36,7 @@ typedef enum CLRDataFollowStubOutFlag {
 |------------|-----------------|-----------------|
 |`CLRDATA_FOLLOW_STUB_INTERMEDIATE`|0x00000000|The result of following is an intermedidate stub.  Callers can call `FollowStub` or `FollowStub2` again to continue following the chain.|
 |`CLRDATA_FOLLOW_STUB_EXIT`|0x00000001|The result of following is the exit of the stub.  The returned address is the execution address at the end of the stub chain.|
+
 ## Remarks
 
 This enumeration lives inside the runtime and is not exposed through any headers or library files. To use it, define the enumeration as specified above.

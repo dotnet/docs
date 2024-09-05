@@ -38,14 +38,14 @@ HRESULT OnGcEvent(
 
 ## Remarks
 
-The provided method is part of the `IXCLRDataExceptionNotification3` interface and corresponds to the 15th slot of the virtual method table. 
+The provided method is part of the `IXCLRDataExceptionNotification3` interface and corresponds to the 15th slot of the virtual method table.
 
 ## Requirements
 
-**Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
-**Header:** None  
-**Library:** None  
-**.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).
+**Header:** None
+**Library:** None
+**.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]
 
 ## See also
 
@@ -54,4 +54,3 @@ The provided method is part of the `IXCLRDataExceptionNotification3` interface a
 - [GcEvtArgs Structure](gcevtargs-structure.md)
 - [IXCLRDataExceptionNotification Interface](ixclrdataexceptionnotification-interface.md)
 - [IXCLRDataExceptionNotification2 Interface](ixclrdataexceptionnotification2-interface.md)
-

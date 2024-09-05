@@ -129,6 +129,21 @@ If you use the [example app](#sample-app), run `dotnet publish -f net6.0 -r win-
 > [!NOTE]
 > You can reduce the total size of your deployment by enabling **globalization invariant mode**. This mode is useful for applications that are not globally aware and that can use the formatting conventions, casing conventions, and string comparison and sort order of the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture). For more information about **globalization invariant mode** and how to enable it, see [.NET Globalization Invariant Mode](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md).
 
+### Configure .NET install search behavior
+
+In .NET 9 and later versions, you can configure the .NET installation search paths of the published executable via the [`AppHostDotNetSearch`](../project-sdk//msbuild-props.md#apphostdotnetsearch) and [`AppHostRelativeDotNet`](../project-sdk//msbuild-props.md#apphostrelativedotnet) properties.
+
+`AppHostDotNetSearch` allows specifying one or more locations where the executable will look for a .NET installation:
+
+- `AppLocal`: app executable's folder
+- `AppRelative`: path relative to the app executable
+- `EnvironmentVariables`: value of [`DOTNET_ROOT[_<arch>]`](../tools/dotnet-environment-variables.md#dotnet_root-dotnet_rootx86-dotnet_root_x86-dotnet_root_x64) environment variables
+- `Global`: [registered](https://github.com/dotnet/designs/blob/main/accepted/2020/install-locations.md#global-install-to-custom-location) and [default](https://github.com/dotnet/designs/blob/main/accepted/2020/install-locations.md#global-install-to-default-location) global install locations
+
+`AppHostRelativeDotNet` specifies the path relative to the executable that will be searched when `AppHostDotNetSearch` contains `AppRelative`.
+
+For more information, see [`AppHostDotNetSearch`](../project-sdk//msbuild-props.md#apphostdotnetsearch), [`AppHostRelativeDotNet`](../project-sdk//msbuild-props.md#apphostrelativedotnet) and [install location options in apphost](https://github.com/dotnet/designs/blob/main/proposed/apphost-embed-install-location.md).
+
 ## Self-contained deployment
 
 When you publish a self-contained deployment (SCD), the .NET SDK creates a platform-specific executable. Publishing an SCD includes all required .NET files to run your app but it doesn't include the native dependencies of .NET (for example, for [.NET 6 on Linux](https://github.com/dotnet/core/blob/main/release-notes/6.0/linux-packages.md) or [.NET 8 on Linux](https://github.com/dotnet/core/blob/main/release-notes/8.0/linux-packages.md)). These dependencies must be present on the system before the app runs.

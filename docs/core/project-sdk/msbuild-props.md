@@ -1425,8 +1425,43 @@ The `RunWorkingDirectory` property defines the working directory for the applica
 
 The following MSBuild properties are documented in this section:
 
+- [AppHostDotNetSearch](#apphostdotnetsearch)
+- [AppHostRelativeDotNet](#apphostrelativedotnet)
 - [EnableComHosting](#enablecomhosting)
 - [EnableDynamicLoading](#enabledynamicloading)
+
+### AppHostDotNetSearch
+
+The `AppHostDotNetSearch` property configures how [the native executable](../deploying/index.md#produce-an-executable) produced for an application will search for a .NET installation. This property only impacts the executable produced on publish, not build.
+
+```xml
+<PropertyGroup>
+  <AppHostDotNetSearch>Global</AppHostDotNetSearch>
+</PropertyGroup>
+```
+
+The following table lists valid values. You can specify multiple values, separated by semi-colons.
+
+| Value | Meaning |
+| --- | --- |
+| `AppLocal` | App executable's folder |
+| `AppRelative` | Path relative to the app executable as specified by [AppHostRelativeDotNet](#apphostrelativedotnet) |
+| `EnvironmentVariables` | Value of [`DOTNET_ROOT[_<arch>]`](../tools/dotnet-environment-variables.md#dotnet_root-dotnet_rootx86-dotnet_root_x86-dotnet_root_x64) environment variables |
+| `Global` | [Registered](https://github.com/dotnet/designs/blob/main/accepted/2020/install-locations.md#global-install-to-custom-location) and [default](https://github.com/dotnet/designs/blob/main/accepted/2020/install-locations.md#global-install-to-default-location) global install locations |
+
+This property was introduced in .NET 9.
+
+### AppHostRelativeDotNet
+
+The `AppHostRelativeDotNet` property allows specifying a relative path for the app executable to look for the .NET installation when it's [configured to do so](#apphostdotnetsearch). Setting the `AppHostRelativeDotNet` property implies that [`AppHostDotNetSearch`](#apphostdotnetsearch) is `AppRelative`. This property only impacts the executable produced on publish, not build.
+
+```xml
+<PropertyGroup>
+  <AppHostRelativeDotNet>./relative/path/to/runtime</AppHostRelativeDotNet>
+</PropertyGroup>
+```
+
+This property was introduced in .NET 9.
 
 ### EnableComHosting
 

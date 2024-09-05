@@ -237,10 +237,11 @@ While this is a simple example, it demonstrates how the resilience strategies ca
 
 ## Known issues
 
+The following sections detail various known issues.
+
 ### Compatibility with the `Grpc.Net.ClientFactory` package
 
-If you're using `Grpc.Net.ClientFactory` version `2.63.0` or earlier, then enabling the standard resilience or hedging
-handlers for a gRPC client could cause a runtime exception. Specifically, consider the following code sample:
+If you're using `Grpc.Net.ClientFactory` version `2.63.0` or earlier, then enabling the standard resilience or hedging handlers for a gRPC client could cause a runtime exception. Specifically, consider the following code sample:
 
 ```csharp
 services
@@ -250,15 +251,13 @@ services
 
 The preceding code results in the following exception:
 
-```
+```Output
 System.InvalidOperationException: The ConfigureHttpClient method is not supported when creating gRPC clients. Unable to create client with name 'GreeterClient'.
 ```
 
 To resolve this issue, we recommend upgrading to `Grpc.Net.ClientFactory` version `2.64.0` or later.
 
-We've implemented a build time check that verifies if you're using `Grpc.Net.ClientFactory` version
-`2.63.0` or earlier, and if you are the check produces a compilation warning. You can suppress the
-warning by setting the following property in your project file:
+There's a build time check that verifies if you're using `Grpc.Net.ClientFactory` version `2.63.0` or earlier, and if you are the check produces a compilation warning. You can suppress the warning by setting the following property in your project file:
 
 ```xml
 <PropertyGroup>

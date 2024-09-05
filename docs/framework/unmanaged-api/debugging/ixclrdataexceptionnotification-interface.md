@@ -25,12 +25,12 @@ Caller provided interface which derives from IUnknown and includes callback meth
 
 ## Methods
 
-| Method                                                                                                                                               | Description                                                                                     |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| Method | Description |
+|--------|-------------|
 | [OnCodeGenerated](ixclrdataexceptionnotification-oncodegenerated-method.md)        | Callback made if the exception represents the generation of code for a particular method instance. |
 | [OnCodeDiscarded](ixclrdataexceptionnotification-oncodediscarded-method.md)        | Callback made if the exception represents discarding of code for a particular method instance. |
 | [OnProcessExecution](ixclrdataexceptionnotification-onprocessexecution-method.md)  | Callback made if the exception represents the process reaching a desired execution state. |
-| [OnTaskExecution](ixclrdataexceptionnotification-ontaskexecution-method-method.md) | Callback made if the exception represents a task reaching a desired execution state. |
+| [OnTaskExecution](ixclrdataexceptionnotification-ontaskexecution-method.md) | Callback made if the exception represents a task reaching a desired execution state. |
 | [OnModuleLoaded](ixclrdataexceptionnotification-onmoduleloaded-method.md)          | Callback made if the exception represents a module being loaded. |
 | [OnModuleUnloaded](ixclrdataexceptionnotification-onmoduleunloaded-method.md)      | Callback made if the exception represents a module being unloaded. |
 | [OnTypeLoaded](ixclrdataexceptionnotification-ontypeloaded-method.md)              | Callback made if the exception represents a particular type instance being loaded. |
@@ -42,10 +42,10 @@ This interface is implemented by users of the `IXCLRDataProcess::TranslateExcept
 
 ## Requirements
 
-**Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
-**Header:** None  
-**Library:** None  
-**.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).
+**Header:** None
+**Library:** None
+**.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]
 
 ## See also
 

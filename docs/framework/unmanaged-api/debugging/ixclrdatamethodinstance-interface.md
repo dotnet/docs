@@ -32,12 +32,12 @@ Provides methods for querying information about a method instance.
 | [Request](ixclrdatamethodinstance-request-method.md) | Requests to populate the buffer given with the method instance's data. |
 | [StartEnumExtents](ixclrdatamethodinstance-startenumextents-method.md) | Provides a handle for the enumeration of native code regions associated with the method. |
 | [EnumExtent](ixclrdatamethodinstance-enumextent-method.md) | Enumerates the native code regions associated with the method. |
-| [EndEnumExtents](ixclrdatamethodinstance-endenumextent-method.md) | Releases the resources used by internal iterators used during native code range enumeration. |
+| [EndEnumExtents](ixclrdatamethodinstance-endenumextents-method.md) | Releases the resources used by internal iterators used during native code range enumeration. |
 | [GetTokenAndScope](ixclrdatamethodinstance-gettokenandscope-method.md) | Gets the metadata token and scope of the method. |
 | [GetILOffsetsByAddress](ixclrdatamethodinstance-getiloffsetsbyaddress-method.md) | Gets the IL offset(s) corresponding to the given address for the method.. |
 | [GetAddressRangesByILOffset](ixclrdatamethodinstance-getaddressrangesbyiloffset-method.md) | Returns the native code address(es) which correspond to a given IL offset within the method. |
-| [GetDefinition](ixclrdatamethodinstance-getdefinition-method.md) | Gets the method definition which matches this method instance. |
-| [GetName](ixclrdatamethodinstance-getname-method.md) | Gets the fully qualified name for this method instance. |
+| [GetDefinition](ixclrdatamethodinstance-getdefinition.md) | Gets the method definition which matches this method instance. |
+| [GetName](ixclrdatamethodinstance-getname.md) | Gets the fully qualified name for this method instance. |
 
 ## Remarks
 
@@ -45,10 +45,10 @@ This interface lives inside the runtime and is not exposed through any headers o
 
 ## Requirements
 
-**Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
-**Header:** None  
-**Library:** None  
-**.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).
+**Header:** None
+**Library:** None
+**.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]
 
 ## See also
 

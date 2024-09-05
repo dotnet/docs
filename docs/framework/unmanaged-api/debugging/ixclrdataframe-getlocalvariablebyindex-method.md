@@ -58,14 +58,14 @@ The provided method is part of the `IXCLRDataFrame` interface and corresponds to
 
 ## Requirements
 
-**Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
-**Header:** None  
-**Library:** None  
-**.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).
+**Header:** None
+**Library:** None
+**.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]
 
 ## See also
 
 - [Debugging](index.md)
 - [IXCLRDataFrame Interface](ixclrdataframe-interface.md)
 - [IXCLRDataValue Interface](ixclrdatavalue-interface.md)
-- [IXCLRDataFrame::GetNumLocalVariables Method](ixclrdatavalue-getnumlocalvariables-method.md)
+- [IXCLRDataFrame::GetNumLocalVariables Method](ixclrdataframe-getnumlocalvariables-method.md)

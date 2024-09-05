@@ -71,13 +71,13 @@ The provided method is part of the `IXCLRDataTypeInstance` interface and corresp
 
 ## Requirements
 
-**Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
-**Header:** None  
-**Library:** None  
-**.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).
+**Header:** None
+**Library:** None
+**.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]
 
 ## See also
 
 - [Debugging](index.md)
 - [IXCLRDataTypeInstance Interface](ixclrdatatypeinstance-interface.md)
-- [IXCLRDataTypeInstance::GetNumStaticFields Method](ixclrdatatypeisntance-getnumstaticfields-method.md)
+- [IXCLRDataTypeInstance::GetNumStaticFields Method](ixclrdatatypeinstance-getnumstaticfields-method.md)

@@ -41,23 +41,23 @@ This section describes the unmanaged enumerations that the debugging API uses.
  A set of flags returned from [IXCLRDataProcess::FollowStub](ixclrdataprocess-followstub-method.md) and [IXCLRDataProcess::FollowStub2](ixclrdataprocess-followstub2-method.md) that indicate the result of following a stub.
 
  [CLRDataMethodCodeNotification Enumeration](clrdatamethodcodenotification-enumeration.md)\
- Indicates the type of notifications pertaining to method instance code which should be delivered.  Used in calls to [IXCLRDataProcess::SetCodeNotifications](ixclrdataprocess-setcodenotifications-method.md) and [IXCLRDataProcess::SetAllCodeNotifications](ixclrdataprocess-setallcodenotificaitons).
+ Indicates the type of notifications pertaining to method instance code that should be delivered. Used in calls to [IXCLRDataProcess::SetCodeNotifications](ixclrdataprocess-setcodenotifications-method.md) and [IXCLRDataProcess::SetAllCodeNotifications Method](ixclrdataprocess-setallcodenotifications-method.md).
 
  [CLRDataModuleExtentType Enumeration](clrdatamoduleextenttype-enumeration.md)\
  Indicates the type of memory region associated with a module via [IXCLRDataModule::EnumExtent](ixclrdatamodule-enumextent-method.md).
 
  [CLRDataOtherNotifyFlag Enumeration](clrdataothernotifyflag-enumeration.md)\
- Indicates the type of notifications which should be delivered.  Used in calls to [IXCLRDataProcess::SetOtherNotifications](ixclrdataprocess-setothernotifications-method.md).
+ Indicates the type of notifications that should be delivered. Used in calls to [IXCLRDataProcess::SetOtherNotificationFlags Method](ixclrdataprocess-setothernotificationflags-method.md).
 
  [CLRDataSimpleFrameType Enumeraiton](clrdatasimpleframetype-enumeration.md)\
  Describes a type of frame in the call stack from [IXCLRDataStackWalk::GetFrameType](ixclrdatastackwalk-getframetype-method.md).
- 
+
  [CLRDataSourceType Enumeration](clrdatasourcetype-enumeration.md)\
  Provides values that are used by the CLRDATA_IL_ADDRESS_MAP structure.
 
  [CLRDataValueFlag Enumeration](clrdatavalueflag-enumeration.md)\
  Indicates various attributes of a value.
- 
+
  [COR_PUB_ENUMPROCESS Enumeration](cor-pub-enumprocess-enumeration.md)\
  Identifies the type of process to be enumerated.
 

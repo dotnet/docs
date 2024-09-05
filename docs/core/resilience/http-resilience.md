@@ -234,3 +234,34 @@ The preceding diagram depicts:
   - If the response is unsuccessful (HTTP non-200), the resilience pipeline employs the configured resilience strategies.
 
 While this is a simple example, it demonstrates how the resilience strategies can be used to handle transient errors. For more information, see [Polly docs: Strategies](https://www.pollydocs.org/strategies).
+
+## Known issues
+
+### Compatibility with the `Grpc.Net.ClientFactory` package
+
+If you're using `Grpc.Net.ClientFactory` version `2.63.0` or earlier, then enabling the standard resilience or hedging
+handlers for a gRPC client could cause a runtime exception. Specifically, consider the following code sample:
+
+```csharp
+services
+    .AddGrpcClient<Greeter.GreeterClient>()
+    .AddStandardResilienceHandler();
+```
+
+The preceding code results in the following exception:
+
+```
+System.InvalidOperationException: The ConfigureHttpClient method is not supported when creating gRPC clients. Unable to create client with name 'GreeterClient'.
+```
+
+To resolve this issue, we recommend upgrading to `Grpc.Net.ClientFactory` version `2.64.0` or later.
+
+We've implemented a build time check that verifies if you're using `Grpc.Net.ClientFactory` version
+`2.63.0` or earlier, and if you are the check produces a compilation warning. You can suppress the
+warning by setting the following property in your project file:
+
+```xml
+<PropertyGroup>
+  <SuppressCheckGrpcNetClientFactoryVersion>true</SuppressCheckGrpcNetClientFactoryVersion>
+</PropertyGroup>
+```

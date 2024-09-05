@@ -32,6 +32,8 @@ items:
                 href: core-libraries/9.0/type-instance.md
               - name: "`Equals`/`GetHashCode` throw for `InlineArrayAttribute` types"
                 href: core-libraries/9.0/inlinearrayattribute.md
+              - name: FromKeyedServicesAttribute no longer injects non-keyed parameter
+                href: core-libraries/9.0/non-keyed-params.md
               - name: IncrementingPollingCounter initial callback is asynchronous
                 href: core-libraries/9.0/async-callback.md
               - name: Inline array struct size limit is enforced
@@ -1236,6 +1238,8 @@ items:
                 href: core-libraries/9.0/type-instance.md
               - name: "`Equals`/`GetHashCode` throw for `InlineArrayAttribute` types"
                 href: core-libraries/9.0/inlinearrayattribute.md
+              - name: FromKeyedServicesAttribute no longer injects non-keyed parameter
+                href: core-libraries/9.0/non-keyed-params.md
               - name: IncrementingPollingCounter initial callback is asynchronous
                 href: core-libraries/9.0/async-callback.md
               - name: Inline array struct size limit is enforced

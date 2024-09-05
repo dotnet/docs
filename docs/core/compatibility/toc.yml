@@ -56,6 +56,8 @@ items:
         href: jit/9.0/fp-to-integer.md
     - name: Networking
       items:
+      - name: HttpClientFactory logging redacts header values by default
+        href: networking/9.0/redact-headers.md
       - name: HttpListenerRequest.UserAgent is nullable
         href: networking/9.0/useragent-nullable.md
     - name: SDK and MSBuild
@@ -1642,6 +1644,8 @@ items:
     items:
     - name: .NET 9
       items:
+      - name: HttpClientFactory logging redacts header values by default
+        href: networking/9.0/redact-headers.md
       - name: HttpListenerRequest.UserAgent is nullable
         href: networking/9.0/useragent-nullable.md
     - name: .NET 8

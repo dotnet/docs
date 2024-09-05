@@ -6,7 +6,7 @@ ms.date: 08/02/2024
 author: mckennabarlow
 ms.author: mcbarlow
 ---
-# How to customize analysis through run configs
+# How to customize analysis using run configs
 
 The Azure Migrate application and code assessment tool supports custom analysis using run configs. Before the tool runs an analysis, it discovers all available rules and analyzers and then uses the ones that match current project's traits. However, some results might be too noisy for some applications.
 
@@ -20,16 +20,16 @@ To control/scope rules and/or analyzers used, you can provide a JSON run configu
 
 ## How to provide run config
 
-## [CLI](#tab/cli)
+## [.NET CLI](#tab/cli)
 
 The Azure Migrate application and code assessment tool enables you to [Analyze applications with the .NET CLI](dotnet-cli.md). While using the CLI, there are two options to provide a run config:
 
-- **Interactive mode**: When the CLI asks if you want to provide run config, select `Yes` and then enter the path to the run config file.
-- **Non-interactive mode**: Provide the `-c` or `--config` argument, which allows you to provide the path to the run config json.
+- **Interactive mode**: When the CLI asks if you want to provide run config, select `Yes` and then provide the path to the run config file.
+- **Non-interactive mode**: Provide the `-c` or `--config` argument, which allows you to provide the path to the run config JSON
 
 ## [Visual Studio](#tab/visual-studio)
 
-The Azure Migrate application and code assessment tool enables you to [Analyze applications with Visual Studio](visual-studio.md). During the step that allows you to edit analysis settings, select the **Browse** button to locate and select a run config json file. After analysis is done, run configuration is stored in the report. The configuration is re-used if the user reopens the report and refreshes.
+The Azure Migrate application and code assessment tool enables you to [Analyze applications with Visual Studio](visual-studio.md). During the step that allows you to edit analysis settings, select the **Browse** button to locate and select a run config JSON file. After analysis is done, run configuration is stored in the report. The configuration is re-used if the user reopens the report and refreshes.
 
 ---
 
@@ -94,14 +94,13 @@ Consider the following sample run config:
 
 ### Add new rule
 
-```
+```json
 {
   "rules": [
     {
       "id": "Category.NumericId",
       "severity": "potential",
       "effort": 5
-      ...
     }
   ]
 }
@@ -109,7 +108,7 @@ Consider the following sample run config:
 
 ### Modify existing rule
 
-```
+```json
 {
   "rules": [
     {
@@ -122,7 +121,7 @@ Consider the following sample run config:
 
 ### Disable existing rule
 
-```
+```json
 {
   "rules": [
     {
@@ -135,7 +134,7 @@ Consider the following sample run config:
 
 ### Disable existing analyzer
 
-```
+```json
 {
   "analyzers": [
     {
@@ -148,7 +147,7 @@ Consider the following sample run config:
 
 ### Add new analyzer for some existing or new rule
 
-```
+```json
 {
   "analyzers": [
     {

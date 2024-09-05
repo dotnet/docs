@@ -1,7 +1,7 @@
 ---
 title: "How to serialize JSON in C#"
 description: "Learn how to use the System.Text.Json namespace to serialize to JSON in .NET. Includes sample code."
-ms.date: 10/19/2023
+ms.date: 9/04/2024
 no-loc: [System.Text.Json, Newtonsoft.Json]
 dev_langs:
   - "csharp"
@@ -12,6 +12,8 @@ helpviewer_keywords:
   - "serialization"
   - "objects, serializing"
 ms.topic: how-to
+ms.collection: ce-skilling-ai-copilot
+ms.custom: vs-copilot-horizontal
 adobe-target: true
 ---
 
@@ -19,7 +21,12 @@ adobe-target: true
 
 This article shows how to use the <xref:System.Text.Json?displayProperty=fullName> namespace to serialize to JavaScript Object Notation (JSON). If you're porting existing code from `Newtonsoft.Json`, see [How to migrate to `System.Text.Json`](migrate-from-newtonsoft.md).
 
+>[!Tip]
+>You can use AI assistance to [serialize to JSON with GitHub Copilot](#use-github-copilot-to-serialize-to-json).
+
 To write JSON to a string or to a file, call the <xref:System.Text.Json.JsonSerializer.Serialize%2A?displayProperty=nameWithType> method.
+
+## Serialization examples
 
 The following example creates JSON as a string:
 
@@ -42,6 +49,8 @@ The preceding examples use type inference for the type being serialized. An over
 
 :::code language="csharp" source="snippets/how-to/csharp/SerializeWithGenericParameter.cs" highlight="23":::
 :::code language="vb" source="snippets/how-to/vb/RoundtripToString.vb" id="SerializeWithGenericParameter":::
+
+You can also use GitHub Copilot to generate serialization code for you. For instructions, see the [Use GitHub Copilot](#use-github-copilot-to-serialize-to-json) section in this article.
 
 ## Serialization behavior
 
@@ -97,3 +106,72 @@ To pretty-print the JSON output, set <xref:System.Text.Json.JsonSerializerOption
 
 > [!TIP]
 > If you use `JsonSerializerOptions` repeatedly with the same options, don't create a new `JsonSerializerOptions` instance each time you use it. Reuse the same instance for every call. For more information, see [Reuse JsonSerializerOptions instances](configure-options.md#reuse-jsonserializeroptions-instances).
+
+## Use GitHub Copilot to serialize to JSON
+
+You can use GitHub Copilot in your IDE to generate code that uses `System.Text.Json` to serialize to JSON.
+
+If you're using [Visual Studio 2022 version 17.8 or later](/visualstudio/releases/2022/release-notes), you can try the AI-driven [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states) to generate code that uses `System.Text.Json` to serialize to JSON. Submit your question as a prompt in the Copilot chat window, as in the following example. You can also submit prompts using [inline chat](/visualstudio/ide/visual-studio-github-copilot-chat#ask-questions-in-the-inline-chat-view) in the editor window itself.
+
+>[!NOTE]
+>GitHub Copilot is powered by AI, so surprises and mistakes are possible. Make sure to verify any generated code or suggestions. For more information about the general use of GitHub Copilot, product impact, human oversight, and privacy, see [GitHub Copilot FAQs](https://github.com/features/copilot#faq).
+
+**Example prompt for Copilot Chat**
+
+```
+Generate code to use `System.Text.Json` to serialize an object to a JSON string. The object contains the following fields: FirstName (string), Lastname (string), Age (int). Provide example output.
+```
+
+You can customize the prompt to use object fields that suit your requirements.
+
+You can use chat features, such as [slash commands, references to files, methods, or classes, and threads](/visualstudio/ide/copilot-chat-context), to set intent and get better answers with scoped context. For an existing class in a project open in the IDE, you can prompt GitHub Copilot with `/generate code to serialize #Classname in #Filename to JSON`
+
+**Example Copilot Chat response**
+
+```output
+Sure! Below is an example of how to use System.Text.Json to serialize an object with the specified fields to a JSON string in C#:
+
+using System;
+using System.Text.Json;
+
+public class Person
+{
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+    public int Age { get; set; }
+}
+
+public class Program
+{
+    public static void Main()
+    {
+        var person = new Person
+        {
+            FirstName = "John",
+            LastName = "Doe",
+            Age = 30
+        };
+
+        string jsonString = JsonSerializer.Serialize(person);
+        Console.WriteLine(jsonString);
+    }
+}
+
+**Example Output**
+{"FirstName":"John","LastName":"Doe","Age":30}
+
+This code defines a `Person` class, creates an instance of it, and then serializes it to a JSON string using `JsonSerializer.Serialize`. The resulting JSON string is then printed to the console.
+```
+
+When Copilot returns a code block, the response includes options to copy the code, insert the code into a new file, or preview the code output.
+
+> [!NOTE]
+> Your results might be different from what's shown in the example responses. AI models are non-deterministic, which means that they can return different responses when asked the same question. This might be due to additional learning and adaption over time, language variation, changes in context, such as your chat history, and more.
+
+:::image type="content" source="./media/serialize-json-using-github-copilot.gif" alt-text="Animated screenshot that shows using GitHub Copilot Chat in Visual Studio to serialize an object to a JSON string." lightbox="./media/serialize-json-using-github-copilot.gif":::
+
+## Related content
+
+* [GitHub Copilot Trust Center](https://resources.github.com/copilot-trust-center/)
+* [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states)
+* [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview)

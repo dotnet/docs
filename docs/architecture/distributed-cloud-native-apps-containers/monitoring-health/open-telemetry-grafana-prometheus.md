@@ -8,8 +8,6 @@ ms.date: 04/06/2022
 
 [!INCLUDE [download-alert](includes/download-alert.md)]
 
-!TODO show this manual approach to OTel then show how it's for free in Aspire and dashboards.
-
 OpenTelemetry is an open-source observability framework. OpenTelemetry standardizes the way telemetry data is gathered and shared with back-end platforms. It provides a common format of instrumentation across all your microservices. You don't have to reinstrument code or install different proprietary agents every time a back-end platform changes.
 
 OpenTelemetry helps you to monitor all three pillars of observability: logs, metrics, and traces.

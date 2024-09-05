@@ -18,14 +18,14 @@ To control/scope rules and/or analyzers used, you can provide a JSON run configu
 - Add new rules.
 - Add new analyzers for existing or new rules.
 
-## How to provide run config
+## How to provide a JSON run configuration
 
 ## [.NET CLI](#tab/cli)
 
-The Azure Migrate application and code assessment tool enables you to [Analyze applications with the .NET CLI](dotnet-cli.md). While using the CLI, there are two options to provide a run config:
+The Azure Migrate application and code assessment tool enables you to [Analyze applications with the .NET CLI](dotnet-cli.md). When using the CLI, there are two options to provide a run config:
 
-- **Interactive mode**: When the CLI asks if you want to provide run config, select `Yes` and then provide the path to the run config file.
-- **Non-interactive mode**: Provide the `-c` or `--config` argument, which allows you to provide the path to the run config JSON
+- **Interactive mode**: The CLI asks if you want to provide run config. Select `Yes` and then provide the path to the run config file.
+- **Non-interactive mode**: Provide the `-c` or `--config` argument, which allows you to provide the path to the run config JSON.
 
 ## [Visual Studio](#tab/visual-studio)
 

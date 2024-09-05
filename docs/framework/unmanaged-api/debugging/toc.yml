@@ -1431,50 +1431,298 @@ items:
           href: isosdacinterface-getmethoddescptrfromip-method.md
         - name: GetModuleData
           href: isosdacinterface-getmoduledata-method.md
+    - name: IXCLRDataAppDomain interface
+      href: ixclrdataappdomain-interface.md
+    - name: IXCLRDataExceptionNotification interface
+      href: ixclrdataexceptionnotification-interface.md
+      items:
+        - name: OnCodeDiscarded method
+          href: ixclrdataexceptionnotification-oncodediscarded-method.md
+        - name: OnCodeGenerated method
+          href: ixclrdataexceptionnotification-oncodegenerated-method.md
+        - name: OnModuleLoaded method
+          href: ixclrdataexceptionnotification-onmoduleloaded-method.md
+        - name: OnProcessExecution method
+          href: ixclrdataexceptionnotification-onprocessexecution-method.md
+        - name: OnTaskExecution method
+          href: ixclrdataexceptionnotification-ontaskexecution-method.md
+        - name: OnTypeLoaded method
+          href: ixclrdataexceptionnotification-ontypeloaded-method.md
+    - name: IXCLRDataExceptionNotification2 interface
+      href: ixclrdataexceptionnotification2-interface.md
+      items:
+        - name: OnAppDomainLoaded method
+          href: ixclrdataexceptionnotification2-onappdomainloaded-method.md
+        - name: OnAppDomainUnloaded method
+          href: ixclrdataexceptionnotification2-onappdomainunloaded-method.md
+        - name: OnException method
+          href: ixclrdataexceptionnotification2-onexception-method.md
+    - name: IXCLRDataExceptionNotification3 interface
+      href: ixclrdataexceptionnotification3-interface.md
+      items:
+        - name: OnGcEvent method
+          href: ixclrdataexceptionnotification3-ongcevent-method.md
+    - name: IXCLRDataExceptionNotification4 interface
+      href: ixclrdataexceptionnotification4-interface.md
+      items:
+        - name: ExceptionCatcherEnter method
+          href: ixclrdataexceptionnotification4-exceptioncatcherenter-method.md
+    - name: IXCLRDataExceptionNotification5 interface
+      href: ixclrdataexceptionnotification5-interface.md
+      items:
+        - name: OnCodeGenerated2 method
+          href: ixclrdataexceptionnotification5-oncodegenerated2-method.md
+    - name: IXCLRDataExceptionState interface
+      href: ixclrdataexceptionstate-interface.md
+      items:
+        - name: GetManagedObject method
+          href: ixclrdataexceptionstate-getmanagedobject-method.md
+        - name: GetPrevious method
+          href: ixclrdataexceptionstate-getprevious-method.md
+        - name: GetString method
+          href: ixclrdataexceptionstate-getstring-method.md
+        - name: IsSameState method
+          href: ixclrdataexceptionstate-issamestate-method.md
+        - name: IsSameState2 method
+          href: ixclrdataexceptionstate-issamestate2-method.md
+        - name: Request method
+          href: ixclrdataexceptionstate-request-method.md
+    - name: IXCLRDataFrame interface
+      href: ixclrdatamethoddefinition-interface.md
+      items:
+        - name: GetArgumentByIndex method
+          href: ixclrdataexceptionstate-getargumentbyindex-method.md
+        - name: GetLocalVariableByIndex method
+          href: ixclrdataexceptionstate-getlocalvariablebyindex-method.md
+        - name: GetMethodInstance method
+          href: ixclrdataexceptionstate-getmethodinstance-method.md
+        - name: GetNumArguments method
+          href: ixclrdataexceptionstate-getnumarguments-method.md
+        - name: GetNumLocalVariables method
+          href: ixclrdataexceptionstate-getnumlocalvariables-method.md
     - name: IXCLRDataMethodDefinition interface
       href: ixclrdatamethoddefinition-interface.md
       items:
-        - name: StartEnumInstances
-          href: ixclrdatamethoddefinition-startenuminstances-method.md
-        - name: EnumInstance
-          href: ixclrdatamethoddefinition-enuminstance-method.md
+        - name: EndEnumExtents
+          href: ixclrdatamethoddefinition-endenumextents-method.md
         - name: EndEnumInstances
           href: ixclrdatamethoddefinition-endenuminstances-method.md
+        - name: EnumExtent
+          href: ixclrdatamethoddefinition-enumextent-method.md
+        - name: EnumInstance
+          href: ixclrdatamethoddefinition-enuminstance-method.md
+        - name: GetRepresentativeEntryAddress
+          href: ixclrdatamethoddefinition-getrepresentativeentryaddress-method.md
+        - name: GetTokenAndScope
+          href: ixclrdatamethoddefinition-gettokenandscope-method.md
+        - name: Request
+          href: ixclrdatamethoddefinition-request-method.md
+        - name: StartEnumExtents
+          href: ixclrdatamethoddefinition-startenumextents-method.md
+        - name: StartEnumInstances
+          href: ixclrdatamethoddefinition-startenuminstances-method.md
     - name: IXCLRDataMethodInstance interface
       href: ixclrdatamethodinstance-interface.md
       items:
+        - name: EndEnumExtents
+          href: ixclrdatamethodinstance-endenumextents-method.md
+        - name: EnumExtent
+          href: ixclrdatamethodinstance-enumextent-method.md
+        - name: GetAddressRangesByILOffset
+          href: ixclrdatamethodinstance-getaddressrangesbyiloffset-method.md
+        - name: GetDefinition
+          href: ixclrdatamethodinstance-getdefinition-method.md
         - name: GetILAddressMap
           href: ixclrdatamethodinstance-getiladdressmap-method.md
+        - name: GetILOffsetsByAddress
+          href: ixclrdatamethodinstance-getiloffsetsbyaddress-method.md
+        - name: GetName
+          href: ixclrdatamethodinstance-getname-method.md
         - name: GetRepresentativeEntryAddress
           href: ixclrdatamethodinstance-getrepresentativeentryaddress-method.md
+        - name: GetTokenAndScope
+          href: ixclrdatamethodinstance-gettokenandscope-method.md
+        - name: Request
+          href: ixclrdatamethodinstance-request-method.md
+        - name: StartEnumExtents
+          href: ixclrdatamethodinstance-startenumextents-method.md
     - name: IXCLRDataModule interface
       href: ixclrdatamodule-interface.md
       items:
+        - name: EndEnumExtents
+          href: ixclrdatamodule-endenumextents-method.md
+        - name: EndEnumTypeDefinitions
+          href: ixclrdatamodule-endenumtypedefinitions-method.md
+        - name: EndMethodInstancesByName
+          href: ixclrdatamodule-endmethodinstancesbyname-method.md
+        - name: EnumExtent
+          href: ixclrdatamodule-enumextent-method.md
+        - name: EnumMethodInstanceByName
+          href: ixclrdatamodule-enummethodinstancebyname-method.md
+        - name: EnumTypeDefinition
+          href: ixclrdatamodule-enumtypedefinition-method.md
+        - name: GetFileName
+          href: ixclrdatamodule-getfilename-method.md
         - name: GetMethodDefinitionByToken
           href: ixclrdatamodule-getmethoddefinitionbytoken-method.md
-        - name: Request
-          href: ixclrdatamodule-request-method.md
         - name: GetVersionId
           href: ixclrdatamodule-getversionid-method.md
+        - name: Request
+          href: ixclrdatamodule-request-method.md
+        - name: StartEnumExtents
+          href: ixclrdatamodule-startenumextents-method.md
+        - name: StartEnumMethodInstancesByName
+          href: ixclrdatamodule-startenummethodinstancesbyname-method.md
+        - name: StartEnumTypeDefinitions
+          href: ixclrdatamodule-startenumtypedefinitions-method.md
     - name: IXCLRDataProcess interface
       href: ixclrdataprocess-interface.md
       items:
-        - name: GetRuntimeNameByAddress
-          href: ixclrdataprocess-getruntimenamebyaddress-method.md
         - name: GetAppDomainByUniqueId
           href: ixclrdataprocess-getappdomainbyuniqueid-method.md
-        - name: StartEnumModules
-          href: ixclrdataprocess-startenummodules-method.md
-        - name: EnumModule
-          href: ixclrdataprocess-enummodule-method.md
+        - name: GetRuntimeNameByAddress
+          href: ixclrdataprocess-getruntimenamebyaddress-method.md
+        - name: EndEnumAppDomains
+          href: ixclrdataprocess-endenumappdomains-method.md
+        - name: EndEnumMethodDefinitionsByAddress
+          href: ixclrdataprocess-endenummethoddefinitionsbyaddress-method.md
         - name: EndEnumModules
           href: ixclrdataprocess-endenummodules-method.md
-        - name: StartEnumMethodInstancesByAddress
-          href: ixclrdataprocess-startenummethodinstancesbyaddress-method.md
         - name: EnumMethodInstanceByAddress
           href: ixclrdataprocess-enummethodinstancebyaddress-method.md
         - name: EndEnumMethodInstancesByAddress
           href: ixclrdataprocess-endenummethodinstancesbyaddress-method.md
+        - name: EnumAppDomain
+          href: ixclrdataprocess-enumappdomain-method.md
+        - name: EnumMethodDefinitionsByAddress
+          href: ixclrdataprocess-enummethoddefinitionsbyaddress-method.md
+        - name: EnumModule
+          href: ixclrdataprocess-enummodule-method.md
+        - name: FollowStub
+          href: ixclrdataprocess-followstub-method.md
+        - name: FollowStub2
+          href: ixclrdataprocess-followstub2-method.md
+        - name: GetAddressType
+          href: ixclrdataprocess-getaddresstype-method.md
+        - name: GetModuleByAddress
+          href: ixclrdataprocess-getmodulebyaddress-method.md
+        - name: GetTaskByOSThreadID
+          href: ixclrdataprocess-gettaskbyosthreadid-method.md
+        - name: GetTaskByUniqueID
+          href: ixclrdataprocess-gettaskbyuniqueid-method.md
+        - name: Request
+          href: ixclrdataprocess-request-method.md
+        - name: SetAllCodeNotifications
+          href: ixclrdataprocess-setallcodenotifications-method.md
+        - name: SetCodeNotifications
+          href: ixclrdataprocess-setcodenotifications-method.md
+        - name: SetOtherNotificationFlags
+          href: ixclrdataprocess-setothernotificationflags-method.md
+        - name: StartEnumAppDomains
+          href: ixclrdataprocess-startenumappdomains-method.md
+        - name: StartEnumMethodDefinitionsByAddress
+          href: ixclrdataprocess-startenummethoddefinitionsbyaddress-method.md
+        - name: StartEnumMethodInstancesByAddress
+          href: ixclrdataprocess-startenummethodinstancesbyaddress-method.md
+        - name: StartEnumModules
+          href: ixclrdataprocess-startenummodules-method.md
+        - name: TranslateExceptionRecordToNotification
+          href: ixclrdataprocess-translateexceptionrecordtonotification-method.md
+    - name: IXCLRDataStackWalk interface
+      href: ixclrdatastackwalk-interface.md
+      items:
+        - name: GetFrame method
+          href: ixclrdatastackwalk-getframe-method.md
+        - name: GetFrameType method
+          href: ixclrdatastackwalk-getframetype-method.md
+        - name: Next method
+          href: ixclrdatastackwalk-next-method.md
+        - name: Request method
+          href: ixclrdatastackwalk-request-method.md
+        - name: SetContext method
+          href: ixclrdatastackwalk-setcontext-method.md
+    - name: IXCLRDataTask interface
+      href: ixclrdatatask-interface.md
+      items:
+        - name: CreateStackWalk method
+          href: ixclrdatatask-createstackwalk-method.md
+        - name: GetCurrentAppDomain method
+          href: ixclrdatatask-getcurrentappdomain-method.md
+        - name: GetCurrentExceptionState method
+          href: ixclrdatatask-getcurrentexceptionstate-method.md
+        - name: GetLastExceptionState method
+          href: ixclrdatatask-getlastexceptionstate-method.md
+    - name: IXCLRDataTypeDefinition interface
+      href: ixclrdatatypedefinition-interface.md
+      items:
+        - name: EndEnumMethodDefinitions method
+          href: ixclrdatatypedefinition-endenummethoddefinitions-method.md
+        - name: EnumMethodDefinition method
+          href: ixclrdatatypedefinition-enummethoddefinition-method.md
+        - name: GetCoreElementType method
+          href: ixclrdatatypedefinition-getcoreelementtype-method.md
+        - name: GetName method
+          href: ixclrdatatypedefinition-getname-method.md
+        - name: GetTokenAndScope method
+          href: ixclrdatatypedefinition-gettokenandscope-method.md
+        - name: StartEnumMethodDefinitions method
+          href: ixclrdatatypedefinition-startenummethoddefinitions-method.md
+    - name: IXCLRDataTypeInstance interface
+      href: ixclrdatatypeinstance-interface.md
+      items:
+        - name: EndEnumMethodInstances method
+          href: ixclrdatatypeinstance-endenummethodinstances-method.md
+        - name: GetDefinition method
+          href: ixclrdatatypeinstance-getdefinition-method.md
+        - name: GetName method
+          href: ixclrdatatypeinstance-getname-method.md
+        - name: GetNumStaticFields method
+          href: ixclrdatatypeinstance-getnumstaticfields-method.md
+        - name: GetStaticFieldByIndex method
+          href: ixclrdatatypeinstance-getstaticfieldbyindex-method.md
+        - name: StartEnumMethodInstances method
+          href: ixclrdatatypeinstance-startenummethodinstances-method.md
+    - name: IXCLRDataValue interface
+      href: ixclrdatavalue-interface.md
+      items:
+        - name: EndEnumFields method
+          href: ixclrdatavalue-endenumfields-method.md
+        - name: EndEnumFieldsByName method
+          href: ixclrdatavalue-endenumfieldsbyname-method.md
+        - name: EnumField method
+          href: ixclrdatavalue-enumfield-method.md
+        - name: EnumFieldByName method
+          href: ixclrdatavalue-enumfieldbyname-method.md
+        - name: GetAddress method
+          href: ixclrdatavalue-getaddress-method.md
+        - name: GetArrayElement method
+          href: ixclrdatavalue-getarrayelement-method.md
+        - name: GetArrayProperties method
+          href: ixclrdatavalue-getarrayproperties-method.md
+        - name: GetAssociatedType method
+          href: ixclrdatavalue-getassociatedtype-method.md
+        - name: GetAssociatedValue method
+          href: ixclrdatavalue-getassociatedvalue-method.md
+        - name: GetBytes method
+          href: ixclrdatavalue-getbytes-method.md
+        - name: GetFlags method
+          href: ixclrdatavalue-getflags-method.md
+        - name: GetNumFields2 method
+          href: ixclrdatavalue-getnumfields2-method.md
+        - name: GetNumLocations method
+          href: ixclrdatavalue-getnumlocations-method.md
+        - name: GetSize method
+          href: ixclrdatavalue-getsize-method.md
+        - name: GetString method
+          href: ixclrdatavalue-getstring-method.md
+        - name: GetType method
+          href: ixclrdatavalue-gettype-method.md
+        - name: Request method
+          href: ixclrdatavalue-request-method.md
+        - name: StartEnumFields method
+          href: ixclrdatavalue-startenumfields-method.md
+        - name: StartEnumFieldsByName method
+          href: ixclrdatavalue-startenumfieldsbyname-method.md
 - name: Debugging global static functions
   href: debugging-global-static-functions.md
   items:
@@ -1493,12 +1741,36 @@ items:
 - name: Debugging enumerations
   href: debugging-enumerations.md
   items:
-    - name: CLR_DEBUGGING_PROCESS_FLAGS enumeration
-      href: clr-debugging-process-flags-enumeration.md
+    - name: CLRDataAddressType enumeration
+      href: clrdataaddresstype-enumeration.md
+    - name: CLRDataByNameFlag enumeration
+      href: clrdatabynameflag-enumeration.md
+    - name: CLRDataDetailedFrameType enumeration
+      href: clrdatadetailedframetype-enumeration.md
     - name: CLRDataEnumMemoryFlags enumeration
       href: clrdataenummemoryflags-enumeration.md
+    - name: CLRDataExceptionsSameFlag enumeration
+      href: clrdataexceptionssameflag-enumeration.md
+    - name: CLRDataFieldFlag enumeration
+      href: clrdatafieldflag-enumeration.md
+    - name: CLRDataFollowStubInFlag enumeration
+      href: clrdatafollowstubinflag-enumeration.md
+    - name: CLRDataFollowStubOutFlag enumeration
+      href: clrdatafollowstuboutflag-enumeration.md
+    - name: CLRDataMethodCodeNotification enumeration
+      href: clrdatamethodcodenotification-enumeration.md
+    - name: CLRDataModuleExtentType enumeration
+      href: clrdatamoduleextenttype-enumeration.md
+    - name: CLRDataOtherNotifyingFlag enumeration
+      href: clrdataothernotifyingflag-enumeration.md
+    - name: CLRDataSimpleFrameType enumeration
+      href: clrdatasimpleframetype-enumeration.md
     - name: ClrDataSourceType enumeration
       href: clrdatasourcetype-enumeration.md
+    - name: ClrDataValueFlag enumeration
+      href: clrdatavalueflag-enumeration.md
+    - name: CLR_DEBUGGING_PROCESS_FLAGS enumeration
+      href: clr-debugging-process-flags-enumeration.md
     - name: COR_PUB_ENUMPROCESS enumeration
       href: cor-pub-enumprocess-enumeration.md
     - name: CorDebugBlockingReason enumeration
@@ -1580,6 +1852,10 @@ items:
   items:
     - name: CLRDATA_ADDRESS_RANGE structure
       href: clrdata-address-range-structure.md
+    - name: CLRDATA_METHDEF_EXTENT Structure
+      href: clrdata-methdef-extent-structure.md
+    - name: CLRDATA_MODULE_EXTENT Structure
+      href: clrdata-module-extent-structure.md
     - name: CLRDATA_IL_ADDRESS_MAP structure
       href: clrdata-il-address-map-structure.md
     - name: CLR_DEBUGGING_VERSION structure
@@ -1631,6 +1907,8 @@ items:
       href: dacpmoduledata-structure.md
     - name: DacpReJitData structure
       href: dacprejitdata-structure.md
+    - name: GcEventArgs structure
+      href: gceventargs-structure.md
     - name: StackTrace_SimpleContext structure
       href: stacktrace-simplecontext-structure.md
 - name: .NET Core debugging

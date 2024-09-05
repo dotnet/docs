@@ -22,30 +22,30 @@ This article assumes you have a working familiarity with cryptography in .NET. F
 
 All hash algorithm and hash-based message authentication (HMAC) classes, including the `*Managed` classes, defer to the OS libraries with the exception of .NET on Browser WASM. In Browser WASM, SHA-1, SHA-2-256, SHA-2-384, SHA-2-512 and the HMAC equivalents are implemented using managed code.
 
-|Algorithm     |Windows                |Linux           |macOS|iOS, tvOS, MacCatalyst|Android|Browser|
-|--------------|-----------------------|----------------|-----|----------------------|-------|-------|
-|MD5           |✔️                     |✔️              |✔️   |✔️                    |✔️     |❌      |
-|SHA-1         |✔️                     |✔️              |✔️   |✔️                    |✔️     |✔️     |
-|SHA-2-256     |✔️                     |✔️              |✔️   |✔️                    |✔️     |✔️     |
-|SHA-2-384     |✔️                     |✔️              |✔️   |✔️                    |✔️     |✔️     |
-|SHA-2-512     |✔️                     |✔️              |✔️   |✔️                    |✔️     |✔️     |
-|SHA-3-256<sup>1</sup> |Windows 11 Build 25324+|OpenSSL 1.1.1+  |❌    |❌                     |❌      |❌      |
-|SHA-3-384<sup>1</sup> |Windows 11 Build 25324+|OpenSSL 1.1.1+  |❌    |❌                     |❌      |❌      |
-|SHA-3-512<sup>1</sup> |Windows 11 Build 25324+|OpenSSL 1.1.1+  |❌    |❌                     |❌      |❌      |
-|SHAKE-128<sup>1</sup> |Windows 11 Build 25324+|OpenSSL 1.1.1+<sup>3</sup> |❌    |❌                     |❌      |❌      |
-|SHAKE-256<sup>1</sup> |Windows 11 Build 25324+|OpenSSL 1.1.1+<sup>3</sup> |❌    |❌                     |❌      |❌      |
-|HMAC-MD5      |✔️                     |✔️              |✔️   |✔️                    |✔️     |❌      |
-|HMAC-SHA-1    |✔️                     |✔️              |✔️   |✔️                    |✔️     |✔️     |
-|HMAC-SHA-2-256|✔️                     |✔️              |✔️   |✔️                    |✔️     |✔️     |
-|HMAC-SHA-2-384|✔️                     |✔️              |✔️   |✔️                    |✔️     |✔️     |
-|HMAC-SHA-2-512|✔️                     |✔️              |✔️   |✔️                    |✔️     |✔️     |
-|HMAC-SHA-3-256<sup>1</sup> |Windows 11 Build 25324+|OpenSSL 1.1.1+  |❌    |❌                     |❌      |❌      |
-|HMAC-SHA-3-384<sup>1</sup> |Windows 11 Build 25324+|OpenSSL 1.1.1+  |❌    |❌                     |❌      |❌      |
-|HMAC-SHA-3-512<sup>1</sup> |Windows 11 Build 25324+|OpenSSL 1.1.1+  |❌    |❌                     |❌      |❌      |
-|KMAC-128<sup>2</sup> |Windows 11 Build 26016+|OpenSSL 3.0+    |❌    |❌                     |❌      |❌      |
-|KMAC-256<sup>2</sup> |Windows 11 Build 26016+|OpenSSL 3.0+    |❌    |❌                     |❌      |❌      |
-|KMAC-XOF-128<sup>2</sup> |Windows 11 Build 26016+|OpenSSL 3.0+    |❌    |❌                     |❌      |❌      |
-|KMAC-XOF-256<sup>2</sup> |Windows 11 Build 26016+|OpenSSL 3.0+    |❌    |❌                     |❌      |❌      |
+|Algorithm                  |Windo ws                |Linux                       |macOS|iOS, tvOS, MacCatalyst|Android|Browser|
+|---------------------------|------------------------|----------------------------|-----|----------------------|-------|-------|
+|MD5                        | ✔️                     | ✔️                        |✔️   |✔️                    |✔️     |❌     |
+|SHA-1                      | ✔️                     | ✔️                        |✔️   |✔️                    |✔️     |✔️     |
+|SHA-2-256                  | ✔️                     | ✔️                        |✔️   |✔️                    |✔️     |✔️     |
+|SHA-2-384                  | ✔️                     | ✔️                        |✔️   |✔️                    |✔️     |✔️     |
+|SHA-2-512                  | ✔️                     | ✔️                        |✔️   |✔️                    |✔️     |✔️     |
+|SHA-3-256<sup>1</sup>      | Windows 11 Build 25324+| OpenSSL 1.1.1+             |❌    |❌                   |❌     |❌     |
+|SHA-3-384<sup>1</sup>      | Windows 11 Build 25324+| OpenSSL 1.1.1+             |❌    |❌                   |❌     |❌     |
+|SHA-3-512<sup>1</sup>      | Windows 11 Build 25324+| OpenSSL 1.1.1+             |❌    |❌                   |❌     |❌     |
+|SHAKE-128<sup>1</sup>      | Windows 11 Build 25324+| OpenSSL 1.1.1+<sup>3</sup> |❌    |❌                   |❌     |❌     |
+|SHAKE-256<sup>1</sup>      | Windows 11 Build 25324+| OpenSSL 1.1.1+<sup>3</sup> |❌    |❌                   |❌     |❌     |
+|HMAC-MD5                   | ✔️                     | ✔️                        |✔️   |✔️                    |✔️     |❌     |
+|HMAC-SHA-1                 | ✔️                     | ✔️                        |✔️   |✔️                    |✔️     |✔️     |
+|HMAC-SHA-2-256             | ✔️                     | ✔️                        |✔️   |✔️                    |✔️     |✔️     |
+|HMAC-SHA-2-384             | ✔️                     | ✔️                        |✔️   |✔️                    |✔️     |✔️     |
+|HMAC-SHA-2-512             | ✔️                     | ✔️                        |✔️   |✔️                    |✔️     |✔️     |
+|HMAC-SHA-3-256<sup>1</sup> | Windows 11 Build 25324+| OpenSSL 1.1.1+            |❌    |❌                   |❌      |❌     |
+|HMAC-SHA-3-384<sup>1</sup> | Windows 11 Build 25324+| OpenSSL 1.1.1+            |❌    |❌                   |❌      |❌     |
+|HMAC-SHA-3-512<sup>1</sup> | Windows 11 Build 25324+| OpenSSL 1.1.1+            |❌    |❌                   |❌      |❌     |
+|KMAC-128<sup>2</sup>       | Windows 11 Build 26016+| OpenSSL 3.0+              |❌    |❌                   |❌      |❌     |
+|KMAC-256<sup>2</sup>       | Windows 11 Build 26016+| OpenSSL 3.0+              |❌    |❌                   |❌      |❌     |
+|KMAC-XOF-128<sup>2</sup>   | Windows 11 Build 26016+| OpenSSL 3.0+              |❌    |❌                   |❌      |❌     |
+|KMAC-XOF-256<sup>2</sup>   | Windows 11 Build 26016+| OpenSSL 3.0+              |❌    |❌                   |❌      |❌     |
 
 <sup>1</sup>Available starting in .NET 8.
 

@@ -29,13 +29,13 @@ This change corrects a regression in .NET 7 and .NET 8. It also returns <xref:Sy
 
 ## Recommended action
 
-If your code passes an encoding to the [ZipArchive constructor](xref:System.IO.Compression.ZipArchive.#ctor(System.IO.Stream,System.IO.Compression.ZipArchiveMode,System.Boolean,System.Text.Encoding)), be aware that this encoding isn't respected in all situations. It will only be used if the entry's UTF8 bit is not set.
+If your code passes an encoding to the [ZipArchive constructor](xref:System.IO.Compression.ZipArchive.%23ctor(System.IO.Stream,System.IO.Compression.ZipArchiveMode,System.Boolean,System.Text.Encoding)), be aware that this encoding isn't respected in all situations. It will only be used if the entry's UTF8 bit is not set.
 
 If you're using <xref:System.IO.Compression.ZipArchive> to parse ZIP entries with names encoded in non-UTF8 format (but which have the UTF8 bit flag set), you will no longer be able to do so. The previous behavior was a bug.
 
 ## Affected APIs
 
-- <xref:System.IO.Compression.ZipArchive.#ctor(System.IO.Stream,System.IO.Compression.ZipArchiveMode,System.Boolean,System.Text.Encoding)>
+- <xref:System.IO.Compression.ZipArchive.%23ctor(System.IO.Stream,System.IO.Compression.ZipArchiveMode,System.Boolean,System.Text.Encoding)>
 - <xref:System.IO.Compression.ZipFile.ExtractToDirectory(System.IO.Stream,System.String,System.Text.Encoding,System.Boolean)?displayProperty=fullName>
 - <xref:System.IO.Compression.ZipFile.ExtractToDirectory(System.String,System.String,System.Text.Encoding,System.Boolean)?displayProperty=fullName>
 - <xref:System.IO.Compression.ZipFile.ExtractToDirectory(System.String,System.String,System.Text.Encoding)?displayProperty=fullName>

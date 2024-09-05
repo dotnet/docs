@@ -1488,18 +1488,18 @@ items:
         - name: Request method
           href: ixclrdataexceptionstate-request-method.md
     - name: IXCLRDataFrame interface
-      href: ixclrdatamethoddefinition-interface.md
+      href: ixclrdataframe-interface.md
       items:
         - name: GetArgumentByIndex method
-          href: ixclrdataexceptionstate-getargumentbyindex-method.md
+          href: ixclrdataframe-getargumentbyindex-method.md
         - name: GetLocalVariableByIndex method
-          href: ixclrdataexceptionstate-getlocalvariablebyindex-method.md
+          href: ixclrdataframe-getlocalvariablebyindex-method.md
         - name: GetMethodInstance method
-          href: ixclrdataexceptionstate-getmethodinstance-method.md
+          href: ixclrdataframe-getmethodinstance-method.md
         - name: GetNumArguments method
-          href: ixclrdataexceptionstate-getnumarguments-method.md
+          href: ixclrdataframe-getnumarguments-method.md
         - name: GetNumLocalVariables method
-          href: ixclrdataexceptionstate-getnumlocalvariables-method.md
+          href: ixclrdataframe-getnumlocalvariables-method.md
     - name: IXCLRDataMethodDefinition interface
       href: ixclrdatamethoddefinition-interface.md
       items:
@@ -1518,7 +1518,7 @@ items:
         - name: Request
           href: ixclrdatamethoddefinition-request-method.md
         - name: StartEnumExtents
-          href: ixclrdatamethoddefinition-startenumextents-method.md
+          href: ixclrdatamethoddefinition-startenumextents.md
         - name: StartEnumInstances
           href: ixclrdatamethoddefinition-startenuminstances-method.md
     - name: IXCLRDataMethodInstance interface
@@ -1531,13 +1531,13 @@ items:
         - name: GetAddressRangesByILOffset
           href: ixclrdatamethodinstance-getaddressrangesbyiloffset-method.md
         - name: GetDefinition
-          href: ixclrdatamethodinstance-getdefinition-method.md
+          href: ixclrdatamethodinstance-getdefinition.md
         - name: GetILAddressMap
           href: ixclrdatamethodinstance-getiladdressmap-method.md
         - name: GetILOffsetsByAddress
           href: ixclrdatamethodinstance-getiloffsetsbyaddress-method.md
         - name: GetName
-          href: ixclrdatamethodinstance-getname-method.md
+          href: ixclrdatamethodinstance-getname.md
         - name: GetRepresentativeEntryAddress
           href: ixclrdatamethodinstance-getrepresentativeentryaddress-method.md
         - name: GetTokenAndScope
@@ -1553,8 +1553,8 @@ items:
           href: ixclrdatamodule-endenumextents-method.md
         - name: EndEnumTypeDefinitions
           href: ixclrdatamodule-endenumtypedefinitions-method.md
-        - name: EndMethodInstancesByName
-          href: ixclrdatamodule-endmethodinstancesbyname-method.md
+        - name: EndEnumMethodInstancesByName
+          href: ixclrdatamodule-endenummethodinstancesbyname-method.md
         - name: EnumExtent
           href: ixclrdatamodule-enumextent-method.md
         - name: EnumMethodInstanceByName
@@ -1590,12 +1590,12 @@ items:
           href: ixclrdataprocess-endenummodules-method.md
         - name: EnumMethodInstanceByAddress
           href: ixclrdataprocess-enummethodinstancebyaddress-method.md
+        - name: EndEnumMethodDefinitionsByAddress
+          href: ixclrdataprocess-endenummethoddefinitionsbyaddress-method.md
         - name: EndEnumMethodInstancesByAddress
           href: ixclrdataprocess-endenummethodinstancesbyaddress-method.md
         - name: EnumAppDomain
           href: ixclrdataprocess-enumappdomain-method.md
-        - name: EnumMethodDefinitionsByAddress
-          href: ixclrdataprocess-enummethoddefinitionsbyaddress-method.md
         - name: EnumModule
           href: ixclrdataprocess-enummodule-method.md
         - name: FollowStub
@@ -1659,8 +1659,8 @@ items:
           href: ixclrdatatypedefinition-endenummethoddefinitions-method.md
         - name: EnumMethodDefinition method
           href: ixclrdatatypedefinition-enummethoddefinition-method.md
-        - name: GetCoreElementType method
-          href: ixclrdatatypedefinition-getcoreelementtype-method.md
+        - name: GetCorElementType method
+          href: ixclrdatatypedefinition-getcorelementtype-method.md
         - name: GetName method
           href: ixclrdatatypedefinition-getname-method.md
         - name: GetTokenAndScope method
@@ -1749,8 +1749,8 @@ items:
       href: clrdatadetailedframetype-enumeration.md
     - name: CLRDataEnumMemoryFlags enumeration
       href: clrdataenummemoryflags-enumeration.md
-    - name: CLRDataExceptionsSameFlag enumeration
-      href: clrdataexceptionssameflag-enumeration.md
+    - name: CLRDataExceptionSameFlag enumeration
+      href: clrdataexceptionsameflag-enumeration.md
     - name: CLRDataFieldFlag enumeration
       href: clrdatafieldflag-enumeration.md
     - name: CLRDataFollowStubInFlag enumeration
@@ -1761,8 +1761,8 @@ items:
       href: clrdatamethodcodenotification-enumeration.md
     - name: CLRDataModuleExtentType enumeration
       href: clrdatamoduleextenttype-enumeration.md
-    - name: CLRDataOtherNotifyingFlag enumeration
-      href: clrdataothernotifyingflag-enumeration.md
+    - name: CLRDataOtherNotifyFlag enumeration
+      href: clrdataothernotifyflag-enumeration.md
     - name: CLRDataSimpleFrameType enumeration
       href: clrdatasimpleframetype-enumeration.md
     - name: ClrDataSourceType enumeration
@@ -1907,8 +1907,8 @@ items:
       href: dacpmoduledata-structure.md
     - name: DacpReJitData structure
       href: dacprejitdata-structure.md
-    - name: GcEventArgs structure
-      href: gceventargs-structure.md
+    - name: GcEvtArgs structure
+      href: gcevtargs-structure.md
     - name: StackTrace_SimpleContext structure
       href: stacktrace-simplecontext-structure.md
 - name: .NET Core debugging

@@ -2,17 +2,17 @@
 description: "Learn more about: CLRDataValueFlag Enumeration"
 title: "CLRDataValueFlag Enumeration"
 ms.date: "07/03/2024"
-api_name: 
+api_name:
   - "CLRDataValueFlag"
-api_location: 
+api_location:
   - "mscordacwks.dll"
-api_type: 
+api_type:
   - "COM"
-f1_keywords: 
+f1_keywords:
   - "CLRDataValueFlag"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "CLRDataValueFlag enumeration [.NET Framework debugging]"
-topic_type: 
+topic_type:
   - "apiref"
 author: "wmessmer"
 ms.author: "wmessmer"
@@ -20,11 +20,11 @@ ms.author: "wmessmer"
 # CLRDataValueFlag Enumeration
 
 Indicates various attributes of a value.
-  
-## Syntax  
-  
-```cpp  
-typedef enum CLRDataValueFlag {  
+
+## Syntax
+
+```cpp
+typedef enum CLRDataValueFlag {
     CLRDATA_VALUE_DEFAULT                   = 0x00000000,
     CLRDATA_VALUE_IS_PRIMITIVE              = 0x00000001,
     CLRDATA_VALUE_IS_VALUE_TYPE             = 0x00000002,
@@ -37,7 +37,7 @@ typedef enum CLRDataValueFlag {
 
     CLRDATA_VALUE_IS_INHERITED              = 0x00000080,
     CLRDATA_VALUE_IS_LITERAL                = 0x00000100,
-    
+
     CLRDATA_VALUE_FROM_INSTANCE             = 0x00000200,
     CLRDATA_VALUE_FROM_TASK_LOCAL           = 0x00000400,
     CLRDATA_VALUE_FROM_STATIC               = 0x00000800,
@@ -47,10 +47,10 @@ typedef enum CLRDataValueFlag {
     CLRDATA_VALUE_ALL_FIELDS                = 0x00000eff,
 
     CLRDATA_VALUE_IS_BOXED                  = 0x00001000
-} CLRDataValueFlag;  
-```  
-  
-## Members  
+} CLRDataValueFlag;
+```
+
+## Members
 
 |Member|Value|Description|
 |------------|-----------------|-----------------|
@@ -71,18 +71,18 @@ typedef enum CLRDataValueFlag {
 |`CLRDATA_VALUE_ALL_LOCATIONS`|0xe00|Bitwise or of all value locations.|
 |`CLRDATA_VALUE_ALL_FIELDS`|0xeff|Bitwise or of all value flags.|
 |`CLRDATA_VALUE_IS_BOXED`|0x1000|The value is boxed.|
- 
-## Remarks  
+
+## Remarks
 
 This enumeration lives inside the runtime and is not exposed through any headers or library files. To use it, define the enumeration as specified above.
 
-## Requirements  
+## Requirements
 
-**Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
-**Header:** None  
-**Library:** None  
-**.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
-  
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).
+**Header:** None
+**Library:** None
+**.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]
+
 ## See also
 
 - [Debugging Enumerations](debugging-enumerations.md)

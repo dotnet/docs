@@ -6,46 +6,46 @@ ms.assetid: 030b2f8c-8c21-40b7-855d-3afa78975a17
 ---
 # ICorDebugMergedAssemblyRecord::GetCulture Method
 
-Gets the culture name string of the assembly.  
-  
-## Syntax  
-  
-```cpp  
-HRESULT GetCulture(  
+Gets the culture name string of the assembly.
+
+## Syntax
+
+```cpp
+HRESULT GetCulture(
    [in] ULONG32 cchCulture,
    [out] ULONG32 *pcchCulture,
-   [out, size_is(cchCulture), length_is(*pcchCulture)] WCHAR szCulture[]  
-);  
-```  
-  
-## Parameters  
+   [out, size_is(cchCulture), length_is(*pcchCulture)] WCHAR szCulture[]
+);
+```
 
- `cchCulture`  
- [in] The number of characters in the `szCulture` buffer.  
-  
- `pcchCulture`  
- [out] The number of characters actually written to the `szCulture` buffer.  
-  
- `szCulture`  
- [out] A character array that contains the culture name.  
-  
-## Remarks  
+## Parameters
 
- The culture name is a unique string that identifies a culture, such as "en-US" (for the English (United States) culture), or "neutral" (for a neutral culture).  
-  
+ `cchCulture`
+ [in] The number of characters in the `szCulture` buffer.
+
+ `pcchCulture`
+ [out] The number of characters actually written to the `szCulture` buffer.
+
+ `szCulture`
+ [out] A character array that contains the culture name.
+
+## Remarks
+
+ The culture name is a unique string that identifies a culture, such as "en-US" (for the English (United States) culture), or "neutral" (for a neutral culture).
+
 > [!NOTE]
-> This method is available with .NET Native only.  
-  
-## Requirements  
+> This method is available with .NET Native only.
 
- **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
-  
- **Header:** CorDebug.idl, CorDebug.h  
-  
- **Library:** CorGuids.lib  
-  
- **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
-  
+## Requirements
+
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).
+
+ **Header:** CorDebug.idl, CorDebug.h
+
+ **Library:** CorGuids.lib
+
+ **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]
+
 ## See also
 
 - [ICorDebugMergedAssemblyRecord Interface](icordebugmergedassemblyrecord-interface.md)

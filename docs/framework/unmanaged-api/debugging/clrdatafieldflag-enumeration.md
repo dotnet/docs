@@ -2,17 +2,17 @@
 description: "Learn more about: CLRDataFieldFlag Enumeration"
 title: "CLRDataFieldFlag Enumeration"
 ms.date: "07/02/2024"
-api_name: 
+api_name:
   - "CLRDataFieldFlag"
-api_location: 
+api_location:
   - "mscordacwks.dll"
-api_type: 
+api_type:
   - "COM"
-f1_keywords: 
+f1_keywords:
   - "CLRDataFieldFlag"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "CLRDataFieldFlag enumeration [.NET Framework debugging]"
-topic_type: 
+topic_type:
   - "apiref"
 author: "wmessmer"
 ms.author: "wmessmer"
@@ -20,11 +20,11 @@ ms.author: "wmessmer"
 # CLRDataFieldFlag Enumeration
 
 Indicates various attributes of a field.
-  
-## Syntax  
-  
-```cpp  
-typedef enum CLRDataFieldFlag {  
+
+## Syntax
+
+```cpp
+typedef enum CLRDataFieldFlag {
     CLRDATA_FIELD_DEFAULT                   = 0x00000000,
     CLRDATA_FIELD_IS_PRIMITIVE              = 0x00000001,
     CLRDATA_FIELD_IS_VALUE_TYPE             = 0x00000002,
@@ -37,7 +37,7 @@ typedef enum CLRDataFieldFlag {
 
     CLRDATA_FIELD_IS_INHERITED              = 0x00000080,
     CLRDATA_FIELD_IS_LITERAL                = 0x00000100,
-    
+
     CLRDATA_FIELD_FROM_INSTANCE             = 0x00000200,
     CLRDATA_FIELD_FROM_TASK_LOCAL           = 0x00000400,
     CLRDATA_FIELD_FROM_STATIC               = 0x00000800,
@@ -45,10 +45,10 @@ typedef enum CLRDataFieldFlag {
     CLRDATA_FIELD_ALL_LOCATIONS             = 0x00000e00,
 
     CLRDATA_FIELD_ALL_FIELDS                = 0x00000eff
-} CLRDataFieldFlag;  
-```  
-  
-## Members  
+} CLRDataFieldFlag;
+```
+
+## Members
 
 |Member|Value|Description|
 |------------|-----------------|-----------------|
@@ -68,18 +68,17 @@ typedef enum CLRDataFieldFlag {
 |`CLRDATA_FIELD_FROM_STATIC`|0x800|The field is from a static declaration.|
 |`CLRDATA_FIELD_ALL_LOCATIONS`|0xe00|Bitwise or of all field locations.  Such can be used in various enumeration methods.|
 |`CLRDATA_FIELD_ALL_FIELDS`|0xeff|Bitwise or of all field flags.  Such can be used in various enumeration methods.|
- 
-## Remarks  
+## Remarks
 
 This enumeration lives inside the runtime and is not exposed through any headers or library files. To use it, define the enumeration as specified above.
 
-## Requirements  
+## Requirements
 
-**Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
-**Header:** None  
-**Library:** None  
-**.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
-  
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).
+**Header:** None
+**Library:** None
+**.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]
+
 ## See also
 
 - [Debugging Enumerations](debugging-enumerations.md)

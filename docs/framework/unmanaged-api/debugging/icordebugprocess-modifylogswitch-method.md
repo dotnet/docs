@@ -2,51 +2,51 @@
 description: "Learn more about: ICorDebugProcess::ModifyLogSwitch Method"
 title: "ICorDebugProcess::ModifyLogSwitch Method"
 ms.date: "03/30/2017"
-api_name: 
+api_name:
   - "ICorDebugProcess.ModifyLogSwitch"
-api_location: 
+api_location:
   - "mscordbi.dll"
-api_type: 
+api_type:
   - "COM"
-f1_keywords: 
+f1_keywords:
   - "ICorDebugProcess::ModifyLogSwitch"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "ICorDebugProcess::ModifyLogSwitch method [.NET Framework debugging]"
   - "ModifyLogSwitch method [.NET Framework debugging]"
 ms.assetid: 5fd30875-555e-4e96-877b-5dd266cde7c4
-topic_type: 
+topic_type:
   - "apiref"
 ---
 # ICorDebugProcess::ModifyLogSwitch Method
 
-Sets the severity level of the specified log switch.  
-  
-## Syntax  
-  
-```cpp  
-HRESULT ModifyLogSwitch(  
-    [in] WCHAR *pLogSwitchName,  
-    [in] LONG  lLevel);  
-```  
-  
-## Parameters  
+Sets the severity level of the specified log switch.
 
- `pLogSwitchName`  
- [in] A pointer to a string that specifies the name of the log switch.  
-  
- `lLevel`  
- [in] The severity level to be set for the specified log switch.  
-  
-## Remarks  
+## Syntax
 
- This method is valid only after the [ICorDebugManagedCallback::CreateProcess](icordebugmanagedcallback-createprocess-method.md) callback has occurred.  
-  
-## Requirements  
+```cpp
+HRESULT ModifyLogSwitch(
+    [in] WCHAR *pLogSwitchName,
+    [in] LONG  lLevel);
+```
 
- **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
-  
- **Header:** CorDebug.idl, CorDebug.h  
-  
- **Library:** CorGuids.lib  
-  
+## Parameters
+
+ `pLogSwitchName`
+ [in] A pointer to a string that specifies the name of the log switch.
+
+ `lLevel`
+ [in] The severity level to be set for the specified log switch.
+
+## Remarks
+
+ This method is valid only after the [ICorDebugManagedCallback::CreateProcess](icordebugmanagedcallback-createprocess-method.md) callback has occurred.
+
+## Requirements
+
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).
+
+ **Header:** CorDebug.idl, CorDebug.h
+
+ **Library:** CorGuids.lib
+
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]

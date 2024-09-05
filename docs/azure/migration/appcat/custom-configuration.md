@@ -6,11 +6,9 @@ ms.date: 08/02/2024
 author: mckennabarlow
 ms.author: mcbarlow
 ---
-# How to customize analysis with run config
+# How to customize analysis using run configs
 
-## Overview
-
-Before running an analysis, AppCAT discovers all rules and analyzers provided to it and then uses that information to match the project's `traits`. However, the analysis results can be overly verbose when using the default configuration.
+The Azure Migrate application and code assessment tool supports custom analysis using run configs. Before the tool runs an analysis, it discovers all available rules and analyzers and then uses the ones that match current project's traits. However, some results might be too noisy for some applications.
 
 To control/scope rules and/or analyzers used, you can provide a JSON run configuration file. This allows you to:
 
@@ -22,22 +20,24 @@ To control/scope rules and/or analyzers used, you can provide a JSON run configu
 
 ## How to provide a JSON run configuration
 
-### Using the CLI
+## [.NET CLI](#tab/cli)
 
-- **Interactive mode**: The CLI will ask if you want to provide run configuration. Upon selecting *yes*, it prompts the user to type/paste the path to the run configuration file.
-- **Non-interactive mode**: Use the `-c|--config` argument. This allows you to provide the path to the JSON run configuration.
+The Azure Migrate application and code assessment tool enables you to [Analyze applications with the .NET CLI](dotnet-cli.md). When using the CLI, there are two options to provide a run config:
 
-### Using Visual Studio
+- **Interactive mode**: The CLI asks if you want to provide run config. Select `Yes` and then provide the path to the run config file.
+- **Non-interactive mode**: Provide the `-c` or `--config` argument, which allows you to provide the path to the run config JSON.
 
-- When editing analysis settings, use the UI to specify JSON run configuration.
+## [Visual Studio](#tab/visual-studio)
 
-After analysis is done, run configuration is stored in the report. The configuration is re-used if the user reopens the report and refreshes.
+The Azure Migrate application and code assessment tool enables you to [Analyze applications with Visual Studio](visual-studio.md). During the step that allows you to edit analysis settings, select the **Browse** button to locate and select a run config JSON file. After analysis is done, run configuration is stored in the report. The configuration is re-used if the user reopens the report and refreshes.
+
+---
 
 ## Run config schema
 
-Here is a sample run config:
+Consider the following sample run config:
 
-```
+```json
 {
   "analysis": {
     "settings": {
@@ -84,10 +84,7 @@ Here is a sample run config:
     ]
   }
 }
-
 ```
-
-Looking at the JSON objects contained in the preceding example:
 
 - `analysis.settings` contains global includes or excludes. These include and exclude binaries to be analyzed. It's recommended to run binary analysis once to see any red flags, but results for binaries tend to be verbose. Some of the results could flag problems inside dependencies your application is consuming. Other results could be valid problems in your app, but located in unused code paths. These can be ignored to reduce the verbosity of the results.
 - `analysis.rules` contains rules definitions. These definitions override or disable existing rules, as well as define new rules.
@@ -97,14 +94,13 @@ Looking at the JSON objects contained in the preceding example:
 
 ### Add new rule
 
-```
+```json
 {
   "rules": [
     {
       "id": "Category.NumericId",
       "severity": "potential",
       "effort": 5
-      ...
     }
   ]
 }
@@ -112,7 +108,7 @@ Looking at the JSON objects contained in the preceding example:
 
 ### Modify existing rule
 
-```
+```json
 {
   "rules": [
     {
@@ -125,7 +121,7 @@ Looking at the JSON objects contained in the preceding example:
 
 ### Disable existing rule
 
-```
+```json
 {
   "rules": [
     {
@@ -138,7 +134,7 @@ Looking at the JSON objects contained in the preceding example:
 
 ### Disable existing analyzer
 
-```
+```json
 {
   "analyzers": [
     {
@@ -151,7 +147,7 @@ Looking at the JSON objects contained in the preceding example:
 
 ### Add new analyzer for some existing or new rule
 
-```
+```json
 {
   "analyzers": [
     {

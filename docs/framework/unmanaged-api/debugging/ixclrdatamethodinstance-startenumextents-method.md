@@ -52,5 +52,5 @@ The provided method is part of the `IXCLRDataMethodInstance` interface and corre
 - [Debugging](index.md)
 - [IXCLRDataMethodInstance Interface](ixclrdatamethodinstance-interface.md)
 - [IXCLRDataMethodInstance::EnumExtent Method](ixclrdatamethodinstance-enumextent-method.md)
-- [IXCLRDataMethodInstance::EndEnumExtents Method](ixclrdatamethodinstnace-endenumextents.md)
+- [IXCLRDataMethodInstance::EndEnumExtents Method](ixclrdatamethodinstance-endenumextents-method.md)
 - [CLRDATA_ADDRESS_RANGE Structure](clrdata-address-range-structure.md)

@@ -44,10 +44,10 @@ HRESULT StartEnumMethodInstancesByName(
 
 Flags may contain one or more of the following values:
 
-|Flag|Value|Description|  
-|------------|-----------------|-----------------|    
-|`CLRDATA_BYNAME_CASE_SENSITIVE`|0x00000000|The enumeration should be case sensitive according to `name`.|  
-|`CLRDATA_BYNAME_CASE_INSENSITIVE`|0x00000001|The enumeration should be case insensitive according to `name`.|  
+| Flag                              | Value      | Description                                                     |
+|-----------------------------------|------------|-----------------------------------------------------------------|
+| `CLRDATA_BYNAME_CASE_SENSITIVE`   | 0x00000000 | The enumeration should be case sensitive according to `name`.   |
+| `CLRDATA_BYNAME_CASE_INSENSITIVE` | 0x00000001 | The enumeration should be case insensitive according to `name`. |
 
 `appDomain`\
 [in] The AppDomain from which to enumerate method instances of the given `name`.
@@ -61,10 +61,10 @@ The provided method is part of the `IXCLRDataModule` interface and corresponds t
 
 ## Requirements
 
-**Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
-**Header:** None  
-**Library:** None  
-**.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).
+**Header:** None
+**Library:** None
+**.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]
 
 ## See also
 

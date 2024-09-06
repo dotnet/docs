@@ -128,4 +128,4 @@ YARP has several key features that make it a powerful tool for building your rev
 
 >[!div class="step-by-step"]
 >[Previous](gateway-patterns.md)
->[Next](..TODO..)
+>[Next](../deploying-distributed-apps/how-deployment-affects-your-architecture.md)

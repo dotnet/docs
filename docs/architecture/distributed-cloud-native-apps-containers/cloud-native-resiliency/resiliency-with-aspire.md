@@ -76,4 +76,4 @@ You don't need to change any of your code if the default resiliency settings mee
 
 >[!div class="step-by-step"]
 >[Previous](resilient-communications.md)
->[Next](..TODO..)
+>[Next](../monitoring-health/observability-patterns.md)

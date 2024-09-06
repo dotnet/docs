@@ -1,11 +1,11 @@
 ---
-title: How deployment effects your architecture and vice versa
-description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | How deployment effects your architecture and vice versa
+title: How deployment affects your architecture and vice versa
+description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | How deployment affects your architecture and vice versa
 author: 
 ms.date: 06/12/2024
 ---
 
-# How deployment effects your architecture and vice versa
+# How deployment affects your architecture and vice versa
 
 [!INCLUDE [download-alert](../includes/download-alert.md)]
 
@@ -24,5 +24,5 @@ Conversely, the architecture of a distributed application can determine the comp
 The architecture also prescribes the deployment environment. A cloud-native architecture is designed with cloud services in mind, leveraging their scalability and managed services to reduce operational overhead. This necessitates a deployment strategy that is cloud-centric, often automated through infrastructure as code (IaC) tools such as Terraform or AWS CloudFormation.
 
 >[!div class="step-by-step"]
->[Previous](---TO DO---)
+>[Previous](../api-gateways/gateway-patterns.md)
 >[Next](development-vs-production.md)

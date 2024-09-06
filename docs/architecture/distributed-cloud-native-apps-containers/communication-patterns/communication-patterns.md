@@ -51,5 +51,5 @@ The second axis defines if the communication has a single receiver or multiple r
 The book [.NET Microservices: Architecture for Containerized .NET Applications](https://dotnet.microsoft.com/download/thank-you/microservices-architecture-ebook), available for free from Microsoft, provides an in-depth coverage of communication patterns for microservice applications.
 
 >[!div class="step-by-step"]
->[Previous](---TO DO---)
+>[Previous](../architecting-distributed-cloud-native-applications/different-distributed-architectures.md)
 >[Next](when-to-use-each-approach.md)

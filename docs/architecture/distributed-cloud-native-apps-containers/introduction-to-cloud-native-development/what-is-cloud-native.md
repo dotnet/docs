@@ -256,8 +256,6 @@ While several container orchestrators exist, [Kubernetes](https://kubernetes.io/
 
 You could host your own instance of Kubernetes, but then you'd be responsible for provisioning and managing its resources, which can be complex. The Azure cloud features Kubernetes as a managed service. Both  [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/services/kubernetes-service/) and [Azure Red Hat OpenShift (ARO)](https://azure.microsoft.com/services/openshift/) enable you to leverage the features and power of Kubernetes fully as a managed service, without having to install and maintain it.
 
-Container orchestration is covered in detail in [Scaling Cloud-Native Applications](./scale-applications.md).
-
 ## Backing services
 
 Cloud-native systems depend upon many different ancillary resources, such as data stores, message brokers, monitoring, and identity services. These services are known as [backing services](https://12factor.net/backing-services).

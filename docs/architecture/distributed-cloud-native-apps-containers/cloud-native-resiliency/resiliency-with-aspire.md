@@ -75,5 +75,5 @@ You don't need to change any of your code if the default resiliency settings mee
 - **Tutorial: Add .NET Aspire to an existing .NET app** \<https://learn.microsoft.com/dotnet/aspire/get-started/add-aspire-existing-app>
 
 >[!div class="step-by-step"]
->[Previous](resilient-communications.md)
+>[Previous](resilient-communication.md)
 >[Next](../monitoring-health/observability-patterns.md)

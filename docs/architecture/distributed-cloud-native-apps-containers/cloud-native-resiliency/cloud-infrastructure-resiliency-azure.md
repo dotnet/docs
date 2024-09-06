@@ -94,4 +94,4 @@ We encouraged the best practice of implementing programmatic retry operations in
 
 >[!div class="step-by-step"]
 >[Previous](application-resiliency-patterns.md)
->[Next](resilient-communications.md)
+>[Next](resilient-communication.md)

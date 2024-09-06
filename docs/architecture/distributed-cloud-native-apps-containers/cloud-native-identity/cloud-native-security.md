@@ -6,7 +6,7 @@ ms.date: 04/06/2022
 
 # Cloud-native security
 
-[!INCLUDE [download-alert](includes/download-alert.md)]
+[!INCLUDE [download-alert](../includes/download-alert.md)]
 
 Not a day goes by without the news of a company being hacked or somehow losing their customers' data. Even countries and large jurisdictions aren't immune to the problems created by treating security as an afterthought. For years, companies have treated the security of customer data and, in fact, of their entire networks as something of a "nice to have". Windows servers were left unpatched, ancient versions of PHP kept running, and databases left wide open to the world.
 

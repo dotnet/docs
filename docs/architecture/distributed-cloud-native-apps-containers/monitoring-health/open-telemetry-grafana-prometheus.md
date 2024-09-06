@@ -6,7 +6,7 @@ ms.date: 04/06/2022
 
 # Using OpenTelemetry in your .NET app
 
-[!INCLUDE [download-alert](includes/download-alert.md)]
+[!INCLUDE [download-alert](../includes/download-alert.md)]
 
 OpenTelemetry is an open-source observability framework. OpenTelemetry standardizes the way telemetry data is gathered and shared with back-end platforms. It provides a common format of instrumentation across all your microservices. You don't have to reinstrument code or install different proprietary agents every time a back-end platform changes.
 

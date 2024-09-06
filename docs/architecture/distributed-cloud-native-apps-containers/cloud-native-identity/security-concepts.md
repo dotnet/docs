@@ -6,7 +6,7 @@ ms.date: 06/03/2024
 
 # Cloud security concepts
 
-[!INCLUDE [download-alert](includes/download-alert.md)]
+[!INCLUDE [download-alert](../includes/download-alert.md)]
 
 In the digital age, cloud security is paramount for protecting sensitive data as businesses and individuals increasingly rely on cloud services. This topic delves into the key concepts of cloud security, including SSL, REST, TLS, and secret management, which form the bedrock of secure cloud operations.
 

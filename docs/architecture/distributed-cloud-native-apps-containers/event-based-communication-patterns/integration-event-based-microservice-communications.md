@@ -216,5 +216,5 @@ The `Subscribe` methods (you can have several implementations depending on the a
   [https://learn.microsoft.com/azure/service-bus-messaging/](/azure/service-bus-messaging/)
   
 > [!div class="step-by-step"]
-> [Previous](---TO DO---)
+> [Previous](../service-to-service-communication-patterns/service-mesh-communication-infrastructure.md)
 > [Next](rabbitmq-event-bus-development-test-environment.md)

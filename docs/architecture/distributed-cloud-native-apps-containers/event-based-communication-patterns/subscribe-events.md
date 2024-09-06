@@ -125,4 +125,4 @@ If the "redelivered" flag is set, the receiver must take that into account, beca
  
 > [!div class="step-by-step"]
 > [Previous](background-tasks-with-ihostedservice.md)
-> [Next](---To DO---)
+> [Next](../chpt8-data-patterns/distributed-data.md)

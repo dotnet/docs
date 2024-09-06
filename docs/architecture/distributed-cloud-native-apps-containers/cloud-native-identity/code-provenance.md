@@ -6,7 +6,7 @@ ms.date: 06/03/2024
 
 # Code provenance: the lineage of code
 
-[!INCLUDE [download-alert](includes/download-alert.md)]
+[!INCLUDE [download-alert](../includes/download-alert.md)]
 
 At its core, code provenance refers to the origin or source of code, encompassing the understanding of where code comes from, who authored it, how it has been built, and the ways in which it has been modified over time. This intricate tapestry of information is not just a historical record; it is a vital component for maintaining the integrity and security of software systems.
 

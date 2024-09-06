@@ -56,4 +56,4 @@ In a cloud-native environment, orchestrating microservices and other components 
 
 >[!div class="step-by-step"]
 >[Previous](dot-net-aspire-overview.md)
->[Next](servicediscovery.md)
+>[Next](service-discovery.md)

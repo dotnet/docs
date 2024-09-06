@@ -7,7 +7,7 @@ ms.date: 04/06/2022
 
 # Caching in a cloud-native application
 
-[!INCLUDE [download-alert](includes/download-alert.md)]
+[!INCLUDE [download-alert](../includes/download-alert.md)]
 
 The benefits of caching are well understood. The technique works by temporarily copying frequently accessed data from a backend data store to *fast storage* that's located closer to the application. Caching is often implemented where:
 
@@ -27,7 +27,7 @@ Also consider caching to avoid repetitive computations. If an operation transfor
 
 ## Caching architecture
 
-Cloud native applications typically implement a distributed caching architecture. The cache is hosted as a cloud-based [backing service](./definition.md#backing-services), separate from the microservices. Figure 5-15 shows the architecture.
+Cloud native applications typically implement a distributed caching architecture. The cache is hosted as a cloud-based backing service, separate from the microservices. Figure 5-15 shows the architecture.
 
 ![A diagram showing how a cache is implemented in a cloud-native app.](media/distributed-data.png)
 

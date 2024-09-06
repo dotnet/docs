@@ -84,5 +84,5 @@ You can't alway test for resiliency in the same way that you test application fu
 Application resiliency is a must for handling problematic requested operations. But, it's only half of the story. Next, we cover resiliency features available in the Azure cloud.
 
 >[!div class="step-by-step"]
->[Previous](introduction.md)
+>[Previous](cloud-native-resiliency.md)
 >[Next](cloud-infrastructure-resiliency-azure.md)

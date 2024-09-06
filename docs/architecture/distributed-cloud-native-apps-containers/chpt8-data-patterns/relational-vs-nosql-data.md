@@ -7,7 +7,7 @@ ms.date: 04/06/2022
 
 # Relational versus NoSQL data
 
-[!INCLUDE [download-alert](includes/download-alert.md)]
+[!INCLUDE [download-alert](../includes/download-alert.md)]
 
 Relational and NoSQL are two types of database systems commonly implemented in cloud-native apps. They're built differently, store data differently, and accessed differently. In this section, we'll look at both and compare them.
 
@@ -69,7 +69,7 @@ In the next sections, we'll explore the options available in the Azure cloud for
 
 ## Database as a Service
 
-Cloud-native applications favor data services exposed as a Database as a Service (DBaaS). Fully managed by a cloud vendor, these services provide built-in security, scalability, and monitoring. Instead of owning the service, you simply consume it as a [backing service](./definition.md#backing-services). The provider operates the resource at scale and bears the responsibility for performance and maintenance.
+Cloud-native applications favor data services exposed as a Database as a Service (DBaaS). Fully managed by a cloud vendor, these services provide built-in security, scalability, and monitoring. Instead of owning the service, you simply consume it as a backing service. The provider operates the resource at scale and bears the responsibility for performance and maintenance.
 
 They can be configured across cloud availability zones and regions to achieve high availability. They all support just-in-time capacity and a pay-as-you-go model. Azure features different kinds of managed data service options, each with specific benefits.
 

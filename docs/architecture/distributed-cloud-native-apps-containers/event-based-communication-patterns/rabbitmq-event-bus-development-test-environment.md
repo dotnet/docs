@@ -11,7 +11,7 @@ We should start by saying that if you create your custom event bus based on [Rab
 
 The event bus implementation with RabbitMQ lets microservices subscribe to events, publish events, and receive events, as shown in Figure 7-21.
 
-![Diagram showing RabbitMQ between message sender and message receiver.](./media/rabbitmq-event-bus-development-test-environment/rabbitmq-implementation.png)
+![Diagram showing RabbitMQ between message sender and message receiver.](./media/rabbitmq-implementation.png)
 
 **Figure 7-21.** RabbitMQ implementation of an event bus
 

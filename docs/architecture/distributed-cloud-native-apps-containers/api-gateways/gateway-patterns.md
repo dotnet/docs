@@ -28,7 +28,7 @@ While simple to implement, direct client communication would be acceptable only 
 - Duplication of cross-cutting concerns across each microservice.
 - Overly complex client code. Clients must keep track of multiple endpoints and handle failures in a resilient way.
 
-Instead, a widely accepted cloud design pattern is to implement an [API Gateway Service](../microservices/architect-microservice-container-applications/direct-client-to-microservice-communication-versus-the-api-gateway-pattern.md) between the front-end applications and back-end services.
+Instead, a widely accepted cloud design pattern is to implement an API Gateway Service between the front-end applications and back-end services.
 
 ![Diagram showing the API Gateway pattern.](./media/api-gateway-pattern.png)
 
@@ -164,5 +164,5 @@ If you're using the .NET Aspire stack to build your cloud-native app, you have a
 - If the API Gateway is developed by a single team, there can be a development bottleneck. This aspect is another reason why a better approach is to have several fined-grained API Gateways that respond to different client needs. You could also segregate the API Gateway internally into multiple areas or layers that are owned by the different teams working on the internal microservices.
 
 >[!div class="step-by-step"]
->[Previous](..testing-distributed-apps/how-aspire-helps.md)
+>[Previous](../testing-distributed-apps/how-aspire-helps.md)
 >[Next](reverse-proxies-with-yarp.md)

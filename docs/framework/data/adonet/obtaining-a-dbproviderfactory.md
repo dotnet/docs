@@ -11,7 +11,7 @@ dev_langs:
 The process of obtaining a <xref:System.Data.Common.DbProviderFactory> involves passing information about a data provider to the <xref:System.Data.Common.DbProviderFactories> class. Based on this information, the <xref:System.Data.Common.DbProviderFactories.GetFactory%2A> method creates a strongly typed provider factory. For example, to create a <xref:System.Data.SqlClient.SqlClientFactory>, you can pass `GetFactory` a string with the provider name specified as "System.Data.SqlClient". The other overload of `GetFactory` takes a <xref:System.Data.DataRow>. Once you create the provider factory, you can then use its methods to create additional objects. Some of the methods of a `SqlClientFactory` include <xref:System.Data.SqlClient.SqlClientFactory.CreateConnection%2A>, <xref:System.Data.SqlClient.SqlClientFactory.CreateCommand%2A>, and <xref:System.Data.SqlClient.SqlClientFactory.CreateDataAdapter%2A>.
 
 > [!NOTE]
-> The .NET Framework <xref:System.Data.OracleClient.OracleClientFactory>, <xref:System.Data.Odbc.OdbcFactory>, and <xref:System.Data.OleDb.OleDbFactory> classes also provide similar functionality.
+> The <xref:System.Data.OracleClient.OracleClientFactory>, <xref:System.Data.Odbc.OdbcFactory>, and <xref:System.Data.OleDb.OleDbFactory> classes also provide similar functionality.
 
 ## Registering DbProviderFactories
 
@@ -36,12 +36,12 @@ The process of obtaining a <xref:System.Data.Common.DbProviderFactory> involves 
 
  You can retrieve information about all of the data providers installed on the local computer by using the <xref:System.Data.Common.DbProviderFactories.GetFactoryClasses%2A> method. It returns a <xref:System.Data.DataTable> named **DbProviderFactories** that contains the columns described in the following table.
 
-|Column ordinal|Column name|Example output|Description|
-|--------------------|-----------------|--------------------|-----------------|
-|0|**Name**|SqlClient Data Provider|Readable name for the data provider|
-|1|**Description**|.Net Framework Data Provider for SqlServer|Readable description of the data provider|
-|2|**InvariantName**|System.Data.SqlClient|Name that can be used programmatically to refer to the data provider|
-|3|**AssemblyQualifiedName**|System.Data.SqlClient.SqlClientFactory, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Fully qualified name of the factory class, which contains enough information to instantiate the object|
+| Column ordinal | Column name     | Example output                             | Description                               |
+|----------------|-----------------|--------------------------------------------|-------------------------------------------|
+| 0              | **Name**        | SqlClient Data Provider                    | Readable name for the data provider       |
+| 1              | **Description** | .Net Framework Data Provider for SqlServer | Readable description of the data provider |
+| 2              | **InvariantName** | System.Data.SqlClient | Name that can be used programmatically to refer to the data provider|
+| 3              | **AssemblyQualifiedName** | System.Data.SqlClient.SqlClientFactory, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 | Fully qualified name of the factory class, which contains enough information to instantiate the object |
 
  This `DataTable` can be used to enable a user to select a <xref:System.Data.DataRow> at run time. The selected `DataRow` can then be passed to the <xref:System.Data.Common.DbProviderFactories.GetFactory%2A> method to create a strongly typed <xref:System.Data.Common.DbProviderFactory>. A selected <xref:System.Data.DataRow> can be passed to the `GetFactory` method to create the desired `DbProviderFactory` object.
 

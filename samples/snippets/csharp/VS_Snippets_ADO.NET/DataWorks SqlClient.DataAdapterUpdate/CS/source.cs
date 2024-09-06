@@ -53,8 +53,5 @@ static class Program
     // </Snippet1>
 
     static string GetConnectionString() =>
-        // To avoid storing the connection string in your code,
-        // you can retrieve it from a configuration file.
-        "Data Source=(local);Initial Catalog=Northwind;"
-            + "Integrated Security=true";
+        throw new NotImplementedException();
 }

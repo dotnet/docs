@@ -164,5 +164,5 @@ If you're using the .NET Aspire stack to build your cloud-native app, you have a
 - If the API Gateway is developed by a single team, there can be a development bottleneck. This aspect is another reason why a better approach is to have several fined-grained API Gateways that respond to different client needs. You could also segregate the API Gateway internally into multiple areas or layers that are owned by the different teams working on the internal microservices.
 
 >[!div class="step-by-step"]
->[Previous](..TODO..)
+>[Previous](..testing-distributed-apps/how-aspire-helps.md)
 >[Next](reverse-proxies-with-yarp.md)

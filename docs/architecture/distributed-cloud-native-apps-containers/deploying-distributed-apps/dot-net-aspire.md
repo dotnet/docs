@@ -62,7 +62,6 @@ For more information, see [Deploy a .NET Aspire project to Azure Container Apps]
 
 For an in-depth guide using GitHub Actions, check out [Deploy a .NET Aspire app using the Azure Developer CLI and GitHub Actions](https://learn.microsoft.com/dotnet/aspire/deployment/azure/aca-deployment-github-actions).
 
-
 ## How to deploy a .NET Aspire app to Amazon Web Services (AWS)
 
 Because of the extensible nature of .NET Aspire, you can deploy to alternative web platforms, either using your own code, or by implementing community created packages.

@@ -108,9 +108,9 @@ You can easily self-host any open-source database on an Azure VM. But this means
 
 - [Azure Database for PostgreSQL](https://azure.microsoft.com/services/postgresql/) is a fully managed relational database service, based on the open-source PostgreSQL database engine. Azure Database for PostgreSQL is available with two deployment options:
 
-    - The [Single Server](/azure/postgresql/concepts-servers) deployment option is a central administrative point for multiple databases to which you can deploy many databases.
+  - The [Single Server](/azure/postgresql/concepts-servers) deployment option is a central administrative point for multiple databases to which you can deploy many databases.
 
-    - The [Hyperscale (Citus) option](https://azure.microsoft.com/blog/get-high-performance-scaling-for-your-azure-database-workloads-with-hyperscale/). This option allows the engine to fit more data in memory, parallelize queries across hundreds of nodes, and index data faster.
+  - The [Hyperscale (Citus) option](https://azure.microsoft.com/blog/get-high-performance-scaling-for-your-azure-database-workloads-with-hyperscale/). This option allows the engine to fit more data in memory, parallelize queries across hundreds of nodes, and index data faster.
 
 ## NoSQL data in Azure
 
@@ -191,7 +191,7 @@ To partition the container, items are divided into distinct subsets called logic
 
 ## Using databases in a .NET Aspire app
 
-One of the most important ways .NET Aspire helps cloud-native developers is by managing backing services and making it easy for microservices to discover them and communicate with them. Database services like Cosmos DB, SQL Server, or MongoDB are typical examples of backing services that support your microservices by persisting data. 
+One of the most important ways .NET Aspire helps cloud-native developers is by managing backing services and making it easy for microservices to discover them and communicate with them. Database services like Cosmos DB, SQL Server, or MongoDB are typical examples of backing services that support your microservices by persisting data.
 
 In .NET Aspire, there are built-in components, each of which supports a different backing service. The following database systems have .NET Aspire components, available out-of-the-box:
 

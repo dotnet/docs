@@ -52,7 +52,7 @@ While microservices are independent and focus on specific functional capabilitie
 
 **Figure 5-3**. Querying across microservices
 
-The figure shows a shopping basket microservice that adds an item to a user's shopping basket. While the data store for this microservice contains basket and line item data, it doesn't maintain product or pricing data. Instead, those data items are owned by the catalog and pricing microservices. This arrangement presents a problem. How can the shopping basket microservice add a product to the user's shopping basket when it has neither product nor pricing data in its database? 
+The figure shows a shopping basket microservice that adds an item to a user's shopping basket. While the data store for this microservice contains basket and line item data, it doesn't maintain product or pricing data. Instead, those data items are owned by the catalog and pricing microservices. This arrangement presents a problem. How can the shopping basket microservice add a product to the user's shopping basket when it has neither product nor pricing data in its database?
 
 To deal with this we can use the [Materialized View pattern](/azure/architecture/patterns/materialized-view), shown in Figure 5-4.
 

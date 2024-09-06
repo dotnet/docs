@@ -7,7 +7,7 @@ ms.date: 01/13/2021
 
 [!INCLUDE [download-alert](../includes/download-alert.md)]
 
-In the world of microservices, background tasks are essential for operations that need to run independently of user interactions, such as data processing, batch jobs, or periodic maintenance. 
+In the world of microservices, background tasks are essential for operations that need to run independently of user interactions, such as data processing, batch jobs, or periodic maintenance.
 
 Background tasks and scheduled jobs are something you might need to use in any application, whether or not it follows the microservices architecture pattern. The difference when using a microservices architecture is that you can implement the background task in a separate container so you can scale it down or up as necessary.
 

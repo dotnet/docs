@@ -43,6 +43,7 @@ In the .NET Aspire solution, in the app host project, you can register these ser
 As an example, Let's examine how you'd implement Azure Service Bus in a .NET Aspire solution.
 
 ### Prerequisites
+
 Before you begin, ensure you have an Azure Service Bus namespace. You can learn more about creating a Service Bus namespace [here](https://learn.microsoft.com/dotnet/aspire/messaging/azure-service-bus-component).
 
 ### Creating the Azure Service Bus in the app host project
@@ -119,7 +120,7 @@ For more information, see [.NET Aspire Azure Service Bus component](https://lear
 
 ## Integration events
 
-Integration events are used for bringing domain state into synchronization across multiple microservices or external systems. Each microservice can publish integration events. Other microservices subscribe to the integration events that they need to handle. When an event is published, the appropriate event handler in each receiving microservice handles the event. 
+Integration events are used for bringing domain state into synchronization across multiple microservices or external systems. Each microservice can publish integration events. Other microservices subscribe to the integration events that they need to handle. When an event is published, the appropriate event handler in each receiving microservice handles the event.
 
 An integration event is basically a data-holding class, as in the following example:
 

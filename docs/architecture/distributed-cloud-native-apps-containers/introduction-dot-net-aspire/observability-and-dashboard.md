@@ -5,7 +5,7 @@ author:
 ms.date: 04/25/2024
 ---
 
-# Observability and dashboard 
+# Observability and dashboard
 
 [!INCLUDE [download-alert](../includes/download-alert.md)]
 

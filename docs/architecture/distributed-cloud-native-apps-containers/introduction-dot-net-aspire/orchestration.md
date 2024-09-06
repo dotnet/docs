@@ -24,7 +24,7 @@ In a cloud-native environment, orchestrating microservices and other components 
    - Resources include the projects, executables, containers, external services, and cloud resources your app depends on.
 
 1. **App Host Project**:
-   - Every .NET Aspire app has a designated **App Host Project**. 
+   - Every .NET Aspire app has a designated **App Host Project**.
    - The app host project orchestrates all projects within the .NET Aspire application.
    - It runs and manages the entire app model.
    - By convention, the app host project is named with the `*.AppHost` suffix.

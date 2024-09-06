@@ -122,7 +122,7 @@ If the "redelivered" flag is set, the receiver must take that into account, beca
 - [Eventual Consistency](https://en.wikipedia.org/wiki/Eventual_consistency)
 - [The CAP Theorem](https://en.wikipedia.org/wiki/CAP_theorem)
 - [Reliability Guide (RabbitMQ documentation)](https://www.rabbitmq.com/docs/reliability#consumer-side)
- 
+
 > [!div class="step-by-step"]
 > [Previous](background-tasks-with-ihostedservice.md)
 > [Next](../chpt8-data-patterns/distributed-data.md)

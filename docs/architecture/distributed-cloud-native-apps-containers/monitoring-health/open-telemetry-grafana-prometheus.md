@@ -86,9 +86,9 @@ public static class DiagnosticServiceCollectionExtensions
 
 The code does the following:
 
-1. It creates a variable `var otelBuilder = services.AddOpenTelemetry()` to store the OpenTelemetry builder. 
+1. It creates a variable `var otelBuilder = services.AddOpenTelemetry()` to store the OpenTelemetry builder.
 1. It adds OpenTelemetry metrics and traces to `otelBuilder`.
-1. The `.AddConsoleExporter()` line ensures the metrics are displayed in the console. 
+1. The `.AddConsoleExporter()` line ensures the metrics are displayed in the console.
 1. Tracing is added using `.WithTracing()`.
 
 After adding your diagnostics project, you then need to add reference to it to the service. For example, if you have a Products service in your app, you'd add the fllowing in the corresponding `Product.csproj` file:

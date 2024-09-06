@@ -52,7 +52,7 @@ To architect redundancy, you need to identify the critical paths in your applica
 
     **Figure 9-4**. Replicated resources across multiple regions
 
-- **Implement a DNS traffic load balancer.** [Azure Traffic Manager](/azure/traffic-manager/traffic-manager-overview) provides high-availability for critical applications by load-balancing at the DNS level. It can route traffic to different regions based on geography, cluster response time, and even application endpoint health. For example, Azure Traffic Manager can direct customers to the closest AKS cluster and application instance. If you have multiple AKS clusters in different regions, use Traffic Manager to control how traffic flows to the applications that run in each cluster. 
+- **Implement a DNS traffic load balancer.** [Azure Traffic Manager](/azure/traffic-manager/traffic-manager-overview) provides high-availability for critical applications by load-balancing at the DNS level. It can route traffic to different regions based on geography, cluster response time, and even application endpoint health. For example, Azure Traffic Manager can direct customers to the closest AKS cluster and application instance. If you have multiple AKS clusters in different regions, use Traffic Manager to control how traffic flows to the applications that run in each cluster.
 
 ## Design for scalability
 

@@ -51,13 +51,13 @@ Containers include the application and all its dependencies. However, they share
 
 ### Comparison between VMs and Docker containers
 
-For VMs, there are three base layers in the host server, from the bottom-up: 
+For VMs, there are three base layers in the host server, from the bottom-up:
 
 - Infrastructure
 - Host Operating System
 - Hypervisor
 
-On top of all that, each VM has its own OS and all necessary libraries. 
+On top of all that, each VM has its own OS and all necessary libraries.
 
 For Docker, the host server only has:
 

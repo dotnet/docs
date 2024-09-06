@@ -4,11 +4,11 @@ description: Architecting Cloud Native .NET Apps for Azure | Code provenance
 ms.date: 06/03/2024
 ---
 
-# Code provenance: the lineage of Code in the digital age
+# Code provenance: the lineage of code
 
 [!INCLUDE [download-alert](includes/download-alert.md)]
 
-In the ever-evolving landscape of software development, the concept of code provenance is gaining significant traction. At its core, code provenance refers to the origin or source of code, encompassing the understanding of where code comes from, who authored it, how it has been built, and the ways in which it has been modified over time. This intricate tapestry of information is not just a historical record; it is a vital component for maintaining the integrity and security of software systems.
+At its core, code provenance refers to the origin or source of code, encompassing the understanding of where code comes from, who authored it, how it has been built, and the ways in which it has been modified over time. This intricate tapestry of information is not just a historical record; it is a vital component for maintaining the integrity and security of software systems.
 
 ## Why does code provenance matter?
 
@@ -24,7 +24,7 @@ Code provenance is particularly effective in mitigating risks posed by well-inte
 
 ## The provenance report: a glossary of code lineage
 
-A Provenance Report categorizes code into several buckets, such as brand new code, code less than two weeks old, and code more than two years old¹. These classifications help teams understand the amount of churn, the necessity of rewriting legacy code, and the efforts made to modernize and pay down technical debt.
+A provenance report categorizes code into several buckets, such as brand new code, code less than two weeks old, and code more than two years old. These classifications help teams understand the amount of churn, the necessity of rewriting legacy code, and the efforts made to modernize and pay down technical debt.
 
 >[!div class="step-by-step"]
 >[Previous](code-security.md)

@@ -18,14 +18,14 @@ Code security refers to the practices and measures taken to protect software cod
 
 The software supply chain is a complex network of developers, vendors, and third-party components that come together to create the final product. Each element in this chain presents an opportunity for security breaches, making it essential to establish secure supply chain practices. This includes vetting third-party components for vulnerabilities, continuously monitoring for new threats, and ensuring that all parties adhere to strict security standards.
 
-## Best practices for secure Code and supply chain
+## Best practices for secure code and secure supply chains
 
 1. **Implement secure coding standards**: Developers should follow secure coding guidelines to minimize vulnerabilities from the outset.
-2. **Conduct regular code reviews**: Peer reviews and automated tools can help detect issues early in the development process.
-3. **Utilize static and dynamic analysis tools**: These tools can identify potential security flaws within the codebase.
-4. **Stay updated on vulnerabilities**: Keeping abreast of the latest security threats allows for timely updates and patches.
-5. **Secure third-party components**: Ensure that all external code and libraries are from reputable sources and are up-to-date.
-6. **Educate and train staff**: A well-informed team is crucial in maintaining a secure development environment.
+1. **Conduct regular code reviews**: Peer reviews and automated tools can help detect issues early in the development process.
+1. **Utilize static and dynamic analysis tools**: These tools can identify potential security flaws within the codebase.
+1. **Stay updated on vulnerabilities**: Keeping abreast of the latest security threats allows for timely updates and patches.
+1. **Secure third-party components**: Ensure that all external code and libraries are from reputable sources and are up-to-date.
+1. **Educate and train staff**: A well-informed team is crucial in maintaining a secure development environment.
 
 >[!div class="step-by-step"]
 >[Previous](security-concepts.md)

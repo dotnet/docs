@@ -10,8 +10,6 @@ ms.date: 03/04/2024
 
 This section outlines how to create a simple microservice that performs create, read, update, and delete (CRUD) operations on a data source.
 
-!TODO need to replace with new eShop approach - so didn;t update diagrams.
-
 ## Designing a simple CRUD microservice
 
 From a design point of view, this type of containerized microservice is very simple. Perhaps the problem to solve is simple, or perhaps the implementation is only a proof of concept.
@@ -307,5 +305,5 @@ The Swagger UI API detail shows a sample of the response and can be used to exec
   [https://learn.microsoft.com/aspnet/core/tutorials/getting-started-with-nswag](/aspnet/core/tutorials/getting-started-with-nswag)
 
 > [!div class="step-by-step"]
-> [Previous](microservice-application-design.md)
-> [Next](multi-container-applications-docker-compose.md)
+> [Previous](azure-caching.md)
+> [Next](../cloud-native-resiliency/cloud-native-resiliency.md)

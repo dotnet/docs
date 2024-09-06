@@ -56,6 +56,8 @@ An important point is that you might want to communicate to multiple microservic
 
 In asynchronous event-driven communication, one microservice publishes events to an event bus and many microservices can subscribe to it, to get notified and act on it. Your implementation will determine what protocol to use for event-driven, message-based communications. [AMQP](https://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol) can help achieve reliable queued communication.
 
+The amount of data to share in these events is another important consideration, whether just an identifier or also including various elements of business data as well. These considerations are discussed in this blog post on [thin vs fat integration events](https://codeopinion.com/thin-vs-fat-integration-events/).
+
 When you use an event bus, you might want to use an abstraction level (like an event bus interface) based on a related implementation in classes with code using the API from a message broker like [RabbitMQ](https://www.rabbitmq.com/) or a service bus like [Azure Service Bus with Topics](/azure/service-bus-messaging/service-bus-dotnet-how-to-use-topics-subscriptions). Alternatively, you might want to use a higher-level service bus like [NServiceBus](https://particular.net/nservicebus), [MassTransit](https://masstransit.io/), or [Brighter](https://www.goparamore.io/) to articulate your event bus and publish/subscribe system.
 
 ## A note about messaging technologies for production systems

@@ -66,4 +66,4 @@ We next move to distributed data in cloud-native systems and the benefits and ch
 
 >[!div class="step-by-step"]
 >[Previous](grpc.md)
->[Next](---TO DO---.md)
+>[Next](../event-based-communication-patterns/integration-event-based-microservice-communications.md)

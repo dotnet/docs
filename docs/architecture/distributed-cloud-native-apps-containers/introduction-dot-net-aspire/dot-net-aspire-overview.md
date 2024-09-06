@@ -43,5 +43,5 @@ In summary, .NET Aspire is all about providing a robust, opinionated framework t
 For more information, see [.NET Aspire overview](https://learn.microsoft.com/dotnet/aspire/get-started/aspire-overview)
 
 >[!div class="step-by-step"]
->[Previous](..TODO..)
+>[Previous](../chpt2-introduction-containers-docker/official-container-images-tooling.md)
 >[Next](orchestration.md)

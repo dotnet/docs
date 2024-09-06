@@ -56,4 +56,4 @@ The **.NET Aspire Dashboard** is a stand alone tool developers can use with thei
 
 >[!div class="step-by-step"]
 >[Previous](components.md)
->[Next](..TODO..)
+>[Next](../architecting-distributed-cloud-native-applications/why-choose-distributed-architecture.md)

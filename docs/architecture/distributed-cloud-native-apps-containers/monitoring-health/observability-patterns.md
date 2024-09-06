@@ -94,5 +94,5 @@ You can craft queries against the monitoring tools to look for known failure con
 A common mistage in alerting is to fire too many alerts for humans to investigate. Service owners will rapidly become desensitized to errors that they've previously investigated and found to be benign. Then, when true errors occur, they'll be lost in the noise of hundreds of false positives. Therefore you should take case to alert owners only when problems are serious or critical.
 
 >[!div class="step-by-step"]
->[Previous](..TODO..)
+>[Previous](../cloud-native-resiliency/cloud-native-resiliency.md)
 >[Next](open-telemetry-grafana-prometheus.md)

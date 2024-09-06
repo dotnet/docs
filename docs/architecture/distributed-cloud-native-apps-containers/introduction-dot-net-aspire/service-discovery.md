@@ -53,6 +53,7 @@ builder.Services.AddHttpClient<BasketServiceDashboardClient>(client =>
 ```
 
 In this example:
+
 - We configure two `HttpClient` classes — one for the core basket service and another for the basket service's dashboard.
 - The `_dashboard` endpoint is resolved from the name `https://_dashboard.basket`.
 
@@ -70,6 +71,7 @@ With the configuration-based endpoint resolver, named endpoints can be specified
 ```
 
 In this JSON:
+
 - The default endpoint resolves the name `https://basket` to `10.2.3.4:8080`.
 - The "dashboard" endpoint resolves the name `https://_dashboard.basket` to `10.2.3.4:9999`.
 

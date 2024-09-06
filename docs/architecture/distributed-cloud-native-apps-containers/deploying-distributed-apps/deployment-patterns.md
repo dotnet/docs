@@ -91,7 +91,7 @@ Use these approaches to accelerate your deployment cycle:
 
 ### Challenges and considerations
 
-Before you take steps to accelerate your deployment, consider these factors: 
+Before you take steps to accelerate your deployment, consider these factors:
 
 1. **Testing**:
    - Frequent deployments require robust automated testing.

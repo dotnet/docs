@@ -189,7 +189,7 @@ In cloud-native environments, where services are ephemeral and interactions comp
 
 #### *Manageability*
 
-Cloud-native apps demand robust automation for deployment, scaling, and recovery processes. The challenge lies in creating management tools that can adapt to rapid changes without human intervention, ensuring consistent performance and reliability. 
+Cloud-native apps demand robust automation for deployment, scaling, and recovery processes. The challenge lies in creating management tools that can adapt to rapid changes without human intervention, ensuring consistent performance and reliability.
 
 ## Containers
 

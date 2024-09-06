@@ -72,7 +72,8 @@ You don't need to change any of your code if the default resiliency settings mee
 - **Implement resiliency in a cloud-native .NET microservice** \
   <https://learn.microsoft.com/training/modules/microservices-resiliency-aspnet-core/>
 
-- **Tutorial: Add .NET Aspire to an existing .NET app** \<https://learn.microsoft.com/dotnet/aspire/get-started/add-aspire-existing-app>
+- **Tutorial: Add .NET Aspire to an existing .NET app** \
+  <https://learn.microsoft.com/dotnet/aspire/get-started/add-aspire-existing-app>
 
 >[!div class="step-by-step"]
 >[Previous](resilient-communication.md)

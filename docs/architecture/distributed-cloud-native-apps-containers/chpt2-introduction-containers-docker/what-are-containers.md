@@ -9,7 +9,7 @@ ms.date: 04/25/2024
 
 [!INCLUDE [download-alert](../includes/download-alert.md)]
 
-Containerization is an approach to software development in which an application or service, its dependencies, and its configuration (abstracted as deployment manifest files) are packaged together as a container image. Each container can be run as a unit and deployed to a container host. Docker is often used to host containers, or you can choose more scalable and flexible container orchestrators like Kubernetes. 
+Containerization is an approach to software development in which an application or service, its dependencies, and its configuration (abstracted as deployment manifest files) are packaged together as a container image. Each container can be run as a unit and deployed to a container host. Docker is often used to host containers, or you can choose more scalable and flexible container orchestrators like Kubernetes.
 
 Just as shipping containers allow goods to be transported by ship, train, or truck regardless of the cargo inside, software containers act as a standard unit of software deployment that can contain different code and dependencies. Containerizing software this way enables developers and IT professionals to deploy them across environments with little or no modification.
 

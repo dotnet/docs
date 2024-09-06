@@ -63,7 +63,6 @@ We next move to distributed data in cloud-native systems and the benefits and ch
 
 - [Building gRPC Services with .NET video](https://learn.microsoft.com/Shows/The-Cloud-Native-Show/Building-Microservices-with-gRPC-and-NET)
 
-
 >[!div class="step-by-step"]
 >[Previous](grpc.md)
 >[Next](../event-based-communication-patterns/integration-event-based-microservice-communications.md)

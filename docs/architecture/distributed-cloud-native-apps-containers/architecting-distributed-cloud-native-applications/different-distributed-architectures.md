@@ -9,7 +9,7 @@ ms.date: 04/06/2022
 
 [!INCLUDE [download-alert](../includes/download-alert.md)]
 
-In the ever-evolving landscape of software development, architects and developers are continually seeking efficient ways to design and build distributed applications. Let's explore some of the current architectural approaches. We'll delve into the characteristics, advantages, and challenges of each approach. As we navigate through these different paradigms, we'll discuss crucial aspects such as containerization, data sovereignty, scalability, and communication patterns. 
+In the ever-evolving landscape of software development, architects and developers are continually seeking efficient ways to design and build distributed applications. Let's explore some of the current architectural approaches. We'll delve into the characteristics, advantages, and challenges of each approach. As we navigate through these different paradigms, we'll discuss crucial aspects such as containerization, data sovereignty, scalability, and communication patterns.
 
 Understanding these architectural styles will allow you to make informed decisions when designing robust, scalable, and maintainable distributed systems in today's cloud-native environment.
 
@@ -59,7 +59,7 @@ Communication patterns in microservices architectures are diverse. They can invo
 
 ### .NET Aspire and microservices
 
-Although a microservices architecture is well suited to large apps with complex scaling needs and continuous development, you've seen that they're not always easy to manage. For example, sometimes it's hard to determine exactly which microservices and other components make up your entire app. Also, because each microservice might be written by a different team, common concerns like observability and resiliency may be implemented inconsistently or not at all. 
+Although a microservices architecture is well suited to large apps with complex scaling needs and continuous development, you've seen that they're not always easy to manage. For example, sometimes it's hard to determine exactly which microservices and other components make up your entire app. Also, because each microservice might be written by a different team, common concerns like observability and resiliency may be implemented inconsistently or not at all.
 
 This is where .NET Aspire comes in - it's a stack that helps you create manageable and consistent microservices, and assemble them into large apps. You can build .NET microservices without .NET Aspire, but if you do you'll have to work harder to solve common problems. For example, .NET Aspire:
 
@@ -68,7 +68,7 @@ This is where .NET Aspire comes in - it's a stack that helps you create manageab
 - Makes it easy to use common backing services, such as databases and service buses, by providing out-of-the-box components for each one.
 - Implements resiliency in these components to prevent and recover from failures, without requiring your development teams to build it.
 
-If you've already started building and deploying microservices apps, then .NET Aspire may not help you, because it's opinionated about how they should be built and that might not match your design. However, if you're new to microservices and cloud-native design, or if you're starting an app from scratch, it can help to make the project easier and reduce development time. 
+If you've already started building and deploying microservices apps, then .NET Aspire may not help you, because it's opinionated about how they should be built and that might not match your design. However, if you're new to microservices and cloud-native design, or if you're starting an app from scratch, it can help to make the project easier and reduce development time.
 
 >[!div class="step-by-step"]
 >[Previous](why-choose-distributed-architecture.md)

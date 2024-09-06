@@ -14,7 +14,7 @@ static class Program
     // <Snippet1>
     static string? GetDocumentSummary(int documentID)
     {
-        //Assumes GetConnectionString returns a valid connection string.
+        // Assumes GetConnectionString returns a valid connection string.
         using (SqlConnection connection =
                    new(GetConnectionString()))
         {
@@ -22,7 +22,7 @@ static class Program
             SqlCommand command = connection.CreateCommand();
             try
             {
-                // Setup the command to execute the stored procedure.
+                // Set up the command to execute the stored procedure.
                 command.CommandText = "GetDocumentSummary";
                 command.CommandType = CommandType.StoredProcedure;
 
@@ -56,10 +56,7 @@ static class Program
         }
     }
     // </Snippet1>
+
     static string GetConnectionString() =>
-        // To avoid storing the connectionection string in your code,
-        // you can retrieve it from a configuration file, using the
-        // System.Configuration.ConfigurationSettings.AppSettings property
-        "Data Source=(local);Initial Catalog=AdventureWorks;" +
-            "Integrated Security=SSPI";
+        throw new NotImplementedException();
 }

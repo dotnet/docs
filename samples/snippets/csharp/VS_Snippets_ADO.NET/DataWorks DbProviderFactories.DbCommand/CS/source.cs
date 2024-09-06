@@ -5,10 +5,6 @@ using System.Data.SqlClient;
 
 static class Program
 {
-    static void Main()
-    {
-    }
-
     // <Snippet1>
     // Takes a DbConnection, creates and executes a DbCommand.
     // Assumes SQL INSERT syntax is supported by provider.

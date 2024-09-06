@@ -171,14 +171,11 @@ namespace DP_Custom_CopyToDataTable_Examples
 
         static void FillDataSet(DataSet ds)
         {
-            // <SnippetFillDataSet>
             try
             {
                 // Create a new adapter and give it a query to fetch sales order, contact,
-                // address, and product information for sales in the year 2002. Point connection
-                // information to the configuration setting "AdventureWorks".
-                const string connectionString = "Data Source=localhost;Initial Catalog=AdventureWorks;"
-                    + "Integrated Security=true;";
+                // address, and product information for sales in the year 2002.
+                const string connectionString = "some secure connection string";
 
                 var da = new SqlDataAdapter(
                     "SELECT SalesOrderID, ContactID, OrderDate, OnlineOrderFlag, " +
@@ -242,7 +239,6 @@ namespace DP_Custom_CopyToDataTable_Examples
             {
                 Console.WriteLine("SQL exception occurred: " + ex.Message);
             }
-            // </SnippetFillDataSet>
         }
 
         //<SnippetItemClass>
@@ -263,7 +259,8 @@ namespace DP_Custom_CopyToDataTable_Examples
             public string Director { get; set; }
         }
         //</SnippetItemClass>
-    } // Program
+    }
+
     // <SnippetCustomCopyToDataTableMethods>
     public static class CustomLINQtoDataSetMethods
     {

@@ -131,8 +131,5 @@ static class Program
     // </Snippet2>
 
     static string GetConnectionString() =>
-        // To avoid storing the connection string in your code,
-        // you can retrieve it from a configuration file.
-        "Provider=Microsoft.Jet.OLEDB.4.0;Data Source="
-            + "c:\\Data\\Northwind.mdb;User Id=admin;Password=;";
+        throw new NotImplementedException();
 }

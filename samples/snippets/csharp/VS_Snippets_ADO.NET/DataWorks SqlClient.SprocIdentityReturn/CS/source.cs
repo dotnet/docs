@@ -1,5 +1,4 @@
-﻿// <Snippet1>
-using System;
+﻿using System;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -14,6 +13,7 @@ static class Program
 
     static void ReturnIdentity(string connectionString)
     {
+        // <Snippet1>
         using (SqlConnection connection = new(connectionString))
         {
             // Create a SqlDataAdapter based on a SELECT query.
@@ -60,11 +60,9 @@ static class Program
                 Console.WriteLine("  {0}: {1}", row[0], row[1]);
             }
         }
+        // </Snippet1>
     }
 
     static string GetConnectionString() =>
-        // To avoid storing the connection string in your code,
-        // you can retrieve it from a configuration file.
-        "Data Source=(local);Initial Catalog=Northwind;Integrated Security=true";
+        throw new NotImplementedException();
 }
-// </Snippet1>

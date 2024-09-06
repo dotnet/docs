@@ -36,8 +36,5 @@ static class Class1
     }
     // </Snippet1>
     static string GetConnectionString() =>
-        // To avoid storing the connection string in your code,
-        // you can retrieve it from a configuration file.
-        "Data Source=(local);Initial Catalog=AdventureWorks;"
-            + "Integrated Security=true";
+        throw new NotImplementedException();
 }

@@ -92,4 +92,3 @@ For more information, see [.NET 8, Aspire, & Aspir8: Deploy Microservices Into D
 
 >[!div class="step-by-step"]
 >[Previous](distribution-patterns.md)
->[Next](---TO DO---)

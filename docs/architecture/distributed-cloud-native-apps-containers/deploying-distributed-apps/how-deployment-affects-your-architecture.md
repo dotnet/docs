@@ -24,5 +24,5 @@ Conversely, the architecture of a distributed application can determine the comp
 The architecture also prescribes the deployment environment. A cloud-native architecture is designed with cloud services in mind, leveraging their scalability and managed services to reduce operational overhead. This necessitates a deployment strategy that is cloud-centric, often automated through infrastructure as code (IaC) tools such as Terraform or AWS CloudFormation.
 
 >[!div class="step-by-step"]
->[Previous](---TO DO---)
+>[Previous](../api-gateways/gateway-patterns.md)
 >[Next](development-vs-production.md)

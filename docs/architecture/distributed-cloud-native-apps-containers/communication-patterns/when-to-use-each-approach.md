@@ -158,4 +158,4 @@ In the next chapter we'll explore in more detail service-to-service communicatio
 
 >[!div class="step-by-step"]
 >[Previous](communication-patterns.md)
->[Next](---TO DO---)
+>[Next](../service-to-service-communication-patterns/introduction.md)

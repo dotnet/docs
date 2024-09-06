@@ -76,5 +76,4 @@ The CNCF fosters an ecosystem of open-source code and vendor-neutrality. Followi
 So, what exactly is cloud native? Let's explore this new world.
 
 >[!div class="step-by-step"]
->[Previous](..TODO..)
 >[Next](what-is-cloud-native.md)

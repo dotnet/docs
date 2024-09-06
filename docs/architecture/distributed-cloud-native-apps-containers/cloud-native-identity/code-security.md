@@ -6,7 +6,7 @@ ms.date: 06/03/2024
 
 # Ensuring code security in the age of digital supply chain vulnerabilities
 
-[!INCLUDE [download-alert](includes/download-alert.md)]
+[!INCLUDE [download-alert](../includes/download-alert.md)]
 
 In the rapidly evolving digital landscape, code security has become a paramount concern for organizations worldwide. As businesses increasingly rely on software to drive operations, the security of their code and the integrity of their supply chains have emerged as critical factors in safeguarding against cyber threats.
 

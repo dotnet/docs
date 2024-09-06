@@ -38,5 +38,5 @@ Cloud platforms can detect and mitigate many of these infrastructure issues. The
 In the following sections, we'll explore defensive techniques that your service and managed cloud resources can use to minimize downtime and disruption caused by these challenges.
 
 >[!div class="step-by-step"]
->[Previous](..TODO..)
+>[Previous](../chpt8-data-patterns/distributed-data.md)
 >[Next](application-resiliency-patterns.md)

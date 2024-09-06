@@ -236,11 +236,11 @@ The <xref:System.Runtime.CompilerServices.OverloadResolutionPriorityAttribute> e
 
 For example, you might add a new overload that uses <xref:System.ReadOnlySpan%601> to reduce memory allocations:
 
-:::code language="csharp" source="snippets/OrpaExample.cs" ID="SnippetOverloadExample":::
+:::code language="csharp" source="snippets/OrpaSnippets.cs" ID="SnippetOverloadExample":::
 
 Overload resolution considers the two methods equally good for some argument types. For an argument of `int[]`, it prefers the first overload. To get the compiler to prefer the `ReadOnlySpan` version, you can increase the priority of that overload. The following example shows the effect of adding the attribute:
 
-:::code language="csharp" source="snippets/OrpaExample.cs" ID="SnippetOrpaExample":::
+:::code language="csharp" source="snippets/OrpaSnippets.cs" ID="SnippetOrpaExample":::
 
 Library authors should use this attribute as a last resort when adding a new and better method overload. Library authors should have a deep understanding of how [Overload resolution](~/_csharplang/proposals/overload-resolution-priority.md#overload-resolution-priority) impacts choosing the better method. Otherwise, unexpected errors can result.
 

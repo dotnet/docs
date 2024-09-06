@@ -163,25 +163,25 @@ How will front-end client applications communicate with backed-end core microser
 
 How will back-end core microservices communicate with each other? Will you allow direct HTTP calls that can increase coupling and impact performance and agility? Or might you consider decoupled messaging with queue and topic technologies?
 
-Communication is covered in the [Cloud-native communication patterns](---TO DO---) chapter.
+Communication is covered in the [Cloud-native communication patterns](../communication-patterns/communication-patterns.md) chapter.
 
 #### *Resiliency*
 
 A microservices architecture moves your system from in-process to out-of-process network communication. In a distributed architecture, what happens when Service B isn't responding to a network call from Service A? Or, what happens when Service C becomes temporarily unavailable and other services calling it become blocked?
 
-Resiliency is covered in the [Cloud-native resiliency](---TO DO---) chapter.
+Resiliency is covered in the [Cloud-native resiliency](../cloud-native-resiliency/cloud-native-resiliency.md) chapter.
 
 #### *Distributed Data*
 
 By design, each microservice encapsulates its own data, exposing operations via its public interface. If so, how do you query data or implement a transaction across multiple services?
 
-Distributed data is covered in the [Cloud-native data patterns](---TO DO---) chapter.
+Distributed data is covered in the [Cloud-native data patterns](../chpt8-data-patterns/distributed-data.md) chapter.
 
 #### *Secrets*
 
 How will your microservices securely store and manage secrets and sensitive configuration data?
 
-Secrets are covered in detail [Cloud-native security](---TO DO---).
+Secrets are covered in detail [Cloud-native security](../cloud-native-identity/cloud-native-security.md).
 
 #### *Observability*
 
@@ -288,7 +288,7 @@ On a final thought, backing services also promote the **Statelessness** principl
 
 >*Factor \#6* specifies that, "Each microservice should execute in its own process, isolated from other running services. Externalize required state to a backing service such as a distributed cache or data store."
 
-Backing services are discussed in [Cloud-native data patterns](---TO DO---) and [Cloud-native communication patterns](---TO DO---).
+Backing services are discussed in [Cloud-native data patterns](../chpt8-data-patterns/distributed-data.md) and [Cloud-native communication patterns](../communication-patterns/communication-patterns.md).
 
 ## Automation
 
@@ -329,8 +329,6 @@ In the previous figure, pay special attention to separation of tasks:
 5. Finally, the released feature is run in the target execution environment. Releases are immutable meaning that any change must create a new release.
 
 Applying these practices, organizations have radically evolved how they ship software. Many have moved from quarterly releases to on-demand updates. The goal is to catch problems early in the development cycle when they're less expensive to fix. The longer the duration between integrations, the more expensive problems become to resolve.  With consistency in the integration process, teams can commit code changes more frequently, leading to better collaboration and software quality.
-
-Infrastructure as code and deployment automation, along with GitHub and Azure DevOps are discussed in detail in [DevOps](./devops.md).
 
 ## How does .NET Aspire help?
 

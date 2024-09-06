@@ -41,5 +41,5 @@ Here are key obstacles faced during distributed app testing and strategies to ov
     - **Solution**: Set up **centralized logging** tools, such as [ELK stack](https://learn.microsoft.com/azure/virtual-machines/linux/tutorial-elasticsearch) or [Prometheus](https://learn.microsoft.com/azure/azure-monitor/essentials/prometheus-metrics-overview). Use [distributed tracing](https://learn.microsoft.com/azure/azure-monitor/app/distributed-trace-data) to visualize request flows.
 
 >[!div class="step-by-step"]
->[Previous](...TODO...)
+>[Previous](../cloud-native-identity/keycloak.md)
 >[Next](test-aspnet-core-services-web-apps.md)

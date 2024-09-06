@@ -45,7 +45,7 @@ Certain platforms, like Azure Container Apps and Kubernetes when configured acco
 
 In .NET Aspire, service discovery features are built-in and easy to use. In any project that you've based on the .NET Aspire solution templates, or that you've added .NET Aspire orchestration to, .NET service discovery is already set up and configured. All you have to do is create the services in the App Host project, and then pass them to the other services that use them.
 
-For example, this code creates two microservices called `catalog` and `basket`, each of which is a project in the .NET Aspire solution. It uses the `WithReference` extension method to pass these microservices to the `frontend` microservice: 
+For example, this code creates two microservices called `catalog` and `basket`, each of which is a project in the .NET Aspire solution. It uses the `WithReference` extension method to pass these microservices to the `frontend` microservice:
 
 ```csharp
 var builder = DistributedApplication.CreateBuilder(args);

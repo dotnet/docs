@@ -166,7 +166,7 @@ Access to the key vault can be monitored to ensure that only the expected applic
 
 #### Azure Key Vault and .NET Aspire
 
-You don't have to use .NET Aspire to connect your cloud-native app to Azure Key Vault, but if you do, much of the work is done for you because .NET Aspire includes a built-in Key Vault component. You can create and configure a Key Vault backing service centrally, in the .NET Aspire app host project. Then, you pass that service to every microservice that uses keys. 
+You don't have to use .NET Aspire to connect your cloud-native app to Azure Key Vault, but if you do, much of the work is done for you because .NET Aspire includes a built-in Key Vault component. You can create and configure a Key Vault backing service centrally, in the .NET Aspire app host project. Then, you pass that service to every microservice that uses keys.
 
 In such a microservice, you use dependency injection to retrieve the backing service and then interact with it using a `SecretClient` object as normal. You can, for example, retrieve a password from the vault and use it to authenticate with another microservice.
 

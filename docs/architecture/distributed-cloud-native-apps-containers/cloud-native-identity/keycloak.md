@@ -34,7 +34,7 @@ Beyond role-based authorization, Keycloak offers fine-grained authorization serv
 
 ## Keycloak and .NET Aspire
 
-The .NET Aspire stack includes a built-in component to help you interact with Keycloak. As with other .NET Aspire components, you create a Keycloak backing service in the .NET Aspire app host project, and then pass it to the microservices that authenticate users. 
+The .NET Aspire stack includes a built-in component to help you interact with Keycloak. As with other .NET Aspire components, you create a Keycloak backing service in the .NET Aspire app host project, and then pass it to the microservices that authenticate users.
 
 In each of those microservices, you can add authentication types and configure their options to identify users. For example, this code adds JSON Web Token (JWT) bearer authentication:
 

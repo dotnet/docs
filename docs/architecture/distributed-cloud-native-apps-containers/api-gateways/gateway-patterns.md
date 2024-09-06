@@ -107,7 +107,7 @@ Azure API Management is available across [six different tiers](https://azure.mic
 - Premium
 - Isolated
 
-The Developer tier is meant for non-production workloads and evaluation. The other tiers offer progressively more power, features, and higher service level agreements (SLAs). 
+The Developer tier is meant for non-production workloads and evaluation. The other tiers offer progressively more power, features, and higher service level agreements (SLAs).
 
 The Premium tier provides [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview) and [multi-region support](/azure/api-management/api-management-howto-deploy-multi-region). All tiers have a fixed price per hour.
 

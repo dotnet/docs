@@ -59,7 +59,7 @@ Azure Redis Cache is available across a number of predefined configurations and 
 .NET Aspire includes several built-in components that can help you cache data in Redis, whether that service is running in Azure, in a container, or elsewhere. The components come in three types:
 
 - **Caching.** This component stores frequently accessed data in a single instance of Redis.
-- **Distributed Caching.** Use this component if your Redis cache may consist of multiple servers. 
+- **Distributed Caching.** Use this component if your Redis cache may consist of multiple servers.
 - **Output Caching.** Use this component if you want to cache complete HTTP responses, such as a full web page or a response to an API call in HTML format.
 
 In the app host, you add the Redis hosting package. In this case, we'll add a distributed cache:

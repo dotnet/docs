@@ -12,7 +12,7 @@ Just as patterns have been developed to aid in the layout of code in application
 
 ## When to use logging
 
-When users report problems with an application, it's useful to be able to see what the app was doing when the problem occurred. To investigate such past events, your app must record them. The process of recording events is known as logging. Anytime failures or problems occur in production, you can use thorough logs to diagnose the problem or to help you recreate the conditions under which the failures occurred in a test environment. 
+When users report problems with an application, it's useful to be able to see what the app was doing when the problem occurred. To investigate such past events, your app must record them. The process of recording events is known as logging. Anytime failures or problems occur in production, you can use thorough logs to diagnose the problem or to help you recreate the conditions under which the failures occurred in a test environment.
 
 ### Challenges when logging with cloud-native applications
 

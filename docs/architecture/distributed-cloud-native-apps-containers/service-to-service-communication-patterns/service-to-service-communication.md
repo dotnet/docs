@@ -63,9 +63,9 @@ Another option for eliminating microservice-to-microservice coupling is an [Aggr
 
 The pattern isolates an operation that makes calls to multiple back-end microservices, centralizing its logic into a specialized microservice.  The purple checkout aggregator microservice in the previous figure orchestrates the workflow for the Checkout operation. It includes calls to several back-end microservices in a sequenced order. Data from the workflow is aggregated and returned to the caller. While it still implements direct HTTP calls, the aggregator microservice reduces direct dependencies among back-end microservices.
 
-### Request/Reply Pattern
+### Request-reply pattern
 
-Another approach for decoupling synchronous HTTP messages is a [Request-Reply pattern](https://www.enterpriseintegrationpatterns.com/patterns/messaging/RequestReply.html), which uses queuing communication. Communication using a queue is always a one-way channel, with a producer sending the message and consumer receiving it. With this pattern, both a request queue and response queue are implemented.
+Another approach for decoupling synchronous HTTP messages is a [Request-reply pattern](https://www.enterpriseintegrationpatterns.com/patterns/messaging/RequestReply.html), which uses queuing communication. Communication using a queue is always a one-way channel, with a producer sending the message and consumer receiving it. With this pattern, both a request queue and response queue are implemented.
 
 > ![Request-reply pattern diagram](media/request-reply-pattern.png)
 
@@ -233,5 +233,5 @@ When you build a cloud-native app using the .NET Aspire stack, service discovery
 However, the code that sends and retrieves messages will be similar, whether you use .NET Aspire or not.
 
 >[!div class="step-by-step"]
->[Previous](front-end-client-communication.md)
+>[Previous](service-discovery.md)
 >[Next](grpc.md)

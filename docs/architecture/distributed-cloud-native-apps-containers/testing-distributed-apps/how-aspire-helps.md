@@ -33,4 +33,4 @@ By embracing .NET Aspire, teams can streamline their testing processes, reduce t
 
 >[!div class="step-by-step"]
 >[Previous](challenges-of-distributed-app-testing.md)
->[Next](...TO DO...)
+>[Next](../api-gateways/gateway-patterns.md)

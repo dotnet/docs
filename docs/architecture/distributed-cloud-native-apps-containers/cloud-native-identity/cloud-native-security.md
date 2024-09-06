@@ -21,5 +21,5 @@ In short, security is serious business. Cloud native apps have their own securit
 In this chapter you will learn about identity, authorization, and authentication, how security is provided on-premises and in the cloud, as well as about security products, both from Microsoft and third-party open-source providers.
 
 >[!div class="step-by-step"]
->[Previous]
+>[Previous](../monitoring-health/azure-monitor.md)
 >[Next](identity.md)

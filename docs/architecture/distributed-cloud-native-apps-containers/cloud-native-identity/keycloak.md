@@ -52,4 +52,4 @@ For more detailed information and the latest updates on Keycloak, you can visit 
 
 >[!div class="step-by-step"]
 >[Previous](identity-server.md)
->[Next]
+>[Next](../testing-distributed-apps/challenges-of-distributed-app-testing.md)

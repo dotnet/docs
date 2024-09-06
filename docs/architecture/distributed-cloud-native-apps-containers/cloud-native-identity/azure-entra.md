@@ -18,4 +18,4 @@ Microsoft Entra ID also helps customers access internal resources such as apps o
 
 >[!div class="step-by-step"]
 >[Previous](authentication-authorization.md)
->[Next](identityserver.md)
+>[Next](identity-server.md)

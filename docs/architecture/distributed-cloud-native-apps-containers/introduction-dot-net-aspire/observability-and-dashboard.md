@@ -9,7 +9,7 @@ ms.date: 04/25/2024
 
 [!INCLUDE [download-alert](../includes/download-alert.md)]
 
-![A diagram and screenshot of the .NET Aspire dashboard.](media/dashboard.png)
+![A diagram and screenshot of the .NET Aspire dashboard.](./media/dashboard.png)
 
 **Figure 3-6**. The .NET Aspire dashboard and its features.
 

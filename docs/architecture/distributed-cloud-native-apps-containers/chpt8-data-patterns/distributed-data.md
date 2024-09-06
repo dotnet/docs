@@ -117,5 +117,5 @@ The main challenge with sharding is deciding how to partition your data across t
 - **Hash strategy**: a hash function is used to map entities to shards.
 
 >[!div class="step-by-step"]
->[Previous](...TODO...)
+>[Previous](../event-based-communication-patterns/subscribe-events.md)
 >[Next](relational-vs-nosql-data.md)

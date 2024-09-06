@@ -306,4 +306,4 @@ The Swagger UI API detail shows a sample of the response and can be used to exec
 
 > [!div class="step-by-step"]
 > [Previous](azure-caching.md)
-> [Next](TODO)
+> [Next](../cloud-native-resiliency/cloud-native-resiliency.md)

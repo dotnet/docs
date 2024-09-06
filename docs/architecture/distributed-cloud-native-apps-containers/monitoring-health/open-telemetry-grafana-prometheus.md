@@ -8,21 +8,19 @@ ms.date: 04/06/2022
 
 [!INCLUDE [download-alert](includes/download-alert.md)]
 
-!TODO show this manual approach to OTel then show how it's for free in Aspire and dashboards.
-
 OpenTelemetry is an open-source observability framework. OpenTelemetry standardizes the way telemetry data is gathered and shared with back-end platforms. It provides a common format of instrumentation across all your microservices. You don't have to reinstrument code or install different proprietary agents every time a back-end platform changes.
 
-OpenTelemetry helps you to monitor all three pillars of observability. This means logs, metrics, and traces.
+OpenTelemetry helps you to monitor all three pillars of observability: logs, metrics, and traces.
 
 ## Add OpenTelemetry to your cloud-native app
 
-Your add OpenTelemetry to your cloud-native app through NuGet packages. For example, the [OpenTelemetry package](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry/README.md) via the Core API. This is the main library that provides the core OpenTelemetry capabilities. Other packages include the following:
+To add OpenTelemetry to your cloud-native app, use NuGet packages. For example, the [OpenTelemetry package](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry/README.md) is the main library that provides the core OpenTelemetry capabilities. Other packages include the following:
 
 - [OpenTelemetry.Extensions.Hosting](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Extensions.Hosting/README.md) - Extension methods for automatically starting and stopping OpenTelemetry tracing in ASP.NET Core hosts.
-- [OpenTelemetry.Instrumentation.AspNetCore](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Instrumentation.AspNetCore/README.md) - Can collect many metrics about your cloud-native app, and you won't have to write any code.
-- [OpenTelemetry.Exporter.Console](https://github.com/open-telemetry/opentelemetry-dotnet/tree/main/src/OpenTelemetry.Exporter.Console/README.md) - Enables your cloud-native app to write telemetry details to the console.
+- [OpenTelemetry.Instrumentation.AspNetCore](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Instrumentation.AspNetCore/README.md) - Classes that can collect many metrics about your cloud-native app, without any custom code.
+- [OpenTelemetry.Exporter.Console](https://github.com/open-telemetry/opentelemetry-dotnet/tree/main/src/OpenTelemetry.Exporter.Console/README.md) - Classes that enable your cloud-native app to write telemetry details to the console.
 
-There are many other [packages](/dotnet/core/diagnostics/observability-with-otel) available, you can use any of them depending on your cloud-native app's needs.
+There are many other [packages](/dotnet/core/diagnostics/observability-with-otel) available. Choose the most appropriate, depending on your cloud-native app's needs.
 
 Suppose you have a cloud-native eShop store .NET Core app. In this case, you'd add a new diagnostics project for OpenTelemetry in your app, so that any microservice in your app can access it.
 
@@ -87,8 +85,11 @@ public static class DiagnosticServiceCollectionExtensions
 ```
 
 The code does the following:
-1. Create a variable `var otelBuilder = services.AddOpenTelemetry()` to store the OpenTelemetry builder. OpenTelemetry metrics and traces are then added to otelBuilder.
-1. The `.AddConsoleExporter()` line ensures the metrics are displayed in the console. Tracing is added using `.WithTracing()`.
+
+1. It creates a variable `var otelBuilder = services.AddOpenTelemetry()` to store the OpenTelemetry builder. 
+1. It adds OpenTelemetry metrics and traces to `otelBuilder`.
+1. The `.AddConsoleExporter()` line ensures the metrics are displayed in the console. 
+1. Tracing is added using `.WithTracing()`.
 
 After adding your diagnostics project, you then need to add reference to it to the service. For example, if you have a Products service in your app, you'd add the fllowing in the corresponding `Product.csproj` file:
 
@@ -112,11 +113,11 @@ A common way to view the data collected through OpenTelemetry, in addition to Az
 
 **Figure 10-5**. Prometheus UI
 
-Prometheus is an open-source monitoring tool that gets metrics from your app. To use Prometheus you do the following:
+Prometheus is an open-source monitoring tool that gets metrics from your app. To use Prometheus you complete the following steps:
 
 1. Add a Prometheus container.
 1. Configure the container to collect data from each microservice.
-1. Add the Prometheus .NET client library to collect metrics from your cloudnative app.
+1. Add the Prometheus .NET client library to collect metrics from your cloud-native app.
 1. OpenTelemetry comes with an exporter for Prometheus. You add the exporter to your application by including the `OpenTelemetry.Exporter.Prometheus.AspNetCore` NuGet package.
 1. Finally, you add the endpoints for your microservices. For instance:
 
@@ -135,7 +136,7 @@ Prometheus is an open-source monitoring tool that gets metrics from your app. To
 
 Then you can use Grafana to create dashboards and view the metrics gathered by Prometheus.
 
-!["A screenshot of a Grafana dashboard.](media/grafana.png)
+![A screenshot of a Grafana dashboard.](media/grafana.png)
 
 To do configure Grafana, you:
 
@@ -153,7 +154,6 @@ To do configure Grafana, you:
       access: proxy
       editable: true
     ```
-
 
 >[!div class="step-by-step"]
 >[Previous](observability-patterns.md)

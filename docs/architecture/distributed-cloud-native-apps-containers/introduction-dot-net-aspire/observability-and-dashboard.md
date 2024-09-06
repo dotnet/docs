@@ -10,7 +10,6 @@ ms.date: 04/25/2024
 [!INCLUDE [download-alert](../includes/download-alert.md)]
 
 ![A diagram and screenshot of the .NET Aspire dashboard.](./media/dashboard.png)
-
 **Figure 3-6**. The .NET Aspire dashboard and its features.
 
 The **.NET Aspire Dashboard** is a stand alone tool developers can use with their .NET Aspire projects. Here's what you need to know:

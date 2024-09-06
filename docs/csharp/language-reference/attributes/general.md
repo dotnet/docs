@@ -238,7 +238,7 @@ For example, you might add a new overload that uses <xref:System.ReadOnlySpan%60
 
 :::code language="csharp" source="snippets/OrpaExample.cs" ID="SnippetOverloadExample":::
 
-Overload resolution considers the two methods equally good for some argument types. For an argument of `int[]`, it prefers the first overload. To get the compiler to prefer the `ReadOnlySpan` version, you can increase the priority of that overload. The following example show the effect of adding the attribute:
+Overload resolution considers the two methods equally good for some argument types. For an argument of `int[]`, it prefers the first overload. To get the compiler to prefer the `ReadOnlySpan` version, you can increase the priority of that overload. The following example shows the effect of adding the attribute:
 
 :::code language="csharp" source="snippets/OrpaExample.cs" ID="SnippetOrpaExample":::
 

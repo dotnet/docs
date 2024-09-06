@@ -17,7 +17,7 @@ C# 13 includes the following new features. You can try these features using the 
 - [Enable `ref struct` types to implement interfaces](#ref-struct-interfaces).
 - [Allow ref struct types](#allows-ref-struct) as arguments for type parameters in generics.
 - [Partial properties and indexers](#more-partial-members) are now allowed in `partial` types.
-- [Overload resolution priority](#overload-resolution-priority) allows library authors to prefer 
+- [Overload resolution priority](#overload-resolution-priority) allows library authors to designate one overload as better than others.
 
 C# 13 is supported on **.NET 9**. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
 

@@ -165,9 +165,5 @@ static class Program
     }
 
     static string GetConnectionString() =>
-        // To avoid storing the connection string in your code,
-        // you can retrieve it from a configuration file, using the
-        // System.Configuration.ConfigurationSettings.AppSettings property
-        "Data Source=localhost;Initial Catalog=AdventureWorks;"
-            + "Integrated Security=SSPI";
+        throw new NotImplementedException();
 }

@@ -32,13 +32,10 @@ static class Program
             orders.AcceptChanges();
 
             customers.Merge(orders, true, MissingSchemaAction.AddWithKey);
-            // </Snippet1>
         }
+        // </Snippet1>
     }
 
     static string GetConnectionString() =>
-        // To avoid storing the connection string in your code,
-        // you can retrieve it from a configuration file.
-        "Data Source=(local);Initial Catalog=Northwind;"
-            + "Integrated Security=SSPI";
+        throw new NotImplementedException();
 }

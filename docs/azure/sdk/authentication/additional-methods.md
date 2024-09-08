@@ -125,4 +125,4 @@ This method authenticates an application using previously collected credentials 
 >
 > Furthermore, this method authenticates only work and school accounts; Microsoft accounts aren't supported. For more information, see [Sign up your organization to use Microsoft Entra ID](/entra/fundamentals/sign-up-organization).
 
-:::code language="csharp" source="../snippets/authentication/additional-auth/username-password/Program.cs" highlight="9-11":::
+:::code language="csharp" source="../snippets/authentication/additional-auth/username-password/Program.cs" highlight="10-12":::

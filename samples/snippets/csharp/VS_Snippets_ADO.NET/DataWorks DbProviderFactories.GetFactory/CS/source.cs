@@ -3,9 +3,6 @@ using System.Data.Common;
 
 static class Program
 {
-    static void Main()
-    {
-    }
     // <Snippet1>
     // Given a provider name and connection string,
     // create the DbProviderFactory and DbConnection.

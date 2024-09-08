@@ -30,10 +30,8 @@ namespace DataViewSamples
         static void FillDataSet(DataSet ds)
         {
             // Create a new adapter and give it a query to fetch sales order, contact,
-            // address, and product information for sales in the year 2002. Point connection
-            // information to the configuration setting "AdventureWorks".
-            const string connectionString = "Data Source=localhost;Initial Catalog=AdventureWorks;"
-                + "Integrated Security=true;";
+            // address, and product information for sales in the year 2002.
+            const string connectionString = "some secure connection string";
 
             var da = new SqlDataAdapter(
                 "SELECT SalesOrderID, ContactID, OrderDate, OnlineOrderFlag, " +

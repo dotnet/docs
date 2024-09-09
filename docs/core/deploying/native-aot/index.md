@@ -14,16 +14,6 @@ The benefit of Native AOT is most significant for workloads with a high number o
 
 The Native AOT deployment model uses an ahead-of-time compiler to compile IL to native code at the time of publish. Native AOT apps don't use a just-in-time (JIT) compiler when the application runs. Native AOT apps can run in restricted environments where a JIT isn't allowed. Native AOT applications target a specific runtime environment, such as Linux x64 or Windows x64, just like publishing a [self-contained app](../index.md#publish-self-contained).
 
-## Limitations in the .NET Native AOT deployment model
-
-### [.NET 7](#tab/net7)
-
-Native AOT is targeted towards console-type apps. Only a limited number of libraries are fully compatible with Native AOT.
-
-### [.NET 8+](#tab/net8plus)
-
-AOT support in .NET 8 is more comprehensive than in .NET 7. However, there are still some limitations. For more information, see [Limitations of Native AOT deployment](#limitations-of-native-aot-deployment).
-
 ---
 
 ## Prerequisites
@@ -84,12 +74,6 @@ Check out the [Native AOT samples](https://github.com/dotnet/samples/tree/main/c
 
 ## AOT-compatibility analyzers
 
-### [.NET 7](#tab/net7)
-
-AOT-compatibility analyzers are available only in .NET 8 and later versions.
-
-### [.NET 8+](#tab/net8plus)
-
 The `IsAotCompatible` property is used to indicate whether a library is compatible with Native AOT. Consider when a library sets the `IsAotCompatible` property to `true`, for example:
 
 ```xml
@@ -107,23 +91,7 @@ The preceding configuration assigns a default of `true` to the following propert
 
 These analyzers help to ensure that a library is compatible with Native AOT.
 
----
-
 ## Native debug information
-
-### [.NET 7](#tab/net7)
-
-Native AOT publishing follows platform conventions for native toolchains. The default behavior of native toolchains on Windows is to produce debug information in a separate *.pdb* file. The default behavior of native toolchains on Linux is to include the debug information in the native binary, which makes the native binary larger.
-
-Set the `StripSymbols` property to `true` to produce the debug information in a separate *.dbg* file and exclude it from the native binary on Linux. (This property has no effect on Windows.)
-
-```xml
-<PropertyGroup>
-    <StripSymbols>true</StripSymbols>
-</PropertyGroup>
-```
-
-### [.NET 8+](#tab/net8plus)
 
 By default, Native AOT publishing produces debug information in a separate file:
 
@@ -139,8 +107,6 @@ The debug file is necessary for running the app under the [debugger or inspectin
 </PropertyGroup>
 ```
 
----
-
 ## Limitations of Native AOT deployment
 
 Native AOT apps have the following limitations:
@@ -154,35 +120,16 @@ Native AOT apps have the following limitations:
 - Apps include required runtime libraries (just like [self-contained apps](../index.md#publish-self-contained), increasing their size as compared to framework-dependent apps).
 - <xref:System.Linq.Expressions> always use their interpreted form, which is slower than run-time generated compiled code.
 - Not all the runtime libraries are fully annotated to be Native AOT compatible. That is, some warnings in the runtime libraries aren't actionable by end developers.
-
-The publish process analyzes the entire project and its dependencies for possible limitations. Warnings are issued for each limitation the published app may encounter at run time.
-
-### Version specific limitations
-
-### [.NET 7](#tab/net7)
-
-- Should be targeted for console type apps. ASP.NET Core is ***not*** supported.
-- Limited diagnostic support for debugging and profiling.
-
-### [.NET 8+](#tab/net8plus)
-
-- [Diagnostic support for debugging and profiling](./diagnostics.md) with some limitations.
+- - [Diagnostic support for debugging and profiling](./diagnostics.md) with some limitations.
 - Support for some ASP.NET Core features. For more information, see [ASP.NET Core support for Native AOT](/aspnet/core/fundamentals/native-aot/).
 
----
+The publish process analyzes the entire project and its dependencies for possible limitations. Warnings are issued for each limitation the published app may encounter at run time.
 
 ## Platform/architecture restrictions
 
 The following table shows supported compilation targets.
 
-### [.NET 7](#tab/net7)
-
-| Platform | Supported architecture |
-|----------|------------------------|
-| Windows  | x64, Arm64             |
-| Linux    | x64, Arm64             |
-
-### [.NET 8+](#tab/net8plus)
+### [.NET 8](#tab/net8)
 
 | Platform | Supported architecture |  Notes               |
 |----------|------------------------|----------------------|
@@ -195,5 +142,19 @@ The following table shows supported compilation targets.
 | tvOSSimulator     | x64, Arm64 | Experimental support                   |
 | MacCatalyst     | x64, Arm64 | Experimental support                   |
 | Android | x64, Arm64 | Experimental, no built-in Java interop |
+
+### [.NET 9+](#tab/net9plus)
+
+| Platform | Supported architecture |  Notes               |
+|----------|------------------------|----------------------|
+| Windows  | x64, Arm64, x86        |                      |
+| Linux    | x64, Arm64, Arm        |                      |
+| macOS   | x64, Arm64 |                                        |
+| iOS     | Arm64 | Experimental support                   |
+| iOSSimulator     | x64, Arm64 | Experimental support                   |
+| tvOS     | Arm64 | Experimental support                   |
+| tvOSSimulator     | x64, Arm64 | Experimental support                   |
+| MacCatalyst     | x64, Arm64 | Experimental support                   |
+| Android | x64, Arm64, Arm | Experimental, no built-in Java interop |
 
 ---

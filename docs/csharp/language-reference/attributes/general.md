@@ -242,7 +242,7 @@ Overload resolution considers the two methods equally good for some argument typ
 
 :::code language="csharp" source="snippets/OrpaSnippets.cs" ID="SnippetOrpaExample":::
 
-Library authors should use this attribute as a last resort when adding a new and better method overload. Library authors should have a deep understanding of how [Overload resolution](~/_csharplang/proposals/overload-resolution-priority.md#overload-resolution-priority) impacts choosing the better method. Otherwise, unexpected errors can result.
+All overloads with a lower priority than the highest overload priority are removed from the set of applicable methods. Methods without this attribute have the overload priority set to the default of zero. Library authors should use this attribute as a last resort when adding a new and better method overload. Library authors should have a deep understanding of how [Overload resolution](~/_csharplang/proposals/overload-resolution-priority.md#overload-resolution-priority) impacts choosing the better method. Otherwise, unexpected errors can result.
 
 ## See also
 

@@ -13,7 +13,9 @@ ms.assetid: 7858fd85-153b-4259-85d0-6aa13c35f174
 ---
 # event (C# reference)
 
-The `event` keyword is used to declare an event in a publisher class.
+The `event` keyword changes the regular variable into an event variable. Referring to the language semantics the variable must be of a delegate type (it is a set of pointers to methods compliant with a predefined signature). The "event" keyword changes the visibility of selected operations we can execute against the event variable despite the access modifier of the variable. For example, we cannot invoke pointed methods outside the class where the event variable is declared even if the variable is public. Hence, this class is called publisher. All these operations are only private. In other words, the "event" keyword is an access modifier replacement for selected operations of the delegate type.
+
+The level of abstraction means that we don't know the methods, we only know that all are compliant with the predefined signature. Consequently, signaling an event means that we are calling methods pointed by the set held by the event variable. The event variable may be used in the methods invocation statement and expressions like a regular method.
 
 ## Example
 

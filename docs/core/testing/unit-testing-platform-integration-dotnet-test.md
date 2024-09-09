@@ -67,7 +67,7 @@ In this mode, you can supply extra parameters that are used to call the testing 
 - By using the `TestingPlatformCommandLineArguments` MSBuild property on the command line:
 
     ```dotnetcli
-    dotnet test -p:TestingPlatformCommandLineArguments=" --minimum-expected-tests 10 "
+    dotnet test -p:TestingPlatformCommandLineArguments="--minimum-expected-tests 10"
     ```
 
   Or in the project file:

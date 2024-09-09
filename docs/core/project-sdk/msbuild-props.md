@@ -1444,14 +1444,22 @@ The following MSBuild properties are documented in this section:
 
 The `IsTestProject` property signifies that a project is a test project. When this property is set to `true`, validation to check if the project references a self-contained executable is disabled. That's because test projects have an `OutputType` of `Exe` but usually call APIs in a referenced executable rather than trying to run. In addition, if a project references a project where `IsTestProject` is set to `true`, the test project isn't validated as an executable reference.
 
+This property is mainly needed for the `dotnet test` scenario and has no impact when using *vstest.console.exe*.
+
 > [!NOTE]
-> If your project specifies the [MSTest SDK](../testing/unit-testing-mstest-sdk.md), you don't need to set this property. It's set automatically.
+> If your project specifies the [MSTest SDK](../testing/unit-testing-mstest-sdk.md), you don't need to set this property. It's set automatically. Similarly, this property is set automatically for projects that reference the Microsoft.NET.Test.Sdk NuGet package linked to VSTest.
 
 ### IsTestingPlatformApplication
 
-Setting the `IsTestingPlatformApplication` property to `false` disables the transitive dependency to the [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild) package. A *transitive dependency* is when a project that references another project that references a given package behaves as if *it* references the package. You'd typically set this property to `false` in a non-test project that references a test project.
+When your project references the [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild) package, setting `IsTestingPlatformApplication` to `true` (which is also the default value if not specified) does the following:
 
-For more information, see [error CS8892](../testing/unit-testing-platform-faq.md#error-cs8892-method-testingplatformentrypointmainstring-will-not-be-used-as-an-entry-point-because-a-synchronous-entry-point-programmainstring-was-found).
+- Generates the entry point to the test project.
+- Generates the configuration file.
+- Detects the extensions.
+
+Setting the property to `false` disables the transitive dependency to the package. A *transitive dependency* is when a project that references another project that references a given package behaves as if *it* references the package. You'd typically set this property to `false` in a non-test project that references a test project. For more information, see [error CS8892](../testing/unit-testing-platform-faq.md#error-cs8892-method-testingplatformentrypointmainstring-will-not-be-used-as-an-entry-point-because-a-synchronous-entry-point-programmainstring-was-found).
+
+If your test project references MSTest, NUnit, or xUnit, this property is set to the same value as [EnableMSTestRunner](#enablemstestrunner), [EnableNUnitRunner](#enablenunitrunner), or `UseMicrosoftTestingPlatformRunner` (for xUnit).
 
 ### Enable\[NugetPackageNameWithoutDots\]
 
@@ -1463,32 +1471,34 @@ For more information, see [Enable or disable extensions](../testing/unit-testing
 
 ### EnableAspireTesting
 
-When you use the [MSTest project SDK](../testing/unit-testing-mstest-sdk.md), you can use the `EnableAspireTesting` property to bring in all the dependencies and default `using` directives you need for testing with `Aspire` and `MSTest`.
+When you use the [MSTest project SDK](../testing/unit-testing-mstest-sdk.md), you can use the `EnableAspireTesting` property to bring in all the dependencies and default `using` directives you need for testing with `Aspire` and `MSTest`. This property is available in MSTest 3.4 and later versions.
 
 For more information, see [Test with .NET Aspire](../testing/unit-testing-mstest-sdk.md#test-with-net-aspire).
 
 ### EnablePlaywright
 
-When you use the [MSTest project SDK](../testing/unit-testing-mstest-sdk.md), you can use the `EnablePlaywright` property to bring in all the dependencies and default `using` directives you need for testing with `Playwright` and `MSTest`.
+When you use the [MSTest project SDK](../testing/unit-testing-mstest-sdk.md), you can use the `EnablePlaywright` property to bring in all the dependencies and default `using` directives you need for testing with `Playwright` and `MSTest`.This property is available in MSTest 3.4 and later versions.
 
 For more information, see [Playwright](../testing/unit-testing-mstest-sdk.md#test-with-playwright).
 
 ### EnableMSTestRunner
 
-The `EnableMSTestRunner` property enables or disables the use of the [MSTest runner](../testing/unit-testing-mstest-runner-intro.md). The MSTest runner is a lightweight and portable alternative to VSTest.
+The `EnableMSTestRunner` property enables or disables the use of the [MSTest runner](../testing/unit-testing-mstest-runner-intro.md). The MSTest runner is a lightweight and portable alternative to VSTest. This property is available in MSTest 3.2 and later versions.
 
 > [!NOTE]
 > If your project specifies the [MSTest SDK](../testing/unit-testing-mstest-sdk.md), you don't need to set this property. It's set automatically.
 
 ### EnableNUnitRunner
 
-The `EnableNUnitRunner` property enables or disables the use of the [NUnit runner](../testing/unit-testing-nunit-runner-intro.md). The NUnit runner is a lightweight and portable alternative to VSTest.
+The `EnableNUnitRunner` property enables or disables the use of the [NUnit runner](../testing/unit-testing-nunit-runner-intro.md). The NUnit runner is a lightweight and portable alternative to VSTest. This property is available in [NUnit3TestAdapter](https://www.nuget.org/packages/NUnit3TestAdapter) in version 5.0 and later.
 
 ### GenerateTestingPlatformEntryPoint
 
-Setting the `GenerateTestingPlatformEntryPoint` property to `false` disables the automatic generation of the program entry point in a test project. You might want to set this property to `false` when you manually define an entry point, or when you reference a test project from an executable that also has an entry point.
+Setting the `GenerateTestingPlatformEntryPoint` property to `false` disables the automatic generation of the program entry point in an MSTest, NUnit, or xUnit test project. You might want to set this property to `false` when you manually define an entry point, or when you reference a test project from an executable that also has an entry point.
 
 For more information, see [error CS8892](../testing/unit-testing-platform-faq.md#error-cs8892-method-testingplatformentrypointmainstring-will-not-be-used-as-an-entry-point-because-a-synchronous-entry-point-programmainstring-was-found).
+
+To control the generation of the entry point in a VSTest project, use the `GenerateProgramFile` property.
 
 ### TestingPlatformCaptureOutput
 
@@ -1510,6 +1520,8 @@ The `TestingPlatformCaptureOutput` property lets you specify command-line argume
 ### TestingPlatformDotnetTestSupport
 
 The `TestingPlatformDotnetTestSupport` property lets you specify whether VSTest is used when you use `dotnet test` to run tests. If you set this property to `true`, VSTest is disabled and all `Microsoft.Testing.Platform` tests are run directly.
+
+If you have a solution that contains VSTest test projects as well as MSTest, NUnit, or XUnit projects, you should make one call per mode (that is, `dotnet test` won't run tests from both VSTest and the newer platforms in one call).
 
 ### TestingPlatformShowTestsFailure
 

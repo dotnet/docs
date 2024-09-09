@@ -1,3 +1,4 @@
+---
 title: Intrinsic APIs marked RequiresDynamicCode
 description: Learn how the tooling recognizes certain patterns in calls to APIs annotated with RequiresDynamicCode.
 author: MichalStrehovsky

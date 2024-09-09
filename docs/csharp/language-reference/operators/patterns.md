@@ -198,7 +198,6 @@ You use a *positional pattern* to deconstruct an expression result and match the
 At the preceding example, the type of an expression contains the [Deconstruct](../../fundamentals/functional/deconstruct.md) method, which is used to deconstruct an expression result.
 
 >[!IMPORTANT]
->
 > The order of members in a positional pattern must match the order of parameters in the `Deconstruct` method. That's because the code generated for the positional pattern calls the `Deconstruct` method.
 
 You can also match expressions of [tuple types](../builtin-types/value-tuples.md) against positional patterns. In that way, you can match multiple inputs against various patterns, as the following example shows:

@@ -2,9 +2,10 @@
 title: What's new in .NET 9
 description: Learn about the new .NET features introduced in .NET 9 for the runtime, libraries, and SDK. Also find links to what's new in other areas, such as ASP.NET Core.
 titleSuffix: ""
-ms.date: 08/15/2024
+ms.date: 09/10/2024
 ms.topic: whats-new
 ---
+
 # What's new in .NET 9
 
 Learn about the new features in .NET 9 and find links to further documentation.
@@ -17,7 +18,7 @@ New for .NET 9, the engineering team posts .NET 9 preview updates on [GitHub Dis
 
 The .NET 9 runtime includes a new attribute model for feature switches with trimming support. The new attributes make it possible to define [feature switches](https://github.com/dotnet/designs/blob/main/accepted/2020/feature-switch.md) that libraries can use to toggle areas of functionality.
 
-Garbage collection includes a *dynamic adaptation to application size* feature that's used by default instead of Server GC.
+Garbage collection includes a _dynamic adaptation to application size_ feature that's used by default instead of Server GC.
 
 The runtime also includes numerous performance improvements, including loop optimizations, inlining, and Arm64 vectorization and code generation.
 
@@ -29,11 +30,11 @@ For more information, see [What's new in the .NET 9 runtime](runtime.md).
 
 In LINQ, the new methods <xref:System.Linq.Enumerable.CountBy%2A> and <xref:System.Linq.Enumerable.AggregateBy%2A> make it possible to aggregate state by key without needing to allocate intermediate groupings via <xref:System.Linq.Enumerable.GroupBy%2A>.
 
-For collection types, the <xref:System.Collections.Generic.PriorityQueue%602?displayProperty=fullName> type includes a new <xref:System.Collections.Generic.PriorityQueue%602.Remove(%600,%600@,%601@,System.Collections.Generic.IEqualityComparer{%600})> method that you can use to *update* the priority of an item in the queue.
+For collection types, the <xref:System.Collections.Generic.PriorityQueue%602?displayProperty=fullName> type includes a new <xref:System.Collections.Generic.PriorityQueue%602.Remove(%600,%600@,%601@,System.Collections.Generic.IEqualityComparer{%600})> method that you can use to _update_ the priority of an item in the queue.
 
 For cryptography, .NET 9 adds a new one-shot hash method on the <xref:System.Security.Cryptography.CryptographicOperations> type. It also adds new classes that use the KMAC algorithm.
 
-For reflection, the new <xref:System.Reflection.Emit.PersistedAssemblyBuilder> type lets you *save* an emitted assembly. This new class also includes PDB support, meaning you can emit symbol info and use it to debug a generated assembly.
+For reflection, the new <xref:System.Reflection.Emit.PersistedAssemblyBuilder> type lets you _save_ an emitted assembly. This new class also includes PDB support, meaning you can emit symbol info and use it to debug a generated assembly.
 
 The <xref:System.TimeSpan> class includes new `From*` methods that let you create a `TimeSpan` object from an `int` (instead of a `double`). These methods help to avoid errors caused by inherent imprecision in floating-point calculations.
 
@@ -41,7 +42,14 @@ For more information, see [What's new in the .NET 9 libraries](libraries.md).
 
 ## .NET SDK
 
-The .NET 9 SDK introduces *workload sets*, where all of your workloads stay at a single, specific version until explicitly updated. Unit testing has better MSBuild integration that allows you to run tests in parallel. For tools, a new option for [`dotnet tool install`](../../tools/dotnet-tool-install.md) lets users (instead of tool authors) decide whether a tool is allowed to run on a newer .NET runtime version than the version the tool targets. NuGet security audits run on both direct and transitive package references, by default. The terminal logger is now enabled by default and also has improved usability. For example, the total count of failures and warnings is now summarized at the end of a build. New MSBuild script analyzers are available. The SDK can detect and adjust for version mismatches between the .NET SDK and MSBuild.
+The .NET 9 SDK introduces _workload sets_, where all of your workloads stay at a single, specific version until explicitly updated. For tools, a new option for [`dotnet tool install`](../../tools/dotnet-tool-install.md) lets users (instead of tool authors) decide whether a tool is allowed to run on a newer .NET runtime version than the version the tool targets. In addition:
+
+- Unit testing has better MSBuild integration that allows you to run tests in parallel.
+- NuGet security audits run on both direct and transitive package references, by default.
+- The terminal logger is enabled by default and also has improved usability. For example, the total count of failures and warnings is now summarized at the end of a build.
+- New MSBuild script analyzers ("build checks") are available.
+- The SDK can detect and adjust for version mismatches between the .NET SDK and MSBuild.
+- The `dotnet workload history` command shows you the history of workload installations and modifications for the current .NET SDK installation.
 
 For more information, see [What's new in the SDK for .NET 9](sdk.md).
 
@@ -69,11 +77,11 @@ Entity Framework Core includes significant updates to the database provider for 
 
 C# 13 ships with the .NET 9 SDK and includes the following new features:
 
-- `params` collections
-- New `lock` type and semantics
-- New escape sequence - `\e`
-- Method group natural type improvements
-- Implicit indexer access in object initializers
+-   `params` collections
+-   New `lock` type and semantics
+-   New escape sequence - `\e`
+-   Method group natural type improvements
+-   Implicit indexer access in object initializers
 
 For more information, see [What's new in C# 13](../../../csharp/whats-new/csharp-13.md).
 
@@ -91,7 +99,7 @@ Windows Presentation Foundation (WPF) includes support for Windows 11 theming an
 
 ## See also
 
-- [Our vision for .NET 9](https://devblogs.microsoft.com/dotnet/our-vision-for-dotnet-9/) blog post
-- [What's new in ASP.NET Core 9.0](/aspnet/core/release-notes/aspnetcore-9.0)
-- [What's new in .NET MAUI](/dotnet/maui/whats-new/dotnet-9)
-- [What's new in EF Core](/ef/core/what-is-new/ef-core-9.0/whatsnew)
+-   [Our vision for .NET 9](https://devblogs.microsoft.com/dotnet/our-vision-for-dotnet-9/) blog post
+-   [What's new in ASP.NET Core 9.0](/aspnet/core/release-notes/aspnetcore-9.0)
+-   [What's new in .NET MAUI](/dotnet/maui/whats-new/dotnet-9)
+-   [What's new in EF Core](/ef/core/what-is-new/ef-core-9.0/whatsnew)

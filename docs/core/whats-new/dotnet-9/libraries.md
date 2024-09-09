@@ -2,12 +2,13 @@
 title: What's new in .NET libraries for .NET 9
 description: Learn about the new .NET libraries features introduced in .NET 9.
 titleSuffix: ""
-ms.date: 08/09/2024
+ms.date: 09/09/2024
 ms.topic: whats-new
 ---
+
 # What's new in .NET libraries for .NET 9
 
-This article describes new features in the .NET libraries for .NET 9. It's been updated for .NET 9 Preview 7.
+This article describes new features in the .NET libraries for .NET 9. It's been updated for .NET 9 RC 1.
 
 ## Base64Url
 
@@ -22,16 +23,16 @@ string encoded = Base64Url.EncodeToString(bytes);
 
 ## BinaryFormatter
 
-.NET 9 removes  <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> from the .NET runtime. The APIs are still present, but their implementations always throw an exception, regardless of project type. For more information about the removal and your options if you're affected, see [BinaryFormatter migration guide](../../../standard/serialization/binaryformatter-migration-guide/index.md).
+.NET 9 removes <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> from the .NET runtime. The APIs are still present, but their implementations always throw an exception, regardless of project type. For more information about the removal and your options if you're affected, see [BinaryFormatter migration guide](../../../standard/serialization/binaryformatter-migration-guide/index.md).
 
 ## Collections
 
 The collection types in .NET gain the following updates for .NET 9:
 
-- [Collection lookups with spans](#collection-lookups-with-spans)
-- [`OrderedDictionary<TKey, TValue>`](#ordereddictionarytkey-tvalue)
-- [PriorityQueue.Remove() method](#priorityqueueremove-method) lets you update the priority of an item in the queue.
-- [`ReadOnlySet<T>`](#readonlysett)
+-   [Collection lookups with spans](#collection-lookups-with-spans)
+-   [`OrderedDictionary<TKey, TValue>`](#ordereddictionarytkey-tvalue)
+-   [PriorityQueue.Remove() method](#priorityqueueremove-method) lets you update the priority of an item in the queue.
+-   [`ReadOnlySet<T>`](#readonlysett)
 
 ### Collection lookups with spans
 
@@ -75,8 +76,8 @@ The primary API is the <xref:System.ComponentModel.TypeDescriptor.RegisterType%2
 
 The secondary APIs have a `FromRegisteredType` suffix, such as <xref:System.ComponentModel.TypeDescriptor.GetPropertiesFromRegisteredType(System.Type)?displayProperty=nameWithType>. Unlike their counterparts that don't have the `FromRegisteredType` suffix, these APIs don't have `[RequiresUnreferencedCode]` or `[DynamicallyAccessedMembers]` trimmer attributes. The lack of trimmer attributes helps consumers by no longer having to either:
 
-- Suppress trimming warnings, which can be risky.
-- Propagate a strongly typed `Type` parameter to other methods, which can be cumbersome or infeasible.
+-   Suppress trimming warnings, which can be risky.
+-   Propagate a strongly typed `Type` parameter to other methods, which can be cumbersome or infeasible.
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/TypeDescriptor.cs" id="TypeDescriptor":::
 
@@ -84,12 +85,12 @@ For more information, see the [API proposal](https://github.com/dotnet/runtime/i
 
 ## Cryptography
 
-- [CryptographicOperations.HashData() method](#cryptographicoperationshashdata-method)
-- [KMAC algorithm](#kmac-algorithm)
-- [AES-GCM and ChaChaPoly1305 algorithms enabled for iOS/tvOS/MacCatalyst](#aes-gcm-and-chachapoly1305-algorithms-enabled-for-iostvosmaccatalyst)
-- [X.509 certificate loading](#x509-certificate-loading)
-- [OpenSSL providers support](#openssl-providers-support)
-- [Windows CNG virtualization-based security](#windows-cng-virtualization-based-security)
+-   [CryptographicOperations.HashData() method](#cryptographicoperationshashdata-method)
+-   [KMAC algorithm](#kmac-algorithm)
+-   [AES-GCM and ChaChaPoly1305 algorithms enabled for iOS/tvOS/MacCatalyst](#aes-gcm-and-chachapoly1305-algorithms-enabled-for-iostvosmaccatalyst)
+-   [X.509 certificate loading](#x509-certificate-loading)
+-   [OpenSSL providers support](#openssl-providers-support)
+-   [Windows CNG virtualization-based security](#windows-cng-virtualization-based-security)
 -
 
 ### CryptographicOperations.HashData() method
@@ -106,10 +107,10 @@ If a developer wants to provide an API that supports hashing where the caller de
 
 The following new classes use the KMAC algorithm. Use instances to accumulate data to produce a MAC, or use the static `HashData` method for a [one-shot](../../../standard/security/cryptography-model.md#one-shot-apis) over a single input.
 
-- <xref:System.Security.Cryptography.Kmac128>
-- <xref:System.Security.Cryptography.Kmac256>
-- <xref:System.Security.Cryptography.KmacXof128>
-- <xref:System.Security.Cryptography.KmacXof256>
+-   <xref:System.Security.Cryptography.Kmac128>
+-   <xref:System.Security.Cryptography.Kmac256>
+-   <xref:System.Security.Cryptography.KmacXof128>
+-   <xref:System.Security.Cryptography.KmacXof256>
 
 KMAC is available on Linux with OpenSSL 3.0 or later, and on Windows 11 Build 26016 or later. You can use the static `IsSupported` property to determine if the platform supports the desired algorithm.
 
@@ -127,9 +128,9 @@ Since .NET Framework 2.0, the way to load a certificate has been `new X509Certif
 
 Those methods all used content-sniffing to figure out if the input was something it could handle, and then loaded it if it could. For some callers, this strategy was very convenient. But it also has some problems:
 
-- Not every file format works on every OS.
-- It's a protocol deviation.
-- It's a source of security issues.
+-   Not every file format works on every OS.
+-   It's a protocol deviation.
+-   It's a source of security issues.
 
 .NET 9 introduces a new `X509CertificateLoader` <!--<xref:System.Security.Cryptography.X509CertificateLoader>--> class, which has a "one method, one purpose" design. In its initial version, it only supports two of the five formats that the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> constructor supported. Those are the two formats that worked on all operation systems.
 
@@ -163,9 +164,9 @@ Windows 11 has added new APIs to help secure Windows keys with [virtualization-b
 
 .NET 9 has added matching `CngKeyCreationOptions` <!--<xref:System.Security.Cryptography.CngKeyCreationOptions>--> flags. The following three flags were added:
 
-- `CngKeyCreationOptions.PreferVbs` matching `NCRYPT_PREFER_VBS_FLAG`
-- `CngKeyCreationOptions.RequireVbs` matching `NCRYPT_REQUIRE_VBS_FLAG`
-- `CngKeyCreationOptions.UsePerBootKey` matching `NCRYPT_USE_PER_BOOT_KEY_FLAG`
+-   `CngKeyCreationOptions.PreferVbs` matching `NCRYPT_PREFER_VBS_FLAG`
+-   `CngKeyCreationOptions.RequireVbs` matching `NCRYPT_REQUIRE_VBS_FLAG`
+-   `CngKeyCreationOptions.UsePerBootKey` matching `NCRYPT_USE_PER_BOOT_KEY_FLAG`
 
 The following snippet demonstrates how to use one of the flags:
 
@@ -199,9 +200,9 @@ The constructor resolution for <xref:Microsoft.Extensions.DependencyInjection.Ac
 
 ## Diagnostics
 
-- [Debug.Assert reports assert condition by default](#debugassert-reports-assert-condition-by-default)
-- [New Activity.AddLink method](#new-activityaddlink-method)
-- [Metrics.Gauge instrument](#metricsgauge-instrument)
+-   [Debug.Assert reports assert condition by default](#debugassert-reports-assert-condition-by-default)
+-   [New Activity.AddLink method](#new-activityaddlink-method)
+-   [Metrics.Gauge instrument](#metricsgauge-instrument)
 
 ### Debug.Assert reports assert condition by default
 
@@ -228,7 +229,7 @@ a > 0 && b > 0
 
 ### New Activity.AddLink method
 
-Previously, you could only link a tracing <xref:System.Diagnostics.Activity> to other tracing contexts when you [created the `Activity`](xref:System.Diagnostics.ActivitySource.CreateActivity(System.String,System.Diagnostics.ActivityKind,System.Diagnostics.ActivityContext,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}},System.Collections.Generic.IEnumerable{System.Diagnostics.ActivityLink},System.Diagnostics.ActivityIdFormat)?displayProperty=nameWithType). New in .NET 9, the <xref:System.Diagnostics.Activity.AddLink(System.Diagnostics.ActivityLink)> API lets you link an `Activity` object to other tracing contexts after it's created. This change aligns with the [OpenTelemetry specifications](https://github.com/open-telemetry/opentelemetry-specification/blob/6360b49d20ae451b28f7ba0be168ed9a799ac9e1/specification/trace/api.md?plain=1#L804) as well.
+Previously, you could only link a tracing <xref:System.Diagnostics.Activity> to other tracing contexts when you [created the `Activity`](<xref:System.Diagnostics.ActivitySource.CreateActivity(System.String,System.Diagnostics.ActivityKind,System.Diagnostics.ActivityContext,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}},System.Collections.Generic.IEnumerable{System.Diagnostics.ActivityLink},System.Diagnostics.ActivityIdFormat)?displayProperty=nameWithType>). New in .NET 9, the <xref:System.Diagnostics.Activity.AddLink(System.Diagnostics.ActivityLink)> API lets you link an `Activity` object to other tracing contexts after it's created. This change aligns with the [OpenTelemetry specifications](https://github.com/open-telemetry/opentelemetry-specification/blob/6360b49d20ae451b28f7ba0be168ed9a799ac9e1/specification/trace/api.md?plain=1#L804) as well.
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Diagnostics.cs" id="AddLink":::
 
@@ -272,8 +273,8 @@ public partial class ClassWithPrimaryConstructor(ILogger logger)
 
 In this section, find information about:
 
-- [`allows ref struct` used in libraries](#allows-ref-struct-used-in-libraries)
-- [`SearchValues` expansion](#searchvalues-expansion)
+-   [`allows ref struct` used in libraries](#allows-ref-struct-used-in-libraries)
+-   [`SearchValues` expansion](#searchvalues-expansion)
 
 ### `allows ref struct` used in libraries
 
@@ -307,9 +308,9 @@ This new capability has an optimized implementation that takes advantage of the 
 
 ## Networking
 
-- [SocketsHttpHandler is default in HttpClientFactory](#socketshttphandler-is-default-in-httpclientfactory)
-- [System.Net.ServerSentEvents](#systemnetserversentevents)
-- [TLS resume with client certificates on Linux](#tls-resume-with-client-certificates-on-linux)
+-   [SocketsHttpHandler is default in HttpClientFactory](#socketshttphandler-is-default-in-httpclientfactory)
+-   [System.Net.ServerSentEvents](#systemnetserversentevents)
+-   [TLS resume with client certificates on Linux](#tls-resume-with-client-certificates-on-linux)
 
 ### SocketsHttpHandler is default in HttpClientFactory
 
@@ -325,18 +326,18 @@ The following code demonstrates using the new class.
 
 ### TLS resume with client certificates on Linux
 
-*TLS resume* is a feature of the TLS protocol that allows resuming previously established sessions to a server. Doing so avoids a few roundtrips and saves computational resources during TLS handshake.
+_TLS resume_ is a feature of the TLS protocol that allows resuming previously established sessions to a server. Doing so avoids a few roundtrips and saves computational resources during TLS handshake.
 
-*TLS resume* has already been supported on Linux for SslStream connections without client certificates. .NET 9 adds support for TLS resume of mutually authenticated TLS connections, which are common in server-to-server scenarios. The feature is enabled automatically.
+_TLS resume_ has already been supported on Linux for SslStream connections without client certificates. .NET 9 adds support for TLS resume of mutually authenticated TLS connections, which are common in server-to-server scenarios. The feature is enabled automatically.
 
 ## Reflection
 
-- [Persisted assemblies](#persisted-assemblies)
-- [Type-name parsing](#type-name-parsing)
+-   [Persisted assemblies](#persisted-assemblies)
+-   [Type-name parsing](#type-name-parsing)
 
 ### Persisted assemblies
 
-In .NET Core versions and .NET 5-8, support for building an assembly and emitting reflection metadata for dynamically created types was limited to a runnable <xref:System.Reflection.Emit.AssemblyBuilder>. The lack of support for *saving* an assembly was often a blocker for customers migrating from .NET Framework to .NET. .NET 9 adds a new type, <xref:System.Reflection.Emit.PersistedAssemblyBuilder>, that you can use to save an emitted assembly.
+In .NET Core versions and .NET 5-8, support for building an assembly and emitting reflection metadata for dynamically created types was limited to a runnable <xref:System.Reflection.Emit.AssemblyBuilder>. The lack of support for _saving_ an assembly was often a blocker for customers migrating from .NET Framework to .NET. .NET 9 adds a new type, <xref:System.Reflection.Emit.PersistedAssemblyBuilder>, that you can use to save an emitted assembly.
 
 To create a `PersistedAssemblyBuilder` instance, call its constructor and pass the assembly name, the core assembly, `System.Private.CoreLib`, to reference base runtime types, and optional custom attributes. After you emit all members to the assembly, call the <xref:System.Reflection.Emit.PersistedAssemblyBuilder.Save(System.String)?displayProperty=nameWithType> method to create an assembly with default settings. If you want to set the entry point or other options, you can call <xref:System.Reflection.Emit.PersistedAssemblyBuilder.GenerateMetadata%2A?displayProperty=nameWithType> and use the metadata it returns to save the assembly. The following code shows an example of creating a persisted assembly and setting the entry point.
 
@@ -350,16 +351,16 @@ The new <xref:System.Reflection.Emit.PersistedAssemblyBuilder> class includes PD
 
 The new `TypeName` class provides:
 
-- Static `Parse` and `TryParse` methods for parsing input represented as `ReadOnlySpan<char>`. Both methods accept an instance of `TypeNameParseOptions` class (an option bag) that lets you customize the parsing.
-- `Name`, `FullName`, and `AssemblyQualifiedName` properties that work exactly like their counterparts in <xref:System.Type?displayProperty=fullName>.
-- Multiple properties and methods that provide additional information about the name itself:
+-   Static `Parse` and `TryParse` methods for parsing input represented as `ReadOnlySpan<char>`. Both methods accept an instance of `TypeNameParseOptions` class (an option bag) that lets you customize the parsing.
+-   `Name`, `FullName`, and `AssemblyQualifiedName` properties that work exactly like their counterparts in <xref:System.Type?displayProperty=fullName>.
+-   Multiple properties and methods that provide additional information about the name itself:
 
-  - `IsArray`, `IsSZArray` (`SZ` stands for single-dimension, zero-indexed array), `IsVariableBoundArrayType`, and `GetArrayRank` for working with arrays.
-  - `IsConstructedGenericType`, `GetGenericTypeDefinition`, and `GetGenericArguments` for working with generic type names.
-  - `IsByRef` and `IsPointer` for working with pointers and managed references.
-  - `GetElementType()` for working with pointers, references, and arrays.
-  - `IsNested` and `DeclaringType` for working with nested types.
-  - `AssemblyName`, which exposes the assembly name information via the new <xref:System.Reflection.Metadata.AssemblyNameInfo> class. In contrast to `AssemblyName`, the new type is *immutable*, and parsing culture names doesn't create instances of `CultureInfo`.
+    -   `IsArray`, `IsSZArray` (`SZ` stands for single-dimension, zero-indexed array), `IsVariableBoundArrayType`, and `GetArrayRank` for working with arrays.
+    -   `IsConstructedGenericType`, `GetGenericTypeDefinition`, and `GetGenericArguments` for working with generic type names.
+    -   `IsByRef` and `IsPointer` for working with pointers and managed references.
+    -   `GetElementType()` for working with pointers, references, and arrays.
+    -   `IsNested` and `DeclaringType` for working with nested types.
+    -   `AssemblyName`, which exposes the assembly name information via the new <xref:System.Reflection.Metadata.AssemblyNameInfo> class. In contrast to `AssemblyName`, the new type is _immutable_, and parsing culture names doesn't create instances of `CultureInfo`.
 
 Both `TypeName` and `AssemblyNameInfo` types are immutable and don't provide a way to check for equality (they don't implement `IEquatable`). Comparing assembly names is simple, but different scenarios need to compare only a subset of exposed information (`Name`, `Version`, `CultureName`, and `PublicKeyOrToken`).
 
@@ -371,8 +372,8 @@ The new APIs are available from the [`System.Reflection.Metadata`](https://www.n
 
 ## Regular expressions
 
-- [`[GeneratedRegex]` on properties](#generatedregex-on-properties)
-- [`Regex.EnumerateSplits`](#regexenumeratesplits)
+-   [`[GeneratedRegex]` on properties](#generatedregex-on-properties)
+-   [`Regex.EnumerateSplits`](#regexenumeratesplits)
 
 ### `[GeneratedRegex]` on properties
 
@@ -382,7 +383,7 @@ The following partial method will be source generated with all the code necessar
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/RegularExpressions.cs" id="GeneratedRegexMethod":::
 
-C# 13 supports partial *properties* in addition to partial methods, so starting in .NET 9 you can also use `[GeneratedRegex(...)]` on a property.
+C# 13 supports partial _properties_ in addition to partial methods, so starting in .NET 9 you can also use `[GeneratedRegex(...)]` on a property.
 
 The following partial property is the property equivalent of the previous example.
 
@@ -404,13 +405,13 @@ The following example demonstrates `Regex.EnumerateSplits`, taking a `ReadOnlySp
 
 ## Serialization (System.Text.Json)
 
-- [Indentation options](#indentation-options)
-- [Default web options singleton](#default-web-options-singleton)
-- [JsonSchemaExporter](#jsonschemaexporter)
-- [Respect nullable annotations](#respect-nullable-annotations)
-- [Require non-optional constructor parameters](#require-non-optional-constructor-parameters)
-- [Order JsonObject properties](#order-jsonobject-properties)
-- [Additional contract metadata APIs](#additional-contract-metadata-apis)
+-   [Indentation options](#indentation-options)
+-   [Default web options singleton](#default-web-options-singleton)
+-   [JsonSchemaExporter](#jsonschemaexporter)
+-   [Respect nullable annotations](#respect-nullable-annotations)
+-   [Require non-optional constructor parameters](#require-non-optional-constructor-parameters)
+-   [Order JsonObject properties](#order-jsonobject-properties)
+-   [Additional contract metadata APIs](#additional-contract-metadata-apis)
 
 ### Indentation options
 
@@ -440,24 +441,18 @@ The generated schema is:
 
 ```json
 {
-  "type": [
-    "object",
-    "null"
-  ],
-  "properties": {
-    "Title": {
-      "type": "string"
-    },
-    "Author": {
-      "type": [
-        "string",
-        "null"
-      ]
-    },
-    "PublishYear": {
-      "type": "integer"
+    "type": ["object", "null"],
+    "properties": {
+        "Title": {
+            "type": "string"
+        },
+        "Author": {
+            "type": ["string", "null"]
+        },
+        "PublishYear": {
+            "type": "integer"
+        }
     }
-  }
 }
 ```
 
@@ -469,7 +464,7 @@ The following code shows how to set the option (the `Book` type definition is sh
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Serialization.cs" id="RespectNullable":::
 
-You can also enable this setting globally using the `System.Text.Json.JsonSerializerOptions.RespectNullableAnnotations` feature switch in your project file (for example, *.csproj* file):
+You can also enable this setting globally using the `System.Text.Json.JsonSerializerOptions.RespectNullableAnnotations` feature switch in your project file (for example, _.csproj_ file):
 
 ```xml
 <ItemGroup>
@@ -491,7 +486,7 @@ The `MyPoco` type is defined as follows:
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Serialization.cs" id="Poco":::
 
-You can also enable this setting globally using the `System.Text.Json.JsonSerializerOptions.RespectRequiredConstructorParameters` feature switch in your project file (for example, *.csproj* file):
+You can also enable this setting globally using the `System.Text.Json.JsonSerializerOptions.RespectRequiredConstructorParameters` feature switch in your project file (for example, _.csproj_ file):
 
 ```xml
 <ItemGroup>
@@ -548,9 +543,9 @@ public sealed class JsonParameterInfo
 
 In high-performance code, spans are often used to avoid allocating strings unnecessarily. <xref:System.Span%601> and <xref:System.ReadOnlySpan%601> continue to revolutionize how code is written in .NET, and every release more and more methods are added that operate on spans. .NET 9 includes the following span-related updates:
 
-- [File helpers](#file-helpers)
-- [`params ReadOnlySpan<T>` overloads](#params-readonlyspant-overloads)
-- [Enumerate over ReadOnlySpan\<char>.Split() segments](#enumerate-over-readonlyspancharsplit-segments)
+-   [File helpers](#file-helpers)
+-   [`params ReadOnlySpan<T>` overloads](#params-readonlyspant-overloads)
+-   [Enumerate over ReadOnlySpan\<char>.Split() segments](#enumerate-over-readonlyspancharsplit-segments)
 
 ### File helpers
 
@@ -594,7 +589,7 @@ Now, a call like `string.Join(", ", "a", "b", "c")` is made without allocating a
 
 In .NET 8, a set of `Split` and `SplitAny` methods were introduced for `ReadOnlySpan<char>`. Rather than returning a new `string[]`, these methods accept a destination `Span<Range>` into which the bounding indices for each component are written. This makes the operation fully allocation-free. These methods are appropriate to use when the number of ranges is both known and small.
 
-In .NET 9, new overloads of `Split` and `SplitAny` have been added to allow incrementally parsing a `ReadOnlySpan<T>` with an *a priori* unknown number of segments. The new methods enable enumerating through each segment, which is similarly represented as a `Range` that can be used to slice into the original span.
+In .NET 9, new overloads of `Split` and `SplitAny` have been added to allow incrementally parsing a `ReadOnlySpan<T>` with an _a priori_ unknown number of segments. The new methods enable enumerating through each segment, which is similarly represented as a `Range` that can be used to slice into the original span.
 
 ```csharp
 public static bool ListContainsItem(ReadOnlySpan<char> span, string item)
@@ -613,12 +608,12 @@ public static bool ListContainsItem(ReadOnlySpan<char> span, string item)
 
 ## System.Guid
 
-<xref:System.Guid.NewGuid> creates a `Guid` filled mostly with [cryptographically secure random data](https://www.rfc-editor.org/rfc/rfc9562#section-6.9), following the UUID Version 4 specification in RFC 9562. That same RFC also defines other versions, including Version 7, which "features a time-ordered value field derived from the widely implemented and well-known Unix Epoch timestamp source". In other words, much of the data is still random, but some of it is reserved for data based on a timestamp, which enables these values to have a natural sort order. In .NET 9, you can create a `Guid` according to Version 7 via the new `Guid.CreateVersion7()` <!--<xref:System.Guid.CreateVersion7?displayProperty=nameWithType>--> and `Guid.CreateVersion7(DateTimeOffset timestamp)`  <!--<xref:System.Guid.CreateVersion7(System.DateTimeOffset)?displayProperty=nameWithType>--> methods. You can also use the new `Version` <!--<xref:System.Guid.Version>--> property to retrieve a `Guid` object's version field.
+<xref:System.Guid.NewGuid> creates a `Guid` filled mostly with [cryptographically secure random data](https://www.rfc-editor.org/rfc/rfc9562#section-6.9), following the UUID Version 4 specification in RFC 9562. That same RFC also defines other versions, including Version 7, which "features a time-ordered value field derived from the widely implemented and well-known Unix Epoch timestamp source". In other words, much of the data is still random, but some of it is reserved for data based on a timestamp, which enables these values to have a natural sort order. In .NET 9, you can create a `Guid` according to Version 7 via the new `Guid.CreateVersion7()` <!--<xref:System.Guid.CreateVersion7?displayProperty=nameWithType>--> and `Guid.CreateVersion7(DateTimeOffset timestamp)` <!--<xref:System.Guid.CreateVersion7(System.DateTimeOffset)?displayProperty=nameWithType>--> methods. You can also use the new `Version` <!--<xref:System.Guid.Version>--> property to retrieve a `Guid` object's version field.
 
 ## System.IO
 
-- [Compression](#compression)
-- [XPS documents from XPS virtual printer](#xps-documents-from-xps-virtual-printer)
+-   [Compression](#compression)
+-   [XPS documents from XPS virtual printer](#xps-documents-from-xps-virtual-printer)
 
 ### Compression
 
@@ -626,15 +621,15 @@ public static bool ListContainsItem(ReadOnlySpan<char> span, string item)
 
 ### XPS documents from XPS virtual printer
 
-XPS documents coming from a V4 XPS virtual printer previously couldn't be opened using the <xref:System.IO.Packaging> library, due to lack of support for handling *.piece* files. This gap has been addressed in .NET 9.
+XPS documents coming from a V4 XPS virtual printer previously couldn't be opened using the <xref:System.IO.Packaging> library, due to lack of support for handling _.piece_ files. This gap has been addressed in .NET 9.
 
 ## System.Numerics
 
-- [BigInteger upper limit](#biginteger-upper-limit)
-- [`BigMul` APIs](#bigmul-apis)
-- [Vector conversion APIs](#vector-conversion-apis)
-- [Vector create APIs](#vector-create-apis)
-- [Additional acceleration](#additional-acceleration)
+-   [BigInteger upper limit](#biginteger-upper-limit)
+-   [`BigMul` APIs](#bigmul-apis)
+-   [Vector conversion APIs](#vector-conversion-apis)
+-   [Vector create APIs](#vector-create-apis)
+-   [Additional acceleration](#additional-acceleration)
 
 ### BigInteger upper limit
 
@@ -646,10 +641,10 @@ XPS documents coming from a V4 XPS virtual printer previously couldn't be opened
 
 The new APIs are:
 
-- <xref:System.Int32.BigMul(System.Int32,System.Int32)> (returns `long`)
-- <xref:System.Int64.BigMul(System.Int64,System.Int64)> (returns `Int128`)
-- <xref:System.UInt32.BigMul(System.UInt32,System.UInt32)> (returns `ulong`)
-- <xref:System.UInt64.BigMul(System.UInt64,System.UInt64)> (returns `UInt128`)
+-   <xref:System.Int32.BigMul(System.Int32,System.Int32)> (returns `long`)
+-   <xref:System.Int64.BigMul(System.Int64,System.Int64)> (returns `Int128`)
+-   <xref:System.UInt32.BigMul(System.UInt32,System.UInt32)> (returns `ulong`)
+-   <xref:System.UInt64.BigMul(System.UInt64,System.UInt64)> (returns `UInt128`)
 
 ### Vector conversion APIs
 
@@ -657,16 +652,16 @@ The new APIs are:
 
 The new APIs are as follows:
 
-- <xref:System.Numerics.Vector.AsPlane(System.Numerics.Vector4)>
-- <xref:System.Numerics.Vector.AsQuaternion(System.Numerics.Vector4)>
-- <xref:System.Numerics.Vector.AsVector2(System.Numerics.Vector4)>
-- <xref:System.Numerics.Vector.AsVector3(System.Numerics.Vector4)>
-- <xref:System.Numerics.Vector.AsVector4(System.Numerics.Plane)>
-- <xref:System.Numerics.Vector.AsVector4(System.Numerics.Quaternion)>
-- <xref:System.Numerics.Vector.AsVector4(System.Numerics.Vector2)>
-- <xref:System.Numerics.Vector.AsVector4(System.Numerics.Vector3)>
-- <xref:System.Numerics.Vector.AsVector4Unsafe(System.Numerics.Vector2)>
-- <xref:System.Numerics.Vector.AsVector4Unsafe(System.Numerics.Vector3)>
+-   <xref:System.Numerics.Vector.AsPlane(System.Numerics.Vector4)>
+-   <xref:System.Numerics.Vector.AsQuaternion(System.Numerics.Vector4)>
+-   <xref:System.Numerics.Vector.AsVector2(System.Numerics.Vector4)>
+-   <xref:System.Numerics.Vector.AsVector3(System.Numerics.Vector4)>
+-   <xref:System.Numerics.Vector.AsVector4(System.Numerics.Plane)>
+-   <xref:System.Numerics.Vector.AsVector4(System.Numerics.Quaternion)>
+-   <xref:System.Numerics.Vector.AsVector4(System.Numerics.Vector2)>
+-   <xref:System.Numerics.Vector.AsVector4(System.Numerics.Vector3)>
+-   <xref:System.Numerics.Vector.AsVector4Unsafe(System.Numerics.Vector2)>
+-   <xref:System.Numerics.Vector.AsVector4Unsafe(System.Numerics.Vector3)>
 
 For same-sized conversions, such as between `Vector4`, `Quaternion`, and `Plane`, these conversions are zero cost. The same can be said for narrowing conversions, such as from `Vector4` to `Vector2` or `Vector3`. For widening conversions, such as from `Vector2` or `Vector3` to `Vector4`, there is the normal API, which initializes new elements to 0, and an `Unsafe` suffixed API that leaves these new elements undefined and therefore can be zero cost.
 
@@ -676,10 +671,10 @@ There are new `Create` APIs exposed for <xref:System.Numerics.Vector>, <xref:Sys
 
 For more information about the new APIs, see:
 
-- <xref:System.Numerics.Vector.Create%2A?displayProperty=nameWithType>
-- <xref:System.Numerics.Vector2.Create%2A?displayProperty=nameWithType>
-- <xref:System.Numerics.Vector3.Create%2A?displayProperty=nameWithType>
-- <xref:System.Numerics.Vector4.Create%2A?displayProperty=nameWithType>
+-   <xref:System.Numerics.Vector.Create%2A?displayProperty=nameWithType>
+-   <xref:System.Numerics.Vector2.Create%2A?displayProperty=nameWithType>
+-   <xref:System.Numerics.Vector3.Create%2A?displayProperty=nameWithType>
+-   <xref:System.Numerics.Vector4.Create%2A?displayProperty=nameWithType>
 
 These APIs are primarily for convenience and overall consistency across .NET's SIMD-accelerated types.
 
@@ -697,10 +692,10 @@ Tensors are the cornerstone data structure of artificial intelligence (AI). They
 
 Tensors are used to:
 
-- Represent and encode data such as text sequences (tokens), images, video, and audio.
-- Efficiently manipulate higher-dimensional data.
-- Efficiently apply computations on higher-dimensional data.
-- Store weight information and intermediate computations (in neural networks).
+-   Represent and encode data such as text sequences (tokens), images, video, and audio.
+-   Efficiently manipulate higher-dimensional data.
+-   Efficiently apply computations on higher-dimensional data.
+-   Store weight information and intermediate computations (in neural networks).
 
 To use the .NET tensor APIs, install the [System.Numerics.Tensors](https://www.nuget.org/packages/System.Numerics.Tensors/) NuGet package.
 
@@ -708,10 +703,10 @@ To use the .NET tensor APIs, install the [System.Numerics.Tensors](https://www.n
 
 The new <xref:System.Numerics.Tensors.Tensor%601> type expands the AI capabilities of the .NET libraries and runtime. This type:
 
-- Provides efficient interop with AI libraries like ML.NET, TorchSharp, and ONNX Runtime using zero copies where possible.
-- Builds on top of <xref:System.Numerics.Tensors.TensorPrimitives> for efficient math operations.
-- Enables easy and efficient data manipulation by providing indexing and slicing operations.
-- Is not a replacement for existing AI and machine learning libraries. Instead, it's intended to provide a common set of APIs to reduce code duplication and dependencies, and to achieve better performance by using the latest runtime features.
+-   Provides efficient interop with AI libraries like ML.NET, TorchSharp, and ONNX Runtime using zero copies where possible.
+-   Builds on top of <xref:System.Numerics.Tensors.TensorPrimitives> for efficient math operations.
+-   Enables easy and efficient data manipulation by providing indexing and slicing operations.
+-   Is not a replacement for existing AI and machine learning libraries. Instead, it's intended to provide a common set of APIs to reduce code duplication and dependencies, and to achieve better performance by using the latest runtime features.
 
 The following codes shows some of the APIs included with the new `Tensor<T>` type.
 

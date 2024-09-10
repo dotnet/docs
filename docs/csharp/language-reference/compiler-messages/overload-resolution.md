@@ -135,7 +135,7 @@ public class a
 
 Overloadable binary operator expected
 
-An attempt was made to define an operator overload, but the operator was not an overloadable binary operator, which takes two parameters. For the list of overloadable operators, see the [Overloadable operators](../language-reference/operators/operator-overloading.md#overloadable-operators) section of the [Operator overloading](../language-reference/operators/operator-overloading.md) article.
+An attempt was made to define an operator overload, but the operator was not an overloadable binary operator, which takes two parameters. For the list of overloadable operators, see the [Overloadable operators](../operators/operator-overloading.md#overloadable-operators) section of the [Operator overloading](../operators/operator-overloading.md) article.
 
 The following sample generates CS1020:
 

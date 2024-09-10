@@ -176,7 +176,7 @@ services:
       - "5672:5672"
   sqldata:
     environment:
-      - SA_PASSWORD=Pass@word
+      - SA_PASSWORD=[PLACEHOLDER]
       - ACCEPT_EULA=Y
     ports:
       - "5433:1433"

@@ -3,7 +3,7 @@ title: Authentication and Authorization
 description: Providing security and identity management for .NET MAUI application
 author: michaelstonis
 no-loc: [MAUI]
-ms.date: 05/30/2024
+ms.date: 09/10/2024
 ---
 
 # Authentication and authorization
@@ -46,7 +46,7 @@ The eShop multi-platform app communicates with the identity microservice, which 
 ### Adding IdentityServer to a web application
 
 In order for an ASP.NET Core web application to use IdentityServer, it must be added to the web application's Visual Studio solution. For more information, see [Setup and Overview](https://docs.duendesoftware.com/identityserver/v7/quickstarts/) in the IdentityServer documentation.
-Once IdentityServer is included in the web application's Visual Studio solution, it must be added to its HTTP request processing pipeline to serve requests to OpenID Connect and OAuth 2.0 endpoints. This is configured in the `Identity.API` project's `Program.cs`, as demonstrated in the following code example:
+Once IdentityServer is included in the web application's Visual Studio solution, it must be added to its HTTP request processing pipeline to serve requests to OpenID Connect and OAuth 2.0 endpoints. This is configured in the `Identity.API` project's _Program.cs_, as demonstrated in the following code example:
 
 ```csharp
 
@@ -59,23 +59,28 @@ Order matters in the web application's HTTP request processing pipeline. Therefo
 
 ### Configuring IdentityServer
 
-IdentityServer should be configured in the ConfigureServices method in the web application's Startup class by calling the `services.AddIdentityServer` method, as demonstrated in the following code example from the eShop reference application:
+IdentityServer is configured in the `Identity.API` project's _Program.cs_ by calling the `AddIdentityServer` method, as demonstrated in the following code example from the eShop reference application:
 
 ```csharp
-public void ConfigureServices(IServiceCollection services)
-{
-    services
-        .AddIdentityServer(x => x.IssuerUri = "null")
-        .AddSigningCredential(Certificate.Get())
-        .AddAspNetIdentity<ApplicationUser>()
-        .AddConfigurationStore(builder =>
-            builder.UseSqlServer(connectionString, options =>
-                options.MigrationsAssembly(migrationsAssembly)))
-        .AddOperationalStore(builder =>
-            builder.UseSqlServer(connectionString, options =>
-                options.MigrationsAssembly(migrationsAssembly)))
-        .Services.AddTransient<IProfileService, ProfileService>();
-}
+builder.Services.AddIdentityServer(options =>
+    {
+        options.Authentication.CookieLifetime = TimeSpan.FromHours(2);
+    
+        options.Events.RaiseErrorEvents = true;
+        options.Events.RaiseInformationEvents = true;
+        options.Events.RaiseFailureEvents = true;
+        options.Events.RaiseSuccessEvents = true;
+    
+        // TODO: Remove this line in production.
+        options.KeyManagement.Enabled = false;
+    })
+    .AddInMemoryIdentityResources(Config.GetResources())
+    .AddInMemoryApiScopes(Config.GetApiScopes())
+    .AddInMemoryApiResources(Config.GetApis())
+    .AddInMemoryClients(Config.GetClients(builder.Configuration))
+    .AddAspNetIdentity<ApplicationUser>()
+    // TODO: Not recommended for production - you need to store your key material somewhere secure
+    .AddDeveloperSigningCredential();
 ```
 
 After calling the `services.AddIdentityServer` method, additional fluent APIs are called to configure the following:
@@ -147,33 +152,37 @@ public static IEnumerable<Client> GetClients(Dictionary<string,string> clien
     return new List<Client>
     {
         // Omitted for brevity
-        new Client
-        {
-            ClientId = "maui",
-            ClientName = "eShop .NET MAUI OpenId Client",
-            AllowedGrantTypes = GrantTypes.Hybrid,
-            ClientSecrets =
-            {
-                new Secret("secret".Sha256())
-            },
-            RedirectUris = { clientsUrl["maui"] },
-            RequireConsent = false,
-            RequirePkce = true,
-            PostLogoutRedirectUris = { $"{clientsUrl["maui"]}/Account/Redirecting" },
-            AllowedCorsOrigins = { "http://eshopmaui" },
-            AllowedScopes = new List<string>
-            {
-                IdentityServerConstants.StandardScopes.OpenId,
-                IdentityServerConstants.StandardScopes.Profile,
-                IdentityServerConstants.StandardScopes.OfflineAccess,
-                "orders",
-                "basket"
-            },
-            AllowOfflineAccess = true,
-            AllowAccessTokensViaBrowser = true,
+        new Client
+        {
+            ClientId = "maui",
+            ClientName = "eShop MAUI OpenId Client",
+            AllowedGrantTypes = GrantTypes.Code,                    
+            //Used to retrieve the access token on the back channel.
+            ClientSecrets =
+            {
+                new Secret("secret".Sha256())
+            },
+            RedirectUris = { configuration["MauiCallback"] },
+            RequireConsent = false,
+            RequirePkce = true,
+            PostLogoutRedirectUris = { $"{configuration["MauiCallback"]}/Account/Redirecting" },
+            AllowedScopes = new List<string>
+            {
+                IdentityServerConstants.StandardScopes.OpenId,
+                IdentityServerConstants.StandardScopes.Profile,
+                IdentityServerConstants.StandardScopes.OfflineAccess,
+                "orders",
+                "basket",
+                "mobileshoppingagg",
+                "webhooks"
+            },
+            //Allow requesting refresh tokens for long lived API access
+            AllowOfflineAccess = true,
+            AllowAccessTokensViaBrowser = true,
+            AlwaysIncludeUserClaimsInIdToken = true,
             AccessTokenLifetime = 60 * 60 * 2, // 2 hours
-            IdentityTokenLifetime = 60 * 60 * 2 // 2 hours
-        }
+            IdentityTokenLifetime= 60 * 60 * 2 // 2 hours
+        }
     };
 }
 ```

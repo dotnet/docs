@@ -185,6 +185,8 @@ services:
       - "27017:27017"
 ```
 
+[!INCLUDE [managed-identities](../../../framework/includes/managed-identities.md)]
+
 So, to run the functional/integration tests you must first run this command, from the solution test folder:
 
 ```console

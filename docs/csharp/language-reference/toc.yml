@@ -509,6 +509,11 @@ items:
     displayName: >
       CS0748, CS1621, CS1628, CS1632, CS1673, CS1686, CS1706, CS1989, CS8030, CS8175, CS8916, CS8971, CS8972, CS8975, CS9098,
       CS9099, CS9100
+  - name: Overload resolution
+    href: ./compiler-messages/overload-resolution-errors.md
+    displayName: >
+      'overload resolution',
+      CS9261, CS9262
   - name: Restrictions on expression trees
     href: ./compiler-messages/expression-tree-restrictions.md
     displayName: >

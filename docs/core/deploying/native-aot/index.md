@@ -14,7 +14,6 @@ The benefit of Native AOT is most significant for workloads with a high number o
 
 The Native AOT deployment model uses an ahead-of-time compiler to compile IL to native code at the time of publish. Native AOT apps don't use a just-in-time (JIT) compiler when the application runs. Native AOT apps can run in restricted environments where a JIT isn't allowed. Native AOT applications target a specific runtime environment, such as Linux x64 or Windows x64, just like publishing a [self-contained app](../index.md#publish-self-contained).
 
-
 ## Prerequisites
 
 # [Windows](#tab/windows)

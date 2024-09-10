@@ -53,7 +53,7 @@ class Runtime
     static byte Test1()
     {
         Vector128<byte> v = Vector128<byte>.Zero;
-        byte size = 1;
+        const byte size = 1;
         v = Sse2.ShiftRightLogical128BitLane(v, size);
         return Sse41.Extract(v, 0);
     }

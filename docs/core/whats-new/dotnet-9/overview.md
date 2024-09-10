@@ -77,11 +77,11 @@ Entity Framework Core includes significant updates to the database provider for 
 
 C# 13 ships with the .NET 9 SDK and includes the following new features:
 
--   `params` collections
--   New `lock` type and semantics
--   New escape sequence - `\e`
--   Method group natural type improvements
--   Implicit indexer access in object initializers
+- `params` collections
+- New `lock` type and semantics
+- New escape sequence - `\e`
+- Method group natural type improvements
+- Implicit indexer access in object initializers
 
 For more information, see [What's new in C# 13](../../../csharp/whats-new/csharp-13.md).
 
@@ -99,7 +99,7 @@ Windows Presentation Foundation (WPF) includes support for Windows 11 theming an
 
 ## See also
 
--   [Our vision for .NET 9](https://devblogs.microsoft.com/dotnet/our-vision-for-dotnet-9/) blog post
--   [What's new in ASP.NET Core 9.0](/aspnet/core/release-notes/aspnetcore-9.0)
--   [What's new in .NET MAUI](/dotnet/maui/whats-new/dotnet-9)
--   [What's new in EF Core](/ef/core/what-is-new/ef-core-9.0/whatsnew)
+- [Our vision for .NET 9](https://devblogs.microsoft.com/dotnet/our-vision-for-dotnet-9/) blog post
+- [What's new in ASP.NET Core 9.0](/aspnet/core/release-notes/aspnetcore-9.0)
+- [What's new in .NET MAUI](/dotnet/maui/whats-new/dotnet-9)
+- [What's new in EF Core](/ef/core/what-is-new/ef-core-9.0/whatsnew)

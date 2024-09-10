@@ -89,20 +89,20 @@ using HttpResponseMessage responseMessage = await client.PostAsync(uri, new Stri
 | `CachePolicy` | No direct equivalent API | See: [Example: Apply CachePolicy Headers](#example-apply-cachepolicy-headers). |
 | `ClientCertificates` | <xref:System.Net.Http.SocketsHttpHandler.SslOptions>.<xref:System.Net.Security.SslClientAuthenticationOptions.ClientCertificates> | See: [Usage of Certificate Related Properties in HttpClient](#usage-of-certificate-and-tls-related-properties-in-httpclient). |
 | `Connection` | <xref:System.Net.Http.Headers.HttpRequestHeaders.Connection> | See: [Example: Set Request Headers](#example-set-request-headers). |
-| `ConnectionGroupName` | No equivalent API | TODO |
-| `ContentLength` | <xref:System.Net.Http.Headers.HttpContentHeaders.ContentLength> | TODO |
-| `ContentType` | <xref:System.Net.Http.Headers.HttpContentHeaders.ContentType> | TODO |
-| `ContinueDelegate` | No equivalent API | TODO |
+| `ConnectionGroupName` | No equivalent API | No workaround |
+| `ContentLength` | <xref:System.Net.Http.Headers.HttpContentHeaders.ContentLength> | See: [Example: Set Content Headers](#example-set-content-headers). |
+| `ContentType` | <xref:System.Net.Http.Headers.HttpContentHeaders.ContentType> | See: [Example: Set Content Headers](#example-set-content-headers). |
+| `ContinueDelegate` | No equivalent API | TODO: There might be workaround for it. |
 | `ContinueTimeout` | <xref:System.Net.Http.SocketsHttpHandler.Expect100ContinueTimeout> | See: [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
 | `CookieContainer` | <xref:System.Net.Http.SocketsHttpHandler.CookieContainer> | See: [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
 | `Credentials` | <xref:System.Net.Http.SocketsHttpHandler.Credentials> | See: [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
 | `Date` | <xref:System.Net.Http.Headers.HttpRequestHeaders.Date> | See: [Example: Set Request Headers](#example-set-request-headers). |
 | `DefaultCachePolicy` | No direct equivalent API | See: [Example: Apply CachePolicy Headers](#example-apply-cachepolicy-headers). |
-| `DefaultMaximumErrorResponseLength` | TODO | TODO |
+| `DefaultMaximumErrorResponseLength` | No direct equivalent API | See: [Example: Set MaximumErrorResponseLength in HttpClient](#example-set-maximumerrorresponselength-in-httpclient). |
 | `DefaultMaximumResponseHeadersLength` | No equivalent API | <xref:System.Net.Http.SocketsHttpHandler.MaxResponseHeadersLength> can be used instead. |
 | `DefaultWebProxy` | No equivalent API | <xref:System.Net.Http.SocketsHttpHandler.Proxy> can be used instead. |
 | `Expect` | <xref:System.Net.Http.Headers.HttpRequestHeaders.Expect> | See: [Example: Set Request Headers](#example-set-request-headers). |
-| `HaveResponse` | No equivalent API | TODO |
+| `HaveResponse` | No equivalent API | No workaround |
 | `Headers` | <xref:System.Net.Http.HttpRequestMessage.Headers> | See: [Example: Set Request Headers](#example-set-request-headers). |
 | `Host` | <xref:System.Net.Http.Headers.HttpRequestHeaders.Host> | See: [Example: Set Request Headers](#example-set-request-headers). |
 | `IfModifiedSince` | <xref:System.Net.Http.Headers.HttpRequestHeaders.IfModifiedSince> | See: [Example: Set Request Headers](#example-set-request-headers). |
@@ -113,7 +113,7 @@ using HttpResponseMessage responseMessage = await client.PostAsync(uri, new Stri
 | `MediaType` | TODO | TODO |
 | `Method` | <xref:System.Net.Http.HttpRequestMessage.Method> | See: [Example: Usage of HttpRequestMessage properties](#example-usage-of-httprequestmessage-properties). |
 | `Pipelined` | No equivalent API | `HttpClient` doesn't support pipelining. |
-| `PreAuthenticate` | <xref:System.Net.Http.SocketsHttpHandler.PreAuthenticate> | TODO |
+| `PreAuthenticate` | <xref:System.Net.Http.SocketsHttpHandler.PreAuthenticate> | |
 | `ProtocolVersion` | TODO | TODO |
 | `Proxy` | <xref:System.Net.Http.SocketsHttpHandler.Proxy> | See: [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
 | `ReadWriteTimeout` | No direct equivalent API | See <xref:System.Net.Http.SocketsHttpHandler.ConnectCallback>. |
@@ -440,6 +440,14 @@ TODO:
 TODO:
 
 ### Example: Set Request Headers
+
+TODO:
+
+### Example: Set Content Headers
+
+TODO:
+
+### Example: Set MaximumErrorResponseLength in HttpClient
 
 TODO:
 

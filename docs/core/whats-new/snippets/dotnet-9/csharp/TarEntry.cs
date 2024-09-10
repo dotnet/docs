@@ -3,17 +3,22 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
+using Microsoft.Azure.Management.Fluent;
 
 namespace Project;
 internal class TarEntry
 {
-    public static void RunIt()
+    public static async Task RunItAsync()
     {
+        Azure.Storage.Blobs.Models.BlobOpenReadOptions options = new();
+        CancellationToken cancellationToken = new();
+
         // <DataOffset>
         // Create stream for tar ball data in Azure Blob Storage.
-        var blobClient = Azure.Storage.Blobs.BlobClient(....);
-        var blobClientStream = await blobClient.OpenReadAsync(...);
+        var blobClient = Azure.Storage.Blobs.BlobClient();
+        var blobClientStream = await blobClient.OpenReadAsync(options, cancellationToken);
 
         // Create TarReader for the stream and get a TarEntry.
         var tarReader = new System.Formats.Tar.TarReader(blobClientStream);
@@ -24,12 +29,12 @@ internal class TarEntry
         var entryLength = tarEntry.Length;
 
         // Create a separate stream.
-        var newBlobClientStream = await TarBlob.OpenReadAsync(...);
+        var newBlobClientStream = await blobClient.OpenReadAsync(options, cancellationToken);
         newBlobClientStream.Seek(entryOffsetInBlobStream, SeekOrigin.Begin);
 
         // Read tar ball content from separate BlobClient stream.
         var bytes = new byte[length];
-        await tarBlobStream.ReadAsync(bytes, 0, (int)entryLength);
+        await newBlobClientStream.ReadAsync(bytes, 0, (int)entryLength);
         // </DataOffset>
     }
 }

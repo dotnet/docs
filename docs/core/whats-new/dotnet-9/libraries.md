@@ -38,7 +38,7 @@ The collection types in .NET gain the following updates for .NET 9:
 
 In high-performance code, spans are often used to avoid allocating strings unnecessarily, and lookup tables with types like <xref:System.Collections.Generic.Dictionary%602> and <xref:System.Collections.Generic.HashSet%601> are frequently used as caches. However, there has been no safe, built-in mechanism for doing lookups on these collection types with spans. With the new `allows ref struct` feature in C# 13 and new features on these collection types in .NET 9, it's now possible to perform these kinds of lookups.
 
-The following example demonstrates using <xref:System.Collections.Generic.Dictionary%602.GetAlternateLookup?displayProperty=nameWithType>.
+The following example demonstrates using [Dictionary<TKey,TValue>.GetAlternateLookup](xref:System.Collections.Generic.CollectionExtensions.GetAlternateLookup%60%603(System.Collections.Generic.Dictionary{%60%600,%60%601})).
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Collections.cs" id="AlternateLookup":::
 
@@ -132,13 +132,13 @@ Those methods all used content-sniffing to figure out if the input was something
 - It's a protocol deviation.
 - It's a source of security issues.
 
-.NET 9 introduces a new <xref:System.Security.Cryptography.X509CertificateLoader> class, which has a "one method, one purpose" design. In its initial version, it only supports two of the five formats that the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> constructor supported. Those are the two formats that worked on all operation systems.
+.NET 9 introduces a new <xref:System.Security.Cryptography.X509Certificates.X509CertificateLoader> class, which has a "one method, one purpose" design. In its initial version, it only supports two of the five formats that the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> constructor supported. Those are the two formats that worked on all operation systems.
 
 ### OpenSSL providers support
 
 .NET 8 introduced the OpenSSL-specific APIs <xref:System.Security.Cryptography.SafeEvpPKeyHandle.OpenPrivateKeyFromEngine(System.String,System.String)> and <xref:System.Security.Cryptography.SafeEvpPKeyHandle.OpenPublicKeyFromEngine(System.String,System.String)>. They enable interacting with OpenSSL [`ENGINE` components](https://github.com/openssl/openssl/blob/master/README-ENGINES.md) and use hardware security modules (HSM), for example.
 
-.NET 9 introduces <xref:System.Security.Cryptography.SafeEvpPKeyHandle.OpenKeyFromProvider?displayProperty=nameWithType>, which enables using [OpenSSL providers](https://docs.openssl.org/master/man7/provider/) and interacting with providers such as `tpm2` or `pkcs11`.
+.NET 9 introduces <xref:System.Security.Cryptography.SafeEvpPKeyHandle.OpenKeyFromProvider(System.String,System.String)?displayProperty=nameWithType>, which enables using [OpenSSL providers](https://docs.openssl.org/master/man7/provider/) and interacting with providers such as `tpm2` or `pkcs11`.
 
 Some distros have [removed `ENGINE` support](https://github.com/dotnet/runtime/issues/104775) since it is now deprecated.
 
@@ -638,7 +638,7 @@ string result = string.Join(", ", "a", "b", "c");
 
 Prior to .NET 9, when you pass the values individually, the C# compiler emits code identical to the first call by producing an implicit array around the three arguments.
 
-Starting in C# 13, you can use `params` with any argument that can be constructed via a collection expression, including spans (xref:System.Span%601> and <xref:System.ReadOnlySpan%601). That's beneficial for usability and performance. The C# compiler can store the arguments on the stack, wrap a span around them, and pass that off to the method, which avoids the implicit array allocation that would have otherwise resulted.
+Starting in C# 13, you can use `params` with any argument that can be constructed via a collection expression, including spans (<xref:System.Span%601> and <xref:System.ReadOnlySpan%601>). That's beneficial for usability and performance. The C# compiler can store the arguments on the stack, wrap a span around them, and pass that off to the method, which avoids the implicit array allocation that would have otherwise resulted.
 
 .NET 9 includes over 60 methods with a `params ReadOnlySpan<T>` parameter. Some are brand new overloads, and some are existing methods that already took a `ReadOnlySpan<T>` but now have that parameter marked with `params`. The net effect is if you upgrade to .NET 9 and recompile your code, you'll see performance improvements without making any code changes. That's because the compiler prefers to bind to span-based overloads than to the array-based overloads.
 
@@ -671,7 +671,7 @@ public static bool ListContainsItem(ReadOnlySpan<char> span, string item)
 
 ## System.Formats
 
-The position or offset of the data in the enclosing stream for a <xref:System.Formats.Tar.TarEntry> object is now a public property. `TarEntry.DataOffset` <!--<xref:System.Formats.Tar.TarEntry.DataOffset?displayProperty=nameWithType>--> returns the position in the entry's archive stream where the entry's first data byte is located. The entry's data is encapsulated in a substream that you can access via <xref:System.Formats.Tar.TarEntry.DataStream?displayProperty=nameWithType>, which hides the real position of the data relative to the archive stream. This is enough for most users, but if you need more flexibility and want to know the real starting position of the data in the archive stream, the new `TarEntry.DataOffset` <!--<xref:System.Formats.Tar.TarEntry.DataOffset?displayProperty=nameWithType>--> API makes it easy to support features like concurrent access with very large TAR files.
+The position or offset of the data in the enclosing stream for a <xref:System.Formats.Tar.TarEntry> object is now a public property. `TarEntry.DataOffset` <!--<xref:System.Formats.Tar.TarEntry.DataOffset?displayProperty=nameWithType>--> returns the position in the entry's archive stream where the entry's first data byte is located. The entry's data is encapsulated in a substream that you can access via <xref:System.Formats.Tar.TarEntry.DataStream?displayProperty=nameWithType>, which hides the real position of the data relative to the archive stream. That's enough for most users, but if you need more flexibility and want to know the real starting position of the data in the archive stream, the new `TarEntry.DataOffset` <!--<xref:System.Formats.Tar.TarEntry.DataOffset?displayProperty=nameWithType>--> API makes it easy to support features like concurrent access with very large TAR files.
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/TarEntry.cs" id="DataOffset":::
 
@@ -691,7 +691,7 @@ The position or offset of the data in the enclosing stream for a <xref:System.Fo
 
 ### ZLib and Brotli compression options
 
-<System.IO.Compression.ZLibCompressionOptions> and <xref:System.IO.Compression.BrotliCompressionOptions> are new types for setting algorithm-specific compression [level](xref:System.IO.Compression.CompressionLevel) and strategy (`Default`, `Filtered`, `HuffmanOnly`, `RunLengthEncoding`, or `Fixed`). These types are aimed at users who want more fine-tuned settings than the only existing option, <System.IO.Compression.CompressionLevel>.
+`ZLibCompressionOptions` <!--<xref:System.IO.Compression.ZLibCompressionOptions>--> and `BrotliCompressionOptions` <!--<xref:System.IO.Compression.BrotliCompressionOptions>--> are new types for setting algorithm-specific compression [level](xref:System.IO.Compression.CompressionLevel) and strategy (`Default`, `Filtered`, `HuffmanOnly`, `RunLengthEncoding`, or `Fixed`). These types are aimed at users who want more fine-tuned settings than the only existing option, <System.IO.Compression.CompressionLevel>.
 
 The new compression option types might be expanded in the future.
 

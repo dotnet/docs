@@ -7,7 +7,7 @@ using System.Threading;
 
 internal class Networking
 {
-    public async static void RunIt()
+    public static async void RunIt()
     {
         // <SseParser>
         Stream responseStream = new MemoryStream();

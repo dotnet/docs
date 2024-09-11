@@ -92,7 +92,7 @@ using HttpResponseMessage responseMessage = await client.PostAsync(uri, new Stri
 | `ConnectionGroupName` | No equivalent API | No workaround |
 | `ContentLength` | <xref:System.Net.Http.Headers.HttpContentHeaders.ContentLength> | See: [Example: Set Content Headers](#example-set-content-headers). |
 | `ContentType` | <xref:System.Net.Http.Headers.HttpContentHeaders.ContentType> | See: [Example: Set Content Headers](#example-set-content-headers). |
-| `ContinueDelegate` | No equivalent API | TODO: There might be workaround for it. |
+| `ContinueDelegate` | No equivalent API | There is no workaround. |
 | `ContinueTimeout` | <xref:System.Net.Http.SocketsHttpHandler.Expect100ContinueTimeout> | See: [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
 | `CookieContainer` | <xref:System.Net.Http.SocketsHttpHandler.CookieContainer> | See: [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
 | `Credentials` | <xref:System.Net.Http.SocketsHttpHandler.Credentials> | See: [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
@@ -163,7 +163,7 @@ Developers should be aware that `ServicePointManager` is a static class, meaning
 |---------|----------------------|-------|
 | `Address` | `HttpRequestMessage.RequestUri` | This is request uri, this information can be found under `HttpRequestMessage`. |
 | `BindIPEndPointDelegate` | No direct equivalent API | See <xref:System.Net.Http.SocketsHttpHandler.ConnectCallback>. |
-| `Certificate` | No direct equivalent API | This information can be fetched from `RemoteCertificateValidationCallback`. TODO: Add example |
+| `Certificate` | No direct equivalent API | This information can be fetched from `RemoteCertificateValidationCallback`. See: [Example: Fetch Certificate](#example-fetch-certificate) |
 | `ClientCertificate` | No equivalent API | TODO |
 | `ConnectionLeaseTimeout` | `SocketsHttpHandler.PooledConnectionLifetime` | Equivalent setting in <xref:System.Net.Http.HttpClient> |
 | `ConnectionLimit` | <xref:System.Net.Http.SocketsHttpHandler.MaxConnectionsPerServer> | TODO |
@@ -186,11 +186,26 @@ Developers should be aware that `ServicePointManager` is a static class, meaning
 
 ## Usage of HttpClient and HttpRequestMessage Properties
 
-TODO:
+When working with HttpClient in .NET, you have access to a variety of properties that allow you to configure and customize HTTP requests and responses. Understanding these properties can help you make the most of HttpClient and ensure that your application communicates efficiently and securely with web services.
 
 ### Example: Usage of HttpRequestMessage properties
 
-TODO:
+Here's an example of how to use HttpClient and HttpRequestMessage together:
+
+```csharp
+var client = new HttpClient();
+
+var request = new HttpRequestMessage(HttpMethod.Post, "https://example.com"); // Method and RequestUri usage
+var request = new HttpRequestMessage() // Alternative way to set RequestUri and Method
+{
+    RequestUri = new Uri("https://example.com"),
+    Method = HttpMethod.Post
+};
+request.Headers.Add("Custom-Header", "value");
+request.Content = new StringContent("somestring");
+
+var response = await client.SendAsync(request);
+```
 
 ## Usage of SocketsHttpHandler and ConnectCallback
 
@@ -361,11 +376,56 @@ class DnsCache(IPAddress[] addresses, DateTime cacheExpireTime, int index)
 
 ### Example: Setting SocketsHttpHandler Properties
 
-TODO:
+SocketsHttpHandler is a powerful and flexible handler in .NET that provides advanced configuration options for managing HTTP connections. By setting various properties of SocketsHttpHandler, you can fine-tune the behavior of your HTTP client to meet specific requirements, such as performance optimization, security enhancements, and custom connection handling.
+
+Here's an example of how to configure SocketsHttpHandler with various properties and use it with HttpClient:
+
+```c#
+var cookieContainer = new CookieContainer();
+cookieContainer.Add(new Cookie("cookieName", "cookieValue"));
+
+var handler = new SocketsHttpHandler
+{
+    AllowAutoRedirect = true,
+    AutomaticDecompression = DecompressionMethods.All,
+    Expect100ContinueTimeout = TimeSpan.FromSeconds(1),
+    CookieContainer = cookieContainer,
+    Credentials = new NetworkCredential("user", "pass"),
+    MaxAutomaticRedirections = 10,
+    MaxResponseHeadersLength = 1,
+    Proxy = new WebProxy("http://proxyserver:8080"), // Don't forget to set UseProxy
+    UseProxy = true,
+    SslOptions = new SslClientAuthenticationOptions
+    {
+        RemoteCertificateValidationCallback = (sender, certificate, chain, sslPolicyErrors) =>
+        {
+            // Custom validation logic
+            return sslPolicyErrors == SslPolicyErrors.None;
+        }
+    },
+};
+
+var client = new HttpClient(handler);
+var response = await client.GetAsync(uri);
+```
 
 ### Example: Change ImpersonationLevel
 
-TODO:
+> [!WARNING]
+> This example contains the use of reflection, which may affect the performance of your application and can be broken in future versions of .NET. Use reflection with caution and only when necessary.
+
+In this example, we will use reflection to set the ImpersonationLevel property in SocketsHttpHandler:
+
+```csharp
+var handler = new SocketsHttpHandler();
+var settings = typeof(SocketsHttpHandler).GetField("_settings", BindingFlags.NonPublic | BindingFlags.Instance)?.GetValue(handler);
+Debug.Assert(settings != null);
+FieldInfo? fi = Type.GetType("System.Net.Http.HttpConnectionSettings, System.Net.Http")?.GetField("_impersonationLevel", BindingFlags.NonPublic | BindingFlags.Instance);
+fi?.SetValue(settings, TokenImpersonationLevel.Impersonation);
+
+var client = new HttpClient(handler);
+var response = await client.GetAsync(uri);
+```
 
 ## Usage of Certificate and TLS Related Properties in HttpClient
 
@@ -433,23 +493,187 @@ var response = await client.GetAsync("https://example.com");
 
 ### Example: Enabling Mutual Authentication
 
-TODO:
+Mutual authentication, also known as two-way SSL or client certificate authentication, is a security process in which both the client and the server authenticate each other. This ensures that both parties are who they claim to be, providing an additional layer of security for sensitive communications. In `HttpClient`, you can enable mutual authentication by configuring the `HttpClientHandler` or `SocketsHttpHandler` to include the client certificate and validate the server's certificate.
+
+To enable mutual authentication, follow these steps:
+
+- Load the client certificate.
+- Configure the HttpClientHandler or SocketsHttpHandler to include the client certificate.
+- Set up the server certificate validation callback if custom validation is needed.
+
+Here's an example using SocketsHttpHandler:
+
+```csharp
+var handler = new SocketsHttpHandler
+{
+    SslOptions = new SslClientAuthenticationOptions
+    {
+        ClientCertificates = new X509CertificateCollection
+        {
+            // Load the client certificate from a file
+            new X509Certificate2("path_to_certificate.pfx", "certificate_password")
+        },
+        RemoteCertificateValidationCallback = (sender, certificate, chain, sslPolicyErrors) =>
+        {
+            // Custom validation logic for the server certificate
+            return sslPolicyErrors == SslPolicyErrors.None;
+        }
+    }
+};
+
+var client = new HttpClient(handler);
+var response = await client.GetAsync(uri);
+```
 
 ## Usage of Header Properties
 
-TODO:
+Headers play a crucial role in HTTP communication, providing essential metadata about the request and response. When working with `HttpClient` in .NET, you can set and manage various header properties to control the behavior of your HTTP requests and responses. Understanding how to use these header properties effectively can help you ensure that your application communicates efficiently and securely with web services.
 
-### Example: Set Request Headers
+### Set Request Headers
 
-TODO:
+Request headers are used to provide additional information to the server about the request being made. Common use cases include specifying the content type, setting authentication tokens, and adding custom headers. You can set request headers using the `DefaultRequestHeaders` property of `HttpClient` or the Headers property of `HttpRequestMessage`.
+
+#### Example: Set Custom Request Headers
+
+**Setting Default Custom Request Headers in HttpClient**
+
+```csharp
+var client = new HttpClient();
+client.DefaultRequestHeaders.Add("Custom-Header", "value");
+```
+
+**Setting Custom Request Headers in HttpRequestMessage**
+
+```csharp
+var request = new HttpRequestMessage(HttpMethod.Get, uri);
+request.Headers.Add("Custom-Header", "value");
+```
+
+#### Example: Set Common Request Headers
+
+When working with `HttpRequestMessage` in .NET, setting common request headers is essential for providing additional information to the server about the request being made. These headers can include authentication tokens, content types and more. Properly configuring these headers ensures that your HTTP requests are processed correctly by the server.
+For a comprehensive list of common properties available in HttpRequestHeaders, you can refer to the [official documentation](https://learn.microsoft.com/dotnet/api/system.net.http.headers.httprequestheaders#properties).
+
+To set common request headers in `HttpRequestMessage`, you can use the `Headers` property of the `HttpRequestMessage` object. This property provides access to the `HttpRequestHeaders` collection, where you can add or modify headers as needed.
+
+**Setting Common Default Request Headers in HttpClient**
+
+```csharp
+using System.Net.Http.Headers;
+
+var client = new HttpClient();
+client.DefaultRequestHeaders.Authorization =  new AuthenticationHeaderValue("Bearer", "token");
+```
+
+**Setting Common Request Headers in HttpRequestMessage**
+
+```csharp
+using System.Net.Http.Headers;
+
+var request = new HttpRequestMessage(HttpMethod.Get, uri);
+request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", "token");
+```
 
 ### Example: Set Content Headers
 
-TODO:
+Content headers are used to provide additional information about the body of an HTTP request or response. When working with `HttpClient` in .NET, you can set content headers to specify the media type, encoding, and other metadata related to the content being sent or received. Properly configuring content headers ensures that the server and client can correctly interpret and process the content.
+
+```csharp
+var client = new HttpClient();
+var request = new HttpRequestMessage(HttpMethod.Post, uri);
+
+// Create the content and set the content headers
+var jsonData = "{\"key\":\"value\"}";
+var content = new StringContent(jsonData, Encoding.UTF8, "application/json");
+content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
+content.Headers.ContentEncoding.Add("utf-8");
+content.Headers.ContentLength = jsonData.Length;
+
+// Assign the content to the request
+request.Content = content;
+
+var response = await client.SendAsync(request);
+```
 
 ### Example: Set MaximumErrorResponseLength in HttpClient
 
-TODO:
+The `MaximumErrorResponseLength` usage allows developers to specify the maximum length of the error response content that the handler will buffer. This is useful for controlling the amount of data that is read and stored in memory when an error response is received from the server. By using this technique, you can prevent excessive memory usage and improve the performance of your application when handling large error responses.
+
+There are couple of ways to do that, we'll examine `TruncatedReadStream` technique on this example:
+
+```csharp
+using System.Net;
+
+int maxErrorResponseLength = 1 * 1024; // 1 KB
+
+var client = new HttpClient();
+var response = await client.GetAsync(uri);
+
+if (response.Content is not null)
+{
+    var responseReadStream = response.Content.ReadAsStream();
+    // If MaxErrorResponseLength is set and the response status code is an error code, then wrap the response stream in a TruncatedReadStream
+    if (maxErrorResponseLength >= 0 && response.StatusCode >= HttpStatusCode.BadRequest)
+    {
+        responseReadStream = new TruncatedReadStream(responseReadStream, maxErrorResponseLength);
+    }
+    // Read the response stream
+    Memory<byte> buffer = new byte[1024];
+    var readValue = await responseReadStream.ReadAsync(buffer);
+}
+
+internal sealed class TruncatedReadStream(Stream innerStream, long maxSize) : Stream
+{
+    private long _maxRemainingLength = maxSize;
+    public override bool CanRead => true;
+    public override bool CanSeek => false;
+    public override bool CanWrite => false;
+
+    public override long Length => throw new NotSupportedException();
+    public override long Position { get => throw new NotSupportedException(); set => throw new NotSupportedException(); }
+
+    public override void Flush() => throw new NotSupportedException();
+
+    public override int Read(byte[] buffer, int offset, int count)
+    {
+        return Read(new Span<byte>(buffer, offset, count));
+    }
+
+    public override int Read(Span<byte> buffer)
+    {
+        int readBytes = innerStream.Read(buffer.Slice(0, (int)Math.Min(buffer.Length, _maxRemainingLength)));
+        _maxRemainingLength -= readBytes;
+        return readBytes;
+    }
+
+    public override Task<int> ReadAsync(byte[] buffer, int offset, int count, CancellationToken cancellationToken)
+    {
+        return ReadAsync(new Memory<byte>(buffer, offset, count), cancellationToken).AsTask();
+    }
+
+    public override async ValueTask<int> ReadAsync(Memory<byte> buffer, CancellationToken cancellationToken = default)
+    {
+        int readBytes = await innerStream.ReadAsync(buffer.Slice(0, (int)Math.Min(buffer.Length, _maxRemainingLength)), cancellationToken)
+            .ConfigureAwait(false);
+        _maxRemainingLength -= readBytes;
+        return readBytes;
+    }
+
+    public override long Seek(long offset, SeekOrigin origin) => throw new NotSupportedException();
+    public override void SetLength(long value) => throw new NotSupportedException();
+    public override void Write(byte[] buffer, int offset, int count) => throw new NotSupportedException();
+
+    public override ValueTask DisposeAsync() => innerStream.DisposeAsync();
+
+    protected override void Dispose(bool disposing)
+    {
+        if (disposing)
+        {
+            innerStream.Dispose();
+        }
+    }
+}
+```
 
 ### Example: Apply CachePolicy Headers
 

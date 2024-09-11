@@ -513,7 +513,8 @@ items:
     href: ./compiler-messages/overload-resolution.md
     displayName: >
       'overload resolution',
-      CS0663, CS1019, CS1020, CS1501, CS1534, CS1535, CS1928, CS1929, CS9261, CS9262
+      CS0034, CS0035, CS0111, CS0121, CS0457, CS1007, CS0663, CS1019, CS1020, CS1501, CS1534, CS1535, CS1928, CS1929,
+      CS8315, CS9261, CS9262
   - name: Restrictions on expression trees
     href: ./compiler-messages/expression-tree-restrictions.md
     displayName: >
@@ -593,10 +594,6 @@ items:
       href: ../misc/cs0030.md
     - name: CS0031
       href: ../misc/cs0031.md
-    - name: CS0034
-      href: ./compiler-messages/cs0034.md
-    - name: CS0035
-      href: ../misc/cs0035.md
     - name: CS0036
       href: ../misc/cs0036.md
     - name: CS0037
@@ -685,8 +682,6 @@ items:
       href: ../misc/cs0107.md
     - name: CS0110
       href: ../misc/cs0110.md
-    - name: CS0111
-      href: ../misc/cs0111.md
     - name: CS0112
       href: ../misc/cs0112.md
     - name: CS0113
@@ -703,8 +698,6 @@ items:
       href: ../misc/cs0119.md
     - name: CS0120
       href: ./compiler-messages/cs0120.md
-    - name: CS0121
-      href: ../misc/cs0121.md
     - name: CS0122
       href: ./compiler-messages/cs0122.md
     - name: CS0123
@@ -1005,8 +998,6 @@ items:
       href: ../misc/cs0455.md
     - name: CS0456
       href: ../misc/cs0456.md
-    - name: CS0457
-      href: ../misc/cs0457.md
     - name: CS0459
       href: ../misc/cs0459.md
     - name: CS0460
@@ -1369,8 +1360,6 @@ items:
       href: ../misc/cs1003.md
     - name: CS1004
       href: ../misc/cs1004.md
-    - name: CS1007
-      href: ../misc/cs1007.md
     - name: CS1008
       href: ../misc/cs1008.md
     - name: CS1009

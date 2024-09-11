@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 
-HostApplicationBuilderSettings settings = new HostApplicationBuilderSettings()
+HostApplicationBuilderSettings settings = new()
 {
     Args = args,
     Configuration = new ConfigurationManager(),

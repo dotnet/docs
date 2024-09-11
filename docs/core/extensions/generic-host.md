@@ -196,7 +196,7 @@ Host configuration is used to configure properties of the [IHostEnvironment](#ih
 
 # [IHostApplicationBuilder](#tab/appbuilder)
 
-The host configuration is available in <xref:Microsoft.Extensions.Hosting.IHostApplicationBuilder.Configuration?displayProperty=nameWithType> property and the environment implementation is available in <xref:Microsoft.Extensions.Hosting.IHostApplicationBuilder.Environment?displayProperty=nameWithType> property. To configure the host, access the `Configuration` property and call any of the available extension methods.
+The host configuration is available in <xref:Microsoft.Extensions.Hosting.HostApplicationBuilderSettings.Configuration?displayProperty=nameWithType> property and the environment implementation is available in <xref:Microsoft.Extensions.Hosting.IHostApplicationBuilder.Environment?displayProperty=nameWithType> property. To configure the host, access the `Configuration` property and call any of the available extension methods.
 
 To add host configuration, consider the following example:
 

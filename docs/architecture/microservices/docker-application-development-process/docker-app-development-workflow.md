@@ -1,7 +1,7 @@
 ---
 title: Development workflow for Docker apps
 description: Learn details of the workflow for developing Docker-based applications. Optimize Dockerfiles and use the simplified workflow available in Visual Studio.
-ms.date: 11/19/2021
+ms.date: 09/10/2024
 ---
 # Development workflow for Docker apps
 
@@ -379,11 +379,13 @@ services:
   sqldata:
     image: mcr.microsoft.com/mssql/server:latest
     environment:
-      - SA_PASSWORD=Pass@word
+      - SA_PASSWORD=[PLACEHOLDER]
       - ACCEPT_EULA=Y
     ports:
       - "5433:1433"
 ```
+
+[!INCLUDE [managed-identities](../../../framework/includes/managed-identities.md)]
 
 This docker-compose.yml file is a simplified and merged version. It contains static configuration data for each container (like the name of the custom image), which is always required, and configuration information that might depend on the deployment environment, like the connection string. In later sections, you will learn how to split the docker-compose.yml configuration into multiple docker-compose files and override values depending on the environment and execution type (debug or release).
 

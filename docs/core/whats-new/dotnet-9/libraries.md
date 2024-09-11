@@ -2,12 +2,13 @@
 title: What's new in .NET libraries for .NET 9
 description: Learn about the new .NET libraries features introduced in .NET 9.
 titleSuffix: ""
-ms.date: 08/09/2024
+ms.date: 09/09/2024
 ms.topic: whats-new
 ---
+
 # What's new in .NET libraries for .NET 9
 
-This article describes new features in the .NET libraries for .NET 9. It's been updated for .NET 9 Preview 7.
+This article describes new features in the .NET libraries for .NET 9. It's been updated for .NET 9 RC 1.
 
 ## Base64Url
 
@@ -22,7 +23,7 @@ string encoded = Base64Url.EncodeToString(bytes);
 
 ## BinaryFormatter
 
-.NET 9 removes  <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> from the .NET runtime. The APIs are still present, but their implementations always throw an exception, regardless of project type. For more information about the removal and your options if you're affected, see [BinaryFormatter migration guide](../../../standard/serialization/binaryformatter-migration-guide/index.md).
+.NET 9 removes <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> from the .NET runtime. The APIs are still present, but their implementations always throw an exception, regardless of project type. For more information about the removal and your options if you're affected, see [BinaryFormatter migration guide](../../../standard/serialization/binaryformatter-migration-guide/index.md).
 
 ## Collections
 
@@ -37,7 +38,7 @@ The collection types in .NET gain the following updates for .NET 9:
 
 In high-performance code, spans are often used to avoid allocating strings unnecessarily, and lookup tables with types like <xref:System.Collections.Generic.Dictionary%602> and <xref:System.Collections.Generic.HashSet%601> are frequently used as caches. However, there has been no safe, built-in mechanism for doing lookups on these collection types with spans. With the new `allows ref struct` feature in C# 13 and new features on these collection types in .NET 9, it's now possible to perform these kinds of lookups.
 
-The following example demonstrates using `Dictionary<TKey,TValue>.GetAlternateLookup()` <!--<xref:System.Collections.Generic.Dictionary%602.GetAlternateLookup?displayProperty=nameWithType>-->.
+The following example demonstrates using [Dictionary<TKey,TValue>.GetAlternateLookup](xref:System.Collections.Generic.CollectionExtensions.GetAlternateLookup%60%603(System.Collections.Generic.Dictionary{%60%600,%60%601})).
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Collections.cs" id="AlternateLookup":::
 
@@ -131,13 +132,13 @@ Those methods all used content-sniffing to figure out if the input was something
 - It's a protocol deviation.
 - It's a source of security issues.
 
-.NET 9 introduces a new `X509CertificateLoader` <!--<xref:System.Security.Cryptography.X509CertificateLoader>--> class, which has a "one method, one purpose" design. In its initial version, it only supports two of the five formats that the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> constructor supported. Those are the two formats that worked on all operation systems.
+.NET 9 introduces a new <xref:System.Security.Cryptography.X509Certificates.X509CertificateLoader> class, which has a "one method, one purpose" design. In its initial version, it only supports two of the five formats that the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> constructor supported. Those are the two formats that worked on all operation systems.
 
 ### OpenSSL providers support
 
 .NET 8 introduced the OpenSSL-specific APIs <xref:System.Security.Cryptography.SafeEvpPKeyHandle.OpenPrivateKeyFromEngine(System.String,System.String)> and <xref:System.Security.Cryptography.SafeEvpPKeyHandle.OpenPublicKeyFromEngine(System.String,System.String)>. They enable interacting with OpenSSL [`ENGINE` components](https://github.com/openssl/openssl/blob/master/README-ENGINES.md) and use hardware security modules (HSM), for example.
 
-.NET 9 introduces `SafeEvpPKeyHandle.OpenKeyFromProvider`<!--<xref:System.Security.Cryptography.SafeEvpPKeyHandle.OpenKeyFromProvider>-->, which enables using [OpenSSL providers](https://docs.openssl.org/master/man7/provider/) and interacting with providers such as `tpm2` or `pkcs11`.
+.NET 9 introduces <xref:System.Security.Cryptography.SafeEvpPKeyHandle.OpenKeyFromProvider(System.String,System.String)?displayProperty=nameWithType>, which enables using [OpenSSL providers](https://docs.openssl.org/master/man7/provider/) and interacting with providers such as `tpm2` or `pkcs11`.
 
 Some distros have [removed `ENGINE` support](https://github.com/dotnet/runtime/issues/104775) since it is now deprecated.
 
@@ -161,7 +162,7 @@ There are some performance improvements during the TLS handshake as well as impr
 
 Windows 11 has added new APIs to help secure Windows keys with [virtualization-based security (VBS)](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/advancing-key-protection-in-windows-using-vbs/ba-p/4050988). With this new capability, keys can be protected from admin-level key theft attacks with negligible effect on performance, reliability, or scale.
 
-.NET 9 has added matching `CngKeyCreationOptions` <!--<xref:System.Security.Cryptography.CngKeyCreationOptions>--> flags. The following three flags were added:
+.NET 9 has added matching <xref:System.Security.Cryptography.CngKeyCreationOptions> flags. The following three flags were added:
 
 - `CngKeyCreationOptions.PreferVbs` matching `NCRYPT_PREFER_VBS_FLAG`
 - `CngKeyCreationOptions.RequireVbs` matching `NCRYPT_REQUIRE_VBS_FLAG`
@@ -202,6 +203,7 @@ The constructor resolution for <xref:Microsoft.Extensions.DependencyInjection.Ac
 - [Debug.Assert reports assert condition by default](#debugassert-reports-assert-condition-by-default)
 - [New Activity.AddLink method](#new-activityaddlink-method)
 - [Metrics.Gauge instrument](#metricsgauge-instrument)
+- [Out-of-proc Meter wildcard listening](#out-of-proc-meter-wildcard-listening)
 
 ### Debug.Assert reports assert condition by default
 
@@ -239,6 +241,43 @@ Previously, you could only link a tracing <xref:System.Diagnostics.Activity> to 
 The following example demonstrates using the the `Gauge` instrument.
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Diagnostics.cs" id="Gauge":::
+
+### Out-of-proc Meter wildcard listening
+
+It's already possible to listen to meters out-of-process using the <xref:System.Diagnostics.Metrics> event source provider, but prior to .NET 9, you had to specify the full meter name. In .NET 9, you can listen to all meters by using the wildcard character `*`, which allows you to capture metrics from every meter in a process. Additionally, it adds support for listening by meter prefix, so you can listen to all meters whose names start with a specified prefix. For example, specifying `MyMeter*` enables listening to all meters with names that begin with `MyMeter`.
+
+:::code language="csharp" source="../snippets/dotnet-9/csharp/Diagnostics.cs" id="Wildcard":::
+
+The `MyEventListener` class is defined as follows.
+
+:::code language="csharp" source="../snippets/dotnet-9/csharp/Diagnostics.cs" id="EventListener":::
+
+When you execute the code, the output is as follows:
+
+```txt
+CounterRateValuePublished
+        sessionId: 7cd94a65-0d0d-460e-9141-016bf390d522
+        meterName: MyCompany.MyMeter
+        meterVersion:
+        instrumentName: MyCounter
+        unit:
+        tags:
+        rate: 0
+        value: 1
+        instrumentId: 1
+CounterRateValuePublished
+        sessionId: 7cd94a65-0d0d-460e-9141-016bf390d522
+        meterName: MyCompany.MyMeter
+        meterVersion:
+        instrumentName: MyCounter
+        unit:
+        tags:
+        rate: 0
+        value: 1
+        instrumentId: 1
+```
+
+You can also use the wildcard character to listen to metrics with monitoring tools like [dotnet-counters](../../diagnostics/dotnet-counters.md).
 
 ## LINQ
 
@@ -310,6 +349,8 @@ This new capability has an optimized implementation that takes advantage of the 
 - [SocketsHttpHandler is default in HttpClientFactory](#socketshttphandler-is-default-in-httpclientfactory)
 - [System.Net.ServerSentEvents](#systemnetserversentevents)
 - [TLS resume with client certificates on Linux](#tls-resume-with-client-certificates-on-linux)
+- [WebSocket keep-alive ping and timeout](#websocket-keep-alive-ping-and-timeout)
+- [HttpClientFactory no longer logs header values by default](#httpclientfactory-no-longer-logs-header-values-by-default)
 
 ### SocketsHttpHandler is default in HttpClientFactory
 
@@ -325,9 +366,32 @@ The following code demonstrates using the new class.
 
 ### TLS resume with client certificates on Linux
 
-*TLS resume* is a feature of the TLS protocol that allows resuming previously established sessions to a server. Doing so avoids a few roundtrips and saves computational resources during TLS handshake.
+_TLS resume_ is a feature of the TLS protocol that allows resuming previously established sessions to a server. Doing so avoids a few roundtrips and saves computational resources during TLS handshake.
 
-*TLS resume* has already been supported on Linux for SslStream connections without client certificates. .NET 9 adds support for TLS resume of mutually authenticated TLS connections, which are common in server-to-server scenarios. The feature is enabled automatically.
+_TLS resume_ has already been supported on Linux for SslStream connections without client certificates. .NET 9 adds support for TLS resume of mutually authenticated TLS connections, which are common in server-to-server scenarios. The feature is enabled automatically.
+
+### WebSocket keep-alive ping and timeout
+
+New APIs on <xref:System.Net.WebSockets.ClientWebSocketOptions> and <xref:System.Net.WebSockets.WebSocketCreationOptions> let you opt in to sending <xref:System.Net.WebSockets.WebSocket> pings and aborting the connection if the peer doesn't respond in time.
+
+Until now, you could specify a <xref:System.Net.WebSockets.ClientWebSocketOptions.KeepAliveInterval> to keep the connection from staying idle, but there was no built-in mechanism to enforce that the peer is responding.
+
+The following example pings the server every 5 seconds and aborts the connection if it doesn't respond within a second.
+
+:::code language="csharp" source="../snippets/dotnet-9/csharp/Networking.cs" id="KeepAliveTimeout":::
+
+### HttpClientFactory no longer logs header values by default
+
+<xref:Microsoft.Extensions.Logging.LogLevel.Trace?displayProperty=nameWithType> events logged by `HttpClientFactory` no longer include header values by default. You can opt in to logging values for specific headers via the <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.RedactLoggedHeaders*> helper method.
+
+The following example redacts all headers, except for the user agent.
+
+```csharp
+services.AddHttpClient("myClient")
+    .RedactLoggedHeaders(name => name != "User-Agent");
+```
+
+For more information, see [HttpClientFactory logging redacts header values by default](../../compatibility/networking/9.0/redact-headers.md).
 
 ## Reflection
 
@@ -336,7 +400,7 @@ The following code demonstrates using the new class.
 
 ### Persisted assemblies
 
-In .NET Core versions and .NET 5-8, support for building an assembly and emitting reflection metadata for dynamically created types was limited to a runnable <xref:System.Reflection.Emit.AssemblyBuilder>. The lack of support for *saving* an assembly was often a blocker for customers migrating from .NET Framework to .NET. .NET 9 adds a new type, <xref:System.Reflection.Emit.PersistedAssemblyBuilder>, that you can use to save an emitted assembly.
+In .NET Core versions and .NET 5-8, support for building an assembly and emitting reflection metadata for dynamically created types was limited to a runnable <xref:System.Reflection.Emit.AssemblyBuilder>. The lack of support for _saving_ an assembly was often a blocker for customers migrating from .NET Framework to .NET. .NET 9 adds a new type, <xref:System.Reflection.Emit.PersistedAssemblyBuilder>, that you can use to save an emitted assembly.
 
 To create a `PersistedAssemblyBuilder` instance, call its constructor and pass the assembly name, the core assembly, `System.Private.CoreLib`, to reference base runtime types, and optional custom attributes. After you emit all members to the assembly, call the <xref:System.Reflection.Emit.PersistedAssemblyBuilder.Save(System.String)?displayProperty=nameWithType> method to create an assembly with default settings. If you want to set the entry point or other options, you can call <xref:System.Reflection.Emit.PersistedAssemblyBuilder.GenerateMetadata%2A?displayProperty=nameWithType> and use the metadata it returns to save the assembly. The following code shows an example of creating a persisted assembly and setting the entry point.
 
@@ -359,7 +423,7 @@ The new `TypeName` class provides:
   - `IsByRef` and `IsPointer` for working with pointers and managed references.
   - `GetElementType()` for working with pointers, references, and arrays.
   - `IsNested` and `DeclaringType` for working with nested types.
-  - `AssemblyName`, which exposes the assembly name information via the new <xref:System.Reflection.Metadata.AssemblyNameInfo> class. In contrast to `AssemblyName`, the new type is *immutable*, and parsing culture names doesn't create instances of `CultureInfo`.
+  - `AssemblyName`, which exposes the assembly name information via the new <xref:System.Reflection.Metadata.AssemblyNameInfo> class. In contrast to `AssemblyName`, the new type is _immutable_, and parsing culture names doesn't create instances of `CultureInfo`.
 
 Both `TypeName` and `AssemblyNameInfo` types are immutable and don't provide a way to check for equality (they don't implement `IEquatable`). Comparing assembly names is simple, but different scenarios need to compare only a subset of exposed information (`Name`, `Version`, `CultureName`, and `PublicKeyOrToken`).
 
@@ -382,7 +446,7 @@ The following partial method will be source generated with all the code necessar
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/RegularExpressions.cs" id="GeneratedRegexMethod":::
 
-C# 13 supports partial *properties* in addition to partial methods, so starting in .NET 9 you can also use `[GeneratedRegex(...)]` on a property.
+C# 13 supports partial _properties_ in addition to partial methods, so starting in .NET 9 you can also use `[GeneratedRegex(...)]` on a property.
 
 The following partial property is the property equivalent of the previous example.
 
@@ -440,24 +504,18 @@ The generated schema is:
 
 ```json
 {
-  "type": [
-    "object",
-    "null"
-  ],
-  "properties": {
-    "Title": {
-      "type": "string"
-    },
-    "Author": {
-      "type": [
-        "string",
-        "null"
-      ]
-    },
-    "PublishYear": {
-      "type": "integer"
+    "type": ["object", "null"],
+    "properties": {
+        "Title": {
+            "type": "string"
+        },
+        "Author": {
+            "type": ["string", "null"]
+        },
+        "PublishYear": {
+            "type": "integer"
+        }
     }
-  }
 }
 ```
 
@@ -469,7 +527,7 @@ The following code shows how to set the option (the `Book` type definition is sh
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Serialization.cs" id="RespectNullable":::
 
-You can also enable this setting globally using the `System.Text.Json.JsonSerializerOptions.RespectNullableAnnotations` feature switch in your project file (for example, *.csproj* file):
+You can also enable this setting globally using the `System.Text.Json.JsonSerializerOptions.RespectNullableAnnotations` feature switch in your project file (for example, _.csproj_ file):
 
 ```xml
 <ItemGroup>
@@ -491,7 +549,7 @@ The `MyPoco` type is defined as follows:
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Serialization.cs" id="Poco":::
 
-You can also enable this setting globally using the `System.Text.Json.JsonSerializerOptions.RespectRequiredConstructorParameters` feature switch in your project file (for example, *.csproj* file):
+You can also enable this setting globally using the `System.Text.Json.JsonSerializerOptions.RespectRequiredConstructorParameters` feature switch in your project file (for example, _.csproj_ file):
 
 ```xml
 <ItemGroup>
@@ -594,7 +652,7 @@ Now, a call like `string.Join(", ", "a", "b", "c")` is made without allocating a
 
 In .NET 8, a set of `Split` and `SplitAny` methods were introduced for `ReadOnlySpan<char>`. Rather than returning a new `string[]`, these methods accept a destination `Span<Range>` into which the bounding indices for each component are written. This makes the operation fully allocation-free. These methods are appropriate to use when the number of ranges is both known and small.
 
-In .NET 9, new overloads of `Split` and `SplitAny` have been added to allow incrementally parsing a `ReadOnlySpan<T>` with an *a priori* unknown number of segments. The new methods enable enumerating through each segment, which is similarly represented as a `Range` that can be used to slice into the original span.
+In .NET 9, new overloads of `Split` and `SplitAny` have been added to allow incrementally parsing a `ReadOnlySpan<T>` with an _a priori_ unknown number of segments. The new methods enable enumerating through each segment, which is similarly represented as a `Range` that can be used to slice into the original span.
 
 ```csharp
 public static bool ListContainsItem(ReadOnlySpan<char> span, string item)
@@ -611,22 +669,39 @@ public static bool ListContainsItem(ReadOnlySpan<char> span, string item)
 }
 ```
 
+## System.Formats
+
+The position or offset of the data in the enclosing stream for a <xref:System.Formats.Tar.TarEntry> object is now a public property. `TarEntry.DataOffset` <!--<xref:System.Formats.Tar.TarEntry.DataOffset?displayProperty=nameWithType>--> returns the position in the entry's archive stream where the entry's first data byte is located. The entry's data is encapsulated in a substream that you can access via <xref:System.Formats.Tar.TarEntry.DataStream?displayProperty=nameWithType>, which hides the real position of the data relative to the archive stream. That's enough for most users, but if you need more flexibility and want to know the real starting position of the data in the archive stream, the new `TarEntry.DataOffset` <!--<xref:System.Formats.Tar.TarEntry.DataOffset?displayProperty=nameWithType>--> API makes it easy to support features like concurrent access with very large TAR files.
+
+:::code language="csharp" source="../snippets/dotnet-9/csharp/TarEntry.cs" id="DataOffset":::
+
 ## System.Guid
 
-<xref:System.Guid.NewGuid> creates a `Guid` filled mostly with [cryptographically secure random data](https://www.rfc-editor.org/rfc/rfc9562#section-6.9), following the UUID Version 4 specification in RFC 9562. That same RFC also defines other versions, including Version 7, which "features a time-ordered value field derived from the widely implemented and well-known Unix Epoch timestamp source". In other words, much of the data is still random, but some of it is reserved for data based on a timestamp, which enables these values to have a natural sort order. In .NET 9, you can create a `Guid` according to Version 7 via the new `Guid.CreateVersion7()` <!--<xref:System.Guid.CreateVersion7?displayProperty=nameWithType>--> and `Guid.CreateVersion7(DateTimeOffset timestamp)`  <!--<xref:System.Guid.CreateVersion7(System.DateTimeOffset)?displayProperty=nameWithType>--> methods. You can also use the new `Version` <!--<xref:System.Guid.Version>--> property to retrieve a `Guid` object's version field.
+<xref:System.Guid.NewGuid> creates a `Guid` filled mostly with [cryptographically secure random data](https://www.rfc-editor.org/rfc/rfc9562#section-6.9), following the UUID Version 4 specification in RFC 9562. That same RFC also defines other versions, including Version 7, which "features a time-ordered value field derived from the widely implemented and well-known Unix Epoch timestamp source". In other words, much of the data is still random, but some of it is reserved for data based on a timestamp, which enables these values to have a natural sort order. In .NET 9, you can create a `Guid` according to Version 7 via the new <xref:System.Guid.CreateVersion7?displayProperty=nameWithType> and <xref:System.Guid.CreateVersion7(System.DateTimeOffset)?displayProperty=nameWithType> methods. You can also use the new <xref:System.Guid.Version> property to retrieve a `Guid` object's version field.
 
 ## System.IO
 
-- [Compression](#compression)
+- [Compression with zlib-ng](#compression-with-zlib-ng)
+- [ZLib and Brotli compression options](#zlib-and-brotli-compression-options)
 - [XPS documents from XPS virtual printer](#xps-documents-from-xps-virtual-printer)
 
-### Compression
+### Compression with zlib-ng
 
 <xref:System.IO.Compression> features like <xref:System.IO.Compression.ZipArchive>, <xref:System.IO.Compression.DeflateStream>, <xref:System.IO.Compression.GZipStream>, and <xref:System.IO.Compression.ZLibStream> are all based primarily on the zlib library. Starting in .NET 9, these features instead all use [zlib-ng](https://github.com/zlib-ng/zlib-ng), a library that yields more consistent and efficient processing across a wider array of operating systems and hardware.
 
+### ZLib and Brotli compression options
+
+`ZLibCompressionOptions` <!--<xref:System.IO.Compression.ZLibCompressionOptions>--> and `BrotliCompressionOptions` <!--<xref:System.IO.Compression.BrotliCompressionOptions>--> are new types for setting algorithm-specific compression [level](xref:System.IO.Compression.CompressionLevel) and strategy (`Default`, `Filtered`, `HuffmanOnly`, `RunLengthEncoding`, or `Fixed`). These types are aimed at users who want more fine-tuned settings than the only existing option, <System.IO.Compression.CompressionLevel>.
+
+The new compression option types might be expanded in the future.
+
+The following code snippet shows some example usage:
+
+:::code language="csharp" source="../snippets/dotnet-9/csharp/Compression.cs" id="CompressStream":::
+
 ### XPS documents from XPS virtual printer
 
-XPS documents coming from a V4 XPS virtual printer previously couldn't be opened using the <xref:System.IO.Packaging> library, due to lack of support for handling *.piece* files. This gap has been addressed in .NET 9.
+XPS documents coming from a V4 XPS virtual printer previously couldn't be opened using the <xref:System.IO.Packaging> library, due to lack of support for handling _.piece_ files. This gap has been addressed in .NET 9.
 
 ## System.Numerics
 

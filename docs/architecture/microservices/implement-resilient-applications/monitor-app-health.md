@@ -1,7 +1,7 @@
 ---
 title: Health monitoring
 description: Explore one way of implementing health monitoring.
-ms.date: 06/23/2021
+ms.date: 09/10/2024
 ---
 # Health monitoring
 
@@ -96,6 +96,8 @@ public class SqlConnectionHealthCheck : IHealthCheck
     }
 }
 ```
+
+[!INCLUDE [managed-identities](../../../framework/includes/managed-identities.md)]
 
 Note that in the previous code, `Select 1` is the query used to check the Health of the database. To monitor the availability of your microservices, orchestrators like Kubernetes periodically perform health checks by sending requests to test the microservices. It's important to keep your database queries efficient so that these operations are quick and don’t result in a higher utilization of resources.
 

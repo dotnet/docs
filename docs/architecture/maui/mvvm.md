@@ -3,7 +3,7 @@ title: Model-View-ViewModel
 description: Overview of the Model-View-ViewModel pattern used by .NET MAUI
 author: michaelstonis
 no-loc: [MAUI]
-ms.date: 05/30/2024
+ms.date: 09/10/2024
 ---
 
 # Model-View-ViewModel (MVVM)
@@ -339,7 +339,7 @@ The advantage of using the `EventToCommandBehavior` to execute a command when an
 
 ## Invoking behaviors from a view
 
-The EventToCommandBehavior is particularly useful for attaching a command to a control that doesn't support commands. For example, the LoginView uses the `EventToCommandBehavior` to execute the `ValidateCommand` when the user changes the value of their password, as shown in the following code:
+The `EventToCommandBehavior` is particularly useful for attaching a command to a control that doesn't support commands. For example, the LoginView uses the `EventToCommandBehavior` to execute the `ValidateCommand` when the user changes the value of their password, as shown in the following code:
 
 ```xaml
 <Entry

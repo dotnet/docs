@@ -111,7 +111,7 @@ In addition, you can't apply the `OverloadResolutionPriorityAttribute` to an `ov
 
 Type 'class' already defines a member called 'member' with the same parameter types
 
-CS0111 occurs if a class contains two member declarations with the same name and parameter types. For more information, see [Methods](../programming-guide/classes-and-structs/methods.md).
+CS0111 occurs if a class contains two member declarations with the same name and parameter types. For more information, see [Methods](../../programming-guide/classes-and-structs/methods.md).
 
 The following sample generates CS0111.
 
@@ -130,7 +130,7 @@ class A
 
 Property accessor already defined
 
-When you declare a [property](../programming-guide/classes-and-structs/using-properties.md), you must also declare its accessor methods. However, a property cannot have more than one `get` accessor method or more than one `set` accessor method.
+When you declare a [property](../../programming-guide/classes-and-structs/using-properties.md), you must also declare its accessor methods. However, a property cannot have more than one `get` accessor method or more than one `set` accessor method.
 
 The following sample generates CS1007:
 
@@ -302,7 +302,7 @@ class MyClass2
 }
 ```
 
-# Compiler error CS0121
+## Compiler error CS0121
 
 The call is ambiguous between the following methods or properties: 'method1' and 'method2'
 

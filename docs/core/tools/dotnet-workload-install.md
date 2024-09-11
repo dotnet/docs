@@ -2,6 +2,7 @@
 title: dotnet workload install command
 description: The 'dotnet workload install' command installs optional workloads.
 ms.date: 09/10/2021
+no-loc: [dotnet workload install]
 ---
 # dotnet workload install
 

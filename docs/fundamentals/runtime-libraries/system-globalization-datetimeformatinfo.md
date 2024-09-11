@@ -166,7 +166,7 @@ The [standard date and time format strings](../../standard/base-types/standard-d
 |"Y", "y" (year month; standard format string)|<xref:System.Globalization.DateTimeFormatInfo.YearMonthPattern%2A>, to define the overall format of the result string.|
 |"ddd" (custom format specifier)|<xref:System.Globalization.DateTimeFormatInfo.AbbreviatedDayNames%2A>, to include the abbreviated name of the day of the week in the result string.|
 |"g", "gg" (custom format specifier)|Calls the <xref:System.Globalization.DateTimeFormatInfo.GetEraName%2A> method to insert the era name in the result string.|
-|"MMM" (custom format specifier)|<xref:System.Globalization.DateTimeFormatInfo.AbbreviatedMonthNames%2A>, to include the abbreviated month name in the result string.|
+|"MMM" (custom format specifier)|<xref:System.Globalization.DateTimeFormatInfo.AbbreviatedMonthNames%2A> or <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedMonthGenitiveNames%2A>, to include the abbreviated month name in the result string.|
 |"MMMM" (custom format specifier)|<xref:System.Globalization.DateTimeFormatInfo.MonthNames%2A> or <xref:System.Globalization.DateTimeFormatInfo.MonthGenitiveNames%2A>, to include the full month name in the result string.|
 |"t" (custom format specifier)|<xref:System.Globalization.DateTimeFormatInfo.AMDesignator%2A> or <xref:System.Globalization.DateTimeFormatInfo.PMDesignator%2A>, to include the first character of the AM/PM designator in the result string.|
 |"tt" (custom format specifier)|<xref:System.Globalization.DateTimeFormatInfo.AMDesignator%2A> or <xref:System.Globalization.DateTimeFormatInfo.PMDesignator%2A>, to include the full AM/PM designator in the result string.|

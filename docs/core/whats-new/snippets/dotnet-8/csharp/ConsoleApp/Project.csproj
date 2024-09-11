@@ -9,10 +9,10 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
-    <PackageReference Include="Microsoft.Extensions.Diagnostics.Testing" Version="8.8.0" />
+    <PackageReference Include="Microsoft.Extensions.Diagnostics.Testing" Version="8.9.1" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
     <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="8.0.0" />
-    <PackageReference Include="MSTest.TestFramework" Version="3.5.2" />
+    <PackageReference Include="MSTest.TestFramework" Version="3.6.0" />
   </ItemGroup>
 
 </Project>

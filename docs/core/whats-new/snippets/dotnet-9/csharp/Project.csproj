@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Azure.Storage.Blobs" Version="12.22.0-beta.1" />
     <PackageReference Include="Microsoft.ML.Tokenizers" Version="0.21.1" />
     <PackageReference Include="System.Memory" Version="4.5.5" />
     <PackageReference Include="System.Net.ServerSentEvents" Version="9.0.0-preview.6.24327.7" />

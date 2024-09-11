@@ -3,7 +3,7 @@ title: .NET Generic Host
 author: IEvangelist
 description: Learn about the .NET Generic Host, which is responsible for app startup and lifetime management.
 ms.author: dapine
-ms.date: 05/22/2024
+ms.date: 09/11/2024
 ---
 
 # .NET Generic Host
@@ -196,11 +196,11 @@ Host configuration is used to configure properties of the [IHostEnvironment](#ih
 
 # [IHostApplicationBuilder](#tab/appbuilder)
 
-The host configuration is available in <xref:Microsoft.Extensions.Hosting.IHostApplicationBuilder.Configuration?displayProperty=nameWithType> property and the environment implementation is available in <xref:Microsoft.Extensions.Hosting.IHostApplicationBuilder.Environment?displayProperty=nameWithType> property. To configure the host, access the `Configuration` property and call any of the available extension methods.
+The host configuration is available in <xref:Microsoft.Extensions.Hosting.HostApplicationBuilderSettings.Configuration?displayProperty=nameWithType> property and the environment implementation is available in <xref:Microsoft.Extensions.Hosting.IHostApplicationBuilder.Environment?displayProperty=nameWithType> property. To configure the host, access the `Configuration` property and call any of the available extension methods.
 
 To add host configuration, consider the following example:
 
-:::code language="csharp" source="snippets/configuration/console-host/Program.cs" highlight="6-9":::
+:::code language="csharp" source="snippets/configuration/console-host/Program.cs" highlight="6-8":::
 
 The preceding code:
 

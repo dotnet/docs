@@ -119,7 +119,7 @@ The first walkthrough defines a custom dynamic object that searches the contents
 
      [!code-vb[VbDynamicWalkthrough#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/vbdynamicwalkthrough/vb/Program.vb#8)]
 
-3. Save the file and press <kbd>Ctrl</kdb>+<kbd>F5</kbd> to build and run the application.
+3. Save the file and press <kbd>Ctrl</kbd>+<kbd>F5</kbd> to build and run the application.
 
 ## Call a dynamic language library
 
@@ -153,7 +153,7 @@ The following walkthrough creates a project that accesses a library that is writ
 
      [!code-vb[VbDynamicWalkthroughIronPython#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/vbdynamicwalkthroughironpython/vb/Program.vb#3)]
 
-1. Save the file and press <kbd>Ctrl</kdb>+<kbd>F5</kbd> to build and run the application.
+1. Save the file and press <kbd>Ctrl</kbd>+<kbd>F5</kbd> to build and run the application.
 
 ## See also
 

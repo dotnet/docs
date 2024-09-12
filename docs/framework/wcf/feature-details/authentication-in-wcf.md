@@ -14,7 +14,7 @@ The following topics show a number of different mechanisms in Windows Communicat
 ## In This Section
 
  [How to: Use the ASP.NET Membership Provider](how-to-use-the-aspnet-membership-provider.md)
- ASP.NET features include a membership and role provider, a database to store user name/password pairs for authentication, and user roles for authorization. This topic explains how WCF services can use the same database to authenticate and authorize users. 
+ ASP.NET features include a membership and role provider, a database to store user name/password pairs for authentication, and user roles for authorization. This topic explains how WCF services can use the same database to authenticate and authorize users.
 
  [Service Identity and Authentication](service-identity-and-authentication.md)
  As an extra safeguard, a client can authenticate the service by specifying the expected *identity* of the service. If the expected identity and the identity returned by the service do not match, authentication fails.

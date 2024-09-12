@@ -1,7 +1,7 @@
 ---
 title: Create a .NET class library using Visual Studio Code
 description: Learn how to create a .NET class library using Visual Studio Code.
-ms.date: 06/14/2024
+ms.date: 09/12/2024
 zone_pivot_groups: dotnet-version
 ---
 # Tutorial: Create a .NET class library using Visual Studio Code
@@ -34,7 +34,11 @@ Start by creating a .NET class library project named "StringLibrary" and an asso
 
 1. Then select the location where you would like the new project to be created.
 
-1. Give it the name **StringLibrary** and select **Create Project**.
+1. Then select the location where you would like the new project to be created: Create a folder named `ClassLibraryProjects` and select it.
+
+1. Name the project **StringLibrary**, select **Show all template options**, select **.NET 8** and select **Create Project**.
+
+1. Name the project **StringLibrary** and select **Create Project**.
 
 1. Press Enter at the prompt **Project will be created in \<path>**.
 
@@ -112,9 +116,11 @@ Initially, the new console app project doesn't have access to the class library.
 
 1. Select **Run** > **Run without debugging**.
 
-1. Select C#.
+1. Select **C#**.
 
-1. Select ShowCase.
+1. Select **ShowCase**.
+
+   If you get an error that says no C# program is loaded, close the folder that you have open, and open the `ShowCase` folder. Then try running the app again.
 
 1. Try out the program by entering strings and pressing <kbd>Enter</kbd>, then press <kbd>Enter</kbd> to exit.
 

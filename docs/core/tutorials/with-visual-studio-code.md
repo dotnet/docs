@@ -1,7 +1,7 @@
 ---
 title: Create a .NET console application using Visual Studio Code
 description: Learn how to create a .NET console application using Visual Studio Code.
-ms.date: 06/13/2024
+ms.date: 09/12/2024
 zone_pivot_groups: dotnet-version
 ---
 # Tutorial: Create a .NET console application using Visual Studio Code
@@ -26,7 +26,7 @@ Create a .NET console app project named "HelloWorld".
 
 1. Go to the Explorer view and select **Create .NET Project**. Alternatively, you can bring up the Command Palette using Ctrl+Shift+P (Command+Shift+P on MacOS) and then type ".NET" and find and select the .NET: New Project command.
 
-1. After selecting the command, you'll need to choose the project template. Choose Console App.
+1. After selecting the command, you need to choose the project template. Choose **Console App**.
 
 1. Select the location where you would like the new project to be created.
 
@@ -56,7 +56,9 @@ Create a .NET console app project named "HelloWorld".
 
 ## Run the app
 
-To run your app, select **Run** > **Run without Debugging** in the upper menu, or use the keyboard shortcut (Ctrl+F5). If asked to select a debugger, select **C#**, then select **C#: Launch startup project HelloWorld**.
+To run your app, select **Run** > **Run without Debugging** in the upper menu, or use the keyboard shortcut (Ctrl+F5).
+
+If asked to select a debugger, select **C#**, then select **C#: HelloWorld**
 
 The program displays "Hello, World!" and ends.
 
@@ -68,7 +70,7 @@ Enhance the application to prompt the user for their name and display it along w
 
 1. Replace the contents of the `Main` method in *Program.cs*, which is the line that calls `Console.WriteLine`, with the following code:
 
-   :::code language="csharp" source="./snippets/with-visual-studio/csharp/Program.cs" id="MainMethod":::
+   :::code language="csharp" source="./snippets/with-visual-studio/csharp/Program-Read.cs" id="MainMethod":::
 
    This code displays a prompt in the console window and waits until the user enters a string followed by the <kbd>Enter</kbd> key. It stores this string in a variable named `name`. It also retrieves the value of the <xref:System.DateTime.Now?displayProperty=nameWithType> property, which contains the current local time, and assigns it to a variable named `currentDate`. And it displays these values in the console window. Finally, it displays a prompt in the console window and calls the <xref:System.Console.ReadKey(System.Boolean)?displayProperty=nameWithType> method to wait for user input.
 
@@ -87,7 +89,7 @@ Enhance the application to prompt the user for their name and display it along w
 
    :::image type="content" source="media/debugging-with-visual-studio-code/run-modified-program.png" alt-text="Terminal window with modified program output":::
 
-1. Press any key to exit the program.
+1. Press <kbd>Enter</kbd> to exit the program.
 
 ## Additional resources
 

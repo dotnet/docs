@@ -1,7 +1,7 @@
 ---
 title: Publish a .NET console application using Visual Studio Code
 description: Learn how to use Visual Studio Code and the .NET CLI to create the set of files that are needed to run a .NET application.
-ms.date: 08/30/2023
+ms.date: 09/12/2024
 zone_pivot_groups: dotnet-version
 ---
 # Tutorial: Publish a .NET console application using Visual Studio Code
@@ -91,13 +91,13 @@ In the following steps, you'll look at the files created by the publish process.
 
    1. On Linux, enter `./HelloWorld` and press <kbd>Enter</kbd>.
 
-   1. Enter a name in response to the prompt, and press any key to exit.
+   1. Enter a name in response to the prompt, and press <kbd>Enter</kbd> to exit.
 
 1. On any platform, run the app by using the  [`dotnet`](../tools/dotnet.md) command:
 
    1. Enter `dotnet HelloWorld.dll` and press <kbd>Enter</kbd>.
 
-   1. Enter a name in response to the prompt, and press any key to exit.
+   1. Enter a name in response to the prompt, and press <kbd>Enter</kbd> to exit.
 
 ## Additional resources
 

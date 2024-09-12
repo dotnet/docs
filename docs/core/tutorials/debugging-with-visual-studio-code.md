@@ -1,7 +1,7 @@
 ---
 title: Debug a .NET console application using Visual Studio Code
 description: Learn how to debug a .NET console app using Visual Studio Code.
-ms.date: 07/09/2024
+ms.date: 09/12/2024
 zone_pivot_groups: dotnet-version
 ---
 # Tutorial: Debug a .NET console application using Visual Studio Code
@@ -48,6 +48,8 @@ A *breakpoint* temporarily interrupts the execution of the application before th
 
    :::image type="content" source="media/debugging-with-visual-studio-code/start-debugging.png" alt-text="Start debugging":::
 
+1. If asked to **Select Launch Configuration**, select **C#: HelloWorld HelloWorld**.
+
 1. Select the **Debug Console** tab to see the "What is your name?" prompt that the program displays before waiting for a response.
 
    :::image type="content" source="media/debugging-with-visual-studio-code/select-debug-console.png" alt-text="Select the Debug Console tab":::
@@ -64,11 +66,11 @@ The **Debug Console** window lets you interact with the application you're debug
 
 1. Select the **Debug Console** tab.
 
-1. Enter `name = "Gracie"` at the prompt at the bottom of the **Debug Console** window and press the <kbd>Enter</kbd> key.
+1. Enter `name = "Gracie"` at the prompt at the bottom of the **Debug Console** window and press <kbd>Enter</kbd>.
 
    :::image type="content" source="media/debugging-with-visual-studio-code/change-variable-values-net6.png" alt-text="Change variable values":::
 
-1. Enter `currentDate = DateTime.Parse("2019-11-16T17:25:00Z").ToUniversalTime()` at the bottom of the **Debug Console** window and press the <kbd>Enter</kbd> key.
+1. Enter `currentDate = DateTime.Parse("2019-11-16T17:25:00Z").ToUniversalTime()` at the bottom of the **Debug Console** window and press <kbd>Enter</kbd>.
 
    The **Variables** window displays the new values of the `name` and `currentDate` variables.
 
@@ -80,7 +82,7 @@ The **Debug Console** window lets you interact with the application you're debug
 
    :::image type="content" source="media/debugging-with-visual-studio-code/changed-variable-values.png" alt-text="Terminal showing the entered values":::
 
-1. Press any key to exit the application and stop debugging.
+1. Press <kbd>Enter</kbd> to exit the application and stop debugging.
 
 ## Set a conditional breakpoint
 
@@ -104,7 +106,7 @@ The program displays the string that the user enters. What happens if the user d
 
 1. Start the program with debugging by pressing <kbd>F5</kbd>.
 
-1. In the **Debug Console** tab, press the <kbd>Enter</kbd> key when prompted to enter your name.
+1. In the **Debug Console** tab, press <kbd>Enter</kbd> when prompted to enter your name.
 
    Because the condition you specified (`name` is either `null` or <xref:System.String.Empty?displayProperty=nameWithType>) has been satisfied, program execution stops when it reaches the breakpoint and before the `Console.WriteLine` method runs.
 
@@ -118,7 +120,7 @@ The program displays the string that the user enters. What happens if the user d
 
 1. Select the **Continue** button on the toolbar to continue program execution.
 
-1. Press any key to exit the program and stop debugging.
+1. Press <kbd>Enter</kbd> to exit the program and stop debugging.
 
 1. Clear the breakpoint by clicking on the dot in the left margin of the code window. Other ways to clear a breakpoint are by pressing <kbd>F9</kbd> or choosing **Run > Toggle Breakpoint** from the menu while the line of code is selected.
 

@@ -13,13 +13,13 @@ This topic is a continuation of the Windows Workflow Foundation Getting Started 
 
 > [!NOTE]
 > Each topic in the Getting Started tutorial depends on the previous topics. To complete this topic you must first complete [How to: Create an Activity](how-to-create-an-activity.md) and [How to: Create a Workflow](how-to-create-a-workflow.md).
-  
-### To create the workflow host project  
-  
-1. Open the solution from the previous [How to: Create an Activity](how-to-create-an-activity.md) topic by using Visual Studio 2012.  
-  
-2. Right-click the **WF45GettingStartedTutorial** solution in **Solution Explorer** and select **Add**, **New Project**.  
-  
+
+### To create the workflow host project
+
+1. Open the solution from the previous [How to: Create an Activity](how-to-create-an-activity.md) topic by using Visual Studio 2012.
+
+2. Right-click the **WF45GettingStartedTutorial** solution in **Solution Explorer** and select **Add**, **New Project**.
+
     > [!TIP]
     > If the **Solution Explorer** window is not displayed, select **Solution Explorer** from the **View** menu.
 
@@ -70,7 +70,7 @@ This topic is a continuation of the Windows Workflow Foundation Getting Started 
      Replace the lines of code that use <xref:System.Activities.WorkflowInvoker> with the following basic <xref:System.Activities.WorkflowApplication> hosting code. This sample hosting code demonstrates the basic steps for hosting and invoking a workflow, but does not yet contain the functionality to successfully run the workflow from this topic. In the following steps, this basic code is modified and additional features are added until the application is complete.
 
     > [!NOTE]
-    > Please replace `Workflow1` in these examples with `FlowchartNumberGuessWorkflow`, `SequentialNumberGuessWorkflow`, or `StateMachineNumberGuessWorkflow`, depending on which workflow you completed in the previous [How to: Create a Workflow](how-to-create-a-workflow.md) step. If you do not replace `Workflow1` then you will get build errors when you try and build or run the workflow.
+    > You must replace `Workflow1` in these examples with `FlowchartNumberGuessWorkflow`, `SequentialNumberGuessWorkflow`, or `StateMachineNumberGuessWorkflow`, depending on which workflow you completed in the previous [How to: Create a Workflow](how-to-create-a-workflow.md) step. If you do not replace `Workflow1` then you will get build errors when you try and build or run the workflow.
 
      [!code-csharp[CFX_WF_GettingStarted#4](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_wf_gettingstarted/cs/extrasnippets.cs#4)]
      [!code-vb[CFX_WF_GettingStarted#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/cfx_wf_gettingstarted/vb/extrasnippets.vb#4)]

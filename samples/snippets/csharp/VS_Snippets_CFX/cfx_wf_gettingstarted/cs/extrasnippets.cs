@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Activities;
-//<snippet14>
 using System.Activities.DurableInstancing;
 using System.Collections.Generic;
 using System.Threading;
-//</snippet14>
+
 namespace WorkflowConsoleApplication1
 {
     class ExtraSnippets
@@ -18,7 +17,6 @@ namespace WorkflowConsoleApplication1
 
         void Snippet4()
         {
-
             //<snippet4>
             AutoResetEvent syncEvent = new AutoResetEvent(false);
 
@@ -54,9 +52,7 @@ namespace WorkflowConsoleApplication1
         {
             AutoResetEvent idleEvent = new AutoResetEvent(false);
 
-            //<snippet13>
-            const string connectionString = "Server=.\\SQLEXPRESS;Initial Catalog=Persistence;Integrated Security=SSPI";
-            //</snippet13>
+            const string connectionString = "...";
 
             var inputs = new Dictionary<string, object>() { { "MaxNumber", 100 } };
 

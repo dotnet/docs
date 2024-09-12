@@ -13,16 +13,14 @@ namespace ConsoleX
     {
         static void Main(string[] args)
         {
-            const string connectionString =
-            "Server=.\\SQLEXPRESS;Initial Catalog=Persistence;Integrated Security=SSPI";
+            const string connectionString = "...";
             // The Throw class derives from the Activity class, needed to construct a WorkflowServiceHost.
             Throw throwError = new Throw();
 
-            WorkflowServiceHost host = new WorkflowServiceHost(throwError,
-            new Uri(@"http://microsoft/services/"));
+            WorkflowServiceHost host = new WorkflowServiceHost(throwError, new Uri(@"http://microsoft/services/"));
             //<snippet1>
             // Code to create a WorkFlowServiceHost is not shown here.
-            // Note that SqlWorkflowInstanceStore is in the System.Activities.DurableInstancing.dll
+            // Note that SqlWorkflowInstanceStore is in the System.Activities.DurableInstancing.dll.
             host.DurableInstancingOptions.InstanceStore = new SqlWorkflowInstanceStore(connectionString );
             WorkflowIdleBehavior alteredBehavior =  new WorkflowIdleBehavior();
             // Alter the time to persist and unload.
@@ -33,7 +31,6 @@ namespace ConsoleX
             host.Description.Behaviors.Add(alteredBehavior);
             //</snippet1>
             Console.WriteLine(alteredBehavior.TimeToUnload.Minutes.ToString());
-            //wfsh.Open();
             Console.WriteLine("closed");
             Console.ReadLine();
         }

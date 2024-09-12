@@ -55,18 +55,4 @@ namespace Microsoft.ServiceModel.Samples
             // </snippet1>
         }
     }
-
-    public class MyUserNamePasswordValidator : UserNamePasswordValidator
-    {
-        public override void Validate(string userName, string password)
-        {
-            // ignore the password because it is empty, we trust the facade service to authenticate the client
-            // we just accept the username information here so that application gets access to it
-            if (null == userName)
-            {
-                Console.WriteLine("Invalid username");
-                throw new SecurityTokenValidationException("Invalid username");
-            }
-        }
-    }
 }

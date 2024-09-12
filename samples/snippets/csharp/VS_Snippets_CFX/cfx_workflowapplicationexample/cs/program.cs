@@ -2688,8 +2688,7 @@ namespace WorkflowApplicationExample
         // InstanceStore
         static void snippet29()
         {
-            // Support
-            string connectionString = "test";
+            string connectionString = "...";
 
             //<snippet29>
             var wfparams = new Dictionary<string, object>() { { "MaxNumber", 100 } };

@@ -8,10 +8,13 @@ namespace WorkflowConsoleApplication1
 {
     class ExtraSnippets
     {
+        Activity _wf = new DynamicActivity();
+
         void Snippet2()
         {
+
             //<snippet2>
-            WorkflowInvoker.Invoke(new Workflow1());
+            WorkflowInvoker.Invoke(_wf);
             //</snippet2>
         }
 
@@ -21,7 +24,7 @@ namespace WorkflowConsoleApplication1
             AutoResetEvent syncEvent = new AutoResetEvent(false);
 
             WorkflowApplication wfApp =
-                new WorkflowApplication(new Workflow1());
+                new WorkflowApplication(_wf);
 
             wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
@@ -50,7 +53,7 @@ namespace WorkflowConsoleApplication1
 
         void Step4Snippets()
         {
-            AutoResetEvent idleEvent = new AutoResetEvent(false);
+            AutoResetEvent idleEvent = new(false);
 
             const string connectionString = "...";
 
@@ -58,7 +61,7 @@ namespace WorkflowConsoleApplication1
 
             //<snippet15>
             WorkflowApplication wfApp =
-                new WorkflowApplication(new Workflow1(), inputs);
+                new WorkflowApplication(_wf, inputs);
 
             SqlWorkflowInstanceStore store = new SqlWorkflowInstanceStore(connectionString);
             wfApp.InstanceStore = store;

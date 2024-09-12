@@ -2,6 +2,7 @@
   <PropertyGroup>
     <OutputType>Library</OutputType>
     <TargetFrameworks>net4.8</TargetFrameworks>
+    <LangVersion>11</LangVersion>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System.Activities" />

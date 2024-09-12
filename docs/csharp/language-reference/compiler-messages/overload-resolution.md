@@ -92,7 +92,7 @@ In addition, overload operators must use the defined operator name. The only exc
 
 These errors indicate that you created overloads that aren't different. Common reasons include:
 
-- The matching parameter types have an identity conversion. For example `M(dynamic)` and `M(object)`, or `M2(string) and `M2(string?)`.
+- The matching parameter types have an identity conversion. For example `M(dynamic)` and `M(object)`, or `M2(string)` and `M2(string?)`.
 - The matching parameter types differ only in reference modifier. For example, `M(ref int)` and `M(out int)`.
 - You've included both an `init` and a `set` accessor for a property.
 

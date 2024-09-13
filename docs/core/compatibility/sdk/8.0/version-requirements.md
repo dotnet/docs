@@ -9,6 +9,7 @@ Per the [published support rules](../../../porting/versioning-sdk-msbuild-vs.md#
 
 - 8.0.100 requires version 17.7 to be loaded but only supports targeting .NET 7 in that version.
 - 8.0.200 requires version 17.8.
+- 8.0.400 requires version 17.9.
 
 To target `net8.0`, you must use version 17.8 or later.
 
@@ -23,12 +24,14 @@ To target `net8.0`, you must use version 17.8 or later.
 
 ## New behavior
 
-The following table shows the minimum version of Visual Studio and MSBuild you need to use the .NET 8.0.100 or 8.0.200 SDK.
+The following table shows the minimum version of Visual Studio and MSBuild you need to use the .NET 8.0.xxx SDK.
 
 | NET SDK version   | Minimum Visual Studio and MSBuild version |
 | ----------------- | ----------------------------------------- |
 | 8.0.100           | 17.7                                      |
 | 8.0.200           | 17.8                                      |
+| 8.0.300           | 17.8                                      |
+| 8.0.400           | 17.9                                      |
 
 ## Type of breaking change
 

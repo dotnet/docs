@@ -21,40 +21,38 @@ This document aims to guide developers through the process of migrating from <xr
 
 ## Migrating from <xref:System.Net.HttpWebRequest> to <xref:System.Net.Http.HttpClient>
 
-The migration from <xref:System.Net.HttpWebRequest> to <xref:System.Net.Http.HttpClient> is essential due to the modern features and improved performance that <xref:System.Net.Http.HttpClient> offers. <xref:System.Net.Http.HttpClient> provides a more flexible and efficient way to make HTTP requests and handle responses. Here are the key steps and considerations for this migration:
-
 Let's start with some examples:
 
-### Simple GET Request Using <xref:System.Net.HttpWebRequest>
+**Simple GET Request Using <xref:System.Net.HttpWebRequest>**
 
 Here's an example of how the code might look:
 
 ```c#
 using System.Net;
 
-HttpWebRequest request = WebRequest.CreateHttp(uri);
+HttpWebRequest request = (HttpWebRequest)WebRequest.Create(uri);
 using WebResponse response = await request.GetResponseAsync();
 ```
 
-### Simple GET Request Using <xref:System.Net.Http.HttpClient>
+**Simple GET Request Using <xref:System.Net.Http.HttpClient>**
 
 Here's an example of how the code might look:
 
 ```c#
 using System.Net.Http;
 
-using HttpClient client = new();
+HttpClient client = new();
 using HttpResponseMessage message = await client.GetAsync(uri);
 ```
 
-### Simple POST Request Using <xref:System.Net.HttpWebRequest>
+**Simple POST Request Using <xref:System.Net.HttpWebRequest>**
 
 Here's an example of how the code might look:
 
 ```c#
 using System.Net;
 
-HttpWebRequest request = WebRequest.CreateHttp(uri);
+HttpWebRequest request = (HttpWebRequest)WebRequest.Create(uri);
 request.Method = "POST";
 request.ContentType = "text/plain";
 await using Stream stream = await request.GetRequestStreamAsync();
@@ -64,14 +62,14 @@ Memory<byte> buffer = new byte[1024];
 await using Stream responseStream = response.GetResponseStream();
 ```
 
-### Simple POST Request Using <xref:System.Net.Http.HttpClient>
+**Simple POST Request Using <xref:System.Net.Http.HttpClient>**
 
 Here's an example of how the code might look:
 
 ```c#
 using System.Net.Http;
 
-using HttpClient client = new();
+HttpClient client = new();
 using HttpResponseMessage responseMessage = await client.PostAsync(uri, new StringContent("Hello World!"));
 ```
 
@@ -133,6 +131,9 @@ using HttpResponseMessage responseMessage = await client.PostAsync(uri, new Stri
 
 Developers should be aware that `ServicePointManager` is a static class, meaning that any changes made to its properties will have a global effect on all newly created `ServicePoint` objects within the application. For example, modifying a property like `ConnectionLimit` or `Expect100Continue` will impact every new ServicePoint instance.
 
+> [!WARNING]
+> In modern .NET, `HttpClient` does not take into account any configurations set on `ServicePointManager`.
+
 ### <xref:System.Net.ServicePointManager> Properties Mapping
 
 | <xref:System.Net.ServicePointManager> Old API | New API | Notes |
@@ -149,6 +150,9 @@ Developers should be aware that `ServicePointManager` is a static class, meaning
 | `SecurityProtocol` | <xref:System.Net.Http.SocketsHttpHandler.SslOptions>.<xref:System.Net.Security.SslClientAuthenticationOptions.EnabledSslProtocols> | TODO |
 | `ServerCertificateValidationCallback` | <xref:System.Net.Http.SocketsHttpHandler.SslOptions>.<xref:System.Net.Security.SslClientAuthenticationOptions.RemoteCertificateValidationCallback> | Both of them are <xref:System.Net.Security.RemoteCertificateValidationCallback> |
 | `UseNagleAlgorithm` | No direct equivalent API | See <xref:System.Net.Http.SocketsHttpHandler.ConnectCallback>. |
+
+> ![WARNING]
+> In modern .NET, the default values for the `UseNagleAlgorithm` and `Expect100Continue` properties are set to `false`. These values were `true` by default in .NET Framework.
 
 ### <xref:System.Net.ServicePointManager> Method Mapping
 
@@ -204,7 +208,7 @@ var request = new HttpRequestMessage() // Alternative way to set RequestUri and 
 request.Headers.Add("Custom-Header", "value");
 request.Content = new StringContent("somestring");
 
-var response = await client.SendAsync(request);
+using var response = await client.SendAsync(request);
 ```
 
 ## Usage of SocketsHttpHandler and ConnectCallback
@@ -225,7 +229,7 @@ request.ServicePoint.BindIPEndPointDelegate = (servicePoint, remoteEndPoint, ret
     IPAddress localAddress = IPAddress.Parse("192.168.1.100");
     return new IPEndPoint(localAddress, 0);
 };
-HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+using HttpWebResponse response = (HttpWebResponse)request.GetResponse();
 ```
 
 **New Code Using `HttpClient` and `ConnectCallback`**:
@@ -244,7 +248,7 @@ var handler = new SocketsHttpHandler
     }
 };
 var client = new HttpClient(handler);
-var response = await client.GetAsync(uri);
+using var response = await client.GetAsync(uri);
 ```
 
 ### Example: Applying Specific Socket Options
@@ -259,7 +263,7 @@ HttpWebRequest request = (HttpWebRequest)WebRequest.Create(uri);
 request.ServicePoint.SetTcpKeepAlive(true, 60000, 1000);
 request.ServicePoint.ReceiveBufferSize = 8192;
 request.ServicePoint.UseNagleAlgorithm = false;
-HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+using HttpWebResponse response = (HttpWebResponse)request.GetResponse();
 ```
 
 **New Code Using `HttpClient` and `ConnectCallback`**:
@@ -289,7 +293,7 @@ var handler = new SocketsHttpHandler
     }
 };
 var client = new HttpClient(handler);
-var response = await client.GetAsync(uri);
+using var response = await client.GetAsync(uri);
 ```
 
 ### Example: Enabling Dns Round Robin
@@ -306,7 +310,7 @@ To enable DNS Round Robin with HttpClient, you can use the ConnectCallback prope
 ServicePointManager.DnsRefreshTimeout = 60000;
 ServicePointManager.EnableDnsRoundRobin = true;
 HttpWebRequest request = (HttpWebRequest)WebRequest.Create(uri);
-HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+using HttpWebResponse response = (HttpWebResponse)request.GetResponse();
 ```
 
 **New Code Using `HttpClient`**:
@@ -320,12 +324,12 @@ var handler = new SocketsHttpHandler
     ConnectCallback = async (context, cancellationToken) =>
     {
         string host = context.DnsEndPoint.Host;
-        
+
         DnsCache? cacheItem;
-        if (!dnsCache.TryGetValue(host, out cacheItem) || DateTime.Now > cacheItem.CacheExpireTime)
+        if (!dnsCache.TryGetValue(host, out cacheItem) || Environment.TickCount64 > cacheItem.CacheExpireTime)
         {
             dnsCache.TryRemove(host, out _);
-            cacheItem = new DnsCache(await Dns.GetHostAddressesAsync(host, cancellationToken), DateTime.Now.Add(dnsRefreshTimeout), 0);
+            cacheItem = new DnsCache(await Dns.GetHostAddressesAsync(host, cancellationToken), Environment.TickCount64 + dnsRefreshTimeout.Ticks, 0);
             dnsCache.TryAdd(host, cacheItem);
         }
 
@@ -359,12 +363,12 @@ var handler = new SocketsHttpHandler
     }
 };
 var client = new HttpClient(handler);
-var response = await client.GetAsync(uri);
+using var response = await client.GetAsync(uri);
 
-class DnsCache(IPAddress[] addresses, DateTime cacheExpireTime, int index)
+class DnsCache(IPAddress[] addresses, long cacheExpireTime, int index)
 {
     public IPAddress[] Addresses { get; } = addresses;
-    public DateTime CacheExpireTime { get; } = cacheExpireTime;
+    public long CacheExpireTime { get; } = cacheExpireTime;
     public int Index { get; private set; } = index;
 
     public void IncreaseIndex()
@@ -406,41 +410,27 @@ var handler = new SocketsHttpHandler
 };
 
 var client = new HttpClient(handler);
-var response = await client.GetAsync(uri);
+using var response = await client.GetAsync(uri);
 ```
 
 ### Example: Change ImpersonationLevel
 
-> [!WARNING]
-> This example contains the use of reflection, which may affect the performance of your application and can be broken in future versions of .NET. Use reflection with caution and only when necessary.
-
-In this example, we will use reflection to set the ImpersonationLevel property in SocketsHttpHandler:
-
-```csharp
-var handler = new SocketsHttpHandler();
-var settings = typeof(SocketsHttpHandler).GetField("_settings", BindingFlags.NonPublic | BindingFlags.Instance)?.GetValue(handler);
-Debug.Assert(settings != null);
-FieldInfo? fi = Type.GetType("System.Net.Http.HttpConnectionSettings, System.Net.Http")?.GetField("_impersonationLevel", BindingFlags.NonPublic | BindingFlags.Instance);
-fi?.SetValue(settings, TokenImpersonationLevel.Impersonation);
-
-var client = new HttpClient(handler);
-var response = await client.GetAsync(uri);
-```
+This functionality is specific to certain platforms and is somewhat outdated. If you need a workaround, you can refer to [this section of the code](https://github.com/dotnet/runtime/blob/171f1a73a9f0fa77464995bcb893a59b9b98bc3d/src/libraries/System.Net.Requests/src/System/Net/HttpWebRequest.cs#L1678-L1684).
 
 ## Usage of Certificate and TLS Related Properties in HttpClient
 
 When working with `HttpClient`, you may need to handle client certificates for various purposes, such as custom validation of server certificates or fetching the server certificate. `HttpClient` provides several properties and options to manage certificates effectively.
 
-### Example: Enabling CRL Check with SocketsHttpHandler
+### Example: Check certificate revocation list with SocketsHttpHandler
 
-The `CheckCertificateRevocationList` property in `SocketsHttpHandler` allows developers to enable or disable the check for certificate revocation lists (CRL) during SSL/TLS handshake. Enabling this property ensures that the client verifies whether the server's certificate has been revoked, enhancing the security of the connection.
+The `CheckCertificateRevocationList` property in `SocketsHttpHandler.SslOptions` allows developers to enable or disable the check for certificate revocation lists (CRL) during SSL/TLS handshake. Enabling this property ensures that the client verifies whether the server's certificate has been revoked, enhancing the security of the connection.
 
 **Old Code Using `HttpWebRequest`**:
 
 ```csharp
 ServicePointManager.CheckCertificateRevocationList = true;
 HttpWebRequest request = (HttpWebRequest)WebRequest.Create(uri);
-HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+using HttpWebResponse response = (HttpWebResponse)request.GetResponse();
 ```
 
 **New Code Using `HttpClient`**:
@@ -455,18 +445,18 @@ var handler = new SocketsHttpHandler
     }
 };
 var client = new HttpClient(handler);
-var response = await client.GetAsync(uri);
+using var response = await client.GetAsync(uri);
 ```
 
 ### Example: Fetch Certificate
 
-To fetch the certificate from the RemoteCertificateValidationCallback in HttpClient, you can use the ServerCertificateCustomValidationCallback property of HttpClientHandler or SocketsHttpHandler. This callback allows you to inspect the server's certificate during the SSL/TLS handshake.
+To fetch the certificate from the `RemoteCertificateValidationCallback` in `HttpClient`, you can use the `ServerCertificateCustomValidationCallback` property of `HttpClientHandler` or `SocketsHttpHandler.SslOptions`. This callback allows you to inspect the server's certificate during the SSL/TLS handshake.
 
 **Old Code Using `HttpWebRequest`**:
 
 ```csharp
 HttpWebRequest request = (HttpWebRequest)WebRequest.Create(uri);
-HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+using HttpWebResponse response = (HttpWebResponse)request.GetResponse();
 X509Certificate? serverCertificate = request.ServicePoint.Certificate;
 ```
 
@@ -488,7 +478,7 @@ var handler = new SocketsHttpHandler
     }
 };
 var client = new HttpClient(handler);
-var response = await client.GetAsync("https://example.com");
+using var response = await client.GetAsync("https://example.com");
 ```
 
 ### Example: Enabling Mutual Authentication
@@ -522,7 +512,7 @@ var handler = new SocketsHttpHandler
 };
 
 var client = new HttpClient(handler);
-var response = await client.GetAsync(uri);
+using var response = await client.GetAsync(uri);
 ```
 
 ## Usage of Header Properties
@@ -587,12 +577,13 @@ var jsonData = "{\"key\":\"value\"}";
 var content = new StringContent(jsonData, Encoding.UTF8, "application/json");
 content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
 content.Headers.ContentEncoding.Add("utf-8");
+// WARNING: This is not needed in most of the cases, because most `HttpContent` implementations will calculate this field automatically.
 content.Headers.ContentLength = jsonData.Length;
 
 // Assign the content to the request
 request.Content = content;
 
-var response = await client.SendAsync(request);
+using var response = await client.SendAsync(request);
 ```
 
 ### Example: Set MaximumErrorResponseLength in HttpClient
@@ -607,13 +598,13 @@ using System.Net;
 int maxErrorResponseLength = 1 * 1024; // 1 KB
 
 var client = new HttpClient();
-var response = await client.GetAsync(uri);
+using var response = await client.GetAsync(uri);
 
 if (response.Content is not null)
 {
     var responseReadStream = response.Content.ReadAsStream();
     // If MaxErrorResponseLength is set and the response status code is an error code, then wrap the response stream in a TruncatedReadStream
-    if (maxErrorResponseLength >= 0 && response.StatusCode >= HttpStatusCode.BadRequest)
+    if (maxErrorResponseLength >= 0 && !response.IsSuccessStatusCode)
     {
         responseReadStream = new TruncatedReadStream(responseReadStream, maxErrorResponseLength);
     }

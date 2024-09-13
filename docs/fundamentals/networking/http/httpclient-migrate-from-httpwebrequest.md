@@ -77,7 +77,7 @@ using HttpResponseMessage responseMessage = await client.PostAsync(uri, new Stri
 
 | <xref:System.Net.HttpWebRequest> Old API | New API | Notes |
 |---------|----------------------|-------|
-| `Accept` | <xref:System.Net.Http.Headers.HttpRequestHeaders.Accept> | See: [Example: Set Request Headers](#example-set-request-headers). |
+| `Accept` | <xref:System.Net.Http.Headers.HttpRequestHeaders.Accept> | See: [Example: Set Request Headers](#example-set-common-request-headers). |
 | `Address` | TODO | TODO |
 | `AllowAutoRedirect` | <xref:System.Net.Http.SocketsHttpHandler.AllowAutoRedirect> | See: [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
 | `AllowReadStreamBuffering` | No direct equivalent API | See: [Example: Read Buffering](#example-read-buffering). |
@@ -86,7 +86,7 @@ using HttpResponseMessage responseMessage = await client.PostAsync(uri, new Stri
 | `AutomaticDecompression` | <xref:System.Net.Http.SocketsHttpHandler.AutomaticDecompression> | See: [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
 | `CachePolicy` | No direct equivalent API | See: [Example: Apply CachePolicy Headers](#example-apply-cachepolicy-headers). |
 | `ClientCertificates` | <xref:System.Net.Http.SocketsHttpHandler.SslOptions>.<xref:System.Net.Security.SslClientAuthenticationOptions.ClientCertificates> | See: [Usage of Certificate Related Properties in HttpClient](#usage-of-certificate-and-tls-related-properties-in-httpclient). |
-| `Connection` | <xref:System.Net.Http.Headers.HttpRequestHeaders.Connection> | See: [Example: Set Request Headers](#example-set-request-headers). |
+| `Connection` | <xref:System.Net.Http.Headers.HttpRequestHeaders.Connection> | See: [Example: Set Request Headers](#example-set-common-request-headers). |
 | `ConnectionGroupName` | No equivalent API | No workaround |
 | `ContentLength` | <xref:System.Net.Http.Headers.HttpContentHeaders.ContentLength> | See: [Example: Set Content Headers](#example-set-content-headers). |
 | `ContentType` | <xref:System.Net.Http.Headers.HttpContentHeaders.ContentType> | See: [Example: Set Content Headers](#example-set-content-headers). |
@@ -94,18 +94,18 @@ using HttpResponseMessage responseMessage = await client.PostAsync(uri, new Stri
 | `ContinueTimeout` | <xref:System.Net.Http.SocketsHttpHandler.Expect100ContinueTimeout> | See: [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
 | `CookieContainer` | <xref:System.Net.Http.SocketsHttpHandler.CookieContainer> | See: [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
 | `Credentials` | <xref:System.Net.Http.SocketsHttpHandler.Credentials> | See: [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
-| `Date` | <xref:System.Net.Http.Headers.HttpRequestHeaders.Date> | See: [Example: Set Request Headers](#example-set-request-headers). |
+| `Date` | <xref:System.Net.Http.Headers.HttpRequestHeaders.Date> | See: [Example: Set Request Headers](#example-set-common-request-headers). |
 | `DefaultCachePolicy` | No direct equivalent API | See: [Example: Apply CachePolicy Headers](#example-apply-cachepolicy-headers). |
 | `DefaultMaximumErrorResponseLength` | No direct equivalent API | See: [Example: Set MaximumErrorResponseLength in HttpClient](#example-set-maximumerrorresponselength-in-httpclient). |
 | `DefaultMaximumResponseHeadersLength` | No equivalent API | <xref:System.Net.Http.SocketsHttpHandler.MaxResponseHeadersLength> can be used instead. |
 | `DefaultWebProxy` | No equivalent API | <xref:System.Net.Http.SocketsHttpHandler.Proxy> can be used instead. |
-| `Expect` | <xref:System.Net.Http.Headers.HttpRequestHeaders.Expect> | See: [Example: Set Request Headers](#example-set-request-headers). |
+| `Expect` | <xref:System.Net.Http.Headers.HttpRequestHeaders.Expect> | See: [Example: Set Request Headers](#example-set-common-request-headers). |
 | `HaveResponse` | No equivalent API | No workaround |
-| `Headers` | <xref:System.Net.Http.HttpRequestMessage.Headers> | See: [Example: Set Request Headers](#example-set-request-headers). |
-| `Host` | <xref:System.Net.Http.Headers.HttpRequestHeaders.Host> | See: [Example: Set Request Headers](#example-set-request-headers). |
-| `IfModifiedSince` | <xref:System.Net.Http.Headers.HttpRequestHeaders.IfModifiedSince> | See: [Example: Set Request Headers](#example-set-request-headers). |
+| `Headers` | <xref:System.Net.Http.HttpRequestMessage.Headers> | See: [Example: Set Request Headers](#example-set-custom-request-headers). |
+| `Host` | <xref:System.Net.Http.Headers.HttpRequestHeaders.Host> | See: [Example: Set Request Headers](#example-set-common-request-headers). |
+| `IfModifiedSince` | <xref:System.Net.Http.Headers.HttpRequestHeaders.IfModifiedSince> | See: [Example: Set Request Headers](#example-set-common-request-headers). |
 | `ImpersonationLevel` | No direct equivalent API | See: [Example: Change ImpersonationLevel](#example-change-impersonationlevel). |
-| `KeepAlive` | No direct equivalent API | See: [Example: Set Request Headers](#example-set-request-headers). |
+| `KeepAlive` | No direct equivalent API | See: [Example: Set Request Headers](#example-set-custom-request-headers). |
 | `MaximumAutomaticRedirections` | <xref:System.Net.Http.SocketsHttpHandler.MaxAutomaticRedirections> | See: [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
 | `MaximumResponseHeadersLength` | <xref:System.Net.Http.SocketsHttpHandler.MaxResponseHeadersLength> | See: [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
 | `MediaType` | TODO | TODO |
@@ -115,17 +115,17 @@ using HttpResponseMessage responseMessage = await client.PostAsync(uri, new Stri
 | `ProtocolVersion` | TODO | TODO |
 | `Proxy` | <xref:System.Net.Http.SocketsHttpHandler.Proxy> | See: [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
 | `ReadWriteTimeout` | No direct equivalent API | See <xref:System.Net.Http.SocketsHttpHandler.ConnectCallback>. |
-| `Referer` | <xref:System.Net.Http.Headers.HttpRequestHeaders.Referrer> | See: [Example: Set Request Headers](#example-set-request-headers). |
+| `Referer` | <xref:System.Net.Http.Headers.HttpRequestHeaders.Referrer> | See: [Example: Set Request Headers](#example-set-common-request-headers). |
 | `RequestUri` | <xref:System.Net.Http.HttpRequestMessage.RequestUri> | See: [Example: Usage of HttpRequestMessage properties](#example-usage-of-httprequestmessage-properties). |
-| `SendChunked` | <xref:System.Net.Http.Headers.HttpRequestHeaders.TransferEncodingChunked> | See: [Example: Set Request Headers](#example-set-request-headers). |
+| `SendChunked` | <xref:System.Net.Http.Headers.HttpRequestHeaders.TransferEncodingChunked> | See: [Example: Set Request Headers](#example-set-common-request-headers). |
 | `ServerCertificateValidationCallback` | <xref:System.Net.Http.SocketsHttpHandler.SslOptions>.<xref:System.Net.Security.SslClientAuthenticationOptions.RemoteCertificateValidationCallback> | See: [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
 | `ServicePoint` | No equivalent API | `ServicePoint` is not part of `HttpClient`. |
 | `SupportsCookieContainer` | No equivalent API | This is always `true` for `HttpClient`. |
 | `Timeout` | <xref:System.Net.Http.HttpClient.Timeout> |  |
-| `TransferEncoding` | <xref:System.Net.Http.Headers.HttpRequestHeaders.TransferEncoding> | See: [Example: Set Request Headers](#example-set-request-headers). |
+| `TransferEncoding` | <xref:System.Net.Http.Headers.HttpRequestHeaders.TransferEncoding> | See: [Example: Set Request Headers](#example-set-common-request-headers). |
 | `UnsafeAuthenticatedConnectionSharing` | No equivalent API | No workaround |
 | `UseDefaultCredentials` | No direct equivalent API | See: [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
-| `UserAgent` | <xref:System.Net.Http.Headers.HttpRequestHeaders.UserAgent> | See: [Example: Set Request Headers](#example-set-request-headers). |
+| `UserAgent` | <xref:System.Net.Http.Headers.HttpRequestHeaders.UserAgent> | See: [Example: Set Request Headers](#example-set-common-request-headers). |
 
 ## Migrating ServicePoint(Manager) usage
 
@@ -138,7 +138,7 @@ Developers should be aware that `ServicePointManager` is a static class, meaning
 
 | <xref:System.Net.ServicePointManager> Old API | New API | Notes |
 |---------|----------------------|-------|
-| `CheckCertificateRevocationList` | <xref:System.Net.Http.SocketsHttpHandler.SslOptions>.<xref:System.Net.Security.SslClientAuthenticationOptions.CertificateRevocationCheckMode> | See: [Example: Enabling CRL Check with SocketsHttpHandler](#example-enabling-crl-check-with-socketshttphandler). |
+| `CheckCertificateRevocationList` | <xref:System.Net.Http.SocketsHttpHandler.SslOptions>.<xref:System.Net.Security.SslClientAuthenticationOptions.CertificateRevocationCheckMode> | See: [Example: Enabling CRL Check with SocketsHttpHandler](#example-check-certificate-revocation-list-with-socketshttphandler). |
 | `DefaultConnectionLimit` | <xref:System.Net.Http.SocketsHttpHandler.MaxConnectionsPerServer> | TODO |
 | `DnsRefreshTimeout` | No equivalent API | See: [Example: Enabling Dns Round Robin](#example-enabling-dns-round-robin). |
 | `EnableDnsRoundRobin` | No equivalent API | See: [Example: Enabling Dns Round Robin](#example-enabling-dns-round-robin). |

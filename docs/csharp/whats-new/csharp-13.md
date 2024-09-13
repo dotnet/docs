@@ -17,6 +17,7 @@ C# 13 includes the following new features. You can try these features using the 
 - [Enable `ref struct` types to implement interfaces](#ref-struct-interfaces).
 - [Allow ref struct types](#allows-ref-struct) as arguments for type parameters in generics.
 - [Partial properties and indexers](#more-partial-members) are now allowed in `partial` types.
+- [Overload resolution priority](#overload-resolution-priority) allows library authors to designate one overload as better than others.
 
 C# 13 is supported on **.NET 9**. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
 
@@ -100,6 +101,12 @@ This enables types such as <xref:System.Span%601?displayProperty=nameWithType> a
 ## More partial members
 
 You can declare `partial` properties and `partial` indexers in C# 13. Partial properties and indexers generally follow the same rules as `partial` methods: you create one *declaring declaration* and one *implementing declaration*. The signatures of the two declarations must match. One restriction is that you can't use an auto-property declaration for a partial property. Properties that don't declare a body are considered the *declaring declaration*. You can learn more in the article on [partial members](../language-reference/keywords/partial-member.md).
+
+## Overload resolution priority
+
+In C# 13, the compiler recognizes the <xref:System.Runtime.CompilerServices.OverloadResolutionPriorityAttribute> to prefer one overload over another. Library authors can use this attribute to ensure that a new, better overload is preferred over an existing overload. For example, you might add a new overload that's more performant. You don't want to break existing code that uses your library, but you want users to update to the new version when they recompile. You can use [Overload resolution priority](../language-reference/attributes/general.md#overloadresolutionpriority-attribute) to inform the compiler which overload should be preferred. Overloads with the highest priority are preferred.
+
+This feature is intended for library authors to avoid ambiguity when adding new overloads. Library authors should use care with this attribute to avoid confusion.
 
 ## See also
 

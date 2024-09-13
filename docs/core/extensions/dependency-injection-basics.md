@@ -61,7 +61,7 @@ Next, create an _IGreetingService.cs_ file and add the following C# code:
 
 :::code source="snippets/di/di-basics/IGreetingService.cs":::
 
-Then add a new C# file named DefaultGreetingService.cs_ and add the following code:
+Then add a new C# file named _DefaultGreetingService.cs_ and add the following code:
 
 :::code source="snippets/di/di-basics/DefaultGreetingService.cs":::
 

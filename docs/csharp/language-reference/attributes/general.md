@@ -15,6 +15,7 @@ There are several attributes that can be applied to elements in your code that a
 - [`ModuleInitializer`](#moduleinitializer-attribute): Declare a method that initializes a module.
 - [`SkipLocalsInit`](#skiplocalsinit-attribute): Elide the code that initializes local variable storage to 0.
 - [`UnscopedRef`](#unscopedref-attribute): Declare that a `ref` variable normally interpreted as `scoped` should be treated as unscoped.
+- [`OverloadResolutionPriority`](#overloadresolutionpriority-attribute): Add a tiebreaker attribute to influence overload resolution for possibly ambiguous overloads.
 - [`Experimental`](#experimental-attribute): Mark a type or member as experimental.
 
 The compiler uses those semantic meanings to alter its output and report possible mistakes by developers using your code.
@@ -228,6 +229,20 @@ You add this attribute where the compiler treats a `ref` as implicitly `scoped`:
 - `out` parameters.
 
 Applying the <xref:System.Diagnostics.CodeAnalysis.UnscopedRefAttribute?displayProperty=nameWithType> marks the element as unscoped.
+
+## `OverloadResolutionPriority` attribute
+
+The <xref:System.Runtime.CompilerServices.OverloadResolutionPriorityAttribute> enables library authors to prefer one overload over another when two overloads can be ambiguous. Its primary use case is for library authors to write better performing overloads while still supporting existing code without breaks.
+
+For example, you might add a new overload that uses <xref:System.ReadOnlySpan%601> to reduce memory allocations:
+
+:::code language="csharp" source="snippets/OrpaSnippets.cs" ID="SnippetOverloadExample":::
+
+Overload resolution considers the two methods equally good for some argument types. For an argument of `int[]`, it prefers the first overload. To get the compiler to prefer the `ReadOnlySpan` version, you can increase the priority of that overload. The following example shows the effect of adding the attribute:
+
+:::code language="csharp" source="snippets/OrpaSnippets.cs" ID="SnippetOrpaExample":::
+
+All overloads with a lower priority than the highest overload priority are removed from the set of applicable methods. Methods without this attribute have the overload priority set to the default of zero. Library authors should use this attribute as a last resort when adding a new and better method overload. Library authors should have a deep understanding of how [Overload resolution](~/_csharplang/proposals/overload-resolution-priority.md#overload-resolution-priority) impacts choosing the better method. Otherwise, unexpected errors can result.
 
 ## See also
 

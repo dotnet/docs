@@ -39,7 +39,7 @@ When an interface type is used, the compiler synthesizes the storage for the arg
 
 The .NET 9 runtime includes a new type for thread synchronization, the <xref:System.Threading.Lock?displayProperty=fullName> type. This type provides better thread synchronization through its API. The <xref:System.Threading.Lock.EnterScope?displayProperty=nameWithType> method enters an exclusive scope. The `ref struct` returned from that supports the `Dispose()` pattern to exit the exclusive scope.
 
-The C# [`lock`](../language-reference/statements/lock.md) statement recognizes if the target of the lock is a `Lock` object. If so, it uses the updated API, rather than the traditional API using <xref:System.Threading.Monitor?displayProperty=nameWithType>. The compiler also recognizes if you convert a `Lock` object to another type and the `Monitor` based code would be generated. You can read more in the feature specification for the [new lock object](~/_csharplang/proposals/csharp-13.0/csharp-13.0/lock-object.md).
+The C# [`lock`](../language-reference/statements/lock.md) statement recognizes if the target of the lock is a `Lock` object. If so, it uses the updated API, rather than the traditional API using <xref:System.Threading.Monitor?displayProperty=nameWithType>. The compiler also recognizes if you convert a `Lock` object to another type and the `Monitor` based code would be generated. You can read more in the feature specification for the [new lock object](~/_csharplang/proposals/csharp-13.0/lock-object.md).
 
 ## New escape sequence
 

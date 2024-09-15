@@ -4,6 +4,13 @@ description: |
 body:
   - type: markdown
     attributes:
+      value: >-
+        Before opening a new issues, check existing issues
+        [on this article](https://github.com/dotnet/docs/issues?q=is%3Aissue+db96afbb-50af-5dee-b7b3-97600161e737)
+        to see if something similar has already been reported. You can add additional
+        information on an existing issue.
+  - type: markdown
+    attributes:
       value: "## Issue information"
   - type: markdown
     attributes:

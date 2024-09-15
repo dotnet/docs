@@ -11,6 +11,8 @@ helpviewer_keywords:
   - "deserializing objects"
   - "deserialization"
 ms.topic: concept-article
+ms.collection: ce-skilling-ai-copilot
+ms.custom: vs-copilot-horizontal
 #customer intent: As a developer, I want to learn how to use System.Text.Json to deserialize JSON data.
 ---
 
@@ -19,6 +21,9 @@ ms.topic: concept-article
 This article shows how to use the <xref:System.Text.Json?displayProperty=fullName> namespace to deserialize from JavaScript Object Notation (JSON). If you're porting existing code from `Newtonsoft.Json`, see [How to migrate to `System.Text.Json`](migrate-from-newtonsoft.md).
 
 A common way to deserialize JSON is to have (or create) a .NET class with properties and fields that represent one or more of the JSON properties. Then, to deserialize from a string or a file, call the <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> method. For the generic overloads, the generic type parameter is the .NET class. For the non-generic overloads, you pass the type of the class as a method parameter. You can deserialize either synchronously or asynchronously.
+
+> [!TIP]
+> You can use AI assistance to [deserialize a JSON string with GitHub Copilot](#use-github-copilot-to-deserialize-json).
 
 Any JSON properties that aren't represented in your class are ignored [by default](missing-members.md). Also, if any properties on the type are [required](required-properties.md) but not present in the JSON payload, deserialization will fail.
 
@@ -82,3 +87,66 @@ To deserialize from UTF-8, call a <xref:System.Text.Json.JsonSerializer.Deserial
 
 :::code language="csharp" source="snippets/how-to/csharp/RoundtripToUtf8.cs" id="Deserialize2":::
 :::code language="vb" source="snippets/how-to/vb/RoundtripToUtf8.vb" id="Deserialize2":::
+
+## Use GitHub Copilot to deserialize JSON
+
+You can use GitHub Copilot in your IDE to generate code that uses `System.Text.Json` to deserialize from JSON.
+
+If you're using [Visual Studio 2022 version 17.8 or later](/visualstudio/releases/2022/release-notes), you can try the AI-driven [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states) to generate code that uses `System.Text.Json` to deserialize JSON. Submit your question as a prompt in the Copilot chat window, as in the following example. You can also submit prompts using [inline chat](/visualstudio/ide/visual-studio-github-copilot-chat#ask-questions-in-the-inline-chat-view) in the editor window itself.
+
+> [!NOTE]
+> GitHub Copilot is powered by AI, so surprises and mistakes are possible. Make sure to verify any generated code or suggestions. For more information about the general use of GitHub Copilot, product impact, human oversight, and privacy, see [GitHub Copilot FAQs](https://github.com/features/copilot#faq).
+
+The following text shows an example prompt for Copilot Chat:
+
+> `/generate` code to use `Dystem.Text.Json` to deserialize a JSON string {"FirstName":"John","LastName":"Doe","Age":30} to an equal .NET object. Map property names & values. Provide example output.
+
+You can customize the prompt to use a JSON string with property names and values that suit your requirements.
+
+You can use chat features, such as [slash commands, references to files, methods, or classes, and threads](/visualstudio/ide/copilot-chat-context), to set intent and get better answers with scoped context. For an existing class in a project that's open in the IDE, you can prompt GitHub Copilot with `/generate code to serialize #Classname in #Filename to JSON`.
+
+The following output shows an example Copilot Chat response:
+
+```output
+Here's an example of how you can use `System.Text.Json` to deserialize a JSON string into a .NET object in C#:
+
+using System;
+using System.Text.Json;
+public class Person
+{
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+    public int Age { get; set; }
+}
+public class Program
+{
+    public static void Main()
+    {
+        string jsonString = "{\"FirstName\":\"John\",\"LastName\":\"Doe\",\"Age\":30}";
+        Person person = JsonSerializer.Deserialize<Person>(jsonString);
+        Console.WriteLine($"FirstName: {person.FirstName}");
+        Console.WriteLine($"LastName: {person.LastName}");
+        Console.WriteLine($"Age: {person.Age}");
+    }
+}
+
+**Example Output**
+FirstName: John
+LastName: Doe
+Age: 30
+
+This code defines a Person class with properties that match the JSON string. It then uses `JsonSerializer.Deserialize` to convert the JSON string into a `Person` object and prints the properties to the console.
+```
+
+When Copilot returns a code block, the response includes options to copy the code, insert the code into a new file, or preview the code output.
+
+> [!NOTE]
+> Your results might be different from what's shown in the example responses. AI models are non-deterministic, which means that they can return different responses when asked the same question. This might be due to additional learning and adaption over time, language variation, changes in context, such as your chat history, and more.
+
+:::image type="content" source="./media/deserialize-json-using-github-copilot.gif" alt-text="Animated screenshot that shows using GitHub Copilot Chat in Visual Studio to deserialize a JSON string to a .NET object." lightbox="./media/deserialize-json-using-github-copilot.gif":::
+
+For more information, see:
+
+* [GitHub Copilot Trust Center](https://resources.github.com/copilot-trust-center/)
+* [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states)
+* [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview)

@@ -77,6 +77,8 @@ items:
     items:
     - name: "Enhanced #line directives"
       href: ../../../_csharplang/proposals/csharp-10.0/enhanced-line-directives.md
+    - name: "Escape sequence '\\e'"
+      href: ../../../_csharplang/proposals/csharp-13.0/esc-escape-sequence.md
   - name: Basic concepts
     items:
     - name: Top-level statements
@@ -145,6 +147,8 @@ items:
       href: ../../../_csharplang/proposals/csharp-9.0/extension-getenumerator.md
     - name: Collection expressions
       href: ../../../_csharplang/proposals/csharp-12.0/collection-expressions.md
+    - name: Better conversion from collection expression
+      href: ../../../_csharplang/proposals/csharp-13.0/collection-expressions-better-conversion.md
     - name: Lambda discard parameters
       href: ../../../_csharplang/proposals/csharp-9.0/lambda-discard-parameters.md
     - name: Static anonymous functions
@@ -154,7 +158,7 @@ items:
     - name: Lambda improvements
       href: ../../../_csharplang/proposals/csharp-10.0/lambda-improvements.md
     - name: Method group natural type conversion
-      href: ../../../_csharplang/proposals/method-group-natural-type-improvements.md
+      href: ../../../_csharplang/proposals/csharp-13.0/method-group-natural-type-improvements.md
     - name: Optional Lambda expression parameters
       href: ../../../_csharplang/proposals/csharp-12.0/lambda-method-group-defaults.md
     - name: Checked user-defined operators
@@ -168,7 +172,7 @@ items:
     - name: Extended nameof scope
       href: ../../../_csharplang/proposals/csharp-11.0/extended-nameof-scope.md
     - name: Overload resolution priority
-      href: ../../../_csharplang/proposals/overload-resolution-priority.md
+      href: ../../../_csharplang/proposals/csharp-13.0/overload-resolution-priority.md
   - name: Statements
     items:
     - name: Global using directive
@@ -184,9 +188,9 @@ items:
     - name: Nested stackalloc
       href: ../../../_csharplang/proposals/csharp-8.0/nested-stackalloc.md
     - name: Lock object semantics
-      href: ../../../_csharplang/proposals/lock-object.md
+      href: ../../../_csharplang/proposals/csharp-13.0/lock-object.md
     - name: Allow `ref` and `unsafe`
-      href: ../../../_csharplang/proposals/ref-unsafe-in-iterators-async.md 
+      href: ../../../_csharplang/proposals/csharp-13.0/ref-unsafe-iterators-async.md 
   - name: Namespaces
     items:
     - name: File scoped namespaces
@@ -196,7 +200,7 @@ items:
     - name: Extending partial methods
       href: ../../../_csharplang/proposals/csharp-9.0/extending-partial-methods.md
     - name: Partial properties
-      href: ../../../_csharplang/proposals/partial-properties.md
+      href: ../../../_csharplang/proposals/csharp-13.0/partial-properties.md
     - name: Covariant return types
       href: ../../../_csharplang/proposals/csharp-9.0/covariant-returns.md
     - name: Primary constructors
@@ -208,7 +212,7 @@ items:
     - name: AsyncMethodBuilder override
       href: ../../../_csharplang/proposals/csharp-10.0/async-method-builders.md
     - name: Params collections
-      href: ../../../_csharplang/proposals/params-collections.md
+      href: ../../../_csharplang/proposals/csharp-13.0/params-collections.md
   - name: Structs
     items:
     - name: Readonly instance members
@@ -228,7 +232,7 @@ items:
     - name: Static abstracts in interfaces
       href: ../../../_csharplang/proposals/csharp-11.0/static-abstracts-in-interfaces.md
     - name: Allow ref struct interfaces
-      href: ../../../_csharplang/proposals/ref-struct-interfaces.md
+      href: ../../../_csharplang/proposals/csharp-13.0/ref-struct-interfaces.md
   - name: Attributes
     items:
     - name: Generic attributes

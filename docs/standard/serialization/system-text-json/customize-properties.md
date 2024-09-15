@@ -31,7 +31,7 @@ By default, property names and dictionary keys are unchanged in the JSON output,
 > The [web default](configure-options.md#web-defaults-for-jsonserializeroptions) naming policy is camel case.
 
 > [!TIP]
-> You can use AI assistance to [customize property names and values with GitHub Copilot](#use-github-copilot-to-customize-property-names-and-values).
+> You can use AI assistance to [customize property names and values with GitHub Copilot](#use-github-copilot-to-customize-property-names-and-order).
 
 For other scenarios that require special handling of JSON property names and values, you can [implement custom converters](converters-how-to.md).
 

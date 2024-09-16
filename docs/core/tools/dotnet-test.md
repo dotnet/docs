@@ -51,7 +51,10 @@ dotnet test -h|--help
 
 ## Description
 
-The `dotnet test` command is used to execute unit tests in a given solution. The `dotnet test` command builds the solution and runs a test host application for each test project in the solution. The test host executes tests in the given project using a test framework, for example: MSTest, NUnit, or xUnit, and reports the success or failure of each test. If all tests are successful, the test runner returns 0 as an exit code; otherwise if any test fails, it returns 1.
+The `dotnet test` command is used to execute unit tests in a given solution. The `dotnet test` command builds the solution and runs a test host application for each test project in the solution using `VSTest`. The test host executes tests in the given project using a test framework, for example: MSTest, NUnit, or xUnit, and reports the success or failure of each test. If all tests are successful, the test runner returns 0 as an exit code; otherwise if any test fails, it returns 1.
+
+> [!NOTE]
+> `dotnet test` was originally designed to support only `VSTest`-based test projects. Recent versions of the test frameworks are adding support for [Microsoft.Testing.Platform](../testing/unit-testing-platform-intro.md). This alternative test platform is more lightweight and faster than `VSTest` and supports `dotnet test` with different command line options. For more information, see [Microsoft.Testing.Platform](../testing/unit-testing-platform-intro.md).
 
 For multi-targeted projects, tests are run for each targeted framework. The test host and the unit test framework are packaged as NuGet packages and are restored as ordinary dependencies for the project. Starting with the .NET 9 SDK, these tests are run in parallel by default. To disable parallel execution, set the `TestTfmsInParallel` MSBuild property to `false`. For more information, see [Run tests in parallel](../whats-new/dotnet-9/sdk.md#run-tests-in-parallel) and the [example command line later in this article](#testtfmsinparallel).
 
@@ -86,6 +89,9 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 >
 > - Starting in .NET 7: switch `-a` to alias `--arch` instead of `--test-adapter-path`
 > - Starting in .NET 7: switch `-r` to alias `--runtime` instead of `--results-directory`
+
+> [!WARNING]
+> When using `Microsoft.Testing.Platform`, please refer to [dotnet test integration](../testing/unit-testing-platform-integration-dotnet-test.md) for the supported options. As a rule of thumbs, every option non-related to testing is supported while every testing-related option is not supported as-is.
 
 - **`--test-adapter-path <ADAPTER_PATH>`**
 

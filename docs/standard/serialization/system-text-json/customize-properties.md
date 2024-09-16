@@ -242,7 +242,7 @@ If you're using [Visual Studio 2022 version 17.8 or later](/visualstudio/release
 > [!NOTE]
 > GitHub Copilot is powered by AI, so surprises and mistakes are possible. Make sure to verify any generated code or suggestions. For more information about the general use of GitHub Copilot, product impact, human oversight, and privacy, see [GitHub Copilot FAQs](https://github.com/features/copilot#faq).
 
-The following example shows you how to use Copilot to modify exisitng code to customize property names and order when serializing to JSON.
+The following example shows you how to use Copilot to modify existing code to customize property names and order when serializing to JSON.
 
 1. Add the following C# example code to a code file `Example.cs` in your editor.
    In Visual Studio, you can use a C# console application project to try this example.
@@ -261,8 +261,7 @@ The following example shows you how to use Copilot to modify exisitng code to cu
 
   > `#Example.cs` modify code to use `System.Text.Json` to customize property names and order of JSON output from serializtion. Set property names FirstName to first_name, LastName to last_name. Set order to: Country, FirstName, LastName, Age. Provide customized serialization output.
 
-  You can customize the prompt to output a JSON string with property names and values that suit your requirements.
-
+  `#Example.cs` in the prompt provides a [file reference as context](/visualstudio/ide/copilot-chat-context.md#reference-a-file) to Copilot. You can customize the prompt to output a JSON string with property names and values that suit your requirements.
   You can use chat features, such as [slash commands, references to files, methods, or classes, and threads](/visualstudio/ide/copilot-chat-context), to set intent and get better answers with scoped context.
 
   The following output shows an example Copilot Chat response:
@@ -327,7 +326,6 @@ The following example shows you how to use Copilot to modify exisitng code to cu
 
   This ensures that the JSON output has the customized property names and the specified order.
   ```
-
   When Copilot returns a code block, the response includes options to copy the code, insert the code into a new file, or preview the code output.
 
 > [!NOTE]

@@ -25,15 +25,11 @@ To perform health checks on the resource utilization of your .NET apps, add a pa
 The preceding code:
 
 - Creates a new <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder> instance.
-- Adds resource monitoring by calling <xref:Microsoft.Extensions.DependencyInjection.ResourceMonitoringServiceCollectionExtensions.AddResourceMonitoring%2A>.
 - Adds a health check for resource utilization by chaining a call from the <xref:Microsoft.Extensions.DependencyInjection.HealthCheckServiceCollectionExtensions.AddHealthChecks%2A> call to the <xref:Microsoft.Extensions.DependencyInjection.ResourceUtilizationHealthCheckExtensions.AddResourceUtilizationHealthCheck%2A> extension method.
 - Builds the <xref:Microsoft.Extensions.Hosting.IHost> instance as the `app` variable.
 - Gets an instance of the <xref:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckService> class from the service provider.
 - Performs a health check and displays the result.
 - Runs the application.
-
-> [!NOTE]
-> The `Microsoft.Extensions.Diagnostics.HealthChecks.ResourceUtilization` library assumes that the consumer will register the dependent call to <xref:Microsoft.Extensions.DependencyInjection.ResourceMonitoringServiceCollectionExtensions.AddResourceMonitoring%2A>. If you don't register this, when resolving the `HealthCheckService` an exception is thrown.
 
 ## Application lifetime health checks
 

@@ -99,7 +99,7 @@ If you're using [Visual Studio 2022 version 17.8 or later](/visualstudio/release
 
 The following text shows an example prompt for Copilot Chat:
 
-> `/generate` code to use `Dystem.Text.Json` to deserialize a JSON string {"FirstName":"John","LastName":"Doe","Age":30} to an equal .NET object. Map property names & values. Provide example output.
+> Generate code to use `System.Text.Json` to deserialize a JSON string {"FirstName":"John","LastName":"Doe","Age":30} to an equivalent .NET object. Map property names & values. Provide example output.
 
 You can customize the prompt to use a JSON string with property names and values that suit your requirements.
 

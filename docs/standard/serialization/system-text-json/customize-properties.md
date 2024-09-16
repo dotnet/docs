@@ -261,7 +261,7 @@ The following example shows you how to use Copilot to modify existing code to cu
 
   > `#Example.cs` modify code to use `System.Text.Json` to customize property names and order of JSON output from serializtion. Set property names FirstName to first_name, LastName to last_name. Set order to: Country, FirstName, LastName, Age. Provide customized serialization output.
 
-  `#Example.cs` in the prompt provides a [file reference as context](/visualstudio/ide/copilot-chat-context.md#reference-a-file) to Copilot. You can customize the prompt to output a JSON string with property names and values that suit your requirements.
+  `#Example.cs` in the prompt provides a [file reference as context](/visualstudio/ide/copilot-chat-context#reference-a-file) to Copilot. You can customize the prompt to output a JSON string with property names and values that suit your requirements.
   You can use chat features, such as [slash commands, references to files, methods, or classes, and threads](/visualstudio/ide/copilot-chat-context), to set intent and get better answers with scoped context.
 
   The following output shows an example Copilot Chat response:

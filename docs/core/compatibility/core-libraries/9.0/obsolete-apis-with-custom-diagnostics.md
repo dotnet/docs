@@ -65,7 +65,7 @@ These obsoletions can affect [source compatibility](../../categories.md#source-c
 
 ### SYSLIB0057
 
-- <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.%23ctor(System.Byte[])>
+- <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.#ctor(System.Byte[])>
 - <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.%23ctor(System.ReadOnlySpan{System.Byte})>
 - <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.%23ctor(System.String)>
 - <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.%23ctor(System.Byte[],System.Security.SecureString)>

@@ -121,7 +121,7 @@ Native AOT apps have the following limitations:
 - [Diagnostic support for debugging and profiling](./diagnostics.md) with some limitations.
 - Support for some ASP.NET Core features. For more information, see [ASP.NET Core support for Native AOT](/aspnet/core/fundamentals/native-aot/).
 
-The publish process analyzes the entire project and its dependencies for possible limitations. Warnings are issued for each limitation the published app may encounter at run time.
+The publish process analyzes the entire project and its dependencies for possible limitations. Warnings are issued for each limitation the published app might encounter at run time.
 
 ## Platform/architecture restrictions
 

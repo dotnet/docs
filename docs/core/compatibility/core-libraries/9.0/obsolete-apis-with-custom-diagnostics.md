@@ -24,6 +24,7 @@ Check out these APIs!
 - <xref:System.Collections.Generic.HashSet`1.Enumerator>
 - <xref:System.Collections.Generic.LinkedList`1.System%23Collections%23Generic%23ICollection&lt;T&gt;%23Add(`0)>
 - <xref:System.Collections.Generic.LinkedList`1.System%23Collections%23Generic%23ICollection{T}%23Add(`0)>
+- <xref:System.Collections.Generic.LinkedList`1.System%23Collections%23Generic%23ICollection`1%23Add(`0)>
 - <xref:System.Tuple`3.System%23Collections%23IStructuralComparable%23CompareTo(System.Object,System.Collections.IComparer)>
 
 Some APIs have been marked as obsolete, starting in .NET 9. This breaking change is specific to APIs that have been marked as obsolete *with a custom diagnostic ID*. Suppressing the default obsoletion diagnostic ID, which is [CS0618](../../../../csharp/language-reference/compiler-messages/cs0618.md) for the C# compiler, does not suppress the warnings that the compiler generates when these APIs are used.

@@ -6,6 +6,25 @@ ms.date: 08/07/2024
 ---
 # API obsoletions with non-default diagnostic IDs (.NET 9)
 
+Check out these APIs!
+
+- <xref:System.String>
+- <xref:System.StringComparer.%23ctor>
+- <xref:System.Net.Mail.SmtpClient.%23ctor(System.String)>
+- <xref:System.String.Replace(System.String,System.String,System.StringComparison)>
+- <xref:System.Collections.Generic.Dictionary`2.Remove(`0,`1@)>
+- <xref:Microsoft.DotNet.PlatformAbstractions.HashCodeCombiner.Add``1(``0,System.Collections.Generic.IEqualityComparer{``0})>
+- <xref:System.IDisposable>
+- <xref:System.Collections.Queue.Count>
+- <xref:System.Collections.Generic.Dictionary`2>
+- <xref:System.Collections.DictionaryEntry>
+- <xref:System.DayOfWeek>
+- <xref:System.DayOfWeek.Sunday>
+- <xref:System.Windows.Forms.MenuStrip.MenuActivate>
+- <xref:System.Collections.Generic.HashSet`1.Enumerator>
+- <xref:System.Collections.Generic.LinkedList`1.System%23Collections%23Generic%23ICollection<T>%23Add(`0)>
+- <xref:System.Tuple`3.System%23Collections%23IStructuralComparable%23CompareTo(System.Object,System.Collections.IComparer)>
+
 Some APIs have been marked as obsolete, starting in .NET 9. This breaking change is specific to APIs that have been marked as obsolete *with a custom diagnostic ID*. Suppressing the default obsoletion diagnostic ID, which is [CS0618](../../../../csharp/language-reference/compiler-messages/cs0618.md) for the C# compiler, does not suppress the warnings that the compiler generates when these APIs are used.
 
 ## Change description

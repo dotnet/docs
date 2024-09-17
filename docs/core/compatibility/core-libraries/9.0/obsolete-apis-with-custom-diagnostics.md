@@ -25,6 +25,14 @@ Check out these APIs!
 - <xref:System.Collections.Generic.LinkedList`1.System%23Collections%23Generic%23ICollection{T}%23Add(`0)>
 - <xref:System.Tuple`3.System%23Collections%23IStructuralComparable%23CompareTo(System.Object,System.Collections.IComparer)>
 
+Also see these Markdown links:
+
+- [System.Collections.Generic.HashSet<T>.AlternateLookup<TAlternate>](/dotnet/api/system.collections.generic.hashset-1.alternatelookup-1)
+- [System.StringComparer()](/dotnet/api/system.stringcomparer.-ctor#system-stringcomparer-ctor)
+- [System.Collections.Generic.LinkedList<T>.Enumerator](/dotnet/api/system.collections.generic.linkedlist-1.enumerator)
+- [System.Collections.Generic.LinkedList<T>.AddAfter(LinkedListNode<T>, LinkedListNode<T>)](/dotnet/api/system.collections.generic.linkedlist-1.addafter#system-collections-generic-linkedlist-1-addafter(system-collections-generic-linkedlistnode((-0))-system-collections-generic-linkedlistnode((-0))))
+- [System.Collections.Generic.LinkedList<T>.System.Collections.Generic.ICollection<T>.Add(T)](/dotnet/api/system.collections.generic.linkedlist-1.system-collections-generic-icollection-t--add#system-collections-generic-linkedlist-1-system-collections-generic-icollection((t))-add(-0))
+
 Some APIs have been marked as obsolete, starting in .NET 9. This breaking change is specific to APIs that have been marked as obsolete *with a custom diagnostic ID*. Suppressing the default obsoletion diagnostic ID, which is [CS0618](../../../../csharp/language-reference/compiler-messages/cs0618.md) for the C# compiler, does not suppress the warnings that the compiler generates when these APIs are used.
 
 ## Change description

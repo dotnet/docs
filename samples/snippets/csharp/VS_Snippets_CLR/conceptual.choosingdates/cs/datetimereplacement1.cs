@@ -66,7 +66,7 @@ public class Example
 // The example displays the following output:
 //       Store is open now at 15:29:01.6129911: True
 //       Store is open at 08:00:00: True
-//       Store is open at 21:00:00: False
+//       Store is open at 21:00:00: True
 //       Store is open at 04:59:00: False
-//       Store is open at 18:31:00: False
+//       Store is open at 18:31:00: True
 // </Snippet2>

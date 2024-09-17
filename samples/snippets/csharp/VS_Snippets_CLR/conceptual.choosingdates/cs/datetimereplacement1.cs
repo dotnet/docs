@@ -34,7 +34,7 @@ public struct StoreInfo
             storeDelta = tz.GetAdjustmentRules()[tz.GetAdjustmentRules().Length - 1].DaylightDelta;
 
          TimeSpan comparisonTime = time + (offset - tz.BaseUtcOffset).Negate() + (delta - storeDelta).Negate();
-         return comparisonTime >= open & comparisonTime <= close;
+         return comparisonTime >= open && comparisonTime <= close;
       }
    }
 }

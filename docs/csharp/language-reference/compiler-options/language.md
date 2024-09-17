@@ -1,7 +1,7 @@
 ---
 description: "C# Compiler Options for language feature rules. These options control how the compiler interprets certain language constructs."
 title: "Compiler Options - language feature rules"
-ms.date: 10/30/2023
+ms.date: 09/17/2024
 f1_keywords:
   - "cs.build.options"
 helpviewer_keywords:
@@ -65,6 +65,10 @@ This option specifies the names of one or more symbols that you want to define. 
 
 The default language version for the C# compiler depends on the target framework for your application and the version of the SDK or Visual Studio installed. Those rules are defined in [C# language versioning](../language-versioning.md#defaults).
 
+> [!WARNING]
+>
+> Setting the `LangVersion` element to `latest` is discouraged. The `latest` setting means the installed compiler uses its latest version. That can change from machine to machine, making builds unreliable. In addition, it enables language features that may require runtime or library features not included in the current SDK.
+
 The **LangVersion** option causes the compiler to accept only syntax that is included in the specified C# language specification, for example:
 
 ```xml
@@ -74,9 +78,6 @@ The **LangVersion** option causes the compiler to accept only syntax that is inc
 The following values are valid:
 
 [!INCLUDE [lang-versions-table](../includes/langversion-table.md)]
-
-> [!IMPORTANT]
-> The `latest` value is generally not recommended. With `latest`, the compiler enables the latest features, even if those features depend on updates not included in the configured target framework.
 
 ### Considerations
 

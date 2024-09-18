@@ -3,7 +3,7 @@ title: Configuration providers
 description: Discover how to configure .NET apps using the configuration provider API and the available configuration providers.
 author: IEvangelist
 ms.author: dapine
-ms.date: 06/23/2023
+ms.date: 09/10/2024
 ---
 
 # Configuration providers in .NET
@@ -227,6 +227,8 @@ When an environment variable is discovered and loaded into configuration with an
 | `MYSQLCONNSTR_{KEY}`     | `ConnectionStrings:{KEY}`   | Key: `ConnectionStrings:{KEY}_ProviderName`:<br>Value: `MySql.Data.MySqlClient` |
 | `SQLAZURECONNSTR_{KEY}`  | `ConnectionStrings:{KEY}`   | Key: `ConnectionStrings:{KEY}_ProviderName`:<br>Value: `System.Data.SqlClient`  |
 | `SQLCONNSTR_{KEY}`       | `ConnectionStrings:{KEY}`   | Key: `ConnectionStrings:{KEY}_ProviderName`:<br>Value: `System.Data.SqlClient`  |
+
+[!INCLUDE [managed-identities](../../framework/includes/managed-identities.md)]
 
 ### Environment variables set in launchSettings.json
 

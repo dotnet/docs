@@ -2,7 +2,7 @@
 title: What's new in .NET 9 runtime
 description: Learn about the new .NET features introduced in the .NET 9 runtime.
 titleSuffix: ""
-ms.date: 08/08/2024
+ms.date: 09/09/2024
 ms.topic: whats-new
 ---
 # What's new in the .NET 9 runtime

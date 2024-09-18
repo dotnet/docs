@@ -109,7 +109,7 @@ using System.Collections.Generic;
 
 public class OrderQueries : IOrderQueries
 {
-  public async Task<IEnumerable<OrderSummary>> GetOrdersAsync()
+    public async Task<IEnumerable<OrderSummary>> GetOrdersAsync()
     {
         using (var connection = new SqlConnection(_connectionString))
         {

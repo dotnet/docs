@@ -1,22 +1,21 @@
 ﻿using System;
-using System.Linq;
 using System.Activities;
-using System.Activities.Statements;
-using System.Threading;
-using System.Collections.Generic;
-using System.Activities.Hosting;
 using System.Activities.DurableInstancing;
-using System.Collections;
-using System.ComponentModel;
-using System.Windows.Markup;
-using System.Collections.ObjectModel;
 using System.Activities.Expressions;
-using Microsoft.VisualBasic.Activities;
-using System.Text;
-using System.Activities.XamlIntegration;
-using System.Xaml;
-using System.IO;
+using System.Activities.Hosting;
+using System.Activities.Statements;
 using System.Activities.Validation;
+using System.Activities.XamlIntegration;
+using System.Collections;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.IO;
+using System.Text;
+using System.Threading;
+using System.Windows.Markup;
+using System.Xaml;
+using Microsoft.VisualBasic.Activities;
 
 // Snippets
 // 1 WorkflowApplicationUnhandledExceptionEventArgs
@@ -62,7 +61,6 @@ using System.Activities.Validation;
 
 namespace WorkflowApplicationExample
 {
-
     class Program
     {
         static void Main(string[] args)
@@ -103,7 +101,7 @@ namespace WorkflowApplicationExample
             WorkflowApplication wfApp = new WorkflowApplication(wf);
 
             // Handle the desired lifecycle events.
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
@@ -133,19 +131,19 @@ namespace WorkflowApplicationExample
                 syncEvent.Set();
             };
 
-            wfApp.Unloaded = delegate(WorkflowApplicationEventArgs e)
+            wfApp.Unloaded = delegate (WorkflowApplicationEventArgs e)
             {
                 Console.WriteLine("Workflow {0} unloaded.", e.InstanceId);
             };
 
-            wfApp.Aborted = delegate(WorkflowApplicationAbortedEventArgs e)
+            wfApp.Aborted = delegate (WorkflowApplicationAbortedEventArgs e)
             {
                 // Display the exception that caused the workflow
                 // to abort.
                 Console.WriteLine("OnAborted: {0}", e.Reason.Message);
             };
 
-            wfApp.OnUnhandledException = delegate(WorkflowApplicationUnhandledExceptionEventArgs e)
+            wfApp.OnUnhandledException = delegate (WorkflowApplicationUnhandledExceptionEventArgs e)
             {
                 // Display the unhandled exception.
                 Console.WriteLine("OnUnhandledException in Workflow {0}: {1}",
@@ -161,14 +159,14 @@ namespace WorkflowApplicationExample
                 // UnhandledExceptionAction.Cancel
             };
 
-            wfApp.Idle = delegate(WorkflowApplicationIdleEventArgs e)
+            wfApp.Idle = delegate (WorkflowApplicationIdleEventArgs e)
             {
                 // Perform any processing that should occur
                 // when a workflow goes idle. If the workflow can persist,
                 // both Idle and PersistableIdle are called.
             };
 
-            wfApp.PersistableIdle = delegate(WorkflowApplicationIdleEventArgs e)
+            wfApp.PersistableIdle = delegate (WorkflowApplicationIdleEventArgs e)
             {
                 // Instruct the runtime to persist and unload the workflow
                 return PersistableIdleAction.Unload;
@@ -210,7 +208,7 @@ namespace WorkflowApplicationExample
 
             WorkflowApplication wfApp = new WorkflowApplication(wf);
 
-            wfApp.OnUnhandledException = delegate(WorkflowApplicationUnhandledExceptionEventArgs e)
+            wfApp.OnUnhandledException = delegate (WorkflowApplicationUnhandledExceptionEventArgs e)
             {
                 // Display the unhandled exception.
                 Console.WriteLine("OnUnhandledException in Workflow {0}\n{1}",
@@ -242,7 +240,7 @@ namespace WorkflowApplicationExample
             // End setup
 
             //<snippet2>
-            wfApp.Idle = delegate(WorkflowApplicationIdleEventArgs e)
+            wfApp.Idle = delegate (WorkflowApplicationIdleEventArgs e)
             {
                 foreach (BookmarkInfo info in e.Bookmarks)
                 {
@@ -261,7 +259,7 @@ namespace WorkflowApplicationExample
             // WorkflowApplicationEventArgs
             // WorkflowApplication.Unloaded
             //<snippet3>
-            wfApp.Unloaded = delegate(WorkflowApplicationEventArgs e)
+            wfApp.Unloaded = delegate (WorkflowApplicationEventArgs e)
             {
                 Console.WriteLine("Workflow {0} unloaded.", e.InstanceId);
             };
@@ -270,7 +268,7 @@ namespace WorkflowApplicationExample
             // WorkflowApplicationCompletedEventArgs
             // WorkflowApplication.Completed
             //<snippet4>
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
@@ -301,7 +299,7 @@ namespace WorkflowApplicationExample
             //</snippet4>
 
             //<snippet26>
-            wfApp.PersistableIdle = delegate(WorkflowApplicationIdleEventArgs e)
+            wfApp.PersistableIdle = delegate (WorkflowApplicationIdleEventArgs e)
             {
                 // Instruct the runtime to persist and unload the workflow
                 return PersistableIdleAction.Unload;
@@ -334,7 +332,7 @@ namespace WorkflowApplicationExample
 
             WorkflowApplication wfApp = new WorkflowApplication(wf);
 
-            wfApp.OnUnhandledException = delegate(WorkflowApplicationUnhandledExceptionEventArgs e)
+            wfApp.OnUnhandledException = delegate (WorkflowApplicationUnhandledExceptionEventArgs e)
             {
                 // Display the unhandled exception.
                 Console.WriteLine("OnUnhandledException in Workflow {0}\n{1}",
@@ -347,7 +345,7 @@ namespace WorkflowApplicationExample
                 return UnhandledExceptionAction.Abort;
             };
 
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
@@ -376,7 +374,7 @@ namespace WorkflowApplicationExample
                 }
             };
 
-            wfApp.Unloaded = delegate(WorkflowApplicationEventArgs e)
+            wfApp.Unloaded = delegate (WorkflowApplicationEventArgs e)
             {
                 Console.WriteLine("Workflow {0} unloaded.", e.InstanceId);
             };
@@ -384,7 +382,7 @@ namespace WorkflowApplicationExample
             // WorkflowApplicationAbortedEventArgs
             // WorkflowApplication.Aborted
             //<snippet5>
-            wfApp.Aborted = delegate(WorkflowApplicationAbortedEventArgs e)
+            wfApp.Aborted = delegate (WorkflowApplicationAbortedEventArgs e)
             {
                 // Display the exception that caused the workflow
                 // to abort.
@@ -423,7 +421,7 @@ namespace WorkflowApplicationExample
 
             WorkflowApplication wfApp = new WorkflowApplication(wf);
 
-            wfApp.OnUnhandledException = delegate(WorkflowApplicationUnhandledExceptionEventArgs e)
+            wfApp.OnUnhandledException = delegate (WorkflowApplicationUnhandledExceptionEventArgs e)
             {
                 // Display the unhandled exception.
                 Console.WriteLine("OnUnhandledException in Workflow {0}\n{1}",
@@ -436,7 +434,7 @@ namespace WorkflowApplicationExample
                 return UnhandledExceptionAction.Terminate;
             };
 
-            wfApp.Aborted = delegate(WorkflowApplicationAbortedEventArgs e)
+            wfApp.Aborted = delegate (WorkflowApplicationAbortedEventArgs e)
             {
                 // Display the exception that caused the workflow
                 // to abort.
@@ -446,7 +444,7 @@ namespace WorkflowApplicationExample
                     e.Reason.Message);
             };
 
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
@@ -504,7 +502,7 @@ namespace WorkflowApplicationExample
 
             WorkflowApplication wfApp = new WorkflowApplication(wf);
 
-            wfApp.OnUnhandledException = delegate(WorkflowApplicationUnhandledExceptionEventArgs e)
+            wfApp.OnUnhandledException = delegate (WorkflowApplicationUnhandledExceptionEventArgs e)
             {
                 // Display the unhandled exception.
                 Console.WriteLine("OnUnhandledException in Workflow {0}\n{1}",
@@ -517,7 +515,7 @@ namespace WorkflowApplicationExample
                 return UnhandledExceptionAction.Abort;
             };
 
-            wfApp.Aborted = delegate(WorkflowApplicationAbortedEventArgs e)
+            wfApp.Aborted = delegate (WorkflowApplicationAbortedEventArgs e)
             {
                 // Display the exception that caused the workflow
                 // to abort.
@@ -527,7 +525,7 @@ namespace WorkflowApplicationExample
                     e.Reason.Message);
             };
 
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
@@ -579,7 +577,7 @@ namespace WorkflowApplicationExample
 
             WorkflowApplication wfApp = new WorkflowApplication(wf);
 
-            wfApp.OnUnhandledException = delegate(WorkflowApplicationUnhandledExceptionEventArgs e)
+            wfApp.OnUnhandledException = delegate (WorkflowApplicationUnhandledExceptionEventArgs e)
             {
                 // Display the unhandled exception.
                 Console.WriteLine("OnUnhandledException in Workflow {0}\n{1}",
@@ -592,7 +590,7 @@ namespace WorkflowApplicationExample
                 return UnhandledExceptionAction.Cancel;
             };
 
-            wfApp.Aborted = delegate(WorkflowApplicationAbortedEventArgs e)
+            wfApp.Aborted = delegate (WorkflowApplicationAbortedEventArgs e)
             {
                 // Display the exception that caused the workflow
                 // to abort.
@@ -602,7 +600,7 @@ namespace WorkflowApplicationExample
                     e.Reason.Message);
             };
 
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
@@ -656,7 +654,7 @@ namespace WorkflowApplicationExample
             WorkflowApplication wfApp = new WorkflowApplication(wf);
 
             // Subscribe to any desired workflow lifecycle events.
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
@@ -679,7 +677,7 @@ namespace WorkflowApplicationExample
                 }
             };
 
-            wfApp.Aborted = delegate(WorkflowApplicationAbortedEventArgs e)
+            wfApp.Aborted = delegate (WorkflowApplicationAbortedEventArgs e)
             {
                 // Display the exception that caused the workflow
                 // to abort.
@@ -689,7 +687,7 @@ namespace WorkflowApplicationExample
                     e.Reason.Message);
             };
 
-            wfApp.Idle = delegate(WorkflowApplicationIdleEventArgs e)
+            wfApp.Idle = delegate (WorkflowApplicationIdleEventArgs e)
             {
                 // Perform any processing that should occur
                 // when a workflow goes idle. If the workflow can persist,
@@ -697,18 +695,18 @@ namespace WorkflowApplicationExample
                 Console.WriteLine("Workflow {0} Idle.", e.InstanceId);
             };
 
-            wfApp.PersistableIdle = delegate(WorkflowApplicationIdleEventArgs e)
+            wfApp.PersistableIdle = delegate (WorkflowApplicationIdleEventArgs e)
             {
                 // Instruct the runtime to persist and unload the workflow
                 return PersistableIdleAction.Unload;
             };
 
-            wfApp.Unloaded = delegate(WorkflowApplicationEventArgs e)
+            wfApp.Unloaded = delegate (WorkflowApplicationEventArgs e)
             {
                 Console.WriteLine("Workflow {0} Unloaded.", e.InstanceId);
             };
 
-            wfApp.OnUnhandledException = delegate(WorkflowApplicationUnhandledExceptionEventArgs e)
+            wfApp.OnUnhandledException = delegate (WorkflowApplicationUnhandledExceptionEventArgs e)
             {
                 // Display the unhandled exception.
                 Console.WriteLine("OnUnhandledException in Workflow {0}\n{1}",
@@ -742,7 +740,7 @@ namespace WorkflowApplicationExample
             WorkflowApplication wfApp = new WorkflowApplication(new Divide(), inputs);
 
             // Subscribe to any desired workflow lifecycle events.
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
@@ -798,7 +796,7 @@ namespace WorkflowApplicationExample
             WorkflowApplication wfApp = new WorkflowApplication(wf);
 
             // Subscribe to any desired workflow lifecycle events.
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
@@ -821,7 +819,7 @@ namespace WorkflowApplicationExample
                 }
             };
 
-            wfApp.Aborted = delegate(WorkflowApplicationAbortedEventArgs e)
+            wfApp.Aborted = delegate (WorkflowApplicationAbortedEventArgs e)
             {
                 // Display the exception that caused the workflow
                 // to abort.
@@ -831,7 +829,7 @@ namespace WorkflowApplicationExample
                     e.Reason.Message);
             };
 
-            wfApp.Idle = delegate(WorkflowApplicationIdleEventArgs e)
+            wfApp.Idle = delegate (WorkflowApplicationIdleEventArgs e)
             {
                 // Perform any processing that should occur
                 // when a workflow goes idle. If the workflow can persist,
@@ -839,18 +837,18 @@ namespace WorkflowApplicationExample
                 Console.WriteLine("Workflow {0} Idle.", e.InstanceId);
             };
 
-            wfApp.PersistableIdle = delegate(WorkflowApplicationIdleEventArgs e)
+            wfApp.PersistableIdle = delegate (WorkflowApplicationIdleEventArgs e)
             {
                 // Instruct the runtime to persist and unload the workflow
                 return PersistableIdleAction.Unload;
             };
 
-            wfApp.Unloaded = delegate(WorkflowApplicationEventArgs e)
+            wfApp.Unloaded = delegate (WorkflowApplicationEventArgs e)
             {
                 Console.WriteLine("Workflow {0} Unloaded.", e.InstanceId);
             };
 
-            wfApp.OnUnhandledException = delegate(WorkflowApplicationUnhandledExceptionEventArgs e)
+            wfApp.OnUnhandledException = delegate (WorkflowApplicationUnhandledExceptionEventArgs e)
             {
                 // Display the unhandled exception.
                 Console.WriteLine("OnUnhandledException in Workflow {0}\n{1}",
@@ -900,7 +898,7 @@ namespace WorkflowApplicationExample
             WorkflowApplication wfApp = new WorkflowApplication(wf);
 
             // Subscribe to any desired workflow lifecycle events.
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
@@ -923,7 +921,7 @@ namespace WorkflowApplicationExample
                 }
             };
 
-            wfApp.Aborted = delegate(WorkflowApplicationAbortedEventArgs e)
+            wfApp.Aborted = delegate (WorkflowApplicationAbortedEventArgs e)
             {
                 // Display the exception that caused the workflow
                 // to abort.
@@ -933,7 +931,7 @@ namespace WorkflowApplicationExample
                     e.Reason.Message);
             };
 
-            wfApp.Idle = delegate(WorkflowApplicationIdleEventArgs e)
+            wfApp.Idle = delegate (WorkflowApplicationIdleEventArgs e)
             {
                 // Perform any processing that should occur
                 // when a workflow goes idle. If the workflow can persist,
@@ -941,18 +939,18 @@ namespace WorkflowApplicationExample
                 Console.WriteLine("Workflow {0} Idle.", e.InstanceId);
             };
 
-            wfApp.PersistableIdle = delegate(WorkflowApplicationIdleEventArgs e)
+            wfApp.PersistableIdle = delegate (WorkflowApplicationIdleEventArgs e)
             {
                 // Instruct the runtime to persist and unload the workflow
                 return PersistableIdleAction.Unload;
             };
 
-            wfApp.Unloaded = delegate(WorkflowApplicationEventArgs e)
+            wfApp.Unloaded = delegate (WorkflowApplicationEventArgs e)
             {
                 Console.WriteLine("Workflow {0} Unloaded.", e.InstanceId);
             };
 
-            wfApp.OnUnhandledException = delegate(WorkflowApplicationUnhandledExceptionEventArgs e)
+            wfApp.OnUnhandledException = delegate (WorkflowApplicationUnhandledExceptionEventArgs e)
             {
                 // Display the unhandled exception.
                 Console.WriteLine("OnUnhandledException in Workflow {0}\n{1}",
@@ -1002,7 +1000,7 @@ namespace WorkflowApplicationExample
             WorkflowApplication wfApp = new WorkflowApplication(wf);
 
             // Subscribe to any desired workflow lifecycle events.
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
@@ -1063,7 +1061,7 @@ namespace WorkflowApplicationExample
             WorkflowApplication wfApp = new WorkflowApplication(wf);
 
             // Subscribe to any desired workflow lifecycle events.
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
@@ -1125,7 +1123,7 @@ namespace WorkflowApplicationExample
             WorkflowApplication wfApp = new WorkflowApplication(wf);
 
             // Subscribe to any desired workflow lifecycle events.
-            wfApp.OnUnhandledException = delegate(WorkflowApplicationUnhandledExceptionEventArgs e)
+            wfApp.OnUnhandledException = delegate (WorkflowApplicationUnhandledExceptionEventArgs e)
             {
                 // Display the unhandled exception.
                 Console.WriteLine("OnUnhandledException in Workflow {0}\n{1}",
@@ -1135,7 +1133,7 @@ namespace WorkflowApplicationExample
                 return UnhandledExceptionAction.Cancel;
             };
 
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
@@ -1203,7 +1201,7 @@ namespace WorkflowApplicationExample
             // Create a WorkflowApplication instance.
             WorkflowApplication wfApp = new WorkflowApplication(wf);
 
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
@@ -1288,7 +1286,7 @@ namespace WorkflowApplicationExample
             // Create a WorkflowApplication instance.
             WorkflowApplication wfApp = new WorkflowApplication(wf);
 
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
@@ -1362,7 +1360,7 @@ namespace WorkflowApplicationExample
             // Create a WorkflowApplication instance.
             WorkflowApplication wfApp = new WorkflowApplication(wf);
 
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
@@ -1422,7 +1420,7 @@ namespace WorkflowApplicationExample
             WorkflowApplication wfApp = new WorkflowApplication(wf);
 
             // Subscribe to any desired workflow lifecycle events.
-            wfApp.OnUnhandledException = delegate(WorkflowApplicationUnhandledExceptionEventArgs e)
+            wfApp.OnUnhandledException = delegate (WorkflowApplicationUnhandledExceptionEventArgs e)
             {
                 // Display the unhandled exception.
                 Console.WriteLine("OnUnhandledException in Workflow {0}\n{1}",
@@ -1432,7 +1430,7 @@ namespace WorkflowApplicationExample
                 return UnhandledExceptionAction.Cancel;
             };
 
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
@@ -1486,7 +1484,7 @@ namespace WorkflowApplicationExample
             StringBuilder sb = new StringBuilder();
             StringWriter tw = new StringWriter(sb);
             XamlWriter xw = ActivityXamlServices.CreateBuilderWriter(new XamlXmlWriter(tw, new XamlSchemaContext()));
-            XamlServices.Save(xw , ab);
+            XamlServices.Save(xw, ab);
             string serializedAB = sb.ToString();
 
             // Display the XAML to the console.
@@ -1770,7 +1768,7 @@ namespace WorkflowApplicationExample
         static void snippet63()
         {
             //<snippet63>
-            Dictionary<string, object> inputs = new Dictionary<string, object> {{ "Value", 5}};
+            Dictionary<string, object> inputs = new Dictionary<string, object> { { "Value", 5 } };
             int result = WorkflowInvoker.Invoke(new Square(), inputs);
             Console.WriteLine("Result: {0}", result);
             //</snippet63>
@@ -2010,7 +2008,7 @@ namespace WorkflowApplicationExample
             // Workflow lifecycle events omitted except idle.
             AutoResetEvent idleEvent = new AutoResetEvent(false);
 
-            wfApp.Idle = delegate(WorkflowApplicationIdleEventArgs e)
+            wfApp.Idle = delegate (WorkflowApplicationIdleEventArgs e)
             {
                 // You can also inspect the bookmarks from the Idle handler
                 // using e.Bookmarks
@@ -2064,7 +2062,7 @@ namespace WorkflowApplicationExample
             WorkflowApplication wfApp = new WorkflowApplication(wf);
 
             // Subscribe to any desired workflow lifecycle events.
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
@@ -2087,7 +2085,7 @@ namespace WorkflowApplicationExample
                 }
             };
 
-            wfApp.Unloaded = delegate(WorkflowApplicationEventArgs e)
+            wfApp.Unloaded = delegate (WorkflowApplicationEventArgs e)
             {
                 Console.WriteLine("Workflow {0} unloaded.", e.InstanceId);
             };
@@ -2128,7 +2126,7 @@ namespace WorkflowApplicationExample
             WorkflowApplication wfApp = new WorkflowApplication(wf);
 
             // Subscribe to any desired workflow lifecycle events.
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
@@ -2151,7 +2149,7 @@ namespace WorkflowApplicationExample
                 }
             };
 
-            wfApp.Unloaded = delegate(WorkflowApplicationEventArgs e)
+            wfApp.Unloaded = delegate (WorkflowApplicationEventArgs e)
             {
                 Console.WriteLine("Workflow {0} unloaded.", e.InstanceId);
             };
@@ -2193,7 +2191,7 @@ namespace WorkflowApplicationExample
             WorkflowApplication wfApp = new WorkflowApplication(wf);
 
             // Subscribe to any desired workflow lifecycle events.
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
@@ -2216,7 +2214,7 @@ namespace WorkflowApplicationExample
                 }
             };
 
-            wfApp.Unloaded = delegate(WorkflowApplicationEventArgs e)
+            wfApp.Unloaded = delegate (WorkflowApplicationEventArgs e)
             {
                 Console.WriteLine("Workflow {0} unloaded.", e.InstanceId);
             };
@@ -2257,7 +2255,7 @@ namespace WorkflowApplicationExample
             WorkflowApplication wfApp = new WorkflowApplication(wf);
 
             // Subscribe to any desired workflow lifecycle events.
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
@@ -2280,7 +2278,7 @@ namespace WorkflowApplicationExample
                 }
             };
 
-            wfApp.Unloaded = delegate(WorkflowApplicationEventArgs e)
+            wfApp.Unloaded = delegate (WorkflowApplicationEventArgs e)
             {
                 Console.WriteLine("Workflow {0} unloaded.", e.InstanceId);
             };
@@ -2341,7 +2339,7 @@ namespace WorkflowApplicationExample
             WorkflowApplication wfApp = new WorkflowApplication(new DiceRoll());
 
             // Subscribe to any desired workflow lifecycle events.
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
@@ -2365,7 +2363,7 @@ namespace WorkflowApplicationExample
                 }
             };
 
-           // Run the workflow.
+            // Run the workflow.
             wfApp.Run();
             //</snippet21>
         }
@@ -2405,7 +2403,7 @@ namespace WorkflowApplicationExample
             // Workflow lifecycle events omitted except idle.
             AutoResetEvent idleEvent = new AutoResetEvent(false);
 
-            wfApp.Idle = delegate(WorkflowApplicationIdleEventArgs e)
+            wfApp.Idle = delegate (WorkflowApplicationIdleEventArgs e)
             {
                 idleEvent.Set();
             };
@@ -2465,7 +2463,7 @@ namespace WorkflowApplicationExample
             // Workflow lifecycle events omitted except idle.
             AutoResetEvent idleEvent = new AutoResetEvent(false);
 
-            wfApp.Idle = delegate(WorkflowApplicationIdleEventArgs e)
+            wfApp.Idle = delegate (WorkflowApplicationIdleEventArgs e)
             {
                 idleEvent.Set();
             };
@@ -2478,7 +2476,7 @@ namespace WorkflowApplicationExample
             idleEvent.WaitOne();
 
             // Gather the user's input and resume the bookmark.
-            BookmarkResumptionResult result =  wfApp.ResumeBookmark("UserName",
+            BookmarkResumptionResult result = wfApp.ResumeBookmark("UserName",
                 Console.ReadLine(), TimeSpan.FromSeconds(15));
 
             // Possible BookmarkResumptionResult values:
@@ -2520,7 +2518,7 @@ namespace WorkflowApplicationExample
             // Workflow lifecycle events omitted except idle.
             AutoResetEvent idleEvent = new AutoResetEvent(false);
 
-            wfApp.Idle = delegate(WorkflowApplicationIdleEventArgs e)
+            wfApp.Idle = delegate (WorkflowApplicationIdleEventArgs e)
             {
                 idleEvent.Set();
             };
@@ -2576,7 +2574,7 @@ namespace WorkflowApplicationExample
             // Workflow lifecycle events omitted except idle.
             AutoResetEvent idleEvent = new AutoResetEvent(false);
 
-            wfApp.Idle = delegate(WorkflowApplicationIdleEventArgs e)
+            wfApp.Idle = delegate (WorkflowApplicationIdleEventArgs e)
             {
                 idleEvent.Set();
             };
@@ -2688,8 +2686,7 @@ namespace WorkflowApplicationExample
         // InstanceStore
         static void snippet29()
         {
-            // Support
-            string connectionString = "test";
+            string connectionString = "...";
 
             //<snippet29>
             var wfparams = new Dictionary<string, object>() { { "MaxNumber", 100 } };
@@ -2719,7 +2716,7 @@ namespace WorkflowApplicationExample
             WorkflowApplication wfApp = new WorkflowApplication(wf, inputs);
 
             // Handle the desired lifecycle events.
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 syncEvent.Set();
             };
@@ -2749,7 +2746,7 @@ namespace WorkflowApplicationExample
             WorkflowApplication wfApp = new WorkflowApplication(wf);
 
             // Handle the desired lifecycle events.
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 syncEvent.Set();
             };
@@ -2790,7 +2787,7 @@ namespace WorkflowApplicationExample
 
             // Subscribe to any desired workflow lifecycle events.
             //<snippet32>
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
@@ -2813,7 +2810,7 @@ namespace WorkflowApplicationExample
                 }
             };
 
-            wfApp.Aborted = delegate(WorkflowApplicationAbortedEventArgs e)
+            wfApp.Aborted = delegate (WorkflowApplicationAbortedEventArgs e)
             {
                 // Display the exception that caused the workflow
                 // to abort.
@@ -2823,7 +2820,7 @@ namespace WorkflowApplicationExample
                     e.Reason.Message);
             };
 
-            wfApp.Idle = delegate(WorkflowApplicationIdleEventArgs e)
+            wfApp.Idle = delegate (WorkflowApplicationIdleEventArgs e)
             {
                 // Perform any processing that should occur
                 // when a workflow goes idle. If the workflow can persist,
@@ -2831,19 +2828,19 @@ namespace WorkflowApplicationExample
                 Console.WriteLine("Workflow {0} Idle.", e.InstanceId);
             };
 
-            wfApp.PersistableIdle = delegate(WorkflowApplicationIdleEventArgs e)
+            wfApp.PersistableIdle = delegate (WorkflowApplicationIdleEventArgs e)
             {
                 // Instruct the runtime to persist and unload the workflow.
                 // Choices are None, Persist, and Unload.
                 return PersistableIdleAction.Unload;
             };
 
-            wfApp.Unloaded = delegate(WorkflowApplicationEventArgs e)
+            wfApp.Unloaded = delegate (WorkflowApplicationEventArgs e)
             {
                 Console.WriteLine("Workflow {0} Unloaded.", e.InstanceId);
             };
 
-            wfApp.OnUnhandledException = delegate(WorkflowApplicationUnhandledExceptionEventArgs e)
+            wfApp.OnUnhandledException = delegate (WorkflowApplicationUnhandledExceptionEventArgs e)
             {
                 // Display the unhandled exception.
                 Console.WriteLine("OnUnhandledException in Workflow {0}\n{1}",
@@ -2878,7 +2875,7 @@ namespace WorkflowApplicationExample
             {
                 Try = new Throw()
                 {
-                    Exception = new InArgument<Exception>((env) =>new ApplicationException("An ApplicationException was thrown."))
+                    Exception = new InArgument<Exception>((env) => new ApplicationException("An ApplicationException was thrown."))
                 },
                 Catches =
                 {
@@ -2992,8 +2989,8 @@ namespace WorkflowApplicationExample
 
             if (string.IsNullOrEmpty(name))
             {
-                throw new ArgumentException("BookmarkName cannot be an Empty string.",
-                    "BookmarkName");
+                Console.WriteLine("BookmarkName cannot be an Empty string.");
+                return;
             }
 
             context.CreateBookmark(name, new BookmarkCallback(OnReadComplete));

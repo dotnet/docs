@@ -2,7 +2,7 @@
 title: Get started with Azure Table Storage using F#
 description: Store structured data in the cloud using Azure Table Storage or Azure Cosmos DB.
 author: sylvanc
-ms.date: 07/28/2022
+ms.date: 09/17/2024
 ms.custom: "devx-track-fsharp"
 ---
 # Get started with Azure Table Storage and the Azure Cosmos DB Table api using F\#
@@ -21,7 +21,7 @@ Azure Cosmos DB provides the Table API for applications that are written for Azu
 
 Applications written for Azure Table Storage can migrate to Azure Cosmos DB by using the Table API with no code changes and take advantage of premium capabilities. The Table API has client SDKs available for [.NET](https://www.nuget.org/packages/Azure.Data.Tables/), [Java](https://mvnrepository.com/artifact/com.azure/azure-data-tables), [Python](https://pypi.org/project/azure-data-tables/), and [Node.js](https://www.npmjs.com/package/@azure/data-tables).
 
-For more information, see [Introduction to Azure Cosmos DB Table API](/azure/cosmos-db/table-introduction).
+For more information, see [Introduction to Azure Cosmos DB Table API](/azure/cosmos-db/table-introduction). For ease, these tutorials use [connection strings](/azure/storage/storage-configure-connection-string) to authenticate with Azure. For optimal security, you should use Microsoft Entra ID with [managed identities](/entra/identity/managed-identities-azure-resources/).
 
 ## About this tutorial
 

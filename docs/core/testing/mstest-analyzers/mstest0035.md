@@ -30,7 +30,7 @@ This rule raises a diagnostic when `[DeploymentItem]` isn't set on test class or
 
 ## Rule description
 
-With using  `[DeploymentItem]`, without putting it on test class or test method itwill be ignored.
+By using  `[DeploymentItem]` without putting it on test class or test method, it will be ignored.
 
 ## How to fix violations
 

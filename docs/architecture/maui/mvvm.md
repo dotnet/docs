@@ -3,7 +3,7 @@ title: Model-View-ViewModel
 description: Overview of the Model-View-ViewModel pattern used by .NET MAUI
 author: michaelstonis
 no-loc: [MAUI]
-ms.date: 05/30/2024
+ms.date: 09/10/2024
 ---
 
 # Model-View-ViewModel (MVVM)
@@ -120,7 +120,7 @@ The programmatic construction and assignment of the view model within the view's
 
 ## Updating views in response to changes in the underlying view model or model
 
-All view model and model classes that are accessible to a view should implement the [<xref:System.ComponentModel.INotifyPropertyChanged> interface. Implementing this interface in a view model or model class allows the class to provide change notifications to any data-bound controls in the view when the underlying property value changes.
+All view model and model classes that are accessible to a view should implement the <xref:System.ComponentModel.INotifyPropertyChanged> interface. Implementing this interface in a view model or model class allows the class to provide change notifications to any data-bound controls in the view when the underlying property value changes.
 
 App's should be architected for the correct use of property change notification, by meeting the following requirements:
 
@@ -339,7 +339,7 @@ The advantage of using the `EventToCommandBehavior` to execute a command when an
 
 ## Invoking behaviors from a view
 
-The EventToCommandBehavior is particularly useful for attaching a command to a control that doesn't support commands. For example, the LoginView uses the `EventToCommandBehavior` to execute the `ValidateCommand` when the user changes the value of their password, as shown in the following code:
+The `EventToCommandBehavior` is particularly useful for attaching a command to a control that doesn't support commands. For example, the LoginView uses the `EventToCommandBehavior` to execute the `ValidateCommand` when the user changes the value of their password, as shown in the following code:
 
 ```xaml
 <Entry

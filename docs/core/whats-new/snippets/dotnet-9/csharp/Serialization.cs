@@ -95,7 +95,7 @@ internal class Serialization
     // <Book>
     public class Book
     {
-        public string Title { get; set; }
+        public required string Title { get; set; }
         public string? Author { get; set; }
         public int PublishYear { get; set; }
     }

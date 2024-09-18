@@ -143,6 +143,8 @@ DatabaseLoader loader = mlContext.Data.CreateDatabaseLoader<HouseData>();
 
 Define your connection string as well as the SQL command to be executed on the database and create a `DatabaseSource` instance. This sample uses a LocalDB SQL Server database with a file path. However, DatabaseLoader supports any other valid connection string for databases on-premises and in the cloud.
 
+[!INCLUDE [managed-identities](../../framework/includes/managed-identities.md)]
+
 ```csharp
 string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=<YOUR-DB-FILEPATH>;Database=<YOUR-DB-NAME>;Integrated Security=True;Connect Timeout=30";
 

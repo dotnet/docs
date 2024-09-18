@@ -120,7 +120,7 @@ The programmatic construction and assignment of the view model within the view's
 
 ## Updating views in response to changes in the underlying view model or model
 
-All view model and model classes that are accessible to a view should implement the [<xref:System.ComponentModel.INotifyPropertyChanged> interface. Implementing this interface in a view model or model class allows the class to provide change notifications to any data-bound controls in the view when the underlying property value changes.
+All view model and model classes that are accessible to a view should implement the <xref:System.ComponentModel.INotifyPropertyChanged> interface. Implementing this interface in a view model or model class allows the class to provide change notifications to any data-bound controls in the view when the underlying property value changes.
 
 App's should be architected for the correct use of property change notification, by meeting the following requirements:
 

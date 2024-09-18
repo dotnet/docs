@@ -16,7 +16,7 @@ Microsoft.Testing.Platform is a lightweight and portable alternative to [VSTest]
 
 * MSTest. In MSTest, the support of `Microsoft.Testing.Platform` is done via [MSTest runner](unit-testing-mstest-runner-intro.md).
 * NUnit. In NUnit, the support of `Microsoft.Testing.Platform` is done via [NUnit runner](unit-testing-nunit-runner-intro.md).
-* xUnit: work in progress, for more information, see [Microsoft Testing Platform for xUnit](https://github.com/xunit/visualstudio.xunit/issues/402).
+* xUnit.net: In xUnit.net, the support of `Microsoft.Testing.Platform` is done via [xUnit.net runner](https://xunit.net/docs/getting-started/v3/microsoft-testing-platform).
 * TUnit: entirely constructed on top of the `Microsoft.Testing.Platform`, for more information, see [TUnit documentation](https://thomhurst.github.io/TUnit/)
 
 ## Run and debug tests

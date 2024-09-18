@@ -9,7 +9,7 @@ using Microsoft.SemanticKernel.Memory;
 using Microsoft.SemanticKernel.Plugins.Memory;
 using StackExchange.Redis;
 
-// Supress warning about AzureAISearchMemoryStore still being in evaluation
+// Suppress warning about AzureAISearchMemoryStore still being in evaluation
 #pragma warning disable SKEXP0020
 
 // Suppress warning about MemoryStore still being in evaluation
@@ -137,7 +137,7 @@ class IdentityExamples
 
         // <vaultConfig>
         // User secrets let you provide connection strings when testing locally
-        // For more info see: https://learn.microsoft.com/en-us/aspnet/core/security/app-secrets
+        // For more info see: https://learn.microsoft.com/aspnet/core/security/app-secrets
         IConfigurationRoot config = new ConfigurationBuilder()
             .AddUserSecrets<Program>()
             .AddAzureKeyVault(new Uri("{vaultURI}"), credentials)

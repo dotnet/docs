@@ -21,9 +21,10 @@ The following table lists the support status of each version of .NET (and .NET C
 
 | ✔️ Supported | ❌ Unsupported |
 |-------------|---------------|
-| 8 (LTS)     | 5             |
-| 7 (STS)     | 3.1           |
-| 6 (LTS)     | 3.0           |
+| 8 (LTS)     | 7             |
+| 6 (LTS)     | 5             |
+|             | 3.1           |
+|             | 3.0           |
 |             | 2.2           |
 |             | 2.1           |
 |             | 2.0           |
@@ -51,8 +52,6 @@ If your distribution wasn't previously listed, and is RPM-based, you may need th
 - libicu
 - openssl-libs
 
-If the target runtime environment's OpenSSL version is 1.1 or newer, install `compat-openssl10`.
-
 ### DEB dependencies
 
 If your distribution wasn't previously listed, and is debian-based, you may need the following dependencies:
@@ -60,8 +59,8 @@ If your distribution wasn't previously listed, and is debian-based, you may need
 - libc6
 - libgcc1
 - libgssapi-krb5-2
-- libicu67
-- libssl1.1
+- libicu70
+- libssl3
 - libstdc++6
 - zlib1g
 

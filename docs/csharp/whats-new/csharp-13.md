@@ -17,6 +17,7 @@ C# 13 includes the following new features. You can try these features using the 
 - [Enable `ref struct` types to implement interfaces](#ref-struct-interfaces).
 - [Allow ref struct types](#allows-ref-struct) as arguments for type parameters in generics.
 - [Partial properties and indexers](#more-partial-members) are now allowed in `partial` types.
+- [Overload resolution priority](#overload-resolution-priority) allows library authors to designate one overload as better than others.
 
 C# 13 is supported on **.NET 9**. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
 
@@ -32,13 +33,13 @@ You can find any breaking changes introduced in C# 13 in our article on [breakin
 
 The `params` modifier isn't limited to array types. You can now use `params` with any recognized collection type, including <xref:System.Span%601?displayProperty=nameWithType>, <xref:System.ReadOnlySpan%601?displayProperty=nameWithType>, and types that implement <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> and have an `Add` method. In addition to concrete types, the interfaces <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType>, <xref:System.Collections.Generic.IReadOnlyCollection%601?displayProperty=nameWithType>, <xref:System.Collections.Generic.IReadOnlyList%601?displayProperty=nameWithType>, <xref:System.Collections.Generic.ICollection%601?displayProperty=nameWithType>, and <xref:System.Collections.Generic.IList%601?displayProperty=nameWithType> can also be used.
 
-When an interface type is used, the compiler synthesizes the storage for the arguments supplied. You can learn more in the feature specification for [`params` collections](~/_csharplang/proposals/params-collections.md).
+When an interface type is used, the compiler synthesizes the storage for the arguments supplied. You can learn more in the feature specification for [`params` collections](~/_csharplang/proposals/csharp-13.0/params-collections.md).
 
 ## New lock object
 
 The .NET 9 runtime includes a new type for thread synchronization, the <xref:System.Threading.Lock?displayProperty=fullName> type. This type provides better thread synchronization through its API. The <xref:System.Threading.Lock.EnterScope?displayProperty=nameWithType> method enters an exclusive scope. The `ref struct` returned from that supports the `Dispose()` pattern to exit the exclusive scope.
 
-The C# [`lock`](../language-reference/statements/lock.md) statement recognizes if the target of the lock is a `Lock` object. If so, it uses the updated API, rather than the traditional API using <xref:System.Threading.Monitor?displayProperty=nameWithType>. The compiler also recognizes if you convert a `Lock` object to another type and the `Monitor` based code would be generated. You can read more in the feature specification for the [new lock object](~/_csharplang/proposals/lock-object.md).
+The C# [`lock`](../language-reference/statements/lock.md) statement recognizes if the target of the lock is a `Lock` object. If so, it uses the updated API, rather than the traditional API using <xref:System.Threading.Monitor?displayProperty=nameWithType>. The compiler also recognizes if you convert a `Lock` object to another type and the `Monitor` based code would be generated. You can read more in the feature specification for the [new lock object](~/_csharplang/proposals/csharp-13.0/lock-object.md).
 
 ## New escape sequence
 
@@ -50,7 +51,7 @@ This feature makes small optimizations to overload resolution involving method g
 
 The new behavior is to prune the set of candidate methods at each scope, removing those candidate methods that aren't applicable. Typically, the removed methods are generic methods with the wrong arity, or constraints that aren't satisfied. The process continues to the next outer scope only if no candidate methods are found. This process more closely follows the general algorithm for overload resolution. If all candidate methods found at a given scope don't match, the method group doesn't have a natural type.
 
-You can read the details of the changes in the [proposal specification](~/_csharplang/proposals/method-group-natural-type-improvements.md).
+You can read the details of the changes in the [proposal specification](~/_csharplang/proposals/csharp-13.0/method-group-natural-type-improvements.md).
 
 ## Implicit index access
 
@@ -100,6 +101,12 @@ This enables types such as <xref:System.Span%601?displayProperty=nameWithType> a
 ## More partial members
 
 You can declare `partial` properties and `partial` indexers in C# 13. Partial properties and indexers generally follow the same rules as `partial` methods: you create one *declaring declaration* and one *implementing declaration*. The signatures of the two declarations must match. One restriction is that you can't use an auto-property declaration for a partial property. Properties that don't declare a body are considered the *declaring declaration*. You can learn more in the article on [partial members](../language-reference/keywords/partial-member.md).
+
+## Overload resolution priority
+
+In C# 13, the compiler recognizes the <xref:System.Runtime.CompilerServices.OverloadResolutionPriorityAttribute> to prefer one overload over another. Library authors can use this attribute to ensure that a new, better overload is preferred over an existing overload. For example, you might add a new overload that's more performant. You don't want to break existing code that uses your library, but you want users to update to the new version when they recompile. You can use [Overload resolution priority](../language-reference/attributes/general.md#overloadresolutionpriority-attribute) to inform the compiler which overload should be preferred. Overloads with the highest priority are preferred.
+
+This feature is intended for library authors to avoid ambiguity when adding new overloads. Library authors should use care with this attribute to avoid confusion.
 
 ## See also
 

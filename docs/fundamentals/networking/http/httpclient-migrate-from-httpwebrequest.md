@@ -80,8 +80,8 @@ using HttpResponseMessage responseMessage = await client.PostAsync(uri, new Stri
 | `Accept` | <xref:System.Net.Http.Headers.HttpRequestHeaders.Accept> | See: [Example: Set Request Headers](#example-set-common-request-headers). |
 | `Address` | TODO | TODO |
 | `AllowAutoRedirect` | <xref:System.Net.Http.SocketsHttpHandler.AllowAutoRedirect> | See: [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
-| `AllowReadStreamBuffering` | No direct equivalent API | See: [Example: Read Buffering](#example-read-buffering). |
-| `AllowWriteStreamBuffering` | No direct equivalent API | See: [Example: Write Buffering](#example-write-buffering). |
+| `AllowReadStreamBuffering` | No direct equivalent API | See: [Usage of Buffering Properties](#usage-of-buffering-properties). |
+| `AllowWriteStreamBuffering` | No direct equivalent API | See: [Usage of Buffering Properties](#usage-of-buffering-properties). |
 | `AuthenticationLevel` | No direct equivalent API | See: [Example: Enabling Mutual Authentication](#example-enabling-mutual-authentication). |
 | `AutomaticDecompression` | <xref:System.Net.Http.SocketsHttpHandler.AutomaticDecompression> | See: [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
 | `CachePolicy` | No direct equivalent API | See: [Example: Apply CachePolicy Headers](#example-apply-cachepolicy-headers). |

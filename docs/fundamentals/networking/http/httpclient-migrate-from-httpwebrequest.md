@@ -317,6 +317,8 @@ In the older `HttpWebRequest` API, enabling DNS Round Robin was straightforward 
 
 **New Code Using `HttpClient`**:
 
+:::code source="../snippets/httpclient/DnsRoundRobin.cs" id="DnsRoundRobinConnector":::
+
 You can find implementation of `DnsRoundRobinConnector` [here](../snippets/httpclient/DnsRoundRobin.cs).
 
 `DnsRoundRobinConnector` Usage:

@@ -3,7 +3,9 @@ using System.Diagnostics;
 using System.Net;
 using System.Net.Sockets;
 
+// <DnsRoundRobinConnector>
 public sealed class DnsRoundRobinConnector : IDisposable
+// </DnsRoundRobinConnector>
 {
     private const int DefaultDnsRefreshIntervalSeconds = 2 * 60;
     private const int MaxCleanupIntervalSeconds = 60;

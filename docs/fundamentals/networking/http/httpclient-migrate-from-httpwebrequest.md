@@ -313,70 +313,14 @@ HttpWebRequest request = (HttpWebRequest)WebRequest.Create(uri);
 using HttpWebResponse response = (HttpWebResponse)request.GetResponse();
 ```
 
+In the older `HttpWebRequest` API, enabling DNS Round Robin was straightforward due to its built-in support for this feature. However, the newer `HttpClient` API does not provide the same built-in functionality. Despite this, you can achieve similar behavior by implementing a `DnsRoundRobinConnector` that manually rotates through the IP addresses returned by DNS resolution.
+
 **New Code Using `HttpClient`**:
 
-```csharp
-ConcurrentDictionary<string, DnsCache> dnsCache = new(StringComparer.OrdinalIgnoreCase);
+You can find implementation of `DnsRoundRobinConnector` [here](../snippets/httpclient/DnsRoundRobin.cs).
 
-TimeSpan dnsRefreshTimeout = TimeSpan.FromMinutes(1);
-var handler = new SocketsHttpHandler
-{
-    ConnectCallback = async (context, cancellationToken) =>
-    {
-        string host = context.DnsEndPoint.Host;
-
-        DnsCache? cacheItem;
-        if (!dnsCache.TryGetValue(host, out cacheItem) || Environment.TickCount64 > cacheItem.CacheExpireTime)
-        {
-            dnsCache.TryRemove(host, out _);
-            cacheItem = new DnsCache(await Dns.GetHostAddressesAsync(host, cancellationToken), Environment.TickCount64 + dnsRefreshTimeout.Ticks, 0);
-            dnsCache.TryAdd(host, cacheItem);
-        }
-
-        IPAddress connectAddress;
-        // If there is only one address, we don't need to do anything special
-        if (cacheItem.Addresses.Length == 1)
-        {
-            connectAddress = cacheItem.Addresses[0];
-        }
-        else
-        {
-            int index = cacheItem.Index;
-            connectAddress = cacheItem.Addresses[index];
-            cacheItem.IncreaseIndex();
-        }
-
-        var socket = new Socket(SocketType.Stream, ProtocolType.Tcp)
-        {
-            NoDelay = true
-        };
-        try
-        {
-            await socket.ConnectAsync(connectAddress, context.DnsEndPoint.Port, cancellationToken);
-            return new NetworkStream(socket, ownsSocket: true);
-        }
-        catch
-        {
-            socket.Dispose();
-            throw;
-        }
-    }
-};
-var client = new HttpClient(handler);
-using var response = await client.GetAsync(uri);
-
-class DnsCache(IPAddress[] addresses, long cacheExpireTime, int index)
-{
-    public IPAddress[] Addresses { get; } = addresses;
-    public long CacheExpireTime { get; } = cacheExpireTime;
-    public int Index { get; private set; } = index;
-
-    public void IncreaseIndex()
-    {
-        Index = (Index + 1) % Addresses.Length;
-    }
-}
-```
+`DnsRoundRobinConnector` Usage:
+:::code source="../snippets/httpclient/Program.DnsRoundRobin.cs" id="DnsRoundRobinConnect":::
 
 ### Example: Setting SocketsHttpHandler Properties
 
@@ -672,12 +616,38 @@ TODO:
 
 ## Usage of Buffering Properties
 
-TODO:
+When migrating from HttpWebRequest to `HttpClient`, it's important to understand the differences in how these two APIs handle buffering.
 
-### Example: Read Buffering
+**Old Code Using `HttpWebRequest`**:
 
-TODO:
+In `HttpWebRequest`, you have direct control over buffering properties through the `AllowWriteStreamBuffering` and `AllowReadStreamBuffering` properties. These properties enable or disable buffering of data sent to and received from the server.
 
-### Example: Write Buffering
+```csharp
+HttpWebRequest request = (HttpWebRequest)WebRequest.Create(uri);
+request.AllowReadStreamBuffering = true; // Default is `false`.
+request.AllowWriteStreamBuffering = false; // Default is `true`.
+```
 
-TODO:
+**New Code Using `HttpClient`**:
+
+In `HttpClient`, there are no direct equivalents to the `AllowWriteStreamBuffering` and `AllowReadStreamBuffering` properties.
+
+However, you can achieve similar outcome of `disable write buffering` behavior by using the `StreamContent` class for streaming data. Here's an example:
+
+```csharp
+HttpClient client = new HttpClient();
+
+HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Post, uri);
+request.Content = new StreamContent(yourStream);
+request.Headers.TransferEncodingChunked = true;
+
+HttpResponseMessage response = await client.SendAsync(request);
+```
+
+In `HttpClient` read buffering is enabled by default. `Disabling read buffering` is much easier. Here's an example:
+
+```csharp
+HttpClient client = new HttpClient();
+
+HttpResponseMessage response = await client.GetAsync(uri, HttpCompletionOption.ResponseHeadersRead);
+```

@@ -38,7 +38,7 @@ The collection types in .NET gain the following updates for .NET 9:
 
 In high-performance code, spans are often used to avoid allocating strings unnecessarily, and lookup tables with types like <xref:System.Collections.Generic.Dictionary%602> and <xref:System.Collections.Generic.HashSet%601> are frequently used as caches. However, there has been no safe, built-in mechanism for doing lookups on these collection types with spans. With the new `allows ref struct` feature in C# 13 and new features on these collection types in .NET 9, it's now possible to perform these kinds of lookups.
 
-The following example demonstrates using [Dictionary<TKey,TValue>.GetAlternateLookup](xref:System.Collections.Generic.CollectionExtensions.GetAlternateLookup%60%603(System.Collections.Generic.Dictionary{%60%600,%60%601})).
+The following example demonstrates using [Dictionary<TKey,TValue>.GetAlternateLookup](xref:System.Collections.Generic.Dictionary`2.GetAlternateLookup``1).
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Collections.cs" id="AlternateLookup":::
 
@@ -671,7 +671,7 @@ public static bool ListContainsItem(ReadOnlySpan<char> span, string item)
 
 ## System.Formats
 
-The position or offset of the data in the enclosing stream for a <xref:System.Formats.Tar.TarEntry> object is now a public property. `TarEntry.DataOffset` <!--<xref:System.Formats.Tar.TarEntry.DataOffset?displayProperty=nameWithType>--> returns the position in the entry's archive stream where the entry's first data byte is located. The entry's data is encapsulated in a substream that you can access via <xref:System.Formats.Tar.TarEntry.DataStream?displayProperty=nameWithType>, which hides the real position of the data relative to the archive stream. That's enough for most users, but if you need more flexibility and want to know the real starting position of the data in the archive stream, the new `TarEntry.DataOffset` <!--<xref:System.Formats.Tar.TarEntry.DataOffset?displayProperty=nameWithType>--> API makes it easy to support features like concurrent access with very large TAR files.
+The position or offset of the data in the enclosing stream for a <xref:System.Formats.Tar.TarEntry> object is now a public property. <xref:System.Formats.Tar.TarEntry.DataOffset?displayProperty=nameWithType> returns the position in the entry's archive stream where the entry's first data byte is located. The entry's data is encapsulated in a substream that you can access via <xref:System.Formats.Tar.TarEntry.DataStream?displayProperty=nameWithType>, which hides the real position of the data relative to the archive stream. That's enough for most users, but if you need more flexibility and want to know the real starting position of the data in the archive stream, the new <xref:System.Formats.Tar.TarEntry.DataOffset?displayProperty=nameWithType> API makes it easy to support features like concurrent access with very large TAR files.
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/TarEntry.cs" id="DataOffset":::
 
@@ -691,7 +691,7 @@ The position or offset of the data in the enclosing stream for a <xref:System.Fo
 
 ### ZLib and Brotli compression options
 
-`ZLibCompressionOptions` <!--<xref:System.IO.Compression.ZLibCompressionOptions>--> and `BrotliCompressionOptions` <!--<xref:System.IO.Compression.BrotliCompressionOptions>--> are new types for setting algorithm-specific compression [level](xref:System.IO.Compression.CompressionLevel) and strategy (`Default`, `Filtered`, `HuffmanOnly`, `RunLengthEncoding`, or `Fixed`). These types are aimed at users who want more fine-tuned settings than the only existing option, <System.IO.Compression.CompressionLevel>.
+<xref:System.IO.Compression.ZLibCompressionOptions> and <xref:System.IO.Compression.BrotliCompressionOptions> are new types for setting algorithm-specific compression [level](xref:System.IO.Compression.CompressionLevel) and strategy (`Default`, `Filtered`, `HuffmanOnly`, `RunLengthEncoding`, or `Fixed`). These types are aimed at users who want more fine-tuned settings than the only existing option, <System.IO.Compression.CompressionLevel>.
 
 The new compression option types might be expanded in the future.
 

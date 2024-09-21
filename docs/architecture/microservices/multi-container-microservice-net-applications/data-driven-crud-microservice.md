@@ -1,7 +1,7 @@
 ---
 title: Creating a simple data-driven CRUD microservice
 description: .NET Microservices Architecture for Containerized .NET Applications | Understand the creation of a simple CRUD (data-driven) microservice within the context of a microservices application.
-ms.date: 03/04/2024
+ms.date: 09/10/2024
 ---
 
 # Creating a simple data-driven CRUD microservice
@@ -211,6 +211,8 @@ builder.Services.AddDbContext<CatalogContext>(options =>
 });
 ```
 
+[!INCLUDE [managed-identities](../../../framework/includes/managed-identities.md)]
+
 ### Additional resources
 
 - **Querying Data** \
@@ -254,9 +256,11 @@ catalog-api:
     - "5101:80"
 ```
 
+[!INCLUDE [managed-identities](../../../framework/includes/managed-identities.md)]
+
 The docker-compose.yml files at the solution level are not only more flexible than configuration files at the project or microservice level, but also more secure if you override the environment variables declared at the docker-compose files with values set from your deployment tools, like from Azure DevOps Services Docker deployment tasks.
 
-Finally, you can get that value from your code by using `builder.Configuration\["ConnectionString"\]`, as shown in an earlier code example.
+Finally, you can get that value from your code by using `builder.Configuration["ConnectionString"]`, as shown in an earlier code example.
 
 However, for production environments, you might want to explore additional ways on how to store secrets like the connection strings. An excellent way to manage application secrets is using [Azure Key Vault](https://azure.microsoft.com/services/key-vault/).
 
@@ -275,9 +279,7 @@ As business requirements change, new collections of resources may be added, the 
 Versioning enables a Web API to indicate the features and resources that it exposes. A client application can then submit requests to a specific version of a feature or resource. There are several approaches to implement versioning:
 
 - URI versioning
-
 - Query string versioning
-
 - Header versioning
 
 Query string and URI versioning are the simplest to implement. Header versioning is a good approach. However, header versioning is not as explicit and straightforward as URI versioning. Because URL versioning is the simplest and most explicit, the eShopOnContainers sample application uses URI versioning.

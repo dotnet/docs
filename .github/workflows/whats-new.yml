@@ -23,7 +23,7 @@ jobs:
 
     steps:
       - name: Harden Runner
-        uses: step-security/harden-runner@5c7944e73c4c2a096b17a9cb74d65b6c2bbafbde # v2.9.1
+        uses: step-security/harden-runner@91182cccc01eb5e619899d80e4e971d6181294a7 # v2.10.1
         with:
           egress-policy: audit
 
@@ -52,7 +52,7 @@ jobs:
           savedir: './docs/whats-new'
 
       - name: create-pull-request
-        uses: peter-evans/create-pull-request@4320041ed380b20e97d388d56a7fb4f9b8c20e79
+        uses: peter-evans/create-pull-request@6cd32fd93684475c31847837f87bb135d40a2b79
         with:
           branch: create-whatsnew-pull-request/patch
           title: "What's new article"

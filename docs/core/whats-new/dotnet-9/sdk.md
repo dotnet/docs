@@ -2,12 +2,13 @@
 title: What's new in the SDK for .NET 9
 description: Learn about the new .NET SDK features introduced in .NET 9, including for unit testing, terminal logger, tool roll-forward, and build script analyzers.
 titleSuffix: ""
-ms.date: 08/15/2024
+ms.date: 09/09/2024
 ms.topic: whats-new
 ---
+
 # What's new in the SDK for .NET 9
 
-This article describes new features in the .NET SDK for .NET 9. It's been updated for .NET 9 Preview 7.
+This article describes new features in the .NET SDK for .NET 9. It's been updated for .NET RC 1.
 
 ## Unit testing
 
@@ -19,15 +20,15 @@ In .NET 9, `dotnet test` is more fully integrated with MSBuild. Because MSBuild 
 
 ### Terminal logger test display
 
-Test result reporting for [`dotnet test`](../../tools/dotnet-test.md) is now supported directly in the MSBuild terminal logger. You get more fully featured test reporting both *while* tests are running (displays the running test name) and *after* tests are completed (any test errors are rendered in a better way).
+Test result reporting for [`dotnet test`](../../tools/dotnet-test.md) is now supported directly in the MSBuild terminal logger. You get more fully featured test reporting both _while_ tests are running (displays the running test name) and _after_ tests are completed (any test errors are rendered in a better way).
 
 For more information about the terminal logger, see [dotnet build options](../../tools/dotnet-build.md#options).
 
 ## .NET tool roll-forward
 
-[.NET tools](../../tools/global-tools.md) are framework-dependent apps that you can install globally or locally, then run using the .NET SDK and installed .NET runtimes. These tools, like all .NET apps, target a specific major version of .NET. By default, apps don't run on *newer* versions of .NET. Tool authors have been able to opt in to running their tools on newer versions of the .NET runtime by setting the `RollForward` MSBuild property. However, not all tools do so.
+[.NET tools](../../tools/global-tools.md) are framework-dependent apps that you can install globally or locally, then run using the .NET SDK and installed .NET runtimes. These tools, like all .NET apps, target a specific major version of .NET. By default, apps don't run on _newer_ versions of .NET. Tool authors have been able to opt in to running their tools on newer versions of the .NET runtime by setting the `RollForward` MSBuild property. However, not all tools do so.
 
-A new option for [`dotnet tool install`](../../tools/dotnet-tool-install.md) lets *users* decide how .NET tools should be run. When you install a tool via `dotnet tool install`, or when you run tool via [`dotnet tool run <toolname>`](../../tools/dotnet-tool-run.md), you can specify a new flag called `--allow-roll-forward`. This option configures the tool with roll-forward mode `Major`. This mode allows the tool to run on a newer major version of .NET if the matching .NET version is not available. This feature helps early adopters use .NET tools without tool authors having to change any code.
+A new option for [`dotnet tool install`](../../tools/dotnet-tool-install.md) lets _users_ decide how .NET tools should be run. When you install a tool via `dotnet tool install`, or when you run tool via [`dotnet tool run <toolname>`](../../tools/dotnet-tool-run.md), you can specify a new flag called `--allow-roll-forward`. This option configures the tool with roll-forward mode `Major`. This mode allows the tool to run on a newer major version of .NET if the matching .NET version is not available. This feature helps early adopters use .NET tools without tool authors having to change any code.
 
 ## Terminal logger
 
@@ -77,7 +78,7 @@ Consider the following project file that emits a warning when the project is bui
 </Project>
 ```
 
-When you run `dotnet build -tl` on the .NET 8 SDK, the output is as shown following this paragraph. Each line of the multi-line warning is a separate line with a full error message prefix in the output, which is hard to read. Also, the final build summary says that there *were* warnings, but not *how many* there were. The missing information can make it hard to determine if a particular build is better or worse than previous builds.
+When you run `dotnet build -tl` on the .NET 8 SDK, the output is as shown following this paragraph. Each line of the multi-line warning is a separate line with a full error message prefix in the output, which is hard to read. Also, the final build summary says that there _were_ warnings, but not _how many_ there were. The missing information can make it hard to determine if a particular build is better or worse than previous builds.
 
 ```terminal
 $ dotnet build -tl
@@ -112,7 +113,7 @@ If you have feedback about the terminal logger, you can provide it in the [MSBui
 
 ## NuGet security audits
 
-Starting in .NET 8, `dotnet restore` [audits NuGet package references for known vulnerabilities](../../tools/dotnet-restore.md#audit-for-security-vulnerabilities). In .NET 9, the default mode has changed from auditing only *direct* package references to auditing both *direct* and *transitive* package references.
+Starting in .NET 8, `dotnet restore` [audits NuGet package references for known vulnerabilities](../../tools/dotnet-restore.md#audit-for-security-vulnerabilities). In .NET 9, the default mode has changed from auditing only _direct_ package references to auditing both _direct_ and _transitive_ package references.
 
 ## MSBuild script analyzers ("BuildChecks")
 
@@ -128,7 +129,7 @@ For more information, see the [design documentation](https://github.com/dotnet/m
 
 Many users install the .NET SDK and Visual Studio at different cadences. While this flexibility is desirable, it can lead to problems for tooling that needs to interop between the two environments. One example of this kind of tooling is Roslyn Analyzers. Analyzer authors have to code for specific versions of Roslyn, but which versions are available and which is used by a given build is sometimes unclear.
 
-This kind of version mismatch between the .NET SDK and MSBuild is referred to as a *torn SDK*. When you're in this state, you might see errors like this:
+This kind of version mismatch between the .NET SDK and MSBuild is referred to as a _torn SDK_. When you're in this state, you might see errors like this:
 
 > CSC : warning CS9057: The analyzer assembly '..\dotnet\sdk\8.0.200\Sdks\Microsoft.NET.Sdk.Razor\source-generators\Microsoft.CodeAnalysis.Razor.Compiler.SourceGenerators.dll' references version '4.9.0.0' of the compiler, which is newer than the currently running version '4.8.0.0'.
 
@@ -136,7 +137,7 @@ This kind of version mismatch between the .NET SDK and MSBuild is referred to as
 
 ## Workload sets
 
-*Workload sets* is an SDK feature intended to give users more control over the workloads they install and the cadence of change of those workloads. In previous versions, workloads were periodically updated as new versions of individual workloads were released onto any configured NuGet feeds. Now, *all* of your workloads stay at a specific, single version until you make an explicit update gesture.
+_Workload sets_ is an SDK feature intended to give users more control over the workloads they install and the cadence of change of those workloads. In previous versions, workloads were periodically updated as new versions of individual workloads were released onto any configured NuGet feeds. Now, _all_ of your workloads stay at a specific, single version until you make an explicit update gesture.
 
 You can see what mode your SDK installation is in by running `dotnet workload --info`:
 
@@ -161,6 +162,23 @@ Successfully updated workload install mode to use workload-set.
 If you need to change back for any reason, you can run the same command with `manifests` instead of `workload-set`. You can also use `dotnet workload config --update-mode` to check the current mode of operation.
 
 For more information, see [.NET SDK workload sets](../../tools/dotnet-workload-sets.md).
+
+## Workload history
+
+.NET SDK workloads are an integral part of .NET MAUI and Blazor WebAssembly. In their default configuration, you can update workloads independently as .NET tooling authors release new versions. In addition, .NET SDK installations done through Visual Studio install a parallel set of versions. Without taking care, the workload installation status of a given .NET SDK installation can drift over time, but there hasn't been a way to visualize this drift.
+
+To address this, .NET 9 adds a new `dotnet workload history` command to the .NET SDK. `dotnet workload history` prints out a table of the history of workload installations and modifications for the current .NET SDK installation. The table shows the date of the installation or modification, the command that was run, the workloads that were installed or modified, and the relevant versions for the command. This output can help you understand the drift in workload installations over time, and help you make informed decisions about which workloads versions to set your installation to. You can think of it as `git reflog` for workloads.
+
+```dotnetcli
+> dotnet workload history
+
+Id  Date                         Command       Workloads                                        Global.json Version  Workload Version
+-----------------------------------------------------------------------------------------------------------------------------------------------
+1   1/1/0001 12:00:00 AM +00:00  InitialState  android, ios, maccatalyst, maui-windows                               9.0.100-manifests.6d3c8f5d
+2   9/4/2024 8:15:33 PM -05:00   install       android, aspire, ios, maccatalyst, maui-windows                       9.0.100-rc.1.24453.3
+```
+
+In this example, the SDK was initially installed with the `android`, `ios`, `maccatalyst`, and `maui-windows` workloads. Then, the `dotnet workload install aspire --version 9.0.100-rc.1.24453.3` command was used to install the `aspire` workload and switch to [workload sets mode](../../tools/dotnet-workload-sets.md). To return to the previous state, you can use the ID from the first column in the history table, for example, `dotnet workload update --from-history 1`.
 
 ## Containers
 

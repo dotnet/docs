@@ -1,7 +1,7 @@
 ---
 title: Grain persistence
 description: Learn about persistence in .NET Orleans.
-ms.date: 07/03/2024
+ms.date: 09/10/2024
 zone_pivot_groups: orleans-version
 ---
 
@@ -207,6 +207,8 @@ var host = new HostBuilder()
     })
     .Build();
 ```
+
+[!INCLUDE [managed-identities](../../../framework/includes/managed-identities.md)]
 
 :::zone-end
 

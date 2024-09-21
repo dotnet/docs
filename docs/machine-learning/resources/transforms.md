@@ -8,9 +8,9 @@ ms.date: 09/14/2022
 
 Data transformations are used to:
 
-- prepare data for model training
-- apply an imported model in TensorFlow or ONNX format
-- post-process data after it has been passed through a model
+- Prepare data for model training.
+- Apply an imported model in TensorFlow or ONNX format.
+- Post-process data after it has been passed through a model.
 
 The transformations in this guide return classes that implement the [IEstimator](xref:Microsoft.ML.IEstimator%601) interface. Data transformations can be chained together. Each transformation both expects and produces data of specific types and formats, which are specified in the linked reference documentation.
 

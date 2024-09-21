@@ -32,9 +32,10 @@ typedef enum {
     CorHandleStrongDependent = 64,
     CorHandleStrongAsyncPinned = 128,
     CorHandleStrongSizedByref = 256,
+    CorHandleWeakWinRT = 512,
 
     CorReferenceStack = 0x80000001,
-    CorReferenceFinalizer = 0x80000002,
+    CorReferenceFinalizer = 80000002,  // Note the constant is decimal, not hexadecimal
 
     CorHandleStrongOnly = 0x1E3,
     CorHandleWeakOnly = 0xC,
@@ -54,6 +55,7 @@ typedef enum {
 |`CorHandleStrongDependent`|A handle to a dependent object from the object handle table.|
 |`CorHandleStrongAsyncPinned`|An asynchronous pinned object from the object handle table.|
 |`CorHandleStrongSizedByref`|A strong handle that keeps an approximate size of the collective closure of all objects and object roots at garbage collection time.|
+|`CorHandleWeakWinRT`|A weak handle to a RCW (Runtime Callable Wrapper). An RCW is a managed object that proxies calls to an underlying COM object.|
 |`CorReferenceStack`|A reference from the managed stack.|
 |`CorReferenceFinalizer`|A reference from the finalizer queue.|
 |CorHandleStrongOnly|Return only strong references from the handle table. This value is used by the [ICorDebugProcess5::EnumerateHandles](icordebugprocess5-enumeratehandles-method.md) method only.|

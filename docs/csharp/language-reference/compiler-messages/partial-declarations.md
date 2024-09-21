@@ -104,7 +104,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS0263**](#partial-types): *Partial declarations of type must not specify different base classes*
 - [**CS0264**](#partial-types): *Partial declarations of type must have the same type parameter names in the same order*
 - [**CS0265**](#partial-types): *Partial declarations of type have inconsistent constraints for type parameter 'type parameter'*
-- [**CS0267**](#partial-types): *The partial modifier can only appear immediately before '`class`', '`record`', '`struct`', '`interface`', or a method return type.*
+- [**CS0267**](#partial-types): *The '`partial`' modifier can only appear immediately before '`class`', '`record`', '`struct`', '`interface`', or a method or property return type.*
 - [**CS0282**](#partial-types): *There is no defined ordering between fields in multiple declarations of partial class or struct 'type'. To specify an ordering, all instance fields must be in the same declaration.*
 - [**CS0501**](#partial-methods): *'member function' must declare a body because it is not marked `abstract`, `extern`, or `partial`*
 - [**CS0750**](#partial-members): *A partial member cannot have the '`abstract`' modifier.*
@@ -152,7 +152,7 @@ The following sections explain the cause and fixes for these errors and warnings
 - [**CS0263**](#partial-types): *Partial declarations of type must not specify different base classes*
 - [**CS0264**](#partial-types): *Partial declarations of type must have the same type parameter names in the same order*
 - [**CS0265**](#partial-types): *Partial declarations of type have inconsistent constraints for type parameter 'type parameter'*
-- [**CS0267**](#partial-types): *The partial modifier can only appear immediately before '`class`', '`record`', '`struct`', '`interface`', or a method return type.*
+- [**CS0267**](#partial-types): *The '`partial`' modifier can only appear immediately before '`class`', '`record`', '`struct`', '`interface`', or a method or property return type.*
 - [**CS8863**](#partial-types): *Only a single partial type declaration may have a parameter list*
 
 Your partial type declaration can cause the compiler to emit the following warning:

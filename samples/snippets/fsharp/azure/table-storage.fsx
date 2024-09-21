@@ -12,7 +12,7 @@ open Azure.Data.Tables // Namespace for Table storage types
 // Get your connection string.
 //
 // <connectionString>
-let storageConnString = "UseDevelopmentStorage=true" // fill this in from your storage account
+let storageConnString = "..." // fill this in from your storage account
 // </connectionString>
 
 //

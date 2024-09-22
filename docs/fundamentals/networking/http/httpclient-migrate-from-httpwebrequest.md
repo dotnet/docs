@@ -78,7 +78,7 @@ using HttpResponseMessage responseMessage = await client.PostAsync(uri, new Stri
 | <xref:System.Net.HttpWebRequest> Old API | New API | Notes |
 |---------|----------------------|-------|
 | `Accept` | <xref:System.Net.Http.Headers.HttpRequestHeaders.Accept> | See: [Example: Set Request Headers](#example-set-common-request-headers). |
-| `Address` | TODO | TODO |
+| `Address` | <xref:System.Net.Http.HttpRequestMessage.RequestUri> | See: [Example: Fetch Redirected URI](#example-fetch-redirected-uri). |
 | `AllowAutoRedirect` | <xref:System.Net.Http.SocketsHttpHandler.AllowAutoRedirect> | See: [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
 | `AllowReadStreamBuffering` | No direct equivalent API | See: [Usage of Buffering Properties](#usage-of-buffering-properties). |
 | `AllowWriteStreamBuffering` | No direct equivalent API | See: [Usage of Buffering Properties](#usage-of-buffering-properties). |
@@ -108,13 +108,13 @@ using HttpResponseMessage responseMessage = await client.PostAsync(uri, new Stri
 | `KeepAlive` | No direct equivalent API | See: [Example: Set Request Headers](#example-set-custom-request-headers). |
 | `MaximumAutomaticRedirections` | <xref:System.Net.Http.SocketsHttpHandler.MaxAutomaticRedirections> | See: [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
 | `MaximumResponseHeadersLength` | <xref:System.Net.Http.SocketsHttpHandler.MaxResponseHeadersLength> | See: [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
-| `MediaType` | TODO | TODO |
+| `MediaType` | No direct equivalent API | See: [Example: Set Content Headers](#example-set-content-headers). |
 | `Method` | <xref:System.Net.Http.HttpRequestMessage.Method> | See: [Example: Usage of HttpRequestMessage properties](#example-usage-of-httprequestmessage-properties). |
 | `Pipelined` | No equivalent API | `HttpClient` doesn't support pipelining. |
 | `PreAuthenticate` | <xref:System.Net.Http.SocketsHttpHandler.PreAuthenticate> | |
-| `ProtocolVersion` | TODO | TODO |
+| `ProtocolVersion` | `HttpRequestMessage.Version` | See: [Example: Usage of HttpRequestMessage properties](#example-usage-of-httprequestmessage-properties). |
 | `Proxy` | <xref:System.Net.Http.SocketsHttpHandler.Proxy> | See: [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
-| `ReadWriteTimeout` | No direct equivalent API | See <xref:System.Net.Http.SocketsHttpHandler.ConnectCallback>. |
+| `ReadWriteTimeout` | No direct equivalent API | See: [Usage of SocketsHttpHandler and ConnectCallback](#usage-of-socketshttphandler-and-connectcallback). |
 | `Referer` | <xref:System.Net.Http.Headers.HttpRequestHeaders.Referrer> | See: [Example: Set Request Headers](#example-set-common-request-headers). |
 | `RequestUri` | <xref:System.Net.Http.HttpRequestMessage.RequestUri> | See: [Example: Usage of HttpRequestMessage properties](#example-usage-of-httprequestmessage-properties). |
 | `SendChunked` | <xref:System.Net.Http.Headers.HttpRequestHeaders.TransferEncodingChunked> | See: [Example: Set Request Headers](#example-set-common-request-headers). |
@@ -139,17 +139,17 @@ Developers should be aware that `ServicePointManager` is a static class, meaning
 | <xref:System.Net.ServicePointManager> Old API | New API | Notes |
 |---------|----------------------|-------|
 | `CheckCertificateRevocationList` | <xref:System.Net.Http.SocketsHttpHandler.SslOptions>.<xref:System.Net.Security.SslClientAuthenticationOptions.CertificateRevocationCheckMode> | See: [Example: Enabling CRL Check with SocketsHttpHandler](#example-check-certificate-revocation-list-with-socketshttphandler). |
-| `DefaultConnectionLimit` | <xref:System.Net.Http.SocketsHttpHandler.MaxConnectionsPerServer> | TODO |
+| `DefaultConnectionLimit` | <xref:System.Net.Http.SocketsHttpHandler.MaxConnectionsPerServer> | See: [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
 | `DnsRefreshTimeout` | No equivalent API | See: [Example: Enabling Dns Round Robin](#example-enabling-dns-round-robin). |
 | `EnableDnsRoundRobin` | No equivalent API | See: [Example: Enabling Dns Round Robin](#example-enabling-dns-round-robin). |
-| `EncryptionPolicy` | No equivalent API | TODO |
-| `Expect100Continue` | <xref:System.Net.Http.Headers.HttpRequestHeaders.ExpectContinue> | TODO |
-| `MaxServicePointIdleTime` | <xref:System.Net.Http.SocketsHttpHandler.PooledConnectionIdleTimeout> | TODO |
+| `EncryptionPolicy` | <xref:System.Net.Http.SocketsHttpHandler.SslOptions>.<xref:System.Net.Security.SslClientAuthenticationOptions.EncryptionPolicy> | See: [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
+| `Expect100Continue` | <xref:System.Net.Http.Headers.HttpRequestHeaders.ExpectContinue> | See: [Example: Set Request Headers](#example-set-common-request-headers). |
+| `MaxServicePointIdleTime` | <xref:System.Net.Http.SocketsHttpHandler.PooledConnectionIdleTimeout> | See: [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
 | `MaxServicePoints` | No equivalent API | `ServicePoint` is not part of `HttpClient`. |
-| `ReusePort` | No direct equivalent API | See <xref:System.Net.Http.SocketsHttpHandler.ConnectCallback>. |
-| `SecurityProtocol` | <xref:System.Net.Http.SocketsHttpHandler.SslOptions>.<xref:System.Net.Security.SslClientAuthenticationOptions.EnabledSslProtocols> | TODO |
+| `ReusePort` | No direct equivalent API | See: [Usage of SocketsHttpHandler and ConnectCallback](#usage-of-socketshttphandler-and-connectcallback). |
+| `SecurityProtocol` | <xref:System.Net.Http.SocketsHttpHandler.SslOptions>.<xref:System.Net.Security.SslClientAuthenticationOptions.EnabledSslProtocols> | See: [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
 | `ServerCertificateValidationCallback` | <xref:System.Net.Http.SocketsHttpHandler.SslOptions>.<xref:System.Net.Security.SslClientAuthenticationOptions.RemoteCertificateValidationCallback> | Both of them are <xref:System.Net.Security.RemoteCertificateValidationCallback> |
-| `UseNagleAlgorithm` | No direct equivalent API | See <xref:System.Net.Http.SocketsHttpHandler.ConnectCallback>. |
+| `UseNagleAlgorithm` | No direct equivalent API | See: [Usage of SocketsHttpHandler and ConnectCallback](#usage-of-socketshttphandler-and-connectcallback). |
 
 > ![WARNING]
 > In modern .NET, the default values for the `UseNagleAlgorithm` and `Expect100Continue` properties are set to `false`. These values were `true` by default in .NET Framework.
@@ -158,35 +158,35 @@ Developers should be aware that `ServicePointManager` is a static class, meaning
 
 | <xref:System.Net.ServicePointManager> Old API | New API | Notes |
 |---------|----------------------|-------|
-| `FindServicePoint` | No equivalent API | TODO |
-| `SetTcpKeepAlive` | No direct equivalent API | See <xref:System.Net.Http.SocketsHttpHandler.ConnectCallback>. |
+| `FindServicePoint` | No equivalent API | No workaround |
+| `SetTcpKeepAlive` | No direct equivalent API | See: [Usage of SocketsHttpHandler and ConnectCallback](#usage-of-socketshttphandler-and-connectcallback). |
 
 ### <xref:System.Net.ServicePoint> Properties Mapping
 
 | <xref:System.Net.ServicePoint> Old API | New API | Notes |
 |---------|----------------------|-------|
 | `Address` | `HttpRequestMessage.RequestUri` | This is request uri, this information can be found under `HttpRequestMessage`. |
-| `BindIPEndPointDelegate` | No direct equivalent API | See <xref:System.Net.Http.SocketsHttpHandler.ConnectCallback>. |
+| `BindIPEndPointDelegate` | No direct equivalent API | See: [Usage of SocketsHttpHandler and ConnectCallback](#usage-of-socketshttphandler-and-connectcallback). |
 | `Certificate` | No direct equivalent API | This information can be fetched from `RemoteCertificateValidationCallback`. See: [Example: Fetch Certificate](#example-fetch-certificate) |
-| `ClientCertificate` | No equivalent API | TODO |
+| `ClientCertificate` | No equivalent API | No workaround |
 | `ConnectionLeaseTimeout` | `SocketsHttpHandler.PooledConnectionLifetime` | Equivalent setting in <xref:System.Net.Http.HttpClient> |
-| `ConnectionLimit` | <xref:System.Net.Http.SocketsHttpHandler.MaxConnectionsPerServer> | TODO |
-| `ConnectionName` | No equivalent API | TODO |
-| `CurrentConnections` | No equivalent API | TODO |
-| `Expect100Continue` | <xref:System.Net.Http.Headers.HttpRequestHeaders.ExpectContinue> | TODO |
-| `IdleSince` | No equivalent API | TODO |
-| `MaxIdleTime` | <xref:System.Net.Http.SocketsHttpHandler.PooledConnectionIdleTimeout> | TODO |
-| `ProtocolVersion` | `HttpRequestMessage.Version` | We can get this from `HttpRequestMessage`. |
-| `ReceiveBufferSize` | No direct equivalent API | See <xref:System.Net.Http.SocketsHttpHandler.ConnectCallback>. |
+| `ConnectionLimit` | <xref:System.Net.Http.SocketsHttpHandler.MaxConnectionsPerServer> | See: [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
+| `ConnectionName` | No equivalent API | No workaround |
+| `CurrentConnections` | No equivalent API | No workaround |
+| `Expect100Continue` | <xref:System.Net.Http.Headers.HttpRequestHeaders.ExpectContinue> | See: [Example: Set Request Headers](#example-set-common-request-headers). |
+| `IdleSince` | No equivalent API | No workaround |
+| `MaxIdleTime` | <xref:System.Net.Http.SocketsHttpHandler.PooledConnectionIdleTimeout> | See: [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
+| `ProtocolVersion` | `HttpRequestMessage.Version` | See: [Example: Usage of HttpRequestMessage properties](#example-usage-of-httprequestmessage-properties). |
+| `ReceiveBufferSize` | No direct equivalent API | See: [Usage of SocketsHttpHandler and ConnectCallback](#usage-of-socketshttphandler-and-connectcallback). |
 | `SupportsPipelining` | No equivalent API | `HttpClient` doesn't support pipelining. |
-| `UseNagleAlgorithm` | No direct equivalent API | See <xref:System.Net.Http.SocketsHttpHandler.ConnectCallback>. |
+| `UseNagleAlgorithm` | No direct equivalent API | See: [Usage of SocketsHttpHandler and ConnectCallback](#usage-of-socketshttphandler-and-connectcallback). |
 
 ### <xref:System.Net.ServicePoint> Method Mapping
 
 | <xref:System.Net.ServicePoint> Old API | New API | Notes |
 |---------|----------------------|-------|
 | `CloseConnectionGroup` | No equivalent | No workaround |
-| `SetTcpKeepAlive` | No direct equivalent API | See <xref:System.Net.Http.SocketsHttpHandler.ConnectCallback>. |
+| `SetTcpKeepAlive` | No direct equivalent API | See: [Usage of SocketsHttpHandler and ConnectCallback](#usage-of-socketshttphandler-and-connectcallback). |
 
 ## Usage of HttpClient and HttpRequestMessage Properties
 
@@ -209,6 +209,17 @@ request.Headers.Add("Custom-Header", "value");
 request.Content = new StringContent("somestring");
 
 using var response = await client.SendAsync(request);
+var protocolVersion = response.RequestMessage.Version; // Fetch `ProtocolVersion`.
+```
+
+### Example: Fetch Redirected URI
+
+Here's an example of how to fetch redirected URI (Same as `HttpWebRequest.Address`):
+
+```csharp
+var client = new HttpClient();
+using var response = await client.GetAsync(uri);
+var redirectedUri = response.RequestMessage.RequestUri;
 ```
 
 ## Usage of SocketsHttpHandler and ConnectCallback
@@ -351,7 +362,8 @@ var handler = new SocketsHttpHandler
         {
             // Custom validation logic
             return sslPolicyErrors == SslPolicyErrors.None;
-        }
+        },
+        EncryptionPolicy = EncryptionPolicy.RequireEncryption,
     },
 };
 
@@ -521,6 +533,7 @@ var request = new HttpRequestMessage(HttpMethod.Post, uri);
 // Create the content and set the content headers
 var jsonData = "{\"key\":\"value\"}";
 var content = new StringContent(jsonData, Encoding.UTF8, "application/json");
+// This is also corresponding example to set `MediaType` in `HttpWebRequest`.
 content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
 content.Headers.ContentEncoding.Add("utf-8");
 // WARNING: This is not needed in most of the cases, because most `HttpContent` implementations will calculate this field automatically.

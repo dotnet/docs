@@ -19,7 +19,7 @@ helpviewer_keywords:
 
 This document aims to guide developers through the process of migrating from <xref:System.Net.HttpWebRequest>, <xref:System.Net.ServicePoint>, and <xref:System.Net.ServicePointManager> to <xref:System.Net.Http.HttpClient>. The migration is necessary due to the obsolescence of the older APIs and the numerous benefits offered by <xref:System.Net.Http.HttpClient>, including improved performance, better resource management, and a more modern and flexible API design. By following the steps outlined in this document, developers will be able to transition their codebases smoothly and take full advantage of the features provided by <xref:System.Net.Http.HttpClient>.
 
-> ![WARNING]
+> [!WARNING]
 > Migrating from `HttpWebRequest`, `ServicePoint`, and `ServicePointManager` to `HttpClient` is not just a "nice to have" performance improvement. It's crucial to understand that the existing `WebRequest` logic's performance is likely to degrade significantly once you move to .NET Core. This is because `WebRequest` is maintained as a minimal compatibility layer, which means it lacks many optimizations, such as connection reuse in numerous cases. Therefore, transitioning to `HttpClient` is essential to ensure your application's performance and resource management are up to modern standards.
 
 ## Migrating from <xref:System.Net.HttpWebRequest> to <xref:System.Net.Http.HttpClient>
@@ -154,7 +154,7 @@ Developers should be aware that `ServicePointManager` is a static class, meaning
 | `ServerCertificateValidationCallback` | <xref:System.Net.Http.SocketsHttpHandler.SslOptions>.<xref:System.Net.Security.SslClientAuthenticationOptions.RemoteCertificateValidationCallback> | Both of them are <xref:System.Net.Security.RemoteCertificateValidationCallback> |
 | `UseNagleAlgorithm` | No direct equivalent API | See: [Usage of SocketsHttpHandler and ConnectCallback](#usage-of-socketshttphandler-and-connectcallback). |
 
-> ![WARNING]
+> [!WARNING]
 > In modern .NET, the default values for the `UseNagleAlgorithm` and `Expect100Continue` properties are set to `false`. These values were `true` by default in .NET Framework.
 
 ### <xref:System.Net.ServicePointManager> Method Mapping

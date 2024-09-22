@@ -554,83 +554,36 @@ The `MaximumErrorResponseLength` usage allows developers to specify the maximum 
 
 There are couple of ways to do that, we'll examine `TruncatedReadStream` technique on this example:
 
-```csharp
-using System.Net;
+:::code source="../snippets/httpclient/Program.TruncatedReadStream.cs" id="TruncatedReadStream":::
 
-int maxErrorResponseLength = 1 * 1024; // 1 KB
+And usage example of `TruncatedReadStream`:
 
-var client = new HttpClient();
-using var response = await client.GetAsync(uri);
-
-if (response.Content is not null)
-{
-    var responseReadStream = response.Content.ReadAsStream();
-    // If MaxErrorResponseLength is set and the response status code is an error code, then wrap the response stream in a TruncatedReadStream
-    if (maxErrorResponseLength >= 0 && !response.IsSuccessStatusCode)
-    {
-        responseReadStream = new TruncatedReadStream(responseReadStream, maxErrorResponseLength);
-    }
-    // Read the response stream
-    Memory<byte> buffer = new byte[1024];
-    var readValue = await responseReadStream.ReadAsync(buffer);
-}
-
-internal sealed class TruncatedReadStream(Stream innerStream, long maxSize) : Stream
-{
-    private long _maxRemainingLength = maxSize;
-    public override bool CanRead => true;
-    public override bool CanSeek => false;
-    public override bool CanWrite => false;
-
-    public override long Length => throw new NotSupportedException();
-    public override long Position { get => throw new NotSupportedException(); set => throw new NotSupportedException(); }
-
-    public override void Flush() => throw new NotSupportedException();
-
-    public override int Read(byte[] buffer, int offset, int count)
-    {
-        return Read(new Span<byte>(buffer, offset, count));
-    }
-
-    public override int Read(Span<byte> buffer)
-    {
-        int readBytes = innerStream.Read(buffer.Slice(0, (int)Math.Min(buffer.Length, _maxRemainingLength)));
-        _maxRemainingLength -= readBytes;
-        return readBytes;
-    }
-
-    public override Task<int> ReadAsync(byte[] buffer, int offset, int count, CancellationToken cancellationToken)
-    {
-        return ReadAsync(new Memory<byte>(buffer, offset, count), cancellationToken).AsTask();
-    }
-
-    public override async ValueTask<int> ReadAsync(Memory<byte> buffer, CancellationToken cancellationToken = default)
-    {
-        int readBytes = await innerStream.ReadAsync(buffer.Slice(0, (int)Math.Min(buffer.Length, _maxRemainingLength)), cancellationToken)
-            .ConfigureAwait(false);
-        _maxRemainingLength -= readBytes;
-        return readBytes;
-    }
-
-    public override long Seek(long offset, SeekOrigin origin) => throw new NotSupportedException();
-    public override void SetLength(long value) => throw new NotSupportedException();
-    public override void Write(byte[] buffer, int offset, int count) => throw new NotSupportedException();
-
-    public override ValueTask DisposeAsync() => innerStream.DisposeAsync();
-
-    protected override void Dispose(bool disposing)
-    {
-        if (disposing)
-        {
-            innerStream.Dispose();
-        }
-    }
-}
-```
+:::code source="../snippets/httpclient/Program.TruncatedReadStream.cs" id="TruncatedReadStreamUsage":::
 
 ### Example: Apply CachePolicy Headers
 
-TODO:
+When migrating from `HttpWebRequest` to `HttpClient`, it's important to correctly handle cache-related headers such as `pragma` and `cache-control`. These headers control how responses are cached and retrieved, ensuring that your application behaves as expected in terms of performance and data freshness.
+
+In `HttpWebRequest`, you might have used the `CachePolicy` property to set these headers. However, in `HttpClient`, you need to manually set these headers on the request.
+
+**Old Code Using `HttpWebRequest`**:
+
+```csharp
+HttpWebRequest request = (HttpWebRequest)WebRequest.Create(uri);
+request.CachePolicy = new HttpRequestCachePolicy(HttpRequestCacheLevel.NoCacheNoStore);
+using HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+```
+
+In the older `HttpWebRequest` API, applying `CachePolicy` was straightforward due to its built-in support for this feature. However, the newer `HttpClient` API does not provide the same built-in functionality. Despite this, you can achieve similar behavior by implementing a `AddCacheControlHeaders` that manually add cache related headers.
+
+**New Code Using `HttpClient`**:
+
+:::code source="../snippets/httpclient/AddCacheControlHeaders.cs" id="CachePolicy":::
+
+You can find implementation of `AddCacheControlHeaders` [here](../snippets/httpclient/AddCacheControlHeaders.cs).
+
+`AddCacheControlHeaders` Usage:
+:::code source="../snippets/httpclient/Program.CacheControlHeaders.cs" id="CacheControlProgram":::
 
 ## Usage of Buffering Properties
 

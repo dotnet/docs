@@ -4,7 +4,7 @@ using System.Net.Sockets;
 
 static partial class Program
 {
-    const string uri = "http://example.com";
+    const string Uri = "http://example.com";
     // <DnsRoundRobinConnect>
     private static readonly DnsRoundRobinConnector s_roundRobinConnector = new(
             dnsRefreshInterval: TimeSpan.FromSeconds(10),
@@ -22,7 +22,7 @@ static partial class Program
             }
         };
         var client = new HttpClient(handler);
-        HttpResponseMessage response = await client.GetAsync(uri);
+        HttpResponseMessage response = await client.GetAsync(Uri);
     }
     // </DnsRoundRobinConnect>
 }

@@ -39,7 +39,7 @@ Stack overflow.
    <this output repeats many more times>
 ````
 
-When you see the program exit with output like this you can find the source code for the repeating method(s) and investigate the logic that causes the large number of calls.
+When you see the program exit with output like this, you can find the source code for the repeating method(s) and investigate the logic that causes the large number of calls.
 
 ## Using the debugger
 
@@ -106,7 +106,7 @@ This example creates a core dump when the StackOverflowException occurs, then lo
     Source file:  /temp/Program.cs @ 9
     ````
 
-5. Go look at the indicated method temp.Program.Main(System.String[]) and source "/temp/Program.cs @ 9" to see if you can figure out what the code is doing wrong. If it still wasn't clear you could use further debugger or [SOS](sos-debugging-extension.md) commands to inspect the process.
+5. Go look at the indicated method temp.Program.Main(System.String[]) and source "/temp/Program.cs @ 9" to see if you can figure out what the code is doing wrong. If additional information is needed, you can use further debugger or [SOS](sos-debugging-extension.md) commands to inspect the process.
 
 ### [Windows](#tab/windows)
 

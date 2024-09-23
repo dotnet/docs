@@ -1030,8 +1030,7 @@ namespace ObjectServicesConceptsCS
 
                 // Get ObjectContext from ObjectQuery.
                 ObjectContext objectContext = contactQuery.Context;
-                Console.WriteLine("Connection string {0}",
-                    objectContext.Connection.ConnectionString);
+                Console.WriteLine($"Connection string {objectContext.Connection.ConnectionString}");
             }
             //</snippetObjectQuery_Context>
         }
@@ -3256,39 +3255,9 @@ namespace ObjectServicesConceptsCS
 
         public static void TranslateReader()
         {
-            //<snippetTranslate>
-            // Initialize the connection string builder for the
-            // underlying provider.
-            SqlConnectionStringBuilder sqlBuilder =
-                new SqlConnectionStringBuilder();
-
-            sqlBuilder.DataSource = ".";
-            sqlBuilder.InitialCatalog = "School";
-            sqlBuilder.IntegratedSecurity = true;
-
-            SqlConnection con = new SqlConnection(sqlBuilder.ToString());
-            {
-                con.Open();
-                DbCommand cmd = con.CreateCommand();
-                cmd.CommandText = @"SELECT * FROM Department";
-
-                // Create a reader that contains rows of entity data.
-                using (DbDataReader rdr = cmd.ExecuteReader(CommandBehavior.SequentialAccess))
-                {
-                    using (SchoolEntities context =
-                        new SchoolEntities())
-                    {
-                        // Translate the reader to the objects of the Department type.
-                        foreach (Department d in context.Translate<Department>(rdr))
-                        {
-                            Console.WriteLine("DepartmentID: {0} ", d.DepartmentID);
-                        }
-                    }
-                }
-                con.Close();
-            }
-            //</snippetTranslate>
+            throw new NotImplementedException();
         }
+        
         public static void ExecuteStoredProc()
         {
             Console.WriteLine("Starting method 'ExecuteStoredProc'");
@@ -3557,8 +3526,7 @@ namespace ObjectServicesConceptsCS
         {
             //<snippetDDL>
 			// Initialize the connection string.
-			String connectionString = "metadata=res://*/School.csdl|res://*/School.ssdl|res://*/School.msl;provider=System.Data.SqlClient;" +
-			"provider connection string=\"Data Source=.;Initial Catalog=School;Integrated Security=True;MultipleActiveResultSets=True\"";
+			String connectionString = "...";
 
 			using (SchoolEntities context = new SchoolEntities(connectionString))
 			{

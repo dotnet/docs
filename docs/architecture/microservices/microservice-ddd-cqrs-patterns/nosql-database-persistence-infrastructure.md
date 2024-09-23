@@ -275,7 +275,7 @@ services:
       - ConnectionString=${ESHOP_AZURE_COSMOSDB:-mongodb://nosqldata}
 ```
 
-[!INCLUDE [managed-identities](../../../framework/includes/managed-identities.md)]
+[!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 
 The `ConnectionString` environment variable is resolved this way: If the `ESHOP_AZURE_COSMOSDB` global variable is defined in the `.env` file with the Azure Cosmos DB connection string, it will use it to access the Azure Cosmos DB database in the cloud. If it’s not defined, it will take the `mongodb://nosqldata` value and use the development MongoDB container.
 

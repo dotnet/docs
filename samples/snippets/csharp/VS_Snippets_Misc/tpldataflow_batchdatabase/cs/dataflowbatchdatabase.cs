@@ -295,8 +295,7 @@ namespace DataflowBatchDatabase
       {
          // Create a connection string for accessing the database.
          // The connection string refers to the temporary database location.
-         string connectionString = string.Format(@"Data Source={0}",
-            scratchDatabase);
+         string connectionString = "...";
 
          // Create a Stopwatch object to time database insert operations.
          Stopwatch stopwatch = new Stopwatch();

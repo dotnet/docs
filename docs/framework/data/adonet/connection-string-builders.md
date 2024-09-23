@@ -42,7 +42,7 @@ builder["Initial Catalog"] = "AdventureWorks;NewValue=Bad";
 Console.WriteLine(builder.ConnectionString);
 ```
 
-[!INCLUDE [managed-identities](../../includes/managed-identities.md)]
+[!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 
 The output shows that the <xref:System.Data.SqlClient.SqlConnectionStringBuilder> handled this correctly by escaping the extra value in double quotation marks instead of appending it to the connection string as a new key/value pair.
 

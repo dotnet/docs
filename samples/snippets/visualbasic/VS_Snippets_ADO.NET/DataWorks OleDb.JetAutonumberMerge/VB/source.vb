@@ -118,10 +118,6 @@ Class Class1
     End Sub
     ' </Snippet2>
     Private Shared Function GetConnectionString() As String
-        ' To avoid storing the connection string in your code,  
-        ' you can retrieve it from a configuration file.
-        ' Assumes Northwind.mdb is located in c:\Data folder.
-        Return "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" _
-           & "c:\Data\Northwind.mdb;User Id=admin;Password=;"
+        Throw New NotImplementedException()
     End Function
 End Class

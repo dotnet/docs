@@ -19,7 +19,6 @@ Namespace Microsoft.ServiceModel.Samples
     Public Class BackendService
         Implements ICalculator
 
-
         Public Function Multiply(ByVal n1 As Double, ByVal n2 As Double) As Double Implements ICalculator.Multiply
 
             Return n1 * n2
@@ -51,24 +50,6 @@ Namespace Microsoft.ServiceModel.Samples
                 host.Close()
             End Using
             ' </snippet1>
-        End Sub
-
-    End Class
-
-    Public Class MyUserNamePasswordValidator
-        Inherits UserNamePasswordValidator
-
-        Public Overloads Overrides Sub Validate(ByVal userName As String, ByVal password As String)
-
-            ' ignore the password because it is empty, we trust the facade service to authenticate the client
-            ' we just accept the username information here so that application gets access to it
-            If userName Is Nothing Then
-
-                Console.WriteLine("Invalid username")
-                Throw New SecurityTokenValidationException("Invalid username")
-
-            End If
-
         End Sub
 
     End Class

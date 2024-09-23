@@ -8,11 +8,9 @@ Imports System.Data.Odbc
 Public Class Program
     Public Shared Sub Main()
 
-        ' The connection string assumes that the Access 
+        ' The connection string assumes that the Access
         ' Northwind.mdb is located in the c:\Data folder.
-        Dim connectionString As String = _
-            "Driver={Microsoft Access Driver (*.mdb)};" _
-           & "Dbq=c:\Data\Northwind.mdb;Uid=Admin;Pwd=;"
+        Dim connectionString As String = "..."
 
         ' Provide the query string with a parameter placeholder.
         Dim queryString As String = _
@@ -32,7 +30,7 @@ Public Class Program
             Dim command As New OdbcCommand(queryString, connection)
             command.Parameters.AddWithValue("@pricePoint", paramValue)
 
-            ' Open the connection in a try/catch block. 
+            ' Open the connection in a try/catch block.
             ' Create and execute the DataReader, writing the result
             ' set to the console window.
             Try

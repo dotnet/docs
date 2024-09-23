@@ -8,11 +8,9 @@ Imports System.Data.OleDb
 Public Class Program
     Public Shared Sub Main()
 
-        ' The connection string assumes that the Access 
+        ' The connection string assumes that the Access
         ' Northwind.mdb is located in the c:\Data folder.
-        Dim connectionString As String = _
-             "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" _
-            & "c:\Data\Northwind.mdb;User Id=admin;Password=;"
+        Dim connectionString As String = "..."
 
         ' Provide the query string with a parameter placeholder.
         Dim queryString As String = _
@@ -32,7 +30,7 @@ Public Class Program
             Dim command As New OleDbCommand(queryString, connection)
             command.Parameters.AddWithValue("@pricePoint", paramValue)
 
-            ' Open the connection in a try/catch block. 
+            ' Open the connection in a try/catch block.
             ' Create and execute the DataReader, writing the result
             ' set to the console window.
             Try

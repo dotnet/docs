@@ -322,7 +322,7 @@ In general, use the following format for code samples:
 ### Comment style
 
 - Use single-line comments (`//`) for brief explanations.
-- Avoid multi-line comments (`/* */`) for longer explanations. Comments aren't localized. Instead, longer explanations are in the companion article.
+- Avoid multi-line comments (`/* */`) for longer explanations.<br/>Comments in the code samples aren't localized. That means explanations embedded in the code will not be translated. Longer, explanatory text should be placed in the companion article, so that it can be localized.
 - For describing methods, classes, fields, and all public members use [XML comments](../../language-reference/xmldoc/index.md).
 - Place the comment on a separate line, not at the end of a line of code.
 - Begin comment text with an uppercase letter.

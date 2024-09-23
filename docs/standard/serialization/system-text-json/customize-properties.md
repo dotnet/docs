@@ -249,84 +249,82 @@ The following example shows you how to use Copilot to modify existing code to cu
    
    :::code language="csharp" source="snippets/how-to-6-0/csharp/copilot-example.cs":::
 
-  `Example.cs` code does the following:
-  - Creates an instance of the `Person` class and initializes its properties with values.
-  - Serializes the `person` object to a JSON string using `JsonSerializer.Serialize`.
-  - Prints the following JSON string to the console:
-    ```json
-    {"FirstName":"John","LastName":"Doe","Age":30,"Country":"USA"}
-    ```
-
+   `Example.cs` code does the following:
+   - Creates an instance of the `Person` class and initializes its properties with values.
+   - Serializes the `person` object to a JSON string using `JsonSerializer.Serialize`.
+   - Prints the following JSON string to the console:
+     ```json
+     {"FirstName":"John","LastName":"Doe","Age":30,"Country":"USA"}
+     ```
 1. In Copilot Chat, enter the following prompt to modify the code to customize names and order of the JSON serialization output.
 
-  > `#Example.cs` modify code to use `System.Text.Json` to customize property names and order of JSON output from serialization. Set property names: FirstName to first_name, LastName to last_name. Set order to: Country, FirstName, LastName, Age. Provide customized serialization output.
+   > `#Example.cs` modify code to use `System.Text.Json` to customize property names and order of JSON output from serialization. Set property names: FirstName to first_name, LastName to last_name. Set order to: Country, FirstName, LastName, Age. Provide customized serialization output.
 
-  `#Example.cs` in the prompt provides a [file reference as context](/visualstudio/ide/copilot-chat-context#reference-a-file) to Copilot. You can customize the prompt to output a JSON string with property names and values that suit your requirements.
-  To set intent and get better answers with scoped context, you can use chat features such as [slash commands, references to files, methods, or classes, and threads](/visualstudio/ide/copilot-chat-context).
+   `#Example.cs` in the prompt provides a [file reference as context](/visualstudio/ide/copilot-chat-context#reference-a-file) to Copilot. You can customize the prompt to output a JSON string with property names and values that suit your requirements. To set intent and get better answers with scoped context, you can use chat features such as [slash commands, references to files, methods, or classes, and threads](/visualstudio/ide/copilot-chat-context).
 
-  The following output shows an example Copilot Chat response:
+   The following output shows an example Copilot Chat response:
 
-  ```output
+   ```output
+   To customize the property names and order of the JSON output using System.Text.Json, you can use the JsonPropertyName attribute to rename properties and the JsonPropertyOrder attribute to set the order. Here's how you can modify your code:
 
-  To customize the property names and order of the JSON output using System.Text.Json, you can use the JsonPropertyName attribute to rename properties and the JsonPropertyOrder attribute to set the order. Here's how you can modify your code:
+   using System.Text.Json;
+   using System.Text.Json.Serialization;
+   
+   public class Person
+   {
+       [JsonPropertyName("first_name")]
+       [JsonPropertyOrder(2)]
+       public string? FirstName { get; set; }
 
-  using System.Text.Json;
-  using System.Text.Json.Serialization;
+       [JsonPropertyName("last_name")]
+       [JsonPropertyOrder(3)]
+       public string? LastName { get; set; }
 
-  public class Person
-  {
-      [JsonPropertyName("first_name")]
-      [JsonPropertyOrder(2)]
-      public string? FirstName { get; set; }
+       [JsonPropertyOrder(4)]
+       public int Age { get; set; }
 
-      [JsonPropertyName("last_name")]
-      [JsonPropertyOrder(3)]
-      public string? LastName { get; set; }
+       [JsonPropertyOrder(1)]
+       public string? Country { get; set; }
+   }
 
-      [JsonPropertyOrder(4)]
-      public int Age { get; set; }
+   public class Program
+   {
+       public static void Main()
+       {
+           var person = new Person
+           {
+               FirstName = "John",
+               LastName = "Doe",
+               Age = 30,
+               Country = "USA"
+           };
 
-      [JsonPropertyOrder(1)]
-      public string? Country { get; set; }
-  }
+           string jsonString = JsonSerializer.Serialize(person, new JsonSerializerOptions { WriteIndented = true });
+           Console.WriteLine(jsonString);
+       }
+   }
 
-  public class Program
-  {
-      public static void Main()
-      {
-          var person = new Person
-          {
-              FirstName = "John",
-              LastName = "Doe",
-              Age = 30,
-              Country = "USA"
-          };
+   **Explanation:**
+   1.	Renaming Properties: The JsonPropertyName attribute is used to rename FirstName to first_name and LastName to last_name.
+   2.	Ordering Properties: The JsonPropertyOrder attribute is used to set the order of the properties in the JSON output. The order is set as:
+       •	Country (Order 1)
+       •	FirstName (Order 2)
+       •	LastName (Order 3)
+       •	Age (Order 4)
+   3.	Indented JSON: The JsonSerializerOptions with WriteIndented = true is used to make the JSON output more readable.
 
-          string jsonString = JsonSerializer.Serialize(person, new JsonSerializerOptions { WriteIndented = true });
-          Console.WriteLine(jsonString);
-      }
-  }
+   **Customized Serialization Output:**
+   {
+     "Country": "USA",
+     "first_name": "John",
+     "last_name": "Doe",
+     "Age": 30
+   }
 
-  **Explanation:**
-  1.	Renaming Properties: The JsonPropertyName attribute is used to rename FirstName to first_name and LastName to last_name.
-  2.	Ordering Properties: The JsonPropertyOrder attribute is used to set the order of the properties in the JSON output. The order is set as:
-      •	Country (Order 1)
-      •	FirstName (Order 2)
-      •	LastName (Order 3)
-      •	Age (Order 4)
-  3.	Indented JSON: The JsonSerializerOptions with WriteIndented = true is used to make the JSON output more readable.
-
-  **Customized Serialization Output:**
-  {
-    "Country": "USA",
-    "first_name": "John",
-    "last_name": "Doe",
-    "Age": 30
-  }
-
-  This ensures that the JSON output has the customized property names and the specified order.
-  ```
-  When Copilot returns a code block, the response includes options to copy the code, insert the code into a new file, or preview the code output.
+   This ensures that the JSON output has the customized property names and the specified order.
+   ```
+   
+When Copilot returns a code block, the response includes options to copy the code, insert the code into a new file, or preview the code output.
 
 > [!NOTE]
 > Your results might be different from what's shown in the example responses. AI models are non-deterministic, which means that they can return different responses when asked the same question. This might be due to additional learning and adaption over time, language variation, changes in context, such as your chat history, and more.

@@ -233,7 +233,7 @@ By default, properties are serialized in the order in which they're defined in t
 
 :::code language="csharp" source="snippets/how-to-6-0/csharp/PropertyOrder.cs":::
 
-## Use Github Copilot to customize property names and order 
+## Use Github Copilot to customize property names and order
 
 You can use GitHub Copilot in your IDE to generate code to customize names and order of serialized properties.
 
@@ -253,9 +253,11 @@ The following example shows you how to use Copilot to modify existing code to cu
    - Creates an instance of the `Person` class and initializes its properties with values.
    - Serializes the `person` object to a JSON string using `JsonSerializer.Serialize`.
    - Prints the following JSON string to the console:
-     ```json
+   
+   ```json
      {"FirstName":"John","LastName":"Doe","Age":30,"Country":"USA"}
-     ```
+   ```
+   
 1. In Copilot Chat, enter the following prompt to modify the code to customize names and order of the JSON serialization output.
 
    > `#Example.cs` modify code to use `System.Text.Json` to customize property names and order of JSON output from serialization. Set property names: FirstName to first_name, LastName to last_name. Set order to: Country, FirstName, LastName, Age. Provide customized serialization output.
@@ -320,10 +322,10 @@ The following example shows you how to use Copilot to modify existing code to cu
      "last_name": "Doe",
      "Age": 30
    }
-
+   
    This ensures that the JSON output has the customized property names and the specified order.
    ```
-   
+
 When Copilot returns a code block, the response includes options to copy the code, insert the code into a new file, or preview the code output.
 
 > [!NOTE]

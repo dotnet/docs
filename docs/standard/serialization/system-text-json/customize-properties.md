@@ -235,7 +235,7 @@ By default, properties are serialized in the order in which they're defined in t
 
 ## Use Github Copilot to customize property names and order 
 
-You can use GitHub Copilot in your IDE to generate code to customzie names and order of serialized properties.
+You can use GitHub Copilot in your IDE to generate code to customize names and order of serialized properties.
 
 If you're using [Visual Studio 2022 version 17.8 or later](/visualstudio/releases/2022/release-notes), you can try the AI-driven [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states) to generate code that uses `System.Text.Json` to customize property names and order in the JSON output from serializtion. Submit your question as a prompt in the Copilot chat window, as in the following example. You can also submit prompts using [inline chat](/visualstudio/ide/visual-studio-github-copilot-chat#ask-questions-in-the-inline-chat-view) in the editor window itself.
 
@@ -259,10 +259,10 @@ The following example shows you how to use Copilot to modify existing code to cu
 
 1. In Copilot Chat, enter the following prompt to modify the code to customize names and order of the JSON serialization output.
 
-  > `#Example.cs` modify code to use `System.Text.Json` to customize property names and order of JSON output from serializtion. Set property names FirstName to first_name, LastName to last_name. Set order to: Country, FirstName, LastName, Age. Provide customized serialization output.
+  > `#Example.cs` modify code to use `System.Text.Json` to customize property names and order of JSON output from serialization. Set property names: FirstName to first_name, LastName to last_name. Set order to: Country, FirstName, LastName, Age. Provide customized serialization output.
 
   `#Example.cs` in the prompt provides a [file reference as context](/visualstudio/ide/copilot-chat-context#reference-a-file) to Copilot. You can customize the prompt to output a JSON string with property names and values that suit your requirements.
-  You can use chat features, such as [slash commands, references to files, methods, or classes, and threads](/visualstudio/ide/copilot-chat-context), to set intent and get better answers with scoped context.
+  To set intent and get better answers with scoped context, you can use chat features such as [slash commands, references to files, methods, or classes, and threads](/visualstudio/ide/copilot-chat-context).
 
   The following output shows an example Copilot Chat response:
 

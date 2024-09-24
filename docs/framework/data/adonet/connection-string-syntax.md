@@ -39,7 +39,7 @@ Windows Authentication (sometimes referred to as *integrated security*) can be u
 > [!NOTE]
 > `Integrated Security=true` throws an exception when used with the `OleDb` provider.
 
-[!INCLUDE [managed-identities](../../includes/managed-identities.md)]
+[!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 
 ## SqlClient connection strings
 
@@ -61,7 +61,7 @@ The syntax for a <xref:System.Data.SqlClient.SqlConnection> connection string is
     database=AdventureWorks;server=(local)"
 ```
 
-[!INCLUDE [managed-identities](../../includes/managed-identities.md)]
+[!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 
 ### SQL Server authentication with SqlClient
 
@@ -76,7 +76,7 @@ When you connect to Azure SQL Database or to Azure SQL Data Warehouse and provid
 > [!NOTE]
 > Windows authentication takes precedence over SQL Server logins. If you specify both `Integrated Security=true` as well as a user name and password, the user name and password are ignored and Windows authentication is used.
 
-[!INCLUDE [managed-identities](../../includes/managed-identities.md)]
+[!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 
 ### Connect to a named instance of SQL Server
 
@@ -150,7 +150,7 @@ Provider=Microsoft.Jet.OLEDB.4.0;Data Source=d:\Northwind.mdb;Jet OLEDB:System D
 > [!IMPORTANT]
 > It is possible to supply connection information for an **OleDbConnection** in a Universal Data Link (UDL) file; however you should avoid doing so. UDL files are not encrypted, and expose connection string information in clear text. Because a UDL file is an external file-based resource to your application, it cannot be secured using .NET Framework. UDL files are not supported for **SqlClient**.
 
-[!INCLUDE [managed-identities](../../includes/managed-identities.md)]
+[!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 
 ### Use DataDirectory to connect to Access/Jet
 
@@ -183,7 +183,7 @@ Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\MyExcel.xls;Extended Properties=
 "Provider=MSDataShape;Data Provider=SQLOLEDB;Data Source=(local);Initial Catalog=pubs;Integrated Security=SSPI;"
 ```
 
-[!INCLUDE [managed-identities](../../includes/managed-identities.md)]
+[!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 
 ## Odbc connection strings
 
@@ -205,7 +205,7 @@ Data Source=Oracle9i;User ID=*****;Password=*****;
 
  For more information on ODBC connection string syntax, see <xref:System.Data.OracleClient.OracleConnection.ConnectionString%2A>.
 
-[!INCLUDE [managed-identities](../../includes/managed-identities.md)]
+[!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 
 ## See also
 

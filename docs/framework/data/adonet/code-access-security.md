@@ -91,7 +91,7 @@ To determine whether code is authorized to access a resource or perform an opera
 </connectionStrings>
 ```
 
-[!INCLUDE [managed-identities](../../includes/managed-identities.md)]
+[!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 
 #### KeyRestrictions syntax
 
@@ -107,7 +107,7 @@ To determine whether code is authorized to access a resource or perform an opera
 </connectionStrings>
 ```
 
-[!INCLUDE [managed-identities](../../includes/managed-identities.md)]
+[!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 
 #### KeyRestrictionBehavior with PreventUsage syntax
 
@@ -123,7 +123,7 @@ To determine whether code is authorized to access a resource or perform an opera
 </connectionStrings>
 ```
 
-[!INCLUDE [managed-identities](../../includes/managed-identities.md)]
+[!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 
 #### KeyRestrictionBehavior with AllowOnly syntax
 
@@ -147,7 +147,7 @@ To determine whether code is authorized to access a resource or perform an opera
 </connectionStrings>
 ```
 
-[!INCLUDE [managed-identities](../../includes/managed-identities.md)]
+[!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 
 ### Enable partial trust with a custom permission set
 
@@ -175,7 +175,7 @@ AllowBlankPassword="False">
 </PermissionSet>
 ```
 
-[!INCLUDE [managed-identities](../../includes/managed-identities.md)]
+[!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 
 ## Verify ADO.NET code access using security permissions
 
@@ -209,7 +209,7 @@ Connection opened, as expected.
 Failed, as expected: Request failed.
 ```
 
-[!INCLUDE [managed-identities](../../includes/managed-identities.md)]
+[!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 
 ## Interoperability with unmanaged code
 

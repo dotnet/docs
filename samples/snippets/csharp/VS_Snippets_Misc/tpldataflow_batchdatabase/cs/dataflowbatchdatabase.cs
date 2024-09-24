@@ -2,7 +2,7 @@
 // <snippet1>
 using System;
 using System.Collections.Generic;
-using System.Data.SqlServerCe;
+using System.Data.SqlClient;
 using System.Diagnostics;
 using System.IO;
 using System.Threading.Tasks.Dataflow;
@@ -28,7 +28,7 @@ namespace DataflowBatchDatabase
       // TODO: Change this value if Northwind.sdf is at a different location
       // on your computer.
       static readonly string sourceDatabase =
-         @"C:\Program Files\Microsoft SQL Server Compact Edition\v3.5\Samples\Northwind.sdf";
+         @"C:\...\Northwind.sdf";
 
       // TODO: Change this value if you require a different temporary location.
       static readonly string scratchDatabase =
@@ -73,13 +73,13 @@ namespace DataflowBatchDatabase
       // Adds new employee records to the database.
       static void InsertEmployees(Employee[] employees, string connectionString)
       {
-         using (SqlCeConnection connection =
-            new SqlCeConnection(connectionString))
+         using (SqlConnection connection =
+            new SqlConnection(connectionString))
          {
             try
             {
                // Create the SQL command.
-               SqlCeCommand command = new SqlCeCommand(
+               SqlCommand command = new SqlCommand(
                   "INSERT INTO Employees ([Last Name], [First Name])" +
                   "VALUES (@lastName, @firstName)",
                   connection);
@@ -108,10 +108,10 @@ namespace DataflowBatchDatabase
       static int GetEmployeeCount(string connectionString)
       {
          int result = 0;
-         using (SqlCeConnection sqlConnection =
-            new SqlCeConnection(connectionString))
+         using (SqlConnection sqlConnection =
+            new SqlConnection(connectionString))
          {
-            SqlCeCommand sqlCommand = new SqlCeCommand(
+            SqlCommand sqlCommand = new SqlCommand(
                "SELECT COUNT(*) FROM Employees", sqlConnection);
 
             sqlConnection.Open();
@@ -131,10 +131,10 @@ namespace DataflowBatchDatabase
       static int GetEmployeeID(string lastName, string firstName,
          string connectionString)
       {
-         using (SqlCeConnection connection =
-            new SqlCeConnection(connectionString))
+         using (SqlConnection connection =
+            new SqlConnection(connectionString))
          {
-            SqlCeCommand command = new SqlCeCommand(
+            SqlCommand command = new SqlCommand(
                string.Format(
                   "SELECT [Employee ID] FROM Employees " +
                   "WHERE [Last Name] = '{0}' AND [First Name] = '{1}'",
@@ -295,8 +295,7 @@ namespace DataflowBatchDatabase
       {
          // Create a connection string for accessing the database.
          // The connection string refers to the temporary database location.
-         string connectionString = string.Format(@"Data Source={0}",
-            scratchDatabase);
+         string connectionString = "...";
 
          // Create a Stopwatch object to time database insert operations.
          Stopwatch stopwatch = new Stopwatch();

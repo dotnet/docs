@@ -10,7 +10,7 @@ dev_langs:
 
 Embedding connection strings in your application's code can lead to security vulnerabilities and maintenance problems. Unencrypted connection strings compiled into an application's source code can be viewed using the [Ildasm.exe (IL Disassembler)](../../tools/ildasm-exe-il-disassembler.md) tool. Moreover, if the connection string ever changes, your application must be recompiled. For these reasons, we recommend storing connection strings in an application configuration file.
 
-[!INCLUDE [managed-identities](../../includes/managed-identities.md)]
+[!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 
 ## Application Configuration Files
 
@@ -163,7 +163,7 @@ Embedding connection strings in your application's code can lead to security vul
 
 You must add a reference to `System.Configuration.dll` in your project for the code to run.
 
-[!INCLUDE [managed-identities](../../includes/managed-identities.md)]
+[!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 
  [!code-csharp[DataWorks ConnectionStrings.Encrypt#1](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks ConnectionStrings.Encrypt/CS/source.cs#1)]
  [!code-vb[DataWorks ConnectionStrings.Encrypt#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks ConnectionStrings.Encrypt/VB/source.vb#1)]

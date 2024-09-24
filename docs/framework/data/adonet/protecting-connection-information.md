@@ -9,7 +9,7 @@ Protecting access to your data source is one of the most important goals when se
 
 Security vulnerabilities involving connection strings can arise based on the type of authentication used, how connection strings are persisted in memory and on disk, and the techniques used to construct them at run time.
 
-[!INCLUDE [managed-identities](../../includes/managed-identities.md)]
+[!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 
 ## Use Windows Authentication
 

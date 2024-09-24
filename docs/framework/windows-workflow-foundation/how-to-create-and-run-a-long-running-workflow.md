@@ -114,7 +114,7 @@ The steps in this section add properties and helper methods to the form class th
 
 3. Add the following member declarations to the **WorkflowHostForm** class.
 
-   [!INCLUDE [managed-identities](../includes/managed-identities.md)]
+   [!INCLUDE [managed-identities](../../includes/managed-identities.md)]
 
     ```vb
     Const connectionString = "Server=.\SQLEXPRESS;Initial Catalog=WF45GettingStartedTutorial;Integrated Security=SSPI"

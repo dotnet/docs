@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Northwind" ContextNamespace="L2S_QueryCache" Class="NorthwindDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=bswan-auth;Initial Catalog=Northwind;Integrated Security=True" SettingsObjectName="L2S_QueryCache.Properties.Settings" SettingsPropertyName="NorthwindConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" SettingsObjectName="L2S_QueryCache.Properties.Settings" SettingsPropertyName="NorthwindConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.Customers" Member="Customers">
     <Type Name="Customer">
       <Column Name="CustomerID" Type="System.String" DbType="NChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />

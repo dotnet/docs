@@ -56,4 +56,4 @@ Persistence can be enabled using an application configuration file by adding the
 </configuration>
 ```
 
-[!INCLUDE [managed-identities](../includes/managed-identities.md)]
+[!INCLUDE [managed-identities](../../includes/managed-identities.md)]

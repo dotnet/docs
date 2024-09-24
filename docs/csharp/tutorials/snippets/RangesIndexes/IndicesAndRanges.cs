@@ -21,7 +21,7 @@ class IndicesAndRanges
     internal int Syntax_LastIndex()
     {
         // <SnippetIndicesAndRanges_LastIndex>
-        Console.WriteLine($"The last word is < {words[^1]} >."); // The last worid is < tenth >. 
+        Console.WriteLine($"The last word is < {words[^1]} >."); // The last word is < tenth >. 
         // </SnippetIndicesAndRanges_LastIndex>
         return 0;
     }

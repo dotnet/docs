@@ -134,7 +134,7 @@ The `SqlWorkflowInstanceStoreBehavior`, a service behavior that allows you to co
 </serviceBehaviors>
 ```
 
-[!INCLUDE [managed-identities](../includes/managed-identities.md)]
+[!INCLUDE [managed-identities](../../includes/managed-identities.md)]
 
 If you do not set values for the `connectionString` or the `connectionStringName` property, the SQL Workflow Instance Store uses the default named connection string `DefaultSqlWorkflowInstanceStoreConnectionString`.
 

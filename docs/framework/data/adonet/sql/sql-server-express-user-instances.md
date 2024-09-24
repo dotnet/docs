@@ -54,7 +54,7 @@ In this connection string:
 > [!NOTE]
 > You can also use the <xref:System.Data.SqlClient.SqlConnectionStringBuilder.UserInstance?displayProperty=nameWithType> and <xref:System.Data.SqlClient.SqlConnectionStringBuilder.AttachDBFilename?displayProperty=nameWithType> properties to build a connection string at run time.
 
-[!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
+[!INCLUDE [managed-identities](../../../../includes/managed-identities.md)]
 
 ### Using the &#124;DataDirectory&#124; Substitution String
 

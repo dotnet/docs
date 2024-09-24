@@ -6,7 +6,7 @@ ms.date: 8/22/2024
 ---
 # Debug StackOverflow errors
 
-A <xref:System.StackOverflowException> is thrown when the execution stack overflows because it contains too many nested method calls.
+A <xref:System.StackOverflowException> is thrown when the execution stack overflows because it contains too many nested method calls. Very often this occurs because methods are calling each other [recursively](https://wikipedia.org/wiki/Recursion_(computer_science)).
 
 For example, suppose you have an app as follows:
 
@@ -39,12 +39,15 @@ Stack overflow.
    <this output repeats many more times>
 ````
 
-Often just seeing this callstack is enough to identify the problematic repeating method and locate the source code logic that is causing the recursive calls. However if the problem is still unclear you can debug further.
+When you see the program exit with output like this, you can find the source code for the repeating method(s) and investigate the logic that causes the large number of calls.
 
-> [!NOTE]
-> This article describes how to debug a stack overflow with lldb on Linux. If you are running on Windows, we suggest debugging the app with [Visual Studio](/visualstudio/debugger/what-is-debugging) or [Visual Studio Code](https://code.visualstudio.com/Docs/editor/debugging).
+## Using the debugger
 
-## Example
+Often just seeing this callstack on the console above is enough to identify the problematic code. However if the problem is still unclear you can debug further.
+
+### [Linux](#tab/linux)
+
+This example creates a core dump when the StackOverflowException occurs, then loads the dump into [lldb](https://lldb.llvm.org/) (a common Linux command-line debugger) and debugs it.
 
 1. Run the app with it configured to collect a dump on crash
 
@@ -64,7 +67,7 @@ Often just seeing this callstack is enough to identify the problematic repeating
     dotnet-sos install
     ````
 
-3. Debug the dump in lldb to see the failing stack
+3. Open the dump in lldb and use the `bt` (backtrace) command to display the stack.
 
     ````
     lldb --core /temp/coredump.6412
@@ -82,7 +85,7 @@ Often just seeing this callstack is enough to identify the problematic repeating
     ...
     ````
 
-4. The top frame `0x00007f59b40900cc` is repeated several times. Use the [SOS](sos-debugging-extension.md) `ip2md` command to figure out what method is located at the `0x00007f59b40900cc` address
+4. The top frame `0x00007f59b40900cc` is repeated several times. Use the [SOS](sos-debugging-extension.md) `ip2md` command to figure out what managed method is located at the `0x00007f59b40900cc` address
 
     ````
     (lldb) ip2md 0x00007f59b40900cc
@@ -103,7 +106,19 @@ Often just seeing this callstack is enough to identify the problematic repeating
     Source file:  /temp/Program.cs @ 9
     ````
 
-5. Go look at the indicated method temp.Program.Main(System.String[]) and source "/temp/Program.cs @ 9" to see if you can figure out what you did wrong. If it still wasn't clear you could use further debugger commands to inspect the current state of the process or add logging in that area of the code.
+5. Go look at the indicated method temp.Program.Main(System.String[]) and source "/temp/Program.cs @ 9" to see if you can figure out what the code is doing wrong. If additional information is needed, you can use further debugger or [SOS](sos-debugging-extension.md) commands to inspect the process.
+
+### [Windows](#tab/windows)
+
+Running the application under the debugger in [Visual Studio](/visualstudio/debugger/what-is-debugging) will show a StackOverflowException in the exception helper dialog and highlight the line of code responsible for making the final call that overflows the stack.
+
+[Visual Studio StackOverflowException dialog](media/visual_studio_stackoverflow_exception.png)
+
+The callstack debugger window also shows the stack.
+
+[Visual Studio StackOverflow callstack](media/visual_studio_stackoverflow_callstack.png)
+
+You can use all the normal Visual Studio debugger features to investigate each frame on the callstack, its source code, and the value of local variables.
 
 ## See Also
 

@@ -60,7 +60,7 @@ siloHostBuilder.UseAdoNetClustering(options =>
 });
 ```
 
-[!INCLUDE [managed-identities](../../../framework/includes/managed-identities.md)]
+[!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 
 Where the `ConnectionString` is set to a valid AdoNet Server connection string.
 

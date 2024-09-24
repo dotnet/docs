@@ -18,7 +18,7 @@ Primitive data properties refer to properties whose .NET types are considered to
 
 This example provides code that enables a user to deserialize primitive data properties. Given a byte array read from either the ReadWritePrimitiveDataProperties or WriteOnlyPrimitiveDataProperties column, this code will convert the binary large object (BLOB) into a <xref:System.Collections.Generic.Dictionary%602> of type `<XName, object>` where each key-value pair represents a property name and its corresponding value.
 
-[!INCLUDE [managed-identities](../includes/managed-identities.md)]
+[!INCLUDE [managed-identities](../../includes/managed-identities.md)]
 
 ```csharp
 using System;

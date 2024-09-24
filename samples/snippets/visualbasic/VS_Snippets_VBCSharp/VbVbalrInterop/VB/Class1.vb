@@ -4,15 +4,12 @@ Option Explicit On
 ' <snippet13>
 Imports System.Runtime.InteropServices
 ' </snippet13>
-Imports System.Diagnostics
-
 Imports System.Windows.Forms
 
 ' <snippet40>
-Imports INKEDLib
 
 Class Sample
-    Private s As IInkCursor
+    'Private s As IInkCursor
 
 End Class
 ' </snippet40>
@@ -66,8 +63,6 @@ Namespace DAO
         Public Value As Object
     End Class
 End Namespace
-
-
 
 Class Class27d75f0a54ab4ee1b91d43513a19b12d
     ' 27d75f0a-54ab-4ee1-b91d-43513a19b12d

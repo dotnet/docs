@@ -258,7 +258,7 @@ The following example shows you how to use Copilot to modify existing code to cu
    ```json
    {"FirstName":"John","LastName":"Doe","Age":30,"Country":"USA"}
    ```
-   
+
 1. In Copilot Chat, enter the following prompt to modify the code to customize names and order of the JSON serialization output.
 
    > `#Example.cs` modify code to use `System.Text.Json` to customize property names and order of JSON output from serialization. Set property names: FirstName to first_name, LastName to last_name. Set order to: Country, FirstName, LastName, Age. Provide customized serialization output.

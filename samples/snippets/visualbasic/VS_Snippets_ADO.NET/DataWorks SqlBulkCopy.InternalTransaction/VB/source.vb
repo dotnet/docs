@@ -23,9 +23,9 @@ Module Module1
 
             ' Add a single row that will result in duplicate key
             ' when all rows from source are bulk copied.
-            ' Note that this technique will only be successful in 
-            ' illustrating the point if a row with ProductID = 446  
-            ' exists in the AdventureWorks Production.Products table. 
+            ' Note that this technique will only be successful in
+            ' illustrating the point if a row with ProductID = 446
+            ' exists in the AdventureWorks Production.Products table.
             ' If you have made changes to the data in this table, change
             ' the SQL statement in the code to add a ProductID that
             ' does exist in your version of the Production.Products
@@ -57,9 +57,9 @@ Module Module1
              commandSourceData.ExecuteReader()
 
             ' Set up the bulk copy object.
-            ' Note that when specifying the UseInternalTransaction option, 
-            ' you cannot also specify an external transaction. Therefore, 
-            ' you must use the SqlBulkCopy construct that requires a string 
+            ' Note that when specifying the UseInternalTransaction option,
+            ' you cannot also specify an external transaction. Therefore,
+            ' you must use the SqlBulkCopy construct that requires a string
             ' for the connection, rather than an existing SqlConnection object.
             Using bulkCopy As SqlBulkCopy = New SqlBulkCopy(connectionString, _
              SqlBulkCopyOptions.UseInternalTransaction Or _
@@ -93,11 +93,7 @@ Module Module1
     End Sub
 
     Private Function GetConnectionString() As String
-        ' To avoid storing the sourceConnection string in your code, 
-        ' you can retrieve it from a configuration file. 
-        Return "Data Source=(local);" & _
-            "Integrated Security=true;" & _
-            "Initial Catalog=AdventureWorks;"
+        Throw New NotImplementedException()
     End Function
 End Module
 ' </Snippet1>

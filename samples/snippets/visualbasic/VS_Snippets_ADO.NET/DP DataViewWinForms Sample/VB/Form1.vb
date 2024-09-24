@@ -25,7 +25,7 @@ Public Class Form1
         contactDataGridView.DataSource = contactBindingSource
 
         ' Create a LinqDataView from a LINQ to DataSet query and bind it
-        ' to the Windows forms control.
+        ' to the Windows Forms control.
         Dim contactQuery = _
             From row In dataSet.Tables("Contact").AsEnumerable() _
             Where row.Field(Of String)("EmailAddress") <> Nothing _

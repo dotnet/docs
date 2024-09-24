@@ -6,8 +6,9 @@ Imports System.Data.SqlClient
 Imports System.Data.SqlTypes
 Imports System.Drawing
 Imports System.Drawing.Imaging
-Imports System.IO
+Imports System.Runtime.Versioning
 
+<SupportedOSPlatform("windows")>
 Module Module1
 
     Sub Main()
@@ -19,7 +20,7 @@ Module Module1
     End Sub
 
     ' <Snippet1>
-    Private Sub GetPhoto( _
+    Private Sub GetPhoto(
       ByVal documentID As Integer, ByVal filePath As String)
         ' Assumes GetConnectionString returns a valid connection string.
         Using connection As New SqlConnection(GetConnectionString())
@@ -27,14 +28,14 @@ Module Module1
             Dim reader As SqlDataReader
             Try
                 ' Setup the command
-                command.CommandText = _
+                command.CommandText =
                   "SELECT LargePhotoFileName, LargePhoto FROM" _
                     & " Production.ProductPhoto" _
                     & " WHERE ProductPhotoID=@ProductPhotoID"
                 command.CommandType = CommandType.Text
 
                 ' Declare the parameter
-                Dim paramID As SqlParameter = _
+                Dim paramID As SqlParameter =
                     New SqlParameter("@ProductPhotoID", SqlDbType.Int)
                 paramID.Value = documentID
                 command.Parameters.Add(paramID)
@@ -42,7 +43,7 @@ Module Module1
 
                 Dim photoName As String
 
-                reader = _
+                reader =
                  command.ExecuteReader(CommandBehavior.CloseConnection)
 
                 If reader.HasRows Then
@@ -55,12 +56,11 @@ Module Module1
                             Console.WriteLine("{0} is unavailable.", photoName)
                         Else
                             Dim bytes As SqlBytes = reader.GetSqlBytes(1)
-                            Using productImage As Bitmap = _
-                              New Bitmap(bytes.Stream)
+                            Using productImage As New Bitmap(bytes.Stream)
                                 Dim fileName As String = filePath & photoName
 
                                 ' Save in gif format.
-                                productImage.Save( _
+                                productImage.Save(
                                   fileName, ImageFormat.Gif)
                                 Console.WriteLine("Successfully created {0}.", fileName)
                             End Using
@@ -77,12 +77,7 @@ Module Module1
     ' </Snippet1>
 
     Private Function GetConnectionString() As String
-        ' To avoid storing the connectionection string in your code,  
-        ' you can retrieve it from a configuration file, using the
-        ' System.Configuration.ConfigurationSettings.AppSettings property
-        Return "Data Source=(local);Initial Catalog=AdventureWorks;" _
-          & "Integrated Security=SSPI;"
+        Throw New NotImplementedException()
     End Function
-
 
 End Module

@@ -25,13 +25,10 @@ Public Class Form1
     Private Shared Sub FillDataSet(ByVal ds As DataSet)
         Dim connectionString As String
 
-        'connectionString = "Data Source=localhost\SQLEXPRESS;Initial Catalog=AdventureWorks;" & _
-        '"Integrated Security=true;"
-        connectionString = "Data Source=localhost;Initial Catalog=AdventureWorks;" _
-                & "Integrated Security=true;"
+        connectionString = "..."
 
-        ' Create a new adapter and give it a query to fetch sales order, contact, 
-        ' address, and product information for sales in the year 2002. Point connection 
+        ' Create a new adapter and give it a query to fetch sales order, contact,
+        ' address, and product information for sales in the year 2002. Point connection
         ' information to the configuration setting "AdventureWorks".
         Dim da = New SqlDataAdapter( _
         "SELECT SalesOrderID, ContactID, OrderDate, OnlineOrderFlag, " & _
@@ -556,7 +553,7 @@ Public Class Form1
         bindingSource1.DataSource = boundView
 
         ' <SnippetQueryDataView1>
-        ' Create a table from the bound view representing a query of 
+        ' Create a table from the bound view representing a query of
         ' available products.
         Dim view As DataView = CType(bindingSource1.DataSource, DataView)
         Dim productsTable As DataTable = CType(view.Table, DataTable)

@@ -17,18 +17,18 @@ Public Class ExtraSnippets
 
         Dim wfApp As New WorkflowApplication(New Workflow1())
 
-        wfApp.Completed = _
+        wfApp.Completed =
             Sub(e As WorkflowApplicationCompletedEventArgs)
                 syncEvent.Set()
             End Sub
 
-        wfApp.Aborted = _
+        wfApp.Aborted =
             Sub(e As WorkflowApplicationAbortedEventArgs)
                 Console.WriteLine(e.Reason)
                 syncEvent.Set()
             End Sub
 
-        wfApp.OnUnhandledException = _
+        wfApp.OnUnhandledException =
             Function(e As WorkflowApplicationUnhandledExceptionEventArgs)
                 Console.WriteLine(e.UnhandledException)
                 Return UnhandledExceptionAction.Terminate
@@ -66,7 +66,7 @@ Public Class ExtraSnippets
         '        idleEvent.Set()
         '    End Sub
 
-        wfApp.PersistableIdle = _
+        wfApp.PersistableIdle =
             Function(e As WorkflowApplicationIdleEventArgs)
                 idleEvent.Set()
                 Return PersistableIdleAction.Persist

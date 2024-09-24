@@ -7,18 +7,18 @@ Imports System.Data.SqlClient
 Module Module1
 
     Sub Main()
-        Dim connectionString As String = _
+        Dim connectionString As String =
             GetConnectionString()
         ConnectToData(connectionString)
     End Sub
-    Private Sub ConnectToData( _
+    Private Sub ConnectToData(
          ByVal connectionString As String)
 
         ' <Snippet1>
-        Using connection As SqlConnection = New SqlConnection( _
+        Using connection As SqlConnection = New SqlConnection(
            connectionString)
 
-            Dim adapter As New SqlDataAdapter( _
+            Dim adapter As New SqlDataAdapter(
               "SELECT CustomerID, CompanyName FROM Customers", connection)
 
             connection.Open()

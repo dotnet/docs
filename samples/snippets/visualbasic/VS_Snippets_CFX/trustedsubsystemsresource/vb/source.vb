@@ -8,10 +8,10 @@ Imports System.ServiceModel.Channels
 Namespace Microsoft.ServiceModel.Samples
 
     ' Define a service contract.
-    <ServiceContract([Namespace]:="http://Microsoft.ServiceModel.Samples")> _
+    <ServiceContract([Namespace]:="http://Microsoft.ServiceModel.Samples")>
     Public Interface ICalculator
 
-        <OperationContract()> _
+        <OperationContract()>
         Function Multiply(ByVal n1 As Double, ByVal n2 As Double) As Double
     End Interface
 

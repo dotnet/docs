@@ -17,8 +17,8 @@ Class Sample
 End Class
 ' </snippet40>
 
-' Requires a reference to Microsoft DAO 3.6 Object Library 
-' Requires a reference to Microsoft ActiveX Data Objects 2.8 Library 
+' Requires a reference to Microsoft DAO 3.6 Object Library
+' Requires a reference to Microsoft ActiveX Data Objects 2.8 Library
 
 ' Or just use these fake things
 Namespace ADODB
@@ -278,14 +278,12 @@ Class Classb324cc1eb03c4f39aea66a6d5bfd0e37
         Inherits Form
 
         ' <snippet24>
-        ' To use this example, add a reference to the 
-        '     Microsoft ActiveX Data Objects 2.8 Library  
+        ' To use this example, add a reference to the
+        '     Microsoft ActiveX Data Objects 2.8 Library
         ' from the COM tab of the project references page.
         Dim WithEvents cn As New ADODB.Connection
         Sub ADODBConnect()
-            cn.ConnectionString =
-            "Provider=Microsoft.Jet.OLEDB.4.0;" &
-            "Data Source=C:\NWIND.MDB"
+            cn.ConnectionString = "..."
             cn.Open()
             MsgBox(cn.ConnectionString)
         End Sub
@@ -301,7 +299,7 @@ Class Classb324cc1eb03c4f39aea66a6d5bfd0e37
             ByRef adStatus As ADODB.EventStatusEnum,
             ByVal pConnection As ADODB.Connection) Handles cn.ConnectComplete
 
-            '  This is the event handler for the cn_ConnectComplete event raised 
+            '  This is the event handler for the cn_ConnectComplete event raised
             '  by the ADODB.Connection object when a database is opened.
             Dim x As Integer = 6
             Dim y As Integer = 0

@@ -15,8 +15,8 @@ Namespace ConsoleX
             ' host As WorkflowServiceHost
 
             Static Dim connectionString As String = _
-            "Server=.\\SQLEXPRESS;Initial Catalog=Persistence;Integrated Security=SSPI"
-            ' The Throw class derives from the Activity class, needed to 
+            "..."
+            ' The Throw class derives from the Activity class, needed to
             ' construct a WorkflowServiceHost.
             Dim throwError As [Throw] = New [Throw]()
 
@@ -42,16 +42,11 @@ Namespace ConsoleX
             Console.ReadLine()
         End Sub
 
-
     End Class
-
 
     <ServiceContract()> Interface ICalculator
         <OperationContract()> Function Add(ByVal a As Integer, ByVal b As Integer) As Integer
     End Interface
-
-
-
 
     Public Class Calculator
         Implements ICalculator
@@ -61,6 +56,5 @@ Namespace ConsoleX
         End Function
 
     End Class
-
 
 End Namespace

@@ -46,7 +46,7 @@ Public Class ExtraSnippets
         Dim idleEvent As New AutoResetEvent(False)
 
         '<snippet13>
-        Const connectionString As String = "Server=.\\SQLEXPRESS;Initial Catalog=Persistence;Integrated Security=SSPI"
+        Const connectionString As String = "..."
         '</snippet13>
 
         '<snippet15>

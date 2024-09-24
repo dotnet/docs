@@ -9,7 +9,7 @@ Public Class Program
     Public Shared Sub Main()
 
         Dim connectionString As String = _
-            "Data Source=ThisOracleServer;Integrated Security=yes;"
+            "..."
 
         Dim queryString As String = _
             "SELECT CUSTOMER_ID, NAME FROM DEMO.CUSTOMER"

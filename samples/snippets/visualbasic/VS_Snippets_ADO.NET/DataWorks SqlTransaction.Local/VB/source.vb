@@ -5,14 +5,6 @@ Imports System.Data
 Imports system.Data.SqlClient
 
 Module Module1
-
-    Sub Main()
-        Dim connectionString As String = _
-            "Persist Security Info=False;Integrated Security=true;database=Northwind;server=(local)"
-        LocalTrans(connectionString)
-        Console.ReadLine()
-
-    End Sub
     Private Sub LocalTrans(ByVal connectionString As String)
         ' <Snippet1>
         Using connection As New SqlConnection(connectionString)
@@ -47,8 +39,8 @@ Module Module1
                     sqlTran.Rollback()
 
                 Catch exRollback As Exception
-                    ' Throws an InvalidOperationException if the connection 
-                    ' is closed or the transaction has already been rolled 
+                    ' Throws an InvalidOperationException if the connection
+                    ' is closed or the transaction has already been rolled
                     ' back on the server.
                     Console.WriteLine(exRollback.Message)
                 End Try

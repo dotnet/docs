@@ -9,6 +9,7 @@ on:
       - ".markdownlint-cli2.jsonc"
       - ".github/workflows/markdownlint.yml"
       - ".github/workflows/markdownlint-problem-matcher.json"
+  pull_request:
 
 permissions:
   contents: read

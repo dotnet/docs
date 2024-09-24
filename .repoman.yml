@@ -1,4 +1,4 @@
-revision: 5
+revision: 6
 schema-version: 5
 owner-ms-alias: adegeo
 
@@ -10,7 +10,7 @@ config:
     ParserRegex: "^\\* (.*): (.*)$"
 
     ContentUrlRegex:
-     - "### Page URL\n\n(.*)"
+      - "### Page URL\n\n(.*)"
 
 issues:
 
@@ -121,6 +121,14 @@ projects_v2_item:
   reordered:
 
     - labels-add: [":world_map: mapQUEST"]
+
+  edited:
+
+    - check:
+        - type: query
+          value: "EventPayload.changes.field_value.field_name == 'Priority' || EventPayload.changes.field_value.field_name == 'Size'"
+      pass:
+        - labels-add: [":world_map: mapQUEST"]
 
 pull_request:
 

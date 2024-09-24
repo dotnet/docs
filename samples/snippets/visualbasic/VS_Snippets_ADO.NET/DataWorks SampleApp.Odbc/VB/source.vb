@@ -1,8 +1,6 @@
 ﻿' <Snippet1>
 Option Explicit On
 Option Strict On
-
-Imports System.Data
 Imports System.Data.Odbc
 
 Public Class Program
@@ -13,7 +11,7 @@ Public Class Program
         Dim connectionString As String = "..."
 
         ' Provide the query string with a parameter placeholder.
-        Dim queryString As String = _
+        Dim queryString As String =
             "SELECT ProductID, UnitPrice, ProductName from Products " _
             & "WHERE UnitPrice > ? " _
             & "ORDER BY UnitPrice DESC;"
@@ -35,11 +33,11 @@ Public Class Program
             ' set to the console window.
             Try
                 connection.Open()
-                Dim dataReader As OdbcDataReader = _
+                Dim dataReader As OdbcDataReader =
                  command.ExecuteReader()
                 Do While dataReader.Read()
-                    Console.WriteLine( _
-                        vbTab & "{0}" & vbTab & "{1}" & vbTab & "{2}", _
+                    Console.WriteLine(
+                        vbTab & "{0}" & vbTab & "{1}" & vbTab & "{2}",
                      dataReader(0), dataReader(1), dataReader(2))
                 Loop
                 dataReader.Close()

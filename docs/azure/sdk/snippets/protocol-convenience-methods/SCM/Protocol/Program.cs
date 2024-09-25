@@ -22,13 +22,16 @@ BinaryData input = BinaryData.FromBytes("""
     """u8.ToArray());
 using BinaryContent content = BinaryContent.Create(input);
 
+var requestOptions = new RequestOptions();
+
+requestOptions.AddHeader("CustomHeader", "CustomHeaderValue");
+requestOptions.ErrorOptions = ClientErrorBehaviors.NoThrow;
+
 // Call the protocol method
 ClientResult result = client.CompleteChat(
     content,
-    new RequestOptions
-    {
-        ErrorOptions = ClientErrorBehaviors.NoThrow,
-    });
+    requestOptions
+);
 
 PipelineResponse response = result.GetRawResponse();
 

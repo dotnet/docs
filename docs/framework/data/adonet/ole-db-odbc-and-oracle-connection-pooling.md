@@ -15,7 +15,7 @@ The .NET Framework Data Provider for OLE DB automatically pools connections usin
 Provider=SQLOLEDB;OLE DB Services=-4;Data Source=localhost;Integrated Security=SSPI;
 ```
 
-[!INCLUDE [managed-identities](../../includes/managed-identities.md)]
+[!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 
  We recommend that you always close or dispose of a connection when you're finished using it in order to return the connection to the pool. Connections that aren't explicitly closed might not get returned to the pool. For example, a connection that has gone out of scope but that has not been explicitly closed will only be returned to the connection pool if the maximum pool size is reached and the connection is still valid.
 

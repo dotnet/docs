@@ -22,7 +22,7 @@ Module Module1
               "DELETE FROM dbo.BulkCopyDemoOrderDetail;", connection)
             deleteDetail.ExecuteNonQuery()
 
-            ' Perform an initial count on the destination table 
+            ' Perform an initial count on the destination table
             ' with matching columns.
             Dim countRowHeader As New SqlCommand( _
                "SELECT COUNT(*) FROM dbo.BulkCopyDemoOrderHeader;", _
@@ -32,7 +32,7 @@ Module Module1
             Console.WriteLine("Starting row count for Header table = {0}", _
              countStartHeader)
 
-            ' Perform an initial count on the destination table 
+            ' Perform an initial count on the destination table
             ' with different column positions.
             Dim countRowDetail As New SqlCommand( _
                 "SELECT COUNT(*) FROM dbo.BulkCopyDemoOrderDetail;", _
@@ -46,7 +46,7 @@ Module Module1
             ' The Sales.SalesOrderHeader and Sales.SalesOrderDetail
             ' tables are quite large and could easily cause a timeout
             ' if all data from the tables is added to the destination.
-            ' To keep the example simple and quick, a parameter is 
+            ' To keep the example simple and quick, a parameter is
             ' used to select only orders for a particular account as
             ' the source for the bulk insert.
             Dim headerData As SqlCommand = New SqlCommand( _
@@ -150,11 +150,7 @@ Module Module1
     End Sub
 
     Private Function GetConnectionString() As String
-        ' To avoid storing the connection string in your code, 
-        ' you can retrieve it from a configuration file. 
-        Return "Data Source=(local);" & _
-            "Integrated Security=true;" & _
-            "Initial Catalog=AdventureWorks;"
+        Throw New NotImplementedException()
     End Function
 End Module
 ' </Snippet1>

@@ -193,7 +193,7 @@ class A {
 }
 ```
 
-[!INCLUDE [managed-identities](../../includes/managed-identities.md)]
+[!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 
 ### Use SQL transactions and the new asynchronous feature
 
@@ -322,7 +322,7 @@ class Program {
 }
 ```
 
-[!INCLUDE [managed-identities](../../includes/managed-identities.md)]
+[!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 
 ### Cancel an asynchronous operation
 

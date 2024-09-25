@@ -136,7 +136,7 @@ Module Module1
         items(2) = movie1
         items(3) = movie2
 
-        ' Create a table with a schema that matches that of the query results.            
+        ' Create a table with a schema that matches that of the query results.
         Dim table As DataTable = New DataTable()
         table.Columns.Add("Price", GetType(Integer))
         table.Columns.Add("Genre", GetType(String))
@@ -257,11 +257,10 @@ Module Module1
         Try
             Dim connectionString As String
 
-            connectionString = "Data Source=localhost;Initial Catalog=AdventureWorks;" & _
-            "Integrated Security=true;"
+            connectionString = "..."
 
-            ' Create a new adapter and give it a query to fetch sales order, contact, 
-            ' address, and product information for sales in the year 2002. Point connection 
+            ' Create a new adapter and give it a query to fetch sales order, contact,
+            ' address, and product information for sales in the year 2002. Point connection
             ' information to the configuration setting "AdventureWorks".
             Dim da = New SqlDataAdapter( _
             "SELECT SalesOrderID, ContactID, OrderDate, OnlineOrderFlag, " & _
@@ -408,7 +407,7 @@ Public Class ObjectShredder(Of T)
     Private _pi As PropertyInfo()
     Private _type As Type
 
-    ' Constructor 
+    ' Constructor
     Public Sub New()
         Me._type = GetType(T)
         Me._fi = Me._type.GetFields
@@ -445,11 +444,11 @@ Public Class ObjectShredder(Of T)
 
     ' Summary:           Loads a DataTable from a sequence of objects.
     ' source parameter:  The sequence of objects to load into the DataTable.</param>
-    ' table parameter:   The input table. The schema of the table must match that 
-    '                    the type T.  If the table is null, a new table is created  
-    '                    with a schema created from the public properties and fields 
+    ' table parameter:   The input table. The schema of the table must match that
+    '                    the type T.  If the table is null, a new table is created
+    '                    with a schema created from the public properties and fields
     '                    of the type T.
-    ' options parameter: Specifies how values from the source sequence will be applied to 
+    ' options parameter: Specifies how values from the source sequence will be applied to
     '                    existing rows in the table.
     ' Returns:           A DataTable created from the source sequence.
 
@@ -515,7 +514,7 @@ Public Class ObjectShredder(Of T)
     End Function
 
     Public Function ExtendTable(ByVal table As DataTable, ByVal type As Type) As DataTable
-        ' Extend the table schema if the input table was null or if the value 
+        ' Extend the table schema if the input table was null or if the value
         ' in the sequence is derived from type T.
         Dim f As FieldInfo
         Dim p As PropertyInfo

@@ -1125,7 +1125,7 @@ Dynamic update provides a mechanism for workflow application developers to updat
     const string connectionString = "Server=.\\SQLEXPRESS;Initial Catalog=WF45GettingStartedTutorial;Integrated Security=SSPI";
     ```
 
-    [!INCLUDE [managed-identities](../includes/managed-identities.md)]
+    [!INCLUDE [managed-identities](../../includes/managed-identities.md)]
 
     > [!NOTE]
     > Depending on your edition of SQL Server, the connection string server name might be different.

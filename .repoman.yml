@@ -1,5 +1,5 @@
-revision: 4
-schema-version: 1
+revision: 6
+schema-version: 5
 owner-ms-alias: adegeo
 
 config:
@@ -10,7 +10,7 @@ config:
     ParserRegex: "^\\* (.*): (.*)$"
 
     ContentUrlRegex:
-     - "### Page URL\n\n(.*)"
+      - "### Page URL\n\n(.*)"
 
 issues:
 
@@ -21,42 +21,52 @@ issues:
     # Temporary label to mark issues as updated for Quest. The label is instantly removed
     - check:
         - type: query
-          value: "length(Issue.labels[?name == ':world_map: mapQUEST']) != `0`"
+          value: "length(Issue.Labels[?Name == ':world_map: mapQUEST']) != `0`"
       pass:
         - labels-remove: [":world_map: mapQUEST"]
 
     # Handle issues with /svc /subsvc labels from label bot
-    # Manages the Not Triaged label for issues missing/having an org category issue
     - check:
         - type: query
-          value: "length(Issue.labels[?contains(name, '/svc') || contains(name, '/subsvc')]) != `0`"
+          value: "length(Issue.Labels[?contains(Name, '/svc') || contains(Name, '/subsvc')]) != `0`"
+
+      # If the issue has a /svc or /subsvc label, it must be categorized otherwise it's considered untriaged
       pass:
         - check:
           - type: query
-            value: "length(Issue.labels[?name == ':pushpin: seQUESTered' || name == ':world_map: reQUEST' || name == 'training-module' || name == 'doc-enhancement' || name == 'product-question' || name == 'in-progress' || name == 'test-issue' || name == 'kudos' || name == 'loc' || name == 'doc-bug' || name == 'product-feedback' || name == 'code-of-conduct' || name == 'support-request' || name == 'duplicate' || name == 'resolved-by-customer' || name == 'docs-experience' || name == 'doc-provided' || name == 'doc-idea' || name == 'needs-more-info']) != `0`"
-          pass:
-            - labels-remove: [":watch: Not Triaged"]
-          fail:
-            - labels-add: [":watch: Not Triaged"]
-      fail:
-        - check:
-          - type: query
-            value: "length(Issue.labels[?name == ':pushpin: seQUESTered' || name == ':world_map: reQUEST' || name == 'training-module' || name == 'video-content']) != `0`"
+            value: "length(Issue.Labels[?Name == ':pushpin: seQUESTered' || Name == ':world_map: reQUEST' || Name == 'training-module' || Name == 'doc-enhancement' || Name == 'product-question' || Name == 'in-progress' || Name == 'test-issue' || Name == 'kudos' || Name == 'loc' || Name == 'doc-bug' || Name == 'product-feedback' || Name == 'code-of-conduct' || Name == 'support-request' || Name == 'duplicate' || Name == 'resolved-by-customer' || Name == 'docs-experience' || Name == 'doc-provided' || Name == 'doc-idea' || Name == 'needs-more-info']) != `0`"
           pass:
             - labels-remove: [":watch: Not Triaged"]
           fail:
             - labels-add: [":watch: Not Triaged"]
 
+      # Not an doc issue specifically
+      fail:
+
+        # If the issue is open, then we'll allow some further processing on it. If it's closed, ignore it and let the user do what they want.
+        - check:
+          - type: query
+            value: "Issue.State.StringValue == 'open'"
+
+          pass:
+            - check:
+              - type: query
+                value: "length(Issue.Labels[?Name == ':pushpin: seQUESTered' || Name == ':world_map: reQUEST' || Name == 'training-module' || Name == 'video-content'] || Name == 'test-issue') != `0`"
+              pass:
+                - labels-remove: [":watch: Not Triaged"]
+              fail:
+                - labels-add: [":watch: Not Triaged"]
+
     # Checks for binary/source incompatible checkboxes and adds a label
     - check:
         - type: query
-          value: "contains(Issue.body, '- [x] **Binary incompatible**') == `true` || contains(Issue.body, '- [X] **Binary incompatible**') == `true`"
+          value: "contains(InstanceData.IssuePrBody, '- [x] **Binary incompatible**') == `true` || contains(InstanceData.IssuePrBody, '- [X] **Binary incompatible**') == `true`"
       pass:
         - labels-add: ["binary incompatible"]
 
     - check:
         - type: query
-          value: "contains(Issue.body, '- [x] **Source incompatible**') == `true` || contains(Issue.body, '- [X] **Source incompatible**') == `true`"
+          value: "contains(InstanceData.IssuePrBody, '- [x] **Source incompatible**') == `true` || contains(InstanceData.IssuePrBody, '- [X] **Source incompatible**') == `true`"
       pass:
         - labels-add: ["source incompatible"]
 
@@ -67,7 +77,7 @@ issues:
     # Dependabot opened issue, label it
     - check:
         - type: query
-          value: "Issue.user.login == 'dependabot'"
+          value: "Issue.User.Login == 'dependabot'"
       pass:
         - labels-add: ["dependencies"]
 
@@ -77,7 +87,16 @@ issues:
           value: "### Description[\\n\\r]+\\[Enter feedback here\\][\\n\\r]+###"
       pass:
         - labels-add: ["needs-more-info"]
+        - labels-remove: [":watch: Not Triaged"]
         - close
+
+    # Add links to related issues if it's a doc issue
+    - check:
+        - type: metadata-exists
+        - type: variable-exists
+          name: "document_version_independent_id"
+      pass:
+        - link-related-issues
 
   reopened:
 
@@ -92,9 +111,24 @@ issues:
     # Check if the issue was closed by the user who opened it
     - check:
         - type: query
-          value: "Issue.user.id == Issue.closed_by.id"
+          value: "Issue.User.Id == EventPayload.sender.id"
       pass:
         - labels-add: ["resolved-by-customer"]
+        - labels-remove: [":watch: Not Triaged"]
+
+projects_v2_item:
+
+  reordered:
+
+    - labels-add: [":world_map: mapQUEST"]
+
+  edited:
+
+    - check:
+        - type: query
+          value: "EventPayload.changes.field_value.field_name == 'Priority' || EventPayload.changes.field_value.field_name == 'Size'"
+      pass:
+        - labels-add: [":world_map: mapQUEST"]
 
 pull_request:
 
@@ -107,7 +141,7 @@ pull_request:
   
     - check:
         - type: query
-          value: "PullRequest.base.ref != 'live'"
+          value: "PullRequest.Base.Ref != 'live'"
       pass:
         - files-changed:
             # csharplang
@@ -384,7 +418,7 @@ issue_comment:
     # someone creates a comment with #please-review in it, add changes-addressed label
     - check:
         - type: query
-          value: "Issue.state == 'open' && Issue.user.id == Comment.user.id"
+          value: "Issue.State.StringValue == 'open' && Issue.User.Id == Comment.User.Id"
         - type: comment-body
           value: ^#please-review$
       pass:

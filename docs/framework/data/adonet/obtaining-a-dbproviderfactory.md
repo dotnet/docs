@@ -77,7 +77,7 @@ The process of obtaining a <xref:System.Data.Common.DbProviderFactory> involves 
 </configuration>
 ```
 
-[!INCLUDE [managed-identities](../../includes/managed-identities.md)]
+[!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 
 ### Retrieve a Connection String by Provider Name
 

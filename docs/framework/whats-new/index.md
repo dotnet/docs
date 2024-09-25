@@ -711,7 +711,7 @@ ASP.NET processes requests in a predefined pipeline that includes 23 events. ASP
 
 In .NET Framework 4.7 and earlier versions, ASP.NET allowed developers to store user credentials with hashed passwords in configuration files using either MD5 or SHA1. Starting with .NET Framework 4.7.1, ASP.NET also supports new secure SHA-2 hash options such as SHA256, SHA384, and SHA512. SHA1 remains the default, and a non-default hash algorithm can be defined in the web configuration file.
 
-[!INCLUDE [managed-identities](../includes/managed-identities.md)]
+[!INCLUDE [managed-identities](../../includes/managed-identities.md)]
 
 ## What's new in .NET Framework 4.7
 

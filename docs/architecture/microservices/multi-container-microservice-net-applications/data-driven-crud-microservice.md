@@ -211,7 +211,7 @@ builder.Services.AddDbContext<CatalogContext>(options =>
 });
 ```
 
-[!INCLUDE [managed-identities](../../../framework/includes/managed-identities.md)]
+[!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 
 ### Additional resources
 
@@ -256,7 +256,7 @@ catalog-api:
     - "5101:80"
 ```
 
-[!INCLUDE [managed-identities](../../../framework/includes/managed-identities.md)]
+[!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 
 The docker-compose.yml files at the solution level are not only more flexible than configuration files at the project or microservice level, but also more secure if you override the environment variables declared at the docker-compose files with values set from your deployment tools, like from Azure DevOps Services Docker deployment tasks.
 

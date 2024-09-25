@@ -228,7 +228,7 @@ When an environment variable is discovered and loaded into configuration with an
 | `SQLAZURECONNSTR_{KEY}`  | `ConnectionStrings:{KEY}`   | Key: `ConnectionStrings:{KEY}_ProviderName`:<br>Value: `System.Data.SqlClient`  |
 | `SQLCONNSTR_{KEY}`       | `ConnectionStrings:{KEY}`   | Key: `ConnectionStrings:{KEY}_ProviderName`:<br>Value: `System.Data.SqlClient`  |
 
-[!INCLUDE [managed-identities](../../framework/includes/managed-identities.md)]
+[!INCLUDE [managed-identities](../../includes/managed-identities.md)]
 
 ### Environment variables set in launchSettings.json
 

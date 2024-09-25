@@ -11,13 +11,13 @@ namespace EncryptionSample
         static void Main()
         {
             const string baseConnectionString = "Data Source=EncryptionSample.db";
-            var password = "password";
+            var password = "...";
 
             // Notice which packages are referenced by this project:
             // - Microsoft.Data.Sqlite.Core
             // - SQLitePCLRaw.bundle_sqlcipher
 
-            // The Password keyword in the connection string specifies the encryption key
+            // The Password keyword in the connection string specifies the encryption key.
             #region snippet_ConnectionStringBuilder
             var connectionString = new SqliteConnectionStringBuilder(baseConnectionString)
             {
@@ -28,7 +28,7 @@ namespace EncryptionSample
 
             using (var connection = new SqliteConnection(connectionString))
             {
-                // When a new database is created, it will be encrypted using the key
+                // When a new database is created, it will be encrypted using the key.
                 connection.Open();
 
                 var command = connection.CreateCommand();

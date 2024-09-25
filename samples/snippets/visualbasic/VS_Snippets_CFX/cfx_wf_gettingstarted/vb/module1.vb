@@ -1,13 +1,7 @@
 ﻿Imports System.Activities
-Imports System.Activities.Statements
-Imports System.Diagnostics
-Imports System.Linq
 '<snippet3>
 Imports System.Threading
 '</snippet3>
-'<snippet5>
-Imports System.Collections.Generic
-'</snippet5>
 
 Module Module1
     '<snippet12>
@@ -25,7 +19,7 @@ Module Module1
         '</snippet6>
 
         '<snippet7>
-        wfApp.Completed = _
+        wfApp.Completed =
             Sub(e As WorkflowApplicationCompletedEventArgs)
                 Dim Turns As Integer = Convert.ToInt32(e.Outputs("Turns"))
                 Console.WriteLine("Congratulations, you guessed the number in {0} turns.", Turns)
@@ -34,20 +28,20 @@ Module Module1
             End Sub
         '</snippet7>
 
-        wfApp.Aborted = _
+        wfApp.Aborted =
             Sub(e As WorkflowApplicationAbortedEventArgs)
                 Console.WriteLine(e.Reason)
                 syncEvent.Set()
             End Sub
 
-        wfApp.OnUnhandledException = _
+        wfApp.OnUnhandledException =
             Function(e As WorkflowApplicationUnhandledExceptionEventArgs)
                 Console.WriteLine(e.UnhandledException)
                 Return UnhandledExceptionAction.Terminate
             End Function
 
         '<snippet9>
-        wfApp.Idle = _
+        wfApp.Idle =
             Sub(e As WorkflowApplicationIdleEventArgs)
                 idleEvent.Set()
             End Sub

@@ -13,7 +13,7 @@ ms.assetid: 7858fd85-153b-4259-85d0-6aa13c35f174
 ---
 # event (C# reference)
 
-The `event` keyword is used to declare an event in a publisher class.
+An ***event*** is a member that enables an object to trigger notifications. Event users can attach executable code for events by supplying ***event handlers***. The `event` keyword declares an ***event***. The event is of a delegate type. While an object triggers an event, the event invokes all supplied event handlers. Event handlers are delegate instances added to the event and executed when the event is raised. Event users can add or remove their event handlers on an event.
 
 ## Example
 

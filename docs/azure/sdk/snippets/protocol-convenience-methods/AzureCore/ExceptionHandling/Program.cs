@@ -1,5 +1,6 @@
 ﻿using Azure.AI.ContentSafety;
 using Azure.Identity;
+using Azure.Core
 
 // Create the client
 ContentSafetyClient client = new(

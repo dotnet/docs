@@ -1,4 +1,5 @@
 ﻿using OpenAI.Chat;
+using System.ClientModel;
 
 // Create the client
 ChatClient client = new(

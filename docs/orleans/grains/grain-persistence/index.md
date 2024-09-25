@@ -208,7 +208,7 @@ var host = new HostBuilder()
     .Build();
 ```
 
-[!INCLUDE [managed-identities](../../../framework/includes/managed-identities.md)]
+[!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 
 :::zone-end
 

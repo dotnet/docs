@@ -28,7 +28,7 @@ builder.Services.AddDbContext<CatalogContext>(options =>
     });
 ```
 
-[!INCLUDE [managed-identities](../../../framework/includes/managed-identities.md)]
+[!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 
 ## Execution strategies and explicit transactions using BeginTransaction and multiple DbContexts
 

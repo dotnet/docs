@@ -129,16 +129,16 @@ PipelineResponse response = result.GetRawResponse();
 
 ---
 
-## Handling exceptions
+## Handle exceptions
 
-When a service call fails, service clients throw an exception that exposes the HTTP status code and the details of the service response if available.
+When a service call fails, service clients throw an exception that exposes the HTTP status code and the details of the service response, if available.
 
-- `System.ClientModel` dependant libraries throw a [`ClientResultException`](/dotnet/api/system.clientmodel.clientresultexception).
-- `Azure.Core` dependant libraries throw a [`RequestFailedException`](/dotnet/api/azure.requestfailedexception).
+- `System.ClientModel`-dependent libraries throw a <xref:System.ClientModel.ClientResultException>.
+- `Azure.Core`-dependent libraries throw a <xref:Azure.RequestFailedException>.
 
 # [System.ClientModel exceptions](#tab/system-clientmodel)
 
-:::code source="snippets/protocol-convenience-methods/AzureCore/ExceptionHandling/Program.cs" highlight="9-23":::
+:::code source="snippets/protocol-convenience-methods/AzureCore/ExceptionHandling/Program.cs" highlight="10-24":::
 
 # [Azure.Core exceptions](#tab/azure-core)
 

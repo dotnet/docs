@@ -135,11 +135,11 @@ When a service call fails, the service client throws an exception that exposes t
 
 # [System.ClientModel exceptions](#tab/system-clientmodel)
 
-:::code source="snippets/protocol-convenience-methods/AzureCore/ExceptionHandling/Program.cs" highlight="10-24":::
+:::code source="snippets/protocol-convenience-methods/AzureCore/ExceptionHandling/Program.cs" highlight="21-24":::
 
 # [Azure.Core exceptions](#tab/azure-core)
 
-:::code source="snippets/protocol-convenience-methods/SCM/ExceptionHandling/Program.cs" highlight="9-20":::
+:::code source="snippets/protocol-convenience-methods/SCM/ExceptionHandling/Program.cs" highlight="17-20":::
 
 ---
 

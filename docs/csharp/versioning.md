@@ -1,14 +1,21 @@
 ---
 title: Versioning
 description: Understand how versioning works in C# and .NET
-ms.date: 01/08/2017
+ms.date: 09/17/2024
 ms.subservice: advanced-concepts
-ms.assetid: aa8732d7-5cd0-46e1-994a-78017f20d861
 ---
 
 # Versioning in C\#
 
 In this tutorial you'll learn what versioning means in .NET. You'll also learn the factors to consider when versioning your library as well as upgrading to a new version of a library.
+
+## Language version
+
+The C# compiler is part of the .NET SDK. By default, the compiler chooses the C# language version that matches the chosen [TFM](../standard/frameworks.md) for your project. If the SDK version is greater than your chosen framework, the compiler could use a greater language version. You can change the default by setting the `LangVersion` element in your project. You can learn how in our article on [compiler options](language-reference/compiler-options/language.md#langversion).
+
+> [!WARNING]
+>
+> Setting the `LangVersion` element to `latest` is discouraged. The `latest` setting means the installed compiler uses its latest version. That can change from machine to machine, making builds unreliable. In addition, it enables language features that may require runtime or library features not included in the current SDK.
 
 ## Authoring Libraries
 

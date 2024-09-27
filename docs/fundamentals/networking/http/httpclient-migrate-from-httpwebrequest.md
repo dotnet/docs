@@ -31,9 +31,7 @@ Let's start with some examples:
 Here's an example of how the code might look:
 
 ```c#
-using System.Net;
-
-HttpWebRequest request = (HttpWebRequest)WebRequest.Create(uri);
+HttpWebRequest request = WebRequest.CreateHttp(uri);
 using WebResponse response = await request.GetResponseAsync();
 ```
 
@@ -42,8 +40,6 @@ using WebResponse response = await request.GetResponseAsync();
 Here's an example of how the code might look:
 
 ```c#
-using System.Net.Http;
-
 HttpClient client = new();
 using HttpResponseMessage message = await client.GetAsync(uri);
 ```
@@ -53,16 +49,12 @@ using HttpResponseMessage message = await client.GetAsync(uri);
 Here's an example of how the code might look:
 
 ```c#
-using System.Net;
-
-HttpWebRequest request = (HttpWebRequest)WebRequest.Create(uri);
+HttpWebRequest request = WebRequest.CreateHttp(uri);
 request.Method = "POST";
 request.ContentType = "text/plain";
 await using Stream stream = await request.GetRequestStreamAsync();
 await stream.WriteAsync("Hello World!"u8.ToArray());
 using WebResponse response = await request.GetResponseAsync();
-Memory<byte> buffer = new byte[1024];
-await using Stream responseStream = response.GetResponseStream();
 ```
 
 **Simple POST Request Using <xref:System.Net.Http.HttpClient>**
@@ -70,8 +62,6 @@ await using Stream responseStream = response.GetResponseStream();
 Here's an example of how the code might look:
 
 ```c#
-using System.Net.Http;
-
 HttpClient client = new();
 using HttpResponseMessage responseMessage = await client.PostAsync(uri, new StringContent("Hello World!"));
 ```
@@ -93,7 +83,7 @@ using HttpResponseMessage responseMessage = await client.PostAsync(uri, new Stri
 | `ConnectionGroupName` | No equivalent API | No workaround |
 | `ContentLength` | <xref:System.Net.Http.Headers.HttpContentHeaders.ContentLength> | See: [Example: Set Content Headers](#example-set-content-headers). |
 | `ContentType` | <xref:System.Net.Http.Headers.HttpContentHeaders.ContentType> | See: [Example: Set Content Headers](#example-set-content-headers). |
-| `ContinueDelegate` | No equivalent API | There is no workaround. |
+| `ContinueDelegate` | No equivalent API | No workaround. |
 | `ContinueTimeout` | <xref:System.Net.Http.SocketsHttpHandler.Expect100ContinueTimeout> | See: [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
 | `CookieContainer` | <xref:System.Net.Http.SocketsHttpHandler.CookieContainer> | See: [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
 | `Credentials` | <xref:System.Net.Http.SocketsHttpHandler.Credentials> | See: [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
@@ -103,7 +93,7 @@ using HttpResponseMessage responseMessage = await client.PostAsync(uri, new Stri
 | `DefaultMaximumResponseHeadersLength` | No equivalent API | <xref:System.Net.Http.SocketsHttpHandler.MaxResponseHeadersLength> can be used instead. |
 | `DefaultWebProxy` | No equivalent API | <xref:System.Net.Http.SocketsHttpHandler.Proxy> can be used instead. |
 | `Expect` | <xref:System.Net.Http.Headers.HttpRequestHeaders.Expect> | See: [Example: Set Request Headers](#example-set-common-request-headers). |
-| `HaveResponse` | No equivalent API | No workaround |
+| `HaveResponse` | No equivalent API | Implied by having an `HttpResponseMessage` instance. |
 | `Headers` | <xref:System.Net.Http.HttpRequestMessage.Headers> | See: [Example: Set Request Headers](#example-set-custom-request-headers). |
 | `Host` | <xref:System.Net.Http.Headers.HttpRequestHeaders.Host> | See: [Example: Set Request Headers](#example-set-common-request-headers). |
 | `IfModifiedSince` | <xref:System.Net.Http.Headers.HttpRequestHeaders.IfModifiedSince> | See: [Example: Set Request Headers](#example-set-common-request-headers). |
@@ -175,7 +165,7 @@ Developers should be aware that `ServicePointManager` is a static class, meaning
 | `ConnectionLeaseTimeout` | `SocketsHttpHandler.PooledConnectionLifetime` | Equivalent setting in <xref:System.Net.Http.HttpClient> |
 | `ConnectionLimit` | <xref:System.Net.Http.SocketsHttpHandler.MaxConnectionsPerServer> | See: [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
 | `ConnectionName` | No equivalent API | No workaround |
-| `CurrentConnections` | No equivalent API | No workaround |
+| `CurrentConnections` | No equivalent API | See [Networking telemetry in .NET docs](https://learn.microsoft.com/dotnet/fundamentals/networking/telemetry/overview). |
 | `Expect100Continue` | <xref:System.Net.Http.Headers.HttpRequestHeaders.ExpectContinue> | See: [Example: Set Request Headers](#example-set-common-request-headers). |
 | `IdleSince` | No equivalent API | No workaround |
 | `MaxIdleTime` | <xref:System.Net.Http.SocketsHttpHandler.PooledConnectionIdleTimeout> | See: [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
@@ -236,7 +226,7 @@ In the old approach using `HttpWebRequest`, you might have used custom logic to 
 **Old Code Using `HttpWebRequest`**:
 
 ```csharp
-HttpWebRequest request = (HttpWebRequest)WebRequest.Create(uri);
+HttpWebRequest request = WebRequest.CreateHttp(uri);
 request.ServicePoint.BindIPEndPointDelegate = (servicePoint, remoteEndPoint, retryCount) =>
 {
     // Bind to a specific IP address
@@ -260,13 +250,13 @@ var handler = new SocketsHttpHandler
         {
             socket.Bind(new IPEndPoint(localAddress, 0));
             await socket.ConnectAsync(context.DnsEndPoint, cancellationToken);
+            return new NetworkStream(socket, ownsSocket: true);
         }
         catch
         {
             socket.Dispose();
             throw;
         }
-        return new NetworkStream(socket, ownsSocket: true);
     }
 };
 var client = new HttpClient(handler);
@@ -281,7 +271,7 @@ If you need to apply specific socket options, such as enabling TCP keep-alive, y
 
 ```csharp
 ServicePointManager.ReusePort = true;
-HttpWebRequest request = (HttpWebRequest)WebRequest.Create(uri);
+HttpWebRequest request = WebRequest.CreateHttp(uri);
 request.ServicePoint.SetTcpKeepAlive(true, 60000, 1000);
 request.ServicePoint.ReceiveBufferSize = 8192;
 request.ServicePoint.UseNagleAlgorithm = false;
@@ -313,13 +303,13 @@ var handler = new SocketsHttpHandler
             socket.NoDelay = true;
 
             await socket.ConnectAsync(context.DnsEndPoint, cancellationToken);
+            return new NetworkStream(socket, ownsSocket: true);
         }
         catch
         {
             socket.Dispose();
             throw;
         }
-        return new NetworkStream(socket, ownsSocket: true);
     }
 };
 var client = new HttpClient(handler);
@@ -330,8 +320,6 @@ using var response = await client.GetAsync(uri);
 
 DNS Round Robin is a technique used to distribute network traffic across multiple servers by rotating through a list of IP addresses associated with a single domain name. This helps in load balancing and improving the availability of services. When using HttpClient, you can implement DNS Round Robin by manually handling the DNS resolution and rotating through the IP addresses using the ConnectCallback property of SocketsHttpHandler.
 
-By enabling DNS Round Robin, you can ensure that your application distributes requests evenly across multiple servers, reducing the load on any single server and improving overall performance and reliability. This approach is particularly useful for high-traffic applications that require efficient load balancing.
-
 To enable DNS Round Robin with HttpClient, you can use the ConnectCallback property to manually resolve the DNS entries and rotate through the IP addresses. Here's an example for `HttpWebRequest` and `HttpClient`:
 
 **Old Code Using `HttpWebRequest`**:
@@ -339,7 +327,7 @@ To enable DNS Round Robin with HttpClient, you can use the ConnectCallback prope
 ```csharp
 ServicePointManager.DnsRefreshTimeout = 60000;
 ServicePointManager.EnableDnsRoundRobin = true;
-HttpWebRequest request = (HttpWebRequest)WebRequest.Create(uri);
+HttpWebRequest request = WebRequest.CreateHttp(uri);
 using HttpWebResponse response = (HttpWebResponse)request.GetResponse();
 ```
 
@@ -375,15 +363,6 @@ var handler = new SocketsHttpHandler
     MaxResponseHeadersLength = 1,
     Proxy = new WebProxy("http://proxyserver:8080"), // Don't forget to set UseProxy
     UseProxy = true,
-    SslOptions = new SslClientAuthenticationOptions
-    {
-        RemoteCertificateValidationCallback = (sender, certificate, chain, sslPolicyErrors) =>
-        {
-            // Custom validation logic
-            return sslPolicyErrors == SslPolicyErrors.None;
-        },
-        EncryptionPolicy = EncryptionPolicy.RequireEncryption,
-    },
 };
 
 var client = new HttpClient(handler);
@@ -406,7 +385,7 @@ The `CheckCertificateRevocationList` property in `SocketsHttpHandler.SslOptions`
 
 ```csharp
 ServicePointManager.CheckCertificateRevocationList = true;
-HttpWebRequest request = (HttpWebRequest)WebRequest.Create(uri);
+HttpWebRequest request = WebRequest.CreateHttp(uri);
 using HttpWebResponse response = (HttpWebResponse)request.GetResponse();
 ```
 
@@ -432,7 +411,7 @@ To fetch the certificate from the `RemoteCertificateValidationCallback` in `Http
 **Old Code Using `HttpWebRequest`**:
 
 ```csharp
-HttpWebRequest request = (HttpWebRequest)WebRequest.Create(uri);
+HttpWebRequest request = WebRequest.CreateHttp(uri);
 using HttpWebResponse response = (HttpWebResponse)request.GetResponse();
 X509Certificate? serverCertificate = request.ServicePoint.Certificate;
 ```
@@ -449,7 +428,7 @@ var handler = new SocketsHttpHandler
         {
             serverCertificate = certificate;
 
-            // Perform custom validation logic
+            // Leave the validation as-is.
             return sslPolicyErrors == SslPolicyErrors.None;
         }
     }
@@ -518,7 +497,7 @@ request.Headers.Add("Custom-Header", "value");
 
 #### Example: Set Common Request Headers
 
-When working with `HttpRequestMessage` in .NET, setting common request headers is essential for providing additional information to the server about the request being made. These headers can include authentication tokens, content types and more. Properly configuring these headers ensures that your HTTP requests are processed correctly by the server.
+When working with `HttpRequestMessage` in .NET, setting common request headers is essential for providing additional information to the server about the request being made. These headers can include authentication tokens and more. Properly configuring these headers ensures that your HTTP requests are processed correctly by the server.
 For a comprehensive list of common properties available in HttpRequestHeaders, you can refer to the [official documentation](https://learn.microsoft.com/dotnet/api/system.net.http.headers.httprequestheaders#properties).
 
 To set common request headers in `HttpRequestMessage`, you can use the `Headers` property of the `HttpRequestMessage` object. This property provides access to the `HttpRequestHeaders` collection, where you can add or modify headers as needed.
@@ -529,7 +508,7 @@ To set common request headers in `HttpRequestMessage`, you can use the `Headers`
 using System.Net.Http.Headers;
 
 var client = new HttpClient();
-client.DefaultRequestHeaders.Authorization =  new AuthenticationHeaderValue("Bearer", "token");
+client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", "token");
 ```
 
 **Setting Common Request Headers in HttpRequestMessage**
@@ -552,11 +531,10 @@ var request = new HttpRequestMessage(HttpMethod.Post, uri);
 // Create the content and set the content headers
 var jsonData = "{\"key\":\"value\"}";
 var content = new StringContent(jsonData, Encoding.UTF8, "application/json");
-// This is also corresponding example to set `MediaType` in `HttpWebRequest`.
-content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
-content.Headers.ContentEncoding.Add("utf-8");
-// WARNING: This is not needed in most of the cases, because most `HttpContent` implementations will calculate this field automatically.
-content.Headers.ContentLength = jsonData.Length;
+
+// The following headers are set automatically by `StringContent`. If you wish to override their values, you can do it like so:
+// content.Headers.ContentType = new MediaTypeHeaderValue("application/json; charset=utf-8");
+// content.Headers.ContentLength = Encoding.UTF8.GetByteCount(jsonData);
 
 // Assign the content to the request
 request.Content = content;
@@ -585,7 +563,7 @@ In `HttpWebRequest`, you might have used the `CachePolicy` property to set these
 **Old Code Using `HttpWebRequest`**:
 
 ```csharp
-HttpWebRequest request = (HttpWebRequest)WebRequest.Create(uri);
+HttpWebRequest request = WebRequest.CreateHttp(uri);
 request.CachePolicy = new HttpRequestCachePolicy(HttpRequestCacheLevel.NoCacheNoStore);
 using HttpWebResponse response = (HttpWebResponse)request.GetResponse();
 ```
@@ -626,15 +604,18 @@ HttpClient client = new HttpClient();
 
 HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Post, uri);
 request.Content = new StreamContent(yourStream);
-request.Headers.TransferEncodingChunked = true;
 
 HttpResponseMessage response = await client.SendAsync(request);
 ```
 
-In `HttpClient` read buffering is enabled by default. `Disabling read buffering` is much easier. Here's an example:
+In `HttpClient` read buffering is enabled by default. To avoid it, you may specify the `HttpCompletionOption.ResponseHeadersRead` flag, or use the `GetStreamAsync` helper.
 
 ```csharp
 HttpClient client = new HttpClient();
 
-HttpResponseMessage response = await client.GetAsync(uri, HttpCompletionOption.ResponseHeadersRead);
+using HttpResponseMessage response = await client.GetAsync(uri, HttpCompletionOption.ResponseHeadersRead);
+await using Stream responseStream = await response.Content.ReadAsStreamAsync();
+
+// Or simply
+await using Stream responseStream = await client.GetStreamAsync(uri);
 ```

@@ -10,7 +10,7 @@
 
         if (response.Content is not null)
         {
-            Stream responseReadStream = response.Content.ReadAsStream();
+            Stream responseReadStream = await response.Content.ReadAsStreamAsync();
             // If MaxErrorResponseLength is set and the response status code is an error code, then wrap the response stream in a TruncatedReadStream
             if (maxErrorResponseLength >= 0 && !response.IsSuccessStatusCode)
             {

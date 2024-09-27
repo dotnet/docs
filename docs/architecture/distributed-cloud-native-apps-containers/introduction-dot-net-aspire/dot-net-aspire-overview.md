@@ -29,7 +29,7 @@ ms.date: 05/30/2024
 
 - **Enhanced developer experience**: With .NET Aspire, developers get an improved experience with a consistent set of patterns and tools that simplify the process of building and running distributed apps.
 
-- **Orchestration and components**: It provides features for orchestrating multi-project applications and their dependencies, along with standardized components for common services like databases and caching.
+- **Orchestration and integrations**: It provides features for orchestrating multi-project applications and their dependencies, along with standardized integrations for common services like databases and caching.
 
 - **Integrated tooling**: .NET Aspire comes with integrated tooling for popular development environments like Visual Studio and Visual Studio Code, as well as the .NET CLI, making it easier to create and manage applications.
 

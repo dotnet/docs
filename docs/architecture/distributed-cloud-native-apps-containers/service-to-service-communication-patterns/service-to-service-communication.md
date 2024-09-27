@@ -220,7 +220,7 @@ For cloud-native applications that must stream large numbers of events, Azure Ev
 
 ## Service-to-service communications in .NET Aspire
 
-When you build a cloud-native app using the .NET Aspire stack, service discovery is much easier and managed by code in the App Host project. The stack includes many components that support service-to-service communications. At the time of writing, these include:
+When you build a cloud-native app using the .NET Aspire stack, service discovery is much easier and managed by code in the App Host project. The stack includes many integrations that support service-to-service communications. At the time of writing, these include:
 
 - Apache Kafka.
 - Azure Storage Queues.

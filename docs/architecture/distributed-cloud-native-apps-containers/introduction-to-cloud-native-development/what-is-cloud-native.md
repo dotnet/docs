@@ -338,9 +338,9 @@ You can either start by creating a new solution based on one of the .NET Aspire 
 
 - Each microservice is a .NET project and will be run in a container. During development, containers are run in Docker Desktop or Podman on your local computer. You can deploy containers to Docker hosts, Kubernetes clusters, or other container orchestrators.
 - Observability is built-in with support for the OpenTelemetry SDK. You can observe the behavior of your app in the .NET Aspire dashboard or send the data to other tools.
-- You can connect to a range of backing services by using .NET Aspire components. There are components for common message brokers, database systems, secrets stores, and caches. Each component includes resiliency enabled by default.
+- You can connect to a range of backing services by using .NET Aspire integrations. There are integrations for common message brokers, database systems, secrets stores, and caches. Each integration includes resiliency enabled by default.
 
-> *You don't have to use Azure to host a .NET Aspire solution. However, Azure Container Apps (ACA) or Azure Kubernetes Service (AKS) are scalable and robust choices and .NET Aspire includes several built-in components that work with Azure products, such as Azure Service Bus and Azure Cosmos DB.*
+> *You don't have to use Azure to host a .NET Aspire solution. However, Azure Container Apps (ACA) or Azure Kubernetes Service (AKS) are scalable and robust choices and .NET Aspire includes several built-in integrations that work with Azure products, such as Azure Service Bus and Azure Cosmos DB.*
 
 .NET Aspire is an opinionated stack - that means that it imposes a particular style of solution on you. If you disagree, there are other possible approaches but you'll have to code them yourself. A software architect who's already built cloud-native systems may find that disagreeable but for others who can adapt to the .NET Aspire way, the convenience of .NET Aspire is worth it.
 

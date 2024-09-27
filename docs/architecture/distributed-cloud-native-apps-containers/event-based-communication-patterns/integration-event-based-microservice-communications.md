@@ -28,9 +28,9 @@ Of course, you could always build your own service bus features on top of lower-
 
 Once you have decided that you want to have asynchronous and event-driven communication, you should choose the service bus product that best fits your needs for production.
 
-## Implementing the Azure Service Bus component with .NET Aspire
+## Implementing the Azure Service Bus integration with .NET Aspire
 
-.NET Aspire makes it much more straightforward to implement an event bus, because it includes built-in components for systems like:
+.NET Aspire makes it much more straightforward to implement an event bus, because it includes built-in integrations for systems like:
 
 - RabbitMQ
 - Azure Service Bus
@@ -54,7 +54,7 @@ The first step is to install the Azure Service Bus hosting package in the app ho
 dotnet add package Aspire.Hosting.Azure.ServiceBus
 ```
 
-Then, in the app host _Program.cs_ file, you can register the Service Bus component and consume the service as follows:
+Then, in the app host _Program.cs_ file, you can register the Service Bus integration and consume the service as follows:
 
 ```csharp
 var builder = DistributedApplication.CreateBuilder(args);
@@ -98,7 +98,7 @@ public class ExampleService
 
 ### Configuration
 
-The .NET Aspire Service Bus component offers several configuration options to tailor the `ServiceBusClient` to your project's needs. You can use configuration providers to load settings from `appsettings.json` or other configuration files using the `Aspire:Azure:Messaging:ServiceBus` key.
+The .NET Aspire Service Bus integration offers several configuration options to tailor the `ServiceBusClient` to your project's needs. You can use configuration providers to load settings from `appsettings.json` or other configuration files using the `Aspire:Azure:Messaging:ServiceBus` key.
 
 Here's an example of how you might configure the ServiceBusClient in your `appsettings.json`:
 
@@ -116,7 +116,7 @@ Here's an example of how you might configure the ServiceBusClient in your `appse
 }
 ```
 
-For more information, see [.NET Aspire Azure Service Bus component](https://learn.microsoft.com/dotnet/aspire/messaging/azure-service-bus-component?tabs=dotnet-cli)
+For more information, see [.NET Aspire Azure Service Bus integration](https://learn.microsoft.com/dotnet/aspire/messaging/azure-service-bus-integration?tabs=dotnet-cli)
 
 ## Integration events
 

@@ -193,7 +193,7 @@ To partition the container, items are divided into distinct subsets called logic
 
 One of the most important ways .NET Aspire helps cloud-native developers is by managing backing services and making it easy for microservices to discover them and communicate with them. Database services like Cosmos DB, SQL Server, or MongoDB are typical examples of backing services that support your microservices by persisting data.
 
-In .NET Aspire, there are built-in components, each of which supports a different backing service. The following database systems have .NET Aspire components, available out-of-the-box:
+In .NET Aspire, there are built-in integrations, each of which supports a different backing service. The following database systems have .NET Aspire integrations, available out-of-the-box:
 
 - Azure Cosmos DB
 - Azure Table Storage
@@ -203,7 +203,7 @@ In .NET Aspire, there are built-in components, each of which supports a differen
 - PostgreSQL
 - SQL Server
 
-Other database components are likely to become available from Microsoft or third parties. If you use one of these components, you still have to code operations like read, write, and delete, but you don't have to write code that manages the database clients and enables microservices to discover them.
+Other database integrations are likely to become available from Microsoft or third parties. If you use one of these integrations, you still have to code operations like read, write, and delete, but you don't have to write code that manages the database clients and enables microservices to discover them.
 
 ## NewSQL databases
 

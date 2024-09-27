@@ -55,5 +55,5 @@ The **.NET Aspire Dashboard** is a stand alone tool developers can use with thei
    - It displays sensitive data about resources, including configuration, console logs, and in-depth telemetry.
 
 >[!div class="step-by-step"]
->[Previous](components.md)
+>[Previous](integrations.md)
 >[Next](../architecting-distributed-cloud-native-applications/why-choose-distributed-architecture.md)

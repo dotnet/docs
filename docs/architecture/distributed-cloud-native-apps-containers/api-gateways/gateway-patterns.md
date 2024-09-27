@@ -147,7 +147,7 @@ Another advantage of the Azure SignalR Service comes with implementing serverles
 
 Azure SignalR Service closely integrates with other Azure services, such as Azure SQL Database, Service Bus, or Azure Redis Cache, opening up many possibilities for your cloud-native applications.
 
-If you're using the .NET Aspire stack to build your cloud-native app, you have a built-in .NET Aspire component that helps you call the Azure SignalR Service. This component takes care of creating the connection and makes it easy for microservices to locate it. You can easily add connections from microservices and use them to send and receive information.
+If you're using the .NET Aspire stack to build your cloud-native app, you have a built-in .NET Aspire integration that helps you call the Azure SignalR Service. This integration takes care of creating the connection and makes it easy for microservices to locate it. You can easily add connections from microservices and use them to send and receive information.
 
 ## Drawbacks of the API Gateway pattern
 

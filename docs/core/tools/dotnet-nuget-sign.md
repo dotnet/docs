@@ -71,7 +71,12 @@ The `dotnet nuget sign` command signs all the packages matching the first argume
 
 - **`--certificate-fingerprint <FINGERPRINT>`**
 
-   SHA-1 fingerprint of the certificate used to search a local certificate store for the certificate.
+  Specifies the fingerprint of the certificate used to search a local certificate store for the certificate.
+
+  Starting with .NET 9, this option can be used to specify the SHA-1, SHA-256, SHA-384, or SHA-512 fingerprint of the certificate.
+  However, a `NU3043` warning is raised when a SHA-1 certificate fingerprint is used because it is no longer considered secure.
+
+  All the previous versions of the .NET SDK continue to accept only SHA-1 certificate fingerprint.
 
 - **`--certificate-password <PASSWORD>`**
 

@@ -148,11 +148,11 @@ Understanding the strengths and limitations of each communication pattern is cru
 
 If you choose to use the .NET Aspire stack to build your cloud-native app, synchronous communications must be implemented with HTTP, HTTPS, or gRPC calls. .NET Aspire is not involved in this communication.
 
-For asynchronous communications, .NET Aspire has components that help you work with queues in Azure Storage, RabbitMQ, Azure Service Bus, Apache Kafka, and NATS. You create these backing services in the app host project, and pass them to each microservice that uses them. In the microservices, you can use dependency injection to obtain objects that store and retrieve messages from queues in your preferred service.
+For asynchronous communications, .NET Aspire has integrations that help you work with queues in Azure Storage, RabbitMQ, Azure Service Bus, Apache Kafka, and NATS. You create these backing services in the app host project, and pass them to each microservice that uses them. In the microservices, you can use dependency injection to obtain objects that store and retrieve messages from queues in your preferred service.
 
-For streaming communications, use the .NET Aspire Apache Kafka component.
+For streaming communications, use the .NET Aspire Apache Kafka integration.
 
-Using .NET Aspire components also helps to improve resiliency. Some components can automatically retry requests that have failed, and you can configure timeouts for these retries.
+Using .NET Aspire integrations also helps to improve resiliency. Some integrations can automatically retry requests that have failed, and you can configure timeouts for these retries.
 
 In the next chapter we'll explore in more detail service-to-service communication patterns.
 

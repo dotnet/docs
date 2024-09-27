@@ -8,7 +8,7 @@ ms.date: 06/05/2024
 
 [!INCLUDE [download-alert](../includes/download-alert.md)]
 
-Distributed application testing is fraught with complexities due to the inherent nature of these systems. However, .NET Aspire components include logging, tracing, and metrics configurations by default  using the [.NET OpenTelemetry SDK](https://github.com/open-telemetry/opentelemetry-dotnet). From creating test projects to orchestrating resources and debugging with an integrated dashboard, .NET Aspire equips developers with the tools needed to ensure their distributed applications are robust, reliable, and ready for deployment.
+Distributed application testing is fraught with complexities due to the inherent nature of these systems. However, .NET Aspire integrations include logging, tracing, and metrics configurations by default  using the [.NET OpenTelemetry SDK](https://github.com/open-telemetry/opentelemetry-dotnet). From creating test projects to orchestrating resources and debugging with an integrated dashboard, .NET Aspire equips developers with the tools needed to ensure their distributed applications are robust, reliable, and ready for deployment.
 
 By embracing .NET Aspire, teams can streamline their testing processes, reduce the time to market, and deliver high-quality software that meets the demands of modern distributed computing environments.
 

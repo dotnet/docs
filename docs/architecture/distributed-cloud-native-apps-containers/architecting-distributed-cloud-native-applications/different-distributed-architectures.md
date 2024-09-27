@@ -65,8 +65,8 @@ This is where .NET Aspire comes in - it's a stack that helps you create manageab
 
 - Makes it clear which microservices and other components are part of your app. You can see them in the App Host project code, and in the dashboard that appears whenever you debug your app.
 - Implements observability for you using OpenTelemetry, so you can easily get data on the performance and behavior of all your microservices without requiring your development teams to build it.
-- Makes it easy to use common backing services, such as databases and service buses, by providing out-of-the-box components for each one.
-- Implements resiliency in these components to prevent and recover from failures, without requiring your development teams to build it.
+- Makes it easy to use common backing services, such as databases and service buses, by providing out-of-the-box integrations for each one.
+- Implements resiliency in these integrations to prevent and recover from failures, without requiring your development teams to build it.
 
 If you've already started building and deploying microservices apps, then .NET Aspire may not help you, because it's opinionated about how they should be built and that might not match your design. However, if you're new to microservices and cloud-native design, or if you're starting an app from scratch, it can help to make the project easier and reduce development time.
 

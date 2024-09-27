@@ -4,6 +4,8 @@ using System.Net;
 using System.Net.Sockets;
 
 // <DnsRoundRobinConnector>
+// This is available as NuGet Package: https://www.nuget.org/packages/DnsRoundRobin/
+// The original source code can be found also here: https://github.com/MihaZupan/DnsRoundRobin
 public sealed class DnsRoundRobinConnector : IDisposable
 // </DnsRoundRobinConnector>
 {

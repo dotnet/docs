@@ -160,8 +160,8 @@ Developers should be aware that `ServicePointManager` is a static class, meaning
 |---------|----------------------|-------|
 | `Address` | `HttpRequestMessage.RequestUri` | This is request uri, this information can be found under `HttpRequestMessage`. |
 | `BindIPEndPointDelegate` | No direct equivalent API | See: [Usage of SocketsHttpHandler and ConnectCallback](#usage-of-socketshttphandler-and-connectcallback). |
-| `Certificate` | No direct equivalent API | This information can be fetched from `RemoteCertificateValidationCallback`. See: [Example: Fetch Certificate](#example-fetch-certificate) |
-| `ClientCertificate` | No equivalent API | No workaround |
+| `Certificate` | No direct equivalent API | This information can be fetched from `RemoteCertificateValidationCallback`. See: [Example: Fetch Certificate](#example-fetch-certificate). |
+| `ClientCertificate` | No equivalent API | See: [Example: Enabling Mutual Authentication](#example-enabling-mutual-authentication). |
 | `ConnectionLeaseTimeout` | `SocketsHttpHandler.PooledConnectionLifetime` | Equivalent setting in <xref:System.Net.Http.HttpClient> |
 | `ConnectionLimit` | <xref:System.Net.Http.SocketsHttpHandler.MaxConnectionsPerServer> | See: [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
 | `ConnectionName` | No equivalent API | No workaround |
@@ -597,13 +597,14 @@ request.AllowWriteStreamBuffering = false; // Default is `true`.
 
 In `HttpClient`, there are no direct equivalents to the `AllowWriteStreamBuffering` and `AllowReadStreamBuffering` properties.
 
-However, you can achieve similar outcome of `disable write buffering` behavior by using the `StreamContent` class for streaming data. Here's an example:
+HttpClient does not buffer request bodies on its own, instead delegating the responsibility to the `HttpContent` used. Contents like `StringContent` or `ByteArrayContent` are logically already buffered in memory, while using `StreamContent` will not incur any buffering by default. To force the content to be buffered, you may call `HttpContent.LoadIntoBufferAsync` before sending the request. Here's an example:
 
 ```csharp
 HttpClient client = new HttpClient();
 
 HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Post, uri);
 request.Content = new StreamContent(yourStream);
+await request.Content.LoadIntoBufferAsync();
 
 HttpResponseMessage response = await client.SendAsync(request);
 ```

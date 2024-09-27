@@ -5,4 +5,13 @@ ms.topic: conceptual
 ms.custom: devx-track-dotnet, engagement-fy23
 ms.date: 09/27/2024
 ---
-[!INCLUDE [sample](../samples/azure/sdk-identity-resources-storage/README.md)]
+
+# Azure Identity, Resource Management, and Storage sample
+> [!NOTE]
+> Access the sample GitHub repo [here](https://github.com/dotnet/samples/tree/main/azure/sdk-identity-resources-storage).
+
+![test image path](https://github.com/dotnet/aspnetcore/blob/main/docs/vs-iis-express-aspnet-core-mvc-sandbox.jpg)
+
+## INCLUDE
+
+[!INCLUDE [sample](https://github.com/dotnet/samples/blob/main/azure/sdk-identity-resources-storage/README.md)]

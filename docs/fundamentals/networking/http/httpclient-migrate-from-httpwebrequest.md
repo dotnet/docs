@@ -256,8 +256,16 @@ var handler = new SocketsHttpHandler
         // Bind to a specific IP address
         IPAddress localAddress = IPAddress.Parse("192.168.1.100");
         var socket = new Socket(localAddress.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
-        socket.Bind(new IPEndPoint(localAddress, 0));
-        await socket.ConnectAsync(context.DnsEndPoint, cancellationToken);
+        try
+        {
+            socket.Bind(new IPEndPoint(localAddress, 0));
+            await socket.ConnectAsync(context.DnsEndPoint, cancellationToken);
+        }
+        catch
+        {
+            socket.Dispose();
+            throw;
+        }
         return new NetworkStream(socket, ownsSocket: true);
     }
 };
@@ -288,21 +296,29 @@ var handler = new SocketsHttpHandler
     ConnectCallback = async (context, cancellationToken) =>
     {
         var socket = new Socket(SocketType.Stream, ProtocolType.Tcp);
-        // Setting TCP Keep Alive
-        socket.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.KeepAlive, true);
-        socket.SetSocketOption(SocketOptionLevel.Tcp, SocketOptionName.TcpKeepAliveTime, 60);
-        socket.SetSocketOption(SocketOptionLevel.Tcp, SocketOptionName.TcpKeepAliveInterval, 1);
+        try
+        {
+            // Setting TCP Keep Alive
+            socket.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.KeepAlive, true);
+            socket.SetSocketOption(SocketOptionLevel.Tcp, SocketOptionName.TcpKeepAliveTime, 60);
+            socket.SetSocketOption(SocketOptionLevel.Tcp, SocketOptionName.TcpKeepAliveInterval, 1);
 
-        // Setting ReceiveBufferSize
-        socket.ReceiveBufferSize = 8192;
+            // Setting ReceiveBufferSize
+            socket.ReceiveBufferSize = 8192;
 
-        // Enabling ReusePort
-        socket.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.ReuseUnicastPort, true);
+            // Enabling ReusePort
+            socket.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.ReuseUnicastPort, true);
 
-        // Disabling Nagle Algorithm
-        socket.NoDelay = true;
+            // Disabling Nagle Algorithm
+            socket.NoDelay = true;
 
-        await socket.ConnectAsync(context.DnsEndPoint, cancellationToken);
+            await socket.ConnectAsync(context.DnsEndPoint, cancellationToken);
+        }
+        catch
+        {
+            socket.Dispose();
+            throw;
+        }
         return new NetworkStream(socket, ownsSocket: true);
     }
 };

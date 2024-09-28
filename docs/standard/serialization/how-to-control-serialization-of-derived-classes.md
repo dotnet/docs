@@ -43,7 +43,7 @@ Public Class Run
   
         ' Creates an XmlElementAttribute instance to override the
         ' field that returns Book objects. The overridden field  
-        ' returns Expanded objects instead.  
+        ' returns ExpandedBook objects instead.  
         Dim attr As XmlElementAttribute = _  
         New XmlElementAttribute()  
         attr.ElementName = "NewBook"  
@@ -89,7 +89,7 @@ Public Class Run
   
         ' Creates an XmlElementAttribute to override the
         ' field that returns Book objects. The overridden field  
-        ' returns Expanded objects instead.
+        ' returns ExpandedBook objects instead.
         Dim attr As XmlElementAttribute = _  
         New XmlElementAttribute()  
         attr.ElementName = "NewBook"  
@@ -149,7 +149,7 @@ public class Run
   
         // Creates an XmlElementAttribute instance to override the
         // field that returns Book objects. The overridden field  
-        // returns Expanded objects instead.  
+        // returns ExpandedBook objects instead.  
         XmlElementAttribute attr = new XmlElementAttribute();  
         attr.ElementName = "NewBook";  
         attr.Type = typeof(ExpandedBook);  
@@ -194,7 +194,7 @@ public class Run
   
         // Creates an XmlElementAttribute to override the
         // field that returns Book objects. The overridden field  
-        // returns Expanded objects instead.  
+        // returns ExpandedBook objects instead.  
         XmlElementAttribute attr = new XmlElementAttribute();  
         attr.ElementName = "NewBook";  
         attr.Type = typeof(ExpandedBook);  

@@ -264,3 +264,23 @@ There's a build time check that verifies if you're using `Grpc.Net.ClientFactory
   <SuppressCheckGrpcNetClientFactoryVersion>true</SuppressCheckGrpcNetClientFactoryVersion>
 </PropertyGroup>
 ```
+
+### Compatibility with .NET Application Insights
+
+If you're using .NET Application Insights, then enabling resilience functionality in your application could cause all Application Insights telemetry to be missing. The issue occurs when resilience functionality is registered before Application Insights services. Consider the following sample causing the issue:
+
+```csharp
+// At first, we register resilience functionality.
+services.AddHttpClient().AddStandardResilienceHandler();
+
+// And then we register Application Insights. As a result, Application Insights doesn't work.
+services.AddApplicationInsightsTelemetry();
+```
+
+The issue is caused by the following [bug](https://github.com/microsoft/ApplicationInsights-dotnet/issues/2879) in Application Insights and can be fixed by registering Application Insights services before resilience functionality, as shown below:
+
+```csharp
+// We register Application Insights first, and now it will be working correctly.
+services.AddApplicationInsightsTelemetry();
+services.AddHttpClient().AddStandardResilienceHandler();
+```

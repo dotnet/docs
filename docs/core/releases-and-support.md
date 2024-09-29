@@ -59,7 +59,7 @@ There are two support tracks for releases:
 
 * *Standard Term Support* (STS) releases
 
-  These versions are supported until 6 months after the next major or minor release ships.
+  These versions are supported until 18 months after the next major or minor release ships.
 
   Example:
 

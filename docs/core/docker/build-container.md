@@ -126,7 +126,7 @@ If you pass a number on the command line to the app, it will only count up to th
 
 ## Publish .NET app
 
-Before adding the .NET app to the Docker image, first it must be published. It's best to have the container run the published version of the app. To publish the app, run the following command:
+In order for the application to be suitable for an image creation it has to be built. `dotnet publish` command is most apt for this. For in-depth reference, see [dotnet build](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-build) and [dotnet publish](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-publish) commands documentation.
 
 ```dotnetcli
 dotnet publish -c Release
@@ -140,6 +140,9 @@ This command compiles your app to the *publish* folder. The path to the *publish
 :::zone pivot="dotnet-7-0"
 
 This command compiles your app to the *publish* folder. The path to the *publish* folder from the working folder should be `.\App\bin\Release\net7.0\publish\`.
+
+> [!NOTE]
+> Application publishing is needed for image creation but this is rather orchestrated by the _Dockerfile_. See [Create the Dockerfile](#create-the-dockerfile).
 
 :::zone-end
 

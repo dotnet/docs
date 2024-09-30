@@ -67,7 +67,7 @@ Executables are generated in these folders for each globally installed tool, alt
 > On Linux after installing a command-line tool with `dotnet tool`, the tool can be executed only from the `$HOME/.dotnet/tools` path.
 > To make the tool executable from any directory, update the `PATH` environment variable.
 > To make the updated `PATH` environment variable permanent in your shell, update your shell settings.
-> For `Bash`, this is the `$HOME/.bashrc` file. 
+> For `Bash`, this is the `$HOME/.bashrc` file.
 
 ### `--tool-path` tools
 

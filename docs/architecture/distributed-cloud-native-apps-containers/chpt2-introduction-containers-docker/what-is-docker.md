@@ -9,7 +9,7 @@ ms.date: 04/25/2024
 
 [!INCLUDE [download-alert](../includes/download-alert.md)]
 
-[Docker](https://www.docker.com) is an [open-source prject](https://github.com/docker/docker) for automating the deployment of applications as portable, self-sufficient containers that can run on the cloud or on-premises. Docker is also a [company](https://www.docker.com) that promotes and evolves this technology, working in collaboration with cloud, Linux, and Windows vendors, including Microsoft.
+[Docker](https://www.docker.com) is an [open-source project](https://github.com/docker/docker) for automating the deployment of applications as portable, self-sufficient containers that can run on the cloud or on-premises. Docker is also a [company](https://www.docker.com) that promotes and evolves this technology, working in collaboration with cloud, Linux, and Windows vendors, including Microsoft.
 
 ![Diagram showing the places Docker containers can run.](media/3-docker-containers-run-anywhere.png)
 

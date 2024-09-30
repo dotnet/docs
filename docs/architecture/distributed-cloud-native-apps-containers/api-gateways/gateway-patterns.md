@@ -28,7 +28,7 @@ While simple to implement, direct client communication would be acceptable only 
 - Duplication of cross-cutting concerns across each microservice.
 - Overly complex client code. Clients must keep track of multiple endpoints and handle failures in a resilient way.
 
-Instead, a widely accepted cloud design pattern is to implement an API Gateway Service between the front-end applications and back-end services.
+Instead, a widely accepted cloud design pattern is to implement an [API Gateway Service](../../microservices/architect-microservice-container-applications/direct-client-to-microservice-communication-versus-the-api-gateway-pattern.md) between the front-end applications and back-end services.
 
 ![Diagram showing the API Gateway pattern.](./media/api-gateway-pattern.png)
 

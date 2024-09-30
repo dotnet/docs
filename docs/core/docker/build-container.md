@@ -126,7 +126,7 @@ If you pass a number on the command line to the app, it will only count up to th
 
 ## Publish .NET app
 
-In order for the application to be suitable for an image creation it has to be built. `dotnet publish` command is most apt for this. For in-depth reference, see [dotnet build](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-build) and [dotnet publish](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-publish) commands documentation.
+In order for the app to be suitable for an image creation it has to be built. The `dotnet publish` command is most apt for this, as it builds and publishes the app. For an in-depth reference, see [dotnet build](/dotnet/core/tools/dotnet-build) and [dotnet publish](/dotnet/core/tools/dotnet-publish) commands documentation.
 
 ```dotnetcli
 dotnet publish -c Release

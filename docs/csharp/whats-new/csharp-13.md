@@ -1,7 +1,7 @@
 ---
 title: What's new in C# 13
 description: Get an overview of the new features in C# 13. Follow the release of new preview features as .NET 9 and C# 13 previews are released.
-ms.date: 08/20/2024
+ms.date: 09/30/2024
 ms.topic: whats-new
 ---
 # What's new in C# 13
@@ -35,11 +35,27 @@ The `params` modifier isn't limited to array types. You can now use `params` wit
 
 When an interface type is used, the compiler synthesizes the storage for the arguments supplied. You can learn more in the feature specification for [`params` collections](~/_csharplang/proposals/csharp-13.0/params-collections.md).
 
+For example, method declarations can declare spans as `params` parameters:
+
+```csharp
+public void Concat<T>(params ReadOnlySpan<T> items)
+{
+    for (int i = 0; i < items.Length; i++)
+    {
+        Console.Write(items[i]);
+        Console.Write(" ");
+    }
+    Console.WriteLine();
+}
+```
+
 ## New lock object
 
 The .NET 9 runtime includes a new type for thread synchronization, the <xref:System.Threading.Lock?displayProperty=fullName> type. This type provides better thread synchronization through its API. The <xref:System.Threading.Lock.EnterScope?displayProperty=nameWithType> method enters an exclusive scope. The `ref struct` returned from that supports the `Dispose()` pattern to exit the exclusive scope.
 
 The C# [`lock`](../language-reference/statements/lock.md) statement recognizes if the target of the lock is a `Lock` object. If so, it uses the updated API, rather than the traditional API using <xref:System.Threading.Monitor?displayProperty=nameWithType>. The compiler also recognizes if you convert a `Lock` object to another type and the `Monitor` based code would be generated. You can read more in the feature specification for the [new lock object](~/_csharplang/proposals/csharp-13.0/lock-object.md).
+
+This feature allows you to get the benefits of the new library type by changing the type of object you `lock`. No other code needs to change.
 
 ## New escape sequence
 
@@ -80,6 +96,8 @@ The preceding example creates an array that counts down from 9 to 0. In versions
 
 ## `ref` and `unsafe` in iterators and `async` methods
 
+This feature and the following two features enable `ref struct` types to use new constructs. You won't use these unless you write your own `ref struct` types. More likely, you'll see an indirect benefit as <xref:System.Span`1?displayProperty=nameWithType> and <xref:System.ReadOnlySpan`1?displayProperty=nameWithType> gain more functionality.
+
 Before C# 13, iterator methods (methods that use `yield return`) and `async` methods couldn't declare local `ref` variables, nor could they have an `unsafe` context.
 
 In C# 13, `async` methods can declare `ref` local variables, or local variables of a `ref struct` type. However, those variables can't be accessed across an `await` boundary. Neither can they be accessed across a `yield return` boundary.
@@ -88,19 +106,55 @@ This relaxed restriction enables the compiler to allow verifiably safe use of `r
 
 In the same fashion, C# 13 allows `unsafe` contexts in iterator methods. However, all `yield return` and `yield break` statements must be in safe contexts.
 
-## `ref struct` interfaces
-
-Before C# 13, `ref struct` types weren't allowed to implement interfaces. Beginning with C# 13, they can. To ensure ref safety rules, a `ref struct` type can't be converted to an interface type. That is a boxing conversion, and could violate ref safety. Learn more in the updates on [`ref struct` types](../language-reference/builtin-types/ref-struct.md#restrictions-for-ref-struct-types-that-implement-an-interface).
-
 ## `allows ref struct`
 
 Before C# 13, `ref struct` types couldn't be declared as the type argument for a generic type or method. Now, generic type declarations can add an anti-constraint, `allows ref struct`. This anti-constraint declares that the type argument supplied for that type parameter can be a `ref struct` type. The compiler enforces ref safety rules on all instances of that type parameter.
 
+For example, you may declare an interface like the following code:
+
+```csharp
+public class C<T> where T : allows ref struct
+{
+    // Use T as a ref struct:
+    public void M(scoped T p)
+    {
+        // The parameter p must follow ref safety rules
+    }
+}
+```
+
 This enables types such as <xref:System.Span%601?displayProperty=nameWithType> and <xref:System.ReadOnlySpan%601?displayProperty=nameWithType> to be used with generic algorithms, where applicable. You can learn more in the updates for [`where`](../language-reference/keywords/where-generic-type-constraint.md) and the programming guide article on [generic constraints](../programming-guide/generics/constraints-on-type-parameters.md).
+
+## `ref struct` interfaces
+
+Before C# 13, `ref struct` types weren't allowed to implement interfaces. Beginning with C# 13, they can. You can declare that a `ref struct` type implements interfaces. However, to ensure ref safety rules, a `ref struct` type can't be converted to an interface type. That is a boxing conversion, and could violate ref safety. From that rule, `ref struct` types can't declare methods that explicitly implement an interface method. Also, `ref struct` types must implement all methods declared in an interface, including those with a default implementation.
+
+Learn more in the updates on [`ref struct` types](../language-reference/builtin-types/ref-struct.md#restrictions-for-ref-struct-types-that-implement-an-interface).
 
 ## More partial members
 
-You can declare `partial` properties and `partial` indexers in C# 13. Partial properties and indexers generally follow the same rules as `partial` methods: you create one *declaring declaration* and one *implementing declaration*. The signatures of the two declarations must match. One restriction is that you can't use an auto-property declaration for a partial property. Properties that don't declare a body are considered the *declaring declaration*. You can learn more in the article on [partial members](../language-reference/keywords/partial-member.md).
+You can declare `partial` properties and `partial` indexers in C# 13. Partial properties and indexers generally follow the same rules as `partial` methods: you create one *declaring declaration* and one *implementing declaration*. The signatures of the two declarations must match. One restriction is that you can't use an auto-property declaration for a partial property. Properties that don't declare a body are considered the *declaring declaration*.
+
+```csharp
+public partial class C
+{
+    // Declaring declaration
+    public partial string Name { get; set; }
+}
+
+public partial class C
+{
+    // implementation declaration:
+    private string _name;
+    public partial string Name 
+    {
+        get => _name;
+        set => _name = value;
+    }
+}
+```
+
+You can learn more in the article on [partial members](../language-reference/keywords/partial-member.md).
 
 ## Overload resolution priority
 

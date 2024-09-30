@@ -68,6 +68,7 @@ Executables are generated in these folders for each globally installed tool, alt
 > To make the tool executable from any directory, update the `PATH` environment variable.
 > To make the updated `PATH` environment variable permanent in your shell, update your shell settings.
 > For `Bash`, this is the `$HOME/.bashrc` file. 
+
 ### `--tool-path` tools
 
 Tools with explicit tool paths are stored wherever you specified the `--tool-path` parameter to point to. They're stored in the same way as global tools: an executable binary with the actual binaries in a sibling `.store` directory.

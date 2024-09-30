@@ -63,7 +63,8 @@ Global tools are installed in the following directories by default when you spec
 
 Executables are generated in these folders for each globally installed tool, although the actual tool binaries are nested deep into the sibling `.store` directory.
 
-> On Linux OS after installing a command-line tool with `dotnet tool`, the tool may be executed only from the `$HOME/.dotnet/tools` path.
+> [!NOTE]
+> On Linux after installing a command-line tool with `dotnet tool`, the tool can be executed only from the `$HOME/.dotnet/tools` path.
 > To make the tool executable from any directory, you can update the environment variable called `PATH`.
 > To make the updated `PATH` environment variable permanent in your shell, you need to update your shell settings.
 > For `Bash`, this is `$HOME/.bashrc` file. 

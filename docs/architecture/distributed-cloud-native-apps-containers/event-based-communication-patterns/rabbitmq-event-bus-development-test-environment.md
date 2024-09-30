@@ -149,7 +149,7 @@ builder.AddProject<Projects.ExampleProject>()
        .WithReference(messaging);
 ```
 
-For more information, see [.NET Aspire RabbitMQ integration](https://learn.microsoft.com/dotnet/aspire/messaging/rabbitmq-client-integration)
+For more information, see [.NET Aspire RabbitMQ integration](/dotnet/aspire/messaging/rabbitmq-client-integration)
 
 ## Additional resources
 

@@ -28,8 +28,8 @@ By embracing .NET Aspire, teams can streamline their testing processes, reduce t
 
 ### Additional resources
 
-[Testing .NET Aspire apps](https://learn.microsoft.com/en-us/dotnet/aspire/fundamentals/testing)
-[.NET Aspire telemetry](https://learn.microsoft.com/en-us/dotnet/aspire/fundamentals/telemetry)
+[Testing .NET Aspire apps](/dotnet/aspire/fundamentals/testing)
+[.NET Aspire telemetry](/dotnet/aspire/fundamentals/telemetry)
 
 >[!div class="step-by-step"]
 >[Previous](challenges-of-distributed-app-testing.md)

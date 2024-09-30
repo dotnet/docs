@@ -1,7 +1,6 @@
 ---
 title: Introduction to cloud-native applications
 description: Learn about cloud-native computing
-author:
 ms.date: 05/15/2024
 ---
 

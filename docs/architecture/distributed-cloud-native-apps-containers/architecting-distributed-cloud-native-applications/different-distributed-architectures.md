@@ -1,7 +1,6 @@
 ---
 title: Different ways to architect distributed applications
 description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | Different ways to architect distributed applications
-author: 
 ms.date: 04/06/2022
 ---
 

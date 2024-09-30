@@ -99,19 +99,19 @@ public class PrimeWebDefaultRequestShould
 #### Additional resources
 
 - **Steve Smith. Testing controllers** (ASP.NET Core) \
-    [https://learn.microsoft.com/aspnet/core/mvc/controllers/testing](https://learn.microsoft.com/aspnet/core/mvc/controllers/testing)
+    [/aspnet/core/mvc/controllers/testing](/aspnet/core/mvc/controllers/testing)
 
 - **Steve Smith. Integration testing** (ASP.NET Core) \
-    [https://learn.microsoft.com/aspnet/core/test/integration-tests](https://learn.microsoft.com/aspnet/core/test/integration-tests)
+    [/aspnet/core/test/integration-tests](/aspnet/core/test/integration-tests)
 
 - **Unit testing in .NET using dotnet test** \
-    [https://learn.microsoft.com/dotnet/core/testing/unit-testing-with-dotnet-test](https://learn.microsoft.com/dotnet/core/testing/unit-testing-with-dotnet-test)
+    [/dotnet/core/testing/unit-testing-with-dotnet-test](/dotnet/core/testing/unit-testing-with-dotnet-test)
 
 - **xUnit.net**. Official site. \
     <https://xunit.net/>
 
 - **Unit test basics.** \
-    [https://learn.microsoft.com/visualstudio/test/unit-test-basics](https://learn.microsoft.com/visualstudio/test/unit-test-basics)
+    [/visualstudio/test/unit-test-basics](/visualstudio/test/unit-test-basics)
 
 - **Moq**. GitHub repo. \
     <https://github.com/moq/moq>
@@ -123,7 +123,7 @@ public class PrimeWebDefaultRequestShould
 
 As noted earlier, when you test multi-container applications, all the microservices need to be running within the Docker host or container cluster. End-to-end service tests that include multiple operations involving several microservices require you to deploy and start the whole application in the Docker host by running `docker-compose up`, or a comparable mechanism if you are using an orchestrator. Once the whole application and all its services are running, you can execute end-to-end integration and functional tests.
 
-There are a few approaches you can use. In the _docker-compose.yml_ file that you use to deploy the application at the solution level, you can expand the entry point to use [dotnet test](https://learn.microsoft.com/dotnet/core/tools/dotnet-test). You can also use another compose file that would run your tests in the image you are targeting. By using another compose file for integration tests that includes your microservices and databases on containers, you can make sure that the related data is always reset to its original state before running the tests.
+There are a few approaches you can use. In the _docker-compose.yml_ file that you use to deploy the application at the solution level, you can expand the entry point to use [dotnet test](/dotnet/core/tools/dotnet-test). You can also use another compose file that would run your tests in the image you are targeting. By using another compose file for integration tests that includes your microservices and databases on containers, you can make sure that the related data is always reset to its original state before running the tests.
 
 Once the compose application is up and running, you can take advantage of breakpoints and exceptions if you are running Visual Studio. Or you can run the integration tests automatically in your CI pipeline in Azure DevOps Services or any other CI/CD system that supports Docker containers.
 

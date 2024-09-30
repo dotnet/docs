@@ -1,7 +1,6 @@
 ---
 title: Data patterns for distributed applications
 description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | Data patterns for distributed applications
-author: 
 ms.date: 04/06/2022
 ---
 

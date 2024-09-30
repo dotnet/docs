@@ -1,7 +1,6 @@
 ---
 title: .NET Aspire overview
 description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | .NET Aspire overview
-author: 
 ms.date: 05/30/2024
 ---
 
@@ -39,8 +38,8 @@ ms.date: 05/30/2024
 
 In summary, .NET Aspire is all about providing a robust, opinionated framework that helps developers build cloud-native, distributed applications more efficiently and effectively.
 
-For more information, see [.NET Aspire overview](https://learn.microsoft.com/dotnet/aspire/get-started/aspire-overview)
+For more information, see [.NET Aspire overview](/dotnet/aspire/get-started/aspire-overview)
 
 >[!div class="step-by-step"]
->[Previous](../chpt2-introduction-containers-docker/official-container-images-tooling.md)
+>[Previous](../introduction-containers-docker/official-container-images-tooling.md)
 >[Next](orchestration.md)

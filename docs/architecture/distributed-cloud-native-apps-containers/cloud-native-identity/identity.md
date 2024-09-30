@@ -20,7 +20,7 @@ Typically, the STS is only responsible for authenticating the principal. Determi
 
 ## References
 
-- [What is the Microsoft identity platform?](https://learn.microsoft.com/en-us/entra/identity-platform/v2-overview)
+- [What is the Microsoft identity platform?](/entra/identity-platform/v2-overview)
 
 >[!div class="step-by-step"]
 >[Previous](cloud-native-security.md)

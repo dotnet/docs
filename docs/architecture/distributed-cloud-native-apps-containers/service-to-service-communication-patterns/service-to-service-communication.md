@@ -1,7 +1,6 @@
 ---
 title: Service-to-service communication 
 description: Cloud-native service to service communication patterns | Service-to-service communication
-author: 
 ms.date: 04/25/2024
 ---
 

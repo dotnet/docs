@@ -1,7 +1,6 @@
 ---
 title: .NET Aspire orchestration
 description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | .NET Aspire orchestration
-author: 
 ms.date: 05/30/2024
 ---
 
@@ -55,5 +54,5 @@ In a cloud-native environment, orchestrating microservices and other components 
    - For more information, see the topic **Service discovery**.
 
 >[!div class="step-by-step"]
->[Previous](dot-net-aspire-overview.md)
+>[Previous](dotnet-aspire-overview.md)
 >[Next](service-discovery.md)

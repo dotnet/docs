@@ -1,7 +1,6 @@
 ---
 title: Deployment patterns
 description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | Deployment patterns
-author: 
 ms.date: 06/12/2024
 ---
 
@@ -43,7 +42,7 @@ Blue-green deployment is a software release strategy that aims to minimize downt
 - **Risk mitigation**: Problems in the green revision can be easily rolled back.
 - **Continuous delivery**: Enables frequent updates without disrupting users.
 
-For more information, see [Blue-Green Deployment in Azure Container Apps](https://learn.microsoft.com/en-us/azure/container-apps/blue-green-deployment).
+For more information, see [Blue-Green Deployment in Azure Container Apps](/azure/container-apps/blue-green-deployment).
 
 ## Deployment velocity
 
@@ -138,5 +137,5 @@ CD extends CI by automatically deploying all code changes to a testing or produc
 By adhering to CI/CD practices, teams can reduce integration problems, deploy more frequently, and ensure high-quality releases. It's a journey towards more efficient and effective software development processes.
 
 >[!div class="step-by-step"]
->[Previous](deploy-with-dot-net-aspire.md)
+>[Previous](deploy-with-dotnet-aspire.md)
 >[Next](distribution-patterns.md)

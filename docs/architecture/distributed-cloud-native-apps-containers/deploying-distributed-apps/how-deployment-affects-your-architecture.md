@@ -1,7 +1,6 @@
 ---
 title: How deployment affects your architecture and vice versa
 description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | How deployment affects your architecture and vice versa
-author: 
 ms.date: 06/12/2024
 ---
 

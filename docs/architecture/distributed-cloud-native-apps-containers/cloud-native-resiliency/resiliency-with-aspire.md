@@ -1,7 +1,6 @@
 ---
 title: Resiliency with .NET
 description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | Resiliency with .NET
-author: 
 ms.date: 04/06/2022
 ---
 
@@ -16,7 +15,7 @@ Application resiliency is provided in .NET by two packages:
 
 These packages implement the resiliency strategies provided by Polly to make your applications more resilient to transient faults and other issues that can occur in distributed environments.
 
-For detailed information on how to use these packages, see [Introduction to resilient app development](https://learn.microsoft.com/en-us/dotnet/core/resilience).
+For detailed information on how to use these packages, see [Introduction to resilient app development](/dotnet/core/resilience).
 
 ## Adding fault tolerance to microservices
 
@@ -70,10 +69,10 @@ You don't need to change any of your code if the default resiliency settings mee
 ## Additional resources
 
 - **Implement resiliency in a cloud-native .NET microservice** \
-  <https://learn.microsoft.com/training/modules/microservices-resiliency-aspnet-core/>
+  </training/modules/microservices-resiliency-aspnet-core/>
 
 - **Tutorial: Add .NET Aspire to an existing .NET app** \
-  <https://learn.microsoft.com/dotnet/aspire/get-started/add-aspire-existing-app>
+  </dotnet/aspire/get-started/add-aspire-existing-app>
 
 >[!div class="step-by-step"]
 >[Previous](resilient-communication.md)

@@ -1,7 +1,6 @@
 ---
 title: Architecting distributed cloud-native applications
 description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | Architecting distributed cloud-native applications
-author: 
 ms.date: 04/06/2022
 ---
 
@@ -32,5 +31,5 @@ Every application has its own unique requirements, but there are some common pat
 In the rest of this book we'll be focusing specifically on how to design and build distributed cloud-native applications using a microservices based architecture. You'll see how the features built into .NET are designed to help you build and deploy microservices, and how to use containers to package and deploy your services successfully.
 
 >[!div class="step-by-step"]
->[Previous](../introduction-dot-net-aspire/observability-and-dashboard.md)
+>[Previous](../introduction-dotnet-aspire/observability-and-dashboard.md)
 >[Next](different-distributed-architectures.md)

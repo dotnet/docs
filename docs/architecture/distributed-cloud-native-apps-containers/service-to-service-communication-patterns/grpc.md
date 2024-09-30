@@ -1,7 +1,6 @@
 ---
 title: gRPC
 description: Cloud-native service to service communication patterns | gRPC
-author: 
 ms.date: 04/25/2024
 ---
 
@@ -93,7 +92,7 @@ The microservice reference architecture, [eShop Reference Application](https://g
 
 The eShop App Workshop adds gRPC as a worked example in the [Add shopping basket capabilities to the web site lab](https://github.com/dotnet-presentations/eshop-app-workshop/tree/main/labs/4-Add-Shopping-Basket)
 
-In the previous figure, note how eShop embraces the [Backend for Frontends pattern](https://learn.microsoft.com/azure/architecture/patterns/backends-for-frontends) (BFF) by exposing multiple API gateways.
+In the previous figure, note how eShop embraces the [Backend for Frontends pattern](/azure/architecture/patterns/backends-for-frontends) (BFF) by exposing multiple API gateways.
 
 gRPC communication requires both client and server components. The client makes synchronous gRPC calls to backend microservices, each of which implement a gRPC server. Both the client and server take advantage of the built-in gRPC plumbing from the .NET SDK. Client-side *stubs* provide the plumbing to invoke remote gRPC calls. Server-side components provide gRPC plumbing that custom service classes can inherit and consume.
 

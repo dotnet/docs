@@ -1,7 +1,6 @@
 ---
 title: Observability and dashboard 
 description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | Observability and dashboard 
-author: 
 ms.date: 04/25/2024
 ---
 

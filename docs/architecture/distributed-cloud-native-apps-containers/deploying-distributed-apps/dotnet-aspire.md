@@ -1,7 +1,6 @@
 ---
 title: Deploying distributed apps with .NET Aspire
 description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | Deploying distributed apps with .NET Aspire
-author: 
 ms.date: 06/12/2024
 ---
 
@@ -27,27 +26,27 @@ dotnet run --publisher manifest --output-path manifest.json
 
 To build tools for .NET Aspire you can create your own manifest files enabling you to deploy .NET Aspire projects to additional hosting platforms.
 
-For more information on the structure of a manifest file, see [.NET Aspire manifest format for deployment tool builders](https://learn.microsoft.com/dotnet/aspire/deployment/manifest-format)
+For more information on the structure of a manifest file, see [.NET Aspire manifest format for deployment tool builders](/dotnet/aspire/deployment/manifest-format)
 
-You can also use the extensibility of .NET Aspire to create your own reusable building blocks for your solution. For more information on creating your own .NET Aspire resources, see [Create custom resource types for .NET Aspire](https://learn.microsoft.com/dotnet/aspire/extensibility/custom-resources)
+You can also use the extensibility of .NET Aspire to create your own reusable building blocks for your solution. For more information on creating your own .NET Aspire resources, see [Create custom resource types for .NET Aspire](/dotnet/aspire/extensibility/custom-resources)
 
 ## How to deploy a .NET Aspire solution to Azure using Azure Developer CLI (azd)
 
 To deploy a NET Aspire solution to Azure, complete the following steps:
 
 1. **Create a .NET Aspire solutions**:
-   - Start by creating a .NET Aspire solution using the [.NET Aspire Starter Application template](https://learn.microsoft.com/dotnet/aspire/get-started/build-your-first-aspire-app).
+   - Start by creating a .NET Aspire solution using the [.NET Aspire Starter Application template](/dotnet/aspire/get-started/build-your-first-aspire-app).
    - This template provides a solid foundation for your distributed application.
 
 1. **Install the Azure Developer CLI (`azd`)**:
    - Install `azd` based on your operating system. It's available through `winget`, `brew`, `apt`, or directly via `curl`.
-   - Refer to the [Install Azure Developer CLI](https://learn.microsoft.com/dotnet/aspire/deployment/azure/aca-deployment) guide.
+   - Refer to the [Install Azure Developer CLI](/dotnet/aspire/deployment/azure/aca-deployment) guide.
 
 1. **Initialize the Template**:
    - Open a terminal and navigate to the *app host* project directory of your .NET Aspire solution.
    - Execute the `azd init` command to initialize your project.
    - The CLI inspects your local directory structure and determines the app type.
-   - For more information on the `azd init` command, see the [azd init documentation](https://learn.microsoft.com/dotnet/aspire/deployment/azure/aca-deployment).
+   - For more information on the `azd init` command, see the [azd init documentation](/dotnet/aspire/deployment/azure/aca-deployment).
 
    :::image type="content" source="media/azdinit.png" alt-text="A screeshot showing an azd init command execution." border="false":::
 
@@ -58,9 +57,9 @@ To deploy a NET Aspire solution to Azure, complete the following steps:
    - Select the subscription that you'd like to deploy to.
    - Select the Azure region to deploy to.
 
-For more information, see [Deploy a .NET Aspire project to Azure Container Apps](https://learn.microsoft.com/dotnet/aspire/deployment/azure/aca-deployment)
+For more information, see [Deploy a .NET Aspire project to Azure Container Apps](/dotnet/aspire/deployment/azure/aca-deployment)
 
-For an in-depth guide using GitHub Actions, check out [Deploy a .NET Aspire app using the Azure Developer CLI and GitHub Actions](https://learn.microsoft.com/dotnet/aspire/deployment/azure/aca-deployment-github-actions).
+For an in-depth guide using GitHub Actions, check out [Deploy a .NET Aspire app using the Azure Developer CLI and GitHub Actions](/dotnet/aspire/deployment/azure/aca-deployment-github-actions).
 
 ## How to deploy a .NET Aspire app to Amazon Web Services (AWS)
 

@@ -1,7 +1,6 @@
 ---
 title: Distribution patterns
 description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | Distribution patterns
-author: 
 ms.date: 06/12/2024
 ---
 
@@ -39,8 +38,8 @@ The benefits of publishers include decoupling, flexibility, and efficient commun
 
 ## Resources
 
-[Provision infrastructure with Azure deployment slots using Terraform](https://learn.microsoft.com/azure/developer/terraform/provision-infrastructure-using-azure-deployment-slots)
+[Provision infrastructure with Azure deployment slots using Terraform](/azure/developer/terraform/provision-infrastructure-using-azure-deployment-slots)
 
 >[!div class="step-by-step"]
 >[Previous](deployment-patterns.md)
->[Next](dot-net-aspire.md)
+>[Next](dotnet-aspire.md)

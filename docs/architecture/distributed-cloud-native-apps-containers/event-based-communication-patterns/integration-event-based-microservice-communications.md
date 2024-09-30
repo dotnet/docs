@@ -44,7 +44,7 @@ As an example, Let's examine how you'd implement Azure Service Bus in a .NET Asp
 
 ### Prerequisites
 
-Before you begin, ensure you have an Azure Service Bus namespace. You can learn more about creating a Service Bus namespace [here](https://learn.microsoft.com/dotnet/aspire/messaging/azure-service-bus-component).
+Before you begin, ensure you have an Azure Service Bus namespace. You can learn more about creating a Service Bus namespace [here](/dotnet/aspire/messaging/azure-service-bus-component).
 
 ### Creating the Azure Service Bus in the app host project
 
@@ -116,7 +116,7 @@ Here's an example of how you might configure the ServiceBusClient in your `appse
 }
 ```
 
-For more information, see [.NET Aspire Azure Service Bus integration](https://learn.microsoft.com/dotnet/aspire/messaging/azure-service-bus-integration?tabs=dotnet-cli)
+For more information, see [.NET Aspire Azure Service Bus integration](/dotnet/aspire/messaging/azure-service-bus-integration?tabs=dotnet-cli)
 
 ## Integration events
 
@@ -161,7 +161,7 @@ In the [observer pattern](https://en.wikipedia.org/wiki/Observer_pattern), your 
 
 ### Publish/subscribe pattern
 
-The purpose of the [publish/subscribe (pub/sub) pattern](https://learn.microsoft.com/previous-versions/msp-n-p/ff649664(v=pandp.10)) is the same as the observer pattern: you want to notify other services when certain events take place. But there is an important difference between the observer and pub/sub patterns. In the observer pattern, the broadcast is performed directly from the observable to the observers, so they "know" each other. But when using a pub/sub pattern, there is a third component, called broker, or message broker or event bus, which is known by both the publisher and subscriber. Therefore, when using the pub/sub pattern the publisher and the subscribers are precisely decoupled thanks to the event bus or message broker.
+The purpose of the [publish/subscribe (pub/sub) pattern](/previous-versions/msp-n-p/ff649664(v=pandp.10)) is the same as the observer pattern: you want to notify other services when certain events take place. But there is an important difference between the observer and pub/sub patterns. In the observer pattern, the broadcast is performed directly from the observable to the observers, so they "know" each other. But when using a pub/sub pattern, there is a third component, called broker, or message broker or event bus, which is known by both the publisher and subscriber. Therefore, when using the pub/sub pattern the publisher and the subscribers are precisely decoupled thanks to the event bus or message broker.
 
 ### The middleman or event bus
 
@@ -214,7 +214,7 @@ The `Subscribe` methods (you can have several implementations depending on the a
 ## Additional resources
 
 - **Azure Service Bus** \
-  [https://learn.microsoft.com/azure/service-bus-messaging/](/azure/service-bus-messaging/)
+  [/azure/service-bus-messaging/](/azure/service-bus-messaging/)
   
 > [!div class="step-by-step"]
 > [Previous](../service-to-service-communication-patterns/service-mesh-communication-infrastructure.md)

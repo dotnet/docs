@@ -35,7 +35,7 @@ The free Microsoft e-book [Modernize existing .NET applications with Azure cloud
 
 Monolithic apps that are non-critical might benefit from a quick **lift-and-shift** migration. Here, the on-premises workload is moved to a cloud-based virtual machine (VM), without changes. This approach uses the [IaaS (Infrastructure as a Service) model](https://azure.microsoft.com/resources/cloud-computing-dictionary/what-is-iaas/). Azure includes several tools such as [Azure Migrate](https://azure.microsoft.com/services/azure-migrate/), [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery/), and [Azure Database Migration Service](https://azure.microsoft.com/campaigns/database-migration/) to help streamline the move. While this strategy can yield some cost savings, such applications typically weren't designed to unlock and leverage the benefits of cloud computing.
 
-Legacy apps that are critical to the business often benefit from an enhanced **Cloud Optimized** migration. This approach includes deployment optimizations that enable key cloud services, without changing the core architecture of the application. For example, you might [containerize](https://learn.microsoft.com/virtualization/windowscontainers/about/) the application and deploy it to a container orchestrator, like [Azure Kubernetes Services](https://azure.microsoft.com/services/kubernetes-service/), discussed later in this book. Once in the cloud, the application can consume cloud backing services such as databases, message queues, monitoring, and distributed caching.
+Legacy apps that are critical to the business often benefit from an enhanced **Cloud Optimized** migration. This approach includes deployment optimizations that enable key cloud services, without changing the core architecture of the application. For example, you might [containerize](/virtualization/windowscontainers/about/) the application and deploy it to a container orchestrator, like [Azure Kubernetes Services](https://azure.microsoft.com/services/kubernetes-service/), discussed later in this book. Once in the cloud, the application can consume cloud backing services such as databases, message queues, monitoring, and distributed caching.
 
 Finally, monolithic apps that provide strategic enterprise functions might best benefit from a cloud-native approach. This approach provides agility and velocity but comes at a cost of replatforming, rearchitecting, and rewriting code. Over time, a legacy application could be decomposed into microservices, containerized, and ultimately _replatformed_ into a cloud-native architecture.
 
@@ -61,17 +61,17 @@ With the introduction behind, we now dive into a much more detailed look at clou
 
 - [Cloud Native Computing Foundation](https://www.cncf.io/)
 - [.NET Microservices: Architecture for Containerized .NET applications](https://dotnet.microsoft.com/download/thank-you/microservices-architecture-ebook)
-- [Microsoft Azure Well-Architected Framework](https://learn.microsoft.com/azure/well-architected/)
+- [Microsoft Azure Well-Architected Framework](/azure/well-architected/)
 - [Modernize existing .NET applications with Azure cloud and Windows Containers](https://dotnet.microsoft.com/download/thank-you/modernizing-existing-net-apps-ebook)
 - [Cloud Native Patterns by Cornelia Davis](https://www.manning.com/books/cloud-native-patterns)
 - [Cloud native applications: Ship faster, reduce risk, and grow your business](https://tanzu.vmware.com/cloud-native)
 - [Dapr documents](https://dapr.io/)
 - [Beyond the Twelve-Factor Application](https://content.pivotal.io/blog/beyond-the-twelve-factor-app)
-- [What is Infrastructure as Code](https://learn.microsoft.com/devops/deliver/what-is-infrastructure-as-code)
+- [What is Infrastructure as Code](/devops/deliver/what-is-infrastructure-as-code)
 - [Uber Engineering's Micro Deploy: Deploying Daily with Confidence](https://www.uber.com/blog/micro-deploy-code/)
 - [How Netflix Deploys Code](https://www.infoq.com/news/2013/06/netflix/)
 - [Overload Control for Scaling WeChat Microservices](https://www.cs.columbia.edu/~ruigu/papers/socc18-final100.pdf)
 
 >[!div class="step-by-step"]
 >[Previous](what-is-cloud-native.md)
->[Next](../chpt2-introduction-containers-docker/what-are-containers.md)
+>[Next](../introduction-containers-docker/what-are-containers.md)

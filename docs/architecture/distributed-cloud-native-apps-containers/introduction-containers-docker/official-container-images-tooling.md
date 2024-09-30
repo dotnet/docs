@@ -1,7 +1,6 @@
 ---
 title: Official .NET container images & SDK tooling
 description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | Official .NET container images & SDK tooling
-author: 
 ms.date: 04/25/2024
 ---
 
@@ -47,4 +46,4 @@ You can find all the available docker images in [dotnet-docker](https://github.c
 
 >[!div class="step-by-step"]
 >[Previous](container-terminology.md)
->[Next](../introduction-dot-net-aspire/dot-net-aspire-overview.md)
+>[Next](../introduction-dotnet-aspire/dotnet-aspire-overview.md)

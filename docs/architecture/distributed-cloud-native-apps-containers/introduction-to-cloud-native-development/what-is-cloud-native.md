@@ -92,7 +92,7 @@ In the book, [Beyond the Twelve-Factor App](https://content.pivotal.io/blog/beyo
 | :-------- | :-------- |
 | 13 - API First | Make everything a service. Assume your code will be consumed by a front-end client, gateway, or another service. |
 | 14 - Telemetry | On a workstation, you have deep visibility into your application and its behavior. In the cloud, you don't. Make sure your design includes the collection of monitoring, domain-specific, and health data. |
-| 15 - Authentication and Authorization  | Implement identity from the start. Consider [RBAC (role-based access control)](https://learn.microsoft.com/azure/role-based-access-control/overview) features available in public clouds.  |
+| 15 - Authentication and Authorization  | Implement identity from the start. Consider [RBAC (role-based access control)](/azure/role-based-access-control/overview) features available in public clouds.  |
 
 We'll refer to many of the 12+ factors in this chapter and throughout the book.
 
@@ -100,17 +100,17 @@ We'll refer to many of the 12+ factors in this chapter and throughout the book.
 
 Designing and deploying cloud-based workloads can be challenging, especially when implementing cloud-native architecture. Microsoft provides industry standard best practices to help you and your team deliver robust cloud solutions.
 
-The [Microsoft Well-Architected Framework](https://learn.microsoft.com/azure/well-architected/) provides a set of guiding tenets that can be used to improve the quality of a cloud-native workload. The framework consists of five pillars of architecture excellence:
+The [Microsoft Well-Architected Framework](/azure/well-architected/) provides a set of guiding tenets that can be used to improve the quality of a cloud-native workload. The framework consists of five pillars of architecture excellence:
 
 |    Tenets | Description  |
 | :-------- | :-------- |
-| [Cost management](https://learn.microsoft.com/azure/well-architected/cost-optimization/) | Focus on generating incremental value early. Apply *Build-Measure-Learn* principles to accelerate time to market while avoiding capital-intensive solutions. Using a pay-as-you-go strategy, invest as you scale out, rather than delivering a large investment up front. |
-| [Operational excellence](https://learn.microsoft.com/azure/well-architected/operational-excellence/) | Automate the environment and operations to increase speed and reduce human error. Roll problem updates back or forward quickly. Implement monitoring and diagnostics from the start. |
-| [Performance efficiency](https://learn.microsoft.com/azure/well-architected/performance-efficiency/) | Efficiently meet demands placed on your workloads. Favor horizontal scaling (scaling out) and design it into your systems. Continually conduct performance and load testing to identify potential bottlenecks. |
+| [Cost management](/azure/well-architected/cost-optimization/) | Focus on generating incremental value early. Apply *Build-Measure-Learn* principles to accelerate time to market while avoiding capital-intensive solutions. Using a pay-as-you-go strategy, invest as you scale out, rather than delivering a large investment up front. |
+| [Operational excellence](/azure/well-architected/operational-excellence/) | Automate the environment and operations to increase speed and reduce human error. Roll problem updates back or forward quickly. Implement monitoring and diagnostics from the start. |
+| [Performance efficiency](/azure/well-architected/performance-efficiency/) | Efficiently meet demands placed on your workloads. Favor horizontal scaling (scaling out) and design it into your systems. Continually conduct performance and load testing to identify potential bottlenecks. |
 | [Reliability](/azure/architecture/framework/#reliability)  | Build workloads that are both resilient and available. Resiliency enables workloads to recover from failures and continue functioning. Availability ensures users access to your workload at all times. Design applications to expect failures and recover from them. |
-| [Security](https://learn.microsoft.com/azure/well-architected/reliability/) | Implement security across the entire lifecycle of an application, from design and implementation to deployment and operations. Pay close attention to identity management, infrastructure access, application security, and data sovereignty and encryption. |
+| [Security](/azure/well-architected/reliability/) | Implement security across the entire lifecycle of an application, from design and implementation to deployment and operations. Pay close attention to identity management, infrastructure access, application security, and data sovereignty and encryption. |
 
-To get started, Microsoft provides a set of [online assessments](https://learn.microsoft.com/assessments/azure-architecture-review/) to help you assess your current cloud workloads against the five well-architected pillars.
+To get started, Microsoft provides a set of [online assessments](/assessments/azure-architecture-review/) to help you assess your current cloud workloads against the five well-architected pillars.
 
 ## Microservices
 
@@ -175,7 +175,7 @@ Resiliency is covered in the [Cloud-native resiliency](../cloud-native-resilienc
 
 By design, each microservice encapsulates its own data, exposing operations via its public interface. If so, how do you query data or implement a transaction across multiple services?
 
-Distributed data is covered in the [Cloud-native data patterns](../chpt8-data-patterns/distributed-data.md) chapter.
+Distributed data is covered in the [Cloud-native data patterns](../data-patterns/distributed-data.md) chapter.
 
 #### *Secrets*
 
@@ -286,23 +286,23 @@ On a final thought, backing services also promote the **Statelessness** principl
 
 >*Factor \#6* specifies that, "Each microservice should execute in its own process, isolated from other running services. Externalize required state to a backing service such as a distributed cache or data store."
 
-Backing services are discussed in [Cloud-native data patterns](../chpt8-data-patterns/distributed-data.md) and [Cloud-native communication patterns](../communication-patterns/communication-patterns.md).
+Backing services are discussed in [Cloud-native data patterns](../data-patterns/distributed-data.md) and [Cloud-native communication patterns](../communication-patterns/communication-patterns.md).
 
 ## Automation
 
 As you've seen, cloud-native systems embrace microservices, containers, and modern system design to achieve speed and agility. But that's only part of the story. How do you provision the cloud environments upon which these systems run? How do you rapidly deploy app features and updates? How do you round out the full picture?
 
-This is where the widely accepted practice of [Infrastructure as Code](https://learn.microsoft.com/devops/deliver/what-is-infrastructure-as-code), or IaC, comes in.
+This is where the widely accepted practice of [Infrastructure as Code](/devops/deliver/what-is-infrastructure-as-code), or IaC, comes in.
 
 With IaC, you automate platform provisioning and application deployment. You essentially apply software engineering practices such as testing and versioning to your DevOps practices. Your infrastructure and deployments are automated, consistent, and repeatable.
 
 ### Automating infrastructure
 
-Tools like [Azure Resource Manager](https://learn.microsoft.com/azure/azure-resource-manager/management/overview), [Azure Bicep](https://learn.microsoft.com/azure/azure-resource-manager/bicep/overview), [Terraform](https://www.terraform.io/) from HashiCorp, and the [Azure CLI](https://learn.microsoft.com/cli/azure/), enable you to script the cloud infrastructure you require declaratively. Resource names, locations, capacities, and secrets are parameterized and dynamic. The script is versioned and checked into source control as an artifact of your project. You invoke the script to provision a consistent and repeatable infrastructure across system environments, such as QA, staging, and production.
+Tools like [Azure Resource Manager](/azure/azure-resource-manager/management/overview), [Azure Bicep](/azure/azure-resource-manager/bicep/overview), [Terraform](https://www.terraform.io/) from HashiCorp, and the [Azure CLI](/cli/azure/), enable you to script the cloud infrastructure you require declaratively. Resource names, locations, capacities, and secrets are parameterized and dynamic. The script is versioned and checked into source control as an artifact of your project. You invoke the script to provision a consistent and repeatable infrastructure across system environments, such as QA, staging, and production.
 
 Under the hood, IaC is idempotent, meaning that you can run the same script over and over without side effects. If the team needs to make a change, they edit and rerun the script. Only the updated resources are affected.
 
-In the article, [What is Infrastructure as Code](https://learn.microsoft.com/devops/deliver/what-is-infrastructure-as-code), Author Sam Guckenheimer describes how, "Teams who implement IaC can deliver stable environments rapidly and at scale. They avoid manual configuration of environments and enforce consistency by representing the desired state of their environments via code. Infrastructure deployments with IaC are repeatable and prevent runtime issues caused by configuration drift or missing dependencies. DevOps teams can work together with a unified set of practices and tools to deliver applications and their supporting infrastructure rapidly, reliably, and at scale."
+In the article, [What is Infrastructure as Code](/devops/deliver/what-is-infrastructure-as-code), Author Sam Guckenheimer describes how, "Teams who implement IaC can deliver stable environments rapidly and at scale. They avoid manual configuration of environments and enforce consistency by representing the desired state of their environments via code. Infrastructure deployments with IaC are repeatable and prevent runtime issues caused by configuration drift or missing dependencies. DevOps teams can work together with a unified set of practices and tools to deliver applications and their supporting infrastructure rapidly, reliably, and at scale."
 
 ### Automating deployments
 

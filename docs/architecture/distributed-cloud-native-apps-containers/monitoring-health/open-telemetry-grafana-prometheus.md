@@ -105,7 +105,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddObservability("Products", builder.Configuration);
 ```
 
-# View telemetry
+## View telemetry
 
 A common way to view the data collected through OpenTelemetry, in addition to Azure Monitor, is by using Prometheus and Grafana.
 

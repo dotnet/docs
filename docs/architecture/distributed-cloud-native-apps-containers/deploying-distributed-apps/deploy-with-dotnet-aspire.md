@@ -1,7 +1,6 @@
 ---
 title: Deployment with or without .Net Aspire
 description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | Deployment with or without the .Net Aspire
-author: 
 ms.date: 06/12/2024
 ---
 
@@ -31,9 +30,9 @@ In conclusion, while .NET Aspire offers a more automated and error-free deployme
 
 ## Additional resources
 
-- [.NET Aspire deployments](https://learn.microsoft.com/en-us/dotnet/aspire/deployment/overview)
-- [Deploy a .NET Aspire apps to Azure Container Apps](https://learn.microsoft.com/en-us/dotnet/aspire/deployment/azure/aca-deployment-azd-in-depth)
-- [Deploy distributed .NET apps to the cloud with .NET Aspire and Azure](https://learn.microsoft.com/en-us/shows/azure-developers/deploy-distributed-dotnet-apps-to-the-cloud-with-dotnet-aspire-and-azure-container-apps)
+- [.NET Aspire deployments](/dotnet/aspire/deployment/overview)
+- [Deploy a .NET Aspire apps to Azure Container Apps](/dotnet/aspire/deployment/azure/aca-deployment-azd-in-depth)
+- [Deploy distributed .NET apps to the cloud with .NET Aspire and Azure](/shows/azure-developers/deploy-distributed-dotnet-apps-to-the-cloud-with-dotnet-aspire-and-azure-container-apps)
 - [How to deploy .NET Aspire apps to Azure Container Apps](https://devblogs.microsoft.com/dotnet/how-to-deploy-dotnet-aspire-apps-to-azure-container-apps/)
 - [Deploy apps to Azure Container Apps easily with .NET Aspire](https://techcommunity.microsoft.com/t5/apps-on-azure-blog/deploy-apps-to-azure-container-apps-easily-with-net-aspire/ba-p/4032711)
 

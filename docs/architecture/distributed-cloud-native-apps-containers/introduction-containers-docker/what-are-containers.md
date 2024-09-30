@@ -1,7 +1,6 @@
 ---
 title: What are containers?
 description: Architecture for Distributed Cloud-Native Apps with .NET & Containers | What are containers
-author: 
 ms.date: 04/25/2024
 ---
 

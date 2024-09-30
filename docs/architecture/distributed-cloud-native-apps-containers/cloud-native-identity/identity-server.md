@@ -102,7 +102,7 @@ Many cloud-native applications use server-side APIs and rich client single page 
 ## References
 
 - [IdentityServer documentation](https://docs.duendesoftware.com/identityserver/v7/)
-- [Application types](https://learn.microsoft.com/en-gb/entra/identity-platform/v2-app-types)
+- [Application types](/en-gb/entra/identity-platform/v2-app-types)
 - [JavaScript OIDC client](https://docs.duendesoftware.com/identityserver/v7/quickstarts/js_clients/)
 
 >[!div class="step-by-step"]

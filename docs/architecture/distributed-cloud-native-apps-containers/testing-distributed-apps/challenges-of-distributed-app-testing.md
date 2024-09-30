@@ -14,7 +14,7 @@ Here are key obstacles faced during distributed app testing and strategies to ov
 
 1. **Network latency and communication issues**
     - **Challenge**: Distributed apps rely on network communication between components. Latency, packet loss, and network congestion can impact performance and reliability.
-    - **Solution**: Simulate real-world network conditions during testing. Use tools like [JMeter](https://learn.microsoft.com/azure/load-testing/how-to-create-and-run-load-test-with-jmeter-script?tabs=portal) or [Chaos engineering](https://learn.microsoft.com/azure/chaos-studio/chaos-studio-overview) to inject latency and test edge cases.
+    - **Solution**: Simulate real-world network conditions during testing. Use tools like [JMeter](/azure/load-testing/how-to-create-and-run-load-test-with-jmeter-script?tabs=portal) or [Chaos engineering](/azure/chaos-studio/chaos-studio-overview) to inject latency and test edge cases.
 
 1. **Data consistency and synchronization**
     - **Challenge**: Distributed systems often involve data replication across nodes. Ensuring consistency during updates or failures is complex.
@@ -34,11 +34,11 @@ Here are key obstacles faced during distributed app testing and strategies to ov
 
 1. **Testing across environments**
     - **Challenge**: Distributed apps run on diverse environments, such as in the cloud, on-premises, and in different container host systems. Ensuring consistency is crucial.
-    - **Solution**: Use **infrastructure as code** tools, such as [Terraform](https://learn.microsoft.com/azure/developer/terraform/overview) or [Bicep](https://learn.microsoft.com/azure/azure-resource-manager/bicep/overview?tabs=bicep)) to manage environments. Test across different setups.
+    - **Solution**: Use **infrastructure as code** tools, such as [Terraform](/azure/developer/terraform/overview) or [Bicep](/azure/azure-resource-manager/bicep/overview?tabs=bicep)) to manage environments. Test across different setups.
 
 1. **Monitoring and observability**
     - **Challenge**: Distributed systems generate vast logs and metrics. Identifying issues and bottlenecks requires effective monitoring.
-    - **Solution**: Set up **centralized logging** tools, such as [ELK stack](https://learn.microsoft.com/azure/virtual-machines/linux/tutorial-elasticsearch) or [Prometheus](https://learn.microsoft.com/azure/azure-monitor/essentials/prometheus-metrics-overview). Use [distributed tracing](https://learn.microsoft.com/azure/azure-monitor/app/distributed-trace-data) to visualize request flows.
+    - **Solution**: Set up **centralized logging** tools, such as [ELK stack](/azure/virtual-machines/linux/tutorial-elasticsearch) or [Prometheus](/azure/azure-monitor/essentials/prometheus-metrics-overview). Use [distributed tracing](/azure/azure-monitor/app/distributed-trace-data) to visualize request flows.
 
 >[!div class="step-by-step"]
 >[Previous](../cloud-native-identity/keycloak.md)

@@ -1,7 +1,6 @@
 ---
 title: Service Mesh communication infrastructure
 description: Cloud-native service to service communication patterns | Service Mesh communication infrastructure
-author: 
 ms.date: 04/25/2024
 ---
 
@@ -37,12 +36,12 @@ In this chapter, we discussed cloud-native communication patterns. We started by
 
 Special emphasis was on managed Azure services that can help implement communication in cloud-native systems:
 
-- [Azure Application Gateway](https://learn.microsoft.com/azure/application-gateway/overview)
+- [Azure Application Gateway](/azure/application-gateway/overview)
 - [Azure API Management](https://azure.microsoft.com/services/api-management/)
 - [Azure SignalR Service](https://azure.microsoft.com/services/signalr-service/)
-- [Azure Storage Queues](https://learn.microsoft.com/azure/storage/queues/storage-queues-introduction)
-- [Azure Service Bus](https://learn.microsoft.com/azure/service-bus-messaging/service-bus-messaging-overview)
-- [Azure Event Grid](https://learn.microsoft.com/azure/event-grid/overview)
+- [Azure Storage Queues](/azure/storage/queues/storage-queues-introduction)
+- [Azure Service Bus](/azure/service-bus-messaging/service-bus-messaging-overview)
+- [Azure Event Grid](/azure/event-grid/overview)
 - [Azure Event Hub](https://azure.microsoft.com/services/event-hubs/)
 
 We next move to distributed data in cloud-native systems and the benefits and challenges that it presents.
@@ -51,7 +50,7 @@ We next move to distributed data in cloud-native systems and the benefits and ch
 
 - [.NET Microservices: Architecture for Containerized .NET applications](https://dotnet.microsoft.com/download/thank-you/microservices-architecture-ebook)
 
-- [Designing Interservice Communication for Microservices](https://learn.microsoft.com/azure/architecture/microservices/design/interservice-communication)
+- [Designing Interservice Communication for Microservices](/azure/architecture/microservices/design/interservice-communication)
 
 - [Azure SignalR Service, a fully managed service to add real-time functionality](https://azure.microsoft.com/blog/azure-signalr-service-a-fully-managed-service-to-add-real-time-functionality/)
 
@@ -59,9 +58,9 @@ We next move to distributed data in cloud-native systems and the benefits and ch
 
 - [gRPC Documentation](https://grpc.io/docs/guides/)
 
-- [Comparing gRPC Services with HTTP APIs](https://learn.microsoft.com/aspnet/core/grpc/comparison?view=aspnetcore-8.0)
+- [Comparing gRPC Services with HTTP APIs](/aspnet/core/grpc/comparison?view=aspnetcore-8.0)
 
-- [Building gRPC Services with .NET video](https://learn.microsoft.com/Shows/The-Cloud-Native-Show/Building-Microservices-with-gRPC-and-NET)
+- [Building gRPC Services with .NET video](/Shows/The-Cloud-Native-Show/Building-Microservices-with-gRPC-and-NET)
 
 >[!div class="step-by-step"]
 >[Previous](grpc.md)

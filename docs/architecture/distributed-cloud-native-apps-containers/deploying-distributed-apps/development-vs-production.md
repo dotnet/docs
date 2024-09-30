@@ -1,7 +1,6 @@
 ---
 title: Development versus production and what .NET Aspire can do for you
 description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | Development versus production and what .NET Aspire can do for you
-author: 
 ms.date: 06/12/2024
 ---
 
@@ -29,4 +28,4 @@ In contrast, the production environment is where the app is available to end-use
 
 >[!div class="step-by-step"]
 >[Previous](how-deployment-affects-your-architecture.md)
->[Next](deploy-with-dot-net-aspire.md)
+>[Next](deploy-with-dotnet-aspire.md)

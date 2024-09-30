@@ -1,7 +1,6 @@
 ---
 title: What is Docker?
 description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | What is Docker
-author: 
 ms.date: 04/25/2024
 ---
 
@@ -21,7 +20,7 @@ Developers can use development environments on Windows, Linux, or macOS. On the 
 
 To host containers in development environments and provide additional developer tools, Docker ships Docker Desktop for [Windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows) or for [macOS](https://hub.docker.com/editions/community/docker-ce-desktop-mac). These products install the necessary VM (the Docker host) to host the containers.
 
-To run [Windows Containers](https://learn.microsoft.com/virtualization/windowscontainers/about/), there are two types of runtimes:
+To run [Windows Containers](/virtualization/windowscontainers/about/), there are two types of runtimes:
 
 Windows Server Containers provide application isolation through process and namespace isolation technology. A Windows Server Container shares a kernel with the container host and with all containers running on the host.
 

@@ -585,7 +585,7 @@ enum MyEnum
 }
 ```
 
-### Streaming multiple JSON documents
+### Stream multiple JSON documents
 
 <xref:System.Text.Json.Utf8JsonReader?displayProperty=nameWithType> now supports reading multiple, whitespace-separated JSON documents from a single buffer or stream. By default, it will throw an exception if it detects any non-whitespace characters that are trailing the first top-level document. This behavior can be changed using the <xref:System.Text.Json.JsonReaderOptions.AllowMultipleValues> flag:
 

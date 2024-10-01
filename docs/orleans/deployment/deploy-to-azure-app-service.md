@@ -135,7 +135,7 @@ Once Azure App Service has been configured with virtual network (VNet) integrati
 - Which IP address other hosts in your virtual network can use to contact a given app instance; and
 - Which ports on that IP address will be routed to that app instance
 
-That the `WEBSITE_PRIVATE_IP` variable specifies an IP which is routable from the VNet, but not necessarily an IP address which your app instance can directly bind to. For this reason, you should instruct your host to bind to all internal addresses by passing `listenOnAnyHostAddress: true` to the `ConfigureEndpoints` method call, as in the following example which configures an `ISiloBuilder` instance to consume the injected environment variables and to listen on the correct interfaces:
+The `WEBSITE_PRIVATE_IP` variable specifies an IP which is routable from the VNet, but not necessarily an IP address which your app instance can directly bind to. For this reason, you should instruct your host to bind to all internal addresses by passing `listenOnAnyHostAddress: true` to the `ConfigureEndpoints` method call, as in the following example which configures an `ISiloBuilder` instance to consume the injected environment variables and to listen on the correct interfaces:
 
 ```csharp
 var endpointAddress = IPAddress.Parse(builder.Configuration["WEBSITE_PRIVATE_IP"]!);

@@ -26,7 +26,7 @@ For more information, see [What's new in the .NET 9 runtime](runtime.md).
 
 ## .NET libraries
 
-<xref:System.Text.Json> has new options that let you customize the indentation character and size of written JSON. It also includes a new <xref:System.Text.Json.JsonSerializerOptions.Web?displayProperty=nameWithType> singleton that makes it easier to serialize using web defaults.
+<xref:System.Text.Json> adds support for nullable reference type annotations and exporting JSON schemas from types. It adds new options that let you customize the indentation of written JSON and read multiple root-level JSON values from a single stream.
 
 In LINQ, the new methods <xref:System.Linq.Enumerable.CountBy%2A> and <xref:System.Linq.Enumerable.AggregateBy%2A> make it possible to aggregate state by key without needing to allocate intermediate groupings via <xref:System.Linq.Enumerable.GroupBy%2A>.
 

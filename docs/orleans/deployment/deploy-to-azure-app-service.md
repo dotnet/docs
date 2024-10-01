@@ -114,7 +114,7 @@ When items are in your cart, you can view them and change their quantity, and ev
 
 ## Deployment overview
 
-Orleans applications are designed to scale up and scale out efficiently. To accomplish this, instances of your application communicate directly with each other via TCP sockets and therefore Orleans requires network connectivity between silo. Azure App Service supports this requirement via [virtual network integration](https://learn.microsoft.com/azure/app-service/overview-vnet-integration) and additional configuration instructing App Service to allocate private network ports for your app instances.
+Orleans applications are designed to scale up and scale out efficiently. To accomplish this, instances of your application communicate directly with each other via TCP sockets and therefore Orleans requires network connectivity between silos. Azure App Service supports this requirement via [virtual network integration](https://learn.microsoft.com/azure/app-service/overview-vnet-integration) and additional configuration instructing App Service to allocate private network ports for your app instances.
 
 When deploying Orleans to Azure App Service, we need to take the following actions to ensure that hosts can communicate with eachother:
 

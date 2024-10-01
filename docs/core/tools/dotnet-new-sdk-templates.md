@@ -13,7 +13,7 @@ When you install the [.NET SDK](https://dotnet.microsoft.com/download), you rece
 dotnet new list
 ```
 
-[!INCLUDE [](../../../includes/templates.md)]
+[!INCLUDE [templates](../../../includes/templates.md)]
 
 ## Template options
 

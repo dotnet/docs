@@ -515,7 +515,8 @@ The generated schema is:
         "PublishYear": {
             "type": "integer"
         }
-    }
+    },
+    "required": ["Title"]
 }
 ```
 
@@ -527,11 +528,14 @@ The following code shows how to set the option (the `Book` type definition is sh
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Serialization.cs" id="RespectNullable":::
 
-You can also enable this setting globally using the `System.Text.Json.JsonSerializerOptions.RespectNullableAnnotations` feature switch in your project file (for example, _.csproj_ file):
+> [!NOTE]
+> Due to how nullability annotations are represented in IL, the feature is restricted to annotations of non-generic properties. Please refer to the relevant documentation for more details.
+
+You can also enable this setting globally using the `System.Text.Json.Serialization.RespectNullableAnnotationsDefault` feature switch in your project file (for example, _.csproj_ file):
 
 ```xml
 <ItemGroup>
-  <RuntimeHostConfigurationOption Include="System.Text.Json.JsonSerializerOptions.RespectNullableAnnotations" Value="true" />
+  <RuntimeHostConfigurationOption Include="System.Text.Json.Serialization.RespectNullableAnnotationsDefault" Value="true" />
 </ItemGroup>
 ```
 
@@ -549,11 +553,11 @@ The `MyPoco` type is defined as follows:
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Serialization.cs" id="Poco":::
 
-You can also enable this setting globally using the `System.Text.Json.JsonSerializerOptions.RespectRequiredConstructorParameters` feature switch in your project file (for example, _.csproj_ file):
+You can also enable this setting globally using the `System.Text.Json.Serialization.RespectRequiredConstructorParametersDefault` feature switch in your project file (for example, _.csproj_ file):
 
 ```xml
 <ItemGroup>
-  <RuntimeHostConfigurationOption Include="System.Text.Json.JsonSerializerOptions.RespectRequiredConstructorParameters" Value="true" />
+  <RuntimeHostConfigurationOption Include="System.Text.Json.Serialization.RespectRequiredConstructorParametersDefault" Value="true" />
 </ItemGroup>
 ```
 
@@ -565,40 +569,66 @@ The <xref:System.Json.JsonObject> type now exposes ordered dictionary&ndash;like
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Serialization.cs" id="PropertyOrder":::
 
-### Additional contract metadata APIs
+### Customizing enum member names
 
-The JSON contract API now exposes additional metadata including constructor metadata information and improved attribute provider support for the case of the source generator.
-
-The new APIs have the following shape:
+The new <xref:System.Text.Json.Serialization.JsonStringEnumMemberNameAttribute?displayProperty=nameWithType> attribute can be used to customize the names of individual enum members for types that are serialized as strings:
 
 ```csharp
-namespace System.Text.Json.Serialization.Metadata;
+JsonSerializer.Serialize(MyEnum.Value1 | MyEnum.Value2); // "Value1, Custom enum value"
 
-public partial class JsonTypeInfo
+[Flags, JsonConverter(typeof(JsonStringEnumConverter))]
+enum MyEnum
 {
-    // Typically the ConstructorInfo of the active deserialization constructor.
-    public ICustomAttributeProvider? ConstructorAttributeProvider { get; }
+    Value1 = 1,
+    [JsonStringEnumMemberName("Custom enum value")]
+    Value2 = 2,
 }
+```
 
-public partial class JsonPropertyInfo
-{
-    public Type DeclaringType { get; }
-    // Typically the FieldInfo or PropertyInfo of the property.
-    public ICustomAttributeProvider? AttributeProvider { get; set; }
-    // The constructor parameter that has been associated with the current property.
-    public JsonParameterInfo? AssociatedParameter { get; }
-}
+### Streaming multiple JSON documents
 
-public sealed class JsonParameterInfo
+<xref:System.Text.Json.Utf8JsonReader?displayProperty=nameWithType> now supports reading multiple, whitespace-separated JSON documents from a single buffer or stream. By default, it will throw an exception if it detects any non-whitespace characters that are trailing the first top-level document. This behavior can be changed using the <xref:System.Text.Json.JsonReaderOptions.AllowMultipleValues> flag:
+
+```csharp
+JsonReaderOptions options = new() { AllowMultipleValues = true };
+Utf8JsonReader reader = new("null {} 1 \r\n [1,2,3]"u8, options);
+
+reader.Read();
+Console.WriteLine(reader.TokenType); // Null
+
+reader.Read();
+Console.WriteLine(reader.TokenType); // StartObject
+reader.Skip();
+
+reader.Read();
+Console.WriteLine(reader.TokenType); // Number
+
+reader.Read();
+Console.WriteLine(reader.TokenType); // StartArray
+reader.Skip();
+
+Console.WriteLine(reader.Read()); // False
+```
+
+This additionally makes it possible to read JSON from payloads that may contain trailing data that is invalid JSON:
+
+```csharp
+Utf8JsonReader reader = new("[1,2,3]    <NotJson/>"u8, new() { AllowMultipleValues = true });
+
+reader.Read();
+reader.Skip(); // Success
+reader.Read(); // throws JsonReaderException
+```
+
+When it comes to streaming deserialization, we have included a new <xref:System.Text.Json.JsonSerializer.DeserializeAsyncEnumerable> overload that makes streaming multiple top-level values possible. By default, the method will attempt to stream elements that are contained in a top-level JSON array. This behavior can be toggled using the new `topLevelValues` flag:
+
+```csharp
+ReadOnlySpan<byte> utf8Json = """[0] [0,1] [0,1,1] [0,1,1,2] [0,1,1,2,3]"""u8;
+using var stream = new MemoryStream(utf8Json.ToArray());
+
+await foreach (int[] item in JsonSerializer.DeserializeAsyncEnumerable<int[]>(stream, topLevelValues: true))
 {
-    public Type DeclaringType { get; }
-    public int Position { get; }
-    public Type ParameterType { get; }
-    public bool HasDefaultValue { get; }
-    public object? DefaultValue { get; }
-    public bool IsNullable { get; }
-    // Typically the ParameterInfo of the parameter.
-    public ICustomAttributeProvider? AttributeProvider { get; }
+    Console.WriteLine(item.Length);
 }
 ```
 

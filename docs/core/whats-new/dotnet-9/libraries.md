@@ -620,7 +620,7 @@ reader.Skip(); // Success
 reader.Read(); // throws JsonReaderException
 ```
 
-When it comes to streaming deserialization, we have included a new <xref:System.Text.Json.JsonSerializer.DeserializeAsyncEnumerable> overload that makes streaming multiple top-level values possible. By default, the method will attempt to stream elements that are contained in a top-level JSON array. This behavior can be toggled using the new `topLevelValues` flag:
+When it comes to streaming deserialization, a new <xref:System.Text.Json.JsonSerializer.DeserializeAsyncEnumerable> overload makes streaming multiple top-level values possible. By default, the method attempts to stream elements that are contained in a top-level JSON array. You can toggle this behavior using the new `topLevelValues` flag:
 
 ```csharp
 ReadOnlySpan<byte> utf8Json = """[0] [0,1] [0,1,1] [0,1,1,2] [0,1,1,2,3]"""u8;

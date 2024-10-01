@@ -53,11 +53,11 @@ Azure offers many other AI services to build specific application capabilities a
 
 .NET apps can also connect to local AI models for many different development scenarios. [Semantic Kernel](https://github.com/microsoft/semantic-kernel) is the recommended tool to connect to local models using .NET. Semantic Kernel can connect to many different models hosted across a variety of platforms and abstracts away lower-level implementation details.
 
-For example, you can use [Ollama](https://ollama.com/) to [connect to local AI models with .NET](quickstarts/quickstart-local-ai.md), including several Small Language Models (Slms) developed by Microsoft:
+For example, you can use [Ollama](https://ollama.com/) to [connect to local AI models with .NET](quickstarts/quickstart-local-ai.md), including several Small Language Models (SLMs) developed by Microsoft:
 
 | Model | Description |
 | --- | --- |
-| [phi3 models](https://azure.microsoft.com/products/phi-3) | A family of powerful small language models (SLMs) with groundbreaking performance at low cost and low latency. |
+| [phi3 models](https://azure.microsoft.com/products/phi-3) | A family of powerful SLMs with groundbreaking performance at low cost and low latency. |
 | [orca models](https://www.microsoft.com/en-us/research/project/orca/) | Research models in tasks such as reasoning over user given data, reading comprehension, math problem solving, and text summarization. |
 
 > [!NOTE]

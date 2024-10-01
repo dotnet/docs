@@ -101,6 +101,13 @@ You also use square brackets to specify [attributes](/dotnet/csharp/advanced-top
 void TraceMethod() {}
 ```
 
+Additionally, square brackets can be used to designate [list patterns](../../fundamentals/functional/pattern-matching.md) for use in pattern matching or testing.
+
+```csharp
+arr is ([1, 2, ..])
+//Specifies that an array starts with (1, 2)
+```
+
 ## Null-conditional operators `?.` and `?[]`
 
 A null-conditional operator applies a [member access](#member-access-expression-) (`?.`) or [element access](#indexer-operator-) (`?[]`) operation to its operand only if that operand evaluates to non-null; otherwise, it returns `null`. In other words:

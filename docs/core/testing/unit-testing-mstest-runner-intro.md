@@ -12,9 +12,9 @@ The MSTest runner is a lightweight and portable alternative to [VSTest](https://
 
 The MSTest runner is open source, and builds on a [`Microsoft.Testing.Platform`](./unit-testing-platform-intro.md) library. You can find `Microsoft.Testing.Platform` code in [microsoft/testfx](https://github.com/microsoft/testfx/tree/main/src/Platform/Microsoft.Testing.Platform) GitHub repository. The MSTest runner comes bundled with `MSTest in 3.2.0-preview.23623.1` or newer.
 
-## Enable MSTest runner in a MSTest project
+## Enable MSTest runner in an MSTest project
 
-It's recommended to use [MSTest SDK](./unit-testing-mstest-sdk.md) as it greatly simplifies your project configuration, the updating of the project and ensures a proper alignment of the versions of the platform (MSTest runner) and its extensions.
+It's recommended to use [MSTest SDK](./unit-testing-mstest-sdk.md) as it greatly simplifies your project configuration and updating the project, and it ensures a proper alignment of the versions of the platform (MSTest runner) and its extensions.
 
 When you use `MSTest SDK`, by default you're opted in to using MSTest runner.
 

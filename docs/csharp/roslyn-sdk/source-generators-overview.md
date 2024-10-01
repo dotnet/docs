@@ -49,7 +49,7 @@ With a Source Generator, the controller discovery phase of startup could instead
 
 Source Generators can improve performance in ways that aren't limited to reflection at run time to discover types as well. Some scenarios involve calling the MSBuild C# task (called CSC) multiple times so they can inspect data from a compilation. As you might imagine, calling the compiler more than once affects the total time it takes to build your app. We're investigating how Source Generators can be used to obviate the need for juggling MSBuild tasks like this, since Source generators don't just offer some performance benefits, but also allows tools to operate at the right level of abstraction.
 
-Another capability Source Generators can offer is obviating the use of some "stringly typed" APIs, such as how ASP.NET Core routing between controllers and razor pages work. With a Source Generator, routing can be strongly typed with the necessary strings being generated as a compile-time detail. This would reduce the number of times a mistyped string literal leads to a request not hitting the correct controller.
+Another capability Source Generators can offer is obviating the use of some "strongly typed" APIs, such as how ASP.NET Core routing between controllers and razor pages work. With a Source Generator, routing can be strongly typed with the necessary strings being generated as a compile-time detail. This would reduce the number of times a mistyped string literal leads to a request not hitting the correct controller.
 
 ## Get started with source generators
 

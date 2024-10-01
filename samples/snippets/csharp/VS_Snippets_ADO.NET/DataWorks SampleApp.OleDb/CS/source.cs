@@ -10,11 +10,9 @@ static class Program
 {
     static void Main()
     {
-        // The connection string assumes that the Access
-        // Northwind.mdb is located in the c:\Data folder.
         const string connectionString =
         "Provider=Microsoft.Jet.OLEDB.4.0;Data Source="
-            + "c:\\Data\\Northwind.mdb;User Id=admin;Password=;";
+            + "c:\\Data\\Northwind.mdb;...";
 
         // Provide the query string with a parameter placeholder.
         const string queryString =

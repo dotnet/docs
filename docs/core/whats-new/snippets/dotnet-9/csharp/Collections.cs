@@ -58,13 +58,11 @@ internal partial class ReadOnlyCollections
     // </ReadOnlySet>
 
     // <AlternateLookup>
-    private readonly Dictionary<string, int> _wordCounts = new(StringComparer.OrdinalIgnoreCase);
-
     private static Dictionary<string, int> CountWords(ReadOnlySpan<char> input)
     {
         Dictionary<string, int> wordCounts = new(StringComparer.OrdinalIgnoreCase);
         Dictionary<string, int>.AlternateLookup<ReadOnlySpan<char>> spanLookup =
-            wordCounts.GetAlternateLookup<string, int, ReadOnlySpan<char>>();
+            wordCounts.GetAlternateLookup<ReadOnlySpan<char>>();
 
         foreach (Range wordRange in Regex.EnumerateSplits(input, @"\b\w+\b"))
         {

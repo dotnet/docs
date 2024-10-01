@@ -63,9 +63,9 @@ Windows Communication Foundation (WCF) uses a local issuer in cases where the is
 
 3. Set the `binding` and `bindingConfiguration` attributes to values that reference the appropriate binding to use when communicating with the local issuer endpoint.
 
-4. Optional. Set the [\<identity>](../../configure-apps/file-schema/wcf/identity.md) element as a child of the <`localIssuer`> element and specify identity information for the local issuer.
+4. Optional. Set the [\<identity>](../../configure-apps/file-schema/wcf/identity.md) element as a child of the `<localIssuer>` element and specify identity information for the local issuer.
 
-5. Optional. Set the [\<headers>](../../configure-apps/file-schema/wcf/headers.md) element as a child of the <`localIssuer`> element and specify additional headers that are required in order to correctly address the local issuer.
+5. Optional. Set the [\<headers>](../../configure-apps/file-schema/wcf/headers.md) element as a child of the `<localIssuer>` element and specify additional headers that are required in order to correctly address the local issuer.
 
 ## .NET Framework Security
 

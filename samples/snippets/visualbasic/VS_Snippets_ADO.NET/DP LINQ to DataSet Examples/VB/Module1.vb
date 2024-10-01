@@ -148,8 +148,7 @@ Module Module1
         Try
             Dim connectionString As String
 
-            connectionString = "Data Source=localhost;Initial Catalog=AdventureWorks;" & _
-            "Integrated Security=true;"
+            connectionString = "..."
 
             ' Create a new adapter and give it a query to fetch sales order, contact,
             ' address, and product information for sales in the year 2002. Point connection

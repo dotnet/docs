@@ -1,10 +1,11 @@
 ---
 title: What's new in .NET 9
-description: Learn about the new .NET features introduced in .NET 9.
+description: Learn about the new .NET features introduced in .NET 9 for the runtime, libraries, and SDK. Also find links to what's new in other areas, such as ASP.NET Core.
 titleSuffix: ""
-ms.date: 07/10/2024
+ms.date: 09/10/2024
 ms.topic: whats-new
 ---
+
 # What's new in .NET 9
 
 Learn about the new features in .NET 9 and find links to further documentation.
@@ -17,33 +18,23 @@ New for .NET 9, the engineering team posts .NET 9 preview updates on [GitHub Dis
 
 The .NET 9 runtime includes a new attribute model for feature switches with trimming support. The new attributes make it possible to define [feature switches](https://github.com/dotnet/designs/blob/main/accepted/2020/feature-switch.md) that libraries can use to toggle areas of functionality.
 
-The runtime also includes numerous performance improvements in the following areas:
+Garbage collection includes a _dynamic adaptation to application size_ feature that's used by default instead of Server GC.
 
-- Loop optimizations
-- Inlining improvements
-- PGO improvements: Type checks and casts
-- Arm64 vectorization in .NET libraries
-- Arm64 code generation
-- Faster exceptions
-- Code layout
-- Reduced address exposure
-- AVX10v1 support
-- Hardware intrinsic code generation
-- Constant folding for floating point and SIMD operations
+The runtime also includes numerous performance improvements, including loop optimizations, inlining, and Arm64 vectorization and code generation.
 
 For more information, see [What's new in the .NET 9 runtime](runtime.md).
 
 ## .NET libraries
 
-<xref:System.Text.Json> has new options that let you customize the indentation character and size of written JSON. It also includes a new <xref:System.Text.Json.JsonSerializerOptions.Web?displayProperty=nameWithType> singleton that makes it easier to serialize using web defaults.
+<xref:System.Text.Json> adds support for nullable reference type annotations and exporting JSON schemas from types. It adds new options that let you customize the indentation of written JSON and read multiple root-level JSON values from a single stream.
 
 In LINQ, the new methods <xref:System.Linq.Enumerable.CountBy%2A> and <xref:System.Linq.Enumerable.AggregateBy%2A> make it possible to aggregate state by key without needing to allocate intermediate groupings via <xref:System.Linq.Enumerable.GroupBy%2A>.
 
-For collection types, the <xref:System.Collections.Generic.PriorityQueue%602?displayProperty=fullName> type includes a new <xref:System.Collections.Generic.PriorityQueue%602.Remove(%600,%600@,%601@,System.Collections.Generic.IEqualityComparer{%600})> method that you can use to *update* the priority of an item in the queue.
+For collection types, the <xref:System.Collections.Generic.PriorityQueue%602?displayProperty=fullName> type includes a new <xref:System.Collections.Generic.PriorityQueue%602.Remove(%600,%600@,%601@,System.Collections.Generic.IEqualityComparer{%600})> method that you can use to _update_ the priority of an item in the queue.
 
 For cryptography, .NET 9 adds a new one-shot hash method on the <xref:System.Security.Cryptography.CryptographicOperations> type. It also adds new classes that use the KMAC algorithm.
 
-For reflection, the new <xref:System.Reflection.Emit.PersistedAssemblyBuilder> type lets you *save* an emitted assembly. This new class also includes PDB support, meaning you can emit symbol info and use it to debug a generated assembly.
+For reflection, the new <xref:System.Reflection.Emit.PersistedAssemblyBuilder> type lets you _save_ an emitted assembly. This new class also includes PDB support, meaning you can emit symbol info and use it to debug a generated assembly.
 
 The <xref:System.TimeSpan> class includes new `From*` methods that let you create a `TimeSpan` object from an `int` (instead of a `double`). These methods help to avoid errors caused by inherent imprecision in floating-point calculations.
 
@@ -51,13 +42,14 @@ For more information, see [What's new in the .NET 9 libraries](libraries.md).
 
 ## .NET SDK
 
-The .NET 9 SDK includes improvements to unit testing, including better integration with MSBuild that allows you to run tests in parallel.
+The .NET 9 SDK introduces _workload sets_, where all of your workloads stay at a single, specific version until explicitly updated. For tools, a new option for [`dotnet tool install`](../../tools/dotnet-tool-install.md) lets users (instead of tool authors) decide whether a tool is allowed to run on a newer .NET runtime version than the version the tool targets. In addition:
 
-For tools, a new option for [`dotnet tool install`](../../tools/dotnet-tool-install.md) lets users (instead of tool authors) decide whether a tool is allowed to run on a newer .NET runtime version than the version the tool targets. And NuGet security audits run on both direct and transitive package references, by default.
-
-The terminal logger is now enabled by default and also has improved usability. For example, the total count of failures and warnings is now summarized at the end of a build.
-
-Finally, new MSBuild script analyzers are available.
+- Unit testing has better MSBuild integration that allows you to run tests in parallel.
+- NuGet security audits run on both direct and transitive package references, by default.
+- The terminal logger is enabled by default and also has improved usability. For example, the total count of failures and warnings is now summarized at the end of a build.
+- New MSBuild script analyzers ("build checks") are available.
+- The SDK can detect and adjust for version mismatches between the .NET SDK and MSBuild.
+- The `dotnet workload history` command shows you the history of workload installations and modifications for the current .NET SDK installation.
 
 For more information, see [What's new in the SDK for .NET 9](sdk.md).
 

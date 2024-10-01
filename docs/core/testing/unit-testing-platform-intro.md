@@ -16,7 +16,8 @@ Microsoft.Testing.Platform is a lightweight and portable alternative to [VSTest]
 
 * MSTest. In MSTest, the support of `Microsoft.Testing.Platform` is done via [MSTest runner](unit-testing-mstest-runner-intro.md).
 * NUnit. In NUnit, the support of `Microsoft.Testing.Platform` is done via [NUnit runner](unit-testing-nunit-runner-intro.md).
-* xUnit: work in progress, for more information, see [Microsoft Testing Platform for xUnit](https://github.com/xunit/visualstudio.xunit/issues/402).
+* xUnit.net: In xUnit.net, the support of `Microsoft.Testing.Platform` is done via [xUnit.net runner](https://xunit.net/docs/getting-started/v3/microsoft-testing-platform).
+* TUnit: entirely constructed on top of the `Microsoft.Testing.Platform`, for more information, see [TUnit documentation](https://thomhurst.github.io/TUnit/)
 
 ## Run and debug tests
 
@@ -213,10 +214,10 @@ The directory where the test results are going to be placed. If the specified di
 
 The NuGet package [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild) provides various integrations for `Microsoft.Testing.Platform` with MSBuild:
 
-- Support for `dotnet test`, see [dotnet test integration](./unit-testing-platform-integration-dotnet-test.md) for more information.
+- Support for `dotnet test`. For more information, see [dotnet test integration](./unit-testing-platform-integration-dotnet-test.md).
 - Support for `ProjectCapability` required by `Visual Studio` and `Visual Studio Code` Test Explorers.
-- Automatic generation of the entry point (`Main` method)
-- Automatic generation of the configuration file
+- Automatic generation of the entry point (`Main` method).
+- Automatic generation of the configuration file.
 
 > [!NOTE]
 > This integration works in a transitive way (a project that references another project referencing this package will behave as if it references the package) and can be disabled through the `IsTestingPlatformApplication` MSBuild property.

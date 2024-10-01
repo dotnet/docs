@@ -1,6 +1,7 @@
 ﻿' <snippet100>
 ' <snippet1>
 Imports System.Collections.Generic
+Imports System.Data.SqlClient
 Imports System.Data.SqlServerCe
 Imports System.Diagnostics
 Imports System.IO
@@ -61,10 +62,10 @@ Namespace DataflowBatchDatabase
         ' <snippet4>
         ' Adds new employee records to the database.
         Private Shared Sub InsertEmployees(ByVal employees() As Employee, ByVal connectionString As String)
-            Using connection As New SqlCeConnection(connectionString)
+            Using connection As New SqlConnection(connectionString)
                 Try
                     ' Create the SQL command.
-                    Dim command As New SqlCeCommand("INSERT INTO Employees ([Last Name], [First Name])" & "VALUES (@lastName, @firstName)", connection)
+                    Dim command As New SqlCommand("INSERT INTO Employees ([Last Name], [First Name])" & "VALUES (@lastName, @firstName)", connection)
 
                     connection.Open()
                     For i As Integer = 0 To employees.Length - 1
@@ -86,8 +87,8 @@ Namespace DataflowBatchDatabase
         ' the Northwind database.
         Private Shared Function GetEmployeeCount(ByVal connectionString As String) As Integer
             Dim result As Integer = 0
-            Using sqlConnection As New SqlCeConnection(connectionString)
-                Dim sqlCommand As New SqlCeCommand("SELECT COUNT(*) FROM Employees", sqlConnection)
+            Using sqlConnection As New SqlConnection(connectionString)
+                Dim sqlCommand As New SqlCommand("SELECT COUNT(*) FROM Employees", sqlConnection)
 
                 sqlConnection.Open()
                 Try
@@ -101,8 +102,8 @@ Namespace DataflowBatchDatabase
 
         ' Retrieves the ID of the first employee that has the provided name.
         Private Shared Function GetEmployeeID(ByVal lastName As String, ByVal firstName As String, ByVal connectionString As String) As Integer
-            Using connection As New SqlCeConnection(connectionString)
-                Dim command As New SqlCeCommand(String.Format("SELECT [Employee ID] FROM Employees " & "WHERE [Last Name] = '{0}' AND [First Name] = '{1}'", lastName, firstName), connection)
+            Using connection As New SqlConnection(connectionString)
+                Dim command As New SqlCommand(String.Format("SELECT [Employee ID] FROM Employees " & "WHERE [Last Name] = '{0}' AND [First Name] = '{1}'", lastName, firstName), connection)
 
                 connection.Open()
                 Try

@@ -19,6 +19,9 @@ The following options control code generation by the compiler. The new MSBuild s
 - **Deterministic** / `-deterministic`: Produce byte-for-byte equivalent output from the same input source.
 - **ProduceOnlyReferenceAssembly** / `-refonly`: Produce a reference assembly, instead of a full assembly, as the primary output.
 
+> [!NOTE]
+> Refer to [Compiler options](index.md#how-to-set-options) for more information on configuring these options for your project.
+
 ## DebugType
 
 The **DebugType** option causes the compiler to generate debugging information and place it in the output file or files. Debugging information is added by default.

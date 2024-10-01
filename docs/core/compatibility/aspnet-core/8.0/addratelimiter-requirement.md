@@ -45,9 +45,9 @@ Rate-limiting middleware requires services that are only registered by calling <
 
 ## Recommended action
 
-Ensure that <xref:Microsoft.AspNetCore.Builder.RateLimiterApplicationBuilderExtensions.UseRateLimiter%2A> is called at application startup.
+Ensure that <xref:Microsoft.AspNetCore.Builder.RateLimiterServiceCollectionExtensions.AddRateLimiter%2A> is called at application startup.
 
-For example, update `Configure<RateLimiterOptions>(o => { })` to use <xref:Microsoft.AspNetCore.Builder.RateLimiterApplicationBuilderExtensions.UseRateLimiter%2A>:
+For example, update `Configure<RateLimiterOptions>(o => { })` to use <xref:Microsoft.AspNetCore.Builder.RateLimiterServiceCollectionExtensions.AddRateLimiter%2A>:
 
 ```csharp
 var builder = WebApplication.CreateBuilder(args);

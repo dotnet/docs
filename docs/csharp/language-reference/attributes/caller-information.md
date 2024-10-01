@@ -54,7 +54,7 @@ You would invoke it as shown in the following example:
 
 The expression used for `condition` is injected by the compiler into the `message` argument. When a developer calls `Operation` with a `null` argument, the following message is stored in the `ArgumentException`:
 
-```dotnetcli
+```text
 Argument failed validation: <func is not null>
 ```
 
@@ -68,7 +68,7 @@ The previous example uses the [`nameof`](../operators/nameof.md) operator for th
 
 The preceding example would throw an <xref:System.ArgumentException> whose message is the following text:
 
-```dotnetcli
+```text
 Expression doesn't have enough elements: Enumerable.Range(0, 10) (Parameter 'sequence')
 ```
 

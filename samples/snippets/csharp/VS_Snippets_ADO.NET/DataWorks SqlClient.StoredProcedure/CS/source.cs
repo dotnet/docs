@@ -6,9 +6,7 @@ static class Program
 {
     static void Main()
     {
-        // Supply any valid Document ID value.
-        // The value 7 is supplied for demonstration purposes.
-        GetSalesByCategory("Data Source=(local);Initial Catalog=Northwind;Integrated Security=true;", "Confections");
+        GetSalesByCategory("secure connection string", "Confections");
         Console.ReadLine();
     }
     // <Snippet1>

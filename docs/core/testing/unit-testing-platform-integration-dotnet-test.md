@@ -30,7 +30,7 @@ This layer runs test through VSTest and integrates with it on VSTest Test Framew
 
 ### `dotnet test` - Microsoft.Testing.Platform mode
 
-By default, VSTest is used to run `Microsoft.Testing.Platform` tests. You can enable a full `Microsoft.Testing.Platform` by specifying the `<TestingPlatformDotnetTestSupport>true</TestingPlatformDotnetTestSupport>` setting in your project. This setting disables VSTest and thanks to the transitive dependency to the [Microsoft.Testing.Platform.MSBuild](https://nuget.org/packages/Microsoft.Testing.Platform.MSBuild) NuGet package it will directly run all `Microsoft.Testing.Platform` empowered tests project in your solution. It works seamlessly if you pass a direct `Microsoft.Testing.Platform` test project.
+By default, VSTest is used to run `Microsoft.Testing.Platform` tests. You can enable a full `Microsoft.Testing.Platform` by specifying the `<TestingPlatformDotnetTestSupport>true</TestingPlatformDotnetTestSupport>` setting in your project file. This setting disables VSTest and, thanks to the transitive dependency to the [Microsoft.Testing.Platform.MSBuild](https://nuget.org/packages/Microsoft.Testing.Platform.MSBuild) NuGet package, directly runs all `Microsoft.Testing.Platform` empowered test projects in your solution. It works seamlessly if you pass a direct `Microsoft.Testing.Platform` test project.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -56,23 +56,32 @@ By default, VSTest is used to run `Microsoft.Testing.Platform` tests. You can en
 </Project>
 ```
 
-In this mode, you can supply extra parameters that will be utilized to call the testing application as follows:
+In this mode, you can supply extra parameters that are used to call the testing application in one of the following ways:
 
-1. Beginning with `Microsoft.Testing.Platform` version 1.4 (included with MSTest version 3.6), options can be added after the double dash `--`:
+- Beginning with `Microsoft.Testing.Platform` version 1.4 (included with MSTest version 3.6), you can options after the double dash `--` on the command line:
 
     ```dotnetcli
     dotnet test -- --minimum-expected-tests 10
     ```
 
-1. By using the `TestingPlatformCommandLineArguments` MSBuild property:
+- By using the `TestingPlatformCommandLineArguments` MSBuild property on the command line:
 
     ```dotnetcli
-    dotnet test -p:TestingPlatformCommandLineArguments=" --minimum-expected-tests 10 "
+    dotnet test -p:TestingPlatformCommandLineArguments="--minimum-expected-tests 10"
     ```
+
+  Or in the project file:
+
+  ```xml
+  <PropertyGroup>
+    ...
+    <TestingPlatformCommandLineArguments>--minimum-expected-tests 10</TestingPlatformCommandLineArguments>
+  </PropertyGroup>
+  ```
 
 ## Additional MSBuild options
 
-The MSBuild integration provides options that can be specified in user project or through global properties on the command line, such as `-p:TestingPlatformShowTestsFailure=true`.
+The MSBuild integration provides options that can be specified in the project file or through global properties on the command line, such as `-p:TestingPlatformShowTestsFailure=true`.
 
 These are the available options:
 
@@ -81,9 +90,9 @@ These are the available options:
 
 ### Show failure per test
 
-By default test failures are summarized into a _.log_ file, and a single failure per test project is reported to MSBuild.
+By default, test failures are summarized into a _.log_ file, and a single failure per test project is reported to MSBuild.
 
-To show errors per failed test, specify `-p:TestingPlatformShowTestsFailure=true` on the command line, or add `<TestingPlatformShowTestsFailure>true</TestingPlatformShowTestsFailure>` property to your project file.
+To show errors per failed test, specify `-p:TestingPlatformShowTestsFailure=true` on the command line, or add the `<TestingPlatformShowTestsFailure>true</TestingPlatformShowTestsFailure>` property to your project file.
 
 On command line:
 

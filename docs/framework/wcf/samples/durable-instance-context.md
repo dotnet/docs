@@ -2,14 +2,13 @@
 description: "Learn more about: Durable Instance Context"
 title: "Durable Instance Context"
 ms.date: "03/30/2017"
-ms.assetid: 97bc2994-5a2c-47c7-927a-c4cd273153df
 ---
 # Durable Instance Context
 
 The [Durable sample](https://github.com/dotnet/samples/tree/main/framework/wcf) demonstrates how to customize the Windows Communication Foundation (WCF) runtime to enable durable instance contexts. It uses SQL Server 2005 as its backing store (SQL Server 2005 Express in this case). However, it also provides a way to access custom storage mechanisms.
 
 > [!NOTE]
-> The setup procedure and build instructions for this sample are located at the end of this topic.
+> The setup procedure and build instructions for this sample are located at the end of this article.
 
 This sample involves extending both the channel layer and the service model layer of the WCF. Therefore it is necessary to understand the underlying concepts before going into the implementation details.
 
@@ -20,7 +19,6 @@ Durable instance context is made possible by a small protocol that exchanges a c
 By the previous description, two steps can easily be distinguished to achieve the goal:
 
 1. Change the message that goes on the wire to carry the context ID.
-
 2. Change the service local behavior to implement custom instancing logic.
 
 Because the first one in the list affects the messages on the wire, it should be implemented as a custom channel and be hooked up to the channel layer. The latter only affects the service local behavior and therefore can be implemented by extending several service extensibility points. In the next few sections, each of these extensions are discussed.
@@ -437,7 +435,7 @@ Press ENTER to shut down client
 > [!NOTE]
 > Rebuilding the service overwrites the database file. To observe state preserved across multiple runs of the sample, be sure not to rebuild the sample between runs.
 
-#### To set up, build, and run the sample
+### To set up, build, and run the sample
 
 1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](one-time-setup-procedure-for-the-wcf-samples.md).
 

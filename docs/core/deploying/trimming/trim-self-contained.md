@@ -1,6 +1,6 @@
 ---
 title: Trim self-contained applications
-description: Learn how to trim self-contained apps to reduce their size. .NET Core bundles the runtime with an app that is published self-contained and generally includes more of the runtime then is necessary.
+description: Learn how to trim self-contained apps to reduce their size. .NET Core bundles the runtime with an app that is published self-contained and generally includes more of the runtime than is necessary.
 author: jamshedd
 ms.author: jamshedd
 ms.date: 04/03/2020

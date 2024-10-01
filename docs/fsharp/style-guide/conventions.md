@@ -129,7 +129,7 @@ There are many times when initializing a value can have side effects, such as in
 ```fsharp
 // Not recommended, side-effect at static initialization
 module MyApi =
-    let dep1 = File.ReadAllText "/Users/<name>/connectionstring.txt"
+    let dep1 = File.ReadAllText "/Users/<name>/config-options.txt"
     let dep2 = Environment.GetEnvironmentVariable "DEP_2"
 
     let private r = Random()

@@ -7,11 +7,8 @@ static class Program
 {
     static void Main()
     {
-        // The connection string assumes that the Access
-        // Northwind.mdb is located in the c:\Data folder.
         const string connectionString =
-            "Driver={Microsoft Access Driver (*.mdb)};"
-            + "Dbq=c:\\Data\\Northwind.mdb;Uid=Admin;Pwd=;";
+            "Driver={Microsoft Access Driver (*.mdb)};...";
 
         // Provide the query string with a parameter placeholder.
         const string queryString =

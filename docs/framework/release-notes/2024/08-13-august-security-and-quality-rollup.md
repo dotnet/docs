@@ -35,7 +35,7 @@ Addresses an issue to update zlib file to latest version (*Applies to: .NET Fram
 
 ## Known issues
 
-This release contains no known issues.  
+This release contains no known issues.
 
 ## Summary tables
 
@@ -86,7 +86,7 @@ The following table is for earlier Windows and Windows Server versions for Secur
 | **Windows Server 2008 R2** | **[5042354](https://support.microsoft.com/kb/5042354)** |
 | .NET Framework 3.5.1 | [5041942](https://support.microsoft.com/kb/5041942) |
 | .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2 | [5041926](https://support.microsoft.com/kb/5041926)|
-| .NET Framework 4.8 |[5041929](https://support.microsoft.com/kb/5041929) |
+| .NET Framework 4.8 | 5041929 |
 | **Windows Server 2008** | **[5042357](https://support.microsoft.com/kb/5042357)** |
 | .NET Framework 2.0, 3.0 | [5041939](https://support.microsoft.com/kb/5041939) |
 | .NET Framework 3.5 SP1 | [5040673](https://support.microsoft.com/kb/5040673) |

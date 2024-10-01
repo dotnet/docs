@@ -25,10 +25,10 @@ On the other hand, there are potential disadvantages to consider when using QUIC
 
 ## QUIC in .NET
 
-The QUIC implementation was introduced in .NET 5 as the `System.Net.Quic` library. However, up until .NET 7.0 the library was strictly internal and served only as an implementation of HTTP/3. With .NET 7, the library was made public thus exposing its APIs.
+The QUIC implementation was introduced in .NET 5 as the `System.Net.Quic` library. However, up until .NET 7 the library was strictly internal and served only as an implementation of HTTP/3. With .NET 7, the library was made public thus exposing its APIs.
 
 > [!NOTE]
-> In .NET 7.0, the APIs are published as [preview features](https://github.com/dotnet/designs/blob/main/accepted/2021/preview-features/preview-features.md).
+> In .NET 7.0 and 8.0, the APIs were published as [preview features](https://github.com/dotnet/designs/blob/main/accepted/2021/preview-features/preview-features.md). Starting with .NET 9, these APIs are no longer considered preview features and are now deemed stable.
 
 From the implementation perspective, `System.Net.Quic` depends on [MsQuic](https://github.com/microsoft/msquic), the native implementation of QUIC protocol. As a result, `System.Net.Quic` platform support and dependencies are inherited from MsQuic and documented in the [Platform dependencies](#platform-dependencies) section. In short, the MsQuic library is shipped as part of .NET for Windows. But for Linux, you must manually install `libmsquic` via an appropriate package manager. For the other platforms, it's still possible to build MsQuic manually, whether against SChannel or OpenSSL, and use it with `System.Net.Quic`. However, these scenarios are not part of our testing matrix and unforeseen problems might occur.
 
@@ -161,8 +161,8 @@ var serverConnectionOptions = new QuicServerConnectionOptions
     // Same options as for server side SslStream.
     ServerAuthenticationOptions = new SslServerAuthenticationOptions
     {
-        // List of supported application protocols, must be the same or subset of QuicListenerOptions.ApplicationProtocols.
-        ApplicationProtocols = new List<SslApplicationProtocol>() { "protocol-name" },
+        // Specify the application protocols that the server supports. This list must be a subset of the protocols specified in QuicListenerOptions.ApplicationProtocols.
+        ApplicationProtocols = [new SslApplicationProtocol("protocol-name")],
         // Server certificate, it can also be provided via ServerCertificateContext or ServerCertificateSelectionCallback.
         ServerCertificate = serverCertificate
     }
@@ -171,10 +171,10 @@ var serverConnectionOptions = new QuicServerConnectionOptions
 // Initialize, configure the listener and start listening.
 var listener = await QuicListener.ListenAsync(new QuicListenerOptions
 {
-    // Listening endpoint, port 0 means any port.
+    // Define the endpoint on which the server will listen for incoming connections. The port number 0 can be replaced with any valid port number as needed.
     ListenEndPoint = new IPEndPoint(IPAddress.Loopback, 0),
     // List of all supported application protocols by this listener.
-    ApplicationProtocols = new List<SslApplicationProtocol>() { "protocol-name" },
+    ApplicationProtocols = [new SslApplicationProtocol("protocol-name")],
     // Callback to provide options for the incoming connections, it gets called once per each connection.
     ConnectionOptionsCallback = (_, _, _) => ValueTask.FromResult(serverConnectionOptions)
 });
@@ -235,7 +235,9 @@ var clientConnectionOptions = new QuicClientConnectionOptions
     ClientAuthenticationOptions = new SslClientAuthenticationOptions
     {
         // List of supported application protocols.
-        ApplicationProtocols = new List<SslApplicationProtocol>() { "protocol-name" }
+        ApplicationProtocols = [new SslApplicationProtocol("protocol-name")],
+        // The name of the server the client is trying to connect to. Used for server certificate validation.
+        TargetHost = ""
     }
 };
 
@@ -245,6 +247,9 @@ var connection = await QuicConnection.ConnectAsync(clientConnectionOptions);
 Console.WriteLine($"Connected {connection.LocalEndPoint} --> {connection.RemoteEndPoint}");
 
 // Open a bidirectional (can both read and write) outbound stream.
+// Opening a stream reserves it but does not notify the peer or send any data. If you don't send data, the peer
+// won't be informed about the stream, which can cause AcceptInboundStreamAsync() to hang. To avoid this, ensure
+// you send data on the stream to properly initiate communication.
 var outgoingStream = await connection.OpenOutboundStreamAsync(QuicStreamType.Bidirectional);
 
 // Work with the outgoing stream ...
@@ -265,13 +270,18 @@ await connection.CloseAsync(0x0C);
 await connection.DisposeAsync();
 ```
 
-or more information about how the `QuicConnection` was designed, see the [API proposal](https://github.com/dotnet/runtime/issues/68902).
+for more information about how the `QuicConnection` was designed, see the [API proposal](https://github.com/dotnet/runtime/issues/68902).
 
 ### `QuicStream`
 
 <xref:System.Net.Quic.QuicStream> is the actual type that is used to send and receive data in QUIC protocol. It derives from ordinary <xref:System.IO.Stream> and can be used as such, but it also offers several features that are specific to QUIC protocol. Firstly, a QUIC stream can either be unidirectional or bidirectional, see [RFC 9000 Section 2.1](https://www.rfc-editor.org/rfc/rfc9000#section-2.1). A bidirectional stream is able to send and receive data on both sides, whereas unidirectional stream can only write from the initiating side and read on the accepting one. Each peer can limit how many concurrent stream of each type is willing to accept, see <xref:System.Net.Quic.QuicConnectionOptions.MaxInboundBidirectionalStreams> and <xref:System.Net.Quic.QuicConnectionOptions.MaxInboundUnidirectionalStreams>.
 
-Another particularity of QUIC stream is ability to explicitly close the writing side in the middle of work with the stream, see <xref:System.Net.Quic.QuicStream.CompleteWrites> or <xref:System.Net.Quic.QuicStream.WriteAsync(System.ReadOnlyMemory{System.Byte},System.Boolean,System.Threading.CancellationToken)> overload with `completeWrites` argument. Closing of the writing side lets the peer know that no more data will arrive, yet the peer still can continue sending (in case of a bidirectional stream). This is useful in scenarios like HTTP request/response exchange when the client sends the request and closes the writing side to let the server know that this is the end of the request content. Server is still able to send the response after that, but knows that no more data will arrive from the client. And for erroneous cases, either writing or reading side of the stream can be aborted, see <xref:System.Net.Quic.QuicStream.Abort(System.Net.Quic.QuicAbortDirection,System.Int64)>. The behavior of the individual methods for each stream type is summarized in the following table (note that both client and server can open and accept streams):
+Another particularity of QUIC stream is ability to explicitly close the writing side in the middle of work with the stream, see <xref:System.Net.Quic.QuicStream.CompleteWrites> or <xref:System.Net.Quic.QuicStream.WriteAsync(System.ReadOnlyMemory{System.Byte},System.Boolean,System.Threading.CancellationToken)> overload with `completeWrites` argument. Closing of the writing side lets the peer know that no more data will arrive, yet the peer still can continue sending (in case of a bidirectional stream). This is useful in scenarios like HTTP request/response exchange when the client sends the request and closes the writing side to let the server know that this is the end of the request content. Server is still able to send the response after that, but knows that no more data will arrive from the client. And for erroneous cases, either writing or reading side of the stream can be aborted, see <xref:System.Net.Quic.QuicStream.Abort(System.Net.Quic.QuicAbortDirection,System.Int64)>.
+
+> [!NOTE]
+> Opening a stream only reserves it without sending any data. This approach is designed to optimize network usage by avoiding the transmission of nearly empty frames. Since the peer is not notified until actual data is sent, the stream remains inactive from the peer's perspective. If you don't send data, the peer won't recognize the stream, which can cause `AcceptInboundStreamAsync()` to hang as it waits for a meaningful stream. To ensure proper communication, you need to send data after opening the stream.
+
+The behavior of the individual methods for each stream type is summarized in the following table (note that both client and server can open and accept streams):
 
 | Method | Peer opening stream | Peer accepting stream |
 | --- | --- | --- |

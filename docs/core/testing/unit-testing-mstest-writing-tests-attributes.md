@@ -38,7 +38,7 @@ Example:
 ```csharp
 [TestClass]
 public class MyTestClass
-{    
+{
 }
 ```
 
@@ -65,7 +65,7 @@ public class MyTestClass
 
 ## Attributes used for data-driven testing
 
-Use the following elements to set up data-driven tests. For more information, see [Create a data-driven unit test](/visualstudio/test/how-to-create-a-data-driven-unit-test.md) and [Use a configuration file to define a data source](/visualstudio/test/walkthrough-using-a-configuration-file-to-define-a-data-source.md).
+Use the following elements to set up data-driven tests. For more information, see [Create a data-driven unit test](/visualstudio/test/how-to-create-a-data-driven-unit-test) and [Use a configuration file to define a data source](/visualstudio/test/walkthrough-using-a-configuration-file-to-define-a-data-source).
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataRowAttribute>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>
@@ -88,7 +88,7 @@ public class TestClass
     {
         // Omitted for brevity.
     }
-    
+
     [TestMethod]
     [DataRow(new string[] { "line1", "line2" })]
     public void TestMethod2(string[] lines)
@@ -329,14 +329,14 @@ Starting with MSTest 3.6, it is possible to specify `CooperativeCancellation` pr
 When applied to a test class, the `[STATestClass]` attribute indicates that all test methods (and the `[ClassInitialize]` and `[ClassCleanup]` methods) in the class should be run in a single-threaded apartment (STA). This attribute is useful when the test methods interact with COM objects that require STA.
 
 > [!NOTE]
-> This is only supported on Windows.
+> This is only supported on Windows and in version 3.6 and later.
 
 ### `STATestMethodAttribute`
 
 When applied to a test method, the `[STATestMethod]` attribute indicates that the test method should be run in a single-threaded apartment (STA). This attribute is useful when the test method interacts with COM objects that require STA.
 
 > [!NOTE]
-> This is only supported on Windows.
+> This is only supported on Windows and in version 3.6 and later.
 
 ### `ParallelizeAttribute`
 
@@ -368,7 +368,7 @@ And here you can see its [constructors](<xref:Microsoft.VisualStudio.TestTools.U
 **Example**
 
 ```csharp
-[TestClass] 
+[TestClass]
 [DeploymentItem(@"C:\classLevelDepItem.xml")]   // Copy file using some absolute path
 public class UnitTest1
 {

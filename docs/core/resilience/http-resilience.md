@@ -234,3 +234,53 @@ The preceding diagram depicts:
   - If the response is unsuccessful (HTTP non-200), the resilience pipeline employs the configured resilience strategies.
 
 While this is a simple example, it demonstrates how the resilience strategies can be used to handle transient errors. For more information, see [Polly docs: Strategies](https://www.pollydocs.org/strategies).
+
+## Known issues
+
+The following sections detail various known issues.
+
+### Compatibility with the `Grpc.Net.ClientFactory` package
+
+If you're using `Grpc.Net.ClientFactory` version `2.63.0` or earlier, then enabling the standard resilience or hedging handlers for a gRPC client could cause a runtime exception. Specifically, consider the following code sample:
+
+```csharp
+services
+    .AddGrpcClient<Greeter.GreeterClient>()
+    .AddStandardResilienceHandler();
+```
+
+The preceding code results in the following exception:
+
+```Output
+System.InvalidOperationException: The ConfigureHttpClient method is not supported when creating gRPC clients. Unable to create client with name 'GreeterClient'.
+```
+
+To resolve this issue, we recommend upgrading to `Grpc.Net.ClientFactory` version `2.64.0` or later.
+
+There's a build time check that verifies if you're using `Grpc.Net.ClientFactory` version `2.63.0` or earlier, and if you are the check produces a compilation warning. You can suppress the warning by setting the following property in your project file:
+
+```xml
+<PropertyGroup>
+  <SuppressCheckGrpcNetClientFactoryVersion>true</SuppressCheckGrpcNetClientFactoryVersion>
+</PropertyGroup>
+```
+
+### Compatibility with .NET Application Insights
+
+If you're using .NET Application Insights, then enabling resilience functionality in your application could cause all Application Insights telemetry to be missing. The issue occurs when resilience functionality is registered before Application Insights services. Consider the following sample causing the issue:
+
+```csharp
+// At first, we register resilience functionality.
+services.AddHttpClient().AddStandardResilienceHandler();
+
+// And then we register Application Insights. As a result, Application Insights doesn't work.
+services.AddApplicationInsightsTelemetry();
+```
+
+The issue is caused by the following [bug](https://github.com/microsoft/ApplicationInsights-dotnet/issues/2879) in Application Insights and can be fixed by registering Application Insights services before resilience functionality, as shown below:
+
+```csharp
+// We register Application Insights first, and now it will be working correctly.
+services.AddApplicationInsightsTelemetry();
+services.AddHttpClient().AddStandardResilienceHandler();
+```

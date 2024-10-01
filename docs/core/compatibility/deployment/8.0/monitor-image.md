@@ -1,5 +1,5 @@
 ---
-title: "Breaking change: .NET Monitor only includes distroless images"
+title: ".NET Monitor only includes distroless images"
 description: Learn about the breaking change in deployment in .NET 8 where the .NET Monitor 8 image offering only includes distroless images.
 ms.date: 12/07/2023
 ms.custom: linux-related-content
@@ -52,11 +52,9 @@ Update your tag usage to indicate which image from the .NET Monitor 8 image offe
 
 - `7-alpine` -> `8-ubuntu-chiseled`
 
-You can find a full list of all supported tags on .NET Monitor's [Docker Hub page](https://hub.docker.com/_/microsoft-dotnet-monitor/).
-
 The notable changes when migrating from a full distro image to a distroless image are the use of a non-root user, the lack of a package manager, and the lack of a shell.
 
-If you were using full distro images (for example, Alpine), you may need to adjust the running user of the .NET Monitor image in your deployments when migrating to .NET Monitor 8. You can find guidance for changing the running user in the .NET Monitor 8.0 [compatibility documentation](https://github.com/dotnet/dotnet-monitor/blob/main/documentation/compatibility/8.0/README.md).
+If you were using full distro images (for example, Alpine), you might need to adjust the running user of the .NET Monitor image in your deployments when migrating to .NET Monitor 8. You can find guidance for changing the running user in the .NET Monitor 8.0 [compatibility documentation](https://github.com/dotnet/dotnet-monitor/blob/main/documentation/compatibility/8.0/README.md).
 
 ## Affected APIs
 

@@ -1,11 +1,11 @@
 ﻿using System;
-// <Snippet1>
 using System.Data.SqlClient;
 
 static class Program
 {
     static void Main()
     {
+        // <Snippet1>
         var connectionString = GetConnectionString();
         // Open a sourceConnection to the AdventureWorks database.
         using (SqlConnection sourceConnection =
@@ -92,15 +92,9 @@ static class Program
             Console.WriteLine("Press Enter to finish.");
             Console.ReadLine();
         }
+        // </Snippet1>
     }
 
-    static string GetConnectionString()
-    // To avoid storing the sourceConnection string in your code,
-    // you can retrieve it from a configuration file.
-    {
-        return "Data Source=(local); " +
-            " Integrated Security=true;" +
-            "Initial Catalog=AdventureWorks;";
-    }
+    static string GetConnectionString() =>
+        throw new NotImplementedException();
 }
-// </Snippet1>

@@ -23,6 +23,9 @@ The following options control compiler output generation.
 | **ProduceReferenceAssembly** | `-refout:` | Generate a reference assembly. |
 | **TargetType** | `-target:` | Specify the type of the output assembly. |
 
+> [!NOTE]
+> Refer to [Compiler options](index.md#how-to-set-options) for more information on configuring these options for your project.
+
 ## DocumentationFile
 
 The **DocumentationFile** option allows you to place documentation comments in an XML file. To learn more about documenting your code, see [Recommended Tags for Documentation Comments](../xmldoc/recommended-tags.md). The value specifies the path to the output XML file. The XML file contains the comments in the source code files of the compilation.

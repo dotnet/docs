@@ -5,9 +5,8 @@ ms.date: "03/30/2017"
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: d1bd9a8c-0e29-40e3-bda8-d89176b72fb1
 ---
-# Updating Data Sources with DataAdapters
+# Update data sources with DataAdapters
 
 The `Update` method of the <xref:System.Data.Common.DataAdapter> is called to resolve changes from a <xref:System.Data.DataSet> back to the data source. The `Update` method, like the `Fill` method, takes as arguments an instance of a `DataSet`, and an optional <xref:System.Data.DataTable> object or `DataTable` name. The `DataSet` instance is the `DataSet` that contains the changes that have been made, and the `DataTable` identifies the table from which to retrieve the changes. If no `DataTable` is specified, the first `DataTable` in the `DataSet` is used.
 
@@ -193,7 +192,6 @@ namespace CSDataAdapterOperations.Properties {
       }
 
       [global::System.Configuration.ApplicationScopedSettingAttribute()]
-      [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(local);Initial Catalog=MySchool;Integrated Security=True")]
       public string MySchoolConnectionString {
          get {
             return ((string)(this["MySchoolConnectionString"]));

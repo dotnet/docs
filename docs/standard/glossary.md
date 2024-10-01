@@ -1,7 +1,7 @@
 ---
 title: .NET glossary
 description: Find out the meaning of selected terms used in the .NET documentation.
-ms.date: 04/03/2024
+ms.date: 09/25/2024
 author: tdykstra
 ms.author: tdykstra
 ms.topic: reference
@@ -22,6 +22,7 @@ See [CoreRT](#corert) and [.NET Native](#net-native).
 
 A [workload](#workload)-specific API. Here are some examples:
 
+- .NET Aspire
 - ASP.NET
 - ASP.NET Web API
 - Entity Framework (EF)
@@ -347,7 +348,7 @@ An [implementation of .NET](#implementation-of-net) that is used for building to
 
 ## workload
 
-A type of app someone is building. More generic than [app model](#app-model). For example, at the top of every .NET documentation page, including this one, is a drop-down list for **Workloads**, which lets you switch to documentation for **Web**, **Mobile**, **Cloud**, **Desktop**, and **Machine Learning \& Data**.
+A type of app someone is building. More generic than [app model](#app-model). For example, at the top of every .NET documentation page, including this one, is a drop-down list for **Workloads**, which lets you switch to documentation for **Web**, **Mobile**, **Cloud**, **Cloud-native**, and **Desktop**.
 
 In some contexts, *workload* refers to a collection of Visual Studio features that you can choose to install to support a particular type of app. For an example, see [Configure Visual Studio workloads](/visualstudio/install/modify-visual-studio).
 

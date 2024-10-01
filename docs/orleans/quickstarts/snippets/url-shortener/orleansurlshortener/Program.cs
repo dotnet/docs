@@ -21,7 +21,7 @@ app.MapGet("/shorten",
         var host = $"{request.Scheme}://{request.Host.Value}";
 
         // Validate the URL query string.
-        if (string.IsNullOrWhiteSpace(url) &&
+        if (string.IsNullOrWhiteSpace(url) ||
             Uri.IsWellFormedUriString(url, UriKind.Absolute) is false)
         {
             return Results.BadRequest($"""

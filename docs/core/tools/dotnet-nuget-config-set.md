@@ -53,7 +53,7 @@ The `dotnet nuget config set` sets the values for NuGet configuration settings t
 * Sets the `repositoryPath` configuration value `c:\installed_packages` to the specified configuration file:
 
   ```dotnetcli
-  dotnet nuget config set repositoryPath "c:\installed_packages" --configfile "C:/nugte.config"
+  dotnet nuget config set repositoryPath "c:\installed_packages" --configfile "c:\nuget.config"
   ```
 
 ## See also

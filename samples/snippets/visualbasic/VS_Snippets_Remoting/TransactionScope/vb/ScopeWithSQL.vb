@@ -25,10 +25,10 @@ Module Module1
     End Sub
 
     ' <Snippet1>
-    '  This function takes arguments for 2 connection strings and commands to create a transaction 
-    '  involving two SQL Servers. It returns a value > 0 if the transaction is committed, 0 if the 
-    '  transaction is rolled back. To test this code, you can connect to two different databases 
-    '  on the same server by altering the connection string, or to another 3rd party RDBMS  
+    '  This function takes arguments for 2 connection strings and commands to create a transaction
+    '  involving two SQL Servers. It returns a value > 0 if the transaction is committed, 0 if the
+    '  transaction is rolled back. To test this code, you can connect to two different databases
+    '  on the same server by altering the connection string, or to another 3rd party RDBMS
     '  by altering the code in the connection2 code block.
     Public Function CreateTransactionScope( _
       ByVal connectString1 As String, ByVal connectString2 As String, _
@@ -43,7 +43,7 @@ Module Module1
             '  that both commands can commit or roll back as a single unit of work.
             Using scope As New TransactionScope()
                 Using connection1 As New SqlConnection(connectString1)
-                    ' Opening the connection automatically enlists it in the 
+                    ' Opening the connection automatically enlists it in the
                     ' TransactionScope as a lightweight transaction.
                     connection1.Open()
 
@@ -55,7 +55,7 @@ Module Module1
                     ' If you get here, this means that command1 succeeded. By nesting
                     ' the using block for connection2 inside that of connection1, you
                     ' conserve server and network resources as connection2 is opened
-                    ' only when there is a chance that the transaction can commit.   
+                    ' only when there is a chance that the transaction can commit.
                     Using connection2 As New SqlConnection(connectString2)
                         ' The transaction is escalated to a full distributed
                         ' transaction when connection2 is opened.
@@ -85,15 +85,11 @@ Module Module1
     ' </Snippet1>
 
     Private Function GetSQLConnectionString1() As String
-        ' To avoid storing the connection string in your code,  
-        ' you can retrieve it from a configuration file.
-        Return "Integrated Security=true;database=Northwind;server=(local)"
+        Throw New NotImplementedException()
     End Function
 
     Private Function GetSQLConnectionString2() As String
-        ' To avoid storing the connection string in your code,  
-        ' you can retrieve it from a configuration file.
-        Return "Integrated Security=true;database=AdventureWorks;server=(local)"
+        Throw New NotImplementedException()
     End Function
 
 End Module

@@ -7,7 +7,6 @@ static class Program
     static void Main()
     {
         CreateDataAdapter("System.Data.OleDb", "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=c:\\Data\\Northwind.mdb;");
-        //   CreateDataAdapter("System.Data.SqlClient", "Data Source=(local);Initial Catalog=Northwind;Integrated Security=true;");
 
         Console.ReadLine();
     }

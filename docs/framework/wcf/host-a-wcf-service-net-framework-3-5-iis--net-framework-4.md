@@ -21,7 +21,7 @@ The application domain or application pool is currently running version 4.0 or l
 
  These errors occur because the application domain IIS is running within is running .NET Framework 4 and the WCF service is expecting to run under .NET Framework 3.5. This topic explains the modifications required to get the service to run.
 
- Next find the <`compilers`> element and change the CompilerVersion provider option to have a value of 4.0. By default, there are two <`compiler`> elements under the <`compilers`> element. You must update the CompilerVersion provider option for both as shown in the following example.
+ Next find the `<compilers>` element and change the CompilerVersion provider option to have a value of 4.0. By default, there are two `<compiler>` elements under the `<compilers>` element. You must update the CompilerVersion provider option for both as shown in the following example.
 
 ```xml
 <system.codedom>
@@ -43,9 +43,9 @@ The application domain or application pool is currently running version 4.0 or l
 
 ### Add the required targetFramework attribute
 
-1. Open the service's Web.config file and look for the <`compilation`> element.
+1. Open the service's Web.config file and look for the `<compilation>` element.
 
-2. Add the `targetFramework` attribute to the <`compilation`> element as shown in the following example.
+2. Add the `targetFramework` attribute to the `<compilation>` element as shown in the following example.
 
     ```xml
     <compilation debug="false"
@@ -61,7 +61,7 @@ The application domain or application pool is currently running version 4.0 or l
           </compilation>
     ```
 
-3. Find the <`compilers`> element and change the CompilerVersion provider option to have a value of 4.0. By default, there are two <`compiler`> elements under the <`compilers`> element. You must update the CompilerVersion provider option for both as shown in the following example.
+3. Find the `<compilers>` element and change the CompilerVersion provider option to have a value of 4.0. By default, there are two `<compiler>` elements under the `<compilers>` element. You must update the CompilerVersion provider option for both as shown in the following example.
 
     ```xml
     <system.codedom>

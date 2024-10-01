@@ -5,4 +5,5 @@
 //TimeSpan.RunIt();
 //Channels.RunIt();
 //RegularExpressions.RunIt();
-Collections.RunIt();
+//Collections.RunIt();
+Diagnostics.RunIt();

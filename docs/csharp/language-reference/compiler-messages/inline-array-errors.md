@@ -82,7 +82,7 @@ You access elements of an inline array in the same way as any array. The compile
 - **CS9173**: *An inline array access may not have a named argument specifier*
 - **CS9189**: *`foreach` statement on an inline array of type is not supported*
 
-In addition, the compiler issues the following warning when you declare an [indexer](../../indexers.md):
+In addition, the compiler issues the following warning when you declare an [indexer](/dotnet/csharp/programming-guide/indexers):
 
 - **CS9181**: *Inline array indexer will not be used for element access expression.*
 

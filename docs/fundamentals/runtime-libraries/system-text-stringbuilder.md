@@ -22,7 +22,7 @@ For example, the call to the <xref:System.String.Concat%2A?displayProperty=nameW
 :::code language="csharp" source="./snippets/System.Text/StringBuilder/Overview/csharp/immutability2.cs" id="Snippet1":::
 :::code language="fsharp" source="./snippets/System.Text/StringBuilder/Overview/fsharp/immutability2.fs" id="Snippet1":::
 
-For routines that perform extensive string manipulation (such as apps that modify a string numerous times in a loop), modifying a string repeatedly can exact a significant performance penalty. The alternative is to use <xref:System.Text.StringBuilder>, which is a mutable string class. Mutability means that once an instance of the class has been created, it can be modified by appending, removing, replacing, or inserting characters. A <xref:System.Text.StringBuilder> object maintains a buffer to accommodate expansions to the string. New data is appended to the buffer if room is available; otherwise, a new, larger buffer is allocated, data from the original buffer is copied to the new buffer, and the new data is then appended to the new buffer.
+For routines that perform extensive string manipulation (such as apps that modify a string numerous times in a loop), modifying a string repeatedly can exert a significant performance penalty. The alternative is to use <xref:System.Text.StringBuilder>, which is a mutable string class. Mutability means that once an instance of the class has been created, it can be modified by appending, removing, replacing, or inserting characters.
 
 > [!IMPORTANT]
 > Although the <xref:System.Text.StringBuilder> class generally offers better performance than the <xref:System.String> class, you should not automatically replace <xref:System.String> with <xref:System.Text.StringBuilder> whenever you want to manipulate strings. Performance depends on the size of the string, the amount of memory to be allocated for the new string, the system on which your code is executing, and the type of operation. You should be prepared to test your code to determine whether <xref:System.Text.StringBuilder> actually offers a significant performance improvement.
@@ -30,14 +30,12 @@ For routines that perform extensive string manipulation (such as apps that modif
 Consider using the <xref:System.String> class under these conditions:
 
 - When the number of changes that your code will make to a string is small. In these cases, <xref:System.Text.StringBuilder> might offer negligible or no performance improvement over <xref:System.String>.
-
-- When you are performing a fixed number of concatenation operations, particularly with string literals. In this case, the compiler might combine the concatenation operations into a single operation.
-
+- When you perform a fixed number of concatenation operations, particularly with string literals. In this case, the compiler might combine the concatenation operations into a single operation.
 - When you have to perform extensive search operations while you are building your string. The <xref:System.Text.StringBuilder> class lacks search methods such as `IndexOf` or `StartsWith`. You'll have to convert the <xref:System.Text.StringBuilder> object to a <xref:System.String> for these operations, and this can negate the performance benefit from using <xref:System.Text.StringBuilder>. For more information, see the [Search the text in a StringBuilder object](#search-the-text-in-a-stringbuilder-object) section.
 
 Consider using the <xref:System.Text.StringBuilder> class under these conditions:
 
-- When you expect your code to make an unknown number of changes to a string at design time (for example, when you are using a loop to concatenate a random number of strings that contain user input).
+- When you expect your code to make an unknown number of changes to a string at design time (for example, when you use a loop to concatenate a random number of strings that contain user input).
 - When you expect your code to make a significant number of changes to a string.
 
 ## How StringBuilder works
@@ -57,10 +55,8 @@ The default capacity of a <xref:System.Text.StringBuilder> object is 16 characte
 You can explicitly define the initial capacity of a <xref:System.Text.StringBuilder> object in the following ways:
 
 - By calling any of the <xref:System.Text.StringBuilder> constructors that includes a `capacity` parameter when you create the object.
-
-- By explicitly assigning a new value to the <xref:System.Text.StringBuilder.Capacity?displayProperty=nameWithType> property to expand an existing <xref:System.Text.StringBuilder> object. Note that the property throws an exception if the new capacity is less than the existing capacity or greater than the <xref:System.Text.StringBuilder> object's maximum capacity.
-
-- By calling the <xref:System.Text.StringBuilder.EnsureCapacity%2A?displayProperty=nameWithType> method with the new capacity. The new capacity must not be greater than the <xref:System.Text.StringBuilder> object's maximum capacity. However, unlike an assignment to the <xref:System.Text.StringBuilder.Capacity> property, <xref:System.Text.StringBuilder.EnsureCapacity%2A> does not throw an exception if the desired new capacity is less than the existing capacity; in this case, the method call has no effect.
+- By explicitly assigning a new value to the <xref:System.Text.StringBuilder.Capacity?displayProperty=nameWithType> property to expand an existing <xref:System.Text.StringBuilder> object. (The property throws an exception if the new capacity is less than the existing capacity or greater than the <xref:System.Text.StringBuilder> object's maximum capacity.)
+- By calling the <xref:System.Text.StringBuilder.EnsureCapacity%2A?displayProperty=nameWithType> method with the new capacity. The new capacity must not be greater than the <xref:System.Text.StringBuilder> object's maximum capacity. However, unlike an assignment to the <xref:System.Text.StringBuilder.Capacity> property, <xref:System.Text.StringBuilder.EnsureCapacity%2A> does not throw an exception if the desired new capacity is less than the existing capacity. In this case, the method call has no effect.
 
 If the length of the string assigned to the <xref:System.Text.StringBuilder> object in the constructor call exceeds either the default capacity or the specified capacity, the <xref:System.Text.StringBuilder.Capacity> property is set to the length of the string specified with the `value` parameter.
 
@@ -70,16 +66,15 @@ As the previous section shows, whenever the existing capacity is inadequate, add
 
 In general, the default capacity and maximum capacity are adequate for most apps. You might consider setting these values under the following conditions:
 
-- If the eventual size of the <xref:System.Text.StringBuilder> object is likely to grow exceedingly large, typically in excess of several megabytes. In this case, there may be some performance benefit from setting the initial <xref:System.Text.StringBuilder.Capacity> property to a significantly high value to eliminate the need for too many memory reallocations.
-
-- If your code is running on a system with limited memory. In this case, you may want to consider setting the <xref:System.Text.StringBuilder.MaxCapacity> property to less than <xref:System.Int32.MaxValue?displayProperty=nameWithType> if your code is handling large strings that may cause it to execute in a memory-constrained environment.
+- If the eventual size of the <xref:System.Text.StringBuilder> object is likely to grow exceedingly large, typically in excess of several megabytes. In this case, there might be some performance benefit from setting the initial <xref:System.Text.StringBuilder.Capacity> property to a significantly high value to eliminate the need for too many memory reallocations.
+- If your code is running on a system with limited memory. In this case, you might consider setting the <xref:System.Text.StringBuilder.MaxCapacity> property to less than <xref:System.Int32.MaxValue?displayProperty=nameWithType> if your code is handling large strings that might cause it to execute in a memory-constrained environment.
 
 ## Instantiate a StringBuilder object
 
 You instantiate a <xref:System.Text.StringBuilder> object by calling one of its six overloaded class constructors, which are listed in the following table. Three of the constructors instantiate a <xref:System.Text.StringBuilder> object whose value is an empty string, but set its <xref:System.Text.StringBuilder.Capacity%2A> and <xref:System.Text.StringBuilder.MaxCapacity%2A> values differently. The remaining three constructors define a <xref:System.Text.StringBuilder> object that has a specific string value and capacity. Two of the three constructors use the default maximum capacity of <xref:System.Int32.MaxValue?displayProperty=nameWithType>, whereas the third allows you to set the maximum capacity.
 
-|Constructor|String value|Capacity|Maximum capacity|
-|-----------------|------------------|--------------|----------------------|
+| Constructor | String value | Capacity | Maximum capacity |
+|-------------|--------------|----------|------------------|
 |<xref:System.Text.StringBuilder.%23ctor>|<xref:System.String.Empty?displayProperty=nameWithType>|16|<xref:System.Int32.MaxValue?displayProperty=nameWithType>|
 |<xref:System.Text.StringBuilder.%23ctor%28System.Int32%29>|<xref:System.String.Empty?displayProperty=nameWithType>|Defined by the `capacity` parameter|<xref:System.Int32.MaxValue?displayProperty=nameWithType>|
 |<xref:System.Text.StringBuilder.%23ctor%28System.Int32%2CSystem.Int32%29>|<xref:System.String.Empty?displayProperty=nameWithType>|Defined by the `capacity` parameter|Defined by the `maxCapacity` parameter|
@@ -165,8 +160,8 @@ The <xref:System.Text.StringBuilder.Replace%2A?displayProperty=nameWithType> met
 
 The <xref:System.Text.StringBuilder> class does not include methods similar to the <xref:System.String.Contains%2A?displayProperty=nameWithType>, <xref:System.String.IndexOf%2A?displayProperty=nameWithType>, and <xref:System.String.StartsWith%2A?displayProperty=nameWithType> methods provided by the <xref:System.String> class, which allow you to search the object for a particular character or a substring. Determining the presence or starting character position of a substring requires that you search a <xref:System.String> value by using either a string search method or a regular expression method. There are four ways to implement such searches, as the following table shows.
 
-|Technique|Pros|Cons|
-|---------------|----------|----------|
+| Technique | Pros | Cons |
+|-----------|------|------|
 |Search string values before adding them to the <xref:System.Text.StringBuilder> object.|Useful for determining whether a substring exists.|Cannot be used when the index position of a substring is important.|
 |Call <xref:System.Text.StringBuilder.ToString%2A> and search the returned <xref:System.String> object.|Easy to use if you assign all the text to a <xref:System.Text.StringBuilder> object, and then begin to modify it.|Cumbersome to repeatedly call <xref:System.Text.StringBuilder.ToString%2A> if you must make modifications before all text is added to the <xref:System.Text.StringBuilder> object.<br /><br />You must remember to work from the end of the <xref:System.Text.StringBuilder> object's text if you're making changes.|
 |Use the <xref:System.Text.StringBuilder.Chars%2A> property to sequentially search a range of characters.|Useful if you're concerned with individual characters or a small substring.|Cumbersome if the number of characters to search is large or if the search logic is complex.<br /><br />Results in very poor performance for objects that have grown very large through repeated method calls. |
@@ -191,7 +186,7 @@ Let's examine these techniques in greater detail.
   :::code language="fsharp" source="./snippets/System.Text/StringBuilder/Overview/fsharp/pattern2.fs" id="Snippet13":::
   :::code language="vb" source="./snippets/System.Text/StringBuilder/Overview/vb/pattern2.vb" id="Snippet13":::
 
-- Use the <xref:System.Text.StringBuilder.Chars%2A?displayProperty=nameWithType> property to sequentially search a range of characters in a <xref:System.Text.StringBuilder> object. This approach may not be practical if the number of characters to be searched is large or the search logic is particularly complex. For the performance implications of character-by-character index-based access for very large, chunked <xref:System.Text.StringBuilder> objects, see the documentation for the <xref:System.Text.StringBuilder.Chars%2A?displayProperty=nameWithType> property.
+- Use the <xref:System.Text.StringBuilder.Chars%2A?displayProperty=nameWithType> property to sequentially search a range of characters in a <xref:System.Text.StringBuilder> object. This approach might not be practical if the number of characters to be searched is large or the search logic is particularly complex. For the performance implications of character-by-character index-based access for very large, chunked <xref:System.Text.StringBuilder> objects, see the documentation for the <xref:System.Text.StringBuilder.Chars%2A?displayProperty=nameWithType> property.
 
   The following example is identical in functionality to the previous example but differs in implementation. It uses the <xref:System.Text.StringBuilder.Chars%2A> property to detect when a character value has changed, inserts an underscore at that position, and converts the first character in the new sequence to uppercase.
 
@@ -199,7 +194,7 @@ Let's examine these techniques in greater detail.
   :::code language="fsharp" source="./snippets/System.Text/StringBuilder/Overview/fsharp/pattern3.fs" id="Snippet14":::
   :::code language="vb" source="./snippets/System.Text/StringBuilder/Overview/vb/pattern3.vb" id="Snippet14":::
 
-- Store all the unmodified text in the <xref:System.Text.StringBuilder> object, call the <xref:System.Text.StringBuilder.ToString%2A?displayProperty=nameWithType> method to convert the <xref:System.Text.StringBuilder> object to a <xref:System.String> object, and perform the modifications on the <xref:System.String> object. You can use this approach if you have only a few modifications; otherwise, the cost of working with immutable strings may negate the performance benefits of using a <xref:System.Text.StringBuilder> object.
+- Store all the unmodified text in the <xref:System.Text.StringBuilder> object, call the <xref:System.Text.StringBuilder.ToString%2A?displayProperty=nameWithType> method to convert the <xref:System.Text.StringBuilder> object to a <xref:System.String> object, and perform the modifications on the <xref:System.String> object. You can use this approach if you have only a few modifications; otherwise, the cost of working with immutable strings might negate the performance benefits of using a <xref:System.Text.StringBuilder> object.
 
   The following example is identical in functionality to the previous two examples but differs in implementation. It creates a <xref:System.Text.StringBuilder> object, converts it to a <xref:System.String> object, and then uses a regular expression to perform all remaining modifications on the string. The <xref:System.Text.RegularExpressions.Regex.Replace%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.MatchEvaluator%29?displayProperty=nameWithType> method uses a lambda expression to perform the replacement on each match.
 

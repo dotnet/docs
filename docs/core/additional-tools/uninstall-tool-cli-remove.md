@@ -19,13 +19,13 @@ zone_pivot_groups: operating-systems-set-three
 ::: zone pivot="os-windows"
 
 ```dotnetcli
-dotnet-core-uninstall dry-run <TARGET> [--x64|--x86] <VERSION>...
+dotnet-core-uninstall remove <TARGET> [--x64|--x86] <VERSION>...
     [-v|--verbosity <LEVEL>] [--force] [-y|--yes]
 
-dotnet-core-uninstall dry-run <TARGET> [--x64|--x86] <FILTER>
+dotnet-core-uninstall remove <TARGET> [--x64|--x86] <FILTER>
     [-v|--verbosity <LEVEL>] [--force] [-y|--yes]
 
-dotnet-core-uninstall dry-run -h|--help|-?
+dotnet-core-uninstall remove -h|--help|-?
 ```
 
 ::: zone-end
@@ -33,13 +33,13 @@ dotnet-core-uninstall dry-run -h|--help|-?
 ::: zone pivot="os-macos"
 
 ```dotnetcli
-dotnet-core-uninstall dry-run <TARGET> <VERSION>...
+dotnet-core-uninstall remove <TARGET> <VERSION>...
     [-v|--verbosity <LEVEL>] [--force] [-y|--yes]
 
-dotnet-core-uninstall dry-run <TARGET> <FILTER>
+dotnet-core-uninstall remove <TARGET> <FILTER>
     [-v|--verbosity <LEVEL>] [--force] [-y|--yes]
 
-dotnet-core-uninstall dry-run -h|--help|-?
+dotnet-core-uninstall remove -h|--help|-?
 ```
 
 ::: zone-end
@@ -70,11 +70,11 @@ The `dotnet-core-uninstall remove` command removes .NET SDKs and runtimes from t
 ::: zone pivot="os-windows"
 
 - **`--aspnet-runtime`**
-  
+
   Discovers all the ASP.NET Core runtimes that can be uninstalled with this tool.
 
 - **`--hosting-bundle`**
-  
+
   Lists all the .NET hosting bundles that can be uninstalled with this tool.
 
 ::: zone-end
@@ -207,7 +207,7 @@ These options are exclusive.
   ```
 
   The content of the *versions.rsp* file is as follows:
-  
+
   ```text
   2.2.300
   6.0.301

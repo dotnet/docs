@@ -15,7 +15,7 @@ The [Http sample](https://github.com/dotnet/samples/tree/main/framework/wcf/Basi
 
 This sample is based on the [Getting Started](getting-started-sample.md) that implements a calculator service.
 
-To use the basic binding with default behavior, only the binding section name is required. If you want to configure the basic binding and change some of its settings, it is necessary to define a binding configuration. The endpoint must reference the binding configuration by name by using the `bindingConfiguration` attribute of the <`endpoint`> element, as shown in the following sample code.
+To use the basic binding with default behavior, only the binding section name is required. If you want to configure the basic binding and change some of its settings, it is necessary to define a binding configuration. The endpoint must reference the binding configuration by name by using the `bindingConfiguration` attribute of the `<endpoint>` element, as shown in the following sample code.
 
 ```xml
 <services>

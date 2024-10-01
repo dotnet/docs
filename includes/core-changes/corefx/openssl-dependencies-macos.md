@@ -50,7 +50,7 @@ Core .NET libraries
 
 #### Affected APIs
 
-- `T:System.Security.Cryptography.AesCcm``
+- `T:System.Security.Cryptography.AesCcm`
 - `T:System.Security.Cryptography.AesGcm`
 - `T:System.Security.Cryptography.DSAOpenSsl`
 - `T:System.Security.Cryptography.ECDiffieHellmanOpenSsl`

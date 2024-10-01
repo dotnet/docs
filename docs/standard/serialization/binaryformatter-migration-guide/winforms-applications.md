@@ -74,6 +74,10 @@ If these statements are true, the Designer determines if that property's type ha
 
 Types that had been previously serialized into resource files via [BinaryFormatter] will continue to deserialize as expected without the need for [BinaryFormatter] as the content of ResX files are considered trusted data. In the rare case that deserialization cannot occur without [BinaryFormatter], it can be added back with an unsupported compatibility package. See [BinaryFormatter migration guide: Compatibility Package](compatibility-package.md) for details. Note that an extra step of setting `System.Resources.Extensions.UseBinaryFormatter` app context switch to `true` is required to use [BinaryFormatter] for resources.
 
+##### Generating resource files via msbuild
+
+When generating resource files via msbuild, you may encounter an `MSB3825` error which specifies that your binary formatted resources may be deserialized using [BinaryFormatter] during runtime. As stated above, these resources will not deserialize using [BinaryFormatter] and this warning can be turned off by setting the property `GenerateResourceWarnOnBinaryFormatterUse` to `false`. In rare cases that deserialization cannot occur without [BinaryFormatter], it can be added back with an unsupported compatibility package. See [BinaryFormatter migration guide: Compatibility Package](compatibility-package.md) for details. Note that an additional step of setting `System.Resources.Extensions.UseBinaryFormatter` app context switch to `true` is required to use [BinaryFormatter] for resources.
+
 ## Migrate away from BinaryFormatter
 
 If types that aren't intrinsically handled during serialization and deserialization are used in the affected scenarios, you'll need to take action to complete migration to .NET 9 or a later version.

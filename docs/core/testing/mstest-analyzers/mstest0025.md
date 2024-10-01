@@ -22,7 +22,7 @@ ms.author: amauryleve
 | **Enabled by default**              | Yes                                                   |
 | **Default severity**                | Info                                                  |
 | **Introduced in version**           | 3.4.0                                                 |
-| **There is a code fix**             | No                                                    |
+| **There is a code fix**             | Yes                                                   |
 
 ## Cause
 

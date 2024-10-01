@@ -22,14 +22,14 @@ body:
       description: What version of .NET introduced the breaking change?
       options:
         - .NET 8 GA
-        - .NET 9 Preview 4
-        - .NET 9 Preview 5
-        - .NET 9 Preview 6
         - .NET 9 Preview 7
         - .NET 9 RC 1
         - .NET 9 RC 2
-        - .NET 9 RC 3
         - .NET 9 GA
+        - .NET 10 Preview 1
+        - .NET 10 Preview 2
+        - .NET 10 Preview 3
+        - .NET 10 Preview 4
         - Other (please put exact version in description textbox)
     validations:
       required: true

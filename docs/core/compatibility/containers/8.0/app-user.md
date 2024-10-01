@@ -6,7 +6,7 @@ ms.custom: linux-related-content
 ---
 # New non-root 'app' user in Linux images
 
-The .NET Linux container images include a new non-root user named `app`. You can opt into this new user to provide security benefits. The name of this user may conflict with an existing user defined by an application's Dockerfile.
+The .NET Linux container images include a new non-root user named `app`. You can opt in to this new user to provide security benefits. The name of this user may conflict with an existing user defined by an application's Dockerfile.
 
 ## Previous behavior
 

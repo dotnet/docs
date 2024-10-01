@@ -1,13 +1,12 @@
 ---
-description: "Learn more about: Store Extensibility"
+description: "Learn more about store extensibility. SqlWorkflowInstanceStore lets you promote custom, app-specific properties to query for instances in the persistence DB."
 title: "Store Extensibility"
 ms.date: "03/30/2017"
-ms.assetid: 7c3f4a46-4bac-4138-ae6a-a7c7ee0d28f5
 ---
 
-# Store Extensibility
+# Store extensibility
 
-<xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> allows users to promote custom, application-specific properties that can be used to query for instances in the persistence database. The act of promoting a property causes the value to be available within a special view in the database. These promoted properties (properties that can be used in user queries) can be of simple types such as Int64, Guid, String, and DateTime or of a serialized binary type (byte[]).
+<xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> allows users to promote custom, application-specific properties that can be used to query for instances in the persistence database. The act of promoting a property causes the value to be available within a special view in the database. These promoted properties (properties that can be used in user queries) can be of simple types, such as `Int64`, `Guid`, `String`, and `DateTime`, or of a serialized binary type (`byte[]`).
 
 The <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> class has the <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore.Promote%2A> method that you can use to promote a property as a property that can be used in queries. The following example is an end-to-end example of store extensibility.
 

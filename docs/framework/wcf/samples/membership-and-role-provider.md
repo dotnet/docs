@@ -1,8 +1,7 @@
 ---
-description: "Learn more about: Membership and Role Provider"
+description: "Learn about a sample that demonstrates how a service can use the ASP.NET membership and role providers to authenticate and authorize clients."
 title: "Membership and Role Provider"
 ms.date: "03/30/2017"
-ms.assetid: 0d11a31c-e75f-4fcf-9cf4-b7f26e056bcd
 ---
 # Membership and Role Provider
 
@@ -16,13 +15,9 @@ In this sample, the client is a console application (.exe) and the service is ho
 The sample demonstrates how:
 
 - A client can authenticate by using the username-password combination.
-
 - The server can validate the client credentials against the ASP.NET membership provider.
-
 - The server can be authenticated by using the server's X.509 certificate.
-
 - The server can map the authenticated client to a role by using the ASP.NET role provider.
-
 - The server can use the `PrincipalPermissionAttribute` to control access to certain methods that are exposed by the service.
 
 The membership and role providers are configured to use a store backed by SQL Server. A connection string and various options are specified in the service configuration file. The membership provider is given the name `SqlMembershipProvider` while the role provider is given the name `SqlRoleProvider`.
@@ -31,7 +26,7 @@ The membership and role providers are configured to use a store backed by SQL Se
 <!-- Set the connection string for SQL Server -->
 <connectionStrings>
   <add name="SqlConn"
-       connectionString="Data Source=localhost;Integrated Security=SSPI;Initial Catalog=aspnetdb;" />
+       connectionString="..." />
 </connectionStrings>
 
 <system.web>

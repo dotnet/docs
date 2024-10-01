@@ -95,7 +95,7 @@ The list of possible `target` values is shown in the following table.
 | `return`     | Return value of a method, property indexer, or `get` property accessor |
 | `type`       | Struct, class, interface, enum, or delegate                            |
 
-You would specify the `field` target value to apply an attribute to the backing field created for an [auto-implemented property](../../properties.md).
+You would specify the `field` target value to apply an attribute to the backing field created for an [auto-implemented property](../../programming-guide/classes-and-structs/properties.md).
 
 The following example shows how to apply attributes to assemblies and modules. For more information, see [Common Attributes (C#)](../../language-reference/attributes/global.md).
 

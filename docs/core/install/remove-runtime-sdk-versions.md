@@ -26,11 +26,16 @@ The .NET CLI has options you can use to list the versions of the SDK and runtime
 
 ::: zone pivot="os-windows"
 
-.NET uses the Windows **Apps & features** dialog to remove versions of the .NET runtime and SDK. The following figure shows the **Apps & features** dialog. You can search for **core** or **.net** to filter and show installed versions of .NET.
+.NET uses the Windows **Apps & features** or **Apps > Installed Apps** settings page to remove versions of the .NET runtime and SDK. Use the Start Menu to search for **Add or Remove Programs** to open the settings page, as illustrated by the following image: figure shows the **Apps & features** dialog. You can search for **core** or **.net** to filter and show installed versions of .NET.
 
-![Add / Remove programs to remove .NET](./media/remove-runtime-sdk-versions/programs-and-features.png)
+:::image type="content" source="media/remove-runtime-sdk-versions/add-or-remove.png" alt-text="The Windows Start Menu showing the text Add or Remove to filter the search results":::
 
-Select any versions you want to remove from your computer and click **Uninstall**.
+In the settings page, search for **.net** to find the versions installed on your machine. Select **...** > **Uninstall** to uninstall the item. If you're using Windows 10, select the **Uninstall** button for the item you want to uninstall. The following image shows the **Installed Apps** settings page on Windows 11:
+
+:::image type="content" source="media/remove-runtime-sdk-versions/search-net-filter.png" alt-text="The Windows Installed Apps dialog with the word '.net' in the search bar. The results show versions of .NET Framework and .NET that are installed.":::
+
+> [!IMPORTANT]
+> If the item you're uninstalling indicates that it's from Visual Studio, use the Visual Studio Installer to remove those versions of .NET.
 
 ::: zone-end
 
@@ -143,24 +148,6 @@ sudo rm -rf /usr/local/share/dotnet/sdk/6.0.406
 ## .NET Uninstall Tool
 
 The .NET Uninstall Tool lets you remove .NET SDKs and runtimes from a system. A collection of options is available to specify which versions should be uninstalled. For more information, see [.NET uninstall tool overview](../additional-tools/uninstall-tool-overview.md).
-
-::: zone pivot="os-windows"
-
-## Visual Studio dependency on .NET SDK versions
-
-Before Visual Studio 2019 version 16.3, Visual Studio installers called the standalone SDK installer for .NET Core version 2.1 or 2.2. As a result, the SDK versions appear in the Windows **Apps & features** dialog. Removing .NET SDKs that were installed by Visual Studio using the standalone installer may break Visual Studio. If Visual Studio has problems after you uninstall SDKs, run Repair on that specific version of Visual Studio. The following table shows some of the Visual Studio dependencies on .NET Core SDK versions:
-
-| Visual Studio version           | .NET Core SDK version          |
-|---------------------------------|--------------------------------|
-| Visual Studio 2019 version 16.2 | .NET Core SDK 2.2.4xx, 2.1.8xx |
-| Visual Studio 2019 version 16.1 | .NET Core SDK 2.2.3xx, 2.1.7xx |
-| Visual Studio 2019 version 16.0 | .NET Core SDK 2.2.2xx, 2.1.6xx |
-| Visual Studio 2017 version 15.9 | .NET Core SDK 2.2.1xx, 2.1.5xx |
-| Visual Studio 2017 version 15.8 | .NET Core SDK 2.1.4xx          |
-
-Starting with Visual Studio 2019 version 16.3, Visual Studio is in charge of its own copy of the .NET SDK. For that reason, you no longer see those SDK versions in the **Apps & features** dialog.
-
-::: zone-end
 
 ## Remove the NuGet fallback directory
 

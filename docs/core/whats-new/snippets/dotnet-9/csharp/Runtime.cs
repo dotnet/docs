@@ -7,12 +7,12 @@ using System.Runtime.Intrinsics;
 class Runtime
 {
     // <SnippetForLoop>
-    static int Sum(int[] arr)
+    static int Sum(int[] nums)
     {
         int sum = 0;
-        for (int i = 0; i < arr.Length; i++)
+        for (int i = 0; i < nums.Length; i++)
         {
-            sum += arr[i];
+            sum += nums[i];
         }
 
         return sum;
@@ -53,7 +53,7 @@ class Runtime
     static byte Test1()
     {
         Vector128<byte> v = Vector128<byte>.Zero;
-        byte size = 1;
+        const byte size = 1;
         v = Sse2.ShiftRightLogical128BitLane(v, size);
         return Sse41.Extract(v, 0);
     }

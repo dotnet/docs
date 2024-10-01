@@ -610,7 +610,7 @@ reader.Skip();
 Console.WriteLine(reader.Read()); // False
 ```
 
-This additionally makes it possible to read JSON from payloads that may contain trailing data that is invalid JSON:
+This flag also makes it possible to read JSON from payloads that might contain trailing data that's invalid JSON:
 
 ```csharp
 Utf8JsonReader reader = new("[1,2,3]    <NotJson/>"u8, new() { AllowMultipleValues = true });

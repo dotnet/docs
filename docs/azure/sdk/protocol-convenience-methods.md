@@ -95,7 +95,7 @@ The preceding code demonstrates the following `System.ClientModel` convenience m
 
 The following code uses a `ChatClient` to call the `CompleteChat` protocol method:
 
-:::code source="snippets/protocol-convenience-methods/SCM/Protocol/Program.cs" highlight="26-31":::
+:::code source="snippets/protocol-convenience-methods/SCM/Protocol/Program.cs" highlight="31-34":::
 
 The preceding code demonstrates the following `System.ClientModel` protocol method patterns:
 
@@ -126,6 +126,20 @@ PipelineResponse response = result.GetRawResponse();
 + var message = output.Choices[0].Message;
 + Console.WriteLine($"[{message.Role}]: {message.Content}");
 ```
+
+---
+
+## Handle exceptions
+
+When a service call fails, the service client throws an exception that exposes the HTTP status code and the details of the service response, if available. A `System.ClientModel`-dependent library throws a <xref:System.ClientModel.ClientResultException>, while an `Azure.Core`-dependent library throws a <xref:Azure.RequestFailedException>.
+
+# [System.ClientModel exceptions](#tab/system-clientmodel)
+
+:::code source="snippets/protocol-convenience-methods/AzureCore/ExceptionHandling/Program.cs" highlight="21-24":::
+
+# [Azure.Core exceptions](#tab/azure-core)
+
+:::code source="snippets/protocol-convenience-methods/SCM/ExceptionHandling/Program.cs" highlight="17-20":::
 
 ---
 

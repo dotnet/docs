@@ -118,7 +118,7 @@ Orleans applications are designed to scale up and scale out efficiently. To acco
 
 When deploying Orleans to Azure App Service, we need to take the following actions to ensure that hosts can communicate with eachother:
 
-- Enable virtual vetwork integration by following the [Enable integration with an Azure virtual network](https://learn.microsoft.com/azure/app-service/configure-vnet-integration-enable) guide.
+- Enable virtual network integration by following the [Enable integration with an Azure virtual network](https://learn.microsoft.com/azure/app-service/configure-vnet-integration-enable) guide.
 - Configure your app with private ports using the Azure CLI as described in the [Configure private port count using Azure CLI](#configure-private-port-count-using-azure-cli) section. The Bicep template in the [Explore the Bicep templates](#explore-the-bicep-templates) section below shows how to configure the setting via Bicep.
 - If deploying to Linux, ensure that your hosts are listening on all IP addresses as described in the [Configure host networking](#configure-host-networking) section.
 

@@ -474,7 +474,8 @@ The following example demonstrates `Regex.EnumerateSplits`, taking a `ReadOnlySp
 - [Respect nullable annotations](#respect-nullable-annotations)
 - [Require non-optional constructor parameters](#require-non-optional-constructor-parameters)
 - [Order JsonObject properties](#order-jsonobject-properties)
-- [Additional contract metadata APIs](#additional-contract-metadata-apis)
+- [Customize enum member names](#customize-enum-member-names)
+- [Stream multiple JSON documents](#stream-multiple-json-documents)
 
 ### Indentation options
 
@@ -529,7 +530,7 @@ The following code shows how to set the option (the `Book` type definition is sh
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Serialization.cs" id="RespectNullable":::
 
 > [!NOTE]
-> Due to how nullability annotations are represented in IL, the feature is restricted to annotations of non-generic properties. Please refer to the relevant documentation for more details.
+> Due to how nullability annotations are represented in IL, the feature is restricted to annotations of non-generic properties.
 
 You can also enable this setting globally using the `System.Text.Json.Serialization.RespectNullableAnnotationsDefault` feature switch in your project file (for example, _.csproj_ file):
 

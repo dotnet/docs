@@ -1,9 +1,9 @@
 ---
-title: "Breaking change: Some SVE APIs disabled"
-description: Learn about the breaking change in .NET 9 where some SVE APIs that take 32-bit address have been disabled.
+title: "Breaking change: Some SVE APIs removed"
+description: Learn about the breaking change in .NET 9 where some SVE APIs that take 32-bit address have been removed.
 ms.date: 10/02/2024
 ---
-# Some SVE APIs disabled
+# Some SVE APIs removed
 
 Several APIs that take a 32-bit address as an input parameter have been removed because of lack of testing with such addresses. These APIs might be re-enabled in the future when relevant test coverage is added.
 

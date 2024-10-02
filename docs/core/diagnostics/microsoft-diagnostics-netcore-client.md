@@ -343,7 +343,7 @@ Represents the type of dump that can be requested.
 
 * `Normal`: Include just the information necessary to capture stack traces for all existing traces for all existing threads in a process. Limited GC heap memory and information.
 * `WithHeap`: Includes the GC heaps and information necessary to capture stack traces for all existing threads in a process.
-* `Triage`: Include just the information necessary to capture stack traces for all existing traces for all existing threads in a process. Limited GC heap memory and information.
+* `Triage`: Include just the information necessary to capture stack traces for all existing traces for all existing threads in a process. Limited GC heap memory and information. Some content that is known to contain potentially sensitive information such as full module paths will be redacted. While this is intended to mitigate some cases of sensitive data exposure, there is no guarantee this redaction feature on its own is sufficient to comply with any particular law or standard regarding data privacy.
 * `Full`: Include all accessible memory in the process. The raw memory data is included at the end, so that the initial structures can be mapped directly without the raw memory information. This option can result in a very large dump file.
 
 ## Exceptions

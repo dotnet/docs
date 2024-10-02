@@ -13,7 +13,7 @@ zone_pivot_groups: azure-interface
 
 This article demonstrates how to manage the connection between your App Service .NET application and a [vector database solution](../conceptual/vector-databases.md). It covers using Microsoft Entra managed identities for supported services and securely storing connection strings for others.
 
-By adding a vector database to your application, you can enable [semantic memories](/semantic-kernel/memories/) for your AI. The [Semantic Kernel SDK](/semantic-kernel/overview) for .NET enables you to easily implement memory storage and recall using your preferred vector database solution.
+By adding a vector database to your application, you can enable [semantic memories or *vector stores*]([vector stores](/semantic-kernel/concepts/vector-store-connectors/)) for your AI. The [Semantic Kernel SDK](/semantic-kernel/overview) for .NET enables you to easily implement memory storage and recall using your preferred vector database solution.
 
 ## Prerequisites
 
@@ -22,7 +22,7 @@ By adding a vector database to your application, you can enable [semantic memori
 * [`Microsoft.SemanticKernel` NuGet package](https://www.nuget.org/packages/Microsoft.SemanticKernel)
 * [`Microsoft.SemanticKernel.Plugins.Memory` NuGet package](https://www.nuget.org/packages/Microsoft.SemanticKernel.Plugins.Memory)
 * [Create and deploy a .NET application to App Service](/azure/app-service/quickstart-dotnetcore)
-* [Create and deploy a vector database solution](/semantic-kernel/memories/vector-db)
+* [Create and deploy a vector database solution](/semantic-kernel/concepts/ai-services/integrations#vector-database-solutions)
 
 ## Use Microsoft Entra managed identity for authentication
 

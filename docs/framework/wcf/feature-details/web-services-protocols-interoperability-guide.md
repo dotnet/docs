@@ -61,7 +61,7 @@ Infrastructure protocols interoperability is provided by the WS-* specifications
 |WSS: SAML 1.1 Token Profile 1.1|[Web Services Security SAML Token Profile 1.1](http://docs.oasis-open.org/wss/v1.1/wss-v1.1-spec-os-SAMLTokenProfile.pdf)|
 |WS-Secure Conversation|[Web Services Secure Conversation Language](http://specs.xmlsoap.org/ws/2005/02/sc/ws-secureconversation.pdf)|
 |WS-Trust 1.4|[Web Services Trust Language](https://docs.oasis-open.org/ws-sx/ws-trust/200802)|
-|WS-SecurityPolicy 2005/07|[Web Services Secure Conversation Language](http://specs.xmlsoap.org/ws/2005/02/sc/ws-secureconversation.pdf)<br /><br /> As amended by errata submitted to OASIS WS-SX Technical Committee.<br /><br /> [ws-sx message](https://lists.oasis-open.org/archives/ws-sx/200512/msg00017.html)|
+|WS-SecurityPolicy 2005/07|[Web Services Secure Conversation Language](http://specs.xmlsoap.org/ws/2005/02/sc/ws-secureconversation.pdf)<br /><br /> As amended by errata submitted to OASIS WS-SX Technical Committee.|
 |WS-ReliableMessaging 1.1|[Reliable Messaging Protocol version 1.1](reliable-messaging-protocol-version-1-1.md)|
 
 <xref:System.ServiceModel.Channels.TransactionFlowBindingElement> supports the specifications in the following table.

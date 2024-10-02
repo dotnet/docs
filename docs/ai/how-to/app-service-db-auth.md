@@ -190,7 +190,7 @@ Before following these steps, retrieve a connection string for your vector datab
 > [!IMPORTANT]
 > Before following these steps, ensure you have [created a Key Vault using the Azure CLI](/azure/key-vault/general/quick-create-cli).
 
-1. Grant your user account permissions to your key vault through Role-Based Access Control (RBAC), assign a role using the Azure CLI command [`az role assignment create`](/cli/azure/role/assignment?view=azure-cli-latest#az-role-assignment-create):
+1. Grant your user account permissions to your key vault through Role-Based Access Control (RBAC), assign a role using the Azure CLI command [`az role assignment create`](/cli/azure/role/assignment#az-role-assignment-create):
 
     ```azurecli
     az role assignment create \
@@ -199,7 +199,7 @@ Before following these steps, retrieve a connection string for your vector datab
     --scope "/subscriptions/<subscriptionId>/resourceGroups/<resourceGroupName>/providers/Microsoft.KeyVault/vaults/<keyVaultName>"
     ```
 
-1. Add the connection string to Key Vault using the Azure CLI command [`az keyvault secret set`](/cli/azure/keyvault/secret?view=azure-cli-latest#az-keyvault-secret-set):
+1. Add the connection string to Key Vault using the Azure CLI command [`az keyvault secret set`](/cli/azure/keyvault/secret#az-keyvault-secret-set):
 
     ```azurecli
     az keyvault secret set \
@@ -271,7 +271,7 @@ Before following these steps, retrieve a connection string for your vector datab
 
 :::zone target="docs" pivot="azure-cli"
 
-Add or edit an app setting with the Azure CLI command [`az webapp config connection-string set`](/cli/azure/webapp/config/connection-string?view=azure-cli-latest#az-webapp-config-connection-string-set):
+Add or edit an app setting with the Azure CLI command [`az webapp config connection-string set`](/cli/azure/webapp/config/connection-string#az-webapp-config-connection-string-set):
 
 ```azurecli
 az webapp config connection-string set \

@@ -72,11 +72,11 @@ using HttpResponseMessage responseMessage = await client.PostAsync(uri, new Stri
 |------------------------------------------|---------|-------|
 | `Accept` | <xref:System.Net.Http.Headers.HttpRequestHeaders.Accept> | [Example: Set Request Headers](#example-set-common-request-headers). |
 | `Address` | <xref:System.Net.Http.HttpRequestMessage.RequestUri> | [Example: Fetch Redirected URI](#example-fetch-redirected-uri). |
-| `AllowAutoRedirect` | <xref:System.Net.Http.SocketsHttpHandler.AllowAutoRedirect> | [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
+| `AllowAutoRedirect` | <xref:System.Net.Http.SocketsHttpHandler.AllowAutoRedirect> | [Example: Setting SocketsHttpHandler Properties](#example-set-socketshttphandler-properties). |
 | `AllowReadStreamBuffering` | No direct equivalent API | [Usage of Buffering Properties](#usage-of-buffering-properties). |
 | `AllowWriteStreamBuffering` | No direct equivalent API | [Usage of Buffering Properties](#usage-of-buffering-properties). |
-| `AuthenticationLevel` | No direct equivalent API | [Example: Enabling Mutual Authentication](#example-enabling-mutual-authentication). |
-| `AutomaticDecompression` | <xref:System.Net.Http.SocketsHttpHandler.AutomaticDecompression> | [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
+| `AuthenticationLevel` | No direct equivalent API | [Example: Enabling Mutual Authentication](#example-enable-mutual-authentication). |
+| `AutomaticDecompression` | <xref:System.Net.Http.SocketsHttpHandler.AutomaticDecompression> | [Example: Setting SocketsHttpHandler Properties](#example-set-socketshttphandler-properties). |
 | `CachePolicy` | No direct equivalent API | [Example: Apply CachePolicy Headers](#example-apply-cachepolicy-headers). |
 | `ClientCertificates` | <xref:System.Net.Http.SocketsHttpHandler.SslOptions>.<xref:System.Net.Security.SslClientAuthenticationOptions.ClientCertificates> | [Usage of Certificate Related Properties in HttpClient](#usage-of-certificate-and-tls-related-properties-in-httpclient). |
 | `Connection` | <xref:System.Net.Http.Headers.HttpRequestHeaders.Connection> | [Example: Set Request Headers](#example-set-common-request-headers). |
@@ -84,9 +84,9 @@ using HttpResponseMessage responseMessage = await client.PostAsync(uri, new Stri
 | `ContentLength` | <xref:System.Net.Http.Headers.HttpContentHeaders.ContentLength> | [Example: Set Content Headers](#example-set-content-headers). |
 | `ContentType` | <xref:System.Net.Http.Headers.HttpContentHeaders.ContentType> | [Example: Set Content Headers](#example-set-content-headers). |
 | `ContinueDelegate` | No equivalent API | No workaround. |
-| `ContinueTimeout` | <xref:System.Net.Http.SocketsHttpHandler.Expect100ContinueTimeout> | [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
-| `CookieContainer` | <xref:System.Net.Http.SocketsHttpHandler.CookieContainer> | [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
-| `Credentials` | <xref:System.Net.Http.SocketsHttpHandler.Credentials> | [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
+| `ContinueTimeout` | <xref:System.Net.Http.SocketsHttpHandler.Expect100ContinueTimeout> | [Example: Set SocketsHttpHandler Properties](#example-set-socketshttphandler-properties). |
+| `CookieContainer` | <xref:System.Net.Http.SocketsHttpHandler.CookieContainer> | [Example: Set SocketsHttpHandler Properties](#example-set-socketshttphandler-properties). |
+| `Credentials` | <xref:System.Net.Http.SocketsHttpHandler.Credentials> | [Example: Set SocketsHttpHandler Properties](#example-set-socketshttphandler-properties). |
 | `Date` | <xref:System.Net.Http.Headers.HttpRequestHeaders.Date> | [Example: Set Request Headers](#example-set-common-request-headers). |
 | `DefaultCachePolicy` | No direct equivalent API | [Example: Apply CachePolicy Headers](#example-apply-cachepolicy-headers). |
 | `DefaultMaximumErrorResponseLength` | No direct equivalent API | [Example: Set MaximumErrorResponseLength in HttpClient](#example-set-maximumerrorresponselength-in-httpclient). |
@@ -99,25 +99,25 @@ using HttpResponseMessage responseMessage = await client.PostAsync(uri, new Stri
 | `IfModifiedSince` | <xref:System.Net.Http.Headers.HttpRequestHeaders.IfModifiedSince> | [Example: Set Request Headers](#example-set-common-request-headers). |
 | `ImpersonationLevel` | No direct equivalent API | [Example: Change ImpersonationLevel](#example-change-impersonationlevel). |
 | `KeepAlive` | No direct equivalent API | [Example: Set Request Headers](#example-set-custom-request-headers). |
-| `MaximumAutomaticRedirections` | <xref:System.Net.Http.SocketsHttpHandler.MaxAutomaticRedirections> | [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
-| `MaximumResponseHeadersLength` | <xref:System.Net.Http.SocketsHttpHandler.MaxResponseHeadersLength> | [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
+| `MaximumAutomaticRedirections` | <xref:System.Net.Http.SocketsHttpHandler.MaxAutomaticRedirections> | [Example: Setting SocketsHttpHandler Properties](#example-set-socketshttphandler-properties). |
+| `MaximumResponseHeadersLength` | <xref:System.Net.Http.SocketsHttpHandler.MaxResponseHeadersLength> | [Example: Setting SocketsHttpHandler Properties](#example-set-socketshttphandler-properties). |
 | `MediaType` | No direct equivalent API | [Example: Set Content Headers](#example-set-content-headers). |
 | `Method` | <xref:System.Net.Http.HttpRequestMessage.Method> | [Example: Usage of HttpRequestMessage properties](#example-usage-of-httprequestmessage-properties). |
 | `Pipelined` | No equivalent API | `HttpClient` doesn't support pipelining. |
 | `PreAuthenticate` | <xref:System.Net.Http.SocketsHttpHandler.PreAuthenticate> | |
 | `ProtocolVersion` | `HttpRequestMessage.Version` | [Example: Usage of HttpRequestMessage properties](#example-usage-of-httprequestmessage-properties). |
-| `Proxy` | <xref:System.Net.Http.SocketsHttpHandler.Proxy> | [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
+| `Proxy` | <xref:System.Net.Http.SocketsHttpHandler.Proxy> | [Example: Setting SocketsHttpHandler Properties](#example-set-socketshttphandler-properties). |
 | `ReadWriteTimeout` | No direct equivalent API | [Usage of SocketsHttpHandler and ConnectCallback](#usage-of-socketshttphandler-and-connectcallback). |
 | `Referer` | <xref:System.Net.Http.Headers.HttpRequestHeaders.Referrer> | [Example: Set Request Headers](#example-set-common-request-headers). |
 | `RequestUri` | <xref:System.Net.Http.HttpRequestMessage.RequestUri> | [Example: Usage of HttpRequestMessage properties](#example-usage-of-httprequestmessage-properties). |
 | `SendChunked` | <xref:System.Net.Http.Headers.HttpRequestHeaders.TransferEncodingChunked> | [Example: Set Request Headers](#example-set-common-request-headers). |
-| `ServerCertificateValidationCallback` | <xref:System.Net.Http.SocketsHttpHandler.SslOptions>.<xref:System.Net.Security.SslClientAuthenticationOptions.RemoteCertificateValidationCallback> | [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
+| `ServerCertificateValidationCallback` | <xref:System.Net.Http.SocketsHttpHandler.SslOptions>.<xref:System.Net.Security.SslClientAuthenticationOptions.RemoteCertificateValidationCallback> | [Example: Setting SocketsHttpHandler Properties](#example-set-socketshttphandler-properties). |
 | `ServicePoint` | No equivalent API | `ServicePoint` is not part of `HttpClient`. |
 | `SupportsCookieContainer` | No equivalent API | This is always `true` for `HttpClient`. |
 | `Timeout` | <xref:System.Net.Http.HttpClient.Timeout> |  |
 | `TransferEncoding` | <xref:System.Net.Http.Headers.HttpRequestHeaders.TransferEncoding> | [Example: Set Request Headers](#example-set-common-request-headers). |
 | `UnsafeAuthenticatedConnectionSharing` | No equivalent API | No workaround |
-| `UseDefaultCredentials` | No direct equivalent API | [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
+| `UseDefaultCredentials` | No direct equivalent API | [Example: Setting SocketsHttpHandler Properties](#example-set-socketshttphandler-properties). |
 | `UserAgent` | <xref:System.Net.Http.Headers.HttpRequestHeaders.UserAgent> | [Example: Set Request Headers](#example-set-common-request-headers). |
 
 ## Migrate ServicePoint(Manager) usage
@@ -132,15 +132,15 @@ You should be aware that `ServicePointManager` is a static class, meaning that a
 | <xref:System.Net.ServicePointManager> Old API | New API | Notes |
 |-----------------------------------------------|---------|-------|
 | `CheckCertificateRevocationList` | <xref:System.Net.Http.SocketsHttpHandler.SslOptions>.<xref:System.Net.Security.SslClientAuthenticationOptions.CertificateRevocationCheckMode> | [Example: Enabling CRL Check with SocketsHttpHandler](#example-check-certificate-revocation-list-with-socketshttphandler). |
-| `DefaultConnectionLimit` | <xref:System.Net.Http.SocketsHttpHandler.MaxConnectionsPerServer> | [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
-| `DnsRefreshTimeout` | No equivalent API | [Example: Enabling Dns Round Robin](#example-enabling-dns-round-robin). |
-| `EnableDnsRoundRobin` | No equivalent API | [Example: Enabling Dns Round Robin](#example-enabling-dns-round-robin). |
-| `EncryptionPolicy` | <xref:System.Net.Http.SocketsHttpHandler.SslOptions>.<xref:System.Net.Security.SslClientAuthenticationOptions.EncryptionPolicy> | [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
+| `DefaultConnectionLimit` | <xref:System.Net.Http.SocketsHttpHandler.MaxConnectionsPerServer> | [Example: Setting SocketsHttpHandler Properties](#example-set-socketshttphandler-properties). |
+| `DnsRefreshTimeout` | No equivalent API | [Example: Enabling Dns Round Robin](#example-enable-dns-round-robin). |
+| `EnableDnsRoundRobin` | No equivalent API | [Example: Enabling Dns Round Robin](#example-enable-dns-round-robin). |
+| `EncryptionPolicy` | <xref:System.Net.Http.SocketsHttpHandler.SslOptions>.<xref:System.Net.Security.SslClientAuthenticationOptions.EncryptionPolicy> | [Example: Setting SocketsHttpHandler Properties](#example-set-socketshttphandler-properties). |
 | `Expect100Continue` | <xref:System.Net.Http.Headers.HttpRequestHeaders.ExpectContinue> | [Example: Set Request Headers](#example-set-common-request-headers). |
-| `MaxServicePointIdleTime` | <xref:System.Net.Http.SocketsHttpHandler.PooledConnectionIdleTimeout> | [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
+| `MaxServicePointIdleTime` | <xref:System.Net.Http.SocketsHttpHandler.PooledConnectionIdleTimeout> | [Example: Setting SocketsHttpHandler Properties](#example-set-socketshttphandler-properties). |
 | `MaxServicePoints` | No equivalent API | `ServicePoint` is not part of `HttpClient`. |
 | `ReusePort` | No direct equivalent API | [Usage of SocketsHttpHandler and ConnectCallback](#usage-of-socketshttphandler-and-connectcallback). |
-| `SecurityProtocol` | <xref:System.Net.Http.SocketsHttpHandler.SslOptions>.<xref:System.Net.Security.SslClientAuthenticationOptions.EnabledSslProtocols> | [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
+| `SecurityProtocol` | <xref:System.Net.Http.SocketsHttpHandler.SslOptions>.<xref:System.Net.Security.SslClientAuthenticationOptions.EnabledSslProtocols> | [Example: Setting SocketsHttpHandler Properties](#example-set-socketshttphandler-properties). |
 | `ServerCertificateValidationCallback` | <xref:System.Net.Http.SocketsHttpHandler.SslOptions>.<xref:System.Net.Security.SslClientAuthenticationOptions.RemoteCertificateValidationCallback> | Both of them are <xref:System.Net.Security.RemoteCertificateValidationCallback> |
 | `UseNagleAlgorithm` | No direct equivalent API | [Usage of SocketsHttpHandler and ConnectCallback](#usage-of-socketshttphandler-and-connectcallback). |
 
@@ -161,14 +161,14 @@ You should be aware that `ServicePointManager` is a static class, meaning that a
 | `Address` | `HttpRequestMessage.RequestUri` | This is request uri, this information can be found under `HttpRequestMessage`. |
 | `BindIPEndPointDelegate` | No direct equivalent API | [Usage of SocketsHttpHandler and ConnectCallback](#usage-of-socketshttphandler-and-connectcallback). |
 | `Certificate` | No direct equivalent API | This information can be fetched from `RemoteCertificateValidationCallback`. [Example: Fetch Certificate](#example-fetch-certificate). |
-| `ClientCertificate` | No equivalent API | [Example: Enabling Mutual Authentication](#example-enabling-mutual-authentication). |
+| `ClientCertificate` | No equivalent API | [Example: Enabling Mutual Authentication](#example-enable-mutual-authentication). |
 | `ConnectionLeaseTimeout` | `SocketsHttpHandler.PooledConnectionLifetime` | Equivalent setting in <xref:System.Net.Http.HttpClient> |
-| `ConnectionLimit` | <xref:System.Net.Http.SocketsHttpHandler.MaxConnectionsPerServer> | [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
+| `ConnectionLimit` | <xref:System.Net.Http.SocketsHttpHandler.MaxConnectionsPerServer> | [Example: Setting SocketsHttpHandler Properties](#example-set-socketshttphandler-properties). |
 | `ConnectionName` | No equivalent API | No workaround |
 | `CurrentConnections` | No equivalent API | See [Networking telemetry in .NET](../telemetry/overview.md). |
 | `Expect100Continue` | <xref:System.Net.Http.Headers.HttpRequestHeaders.ExpectContinue> | [Example: Set Request Headers](#example-set-common-request-headers). |
 | `IdleSince` | No equivalent API | No workaround |
-| `MaxIdleTime` | <xref:System.Net.Http.SocketsHttpHandler.PooledConnectionIdleTimeout> | [Example: Setting SocketsHttpHandler Properties](#example-setting-socketshttphandler-properties). |
+| `MaxIdleTime` | <xref:System.Net.Http.SocketsHttpHandler.PooledConnectionIdleTimeout> | [Example: Setting SocketsHttpHandler Properties](#example-set-socketshttphandler-properties). |
 | `ProtocolVersion` | `HttpRequestMessage.Version` | [Example: Usage of HttpRequestMessage properties](#example-usage-of-httprequestmessage-properties). |
 | `ReceiveBufferSize` | No direct equivalent API | [Usage of SocketsHttpHandler and ConnectCallback](#usage-of-socketshttphandler-and-connectcallback). |
 | `SupportsPipelining` | No equivalent API | `HttpClient` doesn't support pipelining. |

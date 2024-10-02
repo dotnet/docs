@@ -10,7 +10,7 @@ ms.topic: how-to
 
 This article shows how to implement your own extension methods for any .NET type. Client code can use your extension methods. Client projects must reference the assembly that contains them. Client projects must add a [using](../../language-reference/keywords/using-directive.md) directive that specifies the namespace in which the extension methods are defined.
 
-## To define and call the extension method
+To define and call the extension method:
 
 1. Define a static [class](./static-classes-and-static-class-members.md) to contain the extension method. The class can't be nested inside another type and must be visible to client code. For more information about accessibility rules, see [Access Modifiers](./access-modifiers.md).
 1. Implement the extension method as a static method with at least the same visibility as the containing class.

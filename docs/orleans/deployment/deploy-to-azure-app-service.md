@@ -124,7 +124,7 @@ When deploying Orleans to Azure App Service, we need to take the following actio
 
 ### Configure private port count using Azure CLI
 
-```sh
+```azurecli
 az webapp config set -g '<resource-group-name>' --subscription '<subscription-id>' -n '<app-service-app-name>' --generic-configurations '{\"vnetPrivatePortsCount\": "2"}'
 ```
 

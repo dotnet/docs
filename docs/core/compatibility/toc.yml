@@ -238,6 +238,8 @@ items:
             items:
               - name: SendFile throws NotSupportedException for connectionless sockets
                 href: networking/8.0/sendfile-connectionless.md
+              - name: User info in `mailto:` URIs is compared
+                href: networking/8.0/uri-comparison.md
           - name: Reflection
             items:
               - name: IntPtr no longer used for function pointer types
@@ -1670,6 +1672,8 @@ items:
             items:
               - name: SendFile throws NotSupportedException for connectionless sockets
                 href: networking/8.0/sendfile-connectionless.md
+              - name: User info in `mailto:` URIs is compared
+                href: networking/8.0/uri-comparison.md
           - name: .NET 7
             items:
               - name: AllowRenegotiation default is false

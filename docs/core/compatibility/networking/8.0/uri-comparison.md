@@ -5,7 +5,7 @@ ms.date: 10/03/2024
 ---
 # User info in `mailto:` URIs is compared
 
-<xref:System.Uri> doesn't compare user info when comparing two instances for equality. However, this behavior is not intuitive in the case of `mailto:` URIs. With this change, <xref:System.Uri.Equals*?displayProperty=nameWithType> and the [`==`](xref:System.Uri.op_Equality(System.Uri,System.Uri)) operator now consider user info when comparing URIs.
+Previously, <xref:System.Uri> didn't compare user info when comparing two `Uri` instances for equality. However, this behavior is not intuitive in the case of `mailto:` URIs. With this change, <xref:System.Uri.Equals*?displayProperty=nameWithType> and the [`==`](xref:System.Uri.op_Equality(System.Uri,System.Uri)) operator now consider user info when comparing URIs.
 
 ## Previous behavior
 
